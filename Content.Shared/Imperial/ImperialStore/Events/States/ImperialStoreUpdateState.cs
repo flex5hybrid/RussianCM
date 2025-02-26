@@ -1,0 +1,18 @@
+using Content.Shared.FixedPoint;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization;
+
+namespace Content.Shared.Imperial.ImperialStore;
+
+
+[Serializable, NetSerializable]
+public sealed class ImperialStoreUpdateState(HashSet<ImperialListingData> listings, Dictionary<ProtoId<ImperialCurrencyPrototype>, FixedPoint2> balance, bool showFooter, bool allowRefund) : BoundUserInterfaceState
+{
+    public readonly HashSet<ImperialListingData> Listings = listings;
+
+    public readonly Dictionary<ProtoId<ImperialCurrencyPrototype>, FixedPoint2> Balance = balance;
+
+    public readonly bool ShowFooter = showFooter;
+
+    public readonly bool AllowRefund = allowRefund;
+}
