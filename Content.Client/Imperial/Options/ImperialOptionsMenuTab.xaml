@@ -1,0 +1,32 @@
+
+
+<imperial:ImperialOptionsMenuTab
+    xmlns="https://spacestation14.io"
+    xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+    xmlns:imperial="clr-namespace:Content.Client.Imperial.Options"
+    xmlns:options="clr-namespace:Content.Client.Options.UI"
+>
+    <BoxContainer Orientation="Vertical">
+        <ScrollContainer VerticalExpand="True">
+            <BoxContainer Name="KeybindsContainer" Orientation="Vertical" Margin="8 8 8 8">
+
+                <!--
+                    Keybind buttons are added here in the C# code
+                    If you need to add some opion go to ImperialOptionMenuTab.xaml.cs
+                -->
+
+            </BoxContainer>
+        </ScrollContainer>
+        <controls:StripeBack HasBottomEdge="False" HasMargins="False">
+            <BoxContainer Orientation="Horizontal" Margin="8 8">
+                <Control MinSize="8 0" />
+                <Label Text="{Loc 'ui-options-binds-explanation'}" StyleClasses="LabelSubText" />
+                <Button Name="ResetAllButton"
+                        Text="{Loc 'ui-options-binds-reset-all'}"
+                        HorizontalExpand="True"
+                        HorizontalAlignment="Right" />
+            </BoxContainer>
+        </controls:StripeBack>
+    </BoxContainer>
+
+</imperial:ImperialOptionsMenuTab>
