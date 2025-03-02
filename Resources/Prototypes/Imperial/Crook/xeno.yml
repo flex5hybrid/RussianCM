@@ -157,8 +157,8 @@
       - ActionCritFakeDeath
       - ActionCritLastWords
   - type: MovementSpeedModifier
-    baseWalkSpeed : 2.5
-    baseSprintSpeed : 5
+    baseWalkSpeed : 2.8
+    baseSprintSpeed : 5.3
   - type: MobState
     allowedStates:
     - Alive
