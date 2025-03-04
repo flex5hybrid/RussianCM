@@ -9,6 +9,8 @@
       name: tdm-urban-name
       description: tdm-urban-desc
       rules: tdm-urban-rules
+      raffle:
+        settings: short
     - type: GhostRoleMobSpawner
       prototype: TDMUrbanPreset
     - type: Sprite
@@ -29,6 +31,8 @@
       name: tdm-forest-name
       description: tdm-forest-desc
       rules: tdm-forest-rules
+      raffle:
+        settings: short
     - type: GhostRoleMobSpawner
       prototype: TDMForestPreset
     - type: Sprite
@@ -49,6 +53,8 @@
       name: tdm-snow-name
       description: tdm-snow-desc
       rules: tdm-snow-rules
+      raffle:
+        settings: short
     - type: GhostRoleMobSpawner
       prototype: TDMSnowPreset
     - type: Sprite
@@ -69,6 +75,8 @@
       name: tdm-desert-name
       description: tdm-desert-desc
       rules: tdm-desert-rules
+      raffle:
+        settings: short
     - type: GhostRoleMobSpawner
       prototype: TDMDesertPreset
     - type: Sprite
