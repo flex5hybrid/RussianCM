@@ -1,5 +1,4 @@
 - type: entity
-  noSpawn: false
   parent: MobHuman
   id: TDMUrbanPreset
   name: UrbanPreset
@@ -35,7 +34,6 @@
     #     - skillSurgery
 
 - type: entity
-  noSpawn: false
   parent: MobHuman
   id: TDMForestPreset
   name: ForestPreset
@@ -71,7 +69,6 @@
     #     - skillSurgery
 
 - type: entity
-  noSpawn: false
   parent: MobHuman
   id: TDMSnowPreset
   name: SnowPreset
@@ -107,7 +104,6 @@
     #     - skillSurgery
 
 - type: entity
-  noSpawn: false
   parent: MobHuman
   id: TDMDesertPreset
   name: DesertPreset
@@ -126,6 +122,77 @@
       state: ertleadereva
     - type: Loadout
       prototypes: [ TDMDesertGear ]
+    - type: RandomHumanoidAppearance
+      randomizeName: false
+    # - type: CrewSkills
+    #   skills:
+    #     - skillBotany
+    #     - skillBaseMed
+    #     - skillBaseConstraction
+    #     - skillHacking
+    #     - skillInstrumentation
+    #     - skillMaintenance
+    #     - skillMedicalEquipment
+    #     - skillPharmacology
+    #     - skillPiloting
+    #     - skillShooting
+    #     - skillSurgery
+
+- type: entity
+  parent: MobHuman
+  id: TDMMedicalPreset
+  name: MedicalPreset
+  suffix: TDM
+  components:
+    - type: AutoImplant
+      implants:
+      - DeathAcidifierImplanter
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - names_last
+    - type: Sprite
+      netsync: false
+      sprite: Markers/jobs.rsi
+      state: ertleadereva
+    - type: Loadout
+      prototypes: [ TDMMedicalGear ]
+    - type: RandomHumanoidAppearance
+      randomizeName: false
+    # - type: CrewSkills
+    #   skills:
+    #     - skillBotany
+    #     - skillBaseMed
+    #     - skillBaseConstraction
+    #     - skillHacking
+    #     - skillInstrumentation
+    #     - skillMaintenance
+    #     - skillMedicalEquipment
+    #     - skillPharmaceuticals
+    #     - skillPharmacology
+    #     - skillPiloting
+    #     - skillShooting
+    #     - skillSurgery
+
+- type: entity
+  parent: MobHuman
+  id: TDMLeadPreset
+  name: LeadPreset
+  suffix: TDM
+  components:
+    - type: AutoImplant
+      implants:
+      - DeathAcidifierImplanter
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryLeader
+      - names_last
+    - type: Sprite
+      netsync: false
+      sprite: Markers/jobs.rsi
+      state: ertleadereva
+    - type: Loadout
+      prototypes: [ TDMLeadGear ]
     - type: RandomHumanoidAppearance
       randomizeName: false
     # - type: CrewSkills
