@@ -1,0 +1,11 @@
+- type: entity
+  id: DivineParticles
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Imperial/Medieval/Gun/Charmer/disabler.rsi
+    state: 3
+  - type: MedievalParticles
+    color: "#009933"
+  - type: TimedDespawn
+    lifetime: 5

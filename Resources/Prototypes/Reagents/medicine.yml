@@ -943,6 +943,7 @@
   physicalDesc: reagent-physical-desc-thick
   flavor: sweet
   color: "#e0a5b9"
+  pricePerUnit: 20 # Imperial Chemistry Rework
   metabolisms:
     Medicine:
       effects:
@@ -1170,7 +1171,7 @@
         conditions:
         - !type:ReagentThreshold
           min: 12
-          
+
 - type: reagent
   id: Opporozidone #Name based of an altered version of the startreck chem "Opporozine"
   name: reagent-name-opporozidone

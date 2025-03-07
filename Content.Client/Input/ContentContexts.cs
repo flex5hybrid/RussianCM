@@ -84,6 +84,15 @@ namespace Content.Client.Input
             human.AddFunction(ContentKeyFunctions.Arcade1);
             human.AddFunction(ContentKeyFunctions.Arcade2);
             human.AddFunction(ContentKeyFunctions.Arcade3);
+            // Imperial Options Start
+            human.AddFunction(ContentKeyFunctions.ImperialTargetCapture);
+            human.AddFunction(ContentKeyFunctions.ImperialTargetRotate);
+
+            human.AddFunction(ContentKeyFunctions.ImperialMinigameUp);
+            human.AddFunction(ContentKeyFunctions.ImperialMinigameLeft);
+            human.AddFunction(ContentKeyFunctions.ImperialMinigameRight);
+            human.AddFunction(ContentKeyFunctions.ImperialMinigameDown);
+            // Imperial Options End
 
             // actions should be common (for ghosts, mobs, etc)
             common.AddFunction(ContentKeyFunctions.OpenActionsMenu);
