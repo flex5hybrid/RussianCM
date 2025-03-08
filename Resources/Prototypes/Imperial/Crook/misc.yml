@@ -10,7 +10,7 @@
   description: Will blind any poverty.
   components:
   - type: Sprite
-    sprite: Imperial/Crook/Misc/zippo.rsi
+    sprite: Imperial/Crook/Misc/Fancy/zippo.rsi
     layers:
     - state: icon-close
       map: ["base"]
@@ -33,9 +33,9 @@
   description: Will blind any poverty.
   components:
   - type: Sprite
-    sprite: Imperial/Crook/Misc/jumpsuit.rsi
+    sprite: Imperial/Crook/Misc/Fancy/jumpsuit.rsi
   - type: Clothing
-    sprite: Imperial/Crook/Misc/jumpsuit.rsi
+    sprite: Imperial/Crook/Misc/Fancy/jumpsuit.rsi
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -49,9 +49,9 @@
   description: Will blind any poverty.
   components:
   - type: Sprite
-    sprite: Imperial/Crook/Misc/gloves.rsi
+    sprite: Imperial/Crook/Misc/Fancy/gloves.rsi
   - type: Clothing
-    sprite: Imperial/Crook/Misc/gloves.rsi
+    sprite: Imperial/Crook/Misc/Fancy/gloves.rsi
   - type: Fiber
     fiberMaterial: fibers-durathread
     fiberColor: fibers-black
@@ -69,9 +69,9 @@
   description: Will blind any poverty.
   components:
   - type: Sprite
-    sprite: Imperial/Crook/Misc/boots.rsi
+    sprite: Imperial/Crook/Misc/Fancy/boots.rsi
   - type: Clothing
-    sprite: Imperial/Crook/Misc/boots.rsi
+    sprite: Imperial/Crook/Misc/Fancy/boots.rsi
   - type: Matchbox
 
 - type: entity
@@ -82,7 +82,9 @@
   description: Will blind any poverty.
   components:
   - type: Sprite
-    sprite: Imperial/Crook/Misc/bag.rsi
+    sprite: Imperial/Crook/Misc/Fancy/bag.rsi
+  - type: Clothing
+    sprite: Imperial/Crook/Misc/Fancy/flask.rsi
 
 - type: entity
   parent: FlaskBase
@@ -92,7 +94,7 @@
   description: Will blind any poverty.
   components:
   - type: Sprite
-    sprite: Imperial/Crook/Misc/flask.rsi
+    sprite: Imperial/Crook/Misc/Fancy/flask.rsi
 
 - type: entity
   id: FancyBoxFolder
@@ -102,11 +104,11 @@
   description: Will blind any poverty.
   components:
   - type: Sprite
-    sprite: Imperial/Crook/Misc/folder.rsi
+    sprite: Imperial/Crook/Misc/Fancy/folder.rsi
     layers:
     - state: icon
   - type: Item
-    sprite: Imperial/Crook/Misc/folder.rsi
+    sprite: Imperial/Crook/Misc/Fancy/folder.rsi
 
 ### tomsktoluene
 ### tomsktoluene
