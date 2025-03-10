@@ -83,7 +83,6 @@
   - type: GunWieldBonus # Imperial balance
     minAngle: -32
     maxAngle: -32
-    
 
 - type: entity
   name: musket
