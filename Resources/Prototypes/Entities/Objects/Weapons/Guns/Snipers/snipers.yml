@@ -59,6 +59,8 @@
     sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
   - type: GunRequiresWield
   - type: Gun
+    projectileSpeed: 50
+    projectileSpeedModified: 50
     fireRate: 0.4
     selectedMode: SemiAuto
     availableModes:
@@ -72,8 +74,8 @@
     capacity: 5
     proto: CartridgeAntiMateriel
   - type: SpeedModifiedOnWield
-    walkModifier: 0.25
-    sprintModifier: 0.25
+    walkModifier: 0.17
+    sprintModifier: 0.17
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 3
