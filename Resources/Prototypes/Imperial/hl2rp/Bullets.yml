@@ -1,0 +1,41 @@
+#9mm
+- type: entity
+  id: BaseCartridgeSubmachineHL2
+  name: cartridge (9mm)
+  parent: BaseCartridge
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: CartridgeAmmo
+    proto: BulletSubmachineHL2
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: Tag
+    tags:
+      - Cartridge
+      - CartridgeHL2SMG
+
+- type: entity
+  id: CartridgeSubmachineHL2
+  name: cartridge (9mm)
+  suffix: hl2
+  parent: BaseCartridgeSubmachineHL2
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSubmachineHL2
+
+- type: entity
+  id: BulletSubmachineHL2
+  name: bullet (9mm)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 8

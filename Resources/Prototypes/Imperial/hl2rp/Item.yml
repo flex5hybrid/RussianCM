@@ -1,0 +1,68 @@
+- type: entity
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseSyndicateContraband]
+  id: ClothingBeltCombineHL2
+  suffix: hl2
+  name: combine backpack
+  description: A set of tactical backpack worn by Combine boarding parties.
+  components:
+  - type: Sprite
+    sprite: Imperial/hl2rp/Item/back.rsi
+  - type: Clothing
+    sprite: Imperial/hl2rp/Item/back.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Storage
+    maxItemSize: Normal
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,8,3
+
+- type: entity
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseSyndicateContraband]
+  id: ClothingBeltCPHL2
+  suffix: hl2
+  name: CP belt
+  description: A set of tactical backpack worn by CP boarding parties.
+  components:
+  - type: Sprite
+    sprite: Imperial/hl2rp/Item/belt.rsi
+  - type: Clothing
+    sprite: Imperial/hl2rp/Item/belt.rsi
+  - type: Storage
+    maxItemSize: Normal
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,5,1
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHat1HL2
+  name: hat
+  description: 'Gentlemen?'
+  components:
+  - type: Sprite
+    sprite: Imperial/hl2rp/Item/kepka.rsi
+  - type: Clothing
+    sprite: Imperial/hl2rp/Item/kepka.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHat2HL2
+  name: hat
+  description: 'Gentlemen?'
+  components:
+  - type: Sprite
+    sprite: Imperial/hl2rp/Item/shapka_ser.rsi
+  - type: Clothing
+    sprite: Imperial/hl2rp/Item/shapka_ser.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHat3HL2
+  name: hat
+  description: 'Gentlemen?'
+  components:
+  - type: Sprite
+    sprite: Imperial/hl2rp/Item/shapka_zel.rsi
+  - type: Clothing
+    sprite: Imperial/hl2rp/Item/shapka_zel.rsi
