@@ -330,7 +330,7 @@
     damage:
       types:
         Slash: 10
-        Structural: 10
+        Structural: 50
   - type: MeleeChemicalInjector
     solution: bloodstream
     transferAmount: 5
@@ -398,7 +398,8 @@
     damage:
       types:
         Piercing: 10
-        Structural: 20
+        Caustic: 2
+        Structural: 25
   - type: NpcFactionMember
     factions:
     - SimpleHostile
