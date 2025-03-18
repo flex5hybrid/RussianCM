@@ -26,16 +26,16 @@
   - GroupSpeciesBreathTool
 
 # Silicons
-#- type: roleLoadout
+# - type: roleLoadout
 #  id: JobBorg
 #  nameDataset: roleloadout doesn't support both so need to update that first.
 #  canCustomizeName: true
-# Imperial Space отключение лодаутов ИИ Start
-# - type: roleLoadout
-#   id: JobStationAi
-#   nameDataset: NamesAI
-#   canCustomizeName: true
-# Imperial Space отключение лодаутов ИИ End
+
+- type: roleLoadout
+  id: JobStationAi
+  nameDataset: NamesAI
+  canCustomizeName: true
+
 
 # Civilian
 - type: roleLoadout

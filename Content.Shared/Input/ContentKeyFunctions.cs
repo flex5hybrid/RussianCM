@@ -116,5 +116,25 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction MappingRemoveDecal = "MappingRemoveDecal";
         public static readonly BoundKeyFunction MappingCancelEraseDecal = "MappingCancelEraseDecal";
         public static readonly BoundKeyFunction MappingOpenContextMenu = "MappingOpenContextMenu";
+
+        // Imperial Options Start
+        #region Orix Magic
+
+        public static readonly BoundKeyFunction ImperialTargetCapture = "ImperialTargetCapture";
+        public static readonly BoundKeyFunction ImperialTargetRotate = "ImperialTargetRotate";
+
+        #endregion
+
+
+        #region Minigames
+
+        public static readonly BoundKeyFunction ImperialMinigameUp = "ImperialMinigameUp";
+        public static readonly BoundKeyFunction ImperialMinigameDown = "ImperialMinigameDown";
+        public static readonly BoundKeyFunction ImperialMinigameLeft = "ImperialMinigameLeft";
+        public static readonly BoundKeyFunction ImperialMinigameRight = "ImperialMinigameRight";
+
+        #endregion
+
+        // Imperial Options End
     }
 }

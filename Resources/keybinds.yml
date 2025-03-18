@@ -584,3 +584,29 @@ binds:
   type: State
   key: MouseRight
   canFocus: true
+# Imperial Options Start
+# Orix Magic
+- function: ImperialTargetCapture
+  type: State
+  key: MouseMiddle
+  canFocus: true
+- function: ImperialTargetRotate
+  type: State
+  key: MouseMiddle
+  canFocus: true
+
+# Minigames
+- function: ImperialMinigameUp
+  type: State
+  key: Up
+- function: ImperialMinigameDown
+  type: State
+  key: Down
+- function: ImperialMinigameLeft
+  type: State
+  key: Left
+- function: ImperialMinigameRight
+  type: State
+  key: Right
+
+# Imperial Options End

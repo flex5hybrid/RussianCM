@@ -50,4 +50,14 @@ public sealed partial class ICCVars : CVars
         CVarDef.Create("imperial.broadphase_check_update_rate", 1.0f, CVar.SERVERONLY);
 
     #endregion
+
+    #region Target Overlay
+
+    public static readonly CVarDef<string>
+        TargetOverlayAimColor = CVarDef.Create("imperial.target_overlay_aim_color", "#FF0000FF", CVar.CLIENTONLY);
+
+    public static readonly CVarDef<string>
+        TargetOverlayCapturedAimColor = CVarDef.Create("imperial.target_overlay_captured_aim_color", "#FF0000FF", CVar.CLIENTONLY);
+
+    #endregion
 }

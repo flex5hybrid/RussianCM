@@ -147,9 +147,10 @@ public sealed partial class ChatSystem : SharedChatSystem
         IConsoleShell? shell = null,
         ICommonSession? player = null, string? nameOverride = null,
         bool checkRadioPrefix = true,
-        bool ignoreActionBlocker = false)
+        bool ignoreActionBlocker = false,
+        Color? color = null) // Impreial Medieval Magic
     {
-        TrySendInGameICMessage(source, message, desiredType, hideChat ? ChatTransmitRange.HideChat : ChatTransmitRange.Normal, hideLog, shell, player, nameOverride, checkRadioPrefix, ignoreActionBlocker);
+        TrySendInGameICMessage(source, message, desiredType, hideChat ? ChatTransmitRange.HideChat : ChatTransmitRange.Normal, hideLog, shell, player, nameOverride, checkRadioPrefix, ignoreActionBlocker, color);
     }
 
     /// <summary>
@@ -173,7 +174,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         ICommonSession? player = null,
         string? nameOverride = null,
         bool checkRadioPrefix = true,
-        bool ignoreActionBlocker = false
+        bool ignoreActionBlocker = false,
+        Color? color = null // Impreial Medieval Magic
         )
     {
         if (HasComp<GhostComponent>(source))
@@ -249,10 +251,10 @@ public sealed partial class ChatSystem : SharedChatSystem
         switch (desiredType)
         {
             case InGameICChatType.Speak:
-                SendEntitySpeak(source, message, range, nameOverride, hideLog, ignoreActionBlocker);
+                SendEntitySpeak(source, message, range, nameOverride, hideLog, ignoreActionBlocker, color); // Imperial Medieval Magic
                 break;
             case InGameICChatType.Whisper:
-                SendEntityWhisper(source, message, range, null, nameOverride, hideLog, ignoreActionBlocker);
+                SendEntityWhisper(source, message, range, null, nameOverride, hideLog, ignoreActionBlocker, color); // Imperial Medieval Magic
                 break;
             case InGameICChatType.Emote:
                 SendEntityEmote(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
@@ -331,12 +333,12 @@ public sealed partial class ChatSystem : SharedChatSystem
         if (playSound)
         {
             if (sender == Loc.GetString("admin-announce-announcer-default")) announcementSound = new SoundPathSpecifier(CentComAnnouncementSound); // Corvax-Announcements: Support custom alert sound from admin panel
-            _audio.PlayGlobal(announcementSound == null ? DefaultAnnouncementSound : _audio.GetSound(announcementSound), Filter.Broadcast(), true, AudioParams.Default.WithVolume(-2f));
+            _audio.PlayGlobal(announcementSound == null ? DefaultAnnouncementSound : _audio.ResolveSound(announcementSound), Filter.Broadcast(), true, AudioParams.Default.WithVolume(-2f));
         }
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Global station announcement from {sender}: {message}");
     }
 
-    /// <summary>
+    /// <summary>s
     /// Dispatches an announcement to players selected by filter.
     /// </summary>
     /// <param name="filter">Filter to select players who will recieve the announcement</param>
@@ -417,7 +419,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         ChatTransmitRange range,
         string? nameOverride,
         bool hideLog = false,
-        bool ignoreActionBlocker = false
+        bool ignoreActionBlocker = false,
+        Color? color = null // Impreial Medieval Magic
         )
     {
         if (!_actionBlocker.CanSpeak(source) && !ignoreActionBlocker)
@@ -455,6 +458,13 @@ public sealed partial class ChatSystem : SharedChatSystem
             ("fontSize", speech.FontSize),
             ("message", FormattedMessage.EscapeText(message)));
 
+        // Impreial Medieval Magic Start
+
+        if (color != null)
+            wrappedMessage = InjectTagInsideTag(new(ChatChannel.None, wrappedMessage, wrappedMessage, GetNetEntity(source), null), "BubbleContent", "color", color.Value.ToHex());
+
+        // Impreial Medieval Magic End
+
         SendInVoiceRange(ChatChannel.Local, message, wrappedMessage, source, range);
 
         var ev = new EntitySpokeEvent(source, message, null, null);
@@ -490,7 +500,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         RadioChannelPrototype? channel,
         string? nameOverride,
         bool hideLog = false,
-        bool ignoreActionBlocker = false
+        bool ignoreActionBlocker = false,
+        Color? color = null // Impreial Medieval Magic
         )
     {
         if (!_actionBlocker.CanSpeak(source) && !ignoreActionBlocker)
@@ -527,6 +538,14 @@ public sealed partial class ChatSystem : SharedChatSystem
         var wrappedUnknownMessage = Loc.GetString("chat-manager-entity-whisper-unknown-wrap-message",
             ("message", FormattedMessage.EscapeText(obfuscatedMessage)));
 
+        // Impreial Medieval Magic Start
+        if (color != null)
+        {
+            wrappedMessage = InjectTagInsideTag(new(ChatChannel.None, wrappedMessage, wrappedMessage, GetNetEntity(source), null), "BubbleContent", "color", color.Value.ToHex());
+            wrappedobfuscatedMessage = InjectTagInsideTag(new(ChatChannel.None, wrappedobfuscatedMessage, wrappedobfuscatedMessage, GetNetEntity(source), null), "BubbleContent", "color", color.Value.ToHex());
+            wrappedUnknownMessage = InjectTagInsideTag(new(ChatChannel.None, wrappedUnknownMessage, wrappedUnknownMessage, GetNetEntity(source), null), "BubbleContent", "color", color.Value.ToHex());
+        }
+        // Impreial Medieval Magic End
 
         foreach (var (session, data) in GetRecipients(source, WhisperMuffledRange))
         {

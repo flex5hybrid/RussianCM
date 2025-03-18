@@ -34,6 +34,7 @@ using static Robust.Client.UserInterface.Controls.MultiselectOptionButton<
     Content.Client.UserInterface.Systems.Actions.Windows.ActionsWindow.Filters>;
 using static Robust.Client.UserInterface.Controls.TextureRect;
 using static Robust.Shared.Input.Binding.PointerInputCmdHandler;
+using Content.Shared.Imperial.Medieval.Magic.Overlays; // Imperial Medieval Magic
 
 namespace Content.Client.UserInterface.Systems.Actions;
 
@@ -914,6 +915,21 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
         // override "held-item" overlay
         var provider = action.Container;
 
+        // Imperial Medieval Magic Start
+
+        if (action.AttachedEntity != null)
+        {
+            var ev = new MedievalActionStartTargetingEvent()
+            {
+                ActionOwner = (EntityUid)action.AttachedEntity,
+                Action = actionId
+            };
+
+            EntityManager.EventBus.RaiseLocalEvent(actionId, ev);
+        }
+
+        // Imperial Medieval Magic End
+
         if (action.TargetingIndicator && _overlays.TryGetOverlay<ShowHandItemOverlay>(out var handOverlay))
         {
             if (action.ItemIconStyle == ItemActionIconStyle.BigItem && action.Container != null)
@@ -968,6 +984,21 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
         {
             // TODO inform the server
             action.Toggled = false;
+
+            // Imperial Medieval Magic Start
+
+            if (action.AttachedEntity != null)
+            {
+                var ev = new MedievalActionStopTargetingEvent()
+                {
+                    ActionOwner = (EntityUid)action.AttachedEntity,
+                    Action = (EntityUid)SelectingTargetFor
+                };
+
+                EntityManager.EventBus.RaiseLocalEvent((EntityUid)SelectingTargetFor, ev);
+            }
+
+            // Imperial Medieval Magic End
         }
 
         SelectingTargetFor = null;
