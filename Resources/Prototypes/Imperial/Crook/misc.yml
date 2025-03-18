@@ -113,3 +113,16 @@
 ### tomsktoluene
 ### tomsktoluene
 ### tomsktoluene
+
+
+# https://github.com/tgstation/tgstation/blob/master/icons/turf/sand.dmi
+- type: tile
+  id: FloorSandDesert
+  name: tiles-sand-desert-floor
+  sprite: /Textures/Imperial/Crook/Misc/Tiles/sand.png
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 99910000
+  weather: true
+  indestructible: true

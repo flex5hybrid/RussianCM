@@ -12,3 +12,5 @@ ent-DrinkFancyFlask = фляжка
     .desc = Пейте жидкое золото.
 ent-FancyBoxFolder = папка
     .desc = Содержит в себе стратегии для выгодных инвестиций.
+
+tiles-sand-desert-floor = песок
