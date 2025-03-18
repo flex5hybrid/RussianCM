@@ -120,7 +120,7 @@
   parent: WallSandstone
   id: WallBackrooms
   name: unusual wall
-  suffix: Неразрушимое, Backrooms, Crook
+  suffix: 9000hp, Backrooms, Crook
   components:
   - type: Destructible
     thresholds:
