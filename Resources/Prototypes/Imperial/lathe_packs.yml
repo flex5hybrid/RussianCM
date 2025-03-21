@@ -20,7 +20,7 @@
 - type: latheRecipePack
   id: ImperialUniformStatic
   recipes:
-  - ClothingNeckCloakNanotrasenBlack #Imperial black cloak
+  # - ClothingNeckCloakNanotrasenBlack #Imperial black cloak
   - WardenMantleLathe # imperial ImperialClothes
   - ClothingUniformJumpsuitCoroner #Imperial coroner
   - ClothingUniformJumpskirtCoroner #Imperial coroner
