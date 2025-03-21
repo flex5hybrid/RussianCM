@@ -11,7 +11,7 @@
             "name": "rock"
         },
         {
-            "name": "vodopadik_south",
+            "name": "rock_south",
             "directions" : 1,
             "delays":
             [
