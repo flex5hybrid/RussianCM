@@ -37,7 +37,6 @@ ert-uplink-ammononcombat-speedloadermagnumap-name = спидлоадер (.45 м
 ert-uplink-ammononcombat-speedloadermagnumap-desc = Бронебойная версия.
 ert-uplink-ammononcombat-magazineboxmagnumap-name = коробка патронов (.45 магнум AP)
 ert-uplink-ammononcombat-magazineboxmagnumap-desc = Бронебойная версия.
-ert-uplink-ammo-MagazineLightRifleBox-desc = Патроны для пулемета.
 ert-uplink-melee-energysworddouble-name = двойной энергетический меч
 ert-uplink-melee-energysworddouble-desc = Вам мало одного клинка? Вы хотите шинковать, и клоуна, и капитана одновременно? Тогда покупайте этот меч.
 ert-uplink-equipment-apocryph-name = апокрифический Р.И.Г.
