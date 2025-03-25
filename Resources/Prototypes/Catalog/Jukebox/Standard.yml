@@ -39,3 +39,9 @@
   name: PigeonBeans - Sunset
   path:
     path: /Audio/Jukebox/sunset.ogg
+
+- type: jukebox
+  id: meandthebirds
+  name: duster - Me and the birds
+  path:
+    path: /Audio/Jukebox/meandthebirds.ogg
