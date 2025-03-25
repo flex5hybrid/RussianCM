@@ -17,7 +17,6 @@
     size: Ginormous
     sprite: Imperial/Other/TFG/Murasama/murasama_blade.rsi
   - type: Reflect
-    enabled: true
     reflectProb: 0.75
     spread: 35
   - type: Tag

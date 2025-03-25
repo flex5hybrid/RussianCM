@@ -2,7 +2,6 @@
   id: BulletGnomish
   name: beerspit
   parent: BaseBullet
-  noSpawn: true
   components:
     - type: Projectile
       damage:

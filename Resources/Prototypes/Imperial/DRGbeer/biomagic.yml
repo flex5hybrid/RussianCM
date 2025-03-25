@@ -2,7 +2,6 @@
   id: ActionBeersleep
   name: Fireball
   description: Fires an explosive fireball towards the clicked location.
-  noSpawn: true
   components:
   - type: WorldTargetAction
     useDelay: 30 #ибо нехуй спамить заклинанием на сон
@@ -16,14 +15,12 @@
       state: spell
     event: !type:ProjectileSpellEvent
       prototype: BulletGnomish
-      posData: !type:TargetCasterPos
       speech: action-speech-spell-Gnomik
 
 - type: entity
   parent: BaseSubdermalImplant
   id: BeerImplantGnome
   name: absolutelyNothing
-  noSpawn: true
   components:
     - type: SubdermalImplant
       implantAction: ActionBeersleep
