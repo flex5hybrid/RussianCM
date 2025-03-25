@@ -6,7 +6,7 @@
   suffix: Onsen
   components:
     - type: Sprite
-      sprite: Imperial\Onsen\Vodopad.rsi
+      sprite: Imperial/Onsen/Vodopad.rsi
       layers:
         - state: rock
         - map: [ "enum.EdgeLayer.South" ]
