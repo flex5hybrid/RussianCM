@@ -21,7 +21,6 @@
     size: Small
   - type: Pda
     id: ID_Leaders_Cruenta
-    state: pda
   - type: Icon
     sprite: Imperial/sacerdos/Cruenta_falcatio.rsi/PDA_Cruenta.rsi/Cruenta_PDA_Leaders.rsi
     state: pda
@@ -52,7 +51,6 @@
     size: Small
   - type: Pda
     id: ID_fight_Cruenta
-    state: pda
   - type: Icon
     sprite: Imperial/sacerdos/Cruenta_falcatio.rsi/PDA_Cruenta.rsi/Cruenta_PDA.rsi
     state: pda
@@ -83,7 +81,6 @@
     size: Small
   - type: Pda
     id: ID_Medical_Cruenta
-    state: pda
   - type: Icon
     sprite: Imperial/sacerdos/Cruenta_falcatio.rsi/PDA_Cruenta.rsi/Cruenta_PDA_med.rsi
     state: pda
