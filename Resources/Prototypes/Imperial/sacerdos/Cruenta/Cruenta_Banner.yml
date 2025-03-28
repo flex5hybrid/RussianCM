@@ -8,3 +8,7 @@
   - type: Sprite
     sprite: Imperial/sacerdos/Cruenta_falcatio.rsi/Cruenta_Banner.rsi
     state: Cruenta_Banner
+  - type: PointLight
+    radius: 250
+    energy: 35
+    color: "#6e242b"

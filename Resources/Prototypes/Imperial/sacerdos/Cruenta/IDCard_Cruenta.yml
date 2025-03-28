@@ -11,7 +11,7 @@
     size: Small
     heldPrefix: gold
   - type: IdCard
-    jobTitle: job-name-Leaders-Cruenta
+    jobTitle: ID_Leaders_Cruenta
     jobIcon: ID_Leaders_CruentaJobIcon
   - type: Access
     tags:
@@ -30,7 +30,7 @@
     size: Small
     heldPrefix: default
   - type: IdCard
-    jobTitle: job-name-fight-Cruenta
+    jobTitle: ID_fight_Cruenta
     jobIcon: ID_fight_CruentaJobIcon
   - type: Access
     tags:
@@ -49,7 +49,7 @@
     size: Small
     heldPrefix: silver
   - type: IdCard
-    jobTitle: job-name-Medical-Cruenta
+    jobTitle: ID_Medical_Cruenta
     jobIcon: ID_Medical_CruentaJobIcon
   - type: Access
     tags:
@@ -67,7 +67,7 @@
   id: ID_fight_CruentaJobIcon
   icon:
     sprite: /Textures/Imperial/sacerdos/Cruenta_falcatio.rsi/Jobicons_Cruenta.rsi
-    state: fight_JobIcon_Cruenta # Заглушка
+    state: fight_JobIcon_Cruenta
 
 - type: jobIcon
   parent: JobIcon

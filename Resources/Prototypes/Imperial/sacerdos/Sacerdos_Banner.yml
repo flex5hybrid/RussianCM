@@ -8,3 +8,7 @@
   - type: Sprite
     sprite: Imperial/sacerdos/Sacerdos_Banner.rsi
     state: Sacerdos_Banner
+  - type: PointLight
+    radius: 250
+    energy: 35
+    color: "#7d7d7d"
