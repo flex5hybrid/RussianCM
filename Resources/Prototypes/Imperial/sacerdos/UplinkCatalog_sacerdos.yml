@@ -938,7 +938,7 @@
 - type: listing
   id: SacerdosUplinkMagazineBoxPistolUranium
 #  name: MagazineBoxPistolUranium-name
-  description: MagazineBoxUranium-description
+  description: MagazineBoxPistolUranium
   productEntity: MagazineBoxPistolUranium
   cost:
     Telecrystal_sacerdos: 250
