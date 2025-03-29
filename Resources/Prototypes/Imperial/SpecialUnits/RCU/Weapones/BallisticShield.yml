@@ -9,7 +9,6 @@
     sprite: Imperial/SpecialUnits/RCU/Weapones/ballisticshield.rsi
     state: icon
   - type: Reflect
-    enabled: true
     reflectProb: 0.20
     spread: 65
   - type: Blocking
@@ -25,11 +24,6 @@
          Slash: 0.1
          Piercing: 0.1
          Heat: 0.1
-    flatReductions:
-          Blunt: 0.1
-          Slash: 0.1
-          Piercing: 0.1
-          Heat: 0.1
   - type: Damageable
     damageContainer: Shield
   - type: Destructible

@@ -42,3 +42,6 @@
     chance: 1
   - type: Speech
     speechSounds: Pai
+
+- type: Tag
+  id: SpeedLoaderGrenadeFrag

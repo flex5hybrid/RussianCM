@@ -12,7 +12,6 @@
     - 0,0,12,3
 
 - type: entity
-  noSpawn: false
   parent: ClothingBackpackRCU
   id: ClothingBackpackRCUFilledOperator
   suffix: RiotControlUnit, filled
@@ -24,7 +23,6 @@
         - id: UplinkRCUOperator
 
 - type: entity
-  noSpawn: false
   parent: ClothingBackpackRCU
   id: ClothingBackpackRCUFilledOfficer
   suffix: RiotControlUnit, filled
