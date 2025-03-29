@@ -6,9 +6,9 @@
   suffix: RiotControlUnit
   components:
   - type: Sprite
-    sprite: Imperial\SpecialUnits\RCU\Clothing\Hardsuits\Operator\hardsuit.yml
+    sprite: Imperial/SpecialUnits/RCU/Clothing/Hardsuits/Operator/hardsuit.rsi
   - type: Clothing
-    sprite: Imperial\SpecialUnits\RCU\Clothing\Hardsuits\Operator\hardsuit.yml
+    sprite: Imperial/SpecialUnits/RCU/Clothing/Hardsuits/Operator/hardsuit.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
