@@ -1,7 +1,5 @@
 job-name-rcuoperator = IJYLUNIL
-job-description-rcuoperator =
 job-name-rcuofficer = IZZCWYL
-job-description-rcuofficer =
 
 ent-RCUOperatorPreset = оператор RCU
 ent-RCUOfficerPreset = офицер RCU
