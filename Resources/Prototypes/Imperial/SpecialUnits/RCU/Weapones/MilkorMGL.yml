@@ -1,6 +1,6 @@
 - type: entity
   name: MilkorMGL
-  parent: [ BaseWeaponLauncher, BaseMajorContraband ]
+  parent: BaseWeaponLauncher
   id: WeaponLauncherMilkorMGL
   description: A modified NanoTrasen grenade launcher, based on ChinaLake.
   suffix: RiotControlUnit
@@ -26,22 +26,18 @@
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
   - type: Gun
-    minAngle: 18
-    maxAngle: 19
+    minAngle: 1
+    maxAngle: 2
     fireRate: 1.5
     soundGunshot:
       path:  /Audio/Imperial/SpecialUnits/RCU/Criminality/nuhuh.ogg
-  - type: Wieldable
-  - type: GunWieldBonus
-    minAngle: -18
-    maxAngle: -18
-  - type: GunRequiresWield
   - type: Appearance
   - type: ClothingFactionExplosion
     friendlyFaction: RiotControlUnit
     chance: 1
   - type: Speech
     speechSounds: Pai
+  - type: MultiHandedItem
 
 - type: Tag
   id: SpeedLoaderGrenadeFrag

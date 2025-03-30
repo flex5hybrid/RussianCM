@@ -1,6 +1,6 @@
 - type: entity
   name: UTS-15
-  parent: [ BaseWeaponShotgun, BaseGunWieldable ]
+  parent: BaseWeaponShotgun
   id: WeaponShotgunUTS15
   description: Automatic shotgun with multiple firing modes. Choose how you will kill.
   suffix: RiotControlUnit
@@ -10,7 +10,6 @@
     state: icon
   - type: Item
     sprite: Imperial/SpecialUnits/RCU/Weapones/UTS-15/inhand.rsi
-  - type: GunRequiresWield
   - type: Gun
     fireRate: 2.5
     selectedMode: SemiAuto
@@ -34,3 +33,4 @@
     chance: 1
   - type: Speech
     speechSounds: Pai
+  - type: MultiHandedItem
