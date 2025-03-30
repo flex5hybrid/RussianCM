@@ -28,5 +28,8 @@ ent-CargoMailTeleporter = почтовый телепортер
 ent-MailTeleporterMachineCircuitboard = почтовый телепортер (машинная плата)
     .desc = Машинная печатная плата для почтового телепорта.
 
+ent-PackageDelivery = посылка
+ent-LetterDelivery = письмо
+
 petting-success-mail-teleporter = Вы гладите {THE($target)} по {POSS-ADJ($target)} послушному, холодному корпусу.
 petting-failure-mail-teleporter = Вы тянете руку к {THE($target)}, но {SUBJECT($target)} {CONJUGATE-BE($target)} занят сортировкой писем!
