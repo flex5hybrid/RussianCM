@@ -10,3 +10,6 @@ delivery-opened-others = {CAPITALIZE($recipient)} открыл {$delivery}.
 
 delivery-unlock-verb = Разблокировано
 delivery-open-verb = Открыто
+
+petting-success-mail-teleporter = Вы гладите {THE($target)} по {POSS-ADJ($target)} послушному, холодному корпусу.
+petting-failure-mail-teleporter = Вы тянете руку к {THE($target)}, но {SUBJECT($target)} {CONJUGATE-BE($target)} занят сортировкой писем!
