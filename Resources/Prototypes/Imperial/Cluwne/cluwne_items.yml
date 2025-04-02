@@ -20,8 +20,8 @@
     layers: [ 0 ]
   - type: NoSlip
   - type: ClothingSpeedModifier
-    walkModifier: 1.7
-    sprintModifier: 1.7
+    walkModifier: 2
+    sprintModifier: 2
   - type: Armor
     modifiers:
       coefficients:
