@@ -135,11 +135,11 @@
     layers:
     - state: icon
       map: ["enum.TriggerVisualLayers.Base"]
-  - type: ClusterGrenade
+  - type: ScatteringGrenade
     fillPrototype: MobCluwneAtagSpider
     distance: 3
     velocity: 7
-    maxGrenadesCount: 5
+    capacity: 5
   - type: TimerTriggerVisuals
     primingSound:
       path: /Audio/Effects/countdown.ogg
@@ -201,8 +201,8 @@
     fiberColor: fibers-red
   - type: FingerprintMask
   - type: MeleeThrowOnHit
-    lifetime: 0.3
-    speed: 35
+    distance: 35
+    speed: 25
 
 - type: entity
   name: sus banana
