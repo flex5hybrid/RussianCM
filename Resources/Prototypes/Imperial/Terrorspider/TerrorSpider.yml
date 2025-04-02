@@ -14,8 +14,8 @@
         task: SimpleHostileCompound
     - type: GhostRole
       makeSentient: true
-      name: Рыцарь Ужаса
-      description: Сила улья
+      name: spider-terror-name
+      description: spider-terror-desc
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
@@ -597,7 +597,7 @@
   name: Destroyer terror
   parent: [ SimpleMobBases, MobCombat ]
   id: MobDestroyerSpider
-  description: Взламывает стены и двери, саботирует работу станции, уничтожает отделы. Главный враг синтетиков.
+  description: Breaks down walls and doors, sabotages the station, destroys departments. The main enemy of synthetics.
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -918,7 +918,7 @@
 - type: entity
   parent: LightImplantSpider
   id: LightImplantSpiderGuardian
-  name: Спавн паутины
+  name: Spawn web
   noSpawn: true
   components:
     - type: SubdermalImplant
@@ -2819,8 +2819,8 @@
   id: Terrorspider
   alias:
     - Terror
-  name: Пауки ужаса
-  description: На станции появились пауки ужаса. Эти мерзкие и кровожадные пауки хотят захватить станцию превратив ее в свой улей.
+  name: spider-terror-gamerule
+  description: spider-terror-gamerule-desc
   showInVote: false
   rules:
     - BasicStationEventScheduler
