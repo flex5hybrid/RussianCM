@@ -71,7 +71,11 @@
       components:
       - type: NpcFactionMember
         factions:
-        - Syndicate # Шоб голо не бил
+        - Syndicate # Шоб турели ратататата
+      - type: RandomMetadata
+        nameSegments:
+        - NamesWizardFirst
+        - NamesWizardLast
       - type: CrewSkills
         skills:
         - skillBotany #base
