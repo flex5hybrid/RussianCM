@@ -10,7 +10,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - Nanotrasen
+    - NanoTrasen
   - type: RandomMetadata
     nameSegments:
     - NamesMilitaryFirst
@@ -34,7 +34,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - Nanotrasen
+    - NanoTrasen
   - type: RandomMetadata
     nameSegments:
     - NamesMilitaryFirst
@@ -69,6 +69,8 @@
   - type: NpcFactionMember
     factions:
     - SimpleHostile
+  - type: RandomMetadata
+    nameSegments:
     - Наёмник
     - NamesLast
   - type: Loadout
