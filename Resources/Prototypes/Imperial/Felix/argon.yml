@@ -1,0 +1,63 @@
+- type: entity
+  name: тёмный энергетический меч
+  parent: [BaseMeleeWeaponEnergy, BaseMajorContraband]
+  id: MercFelixDarkSaber
+  suffix: ArgonPrime
+  description: Древний световой меч с плоским лезвием тёмно-серого цвета. Символ власти Аргона.
+  components:
+  - type: ItemToggle
+    onUse: true
+    onActivate: false # prevents the weapon from being able to be turned on when it is on the ground
+    soundActivate:
+      path: /Audio/Imperial/Felix/darksaber-on.ogg
+      params:
+        volume: -6
+    soundDeactivate:
+      path: /Audio/Imperial/Felix/darksaber-off.ogg
+      params:
+        volume: -5
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Imperial/Felix/darksaber-hum.ogg
+      params:
+        volume: -6
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        volume: 3
+        variation: 0.250
+    activatedDamage:
+        types:
+            Slash: 12
+            Heat: 12
+            Structural: 15
+  - type: ComponentToggler
+    components:
+    - type: Sharp
+    - type: DisarmMalus
+      malus: 0.7
+    - type: Execution
+      doAfterDuration: 4.0
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 1.5
+    angle: 100
+    damage:
+      types:
+        Blunt: 4.5
+  - type: Sprite
+    sprite: Imperial/Felix/Argon/darksaber.rsi
+    layers:
+      - state: e_sword
+      - state: e_sword_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: Item
+    size: Small
+    sprite: Imperial/Felix/Argon/darksaber-inhands.rsi
+  - type: Reflect
+    reflectProb: .75
+    spread: 75
