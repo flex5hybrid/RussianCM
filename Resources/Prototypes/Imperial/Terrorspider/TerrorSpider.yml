@@ -264,12 +264,6 @@
     solutions:
       melee:
         maxVol: 30
-  - type: SolutionRegeneration
-    solution: melee
-    generated:
-      reagents:
-      - ReagentId: Frostoil
-        Quantity: 600
   - type: MeleeChemicalInjector
     transferAmount: 10
     solution: melee
@@ -2763,9 +2757,6 @@
       reagents:
       - ReagentId: Water
         Quantity: 10
-  - type: Access
-    tags:
-    - Xeno
 
 - type: radioChannel
   id: hiveconnection
@@ -2829,8 +2820,8 @@
 - type: entity
   id: GasXenoSpitBullet
   name: Xeno's gas spit
+  description: Concentrated toxicity
   parent: BaseBulletTrigger
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi

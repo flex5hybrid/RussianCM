@@ -122,6 +122,7 @@ ent-WeaponXenoSpit = плевок ужаса
     .suffix = пауки ужаса
 
 ent-GasXenoSpitBullet = газовый плевок ксено
+    .desc = Концентрированная токсичность
     .suffix = пауки ужаса
 
 ent-TerrorEgg1Tir = яйцо паука ужаса
