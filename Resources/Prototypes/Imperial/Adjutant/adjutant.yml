@@ -14,7 +14,6 @@
   name: job-name-adjutant
   description: job-description-adjutant
   playTimeTracker: JobAdjutant
-  psychosisGainResist: 0.4 # psychosis
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 36000
@@ -35,16 +34,41 @@
     components:
       - type: CommandStaff
 
+### LOADOUT
+### LOADOUT
+
+- type: roleLoadout
+  id: JobAdjutant
+  groups:
+  - AdjutantJumpsuit
+  - Trinkets
+
+- type: loadoutGroup
+  id: AdjutantJumpsuit
+  name: loadout-group-adjutant-jumpsuit
+  loadouts:
+  - ClothingUniformJumpsuitAdjutant
+  - ClothingUniformJumpskirtAdjutant
+
+- type: loadout
+  id: ClothingUniformJumpsuitAdjutant
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAdjutant
+
+- type: loadout
+  id: ClothingUniformJumpskirtAdjutant
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtAdjutant
+
+### LOADOUT
+### LOADOUT
+
 - type: startingGear
   id: AdjutantGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitAdjutant
     back: ClothingBackpackHOPFilled
     shoes: ClothingShoesBootsLaceup
     id: AdjutantPDA
     gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetAdjutant
     belt: BoxFolderClipboard
-  innerClothingSkirt: ClothingUniformJumpsuitAdjutant
-  satchel: ClothingBackpackSatchelHOPFilled
-  duffelbag: ClothingBackpackDuffelHOPFilled
