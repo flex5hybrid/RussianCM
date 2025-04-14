@@ -10,7 +10,7 @@
   - AllHostile
   - Wizard
   - SyndicateAgent # Imperial Syndicate Agent Fix
-  - DeathSquad # Imperial Death Squad and Riot Control Unit
+  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
   - RiotControlUnit
 
 - type: npcFaction
@@ -57,7 +57,7 @@
   - AllHostile
   - SyndicateAgent # Imperial Syndicate Agent Fix
   - Wizard
-  - DeathSquad # Imperial Death Squad and Riot Control Unit
+  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
   - RiotControlUnit
 
 - type: npcFaction
@@ -74,7 +74,7 @@
   - Dragon
   - AllHostile
   - Wizard
-  - DeathSquad # Imperial Death Squad and Riot Control Unit
+  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
   - RiotControlUnit
 
 - type: npcFaction
@@ -89,7 +89,7 @@
   - AllHostile
   - SyndicateAgent # Imperial Syndicate Agent Fix
   - Wizard
-  - DeathSquad # Imperial Death Squad and Riot Control Unit
+  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
   - RiotControlUnit
 
 - type: npcFaction
@@ -105,7 +105,7 @@
   - AllHostile
   - SyndicateAgent # Imperial Syndicate Agent Fix
   - Wizard
-  - DeathSquad # Imperial Death Squad and Riot Control Unit
+  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
   - RiotControlUnit
 
 - type: npcFaction
@@ -117,7 +117,7 @@
   - Dragon
   - AllHostile
   - Wizard
-  - DeathSquad # Imperial Death Squad and Riot Control Unit
+  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
   - RiotControlUnit
 
 - type: npcFaction
@@ -136,7 +136,7 @@
   - Revolutionary
   - SyndicateAgent # Imperial Syndicate Agent Fix
   - Wizard
-  - DeathSquad # Imperial Death Squad and Riot Control Unit
+  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
   - RiotControlUnit
 
 - type: npcFaction
@@ -155,5 +155,5 @@
   - Revolutionary
   - AllHostile
   - SyndicateAgent # Imperial Syndicate Agent Fix
-  - DeathSquad # Imperial Death Squad and Riot Control Unit
+  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
   - RiotControlUnit
