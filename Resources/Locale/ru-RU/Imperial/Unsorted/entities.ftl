@@ -1429,7 +1429,7 @@ ent-FoodBakedCroissant = Круассан
 ent-RandomModsuitCrate = Cпавнер случайного Р.И.Г.
 .desc = { ent-BaseMobDiona.desc }
 
-ent-ClothingUniformJumpsuitCasualGreen = Обычная зелёная юбка-комбинезон
+ent-ClothingUniformJumpsuitCasualGreen = Обычный зелёный комбинезон
 .desc = Свободная поношенная зеленая рубашка с серыми брюками идеально подойдет для тех, кто хочет расслабиться.
 
 ent-RandomHumanoidVisitorMusicianFancy = Гост роль посетителя (Модный музыкант)
@@ -2058,6 +2058,10 @@ ent-VisitingCargonianSpawner = Спавнер посетителя (Случай
 
 ent-MurasamaSheath = Ножны Мурасама
 .desc = Необычные ножны с небольшим магазином для винтовки и спусковым крючком. Потрепанные, но надежные. Они выглядят так, словно сами по себе являются оружием.
+
+ent-MurasamaSheatFilled = Ножны Мурасама
+.desc = Необычные ножны с небольшим магазином для винтовки и спусковым крючком. Потрепанные, но надежные. Они выглядят так, словно сами по себе являются оружием.
+.suffix = {"Заполненные"}
 
 ent-VisitorChaplainSpawner = Спавнер посетителя (Священник)
 .desc = { ent-BaseMobDiona.desc }
