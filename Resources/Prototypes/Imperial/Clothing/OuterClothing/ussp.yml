@@ -1,5 +1,5 @@
 - type: entity # Убрано для соблюдения лицензии временно
-  parent: [ClothingOuterHardsuitBase, BaseToggleClothing]
+  parent: ClothingOuterHardsuitBase
   id: USSPHardsuitBlue
   name: Blue Imperial Division hardsuit
   description: Special hardsuit of the guardian angel.
@@ -24,8 +24,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
-  - type: ToggleClothing
-    action: USSPHandGunAction
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: USSPHardsuitBlueHelmet
