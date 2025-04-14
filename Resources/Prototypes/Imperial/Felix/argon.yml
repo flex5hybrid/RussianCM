@@ -117,29 +117,6 @@
 - type: entity
   parent: ClothingHandsBase
   id: ArgonMercGlovesInsulated
-  name: перчатки короля Аргона
-  suffix: ArgonPrime
-  description: Тактические перчатки
-  components:
-  - type: Item
-    size: Tiny
-  - type: Sprite
-    sprite: Imperial/Felix/Argon/Clothing/Gloves/tactical.rsi
-  - type: Clothing
-    sprite: Imperial/Felix/Argon/Clothing/Gloves/tactical.rsi
-  - type: Appearance
-  - type: Insulated
-  - type: Fiber
-    fiberMaterial: fibers-insulative
-  - type: FingerprintMask
-  - type: Armor 
-    modifiers:
-      coefficients:
-        Caustic: 0.85
-
-- type: entity
-  parent: ClothingHandsBase
-  id: ArgonMercGlovesInsulated
   name: перчатки Аргона
   suffix: ArgonPrime
   description: Тактические перчатки
@@ -158,7 +135,7 @@
   - type: Armor 
     modifiers:
       coefficients:
-        Caustic: 0.95
+        Caustic: 0.85
 
 ### GLOVES
 
