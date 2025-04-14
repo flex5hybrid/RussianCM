@@ -312,9 +312,9 @@
   description: Первый прототип РИГа клана "Аргон". Довольно массивный.
   components:
   - type: Sprite
-    sprite: Imperial/Felix/Clothing/Back/rig.rsi
+    sprite: Imperial/Felix/Argon/Clothing/Back/rig.rsi
   - type: Clothing
-    sprite: Imperial/Felix/Clothing/Back/rig.rsi
+    sprite: Imperial/Felix/Argon/Clothing/Back/rig.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitArgonSealed
   - type: Storage
