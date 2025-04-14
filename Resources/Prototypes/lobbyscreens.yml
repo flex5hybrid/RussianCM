@@ -47,10 +47,10 @@
 # - type: lobbyBackground
 #   id: ReclaimerNuke
 #   background: /Textures/LobbyScreens/reclaimer-nuke.webp
-  
+
 #Imperial Space title screens
 
 - type: lobbyBackground
   id: ImperialDefault
-  background: /Textures/Imperial/LobbyScreens/imperialMarch.jpg
+  background: /Textures/Imperial/LobbyScreens/imperialDefault.jpg
 # imperial add-on end

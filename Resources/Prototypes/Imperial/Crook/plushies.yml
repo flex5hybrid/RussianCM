@@ -79,6 +79,23 @@
     contents:
       - id: FoodBurgerRobot
 
+- type: entity
+  parent: BasePlushieCharacter
+  id: PlushieErika
+  name: Эрика Штейнхофер
+  suffix: Crook, COMMUNITY, TOY
+  description: Не верит в совпадения. Особенно когда пассажир стоит рядом с телом
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Imperial/Crook/Plushie/erikasteinhofer.rsi
+    state: icon
+  - type: StorageFill
+    contents:
+      - id: ForensicPad
+      - id: ForensicPad
+
 # Фумо @buhoj_med
 
 # Datasets for Fumo

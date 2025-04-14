@@ -13,6 +13,9 @@ ent-DrinkFancyFlask = фляжка
 ent-FancyBoxFolder = папка
     .desc = Содержит в себе стратегии для выгодных инвестиций.
 
+
+tiles-sand-desert-floor = песок
+
 tiles-backrooms-floor = необычный пол
 ent-WallBackrooms = необычная стена
     .desc = Стена. На ней, кажется, имеются обои.
@@ -28,3 +31,4 @@ ent-ThermosRed = красный термос
     .desc = Жадность губительна. Помни об этом, начиная пить.
 ent-ThermosGray = серый термос
     .desc = Жадность губительна. Помни об этом, начиная пить.
+

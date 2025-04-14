@@ -28,6 +28,7 @@
       - id: PlushieVenya
       - id: PlushieMichael
       - id: PlushieSylvester
+      - id: PlushieErika
 
 - type: cargoProduct
   id: FunPlushieCommunity
