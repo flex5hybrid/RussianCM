@@ -10,8 +10,8 @@
   - AllHostile
   - Wizard
   - SyndicateAgent # Imperial Syndicate Agent Fix
-  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
-  - RiotControlUnit
+  - DeathSquad # Imperial Space Death Squad faction Fix
+  - RiotControlUnit # Imperial Space RCU faction adding
 
 - type: npcFaction
   id: NanoTrasen
@@ -57,8 +57,8 @@
   - AllHostile
   - SyndicateAgent # Imperial Syndicate Agent Fix
   - Wizard
-  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
-  - RiotControlUnit
+  - DeathSquad # Imperial Space Death Squad faction Fix
+  - RiotControlUnit # Imperial Space RCU faction adding
 
 - type: npcFaction
   id: SimpleNeutral
@@ -74,8 +74,8 @@
   - Dragon
   - AllHostile
   - Wizard
-  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
-  - RiotControlUnit
+  - DeathSquad # Imperial Space Death Squad faction Fix
+  - RiotControlUnit # Imperial Space RCU faction adding
 
 - type: npcFaction
   id: Xeno
@@ -89,8 +89,8 @@
   - AllHostile
   - SyndicateAgent # Imperial Syndicate Agent Fix
   - Wizard
-  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
-  - RiotControlUnit
+  - DeathSquad # Imperial Space Death Squad faction Fix
+  - RiotControlUnit # Imperial Space RCU faction adding
 
 - type: npcFaction
   id: Zombie
@@ -105,8 +105,8 @@
   - AllHostile
   - SyndicateAgent # Imperial Syndicate Agent Fix
   - Wizard
-  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
-  - RiotControlUnit
+  - DeathSquad # Imperial Space Death Squad faction Fix
+  - RiotControlUnit # Imperial Space RCU faction adding
 
 - type: npcFaction
   id: Revolutionary
@@ -117,8 +117,8 @@
   - Dragon
   - AllHostile
   - Wizard
-  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
-  - RiotControlUnit
+  - DeathSquad # Imperial Space Death Squad faction Fix
+  - RiotControlUnit # Imperial Space RCU faction adding
 
 - type: npcFaction
   id: AllHostile
@@ -136,8 +136,8 @@
   - Revolutionary
   - SyndicateAgent # Imperial Syndicate Agent Fix
   - Wizard
-  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
-  - RiotControlUnit
+  - DeathSquad # Imperial Space Death Squad faction Fix
+  - RiotControlUnit # Imperial Space RCU faction adding
 
 - type: npcFaction
   id: Wizard
@@ -155,5 +155,5 @@
   - Revolutionary
   - AllHostile
   - SyndicateAgent # Imperial Syndicate Agent Fix
-  - DeathSquad # Imperial Space Death Squad and Riot Control Unit faction Fix
-  - RiotControlUnit
+  - DeathSquad # Imperial Space Death Squad faction Fix
+  - RiotControlUnit # Imperial Space RCU faction adding
