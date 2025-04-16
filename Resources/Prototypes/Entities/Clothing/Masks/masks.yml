@@ -137,6 +137,7 @@
     tags:
     - PetWearable
     - WhitelistChameleon
+    - OxygenMask # Imperial Space Добавлено для корректной работы аптечек
 
 - type: entity
   parent: ClothingMaskBreathMedical

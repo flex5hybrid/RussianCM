@@ -556,3 +556,24 @@ MagazineBoxAntiMaterielBig: null
 MagazineBoxCaselessRifle10x24: null
 MagazineBoxCaselessRifleBig: null
 MagazinePistolHighCapacityRubber: null
+
+# 2025-04-05 Imperial Space Новые аптечки на картах и в игре
+Medkit: FirstAidMedkitImperial
+MedkitToxin: ToxinMedkitImperial
+MedkitBrute: BruteMedkitImperial
+MedkitAdvanced: AdvancedFirstAidMedkitImperial
+MedkitRadiation: MedkitRadiationImperial
+MedkitBurn: MedkitBurnImperial
+MedkitOxygen: MedkitOxygenImperial
+MedkitCobmat: MedkitCobmatImperial
+MedkitStim: MedkitStimImperial
+
+MedkitFilled: FirstAidMedkitImperialFilled
+MedkitToxinFilled: ToxinMedkitImperialFilled
+MedkitBruteFilled: BruteMedkitImperialFilled
+MedkitAdvancedFilled: AdvancedFirstAidMedkitImperialFilled
+MedkitRadiationFilled: MedkitRadiationImperialFilled
+MedkitBurnFilled: MedkitBurnImperialFilled
+MedkitOxygenFilled: MedkitOxygenImperialFilled
+MedkitCobmatFilled: MedkitCobmatImperialFilled
+MedkitStimFilled: MedkitStimImperialFilled
