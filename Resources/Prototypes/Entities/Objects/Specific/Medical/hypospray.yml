@@ -124,6 +124,7 @@
   - type: Tag
     tags:
     - Trash
+    - Medipen # Imperial Space для корректной работы аптечек
   - type: PhysicalComposition
     materialComposition:
       Plastic: 50
@@ -157,8 +158,8 @@
           Quantity: 12
         - ReagentId: TranexamicAcid
           Quantity: 3
-  - type: Tag
-    tags: []
+  # - type: Tag # Imperial Space для корректной работы аптечек
+  #   tags: []
 
 - type: entity
   name: poison auto-injector
@@ -184,8 +185,8 @@
           Quantity: 10
         - ReagentId: Epinephrine
           Quantity: 5
-  - type: Tag
-    tags: []
+  # - type: Tag # Imperial Space для корректной работы аптечек
+  #   tags: []
 
 - type: entity
   name: brute auto-injector
@@ -216,8 +217,8 @@
           Quantity: 15
         - ReagentId: TranexamicAcid
           Quantity: 5
-  - type: Tag
-    tags: []
+  # - type: Tag # Для корректной работы аптечек Imperial Space
+  #   tags: []
 
 - type: entity
   name: burn auto-injector
@@ -248,8 +249,8 @@
           Quantity: 10
         - ReagentId: Leporazine
           Quantity: 10
-  - type: Tag
-    tags: []
+  # - type: Tag # Для корректной работы аптечек Imperial Space
+  #   tags: []
 
 - type: entity
   name: rad auto-injector
@@ -280,8 +281,8 @@
           Quantity: 15
         - ReagentId: Bicaridine
           Quantity: 5
-  - type: Tag
-    tags: []
+  # - type: Tag # Imperial Space для корректной работы аптечек
+  #   tags: []
 
 - type: entity
   name: puncturase auto-injector
@@ -468,8 +469,8 @@
     emptySpriteName: microstimpen_empty
   - type: StaticPrice
     price: 100
-  - type: Tag
-    tags: []
+  # - type: Tag # Для корректной работы аптечек Imperial Space
+  #   tags: []
 
 - type: entity
   name: combat medipen
