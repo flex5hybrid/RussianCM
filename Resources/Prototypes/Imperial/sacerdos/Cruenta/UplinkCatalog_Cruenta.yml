@@ -508,7 +508,7 @@
 - type: listing
   id: CruentaSpawnfightCruentaODTPreset
   productEntity: SpawnfightCruentaODTPreset
-  icon: { sprite: /Textures/Imperial/sacerdos/Cruenta_falcatio.rsi/Equipment_Cruenta.rsi, state: fight_Cruenta }
+  icon: { sprite: /Textures/Imperial/sacerdos/Cruenta_falcatio/Equipment_Cruenta.rsi, state: fight_Cruenta }
   cost:
     Telecrystal_sacerdos: 875
   categories:

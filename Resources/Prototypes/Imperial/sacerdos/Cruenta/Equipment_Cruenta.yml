@@ -156,7 +156,7 @@
       sprite: Markers/jobs.rsi
       layers:
         - state: green
-        - sprite: Imperial/sacerdos/Cruenta_falcatio.rsi/Equipment_Cruenta.rsi
+        - sprite: Imperial/sacerdos/Cruenta_falcatio/Equipment_Cruenta.rsi
           state: Leaders_Cruenta
 
 - type: entity
@@ -177,7 +177,7 @@
       sprite: Markers/jobs.rsi
       layers:
         - state: green
-        - sprite: Imperial/sacerdos/Cruenta_falcatio.rsi/Equipment_Cruenta.rsi
+        - sprite: Imperial/sacerdos/Cruenta_falcatio/Equipment_Cruenta.rsi
           state: fight_Cruenta
 
 - type: entity
@@ -198,7 +198,7 @@
       sprite: Markers/jobs.rsi
       layers:
         - state: green
-        - sprite: Imperial/sacerdos/Cruenta_falcatio.rsi/Equipment_Cruenta.rsi
+        - sprite: Imperial/sacerdos/Cruenta_falcatio/Equipment_Cruenta.rsi
           state: Med_Cruenta
 
 #######################################################################################
