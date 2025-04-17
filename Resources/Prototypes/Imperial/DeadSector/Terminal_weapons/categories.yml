@@ -22,7 +22,7 @@
   id: TerminalAstra-100weapon
   name: Astra-100-name
   description: Astra-100-des
-  productEntity: Astra-100
+  productEntity: WeaponPistolAstra100
   cost:
     FederationCash: 12000
   categories:
@@ -1202,36 +1202,6 @@
   productEntity: BaseMagazineAR15Piercing
   cost:
     FederationCash: 700
-  categories:
-  - Ammunition_supplies
-
-- type: listing
-  id: TerminalMagazineAK102weapon
-  #name: MagazineAK102-name
-  #description: A-magazine-with-the-simplest-bullets-des
-  productEntity: MagazineAK102
-  cost:
-    FederationCash: 450
-  categories:
-  - Ammunition_supplies
-
-- type: listing
-  id: TerminalBaseMagazineAK102LongRangeweapon
-  #name: BaseMagazineAK102LongRange-name
-  #description: A magazine with long-range bullets. They cause the same damage as their standard counterparts, but they take three times longer to fly.-des
-  productEntity: BaseMagazineAK102LongRange
-  cost:
-    FederationCash: 600
-  categories:
-  - Ammunition_supplies
-
-- type: listing
-  id: TerminalBaseMagazineAK102Piercingweapon
-  #name: BaseMagazineAK102Piercing-name
-  #description: A magazine with armor-piercing bullets. It completely penetrates all the protection of any equipment, but causes reduced damage compared to its standard counterpart.-des
-  productEntity: BaseMagazineAK102Piercing 
-  cost:
-    FederationCash: 750
   categories:
   - Ammunition_supplies
 
