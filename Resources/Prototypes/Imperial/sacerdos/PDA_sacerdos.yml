@@ -81,9 +81,9 @@
     size: Small
   - type: Pda
     id: ID_Medical_sacerdos
-    state: pda
   - type: Icon
     sprite: Imperial/sacerdos/PDA_med_sacerdos.rsi
+    state: pda
   - type: PdaBorderColor
     borderColor: "#333333"
     accentVColor: "#f2f2f2"
