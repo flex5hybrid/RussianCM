@@ -16,7 +16,7 @@
     - NamesMilitaryFirst
     - NamesMilitaryLast
   - type: Loadout
-    prototypes: 
+    prototypes:
     - StarCorpsSoldier
   - type: InputMover
   - type: MobMover
@@ -40,7 +40,7 @@
     - NamesMilitaryFirst
     - NamesMilitaryLast
   - type: Loadout
-    prototypes: 
+    prototypes:
     - StarCorpsPilot
   - type: InputMover
   - type: MobMover
@@ -69,10 +69,10 @@
     - SimpleHostile
   - type: RandomMetadata
     nameSegments:
-    - Наёмник
+    - OldStationMerc
     - NamesLast
   - type: Loadout
-    prototypes: 
+    prototypes:
     - MercenaryAKS
   - type: InputMover
   - type: MobMover
@@ -96,7 +96,7 @@
     - Наёмник
     - NamesLast
   - type: Loadout
-    prototypes: 
+    prototypes:
     - MercenaryGlock
   - type: InputMover
   - type: MobMover
@@ -120,7 +120,7 @@
     - Наёмник
     - NamesLast
   - type: Loadout
-    prototypes: 
+    prototypes:
     - MercenarySniper
   - type: InputMover
   - type: MobMover
@@ -148,7 +148,7 @@
     - NamesSyndicatePrefix
     - NamesSyndicateNormal
   - type: Loadout
-    prototypes: 
+    prototypes:
     - AgentSyndi
   - type: InputMover
   - type: MobMover

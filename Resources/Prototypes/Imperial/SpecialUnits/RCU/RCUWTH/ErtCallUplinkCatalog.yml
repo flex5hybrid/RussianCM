@@ -388,7 +388,7 @@
   id: RCUCallUplinkOmnizineChemistryBottle
   name: ert-uplink-medical-omnizinechemistrybottle-name
   description: ert-uplink-medical-omnizinechemistrybottle-desc
-  productEntity: OmnizineChemistryBottle
+  productEntity: ChemistryBottleOmnizine
   cost:
     BlueSpaceCube: 10
   categories:

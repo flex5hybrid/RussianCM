@@ -20,7 +20,6 @@
             - material: FloorCarpetBlack
               amount: 1
               doAfter: 1
-              name: черный ковер # Imperial Recipes Locale
         - to: CurtainsBlue
           completed:
             - !type:SnapToGrid { }
@@ -28,7 +27,6 @@
             - material: FloorCarpetBlue
               amount: 1
               doAfter: 1
-              name: синий ковер # Imperial Recipes Locale
         - to: CurtainsCyan
           completed:
             - !type:SnapToGrid { }
@@ -36,7 +34,6 @@
             - material: FloorCarpetCyan
               amount: 1
               doAfter: 1
-              name: голубой ковер # Imperial Recipes Locale
         - to: CurtainsGreen
           completed:
             - !type:SnapToGrid { }
@@ -44,7 +41,6 @@
             - material: FloorCarpetGreen
               amount: 1
               doAfter: 1
-              name: зеленый ковер # Imperial Recipes Locale
         - to: CurtainsOrange
           completed:
             - !type:SnapToGrid { }
@@ -52,7 +48,6 @@
             - material: FloorCarpetOrange
               amount: 1
               doAfter: 1
-              name: оранжевый ковер # Imperial Recipes Locale
         - to: CurtainsPink
           completed:
             - !type:SnapToGrid { }
@@ -60,7 +55,6 @@
             - material: FloorCarpetPink
               amount: 1
               doAfter: 1
-              name: розовый ковер # Imperial Recipes Locale
         - to: CurtainsPurple
           completed:
             - !type:SnapToGrid { }
@@ -68,7 +62,6 @@
             - material: FloorCarpetPurple
               amount: 1
               doAfter: 1
-              name: фиолетовый ковер # Imperial Recipes Locale
         - to: CurtainsRed
           completed:
             - !type:SnapToGrid { }
@@ -76,7 +69,6 @@
             - material: FloorCarpetRed
               amount: 1
               doAfter: 1
-              name: красный ковер # Imperial Recipes Locale
         - to: CurtainsWhite
           completed:
             - !type:SnapToGrid { }
@@ -84,7 +76,6 @@
             - material: FloorCarpetWhite
               amount: 1
               doAfter: 1
-              name: белый ковер # Imperial Recipes Locale
 
     - node: Curtains
       entity: HospitalCurtains

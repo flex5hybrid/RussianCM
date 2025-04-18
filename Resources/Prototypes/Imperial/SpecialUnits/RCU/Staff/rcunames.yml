@@ -1,54 +1,23 @@
-- type: dataset
+- type: localizedDataset
   id: RCUOperatorFirst
   values:
-  - Полковник
-  - Лейтенант
-  - Майор
+    prefix: imperial-space-rcu-operator
+    count: 3
 
 - type: dataset
   id: RCUOfficerFirst
   values:
-  - Специалист
-  - Оперативник
-  - Агент
+    prefix: imperial-space-rcu-officer-
+    count: 3
 
 - type: dataset
   id: RCUOperatorSecond #галубые
   values:
-  - Онсен
-  - Азимов
-  - Феликс
-  - Магик
-  - Файрмикс
-  - Фреди
-  - Илиард
-  - Гегешка
-  - Крук
-  - Дантан
-  - Фантом
-  - Серцеф
-  - Эксплорер
-  - Кактус
-  - Поено
-  - Куппп
-  - Живка
+    prefix: imperial-space-rcu-operator-second-
+    count: 17
 
 - type: dataset
   id: RCUOfficerSecond #зиленые, розавые и шу-шуть красние
   values:
-  - Неро
-  - Клаудиус #NeroClaudius...
-  - Кетунар
-  - Вальд
-  - Синди
-  - Хэсэфэ
-  - Бэд
-  - Столо
-  - Адвансер
-  - Бродяга
-  - Фрад
-  - Лона
-  - Артур
-  - Гост
-  - Орикс
-  - Миртон
+    prefix: imperial-space-rcu-officer-second-
+    count: 16
