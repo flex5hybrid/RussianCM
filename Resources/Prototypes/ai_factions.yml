@@ -44,6 +44,7 @@
   - Xeno
   - AllHostile
   - Wizard
+  - Dragon
 
 - type: npcFaction
   id: SimpleHostile
@@ -59,6 +60,7 @@
   - Wizard
   - DeathSquad # Imperial Space Death Squad faction Fix
   - RiotControlUnit # Imperial Space RCU faction adding
+  - Dragon
 
 - type: npcFaction
   id: SimpleNeutral
@@ -91,6 +93,7 @@
   - Wizard
   - DeathSquad # Imperial Space Death Squad faction Fix
   - RiotControlUnit # Imperial Space RCU faction adding
+  - Dragon
 
 - type: npcFaction
   id: Zombie
@@ -107,6 +110,7 @@
   - Wizard
   - DeathSquad # Imperial Space Death Squad faction Fix
   - RiotControlUnit # Imperial Space RCU faction adding
+  - Dragon
 
 - type: npcFaction
   id: Revolutionary
@@ -148,7 +152,7 @@
   - Passive
   - PetsNT
   - SimpleHostile
-  - SimpleNeutral
+  - SimpleNeutrals
   - Syndicate
   - Xeno
   - Zombie
