@@ -43,7 +43,6 @@
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
-    - Cluwne # Imperial Cluwne
 
 - type: gamePreset
   id: AllerAtOnce
