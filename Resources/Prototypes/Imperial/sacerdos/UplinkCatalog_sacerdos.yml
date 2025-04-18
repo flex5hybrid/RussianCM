@@ -1977,36 +1977,6 @@
   - sacerdosConstruction
 
 - type: listing
-  id: SacerdosAmeJar1
-  name: AmeJar1-name
-  description: A-sealed-vessel-with-antimatter-used-in-an-antimatter-reactor-description
-  productEntity: AmeJar1
-  cost:
-    Telecrystal_sacerdos: 150
-  categories:
-  - sacerdosConstruction
-
-- type: listing
-  id: SacerdosAmeJar2
-  name: AmeJar2-name
-  description: A-sealed-vessel-with-antimatter-used-in-an-antimatter-reactor-description
-  productEntity: AmeJar2
-  cost:
-    Telecrystal_sacerdos: 200
-  categories:
-  - sacerdosConstruction
-
-- type: listing
-  id: SacerdosAmeJar3
-  name: AmeJar3-name
-  description: A-sealed-vessel-with-antimatter-used-in-an-antimatter-reactor-description
-  productEntity: AmeJar3
-  cost:
-    Telecrystal_sacerdos: 450
-  categories:
-  - sacerdosConstruction
-
-- type: listing
   id: SacerdosSheetPlastic
   productEntity: SheetPlastic
   cost:

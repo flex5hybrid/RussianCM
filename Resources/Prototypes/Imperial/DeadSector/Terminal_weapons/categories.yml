@@ -159,16 +159,6 @@
   - Pistols
 
 - type: listing
-  id: TerminalWeaponSubMachineGunC12rTGMCweapon
-  name: WeaponSubMachineGunC12rTGMC-name
-  description: TerminalWeaponSubMachineGunC12rTGMCweapon-des
-  productEntity: WeaponSubMachineGunC12rTGMC
-  cost:
-    FederationCash: 70000
-  categories:
-  - Pistols
-
-- type: listing
   id: TerminalWeaponSubMachineGunAgramweapon
   #name: WeaponSubMachineGunAgram-name
   #description: A small PP with an above-average ammunition package and a 32-round magazine. It has a dark gray color. Uses 9x21 caliber cartridges.-des
@@ -382,16 +372,6 @@
   - Heavy
 
 - type: listing
-  id: TerminalBaseWeaponPeaceKeeperTGMCweapon
-  name: BaseWeaponPeaceKeeperTGMC-name
-  description: TTerminalBaseWeaponPeaceKeeperTGMCweapon-des
-  productEntity: BaseWeaponPeaceKeeperTGMC
-  cost:
-    FederationCash: 54000
-  categories:
-  - Heavy
-
-- type: listing
   id: TerminalWeaponMinigunweapon
   #name: WeaponMinigun-name
   #description: Whozzzz! Rah-rah-rah! Grrrrr! Uses caliber cartridges .10 rifle.-des
@@ -493,32 +473,12 @@
   - Explosive
 
 - type: listing
-  id: TerminalClothingOuterArmorBulletproofExpclothingweapon
-  name: ClothingOuterArmorBulletproofExpclothing-name
-  description: I-assure-you-that-this-is-just-a-bulletproof-vest-with-heavy-plates-to-protect-against-ballistic-projectiles-des
-  productEntity: ClothingOuterArmorBulletproofExpclothing
-  cost:
-    FederationCash: 3500
-  categories:
-  - Explosive
-
-- type: listing
   id: TerminalSyndicateBombweapon
   #name: SyndicateBomb-name
   #description: A bomb for Syndicate operatives and agents. The real deal, no training, get started!-des
   productEntity: SyndicateBomb
   cost:
     FederationCash: 12000
-  categories:
-  - Explosive
-
-- type: listing
-  id: TerminalClothingBackpackSatchelFilledExEvaweapon
-  name: ClothingBackpackSatchelFilledExEva-name
-  description: TerminalClothingBackpackSatchelFilledExEvaweapon-des
-  productEntity: ClothingBackpackSatchelFilledExEva
-  cost:
-    FederationCash: 5500
   categories:
   - Explosive
 
@@ -660,26 +620,6 @@
   productEntity: WeaponShotgunEnforcer
   cost:
     FederationCash: 6000
-  categories:
-  - Shotguns
-
-- type: listing
-  id: TerminalWeaponShotgunStormTrooperTGMCweapon
-  name: WeaponShotgunStormTrooperTGMC-name
-  description: TerminalWeaponShotgunStormTrooperTGMCweapon-des
-  productEntity: WeaponShotgunStormTrooperTGMC 
-  cost:
-    FederationCash: 12000
-  categories:
-  - Shotguns
-
-- type: listing
-  id: TerminalWeaponShotgunStormTrooperTGMCSBweapon
-  name: WeaponShotgunStormTrooperTGMCSB-name
-  description: TerminalWeaponShotgunStormTrooperTGMCSBweapon-des
-  productEntity: WeaponShotgunStormTrooperTGMCSB
-  cost:
-    FederationCash: 15000
   categories:
   - Shotguns
 
@@ -1042,16 +982,6 @@
   productEntity: p90-Magazine
   cost:
     FederationCash: 550
-  categories:
-  - Ammunition_supplies
-
-- type: listing
-  id: TerminalBaseMagazinePistolSubMachineGunC12RTGMCweapon
-  name: BaseMagazinePistolSubMachineGunC12RTGMC-name
-  description: A-magazine-with-the-simplest-bullets-des
-  productEntity: BaseMagazinePistolSubMachineGunC12RTGMC
-  cost:
-    FederationCash: 600
   categories:
   - Ammunition_supplies
 
@@ -1526,26 +1456,6 @@
   - Ammunition_supplies
 
 - type: listing
-  id: TerminalBaseMagazineRiflePeaceKeeperTGMCweapon
-  name: BaseMagazineRiflePeaceKeeperTGMC-name
-  description: A-box-with-the-simplest-bullets-des
-  productEntity: BaseMagazineRiflePeaceKeeperTGMC
-  cost:
-    FederationCash: 2500
-  categories:
-  - Ammunition_supplies
-
-- type: listing
-  id: TerminalBaseMagazineShotgunStormTrooperTGMCweapon
-  name: BaseMagazineShotgunStormTrooperTGMC-name
-  description: A-shotgun-magazine-with-the-simplest-bullets-des
-  productEntity: BaseMagazineShotgunStormTrooperTGMC
-  cost:
-    FederationCash: 1500
-  categories:
-  - Ammunition_supplies
-
-- type: listing
   id: TerminalBoxMagazineShotgunweapon
   #name: BoxMagazineShotgun-name
   #description: A full box of drums with cartridges .50 fraction.-des
@@ -1655,38 +1565,8 @@
   - Armor_Terminal_Weapon
 
 - type: listing
-  id: TerminalweaponClothingOuterArmorArgeo
-  name: TerminalweaponClothingOuterArmorArgeo-name
-  description: TerminalweaponClothingOuterArmorArgeo-des
-  productEntity: ClothingOuterArmorArgeo
-  cost:
-    FederationCash: 25000
-  categories:
-  - Armor_Terminal_Weapon
-
-- type: listing
-  id: TerminalweaponClothingOuterArmorIibada
-  name: ClothingOuterArmorIibada-name
-  description: ClothingOuterArmorIibada-des
-  productEntity: ClothingOuterArmorArgeo
-  cost:
-    FederationCash: 23000
-  categories:
-  - Armor_Terminal_Weapon
-
-- type: listing
   id: TerminalweaponClothingOuterArmorMinutemanRiotSuit
   productEntity: ClothingOuterArmorMinutemanRiotSuit
-  cost:
-    FederationCash: 25000
-  categories:
-  - Armor_Terminal_Weapon
-
-- type: listing
-  id: TerminalweaponClothingOuterArmorCO
-  name: TerminalweaponClothingOuterArmorCO-name
-  description: TerminalweaponClothingOuterArmorCO-des
-  productEntity: ClothingOuterArmorCO
   cost:
     FederationCash: 25000
   categories:
@@ -1697,16 +1577,6 @@
   productEntity: ClothingOuterArmorMinutemanTrenchcoat
   cost:
     FederationCash: 25000
-  categories:
-  - Armor_Terminal_Weapon
-
-- type: listing
-  id: TerminalweaponClothingOuterArmorAaltawila
-  name: TerminalweaponClothingOuterArmorAaltawila-name
-  description: TerminalweaponClothingOuterArmorAaltawila-des
-  productEntity: ClothingOuterArmorAaltawila
-  cost:
-    FederationCash: 24000
   categories:
   - Armor_Terminal_Weapon
 
@@ -1956,16 +1826,6 @@
   - Helmet_Terminal_Weapon
 
 - type: listing
-  id: TerminalweaponClothingHeadHelmetFC
-  name: TerminalweaponClothingHeadHelmetFC-name
-  description: TerminalweaponClothingHeadHelmetFC-des
-  productEntity: ClothingHeadHelmetFC
-  cost:
-    FederationCash: 5000
-  categories:
-  - Helmet_Terminal_Weapon
-
-- type: listing
   id: TerminalweaponClothingHeadHelmetBrigmedic
   productEntity: ClothingHeadHelmetBrigmedic
   cost:
@@ -1986,16 +1846,6 @@
   productEntity: ClothingHeadRiotHelmetMinuteman
   cost:
     FederationCash: 4000
-  categories:
-  - Helmet_Terminal_Weapon
-
-- type: listing
-  id: Terminalweapon
-  name: ClothingHeadHelmetArgeo-name
-  description: ClothingHeadHelmetArgeo-des
-  productEntity: ClothingHeadHelmetArgeo
-  cost:
-    FederationCash: 3500
   categories:
   - Helmet_Terminal_Weapon
 
