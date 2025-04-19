@@ -1,7 +1,7 @@
 - type: localizedDataset
   id: RCUOperatorFirst
   values:
-    prefix: imperial-space-rcu-operator
+    prefix: imperial-space-rcu-operator-
     count: 3
 
 - type: localizedDataset
