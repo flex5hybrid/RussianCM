@@ -974,6 +974,7 @@
         Shock: 0.1
         Radiation: 0.1
         Caustic: 0.1
+        Stamina: 0.5 # Stamina Resistance Imperial
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
