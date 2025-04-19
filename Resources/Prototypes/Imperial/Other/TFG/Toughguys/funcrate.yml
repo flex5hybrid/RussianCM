@@ -10,6 +10,7 @@
       - id: PlushieChemistGift
       - id: PlushieSOGift
       - id: PlushieIAAGift
+      - id: PlushieYeseniaGift
 # Gift end
       - id: PlushieCapitan
       - id: PlushieEngineer
@@ -31,6 +32,7 @@
       - id: PlushieErika
       - id: PlushieAiden
       - id: PlushieKainov
+      - id: PlushieYesenia
 
 - type: cargoProduct
   id: FunPlushieCommunity
