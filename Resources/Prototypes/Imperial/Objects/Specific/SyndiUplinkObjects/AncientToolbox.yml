@@ -1,1 +1,19 @@
-#patern: ToolboxMechanicalFilled
+- type: entity
+  name: Toolbox
+  parent: ToolboxBase
+  id: AncientToolbox
+  description: A stun baton for incapacitating people with. Actively harming with this is considered bad tone.
+  components:
+  - type: Sprite
+    sprite: Textures/Imperial/Objects/Fun/AncientToolbox.rsi
+  - type: Item
+    sprite: Textures/Imperial/Objects/Fun/AncientToolbox.rsi
+  - type: DamageModifierByItem
+    itemIds:
+      - "Telecrystal"
+      - "Telecrystal1"
+      - "Telecrystal5"
+      - "Telecrystal10"
+    damage:
+      types:
+        Blunt: 30

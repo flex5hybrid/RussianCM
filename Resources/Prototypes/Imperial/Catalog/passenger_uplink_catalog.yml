@@ -19,7 +19,7 @@
   id: uplinkAncientToolbox
   name: uplink-Ancient-Toolbox-name
   description: uplink-Ancient-Toolbox-desc
-  productEntity: ClothingHandsGlovesBoxingRigged
+  productEntity: AncientToolbox
   discountCategory: rareDiscounts
   discountDownTo:
     Telecrystal: 1
