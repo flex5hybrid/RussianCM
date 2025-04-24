@@ -33,6 +33,7 @@
       - id: PlushieAiden
       - id: PlushieKainov
       - id: PlushieYesenia
+      - id: PlushieIsaac
 
 - type: cargoProduct
   id: FunPlushieCommunity
