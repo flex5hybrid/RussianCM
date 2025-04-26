@@ -34,6 +34,8 @@
     nameGeneration: food-sequence-taco-gen
     contentSeparator: ", "
   - type: Appearance
+  - type: StaticPrice
+    price: 750 # Imperial Space Prices
   
 # Old tacos
 

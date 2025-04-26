@@ -110,6 +110,8 @@
           Quantity: 3
   - type: Item
     sprite: Objects/Consumable/Food/burger.rsi
+  - type: StaticPrice
+    price: 500 # Imperial Space Prices
 
 # Custom Burger Example
 

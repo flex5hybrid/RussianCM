@@ -20,6 +20,8 @@
         reagents:
         - ReagentId: Nutriment
           Quantity: 5
+  - type: StaticPrice
+    price: 500 # Imperial Space Prices
 
 - type: entity
   id: FoodBagel

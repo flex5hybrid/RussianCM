@@ -26,6 +26,8 @@
   - type: Tag
     tags:
     - Cake
+  - type: StaticPrice
+    price: 1500 # Imperial Space Prices
 
 - type: entity
   parent: FoodCakeBase

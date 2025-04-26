@@ -21,6 +21,8 @@
     tags:
     - DonkPocket
     - Meat
+  - type: StaticPrice
+    price: 250 # Imperial Space Prices
 
 # Donkpocket
 

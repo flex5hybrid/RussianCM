@@ -18,6 +18,8 @@
           Quantity: 5
   - type: Item
     size: Tiny
+  - type: StaticPrice
+    price: 100 # Imperial Space Prices
 
 # Muffins
 
