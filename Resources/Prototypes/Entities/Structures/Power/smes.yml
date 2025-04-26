@@ -97,6 +97,9 @@
       - PowerStorage
       - VoltageNetworks
       - Power
+    - type: StaticPrice
+      price: 1000 # Imperial Space Prices
+      
 
 # SMES' in use
 
