@@ -2,14 +2,11 @@
   name: pirogomet
   id: WeaponPieCannonClown
   parent: BaseItem
-  description: A special pie cannon for a special clown. It holds up to 10 pies and generates a new one every 3 seconds.
+  description: A special pie cannon for a special clown. It holds generates a new one every 3 seconds.
   components:
     - type: Gun
-      fireRate: 10000
+      fireRate: 3
       selectedMode: SemiAuto
-      availableModes:
-       - SemiAuto
-       - FullAuto
       soundGunshot:
        path: /Audio/Effects/thunk.ogg
       soundEmpty:
@@ -21,19 +18,12 @@
         - state: piecannon
     - type: Item
       size: Huge
-    - type: ProjectileBatteryAmmoProvider
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 3
+    - type: UseDelayOnShoot
+    - type: UseDelay
+      delay: 3
+    - type: BasicEntityAmmoProvider
       proto: FoodPieBananaCream
-      fireCost: 1000
-    - type: Battery
-      maxCharge: 10000
-      startingCharge: 10000
-    - type: BatterySelfRecharger
-      autoRecharge: true
-      autoRechargeRate: 0.333
-    - type: AmmoCounter
-      count: 10
-      showCharge: true
-    - type: PowerCellSlot
-      cellSlotId: "PieCannonBatterySlot"
-      cellSize: "None"
-      requiresCell: false
+      capacity: 1
+      count: 1

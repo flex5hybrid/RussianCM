@@ -27,7 +27,7 @@
       rootTask:
         task: SimpleHostileCompound
     - type: TimedDespawn
-      lifetime: 10
+      lifetime: 240
     - type: SpawnOnDespawn
       prototype: MedievalLightSphereDespawnEffect
     - type: Tag

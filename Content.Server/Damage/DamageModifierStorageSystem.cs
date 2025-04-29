@@ -7,6 +7,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Content.Shared.FixedPoint;
+ using Content.Shared.Weapons.Melee.Events;
 
 namespace Content.Server.Damage
 {
@@ -18,55 +19,56 @@ namespace Content.Server.Damage
         public override void Initialize()
         {
             base.Initialize();
-            SubscribeLocalEvent<DamageModifierStorageComponent, Content.Shared.Weapons.Melee.Events.GetMeleeDamageEvent>(OnGetMeleeDamage);
+            SubscribeLocalEvent<DamageModifierStorageComponent, GetMeleeDamageEvent>(OnGetMeleeDamage);
         }
 
-        private void OnGetMeleeDamage(EntityUid uid, DamageModifierStorageComponent component, ref Content.Shared.Weapons.Melee.Events.GetMeleeDamageEvent args)
+        private void OnGetMeleeDamage(EntityUid uid, DamageModifierStorageComponent component, ref GetMeleeDamageEvent args)
         {
             if (!_entityManager.TryGetComponent(uid, out StorageComponent? storage))
                 return;
 
-            if (storage.Container == null || storage.Container.ContainedEntities.Count == 0)
+            var container = storage.Container;
+            if (container == null || container.ContainedEntities.Count == 0)
                 return;
 
+            var containedEntities = container.ContainedEntities;
+            var entityCount = containedEntities.Count;
+
+            var entityManager = _entityManager;
+            var targetBase = component.TargetItemBaseId.ToLowerInvariant();
             FixedPoint2 totalCount = FixedPoint2.Zero;
 
-            foreach (var entity in storage.Container.ContainedEntities)
+            for (var i = 0; i < entityCount; i++)
             {
-                if (!_entityManager.TryGetComponent(entity, out MetaDataComponent? meta))
-                    continue;
-
+                var entity = containedEntities[i];
+                var meta = entityManager.GetComponent<MetaDataComponent>(entity);
                 var protoId = meta.EntityPrototype?.ID;
 
-                if (protoId == null)
+                if (string.IsNullOrEmpty(protoId))
                     continue;
 
-                if (!protoId.StartsWith(component.TargetItemBaseId, System.StringComparison.OrdinalIgnoreCase))
+                var protoIdLower = protoId.ToLowerInvariant();
+                if (!protoIdLower.StartsWith(targetBase))
                     continue;
 
-                if (_entityManager.TryGetComponent(entity, out StackComponent? stack))
-                {
+                if (entityManager.TryGetComponent(entity, out StackComponent? stack))
                     totalCount += (FixedPoint2)stack.Count;
-                }
                 else
-                {
                     totalCount += (FixedPoint2)1;
-                }
             }
 
             if (totalCount == FixedPoint2.Zero)
                 return;
 
-            FixedPoint2 totalIncrease = component.DamageIncrease * totalCount;
-
             var newDamageDict = new Dictionary<string, FixedPoint2>(args.Damage.DamageDict);
+            var damageIncrease = component.DamageIncrease * totalCount;
 
-            if (newDamageDict.ContainsKey("Blunt"))
-                newDamageDict["Blunt"] += totalIncrease;
+            if (newDamageDict.TryGetValue("Blunt", out var currentBlunt))
+                newDamageDict["Blunt"] = currentBlunt + damageIncrease;
             else
-                newDamageDict["Blunt"] = totalIncrease;
+                newDamageDict["Blunt"] = damageIncrease;
 
-            args.Damage = new Content.Shared.Damage.DamageSpecifier()
+            args.Damage = new Content.Shared.Damage.DamageSpecifier
             {
                 DamageDict = newDamageDict
             };

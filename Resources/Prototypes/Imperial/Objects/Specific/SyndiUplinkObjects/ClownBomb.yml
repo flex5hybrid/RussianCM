@@ -26,7 +26,7 @@
             False: { visible: false }
     - type: ScatteringGrenade
       fillPrototype: ClownParten
-      capacity: 50
+      capacity: 30
       velocity: 30
     - type: EmitSoundOnTrigger
       sound:
@@ -36,7 +36,7 @@
       radius: 1.1
       softness: 1
     - type: OnUseTimerTrigger
-      delay: 15
-      delayOptions: [15, 20, 25, 30, 35]
+      delay: 5
+      delayOptions: [5, 10, 15, 20, 25]
       initialBeepDelay: 0
       beepSound: /Audio/Machines/timer.ogg
