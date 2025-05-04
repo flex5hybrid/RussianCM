@@ -81,6 +81,9 @@ namespace Content.Server.Imperial.Revolutionary.UI
                     // Применяем блокировку обращения к цели
                     _consentRevolutionarySystem.ApplyConversionDeny(new Entity<ConsentRevolutionaryComponent>(_targetEntity, targetConsentComp));
 
+                    // Применяем кулдаун к конвертеру
+                    _consentRevolutionarySystem.ApplyConversionCooldown(_converterEntity);
+
                     // Показываем уведомление об отказе
                     _popupSystem.PopupEntity(
                         Loc.GetString("rev-consent-convert-denied", ("target", Identity.Entity(_targetEntity, _entityManager))),
