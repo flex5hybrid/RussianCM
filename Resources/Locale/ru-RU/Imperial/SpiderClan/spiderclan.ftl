@@ -26,10 +26,16 @@ ent-SpiderClanTerminal = терминал клана Паука
 ent-GreenSpaceNinja = космический ниндзя
 ent-RedSpaceNinja = космический ниндзя
 ent-BlueSpaceNinja = космический ниндзя
+ent-AltGreenSpaceNinja = космический ниндзя
+ent-AltRedSpaceNinja = космический ниндзя
+ent-AltBlueSpaceNinja = космический ниндзя
 
 ent-GhostGreenSpaceNinja = спавнер космический ниндзя
 ent-GhostRedSpaceNinja = спавнер космический ниндзя
 ent-GhostBlueSpaceNinja = спавнер космический ниндзя
+ent-GhostAltGreenSpaceNinja = спавнер космический ниндзя
+ent-GhostAltRedSpaceNinja = спавнер космический ниндзя
+ent-GhostAltBlueSpaceNinja = спавнер космический ниндзя
 
 id-card-access-level-ninja = Ниндзя клана Паука
 job-name-ninja = Ниндзя Клана Паука
