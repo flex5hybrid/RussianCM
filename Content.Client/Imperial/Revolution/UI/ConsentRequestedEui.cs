@@ -5,47 +5,52 @@ using Content.Shared.Eui;
 using JetBrains.Annotations;
 using Robust.Client.Graphics;
 
-namespace Content.Client.Imperial.Revolution.UI;
-
-[UsedImplicitly]
-public sealed class ConsentRequestedEui : BaseEui
+namespace Content.Client.Imperial.Revolution.UI
 {
-    private readonly ConsentRequestedMenu _window;
-
-    public ConsentRequestedEui()
+    /// <summary>
+    /// Клиентский UI для окна запроса согласия на обращение в революционеры.
+    /// </summary>
+    [UsedImplicitly]
+    public sealed class ConsentRequestedEui : BaseEui
     {
-        _window = new ConsentRequestedMenu();
+        private readonly ConsentRequestedMenu _consentWindow;
 
-        _window.OnDeny += () =>
+        public ConsentRequestedEui()
         {
-            SendMessage(new ConsentRequestedEuiMessage(false));
-            _window.Close();
-        };
+            _consentWindow = new ConsentRequestedMenu();
 
-        _window.OnClose += () => SendMessage(new ConsentRequestedEuiMessage(false));
+            _consentWindow.OnDeny += () =>
+            {
+                SendMessage(new ConsentRequestedEuiMessage(false));
+                _consentWindow.Close();
+            };
 
-        _window.OnAccept += () =>
-        {
-            SendMessage(new ConsentRequestedEuiMessage(true));
-            _window.Close();
-        };
-    }
-    public override void HandleState(EuiStateBase state)
-    {
-        if (state is ConsentRequestedState consentState)
-        {
-            _window.SetConverterName(consentState.ConverterName);
+            _consentWindow.OnClose += () => SendMessage(new ConsentRequestedEuiMessage(false));
+
+            _consentWindow.OnAccept += () =>
+            {
+                SendMessage(new ConsentRequestedEuiMessage(true));
+                _consentWindow.Close();
+            };
         }
-    }
 
-    public override void Opened()
-    {
-        IoCManager.Resolve<IClyde>().RequestWindowAttention();
-        _window.OpenCenteredAt(new Vector2(0.5f, 0.5f));
-    }
+        public override void HandleState(EuiStateBase state)
+        {
+            if (state is ConsentRequestedState consentState)
+            {
+                _consentWindow.SetConverterName(consentState.ConverterName);
+            }
+        }
 
-    public override void Closed()
-    {
-        _window.Close();
+        public override void Opened()
+        {
+            IoCManager.Resolve<IClyde>().RequestWindowAttention();
+            _consentWindow.OpenCenteredAt(new Vector2(0.5f, 0.5f));
+        }
+
+        public override void Closed()
+        {
+            _consentWindow.Close();
+        }
     }
 }
