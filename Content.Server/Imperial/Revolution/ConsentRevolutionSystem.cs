@@ -180,9 +180,6 @@ namespace Content.Server.Imperial.Revolutionary
                         consentComp.OtherMember.Value,
                         Loc.GetString("rev-consent-convert-failed-mid-convert-timeout"));
 
-                // Apply cooldown to converter even if consent denied
-                ApplyConversionCooldown(consentComp.OtherMember.Value);
-
                     continue;
                 }
 
@@ -193,9 +190,6 @@ namespace Content.Server.Imperial.Revolutionary
                     CancelConsentRequest(uid,
                         consentComp.OtherMember.Value,
                         Loc.GetString("rev-consent-convert-failed-mid-convert-out-of-range"));
-
-                // Apply cooldown to converter even if consent denied
-                ApplyConversionCooldown(consentComp.OtherMember.Value);
 
                     continue;
                 }
@@ -218,18 +212,12 @@ namespace Content.Server.Imperial.Revolutionary
                     CancelConsentRequest(consentComp.OtherMember.Value,
                         uid,
                         Loc.GetString("rev-consent-convert-failed-mid-convert-not-alive"));
-
-                    // Apply cooldown to converter even if consent denied
-                    ApplyConversionCooldown(consentComp.OtherMember.Value);
                 }
                 else
                 {
                     CancelConsentRequest(uid,
                         consentComp.OtherMember.Value,
                         Loc.GetString("rev-consent-convert-failed-mid-convert-not-alive"));
-
-                    // Apply cooldown to converter even if consent denied
-                    ApplyConversionCooldown(consentComp.OtherMember.Value);
                 }
         }
 
@@ -246,9 +234,6 @@ namespace Content.Server.Imperial.Revolutionary
                     CancelConsentRequest(entity.Comp.OtherMember.Value,
                         entity.Owner,
                         Loc.GetString("rev-consent-convert-failed-mid-convert-not-alive"));
-
-                    // Apply cooldown to converter even if consent denied
-                    ApplyConversionCooldown(entity.Comp.OtherMember.Value);
                 }
                 else
                 {
@@ -256,8 +241,6 @@ namespace Content.Server.Imperial.Revolutionary
                         entity.Comp.OtherMember.Value,
                         Loc.GetString("rev-consent-convert-failed-mid-convert-not-alive"));
 
-                    // Apply cooldown to converter even if consent denied
-                    ApplyConversionCooldown(entity.Comp.OtherMember.Value);
                 }
         }
 
@@ -274,8 +257,6 @@ namespace Content.Server.Imperial.Revolutionary
 
             CancelConsentRequest(entity.Comp.OtherMember.Value, entity.Owner);
 
-            // Apply cooldown to converter even if consent denied
-            ApplyConversionCooldown(entity.Comp.OtherMember.Value);
         }
 
         /// <summary>
@@ -331,7 +312,7 @@ namespace Content.Server.Imperial.Revolutionary
         /// <summary>
         /// Применяет кулдаун к конвертеру после обращения
         /// </summary>
-        /// <param name="converterEntity">Сущность конвертера</param>
+        /// <param name="converterUid">Сущность конвертера</param>
         public void ApplyConversionCooldown(EntityUid converterUid)
         {
             if (!TryComp<ConsentRevolutionaryComponent>(converterUid, out var comp))
