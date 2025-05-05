@@ -20,7 +20,7 @@ rev-verb-consent-convert-message-cooldown = Способность к вербо
 alerts-rev-conversion-denied-name = Отказ от вступления революции
 alerts-rev-conversion-denied-desc = Вы отказались от вступлению в революцию. Вам не могут предложить вступить повторно некоторое время. Нажмите, чтобы отменить данный эффект.
 alerts-rev-conversion-cooldown-name = Задержка вербовки
-alerts-rev-conversion-cooldown-desc = Вы недавно завербовали человека в революцию. Функция вербовки временно недоступна.
+alerts-rev-conversion-cooldown-desc = Вы недавно пытались завербовать человека в революцию. Функция вербовки временно недоступна.
 head-rev-role-greeting-consent-only =
     Вы - глава революции.
     Вам поручено устранить весь командный состав станции путём убийства, изгнания за борт, или ареста.
