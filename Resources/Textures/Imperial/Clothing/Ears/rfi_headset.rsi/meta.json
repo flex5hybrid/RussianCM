@@ -8,10 +8,18 @@
   },
   "states": [
     {
-        "name": "stamp-rfi"
+      "name": "icon"
     },
     {
-        "name": "paper_stamp-rfi"
+      "name": "icon_alt"
+    },
+    {
+      "name": "equipped-EARS",
+      "directions": 4
+    },
+    {
+      "name": "alt-equipped-EARS",
+      "directions": 4
     }
   ]
 }

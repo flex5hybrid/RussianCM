@@ -8,10 +8,15 @@
   },
   "states": [
     {
-        "name": "stamp-rfi"
+      "name": "inhand-left",
+      "directions": 4
     },
     {
-        "name": "paper_stamp-rfi"
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "icon"
     }
   ]
 }

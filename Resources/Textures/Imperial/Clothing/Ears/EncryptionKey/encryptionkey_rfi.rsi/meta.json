@@ -7,11 +7,7 @@
     "y": 32
   },
   "states": [
-    {
-        "name": "stamp-rfi"
-    },
-    {
-        "name": "paper_stamp-rfi"
-    }
+    {"name": "crypt_rfi"},
+    {"name": "nano_label"}
   ]
 }
