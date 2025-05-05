@@ -10,7 +10,7 @@
         - id: Paper
           amount: 3
         - id: CyberPen
-        - id: RubberStampRFi
+        - id: RubberStampRFI
     - type: Sprite
       sprite: Imperial/Clothing/Back/Duffels/rfi.rsi
 
