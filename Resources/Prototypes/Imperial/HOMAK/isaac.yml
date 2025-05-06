@@ -30,3 +30,84 @@
   values:
     prefix: isaac-said-
     count: 100
+
+
+- type: entity
+  id: BriefcasePresentableAristocrat
+  parent: BriefcasePresentable
+  name: Aristocrat's suitcase
+  description: An old and battered suitcase that had been rumored for a long time. Maybe you shouldn't touch it?
+  components:
+  - type: StorageFill
+    contents:
+      - id: Cane
+        prob: 0.5
+        orGroup: Cane
+      - id: PresentableCane
+        prob: 0.5
+        orGroup: Cane
+      - id: ClothingHeadHatTophat
+        prob: 0.8
+        orGroup: Hat
+      - id: ClothingHeadHatBowlerHat
+        prob: 0.2
+        orGroup: Hat
+      - id: ClothingShoesBootsLaceup
+        prob: 0.9
+        orGroup: Boots
+      - id: ClothingShoesHighheelBoots
+        prob: 0.1
+        orGroup: Boots
+      - id: ClothingEyesGlasses
+        prob: 0.5
+        orGroup: Eyes
+      - id: ClothingEyesGlassesOutlawGlasses
+        prob: 0.3
+        orGroup: Eyes
+      - id: ClothingMaskItalianMoustache
+        prob: 0.2
+        orGroup: Eyes
+      - id: null
+        prob: 0.5
+        orGroup: Hands
+      - id: ClothingHandsGlovesColorBlack
+        prob: 0.5
+        orGroup: Hands
+      - id: ClothingUniformJumpsuitSecBlue
+        prob: 0.3
+        orGroup: Uniform
+      - id: ClothingUniformJumpsuitLawyerBlack
+        prob: 0.4
+        orGroup: Uniform
+      - id: ClothingUniformJumpsuitDetectiveGrey
+        prob: 0.3
+        orGroup: Uniform
+      - id: ClothingOuterCoatGentle
+      - id: SpaceCash1000
+        prob: 0.15
+        orGroup: Bonus
+      - id: SpaceCash100
+        prob: 0.1
+        orGroup: Bonus
+      - id: HarmonicaInstrument
+        prob: 0.15
+        orGroup: Bonus
+      - id: ArmenianStuff
+        prob: 0.1
+        orGroup: Bonus
+      - id: PlushieIsaac
+        prob: 0.1
+        orGroup: Bonus
+      - id: CombatKnife
+        prob: 0.1
+        orGroup: Bonus
+      - id: GoldRingDiamond
+        prob: 0.1
+        orGroup: Bonus
+      - id: GoldRingGem
+        prob: 0.15
+        orGroup: Bonus
+      - id: SpaceCash10000
+        prob: 0.05
+        orGroup: Bonus
+
