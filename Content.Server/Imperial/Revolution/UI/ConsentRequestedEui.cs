@@ -7,13 +7,6 @@ using Content.Shared.Eui;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Popups;
 using Content.Server.Imperial.Revolutionary;
-using Content.Server.Sound;
-using Robust.Shared.Audio;
-using Robust.Shared.GameObjects;
-using Content.Server.Sound.Components;
-using Robust.Shared.Prototypes;
-using Robust.Shared.IoC;
-using Content.Server.Explosion.EntitySystems;
 
 namespace Content.Server.Imperial.Revolutionary.UI
 {
@@ -28,10 +21,6 @@ namespace Content.Server.Imperial.Revolutionary.UI
         private readonly ConsentRevolutionarySystem _consentRevolutionarySystem;
         private readonly PopupSystem _popupSystem;
         private readonly EntityManager _entityManager;
-
-        [Dependency] private readonly IEntityManager _entityManagerDep = default!;
-        [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-        [Dependency] private readonly EmitSoundSystem _emitSoundSystem = default!;
 
         public ConsentRequestedEui(EntityUid target, EntityUid converter, RevolutionaryRuleSystem revRuleSystem, ConsentRevolutionarySystem consentRevSystem, PopupSystem popup, EntityManager entManager)
         {
@@ -78,10 +67,6 @@ namespace Content.Server.Imperial.Revolutionary.UI
                     // Применяем кулдаун к конвертеру
                     _consentRevolutionarySystem.ApplyConversionCooldown(_converterEntity);
 
-                    // Проигрываем звук принятия у конвертера
-                    var acceptSound = new SoundPathSpecifier("/Audio/Imperial/Revolutionary/accept.ogg");
-                    PlaySoundOnEntity(_converterEntity, acceptSound);
-
                     // Показываем уведомление об успешном обращении
                     _popupSystem.PopupEntity(
                         Loc.GetString("rev-consent-convert-accepted", ("target", Identity.Entity(_targetEntity, _entityManager))),
@@ -99,10 +84,6 @@ namespace Content.Server.Imperial.Revolutionary.UI
                     // Применяем кулдаун к конвертеру
                     _consentRevolutionarySystem.ApplyConversionCooldown(_converterEntity);
 
-                    // Проигрываем звук отказа у конвертера
-                    var denySound = new SoundPathSpecifier("/Audio/Imperial/Revolutionary/deny.ogg");
-                    PlaySoundOnEntity(_converterEntity, denySound);
-
                     // Показываем уведомление об отказе
                     _popupSystem.PopupEntity(
                         Loc.GetString("rev-consent-convert-denied", ("target", Identity.Entity(_targetEntity, _entityManager))),
@@ -113,19 +94,6 @@ namespace Content.Server.Imperial.Revolutionary.UI
             }
 
             Close();
-        }
-
-        private void PlaySoundOnEntity(EntityUid entity, SoundSpecifier sound)
-        {
-            if (!_entityManager.TryGetComponent<EmitSoundOnTriggerComponent>(entity, out var emitSoundComp))
-            {
-                emitSoundComp = new EmitSoundOnTriggerComponent();
-                _entityManager.AddComponent(entity, emitSoundComp);
-            }
-
-            emitSoundComp.Sound = sound;
-            var triggerEvent = new TriggerEvent(entity);
-            _entityManager.EventBus.RaiseLocalEvent(entity, triggerEvent, true);
         }
     }
 }
