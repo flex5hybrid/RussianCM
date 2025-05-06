@@ -13,16 +13,28 @@
     ClothingUniformJumpskirtLawyerGood: 1
     ClothingShoesBootsLaceup: 2
     ClothingHeadsetService: 2
-    ClothingNeckLawyerbadge: 2
+    ClothingHeadsetSecurity: 2
     BriefcaseBrown: 2
-    BookSpaceLaw: 3
+    ClothingNeckLawyerbadge: 2
+    ClothingHandsGlovesColorWhite: 1
+    ClothingHandsGlovesColorBlack: 1
+    ClothingHandsGlovesColorBlue: 1
+    ClothingHandsGlovesColorRed: 1
+    ClothingHeadHatTophat: 2
+    ClothingHeadHatOutlawHat: 1
+    ClothingEyesGlasses: 2
+    BookSpaceLaw: 2
     LuxuryPen: 2
     HandLabeler: 2
+    Paper: 10
   contrabandInventory:
     ClothingOuterRobesJudge: 1
     ClothingHeadHatPwig: 1
     # "Legally" obtained currency
     SpaceCash100: 2
-    ToyFigurineLawyer: 1
   emaggedInventory:
-    CyberPen: 1
+    CyberPen: 2
+    FoodExtradimensionalOrange: 1
+    ClothingEyesGlassesHiddenSecurity: 1
+    RubberStampSyndicate: 1
+    SpaceCash100: 1
