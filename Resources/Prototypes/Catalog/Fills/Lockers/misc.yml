@@ -154,6 +154,8 @@
     children:
     - id: StrangePill
       prob: 0.20
+    - id: BriefcasePresentableAristocrat
+      prob: 0.03
     # Tools
     - !type:NestedSelector
       tableId: MaintToolsTable
