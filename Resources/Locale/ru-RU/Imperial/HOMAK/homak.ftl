@@ -144,3 +144,6 @@ ent-ClothingHeadHatBowlerCool = Крутая шляпа
 
 ent-ClothingBackpackDuffelSetUniformLawye = Набор костюмов на все случаи жизни
     .desc =  Сумка с несколькими странными костюмами и шляпами для юристов и не только.
+
+ent-ClothingOuterCoatTrenchLawyer = Тренч юриста
+    .desc = Подойдёт для авторитетных или замёрзших людей.
