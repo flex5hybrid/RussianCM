@@ -86,7 +86,7 @@
 - type: startingGear
   id: TDMSnowMedicalGear_S
   equipment:
-    head: ClothingHeadSnowHelmetMinuteman
+    head: ClothingMedicapMinuteman
     mask: ClothingMaskGasMinuteMan
     eyes: ClothingEyesHudSyndicate
     outerClothing: ClothingOuterVestWebMerc
@@ -97,7 +97,7 @@
     shoes: ClothingShoesBootsSyndieFilled
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetGanza
-    belt: ClothingBeltMinuteManMedicWebbing
+    belt: ClothingBeltMilitaryWebbingBrigmed
     pocket1: FlashlightSeclite
     pocket2: CSWeaponGlock-18
   storage:
@@ -267,7 +267,7 @@
 - type: startingGear
   id: TDMSnowMedicalGear_N
   equipment:
-    head: ClothingHeadSnowHelmetMinuteman
+    head: ClothingMedicapMinuteman
     mask: ClothingMaskGasMinuteMan
     eyes: ClothingEyesHudSyndicate
     outerClothing: ClothingOuterVestWebMerc
@@ -278,7 +278,7 @@
     shoes: ClothingShoesBootsSyndieFilled
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetGanza
-    belt: ClothingBeltMinuteManMedicWebbing
+    belt: ClothingBeltMilitaryWebbingBrigmed
     pocket1: FlashlightSeclite
     pocket2: CSWeaponGlock-18
   storage:
