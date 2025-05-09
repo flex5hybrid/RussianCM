@@ -2,6 +2,7 @@ using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
+using Robust.Shared.Audio;
 
 namespace Content.Shared.Weapons.Ranged.Components;
 
@@ -26,6 +27,28 @@ public sealed partial class BatteryWeaponFireModesComponent : Component
     [DataField]
     [AutoNetworkedField]
     public int CurrentFireMode;
+
+    /// <summary>
+    /// Delay between switching shooting modes
+    /// </summary>
+    [DataField]
+    [AutoNetworkedField]
+    public TimeSpan ModeSwitchDelay = TimeSpan.FromSeconds(2);
+
+    /// <summary>
+    /// When can I switch again
+    /// </summary>
+    [AutoNetworkedField]
+    public TimeSpan NextModeSwitchTime = TimeSpan.Zero;
+
+    [DataField]
+    public TimeSpan NextSoundTime;
+
+    [DataField]
+    public TimeSpan LastModeSwitchTime;
+
+    [DataField]
+    public SoundSpecifier ModeSwitchSound = new SoundPathSpecifier("/Audio/Imperial/click-switch-gun-mode.ogg");
 }
 
 [DataDefinition, Serializable, NetSerializable]

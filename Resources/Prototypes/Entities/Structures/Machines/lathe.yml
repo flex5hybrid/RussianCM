@@ -193,6 +193,8 @@
     - ChemistryStatic
     - SurgeryStatic
     dynamicPacks:
+    - SalvagePlasmaCutterWeapons
+    - SalvageAdvancedPlasmaCutterWeapons
     - AdvancedTools
     - ScienceEquipment
     - ScienceExplosives
