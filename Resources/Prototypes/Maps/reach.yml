@@ -37,5 +37,5 @@
             #science (1)
             Scientist: [ 1, 1 ]
             Passenger: [ -1, -1 ]
-            IAA: [ 1, 1 ] # imperial IAA
+            RFI: [ 1, 1 ] # imperial RFI
 
