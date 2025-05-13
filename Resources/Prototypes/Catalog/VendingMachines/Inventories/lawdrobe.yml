@@ -1,7 +1,7 @@
 - type: vendingMachineInventory
   id: LawDrobeInventory
   startingInventory:
-    ClothingOuterCoatTrenchLawyer: 2
+    ClothingOuterCoatTrenchLawyer: 2 // Imperial Space Updating_Content_LawDrobe Start
     ClothingUniformJumpsuitLawyerBlue: 1
     ClothingUniformJumpskirtLawyerBlue: 1
     ClothingUniformJumpsuitLawyerPurple: 1
@@ -41,4 +41,4 @@
     FoodExtradimensionalOrange: 1
     ClothingEyesGlassesHiddenSecurity: 1
     RubberStampSyndicate: 1
-    BriefcasePresentableAristocrat: 1
+    BriefcasePresentableAristocrat: 1 // Imperial Space Updating_Content_LawDrobe End
