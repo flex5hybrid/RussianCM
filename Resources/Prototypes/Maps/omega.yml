@@ -68,4 +68,4 @@
             #silicon (3)
             StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
-            IAA: [ 1, 1 ] # imperial IAA
+            RFI: [ 1, 1 ] # imperial RFI
