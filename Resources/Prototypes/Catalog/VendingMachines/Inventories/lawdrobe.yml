@@ -1,7 +1,7 @@
 - type: vendingMachineInventory
   id: LawDrobeInventory
   startingInventory:
-    ClothingOuterCoatTrenchLawyer: 2 // Imperial Space Updating_Content_LawDrobe Start
+    ClothingOuterCoatTrenchLawyer: 2 // Imperial Space Updating_Content_LawDrobe
     ClothingUniformJumpsuitLawyerBlue: 1
     ClothingUniformJumpskirtLawyerBlue: 1
     ClothingUniformJumpsuitLawyerPurple: 1
@@ -12,12 +12,12 @@
     ClothingUniformJumpskirtLawyerBlack: 1
     ClothingUniformJumpsuitLawyerGood: 1
     ClothingUniformJumpskirtLawyerGood: 1
-    ClothingBackpackDuffelSetUniformLawye: 1
+    ClothingBackpackDuffelSetUniformLawye: 1 // Imperial Space Updating_Content_LawDrobe
     ClothingShoesBootsLaceup: 2
     ClothingHeadsetService: 2
-    ClothingHeadsetSecurity: 2
+    ClothingHeadsetSecurity: 2 // Imperial Space Updating_Content_LawDrobe
     BriefcaseBrown: 2
-    BriefcaseLocker: 2
+    BriefcaseLocker: 2 // Imperial Space Updating_Content_LawDrobe Start
     ClothingNeckLawyerbadge: 2
     ClothingHandsGlovesColorWhite: 1
     ClothingHandsGlovesColorBlack: 1
@@ -26,10 +26,10 @@
     ClothingHeadHatTophat: 2
     ClothingHeadHatOutlawHat: 1
     ClothingEyesGlasses: 2
-    BookSpaceLaw: 2
+    BookSpaceLaw: 2 // Imperial Space Updating_Content_LawDrobe End
     LuxuryPen: 2
-    HandLabeler: 2
-    Paper: 10
+    HandLabeler: 2 // Imperial Space Updating_Content_LawDrobe Start
+    Paper: 10 // Imperial Space Updating_Content_LawDrobe End
   contrabandInventory:
     ClothingOuterRobesJudge: 1
     ClothingHeadHatPwig: 1
@@ -38,7 +38,7 @@
     ToyFigurineLawyer: 1
   emaggedInventory:
     CyberPen: 2
-    FoodExtradimensionalOrange: 1
+    FoodExtradimensionalOrange: 1// Imperial Space Updating_Content_LawDrobe Start
     ClothingEyesGlassesHiddenSecurity: 1
     RubberStampSyndicate: 1
     BriefcasePresentableAristocrat: 1 // Imperial Space Updating_Content_LawDrobe End
