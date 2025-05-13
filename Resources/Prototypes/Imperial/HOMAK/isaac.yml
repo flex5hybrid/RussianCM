@@ -10,13 +10,13 @@
     sprite: Imperial/HOMAK/isaac.rsi
     state: icon
   - type: Speech
-    speechSounds: Isaac
+    speechSounds: IsaacSounds
   - type: SpeakOnTrigger
     pack: IsaacSaid
 
       
 - type: speechSounds
-  id: Isaac
+  id: IsaacSounds
   saySound:
     path: /Audio/Items/Toys/weh.ogg
   askSound:
@@ -298,7 +298,7 @@
       prob: 0.1
       orGroup: bonus
 
-  - type: entity
+- type: entity
   id: BriefcaseLocker
   parent: BriefcaseBrown
   suffix: Filled
