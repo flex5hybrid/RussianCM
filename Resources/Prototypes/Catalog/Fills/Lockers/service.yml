@@ -87,10 +87,10 @@
   components:
   - type: StorageFill
     contents:
-      - id: BriefcaseBrownFilled // Imperial Space Updating_content Start
-        prob: 0.8
+      - id: BriefcaseBrownFilled
+        prob: 0.8 // Imperial Space Updating_content
       - id: ClothingOuterRobesJudge
-      - id: ClothingHeadHatPwig
+      - id: ClothingHeadHatPwig // Imperial Space Updating_content Start
       - id: BookSpaceLaw
       - id: ToyHammer
       - id: Pen
