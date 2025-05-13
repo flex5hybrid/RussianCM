@@ -167,7 +167,7 @@
           - Stunbaton
         blacklist:
           tags:
-          - OnlyMaterialEnergy
+          - OnlyMaterialEnergy # Imperial "plasma Cutter + Advanced Version"
 
 - type: entity
   parent: BaseItemRecharger
@@ -194,7 +194,7 @@
         blacklist:
           tags:
           - PotatoBattery
-          - OnlyMaterialEnergy
+          - OnlyMaterialEnergy # Imperial "plasma Cutter + Advanced Version"
 
 - type: entity
   parent: BaseItemRecharger
@@ -221,10 +221,9 @@
           - HitscanBatteryAmmoProvider
           - ProjectileBatteryAmmoProvider
           - Stunbaton
-          - PowerCell
         blacklist:
           tags:
-          - OnlyMaterialEnergy
+          - OnlyMaterialEnergy # Imperial "plasma Cutter + Advanced Version"
 
 - type: entity
   parent: BaseRecharger

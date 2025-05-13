@@ -5,7 +5,7 @@
   id: SalvageWeapons-PlasmaCutter
   name: research-technology-plasmacutter
   icon:
-    sprite: Imperial/Lavaland/PlasmaCutter/base.rsi
+    sprite: Imperial/Objects/Weapons/Guns/CharginMaterials/PlasmaCutter/base.rsi
     state: icon
   discipline: Industrial
   tier: 2
@@ -18,7 +18,7 @@
   id: SalvageWeapons-AdvancedPlasmaCutter
   name: research-technology-advanced-plasmacutter
   icon:
-    sprite: Imperial/Lavaland/PlasmaCutter/advanced-base.rsi
+    sprite: Imperial/Objects/Weapons/Guns/CharginMaterials/PlasmaCutter/advanced-base.rsi
     state: icon
   discipline: Industrial
   tier: 3

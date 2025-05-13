@@ -38,4 +38,4 @@
           - ProjectileBatteryAmmoProvider
         blacklist:
           tags:
-          - OnlyMaterialEnergy
+          - OnlyMaterialEnergy # Imperial "plasma Cutter + Advanced Version"

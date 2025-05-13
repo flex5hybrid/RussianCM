@@ -1,13 +1,3 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 Koting <jekalavrovih@gmail.com>
-//
-// SPDX-License-Identifier: AGPL-3.0-or-later
-//
-// main from https://github.com/Goob-Station/Goob-Station/blob/15377c36e0231c21f34c0df57f1e92455894e696/Content.Goobstation.Server/MaterialEnergy/MaterialEnergySystem.cs
 using Content.Server.Power.EntitySystems;
 using Content.Server.Power.Components;
 using Content.Server.Stack;
@@ -18,6 +8,9 @@ using Robust.Shared.Audio.Systems;
 
 namespace Content.Server.Imperial.Lavaland.MaterialEnergy
 {
+    /// <summary>
+    /// It has a whitelist of materials from which you can replenish energy. 30 pieces = all the energy.
+    /// </summary>
     public sealed class MaterialEnergySystem : EntitySystem
     {
         [Dependency] private readonly BatterySystem _batterySystem = default!;

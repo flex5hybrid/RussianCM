@@ -193,8 +193,8 @@
     - ChemistryStatic
     - SurgeryStatic
     dynamicPacks:
-    - SalvagePlasmaCutterWeapons
-    - SalvageAdvancedPlasmaCutterWeapons
+    - SalvagePlasmaCutterWeapons # Imperial "plasma Cutter + Advanced Version"
+    - SalvageAdvancedPlasmaCutterWeapons # Imperial "plasma Cutter + Advanced Version"
     - AdvancedTools
     - ScienceEquipment
     - ScienceExplosives

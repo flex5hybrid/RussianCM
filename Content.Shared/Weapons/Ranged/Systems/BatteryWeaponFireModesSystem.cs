@@ -22,8 +22,6 @@ public sealed class BatteryWeaponFireModesSystem : EntitySystem
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
 
-    private TimeSpan _lastSoundPlayTime;
-
     public override void Initialize()
     {
         base.Initialize();
@@ -102,6 +100,13 @@ public sealed class BatteryWeaponFireModesSystem : EntitySystem
 
     public bool TrySetFireMode(EntityUid uid, BatteryWeaponFireModesComponent component, int index, EntityUid? user = null)
     {
+        if (index < 0 || index >= component.FireModes.Count)
+            return false;
+
+        if (user != null && !_accessReaderSystem.IsAllowed(user.Value, uid))
+            return false;
+
+        // Imperial Space "plasma Cutter + Advanced Version" Start
         if (_gameTiming.CurTime < component.NextModeSwitchTime)
         {
             if (user != null)
@@ -115,28 +120,20 @@ public sealed class BatteryWeaponFireModesSystem : EntitySystem
             return false;
         }
 
-        if (index < 0 || index >= component.FireModes.Count)
-            return false;
-
-        if (user != null && !_accessReaderSystem.IsAllowed(user.Value, uid))
-            return false;
-
         component.NextModeSwitchTime = _gameTiming.CurTime + component.ModeSwitchDelay;
         Dirty(uid, component);
+        // Imperial Space "plasma Cutter + Advanced Version" End
 
         SetFireMode(uid, component, index, user);
+
         return true;
     }
 
 
     private void SetFireMode(EntityUid uid, BatteryWeaponFireModesComponent component, int index, EntityUid? user = null)
     {
-        if (_gameTiming.CurTime <= component.LastModeSwitchTime)
-            return;
-
         var fireMode = component.FireModes[index];
         component.CurrentFireMode = index;
-        component.LastModeSwitchTime = _gameTiming.CurTime;
         Dirty(uid, component);
 
         if (_prototypeManager.TryIndex<EntityPrototype>(fireMode.Prototype, out var prototype))
@@ -147,28 +144,34 @@ public sealed class BatteryWeaponFireModesSystem : EntitySystem
             if (user != null)
             {
                 _popupSystem.PopupClient(Loc.GetString("gun-set-fire-mode", ("mode", prototype.Name)), uid, user.Value);
-                TryPlayModeSwitchSound(uid, component, user);
+                TryPlayModeSwitchSound(uid, component, user); // Imperial Space "plasma Cutter + Advanced Version"
             }
         }
-        Dirty(uid, component);
 
-            if (TryComp(uid, out ProjectileBatteryAmmoProviderComponent? ammoProvider))
-            {
-                var oldFireCost = ammoProvider.FireCost;
-                ammoProvider.Prototype = fireMode.Prototype;
-                ammoProvider.FireCost = fireMode.FireCost;
+        component.NextModeSwitchTime = _gameTiming.CurTime + component.ModeSwitchDelay;  // Imperial Space "plasma Cutter + Advanced Version"
+        Dirty(uid, component);  // Imperial Space "plasma Cutter + Advanced Version"
 
-                float fireCostDiff = (float)fireMode.FireCost / (float)oldFireCost;
-                ammoProvider.Shots = (int)Math.Round(ammoProvider.Shots / fireCostDiff);
-                ammoProvider.Capacity = (int)Math.Round(ammoProvider.Capacity / fireCostDiff);
 
-                Dirty(uid, ammoProvider);
-                var updateEvent = new UpdateClientAmmoEvent();
-                RaiseLocalEvent(uid, ref updateEvent);
-            }
+        if (TryComp(uid, out ProjectileBatteryAmmoProviderComponent? projectileBatteryAmmoProviderComponent))
+        {
+            // TODO: Have this get the info directly from the batteryComponent when power is moved to shared.
+            var OldFireCost = projectileBatteryAmmoProviderComponent.FireCost;
+            projectileBatteryAmmoProviderComponent.Prototype = fireMode.Prototype;
+            projectileBatteryAmmoProviderComponent.FireCost = fireMode.FireCost;
+
+            float FireCostDiff = (float)fireMode.FireCost / (float)OldFireCost;
+            projectileBatteryAmmoProviderComponent.Shots = (int)Math.Round(projectileBatteryAmmoProviderComponent.Shots / FireCostDiff);
+            projectileBatteryAmmoProviderComponent.Capacity = (int)Math.Round(projectileBatteryAmmoProviderComponent.Capacity / FireCostDiff);
+
+            Dirty(uid, projectileBatteryAmmoProviderComponent);
+
+            var updateClientAmmoEvent = new UpdateClientAmmoEvent();
+            RaiseLocalEvent(uid, ref updateClientAmmoEvent);
+        }
     }
 
 
+    // Imperial Space "plasma Cutter + Advanced Version" Start
     private bool TryPlayModeSwitchSound(EntityUid uid, BatteryWeaponFireModesComponent comp, EntityUid? user)
     {
         if (user == null || !Exists(uid))
@@ -177,4 +180,5 @@ public sealed class BatteryWeaponFireModesSystem : EntitySystem
         _audio.PlayPredicted(comp.ModeSwitchSound, uid, user);
         return true;
     }
+    // Imperial Space "plasma Cutter + Advanced Version" End
 }
