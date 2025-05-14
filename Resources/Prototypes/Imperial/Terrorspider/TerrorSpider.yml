@@ -48,7 +48,6 @@
       - id: SpiderWebTerrorRusar
         amount: 1
       offset: 0, 1
-      speech: action-speech-spell-spider
 
 - type: entity
   name: Rusar terror
@@ -207,7 +206,6 @@
       - id: SpiderWebTerrorDron
         amount: 1
       offset: 0, 1
-      speech: action-speech-spell-spider
 
 - type: entity
   name: Dron terror
@@ -307,7 +305,7 @@
         Blunt: 0.75
         Slash: 0.75
         Piercing: 0.75
- 
+
 
 - type: entity
   id: TerrorDrontAcid
@@ -439,7 +437,7 @@
         Blunt: 0.75
         Slash: 0.75
         Piercing: 0.75
- 
+
 
 - type: entity
   name: Reaper terror
@@ -554,7 +552,7 @@
         Blunt: 0.75
         Slash: 0.75
         Piercing: 0.75
- 
+
 
 - type: entity
   name: Destroye terror
@@ -876,7 +874,7 @@
         Blunt: 0.75
         Slash: 0.75
         Piercing: 0.75
- 
+
 
 - type: entity
   name: Guardian terror
@@ -928,7 +926,6 @@
       - id: SpiderWebTerrorGuardian
         amount: 1
       offset: 0, 1
-      speech: action-speech-spell-spider
 
 - type: entity
   name: Guardian terror
@@ -1171,7 +1168,7 @@
         Blunt: 0.75
         Slash: 0.75
         Piercing: 0.75
- 
+
 
 - type: entity
   name: Prince terror
@@ -1339,10 +1336,9 @@
       - id: SpiderWebPrincess
         amount: 1
       offset: 0, 1
-      speech: action-speech-spell-spider
 
 - type: entity
-  parent: LightImplantSpider 
+  parent: LightImplantSpider
   id: LightImplantSpiderTir1
   name: Spawnd egg 1 tir
   components:
@@ -1366,10 +1362,9 @@
       - id: TerrorEgg1Tir
         amount: 1
       offset: 0, 1
-      speech: action-speech-spell-spider
 
 - type: entity
-  parent: LightImplantSpider 
+  parent: LightImplantSpider
   id: LightImplantSpiderTir2
   name: Spawnd egg 2 tir
   components:
@@ -1393,7 +1388,6 @@
       - id: TerrorEgg2Tir
         amount: 1
       offset: 0, 1
-      speech: action-speech-spell-spider
 
 - type: entity
   name: Princess terror
@@ -1510,7 +1504,7 @@
         Blunt: 0.7
         Slash: 0.7
         Piercing: 0.7
- 
+
 
 - type: entity
   id: TerrorLayEgg
@@ -1552,7 +1546,7 @@
       - LightImplantSpiderPrincess
 
 - type: entity
-  parent: LightImplantSpider 
+  parent: LightImplantSpider
   id: LightImplantSpiderTir2Queen
   name: Spawnd egg 2 tir
   components:
@@ -1576,10 +1570,9 @@
       - id: TerrorEgg2Tir
         amount: 1
       offset: 0, 1
-      speech: action-speech-spell-spider
 
 - type: entity
-  parent: LightImplantSpider 
+  parent: LightImplantSpider
   id: LightImplantSpiderTir1Queen
   name: Spawnd egg 1 tir
   components:
@@ -1603,10 +1596,10 @@
       - id: TerrorEgg1Tir
         amount: 1
       offset: 0, 1
-      speech: action-speech-spell-spider
+
 
 - type: entity
-  parent: LightImplantSpider 
+  parent: LightImplantSpider
   id: LightImplantSpiderTir3
   name: Spawnd egg 3 tir
   components:
@@ -1630,7 +1623,6 @@
       - id: TerrorEgg3Tir
         amount: 1
       offset: 0, 1
-      speech: action-speech-spell-spider
 
 - type: entity
   name: Queen terror
@@ -1747,7 +1739,7 @@
         Blunt: 0.7
         Slash: 0.7
         Piercing: 0.7
- 
+
 
 - type: entity
   id: TerrorQueentAcid
@@ -1878,7 +1870,7 @@
   - type: UseDelay
     delay: 4
   - type: ShowHealthBars
-    
+
 
 - type: entity
   save: false
@@ -2300,7 +2292,7 @@
     revertOnCrit: false
     revertOnDeath: false
     allowRepeatedMorphs: true
-    
+
 - type: polymorph
   id: EggToMobDronSpiderAngrys
   configuration:
