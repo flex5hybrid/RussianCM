@@ -183,7 +183,7 @@
   parent: Paper
   id: InternalAffairsAgentReport
   name: "Отчёт Регионального фронтир инспектора"
-  description: "Распечатанный документ с заголовком отдела: департамент оценки эффективности"
+  description: "Распечатанный документ с заголовком отдела: департамент эффективности станции"
   components:
     - type: Paper
       content: doc-text-printer-rfi-report
