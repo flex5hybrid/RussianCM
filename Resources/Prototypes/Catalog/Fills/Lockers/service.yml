@@ -88,9 +88,9 @@
   - type: StorageFill
     contents:
       - id: BriefcaseBrownFilled
-        prob: 0.8 // Imperial Space Updating_content
+        prob: 0.8 # Imperial Space Updating_content
       - id: ClothingOuterRobesJudge
-      - id: ClothingHeadHatPwig // Imperial Space Updating_content Start
+      - id: ClothingHeadHatPwig # Imperial Space Updating_content Start
       - id: BookSpaceLaw
       - id: ToyHammer
       - id: Pen
@@ -111,7 +111,7 @@
         prob: 0.25
         orGroup: Box
       - id: FoodBakedCaramelizedPaper
-        prob: 0.1 // Imperial Space Updating_content End
+        prob: 0.1 # Imperial Space Updating_content End
 
 - type: entity
   id: LockerBotanistFilled
