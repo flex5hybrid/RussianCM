@@ -8,8 +8,8 @@ using Content.Shared.Verbs;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Timing;
-using Robust.Shared.Audio.Systems;
+using Robust.Shared.Timing; // Imperial Space "plasma Cutter + Advanced Version" Start
+using Robust.Shared.Audio.Systems; // Imperial Space "plasma Cutter + Advanced Version" Start
 
 namespace Content.Shared.Weapons.Ranged.Systems;
 
@@ -19,8 +19,8 @@ public sealed class BatteryWeaponFireModesSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
     [Dependency] private readonly AccessReaderSystem _accessReaderSystem = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearanceSystem = default!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly IGameTiming _gameTiming = default!; // Imperial Space "plasma Cutter + Advanced Version" Start
+    [Dependency] private readonly SharedAudioSystem _audio = default!; // Imperial Space "plasma Cutter + Advanced Version" Start
 
     public override void Initialize()
     {
@@ -142,10 +142,10 @@ public sealed class BatteryWeaponFireModesSystem : EntitySystem
                 _appearanceSystem.SetData(uid, BatteryWeaponFireModeVisuals.State, prototype.ID, appearance);
 
             if (user != null)
-            {
+            { // Imperial Space "plasma Cutter + Advanced Version"
                 _popupSystem.PopupClient(Loc.GetString("gun-set-fire-mode", ("mode", prototype.Name)), uid, user.Value);
                 TryPlayModeSwitchSound(uid, component, user); // Imperial Space "plasma Cutter + Advanced Version"
-            }
+            } // Imperial Space "plasma Cutter + Advanced Version"
         }
 
         component.NextModeSwitchTime = _gameTiming.CurTime + component.ModeSwitchDelay;  // Imperial Space "plasma Cutter + Advanced Version"

@@ -165,9 +165,12 @@
           - HitscanBatteryAmmoProvider
           - ProjectileBatteryAmmoProvider
           - Stunbaton
+        # Imperial "plasma Cutter + Advanced Version" Start
+        # In order not to devalue charging with materials
         blacklist:
           tags:
-          - OnlyMaterialEnergy # Imperial "plasma Cutter + Advanced Version"
+          - OnlyMaterialEnergy
+        # Imperial "plasma Cutter + Advanced Version" Start
 
 - type: entity
   parent: BaseItemRecharger
@@ -194,7 +197,10 @@
         blacklist:
           tags:
           - PotatoBattery
-          - OnlyMaterialEnergy # Imperial "plasma Cutter + Advanced Version"
+        # Imperial "plasma Cutter + Advanced Version" Start
+        # In order not to devalue charging with materials
+          - OnlyMaterialEnergy
+        # Imperial "plasma Cutter + Advanced Version" End
 
 - type: entity
   parent: BaseItemRecharger
@@ -221,9 +227,12 @@
           - HitscanBatteryAmmoProvider
           - ProjectileBatteryAmmoProvider
           - Stunbaton
+        # Imperial "plasma Cutter + Advanced Version" Start
+        # In order not to devalue charging with materials
         blacklist:
           tags:
-          - OnlyMaterialEnergy # Imperial "plasma Cutter + Advanced Version"
+          - OnlyMaterialEnergy
+        # Imperial "plasma Cutter + Advanced Version" End
 
 - type: entity
   parent: BaseRecharger
