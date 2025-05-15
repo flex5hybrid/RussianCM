@@ -7,7 +7,7 @@
   description: The infamous lawyer of the Akila state. You're really doomed if Isaac doesn't know the solution to your problem.
   components:
   - type: Sprite
-    sprite: Imperial/HOMAK/isaac.rsi
+    sprite: Imperial\HOMAK\isaac.rsi
     state: icon
   - type: Speech
     speechSounds: IsaacSounds
@@ -18,11 +18,11 @@
 - type: speechSounds
   id: IsaacSounds
   saySound:
-    path: /Audio/Items/Toys/weh.ogg
+    path: \Audio\Items\Toys\weh.ogg
   askSound:
-    path: /Audio/Items/Toys/weh.ogg
+    path: \Audio\Items\Toys\weh.ogg
   exclaimSound:
-    path: /Audio/Items/Toys/weh.ogg
+    path: \Audio\Items\Toys\weh.ogg
 
 
 - type: localizedDataset
