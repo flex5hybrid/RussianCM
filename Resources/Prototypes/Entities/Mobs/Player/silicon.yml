@@ -123,7 +123,7 @@
         # The issue is verbs check for same transparent container.
         # The alternative is you add a bunch of events trying to override it; we don't even really need the container functionality
         # anyway it's just a quality of life thing.
-        showEnts: False #Imperial Space AI positronic brain fix. Буквально одну строчку изменил и оно все заработало как надо.
+        showEnts: True 
 
 # Items
 - type: entity
