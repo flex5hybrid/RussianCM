@@ -7,7 +7,7 @@
   description: The infamous lawyer of the Akila state. You're really doomed if Isaac doesn't know the solution to your problem.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\isaac.rsi
+    sprite: Imperial/HOMAK/isaac.rsi
     state: icon
   - type: Speech
     speechSounds: IsaacSounds
@@ -18,11 +18,11 @@
 - type: speechSounds
   id: IsaacSounds
   saySound:
-    path: \Audio\Items\Toys\weh.ogg
+    path: /Audio/Items/Toys/weh.ogg
   askSound:
-    path: \Audio\Items\Toys\weh.ogg
+    path: /Audio/Items/Toys/weh.ogg
   exclaimSound:
-    path: \Audio\Items\Toys\weh.ogg
+    path: /Audio/Items/Toys/weh.ogg
 
 
 - type: localizedDataset
@@ -119,9 +119,9 @@
   description: It was fashionable last century.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\oldlawyer.rsi
+    sprite: Imperial/HOMAK/oldlawyer.rsi
   - type: Clothing
-    sprite: Imperial\HOMAK\oldlawyer.rsi
+    sprite: Imperial/HOMAK/oldlawyer.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -130,9 +130,9 @@
   description: Has a "Kick Me" note always hanging on the back.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\stupidlawyer.rsi
+    sprite: Imperial/HOMAK/stupidlawyer.rsi
   - type: Clothing
-    sprite: Imperial\HOMAK\stupidlawyer.rsi
+    sprite: Imperial/HOMAK/stupidlawyer.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -141,9 +141,9 @@
   description: Someone clearly skimped on designing this suit.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\lazylawyer.rsi
+    sprite: Imperial/HOMAK/lazylawyer.rsi
   - type: Clothing
-    sprite: Imperial\HOMAK\lazylawyer.rsi
+    sprite: Imperial/HOMAK/lazylawyer.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -152,9 +152,9 @@
   description: You look incredibly stylish in it. Seriously impressive.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\coollawyer.rsi
+    sprite: Imperial/HOMAK/coollawyer.rsi
   - type: Clothing
-    sprite: Imperial\HOMAK\coollawyer.rsi
+    sprite: Imperial/HOMAK/coollawyer.rsi
       
 - type: entity
   parent: ClothingUniformBase
@@ -163,9 +163,9 @@
   description: A suit with a strange design. If you like it - we recommend seeing a psychologist.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\strangelawyer.rsi
+    sprite: Imperial/HOMAK/strangelawyer.rsi
   - type: Clothing
-    sprite: Imperial\HOMAK\strangelawyer.rsi
+    sprite: Imperial/HOMAK/strangelawyer.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -174,9 +174,9 @@
   description: Rumor says it was worn by a powerful yakuza. Of course, that's just a myth to inflate the price.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\brutallawyer.rsi
+    sprite: Imperial/HOMAK/brutallawyer.rsi
   - type: Clothing
-    sprite: Imperial\HOMAK\brutallawyer.rsi
+    sprite: Imperial/HOMAK/brutallawyer.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -185,9 +185,9 @@
   description: Is this even a lawyer suit? Either way, better not wear it to court.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\sportinglawyer.rsi
+    sprite: Imperial/HOMAK/sportinglawyer.rsi
   - type: Clothing
-    sprite: Imperial\HOMAK\sportinglawyer.rsi
+    sprite: Imperial/HOMAK/sportinglawyer.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -196,9 +196,9 @@
   description: Oranges. Oranges. Oranges.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\orangelawyer.rsi
+    sprite: Imperial/HOMAK/orangelawyer.rsi
   - type: Clothing
-    sprite: Imperial\HOMAK\orangelawyer.rsi
+    sprite: Imperial/HOMAK/orangelawyer.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -207,9 +207,9 @@
   description: Stylish bowler hat.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\bowler_hatold.rsi
+    sprite: Imperial/HOMAK/bowler_hatold.rsi
   - type: Clothing
-    sprite: Imperial\HOMAK\bowler_hatold.rsi
+    sprite: Imperial/HOMAK/bowler_hatold.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -218,9 +218,9 @@
   description: Stylish bowler hat.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\bowler_hatorange.rsi
+    sprite: Imperial/HOMAK/bowler_hatorange.rsi
   - type: Clothing
-    sprite: Imperial\HOMAK\bowler_hatorange.rsi
+    sprite: Imperial/HOMAK/bowler_hatorange.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -229,9 +229,9 @@
   description: Stylish bowler hat.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\bowler_hatpink.rsi
+    sprite: Imperial/HOMAK/bowler_hatpink.rsi
   - type: Clothing
-    sprite: Imperial\HOMAK\bowler_hatpink.rsi
+    sprite: Imperial/HOMAK/bowler_hatpink.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -240,9 +240,9 @@
   description: Stylish bowler hat.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\bowler_hatcool.rsi
+    sprite: Imperial/HOMAK/bowler_hatcool.rsi
   - type: Clothing
-    sprite: Imperial\HOMAK\bowler_hatcool.rsi
+    sprite: Imperial/HOMAK/bowler_hatcool.rsi
 
 - type: entity
   parent: ClothingBackpackDuffel
@@ -273,9 +273,9 @@
   description: A comfy trench coat.
   components:
   - type: Sprite
-    sprite: Imperial\HOMAK\trenchlawyer.rsi
+    sprite: Imperial/HOMAK/trenchlawyer.rsi
   - type: Clothing
-    sprite: Imperial\HOMAK\trenchlawyer.rsi
+    sprite: Imperial/HOMAK/trenchlawyer.rsi
   - type: StorageFill
     contents:
     - id: Pen
@@ -311,6 +311,6 @@
   - type: AccessReader
     access: [ [ "Lawyer" ] ]
   - type: Sprite
-    sprite: Imperial\HOMAK\briefcaselocker.rsi
+    sprite: Imperial/HOMAK/briefcaselocker.rsi
   - type: Item
-    sprite: Imperial\HOMAK\briefcaselocker.rsi
+    sprite: Imperial/HOMAK/briefcaselocker.rsi
