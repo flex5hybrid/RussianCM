@@ -148,3 +148,41 @@ food-sequence-burger-content-appendix = аппендиксо
 food-sequence-burger-content-ears = ухо
 food-sequence-burger-content-stomach = желудо
 food-sequence-burger-content-liver = печень
+
+# COTTON BURGERS
+
+food-sequence-cotton-burger-gen = {$content}бургер
+
+food-sequence-cotton-burger-content-cotton-bol = хлопковый
+food-sequence-cotton-burger-content-pyrotton-bol = пиро
+food-sequence-cotton-burger-content-plushie-throngler = тронгел
+food-sequence-cotton-burger-content-plushie-ghost = призрачный
+food-sequence-cotton-burger-content-plushie-revenant = мстительный
+food-sequence-cotton-burger-content-plushie-bee = жужжащий
+food-sequence-cotton-burger-content-plushie-hamptr = хэмптр
+food-sequence-cotton-burger-content-plushie-nukie = ядерный
+food-sequence-cotton-burger-content-plushie-rouny = роуни
+food-sequence-cotton-burger-content-plushie-lamp = ламповый
+food-sequence-cotton-burger-content-plushie-arachnid = паучий
+food-sequence-cotton-burger-content-plushie-lizard = вех
+food-sequence-cotton-burger-content-plushie-experiment = экспериментальный
+food-sequence-cotton-burger-content-plushie-spacelizard = космический
+food-sequence-cotton-burger-content-plushie-lizard-inversed = хев
+food-sequence-cotton-burger-content-plushie-diona = дион
+food-sequence-cotton-burger-content-plushie-shark = шонк
+food-sequence-cotton-burger-content-plushie-ratvar = ратварианский
+food-sequence-cotton-burger-content-plushie-narsie = нар'
+food-sequence-cotton-burger-content-plushie-carp = карповый
+food-sequence-cotton-burger-content-plushie-magicarp = магический
+food-sequence-cotton-burger-content-plushie-holocarp = голографический
+food-sequence-cotton-burger-content-plushie-slime = слизневый
+food-sequence-cotton-burger-content-plushie-snake = змеиный
+food-sequence-cotton-burger-content-plushie-mouse = мышиный
+food-sequence-cotton-burger-content-plushie-vox = скри
+food-sequence-cotton-burger-content-plushie-atmosian = атмосферный
+food-sequence-cotton-burger-content-plushie-xeno = ксеноморфный
+food-sequence-cotton-burger-content-plushie-penguin = пингвиний
+food-sequence-cotton-burger-content-plushie-human = юристмк
+food-sequence-cotton-burger-content-plushie-moth = пушистый
+food-sequence-cotton-burger-content-plushie-ian = корги
+food-sequence-cotton-burger-content-among-pequeno = подозрительный
