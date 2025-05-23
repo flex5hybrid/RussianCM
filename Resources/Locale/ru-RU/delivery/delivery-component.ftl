@@ -1,6 +1,6 @@
 delivery-recipient-examine = Это предназначено для {$recipient}, {$job}.
 delivery-already-opened-examine = Это уже открыто.
-delivery-earnings-examine = Delivering this will earn the station [color=yellow]{$spesos}[/color] spesos.
+delivery-earnings-examine = Доставя это на счет станции поступит [color=yellow]{$spesos}[/color] кредитов.
 delivery-recipient-no-name = Безымянный
 delivery-recipient-no-job = Неизвестный
 
