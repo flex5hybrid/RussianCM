@@ -1,0 +1,30 @@
+name: Notify Discord on Issue Opened
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  discord:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send Discord notification
+      env:
+        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        ISSUE_TITLE: ${{ github.event.issue.title }}
+        ISSUE_URL: ${{ github.event.issue.html_url }}
+        ISSUE_NUMBER: ${{ github.event.issue.number }}
+        ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+      run: |
+        # Собираем embed-подобное сообщение
+        PAYLOAD=$(jq -n \
+          --arg title "New Issue #$ISSUE_NUMBER: $ISSUE_TITLE" \
+          --arg url "$ISSUE_URL" \
+          --arg author "$ISSUE_AUTHOR" \
+          '{embeds: [{ title: $title, url: $url, description: "Автор: **\($author)**" }]}'
+        )
+
+        # Отправка в Discord
+        curl -X POST "$DISCORD_WEBHOOK_URL" \
+             -H "Content-Type: application/json" \
+             -d "$PAYLOAD"
