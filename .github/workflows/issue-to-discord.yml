@@ -5,26 +5,21 @@ on:
     types: [opened]
 
 jobs:
-  discord:
+  new_issue_send_discord:
     runs-on: ubuntu-latest
-    steps:
-    - name: Send Discord notification
-      env:
-        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        ISSUE_TITLE: ${{ github.event.issue.title }}
-        ISSUE_URL: ${{ github.event.issue.html_url }}
-        ISSUE_NUMBER: ${{ github.event.issue.number }}
-        ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
-      run: |
-        # Собираем embed-подобное сообщение
-        PAYLOAD=$(jq -n \
-          --arg title "New Issue #$ISSUE_NUMBER: $ISSUE_TITLE" \
-          --arg url "$ISSUE_URL" \
-          --arg author "$ISSUE_AUTHOR" \
-          '{embeds: [{ title: $title, url: $url, description: "Автор: **\($author)**" }]}'
-        )
 
-        # Отправка в Discord
-        curl -X POST "$DISCORD_WEBHOOK_URL" \
-             -H "Content-Type: application/json" \
-             -d "$PAYLOAD"
+    steps:
+      - name: Send New Issue
+        if: always()
+        uses: sarisia/actions-status-discord@v1
+        with:
+          # берем из секрета, как настроили ранее
+          webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          # текст уведомления: номер, заголовок и ссылка на issue
+          description: |
+            🔔 **Новая Issue**
+            [Номер ${{ github.event.issue.number }}](${{ github.event.issue.html_url }})
+            **${{ github.event.issue.title }}**
+            _от_ **${{ github.event.issue.user.login }}**
+          status: success
+          color: 0x5865F2 # Cиний
