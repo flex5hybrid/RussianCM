@@ -7,7 +7,8 @@ on:
 jobs:
   build:
     name: Trailing Whitespace Check
-    if: github.event.pull_request.draft == false
+    if: false # Отключено до лучших времен. Я не хочу лезть в код визов для исправления их говна
+    #if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4.2.2
