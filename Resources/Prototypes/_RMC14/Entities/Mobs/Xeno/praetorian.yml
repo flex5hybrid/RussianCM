@@ -14,7 +14,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-praetorian
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Praetorian/praetorian.rsi
+    sprite: _RMC14/Mobs/OldXenonids/Praetorian/praetorian.rsi
   - type: MobState
     allowedStates:
     - Alive
@@ -159,7 +159,7 @@
     guides:
     - RMCGuideRoleValkyrie
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Praetorian/valkyrie_praetorian.rsi
+    sprite: _RMC14/Mobs/OldXenonids/Praetorian/valkyrie_praetorian.rsi
   - type: Xeno
     actionIds:
     - ActionXenoRest

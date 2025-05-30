@@ -109,7 +109,7 @@
     guides:
     - RMCGuideRoleCarrier
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Carrier/carrier.rsi
+    sprite: _RMC14/Mobs/OldXenonids/Carrier/carrier.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base" ]
       state: alive
@@ -167,7 +167,7 @@
     guides:
     - RMCGuideRoleEggsac
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Carrier/eggsac_carrier.rsi
+    sprite: _RMC14/Mobs/OldXenonids/Carrier/eggsac_carrier.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base" ]
       state: alive

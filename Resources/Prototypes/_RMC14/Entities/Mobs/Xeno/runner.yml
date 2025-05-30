@@ -14,7 +14,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-runner
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Runner/runner.rsi
+    sprite: _RMC14/Mobs/OldXenonids/Runner/runner.rsi
   - type: Eye
     pvsScale: 1.5
   - type: MobState
@@ -157,7 +157,7 @@
   suffix: Acider
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Runner/acider_runner.rsi
+    sprite: _RMC14/Mobs/OldXenonids/Runner/acider_runner.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base", "enum.ForTheHiveVisualLayers.Base" ]
       state: alive

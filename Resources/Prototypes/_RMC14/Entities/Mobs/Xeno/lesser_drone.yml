@@ -14,7 +14,7 @@
     raffle:
       settings: short
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/LesserDrone/lesser_drone.rsi
+    sprite: _RMC14/Mobs/OldXenonids/LesserDrone/lesser_drone.rsi
   - type: MobState
     allowedStates:
     - Alive

@@ -15,7 +15,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-queen
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Queen/queen.rsi
+    sprite: _RMC14/Mobs/OldXenonids/Queen/queen.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base" ]
       state: alive
