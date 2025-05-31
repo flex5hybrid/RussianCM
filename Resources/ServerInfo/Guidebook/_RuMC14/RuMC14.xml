@@ -1,0 +1,44 @@
+﻿<Document>
+  # Справочник по RuMC
+
+  Приветствую вас на RuCM, этот сервер основан на сборке RMC, которая в свою очередь является адаптацией режима Colonial Marines из space station 13.
+
+  Справочник, дорожную карту и правила можно найти в лобби или через ESC меню.
+
+  Нажмите на любую клавишу слева для ознакомления с особенностями RuMC.
+
+  Прочитайте правила, если ещё не ознакомились с ними.
+  - [textlink="Правила" link="RuMCOverview"]
+
+  Если вы ещё не освоились в особенностях игрового режима, следующие страницы могут вам тебе полезны.
+
+    - [textlink="Руководство для начинающих!" link="RuMCGuideNewPlayer"]
+    - [textlink="Первая миссия в роли стрелка!" link="RuMCGuideRoleRifleman"]
+    - [textlink="Ты родился в улье! Что же дальше?" link="RuMCGuideRoleDrone"]
+
+  ## Если вы уже освоились в игре, вам могут быть полезны руководства ниже!
+
+    ### Флотская пехота
+
+    [bold]Roles[/bold]
+    - [textlink="Медицина" link="RMCMedical"]
+    - [textlink="Поставки" link="RMCRequisitions"]
+    - [textlink="Боевые техники" link="RMCGuideRoleCombatTechnician"]
+    - [textlink="Техники обслуживания" link="RMCGuideRoleMaintenanceTechnician"]
+    - [textlink="Выжившие" link="RMCSurvivor"]
+    - [textlink="Оператор смартгана" link="RMCGuideRoleSGO"]
+
+    [bold]Structures[/bold]
+    - [textlink="Коммуникационные и сенсорные вышки" link="RMCGuideCommunicationsTowers"]
+
+    ### Ксеноиды
+
+    [bold]Roles[/bold]
+    - [textlink="Касты" link="RMCGuideXenonidRoles"]
+
+    [bold]Structures[/bold]
+    - [textlink="Постройки улья" link="RMCGuideHiveStructures"]
+    - [textlink="Смоляные ловушки" link="RMCGuideResinHoles"]
+
+
+  </Document>

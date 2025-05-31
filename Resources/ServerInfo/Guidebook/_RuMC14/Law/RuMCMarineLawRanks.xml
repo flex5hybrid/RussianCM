@@ -1,0 +1,44 @@
+﻿<Document>
+  # Ranks
+
+  ## Officer
+  Бригадный Генерал\nPrefix: BGen\nPaygrade: O7
+
+  Полковник\nPrefix: Col\nPaygrade: O6
+
+  Подполковник\nPrefix: LtCol\nPaygrade: O5
+
+  Майор\nPrefix: Maj\nPaygrade: O4
+
+  Капитан\nPrefix: Capt\nPaygrade: O3
+
+  Старший Лейтенант\nPrefix: 1stLt\nPaygrade: O2
+
+  Лейтенант\nPrefix: 2ndLt\nPaygrade: O1
+
+
+  ## Enlisted
+
+  Главный Войсковой Сержант\nPrefix: SgtMaj\nPaygrade: E9E
+
+  Главный Сержант Артиллерист\nPrefix: MGySgt\nPaygrade: E9
+
+  Первый Сержант\nPrefix: 1Sgt\nPaygrade: E8E
+
+  Главный Сержант\nPrefix: MSgt\nPaygrade: E8
+
+  Сержант Артиллерист\nPrefix: GySgt\nPaygrade: E7
+
+  Штаб-Сержант\nPrefix: SSgt\nPaygrade: E6
+
+  Сержант\nPrefix: Sgt\nPaygrade: E5
+
+  Капрал\nPrefix: Cpl\nPaygrade: E4
+
+  Лэнс капрал\nPrefix: LCpl\nPaygrade: E3
+
+  Рядовой 1-го класса\nPrefix: PFC\nPaygrade: E2
+
+  Рядовой\nPrefix: PVT\nPaygrade: E1
+
+</Document>
