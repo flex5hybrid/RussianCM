@@ -228,8 +228,8 @@
           Heat: 1
       duration: 20
   - type: ForTheHive
-    baseSprite: _RMC14/Mobs/Xenonids/Runner/acider_runner.rsi
-    activeSprite: _RMC14/Mobs/Xenonids/Runner/acider_runner_primed.rsi
+    baseSprite: _RMC14/Mobs/OldXenonids/Runner/acider_runner.rsi
+    activeSprite: _RMC14/Mobs/OldXenonids/Runner/acider_runner_primed.rsi
     baseDamage:
       types:
         Heat: 1
