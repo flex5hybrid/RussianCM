@@ -1,0 +1,53 @@
+- type: entity
+  id: Tank
+  name: Колониальный танк M-22
+  description: Тяжелая боевая машина морпехов.
+  components:
+  - type: Tank
+    maxHealth: 1500
+    armor: 700
+    maxFuel: 300
+  - type: TankMovement
+    maxSpeed: 4.5
+    acceleration: 1.8
+    rotationSpeed: 1.2
+  - type: TankGun
+    maxAmmo: 25
+    cooldown: 2.0
+    projectilePrototype: TankShell
+  - type: Physics
+    bodyType: Dynamic
+    mass: 5000
+  - type: Fixtures
+    fixtures:
+      - shape: 
+          type: polygon
+          vertices:
+            - [-1, -1.5]
+            - [1, -1.5]
+            - [1, 1.5]
+            - [-1, 1.5]
+        layer:
+          - Impassable
+          - MobImpassable
+        mask:
+          - Impassable
+          - MobImpassable
+  - type: Sprite
+    sprite: Vehicles/tank.rsi
+    state: base
+
+
+- type: entity
+  id: TankShell
+  name: Танковый снаряд
+  components:
+  - type: Projectile
+    damage: 150
+    deleteOnCollide: true
+  - type: Physics
+    bodyType: Dynamic
+    mass: 5
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectile.rsi
+    state: bullet
