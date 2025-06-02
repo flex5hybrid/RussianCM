@@ -1,3 +1,4 @@
+# Tank.yaml
 - type: entity
   id: Tank
   name: Колониальный танк M-22
@@ -18,36 +19,38 @@
   - type: Physics
     bodyType: Dynamic
     mass: 5000
-  - type: Fixtures
-    fixtures:
-      - shape: 
-          type: polygon
-          vertices:
-            - [-1, -1.5]
-            - [1, -1.5]
-            - [1, 1.5]
-            - [-1, 1.5]
-        layer:
-          - Impassable
-          - MobImpassable
-        mask:
-          - Impassable
-          - MobImpassable
+    fixedRotation: false
+    linearDamping: 0.5
+    angularDamping: 0.8
+    shapes: # Используем встроенную систему форм
+      - type: circle
+        radius: 1.5
+        layer: Impassable
+        mask: Impassable
   - type: Sprite
     sprite: Vehicles/tank.rsi
     state: base
 
-
+# TankShell.yaml
 - type: entity
   id: TankShell
   name: Танковый снаряд
   components:
   - type: Projectile
-    damage: 150
+    damage:
+      damage: 150
     deleteOnCollide: true
+    ignoreShooter: true
+    lifetime: 5
   - type: Physics
     bodyType: Dynamic
     mass: 5
+    shapes:
+      - type: circle
+        radius: 0.2
+        layer: Default
+        mask: Impassable
+    linearDamping: 0.0
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectile.rsi
     state: bullet

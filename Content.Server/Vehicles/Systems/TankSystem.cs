@@ -1,14 +1,11 @@
+using System;
 using Content.Server.Vehicles.Components;
-using Robust.Server.GameObjects;
-using Robust.Shared.Physics.Systems;
+using Robust.Shared.GameStates;
 
-namespace Content.Server.Vehicles.Systems;
+namespace Content.Shared.Vehicles.Systems;
 
 public sealed class TankSystem : EntitySystem
 {
-    [Dependency] private readonly SharedPhysicsSystem _physics = default!;
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
-
     public override void Initialize()
     {
         base.Initialize();

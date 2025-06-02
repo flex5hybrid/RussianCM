@@ -10,6 +10,7 @@ using Robust.Shared.Timing;
 using Robust.Shared.Map;
 using System;
 using Robust.Shared.Serialization;
+using Content.Shared.Vehicles.Components; // Используем общий компонент состояния
 
 public sealed class TankGunSystem : EntitySystem
 {
@@ -54,21 +55,5 @@ public sealed class TankGunSystem : EntitySystem
         {
             projectileComp.Shooter = user;
         }
-    }
-}
-
-[NetworkedComponent]
-[Serializable, NetSerializable]
-public sealed class TankGunComponentState : ComponentState
-{
-    public int Ammo { get; }
-    public TimeSpan NextFire { get; }
-    public bool CanShoot { get; }
-
-    public TankGunComponentState(int ammo, TimeSpan nextFire, bool canShoot)
-    {
-        Ammo = ammo;
-        NextFire = nextFire;
-        CanShoot = canShoot;
     }
 }

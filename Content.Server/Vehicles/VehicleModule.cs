@@ -1,5 +1,6 @@
 using Content.Server.Vehicles.Components;
 using Content.Server.Vehicles.Systems;
+using Content.Shared.Vehicles.Systems;
 using Robust.Shared.GameObjects;
 
 namespace Content.Server.Vehicles;
