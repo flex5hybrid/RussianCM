@@ -36,7 +36,7 @@
     head: ClothingHeadUrbanHelmetMinuteman
     mask: ClothingMaskGasMinuteMan
     eyes: ClothingEyesHudSyndicate
-    outerClothing: ClothingOuterArmorHeavy
+    outerClothing: ClothingOuterArmorHeavyTDM
     suitstorage: WeaponLightMachineGunL6
     id: SecurityCadetIDCard
     jumpsuit: ClothingUniformJumpsuitMinuteManCamoUrban
@@ -61,7 +61,7 @@
     mask: ClothingMaskGasMinuteMan
     eyes: ClothingEyesHudSyndicate
     outerClothing: ClothingOuterVestWebMerc
-    suitstorage: WeaponLauncherChinaLake
+    suitstorage: WeaponLauncherRPG8
     id: SecurityCadetIDCard
     jumpsuit: ClothingUniformJumpsuitMinuteManCamoUrban
     back: ClothingBackpackMerc
@@ -73,9 +73,11 @@
     pocket2: CSWeaponGlock-18
   storage:
     belt:
-    - GrenadeFrag
-    - GrenadeFrag
-    - GrenadeFrag
+    - CartridgeRPG8Frag
+    - CartridgeRPG8Frag
+    - CartridgeRPG8Frag
+    - CartridgeRPG8
+    - CartridgeRPG8Smoke
     - Glock18MagazinePistol
     - Glock18MagazinePistol
     outerClothing:
@@ -217,7 +219,7 @@
     head: ClothingHeadUrbanHelmetMinuteman
     mask: ClothingMaskGasMinuteMan
     eyes: ClothingEyesHudSyndicate
-    outerClothing: ClothingOuterArmorHeavy
+    outerClothing: ClothingOuterArmorHeavyTDM
     suitstorage: WeaponLightMachineGunL6
     id: MedicalInternIDCard
     jumpsuit: ClothingUniformJumpsuitMinuteManCamoUrban
@@ -242,7 +244,7 @@
     mask: ClothingMaskGasMinuteMan
     eyes: ClothingEyesHudSyndicate
     outerClothing: ClothingOuterVestWebMerc
-    suitstorage: WeaponLauncherChinaLake
+    suitstorage: WeaponLauncherRPG8
     id: MedicalInternIDCard
     jumpsuit: ClothingUniformJumpsuitMinuteManCamoUrban
     back: ClothingBackpackMerc
@@ -254,9 +256,11 @@
     pocket2: CSWeaponGlock-18
   storage:
     belt:
-    - GrenadeFrag
-    - GrenadeFrag
-    - GrenadeFrag
+    - CartridgeRPG8Frag
+    - CartridgeRPG8Frag
+    - CartridgeRPG8Frag
+    - CartridgeRPG8
+    - CartridgeRPG8Smoke
     - Glock18MagazinePistol
     - Glock18MagazinePistol
     outerClothing:

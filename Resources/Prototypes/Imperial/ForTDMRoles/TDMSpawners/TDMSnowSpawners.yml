@@ -7,9 +7,9 @@
   parent: MarkerBase
   components:
     - type: GhostRole
-      name: tdm-snowrifleman-name
-      description: tdm-snowrifleman-desc
-      rules: tdm-snowrifleman-rules
+      name: tdm-snowrifleman_s-name
+      description: tdm-snowrifleman_s-desc
+      rules: tdm-snowrifleman_s-rules
       raffle:
         settings: short
     - type: GhostRoleMobSpawner
@@ -28,9 +28,9 @@
   parent: MarkerBase
   components:
     - type: GhostRole
-      name: tdm-snowmachinegunner-name
-      description: tdm-snowmachinegunner-desc
-      rules: tdm-snowmachinegunner-rules
+      name: tdm-snowmachinegunner_s-name
+      description: tdm-snowmachinegunner_s-desc
+      rules: tdm-snowmachinegunner_s-rules
       raffle:
         settings: short
     - type: GhostRoleMobSpawner
@@ -49,9 +49,9 @@
   parent: MarkerBase
   components:
     - type: GhostRole
-      name: tdm-snowgrenadier-name
-      description: tdm-snowgrenadier-desc
-      rules: tdm-snowgrenadier-rules
+      name: tdm-snowgrenadier_s-name
+      description: tdm-snowgrenadier_s-desc
+      rules: tdm-snowgrenadier_s-rules
       raffle:
         settings: short
     - type: GhostRoleMobSpawner
@@ -70,9 +70,9 @@
   parent: MarkerBase
   components:
     - type: GhostRole
-      name: tdm-snowmedical-name
-      description: tdm-snowmedical-desc
-      rules: tdm-snowmedical-rules
+      name: tdm-snowmedical_s-name
+      description: tdm-snowmedical_s-desc
+      rules: tdm-snowmedical_s-rules
       raffle:
         settings: short
     - type: GhostRoleMobSpawner
@@ -91,9 +91,9 @@
   parent: MarkerBase
   components:
     - type: GhostRole
-      name: tdm-snowcommander-name
-      description: tdm-snowcommander-desc
-      rules: tdm-snowcommander-rules
+      name: tdm-snowcommander_s-name
+      description: tdm-snowcommander_s-desc
+      rules: tdm-snowcommander_s-rules
       raffle:
         settings: short
     - type: GhostRoleMobSpawner
@@ -112,9 +112,9 @@
   parent: MarkerBase
   components:
     - type: GhostRole
-      name: tdm-snowsniper-name
-      description: tdm-snowsniper-desc
-      rules: tdm-snowsniper-rules
+      name: tdm-snowsniper_s-name
+      description: tdm-snowsniper_s-desc
+      rules: tdm-snowsniper_s-rules
       raffle:
         settings: short
     - type: GhostRoleMobSpawner
@@ -135,9 +135,9 @@
   parent: MarkerBase
   components:
     - type: GhostRole
-      name: tdm-snowrifleman-name
-      description: tdm-snowrifleman-desc
-      rules: tdm-snowrifleman-rules
+      name: tdm-snowrifleman_n-name
+      description: tdm-snowrifleman_n-desc
+      rules: tdm-snowrifleman_n-rules
       raffle:
         settings: short
     - type: GhostRoleMobSpawner
@@ -156,9 +156,9 @@
   parent: MarkerBase
   components:
     - type: GhostRole
-      name: tdm-snowmachinegunner-name
-      description: tdm-snowmachinegunner-desc
-      rules: tdm-snowmachinegunner-rules
+      name: tdm-snowmachinegunner_n-name
+      description: tdm-snowmachinegunner_n-desc
+      rules: tdm-snowmachinegunner_n-rules
       raffle:
         settings: short
     - type: GhostRoleMobSpawner
@@ -177,9 +177,9 @@
   parent: MarkerBase
   components:
     - type: GhostRole
-      name: tdm-snowgrenadier-name
-      description: tdm-snowgrenadier-desc
-      rules: tdm-snowgrenadier-rules
+      name: tdm-snowgrenadier_n-name
+      description: tdm-snowgrenadier_n-desc
+      rules: tdm-snowgrenadier_n-rules
       raffle:
         settings: short
     - type: GhostRoleMobSpawner
@@ -198,9 +198,9 @@
   parent: MarkerBase
   components:
     - type: GhostRole
-      name: tdm-snowmedical-name
-      description: tdm-snowmedical-desc
-      rules: tdm-snowmedical-rules
+      name: tdm-snowmedical_n-name
+      description: tdm-snowmedical_n-desc
+      rules: tdm-snowmedical_n-rules
       raffle:
         settings: short
     - type: GhostRoleMobSpawner
@@ -219,9 +219,9 @@
   parent: MarkerBase
   components:
     - type: GhostRole
-      name: tdm-snowcommander-name
-      description: tdm-snowcommander-desc
-      rules: tdm-snowcommander-rules
+      name: tdm-snowcommander_n-name
+      description: tdm-snowcommander_n-desc
+      rules: tdm-snowcommander_n-rules
       raffle:
         settings: short
     - type: GhostRoleMobSpawner
@@ -240,9 +240,9 @@
   parent: MarkerBase
   components:
     - type: GhostRole
-      name: tdm-snowsniper-name
-      description: tdm-snowsniper-desc
-      rules: tdm-snowsniper-rules
+      name: tdm-snowsniper_n-name
+      description: tdm-snowsniper_n-desc
+      rules: tdm-snowsniper_n-rules
       raffle:
         settings: short
     - type: GhostRoleMobSpawner
