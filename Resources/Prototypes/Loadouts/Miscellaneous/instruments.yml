@@ -170,6 +170,12 @@
 ### Imperial
 - type: loadout
   id: Supersynth
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 72000 #20 hrs
   storage:
     back:
     - SuperSynthesizerInstrument
