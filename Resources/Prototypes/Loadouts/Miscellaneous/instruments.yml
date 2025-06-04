@@ -174,7 +174,7 @@
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
-      role: JobPassenger
+      role: JobMusician
       time: 7200
   storage:
     back:
