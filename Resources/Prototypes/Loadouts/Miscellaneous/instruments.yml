@@ -166,3 +166,10 @@
   storage:
     back:
     - BagpipeInstrument
+
+### Imperial
+- type: loadout
+  id: Supersynth
+  storage:
+    back:
+    - SuperSynthesizerInstrument
