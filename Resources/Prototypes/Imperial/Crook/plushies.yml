@@ -194,7 +194,7 @@
   id: PlushieSavir
   name: Савир Мёрфи
   suffix: Crook, COMMUNITY, TOY
-  description: Уже длительное время чинит боргов, но так и не починил свои социальные навыки...
+  description: Скользкий парень.
   components:
   - type: Sprite
     sprite: Imperial/Crook/Plushie/savirmurphy.rsi
