@@ -7,13 +7,9 @@ ent-RMCDeployerSentry = Система развертывания турели
 ent-RMCDeployerSentry-desc = Контейнер для автоматического развертывания оборонительной турели.
 
 ### Сообщения ###
-rmc-sentry-deploy = Развертывание оборонительной турели...
-rmc-sentry-not-emergency = Предупреждение: Развертывание вне режима ЧС!
-petting-success-generic = *гул работы механизмов*
 petting-failure-generic = *отказ системы*
 action-sentry-deploy = Вы активируете систему развертывания
 action-sentry-fail = Невозможно развернуть здесь
 
 ### Теги ###
-ent-UNMCTurret-tag = Турель ОН
 ent-SentryDeployer-tag = Развертыватель

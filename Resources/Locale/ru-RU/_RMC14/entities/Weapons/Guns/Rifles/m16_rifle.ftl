@@ -17,19 +17,7 @@ entity-bulletrifle556x45mm-name = Пуля (5.56×45мм)
 tag-rmcmagazineriflem16-name = Магазин M16
 tag-rmccartridgeriflem16-name = Патрон 5.56×45мм
 
-### Слоты ###
-slot-gun-magazine-name = Магазин
-slot-rmc-aslot-barrel-name = Ствол
-slot-rmc-aslot-rail-name = Направляющая
-slot-rmc-aslot-stock-name = Приклад
-slot-rmc-aslot-underbarrel-name = Подствольник
-
-### Режимы стрельбы ###
-fire-mode-semiauto = Полуавтомат
-fire-mode-burst = Очередь (3 выстр.)
-
 ### Типы боеприпасов ###
-ammo-type-556x45 = 5.56×45мм NATO
 weapon-class-assault-rifle = Штурмовая винтовка
 
 ### Интерфейс ###

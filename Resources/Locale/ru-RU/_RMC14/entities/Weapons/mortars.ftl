@@ -23,7 +23,6 @@ ent-RMCMortarCamera = Парашютная камера
 ent-RMCMortarCamera-desc = Камера наблюдения с парашютной системой.
 
 ### Интерфейс ###
-rmc-mortar-camera-title = Камера миномета
 action-mortar-deploy = Установить миномет
 action-mortar-pack = Свернуть миномет
 mortar-status-ready = Готов к стрельбе

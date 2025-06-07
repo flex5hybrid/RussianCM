@@ -10,21 +10,13 @@ entity-cmbulletpistolm77ap-name = Пуля (9мм AP)
 entity-cmcartridgepistolm77ap-name = Патрон (9мм AP)
 
 ### Теги ###
-tag-sidearm-name = Второстепенное оружие
 tag-rmcweaponpistolm77-name = Пистолет M77
 tag-cmmagazinepistolm77ap-name = Магазин M77 AP
 tag-cmcartridgepistol9mmap-name = Патрон 9мм AP
 
 ### Слоты и компоненты ###
-slot-gun-magazine-name = Магазин
-slot-rmc-aslot-barrel-name = Ствол
-slot-rmc-aslot-rail-name = Направляющая
-slot-rmc-aslot-underbarrel-name = Подствольник
 
 ### Режимы стрельбы ###
-fire-mode-semiauto = Полуавтомат
-fire-mode-burst = Очередь (3 выстр.)
 
 ### Типы урона ###
 damage-type-piercing = Бронебойный
-damage-type-blunt = Ударный

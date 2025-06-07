@@ -44,21 +44,7 @@ tag-rmcmagazineriflem54cincendiary-name = Магазин M54C Incendiary
 tag-rmcmagazineriflem54cheap-name = Магазин M54C HEAP
 tag-cmmagazineriflem54cext-name = Удлин. магазин M54C
 
-### Слоты ###
-slot-gun-magazine-name = Магазин
-slot-rmc-aslot-barrel-name = Ствол
-slot-rmc-aslot-rail-name = Направляющая
-slot-rmc-aslot-stock-name = Приклад
-slot-rmc-aslot-underbarrel-name = Подствольник
-
-### Режимы стрельбы ###
-fire-mode-semiauto = Полуавтомат
-fire-mode-burst = Очередь
-fire-mode-fullauto = Автомат
-
 ### Типы боеприпасов ###
-ammo-type-10x24 = 10×24мм (безгильзовый)
-ammo-effect-ap = Бронебойный
 ammo-effect-incendiary = Зажигательный
 ammo-effect-heap = Бронебойно-фугасный
 
@@ -67,10 +53,3 @@ ui-weapon-m54c-description = Основное оружие морской пех
 ui-weapon-m54c-caliber = Калибр: 10×24мм
 ui-weapon-m54c-capacity = Ёмкость: 40 патронов
 ui-weapon-m54c-ext-capacity = Ёмкость: 60 патронов (удлин.)
-
-### Камуфляжи ###
-camouflage-jungle = Джунгли
-camouflage-desert = Пустыня
-camouflage-snow = Снег
-camouflage-classic = Классический
-camouflage-urban = Городской

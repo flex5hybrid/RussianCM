@@ -19,26 +19,11 @@ tag-cmmagazineriflem4spr-name = Магазин M4SPR
 tag-cmmagazineriflem4sprap-name = Магазин M4SPR AP
 tag-cmmagazineriflem4sprext-name = Удлин. магазин M4SPR
 
-### Слоты ###
-slot-gun-magazine-name = Магазин
-slot-rmc-aslot-barrel-name = Ствол
-slot-rmc-aslot-rail-name = Направляющая
-slot-rmc-aslot-underbarrel-name = Подствольник
-
 ### Режимы стрельбы ###
-fire-mode-semiauto = Полуавтомат
 
 ### Типы боеприпасов ###
 ammo-type-10x24 = 10×24мм
-ammo-type-10x24-ap = 10×24мм AP
 weapon-class-dmr = Снайперская винтовка
-
-### Камуфляжи ###
-camouflage-jungle = Джунгли
-camouflage-desert = Пустыня
-camouflage-snow = Снег
-camouflage-classic = Классический
-camouflage-urban = Городской
 
 ### Интерфейс ###
 ui-weapon-m4spr-description = Буллпап-винтовка для точной стрельбы

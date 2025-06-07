@@ -27,15 +27,9 @@ tag-rmccartridgeriflel83a2-name = Патрон 5.56×45мм
 tag-rmccartridgeriflel83a2ap-name = Патрон 5.56×45мм AP
 
 ### Слоты ###
-slot-gun-magazine-name = Магазин
-slot-rmc-aslot-barrel-name = Ствол
-slot-rmc-aslot-rail-name = Направляющая
 slot-rmc-aslot-stock-name = Приклад
-slot-rmc-aslot-underbarrel-name = Подствольник
 
 ### Режимы стрельбы ###
-fire-mode-semiauto = Полуавтомат
-fire-mode-burst = Очередь
 
 ### Типы боеприпасов ###
 ammo-type-556x45 = 5.56×45мм

@@ -52,5 +52,4 @@ ent-RMCBoxBulletsSMGAPEmpty = Ящик 10x20мм AP (пустой)
 ammobox-status = Заполненность: { $level }%
 ammobox-attach = *пристёгивает ящик на спину*
 ammobox-detach = *отстёгивает ящик*
-ammobox-refill = Ящик перезаряжен
 ammobox-xeno-warning = Ксеноморфы не могут использовать ящики с патронами

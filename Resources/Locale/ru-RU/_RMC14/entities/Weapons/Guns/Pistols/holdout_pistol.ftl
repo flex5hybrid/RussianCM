@@ -11,11 +11,6 @@ entity-cmbulletpistol22mm-name = Пуля (.22)
 entity-cmcartridgepistol22mm-name = Патрон (.22)
 
 ### Слоты ###
-slot-gun-magazine-name = Магазин
-slot-rmc-aslot-barrel-name = Ствол
-slot-rmc-aslot-rail-name = Направляющая
-slot-rmc-aslot-underbarrel-name = Подствольник
 
 ### Теги ###
-tag-holdout-name = Скрытый
 tag-rmcmagazinepistolholdout-name = Магазин карманного пистолета

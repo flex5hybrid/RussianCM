@@ -16,6 +16,7 @@ rmc-bullet-rifle-762x39mm-description = Наносит 55 проникающег
 
 ### Характеристики
 mar50-lmg-stats = {
+$section ->
     *[weapon]
         Тип: Ручной пулемёт
         Калибр: 7.62×39 мм

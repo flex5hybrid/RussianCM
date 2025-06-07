@@ -4,6 +4,7 @@ rmc-weapon-taser-description = Продвинутое электрошоково
 
 ### Параметры
 rmc-weapon-taser-stats = {
+$section ->
     *[charge]
         Емкость батареи: 10000 единиц
         Расход на выстрел: 625 единиц

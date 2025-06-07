@@ -12,9 +12,6 @@ tag-rmcweaponpistold18-name = Пистолет D18
 tag-rmcmagazinepistold18-name = Магазин D18
 
 ### Общие элементы ###
-slot-gun-magazine-name = Магазин
-slot-rmc-aslot-barrel-name = Ствол
-slot-rmc-aslot-rail-name = Направляющая
 
 ### Калибры ###
 ammo-9mm-name = 9мм

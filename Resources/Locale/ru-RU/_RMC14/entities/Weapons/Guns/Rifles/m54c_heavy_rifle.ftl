@@ -25,18 +25,9 @@ tag-weaponriflem54ce2-name = M54CE2
 tag-cmmagazineriflem54ce2-name = Магазин M54CE2
 tag-cmcartridgerifle10x24mmht-name = Патрон 10×24мм HT
 
-### Слоты ###
-slot-gun-magazine-name = Магазин
-slot-rmc-aslot-barrel-name = Ствол
-slot-rmc-aslot-rail-name = Направляющая
-slot-rmc-aslot-underbarrel-name = Подствольник
-
 ### Режимы стрельбы ###
-fire-mode-semiauto = Полуавтомат
-fire-mode-burst = Очередь (5 выстр.)
 
 ### Типы боеприпасов ###
-ammo-type-10x24 = 10×24мм
 ammo-type-10x24-ht = 10×24мм HT (лазерное наведение)
 ammo-type-10x24-ap = 10×24мм AP (бронебойный)
 weapon-class-lmg = Ручной пулемёт

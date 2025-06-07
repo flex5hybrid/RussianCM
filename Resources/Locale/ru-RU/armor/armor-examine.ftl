@@ -6,7 +6,6 @@ armor-coefficient-value = - [color=yellow]{ $type }[/color] урон снижа�
 armor-reduction-value = - [color=yellow]{ $type }[/color] урон снижается на [color=lightblue]{ $value }[/color].
 armor-damage-type-blunt = Ударный
 armor-damage-type-slash = Режущий
-armor-damage-type-piercing = Колющий
 armor-damage-type-heat = Высокотемпературный
 armor-damage-type-radiation = Радиационный
 armor-damage-type-caustic = Кислотный

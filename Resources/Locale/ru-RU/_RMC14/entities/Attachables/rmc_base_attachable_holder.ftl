@@ -3,7 +3,7 @@ ent-RMCBaseAttachableHolder = Базовый держатель модулей
 ent-RMCBaseAttachableHolder-desc = Абстрактный базовый класс для систем крепления оружейных модулей.
 
 ### Интерфейс ###
-rmc-verb-strip-attachables = Снять модули
+
 attachment-strip-title = Управление модулями
 attachment-choose-slot-title = Выбор слота
 

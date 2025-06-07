@@ -3,8 +3,6 @@ entity-rmcweaponpistolcod50winterwyvern-name = Винтажный D50 Winter Wyv
 entity-rmcweaponpistolcod50winterwyvern-description = Массивный пистолет калибра .50 с мощной отдачей. Изготовлен вручную из лучшей черной стали с рукоятью из слоновой кости, скрепленной золотыми заклепками. Очень элегантен.
 
 ### Режимы стрельбы ###
-fire-mode-semiauto = Полуавтомат
-fire-mode-burst = Очередь
 
 ### Магазины и патроны ###
 entity-rmcmagazinepistold50winterwyvernhi-name = Магазин D50 Winter Wyvern HI (.50AE)
@@ -17,14 +15,6 @@ entity-rmcbulletpistolhi50ae-name = Пуля (HI50AE)
 entity-rmcbulletpistolhiap50ae-name = Пуля (HIAP50AE)
 
 ### Слоты оружия ###
-slot-gun-magazine-name = Магазин
-slot-rmc-aslot-barrel-name = Ствол
-slot-rmc-aslot-rail-name = Направляющая
-slot-rmc-aslot-underbarrel-name = Подствольник
-
-### Типы урона ###
-damage-type-piercing = Пробивающий
-damage-type-blunt = Ударный
 
 ### Компоненты ###
 component-armor-piercing-name = Бронепробитие

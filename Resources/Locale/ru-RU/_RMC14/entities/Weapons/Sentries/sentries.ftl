@@ -38,7 +38,6 @@ sentry-status-normal = Статус: Нормальный
 sentry-status-damaged = Статус: Поврежден
 sentry-target-lost = Цель утеряна
 sentry-target-acquired = Цель захвачена
-sentry-deploying = Развертывание...
 sentry-undeploying = Свертывание...
 
 ### Интерфейс ###
@@ -48,7 +47,6 @@ sentry-ui-range = Дальность: { $range }м
 sentry-ui-mode = Режим: { $mode }
 
 ### Действия ###
-action-sentry-deploy = Развернуть турель
 action-sentry-undeploy = Свернуть турель
 action-sentry-upgrade = Модернизировать
 action-sentry-repair = Ремонтировать

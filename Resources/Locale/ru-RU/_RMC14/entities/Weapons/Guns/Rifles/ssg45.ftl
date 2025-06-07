@@ -18,30 +18,13 @@ ent-RMCMagazineRifleSSG45HEAP-desc = Магазин с бронебойно-ос
 ent-RMCMagazineRifleSSG45Incend = Магазин SSG45 с зажигательными (7x62мм)
 ent-RMCMagazineRifleSSG45Incend-desc = Магазин с зажигательными патронами (30 патронов 7x62мм).
 
-### Слоты и компоненты ###
-gun-magazine-name = Магазин
-rmc-aslot-barrel-name = Дульная насадка
-rmc-aslot-rail-name = Рельса
-rmc-aslot-stock-name = Приклад
-rmc-aslot-underbarrel-name = Подствольник
-
-### Режимы стрельбы ###
-gun-mode-SemiAuto = Одиночный
-gun-mode-Burst = Очередь (3 выстр.)
-gun-mode-FullAuto = Автоматический
-
 ### Обвесы ###
 rmc-attachment-barrel-charger = Дульный ускоритель
 rmc-attachment-extended-barrel = Удлинённый ствол
-rmc-attachment-suppressor = Глушитель
-rmc-attachment-bayonet = Штык-нож
 rmc-attachment-ssg45-stock = Стандартный приклад SSG45
-rmc-attachment-mini-flamethrower = Компактный огнемёт
 
 ### Действия ###
-gun-reload-insert = Магазин вставлен
-gun-reload-eject = Магазин извлечён
-gun-fire-mode-select = Режим изменён на { $mode }
+
 attachment-locked-stock = Приклад зафиксирован и не может быть заменён
 
 ### Технические термины ###

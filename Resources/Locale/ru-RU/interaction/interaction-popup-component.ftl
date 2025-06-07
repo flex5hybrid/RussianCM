@@ -2,8 +2,6 @@
 
 
 ## Petting animals
-
-petting-success-generic = Вы гладите { $target } по голове.
 petting-success-soft-floofy = Вы гладите { $target } по { POSS-ADJ($target) } мягкой пушистой голове.
 petting-success-bingus = Вы гладите { $target } по { POSS-ADJ($target) } маленькой морщинистой голове.
 petting-success-bird = Вы гладите { $target } по { POSS-ADJ($target) } милой пернатой голове.
@@ -32,7 +30,6 @@ petting-success-slimes = Вы гладите { $target } по { POSS-ADJ($target
 petting-success-snake = Вы гладите { $target } по { POSS-ADJ($target) } большой чешуйчатой голове.
 petting-success-monkey = Вы гладите { $target } по { POSS-ADJ($target) } озорной маленькой голове.
 petting-success-nymph = Вы гладите { $target } по { POSS-ADJ($target) } маленькой деревянной голове.
-petting-failure-generic = Вы тянетесь погладить { $target }, но { SUBJECT($target) } настороженно уклоняется от вас.
 petting-failure-bat = Вы тянетесь погладить { $target }, но { OBJECT($target) } очень трудно поймать!
 petting-failure-carp = Вы тянетесь погладить { $target }, но { POSS-ADJ($target) } острые зубки заставляют вас передумать.
 petting-failure-corrupted-corgi = Вы тянетесь погладить { $target }, но решаете, что лучше не надо.

@@ -41,19 +41,8 @@ tag-rmcspeedloadermatebahe-name = Спидлоадер HE
 
 ### Слоты и компоненты ###
 slot-revolver-ammo-name = Барабан
-slot-rmc-aslot-barrel-name = Ствол
-slot-rmc-bslot-barrel-name = Модуль ствола
-slot-rmc-aslot-rail-name = Направляющая
 
 ### Типы боеприпасов ###
 ammo-type-454-casull = .454 Casull
-ammo-effect-high-impact = High Impact
 ammo-effect-hiap = Бронебойный (HIAP)
 ammo-effect-he = Разрывной (HE)
-
-### Камуфляжи ###
-camouflage-jungle = Джунгли
-camouflage-desert = Пустыня
-camouflage-snow = Снег
-camouflage-classic = Классический
-camouflage-urban = Городской

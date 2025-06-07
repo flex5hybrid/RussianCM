@@ -16,27 +16,19 @@ ent-RMCCartridgeRifleMAR40-desc = Винтовочный патрон калиб
 ### Слоты и компоненты ###
 gun-magazine-name = Магазин
 rmc-aslot-barrel-name = Дульная насадка
-rmc-aslot-rail-name = Рельса
-rmc-aslot-underbarrel-name = Подствольник
+
 
 ### Режимы стрельбы ###
-gun-mode-SemiAuto = Одиночный
+
 gun-mode-Burst = Очередь (4 выстр.)
 gun-mode-FullAuto = Автоматический
 
 ### Обвесы ###
-rmc-attachment-extended-barrel = Удлинённый ствол
-rmc-attachment-suppressor = Глушитель
 rmc-attachment-recoil-compensator = Компенсатор отдачи
-rmc-attachment-bayonet = Штык-нож
 rmc-attachment-bipod = Сошки
 rmc-attachment-underbarrel-shotgun = Подствольный дробовик
-rmc-attachment-gyro-stabilizer = Гиростабилизатор
 rmc-attachment-flamer = Огнемёт
 rmc-attachment-extinguisher = Огнетушитель
 
 ### Действия ###
-gun-reload-insert = Магазин вставлен
-gun-reload-eject = Магазин извлечён
-gun-fire-mode-select = Режим изменён на { $mode }
 attachment-random-spawn = На оружии уже установлен { $attachment }

@@ -5,22 +5,16 @@ ent-RMCBaseWeaponShotgun-desc = Базовый класс для всех дро
 ent-RMCBaseBreechloader = Дробовик с переломным механизмом
 ent-RMCBaseBreechloader-desc = Базовый класс для дробовиков с переломным механизмом заряжания.
 
-### Боеприпасы ###
-ent-CMShellShotgunBase = Горсть дроби
-ent-CMShellShotgunBase-desc = Несколько патронов для быстрого перезаряжания дробовика.
-
 ### Общие характеристики ###
-shotgun-features = 
+shotgun-features =
     • Высокая остановочная сила
     • Низкая скорость перезарядки
     • Сильная отдача
 
 ### Слоты ###
-gun-magazine-name = Магазин
 breech-load-slot = Патронник
 
 ### Действия ###
-gun-reload-insert = Патрон заряжен
 gun-breech-open = Затвор открыт
 gun-breech-close = Затвор закрыт
 gun-wield-delay = Готовность к стрельбе: 0.6с

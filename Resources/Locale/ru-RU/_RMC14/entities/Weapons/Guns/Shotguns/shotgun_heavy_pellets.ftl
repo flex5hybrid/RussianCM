@@ -15,7 +15,7 @@ ent-RMCPelletHeavyShotgunIncendiaryBuckshot = "Дыхание дракона"
 ent-RMCPelletHeavyShotgunIncendiaryBuckshot-desc = Зажигательные дробинки (60 урона + поджиг). 3 дробины, разлет 20°.
 
 ### Характеристики снарядов ###
-heavy-pellet-stats = 
+heavy-pellet-stats =
     • Дробь: 75 урона (4 дробины)
     • Пуля: 90 урона + оглушение
     • Травматические: 100 урона выносливости
@@ -31,5 +31,4 @@ heavy-pellet-effects =
 
 ### Технические параметры ###
 pellet-spread = Разлет: { $degrees }°
-pellet-count = Количество элементов: { $count }
 pellet-armor-piercing = Бронепробитие: { $amount }

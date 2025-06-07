@@ -8,20 +8,11 @@ entity-rmccartridgepistol45acp-name = Патрон (.45 ACP)
 entity-rmcbulletpistol45acp-name = Пуля (.45 ACP)
 
 ### Теги ###
-tag-sidearm-name = Второстепенное оружие
 tag-rmcsmartpistol-name = Умный пистолет
 tag-rmcmagazinepistolsu6-name = Магазин SU-6
 tag-rmccartridgepistol45acp-name = Патрон .45 ACP
 
-### Слоты ###
-slot-gun-magazine-name = Магазин
-slot-rmc-aslot-barrel-name = Ствол
-slot-rmc-aslot-rail-name = Направляющая
-slot-rmc-aslot-underbarrel-name = Подствольник
-
 ### Режимы стрельбы ###
-fire-mode-semiauto = Полуавтомат
-fire-mode-burst = Очередь (3 выстр.)
 
 ### Специальные термины ###
 iff-system-name = Система IFF

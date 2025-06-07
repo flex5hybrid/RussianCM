@@ -27,6 +27,3 @@ ent-RMCDropshipAttachmentAmmoRocketNapalm = Ракета AGM-99 "Напалм"
 ## Эффекты ##
 ent-RMCEffectExplosionParticle = Эффект взрыва
     .desc = Визуальный эффект взрыва для ракетных боеприпасов.
-
-ent-RMCDropshipAttachmentAmmoRocketNapalm = Ракета AGM-99 "Напалм"
-ent-RMCDropshipAttachmentAmmoRocketNapalm-desc = Зажигательный бое

@@ -1,6 +1,7 @@
 ### Шрапнель
 cm-projectile-shrapnel-name = Осколочный снаряд
 cm-projectile-shrapnel-description = {
+$section ->
     *[damage]
         Наносит { 25 } проникающего урона
         Пробитие брони: { 20 }%

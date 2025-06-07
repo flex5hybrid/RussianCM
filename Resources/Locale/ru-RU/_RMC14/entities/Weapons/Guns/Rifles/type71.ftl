@@ -25,27 +25,12 @@ ent-RMCCartridgeRifle545x39mmAP-desc = Бронебойный патрон 5.45x
 ent-RMCCartridgeRifle545x39mmHEAP = Патрон (5.45x39мм БОПП)
 ent-RMCCartridgeRifle545x39mmHEAP-desc = Бронебойно-осколочный патрон 5.45x39мм.
 
-### Слоты и компоненты ###
-gun-magazine-name = Магазин
-rmc-aslot-barrel-name = Дульная насадка
-rmc-aslot-rail-name = Рельса
-rmc-aslot-stock-name = Приклад
-rmc-aslot-underbarrel-name = Подствольник
-
-### Режимы стрельбы ###
-gun-mode-SemiAuto = Одиночный
-gun-mode-Burst = Очередь (4 выстр.)
-gun-mode-FullAuto = Автоматический
-
 ### Обвесы ###
 rmc-attachment-type71-stock = Стандартный приклад Type 71
 rmc-attachment-mini-flamethrower = Компактный огнемёт
 rmc-attachment-burst-fire = Узел стрельбы очередями
 
 ### Действия ###
-gun-reload-insert = Магазин вставлен
-gun-reload-eject = Магазин извлечён
-gun-fire-mode-select = Режим изменён на { $mode }
 attachment-locked-underbarrel = Подствольный модуль заблокирован
 
 ### Технические термины ###

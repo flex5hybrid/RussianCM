@@ -12,17 +12,9 @@ entity-rmccartridgerevolverrsh9-name = Патрон (9x39мм)
 entity-rmcbulletrsh9-name = Пуля (9x39мм)
 
 ### Теги ###
-tag-sidearm-name = Второстепенное оружие
-tag-rmcrevolver-name = Револьвер
 tag-rmcweaponrevolverrsh9-name = RSh-9
 tag-rmcspeedloaderrsh9-name = Спидлоадер RSh-9
 tag-rmccartridgerevolverrsh9-name = Патрон 9x39мм
-
-### Слоты ###
-slot-revolver-ammo-name = Барабан
-slot-rmc-aslot-barrel-name = Ствол
-slot-rmc-aslot-rail-name = Направляющая
-slot-rmc-aslot-underbarrel-name = Подствольник
 
 ### Характеристики ###
 ammo-type-9x39 = 9x39мм (бронебойные)

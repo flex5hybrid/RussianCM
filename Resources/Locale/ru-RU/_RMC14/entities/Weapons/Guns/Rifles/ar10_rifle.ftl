@@ -13,15 +13,7 @@ entity-bulletriflear10-name = Пуля (7.62×51mm)
 tag-rmcmagazineriflear10-name = Магазин AR10
 tag-rmccartridgeriflear10-name = Патрон 7.62×51mm
 
-### Слоты ###
-slot-gun-magazine-name = Магазин
-slot-rmc-aslot-barrel-name = Ствол
-slot-rmc-aslot-rail-name = Направляющая
-slot-rmc-aslot-underbarrel-name = Подствольник
-
 ### Режимы стрельбы ###
-fire-mode-semiauto = Полуавтомат
-fire-mode-burst = Очередь (3 выстр.)
 
 ### Типы боеприпасов ###
 ammo-type-762x51 = 7.62×51mm NATO

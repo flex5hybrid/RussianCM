@@ -13,7 +13,6 @@ entity-cmbulletpistol9mm-name = Пуля (9мм)
 entity-cmcartridgepistol9mm-name = Патрон (9мм)
 
 ### Теги ###
-tag-sidearm-name = Второстепенное оружие
 tag-cmweaponpistolm1984-name = Пистолет M1984
 tag-cmmagazinepistolm1984-name = Магазин M1984
 tag-rmcmagazinepistolm1984ap-name = Магазин M1984 AP
