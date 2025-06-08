@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Numerics;
 using Content.Server.Vehicles.Components;
 using Content.Shared.Vehicles.Components;
@@ -99,11 +100,8 @@ public sealed class TankMovementSystem : EntitySystem
                 continue;
 
             // Рассчитываем вектор движения на основе активных направлений
-            var moveDir = Vector2.Zero;
-            foreach (var direction in movement.ActiveDirections)
-            {
-                moveDir += direction.ToVec();
-            }
+            var moveDir =
+                movement.ActiveDirections.Aggregate(Vector2.Zero, (current, direction) => current + direction.ToVec());
 
             // Нормализуем вектор для диагонального движения
             if (moveDir.LengthSquared() > 1.0f)
