@@ -1,8 +1,8 @@
 - type: species
   id: Dwarf
   name: species-name-dwarf
-  roundStart: true
-  prototype: MobDwarf
+  roundStart: false
+  prototype: CMMobDwarf
   sprites: MobHumanSprites
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobDwarfDummy

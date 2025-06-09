@@ -10,7 +10,10 @@ public sealed class VendingMachineSystem : SharedVendingMachineSystem
 {
     [Dependency] private readonly AnimationPlayerSystem _animationPlayer = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearanceSystem = default!;
+<<<<<<< HEAD
     [Dependency] private readonly SpriteSystem _sprite = default!;
+=======
+>>>>>>> master
 
     public override void Initialize()
     {
@@ -134,7 +137,11 @@ public sealed class VendingMachineSystem : SharedVendingMachineSystem
 
             case VendingMachineVisualState.Eject:
                 PlayAnimation(uid, VendingMachineVisualLayers.BaseUnshaded, component.EjectState, (float)component.EjectDelay.TotalSeconds, sprite);
+<<<<<<< HEAD
                 SetLayerState(VendingMachineVisualLayers.Screen, component.ScreenState, (uid, sprite));
+=======
+                SetLayerState(VendingMachineVisualLayers.Screen, component.ScreenState, sprite);
+>>>>>>> master
                 break;
 
             case VendingMachineVisualState.Broken:

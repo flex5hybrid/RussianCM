@@ -97,7 +97,7 @@
       DoorStatus: false
   - type: InteractionPopup
     interactSuccessString: shutter-rattle
-    messagePerceivedByOthers: shutter-rattle
+    messagePerceivedByOthers: rmc-window-knock-others
     interactSuccessSound:
       collection: FenceRattle
   - type: BlockWeather

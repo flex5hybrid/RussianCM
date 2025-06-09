@@ -1,0 +1,87 @@
+- type: entity
+  parent: BaseItem
+  id: CMLightBulbBase
+  abstract: true
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmash
+  - type: Sprite
+    sprite: _RMC14/Objects/Power/light_bulb.rsi
+    layers:
+      - map: [ enum.LightBulbVisualLayers.Base ]
+        state: normal
+  - type: LightBulb
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 5
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 1.25
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+          params:
+            volume: -8
+      - !type:DoActsBehavior
+        acts: [ "Breakage" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+          params:
+            volume: -8
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Appearance
+  - type: Tag
+    tags:
+    - Trash
+  - type: PhysicalComposition
+    materialComposition:
+      CMGlass: 3
+  - type: SpaceGarbage
+
+- type: entity
+  parent: CMLightBulbBase
+  id: CMLightBulb
+  name: light bulb
+  description: A replacement light bulb.
+  components:
+  - type: LightBulb
+    bulb: Bulb
+    color: "#FFD1A3" # 4000K color temp
+    lightEnergy: 1.0
+    lightRadius: 6
+    lightSoftness: 1.1
+
+- type: entity
+  parent: CMLightBulbBase
+  id: CMLightBulbBroken
+  name: light bulb
+  description: A replacement light bulb.
+  suffix: Broken
+  components:
+  - type: LightBulb
+    startingState: Broken
+    bulb: Bulb

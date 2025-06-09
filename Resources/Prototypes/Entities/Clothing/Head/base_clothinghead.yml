@@ -10,7 +10,7 @@
     state: icon
   - type: Item
     size: Small
-    storedRotation: -90
+    storedRotation: 0 # RMC14
   - type: Food
     requiresSpecialDigestion: true
   - type: SolutionContainerManager

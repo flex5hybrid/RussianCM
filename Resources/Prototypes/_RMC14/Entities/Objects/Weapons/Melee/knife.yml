@@ -1,0 +1,166 @@
+- type: entity
+  abstract: true
+  id: RMCBaseMeleeWeapon
+  components:
+  - type: MeleeDamageMultiplier
+    whitelist:
+      components:
+      - Xeno
+  - type: MeleeWeapon
+    angle: 0
+
+- type: entity
+  parent: [ RMCBaseMeleeWeapon, BaseKnife, RMCAttachableBase ]
+  id: RMCM5Bayonet # bayonet
+  name: "M5 'Night Raider' bayonet"
+  description: The standard-issue bayonet of the Marines. You can slide this knife into your boots. # TODO RMC14 , or attach it to the end of a rifle.
+  components:
+  - type: Clothing
+    slots:
+    - mask
+    - pocket
+    - suitstorage
+    sprite: _RMC14/Objects/Weapons/Melee/m5_bayonet.rsi
+  - type: Tag
+    tags:
+    - Knife
+    - RMCAttachmentBarrel
+    - RMCM5Bayonet
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Melee/m5_bayonet.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 1
+    damage:
+      types:
+        Slash: 25
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 18
+  - type: Item
+    size: Small
+    sprite: _RMC14/Objects/Weapons/Melee/m5_bayonet.rsi
+  - type: DisarmMalus
+    malus: 0.225
+  - type: UsableWhileDevoured
+    damage:
+      types:
+        Slash: 10
+  - type: AttachableVisuals
+    rsi: _RMC14/Objects/Weapons/Guns/Attachments/barrel.rsi
+    prefix: bayonet
+  - type: AttachableWeaponMeleeMods
+    modifiers:
+    - bonusDamage:
+        types:
+          Slash: 20
+  - type: AttachableWeaponRangedMods
+    modifiers:
+    - conditions:
+        unwieldedOnly: true
+      accuracyAddMult: -0.05
+  - type: AttachablePrying
+  - type: DeleteOnExplosion
+
+- type: entity
+  name: M11 throwing knife
+  parent: [ RMCBaseMeleeWeapon, BaseKnife]
+  id: CMM11Knife
+  description: A military knife designed to be thrown at the enemy.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Melee/m11_knife.rsi
+    state: icon
+  - type: Clothing
+    slots:
+    - mask
+    - pocket
+    sprite: _RMC14/Objects/Weapons/Melee/m5_bayonet.rsi
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 5
+  - type: LandAtCursor
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 50
+  - type: UsableWhileDevoured
+    damage:
+      types:
+        Slash: 3
+  - type: Item
+    size: Small
+    sprite: _RMC14/Objects/Weapons/Melee/m11_knife.rsi
+  - type: DisarmMalus
+    malus: 0.225
+  - type: Tag
+    tags:
+    - ThrowingKnife
+  - type: DeleteOnExplosion
+
+- type: entity
+  parent: [ RMCBaseMeleeWeapon, BaseKnife]
+  id: CMM2132Machete
+  name: M2132 machete
+  description: Latest issue of the Marine Machete.
+  components:
+  - type: Clothing
+    slots:
+    - belt
+    - suitstorage
+  - type: Tag
+    tags:
+    - Machete
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Melee/machete.rsi
+    state: icon
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 35
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 4
+  - type: UsableWhileDevoured
+    damage:
+      types:
+        Slash: 14
+  - type: Item
+    size: Large
+    sprite: _RMC14/Objects/Weapons/Melee/machete.rsi
+  - type: DisarmMalus
+    malus: 0.225
+  - type: Tool
+    qualities:
+    - Prying
+  - type: Prying
+    pryPowered: false
+    speedModifier: 0.8
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: DeleteOnExplosion
+
+- type: entity
+  parent: CMM2132Machete
+  id: RMCCeremonialSword
+  name: ceremonial sabre
+  description: A fancy ceremonial sabre passed down from generation to generation. Despite this, it has been very well cared for, and is in top condition.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Melee/co_sabre.rsi
+  - type: Item
+    sprite: _RMC14/Objects/Weapons/Melee/co_sabre.rsi
+    size: Large
+  - type: Tag
+    tags:
+    - RMCCeremonialSword
+
+- type: Tag
+  id: RMCCeremonialSword
+
+- type: Tag
+  id: RMCM5Bayonet

@@ -1,4 +1,5 @@
 - type: entity
+  parent: CMCorrodible
   id: BaseStructure
   abstract: true
   placement:

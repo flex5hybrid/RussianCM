@@ -12,6 +12,7 @@ using Content.IntegrationTests.Tests;
 using Content.IntegrationTests.Tests.Destructible;
 using Content.IntegrationTests.Tests.DeviceNetwork;
 using Content.IntegrationTests.Tests.Interaction.Click;
+using Content.Shared._RMC14.Prototypes;
 using Robust.Client;
 using Robust.Server;
 using Robust.Shared.Configuration;
@@ -19,7 +20,6 @@ using Robust.Shared.ContentPack;
 using Robust.Shared.GameObjects;
 using Robust.Shared.IoC;
 using Robust.Shared.Log;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.UnitTesting;
 
@@ -437,6 +437,7 @@ we are just going to end this here to save a lot of time. This is the exception 
         _contentAssemblies.UnionWith(extraAssemblies);
 
         _testPrototypes.Clear();
+        CMPrototypeExtensions.FilterCM = false;
         DiscoverTestPrototypes(typeof(PoolManager).Assembly);
         foreach (var assembly in extraAssemblies)
         {

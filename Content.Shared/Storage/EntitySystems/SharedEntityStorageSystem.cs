@@ -1,6 +1,8 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Numerics;
+using Content.Shared._RMC14.Xenonids;
+using Content.Shared.ActionBlocker;
 using Content.Shared.Body.Components;
 using Content.Shared.Destructible;
 using Content.Shared.Foldable;
@@ -15,7 +17,6 @@ using Content.Shared.Tools.Systems;
 using Content.Shared.Verbs;
 using Content.Shared.Wall;
 using Content.Shared.Whitelist;
-using Content.Shared.ActionBlocker;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
@@ -181,7 +182,8 @@ public abstract class SharedEntityStorageSystem : EntitySystem
 
         if (component.Open)
         {
-            TryCloseStorage(target, user);
+            if (!HasComp<XenoComponent>(user))
+                TryCloseStorage(target);
         }
         else
         {
@@ -337,7 +339,7 @@ public abstract class SharedEntityStorageSystem : EntitySystem
             return false;
 
         // Allow other systems to prevent inserting the item: e.g. the item is actually a ghost.
-        var attemptEvent = new InsertIntoEntityStorageAttemptEvent(toInsert);
+        var attemptEvent = new InsertIntoEntityStorageAttemptEvent(toInsert, container);
         RaiseLocalEvent(toInsert, ref attemptEvent);
 
         if (attemptEvent.Cancelled)

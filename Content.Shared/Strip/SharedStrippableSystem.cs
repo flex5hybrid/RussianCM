@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Shared.Administration.Logs;
+using Content.Shared.Administration.Managers;
 using Content.Shared.CombatMode;
 using Content.Shared.Cuffs;
 using Content.Shared.Cuffs.Components;
@@ -15,9 +16,12 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.VirtualItem;
 using Content.Shared.Popups;
+using Content.Shared.Interaction.Components;
+using Content.Shared.Inventory;
 using Content.Shared.Strip.Components;
 using Content.Shared.Verbs;
 using Robust.Shared.Utility;
+using Content.Shared._RMC14.Clothing;
 
 namespace Content.Shared.Strip;
 
@@ -225,7 +229,8 @@ public abstract class SharedStrippableSystem : EntitySystem
             BreakOnDamage = true,
             BreakOnMove = true,
             NeedHand = true,
-            DuplicateCondition = DuplicateConditions.SameTool
+            DuplicateCondition = DuplicateConditions.SameTool,
+            ForceVisible = user.Owner != target,
         };
 
         _doAfterSystem.TryStartDoAfter(doAfterArgs);
@@ -277,6 +282,12 @@ public abstract class SharedStrippableSystem : EntitySystem
             return false;
         }
 
+        if (HasComp<RMCUnstrippableComponent>(slotItem))
+        {
+            _popupSystem.PopupCursor(Loc.GetString("rmc-unstrippable", ("item", slotItem), ("owner", Identity.Entity(target, EntityManager))));
+            return false;
+        }
+
         return true;
     }
 
@@ -324,7 +335,8 @@ public abstract class SharedStrippableSystem : EntitySystem
             BreakOnMove = true,
             NeedHand = true,
             BreakOnHandChange = false, // Allow simultaneously removing multiple items.
-            DuplicateCondition = DuplicateConditions.SameTool
+            DuplicateCondition = DuplicateConditions.SameTool,
+            ForceVisible = user != target,
         };
 
         _doAfterSystem.TryStartDoAfter(doAfterArgs);
@@ -429,7 +441,8 @@ public abstract class SharedStrippableSystem : EntitySystem
             BreakOnDamage = true,
             BreakOnMove = true,
             NeedHand = true,
-            DuplicateCondition = DuplicateConditions.SameTool
+            DuplicateCondition = DuplicateConditions.SameTool,
+            ForceVisible = user != target,
         };
 
         _doAfterSystem.TryStartDoAfter(doAfterArgs);
@@ -537,7 +550,8 @@ public abstract class SharedStrippableSystem : EntitySystem
             BreakOnMove = true,
             NeedHand = true,
             BreakOnHandChange = false, // Allow simultaneously removing multiple items.
-            DuplicateCondition = DuplicateConditions.SameTool
+            DuplicateCondition = DuplicateConditions.SameTool,
+            ForceVisible = user != target,
         };
 
         _doAfterSystem.TryStartDoAfter(doAfterArgs);

@@ -52,6 +52,52 @@ public sealed class StandingStateSystem : EntitySystem
         bool playSound = true,
         bool dropHeldItems = true,
         bool force = false,
+        bool changeCollision = false,
+        StandingStateComponent? standingState = null,
+        AppearanceComponent? appearance = null,
+        HandsComponent? hands = null)
+    {
+        // TODO: This should actually log missing comps...
+        if (!Resolve(uid, ref standingState, false))
+            return false;
+
+        // Optional component.
+        Resolve(uid, ref appearance, ref hands, false);
+
+        if (!standingState.Standing)
+            return true;
+
+        // This is just to avoid most callers doing this manually saving boilerplate
+        // 99% of the time you'll want to drop items but in some scenarios (e.g. buckling) you don't want to.
+        // We do this BEFORE downing because something like buckle may be blocking downing but we want to drop hand items anyway
+        // and ultimately this is just to avoid boilerplate in Down callers + keep their behavior consistent.
+        if (dropHeldItems && hands != null)
+        {
+            var ev = new DropHandItemsEvent();
+            RaiseLocalEvent(uid, ref ev, false);
+        }
+    }
+
+    private void OnMobCollide(Entity<StandingStateComponent> ent, ref AttemptMobCollideEvent args)
+    {
+        if (!ent.Comp.Standing)
+        {
+            args.Cancelled = true;
+        }
+    }
+
+    public bool IsDown(EntityUid uid, StandingStateComponent? standingState = null)
+    {
+        if (!Resolve(uid, ref standingState, false))
+            return false;
+
+        return !standingState.Standing;
+    }
+
+    public bool Down(EntityUid uid,
+        bool playSound = true,
+        bool dropHeldItems = true,
+        bool force = false,
         StandingStateComponent? standingState = null,
         AppearanceComponent? appearance = null,
         HandsComponent? hands = null)

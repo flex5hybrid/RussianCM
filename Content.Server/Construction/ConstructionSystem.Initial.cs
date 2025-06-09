@@ -2,6 +2,8 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Content.Server.Construction.Components;
+using Content.Shared._RMC14.Construction;
+using Content.Shared._RMC14.Prototypes;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Construction;
 using Content.Shared.Construction.Prototypes;
@@ -31,6 +33,7 @@ namespace Content.Server.Construction
         [Dependency] private readonly EntityLookupSystem _lookupSystem = default!;
         [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
         [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+        [Dependency] private readonly RMCConstructionSystem _rmcConstruction = default!;
 
         // --- WARNING! LEGACY CODE AHEAD! ---
         // This entire file contains the legacy code for initial construction.
@@ -102,6 +105,9 @@ namespace Content.Server.Construction
             EntityCoordinates coords,
             Angle angle = default)
         {
+            if (!_rmcConstruction.CanConstruct(user))
+                return null;
+
             // We need a place to hold our construction items!
             var container = _container.EnsureContainer<Container>(user, materialContainer, out var existed);
 
@@ -324,7 +330,7 @@ namespace Content.Server.Construction
         // LEGACY CODE. See warning at the top of the file!
         public async Task<bool> TryStartItemConstruction(string prototype, EntityUid user)
         {
-            if (!PrototypeManager.TryIndex(prototype, out ConstructionPrototype? constructionPrototype))
+            if (!PrototypeManager.TryCM(prototype, out ConstructionPrototype? constructionPrototype))
             {
                 Log.Error($"Tried to start construction of invalid recipe '{prototype}'!");
                 return false;
@@ -403,10 +409,25 @@ namespace Content.Server.Construction
         // LEGACY CODE. See warning at the top of the file!
         private async void HandleStartStructureConstruction(TryStartStructureConstructionMessage ev, EntitySessionEventArgs args)
         {
-            if (!PrototypeManager.TryIndex(ev.PrototypeName, out ConstructionPrototype? constructionPrototype))
+            if (!PrototypeManager.TryCM(ev.PrototypeName, out ConstructionPrototype? constructionPrototype))
             {
                 Log.Error($"Tried to start construction of invalid recipe '{ev.PrototypeName}'!");
                 RaiseNetworkEvent(new AckStructureConstructionMessage(ev.Ack));
+                return;
+            }
+
+            var coordinates = GetCoordinates(ev.Location);
+            var attempt = new RMCConstructionAttemptEvent(coordinates, constructionPrototype.Name);
+            RaiseLocalEvent(ref attempt);
+
+            if (attempt.Cancelled)
+            {
+                if (attempt.Popup is { } popup &&
+                    args.SenderSession.AttachedEntity is { } ent)
+                {
+                    _popup.PopupCoordinates(popup, coordinates, ent);
+                }
+
                 return;
             }
 

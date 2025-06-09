@@ -21,6 +21,7 @@ public sealed partial class AdminOptionsTab : Control
     {
         RobustXamlLoader.Load(this);
 
+<<<<<<< HEAD
         var antagFormats = new List<OptionDropDownCVar<string>.ValueOption>();
         foreach (var format in Enum.GetValues(typeof(AdminOverlayAntagFormat)))
         {
@@ -58,6 +59,14 @@ public sealed partial class AdminOptionsTab : Control
         Control.AddOptionDropDown(CCVars.AdminOverlayAntagFormat, DropDownOverlayAntagFormat, antagFormats);
         Control.AddOptionDropDown(CCVars.AdminOverlaySymbolStyle, DropDownOverlayAntagSymbol, antagSymbolStyles);
 
+=======
+        Control.AddOptionCheckBox(CCVars.AdminPlayerlistSeparateSymbols, PlayerlistSeparateSymbolsCheckBox);
+        Control.AddOptionCheckBox(CCVars.AdminPlayerlistHighlightedCharacterColor, PlayerlistCharacterColorCheckBox);
+        Control.AddOptionCheckBox(CCVars.AdminPlayerlistRoleTypeColor, PlayerlistRoleTypeColorCheckBox);
+
+        Control.AddOptionCheckBox(CCVars.AdminOverlayClassic, EnableClassicOverlayCheckBox);
+        Control.AddOptionCheckBox(CCVars.AdminOverlaySymbols, EnableOverlaySymbolsCheckBox);
+>>>>>>> master
         Control.AddOptionCheckBox(CCVars.AdminOverlayPlaytime, EnableOverlayPlaytimeCheckBox);
         Control.AddOptionCheckBox(CCVars.AdminOverlayStartingJob, EnableOverlayStartingJobCheckBox);
 

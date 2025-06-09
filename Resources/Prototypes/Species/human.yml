@@ -2,7 +2,7 @@
   id: Human
   name: species-name-human
   roundStart: true
-  prototype: MobHuman
+  prototype: CMMobHuman # Load the rmc14 human instead of ss14
   sprites: MobHumanSprites
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobHumanDummy
@@ -26,6 +26,8 @@
     UndergarmentTop: MobHumanoidAnyMarking
     UndergarmentBottom: MobHumanoidAnyMarking
     Chest: MobHumanTorso
+    Underwear: MobHumanoidAnyMarking
+    Undershirt: MobHumanoidAnyMarking
     Eyes: MobHumanoidEyes
     HeadTop: MobHumanoidAnyMarking
     LArm: MobHumanLArm
@@ -60,6 +62,7 @@
       points: 1
       required: false
     UndergarmentTop:
+<<<<<<< HEAD
       points: 1
       required: false
     UndergarmentBottom:
@@ -68,6 +71,24 @@
     Chest:
       points: 2
       required: false
+=======
+      points: 1
+      required: false
+    UndergarmentBottom:
+      points: 1
+      required: false
+    Chest:
+      points: 1
+      required: false
+    Underwear:
+      points: 1
+      required: true
+      defaultMarkings: [ RMCUnderwearBoxersBlue ]
+    Undershirt:
+      points: 1
+      required: true
+      defaultMarkings: [ RMCUndershirtStandard ]
+>>>>>>> master
     Legs:
       points: 2
       required: false

@@ -1,0 +1,178 @@
+- type: entity
+  parent: BaseItem
+  id: CMBaseDefibrillator
+  name: emergency defibrillator
+  description: A handheld emergency defibrillator, used to restore fibrillating patients. Can optionally bring people back from the dead.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Medical/defib.rsi
+    layers:
+    - state: defib
+    - state: defib_on
+      map: [ "enum.ToggleVisuals.Layer" ]
+      visible: false
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+  - type: Item
+    size: Normal
+    sprite: _RMC14/Objects/Medical/defib.rsi
+    heldPrefix: defib
+  - type: Speech
+    speechVerb: Robotic
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/_RMC14/Medical/defib_SafetyOn.ogg
+    soundDeactivate:
+      path: /Audio/_RMC14/Medical/defib_safetyOff.ogg
+  - type: Defibrillator
+    zapDelay: 0
+    doAfterDuration: 6.25
+    allowDoAfterMovement: false
+    canDefibCrit: false
+    cmZapHeal:
+    - Brute: -12
+    - Burn: -12
+    - Toxin: -12
+    - Genetic: -12
+    zapHeal:
+      groups:
+        Airloss: -400
+    zapSound:
+      path: /Audio/_RMC14/Medical/defib_release.ogg
+      params:
+        volume: -6
+    chargeSound:
+      path: /Audio/_RMC14/Medical/defib_charge.ogg
+      params:
+        volume: -8
+    failureSound:
+      path: /Audio/_RMC14/Medical/defib_failed.ogg
+      params:
+        volume: -6
+    successSound:
+      path: /Audio/_RMC14/Medical/defib_success.ogg
+      params:
+        volume: -6
+    readySound:
+      path: /Audio/_RMC14/Medical/defib_ready.ogg
+      params:
+        volume: -6
+    zapDamage: 0
+  - type: DoAfter
+  - type: UseDelay
+  - type: StaticPrice
+    price: 100
+  - type: GuideHelp
+    guides:
+    - Medical Doctor
+  - type: RequiresSkill
+    skills:
+      RMCSkillMedical: 2
+
+- type: entity
+  id: CMDefibrillator
+  parent: [CMBaseDefibrillator, RMCPowerCellSlotUnremovable]
+  suffix: RMC14
+  components:
+  - type: PowerCellDraw
+    enabled: false
+    useRate: 66
+  - type: RMCPowerUsageDisplay
+  - type: UseOnSynthBlocked
+    whitelist:
+      components:
+        - Marine
+
+- type: entity
+  id: CMDefibrillatorEmpty
+  parent: CMDefibrillator
+  suffix: RMC14, Empty
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
+- type: entity
+  parent: CMBaseDefibrillator
+  id: CMDefibrillatorInfinite
+  suffix: RMC14, Infinite
+
+- type: entity
+  id: RMCDefibrillatorCompact
+  parent: CMDefibrillator
+  name: compact defibrillator
+  description: This particular defibrillator has halved charge capacity compared to the standard emergency defibrillator, but can fit in your pocket.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Medical/compact_defib.rsi
+  - type: Item
+    sprite: _RMC14/Objects/Medical/compact_defib.rsi
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - pocket
+  - type: Tag
+    tags:
+    - Pouch
+  - type: PowerCellDraw
+    useRate: 132
+
+- type: entity
+  parent: [CMBaseDefibrillator, RMCPowerCellSlotUnremovable]
+  id: RMCSynthResetKey
+  name: WeYa synthetic reset key
+  description: This device can fix major glitches or programming errors of synthetic units, as well as being able to restart a synthetic that has suffered critical failure. It can only be used once before being reset.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Devices/reset_key.rsi
+    layers:
+    - state: defib
+    - state: defib_on
+      map: [ "enum.ToggleVisuals.Layer" ]
+      visible: false
+  - type: PowerCellDraw
+    enabled: false
+    useRate: 500 # change to 1000 when defib power drawing is fixed
+  - type: RMCPowerUsageDisplay
+  - type: RequiresSkill
+    skills:
+      RMCSkillEngineer: 1
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/_RMC14/Machines/click.ogg
+    soundDeactivate:
+      path: /Audio/_RMC14/Machines/click.ogg
+  - type: Defibrillator
+    zapSound:
+      path: /Audio/_RMC14/Medical/reset_key_release.ogg
+      params:
+        volume: -6
+    chargeSound:
+      path: /Audio/_RMC14/Medical/reset_key_powerup.ogg
+      params:
+        volume: -8
+    failureSound:
+      path: /Audio/_RMC14/Medical/reset_key_shortbeep.ogg
+      params:
+        volume: -6
+    successSound:
+      path: /Audio/_RMC14/Medical/reset_key_boot_on.ogg
+      params:
+        volume: -6
+  - type: UseOnSynthBlocked
+    reversed: true
+    popup: rmc-species-synth-reset-key-invalid
+    whitelist:
+      components:
+        - Marine
+  - type: Item
+    size: Normal
+    sprite: _RMC14/Objects/Devices/reset_key.rsi
+    heldPrefix: null

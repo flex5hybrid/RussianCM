@@ -343,23 +343,39 @@ reagent-desc-espresso-martini = To wake you up and wind you down. Garnished with
 reagent-name-mayojito = mayojito
 reagent-desc-mayojito = An affront to god and man. Do not drink it.
 
+<<<<<<< HEAD
 reagent-name-mimeosa = mimeosa
+=======
+reagent-name-mimeosa = mimeosa 
+>>>>>>> master
 reagent-desc-mimeosa = It has an orange tang so sour you just can't describe it.
 
 reagent-name-mimosa = mimosa
 reagent-desc-mimosa = Perfect for a lively brunch out with the girls.
 
+<<<<<<< HEAD
 reagent-name-moscow-mule = moscow mule
+=======
+reagent-name-moscow-mule = moscow mule 
+>>>>>>> master
 reagent-desc-moscow-mule = A surpsingly strong and refreshing mixed drink, served in an iconic copper mug.
 
 reagent-name-the-sun-also-rises = the sun also rises
 reagent-desc-the-sun-also-rises = A strong cocktail mixed into a murky blend. A secret favorite of tortured authors.
 
+<<<<<<< HEAD
 reagent-name-whiskey-sour = whiskey sour
+=======
+reagent-name-whiskey-sour = whiskey sour 
+>>>>>>> master
 reagent-desc-whiskey-sour = What's the secret ingredient? Eggs. It's eggs.
 
 reagent-name-zombiecocktail = Zombie
 reagent-desc-zombiecocktail = It gets in your head. Your he-eyeh-ead.
 
+<<<<<<< HEAD
 reagent-name-bacchus-blessing = bacchus's blessing
+=======
+reagent-name-bacchus-blessing = bacchus' blessing
+>>>>>>> master
 reagent-desc-bacchus-blessing = You didn't think it was possible for a liquid to be so utterly revolting. Are you sure about this...?

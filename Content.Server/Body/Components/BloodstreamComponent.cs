@@ -182,5 +182,8 @@ namespace Content.Server.Body.Components
 
         [DataField]
         public ProtoId<AlertPrototype> BleedingAlert = "Bleed";
+
+        [DataField, AutoNetworkedField]
+        public bool SpillChemicals;
     }
 }

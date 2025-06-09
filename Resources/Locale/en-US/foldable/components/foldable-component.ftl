@@ -11,3 +11,6 @@ fold-flip-verb = Flip
 
 fold-zip-verb = Zip up
 fold-unzip-verb = Unzip
+
+fold-strap-verb = Strap on
+fold-unstrap-verb = Unstrap

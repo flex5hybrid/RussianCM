@@ -2,6 +2,7 @@ using System.Collections.Frozen;
 using System.Linq;
 using Content.Shared.FixedPoint;
 using System.Text.Json.Serialization;
+using Content.Shared._RMC14.Prototypes;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Body.Prototypes;
 using Content.Shared.Chemistry.Components;
@@ -23,7 +24,7 @@ namespace Content.Shared.Chemistry.Reagent
 {
     [Prototype]
     [DataDefinition]
-    public sealed partial class ReagentPrototype : IPrototype, IInheritingPrototype
+    public sealed partial class ReagentPrototype : IPrototype, IInheritingPrototype, ICMSpecific
     {
         [ViewVariables]
         [IdDataField]
@@ -207,6 +208,10 @@ namespace Content.Shared.Chemistry.Reagent
                 plantMetabolizable.Effect(args);
             }
         }
+
+        // TODO RMC14 move out to a partial when https://github.com/space-wizards/RobustToolbox/pull/5160 is merged
+        [DataField]
+        public bool IsCM { get; set; }
     }
 
     [Serializable, NetSerializable]

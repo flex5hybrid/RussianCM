@@ -292,6 +292,9 @@ namespace Content.Client.IconSmoothing
                 default:
                     throw new ArgumentOutOfRangeException();
             }
+
+            var ev = new IconSmoothingUpdatedEvent();
+            RaiseLocalEvent(uid, ref ev);
         }
 
         private void CalculateNewSpriteDiagonal(Entity<MapGridComponent>? gridEntity, IconSmoothComponent smooth,
@@ -376,12 +379,20 @@ namespace Content.Client.IconSmoothing
         {
             while (candidates.MoveNext(out var entity))
             {
+                // TODO RMC14 restore to upstream
                 if (smoothQuery.TryGetComponent(entity, out var other) &&
+<<<<<<< HEAD
                     other.SmoothKey != null &&
                     (other.SmoothKey == smooth.SmoothKey || smooth.AdditionalKeys.Contains(other.SmoothKey)) &&
+=======
+>>>>>>> master
                     other.Enabled)
                 {
-                    return true;
+                    if ((other.SmoothKey != null && (other.SmoothKey == smooth.SmoothKey || smooth.AdditionalKeys.Contains(other.SmoothKey))) ||
+                        (_cmIconSmoothQuery.TryComp(smooth.Owner, out var cmSmooth) && cmSmooth.Smooth && _cmIconSmoothQuery.HasComp(entity)))
+                    {
+                        return true;
+                    }
                 }
             }
 

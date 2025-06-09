@@ -9,6 +9,7 @@ public enum DeliveryVisuals : byte
     IsTrash,
     IsBroken,
     IsFragile,
+<<<<<<< HEAD
     IsBomb,
     PriorityState,
     JobIcon,
@@ -35,3 +36,9 @@ public enum DeliverySpawnerVisuals : byte
 {
     Contents,
 }
+=======
+    IsPriority,
+    IsPriorityInactive,
+    JobIcon,
+}
+>>>>>>> master

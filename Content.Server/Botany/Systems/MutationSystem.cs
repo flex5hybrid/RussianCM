@@ -1,9 +1,9 @@
+using System.Linq;
 using Content.Shared.Atmos;
 using Content.Shared.EntityEffects;
 using Content.Shared.Random;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
-using System.Linq;
 
 namespace Content.Server.Botany;
 
@@ -25,6 +25,7 @@ public sealed class MutationSystem : EntitySystem
     /// <param name="severity"></param>
     public void CheckRandomMutations(EntityUid plantHolder, ref SeedData seed, float severity)
     {
+        return; // RMC14 no seed mutationsD
         foreach (var mutation in _randomMutations.mutations)
         {
             if (Random(Math.Min(mutation.BaseOdds * severity, 1.0f)))

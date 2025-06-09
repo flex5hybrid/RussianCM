@@ -180,6 +180,7 @@ public sealed class HTNSystem : EntitySystem
         _planQueue.Process();
         var query = EntityQueryEnumerator<ActiveNPCComponent, HTNComponent>();
 
+<<<<<<< HEAD
         // Move ahead "count" entries in the query.
         // This is to ensure that if we didn't process all the npcs the first time,
         // we get to the remaining ones instead of iterating over the beginning again.
@@ -190,6 +191,8 @@ public sealed class HTNSystem : EntitySystem
 
         // the amount of updates we've processed during this iteration.
         var updates = 0;
+=======
+>>>>>>> master
         while (query.MoveNext(out var uid, out _, out var comp))
         {
             // If we're over our max count or it's not MapInit then ignore the NPC.
@@ -198,6 +201,9 @@ public sealed class HTNSystem : EntitySystem
                 // Intentional return. We don't want to go to the end logic and reset count.
                 return;
             }
+
+            if (!comp.Enabled)
+                continue;
 
             if (!comp.Enabled)
                 continue;

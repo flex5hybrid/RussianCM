@@ -1,4 +1,8 @@
 using Content.Server.DeviceLinking.Systems;
+<<<<<<< HEAD:Content.Server/Disposal/Tube/DisposalSignalRouterSystem.cs
+=======
+using Content.Server.Disposal.Tube.Components;
+>>>>>>> master:Content.Server/Disposal/Tube/Systems/DisposalSignalRouterSystem.cs
 using Content.Shared.DeviceLinking.Events;
 
 namespace Content.Server.Disposal.Tube;

@@ -7,7 +7,11 @@ using Content.Shared.Humanoid;
 using Content.Shared.Inventory;
 using Content.Shared.Implants;
 using Content.Shared.Implants.Components;
+<<<<<<< HEAD
 using Content.Shared.NameModifier.EntitySystems;
+=======
+using Content.Shared.NameModifier.Components;
+>>>>>>> master
 using Content.Shared.StatusEffect;
 using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
@@ -26,6 +30,10 @@ namespace Content.Server.Cloning;
 /// </summary>
 public sealed partial class CloningSystem : EntitySystem
 {
+<<<<<<< HEAD
+=======
+    [Dependency] private readonly IComponentFactory _componentFactory = default!;
+>>>>>>> master
     [Dependency] private readonly HumanoidAppearanceSystem _humanoidSystem = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly MetaDataSystem _metaData = default!;
@@ -35,7 +43,10 @@ public sealed partial class CloningSystem : EntitySystem
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly SharedStorageSystem _storage = default!;
     [Dependency] private readonly SharedSubdermalImplantSystem _subdermalImplant = default!;
+<<<<<<< HEAD
     [Dependency] private readonly NameModifierSystem _nameMod = default!;
+=======
+>>>>>>> master
 
     /// <summary>
     ///     Spawns a clone of the given humanoid mob at the specified location or in nullspace.
@@ -60,6 +71,7 @@ public sealed partial class CloningSystem : EntitySystem
         clone = coords == null ? Spawn(speciesPrototype.Prototype) : Spawn(speciesPrototype.Prototype, coords.Value);
         _humanoidSystem.CloneAppearance(original, clone.Value);
 
+<<<<<<< HEAD
         CloneComponents(original, clone.Value, settings);
 
         // Add equipment first so that SetEntityName also renames the ID card.
@@ -106,11 +118,23 @@ public sealed partial class CloningSystem : EntitySystem
         foreach (var componentName in componentsToCopy)
         {
             if (!Factory.TryGetRegistration(componentName, out var componentRegistration))
+=======
+        var componentsToCopy = settings.Components;
+
+        // don't make status effects permanent
+        if (TryComp<StatusEffectsComponent>(original, out var statusComp))
+            componentsToCopy.ExceptWith(statusComp.ActiveEffects.Values.Select(s => s.RelevantComponent).Where(s => s != null)!);
+
+        foreach (var componentName in componentsToCopy)
+        {
+            if (!_componentFactory.TryGetRegistration(componentName, out var componentRegistration))
+>>>>>>> master
             {
                 Log.Error($"Tried to use invalid component registration for cloning: {componentName}");
                 continue;
             }
 
+<<<<<<< HEAD
             // If the original does not have the component, then the clone shouldn't have it either.
             RemComp(clone, componentRegistration.Type);
             if (EntityManager.TryGetComponent(original, componentRegistration.Type, out var sourceComp)) // Does the original have this component?
@@ -150,6 +174,62 @@ public sealed partial class CloningSystem : EntitySystem
         var slotEnumerator = _inventory.GetSlotEnumerator(original, slotFlags);
         while (slotEnumerator.NextItem(out var item, out var slot))
         {
+=======
+            if (EntityManager.TryGetComponent(original, componentRegistration.Type, out var sourceComp)) // Does the original have this component?
+            {
+                if (HasComp(clone.Value, componentRegistration.Type)) // CopyComp cannot overwrite existing components
+                    RemComp(clone.Value, componentRegistration.Type);
+                CopyComp(original, clone.Value, sourceComp);
+            }
+        }
+
+        var cloningEv = new CloningEvent(settings, clone.Value);
+        RaiseLocalEvent(original, ref cloningEv); // used for datafields that cannot be directly copied
+
+        // Add equipment first so that SetEntityName also renames the ID card.
+        if (settings.CopyEquipment != null)
+            CopyEquipment(original, clone.Value, settings.CopyEquipment.Value, settings.Whitelist, settings.Blacklist);
+
+        // Copy storage on the mob itself as well.
+        // This is needed for slime storage.
+        if (settings.CopyInternalStorage)
+            CopyStorage(original, clone.Value, settings.Whitelist, settings.Blacklist);
+
+        // copy implants and their storage contents
+        if (settings.CopyImplants)
+            CopyImplants(original, clone.Value, settings.CopyInternalStorage, settings.Whitelist, settings.Blacklist);
+
+        var originalName = Name(original);
+        if (TryComp<NameModifierComponent>(original, out var nameModComp)) // if the originals name was modified, use the unmodified name
+            originalName = nameModComp.BaseName;
+
+        // This will properly set the BaseName and EntityName for the clone.
+        // Adding the component first before renaming will make sure RefreshNameModifers is called.
+        // Without this the name would get reverted to Urist.
+        // If the clone has no name modifiers, NameModifierComponent will be removed again.
+        EnsureComp<NameModifierComponent>(clone.Value);
+        _metaData.SetEntityName(clone.Value, originalName);
+
+        _adminLogger.Add(LogType.Chat, LogImpact.Medium, $"The body of {original:player} was cloned as {clone.Value:player}");
+        return true;
+    }
+
+    /// <summary>
+    ///     Copies the equipment the original has to the clone.
+    ///     This uses the original prototype of the items, so any changes to components that are done after spawning are lost!
+    /// </summary>
+    public void CopyEquipment(Entity<InventoryComponent?> original, Entity<InventoryComponent?> clone, SlotFlags slotFlags, EntityWhitelist? whitelist = null, EntityWhitelist? blacklist = null)
+    {
+        if (!Resolve(original, ref original.Comp) || !Resolve(clone, ref clone.Comp))
+            return;
+
+        var coords = Transform(clone).Coordinates;
+
+        // Iterate over all inventory slots
+        var slotEnumerator = _inventory.GetSlotEnumerator(original, slotFlags);
+        while (slotEnumerator.NextItem(out var item, out var slot))
+        {
+>>>>>>> master
             var cloneItem = CopyItem(item, coords, whitelist, blacklist);
 
             if (cloneItem != null && !_inventory.TryEquip(clone, cloneItem.Value, slot.Name, silent: true, inventory: clone.Comp))

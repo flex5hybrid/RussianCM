@@ -186,7 +186,7 @@ ui-options-function-open-character-menu = Open character menu
 ui-options-function-open-context-menu = Open context menu
 ui-options-function-open-crafting-menu = Open crafting menu
 ui-options-function-open-inventory-menu = Open inventory
-ui-options-function-open-a-help = Open admin help
+ui-options-function-open-a-help = Open admin and mentor help
 ui-options-function-open-abilities-menu = Open action menu
 ui-options-function-open-emotes-menu = Open emotes menu
 ui-options-function-toggle-round-end-summary-window = Toggle round end summary window
@@ -360,6 +360,7 @@ ui-options-censor-nudity = Censor character nudity
 
 ui-options-admin-player-panel = Admin Menu Players List
 
+<<<<<<< HEAD
 ui-options-admin-player-tab-symbol-setting = Character column antag symbols
 ui-options-admin-player-tab-symbol-setting-off = No antag symbol
 ui-options-admin-player-tab-symbol-setting-basic = Show standard antag symbol
@@ -394,3 +395,17 @@ ui-options-admin-enable-overlay-starting-job = Show starting job
 ui-options-admin-overlay-merge-distance = Stack merge distance
 ui-options-admin-overlay-ghost-fade-distance = Ghost overlay fade range from mouse
 ui-options-admin-overlay-ghost-hide-distance = Ghost overlay hide range from mouse
+=======
+ui-options-admin-playerlist-separate-symbols = Show separate symbols for each antag role type
+ui-options-admin-playerlist-character-color = Color names of antagonist characters
+ui-options-admin-playerlist-roletype-color = Color role types
+
+ui-options-admin-overlay-title = Admin Overlay
+ui-options-enable-classic-overlay = Revert overlay to classic mode
+ui-options-enable-overlay-symbols = Add antag symbol to text
+ui-options-enable-overlay-playtime = Show playtime
+ui-options-enable-overlay-starting-job = Show starting job
+ui-options-overlay-merge-distance = Stack merge distance
+ui-options-overlay-ghost-fade-distance = Ghost overlay fade range from mouse
+ui-options-overlay-ghost-hide-distance = Ghost overlay hide range from mouse
+>>>>>>> master

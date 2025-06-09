@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 using Content.Client.DisplacementMap;
+=======
+>>>>>>> master
 using Content.Shared.CCVar;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
@@ -17,8 +20,11 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly MarkingManager _markingManager = default!;
     [Dependency] private readonly IConfigurationManager _configurationManager = default!;
+<<<<<<< HEAD
     [Dependency] private readonly DisplacementMapSystem _displacement = default!;
     [Dependency] private readonly SpriteSystem _sprite = default!;
+=======
+>>>>>>> master
 
     public override void Initialize()
     {
@@ -35,6 +41,18 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
     }
 
     private void OnCvarChanged(bool value)
+<<<<<<< HEAD
+=======
+    {
+        var humanoidQuery = EntityManager.AllEntityQueryEnumerator<HumanoidAppearanceComponent, SpriteComponent>();
+        while (humanoidQuery.MoveNext(out var _, out var humanoidComp, out var spriteComp))
+        {
+            UpdateSprite(humanoidComp, spriteComp);
+        }
+    }
+
+    private void UpdateSprite(HumanoidAppearanceComponent component, SpriteComponent sprite)
+>>>>>>> master
     {
         var humanoidQuery = EntityManager.AllEntityQueryEnumerator<HumanoidAppearanceComponent, SpriteComponent>();
         while (humanoidQuery.MoveNext(out var uid, out var humanoidComp, out var spriteComp))
@@ -242,13 +260,23 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         var applyUndergarmentTop = censorNudity;
         var applyUndergarmentBottom = censorNudity;
 
+        var censorNudity = _configurationManager.GetCVar(CCVars.AccessibilityClientCensorNudity) ||
+                           _configurationManager.GetCVar(CCVars.AccessibilityServerCensorNudity);
+        // The reason we're splitting this up is in case the character already has undergarment equipped in that slot.
+        var applyUndergarmentTop = censorNudity;
+        var applyUndergarmentBottom = censorNudity;
+
         foreach (var markingList in humanoid.MarkingSet.Markings.Values)
         {
             foreach (var marking in markingList)
             {
                 if (_markingManager.TryGetMarking(marking, out var markingPrototype))
                 {
+<<<<<<< HEAD
                     ApplyMarking(markingPrototype, marking.MarkingColors, marking.Visible, entity);
+=======
+                    ApplyMarking(markingPrototype, marking.MarkingColors, marking.Visible, humanoid, sprite);
+>>>>>>> master
                     if (markingPrototype.BodyPart == HumanoidVisualLayers.UndergarmentTop)
                         applyUndergarmentTop = false;
                     else if (markingPrototype.BodyPart == HumanoidVisualLayers.UndergarmentBottom)
@@ -259,7 +287,11 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
 
         humanoid.ClientOldMarkings = new MarkingSet(humanoid.MarkingSet);
 
+<<<<<<< HEAD
         AddUndergarments(entity, applyUndergarmentTop, applyUndergarmentBottom);
+=======
+        AddUndergarments(humanoid, sprite, applyUndergarmentTop, applyUndergarmentBottom);
+>>>>>>> master
     }
 
     private void ClearAllMarkings(Entity<HumanoidAppearanceComponent, SpriteComponent> entity)
@@ -311,18 +343,28 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         }
     }
 
+<<<<<<< HEAD
     private void AddUndergarments(Entity<HumanoidAppearanceComponent, SpriteComponent> entity, bool undergarmentTop, bool undergarmentBottom)
     {
         var humanoid = entity.Comp1;
 
+=======
+    private void AddUndergarments(HumanoidAppearanceComponent humanoid, SpriteComponent sprite, bool undergarmentTop, bool undergarmentBottom)
+    {
+>>>>>>> master
         if (undergarmentTop && humanoid.UndergarmentTop != null)
         {
             var marking = new Marking(humanoid.UndergarmentTop, new List<Color> { new Color() });
             if (_markingManager.TryGetMarking(marking, out var prototype))
             {
                 // Markings are added to ClientOldMarkings because otherwise it causes issues when toggling the feature on/off.
+<<<<<<< HEAD
                 humanoid.ClientOldMarkings.Markings.Add(MarkingCategories.UndergarmentTop, new List<Marking> { marking });
                 ApplyMarking(prototype, null, true, entity);
+=======
+                humanoid.ClientOldMarkings.Markings.Add(MarkingCategories.UndergarmentTop, new List<Marking>{ marking });
+                ApplyMarking(prototype, null, true, humanoid, sprite);
+>>>>>>> master
             }
         }
 
@@ -331,8 +373,13 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
             var marking = new Marking(humanoid.UndergarmentBottom, new List<Color> { new Color() });
             if (_markingManager.TryGetMarking(marking, out var prototype))
             {
+<<<<<<< HEAD
                 humanoid.ClientOldMarkings.Markings.Add(MarkingCategories.UndergarmentBottom, new List<Marking> { marking });
                 ApplyMarking(prototype, null, true, entity);
+=======
+                humanoid.ClientOldMarkings.Markings.Add(MarkingCategories.UndergarmentBottom, new List<Marking>{ marking });
+                ApplyMarking(prototype, null, true, humanoid, sprite);
+>>>>>>> master
             }
         }
     }
@@ -428,11 +475,19 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         base.SetLayerVisibility(ent, layer, visible, slot, ref dirty);
 
         var sprite = Comp<SpriteComponent>(ent);
+<<<<<<< HEAD
         if (!_sprite.LayerMapTryGet((ent.Owner, sprite), layer, out var index, false))
         {
             if (!visible)
                 return;
             index = _sprite.LayerMapReserve((ent.Owner, sprite), layer);
+=======
+        if (!sprite.LayerMapTryGet(layer, out var index))
+        {
+            if (!visible)
+                return;
+            index = sprite.LayerMapReserveBlank(layer);
+>>>>>>> master
         }
 
         var spriteLayer = sprite[index];
@@ -449,7 +504,11 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
             foreach (var marking in markingList)
             {
                 if (_markingManager.TryGetMarking(marking, out var markingPrototype) && markingPrototype.BodyPart == layer)
+<<<<<<< HEAD
                     ApplyMarking(markingPrototype, marking.MarkingColors, marking.Visible, (ent, ent.Comp, sprite));
+=======
+                    ApplyMarking(markingPrototype, marking.MarkingColors, marking.Visible, ent, sprite);
+>>>>>>> master
             }
         }
     }

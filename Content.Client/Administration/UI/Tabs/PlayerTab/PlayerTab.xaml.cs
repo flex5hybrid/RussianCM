@@ -48,10 +48,16 @@ public sealed partial class PlayerTab : Control
         _adminSystem.OverlayEnabled += OverlayEnabled;
         _adminSystem.OverlayDisabled += OverlayDisabled;
 
+<<<<<<< HEAD
         _config.OnValueChanged(CCVars.AdminPlayerTabRoleSetting, RoleSettingChanged, true);
         _config.OnValueChanged(CCVars.AdminPlayerTabColorSetting, ColorSettingChanged, true);
         _config.OnValueChanged(CCVars.AdminPlayerTabSymbolSetting, SymbolSettingChanged, true);
 
+=======
+        _config.OnValueChanged(CCVars.AdminPlayerlistSeparateSymbols, PlayerListSettingsChanged);
+        _config.OnValueChanged(CCVars.AdminPlayerlistHighlightedCharacterColor, PlayerListSettingsChanged);
+        _config.OnValueChanged(CCVars.AdminPlayerlistRoleTypeColor, PlayerListSettingsChanged);
+>>>>>>> master
 
         OverlayButton.OnPressed += OverlayButtonPressed;
         ShowDisconnectedButton.OnPressed += ShowDisconnectedPressed;
@@ -118,6 +124,7 @@ public sealed partial class PlayerTab : Control
 
     #region ListContainer
 
+<<<<<<< HEAD
     private void RoleSettingChanged(string s)
     {
         if (!Enum.TryParse<AdminPlayerTabRoleTypeOption>(s, out var format))
@@ -139,6 +146,10 @@ public sealed partial class PlayerTab : Control
         if (!Enum.TryParse<AdminPlayerTabSymbolOption>(s, out var format))
             format = AdminPlayerTabSymbolOption.Specific;
         _playerTabSymbolSetting = format;
+=======
+    private void PlayerListSettingsChanged(bool _)
+    {
+>>>>>>> master
         RefreshPlayerList(_adminSystem.PlayerList);
     }
 

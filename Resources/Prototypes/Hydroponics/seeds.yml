@@ -769,7 +769,7 @@
   plantRsi: Objects/Specific/Hydroponics/golden_apple.rsi
   packetPrototype: GoldenAppleSeeds
   productPrototypes:
-    - FoodGoldenApple
+    - RMCFoodGoldenApple
   harvestRepeat: Repeat
   lifespan: 55
   maturation: 6

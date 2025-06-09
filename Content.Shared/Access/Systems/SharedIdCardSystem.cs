@@ -28,6 +28,8 @@ public abstract class SharedIdCardSystem : EntitySystem
     // CCVar.
     private int _maxNameLength;
     private int _maxIdJobLength;
+    // RMC14, for ghost roles
+    private readonly List<EntityUid> _toRename = new();
 
     public override void Initialize()
     {
@@ -50,8 +52,8 @@ public abstract class SharedIdCardSystem : EntitySystem
         if (HasComp<IdCardComponent>(ev.Uid) || HasComp<PdaComponent>(ev.Uid))
             return;
 
-        if (TryFindIdCard(ev.Uid, out var idCard))
-            TryChangeFullName(idCard, ev.NewName, idCard);
+        // RMC14, for ghost roles
+        _toRename.Add(ev.Uid);
     }
 
     private void OnMapInit(EntityUid uid, IdCardComponent id, MapInitEvent args)
@@ -312,6 +314,25 @@ public abstract class SharedIdCardSystem : EntitySystem
                 continue;
 
             ExpireId((uid, comp));
+        }
+    }
+    // RMC14, for ghost roles
+    public override void Update(float frameTime)
+    {
+        try
+        {
+            foreach (var rename in _toRename)
+            {
+                if (TerminatingOrDeleted(rename))
+                    continue;
+
+                if (TryFindIdCard(rename, out var idCard))
+                    TryChangeFullName(idCard, Name(rename), idCard);
+            }
+        }
+        finally
+        {
+            _toRename.Clear();
         }
     }
 }

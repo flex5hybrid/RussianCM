@@ -28,7 +28,10 @@ public sealed class SpriteFadeSystem : EntitySystem
     [Dependency] private readonly IUserInterfaceManager _uiManager = default!;
     [Dependency] private readonly IInputManager _inputManager = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
+<<<<<<< HEAD
     [Dependency] private readonly SpriteSystem _sprite = default!;
+=======
+>>>>>>> master
 
     private List<(MapCoordinates Point, bool ExcludeBoundingBox)> _points = new();
 
@@ -133,7 +136,11 @@ public sealed class SpriteFadeSystem : EntitySystem
 
                     if (!sprite.Color.A.Equals(newColor))
                     {
+<<<<<<< HEAD
                         _sprite.SetColor((ent, sprite), sprite.Color.WithAlpha(newColor));
+=======
+                        sprite.Color = sprite.Color.WithAlpha(newColor);
+>>>>>>> master
                     }
                 }
             }

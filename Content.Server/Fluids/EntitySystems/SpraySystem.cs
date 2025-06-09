@@ -1,9 +1,14 @@
+using System.Numerics;
 using Content.Server.Chemistry.Components;
 using Content.Server.Chemistry.EntitySystems;
 using Content.Server.Fluids.Components;
 using Content.Server.Gravity;
 using Content.Server.Popups;
+<<<<<<< HEAD
 using Content.Shared.CCVar;
+=======
+using Content.Shared._RMC14.Throwing;
+>>>>>>> master
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.FixedPoint;
 using Content.Shared.Fluids;
@@ -12,11 +17,13 @@ using Content.Shared.Timing;
 using Content.Shared.Vapor;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
+<<<<<<< HEAD
 using Robust.Shared.Configuration;
+=======
+using Robust.Shared.Map;
+>>>>>>> master
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Prototypes;
-using System.Numerics;
-using Robust.Shared.Map;
 
 namespace Content.Server.Fluids.EntitySystems;
 
@@ -71,10 +78,10 @@ public sealed class SpraySystem : EntitySystem
 
         var clickPos = _transform.ToMapCoordinates(args.ClickLocation);
 
-        Spray(entity, args.User, clickPos);
+        Spray(entity, args.User, clickPos, args.Target == args.User);
     }
 
-    public void Spray(Entity<SprayComponent> entity, EntityUid user, MapCoordinates mapcoord)
+    public void Spray(Entity<SprayComponent> entity, EntityUid user, MapCoordinates mapcoord, bool hitUser = false)
     {
         if (!_solutionContainer.TryGetSolution(entity.Owner, SprayComponent.SolutionName, out var soln, out var solution))
             return;
@@ -143,6 +150,9 @@ public sealed class SpraySystem : EntitySystem
             // Spawn the vapor cloud onto the grid/map the user is present on. Offset the start position based on how far the target destination is.
             var vaporPos = userMapPos.Offset(distance < 1 ? quarter : threeQuarters);
             var vapor = Spawn(entity.Comp.SprayedPrototype, vaporPos);
+            if (hitUser)
+                EnsureComp<ThrownHitUserComponent>(vapor);
+
             var vaporXform = xformQuery.GetComponent(vapor);
 
             _transform.SetWorldRotation(vaporXform, rotation);

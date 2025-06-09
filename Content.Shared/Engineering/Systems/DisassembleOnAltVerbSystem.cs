@@ -50,7 +50,11 @@ public sealed partial class DisassembleOnAltVerbSystem : EntitySystem
 
     private void OnDisassembleDoAfter(Entity<DisassembleOnAltVerbComponent> entity, ref DisassembleDoAfterEvent args)
     {
+<<<<<<< HEAD
         if (!_net.IsServer || args.Cancelled) // This is odd but it works :)
+=======
+        if (!_net.IsServer) // This is odd but it works :)
+>>>>>>> master
             return;
 
         if (TrySpawnNextTo(entity.Comp.PrototypeToSpawn, entity.Owner, out var spawnedEnt))

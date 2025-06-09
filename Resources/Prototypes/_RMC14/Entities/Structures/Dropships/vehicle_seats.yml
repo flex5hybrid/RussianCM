@@ -1,0 +1,61 @@
+﻿- type: entity
+  parent: CMSeatBase
+  id: CMSeatPassenger
+  name: passenger seat
+  description: A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids! Fix with welding tool in case of damage.
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    sprite: _RMC14/Structures/Furniture/vehicle_seats.rsi
+    state: base
+
+- type: entity
+  parent: CMSeatBase
+  id: CMSeatPilot
+  name: pilot's chair
+  description: A specially designed chair for pilots to sit in.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    sprite: _RMC14/Structures/Furniture/vehicle_seats.rsi
+    state: pilot_chair
+
+- type: entity
+  parent: CMSeatBase
+  id: RMCSeatHunter
+  name: hunter chair
+  description: An exquisitely crafted chair for a large humanoid hunter.
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    sprite: _RMC14/Structures/Furniture/vehicle_seats.rsi
+    state: chair
+
+- type: entity
+  parent: CMSeatBase
+  id: RMCSeatWhite
+  name: passenger seat
+  description: A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids! Fix with welding tool in case of damage.
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    sprite: _RMC14/Structures/Furniture/vehicle_seats.rsi
+    state: vehicle_seat
+
+- type: entity
+  parent: CMSeatBase
+  id: RMCSeatDark
+  name: passenger seat
+  description: A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids! Fix with welding tool in case of damage.
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    sprite: _RMC14/Structures/Furniture/hotseat.rsi
+    state: base

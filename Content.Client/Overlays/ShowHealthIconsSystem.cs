@@ -1,3 +1,5 @@
+using System.Linq;
+using Content.Client._RMC14.Medical.HUD;
 using Content.Shared.Atmos.Rotting;
 using Content.Shared.Damage;
 using Content.Shared.Inventory.Events;
@@ -6,7 +8,6 @@ using Content.Shared.Overlays;
 using Content.Shared.StatusIcon;
 using Content.Shared.StatusIcon.Components;
 using Robust.Shared.Prototypes;
-using System.Linq;
 
 namespace Content.Client.Overlays;
 
@@ -16,6 +17,7 @@ namespace Content.Client.Overlays;
 public sealed class ShowHealthIconsSystem : EquipmentHudSystem<ShowHealthIconsComponent>
 {
     [Dependency] private readonly IPrototypeManager _prototypeMan = default!;
+    [Dependency] private readonly CMHealthIconsSystem _healthIcons = default!;
 
     [ViewVariables]
     public HashSet<string> DamageContainers = new();
@@ -55,7 +57,7 @@ public sealed class ShowHealthIconsSystem : EquipmentHudSystem<ShowHealthIconsCo
         if (!IsActive)
             return;
 
-        var healthIcons = DecideHealthIcons(entity);
+        var healthIcons = _healthIcons.GetIcons(entity);
 
         args.StatusIcons.AddRange(healthIcons);
     }

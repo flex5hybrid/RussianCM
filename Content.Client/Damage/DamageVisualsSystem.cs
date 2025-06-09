@@ -722,4 +722,19 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
             _sprite.LayerSetRsiState(spriteEnt.AsNullable(), spriteLayer, $"{statePrefix}_{threshold}");
         }
     }
+
+    /// RMC14
+    public void ChangeDamageGroupColor(SpriteComponent spriteComponent, DamageVisualsComponent damageVisuals, string group, string color)
+    {
+        if (damageVisuals.TargetLayers != null && damageVisuals.DamageOverlayGroups != null)
+        {
+            foreach (var layerMapKey in damageVisuals.TargetLayerMapKeys)
+            {
+                if (spriteComponent.LayerMapTryGet($"{layerMapKey}{group}", out var spriteLayer))
+                    spriteComponent.LayerSetColor(spriteLayer, Color.FromHex(color));
+            }
+
+            damageVisuals.DamageOverlayGroups[group].Color = color;
+        }
+    }
 }

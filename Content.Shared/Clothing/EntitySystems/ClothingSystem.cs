@@ -13,6 +13,7 @@ namespace Content.Shared.Clothing.EntitySystems;
 public abstract class ClothingSystem : EntitySystem
 {
     [Dependency] private readonly SharedItemSystem _itemSys = default!;
+    [Dependency] private readonly SharedContainerSystem _containerSys = default!;
     [Dependency] private readonly InventorySystem _invSystem = default!;
     [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
     [Dependency] private readonly HideLayerClothingSystem _hideLayer = default!;
@@ -113,13 +114,18 @@ public abstract class ClothingSystem : EntitySystem
 
     private void OnGetState(EntityUid uid, ClothingComponent component, ref ComponentGetState args)
     {
-        args.State = new ClothingComponentState(component.EquippedPrefix);
+        args.State = new ClothingComponentState(component.EquippedPrefix, component.InSlot, component.InSlotFlag);
     }
 
     private void OnHandleState(EntityUid uid, ClothingComponent component, ref ComponentHandleState args)
     {
         if (args.Current is not ClothingComponentState state)
             return;
+
+        // RMC14
+        component.InSlot = state.InSlot;
+        component.InSlotFlag = state.InSlotFlag;
+        // RMC14
 
         SetEquippedPrefix(uid, state.EquippedPrefix, component);
     }

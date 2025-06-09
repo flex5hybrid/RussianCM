@@ -9,7 +9,10 @@ public sealed partial class DeployableTurretSystem : SharedDeployableTurretSyste
 {
     [Dependency] private readonly AppearanceSystem _appearance = default!;
     [Dependency] private readonly AnimationPlayerSystem _animation = default!;
+<<<<<<< HEAD
     [Dependency] private readonly SpriteSystem _sprite = default!;
+=======
+>>>>>>> master
 
     public override void Initialize()
     {
@@ -91,13 +94,22 @@ public sealed partial class DeployableTurretSystem : SharedDeployableTurretSyste
         var destinationState = ent.Comp.VisualState & DeployableTurretState.Deployed;
 
         if (targetState != destinationState)
+<<<<<<< HEAD
             targetState |= DeployableTurretState.Retracting;
+=======
+            targetState = targetState | DeployableTurretState.Retracting;
+>>>>>>> master
 
         ent.Comp.VisualState = state;
 
         // Toggle layer visibility
+<<<<<<< HEAD
         _sprite.LayerSetVisible((ent.Owner, sprite), DeployableTurretVisuals.Weapon, (targetState & DeployableTurretState.Deployed) > 0);
         _sprite.LayerSetVisible((ent.Owner, sprite), PowerDeviceVisualLayers.Powered, HasAmmo(ent) && targetState == DeployableTurretState.Retracted);
+=======
+        sprite.LayerSetVisible(DeployableTurretVisuals.Weapon, (targetState & DeployableTurretState.Deployed) > 0);
+        sprite.LayerSetVisible(PowerDeviceVisualLayers.Powered, HasAmmo(ent) && targetState == DeployableTurretState.Retracted);
+>>>>>>> master
 
         // Change the visual state
         switch (targetState)
@@ -111,11 +123,19 @@ public sealed partial class DeployableTurretSystem : SharedDeployableTurretSyste
                 break;
 
             case DeployableTurretState.Deployed:
+<<<<<<< HEAD
                 _sprite.LayerSetRsiState((ent.Owner, sprite), DeployableTurretVisuals.Turret, ent.Comp.DeployedState);
                 break;
 
             case DeployableTurretState.Retracted:
                 _sprite.LayerSetRsiState((ent.Owner, sprite), DeployableTurretVisuals.Turret, ent.Comp.RetractedState);
+=======
+                sprite.LayerSetState(DeployableTurretVisuals.Turret, ent.Comp.DeployedState);
+                break;
+
+            case DeployableTurretState.Retracted:
+                sprite.LayerSetState(DeployableTurretVisuals.Turret, ent.Comp.RetractedState);
+>>>>>>> master
                 break;
         }
     }

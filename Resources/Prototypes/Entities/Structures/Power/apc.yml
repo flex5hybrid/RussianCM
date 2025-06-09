@@ -147,6 +147,8 @@
     guides:
     - VoltageNetworks
     - Power
+  - type: Corrodible
+    isCorrodible: false
 
 # APC under construction
 - type: entity

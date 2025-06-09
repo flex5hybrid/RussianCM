@@ -1,3 +1,4 @@
+using Content.Shared._RMC14.Chemistry.ChemMaster;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Serialization;
@@ -180,14 +181,18 @@ namespace Content.Shared.Chemistry
         public readonly FixedPoint2? BufferCurrentVolume;
         public readonly uint SelectedPillType;
 
+        // RMC14 - pill bottle color
+        public readonly PillbottleColor SelectedBottleColor;
+
         public readonly uint PillDosageLimit;
+        public readonly uint PillDosagePrevious;
 
         public readonly bool UpdateLabel;
 
         public ChemMasterBoundUserInterfaceState(
             ChemMasterMode mode, ChemMasterSortingType sortingType, ContainerInfo? inputContainerInfo, ContainerInfo? outputContainerInfo,
             IReadOnlyList<ReagentQuantity> bufferReagents, FixedPoint2 bufferCurrentVolume,
-            uint selectedPillType, uint pillDosageLimit, bool updateLabel)
+            uint selectedPillType, PillbottleColor selectedBottleColor, uint pillDosageLimit, uint pillDosagePrevious, bool updateLabel)
         {
             InputContainerInfo = inputContainerInfo;
             OutputContainerInfo = outputContainerInfo;
@@ -196,7 +201,9 @@ namespace Content.Shared.Chemistry
             SortingType = sortingType;
             BufferCurrentVolume = bufferCurrentVolume;
             SelectedPillType = selectedPillType;
+            SelectedBottleColor = selectedBottleColor;
             PillDosageLimit = pillDosageLimit;
+            PillDosagePrevious = pillDosagePrevious;
             UpdateLabel = updateLabel;
         }
     }

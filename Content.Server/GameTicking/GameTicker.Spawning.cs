@@ -27,6 +27,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
+using Content.Server._RMC14.Announce;
 
 namespace Content.Server.GameTicking
 {
@@ -35,12 +36,13 @@ namespace Content.Server.GameTicking
         [Dependency] private readonly IAdminManager _adminManager = default!;
         [Dependency] private readonly SharedJobSystem _jobs = default!;
         [Dependency] private readonly AdminSystem _admin = default!;
+        [Dependency] private readonly MarinePresenceAnnounceSystem _marinePresenceAnnounce = default!;
 
         [ValidatePrototypeId<EntityPrototype>]
         public const string ObserverPrototypeName = "MobObserver";
 
         [ValidatePrototypeId<EntityPrototype>]
-        public const string AdminObserverPrototypeName = "AdminObserver";
+        public const string AdminObserverPrototypeName = "RMCAdminObserver";
 
         /// <summary>
         /// How many players have joined the round through normal methods.
@@ -279,7 +281,7 @@ namespace Content.Server.GameTicking
             var jobName = _jobs.MindTryGetJobName(newMind);
             _admin.UpdatePlayerList(player);
 
-            if (lateJoin && !silent)
+            if (lateJoin && !silent && false) // RMC14
             {
                 if (jobPrototype.JoinNotifyCrew)
                 {
@@ -337,6 +339,12 @@ namespace Content.Server.GameTicking
                     Loc.GetString("job-greet-station-name", ("stationName", metaData.EntityName)));
             }
 
+            if (_distressSignal?.SelectedPlanetMapName != null)
+            {
+                _chatManager.DispatchServerMessage(player,
+                    Loc.GetString("job-greet-planet-name", ("planetName",_distressSignal.SelectedPlanetMapName)));
+            }
+
             // We raise this event directed to the mob, but also broadcast it so game rules can do something now.
             PlayersJoinedRoundNormally++;
             var aev = new PlayerSpawnCompleteEvent(mob,
@@ -348,6 +356,8 @@ namespace Content.Server.GameTicking
                 station,
                 character);
             RaiseLocalEvent(mob, aev, true);
+
+            _marinePresenceAnnounce.AnnounceLateJoin(lateJoin, silent, mob, jobId, jobName, jobPrototype); // RMC14
         }
 
         public void Respawn(ICommonSession player)

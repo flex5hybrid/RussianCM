@@ -1,3 +1,4 @@
+using Content.Shared._RMC14.Light;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Damage.Components;
 using Content.Shared.Database;
@@ -65,13 +66,24 @@ public sealed class DamageOnInteractSystem : EntitySystem
             // or checking the entity for  the comp itself if the inventory didn't work
             if (protectiveEntity.Comp == null && TryComp<DamageOnInteractProtectionComponent>(args.User, out var protectiveComp))
                 protectiveEntity = (args.User, protectiveComp);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> master
 
             // if protectiveComp isn't null after all that, it means the user has protection,
             // so let's calculate how much they resist
             if (protectiveEntity.Comp != null)
             {
                 totalDamage = DamageSpecifier.ApplyModifierSet(totalDamage, protectiveEntity.Comp.DamageProtection);
+            }
+            else
+            {
+                var ev = new LightBurnHandAttemptEvent(args.User, entity);
+                RaiseLocalEvent(ref ev);
+                if (ev.Cancelled)
+                    return;
             }
         }
 

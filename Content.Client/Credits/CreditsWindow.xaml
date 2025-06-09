@@ -26,11 +26,22 @@
                 <!-- Licenses get added here by code -->
             </BoxContainer>
         </ScrollContainer>
+<<<<<<< HEAD
         <ScrollContainer Name="AttributionsTab"
                          HScrollEnabled="False">
             <BoxContainer Name="AttributionsContainer"
                           Orientation="Vertical"
                           Margin="2 2 0 0" />
         </ScrollContainer>
+=======
+		<ScrollContainer Name="OtherTab"
+                         HScrollEnabled="False">
+			<BoxContainer Name="OtherContainer"
+                          Orientation="Vertical"
+                          Margin="2 2 0 0">
+				<!-- Other stuff gets added here by code -->
+			</BoxContainer>
+		</ScrollContainer>
+>>>>>>> master
     </TabContainer>
 </DefaultWindow>

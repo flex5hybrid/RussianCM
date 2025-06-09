@@ -31,8 +31,11 @@ namespace Content.Client.Examine
         [Dependency] private readonly IEyeManager _eyeManager = default!;
         [Dependency] private readonly VerbSystem _verbSystem = default!;
         [Dependency] private readonly SpriteSystem _sprite = default!;
+<<<<<<< HEAD
 
         private List<Verb> _verbList = new();
+=======
+>>>>>>> master
 
         public const string StyleClassEntityTooltip = "entity-tooltip";
 

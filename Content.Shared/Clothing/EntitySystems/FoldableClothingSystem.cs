@@ -83,7 +83,6 @@ public sealed class FoldableClothingSystem : EntitySystem
             // TODO CLOTHING fix this.
             if (ent.Comp.UnfoldedHideLayers != null && TryComp<HideLayerClothingComponent>(ent.Owner, out var hideLayerComp))
                 hideLayerComp.Slots = ent.Comp.UnfoldedHideLayers;
-
         }
     }
 }

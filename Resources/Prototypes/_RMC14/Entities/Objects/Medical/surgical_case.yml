@@ -1,0 +1,60 @@
+- type: entity
+  parent: BaseStorageItem
+  id: CMSurgicalCase
+  name: surgical case
+  description: It's a medical case for storing basic surgical tools. # TODO RMC14 extended description with instructions for treating internal bleeds once those are added
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Storage/surgical_case.rsi
+    layers:
+    - state: surgical_case_base
+    - state: surgical_case_open
+      map: [ "openLayer" ]
+      visible: false
+    - state: surgical_case_closed
+      map: [ "closedLayer" ]
+      visible: false
+  - type: Item
+    size: Small
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,5,1 # 3 slots
+    whitelist:
+      components:
+      - CMScalpel
+      - CMHemostat
+      - CMRetractor
+      tags:
+      - CMSurgicalLine
+      - CMSynthGraft
+      #TODO FixoVein
+  - type: FixedItemSizeStorage
+  - type: Tag
+    tags:
+      - CMSurgicalCase
+  - type: GenericVisualizer
+    visuals:
+      enum.SharedBagOpenVisuals.BagState:
+        openLayer:
+          Open: { visible: true }
+          Closed: { visible: false }
+        closedLayer:
+          Open: { visible: false }
+          Closed: { visible: true }
+  - type: Appearance
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno
+
+- type: entity
+  parent: CMSurgicalCase
+  id: CMSurgicalCaseFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: CMScalpel
+    - id: CMHemostat
+    - id: CMRetractor

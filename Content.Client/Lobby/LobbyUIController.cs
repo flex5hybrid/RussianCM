@@ -1,10 +1,12 @@
 using System.Linq;
+using Content.Client._RMC14.LinkAccount;
 using Content.Client.Guidebook;
 using Content.Client.Humanoid;
 using Content.Client.Inventory;
 using Content.Client.Lobby.UI;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Station;
+using Content.Shared._RMC14.Armor;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.GameTicking;
@@ -39,10 +41,12 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
     [Dependency] private readonly IStateManager _stateManager = default!;
     [Dependency] private readonly JobRequirementsManager _requirements = default!;
     [Dependency] private readonly MarkingManager _markings = default!;
+    [Dependency] private readonly LinkAccountManager _linkAccount = default!;
     [UISystemDependency] private readonly HumanoidAppearanceSystem _humanoid = default!;
     [UISystemDependency] private readonly ClientInventorySystem _inventory = default!;
     [UISystemDependency] private readonly StationSpawningSystem _spawn = default!;
     [UISystemDependency] private readonly GuidebookSystem _guide = default!;
+    [UISystemDependency] private readonly CMArmorSystem _armorSystem = default!;
 
     private CharacterSetupGui? _characterSetup;
     private HumanoidProfileEditor? _profileEditor;
@@ -75,6 +79,8 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
         _configurationManager.OnValueChanged(CCVars.GameRoleTimers, _ => RefreshProfileEditor());
 
         _configurationManager.OnValueChanged(CCVars.GameRoleWhitelist, _ => RefreshProfileEditor());
+
+        _linkAccount.Updated += RefreshProfileEditor;
     }
 
     private LobbyCharacterPreviewPanel? GetLobbyPreview()
@@ -197,6 +203,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
         _profileEditor?.RefreshAntags();
         _profileEditor?.RefreshJobs();
         _profileEditor?.RefreshLoadouts();
+        _profileEditor?.RefreshRMC(_linkAccount.Tier);
     }
 
     private void SaveProfile()
@@ -430,9 +437,14 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
         if (!_prototypeManager.TryIndex(job.StartingGear, out var gear))
             return;
 
+        _prototypeManager.TryIndex(job.DummyStartingGear, out var dummyGear);
+
         foreach (var slot in slots)
         {
             var itemType = ((IEquipmentLoadout) gear).GetGear(slot.Name);
+
+            if (itemType == string.Empty && dummyGear != null)
+                itemType = ((IEquipmentLoadout) dummyGear).GetGear(slot.Name);
 
             if (_inventory.TryUnequip(dummy, slot.Name, out var unequippedItem, silent: true, force: true, reparent: false))
             {
@@ -442,6 +454,17 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
             if (itemType != string.Empty)
             {
                 var item = EntityManager.SpawnEntity(itemType, MapCoordinates.Nullspace);
+
+                if (EntityManager.TryGetComponent<RMCArmorVariantComponent>(item, out var variantComponent))
+                {
+                    var variantItemProtoId = _armorSystem.GetArmorVariant((item, variantComponent), profile.ArmorPreference);
+                    var variantItem = EntityManager.SpawnEntity(variantItemProtoId, MapCoordinates.Nullspace);
+                    _inventory.TryEquip(dummy, variantItem, slot.Name, true, true);
+                    EntityManager.QueueDeleteEntity(item);
+
+                    continue;
+                }
+
                 _inventory.TryEquip(dummy, item, slot.Name, true, true);
             }
         }

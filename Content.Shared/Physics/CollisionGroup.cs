@@ -25,6 +25,13 @@ public enum CollisionGroup
     // Y dis door passable when all the others impassable / collision.
     DoorPassable       = 1 << 8, // 256 Allows door to close over top, Like blast doors over conveyors for disposals rooms/cargo.
 
+    // RMC14
+    MobCollision = 1 << 24,
+    BarbedBarricade = 1 << 25,
+    BarricadeImpassable = 1 << 26,
+    XenoProjectileImpassable = 1 << 27,
+    DropshipImpassable = 1 << 28,
+
     MapGrid = MapGridHelpers.CollisionGroup, // Map grids, like shuttles. This is the actual grid itself, not the walls or other entities connected to the grid.
 
     // 32 possible groups

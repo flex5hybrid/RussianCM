@@ -77,6 +77,8 @@ namespace Content.Client.Actions
             if (args.Current is not WorldTargetActionComponentState state)
                 return;
 
+            // RMC14
+            component.Rotate = state.Rotate;
             BaseHandleState<WorldTargetActionComponent>(uid, component, state);
         }
 
@@ -328,6 +330,12 @@ namespace Content.Client.Actions
             }
 
             AssignSlot?.Invoke(assignments);
+        }
+
+        public void SetAssignments(List<SlotAssignment> actions)
+        {
+            ClearAssignments?.Invoke();
+            AssignSlot?.Invoke(actions);
         }
 
         public record struct SlotAssignment(byte Hotbar, byte Slot, EntityUid ActionId);

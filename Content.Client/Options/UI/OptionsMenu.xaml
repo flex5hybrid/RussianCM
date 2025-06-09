@@ -1,6 +1,7 @@
 <DefaultWindow xmlns="https://spacestation14.io"
             xmlns:tabs="clr-namespace:Content.Client.Options.UI.Tabs"
             xmlns:imperial="clr-namespace:Content.Client.Imperial.Options"
+            xmlns:options="clr-namespace:Content.Client._RMC14.UserInterface.Options"
             Title="{Loc 'ui-options-title'}"
             MinSize="920 450">  <!-- Imperial Options (OLD: MinSize="800 450) -->
     <TabContainer Name="Tabs" Access="Public">
@@ -8,6 +9,7 @@
         <tabs:GraphicsTab Name="GraphicsTab" />
         <tabs:KeyRebindTab Name="KeyRebindTab" />
         <tabs:AudioTab Name="AudioTab" />
+        <options:VoicelinesTab Name="VoicelinesTab" />
         <tabs:AccessibilityTab Name="AccessibilityTab" />
         <tabs:AdminOptionsTab Name="AdminOptionsTab" />
         <!-- Imperial Options -->

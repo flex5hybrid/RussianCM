@@ -89,6 +89,7 @@
     color: orange
   - type: ItemTogglePointLight
   - type: PhysicalComposition
+  - type: RMCLighter
 
 - type: entity
   name: cheap lighter

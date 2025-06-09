@@ -9,6 +9,10 @@ public sealed class DeliveryVisualizerSystem : VisualizerSystem<DeliveryComponen
 {
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
+<<<<<<< HEAD
+=======
+    [Dependency] private readonly SpriteSystem _sprite = default!;
+>>>>>>> master
 
     private static readonly ProtoId<JobIconPrototype> UnknownIcon = "JobIconUnknown";
 
@@ -24,11 +28,19 @@ public sealed class DeliveryVisualizerSystem : VisualizerSystem<DeliveryComponen
 
         if (!_prototype.TryIndex<JobIconPrototype>(job, out var icon))
         {
+<<<<<<< HEAD
             SpriteSystem.LayerSetTexture((uid, args.Sprite), DeliveryVisualLayers.JobStamp, SpriteSystem.Frame0(_prototype.Index("JobIconUnknown")));
             return;
         }
 
         SpriteSystem.LayerSetTexture((uid, args.Sprite), DeliveryVisualLayers.JobStamp, SpriteSystem.Frame0(icon.Icon));
+=======
+            args.Sprite.LayerSetTexture(DeliveryVisualLayers.JobStamp, _sprite.Frame0(_prototype.Index("JobIconUnknown")));
+            return;
+        }
+
+        args.Sprite.LayerSetTexture(DeliveryVisualLayers.JobStamp, _sprite.Frame0(icon.Icon));
+>>>>>>> master
     }
 }
 
@@ -41,6 +53,7 @@ public enum DeliveryVisualLayers : byte
     PriorityTape,
     Breakage,
     Trash,
+<<<<<<< HEAD
     Bomb,
     BombPrimed,
 }
@@ -50,3 +63,6 @@ public enum DeliverySpawnerVisualLayers : byte
     Contents,
 }
 
+=======
+}
+>>>>>>> master

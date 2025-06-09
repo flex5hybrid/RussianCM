@@ -1,0 +1,23 @@
+stamp-component-stamped-name-cm-default = Штамп
+
+stamp-component-stamped-name-cm-we-ya = We-Ya
+stamp-component-stamped-name-cm-marine = Главное командование морпехов
+stamp-component-stamped-name-cm-cmb = Бюро колониальных маршалов
+stamp-component-stamped-name-cm-provost = Офис провост-маршала
+stamp-component-stamped-name-cm-clf = Фронт освобождения колоний
+stamp-component-stamped-name-cm-spp = Социалистический прогрессивный народ
+stamp-component-stamped-name-cm-free-press = Свободная пресса
+stamp-component-stamped-name-cm-tse = Империя Трёх Солнц
+
+stamp-component-stamped-name-cm-xo = Старший офицер
+stamp-component-stamped-name-cm-co = Командующий офицер
+stamp-component-stamped-name-cm-aso = Офицер вспомогательной поддержки
+stamp-component-stamped-name-cm-cmp = Начальник военной полиции
+stamp-component-stamped-name-cm-cmo = Главный медицинский офицер
+stamp-component-stamped-name-cm-qm = Квартирмейстер
+stamp-component-stamped-name-cm-ce = Главный инженер
+stamp-component-stamped-name-cm-cl = Корпоративный представитель
+stamp-component-stamped-name-cm-mw = Военный смотритель
+
+stamp-component-stamped-name-cm-approve = УТВЕРЖДЕНО
+stamp-component-stamped-name-cm-deny = ОТКЛОНЕНО

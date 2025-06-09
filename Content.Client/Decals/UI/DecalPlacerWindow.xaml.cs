@@ -114,6 +114,8 @@ public sealed partial class DecalPlacerWindow : DefaultWindow
             _zIndex = args.Value;
             UpdateDecalPlacementInfo();
         };
+
+        ShowNonCMCheckbox.OnPressed += _ => Populate(_prototype.EnumeratePrototypes<DecalPrototype>());
     }
 
     private void OnColorPicked(Color color)
@@ -204,8 +206,13 @@ public sealed partial class DecalPlacerWindow : DefaultWindow
     public void Populate(IEnumerable<DecalPrototype> prototypes)
     {
         _decals = new SortedDictionary<string, Texture>();
+
+        var showNonCM = ShowNonCMCheckbox.Pressed;
         foreach (var decalPrototype in prototypes)
         {
+            if (!showNonCM && !decalPrototype.IsCM)
+                continue;
+
             if (decalPrototype.ShowMenu)
                 _decals.Add(decalPrototype.ID, _sprite.Frame0(decalPrototype.Sprite));
         }

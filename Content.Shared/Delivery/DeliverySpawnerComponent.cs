@@ -1,13 +1,22 @@
 using Content.Shared.EntityTable.EntitySelectors;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
+<<<<<<< HEAD
+=======
+using Robust.Shared.Prototypes;
+
+>>>>>>> master
 namespace Content.Shared.Delivery;
 
 /// <summary>
 /// Used to mark entities that are valid for spawning deliveries on.
 /// If this requires power, it needs to be powered to count as a valid spawner.
 /// </summary>
+<<<<<<< HEAD
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+=======
+[RegisterComponent, NetworkedComponent]
+>>>>>>> master
 public sealed partial class DeliverySpawnerComponent : Component
 {
     /// <summary>
@@ -17,6 +26,7 @@ public sealed partial class DeliverySpawnerComponent : Component
     public EntityTableSelector Table = default!;
 
     /// <summary>
+<<<<<<< HEAD
     /// The max amount of deliveries this spawner can hold at a time.
     /// </summary>
     [DataField]
@@ -30,14 +40,19 @@ public sealed partial class DeliverySpawnerComponent : Component
     public int ContainedDeliveryAmount;
 
     /// <summary>
+=======
+>>>>>>> master
     /// The sound to play when the spawner spawns a delivery.
     /// </summary>
     [DataField]
     public SoundSpecifier? SpawnSound = new SoundCollectionSpecifier("DeliverySpawnSounds", AudioParams.Default.WithVolume(-7));
+<<<<<<< HEAD
 
     /// <summary>
     /// The sound to play when a spawner is opened, and spills all the deliveries out.
     /// </summary>
     [DataField]
     public SoundSpecifier? OpenSound = new SoundCollectionSpecifier("storageRustle");
+=======
+>>>>>>> master
 }

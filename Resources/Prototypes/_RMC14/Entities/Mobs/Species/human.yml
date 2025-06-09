@@ -1,0 +1,12 @@
+- type: entity
+  save: false
+  parent: CMBaseMobSpeciesOrganic
+  id: CMMobHuman
+  name: Urist C.M. McHands
+  suffix: RMC14
+  components:
+  - type: Vocal
+    sounds:
+      Male: RMCMaleHuman
+      Unsexed: RMCMaleHuman #sorry fem-leaning enbies
+      Female: RMCFemaleHuman

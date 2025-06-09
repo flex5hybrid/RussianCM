@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Content.Shared._RMC14.Actions;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Actions.Events;
 using Content.Shared.Administration.Logs;
@@ -13,6 +14,8 @@ using Content.Shared.Whitelist;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.GameStates;
 using Robust.Shared.Map;
+using Robust.Shared.Network;
+using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
@@ -21,14 +24,19 @@ namespace Content.Shared.Actions;
 public abstract class SharedActionsSystem : EntitySystem
 {
     [Dependency] protected readonly IGameTiming GameTiming = default!;
-    [Dependency] private   readonly ISharedAdminLogManager _adminLogger = default!;
-    [Dependency] private   readonly ActionBlockerSystem _actionBlockerSystem = default!;
-    [Dependency] private   readonly ActionContainerSystem _actionContainer = default!;
-    [Dependency] private   readonly EntityWhitelistSystem _whitelistSystem = default!;
-    [Dependency] private   readonly RotateToFaceSystem _rotateToFaceSystem = default!;
-    [Dependency] private   readonly SharedAudioSystem _audio = default!;
-    [Dependency] private   readonly SharedInteractionSystem _interactionSystem = default!;
-    [Dependency] private   readonly SharedTransformSystem _transformSystem = default!;
+    [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
+    [Dependency] private readonly SharedInteractionSystem _interactionSystem = default!;
+    [Dependency] private readonly ActionBlockerSystem _actionBlockerSystem = default!;
+    [Dependency] private readonly RotateToFaceSystem _rotateToFaceSystem = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
+    [Dependency] private readonly ActionContainerSystem _actionContainer = default!;
+    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] private readonly RMCActionsSystem _rmcActions = default!;
+
+    // RMC14
+    [Dependency] private readonly INetManager _net = default!;
+    [Dependency] private readonly ISharedPlayerManager _player = default!;
 
     public override void Initialize()
     {
@@ -67,6 +75,63 @@ public abstract class SharedActionsSystem : EntitySystem
         SubscribeLocalEvent<EntityWorldTargetActionComponent, GetActionDataEvent>(OnGetActionData);
 
         SubscribeAllEvent<RequestPerformActionEvent>(OnActionRequest);
+    }
+
+    public override void Update(float frameTime)
+    {
+        base.Update(frameTime);
+
+        var time = GameTiming.CurTime;
+        // RMC14
+        if (_net.IsClient)
+        {
+            if (_player.LocalEntity is not { } ent)
+                return;
+
+            if (!TryComp(ent, out ActionsComponent? actions))
+                return;
+
+            foreach (var action in actions.Actions)
+            {
+                if (!TryGetActionData(action, out var actionComp))
+                    continue;
+
+                if (IsCooldownActive(actionComp, time) || !ShouldResetCharges(actionComp))
+                    continue;
+
+                ResetCharges(action, dirty: true, action: actionComp);
+            }
+
+            return;
+        }
+        // RMC14
+
+        var worldActionQuery = EntityQueryEnumerator<WorldTargetActionComponent>();
+        while (worldActionQuery.MoveNext(out var uid, out var action))
+        {
+            if (IsCooldownActive(action, time) || !ShouldResetCharges(action))
+                continue;
+
+            ResetCharges(uid, dirty: true, action: action);
+        }
+
+        var instantActionQuery = EntityQueryEnumerator<InstantActionComponent>();
+        while (instantActionQuery.MoveNext(out var uid, out var action))
+        {
+            if (IsCooldownActive(action, time) || !ShouldResetCharges(action))
+                continue;
+
+            ResetCharges(uid, dirty: true, action: action);
+        }
+
+        var entityActionQuery = EntityQueryEnumerator<EntityTargetActionComponent>();
+        while (entityActionQuery.MoveNext(out var uid, out var action))
+        {
+            if (IsCooldownActive(action, time) || !ShouldResetCharges(action))
+                continue;
+
+            ResetCharges(uid, dirty: true, action: action);
+        }
     }
 
     private void OnActionMapInit(EntityUid uid, BaseActionComponent component, MapInitEvent args)
@@ -274,6 +339,68 @@ public abstract class SharedActionsSystem : EntitySystem
         Dirty(actionId.Value, action);
     }
 
+    public void SetCharges(EntityUid? actionId, int? charges)
+    {
+        if (!TryGetActionData(actionId, out var action) ||
+            action.Charges == charges)
+        {
+            return;
+        }
+
+        action.Charges = charges;
+        UpdateAction(actionId, action);
+        Dirty(actionId.Value, action);
+    }
+
+    public int? GetCharges(EntityUid? actionId)
+    {
+        if (!TryGetActionData(actionId, out var action))
+            return null;
+
+        return action.Charges;
+    }
+
+    public void AddCharges(EntityUid? actionId, int addCharges)
+    {
+        if (!TryGetActionData(actionId, out var action) || action.Charges == null || addCharges < 1)
+            return;
+
+        action.Charges += addCharges;
+        UpdateAction(actionId, action);
+        Dirty(actionId.Value, action);
+    }
+
+    public void RemoveCharges(EntityUid? actionId, int? removeCharges)
+    {
+        if (!TryGetActionData(actionId, out var action) || action.Charges == null)
+            return;
+
+        if (removeCharges == null)
+            action.Charges = removeCharges;
+        else
+            action.Charges -= removeCharges;
+
+        if (action.Charges is < 0)
+            action.Charges = null;
+
+        UpdateAction(actionId, action);
+        Dirty(actionId.Value, action);
+    }
+
+    public void ResetCharges(EntityUid? actionId, bool update = false, bool dirty = false, BaseActionComponent? action = null)
+    {
+        if ((actionId == null || action == null) && !TryGetActionData(actionId, out action))
+            return;
+
+        action.Charges = action.MaxCharges;
+
+        if (update)
+            UpdateAction(actionId, action);
+
+        if (dirty)
+            Dirty(actionId.Value, action);
+    }
+
     private void OnActionsGetState(EntityUid uid, ActionsComponent component, ref ComponentGetState args)
     {
         args.State = new ActionsComponentState(GetNetEntitySet(component.Actions));
@@ -369,7 +496,10 @@ public abstract class SharedActionsSystem : EntitySystem
                 }
 
                 var entityCoordinatesTarget = GetCoordinates(netCoordinatesTarget);
-                _rotateToFaceSystem.TryFaceCoordinates(user, _transformSystem.ToMapCoordinates(entityCoordinatesTarget).Position);
+
+                // RMC14
+                if (worldAction.Rotate)
+                    _rotateToFaceSystem.TryFaceCoordinates(user, _transformSystem.ToMapCoordinates(entityCoordinatesTarget).Position);
 
                 if (!ValidateWorldTarget(user, entityCoordinatesTarget, (actionEnt, worldAction)))
                     return;
@@ -423,6 +553,9 @@ public abstract class SharedActionsSystem : EntitySystem
                 performEvent = instantAction.Event;
                 break;
         }
+
+        if (!_rmcActions.CanUseActionPopup(user, actionEnt))
+            return;
 
         // All checks passed. Perform the action!
         PerformAction(user, component, actionEnt, action, performEvent, curTime);

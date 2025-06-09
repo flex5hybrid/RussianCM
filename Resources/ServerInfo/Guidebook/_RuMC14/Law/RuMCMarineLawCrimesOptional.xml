@@ -1,0 +1,90 @@
+﻿<Document>
+  # Опциональные преступления
+  - Эти преступления могут быть добавлены к уже существующим обвинениям, если это необходимо.
+  <Table Columns="4">
+    <ColorBox>
+      <Box>
+        Преступления
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Описание
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Лёгкие
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Тяжелые
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Сопротивление аресту.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Сопротивление законному аресту или обыску офицером военной полиции.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Отказ подчиниться законному обыску или аресту.\n[bold]5 минут.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Сопротивление законному аресту проводимому военным полицеством путем бегства или применения силы.\n[bold]10 минут.[/bold].
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Пособничество и подстрекательство
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Помощь другим в совершении преступления, прямо или косвенно, или побуждение их к совершению преступления. Любое лицо, оказывающее помощь и пособничество, должно быть осведомлено о преступлениях того, кому оно помогало.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]Наказание аналогичное совершенному преступлению.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        [bold]Наказание аналогичное совершенному преступлению.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Нарушение процедуры во время заключения
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Причинение значительных неудобств во время нахождения на гауптвахте и под арестом. Это может быть добавлено к любому обвинению.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Совершение лёгкого преступления, будучи под арестом или в тюрьме.\n[bold]6 минут.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Совершение тяжкого преступления, будучи под арестом ареста или в тюрьме.[bold]15 минут[/bold].
+      </Box>
+    </ColorBox>
+
+  </Table>
+</Document>

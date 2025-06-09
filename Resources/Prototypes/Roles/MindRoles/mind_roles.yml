@@ -239,7 +239,10 @@
   components:
   - type: MindRole
     antagPrototype: Thief
+<<<<<<< HEAD
     subtype: role-subtype-thief
+=======
+>>>>>>> master
   - type: ThiefRole
 
 # Traitors
@@ -251,7 +254,10 @@
   - type: MindRole
     antagPrototype: Traitor
     exclusiveAntag: true
+<<<<<<< HEAD
     subtype: role-subtype-traitor
+=======
+>>>>>>> master
   - type: TraitorRole
 
 - type: entity
@@ -269,7 +275,10 @@
   components:
   - type: MindRole
     roleType: TeamAntagonist
+<<<<<<< HEAD
     subtype: role-subtype-traitor-reinforcement
+=======
+>>>>>>> master
     antagPrototype: GenericTeamAntagonist
 
 # Wizards
@@ -281,7 +290,10 @@
   - type: MindRole
     antagPrototype: Wizard
     exclusiveAntag: true
+<<<<<<< HEAD
     subtype: role-subtype-wizard
+=======
+>>>>>>> master
   - type: WizardRole
 
 # Zombie Squad

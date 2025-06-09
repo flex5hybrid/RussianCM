@@ -2,7 +2,7 @@
 # Straight in-game baby
 lobbyenabled = false
 # Dev map for faster loading & convenience
-map = "Dev"
+map = "RMCDev"
 role_timers = false
 
 [events]
@@ -18,9 +18,14 @@ generator_enabled = false
 [movement]
 mob_pushing = true
 
+[net]
+tickrate = 15
+
 [physics]
 # Makes mapping annoying
 grid_splitting = false
+maxlinvelocity = 72
+target_minimum_tickrate = 90
 
 [procgen]
 preload = false
@@ -42,3 +47,5 @@ see_own_notes = true
 random_characters = true
 random_species_weights = ""
 ssd_sleep_time = 3600
+[rmc]
+planet_map_vote = false

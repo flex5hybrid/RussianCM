@@ -1,8 +1,13 @@
 - type: species
   id: Vox
   name: species-name-vox
+<<<<<<< HEAD
   roundStart: false # Imperial Space
   prototype: MobVox
+=======
+  roundStart: false # sad
+  prototype: CMMobVox
+>>>>>>> master
   sprites: MobVoxSprites
   markingLimits: MobVoxMarkingLimits
   dollPrototype: MobVoxDummy
@@ -24,6 +29,8 @@
     UndergarmentTop: MobHumanoidAnyMarking
     UndergarmentBottom: MobHumanoidAnyMarking
     Chest: MobVoxTorso
+    Underwear: MobHumanoidAnyMarking
+    Undershirt: MobHumanoidAnyMarking
     Eyes: MobVoxEyes
     LArm: MobVoxLArm
     RArm: MobVoxRArm
@@ -61,6 +68,15 @@
       required: true
       defaultMarkings: [ VoxLLegScales, VoxRLegScales, VoxRFootScales, VoxLFootScales ]
     UndergarmentTop:
+<<<<<<< HEAD
+=======
+      points: 1
+      required: false
+    UndergarmentBottom:
+      points: 1
+      required: false
+    Chest:
+>>>>>>> master
       points: 1
       required: false
     UndergarmentBottom:

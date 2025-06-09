@@ -40,7 +40,11 @@ namespace Content.Client.Construction.UI
         event EventHandler ClearAllGhosts;
 
         void ClearRecipeInfo();
+<<<<<<< HEAD
         void SetRecipeInfo(string name, string description, EntityPrototype? targetPrototype, bool isItem, bool isFavorite);
+=======
+        void SetRecipeInfo(string name, string description, Texture iconTexture, Color iconColor, bool isItem, bool isFavorite);
+>>>>>>> master
         void ResetPlacement();
 
         #region Window Control
@@ -158,17 +162,26 @@ namespace Content.Client.Construction.UI
         }
 
         public void SetRecipeInfo(
+<<<<<<< HEAD
             string name,
             string description,
             EntityPrototype? targetPrototype,
             bool isItem,
             bool isFavorite)
+=======
+            string name, string description, Texture iconTexture, Color iconColor, bool isItem, bool isFavorite)
+>>>>>>> master
         {
             BuildButton.Disabled = false;
             BuildButton.Text = Loc.GetString(isItem ? "construction-menu-place-ghost" : "construction-menu-craft");
             TargetName.SetMessage(name);
             TargetDesc.SetMessage(description);
+<<<<<<< HEAD
             TargetTexture.SetPrototype(targetPrototype?.ID);
+=======
+            TargetTexture.Texture = iconTexture;
+            TargetTexture.Modulate = iconColor;
+>>>>>>> master
             FavoriteButton.Visible = true;
             FavoriteButton.Text = Loc.GetString(
                             isFavorite ? "construction-add-favorite-button" : "construction-remove-from-favorite-button");
@@ -179,7 +192,12 @@ namespace Content.Client.Construction.UI
             BuildButton.Disabled = true;
             TargetName.SetMessage(string.Empty);
             TargetDesc.SetMessage(string.Empty);
+<<<<<<< HEAD
             TargetTexture.SetPrototype(null);
+=======
+            TargetTexture.Texture = null;
+            TargetTexture.Modulate = Color.White;
+>>>>>>> master
             FavoriteButton.Visible = false;
             RecipeStepList.Clear();
         }

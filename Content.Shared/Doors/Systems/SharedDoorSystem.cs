@@ -16,6 +16,9 @@ using Content.Shared.Stunnable;
 using Content.Shared.Tag;
 using Content.Shared.Tools.Systems;
 using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Map.Components;
+using Robust.Shared.Network;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
@@ -589,6 +592,9 @@ public abstract partial class SharedDoorSystem : EntitySystem
                 continue;
 
             if ((physics.CollisionMask & otherPhysics.Comp.CollisionLayer) == 0 && (otherPhysics.Comp.CollisionMask & physics.CollisionLayer) == 0)
+                continue;
+
+            if (otherPhysics.Comp.CollisionLayer == (int) CollisionGroup.DropshipImpassable)
                 continue;
 
             yield return otherPhysics.Owner;

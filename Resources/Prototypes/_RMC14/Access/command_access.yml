@@ -1,0 +1,40 @@
+﻿- type: accessLevel
+  id: CMAccessCommand
+  name: id-card-access-level-command
+
+- type: accessLevel
+  id: CMAccessCMP
+  name: cm-job-name-chief-mp
+
+- type: accessLevel
+  id: CMAccessQM
+  name: id-card-access-level-quartermaster
+
+- type: accessLevel
+  id: CMAccessSEA
+  name: cm-job-name-senior-enlisted-advisor
+
+- type: accessLevel
+  id: CMAccessCO
+  name: cm-job-name-commanding-officer
+
+- type: accessLevel
+  id: CMAccessCMO
+  name: cm-job-name-cmo
+
+- type: accessLevel
+  id: CMAccessCE
+  name: cm-job-name-ce
+
+- type: accessLevel
+  id: CMAccessASO
+  name: cm-job-name-aso
+
+- type: accessLevel
+  id: CMAccessCorp
+  name: cm-job-name-corp
+
+# Admin only.
+- type: accessLevel
+  id: CMAccessHighCommand
+  name: cm-job-name-high-command

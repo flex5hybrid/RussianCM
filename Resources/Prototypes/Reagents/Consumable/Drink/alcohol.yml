@@ -937,13 +937,15 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.05
+      - !type:EqualHealthChange
+        damage:
+        - Brute: -0.13
+        - Burn: -0.13
+        - Toxin: -0.25
       - !type:HealthChange
         damage:
-          groups:
-            Burn: -1
-            Brute: -1
-            Airloss: -1
-            Toxin: -1
+          types:
+            Asphyxiation: -0.25
 
 - type: reagent
   id: DriestMartini

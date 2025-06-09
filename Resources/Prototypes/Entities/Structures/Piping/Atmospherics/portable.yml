@@ -186,6 +186,10 @@
   - type: GuideHelp
     guides:
     - Thermomachines
+  - type: ActivatableUIBlacklist
+    blacklist:
+      components:
+      - Xeno
 
 - type: entity
   parent: SpaceHeater

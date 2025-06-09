@@ -35,6 +35,9 @@
     groups:
     - AllAccess
     - Silicon
+    - ShipMasterAccess
+    - Corp
+    - Colony
     tags:
     - NuclearOperative
     - SyndicateAgent
@@ -54,6 +57,16 @@
       enum.GeneralStationRecordConsoleKey.Key:
       # who the fuck named this bruh
         type: GeneralStationRecordConsoleBoundUserInterface
+      enum.XenoFindParasiteUI.Key:
+        type: FindParasiteBoundUserInterface
+        requireInputValidation: false
+      enum.DialogUiKey.Key:
+        type: DialogBui
+        requireInputValidation: false
+      enum.TacticalMapUserUi.Key:
+        type: TacticalMapUserBui
+      enum.ViewIntelObjectivesUI.Key:
+        type: ViewIntelObjectivesBui
   - type: IntrinsicUI
     uis:
       enum.SolarControlConsoleUiKey.Key:
@@ -101,6 +114,9 @@
   - type: Loadout
     prototypes: [ MobAghostGear ]
   - type: BypassInteractionChecks
+  - type: ParalyzeOnPullAttemptImmune
+  - type: BypassSkillChecks
+  - type: SeeNewPlayers
 
 - type: entity
   id: ActionAGhostShowSolar

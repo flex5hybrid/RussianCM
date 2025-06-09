@@ -14,18 +14,31 @@ public sealed class PaperVisualizerSystem : VisualizerSystem<PaperVisualsCompone
             return;
 
         if (AppearanceSystem.TryGetData<PaperStatus>(uid, PaperVisuals.Status, out var writingStatus, args.Component))
+<<<<<<< HEAD
             _sprite.LayerSetVisible((uid, args.Sprite), PaperVisualLayers.Writing, writingStatus == PaperStatus.Written);
+=======
+            args.Sprite.LayerSetVisible(PaperVisualLayers.Writing, writingStatus == PaperStatus.Written);
+>>>>>>> master
 
         if (AppearanceSystem.TryGetData<string>(uid, PaperVisuals.Stamp, out var stampState, args.Component))
         {
             if (stampState != string.Empty)
             {
+<<<<<<< HEAD
                 _sprite.LayerSetRsiState((uid, args.Sprite), PaperVisualLayers.Stamp, stampState);
                 _sprite.LayerSetVisible((uid, args.Sprite), PaperVisualLayers.Stamp, true);
             }
             else
             {
                 _sprite.LayerSetVisible((uid, args.Sprite), PaperVisualLayers.Stamp, false);
+=======
+                args.Sprite.LayerSetState(PaperVisualLayers.Stamp, stampState);
+                args.Sprite.LayerSetVisible(PaperVisualLayers.Stamp, true);
+            }
+            else
+            {
+                args.Sprite.LayerSetVisible(PaperVisualLayers.Stamp, false);
+>>>>>>> master
             }
 
         }

@@ -1,0 +1,33 @@
+- type: entity
+  id: CMClosetEmergencyFilled
+  parent: CMClosetEmergency
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: CMMaskGas
+##      - id: EmergencyOxygenTankFilled
+      - id: CMFirstAidO2KitFilled
+      - id: CMFlare
+
+- type: entity
+  id: CMClosetFireFilled
+  parent: CMClosetFire
+  suffix: Filled
+  components:
+    - type: StorageFill
+      contents:
+        - id: CMMaskGas
+ ##       - id: EmergencyOxygenTankFilled
+        - id: CMFireExtinguisher
+        - id: CMBurnAidKitFilled
+
+- type: entity
+  parent: CMLockerCommanderSecure
+  id: CMLockerCommanderSecureFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: RMCKitHonorGuard
+      - id: RMCKitHonorGuard

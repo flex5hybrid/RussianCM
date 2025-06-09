@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Content.Shared._RMC14.CombatMode;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Logs;
 using Content.Shared.CCVar;
@@ -337,6 +338,12 @@ namespace Content.Shared.Interaction
         /// <returns></returns>
         public bool CombatModeCanHandInteract(EntityUid user, EntityUid? target)
         {
+            // RMC14
+            var ev = new RMCCombatModeInteractOverrideUserEvent(target);
+            RaiseLocalEvent(user, ref ev);
+            if (ev.Handled)
+                return ev.CanInteract;
+
             // Always allow attack in these cases
             if (target == null || !_handsQuery.TryComp(user, out var hands) || hands.ActiveHand?.HeldEntity is not null)
                 return false;
@@ -349,7 +356,7 @@ namespace Content.Shared.Interaction
             if (!_itemQuery.HasComp(target))
                 return false;
 
-            var combatEv = new CombatModeShouldHandInteractEvent();
+            var combatEv = new CombatModeShouldHandInteractEvent(user);
             RaiseLocalEvent(target.Value, ref combatEv);
 
             if (combatEv.Cancelled)
@@ -1495,7 +1502,7 @@ namespace Content.Shared.Interaction
     /// </summary>
     /// <param name="Cancelled">Whether the hand interaction should be cancelled.</param>
     [ByRefEvent]
-    public record struct CombatModeShouldHandInteractEvent(bool Cancelled = false);
+    public record struct CombatModeShouldHandInteractEvent(EntityUid User, bool Cancelled = false);
 
     /// <summary>
     /// Override event raised directed on the user to say the target is accessible.

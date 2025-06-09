@@ -31,7 +31,10 @@
               acts: ["Destruction"]
     - type: Visibility
       layer: 1
+<<<<<<< HEAD
     - type: Appearance
+=======
+>>>>>>> master
     - type: SubFloorHide
       blockAmbience: false
       blockInteractions: false

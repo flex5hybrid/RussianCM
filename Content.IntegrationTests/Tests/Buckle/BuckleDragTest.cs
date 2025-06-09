@@ -34,7 +34,7 @@ public sealed class BuckleDragTest : InteractionTest
         Assert.That(pullable.BeingPulled, Is.False);
 
         // Strap the human to the chair
-        await Server.WaitAssertion(() =>
+        await Server.WaitPost(() =>
         {
             Assert.That(Server.System<SharedBuckleSystem>().TryBuckle(sUrist, SPlayer, STarget.Value));
         });

@@ -2,10 +2,18 @@
   id: NamesArachnidFirst
   values:
     prefix: names-arachnid-first-dataset-
+<<<<<<< HEAD
     count: 64 # Imperial Space
+=======
+    count: 73
+>>>>>>> master
 
 - type: localizedDataset
   id: NamesArachnidLast
   values:
     prefix: names-arachnid-last-dataset-
+<<<<<<< HEAD
     count: 66 # Imperial Space
+=======
+    count: 68
+>>>>>>> master

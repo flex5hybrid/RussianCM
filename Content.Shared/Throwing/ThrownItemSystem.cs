@@ -1,8 +1,8 @@
 using System.Linq;
+using Content.Shared._RMC14.Throwing;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Gravity;
-using Content.Shared.Physics;
 using Content.Shared.Movement.Pulling.Events;
 using Robust.Shared.Network;
 using Robust.Shared.Physics;
@@ -72,6 +72,10 @@ namespace Content.Shared.Throwing
 
         private void PreventCollision(EntityUid uid, ThrownItemComponent component, ref PreventCollideEvent args)
         {
+            // RMC14
+            if (HasComp<ThrownHitUserComponent>(uid))
+                return;
+
             if (args.OtherEntity == component.Thrower)
             {
                 args.Cancelled = true;

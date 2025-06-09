@@ -1,0 +1,13 @@
+﻿- type: department
+  parent: CMDepartmentBase
+  id: CMMedbay
+  name: department-CMMedbay
+  description: cm-department-Medical-description
+  color: "#008160"
+  roles:
+  - CMCMO
+  - CMDoctor
+  - CMResearcher
+  - CMNurse
+  departmentRadio: MarineMedical
+  headOfDepartment: CMCMO

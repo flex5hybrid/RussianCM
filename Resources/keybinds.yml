@@ -191,6 +191,7 @@ binds:
 - function: OpenCharacterMenu
   type: State
   key: C
+  mod1: Shift
 - function: OpenEmotesMenu
   type: State
   key: Y
@@ -654,3 +655,54 @@ binds:
   key: Right
 
 # Imperial Options End
+
+
+
+# RMC14
+- function: RMCActivateAttachableRail
+  type: State
+  key: G
+  mod1: Shift
+- function: RMCActivateAttachableStock
+  type: State
+  key: X
+  mod1: Shift
+- function: RMCActivateAttachableUnderbarrel
+  type: State
+  key: Space
+  mod1: Shift
+- function: RMCCycleFireMode
+  type: State
+  key: Space
+  mod1: Control
+- function: CMUniqueAction
+  type: State
+  key: Space
+- function: CMHolsterPrimary
+  type: State
+  key: F
+- function: CMHolsterSecondary
+  type: State
+  key: F
+  mod1: Shift
+- function: CMHolsterTertiary
+  type: State
+  key: F
+  mod1: Control
+- function: CMHolsterQuaternary
+  type: State
+  key: F
+  mod1: Alt
+- function: CMXenoWideSwing
+  type: State
+  key: Space
+- function: RMCPickUpDroppedItems
+  type: State
+  key: R
+- function: RMCInteractWithOtherHand
+  type: State
+  key: C
+- function: RMCRest
+  type: State
+  key: R
+  mod1: Shift

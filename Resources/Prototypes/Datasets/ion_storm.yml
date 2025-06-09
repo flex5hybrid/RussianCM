@@ -156,6 +156,7 @@
 - type: dataset
   id: IonStormAllergies
   values:
+<<<<<<< HEAD
   - КИСЛОТУ
   - ВОЗДУХ
   - КРОВЬ
@@ -190,6 +191,41 @@
   - КОСМОС
   - СОЛНЕЧНЫЙ СВЕТ
   - ВОДУ
+=======
+  - ACID
+  - AIR
+  - BLOOD
+  - BOOKS
+  - CARBON DIOXIDE
+  - CLOTHES
+  - CLOWNS
+  - COLD
+  - COTTON
+  - CYBORG CONTACT
+  - DARKNESS
+  - DRINKS
+  - ELECTRICITY
+  - EVERYTHING
+  - FLOORS
+  - FOOD
+  - GLASS
+  - HAPPINESS
+  - HUMANOID CONTACT
+  - HUMOR
+  - LIGHT
+  - MEAT
+  - MEDICINE
+  - METAL
+  - NUTS
+  - OXYGEN
+  - PAIN
+  - PLANTS
+  - PLASMA
+  - ROBOTS
+  - SPACE
+  - SUNLIGHT
+  - WATER
+>>>>>>> master
 
 # Severity is how bad the allergy is.
 - type: dataset
@@ -254,6 +290,7 @@
 - type: dataset
   id: IonStormConcepts
   values:
+<<<<<<< HEAD
   - АМЕРИКАНИЗМ
   - АНАРХИЯ
   - ИСКУССТВО
@@ -308,6 +345,63 @@
   - ВРЕМЯ
   - СОСТОЯТЕЛЬНОСТЬ
   - ЧУДО
+=======
+  - ABSTRACTION
+  - ANARCHY
+  - ART
+  - BADNESS
+  - BALDNESS
+  - BRAVERY
+  - CAPITALISM
+  - CHAOS
+  - COLORFULNESS
+  - COMEDY
+  - COMMUNISM
+  - COMPUTING
+  - CONFUSION
+  - CRUELTY
+  - DEATH
+  - EXISTENCE
+  - FINANCIAL SECURITY
+  - FREEDOM
+  - FRESHNESS
+  - GOODNESS
+  - GRAVITY
+  - HAPPINESS
+  - HONOR
+  - HUBRIS
+  - HUMANITY
+  - HUMOR
+  - IMAGINATION
+  - INFATUATION
+  - INTELLIGENCE
+  - JOY
+  - KINDNESS
+  - LIFE
+  - LOGIC
+  - MARXISM
+  - MISERY
+  - MYSTERY
+  - NASTINESS
+  - OPPRESSION
+  - PAIN
+  - PHYSICS
+  - POVERTY
+  - PROGRESS
+  - REALITY
+  - REVOLUTION
+  - SADNESS
+  - STARVATION
+  - SUFFERING
+  - TECHNOLOGY
+  - TEMPERATURE
+  - THE FUTURE
+  - THE PAST
+  - THE PRESENT
+  - TIME
+  - WEALTHINESS
+  - WONDER
+>>>>>>> master
 
 # Crew is any specific job. Using jobs instead of specific crewmembers since "THE CLOWN" is easier than
 # seeing "JOHN SMITH" and having to figure out who john smith is.

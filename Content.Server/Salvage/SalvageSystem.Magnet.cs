@@ -164,7 +164,12 @@ public sealed partial class SalvageSystem
                         uid = _transform.GetParentUid(uid);
                         if (_mobStateQuery.HasComp(uid))
                             return true;
+<<<<<<< HEAD
                     } while (uid != xform.GridUid && uid != EntityUid.Invalid);
+=======
+                    }
+                    while (uid != xform.GridUid && uid != EntityUid.Invalid);
+>>>>>>> master
                     return false;
                 }
 

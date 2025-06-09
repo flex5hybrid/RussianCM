@@ -8,7 +8,7 @@
   - type: Sprite
     noRot: true
     drawdepth: Mobs
-  - type: MobCollision
+#  - type: MobCollision # RMC14
   - type: Physics
     bodyType: KinematicController
   - type: Fixtures
@@ -84,7 +84,6 @@
         sound:
           collection: MeatLaserImpact
   - type: RadiationReceiver
-  - type: Stamina
   - type: MobState
   - type: MobThresholds
     thresholds:
@@ -213,7 +212,7 @@
   id: MobRespirator
   abstract: true
   components:
-  - type: Internals
+#  - type: Internals
   - type: Respirator
     damage:
       types:

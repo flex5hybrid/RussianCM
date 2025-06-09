@@ -1,0 +1,23 @@
+﻿- type: entity
+  parent: CMIDCardSilver
+  id: CMIDCardChiefMP
+  name: chief MP ID card
+  components:
+  - type: PresetIdCard
+    job: CMChiefMP
+
+- type: entity
+  parent: CMIDCardBase
+  id: CMIDCardMilitaryWarden
+  name: warden ID card
+  components:
+  - type: PresetIdCard
+    job: CMMilitaryWarden
+
+- type: entity
+  parent: CMIDCardBase
+  id: CMIDCardMilitaryPolice
+  name: military police ID card
+  components:
+  - type: PresetIdCard
+    job: CMMilitaryPolice

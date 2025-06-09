@@ -1,0 +1,8 @@
+﻿- type: jobIcon
+  parent: JobIcon
+  id: CMJobIconBase
+  abstract: true
+  icon:
+    sprite: _RMC14/Interface/cm_job_icons.rsi
+  locationPreference: Left
+  offset: 3

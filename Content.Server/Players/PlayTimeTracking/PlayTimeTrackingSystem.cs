@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Server._RMC14.PlayTimeTracking;
 using Content.Server.Administration;
 using Content.Server.Administration.Managers;
 using Content.Server.Afk;
@@ -39,6 +40,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
     [Dependency] private readonly SharedRoleSystem _roles = default!;
     [Dependency] private readonly PlayTimeTrackingManager _tracking = default!;
+    [Dependency] private readonly RMCPlayTimeManager _rmcPlayTime = default!;
 
     public override void Initialize()
     {
@@ -75,11 +77,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
             return;
 
         if (_adminManager.IsAdmin(player))
-        {
             trackers.Add(PlayTimeTrackingShared.TrackerAdmin);
-            trackers.Add(PlayTimeTrackingShared.TrackerOverall);
-            return;
-        }
 
         if (!IsPlayerAlive(player))
             return;
@@ -196,6 +194,9 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
             !_cfg.GetCVar(CCVars.GameRoleTimers))
             return true;
 
+        if (_rmcPlayTime.IsExcluded(player, role))
+            return true;
+
         if (!_tracking.TryGetTrackerTimes(player, out var playTimes))
         {
             Log.Error($"Unable to check playtimes {Environment.StackTrace}");
@@ -223,6 +224,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
                 roles.Add(job.ID);
         }
 
+        _rmcPlayTime.RemoveWhereExcluded(player, roles);
         return roles;
     }
 
@@ -239,6 +241,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
             playTimes ??= new Dictionary<string, TimeSpan>();
         }
 
+        var excluded = _rmcPlayTime.GetExcluded(userId);
         for (var i = 0; i < jobs.Count; i++)
         {
             if (_prototypes.TryIndex(jobs[i], out var job)
@@ -246,6 +249,9 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
             {
                 continue;
             }
+
+            if (job != null && excluded != null && excluded.Contains(job.ID))
+                continue;
 
             jobs.RemoveSwap(i);
             i--;

@@ -16,6 +16,7 @@ using Robust.Shared.Prototypes;
 namespace Content.IntegrationTests.Tests.Round;
 
 [TestFixture]
+[Ignore("RMC14 does not use upstream roles")]
 public sealed class JobTest
 {
     private static readonly ProtoId<JobPrototype> Passenger = "Passenger";

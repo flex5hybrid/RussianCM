@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using Content.Client.Light.Components;
 using Content.Shared.Light.Components;
 using Robust.Client.GameObjects;
@@ -89,3 +90,10 @@ public sealed class ExpendableLightSystem : VisualizerSystem<ExpendableLightComp
         }
     }
 }
+=======
+using Content.Shared.Light.EntitySystems;
+
+namespace Content.Client.Light.EntitySystems;
+
+public sealed class ExpendableLightSystem : SharedExpendableLightSystem;
+>>>>>>> master

@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 using Content.Shared.Cargo.Prototypes;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
+=======
+using Robust.Shared.Audio;
+using Robust.Shared.GameStates;
+>>>>>>> master
 
 namespace Content.Shared.Delivery;
 
@@ -25,6 +30,7 @@ public sealed partial class DeliveryComponent : Component
     public bool IsLocked = true;
 
     /// <summary>
+<<<<<<< HEAD
     /// The base amount of spesos that gets added to the station bank account on unlock.
     /// </summary>
     [DataField, AutoNetworkedField]
@@ -35,6 +41,12 @@ public sealed partial class DeliveryComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public int BaseSpesoPenalty = 250;
+=======
+    /// The amount of spesos that gets added to the station bank account on unlock.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public int SpesoReward = 500;
+>>>>>>> master
 
     /// <summary>
     /// The name of the recipient of this delivery.
@@ -57,6 +69,7 @@ public sealed partial class DeliveryComponent : Component
     public EntityUid? RecipientStation;
 
     /// <summary>
+<<<<<<< HEAD
     /// The bank account ID of the account to subtract funds from in case of penalization
     /// </summary>
     [DataField, AutoNetworkedField]
@@ -70,6 +83,8 @@ public sealed partial class DeliveryComponent : Component
     public bool WasPenalized;
 
     /// <summary>
+=======
+>>>>>>> master
     /// The sound to play when the delivery is unlocked.
     /// </summary>
     [DataField]

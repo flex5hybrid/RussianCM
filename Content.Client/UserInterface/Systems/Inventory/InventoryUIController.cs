@@ -1,5 +1,7 @@
 using System.Linq;
 using System.Numerics;
+using Content.Client._RMC14.Medal;
+using Content.Client._RMC14.Webbing;
 using Content.Client.Gameplay;
 using Content.Client.Hands.Systems;
 using Content.Client.Inventory;
@@ -27,7 +29,7 @@ using static Content.Client.Inventory.ClientInventorySystem;
 namespace Content.Client.UserInterface.Systems.Inventory;
 
 public sealed class InventoryUIController : UIController, IOnStateEntered<GameplayState>, IOnStateExited<GameplayState>,
-    IOnSystemChanged<ClientInventorySystem>, IOnSystemChanged<HandsSystem>
+    IOnSystemChanged<ClientInventorySystem>, IOnSystemChanged<HandsSystem>, IOnSystemChanged<WebbingSystem>, IOnSystemChanged<PlaytimeMedalSystem>
 {
     [Dependency] private readonly IEntityManager _entities = default!;
 
@@ -35,6 +37,7 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
     [UISystemDependency] private readonly HandsSystem _handsSystem = default!;
     [UISystemDependency] private readonly ContainerSystem _container = default!;
     [UISystemDependency] private readonly SpriteSystem _sprite = default!;
+    [UISystemDependency] private readonly WebbingSystem _webbing = default!;
 
     private EntityUid? _playerUid;
     private InventorySlotsComponent? _playerInventory;
@@ -347,7 +350,7 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
 
         if (!fits && _entities.TryGetComponent<StorageComponent>(container.ContainedEntity, out var storage))
         {
-            fits = _entities.System<StorageSystem>().CanInsert(container.ContainedEntity.Value, held, out _, storage);
+            fits = _entities.System<StorageSystem>().CanInsert(container.ContainedEntity.Value, held, player.Value, out _, storage);
         }
         else if (!fits && _entities.TryGetComponent<ItemSlotsComponent>(container.ContainedEntity, out var itemSlots))
         {
@@ -496,5 +499,30 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
     {
         if (_lastHovered != null)
             UpdateHover(_lastHovered);
+    }
+
+    public void OnSystemLoaded(WebbingSystem system)
+    {
+        system.PlayerWebbingUpdated += InventoryUpdated;
+    }
+
+    public void OnSystemUnloaded(WebbingSystem system)
+    {
+        system.PlayerWebbingUpdated -= InventoryUpdated;
+    }
+
+    public void OnSystemLoaded(PlaytimeMedalSystem system)
+    {
+        system.PlayerMedalUpdated += InventoryUpdated;
+    }
+
+    public void OnSystemUnloaded(PlaytimeMedalSystem system)
+    {
+        system.PlayerMedalUpdated -= InventoryUpdated;
+    }
+
+    private void InventoryUpdated()
+    {
+        UpdateInventoryHotbar(_playerInventory);
     }
 }

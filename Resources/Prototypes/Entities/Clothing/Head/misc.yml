@@ -382,5 +382,8 @@
   - type: HideLayerClothing
     slots:
     - Hair
+<<<<<<< HEAD
     - HeadTop
     - HeadSide
+=======
+>>>>>>> master

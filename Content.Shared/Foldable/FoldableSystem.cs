@@ -30,6 +30,10 @@ public sealed class FoldableSystem : EntitySystem
 
         SubscribeLocalEvent<FoldableComponent, ComponentInit>(OnFoldableInit);
         SubscribeLocalEvent<FoldableComponent, ContainerGettingInsertedAttemptEvent>(OnInsertEvent);
+<<<<<<< HEAD
+=======
+        SubscribeLocalEvent<FoldableComponent, InsertIntoEntityStorageAttemptEvent>(OnStoreThisAttempt);
+>>>>>>> master
         SubscribeLocalEvent<FoldableComponent, StorageOpenAttemptEvent>(OnFoldableOpenAttempt);
         SubscribeLocalEvent<FoldableComponent, EntityStorageInsertedIntoAttemptEvent>(OnEntityStorageAttemptInsert);
 
@@ -52,9 +56,15 @@ public sealed class FoldableSystem : EntitySystem
             args.Cancelled = true;
     }
 
+<<<<<<< HEAD
     public void OnStrapAttempt(EntityUid uid, FoldableComponent comp, ref StrapAttemptEvent args)
     {
         if (comp.IsFolded)
+=======
+    public void OnStoreThisAttempt(EntityUid uid, FoldableComponent comp, ref InsertIntoEntityStorageAttemptEvent args)
+    {
+        if (comp.IsFolded && !comp.FitIntoEntityStorage)
+>>>>>>> master
             args.Cancelled = true;
     }
 
@@ -118,10 +128,13 @@ public sealed class FoldableSystem : EntitySystem
         if (_container.IsEntityInContainer(uid) && !fold.CanFoldInsideContainer)
             return false;
 
+<<<<<<< HEAD
         if (!TryComp(uid, out PhysicsComponent? body) ||
             !_anchorable.TileFree(Transform(uid).Coordinates, body))
             return false;
 
+=======
+>>>>>>> master
         var ev = new FoldAttemptEvent(fold);
         RaiseLocalEvent(uid, ref ev);
         return !ev.Cancelled;

@@ -1,0 +1,111 @@
+﻿<Document>
+  # Variable Crimes
+  - Эти преступления могут иметь разную степень тяжести и разные виды наказаний.
+  <Table Columns="4">
+    <ColorBox>
+      <Box>
+        Преступление
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Описание
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Лёгкие
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Тяжкие
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Вред имуществу UNMC
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Повреждение судна или внесение в него каких-либо несанкционированных изменений, как указано в стандартной операционной процедуре.\nМатериалы для ремонта должны быть взяты со складов технического обслуживания.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Разбитое окно, поврежденная стена и т.д.\n[bold]Возвращение корабля в прежнее состояние или срок 7,5 минут, если это невозможно.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Тяжкое нарушение закона включает в себя разрушение стен или нескольких окон.\n[bold]10 минут.[/bold].
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Неповиновение
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Невыполнение законного приказа вышестоящего лица по званию или должности, или неуважение к лицу более высокого звания или должности, не являющемуся офицером.\nНеуважение к вышестоящему офицеру относится к категории мелких преступлений.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Приказ, отданный не лично, или неуважение к человеку, занимающему более высокий ранг или должность, но не являющемуся офицером.\n[bold]7,5 минут.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Приказ, адресованный лично человеку, с использованием его имени или с четким указанием, что он предназначен именно ему.\n[bold]15 минут.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Помеха аресту
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Вмешательство в проведение законного ареста.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Вмешиваться без злого умысла, например, преградить путь или помочь кому-то подняться.\n[bold]7,5 минут.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Вмешательство со злым умыслом или явное препятствование проведению ареста.\n[bold]15 минут.[/bold]
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Неавторизованное использование прослушивающих устройств
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Использование подслушивающих устройств в нарушение стандартных операционных процедур.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Незаконное размещение подслушивающего устройства в общественном месте, например, в спортзале.\n[bold]7,5 минут.[/bold]
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Незаконное размещение подслушивающего устройства в охраняемой зоне или зоне с закрытыми ставнями, например в ЦИК или офисе Корпоративного Связного.\n[italic]Если подслушивающее устройство также связано с иностранным правительством или террористической организацией, это дополнительно считается шпионажем[/italic].\n[bold]15 минут.[/bold]
+      </Box>
+    </ColorBox>
+
+  </Table>
+</Document>

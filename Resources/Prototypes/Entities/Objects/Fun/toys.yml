@@ -397,6 +397,7 @@
     - ClothMade
     - Payload
     - PlushieLizard
+<<<<<<< HEAD
   - type: FoodSequenceElement
     entries:
       CottonBurger: LizardPlushie
@@ -459,6 +460,8 @@
   - type: FoodSequenceElement
     entries:
       CottonBurger: ExperimentPlushie
+=======
+>>>>>>> master
 
 - type: entity
   parent: PlushieLizard
@@ -957,9 +960,12 @@
     - NECK
   - type: Speech
     speechVerb: Reptilian # for pais (In the secret stash)
+<<<<<<< HEAD
   - type: FoodSequenceElement
     entries:
       CottonBurger: SnakePlushie
+=======
+>>>>>>> master
 
 - type: entity
   parent: BasePlushie

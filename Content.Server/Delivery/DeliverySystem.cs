@@ -1,16 +1,26 @@
+<<<<<<< HEAD
 using Content.Server.Cargo.Systems;
 using Content.Server.Chat.Systems;
 using Content.Server.Station.Systems;
 using Content.Server.StationRecords.Systems;
 using Content.Shared.Cargo.Components;
 using Content.Shared.Cargo.Prototypes;
+=======
+using Content.Server.Cargo.Components;
+using Content.Server.Cargo.Systems;
+using Content.Server.Station.Systems;
+using Content.Server.StationRecords.Systems;
+>>>>>>> master
 using Content.Shared.Delivery;
 using Content.Shared.FingerprintReader;
 using Content.Shared.Labels.EntitySystems;
 using Content.Shared.StationRecords;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
+<<<<<<< HEAD
 using Robust.Shared.Prototypes;
+=======
+>>>>>>> master
 
 namespace Content.Server.Delivery;
 
@@ -26,6 +36,7 @@ public sealed partial class DeliverySystem : SharedDeliverySystem
     [Dependency] private readonly StationRecordsSystem _records = default!;
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly FingerprintReaderSystem _fingerprintReader = default!;
+<<<<<<< HEAD
     [Dependency] private readonly LabelSystem _label = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
@@ -35,6 +46,10 @@ public sealed partial class DeliverySystem : SharedDeliverySystem
     /// Default reason to use if the penalization is triggered
     /// </summary>
     private static readonly LocId DefaultMessage = "delivery-penalty-default-reason";
+=======
+    [Dependency] private readonly SharedLabelSystem _label = default!;
+    [Dependency] private readonly SharedContainerSystem _container = default!;
+>>>>>>> master
 
     public override void Initialize()
     {
@@ -49,15 +64,30 @@ public sealed partial class DeliverySystem : SharedDeliverySystem
     {
         _container.EnsureContainer<Container>(ent, ent.Comp.Container);
 
+<<<<<<< HEAD
         if (_station.GetStationInMap(Transform(ent).MapID) is not { } stationId)
             return;
 
         if (!_records.TryGetRandomRecord<GeneralStationRecord>(stationId, out var entry))
+=======
+        var stationId = _station.GetStationInMap(Transform(ent).MapID);
+
+        if (stationId == null)
+            return;
+
+        _records.TryGetRandomRecord<GeneralStationRecord>(stationId.Value, out var entry);
+
+        if (entry == null)
+>>>>>>> master
             return;
 
         ent.Comp.RecipientName = entry.Name;
         ent.Comp.RecipientJobTitle = entry.JobTitle;
+<<<<<<< HEAD
         ent.Comp.RecipientStation = stationId;
+=======
+        ent.Comp.RecipientStation = stationId.Value;
+>>>>>>> master
 
         _appearance.SetData(ent, DeliveryVisuals.JobIcon, entry.JobIcon);
 
@@ -79,6 +109,7 @@ public sealed partial class DeliverySystem : SharedDeliverySystem
         if (!TryComp<StationBankAccountComponent>(ent.Comp.RecipientStation, out var account))
             return;
 
+<<<<<<< HEAD
         var stationAccountEnt = (ent.Comp.RecipientStation.Value, account);
 
         var multiplier = GetDeliveryMultiplier(ent!); // Resolve so we know it's got the component
@@ -133,6 +164,9 @@ public sealed partial class DeliverySystem : SharedDeliverySystem
 
         ent.Comp.WasPenalized = true;
         DirtyField(ent.Owner, ent.Comp, nameof(DeliveryComponent.WasPenalized));
+=======
+        _cargo.UpdateBankAccount((ent.Comp.RecipientStation.Value, account), ent.Comp.SpesoReward);
+>>>>>>> master
     }
 
     public override void Update(float frameTime)

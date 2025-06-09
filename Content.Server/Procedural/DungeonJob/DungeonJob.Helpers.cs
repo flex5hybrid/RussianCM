@@ -14,6 +14,8 @@ public sealed partial class DungeonJob
 
     private static readonly ProtoId<TagPrototype> WallTag = "Wall";
 
+    private static readonly ProtoId<TagPrototype> WallTag = "Wall";
+
     private bool HasWall(Vector2i tile)
     {
         var anchored = _maps.GetAnchoredEntitiesEnumerator(_gridUid, _grid, tile);

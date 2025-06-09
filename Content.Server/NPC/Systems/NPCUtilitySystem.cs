@@ -1,4 +1,5 @@
-using Content.Server.Atmos.Components;
+using System.Linq;
+using Content.Server._RMC14.NPC;
 using Content.Server.Fluids.EntitySystems;
 using Content.Server.NPC.Queries;
 using Content.Server.NPC.Queries.Considerations;
@@ -7,7 +8,19 @@ using Content.Server.NPC.Queries.Queries;
 using Content.Server.Nutrition.Components;
 using Content.Server.Nutrition.EntitySystems;
 using Content.Server.Storage.Components;
+<<<<<<< HEAD
 using Content.Server.Temperature.Components;
+=======
+using Content.Shared._RMC14.Interaction;
+using Content.Shared._RMC14.Xenonids;
+using Content.Shared._RMC14.Xenonids.Construction;
+using Content.Shared._RMC14.Xenonids.Construction.EggMorpher;
+using Content.Shared._RMC14.Xenonids.Construction.Nest;
+using Content.Shared._RMC14.Xenonids.Construction.ResinHole;
+using Content.Shared._RMC14.Xenonids.Egg;
+using Content.Shared._RMC14.Xenonids.Parasite;
+using Content.Shared.Atmos.Components;
+>>>>>>> master
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Damage;
 using Content.Shared.Examine;
@@ -19,6 +32,10 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.NPC.Systems;
 using Content.Shared.Nutrition.Components;
 using Content.Shared.Nutrition.EntitySystems;
+<<<<<<< HEAD
+=======
+using Content.Shared.Standing;
+>>>>>>> master
 using Content.Shared.Stunnable;
 using Content.Shared.Tools.Systems;
 using Content.Shared.Turrets;
@@ -30,7 +47,6 @@ using Microsoft.Extensions.ObjectPool;
 using Robust.Server.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-using System.Linq;
 
 namespace Content.Server.NPC.Systems;
 
@@ -56,6 +72,11 @@ public sealed class NPCUtilitySystem : EntitySystem
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly MobThresholdSystem _thresholdSystem = default!;
     [Dependency] private readonly TurretTargetSettingsSystem _turretTargetSettings = default!;
+<<<<<<< HEAD
+=======
+    [Dependency] private readonly RMCInteractionSystem _rmcInteraction = default!;
+    [Dependency] private readonly StandingStateSystem _standing = default!;
+>>>>>>> master
 
     private EntityQuery<PuddleComponent> _puddleQuery;
     private EntityQuery<TransformComponent> _xformQuery;
@@ -376,6 +397,7 @@ public sealed class NPCUtilitySystem : EntitySystem
 
                     return 0f;
                 }
+<<<<<<< HEAD
             case TargetLowTempCon con:
                 {
                     if (!TryComp<TemperatureComponent>(targetUid, out var temperature))
@@ -383,6 +405,60 @@ public sealed class NPCUtilitySystem : EntitySystem
 
                     return temperature.CurrentTemperature <= con.MinTemp ? 1f : 0f;
                 }
+=======
+            case TargetIsNotDeadCon:
+            {
+                return !_mobState.IsDead(targetUid) ? 1f : 0f;
+            }
+            case TargetXenoCon:
+            {
+                return HasComp<XenoComponent>(targetUid) ? 1f : 0f;
+            }
+            case TargetIsNotConstructCon:
+            {
+                return HasComp<XenoConstructComponent>(targetUid) ? 0f : 1f;
+            }
+            case CanFaceCon:
+            {
+                var ownerCoords = _transform.GetMapCoordinates(owner);
+                var targetCoords = _transform.GetMapCoordinates(targetUid);
+                if (ownerCoords.MapId != targetCoords.MapId)
+                    return 0f;
+
+                var vector = targetCoords.Position - ownerCoords.Position;
+                var angle = Angle.FromWorldVec(vector);
+                if (!_rmcInteraction.CanFaceMaxRotation(owner,angle))
+                    return 0f;
+
+                return 1f;
+            }
+            case TargetInfectableCon:
+            {
+                return TryComp<InfectableComponent>(targetUid, out var infectable)
+                        && !infectable.BeingInfected
+                        && !HasComp<VictimInfectedComponent>(targetUid) ? 1f : 0f;
+            }
+            case TargetOpenEggCon:
+            {
+                return TryComp<XenoEggComponent>(targetUid, out var egg) && egg.State == XenoEggState.Opened ? 1f : 0f;
+            }
+            case TargetIsEmptyResinTrapCon:
+                {
+                    return TryComp<XenoResinHoleComponent>(targetUid, out var trap) && trap.TrapPrototype == null ? 1f : 0f;
+                }
+            case TargetIsDownCon:
+            {
+                return _standing.IsDown(targetUid) || HasComp<XenoNestedComponent>(targetUid) ? 1f : 0f;
+            }
+            case TargetIsStandingCon:
+            {
+                return _standing.IsDown(targetUid) && !HasComp<XenoNestedComponent>(targetUid) ? 0f : 1f;
+            }
+            case TargetAvailibleEggMorpherCon:
+            {
+                return TryComp<EggMorpherComponent>(targetUid, out var eggmorpher) && eggmorpher.CurParasites < eggmorpher.MaxParasites ? 1f : 0f;
+            }
+>>>>>>> master
             default:
                 throw new NotImplementedException();
         }

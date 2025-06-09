@@ -2,6 +2,7 @@ using Content.Shared.Emoting;
 using Content.Shared.Hands;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Item;
+using Content.Shared.Mind;
 using Content.Shared.Popups;
 using Robust.Shared.Serialization;
 
@@ -200,5 +201,12 @@ namespace Content.Shared.Ghost
         {
             AvailableGhostRoles = availableGhostRoleCount;
         }
+    }
+
+    public sealed class GhostAttemptHandleEvent(MindComponent mind, bool canReturnGlobal) : HandledEntityEventArgs
+    {
+        public MindComponent Mind { get; } = mind;
+        public bool CanReturnGlobal { get; } = canReturnGlobal;
+        public bool Result { get; set; }
     }
 }

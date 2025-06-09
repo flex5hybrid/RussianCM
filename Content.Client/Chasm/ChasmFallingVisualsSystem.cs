@@ -44,11 +44,20 @@ public sealed class ChasmFallingVisualsSystem : EntitySystem
 
     private void OnComponentRemove(EntityUid uid, ChasmFallingComponent component, ComponentRemove args)
     {
-        if (!TryComp<SpriteComponent>(uid, out var sprite))
+        if (!TryComp<SpriteComponent>(uid, out var sprite) ||
+            TerminatingOrDeleted(uid))
+        {
             return;
+<<<<<<< HEAD
 
         _sprite.SetScale((uid, sprite), component.OriginalScale);
 
+=======
+        }
+
+        sprite.Scale = component.OriginalScale;
+
+>>>>>>> master
         if (!TryComp<AnimationPlayerComponent>(uid, out var player))
             return;
 

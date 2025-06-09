@@ -3,6 +3,7 @@ using Content.Server.NodeContainer.EntitySystems;
 using Content.Server.Power.Components;
 using Content.Server.Power.NodeGroups;
 using Content.Server.Power.Pow3r;
+using Content.Shared._RMC14.Power;
 using Content.Shared.CCVar;
 using Content.Shared.Power;
 using Content.Shared.Power.Components;
@@ -35,12 +36,18 @@ namespace Content.Server.Power.EntitySystems
 
         private BatteryRampPegSolver _solver = new();
 
+        // RMC14
+        private EntityQuery<RMCPowerReceiverComponent> _rmcPowerReceiverQuery;
+
         public override void Initialize()
         {
             base.Initialize();
 
             _apcBatteryQuery = GetEntityQuery<ApcPowerReceiverBatteryComponent>();
             _batteryQuery = GetEntityQuery<BatteryComponent>();
+
+            // RMC14
+            _rmcPowerReceiverQuery = GetEntityQuery<RMCPowerReceiverComponent>();
 
             UpdatesAfter.Add(typeof(NodeGroupSystem));
             _solver = new(_cfg.GetCVar(CCVars.DebugPow3rDisableParallel));
@@ -333,7 +340,13 @@ namespace Content.Server.Power.EntitySystems
             var enumerator = AllEntityQuery<ApcPowerReceiverComponent>();
             while (enumerator.MoveNext(out var uid, out var apcReceiver))
             {
-                var powered = IsPoweredCalculate(apcReceiver);
+                if (_rmcPowerReceiverQuery.HasComp(uid))
+                    continue;
+
+                var powered = !apcReceiver.PowerDisabled
+                              && (!apcReceiver.NeedsPower
+                                  || MathHelper.CloseToPercent(apcReceiver.NetworkLoad.ReceivingPower,
+                                      apcReceiver.Load));
 
                 MetaDataComponent? metadata = null;
 

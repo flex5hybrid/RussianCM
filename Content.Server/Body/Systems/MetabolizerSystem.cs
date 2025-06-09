@@ -1,5 +1,7 @@
 using Content.Server.Body.Components;
 using Content.Shared.Chemistry.EntitySystems;
+using Content.Server.Chemistry.Containers.EntitySystems;
+using Content.Shared._RMC14.Medical.Stasis;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Body.Organ;
 using Content.Shared.Chemistry.Components;
@@ -25,6 +27,7 @@ namespace Content.Server.Body.Systems
         [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
         [Dependency] private readonly MobStateSystem _mobStateSystem = default!;
         [Dependency] private readonly SharedSolutionContainerSystem _solutionContainerSystem = default!;
+        [Dependency] private readonly CMStasisBagSystem _cmStasisBag = default!;
 
         private EntityQuery<OrganComponent> _organQuery;
         private EntityQuery<SolutionContainerManagerComponent> _solutionQuery;
@@ -106,6 +109,8 @@ namespace Content.Server.Body.Systems
         private void TryMetabolize(Entity<MetabolizerComponent, OrganComponent?, SolutionContainerManagerComponent?> ent)
         {
             _organQuery.Resolve(ent, ref ent.Comp2, logMissing: false);
+            if (!_cmStasisBag.CanOrganMetabolize((ent, ent.Comp2)))
+                return;
 
             // First step is get the solution we actually care about
             var solutionName = ent.Comp1.SolutionName;

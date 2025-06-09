@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Content.Shared._RMC14.Hands;
 using Content.Shared.Armor;
 using Content.Shared.Clothing.Components;
 using Content.Shared.DoAfter;
@@ -34,6 +35,7 @@ public abstract partial class InventorySystem
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly SharedStrippableSystem _strippable = default!;
+    [Dependency] private readonly RMCHandsSystem _rmcHands = default!;
 
     [ValidatePrototypeId<ItemSizePrototype>]
     private const string PocketableItemSize = "Small";
@@ -97,7 +99,10 @@ public abstract partial class InventorySystem
         // unequip the item.
         if (itemUid != null)
         {
-            if (!TryUnequip(actor, ev.Slot, out var item, predicted: true, inventory: inventory, checkDoafter: true, triggerHandContact: true))
+            if (_rmcHands.TryStorageEjectHand(actor, itemUid.Value))
+                return;
+
+            if (!TryUnequip(actor, ev.Slot, out var item, predicted: true, inventory: inventory, checkDoafter: true))
                 return;
 
             _handsSystem.PickupOrDrop(actor, item.Value);
@@ -148,7 +153,7 @@ public abstract partial class InventorySystem
             return false;
         }
 
-        if (!force && !CanEquip(actor, target, itemUid, slot, out var reason, slotDefinition, inventory, clothing))
+        if (!force && !CanEquip(actor, target, itemUid, slot, out var reason, slotDefinition, inventory, clothing, doRangeCheck: doRangeCheck))
         {
             if(!silent)
                 _popup.PopupCursor(Loc.GetString(reason));
@@ -201,7 +206,7 @@ public abstract partial class InventorySystem
         return true;
     }
 
-    public bool CanAccess(EntityUid actor, EntityUid target, EntityUid itemUid)
+    public bool CanAccess(EntityUid actor, EntityUid target, EntityUid itemUid, bool doRangeCheck = true)
     {
         // if the item is something like a hardsuit helmet, it may be contained within the hardsuit.
         // in that case, we check accesibility for the owner-entity instead.
@@ -209,7 +214,7 @@ public abstract partial class InventorySystem
             itemUid = attachedComp.AttachedUid;
 
         // Can the actor reach the target?
-        if (actor != target && !(_interactionSystem.InRangeUnobstructed(actor, target) && _containerSystem.IsInSameOrParentContainer(actor, target)))
+        if (actor != target && !(doRangeCheck && _interactionSystem.InRangeUnobstructed(actor, target) && _containerSystem.IsInSameOrParentContainer(actor, target)))
             return false;
 
         // Can the actor reach the item?
@@ -227,11 +232,11 @@ public abstract partial class InventorySystem
 
     public bool CanEquip(EntityUid uid, EntityUid itemUid, string slot, [NotNullWhen(false)] out string? reason,
         SlotDefinition? slotDefinition = null, InventoryComponent? inventory = null,
-        ClothingComponent? clothing = null, ItemComponent? item = null) =>
-        CanEquip(uid, uid, itemUid, slot, out reason, slotDefinition, inventory, clothing, item);
+        ClothingComponent? clothing = null, ItemComponent? item = null, bool doRangeCheck = true) =>
+        CanEquip(uid, uid, itemUid, slot, out reason, slotDefinition, inventory, clothing, item, doRangeCheck: doRangeCheck);
 
     public bool CanEquip(EntityUid actor, EntityUid target, EntityUid itemUid, string slot, [NotNullWhen(false)] out string? reason, SlotDefinition? slotDefinition = null,
-        InventoryComponent? inventory = null, ClothingComponent? clothing = null, ItemComponent? item = null)
+        InventoryComponent? inventory = null, ClothingComponent? clothing = null, ItemComponent? item = null, bool doRangeCheck = true)
     {
         reason = "inventory-component-can-equip-cannot";
         if (!Resolve(target, ref inventory, false))
@@ -272,7 +277,7 @@ public abstract partial class InventorySystem
             return false;
         }
 
-        if (!CanAccess(actor, target, itemUid))
+        if (!CanAccess(actor, target, itemUid, doRangeCheck: doRangeCheck))
         {
             reason = "interaction-system-user-interaction-cannot-reach";
             return false;

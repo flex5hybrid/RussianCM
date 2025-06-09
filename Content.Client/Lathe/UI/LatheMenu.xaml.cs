@@ -84,6 +84,7 @@ public sealed partial class LatheMenu : DefaultWindow
             }
 
             AmountLineEdit.SetText(latheComponent.DefaultProductionAmount.ToString());
+<<<<<<< HEAD
         }
 
         // Imperial PrinterDoc
@@ -91,11 +92,14 @@ public sealed partial class LatheMenu : DefaultWindow
         {
             CardIdContainer.Visible = true;
             CardIdContainerExpand.Visible = true;
+=======
+>>>>>>> master
         }
 
         MaterialsList.SetOwner(Entity);
     }
 
+<<<<<<< HEAD
     /// <summary>
     /// Imperial PrinterDoc
     /// </summary>
@@ -105,6 +109,8 @@ public sealed partial class LatheMenu : DefaultWindow
         UseCardIdCheckBox.Pressed = useCardId;
     }
 
+=======
+>>>>>>> master
     /// <summary>
     /// Populates the list of all the recipes
     /// </summary>

@@ -1,0 +1,25 @@
+﻿rmc-loadout-group-backpack = Рюкзак
+rmc-loadout-group-eyewear = Очки
+rmc-loadout-group-masks = Маски и шарфы
+rmc-loadout-group-headwear = Головные уборы
+rmc-loadout-group-helmet-garbs = Аксессуары для шлема
+rmc-loadout-group-paperwork = Документы
+rmc-loadout-group-plushies = Плюшевые игрушки
+rmc-loadout-group-recreational = Развлечения
+rmc-loadout-group-weapons = Оружие
+rmc-loadout-group-canned-drinks = Напитки (банки)
+rmc-loadout-group-flasks = Фляги
+rmc-loadout-group-foods-sweets = Еда (сладости)
+rmc-loadout-group-foods-packaged = Еда (сухпай)
+rmc-loadout-group-foods-healthy = Еда (рацион)
+rmc-loadout-group-role-specific = Спецоснащение
+rmc-loadout-group-pins = Значки
+
+rmc-loadout-group-role-specific-ID = Командир (жетон)
+rmc-loadout-group-synthetic-uniform = Униформа синтетиков
+rmc-loadout-group-synthetic-glasses = Очки синтетиков
+rmc-loadout-group-synthetic-shoes = Обувь синтетиков
+rmc-loadout-group-synthetic-headwear = Головные уборы синтетиков
+rmc-loadout-group-synthetic-suits = Верхняя одежда синтетиков
+
+loadout-group-points-insufficient = Недостаточно очков!

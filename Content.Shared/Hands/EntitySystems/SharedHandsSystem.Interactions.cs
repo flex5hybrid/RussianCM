@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared._RMC14.Hands;
 using Content.Shared.Examine;
 using Content.Shared.Hands.Components;
 using Content.Shared.IdentityManagement;
@@ -15,6 +16,8 @@ namespace Content.Shared.Hands.EntitySystems;
 
 public abstract partial class SharedHandsSystem : EntitySystem
 {
+    [Dependency] private readonly RMCHandsSystem _rmcHands = default!;
+
     private void InitializeInteractions()
     {
         SubscribeAllEvent<RequestSetHandEvent>(HandleSetHand);
@@ -51,8 +54,13 @@ public abstract partial class SharedHandsSystem : EntitySystem
 
     private void HandleMoveItemFromHand(RequestMoveHandItemEvent msg, EntitySessionEventArgs args)
     {
-        if (args.SenderSession.AttachedEntity != null)
-            TryMoveHeldEntityToActiveHand(args.SenderSession.AttachedEntity.Value, msg.HandName);
+        if (args.SenderSession.AttachedEntity == null)
+            return;
+
+        if (_rmcHands.TryStorageEjectHand(args.SenderSession.AttachedEntity.Value, msg.HandName))
+            return;
+
+        TryMoveHeldEntityToActiveHand(args.SenderSession.AttachedEntity.Value, msg.HandName);
     }
 
     private void HandleUseInHand(RequestUseInHandEvent msg, EntitySessionEventArgs args)
@@ -94,8 +102,8 @@ public abstract partial class SharedHandsSystem : EntitySystem
         if (!TryComp(session?.AttachedEntity, out HandsComponent? component))
             return;
 
-        if (!_actionBlocker.CanInteract(session.AttachedEntity.Value, null))
-            return;
+        // if (!_actionBlocker.CanInteract(session.AttachedEntity.Value, null))
+        //     return;
 
         if (component.ActiveHand == null || component.Hands.Count < 2)
             return;
@@ -217,6 +225,10 @@ public abstract partial class SharedHandsSystem : EntitySystem
             .Select(item => FormattedMessage.EscapeText(Identity.Name(item, EntityManager)))
             .Select(itemName => Loc.GetString("comp-hands-examine-wrapper", ("item", itemName)))
             .ToList();
+
+        // RMC14
+        if (heldItemNames.Count == 0 && !handsComp.ExamineShowEmpty)
+            return;
 
         var locKey = heldItemNames.Count != 0 ? "comp-hands-examine" : "comp-hands-examine-empty";
         var locUser = ("user", Identity.Entity(examinedUid, EntityManager));

@@ -2,10 +2,18 @@
   id: NamesFirst
   values:
     prefix: names-first-dataset-
+<<<<<<< HEAD
     count: 907 # Imperial Space
+=======
+    count: 1395
+>>>>>>> master
 
 - type: localizedDataset
   id: NamesLast
   values:
     prefix: names-last-dataset-
+<<<<<<< HEAD
     count: 471 # Imperial Space
+=======
+    count: 553
+>>>>>>> master

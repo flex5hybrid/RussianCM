@@ -1,11 +1,12 @@
 using System.Linq;
+using Content.Server._RMC14.Ghost.Roles;
 using Content.Server.Administration.Logs;
 using Content.Server.EUI;
 using Content.Server.Ghost.Roles.Components;
 using Content.Server.Ghost.Roles.Events;
-using Content.Shared.Ghost.Roles.Raffles;
 using Content.Server.Ghost.Roles.UI;
 using Content.Server.Mind.Commands;
+using Content.Server.Popups;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
@@ -13,14 +14,18 @@ using Content.Shared.Follower;
 using Content.Shared.GameTicking;
 using Content.Shared.Ghost;
 using Content.Shared.Ghost.Roles;
+using Content.Shared.Ghost.Roles.Components;
+using Content.Shared.Ghost.Roles.Raffles;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
 using Content.Shared.Mobs;
 using Content.Shared.Players;
 using Content.Shared.Roles;
+using Content.Shared.Verbs;
 using JetBrains.Annotations;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
+using Robust.Shared.Collections;
 using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 using Robust.Shared.Enums;
@@ -29,10 +34,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-using Content.Server.Popups;
-using Content.Shared.Verbs;
-using Robust.Shared.Collections;
-using Content.Shared.Ghost.Roles.Components;
 
 namespace Content.Server.Ghost.Roles;
 
@@ -57,6 +58,7 @@ public sealed class GhostRoleSystem : EntitySystem
 
     private readonly Dictionary<uint, Entity<GhostRoleComponent>> _ghostRoles = new();
     private readonly Dictionary<uint, Entity<GhostRoleRaffleComponent>> _ghostRoleRaffles = new();
+    private readonly List<uint> _ghostRolesToRemove = new();
 
     private readonly Dictionary<ICommonSession, GhostRolesEui> _openUis = new();
     private readonly Dictionary<ICommonSession, MakeGhostRoleEui> _openMakeGhostRoleUis = new();
@@ -369,6 +371,12 @@ public sealed class GhostRoleSystem : EntitySystem
         // we copy these settings into the component because they would be cumbersome to access otherwise
         raffle.JoinExtendsDurationBy = TimeSpan.FromSeconds(settings.JoinExtendsDurationBy);
         raffle.MaxDuration = TimeSpan.FromSeconds(settings.MaxDuration);
+
+        // RMC14
+        var ev = new GhostRoleRaffleEvent(TimeSpan.FromSeconds(countdown), settings.RoundTimeRequirement);
+        RaiseLocalEvent(ent, ref ev);
+        if (ev.Handled)
+            raffle.Countdown = ev.CountDown;
     }
 
     private void OnRaffleShutdown(Entity<GhostRoleRaffleComponent> ent, ref ComponentShutdown args)
@@ -528,7 +536,7 @@ public sealed class GhostRoleSystem : EntitySystem
     public int GetGhostRoleCount()
     {
         var metaQuery = GetEntityQuery<MetaDataComponent>();
-        return _ghostRoles.Count(pair => metaQuery.GetComponent(pair.Value.Owner).EntityPaused == false);
+        return _ghostRoles.Count(pair => metaQuery.CompOrNull(pair.Value.Owner)?.EntityPaused == false);
     }
 
     /// <summary>
@@ -542,11 +550,17 @@ public sealed class GhostRoleSystem : EntitySystem
         var roles = new List<GhostRoleInfo>();
         var metaQuery = GetEntityQuery<MetaDataComponent>();
 
+        _ghostRolesToRemove.Clear();
         foreach (var (id, (uid, role)) in _ghostRoles)
         {
-            if (metaQuery.GetComponent(uid).EntityPaused)
+            if (!metaQuery.TryComp(uid, out var meta))
+            {
+                _ghostRolesToRemove.Add(id);
                 continue;
+            }
 
+            if (meta.EntityPaused)
+                continue;
 
             var kind = GhostRoleKind.FirstComeFirstServe;
             GhostRoleRaffleComponent? raffle = null;
@@ -581,6 +595,12 @@ public sealed class GhostRoleSystem : EntitySystem
                 RafflePlayerCount = rafflePlayerCount,
                 RaffleEndTime = raffleEndTime
             });
+        }
+
+        foreach (var id in _ghostRolesToRemove)
+        {
+            _ghostRoles.Remove(id);
+            _ghostRoleRaffles.Remove(id);
         }
 
         return roles.ToArray();
@@ -709,6 +729,8 @@ public sealed class GhostRoleSystem : EntitySystem
 
         if (component.DeleteOnSpawn)
             QueueDel(uid);
+        else
+            UnregisterGhostRole((uid, ghostRole));
 
         args.TookRole = true;
     }
@@ -818,6 +840,38 @@ public sealed class GhostRoleSystem : EntitySystem
         }
 
         SetMode(entity.Owner, ghostRoleProto, ghostRoleProto.Name, entity.Comp);
+    }
+
+    public void SetAvailable(Entity<GhostRoleMobSpawnerComponent> spawner, int available)
+    {
+        if (spawner.Comp.AvailableTakeovers == available)
+            return;
+
+        spawner.Comp.AvailableTakeovers = available;
+        UpdateSpawner(spawner);
+    }
+
+    public void SetCurrent(Entity<GhostRoleMobSpawnerComponent> spawner, int current)
+    {
+        if (spawner.Comp.CurrentTakeovers == current)
+            return;
+
+        spawner.Comp.CurrentTakeovers = current;
+        UpdateSpawner(spawner);
+    }
+
+    private void UpdateSpawner(Entity<GhostRoleMobSpawnerComponent> spawner)
+    {
+        if (TryComp(spawner, out GhostRoleComponent? ghostRole))
+        {
+            ghostRole.Taken = spawner.Comp.CurrentTakeovers >= spawner.Comp.AvailableTakeovers;
+            if (ghostRole.Taken)
+                UnregisterGhostRole((spawner, ghostRole));
+            else
+                RegisterGhostRole((spawner, ghostRole));
+        }
+
+        UpdateAllEui();
     }
 }
 

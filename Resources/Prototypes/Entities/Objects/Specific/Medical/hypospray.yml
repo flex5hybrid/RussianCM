@@ -38,6 +38,9 @@
     maxFillLevels: 6
     fillBaseName: hypo_fill
     solutionName: hypospray
+  - type: MedicallyUnskilledDoAfter
+    min: 2
+    doAfter: 3
 
 - type: entity
   name: gorlex hypospray

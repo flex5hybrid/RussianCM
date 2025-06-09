@@ -1,11 +1,19 @@
 meta:
   format: 7
   category: Map
+<<<<<<< HEAD
   engineVersion: 260.1.0
   forkId: ""
   forkVersion: ""
   time: 05/20/2025 22:07:43
   entityCount: 14184
+=======
+  engineVersion: 247.2.0
+  forkId: ""
+  forkVersion: ""
+  time: 03/07/2025 18:56:09
+  entityCount: 13931
+>>>>>>> master
 maps:
 - 473
 grids:

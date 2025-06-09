@@ -1,0 +1,12 @@
+﻿[adminlogs]
+server_name = "normandy"
+
+[game]
+desc = "Inspired by CMSS13 from Byond! Special PvE gamemode run by a gamemaster."
+hostname = "[EN][HRP] PvE Rouny's Marine Corps Normandy [US East]"
+
+[hub]
+tags = "lang:en,region:am_n_e,rp:high"
+
+[loki]
+name = "normandy"

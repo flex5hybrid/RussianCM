@@ -1,4 +1,8 @@
 using System.Linq;
+<<<<<<< HEAD
+=======
+using Content.Shared._RMC14.Xenonids.Eye;
+>>>>>>> master
 using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Ghost;
 using Content.Shared.Interaction;
@@ -21,6 +25,9 @@ namespace Content.Shared.Examine
         [Dependency] private readonly SharedInteractionSystem _interactionSystem = default!;
         [Dependency] protected readonly MobStateSystem MobStateSystem = default!;
 
+        // RMC14
+        [Dependency] private readonly QueenEyeSystem _queenEye = default!;
+
         public const float MaxRaycastRange = 100;
 
         /// <summary>
@@ -39,7 +46,7 @@ namespace Content.Shared.Examine
         public const float DeadExamineRange = 0.75f;
 
         public const float ExamineRange = 16f;
-        protected const float ExamineDetailsRange = 3f;
+        protected const float ExamineDetailsRange = 8f;
 
         protected const float ExamineBlurrinessMult = 2.5f;
 
@@ -117,6 +124,12 @@ namespace Content.Shared.Examine
             // Do target InRangeUnoccluded which has different checks.
             if (examined != null)
             {
+                if (TryComp(examiner, out QueenEyeActionComponent? queen) &&
+                    queen.Eye != null)
+                {
+                    return _queenEye.CanSeeTarget((examiner, queen), examined.Value);
+                }
+
                 return InRangeUnOccluded(
                     examiner,
                     examined.Value,

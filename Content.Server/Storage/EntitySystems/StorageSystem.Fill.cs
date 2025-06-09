@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Server.Spawners.Components;
 using Content.Server.Storage.Components;
+using Content.Shared._RMC14.Storage;
 using Content.Shared.Item;
 using Content.Shared.Prototypes;
 using Content.Shared.Storage;
@@ -58,6 +59,8 @@ public sealed partial class StorageSystem
                 continue;
             }
 
+            var ev = new CMStorageItemFillEvent((ent, itemComp), storage);
+            RaiseLocalEvent(entity, ref ev);
             items.Add((ent, itemComp));
         }
 
@@ -68,6 +71,9 @@ public sealed partial class StorageSystem
         ClearCantFillReasons();
         foreach (var ent in sortedItems)
         {
+            var ev = new CMStorageItemFillEvent(ent, storage);
+            RaiseLocalEvent(entity, ref ev);
+
             if (Insert(uid, ent, out _, out var reason, storageComp: storage, playSound: false))
                 continue;
 

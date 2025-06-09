@@ -51,8 +51,13 @@ namespace Content.Server.Cargo.Systems
             if (!TryComp(stationUid, out StationBankAccountComponent? bank))
                 return;
 
+<<<<<<< HEAD
             _audio.PlayPvs(ApproveSound, uid);
             UpdateBankAccount((stationUid.Value, bank), (int) price, component.Account);
+=======
+            _audio.PlayPvs(component.ConfirmSound, uid);
+            UpdateBankAccount((stationUid.Value, bank), (int) price);
+>>>>>>> master
             QueueDel(args.Used);
             args.Handled = true;
         }
@@ -132,8 +137,26 @@ namespace Content.Server.Cargo.Systems
                     continue;
                 bank.NextIncomeTime += bank.IncomeDelay;
 
+<<<<<<< HEAD
                 var balanceToAdd = (int) Math.Round(bank.IncreasePerSecond * bank.IncomeDelay.TotalSeconds);
                 UpdateBankAccount((uid, bank), balanceToAdd, bank.RevenueDistribution);
+=======
+                var stationQuery = EntityQueryEnumerator<StationBankAccountComponent>();
+                while (stationQuery.MoveNext(out var uid, out var bank))
+                {
+                    var balanceToAdd = bank.IncreasePerSecond * Delay;
+                    UpdateBankAccount((uid, bank), balanceToAdd);
+                }
+
+                var query = EntityQueryEnumerator<CargoOrderConsoleComponent>();
+                while (query.MoveNext(out var uid, out var _))
+                {
+                    if (!_uiSystem.IsUiOpen(uid, CargoConsoleUiKey.Orders)) continue;
+
+                    var station = _station.GetOwningStation(uid);
+                    UpdateOrderState(uid, station);
+                }
+>>>>>>> master
             }
         }
 
@@ -255,8 +278,13 @@ namespace Content.Server.Cargo.Systems
                 LogImpact.Low,
                 $"{ToPrettyString(player):user} approved order [orderId:{order.OrderId}, quantity:{order.OrderQuantity}, product:{order.ProductId}, requester:{order.Requester}, reason:{order.Reason}] on account {order.Account} with balance at {accountBalance}");
 
+<<<<<<< HEAD
             orderDatabase.Orders[component.Account].Remove(order);
             UpdateBankAccount((station.Value, bank), -cost, order.Account);
+=======
+            orderDatabase.Orders.Remove(order);
+            UpdateBankAccount((station.Value, bank), -cost);
+>>>>>>> master
             UpdateOrders(station.Value);
         }
 

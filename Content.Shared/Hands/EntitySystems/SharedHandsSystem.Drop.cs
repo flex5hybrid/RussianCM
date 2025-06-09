@@ -1,5 +1,6 @@
 using System.Numerics;
 using Content.Shared.Database;
+using Content.Shared._RMC14.Inventory;
 using Content.Shared.Hands.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory.VirtualItem;
@@ -133,6 +134,8 @@ public abstract partial class SharedHandsSystem
         // if the user is in a container, drop the item inside the container
         if (isInContainer) {
             TransformSystem.DropNextTo((entity, itemXform), (uid, userXform));
+            var ev = new RMCDroppedEvent(uid);
+            RaiseLocalEvent(entity, ref ev, true);
             return true;
         }
 

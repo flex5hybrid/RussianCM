@@ -1,4 +1,5 @@
-﻿using Content.Shared.Examine;
+﻿using Content.Shared._RMC14.StepTrigger;
+using Content.Shared.Examine;
 using Content.Shared.Inventory;
 using Content.Shared.StepTrigger.Components;
 
@@ -21,6 +22,9 @@ public sealed class StepTriggerImmuneSystem : EntitySystem
         {
             args.Cancelled = true;
         }
+
+        if (HasComp<ImmuneToClothingRequiredStepTriggerComponent>(args.Tripper))
+            args.Cancelled = true;
     }
 
     private void OnExamined(EntityUid uid, PreventableStepTriggerComponent component, ExaminedEvent args)

@@ -1,3 +1,5 @@
+using Content.Shared._RMC14.CCVar;
+using Content.Shared._RMC14.Xenonids;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Chat;
 using Content.Shared.CombatMode;
@@ -5,16 +7,16 @@ using Content.Shared.Damage;
 using Content.Shared.Database;
 using Content.Shared.DoAfter;
 using Content.Shared.IdentityManagement;
+using Content.Shared.Interaction.Events;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
 using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Melee.Events;
-using Content.Shared.Interaction.Events;
-using Content.Shared.Mind;
-using Robust.Shared.Player;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Configuration;
+using Robust.Shared.Player;
 
 namespace Content.Shared.Execution;
 
@@ -32,6 +34,9 @@ public sealed class SharedExecutionSystem : EntitySystem
     [Dependency] private readonly SharedCombatModeSystem _combat = default!;
     [Dependency] private readonly SharedExecutionSystem _execution = default!;
     [Dependency] private readonly SharedMeleeWeaponSystem _melee = default!;
+    [Dependency] private readonly IConfigurationManager _config = default!;
+
+    private bool _canSuicide;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -42,6 +47,8 @@ public sealed class SharedExecutionSystem : EntitySystem
         SubscribeLocalEvent<ExecutionComponent, GetMeleeDamageEvent>(OnGetMeleeDamage);
         SubscribeLocalEvent<ExecutionComponent, SuicideByEnvironmentEvent>(OnSuicideByEnvironment);
         SubscribeLocalEvent<ExecutionComponent, ExecutionDoAfterEvent>(OnExecutionDoAfter);
+
+        Subs.CVar(_config, RMCCVars.RMCEnableSuicide, v => _canSuicide = v);
     }
 
     private void OnGetInteractionsVerbs(EntityUid uid, ExecutionComponent comp, GetVerbsEvent<UtilityVerb> args)
@@ -97,6 +104,14 @@ public sealed class SharedExecutionSystem : EntitySystem
 
     public bool CanBeExecuted(EntityUid victim, EntityUid attacker)
     {
+        // RMC-14 doesn't use this
+        return false;
+        if (victim == attacker && !_canSuicide)
+            return false;
+
+        if (HasComp<XenoComponent>(victim))
+            return false;
+
         // No point executing someone if they can't take damage
         if (!HasComp<DamageableComponent>(victim))
             return false;

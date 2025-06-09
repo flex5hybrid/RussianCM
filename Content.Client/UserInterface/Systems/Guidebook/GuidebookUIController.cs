@@ -7,6 +7,7 @@ using Content.Client.Players.PlayTimeTracking;
 using Content.Client.UserInterface.Controls;
 using Content.Shared.CCVar;
 using Content.Shared.Guidebook;
+using Content.Shared._RMC14.Prototypes;
 using Content.Shared.Input;
 using Robust.Client.State;
 using Robust.Client.UserInterface;
@@ -16,6 +17,7 @@ using static Robust.Client.UserInterface.Controls.BaseButton;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using static Robust.Client.UserInterface.Controls.BaseButton;
 
 namespace Content.Client.UserInterface.Systems.Guidebook;
 
@@ -182,7 +184,7 @@ public sealed class GuidebookUIController : UIController, IOnStateEntered<LobbyS
 
         if (guides == null)
         {
-            guides = _prototypeManager.EnumeratePrototypes<GuideEntryPrototype>()
+            guides = _prototypeManager.EnumerateCM<GuideEntryPrototype>()
                 .ToDictionary(x => new ProtoId<GuideEntryPrototype>(x.ID), x => (GuideEntry) x);
         }
         else if (includeChildren)

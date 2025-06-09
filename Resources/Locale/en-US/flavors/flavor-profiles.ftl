@@ -277,7 +277,11 @@ flavor-complex-white-gilgamesh = like lightly carbonated cream
 flavor-complex-antifreeze = warm
 flavor-complex-caipirinha = like Brazil
 flavor-complex-daiquiri = like rum, lime and sugar
+<<<<<<< HEAD
 flavor-complex-deathintheafternoon = like anise and champagne
+=======
+flavor-complex-deathintheafternoon = like anise and champagne 
+>>>>>>> master
 flavor-complex-empress75 = like tyrian purple
 flavor-complex-espressomartini = like vodka and coffee
 flavor-complex-mayojito = like stomach turmoil

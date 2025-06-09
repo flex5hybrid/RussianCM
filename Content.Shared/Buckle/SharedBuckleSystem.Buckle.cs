@@ -1,5 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
+using Content.Shared._RMC14.Buckle;
+using Content.Shared._RMC14.Xenonids;
 using Content.Shared.Alert;
 using Content.Shared.Buckle.Components;
 using Content.Shared.Cuffs.Components;
@@ -11,15 +13,14 @@ using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Pulling.Events;
 using Content.Shared.Popups;
 using Content.Shared.Pulling.Events;
-using Content.Shared.Rotation;
 using Content.Shared.Standing;
 using Content.Shared.Storage.Components;
 using Content.Shared.Stunnable;
 using Content.Shared.Throwing;
 using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
-using Robust.Shared.GameStates;
 using Robust.Shared.Map;
+using Robust.Shared.Network;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Prototypes;
@@ -31,7 +32,11 @@ public abstract partial class SharedBuckleSystem
 {
     public static ProtoId<AlertCategoryPrototype> BuckledAlertCategory = "Buckled";
 
+    [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+
+    // RMC14
+    [Dependency] private readonly RMCBuckleSystem _rmcBuckle = default!;
 
     private void InitializeBuckle()
     {
@@ -138,7 +143,8 @@ public abstract partial class SharedBuckleSystem
             return;
         }
 
-        var delta = (xform.LocalPosition - strapComp.BuckleOffset).LengthSquared();
+        // RMC14
+        var delta = (xform.LocalPosition - strapComp.BuckleOffset - _rmcBuckle.GetOffset(buckle.Owner)).LengthSquared();
         if (delta > 1e-5)
             Unbuckle(buckle, (strapUid, strapComp), null);
     }
@@ -318,6 +324,9 @@ public abstract partial class SharedBuckleSystem
             return false;
         }
 
+        if (!XenoCheck(user, buckleUid, popup))
+            return false;
+
         var buckleAttempt = new BuckleAttemptEvent((strapUid, strapComp), (buckleUid, buckleComp), user, popup);
         RaiseLocalEvent(buckleUid, ref buckleAttempt);
         if (buckleAttempt.Cancelled)
@@ -369,7 +378,7 @@ public abstract partial class SharedBuckleSystem
         _rotationVisuals.SetHorizontalAngle(buckle.Owner, strap.Comp.Rotation);
 
         var xform = Transform(buckle);
-        var coords = new EntityCoordinates(strap, strap.Comp.BuckleOffset);
+        var coords = new EntityCoordinates(strap, strap.Comp.BuckleOffset + _rmcBuckle.GetOffset(buckle.Owner));
         _transform.SetCoordinates(buckle, xform, coords, rotation: Angle.Zero);
 
         _joints.SetRelay(buckle, strap);
@@ -380,7 +389,7 @@ public abstract partial class SharedBuckleSystem
                 _standing.Stand(buckle, force: true);
                 break;
             case StrapPosition.Down:
-                _standing.Down(buckle, false, false, force: true);
+                _standing.Down(buckle, false, false, force: true, changeCollision: true);
                 break;
         }
 
@@ -388,7 +397,7 @@ public abstract partial class SharedBuckleSystem
         RaiseLocalEvent(strap, ref ev);
 
         var gotEv = new BuckledEvent(strap, buckle);
-        RaiseLocalEvent(buckle, ref gotEv);
+        RaiseLocalEvent(buckle, ref gotEv, true);
 
         if (TryComp<PhysicsComponent>(buckle, out var physics))
             _physics.ResetDynamics(buckle, physics);
@@ -467,9 +476,10 @@ public abstract partial class SharedBuckleSystem
             _transform.SetWorldRotationNoLerp((buckle, buckleXform), oldBuckledToWorldRot);
 
             // TODO: This is doing 4 moveevents this is why I left the warning in, if you're going to remove it make it only do 1 moveevent.
-            if (strap.Comp.BuckleOffset != Vector2.Zero)
+            var offset = strap.Comp.BuckleOffset + _rmcBuckle.GetOffset(buckle.Owner);
+            if (offset != Vector2.Zero)
             {
-                buckleXform.Coordinates = oldBuckledXform.Coordinates.Offset(strap.Comp.BuckleOffset);
+                buckleXform.Coordinates = oldBuckledXform.Coordinates.Offset(offset);
             }
         }
 
@@ -478,14 +488,14 @@ public abstract partial class SharedBuckleSystem
         Appearance.SetData(buckle, BuckleVisuals.Buckled, false);
 
         if (HasComp<KnockedDownComponent>(buckle) || _mobState.IsIncapacitated(buckle))
-            _standing.Down(buckle, playSound: false);
+            _standing.Down(buckle, playSound: false, changeCollision: true);
         else
             _standing.Stand(buckle);
 
         _joints.RefreshRelay(buckle);
 
         var buckleEv = new UnbuckledEvent(strap, buckle);
-        RaiseLocalEvent(buckle, ref buckleEv);
+        RaiseLocalEvent(buckle, ref buckleEv, true);
 
         var strapEv = new UnstrappedEvent(strap, buckle);
         RaiseLocalEvent(strap, ref strapEv);
@@ -562,5 +572,21 @@ public abstract partial class SharedBuckleSystem
             ev.Cancel();
             TryBuckle(args.Target.Value, args.User, args.Used.Value, popup: false);
         }
+    }
+
+    private bool XenoCheck(EntityUid? user, EntityUid buckle, bool popup = true)
+    {
+        if (!HasComp<XenoComponent>(user))
+            return true;
+
+        if (popup && _net.IsServer)
+        {
+            _popup.PopupEntity("You don't have the dexterity to do that, try a nest.",
+                buckle,
+                user.Value,
+                PopupType.SmallCaution);
+        }
+
+        return false;
     }
 }

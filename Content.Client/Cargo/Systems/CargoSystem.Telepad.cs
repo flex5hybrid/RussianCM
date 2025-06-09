@@ -76,9 +76,16 @@ public sealed partial class CargoSystem
         switch (state)
         {
             case CargoTelepadState.Teleporting:
+<<<<<<< HEAD
                 _player.Stop((uid, player), TelepadIdleKey);
                 if (!_player.HasRunningAnimation(uid, TelepadBeamKey))
                     _player.Play((uid, player), CargoTelepadBeamAnimation, TelepadBeamKey);
+=======
+                if (_player.HasRunningAnimation(uid, TelepadBeamKey))
+                    return;
+                _player.Stop(uid, player, TelepadIdleKey);
+                _player.Play((uid, player), CargoTelepadBeamAnimation, TelepadBeamKey);
+>>>>>>> master
                 break;
             case CargoTelepadState.Unpowered:
                 _sprite.LayerSetVisible((uid, sprite), CargoTelepadLayers.Beam, false);
