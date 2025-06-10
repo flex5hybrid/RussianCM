@@ -27,18 +27,11 @@ public sealed partial class DamagedSiliconAccentComponent : Component
 
     /// <summary>
     ///     Probability of character corruption will increase linearly to <see cref="MaxDamageCorruption" /> once until
-<<<<<<< HEAD
     ///     total damage is at or above this value. If null, it will use the value returned by
     ///     DestructibleSystem.DestroyedAt, which is the damage threshold for destruction or breakage.
     /// </summary>
     [DataField]
     public FixedPoint2? DamageAtMaxCorruption;
-=======
-    ///     total damage is at or above this value.
-    /// </summary>
-    [DataField]
-    public FixedPoint2 DamageAtMaxCorruption = 300;
->>>>>>> master
 
     /// <summary>
     ///     Enable charge level corruption effects

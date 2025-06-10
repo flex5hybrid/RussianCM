@@ -1,6 +1,6 @@
 ### Spam Mail
 
-<<<<<<< HEAD
+
 - type: entity
   id: MailSpamLetter
   name: spam letter
@@ -10,7 +10,7 @@
   - type: Paper
   - type: RandomPaperContent
     dataset: DeliverySpamLetters
-=======
+
 ## TODO: They all should be a localized dataset for PaperComponent
 
 # Advertisements
@@ -122,4 +122,4 @@
   components:
   - type: Paper
     content: delivery-spam-parents-need-money
->>>>>>> master
+

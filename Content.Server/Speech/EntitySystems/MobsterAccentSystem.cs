@@ -84,17 +84,7 @@ public sealed class MobsterAccentSystem : EntitySystem
             }
             if (lastWordAllCaps)
                 suffix = suffix.ToUpper();
-<<<<<<< HEAD
             msg = RegexLastPunctuation.Replace(msg, suffix);
-=======
-
-            if (msg.EndsWith("..."))
-                suffix = suffix[1..];
-            else if (msg.EndsWith("."))
-                msg = msg[..^1];
-
-            msg += suffix;
->>>>>>> master
         }
 
         return msg;

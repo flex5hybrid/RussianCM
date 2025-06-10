@@ -5,9 +5,9 @@
   id: SpamMailTable
   table: !type:GroupSelector
     children:
-<<<<<<< HEAD
+
       - id: MailSpamLetter
-=======
+
       - id: MailAllAccessSpam
       - id: MailAlternativeDimensionSpam
       - id: MailCentcommRetributionSpam
@@ -20,7 +20,7 @@
       - id: MailScienceSpiderClanSpam
       - id: MailSyndicateSpam
       - id: MailVoyageAdvertisementSpam
->>>>>>> master
+
 
 # Letter Bundles
 ## Basically items that should always spawn together, specific to letters

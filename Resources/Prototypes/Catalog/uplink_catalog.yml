@@ -2211,7 +2211,7 @@
     Telecrystal: 2
   categories:
   - UplinkDeception
-<<<<<<< HEAD
+
 
 - type: listing
   id: UplinkSawAdvanced
@@ -2230,5 +2230,5 @@
   - !type:BuyerJobCondition
     whitelist:
     - MedicalDoctor
-=======
->>>>>>> master
+
+

@@ -13,7 +13,6 @@ namespace Content.Shared.Clothing.EntitySystems;
 public abstract class ClothingSystem : EntitySystem
 {
     [Dependency] private readonly SharedItemSystem _itemSys = default!;
-    [Dependency] private readonly SharedContainerSystem _containerSys = default!;
     [Dependency] private readonly InventorySystem _invSystem = default!;
     [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
     [Dependency] private readonly HideLayerClothingSystem _hideLayer = default!;

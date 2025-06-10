@@ -4,10 +4,7 @@ using Content.Shared.RCD;
 using Content.Shared.RCD.Components;
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;
-<<<<<<< HEAD
 using Robust.Shared.Collections;
-=======
->>>>>>> master
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
@@ -17,7 +14,6 @@ namespace Content.Client.RCD;
 [UsedImplicitly]
 public sealed class RCDMenuBoundUserInterface : BoundUserInterface
 {
-<<<<<<< HEAD
     private const string TopLevelActionCategory = "Main";
 
     private static readonly Dictionary<string, (string Tooltip, SpriteSpecifier Sprite)> PrototypesGroupingInfo
@@ -30,18 +26,6 @@ public sealed class RCDMenuBoundUserInterface : BoundUserInterface
             ["Lighting"] = ("rcd-component-lighting", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RCD/lighting.png"))),
         };
 
-=======
-    private static readonly Dictionary<string, (string Tooltip, SpriteSpecifier Sprite)> PrototypesGroupingInfo
-        = new Dictionary<string, (string Tooltip, SpriteSpecifier Sprite)>
-        {
-            ["WallsAndFlooring"] = ("rcd-component-walls-and-flooring", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RCD/walls_and_flooring.png"))),
-            ["WindowsAndGrilles"] = ("rcd-component-windows-and-grilles", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RCD/windows_and_grilles.png"))),
-            ["Airlocks"] = ("rcd-component-airlocks", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RCD/airlocks.png"))),
-            ["Electrical"] = ("rcd-component-electrical", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RCD/multicoil.png"))),
-            ["Lighting"] = ("rcd-component-lighting", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RCD/lighting.png"))),
-        };
-
->>>>>>> master
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly ISharedPlayerManager _playerManager = default!;
 
@@ -67,7 +51,6 @@ public sealed class RCDMenuBoundUserInterface : BoundUserInterface
         _menu.OpenOverMouseScreenPosition();
     }
 
-<<<<<<< HEAD
     private IEnumerable<RadialMenuOption> ConvertToButtons(HashSet<ProtoId<RCDPrototype>> prototypes)
     {
         Dictionary<string, List<RadialMenuActionOption>> buttonsByCategory = new();
@@ -86,14 +69,6 @@ public sealed class RCDMenuBoundUserInterface : BoundUserInterface
                 continue;
             }
 
-=======
-    private IEnumerable<RadialMenuNestedLayerOption> ConvertToButtons(HashSet<ProtoId<RCDPrototype>> prototypes)
-    {
-        Dictionary<string, List<RadialMenuActionOption>> buttonsByCategory = new();
-        foreach (var protoId in prototypes)
-        {
-            var prototype = _prototypeManager.Index(protoId);
->>>>>>> master
             if (!PrototypesGroupingInfo.TryGetValue(prototype.Category, out var groupInfo))
                 continue;
 
@@ -111,11 +86,7 @@ public sealed class RCDMenuBoundUserInterface : BoundUserInterface
             list.Add(actionOption);
         }
 
-<<<<<<< HEAD
         var models = new RadialMenuOption[buttonsByCategory.Count + topLevelActions.Count];
-=======
-        var models = new RadialMenuNestedLayerOption[buttonsByCategory.Count];
->>>>>>> master
         var i = 0;
         foreach (var (key, list) in buttonsByCategory)
         {
@@ -128,15 +99,12 @@ public sealed class RCDMenuBoundUserInterface : BoundUserInterface
             i++;
         }
 
-<<<<<<< HEAD
         foreach (var action in topLevelActions)
         {
             models[i] = action;
             i++;
         }
 
-=======
->>>>>>> master
         return models;
     }
 

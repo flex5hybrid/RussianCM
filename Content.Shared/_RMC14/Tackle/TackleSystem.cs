@@ -45,8 +45,8 @@ public sealed class TackleSystem : EntitySystem
 
     public override void Initialize()
     {
-        SubscribeLocalEvent<TackleableComponent, CMDisarmEvent>(OnDisarmed, before: [typeof(SharedHandsSystem), typeof(StaminaSystem)]);
-        SubscribeLocalEvent<RMCDisarmableComponent, CMDisarmEvent>(OnDisarmed, before: [typeof(SharedHandsSystem), typeof(StaminaSystem)]);
+        SubscribeLocalEvent<TackleableComponent, CMDisarmEvent>(OnDisarmed, before: [typeof(SharedHandsSystem), typeof(SharedStaminaSystem)]); // ЗАМЕНЕНО StaminaSystem -> SharedStaminaSystem IMPERIAL MARINES
+        SubscribeLocalEvent<RMCDisarmableComponent, CMDisarmEvent>(OnDisarmed, before: [typeof(SharedHandsSystem), typeof(SharedStaminaSystem)]);// ЗАМЕНЕНО StaminaSystem -> SharedStaminaSystem IMPERIAL MARINES
 
         SubscribeLocalEvent<TackledRecentlyByComponent, ComponentRemove>(OnByRemove);
         SubscribeLocalEvent<TackledRecentlyByComponent, EntityTerminatingEvent>(OnByRemove);

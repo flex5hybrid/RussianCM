@@ -11,6 +11,7 @@ namespace Content.Client.Weapons.Melee;
 
 public sealed partial class MeleeWeaponSystem
 {
+    [Dependency] private readonly SpriteSystem _sprite = default!;
     private const string FadeAnimationKey = "melee-fade";
     private const string SlashAnimationKey = "melee-slash";
     private const string ThrustAnimationKey = "melee-thrust";
@@ -216,7 +217,7 @@ public sealed partial class MeleeWeaponSystem
         var query = EntityQueryEnumerator<TrackUserComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out var arcComponent, out var xform))
         {
-            if (arcComponent.User == null || TerminatingOrDeleted(arcComponent.User))
+            if (arcComponent.User == null)
                 continue;
 
             Vector2 targetPos = TransformSystem.GetWorldPosition(arcComponent.User.Value);

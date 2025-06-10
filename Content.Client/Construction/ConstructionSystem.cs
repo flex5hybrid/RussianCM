@@ -15,6 +15,7 @@ using Robust.Shared.Input.Binding;
 using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Toolshed.Errors;
 using Robust.Shared.Utility;
 
 namespace Content.Client.Construction
@@ -344,6 +345,7 @@ namespace Content.Client.Construction
         private bool CheckConstructionConditions(ConstructionPrototype prototype, EntityCoordinates loc, Direction dir,
             EntityUid user, bool showPopup = false)
         {
+            if (prototype.Name == null) return false;
             var attempt = new RMCConstructionAttemptEvent(loc, prototype.Name);
             RaiseLocalEvent(ref attempt);
 

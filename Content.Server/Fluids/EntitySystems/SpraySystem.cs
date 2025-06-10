@@ -4,11 +4,11 @@ using Content.Server.Chemistry.EntitySystems;
 using Content.Server.Fluids.Components;
 using Content.Server.Gravity;
 using Content.Server.Popups;
-<<<<<<< HEAD
+
 using Content.Shared.CCVar;
-=======
+
 using Content.Shared._RMC14.Throwing;
->>>>>>> master
+
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.FixedPoint;
 using Content.Shared.Fluids;
@@ -17,11 +17,11 @@ using Content.Shared.Timing;
 using Content.Shared.Vapor;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
-<<<<<<< HEAD
+
 using Robust.Shared.Configuration;
-=======
+
 using Robust.Shared.Map;
->>>>>>> master
+
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Prototypes;
 

@@ -1,9 +1,9 @@
 delivery-recipient-examine = This one is meant for {$recipient}, {$job}.
 delivery-already-opened-examine = It was already opened.
-<<<<<<< HEAD
+
 delivery-earnings-examine = Delivering this will earn the station [color=yellow]{$spesos}[/color] spesos.
-=======
->>>>>>> master
+
+
 delivery-recipient-no-name = Unnamed
 delivery-recipient-no-job = Unknown
 
@@ -14,7 +14,7 @@ delivery-opened-others = {CAPITALIZE($recipient)} opened the {$delivery}.
 
 delivery-unlock-verb = Unlock
 delivery-open-verb = Open
-<<<<<<< HEAD
+
 delivery-slice-verb = Slice open
 
 delivery-teleporter-amount-examine =
@@ -36,5 +36,5 @@ delivery-fragile-broken-examine = This is a [color=red]fragile {$type}[/color]. 
 
 delivery-bomb-examine = This is a [color=purple]bomb {$type}[/color]. Oh no.
 delivery-bomb-primed-examine = This is a [color=purple]bomb {$type}[/color]. Reading this is a bad use of your time.
-=======
->>>>>>> master
+
+

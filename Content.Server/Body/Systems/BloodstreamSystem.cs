@@ -41,10 +41,10 @@ public sealed class BloodstreamSystem : EntitySystem
     [Dependency] private readonly SharedSolutionContainerSystem _solutionContainerSystem = default!;
     [Dependency] private readonly SharedStutteringSystem _stutteringSystem = default!;
     [Dependency] private readonly AlertsSystem _alertsSystem = default!;
-<<<<<<< HEAD
-=======
+
+
     [Dependency] private readonly CMStasisBagSystem _cmStasisBag = default!;
->>>>>>> master
+
 
     public override void Initialize()
     {

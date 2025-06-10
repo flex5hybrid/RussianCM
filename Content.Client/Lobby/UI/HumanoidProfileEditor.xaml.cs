@@ -59,13 +59,13 @@ namespace Content.Client.Lobby.UI
 
         private readonly SpriteSystem _sprite;
 
-<<<<<<< HEAD
+
         // CCvar.
         private int _maxNameLength;
         private bool _allowFlavorText;
 
-=======
->>>>>>> master
+
+
         private FlavorText.FlavorText? _flavorText;
         private TextEdit? _flavorTextEdit;
 
@@ -144,13 +144,13 @@ namespace Content.Client.Lobby.UI
             _requirements = requirements;
             _controller = UserInterfaceManager.GetUIController<LobbyUIController>();
             _sprite = _entManager.System<SpriteSystem>();
-<<<<<<< HEAD
+
 
             _maxNameLength = _cfgManager.GetCVar(CCVars.MaxNameLength);
             _allowFlavorText = _cfgManager.GetCVar(CCVars.FlavorText);
 
-=======
->>>>>>> master
+
+
             ImportButton.OnPressed += args =>
             {
                 ImportProfile();

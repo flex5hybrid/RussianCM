@@ -48,16 +48,16 @@ public sealed class ChasmFallingVisualsSystem : EntitySystem
             TerminatingOrDeleted(uid))
         {
             return;
-<<<<<<< HEAD
+
 
         _sprite.SetScale((uid, sprite), component.OriginalScale);
 
-=======
+
         }
 
         sprite.Scale = component.OriginalScale;
 
->>>>>>> master
+
         if (!TryComp<AnimationPlayerComponent>(uid, out var player))
             return;
 

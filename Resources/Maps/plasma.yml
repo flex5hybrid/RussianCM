@@ -1,19 +1,19 @@
 meta:
   format: 7
   category: Map
-<<<<<<< HEAD
+
   engineVersion: 254.1.0
   forkId: ""
   forkVersion: ""
   time: 04/19/2025 08:50:04
   entityCount: 26229
-=======
+
   engineVersion: 248.0.0
   forkId: ""
   forkVersion: ""
   time: 03/09/2025 09:02:52
   entityCount: 26218
->>>>>>> master
+
 maps:
 - 1
 grids:
@@ -167111,11 +167111,11 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-<<<<<<< HEAD
+
       secondsUntilStateChange: -200076.22
-=======
+
       secondsUntilStateChange: -199343.58
->>>>>>> master
+
       state: Opening
     - type: Airlock
       autoClose: False

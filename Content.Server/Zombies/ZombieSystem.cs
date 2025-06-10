@@ -66,10 +66,7 @@ namespace Content.Server.Zombies
             SubscribeLocalEvent<ZombieComponent, CloningEvent>(OnZombieCloning);
             SubscribeLocalEvent<ZombieComponent, TryingToSleepEvent>(OnSleepAttempt);
             SubscribeLocalEvent<ZombieComponent, GetCharactedDeadIcEvent>(OnGetCharacterDeadIC);
-<<<<<<< HEAD
             SubscribeLocalEvent<ZombieComponent, GetCharacterUnrevivableIcEvent>(OnGetCharacterUnrevivableIC);
-=======
->>>>>>> master
             SubscribeLocalEvent<ZombieComponent, MindAddedMessage>(OnMindAdded);
             SubscribeLocalEvent<ZombieComponent, MindRemovedMessage>(OnMindRemoved);
 
@@ -325,11 +322,7 @@ namespace Content.Server.Zombies
         // Remove the role when getting cloned, getting gibbed and borged, or leaving the body via any other method.
         private void OnMindRemoved(Entity<ZombieComponent> ent, ref MindRemovedMessage args)
         {
-<<<<<<< HEAD
             _role.MindRemoveRole<ZombieRoleComponent>((args.Mind.Owner,  args.Mind.Comp));
-=======
-            _role.MindTryRemoveRole<ZombieRoleComponent>(args.Mind);
->>>>>>> master
         }
     }
 }

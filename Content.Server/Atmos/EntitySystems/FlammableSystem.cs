@@ -1,11 +1,11 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Atmos.Components;
-<<<<<<< HEAD
+
 using Content.Server.Stunnable;
 using Content.Server.Temperature.Components;
 using Content.Server.Temperature.Systems;
-=======
->>>>>>> master
+
+
 using Content.Server.Damage.Components;
 using Content.Server.Stunnable;
 using Content.Server.Temperature.Systems;
@@ -18,10 +18,10 @@ using Content.Shared.Atmos;
 using Content.Shared.Atmos.Components;
 using Content.Shared.Damage;
 using Content.Shared.Database;
-<<<<<<< HEAD
-=======
+
+
 using Content.Shared.FixedPoint;
->>>>>>> master
+
 using Content.Shared.IgnitionSource;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory;
@@ -34,11 +34,11 @@ using Content.Shared.Throwing;
 using Content.Shared.Timing;
 using Content.Shared.Toggleable;
 using Content.Shared.Weapons.Melee.Events;
-<<<<<<< HEAD
+
 using Content.Shared.FixedPoint;
 using Content.Shared.Hands;
-=======
->>>>>>> master
+
+
 using Robust.Server.Audio;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
@@ -401,13 +401,13 @@ namespace Content.Server.Atmos.EntitySystems
                     _adminLogger.Add(LogType.Flammable, $"{ToPrettyString(uid):target} set on fire by {ToPrettyString(ignitionSource):actor}");
                 flammable.OnFire = true;
 
-<<<<<<< HEAD
+
                 var extinguished = new IgnitedEvent();
                 RaiseLocalEvent(uid, ref extinguished);
-=======
+
                 var ev = new RMCIgniteEvent();
                 RaiseLocalEvent(uid, ref ev);
->>>>>>> master
+
             }
 
             Dirty(uid, flammable);

@@ -1,19 +1,19 @@
 meta:
   format: 7
   category: Map
-<<<<<<< HEAD
+
   engineVersion: 254.1.0
   forkId: ""
   forkVersion: ""
   time: 04/24/2025 09:44:40
   entityCount: 28726
-=======
+
   engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
   time: 03/29/2025 04:10:56
   entityCount: 28717
->>>>>>> master
+
 maps:
 - 951
 grids:
@@ -12419,11 +12419,11 @@ entities:
       pos: 11.5,29.5
       parent: 5350
     - type: Door
-<<<<<<< HEAD
+
       secondsUntilStateChange: -5519.5977
-=======
+
       secondsUntilStateChange: -4233.237
->>>>>>> master
+
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15036,11 +15036,11 @@ entities:
       pos: -4.5,53.5
       parent: 5350
     - type: Door
-<<<<<<< HEAD
+
       secondsUntilStateChange: -114102.625
-=======
+
       secondsUntilStateChange: -112816.266
->>>>>>> master
+
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 2
@@ -84751,11 +84751,11 @@ entities:
       pos: 31.5,-33.5
       parent: 5350
     - type: Door
-<<<<<<< HEAD
+
       secondsUntilStateChange: -36941.67
-=======
+
       secondsUntilStateChange: -35655.312
->>>>>>> master
+
       state: Closing
   - uid: 9615
     components:
@@ -185887,11 +185887,11 @@ entities:
       pos: -28.5,-5.5
       parent: 5350
     - type: Door
-<<<<<<< HEAD
+
       secondsUntilStateChange: -42653.582
-=======
+
       secondsUntilStateChange: -41367.223
->>>>>>> master
+
       state: Opening
   - uid: 17570
     components:

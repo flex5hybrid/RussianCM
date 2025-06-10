@@ -1,3 +1,4 @@
+using Content.Shared.Atmos.Components; // IMPERIAL MARINES MERGE FIX
 using Content.Server.Atmos.Components;
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Xenoarchaeology.Artifact.XAE.Components;

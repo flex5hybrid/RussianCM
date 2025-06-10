@@ -26,11 +26,11 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
     [Dependency] private readonly IEntityManager _entManager = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
-<<<<<<< HEAD
+
     [Dependency] private readonly SponsorsManager _sponsorsManager = default!; //Imperial sponsors
-=======
+
     [Dependency] private readonly RMCPlayTimeManager _rmcPlayTime = default!;
->>>>>>> master
+
 
     private readonly Dictionary<string, TimeSpan> _roles = new();
     private readonly List<string> _roleBans = new();

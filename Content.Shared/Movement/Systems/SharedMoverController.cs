@@ -19,10 +19,6 @@ using Robust.Shared.Map.Components;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Controllers;
-<<<<<<< HEAD
-=======
-using Robust.Shared.Physics.Systems;
->>>>>>> master
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
@@ -65,14 +61,6 @@ public abstract partial class SharedMoverController : VirtualController
     protected EntityQuery<TransformComponent> XformQuery;
 
     private static readonly ProtoId<TagPrototype> FootstepSoundTag = "FootstepSound";
-<<<<<<< HEAD
-=======
-
-    /// <summary>
-    /// <see cref="CCVars.StopSpeed"/>
-    /// </summary>
-    private float _stopSpeed;
->>>>>>> master
 
     private bool _relativeMovement;
     private float _minDamping;
@@ -212,7 +200,6 @@ public abstract partial class SharedMoverController : VirtualController
             return;
         }
 
-<<<<<<< HEAD
         // If the body is in air but isn't weightless then it can't move
         // TODO: MAKE ISWEIGHTLESS EVENT BASED
         var weightless = _gravity.IsWeightless(uid, physicsComponent, xform);
@@ -228,8 +215,6 @@ public abstract partial class SharedMoverController : VirtualController
             inAirHelpless = true;
         }
 
-=======
->>>>>>> master
         UsedMobMovement[uid] = true;
 
         var moveSpeedComponent = ModifierQuery.CompOrNull(uid);
@@ -257,7 +242,6 @@ public abstract partial class SharedMoverController : VirtualController
 
             touching = ev.CanMove || xform.GridUid != null || MapGridQuery.HasComp(xform.GridUid);
 
-<<<<<<< HEAD
             // If we're not on a grid, and not able to move in space check if we're close enough to a grid to touch.
             if (!touching && MobMoverQuery.TryComp(uid, out var mobMover))
                 touching |= IsAroundCollider(_lookup, (uid, physicsComponent, mobMover, xform));
@@ -272,25 +256,6 @@ public abstract partial class SharedMoverController : VirtualController
                     friction = moveSpeedComponent?.WeightlessFrictionNoInput ?? _airDamping;
             }
             // Otherwise use the off-grid values.
-=======
-        var parentRotation = GetParentGridAngle(mover);
-        var wishDir = _relativeMovement ? parentRotation.RotateVec(total) : total;
-
-        DebugTools.Assert(MathHelper.CloseToPercent(total.Length(), wishDir.Length()));
-
-        float friction;
-        float weightlessModifier;
-        float accel;
-        var velocity = physicsComponent.LinearVelocity;
-
-        // Whether we use weightless friction or not.
-        if (weightless)
-        {
-            if (gridComp == null && !MapGridQuery.HasComp(xform.GridUid))
-                friction = moveSpeedComponent?.OffGridFriction ?? MovementSpeedModifierComponent.DefaultOffGridFriction;
-            else if (wishDir != Vector2.Zero && touching)
-                friction = moveSpeedComponent?.WeightlessFriction ?? MovementSpeedModifierComponent.DefaultWeightlessFriction;
->>>>>>> master
             else
             {
                 friction = moveSpeedComponent?.OffGridFriction ?? _offGridDamping;
@@ -300,7 +265,6 @@ public abstract partial class SharedMoverController : VirtualController
         }
         else
         {
-<<<<<<< HEAD
             if (MapGridQuery.TryComp(xform.GridUid, out var gridComp)
                 && _mapSystem.TryGetTileRef(xform.GridUid.Value, gridComp, xform.Coordinates, out var tile)
                 && physicsComponent.BodyStatus == BodyStatus.OnGround)
@@ -312,9 +276,6 @@ public abstract partial class SharedMoverController : VirtualController
             wishDir = AssertValidWish(mover, walkSpeed, sprintSpeed);
 
             if (wishDir != Vector2.Zero)
-=======
-            if (wishDir != Vector2.Zero || moveSpeedComponent?.FrictionNoInput == null)
->>>>>>> master
             {
                 friction = moveSpeedComponent?.Friction ?? MovementSpeedModifierComponent.DefaultFriction;
                 friction *= tileDef?.MobFriction ?? tileDef?.Friction ?? 1f;
@@ -337,19 +298,13 @@ public abstract partial class SharedMoverController : VirtualController
         var minimumFrictionSpeed = moveSpeedComponent?.MinimumFrictionSpeed ?? MovementSpeedModifierComponent.DefaultMinimumFrictionSpeed;
         Friction(minimumFrictionSpeed, frameTime, friction, ref velocity);
 
-<<<<<<< HEAD
-=======
-        wishDir *= weightlessModifier;
-
->>>>>>> master
         if (!weightless || touching)
             Accelerate(ref velocity, in wishDir, accel, frameTime);
 
         SetWishDir((uid, mover), wishDir);
 
-<<<<<<< HEAD
         /*
-         * SNAKING!!! >-( 0 ================>
+         * SNAKING!!! >-( 0 ==>
          * Snaking is a feature where you can move faster by strafing in a direction perpendicular to the
          * direction you intend to move while still holding the movement key for the direction you're trying to move.
          * Snaking only works if acceleration exceeds friction, and it's effectiveness scales as acceleration continues
@@ -370,27 +325,14 @@ public abstract partial class SharedMoverController : VirtualController
 
         // Handle footsteps at the end
         if (wishDir != Vector2.Zero)
-=======
-        PhysicsSystem.SetLinearVelocity(physicsUid, velocity, body: physicsComponent);
-
-        // Ensures that players do not spiiiiiiin
-        PhysicsSystem.SetAngularVelocity(physicsUid, 0, body: physicsComponent);
-
-        // Handle footsteps at the end
-        if (total != Vector2.Zero)
->>>>>>> master
         {
             if (!NoRotateQuery.HasComponent(uid))
             {
                 // TODO apparently this results in a duplicate move event because "This should have its event run during
                 // island solver"??. So maybe SetRotation needs an argument to avoid raising an event?
                 var worldRot = _transform.GetWorldRotation(xform);
-<<<<<<< HEAD
 
                 _transform.SetLocalRotation(uid, xform.LocalRotation + wishDir.ToWorldAngle() - worldRot, xform);
-=======
-                _transform.SetLocalRotation(xform, xform.LocalRotation + wishDir.ToWorldAngle() - worldRot);
->>>>>>> master
             }
 
             if (!weightless && MobMoverQuery.TryGetComponent(uid, out var mobMover) &&
@@ -476,7 +418,6 @@ public abstract partial class SharedMoverController : VirtualController
 
     }
 
-<<<<<<< HEAD
     public void Friction(float minimumFrictionSpeed, float frameTime, float friction, ref float velocity)
     {
         if (Math.Abs(velocity) < minimumFrictionSpeed)
@@ -488,8 +429,6 @@ public abstract partial class SharedMoverController : VirtualController
 
     }
 
-=======
->>>>>>> master
     /// <summary>
     /// Adjusts the current velocity to the target velocity based on the specified acceleration.
     /// </summary>

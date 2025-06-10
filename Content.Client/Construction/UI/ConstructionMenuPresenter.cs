@@ -3,7 +3,6 @@ using System.Numerics;
 using Content.Client.Lobby;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.MenuBar.Widgets;
-using Content.Shared._RMC14.Prototypes;
 using Content.Shared.Construction.Prototypes;
 using Content.Shared.Whitelist;
 using Robust.Client.GameObjects;
@@ -14,6 +13,7 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
+using Content.Shared._RMC14.Prototypes; // IMPERIAL MARINES
 
 namespace Content.Client.Construction.UI
 {
@@ -184,54 +184,7 @@ namespace Content.Client.Construction.UI
             if (_constructionSystem is null)
                 return;
 
-<<<<<<< HEAD
             var actualRecipes = GetAndSortRecipes(args);
-=======
-            var recipes = new List<ConstructionPrototype>();
-
-            var isEmptyCategory = string.IsNullOrEmpty(category) || category == _forAllCategoryName;
-
-            if (isEmptyCategory)
-                _selectedCategory = string.Empty;
-            else
-                _selectedCategory = category;
-
-            foreach (var recipe in _prototypeManager.EnumerateCM<ConstructionPrototype>())
-            {
-                if (recipe.Hide)
-                    continue;
-
-                if (_playerManager.LocalSession == null
-                || _playerManager.LocalEntity == null
-                || _whitelistSystem.IsWhitelistFail(recipe.EntityWhitelist, _playerManager.LocalEntity.Value))
-                    continue;
-
-                if (!string.IsNullOrEmpty(search))
-                {
-                    if (!recipe.Name.ToLowerInvariant().Contains(search.Trim().ToLowerInvariant()))
-                        continue;
-                }
-
-                if (!isEmptyCategory)
-                {
-                    if (category == _favoriteCatName)
-                    {
-                        if (!_favoritedRecipes.Contains(recipe))
-                        {
-                            continue;
-                        }
-                    }
-                    else if (recipe.Category != category)
-                    {
-                        continue;
-                    }
-                }
-
-                recipes.Add(recipe);
-            }
-
-            recipes.Sort((a, b) => string.Compare(a.Name, b.Name, StringComparison.InvariantCulture));
->>>>>>> master
 
             var recipesList = _constructionView.Recipes;
             var recipesGrid = _constructionView.RecipesGrid;
@@ -242,50 +195,8 @@ namespace Content.Client.Construction.UI
 
             if (_constructionView.GridViewButtonPressed)
             {
-<<<<<<< HEAD
                 recipesList.PopulateList([]);
                 PopulateGrid(recipesGrid, actualRecipes);
-=======
-                foreach (var recipe in recipes)
-                {
-                    var itemButton = new TextureButton
-                    {
-                        TextureNormal = _spriteSystem.Frame0(recipe.Icon),
-                        Modulate = recipe.IconColor,
-                        VerticalAlignment = Control.VAlignment.Center,
-                        Name = recipe.Name,
-                        ToolTip = recipe.Name,
-                        Scale = new Vector2(1.35f),
-                        ToggleMode = true,
-                    };
-                    var itemButtonPanelContainer = new PanelContainer
-                    {
-                        PanelOverride = new StyleBoxFlat { BackgroundColor = StyleNano.ButtonColorDefault },
-                        Children = { itemButton },
-                    };
-
-                    itemButton.OnToggled += buttonToggledEventArgs =>
-                    {
-                        SelectGridButton(itemButton, buttonToggledEventArgs.Pressed);
-
-                        if (buttonToggledEventArgs.Pressed &&
-                            _selected != null &&
-                            _recipeButtons.TryGetValue(_selected.Name, out var oldButton))
-                        {
-                            oldButton.Pressed = false;
-                            SelectGridButton(oldButton, false);
-                        }
-
-                        OnGridViewRecipeSelected(this, buttonToggledEventArgs.Pressed ? recipe : null);
-                    };
-
-                    recipesGrid.AddChild(itemButtonPanelContainer);
-                    _recipeButtons[recipe.Name] = itemButton;
-                    var isCurrentButtonSelected = _selected == recipe;
-                    itemButton.Pressed = isCurrentButtonSelected;
-                    SelectGridButton(itemButton, isCurrentButtonSelected);
-                }
->>>>>>> master
             }
             else
             {
@@ -386,6 +297,43 @@ namespace Content.Client.Construction.UI
                 recipes.Add(new(recipe, proto));
             }
 
+            // Imperial Marines add start
+            foreach (var recipe in _prototypeManager.EnumerateCM<ConstructionPrototype>())
+            {
+                if (recipe.Hide)
+                    continue;
+
+                if (_playerManager.LocalSession == null
+                    || _playerManager.LocalEntity == null
+                    || _whitelistSystem.IsWhitelistFail(recipe.EntityWhitelist, _playerManager.LocalEntity.Value))
+                    continue;
+
+                if (!string.IsNullOrEmpty(search) && (recipe.Name is { } name &&
+                                                      !name.Contains(search.Trim(),
+                                                          StringComparison.InvariantCultureIgnoreCase)))
+                    continue;
+
+                if (!isEmptyCategory)
+                {
+                    if ((category != FavoriteCatName || !_favoritedRecipes.Contains(recipe)) &&
+                        recipe.Category != category)
+                        continue;
+                }
+
+                if (!_constructionSystem!.TryGetRecipePrototype(recipe.ID, out var targetProtoId))
+                {
+                    Logger.Error("Cannot find the target prototype in the recipe cache with the id \"{0}\" of {1}.",
+                        recipe.ID,
+                        nameof(ConstructionPrototype));
+                    continue;
+                }
+
+                if (!_prototypeManager.TryIndex(targetProtoId, out EntityPrototype? proto))
+                    continue;
+
+                recipes.Add(new(recipe, proto));
+            }
+            // Imperial Marines add end
             recipes.Sort(
                 (a, b) => string.Compare(a.Prototype.Name, b.Prototype.Name, StringComparison.InvariantCulture));
 
@@ -397,11 +345,7 @@ namespace Content.Client.Construction.UI
             if (button.Parent is not PanelContainer buttonPanel)
                 return;
 
-<<<<<<< HEAD
             button.Modulate = select ? Color.Green : Color.Transparent;
-=======
-            //button.Modulate = select ? Color.Green : Color.White;
->>>>>>> master
             var buttonColor = select ? StyleNano.ButtonColorDefault : Color.Transparent;
             buttonPanel.PanelOverride = new StyleBoxFlat { BackgroundColor = buttonColor };
         }
@@ -410,7 +354,7 @@ namespace Content.Client.Construction.UI
         {
             var uniqueCategories = new HashSet<string>();
 
-            foreach (var prototype in _prototypeManager.EnumerateCM<ConstructionPrototype>())
+            foreach (var prototype in _prototypeManager.EnumerateCM<ConstructionPrototype>()) //imperial marines change
             {
                 var category = prototype.Category;
 
@@ -468,16 +412,9 @@ namespace Content.Client.Construction.UI
                 return;
 
             _constructionView.SetRecipeInfo(
-<<<<<<< HEAD
                 prototype.Name!,
                 prototype.Description!,
                 proto,
-=======
-                prototype.Name,
-                prototype.Description,
-                _spriteSystem.Frame0(prototype.Icon),
-                prototype.IconColor,
->>>>>>> master
                 prototype.Type != ConstructionType.Item,
                 !_favoritedRecipes.Contains(prototype));
 
@@ -511,22 +448,6 @@ namespace Content.Client.Construction.UI
             }
         }
 
-<<<<<<< HEAD
-=======
-        private ItemList.Item GetItem(ConstructionPrototype recipe, ItemList itemList)
-        {
-            return new(itemList)
-            {
-                Metadata = recipe,
-                Text = recipe.Name,
-                Icon = _spriteSystem.Frame0(recipe.Icon),
-                IconModulate = recipe.IconColor,
-                TooltipEnabled = true,
-                TooltipText = recipe.Description,
-            };
-        }
-
->>>>>>> master
         private void BuildButtonToggled(bool pressed)
         {
             if (pressed)

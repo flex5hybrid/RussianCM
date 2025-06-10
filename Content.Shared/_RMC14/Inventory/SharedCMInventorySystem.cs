@@ -783,7 +783,7 @@ public abstract class SharedCMInventorySystem : EntitySystem
 
             while (slots.MoveNext(out var slot))
             {
-                if (_inventory.TryEquip(user, clothing, slot.ID, doRangeCheck: doRangeCheck))
+                if (_inventory.TryEquip(user, clothing, slot.ID)) // CHANGED BY IMPERIAL MARINES
                     return true;
             }
         }

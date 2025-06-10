@@ -300,22 +300,6 @@ public abstract class SharedIdCardSystem : EntitySystem
         ent.Comp.Expired = true;
         Dirty(ent);
     }
-
-    public override void Update(float frameTime)
-    {
-        base.Update(frameTime);
-        var query = EntityQueryEnumerator<ExpireIdCardComponent>();
-        while (query.MoveNext(out var uid, out var comp))
-        {
-            if (comp.Expired || comp.Permanent)
-                continue;
-
-            if (_timing.CurTime < comp.ExpireTime)
-                continue;
-
-            ExpireId((uid, comp));
-        }
-    }
     // RMC14, for ghost roles
     public override void Update(float frameTime)
     {

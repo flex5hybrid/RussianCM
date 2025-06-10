@@ -16,10 +16,7 @@ namespace Content.Client.Administration.Systems
         [Dependency] private readonly EntityLookupSystem _entityLookup = default!;
         [Dependency] private readonly IUserInterfaceManager _userInterfaceManager = default!;
         [Dependency] private readonly IConfigurationManager _configurationManager = default!;
-<<<<<<< HEAD
         [Dependency] private readonly SharedRoleSystem _roles = default!;
-=======
->>>>>>> master
 
         private AdminNameOverlay _adminNameOverlay = default!;
 
@@ -35,12 +32,8 @@ namespace Content.Client.Administration.Systems
                 _resourceCache,
                 _entityLookup,
                 _userInterfaceManager,
-<<<<<<< HEAD
                 _configurationManager,
                 _roles);
-=======
-                _configurationManager);
->>>>>>> master
             _adminManager.AdminStatusUpdated += OnAdminStatusUpdated;
         }
 

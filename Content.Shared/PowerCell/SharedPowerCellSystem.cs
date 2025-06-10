@@ -70,7 +70,16 @@ public abstract class SharedPowerCellSystem : EntitySystem
         _appearance.SetData(uid, PowerCellSlotVisuals.Enabled, false);
         RaiseLocalEvent(uid, new PowerCellChangedEvent(true), false);
     }
-
+    
+    /// <summary>
+    /// Makes the draw logic update in the next tick.
+    /// ЭТО ЧАСТЬ БОЛЕЕ СТАРОГО КОДА, НЕОБХОДИМОГО ДЛЯ IMPEEIAL MARINES
+    /// </summary>
+    public void QueueUpdate(Entity<PowerCellDrawComponent?> ent)
+    {
+        if (Resolve(ent, ref ent.Comp))
+            ent.Comp.NextUpdateTime = Timing.CurTime;
+    }
     public void SetDrawEnabled(Entity<PowerCellDrawComponent?> ent, bool enabled)
     {
         if (!Resolve(ent, ref ent.Comp, false) || ent.Comp.Enabled == enabled)

@@ -1,3 +1,4 @@
+// ЗАМЕНЕНО НА БОЛЕЕ СТАРУЮ ВЕРСИЮ ДЛЯ IMPERIAL MARINES
 using Content.Shared.Hands.Components;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Physics;
@@ -76,51 +77,6 @@ public sealed class StandingStateSystem : EntitySystem
             var ev = new DropHandItemsEvent();
             RaiseLocalEvent(uid, ref ev, false);
         }
-    }
-
-    private void OnMobCollide(Entity<StandingStateComponent> ent, ref AttemptMobCollideEvent args)
-    {
-        if (!ent.Comp.Standing)
-        {
-            args.Cancelled = true;
-        }
-    }
-
-    public bool IsDown(EntityUid uid, StandingStateComponent? standingState = null)
-    {
-        if (!Resolve(uid, ref standingState, false))
-            return false;
-
-        return !standingState.Standing;
-    }
-
-    public bool Down(EntityUid uid,
-        bool playSound = true,
-        bool dropHeldItems = true,
-        bool force = false,
-        StandingStateComponent? standingState = null,
-        AppearanceComponent? appearance = null,
-        HandsComponent? hands = null)
-    {
-        // TODO: This should actually log missing comps...
-        if (!Resolve(uid, ref standingState, false))
-            return false;
-
-        // Optional component.
-        Resolve(uid, ref appearance, ref hands, false);
-
-        if (!standingState.Standing)
-            return true;
-
-        // This is just to avoid most callers doing this manually saving boilerplate
-        // 99% of the time you'll want to drop items but in some scenarios (e.g. buckling) you don't want to.
-        // We do this BEFORE downing because something like buckle may be blocking downing but we want to drop hand items anyway
-        // and ultimately this is just to avoid boilerplate in Down callers + keep their behavior consistent.
-        if (dropHeldItems && hands != null)
-        {
-            var ev = new DropHandItemsEvent();
-            RaiseLocalEvent(uid, ref ev, false);
-        }
 
         if (!force)
         {
@@ -138,13 +94,13 @@ public sealed class StandingStateSystem : EntitySystem
         // Seemed like the best place to put it
         _appearance.SetData(uid, RotationVisuals.RotationState, RotationState.Horizontal, appearance);
 
-        // Change collision masks to allow going under certain entities like flaps and tables
-        if (TryComp(uid, out FixturesComponent? fixtureComponent))
-        {
-            foreach (var (key, fixture) in fixtureComponent.Fixtures)
+            // Change collision masks to allow going under certain entities like flaps and tables
+            if (changeCollision && TryComp(uid, out FixturesComponent? fixtureComponent))
             {
-                if ((fixture.CollisionMask & StandingCollisionLayer) == 0)
-                    continue;
+                foreach (var (key, fixture) in fixtureComponent.Fixtures)
+                {
+                    if ((fixture.CollisionMask & StandingCollisionLayer) == 0)
+                        continue;
 
                 standingState.ChangedFixtures.Add(key);
                 _physics.SetCollisionMask(uid, key, fixture, fixture.CollisionMask & ~StandingCollisionLayer, manager: fixtureComponent);
@@ -257,5 +213,4 @@ public sealed class FellDownEvent : EntityEventArgs
 /// </summary>
 [ByRefEvent]
 public record struct FellDownThrowAttemptEvent(EntityUid Thrower, bool Cancelled = false);
-
 

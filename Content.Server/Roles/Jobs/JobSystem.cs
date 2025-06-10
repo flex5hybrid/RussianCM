@@ -1,10 +1,7 @@
 ﻿using System.Globalization;
 using Content.Server.Chat.Managers;
-<<<<<<< HEAD
-=======
 using Content.Server.Mind;
 using Content.Shared.Chat;
->>>>>>> master
 using Content.Shared.Mind;
 using Content.Shared.Roles;
 using Content.Shared.Roles.Jobs;

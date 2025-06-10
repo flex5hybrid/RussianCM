@@ -1,4 +1,5 @@
 ﻿using Content.Shared.Disposal;
+using Content.Shared.Disposal.Unit; // Imperial Marines Fix
 using Content.Shared.Disposal.Components;
 using Robust.Shared.Containers;
 
@@ -15,7 +16,7 @@ public sealed class CMDisposalSystem : EntitySystem
 
     private void OnUndisposableInsertedAttempt(Entity<UndisposableComponent> ent, ref ContainerGettingInsertedAttemptEvent args)
     {
-        SharedDisposalUnitComponent? unit = null;
+        DisposalUnitComponent? unit = null;
         if (_disposal.ResolveDisposals(args.Container.Owner, ref unit) &&
             args.Container.ID == unit.Container.ID)
         {

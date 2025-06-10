@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis; // ИСПОЛЬЗОВАНА ЧАСТЬ БОЛЕЕ СТАРОГО КОДА, НЕОБХОДИМОГО ДЛЯ IMPERIAL MARINES
 using System.Linq;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Logs;
@@ -64,6 +65,8 @@ public abstract class SharedDisposalUnitSystem : EntitySystem
 
     // Percentage
     public const float PressurePerSecond = 0.05f;
+    // ИСПОЛЬЗОВАНА ЧАСТЬ БОЛЕЕ СТАРОГО КОДА, НЕОБХОДИМОГО ДЛЯ IMPERIAL MARINES
+    public abstract bool ResolveDisposals(EntityUid uid, [NotNullWhen(true)] ref DisposalUnitComponent? component);
 
     public override void Initialize()
     {

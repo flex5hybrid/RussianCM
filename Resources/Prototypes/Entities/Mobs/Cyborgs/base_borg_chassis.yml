@@ -155,11 +155,11 @@
   - type: Vocal
     sounds:
       Unsexed: UnisexSilicon
-<<<<<<< HEAD
+
     wilhelmProbability: 0
-=======
+
     screamAction: null
->>>>>>> master
+
   - type: DamagedSiliconAccent
   - type: UnblockableSpeech
   - type: FootstepModifier
@@ -240,10 +240,10 @@
     - DoorBumpOpener
     - FootstepSound
     - CanPilot
-<<<<<<< HEAD
+
     - SiliconEmotes
-=======
->>>>>>> master
+
+
     - Unimplantable
   - type: Emoting
   - type: GuideHelp

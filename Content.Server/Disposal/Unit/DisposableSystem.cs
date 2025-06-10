@@ -3,6 +3,7 @@ using Content.Server.Disposal.Tube;
 using Content.Shared.Body.Components;
 using Content.Shared.Damage;
 using Content.Shared.Disposal.Components;
+using Content.Shared.Disposal.Unit;
 using Content.Shared.Item;
 using Content.Shared.Throwing;
 using Robust.Shared.Audio.Systems;
@@ -10,7 +11,6 @@ using Robust.Shared.Containers;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
-
 namespace Content.Server.Disposal.Unit
 {
     public sealed class DisposableSystem : EntitySystem
@@ -18,7 +18,7 @@ namespace Content.Server.Disposal.Unit
         [Dependency] private readonly ThrowingSystem _throwing = default!;
         [Dependency] private readonly AtmosphereSystem _atmosphereSystem = default!;
         [Dependency] private readonly DamageableSystem _damageable = default!;
-        [Dependency] private readonly DisposalUnitSystem _disposalUnitSystem = default!;
+        [Dependency] private readonly SharedDisposalUnitSystem _disposalUnitSystem = default!;
         [Dependency] private readonly DisposalTubeSystem _disposalTubeSystem = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly SharedContainerSystem _containerSystem = default!;

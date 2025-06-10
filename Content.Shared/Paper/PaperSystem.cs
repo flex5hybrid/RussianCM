@@ -35,9 +35,6 @@ public sealed class PaperSystem : EntitySystem
     private static readonly ProtoId<TagPrototype> WriteIgnoreStampsTag = "WriteIgnoreStamps";
     private static readonly ProtoId<TagPrototype> WriteTag = "Write";
 
-    private static readonly ProtoId<TagPrototype> WriteIgnoreStampsTag = "WriteIgnoreStamps";
-    private static readonly ProtoId<TagPrototype> WriteTag = "Write";
-
     private EntityQuery<PaperComponent> _paperQuery;
 
     public override void Initialize()

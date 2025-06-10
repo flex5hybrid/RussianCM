@@ -8,8 +8,6 @@
   id: NamesNinjaTitle
   values:
     prefix: names-ninja-title-dataset-
-<<<<<<< HEAD
+
     count: 48 # Imperial Space
-=======
-    count: 46
->>>>>>> master
+

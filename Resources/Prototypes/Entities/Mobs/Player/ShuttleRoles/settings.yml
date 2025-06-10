@@ -718,7 +718,7 @@
     - type: RandomMetadata
       nameSegments:
       - NamesClown
-<<<<<<< HEAD
+
     # Imperial Space Crew Skils Start
     - type: CrewSkills
       skills:
@@ -728,8 +728,8 @@
         - skillClownJoker
         - skillPiloting
     # Imperial Space Crew Skils End
-=======
->>>>>>> master
+
+
 
 - type: randomHumanoidSettings
   id: VisitorJanitor
@@ -954,7 +954,7 @@
       - NamesFirst
       - NamesLast
       nameFormat: name-format-standard
-<<<<<<< HEAD
+
     - type: CrewSkills
       skills:
         - skillBotany
@@ -962,8 +962,8 @@
         - skillBaseConstraction
         - skillPiloting
         - skillShooting
-=======
->>>>>>> master
+
+
 
 - type: randomHumanoidSettings
   id: ChallengeVictimChiefEngineer
@@ -984,7 +984,7 @@
       - NamesFirst
       - NamesLast
       nameFormat: name-format-standard
-<<<<<<< HEAD
+
     - type: CrewSkills
       skills:
         - skillBotany
@@ -998,8 +998,8 @@
         - skillPiloting
         - skillAtmos
         - skillHardInstrumentation
-=======
->>>>>>> master
+
+
 
 - type: randomHumanoidSettings
   id: ChallengeVictimCMO
@@ -1020,7 +1020,7 @@
       - NamesFirst
       - NamesLast
       nameFormat: name-format-standard
-<<<<<<< HEAD
+
     - type: CrewSkills
       skills:
         - skillBotany
@@ -1032,8 +1032,8 @@
         - skillPiloting
         - skillSurgery
         - skillNeuroSurgery
-=======
->>>>>>> master
+
+
 
 - type: randomHumanoidSettings
   id: ChallengeVictimHeadOfPersonnel
@@ -1054,15 +1054,15 @@
       - NamesFirst
       - NamesLast
       nameFormat: name-format-standard
-<<<<<<< HEAD
+
     - type: CrewSkills
       skills:
         - skillBotany
         - skillBaseMed
         - skillBaseConstraction
         - skillPiloting
-=======
->>>>>>> master
+
+
 
 - type: randomHumanoidSettings
   id: ChallengeVictimHeadOfSecurity
@@ -1083,7 +1083,7 @@
       - NamesFirst
       - NamesLast
       nameFormat: name-format-standard
-<<<<<<< HEAD
+
     - type: CrewSkills
       skills:
         - skillBotany
@@ -1091,8 +1091,8 @@
         - skillBaseConstraction
         - skillPiloting
         - skillShooting
-=======
->>>>>>> master
+
+
 
 - type: randomHumanoidSettings
   id: ChallengeVictimResearchDirector
@@ -1113,7 +1113,7 @@
       - NamesFirst
       - NamesLast
       nameFormat: name-format-standard
-<<<<<<< HEAD
+
     - type: CrewSkills
       skills:
         - skillBotany
@@ -1132,8 +1132,8 @@
         - skillPharmaceuticals
         - skillSurgery
         - skillNeuroSurgery
-=======
->>>>>>> master
+
+
 
 - type: randomHumanoidSettings
   id: ChallengeVictimQuartermaster
@@ -1154,15 +1154,15 @@
       - NamesFirst
       - NamesLast
       nameFormat: name-format-standard
-<<<<<<< HEAD
+
     - type: CrewSkills
       skills:
         - skillBotany
         - skillBaseMed
         - skillBaseConstraction
         - skillPiloting
-=======
->>>>>>> master
+
+
 
 # Служба Безопасности
 # После использования EventHumanoidMindShielded, так как они являются головами и, вероятно, должны иметь защиту разума
@@ -1188,15 +1188,15 @@
       - NamesFirst
       - NamesLast
       nameFormat: name-format-standard
-<<<<<<< HEAD
+
     - type: CrewSkills
       skills:
         - skillBotany
         - skillBaseMed
         - skillBaseConstraction
         - skillPiloting
-=======
->>>>>>> master
+
+
 
 # Инженерный
 

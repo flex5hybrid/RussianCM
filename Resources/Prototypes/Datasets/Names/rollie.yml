@@ -2,8 +2,6 @@
   id: NamesRollie
   values:
     prefix: names-rollie-dataset-
-<<<<<<< HEAD
+
     count: 39 # Imperial Space
-=======
-    count: 37
->>>>>>> master
+

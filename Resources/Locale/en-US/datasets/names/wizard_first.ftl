@@ -2,7 +2,7 @@ names-wizard-first-dataset-1 = Ashenzari
 names-wizard-first-dataset-2 = Chancellor
 names-wizard-first-dataset-3 = Cleric
 names-wizard-first-dataset-4 = Circe
-<<<<<<< HEAD
+
 names-wizard-first-dataset-5 = Cue
 names-wizard-first-dataset-6 = Doctor
 names-wizard-first-dataset-7 = Dithmenos
@@ -43,7 +43,7 @@ names-wizard-first-dataset-41 = Yredelemnul
 names-wizard-first-dataset-42 = Yodalf
 names-wizard-first-dataset-43 = Zartemis
 names-wizard-first-dataset-44 = Zin
-=======
+
 names-wizard-first-dataset-5 = Doctor
 names-wizard-first-dataset-6 = Dithmenos
 names-wizard-first-dataset-7 = Elyvilon
@@ -70,4 +70,4 @@ names-wizard-first-dataset-27 = Vehumet
 names-wizard-first-dataset-28 = Xom
 names-wizard-first-dataset-29 = Yredelemnul
 names-wizard-first-dataset-30 = Zin
->>>>>>> master
+

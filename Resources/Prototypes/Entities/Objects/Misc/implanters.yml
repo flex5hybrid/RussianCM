@@ -310,11 +310,11 @@
 
 - type: entity
   id: DeathRattleImplanterCentcomm
-<<<<<<< HEAD
+
   name: centcomm death rattle implanter
-=======
+
   suffix: centcomm death rattle
->>>>>>> master
+
   parent: BaseImplantOnlyImplanter
   components:
   - type: Implanter

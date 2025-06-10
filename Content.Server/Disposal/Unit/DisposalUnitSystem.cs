@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
 using Content.Shared.Destructible;
@@ -17,6 +18,11 @@ public sealed class DisposalUnitSystem : SharedDisposalUnitSystem
 
         SubscribeLocalEvent<DisposalUnitComponent, DestructionEventArgs>(OnDestruction);
         SubscribeLocalEvent<DisposalUnitComponent, BeforeExplodeEvent>(OnExploded);
+    }
+
+    public override bool ResolveDisposals(EntityUid uid, [NotNullWhen(true)] ref DisposalUnitComponent? component)
+    {
+        throw new NotImplementedException();
     }
 
     protected override void HandleAir(EntityUid uid, DisposalUnitComponent component, TransformComponent xform)

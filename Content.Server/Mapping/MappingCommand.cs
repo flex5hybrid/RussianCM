@@ -16,10 +16,10 @@ namespace Content.Server.Mapping
     sealed class MappingCommand : IConsoleCommand
     {
         [Dependency] private readonly IEntityManager _entities = default!;
-<<<<<<< HEAD
-=======
+
+
         [Dependency] private readonly IMapManager _map = default!;
->>>>>>> master
+
 
         public string Command => "mapping";
         public string Description => Loc.GetString("cmd-mapping-desc");

@@ -10,8 +10,6 @@ using Content.Server.Mind;
 using Content.Server.Prayer;
 using Content.Server.Silicons.Laws;
 using Content.Server.Station.Systems;
-using Content.Server.Xenoarchaeology.XenoArtifacts;
-using Content.Server.Xenoarchaeology.XenoArtifacts.Triggers.Components;
 using Content.Shared._RMC14.Admin;
 using Content.Shared._RMC14.Dialog;
 using Content.Shared._RMC14.Prototypes;

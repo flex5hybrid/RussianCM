@@ -21,6 +21,7 @@ using Robust.Shared.Animations;
 using Robust.Shared.Input;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
+using Robust.Shared.Physics.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using SharedGunSystem = Content.Shared.Weapons.Ranged.Systems.SharedGunSystem;
@@ -41,7 +42,7 @@ public sealed partial class GunSystem : SharedGunSystem
     [Dependency] private readonly SpriteSystem _sprite = default!;
 
     // RMC14
-    [Dependency] private readonly PhysicsSystem _physics = default!;
+    [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly ItemPickupSystem _itemPickup = default!;
     [Dependency] private readonly GunPredictionSystem _gunPrediction = default!;
     [Dependency] private readonly TransformSystem _transform = default!;

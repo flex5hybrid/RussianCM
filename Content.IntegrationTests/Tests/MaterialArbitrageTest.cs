@@ -13,6 +13,7 @@ using Content.Shared.Construction.Steps;
 using Content.Shared.FixedPoint;
 using Content.Shared.Lathe;
 using Content.Shared.Materials;
+using Content.Shared.Research.Prototypes;
 using Content.Shared.Stacks;
 using Content.Shared.Tools.Components;
 using Robust.Shared.GameObjects;
@@ -71,9 +72,19 @@ public sealed class MaterialArbitrageTest
         // get the inverted lathe recipe dictionary
         var latheRecipes = latheSys.InverseRecipes;
 
-        // Lets assume the possible lathe for resource multipliers:
-        // TODO: each recipe can technically have its own cost multiplier associated with it, so this test needs redone to factor that in.
-        var multiplier = 1; // RMC14: We do not have any upgraded lathes.
+        // Find the lowest multiplier / optimal lathe that can be used to construct a recipie.
+        var minMultiplier = new Dictionary<ProtoId<LatheRecipePrototype>, float>();
+
+        foreach (var (_, lathe) in pair.GetPrototypesWithComponent<LatheComponent>())
+        {
+            foreach (var recipe in latheSys.GetAllPossibleRecipes(lathe))
+            {
+                if (!minMultiplier.TryGetValue(recipe, out var min))
+                    min = 1;
+
+                minMultiplier[recipe] = Math.Min(min, lathe.MaterialUseMultiplier);
+            }
+        }
 
         // create construction dictionary
         Dictionary<string, ConstructionComponent> constructionRecipes = new();

@@ -113,4 +113,13 @@ public sealed partial class MindComponent : Component
     /// </summary>
     [DataField]
     public LocId? Subtype;
+
+    /// <summary>
+    ///     The session of the player owning this mind.
+    ///     Can be null, in which case the player is currently not logged in.
+    ///     ЧАСТЬ СТАРОГО КОДА ДОБАВЛЕНА IMPERIAL MARINES
+    /// </summary>
+    [ViewVariables, Access(typeof(SharedMindSystem), typeof(SharedGameTicker))]
+    // TODO remove this after moving IPlayerManager functions to shared
+    public ICommonSession? Session { get; set; }
 }

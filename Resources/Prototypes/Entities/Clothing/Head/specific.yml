@@ -28,11 +28,9 @@
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
   - type: TriggerOnVoice
-<<<<<<< HEAD
+
     keyPhrase: "Вперед вперед гаджет" # Перевод Imperial Space
-=======
-    keyPhrase: "go go gadget"
->>>>>>> master
+
     listenRange: 0
   - type: ActiveListener
     range: 0

@@ -244,10 +244,10 @@
       - state: base-part-inhand-right
       - state: base-stripes-inhand-right
         color: "#7B0F12"
-<<<<<<< HEAD
-=======
+
+
       
->>>>>>> master
+
 
 - type: entity
   id: BaseBorgModuleSyndicateAssault
@@ -275,7 +275,7 @@
       - state: base-part-inhand-right
       - state: base-stripes-inhand-right
         color: "#7B0F12"
-<<<<<<< HEAD
+
 
 - type: entity
   abstract: true
@@ -411,8 +411,8 @@
       - state: base-part-inhand-right
       - state: base-stripes-inhand-right
         color: "#FF00CC"
-=======
->>>>>>> master
+
+
 
 # generic modules
 - type: entity
@@ -1027,7 +1027,7 @@
         - state: base-part-inhand-right
         - state: base-stripes-inhand-right
           color: "#7B0F12"
-<<<<<<< HEAD
+
 
 # xenoborg modules
 - type: entity
@@ -1250,5 +1250,5 @@
     - CloakingDevice
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-eye-module }
-=======
->>>>>>> master
+
+

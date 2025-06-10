@@ -26,6 +26,7 @@ namespace Content.Server.Construction
 {
     public sealed partial class ConstructionSystem
     {
+        [Dependency] private readonly IComponentFactory _factory = default!;
         [Dependency] private readonly InventorySystem _inventorySystem = default!;
         [Dependency] private readonly SharedInteractionSystem _interactionSystem = default!;
         [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
@@ -215,7 +216,7 @@ namespace Content.Server.Construction
                     case ArbitraryInsertConstructionGraphStep arbitraryStep:
                         foreach (var entity in new HashSet<EntityUid>(EnumerateNearby(user)))
                         {
-                            if (!arbitraryStep.EntityValid(entity, EntityManager, Factory))
+                            if (!arbitraryStep.EntityValid(entity, EntityManager, _factory))
                                 continue;
 
                             if (used.Contains(entity))
@@ -417,6 +418,7 @@ namespace Content.Server.Construction
             }
 
             var coordinates = GetCoordinates(ev.Location);
+            if (constructionPrototype.Name == null) return;
             var attempt = new RMCConstructionAttemptEvent(coordinates, constructionPrototype.Name);
             RaiseLocalEvent(ref attempt);
 
@@ -498,7 +500,7 @@ namespace Content.Server.Construction
                 return;
             }
 
-            var mapPos = _transformSystem.ToMapCoordinates(location);
+            var mapPos = location.ToMap(EntityManager, _transformSystem);
             var predicate = GetPredicate(constructionPrototype.CanBuildInImpassable, mapPos);
 
             if (!_interactionSystem.InRangeUnobstructed(user, mapPos, predicate: predicate))
@@ -530,7 +532,7 @@ namespace Content.Server.Construction
                 switch (step)
                 {
                     case EntityInsertConstructionGraphStep entityInsert:
-                        if (entityInsert.EntityValid(holding, EntityManager, Factory))
+                        if (entityInsert.EntityValid(holding, EntityManager, _factory))
                             valid = true;
                         break;
                     case ToolConstructionGraphStep _:

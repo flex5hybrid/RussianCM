@@ -1,8 +1,5 @@
 ﻿using System.Text;
-<<<<<<< HEAD
 using Content.Server.Destructible;
-=======
->>>>>>> master
 using Content.Server.PowerCell;
 using Content.Shared.Speech.Components;
 using Content.Shared.Damage;
@@ -15,10 +12,7 @@ public sealed class DamagedSiliconAccentSystem : EntitySystem
 {
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly PowerCellSystem _powerCell = default!;
-<<<<<<< HEAD
     [Dependency] private readonly DestructibleSystem _destructibleSystem = default!;
-=======
->>>>>>> master
 
     public override void Initialize()
     {
@@ -43,11 +37,7 @@ public sealed class DamagedSiliconAccentSystem : EntitySystem
             }
             currentChargeLevel = Math.Clamp(currentChargeLevel, 0.0f, 1.0f);
             // Corrupt due to low power (drops characters on longer messages)
-<<<<<<< HEAD
             args.Message = CorruptPower(args.Message, currentChargeLevel, ent.Comp);
-=======
-            args.Message = CorruptPower(args.Message, currentChargeLevel, ref ent.Comp);
->>>>>>> master
         }
 
         if (ent.Comp.EnableDamageCorruption)
@@ -62,19 +52,11 @@ public sealed class DamagedSiliconAccentSystem : EntitySystem
                 damage = damageable.TotalDamage;
             }
             // Corrupt due to damage (drop, repeat, replace with symbols)
-<<<<<<< HEAD
             args.Message = CorruptDamage(args.Message, damage, ent);
         }
     }
 
     public string CorruptPower(string message, float chargeLevel, DamagedSiliconAccentComponent comp)
-=======
-            args.Message = CorruptDamage(args.Message, damage, ref ent.Comp);
-        }
-    }
-
-    public string CorruptPower(string message, float chargeLevel, ref DamagedSiliconAccentComponent comp)
->>>>>>> master
     {
         // The first idxMin characters are SAFE
         var idxMin = comp.StartPowerCorruptionAtCharIdx;
@@ -124,7 +106,6 @@ public sealed class DamagedSiliconAccentSystem : EntitySystem
         return outMsg.ToString();
     }
 
-<<<<<<< HEAD
     private string CorruptDamage(string message, FixedPoint2 totalDamage, Entity<DamagedSiliconAccentComponent> ent)
     {
         var outMsg = new StringBuilder();
@@ -142,14 +123,6 @@ public sealed class DamagedSiliconAccentSystem : EntitySystem
         // Linear interpolation of character damage probability
         var damagePercent = Math.Clamp((float)totalDamage / (float)damageAtMaxCorruption, 0, 1);
         var chanceToCorruptLetter = damagePercent * ent.Comp.MaxDamageCorruption;
-=======
-    private string CorruptDamage(string message, FixedPoint2 totalDamage, ref DamagedSiliconAccentComponent comp)
-    {
-        var outMsg = new StringBuilder();
-        // Linear interpolation of character damage probability
-        var damagePercent = Math.Clamp((float)totalDamage / (float)comp.DamageAtMaxCorruption, 0, 1);
-        var chanceToCorruptLetter = damagePercent * comp.MaxDamageCorruption;
->>>>>>> master
         foreach (var letter in message)
         {
             if (_random.Prob(chanceToCorruptLetter)) // Corrupt!

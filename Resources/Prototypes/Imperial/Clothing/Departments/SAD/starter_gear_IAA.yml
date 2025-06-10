@@ -6,7 +6,7 @@
     - type: StorageFill
       contents:
         - id: Flash
-        #===========
+        #====
         - id: Paper
           amount: 3
         - id: CyberPen
@@ -21,7 +21,7 @@
     - type: StorageFill
       contents:
         - id: Flash
-        #===========
+        #====
         - id: Paper
           amount: 3
         - id: CyberPen
@@ -36,7 +36,7 @@
     - type: StorageFill
       contents:
         - id: Flash
-        #===========
+        #====
         - id: Paper
           amount: 3
         - id: CyberPen

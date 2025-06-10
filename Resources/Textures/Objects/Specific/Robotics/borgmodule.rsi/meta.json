@@ -1,11 +1,11 @@
 {
     "version": 1,
     "license": "CC0-1.0",
-<<<<<<< HEAD
+
     "copyright": "Created by EmoGarbage404 (github) for Space Station 14. icon-construction.png created by deltanedas (github). syndicateborgbomb.png created by Mangohydra (github). layered inhands by mubururu_ (github), icon-chem.png & icon-mining-adv.png created by mubururu_ (github), Xenoborg modules sprites by Samuka-C (github)",
-=======
+
     "copyright": "Created by EmoGarbage404 (github) for Space Station 14. icon-construction.png created by deltanedas (github). syndicateborgbomb.png created by Mangohydra (github). layered inhands by mubururu_ (github).",
->>>>>>> master
+
     "size": {
         "x": 32,
         "y": 32
@@ -36,12 +36,12 @@
             "name": "icon-chemist"
         },
         {
-<<<<<<< HEAD
+
             "name": "icon-chem"
         },
         {
-=======
->>>>>>> master
+
+
             "name": "icon-clown"
         },
         {
@@ -78,12 +78,12 @@
             "name": "icon-mining"
         },
         {
-<<<<<<< HEAD
+
             "name": "icon-mining-adv"
         },
         {
-=======
->>>>>>> master
+
+
             "name": "icon-mop"
         },
         {
@@ -117,7 +117,7 @@
             "name": "icon-treatment"
         },
         {
-<<<<<<< HEAD
+
             "name": "icon-xenoborg-access-breaker"
         },
         {
@@ -157,8 +157,8 @@
             "name": "icon-xenoborg-tools"
         },
         {
-=======
->>>>>>> master
+
+
             "name": "icon-syndicate"
         },
         {
@@ -186,7 +186,7 @@
             "name": "syndicate"
         },
         {
-<<<<<<< HEAD
+
             "name": "icon-security-instrument"
         },
         {
@@ -211,8 +211,8 @@
             "name": "xenoborg_stealth"
         },
         {
-=======
->>>>>>> master
+
+
             "name": "base-icon-inhand-left",
             "directions": 4
         },

@@ -156,7 +156,7 @@
 - type: dataset
   id: IonStormAllergies
   values:
-<<<<<<< HEAD
+
   - КИСЛОТУ
   - ВОЗДУХ
   - КРОВЬ
@@ -191,7 +191,7 @@
   - КОСМОС
   - СОЛНЕЧНЫЙ СВЕТ
   - ВОДУ
-=======
+
   - ACID
   - AIR
   - BLOOD
@@ -225,7 +225,7 @@
   - SPACE
   - SUNLIGHT
   - WATER
->>>>>>> master
+
 
 # Severity is how bad the allergy is.
 - type: dataset
@@ -290,7 +290,7 @@
 - type: dataset
   id: IonStormConcepts
   values:
-<<<<<<< HEAD
+
   - АМЕРИКАНИЗМ
   - АНАРХИЯ
   - ИСКУССТВО
@@ -345,7 +345,7 @@
   - ВРЕМЯ
   - СОСТОЯТЕЛЬНОСТЬ
   - ЧУДО
-=======
+
   - ABSTRACTION
   - ANARCHY
   - ART
@@ -401,7 +401,7 @@
   - TIME
   - WEALTHINESS
   - WONDER
->>>>>>> master
+
 
 # Crew is any specific job. Using jobs instead of specific crewmembers since "THE CLOWN" is easier than
 # seeing "JOHN SMITH" and having to figure out who john smith is.

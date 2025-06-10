@@ -2,10 +2,10 @@ using Content.Server.DeviceLinking.Components;
 using Content.Server.DeviceNetwork;
 using Content.Shared.DeviceLinking;
 using Content.Shared.DeviceLinking.Events;
-<<<<<<< HEAD
+
 using Content.Shared.DeviceNetwork;
-=======
->>>>>>> master
+
+
 
 namespace Content.Server.DeviceLinking.Systems;
 

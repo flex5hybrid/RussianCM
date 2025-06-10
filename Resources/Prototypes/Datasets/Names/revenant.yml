@@ -8,18 +8,14 @@
   id: NamesRevenantAdjective
   values:
     prefix: names-revenant-adjective-dataset-
-<<<<<<< HEAD
+
     count: 16 # Imperial Space
-=======
-    count: 18
->>>>>>> master
+
 
 - type: localizedDataset
   id: NamesRevenantTheme
   values:
     prefix: names-revenant-theme-dataset-
-<<<<<<< HEAD
+
     count: 13
-=======
-    count: 18
->>>>>>> master
+

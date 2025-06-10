@@ -13,6 +13,7 @@ using Content.Shared.CCVar;
 using Content.Shared.Input;
 using Content.Shared.Interaction;
 using Content.Shared.Storage;
+using Content.Shared.Storage.EntitySystems;
 using Robust.Client.GameObjects;
 using Robust.Client.Input;
 using Robust.Client.Player;
@@ -40,7 +41,7 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
     [Dependency] private readonly IInputManager _input = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly CloseRecentWindowUIController _closeRecentWindowUIController = default!;
-    [UISystemDependency] private readonly StorageSystem _storage = default!;
+    [UISystemDependency] private readonly SharedStorageSystem _storage = default!;
     [UISystemDependency] private readonly UserInterfaceSystem _ui = default!;
 
     private readonly DragDropHelper<ItemGridPiece> _menuDragHelper;
@@ -241,11 +242,10 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
 
         if (args.Function == ContentKeyFunctions.MoveStoredItem)
         {
-            // DraggingRotation = control.Location.Rotation;
-            // _menuDragHelper.MouseDown(control);
-            // _menuDragHelper.Update(0f);
+            DraggingRotation = control.Location.Rotation;
+            _menuDragHelper.MouseDown(control);
+            _menuDragHelper.Update(0f);
 
-            // This Handle here is what prevents always inserting and allows InteractUsing on items in storage.
             args.Handle();
         }
         else if (args.Function == ContentKeyFunctions.SaveItemLocation)
@@ -367,7 +367,6 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
         // If we just clicked, then take it out of the bag.
         else
         {
-            window.Reclaim(control.Location, control);
             EntityManager.RaisePredictiveEvent(new StorageInteractWithItemEvent(
                 EntityManager.GetNetEntity(control.Entity),
                 EntityManager.GetNetEntity(sourceStorage)));
@@ -410,7 +409,7 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
         return true;
     }
 
-    private void SetDraggingRotation()
+     private void SetDraggingRotation() // imperial marines change
     {
         if (DraggingGhost == null)
             return;

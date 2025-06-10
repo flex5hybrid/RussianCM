@@ -8,9 +8,7 @@ using Content.Server.NPC.Queries.Queries;
 using Content.Server.Nutrition.Components;
 using Content.Server.Nutrition.EntitySystems;
 using Content.Server.Storage.Components;
-<<<<<<< HEAD
 using Content.Server.Temperature.Components;
-=======
 using Content.Shared._RMC14.Interaction;
 using Content.Shared._RMC14.Xenonids;
 using Content.Shared._RMC14.Xenonids.Construction;
@@ -20,7 +18,6 @@ using Content.Shared._RMC14.Xenonids.Construction.ResinHole;
 using Content.Shared._RMC14.Xenonids.Egg;
 using Content.Shared._RMC14.Xenonids.Parasite;
 using Content.Shared.Atmos.Components;
->>>>>>> master
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Damage;
 using Content.Shared.Examine;
@@ -32,10 +29,7 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.NPC.Systems;
 using Content.Shared.Nutrition.Components;
 using Content.Shared.Nutrition.EntitySystems;
-<<<<<<< HEAD
-=======
 using Content.Shared.Standing;
->>>>>>> master
 using Content.Shared.Stunnable;
 using Content.Shared.Tools.Systems;
 using Content.Shared.Turrets;
@@ -72,11 +66,8 @@ public sealed class NPCUtilitySystem : EntitySystem
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly MobThresholdSystem _thresholdSystem = default!;
     [Dependency] private readonly TurretTargetSettingsSystem _turretTargetSettings = default!;
-<<<<<<< HEAD
-=======
     [Dependency] private readonly RMCInteractionSystem _rmcInteraction = default!;
     [Dependency] private readonly StandingStateSystem _standing = default!;
->>>>>>> master
 
     private EntityQuery<PuddleComponent> _puddleQuery;
     private EntityQuery<TransformComponent> _xformQuery;
@@ -397,7 +388,6 @@ public sealed class NPCUtilitySystem : EntitySystem
 
                     return 0f;
                 }
-<<<<<<< HEAD
             case TargetLowTempCon con:
                 {
                     if (!TryComp<TemperatureComponent>(targetUid, out var temperature))
@@ -405,7 +395,6 @@ public sealed class NPCUtilitySystem : EntitySystem
 
                     return temperature.CurrentTemperature <= con.MinTemp ? 1f : 0f;
                 }
-=======
             case TargetIsNotDeadCon:
             {
                 return !_mobState.IsDead(targetUid) ? 1f : 0f;
@@ -458,7 +447,6 @@ public sealed class NPCUtilitySystem : EntitySystem
             {
                 return TryComp<EggMorpherComponent>(targetUid, out var eggmorpher) && eggmorpher.CurParasites < eggmorpher.MaxParasites ? 1f : 0f;
             }
->>>>>>> master
             default:
                 throw new NotImplementedException();
         }

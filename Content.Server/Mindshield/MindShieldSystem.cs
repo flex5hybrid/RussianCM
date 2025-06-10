@@ -6,10 +6,6 @@ using Content.Shared.Database;
 using Content.Shared.Implants;
 using Content.Shared.Mindshield.Components;
 using Content.Shared.Revolutionary.Components;
-<<<<<<< HEAD
-=======
-using Content.Shared.Tag;
->>>>>>> master
 using Robust.Shared.Containers;
 
 namespace Content.Server.Mindshield;
@@ -28,12 +24,8 @@ public sealed class MindShieldSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-<<<<<<< HEAD
 
         SubscribeLocalEvent<MindShieldImplantComponent, ImplantImplantedEvent>(OnImplantImplanted);
-=======
-        SubscribeLocalEvent<SubdermalImplantComponent, ImplantImplantedEvent>(ImplantCheck);
->>>>>>> master
         SubscribeLocalEvent<MindShieldImplantComponent, EntGotRemovedFromContainerMessage>(OnImplantDraw);
     }
 
@@ -70,4 +62,3 @@ public sealed class MindShieldSystem : EntitySystem
         RemComp<MindShieldComponent>(args.Container.Owner);
     }
 }
-

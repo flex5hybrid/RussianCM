@@ -57,11 +57,11 @@ public sealed class PoweredLightVisualizerSystem : VisualizerSystem<PoweredLight
             return;
         if (args.Key != PoweredLightVisualsComponent.BlinkingAnimationKey)
             return;
-<<<<<<< HEAD
+
         if (!comp.IsBlinking)
-=======
+
         if(!comp.IsBlinking)
->>>>>>> master
+
             return;
 
         AnimationSystem.Play((uid, animationPlayer), BlinkingAnimation(comp), PoweredLightVisualsComponent.BlinkingAnimationKey);

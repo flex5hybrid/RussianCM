@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 using Content.Server.Administration.Logs;
 using Content.Server.GameTicking;
 using Content.Server.Ghost;
@@ -13,6 +12,7 @@ using Robust.Server.Player;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Content.Server.Mind;
 
@@ -281,19 +281,6 @@ public sealed class MindSystem : SharedMindSystem
             return;
 
         Dirty(mindId, mind);
-<<<<<<< HEAD
-=======
-        var netMind = GetNetEntity(mindId);
-        _pvsOverride.ClearOverride(netMind);
-
-        if (mind.Session != null)
-        {
-            foreach (var role in mind.MindRoles)
-            {
-                _pvsOverride.RemoveSessionOverride(role, mind.Session);
-            }
-        }
->>>>>>> master
 
         if (userId != null && !_players.TryGetPlayerData(userId.Value, out _))
         {
@@ -338,19 +325,8 @@ public sealed class MindSystem : SharedMindSystem
 
         if (_players.TryGetSessionById(userId.Value, out var session))
         {
-<<<<<<< HEAD
             _pvsOverride.AddSessionOverride(mindId, session);
             _players.SetAttachedEntity(session, mind.CurrentEntity);
-=======
-            mind.Session = ret;
-            _pvsOverride.AddSessionOverride(netMind, ret);
-            foreach (var role in mind.MindRoles)
-            {
-                _pvsOverride.AddSessionOverride(role, ret);
-            }
-
-            _players.SetAttachedEntity(ret, mind.CurrentEntity);
->>>>>>> master
         }
     }
 

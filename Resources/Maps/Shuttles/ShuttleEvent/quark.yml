@@ -1470,10 +1470,10 @@ entities:
       - stampedColor: '#329632FF'
         stampedName: Central Traffic Control
       content: >-
-        [bold]=====================================================[/bold]
+        [bold]====[/bold]
 
                                     [color=red][head=1][bold]!! ATTENTION !![/bold][/head][/color]
-        [bold]=====================================================[/bold]
+        [bold]====[/bold]
 
         [bold]_________________________________________________________________________[/bold]
 

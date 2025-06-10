@@ -31,7 +31,7 @@ public sealed class PowerReceiverSystem : SharedPowerReceiverSystem
         component.Powered = state.Powered;
         component.NeedsPower = state.NeedsPower;
         component.PowerDisabled = state.PowerDisabled;
-<<<<<<< HEAD
+
         // SO client systems can handle it. The main reason for this is we can't guarantee compstate ordering.
 
         if (powerChanged)
@@ -42,8 +42,8 @@ public sealed class PowerReceiverSystem : SharedPowerReceiverSystem
     {
         var ev = new PowerChangedEvent(entity.Comp.Powered, 0f);
         RaiseLocalEvent(entity.Owner, ref ev);
-=======
->>>>>>> master
+
+
     }
 
     public override bool ResolveApc(EntityUid entity, [NotNullWhen(true)] ref SharedApcPowerReceiverComponent? component)

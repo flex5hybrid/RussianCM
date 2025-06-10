@@ -90,10 +90,10 @@
   id: LockerFillChemistry
   table: !type:AllSelector
     children:
-<<<<<<< HEAD
+
     - id: ClothingHeadHelmetScienceMask #Imperial edit
-=======
->>>>>>> master
+
+
     - id: BoxSyringe
     - id: BoxBeaker
     - id: BoxBeaker

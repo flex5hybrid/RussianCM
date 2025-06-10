@@ -128,7 +128,7 @@ public sealed partial class XenoSystem : EntitySystem
         SubscribeLocalEvent<XenoComponent, BuckleAttemptEvent>(OnXenoBuckleAttempt);
         SubscribeLocalEvent<XenoComponent, GetVisMaskEvent>(OnXenoGetVisMask);
         SubscribeLocalEvent<XenoComponent, CMDisarmEvent>(OnLeaderDisarmed,
-            before: [typeof(SharedHandsSystem), typeof(StaminaSystem)],
+            before: [typeof(SharedHandsSystem), typeof(SharedStaminaSystem)], // changed imperial marines
             after: [typeof(TackleSystem)]);
 
         SubscribeLocalEvent<XenoRegenComponent, MapInitEvent>(OnXenoRegenMapInit, before: [typeof(SharedXenoPheromonesSystem)]);

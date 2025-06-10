@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Disposal.Components;
 using Content.Shared.Disposal.Unit;
 using Robust.Client.Animations;
@@ -136,6 +137,11 @@ public sealed class DisposalUnitSystem : SharedDisposalUnitSystem
                 (lightState & DisposalUnitComponent.LightStates.Ready) != 0);
         _sprite.LayerSetVisible((ent, sprite), DisposalUnitVisualLayers.OverlayFull,
                 (lightState & DisposalUnitComponent.LightStates.Full) != 0);
+    }
+
+    public override bool ResolveDisposals(EntityUid uid, [NotNullWhen(true)] ref DisposalUnitComponent? component)
+    {
+        throw new NotImplementedException();
     }
 }
 

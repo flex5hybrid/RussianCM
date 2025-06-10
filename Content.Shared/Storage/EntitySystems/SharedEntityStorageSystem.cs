@@ -26,6 +26,7 @@ using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Shared.Storage.Components;
 
 namespace Content.Shared.Storage.EntitySystems;
 
@@ -346,7 +347,7 @@ public abstract class SharedEntityStorageSystem : EntitySystem
             return false;
 
         // Allow other components on the container to prevent inserting the item: e.g. the container is folded
-        var containerAttemptEvent = new EntityStorageInsertedIntoAttemptEvent(toInsert);
+        var containerAttemptEvent = new InsertIntoEntityStorageAttemptEvent(toInsert, container); // CHANGED BY IMPERIAL MARINES
         RaiseLocalEvent(container, ref containerAttemptEvent);
 
         if (containerAttemptEvent.Cancelled)
@@ -424,7 +425,7 @@ public abstract class SharedEntityStorageSystem : EntitySystem
 
     public bool CanClose(EntityUid target, EntityUid? user = null, bool silent = false)
     {
-        var ev = new StorageCloseAttemptEvent(user);
+        var ev = new StorageCloseAttemptEvent();
         RaiseLocalEvent(target, ref ev, silent);
 
         return !ev.Cancelled;

@@ -25,11 +25,7 @@ namespace Content.Server.Cloning;
 public sealed partial class CloningSystem : EntitySystem
 {
     [Dependency] private readonly SharedStackSystem _stack = default!;
-<<<<<<< HEAD
     [Dependency] private readonly LabelSystem _label = default!;
-=======
-    [Dependency] private readonly SharedLabelSystem _label = default!;
->>>>>>> master
     [Dependency] private readonly ForensicsSystem _forensics = default!;
     [Dependency] private readonly PaperSystem _paper = default!;
 

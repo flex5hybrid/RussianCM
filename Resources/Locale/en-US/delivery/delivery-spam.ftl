@@ -1,11 +1,11 @@
 # All spelling mistakes and broken english are intentional!
 # I hate saving paper contents in ftl files
 
-<<<<<<< HEAD
+
 ## Headers and reusable elements
 
-=======
->>>>>>> master
+
+
 -delivery-header-nanotrasen = [color=blue]
                                                                       ╔══════════════════╗
                                                                       ║███░███░░░░██░░░░░║
@@ -33,7 +33,7 @@
                                                                           ║░░░░░████████░░░░░║
                                                                           ╚══════════════════╝[/color]
 
-<<<<<<< HEAD
+
 ## Spam letters
 
 delivery-spam-1 =   Robust Toolbox - Special Offer!
@@ -201,7 +201,7 @@ delivery-spam-10 =  DO NOT OPEN THIS MAIL
                     im sorry......but your one of the 30 people i have to send this too..and now yoor cursed too...
 
                     please send this letter to 30 other people to stop the curse! you can still save yorself! theres still time! don't let the bloody lizard get you too, and take this thingie! it will keep you safe from dark spiirts...[head=3]FOR NOW[/head]
-=======
+
 
 delivery-spam-robust-toolboxes = [color=blue][head=1]
                                  ░░▄▀░░
@@ -348,12 +348,12 @@ delivery-spam-evil-lizard = [color=#FF0000][bold][head=2]STOP[/head][/bold][/col
                             im sorry......but your one of the 30 people i have to send this too..and now yoor cursed too...
 
                             please send this letter to 30 other people to stop the curse! you can still save yorself! theres still time! don't let the bloody lizard get you too, and take this thingie! it will keep you safe from dark spiirts...[head=3]FOR NOW[/head]
->>>>>>> master
 
 
 
 
-<<<<<<< HEAD
+
+
                     {"[head=1]OH NO THERE IT IS!!!!!!!![/head]"}
 
                     ░░░░░░░░░█░░[color=#67CC40]████████[/color]█[color=#67CC40]███[/color]░░░░░░░░░░
@@ -411,7 +411,7 @@ delivery-spam-12 =  Join us on the maiden voyage!
 
                     For the low, low cost of $5,000 spesos a night, the six month luxury cruise could be yours for the vacation of your dreams! Call us today at [color=#00FF00]RELAX-NOW[/color] to book your cruise. Don't wait! Act now!
 
-=======
+
                             {"[head=1]OH NO THERE IT IS!!!!!!!![/head]"}
 
                             ░░░░░░░░░█░░[color=#67CC40]████████[/color]█[color=#67CC40]███[/color]░░░░░░░░░░
@@ -465,19 +465,19 @@ delivery-spam-voyage-advertisement = [head=2]Join us on the maiden voyage of the
                                      {"[head=3]Explore the ruins of Agathar***, now open to the public with the assistance of Nanotrasen's top Scientists. All the mysteries of the old Agatharian civilization are excavated and displayed for your viewing pleasure![/head]"}
 
                                      For the low, low cost of $5,000 spesos a night, the six month luxury cruise could be yours for the vacation of your dreams! Call us today at [color=#00FF00]RELAX-NOW[/color] to book your cruise. Don't wait! Act now!
->>>>>>> master
 
 
 
 
 
-<<<<<<< HEAD
+
+
                     {"[italic]*Phosphorus lakes are not for swimming, you waive all rights to legal representations with Relaxination Destinations upon landing on Galimar.[/italic]"}
                     {"[italic]**Eye of the Cosmos must not be looked at for longer than five seconds at a time. You do not hear the call of the Eye.[/italic]"}
                     {"[italic]***Must sign safety waiver before landing, Relaxination Destinations does not guarantee the safety of the Agatharian ruins. Disappearances of tour groups are down to an acceptable margin of 0.23% of all tour groups that visit the ruins.[/italic]"}
-=======
+
 
                                      {"[italic]*Phosphorus lakes are not for swimming, you waive all rights to legal representations with Relaxination Destinations upon landing on Galimar.[/italic]"}
                                      {"[italic]**Eye of the Cosmos must not be looked at for longer than five seconds at a time. You do not hear the call of the Eye.[/italic]"}
                                      {"[italic]***Must sign safety waiver before landing, Relaxination Destinations does not guarantee the safety of the Agatharian ruins. Disappearances of tour groups are down to an acceptable margin of 0.23% of all tour groups that visit the ruins.[/italic]"}
->>>>>>> master
+

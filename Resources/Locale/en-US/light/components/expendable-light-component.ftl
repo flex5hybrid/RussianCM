@@ -1,7 +1,7 @@
 expendable-light-start-verb = Start Light
-<<<<<<< HEAD
+
 expendable-light-spent-prefix = spent {$baseName}
-=======
+
 
 expendable-light-spent-flare-name = spent flare
 expendable-light-spent-flare-desc = It looks like this flare has burnt out. What a bummer.
@@ -18,4 +18,4 @@ expendable-light-spent-purple-glowstick-name = spent purple glowstick
 expendable-light-spent-yellow-glowstick-name = spent purple glowstick
 expendable-light-spent-blue-glowstick-name = spent blue glowstick
 expendable-light-spent-glowstick-desc = It looks like this glowstick has stopped glowing. How tragic.
->>>>>>> master
+

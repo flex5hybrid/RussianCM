@@ -7,7 +7,6 @@
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobHumanDummy
   skinColoration: HumanToned
-  femaleLastNames: NamesLastFemale #Imperial
 
 # The lack of a layer means that
 # this person cannot have round-start anything
@@ -38,7 +37,6 @@
     RLeg: MobHumanRLeg
     LFoot: MobHumanLFoot
     RFoot: MobHumanRFoot
-    Tail: MobHumanoidAnyMarking # imperial HairAndTail
 
 - type: markingPoints
   id: MobHumanMarkingLimits
@@ -56,22 +54,12 @@
       points: 1
       required: false
     Tail: # the cat tail joke
-      points: 1 # imperial HairAndTail
+      points: 0
       required: false
     HeadTop:
       points: 1
       required: false
     UndergarmentTop:
-<<<<<<< HEAD
-      points: 1
-      required: false
-    UndergarmentBottom:
-      points: 1
-      required: false
-    Chest:
-      points: 2
-      required: false
-=======
       points: 1
       required: false
     UndergarmentBottom:
@@ -88,7 +76,6 @@
       points: 1
       required: true
       defaultMarkings: [ RMCUndershirtStandard ]
->>>>>>> master
     Legs:
       points: 2
       required: false

@@ -1,3 +1,4 @@
+// ЗАМЕНЕНО НА БОЛЕЕ СТАРУЮ ВЕРСИЮ ДЛЯ IMPERIAL MARINES
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Numerics;
@@ -81,7 +82,7 @@ public abstract partial class SharedGunSystem : EntitySystem
     [Dependency] protected readonly ThrowingSystem ThrowingSystem = default!;
     [Dependency] private   readonly UseDelaySystem _useDelay = default!;
     [Dependency] private   readonly EntityWhitelistSystem _whitelistSystem = default!;
-    [Dependency] private   readonly StaminaSystem _stamina = default!;
+    [Dependency] private   readonly SharedStaminaSystem _stamina = default!; // ПОПРАВЛЕНО StaminaSystem -> SharedStaminaSystem IMPERIAL MARINES
     [Dependency] private   readonly SharedStunSystem _stun = default!;
     [Dependency] private   readonly SharedColorFlashEffectSystem _color = default!;
     [Dependency] private   readonly SharedCameraRecoilSystem _recoil = default!;
@@ -952,9 +953,6 @@ public abstract partial class SharedGunSystem : EntitySystem
         var projectile = EnsureComp<ProjectileComponent>(uid);
         Projectiles.SetShooter(uid, projectile, user);
         projectile.Weapon = gunUid;
-        var shooter = user ?? gunUid;
-        if (shooter != null)
-            Projectiles.SetShooter(uid, projectile, shooter.Value);
 
         TransformSystem.SetWorldRotationNoLerp(uid, direction.ToWorldAngle() + projectile.Angle);
     }
@@ -990,7 +988,7 @@ public abstract partial class SharedGunSystem : EntitySystem
         var coordinates = xform.Coordinates;
         coordinates = coordinates.Offset(offsetPos);
 
-        TransformSystem.SetLocalRotation(entity, Random.NextAngle(), xform);
+        TransformSystem.SetLocalRotation(xform, Random.NextAngle());
         TransformSystem.SetCoordinates(entity, xform, coordinates);
 
         // decides direction the casing ejects and only when not cycling
@@ -1038,8 +1036,8 @@ public abstract partial class SharedGunSystem : EntitySystem
 
     public void CauseImpulse(EntityCoordinates fromCoordinates, EntityCoordinates toCoordinates, EntityUid user, PhysicsComponent userPhysics)
     {
-        var fromMap = TransformSystem.ToMapCoordinates(fromCoordinates).Position;
-        var toMap = TransformSystem.ToMapCoordinates(toCoordinates).Position;
+        var fromMap = fromCoordinates.ToMapPos(EntityManager, TransformSystem);
+        var toMap = toCoordinates.ToMapPos(EntityManager, TransformSystem);
         var shotDirection = (toMap - fromMap).Normalized();
 
         const float impulseStrength = 25.0f;

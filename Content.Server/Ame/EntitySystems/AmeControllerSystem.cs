@@ -276,7 +276,7 @@ public sealed class AmeControllerSystem : EntitySystem
         if (TryGetAMENodeGroup(uid, out var group))
             safeLimit = group.CoreCount * 4;
 
-<<<<<<< HEAD
+
         //Imperial Space admin alert sounds Start
         if (oldValue <= safeLimit && value > safeLimit && _gameTiming.CurTime > controller.EffectCooldown)
         {
@@ -287,8 +287,8 @@ public sealed class AmeControllerSystem : EntitySystem
         }
         // Imperial Space admin alert sounds End
 
-=======
->>>>>>> master
+
+
         var logImpact = (oldValue <= safeLimit && value > safeLimit) ? LogImpact.Extreme : LogImpact.Medium;
 
         _adminLogger.Add(LogType.Action, logImpact, $"{EntityManager.ToPrettyString(user.Value):player} has set the AME to inject {controller.InjectionAmount} while set to {humanReadableState}");

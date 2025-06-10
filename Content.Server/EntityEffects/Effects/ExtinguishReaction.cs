@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 using Content.Shared.Atmos;
-=======
+
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos.Components;
->>>>>>> master
+
 using Content.Shared.EntityEffects;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;

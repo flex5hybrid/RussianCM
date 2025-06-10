@@ -1,19 +1,19 @@
 meta:
   format: 7
   category: Grid
-<<<<<<< HEAD
+
   engineVersion: 260.0.0
   forkId: ""
   forkVersion: ""
   time: 05/18/2025 04:47:32
   entityCount: 935
-=======
+
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
   time: 02/26/2025 19:50:56
   entityCount: 926
->>>>>>> master
+
 maps: []
 grids:
 - 2
@@ -2953,10 +2953,10 @@ entities:
   - uid: 555
     components:
     - type: Transform
-<<<<<<< HEAD
-=======
+
+
       rot: 1.5707963267948966 rad
->>>>>>> master
+
       pos: 5.5,2.5
       parent: 2
     - type: DeviceNetwork
@@ -2966,10 +2966,10 @@ entities:
   - uid: 558
     components:
     - type: Transform
-<<<<<<< HEAD
-=======
+
+
       rot: 1.5707963267948966 rad
->>>>>>> master
+
       pos: 5.5,1.5
       parent: 2
     - type: DeviceNetwork
@@ -2979,10 +2979,10 @@ entities:
   - uid: 562
     components:
     - type: Transform
-<<<<<<< HEAD
-=======
+
+
       rot: 1.5707963267948966 rad
->>>>>>> master
+
       pos: 5.5,-10.5
       parent: 2
     - type: DeviceNetwork
@@ -2992,17 +2992,17 @@ entities:
   - uid: 569
     components:
     - type: Transform
-<<<<<<< HEAD
-=======
+
+
       rot: 1.5707963267948966 rad
->>>>>>> master
+
       pos: 5.5,-11.5
       parent: 2
     - type: DeviceNetwork
       deviceLists:
       - 586
       - 585
-<<<<<<< HEAD
+
 - proto: GasMinerNitrogen
   entities:
   - uid: 370
@@ -3020,9 +3020,9 @@ entities:
       pos: 9.5,-19.5
       parent: 2
 - proto: GasMixer
-=======
+
 - proto: GasOutletInjector
->>>>>>> master
+
   entities:
   - uid: 386
     components:

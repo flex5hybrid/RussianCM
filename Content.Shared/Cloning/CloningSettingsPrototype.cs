@@ -1,13 +1,9 @@
 using Content.Shared.Inventory;
 using Content.Shared.Whitelist;
 using Robust.Shared.Prototypes;
-<<<<<<< HEAD
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Array;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Generic;
-=======
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Array;
->>>>>>> master
 
 namespace Content.Shared.Cloning;
 
@@ -23,19 +19,11 @@ public sealed partial class CloningSettingsPrototype : IPrototype, IInheritingPr
     public string ID { get; private set; } = default!;
 
     [ParentDataField(typeof(PrototypeIdArraySerializer<CloningSettingsPrototype>))]
-<<<<<<< HEAD
     public string[]? Parents { get; private set; }
 
     [AbstractDataField]
     [NeverPushInheritance]
     public bool Abstract { get; private set; }
-=======
-    public string[]? Parents { get; }
-
-    [AbstractDataField]
-    [NeverPushInheritance]
-    public bool Abstract { get; }
->>>>>>> master
 
     /// <summary>
     ///     Determines if cloning can be prevented by traits etc.
@@ -76,21 +64,14 @@ public sealed partial class CloningSettingsPrototype : IPrototype, IInheritingPr
 
     /// TODO: Make this not a string https://github.com/space-wizards/RobustToolbox/issues/5709
     /// <summary>
-<<<<<<< HEAD
     ///     Components to copy from the original to the clone using CopyComp.
     ///     This makes a deepcopy of all datafields, including information the clone might not own!
     ///     If you need to exclude data or do additional component initialization, then subscribe to CloningEvent instead!
     ///     Components in this list that the orginal does not have will be removed from the clone.
-=======
-    ///     Components to copy from the original to the clone.
-    ///     This only makes a shallow copy of datafields!
-    ///     If you need a deep copy or additional component initialization, then subscribe to CloningEvent instead!
->>>>>>> master
     /// </summary>
     [DataField]
     [AlwaysPushInheritance]
     public HashSet<string> Components = new();
-<<<<<<< HEAD
 
     /// <summary>
     ///     Components to remove from the clone and copy over manually using a CloneEvent raised on the original.
@@ -99,6 +80,4 @@ public sealed partial class CloningSettingsPrototype : IPrototype, IInheritingPr
     [DataField]
     [AlwaysPushInheritance]
     public HashSet<string> EventComponents = new();
-=======
->>>>>>> master
 }

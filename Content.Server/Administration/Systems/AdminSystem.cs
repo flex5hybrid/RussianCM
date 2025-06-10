@@ -233,10 +233,10 @@ public sealed class AdminSystem : EntitySystem
         // Starting role, antagonist status and role type
         RoleTypePrototype roleType = new();
         var startingRole = string.Empty;
-<<<<<<< HEAD
+
         LocId? subtype = null;
-=======
->>>>>>> master
+
+
         if (_minds.TryGetMind(session, out var mindId, out var mindComp) && mindComp is not null)
         {
             sortWeight = _role.GetRoleCompByTime(mindComp)?.Comp.SortWeight ?? 0;
@@ -274,10 +274,10 @@ public sealed class AdminSystem : EntitySystem
             startingRole,
             antag,
             roleType,
-<<<<<<< HEAD
+
             subtype,
-=======
->>>>>>> master
+
+
             sortWeight,
             GetNetEntity(session?.AttachedEntity),
             data.UserId,

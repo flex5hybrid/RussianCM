@@ -19,11 +19,7 @@ public sealed class FingerprintReaderSystem : EntitySystem
     /// <param name="user">User trying to gain access.</param>
     /// <returns>True if access was granted, otherwise false.</returns>
     [PublicAPI]
-<<<<<<< HEAD
     public bool IsAllowed(Entity<FingerprintReaderComponent?> target, EntityUid user, bool showPopup = true)
-=======
-    public bool IsAllowed(Entity<FingerprintReaderComponent?> target, EntityUid user)
->>>>>>> master
     {
         if (!Resolve(target, ref target.Comp, false))
             return true;
@@ -34,11 +30,7 @@ public sealed class FingerprintReaderSystem : EntitySystem
         // Check for gloves first
         if (!target.Comp.IgnoreGloves && TryGetBlockingGloves(user, out var gloves))
         {
-<<<<<<< HEAD
             if (target.Comp.FailGlovesPopup != null && showPopup)
-=======
-            if (target.Comp.FailGlovesPopup != null)
->>>>>>> master
                 _popup.PopupClient(Loc.GetString(target.Comp.FailGlovesPopup, ("blocker", gloves)), target, user);
             return false;
         }
@@ -47,11 +39,7 @@ public sealed class FingerprintReaderSystem : EntitySystem
         if (!TryComp<FingerprintComponent>(user, out var fingerprint) || fingerprint.Fingerprint == null ||
             !target.Comp.AllowedFingerprints.Contains(fingerprint.Fingerprint))
         {
-<<<<<<< HEAD
             if (target.Comp.FailPopup != null && showPopup)
-=======
-            if (target.Comp.FailPopup != null)
->>>>>>> master
                 _popup.PopupClient(Loc.GetString(target.Comp.FailPopup), target, user);
 
             return false;

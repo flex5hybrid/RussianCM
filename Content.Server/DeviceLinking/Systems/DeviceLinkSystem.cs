@@ -1,9 +1,9 @@
 using Content.Server.DeviceLinking.Components;
-<<<<<<< HEAD
-=======
+
+
 using Content.Server.DeviceNetwork;
 using Content.Server.DeviceNetwork.Components;
->>>>>>> master
+
 using Content.Server.DeviceNetwork.Systems;
 using Content.Shared.DeviceLinking;
 using Content.Shared.DeviceLinking.Events;

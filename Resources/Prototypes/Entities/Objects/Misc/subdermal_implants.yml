@@ -343,12 +343,12 @@
   components:
    - type: SubdermalImplant
    - type: MindShieldImplant
-<<<<<<< HEAD
-=======
+
+
    - type: Tag
      tags:
        - MindShield
->>>>>>> master
+
 
 # Centcomm implants
 

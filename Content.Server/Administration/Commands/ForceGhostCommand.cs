@@ -11,10 +11,10 @@ namespace Content.Server.Administration.Commands;
 [AdminCommand(AdminFlags.Admin)]
 public sealed class ForceGhostCommand : LocalizedEntityCommands
 {
-<<<<<<< HEAD
-=======
+
+
     [Dependency] private readonly IEntityManager _entityManager = default!;
->>>>>>> master
+
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly SharedMindSystem _mind = default!;

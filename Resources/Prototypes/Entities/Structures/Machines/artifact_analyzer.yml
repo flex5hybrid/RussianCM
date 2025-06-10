@@ -126,11 +126,11 @@
     capacity: 1
     whitelist:
       components:
-<<<<<<< HEAD
+
       - XenoArtifact
-=======
+
       - Artifact
->>>>>>> master
+
       tags:
       - CanPilot # People
       - VimPilot # Pets

@@ -125,11 +125,7 @@ public abstract class SharedChameleonClothingSystem : EntitySystem
             return false;
 
         // check if it is marked as valid chameleon target
-<<<<<<< HEAD
         if (!proto.TryGetComponent(out TagComponent? tag, Factory) || !_tag.HasTag(tag, WhitelistChameleonTag))
-=======
-        if (!proto.TryGetComponent(out TagComponent? tag, _factory) || !_tag.HasTag(tag, WhitelistChameleonTag))
->>>>>>> master
             return false;
 
         if (requiredTag != null && !_tag.HasTag(tag, requiredTag))

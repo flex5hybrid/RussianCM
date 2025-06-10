@@ -1,11 +1,5 @@
-using System.Linq;
-using System.Numerics;
 using Content.Server.Chat.Systems;
 using Content.Server.Movement.Systems;
-using Content.Shared._RMC14.Tackle;
-using Content.Shared.Actions.Events;
-using Content.Shared.Administration.Components;
-using Content.Shared.CombatMode;
 using Content.Shared.Damage.Events;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Effects;
@@ -16,7 +10,6 @@ using Robust.Shared.Map;
 using Robust.Shared.Player;
 using System.Linq;
 using System.Numerics;
-using Robust.Shared.Random;
 
 namespace Content.Server.Weapons.Melee;
 
@@ -73,113 +66,6 @@ public sealed class MeleeWeaponSystem : SharedMeleeWeaponSystem
             return false;
 
         // TODO: Check arc though due to the aforementioned aimbot + damage split comments it's less important.
-        return true;
-    }
-
-    protected override bool DoDisarm(EntityUid user, DisarmAttackEvent ev, EntityUid meleeUid, MeleeWeaponComponent component, ICommonSession? session)
-    {
-        if (!base.DoDisarm(user, ev, meleeUid, component, session))
-            return false;
-
-        if (!TryComp<CombatModeComponent>(user, out var combatMode) ||
-            combatMode.CanDisarm != true)
-        {
-            return false;
-        }
-
-        var target = GetEntity(ev.Target!.Value);
-        if (InRange(user, target, component.Range, session))
-        {
-            var cmDisarmEvent = new CMDisarmEvent(user);
-            RaiseLocalEvent(target, ref cmDisarmEvent);
-            if (cmDisarmEvent.Handled)
-                return true;
-        }
-
-        if (_mobState.IsIncapacitated(target))
-        {
-            return false;
-        }
-
-        if (!TryComp<HandsComponent>(target, out var targetHandsComponent))
-        {
-            if (!TryComp<StatusEffectsComponent>(target, out var status) || !status.AllowedEffects.Contains("KnockedDown"))
-                return false;
-        }
-
-        if (!InRange(user, target, component.Range, session))
-        {
-            return false;
-        }
-
-        EntityUid? inTargetHand = null;
-
-        if (targetHandsComponent?.ActiveHand is { IsEmpty: false })
-        {
-            inTargetHand = targetHandsComponent.ActiveHand.HeldEntity!.Value;
-        }
-
-        Interaction.DoContactInteraction(user, target);
-
-        var attemptEvent = new DisarmAttemptEvent(target, user, inTargetHand);
-
-        if (inTargetHand != null)
-        {
-            RaiseLocalEvent(inTargetHand.Value, attemptEvent);
-        }
-
-        RaiseLocalEvent(target, attemptEvent);
-
-        if (attemptEvent.Cancelled)
-            return false;
-
-        var chance = CalculateDisarmChance(user, target, inTargetHand, combatMode);
-
-        if (_random.Prob(chance))
-        {
-            // Yknow something tells me this comment is hilariously out of date...
-            // Don't play a sound as the swing is already predicted.
-            // Also don't play popups because most disarms will miss.
-            return false;
-        }
-
-        AdminLogger.Add(LogType.DisarmedAction, $"{ToPrettyString(user):user} used disarm on {ToPrettyString(target):target}");
-
-        var eventArgs = new DisarmedEvent { Target = target, Source = user, PushProbability = 1 - chance };
-        RaiseLocalEvent(target, eventArgs);
-
-        if (!eventArgs.Handled)
-        {
-            return false;
-        }
-
-        _audio.PlayPvs(combatMode.DisarmSuccessSound, user, AudioParams.Default.WithVariation(0.025f).WithVolume(5f));
-        AdminLogger.Add(LogType.DisarmedAction, $"{ToPrettyString(user):user} used disarm on {ToPrettyString(target):target}");
-
-        var targetEnt = Identity.Entity(target, EntityManager);
-        var userEnt = Identity.Entity(user, EntityManager);
-
-        var msgOther = Loc.GetString(
-                eventArgs.PopupPrefix + "popup-message-other-clients",
-                ("performerName", userEnt),
-                ("targetName", targetEnt));
-
-        var msgUser = Loc.GetString(eventArgs.PopupPrefix + "popup-message-cursor", ("targetName", targetEnt));
-
-        var filterOther = Filter.PvsExcept(user, entityManager: EntityManager);
-
-        PopupSystem.PopupEntity(msgOther, user, filterOther, true);
-        PopupSystem.PopupEntity(msgUser, target, user);
-
-        if (eventArgs.IsStunned)
-        {
-
-            PopupSystem.PopupEntity(Loc.GetString("stunned-component-disarm-success-others", ("source", userEnt), ("target", targetEnt)), targetEnt, Filter.PvsExcept(user), true, PopupType.LargeCaution);
-            PopupSystem.PopupCursor(Loc.GetString("stunned-component-disarm-success", ("target", targetEnt)), user, PopupType.Large);
-
-            AdminLogger.Add(LogType.DisarmedKnockdown, LogImpact.Medium, $"{ToPrettyString(user):user} knocked down {ToPrettyString(target):target}");
-        }
-
         return true;
     }
 

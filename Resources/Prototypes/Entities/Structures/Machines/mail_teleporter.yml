@@ -20,12 +20,12 @@
     snapCardinals: true
     layers:
     - state: icon
-<<<<<<< HEAD
+
     - state: contents
       map: [ "enum.DeliverySpawnerVisualLayers.Contents" ]
       visible: false
-=======
->>>>>>> master
+
+
     - state: unlit
       shader: unshaded
       visible: false
@@ -38,13 +38,13 @@
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-<<<<<<< HEAD
+
       enum.DeliverySpawnerVisuals.Contents:
         enum.DeliverySpawnerVisualLayers.Contents:
           True: { visible: true }
           False: { visible: false }
-=======
->>>>>>> master
+
+
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
           True: { visible: true }

@@ -153,7 +153,7 @@ public abstract partial class InventorySystem
             return false;
         }
 
-        if (!force && !CanEquip(actor, target, itemUid, slot, out var reason, slotDefinition, inventory, clothing, doRangeCheck: doRangeCheck))
+        if (!force && !CanEquip(actor, target, itemUid, slot, out var reason, slotDefinition, inventory, clothing)) // imperial marines change
         {
             if(!silent)
                 _popup.PopupCursor(Loc.GetString(reason));

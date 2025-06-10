@@ -192,12 +192,8 @@ public abstract class SharedAnomalySystem : EntitySystem
             // Logging before resolve, in case the anomaly has deleted itself.
             if (_net.IsServer)
                 Log.Info($"Ending anomaly. Entity: {ToPrettyString(uid)}");
-<<<<<<< HEAD
             AdminLog.Add(LogType.Anomaly,
                 supercritical ? LogImpact.High : LogImpact.Low,
-=======
-            AdminLog.Add(LogType.Anomaly, supercritical ? LogImpact.High : LogImpact.Low,
->>>>>>> master
                 $"Anomaly {ToPrettyString(uid)} {(supercritical ? "went supercritical" : "decayed")}.");
         }
 

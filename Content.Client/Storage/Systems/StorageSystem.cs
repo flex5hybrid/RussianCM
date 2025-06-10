@@ -63,7 +63,7 @@ public sealed class StorageSystem : SharedStorageSystem
             component.SavedLocations[loc.Key] = new(loc.Value);
         }
 
-        UpdateOccupied((uid, component));
+        // UpdateOccupied((uid, component));    IMPERIAL MARINES MERGE FIX
 
         var uiDirty = !component.StoredItems.SequenceEqual(_oldStoredItems);
 
@@ -156,7 +156,7 @@ public sealed class StorageSystem : SharedStorageSystem
             }
         }
     }
-
+    
     public override void Update(float frameTime)
     {
         base.Update(frameTime);

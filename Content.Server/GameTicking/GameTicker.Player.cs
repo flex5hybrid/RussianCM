@@ -32,10 +32,10 @@ namespace Content.Server.GameTicking
             {
                 if (args.NewStatus != SessionStatus.Disconnected)
                 {
-<<<<<<< HEAD
-=======
+
+
                     mind.Session = session;
->>>>>>> master
+
                     _pvsOverride.AddSessionOverride(mindId.Value, session);
                 }
             }

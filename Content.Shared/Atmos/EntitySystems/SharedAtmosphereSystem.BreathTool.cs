@@ -1,11 +1,13 @@
 using Content.Shared.Atmos.Components;
 using Content.Shared.Body.Components;
+using Content.Shared.Body.Systems;
 using Content.Shared.Clothing;
 
 namespace Content.Shared.Atmos.EntitySystems;
 
 public abstract partial class SharedAtmosphereSystem
 {
+    [Dependency] private readonly SharedInternalsSystem _internals = default!;
     private void InitializeBreathTool()
     {
         SubscribeLocalEvent<BreathToolComponent, ComponentShutdown>(OnBreathToolShutdown);

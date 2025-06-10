@@ -2,8 +2,5 @@
   id: Verbs
   values:
     prefix: verbs-dataset-
-<<<<<<< HEAD
+
     count: 645 # Imperial Space
-=======
-    count: 631
->>>>>>> master

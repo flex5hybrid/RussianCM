@@ -1,7 +1,7 @@
 names-wizard-last-dataset-1 = Dark
 names-wizard-last-dataset-2 = Darkmagic
 names-wizard-last-dataset-3 = Darko
-<<<<<<< HEAD
+
 names-wizard-last-dataset-4 = Dumbledoom
 names-wizard-last-dataset-5 = Gandalft
 names-wizard-last-dataset-6 = Gray
@@ -68,7 +68,7 @@ names-wizard-last-dataset-66 = the Wise
 names-wizard-last-dataset-67 = whom
 names-wizard-last-dataset-68 = Xobeh
 names-wizard-last-dataset-69 = Ym Sagoz
-=======
+
 names-wizard-last-dataset-4 = Gray
 names-wizard-last-dataset-5 = Honko
 names-wizard-last-dataset-6 = Inverse
@@ -112,4 +112,4 @@ names-wizard-last-dataset-43 = the White
 names-wizard-last-dataset-44 = the Wise
 names-wizard-last-dataset-45 = Xobeh
 names-wizard-last-dataset-46 = Ym Sagoz
->>>>>>> master
+

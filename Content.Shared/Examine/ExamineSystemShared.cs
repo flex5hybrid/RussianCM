@@ -1,8 +1,5 @@
 using System.Linq;
-<<<<<<< HEAD
-=======
 using Content.Shared._RMC14.Xenonids.Eye;
->>>>>>> master
 using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Ghost;
 using Content.Shared.Interaction;

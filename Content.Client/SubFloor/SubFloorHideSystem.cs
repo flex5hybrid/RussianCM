@@ -91,11 +91,11 @@ public sealed class SubFloorHideSystem : SharedSubFloorHideSystem
         {
             // Allows sandbox mode to make wires visible over other stuff.
             component.OriginalDrawDepth ??= args.Sprite.DrawDepth;
-<<<<<<< HEAD
+
             _sprite.SetDrawDepth((uid, args.Sprite), (int)Shared.DrawDepth.DrawDepth.Overdoors);
-=======
+
             args.Sprite.DrawDepth = (int)Shared.DrawDepth.DrawDepth.Overdoors;
->>>>>>> master
+
         }
         else if (scannerRevealed)
         {

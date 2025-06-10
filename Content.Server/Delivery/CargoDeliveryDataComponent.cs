@@ -32,11 +32,7 @@ public sealed partial class CargoDeliveryDataComponent : Component
     /// 1 delivery per X players.
     /// </summary>
     [DataField]
-<<<<<<< HEAD
     public float PlayerToDeliveryRatio = 8f;
-=======
-    public float PlayerToDeliveryRatio = 7f;
->>>>>>> master
 
     /// <summary>
     /// The minimum amount of deliveries that will spawn.

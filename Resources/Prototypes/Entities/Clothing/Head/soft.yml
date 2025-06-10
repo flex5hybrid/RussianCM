@@ -101,7 +101,7 @@
   id: ClothingHeadHatQMsoftFlipped
   name: quartermaster's cap
 
-<<<<<<< HEAD
+
 - type: entity
   parent: ClothingHeadHeadHatBaseFlippable
   id: ClothingHeadHatCommandSoft
@@ -118,8 +118,8 @@
   id: ClothingHeadHatCommandSoftFlipped
   name: command cap
 
-=======
->>>>>>> master
+
+
 - type: entity
   parent: ClothingHeadHeadHatBaseFlippable
   id: ClothingHeadHatCorpsoft
