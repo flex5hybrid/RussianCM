@@ -1,10 +1,12 @@
-using Content.Shared.Buckle.Components;
+using Content.Shared.ActionBlocker;
+using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Components;
-using Content.Shared.Movement.Components;
+using Content.Shared.Mech.EntitySystems;
 using Content.Shared.Movement.Systems;
 using Content.Shared.RuMC.Vehicles.Components;
-using Content.Shared.Vehicles.Components;
+using Content.Shared.Verbs;
+using Robust.Shared.Containers;
 
 namespace Content.Shared.RuMC.Vehicles.Systems;
 
@@ -13,85 +15,100 @@ namespace Content.Shared.RuMC.Vehicles.Systems;
 /// </summary>
 public sealed class TankSystem : EntitySystem
 {
-    [Dependency] private readonly TankControllerSystem _controllerSystem = null!;
     [Dependency] private readonly SharedMoverController _mover = null!;
     [Dependency] private readonly SharedInteractionSystem _interaction = null!;
+    [Dependency] private readonly ActionBlockerSystem _actionBlocker = null!;
+    [Dependency] private readonly SharedContainerSystem _container = null!;
+    [Dependency] private readonly SharedDoAfterSystem _doAfter = null!;
 
     public override void Initialize()
     {
-        base.Initialize();
-        SubscribeLocalEvent<TankComponent, ComponentInit>(OnTankInit);
-        SubscribeLocalEvent<TankComponent, EntityTerminatingEvent>(OnTankTerminating);
-        // Подписываемся на взаимодействие для посадки в танк через ПКМ-меню
-        SubscribeLocalEvent<TankComponent, StrappedEvent>(OnStrapped);
-        SubscribeLocalEvent<TankComponent, UnstrappedEvent>(OnUnstrapped);
+        SubscribeLocalEvent<TankComponent, MechEntryEvent>(OnMechEntry);
+        SubscribeLocalEvent<TankComponent, GetVerbsEvent<AlternativeVerb>>(OnAlternativeVerb);
+        SubscribeLocalEvent<TankComponent, ComponentStartup>(OnStartup);
     }
 
-    /// <summary>
-    /// Инициализация танка
-    /// </summary>
-    /// <param name="uid"></param>
-    /// <param name="component"></param>
-    /// <param name="args"></param>
-    private static void OnTankInit(EntityUid uid, TankComponent component, ComponentInit args)
+    private void OnStartup(EntityUid uid, TankComponent component, ComponentStartup args)
     {
-        component.Health = component.MaxHealth;
-        component.Fuel = component.MaxFuel;
+        component.PilotSlot = _container.EnsureContainer<ContainerSlot>(uid, component.PilotSlotId);
     }
 
-    /// <summary>
-    /// Уничтожение танка
-    /// </summary>
-    /// <param name="uid"></param>
-    /// <param name="component"></param>
-    /// <param name="args"></param>
-    private void OnTankTerminating(EntityUid uid, TankComponent component, ref EntityTerminatingEvent args)
+    private void OnMechEntry(EntityUid uid, TankComponent component, MechEntryEvent args)
     {
-        // Освобождаем всех водителей перед удалением танка
-        var query = EntityQueryEnumerator<TankDriverComponent>();
-        while (query.MoveNext(out var user, out var driver))
-        {
-            if (driver.Tank == uid)
-            {
-                _controllerSystem.UnassignDriver(user);
-            }
-        }
-    }
-
-    /// <summary>
-    /// Получение урона
-    /// </summary>
-    /// <param name="uid"></param>
-    /// <param name="damage"></param>
-    /// <param name="tank"></param>
-    public void TakeDamage(EntityUid uid, float damage, TankComponent? tank = null)
-    {
-        if (!Resolve(uid, ref tank))
+        if (args.Cancelled || args.Handled)
             return;
 
-        tank.Health -= damage;
-        if (tank.Health <= 0)
-            QueueDel(uid);
+        TryInsert(uid, args.Args.User, component);
+        _actionBlocker.UpdateCanMove(uid);
+
+        args.Handled = true;
     }
 
-    private void OnStrapped(Entity<TankComponent> ent, ref StrappedEvent args)
+    private void TryInsert(EntityUid uid, EntityUid? toInsert, TankComponent? component = null)
     {
-        var buckle = args.Buckle;
+        if (!Resolve(uid, ref component))
+            return;
 
-        // Добавляем компонент, который будет релеить клики
-        var interactionRelay = EnsureComp<InteractionRelayComponent>(buckle);
-        // И вот тут передаём именно его
-        _interaction.SetRelay(buckle, ent, interactionRelay);
+        if (toInsert == null || component.PilotSlot.ContainedEntity == toInsert)
+            return;
 
-        // Добавляем RelayInputMoverComponent и сразу подключаем ввод
-        EnsureComp<RelayInputMoverComponent>(buckle);
-        _mover.SetRelay(buckle, ent);
+        SetupUser(uid, toInsert.Value);
+        _container.Insert(toInsert.Value, component.PilotSlot);
     }
 
-    private void OnUnstrapped(Entity<TankComponent> ent, ref UnstrappedEvent args)
+    private void SetupUser(EntityUid mech, EntityUid pilot, TankComponent? component = null)
     {
-        var buckle = args.Buckle;
-        RemCompDeferred<RelayInputMoverComponent>(buckle);
-        RemCompDeferred<InteractionRelayComponent>(buckle);
+        if (!Resolve(mech, ref component))
+            return;
+
+        var rider = EnsureComp<ActiveTankPilotComponent>(pilot);
+
+        var irelay = EnsureComp<InteractionRelayComponent>(pilot);
+
+        _mover.SetRelay(pilot, mech);
+        _interaction.SetRelay(pilot, mech, irelay);
+        rider.Mech = mech;
+        Dirty(pilot, rider);
+    }
+
+    private bool CanInsert(EntityUid uid, EntityUid toInsert, TankComponent? component = null)
+    {
+        if (!Resolve(uid, ref component))
+            return false;
+
+        return IsEmpty(component) && _actionBlocker.CanMove(toInsert);
+    }
+
+    private static bool IsEmpty(TankComponent component)
+    {
+        return component.PilotSlot.ContainedEntity == null;
+    }
+
+    private void OnAlternativeVerb(EntityUid uid, TankComponent component, GetVerbsEvent<AlternativeVerb> args)
+    {
+        if (!args.CanAccess || !args.CanInteract)
+            return;
+
+        if (!CanInsert(uid, args.User, component))
+            return;
+        var enterVerb = new AlternativeVerb
+        {
+            Text = Loc.GetString("mech-verb-enter"),
+            Act = () =>
+            {
+                var doAfterEventArgs = new DoAfterArgs(EntityManager,
+                    args.User,
+                    component.EntryDelay,
+                    new MechEntryEvent(),
+                    uid,
+                    target: uid)
+                {
+                    BreakOnMove = true,
+                };
+
+                _doAfter.TryStartDoAfter(doAfterEventArgs);
+            },
+        };
+        args.Verbs.Add(enterVerb);
     }
 }

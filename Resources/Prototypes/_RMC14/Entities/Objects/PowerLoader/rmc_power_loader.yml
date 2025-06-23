@@ -49,15 +49,19 @@
   - type: ContainerContainer
     containers:
       rmc-mech-pilot: !type:ContainerSlot
+
   - type: Damageable
     damageContainer: Inorganic
+
   - type: FootstepModifier
     footstepSoundCollection:
       path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+
   - type: Strap
     blacklist:
       components:
       - Xeno
+
   - type: Destructible
     thresholds:
     - trigger:

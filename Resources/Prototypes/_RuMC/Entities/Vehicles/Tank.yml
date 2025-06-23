@@ -1,0 +1,71 @@
+# Tank.yaml
+- type: entity
+  id: RUMCTank
+  name: Беовульф IV
+  description: Тяжелая боевая машина морпехов.
+  components:
+
+  - type: Tank
+
+  - type: Hands
+
+  - type: GiveHands
+    hands:
+    - name: Right Hand
+      location: Right
+    - name: Left Hand
+      location: Left
+
+  - type: MobMover
+  - type: InputMover
+  - type: InteractionOutline
+  - type: Appearance
+  - type: DoAfter
+
+  # Возможность «садиться» в танк
+  - type: ContainerContainer
+    containers:
+      rmc-mech-pilot: !type:ContainerSlot
+
+  # Физика + коллизия
+  - type: Physics
+    bodyType: Dynamic
+    mass: 5000
+    fixedRotation: false
+    linearDamping: 0.5
+    angularDamping: 0.8
+
+  - type: Clickable
+
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 1.5
+        density: 1000
+        mask:
+        - Impassable
+        layer:
+        - Impassable
+
+  # Визуализация и попадание урона
+  - type: Sprite
+    sprite: RuMC/Vehicles/tank.rsi
+    state: tank_base
+
+  # todo: Запилить логику нанесения урона танку
+  - type: Damageable
+    damageContainer: Inorganic
+
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1500
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]

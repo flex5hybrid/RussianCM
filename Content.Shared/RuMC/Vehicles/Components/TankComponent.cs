@@ -1,3 +1,4 @@
+using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
 
 namespace Content.Shared.RuMC.Vehicles.Components;
@@ -15,14 +16,20 @@ public sealed partial class TankComponent : Component
     public float Health = 1000f;
 
     [DataField]
-    public float Armor = 500f;
-
-    [DataField]
     public float MaxFuel = 200f;
 
-    [DataField]
-    public float Fuel = 200f;
+    /// <summary>
+    /// The slot the pilot is stored in.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
+    public ContainerSlot PilotSlot = null!;
 
+    [ViewVariables]
+    public readonly string PilotSlotId = "mech-pilot-slot";
+
+    /// <summary>
+    /// How long it takes to enter the mech.
+    /// </summary>
     [DataField]
-    public float FuelConsumptionRate = 0.5f; // Потребление топлива в секунду
+    public float EntryDelay = 1;
 }
