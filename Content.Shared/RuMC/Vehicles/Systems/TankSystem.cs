@@ -71,19 +71,6 @@ public sealed class TankSystem : EntitySystem
         Dirty(pilot, rider);
     }
 
-    private bool CanInsert(EntityUid uid, EntityUid toInsert, TankComponent? component = null)
-    {
-        if (!Resolve(uid, ref component))
-            return false;
-
-        return IsEmpty(component) && _actionBlocker.CanMove(toInsert);
-    }
-
-    private static bool IsEmpty(TankComponent component)
-    {
-        return component.PilotSlot.ContainedEntity == null;
-    }
-
     private void OnAlternativeVerb(EntityUid uid, TankComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
         if (!args.CanAccess || !args.CanInteract)
@@ -110,5 +97,18 @@ public sealed class TankSystem : EntitySystem
             },
         };
         args.Verbs.Add(enterVerb);
+    }
+
+    private bool CanInsert(EntityUid uid, EntityUid toInsert, TankComponent? component = null)
+    {
+        if (!Resolve(uid, ref component))
+            return false;
+
+        return IsEmpty(component) && _actionBlocker.CanMove(toInsert);
+    }
+
+    private static bool IsEmpty(TankComponent component)
+    {
+        return component.PilotSlot.ContainedEntity == null;
     }
 }
