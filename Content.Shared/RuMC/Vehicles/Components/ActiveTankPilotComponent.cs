@@ -7,7 +7,7 @@ namespace Content.Shared.RuMC.Vehicles.Components;
 /// Компонент активного водителя танка
 /// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(TankSystem))]
+[Access(typeof(SharedTankSystem))]
 public sealed partial class ActiveTankPilotComponent : Component
 {
     /// <summary>

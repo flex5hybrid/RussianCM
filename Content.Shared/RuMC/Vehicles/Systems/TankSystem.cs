@@ -13,7 +13,7 @@ namespace Content.Shared.RuMC.Vehicles.Systems;
 /// <summary>
 /// Система танка
 /// </summary>
-public sealed class TankSystem : EntitySystem
+public abstract class SharedTankSystem : EntitySystem
 {
     [Dependency] private readonly SharedMoverController _mover = null!;
     [Dependency] private readonly SharedInteractionSystem _interaction = null!;
@@ -21,6 +21,9 @@ public sealed class TankSystem : EntitySystem
     [Dependency] private readonly SharedContainerSystem _container = null!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = null!;
 
+    /// <summary>
+    /// Инициализация, подписка на ивенты
+    /// </summary>
     public override void Initialize()
     {
         SubscribeLocalEvent<TankComponent, MechEntryEvent>(OnMechEntry);
@@ -28,6 +31,12 @@ public sealed class TankSystem : EntitySystem
         SubscribeLocalEvent<TankComponent, ComponentStartup>(OnStartup);
     }
 
+    /// <summary>
+    /// Запуск танка, когда туда входит пилот
+    /// </summary>
+    /// <param name="uid">ID игрока</param>
+    /// <param name="component">Компонент танка</param>
+    /// <param name="args">Аргументы запуска</param>
     private void OnStartup(EntityUid uid, TankComponent component, ComponentStartup args)
     {
         component.PilotSlot = _container.EnsureContainer<ContainerSlot>(uid, component.PilotSlotId);
@@ -44,6 +53,12 @@ public sealed class TankSystem : EntitySystem
         args.Handled = true;
     }
 
+    /// <summary>
+    /// Попытка войти в танк
+    /// </summary>
+    /// <param name="uid">ID игрока</param>
+    /// <param name="toInsert">ID танка</param>
+    /// <param name="component">Компонент танка</param>
     private void TryInsert(EntityUid uid, EntityUid? toInsert, TankComponent? component = null)
     {
         if (!Resolve(uid, ref component))
@@ -56,6 +71,12 @@ public sealed class TankSystem : EntitySystem
         _container.Insert(toInsert.Value, component.PilotSlot);
     }
 
+    /// <summary>
+    /// Вход игрока в танк
+    /// </summary>
+    /// <param name="mech">ID танка</param>
+    /// <param name="pilot">ID игрока</param>
+    /// <param name="component">Компонент танка</param>
     private void SetupUser(EntityUid mech, EntityUid pilot, TankComponent? component = null)
     {
         if (!Resolve(mech, ref component))
@@ -71,6 +92,12 @@ public sealed class TankSystem : EntitySystem
         Dirty(pilot, rider);
     }
 
+    /// <summary>
+    /// Возможные действия из контесткного меню танка
+    /// </summary>
+    /// <param name="uid">ID танка</param>
+    /// <param name="component">Компонент танка</param>
+    /// <param name="args">Аргументы взаимодействия</param>
     private void OnAlternativeVerb(EntityUid uid, TankComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
         if (!args.CanAccess || !args.CanInteract)
@@ -99,6 +126,13 @@ public sealed class TankSystem : EntitySystem
         args.Verbs.Add(enterVerb);
     }
 
+    /// <summary>
+    /// Проверка: может ли игрок войти в танк
+    /// </summary>
+    /// <param name="uid">ID игрока</param>
+    /// <param name="toInsert">ID танка</param>
+    /// <param name="component">Компонент танка</param>
+    /// <returns></returns>
     private bool CanInsert(EntityUid uid, EntityUid toInsert, TankComponent? component = null)
     {
         if (!Resolve(uid, ref component))
@@ -107,6 +141,11 @@ public sealed class TankSystem : EntitySystem
         return IsEmpty(component) && _actionBlocker.CanMove(toInsert);
     }
 
+    /// <summary>
+    /// Проверка: слот пилота в танке пуст
+    /// </summary>
+    /// <param name="component">Компонент танка</param>
+    /// <returns></returns>
     private static bool IsEmpty(TankComponent component)
     {
         return component.PilotSlot.ContainedEntity == null;

@@ -16,6 +16,11 @@
     - name: Left Hand
       location: Left
 
+  - type: TankMouseRotator
+    angleTolerance: 5
+    rotationSpeed: 180
+    simple4DirMode: false
+
   - type: MobMover
   - type: InputMover
   - type: InteractionOutline
