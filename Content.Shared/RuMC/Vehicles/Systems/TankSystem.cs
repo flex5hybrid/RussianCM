@@ -3,6 +3,7 @@ using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Components;
 using Content.Shared.Mech.EntitySystems;
+using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
 using Content.Shared.RuMC.Vehicles.Components;
 using Content.Shared.Verbs;
@@ -90,6 +91,9 @@ public abstract class SharedTankSystem : EntitySystem
         _interaction.SetRelay(pilot, mech, irelay);
         rider.Mech = mech;
         Dirty(pilot, rider);
+
+        // Отключаем ротацию у танка при WASD движении
+        EnsureComp<NoRotateOnMoveComponent>(mech);
     }
 
     /// <summary>

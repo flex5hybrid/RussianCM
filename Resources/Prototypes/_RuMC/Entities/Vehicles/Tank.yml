@@ -59,58 +59,32 @@
     sprite: RuMC/Vehicles/tank.rsi
     layers:
     - state: ace_autocannon_0
-    - state: ace_autocannon_1
     - state: ARMOR
     - state: artillerymod_0
-    - state: artillerymod_1
     - state: ballistic_armor_0
-    - state: ballistic_armor_1
     - state: caustic_armor_0
-    - state: caustic_armor_1
     - state: concussive_armor_0
-    - state: concussive_armor_1
-    - state: damaged_frame
-    - state: damaged_hardpt_armor
-    - state: damaged_hardpt_primary
-    - state: damaged_hardpt_secondary
-    - state: damaged_hardpt_support
-    - state: damaged_turret
     - state: drgn_flamer_0
-    - state: drgn_flamer_1
     - state: empty fuel
     - state: flamer_0
-    - state: flamer_1
     - state: glauncher_0
-    - state: glauncher_1
     - state: ltaaap_minigun_0
-    - state: ltaaap_minigun_1
     - state: ltb_cannon_0
-    - state: ltb_cannon_1
     - state: m56cupola_0
-    - state: m56cupola_1
     - state: MISC
     - state: odrive_enhancer_0
-    - state: odrive_enhancer_1
     - state: paladin_armor_0
-    - state: paladin_armor_1
     - state: PRIMARY
     - state: SECONDARY
     - state: slauncher_0
-    - state: slauncher_1
-    - state: slauncher_2
-    - state: snowplow_0
-    - state: snowplow_1
     - state: SUPPORT
     - state: tank_base
     - state: tank_turret_0
-    - state: tank_turret_1
+      map: ["enum.TankTurretLayer.key"]
     - state: towlauncher_0
-    - state: towlauncher_1
     - state: treads_0
-    - state: treads_1
     - state: vehicle_clamp
     - state: warray_0
-    - state: warray_1
 
   # todo: Запилить логику нанесения урона танку
   - type: Damageable

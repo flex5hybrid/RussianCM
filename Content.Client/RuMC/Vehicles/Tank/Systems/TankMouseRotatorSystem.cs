@@ -1,5 +1,6 @@
 ﻿using Content.Shared.RuMC.Vehicles.Components;
 using Content.Shared.RuMC.Vehicles.Systems;
+using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.Input;
 using Robust.Client.Player;
@@ -88,6 +89,12 @@ public sealed class TankMouseRotatorSystem : SharedTankMouseRotatorSystem
             var goalDiff = Angle.ShortestDistance(angle, rotator.GoalRotation.Value);
             if (Math.Abs(goalDiff.Theta) < rotator.AngleTolerance.Theta)
                 return;
+        }
+
+        //todo: Сделать вращение башни отдельно от танка, пока только на клиенте
+        if (TryComp<SpriteComponent>(mech, out var spriteComp))
+        {
+            Log.Info($"mech: {mech}, sprite: {spriteComp}");
         }
 
         // 7) Отправляем событие с поворотом танка
