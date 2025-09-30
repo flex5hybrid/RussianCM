@@ -64,7 +64,6 @@ warning-explosives = Внимание: взрывоопасные материа
 
 ### Теги ###
 ent-RMCPacketGrenade-tag = Упаковка гранат
-ent-RMCGrenadeHEDP-tag = HEDP
-ent-RMCGrenadeHEFA-tag = HEFA
+
 ent-RMCGrenadeAGMF-tag = AGM-F
 ent-RMCGrenadeAGMI-tag = AGM-I

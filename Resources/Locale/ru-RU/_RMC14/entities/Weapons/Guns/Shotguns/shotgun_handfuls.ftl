@@ -1,6 +1,4 @@
 ﻿### Базовые классы ###
-ent-CMShellShotgunBase = Горсть патронов для дробовика
-ent-CMShellShotgunBase-desc = Несколько патронов для быстрой перезарядки дробовика.
 
 ### Типы патронов ###
 ent-CMShellShotgunBuckshot = Горсть дробовых патронов

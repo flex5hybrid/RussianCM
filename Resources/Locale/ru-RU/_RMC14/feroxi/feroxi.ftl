@@ -48,7 +48,6 @@ marking-FeroxiTailBlitz-feroxi-tail-under = Нижняя часть
 marking-FeroxiTailBlitz-feroxi-dorsal = Основа плавника
 marking-FeroxiTailBlitz-feroxi-dorsal-stripes = Полосы плавника
 
-
 marking-FeroxiTorsoStripesBlitz = Полосы на предплечьях
 marking-FeroxiTorsoStripesBlitz-feroxi-torso-stripes-blitz = Полосы
 
@@ -60,7 +59,6 @@ marking-FeroxiTorsoCountershadingF-feroxi-torso-countershading-f = Контра�
 
 marking-FeroxiTorsoCountershadingM = Контраст (муж.)
 marking-FeroxiTorsoCountershadingM-feroxi-torso-countershading-m = Контраст
-
 
 rmc-name-feroxi-female-1 = Seliara
 rmc-name-feroxi-female-2 = Xyshka

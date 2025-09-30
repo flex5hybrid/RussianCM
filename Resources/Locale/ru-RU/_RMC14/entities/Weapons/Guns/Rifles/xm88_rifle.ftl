@@ -3,8 +3,6 @@ ent-WeaponRifleXM88 = Тяжёлая винтовка XM88
 ent-WeaponRifleXM88-desc = Экспериментальная переносная противо-материальная винтовка под патрон .458 SOCOM. Требует ручного перезаряжения после каждого выстрела.
 
 ### Боеприпасы ###
-ent-RMCCartridge458SOCOM = Патрон .458 SOCOM
-ent-RMCCartridge458SOCOM-desc = Крупнокалиберный патрон для тяжёлой винтовки XM88.
 
 ent-RMCBox458SOCOM = Ящик патронов .458 SOCOM
 ent-RMCBox458SOCOM-desc = Ящик с патронами .458 SOCOM для тяжёлой винтовки XM88.

@@ -13,8 +13,6 @@ ent-CMMagazineSniperM96SFlak = Магазин M96S флак (10x28мм)
 ent-CMMagazineSniperM96SFlak-desc = Прицельные выстрелы временно замедляют цель и уменьшают отдачу.
 
 ### Патроны ###
-ent-CMCartridgeSniper10x28mm = Патрон 10x28мм
-ent-CMCartridgeSniper10x28mm-desc = Бронебойный боеприпас для снайперских винтовок.
 
 ent-CMCartridgeSniper10x28mmIncendiary = Патрон 10x28мм (зажигательный)
 ent-CMCartridgeSniper10x28mmIncendiary-desc = Боеприпас с зажигательным эффектом.
