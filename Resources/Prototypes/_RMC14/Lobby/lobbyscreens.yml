@@ -30,3 +30,18 @@
   id: Cornered
   background: /Textures/_RMC14/Lobby/Cornered.png
 
+- type: lobbyBackground
+  id: EyesUp
+  background: /Textures/_RMC14/Lobby/Eyes_Up.png
+
+- type: lobbyBackground
+  id: FocusFire
+  background: /Textures/_RMC14/Lobby/Focus_Fire.png
+
+- type: lobbyBackground
+  id: Evac
+  background: /Textures/_RMC14/Lobby/Evac.png
+
+- type: lobbyBackground
+  id: Intelligence
+  background: /Textures/_RMC14/Lobby/Intelligence.png
