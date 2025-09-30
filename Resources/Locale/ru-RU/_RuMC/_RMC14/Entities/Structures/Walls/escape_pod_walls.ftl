@@ -1,1 +1,1 @@
-ent-RMCWallEscapePod0-name = wall
+ent-RMCWallEscapePod0 = wall

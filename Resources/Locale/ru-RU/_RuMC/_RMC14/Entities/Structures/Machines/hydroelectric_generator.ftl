@@ -1,2 +1,2 @@
-ent-RMCHydroElectricGenerator-name = Hydro Electric Generator
-ent-RMCHydroElectricGenerator-desc = A high-power hydroelectric generator.
+ent-RMCHydroElectricGenerator = Hydro Electric Generator
+  .desc = A high-power hydroelectric generator.

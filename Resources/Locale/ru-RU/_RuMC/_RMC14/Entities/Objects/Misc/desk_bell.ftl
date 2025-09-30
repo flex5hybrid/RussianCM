@@ -1,2 +1,2 @@
-ent-RMCDeskBell-name = desk bell
-ent-RMCDeskBell-desc = The cornerstone of any customer service job. You feel an unending urge to ring it.
+ent-RMCDeskBell = настольный звонок
+  .desc = Краеугольный камень любой работы в сфере обслуживания. Ты чувствуешь непреодолимое желание позвонить в него.

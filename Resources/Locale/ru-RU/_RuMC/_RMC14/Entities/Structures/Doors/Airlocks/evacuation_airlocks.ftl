@@ -1,4 +1,4 @@
-ent-RMCAirlockEvacuation-name = Evacuation Airlock PL-6
-ent-RMCAirlockEvacuation-desc = It opens and closes.
-ent-RMCAirlockLifeboat-name = lifeboat docking hatch
-ent-RMCAirlockLifeboat-desc = A heavyset bulkhead for a lifeboat.
+ent-RMCAirlockLifeboat = lifeboat docking hatch
+  .desc = A heavyset bulkhead for a lifeboat.
+ent-RMCAirlockEvacuation = Evacuation Airlock PL-6
+  .desc = It opens and closes.

@@ -1,3 +1,3 @@
-ent-CMSpawnPointCommandingOfficer-name = commanding officer spawn point
-ent-RMCGuidebookRoleCO-name = The Commanding Officer
-ent-RMCGuidebookRoleCO-desc = The Commanding Officer.
+ent-RMCGuidebookRoleCO = Командующий офицер
+  .desc = Командующий офицер
+ent-CMSpawnPointCommandingOfficer = commanding officer spawn point

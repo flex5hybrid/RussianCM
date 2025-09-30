@@ -1,1 +1,1 @@
-ent-CMSpawnPointMilitaryPolice-name = military police spawn point
+ent-CMSpawnPointMilitaryPolice = military police spawn point

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSPPSectionLeadPVE-name = spp section lead spawn point
+ent-RMCSpawnPointSPPSectionLeadPVE = spp section lead spawn point

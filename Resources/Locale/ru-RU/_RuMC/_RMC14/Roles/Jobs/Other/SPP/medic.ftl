@@ -1,2 +1,2 @@
-ent-RMCRandomHumanoidSPPMedicHostile-name = spp ghost role medic
-ent-RMCRandomHumanoidSPPMedicFriendly-name = spp ghost role medic
+ent-RMCRandomHumanoidSPPMedicFriendly = spp ghost role medic
+ent-RMCRandomHumanoidSPPMedicHostile = spp ghost role medic

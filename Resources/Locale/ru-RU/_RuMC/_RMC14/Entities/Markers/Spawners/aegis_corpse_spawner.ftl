@@ -1,1 +1,1 @@
-ent-RMCAegisCorpseSpawner-name = AEGIS corpse spawner - Scientist
+ent-RMCAegisCorpseSpawner = AEGIS corpse spawner - Scientist

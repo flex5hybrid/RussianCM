@@ -1,1 +1,1 @@
-ent-CMXenoParasiteBase-name = Parasite
+ent-CMXenoParasiteBase = Паразит

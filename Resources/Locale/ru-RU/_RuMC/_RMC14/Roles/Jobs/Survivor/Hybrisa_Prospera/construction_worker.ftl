@@ -1,1 +1,1 @@
-ent-RMCGearSurvivorPresetHybrisaConstructionWorker-name = hybrisa construction worker colonist preset
+ent-RMCGearSurvivorPresetHybrisaConstructionWorker = hybrisa construction worker colonist preset

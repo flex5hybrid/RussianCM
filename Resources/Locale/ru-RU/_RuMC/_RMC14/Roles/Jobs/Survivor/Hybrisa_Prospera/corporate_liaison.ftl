@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorHybrisaCorporateLiaison-name = hybrisa corporate liaison survivor spawn point
-ent-RMCSurvivorPresetHybrisaCorporateLiaison-name = hybrisa corporate liaison preset
+ent-RMCSurvivorPresetHybrisaCorporateLiaison = hybrisa corporate liaison preset
+ent-RMCSpawnPointSurvivorHybrisaCorporateLiaison = hybrisa corporate liaison survivor spawn point

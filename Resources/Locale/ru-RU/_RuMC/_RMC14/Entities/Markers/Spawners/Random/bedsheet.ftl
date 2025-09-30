@@ -1,1 +1,1 @@
-ent-CMBedsheetSpawner-name = Random Sheet Spawner
+ent-CMBedsheetSpawner = Random Sheet Spawner

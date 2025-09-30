@@ -1,2 +1,2 @@
-ent-RMCHospitalDivider-name = hospital divider
-ent-RMCHospitalDivider-desc = A hospital divider for privacy.
+ent-RMCHospitalDivider = hospital divider
+  .desc = A hospital divider for privacy.

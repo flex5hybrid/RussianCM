@@ -1,1 +1,1 @@
-ent-RMCGrate-name = grate
+ent-RMCGrate = grate

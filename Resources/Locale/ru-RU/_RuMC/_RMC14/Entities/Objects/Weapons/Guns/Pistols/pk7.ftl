@@ -1,6 +1,6 @@
-ent-RMCWeaponPistolPK7-name = PK-7 electrostatic pistol
-ent-RMCWeaponPistolPK7-desc = A Weston-Yamada manufactured less-than-lethal pistol. Originally manufactured in the 2080s, the ES-4 electrostatic pistol fires electrically-charged bullets with high accuracy, though its cost and constant need for cleaning makes it a rare sight.
-ent-RMCMagazinePistolPK7-name = PK-7 electrostatic magazine (9mm)
-ent-RMCMagazinePistolPK7-desc = Holds 19 rounds of specialized Conductive 9mm. Electrostatic propulsion in the PK-7 functions by propelling an cV9mm round, at a proportionally slower velocity to maintain a higher kinetic energy transfer rate. All this turns a penetrative round into a less-than-lethal round.
-ent-RMCCartridgePistol9mmElectrostatic-name = electrostatic cartridge (9mm)
-ent-RMCBulletPistol9mmElectrostatic-name = electrostatic bullet (9mm)
+ent-RMCBulletPistol9mmElectrostatic = электростатическая пуля (9мм)
+ent-RMCCartridgePistol9mmElectrostatic = электростатический патрон (9мм)
+ent-RMCMagazinePistolPK7 = электростатический магазин PK-7 (9мм)
+  .desc = Вмещает 19 патронов специализированного проводящего 9мм калибра. Электростатическое ускорение в PK-7 работает за счёт выстрела патроном cV9mm с пропорционально меньшей скоростью для сохранения более высокого коэффициента передачи кинетической энергии. Всё это превращает проникающий патрон в менее смертоносный.
+ent-RMCWeaponPistolPK7 = электростатический пистолет PK-7
+  .desc = Менее смертоносный пистолет производства «Вестон-Ямада». Изначально произведённый в 2080-х, электростатический пистолет ES-4 стреляет электрически заряженными пулями с высокой точностью, хотя его стоимость и постоянная необходимость в чистке делают его редким зрелищем.

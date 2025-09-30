@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPVESectionSergeant-name = PVE section sergeant spawn point
+ent-RMCSpawnPointPVESectionSergeant = PVE section sergeant spawn point

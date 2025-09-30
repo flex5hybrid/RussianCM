@@ -1,1 +1,1 @@
-ent-RMCMobSkrell-name = Urist R McFrog
+ent-RMCMobSkrell = Морпех Урист Лягушка

@@ -1,2 +1,2 @@
-ent-RMCRandomHumanoidFreelancerLeaderHostile-name = freelancer ghost role leader
-ent-RMCRandomHumanoidFreelancerLeaderFriendly-name = freelancer ghost role leader
+ent-RMCRandomHumanoidFreelancerLeaderFriendly = freelancer ghost role leader
+ent-RMCRandomHumanoidFreelancerLeaderHostile = freelancer ghost role leader

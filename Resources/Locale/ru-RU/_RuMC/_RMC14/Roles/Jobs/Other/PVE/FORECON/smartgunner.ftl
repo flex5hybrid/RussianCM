@@ -1,1 +1,1 @@
-ent-RMCSpawnPointFORECONPVESmartgunner-name = forecon smartgunner spawn point
+ent-RMCSpawnPointFORECONPVESmartgunner = forecon smartgunner spawn point

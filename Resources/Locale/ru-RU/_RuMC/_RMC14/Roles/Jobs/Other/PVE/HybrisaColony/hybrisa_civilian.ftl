@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPVEHybrisaCivilian-name = hybrisa civilian spawn point
+ent-RMCSpawnPointPVEHybrisaCivilian = hybrisa civilian spawn point

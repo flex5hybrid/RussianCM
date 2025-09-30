@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPVESmartGunOperator-name = PVE smart gun operator spawn point
+ent-RMCSpawnPointPVESmartGunOperator = PVE smart gun operator spawn point

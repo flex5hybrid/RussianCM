@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorFiorinaRiotOfficer-name = survivor fiorina riot officer spawn point
+ent-RMCSpawnPointSurvivorFiorinaRiotOfficer = survivor fiorina riot officer spawn point

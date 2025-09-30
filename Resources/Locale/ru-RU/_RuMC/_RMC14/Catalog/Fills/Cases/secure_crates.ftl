@@ -1,6 +1,6 @@
-ent-RMCSecureCaseM54CMag-name = M54C magazine case (x20)
-ent-RMCSecureCaseM54CMag-desc = An ammunition case containing 20 M54C magazines.
-ent-RMCSecureCaseM54CMagHalf-name = M54C magazine case (x10)
-ent-RMCSecureCaseM54CMagHalf-desc = An ammunition case containing 10 M54C magazines.
-ent-RMCSecureCaseStrappedMetal-name = metal sheets supply crate (x200)
-ent-RMCSecureCaseStrappedMetal-desc = A supply crate containing four fifty stacks of metal sheets.
+ent-RMCSecureCaseStrappedMetal = ящик металлических листов (x200)
+  .desc = Ящик с припасами, содержащий четыре пачки по пятьдесят металлических листов.
+ent-RMCSecureCaseM54CMagHalf = ящик магазинов M54C (x10)
+  .desc = Ящик с боеприпасами, содержащий 10 магазинов для M54C.
+ent-RMCSecureCaseM54CMag = ящик магазинов M54C (x20)
+  .desc = Ящик с боеприпасами, содержащий 20 магазинов для M54C.

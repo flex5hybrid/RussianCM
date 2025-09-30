@@ -1,6 +1,8 @@
-ent-RMCIDCardTSEPA-name = TSEPA silver badge
-ent-RMCIDCardTSEPA-desc = The silver badge which represents that the wearer is a TSEPA Constable. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept.
-ent-RMCIDCardTSEPASilverGold-name = TSEPA silver gold badge
-ent-RMCIDCardTSEPASilverGold-desc = The silver with gold accents badge which represents that the wearer is a TSEPA Senior Constable. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept.
-ent-RMCIDCardTSEPAGold-name = TSEPA gold badge
-ent-RMCIDCardTSEPAGold-desc = The gold badge which represents that the wearer is a TSEPA Inspector. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept.
+ent-RMCIDCardTSEPAGold = золотой значок ТСЕПА
+  .desc = Золотой значок, означающий, что владелец является инспектором ТСЕПА. Это символ справедливости, власти и защиты. Защита тех, кто не может. Этот значок символизирует приведженность данной клятве, которая всегда соблюдается.
+ent-RMCIDCardTSEPASilverGold = серебряно-золотой значок ТСЕПА
+  .desc = Серебряный значок с золотыми акцентами, означающий, что владелец является старшим констеблем ТСЕПА. Это символ справедливости, власти и защиты. Защита тех, кто не может. Этот значок символизирует приверженность данной клятве, которая всегда соблюдается.
+ent-RMCIDCardTSEPA = серебряный значок ТСЕПА
+  .desc = Серебряный значок, означающий, что владелец является констеблем ТСЕПА. Это символ справедливости, власти и защиты. Защита тех, кто не может. Этот значок символизирует приверженность данной клятве, которая всегда соблюдается.
+
+

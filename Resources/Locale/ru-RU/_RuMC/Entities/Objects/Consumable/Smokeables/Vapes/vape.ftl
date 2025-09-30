@@ -1,2 +1,0 @@
-ent-Vape-name = vape
-ent-Vape-desc = Like a cigar, but for tough teens. (WARNING:Pour only water into the vape)

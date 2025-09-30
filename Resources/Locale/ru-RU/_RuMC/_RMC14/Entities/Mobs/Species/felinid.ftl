@@ -1,1 +1,1 @@
-ent-CMMobFelinid-name = Urist McFelinid
+ent-CMMobFelinid = ересь

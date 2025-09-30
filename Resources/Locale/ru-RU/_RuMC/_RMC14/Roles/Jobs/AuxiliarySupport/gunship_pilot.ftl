@@ -1,1 +1,1 @@
-ent-CMSpawnPointPilotGunship-name = gunship pilot spawn point
+ent-CMSpawnPointPilotGunship = gunship pilot spawn point

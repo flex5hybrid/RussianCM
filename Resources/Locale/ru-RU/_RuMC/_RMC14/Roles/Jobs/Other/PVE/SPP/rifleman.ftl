@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSPPRiflemanPVE-name = spp rifleman spawn point
+ent-RMCSpawnPointSPPRiflemanPVE = spp rifleman spawn point

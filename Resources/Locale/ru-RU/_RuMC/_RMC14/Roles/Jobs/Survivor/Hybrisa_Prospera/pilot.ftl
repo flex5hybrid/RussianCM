@@ -1,1 +1,1 @@
-ent-RMCSurvivorPresetHybrisaCommercialPilot-name = hybrisa corporate liaison preset
+ent-RMCSurvivorPresetHybrisaCommercialPilot = hybrisa corporate liaison preset

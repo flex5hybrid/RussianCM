@@ -1,1 +1,1 @@
-ent-RMCStoragePlantBag-name = plant bag
+ent-RMCStoragePlantBag = мешок для растений

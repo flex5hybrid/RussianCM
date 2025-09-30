@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPVESquadLeader-name = PVE squad leader spawn point
+ent-RMCSpawnPointPVESquadLeader = PVE squad leader spawn point

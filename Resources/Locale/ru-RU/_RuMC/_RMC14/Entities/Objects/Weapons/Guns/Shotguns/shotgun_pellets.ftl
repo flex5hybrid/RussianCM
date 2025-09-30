@@ -1,7 +1,7 @@
-ent-CMPelletShotgunBuckshot-name = buckshot
-ent-CMPelletShotgunSlug-name = slug
-ent-CMPelletShotgunIncendiary-name = incendiary slug
-ent-CMPelletShotgunBeanbag-name = beanbag slug
-ent-CMPelletShotgunFlechette-name = flechette shell
-ent-CMPelletShotgunIncendiaryBuckshot-name = incendiary buckshot shell
-ent-RMCPelletShotgunBreaching-name = light breaching shell
+ent-RMCPelletShotgunBreaching = лёгкий штурмовой патрон
+ent-CMPelletShotgunIncendiaryBuckshot = зажигательный картечный патрон
+ent-CMPelletShotgunFlechette = патрон с оперёнными стрелами
+ent-CMPelletShotgunBeanbag = травматическая пуля
+ent-CMPelletShotgunIncendiary = зажигательная пуля
+ent-CMPelletShotgunSlug = пуля
+ent-CMPelletShotgunBuckshot = картечь

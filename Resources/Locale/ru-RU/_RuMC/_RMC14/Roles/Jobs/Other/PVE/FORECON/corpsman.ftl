@@ -1,1 +1,1 @@
-ent-RMCSpawnPointFORECONPVECorpsman-name = forecon corpsman spawn point
+ent-RMCSpawnPointFORECONPVECorpsman = forecon corpsman spawn point

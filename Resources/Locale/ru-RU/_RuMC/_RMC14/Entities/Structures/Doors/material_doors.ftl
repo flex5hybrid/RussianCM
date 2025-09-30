@@ -1,3 +1,3 @@
-ent-RMCBaseMaterialDoor-name = door
-ent-RMCSandstoneDoor-name = sandstone door
-ent-RMCSandstoneDoor-desc = It opens and closes.
+ent-RMCSandstoneDoor = sandstone door
+  .desc = It opens and closes.
+ent-RMCBaseMaterialDoor = door

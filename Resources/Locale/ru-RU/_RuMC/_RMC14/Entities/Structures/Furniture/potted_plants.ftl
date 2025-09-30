@@ -1,2 +1,2 @@
-ent-CMPottedPlantRandom-name = random potted plant spawner
-ent-CMPottedPlantBase-name = potted plant
+ent-CMPottedPlantBase = potted plant
+ent-CMPottedPlantRandom = random potted plant spawner

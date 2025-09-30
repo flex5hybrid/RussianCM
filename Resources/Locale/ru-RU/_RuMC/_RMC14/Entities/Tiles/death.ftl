@@ -1,1 +1,1 @@
-ent-FloorDeathEntity-name = death
+ent-FloorDeathEntity = death

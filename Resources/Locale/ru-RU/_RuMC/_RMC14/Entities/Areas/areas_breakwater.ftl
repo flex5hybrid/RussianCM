@@ -1,2 +1,2 @@
-ent-RMCAreaBreakwaterStrandExterior-name = Breakwater Exterior
-ent-RMCAreaBreakwaterStrandInterior-name = Breakwater Interior
+ent-RMCAreaBreakwaterStrandInterior = Breakwater Interior
+ent-RMCAreaBreakwaterStrandExterior = Breakwater Exterior

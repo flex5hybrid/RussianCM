@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPVEPlatoonCommander-name = PVE platoon commander spawn point
+ent-RMCSpawnPointPVEPlatoonCommander = PVE platoon commander spawn point

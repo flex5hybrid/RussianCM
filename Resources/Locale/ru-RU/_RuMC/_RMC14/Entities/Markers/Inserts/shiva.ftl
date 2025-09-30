@@ -1,1 +1,1 @@
-ent-RMCMapInsertShivaSouthCaves-name = LZ2 South Caves
+ent-RMCMapInsertShivaSouthCaves = Южные пещеры (ЗП2)

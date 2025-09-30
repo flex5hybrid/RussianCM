@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPMCForceCommandPVE-name = weya pmc force command spawn point
+ent-RMCSpawnPointPMCForceCommandPVE = weya pmc force command spawn point

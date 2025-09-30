@@ -1,2 +1,2 @@
-ent-RMCRandomHumanoidHEFAShrapnelswornMeleeHostile-name = hefa ghost role shrapnelsworn
-ent-RMCRandomHumanoidHEFAShrapnelswornMeleeFriendly-name = hefa ghost role shrapnelsworn
+ent-RMCRandomHumanoidHEFAShrapnelswornMeleeFriendly = hefa ghost role shrapnelsworn
+ent-RMCRandomHumanoidHEFAShrapnelswornMeleeHostile = hefa ghost role shrapnelsworn

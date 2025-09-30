@@ -1,1 +1,1 @@
-ent-ColMarTechBase-name = ColMarTech vendor
+ent-ColMarTechBase = ColMarTech vendor

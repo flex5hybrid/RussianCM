@@ -1,2 +1,2 @@
-ent-CMAirlockRequisitionsLocked-name = requisitions bay
-ent-CMAirlockLiaisonLocked-name = Corporate Liaison's Quarters
+ent-CMAirlockLiaisonLocked = Corporate Liaison's Quarters
+ent-CMAirlockRequisitionsLocked = requisitions bay

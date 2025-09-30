@@ -1,1 +1,1 @@
-ent-RMCEncryptionKeyProvost-name = provost radio encryption key
+ent-RMCEncryptionKeyProvost = ключ шифрования Провост

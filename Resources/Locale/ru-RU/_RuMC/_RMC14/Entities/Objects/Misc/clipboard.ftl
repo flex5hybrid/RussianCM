@@ -1,1 +1,1 @@
-ent-CMClipboard-name = clipboard
+ent-CMClipboard = планшет с зажимом

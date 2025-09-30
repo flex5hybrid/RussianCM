@@ -1,2 +1,2 @@
-ent-RMCDropshipDoorBase-name = crew hatch
-ent-RMCDropshipCockpitBase-name = cockpit
+ent-RMCDropshipCockpitBase = cockpit
+ent-RMCDropshipDoorBase = crew hatch

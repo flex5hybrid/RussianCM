@@ -1,4 +1,4 @@
-ent-CMNormandyDoor-name = normandy crew hatch
-ent-CMNormandyDoorAft-name = normandy cargo door
-ent-CMNormandyDoorPort-name = normandy crew hatch
-ent-CMNormandyDoorStarboard-name = normandy crew hatch
+ent-CMNormandyDoorStarboard = normandy crew hatch
+ent-CMNormandyDoorPort = normandy crew hatch
+ent-CMNormandyDoorAft = normandy cargo door
+ent-CMNormandyDoor = normandy crew hatch

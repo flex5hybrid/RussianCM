@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidProvostAdvisor-name = provost ghost role advisor
+ent-RMCRandomHumanoidProvostAdvisor = provost ghost role advisor

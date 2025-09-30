@@ -1,2 +1,2 @@
-ent-RMCFuelPump-name = fuel pump
-ent-RMCFuelPump-desc = It is a machine that pumps fuel around the ship.
+ent-RMCFuelPump = fuel pump
+  .desc = It is a machine that pumps fuel around the ship.

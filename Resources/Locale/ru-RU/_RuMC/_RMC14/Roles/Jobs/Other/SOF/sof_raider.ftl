@@ -1,2 +1,2 @@
-ent-RMCRandomHumanoidMarineRaider-name = DEATHSQUAD marine raider ghost role
-ent-RMCDogtagMarineRaider-name = Marine Raider's dogtags
+ent-RMCDogtagMarineRaider = Marine Raider's dogtags
+ent-RMCRandomHumanoidMarineRaider = DEATHSQUAD marine raider ghost role

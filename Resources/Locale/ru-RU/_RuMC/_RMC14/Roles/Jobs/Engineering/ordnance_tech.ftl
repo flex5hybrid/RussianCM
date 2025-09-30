@@ -1,1 +1,1 @@
-ent-CMSpawnPointOrdnanceTech-name = ordnance tech spawn point
+ent-CMSpawnPointOrdnanceTech = ordnance tech spawn point

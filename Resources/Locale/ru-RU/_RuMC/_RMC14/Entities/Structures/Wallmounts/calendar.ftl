@@ -1,2 +1,2 @@
-ent-RMCCalendarBase-name = wall calendar
-ent-RMCCalendarBase-desc = Classic office decoration and a place to stare at maniacally.
+ent-RMCCalendarBase = wall calendar
+  .desc = Classic office decoration and a place to stare at maniacally.

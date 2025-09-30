@@ -1,5 +1,5 @@
-ent-RMCMapInsertTrijentGreenBridge-name = Green River New Bridge
-ent-RMCMapInsertTrijentPurpleBridge-name = Purple River New Bridge
-ent-RMCMapInsertTrijentCaveInEngineering-name = Cave in Engineering
-ent-RMCMapInsertTrijentTempleIntact-name = Temple Intact
-ent-RMCMapInsertTrijentShipGone-name = Ship Gone
+ent-RMCMapInsertTrijentShipGone = Корабль исчез
+ent-RMCMapInsertTrijentTempleIntact = Храм цел
+ent-RMCMapInsertTrijentCaveInEngineering = Обвал в Инженерном
+ent-RMCMapInsertTrijentPurpleBridge = Новый мост Пурпурной реки
+ent-RMCMapInsertTrijentGreenBridge = Новый мост Зелёной реки

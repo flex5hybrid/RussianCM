@@ -1,6 +1,6 @@
-ent-ActionMarineFocus-name = Issue Order - Focus
-ent-ActionMarineFocus-desc = Increases gun accuracy for nearby marines.
-ent-ActionMarineHold-name = Issue Order - Hold
-ent-ActionMarineHold-desc = Increases damage resistance for nearby marines.
-ent-ActionMarineMove-name = Issue Order - Move
-ent-ActionMarineMove-desc = Increases speed for nearby marines. [color=red]This won't affect anyone without armor![/color]
+ent-ActionMarineMove = Приказ - Перемещение
+  .desc = Увеличивает скорость для ближайших морпехов. [color=red]Не действует на тех, у кого нет брони![/color]
+ent-ActionMarineHold = Приказ - Удержание
+  .desc = Увеличивает сопротивление урону для ближайших морпехов.
+ent-ActionMarineFocus = Приказ - Фокус
+  .desc = Увеличивает меткость стрельбы для ближайших морпехов.

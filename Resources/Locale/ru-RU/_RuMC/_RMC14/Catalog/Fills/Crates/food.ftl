@@ -1,4 +1,4 @@
-ent-RMCCrateFoodDonuts-name = donuts crate
-ent-RMCCrateFoodMRE-name = UNMC MRE crate
-ent-RMCCrateFoodPizza-name = pizza ready-to-eat crate
-ent-RMCCrateFoodIngredients-name = ingredients crate
+ent-RMCCrateFoodIngredients = ящик с ингридиентами
+ent-RMCCrateFoodPizza = ящик быстрой доставки пиццы
+ent-RMCCrateFoodMRE = ящик MRE
+ent-RMCCrateFoodDonuts = ящик с пончиками

@@ -1,5 +1,5 @@
-ent-CMFortuneCookie-name = fortune cookie
-ent-CMFortuneCookie-desc = A golden brown fortune cookie. Some say the paper inside even has the ability to predict the future, whatever that means.
-ent-CMFortuneCookieCracked-name = broken fortune cookie
-ent-CMFortuneCookieCracked-desc = A golden brown fortune cookie. Some say the paper inside even has the ability to predict the future, whatever that means.
-ent-CMFortuneCookiePaper-name = fortune
+ent-CMFortuneCookiePaper = предсказание
+ent-CMFortuneCookieCracked = разломанное печенье с предсказанием
+  .desc = Печенье с предсказанием золотисто-коричневого цвета. Некоторые говорят, что бумажка внутри даже способна предсказывать будущее, что бы это ни значило.
+ent-CMFortuneCookie = печенье с предсказанием
+  .desc = Печенье с предсказанием золотисто-коричневого цвета. Некоторые говорят, что бумажка внутри даже способна предсказывать будущее, что бы это ни значило.

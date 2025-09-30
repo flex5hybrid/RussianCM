@@ -1,6 +1,6 @@
-ent-PlumpSeeds-name = packet of plump spores
-ent-GrassSeeds-name = packet of grass seeds
-ent-WhiteBeetSeeds-name = packet of white beet seeds
-ent-PeanutSeeds-name = packet of peanut seeds
-ent-SunflowerSeeds-name = packet of sunflower seeds
-ent-RMCMangoSeeds-name = packet of mango seeds
+ent-RMCMangoSeeds = packet of mango seeds
+ent-SunflowerSeeds = packet of sunflower seeds
+ent-PeanutSeeds = packet of peanut seeds
+ent-WhiteBeetSeeds = packet of white beet seeds
+ent-GrassSeeds = packet of grass seeds
+ent-PlumpSeeds = packet of plump spores

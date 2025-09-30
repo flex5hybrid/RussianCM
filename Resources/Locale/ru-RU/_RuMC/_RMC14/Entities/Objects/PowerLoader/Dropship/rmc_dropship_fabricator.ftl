@@ -1,2 +1,2 @@
-ent-RMCDropshipFabricator-name = dropship part fabricator
-ent-RMCDropshipFabricator-desc = A large automated 3D printer for producing dropship parts. You can recycle parts or ammo in it, and get 80% of your points back, by clicking it while holding them in a powerloader claw.
+ent-RMCDropshipFabricator = фабрикатор деталей дропшипа
+  .desc = Крупный автоматизированный 3D-принтер для производства деталей дропшипа. Вы можете перерабатывать детали или боеприпасы в нём, получая обратно 80% очков, нажав на него с деталью в клешне погрузчика.

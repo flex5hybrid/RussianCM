@@ -1,2 +1,2 @@
-ent-RMCBeerCoolerBase-name = freezer crate
-ent-RMCBeerCoolerBase-desc = A cozy cooler for your beer and other beverages.
+ent-RMCBeerCoolerBase = freezer crate
+  .desc = A cozy cooler for your beer and other beverages.

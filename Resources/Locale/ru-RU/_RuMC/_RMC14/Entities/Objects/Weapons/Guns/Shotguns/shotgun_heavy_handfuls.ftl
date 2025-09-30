@@ -1,5 +1,5 @@
-ent-RMCShellShotgunHeavyBuckshot-name = handful of heavy buckshot shells
-ent-RMCShellShotgunHeavySlugs-name = handful of heavy shotgun slugs
-ent-RMCShellShotgunHeavyBeanbag-name = handful of heavy beanbag slugs
-ent-RMCShellShotgunHeavyFlechette-name = handful of heavy flechette shells
-ent-RMCShellShotgunIncendiaryHeavyBuckshot-name = handful of heavy dragonbreath buckshot shells
+ent-RMCShellShotgunIncendiaryHeavyBuckshot = горсть патронов зажигательной картечи усиленной
+ent-RMCShellShotgunHeavyFlechette = горсть патронов флешеттных усиленных
+ent-RMCShellShotgunHeavyBeanbag = горсть патронов травматических усиленных
+ent-RMCShellShotgunHeavySlugs = горсть патронов пулевых усиленных
+ent-RMCShellShotgunHeavyBuckshot = горсть патронов картечи усиленной

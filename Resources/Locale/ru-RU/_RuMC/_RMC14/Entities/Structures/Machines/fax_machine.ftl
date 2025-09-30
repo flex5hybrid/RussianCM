@@ -1,5 +1,5 @@
-ent-CMFax-name = fax machine
-ent-CMFax-desc = Liaison's best and only friend.
-ent-CMFaxCMB-name = colony marshal bureau fax machine
-ent-CMFaxWY-name = we-ya fax machine
-ent-CMFaxHighCom-name = marine high command fax machine
+ent-CMFaxHighCom = marine high command fax machine
+ent-CMFaxWY = we-ya fax machine
+ent-CMFaxCMB = colony marshal bureau fax machine
+ent-CMFax = fax machine
+  .desc = Liaison's best and only friend.

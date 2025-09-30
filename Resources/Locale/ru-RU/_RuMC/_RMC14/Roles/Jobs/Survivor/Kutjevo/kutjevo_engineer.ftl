@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorKutjevoEngineer-name = survivor kutjevo engineer spawn point
-ent-RMCGearSurvivorPresetKutjevoEngineer-name = kutjevo engineer colonist preset
+ent-RMCGearSurvivorPresetKutjevoEngineer = kutjevo engineer colonist preset
+ent-RMCSpawnPointSurvivorKutjevoEngineer = survivor kutjevo engineer spawn point

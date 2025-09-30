@@ -1,1 +1,1 @@
-ent-RMCIDCardHEFAShrapnelsworn-name = HEFA ID card
+ent-RMCIDCardHEFAShrapnelsworn = HEFA ID card

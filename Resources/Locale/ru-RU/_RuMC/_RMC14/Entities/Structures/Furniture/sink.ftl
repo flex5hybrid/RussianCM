@@ -1,3 +1,3 @@
-ent-CMSinkEmpty-name = sink
-ent-CMSinkEmpty-desc = A sink used for washing one's hands and face.
-ent-CMSink-name = sink
+ent-CMSink = sink
+ent-CMSinkEmpty = sink
+  .desc = A sink used for washing one's hands and face.

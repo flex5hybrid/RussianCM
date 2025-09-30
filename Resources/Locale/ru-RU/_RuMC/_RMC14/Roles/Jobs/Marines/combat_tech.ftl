@@ -1,1 +1,1 @@
-ent-CMSpawnPointCombatTech-name = combat tech spawn point
+ent-CMSpawnPointCombatTech = combat tech spawn point

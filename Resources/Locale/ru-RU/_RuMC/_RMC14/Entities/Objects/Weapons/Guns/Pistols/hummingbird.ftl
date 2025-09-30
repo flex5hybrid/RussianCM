@@ -1,4 +1,4 @@
-ent-RMCWeaponPistolD18-name = D18 Hummingbird
-ent-RMCWeaponPistolD18-desc = The D18 Hummingbird Pistol was produced in the mid-2110s as a cheap and concealable firearm for CLF Sleeper Cell agents for assassinations and ambushes, and is able to be concealed in shoes and workboots.
-ent-RMCMagazinePistolD18-name = D18 magazine (9mm)
-ent-RMCMagazinePistolD18-desc = A small D18 magazine storing seven 9mm bullets. How is it even this small?
+ent-RMCMagazinePistolD18 = магазин D18 (9мм)
+  .desc = Небольшой магазин D18, вмещающий семь патронов 9мм. Как он вообще такой маленький?
+ent-RMCWeaponPistolD18 = D18 «Колибри»
+  .desc = Пистолет D18 «Колибри» был произведён в середине 2110-х годов как дешёвое и скрываемое огнестрельное оружие для агентов Спящих ячеек ФОК для убийств и засад, и может быть спрятан в обуви и рабочих ботинках.

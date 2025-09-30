@@ -1,2 +1,2 @@
-ent-RMCBoulderLarge-name = boulder
-ent-RMCBoulderLarge-desc = A large rock. It's not cooking anything.
+ent-RMCBoulderLarge = boulder
+  .desc = A large rock. It's not cooking anything.

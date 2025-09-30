@@ -1,2 +1,2 @@
-ent-CMSpawnPointASO-name = auxiliary support officer spawn point
-ent-RMCGuidebookRoleASO-name = Auxiliary Support Officer
+ent-RMCGuidebookRoleASO = Офицер вспомогательной поддержки
+ent-CMSpawnPointASO = auxiliary support officer spawn point

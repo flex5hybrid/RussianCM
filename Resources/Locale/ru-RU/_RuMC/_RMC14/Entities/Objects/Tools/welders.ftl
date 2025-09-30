@@ -1,7 +1,7 @@
-ent-RMCWelderBase-name = blowtorch
-ent-RMCWelderBase-desc = Melts anything as long as it's fueled, don't forget your eye protection!
-ent-RMCWelderAdmin-name = admin blowtorch
-ent-RMCWelderAdmin-desc = Melts anything as long as it's fueled, forget your eye protection!
-ent-CMWelderSmall-name = ME3 hand welder
-ent-CMWelderSmall-desc = A compact, handheld welding torch used by the Marines for cutting and welding jobs on the field. Due to the small size and slow strength, its function is limited compared to a full-sized technician's blowtorch.
-ent-RMCWelderIndustrial-name = industrial blowtorch
+ent-RMCWelderIndustrial = промышленный сварочный аппарат
+ent-CMWelderSmall = ручная сварочная горелка ME3
+  .desc = Компактная ручная сварочная горелка, используемая морпехами для резки и сварки в полевых условиях. Из-за малого размера и медленной мощности её функциональность ограничена по сравнению с полноразмерной паяльной лампой техника.
+ent-RMCWelderAdmin = админская паяльная лампа
+  .desc = Плавит всё, что угодно, пока есть топливо, забудь про защиту для глаз!
+ent-RMCWelderBase = сварочный аппарат
+  .desc = Плавит всё, что угодно, пока есть топливо, не забудь защиту для глаз!

@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorHybrisaEMTParamedic-name = emt paramedic spawn point
-ent-RMCGearSurvivorPresetHybrisaEMTParamedic-name = emt paramedic preset
+ent-RMCGearSurvivorPresetHybrisaEMTParamedic = emt paramedic preset
+ent-RMCSpawnPointSurvivorHybrisaEMTParamedic = emt paramedic spawn point

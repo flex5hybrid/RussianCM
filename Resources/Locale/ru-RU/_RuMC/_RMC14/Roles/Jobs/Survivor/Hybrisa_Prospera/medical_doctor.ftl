@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorHybrisaMedicalDoctor-name = medical doctor spawn point
-ent-RMCGearSurvivorPresetHybrisaMedicalDoctor-name = medical doctor preset
+ent-RMCGearSurvivorPresetHybrisaMedicalDoctor = medical doctor preset
+ent-RMCSpawnPointSurvivorHybrisaMedicalDoctor = medical doctor spawn point

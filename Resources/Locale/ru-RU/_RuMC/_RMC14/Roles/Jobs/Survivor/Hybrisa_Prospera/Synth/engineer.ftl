@@ -1,1 +1,1 @@
-ent-RMCSurvivorPresetHybrisaSynthEngineer-name = survivor synth hybrisa engineer colonist preset
+ent-RMCSurvivorPresetHybrisaSynthEngineer = survivor synth hybrisa engineer colonist preset

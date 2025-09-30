@@ -1,1 +1,1 @@
-ent-CMSpawnPointForeconSynth-name = forecon synthetic spawn point
+ent-CMSpawnPointForeconSynth = forecon synthetic spawn point

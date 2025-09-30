@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorTrijentResearcher-name = survivor trijent researcher spawn point
-ent-RMCSurvivorPresetTrijentResearcher-name = trijent researcher colonist preset
+ent-RMCSurvivorPresetTrijentResearcher = trijent researcher colonist preset
+ent-RMCSpawnPointSurvivorTrijentResearcher = survivor trijent researcher spawn point

@@ -1,5 +1,5 @@
-ent-WeaponRifleM16-name = M16 rifle
-ent-WeaponRifleM16-desc = An old, reliable design first adopted by the U.N. military in the 1960s. Something like this belongs in a museum of war history. It is chambered in 5.56x45mm.
-ent-RMCMagazineRifleM16-name = M16 Magazine (5.56x45mm)
-ent-RMCCartridgeRifleM16-name = Cartridge (5.56x45)
-ent-RMCCartridgeRifleM16-desc = A 5.56x45 rifle cartridge
+ent-RMCCartridgeRifleM16 = Патрон (5.56x45)
+  .desc = Винтовочный патрон 5.56x45.
+ent-RMCMagazineRifleM16 = Магазин M16 (5.56x45мм)
+ent-WeaponRifleM16 = Винтовка M16
+  .desc = Старая, надежная конструкция, впервые принятая на вооружение войск ООН в 1960-х годах. Такой вещи место в музее военной истории. Использует патрон 5.56x45мм.

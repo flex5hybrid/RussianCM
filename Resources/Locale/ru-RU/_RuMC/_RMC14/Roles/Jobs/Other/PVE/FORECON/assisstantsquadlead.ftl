@@ -1,1 +1,1 @@
-ent-RMCSpawnPointFORECONPVEAssistantSL-name = forecon assistant squad lead spawn point
+ent-RMCSpawnPointFORECONPVEAssistantSL = forecon assistant squad lead spawn point

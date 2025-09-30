@@ -1,2 +1,2 @@
-ent-RMCCableCoil-name = cable coil
-ent-RMCCableCoil-desc = A coil of power cable.
+ent-RMCCableCoil = катушка кабеля
+  .desc = Катушка силового кабеля.

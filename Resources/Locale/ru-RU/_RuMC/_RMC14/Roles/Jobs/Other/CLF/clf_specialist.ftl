@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidCLFSpecialist-name = clf ghost role specialist
+ent-RMCRandomHumanoidCLFSpecialist = clf ghost role specialist

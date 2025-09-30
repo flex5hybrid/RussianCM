@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorHybrisaOfficeWorker-name = hybrisa office worker spawn point
-ent-RMCGearSurvivorPresetHybrisaOfficeWorker-name = hybrisa office worker preset
+ent-RMCGearSurvivorPresetHybrisaOfficeWorker = hybrisa office worker preset
+ent-RMCSpawnPointSurvivorHybrisaOfficeWorker = hybrisa office worker spawn point

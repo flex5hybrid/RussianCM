@@ -1,1 +1,1 @@
-ent-CMSpawnPointSmartGunOperator-name = smart gun operator spawn point
+ent-CMSpawnPointSmartGunOperator = smart gun operator spawn point

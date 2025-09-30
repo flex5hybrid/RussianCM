@@ -1,4 +1,4 @@
-ent-RMCDropshipAttachmentLaserCannon-name = LWU-6B Laser Cannon
-ent-RMCDropshipAttachmentLaserCannon-desc = State of the art technology recently acquired by the UNMC, it fires a battery-fed pulsed laser beam at near lightspeed setting on fire everything it touches. Moving this will require some sort of lifter. Accepts the BTU-17/LW Hi-Cap Laser Batteries.
-ent-RMCDropshipAttachmentAmmoLaserCannon-name = BTU-17/LW Hi-Cap Laser Battery
-ent-RMCDropshipAttachmentAmmoLaserCannon-desc = A high-capacity laser battery used to power laser beam weapons. Can be loaded into the LWU-6B Laser Cannon.
+ent-RMCDropshipAttachmentAmmoLaserCannon = высокоёмкостная лазерная батарея BTU-17/LW
+  .desc = Высокоёмкостная лазерная батарея, используемая для питания лучевого лазерного оружия. Может заряжаться в лазерную пушку LWU-6B.
+ent-RMCDropshipAttachmentLaserCannon = лазерная пушка LWU-6B
+  .desc = Новейшая технология, недавно приобретённая КМП, она выстреливает импульсным лазерным лучом с питанием от батареи почти со скоростью света, поджигая всё, к чему прикасается. Для перемещения потребуется грузоподъёмник. Совместима с высокоёмкостными лазерными батареями BTU-17/LW.

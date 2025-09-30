@@ -1,2 +1,2 @@
-ent-RMCPouchExplosive-name = explosive pouch
-ent-RMCPouchExplosive-desc = It can carry grenades, plastic explosives, mine boxes, and other explosives.
+ent-RMCPouchExplosive = подсумок для взрывчатки
+  .desc = Может переносить гранаты, пластиковую взрывчатку, коробки с минами и другие взрывчатые вещества.

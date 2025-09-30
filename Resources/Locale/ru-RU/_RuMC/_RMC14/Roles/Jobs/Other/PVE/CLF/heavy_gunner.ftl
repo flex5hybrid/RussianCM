@@ -1,1 +1,1 @@
-ent-RMCSpawnPointCLFCHeavyGunnerPVE-name = clf heavy gunner spawn point
+ent-RMCSpawnPointCLFCHeavyGunnerPVE = clf heavy gunner spawn point

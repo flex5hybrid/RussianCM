@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorHybrisaPizzaGalaxy-name = hybrisa pizza galaxy delivery driver spawn point
-ent-RMCGearSurvivorPresetHybrisaPizzaGalaxy-name = hybrisa pizza galaxy delivery driver preset
+ent-RMCGearSurvivorPresetHybrisaPizzaGalaxy = hybrisa pizza galaxy delivery driver preset
+ent-RMCSpawnPointSurvivorHybrisaPizzaGalaxy = hybrisa pizza galaxy delivery driver spawn point

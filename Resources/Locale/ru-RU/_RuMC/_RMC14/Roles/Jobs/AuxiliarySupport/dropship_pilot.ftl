@@ -1,1 +1,1 @@
-ent-CMSpawnPointPilotDropship-name = dropship pilot spawn point
+ent-CMSpawnPointPilotDropship = dropship pilot spawn point

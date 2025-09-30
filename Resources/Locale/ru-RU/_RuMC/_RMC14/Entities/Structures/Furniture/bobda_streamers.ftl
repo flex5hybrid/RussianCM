@@ -1,4 +1,4 @@
-ent-RMCStreamerPole-name = pole
-ent-RMCStreamerPole-desc = It connects streamer to streamer.
-ent-RMCStreamerOrange-name = orange streamer
-ent-RMCStreamerOrange-desc = They flutter softly. Poignant.
+ent-RMCStreamerOrange = orange streamer
+  .desc = They flutter softly. Poignant.
+ent-RMCStreamerPole = pole
+  .desc = It connects streamer to streamer.

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorFiorinaEngineer-name = survivor fiorina engineer spawn point
+ent-RMCSpawnPointSurvivorFiorinaEngineer = survivor fiorina engineer spawn point

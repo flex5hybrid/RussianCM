@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidPizzaDeliveryBoy-name = pizza delivery boy ghost role
+ent-RMCRandomHumanoidPizzaDeliveryBoy = pizza delivery boy ghost role

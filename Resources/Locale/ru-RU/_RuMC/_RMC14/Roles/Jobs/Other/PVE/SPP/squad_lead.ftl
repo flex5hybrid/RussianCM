@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSPPSquadLeadPVE-name = weya pmc team lead spawn point
+ent-RMCSpawnPointSPPSquadLeadPVE = weya pmc team lead spawn point

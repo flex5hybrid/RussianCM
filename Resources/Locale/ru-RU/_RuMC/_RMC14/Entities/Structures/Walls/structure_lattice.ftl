@@ -1,4 +1,4 @@
-ent-RMCStructureLattice-name = structural lattice
-ent-RMCStructureLattice-desc = Like rebar, but in space.
-ent-RMCStructureLatticeDouble-name = structural lattice
-ent-RMCStructureLatticeDouble-desc = Like rebar, but in space.
+ent-RMCStructureLatticeDouble = structural lattice
+  .desc = Like rebar, but in space.
+ent-RMCStructureLattice = structural lattice
+  .desc = Like rebar, but in space.

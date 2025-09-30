@@ -1,1 +1,1 @@
-ent-RMCGlowshroom-name = glowshroom
+ent-RMCGlowshroom = glowshroom

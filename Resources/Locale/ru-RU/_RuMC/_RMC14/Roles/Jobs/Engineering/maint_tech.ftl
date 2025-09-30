@@ -1,1 +1,1 @@
-ent-CMSpawnPointMaintTech-name = maint tech spawn point
+ent-CMSpawnPointMaintTech = maint tech spawn point

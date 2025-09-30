@@ -1,2 +1,2 @@
-ent-RMCRandomHumanoidSPPRiflemanHostile-name = spp ghost role rifleman
-ent-RMCRandomHumanoidSPPRiflemanFriendly-name = spp ghost role rifleman
+ent-RMCRandomHumanoidSPPRiflemanFriendly = spp ghost role rifleman
+ent-RMCRandomHumanoidSPPRiflemanHostile = spp ghost role rifleman

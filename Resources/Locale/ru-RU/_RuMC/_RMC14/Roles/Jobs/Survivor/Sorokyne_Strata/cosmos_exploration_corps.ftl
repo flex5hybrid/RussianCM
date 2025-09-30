@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorCECResearcher-name = cosmos exploration corps researcher spawn point
-ent-RMCGearSurvivorPresetCECResearcher-name = cosmos exploration corps researcher preset
+ent-RMCGearSurvivorPresetCECResearcher = cosmos exploration corps researcher preset
+ent-RMCSpawnPointSurvivorCECResearcher = cosmos exploration corps researcher spawn point

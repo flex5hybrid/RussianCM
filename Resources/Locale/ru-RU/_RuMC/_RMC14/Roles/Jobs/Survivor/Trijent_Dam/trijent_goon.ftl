@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorTrijentGoon-name = trijent goon spawn point
-ent-RMCGearSurvivorPresetTrijentGoon-name = trijent goon colonist preset
+ent-RMCGearSurvivorPresetTrijentGoon = trijent goon colonist preset
+ent-RMCSpawnPointSurvivorTrijentGoon = trijent goon spawn point

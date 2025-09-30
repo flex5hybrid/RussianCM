@@ -1,2 +1,2 @@
-ent-RMCSyringeCase-name = syringe case
-ent-RMCSyringeCase-desc = It's a medical case for storing syringes and bottles.
+ent-RMCSyringeCase = футляр для шприцев
+  .desc = Медицинский футляр для хранения шприцев и флаконов.

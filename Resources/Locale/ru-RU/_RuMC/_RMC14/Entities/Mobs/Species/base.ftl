@@ -1,1 +1,1 @@
-ent-CMBaseMobSpeciesOrganic-name = Urist C.M. McHands
+ent-CMBaseMobSpeciesOrganic = Морпех Урист Макхэндс

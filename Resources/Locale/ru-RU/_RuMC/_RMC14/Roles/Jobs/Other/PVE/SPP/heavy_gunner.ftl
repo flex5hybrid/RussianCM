@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSPPGunnerPVE-name = spp heavy gunner spawn point
+ent-RMCSpawnPointSPPGunnerPVE = spp heavy gunner spawn point

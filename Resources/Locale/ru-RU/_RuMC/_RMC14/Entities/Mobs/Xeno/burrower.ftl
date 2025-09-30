@@ -1,2 +1,2 @@
-ent-CMXenoBurrower-name = Burrower
-ent-CMXenoBurrower-desc = A beefy alien with sharp claws.
+ent-CMXenoBurrower = Бурильщик
+  .desc = Мясной ксенос с острыми когтями.

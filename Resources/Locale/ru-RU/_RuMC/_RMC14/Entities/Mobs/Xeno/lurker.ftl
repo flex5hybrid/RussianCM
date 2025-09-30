@@ -1,2 +1,2 @@
-ent-RMCXenoLurkerBase-name = Lurker
-ent-RMCXenoLurkerBase-desc = A beefy, fast alien with sharp claws.
+ent-RMCXenoLurkerBase = Охотник
+  .desc = Мускулистый, быстрый пришелец с острыми когтями.

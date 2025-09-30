@@ -1,1 +1,1 @@
-ent-RMCAegisSpawner-name = AEGIS crate spawner
+ent-RMCAegisSpawner = AEGIS crate spawner

@@ -1,2 +1,2 @@
-ent-RMCTriggerTeleporter-name = teleporter
-ent-RMCTriggerTeleporterViewer-name = teleporter viewer
+ent-RMCTriggerTeleporterViewer = teleporter viewer
+ent-RMCTriggerTeleporter = teleporter

@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorKutjevoGoon-name = kutjevo goon spawn point
-ent-RMCGearSurvivorPresetKutjevoGoon-name = kutjevo goon colonist preset
+ent-RMCGearSurvivorPresetKutjevoGoon = kutjevo goon colonist preset
+ent-RMCSpawnPointSurvivorKutjevoGoon = kutjevo goon spawn point

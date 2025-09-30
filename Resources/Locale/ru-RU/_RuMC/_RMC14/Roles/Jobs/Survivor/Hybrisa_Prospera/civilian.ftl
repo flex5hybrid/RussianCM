@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorHybrisaCivilian-name = hybrisa civilian spawn point
-ent-RMCGearSurvivorPresetHybrisaCivilian-name = hybrisa civilian preset
+ent-RMCGearSurvivorPresetHybrisaCivilian = hybrisa civilian preset
+ent-RMCSpawnPointSurvivorHybrisaCivilian = hybrisa civilian spawn point

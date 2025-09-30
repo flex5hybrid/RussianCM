@@ -1,3 +1,3 @@
-ent-RMCSpawnPointSurvivorMiner-name = survivor miner spawn point
-ent-RMCSurvivorPresetMiner-name = miner colonist preset
-ent-RMCRandomHumanoidSurvivorMiner-name = miner colonist ghost role
+ent-RMCRandomHumanoidSurvivorMiner = miner colonist ghost role
+ent-RMCSurvivorPresetMiner = miner colonist preset
+ent-RMCSpawnPointSurvivorMiner = survivor miner spawn point

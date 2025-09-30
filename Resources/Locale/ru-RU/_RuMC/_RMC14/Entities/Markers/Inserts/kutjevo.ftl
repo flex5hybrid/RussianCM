@@ -1,4 +1,4 @@
-ent-RMCMapInsertKutjevoCommunications-name = SE Checkpoint
-ent-RMCMapInsertKutjevoCleaningProgBotany-name = Cleaning Botany
-ent-RMCMapInsertKutjevoTrappedMonke-name = Trapped Clown
-ent-RMCMapInsertSolarisPlinkingSpotNorthLZ-name = Plinking Spot North LZ
+ent-RMCMapInsertSolarisPlinkingSpotNorthLZ = Стрельбище Северная ЗП
+ent-RMCMapInsertKutjevoTrappedMonke = Запертый Клоун
+ent-RMCMapInsertKutjevoCleaningProgBotany = Уборка Ботаники
+ent-RMCMapInsertKutjevoCommunications = КПП ЮВ

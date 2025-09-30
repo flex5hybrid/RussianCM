@@ -1,2 +1,2 @@
-ent-RMCCrashLandBarrier-name = crash land on touch barrier
-ent-RMCDeleteCrashLandBarrier-name = delete crash landable on touch barrier
+ent-RMCDeleteCrashLandBarrier = delete crash landable on touch barrier
+ent-RMCCrashLandBarrier = crash land on touch barrier

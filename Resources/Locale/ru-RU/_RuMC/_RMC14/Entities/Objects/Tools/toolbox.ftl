@@ -1,5 +1,5 @@
-ent-RMCToolboxEmergency-name = emergency toolbox
-ent-RMCToolboxElectrical-name = electrical toolbox
-ent-RMCToolboxMechanical-name = mechanical toolbox
-ent-RMCToolboxSyndicate-name = suspicious toolbox
-ent-RMCToolboxSyndicate-desc = A compact and suspicious looking toolbox. This one is small enough to fit into a bag.
+ent-RMCToolboxSyndicate = подозрительный ящик для инструментов
+  .desc = Компактный и подозрительно выглядящий ящик для инструментов. Этот достаточно мал, чтобы поместиться в сумку.
+ent-RMCToolboxMechanical = механический ящик для инструментов
+ent-RMCToolboxElectrical = электротехнический ящик для инструментов
+ent-RMCToolboxEmergency = аварийный ящик для инструментов

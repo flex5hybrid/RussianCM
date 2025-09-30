@@ -1,1 +1,1 @@
-ent-RMCGrassTallBase-name = tallgrass
+ent-RMCGrassTallBase = tallgrass

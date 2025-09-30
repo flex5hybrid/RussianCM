@@ -1,1 +1,1 @@
-ent-RMCSpawnPointTSEPASeniorConstable-name = tsepa senior constable spawn point
+ent-RMCSpawnPointTSEPASeniorConstable = tsepa senior constable spawn point

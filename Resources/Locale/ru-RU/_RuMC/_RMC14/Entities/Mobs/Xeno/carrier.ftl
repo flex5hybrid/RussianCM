@@ -1,2 +1,2 @@
-ent-RMCXenoCarrierBase-name = Carrier
-ent-RMCXenoCarrierBase-desc = A strange-looking alien creature. It carries a number of scuttling jointed crablike creatures.
+ent-RMCXenoCarrierBase = Носитель
+  .desc = Странно выглядящий инопланетянин. Он переносит неких крабоподобных существ.

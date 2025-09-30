@@ -1,6 +1,6 @@
-ent-RMCDropshipAttachmentGau21Cannon-name = GAU-21 30mm cannon
-ent-RMCDropshipAttachmentGau21Cannon-desc = A dismounted GAU-21 'Rattler' 30mm rotary cannon. It seems to be missing its feed links and has exposed connection wires. Capable of firing 5200 rounds a minute, feared by many for its power. Earned the nickname 'Rattler' from the vibrations it would cause on dropships in its initial production run. Accepts PGU-100/PGU-105 ammo crates
-ent-RMCDropshipAttachmentGuidedMissileLauncher-name = LAU-444 guided missile launcher
-ent-RMCDropshipAttachmentGuidedMissileLauncher-desc = A missile pod weapon system capable of launching a single laser-guided missile. Moving this will require some sort of lifter. Accepts AGM, AIM, BLU, and GBU missile systems.
-ent-RMCDropshipAttachmentRocketPod-name = LAU-229 rocket pod
-ent-RMCDropshipAttachmentRocketPod-desc = A rocket pod capable of launching six laser-guided mini rockets. Moving this will require some sort of lifter. Accepts the AGR-59 series of minirockets.
+ent-RMCDropshipAttachmentRocketPod = ракетный блок LAU-229
+  .desc = Ракетный блок, способный запускать шесть мини-ракет с лазерным наведением. Для перемещения потребуется подъёмник. Принимает мини-ракеты серии AGR-59.
+ent-RMCDropshipAttachmentGuidedMissileLauncher = пусковая установка управляемых ракет LAU-444
+  .desc = Ракетная система вооружения, способная запускать одну лазерно-управляемую ракету. Для перемещения потребуется подъёмник. Принимает ракетные системы AGM, AIM, BLU и GBU.
+ent-RMCDropshipAttachmentGau21Cannon = пушка GAU-21 калибра 30 мм
+  .desc = Снятая с установки 30-мм роторная пушка GAU-21 «Гремучник». Похоже, отсутствуют звенья питания, видны оголённые провода. Способна вести огонь со скоростью 5200 выстрелов в минуту, многие боятся её мощи. Получила прозвище «Гремучник» из-за вибраций, которые она вызывала на дропшипах в начальной серии производства. Принимает ящики с боеприпасами PGU-100/PGU-105.

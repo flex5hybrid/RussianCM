@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorHybrisaMaterialReprocessingTechnician-name = hybrisa material reprocessing technician spawn point
-ent-RMCGearSurvivorPresetHybrisaMaterialReprocessingTechnician-name = hybrisa material reprocessing technician preset
+ent-RMCGearSurvivorPresetHybrisaMaterialReprocessingTechnician = hybrisa material reprocessing technician preset
+ent-RMCSpawnPointSurvivorHybrisaMaterialReprocessingTechnician = hybrisa material reprocessing technician spawn point

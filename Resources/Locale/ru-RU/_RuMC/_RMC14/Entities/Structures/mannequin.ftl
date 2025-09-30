@@ -1,2 +1,2 @@
-ent-RMCMannequin-name = display mannequin
-ent-RMCMannequin-desc = A generic display mannequin, used to show off clothing.
+ent-RMCMannequin = display mannequin
+  .desc = A generic display mannequin, used to show off clothing.

@@ -1,1 +1,1 @@
-ent-RMCBaseCartridgeLMG-name = cartridge
+ent-RMCBaseCartridgeLMG = патрон

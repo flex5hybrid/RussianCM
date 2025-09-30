@@ -1,2 +1,2 @@
-ent-RMCRandomHumanoidPMCLeader-name = weya pmc ghost role leader
-ent-RMCSpawnPointPMCLeader-name = weya pmc squad leader spawn point
+ent-RMCSpawnPointPMCLeader = weya pmc squad leader spawn point
+ent-RMCRandomHumanoidPMCLeader = weya pmc ghost role leader

@@ -1,2 +1,2 @@
-ent-RMCEngineerKit-name = engineer kit
-ent-RMCEngineerKit-desc = A combat engineering toolkit intended to carry electrical and mechanical supplies into combat. With engineering training you can fit this in a backpack.
+ent-RMCEngineerKit = инженерный набор
+  .desc = Комплект снаряжения для боевого инженера, предназначенный для переноски электрических и механических принадлежностей в бою. При наличии инженерной подготовки его можно поместить в рюкзак.

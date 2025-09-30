@@ -1,1 +1,1 @@
-ent-RMCWaterCover-name = water cover
+ent-RMCWaterCover = water cover

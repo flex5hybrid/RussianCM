@@ -1,2 +1,2 @@
-ent-RMCEarmuffs-name = earmuffs
-ent-RMCEarmuffs-desc = Protects your hearing from loud noises, and quiet ones as well.
+ent-RMCEarmuffs = наушники
+  .desc = Защищают ваш слух от громких шумов, а также от тихих.

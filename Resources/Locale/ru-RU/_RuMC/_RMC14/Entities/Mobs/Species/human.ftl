@@ -1,1 +1,1 @@
-ent-CMMobHuman-name = Urist C.M. McHands
+ent-CMMobHuman = Морпех Урист МакХэндс

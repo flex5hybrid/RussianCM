@@ -1,6 +1,6 @@
-ent-RMCCurtainBase-name = curtain
-ent-RMCCurtainMedical-name = plastic curtain
-ent-RMCCurtainShower-name = shower curtain
-ent-RMCCurtainRed-name = red curtain
-ent-RMCCurtainColourableTransparent-name = blinds
-ent-RMCCurtainColourableTransparentAlt-name = blinds
+ent-RMCCurtainColourableTransparentAlt = blinds
+ent-RMCCurtainColourableTransparent = blinds
+ent-RMCCurtainRed = red curtain
+ent-RMCCurtainShower = shower curtain
+ent-RMCCurtainMedical = plastic curtain
+ent-RMCCurtainBase = curtain

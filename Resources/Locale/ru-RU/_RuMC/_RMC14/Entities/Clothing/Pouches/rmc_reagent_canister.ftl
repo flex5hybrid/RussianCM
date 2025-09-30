@@ -1,2 +1,2 @@
-ent-RMCPouchReagentCanister-name = pressurized reagent canister pouch
-ent-RMCPouchReagentCanister-desc = A pressurized reagent canister pouch. It is used to refill custom injectors, and can also store one. May be refilled with a reagent tank or a Chemical Dispenser. Can be worn by attaching it to a pocket.
+ent-RMCPouchReagentCanister = подсумок для реагентного баллона под давлением
+  .desc = Подсумок для реагентного баллона под давлением. Используется для заправки кастомных инжекторов и также может хранить один. Может быть заправлен из реагентного бака или химического раздатчика. Можно носить, прикрепив к карману.

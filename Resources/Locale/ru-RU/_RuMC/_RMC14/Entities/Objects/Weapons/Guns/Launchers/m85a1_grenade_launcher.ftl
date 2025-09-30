@@ -1,2 +1,2 @@
-ent-RMCWeaponLauncherM85A1-name = M85A1 grenade launcher
-ent-RMCWeaponLauncherM85A1-desc = A heavy, low-angle, break-action 40mm grenade launcher. Archaic in core design, inferior to more modern semi automatic M92, M95 grenade launchers and M94 impact launcher, but doesn't require a magnetic armature or an advanced expertice to operate, not to mention near flawless reliability, extremely low cost and low weight due to mostly being made out of polymer materials.
+ent-RMCWeaponLauncherM85A1 = гранатомёт M85A1
+  .desc = Тяжёлый, низкоугловой, с переламывающимся стволом 40-мм гранатомёт. Archaic по основной конструкции, уступает более современным полуавтоматическим гранатомётам M92, M95 и гранатомёту ударного действия M94, но не требует магнитной арматуры или advanced экспертизы для эксплуатации, не говоря уже о near flawless надёжности, extremely низкой стоимости и малом весе из-за того, что в основном сделан из полимерных материалов.

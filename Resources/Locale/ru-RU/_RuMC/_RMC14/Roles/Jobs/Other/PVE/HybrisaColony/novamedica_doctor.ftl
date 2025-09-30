@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPVENovaMedicaDoctor-name = nova medica doctor spawn point
+ent-RMCSpawnPointPVENovaMedicaDoctor = nova medica doctor spawn point

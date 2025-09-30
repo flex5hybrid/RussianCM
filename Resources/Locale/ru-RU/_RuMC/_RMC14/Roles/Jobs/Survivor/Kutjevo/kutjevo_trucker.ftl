@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorKutjevoTrucker-name = kutjevo trucker spawn point
-ent-RMCGearSurvivorPresetKutjevoTrucker-name = Kutjevo trucker colonist preset
+ent-RMCGearSurvivorPresetKutjevoTrucker = Kutjevo trucker colonist preset
+ent-RMCSpawnPointSurvivorKutjevoTrucker = kutjevo trucker spawn point

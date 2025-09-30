@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorKutjevoCMBDeputy-name = kutjevo cmb deputy spawn point
-ent-RMCGearSurvivorPresetKutjevoCMBDeputy-name = kutjevo goon colonist preset
+ent-RMCGearSurvivorPresetKutjevoCMBDeputy = kutjevo goon colonist preset
+ent-RMCSpawnPointSurvivorKutjevoCMBDeputy = kutjevo cmb deputy spawn point

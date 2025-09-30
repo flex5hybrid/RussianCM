@@ -1,3 +1,3 @@
-ent-RMCSpawnPointSurvivorTrucker-name = survivor trucker spawn point
-ent-RMCSurvivorPresetTrucker-name = trucker colonist preset
-ent-RMCRandomHumanoidSurvivorTrucker-name = trucker colonist ghost role
+ent-RMCRandomHumanoidSurvivorTrucker = trucker colonist ghost role
+ent-RMCSurvivorPresetTrucker = trucker colonist preset
+ent-RMCSpawnPointSurvivorTrucker = survivor trucker spawn point

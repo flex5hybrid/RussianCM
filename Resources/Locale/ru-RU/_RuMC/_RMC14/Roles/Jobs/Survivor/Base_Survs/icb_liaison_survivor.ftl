@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorICB-name = survivor icb spawn point
+ent-RMCSpawnPointSurvivorICB = survivor icb spawn point

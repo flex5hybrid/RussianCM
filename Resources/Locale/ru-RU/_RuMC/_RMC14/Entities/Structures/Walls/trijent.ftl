@@ -1,3 +1,3 @@
-ent-RMCWallHangar-name = hangar wall
-ent-RMCWallBunker-name = bunker wall
-ent-RMCWallChigusa-name = facility wall
+ent-RMCWallChigusa = facility wall
+ent-RMCWallBunker = bunker wall
+ent-RMCWallHangar = hangar wall

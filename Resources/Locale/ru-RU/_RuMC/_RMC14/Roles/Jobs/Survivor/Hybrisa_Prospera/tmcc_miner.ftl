@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorHybrisaTMCCMiner-name = tmcc miner spawn point
-ent-RMCGearSurvivorPresetHybrisaTMCCMiner-name = tmcc miner preset
+ent-RMCGearSurvivorPresetHybrisaTMCCMiner = tmcc miner preset
+ent-RMCSpawnPointSurvivorHybrisaTMCCMiner = tmcc miner spawn point

@@ -1,1 +1,1 @@
-ent-CMSpawnPointCargoTech-name = cargo tech spawn point
+ent-CMSpawnPointCargoTech = cargo tech spawn point

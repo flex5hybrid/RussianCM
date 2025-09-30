@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorPriest-name = survivor priest spawn point
-ent-RMCGearSurvivorPresetPriest-name = priest colonist preset
+ent-RMCGearSurvivorPresetPriest = priest colonist preset
+ent-RMCSpawnPointSurvivorPriest = survivor priest spawn point

@@ -1,2 +1,2 @@
-ent-CMSpawnPointForeconSupportTech-name = forecon support tech spawn point
-ent-RMCSurvivorPresetForeconSupportTech-name = forecon support technician survivor preset
+ent-RMCSurvivorPresetForeconSupportTech = forecon support technician survivor preset
+ent-CMSpawnPointForeconSupportTech = forecon support tech spawn point

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointFORECONPVERifleman-name = forecon rifleman spawn point
+ent-RMCSpawnPointFORECONPVERifleman = forecon rifleman spawn point

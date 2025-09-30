@@ -1,1 +1,1 @@
-ent-RMCComputerFrameUnfinished-name = computer frame
+ent-RMCComputerFrameUnfinished = computer frame

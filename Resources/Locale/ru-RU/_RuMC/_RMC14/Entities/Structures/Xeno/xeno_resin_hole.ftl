@@ -1,2 +1,2 @@
-ent-XenoResinHole-name = resin trap
-ent-XenoResinHole-desc = It looks like a hidey hole.
+ent-XenoResinHole = resin trap
+  .desc = It looks like a hidey hole.

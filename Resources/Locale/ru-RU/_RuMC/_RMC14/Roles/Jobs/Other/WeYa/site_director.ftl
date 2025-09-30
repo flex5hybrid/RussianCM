@@ -1,2 +1,2 @@
-ent-RMCRandomHumanoidPMCDirector-name = weya pmc ghost role director
-ent-RMCSpawnPointPMCSiteDirector-name = weya pmc director spawn point
+ent-RMCSpawnPointPMCSiteDirector = weya pmc director spawn point
+ent-RMCRandomHumanoidPMCDirector = weya pmc ghost role director

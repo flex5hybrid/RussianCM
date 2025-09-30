@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSPPPlatCoPVE-name = spp platoon commander spawn point
+ent-RMCSpawnPointSPPPlatCoPVE = spp platoon commander spawn point

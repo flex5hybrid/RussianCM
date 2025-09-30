@@ -1,3 +1,3 @@
-ent-CMSpawnPointSeniorEnlistedAdvisor-name = senior enlisted advisor spawn point
-ent-CMGuidebookRoleSEA-name = Senior Enlisted Advisor
-ent-CMGuidebookRoleSEA-desc = Mentor for the Marines!
+ent-CMGuidebookRoleSEA = Старший сержантский советник
+  .desc = Наставник для морпехов!
+ent-CMSpawnPointSeniorEnlistedAdvisor = senior enlisted advisor spawn point

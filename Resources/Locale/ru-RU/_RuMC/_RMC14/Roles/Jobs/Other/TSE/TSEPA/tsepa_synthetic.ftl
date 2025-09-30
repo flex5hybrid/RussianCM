@@ -1,1 +1,1 @@
-ent-RMCSpawnPointTSEPASynthetic-name = tsepa synthetic spawn point
+ent-RMCSpawnPointTSEPASynthetic = tsepa synthetic spawn point

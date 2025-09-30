@@ -1,1 +1,1 @@
-ent-RMCSpawnerCorpseFORECONSpotter-name = Corpse Spawner - UNMC Reconnaissance Spotter
+ent-RMCSpawnerCorpseFORECONSpotter = Corpse Spawner - UNMC Reconnaissance Spotter

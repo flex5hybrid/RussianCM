@@ -1,10 +1,14 @@
-ent-RMCVisorNightVision-name = night vision optic
-ent-RMCVisorNightVision-desc = An insertable visor HUD into a standard UNMC helmet. This type gives a form of night vision and is standard issue in units with regular funding. It can be inserted into a recharger to recharge its internal battery.
-ent-RMCVisorMedical-name = basic medical optic
-ent-RMCVisorMedical-desc = An insertable visor HUD into a standard UNMC helmet. This type gives a heads-up display that shows data about nearby humanoids health status.
-ent-RMCVisorMedicalAdvanced-name = advanced medical optic
-ent-RMCVisorMedicalAdvanced-desc = An insertable visor HUD into a standard UNMC helmet. This type gives a heads-up display that shows data about nearby humanoids health status and research notes.
-ent-RMCVisorWelding-name = welding visor
-ent-RMCVisorWelding-desc = An insertable visor HUD into a standard UNMC helmet. This type protects the eyes from welders.
-ent-RMCVisorSquad-name = squad optic
-ent-RMCVisorSquad-desc = An insertable visor HUD into a standard UNMC helmet. This type gives a heads-up display of marine squads.
+ent-RMCVisorSquad = тактическая оптика
+  .desc = Сменный визор-индикатор для стандартного шлема КМК. Данная модель выводит на дисплей тактическую информацию о взводах морпехов.
+ent-RMCVisorWelding = сварочный визор
+  .desc = Сменный визор-индикатор для стандартного шлема КМК. Данная модель защищает глаза от вспышек сварки.
+ent-RMCVisorMedicalAdvanced = продвинутая медицинская оптика
+  .desc = Сменный визор-индикатор для стандартного шлема КМК. Данная модель выводит на дисплей данные о состоянии здоровья nearby humanoids и исследовательские заметки.
+ent-RMCVisorMedical = базовая медицинская оптика
+  .desc = Сменный визор-индикатор для стандартного шлема КМК. Данная модель выводит на дисплей данные о состоянии здоровья nearby humanoids.
+ent-RMCVisorNightVision = оптика ночного видения
+  .desc = Сменный визор-индикатор для стандартного шлема КМК. Данная модель обеспечивает ночное видение и является стандартной экипировкой в подразделениях с регулярным финансированием. Может быть вставлена в зарядное устройство для пополнения внутренней батареи.
+
+
+
+

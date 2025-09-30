@@ -1,3 +1,3 @@
-ent-RMCSurvivorPresetForeconNoPrimary-name = forecon no primary survivor preset
-ent-RMCSurvivorPresetForecon-name = forecon survivor preset
-ent-RMCSurvivorPresetForeconNoPistol-name = forecon survivor preset
+ent-RMCSurvivorPresetForeconNoPistol = forecon survivor preset
+ent-RMCSurvivorPresetForecon = forecon survivor preset
+ent-RMCSurvivorPresetForeconNoPrimary = forecon no primary survivor preset

@@ -1,2 +1,2 @@
-ent-RMCXenoRavagerBase-name = Ravager
-ent-RMCXenoRavagerBase-desc = A huge, nasty red alien with enormous scythed claws.
+ent-RMCXenoRavagerBase = Разрушитель
+  .desc = Огромный, отвратительный красный пришелец с огромными острыми когтями.

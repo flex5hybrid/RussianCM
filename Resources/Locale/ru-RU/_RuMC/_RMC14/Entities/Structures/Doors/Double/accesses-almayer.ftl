@@ -1,1 +1,1 @@
-ent-CMDoubleDoorResearchGlassLocked-name = Research Airlock
+ent-CMDoubleDoorResearchGlassLocked = Research Airlock

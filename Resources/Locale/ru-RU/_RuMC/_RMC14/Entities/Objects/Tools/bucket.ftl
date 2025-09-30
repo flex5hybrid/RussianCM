@@ -1,8 +1,8 @@
-ent-RMCBucket-name = bucket
-ent-RMCBucket-desc = It's a bucket. Holds 120 units.
-ent-CMBucketMop-name = mop bucket
-ent-CMBucketMop-desc = A larger bucket, typically used with a mop. Holds 240 units
-ent-RMCBucketJanitorial-name = janitorial bucket
-ent-RMCBucketJanitorial-desc = It's a large bucket that fits in a janitorial cart. Holds 500 units.
-ent-RMCReagentJug-name = reagent jug
-ent-RMCReagentJug-desc = A large jug made of non-reactive plastic, capable of carrying large amounts of diverse chemicals to wherever they are needed. Holds 500 units.
+ent-RMCReagentJug = ёмкость для реагентов
+  .desc = Большая ёмкость из нереактивного пластика, способная переносить большое количество различных химикатов туда, где они нужны. Вмещает 500 единиц.
+ent-RMCBucketJanitorial = уборочное ведро
+  .desc = Это большое ведро, которое помещается в уборочную тележку. Вмещает 500 единиц.
+ent-CMBucketMop = ведро для швабры
+  .desc = Большее ведро, обычно используемое со шваброй. Вмещает 240 единиц.
+ent-RMCBucket = ведро
+  .desc = Это ведро. Вмещает 120 единиц.

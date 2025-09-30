@@ -1,1 +1,1 @@
-ent-RMCRecharger-name = recharger
+ent-RMCRecharger = recharger

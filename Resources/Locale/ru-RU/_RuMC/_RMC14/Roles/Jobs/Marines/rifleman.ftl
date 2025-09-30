@@ -1,2 +1,2 @@
-ent-CMSpawnPointRifleman-name = rifleman spawn point
-ent-CMGuidebookRoleYou-name = You?
+ent-CMGuidebookRoleYou = Ты?
+ent-CMSpawnPointRifleman = rifleman spawn point

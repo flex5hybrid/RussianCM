@@ -1,3 +1,3 @@
-ent-CMFloorShallowWaterEntity-name = shallow water
-ent-CMFloorDeepWaterEntity-name = deep water
-ent-RMCRiverSorokyne-name = river
+ent-RMCRiverSorokyne = river
+ent-CMFloorDeepWaterEntity = deep water
+ent-CMFloorShallowWaterEntity = shallow water

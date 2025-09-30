@@ -1,1 +1,0 @@
-ent-FloorCarpetItemRed-name = carpet

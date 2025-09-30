@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorTrijentDamTech-name = survivor dam maintenance technician spawn point
-ent-RMCGearSurvivorPresetTrijentDamTech-name = dam maintenance technician colonist preset
+ent-RMCGearSurvivorPresetTrijentDamTech = dam maintenance technician colonist preset
+ent-RMCSpawnPointSurvivorTrijentDamTech = survivor dam maintenance technician spawn point

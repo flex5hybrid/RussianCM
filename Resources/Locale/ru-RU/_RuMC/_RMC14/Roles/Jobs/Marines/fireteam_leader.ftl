@@ -1,1 +1,1 @@
-ent-CMSpawnPointFireteamLeader-name = fireteam leader spawn point
+ent-CMSpawnPointFireteamLeader = fireteam leader spawn point

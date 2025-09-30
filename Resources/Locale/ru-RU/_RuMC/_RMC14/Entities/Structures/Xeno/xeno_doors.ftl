@@ -1,4 +1,4 @@
-ent-DoorXenoResin-name = resin door
-ent-DoorXenoResin-desc = That's a resin door.
-ent-DoorXenoResinThick-name = thick resin door
-ent-DoorXenoResinThick-desc = A thick resin door, which is more durable.
+ent-DoorXenoResinThick = thick resin door
+  .desc = A thick resin door, which is more durable.
+ent-DoorXenoResin = resin door
+  .desc = That's a resin door.

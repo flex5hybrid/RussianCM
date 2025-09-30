@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPMCGunnerPVE-name = weya pmc gunner spawn point
+ent-RMCSpawnPointPMCGunnerPVE = weya pmc gunner spawn point

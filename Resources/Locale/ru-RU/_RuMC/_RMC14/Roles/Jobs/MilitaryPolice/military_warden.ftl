@@ -1,1 +1,1 @@
-ent-CMSpawnPointMilitaryWarden-name = military warden spawn point
+ent-CMSpawnPointMilitaryWarden = military warden spawn point

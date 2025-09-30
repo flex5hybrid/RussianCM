@@ -1,1 +1,1 @@
-ent-RMCSurvivorPresetHybrisaCorporateSecurity-name = constable colonist preset
+ent-RMCSurvivorPresetHybrisaCorporateSecurity = constable colonist preset

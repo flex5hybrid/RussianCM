@@ -1,1 +1,1 @@
-ent-RMCRandomVendor-name = random food vendor spawner
+ent-RMCRandomVendor = random food vendor spawner

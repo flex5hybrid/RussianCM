@@ -1,5 +1,5 @@
-ent-RMCSpawnerIntelBase-name = intel spawner
-ent-RMCSpawnerIntelClose-name = objective landmark close
-ent-RMCSpawnerIntelMedium-name = objective landmark medium
-ent-RMCSpawnerIntelFar-name = objective landmark far
-ent-RMCSpawnerIntelScience-name = objective landmark science
+ent-RMCSpawnerIntelScience = objective landmark science
+ent-RMCSpawnerIntelFar = objective landmark far
+ent-RMCSpawnerIntelMedium = objective landmark medium
+ent-RMCSpawnerIntelClose = objective landmark close
+ent-RMCSpawnerIntelBase = intel spawner

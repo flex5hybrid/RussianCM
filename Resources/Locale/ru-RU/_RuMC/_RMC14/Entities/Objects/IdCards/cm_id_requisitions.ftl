@@ -1,2 +1,2 @@
-ent-CMIDCardQuartermaster-name = quartermaster ID card
-ent-CMIDCardCargoTech-name = cargo tech's ID card
+ent-CMIDCardCargoTech = удостоверение грузчика
+ent-CMIDCardQuartermaster = удостоверение квартирмейстера

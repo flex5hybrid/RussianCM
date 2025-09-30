@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorGoon-name = survivor goon spawn point
+ent-RMCSpawnPointSurvivorGoon = survivor goon spawn point

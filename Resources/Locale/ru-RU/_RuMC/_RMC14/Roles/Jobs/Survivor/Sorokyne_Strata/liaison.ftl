@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorHalcyonDynamicsLiaison-name = halcyon dynamics liaison spawn point
-ent-RMCGearSurvivorPresetHalcyonDynamicsLiaison-name = halcyon dynamics liaison preset
+ent-RMCGearSurvivorPresetHalcyonDynamicsLiaison = halcyon dynamics liaison preset
+ent-RMCSpawnPointSurvivorHalcyonDynamicsLiaison = halcyon dynamics liaison spawn point

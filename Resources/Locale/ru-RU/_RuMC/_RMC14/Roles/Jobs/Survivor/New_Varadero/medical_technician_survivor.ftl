@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorMedicalTechnician-name = survivor medical technician spawn point
-ent-RMCGearSurvivorPresetMedicalTechnician-name = medical technician colonist preset
+ent-RMCGearSurvivorPresetMedicalTechnician = medical technician colonist preset
+ent-RMCSpawnPointSurvivorMedicalTechnician = survivor medical technician spawn point

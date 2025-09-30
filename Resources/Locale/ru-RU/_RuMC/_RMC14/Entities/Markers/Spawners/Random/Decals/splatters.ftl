@@ -1,4 +1,4 @@
-ent-RMCDecalSpawnerBloodSplatters-name = blood spawner
-ent-RMCDecalSpawnerXenoSplatters-name = xeno blood spawner
-ent-RMCDecalSpawnerOilSplatters-name = oil spawner
-ent-RMCDecalSpawnerAcidBloodSplash-name = xeno acid splash spawner
+ent-RMCDecalSpawnerAcidBloodSplash = xeno acid splash spawner
+ent-RMCDecalSpawnerOilSplatters = oil spawner
+ent-RMCDecalSpawnerXenoSplatters = xeno blood spawner
+ent-RMCDecalSpawnerBloodSplatters = blood spawner

@@ -1,2 +1,2 @@
-ent-RMCMegaphone-name = Megaphone
-ent-RMCMegaphone-desc = A device used to project your voice. Loudly.
+ent-RMCMegaphone = мегафон
+  .desc = Устройство для проецирования вашего голоса. Громко.

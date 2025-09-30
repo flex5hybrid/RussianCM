@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidProvostTeamLeader-name = provost ghost role team leader
+ent-RMCRandomHumanoidProvostTeamLeader = provost ghost role team leader

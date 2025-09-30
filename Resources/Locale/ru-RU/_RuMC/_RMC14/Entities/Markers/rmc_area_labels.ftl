@@ -1,1 +1,1 @@
-ent-RMCMarkerAreaLabel-name = area
+ent-RMCMarkerAreaLabel = area

@@ -1,2 +1,2 @@
-ent-RMCIDCardFreePressResponder-name = Free Press ID card
-ent-RMCIDCardFreePressResponder-desc = A common ID card. This one seems to be well traveled.
+ent-RMCIDCardFreePressResponder = Free Press ID card
+  .desc = A common ID card. This one seems to be well traveled.

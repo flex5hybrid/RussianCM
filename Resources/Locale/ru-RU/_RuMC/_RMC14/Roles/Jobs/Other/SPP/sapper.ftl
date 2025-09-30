@@ -1,2 +1,2 @@
-ent-RMCRandomHumanoidSPPEngineerHostile-name = spp ghost role engineer
-ent-RMCRandomHumanoidSPPEngineerFriendly-name = spp ghost role engineer
+ent-RMCRandomHumanoidSPPEngineerFriendly = spp ghost role engineer
+ent-RMCRandomHumanoidSPPEngineerHostile = spp ghost role engineer

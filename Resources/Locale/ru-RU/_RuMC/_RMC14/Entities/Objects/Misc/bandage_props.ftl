@@ -1,2 +1,2 @@
-ent-RMCDirtBandageProp-name = dirty bandages
-ent-RMCDirtBandageProp-desc = Some used gauze.
+ent-RMCDirtBandageProp = грязные бинты
+  .desc = Использованный перевязочный материал.

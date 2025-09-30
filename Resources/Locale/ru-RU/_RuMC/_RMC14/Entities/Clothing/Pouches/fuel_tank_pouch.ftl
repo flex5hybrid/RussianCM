@@ -1,2 +1,2 @@
-ent-RMCPouchFuelTank-name = fuel tank strap pouch
-ent-RMCPouchFuelTank-desc = Two ring straps to loop around M34-pattern napalm tanks. Handle with care.
+ent-RMCPouchFuelTank = подсумок-крепление для топливного бака
+  .desc = Два кольцевых ремня для закрепления на напалмовых баках схемы M34. Обращаться с осторожностью.

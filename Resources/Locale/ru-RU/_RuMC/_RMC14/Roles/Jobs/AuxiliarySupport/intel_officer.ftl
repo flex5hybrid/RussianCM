@@ -1,2 +1,2 @@
-ent-CMSpawnPointIntelOfficer-name = intel officer spawn point
-ent-RMCGuidebookRoleIO-name = Intelligence Officer
+ent-RMCGuidebookRoleIO = Офицер разведки
+ent-CMSpawnPointIntelOfficer = intel officer spawn point

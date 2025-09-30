@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorFiorinaDoctor-name = survivor fiorina doctor spawn point
+ent-RMCSpawnPointSurvivorFiorinaDoctor = survivor fiorina doctor spawn point

@@ -1,2 +1,2 @@
-ent-CMDisposalUnit-name = disposal unit
-ent-CMDisposalUnit-desc = A pneumatic waste disposal unit.
+ent-CMDisposalUnit = disposal unit
+  .desc = A pneumatic waste disposal unit.

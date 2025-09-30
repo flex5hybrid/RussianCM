@@ -1,3 +1,3 @@
-ent-CMSpawnPointCMO-name = chief medical officer spawn point
-ent-RMCGuidebookRoleCMO-name = The CMO
-ent-RMCGuidebookRoleCMO-desc = The Chief Medical Officer.
+ent-RMCGuidebookRoleCMO = Главный врач
+  .desc = Главный врач
+ent-CMSpawnPointCMO = chief medical officer spawn point

@@ -1,8 +1,8 @@
-ent-RMCTentBodyBase-name = UNMC field tent
-ent-RMCTentBodyBase-desc = A standard UNMC Tent. This one is just a general purpose version. Unfold in a suitable location for micro-FOB vibes. ComTech not included. ENTRANCE TO THE SOUTH.
-ent-RMCTentRoofBase-name = UNMC field tent
-ent-RMCTentRoofBase-desc = A standard UNMC Tent. This one is just a general purpose version. Unfold in a suitable location for micro-FOB vibes. ComTech not included. ENTRANCE TO THE SOUTH.
-ent-RMCTentBodyExtended-name = UNMC extended field tent
-ent-RMCTentBodyExtended-desc = A standard UNMC Tent. This one is just an extended general purpose version. Unfold in a suitable location for mega FOB vibes. Mess Tech not included. ENTRANCE TO THE SOUTH.
-ent-RMCTentRoofExtended-name = UNMC extended field tent
-ent-RMCTentRoofExtended-desc = A standard UNMC Tent. This one is just an extended general purpose version. Unfold in a suitable location for mega FOB vibes. Mess Tech not included. ENTRANCE TO THE SOUTH.
+ent-RMCTentRoofExtended = расширенная полевая палатка КМП
+  .desc = Стандартная палатка КМП. Это просто расширенная универсальная версия. Разверни в подходящем месте для атмосферы мега-ПБО. Техник камбуза не входит в комплект. ВХОД С ЮГА.
+ent-RMCTentBodyExtended = расширенная полевая палатка КМП
+  .desc = Стандартная палатка КМП. Это просто расширенная универсальная версия. Разверни в подходящем месте для атмосферы мега-ПБО. Техник камбуза не входит в комплект. ВХОД С ЮГА.
+ent-RMCTentRoofBase = полевая палатка КМП
+  .desc = Стандартная палатка КМП. Это просто универсальная версия. Разверни в подходящем месте для атмосферы микро-ПБО. Комтехника не входит в комплект. ВХОД С ЮГА.
+ent-RMCTentBodyBase = полевая палатка КМП
+  .desc = Стандартная палатка КМП. Это просто универсальная версия. Разверни в подходящем месте для атмосферы микро-ПБО. Комтехника не входит в комплект. ВХОД С ЮГА.

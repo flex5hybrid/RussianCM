@@ -1,2 +1,2 @@
-ent-RMCWeaponShotgunM890Riot-name = M890 riot shotgun
-ent-RMCWeaponShotgunM890Riot-desc = A Weston-Yamada semi-automatic riot shotgun with a rapid fire rate. Holds 8 Beanbag shells in the chamber. Specially made for crowd control during tough situations.
+ent-RMCWeaponShotgunM890Riot = дробовик для подавления беспорядков M890
+  .desc = Самозарядный дробовик для подавления беспорядков от «Вестон-Ямада» с высокой скорострельностью. Вмещает 8 травматических патронов в магазине. Специально создан для контроля толпы в сложных ситуациях.

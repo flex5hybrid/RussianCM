@@ -1,2 +1,2 @@
-ent-RMCLandingZoneGas-name = CN20-X miasma
-ent-RMCGasWeedKiller-name = C10-W weedkiller
+ent-RMCGasWeedKiller = гербицид C10-W
+ent-RMCLandingZoneGas = миазма CN20-X

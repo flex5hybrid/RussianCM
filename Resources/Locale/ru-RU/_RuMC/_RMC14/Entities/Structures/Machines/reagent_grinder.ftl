@@ -1,1 +1,1 @@
-ent-RMCKitchenReagentGrinder-name = All-In-One Grinder
+ent-RMCKitchenReagentGrinder = All-In-One Grinder

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPVEDynagridEngineer-name = dyangrid engineer spawn point
+ent-RMCSpawnPointPVEDynagridEngineer = dyangrid engineer spawn point

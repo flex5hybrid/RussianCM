@@ -1,2 +1,2 @@
-ent-RMCSpawnerRandomSentry-name = sentry loot spawner
-ent-RMCSpawnerRandomSentry-desc = This is a random sentry, for survivors.
+ent-RMCSpawnerRandomSentry = sentry loot spawner
+  .desc = This is a random sentry, for survivors.

@@ -1,6 +1,0 @@
-ent-ClickTestRotatingCornerVisible-name = ClickTestRotatingCornerVisible
-ent-ClickTestRotatingCornerVisibleNoRot-name = ClickTestRotatingCornerVisibleNoRot
-ent-ClickTestRotatingCornerInvisible-name = ClickTestRotatingCornerInvisible
-ent-ClickTestRotatingCornerInvisibleNoRot-name = ClickTestRotatingCornerInvisibleNoRot
-ent-ClickTestFixedCornerVisible-name = ClickTestFixedCornerVisible
-ent-ClickTestFixedCornerInvisible-name = ClickTestFixedCornerInvisible

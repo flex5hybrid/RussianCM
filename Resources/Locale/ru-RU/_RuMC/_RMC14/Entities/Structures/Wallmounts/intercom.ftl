@@ -1,2 +1,2 @@
-ent-CMIntercom-name = intercom
-ent-CMIntercom-desc = An intercom. For when the marines just needs to know something.
+ent-CMIntercom = intercom
+  .desc = An intercom. For when the marines just needs to know something.

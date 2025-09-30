@@ -1,3 +1,3 @@
-ent-RMCWeaponPistolL54-name = L54 service pistol
-ent-RMCWeaponPistolL54-desc = Standard issue semi-automatic service pistol of the TSEPA. Chambered in 9mm, it is comparable to the popular M1984 pistol utilized by the UNMC.
-ent-RMCMagazinePistolL54-name = L54 magazine (9mm)
+ent-RMCMagazinePistolL54 = магазин L54 (9мм)
+ent-RMCWeaponPistolL54 = служебный пистолет L54
+  .desc = Стандартный самозарядный служебный пистолет ТСЕПА. Калибр 9мм, сравним с популярным пистолетом M1984, используемым КМП.

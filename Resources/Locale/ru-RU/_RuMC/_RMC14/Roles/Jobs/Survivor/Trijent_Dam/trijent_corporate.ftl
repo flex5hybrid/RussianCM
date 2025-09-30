@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorTrijentCorporate-name = survivor trijent liaison spawn point
-ent-RMCGearSurvivorPresetTrijentCorporate-name = trijent liaison preset
+ent-RMCGearSurvivorPresetTrijentCorporate = trijent liaison preset
+ent-RMCSpawnPointSurvivorTrijentCorporate = survivor trijent liaison spawn point

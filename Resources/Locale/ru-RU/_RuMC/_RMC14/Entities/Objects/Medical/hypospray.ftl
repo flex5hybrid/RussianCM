@@ -1,2 +1,2 @@
-ent-CMHypospray-name = hypospray
-ent-CMHypospray-desc = The DeForest Medical Corporation hypospray is a sterile, air-needle auto-injector for rapid administration of drugs to patients.
+ent-CMHypospray = гипоспрей
+  .desc = Гипоспрей от DeForest Medical Corporation — это стерильный автоинъектор с воздушной иглой для быстрого введения лекарств пациентам.

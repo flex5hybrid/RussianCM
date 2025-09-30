@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorSoroMiner-name = sorokyne miner spawn point
-ent-RMCGearSurvivorPresetSoroMiner-name = sorokyne miner preset
+ent-RMCGearSurvivorPresetSoroMiner = sorokyne miner preset
+ent-RMCSpawnPointSurvivorSoroMiner = sorokyne miner spawn point

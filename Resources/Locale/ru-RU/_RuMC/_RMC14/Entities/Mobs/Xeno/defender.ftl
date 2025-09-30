@@ -1,2 +1,2 @@
-ent-CMXenoDefenderBase-name = Defender
-ent-CMXenoDefenderBase-desc = An alien with an armored crest.
+ent-CMXenoDefenderBase = Защитник
+  .desc = Инопланетянин с крепкой чешуей

@@ -1,1 +1,1 @@
-ent-RMCAirlockGlassSecurityLockedTSEPAAlt-name = airlock
+ent-RMCAirlockGlassSecurityLockedTSEPAAlt = airlock

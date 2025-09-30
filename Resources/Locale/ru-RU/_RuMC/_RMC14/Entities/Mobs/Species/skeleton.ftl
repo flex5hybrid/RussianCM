@@ -1,1 +1,2 @@
-ent-CMMobSkeletonPerson-name = Urist C.M McSkelly
+ent-CMMobSkeletonPerson = Морпех Урист Скелли
+ent-CMMobSkeletonPerson-name =  Морпех Урист Скелли

@@ -1,2 +1,2 @@
-ent-RMCIDComputer-name = Identification Computer
-ent-RMCIDComputer-desc = Terminal for programming UNMC employee ID card access.
+ent-RMCIDComputer = Identification Computer
+  .desc = Terminal for programming UNMC employee ID card access.

@@ -1,2 +1,2 @@
-ent-CMXenoWarrior-name = Warrior
-ent-CMXenoWarrior-desc = A beefy alien with an armored carapace.
+ent-CMXenoWarrior = Воин
+  .desc = Мускулистый пришелец с бронированным панцирем.

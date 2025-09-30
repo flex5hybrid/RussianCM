@@ -1,2 +1,2 @@
-ent-RMCMortarEquipmentCase-name = mortar kit
-ent-RMCMortarEquipmentCase-desc = Contains the equipment needed for the mortar.
+ent-RMCMortarEquipmentCase = миномётный набор
+  .desc = Содержит оборудование, необходимое для миномёта.

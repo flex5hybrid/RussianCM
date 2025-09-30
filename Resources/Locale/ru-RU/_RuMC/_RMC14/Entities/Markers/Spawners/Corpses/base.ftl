@@ -1,1 +1,1 @@
-ent-RMCSpawnerCorpse-name = Corpse Spawner - Unknown
+ent-RMCSpawnerCorpse = Corpse Spawner - Unknown

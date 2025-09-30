@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorTrijentEngiHydro-name = survivor hydro electric engineer spawn point
-ent-RMCGearSurvivorPresetTrijentEngiHydro-name = hydro electric engineer colonist preset
+ent-RMCGearSurvivorPresetTrijentEngiHydro = hydro electric engineer colonist preset
+ent-RMCSpawnPointSurvivorTrijentEngiHydro = survivor hydro electric engineer spawn point

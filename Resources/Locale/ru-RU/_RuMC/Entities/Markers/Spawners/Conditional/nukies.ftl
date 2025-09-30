@@ -1,1 +1,0 @@
-ent-SpawnPointNukies-name = nukies

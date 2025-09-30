@@ -1,1 +1,1 @@
-ent-RMCTileFire-name = fire
+ent-RMCTileFire = fire

@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorKutjevoCorporate-name = survivor kutjevo liaison spawn point
-ent-RMCGearSurvivorPresetKutjevoCorporate-name = kutjevo liaison preset
+ent-RMCGearSurvivorPresetKutjevoCorporate = kutjevo liaison preset
+ent-RMCSpawnPointSurvivorKutjevoCorporate = survivor kutjevo liaison spawn point

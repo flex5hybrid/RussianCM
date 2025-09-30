@@ -1,2 +1,2 @@
-ent-RMCWeaponShotgunHG3712-name = HG 37-12 pump shotgun
-ent-RMCWeaponShotgunHG3712-desc = A eight-round pump action shotgun with four-round capacity dual internal tube magazines allowing for quick reloading and highly accurate fire. Used exclusively by Colony Marshals. You can switch the active internal magazine by toggling the shotgun tube.
+ent-RMCWeaponShotgunHG3712 = помповый дробовик HG 37-12
+  .desc = Помповый дробовик на восемь патронов с двумя внутренними трубчатыми магазинами ёмкостью четыре патрона каждый, что позволяет быстро перезаряжаться и вести высокоточный огонь. Используется исключительно Колониальными Маршалами. Переключить активный внутренний магазин можно переключением трубки дробовика.

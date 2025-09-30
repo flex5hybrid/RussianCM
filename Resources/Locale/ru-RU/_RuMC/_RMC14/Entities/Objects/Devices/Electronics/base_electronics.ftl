@@ -1,1 +1,1 @@
-ent-CMBaseElectronics-name = base electronics
+ent-CMBaseElectronics = base electronics

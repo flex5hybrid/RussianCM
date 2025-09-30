@@ -1,1 +1,1 @@
-ent-RMCFireAxe-name = fire axe
+ent-RMCFireAxe = пожарный топор

@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorHybrisaGrindBarista-name = daily grind barista spawn point
-ent-RMCGearSurvivorPresetHybrisaGrindBarista-name = daily grind barista preset
+ent-RMCGearSurvivorPresetHybrisaGrindBarista = daily grind barista preset
+ent-RMCSpawnPointSurvivorHybrisaGrindBarista = daily grind barista spawn point

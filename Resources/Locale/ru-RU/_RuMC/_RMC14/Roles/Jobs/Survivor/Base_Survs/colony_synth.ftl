@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSynthColonist-name = synthetic colonist spawn point
+ent-RMCSpawnPointSynthColonist = synthetic colonist spawn point

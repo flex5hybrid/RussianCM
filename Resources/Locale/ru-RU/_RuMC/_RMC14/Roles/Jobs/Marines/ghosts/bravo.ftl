@@ -1,7 +1,7 @@
-ent-RMCRandomHumanoidBravoCombatTech-name = bravo ghost role combat technician
-ent-RMCRandomHumanoidBravoFireteamLeader-name = bravo ghost role fireteam leader
-ent-RMCRandomHumanoidBravoHospitalCorpsman-name = bravo ghost role hospital corpsman
-ent-RMCRandomHumanoidBravoRifleman-name = bravo ghost role rifleman
-ent-RMCRandomHumanoidBravoSmartGunOperator-name = bravo ghost role smart gun operator
-ent-RMCRandomHumanoidBravoSquadLeader-name = bravo ghost role squad leader
-ent-RMCRandomHumanoidBravoWeaponsSpecialist-name = bravo ghost role weapons specialist
+ent-RMCRandomHumanoidBravoWeaponsSpecialist = bravo ghost role weapons specialist
+ent-RMCRandomHumanoidBravoSquadLeader = bravo ghost role squad leader
+ent-RMCRandomHumanoidBravoSmartGunOperator = bravo ghost role smart gun operator
+ent-RMCRandomHumanoidBravoRifleman = bravo ghost role rifleman
+ent-RMCRandomHumanoidBravoHospitalCorpsman = bravo ghost role hospital corpsman
+ent-RMCRandomHumanoidBravoFireteamLeader = bravo ghost role fireteam leader
+ent-RMCRandomHumanoidBravoCombatTech = bravo ghost role combat technician

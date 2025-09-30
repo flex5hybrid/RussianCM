@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorTrijentChaplain-name = survivor trijent chaplain spawn point
-ent-RMCGearSurvivorPresetTrijentChaplain-name = trijent chaplain preset
+ent-RMCGearSurvivorPresetTrijentChaplain = trijent chaplain preset
+ent-RMCSpawnPointSurvivorTrijentChaplain = survivor trijent chaplain spawn point

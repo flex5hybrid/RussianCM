@@ -1,1 +1,1 @@
-ent-RMCGrassDesert-name = desert grass
+ent-RMCGrassDesert = desert grass

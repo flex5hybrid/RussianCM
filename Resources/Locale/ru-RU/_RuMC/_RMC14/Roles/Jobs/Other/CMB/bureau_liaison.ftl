@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidICBLiaison-name = interstellar commerce bureau liaison ghost role
+ent-RMCRandomHumanoidICBLiaison = interstellar commerce bureau liaison ghost role

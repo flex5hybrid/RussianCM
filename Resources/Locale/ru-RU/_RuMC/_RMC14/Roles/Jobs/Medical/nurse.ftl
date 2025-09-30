@@ -1,1 +1,1 @@
-ent-CMSpawnPointNurse-name = nurse spawn point
+ent-CMSpawnPointNurse = nurse spawn point

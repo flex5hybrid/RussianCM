@@ -1,1 +1,1 @@
-ent-CMSpawnPointMessTech-name = mess tech spawn point
+ent-CMSpawnPointMessTech = mess tech spawn point

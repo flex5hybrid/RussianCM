@@ -1,1 +1,1 @@
-ent-CMMobArachnid-name = Urist C.M McWeb
+ent-CMMobArachnid = Урист Маквеб

@@ -1,2 +1,2 @@
-ent-RMCIDCardProvostResponder-name = provost responder ID card
-ent-RMCIDCardProvostResponder-desc = Issued to members of the Provost Marshal Office.
+ent-RMCIDCardProvostResponder = provost responder ID card
+  .desc = Issued to members of the Provost Marshal Office.

@@ -1,6 +1,6 @@
-ent-RMCWeaponSMGP90-name = FN P90 submachinegun
-ent-RMCWeaponSMGP90-desc = The FN P90 submachine gun. An archaic design, but still widely used by corporate and mercenary groups, sometimes seen in the hands of civilian populations. This weapon only accepts 5.7×28mm rounds.
-ent-RMCMagazineSMGP90-name = FN P90 magazine (5.7×28mm)
-ent-RMCMagazineSMGP90-desc = A 5.7×28mm magazine for the FN P90.
-ent-RMCCartridge57x28mm-name = cartridge (57×28mm SMG)
-ent-RMCCartridge57x28mm-desc = A 5.7×28mm magazine for the FN P90.
+ent-RMCCartridge57x28mm = патрон (57×28мм ПП)
+  .desc = Магазин 5.7×28мм для FN P90.
+ent-RMCMagazineSMGP90 = магазин FN P90 (5.7×28мм)
+  .desc = Магазин 5.7×28мм для FN P90.
+ent-RMCWeaponSMGP90 = пистолет-пулемёт FN P90
+  .desc = Пистолет-пулемёт FN P90. Архаичная конструкция, но всё ещё широко используемая корпоративными и наёмническими группами, иногда встречается у гражданского населения. Это оружие принимает только патроны 5.7×28мм.

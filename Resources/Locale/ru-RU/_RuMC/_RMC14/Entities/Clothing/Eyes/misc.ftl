@@ -1,1 +1,1 @@
-ent-RMCEyepatchWhite-name = eyepatch
+ent-RMCEyepatchWhite = наглазник

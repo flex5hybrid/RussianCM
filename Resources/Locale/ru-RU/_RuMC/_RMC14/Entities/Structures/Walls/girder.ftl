@@ -1,3 +1,3 @@
-ent-CMGirder-name = girder
-ent-CMGirderReinforced-name = reinforced girder
-ent-RMCGirderDisplaced-name = displaced
+ent-RMCGirderDisplaced = displaced
+ent-CMGirderReinforced = reinforced girder
+ent-CMGirder = girder

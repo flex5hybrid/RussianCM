@@ -1,1 +1,1 @@
-ent-RMCSpawnZombifiedColonist-name = zombie spawner
+ent-RMCSpawnZombifiedColonist = зомби спавнер

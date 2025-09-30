@@ -1,1 +1,1 @@
-ent-RMCSpawnerRandomFolder-name = random folder spawner
+ent-RMCSpawnerRandomFolder = random folder spawner

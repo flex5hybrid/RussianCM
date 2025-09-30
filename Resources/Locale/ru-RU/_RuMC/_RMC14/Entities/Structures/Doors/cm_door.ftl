@@ -1,2 +1,2 @@
-ent-RMCBaseDoorInvincible-name = door
-ent-CMBaseDoor-name = door
+ent-CMBaseDoor = door
+ent-RMCBaseDoorInvincible = door

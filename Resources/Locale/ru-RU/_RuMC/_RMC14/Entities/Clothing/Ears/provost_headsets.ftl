@@ -1,1 +1,1 @@
-ent-RMCHeadsetProvost-name = UNMC provost headset
+ent-RMCHeadsetProvost = гарнитура провостов КМП

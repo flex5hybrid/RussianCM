@@ -1,2 +1,2 @@
-ent-CMSpawnPointCorrespondent-name = correspondent spawn point
-ent-CMGuidebookRoleCorrespondent-name = Correspondent
+ent-CMGuidebookRoleCorrespondent = Correspondent
+ent-CMSpawnPointCorrespondent = correspondent spawn point

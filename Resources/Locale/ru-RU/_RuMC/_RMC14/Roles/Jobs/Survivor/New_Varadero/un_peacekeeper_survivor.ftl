@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorUNPeacekeeper-name = survivor un peacekeeper spawn point
-ent-RMCGearSurvivorPresetUNPeacekeeper-name = un peacekeeper colonist preset
+ent-RMCGearSurvivorPresetUNPeacekeeper = un peacekeeper colonist preset
+ent-RMCSpawnPointSurvivorUNPeacekeeper = survivor un peacekeeper spawn point

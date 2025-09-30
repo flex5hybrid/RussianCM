@@ -1,1 +1,1 @@
-ent-RMCSpawnPointCLFStandardPVE-name = clf standard spawn point
+ent-RMCSpawnPointCLFStandardPVE = clf standard spawn point

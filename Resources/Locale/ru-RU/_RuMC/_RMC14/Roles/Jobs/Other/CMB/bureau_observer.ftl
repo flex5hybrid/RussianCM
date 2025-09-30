@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidBureauObserver-name = bureau ghost role interstellar sapient-life rights observer
+ent-RMCRandomHumanoidBureauObserver = bureau ghost role interstellar sapient-life rights observer

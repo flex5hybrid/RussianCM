@@ -1,2 +1,2 @@
-ent-RMCGeneralFormalCloak-name = General's formal cloak
-ent-RMCGeneralFormalCloak-desc = A lavish cloak and decorated only worn for special occasions.
+ent-RMCGeneralFormalCloak = парадный плащ генерала
+  .desc = Роскошный плащ с украшениями, носится только по особым случаям.

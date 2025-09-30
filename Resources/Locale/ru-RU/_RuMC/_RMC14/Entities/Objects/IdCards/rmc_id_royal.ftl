@@ -1,1 +1,1 @@
-ent-RMCIDRoyalMarines-name = royal marine dogtags
+ent-RMCIDRoyalMarines = royal marine dogtags

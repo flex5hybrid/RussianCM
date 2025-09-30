@@ -1,1 +1,1 @@
-ent-RMCSpawnPointFORECONPVERadioTelephoneOperator-name = forecon rto spawn point
+ent-RMCSpawnPointFORECONPVERadioTelephoneOperator = forecon rto spawn point

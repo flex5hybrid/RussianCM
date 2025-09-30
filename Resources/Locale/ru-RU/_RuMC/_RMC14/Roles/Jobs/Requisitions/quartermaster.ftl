@@ -1,3 +1,3 @@
-ent-CMSpawnPointQuartermaster-name = quartermaster spawn point
-ent-RMCGuidebookRoleQM-name = The QM
-ent-RMCGuidebookRoleQM-desc = The Quartermaster.
+ent-RMCGuidebookRoleQM = The QM
+  .desc = The Quartermaster.
+ent-CMSpawnPointQuartermaster = quartermaster spawn point

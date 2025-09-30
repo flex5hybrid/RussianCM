@@ -1,1 +1,1 @@
-ent-RMCMapInsertBase-name = Map Insert Base
+ent-RMCMapInsertBase = Map Insert Base

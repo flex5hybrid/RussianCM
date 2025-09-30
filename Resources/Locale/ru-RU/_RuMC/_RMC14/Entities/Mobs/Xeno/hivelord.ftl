@@ -1,2 +1,2 @@
-ent-CMXenoHivelordBase-name = Hivelord
-ent-CMXenoHivelordBase-desc = A builder of really big hives.
+ent-CMXenoHivelordBase = Повелитель улья
+  .desc = Строитель действительно больших ульев.

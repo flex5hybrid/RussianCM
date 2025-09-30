@@ -1,2 +1,2 @@
-ent-CMXenoDroneBase-name = Drone
-ent-CMXenoDroneBase-desc = An alien drone.
+ent-CMXenoDroneBase = Дрон
+  .desc = Инопланетный дрон.

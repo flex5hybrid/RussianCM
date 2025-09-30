@@ -1,4 +1,4 @@
-ent-ColMarTechDropshipCrewEquipment-name = ColMarTech Dropship Crew Equipment Rack
-ent-ColMarTechDropshipCrewEquipment-desc = An automated equipment vendor for Dropship Crew
-ent-ColMarTechDropshipCrewWeapon-name = ColMarTech Dropship Crew Weapon Rack
-ent-ColMarTechDropshipCrewWeapon-desc = An automated combat equipment vendor for Dropship Crew
+ent-ColMarTechDropshipCrewWeapon = ColMarTech Dropship Crew Weapon Rack
+  .desc = An automated combat equipment vendor for Dropship Crew
+ent-ColMarTechDropshipCrewEquipment = ColMarTech Dropship Crew Equipment Rack
+  .desc = An automated equipment vendor for Dropship Crew

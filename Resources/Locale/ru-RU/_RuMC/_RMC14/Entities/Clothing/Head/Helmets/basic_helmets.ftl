@@ -1,1 +1,1 @@
-ent-RMCHelmetBase-name = helmet
+ent-RMCHelmetBase = шлем

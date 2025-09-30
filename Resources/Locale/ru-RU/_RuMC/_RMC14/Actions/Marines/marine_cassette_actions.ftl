@@ -1,6 +1,6 @@
-ent-RMCActionCassettePlayPause-name = Play/Pause
-ent-RMCActionCassettePlayPause-desc = Starts or stops playing music.
-ent-RMCActionCassetteNext-name = Next song
-ent-RMCActionCassetteNext-desc = Moves to the next track.
-ent-RMCActionCassetteRestart-name = Restart song
-ent-RMCActionCassetteRestart-desc = Restarts the current track.
+ent-RMCActionCassetteRestart = Перезапустить трек
+  .desc = Перезапускает текущий трек.
+ent-RMCActionCassetteNext = Следующий трек
+  .desc = Переходит к следующему треку.
+ent-RMCActionCassettePlayPause = Воспроизведение/Пауза
+  .desc = Начинает или останавливает воспроизведение музыки.

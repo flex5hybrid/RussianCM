@@ -1,4 +1,4 @@
-ent-RMCWeaponFlamerImprovised-name = improvised flamethrower
-ent-RMCWeaponFlamerImprovised-desc = A custom made incinerator, made from repurposed welding and piping equipment strapped onto a butchered m16.
-ent-RMCTankFlamerImprovised-name = improvised flamer tank
-ent-RMCTankFlamerImprovised-desc = A repurposed tank from heavy welding equipment, holding a flammable mix similar to napalm.
+ent-RMCTankFlamerImprovised = самодельный бак для огнемёта
+  .desc = Переделанный бак от тяжёлого сварочного оборудования, содержащий горючую смесь, похожую на напалм.
+ent-RMCWeaponFlamerImprovised = самодельный огнемёт
+  .desc = Кустарный огнемёт, собранный из переделанного сварочного и трубного оборудования, прикреплённого к разобранной M16.

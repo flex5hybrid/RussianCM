@@ -1,1 +1,1 @@
-ent-CMSpawnPointHospitalCorpsman-name = hospital corpsman spawn point
+ent-CMSpawnPointHospitalCorpsman = hospital corpsman spawn point

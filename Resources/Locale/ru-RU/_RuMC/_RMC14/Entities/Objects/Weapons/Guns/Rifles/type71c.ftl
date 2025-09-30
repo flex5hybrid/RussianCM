@@ -1,2 +1,2 @@
-ent-RMCWeaponRifleType71C-name = Type 71C assault carbine
-ent-RMCWeaponRifleType71C-desc = A carbine variant of the Type 71, easier to handle at the cost of lesser damage, but negative soldier reviews have shifted it out of active use, given only to reserves or troops not expected to face much combat.
+ent-RMCWeaponRifleType71C = Штурмовой карабин Тип 71C
+  .desc = Вариант карабина Типа 71, более удобный в обращении за счет меньшего урона, но негативные отзывы солдат вытеснили его из активного использования, и теперь он выдается только резервистам или войскам, не ожидающим активных боевых действий.

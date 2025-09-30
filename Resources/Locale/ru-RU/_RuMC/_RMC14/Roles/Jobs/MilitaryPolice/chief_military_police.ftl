@@ -1,3 +1,3 @@
-ent-CMSpawnPointChiefMP-name = chief mp spawn point
-ent-RMCGuidebookRoleCMP-name = The Chief MP
-ent-RMCGuidebookRoleCMP-desc = The Chief of Military Police.
+ent-RMCGuidebookRoleCMP = Начальник военной полиции
+  .desc = Начальник военной полиции
+ent-CMSpawnPointChiefMP = chief mp spawn point

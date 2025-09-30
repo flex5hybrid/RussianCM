@@ -1,2 +1,2 @@
-ent-RMCSurgicalTrayEmpty-name = surgical tray
-ent-RMCSurgicalTray-name = surgical tray
+ent-RMCSurgicalTray = хирургический лоток
+ent-RMCSurgicalTrayEmpty = хирургический лоток

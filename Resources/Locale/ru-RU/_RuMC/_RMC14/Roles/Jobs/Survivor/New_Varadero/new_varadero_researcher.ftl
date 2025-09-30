@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorNewVaraderoResearcher-name = survivor new varadero researcher spawn point
+ent-RMCSpawnPointSurvivorNewVaraderoResearcher = survivor new varadero researcher spawn point

@@ -1,3 +1,3 @@
-ent-RMCSpawnPointSurvivorEngineer-name = survivor engineer spawn point
-ent-RMCSurvivorPresetEngineer-name = engineer colonist preset
-ent-RMCRandomHumanoidSurvivorEngineer-name = engineer colonist ghost role
+ent-RMCRandomHumanoidSurvivorEngineer = engineer colonist ghost role
+ent-RMCSurvivorPresetEngineer = engineer colonist preset
+ent-RMCSpawnPointSurvivorEngineer = survivor engineer spawn point

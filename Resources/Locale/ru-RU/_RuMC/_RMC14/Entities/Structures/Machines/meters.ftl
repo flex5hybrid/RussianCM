@@ -1,1 +1,1 @@
-ent-RMCWallMeterBase-name = meter
+ent-RMCWallMeterBase = meter

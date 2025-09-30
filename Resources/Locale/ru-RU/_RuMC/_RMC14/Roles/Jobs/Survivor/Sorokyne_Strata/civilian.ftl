@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorSoroCivilian-name = sorokyne civilian spawn point
-ent-RMCGearSurvivorPresetSoroCivilian-name = sorokyne civilian preset
+ent-RMCGearSurvivorPresetSoroCivilian = sorokyne civilian preset
+ent-RMCSpawnPointSurvivorSoroCivilian = sorokyne civilian spawn point

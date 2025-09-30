@@ -1,2 +1,2 @@
-ent-CMFireExtinguisher-name = fire extinguisher
-ent-CMFireExtinguisher-desc = A traditional red fire extinguisher.
+ent-CMFireExtinguisher = огнетушитель
+  .desc = Традиционный красный огнетушитель.

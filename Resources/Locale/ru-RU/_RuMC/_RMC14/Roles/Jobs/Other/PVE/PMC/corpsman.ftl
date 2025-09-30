@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPMCCorpsmanPVE-name = weya pmc medic spawn point
+ent-RMCSpawnPointPMCCorpsmanPVE = weya pmc medic spawn point

@@ -1,3 +1,3 @@
-ent-CMIDCardChiefMP-name = chief MP ID card
-ent-CMIDCardMilitaryWarden-name = warden ID card
-ent-CMIDCardMilitaryPolice-name = military police ID card
+ent-CMIDCardMilitaryPolice = удостоверение военного полицейского
+ent-CMIDCardMilitaryWarden = удостоверение смотрителя
+ent-CMIDCardChiefMP = удостоверение главного военного полицейского

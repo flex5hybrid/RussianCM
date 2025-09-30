@@ -1,1 +1,1 @@
-ent-RMCMapInsertSorokyneMedbay-name = CLF Camp
+ent-RMCMapInsertSorokyneMedbay = Лагерь выживших

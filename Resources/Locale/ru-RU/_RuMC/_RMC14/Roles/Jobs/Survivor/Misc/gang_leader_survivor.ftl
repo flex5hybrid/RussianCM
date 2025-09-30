@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorGangLeader-name = survivor gang leader spawn point
-ent-RMCGearSurvivorPresetGangLeader-name = gang leader survivor preset
+ent-RMCGearSurvivorPresetGangLeader = gang leader survivor preset
+ent-RMCSpawnPointSurvivorGangLeader = survivor gang leader spawn point

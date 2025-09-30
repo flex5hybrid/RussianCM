@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorHybrisaXenoarchaeologist-name = xenoarchaeologist spawn point
-ent-RMCGearSurvivorPresetHybrisaXenoarchaeologist-name = xenoarchaeologist preset
+ent-RMCGearSurvivorPresetHybrisaXenoarchaeologist = xenoarchaeologist preset
+ent-RMCSpawnPointSurvivorHybrisaXenoarchaeologist = xenoarchaeologist spawn point

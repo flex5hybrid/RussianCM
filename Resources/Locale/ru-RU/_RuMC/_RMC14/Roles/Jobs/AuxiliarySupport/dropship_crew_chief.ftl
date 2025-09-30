@@ -1,1 +1,1 @@
-ent-CMSpawnPointDCC-name = dropship crew chief spawn point
+ent-CMSpawnPointDCC = dropship crew chief spawn point

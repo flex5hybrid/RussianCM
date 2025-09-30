@@ -1,1 +1,1 @@
-ent-RMCSpawnPointTSEPAInspector-name = tsepa inspector spawn point
+ent-RMCSpawnPointTSEPAInspector = tsepa inspector spawn point

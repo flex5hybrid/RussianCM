@@ -1,3 +1,3 @@
-ent-CMSpawnPointStaffOfficer-name = staff officer spawn point
-ent-RMCGuidebookRoleSO-name = A Staff Officer
-ent-RMCGuidebookRoleSO-desc = A Staff Officer.
+ent-RMCGuidebookRoleSO = Офицер штаба
+  .desc = Офицер штаба
+ent-CMSpawnPointStaffOfficer = staff officer spawn point

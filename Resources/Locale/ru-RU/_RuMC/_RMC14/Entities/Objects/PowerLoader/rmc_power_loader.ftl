@@ -1,2 +1,2 @@
-ent-RMCMechPowerLoader-name = power loader
-ent-RMCMechPowerLoader-desc = An old but trusted design used in warehouses, constructions and military ships everywhere.
+ent-RMCMechPowerLoader = погрузчик
+  .desc = Старая, но проверенная конструкция, используемая на складах, стройках и военных кораблях повсеместно.

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSPPCorpsmanPVE-name = spp corpsman spawn point
+ent-RMCSpawnPointSPPCorpsmanPVE = spp corpsman spawn point

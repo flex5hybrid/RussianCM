@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidBureauMarshal-name = bureau ghost role marshal
+ent-RMCRandomHumanoidBureauMarshal = bureau ghost role marshal

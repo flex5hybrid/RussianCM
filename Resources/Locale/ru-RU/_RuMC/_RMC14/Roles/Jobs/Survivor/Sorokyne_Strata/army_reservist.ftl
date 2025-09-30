@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorArmyReservist-name = army reservist spawn point
-ent-RMCGearSurvivorPresetArmyReservist-name = people's armed police officer preset
+ent-RMCGearSurvivorPresetArmyReservist = people's armed police officer preset
+ent-RMCSpawnPointSurvivorArmyReservist = army reservist spawn point

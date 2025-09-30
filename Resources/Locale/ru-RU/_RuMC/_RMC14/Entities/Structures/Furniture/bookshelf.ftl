@@ -1,3 +1,3 @@
-ent-RMCBookcase-name = bookcase
-ent-RMCBookcaseMedical-name = medical manuals bookcase
-ent-RMCBookcaseEngineering-name = engineering manuals bookcase
+ent-RMCBookcaseEngineering = engineering manuals bookcase
+ent-RMCBookcaseMedical = medical manuals bookcase
+ent-RMCBookcase = bookcase

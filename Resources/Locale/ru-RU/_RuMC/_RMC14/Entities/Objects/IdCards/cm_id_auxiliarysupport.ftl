@@ -1,5 +1,5 @@
-ent-CMIDCardASO-name = auxiliary support officer ID card
-ent-CMIDCardPilotDropship-name = dropship pilot's ID card
-ent-CMIDCardPilotGunship-name = gunship pilot's ID card
-ent-CMIDCardDCC-name = dropship crew chief's ID card
-ent-CMIDCardIntelOfficer-name = intel officer's ID card
+ent-CMIDCardIntelOfficer = удостоверение офицера разведки
+ent-CMIDCardDCC = удостоверение старшины экипажа дропшипа
+ent-CMIDCardPilotGunship = удостоверение пилота ганшипа
+ent-CMIDCardPilotDropship = удостоверение пилота дропшипа
+ent-CMIDCardASO = удостоверение офицера вспомогательной поддержки

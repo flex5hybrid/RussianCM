@@ -1,2 +1,2 @@
-ent-RMCBackpackFlamer-name = UNMC pyrotechnician G4-1 fueltank
-ent-RMCBackpackFlamer-desc = A much older-generation back rig that holds fuel in two tanks. A small regulator sits between them. Has a few straps for holding up to three of the actual flamer tanks you'll be refilling.
+ent-RMCBackpackFlamer = топливный бак G4-1 пиротехника КОАН
+  .desc = Ранцевая система старого поколения, в которой топливо хранится в двух баках. Между ними расположен небольшой регулятор. Имеет несколько ремней для крепления до трёх основных топливных баков огнемёта, которые вы будете заправлять.

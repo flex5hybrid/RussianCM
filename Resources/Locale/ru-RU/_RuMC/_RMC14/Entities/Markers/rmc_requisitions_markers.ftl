@@ -1,1 +1,1 @@
-ent-RMCRequisitionsChairMarker-name = requisitions chair marker
+ent-RMCRequisitionsChairMarker = requisitions chair marker

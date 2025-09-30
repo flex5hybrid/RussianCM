@@ -1,2 +1,2 @@
-ent-CMRadioHandheld-name = marine radiophone
-ent-CMRadioHandheld-desc = Also known as a Walkie-Talkie, this device allows for long range communication when telecommunications are down.
+ent-CMRadioHandheld = армейская радиотрубка
+  .desc = Также известна как «Walkie-Talkie». Это устройство обеспечивает дальнюю связь, когда телекоммуникации недоступны.

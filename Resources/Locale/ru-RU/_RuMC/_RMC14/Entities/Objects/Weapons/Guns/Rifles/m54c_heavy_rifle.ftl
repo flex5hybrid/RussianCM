@@ -1,7 +1,7 @@
-ent-RMCWeaponRifleM54CE2-name = M54CE2 heavy assault rifle
-ent-RMCWeaponRifleM54CE2-desc = A large squad support weapon capable of laying down sustained suppressing fire from a mounted position. While unstable and less accurate, it can be lugged and shot with two hands.
-ent-CMMagazineRifleM54CE2-name = M54CE2 magazine (10x24mm)
-ent-CMMagazineRifleM54CE2HT-name = M54CE2 HT magazine (10x24mm)
-ent-CMCartridgeRifle10x24mmHT-name = cartridge (10x24mm)
-ent-CMCartridgeRifle10x24mmHT-desc = A 10x24mm HT cartridge. Fits in 10x24mm holo targeting magazines.
-ent-CMMagazineRifleM54CE2AP-name = M54CE2 AP magazine (10x24mm)
+ent-CMMagazineRifleM54CE2AP = магазин M54CE2 БО (10x24мм)
+ent-CMCartridgeRifle10x24mmHT = патрон (10x24мм)
+  .desc = Патрон 10x24мм ГН. Подходит для магазинов 10x24мм с голографическим наведением.
+ent-CMMagazineRifleM54CE2HT = магазин M54CE2 ГН (10x24мм)
+ent-CMMagazineRifleM54CE2 = магазин M54CE2 (10x24мм)
+ent-RMCWeaponRifleM54CE2 = тяжёлая штурмовая винтовка M54CE2
+  .desc = Крупное оружие поддержки отделения, способное вести длительный подавляющий огонь с установленной позиции. Хотя менее стабильна и точна, её можно таскать и стрелять из неё двумя руками.

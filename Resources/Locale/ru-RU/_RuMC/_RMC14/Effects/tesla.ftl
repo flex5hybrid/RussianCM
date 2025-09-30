@@ -1,1 +1,1 @@
-ent-EffectTeslaBeam-name = electric beam
+ent-EffectTeslaBeam = электрический пучок

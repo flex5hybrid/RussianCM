@@ -1,1 +1,1 @@
-ent-RMCGearSurvivorPresetHybrisaEngineer-name = hybrisa engineer colonist preset
+ent-RMCGearSurvivorPresetHybrisaEngineer = hybrisa engineer colonist preset

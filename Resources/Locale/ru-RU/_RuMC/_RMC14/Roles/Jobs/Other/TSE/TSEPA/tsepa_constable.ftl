@@ -1,1 +1,1 @@
-ent-RMCSpawnPointTSEPAConstable-name = tsepa constable spawn point
+ent-RMCSpawnPointTSEPAConstable = tsepa constable spawn point

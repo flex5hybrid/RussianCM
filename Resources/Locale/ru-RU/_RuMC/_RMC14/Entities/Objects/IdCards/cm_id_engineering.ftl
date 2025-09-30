@@ -1,3 +1,3 @@
-ent-CMIDCardChiefEngineer-name = chief engineer ID card
-ent-CMIDCardOrdnanceTech-name = ordnance tech's ID card
-ent-CMIDCardMaintTech-name = maintenance tech's ID card
+ent-CMIDCardMaintTech = удостоверение техника по обслуживанию
+ent-CMIDCardOrdnanceTech = удостоверение техника по вооружению
+ent-CMIDCardChiefEngineer = удостоверение старшего инженера

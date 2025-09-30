@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorKutjevoChaplain-name = survivor kutjevo chaplain spawn point
-ent-RMCGearSurvivorPresetKutjevoChaplain-name = kutjevo chaplain preset
+ent-RMCGearSurvivorPresetKutjevoChaplain = kutjevo chaplain preset
+ent-RMCSpawnPointSurvivorKutjevoChaplain = survivor kutjevo chaplain spawn point

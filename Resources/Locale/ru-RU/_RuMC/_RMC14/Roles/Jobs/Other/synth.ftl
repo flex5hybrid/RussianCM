@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSynth-name = synthetic spawn point
+ent-RMCSpawnPointSynth = synthetic spawn point

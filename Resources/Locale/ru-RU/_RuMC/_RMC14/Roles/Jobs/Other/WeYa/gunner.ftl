@@ -1,2 +1,2 @@
-ent-RMCRandomHumanoidPMCGunner-name = weya pmc ghost role gunner
-ent-RMCSpawnPointPMCGunner-name = weya pmc gunner spawn point
+ent-RMCSpawnPointPMCGunner = weya pmc gunner spawn point
+ent-RMCRandomHumanoidPMCGunner = weya pmc ghost role gunner

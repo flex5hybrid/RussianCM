@@ -1,3 +1,3 @@
-ent-RMCResearchThingies-name = Research thingies
-ent-RMCAlienTank-name = cryo tank
-ent-RMCAlienTank-desc = There is something big inside...
+ent-RMCAlienTank = cryo tank
+  .desc = There is something big inside...
+ent-RMCResearchThingies = Research thingies

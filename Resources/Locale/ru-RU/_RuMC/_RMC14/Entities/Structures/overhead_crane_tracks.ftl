@@ -1,2 +1,2 @@
-ent-RMCOverheadCraneTracks-name = cargo crane track
-ent-RMCOverheadCraneTracks-desc = A track for a cargo crane to move along.
+ent-RMCOverheadCraneTracks = cargo crane track
+  .desc = A track for a cargo crane to move along.

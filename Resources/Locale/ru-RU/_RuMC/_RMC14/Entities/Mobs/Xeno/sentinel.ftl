@@ -1,2 +1,2 @@
-ent-CMXenoSentinel-name = Sentinel
-ent-CMXenoSentinel-desc = A slithery, spitting kind of alien.
+ent-CMXenoSentinel = Страж
+  .desc = Скользкий, плюющийся пришелец.

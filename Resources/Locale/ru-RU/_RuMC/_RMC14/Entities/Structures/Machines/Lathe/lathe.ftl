@@ -1,2 +1,2 @@
-ent-CMAutolathe-name = autolathe
-ent-CMAutolathe-desc = It produces items using metal and glass.
+ent-CMAutolathe = autolathe
+  .desc = It produces items using metal and glass.

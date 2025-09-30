@@ -1,4 +1,4 @@
-ent-RMCUtilityBase-name = utility accessory
-ent-RMCUtilityBase-desc = An abstract utility accessory.
-ent-RMCStethoscope-name = stethoscope
-ent-RMCStethoscope-desc = An outdated, but still useful medical apparatus for listening to the sounds of the human body. It also makes you look like you know what you're doing.
+ent-RMCStethoscope = стетоскоп
+  .desc = Устаревший, но всё ещё полезный медицинский аппарат для прослушивания звуков человеческого тела. Также создаёт видимость, что вы знаете, что делаете.
+ent-RMCUtilityBase = утилитарный аксессуар
+  .desc = Абстрактный утилитарный аксессуар.

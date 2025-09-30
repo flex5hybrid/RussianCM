@@ -1,2 +1,2 @@
-ent-RMCBasePropCasing-name = spent casing
-ent-RMCBasePropCasing-desc = Empty and useless now.
+ent-RMCBasePropCasing = стреляная гильза
+  .desc = Пустая и теперь бесполезная.

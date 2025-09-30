@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidCLFEngineer-name = clf ghost role engineer
+ent-RMCRandomHumanoidCLFEngineer = clf ghost role engineer

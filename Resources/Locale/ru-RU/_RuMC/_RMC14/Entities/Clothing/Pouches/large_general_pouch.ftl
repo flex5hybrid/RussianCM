@@ -1,2 +1,2 @@
-ent-RMCPouchGeneralLarge-name = large general pouch
-ent-RMCPouchGeneralLarge-desc = A general-purpose pouch used to carry more differently sized items.
+ent-RMCPouchGeneralLarge = большой универсальный подсумок
+  .desc = Универсальный подсумок, используемый для переноски большего количества предметов разного размера.

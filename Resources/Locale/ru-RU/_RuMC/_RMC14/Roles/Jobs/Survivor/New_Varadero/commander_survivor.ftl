@@ -1,1 +1,1 @@
-ent-CMSpawnPointSurvivorCommanderNewVardero-name = new varadero commanding officer spawn point
+ent-CMSpawnPointSurvivorCommanderNewVardero = new varadero commanding officer spawn point

@@ -1,2 +1,2 @@
-ent-RMCSyringeLethal-name = lethal injection syringe
-ent-RMCSyringeLethal-desc = A syringe used for lethal injections.
+ent-RMCSyringeLethal = шприц для смертельной инъекции
+  .desc = Шприц, используемый для смертельных инъекций.

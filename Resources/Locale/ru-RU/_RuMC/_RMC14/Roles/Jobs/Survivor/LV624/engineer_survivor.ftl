@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorLV624Engineer-name = survivor icb spawn point
-ent-RMCGearSurvivorPresetLV624Engineer-name = LV624Engineer colonist preset
+ent-RMCGearSurvivorPresetLV624Engineer = LV624Engineer colonist preset
+ent-RMCSpawnPointSurvivorLV624Engineer = survivor icb spawn point

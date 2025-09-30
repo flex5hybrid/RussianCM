@@ -1,2 +1,2 @@
-ent-WeaponShotgunM42A1-name = M42A1 pump shotgun
-ent-WeaponShotgunM42A1-desc = An Aegis Battlefield Armaments classic design, the M42A1 combines close-range firepower with long term reliability. Needs to be pumped.
+ent-WeaponShotgunM42A1 = помповый дробовик M42A1
+  .desc = Классическая конструкция от Aegis Battlefield Armaments, M42A1 сочетает в себе огневую мощь ближнего действия с долговременной надёжностью. Требует перезарядки помповым механизмом.
