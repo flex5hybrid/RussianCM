@@ -1,0 +1,10 @@
+ent-RMCCrateClothingLargePouches-name = large pouches crate (2x Pistol, Magazine, General)
+ent-RMCCrateClothingMedicalPouches-name = medical pouches crate (1x firstaid, medical, syringe, medkit)
+ent-RMCCrateClothingWebbing-name = webbing crate (x4)
+ent-RMCCrateClothingWebbingBlack-name = black webbing crate (x4)
+ent-RMCCrateClothingWebbingVest-name = brown and black webbing crate (x2 each)
+ent-RMCCrateClothingWebbingKnife-name = knife vest crate (x3)
+ent-RMCCrateClothingWebbingHolster-name = shoulder holster crate (x4)
+ent-RMCCrateClothingDropPouch-name = drop pouch crate (x4)
+ent-RMCCrateClothingDropPouchBlack-name = black drop pouch crate (x4)
+ent-RMCCrateClothingOfficerOutfit-name = officer outfit crate

@@ -1,0 +1,10 @@
+ent-CMMatchBook-name = lucky sloths matchbook
+ent-CMMatchBook-desc = A small book of cheap paper matches. Good luck getting them to light. Made by Lucky Sloths, but you'll be anything but lucky when you burn your hand trying to light a match on this.
+ent-CMBrownMatchBook-name = brown matchbook
+ent-CMBrownMatchBook-desc = A small book of cheap paper matches. Good luck getting them to light. Made with generic brown paper.
+ent-CMExecutiveSelectMatchbook-name = executive select matchbook
+ent-CMExecutiveSelectMatchbook-desc = A small book of expensive paper matches. These ones light almost every time!
+ent-CMElectroMatchbook-name = Electro matchbook
+ent-CMElectroMatchbook-desc = A small book of cheap paper matches. Good luck getting them to light.
+ent-CMExecutiveWEYAMatchbook-name = We-Ya gold matchbook
+ent-CMExecutiveWEYAMatchbook-desc = A small book of expensive paper matches. These ones light almost every time, or so the packaging claims.

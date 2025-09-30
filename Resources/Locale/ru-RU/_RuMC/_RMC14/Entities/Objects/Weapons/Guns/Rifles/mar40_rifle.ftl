@@ -1,0 +1,10 @@
+ent-WeaponRifleMAR40-name = MAR-40 battle rifle
+ent-WeaponRifleMAR40-desc = A cheap, reliable assault rifle chambered in 7.62x39mm. Commonly found in the hands of criminals or mercenaries, or in the hands of the SPP or CLF.
+ent-RMCMagazineRifleMAR40-name = MAR magazine (7.62x39mm)
+ent-RMCMagazineRifleMAR40-desc = A 7.62x39mm magazine for the MAR series of firearms.
+ent-RMCMagazineRifleMAR40Ext-name = MAR extended magazine (7.62x39mm)
+ent-RMCMagazineRifleMAR40Ext-desc = A 7.62x39mm MAR magazine, this one carries more rounds than the average magazine.
+ent-RMCMagazineMar50LMG-name = MAR drum magazine (7.62x39mm)
+ent-RMCMagazineMar50LMG-desc = A 7.62x39mm drum magazine for the MAR-50 LMG.
+ent-RMCCartridgeRifleMAR40-name = Cartridge (7.62x39mm)
+ent-RMCCartridgeRifleMAR40-desc = A 7.62x39mm rifle cartridge

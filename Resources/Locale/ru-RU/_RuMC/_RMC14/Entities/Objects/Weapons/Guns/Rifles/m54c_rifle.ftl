@@ -1,0 +1,16 @@
+ent-RMCWeaponRifleM54C-name = M54C assault rifle MK2
+ent-RMCWeaponRifleM54C-desc = The standard issue rifle of the Marines. Commonly carried by most combat personnel. Uses 10x24mm caseless ammunition.
+ent-RMCWeaponRifleM54CWhite-desc = A M54C Mk2 with a Weston-Yamada logo imprinted on the reciever. Used primarily by Weston-Yamada's corporate security forces, and comes equipped with a drab corproate white paint job.
+ent-CMMagazineRifleM54C-name = M54C magazine (10x24mm)
+ent-CMMagazineRifleM54CAP-name = M54C AP magazine (10x24mm)
+ent-RMCMagazineRifleM54CIncendiary-name = M54C Incendiary magazine (10x24mm)
+ent-RMCMagazineRifleM54CHEAP-name = M54C HEAP magazine (10x24mm)
+ent-CMMagazineRifleM54CExt-name = M54C extended magazine (10x24mm)
+ent-CMCartridgeRifle10x24mm-name = cartridge (10x24mm)
+ent-CMCartridgeRifle10x24mm-desc = A 10x24mm cartridge. Fits in 10x24mm magazines.
+ent-CMCartridgeRifle10x24mmAP-name = AP cartridge (10x24mm)
+ent-CMCartridgeRifle10x24mmAP-desc = An armor piercing 10x24mm cartridge. Fits in 10x24mm AP magazines.
+ent-RMCCartridgeRifle10x24mmIncendiary-name = AP cartridge (10x24mm)
+ent-RMCCartridgeRifle10x24mmIncendiary-desc = An armor piercing 10x24mm cartridge. Fits in 10x24mm AP magazines.
+ent-RMCCartridgeRifle10x24mmHEAP-name = HEAP cartridge (10x24mm)
+ent-RMCCartridgeRifle10x24mmHEAP-desc = An armor piercing 10x24mm cartridge. Fits in 10x24mm HEAP magazines.

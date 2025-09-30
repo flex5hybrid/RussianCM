@@ -1,0 +1,14 @@
+ent-RMCIntelBase-name = intel item
+ent-RMCIntelPaperScrap-name = paper scrap
+ent-RMCIntelPaperScrap-desc = A scrap of paper, you think some of the words might still be readable.
+ent-RMCIntelProgressReport-name = progress report
+ent-RMCIntelProgressReport-desc = A written report from someone for their supervisor about the status of some kind of project.
+ent-RMCIntelFolder-name = intel folder
+ent-RMCIntelFolder-desc = A folder with some documents inside.
+ent-RMCIntelTechnicalManual-name = technical manual
+ent-RMCIntelTechnicalManual-desc = A highly specified technical manual, may be of use to someone in the relevant field.
+ent-RMCTechTreeConsole-name = tech tree console
+ent-RMCTechTreeConsole-desc = A console used to make tech purchases.
+ent-RMCComputerIntel-name = intel computer
+ent-RMCComputerIntel-desc = An UNMC Intel Computer for data cataloguing and distribution.
+ent-RMCIntelTechTree-name = intel tech tree

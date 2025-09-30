@@ -1,0 +1,10 @@
+ent-CMSeatPassenger-name = passenger seat
+ent-CMSeatPassenger-desc = A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids! Fix with welding tool in case of damage.
+ent-CMSeatPilot-name = pilot's chair
+ent-CMSeatPilot-desc = A specially designed chair for pilots to sit in.
+ent-RMCSeatHunter-name = hunter chair
+ent-RMCSeatHunter-desc = An exquisitely crafted chair for a large humanoid hunter.
+ent-RMCSeatWhite-name = passenger seat
+ent-RMCSeatWhite-desc = A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids! Fix with welding tool in case of damage.
+ent-RMCSeatDark-name = passenger seat
+ent-RMCSeatDark-desc = A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids! Fix with welding tool in case of damage.

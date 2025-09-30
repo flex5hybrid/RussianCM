@@ -1,0 +1,17 @@
+ent-WeaponRifleM4SPR-name = M4SPR battle rifle
+ent-WeaponRifleM4SPR-desc = The M4SPR battle rifle is a designated marksman rifle in service with the Marine. Sporting a bullpup configuration, the M4SPR battle rifle is perfect for reconnaissance and fire support teams.
+ent-WeaponRifleM5SPR-name = M5SPR battle rifle
+ent-WeaponRifleM5SPR-desc = The M5SPR battle rifle is a modified version of the M4SPR, able to chamber High Velocity Piercing rounds, and equipped a two-burst configuration.
+ent-CMMagazineRifleM4SPR-name = M4SPR magazine (10x24mm)
+ent-CMMagazineRifleM4SPR-desc = A magazine of standard 10x24mm rounds for use in the M4SPR battle rifle.
+ent-CMMagazineRifleM4SPRAP-name = M4SPR AP magazine (10x24mm)
+ent-CMMagazineRifleM4SPRAP-desc = A magazine of armor-piercing 10x24mm rounds for use in the M4SPR battle rifle.
+ent-CMMagazineRifleM4SPRExt-name = M4SPR extended magazine (10x24mm)
+ent-RMCMagazineRifleM5SPRHVP-name = M5SPR HV-Piercing magazine (10x24mm)
+ent-RMCMagazineRifleM5SPRHVP-desc = A magazine of HV-Piercing 10x24mm rounds for use in the M5SPR battle rifle.
+ent-RMCCartridgeRifleM5SPRHVP-name = cartridge (HV-Piercing)
+ent-RMCCartridgeRifleM5SPRHVP-desc = A high-velocity HV-Piercing cartridge. Fits in M5SPR custom magazines.
+ent-RMCCartridgeRifleM5SPRHVHIP-name = cartridge (HVHI-Piercing)
+ent-RMCCartridgeRifleM5SPRHVHIP-desc = A high-velocity HVHI-Piercing cartridge. Fits in M5SPR custom magazines.
+ent-RMCMagazineRifleM5SPRHVHIP-name = M5SPR HVHI-Piercing magazine (10x24mm)
+ent-RMCMagazineRifleM5SPRHVHIP-desc = A magazine of HVHI-Piercing 10x24mm rounds for use in the M5SPR battle rifle.

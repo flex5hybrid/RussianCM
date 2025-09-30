@@ -1,0 +1,1 @@
+ent-CMClipboard-name = clipboard

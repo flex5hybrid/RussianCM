@@ -1,0 +1,12 @@
+ent-RMCBasePVEEquipmentCase-name = base equipment case
+ent-RMCBasePVEEquipmentCase-desc = A gun case.
+ent-RMCPVECaseM42A2-name = M42A2 shotgun case
+ent-RMCPVECaseM42A2-desc = A heavy case for storing an M42A2 pump-action shotgun, an Armat Battlefield Systems modern take on an all-time classic.
+ent-RMCPVECaseM5SPR-name = M5SPR battle rifle case
+ent-RMCPVECaseM5SPR-desc = A large case for storing an M5SPR, a modified UNMC battle rifle equipped with HV-P Rounds.
+ent-RMCPVECaseSentry-name = UN 571-C Sentry Gun case
+ent-RMCPVECaseSentry-desc = A gun case containing the UA 571-C sentry unit and a spare drum.
+ent-RMCPVECaseFlamerFuel-name = M34 fuel canister case
+ent-RMCPVECaseFlamerFuel-desc = A heavy case containing six fuel canisters for the M34 incinerator unit.
+ent-RMCPVECaseMotionDetector-name = motion detectors case
+ent-RMCPVECaseMotionDetector-desc = A case containing four individual handheld motion detectors.

@@ -1,0 +1,12 @@
+ent-RMCArmorProvost-name = M3 pattern provost armor
+ent-RMCArmorProvost-desc = A standard Provost M3 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
+ent-RMCArmorProvostSenior-name = M3 pattern senior provost armor
+ent-RMCArmorProvostSenior-desc = A more refined Provost M3 Pattern Chestplate for senior officers. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
+ent-RMCArmorProvostMarshal-name = M5 pattern provost marshal armor
+ent-RMCArmorProvostMarshal-desc = A custom fit luxury armor suit for Provost Marshals. Useful for letting your men know who is in charge when taking to the field.
+ent-RMCArmorProvostLight-name = M3 pattern provost light armor
+ent-RMCArmorProvostLight-desc = A lighter Provost M3 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
+ent-RMCArmorProvostFlexi-name = M3 pattern provost flexi-armor
+ent-RMCArmorProvostFlexi-desc = A more refined Provost M3 Pattern Chestplate for senior officers. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
+ent-RMCArmorProvostAgent-name = M3 pattern special agent armor
+ent-RMCArmorProvostAgent-desc = A modified luxury armor, originally meant for a Provost Marshall, modified to use the colors and insignia of the intelligence service.

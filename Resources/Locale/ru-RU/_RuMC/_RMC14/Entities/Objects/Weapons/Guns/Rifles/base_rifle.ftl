@@ -1,0 +1,1 @@
+ent-CMBaseCartridgeRifle-name = cartridge

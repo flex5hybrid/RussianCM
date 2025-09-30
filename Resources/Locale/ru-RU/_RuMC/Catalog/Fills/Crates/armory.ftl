@@ -1,0 +1,16 @@
+ent-CrateArmorySMG-name = SMG crate
+ent-CrateArmorySMG-desc = Contains two SMGs with four mags. Requires Armory access to open.
+ent-CrateArmoryShotgun-name = shotgun crate
+ent-CrateArmoryShotgun-desc = For when the enemy absolutely needs to be replaced with lead. Contains two Enforcer Combat Shotguns, and some standard shotgun shells. Requires Armory access to open.
+ent-CrateTrackingImplants-name = tracking implants
+ent-CrateTrackingImplants-desc = Contains a handful of tracking implanters. Good for prisoners you'd like to release but still keep track of.
+ent-CrateTrainingBombs-name = training bombs
+ent-CrateTrainingBombs-desc = Contains three low-yield training bombs for security to learn defusal and safe ordnance disposal, EOD suit not included. Requires Armory access to open.
+ent-CrateArmoryLaser-name = lasers crate
+ent-CrateArmoryLaser-desc = Contains three standard-issue laser rifles. Requires Armory access to open.
+ent-CrateArmoryPistols-name = pistols crate
+ent-CrateArmoryPistols-desc = Contains two standard NT pistols with four mags. Requires Armory access to open.
+ent-CrateSecurityRiot-name = swat crate
+ent-CrateSecurityRiot-desc = Contains two sets of riot armor, helmets, shields, and enforcers loaded with beanbags. Extra ammo is included. Requires Armory access to open.
+ent-CrateArmoryRifle-name = rifle crate
+ent-CrateArmoryRifle-desc = Contains two high-powered assault rifles with four mags. Requires Armory access to open.

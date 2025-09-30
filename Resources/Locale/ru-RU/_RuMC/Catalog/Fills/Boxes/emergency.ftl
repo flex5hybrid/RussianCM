@@ -1,0 +1,12 @@
+ent-BoxSurvival-name = survival box
+ent-BoxSurvival-desc = It's a box with basic internals inside.
+ent-BoxSurvivalEngineering-name = extended-capacity survival box
+ent-BoxSurvivalEngineering-desc = It's a box with basic internals inside. This one is labelled to contain an extended-capacity tank.
+ent-BoxSurvivalSecurity-name = survival box
+ent-BoxSurvivalSecurity-desc = It's a box with basic internals inside.
+ent-BoxSurvivalMedical-name = survival box
+ent-BoxSurvivalMedical-desc = It's a box with basic internals inside.
+ent-BoxHug-name = box of hugs
+ent-BoxHug-desc = A special box for sensitive people.
+ent-BoxSurvivalSyndicate-name = extended-capacity survival box
+ent-BoxSurvivalSyndicate-desc = It's a box with basic internals inside. This one is labelled to contain an extended-capacity tank.

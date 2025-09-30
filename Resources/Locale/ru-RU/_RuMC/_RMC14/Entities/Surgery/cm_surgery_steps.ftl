@@ -1,0 +1,14 @@
+ent-CMSurgeryStepOpenIncisionScalpel-name = Cut with a scalpel
+ent-CMSurgeryStepClampBleeders-name = Clamp the bleeders
+ent-CMSurgeryStepRetractSkin-name = Retract the skin
+ent-CMSurgeryStepSawBones-name = Saw through bones
+ent-CMSurgeryStepPriseOpenBones-name = Prise the bones open
+ent-CMSurgeryStepCutLarvaRoots-name = Cut larva roots
+ent-CMSurgeryStepRemoveLarva-name = Remove larva
+ent-CMSurgeryStepCloseBones-name = Close bones
+ent-CMSurgeryStepMendRibcage-name = Mend ribcage
+ent-CMSurgeryStepCloseIncision-name = Close incision
+ent-RMCSurgeryCutExoskeleton-name = Cut exoskeleton carapace
+ent-RMCSurgeryOpenExoskeleton-name = Pry exoskeleton open
+ent-RMCSurgerySevereXenoConnections-name = Sever organ connections
+ent-RMCSurgeryRemoveXenoOrgan-name = Remove xenonid organ

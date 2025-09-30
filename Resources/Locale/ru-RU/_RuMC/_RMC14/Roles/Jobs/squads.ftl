@@ -1,0 +1,17 @@
+ent-SquadAlpha-name = Alpha
+ent-SquadBravo-name = Bravo
+ent-SquadCharlie-name = Charlie
+ent-SquadDelta-name = Delta
+ent-SquadFoxtrot-name = Foxtrot
+ent-SquadEcho-name = Echo
+ent-SquadIntel-name = Intel
+ent-SquadSPP-name = SPP
+ent-SquadPMC-name = PMC
+ent-SquadFreelancer-name = Freelancer
+ent-SquadRoyalMarines-name = Royal Marines
+ent-SquadProvost-name = Provost
+ent-SquadFORECON-name = Recon
+ent-SquadSOF-name = SOF
+ent-SquadCLF-name = CLF
+ent-SquadUnassigned-name = Unassigned
+ent-SquadSunRiders-name = Sun Riders

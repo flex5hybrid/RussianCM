@@ -1,0 +1,17 @@
+ent-XenoAcidNormal-name = corrosive acid
+ent-XenoAcidNormal-desc = Burbling corrosive stuff. I wouldn't want to touch it.
+ent-XenoAcidWeak-name = weak corrosive acid
+ent-XenoAcidStrong-name = strong corrosive acid
+ent-XenoAcidSprayWeak-name = weak splatter
+ent-XenoAcidSprayWeak-desc = It burns! It burns, but not as much!
+ent-XenoAcidSprayStrong-name = splatter
+ent-XenoAcidSprayStrong-desc = It burns! It burns like hygiene!
+ent-XenoAcidSprayAcidStacks-name = splatter
+ent-XenoAcidSprayAcidStacks-desc = It burns! It burns like hygiene!
+ent-XenoAcidSprayTrap-name = splatter
+ent-XenoAcidSprayTrap-desc = It burns! It burns like hygiene!
+ent-XenoAcidSprayTrapWeak-name = weak splatter
+ent-XenoAcidSprayTrapWeak-desc = It burns! It burns, but not as much!
+ent-XenoAcidSprayTrapStrong-name = strong splatter
+ent-XenoAcidSprayTrapStrong-desc = It burns a lot!
+ent-XenoAcidExtinguishEffect-desc = It's cold...

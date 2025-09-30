@@ -1,0 +1,11 @@
+ent-FoodMushroomPlump-name = plump-helmet
+ent-FoodMushroomPlump-desc = Plumus Hellmus: Oh, SHUT UP about the BLOODY mushrooms already! MOVE IT, marines!
+ent-FoodPeanut-name = peanut
+ent-FoodWhiteBeet-name = white beet
+ent-FoodWhiteBeet-desc = You can't beat white-beet.
+ent-FoodSunflower-name = sunflower
+ent-FoodSunflower-desc = It's beautiful! A certain person might beat you to death if you trample these.
+ent-FoodGrass-name = bundle of grass
+ent-FoodGrass-desc = Go ahead, touch some grass.
+ent-RMCFoodMango-name = mango
+ent-RMCFoodMango-desc = MANGO MANGO MANGO

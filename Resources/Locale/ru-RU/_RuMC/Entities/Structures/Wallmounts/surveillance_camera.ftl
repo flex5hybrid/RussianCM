@@ -1,0 +1,13 @@
+ent-SurveillanceCameraBase-name = camera
+ent-SurveillanceCameraBase-desc = A surveillance camera. It's watching you. Kinda.
+ent-SurveillanceCameraConstructed-name = camera
+ent-SurveillanceCameraEngineering-name = camera
+ent-SurveillanceCameraSecurity-name = camera
+ent-SurveillanceCameraScience-name = camera
+ent-SurveillanceCameraSupply-name = camera
+ent-SurveillanceCameraCommand-name = camera
+ent-SurveillanceCameraService-name = camera
+ent-SurveillanceCameraMedical-name = camera
+ent-SurveillanceCameraGeneral-name = camera
+ent-SurveillanceCameraAssembly-name = camera
+ent-SurveillanceCameraAssembly-desc = A surveillance camera. Doesn't seem to be watching anybody any time soon. Probably.

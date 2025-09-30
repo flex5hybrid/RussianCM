@@ -1,0 +1,10 @@
+ent-RMCFoodDonutJellyFrosted-name = frosted jelly donut
+ent-RMCFoodDonutJellyFrosted-desc = You jelly?
+ent-RMCFoodDonutJelly-name = jelly donut
+ent-RMCFoodDonutJelly-desc = You jelly?
+ent-RMCFoodCookiePeanutButter-name = peanut butter cookie
+ent-RMCFoodCookiePeanutButter-desc = Soft, chewy, and absolutely delicious!
+ent-RMCFoodPBJSandwich-name = peanut butter and jelly sandwich
+ent-RMCFoodPBJSandwich-desc = A sweet and savory sandwich loved by adults and marines alike!
+ent-RMCFoodOnigiri-name = onigiri
+ent-RMCFoodOnigiri-desc = These donuts are great! Jelly-filled are my favorite! Nothing beats a jelly-filled donut!

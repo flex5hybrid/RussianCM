@@ -1,0 +1,9 @@
+ent-ColMarTechCrewSynthetic-name = ColMarTech Synthetic Equipment Rack
+ent-ColMarTechCrewSynthetic-desc = An automated rack hooked up to a colossal storage of various equipment. Can be accessed only by synthetic units.
+ent-ColMarTechCrewSyntheticColony-name = ColMarTech Synthetic Equipment Rack
+ent-ColMarTechCrewSyntheticGear-name = ColMarTech Synthetic Auxiliary Gear Rack
+ent-ColMarTechCrewSyntheticGear-desc = An automated gear rack hooked up to a colossal storage of various medical and engineering supplies. Can be accessed only by synthetic units.
+ent-WeYaExperimentalToolsVendor-name = We-Ya Experimental Tools Vendor
+ent-WeYaExperimentalToolsVendor-desc = A smaller vendor hooked up to a cache of specially provisioned, experimental tools and equipment provided by the We-Ya Research and Development Division(TM). Handle with care.
+ent-RMCVendorBundleCompactNailgunKit-name = compact nailgun kit
+ent-RMCVendorBundleCompactNailgunKit-desc = Contains a compact nailgun, two magazines and a nailgun holster.

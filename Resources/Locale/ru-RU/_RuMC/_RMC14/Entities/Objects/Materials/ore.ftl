@@ -1,0 +1,9 @@
+ent-RMCCoal-name = carbonaceous rock
+ent-RMCDiamondOre-name = diamonds
+ent-RMCGoldOre-name = native gold ore
+ent-RMCIronOre-name = hematite
+ent-RMCPlasmaOre-name = phoron crystals
+ent-RMCPlatinumOre-name = raw platinum
+ent-RMCSilverOre-name = native silver ore
+ent-RMCUraniumOre-name = pitchblende
+ent-RMCUraniumOre-desc = An ore containing Uranium. Just looking at it makes your head feel fuzzy... it's slightly luminescent.

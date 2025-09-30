@@ -1,0 +1,17 @@
+ent-RMCSmallFloodlight-name = small floodlight
+ent-RMCSmallFloodlight-desc = A small bit of light in the darkness.
+ent-RMCTallFloodlight-name = tall floodlight
+ent-RMCTallFloodlight-desc = A pillar of light in the darkness.
+ent-RMCFloodlightBroken-name = tall broken floodlight
+ent-RMCFloodlightBroken-desc = A pasted on note says 'To fix, unscrew the panel, crowbar out the damaged assembly, weld it fixed, add 2 cable, then close the panel.'
+ent-RMCLZFloodlight-name = landing light
+ent-RMCLZFloodlight-desc = A powerful light usually stationed near landing zones to provide better visibility. This one seems to have been bolted down and is unable to be moved.
+ent-RMCEngineerShipLight-name = circular light
+ent-RMCEngineerShipLight-desc = A huge circular light
+ent-RMCStreetlight-name = colony streetlight
+ent-RMCStreetlightBroken-name = broken colony streetlight
+ent-RMCStreetlightBroken-desc = A pasted on note says 'To fix, unscrew the panel, crowbar out the damaged assembly, weld it fixed, add 2 cable, then close the panel.'
+ent-RMCTrafficLightBase-name = traffic light
+ent-RMCTrafficLightBase-desc = A traffic light.
+ent-RMCTrafficLightBroken-name = broken traffic light
+ent-RMCTrafficLightBroken-desc = A pasted on note says 'To fix, unscrew the panel, crowbar out the damaged assembly, weld it fixed, add 2 cable, then close the panel.'

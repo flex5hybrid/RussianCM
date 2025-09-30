@@ -1,0 +1,10 @@
+ent-RMCActionToggleAmmo-name = Toggle Ammo Type
+ent-RMCActionToggleAmmo-desc = Switch the ammo type fired by this gun.
+ent-RMCActionToggleRecoil-name = Toggle Recoil Compensation
+ent-RMCActionToggleRecoil-desc = Removes all recoil when firing this gun.
+ent-RMCActionToggleAutoFire-name = Toggle Auto Fire
+ent-RMCActionToggleAutoFire-desc = Makes the gun automatically shoot a single shot towards a target every couple seconds.
+ent-RMCActionToggleFarSight-name = Toggle Far Sight
+ent-RMCActionToggleFarSight-desc = Lets you see slightly farther away.
+ent-RMCActionToggleMotionDetector-name = Toggle Motion Detector
+ent-RMCActionToggleMotionDetector-desc = Periodically pings any unknown movement near you.

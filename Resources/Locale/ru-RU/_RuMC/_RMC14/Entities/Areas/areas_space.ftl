@@ -1,0 +1,14 @@
+ent-RMCAreaSpace-name = Space
+ent-RMCAreaAdmin-name = Admin room
+ent-RMCAreaAdminDroppodHolding-name = Admin Supply Drops Droppod
+ent-RMCAreaAdminDroppodLoading-name = Admin Supply Drops Loading
+ent-RMCAreaSpaceHighalt-name = High Altitude
+ent-RMCAreaStart-name = start area
+ent-RMCAreaCentcom-name = abandoned Centcom
+ent-RMCAreaCentcomControl-name = abandoned Centcom Control
+ent-RMCAreaCentcomLiving-name = abandoned Centcom Living Quarters
+ent-RMCAreaTdome-name = abandoned Thunderdome
+ent-RMCAreaTdomeTdome1-name = abandoned Thunderdome (Team 1)
+ent-RMCAreaTdomeTdome2-name = abandoned Thunderdome (Team 2)
+ent-RMCAreaTdomeTdomeadmin-name = abandoned Thunderdome (Admin.)
+ent-RMCAreaTdomeTdomeobserve-name = abandoned Thunderdome (Observer.)

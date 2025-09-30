@@ -1,0 +1,15 @@
+ent-CMFirstAidKit-name = first-aid kit
+ent-CMFirstAidKit-desc = It's an emergency medical kit for those serious boo-boos. With medical training you can fit this in a backpack.
+ent-CMFirstAidKitSurgery-name = basic field surgery kit
+ent-CMFirstAidKitFilled-desc = It's an emergency medical kit containing basic medication and equipment. No training required to use. With medical training you can fit this in a backpack.
+ent-CMFirstAidKitSurgeryFilled-desc = Contains a surgical line, cautery, scalpel, hemostat, retractor, drapes and an oxycodone injector for tending wounds surgically. With medical training you can fit this in a backpack.
+ent-CMBurnAidKit-name = fire first-aid kit
+ent-CMBurnAidKit-desc = It's an emergency medical kit for when the dropship ammo storage spontaneously burns down. With medical training you can fit this in a backpack.
+ent-CMFirstAidO2Kit-name = oxygen deprivation first-aid kit
+ent-CMFirstAidO2Kit-desc = A box full of reoxygenating goodies. With medical training you can fit this in a backpack.
+ent-CMAdvFirstAidKit-name = advanced first-aid kit
+ent-CMAdvFirstAidKit-desc = Contains more effective methods of medical treatment than a basic first-aid kit, such as burn and trauma kits. With medical training you can fit this in a backpack.
+ent-CMToxinAidKit-name = toxin first-aid kit
+ent-CMToxinAidKit-desc = It's an emergency medical kit containing lifesaving anti-toxic medication. With medical training you can fit this in a backpack.
+ent-RMCRadiationAidKit-name = radiation first-aid kit
+ent-RMCRadiationAidKit-desc = Contains treatment for radiation exposure. With medical training you can fit this in a backpack.

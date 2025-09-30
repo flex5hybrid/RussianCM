@@ -1,0 +1,5 @@
+ent-RMCCrateBoxShellsShotgunSlugs-name = Shell box (100x slug shells)
+ent-RMCCrateBoxShellsShotgunBuckshot-name = Shell box (100x buckshot shells)
+ent-RMCCrateBoxShellsShotgunFlechette-name = Shell box (100x flechette shells)
+ent-RMCCrateBoxShellsShotgunBreaching-name = Shell box (120x breaching shells)
+ent-RMCCrateBoxAmmo458-name = .458 bullets box (.458 x 300)

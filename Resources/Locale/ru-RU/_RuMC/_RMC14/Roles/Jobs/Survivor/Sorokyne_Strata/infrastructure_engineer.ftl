@@ -1,0 +1,2 @@
+ent-RMCSpawnPointSurvivorInfrastructureEngineer-name = survivor infrastructure engineer spawn point
+ent-RMCGearSurvivorPresetInfrastructureEngineer-name = infrastructure engineer preset

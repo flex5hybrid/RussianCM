@@ -1,0 +1,14 @@
+ent-DoorRemoteDefault-name = door remote
+ent-DoorRemoteDefault-desc = A gadget which can open and bolt doors remotely.
+ent-DoorRemoteCommand-name = command door remote
+ent-DoorRemoteCustom-name = custom door remote
+ent-DoorRemoteCustom-desc = A gadget which can open and bolt doors remotely. This advanced variant does not have built-in access, instead inheriting the ID access of the user.
+ent-DoorRemoteSecurity-name = security door remote
+ent-DoorRemoteArmory-name = armory door remote
+ent-DoorRemoteService-name = service door remote
+ent-DoorRemoteResearch-name = research door remote
+ent-DoorRemoteCargo-name = cargo door remote
+ent-DoorRemoteMedical-name = medical door remote
+ent-DoorRemoteEngineering-name = engineering door remote
+ent-DoorRemoteAll-name = super door remote
+ent-DoorRemoteXenoborg-name = xenoborg door remote

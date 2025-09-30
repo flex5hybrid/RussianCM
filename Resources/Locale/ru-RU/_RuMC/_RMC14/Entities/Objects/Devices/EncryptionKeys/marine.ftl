@@ -1,0 +1,10 @@
+ent-CMEncryptionKeySquadLeader-name = squad leader's encryption key
+ent-CMEncryptionKeyAlpha-name = alpha encryption key
+ent-CMEncryptionKeyBravo-name = bravo encryption key
+ent-CMEncryptionKeyCharlie-name = charlie encryption key
+ent-CMEncryptionKeyDelta-name = delta encryption key
+ent-CMEncryptionKeyEcho-name = echo encryption key
+ent-CMEncryptionKeyFoxtrot-name = foxtrot encryption key
+ent-CMEncryptionKeySOF-name = sof's encryption key
+ent-RMCEncryptionKeyFORECON-name = forecon encryption key
+ent-RMCEncryptionKeySunRiders-name = sun riders encryption key

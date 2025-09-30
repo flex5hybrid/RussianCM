@@ -1,0 +1,17 @@
+ent-Haycutters-name = haycutters
+ent-Haycutters-desc = This kills the wire. Moo!
+ent-Moodriver-name = moodriver
+ent-Moodriver-desc = Turn to use. Moo!
+ent-Wronch-name = wronch
+ent-Wronch-desc = Wronch thing. Moo!
+ent-Cowbar-name = cowbar
+ent-Cowbar-desc = Cow your problems away. Moo!
+ent-Mooltitool-name = mooltitool
+ent-Mooltitool-desc = An crude tool to copy, store, and send electrical pulses and signals through wires and machines. Moo!
+ent-Cowelder-name = cowelding tool
+ent-Cowelder-desc = Melts anything as long as it's fueled, don't forget your eye protection! Moo!
+ent-Milkalyzer-name = milkalyzer
+ent-Milkalyzer-desc = A hand-held environmental scanner which reports current gas levels. Moo!
+ent-CowToolbox-name = cow toolbox
+ent-CowToolbox-desc = A weirdly shaped box, stocked with... tools?
+ent-CowToolboxFilled-name = cow toolbox

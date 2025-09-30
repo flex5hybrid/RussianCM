@@ -1,0 +1,10 @@
+ent-LogicEmptyCircuit-name = empty circuit
+ent-LogicEmptyCircuit-desc = Something seems to be missing.
+ent-LogicGateOr-name = logic gate
+ent-LogicGateOr-desc = A logic gate with two inputs and one output. Technicians can change its mode of operation using a screwdriver.
+ent-EdgeDetector-name = edge detector
+ent-EdgeDetector-desc = Splits rising and falling edges into unique pulses and detects how edgy you are.
+ent-PowerSensor-name = power sensor
+ent-PowerSensor-desc = Generates signals in response to powernet changes. Can be cycled between cable voltages.
+ent-MemoryCell-name = memory cell
+ent-MemoryCell-desc = A D-Latch circuit that stores a signal which can be changed depending on input and enable ports.

@@ -1,0 +1,10 @@
+ent-RMCWeaponPistolT73-name = Type 73 pistol
+ent-RMCWeaponPistolT73-desc = The Type 73 is the once-standard issue sidearm of the SPP. Replaced by the NP92 in SPP use, it remains popular with veteran SPP troops due to familiarity and extra power. Due to an extremely large amount being produced, they tend to end up in the hands of forces attempting to arm themselves on a budget. Users include the Socialist Progressive Peoples, Colonial Liberation Front, and just about any mercenary or pirate group out there.
+ent-RMCWeaponPistolT74-name = Type 74 pistol
+ent-RMCWeaponPistolT74-desc = The Type 74 is the designation for a specially modified Type 73 with an integrated laser sight system, multiple lightning cuts to reduce weight in order to allow a higher pressure round to be used with the same recoil sping, and a more comfortable grip. Due to the adoption of the NP92, the Type 74 was produced in limited numbers, because of this it is typically only issued on request to high-ranking officers
+ent-RMCMagazinePistolT73-name = Type 73 magazine (7.62x25mm)
+ent-RMCMagazinePistolT74Impact-name = Type 74 impact magazine (7.62x25mm)
+ent-RMCBulletPistolT73-name = bullet (7.62x25mm)
+ent-RMCCartridgePistolT73-name = cartridge (7.62x25mm)
+ent-RMCBulletPistolT74Impact-name = bullet (7.62x25mm impact)
+ent-RMCCartridgePistolT74Impact-name = cartridge (7.62x25mm impact)

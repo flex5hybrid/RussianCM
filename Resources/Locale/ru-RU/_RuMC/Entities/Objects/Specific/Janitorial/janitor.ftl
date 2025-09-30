@@ -1,0 +1,14 @@
+ent-MopItem-name = mop
+ent-MopItem-desc = A mop that can't be stopped, viscera cleanup detail awaits.
+ent-AdvMopItem-name = advanced mop
+ent-AdvMopItem-desc = Motorized mop that has a bigger reservoir and quickly replaces reagents inside with water. Automatic Clown Countermeasure not included.
+ent-WetFloorSign-name = wet floor sign
+ent-WetFloorSign-desc = Caution! Wet Floor!
+ent-Plunger-name = plunger
+ent-Plunger-desc = A plunger with a red plastic suction-cup and a wooden handle. Used to unclog drains.
+ent-GoldenPlunger-name = golden plunger
+ent-GoldenPlunger-desc = A plunger with a plastic suction cup coated in a thin layer of gold given as a token of appreciation for years of service. Still used to unclog drains.
+ent-RagItem-name = damp rag
+ent-RagItem-desc = For cleaning up messes, you suppose.
+ent-WireBrush-name = wire brush
+ent-WireBrush-desc = A bristly steel wire brush, perfect for scraping away even the toughest patches of rust.

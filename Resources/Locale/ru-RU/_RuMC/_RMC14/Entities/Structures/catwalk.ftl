@@ -1,0 +1,11 @@
+ent-CMCatwalk-name = catwalk
+ent-CMCatwalk-desc = A catwalk for easier EVA maneuvering and cable placement.
+ent-RMCCatwalkHybrisa-name = solid metal grate
+ent-RMCCatwalkHybrisaLattice-name = structural lattice
+ent-RMCCatwalkHybrisaElevator-name = solid metal grate
+ent-RMCMonorailStraight-name = monorail track
+ent-RMCMonorailStraight-desc = The rail system for the CORSAT monorail.
+ent-RMCRailroadStraight-name = rails
+ent-RMCRailroadStraight-desc = Minecarts and rail vehicles go on these.
+ent-RMCRailroadBumper-name = rail bumpers
+ent-RMCRailroadBumper-desc = This (usually) stops minecarts and other rail vehicles at the end of a line of track.

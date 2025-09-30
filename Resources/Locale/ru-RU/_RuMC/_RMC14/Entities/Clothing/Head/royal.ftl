@@ -1,0 +1,12 @@
+ent-RMCHeadRoyalBeanie-name = royal marine beanie
+ent-RMCHeadRoyalBeanie-desc = A standard military beanie.
+ent-RMCHeadRoyalTurban-name = royal marine turban
+ent-RMCHeadRoyalTurban-desc = A standard military turban found in the Royal Crown Marines. Considered a rare item, these kind of turbans are prized by collectors.
+ent-RMCHeadRoyalBeret-name = royal marine beret
+ent-RMCHeadRoyalBeret-desc = A green beret belonging to the Royal Crown Marines.
+ent-RMCHeadRoyalBeretLead-name = royal marine leader beret
+ent-RMCHeadRoyalBeretLead-desc = A green beret belonging to the Royal Crown Marines.
+ent-RMCHeadRoyalHelmet-name = royal L5A2 ballistic helmet
+ent-RMCHeadRoyalHelmet-desc = A High-cut ballistic helmet. Designed to be used by Royal Crown Marines as part of the kestrel armour system.
+ent-RMCHeadRoyalHelmetBallistic-name = royal L5A3 ballistic helmet
+ent-RMCHeadRoyalHelmetBallistic-desc = A High-cut ballistic helmet featuring an attached mandible. Designed to be used by Royal Crown Marines as part of the kestrel armour system.

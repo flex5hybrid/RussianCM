@@ -1,0 +1,13 @@
+ent-RMCWeaponRevolverSpearhead-name = CMB Spearhead autorevolver
+ent-RMCWeaponRevolverSpearhead-desc = A bulky revolver, occasionally carried by assault troops and officers in the Marine Corps, as well as civilian law enforcement. Fires .357 Magnum rounds.
+ent-RMCWeaponRevolverSpearheadCustom-name = Spearhead custom autorevolver
+ent-RMCWeaponRevolverSpearheadCustom-desc = An automatic revolver chambered in .357, custom made of darker metal and with a wooden handle, clearly made for a person with taste in mind.
+ent-RMCBaseSpeedLoader357-name = Speed loader (.357)
+ent-RMCSpeedLoader357-name = Speed loader (.357)
+ent-RMCSpeedLoader357-desc = A revolver speed loader.
+ent-RMCSpeedLoader357Hollowpoint-name = hollowpoint speed loader (.357)
+ent-RMCSpeedLoader357Hollowpoint-desc = A revolver speed loader filled with Hollowpoint ammo.
+ent-RMCCartridgeRevolver357-name = cartridge (.357)
+ent-RMCCartridgeRevolver357Hollowpoint-name = cartridge (.357) Hollowpoint
+ent-RMCBulletRevolver357-name = bullet (.357)
+ent-RMCBulletRevolver357Hollowpoint-name = bullet (.357) Hollowpoint

@@ -1,0 +1,9 @@
+ent-CMCarpetBase-name = carpet
+ent-CMCarpetBase-desc = Fancy walking surface.
+ent-RMCCarpetBaseNonIconsmooth-name = carpet
+ent-RMCCarpetBaseNonIconsmooth-desc = Fancy walking surface.
+ent-RMCCarpetBlue1-name = blue carpet
+ent-RMCCarpetBeige1-name = beige carpet
+ent-RMCCarpetGreyBlue1-name = grey blue carpet
+ent-RMCCarpetPink1-name = pink carpet
+ent-RMCCarpetBlack1-name = black carpet

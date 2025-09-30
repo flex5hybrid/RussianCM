@@ -1,0 +1,14 @@
+ent-RMCDrinkAlcoholVodkaChess-name = red star vodka
+ent-RMCDrinkAlcoholVodkaChess-desc = A promotional chess themed bottle of Red Star Vodka.
+ent-RMCDrinkAlcoholVodkaChessBlackBishop-name = black bishop bottle
+ent-RMCDrinkAlcoholVodkaChessBlackKing-name = black king bottle
+ent-RMCDrinkAlcoholVodkaChessBlackKnight-name = black knight bottle
+ent-RMCDrinkAlcoholVodkaChessBlackPawn-name = black pawn bottle
+ent-RMCDrinkAlcoholVodkaChessBlackQueen-name = black queen bottle
+ent-RMCDrinkAlcoholVodkaChessBlackRook-name = black rook bottle
+ent-RMCDrinkAlcoholVodkaChessWhiteKing-name = white king bottle
+ent-RMCDrinkAlcoholVodkaChessWhiteKnight-name = white knight bottle
+ent-RMCDrinkAlcoholVodkaChessWhitePawn-name = white pawn bottle
+ent-RMCDrinkAlcoholVodkaChessWhiteBishop-name = white bishop bottle
+ent-RMCDrinkAlcoholVodkaChessWhiteQueen-name = white queen bottle
+ent-RMCDrinkAlcoholVodkaChessWhiteRook-name = white rook bottle

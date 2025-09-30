@@ -1,0 +1,17 @@
+ent-SolarPanelBasePhysSprite-name = solar panel
+ent-SolarPanelPlasma-name = solar panel plasma
+ent-SolarPanelPlasma-desc = A few sheets of plasma glass that generate electricity when hit by photons.
+ent-SolarPanelUranium-name = solar panel uranium
+ent-SolarPanelUranium-desc = A few sheets of uranium glass that generate electricity when hit by photons.
+ent-SolarPanel-name = solar panel
+ent-SolarPanel-desc = A few sheets of glass that generate electricity when hit by photons.
+ent-SolarPanelBroken-name = solar panel
+ent-SolarPanelBroken-desc = A broken solar panel.
+ent-SolarPanelPlasmaBroken-name = plasma solar panel
+ent-SolarPanelPlasmaBroken-desc = A broken plasma solar panel.
+ent-SolarPanelUraniumBroken-name = uranium solar panel
+ent-SolarPanelUraniumBroken-desc = A broken uranium solar panel.
+ent-SolarAssembly-name = solar assembly
+ent-SolarAssembly-desc = A solar assembly. Anchor to a wire to start building a solar panel.
+ent-SolarTracker-name = solar tracker
+ent-SolarTracker-desc = A solar tracker. Tracks the nearest star.

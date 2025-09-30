@@ -1,0 +1,14 @@
+ent-PercentileDie-name = percentile die
+ent-PercentileDie-desc = A die with ten sides. Works better for d100 rolls than a golf ball.
+ent-d20Dice-name = d20
+ent-d20Dice-desc = A die with twenty sides. The preferred die to throw at the GM.
+ent-d12Dice-name = d12
+ent-d12Dice-desc = A die with twelve sides. There's an air of neglect about it.
+ent-d10Dice-name = d10
+ent-d10Dice-desc = A die with ten sides. Useful for percentages.
+ent-d8Dice-name = d8
+ent-d8Dice-desc = A die with eight sides. It feels... lucky.
+ent-d6Dice-name = d6
+ent-d6Dice-desc = A die with six sides. Basic and serviceable.
+ent-d4Dice-name = d4
+ent-d4Dice-desc = A die with four sides. The nerd's caltrop.

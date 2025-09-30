@@ -1,0 +1,10 @@
+ent-RMCPropComputerBase-name = terminal
+ent-RMCPropComputerBase-desc = This can be used for various functions.
+ent-RMCPropCommunicationsConsole-name = communications console
+ent-RMCPersonalDesktop-name = personal desktop
+ent-RMCSecurityCameraConsole-name = security cameras console
+ent-RMCDropshipWeaponsConsoleProp-name = dropship weapons controls
+ent-RMCSecurityRecordsConsole-name = security records
+ent-RMCSecurityRecordsConsoleAlt-name = security records
+ent-RMCIdentificationComputer-name = identification computer
+ent-RMCStationAlertComputer-name = station alert computer

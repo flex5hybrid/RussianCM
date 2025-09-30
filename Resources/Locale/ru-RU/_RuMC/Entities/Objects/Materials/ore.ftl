@@ -1,0 +1,11 @@
+ent-OreBase-desc = A piece of unrefined ore.
+ent-GoldOre-name = gold ore
+ent-DiamondOre-name = diamond ore
+ent-SteelOre-name = iron ore
+ent-PlasmaOre-name = plasma ore
+ent-SilverOre-name = silver ore
+ent-SpaceQuartz-name = space quartz
+ent-UraniumOre-name = uranium ore
+ent-BananiumOre-name = bananium ore
+ent-Coal-name = coal
+ent-SaltOre-name = salt

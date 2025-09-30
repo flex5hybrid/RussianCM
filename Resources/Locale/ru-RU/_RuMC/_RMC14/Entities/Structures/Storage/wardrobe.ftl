@@ -1,0 +1,10 @@
+ent-CMWardrobeBase-desc = It's a storage unit for standard-issue attire.
+ent-CMWardrobeBlack-name = black wardrobe
+ent-CMWardrobeBlue-name = blue wardrobe
+ent-CMWardrobeGreen-name = green wardrobe
+ent-CMWardrobeOrange-name = orange wardrobe
+ent-CMWardrobePink-name = pink wardrobe
+ent-CMWardrobePurple-name = purple wardrobe
+ent-CMWardrobeRed-name = red wardrobe
+ent-CMWardrobeWhite-name = white wardrobe
+ent-CMWardrobeYellow-name = yellow wardrobe

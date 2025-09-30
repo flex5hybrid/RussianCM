@@ -1,0 +1,11 @@
+ent-WallXenoResin-name = resin wall
+ent-WallXenoResin-desc = Weird slime solidified into a wall.
+ent-WallXenoResinThick-name = thick resin wall
+ent-WallXenoResinThick-desc = Weird slime solidified into a thick wall.
+ent-BaseMembraneXeno-name = resin membrane
+ent-WallXenoMembrane-name = resin membrane
+ent-WallXenoMembrane-desc = Weird slime translucent enough to let light pass through.
+ent-WallXenoMembraneThick-name = thick resin membrane
+ent-WallXenoMembraneThick-desc = Weird thick slime just translucent enough to let light pass through.
+ent-WallXenoResinWeak-name = weak resin wall
+ent-WallXenoResinWeak-desc = Weird slime solidified into a wall. It already looks on the verge of collapsing...

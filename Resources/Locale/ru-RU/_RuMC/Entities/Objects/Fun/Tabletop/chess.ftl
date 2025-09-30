@@ -1,0 +1,15 @@
+ent-ChessBoard-name = chessboard
+ent-ChessBoard-desc = A chessboard. Pieces included!
+ent-ChessBoardTabletop-name = chessboard
+ent-WhiteKing-name = white king
+ent-WhiteQueen-name = white queen
+ent-WhiteRook-name = white rook
+ent-WhiteBishop-name = white bishop
+ent-WhiteKnight-name = white knight
+ent-WhitePawn-name = white pawn
+ent-BlackKing-name = black king
+ent-BlackQueen-name = black queen
+ent-BlackRook-name = black rook
+ent-BlackBishop-name = black bishop
+ent-BlackKnight-name = black knight
+ent-BlackPawn-name = black pawn

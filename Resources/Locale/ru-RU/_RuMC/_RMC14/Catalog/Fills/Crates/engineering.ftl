@@ -1,0 +1,14 @@
+ent-RMCCrateEmptySandbags-name = empty sandbags crate
+ent-RMCCrateSandbagsConstructionKit-name = sandbags construction kit
+ent-RMCCrateMetalSheets-name = metal sheets crate
+ent-RMCCratePlasteelSheets-name = plasteel sheets crate
+ent-RMCCrateGlassSheets-name = glass sheets crate
+ent-RMCCrateWoodenPlanks-name = wooden planks crate
+ent-RMCCrateSuperconductingMagneticCoil-name = superconducting magnetic coil crate
+ent-RMCCrateElectricalMaintenance-name = electrical maintenance crate
+ent-RMCCrateMechanicalMaintenance-name = mechanical maintenance crate
+ent-RMCCrateReplacementLights-name = replacement lights crate
+ent-RMCCratePacmanParts-name = pacman portable generator parts
+ent-RMCCrateSuperPacmanParts-name = super pacman portable generator parts
+ent-RMCCrateFlashlights-name = flashlights crate
+ent-RMCCrateHighCapacityPowerCell-name = high-capacity power cell crate

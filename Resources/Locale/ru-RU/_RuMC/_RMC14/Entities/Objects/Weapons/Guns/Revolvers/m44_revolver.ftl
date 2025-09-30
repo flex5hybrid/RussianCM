@@ -1,0 +1,11 @@
+ent-RMCWeaponRevolverM44-name = M44 combat revolver
+ent-RMCWeaponRevolverM44-desc = A bulky revolver, occasionally carried by assault troops and officers in the Marine Corps, as well as civilian law enforcement. Fires .44 Magnum rounds.
+ent-RMCBaseSpeedLoader44-name = M44 speed loader (.44)
+ent-RMCSpeedLoaderM44-name = M44 speed loader (.44)
+ent-RMCSpeedLoaderM44-desc = A revolver speed loader.
+ent-RMCSpeedLoader44Marksman-name = M44 marksman speed loader (.44)
+ent-RMCSpeedLoader44Marksman-desc = A revolver speed loader filled with Marksman ammo.
+ent-RMCCartridgeRevolver44-name = cartridge (.44)
+ent-RMCCartridgeRevolver44Marksman-name = cartridge (.44)
+ent-CMBulletRevolver44-name = bullet (.44)
+ent-RMCBulletRevolver44Marksman-name = bullet (.44 Marksman)

@@ -1,0 +1,15 @@
+ent-GasMinerBase-name = gas miner
+ent-GasMinerBase-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerOxygen-name = O2 gas miner
+ent-GasMinerOxygenStation-name = O2 gas miner
+ent-GasMinerOxygenStationLarge-name = O2 gas miner
+ent-GasMinerNitrogen-name = N2 gas miner
+ent-GasMinerNitrogenStation-name = N2 gas miner
+ent-GasMinerNitrogenStationLarge-name = N2 gas miner
+ent-GasMinerCarbonDioxide-name = CO2 gas miner
+ent-GasMinerPlasma-name = plasma gas miner
+ent-GasMinerTritium-name = tritium gas miner
+ent-GasMinerFrezon-name = frezon gas miner
+ent-GasMinerWaterVapor-name = water vapor gas miner
+ent-GasMinerAmmonia-name = ammonia gas miner
+ent-GasMinerNitrousOxide-name = nitrous oxide gas miner

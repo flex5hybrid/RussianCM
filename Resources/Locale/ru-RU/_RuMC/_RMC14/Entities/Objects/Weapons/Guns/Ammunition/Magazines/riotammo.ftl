@@ -1,0 +1,12 @@
+ent-RMCMagazineRifleM54CRubber-name = M54C rubber magazine (10x24mm)
+ent-RMCMagazineRifleM54CRubber-desc = A magazine of less-lethal rubber 10x24mm rounds for use in the M54C battle rifle.
+ent-RMCMagazineRifleM4SPRRubber-name = M4SPR rubber magazine (10x24mm)
+ent-RMCMagazineRifleM4SPRRubber-desc = A magazine of less-lethal rubber 10x24mm rounds for use in the M4SPR battle rifle.
+ent-RMCCartridgeRifle10x24mmRubber-name = rubber cartridge (10x24mm)
+ent-RMCCartridgeRifle10x24mmRubber-desc = A 10x24mm cartridge. Fits in 10x24mm magazines, this one is designed to be less lethal.
+ent-RMCMagazineSMGM63Rubber-name = M63 rubber magazine (10x20mm)
+ent-RMCCartridge10x20mmRubber-name = rubber cartridge (10x20mm)
+ent-RMCMagazinePistolM1984Rubber-name = M1984 rubber magazine (9mm)
+ent-RMCMagazinePistolM77Rubber-name = M77 rubber magazine (9mm)
+ent-RMCCartridgePistol9mmRubber-name = rubber cartridge (9mm)
+ent-RMCBulletPistol9mmRubber-name = rubber bullet (9mm)

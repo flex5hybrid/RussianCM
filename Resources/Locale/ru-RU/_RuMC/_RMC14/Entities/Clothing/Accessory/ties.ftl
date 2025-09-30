@@ -1,0 +1,10 @@
+ent-RMCTieBase-name = tie
+ent-RMCTieBase-desc = An abstract tie.
+ent-RMCTie-name = blue tie
+ent-RMCTie-desc = A neosilk clip-on tie.
+ent-RMCTieBlack-name = black tie
+ent-RMCTieGold-name = gold tie
+ent-RMCTieGreen-name = green tie
+ent-RMCTiePurple-name = purple tie
+ent-RMCTieRed-name = red tie
+ent-RMCTieHorrible-name = horrible tie

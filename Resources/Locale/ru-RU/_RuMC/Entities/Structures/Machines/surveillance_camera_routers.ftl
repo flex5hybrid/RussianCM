@@ -1,0 +1,13 @@
+ent-SurveillanceCameraRouterBase-name = camera router
+ent-SurveillanceCameraRouterBase-desc = A surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraRouterEngineering-name = engineering camera router
+ent-SurveillanceCameraRouterSecurity-name = security camera router
+ent-SurveillanceCameraRouterScience-name = science camera router
+ent-SurveillanceCameraRouterSupply-name = supply camera router
+ent-SurveillanceCameraRouterCommand-name = command camera router
+ent-SurveillanceCameraRouterService-name = service camera router
+ent-SurveillanceCameraRouterMedical-name = medical camera router
+ent-SurveillanceCameraRouterGeneral-name = general camera router
+ent-SurveillanceCameraWirelessRouterBase-name = wireless camera router
+ent-SurveillanceCameraWirelessRouterBase-desc = A wireless surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraWirelessRouterEntertainment-name = entertainment camera router

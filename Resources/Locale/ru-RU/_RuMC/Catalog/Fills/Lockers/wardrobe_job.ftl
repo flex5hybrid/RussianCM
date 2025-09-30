@@ -1,0 +1,13 @@
+ent-WardrobePrisonFilled-desc = Contains a selection of nice orange clothes for people enjoying their stay in the brig.
+ent-WardrobeRoboticsFilled-desc = You can build a robot out of this locker.
+ent-WardrobeChemistryFilled-desc = The sleek orange threads contained within make you much less likely to be thrown out of the chemistry lab.
+ent-WardrobeGeneticsFilled-desc = The sleek blue threads contained within make you much less likely to be thrown out of the genetics lab.
+ent-WardrobeVirologyFilled-desc = The sleek green threads contained within make you much less likely to be thrown out of the virology lab.
+ent-WardrobeScienceFilled-desc = You've read a couple pop science articles, now it's time for the real deal.
+ent-WardrobeBotanistFilled-desc = Plant yourself among the plant men with these 100% natural plant-derived clothes.
+ent-WardrobeMedicalDoctorFilled-desc = We've all played doctor before, now practice medicine.
+ent-WardrobeChapelFilled-desc = You have to look presentable for your flock.
+ent-WardrobeSecurityFilled-desc = Cross the thin red line.
+ent-WardrobeCargoFilled-desc = This locker? Maybe 500 spesos. Brotherhood? Priceless.
+ent-WardrobeAtmosphericsFilled-desc = This locker contains a uniform for atmospheric technicians.
+ent-WardrobeEngineeringFilled-desc = This locker contains a uniform for engineering or social engineering.

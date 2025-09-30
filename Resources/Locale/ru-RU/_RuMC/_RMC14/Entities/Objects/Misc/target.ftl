@@ -1,0 +1,12 @@
+ent-RMCTargetHuman-name = human target
+ent-RMCTargetHuman-desc = A shooting target. This one is a Human.
+ent-RMCTargetXeno-name = xenonid target
+ent-RMCTargetXeno-desc = A shooting target. This one is a xenonid.
+ent-RMCTargetArmored-name = shooting target
+ent-RMCTargetArmored-desc = A shooting target. This one is an armored human.
+ent-RMCTargetSyndicate-name = syndicate target
+ent-RMCTargetSyndicate-desc = A shooting target. This one is a syndicate agent.
+ent-RMCTargetClown-name = clown target
+ent-RMCTargetClown-desc = A shooting target. This one is a clown.
+ent-RMCTargetStrange-name = felinid target
+ent-RMCTargetStrange-desc = A shooting target. You aren't quite sure what this one is, but it seems to be extra robust.

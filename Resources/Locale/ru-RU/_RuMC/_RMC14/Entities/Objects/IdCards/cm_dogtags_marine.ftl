@@ -1,0 +1,12 @@
+ent-CMDogtagRifleman-name = Rifleman's dogtags
+ent-CMDogtagCombatTech-name = Combat Tech's dogtags
+ent-CMDogtagFireteamLeader-name = Fireteam Leader's dogtags
+ent-CMDogtagHospitalCorpsman-name = Hospital Corpsman's dogtags
+ent-CMDogtagSmartGunOperator-name = Smart Gun Operator's dogtags
+ent-CMDogtagSquadLeader-name = Squad Leader's dogtags
+ent-CMDogtagWeaponsSpecialist-name = Weapons Specialist's dogtags
+ent-RMCDogtagPVEHospitalCorpsman-name = Hospital Corpsman's dogtags
+ent-RMCDogtagPVERifleman-name = Rifleman's dogtags
+ent-RMCDogtagPVESmartGunOperator-name = Smart Gun Operator's dogtags
+ent-RMCDogtagPVESquadLeader-name = Squad Leader's dogtags
+ent-RMCDogtagPVESectionSergeant-name = Section Sergeant's dogtags

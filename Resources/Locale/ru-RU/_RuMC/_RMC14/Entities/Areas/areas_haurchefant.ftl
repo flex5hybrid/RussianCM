@@ -1,0 +1,13 @@
+ent-RMCAreaHF-name = Haurchefant
+ent-RMCAreaHFHypersleepStorageA-name = Hypersleep Storage
+ent-RMCAreaHFHypersleepGearLockers-name = Hypersleep Gear Lockers
+ent-RMCAreaHFMessHall-name = Mess Hall
+ent-RMCAreaHFBathroom-name = Bathroom
+ent-RMCAreaHFDisposals-name = Disposals
+ent-RMCAreaHFMedical-name = Medical
+ent-RMCAreaHFBriefRoom-name = Briefing Room
+ent-RMCAreaHFCommandDeck-name = Force Command Deck
+ent-RMCAreaHFPrep-name = Force Prep
+ent-RMCAreaHFArmoury-name = Force Armoury
+ent-RMCAreaHFHangar-name = Hangar
+ent-RMCAreaHFOOB-name = Out Of Bounds

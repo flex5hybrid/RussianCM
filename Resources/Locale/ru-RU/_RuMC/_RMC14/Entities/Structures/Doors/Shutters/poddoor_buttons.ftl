@@ -1,0 +1,12 @@
+ent-RMCPodDoorButton-name = button
+ent-RMCPodDoorButton-desc = A remote control-switch for a door.
+ent-RMCPodDoorButtonBigRed-name = button
+ent-RMCPodDoorButtonBigRed-desc = A remote control-switch for a door.
+ent-RMCPodDoorButtonWeYaOfficeDoor-name = Office Door Shutter
+ent-RMCPodDoorButtonWeYaOfficeWindows-name = Office Windows Shutters
+ent-RMCPodDoorButtonWeYaOfficeRoomDivider-name = Room Divider
+ent-RMCPodDoorButtonWeYaOfficeEvacPod-name = Evac Pod Door Control
+ent-RMCPodDoorButtonWeYaOfficeQuarterDoor-name = Quarter Door Shutter
+ent-RMCPodDoorButtonWeYaOfficeMaintenanceDoor-name = Maintenance Door Shutter
+ent-RMCPodDoorButtonWeYaOfficeQuarterWindows-name = Quarter Windows Shutters
+ent-RMCPodDoorButtonHybrisaCavesLockdown-name = Caves Lockdown

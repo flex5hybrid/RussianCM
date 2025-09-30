@@ -1,0 +1,10 @@
+ent-MobGuardianBase-name = GuardianBase
+ent-MobGuardianBase-desc = guardian
+ent-MobHoloparasiteGuardian-name = Holoparasite
+ent-MobHoloparasiteGuardian-desc = A mesmerising whirl of hard-light patterns weaves a marvelous, yet oddly familiar visage. It stands proud, tuning into its owner's life to sustain itself.
+ent-MobIfritGuardian-name = Ifrit
+ent-MobIfritGuardian-desc = A corrupted jinn, ripped from fitra to serve the wizard's petty needs. It stands wicked, tuning into its owner's life to sustain itself.
+ent-MobHoloClownGuardian-name = HoloClown
+ent-MobHoloClownGuardian-desc = A mesmerising whirl of hard-light patterns weaves a blue colored clown of dubious origin.
+ent-ActionToggleGuardian-name = Toggle Guardian
+ent-ActionToggleGuardian-desc = Either manifests the guardian or recalls it back into your body

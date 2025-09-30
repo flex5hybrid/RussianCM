@@ -1,0 +1,14 @@
+ent-RMCEncryptionKeySPP-name = SPP radio encryption key
+ent-RMCEncryptionKeySPPCommand-name = SPP command radio encryption key
+ent-RMCEncryptionKeySPPEngineer-name = SPP engineering radio encryption key
+ent-RMCEncryptionKeySPPMedic-name = SPP medic radio encryption key
+ent-RMCEncryptionKeyHalcyon-name = Halcyon radio encryption key
+ent-RMCHeadsetSPP-name = SPP headset
+ent-RMCHeadsetSPPCommand-name = SPP-CMD headset
+ent-RMCHeadsetSPPEngineer-name = SPP-CCT headset
+ent-RMCHeadsetSPPMedic-name = SPP-MED headset
+ent-RMCHeadsetDistressSPP-name = SPP colony headset
+ent-RMCHeadsetSPPPaP-name = SPP PaP headset
+ent-RMCHeadsetSPPPaP-desc = A special headset used by the People's Armed Police of the SPP.
+ent-RMCHeadsetDistressHalcyon-name = halcyon corporate headset
+ent-RMCHeadsetDistressHalcyon-desc = A headset commonly worn by Halcyon Dynamics corporate personnel.

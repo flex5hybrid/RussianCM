@@ -1,0 +1,1 @@
+ent-RMCMachineScreenBase-name = monitor

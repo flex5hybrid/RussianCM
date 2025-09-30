@@ -1,0 +1,14 @@
+ent-RMCMortarExplosionHE-name = he mortar explosion
+ent-RMCMortarExplosionIncendiary-name = incendiary mortar explosion
+ent-RMCMortarExplosionFlare-name = mortar flare/camera
+ent-RMCDropshipGauBurst-name = dropship Multi-Purpose GAU burst
+ent-RMCDropshipGauBurstAntiTank-name = dropship Anti-Tank GAU burst
+ent-RMCDropshipLaserFire-name = dropship laser
+ent-RMCDropshipMissileExplosionWidowmaker-name = AIM-224B 'Widowmaker' explosion
+ent-RMCDropshipMissileExplosionKeeper-name = GBU-67 'Keeper II' explosion
+ent-RMCDropshipMissileExplosionNapalm-name = AGM-99 'Napalm' explosion
+ent-RMCDropshipMissileExplosionHarpoon-name = AGM-184 'Harpoon II' explosion
+ent-RMCDropshipMissileExplosionThermobaric-name = BLU-200 'Dragon's Breath' explosion
+ent-RMCDropshipMissileExplosionBanshee-name = AGM-227 'Banshee' explosion
+ent-RMCDropshipMiniRocketExplosionMiniMike-name = AGR-59 'Mini-Mike' explosion
+ent-RMCDropshipMiniRocketExplosionMiniMikeIncindiary-name = AGR-59-I 'Mini-Mike' explosion

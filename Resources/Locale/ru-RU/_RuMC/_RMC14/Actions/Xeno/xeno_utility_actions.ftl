@@ -1,0 +1,32 @@
+ent-ActionXenoTransferPlasma-name = Transfer plasma (50)
+ent-ActionXenoTransferPlasma-desc = Give plasma to a nearby xenonid.
+ent-ActionXenoHealerDroneTransferPlasma-name = Transfer plasma (100)
+ent-ActionXenoHealerDroneTransferPlasma-desc = Give plasma to a nearby xenonid.
+ent-ActionXenoTransferPlasmaHivelord-name = Transfer plasma (200)
+ent-ActionXenoTransferPlasmaHivelord-desc = Give plasma to a xenonid.
+ent-ActionXenoResinSurge-name = Resin Surge (75)
+ent-ActionXenoResinSurge-desc = Instantly grows a fruit when used (cooldown will be proprotial to growth time), creates temporary walls when used on weeds or use on existing walls to reinforce them with 6000 hp for 15 seconds. Targeting anything else creates a 3x3 patch of weak sticky resin after a small doafter.
+ent-ActionXenoRetrieve-name = Retrieve (180 plasma, 100 fury)
+ent-ActionXenoRetrieve-desc = Pulls a xenonid to you if they are still, with a 0.6 second doafter. You can't pull very big xenonids unless they are downed.
+ent-ActionXenoAidHeal-name = Aid Xenonid Healing (100 plasma, 100+ health reserves)
+ent-ActionXenoAidHeal-desc = Heals a nearby ally Xeno. Healing another Xeno will also heal you, and half your remaining health reserves will be consumed for extra healing. [color=red]This can't heal ignited xenonids![/color]
+ent-ActionXenoAidRejuvenate-name = Aid Xenonid Rejuvenate (100 plasma, 100 health reserves)
+ent-ActionXenoAidRejuvenate-desc = Remove ailments and stuns from a far away ally Xeno.
+ent-ActionXenoLeader-name = Choose/Follow Xenonid Leaders
+ent-ActionXenoLeader-desc = Promotes and demotes xenonid leaders, or watches them. Promoting a xeno to leader will make them emit your pheromones around themselves.
+ent-RMCGuidebookActionXenoLeader-name = Choose Leaders
+ent-RMCGuidebookActionXenoLeader-desc = Promotes and demotes xenonid leaders, or watches them. Promoting a xeno to leader will make them emit your pheromones around themselves.
+ent-ActionXenoHeal-name = Heal Xenonid (600)
+ent-ActionXenoHeal-desc = Heals xenonids in a 4 tile range around where you click for 30% of their health over 20 seconds.
+ent-ActionXenoApplySalve-name = Apply Salve (200)
+ent-ActionXenoApplySalve-desc = Apply a salve to use some of your health to heal allied Xenos up to 100 health over 5 seconds. You can stack multiple salves.
+ent-ActionXenoSacrifice-name = Sacrifice
+ent-ActionXenoSacrifice-desc = Sacrifice your life to heal a sister. [color=red]YOU WILL ONLY RESPAWN IF YOU MAXED OUT YOUR TRANSFERRED HEALTH BY HEALING SISTERS.[/color]
+ent-ActionXenoTailFountain-name = Tail Fountain
+ent-ActionXenoTailFountain-desc = Extinguishes fire from a nearby ally or foe. Uses up your melee attack.
+ent-ActionXenoTantrum-name = Tantrum (100 plasma, 75 fury)
+ent-ActionXenoTantrum-desc = Give an ally and yourself temporary armor for a few seconds, which lasts longer on you. Crushers and Ravagers get a speed boost instead.
+ent-ActionXenoFightOrFlight-name = Fight or Flight (300 plasma, 75 fury)
+ent-ActionXenoFightOrFlight-desc = Remove ailments and stuns from all allies around you. The radius is longer if you have 75+ fury after paying the cost.
+ent-ActionXenoQueenEye-name = Enter Eye Form
+ent-ActionXenoQueenEye-desc = Look around any area with weeds remotely. You can use infinite range abilities while in this form, and build resin from afar.

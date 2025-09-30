@@ -1,0 +1,14 @@
+ent-RMCScabbardBase-name = base scabbard
+ent-RMCScabbardBase-desc = -- insert description here --
+ent-RMCScabbardMachete-name = H5 pattern M2132 machete scabbard
+ent-RMCScabbardMachete-desc = A large leather scabbard used to carry a M2132 machete. It can be strapped to the back or the waist.
+ent-RMCScabbardMacheteM2100-name = QH20 pattern M2100 custom machete scabbard
+ent-RMCScabbardMacheteM2100-desc = A large leather scabbard used to carry a M2100 "Ngájhe" machete. It can be strapped to the back or the armor.
+ent-RMCScabbardMacheteSG-name = ML66A harness machete scabbard
+ent-RMCScabbardMacheteSG-desc = A scabbard that connects to the ML66A combat harness for carrying a M2132 machete.
+ent-RMCScabbardShotgun-name = L44 M42A2 shotgun scabbard
+ent-RMCScabbardShotgun-desc = A large leather holster fitted for UNMC-issue shotguns. It has harnesses that allow it to be secured to the back for easy storage.
+ent-RMCScabbardCeremonial-name = ceremonial sabre scabbard
+ent-RMCScabbardCeremonial-desc = A large, vibrantly colored scabbard used to carry a ceremonial sabre.
+ent-RMCScabbardKatana-name = katana scabbard
+ent-RMCScabbardKatana-desc = A large, vibrantly colored katana scabbard used to carry a Japanese sword. It can be strapped to the back or worn at the belt. Because of the sturdy wood casing of the scabbard, it makes an okay defensive weapon in a pinch.

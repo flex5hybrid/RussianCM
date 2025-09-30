@@ -1,0 +1,10 @@
+ent-XenoWeeds-name = weeds
+ent-XenoWeeds-desc = Weird black weeds...
+ent-XenoWeedsSource-name = weed node
+ent-XenoWeedsSource-desc = A weird, pulsating node
+ent-XenoHiveWeeds-name = hive weeds
+ent-XenoHiveWeedsSource-name = hive weed node
+ent-XenoHiveWeedsSource-desc = A weird, pulsating node
+ent-XenoWeedsWall-name = weeds
+ent-XenoHardyWeedsSource-name = hardy weed node
+ent-XenoHardyWeedsSource-desc = A weird, pulsating node

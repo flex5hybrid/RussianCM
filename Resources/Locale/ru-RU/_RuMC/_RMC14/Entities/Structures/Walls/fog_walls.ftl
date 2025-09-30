@@ -1,0 +1,9 @@
+ent-RMCFogWallPermanent-name = dense fog
+ent-RMCFogWallPermanent-desc = It looks way too dangerous to traverse.
+ent-RMCFogWall25-desc = It looks way too dangerous to traverse. Best wait until it has cleared up.
+ent-RMCFogWallRemoverOne-name = random fog remover
+ent-RMCFogWallRemoverOne-desc = Marks this fog for random removal at round-start.
+ent-RMCFogWallAdderOne-name = random fog spawner
+ent-RMCFogWallAdderOne-desc = Marks a spot for random fog spawning at round-start.
+ent-RMCFogShockwave-name = shockwave smoke
+ent-RMCFogSpawner15-name = fog blocker

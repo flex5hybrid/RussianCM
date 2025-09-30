@@ -1,0 +1,12 @@
+ent-RMCBoxSterileMask-name = sterile mask box
+ent-RMCBoxSterileMask-desc = This box contains sterile medical masks.
+ent-RMCBoxLatexGloves-name = latex gloves box
+ent-RMCBoxLatexGloves-desc = Contains sterile latex gloves.
+ent-RMCBoxBodyBag-name = body bag box
+ent-RMCBoxBodyBag-desc = Contains body bags.
+ent-RMCBoxPillCanister-name = box of pill bottles
+ent-RMCBoxPillCanister-desc = It has pictures of pill bottles on its front.
+ent-RMCBoxSyringe-name = box of syringes
+ent-RMCBoxSyringe-desc = A biohazard alert warning is printed on the box
+ent-RMCBoxBeaker-name = box of beakers
+ent-RMCBoxBeaker-desc = It's just an ordinary box.

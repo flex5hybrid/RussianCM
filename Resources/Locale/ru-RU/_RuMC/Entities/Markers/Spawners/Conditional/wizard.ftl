@@ -1,0 +1,1 @@
+ent-SpawnPointWizard-name = wizard

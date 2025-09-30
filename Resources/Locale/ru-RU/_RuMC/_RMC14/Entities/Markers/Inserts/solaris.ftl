@@ -1,0 +1,16 @@
+ent-RMCMapInsertSolarisMedbay-name = Medbay v3
+ent-RMCMapInsertSolarisMedbayPassage-name = Medbay Passage
+ent-RMCMapInsertSolarisLambdaCaveExtratunnel-name = Lambda Cave Extratunnel
+ent-RMCMapInsertSolarisSeCheckpoint-name = SE Checkpoint
+ent-RMCMapInsertSolarisTCommsOpen-name = TComms Open
+ent-RMCMapInsertSolarisETATunnelOpen-name = ETA Tunnel Open
+ent-RMCMapInsertSolarisViroOpen-name = Virology Open
+ent-RMCMapInsertSolarisViroRockOpen-name = Virology Rocks Open
+ent-RMCMapInsertSolarisLZ1CaveFlank-name = LZ1 Cave Flank
+ent-RMCMapInsertSolarisLZ1Entrance-name = LZ1 Entrance
+ent-RMCMapInsertSolarisLZ1NorthMining-name = LZ1 North Mining
+ent-RMCMapInsertSolarisLambdaGraveyard-name = Lambda Graveyard
+ent-RMCMapInsertSolarisDormsParty-name = Dorms Party
+ent-RMCMapInsertSolarisAdminPMC-name = Admin PMC
+ent-RMCMapInsertSolarisFiltrationRestored-name = Filtration Restored
+ent-RMCMapInsertSolarisVault-name = Vault V2

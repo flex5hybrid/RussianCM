@@ -1,0 +1,13 @@
+ent-CMM96SSniperRifle-name = M96S scoped rifle
+ent-CMM96SSniperRifle-desc = A heavy sniper rifle manufactured by Aegis Armaments. It has a scope system and fires armor penetrating rounds out of a 15-round magazine. 'Peace Through Superior Firepower'
+ent-CMMagazineSniperM96S-name = M96S marksman magazine (10x28mm)
+ent-CMMagazineSniperM96S-desc = A magazine of sniper rifle ammo. An aimed shot with it will deal significant damage.
+ent-CMMagazineSniperM96SIncendiary-name = M96S incendiary magazine (10x28mm)
+ent-CMMagazineSniperM96SIncendiary-desc = A magazine of sniper rifle ammo. An aimed shot with it will temporarily blind the targe and kindle the blaze further.
+ent-CMMagazineSniperM96SFlak-name = M96S flak magazine (10x28mm)
+ent-CMMagazineSniperM96SFlak-desc = A magazine of sniper rifle ammo. An aimed shot with it will temporarily slow the target and minimize the backlash.
+ent-CMCartridgeSniper10x28mmIncendiary-name = cartridge (10x28mm) (incendiary)
+ent-CMCartridgeSniper10x28mmFlak-name = cartridge (10x28mm) (Flak)
+ent-CMBulletSniper10x28mm-name = bullet (10x28mm)
+ent-CMBulletSniper10x28mmIncendiary-name = bullet (10x28mm)
+ent-CMBulletSniper10x28mmFlak-name = bullet (10x28mm)

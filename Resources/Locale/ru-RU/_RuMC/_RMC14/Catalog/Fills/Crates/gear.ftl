@@ -1,0 +1,6 @@
+ent-RMCCrateGearBinoculars-name = mixed binoculars crate (2x per, 6x total)
+ent-RMCCrateGearPackFlare-name = flare packs crate (x20)
+ent-RMCCrateGearMotionDetector-name = motion detector crate (x2)
+ent-RMCCrateGearPackFlareCAS-name = signal flare packs crate (x4)
+ent-RMCCrateGearFulton-name = fulton recovery device crate (x4)
+ent-RMCCrateGearParachute-name = parachute crate (x20)

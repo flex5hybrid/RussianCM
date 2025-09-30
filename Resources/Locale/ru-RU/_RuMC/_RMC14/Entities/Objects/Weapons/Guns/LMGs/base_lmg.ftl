@@ -1,0 +1,1 @@
+ent-RMCBaseCartridgeLMG-name = cartridge

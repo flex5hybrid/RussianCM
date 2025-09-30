@@ -1,0 +1,10 @@
+ent-BaseShowcaseRobot-name = security robot showcase
+ent-BaseShowcaseRobot-desc = A non-functional replica of an old security robot.
+ent-ShowcaseRobot-name = security robot showcase
+ent-ShowcaseRobot-desc = A non-functional replica of an old security robot.
+ent-ShowcaseRobotWhite-name = white robot showcase
+ent-ShowcaseRobotWhite-desc = A non-functional replica of an old robot.
+ent-ShowcaseRobotAntique-name = cargo robot showcase
+ent-ShowcaseRobotAntique-desc = A non-functional replica of an old cargo robot.
+ent-ShowcaseRobotMarauder-name = marauder showcase
+ent-ShowcaseRobotMarauder-desc = A non-functional replica of a marauder, painted green.

@@ -1,0 +1,12 @@
+ent-Bed-name = bed
+ent-Bed-desc = This is used to lie in, sleep in or strap on. Resting here provides extremely slow healing.
+ent-MedicalBed-name = medical bed
+ent-MedicalBed-desc = A hospital bed for patients to recover in. Resting here provides fairly slow healing.
+ent-DogBed-name = dog bed
+ent-DogBed-desc = A comfy-looking dog bed. You can even strap your pet in, in case the gravity turns off.
+ent-Mattress-name = mattress
+ent-Mattress-desc = Better sleep in that then on the floor i guess.
+ent-WebBed-name = web bed
+ent-WebBed-desc = You got webbed.
+ent-PsychBed-name = psychologist bed
+ent-PsychBed-desc = An upholstered bed for the psychological care of patients.

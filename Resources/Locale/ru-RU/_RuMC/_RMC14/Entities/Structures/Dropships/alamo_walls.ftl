@@ -1,0 +1,9 @@
+ent-CMBaseAlamoWall-name = alamo wall
+ent-CMAlamoWall61-name = port wing weapon attach point
+ent-CMAlamoWall61-desc = A place where heavy equipment can be installed with a powerloader.
+ent-CMAlamoWall65-name = starboard wing weapon attach point
+ent-CMAlamoWall65-desc = A place where heavy equipment can be installed with a powerloader.
+ent-CMAlamoWall84-name = port fore weapon attach point
+ent-CMAlamoWall84-desc = A place where heavy equipment can be installed with a powerloader.
+ent-CMAlamoWall84Flipped-name = starboard fore weapon attach point
+ent-CMAlamoWall84Flipped-desc = A place where heavy equipment can be installed with a powerloader.

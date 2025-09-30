@@ -1,0 +1,14 @@
+ent-RMCCassettePlayer-name = cassette player
+ent-RMCCassettePlayer-desc = A cassette player that first hit the market over 100 years ago. Crazy how these never went out of style.
+ent-RMCCassetteTapeBase-name = cassette
+ent-RMCCassetteTapeBase-desc = A plastic cassette tape.
+ent-RMCCassetteTapeCustom-name = custom cassette
+ent-RMCCassetteTapeWigWoo1-name = WigWoo1 cassette
+ent-RMCCassetteTapeMendax-name = Mendax cassette
+ent-RMCCassetteTapeNighty-name = Nighty cassette
+ent-RMCCassetteTapeGoodShowOldChap-name = GoodShowOldChap cassette
+ent-RMCCassetteTapeRedQwesta-name = Qwesta cassette
+ent-RMCCassetteTapeBolgarich-name = Bolgarich cassette
+ent-RMCCassetteTapeQwertyquerty-name = Qwertyquerty cassette
+ent-RMCCassetteTapeQwertyquerty-desc = A plastic cassette tape.
+ent-RMCCassetteTapePigeonBeans-name = PigeonBeans cassette

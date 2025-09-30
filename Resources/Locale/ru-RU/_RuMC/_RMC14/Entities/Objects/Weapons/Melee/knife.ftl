@@ -1,0 +1,12 @@
+ent-RMCM5Bayonet-name = M5 'Night Raider' bayonet
+ent-RMCM5Bayonet-desc = The standard-issue bayonet of the Marines. You can slide this knife into your boots, or attach it to the end of a rifle.
+ent-CMM11Knife-name = M11 throwing knife
+ent-CMM11Knife-desc = A military knife designed to be thrown at the enemy.
+ent-CMM2132Machete-name = M2132 machete
+ent-CMM2132Machete-desc = Latest issue of the Marine Machete.
+ent-RMCCeremonialSword-name = ceremonial sabre
+ent-RMCCeremonialSword-desc = A fancy ceremonial sabre passed down from generation to generation. Despite this, it has been very well cared for, and is in top condition.
+ent-RMCM2100Machete-name = M2100 "Ngájhe" machete
+ent-RMCM2100Machete-desc = An older issue UNMC machete, never left testing. Designed in the Central African Republic. The notching made it hard to clean, and as such the UNMC refused to adopt it - despite the superior bludgeoning power offered.
+ent-RMCStraightRazor-name = straight razor
+ent-RMCStraightRazor-desc = The commandant's favorite weapon against marines who dare break the grooming standards.

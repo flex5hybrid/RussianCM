@@ -1,0 +1,14 @@
+ent-CMAnestheticTank-name = anesthetic tank
+ent-CMAnestheticTank-desc = A tank with an N2O/O2 gas mix.
+ent-CMGasTankHydrogen-name = hydrogen canister
+ent-CMGasTankHydrogen-desc = A canister containing pressurized hydrogen. Can be used to refill storage tanks.
+ent-CMGasTankAmmonia-name = ammonia canister
+ent-CMGasTankAmmonia-desc = A canister containing pressurized ammonia. Can be used to refill storage tanks.
+ent-CMGasTankMethane-name = methane canister
+ent-CMGasTankMethane-desc = A canister containing pressurized methane. Can be used to refill storage tanks.
+ent-CMGasTankPacid-name = polytrinic acid canister
+ent-CMGasTankPacid-desc = A canister containing pressurized polytrinic acid. Can be used to refill storage tanks.
+ent-CMGasTankOxygen-name = oxygen canister
+ent-CMGasTankOxygen-desc = A canister containing pressurized oxygen. Can be used to refill storage tanks.
+ent-RMCGasTankPhoron-name = phoron tank
+ent-RMCGasTankPhoron-desc = A tank of liquid phoron. WARNING: Phumes are extremely dangerous.

@@ -1,0 +1,14 @@
+ent-RMCAirScrubberPortable-name = portable air scrubber
+ent-RMCAirScrubberPortable-desc = It scrubs, portably!
+ent-RMCAirScrubberStationary-name = stationary air scrubber
+ent-RMCAirScrubberStationary-desc = It's large and securely attached.
+ent-RMCAirPumpPortable-name = portable air pump
+ent-RMCAirPumpPortable-desc = A movable pump that can move air around.
+ent-RMCAirPumpStationary-name = stationary air pump
+ent-RMCAirPumpStationary-desc = It's large and securely attached.
+ent-RMCRadiator-name = radiator
+ent-RMCRadiator-desc = It's a radiator. It heats the room through convection with hot water.
+ent-RMCRadiatorRed-name = radiator
+ent-RMCRadiatorRed-desc = It's a radiator. It heats the room through convection with hot water. This one has a red handle.
+ent-RMCSpaceHeater-name = space heater
+ent-RMCSpaceHeater-desc = It's an electric space heater. It heats the room through radiation with electricity.

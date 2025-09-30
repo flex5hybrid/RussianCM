@@ -1,0 +1,14 @@
+ent-WeaponRifleM4SPRCustom-name = M4SPR custom battle rifle
+ent-WeaponRifleM4SPRCustom-desc = An improvement over the already great M4SPR. Able to take A19 rounds, as well as having better control and accuracy at the cost of being harder to use. Can take traditional M4SPR mags, at lower damage.
+ent-RMCMagazineRifleM4SPRA19-name = A19 HV magazine (10x24mm)
+ent-RMCMagazineRifleM4SPRA19-desc = A magazine of A19 high velocity rounds for use in the M4SPR custom battle rifle. The M4SPR custom battle rifle is the only gun that can chamber these rounds.
+ent-RMCMagazineRifleM4SPRA19Impact-name = A19 HV high impact magazine (10x24mm)
+ent-RMCMagazineRifleM4SPRA19Impact-desc = A magazine of A19 HV high impact rounds for use in the M4SPR custom battle rifle. The M4SPR custom battle rifle is the only gun that can chamber these rounds.
+ent-RMCMagazineRifleM4SPRA19Incendiary-name = A19 HV incendiary magazine (10x24mm)
+ent-RMCMagazineRifleM4SPRA19Incendiary-desc = A magazine of A19 HV incendiary rounds for use in the M4SPR custom battle rifle. The M4SPR custom battle rifle is the only gun that can chamber these rounds.
+ent-RMCCartridgeRifleM4SPRA19-name = cartridge (A19 high-velocity)
+ent-RMCCartridgeRifleM4SPRA19-desc = A high-velocity A19 cartridge. Fits in M4SPR custom magazines.
+ent-RMCCartridgeRifleM4SPRA19Impact-name = cartridge (A19 high-velocity high impact)
+ent-RMCCartridgeRifleM4SPRA19Impact-desc = A high-velocity high impact A19 cartridge. Fits in M4SPR custom magazines.
+ent-RMCCartridgeRifleM4SPRA19Incendiary-name = cartridge (A19 high-velocity incendiary)
+ent-RMCCartridgeRifleM4SPRA19Incendiary-desc = A high-velocity incendiary A19 cartridge. Fits in M4SPR custom magazines.

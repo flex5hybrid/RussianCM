@@ -1,0 +1,11 @@
+ent-RMCPillCanisterNoSkill-name = pill bottle
+ent-RMCPillCanisterNoSkill-desc = It's an airtight container for storing medication.
+ent-RMCPillCanisterBicaridineNoSkill-name = bicaridine pill bottle
+ent-RMCPillCanisterMeralyneBicaridineNoSkill-name = meralyne-bicaridine pill bottle
+ent-CMPillCanisterDexalin-name = dexalin pill bottle
+ent-CMPillCanisterDylovene-name = dylovene pill bottle
+ent-RMCPillCanisterInaprovalineNoSkill-name = inaprovaline pill bottle
+ent-RMCPillCanisterKelotaneNoSkill-name = kelotane pill bottle
+ent-RMCPillCanisterKelotaneDermalineNoSkill-name = kelotane-dermaline pill bottle
+ent-CMPillCanisterTricordrazine-name = tricordrazine pill bottle
+ent-RMCPillCanisterRussianRed-name = Russian red pill bottle

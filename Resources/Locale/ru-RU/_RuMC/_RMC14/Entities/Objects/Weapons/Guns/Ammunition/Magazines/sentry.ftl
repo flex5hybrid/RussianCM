@@ -1,0 +1,10 @@
+ent-RMCMagazineSentry-name = M30 ammo drum (10x28mm Caseless)
+ent-RMCMagazineSentry-desc = An ammo drum of 500 10x28mm caseless rounds for the UN 571-C Sentry Gun. Just feed it into the sentry gun's ammo port when its ammo is depleted.
+ent-RMCMagazineSentryShotgun-name = 12g buckshot drum
+ent-RMCMagazineSentryShotgun-desc = An ammo drum of 50 12g buckshot shells for the UN 12-G Shotgun Sentry. Just feed it into the sentry gun's ammo port when its ammo is depleted.
+ent-RMCMagazineSentryFire-name = sentry incinerator fuel tank
+ent-RMCMagazineSentryFire-desc = A fuel tank of Ultra Thick Napthal Fuel, used in the UN 45-FM. Contains 100 units of fuel.
+ent-RMCMagazineSentryFireBlue-name = sentry incinerator fuel tank
+ent-RMCMagazineSentryFireBlue-desc = A fuel tank of usually Ultra Thick Napthal Fuel, a sticky combustible liquid chemical, used in the UN 55-FA.
+ent-RMCMagazineSentryFireSmoke-name = sentry incinerator fuel tank
+ent-RMCMagazineSentryFireSmoke-desc = A fuel tank of compressed Ultra Thick Napthal Fuel, used in the UN 60-FP.

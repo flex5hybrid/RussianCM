@@ -1,0 +1,14 @@
+ent-RMCPlanetLV624-name = LV-624
+ent-RMCPlanetSolaris-name = Solaris Ridge
+ent-RMCPlanetShiva-name = Shivas Snowball
+ent-RMCPlanetFiorina-name = Fiorina Science Annex
+ent-RMCPlanetTrijent-name = Trijent Dam
+ent-RMCPlanetVaradero-name = New Varadero
+ent-RMCPlanetKutjevo-name = Kutjevo Refinery
+ent-RMCPlanetChances-name = LV-522 Chance's Claim
+ent-RMCPlanetHybrisa-name = LV-759 Hybrisa Prospera
+ent-RMCPlanetSorokyne-name = LV-976 Sorokyne Strata
+ent-RMCPlanetArcticValley-name = Arctic Valley
+ent-RMCPlanetCorsat-name = CORSAT
+ent-RMCPlanetHybrisaRepaired-name = LV-759 Hybrisa Prospera (Repaired)
+ent-RMCPlanetSorokyneRepaired-name = LV-976 - Sorokyne Strata (Repaired)

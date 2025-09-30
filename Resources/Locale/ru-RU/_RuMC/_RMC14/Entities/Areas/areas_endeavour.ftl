@@ -1,0 +1,14 @@
+ent-RMCAreaEndeavour-name = UNS Endeavour
+ent-RMCAreaEndeavourBrief-name = Briefing Hall
+ent-RMCAreaEndeavourDormitory-name = Dormitory
+ent-RMCAreaEndeavourCommandDeck-name = Command Deck
+ent-RMCAreaEndeavourMess-name = Mess Hall
+ent-RMCAreaEndeavourHypersleepStorage-name = Hypersleep Storage
+ent-RMCAreaEndeavourMaintenance-name = Maintenance
+ent-RMCAreaEndeavourPrep-name = Gear Racks
+ent-RMCAreaEndeavourMedical-name = Infirmary
+ent-RMCAreaEndeavourHangar-name = Hangar
+ent-RMCAreaEndeavourSupply-name = Supply Bay
+ent-RMCAreaEndeavourAICore-name = ARES AI Core
+ent-RMCAreaEndeavourSyntheticStorage-name = Synthetic Storage
+ent-RMCAreaEndeavourOOB-name = Out Of Bounds

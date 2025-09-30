@@ -1,0 +1,13 @@
+ent-XenoBaseProjectile-name = projectile
+ent-XenoSpitProjectile-name = spit
+ent-XenoSlowingSpitProjectile-name = slowing spit
+ent-XenoQueenNeuroSpitProjectile-name = neurotoxic spit
+ent-XenoScatteredSpitProjectile-name = scattered spit
+ent-XenoBoneChipsProjectile-name = bone chips
+ent-XenoBombardAcidProjectile-name = glob of acid gas
+ent-CMGuidebookXenoBombardAcidProjectile-name = Acid Glob
+ent-XenoBombardNeurotoxinProjectile-name = glob of neurotoxin gas
+ent-CMGuidebookXenoBombardNeurotoxinProjectile-name = Neurotoxin Glob
+ent-XenoAcidBallProjectile-name = acid ball
+ent-XenoAcidBallProjectile-desc = A small, pulsating ball of gas.
+ent-XenoOppressorTailHook-name = tail hook

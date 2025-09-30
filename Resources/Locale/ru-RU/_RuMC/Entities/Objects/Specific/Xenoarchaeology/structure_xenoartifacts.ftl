@@ -1,0 +1,1 @@
+ent-BaseXenoArtifactStructure-name = artifact

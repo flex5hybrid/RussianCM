@@ -1,0 +1,16 @@
+ent-RMCPouchMedicalSoc-name = tactical medical pouch
+ent-RMCPouchMedicalSoc-desc = A heavy pouch containing everything one needs to get themselves back on their feet. Quite the selection.
+ent-RMCPouchMedicalSocDutch-name = Dutch's Medical Pouch
+ent-RMCPouchMedicalSocDutch-desc = A pouch bought from a black market trader by Dutch quite a few years ago. Rumoured to be stolen from secret Marine assets. Its contents have been slowly used up and replaced over the years.
+ent-RMCPouchMedicalSocDutchUnmarked-name = tactical medical pouch
+ent-RMCPouchMedicalSocDutchUnmarked-desc = A heavy pouch containing everything one needs to get themselves back on their feet. Quite the selection. Somehow, the whole pouch manages to look classified, you feel like you're going to get court-marshalled for even looking at it.
+ent-RMCPouchFirstResponder-name = first responder pouch
+ent-RMCPouchFirstResponder-desc = A pouch designed for carrying supplies to assist medical personnel and quickly respond to injuries on the battlefield without immediately treating them. Can hold supplies such as roller beds, stasis bags, and health analysers.
+ent-RMCPouchVial-name = vial pouch
+ent-RMCPouchVial-desc = A pouch for carrying glass vials.
+ent-RMCPouchChem-name = chemist pouch
+ent-RMCPouchChem-desc = A pouch for carrying glass beakers.
+ent-RMCPouchAutoinjector-name = auto-injector pouch
+ent-RMCPouchAutoinjector-desc = A pouch specifically for auto-injectors.
+ent-RMCPouchSyringe-name = syringe pouch
+ent-RMCPouchSyringe-desc = It can carry syringes.

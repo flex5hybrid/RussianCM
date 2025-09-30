@@ -1,0 +1,13 @@
+ent-RMCTablePartBase-name = table parts
+ent-RMCTablePartBase-desc = A kit for a table, including a large, flat metal surface and four legs. Some assembly required.
+ent-RMCTablePartTan-name = tan table parts
+ent-RMCTablePartReinforced-name = reinforced table parts
+ent-RMCTablePartReinforced-desc = A kit for a table, including a large, flat metal surface and four legs. This kit has side panels. Some assembly required.
+ent-RMCTablePartWood-name = wooden table parts
+ent-RMCTablePartWood-desc = A kit for a table, including a large, flat wooden surface and four legs. Some assembly required.
+ent-RMCTablePartWoodPoor-name = poor wooden table parts
+ent-RMCTablePartWoodPoor-desc = A kit for a poorly crafted table, including a large, flat wooden surface and four legs. Some assembly required.
+ent-RMCTablePartWoodFancy-name = fancy wooden table parts
+ent-RMCTablePartWoodFancy-desc = A kit for a finely crafted mahogany table, including a large, flat wooden surface and four legs. Some assembly required.
+ent-RMCTablePartGambling-name = gambling table parts
+ent-RMCTablePartAlmayer-name = gray table parts
