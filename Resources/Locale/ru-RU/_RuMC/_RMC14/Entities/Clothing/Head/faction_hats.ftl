@@ -1,3 +1,5 @@
+ent-RMCHeadBeret = берет
+  .desc = Не защищает голову от пуль.
 ent-RMCHeadUNMCHeadset = гарнитура КМП
   .desc = Гарнитура, обычно используемая радистами и офицерами. Эта, кажется, неисправна.
 ent-RMCHeadBeretQuartermaster = берет квартирмейстера КМП

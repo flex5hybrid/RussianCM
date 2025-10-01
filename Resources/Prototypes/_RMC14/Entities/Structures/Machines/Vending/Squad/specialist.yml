@@ -3,136 +3,136 @@
   abstract: true
   id: RMCVendorWeaponsSpecialistGearBase
   components:
-  - type: CMAutomatedVendor
-    jobs:
-    - CMWeaponsSpecialist
-    pointsType: Specialist
-    sections:
-    - name: Weapons Specialist Sets
-      takeOne: SquadSpecKit
-      sharedSpecLimit: 2 # 2 as requested until Pyro is added
-      entries:
-      - id: RMCDemoSpecEquipmentCase
-        giveSquadRoleName: rmc-job-name-weapons-specialist-demo
-        isAppendSquadRoleName: false
-        givePrefix: rmc-job-prefix-weapons-specialist-demo
-        isAppendPrefix: true
-        giveIcon:
-          sprite: _RMC14/Interface/cm_job_icons.rsi
-          state: hudsquad_spec_demo
-        giveMapBlip:
-          sprite: /Textures/_RMC14/Interface/map_blips.rsi
-          state: spec_demo
-      - id: RMCGrenadeSpecEquipmentCase
-        giveSquadRoleName: rmc-job-name-weapons-specialist-grenadier
-        isAppendSquadRoleName: false
-        givePrefix: rmc-job-prefix-weapons-specialist-grenadier
-        isAppendPrefix: true
-        giveIcon:
-          sprite: _RMC14/Interface/cm_job_icons.rsi
-          state: hudsquad_spec_grenadier
-        giveMapBlip:
-          sprite: /Textures/_RMC14/Interface/map_blips.rsi
-          state: spec_grenadier
-      #  points: 0
-      #- id: PyroSet
-      #  points: 0
-      # Don't forget to give Pyro his own role name and icons
-      - id: RMCScoutSpecEquipmentCase
-        giveSquadRoleName: rmc-job-name-weapons-specialist-scout
-        isAppendSquadRoleName: false
-        givePrefix: rmc-job-prefix-weapons-specialist-scout
-        isAppendPrefix: true
-        # maybe scout should come up with his own icons
-      - id: CMSniperEquipmentCase
-        giveSquadRoleName: rmc-job-name-weapons-specialist-sniper
-        isAppendSquadRoleName: false
-        givePrefix: rmc-job-prefix-weapons-specialist-sniper
-        isAppendPrefix: true
-        giveIcon:
-          sprite: _RMC14/Interface/cm_job_icons.rsi
-          state: hudsquad_spec_sniper
-        giveMapBlip:
-          sprite: /Textures/_RMC14/Interface/map_blips.rsi
-          state: spec_sniper
-        linkedEntries:
-        - RMCAntiMaterielEquipmentCase
-      - id: RMCAntiMaterielEquipmentCase
-        giveSquadRoleName: rmc-job-name-weapons-specialist-anti-materiel-sniper
-        isAppendSquadRoleName: false
-        givePrefix: rmc-job-prefix-weapons-specialist-anti-materiel-sniper
-        isAppendPrefix: true
-        giveIcon:
-          sprite: _RMC14/Interface/cm_job_icons.rsi
-          state: hudsquad_spec_anti_materiel_sniper
-        giveMapBlip:
-          sprite: /Textures/_RMC14/Interface/map_blips.rsi
-          state: spec_anti_materiel_sniper
-        linkedEntries:
-        - CMSniperEquipmentCase
-    - name: Extra Scout Ammunition
-      entries:
-      - id: RMCMagazineRifleM4SPRA19Impact
-        points: 40
-      - id: RMCMagazineRifleM4SPRA19Incendiary
-        points: 40
-      - id: RMCMagazineRifleM4SPRA19
-        points: 40
-    - name: Extra Sniper Ammunition
-      entries:
-      - id: CMMagazineSniperM96SFlak
-        points: 40
-      - id: CMMagazineSniperM96SIncendiary
-        points: 40
-      - id: CMMagazineSniperM96S
-        points: 40
-      - id: RMCMagazineSniperXM43E1AntiMateriel
-        points: 40
-    - name: Extra Demolitionist Ammunition
-      entries:
-      - id: RMCRocket84mmAntiArmor
-        points: 40
-      - id: RMCRocket84mm
-        points: 40
-    #- id: 84mmWhitePhosphorusRocket
-    #  points: 40
-    - name: Extra Grenades
-      entries:
-      - id: CMGrenadeHighExplosive
-        name: M40 HEDP Blast Grenades (x6)
-        points: 40
-        spawn: 6
-      - id: CMGrenadeFrag # TODO RMC14 hefa and smoke temporarily until normal options are coded
-        name: M40 HEFA Frag Grenades (x6)
-        points: 40
-        spawn: 6
-      - id: CMGrenadeSmoke
-        name: M40 HSDP Smoke Grenades (x6)
-        points: 20
-        spawn: 6
-      - id: RMCGrenadeIncendiary
-        name: M40 HIDP Incendiary Grenades (x6)
-        points: 40
-        spawn: 6
-      #- id: M40HPDPWhitePhosphorusGrenadesx6
+    - type: CMAutomatedVendor
+      jobs:
+        - CMWeaponsSpecialist
+      pointsType: Specialist
+      sections:
+        - name: Наборы специалиста по вооружению
+          takeOne: SquadSpecKit
+          sharedSpecLimit: 2 # 2 as requested until Pyro is added
+          entries:
+            - id: RMCDemoSpecEquipmentCase
+              giveSquadRoleName: rmc-job-name-weapons-specialist-demo
+              isAppendSquadRoleName: false
+              givePrefix: rmc-job-prefix-weapons-specialist-demo
+              isAppendPrefix: true
+              giveIcon:
+                sprite: _RMC14/Interface/cm_job_icons.rsi
+                state: hudsquad_spec_demo
+              giveMapBlip:
+                sprite: /Textures/_RMC14/Interface/map_blips.rsi
+                state: spec_demo
+            - id: RMCGrenadeSpecEquipmentCase
+              giveSquadRoleName: rmc-job-name-weapons-specialist-grenadier
+              isAppendSquadRoleName: false
+              givePrefix: rmc-job-prefix-weapons-specialist-grenadier
+              isAppendPrefix: true
+              giveIcon:
+                sprite: _RMC14/Interface/cm_job_icons.rsi
+                state: hudsquad_spec_grenadier
+              giveMapBlip:
+                sprite: /Textures/_RMC14/Interface/map_blips.rsi
+                state: spec_grenadier
+            #  points: 0
+            #- id: PyroSet
+            #  points: 0
+            # Don't forget to give Pyro his own role name and icons
+            - id: RMCScoutSpecEquipmentCase
+              giveSquadRoleName: rmc-job-name-weapons-specialist-scout
+              isAppendSquadRoleName: false
+              givePrefix: rmc-job-prefix-weapons-specialist-scout
+              isAppendPrefix: true
+              # maybe scout should come up with his own icons
+            - id: CMSniperEquipmentCase
+              giveSquadRoleName: rmc-job-name-weapons-specialist-sniper
+              isAppendSquadRoleName: false
+              givePrefix: rmc-job-prefix-weapons-specialist-sniper
+              isAppendPrefix: true
+              giveIcon:
+                sprite: _RMC14/Interface/cm_job_icons.rsi
+                state: hudsquad_spec_sniper
+              giveMapBlip:
+                sprite: /Textures/_RMC14/Interface/map_blips.rsi
+                state: spec_sniper
+              linkedEntries:
+                - RMCAntiMaterielEquipmentCase
+            - id: RMCAntiMaterielEquipmentCase
+              giveSquadRoleName: rmc-job-name-weapons-specialist-anti-materiel-sniper
+              isAppendSquadRoleName: false
+              givePrefix: rmc-job-prefix-weapons-specialist-anti-materiel-sniper
+              isAppendPrefix: true
+              giveIcon:
+                sprite: _RMC14/Interface/cm_job_icons.rsi
+                state: hudsquad_spec_anti_materiel_sniper
+              giveMapBlip:
+                sprite: /Textures/_RMC14/Interface/map_blips.rsi
+                state: spec_anti_materiel_sniper
+              linkedEntries:
+                - CMSniperEquipmentCase
+        - name: Дополнительный БК разведчика
+          entries:
+            - id: RMCMagazineRifleM4SPRA19Impact
+              points: 40
+            - id: RMCMagazineRifleM4SPRA19Incendiary
+              points: 40
+            - id: RMCMagazineRifleM4SPRA19
+              points: 40
+        - name: Дополнительный БК снайпера
+          entries:
+            - id: CMMagazineSniperM96SFlak
+              points: 40
+            - id: CMMagazineSniperM96SIncendiary
+              points: 40
+            - id: CMMagazineSniperM96S
+              points: 40
+            - id: RMCMagazineSniperXM43E1AntiMateriel
+              points: 40
+        - name: Дополнительный БК подрывника
+          entries:
+            - id: RMCRocket84mmAntiArmor
+              points: 40
+            - id: RMCRocket84mm
+              points: 40
+        #- id: 84mmWhitePhosphorusRocket
+        #  points: 40
+        - name: Дополнительные гранаты
+          entries:
+            - id: CMGrenadeHighExplosive
+              name: гранаты M40 HEDP (x6)
+              points: 40
+              spawn: 6
+            - id: CMGrenadeFrag # TODO RMC14 hefa and smoke temporarily until normal options are coded
+              name: гранаты M40 HEFA (x6)
+              points: 40
+              spawn: 6
+            - id: CMGrenadeSmoke
+              name: дымовые гранаты M40 HSDP (x6)
+              points: 20
+              spawn: 6
+            - id: RMCGrenadeIncendiary
+              name: зажигательные гранаты M40 HIDP (x6)
+              points: 40
+              spawn: 6
+            #- id: M40HPDPWhitePhosphorusGrenadesx6
+            #  points: 40
+            - id: RMC40MMGrenadeM74AGMF
+              points: 40
+              spawn: 6
+            - id: RMC40MMGrenadeM74AGMI
+              points: 40
+              spawn: 6
+            - id: RMC40MMGrenadeM74AGMS
+              points: 20
+              spawn: 6
+        - name: Дополнительные баки топлива
+          entries: []
+      #- id: LargeIncineratorTank
       #  points: 40
-      - id: RMC40MMGrenadeM74AGMF
-        points: 40
-        spawn: 6
-      - id: RMC40MMGrenadeM74AGMI
-        points: 40
-        spawn: 6
-      - id: RMC40MMGrenadeM74AGMS
-        points: 20
-        spawn: 6
-    - name: Extra Flamethrower Tanks
-      entries: [ ]
-    #- id: LargeIncineratorTank
-    #  points: 40
-    #- id: LargeIncineratorTankB GreenFlame
-    #  points: 40
-    #- id: LargeIncineratorTankX BlueFlame
-    #  points: 40
+      #- id: LargeIncineratorTankB GreenFlame
+      #  points: 40
+      #- id: LargeIncineratorTankX BlueFlame
+      #  points: 40
 
 - type: entity
   parent: [ColMarTechBase, RMCVendorWeaponsSpecialistGearBase]
@@ -140,12 +140,12 @@
   name: ColMarTech squad weapons specialist gear rack
   description: An automated gear rack for Squad Weapons Specialists.
   components:
-  - type: RMCVendorSpecialist
-  - type: AccessReader
-    access:
-    - [ "CMAccessSpecPrep" ]
-  - type: Sprite
-    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/specialist_gear.rsi
+    - type: RMCVendorSpecialist
+    - type: AccessReader
+      access:
+        - ["CMAccessSpecPrep"]
+    - type: Sprite
+      sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/specialist_gear.rsi
 
 - type: entity
   parent: [BaseItem, RMCVendorWeaponsSpecialistGearBase]
@@ -153,24 +153,24 @@
   name: specialist kit
   description: A paper box. Open it and get a specialist kit.
   components:
-  - type: Sprite
-    sprite: _RMC14/Objects/loadout_kits.rsi
-    layers:
-    - state: closed
-      map: [ base ]
-  - type: AccessReader
-    access:
-    - [ "CMAccessSpecPrep" ]
-  - type: UserInterface
-    interfaces:
-      enum.CMAutomatedVendorUI.Key:
-        type: CMAutomatedVendorBui
-  - type: ActivatableUI
-    key: enum.CMAutomatedVendorUI.Key
-  - type: ActivatableUIRequiresAccess
-  - type: CMAutomatedVendor
-    jobs:
-    - CMWeaponsSpecialist
+    - type: Sprite
+      sprite: _RMC14/Objects/loadout_kits.rsi
+      layers:
+        - state: closed
+          map: [base]
+    - type: AccessReader
+      access:
+        - ["CMAccessSpecPrep"]
+    - type: UserInterface
+      interfaces:
+        enum.CMAutomatedVendorUI.Key:
+          type: CMAutomatedVendorBui
+    - type: ActivatableUI
+      key: enum.CMAutomatedVendorUI.Key
+    - type: ActivatableUIRequiresAccess
+    - type: CMAutomatedVendor
+      jobs:
+        - CMWeaponsSpecialist
 
 - type: entity
   parent: ColMarTechBase
@@ -178,162 +178,162 @@
   name: ColMarTech squad weapons specialist equipment rack
   description: An automated rack hooked up to a colossal storage of Squad Weapons Specialist standard-issue equipment.
   components:
-  - type: AccessReader
-    access:
-    - [ "CMAccessSpecPrep" ]
-  - type: Sprite
-    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
-  - type: CMAutomatedVendor
-    jobs:
-    - CMWeaponsSpecialist
-    sections:
-    - name: Standard Equipment
-      takeAll: CMStandard
-      entries:
-      - id: CMVendorBundleWeaponsSpecialistApparel
-      - id: CMMRE
-      #- id: CMMap # TODO: Make a map
-    - name: Backpack
-      choices: { CMBackpack: 1 }
-      entries:
-      - id: CMBackpackMarine
-      - id: CMSatchelMarine
-        recommended: true
-    - name: Belt
-      choices: { CMBelt: 1 }
-      entries:
-      - id: RMCBeltUtilityGeneral
-      - id: CMBeltMarine
-      - id: RMCBeltHolsterPistol
-      - id: RMCBeltHolsterM13
-      - id: RMCBeltHolsterRevolver
-      - id: RMCBeltHolsterSMG
-      - id: RMCBeltHolsterSMGPouch
-      - id: RMCM82FHolster
-      - id: RMCM276ShotgunShellLoadingRig
-    - name: Pouches
-      choices: { RMCPouch: 2 }
-      entries:
-      - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
-        recommended: true
-      - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
-        recommended: true
-      - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
-        recommended: true
-      - id: RMCPouchFlareFilled
-        name: Flare pouch (Full)
-      - id: RMCPouchMagazine
-        recommended: true
-      - id: RMCPouchShotgun
-#        recommended: true
-      - id: RMCPouchMagazinePistolLarge
-      - id: RMCPouchGeneralMedium
-      - id: RMCPouchPistol
-      #- id: CMSlingPouch
-    - name: Accessories
-      choices: { CMAccessories: 1 }
-      entries:
-      - id: CMWebbingBrown
-        recommended: true
-      - id: CMWebbingBlack
-      - id: RMCWebbingLegPouch
-      - id: RMCWebbingLegPouchBlack
-      - id: CMWebbing
-      - id: RMCWebbingBlackSmall
-      - id: RMCWebbingDropPouch
-      - id: RMCWebbingDropPouchBlack
-      - id: CMWebbingHolster
-    - name: Mask
-      choices: { CMMask: 1 }
-      entries:
-      - id: CMMaskGas
-      - id: CMMaskCoif
-      - id: RMCMaskRebreather
-    - name: Restricted Firearms
-      entries:
-      - id: RMCGunCasePistolMK80
-        points: 15
-      - id: RMCGunCasePistolSmart
-        points: 15
-    - name: Sidearm Ammunition
-      entries:
-      - id: RMCMagazinePistolM13Ext
-        points: 10
-      - id: RMCMagazinePistolM13Drum
-        points: 15
-      # - id: RMCSpeedLoader44Heavy
-      #  points: 10
-      - id: RMCSpeedLoader44Marksman
-        points: 10
-      - id: RMCMagazinePistolM1984HP
-        points: 5
-      - id: RMCMagazinePistolM1984AP
-        points: 5
-      - id: CMMagazinePistolMK80
-        points: 5
-      - id: RMCMagazinePistolSU6
-        points: 10
-    - name: Clothing Items
-      entries:
-      - id: RMCScabbardMacheteFilled
-        name: machete scabbard (Full)
-        points: 6
-      - id: RMCPouchMacheteFilled
-        name: machete pouch (Full)
-        points: 15
-      - id: RMCBackpackRTO
-        points: 15
-      - id: RMCPouchFuelTank
-        points: 5
-      - id: RMCWeldingGoggles
-        points: 3
-      - id: RMCPouchGeneralLarge
-        points: 10
-      - id: CMBeltUtilityCombat
-        points: 15
-      - id: RMCPouchAutoinjectorFill
-        name: autoinjector pouch (Full)
-        points: 15
-    - name: Utilities
-      entries:
-      - id: CMRollerBedSpawnFolded
-        points: 5
-      - id: RMCFulton20
-        points: 5
-      - id: CMFireExtinguisherPortable
-        points: 5
-      - id: RMCMotionDetector
-        points: 10
-      - id: RMCWhistle
-        points: 5
-    - name: Binoculars
-      entries:
-      - id: RMCBinoculars
-        points: 5
-      - id: RMCLaserDesignator
-        points: 15
-    - name: Helmet Optics
-      entries:
-      - id: RMCVisorMedical
-        points: 15
-      - id: RMCVisorWelding
-        points: 5
-    - name: Pamphlets
-      entries:
-      - id: CMPamphletJTAC
-        points: 15
-      - id: CMPamphletEngineer
-        points: 15
-    - name: Radio Keys
-      entries:
-      - id: CMEncryptionKeyEngineer
-        points: 5
-      - id: CMEncryptionKeyIntel
-        points: 5
-      - id: CMEncryptionKeyJTAC
-        points: 5
-      - id: CMEncryptionKeyRequisition
-        points: 5
+    - type: AccessReader
+      access:
+        - ["CMAccessSpecPrep"]
+    - type: Sprite
+      sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
+    - type: CMAutomatedVendor
+      jobs:
+        - CMWeaponsSpecialist
+      sections:
+        - name: Standard Equipment
+          takeAll: CMStandard
+          entries:
+            - id: CMVendorBundleWeaponsSpecialistApparel
+            - id: CMMRE
+          #- id: CMMap # TODO: Make a map
+        - name: Backpack
+          choices: { CMBackpack: 1 }
+          entries:
+            - id: CMBackpackMarine
+            - id: CMSatchelMarine
+              recommended: true
+        - name: Belt
+          choices: { CMBelt: 1 }
+          entries:
+            - id: RMCBeltUtilityGeneral
+            - id: CMBeltMarine
+            - id: RMCBeltHolsterPistol
+            - id: RMCBeltHolsterM13
+            - id: RMCBeltHolsterRevolver
+            - id: RMCBeltHolsterSMG
+            - id: RMCBeltHolsterSMGPouch
+            - id: RMCM82FHolster
+            - id: RMCM276ShotgunShellLoadingRig
+        - name: Pouches
+          choices: { RMCPouch: 2 }
+          entries:
+            - id: RMCPouchFirstAidInjectors
+              name: подсумок первой помощи (инъекторы)
+              recommended: true
+            - id: RMCPouchFirstAidSplintsGauzeOintment
+              name: подсумок первой помощи (бинт, мазь) # TODO RMC14 splints comma
+              recommended: true
+            - id: RMCPouchFirstAidPills
+              name: подсумок первой помощи (таблетки)
+              recommended: true
+            - id: RMCPouchFlareFilled
+              name: подсумок фаеров (заполненный)
+            - id: RMCPouchMagazine
+              recommended: true
+            - id: RMCPouchShotgun
+            #        recommended: true
+            - id: RMCPouchMagazinePistolLarge
+            - id: RMCPouchGeneralMedium
+            - id: RMCPouchPistol
+          #- id: CMSlingPouch
+        - name: Accessories
+          choices: { CMAccessories: 1 }
+          entries:
+            - id: CMWebbingBrown
+              recommended: true
+            - id: CMWebbingBlack
+            - id: RMCWebbingLegPouch
+            - id: RMCWebbingLegPouchBlack
+            - id: CMWebbing
+            - id: RMCWebbingBlackSmall
+            - id: RMCWebbingDropPouch
+            - id: RMCWebbingDropPouchBlack
+            - id: CMWebbingHolster
+        - name: Mask
+          choices: { CMMask: 1 }
+          entries:
+            - id: CMMaskGas
+            - id: CMMaskCoif
+            - id: RMCMaskRebreather
+        - name: Restricted Firearms
+          entries:
+            - id: RMCGunCasePistolMK80
+              points: 15
+            - id: RMCGunCasePistolSmart
+              points: 15
+        - name: Sidearm Ammunition
+          entries:
+            - id: RMCMagazinePistolM13Ext
+              points: 10
+            - id: RMCMagazinePistolM13Drum
+              points: 15
+            # - id: RMCSpeedLoader44Heavy
+            #  points: 10
+            - id: RMCSpeedLoader44Marksman
+              points: 10
+            - id: RMCMagazinePistolM1984HP
+              points: 5
+            - id: RMCMagazinePistolM1984AP
+              points: 5
+            - id: CMMagazinePistolMK80
+              points: 5
+            - id: RMCMagazinePistolSU6
+              points: 10
+        - name: Clothing Items
+          entries:
+            - id: RMCScabbardMacheteFilled
+              name: подсумок мачете (полный)
+              points: 6
+            - id: RMCPouchMacheteFilled
+              name: подсумок мачете (Заполненный)
+              points: 15
+            - id: RMCBackpackRTO
+              points: 15
+            - id: RMCPouchFuelTank
+              points: 5
+            - id: RMCWeldingGoggles
+              points: 3
+            - id: RMCPouchGeneralLarge
+              points: 10
+            - id: CMBeltUtilityCombat
+              points: 15
+            - id: RMCPouchAutoinjectorFill
+              name: подсумок автоинъекторов (Заполненный)
+              points: 15
+        - name: Utilities
+          entries:
+            - id: CMRollerBedSpawnFolded
+              points: 5
+            - id: RMCFulton20
+              points: 5
+            - id: CMFireExtinguisherPortable
+              points: 5
+            - id: RMCMotionDetector
+              points: 10
+            - id: RMCWhistle
+              points: 5
+        - name: Binoculars
+          entries:
+            - id: RMCBinoculars
+              points: 5
+            - id: RMCLaserDesignator
+              points: 15
+        - name: Helmet Optics
+          entries:
+            - id: RMCVisorMedical
+              points: 15
+            - id: RMCVisorWelding
+              points: 5
+        - name: Pamphlets
+          entries:
+            - id: CMPamphletJTAC
+              points: 15
+            - id: CMPamphletEngineer
+              points: 15
+        - name: Radio Keys
+          entries:
+            - id: CMEncryptionKeyEngineer
+              points: 5
+            - id: CMEncryptionKeyIntel
+              points: 5
+            - id: CMEncryptionKeyJTAC
+              points: 5
+            - id: CMEncryptionKeyRequisition
+              points: 5

@@ -52,7 +52,9 @@
           choices: { RMCPouch: 2 }
           entries:
             - id: RMCPouchBayonetFill
+              name: ножны для штыка (заполненные)
             - id: RMCPouchFirstAidInjectors
+              name: подсумок первой помощи (инъекторы)
               recommended: true
             - id: RMCPouchFirstAidSplintsGauzeOintment
               name: подсумок первой помощи (бинт, мазь) # TODO RMC14 splints comma

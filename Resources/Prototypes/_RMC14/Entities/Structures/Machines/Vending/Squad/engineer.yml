@@ -43,11 +43,11 @@
             - id: RMCPowerCellHigh
               points: 3
             - id: CMSheetMetal10
-              name: metal x10
+              name: металл x10
               points: 5
               recommended: true
             - id: CMSheetPlasteel10
-              name: plasteel x10
+              name: пласталь x10
               points: 7
               recommended: true
             - id: RMCExplosivePlastic
@@ -56,7 +56,7 @@
               points: 5
               recommended: true
             - id: CMSandbagEmpty25
-              name: sandbags x25
+              name: мешки с песком x25
               points: 10
               recommended: true
             - id: RMCPowerCellSuper
@@ -138,10 +138,10 @@
         - name: Clothing Items
           entries:
             - id: RMCScabbardMacheteFilled
-              name: machete scabbard (Full)
+              name: подсумок мачете (полный)
               points: 6
             - id: RMCPouchMacheteFilled
-              name: machete pouch (Full)
+              name: подсумок мачете (Заполненный)
               points: 8
             - id: RMCBackpackRTO
               points: 15
@@ -239,7 +239,7 @@
           choices: { CMBackpack: 1 }
           entries:
             - id: RMCScabbardMacheteFilled
-              name: machete scabbard (Full)
+              name: подсумок мачете (полный)
             - id: CMBackpackMarineTech
             - id: CMSatchelMarineTech
             - id: CMBackpackWelder
@@ -259,7 +259,7 @@
             - id: RMCM82FHolster
             - id: RMCM276ShotgunShellLoadingRig
             - id: CMBeltUtilityFilled
-              name: M276 pattern toolbelt rig (Full)
+              name: пояс схемы M276 для инструментов (Заполненный)
               # mandatory: true, TODO allow vendors to mark entries as mandatory
             - id: RMCBeltGrenade
             - id: RMCBeltConstruction
@@ -270,26 +270,26 @@
             - id: RMCPouchConstruction
               recommended: true
             - id: RMCPouchFirstAidInjectors
-              name: first-aid pouch (refillable injectors)
+              name: подсумок первой помощи (инъекторы)
               recommended: true
             - id: RMCPouchFirstAidSplintsGauzeOintment
-              name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+              name: подсумок первой помощи (бинт, мазь) # TODO RMC14 splints comma
               recommended: true
             - id: RMCPouchFirstAidPills
-              name: first-aid pouch (pills)
+              name: подсумок первой помощи (таблетки)
               recommended: true
             - id: RMCPouchElectronicsFill
-              name: electronics pouch (Full)
+              name: подсумок электроники (заполненный)
             - id: RMCPouchExplosive
             - id: RMCPouchFlareFilled
-              name: Flare pouch (Full)
+              name: подсумок фаеров (заполненный)
             - id: RMCPouchMagazinePistolLarge
             - id: RMCPouchMagazine
             - id: RMCPouchShotgun
             - id: RMCPouchGeneralMedium
             - id: RMCPouchPistol
             - id: RMCPouchToolsFill
-              name: Tools pouch (Full)
+              name: подсумок инструментов (заполненный)
             - id: RMCPouchEngineerKit
         - name: Accessories
           choices: { CMAccessories: 1 }
@@ -305,7 +305,7 @@
             - id: RMCWebbingDropPouchBlack
             - id: CMWebbingHolster
             - id: RMCToolWebbingSmallFilled
-              name: small tool webbing (Full)
+              name: малая разгрузка для инструментов (заполненная)
         - name: Mask
           choices: { CMMask: 1 }
           entries:

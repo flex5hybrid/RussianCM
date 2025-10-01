@@ -1,6 +1,6 @@
-ent-RMCJumpsuitKhakiWorkwear = khaki workwear
-  .desc = A pair of jeans paired with a khaki workshirt. A common pairing among blue-collar workers due to its drab look.
-ent-RMCJumpsuitBlueWorkwear = blue workwear
-  .desc = A pair of brown canvas workpants paired with a dark blue workshirt. A common pairing among blue-collar workers.
-ent-RMCJumpsuitDispatcherUniform = dispatchers uniform
-  .desc = A blue dress shirt and khakis with a small red security patch sewn on.
+ent-RMCMarshalCMBUniform = униформа маршала колонии
+  .desc = Пара бежевых брюк и голубая рубашка на пуговицах с тёмно-коричневым галстуком; стандартная униформа маршалов колоний.
+ent-RMCSwatLeaderCMBUniform = униформа маршала отряда подавления беспорядков КМБ
+  .desc = Тёмный тактический комплект униформы, используемый маршалами колоний, предназначенный для подразделений по подавлению беспорядков на отдалённых мирах под юрисдикцией колоний.
+ent-RMCSwatCMBUniform = униформа отряда подавления беспорядков КМБ
+  .desc = Тёмный тактический комплект униформы, используемый маршалами колоний, предназначенный для подразделений по подавлению беспорядков на отдалённых мирах под юрисдикцией колоний.

@@ -14,3 +14,5 @@ ent-RMCShoesFancyLeather = элегантные кожаные туфли
   .desc = Элегантная пара кожаных туфель.
 ent-RMCShoesLaceup = шнурованные туфли
   .desc = Вершина моды, и они уже начищены!
+ent-RMCShoesLaceupBrown = шнурованные туфли
+  .desc = Вершина моды, и они уже начищены!

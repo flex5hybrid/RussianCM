@@ -6,134 +6,134 @@
   name: ColMarTech medical equipment rack
   description: An automated equipment vendor for the Medical Department.
   components:
-  - type: AccessReader
-    access:
-    - [ "CMAccessMedical" ]
-  - type: Sprite
-    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/medical_equipment.rsi
-  - type: CMAutomatedVendor
-    jobs:
-    - CMNurse
-    - CMDoctor
-    - CMResearcher
-    - CMCMO
-    sections:
-    - name: Medical Set (Mandatory)
+    - type: AccessReader
+      access:
+        - ["CMAccessMedical"]
+    - type: Sprite
+      sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/medical_equipment.rsi
+    - type: CMAutomatedVendor
       jobs:
-      - CMDoctor
-      - CMResearcher
-      - CMCMO
-      takeAll: CMMedicalSet
-      entries:
-      - id: RMCVendorBundleCrewMedicalEssentialsDoctor
-    - name: Medical Set (Mandatory)
-      jobs:
-      - CMNurse
-      takeAll: CMMedicalSet
-      entries:
-      - id: CMVendorBundleCrewMedicalEssentialsNurse
-    - name: Standard Equipment
-      takeAll: CMStandard
-      entries:
-      - id: CMHandsLatex
-      - id: CMHeadsetMedical
-    - name: Eyewear
-      choices: { CMEyewear: 1 }
-      entries:
-      - id: RMCGlassesMedicalHUDGlasses
-#      - id: Prescription Medical HUD Glasses
-    - name: Uniform
-      choices: { CMUniform: 1 }
-      entries:
-      - id: CMScrubsGreen
-      - id: CMScrubsBlue
-      - id: RMCScrubsLightBlue
-      - id: CMScrubsPurple
-      - id: RMCScrubsOlive
-      - id: RMCScrubsGrey
-    - name: Suit
-      jobs:
-      - CMNurse
-      choices: { CMSuit: 1 }
-      entries:
-      - id: RMCMedicalApron
-    - name: Suit
-      jobs:
-      - CMDoctor
-      choices: { CMSuit: 1 }
-      entries:
-      - id: RMCLabcoat
-      - id: RMCMedicalApron
-#    - name: Snow gear (Snow use only)
-#      takeall: CMSnowgear
-#      entries:
-#      - id: Snowcoat
-#      - id: Balaclava
-#      - id: Snow Scarf
-    - name: Headwear
-      choices: { CMHeadwear: 1 }
-      entries:
-      - id: CMHeadCapSurgOrange
-      - id: CMHeadCapSurgBlue
-      - id: CMHeadCapSurgPurple
-      - id: CMHeadCapSurgGreen
-    - name: Belt
-      choices: { CMBelt: 1 }
-      entries:
-      - id: CMBeltMedicBagFilled
-        name: M276 pattern lifesaver bag (Full)
-      - id: CMBeltMedicalFilled
-        name: M276 pattern medical storage rig (Full)
-    - name: Backpack
-      choices: { CMBackpack: 1 }
-      entries:
-      - id: CMBackpackMarine
-        name: backpack
-      - id: CMSatchelMarine
-        name: satchel
-      - id: CMBackpackMedical
-      - id: CMSatchelMedical
-    - name: Pouches
-      choices: { RMCPouch: 2 }
-      entries:
-      - id: RMCPouchAutoinjector
-      - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
-      - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
-      - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
-      - id: RMCPouchFirstResponder
-      - id: RMCPouchMedical
-      - id: RMCPouchMedkit
-        recommended: true
-      - id: RMCPouchReagentCanisterBicaridine
-        recommended: true
-        name: Pressurized Reagent Canister Pouch\n(Bicaridine)
-      - id: RMCPouchReagentCanisterKelotane
-        recommended: true
-        name: Pressurized Reagent Canister Pouch\n(Kelotane)
-      - id: RMCPouchReagentCanisterTricordrazineRevival
-        recommended: true
-        name: Pressurized Reagent Canister Pouch\n(Revival Mix - Tricordrazine)
-      #      - id: CMPressurizedReagentCanisterPouchPeridaxonRevivalMix
-      #        recommended: true
-      #        name: Pressurized Reagent Canister Pouch\n(Revival Mix - Peridaxon)
-      - id: RMCPouchReagentCanisterTricordrazine
-        recommended: true
-        name: Pressurized Reagent Canister Pouch\n(Tricordrazine)
-      - id: RMCPouchReagentCanister
-        recommended: true
-        name: Pressurized Reagent Canister Pouch\n(EMPTY)
-      #- id: CMSlingPouch
-    - name: Accessories
-      choices: { CMAccessories: 1 }
-      entries:
-      - id: CMWebbingBrown
-      - id: CMWebbingBlack
-      - id: RMCWebbingLegPouch
-      - id: RMCWebbingLegPouchBlack
-      - id: CMWebbing
-      - id: RMCWebbingBlackSmall
-      - id: RMCWebbingDropPouch
-      - id: RMCWebbingDropPouchBlack
+        - CMNurse
+        - CMDoctor
+        - CMResearcher
+        - CMCMO
+      sections:
+        - name: Medical Set (Mandatory)
+          jobs:
+            - CMDoctor
+            - CMResearcher
+            - CMCMO
+          takeAll: CMMedicalSet
+          entries:
+            - id: RMCVendorBundleCrewMedicalEssentialsDoctor
+        - name: Medical Set (Mandatory)
+          jobs:
+            - CMNurse
+          takeAll: CMMedicalSet
+          entries:
+            - id: CMVendorBundleCrewMedicalEssentialsNurse
+        - name: Standard Equipment
+          takeAll: CMStandard
+          entries:
+            - id: CMHandsLatex
+            - id: CMHeadsetMedical
+        - name: Eyewear
+          choices: { CMEyewear: 1 }
+          entries:
+            - id: RMCGlassesMedicalHUDGlasses
+        #      - id: Prescription Medical HUD Glasses
+        - name: Uniform
+          choices: { CMUniform: 1 }
+          entries:
+            - id: CMScrubsGreen
+            - id: CMScrubsBlue
+            - id: RMCScrubsLightBlue
+            - id: CMScrubsPurple
+            - id: RMCScrubsOlive
+            - id: RMCScrubsGrey
+        - name: Suit
+          jobs:
+            - CMNurse
+          choices: { CMSuit: 1 }
+          entries:
+            - id: RMCMedicalApron
+        - name: Suit
+          jobs:
+            - CMDoctor
+          choices: { CMSuit: 1 }
+          entries:
+            - id: RMCLabcoat
+            - id: RMCMedicalApron
+        #    - name: Snow gear (Snow use only)
+        #      takeall: CMSnowgear
+        #      entries:
+        #      - id: Snowcoat
+        #      - id: Balaclava
+        #      - id: Snow Scarf
+        - name: Headwear
+          choices: { CMHeadwear: 1 }
+          entries:
+            - id: CMHeadCapSurgOrange
+            - id: CMHeadCapSurgBlue
+            - id: CMHeadCapSurgPurple
+            - id: CMHeadCapSurgGreen
+        - name: Belt
+          choices: { CMBelt: 1 }
+          entries:
+            - id: CMBeltMedicBagFilled
+              name: пояс схемы M276 медицинский (Заполненный)
+            - id: CMBeltMedicalFilled
+              name: пояс схемы M276 медицинский (заполненный)
+        - name: Backpack
+          choices: { CMBackpack: 1 }
+          entries:
+            - id: CMBackpackMarine
+              name: backpack
+            - id: CMSatchelMarine
+              name: satchel
+            - id: CMBackpackMedical
+            - id: CMSatchelMedical
+        - name: Pouches
+          choices: { RMCPouch: 2 }
+          entries:
+            - id: RMCPouchAutoinjector
+            - id: RMCPouchFirstAidInjectors
+              name: подсумок первой помощи (инъекторы)
+            - id: RMCPouchFirstAidSplintsGauzeOintment
+              name: подсумок первой помощи (бинт, мазь) # TODO RMC14 splints comma
+            - id: RMCPouchFirstAidPills
+              name: подсумок первой помощи (таблетки)
+            - id: RMCPouchFirstResponder
+            - id: RMCPouchMedical
+            - id: RMCPouchMedkit
+              recommended: true
+            - id: RMCPouchReagentCanisterBicaridine
+              recommended: true
+              name: подсумок баллона реагентов под давлением\n(бикаридин)
+            - id: RMCPouchReagentCanisterKelotane
+              recommended: true
+              name: подсумок баллона реагентов под давлением\n(келотан)
+            - id: RMCPouchReagentCanisterTricordrazineRevival
+              recommended: true
+              name: подсумок баллона реагентов под давлением\n(восстанавливающая смесь - Трикордразин) - Tricordrazine)
+            #      - id: CMPressurizedReagentCanisterPouchPeridaxonRevivalMix
+            #        recommended: true
+            #        name: подсумок баллона реагентов под давлением\n(восстанавливающая смесь - Трикордразин) - Peridaxon)
+            - id: RMCPouchReagentCanisterTricordrazine
+              recommended: true
+              name: подсумок баллона реагентов под давлением\n(Трикордразин)
+            - id: RMCPouchReagentCanister
+              recommended: true
+              name: подсумок баллона реагентов под давлением\n(ПУСТОЙ)
+          #- id: CMSlingPouch
+        - name: Accessories
+          choices: { CMAccessories: 1 }
+          entries:
+            - id: CMWebbingBrown
+            - id: CMWebbingBlack
+            - id: RMCWebbingLegPouch
+            - id: RMCWebbingLegPouchBlack
+            - id: CMWebbing
+            - id: RMCWebbingBlackSmall
+            - id: RMCWebbingDropPouch
+            - id: RMCWebbingDropPouchBlack
