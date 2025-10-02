@@ -5,10 +5,10 @@
   description: cm-department-Command-description
   color: "#334E6D"
   roles:
-  - CMCommandingOfficer
-  - CMExecutiveOfficer
-  - CMStaffOfficer
-  - CMPVEPlatoonCommander
+    - CMCommandingOfficer
+    - CMExecutiveOfficer
+    - CMStaffOfficer
+    - CMPVEPlatoonCommander
   primary: false
   departmentRadio: MarineCommand
   headOfDepartment: CMCommandingOfficer
