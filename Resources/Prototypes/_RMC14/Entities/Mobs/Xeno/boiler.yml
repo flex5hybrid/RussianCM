@@ -1,163 +1,161 @@
 - type: entity
   parent:
-  - CMXenoDeveloped
-  - CMXenoTail
-  - CMXenoFlammable
-  - RMCXenoSpeechSounds
-  - RMCXenoCommendationReceiver
-  - RMCXenoMobCollision
+    - CMXenoDeveloped
+    - CMXenoTail
+    - CMXenoFlammable
+    - RMCXenoSpeechSounds
+    - RMCXenoCommendationReceiver
+    - RMCXenoMobCollision
   id: CMXenoBoiler
-  name: Boiler
-  description: A huge, grotesque xenonid covered in glowing, oozing acid slime.
+  name: Бойлер
+  description: Большой, гротескный ксеноид, покрытый желевидной кислотой.
   components:
-  - type: GuideHelp
-    guides:
-    - RMCGuideRoleBoiler
-  - type: GhostRole
-    name: cm-job-name-xeno-boiler
-  - type: Sprite
-    sprite: _RMC14/Mobs/OldXenonids/Boiler/boiler.rsi
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 185
-        mask:
-        - MobMask
-        - BarbedBarricade
-        - BarricadeImpassable
-        layer:
-        - MobLayer
-      fix2:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.45
-        density: 185
-        layer:
-        - BulletImpassable
-  - type: MobState
-    allowedStates:
-    - Alive
-    - Critical
-    - Dead
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      650: Critical
-      750: Dead
-  - type: Xeno
-    role: CMXenoBoiler
-    actionIds:
-    - ActionXenoRest
-    - ActionXenoRegurgitate
-    - ActionXenoWatch
-    - ActionXenoTailStabBoiler
-    - ActionXenoAcidStrong
-    - ActionXenoBombard
-    - ActionXenoToggleGasType
-    - ActionXenoSprayAcidBoiler
-    - ActionXenoZoom
-    - ActionXenoAcidShroud
-    - ActionXenoDevolve
-    tier: 3
-    hudOffset: -0.15,0.05
-    unlockAt: 900 # 15 minutes
-  - type: XenoHeavy
-  - type: XenoDevolve
-    devolvesTo:
-    - CMXenoSpitter
-  - type: XenoPlasma
-    plasma: 400
-    maxPlasma: 400
-    plasmaRegenOnWeeds: 7
-  - type: XenoAcid
-  - type: CMArmor
-    xenoArmor: 20
-    explosionArmor: 20
-  - type: XenoDevour
-  - type: XenoZoom
-    zoom: 1, 1
-    offsetLength: 3
-    speed: 0.8
-    doAfter: 0.5
-  - type: XenoBombard
-  - type: XenoAcidShroud
-  - type: XenoGasToggle
-  - type: XenoTailStab
-    toggle: true
-    inject:
-      RMCMolecularAcid: 6
-    tailDamage:
-      groups:
-        Brute: 30
-  - type: XenoSprayAcid
-    acid: XenoAcidSprayStrong
-    barricadeDamage:
-      types:
-        Heat: 5
-  - type: MeleeWeapon
-    damage:
-      groups:
-        Brute: 22.5
-  - type: Tackle
-    chance: 0.25
-    stunMin: 3
-    stunMax: 4
-  - type: AcidBloodSplash
-    isActivateSplashOnGib: false
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 2
-    baseSprintSpeed: 3.5
-  - type: SlowOnPull
-    slowdowns:
-    - multiplier: 0.6375
-      whitelist:
-        components:
-        - Marine
-    - multiplier: 0.7075
-      whitelist:
-        components:
-        - XenoLight
-    - multiplier: 0.475
-      whitelist:
-        components:
-        - XenoHeavy
-  - type: PointLight
-    enabled: true
-    radius: 1.8
-    softness: 1
-    autoRot: true
-  - type: RMCSize
-    size: Big
-  - type: XenoDeathcloud
-  - type: NeurotoxinInjector
-    neuroPerSecond: 20
-    injectInContact: false
-    affectsDead: false
-    affectsInfectedNested: false
-    toxinDamage:
+    - type: GuideHelp
+      guides:
+        - RMCGuideRoleBoiler
+    - type: GhostRole
+      name: cm-job-name-xeno-boiler
+    - type: Sprite
+      sprite: _RMC14/Mobs/Xenonids/Boiler/boiler.rsi
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeCircle
+            radius: 0.35
+          density: 185
+          mask:
+            - MobMask
+            - BarbedBarricade
+            - BarricadeImpassable
+          layer:
+            - MobLayer
+        fix2:
+          shape: !type:PhysShapeCircle
+            radius: 0.45
+          density: 185
+          layer:
+            - BulletImpassable
+    - type: MobState
+      allowedStates:
+        - Alive
+        - Critical
+        - Dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        650: Critical
+        750: Dead
+    - type: Xeno
+      role: CMXenoBoiler
+      actionIds:
+        - ActionXenoRest
+        - ActionXenoRegurgitate
+        - ActionXenoWatch
+        - ActionXenoTailStabBoiler
+        - ActionXenoAcidStrong
+        - ActionXenoBombard
+        - ActionXenoToggleGasType
+        - ActionXenoSprayAcidBoiler
+        - ActionXenoZoom
+        - ActionXenoAcidShroud
+        - ActionXenoDevolve
+      tier: 3
+      hudOffset: -0.15,0.05
+      unlockAt: 900 # 15 minutes
+    - type: XenoHeavy
+    - type: XenoDevolve
+      devolvesTo:
+        - CMXenoSpitter
+    - type: XenoPlasma
+      plasma: 400
+      maxPlasma: 400
+      plasmaRegenOnWeeds: 7
+    - type: XenoAcid
+    - type: CMArmor
+      xenoArmor: 20
+      explosionArmor: 20
+    - type: XenoDevour
+    - type: XenoZoom
+      zoom: 1, 1
+      offsetLength: 3
+      speed: 0.8
+      doAfter: 0.5
+    - type: XenoBombard
+    - type: XenoAcidShroud
+    - type: XenoGasToggle
+    - type: XenoTailStab
+      toggle: true
+      inject:
+        RMCMolecularAcid: 6
+      tailDamage:
+        groups:
+          Brute: 30
+    - type: XenoSprayAcid
+      acid: XenoAcidSprayStrong
+      barricadeDamage:
+        types:
+          Heat: 5
+    - type: MeleeWeapon
+      damage:
+        groups:
+          Brute: 22.5
+    - type: Tackle
+      chance: 0.25
+      stunMin: 3
+      stunMax: 4
+    - type: AcidBloodSplash
+      isActivateSplashOnGib: false
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 2
+      baseSprintSpeed: 3.5
+    - type: SlowOnPull
+      slowdowns:
+        - multiplier: 0.6375
+          whitelist:
+            components:
+              - Marine
+        - multiplier: 0.7075
+          whitelist:
+            components:
+              - XenoLight
+        - multiplier: 0.475
+          whitelist:
+            components:
+              - XenoHeavy
+    - type: PointLight
+      enabled: true
+      radius: 1.8
+      softness: 1
+      autoRot: true
+    - type: RMCSize
+      size: Big
+    - type: XenoDeathcloud
+    - type: NeurotoxinInjector
+      neuroPerSecond: 20
+      injectInContact: false
+      affectsDead: false
+      affectsInfectedNested: false
+      toxinDamage:
         groups:
           Toxin: 2
-    oxygenDamage:
+      oxygenDamage:
         types:
           Asphyxiation: 150
-    coughDamage:
+      coughDamage:
         groups:
           Brute: 5
-  - type: RMCXenoDamageVisuals
-    prefix: boiler
-  - type: TacticalMapIcon
-    icon:
-      sprite: /Textures/_RMC14/Interface/map_blips.rsi
-      state: boiler
-  - type: Flammable
-    damage: #per second, scales with number of fire 'stacks'
-      types:
-        Heat: 3
-  - type: XenoToggleChargingKnockback
-    enabled: false
-  - type: XenoToggleChargingStop
-  - type: FixedIdentity
-    name: cm-job-name-xeno-boiler
+    - type: RMCXenoDamageVisuals
+      prefix: boiler
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: boiler
+    - type: Flammable
+      damage: #per second, scales with number of fire 'stacks'
+        types:
+          Heat: 3
+    - type: XenoToggleChargingKnockback
+      enabled: false
+    - type: XenoToggleChargingStop
+    - type: FixedIdentity
+      name: cm-job-name-xeno-boiler

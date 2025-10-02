@@ -2,7 +2,7 @@
 CMJobXenoBoiler = Бойлер
 
 cm-job-name-xeno-burrower = Бурильщик
-CMJobXenoBurrower = Землерой
+CMJobXenoBurrower = Бурильщик
 
 cm-job-name-xeno-carrier = Носитель
 CMJobXenoCarrier = Носитель
@@ -37,8 +37,8 @@ CMJobXenoPraetorian = Преторианец
 cm-job-name-xeno-queen = Королева
 CMJobXenoQueen = Королева
 
-cm-job-name-xeno-ravager = Опустошитель
-CMJobXenoRavager = Опустошитель
+cm-job-name-xeno-ravager = Разрушитель
+CMJobXenoRavager = Разрушитель
 
 cm-job-name-xeno-runner = Бегун
 CMJobXenoRunner = Бегун
@@ -47,7 +47,7 @@ cm-job-name-xeno-sentinel = Страж
 CMJobXenoSentinel = Сторож
 
 cm-job-name-xeno-spitter = Плеватель
-CMJobXenoSpitter = Плевака
+CMJobXenoSpitter = Плеватель
 
 cm-job-name-xeno-warrior = Воин
 CMJobXenoWarrior = Воин

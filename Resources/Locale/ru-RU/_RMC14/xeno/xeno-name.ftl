@@ -9,7 +9,7 @@ rmc-xeno-prime = Первородный {$baseName}
 
 rmc-xeno-mature-parasite = Взрослый {$baseName}
 rmc-xeno-elder-parasite = Ветеран {$baseName}
-rmc-xeno-ancient-parasite = Штамм {$baseName}-X
+rmc-xeno-ancient-parasite = Древний {$baseName}
 rmc-xeno-prime-parasite = Омега {$baseName}
 
 rmc-xeno-mature-king = Беспощадный {$baseName}
