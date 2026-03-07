@@ -64,3 +64,61 @@
   - type: Pinpointer
     component: AegisTrackable
     targetName: AEGIS ID card
+
+- type: entity
+  parent: BaseItem
+  id: RMCCrewPinpointer
+  name: crew pinpointer
+  description: A handheld personnel tracker. Use it to select a crew member to track.
+  components:
+  - type: Transform
+    noRot: true
+  - type: Sprite
+    noRot: true
+    layers:
+    - sprite: _RMC14/Objects/Devices/pinpointer.rsi
+      state: crew-pinpointer-idle
+      map: ["enum.PinpointerLayers.Base"]
+    - sprite: _RMC14/Objects/Devices/pinpointer.rsi
+      state: pinonnull
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false
+  - type: Icon
+    sprite: _RMC14/Objects/Devices/pinpointer.rsi
+    state: crew-pinpointer-idle
+  - type: Item
+    sprite: _RMC14/Objects/Devices/pinpointer.rsi
+    state: crew-pinpointer-idle
+    size: Small
+  - type: Pinpointer
+    updateTargetName: true
+    closeDistance: 30
+    mediumDistance: 80
+    reachedDistance: 2
+  - type: RMCCrewPinpointer
+  - type: UserInterface
+    interfaces:
+      enum.RMCCrewPinpointerUiKey.Key:
+        type: RMCCrewPinpointerBui
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.PinpointerVisuals.IsActive:
+        enum.PinpointerLayers.Screen:
+          True: { visible: True }
+          False: { visible: False }
+        enum.PinpointerLayers.Base:
+          True: { state: crew-pinpointer-active }
+          False: { state: crew-pinpointer-idle }
+      enum.PinpointerVisuals.TargetDistance:
+        enum.PinpointerLayers.Screen:
+          Unknown: { state: pinonnull }
+          Reached: { state: pinondirect }
+          Close: { state: pinonclose }
+          Medium: { state: pinonmedium }
+          Far: { state: pinonfar }
+  - type: AnimationPlayer
+  - type: Tag
+    tags:
+    - RMCPinpointer
