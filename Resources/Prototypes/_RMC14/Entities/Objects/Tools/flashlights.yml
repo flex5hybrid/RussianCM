@@ -3,59 +3,63 @@
   parent: BaseItem
   id: RMCFlashlightBase
   components:
-    - type: MeleeWeapon
-      wideAnimationRotation: 90
-      damage:
-        types:
-          Blunt: 0
-    - type: HandheldLight
-      blinkingBehaviourId: blinking
-      radiatingBehaviourId: radiating
-    - type: LightBehaviour
-      behaviours:
-        - !type:FadeBehaviour
-          id: radiating
-          maxDuration: 2.0
-          startValue: 3.0
-          endValue: 2.0
-          isLooped: true
-          reverseWhenFinished: true
-        - !type:PulseBehaviour
-          id: blinking
-          interpolate: Nearest
-          maxDuration: 1.0
-          minValue: 0.1
-          maxValue: 2.0
-          isLooped: true
-    - type: ItemTogglePointLight
-    - type: ToggleableVisuals
-      spriteLayer: light
-    - type: Battery
-      maxCharge: 600
-      startingCharge: 600
-    - type: BatterySelfRecharger
-      autoRecharge: true
-      autoRechargeRate: 2
-    - type: PointLight
-      enabled: false
-      radius: 5
-      netsync: false
-    - type: Appearance
-    - type: StaticPrice
-      price: 40
-    - type: Tag
-      tags:
-        - Flashlight
-    - type: InteractedBlacklist
-      blacklist:
-        components:
-          - Xeno
-    - type: Clothing
-      quickEquip: false
-      slots:
-        - belt
-        - suitstorage
-    - type: NoHandsInteractionBlocked
+  - type: MeleeWeapon
+    wideAnimationRotation: 90
+    damage:
+      types:
+        Blunt: 0
+  - type: HandheldLight
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        minValue: 0.1
+        maxValue: 2.0
+        isLooped: true
+  - type: ItemTogglePointLight
+  - type: ToggleableVisuals
+    spriteLayer: light
+  - type: Battery
+    maxCharge: 600
+    startingCharge: 600
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 2
+  - type: PointLight
+    enabled: false
+    radius: 5
+    netsync: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 40
+  - type: Tag
+    tags:
+    - Flashlight
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - belt
+    - suitstorage
+  - type: NoHandsInteractionBlocked
+  - type: PhysicalComposition
+    materialComposition:
+      CMSteel: 50
+      CMGlass: 20
 
 - type: entity
   parent: RMCBoxMagazineSupplyBase
@@ -122,26 +126,30 @@
   name: penlight
   description: A pen-sized light, used by medical staff.
   components:
-    - type: HandheldLight
-      addPrefix: false
-    - type: Sprite
-      sprite: _RMC14/Objects/Tools/Light/penlight.rsi
-      layers:
-        - state: penlight
-        - state: penlight-on
-          visible: false
-          map: ["light"]
-    - type: Item
-      size: Tiny
-    - type: Tag
-      tags:
-        - RMCPenlight
-    - type: Clothing
-      slots:
-        - ears
-        - suitstorage
-    - type: PointLight
-      radius: 1.75
+  - type: HandheldLight
+    addPrefix: false
+  - type: Sprite
+    sprite: _RMC14/Objects/Tools/Light/penlight.rsi
+    layers:
+      - state: penlight
+      - state: penlight-on
+        visible: false
+        map: [ "light" ]
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - RMCPenlight
+  - type: Clothing
+    slots:
+    - ears
+    - suitstorage
+  - type: PointLight
+    radius: 1.75
+  - type: PhysicalComposition
+    materialComposition:
+      CMSteel: 10
+      CMGlass: 5
 
 - type: Tag
   id: RMCPenlight

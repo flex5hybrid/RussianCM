@@ -123,250 +123,260 @@
   parent: CMXenoPraetorianBase
   id: CMXenoPraetorian
   components:
-    - type: GuideHelp
-      guides:
-        - RMCGuideRolePraetorian
-    - type: XenoSprayAcid
-      barricadeDamage:
-        types:
-          Heat: 5
-      acid: XenoAcidSprayAcidStacks
-      plasmaCost: 80
-    - type: XenoLeap
-      plasmaCost: 40
-      delay: 0
-      knockdownTime: 0
-      range: 6
-      moveDelayTime: 0
-    - type: XenoShield
-      shield: Praetorian
-    - type: XenoAcidBall
-    - type: XenoEvolution
-      strains:
-        - RMCXenoPraetorianDancer
-        - RMCXenoPraetorianOppressor
-        - RMCXenoPraetorianVanguard
-        - RMCXenoPraetorianValkyrie
-    - type: AcidTrap
+  - type: GuideHelp
+    guides:
+    - RMCGuideRolePraetorian
+  - type: XenoSprayAcid
+    barricadeDamage:
+      types:
+        Heat: 5
+    acid: XenoAcidSprayAcidStacks
+    plasmaCost: 80
+  - type: XenoLeap
+    plasmaCost: 40
+    delay: 0
+    knockdownTime: 0
+    range: 6
+    moveDelayTime: 0
+  - type: XenoShield
+    shield: Praetorian
+  - type: XenoAcidBall
+  - type: XenoEvolution
+    strains:
+    - RMCXenoPraetorianDancer
+    - RMCXenoPraetorianOppressor
+    - RMCXenoPraetorianVanguard
+    - RMCXenoPraetorianValkyrie
+  - type: AcidTrap
+  - type: RMCActionOrder
+    id: CMXenoPraetorian
 
 - type: entity
   parent: CMXenoPraetorianBase
   id: RMCXenoPraetorianValkyrie
   suffix: Valkyrie
   components:
-    - type: GuideHelp
-      guides:
-        - RMCGuideRoleValkyrie
-    - type: Sprite
-      sprite: _RMC14/Mobs/Xenonids/Praetorian/valkyrie_praetorian.rsi
-    - type: Xeno
-      actionIds:
-        - ActionXenoRest
-        - ActionXenoRegurgitate
-        - ActionXenoWatch
-        - ActionXenoTailFountain
-        - ActionXenoAcidNormal
-        - ActionXenoPheromones
-        - ActionXenoTantrum
-        - ActionXenoHighGallop
-        - ActionXenoFightOrFlight
-        - ActionXenoRetrieve
-        - ActionXenoDevolve
-    - type: XenoStrain
-      name: rmc-xeno-valkyrie-name
-      description: rmc-xeno-valkyrie-description
-      popup: rmc-xeno-valkyrie-popup
-    - type: XenoPheromones
-      pheromonesMultiplier: 3
-      pheroSuffix: strong
-    - type: XenoEnergy
-      alert: XenoEnergyValkyrie
-      popupGain: rmc-xeno-fury-increase-user
-      popupNotEnough: rmc-xeno-not-enough-fury
-      max: 200
-      gainAttack: 15
-      gainAttackDowned: 15
-    - type: XenoRetrieve
-    - type: MovementSpeedModifier
-      baseWalkSpeed: 2.2
-      baseSprintSpeed: 3.5
-    - type: SlowOnPull
-      slowdowns:
-        - multiplier: 0.64
-          whitelist:
-            components:
-              - Marine
-        - multiplier: 0.7025
-          whitelist:
-            components:
-              - XenoLight
-        - multiplier: 0.475
-          whitelist:
-            components:
-              - XenoHeavy
-    - type: CMArmor
-      xenoArmor: 35
-    - type: XenoClaws
-      clawType: VerySharp
-    - type: XenoTailFountain
-    - type: XenoTantrum
-    - type: XenoFury
-    - type: XenoFightOrFlight
-      componentsRemove:
-        - type: RMCSlowdown
-        - type: RMCSuperSlowdown
-        - type: RMCRooted
-    - type: XenoHighGallop
-    - type: XenoHidden
-    - type: AcidTrap
+  - type: GuideHelp
+    guides:
+    - RMCGuideRoleValkyrie
+  - type: Sprite
+    sprite: _RMC14/Mobs/Xenonids/Praetorian/valkyrie_praetorian.rsi
+  - type: Xeno
+    actionIds:
+    - ActionXenoRest
+    - ActionXenoRegurgitate
+    - ActionXenoWatch
+    - ActionXenoTailFountain
+    - ActionXenoAcidNormal
+    - ActionXenoPheromones
+    - ActionXenoTantrum
+    - ActionXenoHighGallop
+    - ActionXenoFightOrFlight
+    - ActionXenoRetrieve
+    - ActionXenoDevolve
+  - type: XenoStrain
+    name: rmc-xeno-valkyrie-name
+    description: rmc-xeno-valkyrie-description
+    popup: rmc-xeno-valkyrie-popup
+  - type: XenoPheromones
+    pheromonesMultiplier: 3
+    pheroSuffix: strong
+  - type: XenoEnergy
+    alert: XenoEnergyValkyrie
+    popupGain: rmc-xeno-fury-increase-user
+    popupNotEnough: rmc-xeno-not-enough-fury
+    max: 200
+    gainAttack: 15
+    gainAttackDowned: 15
+  - type: XenoRetrieve
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.2
+    baseSprintSpeed: 3.5
+  - type: SlowOnPull
+    slowdowns:
+    - multiplier: 0.64
+      whitelist:
+        components:
+        - Marine
+    - multiplier: 0.7025
+      whitelist:
+        components:
+        - XenoLight
+    - multiplier: 0.475
+      whitelist:
+        components:
+        - XenoHeavy
+  - type: CMArmor
+    xenoArmor: 35
+  - type: XenoClaws
+    clawType: VerySharp
+  - type: XenoTailFountain
+  - type: XenoTantrum
+  - type: XenoFury
+  - type: XenoFightOrFlight
+    componentsRemove:
+    - type: RMCSlowdown
+    - type: RMCSuperSlowdown
+    - type: RMCRooted
+  - type: XenoHighGallop
+  - type: XenoHidden
+  - type: AcidTrap
+  - type: RMCActionOrder
+    id: RMCXenoPraetorianValkyrie
 
 - type: entity
   parent: CMXenoPraetorianBase
   id: RMCXenoPraetorianDancer
   suffix: Dancer
   components:
-    - type: Sprite
-      sprite: _RMC14/Mobs/Xenonids/Praetorian/dancer_praetorian.rsi
-    - type: Xeno
-      actionIds:
-        - ActionXenoRest
-        - ActionXenoRegurgitate
-        - ActionXenoWatch
-        - ActionXenoTailStab
-        - ActionXenoImpale
-        - ActionXenoDodge
-        - ActionXenoTailTrip
-        - ActionXenoDevolve
-    - type: XenoStrain
-      name: rmc-xeno-dancer-name
-      description: rmc-xeno-dancer-description
-      popup: rmc-xeno-dancer-popup
-    - type: CMArmor
-      xenoArmor: 20
-    - type: XenoClaws
-      clawType: Sharp
-    - type: XenoFinesse
-    - type: XenoDodge
-    - type: XenoImpale
-      damage:
-        groups:
-          Brute: 40
-    - type: XenoTailTrip
-    - type: XenoHidden
+  - type: Sprite
+    sprite: _RMC14/Mobs/Xenonids/Praetorian/dancer_praetorian.rsi
+  - type: Xeno
+    actionIds:
+    - ActionXenoRest
+    - ActionXenoRegurgitate
+    - ActionXenoWatch
+    - ActionXenoTailStab
+    - ActionXenoImpale
+    - ActionXenoDodge
+    - ActionXenoTailTrip
+    - ActionXenoDevolve
+  - type: XenoStrain
+    name: rmc-xeno-dancer-name
+    description: rmc-xeno-dancer-description
+    popup: rmc-xeno-dancer-popup
+  - type: CMArmor
+    xenoArmor: 20
+  - type: XenoClaws
+    clawType: Sharp
+  - type: XenoFinesse
+  - type: XenoDodge
+  - type: XenoImpale
+    damage:
+      groups:
+        Brute: 40
+  - type: XenoTailTrip
+  - type: XenoHidden
+  - type: RMCActionOrder
+    id: RMCXenoPraetorianDancer
 
 - type: entity
   parent: CMXenoPraetorianBase
   id: RMCXenoPraetorianVanguard
   suffix: Vanguard
   components:
-    - type: GuideHelp
-      guides:
-        - RMCGuideRoleVanguard
-    - type: Sprite
-      sprite: _RMC14/Mobs/Xenonids/Praetorian/vanguard_praetorian.rsi
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        590: Critical
-        690: Dead
-    - type: Xeno
-      actionIds:
-        - ActionXenoRest
-        - ActionXenoRegurgitate
-        - ActionXenoWatch
-        - ActionXenoTailStab
-        - ActionXenoPierce
-        - ActionXenoBlitz
-        - ActionXenoCleaveRoot
-        - ActionXenoCleaveFling
-        - ActionXenoDevolve
-    - type: XenoStrain
-      name: rmc-xeno-vanguard-name
-      description: rmc-xeno-vanguard-description
-      popup: rmc-xeno-vanguard-popup
-    - type: XenoClaws
-      clawType: Sharp
-    - type: XenoShield
-    - type: VanguardShield
-    - type: XenoPierce
-      damage:
-        groups:
-          Brute: 45
-    - type: XenoLeap
-      plasmaCost: 50
-      delay: 0
-      knockdownTime: 0
-      range: 6
-      moveDelayTime: 0
-    - type: XenoBlitz
-      damage:
-        groups:
-          Brute: 40
-    - type: XenoCleave
-    - type: XenoHidden
+  - type: GuideHelp
+    guides:
+    - RMCGuideRoleVanguard
+  - type: Sprite
+    sprite: _RMC14/Mobs/Xenonids/Praetorian/vanguard_praetorian.rsi
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      590: Critical
+      690: Dead
+  - type: Xeno
+    actionIds:
+    - ActionXenoRest
+    - ActionXenoRegurgitate
+    - ActionXenoWatch
+    - ActionXenoTailStab
+    - ActionXenoPierce
+    - ActionXenoBlitz
+    - ActionXenoCleaveRoot
+    - ActionXenoCleaveFling
+    - ActionXenoDevolve
+  - type: XenoStrain
+    name: rmc-xeno-vanguard-name
+    description: rmc-xeno-vanguard-description
+    popup: rmc-xeno-vanguard-popup
+  - type: XenoClaws
+    clawType: Sharp
+  - type: XenoShield
+  - type: VanguardShield
+  - type: XenoPierce
+    damage:
+      groups:
+        Brute: 45
+  - type: XenoLeap
+    plasmaCost: 50
+    delay: 0
+    knockdownTime: 0
+    range: 6
+    moveDelayTime: 0
+  - type: XenoBlitz
+    damage:
+      groups:
+        Brute: 40
+  - type: XenoCleave
+  - type: XenoHidden
+  - type: RMCActionOrder
+    id: RMCXenoPraetorianVanguard
 
 - type: entity
   parent: CMXenoPraetorianBase
   id: RMCXenoPraetorianOppressor
   suffix: Oppressor
   components:
-    - type: GuideHelp
-      guides:
-        - RMCGuideRoleOppressor
-    - type: Sprite
-      sprite: _RMC14/Mobs/Xenonids/Praetorian/oppressor_praetorian.rsi
-    - type: Xeno
-      actionIds:
-        - ActionXenoRest
-        - ActionXenoRegurgitate
-        - ActionXenoWatch
-        - ActionXenoTailSeize
-        - ActionXenoAbduct
-        - ActionXenoDislocate
-        - ActionXenoTailLash
-        - ActionXenoDevolve
-    - type: MeleeWeapon
-      damage:
-        groups:
-          Brute: 30
-    - type: XenoStrain
-      name: rmc-xeno-oppressor-name
-      description: rmc-xeno-oppressor-description
-      popup: rmc-xeno-oppressor-popup
-    - type: MovementSpeedModifier
-      baseWalkSpeed: 2.2
-      baseSprintSpeed: 3.5
-    - type: SlowOnPull
-      slowdowns:
-        - multiplier: 0.64
-          whitelist:
-            components:
-              - Marine
-        - multiplier: 0.7025
-          whitelist:
-            components:
-              - XenoLight
-        - multiplier: 0.475
-          whitelist:
-            components:
-              - XenoHeavy
-    - type: XenoClaws
-      clawType: Sharp
-    - type: CMArmor
-      xenoArmor: 25
-      explosionArmor: 60
-    - type: StunOnExplosionReceived
-      weak: false
-    - type: XenoHook
-    - type: XenoTailSeize
-    - type: XenoAbduct
-    - type: XenoTailLash
-    - type: XenoDislocate
-      damage:
-        groups:
-          Brute: 20
-    - type: XenoSmackdown
-      damage:
-        groups:
-          Brute: 15
-    - type: XenoHidden
+  - type: GuideHelp
+    guides:
+    - RMCGuideRoleOppressor
+  - type: Sprite
+    sprite: _RMC14/Mobs/Xenonids/Praetorian/oppressor_praetorian.rsi
+  - type: Xeno
+    actionIds:
+    - ActionXenoRest
+    - ActionXenoRegurgitate
+    - ActionXenoWatch
+    - ActionXenoTailSeize
+    - ActionXenoAbduct
+    - ActionXenoDislocate
+    - ActionXenoTailLash
+    - ActionXenoDevolve
+  - type: MeleeWeapon
+    damage:
+      groups:
+        Brute: 30
+  - type: XenoStrain
+    name: rmc-xeno-oppressor-name
+    description: rmc-xeno-oppressor-description
+    popup: rmc-xeno-oppressor-popup
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.2
+    baseSprintSpeed: 3.5
+  - type: SlowOnPull
+    slowdowns:
+    - multiplier: 0.64
+      whitelist:
+        components:
+        - Marine
+    - multiplier: 0.7025
+      whitelist:
+        components:
+        - XenoLight
+    - multiplier: 0.475
+      whitelist:
+        components:
+        - XenoHeavy
+  - type: XenoClaws
+    clawType: Sharp
+  - type: CMArmor
+    xenoArmor: 25
+    explosionArmor: 60
+  - type: StunOnExplosionReceived
+    weak: false
+  - type: XenoHook
+  - type: XenoTailSeize
+  - type: XenoAbduct
+  - type: XenoTailLash
+  - type: XenoDislocate
+    damage:
+      groups:
+        Brute: 20
+  - type: XenoSmackdown
+    damage:
+      groups:
+        Brute: 15
+  - type: XenoHidden
+  - type: RMCActionOrder
+    id: RMCXenoPraetorianOppressor

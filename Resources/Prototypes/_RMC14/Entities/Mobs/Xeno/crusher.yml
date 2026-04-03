@@ -117,85 +117,89 @@
   parent: CMXenoCrusherBase
   id: RMCXenoCrusher
   components:
-    - type: Xeno
-      actionIds:
-        - ActionXenoRest
-        - ActionXenoRegurgitate
-        - ActionXenoWatch
-        - ActionXenoTailStab
-        - ActionXenoCharge
-        - ActionXenoStomp
-        - ActionXenoDefensiveShield
-        - ActionXenoDevolve
-    - type: CrusherShield
-    - type: XenoCharge
-      damage:
-        types:
-          Blunt: 60
-          Structural: 750
-    - type: XenoShield
-    - type: XenoEvolution
-      strains:
-        - RMCXenoCrusherCharger
+  - type: Xeno
+    actionIds:
+    - ActionXenoRest
+    - ActionXenoRegurgitate
+    - ActionXenoWatch
+    - ActionXenoTailStab
+    - ActionXenoCharge
+    - ActionXenoStomp
+    - ActionXenoDefensiveShield
+    - ActionXenoDevolve
+  - type: CrusherShield
+  - type: XenoCharge
+    damage:
+      types:
+        Blunt: 60
+        Structural: 750
+  - type: XenoShield
+  - type: XenoEvolution
+    strains:
+    - RMCXenoCrusherCharger
+  - type: RMCActionOrder
+    id: RMCXenoCrusher
 
 - type: entity
   parent: CMXenoCrusherBase
   id: RMCXenoCrusherCharger
   suffix: Charger
   components:
-    - type: Sprite
-      sprite: _RMC14/Mobs/Xenonids/Crusher/charger_crusher.rsi
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        780: Critical
-        880: Dead
-    - type: Xeno
-      ignorePheromones: Frenzy
-      actionIds:
-        - ActionXenoRest
-        - ActionXenoRegurgitate
-        - ActionXenoWatch
-        - ActionXenoTailStab
-        - ActionXenoToggleCharging
-        - ActionXenoStomp
-        - ActionXenoTumble
-        - ActionXenoRam
-        - ActionXenoDevolve
-    - type: CMArmor
-      xenoArmor: 20
-      frontalArmor: 30
-      sideArmor: 15
-    - type: MeleeWeapon
-      damage:
-        groups:
-          Brute: 30
-    - type: XenoTailStab
-      tailDamage:
-        groups:
-          Brute: 36
-    - type: MovementSpeedModifier
-      baseWalkSpeed: 1.9
-      baseSprintSpeed: 3.4
-    - type: XenoStrain
-      name: rmc-xeno-charger-name
-      description: rmc-xeno-charger-description
-      popup: rmc-xeno-charger-popup
-    - type: CombatMode
-      toggleMouseRotator: false
-    - type: XenoTumble
-      damage:
-        types:
-          Blunt: 15
-    - type: XenoFling
-      paralyzeTime: 0
-      slowTime: 8
-    - type: XenoStomp # TODO RMC14 screen shake?
-      plasmaCost: 25
-      paralyzeUnderOnly: true
-      range: 3.95
-      damage:
-        types:
-          Blunt: 75
-    - type: XenoToggleCharging
-    - type: XenoHidden
+  - type: Sprite
+    sprite: _RMC14/Mobs/Xenonids/Crusher/charger_crusher.rsi
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      780: Critical
+      880: Dead
+  - type: Xeno
+    ignorePheromones: Frenzy
+    actionIds:
+    - ActionXenoRest
+    - ActionXenoRegurgitate
+    - ActionXenoWatch
+    - ActionXenoTailStab
+    - ActionXenoToggleCharging
+    - ActionXenoStomp
+    - ActionXenoTumble
+    - ActionXenoRam
+    - ActionXenoDevolve
+  - type: CMArmor
+    xenoArmor: 20
+    frontalArmor: 30
+    sideArmor: 15
+  - type: MeleeWeapon
+    damage:
+      groups:
+        Brute: 30
+  - type: XenoTailStab
+    tailDamage:
+      groups:
+        Brute: 36
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1.9
+    baseSprintSpeed: 3.4
+  - type: XenoStrain
+    name: rmc-xeno-charger-name
+    description: rmc-xeno-charger-description
+    popup: rmc-xeno-charger-popup
+  - type: CombatMode
+    toggleMouseRotator: false
+  - type: XenoTumble
+    damage:
+      types:
+        Blunt: 15
+  - type: XenoFling
+    paralyzeTime: 0
+    slowTime: 8
+  - type: XenoStomp # TODO RMC14 screen shake?
+    plasmaCost: 25
+    paralyzeUnderOnly: true
+    range: 3.95
+    damage:
+      types:
+        Blunt: 75
+  - type: XenoToggleCharging
+  - type: XenoHidden
+  - type: RMCActionOrder
+    id: RMCXenoCrusherCharger
