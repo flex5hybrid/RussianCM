@@ -43,6 +43,7 @@ jobs:
         uses: peter-evans/find-comment@v1
         id: fc
         with:
+          token: ${{ secrets.PAT }}
           issue-number: ${{ github.event.number }}
           comment-author: 'github-actions[bot]'
           body-includes: RSI Diff Bot
