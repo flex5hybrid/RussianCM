@@ -60,7 +60,7 @@
   components:
   - type: Area
     linkedLz: dropship_lz1
-  - type: Sprite  
+  - type: Sprite
     state: lz1
 
 - type: entity
@@ -70,7 +70,7 @@
   components:
   - type: Area
   - type: Sprite
-    state: police_line  
+    state: police_line
 
 - type: entity
   parent: RMCAreaCorsatLzNearLzI
@@ -78,8 +78,8 @@
   name: Corsat - Foyer
   components:
   - type: Area
-  - type: Sprite    
-    state: station3      
+  - type: Sprite
+    state: station3
 - type: entity
   parent: RMCAreaCorsatLz
   id: RMCAreaCorsatLzNearLzII
@@ -87,7 +87,7 @@
   components:
   - type: Area
     linkedLz: dropship_lz2
-  - type: Sprite  
+  - type: Sprite
     state: lz2
 
 - type: entity
@@ -97,7 +97,7 @@
   components:
   - type: Area
   - type: Sprite
-    state: police_line             
+    state: police_line
 
 - type: entity
   parent: RMCAreaShuttleDrop2
@@ -110,7 +110,7 @@
   - type: Area
     linkedLz: dropship_lz2
     minimapColor: '#EBE5E5E3'
-    weatherEnabled: true           
+    weatherEnabled: true
 
 - type: entity
   parent: RMCAreaCorsat
@@ -162,7 +162,7 @@
   name: Corsat - Cargo Sigma
   components:
   - type: Sprite
-    state: hangars1    
+    state: hangars1
 
 - type: entity
   parent: RMCAreaCorsatStation
@@ -180,7 +180,7 @@
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_dam.rsi
-    state: western_ss    
+    state: western_ss
 
 - type: entity
   parent: RMCAreaCorsatStation
@@ -188,7 +188,7 @@
   name: Corsat - Robotics
   components:
   - type: Sprite
-    state: station3    
+    state: station3
 
 - type: entity
   parent: RMCAreaCorsatStation
@@ -205,7 +205,7 @@
   name: Corsat - Main Core
   components:
   - type: Sprite
-    state: eastern_ss    
+    state: eastern_ss
 
 - type: entity
   parent: RMCAreaCorsatStation
@@ -237,7 +237,7 @@
   name: Corsat - Cafe
   components:
   - type: Sprite
-    state: station3    
+    state: station3
 
 - type: entity
   parent: RMCAreaCorsatStation
@@ -253,7 +253,7 @@
   name: Corsat - Data Center
   components:
   - type: Sprite
-    state: wardens        
+    state: wardens
 
 - type: entity
   parent: RMCAreaCorsatStation
@@ -261,8 +261,8 @@
   name: Corsat - Sigma Lounge
   components:
   - type: Sprite
-    state: botany    
-    
+    state: botany
+
 
 - type: entity
   parent: RMCAreaCorsatStationSecurityGamma
@@ -287,7 +287,7 @@
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_strata.rsi
-    state: outpost_med 
+    state: outpost_med
 
 - type: entity
   parent: RMCAreaCorsatStation
@@ -295,7 +295,7 @@
   name: Corsat - Bar
   components:
   - type: Sprite
-    state: disco 
+    state: disco
 
 - type: entity
   parent: RMCAreaCorsatStation
@@ -351,8 +351,8 @@
   name: Corsat - Sigma Residential Modules East
   components:
   - type: Sprite
-    state: station1        
-    
+    state: station1
+
 - type: entity
   parent: RMCAreaCorsatStation
   id: RMCAreaCorsatStationAcademy
@@ -367,7 +367,7 @@
   name: Corsat - Lounge
   components:
   - type: Sprite
-    state: botany 
+    state: botany
 
 - type: entity
   parent: RMCAreaCorsatStation
@@ -383,7 +383,7 @@
   name: Corsat - Administration
   components:
   - type: Sprite
-    state: police_line        
+    state: police_line
 
 - type: entity
   parent: RMCAreaCorsatMonorailStationGamma
@@ -394,7 +394,7 @@
     state: station0
 
 
-     
+
 
 - type: entity
   parent: RMCAreaCorsat
@@ -412,8 +412,8 @@
     medevac: false
     OB: true
     supplyDrop: false
-    weatherEnabled: false    
-         
+    weatherEnabled: false
+
 - type: entity
   parent: RMCAreaCorsatStationExterior
   id: RMCAreaCorsatMonorailWest
@@ -512,7 +512,7 @@
   name: Corsat - Control Module Sigma
   components:
   - type: Sprite
-    state: security_hub            
+    state: security_hub
 
 - type: entity
   parent: RMCAreaCorsat
@@ -588,7 +588,7 @@
   name: Corsat - Checkpoint Omega
   components:
   - type: Sprite
-    state: wardens    
+    state: wardens
 
 - type: entity
   parent: RMCAreaCorsatBiodomeOmega1
@@ -604,7 +604,7 @@
   name: Corsat - Landing Bay Omega
   components:
   - type: Sprite
-    state: lz                            
+    state: lz
 
 - type: entity
   parent: RMCAreaCorsatBiodomeOmega1
@@ -612,4 +612,4 @@
   name: Corsat - Offices Omega
   components:
   - type: Sprite
-    state: station0    
+    state: station0
