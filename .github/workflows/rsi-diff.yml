@@ -1,7 +1,7 @@
 name: Diff RSIs
 
 on:
-  pull_request_target:
+  pull_request:
     paths:
       - '**.rsi/**.png'
 
@@ -12,12 +12,13 @@ permissions:
 
 jobs:
   diff:
-    name: Diff
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Get changed files
         id: files
@@ -43,9 +44,8 @@ jobs:
       - name: Post RSI diff comment
         uses: peter-evans/create-or-update-comment@v4
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.number }}
           body: |
             ## RSI Diff Bot
-
             ${{ steps.diff.outputs.summary-details }}
