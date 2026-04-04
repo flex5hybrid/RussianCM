@@ -1,0 +1,26 @@
+
+ent-Candle = candle
+  .desc = A thin wick threaded through fat.
+ent-CandleRed = red candle
+ent-CandleBlue = blue candle
+ent-CandleBlack = black candle
+ent-CandleGreen = green candle
+ent-CandlePurple = purple candle
+ent-CandleSmall = small candle
+ent-CandleRedSmall = small red candle
+ent-CandleBlueSmall = small blue candle
+ent-CandleBlackSmall = small black candle
+ent-CandleGreenSmall = small green candle
+ent-CandlePurpleSmall = small purple candle
+ent-CandleInfinite = magic candle
+  .desc = It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
+ent-CandleRedInfinite = magic red candle
+ent-CandleBlueInfinite = magic blue candle
+ent-CandleBlackInfinite = magic black candle
+ent-CandleGreenInfinite = magic green candle
+ent-CandlePurpleInfinite = magic purple candle
+ent-CandleRedSmallInfinite = small magic red candle
+ent-CandleBlueSmallInfinite = small magic blue candle
+ent-CandleBlackSmallInfinite = small magic black candle
+ent-CandleGreenSmallInfinite = small magic green candle
+ent-CandlePurpleSmallInfinite = small magic purple candle

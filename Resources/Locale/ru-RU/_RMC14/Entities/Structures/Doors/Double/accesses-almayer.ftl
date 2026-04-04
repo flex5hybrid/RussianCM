@@ -1,0 +1,2 @@
+
+ent-CMDoubleDoorResearchGlassLocked = Research Airlock

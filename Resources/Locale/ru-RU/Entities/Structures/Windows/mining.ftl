@@ -1,0 +1,2 @@
+
+ent-MiningWindow = mining window

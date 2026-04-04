@@ -1,0 +1,19 @@
+
+ent-ImmovableRod = immovable rod
+  .desc = You can sense that it's hungry. That's usually a bad sign.
+ent-ImmovableRodMop = immovable mop
+  .desc = Hurled like a javelin, with the power of a thousand furious janitors.
+ent-ImmovableRodShark = immovable shark
+  .desc = SHARK TORNADO!
+ent-ImmovableRodClown = immovable clown
+  .desc = Ejected from the neighbouring station one solar system over. HONK!
+ent-ImmovableRodBanana = immovable banana
+  .desc = At least you won't slip on it.
+ent-ImmovableRodHammer = immovable hammer
+  .desc = Bwoink.
+ent-ImmovableRodThrongler = immovable throngler
+  .desc = If you catch it, you can keep it.
+ent-ImmovableRodGibstick = immovable gibstick
+  .desc = What did you expect?
+ent-ImmovableRodWeh = immovable weh
+  .desc = WEH!

@@ -1,0 +1,19 @@
+
+ent-RandomHumanoidSpawnerDeathSquad = Death Squad Agent
+ent-RandomHumanoidSpawnerERTLeader = ERT leader
+ent-RandomHumanoidSpawnerERTLeaderEVA = ERT leader
+ent-RandomHumanoidSpawnerERTChaplain = ERT chaplain
+ent-RandomHumanoidSpawnerERTChaplainEVA = ERT chaplain
+ent-RandomHumanoidSpawnerERTJanitor = ERT janitor
+ent-RandomHumanoidSpawnerERTJanitorEVA = ERT janitor
+ent-RandomHumanoidSpawnerERTEngineer = ERT engineer
+ent-RandomHumanoidSpawnerERTEngineerEVA = ERT engineer
+ent-RandomHumanoidSpawnerERTSecurity = ERT security
+ent-RandomHumanoidSpawnerERTSecurityEVA = ERT security
+ent-RandomHumanoidSpawnerERTMedical = ERT medic
+ent-RandomHumanoidSpawnerERTMedicalEVA = ERT medic
+ent-RandomHumanoidSpawnerCBURNUnit = CBURN Agent
+ent-RandomHumanoidSpawnerCentcomOfficial = CentComm official
+ent-RandomHumanoidSpawnerSyndicateAgent = syndicate agent
+ent-RandomHumanoidSpawnerNukeOp = Nuclear Operative
+ent-RandomHumanoidSpawnerCluwne = Cluwne

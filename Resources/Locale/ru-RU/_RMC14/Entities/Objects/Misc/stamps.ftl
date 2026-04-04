@@ -1,0 +1,24 @@
+
+ent-CMStampBase = rubber stamp
+  .desc = A rubber stamp for stamping important documents.
+ent-CMStampXO = executive officer's rubber stamp
+ent-CMStampCO = commanding officer's rubber stamp
+ent-CMStampASO = auxiliary support officer's rubber stamp
+ent-CMStampCMP = Chief MP's rubber stamp
+ent-CMStampMW = Military Warden's rubber stamp
+ent-CMStampCMO = chief medical officer's rubber stamp
+ent-CMStampQM = Logistics Officer's rubber stamp
+ent-CMStampCE = chief engineer's rubber stamp
+ent-RMCStampSEA = senior enlisted advisor's rubber stamp
+ent-CMStampLiaison = corporate liaison rubber stamp
+ent-RMCStampProvostInspector = provost inspector rubber stamp
+ent-CMStampApproved = APPROVED rubber stamp
+ent-CMStampDenied = DENIED rubber stamp
+ent-CMStampWeYa = Weston-Yamada rubber stamp
+ent-CMStampMarine = marine rubber stamp
+ent-CMStampCMB = colony marshal bureau rubber stamp
+ent-CMStampProvost = provost rubber stamp
+ent-RMCStampCLF = colony liberation front rubber stamp
+ent-RMCStampSPP = socialist progressive peoples rubber stamp
+ent-RMCStampTSE = three suns empire rubber stamp
+ent-RMCStampFreePress = free press rubber stamp

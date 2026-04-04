@@ -1,0 +1,2 @@
+
+ent-CMBaseCartridgeRifle = cartridge

@@ -1,0 +1,23 @@
+
+ent-CMAnestheticTank = anesthetic tank
+  .desc = A tank with an N2O/O2 gas mix.
+ent-RMCGasTankOxygen = oxygen tank
+  .desc = A tank containing pressurized oxygen for breathing.
+ent-RMCEmergencyOxygenTank = emergency oxygen tank
+  .desc = An easily portable tank for emergencies. Contains very little oxygen, rated for survival use only. It can hold 0.66 L of gas.
+ent-RMCExtendedEmergencyOxygenTank = extended-capacity emergency oxygen tank
+  .desc = An emergency tank with extended capacity. Technically rated for prolonged use. It can hold 1.5 L of gas.
+ent-RMCDoubleEmergencyOxygenTank = double emergency oxygen tank
+  .desc = A high-grade dual-tank emergency life support container. It holds a decent amount of oxygen for its small size. It can hold 2.5 L of gas.
+ent-RMCGasTankPhoron = phoron tank
+  .desc = A tank of liquid phoron. WARNING: Phumes are extremely dangerous.
+ent-RMCReagentGasTankHydrogen = hydrogen canister
+  .desc = A canister containing pressurized hydrogen. Can be used to refill storage tanks.
+ent-RMCReagentGasTankAmmonia = ammonia canister
+  .desc = A canister containing pressurized ammonia. Can be used to refill storage tanks.
+ent-RMCReagentGasTankMethane = methane canister
+  .desc = A canister containing pressurized methane. Can be used to refill storage tanks.
+ent-RMCReagentGasTankPacid = polytrinic acid canister
+  .desc = A canister containing pressurized polytrinic acid. Can be used to refill storage tanks.
+ent-RMCReagentGasTankOxygen = oxygen canister
+  .desc = A canister containing pressurized oxygen. Can be used to refill storage tanks.

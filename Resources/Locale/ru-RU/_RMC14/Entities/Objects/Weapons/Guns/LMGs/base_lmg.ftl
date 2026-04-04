@@ -1,0 +1,2 @@
+
+ent-RMCBaseCartridgeLMG = cartridge

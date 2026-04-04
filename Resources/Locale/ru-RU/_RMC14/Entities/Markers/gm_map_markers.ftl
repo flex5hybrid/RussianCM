@@ -1,0 +1,2 @@
+
+ent-RMCMarkerGM = GM marker

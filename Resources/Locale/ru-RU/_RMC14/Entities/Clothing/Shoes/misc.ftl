@@ -1,0 +1,19 @@
+
+ent-RMCShoesLaceup = laceup shoes
+  .desc = The height of fashion, and they're pre-polished!
+ent-RMCShoesLaceupDress = dress shoes
+  .desc = Pre-polished fancy dress shoes. You can see your reflection in them.
+ent-RMCShoesFancyLeather = fancy leather shoes
+  .desc = A fancy pair of leather shoes.
+ent-RMCShoesJackboots = jackboots
+  .desc = Security combat boots for combat scenarios or combat situations. All combat, all the time.
+ent-RMCShoesPrisoner = prisoner shoes
+  .desc = A pair of orange shoes worn by prisoners as directed by Marine Law.
+ent-RMCShoesGaloshes = galoshes
+  .desc = A pair of rubber boots.
+ent-RMCShoesWeYaStompers = Weston-Yamada stompers
+  .desc = A pair of sneakers designed to elicit a morale boosting response within anyone that witnesses them.
+ent-RMCShoesSandals = sandals
+  .desc = A pair of rather plain, wooden sandals.
+ent-RMCShoesSnow = snow boots
+  .desc = When your feet are as cold as your heart.

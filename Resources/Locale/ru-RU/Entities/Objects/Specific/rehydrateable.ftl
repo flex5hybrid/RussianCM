@@ -1,0 +1,20 @@
+
+  .desc = Just add water!
+ent-MonkeyCube = monkey cube
+ent-KoboldCube = kobold cube
+ent-CowCube = cow cube
+ent-GoatCube = goat cube
+ent-MothroachCube = mothroach cube
+ent-MouseCube = mouse cube
+ent-CockroachCube = cockroach cube
+  .desc = Just add wa- OH GOD!
+ent-SpaceCarpCube = carp cube
+  .desc = Just add water! At your own risk.
+ent-SpaceTickCube = tick cube
+  .desc = Just add water! At your own risk.
+ent-AbominationCube = abomination cube
+  .desc = Just add blood!
+ent-DehydratedSpaceCarp = dehydrated space carp
+  .desc = Looks like a plush toy carp, but just add water and it becomes a real-life space carp!
+ent-MopBucketCube = mop bucket cube
+  .desc = Just add water! And then more water!

@@ -1,0 +1,19 @@
+
+ent-RMCAreaBase = area
+ent-RMCAreaProtectionZero = protection 0
+ent-RMCAreaNone = none
+ent-RMCAreaGlass = glass
+ent-RMCAreaProtectionOne = protection 1
+ent-RMCAreaProtectionMetal = metal
+ent-RMCAreaProtectionTwo = protection 2
+ent-RMCAreaUndergroundAllowCAS = underground allow cas
+ent-RMCAreaUndergroundMetalAllowCAS = underground metal allow cas
+ent-RMCAreaProtectionThree = protection 3
+ent-RMCAreaUndergroundBlockCAS = underground block cas
+ent-RMCAreaUndergroundMetalBlockCAS = underground metal block cas
+ent-RMCAreaProtectionFour = protection 4
+ent-RMCAreaDeepUnderground = deep underground
+ent-RMCAreaDeepUndergroundMetal = deep underground metal
+ent-RMCAreaReinforcedMetal = reinforced metal
+ent-RMCAreaResin = resin
+ent-RMCAreaMax = max

@@ -1,0 +1,26 @@
+
+ent-BaseImplanter = implanter
+  .desc = A disposable syringe exclusively designed for the injection and extraction of subdermal implants.
+  .desc = A disposable syringe exclusively designed for the injection of subdermal implants.
+ent-BaseImplantOnlyImplanterSyndi = syndicate implanter
+  .desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-SadTromboneImplanter = sad trombone implanter
+ent-LightImplanter = light implanter
+ent-BikeHornImplanter = bike horn implanter
+ent-TrackingImplanter = tracking implanter
+ent-StorageImplanter = storage implanter
+ent-FreedomImplanter = freedom implanter
+ent-RadioImplanter = syndicate radio implanter
+ent-UplinkImplanter = uplink implanter
+ent-EmpImplanter = EMP implanter
+ent-ScramImplanter = scram implanter
+ent-DnaScramblerImplanter = DNA scrambler implanter
+ent-ChameleonControllerImplanter = chameleon controller implanter
+ent-MicroBombImplanter = micro-bomb implanter
+ent-MacroBombImplanter = macro-bomb implanter
+ent-DeathRattleImplanter = death rattle implanter
+ent-DeathAcidifierImplanter = death acidifier implanter
+ent-FakeMindShieldImplanter = fake mindshield implanter
+ent-MindShieldImplanter = mindshield implanter
+ent-RadioImplanterCentcomm = centcomm radio implanter
+ent-DeathRattleImplanterCentcomm = centcomm death rattle implanter

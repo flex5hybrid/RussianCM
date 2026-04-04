@@ -1,0 +1,24 @@
+
+ent-CMAirlock = airlock
+ent-CMAirlockCommand = command airlock
+ent-CMAirlockEngineer = engineering airlock
+ent-CMAirlockMedical = medical airlock
+ent-CMAirlockSecurity = security airlock
+ent-CMAirlockMaint = maintenance hatch
+ent-CMAirlockMaintReinforced = reinforced maintenance hatch
+ent-CMAirlockSecure = secure airlock
+ent-CMAirlockCell = cell door
+ent-CMAirlockPrison = maintenance hatch
+ent-RMCAirlockHybrisa = airlock
+ent-RMCAirlockHybrisaPersonal = airlock
+ent-RMCAirlockRusted = airlock
+ent-RMCAirlockRustedWhite = airlock
+ent-CMAirlockGlass = glass airlock
+ent-CMAirlockGlassEngineer = engineering airlock
+ent-CMAirlockGlassMedical = medical airlock
+ent-CMAirlockGlassSecurity = security airlock
+ent-CMAirlockPrep = preparations airlock
+ent-CMAirlockPrepAlpha = alpha squad preparations
+ent-CMAirlockPrepBravo = bravo squad preparations
+ent-CMAirlockPrepCharlie = charlie squad preparations
+ent-CMAirlockPrepDelta = delta squad preparations

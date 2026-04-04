@@ -1,0 +1,2 @@
+
+ent-CMBaseMachineCircuitboard = machine board

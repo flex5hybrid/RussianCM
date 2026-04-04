@@ -1,0 +1,8 @@
+
+  .desc = The blue, anaerobic lungs of a vox, they intake nitrogen to breathe. Any form of gaseous oxygen is lethally toxic if breathed in.
+ent-OrganVoxStomach = stomach
+  .desc = A stomach that smells of ammonia.
+ent-OrganVoxLiver = liver
+  .desc = Smells flammable.
+ent-OrganVoxHeart = heart
+  .desc = The strange heart of a vox.

@@ -1,0 +1,27 @@
+
+ent-RMCHybrisaRainLightProp = light rain
+  .desc = It's a small amount of rain, falling from the sky.
+ent-RMCHybrisaRainVeryLightProp = very light rain
+  .desc = It's a very small amount of rain, falling from the sky.
+ent-RMCHybrisaRainProp = rain
+  .desc = It's rain, falling from the sky.
+ent-RMCTrijentRainLightProp = light rain
+  .desc = It's a small amount of rain, falling from the sky.
+ent-RMCStrataStormVeryLightProp = very light rain
+  .desc = It's a very small amount of rain, falling from the sky.
+ent-RMCStrataStormLightProp = light rain
+  .desc = It's a small amount of rain, falling from the sky.
+ent-RMCStrataStormProp = rain
+  .desc = It's rain, falling from the sky.
+ent-RMCBigRedDustProp = duststorm
+  .desc = It's dust, falling from the sky.
+ent-RMCBigRedSandProp = sandstorm
+  .desc = It's sand, falling from the sky.
+ent-RMCBigRedRocksProp = rockstorm
+  .desc = It's rocks, falling from the sky.
+ent-RMCStrataClearskyProp = light snow
+  .desc = It's snow, falling from the sky.
+ent-RMCStrataSnowingProp = snowstorm
+  .desc = It's snow, falling from the sky.
+ent-RMCStrataBlizzardProp = blizzard
+  .desc = It's a lot of snow, falling from the sky.

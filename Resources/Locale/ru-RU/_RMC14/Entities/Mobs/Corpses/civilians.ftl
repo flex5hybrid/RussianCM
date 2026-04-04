@@ -1,0 +1,2 @@
+
+ent-RMCGuidebookCorpseColonistBurst = Dead Colonist

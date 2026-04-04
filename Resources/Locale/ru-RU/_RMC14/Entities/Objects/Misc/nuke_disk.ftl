@@ -1,0 +1,26 @@
+
+ent-RMCDisk = disk
+ent-RMCNukeDisk = nuclear authentication disk
+  .desc = Better keep this safe.
+ent-RMCDiskData1 = disk
+ent-RMCDiskData2 = disk
+ent-RMCDiskData3 = disk
+ent-RMCDiskData4 = disk
+ent-RMCDiskData5 = disk
+ent-RMCDiskData6 = disk
+ent-RMCDiskData7 = disk
+ent-RMCDisk1 = disk
+ent-RMCDisk2 = disk
+ent-RMCDisk3 = disk
+ent-RMCDisk4 = disk
+ent-RMCDisk5 = disk
+ent-RMCDisk6 = disk
+ent-RMCDisk7 = disk
+ent-RMCDisk8 = disk
+ent-RMCDisk9 = disk
+ent-RMCDisk10 = disk
+ent-RMCDisk11 = disk
+ent-RMCDisk12 = disk
+ent-RMCDisk13 = disk
+ent-RMCDisk14 = disk
+ent-RMCDisk15 = disk

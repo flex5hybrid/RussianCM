@@ -1,0 +1,2 @@
+
+ent-RMCSpawnZombifiedColonist = zombie spawner

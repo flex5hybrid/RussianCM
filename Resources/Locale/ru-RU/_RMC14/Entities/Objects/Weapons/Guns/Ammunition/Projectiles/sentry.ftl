@@ -1,0 +1,9 @@
+
+ent-CMBulletSentry10x50mm = bullet (10x50mm)
+ent-RMCBulletSentry = bullet (10x28mm)
+ent-RMCBulletSentryFireProjectile = flaming ball
+  .desc = Huh? You shouldn't be able to see this...
+ent-RMCBulletSentryFireProjectileBlue = flaming ball blue
+  .desc = Huh? You shouldn't be able to see this...
+ent-RMCBulletSentryFireProjectileSmoke = flaming ball smoke
+  .desc = Huh? You shouldn't be able to see this...

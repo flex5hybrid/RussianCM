@@ -1,0 +1,21 @@
+
+ent-RMCSpawnerRandomGunBase = gun spawner
+  .desc = hi this will spawn a random gun
+ent-RMCSpawnerRandomGunPistol = pistol loot spawner
+  .desc = spawns a surv pistol and some ammo
+ent-RMCSpawnerRandomGunRifle = rifle loot spawner
+  .desc = spawns a surv rifle and some ammo
+ent-RMCSpawnerRandomGunShotgun = shotgun loot spawner
+  .desc = spawns a surv shotgun and some ammo
+ent-RMCSpawnerRandomGunSMG = smg loot spawner
+  .desc = spawns a surv smg and some ammo
+ent-RMCSpawnerRandomGunSpecial = special gun loot spawner
+  .desc = spawns a surv special gun and some ammo
+ent-RMCSpawnerRandomAttachment = random attachment
+  .desc = This is a random attachment
+ent-RMCSpawnerRandomShotgunBoxes = shotgun shell box spawner
+  .desc = This is a shotgun shell box.
+ent-RMCSpawnerRandomGrenadePackets = random grenade packets spawner
+  .desc = This is a random grenade packet.
+ent-RMCSpawnerRandomRockets = random rockets spawner
+  .desc = This is a random rocket.

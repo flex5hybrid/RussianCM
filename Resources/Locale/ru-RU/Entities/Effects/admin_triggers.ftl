@@ -1,0 +1,2 @@
+
+ent-AdminInstantEffectBase = instant effect

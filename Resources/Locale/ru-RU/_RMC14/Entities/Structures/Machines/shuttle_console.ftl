@@ -1,0 +1,21 @@
+
+ent-CMComputerDropshipNavigation = dropship navigation computer
+  .desc = A flight computer that can be used for autopilot or long-range flights.
+ent-CMComputerDropshipNavigationERT = transport shuttle
+  .desc = A transport shuttle flight computer.
+ent-CMComputerDropshipNavigationPlanetside = dropship navigation computer
+  .desc = A flight computer that can be used to direct linked dropships.
+ent-CMComputerDropshipCamerasAlamo = camera controls
+  .desc = A computer to monitor cameras linked to the dropship.
+ent-RMCComputerDropshipCamerasNormandy = camera controls
+  .desc = A computer to monitor cameras linked to the dropship.
+ent-CMComputerDropshipWeapons = weapons controls
+  .desc = A computer to manage equipment, weapons and simulations installed on the dropship.
+ent-RMCComputerDropshipNavigationSmall = dropship navigation computer
+  .desc = A flight computer that can be used for autopilot or long-range flights.
+ent-RMCComputerDropshipWeaponsSmall = weapons controls
+  .desc = A computer to manage equipment, weapons and simulations installed on the dropship.
+ent-CMDropshipDestination = dropship destination
+  .desc = Defines a valid location for the dropships to FTL to when piloted.
+ent-CMDropshipHijackDestination = hijack destination
+  .desc = Defines a valid location for the dropships to FTL to when hijacked.

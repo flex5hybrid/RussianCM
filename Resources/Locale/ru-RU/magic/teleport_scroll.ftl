@@ -1,0 +1,2 @@
+
+ent-WizardTeleportScroll = teleport scroll

@@ -1,0 +1,25 @@
+
+  .desc = A raw material.
+ent-MaterialCardboard = cardboard
+ent-MaterialCloth = cloth
+ent-MaterialDurathread = durathread
+ent-MaterialWoodPlank = wood
+ent-MaterialBiomass = biomass
+ent-MaterialHideBear = bear hide
+ent-MaterialHideCorgi = corgi hide
+  .desc = Luxury pelt used in only the most elite fashion. Rumors say this is found when a corgi is sent to the nice farm.
+ent-MaterialDiamond = refined diamond
+ent-MaterialCotton = cotton
+ent-MaterialPyrotton = pyrotton
+ent-MaterialBananium = bananium
+ent-MaterialWebSilk = silk
+  .desc = A webby material.
+ent-MaterialToothSpaceCarp = space carp tooth
+  .desc = Pretty small but plenty nasty. You like them best when they're not sinking into you.
+ent-MaterialToothSharkminnow = sharkminnow tooth
+  .desc = Looks sharp. Sharp enough to poke someone's eye out. Holy fuck it's big.
+ent-MaterialBones = bones
+ent-MaterialGunpowder = gunpowder
+  .desc = An explosive compound.
+ent-MaterialGoliathHide = goliath hide plates
+  .desc = Pieces of a goliath's rocky hide, these might be able to make your suit a bit more durable to attack from the local fauna.

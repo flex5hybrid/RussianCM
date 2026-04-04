@@ -1,0 +1,26 @@
+
+ent-BaseTowel = base towel
+  .desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorWhite = white towel
+ent-TowelColorPurple = purple towel
+ent-TowelColorRed = red towel
+ent-TowelColorBlue = blue towel
+ent-TowelColorDarkBlue = dark blue towel
+ent-TowelColorLightBlue = light blue towel
+ent-TowelColorTeal = teal towel
+ent-TowelColorBrown = brown towel
+ent-TowelColorLightBrown = light brown towel
+ent-TowelColorGray = gray towel
+ent-TowelColorGreen = green towel
+ent-TowelColorDarkGreen = dark green towel
+ent-TowelColorGold = gold towel
+ent-TowelColorOrange = orange towel
+ent-TowelColorBlack = black towel
+ent-TowelColorPink = pink towel
+ent-TowelColorYellow = yellow towel
+ent-TowelColorMaroon = maroon towel
+ent-TowelColorSilver = silver towel
+ent-TowelColorMime = silent towel
+ent-TowelColorNT = NanoTrasen brand towel
+ent-TowelColorCentcom = centcom towel
+ent-TowelColorSyndicate = syndicate towel

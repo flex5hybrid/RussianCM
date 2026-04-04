@@ -1,0 +1,27 @@
+
+ent-RMCBaseMapIcon = Icon
+ent-RMCLesserMapIcon = Lesser
+ent-RMCParasiteMapIcon = Parasite
+ent-RMCLarvaMapIcon = Larva
+ent-RMCDroneMapIcon = Drone
+ent-RMCHivelordMapIcon = Hivelord
+ent-RMCBurrowerMapIcon = Burrower
+ent-RMCCarrierMapIcon = Carrier
+ent-RMCDefenderMapIcon = Defender
+ent-RMCWarriorMapIcon = Warrior
+ent-RMCCrusherMapIcon = Crusher
+ent-RMCSentinelMapIcon = Sentinel
+ent-RMCSpitterMapIcon = Spitter
+ent-RMCBoilerMapIcon = Boiler
+ent-RMCRunnerMapIcon = Runner
+ent-RMCLurkerMapIcon = Lurker
+ent-RMCRavagerMapIcon = Ravager
+ent-RMCPraetorianMapIcon = Praetorian
+ent-RMCQueenMapIcon = Queen
+ent-RMCLeaderMapIcon = Leader Crown
+ent-RMCHiveCoreMapIcon = Hive core
+ent-RMCMorpherMapIcon = Egg morpher
+ent-RMCClusterMapIcon = Hive cluster
+ent-RMCTunnelMapIcon = Tunnel
+ent-RMCRecovNodeMapIcon = Recovery node
+ent-RMCPylonMapIcon = hive pylon

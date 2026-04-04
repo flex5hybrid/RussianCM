@@ -1,0 +1,27 @@
+
+  .desc = Yep, it's a tree.
+ent-RMCBaseTreeAlien = strange tree
+  .desc = Some kind of bizarre alien tree. It oozes with a sickly yellow sap.
+ent-RMCFloraTree01 = tree
+ent-RMCFloraTree02 = tree
+ent-RMCFloraTree03 = tree
+ent-RMCFloraTree04 = tree
+ent-RMCFloraTree05 = tree
+ent-RMCFloraTree06 = tree
+ent-RMCFloraTreeSnow01 = snowy tree
+ent-RMCFloraTreeSnow02 = snowy tree
+ent-RMCFloraTreeSnow03 = snowy tree
+ent-RMCFloraTreeSnow04 = snowy tree
+ent-RMCFloraTreeSnow05 = snowy tree
+ent-RMCFloraTreeSnow06 = snowy tree
+ent-RMCFloraTreeStump = tree stump
+ent-RMCFloraTreeLarge01 = large tree
+ent-RMCFloraTreeLarge02 = large tree
+ent-RMCFloraTreeLarge03 = large tree
+ent-RMCFloraTreeLarge04 = large tree
+ent-RMCFloraTreeLarge05 = large tree
+ent-RMCFloraTreeLarge06 = large tree
+ent-RMCFloraTreeConifer01 = snowy conifer
+ent-RMCFloraTreeConifer02 = snowy conifer
+ent-RMCFloraTreeConifer03 = snowy conifer
+ent-RMCFloraTreeStumpConifer = tree stump

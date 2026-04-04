@@ -1,0 +1,2 @@
+
+ent-RMCRadioHandheldColonyBase = shortwave radio

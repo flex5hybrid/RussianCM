@@ -1,0 +1,19 @@
+
+ent-BaseJetpack = jetpack
+  .desc = It's a jetpack. It can hold 5 L of gas.
+ent-ActionToggleJetpack = Toggle jetpack
+  .desc = Toggles the jetpack, giving you movement outside the station.
+ent-JetpackBlue = jetpack
+ent-JetpackBlueFilled = jetpack
+ent-JetpackBlack = jetpack
+ent-JetpackBlackFilled = jetpack
+ent-JetpackCaptain = captain's jetpack
+ent-JetpackCaptainFilled = captain's jetpack
+ent-JetpackMini = mini jetpack
+  .desc = It's a jetpack. It can hold 1.5 L of gas.
+ent-JetpackMiniFilled = mini jetpack
+ent-JetpackSecurity = security jetpack
+ent-JetpackSecurityFilled = security jetpack
+ent-JetpackVoid = void jetpack
+ent-JetpackVoidFilled = void jetpack
+ent-JetpackXenoborg = xenoborg jetpack

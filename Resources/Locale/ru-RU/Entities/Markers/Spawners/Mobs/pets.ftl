@@ -1,0 +1,23 @@
+
+ent-SpawnMobAlexander = Alexander Spawner
+ent-SpawnMobBandito = Bandito Spawner
+ent-SpawnMobCat = Random Cat Spawner
+ent-SpawnMobCatBingus = Bingus Spawner
+ent-SpawnMobCatException = Exception Spawner
+ent-SpawnMobCatFloppa = Floppa Spawner
+ent-SpawnMobCatRuntime = Runtime Spawner
+ent-SpawnMobCorgi = Corgi Spawner
+ent-SpawnMobCorgiMouse = Dev Mouse Spawner
+ent-SpawnMobCrabAtmos = Tropico Spawner
+ent-SpawnMobFoxRenault = Fox Renault Spawner
+ent-SpawnMobMcGriff = McGriff Spawner
+ent-SpawnMobHamsterHamlet = Hamster Hamlet Spawner
+ent-SpawnMobKangarooWillow = Willow Spawner
+ent-SpawnMobMonkeyPunpun = Pun Pun Spawner
+ent-SpawnMobPollyParrot = Polly the parrot Spawner
+ent-SpawnMobPossumMorty = Possum Morty Spawner
+ent-SpawnMobRaccoonMorticia = Raccoon Morticia Spawner
+ent-SpawnMobShiva = Shiva Spawner
+ent-SpawnMobSlothPaperwork = Sloth Paperwork Spawner
+ent-SpawnMobSmile = Smile Spawner
+ent-SpawnMobWalter = Walter Spawner

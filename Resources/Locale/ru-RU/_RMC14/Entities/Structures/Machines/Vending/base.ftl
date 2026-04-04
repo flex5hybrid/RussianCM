@@ -1,0 +1,2 @@
+
+ent-ColMarTechBase = ColMarTech vendor

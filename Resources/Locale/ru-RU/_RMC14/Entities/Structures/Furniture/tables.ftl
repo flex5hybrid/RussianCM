@@ -1,0 +1,26 @@
+
+ent-CMTable = table
+  .desc = A square metal surface resting on four legs. Useful to put stuff on.
+ent-RMCLargeTable = table
+  .desc = A square metal surface resting on four legs. Useful to put stuff on.
+ent-CMTableReinforced = reinforced table
+  .desc = A square metal surface resting on four legs. This one has side panels, making it useful as a desk.
+  .desc = A square metal surface resting on its fat metal bottom.
+ent-CMTableReinforcedBlack = black table
+  .desc = A sleek black metal table. Its legs are securely bolted to the floor.
+ent-CMTableWooden = wooden table
+  .desc = A square wood surface resting on four legs. Useful to put stuff on.
+ent-CMTableWoodenPoor = poor wooden table
+  .desc = A semi-poorly constructed wood surface resting on four legs. Useful to put stuff on.
+ent-CMTableWoodenFancy = fancy wooden table
+  .desc = A nicely crafted mahogany wood surface resting on four legs. Useful to put stuff on.
+ent-CMTableWoodenGambling = gambling table
+  .desc = A curved wood and carpet surface resting on four legs. Used for gambling games.
+ent-CMTableAlmayer = table
+  .desc = A square metal surface resting on four legs. Useful to put stuff on. Can be flipped in emergencies to act as cover.
+ent-RMCTablePrison = table
+  .desc = A square metal surface resting on four legs. This one has side panels, making it useful as a desk, but impossible to flip.
+ent-RMCTableHunter = table
+  .desc = A square metal surface resting on four legs. This one has side panels, making it useful as a desk, but impossible to flip.
+ent-RMCLargeTableBar = bar table
+  .desc = A wooden table that has seen better days. There's the stickly sensation of spilled drinks within the cracks of the wood.

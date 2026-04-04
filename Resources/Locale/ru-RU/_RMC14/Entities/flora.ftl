@@ -1,0 +1,25 @@
+
+ent-BonsaiTree01 = Bush
+  .desc = A small, leafy bush.
+ent-BonsaiTree02 = Bush
+  .desc = A small, leafy bush.
+ent-BonsaiTree03 = Bush
+  .desc = A small, leafy bush.
+ent-BonsaiTree04 = Bush
+  .desc = A small, leafy bush.
+ent-StalkyBush01 = stalkybush
+ent-StalkyBush02 = stalkybush
+ent-StalkyBush03 = stalkybush
+ent-FernyBush01 = fernybush
+ent-FernyBush02 = fernybush
+ent-FernyBush03 = fernybush
+ent-RMCFloraTreePalm01 = palm tree
+ent-RMCFloraTreePalm02 = palm tree
+ent-RMCRock = rock
+  .desc = A solidified collection of local minerals. When melted, becomes a substance best known as lava.
+ent-RMCRockIndistructable = sturdy rock
+  .desc = A solidified collection of local minerals. When melted, becomes a substance best known as lava. These look particularly durable.
+ent-RMCRockSmart = a smart rock
+  .desc = Now draw them getting an education.
+ent-RMCBoulder1 = boulder
+  .desc = A large rock. It's not cooking anything.

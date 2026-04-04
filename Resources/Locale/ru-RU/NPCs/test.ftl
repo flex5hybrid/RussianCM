@@ -1,0 +1,2 @@
+
+ent-MobPathfindDummy = pathfind dummy

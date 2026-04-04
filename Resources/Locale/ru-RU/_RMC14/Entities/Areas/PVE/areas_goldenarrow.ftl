@@ -1,0 +1,25 @@
+
+ent-RMCAreaGA = Golden Arrow
+ent-RMCAreaGAHypersleepStorageA = Hypersleep Storage A
+ent-RMCAreaGAHypersleepStorageB = Hypersleep Storage B
+ent-RMCAreaGAHypersleepStorageC = Hypersleep Storage C
+ent-RMCAreaGAHypersleepStorageD = Hypersleep Storage D
+ent-RMCAreaGAHypersleepGearLockers = Hypersleep Gear Lockers
+ent-RMCAreaGAMessHall = Mess Hall
+ent-RMCAreaGABathroom = Bathroom
+ent-RMCAreaGADisposals = Disposals
+ent-RMCAreaGAMedical = Medical
+ent-RMCAreaGABriefRoom = Briefing Room
+ent-RMCAreaGACommandDeck = Platoon Command Deck
+ent-RMCAreaGACommandRooms = Platoon Command Rooms
+ent-RMCAreaGAPrep = Platoon Prep
+ent-RMCAreaGAArmoury = Platoon Armoury
+ent-RMCAreaGAHangar = Hangar
+ent-RMCAreaGASupply = Supply
+ent-RMCAreaGAMaint = Maintenance
+ent-RMCAreaGAEngineering = Engineering
+ent-RMCAreaGASynth = Synthetic Storage Closet
+ent-RMCAreaGAAI = AI Interface
+ent-RMCAreaGALiaisonOffice = Liaison Office
+ent-RMCAreaGASupplyDrop = Supply Drop Bay
+ent-RMCAreaGAOOB = Out Of Bounds

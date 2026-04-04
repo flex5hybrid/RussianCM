@@ -1,0 +1,25 @@
+
+ent-RMCSkillAntagonist = Antagonist
+ent-RMCSkillConstruction = Construction
+ent-RMCSkillCqc = Cqc
+ent-RMCSkillDomestics = Domestics
+ent-RMCSkillEndurance = Endurance
+ent-RMCSkillEngineer = Engineer
+ent-RMCSkillExecution = Execution
+ent-RMCSkillFirearms = Firearms
+ent-RMCSkillFireman = Fireman
+ent-RMCSkillIntel = Intel
+ent-RMCSkillJtac = Jtac
+ent-RMCSkillLeadership = Leadership
+ent-RMCSkillMedical = Medical
+ent-RMCSkillMeleeWeapons = Melee Weapons
+ent-RMCSkillNavigations = Navigations
+ent-RMCSkillOverwatch = Overwatch
+ent-RMCSkillPilot = Pilot
+ent-RMCSkillPolice = Police
+ent-RMCSkillPowerLoader = Power Loader
+ent-RMCSkillResearch = Research
+ent-RMCSkillSmartGun = Smart Gun
+ent-RMCSkillSpecialistWeapons = Specialist Weapons
+ent-RMCSkillSurgery = Surgery
+ent-RMCSkillVehicles = Vehicles

@@ -1,0 +1,21 @@
+
+ent-SheetGlassBase = glass
+  .desc = A sheet of glass, used often on the station in various applications.
+ent-SheetRGlass = reinforced glass
+  .desc = A reinforced sheet of glass.
+ent-SheetRGlass1 = reinforced glass
+ent-SheetPGlass = plasma glass
+  .desc = A sheet of translucent plasma.
+ent-SheetPGlass1 = plasma glass
+ent-SheetRPGlass = reinforced plasma glass
+  .desc = A reinforced sheet of translucent plasma.
+ent-SheetRPGlass1 = reinforced plasma glass
+ent-SheetUGlass = uranium glass
+  .desc = A sheet of uranium glass.
+ent-SheetUGlass1 = uranium glass
+ent-SheetRUGlass = reinforced uranium glass
+  .desc = A reinforced sheet of uranium.
+ent-SheetRUGlass1 = reinforced uranium glass
+ent-SheetClockworkGlass = clockwork glass
+  .desc = A sheet of brass-hardened glass, primarily used by clockwork enthusiasts and remnants of Ratvarian cults.
+ent-SheetClockworkGlass1 = clockwork glass

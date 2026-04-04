@@ -1,0 +1,20 @@
+
+ent-SquadAlpha = Alpha
+ent-SquadBravo = Bravo
+ent-SquadCharlie = Charlie
+ent-SquadDelta = Delta
+ent-SquadFoxtrot = Foxtrot
+ent-SquadEcho = Echo
+ent-SquadIntel = Intel
+ent-SquadSPP = SPP
+ent-SquadPMC = PMC
+ent-SquadFreelancer = Freelancer
+ent-SquadRoyalMarines = Royal Marines
+ent-SquadRoyalMarinesPVE = Whiskey Troop
+ent-SquadPara = Royal Paramarines
+ent-SquadProvost = Provost
+ent-SquadFORECON = Recon
+ent-SquadSOF = SOF
+ent-SquadCLF = CLF
+ent-SquadUnassigned = Unassigned
+ent-SquadSunRiders = Sun Riders

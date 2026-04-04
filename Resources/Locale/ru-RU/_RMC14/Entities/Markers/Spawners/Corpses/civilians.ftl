@@ -1,0 +1,19 @@
+
+ent-RMCSpawnerCorpsePrisoner = Corpse Spawner - Prisoner
+ent-RMCSpawnerCorpseChef = Corpse Spawner - Chef
+ent-RMCSpawnerCorpseDoctor = Corpse Spawner - Doctor
+ent-RMCSpawnerCorpseEngineer = Corpse Spawner - Engineer
+ent-RMCSpawnerCorpseScientist = Corpse Spawner - Scientist
+ent-RMCSpawnerCorpseScientistAegis = Corpse Spawner - Aegis Scientist
+ent-RMCSpawnerCorpseMiner = Corpse Spawner - Shaft Miner
+ent-RMCSpawnerCorpseSecurity = Corpse Spawner - Security Officer
+ent-RMCSpawnerCorpseLiaison = Corpse Spawner - Corporate Liaison
+ent-RMCSpawnerCorpsePrisonGuard = Corpse Spawner - Prison Guard
+ent-RMCSpawnerCorpseColonist = Corpse Spawner - Colonist
+ent-RMCSpawnerCorpseColonistBust = Corpse Spawner - Colonist
+ent-RMCSpawnerCorpseColonistKutjevo = Corpse Spawner - Colonist Kutjevo
+ent-RMCSpawnerCorpseColonistKutjevoBust = Corpse Spawner - Colonist Kutjevo
+ent-RMCSpawnerCorpseUNRiotOfficer = Corpse Spawner - CMB Riot Control Officer
+ent-RMCSpawnerCorpseUNRiotOfficerBurst = Corpse Spawner - CMB Riot Control Officer
+ent-RMCSpawnerCorpseWeYaManager = Corpse Spawner - Corporate Supervisor
+ent-RMCSpawnerCorpseCLF = Corpse Spawner - CLF Soldier

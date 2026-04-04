@@ -1,0 +1,19 @@
+
+ent-SpawnClownSpider = clown spider spawner
+ent-SpawnMobBear = Space Bear Spawner
+ent-SpawnMobBehonker = behonker Spawner
+ent-SpawnMobBoxingKangaroo = Boxing Kangaroo Spawner
+ent-SpawnMobHellspawn = Hellspawn Spawner
+ent-SpawnMobKangaroo = Space Kangaroo Spawner
+ent-SpawnMobLuminousEntity = luminous entity spawner
+ent-SpawnMobLuminousObject = luminous object spawner
+ent-SpawnMobLuminousPerson = luminous person spawner
+ent-SpawnMobOreCrab = ore crab spawner
+ent-SpawnMobPurpleSnake = Purple Snake Spawner
+ent-SpawnMobSmallPurpleSnake = Small Purple Snake Spawner
+ent-SpawnMobSpaceCobra = Space Cobra Spawner
+ent-SpawnMobSpaceSpider = Space Spider Spawner
+ent-SpawnMobWatcherIcewing = Watcher Icewing Spawner
+ent-SpawnMobWatcherLavaland = Watcher Lavaland Spawner
+ent-SpawnMobWatcherMagmawing = Watcher Magmawing Spawner
+ent-SpawnMobWatcherPride = Watcher Pride Spawner

@@ -1,0 +1,26 @@
+
+ent-RMCJug = jug
+  .desc = Used to contain a very large amount of chemicals or solutions. Chugging is extremely ill-advised.
+ent-RMCJugCarbon = jug
+ent-RMCJugFluorine = jug
+ent-RMCJugChlorine = jug
+ent-RMCJugAluminum = jug
+ent-RMCJugPhosphorus = jug
+ent-RMCJugSulfur = jug
+ent-RMCJugSilicon = jug
+ent-RMCJugHydrogen = jug
+ent-RMCJugLithium = jug
+ent-RMCJugSodium = jug
+ent-RMCJugPotassium = jug
+ent-RMCJugRadium = jug
+ent-RMCJugIron = jug
+ent-RMCJugCopper = jug
+ent-RMCJugGold = jug
+ent-RMCJugMercury = jug
+ent-RMCJugSilver = jug
+ent-RMCJugEthanol = jug
+ent-RMCJugSugar = jug
+ent-RMCJugNitrogen = jug
+ent-RMCJugOxygen = jug
+ent-RMCJugWater = jug
+ent-RMCJugSulphuricAcid = jug

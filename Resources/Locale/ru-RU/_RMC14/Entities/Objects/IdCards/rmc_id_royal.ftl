@@ -1,0 +1,26 @@
+
+ent-RMCIDRoyalMarines = royal marine dogtags
+ent-RMCIDCardGoldRoyalMarines = royal marine commanding officer ID card
+ent-RMCIDRoyalMarinesCommando = Commando's dogtags
+ent-RMCIDRoyalMarinesBreacher = Breacher's dogtags
+ent-RMCIDRoyalMarinesSGO = SGO's dogtags
+ent-RMCIDRoyalMarinesMarksman = Marksman's dogtags
+ent-RMCIDRoyalMarinesMedic = Medic's dogtags
+ent-RMCIDRoyalMarinesTeamlead = Team Leader's dogtags
+ent-RMCIDRoyalMarinesRiflemanPVE = Rifleman's dogtags
+ent-RMCIDRoyalMarinesBombSpecPVE = Bombardment Specialist's dogtags
+ent-RMCIDRoyalMarinesMedicPVE = Medical Assistant's dogtags
+ent-RMCIDRoyalMarinesTroopSargePVE = Troop Sergeant's dogtags
+ent-RMCIDRoyalMarinesSectionLeaderPVE = Section Leader's dogtags
+ent-RMCIDRoyalMarinesTeamLeaderPVE = Team Leader's dogtags
+ent-RMCIDRoyalMarinesSmartgunnerPVE = GPMG Gunner's dogtags
+ent-RMCIDRoyalMarinesScoutSniperPVE = Scout Sniper's dogtags
+ent-RMCIDRoyalMarinesAssaultEngineerPVE = Assault Engineer's dogtags
+ent-RMCIDRoyalMarinesTroopCommanderPVE = Troop Commander's dogtags
+ent-RMCIDRoyalParamarinesRifleman = Rifleman's dogtags
+ent-RMCIDRoyalParamarinesCombatEngineer = Combat Engineer's dogtags
+ent-RMCIDRoyalParamarinesMedicalTechnician = Medical Technician's dogtags
+ent-RMCIDRoyalParamarinesPilot = Pilot's dogtags
+ent-RMCIDRoyalParamarinesTeamLeader = Team Leader's dogtags
+ent-RMCIDRoyalParamarinesSupportSynthetic = Support Synthetic's dogtags
+ent-RMCIDRoyalParamarinesCommander = Commander ID Card

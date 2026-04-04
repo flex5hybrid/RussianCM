@@ -1,0 +1,22 @@
+
+ent-CMSeatBase = abstract chair
+ent-CMChair = chair
+  .desc = A rectangular metallic frame sitting on four legs with a back panel. Designed to fit the sitting position, more or less comfortably.
+ent-CMChairNonFold = chair
+  .desc = A rectangular metallic frame sitting on four legs with a back panel. Designed to fit the sitting position, more or less comfortably.
+ent-RMCStool = stool
+  .desc = Apply butt.
+ent-CMChairComfy = comfy chair
+  .desc = A chair with leather padding and adjustable headrest. You could probably sit in one of these for ages.
+  .desc = A functional chair designed for comfortably sitting a single person with intent to facilitate interactions with the ship AI.
+ent-RMCChairComfyAI = AI interface chair
+  .desc = A simple chair permanently attached to the floor, with the spinning parts removed to force soldiers with low attention spans to keep still during briefings. Covered with a squeaky and way too hard faux-leather, unevenly painted in Alpha squad red. Only for the bravest and freshest Marine recruits.
+  .desc = A simple chair permanently attached to the floor, with the spinning parts removed to force soldiers with low attention spans to keep still during briefings. Covered with a squeaky and way too hard faux-leather, unevenly painted in Bravo squad brown. Certified fortified on all sides from enemy incursion.
+  .desc = A simple chair permanently attached to the floor, with the spinning parts removed to force soldiers with low attention spans to keep still during briefings. Covered with a squeaky and way too hard faux-leather, unevenly painted in Charlie squad purple. Feels out of place without a full breakfast to accompany it.
+  .desc = A simple chair permanently attached to the floor, with the spinning parts removed to force soldiers with low attention spans to keep still during briefings. Covered with a squeaky and way too hard faux-leather, unevenly painted in Delta squad blue. This chair is most likely to be the first to fight and first to die.
+ent-RMCChairComfyAlien = alien chair
+ent-CMChairOfficeDark = dark office chair
+ent-CMChairOfficeWhite = white office chair
+ent-CMChairWood = wooden chair
+  .desc = Old is never too old to not be in fashion.
+  .desc = Old is never too old to not be in fashion.

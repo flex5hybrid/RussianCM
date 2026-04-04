@@ -1,0 +1,11 @@
+
+ent-RMCPrefabBase = prefabricated structure
+  .desc = This structure is made of metal support rods and robust poly-kevlon plastics. A derivative of the stuff used in UN ballistics vests, UNMC and SPP uniforms. The loose walls roll with each gust of wind.
+ent-RMCPrefabBaseTop = prefabricated structure
+  .desc = This structure is made of metal support rods and robust poly-kevlon plastics. A derivative of the stuff used in UN ballistics vests, UNMC and SPP uniforms. The loose walls roll with each gust of wind.
+ent-RMCPrefab32BaseTop = prefabricated structure
+  .desc = This structure is made of metal support rods and robust poly-kevlon plastics. A derivative of the stuff used in UN ballistics vests, UNMC and SPP uniforms. The loose walls roll with each gust of wind.
+ent-RMCWallPrefabOrange = prefabricated structure
+  .desc = This structure is made of metal support rods and robust poly-kevlon plastics. A derivative of the stuff used in UN ballistics vests, UNMC and SPP uniforms. The loose walls roll with each gust of wind.
+ent-RMCPrefabGreebleBase = prefabricated structure
+  .desc = Windsocks, Air-Con units, solarpanels, oh my!

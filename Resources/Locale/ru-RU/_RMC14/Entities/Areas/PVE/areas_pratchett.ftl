@@ -1,0 +1,26 @@
+
+ent-RMCAreaPRT = Pratchett
+ent-RMCAreaPRTHypersleep = Hypersleep Storage
+ent-RMCAreaPRTGalley = Galley
+ent-RMCAreaPRTCanteen = Canteen
+ent-RMCAreaPRTLounge = Common Lounge
+ent-RMCAreaPRTMedbay = Medical Bay
+ent-RMCAreaPRTOffice = Troop Commander's Office
+ent-RMCAreaPRTCargoBayUpper = Upper Deck Cargo Bay
+ent-RMCAreaPRTCargoBayLower = Lower Deck Auxiliary Cargo Transfer Station
+ent-RMCAreaPRTMaintenaceLower = Lower Deck Maintenance
+ent-RMCAreaPRTMaintenanceUpper = Upper Deck Maintenance
+ent-RMCAreaPRTEngineering = Engineering Bay
+ent-RMCAreaPRTHangar = Hangar Bay
+ent-RMCAreaPRTHangarCargo = Hangar Storage
+ent-RMCAreaPRTHallways = Upper Deck Hallways
+ent-RMCAreaPRTDisposalsLower = Processed Waste Primary Disposal Shaft
+ent-RMCAreaPRTDisposalsUpper = Upper Deck Preliminary Waste Processing
+ent-RMCAreaPRTSurgicalBay = Surgical Bay
+ent-RMCAreaPRTArmory = Armaments Storage
+ent-RMCAreaPRTSynth = Synthetic Storage
+ent-RMCAreaPRTAICoreOuter = SHIVA Core Outer Chamber
+ent-RMCAreaPRTAICoreInner = SHIVA Core Inner Chamber
+ent-RMCAreaPRTBunks = Bunkroom
+ent-RMCAreaPRTBriefing = Briefing Room
+ent-RMCAreaPRTCraneTunnel = Cargo Transit Shaft

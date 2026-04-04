@@ -1,0 +1,25 @@
+
+ent-CMFlare = flare
+  .desc = A red Marine issued flare. There are instructions on the side, it reads 'pull cord, make light'.
+ent-RMCFlareCAS = signal flare
+  .desc = A green UNMC issued signal flare. The telemetry computer works on chemical reaction that releases smoke and light and thus works only while the flare is burning.
+ent-RMCStarShellAsh = burning star shell ash
+  .desc = Bright burning ash from a Star Shell 40mm. Don't touch, or it'll burn ya'.
+ent-RMCBoxPackFlareEmpty = коробка фаеров M94 (x10)
+  .desc = Коробка фаеров M94, чтобы осветить ваш день.
+ent-RMCBoxPackFlareCASEmpty = box of M89-S flare packs (x10)
+  .desc = A box of M89 signal flare packs, to mark up the way.
+ent-CMPackFlareBase = M94 marking flare pack
+  .desc = A packet of eight M94 Marking Flares. Carried by Marine soldiers to light dark areas that cannot be reached with the usual TNR Shoulder Lamp.
+ent-RMCPackFlareCAS = M89-S signal flare pack
+  .desc = A packet of eight M89-S Signal Marking Flares.
+ent-RMCFlareBullet = flare projectile
+ent-RMCFlareCASBullet = signal flare projectile
+ent-RMCAirFlare = air flare
+ent-RMCAirFlareCAS = air signal flare
+ent-RMCFlareL96 = flare
+  .desc = A vibrant purple Royal Crown Marines issued flare. There are instructions on the side, it reads 'To light, pull cord'.
+ent-RMCPackFlareL96 = L96 marking flare pack
+  .desc = A packet of eight L96 Signal Marking Flares.
+ent-RMCFlareL96Bullet = L96 flare projectile
+ent-RMCAirFlareL96 = air flare

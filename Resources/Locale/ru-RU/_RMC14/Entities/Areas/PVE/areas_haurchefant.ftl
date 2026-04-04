@@ -1,0 +1,19 @@
+
+ent-RMCAreaHF = Haurchefant
+ent-RMCAreaHFHypersleepStorageA = Hypersleep Storage
+ent-RMCAreaHFHypersleepGearLockers = Hypersleep Gear Lockers
+ent-RMCAreaHFMessHall = Mess Hall
+ent-RMCAreaHFBathroom = Bathroom
+ent-RMCAreaHFOffice = Office
+ent-RMCAreaHFEngineering = Engineering
+ent-RMCAreaHFSyntheticCloset = Synthetic Closet
+ent-RMCAreaHFAICore = AI Core
+ent-RMCAreaHFDisposals = Disposals
+ent-RMCAreaHFMedical = Medical
+ent-RMCAreaHFBriefRoom = Briefing Room
+ent-RMCAreaHFCommandDeck = Force Command Deck
+ent-RMCAreaHFPrep = Force Prep
+ent-RMCAreaHFArmoury = Force Armoury
+ent-RMCAreaHFHangar = Hangar
+ent-RMCAreaHFHangar2 = Lower Hangar
+ent-RMCAreaHFOOB = Out Of Bounds

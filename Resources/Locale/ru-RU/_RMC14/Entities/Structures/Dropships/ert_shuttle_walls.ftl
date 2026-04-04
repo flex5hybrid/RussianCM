@@ -1,0 +1,20 @@
+
+ent-RMCBaseERTShuttleWall = ERT Shuttle Wall
+ent-RMCBaseERTShuttleEngine = Shuttle Engine
+ent-RMCERTShuttleWallStandard = Standard Shuttle Wall
+ent-RMCERTShuttleWallStandardEngineLeft = Standard Shuttle Engine
+ent-RMCERTShuttleWallStandardEngineRight = Standard Shuttle Engine
+ent-RMCERTShuttleWallWeYa = WeYa Shuttle Wall
+ent-RMCERTShuttleWallWeYaEngineLeft = WeYa Shuttle Engine
+ent-RMCERTShuttleWallWeYaEngineRight = WeYa Shuttle Engine
+ent-RMCERTShuttleWallSPP = SPP Shuttle Wall
+ent-RMCERTShuttleWallSPPEngineLeft = SPP Shuttle Engine
+ent-RMCERTShuttleWallSPPEngineRight = SPP Shuttle Engine
+ent-RMCERTShuttleWallTSE = TSE Shuttle Wall
+ent-RMCERTShuttleWallTSEEngineLeft = TSE Shuttle Engine
+ent-RMCERTShuttleWallTSEEngineRight = TSE Shuttle Engine
+ent-RMCERTShuttleWallNightmareSPP = Nightmare SPP Shuttle Wall
+ent-RMCERTShuttleWallNightmareSPPEngineLeft01 = Nightmare SPP Shuttle Engine
+ent-RMCERTShuttleWallNightmareSPPEngineLeft02 = Nightmare SPP Shuttle Engine
+ent-RMCERTShuttleWallNightmareSPPEngineRight01 = Nightmare SPP Shuttle Engine
+ent-RMCERTShuttleWallNightmareSPPEngineRight02 = Nightmare SPP Shuttle Engine

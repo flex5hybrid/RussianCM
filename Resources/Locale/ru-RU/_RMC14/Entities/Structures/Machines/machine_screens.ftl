@@ -1,0 +1,2 @@
+
+ent-RMCMachineScreenBase = monitor

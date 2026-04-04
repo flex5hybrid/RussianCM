@@ -1,0 +1,2 @@
+
+ent-SpawnPointWizard = wizard

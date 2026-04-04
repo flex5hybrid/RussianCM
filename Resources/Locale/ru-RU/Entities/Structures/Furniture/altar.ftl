@@ -1,0 +1,23 @@
+
+ent-AltarBase = altar
+  .desc = Altar of the Gods.
+ent-AltarNanotrasen = nanotrasen altar
+ent-AltarChaos = chaos altar
+ent-AltarDruid = druid altar
+ent-AltarToolbox = toolbox altar
+ent-AltarSpaceChristian = space-Christian altar
+ent-AltarSatana = satanic altar
+ent-AltarTechnology = technology altar
+ent-AltarConvertFestival = festival altar
+ent-AltarConvertMaint = maint altar
+ent-AltarConvertBlue = blue altar
+ent-AltarConvertBurden = burden altar
+ent-AltarConvert = convert altar
+ent-AltarConvertOrange = orange altar
+ent-AltarConvertRed = red altar
+ent-AltarConvertWhite = white altar
+ent-AltarConvertYellow = yellow altar
+ent-AltarHeaven = heaven altar
+ent-AltarFangs = fanged altar
+ent-AltarBananium = honkmother altar
+  .desc = A bananium altar dedicated to the honkmother.
