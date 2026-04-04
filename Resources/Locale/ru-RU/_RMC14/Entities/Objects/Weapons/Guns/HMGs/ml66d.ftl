@@ -1,11 +1,10 @@
-
-ent-RMCSmartGunMounted = ML66D heavy machine gun
-  .desc = The top half of a ML66D heavy machine gun post. However it ain't much use without the tripod.
-ent-RMCSmartGunMountedStatic = ML66D heavy machine gun
-ent-RMCMagazineML66D = ML66D drum magazine (10x28mm)
-  .desc = A box of 700, 10x28mm caseless tungsten rounds for the ML66D heavy machine gun system.
-ent-RMCMagazineML66DLarge = large ML66D drum magazine (10x28mm)
-  .desc = A box of 1500, 10x28mm caseless tungsten rounds for the ML66D heavy machine gun system.
-ent-RMCCartridgeHMG10x28mm = cartridge (10x28mm)
-ent-RMCCartridgeHMG10x28mmOffset = cartridge (10x28mm)
-ent-RMCBulletHMG10x28mm = bullet (10x28mm)
+ent-RMCSmartGunMounted-name = Крупнокалиберный пулемет МЛ66Д
+ent-RMCSmartGunMounted-desc = Верхняя половина поста крупнокалиберного пулемета МЛ66Д. 
+ent-RMCSmartGunMountedStatic-name = Крупнокалиберный пулемет МЛ66Д
+ent-RMCMagazineML66D-name = Барабанный магазин МЛ66Д (10х28мм)
+ent-RMCMagazineML66D-desc = Коробка из 700 безгильзовых вольфрамовых патронов калибра 10х28 мм к крупнокалиберному пулеметному комплексу МЛ66Д.
+ent-RMCMagazineML66DLarge-name = большой барабанный магазин МЛ66Д (10х28 мм)
+ent-RMCMagazineML66DLarge-desc = Ящик с 1500 безгильзовыми вольфрамовыми патронами калибра 10х28 мм к крупнокалиберному пулеметному комплексу МЛ66Д.
+ent-RMCCartridgeHMG10x28mm-name = патрон (10х28мм)
+ent-RMCCartridgeHMG10x28mmOffset-name = патрон (10х28мм)
+ent-RMCBulletHMG10x28mm-name = пуля (10х28мм)

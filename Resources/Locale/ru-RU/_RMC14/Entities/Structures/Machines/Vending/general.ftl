@@ -1,3 +1,2 @@
-
 ent-CMVendorCassettes = Rec-Vend
-  .desc = Contains We-Ya approved recreational items, like Cassette Players and Cards.
+  .desc = Содержит одобренные We-Ya предметы для отдыха, такие как кассетные плееры и карты.

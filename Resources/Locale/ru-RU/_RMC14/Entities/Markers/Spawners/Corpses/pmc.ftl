@@ -1,10 +1,9 @@
-
-ent-RMCSpawnerCorpseWeYaGoon = Corpse Spawner - We-Ya Goon
-ent-RMCSpawnerCorpseWeYaGoonLead = Corpse Spawner - We-Ya Goon Lead
-ent-RMCSpawnerCorpseWeYaGoonLeadBurst = Corpse Spawner - We-Ya Goon Lead
-ent-RMCSpawnerCorpseWeYaPMC = Corpse Spawner - We-Ya PMC Standard
-ent-RMCSpawnerCorpseWeYaPMCStandardBurst = Corpse Spawner - We-Ya PMC Standard
-ent-RMCSpawnerCorpseWeYaGoonLeadHybrisa = Corpse Spawner - We-Ya Goon Hybrisa Lead
-ent-RMCSpawnerCorpseWeYaGoonLeadHybrisaBurst = Corpse Spawner - We-Ya Goon Hybrisa Lead
-ent-RMCSpawnerCorpseWeYaGoonHybrisa = Corpse Spawner - We-Ya Goon Hybrisa
-ent-RMCSpawnerCorpseWeYaGoonKutjevo = Corpse Spawner - We-Ya Goon Kutjevo
+ent-RMCSpawnerCorpseWeYaGoon-name = Создатель трупов - We-Ya Goon
+ent-RMCSpawnerCorpseWeYaGoonLead-name = Создатель трупов — главный герой We-Ya Goon
+ent-RMCSpawnerCorpseWeYaGoonLeadBurst-name = Создатель трупов — главный герой We-Ya Goon
+ent-RMCSpawnerCorpseWeYaPMC-name = Создатель трупов - Стандарт We-Ya PMC
+ent-RMCSpawnerCorpseWeYaPMCStandardBurst-name = Создатель трупов - Стандарт We-Ya PMC
+ent-RMCSpawnerCorpseWeYaGoonLeadHybrisa-name = Создатель трупов — We-Ya Goon Hybrisa Lead
+ent-RMCSpawnerCorpseWeYaGoonLeadHybrisaBurst-name = Создатель трупов — We-Ya Goon Hybrisa Lead
+ent-RMCSpawnerCorpseWeYaGoonHybrisa-name = Создатель трупов - We-Ya Goon Hybrisa
+ent-RMCSpawnerCorpseWeYaGoonKutjevo-name = Создатель трупов - We-Ya Goon Kutjevo

@@ -1,3 +1,2 @@
-
-ent-RMCAdminPDA = Admin PDA
-  .desc = If you are not an admin please return this PDA to the nearest admin.
+ent-RMCAdminPDA = КПК администратора
+  .desc = Если вы не администратор, пожалуйста, верните этот КПК ближайшему администратору.

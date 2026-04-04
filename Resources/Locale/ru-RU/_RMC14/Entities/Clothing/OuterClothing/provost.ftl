@@ -1,13 +1,12 @@
-
-ent-RMCArmorProvost = M3 pattern provost armor
-  .desc = A standard Provost M3 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
-ent-RMCArmorProvostSenior = M3 pattern senior provost armor
-  .desc = A more refined Provost M3 Pattern Chestplate for senior officers. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
-ent-RMCArmorProvostMarshal = M5 pattern provost marshal armor
-  .desc = A custom fit luxury armor suit for Provost Marshals. Useful for letting your men know who is in charge when taking to the field.
-ent-RMCArmorProvostLight = M3 pattern provost light armor
-  .desc = A lighter Provost M3 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
-ent-RMCArmorProvostFlexi = M3 pattern provost flexi-armor
-  .desc = A more refined Provost M3 Pattern Chestplate for senior officers. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
-ent-RMCArmorProvostAgent = M3 pattern special agent armor
-  .desc = A modified luxury armor, originally meant for a Provost Marshall, modified to use the colors and insignia of the intelligence service.
+ent-RMCArmorProvostAgent = броня спецагента схемы M3
+  .desc = Модифицированная роскошная броня, изначально предназначенная для провост-маршала, изменённая для использования цветов и эмблемы разведывательной службы.
+ent-RMCArmorProvostFlexi = гибкая броня провоста схемы M3
+  .desc = Более усовершенствованный нагрудник Провоста схемы M3 для старших офицеров. Защищает грудь от баллистических снарядов, режущих предметов и несчастных случаев. Имеет прикреплённый небольшой кожаный подсумок для ограниченного хранения.
+ent-RMCArmorProvostLight = лёгкая броня провоста схемы M3
+  .desc = Более лёгкий нагрудник Провоста схемы M3. Защищает грудь от баллистических снарядов, режущих предметов и несчастных случаев. Имеет прикреплённый небольшой кожаный подсумок для ограниченного хранения.
+ent-RMCArmorProvostMarshal = броня провост-маршала схемы M5
+  .desc = Кастомный роскошный бронекостюм для провост-маршалов. Полезен для того, чтобы ваши люди знали, кто главный при выходе в поле.
+ent-RMCArmorProvostSenior = броня старшего провоста схемы M3
+  .desc = Более усовершенствованный нагрудник Провоста схемы M3 для старших офицеров. Защищает грудь от баллистических снарядов, режущих предметов и несчастных случаев. Имеет прикреплённый небольшой кожаный подсумок для ограниченного хранения.
+ent-RMCArmorProvost = броня провоста схемы M3
+  .desc = Стандартный нагрудник Провоста схемы M3. Защищает грудь от баллистических снарядов, режущих предметов и несчастных случаев. Имеет прикреплённый небольшой кожаный подсумок для ограниченного хранения.

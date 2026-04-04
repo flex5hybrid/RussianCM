@@ -1,2 +1,1 @@
-
-ent-RMCGrassTallBase = tallgrass
+ent-RMCGrassTallBase = высокая трава

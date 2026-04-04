@@ -1,9 +1,4 @@
-
-ent-CMSmartGunOperatorEquipmentCase = ML66A smart gun system case
-  .desc = A large case containing an ML66A Smartgun, ML66A combat harness, head mounted sight and powerpack.
-
-NOTE: You cannot put items back inside this case.
-ent-CMCOSmartGunOperatorEquipmentCase = ML66B smart gun system case
-  .desc = A large case containing an ML66B 'cavalier' Smartgun, ML66A combat harness, head mounted sight and powerpack.
-
-NOTE: You cannot put items back inside this case.
+ent-CMCOSmartGunOperatorEquipmentCase = кейс системы смартгана ML66B
+  .desc = Большой кейс, содержащий смартган ML66B «кавалер», боевую подвеску ML66A, головной прицел и блок питания. ПРИМЕЧАНИЕ: Вы не можете положить предметы обратно в этот кейс.
+ent-CMSmartGunOperatorEquipmentCase = кейс системы смартгана ML66A
+  .desc = Большой кейс, содержащий смартган ML66A, боевую подвеску ML66A, головной прицел и блок питания. ПРИМЕЧАНИЕ: Вы не можете положить предметы обратно в этот кейс.

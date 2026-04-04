@@ -1,3 +1,2 @@
-
-ent-RMCArmorTMCC = Tartarus-Mining utility uniform
-  .desc = A set of standard issue Tartarus-Mining utility fatigues, a yellow pair of utility work slacks and a black collard heavy padded jacket, which protects against various environmental hazards.
+ent-RMCArmorTMCC = утилитарная униформа Tartarus-Mining
+  .desc = Комплект утилитарной формы стандартной выдачи Tartarus-Mining, состоящий из жёлтых утилитарных рабочих брюк и чёрного куртки с воротником и толстой подкладкой, которая защищает от различных environmental hazards.

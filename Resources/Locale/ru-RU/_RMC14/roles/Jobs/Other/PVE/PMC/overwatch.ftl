@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointPMCForceCommandPVE = weya pmc force command spawn point
+ent-RMCSpawnPointPMCForceCommandPVE = точка появления команды Weya PMC Force

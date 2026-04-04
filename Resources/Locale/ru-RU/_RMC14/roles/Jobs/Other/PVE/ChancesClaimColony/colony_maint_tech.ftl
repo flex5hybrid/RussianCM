@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorChancesColonyMaintTech = colony maintenance technician spawn point
-ent-RMCRandomHumanoidSurvivorChancesColonyMaintTech = colony maintenance technician ghost role
+ent-RMCSpawnPointSurvivorChancesColonyMaintTech-name = Точка спавна техника по обслуживанию колонии
+ent-RMCRandomHumanoidSurvivorChancesColonyMaintTech-name = Роль призрака: техник по обслуживанию колонии

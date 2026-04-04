@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorGangLeader = survivor gang leader spawn point
-ent-RMCGearSurvivorPresetGangLeader = gang leader survivor preset
+ent-RMCGearSurvivorPresetGangLeader = Пресет выжившего лидера банды
+ent-RMCSpawnPointSurvivorGangLeader = Точка возрождения лидера банды выживших

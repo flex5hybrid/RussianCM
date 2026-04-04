@@ -1,1 +1,0 @@
-ent-CMDoubleDoorResearchGlassLocked = Исследовательский шлюз

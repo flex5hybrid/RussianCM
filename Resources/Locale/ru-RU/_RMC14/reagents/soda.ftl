@@ -1,29 +1,29 @@
-reagent-name-bobda-classic = Bobda Classic
-reagent-desc-bobda-classic = A tangerine flavored soda that's canned in Havana
+reagent-name-bobda-classic = Бобда Классик
+reagent-desc-bobda-classic = Газированная вода со вкусом мандарина, консервированная в Гаване.
 
-reagent-name-bobda-cherry = Cherry Bobda
-reagent-desc-bobda-cherry = A cherry flavored soda that's canned in Havana
+reagent-name-bobda-cherry = Черри Бобда
+reagent-desc-bobda-cherry = Газированная вода со вкусом вишни, которую консервируют в Гаване.
 
-reagent-name-bobda-lime = Lime Bobda
-reagent-desc-bobda-lime = A lime flavored soda that's canned in Havana
+reagent-name-bobda-lime = Лайм Бобда
+reagent-desc-bobda-lime = Газированная вода со вкусом лайма, консервированная в Гаване.
 
-reagent-name-bobda-grape = Grape Bobda
-reagent-desc-bobda-grape = A grape flavored soda that's canned in Havana
+reagent-name-bobda-grape = Виноградная Бобда
+reagent-desc-bobda-grape = Газированная вода со вкусом винограда, консервированная в Гаване.
 
-reagent-name-bobda-blue = Blue Raspberry Bobda
-reagent-desc-bobda-blue = A blue fruit flavored soda that's canned in Havana
+reagent-name-bobda-blue = Голубая малина Бобда
+reagent-desc-bobda-blue = Газированная вода со вкусом синих фруктов, консервированная в Гаване.
 
-reagent-name-bobda-peach = Peach Bobda
-reagent-desc-bobda-peach = A peach flavored soda with flecks of peach pit floating inside that's canned in Havana
+reagent-name-bobda-peach = Персик Бобда
+reagent-desc-bobda-peach = Газированная вода со вкусом персика и плавающими внутри кусочками персиковой косточки, консервированная в Гаване.
 
-reagent-name-bobda-cranberry = Cranberry Bobda
-reagent-desc-bobda-cranberry = A cranberry flavored soda that's canned in Havana
+reagent-name-bobda-cranberry = Клюквенная Бобда
+reagent-desc-bobda-cranberry = Газированная вода со вкусом клюквы, консервированная в Гаване.
 
-reagent-name-bobda-vanilla = Vanilla Bobda
-reagent-desc-bobda-vanilla = A vanilla flavored soda that's canned in Havana
+reagent-name-bobda-vanilla = Ваниль Бобда
+reagent-desc-bobda-vanilla = Газированная вода со вкусом ванили, которую консервируют в Гаване.
 
-reagent-name-bobda-pineapple = Pineapple Bobda
-reagent-desc-bobda-pineapple = A pineapple flavored soda that's canned in Havana
+reagent-name-bobda-pineapple = Ананас Бобда
+reagent-desc-bobda-pineapple = Газированная вода со вкусом ананаса, консервированная в Гаване.
 
-reagent-name-fruit-beer = Fruit Beer
-reagent-desc-fruit-beer = An insulting Mango flavored beverage. Tastes like rotten fruit.
+reagent-name-fruit-beer = Фруктовое пиво
+reagent-desc-fruit-beer = Оскорбительный напиток со вкусом манго. 

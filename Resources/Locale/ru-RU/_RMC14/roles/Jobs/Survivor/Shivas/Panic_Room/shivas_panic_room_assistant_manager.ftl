@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorPanicRoomAssistantManager = special survivor panic room assistant manager spawn point
+ent-RMCSpawnPointSurvivorPanicRoomAssistantManager-name = Специальная точка появления помощника менеджера комнаты паники для выживших

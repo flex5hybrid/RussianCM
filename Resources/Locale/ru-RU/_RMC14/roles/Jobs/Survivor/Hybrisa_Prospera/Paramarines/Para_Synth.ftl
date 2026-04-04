@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointParaSupportSynthetic = paramarine support synthetic spawn point
+ent-RMCSpawnPointParaSupportSynthetic-name = Синтетическая точка возрождения парамаринов

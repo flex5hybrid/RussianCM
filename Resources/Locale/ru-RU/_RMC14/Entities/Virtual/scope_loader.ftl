@@ -1,2 +1,1 @@
-
-ent-CMScopingChunkLoader = SCOPING CHUNK LOADER YOU SHOULD NOT SEE THIS
+ent-CMScopingChunkLoader = ОБЪЕМ ЧАНКА ЗАГРУЗЧИКА ВЫ НЕ ДОЛЖНЫ ВИДИТЬ ЭТО

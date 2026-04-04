@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorHybrisaWeyamartEmployee = hybrisa weyamart employee spawn point
-ent-RMCGearSurvivorPresetHybrisaWeyamartEmployee = hybrisa weyamart employee preset
+ent-RMCGearSurvivorPresetHybrisaWeyamartEmployee = Предустановка сотрудника hybrisa weyamart
+ent-RMCSpawnPointSurvivorHybrisaWeyamartEmployee = Точка появления сотрудников Hybrisa Weyamart

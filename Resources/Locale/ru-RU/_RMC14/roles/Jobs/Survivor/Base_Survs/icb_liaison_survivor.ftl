@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorICB = survivor icb spawn point
+ent-RMCSpawnPointSurvivorICB = точка появления выжившего icb

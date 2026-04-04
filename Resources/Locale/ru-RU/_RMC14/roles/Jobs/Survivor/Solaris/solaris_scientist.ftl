@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorSolarisScientist = survivor solaris scientist spawn point
+ent-RMCSpawnPointSurvivorSolarisScientist-name = точка возрождения выжившего соляриса учёного

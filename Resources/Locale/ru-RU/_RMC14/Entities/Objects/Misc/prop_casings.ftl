@@ -1,3 +1,2 @@
-
-ent-RMCBasePropCasing = spent casing
-  .desc = Empty and useless now.
+ent-RMCBasePropCasing = стреляная гильза
+  .desc = Пустая и теперь бесполезная.

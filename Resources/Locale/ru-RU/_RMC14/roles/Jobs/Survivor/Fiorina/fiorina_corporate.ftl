@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorFiorinaCorporateLiaison = survivor fiorina coporate liaison spawn point
+ent-RMCSpawnPointSurvivorFiorinaCorporateLiaison = точка спавна кооперативной связи выжившего в Фиорине

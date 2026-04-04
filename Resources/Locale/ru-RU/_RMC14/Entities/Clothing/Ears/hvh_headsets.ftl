@@ -1,8 +1,7 @@
-
-ent-RMCHeadsetHvHWeYaPMC = WeYa corporate headset
-  .desc = A special headset used by corporate personnel.
-ent-RMCHeadsetHvHWeYaPMCMedic = PMC-MED headset
-ent-RMCHeadsetHvHWeYaPMCEngineer = PMC-CCT headset
-ent-RMCHeadsetHvHWeYaPMCLeader = PMC-CMD headset
-ent-RMCHeadsetHvHWeYaPMCCommando = We-Ya Commando headset
-  .desc = A special headset used by unidentified operatives.
+ent-RMCHeadsetHvHWeYaPMC-name = Корпоративная гарнитура WeYa
+ent-RMCHeadsetHvHWeYaPMC-desc = Специальная гарнитура, используемая корпоративным персоналом.
+ent-RMCHeadsetHvHWeYaPMCMedic-name = ПМК-МЕД гарнитура
+ent-RMCHeadsetHvHWeYaPMCEngineer-name = PMC-CCT гарнитура
+ent-RMCHeadsetHvHWeYaPMCLeader-name = PMC-CMD гарнитура
+ent-RMCHeadsetHvHWeYaPMCCommando-name = Гарнитура We-Ya Commando
+ent-RMCHeadsetHvHWeYaPMCCommando-desc = Специальная гарнитура, используемая неизвестными оперативниками.

@@ -1,2 +1,1 @@
-
-ent-RMCSpawnerCorpseDeputy = Corpse Spawner - CMB Deputy
+ent-RMCSpawnerCorpseDeputy-name = Создатель трупов - заместитель CMB

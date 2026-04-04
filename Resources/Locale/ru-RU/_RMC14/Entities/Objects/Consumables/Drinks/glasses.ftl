@@ -1,3 +1,2 @@
-
-ent-RMCPintGlass = pint glass
-  .desc = A proper geezer's pint glass. Rarely seen without a frothy head of beer.
+ent-RMCPintGlass = пивная кружка
+  .desc = Пивная кружка для настоящего старого солдата. Редко встречается без пенной шапки эля.

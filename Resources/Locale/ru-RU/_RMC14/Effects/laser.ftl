@@ -1,4 +1,3 @@
-
-ent-RMCM96SLaser = M96S laser
-ent-RMCAMRLaser = AMR laser
-ent-RMCSpottingLaser = spotting laser
+ent-RMCSpottingLaser = лазер наводчика
+ent-RMCAMRLaser = AMR лазер
+ent-RMCM96SLaser = M96S лазер

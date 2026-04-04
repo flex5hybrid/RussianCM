@@ -1,7 +1,6 @@
-
-ent-XenoEgg = egg
-  .desc = It looks like a weird egg.
-ent-XenoEggDestroyed = destroyed egg
-  .desc = A mess of... something.
-ent-XenoEggDestroyedFragile = fragile egg
-ent-XenoEggDestroyedFragileSustained = fragile egg
+ent-XenoEggDestroyedFragileSustained = хрупкое яйцо
+ent-XenoEggDestroyedFragile = хрупкое яйцо
+ent-XenoEggDestroyed = уничтоженное яйцо
+  .desc = Беспорядок... чего-то.
+ent-XenoEgg = яйцо
+  .desc = Похоже на странное яйцо.

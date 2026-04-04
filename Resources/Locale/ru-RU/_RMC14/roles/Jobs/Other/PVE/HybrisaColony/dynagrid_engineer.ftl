@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointPVEDynagridEngineer = dyangrid engineer spawn point
+ent-RMCSpawnPointPVEDynagridEngineer = точка спавна инженера диангрида

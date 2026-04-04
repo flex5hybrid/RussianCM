@@ -1,4 +1,3 @@
-
-ent-CMOverheadPipe = overhead pipe segment
-ent-RMCOverheadFuelLine1 = dense fuel line
-  .desc = Likely to be incredibly flammable.
+ent-RMCOverheadFuelLine1 = плотная топливная магистраль
+  .desc = Вероятно, он невероятно легковоспламеняющийся.
+ent-CMOverheadPipe = сегмент подвесной трубы

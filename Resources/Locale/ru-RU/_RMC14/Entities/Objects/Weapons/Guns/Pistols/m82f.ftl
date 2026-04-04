@@ -1,3 +1,2 @@
-
-ent-RMCWeaponPistolM82F = M82-F flare gun
-  .desc = A flare gun issued to JTAC operators to use with flares. Comes with a miniscope. One shot, one... life saved?
+ent-RMCWeaponPistolM82F = сигнальный пистолет M82-F
+  .desc = Сигнальный пистолет, выдаваемый операторам JTAC для использования с сигнальными ракетами. Комплектуется мини-прицелом. Один выстрел — одна... спасённая жизнь?

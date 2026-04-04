@@ -1,4 +1,3 @@
-
-ent-RMCSpawnPointSurvivorCorporate = survivor corporate spawn point
-ent-RMCSurvivorPresetCorporate = corporate colonist preset
-ent-RMCRandomHumanoidSurvivorCorporate = corporate colonist ghost role
+ent-RMCRandomHumanoidSurvivorCorporate = роль призрака корпоративного колониста
+ent-RMCSurvivorPresetCorporate = настройки корпоративного колониста
+ent-RMCSpawnPointSurvivorCorporate = Корпоративная точка появления выживших

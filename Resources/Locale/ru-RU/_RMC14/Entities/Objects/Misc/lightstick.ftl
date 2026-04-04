@@ -1,4 +1,3 @@
-
-ent-RMCLightStick = red lightstick
-  .desc = You can stick them in the ground.
-ent-RMCLightStickBlueSmall = blue lightstick
+ent-RMCLightStickBlueSmall = синий светлячок
+ent-RMCLightStick = красный светлячок
+  .desc = Можно воткнуть в землю.

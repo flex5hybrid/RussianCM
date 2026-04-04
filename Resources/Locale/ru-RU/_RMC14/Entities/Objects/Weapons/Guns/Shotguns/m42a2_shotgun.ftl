@@ -1,3 +1,2 @@
-
-ent-WeaponShotgunM42A2 = M42A2 pump shotgun
-  .desc = An AEGIS modern take on an all-time classic, combining close range firepower with long-term reliability. Requires a pump.
+ent-WeaponShotgunM42A2 = помповый дробовик M42A2
+  .desc = Современная интерпретация классики от АЕГИС, сочетающая огневую мощь на близкой дистанции с долговременной надёжностью. Требует перезарядки помпой.

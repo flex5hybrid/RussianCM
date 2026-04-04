@@ -1,6 +1,5 @@
-
-ent-RMCWeaponLMGQYJ72 = QYJ-72 General Purpose Machine Gun
-  .desc = The QYJ-72 is the standard GPMG of the Socialists Progressive Peoples, chambered in 7.62x54mmR, it fires a hard-hitting cartridge with a high rate of fire. With an extremely large box at 250 rounds, the QJY-72 is designed with suppressing fire and accuracy by volume of fire at its forefront.
-ent-RMCMagazineLMGQYJ72 = QYJ-72 Ammo Box (7.62x54mmR)
-ent-RMCCartridgeLMGQYJ72 = cartridge (7.62x54mmR)
-  .desc = A 7.62x54mmR cartridge
+ent-RMCCartridgeLMGQYJ72 = патрон (7.62x54мм R)
+  .desc = Патрон 7.62x54мм R
+ent-RMCMagazineLMGQYJ72 = боевая коробка QYJ-72 (7.62x54мм R)
+ent-RMCWeaponLMGQYJ72 = единый пулемёт QYJ-72
+  .desc = QYJ-72 — стандартный единый пулемёт Социалистической Прогрессивной Народной партии, под патрон 7.62x54мм R, он стреляет мощным патроном с высокой скорострельностью. С огроменной коробкой на 250 патронов, QJY-72 разработан с упором на ведение подавляющего огня и точность за счёт объёма огня.

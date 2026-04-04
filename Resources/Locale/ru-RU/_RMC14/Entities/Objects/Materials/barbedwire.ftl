@@ -1,3 +1,2 @@
-
-ent-BarbedWireBase = barbed wire
-  .desc = A type of metal fencing wire constructed with sharp edges or points arranged at intervals along the strands. In short, it hurts to touch it. A lot. Place on barricades to prevent unwants from breaking through painlessly.
+ent-BarbedWireBase = колючая проволока
+  .desc = Тип металлической ограждающей проволоки с острыми краями или шипами, расположенными через промежутки вдоль нитей. Короче, прикосновение к ней очень болезненно. Размещается на баррикадах, чтобы нежелательные гости не пробивались безболезненно.

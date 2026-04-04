@@ -1,3 +1,2 @@
-
-ent-RMCXenoKing = King
-  .desc = The end of the line.
+ent-RMCXenoKing-name = Король
+ent-RMCXenoKing-desc = Конец линии.

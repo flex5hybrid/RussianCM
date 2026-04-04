@@ -1,10 +1,9 @@
-
-ent-RMCCoal = carbonaceous rock
-ent-RMCDiamondOre = diamonds
-ent-RMCGoldOre = native gold ore
-ent-RMCIronOre = hematite
-ent-RMCPlasmaOre = phoron crystals
-ent-RMCPlatinumOre = raw platinum
-ent-RMCSilverOre = native silver ore
-ent-RMCUraniumOre = pitchblende
-  .desc = An ore containing Uranium. Just looking at it makes your head feel fuzzy... it's slightly luminescent.
+ent-RMCUraniumOre = урановая смолка
+  .desc = Руда, содержащая уран. Один только взгляд на неё вызывает туман в голове... она слегка светится.
+ent-RMCSilverOre = самородная серебряная руда
+ent-RMCPlatinumOre = сырая платина
+ent-RMCPlasmaOre = кристаллы форона
+ent-RMCIronOre = гематит
+ent-RMCGoldOre = самородная золотая руда
+ent-RMCDiamondOre = алмазы
+ent-RMCCoal = углистый сланец

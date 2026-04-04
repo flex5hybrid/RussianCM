@@ -1,13 +1,12 @@
-
-ent-RMCRoyalAssaultEngineerVendor = We-Ya section engineering equipment rack
-  .desc = An automated rack hooked up to a colossal storage of assault engineer standard-issue equipment.
-ent-RMCRoyalMedicalAssistantVendor = We-Ya section medical equipment rack
-  .desc = An automated rack hooked up to a colossal storage of medical assistant standard-issue equipment.
-ent-RMCRoyalBombSpecVendor = We-Ya Section Fire Support Gear Rack
-  .desc = An automated rack hooked up to a colossal storage of bombardment specialist standard-issue equipment.
-ent-RMCRoyalScoutSniperVendor = We-Ya Section Scout-Sniper Gear Rack
-  .desc = An automated rack hooked up to a colossal storage of scout-sniper standard-issue equipment.
-ent-RMCColMarTechSurplusRCMPVE = We-Ya Section Surplus Uniform Vendor
-  .desc = An automated rack hooked up to a small storage of Royal Crown Marines uniforms.
-ent-RMCColMarTechUtilitiesRCMPVE = We-Ya Automated Utilities Section Vendor
-  .desc = An automated supply rack hooked up to a small storage of various utilities, tools, and medical supplies. Can be accessed by any Royal marine.
+ent-RMCRoyalAssaultEngineerVendor-name = Секция инженерного оборудования «Ве-Я»
+ent-RMCRoyalAssaultEngineerVendor-desc = Автоматизированная стойка, подключенная к огромному хранилищу стандартного оборудования штурмовых инженеров.
+ent-RMCRoyalMedicalAssistantVendor-name = Секция для медицинского оборудования We-Ya
+ent-RMCRoyalMedicalAssistantVendor-desc = Автоматизированный стеллаж, подключенный к огромному складу стандартного медицинского оборудования.
+ent-RMCRoyalBombSpecVendor-name = Стойка для снаряжения секции огневой поддержки We-Ya
+ent-RMCRoyalBombSpecVendor-desc = Автоматизированный стеллаж, подключенный к огромному хранилищу стандартного оборудования для специалистов по бомбардировкам.
+ent-RMCRoyalScoutSniperVendor-name = Стойка для снайперского снаряжения разведчика-снайпера секции We-Ya
+ent-RMCRoyalScoutSniperVendor-desc = Автоматизированная стойка, подключенная к огромному складу стандартного снаряжения разведчика-снайпера.
+ent-RMCColMarTechSurplusRCMPVE-name = Секция We-Ya: продавец излишков униформы
+ent-RMCColMarTechSurplusRCMPVE-desc = Автоматизированный стеллаж, подключенный к небольшому складу униформы Королевской морской пехоты.
+ent-RMCColMarTechUtilitiesRCMPVE-name = We-Ya Поставщик отдела автоматизированных коммунальных услуг
+ent-RMCColMarTechUtilitiesRCMPVE-desc = Автоматизированный стеллаж для снабжения, соединенный с небольшим хранилищем различных приспособлений, инструментов и медикаментов. 

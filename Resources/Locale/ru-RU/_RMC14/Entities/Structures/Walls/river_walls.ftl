@@ -1,3 +1,1 @@
-
-  .desc = A huge chunk of metal used to separate rooms.
-ent-RMCWallRiver = river wall
+ent-RMCWallRiver = речная стена

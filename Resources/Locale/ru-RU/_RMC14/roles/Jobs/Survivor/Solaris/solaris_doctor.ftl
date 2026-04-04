@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorSolarisDoctor = survivor solaris doctor spawn point
+ent-RMCSpawnPointSurvivorSolarisDoctor-name = точка возрождения доктора Солярис, выжившего в Солярисе

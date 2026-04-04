@@ -1,2 +1,1 @@
-
-ent-CMBaseCartridgeRifle = cartridge
+ent-CMBaseCartridgeRifle = патрон

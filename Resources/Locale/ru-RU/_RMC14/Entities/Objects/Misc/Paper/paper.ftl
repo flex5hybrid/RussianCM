@@ -1,11 +1,10 @@
-
-ent-CMBasePaper = paper
-  .desc = A piece of white paper.
-ent-CMPaper = paper
-ent-CMPaperJudgement = judgement
-ent-CMPaperAlmayerStorage = almayer emergency storage note
-ent-RMCPaperAegisInfoFax = High Command Transmission
-ent-RMCPaperRequisitionInvoice = requisition invoice
-  .desc = A single unit of bureaucracy awaiting for approval.
-ent-RMCPaperWeYa = weston-yamada official document
-ent-RMCPaperWeYaLiaison = weston-yamada document
+ent-CMBasePaper-name = бумага
+ent-CMBasePaper-desc = Кусок белой бумаги.
+ent-CMPaper-name = бумага
+ent-CMPaperJudgement-name = суждение
+ent-CMPaperAlmayerStorage-name = записка об аварийном хранении в Алмайере
+ent-RMCPaperAegisInfoFax-name = Передача высшего командования
+ent-RMCPaperRequisitionInvoice-name = счет-фактура заявки
+ent-RMCPaperRequisitionInvoice-desc = Единая бюрократическая единица, ожидающая одобрения.
+ent-RMCPaperWeYa-name = Официальный документ Уэстон-Ямада
+ent-RMCPaperWeYaLiaison-name = Документ Уэстон-Ямада

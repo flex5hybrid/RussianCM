@@ -1,7 +1,6 @@
-
-ent-RMCStunBatonDamaged = damaged stun baton
-  .desc = A stun baton for incapacitating people with. This one seems pretty broken and beat up, especially around the on/off switch..
-ent-CMStunbaton = stun baton
-  .desc = A stun baton for incapacitating people with.
-ent-RMCTelescopicBaton = telescopic baton
-  .desc = A compact yet rebalanced personal defense weapon. Can be concealed when folded.
+ent-RMCTelescopicBaton = телескопическая дубинка
+  .desc = Компактное, но сбалансированное оружие для самозащиты. Можно скрытно носить в сложенном состоянии.
+ent-CMStunbaton = электрошокер
+  .desc = Электрошокер для нейтрализации людей.
+ent-RMCStunBatonDamaged = поврежденный электрошокер
+  .desc = Электрошокер для нейтрализации людей. Этот выглядит довольно сломанным и потрепанным, особенно вокруг переключателя включения/выключения.

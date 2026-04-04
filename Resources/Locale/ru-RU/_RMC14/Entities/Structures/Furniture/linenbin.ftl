@@ -1,3 +1,2 @@
-
-ent-CMLinenBin = linen bin
-  .desc = A linen bin. It looks rather cosy.
+ent-CMLinenBin = бельевой ящик
+  .desc = Бельевой ящик. 

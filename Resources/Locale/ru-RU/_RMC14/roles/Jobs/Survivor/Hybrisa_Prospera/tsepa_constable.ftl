@@ -1,2 +1,1 @@
-
-ent-RMCSurvivorPresetHybrisaConstable = constable colonist preset
+ent-RMCSurvivorPresetHybrisaConstable = пресет констебля-колониста

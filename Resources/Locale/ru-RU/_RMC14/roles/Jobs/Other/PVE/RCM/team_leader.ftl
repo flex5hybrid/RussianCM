@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointRCMPVETeamLeader = RCM team leader spawn point
+ent-CMSpawnPointRCMPVETeamLeader-name = Точка появления лидера команды RCM

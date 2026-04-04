@@ -1,6 +1,5 @@
-
-ent-RMCWeaponLMGM60 = M60 General Purpose Machine Gun
-  .desc = The Pig. The Action Hero's dream. Chambered in 7.62x51 NATO
-ent-RMCMagazineLMGM60 = M60 Ammo Box (7.62x51 NATO)
-ent-RMCCartridgeLMGM60 = cartridge (7.62x51)
-  .desc = A 7.62x51 NATO cartridge
+ent-RMCCartridgeLMGM60 = патрон (7.62x51)
+  .desc = Патрон 7.62x51 НАТО.
+ent-RMCMagazineLMGM60 = коробка с патронами для M60 (7.62x51 НАТО)
+ent-RMCWeaponLMGM60 = единый пулемёт M60
+  .desc = «Свинья». Мечта героя боевика. Калибр 7.62x51 НАТО.

@@ -1,3 +1,2 @@
-
-ent-RMCWeaponRevolverM44Custom = Custom M44 combat revolver
-  .desc = A bulky revolver, occasionally carried by assault troops and officers in the Marine Corps, as well as civilian law enforcement. Fires .44 Magnum rounds. This one has had it's wooden grips replaced with gaudy ivory ones.
+ent-RMCWeaponRevolverM44Custom = кастомный боевой револьвер M44
+  .desc = Массивный револьвер, иногда носимый штурмовыми войсками и офицерами в Корпусе Морской Пехоты, а также гражданскими правоохранительными органами. Стреляет патронами .44 Magnum. У этой модели деревянные рукоятки заменены на вычурные, из слоновой кости.

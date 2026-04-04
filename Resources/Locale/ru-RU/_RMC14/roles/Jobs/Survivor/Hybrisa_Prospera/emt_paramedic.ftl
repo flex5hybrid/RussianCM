@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorHybrisaEMTParamedic = emt paramedic spawn point
-ent-RMCGearSurvivorPresetHybrisaEMTParamedic = emt paramedic preset
+ent-RMCGearSurvivorPresetHybrisaEMTParamedic = пресет фельдшера emt
+ent-RMCSpawnPointSurvivorHybrisaEMTParamedic = точка спавна фельдшера скорой помощи

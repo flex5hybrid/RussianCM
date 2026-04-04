@@ -1,3 +1,2 @@
-
-ent-CMIntercom = intercom
-  .desc = An intercom. For when the marines just needs to know something.
+ent-CMIntercom = домофон
+  .desc = Домофон. 

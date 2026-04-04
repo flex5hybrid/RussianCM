@@ -1,2 +1,1 @@
-
-ent-RMCBaseCartridgeLMG = cartridge
+ent-RMCBaseCartridgeLMG = патрон

@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointMaintTech = maint tech spawn point
+ent-CMSpawnPointMaintTech = точка спавна техники

@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorHybrisaFireProtectionSpecialist = hybrisa fire protection specialist spawn point
-ent-RMCGearSurvivorPresetHybrisaFireProtectionSpecialist = hybrisa fire protection specialist preset
+ent-RMCGearSurvivorPresetHybrisaFireProtectionSpecialist = Предустановка специалиста по противопожарной защите hybrisa
+ent-RMCSpawnPointSurvivorHybrisaFireProtectionSpecialist = Место появления специалиста по пожарной безопасности Hybrisa

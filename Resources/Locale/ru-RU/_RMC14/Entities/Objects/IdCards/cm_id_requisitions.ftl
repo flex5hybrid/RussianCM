@@ -1,3 +1,2 @@
-
-ent-CMIDCardQuartermaster = Logistics Officer ID card
-ent-CMIDCardCargoTech = req tech's ID card
+ent-CMIDCardCargoTech = удостоверение грузчика
+ent-CMIDCardQuartermaster = удостоверение квартирмейстера

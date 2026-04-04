@@ -1,1 +1,0 @@
-ent-RMCGearSurvivorPresetHybrisaConstructionWorker = Предустановка колониста-строителя Hybrisa

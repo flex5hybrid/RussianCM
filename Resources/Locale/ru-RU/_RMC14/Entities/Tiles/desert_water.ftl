@@ -1,2 +1,1 @@
-
-ent-RMCGrate = grate
+ent-RMCGrate = решетка

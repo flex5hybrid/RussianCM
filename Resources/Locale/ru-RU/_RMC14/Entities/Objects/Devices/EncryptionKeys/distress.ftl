@@ -1,4 +1,3 @@
-
-ent-RMCEncryptionKeyBureau = bureau encryption key
-ent-RMCEncryptionKeyBureauDamaged = damaged bureau encryption key
-ent-RMCEncryptionKeyDukes = duke encryption key
+ent-RMCEncryptionKeyDukes = шифроключ Герцогов
+ent-RMCEncryptionKeyBureauDamaged = повреждённый шифроключ Бюро
+ent-RMCEncryptionKeyBureau = шифроключ Бюро

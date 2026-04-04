@@ -1,13 +1,12 @@
-
-ent-RMCGroundsideOperationsConsole = groundside operations console
-  .desc = This can be used for various important functions.
-ent-RMCWarshipControlConsole = almayer control console
-  .desc = This is used for controlling ship and its related functions.
-ent-RMCOverwatchConsole = overwatch console
-  .desc = State of the art machinery for giving orders to a squad.
-ent-RMCTacticalMapTable = map table
-  .desc = A table that displays a map of the current operation location.
-ent-RMCEscapePodController = escape pod controller
-  .desc = A shuttle control computer.
-ent-RMCLifeboatConsole = lifeboat console
-  .desc = A lifeboat control computer.
+ent-RMCLifeboatConsole = консоль спасательной шлюпки
+  .desc = Компьютер управления спасательной шлюпкой.
+ent-RMCEscapePodController = контроллер спасательной капсулы
+  .desc = Компьютер управления шаттлом.
+ent-RMCTacticalMapTable = таблица карт
+  .desc = Таблица, отображающая карту текущего местоположения операции.
+ent-RMCOverwatchConsole = консоль наблюдения
+  .desc = Современная техника для отдачи приказов отряду.
+ent-RMCWarshipControlConsole = консоль управления алмайера
+  .desc = Используется для управления кораблем и связанными с ним функциями.
+ent-RMCGroundsideOperationsConsole = наземный пульт управления
+  .desc = Это можно использовать для различных важных функций.

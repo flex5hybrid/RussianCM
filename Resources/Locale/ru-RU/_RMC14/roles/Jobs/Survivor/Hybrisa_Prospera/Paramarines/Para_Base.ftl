@@ -1,2 +1,1 @@
-
-ent-RMCGearSurvivorPresetPara = para preset
+ent-RMCGearSurvivorPresetPara-name = пункт предустановки

@@ -1,4 +1,3 @@
-
-ent-RMCSpawnPointSurvivorTrucker = survivor trucker spawn point
-ent-RMCSurvivorPresetTrucker = trucker colonist preset
-ent-RMCRandomHumanoidSurvivorTrucker = trucker colonist ghost role
+ent-RMCRandomHumanoidSurvivorTrucker = роль призрака-дальнобойщика-колониста
+ent-RMCSurvivorPresetTrucker = пресет дальнобойщика-колониста
+ent-RMCSpawnPointSurvivorTrucker = точка возрождения выжившего дальнобойщика

@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorOperationsSupervisor = spawn point
-ent-RMCRandomHumanoidSurvivorOperationsSupervisor = chances operations supervisor ghost role
+ent-RMCSpawnPointSurvivorOperationsSupervisor-name = точка появления
+ent-RMCRandomHumanoidSurvivorOperationsSupervisor-name = роль призрака руководителя операций шансов

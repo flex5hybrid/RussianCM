@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSPPRiflemanPVE = spp rifleman spawn point
+ent-RMCSpawnPointSPPRiflemanPVE = точка спавна стрелка SPP

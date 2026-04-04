@@ -1,2 +1,1 @@
-
-ent-RMCRadioHandheldColonyBase = shortwave radio
+ent-RMCRadioHandheldColonyBase = коротковолновое радио

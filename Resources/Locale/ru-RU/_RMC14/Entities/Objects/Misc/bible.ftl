@@ -1,5 +1,4 @@
-
-ent-RMCBible = Holy Bible
-  .desc = A book containing the sacred texts of that one popular guy you heard a lot about.
-ent-RMCBibleHEFA = Holy texts of the High Explosive Fragmenting Anti-personnel hand grenade.
-  .desc = Praised be thee, reverend Clearsmire who has brought us into the light of the shrapnel! Sworn to the holy service of the HEFA lord are we, and while few, we are the voices of the silent many! Printed in the RESS.
+ent-RMCBibleHEFA = Священные тексты Осколочно-Фугасной Противопехотной ручной гранаты.
+  .desc = Хвала Тебе, преподобный Клирсмайр, который привёл нас к свету осколков! Мы присягнули на святую службу Господу ОФП, и, хотя нас мало, мы — голос безмолвного множества! Напечатано в РЭСС.
+ent-RMCBible = Священное Писание
+  .desc = Книга, содержащая священные тексты того самого популярного Парня, о котором вы так много слышали.

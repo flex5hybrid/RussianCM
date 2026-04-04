@@ -1,3 +1,2 @@
-
-ent-RMCKitBase = kit
-  .desc = It's just an ordinary box.
+ent-RMCKitBase = набор
+  .desc = Это просто обычная коробка.

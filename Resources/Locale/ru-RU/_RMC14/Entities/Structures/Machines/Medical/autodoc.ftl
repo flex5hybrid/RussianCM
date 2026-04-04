@@ -1,8 +1,7 @@
-
-ent-RMCAutodoc = autodoc emergency medical system
-  .desc = An emergency surgical device designed to perform life-saving treatments and basic surgeries on patients automatically, without the need of a surgeon.
-ent-RMCAutodocConsole = autodoc medical system control console
-  .desc = The control interface used to operate the adjoining autodoc. Requires training to use properly.
-ent-RMCAutodocUnskilled = advanced autodoc emergency medical system
-  .desc = A much more expensive model of autodoc modified with an A.I. diagnostic unit. The result is a much simpler, point-and-click interface that anyone, regardless of training, can use.
-ent-RMCAutodocConsoleUpgraded = upgraded autodoc control console
+ent-RMCAutodoc-name = система неотложной медицинской помощи Autodoc
+ent-RMCAutodoc-desc = Устройство для экстренной хирургической помощи, предназначенное для автоматического проведения жизненно важных процедур и базовых операций пациентов без участия хирурга.
+ent-RMCAutodocConsole-name = консоль управления медицинской системой autodoc
+ent-RMCAutodocConsole-desc = Интерфейс управления, используемый для управления прилегающим автодоком. 
+ent-RMCAutodocUnskilled-name = усовершенствованная система неотложной медицинской помощи Autodoc
+ent-RMCAutodocUnskilled-desc = Гораздо более дорогая модель автодока, модифицированная искусственным интеллектом. 
+ent-RMCAutodocConsoleUpgraded-name = обновленная консоль управления Autodoc

@@ -1,7 +1,6 @@
-
-ent-CMShardGlass = glass shard
-  .desc = A shard of broken glass. Could probably be used as ... a throwing weapon?
-ent-RMCShardIce = ice shard
-  .desc = A shard of ice. Could probably be used as ... a throwing weapon?
-ent-CMShardPhoron = phoron shard
-  .desc = A shard of broken phoron glass. Considerably tougher than normal glass shards. Apparently not tough enough to be a window.
+ent-CMShardPhoron = осколок форона
+  .desc = Осколок разбитого форонового стекла. Значительно прочнее обычных стеклянных осколков. Похоже, недостаточно прочен, чтобы быть окном.
+ent-RMCShardIce = осколок льда
+  .desc = Осколок льда. Вероятно, может быть использован как... метательное оружие?
+ent-CMShardGlass = осколок стекла
+  .desc = Осколок разбитого стекла. Вероятно, может быть использован как... метательное оружие?

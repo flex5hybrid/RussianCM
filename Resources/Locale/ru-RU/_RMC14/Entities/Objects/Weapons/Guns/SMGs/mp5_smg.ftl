@@ -1,7 +1,6 @@
-
-ent-WeaponSMGMP5 = MP5 submachinegun
-  .desc = A German design, this was one of the most widely used submachine guns in the world. It's still possible to find this firearm in the hands of collectors or gun fanatics.
-ent-CMMagazineSMGMP5 = MP5 magazine (9mm)
-  .desc = A 9mm magazine for the MP5.
-ent-CMCartridge9mmSMG = cartridge (9mm SMG)
-  .desc = A 9mm cartridge for the mp5 submachinegun.
+ent-CMCartridge9mmSMG = патрон (9мм ПП)
+  .desc = Патрон 9мм для пистолета-пулемёта MP5.
+ent-CMMagazineSMGMP5 = магазин MP5 (9мм)
+  .desc = Магазин 9мм для MP5.
+ent-WeaponSMGMP5 = пистолет-пулемёт MP5
+  .desc = Немецкая разработка, один из самых широко используемых пистолетов-пулемётов в мире. Это оружие всё ещё можно найти у коллекционеров или фанатов оружия.

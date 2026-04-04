@@ -1,3 +1,2 @@
-
-ent-CMBedsheetBase = bedsheet
-  .desc = A surprisingly soft linen bedsheet.
+ent-CMBedsheetBase = простыня
+  .desc = Удивительно мягкая льняная простыня.

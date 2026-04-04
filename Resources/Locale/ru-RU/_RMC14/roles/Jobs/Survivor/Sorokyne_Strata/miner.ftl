@@ -1,2 +1,2 @@
-
-ent-RMCSpawnPointSurvivorSoroMiner = sorokyne miner spawn point
+ent-RMCGearSurvivorPresetSoroMiner = пресет сорокинского майнера
+ent-RMCSpawnPointSurvivorSoroMiner = точка спавна сорокинского шахтера

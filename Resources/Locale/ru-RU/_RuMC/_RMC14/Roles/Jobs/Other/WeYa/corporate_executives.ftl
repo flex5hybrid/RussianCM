@@ -1,8 +1,0 @@
-ent-RMCRandomHumanoidCorporateExecutiveSupervisorLegal-name = Роль-призрак корпоративного юриста
-ent-RMCRandomHumanoidCorporateExecutiveSpecialistLegal-name = Роль призрака специалиста по корпоративному праву
-ent-RMCRandomHumanoidCorporateExecutiveSupervisor-name = Роль призрака исполнительного директора корпорации
-ent-RMCRandomHumanoidCorporateAssistantManager-name = Роль призрака корпоративного помощника менеджера
-ent-RMCRandomHumanoidCorporateDivisionManager-name = Роль-призрак менеджера корпоративного подразделения
-ent-RMCRandomHumanoidCorporateChiefExecutive-name = Роль призрака генерального директора корпорации
-ent-RMCRandomHumanoidCorporateDeputyDirector-name = Роль призрака заместителя директора корпорации
-ent-RMCRandomHumanoidCorporateDirector-name = роль призрака корпоративного директора

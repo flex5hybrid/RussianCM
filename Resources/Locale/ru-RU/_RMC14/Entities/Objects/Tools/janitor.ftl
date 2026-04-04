@@ -1,9 +1,8 @@
-
-ent-CMMop = mop
-  .desc = The world of janitalia wouldn't be complete without a mop.
-ent-CMWetSign = wet floor sign
-  .desc = Caution! Wet Floor!
-ent-CMWarningCone = warning cone
-  .desc = This cone is trying to warn you of something!
-ent-RMCLightReplacer = light replacer
-  .desc = A device to automatically replace lights. Refill with working lightbulbs.
+ent-CMLightReplacer = сменщик ламп
+  .desc = Устройство для автоматической замены ламп. Заправляется рабочими лампами.
+ent-CMWarningCone = предупреждающий конус
+  .desc = Этот конус пытается вас о чём-то предупредить!
+ent-CMWetSign = знак «мокрый пол»
+  .desc = Осторожно! Мокрый пол!
+ent-CMMop = швабра
+  .desc = Мир уборки был бы неполным без швабры.

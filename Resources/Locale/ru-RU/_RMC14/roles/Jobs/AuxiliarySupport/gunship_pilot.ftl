@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointPilotGunship = gunship pilot spawn point
+ent-CMSpawnPointPilotGunship = точка спавна пилота боевого корабля

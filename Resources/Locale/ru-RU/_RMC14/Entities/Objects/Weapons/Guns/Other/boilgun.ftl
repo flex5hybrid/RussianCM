@@ -1,3 +1,2 @@
-
-ent-RMCWeaponBoilgun = young boilgun
-  .desc = Mother, would you still love us if we were a gun?
+ent-RMCWeaponBoilgun-name = молодой бойлган
+ent-RMCWeaponBoilgun-desc = Мама, ты бы по-прежнему любила нас, если бы мы были пистолетом?

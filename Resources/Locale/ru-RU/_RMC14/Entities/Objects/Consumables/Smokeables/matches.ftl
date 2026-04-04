@@ -1,8 +1,7 @@
-
-ent-RMCMatchbox = match box
-  .desc = A small box of 'Space-Proof' premium matches.
-ent-RMCMatchboxFull = match box
-ent-RMCMatchstick = match
-  .desc = A simple match stick, used for lighting fine smokables.
-ent-RMCMatchstickPaper = paper match
-  .desc = A simple match stick, used for lighting fine smokables.
+ent-RMCMatchstickPaper = бумажная спичка
+  .desc = Обычная спичка для прикуривания качественных курительных изделий.
+ent-RMCMatchstick = спичка
+  .desc = Обычная спичка для прикуривания качественных курительных изделий.
+ent-RMCMatchboxFull = спичечный коробок
+ent-RMCMatchbox = спичечный коробок
+  .desc = Небольшая коробка «космических» премиум-спичек.

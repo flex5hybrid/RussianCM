@@ -1,1 +1,0 @@
-ent-RMCHeadXeno = голова ксено

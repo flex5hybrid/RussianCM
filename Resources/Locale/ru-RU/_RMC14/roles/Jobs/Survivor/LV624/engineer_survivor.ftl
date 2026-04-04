@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorLV624Engineer = survivor icb spawn point
-ent-RMCGearSurvivorPresetLV624Engineer = LV624Engineer colonist preset
+ent-RMCGearSurvivorPresetLV624Engineer = LV624Предустановка инженера-колониста
+ent-RMCSpawnPointSurvivorLV624Engineer = точка появления выжившего icb

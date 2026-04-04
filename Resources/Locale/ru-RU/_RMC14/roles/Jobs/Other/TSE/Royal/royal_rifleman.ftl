@@ -1,2 +1,1 @@
-
-ent-RMCRandomHumanoidRoyalMarinesCommando = royal crown marines ghost role rifleman
+ent-RMCRandomHumanoidRoyalMarinesCommando-name = королевская корона морская пехота роль призрака стрелок

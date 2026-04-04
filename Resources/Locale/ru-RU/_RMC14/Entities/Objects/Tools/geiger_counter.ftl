@@ -1,3 +1,2 @@
-
-ent-RMCGeigerCounter = geiger counter
-  .desc = A hand-held tool used to detect radiation, measured in Sieverts. A staple of CBRN crews and nuclear engineers, this model appears to be made by Weston-Yamada.
+ent-RMCGeigerCounter-name = счетчик Гейгера
+ent-RMCGeigerCounter-desc = Ручной инструмент, используемый для обнаружения радиации, измеряется в зивертах. 

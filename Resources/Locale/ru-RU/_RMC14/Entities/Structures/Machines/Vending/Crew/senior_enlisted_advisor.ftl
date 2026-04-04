@@ -1,5 +1,4 @@
-
-ent-ColMarTechEquipmentSEA = ColMarTech SEA equipment rack
-  .desc = An automated rack hooked up to a colossal storage of Senior Enlisted Advisor standard-issue equipment.
-ent-ColMarTechGunsSEA = ColMarTech SEA weapon rack
-  .desc = An automated rack hooked up to a colossal storage of Senior Enlisted Advisor standard-issue equipment.
+ent-ColMarTechGunsSEA = Оружейная стойка ColMarTech SEA
+  .desc = Автоматизированная стойка, подключенная к огромному хранилищу стандартного оборудования старшего рядового советника.
+ent-ColMarTechEquipmentSEA = Стойка для оборудования ColMarTech SEA
+  .desc = Автоматизированная стойка, подключенная к огромному хранилищу стандартного оборудования старшего рядового советника.

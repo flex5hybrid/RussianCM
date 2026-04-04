@@ -1,1 +1,0 @@
-ent-RMCSpawnPointSurvivorShivasPanicRoomResearcher-name = специальный выживший Шива комната паники исследователь точка возрождения

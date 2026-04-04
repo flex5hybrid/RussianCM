@@ -1,7 +1,6 @@
-
-ent-RMCHoodBioGeneral = bio hood
-  .desc = A hood that protects the head and face from biological contaminants.
-ent-RMCHoodBioWeYa = WeYa-TSS MK II - bio hood
-  .desc = The 'Weston-Yamada TerraScientia bio-suit MK II'. An advanced light-weight bio-suit developed in-house by Weston-Yamada. It's a hood that protects the head and face from biological contaminants, synthetic compliant. Offers no real protection.
-ent-RMCHoodBioWeYaAlt = WeYa-TSS MK I - bio hood
-  .desc = The 'Weston-Yamada TerraScientia bio-suit MK I'. An advanced light-weight bio-suit developed in-house by Weston-Yamada. It's a hood that protects the head and face from biological contaminants.
+ent-RMCHoodBioWeYaAlt = биокапюшон WeYa-TSS MK I
+  .desc = «Биокостюм Weston-Yamada TerraScientia MK I». Продвинутый облегчённый биокостюм, разработанный внутри компании Weston-Yamada. Это капюшон, защищающий голову и лицо от биологических загрязнителей.
+ent-RMCHoodBioWeYa = биокапюшон WeYa-TSS MK II
+  .desc = «Биокостюм Weston-Yamada TerraScientia MK II». Продвинутый облегчённый биокостюм, разработанный внутри компании Weston-Yamada. Это капюшон, защищающий голову и лицо от биологических загрязнителей, совместим с синтетиками. Не обеспечивает реальной защиты.
+ent-RMCHoodBioGeneral = биокапюшон
+  .desc = Капюшон, защищающий голову и лицо от биологических загрязнителей.

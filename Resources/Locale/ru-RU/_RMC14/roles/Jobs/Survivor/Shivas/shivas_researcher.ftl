@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorShivasResearcher = survivor shivas researcher spawn point
+ent-RMCSpawnPointSurvivorShivasResearcher-name = выживший исследователь Шивы точка возрождения

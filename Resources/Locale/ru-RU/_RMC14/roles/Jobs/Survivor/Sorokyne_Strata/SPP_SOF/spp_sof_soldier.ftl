@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointSPPSOFRifleman = special survivor spp sof rifleman spawn point
+ent-CMSpawnPointSPPSOFRifleman-name = Специальная точка спавна стрелка для выживания

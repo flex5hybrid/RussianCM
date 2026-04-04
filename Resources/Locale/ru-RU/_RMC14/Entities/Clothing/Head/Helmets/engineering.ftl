@@ -1,3 +1,2 @@
-
-ent-RMCHelmetWelding = welding helmet
-  .desc = A head-mounted face cover designed to protect the wearer completely from space-arc eye
+ent-RMCHelmetWelding = сварочный шлем
+  .desc = Носимое на голове защитное покрытие для лица, предназначенное для полной защиты пользователя от «космической дуговой офтальмии».

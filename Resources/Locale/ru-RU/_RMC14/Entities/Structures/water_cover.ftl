@@ -1,2 +1,1 @@
-
-ent-RMCWaterCover = water cover
+ent-RMCWaterCover = водное покрытие

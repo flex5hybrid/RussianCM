@@ -1,3 +1,2 @@
-
-ent-RMCRandomHumanoidPMCDirector = weya pmc ghost role director
-ent-RMCSpawnPointPMCSiteDirector = weya pmc director spawn point
+ent-RMCSpawnPointPMCSiteDirector = точка появления директора Weya PMC
+ent-RMCRandomHumanoidPMCDirector = Weya PMC — режиссер роли-призрака

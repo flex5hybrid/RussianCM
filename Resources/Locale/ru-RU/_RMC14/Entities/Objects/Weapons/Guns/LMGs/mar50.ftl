@@ -1,3 +1,2 @@
-
-ent-RMCWeaponMar50LMG = MAR-50 light machine gun
-  .desc = A cheap, reliable LMG chambered in 7.62x39mm. Commonly found in the hands of slightly better funded criminals.
+ent-RMCWeaponMar50LMG = ручной пулемёт MAR-50
+  .desc = Дешёвый, надёжный ручной пулемёт под патрон 7.62x39мм. Часто встречается в руках у slightly лучше финансируемых преступников.

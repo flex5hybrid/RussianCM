@@ -1,13 +1,12 @@
-
-ent-RMCBaseWeaponMount = weapon mount
-  .desc = A mount to place a weapon on
-ent-RMCML66DNestSandbag = scoped ML66D heavy machine gun nest
-  .desc = A scoped ML66D heavy machine gun mounted upon a small reinforced post with sandbags to provide a small machine gun nest for all your defensive needs.
-ent-RMCML66DNestMetal = scoped ML66D heavy machine gun
-  .desc = A scoped ML66D heavy machine gun mounted behind a metal shield.
-ent-RMCML66DMount = ML66D mount
-  .desc = A foldable mount for the ML66D, provides stability to the ML66D.
-ent-RMCML66DMountAssembled = ML66D heavy machine gun
-  .desc = A deployable, heavy machine gun. It fires specialized tungsten rounds for increased armor penetration.
-ent-RMCM2CMount = M2C heavy machine gun
-  .desc = The disassembled M2C HMG, with its telescopic tripods folded up and unable to fire.
+ent-RMCBaseWeaponMount-name = крепление для оружия
+ent-RMCBaseWeaponMount-desc = Крепление для установки оружия
+ent-RMCML66DNestSandbag-name = Гнездо для крупнокалиберного пулемета ML66D с оптическим прицелом
+ent-RMCML66DNestSandbag-desc = Крупнокалиберный пулемет ML66D с оптическим прицелом, установленный на небольшом укрепленном столбе с мешками с песком, образует небольшое пулеметное гнездо для всех ваших оборонительных нужд.
+ent-RMCML66DNestMetal-name = крупнокалиберный пулемет МЛ66Д с оптическим прицелом
+ent-RMCML66DNestMetal-desc = Крупнокалиберный пулемет ML66D с оптическим прицелом, установленный за металлическим щитом.
+ent-RMCML66DMount-name = Крепление МЛ66Д
+ent-RMCML66DMount-desc = Складное крепление для ML66D обеспечивает устойчивость ML66D.
+ent-RMCML66DMountAssembled-name = Крупнокалиберный пулемет МЛ66Д
+ent-RMCML66DMountAssembled-desc = Развертываемый крупнокалиберный пулемет. 
+ent-RMCM2CMount-name = Крупнокалиберный пулемет М2С
+ent-RMCM2CMount-desc = Разобранный пулемет M2C со сложенными телескопическими треногими и неспособный вести огонь.

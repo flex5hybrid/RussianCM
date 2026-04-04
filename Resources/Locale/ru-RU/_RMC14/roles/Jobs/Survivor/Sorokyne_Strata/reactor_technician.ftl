@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorReactorTechnician = reactor technician spawn point
-ent-RMCGearSurvivorPresetReactorTechnician = reactor technician preset
+ent-RMCGearSurvivorPresetReactorTechnician = предустановка специалиста по реактору
+ent-RMCSpawnPointSurvivorReactorTechnician = Точка появления реакторного техника

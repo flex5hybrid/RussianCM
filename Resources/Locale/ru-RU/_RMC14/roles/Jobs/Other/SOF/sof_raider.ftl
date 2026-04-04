@@ -1,3 +1,2 @@
-
-ent-RMCRandomHumanoidMarineRaider = DEATHSQUAD marine raider ghost role
-ent-RMCDogtagMarineRaider = Marine Raider's dogtags
+ent-RMCDogtagMarineRaider = Жетоны Морпеха Рейдера
+ent-RMCRandomHumanoidMarineRaider = DEATHSQUAD Морпех роль призрака рейдера

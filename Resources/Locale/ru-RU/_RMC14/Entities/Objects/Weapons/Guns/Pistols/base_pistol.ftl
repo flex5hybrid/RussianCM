@@ -1,2 +1,0 @@
-
-  .desc = A pistol magazine.

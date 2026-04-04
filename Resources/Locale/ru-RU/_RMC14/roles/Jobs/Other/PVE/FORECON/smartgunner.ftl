@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointFORECONPVESmartgunner = forecon smartgunner spawn point
+ent-RMCSpawnPointFORECONPVESmartgunner = точка появления Forecon Smartgunner

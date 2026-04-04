@@ -1,2 +1,1 @@
-
-ent-CMXenoParasiteBase = Лицехват
+ent-CMXenoParasiteBase = Паразит

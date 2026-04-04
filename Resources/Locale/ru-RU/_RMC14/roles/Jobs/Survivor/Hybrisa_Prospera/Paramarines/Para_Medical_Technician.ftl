@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointParaMedicalTechnician = paramarine combat medical technician spawn point
+ent-RMCSpawnPointParaMedicalTechnician-name = Точка появления парамаринного боевого медицинского техника

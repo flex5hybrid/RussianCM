@@ -1,8 +1,6 @@
-
-ent-RMCSmokeAcid = acid gas
-ent-RMCSmokeNeurotoxin = neurotoxin gas
-ent-RMCSmokeRunner = acid smoke
-ent-RMCSmokeKingDoom = king doom
-ent-RMCSmokeAcidShroud = acid gas
-ent-RMCSmokeNeurotoxinShroud = neurotoxin gas
-ent-RMCSmokeAcidDeathcloud = acid gas
+ent-RMCSmokeAcidDeathcloud = кислотный газ
+ent-RMCSmokeNeurotoxinShroud = нейротоксичный газ
+ent-RMCSmokeAcidShroud = кислотный газ
+ent-RMCSmokeRunner = кислотный дым
+ent-RMCSmokeNeurotoxin = нейротоксичный газ
+ent-RMCSmokeAcid = кислотный газ

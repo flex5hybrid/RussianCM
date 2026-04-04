@@ -1,14 +1,10 @@
-
-ent-RMCWallSandstone = sandstone wall
-  .desc = A wall with sandstone plating.
-ent-RMCWallSandstoneTemple = sandstone temple wall
-  .desc = A heavy wall of sandstone.
-ent-RMCWallSandstoneTempleRuned = runed sandstone temple wall
-  .desc = A heavy wall of sandstone, with elegant carvings and runes inscribed upon its face.
-ent-RMCWallSandstoneMemorial = memorial wall
-ent-RMCWallUranium = uranium wall
-  .desc = A wall with uranium plating. This is probably a bad idea.
-ent-RMCWallUraniumBroken = broken uranium wall
-  .desc = A uranium plated wall that's leaking something. Just looking at it makes you dizzy.
-ent-RMCWallGold = gold wall
-  .desc = A wall with gold plating. Swag!
+ent-RMCWallGold = золотая стена
+  .desc = Стена с позолотой. 
+ent-RMCWallUranium = урановая стена
+  .desc = Стена с урановой обшивкой. 
+ent-RMCWallSandstoneTempleRuned = Стена храма из рунического песчаника
+  .desc = Тяжелая стена из песчаника с изящной резьбой и рунами, нанесенными на ее лицевую сторону.
+ent-RMCWallSandstoneTemple = Стена храма из песчаника
+  .desc = Тяжелая стена из песчаника.
+ent-RMCWallSandstone = стена из песчаника
+  .desc = Стена с обшивкой из песчаника.

@@ -1,5 +1,4 @@
-
-ent-RMCWeaponPistolD18 = D18 Hummingbird
-  .desc = The D18 Hummingbird Pistol was produced in the mid-2090s as a cheap concealed carry firearm, and quickly grew to popularity in civilian populaces. It's common on the frontier as a personal defense pistol.
-ent-RMCMagazinePistolD18 = D18 magazine (9mm)
-  .desc = A small D18 magazine storing seven 9mm bullets. How is it even this small?
+ent-RMCMagazinePistolD18 = магазин D18 (9мм)
+  .desc = Небольшой магазин D18, вмещающий семь патронов 9мм. Как он вообще такой маленький?
+ent-RMCWeaponPistolD18 = D18 «Колибри»
+  .desc = Пистолет D18 «Колибри» был произведён в середине 2110-х годов как дешёвое и скрываемое огнестрельное оружие для агентов Спящих ячеек ФОК для убийств и засад, и может быть спрятан в обуви и рабочих ботинках.

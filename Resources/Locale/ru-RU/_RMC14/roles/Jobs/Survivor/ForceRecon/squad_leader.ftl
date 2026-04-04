@@ -1,3 +1,2 @@
-
-ent-CMSpawnPointForeconSquadLeader = forecon squad leader spawn point
-ent-RMCSurvivorPresetForeconSquadLead = forecon squad leader survivor preset
+ent-RMCSurvivorPresetForeconSquadLead = Предварительные настройки выжившего лидера отряда Forecon
+ent-CMSpawnPointForeconSquadLeader = точка спавна лидера отряда форекон

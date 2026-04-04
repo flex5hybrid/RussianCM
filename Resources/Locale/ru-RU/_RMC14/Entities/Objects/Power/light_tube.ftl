@@ -1,5 +1,4 @@
-
-ent-RMCLightTube = light tube
-  .desc = A replacement light tube.
-ent-RMCLightTubeBroken = light tube
-  .desc = A replacement light tube.
+ent-CMLightTubeBroken = люминесцентная лампа
+  .desc = Запасная люминесцентная лампа.
+ent-CMLightTube = люминесцентная лампа
+  .desc = Запасная люминесцентная лампа.

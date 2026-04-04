@@ -1,13 +1,12 @@
-
-ent-RMCL112SniperRifle = L112A2 designated marksman rifle
-  .desc = The L112A2 DMR, a more modular variation on the A1 model. This one foregoes the integral suppressor in favor of a threaded barrel, and features an attachment rail to install foregrips.
-ent-RMCL112SniperRifleSuppressed = L112A1 designated marksman rifle
-  .desc = The L112A1 DMR, adopted by the TSE's Royal Crown Marines following a recognised need for long-range firepower on reconnaissance and covert operations and developed in tandem with the 7.7x56mmR HESH round.
-ent-RMCMagazineSniperL112 = L112 magazine (7.7x56mmR)
-  .desc = A 25-round magazine of 7.7x56mm rimmed cartridges.
-ent-RMCMagazineSniperL112SH = L112 squash-head magazine (7.7x56mmR)
-  .desc = A 25-round magazine of 7.7x56mm rimmed squash-head cartridges.
-ent-RMCCartridgeSniper77x56mmR = cartridge (7.7x56mmR)
-ent-RMCCartridgeSniper77x56mmRSH = squash-head cartridge (7.7x56mmR)
-ent-RMCBulletSniper77x56mmR = bullet (7.7x56mmR)
-ent-RMCBulletSniper77x56mmRSH = squash-head bullet (7.7x56mmR)
+ent-RMCL112SniperRifle-name = L112A2 обозначена стрелковая винтовка
+ent-RMCL112SniperRifle-desc = L112A2 DMR — более модульная версия модели A1. 
+ent-RMCL112SniperRifleSuppressed-name = L112A1 обозначена стрелковой винтовкой
+ent-RMCL112SniperRifleSuppressed-desc = L112A1 DMR, принятый на вооружение Королевской морской пехоты TSE в связи с признанной потребностью в огневой мощи дальнего действия для разведки и секретных операций и разработанный в тандеме с патроном HESH калибра 7,7x56 ммR.
+ent-RMCMagazineSniperL112-name = Магазин L112 (7,7х56ммR)
+ent-RMCMagazineSniperL112-desc = Магазин на 25 патронов с закраиной 7,7х56 мм.
+ent-RMCMagazineSniperL112SH-name = Магазин L112 с плоской головкой (7,7x56 ммR)
+ent-RMCMagazineSniperL112SH-desc = Магазин на 25 патронов с плоской головкой 7,7х56 мм.
+ent-RMCCartridgeSniper77x56mmR-name = патрон (7,7х56ммR)
+ent-RMCCartridgeSniper77x56mmRSH-name = Патрон с плоской головкой (7,7x56 ммR)
+ent-RMCBulletSniper77x56mmR-name = пуля (7,7х56ммR)
+ent-RMCBulletSniper77x56mmRSH-name = пуля с плоской головкой (7,7x56 ммR)

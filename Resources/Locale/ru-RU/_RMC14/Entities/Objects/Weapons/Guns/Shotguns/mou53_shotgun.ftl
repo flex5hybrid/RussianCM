@@ -1,3 +1,2 @@
-
-ent-WeaponShotgunMOU53 = MOU53 break action shotgun
-  .desc = A limited production MOU53 triple break action classic. Respectable damage output at medium ranges, while the AEGIS M42 is the king of CQC, the MOU53 is what hits the broadside of that barn. This specific model cannot safely fire buckshot shells.
+ent-WeaponShotgunMOU53 = дробовик MOU53 с переламывающимся стволом
+  .desc = Ограниченная серия классического трёхствольного дробовика Kerchner MOU53 с переламывающимся стволом. Солидный урон на средних дистанциях; если Aegis M42 — король ближнего боя, то Kerchner MOU53 — это то, что попадает в амбар с дальней дистанции. Эта конкретная модель не может безопасно стрелять картечью.

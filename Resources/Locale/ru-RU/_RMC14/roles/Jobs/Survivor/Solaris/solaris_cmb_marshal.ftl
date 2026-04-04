@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointSolarisCMBMarshal = solaris cmb marshal spawn point
+ent-CMSpawnPointSolarisCMBMarshal-name = точка спавна маршала Solaris CMB

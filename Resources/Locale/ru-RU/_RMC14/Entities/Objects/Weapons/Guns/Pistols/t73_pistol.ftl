@@ -1,11 +1,10 @@
-
-ent-RMCWeaponPistolT73 = Type 73 pistol
-  .desc = The Type 73 is the once-standard issue sidearm of the SPP. Replaced by the NP92 in SPP use, it remains popular with veteran SPP troops due to familiarity and extra power. Due to an extremely large amount being produced, they tend to end up in the hands of forces attempting to arm themselves on a budget. Users include the Socialist Progressive Peoples, Colonial Liberation Front, and just about any mercenary or pirate group out there.
-ent-RMCWeaponPistolT74 = Type 74 pistol
-  .desc = The Type 74 is the designation for a specially modified Type 73 with an integrated laser sight system, multiple lightning cuts to reduce weight in order to allow a higher pressure round to be used with the same recoil sping, and a more comfortable grip. Due to the adoption of the NP92, the Type 74 was produced in limited numbers, because of this it is typically only issued on request to high-ranking officers
-ent-RMCMagazinePistolT73 = Type 73 magazine (7.62x25mm)
-ent-RMCMagazinePistolT74Impact = Type 74 impact magazine (7.62x25mm)
-ent-RMCBulletPistolT73 = bullet (7.62x25mm)
-ent-RMCCartridgePistolT73 = cartridge (7.62x25mm)
-ent-RMCBulletPistolT74Impact = bullet (7.62x25mm impact)
-ent-RMCCartridgePistolT74Impact = cartridge (7.62x25mm impact)
+ent-RMCCartridgePistolT74Impact = патрон (7.62x25мм ударный)
+ent-RMCBulletPistolT74Impact = пуля (7.62x25мм ударная)
+ent-RMCCartridgePistolT73 = патрон (7.62x25мм)
+ent-RMCBulletPistolT73 = пуля (7.62x25мм)
+ent-RMCMagazinePistolT74Impact = Обойма Тип 74 ударная (7.62x25мм)
+ent-RMCMagazinePistolT73 = Обойма Тип 73 (7.62x25мм)
+ent-RMCWeaponPistolT74 = Пистолет Тип 74
+  .desc = Тип 74 — это обозначение специально модифицированного Типа 73 с интегрированной лазерной системой прицеливания, множественными облегчающими пропилами для снижения веса, что позволило использовать патрон более высокого давления с той же возвратной пружиной, и более удобной рукоятью. Из-за принятия на вооружение NP92, Тип 74 выпускался ограниченными партиями, и поэтому, как правило, выдается только по запросу старшим офицерам.
+ent-RMCWeaponPistolT73 = Пистолет Тип 73
+  .desc = Тип 73 — это некогда штатный пистолет ВПС. Замененный на NP92 в войсках ВПС, он остается популярным среди ветеранов ВПС благодаря привычности и большей мощности. Из-за огромного количества выпущенных экземпляров они часто попадают в руки формирований, пытающихся вооружиться с минимальными затратами. Среди пользователей — Социалистический Прогрессивный Народ, Фронт Колониального Освобождения и практически любые наемники или пираты.

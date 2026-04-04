@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorFiorinaRiotInProgressCMBRiotControlOfficer = special survivor fiorina riot in progress colony marshal bureau riot control team leader spawn point
-ent-RMCSurvivorPresetRiotInProgressCMBRCTL = riot in progress CMB RCTL preset
+ent-RMCSpawnPointSurvivorFiorinaRiotInProgressCMBRiotControlOfficer-name = Особый выживший в Фиорине, бунт в разгаре, маршальское бюро колонии, руководитель группы по борьбе с беспорядками, точка возрождения
+ent-RMCSurvivorPresetRiotInProgressCMBRCTL-name = Бунт в процессе CMB RCTL пресет

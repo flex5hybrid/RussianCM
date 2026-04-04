@@ -1,8 +1,5 @@
-
-  .desc = A large cabinet with drawers.
-ent-CMFilingCabinet = filing cabinet
-ent-CMFilingCabinetTall = tall filing cabinet
-ent-CMFilingCabinetTallWood = tall wooden filing cabinet
-ent-CMFilingCabinetChest = chest drawer
-ent-CMFilingCabinetChestWood = wooden chest drawer
-ent-CMFilingCabinetChestAngled = chest drawer
+ent-CMFilingCabinetChestWood = деревянный комод
+ent-CMFilingCabinetChest = ящик комода
+ent-CMFilingCabinetTallWood = высокий деревянный шкаф для документов
+ent-CMFilingCabinetTall = высокий шкаф для документов
+ent-CMFilingCabinet = шкаф для документов

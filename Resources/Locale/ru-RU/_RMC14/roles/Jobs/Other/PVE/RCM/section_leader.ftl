@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointRCMPVESectionLeader = RCM section leader spawn point
+ent-CMSpawnPointRCMPVESectionLeader-name = Точка появления лидера секции RCM

@@ -1,3 +1,5 @@
+ent-RMCFulton = фултон
+  .desc = Система, используемая КМП для подъёма объектов интереса с земли на дропшип AUD-25. Может использоваться для эвакуации тел, не подлежащих реанимации, или ящиков, обычно находясь в воздухе около 3 минут.
 
-ent-RMCFulton = fulton recovery device
-  .desc = A system used by the UNMC for retrieving objects of interest on the ground from an AUD-25 dropship. Can be used to extract unrevivable corpses, or crates, typically lasting around 3 minutes in the air.
+ent-RMCFulton20 = фултон
+  .desc = Система, используемая КМП для подъёма объектов интереса с земли на дропшип AUD-25. Может использоваться для эвакуации тел, не подлежащих реанимации, или ящиков, обычно находясь в воздухе около 3 минут.

@@ -1,4 +1,3 @@
-
+ent-RMCGuidebookRoleXO = Исполнительный офицер
+  .desc = Исполнительный офицер
 ent-CMSpawnPointExecutiveOfficer = executive officer spawn point
-ent-RMCGuidebookRoleXO = The Executive Officer
-  .desc = The Executive Officer.

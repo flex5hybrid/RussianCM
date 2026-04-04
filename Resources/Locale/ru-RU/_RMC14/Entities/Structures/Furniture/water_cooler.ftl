@@ -1,3 +1,2 @@
-
-ent-RMCWaterCooler = water cooler
-  .desc = A machine that dispenses water to drink. It has levers for hot and cold, but it only dispenses room-temperature water.
+ent-RMCWaterCooler = кулер для воды
+  .desc = Машина, которая раздает воду для питья. 

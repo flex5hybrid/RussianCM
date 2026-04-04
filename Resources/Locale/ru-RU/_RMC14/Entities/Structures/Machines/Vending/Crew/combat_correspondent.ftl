@@ -1,3 +1,2 @@
-
-ent-ColMarTechCrewCombatCorrespondent = ColMarTech Combat Correspondent Equipment Rack
-  .desc = An automated rack hooked up to a colossal storage of Reporter standard-issue equipment.
+ent-ColMarTechCrewCombatCorrespondent = Стойка для боевого корреспондентского снаряжения ColMarTech
+  .desc = Автоматизированная стойка, подключенная к огромному хранилищу стандартного оборудования «Репортера».

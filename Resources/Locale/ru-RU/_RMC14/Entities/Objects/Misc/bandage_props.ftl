@@ -1,4 +1,2 @@
-
-ent-RMCDirtBandageProp = dirty bandages
-  .desc = Some used gauze.
-ent-RMCPaperScrapProp = paper scrap
+ent-RMCDirtBandageProp = грязные бинты
+  .desc = Использованный перевязочный материал.

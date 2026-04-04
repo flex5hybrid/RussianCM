@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointPVESectionSergeant = PVE section sergeant spawn point
+ent-RMCSpawnPointPVESectionSergeant = Точка возрождения сержанта секции PVE

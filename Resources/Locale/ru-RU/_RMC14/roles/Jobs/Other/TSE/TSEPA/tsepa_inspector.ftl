@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointTSEPAInspector = tsepa inspector spawn point
+ent-RMCSpawnPointTSEPAInspector = точка появления инспектора цепы

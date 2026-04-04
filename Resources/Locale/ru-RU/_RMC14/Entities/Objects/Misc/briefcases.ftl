@@ -1,3 +1,2 @@
-
-ent-RMCBriefcase = briefcase
-  .desc = It's made of AUTHENTIC faux-leather and has a price-tag still attached. Its owner must be a real professional.
+ent-RMCBriefcase = портфель
+  .desc = Он сделан из ПОДЛИННОЙ искусственной кожи, и на нём до сих пор висит ценник. Его владелец, должно быть, настоящий профессионал.

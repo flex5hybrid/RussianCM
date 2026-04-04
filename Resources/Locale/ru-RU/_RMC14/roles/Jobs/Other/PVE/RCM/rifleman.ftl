@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointRCMPVERifleman = RCM rifleman spawn point
+ent-CMSpawnPointRCMPVERifleman-name = Точка появления стрелка RCM

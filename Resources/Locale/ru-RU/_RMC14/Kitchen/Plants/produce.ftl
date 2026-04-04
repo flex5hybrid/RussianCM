@@ -1,13 +1,11 @@
-
-ent-FoodMushroomPlump = plump-helmet
-  .desc = Plumus Hellmus: Oh, SHUT UP about the BLOODY mushrooms already! MOVE IT, marines!
-ent-FoodPeanut = peanut
-  .desc = Nuts!
-ent-FoodWhiteBeet = white beet
-  .desc = You can't beat white-beet.
-ent-FoodSunflower = sunflower
-  .desc = It's beautiful! A certain person might beat you to death if you trample these.
-ent-FoodGrass = bundle of grass
-  .desc = Go ahead, touch some grass.
-ent-RMCFoodMango = mango
-  .desc = MANGO MANGO MANGO
+ent-RMCFoodMango = манго
+  .desc = МАНГО МАНГО МАНГО
+ent-FoodGrass = пучок травы
+  .desc = Давай, потрогай траву.
+ent-FoodSunflower = подсолнечник
+  .desc = Это красиво! 
+ent-FoodWhiteBeet = сахарная свекла
+  .desc = Вы не можете победить белую свеклу.
+ent-FoodPeanut = арахис
+ent-FoodMushroomPlump = пухлый-Шлем
+  .desc = Плюмус Хеллмус: Ой, ЗАТКНИ уже насчёт КРОВАВЫХ грибов! 

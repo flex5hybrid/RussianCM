@@ -1,12 +1,10 @@
-
-ent-RMCPropComputerBase = terminal
-  .desc = This can be used for various functions.
-ent-RMCPropCommunicationsConsole = communications console
-ent-RMCPersonalDesktop = personal desktop
-ent-RMCSecurityCameraConsole = security cameras console
-ent-RMCDropshipWeaponsConsoleProp = dropship weapons controls
-ent-RMCSecurityRecordsConsole = security records
-ent-RMCSecurityRecordsConsoleAlt = security records
-ent-RMCIdentificationComputer = identification computer
-ent-RMCStationAlertComputer = station alert computer
-ent-RMCSystemsComputer = systems computer
+ent-RMCStationAlertComputer = компьютер оповещения о станции
+ent-RMCIdentificationComputer = идентификационный компьютер
+ent-RMCSecurityRecordsConsoleAlt = записи безопасности
+ent-RMCSecurityRecordsConsole = записи безопасности
+ent-RMCDropshipWeaponsConsoleProp = управление вооружением десантного корабля
+ent-RMCSecurityCameraConsole = консоль камер видеонаблюдения
+ent-RMCPersonalDesktop = персональный рабочий стол
+ent-RMCPropCommunicationsConsole = консоль связи
+ent-RMCPropComputerBase = Терминал
+  .desc = Это можно использовать для различных функций.

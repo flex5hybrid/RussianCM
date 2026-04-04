@@ -1,11 +1,10 @@
-
-ent-CMMatchBook = lucky sloths matchbook
-  .desc = A small book of cheap paper matches. Good luck getting them to light. Made by Lucky Sloths, but you'll be anything but lucky when you burn your hand trying to light a match on this.
-ent-CMBrownMatchBook = brown matchbook
-  .desc = A small book of cheap paper matches. Good luck getting them to light. Made with generic brown paper.
-ent-CMExecutiveSelectMatchbook = executive select matchbook
-  .desc = A small book of expensive paper matches. These ones light almost every time!
-ent-CMElectroMatchbook = Electro matchbook
-  .desc = A small book of cheap paper matches. Good luck getting them to light.
-ent-CMExecutiveWEYAMatchbook = We-Ya gold matchbook
-  .desc = A small book of expensive paper matches. These ones light almost every time, or so the packaging claims.
+ent-CMExecutiveWEYAMatchbook = золотая спичечная книжка «Ве-Я»
+  .desc = Небольшая книжка дорогих бумажных спичек. Согласно упаковке, эти зажигаются почти что всегда!
+ent-CMElectroMatchbook = спичечная книжка «Электро»
+  .desc = Небольшая книжка дешёвых бумажных спичек. Удачи вам их зажечь.
+ent-CMExecutiveSelectMatchbook = спичечная книжка «Экзекьютів Селект»
+  .desc = Небольшая книжка дорогих бумажных спичек. Эти зажигаются почти что всегда!
+ent-CMBrownMatchBook = коричневая спичечная книжка
+  .desc = Небольшая книжка дешёвых бумажных спичек. Удачи вам их зажечь. Сделана из обычной коричневой бумаги.
+ent-CMMatchBook = спичечная книжка «Лаки Слотс»
+  .desc = Небольшая книжка дешёвых бумажных спичек. Удачи вам их зажечь. Производство «Лаки Слотс», но вам будет что угодно, только не удача, когда вы обожжёте руку, пытаясь чиркнуть спичкой об эту коробку.

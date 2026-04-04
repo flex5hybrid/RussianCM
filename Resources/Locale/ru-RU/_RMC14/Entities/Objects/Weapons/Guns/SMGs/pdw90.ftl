@@ -1,13 +1,12 @@
-
-ent-RMCWeaponSMGPDW90 = FN PDW90 submachine gun
-  .desc = The PDW90 submachine gun. An archaic design, but still widely used by corporate and mercenary groups, sometimes seen in the hands of civilian populations. This weapon only accepts 5.7×28mm rounds.
-ent-RMCWeaponSMGPDW90TSE = L57 submachine gun
-  .desc = A PDW90 submachine gun in the colors of the Royal Crown Marines, manufactured for the TSE's armed forces under license. This weapon only accepts 5.7x28mm rounds.
-ent-RMCMagazineSMGPDW90 = PDW90 magazine (5.7×28mm)
-  .desc = A 5.7×28mm magazine for the FN PDW90.
-ent-RMCMagazineSMGPDW90AP = PDW90 AP magazine (5.7×28mm)
-  .desc = An armor-piercing 5.7x28mm magazine for the FN PDW90.
-ent-RMCCartridge57x28mm = cartridge (57×28mm SMG)
-  .desc = A 5.7×28mm cartridge for the FN PDW90.
-ent-RMCCartridge57x28mmAP = cartridge (57×28mm SMG)
-  .desc = A 5.7×28mm AP cartridge for the FN PDW90.
+ent-RMCWeaponSMGPDW90-name = Пистолет-пулемет FN PDW90
+ent-RMCWeaponSMGPDW90-desc = Пистолет-пулемет PDW90. 
+ent-RMCWeaponSMGPDW90TSE-name = Пистолет-пулемет Л57
+ent-RMCWeaponSMGPDW90TSE-desc = Пистолет-пулемет PDW90 в цветах Королевской морской пехоты, изготовленный для вооруженных сил TSE по лицензии. 
+ent-RMCMagazineSMGPDW90-name = Магазин PDW90 (5,7×28 мм)
+ent-RMCMagazineSMGPDW90-desc = Магазин размером 5,7×28 мм для FN PDW90.
+ent-RMCMagazineSMGPDW90AP-name = Магазин PDW90 AP (5,7×28 мм)
+ent-RMCMagazineSMGPDW90AP-desc = Бронебойный магазин размером 5,7х28 мм для FN PDW90.
+ent-RMCCartridge57x28mm-name = патрон (ПП57х28мм)
+ent-RMCCartridge57x28mm-desc = Патрон 5,7×28 мм для FN PDW90.
+ent-RMCCartridge57x28mmAP-name = патрон (ПП57х28мм)
+ent-RMCCartridge57x28mmAP-desc = Патрон AP 5,7×28 мм для FN PDW90.

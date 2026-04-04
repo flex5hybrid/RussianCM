@@ -1,8 +1,7 @@
-
-ent-RMCActionSpecialistBase = Spec Ability
-ent-RMCActionGhilliePreparePosition = Prepare Position
-  .desc = Use the ghillie suit and the nearby environment to become near invisible.
-ent-RMCActionToggleCloak = Toggle Cloak
-  .desc = Enable or Disable your Thermal Cloak
-ent-RMCActionFireShield = Activate Fire Shield
-  .desc = Activate your armor's FIREWALK protocol for a short duration.
+ent-RMCActionFireShield = Активировать огненный щит
+  .desc = Активирует протокол "ОГНЕННЫЙ ШАГ" вашей брони на короткое время.
+ent-RMCActionToggleCloak = Вкл/выкл маскировку
+  .desc = Включает или отключает вашу тепловую маскировку.
+ent-RMCActionGhilliePreparePosition = Подготовить позицию
+  .desc = Используйте костюм "Гилли" и окружающую обстановку, чтобы стать почти невидимым.
+ent-RMCActionSpecialistBase = Способность спеца

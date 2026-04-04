@@ -1,3 +1,2 @@
-
-ent-RMCPouchMedkit = medical kit pouch
-  .desc = It's specifically made to hold medical items.
+ent-RMCPouchMedkit = подсумок для медкомплекта
+  .desc = Специально создан для хранения медицинских предметов.

@@ -1,3 +1,2 @@
-
-ent-RMCWhistle = whistle
-  .desc = A metal pea-whistle. Can be blown while held, or worn in the mouth
+ent-RMCWhistle = свисток
+  .desc = Металлический свисток. В него можно дуть пока он во рту, или в руках.

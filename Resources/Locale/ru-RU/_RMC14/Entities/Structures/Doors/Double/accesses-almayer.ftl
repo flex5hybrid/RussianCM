@@ -1,2 +1,1 @@
-
-ent-CMDoubleDoorResearchGlassLocked = Research Airlock
+ent-CMDoubleDoorResearchGlassLocked = Исследовательский шлюз

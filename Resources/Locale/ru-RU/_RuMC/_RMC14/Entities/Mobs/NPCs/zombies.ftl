@@ -1,1 +1,0 @@
-ent-RMCSpawnZombifiedColonist = зомби спавнер

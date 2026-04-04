@@ -1,5 +1,4 @@
-
-ent-CMVentPump = air vent
-  .desc = Has a valve and pump attached to it.
-ent-CMVentScrubber = air scrubber
-  .desc = Has a valve and pump attached to it.
+ent-CMVentScrubber = очиститель воздуха
+  .desc = К нему прикреплен клапан и насос.
+ent-CMVentPump = вентиляционное отверстие
+  .desc = К нему прикреплен клапан и насос.

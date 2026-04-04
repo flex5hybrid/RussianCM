@@ -1,3 +1,2 @@
-
-ent-CMTileItemSteel = metal floor
-ent-CMTileItemWood = wooden floor tile
+ent-CMTileItemWood = деревянная напольная плитка
+ent-CMTileItemSteel = металлический пол

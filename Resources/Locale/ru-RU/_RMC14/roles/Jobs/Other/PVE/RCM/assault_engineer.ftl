@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointRCMPVEAssaultEngineer = RCM assault engineer spawn point
+ent-CMSpawnPointRCMPVEAssaultEngineer-name = Точка появления штурмового инженера RCM

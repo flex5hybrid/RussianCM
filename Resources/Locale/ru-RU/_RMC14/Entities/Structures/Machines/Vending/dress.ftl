@@ -1,11 +1,10 @@
-
-ent-RMCAutomatedPersonalUniformCloset = automated personal uniform closet
-  .desc = An automated closet hooked up to a colossal storage of standard-issue dress uniform variants.
-ent-RMCUniformCaseDressEnlisted = enlisted dress uniform case
-  .desc = A case containing the dress uniform for an enlisted person.
-ent-RMCUniformCaseDressNCO = nco dress uniform case
-  .desc = A case containing the dress uniform for a non-commissioned officer.
-ent-RMCUniformCaseDressOfficer = officer dress uniform case
-  .desc = A case containing the dress uniform for a commissioned officer.
-ent-RMCUniformCaseService = service uniform case
-  .desc = A case containing a standard-issue service uniform.
+ent-RMCAutomatedPersonalUniformCloset-name = автоматизированный шкаф для личной униформы
+ent-RMCAutomatedPersonalUniformCloset-desc = Автоматизированный шкаф, соединенный с огромным хранилищем стандартных вариантов парадной формы.
+ent-RMCUniformCaseDressEnlisted-name = чехол для парадной формы рядового состава
+ent-RMCUniformCaseDressEnlisted-desc = Кейс с парадной формой военнослужащего.
+ent-RMCUniformCaseDressNCO-name = чехол для парадной формы унтер-офицера
+ent-RMCUniformCaseDressNCO-desc = Кейс с парадной формой унтер-офицера.
+ent-RMCUniformCaseDressOfficer-name = чехол для офицерской парадной формы
+ent-RMCUniformCaseDressOfficer-desc = Кейс с парадной формой офицерского состава.
+ent-RMCUniformCaseService-name = чехол для служебной униформы
+ent-RMCUniformCaseService-desc = Кейс со стандартной служебной униформой.

@@ -1,6 +1,5 @@
-
-ent-RMCSkillPresetSurvivorSPPPrivate = Survivor SPP Private
-ent-RMCSkillPresetSurvivorSPPSapper = Survivor SPP Sapper
-ent-RMCSkillPresetSurvivorSPPMedic = Survivor SPP Medic
-ent-RMCSkillPresetSurvivorSPPSpecialist = Survivor SPP Specialist
-ent-RMCSkillPresetSurvivorSPPLeader = Survivor SPP Leader
+ent-RMCSkillPresetSurvivorSPPPrivate-name = Выживший СПП Частный
+ent-RMCSkillPresetSurvivorSPPSapper-name = Выживший Сапер СПП
+ent-RMCSkillPresetSurvivorSPPMedic-name = Выживший медик СПП
+ent-RMCSkillPresetSurvivorSPPSpecialist-name = Специалист по выжившим СПП
+ent-RMCSkillPresetSurvivorSPPLeader-name = Выживший лидер СПП

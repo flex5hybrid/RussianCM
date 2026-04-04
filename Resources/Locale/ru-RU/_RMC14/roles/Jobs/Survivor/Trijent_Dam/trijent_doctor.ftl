@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorTrijentDoctor = survivor trijent doctor spawn point
-ent-RMCGearSurvivorPresetTrijentDoctor = trijent doctor colonist preset
+ent-RMCGearSurvivorPresetTrijentDoctor = предустановка доктора-колониста Trijent
+ent-RMCSpawnPointSurvivorTrijentDoctor = точка возрождения доктора-триджента

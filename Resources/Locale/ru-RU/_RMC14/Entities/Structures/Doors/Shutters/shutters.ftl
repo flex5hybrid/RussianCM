@@ -1,6 +1,5 @@
-
-ent-RMCShutterBaseIndestructible = shutters
-  .desc = That looks like it doesn't open easily.
-ent-RMCShutterAlmayerCL = corporate liaison privacy shutters
-ent-RMCShutterAlmayerAntiTheft = anti-theft shutters
-ent-RMCShutterAlmayerUniformVendors = uniform vendor shutters
+ent-RMCShutterAlmayerUniformVendors = униформа поставщиков ставней
+ent-RMCShutterAlmayerAntiTheft = противоугонные ставни
+ent-RMCShutterAlmayerCL = ставни конфиденциальности для корпоративных связей
+ent-RMCShutterBaseIndestructible = ставни
+  .desc = Похоже, он не открывается легко.

@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointSPPSOFSapper = special survivor spp sof sapper spawn point
+ent-CMSpawnPointSPPSOFSapper-name = Специальная точка спавна сапера для выживания

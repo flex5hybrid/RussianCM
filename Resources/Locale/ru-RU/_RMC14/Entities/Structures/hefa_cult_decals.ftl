@@ -1,3 +1,2 @@
-
-ent-RMCHefaDecalBase = strange paint marks
-  .desc = You think you can make out the iconography of a HEFA grenade.
+ent-RMCHefaDecalBase = странные следы краски
+  .desc = Вы думаете, что можете различить иконографию гранаты HEFA.

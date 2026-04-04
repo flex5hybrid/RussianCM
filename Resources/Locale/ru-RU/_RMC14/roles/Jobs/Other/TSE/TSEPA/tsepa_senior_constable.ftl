@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointTSEPASeniorConstable = tsepa senior constable spawn point
+ent-RMCSpawnPointTSEPASeniorConstable = точка появления старшего констебля цепы

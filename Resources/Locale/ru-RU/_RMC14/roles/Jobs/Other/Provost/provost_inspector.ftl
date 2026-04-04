@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointProvostInspector = Provost Inspector spawn point
+ent-RMCRandomHumanoidProvostInspector = инспектор роли призрака проректора

@@ -1,8 +1,7 @@
-
-ent-CMSpawnPointSurvivor = survivor spawn point
-ent-CMGuidebookRoleSurvivor = Survivor
-ent-RMCSurvivorPresetNoGun = no gun colonist preset
-ent-RMCSurvivorPresetCivilian = civilian colonist preset
-ent-RMCSurvivorPresetCivilianRareItem = civilian colonist preset with rare item
-ent-RMCSurvivorPresetCivilianOutfits = civilian colonist preset with random outfits
-ent-RMCRandomHumanoidSurvivorCivilian = civilian colonist ghost role
+ent-RMCRandomHumanoidSurvivorCivilian = роль призрака гражданского колониста
+ent-RMCSurvivorPresetCivilianOutfits = Гражданский колонист со случайной одеждой
+ent-RMCSurvivorPresetCivilianRareItem = Гражданский колонист с редким предметом
+ent-RMCSurvivorPresetCivilian = настройки гражданского колониста
+ent-RMCSurvivorPresetNoGun = нет предустановленных настроек колониста с оружием
+ent-CMGuidebookRoleSurvivor = Выживший
+ent-CMSpawnPointSurvivor = точка появления выжившего

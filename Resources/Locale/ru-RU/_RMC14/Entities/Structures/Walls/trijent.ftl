@@ -1,4 +1,3 @@
-
-ent-RMCWallHangar = hangar wall
-ent-RMCWallBunker = bunker wall
-ent-RMCWallChigusa = facility wall
+ent-RMCWallChigusa = стена объекта
+ent-RMCWallBunker = Стена бункера
+ent-RMCWallHangar = стена ангара

@@ -1,13 +1,12 @@
-
-ent-RMCBaseStorageBag = storage bag
-  .desc = A foldable storage container.
-ent-CMBodyBag = body bag
-  .desc = A folded bag designed for the storage and transportation of cadavers.
-ent-CMStasisBag = stasis bag
-  .desc = A folded, reusable bag designed to prevent additional damage to an occupant.
-ent-RMCStasisBagUsed = used stasis bag
-  .desc = It's been ripped open. You will need to find a machine capable of recycling it.
-ent-RMCThermalTarpV2 = V2 reactive thermal tarp
-  .desc = A tarp carried by some UNMC infantry. This updated tarp is capable of blending into its environment nearly flawlessly, given that it can properly collate data once deployed. The tarp is able to hide the wearer's heat signature.
-ent-RMCThermalTarp = V3 reactive thermal tarp
-  .desc = A more compact and improved version of the V2 thermal tarp, intended primarily for the transportation of deceased or wounded marines. It has improved cloaking technology than earlier models, allowing it to cloak to a greater degree and faster, but can only be used with special training.
+ent-RMCThermalTarp = реактивное термопокрывало V3
+  .desc = Более компактная и улучшенная версия термопокрывала V2, предназначенная в основном для транспортировки погибших или раненых морпехов. Обладает усовершенствованной технологией маскировки по сравнению с предыдущими моделями, обеспечивая лучшую степень и скорость скрытия, но может использоваться только после специального обучения.
+ent-RMCThermalTarpV2 = реактивное термопокрывало V2
+  .desc = Покрывало, которое носят некоторые пехотинцы КМП. Эта обновлённая версия способна почти безупречно маскироваться под окружающую среду при условии корректного сбора данных после развёртывания. Покрывало скрывает тепловой след пользователя.
+ent-RMCStasisBagUsed = использованный стазис-мешок
+  .desc = Он был вскрыт. Вам нужно найти машину, способную его переработать.
+ent-CMStasisBag = стазис-мешок
+  .desc = Сложенный многоразовый мешок, предназначенный для предотвращения дополнительных повреждений у находящегося внутри.
+ent-CMStasisBagFolded = стазис-мешок
+  .desc = Сложенный многоразовый мешок, предназначенный для предотвращения дополнительных повреждений у находящегося внутри.
+ent-CMBodyBag = мешок для тел
+  .desc = Сложенный мешок, предназначенный для хранения и транспортировки трупов.

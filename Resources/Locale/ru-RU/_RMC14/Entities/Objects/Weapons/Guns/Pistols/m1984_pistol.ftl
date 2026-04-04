@@ -1,12 +1,14 @@
+ent-RMCBulletPistol9mmHP = пуля (9мм ЭП)
+ent-RMCCartridgePistol9mmHP = патрон (9мм ЭП)
+ent-RMCMagazinePistolM1984HP = магазин M1984 с экспансивными пулями (9мм)
+  .desc = Пистолетный магазин на 9мм с экспансивными пулями для M1984. Эти экспансивные пули имеют заметно более высокую останавливающую силу по небронированным целям и заметно меньшую по бронированным целям.
+ent-RMCMagazinePistolM1984AP = магазин M1984 БО (9мм)
+  .desc = Пистолетный магазин. Этот содержит бронебойные пули, которые имеют заметно более высокую останавливающую силу по хорошо бронированным целям и заметно меньшую по небронированным или слабобронированным целям.
+ent-CMCartridgePistol9mm = патрон (9мм)
+ent-CMBulletPistol9mm = пуля (9мм)
+ent-CMMagazinePistolM1984 = магазин M1984 (9мм)
+ent-CMWeaponPistolM1984 = служебный пистолет M1984
+  .desc = Служебный пистолет M1984, ранее стандартное табельное оружие КМП, но недавно заменённое на боевой пистолет M77. Стреляет патронами 9мм.
+ent-CMWeaponPistolM1984Empty = служебный пистолет M1984
+  .desc = Служебный пистолет M1984, ранее стандартное табельное оружие КМП, но недавно заменённое на боевой пистолет M77. Стреляет патронами 9мм.
 
-ent-CMWeaponPistolM1984 = M1984 service pistol
-  .desc = An M1984 Service Pistol, once the standard issue sidearm of the UNMC but has recently been replaced with the M77 combat pistol. Fires 9mm pistol rounds.
-ent-CMMagazinePistolM1984 = M1984 magazine (9mm)
-ent-CMBulletPistol9mm = bullet (9mm)
-ent-CMCartridgePistol9mm = cartridge (9mm)
-ent-RMCMagazinePistolM1984AP = M1984 AP magazine (9mm)
-  .desc = A pistol magazine. This one contains armor-piercing bullets, which have noticeably higher stopping power on well-armored targets, and noticeably less on unarmored or lightly-armored targets.
-ent-RMCMagazinePistolM1984HP = M1984 hollowpoint magazine (9mm)
-  .desc = A hollow-point 9mm pistol magazine for the M1984. These hollow-point bullets have noticeably higher stopping power on unarmored targets, and noticeably less on armored targets.
-ent-RMCCartridgePistol9mmHP = cartridge (9mm HP)
-ent-RMCBulletPistol9mmHP = bullet (9mm HP)

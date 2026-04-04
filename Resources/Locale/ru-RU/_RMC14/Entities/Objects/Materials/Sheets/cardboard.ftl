@@ -1,2 +1,2 @@
 
-ent-RMCSheetCardboard = cardboard
+ent-RMCSheetCardboard = картон

@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorKutjevoDoctor = survivor kurjevo doctor spawn point
-ent-RMCGearSurvivorPresetKutjevoDoctor = kutjevo doctor colonist preset
+ent-RMCGearSurvivorPresetKutjevoDoctor = Кутьево доктор колонист пресет
+ent-RMCSpawnPointSurvivorKutjevoDoctor = выживший доктор Курьево точка спавна

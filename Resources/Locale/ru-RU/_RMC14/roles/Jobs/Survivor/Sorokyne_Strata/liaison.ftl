@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorHalcyonDynamicsLiaison = halcyon dynamics liaison spawn point
-ent-RMCGearSurvivorPresetHalcyonDynamicsLiaison = halcyon dynamics liaison preset
+ent-RMCGearSurvivorPresetHalcyonDynamicsLiaison = предустановка связи Halcyon Dynamics
+ent-RMCSpawnPointSurvivorHalcyonDynamicsLiaison = точка спауна безмятежной динамики

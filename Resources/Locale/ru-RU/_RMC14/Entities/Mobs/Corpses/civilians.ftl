@@ -1,2 +1,1 @@
-
-ent-RMCGuidebookCorpseColonistBurst = Dead Colonist
+ent-RMCGuidebookCorpseColonistBurst = Мёртвый колонист

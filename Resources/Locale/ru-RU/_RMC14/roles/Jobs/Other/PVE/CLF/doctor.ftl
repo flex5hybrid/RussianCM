@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointCLFDoctorPVE = clf doctor spawn point
+ent-RMCSpawnPointCLFDoctorPVE = точка появления доктора clf

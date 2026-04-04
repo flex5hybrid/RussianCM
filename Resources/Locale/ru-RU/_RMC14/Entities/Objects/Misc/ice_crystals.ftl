@@ -1,3 +1,2 @@
-
-ent-RMCIceCrystal = ice crystal
-  .desc = It is a giant crystal of ice. The chemical process that keeps it frozen despite major seasonal temperature flux is what the United Nations Greater Argentinian science team is studying here on the Snowball.
+ent-RMCIceCrystal = ледяной кристалл
+  .desc = Это гигантский кристалл льда. Химический процесс, который удерживает его в замороженном состоянии, несмотря на значительные сезонные колебания температуры, — это то, что научная команда Объединённых Наций Большой Аргентины изучает здесь, на Снежке.

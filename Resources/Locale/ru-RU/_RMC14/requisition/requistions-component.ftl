@@ -1,11 +1,11 @@
 # Requisition Computer
-requisition-paperwork-receiver-name = Logistics Branch
-requisition-paperwork-reward-message = Confirmation Received! transferred ${$amount} from budget surplus
+requisition-paperwork-receiver-name = Логистический филиал
+requisition-paperwork-reward-message = Подтверждение получено! 
 
 # Requisition Invoice
-requisition-paper-print-name = {$name} invoice
-requisition-paper-print-manifest = [head=2]
-    {$containerName}[/head][bold]{$content}[/bold][head=2]
+requisition-paper-print-name = {$name} счет-фактура
+requisition-paper-print-manifest = [голова=2]
+    {$containerName}[/head][bold]{$content}[/bold][head= 2]
     WT. {$weight} LBS
     LOT {$lot}
     S/N {$serialNumber}[/head]

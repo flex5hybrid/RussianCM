@@ -1,2 +1,0 @@
-ent-RMCSpawnPointSurvivorChancesTerraformingSpecialist-name = точка спавна специалиста по терраформированию
-ent-RMCRandomHumanoidSurvivorChancesTerraformingSpecialist-name = Роль призрака специалиста по терраформированию

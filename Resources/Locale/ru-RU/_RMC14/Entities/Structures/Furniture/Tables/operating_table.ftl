@@ -1,3 +1,2 @@
-
-ent-CMOperatingTable = operating table
-  .desc = Used for advanced medical procedures.
+ent-CMOperatingTable = операционный стод
+  .desc = Используется для продвинутых медицинских процедур.

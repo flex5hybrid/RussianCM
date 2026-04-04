@@ -1,26 +1,36 @@
+ent-CMMREFoodHoneyFlan = медовый флан
+  .desc = Содержимое стандартного ИРП морской пехоты. Это медовый флан.
+ent-CMMREFoodFlan = флан
+  .desc = Содержимое стандартного ИРП морской пехоты. Это флан.
+ent-CMMREFoodCocoBar = кокосовый батончик
+  .desc = Содержимое стандартного ИРП морской пехоты. Это кокосовый батончик.
+ent-CMMREFoodSugarCookie = сахарное печенье
+  .desc = Содержимое стандартного ИРП морской пехоты. Это сахарное печенье.
+ent-CMMREFoodChocolateBrownie = шоколадный брауни
+  .desc = Содержимое стандартного ИРП морской пехоты. Это шоколадный брауни.
+ent-CMMREFoodSpicedApples = яблоки со специями
+  .desc = Содержимое стандартного ИРП морской пехоты. Это яблоки со специями.
+ent-CMMREComponentHoneyFlan = компонент ИРП (медовый флан)
+  .desc = Дополнительный компонент ИРП. Содержит сладкий десерт, который следует есть после основного блюда (или до, если ты бунтарь). Это медовый флан.
+ent-CMMREComponentFlan = компонент ИРП (флан)
+  .desc = Дополнительный компонент ИРП. Содержит сладкий десерт, который следует есть после основного блюда (или до, если ты бунтарь). Это флан.
+ent-CMMREComponentCocoBar = компонент ИРП (кокосовый батончик)
+  .desc = Дополнительный компонент ИРП. Содержит сладкий десерт, который следует есть после основного блюда (или до, если ты бунтарь). Это кокосовый батончик.
+ent-CMMREComponentSugarCookie = компонент ИРП (сахарное печенье)
+  .desc = Дополнительный компонент ИРП. Содержит сладкий десерт, который следует есть после основного блюда (или до, если ты бунтарь). Это сахарное печенье.
+ent-CMMREComponentChocolateBrownie = компонент ИРП (шоколадный брауни)
+  .desc = Дополнительный компонент ИРП. Содержит сладкий десерт, который следует есть после основного блюда (или до, если ты бунтарь). Это шоколадный брауни.
+ent-CMMREComponentSpicedApples = компонент ИРП (яблоки со специями)
+  .desc = Дополнительный компонент ИРП. Содержит сладкий десерт, который следует есть после основного блюда (или до, если ты бунтарь). Это яблоки со специями.
 
-  .desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious).
-ent-CMMREComponentSpicedApples = MRE component (spiced apples)
-  .desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is spiced apples.
-ent-CMMREComponentChocolateBrownie = MRE component (chocolate brownie)
-  .desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is a chocolate brownie.
-ent-CMMREComponentSugarCookie = MRE component (sugar cookie)
-  .desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is a sugar cookie.
-ent-CMMREComponentCocoBar = MRE component (coco bar)
-  .desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is a coco bar.
-ent-CMMREComponentFlan = MRE component (flan)
-  .desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is flan.
-ent-CMMREComponentHoneyFlan = MRE component (honey flan)
-  .desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is honey flan.
-ent-CMMREFoodSpicedApples = spiced apples
-  .desc = The contents of a Marine Standard issue MRE. This one is spiced apples.
-ent-CMMREFoodChocolateBrownie = chocolate brownie
-  .desc = The contents of a Marine Standard issue MRE. This one is a chocolate brownie.
-ent-CMMREFoodSugarCookie = sugar cookie
-  .desc = The contents of a Marine Standard issue MRE. This one is a sugar cookie.
-ent-CMMREFoodCocoBar = coco bar
-  .desc = The contents of a Marine Standard issue MRE. This one is a coco bar.
-ent-CMMREFoodFlan = flan
-  .desc = The contents of a Marine Standard issue MRE. This one is flan.
-ent-CMMREFoodHoneyFlan = honey flan
-  .desc = The contents of a Marine Standard issue MRE. This one is honey flan.
+
+
+
+
+
+
+
+
+
+
+

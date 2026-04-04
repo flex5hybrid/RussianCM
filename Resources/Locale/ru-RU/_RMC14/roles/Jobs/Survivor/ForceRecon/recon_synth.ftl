@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointForeconSynth = forecon synthetic spawn point
+ent-CMSpawnPointForeconSynth = Синтетическая точка появления Forecon

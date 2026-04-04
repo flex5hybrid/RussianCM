@@ -1,3 +1,4 @@
-
-ent-RMCPouchMedical = medical pouch
-  .desc = It can carry small medical supplies.
+ent-RMCPouchMedical = медицинский подсумок
+  .desc = Может переносить небольшие медицинские принадлежности.
+ent-RMCPouchMedicalFilled = медицинский подсумок
+  .desc = Может переносить небольшие медицинские принадлежности.

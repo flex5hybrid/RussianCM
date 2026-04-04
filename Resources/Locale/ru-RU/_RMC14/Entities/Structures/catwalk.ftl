@@ -1,12 +1,11 @@
-
-ent-CMCatwalk = catwalk
-  .desc = A catwalk for easier EVA maneuvering and cable placement.
-ent-RMCCatwalkHybrisa = solid metal grate
-ent-RMCCatwalkHybrisaLattice = structural lattice
-ent-RMCCatwalkHybrisaElevator = solid metal grate
-ent-RMCMonorailStraight = monorail track
-  .desc = The rail system for the CORSAT monorail.
-ent-RMCRailroadStraight = rails
-  .desc = Minecarts and rail vehicles go on these.
-ent-RMCRailroadBumper = rail bumpers
-  .desc = This (usually) stops minecarts and other rail vehicles at the end of a line of track.
+ent-RMCRailroadBumper = рельсовые отбойники
+  .desc = Это (обычно) останавливает вагонетки и другие железнодорожные транспортные средства в конце пути.
+ent-RMCRailroadStraight = рельсы
+  .desc = По ним ездят вагонетки и рельсовый транспорт.
+ent-RMCMonorailStraight = монорельсовая дорога
+  .desc = Рельсовая система для монорельсовой дороги CORSAT.
+ent-RMCCatwalkHybrisaElevator = твердая металлическая решетка
+ent-RMCCatwalkHybrisaLattice = структурная решетка
+ent-RMCCatwalkHybrisa = твердая металлическая решетка
+ent-CMCatwalk = подиум
+  .desc = Подиум для облегчения маневрирования в открытом космосе и прокладки кабеля.

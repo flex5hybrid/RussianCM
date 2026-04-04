@@ -1,3 +1,2 @@
-
-ent-RMCHospitalDivider = hospital divider
-  .desc = A hospital divider for privacy.
+ent-RMCHospitalDivider = больничная перегородка
+  .desc = Больничная перегородка для уединения.

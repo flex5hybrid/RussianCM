@@ -1,12 +1,11 @@
-
-ent-RMCArmorWebbingBase = armor webbing
-ent-RMCArmorWebbingDrum = drum armor webbing
-  .desc = A brown harness fitted with a pair of large pouches capable of carrying high-capacity drums and other large magazines.
-ent-RMCArmorWebbingMag = magazine armor webbing
-  .desc = A brown harness fitted with a set of four magazine pouches.
-ent-RMCArmorWebbingGrenade = grenade armor webbing
-  .desc = A brown harness fitted with an array of small pouches, capable of holding up to 6 grenades.
-ent-RMCArmorWebbingPouch = general armor webbing
-  .desc = A brown harness fitted with several small pouches, capable of carrying assorted small items.
-ent-RMCArmorWebbingShell = shell armor webbing
-  .desc = A brown harness fitted with a number of loops designed to hold loose shotgun shells.
+ent-RMCArmorWebbingBase-name = Броня лямки
+ent-RMCArmorWebbingDrum-name = барабан Броня лямка
+ent-RMCArmorWebbingDrum-desc = Коричневая упряжь с парой больших подсумков, в которых можно носить барабаны большой емкости и другие большие магазины.
+ent-RMCArmorWebbingMag-name = журнал Броня лямка
+ent-RMCArmorWebbingMag-desc = Коричневая подвесная система с набором из четырех подсумков для магазинов.
+ent-RMCArmorWebbingGrenade-name = граната Броня лямка
+ent-RMCArmorWebbingGrenade-desc = Коричневая обвязка с множеством небольших подсумков, вмещающих до 6 гранат.
+ent-RMCArmorWebbingPouch-name = общая лямка Броня
+ent-RMCArmorWebbingPouch-desc = Коричневая упряжь с несколькими небольшими сумками, в которых можно носить различные мелкие предметы.
+ent-RMCArmorWebbingShell-name = оболочка Броня лямка
+ent-RMCArmorWebbingShell-desc = Коричневая обвязка с несколькими петлями, предназначенными для удержания патронов для дробовика.

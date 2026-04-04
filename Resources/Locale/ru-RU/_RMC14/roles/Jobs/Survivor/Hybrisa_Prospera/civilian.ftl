@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorHybrisaCivilian = hybrisa civilian spawn point
-ent-RMCGearSurvivorPresetHybrisaCivilian = hybrisa civilian preset
+ent-RMCGearSurvivorPresetHybrisaCivilian = Гражданский пресет Hybrisa
+ent-RMCSpawnPointSurvivorHybrisaCivilian = гражданская точка появления гибриды

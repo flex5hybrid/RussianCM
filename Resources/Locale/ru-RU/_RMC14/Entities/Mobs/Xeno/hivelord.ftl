@@ -1,3 +1,6 @@
-
-ent-CMXenoHivelordBase = Hivelord
-  .desc = A builder of really big hives.
+ent-CMXenoHivelordBase = Повелитель улья
+  .desc = Строитель действительно больших ульев.
+ent-CMXenoHivelord = Повелитель улья
+  .desc = Строитель действительно больших ульев.
+ent-CMXenoHivelordResinWhisperer = Повелитель улья
+  .desc = Строитель действительно больших ульев.

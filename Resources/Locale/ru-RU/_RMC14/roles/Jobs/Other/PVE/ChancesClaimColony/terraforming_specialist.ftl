@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorChancesTerraformingSpecialist = terraforming specialist spawn point
-ent-RMCRandomHumanoidSurvivorChancesTerraformingSpecialist = terraforming specialist ghost role
+ent-RMCSpawnPointSurvivorChancesTerraformingSpecialist-name = точка спавна специалиста по терраформированию
+ent-RMCRandomHumanoidSurvivorChancesTerraformingSpecialist-name = Роль призрака специалиста по терраформированию

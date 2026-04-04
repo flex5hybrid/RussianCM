@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorGoon = survivor goon spawn point
+ent-RMCSpawnPointSurvivorGoon = точка спавна выжившего головореза

@@ -1,2 +1,1 @@
-
-ent-CMProjectileShrapnel = shrapnel
+ent-CMProjectileShrapnel = шрапнель

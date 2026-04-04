@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorLV624CorporateDomeGoonMedic = special survivor lv624 goon medic spawn point
-ent-RMCGearSurvivorPresetLV624CorporateDomeGoonMedic = lv624 colonist preset
+ent-RMCGearSurvivorPresetLV624CorporateDomeGoonMedic = Пресет колониста lv624
+ent-RMCSpawnPointSurvivorLV624CorporateDomeGoonMedic = специальный выживший lv624, головорез, медик, точка спавна

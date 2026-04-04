@@ -1,5 +1,2 @@
-
-ent-RMCLadder = ladder
-  .desc = A sturdy metal ladder.
-ent-RMCLadderRope = rope
-  .desc = A sturdy rope.
+ent-RMCLadder = лестница
+  .desc = Прочная металлическая лестница.

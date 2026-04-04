@@ -1,2 +1,0 @@
-ent-RMCSpawnPointSurvivorChancesEnvironmentalResearcher-name = точка появления исследователя окружающей среды
-ent-RMCRandomHumanoidSurvivorChancesEnvironmentalResearcher-name = Шансы: роль призрака исследователя окружающей среды

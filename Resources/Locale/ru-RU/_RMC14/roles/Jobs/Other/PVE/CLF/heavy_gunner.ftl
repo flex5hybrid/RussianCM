@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointCLFCHeavyGunnerPVE = clf heavy gunner spawn point
+ent-RMCSpawnPointCLFCHeavyGunnerPVE = Clf точка появления тяжелого стрелка

@@ -1,2 +1,1 @@
-
-ent-RMCProjectileTaser = taser bolt
+ent-RMCProjectileTaser = тазерный болт

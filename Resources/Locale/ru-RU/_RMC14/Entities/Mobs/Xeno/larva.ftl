@@ -1,4 +1,3 @@
-
+ent-RMCXenoEmbryo = инопланетный эмбрион
+  .desc = Весь покрыт отвратительной слизью.
 ent-CMXenoLarva = Личинка
-ent-RMCXenoEmbryo = alien embryo
-  .desc = All slimy and yucky.

@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointFORECONPVERifleman = forecon rifleman spawn point
+ent-RMCSpawnPointFORECONPVERifleman = точка появления стрелка Forecon

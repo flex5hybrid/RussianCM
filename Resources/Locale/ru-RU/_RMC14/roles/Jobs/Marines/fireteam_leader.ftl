@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointFireteamLeader = fireteam leader spawn point
+ent-CMSpawnPointFireteamLeader = точка появления лидера боевой группы

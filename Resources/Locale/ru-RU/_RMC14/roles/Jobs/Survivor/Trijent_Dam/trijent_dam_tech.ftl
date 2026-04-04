@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorTrijentDamTech = survivor dam maintenance technician spawn point
-ent-RMCGearSurvivorPresetTrijentDamTech = dam maintenance technician colonist preset
+ent-RMCGearSurvivorPresetTrijentDamTech = Предварительная настройка специалиста по обслуживанию плотин колониста
+ent-RMCSpawnPointSurvivorTrijentDamTech = Место появления специалиста по обслуживанию плотины выжившего

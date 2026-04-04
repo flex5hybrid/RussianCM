@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointPVESquadLeader = PVE squad leader spawn point
+ent-RMCSpawnPointPVESquadLeader = Точка появления лидера отряда PVE

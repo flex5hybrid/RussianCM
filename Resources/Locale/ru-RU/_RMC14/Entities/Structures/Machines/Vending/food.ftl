@@ -1,15 +1,8 @@
-
-ent-ColMarTechFood = ColMarTech food vendor
-  .desc = Marine Food Vendor, containing standard military Prepared Meals.
-ent-RMCNutriCoVendor = NutriCo AutoChef
-  .desc = An autochef food dispenser, capable of distributing food containing all the essential vitamins and nutrients anyone could ever need. Inedible-looking sludge is passed through a variety of heaters, re-shapers, and solidifiers before being artificially flavored to create something that looks and tastes mostly edible.
-ent-RMCNutriCoVendorRCM = We-Ya Section AutoChef
-  .desc = A repurposed NutriCo machine refilled with recipes and components for Three Suns Empire cuisine by Weston-Yamada. Equally as inedible as its Nations counterpart, but at least it looks more appealing. Slightly.
-ent-RMCVendorNutriCoFoodSPP = food dispenser
-  .desc = A food dispenser, capable of distributing food containing all the essential vitamins and nutrients anyone could ever need.
-ent-RMCVendorNutriCoFoodPMC = food dispenser
-  .desc = A food dispenser, capable of distributing food containing all the essential vitamins and nutrients anyone could ever need.
-ent-CMVendorBooze = Booze-O-Mat
-  .desc = A technological marvel, supposedly able to mix just the mixture you'd like to drink the moment you ask for one.
-ent-CMVendorChess = Chess-O-Mat
-  .desc = In 2107 Red Star Drinks, a SPP-CA (Colony Administration) affiliated corporation ran a promotional sweepstakes for drinkers who had found special codes on the inside of the caps of a limited run of Red Star Vodka, shipping them a Chess-O-Mat with unlimited refills.
+ent-CMVendorChess = Шахматы
+  .desc = В 2107 году Red Star Drinks, дочерняя корпорация SPP-CA (Администрация колонии), провела рекламный розыгрыш для пьющих, которые нашли специальные коды на внутренней стороне крышек водки Red Star, выпущенной ограниченным тиражом, и отправили им Chess-O-Mat с неограниченным количеством дозаправок.
+ent-CMVendorBooze = Выпивка-О-Мат
+  .desc = Технологическое чудо, предположительно способное приготовить именно ту смесь, которую вы хотите выпить, в тот момент, когда вы ее попросите.
+ent-RMCNutriCoVendor = НутриКо АвтоШеф
+  .desc = Диспенсер для еды autochef, способный раздавать еду, содержащую все необходимые витамины и питательные вещества, которые могут понадобиться каждому. 
+ent-ColMarTechFood = ColMarTech продавец продуктов питания
+  .desc = Морпех Продовольственный магазин, содержащий стандартные военные готовые блюда.

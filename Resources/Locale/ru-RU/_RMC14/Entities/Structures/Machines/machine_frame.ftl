@@ -1,2 +1,1 @@
-
-ent-RMCComputerFrameUnfinished = computer frame
+ent-RMCComputerFrameUnfinished = компьютерная рама

@@ -1,2 +1,1 @@
-
-ent-RMCFireAxe = fire axe
+ent-RMCFireAxe = пожарный топор

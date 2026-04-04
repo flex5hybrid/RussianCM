@@ -1,3 +1,2 @@
-
-ent-RMCRackParts = rack parts
-  .desc = A collapsable kit for a three-shelf rack with four telescoping legs. Some assembly required.
+ent-RMCRackParts = детали стеллажа
+  .desc = Складной комплект для трёхъярусного стеллажа с четырьмя телескопическими ножками. Требуется сборка.

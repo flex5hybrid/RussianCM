@@ -1,4 +1,3 @@
-
-ent-RMCSpawnPointSurvivorChancesCivilian = chances civilian spawn point
-ent-RMCRandomHumanoidSurvivorChancesCivilian = chances catering technician ghost role
-ent-RMCGearSurvivorPresetChancesCivilian = chances catering technician preset
+ent-RMCSpawnPointSurvivorChancesCivilian-name = Шанс на точку появления гражданских лиц
+ent-RMCRandomHumanoidSurvivorChancesCivilian-name = Шанс роль призрака кейтерингового специалиста
+ent-RMCGearSurvivorPresetChancesCivilian-name = Шансы, предустановленные настройки для специалиста по общественному питанию

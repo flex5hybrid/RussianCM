@@ -1,3 +1,2 @@
-
-ent-CMApcBase = area power controller
-  .desc = A control terminal for the area electrical systems.
+ent-CMApcBase = контроллер мощности зоны
+  .desc = Терминал управления электрическими системами территории.

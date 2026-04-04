@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorSolarisCorporateSupervisor = special survivor crashlanding offices coporate supervisor spawn point
+ent-RMCSpawnPointSurvivorSolarisCorporateSupervisor-name = специальные офисы аварийной посадки выживших, точка появления супервайзера компании

@@ -1,2 +1,2 @@
-
-ent-RMCSpawnPointSurvivorLV624SecurityGuard = survivor lv624 weya secguard spawn point
+ent-RMCGearSurvivorPresetLV624SecurityGuard = lv624 пресет охранника-колониста
+ent-RMCSpawnPointSurvivorLV624SecurityGuard = Survivor lv624 точка спавна охранника

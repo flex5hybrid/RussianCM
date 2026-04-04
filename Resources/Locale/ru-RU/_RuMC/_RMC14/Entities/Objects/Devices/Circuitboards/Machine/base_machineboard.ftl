@@ -1,1 +1,0 @@
-ent-CMBaseMachineCircuitboard = машинная плата

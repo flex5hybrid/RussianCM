@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorMoHDoctor = ministry of health doctor spawn point
-ent-RMCGearSurvivorPresetMoHDoctor = ministry of health doctor preset
+ent-RMCGearSurvivorPresetMoHDoctor = Предварительная настройка врача Министерства здравоохранения
+ent-RMCSpawnPointSurvivorMoHDoctor = Место появления врачей Министерства здравоохранения

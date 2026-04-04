@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorCrashlandingOfficesMedic = special survivor crashlanding offices pmc medic spawn point
+ent-RMCSpawnPointSurvivorCrashlandingOfficesMedic-name = Специальный офис аварийной посадки выжившего ЧВК точка спавна медика

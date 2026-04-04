@@ -1,5 +1,6 @@
-
-ent-RMCHandcuffs = handcuffs
-  .desc = Use this to keep prisoners in line.
-ent-RMCZipties = zipties
-  .desc = Tough single-use plastic zipties, ideal for restraining rowdy prisoners.
+ent-RMCBoxZiptie = коробка стяжек
+  .desc = Коробка, полная стяжек.
+ent-RMCZipties = стяжки
+  .desc = Прочные одноразовые пластиковые стяжки, идеально подходящие для усмирения буйных заключённых.
+ent-RMCHandcuffs = наручники
+  .desc = Используются для поддержания порядка среди заключённых.

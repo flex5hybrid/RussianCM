@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorLV624MedicalTechnician = survivor lv624 medical technician spawn point
-ent-RMCGearSurvivorPresetLV624MedicalTechnician = lv624 medical technician colonist preset
+ent-RMCGearSurvivorPresetLV624MedicalTechnician = lv624 пресет медицинского техника-колониста
+ent-RMCSpawnPointSurvivorLV624MedicalTechnician = выживший lv624 точка появления медицинского техника

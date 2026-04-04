@@ -1,14 +1,13 @@
-
-ent-RMCWeaponRevolverSpearhead = CMB Spearhead autorevolver
-  .desc = A bulky revolver, occasionally carried by assault troops and officers in the Marine Corps, as well as civilian law enforcement. Fires .357 Magnum rounds.
-ent-RMCWeaponRevolverSpearheadCustom = Spearhead custom autorevolver
-  .desc = An automatic revolver chambered in .357, custom made of darker metal and with a wooden handle, clearly made for a person with taste in mind.
-ent-RMCBaseSpeedLoader357 = Speed loader (.357)
-ent-RMCSpeedLoader357 = Speed loader (.357)
-  .desc = A revolver speed loader.
-ent-RMCSpeedLoader357Hollowpoint = hollowpoint speed loader (.357)
-  .desc = A revolver speed loader filled with Hollowpoint ammo.
-ent-RMCCartridgeRevolver357 = cartridge (.357)
-ent-RMCCartridgeRevolver357Hollowpoint = cartridge (.357) Hollowpoint
-ent-RMCBulletRevolver357 = bullet (.357)
-ent-RMCBulletRevolver357Hollowpoint = bullet (.357) Hollowpoint
+ent-RMCBulletRevolver357Hollowpoint = пуля (.357) экспансивная
+ent-RMCBulletRevolver357 = пуля (.357)
+ent-RMCCartridgeRevolver357Hollowpoint = патрон (.357) экспансивный
+ent-RMCCartridgeRevolver357 = патрон (.357)
+ent-RMCSpeedLoader357Hollowpoint = Спидлоадер экспансивными (.357)
+  .desc = Револьверный спидлоадер, снаряженный экспансивными патронами.
+ent-RMCSpeedLoader357 = Спидлоадер (.357)
+  .desc = Револьверный спидлоадер.
+ent-RMCBaseSpeedLoader357 = Спидлоадер (.357)
+ent-RMCWeaponRevolverSpearheadCustom = Кастомный авторевольвер "Спирхед"
+  .desc = Автоматический револьвер под патрон .357, изготовленный на заказ из темного металла с деревянной рукоятью, явно созданный для человека со вкусом.
+ent-RMCWeaponRevolverSpearhead = Авторевольвер КМП "Спирхед"
+  .desc = Массивный револьвер, который иногда носят штурмовые подразделения и офицеры в Корпусе Морской Пехоты, а также сотрудники гражданских правоохранительных органов. Использует патроны .357 Magnum.

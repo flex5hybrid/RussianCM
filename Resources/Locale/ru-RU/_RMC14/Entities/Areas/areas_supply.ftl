@@ -1,5 +1,4 @@
-
-ent-RMCAreaSupplyStation = Supply Shuttle
-ent-RMCAreaSupplyDock = Supply Shuttle
-ent-RMCAreaSupplyStationVehicle = Vehicle ASRS
-ent-RMCAreaSupplyDockVehicle = Vehicle ASRS
+ent-RMCAreaSupplyDockVehicle = Автомобиль АСРС
+ent-RMCAreaSupplyStationVehicle = Автомобиль АСРС
+ent-RMCAreaSupplyDock = Шаттл снабжения
+ent-RMCAreaSupplyStation = Шаттл снабжения

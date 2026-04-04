@@ -1,3 +1,2 @@
-
-ent-RMCBoonie = UNMC boonie hat
-  .desc = A floppy bush hat. Protects only from the sun and rain, but very comfortable.
+ent-RMCBoonie = шляпа-боуни КМП
+  .desc = Мягкая походная шляпа. Защищает только от солнца и дождя, но очень удобна.

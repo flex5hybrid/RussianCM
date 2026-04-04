@@ -1,5 +1,4 @@
-
-ent-RMCSpawnerRandomClothingBase = gun spawner
-  .desc = spawns a random clothing item
-ent-RMCSpawnerRandomGoggles = goggles loot spawner
-  .desc = This is a random set of goggles, for survivors.
+ent-RMCSpawnerRandomGoggles = спавнер лута в очках
+  .desc = Это случайный набор очков для выживших.
+ent-RMCSpawnerRandomClothingBase = генератор оружия
+  .desc = порождает случайный предмет одежды

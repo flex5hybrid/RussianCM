@@ -1,13 +1,6 @@
-
-ent-RMCWeaponFlamer = M34 incinerator unit
-  .desc = The M34 incinerator unit has proven to be one of the most effective weapons at clearing out soft-targets. This is a weapon to be feared and respected as it is quite deadly.
-ent-RMCTankFlamer = M34 incinerator tank
-  .desc = A fuel tank used to store fuel for use in the M34 incinerator unit. Handle with care.
-ent-RMCTankFlamerCustom = M34 custom incinerator tank
-  .desc = A fuel tank for use in the M34 incinerator unit.
-ent-RMCTankFlamerBGel = M34 incinerator tank (B-Gel)
-  .desc = A fuel tank full of specialized Ultra Thick Napthal Fuel type B-Gel, a gelled variant of napalm that is easily extinguished, but shoots further and lingers for longer. Handle with exceptional care.
-ent-RMCTankFlamerUpgraded = M34 upgraded incinerator tank
-  .desc = A fuel tank for use in the M34 incinerator unit. This one has been modified with a larger and more sophisticated internal propellant tank, allowing for larger capacity and stronger fuels.
-ent-RMCCaseFlamer = M34 incinerator case
-  .desc = A gun case containing the M34 incinerator unit. It does come loaded, but you'll still have to find extra tanks as you go.
+ent-RMCCaseFlamer = кейс для огнемёта M34
+  .desc = Кейс с огнемётом M34. Оружие заряжено, но дополнительные баки придётся искать по ходу дела.
+ent-RMCTankFlamer = топливный бак огнемёта
+  .desc = Топливный бак, используемый для хранения горючего для огнемёта M34. Обращаться с осторожностью.
+ent-RMCWeaponFlamer = огнемёт M34
+  .desc = Огнемёт M34 доказал свою эффективность как одно из самых действенных средств против незащищённых целей. Это оружие, которого стоит бояться и уважать, поскольку оно чрезвычайно смертоносно.

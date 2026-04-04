@@ -1,5 +1,4 @@
-
-ent-RMCWindowSPPReinforced = military grade window
-  .desc = A glass window. Light refracts incorrectly when looking through. It looks rather strong. Might take a few good hits to shatter it.
-ent-RMCWindowSPPHull = hull window
-  .desc = A glass window. Something tells you this one is somehow indestructible.
+ent-RMCWindowSPPHull = окно корпуса
+  .desc = Стеклянное окно. 
+ent-RMCWindowSPPReinforced = окно военного назначения
+  .desc = Стеклянное окно. 

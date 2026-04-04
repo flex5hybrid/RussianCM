@@ -1,4 +1,1 @@
-
-ent-CMSpawnPointCombatTech = combat tech spawn point
-ent-RMCGuidebookRoleCT = Combat Technician
-  .desc = Combat Technician
+ent-CMSpawnPointCombatTech = точка появления боевых технологий

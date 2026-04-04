@@ -1,3 +1,2 @@
-
-ent-RMCBannerSteveBirthday = Happy Birthday Steve banner
-  .desc = A depressing looking paper banner wishing someone named Steve a happy birth ay.
+ent-RMCBannerSteveBirthday-name = С днем ​​рождения, Стив, баннер
+ent-RMCBannerSteveBirthday-desc = Удручающе выглядящий бумажный баннер с пожеланиями счастливого рождения человеку по имени Стив.

@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorCMBDeputy = survivor cmb deputy spawn point
-ent-RMCGearSurvivorPresetCMBDeputy = cmb deputy colonist preset
+ent-RMCGearSurvivorPresetCMBDeputy = Предустановленные настройки заместителя колониста cmb
+ent-RMCSpawnPointSurvivorCMBDeputy = точка возрождения заместителя CMB выжившего

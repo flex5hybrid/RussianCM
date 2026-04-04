@@ -1,3 +1,2 @@
-
-ent-CMBeltBase = belt
-  .desc = Can hold various things.
+ent-CMBeltBase = пояс
+  .desc = Может содержать различные вещи

@@ -1,7 +1,4 @@
-
+ent-RMCGuidebookActionFocus = Приказ на повышение фокуса
+ent-RMCGuidebookActionHold = Приказ на удержание позиций
+ent-RMCGuidebookActionMove = Приказ на ускоренное передвижение
 ent-CMSpawnPointSquadLeader = squad leader spawn point
-ent-RMCGuidebookRoleSL = The Squad Leader
-  .desc = The Squad Leader
-ent-RMCGuidebookActionMove = Move order
-ent-RMCGuidebookActionHold = Hold order
-ent-RMCGuidebookActionFocus = Focus order

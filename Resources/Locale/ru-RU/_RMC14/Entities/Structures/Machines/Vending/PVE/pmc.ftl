@@ -1,5 +1,4 @@
-
-ent-RMCColMarTechSurplusPMCPVE = PMC Uniform Vendor
-  .desc = An automated rack hooked up to a small storage of standard PMC uniforms.
-ent-RMCColMarTechUtilitiesPMCPVE = PMC Automated Utilities Squad Vendor
-  .desc = An automated supply rack hooked up to a small storage of various utilities and tools. Can be accessed by any PMC Operator.
+ent-RMCColMarTechSurplusPMCPVE-name = Поставщик униформы ЧВК
+ent-RMCColMarTechSurplusPMCPVE-desc = Автоматизированный стеллаж, подключенный к небольшому складу стандартной формы ЧВК.
+ent-RMCColMarTechUtilitiesPMCPVE-name = Поставщик подразделения автоматизированных коммунальных услуг PMC
+ent-RMCColMarTechUtilitiesPMCPVE-desc = Автоматизированный стеллаж для снабжения, соединенный с небольшим хранилищем различных утилит и инструментов. 

@@ -1,3 +1,2 @@
-
-ent-WeaponShotgunM357 = M357 Rival
-  .desc = A double barrel shotgun produced by AEGIS. Archaic, sturdy, affordable. Only holds two 12g shells at a time.
+ent-WeaponShotgunM357Sawn = обрез M357 «Ривал»
+  .desc = Двухствольный дробовик производства Aegis. Архаичный, прочный, доступный. Искусственно укорочен для уменьшения дальности, но увеличения урона и разброса.

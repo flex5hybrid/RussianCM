@@ -1,3 +1,2 @@
-
-ent-CMGraffitiYellowSign = strange symbol
-  .desc = Have you seen the yellow sign?
+ent-CMGraffitiYellowSign-name = странный символ
+ent-CMGraffitiYellowSign-desc = Вы видели желтый знак?

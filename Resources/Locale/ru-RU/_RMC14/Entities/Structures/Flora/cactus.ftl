@@ -1,3 +1,2 @@
-
-ent-RMCCactus = cactus
-  .desc = It's a small, spiky cactus.
+ent-RMCCactus = кактус
+  .desc = Это небольшой колючий кактус.

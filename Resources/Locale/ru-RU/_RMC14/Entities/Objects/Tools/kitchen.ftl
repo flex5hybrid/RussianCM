@@ -1,11 +1,10 @@
-
-ent-RMCRollingPin = rolling pin
-  .desc = Used to knock out the Bartender.
-ent-RMCFork = fork
-  .desc = It's a fork. Sure is pointy.
-ent-RMCForkPlastic = plastic fork
-  .desc = Yay, no washing up to do.
-ent-RMCSpoon = spoon
-  .desc = It's a spoon. You can see your own upside-down face in it.
-ent-RMCSpoonPlastic = plastic spoon
-  .desc = It's a plastic spoon. How dull.
+ent-RMCSpoonPlastic = пластиковая ложка
+  .desc = Это пластиковая ложка. Как скучно.
+ent-RMCSpoon = ложка
+  .desc = Это ложка. В ней можно увидеть своё перевёрнутое отражение.
+ent-RMCForkPlastic = пластиковая вилка
+  .desc = Ура, не нужно мыть посуду.
+ent-RMCFork = вилка
+  .desc = Это вилка. Определённо острая.
+ent-RMCRollingPin = скалка
+  .desc = Используется, чтобы вырубить Бармена.

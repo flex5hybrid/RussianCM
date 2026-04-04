@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorSolarisTrucker = solaris trucker spawn point
+ent-RMCSpawnPointSurvivorSolarisTrucker-name = Точка возрождения дальнобойщика Соляриса

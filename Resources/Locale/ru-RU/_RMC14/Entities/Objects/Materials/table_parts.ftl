@@ -1,14 +1,13 @@
-
-ent-RMCTablePartBase = table parts
-  .desc = A kit for a table, including a large, flat metal surface and four legs. Some assembly required.
-ent-RMCTablePartTan = tan table parts
-ent-RMCTablePartReinforced = reinforced table parts
-  .desc = A kit for a table, including a large, flat metal surface and four legs. This kit has side panels. Some assembly required.
-ent-RMCTablePartWood = wooden table parts
-  .desc = A kit for a table, including a large, flat wooden surface and four legs. Some assembly required.
-ent-RMCTablePartWoodPoor = poor wooden table parts
-  .desc = A kit for a poorly crafted table, including a large, flat wooden surface and four legs. Some assembly required.
-ent-RMCTablePartWoodFancy = fancy wooden table parts
-  .desc = A kit for a finely crafted mahogany table, including a large, flat wooden surface and four legs. Some assembly required.
-ent-RMCTablePartGambling = gambling table parts
-ent-RMCTablePartAlmayer = gray table parts
+ent-RMCTablePartAlmayer = детали серого стола
+ent-RMCTablePartGambling = детали игрового стола
+ent-RMCTablePartWoodFancy = детали роскошного деревянного стола
+  .desc = Комплект для изысканного стола из красного дерева, включающий большую плоскую деревянную поверхность и четыре ножки. Требуется сборка.
+ent-RMCTablePartWoodPoor = детали простого деревянного стола
+  .desc = Комплект для грубо сделанного стола, включающий большую плоскую деревянную поверхность и четыре ножки. Требуется сборка.
+ent-RMCTablePartWood = детали деревянного стола
+  .desc = Комплект для стола, включающий большую плоскую деревянную поверхность и четыре ножки. Требуется сборка.
+ent-RMCTablePartReinforced = детали усиленного стола
+  .desc = Комплект для стола, включающий большую плоскую металлическую поверхность и четыре ножки. В этот комплект входят боковые панели. Требуется сборка.
+ent-RMCTablePartTan = детали бежевого стола
+ent-RMCTablePartBase = детали стола
+  .desc = Комплект для стола, включающий большую плоскую металлическую поверхность и четыре ножки. Требуется сборка.

@@ -1,6 +1,5 @@
-
-ent-RMCWeaponBoltActionRifle = Basira-Armstrong bolt-action hunting rifle
-  .desc = Named after its eccentric designers, the Basira-Armstrong is a cheap but reliable civilian bolt-action rifle frequently found in the outer colonies. Despite its legally-mandated limited magazine capacity, its light weight and legendary accuracy makes it popular among hunters and competitive shooters.
-ent-RMCMagazineRifleHunting = Basira-Armstrong magazine (6.5mm)
-ent-RMCCartridgeBoltActionRifle = Cartridge (5.56x45)
-  .desc = A Cartridge for the Basira-Armstrong hunting rifle. Compliant with the 15-cartridge limit on civilian hunting rifles.
+ent-RMCCartridgeBoltActionRifle = патрон (5.56x45)
+  .desc = Патрон для охотничьей винтовки «Басира-Армстронг». Соответствует ограничению в 15 патронов для гражданских охотничьих винтовок.
+ent-RMCMagazineRifleHunting = магазин для «Басира-Армстронг» (6.5мм)
+ent-RMCWeaponBoltActionRifle = охотничья винтовка с продольно-скользящим затвором «Басира-Армстронг»
+  .desc = Названная в честь своих эксцентричных создателей, «Басира-Армстронг» — это дешёвая, но надёжная гражданская винтовка с продольно-скользящим затвором, часто встречающаяся во внешних колониях. Несмотря на ограниченную по закону ёмкость магазина, её лёгкий вес и легендарная точность делают её популярной среди охотников и спортивных стрелков.

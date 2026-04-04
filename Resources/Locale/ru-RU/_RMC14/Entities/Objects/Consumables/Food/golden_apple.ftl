@@ -1,3 +1,2 @@
-
-ent-RMCFoodGoldenApple = golden apple
-  .desc = Emblazoned upon the apple is the word 'Kallisti'.
+ent-RMCFoodGoldenApple = золотое яблоко
+  .desc = На яблоке выведено слово «Каллисти».

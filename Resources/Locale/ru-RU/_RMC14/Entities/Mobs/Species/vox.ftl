@@ -1,2 +1,2 @@
-
-ent-CMMobVox = Urist C.M McVox
+ent-CMMobVox = Морпех Урист Вокс
+ent-CMMobVox-name =  Морпех Урист Вокс

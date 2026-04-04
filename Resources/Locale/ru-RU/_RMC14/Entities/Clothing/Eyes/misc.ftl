@@ -1,3 +1,1 @@
-
-ent-RMCEyepatchWhite = eyepatch
-  .desc = Yarr.
+ent-RMCEyepatchWhite = наглазник

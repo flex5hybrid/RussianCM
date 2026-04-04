@@ -1,7 +1,6 @@
-
-ent-RMCCrateGearBinoculars = mixed binoculars crate (2x per, 6x total)
-ent-RMCCrateGearPackFlare = flare packs crate (x20)
-ent-RMCCrateGearMotionDetector = motion detector crate (x2)
-ent-RMCCrateGearPackFlareCAS = signal flare packs crate (x4)
-ent-RMCCrateGearFulton = fulton recovery device crate (x4)
-ent-RMCCrateGearParachute = parachute crate (x20)
+ent-RMCCrateGearParachute = ящик парашютов (x20)
+ent-RMCCrateGearFulton = ящик устройств подъёма Фултона (x4)
+ent-RMCCrateGearPackFlareCAS = ящик наборов сигнальных ракет (x4)
+ent-RMCCrateGearMotionDetector = ящик детекторов движения (x2)
+ent-RMCCrateGearPackFlare = ящик наборов сигнальных ракет (x20)
+ent-RMCCrateGearBinoculars = ящик биноклей (2x каждого, 6x всего)

@@ -1,4 +1,1 @@
-
-ent-CMClipboard = clipboard
-ent-RMCWeYaClipboard = Weston-Yamada clipboard
-  .desc = A branded clipboard, perfect for keeping your forms in order.
+ent-CMClipboard = планшет с зажимом

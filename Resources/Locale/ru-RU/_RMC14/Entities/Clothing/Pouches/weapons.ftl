@@ -1,7 +1,6 @@
-
-ent-RMCPouchBayonet = bayonet sheath
-  .desc = Knife to meet you!
-ent-RMCPouchPistol = sidearm pouch
-  .desc = You could carry a pistol in this; more importantly, you could draw it quickly. Useful for emergencies.
-ent-RMCPouchMachete = H6B pattern M2132 machete pouch
-  .desc = A large leather pouch used to carry a M2132 machete. It can be strapped to the pouch slot.
+ent-RMCPouchMachete = подсумок для мачете M2132 схемы H6B
+  .desc = Большой кожаный подсумок для ношения мачете M2132. Можно прикрепить к слоту для подсумка.
+ent-RMCPouchPistol = подсумок для пистолета
+  .desc = В этом можно носить пистолет; что более важно, его можно быстро извлечь. Полезно в чрезвычайных ситуациях.
+ent-RMCPouchBayonet = ножны для штыка
+  .desc = Нож, чтобы встретить тебя!

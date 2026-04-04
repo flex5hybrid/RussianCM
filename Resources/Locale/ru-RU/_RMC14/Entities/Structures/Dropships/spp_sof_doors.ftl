@@ -1,2 +1,1 @@
-
-ent-CMSPPSOFCockpit = voron crew hatch
+ent-CMSPPSOFCockpit-name = люк экипажа ворон

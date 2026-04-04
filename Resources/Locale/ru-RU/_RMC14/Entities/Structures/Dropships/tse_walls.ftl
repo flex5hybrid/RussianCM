@@ -1,2 +1,1 @@
-
-ent-RMCBaseTSEDropshipWall = UD4-UK wall
+ent-RMCBaseTSEDropshipWall-name = UD4-UK стенка

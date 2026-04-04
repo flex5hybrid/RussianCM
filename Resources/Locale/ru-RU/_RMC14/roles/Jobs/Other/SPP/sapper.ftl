@@ -1,3 +1,2 @@
-
-ent-RMCRandomHumanoidSPPEngineerHostile = spp ghost role engineer
-ent-RMCRandomHumanoidSPPEngineerFriendly = spp ghost role engineer
+ent-RMCRandomHumanoidSPPEngineerFriendly = инженер роли призрака spp
+ent-RMCRandomHumanoidSPPEngineerHostile = инженер роли призрака spp

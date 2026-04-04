@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorISR = survivor isr spawn point
+ent-RMCSpawnPointSurvivorISR = точка появления выжившего в ISR

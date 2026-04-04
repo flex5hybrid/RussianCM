@@ -1,9 +1,8 @@
-
-ent-RMCInflatableWall = inflatable wall
-  .desc = An inflated membrane. Activate to deflate. Do not puncture.
-ent-RMCInflatableDoor = inflatable door
-  .desc = An inflated membrane. Activate to deflate. Now with a door. Do not puncture.
-ent-RMCInflatableWallBroken = popped inflatable wall
-  .desc = This used to be an inflatable wall, now it's just a mess of plastic.
-ent-RMCInflatableDoorBroken = popped inflatable door
-  .desc = This used to be an inflatable door, now it's just a mess of plastic.
+ent-RMCInflatableDoorBroken = лопнувшая надувная дверь
+  .desc = Раньше это была надувная дверь, а теперь это просто кусок пластика.
+ent-RMCInflatableWallBroken = лопнувшая надувная стена
+  .desc = Раньше это была надувная стена, а теперь это просто кусок пластика.
+ent-RMCInflatableDoor = надувная дверь
+  .desc = Надутая мембрана. 
+ent-RMCInflatableWall = надувная стена
+  .desc = Надутая мембрана. 

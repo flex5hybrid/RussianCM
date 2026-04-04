@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorFireProtectionSpecialist = fire protection specialist spawn point
-ent-RMCGearSurvivorPresetFireProtectionSpecialist = fire protection specialist preset
+ent-RMCGearSurvivorPresetFireProtectionSpecialist = Предварительная настройка специалиста по пожарной безопасности
+ent-RMCSpawnPointSurvivorFireProtectionSpecialist = Место появления специалиста по пожарной безопасности

@@ -1,8 +1,7 @@
-
-ent-RMCRandomHumanoidFoxtrotCombatTech = foxtrot ghost role combat technician
-ent-RMCRandomHumanoidFoxtrotFireteamLeader = foxtrot ghost role fireteam leader
-ent-RMCRandomHumanoidFoxtrotHospitalCorpsman = foxtrot ghost role hospital corpsman
-ent-RMCRandomHumanoidFoxtrotRifleman = foxtrot ghost role rifleman
-ent-RMCRandomHumanoidFoxtrotSmartGunOperator = foxtrot ghost role smart gun operator
-ent-RMCRandomHumanoidFoxtrotSquadLeader = foxtrot ghost role squad leader
-ent-RMCRandomHumanoidFoxtrotWeaponsSpecialist = foxtrot ghost role weapons specialist
+ent-RMCRandomHumanoidFoxtrotWeaponsSpecialist = фокстрот специалист по оружию в роли призрака
+ent-RMCRandomHumanoidFoxtrotSquadLeader = фокстрот роль призрака командир отряда
+ent-RMCRandomHumanoidFoxtrotSmartGunOperator = фокстрот роль призрака оператор умного оружия
+ent-RMCRandomHumanoidFoxtrotRifleman = фокстрот роль призрака стрелок
+ent-RMCRandomHumanoidFoxtrotHospitalCorpsman = фокстрот роль призрака санитар больницы
+ent-RMCRandomHumanoidFoxtrotFireteamLeader = фокстрот роль призрака командир боевой группы
+ent-RMCRandomHumanoidFoxtrotCombatTech = фокстрот роль призрака боевой техник

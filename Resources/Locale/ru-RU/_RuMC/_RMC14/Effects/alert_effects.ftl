@@ -1,1 +1,0 @@
-ent-RMCActiveAlertEffect-name = восклицание

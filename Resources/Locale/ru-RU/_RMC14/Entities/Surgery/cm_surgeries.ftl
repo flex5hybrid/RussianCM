@@ -1,8 +1,7 @@
-
-ent-CMSurgeryOpenIncision = Open Incision
-ent-CMSurgeryCloseIncision = Close Incision
-ent-CMSurgeryOpenRibcage = Open Ribcage
-ent-CMSurgeryAlienEmbryoRemoval = Alien Embryo Removal
-  .desc = Removal of an alien embryo from the body.
-ent-RMCSurgeryAlienHeartRemoval = Experimental Harvesting Surgery
-  .desc = Harvest the heart of an deceased alien.
+ent-RMCSurgeryAlienHeartRemoval = Экспериментальная операция по извлечению
+  .desc = Извлечь сердце умершего пришельца.
+ent-CMSurgeryAlienEmbryoRemoval = Удаление инопланетного эмбриона
+  .desc = Удаление инопланетного эмбриона из тела.
+ent-CMSurgeryOpenRibcage = Вскрыть грудную клетку
+ent-CMSurgeryCloseIncision = Закрыть разрез
+ent-CMSurgeryOpenIncision = Открыть разрез

@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorFiorinaResearcher = survivor fiorina researcher spawn point
+ent-RMCSpawnPointSurvivorFiorinaResearcher = точка возрождения выжившего исследователя Фиорины

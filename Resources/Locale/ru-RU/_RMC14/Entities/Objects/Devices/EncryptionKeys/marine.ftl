@@ -1,11 +1,10 @@
-
-ent-CMEncryptionKeySquadLeader = squad leader's encryption key
-ent-CMEncryptionKeyAlpha = alpha encryption key
-ent-CMEncryptionKeyBravo = bravo encryption key
-ent-CMEncryptionKeyCharlie = charlie encryption key
-ent-CMEncryptionKeyDelta = delta encryption key
-ent-CMEncryptionKeyEcho = echo encryption key
-ent-CMEncryptionKeyFoxtrot = foxtrot encryption key
-ent-CMEncryptionKeySOF = sof's encryption key
-ent-RMCEncryptionKeyFORECON = forecon encryption key
-ent-RMCEncryptionKeySunRiders = sun riders encryption key
+ent-RMCEncryptionKeySunRiders = ключ шифрования «Санрайдерс»
+ent-RMCEncryptionKeyFORECON = ключ шифрования ФОРЭКОН
+ent-CMEncryptionKeySOF = ключ шифрования ССО
+ent-CMEncryptionKeyFoxtrot = ключ шифрования «Фокстрот»
+ent-CMEncryptionKeyEcho = ключ шифрования «Эхо»
+ent-CMEncryptionKeyDelta = ключ шифрования «Дельта»
+ent-CMEncryptionKeyCharlie = ключ шифрования «Чарли»
+ent-CMEncryptionKeyBravo = ключ шифрования «Браво»
+ent-CMEncryptionKeyAlpha = ключ шифрования «Альфа»
+ent-CMEncryptionKeySquadLeader = ключ шифрования командира отделения

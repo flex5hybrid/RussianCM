@@ -1,5 +1,4 @@
-
-ent-RMCTankReagentEmpty = reagent tank
-  .desc = A reagent tank, typically used to store large quantities of chemicals.
-ent-RMCTankReagentFuel = fuel tank
-  .desc = A fuel tank, normally used to hold welding fuel. It's painted red with explosive warning labels.
+ent-RMCTankReagentFuel = топливный бак
+  .desc = Топливный бак, обычно используемый для хранения сварочного топлива. 
+ent-RMCTankReagentEmpty = бак для реагентов
+  .desc = Резервуар для реагентов, обычно используемый для хранения большого количества химикатов.

@@ -1,2 +1,1 @@
-
-ent-RMCRandomHumanoidRoyalMarinesBreacher = royal crown marines ghost role breacher
+ent-RMCRandomHumanoidRoyalMarinesBreacher-name = Нарушитель роли призрака морской пехоты королевской короны

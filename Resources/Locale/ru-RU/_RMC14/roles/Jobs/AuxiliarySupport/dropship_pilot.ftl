@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointPilotDropship = dropship pilot spawn point
+ent-CMSpawnPointPilotDropship = точка появления пилота десантного корабля

@@ -1,4 +1,3 @@
-
-ent-RMCSpawnPointSurvivorScientist = survivor scientist spawn point
-ent-RMCSurvivorPresetScientist = scientist colonist preset
-ent-RMCRandomHumanoidSurvivorScientist = scientist colonist ghost role
+ent-RMCRandomHumanoidSurvivorScientist = роль призрака ученого-колониста
+ent-RMCSurvivorPresetScientist = предустановка ученого-колониста
+ent-RMCSpawnPointSurvivorScientist = точка возрождения выжившего учёного

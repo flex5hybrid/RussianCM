@@ -1,2 +1,1 @@
-
-ent-RMCCartridge458SOCOM = handful of .458 SOCOM bullets
+ent-RMCCartridge458SOCOM = горсть патронов .458 SOCOM

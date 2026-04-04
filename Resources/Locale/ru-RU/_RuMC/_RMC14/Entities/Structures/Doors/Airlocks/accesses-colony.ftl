@@ -1,1 +1,0 @@
-ent-RMCAirlockGlassSecurityLockedTSEPAAlt = шлюзовая камера

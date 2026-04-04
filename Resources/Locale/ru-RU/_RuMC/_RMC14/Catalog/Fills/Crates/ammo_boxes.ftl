@@ -1,5 +1,0 @@
-ent-RMCCrateBoxAmmo458 = Ящик патронов .458 (300 шт.)
-ent-RMCCrateBoxShellsShotgunBreaching = Ящик патронов (120 пробивных)
-ent-RMCCrateBoxShellsShotgunFlechette = Ящик патронов (100 флешшет)
-ent-RMCCrateBoxShellsShotgunBuckshot = Ящик патронов (100 картечи)
-ent-RMCCrateBoxShellsShotgunSlugs = Ящик патронов (100 пуль)

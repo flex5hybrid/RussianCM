@@ -1,2 +1,1 @@
-
-ent-RMCActionOpenTacticalMap = Open Tactical Map
+ent-RMCActionOpenTacticalMap = Открыть тактическую карту

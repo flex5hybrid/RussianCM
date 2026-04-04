@@ -1,3 +1,2 @@
-
-ent-RMCVialBox = vial storage box
-  .desc = A place to store your fragile vials when you are not using them.
+ent-RMCVialBox = коробка для хранения пробирок
+  .desc = Место для хранения ваших хрупких пробирок, когда вы их не используете.

@@ -1,9 +1,0 @@
-ent-RMCCarpetBlack1 = черный ковер
-ent-RMCCarpetPink1 = розовый ковер
-ent-RMCCarpetGreyBlue1 = серо-синий ковер
-ent-RMCCarpetBeige1 = бежевый ковер
-ent-RMCCarpetBlue1 = синий ковер
-ent-RMCCarpetBaseNonIconsmooth = ковер
-  .desc = Необычная поверхность для ходьбы.
-ent-CMCarpetBase = ковер
-  .desc = Необычная поверхность для ходьбы.

@@ -1,4 +1,3 @@
-
-ent-RMCExplosiveClaymoreMine = M20 Claymore anti-personnel mine
-  .desc = The M20 Claymore is a directional proximity-triggered anti-personnel mine designed by Aegis Armaments for use by the UNMC. The mine is triggered by movement on the space immediately in front of it. Detonation sprays shrapnel forwards in a 120-degree cone. The words "FRONT TOWARD ENEMY" are embossed on the front.
-ent-RMCShrapnel = shrapnel
+ent-RMCExplosiveClaymoreMine-name = Противопехотная мина M20 Claymore
+ent-RMCExplosiveClaymoreMine-desc = M20 Claymore — это противопехотная мина направленного действия с неконтактным срабатыванием, разработанная компанией Aegis Armaments для использования UNMC. 
+ent-RMCShrapnel-name = шрапнель

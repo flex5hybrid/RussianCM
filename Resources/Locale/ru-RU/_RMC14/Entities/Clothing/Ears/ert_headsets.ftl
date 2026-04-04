@@ -1,2 +1,1 @@
-
-ent-RMCHeadsetDistressICBLiaison = ICB liaison headset
+ent-RMCHeadsetDistressICBLiaison = ICB гарнитура юриста

@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointDCC = dropship crew chief spawn point
+ent-CMSpawnPointDCC = Место появления начальника экипажа десантного корабля

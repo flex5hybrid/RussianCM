@@ -1,7 +1,6 @@
-
-ent-RMCSwatCMBUniform = CMB Riot Control uniform
-  .desc = A dark set of tactical uniform utilized by the Colony Marshals, designed to be used by units of riot suppression on the distant worlds, under colony jurisdiction.
-ent-RMCSwatLeaderCMBUniform = CMB Riot Control Marshal uniform
-  .desc = A dark set of tactical uniform utilized by the Colony Marshals, designed to be used by units of riot suppression on the distant worlds, under colony jurisdiction.
-ent-RMCMarshalCMBUniform = colony marshal uniform
-  .desc = A pair of off-white slacks and a blue button-down shirt with a dark brown tie; the standard uniform of the Colony Marshals.
+ent-RMCMarshalCMBUniform = униформа маршала колонии
+  .desc = Пара бежевых брюк и голубая рубашка на пуговицах с тёмно-коричневым галстуком; стандартная униформа маршалов колоний.
+ent-RMCSwatLeaderCMBUniform = униформа маршала отряда подавления беспорядков КМБ
+  .desc = Тёмный тактический комплект униформы, используемый маршалами колоний, предназначенный для подразделений по подавлению беспорядков на отдалённых мирах под юрисдикцией колоний.
+ent-RMCSwatCMBUniform = униформа отряда подавления беспорядков КМБ
+  .desc = Тёмный тактический комплект униформы, используемый маршалами колоний, предназначенный для подразделений по подавлению беспорядков на отдалённых мирах под юрисдикцией колоний.

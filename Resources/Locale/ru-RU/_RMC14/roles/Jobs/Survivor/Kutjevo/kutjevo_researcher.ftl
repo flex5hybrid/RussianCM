@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorKutjevoResearcher = survivor kutjevo researcher spawn point
-ent-RMCSurvivorPresetKutjevoResearcher = kutjevo researcher colonist preset
+ent-RMCSurvivorPresetKutjevoResearcher = Кутьево исследователь колонист пресет
+ent-RMCSpawnPointSurvivorKutjevoResearcher = выживший исследователь Кутьево точка возрождения

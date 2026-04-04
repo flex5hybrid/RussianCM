@@ -1,3 +1,2 @@
-
-ent-RMCRandomHumanoidMarineRaiderLead = DEATHSQUAD marine raider team leader ghost role
-ent-RMCDogtagMarineRaiderLeader = Marine Raider Team Leader's dogtags
+ent-RMCDogtagMarineRaiderLeader = Жетоны лидера рейдерской группы Морпех
+ent-RMCRandomHumanoidMarineRaiderLead = DEATHSQUAD Морпех лидер рейдерской группы в роли призрака

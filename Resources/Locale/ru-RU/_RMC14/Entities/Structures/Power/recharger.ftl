@@ -1,2 +1,1 @@
-
-ent-RMCRecharger = recharger
+ent-RMCRecharger = зарядное устройство

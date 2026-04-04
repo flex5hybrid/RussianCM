@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorShivasPanicRoomDoctor = special survivor shivas panic room doctor spawn point
+ent-RMCSpawnPointSurvivorShivasPanicRoomDoctor-name = Специальный выживший Шива Комната паники Доктор Точка возрождения

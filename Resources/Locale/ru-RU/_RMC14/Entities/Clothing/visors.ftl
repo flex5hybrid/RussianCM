@@ -1,18 +1,14 @@
+ent-RMCVisorSquad = тактическая оптика
+  .desc = Сменный визор-индикатор для стандартного шлема КМК. Данная модель выводит на дисплей тактическую информацию о взводах морпехов.
+ent-RMCVisorWelding = сварочный визор
+  .desc = Сменный визор-индикатор для стандартного шлема КМК. Данная модель защищает глаза от вспышек сварки.
+ent-RMCVisorMedicalAdvanced = продвинутая медицинская оптика
+  .desc = Сменный визор-индикатор для стандартного шлема КМК. Данная модель выводит на дисплей данные о состоянии здоровья nearby humanoids и исследовательские заметки.
+ent-RMCVisorMedical = базовая медицинская оптика
+  .desc = Сменный визор-индикатор для стандартного шлема КМК. Данная модель выводит на дисплей данные о состоянии здоровья nearby humanoids.
+ent-RMCVisorNightVision = оптика ночного видения
+  .desc = Сменный визор-индикатор для стандартного шлема КМК. Данная модель обеспечивает ночное видение и является стандартной экипировкой в подразделениях с регулярным финансированием. Может быть вставлена в зарядное устройство для пополнения внутренней батареи.
 
-ent-RMCVisorNightVision = night vision optic
-  .desc = An insertable visor HUD into a standard UNMC helmet. This type gives a form of night vision and is standard issue in units with regular funding. It can be inserted into a recharger to recharge its internal battery.
-ent-RMCVisorMedical = basic medical optic
-  .desc = An insertable visor HUD into a standard UNMC helmet. This type gives a heads-up display that shows data about nearby humanoids health status.
-ent-RMCVisorMedicalAdvanced = advanced medical optic
-  .desc = An insertable visor HUD into a standard UNMC helmet. This type gives a heads-up display that shows data about nearby humanoids health status and research notes.
-ent-RMCVisorWelding = welding visor
-  .desc = An insertable visor HUD into a standard UNMC helmet. This type protects the eyes from welders.
-ent-RMCVisorSquad = squad optic
-  .desc = An insertable visor HUD into a standard UNMC helmet. This type gives a heads-up display of marine squads.
-ent-RMCVisorPilotBlack = MK30 black flight visor
-  .desc = A standard issue snap-on visor used by UNMC dropship pilots. Polarized to reduce glare and protect the eyes during atmospheric re-entry and orbital deployment.
-ent-RMCVisorPilotDarkblue = MK30 dark blue flight visor
-ent-RMCVisorPilotLightblue = MK30 light blue flight visor
-ent-RMCVisorPilotPurple = MK30 purple flight visor
-ent-RMCVisorPilotRed = MK30 red flight visor
-ent-RMCVisorPilotYellow = MK30 yellow flight visor
+
+
+

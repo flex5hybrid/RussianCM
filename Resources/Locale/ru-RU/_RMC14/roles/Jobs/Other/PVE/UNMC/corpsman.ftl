@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointPVECorpsman = PVE corpsman spawn point
+ent-RMCSpawnPointPVECorpsman = Точка появления санитара PVE

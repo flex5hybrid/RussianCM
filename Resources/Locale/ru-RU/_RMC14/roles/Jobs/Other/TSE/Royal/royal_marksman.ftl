@@ -1,2 +1,1 @@
-
-ent-RMCRandomHumanoidRoyalMarinesMarksman = royal crown marines ghost role marksman
+ent-RMCRandomHumanoidRoyalMarinesMarksman-name = королевская корона морская пехота роль призрака стрелок

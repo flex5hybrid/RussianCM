@@ -1,11 +1,10 @@
-
-ent-CMSheetMetal = metal sheets
-  .desc = Sheets made out of metal. They have been dubbed Metal Sheets.
-ent-CMSheetPlasteel = plasteel sheet
-  .desc = Plasteel is an expensive, durable material made from combining platinum, steel, and advanced polymers to create a metal that is corrosion-resistant, highly durable, and lightweight. The only reason this isn't used more often is because of how damn costly it is.
-ent-CMSheetPlasteel10 = plasteel
-ent-CMSheetPlasteel15 = plasteel
-ent-CMSheetPlasteel30 = plasteel
-ent-CMSheetPlasteel40 = plasteel
-ent-CMSheetPlasteel50 = plasteel
-ent-CMSheetPlasteel1 = plasteel
+ent-CMSheetPlasteel1 = пласталь
+ent-CMSheetPlasteel50 = пласталь
+ent-CMSheetPlasteel40 = пласталь
+ent-CMSheetPlasteel30 = пласталь
+ent-CMSheetPlasteel15 = пласталь
+ent-CMSheetPlasteel10 = пласталь
+ent-CMSheetPlasteel = лист пластали
+  .desc = Пласталь — это дорогой, прочный материал, созданный путём сочетания платины, стали и передовых полимеров для получения металла, устойчивого к коррозии, чрезвычайно прочного и лёгкого. Единственная причина, по которой его не используют чаще, — это то, насколько он чертовски дорог."
+ent-CMSheetMetal = металлические листы
+  .desc = Листы, сделанные из металла. Их окрестили Металлическими Листами.

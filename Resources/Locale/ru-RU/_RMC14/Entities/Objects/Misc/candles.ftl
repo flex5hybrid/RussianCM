@@ -1,5 +1,4 @@
-
-ent-RMCCandle = red candle
-  .desc = a candle.
-ent-RMCCandle4 = red candle
-  .desc = a candle.
+ent-RMCCandle4 = красная свеча
+  .desc = Свеча.
+ent-RMCCandle = красная свеча
+  .desc = Свеча.

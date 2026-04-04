@@ -1,3 +1,12 @@
-
 ent-CMXenoPraetorianBase = Преторианец
-  .desc = Большой чёрный инопланетянин.
+  .desc = Огромный, угрожающий инопланетный зверь.
+ent-CMXenoPraetorian = Преторианец
+  .desc = Огромный, угрожающий инопланетный зверь.
+ent-CMXenoPraetorianDancer = Преторианец
+  .desc = Огромный, угрожающий инопланетный зверь.
+ent-CMXenoPraetorianValkyrie = Преторианец
+  .desc = Огромный, угрожающий инопланетный зверь.
+ent-CMXenoPraetorianOpressor = Преторианец
+  .desc = Огромный, угрожающий инопланетный зверь.
+ent-CMXenoPraetorianVanguard = Преторианец
+  .desc = Огромный, угрожающий инопланетный зверь.

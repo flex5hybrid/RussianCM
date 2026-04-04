@@ -1,2 +1,1 @@
-
-ent-RMCSkillPresetCommander = Commander
+ent-RMCSkillPresetCommander-name = Командир

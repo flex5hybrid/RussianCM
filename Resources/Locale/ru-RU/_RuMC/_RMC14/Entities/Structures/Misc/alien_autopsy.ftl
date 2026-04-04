@@ -1,3 +1,0 @@
-ent-RMCAlienTank = крио-танк
-  .desc = Внутри есть что-то большое...
-ent-RMCResearchThingies = Исследовательские штучки

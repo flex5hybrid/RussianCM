@@ -1,3 +1,2 @@
-
-ent-RMCCoatRack = coat rack
-  .desc = Rack that holds coats.
+ent-RMCCoatRack = вешалка для одежды
+  .desc = Вешалка для пальто.

@@ -1,11 +1,9 @@
-
-  .desc = It's a storage unit for standard-issue attire.
-ent-CMWardrobeBlack = black wardrobe
-ent-CMWardrobeBlue = blue wardrobe
-ent-CMWardrobeGreen = green wardrobe
-ent-CMWardrobeOrange = orange wardrobe
-ent-CMWardrobePink = pink wardrobe
-ent-CMWardrobePurple = purple wardrobe
-ent-CMWardrobeRed = red wardrobe
-ent-CMWardrobeWhite = white wardrobe
-ent-CMWardrobeYellow = yellow wardrobe
+ent-CMWardrobeYellow = желтый шкаф
+ent-CMWardrobeWhite = белый шкаф
+ent-CMWardrobeRed = красный шкаф
+ent-CMWardrobePurple = фиолетовый гардероб
+ent-CMWardrobePink = розовый шкаф
+ent-CMWardrobeOrange = оранжевый шкаф
+ent-CMWardrobeGreen = зеленый шкаф
+ent-CMWardrobeBlue = синий шкаф
+ent-CMWardrobeBlack = черный шкаф

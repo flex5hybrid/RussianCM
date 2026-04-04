@@ -1,7 +1,6 @@
-
-ent-PlumpSeeds = packet of plump spores
-ent-GrassSeeds = packet of grass seeds
-ent-WhiteBeetSeeds = packet of white beet seeds
-ent-PeanutSeeds = packet of peanut seeds
-ent-SunflowerSeeds = packet of sunflower seeds
-ent-RMCMangoSeeds = packet of mango seeds
+ent-RMCMangoSeeds = пакетик семян манго
+ent-SunflowerSeeds = пакетик семян подсолнечника
+ent-PeanutSeeds = пакетик семян арахиса
+ent-WhiteBeetSeeds = пакетик семян белой свеклы
+ent-GrassSeeds = пакетик семян травы
+ent-PlumpSeeds = пакет пухлых спор

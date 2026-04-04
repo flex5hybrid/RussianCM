@@ -1,2 +1,2 @@
-
-ent-RMCSpawnPointSurvivorKutjevoCorporate = survivor kutjevo liaison spawn point
+ent-RMCGearSurvivorPresetKutjevoCorporate = предустановка связи Кутьево
+ent-RMCSpawnPointSurvivorKutjevoCorporate = точка спавна выжившего в Кутьево

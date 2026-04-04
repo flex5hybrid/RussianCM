@@ -1,3 +1,2 @@
-
-ent-RMCArmorDetective = detective armor
-  .desc = An armored vest with a detective's badge on it.
+ent-RMCArmorDetective = броня детектива
+  .desc = Бронежилет со значком детектива.

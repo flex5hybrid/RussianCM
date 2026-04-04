@@ -1,3 +1,2 @@
-
-ent-RMCDropshipDoorBase = crew hatch
-ent-RMCDropshipCockpitBase = cockpit
+ent-RMCDropshipCockpitBase = кабина
+ent-RMCDropshipDoorBase = люк экипажа

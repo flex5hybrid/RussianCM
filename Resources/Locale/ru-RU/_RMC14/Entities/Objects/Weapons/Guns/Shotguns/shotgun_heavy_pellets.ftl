@@ -1,6 +1,5 @@
-
-ent-RMCPelletHeavyShotgunBuckshot = heavy buckshot
-ent-RMCPelletHeavyShotgunSlug = heavy slug
-ent-RMCPelletHeavyShotgunBeanbag = heavy beanbag slug
-ent-RMCPelletHeavyShotgunFlechette = heavy flechette shell
-ent-RMCPelletHeavyShotgunIncendiaryBuckshot = dragon's breath buckshot shell
+ent-RMCPelletHeavyShotgunIncendiaryBuckshot = картечь «Дыхание дракона»
+ent-RMCPelletHeavyShotgunFlechette = Тяжёлая флешетта
+ent-RMCPelletHeavyShotgunBeanbag = Тяжёлая травматическая пуля
+ent-RMCPelletHeavyShotgunSlug = Тяжёлая пуля
+ent-RMCPelletHeavyShotgunBuckshot = Тяжёлая картечь

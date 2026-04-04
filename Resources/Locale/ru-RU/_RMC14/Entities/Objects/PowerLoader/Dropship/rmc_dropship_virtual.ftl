@@ -1,3 +1,2 @@
-
-ent-RMCVirtualPowerLoaderRight = power loader right hydraulic claw
-ent-RMCVirtualPowerLoaderLeft = power loader left hydraulic claw
+ent-RMCVirtualPowerLoaderLeft = левая гидравлическая лапа погрузчика
+ent-RMCVirtualPowerLoaderRight = правая гидравлическая лапа погрузчика

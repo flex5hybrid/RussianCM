@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorHybrisaMedicalDoctor = medical doctor spawn point
-ent-RMCGearSurvivorPresetHybrisaMedicalDoctor = medical doctor preset
+ent-RMCGearSurvivorPresetHybrisaMedicalDoctor = предустановка врача
+ent-RMCSpawnPointSurvivorHybrisaMedicalDoctor = точка появления врача

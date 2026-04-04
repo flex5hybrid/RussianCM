@@ -1,2 +1,1 @@
-
-ent-RMCWallMeterBase = meter
+ent-RMCWallMeterBase = метр

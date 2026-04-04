@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointRCMPVEGPMGGunner = RCM gpmg gunner spawn point
+ent-CMSpawnPointRCMPVEGPMGGunner-name = Точка появления наводчика RCM gpmg

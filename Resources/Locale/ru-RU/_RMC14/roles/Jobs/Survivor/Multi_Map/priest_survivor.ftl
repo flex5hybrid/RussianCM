@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorPriest = survivor priest spawn point
-ent-RMCGearSurvivorPresetPriest = priest colonist preset
+ent-RMCGearSurvivorPresetPriest = пресет священника-колониста
+ent-RMCSpawnPointSurvivorPriest = точка появления выжившего жреца

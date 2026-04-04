@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorChancesVehicleRepairman = vehicle repairman spawn point
-ent-RMCRandomHumanoidSurvivorChancesVehicleRepairman = vehicle repairman ghost role
+ent-RMCSpawnPointSurvivorChancesVehicleRepairman-name = Место появления мастера по ремонту автомобилей
+ent-RMCRandomHumanoidSurvivorChancesVehicleRepairman-name = роль призрака мастера по ремонту автомобилей

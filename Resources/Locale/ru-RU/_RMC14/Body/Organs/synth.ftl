@@ -1,2 +1,1 @@
-
-ent-RMCOrganSynthBrain = brain
+ent-RMCOrganSynthBrain = мозг

@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorNewVaraderoResearcher = survivor new varadero researcher spawn point
+ent-RMCSpawnPointSurvivorNewVaraderoResearcher = выживший новый исследователь Варадеро точка возрождения

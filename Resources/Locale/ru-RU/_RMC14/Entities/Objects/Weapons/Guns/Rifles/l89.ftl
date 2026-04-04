@@ -1,5 +1,4 @@
-
-ent-RMCWeaponRifleL89A1 = L89A1 marksman rifle
-  .desc = The L89A1 is the standard-issue DMR of the RMC's Paramarine regiments, a lightweight and reliable marksman rifle that boasts an integrated 2x optic.
-ent-RMCWeaponRifleL89A2 = L89A2 marksman rifle
-  .desc = The L89A2 is the upgraded DMR of the RMC's Paramarine regiments, a lightweight and reliable marksman rifle that boasts an integrated 2x optic now with greater modularity with a rail spanning the underside of the handguard.
+ent-RMCWeaponRifleL89A1-name = Стрелковая винтовка Л89А1
+ent-RMCWeaponRifleL89A1-desc = L89A1 — это стандартная винтовка DMR парамариновых полков RMC, легкая и надежная стрелковая винтовка со встроенной двукратной оптикой.
+ent-RMCWeaponRifleL89A2-name = Стрелковая винтовка L89A2
+ent-RMCWeaponRifleL89A2-desc = L89A2 — это модернизированная DMR парамаринских полков RMC, легкая и надежная стрелковая винтовка, которая может похвастаться встроенной двукратной оптикой, теперь с большей модульностью и направляющей, охватывающей нижнюю часть цевья.

@@ -1,3 +1,2 @@
-
-ent-RMCHydroponicsLattice = Hydroponics Lattice
-  .desc = A root lattice connected to two floating pontoons.
+ent-RMCHydroponicsLattice = Гидропоника Решетка
+  .desc = Корневая решетка соединена с двумя плавучими понтонами.

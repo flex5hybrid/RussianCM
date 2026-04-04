@@ -1,6 +1,5 @@
-
-ent-RMCGuidebookLawMarine = Marine Law
-  .desc = Usually being the favorite read of any member of the Military Police of the UNMC, it's whole meaning is to work as the scales for the sword of justice that brandishes onboard the vessels of the United Nations Marine Corps, so peace and order can be maintained. It's nicknames may include but are not limited to: Devil's Red Book, Bible of All Sinners, THE Book, ML, Red Brick, Provost's Torture Manual, Provost's Red Devil's Torture Bible of All Sinners.
-ent-RMCGuidebookLawMarineProvost = Marine Law: limited provost edition
-ent-RMCGuidebookSOP = standard operating procedure
-  .desc = One of the most important books onboard any United Nations Marine Corps vessel, or at least that's how you are supposed to feel about it. The book carries within it's pages the UNMC guidelines and procedures regarding all kinds of situations.
+ent-RMCGuidebookSOP = боевой устав
+  .desc = Одна из самых важных книг на борту любого корабля Корпуса Морской Пехоты ОН, или, по крайней мере, так вы должны к ней относиться. В страницах этой книги содержатся руководящие принципы и процедуры КМП, касающиеся всевозможных ситуаций.
+ent-RMCGuidebookLawMarineProvost = воинский устав КМП: ограниченное издание для прованста
+ent-RMCGuidebookLawMarine = воинский устав КМП
+  .desc = Обычно является любимым чтением любого члена Военной Полиции КМП, его главная цель — служить весами для меча правосудия, который разит на кораблях Корпуса Морской Пехоты Объединённых Наций, дабы поддерживать мир и порядок. Его прозвища могут включать, но не ограничиваются: Красная Книга Дьявола, Библия Всех Грешников, ЭТА Книга, ВУ, Красный Кирпич, Руководство по Пыткам Прованста, Красная Дьявольская Библия Пыток Прованста для Всех Грешников.

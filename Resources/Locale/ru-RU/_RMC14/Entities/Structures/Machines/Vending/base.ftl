@@ -1,2 +1,1 @@
-
-ent-ColMarTechBase = ColMarTech vendor
+ent-ColMarTechBase = Поставщик ColMarTech

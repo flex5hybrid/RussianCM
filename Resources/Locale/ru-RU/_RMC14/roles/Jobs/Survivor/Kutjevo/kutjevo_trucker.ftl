@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorKutjevoTrucker = kutjevo trucker spawn point
-ent-RMCGearSurvivorPresetKutjevoTrucker = Kutjevo trucker colonist preset
+ent-RMCGearSurvivorPresetKutjevoTrucker = Пресет колониста-дальнобойщика Кутьево
+ent-RMCSpawnPointSurvivorKutjevoTrucker = точка спавна дальнобойщиков в Кутьево

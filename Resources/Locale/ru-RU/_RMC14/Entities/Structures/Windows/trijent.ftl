@@ -1,7 +1,6 @@
-
-ent-RMCWindowChigusa = reinforced window
-  .desc = A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
-ent-RMCWindowHangar = reinforced window
-  .desc = A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
-ent-RMCWindowBunker = reinforced window
-  .desc = A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
+ent-RMCWindowBunker = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
+ent-RMCWindowHangar = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
+ent-RMCWindowChigusa = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 

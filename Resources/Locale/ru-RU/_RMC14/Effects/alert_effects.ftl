@@ -1,2 +1,1 @@
-
-ent-RMCActiveAlertEffect = exclamation
+ent-RMCActiveAlertEffect-name = восклицание

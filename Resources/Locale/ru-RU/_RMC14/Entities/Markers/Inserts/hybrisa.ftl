@@ -1,3 +1,2 @@
-
-ent-RMCMapInsertHybrisaCLFSpaceport = CLF Spaceport
-ent-RMCMapInsertHybrisaTSEAirbase = TSE Airbase
+ent-RMCMapInsertHybrisaCLFSpaceport-name = Космопорт CLF
+ent-RMCMapInsertHybrisaTSEAirbase-name = Авиабаза ТСЕ

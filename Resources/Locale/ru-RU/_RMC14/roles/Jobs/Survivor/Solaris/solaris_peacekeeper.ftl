@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointSurvivorSolarisILRCPeacekeeper = survivor solaris ILRC peacekeeper spawn point
+ent-RMCSpawnPointSurvivorSolarisILRCPeacekeeper-name = Выживший Солярис Место появления миротворца ILRC

@@ -1,7 +1,5 @@
-
-ent-RMCWeaponRevolverRSh9 = RSh-9 Assault Revolver
-  .desc = The RSh-9 Assault Revolver is a highly unusual weapon, originally designed for CQB Room clearing on request for counter-terrorism units. This one uses the smaller 9x39 cartridge instead of the 12.7x55mm Cartridge it was originally chambered in, It is still nothing short of the ultimate man killing device.
-ent-RMCBaseSpeedLoaderRsh9 = RSh-9 Speed Loader (9x39)
-  .desc = A six round load of 9x39 Armor Penetrating rounds, designed to defeat most modern body-armor.
-ent-RMCCartridgeRevolverRsh9 = cartridge (9x39)
-ent-RMCBulletRsh9 = bullet (9x39)
+ent-RMCBulletRsh9 = пуля (9x39)
+ent-RMCCartridgeRevolverRsh9 = патрон (9x39)
+ent-RMCBaseSpeedLoaderRsh9 = быстрый заряжатель RSh-9 (9x39)
+ent-RMCWeaponRevolverRSh9 = штурмовой револьвер RSh-9
+  .desc = Штурмовой револьвер RSh-9 — весьма необычное оружие, изначально разработанное по запросу для зачистки помещений в ближнем бою подразделениями по борьбе с терроризмом. Эта модель использует меньший патрон 9x39 вместо исходного 12.7x55мм, но она по-прежнему остаётся ничем иным, как ультимативным устройством для убийства людей.

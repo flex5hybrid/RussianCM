@@ -1,3 +1,2 @@
-
-ent-ActionWheelchairBell = Ring Bell
-  .desc = Ring the wheelchair bell
+ent-ActionWheelchairBell = Позвонить в звонок
+  .desc = Позвонить в звонок инвалидной коляски.

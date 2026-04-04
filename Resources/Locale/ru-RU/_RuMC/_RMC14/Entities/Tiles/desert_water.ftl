@@ -1,1 +1,0 @@
-ent-RMCGrate = решетка

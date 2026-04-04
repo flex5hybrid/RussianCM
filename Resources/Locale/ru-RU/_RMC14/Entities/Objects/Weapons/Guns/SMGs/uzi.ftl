@@ -1,7 +1,5 @@
-
-ent-RMCWeaponSMGUZI = UZI
-  .desc = Exported to over 90 countries, somehow this relic has managed to end up here. Couldn't be simpler to use.
-ent-RMCMagazineSMGUZI = UZI magazine (9x21mm)
-  .desc = A 9x21mm magazine for the UZI. Seems pretty small, huh? Anything larger could cause feeding errors.
-ent-RMCMagazineSMGUZIExt = UZI Extended magazine (9x21mm)
-  .desc = A 9x21mmcartridge for the UZI submachinegun.
+ent-RMCMagazineSMGUZIExt = расширенный магазин УЗИ (9x21мм)
+ent-RMCMagazineSMGUZI = магазин УЗИ (9x21мм)
+  .desc = Магазин 9x21мм для УЗИ. Кажется довольно маленьким, да? Что-то большее может вызвать проблемы с подачей.
+ent-RMCWeaponSMGUZI = УЗИ
+  .desc = Экспортировался в более чем 90 стран, и каким-то образом эта реликвия оказалась здесь. Проще в использовании не бывает.

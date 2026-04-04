@@ -1,5 +1,4 @@
-
-ent-RMCHypersleepFeed = hypersleep chamber feed
-  .desc = A bewildering tangle of machinery and pipes linking the hypersleep chambers to the hypersleep bay.
-ent-RMCCoolantFeed = coolant feed
-  .desc = A bewildering tangle of machinery and pipes providing steady coolant feed to the hypersleep bay.
+ent-RMCCoolantFeed = подача охлаждающей жидкости
+  .desc = Невероятная путаница механизмов и труб обеспечивает постоянную подачу охлаждающей жидкости в отсек гиперсна.
+ent-RMCHypersleepFeed = питание камеры гиперсна
+  .desc = Запутанная путаница механизмов и труб, соединяющих камеры гиперсна с отсеком для гиперсна.

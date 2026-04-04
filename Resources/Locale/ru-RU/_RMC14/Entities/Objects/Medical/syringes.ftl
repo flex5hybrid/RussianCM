@@ -1,3 +1,2 @@
-
-ent-RMCSyringeLethal = lethal injection syringe
-  .desc = A syringe used for lethal injections.
+ent-RMCSyringeLethal = шприц для смертельной инъекции
+  .desc = Шприц, используемый для смертельных инъекций.

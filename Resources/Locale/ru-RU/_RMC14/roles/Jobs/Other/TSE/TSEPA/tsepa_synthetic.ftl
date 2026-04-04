@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointTSEPASynthetic = tsepa synthetic spawn point
+ent-RMCSpawnPointTSEPASynthetic = синтетическая точка появления цепы

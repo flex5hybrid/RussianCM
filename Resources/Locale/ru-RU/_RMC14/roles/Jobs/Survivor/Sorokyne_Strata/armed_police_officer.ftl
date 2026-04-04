@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorArmedPoliceOfficer = people's armed police officer spawn point
-ent-RMCGearSurvivorPresetArmedPoliceOfficer = people's armed police officer preset
+ent-RMCGearSurvivorPresetArmedPoliceOfficer = Предварительная настройка народного вооруженного полицейского
+ent-RMCSpawnPointSurvivorArmedPoliceOfficer = точка появления народного вооруженного полицейского

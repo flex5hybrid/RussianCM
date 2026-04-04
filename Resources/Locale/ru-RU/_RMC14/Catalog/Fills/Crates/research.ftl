@@ -1,3 +1,2 @@
-
-ent-RMCCrateResearchPhoron = phoron crate (x30)
-ent-RMCCrateResearchPlastic = plastic crate (x20)
+ent-RMCCrateResearchPlastic = ящик пластика (x20)
+ent-RMCCrateResearchPhoron = ящик форона (x30)

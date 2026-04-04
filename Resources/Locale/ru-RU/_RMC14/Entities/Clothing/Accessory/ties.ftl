@@ -1,11 +1,10 @@
-
-ent-RMCTieBase = tie
-  .desc = An abstract tie.
-ent-RMCTie = blue tie
-  .desc = A neosilk clip-on tie.
-ent-RMCTieBlack = black tie
-ent-RMCTieGold = gold tie
-ent-RMCTieGreen = green tie
-ent-RMCTiePurple = purple tie
-ent-RMCTieRed = red tie
-ent-RMCTieHorrible = horrible tie
+ent-RMCTieHorrible = ужасный галстук
+ent-RMCTieRed = красный галстук
+ent-RMCTiePurple = фиолетовый галстук
+ent-RMCTieGreen = зелёный галстук
+ent-RMCTieGold = золотой галстук
+ent-RMCTieBlack = чёрный галстук
+ent-RMCTie = синий галстук
+  .desc = Галстук-бабочка из неошёлка на зажиме.
+ent-RMCTieBase = галстук
+  .desc = Абстрактный галстук.

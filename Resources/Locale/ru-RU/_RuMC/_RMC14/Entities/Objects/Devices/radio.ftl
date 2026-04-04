@@ -1,1 +1,0 @@
-ent-RMCRadioHandheldColonyBase = коротковолновое радио

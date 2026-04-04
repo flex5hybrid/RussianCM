@@ -1,9 +1,8 @@
-
-ent-RMCWeaponSMGType19 = Type-19 Submachinegun
-  .desc = An outdated, but reliable and powerful, submachinegun originating in the Socialist Progressive Peoples, it is still in limited service in the SPP but is most often used by paramilitary groups or corporate security forces. It is usually used with a 35 round stick magazine, or a 71 round drum.
-ent-RMCMagazineSMGType19 = Type-19 stick magazine (7.62x25mm)
-  .desc = A stick magazine for the Type-19 submachinegun.
-ent-RMCMagazineSMGType19Drum = Type-19 drum magazine (7.62x25mm)
-  .desc = A 7.62x25mm drum magazine for the Type-19 submachinegun.
-ent-RMCCartridge762x25mm = cartridge (7.62x25mm SMG)
-  .desc = A 7.62x25mm magazine for the Type19.
+ent-RMCCartridge762x25mm = патрон (7.62x25мм ПП)
+  .desc = Патрон 7.62x25мм для Type19.
+ent-RMCMagazineSMGType19Drum = барабанный магазин Type-19 (7.62x25мм)
+  .desc = Барабанный магазин 7.62x25мм для пистолета-пулемёта Type-19.
+ent-RMCMagazineSMGType19 = рожковый магазин Type-19 (7.62x25мм)
+  .desc = Рожковый магазин для пистолета-пулемёта Type-19.
+ent-RMCWeaponSMGType19 = пистолет-пулемёт Type-19
+  .desc = Устаревший, но надёжный и мощный пистолет-пулемёт, происходящий из Социалистической Прогрессивной Народной партии, он всё ещё ограниченно используется в СНП, но чаще всего применяется парамилитарными группами или корпоративными силами безопасности. Обычно используется с рожковым магазином на 35 патронов или барабанным на 71 патрон.

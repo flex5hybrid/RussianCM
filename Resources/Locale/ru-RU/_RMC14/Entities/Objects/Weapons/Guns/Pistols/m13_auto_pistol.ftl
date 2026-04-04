@@ -1,11 +1,7 @@
-
-ent-RMCWeaponPistolM13 = M13 Auto Pistol
-  .desc = The M13 Auto Pistol, a compact, rapid-firing sidearm designed for close-quarters defense. With a 40-round magazine, it emphasizes fire rate over precision, providing effective suppressive fire in short-range engagements.
-ent-RMCMagazinePistolM13 = M13 HV Magazine (10x20mm-APC)
-ent-RMCMagazinePistolM13AP = M13 AP Magazine (10x20mm-APC)
-ent-RMCMagazinePistolM13Ext = M13 HV Extended Magazine (10x20mm-APC)
-ent-RMCMagazinePistolM13ExtAP = M13 AP Extended Magazine (10x20mm-APC)
-ent-RMCMagazinePistolM13Drum = M13 HV Drum Magazine (10x20mm-APC)
-ent-RMCMagazinePistolM13DrumAP = M13 AP Drum Magazine (10x20mm-APC)
-ent-RMCCartridgeAutoPistol = cartridge (10x20mm-APC)
-ent-RMCCartridgeAutoPistolAP = armor-piercing cartridge (10x20mm-APC)
+ent-RMCMagazinePistolM13Drum = Барабанный магазин M13 ВС (10x20мм)
+ent-RMCMagazinePistolM13Ext = Расширенный магазин M13 ВС (10x20мм)
+ent-RMCMagazinePistolM13 = Магазин M13 ВС (10x20мм)
+ent-RMCWeaponPistolM13 = Автопистолет M13
+  .desc = Автопистолет M13, компактный, скорострельный пистолет, предназначенный для защиты в ближнем бою. С магазином на 40 патронов он делает ставку на скорострельность, а не на точность, обеспечивая эффективный подавляющий огонь в ближнем бою.
+ent-RMCWeaponPistolM13Empty = автопистолет M13
+  .desc = Автопистолет M13, компактный, скорострельный пистолет, предназначенный для защиты в ближнем бою. С магазином на 40 патронов он делает ставку на скорострельность, а не на точность, обеспечивая эффективный подавляющий огонь в ближнем бою.

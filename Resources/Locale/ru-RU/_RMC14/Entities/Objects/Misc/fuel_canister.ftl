@@ -1,3 +1,2 @@
-
-ent-RMCFuelCan = fuel can
-  .desc = A jerry can. In space! Or maybe a colony.
+ent-RMCFuelCan = канистра с топливом
+  .desc = Канистра. В космосе! Или, может быть, в колонии.

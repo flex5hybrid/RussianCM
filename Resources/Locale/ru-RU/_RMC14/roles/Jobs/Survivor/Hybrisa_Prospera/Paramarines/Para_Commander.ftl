@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointParaCommander = paramarine commander spawn point
+ent-RMCSpawnPointParaCommander-name = точка появления командира парамарина

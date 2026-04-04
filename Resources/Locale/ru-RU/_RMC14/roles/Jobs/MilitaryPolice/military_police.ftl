@@ -1,4 +1,1 @@
-
-ent-CMSpawnPointMilitaryPolice = military police spawn point
-ent-RMCGuidebookRoleMP = Military Police
-  .desc = Military Police
+ent-CMSpawnPointMilitaryPolice = точка появления военной полиции

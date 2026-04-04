@@ -1,3 +1,2 @@
-
-ent-WeaponLauncherM83HEFA = M83 grenade launcher
-  .desc = A heavy, 10-shot grenade launcher used by the HEFA Knights.
+ent-WeaponLauncherM83HEFA = гранатомёт M83
+  .desc = Тяжёлый 10-зарядный гранатомёт, используемый Рыцарями ОФП.

@@ -1,2 +1,1 @@
-
-ent-RMCMachineScreenBase = monitor
+ent-RMCMachineScreenBase = монитор

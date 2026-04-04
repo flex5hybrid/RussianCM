@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorChancesEnvironmentalResearcher = enviromental researcher spawn point
-ent-RMCRandomHumanoidSurvivorChancesEnvironmentalResearcher = chances environmental researcher ghost role
+ent-RMCSpawnPointSurvivorChancesEnvironmentalResearcher-name = точка появления исследователя окружающей среды
+ent-RMCRandomHumanoidSurvivorChancesEnvironmentalResearcher-name = Шансы: роль призрака исследователя окружающей среды

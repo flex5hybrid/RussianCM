@@ -1,10 +1,9 @@
-
-ent-RMCHiveBoonBase = hive boon
-ent-RMCHiveBoonFireResistance = Boon of Fire Resistance
-  .desc = Makes all xenonids immune to fire for 5 minutes.
-ent-RMCHiveBoonLarvaSurge = Surge of Larva
-  .desc = Provides 5 larva instantly to the hive.
-ent-RMCHiveBoonKing = His Grace
-  .desc = A huge behemoth of a Xenonid which can tear its way through defences and flesh alike. Requires open space around the hive core to spawn.
-ent-RMCHiveCocoonKing = alien cocoon
-  .desc = A large pulsating cocoon.
+ent-RMCHiveBoonBase-name = благо улья
+ent-RMCHiveBoonFireResistance-name = Дар сопротивления огню
+ent-RMCHiveBoonFireResistance-desc = Делает всех ксенонидов невосприимчивыми к огню на 5 минут.
+ent-RMCHiveBoonLarvaSurge-name = Волна личинки
+ent-RMCHiveBoonLarvaSurge-desc = Мгновенно доставляет в улей 5 личинок.
+ent-RMCHiveBoonKing-name = Его светлость
+ent-RMCHiveBoonKing-desc = Огромный монстр-ксенонид, способный пробиваться сквозь защиту и плоть. 
+ent-RMCHiveCocoonKing-name = инопланетный кокон
+ent-RMCHiveCocoonKing-desc = Большой пульсирующий кокон.

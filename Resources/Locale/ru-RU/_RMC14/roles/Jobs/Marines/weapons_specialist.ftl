@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointWeaponsSpecialist = weapons specialist spawn point
+ent-CMSpawnPointWeaponsSpecialist = точка появления специалиста по оружию

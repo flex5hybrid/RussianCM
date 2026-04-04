@@ -1,5 +1,4 @@
-
-ent-RMCCLFSurplusPVE = CLF Clothing Rack
-  .desc = A sturdy metal rack made by local friends of the front, filled to the brim with all the load-bearing gear and clothing a rebel could want, coincidentally also made by local friends of the front.
-ent-RMCCLFUtilitiesPVE = CLF Utilities Rack
-  .desc = A sturdy metal rack taken from a captured UN military shipment loaded with all the gear a rebel could ever want.
+ent-RMCCLFSurplusPVE-name = CLF Вешалка для одежды
+ent-RMCCLFSurplusPVE-desc = Крепкая металлическая стойка, сделанная местными друзьями фронта, до краев заполненная всем несущим снаряжением и одеждой, которая может понадобиться повстанцу, по совпадению также сделанная местными друзьями фронта.
+ent-RMCCLFUtilitiesPVE-name = Стойка для утилит CLF
+ent-RMCCLFUtilitiesPVE-desc = Прочная металлическая стойка, взятая из захваченного военного груза ООН, нагруженного всем снаряжением, которое только может понадобиться повстанцу.

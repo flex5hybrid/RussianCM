@@ -1,5 +1,4 @@
-
-ent-RMCSpaceCash = dollars
-  .desc = Ten hundred-dollar bills, minted by the United Nations Treasury. Each are adorned with the face of a long-forgotten diplomat of a once-powerful planet. These bills are more than mere currency, they feel alive, as though they carry the weight of ancient history and the judgments of those who once controlled vast empires. The faces on each bill seem to watch you with silent intensity, as if each one believes it alone should be in your possession..
-ent-RMCSpaceCash1 = 1 dollar bill
-  .desc = A single one-dollar bill, minted by the United Nations Treasury. Its design features the image of a long-forgotten figure from a bygone era, a leader whose legacy now means little to the galactic populace. While it holds sentimental value for those from certain worlds, its actual worth is minimal. In most systems, it might fetch you half a hot-dog or a similar low-value snack.
+ent-RMCSpaceCash1 = однодолларовая купюра
+  .desc = Одна однодолларовая купюра, отчеканенная Казначейством Объединённых Наций. На ней изображена давно забытая фигура ушедшей эпохи, лидер, чьё наследие теперь мало что значит для галактического населения. Хотя она имеет сентиментальную ценность для выходцев с определённых миров, её реальная стоимость невелика. В большинстве систем на неё можно купить разве что пол-хот-дога или аналогичную недорогую закуску.
+ent-RMCSpaceCash = доллары
+  .desc = Десять стодолларовых купюр, отчеканенных Казначейством Объединённых Наций. Каждая украшена лицом давно забытого дипломата с некогда могущественной планеты. Эти банкноты — не просто валюта, они кажутся живыми, будто несут в себе груз древней истории и суждения тех, кто когда-то управлял огромными империями. Лица на каждой купюре словно пристально смотрят на вас в безмолвном напряжении, как если бы каждое из них верило, что лишь оно должно быть в вашем владении.

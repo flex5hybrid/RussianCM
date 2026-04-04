@@ -1,2 +1,1 @@
-
-ent-RMCWallEscapePod0 = wall
+ent-RMCWallEscapePod0 = стена

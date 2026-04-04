@@ -1,2 +1,1 @@
-
-ent-CMSpawnPointRCMPVEMedicalAssistant = RCM medical assistant spawn point
+ent-CMSpawnPointRCMPVEMedicalAssistant-name = Точка появления фельдшера RCM

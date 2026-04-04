@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorFiorinaRiotInProgressUNRiotOfficer = special survivor fiorina riot in progress cmb riot control officer spawn point
-ent-RMCSurvivorPresetRiotInProgressCMBRCO = riot in progress CMB RCO preset
+ent-RMCSpawnPointSurvivorFiorinaRiotInProgressUNRiotOfficer-name = Особый выживший Фиорина Бунт в процессе CMB точка появления офицера по борьбе с беспорядками
+ent-RMCSurvivorPresetRiotInProgressCMBRCO-name = Бунт в процессе CMB RCO пресет

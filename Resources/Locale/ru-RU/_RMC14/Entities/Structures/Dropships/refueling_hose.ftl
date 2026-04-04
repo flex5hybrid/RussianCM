@@ -1,3 +1,2 @@
-
-ent-RMCRefuelingHose = refueling hose
-  .desc = A long refueling hose that connects to various types of dropships
+ent-RMCRefuelingHose-name = заправочный шланг
+ent-RMCRefuelingHose-desc = Длинный заправочный шланг, который подключается к различным типам десантных кораблей.

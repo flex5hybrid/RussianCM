@@ -1,7 +1,6 @@
-
-ent-RMCArmorHelmetFirefighter = HS-SHIELD-X 500 helmet
-  .desc = The HS-SHIELD-X 500 (Halcyon Systems - Safety Helmet Integrated for Extreme Danger). A closed helmet designed to protect the wearer from hazardous environments, this specific model is designed to be effective in high heat environments and protect the user from smoke inhalation. It has a built in semi-closed breathing system. This helmet was designed by Halcyon Systems.
-ent-RMCArmorHelmetTMCCMiner = HS-TM-SHIELD-X 550 helmet
-  .desc = The HS-TM-SHIELD-X 550 (Halcyon Systems - Tartarus Mining - Safety Helmet Integrated for Extreme Danger). A closed helmet designed to protect the wearer from hazardous environments, this specific model is designed to be effective in a variety of hazardous environments and protect the user from toxic fume inhalation. It has a built in semi-closed breathing system. This helmet was designed by Halcyon Systems, in collaboration with Tartarus-Mining.
-ent-RMCArmorHelmetParamedic = MT-SHIELD-X 525 helmet
-  .desc = TThe MT-SHIELD-X 525 (MedTech - Safety Helmet Integrated for Extreme Danger). A closed helmet designed to protect the wearer from hazardous environments, this specific model is designed to be effective in a variety of hazardous environments and protects the user from potential biohazards. This helmet was designed by Halcyon Systems, in collaboration with MedTech.
+ent-RMCArmorHelmetParamedic = шлем MT-SHIELD-X 525
+  .desc = MT-SHIELD-X 525 (MedTech — Интегрированный защитный шлем для экстремальных опасностей). Закрытый шлем, предназначенный для защиты пользователя в опасных средах, эта конкретная модель разработана для эффективности в различных опасных средах и защиты пользователя от потенциальных биологических угроз. Этот шлем был разработан Halcyon Systems в сотрудничестве с MedTech.
+ent-RMCArmorHelmetTMCCMiner = шлем HS-TM-SHIELD-X 550
+  .desc = HS-TM-SHIELD-X 550 (Halcyon Systems — Tartarus Mining — Интегрированный защитный шлем для экстремальных опасностей). Закрытый шлем, предназначенный для защиты пользователя в опасных средах, эта конкретная модель разработана для эффективности в различных опасных средах и защиты от вдыхания токсичных паров. Имеет встроенную полузамкнутую дыхательную систему. Этот шлем был разработан Halcyon Systems в сотрудничестве с Tartarus-Mining.
+ent-RMCArmorHelmetFirefighter = шлем HS-SHIELD-X 500
+  .desc = HS-SHIELD-X 500 (Halcyon Systems — Интегрированный защитный шлем для экстремальных опасностей). Закрытый шлем, предназначенный для защиты пользователя в опасных средах, эта конкретная модель разработана для эффективности в условиях высоких температур и защиты от вдыхания дыма. Имеет встроенную полузамкнутую дыхательную систему. Этот шлем был разработан Halcyon Systems.

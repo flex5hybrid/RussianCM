@@ -1,3 +1,2 @@
-
-ent-RMCBoxCardboard = box
-  .desc = It's just an ordinary box.
+ent-RMCBoxCardboard = коробка
+  .desc = Это просто обычная коробка.

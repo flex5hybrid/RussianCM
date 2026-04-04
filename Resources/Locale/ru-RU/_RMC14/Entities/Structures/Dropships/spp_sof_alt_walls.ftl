@@ -1,2 +1,1 @@
-
-ent-RMCBaseSPPSOFDropshipWallAlt = SPP-DS-3 'Volk' wall
+ent-RMCBaseSPPSOFDropshipWallAlt-name = СПП-ДС-3 "Волк" стенка

@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorTechnician = survivor engineering technician spawn point
-ent-RMCGearSurvivorPresetTechnician = technician colonist preset
+ent-RMCGearSurvivorPresetTechnician = предустановка технического колониста
+ent-RMCSpawnPointSurvivorTechnician = точка появления выжившего инженера-техника

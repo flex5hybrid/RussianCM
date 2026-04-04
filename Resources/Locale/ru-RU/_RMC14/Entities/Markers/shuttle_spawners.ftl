@@ -1,3 +1,2 @@
-
-ent-RMCSpawnerShuttle = shuttle spawner
-  .desc = Defines a location to spawn a shuttle in.
+ent-RMCSpawnerShuttle = спаунер шаттла
+  .desc = Определяет место появления шаттла.

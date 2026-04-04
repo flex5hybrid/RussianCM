@@ -1,3 +1,2 @@
-
-ent-RMCHollowCane = fancy cane
-  .desc = An ebony cane with a fancy, seemingly-golden tip. Feels hollow to the touch.
+ent-RMCHollowCane = изысканная трость
+  .desc = Эбеновая трость с изысканным, казалось бы, золотым наконечником. На ощупь кажется полой.

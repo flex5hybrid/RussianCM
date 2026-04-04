@@ -1,2 +1,1 @@
-
-ent-RMCSpawnPointPVENovaMedicaDoctor = nova medica doctor spawn point
+ent-RMCSpawnPointPVENovaMedicaDoctor = точка появления доктора нова медика

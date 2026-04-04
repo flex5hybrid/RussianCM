@@ -1,2 +1,0 @@
-ent-RMCSpawnPointSurvivorOperationsSupervisor-name = точка появления
-ent-RMCRandomHumanoidSurvivorOperationsSupervisor-name = роль призрака руководителя операций шансов

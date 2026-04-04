@@ -1,10 +1,8 @@
-
-ent-RMCFogWallPermanent = dense fog
-  .desc = It looks way too dangerous to traverse.
-  .desc = It looks way too dangerous to traverse. Best wait until it has cleared up.
-ent-RMCFogWallRemoverOne = random fog remover
-  .desc = Marks this fog for random removal at round-start.
-ent-RMCFogWallAdderOne = random fog spawner
-  .desc = Marks a spot for random fog spawning at round-start.
-ent-RMCFogShockwave = shockwave smoke
-ent-RMCFogSpawner15 = fog blocker
+ent-RMCFogSpawner15 = блокатор тумана
+ent-RMCFogShockwave = ударная волна дыма
+ent-RMCFogWallAdderOne = случайный генератор тумана
+  .desc = Отмечает место появления случайного тумана в начале раунда.
+ent-RMCFogWallRemoverOne = случайное средство для удаления тумана
+  .desc = Помечает этот туман для случайного удаления в начале раунда.
+ent-RMCFogWallPermanent = густой туман
+  .desc = Это выглядит слишком опасно, чтобы пройти через него.

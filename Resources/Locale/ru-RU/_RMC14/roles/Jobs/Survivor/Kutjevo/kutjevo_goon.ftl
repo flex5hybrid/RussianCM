@@ -1,2 +1,2 @@
-
-ent-RMCSpawnPointSurvivorKutjevoGoon = kutjevo goon spawn point
+ent-RMCGearSurvivorPresetKutjevoGoon = пресет колониста Кутьево-гуна
+ent-RMCSpawnPointSurvivorKutjevoGoon = точка спавна кутьево головорезов

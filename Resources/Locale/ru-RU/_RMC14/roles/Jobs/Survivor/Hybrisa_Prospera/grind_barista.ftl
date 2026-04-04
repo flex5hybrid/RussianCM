@@ -1,3 +1,2 @@
-
-ent-RMCSpawnPointSurvivorHybrisaGrindBarista = daily grind barista spawn point
-ent-RMCGearSurvivorPresetHybrisaGrindBarista = daily grind barista preset
+ent-RMCGearSurvivorPresetHybrisaGrindBarista = ежедневная настройка бариста
+ent-RMCSpawnPointSurvivorHybrisaGrindBarista = точка возрождения бариста ежедневного измельчения

@@ -1,3 +1,2 @@
-
-ent-RMCRoyalGrenadeLauncher = L989A2 multiple grenade launcher
-  .desc = A lightweight support weapon fielded by the Royal Crown Marines. Chambered in small 20mm grenades, it lacks the punch of larger bore grenade launchers, but makes up for that in rate of fire.
+ent-RMCRoyalGrenadeLauncher-name = Гранатомет залпового огня Л989А2
+ent-RMCRoyalGrenadeLauncher-desc = Легкое оружие поддержки, используемое Королевской морской пехотой. 

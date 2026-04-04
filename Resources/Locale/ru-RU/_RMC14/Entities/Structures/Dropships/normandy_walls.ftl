@@ -1,10 +1,9 @@
-
-ent-CMBaseNormandyWall = normandy wall
-ent-CMNormandyWall61 = port wing weapon attach point
-  .desc = A place where heavy equipment can be installed with a powerloader.
-ent-CMNormandyWall65 = starboard wing weapon attach point
-  .desc = A place where heavy equipment can be installed with a powerloader.
-ent-CMNormandyWall84 = port fore weapon attach point
-  .desc = A place where heavy equipment can be installed with a powerloader.
-ent-CMNormandyWall84Flipped = starboard fore weapon attach point
-  .desc = A place where heavy equipment can be installed with a powerloader.
+ent-CMNormandyWall84Flipped = точка крепления носового оружия правого борта
+  .desc = Место, где можно установить тяжелое оборудование с помощью погрузчика.
+ent-CMNormandyWall84 = левая носовая точка крепления оружия
+  .desc = Место, где можно установить тяжелое оборудование с помощью погрузчика.
+ent-CMNormandyWall65 = точка крепления оружия на правом крыле
+  .desc = Место, где можно установить тяжелое оборудование с помощью погрузчика.
+ent-CMNormandyWall61 = точка крепления оружия левого крыла
+  .desc = Место, где можно установить тяжелое оборудование с помощью погрузчика.
+ent-CMBaseNormandyWall = Нормандская стена
