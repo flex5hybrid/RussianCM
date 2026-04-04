@@ -44,7 +44,7 @@ jobs:
       - name: Post RSI diff comment
         uses: peter-evans/create-or-update-comment@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
           issue-number: ${{ github.event.number }}
           body: |
             ## RSI Diff Bot
