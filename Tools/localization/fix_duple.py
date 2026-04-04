@@ -72,9 +72,9 @@ def process_ftl_file(path, global_keys):
         desc_val = data.get("desc", "").strip()
 
         if name_val:
-            new_lines.append(f'{key}-name = "{name_val}"')
+            new_lines.append(f'{key}-name = {name_val}')
         if desc_val:
-            new_lines.append(f'{key}-desc = "{desc_val}"')
+            new_lines.append(f'{key}-desc = {desc_val}')
         new_lines.append("")
 
     write_ftl_file(path, new_lines)

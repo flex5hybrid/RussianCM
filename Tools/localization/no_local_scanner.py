@@ -152,9 +152,9 @@ def process_prototype(proto_path, entities_dict, hierarchy):
         desc_key = f"ent-{ent_id}-desc"
 
         if name and name_key not in existing_keys:
-            new_entries.append(f'{name_key} = "{name}"')
+            new_entries.append(f'{name_key} = {name}')
         if desc and desc_key not in existing_keys:
-            new_entries.append(f'{desc_key} = "{desc}"')
+            new_entries.append(f'{desc_key} = {desc}')
 
     if not new_entries:
         return
