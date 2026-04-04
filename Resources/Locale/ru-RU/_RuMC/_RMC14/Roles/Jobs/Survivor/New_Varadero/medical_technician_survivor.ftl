@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetMedicalTechnician = medical technician colonist preset
-ent-RMCSpawnPointSurvivorMedicalTechnician = survivor medical technician spawn point
+ent-RMCGearSurvivorPresetMedicalTechnician = Предварительная настройка медицинского техника-колониста
+ent-RMCSpawnPointSurvivorMedicalTechnician = Точка появления выжившего медицинского техника

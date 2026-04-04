@@ -1,1 +1,1 @@
-ent-RMCGlowshroom = glowshroom
+ent-RMCGlowshroom = светящийся гриб

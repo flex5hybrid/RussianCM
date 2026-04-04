@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorChancesAtmosProcessTech-name = atmospheric processing reactor technician spawn point
-ent-RMCRandomHumanoidSurvivorChancesAtmosProcessTech-name = atmospheric processing reactor technician ghost role
+ent-RMCSpawnPointSurvivorChancesAtmosProcessTech-name = Точка возрождения техника реактора обработки атмосферы
+ent-RMCRandomHumanoidSurvivorChancesAtmosProcessTech-name = Роль призрака: техник по реактору обработки атмосферы

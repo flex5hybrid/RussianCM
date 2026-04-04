@@ -1,2 +1,2 @@
-ent-ActionMutineerRecruit-name = Recruit mutineer
-ent-ActionMutineerRecruit-desc = Ask a marine to join the mutiny.
+ent-ActionMutineerRecruit-name = Нанять мятежника
+ent-ActionMutineerRecruit-desc = Попросите Морпеха присоединиться к мятежу.

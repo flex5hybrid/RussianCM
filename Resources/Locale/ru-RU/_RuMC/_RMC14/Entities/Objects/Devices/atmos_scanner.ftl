@@ -1,2 +1,2 @@
-ent-RMCAtmosScanner-name = ACS-930 atmospheric composition scanner
-ent-RMCAtmosScanner-desc = A bulky, awkward device produced by the Weston-Yamada Corporation. Gives a readout of the local atmospheric composition.
+ent-RMCAtmosScanner-name = Сканер состава атмосферы АКС-930
+ent-RMCAtmosScanner-desc = Громоздкое и неуклюжее устройство производства корпорации Weston-Yamada. 

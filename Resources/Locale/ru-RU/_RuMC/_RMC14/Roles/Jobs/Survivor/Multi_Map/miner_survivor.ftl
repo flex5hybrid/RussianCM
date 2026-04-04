@@ -1,3 +1,3 @@
-ent-RMCRandomHumanoidSurvivorMiner = miner colonist ghost role
-ent-RMCSurvivorPresetMiner = miner colonist preset
-ent-RMCSpawnPointSurvivorMiner = survivor miner spawn point
+ent-RMCRandomHumanoidSurvivorMiner = роль призрака шахтёра-колониста
+ent-RMCSurvivorPresetMiner = предустановка шахтера-колониста
+ent-RMCSpawnPointSurvivorMiner = точка появления выжившего шахтера

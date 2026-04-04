@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPVEHybrisaCivilian = hybrisa civilian spawn point
+ent-RMCSpawnPointPVEHybrisaCivilian = гражданская точка появления гибриды

@@ -1,1 +1,1 @@
-ent-CMSpawnPointSPPSOFSpec-name = special survivor spp sof specialist spawn point
+ent-CMSpawnPointSPPSOFSpec-name = Специальная точка возрождения специалиста по выживанию

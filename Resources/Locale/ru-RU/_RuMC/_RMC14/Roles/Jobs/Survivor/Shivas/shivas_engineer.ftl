@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorShivasEngineer-name = survivor shivas engineer spawn point
+ent-RMCSpawnPointSurvivorShivasEngineer-name = Выживший инженер Шивас, точка возрождения

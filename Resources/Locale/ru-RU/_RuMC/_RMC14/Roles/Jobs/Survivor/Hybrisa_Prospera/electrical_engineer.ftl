@@ -1,1 +1,1 @@
-ent-RMCGearSurvivorPresetHybrisaEngineer = hybrisa engineer colonist preset
+ent-RMCGearSurvivorPresetHybrisaEngineer = Предустановка инженера-колониста Hybrisa

@@ -1,2 +1,2 @@
-ent-CMLockerCMDCabinet = command tablet cabinet
-  .desc = A bulletproof cabinet containing the command tablet for usage by a Commander.
+ent-CMLockerCMDCabinet = командный планшетный шкаф
+  .desc = Пуленепробиваемый шкаф, содержащий командный планшет для использования командиром.

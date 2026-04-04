@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorChancesCargoTech-name = warehouse worker spawn point
-ent-RMCRandomHumanoidSurvivorChancesCargoTech-name = warehouse worker ghost role
+ent-RMCSpawnPointSurvivorChancesCargoTech-name = точка появления складского работника
+ent-RMCRandomHumanoidSurvivorChancesCargoTech-name = Роль призрака складского работника

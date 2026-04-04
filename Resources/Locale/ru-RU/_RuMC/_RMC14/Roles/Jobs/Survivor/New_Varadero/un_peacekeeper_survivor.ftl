@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetUNPeacekeeper = un peacekeeper colonist preset
-ent-RMCSpawnPointSurvivorUNPeacekeeper = survivor un peacekeeper spawn point
+ent-RMCGearSurvivorPresetUNPeacekeeper = Предварительная настройка колониста ООН-миротворца
+ent-RMCSpawnPointSurvivorUNPeacekeeper = точка появления выжившего и миротворца

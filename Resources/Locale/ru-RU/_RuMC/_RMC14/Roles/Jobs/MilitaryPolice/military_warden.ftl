@@ -1,1 +1,1 @@
-ent-CMSpawnPointMilitaryWarden = military warden spawn point
+ent-CMSpawnPointMilitaryWarden = точка появления военного надзирателя

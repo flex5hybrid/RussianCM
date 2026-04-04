@@ -1,5 +1,5 @@
-ent-RMCPropTurbineStrutsBorder = power turbine warning stripes
-ent-RMCPropTurbineStrutsRight = power turbine struts
-  .desc = Pipes, or maybe support struts that lead into, or perhaps support that big ol' turbine.
-ent-RMCPropTurbine = power turbine
-  .desc = A gigantic turbine that runs on god knows what. It could probably be turned on by someone with the correct know-how.
+ent-RMCPropTurbineStrutsBorder = Предупреждающие полосы на силовых турбинах
+ent-RMCPropTurbineStrutsRight = стойки силовой турбины
+  .desc = Трубы или, может быть, опорные стойки, которые ведут или, возможно, поддерживают эту большую турбину.
+ent-RMCPropTurbine = силовая турбина
+  .desc = Гигантская турбина, работающая бог знает на чем. 

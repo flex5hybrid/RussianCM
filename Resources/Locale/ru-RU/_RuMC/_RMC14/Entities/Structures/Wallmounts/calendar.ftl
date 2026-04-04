@@ -1,2 +1,2 @@
-ent-RMCCalendarBase = wall calendar
-  .desc = Classic office decoration and a place to stare at maniacally.
+ent-RMCCalendarBase = настенный календарь
+  .desc = Классическое оформление офиса и место, на которое можно маниакально смотреть.

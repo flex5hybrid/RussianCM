@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorUNMC-name = survivor unmc spawn point
+ent-RMCSpawnPointSurvivorUNMC-name = точка возрождения выжившего unmc

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointFieldDoctor-name = field doctor spawn point
+ent-RMCSpawnPointFieldDoctor-name = точка появления полевого врача

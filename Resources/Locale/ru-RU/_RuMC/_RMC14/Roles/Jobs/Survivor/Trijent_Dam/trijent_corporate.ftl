@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetTrijentCorporate = trijent liaison preset
-ent-RMCSpawnPointSurvivorTrijentCorporate = survivor trijent liaison spawn point
+ent-RMCGearSurvivorPresetTrijentCorporate = предустановка связи Trijent
+ent-RMCSpawnPointSurvivorTrijentCorporate = Точка спавна триджента выжившего

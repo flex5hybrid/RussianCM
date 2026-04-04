@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetCargoTechnician = cargo technician colonist preset
-ent-RMCSpawnPointSurvivorCargoTechnician = survivor cargo technician spawn point
+ent-RMCGearSurvivorPresetCargoTechnician = Предварительная настройка колониста грузового техника
+ent-RMCSpawnPointSurvivorCargoTechnician = Точка появления выжившего грузового техника

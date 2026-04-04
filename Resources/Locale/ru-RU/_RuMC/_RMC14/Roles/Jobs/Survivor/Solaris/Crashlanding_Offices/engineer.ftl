@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorCrashlandingOfficesEngineer-name = special survivor crashlanding offices pmc engineer spawn point
+ent-RMCSpawnPointSurvivorCrashlandingOfficesEngineer-name = Специальный офис аварийной посадки выжившего Точка возрождения инженера ЧВК

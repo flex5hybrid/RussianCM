@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorShivasPanicRoomEngineer-name = special survivor shivas panic room engineer spawn point
+ent-RMCSpawnPointSurvivorShivasPanicRoomEngineer-name = Специальный выживший Шива, комната паники, инженер, точка возрождения

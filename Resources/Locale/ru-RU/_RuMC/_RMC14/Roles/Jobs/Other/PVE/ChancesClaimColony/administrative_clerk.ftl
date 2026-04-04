@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorAdministrativeClerk-name = spawn point
-ent-RMCRandomHumanoidSurvivorAdministrativeClerk-name = chances administrative clerk ghost role
+ent-RMCSpawnPointSurvivorAdministrativeClerk-name = точка появления
+ent-RMCRandomHumanoidSurvivorAdministrativeClerk-name = Шансы на роль призрака административного клерка

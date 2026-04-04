@@ -1,1 +1,1 @@
-ent-RMCAreaRover-name = UNS Rover
+ent-RMCAreaRover-name = УНС Ровер

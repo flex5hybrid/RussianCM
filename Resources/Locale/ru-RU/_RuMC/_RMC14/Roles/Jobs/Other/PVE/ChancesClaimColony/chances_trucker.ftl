@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorChancesTrucker-name = chances trucker spawn point
-ent-RMCRandomHumanoidSurvivorChancesTrucker-name = chances trucker ghost role
+ent-RMCSpawnPointSurvivorChancesTrucker-name = Шансы на точку появления дальнобойщика
+ent-RMCRandomHumanoidSurvivorChancesTrucker-name = Шансы, роль призрака дальнобойщика

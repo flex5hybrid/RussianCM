@@ -1,2 +1,2 @@
-ent-RMCCableHeavy = large power cable
-  .desc = This cable is tough. It cannot be cut with simple hand tools.
+ent-RMCCableHeavy = большой силовой кабель
+  .desc = Этот кабель жесткий. 

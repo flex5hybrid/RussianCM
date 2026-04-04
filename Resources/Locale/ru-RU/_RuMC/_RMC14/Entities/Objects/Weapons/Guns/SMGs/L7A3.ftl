@@ -1,5 +1,5 @@
-ent-RMCWeaponSMGL7A3-name = L7A3 Submachine Gun
-ent-RMCWeaponSMGL7A3-desc = RCM adopted variant of the M63 SMG, re-engineered for better weight, handling and accuracy. Typically used in CQB engagements such as building-clearing, where the L24A1 proved a tad too unwieldy for such tasks.
-ent-RMCMagazineSMGL7A3SquashHead-name = L7A3 Magazine Squash-Head (9mm)
-ent-RMCCartridgeSMG9mmSquashHead-name = 9mm Squash-Head Cartridge
-ent-RMCBulletSMG9mmSquashHead-name = 9mmSquash-HeadBullet
+ent-RMCWeaponSMGL7A3-name = Пистолет-пулемет L7A3
+ent-RMCWeaponSMGL7A3-desc = RCM принял вариант пистолета-пулемета M63, модернизированный для улучшения веса, управляемости и точности. 
+ent-RMCMagazineSMGL7A3SquashHead-name = Головка для магазина L7A3 (9 мм)
+ent-RMCCartridgeSMG9mmSquashHead-name = 9-мм картридж с плоской головкой
+ent-RMCBulletSMG9mmSquashHead-name = 9 ммСквош-ГоловаПуля

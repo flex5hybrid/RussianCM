@@ -1,7 +1,7 @@
-ent-CMGear = gear
-ent-CMRailing = retractable railing
-  .desc = That looks like it doesn't open easily.
-ent-CMCargoElevator = cargo elevator
-ent-CMASRSConsole = ASRS console
-  .desc = A console for the Automated Storage Retrieval System.
-ent-RMCASRSAccount = ASRS account
+ent-CMGear = механизм
+ent-CMRailing = выдвижные перила
+  .desc = Похоже, он не открывается легко.
+ent-CMCargoElevator = грузовой лифт
+ent-CMASRSConsole = Консоль АСРС
+  .desc = Консоль для автоматизированной поисковой системы хранения данных.
+ent-RMCASRSAccount = учетная запись АСРС

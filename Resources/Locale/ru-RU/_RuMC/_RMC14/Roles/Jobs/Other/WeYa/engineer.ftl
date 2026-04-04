@@ -1,2 +1,2 @@
-ent-RMCSpawnPointPMCEngineer = weya pmc engineer spawn point
-ent-RMCRandomHumanoidPMCEngineer = weya pmc ghost role engineer
+ent-RMCSpawnPointPMCEngineer = точка появления инженера Weya PMC
+ent-RMCRandomHumanoidPMCEngineer = инженер-призрак weya pmc

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPMCOperatorPVE = weya pmc operator spawn point
+ent-RMCSpawnPointPMCOperatorPVE = точка появления оператора Weya PMC

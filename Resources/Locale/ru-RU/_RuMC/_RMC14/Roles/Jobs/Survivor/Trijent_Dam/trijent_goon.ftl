@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetTrijentGoon = trijent goon colonist preset
-ent-RMCSpawnPointSurvivorTrijentGoon = trijent goon spawn point
+ent-RMCGearSurvivorPresetTrijentGoon = Пресет Trijent Goon Colonist
+ent-RMCSpawnPointSurvivorTrijentGoon = точка спавна триджентских головорезов

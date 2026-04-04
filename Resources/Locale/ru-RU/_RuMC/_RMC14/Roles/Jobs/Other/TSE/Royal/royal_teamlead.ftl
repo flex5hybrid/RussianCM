@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidRoyalMarinesTeamlead-name = royal crown marines ghost role team leader
+ent-RMCRandomHumanoidRoyalMarinesTeamlead-name = Роль призрака морской пехоты королевской короны, руководитель группы

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSPPPlatCoPVE = spp platoon commander spawn point
+ent-RMCSpawnPointSPPPlatCoPVE = точка спавна командира взвода спп

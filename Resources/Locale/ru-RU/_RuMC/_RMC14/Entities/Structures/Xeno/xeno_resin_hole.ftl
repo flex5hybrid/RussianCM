@@ -1,2 +1,2 @@
-ent-XenoResinHole = resin trap
-  .desc = It looks like a hidey hole.
+ent-XenoResinHole = смоляная ловушка
+  .desc = Похоже на тайник.

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorSolarisCorporateLiaison-name = survivor solaris coporate liaison spawn point
+ent-RMCSpawnPointSurvivorSolarisCorporateLiaison-name = Точка спавна кооператива Survivor Solaris

@@ -1,1 +1,1 @@
-ent-RMCPropPowerPort-name = mech bay power port
+ent-RMCPropPowerPort-name = порт питания мехотсека

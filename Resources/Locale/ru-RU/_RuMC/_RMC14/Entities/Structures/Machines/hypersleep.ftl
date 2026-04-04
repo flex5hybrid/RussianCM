@@ -1,2 +1,2 @@
-ent-CMHyperSleepChamber = hypersleep chamber
-  .desc = A large automated capsule with LED displays intended to put anyone inside into 'hypersleep', a form of non-cryogenic statis used on most ships, linked to a long-term hypersleep bay on a lower level.
+ent-CMHyperSleepChamber = камера гиперсна
+  .desc = Большая автоматизированная капсула со светодиодными дисплеями, предназначенная для того, чтобы погрузить любого внутри в «гиперсон» — форму некриогенного состояния, используемую на большинстве кораблей, связанную с отсеком для длительного гиперсна на нижнем уровне.

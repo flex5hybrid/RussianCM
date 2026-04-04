@@ -1,1 +1,1 @@
-ent-RMCSpawnPointParaTeamLeader-name = paramarine team leader spawn point
+ent-RMCSpawnPointParaTeamLeader-name = Точка появления лидера группы парамаринов

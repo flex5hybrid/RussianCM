@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetKutjevoEngineer = kutjevo engineer colonist preset
-ent-RMCSpawnPointSurvivorKutjevoEngineer = survivor kutjevo engineer spawn point
+ent-RMCGearSurvivorPresetKutjevoEngineer = Кутьевский инженер-колонист пресет
+ent-RMCSpawnPointSurvivorKutjevoEngineer = выживший инженер Кутьево, точка появления инженера

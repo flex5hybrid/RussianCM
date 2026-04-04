@@ -1,4 +1,4 @@
-ent-RMCMapInsertVaraderoCLFRaid-name = CLF Raid
-ent-RMCMapInsertVaraderoResturant-name = Resturant
-ent-RMCMapInsertVaraderoAltHospital-name = Alt. Hospital
-ent-RMCMapInsertVaraderoEngiHold-name = Engi Hold
+ent-RMCMapInsertVaraderoCLFRaid-name = CLF Рейд
+ent-RMCMapInsertVaraderoResturant-name = Ресторан
+ent-RMCMapInsertVaraderoAltHospital-name = Альт. 
+ent-RMCMapInsertVaraderoEngiHold-name = Энги Холд

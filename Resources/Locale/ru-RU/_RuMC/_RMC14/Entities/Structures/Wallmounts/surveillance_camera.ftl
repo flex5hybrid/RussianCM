@@ -1,5 +1,5 @@
-ent-RMCMonitorCameraLandingZone = landing zone camera
-ent-RMCMonitorCameraAlmayer = ship security cameras
-  .desc = Used to access the various cameras on the station.
-ent-RMCSurveillanceCameraAlmayer = ship-grade camera
-  .desc = It's used to monitor rooms.
+ent-RMCMonitorCameraLandingZone = камера зоны приземления
+ent-RMCMonitorCameraAlmayer = камеры наблюдения на корабле
+  .desc = Используется для доступа к различным камерам на станции.
+ent-RMCSurveillanceCameraAlmayer = камера корабельного класса
+  .desc = Он используется для наблюдения за помещениями.

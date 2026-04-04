@@ -1,2 +1,2 @@
-ent-RMCSmartFridge = smart chemical storage
-  .desc = A refrigerated storage unit for medicine and chemical storage.
+ent-RMCSmartFridge = умное хранение химикатов
+  .desc = Холодильный склад для хранения медикаментов и химикатов.

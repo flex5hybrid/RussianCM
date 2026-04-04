@@ -1,4 +1,4 @@
-ent-ColMarTechSGEquipment = ColMarTech squad Smart Gun equipment rack
-  .desc = An automated rack hooked up to a colossal storage of Squad Smart Gun standard-issue equipment.
-ent-ColMarTechSGGear = ColMarTech squad smart gun operator gear rack
-  .desc = An automated gear rack for Squad Smart Gun Operators.
+ent-ColMarTechSGEquipment = Стойка для оборудования Smart Gun отряда ColMarTech
+  .desc = Автоматизированная стойка, подключенная к огромному складу стандартного оборудования Squad Smart Gun.
+ent-ColMarTechSGGear = Стойка для снаряжения оператора умного оружия ColMarTech отряда
+  .desc = Автоматизированная зубчатая рейка для операторов Squad Smart Gun.

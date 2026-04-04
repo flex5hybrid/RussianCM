@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorChancesMedic-name = chances medic spawn point
-ent-RMCRandomHumanoidSurvivorChancesMedic-name = chances medic ghost role
+ent-RMCSpawnPointSurvivorChancesMedic-name = Шансы на точку появления медика
+ent-RMCRandomHumanoidSurvivorChancesMedic-name = Шанс, роль призрака медика

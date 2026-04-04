@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetSoroCivilian = sorokyne civilian preset
-ent-RMCSpawnPointSurvivorSoroCivilian = sorokyne civilian spawn point
+ent-RMCGearSurvivorPresetSoroCivilian = гражданский пресет сорокино
+ent-RMCSpawnPointSurvivorSoroCivilian = Сорокино — точка возрождения гражданских лиц

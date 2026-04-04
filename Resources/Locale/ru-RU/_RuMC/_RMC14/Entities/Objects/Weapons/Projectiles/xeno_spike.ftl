@@ -1,2 +1,2 @@
-ent-XenoSpikeProjectile-name = spike shard
-ent-XenoSpikeProjectile-desc = A sharp spike shard.
+ent-XenoSpikeProjectile-name = осколок шипа
+ent-XenoSpikeProjectile-desc = Осколок острого шипа.

@@ -1,2 +1,2 @@
-ent-CMBaseDoor = door
-ent-RMCBaseDoorInvincible = door
+ent-CMBaseDoor = дверь
+ent-RMCBaseDoorInvincible = дверь

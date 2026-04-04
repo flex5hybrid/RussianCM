@@ -1,1 +1,1 @@
-ent-CMSpawnPointForeconSniper = forecon sniper spawn point
+ent-CMSpawnPointForeconSniper = точка спавна снайпера Forecon

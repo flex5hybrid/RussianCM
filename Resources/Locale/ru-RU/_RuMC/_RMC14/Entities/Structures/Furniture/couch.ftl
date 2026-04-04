@@ -1,4 +1,4 @@
-ent-RMCCouchLeftBar = bar booth
-  .desc = An old wooden booth with red cushioning. There are stains in the cushions.
-ent-RMCCouchMid = couch
-  .desc = A piece of Swedish flat pack furniture, just dont ask the MTs for an Allen key.
+ent-RMCCouchLeftBar = барная будка
+  .desc = Старая деревянная будка с красной подкладкой. 
+ent-RMCCouchMid = диван
+  .desc = Кусок шведской плоской мебели, только не просите у МТ шестигранный ключ.

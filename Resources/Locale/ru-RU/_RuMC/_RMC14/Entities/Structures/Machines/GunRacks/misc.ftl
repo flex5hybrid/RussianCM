@@ -1,2 +1,2 @@
-ent-RMCGunRackM34IncineratorEmpty = M34 Incinerator rack
-  .desc = AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, UNMC comissioned racks with fixed slots which only fit M34 Incinerator Units. Some say they were cheaper, and some say the main reason was marine's ability to easily break anything more complex than a tungsten ball.
+ent-RMCGunRackM34IncineratorEmpty = Стойка для мусоросжигателя M34
+  .desc = Оружейная стойка производства AEGIS для хранения длинноствольного оружия. 

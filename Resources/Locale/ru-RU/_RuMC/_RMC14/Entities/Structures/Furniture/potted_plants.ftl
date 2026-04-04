@@ -1,2 +1,2 @@
-ent-CMPottedPlantBase = potted plant
-ent-CMPottedPlantRandom = random potted plant spawner
+ent-CMPottedPlantBase = горшечное растение
+ent-CMPottedPlantRandom = генератор случайных горшечных растений

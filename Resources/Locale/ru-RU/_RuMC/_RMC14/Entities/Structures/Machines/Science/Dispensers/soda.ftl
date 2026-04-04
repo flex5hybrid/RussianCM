@@ -1,2 +1,2 @@
-ent-CMDispenserSoda = soda fountain
-  .desc = A drink fabricating machine, capable of producing many sugary drinks with just one touch.
+ent-CMDispenserSoda = фонтанчик с газировкой
+  .desc = Машина для производства напитков, способная производить множество сладких напитков одним прикосновением.

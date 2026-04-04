@@ -1,6 +1,6 @@
-ent-RMCPodDoorAlmayerContainmentIndestructible = cell wall
-  .desc = A metal wall used to separate rooms and make up the ship.
-ent-RMCPodDoorNonOccluderIndestructible = podlock
-  .desc = That looks like it doesn't open easily.
-ent-RMCPodDoorIndestructible = podlock
-  .desc = That looks like it doesn't open easily.
+ent-RMCPodDoorAlmayerContainmentIndestructible = клеточная стенка
+  .desc = Металлическая стена, используемая для разделения комнат и создания корабля.
+ent-RMCPodDoorNonOccluderIndestructible = подлок
+  .desc = Похоже, он не открывается легко.
+ent-RMCPodDoorIndestructible = подлок
+  .desc = Похоже, он не открывается легко.

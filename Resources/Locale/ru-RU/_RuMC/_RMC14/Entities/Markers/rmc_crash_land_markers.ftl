@@ -1,2 +1,2 @@
-ent-RMCDeleteCrashLandBarrier = delete crash landable on touch barrier
-ent-RMCCrashLandBarrier = crash land on touch barrier
+ent-RMCDeleteCrashLandBarrier = удалить барьер аварийной посадки при касании
+ent-RMCCrashLandBarrier = аварийная посадка при касании барьера

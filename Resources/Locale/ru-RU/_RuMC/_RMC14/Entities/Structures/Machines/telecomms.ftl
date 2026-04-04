@@ -1,2 +1,2 @@
-ent-CMTelecomServer = telecommunication server
-  .desc = When powered and filled with encryption keys it allows radio headset communication.
+ent-CMTelecomServer = телекоммуникационный сервер
+  .desc = Когда он включен и заполнен ключами шифрования, он позволяет общаться через радиогарнитуру.

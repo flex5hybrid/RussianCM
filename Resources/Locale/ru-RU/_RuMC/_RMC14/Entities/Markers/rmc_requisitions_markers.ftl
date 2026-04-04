@@ -1,1 +1,1 @@
-ent-RMCRequisitionsChairMarker = requisitions chair marker
+ent-RMCRequisitionsChairMarker = Маркер стула для заявок

@@ -1,4 +1,4 @@
-ent-CMWindoorAssemblySecure = secure windoor assembly
-  .desc = It opens, it closes, and you can see through it! This one looks tough.
-ent-CMWindoorAssembly = windoor assembly
-  .desc = It opens, it closes, and you can see through it!
+ent-CMWindoorAssemblySecure = надежный монтаж оконной двери
+  .desc = Он открывается, закрывается, и вы можете видеть сквозь него! 
+ent-CMWindoorAssembly = оконная сборка
+  .desc = Он открывается, закрывается, и вы можете видеть сквозь него!

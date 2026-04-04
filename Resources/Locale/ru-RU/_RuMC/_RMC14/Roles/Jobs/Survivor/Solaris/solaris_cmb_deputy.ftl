@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorSolarisCMBDeputy-name = solaris cmb deputy spawn point
+ent-RMCSpawnPointSurvivorSolarisCMBDeputy-name = точка появления заместителя Solaris CMB

@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorChancesMiner-name = chances miner spawn point
-ent-RMCRandomHumanoidSurvivorChancesMiner-name = chances mining surveyor ghost role
+ent-RMCSpawnPointSurvivorChancesMiner-name = Шансы на точку появления шахтера
+ent-RMCRandomHumanoidSurvivorChancesMiner-name = Шанс роль призрака маркшейдера

@@ -1,1 +1,1 @@
-ent-CMSpawnPointRCMPVEScoutSniper-name = RCM scout sniper spawn point
+ent-CMSpawnPointRCMPVEScoutSniper-name = Точка возрождения снайпера-разведчика RCM

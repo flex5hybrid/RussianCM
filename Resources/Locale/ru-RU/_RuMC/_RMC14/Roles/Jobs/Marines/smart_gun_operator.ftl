@@ -1,1 +1,1 @@
-ent-CMSpawnPointSmartGunOperator = smart gun operator spawn point
+ent-CMSpawnPointSmartGunOperator = точка появления оператора умного оружия

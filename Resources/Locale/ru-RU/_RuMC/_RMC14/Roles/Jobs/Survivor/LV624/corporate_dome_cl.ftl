@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetLV624CorporateDomeCL = lv624 colonist preset
-ent-RMCSpawnPointSurvivorLV624CorporateDomeCL = special survivor lv624 coporate liaison spawn point
+ent-RMCGearSurvivorPresetLV624CorporateDomeCL = Пресет колониста lv624
+ent-RMCSpawnPointSurvivorLV624CorporateDomeCL = Специальный выживший lv624 точка спавна совместной связи

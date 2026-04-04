@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorUNMCRecruiter-name = survivor unmc recruiter spawn point
+ent-RMCSpawnPointSurvivorUNMCRecruiter-name = точка спавна рекрутера unmc, выжившего

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointTSEPAConstable = tsepa constable spawn point
+ent-RMCSpawnPointTSEPAConstable = точка появления констебля цепы

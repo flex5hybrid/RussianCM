@@ -1,1 +1,1 @@
-ent-RMCSpawnPointFORECONPVEAssistantSL = forecon assistant squad lead spawn point
+ent-RMCSpawnPointFORECONPVEAssistantSL = Место появления руководителя отряда помощника форэкона

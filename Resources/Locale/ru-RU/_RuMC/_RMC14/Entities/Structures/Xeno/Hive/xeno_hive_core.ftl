@@ -1,6 +1,6 @@
-ent-HivePylonXeno = hive pylon
-  .desc = A towering spike of resin. Its base pulsates with large tendrils.
-ent-HiveCoreXenoConstructionNode = hive core
-  .desc = A strange wriggling lump. Looks like a marker for something.
-ent-HiveCoreXeno = hive core
-  .desc = A giant pulsating mound of mass. It looks very much alive.
+ent-HivePylonXeno = пилон улья
+  .desc = Высокий шип смолы. 
+ent-HiveCoreXenoConstructionNode = ядро улья
+  .desc = Странный извивающийся комок. 
+ent-HiveCoreXeno = ядро улья
+  .desc = Гигантская пульсирующая насыпь массы. 

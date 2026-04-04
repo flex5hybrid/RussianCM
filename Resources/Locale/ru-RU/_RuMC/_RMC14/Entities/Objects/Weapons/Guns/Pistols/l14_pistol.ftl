@@ -1,4 +1,4 @@
-ent-RMCWeaponPistolL14-name = L14 combat pistol
-ent-RMCWeaponPistolL14-desc = The L14 is the standard issue sidearm of the Royal Crown Marines, and the product of an inordinate amount of time and capital investment by the TSE. It is a compact but accurate high-capacity combat pistol chambered in 9mm, capable of tight two-round bursts. This piece can usually be found on junior officers and supporting roles within the RCM.
-ent-RMCMagazinePistolL14-name = L14 magazine (9mm)
-ent-RMCMagazinePistolL14AP-name = L14 AP magazine (9mm)
+ent-RMCWeaponPistolL14-name = Боевой Пистолет L14
+ent-RMCWeaponPistolL14-desc = L14 является стандартным личным оружием Королевской морской пехоты и является результатом непомерных затрат времени и капиталовложений TSE. 
+ent-RMCMagazinePistolL14-name = Магазин L14 (9 мм)
+ent-RMCMagazinePistolL14AP-name = Магазин L14 AP (9 мм)

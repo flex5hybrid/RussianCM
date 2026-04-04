@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorShivasCorporateLiaison-name = survivor shivas coporate liaison spawn point
+ent-RMCSpawnPointSurvivorShivasCorporateLiaison-name = точка спавна кооператива выжившего Шивы

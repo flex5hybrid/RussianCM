@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetArmyReservist = people's armed police officer preset
-ent-RMCSpawnPointSurvivorArmyReservist = army reservist spawn point
+ent-RMCGearSurvivorPresetArmyReservist = Предварительная настройка народного вооруженного полицейского
+ent-RMCSpawnPointSurvivorArmyReservist = точка появления армейских резервистов

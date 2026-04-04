@@ -1,1 +1,1 @@
-ent-CMSpawnPointRCMPVEBombSpec-name = RCM bombardment specialist spawn point
+ent-CMSpawnPointRCMPVEBombSpec-name = Точка появления специалиста по бомбардировкам RCM

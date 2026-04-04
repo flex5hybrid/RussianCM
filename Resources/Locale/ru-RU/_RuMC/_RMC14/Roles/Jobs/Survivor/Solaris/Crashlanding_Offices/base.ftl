@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetPMCGun-name = pmc survivor weapons preset
-ent-RMCGearSurvivorPresetPMCBase-name = pmc base survivor preset
+ent-RMCGearSurvivorPresetPMCGun-name = Предварительная настройка оружия выжившего ЧВК
+ent-RMCGearSurvivorPresetPMCBase-name = Пресет выжившего на базе ЧВК

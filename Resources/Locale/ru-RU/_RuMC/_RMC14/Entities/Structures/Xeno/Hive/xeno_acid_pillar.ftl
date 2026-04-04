@@ -1,2 +1,2 @@
-ent-HiveAcidPillarXeno-name = acid pillar
-ent-HiveAcidPillarXeno-desc = A tall pillar that is capable of firing weak acid.
+ent-HiveAcidPillarXeno-name = кислотный столб
+ent-HiveAcidPillarXeno-desc = Высокий столб, способный стрелять слабой кислотой.

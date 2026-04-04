@@ -1,2 +1,2 @@
-ent-RMCStairs = stairs
-  .desc = The greatest invention since rocket-propelled grenades.
+ent-RMCStairs = лестница
+  .desc = Величайшее изобретение со времен реактивных гранат.

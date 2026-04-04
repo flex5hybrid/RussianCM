@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetLV624SecurityGuard = lv624 security guard colonist preset
-ent-RMCSpawnPointSurvivorLV624SecurityGuard = survivor lv624 security guard spawn point
+ent-RMCGearSurvivorPresetLV624SecurityGuard = lv624 пресет охранника-колониста
+ent-RMCSpawnPointSurvivorLV624SecurityGuard = Survivor lv624 точка спавна охранника

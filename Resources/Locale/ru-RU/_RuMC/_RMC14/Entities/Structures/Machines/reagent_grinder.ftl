@@ -1,1 +1,1 @@
-ent-RMCKitchenReagentGrinder = All-In-One Grinder
+ent-RMCKitchenReagentGrinder = Универсальная шлифовальная машина

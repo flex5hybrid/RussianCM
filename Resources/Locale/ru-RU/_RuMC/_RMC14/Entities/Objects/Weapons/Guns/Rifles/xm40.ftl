@@ -1,4 +1,4 @@
-ent-RMCMagazineRifleXM40HEAP = XM40 HEAP magazine (10x24mm)
-ent-RMCMagazineRifleXM40AP = XM40 AP magazine (10x24mm)
-ent-RMCWeaponRifleXM40 = XM40 assault rifle
-  .desc = One of the experimental predecessors to the M54C line that never saw widespread adoption beyond elite marine units. Of the rifles in the UNMC inventory that are still in production, this is the only one to feature an integrated suppressor. It can accept M54C MK2 magazines, but also features its own proprietary magazine system. Extremely lethal in burstfire mode.
+ent-RMCMagazineRifleXM40HEAP = Магазин XM40 HEAP (10x24 мм)
+ent-RMCMagazineRifleXM40AP = Магазин XM40 AP (10x24 мм)
+ent-RMCWeaponRifleXM40 = Штурмовая винтовка ХМ40
+  .desc = Один из экспериментальных предшественников линейки M54C, который так и не получил широкого распространения за пределами элитных подразделений Морпеха. 

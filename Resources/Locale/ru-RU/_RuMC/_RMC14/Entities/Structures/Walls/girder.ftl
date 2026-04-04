@@ -1,3 +1,3 @@
-ent-RMCGirderDisplaced = displaced
-ent-CMGirderReinforced = reinforced girder
-ent-CMGirder = girder
+ent-RMCGirderDisplaced = перемещенный
+ent-CMGirderReinforced = усиленная балка
+ent-CMGirder = балка

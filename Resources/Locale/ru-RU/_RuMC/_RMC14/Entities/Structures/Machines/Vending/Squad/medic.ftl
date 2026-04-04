@@ -1,6 +1,6 @@
-ent-RMCColMarTechMedicalEquipmentPVE = ColMarTech squad medical equipment rack
-  .desc = An automated rack hooked up to a colossal storage of hospital corpsman standard-issue equipment.
-ent-ColMarTechMedicalEquipment = ColMarTech squad medical equipment rack
-  .desc = An automated rack hooked up to a colossal storage of hospital corpsman standard-issue equipment.
-ent-ColMarTechMedicalGear = ColMarTech squad medical gear rack
-  .desc = An automated gear rack for hospital corpsmen.
+ent-RMCColMarTechMedicalEquipmentPVE = Стойка для медицинского оборудования отряда ColMarTech
+  .desc = Автоматизированный стеллаж, подключенный к огромному складу стандартного больничного оборудования.
+ent-ColMarTechMedicalEquipment = Стойка для медицинского оборудования отряда ColMarTech
+  .desc = Автоматизированный стеллаж, подключенный к огромному складу стандартного больничного оборудования.
+ent-ColMarTechMedicalGear = Стойка для медицинского оборудования ColMarTech
+  .desc = Автоматизированная зубчатая стойка для санитаров госпиталя.

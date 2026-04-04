@@ -1,5 +1,5 @@
-ent-RMCRandomHumanoidPMCStandardM54C2 = weya pmc ghost role standard
-ent-RMCSpawnPointPMCStandardSSG45 = weya pmc operator spawn point
-ent-RMCRandomHumanoidPMCStandardSSG45 = weya pmc ghost role standard
-ent-RMCSpawnPointPMCStandardM63B2 = weya pmc operator spawn point
-ent-RMCRandomHumanoidPMCStandardM63B2 = weya pmc ghost role standard
+ent-RMCRandomHumanoidPMCStandardM54C2 = стандарт роли призрака weya pmc
+ent-RMCSpawnPointPMCStandardSSG45 = точка появления оператора Weya PMC
+ent-RMCRandomHumanoidPMCStandardSSG45 = стандарт роли призрака weya pmc
+ent-RMCSpawnPointPMCStandardM63B2 = точка появления оператора Weya PMC
+ent-RMCRandomHumanoidPMCStandardM63B2 = стандарт роли призрака weya pmc

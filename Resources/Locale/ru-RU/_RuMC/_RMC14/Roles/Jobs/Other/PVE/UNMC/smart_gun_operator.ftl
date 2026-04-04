@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPVESmartGunOperator = PVE smart gun operator spawn point
+ent-RMCSpawnPointPVESmartGunOperator = Точка появления оператора умного оружия PVE

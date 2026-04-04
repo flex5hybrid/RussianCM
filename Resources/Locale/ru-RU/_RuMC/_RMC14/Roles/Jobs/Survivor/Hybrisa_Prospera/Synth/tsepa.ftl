@@ -1,1 +1,1 @@
-ent-RMCSurvivorPresetHybrisaSynthTSEPA-name = survivor synth hybrisa tsepa colonist preset
+ent-RMCSurvivorPresetHybrisaSynthTSEPA-name = пресет Survivor Synth Hybrisa Tsepa Colonist

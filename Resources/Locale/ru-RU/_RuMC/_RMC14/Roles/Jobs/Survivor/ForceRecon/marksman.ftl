@@ -1,2 +1,2 @@
-ent-RMCSurvivorPresetForeconMarksman = forecon marksman survivor preset
-ent-CMSpawnPointForeconMarksman = forecon marksman spawn point
+ent-RMCSurvivorPresetForeconMarksman = Предустановка выживания стрелка Forecon
+ent-CMSpawnPointForeconMarksman = точка появления стрелка Forecon

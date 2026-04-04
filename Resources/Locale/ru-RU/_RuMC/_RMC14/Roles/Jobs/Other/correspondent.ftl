@@ -1,2 +1,2 @@
-ent-CMGuidebookRoleCorrespondent = Correspondent
-ent-CMSpawnPointCorrespondent = correspondent spawn point
+ent-CMGuidebookRoleCorrespondent = Корреспондент
+ent-CMSpawnPointCorrespondent = соответствующая точка появления

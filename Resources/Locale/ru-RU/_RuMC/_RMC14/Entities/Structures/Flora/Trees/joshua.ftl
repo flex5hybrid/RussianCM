@@ -1,2 +1,2 @@
-ent-RMCTreeJoshua = joshua tree
-  .desc = A tall tree covered in spiky-like needles, covering its trunk.
+ent-RMCTreeJoshua = Дерево Джошуа
+  .desc = Высокое дерево, покрытое колючими иголками, покрывающими его ствол.

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorShivasILRCPeacekeeper-name = survivor shivas ILRC peacekeeper spawn point
+ent-RMCSpawnPointSurvivorShivasILRCPeacekeeper-name = выживший Шивас точка возрождения миротворца ILRC

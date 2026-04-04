@@ -1,6 +1,6 @@
-ent-RMCLockerFridgeFish = fish
-ent-RMCLockerFridgeMeat = meat
-ent-RMCLockerFridgeDry = dry
-ent-RMCLockerFridgeOrganic = organic
-ent-RMCLockerFridgeGroceries = groceries
-ent-CMLockerFridge = fridge
+ent-RMCLockerFridgeFish = рыба
+ent-RMCLockerFridgeMeat = мясо
+ent-RMCLockerFridgeDry = сухой
+ent-RMCLockerFridgeOrganic = органический
+ent-RMCLockerFridgeGroceries = продукты
+ent-CMLockerFridge = холодильник

@@ -1,3 +1,3 @@
-ent-RMCSpawnPointSurvivorFlightOperator-name = survivor flight operator spawn point
-ent-RMCRandomHumanoidSurvivorFlightOperator-name = flight operator colonist ghost role
-ent-RMCGearSurvivorPresetFlightOperator-name = flight operator colonist preset
+ent-RMCSpawnPointSurvivorFlightOperator-name = точка появления оператора выжившего
+ent-RMCRandomHumanoidSurvivorFlightOperator-name = Роль призрака колониста-оператора полета
+ent-RMCGearSurvivorPresetFlightOperator-name = предустановка колониста авиаоператора

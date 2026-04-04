@@ -1,3 +1,3 @@
-ent-RMCGuidebookRoleQM = The QM
-  .desc = The Quartermaster.
-ent-CMSpawnPointQuartermaster = quartermaster spawn point
+ent-RMCGuidebookRoleQM = МК
+  .desc = Квартирмейстер.
+ent-CMSpawnPointQuartermaster = точка появления интенданта

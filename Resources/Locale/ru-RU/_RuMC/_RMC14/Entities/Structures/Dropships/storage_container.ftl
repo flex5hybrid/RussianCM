@@ -1,2 +1,2 @@
-ent-RMCDropshipStorageCompartment-name = storage compartment
-ent-RMCDropshipStorageCompartment-desc = A wide storage unit to allow its users to store a wide variety of objects, from equipment to weapons and their ammo. Very versatile.
+ent-RMCDropshipStorageCompartment-name = отсек для хранения
+ent-RMCDropshipStorageCompartment-desc = Просторное хранилище, позволяющее пользователям хранить самые разнообразные предметы, от снаряжения до оружия и боеприпасов к нему. 

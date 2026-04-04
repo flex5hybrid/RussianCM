@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorSolarisPMCGunner-name = special survivor crashlanding offices pmc gunner spawn point
-ent-RMCGearSurvivorPresetPMCGunner-name = pmc standard survivor preset
+ent-RMCSpawnPointSurvivorSolarisPMCGunner-name = специальные офисы выживших после аварийной посадки точка спавна наводчика ЧВК
+ent-RMCGearSurvivorPresetPMCGunner-name = Стандартный набор настроек выживания PMC

@@ -1,1 +1,1 @@
-ent-CMRandomPosterAny = random poster spawner
+ent-CMRandomPosterAny = случайный спаунер постеров

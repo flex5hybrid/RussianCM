@@ -1,1 +1,1 @@
-ent-CMSpawnPointSPPSOFMedic-name = special survivor spp sof medic spawn point
+ent-CMSpawnPointSPPSOFMedic-name = Специальная точка возрождения медика SPP для выживших

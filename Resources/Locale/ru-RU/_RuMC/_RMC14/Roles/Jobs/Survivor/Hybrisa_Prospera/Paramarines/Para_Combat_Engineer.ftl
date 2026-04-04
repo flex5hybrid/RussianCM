@@ -1,1 +1,1 @@
-ent-RMCSpawnPointParaAssaultEngineer-name = paramarine assault engineer spawn point
+ent-RMCSpawnPointParaAssaultEngineer-name = Точка появления инженера-парамарина

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorShivasDoctor-name = survivor shivas doctor spawn point
+ent-RMCSpawnPointSurvivorShivasDoctor-name = точка спавна доктора Шивы, выжившего

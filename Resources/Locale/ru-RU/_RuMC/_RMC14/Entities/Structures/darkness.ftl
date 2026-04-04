@@ -1,1 +1,1 @@
-ent-RMCPerspectiveDarkness-name = darkness
+ent-RMCPerspectiveDarkness-name = темнота

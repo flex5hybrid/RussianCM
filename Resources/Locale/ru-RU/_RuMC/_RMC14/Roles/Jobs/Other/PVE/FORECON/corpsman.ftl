@@ -1,1 +1,1 @@
-ent-RMCSpawnPointFORECONPVECorpsman = forecon corpsman spawn point
+ent-RMCSpawnPointFORECONPVECorpsman = точка появления санитара форэкона

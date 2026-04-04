@@ -1,2 +1,2 @@
-ent-RMCIceSlabTrayBase = ice slab tray
-  .desc = It is a tray filled with slabs of dark ice.
+ent-RMCIceSlabTrayBase = лоток для ледяных плит
+  .desc = Это поднос, наполненный кусочками темного льда.

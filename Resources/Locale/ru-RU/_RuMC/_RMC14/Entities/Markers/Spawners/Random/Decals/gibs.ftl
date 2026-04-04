@@ -1,2 +1,2 @@
-ent-RMCDecalSpawnerGibsDrone-name = gibs spawner
-ent-RMCDecalSpawnerGibsLesserDrone-name = gibs spawner
+ent-RMCDecalSpawnerGibsDrone-name = спаунер гибов
+ent-RMCDecalSpawnerGibsLesserDrone-name = спаунер гибов

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSPPSquadLeadPVE = weya pmc team lead spawn point
+ent-RMCSpawnPointSPPSquadLeadPVE = точка появления руководителя команды weya pmc

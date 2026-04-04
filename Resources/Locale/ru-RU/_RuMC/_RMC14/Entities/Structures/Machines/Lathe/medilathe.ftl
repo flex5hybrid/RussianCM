@@ -1,2 +1,2 @@
-ent-RMCMedilathe = medilathe
-  .desc = A specialized autolathe made for printing medical items.
+ent-RMCMedilathe = медилат
+  .desc = Специализированный токарный станок, предназначенный для печати изделий медицинского назначения.

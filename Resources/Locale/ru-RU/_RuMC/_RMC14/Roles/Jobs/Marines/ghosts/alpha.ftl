@@ -1,7 +1,7 @@
-ent-RMCRandomHumanoidAlphaWeaponsSpecialist = alpha ghost role weapons specialist
-ent-RMCRandomHumanoidAlphaSquadLeader = alpha ghost role squad leader
-ent-RMCRandomHumanoidAlphaSmartGunOperator = alpha ghost role smart gun operator
-ent-RMCRandomHumanoidAlphaRifleman = alpha ghost role rifleman
-ent-RMCRandomHumanoidAlphaHospitalCorpsman = alpha ghost role hospital corpsman
-ent-RMCRandomHumanoidAlphaFireteamLeader = alpha ghost role fireteam leader
-ent-RMCRandomHumanoidAlphaCombatTech = alpha ghost role combat technician
+ent-RMCRandomHumanoidAlphaWeaponsSpecialist = специалист по оружию в роли альфа-призрака
+ent-RMCRandomHumanoidAlphaSquadLeader = лидер отряда в роли альфа-призрака
+ent-RMCRandomHumanoidAlphaSmartGunOperator = роль альфа-призрака, оператор умного оружия
+ent-RMCRandomHumanoidAlphaRifleman = роль альфа-призрака стрелок
+ent-RMCRandomHumanoidAlphaHospitalCorpsman = роль альфа-призрака, санитар больницы
+ent-RMCRandomHumanoidAlphaFireteamLeader = роль альфа-призрака, командир боевой группы
+ent-RMCRandomHumanoidAlphaCombatTech = Боевой техник в роли альфа-призрака

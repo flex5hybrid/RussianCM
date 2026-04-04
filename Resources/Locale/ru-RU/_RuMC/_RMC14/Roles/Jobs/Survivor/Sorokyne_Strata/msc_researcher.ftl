@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorMSCResearcher-name = ministry of space colonisation researcher spawn point
-ent-RMCGearSurvivorPresetMSCResearcher-name = ministry of space colonisation researcher preset
+ent-RMCSpawnPointSurvivorMSCResearcher-name = Точка возрождения исследователя колонизации Министерства космоса
+ent-RMCGearSurvivorPresetMSCResearcher-name = Предварительная настройка исследователя колонизации Министерства космического пространства

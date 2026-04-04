@@ -1,1 +1,1 @@
-ent-CMSpawnPointResearcher = researcher spawn point
+ent-CMSpawnPointResearcher = точка появления исследователя

@@ -1,7 +1,7 @@
-ent-RMCRandomHumanoidIntelWeaponsSpecialist = intel ghost role weapons specialist
-ent-RMCRandomHumanoidIntelSquadLeader = intel ghost role squad leader
-ent-RMCRandomHumanoidIntelSmartGunOperator = intel ghost role smart gun operator
-ent-RMCRandomHumanoidIntelRifleman = intel ghost role rifleman
-ent-RMCRandomHumanoidIntelHospitalCorpsman = intel ghost role hospital corpsman
-ent-RMCRandomHumanoidIntelFireteamLeader = intel ghost role fireteam leader
-ent-RMCRandomHumanoidIntelCombatTech = intel ghost role combat technician
+ent-RMCRandomHumanoidIntelWeaponsSpecialist = специалист по оружию для ролей призраков Intel
+ent-RMCRandomHumanoidIntelSquadLeader = лидер отряда разведки-призрака
+ent-RMCRandomHumanoidIntelSmartGunOperator = Роль призрака Intel, оператор умного оружия
+ent-RMCRandomHumanoidIntelRifleman = роль стрелка в роли призрака разведки
+ent-RMCRandomHumanoidIntelHospitalCorpsman = Роль призрака в разведке: санитар больницы
+ent-RMCRandomHumanoidIntelFireteamLeader = роль призрака в разведке, лидер боевой группы
+ent-RMCRandomHumanoidIntelCombatTech = боевой техник в роли призрака Intel

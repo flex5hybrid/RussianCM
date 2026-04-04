@@ -1,1 +1,1 @@
-ent-RMCTileFire = fire
+ent-RMCTileFire = огонь

@@ -1,4 +1,4 @@
-ent-RMCStructureLatticeDouble = structural lattice
-  .desc = Like rebar, but in space.
-ent-RMCStructureLattice = structural lattice
-  .desc = Like rebar, but in space.
+ent-RMCStructureLatticeDouble = структурная решетка
+  .desc = Как арматура, но в космосе.
+ent-RMCStructureLattice = структурная решетка
+  .desc = Как арматура, но в космосе.

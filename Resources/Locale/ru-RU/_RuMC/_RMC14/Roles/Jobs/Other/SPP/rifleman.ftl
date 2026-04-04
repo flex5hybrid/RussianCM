@@ -1,2 +1,2 @@
-ent-RMCRandomHumanoidSPPRiflemanFriendly = spp ghost role rifleman
-ent-RMCRandomHumanoidSPPRiflemanHostile = spp ghost role rifleman
+ent-RMCRandomHumanoidSPPRiflemanFriendly = spp роль призрака стрелок
+ent-RMCRandomHumanoidSPPRiflemanHostile = spp роль призрака стрелок

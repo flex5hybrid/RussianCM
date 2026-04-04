@@ -1,3 +1,3 @@
-ent-RMCRandomHumanoidSurvivorSecurity = security colonist ghost role
-ent-RMCSurvivorPresetSecurity = security colonist preset
-ent-RMCSpawnPointSurvivorSecurity = survivor security spawn point
+ent-RMCRandomHumanoidSurvivorSecurity = роль призрака колониста службы безопасности
+ent-RMCSurvivorPresetSecurity = настройки колониста службы безопасности
+ent-RMCSpawnPointSurvivorSecurity = точка появления службы безопасности выжившего

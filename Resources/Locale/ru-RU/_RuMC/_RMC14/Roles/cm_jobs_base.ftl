@@ -1,4 +1,4 @@
-ent-CMSpawnPointXenoLeader = xeno leader spawn point
-  .desc = A RMC14 spawner. Used for xenos Queens.
-ent-CMSpawnPointXeno = xeno spawn point
-  .desc = A RMC14 spawner. Used for xenos.
+ent-CMSpawnPointXenoLeader = точка появления лидера ксеносов
+  .desc = Спаунер RMC14. 
+ent-CMSpawnPointXeno = точка спавна ксеносов
+  .desc = Спаунер RMC14. 

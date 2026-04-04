@@ -1,6 +1,6 @@
-ent-RMCPlatformShivaRockCornerSmall = ice rock corner
-  .desc = A solid chunk of desolate rocks and ice.
-ent-RMCPlatformShivaRockBroken = destroyed ice rock edge
-  .desc = A solid chunk of desolate rocks and ice. Looks like you could climb it with some difficulty. It has been destroyed.
-ent-RMCPlatformShivaRock = ice rock edge
-  .desc = A solid chunk of desolate rocks and ice. Looks like you could climb it with some difficulty.
+ent-RMCPlatformShivaRockCornerSmall = уголок ледяной скалы
+  .desc = Твердый кусок пустынных камней и льда.
+ent-RMCPlatformShivaRockBroken = разрушенный край ледяной скалы
+  .desc = Твердый кусок пустынных камней и льда. 
+ent-RMCPlatformShivaRock = край ледяной скалы
+  .desc = Твердый кусок пустынных камней и льда. 

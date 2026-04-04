@@ -1,5 +1,5 @@
-ent-CMFilingCabinetChestWood = wooden chest drawer
-ent-CMFilingCabinetChest = chest drawer
-ent-CMFilingCabinetTallWood = tall wooden filing cabinet
-ent-CMFilingCabinetTall = tall filing cabinet
-ent-CMFilingCabinet = filing cabinet
+ent-CMFilingCabinetChestWood = деревянный комод
+ent-CMFilingCabinetChest = ящик комода
+ent-CMFilingCabinetTallWood = высокий деревянный шкаф для документов
+ent-CMFilingCabinetTall = высокий шкаф для документов
+ent-CMFilingCabinet = шкаф для документов

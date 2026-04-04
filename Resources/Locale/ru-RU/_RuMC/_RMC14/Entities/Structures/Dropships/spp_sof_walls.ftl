@@ -1,1 +1,1 @@
-ent-RMCBaseSPPSOFDropshipWall-name = SPP-DS-3 'Voron' wall
+ent-RMCBaseSPPSOFDropshipWall-name = СПП-ДС-3 Стенка "Ворон"

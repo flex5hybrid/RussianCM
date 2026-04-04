@@ -1,1 +1,1 @@
-ent-RMCAirlockGlassSecurityLockedTSEPAAlt = airlock
+ent-RMCAirlockGlassSecurityLockedTSEPAAlt = шлюзовая камера

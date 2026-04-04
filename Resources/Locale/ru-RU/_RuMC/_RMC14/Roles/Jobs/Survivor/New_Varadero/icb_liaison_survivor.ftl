@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetICB = icb colonist preset
-ent-RMCSpawnPointSurvivorVaraderoICB = survivor icb spawn point
+ent-RMCGearSurvivorPresetICB = предустановка колониста icb
+ent-RMCSpawnPointSurvivorVaraderoICB = точка появления выжившего icb

@@ -1,2 +1,2 @@
-ent-RMCBackpackBroiler-name = Broiler-T flexible refueling system
-ent-RMCBackpackBroiler-desc = A specialized back harness that carries the Broiler-T flexible refueling system. Designed by and for UNMC Pyrotechnicians.
+ent-RMCBackpackBroiler-name = Гибкая система заправки «Бройлер-Т»
+ent-RMCBackpackBroiler-desc = Специализированная задняя подвеска, на которой установлена ​​гибкая система заправки «Бройлер-Т». 

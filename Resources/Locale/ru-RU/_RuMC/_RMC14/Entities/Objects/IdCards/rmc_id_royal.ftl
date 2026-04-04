@@ -1,1 +1,1 @@
-ent-RMCIDRoyalMarines = royal marine dogtags
+ent-RMCIDRoyalMarines = королевские жетоны Морпех

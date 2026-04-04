@@ -1,4 +1,4 @@
-ent-CMWindowShivaIce = thin ice wall
-  .desc = It is very thin.
-ent-CMWindowShiva = poly-kevlon framed window
-  .desc = A semi-transparent (not entirely opaque) pane of material set into a poly-kevlon frame. Very smashable.
+ent-CMWindowShivaIce = тонкая ледяная стена
+  .desc = Он очень тонкий.
+ent-CMWindowShiva = окно с рамой из поликевлона
+  .desc = Полупрозрачная (не полностью непрозрачная) панель материала, заключенная в рамку из поликевлона. 

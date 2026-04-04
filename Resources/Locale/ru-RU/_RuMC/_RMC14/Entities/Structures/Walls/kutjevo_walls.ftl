@@ -1,8 +1,8 @@
-ent-RMCWallKutjevoHull = heavy reinforced colony wall
-  .desc = Dusty worn down walls that were once built to last. This one is indestructible.
-ent-RMCWallKutjevoReinforced = reinforced colony wall
-  .desc = Dusty worn down walls that were once built to last. This one is reinforced
-ent-RMCWallKutjevo = colony wall
-  .desc = Dusty worn down walls that were once built to last.
-ent-RMCWallKutjevoRock = rock wall
-  .desc = Tall sandy rocks. Imposing. Impressive. Attention grabbing.
+ent-RMCWallKutjevoHull = тяжелая укрепленная стена колонии
+  .desc = Пыльные обветшалые стены, которые когда-то были построены на века. 
+ent-RMCWallKutjevoReinforced = усиленная стена колонии
+  .desc = Пыльные обветшалые стены, которые когда-то были построены на века. 
+ent-RMCWallKutjevo = стена колонии
+  .desc = Пыльные обветшалые стены, которые когда-то были построены на века.
+ent-RMCWallKutjevoRock = каменная стена
+  .desc = Высокие песчаные скалы. 

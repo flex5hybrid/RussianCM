@@ -1,1 +1,1 @@
-ent-RMCMarkerAreaLabel = area
+ent-RMCMarkerAreaLabel = область

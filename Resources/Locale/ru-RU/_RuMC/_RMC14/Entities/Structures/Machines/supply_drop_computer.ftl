@@ -1,3 +1,3 @@
-ent-RMCSupplyDropPadBase = supply drop pad
-ent-RMCSupplyDropConsole = supply drop console
-  .desc = An old-fashioned computer hooked into the nearby Supply Drop system.
+ent-RMCSupplyDropPadBase = площадка для поставок
+ent-RMCSupplyDropConsole = консоль сброса припасов
+  .desc = Старомодный компьютер, подключенный к ближайшей системе доставки припасов.

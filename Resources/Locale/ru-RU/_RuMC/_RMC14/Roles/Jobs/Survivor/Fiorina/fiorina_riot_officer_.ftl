@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorFiorinaRiotOfficer = survivor fiorina riot officer spawn point
+ent-RMCSpawnPointSurvivorFiorinaRiotOfficer = точка возрождения выжившего офицера по охране общественного порядка Фиорины

@@ -1,1 +1,1 @@
-ent-RMCPurpleLightning-name = Purple Lightning
+ent-RMCPurpleLightning-name = Фиолетовая молния

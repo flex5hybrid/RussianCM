@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorCrashlandingOfficesLeader-name = special survivor crashlanding offices pmc leader spawn point
+ent-RMCSpawnPointSurvivorCrashlandingOfficesLeader-name = Специальные офисы аварийной посадки выживших точка спавна лидера ЧВК

@@ -1,2 +1,2 @@
-ent-RMCBargeFloat = Barge Float
-  .desc = A supportive lattice connected to two floating pontoons.
+ent-RMCBargeFloat = Баржа поплавок
+  .desc = Несущая решетка, соединенная с двумя плавучими понтонами.

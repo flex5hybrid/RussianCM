@@ -1,6 +1,6 @@
-ent-CMSandbagFull = sandbags
-  .desc = Some bags filled with sand. For now, just cumbersome, but soon to be used for fortifications.
-ent-CMSandbagEmpty = empty sandbags
-  .desc = Some empty sandbags, best to fill them up if you want to use them.
-ent-CMBarricadeSandbag = sandbag barricade
-  .desc = A makeshift barricade made out of the sand from the ground. Tough to beat but easy to pierce.
+ent-CMSandbagFull = мешки с песком
+  .desc = Несколько мешков с песком. 
+ent-CMSandbagEmpty = пустые мешки с песком
+  .desc = Несколько пустых мешков с песком. Лучше всего наполнить их, если вы хотите их использовать.
+ent-CMBarricadeSandbag = баррикада из мешков с песком
+  .desc = Импровизированная баррикада, сделанная из песка с земли. 

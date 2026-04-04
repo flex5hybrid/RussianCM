@@ -1,1 +1,1 @@
-ent-RMCMarkerGM-name = GM marker
+ent-RMCMarkerGM-name = ГМ-маркер

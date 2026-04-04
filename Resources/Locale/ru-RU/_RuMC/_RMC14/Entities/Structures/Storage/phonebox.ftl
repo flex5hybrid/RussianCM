@@ -1,4 +1,4 @@
-ent-RMCPhoneboxBrokenBase = wrecked phonebox
-  .desc = It's a phonebox, outdated but realiable technology. These are used to communicate throughout the colony and connected colonies without interference. It seems it's completely wrecked, covered in blood and the glass is smashed. Hiding inside would be pointless.
-ent-RMCPhoneboxBase = phonebox
-  .desc = It's a phonebox, outdated but realiable technology. These are used to communicate throughout the colony and connected colonies without interference. As reliable as they are, it seems the line is down.
+ent-RMCPhoneboxBrokenBase = разбитая телефонная будка
+  .desc = Это телефонная будка, устаревшая, но надежная технология. 
+ent-RMCPhoneboxBase = телефонная будка
+  .desc = Это телефонная будка, устаревшая, но надежная технология. 

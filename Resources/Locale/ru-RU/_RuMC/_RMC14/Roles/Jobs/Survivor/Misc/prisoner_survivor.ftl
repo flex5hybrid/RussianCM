@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetPrisoner = prisoner survivor preset
-ent-RMCSpawnPointSurvivorPrisoner = survivor prisoner spawn point
+ent-RMCGearSurvivorPresetPrisoner = пресет выжившего заключенного
+ent-RMCSpawnPointSurvivorPrisoner = точка появления выжившего заключенного

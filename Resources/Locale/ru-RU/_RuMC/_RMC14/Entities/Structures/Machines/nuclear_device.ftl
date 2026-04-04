@@ -1,1 +1,1 @@
-ent-RMCNuke-name = Nuclear Fission Explosive (PlaceHolder)
+ent-RMCNuke-name = Взрывчатка ядерного деления (PlaceHolder)

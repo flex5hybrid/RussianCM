@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSynthColonist = synthetic colonist spawn point
+ent-RMCSpawnPointSynthColonist = синтетическая точка спавна колонистов

@@ -1,5 +1,5 @@
-ent-CMFaxHighCom = marine high command fax machine
-ent-CMFaxWY = we-ya fax machine
-ent-CMFaxCMB = colony marshal bureau fax machine
-ent-CMFax = fax machine
-  .desc = Liaison's best and only friend.
+ent-CMFaxHighCom = Факс высшего командования Морпех
+ent-CMFaxWY = мы-я факс
+ent-CMFaxCMB = факс-аппарат маршальского бюро колонии
+ent-CMFax = факс
+  .desc = Лучший и единственный друг Лиазона.

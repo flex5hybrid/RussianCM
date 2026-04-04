@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSynth = synthetic spawn point
+ent-RMCSpawnPointSynth = синтетическая точка спавна

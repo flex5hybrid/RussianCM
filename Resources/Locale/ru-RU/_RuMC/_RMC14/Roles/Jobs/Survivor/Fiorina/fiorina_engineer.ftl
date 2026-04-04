@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorFiorinaEngineer = survivor fiorina engineer spawn point
+ent-RMCSpawnPointSurvivorFiorinaEngineer = точка возрождения выжившего инженера Фиорины

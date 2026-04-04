@@ -1,2 +1,2 @@
-ent-RMCOverheadLattice = lattice
-  .desc = A support lattice.
+ent-RMCOverheadLattice = решетка
+  .desc = Опорная решетка.

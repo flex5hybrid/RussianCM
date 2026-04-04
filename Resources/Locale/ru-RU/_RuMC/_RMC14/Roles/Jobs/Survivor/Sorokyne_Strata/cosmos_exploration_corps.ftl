@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetCECResearcher = cosmos exploration corps researcher preset
-ent-RMCSpawnPointSurvivorCECResearcher = cosmos exploration corps researcher spawn point
+ent-RMCGearSurvivorPresetCECResearcher = Предварительные настройки исследователя корпуса исследования космоса
+ent-RMCSpawnPointSurvivorCECResearcher = точка возрождения корпуса исследования космоса исследователь исследователь

@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidPizzaDeliveryBoy = pizza delivery boy ghost role
+ent-RMCRandomHumanoidPizzaDeliveryBoy = Доставщик пиццы в роли призрака

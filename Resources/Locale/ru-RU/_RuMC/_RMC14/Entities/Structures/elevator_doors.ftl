@@ -1,2 +1,2 @@
-ent-RMCElevatorDoorBroken = broken elevator door
-  .desc = completely broken, the elevator is not going to work.
+ent-RMCElevatorDoorBroken = сломанная дверь лифта
+  .desc = полностью сломан, лифт работать не будет.

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorShivasPanicRoomResearcher-name = special survivor shivas panic room researcher spawn point
+ent-RMCSpawnPointSurvivorShivasPanicRoomResearcher-name = специальный выживший Шива комната паники исследователь точка возрождения

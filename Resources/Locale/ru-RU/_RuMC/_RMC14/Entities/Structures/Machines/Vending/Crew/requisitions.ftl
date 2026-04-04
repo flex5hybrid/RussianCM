@@ -1,8 +1,8 @@
-ent-ColMarTechCargoUniform = ASRS surplus uniform vendor
-  .desc = An automated supply rack hooked up to a big storage of standard marine uniforms. Can be accessed by the Requisitions Officer and Cargo Techs.
-ent-ColMarTechCargoAttachments = Aegis Armaments attachments vendor
-  .desc = An automated supply rack hooked up to a big storage of weapons attachments. Can be accessed by the Requisitions Officer and Cargo Techs.
-ent-ColMarTechCargoAmmo = ASRS automated munition vendor
-  .desc = An automated supply rack hooked up to a big storage of various ammunition types. Can be accessed by the Requisitions Officer and Cargo Techs.
-ent-ColMarTechCargoGuns = ASRS automated armaments vendor
-  .desc = An automated supply rack hooked up to a big storage of various firearms and explosives. Can be accessed by the Requisitions Officer and Cargo Techs.
+ent-ColMarTechCargoUniform = Поставщик униформы ASRS
+  .desc = Автоматизированный склад снабжения, соединенный с большим складом стандартной униформы Морпеха. 
+ent-ColMarTechCargoAttachments = Поставщик навесного оборудования Aegis Armaments
+  .desc = Автоматизированная стойка снабжения, подключенная к большому складу оружейных приспособлений. 
+ent-ColMarTechCargoAmmo = Поставщик автоматизированных боеприпасов ASRS
+  .desc = Автоматизированная стойка снабжения, соединенная с большим хранилищем различных типов боеприпасов. 
+ent-ColMarTechCargoGuns = Поставщик автоматизированного вооружения ASRS
+  .desc = Автоматизированная стойка снабжения, соединенная с большим складом различного огнестрельного оружия и взрывчатки. 

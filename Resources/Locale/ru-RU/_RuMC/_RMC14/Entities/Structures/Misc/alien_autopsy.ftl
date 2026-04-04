@@ -1,3 +1,3 @@
-ent-RMCAlienTank = cryo tank
-  .desc = There is something big inside...
-ent-RMCResearchThingies = Research thingies
+ent-RMCAlienTank = крио-танк
+  .desc = Внутри есть что-то большое...
+ent-RMCResearchThingies = Исследовательские штучки

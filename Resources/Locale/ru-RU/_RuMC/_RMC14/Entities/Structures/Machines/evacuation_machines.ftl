@@ -1,4 +1,4 @@
-ent-RMCSpawnerLifeboat = lifeboat spawner
-  .desc = Defines a location to spawn a lifeboat.
-ent-RMCSpawnerEvacuationPodSouth = escape pod spawner
-  .desc = Defines a location to spawn an evacuation pod in.
+ent-RMCSpawnerLifeboat = спаунер спасательной шлюпки
+  .desc = Определяет место для появления спасательной шлюпки.
+ent-RMCSpawnerEvacuationPodSouth = генератор спасательных капсул
+  .desc = Определяет место для появления эвакуационной капсулы.

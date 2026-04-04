@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPMCCorpsmanPVE = weya pmc medic spawn point
+ent-RMCSpawnPointPMCCorpsmanPVE = точка спавна медика Weya PMC

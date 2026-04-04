@@ -1,1 +1,1 @@
-ent-CMSpawnPointCargoTech = cargo tech spawn point
+ent-CMSpawnPointCargoTech = точка появления грузовых технологий

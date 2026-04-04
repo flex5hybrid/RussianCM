@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorCrashlandingOfficesFOL-name = special survivor crashlanding offices pmc field operations leader spawn point
+ent-RMCSpawnPointSurvivorCrashlandingOfficesFOL-name = специальные офисы аварийной посадки выживших ЧВК точка возрождения руководителя полевых операций

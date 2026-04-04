@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPVEPlatoonCommander = PVE platoon commander spawn point
+ent-RMCSpawnPointPVEPlatoonCommander = Точка появления командира взвода PVE

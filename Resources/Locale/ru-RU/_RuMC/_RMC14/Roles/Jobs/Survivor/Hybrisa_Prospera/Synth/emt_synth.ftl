@@ -1,1 +1,1 @@
-ent-RMCSurvivorPresetHybrisaSynthEMT = survivor synth hybrisa EMT preset
+ent-RMCSurvivorPresetHybrisaSynthEMT = Survivor Synth Hybrisa Пресет EMT

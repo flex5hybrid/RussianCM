@@ -1,6 +1,6 @@
-ent-XenoTunnelMaintHybrisaNoXenoDesc = Sewer Manhole
-ent-XenoTunnelMaintHybrisa = Sewer Manhole
-ent-XenoTunnelMaint = Maintenance Hatch
-  .desc = An entrance to a maintenance tunnel. You can see bits of slime and resin within. Pieces of debris keep you from getting a closer look.
-ent-XenoTunnel = Tunnel
-  .desc = A tunnel entrance. Looks like it was dug by some kind of clawed beast.
+ent-XenoTunnelMaintHybrisaNoXenoDesc = Канализационный люк
+ent-XenoTunnelMaintHybrisa = Канализационный люк
+ent-XenoTunnelMaint = Люк для обслуживания
+  .desc = Вход в туннель технического обслуживания. 
+ent-XenoTunnel = Туннель
+  .desc = Вход в туннель. 

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSPPCorpsmanPVE = spp corpsman spawn point
+ent-RMCSpawnPointSPPCorpsmanPVE = точка спавна санитара SPP

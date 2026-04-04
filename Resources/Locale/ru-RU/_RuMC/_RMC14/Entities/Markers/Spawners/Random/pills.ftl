@@ -1,2 +1,2 @@
-ent-RMCSpawnerRandomPillBase = pill bottle loot spawner
-  .desc = This is a random pill bottle, for survivors.
+ent-RMCSpawnerRandomPillBase = спаунер добычи из бутылки с таблетками
+  .desc = Это случайный флакон с таблетками для выживших.

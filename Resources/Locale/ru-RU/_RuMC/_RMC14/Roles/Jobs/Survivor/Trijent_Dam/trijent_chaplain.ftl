@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetTrijentChaplain = trijent chaplain preset
-ent-RMCSpawnPointSurvivorTrijentChaplain = survivor trijent chaplain spawn point
+ent-RMCGearSurvivorPresetTrijentChaplain = предустановка капеллана триджента
+ent-RMCSpawnPointSurvivorTrijentChaplain = точка появления капеллана выжившего триджента

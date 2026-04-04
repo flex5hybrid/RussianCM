@@ -1,1 +1,1 @@
-ent-RMCIDCardFORECONSpotter-name = FORECON Spotter's dogtags
+ent-RMCIDCardFORECONSpotter-name = Жетоны FORECON Spotter

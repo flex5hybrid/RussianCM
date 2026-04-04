@@ -1,3 +1,3 @@
-ent-RMCRiverSorokyne = river
-ent-CMFloorDeepWaterEntity = deep water
-ent-CMFloorShallowWaterEntity = shallow water
+ent-RMCRiverSorokyne = река
+ent-CMFloorDeepWaterEntity = глубокая вода
+ent-CMFloorShallowWaterEntity = мелководье

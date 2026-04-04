@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetTrijentEngiHydro = hydro electric engineer colonist preset
-ent-RMCSpawnPointSurvivorTrijentEngiHydro = survivor hydro electric engineer spawn point
+ent-RMCGearSurvivorPresetTrijentEngiHydro = Предварительная настройка инженера-гидроэлектрика-колониста
+ent-RMCSpawnPointSurvivorTrijentEngiHydro = точка возрождения выжившего гидроэлектрика

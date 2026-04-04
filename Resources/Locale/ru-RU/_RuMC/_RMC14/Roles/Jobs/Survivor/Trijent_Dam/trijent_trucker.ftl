@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetTrijentTrucker = trijent trucker colonist preset
-ent-RMCSpawnPointSurvivorTrijentTrucker = trijent trucker spawn point
+ent-RMCGearSurvivorPresetTrijentTrucker = предустановка колониста-дальнобойщика Trijent
+ent-RMCSpawnPointSurvivorTrijentTrucker = точка спавна дальнобойщика Trijent

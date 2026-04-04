@@ -1,2 +1,2 @@
-ent-RMCGuidebookRolePvM-name = Provost Marshal
-ent-RMCGuidebookRolePvM-desc = Provost Marshal
+ent-RMCGuidebookRolePvM-name = Провост Маршал
+ent-RMCGuidebookRolePvM-desc = Провост Маршал

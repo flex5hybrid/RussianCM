@@ -1,2 +1,2 @@
-ent-RMCSurvivorPresetForeconSupportTech = forecon support technician survivor preset
-ent-CMSpawnPointForeconSupportTech = forecon support tech spawn point
+ent-RMCSurvivorPresetForeconSupportTech = Предустановка выживания специалиста службы поддержки Forecon
+ent-CMSpawnPointForeconSupportTech = точка появления технической поддержки Forecon

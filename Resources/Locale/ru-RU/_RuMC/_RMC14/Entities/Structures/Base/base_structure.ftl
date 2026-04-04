@@ -1,3 +1,3 @@
-ent-RMCBlockerAirtight = airtight blocker
-ent-RMCWallInvisibleBulletPassible = wall blocker
-ent-CMBaseWallXeno = resin wall
+ent-RMCBlockerAirtight = герметичный блокиратор
+ent-RMCWallInvisibleBulletPassible = блокировщик стен
+ent-CMBaseWallXeno = смоляная стена

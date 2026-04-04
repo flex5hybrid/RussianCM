@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetHybrisaTMCCMiner = tmcc miner preset
-ent-RMCSpawnPointSurvivorHybrisaTMCCMiner = tmcc miner spawn point
+ent-RMCGearSurvivorPresetHybrisaTMCCMiner = настройки майнера tmcc
+ent-RMCSpawnPointSurvivorHybrisaTMCCMiner = Точка спавна майнера tmcc

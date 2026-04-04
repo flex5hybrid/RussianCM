@@ -1,6 +1,6 @@
-ent-CMCoffinPred = strange coffin
-  .desc = It's a burial receptacle for the dearly departed. Seems to have weird markings on the side..?
-ent-CMCoffinMarine = Marine coffin
-  .desc = A burial receptacle for dearly departed Marines, adorned in red and finished with the Corps' emblem on the interior. Semper fi.
-ent-CMCoffin = coffin
-  .desc = It's a burial receptacle for the dearly departed.
+ent-CMCoffinPred = странный гроб
+  .desc = Это погребальный сосуд для усопших. 
+ent-CMCoffinMarine = Морпех гроб
+  .desc = Погребальный сосуд для умерших морских пехотинцев, украшенный красным цветом и украшенный эмблемой Корпуса внутри. 
+ent-CMCoffin = гроб
+  .desc = Это погребальный сосуд для усопших.

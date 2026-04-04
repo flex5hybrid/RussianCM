@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorChancesGoon-name = chances goon spawn point
-ent-RMCRandomHumanoidSurvivorChancesGoon-name = chances claim corporate security ghost role
+ent-RMCSpawnPointSurvivorChancesGoon-name = Шанс, точка появления головорезов
+ent-RMCRandomHumanoidSurvivorChancesGoon-name = Шансы претендуют на роль призрака корпоративной безопасности

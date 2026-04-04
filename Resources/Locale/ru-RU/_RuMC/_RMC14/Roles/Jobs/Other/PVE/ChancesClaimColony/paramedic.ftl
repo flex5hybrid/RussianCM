@@ -1,2 +1,2 @@
-ent-RMCSpawnPointSurvivorChancesParamedic-name = chances paramedic spawn point
-ent-RMCRandomHumanoidSurvivorChancesParamedic-name = chances paramedic ghost role
+ent-RMCSpawnPointSurvivorChancesParamedic-name = Шансы на точку появления фельдшера
+ent-RMCRandomHumanoidSurvivorChancesParamedic-name = Шанс, роль призрака фельдшера

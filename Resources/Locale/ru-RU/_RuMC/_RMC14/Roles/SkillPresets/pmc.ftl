@@ -1,1 +1,1 @@
-ent-RMCSkillPresetPMCCommando-name = Survivor We-Ya Commando
+ent-RMCSkillPresetPMCCommando-name = Выживший Ви-Я Коммандос

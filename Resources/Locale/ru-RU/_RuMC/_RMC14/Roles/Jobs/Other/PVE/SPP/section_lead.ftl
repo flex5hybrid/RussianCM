@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSPPSectionLeadPVE = spp section lead spawn point
+ent-RMCSpawnPointSPPSectionLeadPVE = точка спавна лидера раздела spp

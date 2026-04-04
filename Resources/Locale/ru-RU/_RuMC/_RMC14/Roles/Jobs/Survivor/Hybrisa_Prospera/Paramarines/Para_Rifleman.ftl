@@ -1,1 +1,1 @@
-ent-RMCSpawnPointParamarine-name = paramarine rifleman spawn point
+ent-RMCSpawnPointParamarine-name = Точка появления парамарина-стрелка

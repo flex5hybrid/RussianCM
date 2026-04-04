@@ -1,2 +1,2 @@
-ent-CMGuidebookRoleLiaisonYou = A Typical Weston-Yamada Liaison
-ent-CMSpawnPointLiaison = liaison spawn point
+ent-CMGuidebookRoleLiaisonYou = Типичная связь Уэстон-Ямада
+ent-CMSpawnPointLiaison = точка спавна связи

@@ -1,1 +1,1 @@
-ent-RMCWallRiver = river wall
+ent-RMCWallRiver = речная стена

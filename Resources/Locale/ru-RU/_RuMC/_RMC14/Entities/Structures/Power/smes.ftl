@@ -1,2 +1,2 @@
-ent-CMSMESBase = SMES
-  .desc = A high-capacity superconducting magnetic energy storage (SMES) unit.
+ent-CMSMESBase = МСП
+  .desc = Сверхпроводящий магнитный накопитель энергии (СМЕС) большой емкости.

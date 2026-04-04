@@ -1,1 +1,1 @@
-ent-CMSpawnPointForeconSmartGunOperator = forecon smart gun operator spawn point
+ent-CMSpawnPointForeconSmartGunOperator = точка появления оператора умного оружия Forecon

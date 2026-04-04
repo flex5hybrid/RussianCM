@@ -1,2 +1,2 @@
-ent-ColMarTechCrewMedicalEquipment = ColMarTech medical equipment rack
-  .desc = An automated equipment vendor for the Medical Department.
+ent-ColMarTechCrewMedicalEquipment = Стойка для медицинского оборудования ColMarTech
+  .desc = Поставщик автоматизированного оборудования для медицинского отдела.

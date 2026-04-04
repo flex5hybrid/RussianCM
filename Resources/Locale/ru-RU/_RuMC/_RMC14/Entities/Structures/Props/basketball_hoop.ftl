@@ -1,2 +1,2 @@
-ent-RMCBasketballHoop-name = basketball hoop
-ent-RMCBasketballHoop-desc = Boom, Shakalaka!
+ent-RMCBasketballHoop-name = баскетбольное кольцо
+ent-RMCBasketballHoop-desc = Бум, Шакалака!

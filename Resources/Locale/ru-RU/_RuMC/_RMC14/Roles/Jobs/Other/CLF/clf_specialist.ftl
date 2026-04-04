@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidCLFSpecialist = clf ghost role specialist
+ent-RMCRandomHumanoidCLFSpecialist = clf специалист по роли призрака

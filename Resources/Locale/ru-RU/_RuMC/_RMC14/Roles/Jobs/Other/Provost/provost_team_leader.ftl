@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidProvostTeamLeader = provost ghost role team leader
+ent-RMCRandomHumanoidProvostTeamLeader = руководитель группы роли призрака провоста

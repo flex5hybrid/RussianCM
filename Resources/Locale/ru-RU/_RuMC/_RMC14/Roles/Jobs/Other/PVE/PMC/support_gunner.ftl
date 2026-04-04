@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPMCGunnerPVE = weya pmc gunner spawn point
+ent-RMCSpawnPointPMCGunnerPVE = Weya точка спавна наводчика ЧВК

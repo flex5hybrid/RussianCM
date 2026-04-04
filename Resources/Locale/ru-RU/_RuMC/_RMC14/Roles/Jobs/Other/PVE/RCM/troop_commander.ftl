@@ -1,1 +1,1 @@
-ent-CMSpawnPointRCMPVETroopCommander-name = RCM troop commander spawn point
+ent-CMSpawnPointRCMPVETroopCommander-name = Точка появления командира отряда RCM

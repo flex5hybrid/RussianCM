@@ -1,2 +1,2 @@
-ent-RMCConcreteStatue = concrete statue
-  .desc = A decorative statue with the Weston-Yamada 'Wings' adorned on it, A corporate brutalist piece of art.
+ent-RMCConcreteStatue = бетонная статуя
+  .desc = Декоративная статуя с украшенными «Крыльями» Уэстон-Ямада — корпоративное бруталистическое произведение искусства.

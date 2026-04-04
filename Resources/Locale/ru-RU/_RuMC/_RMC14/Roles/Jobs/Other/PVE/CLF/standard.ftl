@@ -1,1 +1,1 @@
-ent-RMCSpawnPointCLFStandardPVE = clf standard spawn point
+ent-RMCSpawnPointCLFStandardPVE = clf стандартная точка появления

@@ -1,1 +1,1 @@
-ent-RMCSpawnerCorpseSPPSoldier-name = Corpse Spawner - SPP Soldier
+ent-RMCSpawnerCorpseSPPSoldier-name = Создатель трупов - Солдат СПП

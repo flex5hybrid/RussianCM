@@ -1,1 +1,1 @@
-ent-CMSpawnPointSurvivorCommanderNewVardero = new varadero commanding officer spawn point
+ent-CMSpawnPointSurvivorCommanderNewVardero = Новая точка появления командира Варадеро

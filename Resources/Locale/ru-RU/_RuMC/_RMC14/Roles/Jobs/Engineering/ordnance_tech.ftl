@@ -1,1 +1,1 @@
-ent-CMSpawnPointOrdnanceTech = ordnance tech spawn point
+ent-CMSpawnPointOrdnanceTech = точка появления артиллерийских технологий

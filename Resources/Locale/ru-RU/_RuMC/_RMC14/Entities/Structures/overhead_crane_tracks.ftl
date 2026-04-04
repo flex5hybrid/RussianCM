@@ -1,2 +1,2 @@
-ent-RMCOverheadCraneTracks = cargo crane track
-  .desc = A track for a cargo crane to move along.
+ent-RMCOverheadCraneTracks = грузовой крановый путь
+  .desc = Путь для движения грузового крана.

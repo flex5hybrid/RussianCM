@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPVERifleman = PVE rifleman spawn point
+ent-RMCSpawnPointPVERifleman = Точка появления PVE-стрелков

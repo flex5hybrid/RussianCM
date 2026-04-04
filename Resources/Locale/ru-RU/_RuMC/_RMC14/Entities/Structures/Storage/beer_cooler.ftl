@@ -1,2 +1,2 @@
-ent-RMCBeerCoolerBase = freezer crate
-  .desc = A cozy cooler for your beer and other beverages.
+ent-RMCBeerCoolerBase = ящик для заморозки
+  .desc = Уютный холодильник для пива и других напитков.

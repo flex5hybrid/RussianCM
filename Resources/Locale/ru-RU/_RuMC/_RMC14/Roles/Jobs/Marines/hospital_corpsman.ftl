@@ -1,1 +1,1 @@
-ent-CMSpawnPointHospitalCorpsman = hospital corpsman spawn point
+ent-CMSpawnPointHospitalCorpsman = Место появления санитара больницы

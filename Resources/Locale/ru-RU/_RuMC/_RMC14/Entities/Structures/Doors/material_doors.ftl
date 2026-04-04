@@ -1,3 +1,3 @@
-ent-RMCSandstoneDoor = sandstone door
-  .desc = It opens and closes.
-ent-RMCBaseMaterialDoor = door
+ent-RMCSandstoneDoor = дверь из песчаника
+  .desc = Он открывается и закрывается.
+ent-RMCBaseMaterialDoor = дверь

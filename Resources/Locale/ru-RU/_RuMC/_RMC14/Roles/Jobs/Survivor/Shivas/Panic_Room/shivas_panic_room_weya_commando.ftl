@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorPanicRoomCommando-name = special survivor panic room commando spawn point
+ent-RMCSpawnPointSurvivorPanicRoomCommando-name = Специальная точка появления коммандос в комнате паники для выживших

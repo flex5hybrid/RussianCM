@@ -1,4 +1,4 @@
-ent-RMCExtinguisherCabinetAlt = extinguisher cabinet
-  .desc = A small wall mounted cabinet designed to hold a fire extinguisher.
-ent-RMCExtinguisherCabinet = extinguisher cabinet
-  .desc = A small wall mounted cabinet designed to hold a fire extinguisher.
+ent-RMCExtinguisherCabinetAlt = шкаф огнетушителя
+  .desc = Небольшой настенный шкаф, предназначенный для хранения огнетушителя.
+ent-RMCExtinguisherCabinet = шкаф огнетушителя
+  .desc = Небольшой настенный шкаф, предназначенный для хранения огнетушителя.

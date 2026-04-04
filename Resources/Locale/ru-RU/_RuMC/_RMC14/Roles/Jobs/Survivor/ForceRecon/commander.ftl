@@ -1,1 +1,1 @@
-ent-CMSpawnPointForeconCommander = FORECON Commander spawn point
+ent-CMSpawnPointForeconCommander = Точка появления FORECON Commander

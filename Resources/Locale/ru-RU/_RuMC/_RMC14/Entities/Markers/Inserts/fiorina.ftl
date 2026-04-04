@@ -1,3 +1,3 @@
-ent-RMCMapInsertFiorinaPodholder-name = Podholder
-ent-RMCMapInsertFiorinaRocinanteCLF-name = Rocinante - CLF
-ent-RMCMapInsertFiorinaRiotInProgress-name = Riot In Progress
+ent-RMCMapInsertFiorinaPodholder-name = Подхолдер
+ent-RMCMapInsertFiorinaRocinanteCLF-name = Росинант - CLF
+ent-RMCMapInsertFiorinaRiotInProgress-name = Бунт в разгаре

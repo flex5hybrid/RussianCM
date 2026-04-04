@@ -1,1 +1,1 @@
-ent-CMSpawnPointPanicRoomSurvivor-name = special civilian panic room survivor spawn point
+ent-CMSpawnPointPanicRoomSurvivor-name = Специальная гражданская комната паники, точка появления выживших

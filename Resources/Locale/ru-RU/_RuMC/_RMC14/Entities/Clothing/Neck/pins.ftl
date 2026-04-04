@@ -1,2 +1,2 @@
-ent-RMCPridePinBase-name = pride pin
-ent-RMCPridePinBase-desc = An abstract pride pin.
+ent-RMCPridePinBase-name = значок гордости
+ent-RMCPridePinBase-desc = Абстрактная булавка гордости.

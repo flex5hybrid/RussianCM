@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidBureauObserver = bureau ghost role interstellar sapient-life rights observer
+ent-RMCRandomHumanoidBureauObserver = бюро роль призрака межзвездный наблюдатель за права разумной жизни

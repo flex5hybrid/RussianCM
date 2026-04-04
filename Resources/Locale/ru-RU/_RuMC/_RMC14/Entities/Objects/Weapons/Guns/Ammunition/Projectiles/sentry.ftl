@@ -1,8 +1,8 @@
-ent-RMCBulletSentryFireProjectileSmoke = flaming ball smoke
-  .desc = Huh? You shouldn't be able to see this...
-ent-RMCBulletSentryFireProjectileBlue = flaming ball blue
-  .desc = Huh? You shouldn't be able to see this...
-ent-RMCBulletSentryFireProjectile = flaming ball
-  .desc = Huh? You shouldn't be able to see this...
-ent-RMCBulletSentry = bullet (10x28mm)
-ent-CMBulletSentry10x50mm = bullet (10x50mm)
+ent-RMCBulletSentryFireProjectileSmoke = пылающий шар дыма
+  .desc = Хм? 
+ent-RMCBulletSentryFireProjectileBlue = пылающий шар синего цвета
+  .desc = Хм? 
+ent-RMCBulletSentryFireProjectile = пылающий шар
+  .desc = Хм? 
+ent-RMCBulletSentry = пуля (10х28мм)
+ent-CMBulletSentry10x50mm = пуля (10х50мм)

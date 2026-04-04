@@ -1,2 +1,2 @@
-ent-RMCSurvivorPresetTrijentResearcher = trijent researcher colonist preset
-ent-RMCSpawnPointSurvivorTrijentResearcher = survivor trijent researcher spawn point
+ent-RMCSurvivorPresetTrijentResearcher = предустановленные настройки колониста-исследователя Trijent
+ent-RMCSpawnPointSurvivorTrijentResearcher = точка появления выжившего триджента-исследователя

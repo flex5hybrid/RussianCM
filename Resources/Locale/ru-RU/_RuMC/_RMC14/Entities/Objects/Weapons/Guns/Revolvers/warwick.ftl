@@ -1,3 +1,3 @@
-ent-RMCWeaponRevolverWarwickMkVII-name = Warwick MkVII
-ent-RMCWeaponRevolverWarwickMkVII-desc = A top-break revolver used by the RCM’s Paramarine regiments, and sometimes seen in the hands of other TSE military forces. Fires .44 Magnum. Archaic, yes, but brutally effective. Vacuum-sealed internals, Bakelite-style grips, and a recoil like getting kicked by a mule. Still puts things down Hard.
-ent-RMCWeaponRevolverWarwickMkVIIAlt-name = Warwick MkVII
+ent-RMCWeaponRevolverWarwickMkVII-name = Уорик MkVII
+ent-RMCWeaponRevolverWarwickMkVII-desc = Револьвер с верхним переломом, используемый полками парамаринов RCM, а также иногда встречающийся в руках других вооруженных сил TSE. 
+ent-RMCWeaponRevolverWarwickMkVIIAlt-name = Уорик MkVII

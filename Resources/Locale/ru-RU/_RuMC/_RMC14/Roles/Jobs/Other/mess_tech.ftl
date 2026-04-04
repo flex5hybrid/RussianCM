@@ -1,1 +1,1 @@
-ent-CMSpawnPointMessTech = mess tech spawn point
+ent-CMSpawnPointMessTech = точка появления беспорядокной техники

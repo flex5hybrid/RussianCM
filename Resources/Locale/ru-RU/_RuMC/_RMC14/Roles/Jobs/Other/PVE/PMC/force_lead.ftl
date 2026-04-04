@@ -1,1 +1,1 @@
-ent-RMCSpawnPointPMCForceLeadPVE = weya pmc force lead spawn point
+ent-RMCSpawnPointPMCForceLeadPVE = Weya PMC Force Lead точка появления

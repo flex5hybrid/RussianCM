@@ -1,2 +1,2 @@
-ent-RMCCPRDummy-name = CPR dummy
-ent-RMCCPRDummy-desc = A CPR dummy, for training all those privates how to save a life! Does not accurately emulate battle wounds, does not simulate rib breaking, plastic toxic to touch, please contact a doctor if skin irritation persists for more than two hours.
+ent-RMCCPRDummy-name = манекен для сердечно-легочной реанимации
+ent-RMCCPRDummy-desc = Манекен для сердечно-легочной реанимации, предназначенный для обучения всех этих рядовых спасению жизни! 

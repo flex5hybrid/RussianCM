@@ -1,5 +1,5 @@
-ent-RMCAreaPVEOOB-name = Out Of Bounds
-ent-RMCAreaPVEOutdoors-name = Outdoors
-ent-RMCAreaPVELZ-name = Landing Zone
-ent-RMCAreaPVEIndoors-name = Indoors
-ent-RMCAreaPVEShuttle-name = Shuttle
+ent-RMCAreaPVEOOB-name = За пределами границ
+ent-RMCAreaPVEOutdoors-name = на открытом воздухе
+ent-RMCAreaPVELZ-name = Зона приземления
+ent-RMCAreaPVEIndoors-name = В помещении
+ent-RMCAreaPVEShuttle-name = Трансфер

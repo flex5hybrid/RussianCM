@@ -1,1 +1,1 @@
-ent-RMCSurvivorPresetHybrisaSynthEngineer = survivor synth hybrisa engineer colonist preset
+ent-RMCSurvivorPresetHybrisaSynthEngineer = пресет инженера-колониста Survivor Synth Hybrisa

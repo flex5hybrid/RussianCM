@@ -1,8 +1,8 @@
-ent-RMCRandomHumanoidCorporateExecutiveSupervisorLegal-name = corporate legal supervisor ghost role
-ent-RMCRandomHumanoidCorporateExecutiveSpecialistLegal-name = corporate legal specialist ghost role
-ent-RMCRandomHumanoidCorporateExecutiveSupervisor-name = corporate executive supervisor ghost role
-ent-RMCRandomHumanoidCorporateAssistantManager-name = corporate assistant manager ghost role
-ent-RMCRandomHumanoidCorporateDivisionManager-name = corporate division manager ghost role
-ent-RMCRandomHumanoidCorporateChiefExecutive-name = corporate chief executive ghost role
-ent-RMCRandomHumanoidCorporateDeputyDirector-name = corporate deputy director ghost role
-ent-RMCRandomHumanoidCorporateDirector-name = corporate director ghost role
+ent-RMCRandomHumanoidCorporateExecutiveSupervisorLegal-name = Роль-призрак корпоративного юриста
+ent-RMCRandomHumanoidCorporateExecutiveSpecialistLegal-name = Роль призрака специалиста по корпоративному праву
+ent-RMCRandomHumanoidCorporateExecutiveSupervisor-name = Роль призрака исполнительного директора корпорации
+ent-RMCRandomHumanoidCorporateAssistantManager-name = Роль призрака корпоративного помощника менеджера
+ent-RMCRandomHumanoidCorporateDivisionManager-name = Роль-призрак менеджера корпоративного подразделения
+ent-RMCRandomHumanoidCorporateChiefExecutive-name = Роль призрака генерального директора корпорации
+ent-RMCRandomHumanoidCorporateDeputyDirector-name = Роль призрака заместителя директора корпорации
+ent-RMCRandomHumanoidCorporateDirector-name = роль призрака корпоративного директора

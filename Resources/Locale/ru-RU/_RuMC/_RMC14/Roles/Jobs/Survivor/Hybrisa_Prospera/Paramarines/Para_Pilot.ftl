@@ -1,1 +1,1 @@
-ent-RMCSpawnPointParaPilot-name = paramarine dropship pilot spawn point
+ent-RMCSpawnPointParaPilot-name = Место появления пилота парамарина-десантника

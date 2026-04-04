@@ -1,1 +1,1 @@
-ent-RMCGrassDesert = desert grass
+ent-RMCGrassDesert = пустынная трава

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorSolarisChaplain-name = survivor solaris chaplain spawn point
+ent-RMCSpawnPointSurvivorSolarisChaplain-name = Точка появления капеллана выжившего Соляриса

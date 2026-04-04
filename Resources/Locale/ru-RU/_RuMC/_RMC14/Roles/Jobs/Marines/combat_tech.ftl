@@ -1,1 +1,1 @@
-ent-CMSpawnPointCombatTech = combat tech spawn point
+ent-CMSpawnPointCombatTech = точка появления боевых технологий

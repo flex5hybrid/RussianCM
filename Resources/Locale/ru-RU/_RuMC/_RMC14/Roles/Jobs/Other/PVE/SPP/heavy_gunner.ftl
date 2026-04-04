@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSPPGunnerPVE = spp heavy gunner spawn point
+ent-RMCSpawnPointSPPGunnerPVE = точка спавна тяжелого стрелка SPP

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointCLFCommanderPVE = clf commander spawn point
+ent-RMCSpawnPointCLFCommanderPVE = точка появления командира clf

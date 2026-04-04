@@ -1,1 +1,1 @@
-ent-CMSpawnPointMilitaryPolice = military police spawn point
+ent-CMSpawnPointMilitaryPolice = точка появления военной полиции

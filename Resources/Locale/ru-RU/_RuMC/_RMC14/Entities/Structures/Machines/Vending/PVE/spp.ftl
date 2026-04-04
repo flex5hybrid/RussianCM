@@ -1,4 +1,4 @@
-ent-RMCSPPSurplusPVE-name = H-Tech Surplus Uniform Vendor
-ent-RMCSPPSurplusPVE-desc = An automated supply rack hooked up to a small storage of standard UPP uniforms.
-ent-RMCSPPUtilitiesPVE-name = H-Tech Automated Utilities Squad Vendor
-ent-RMCSPPUtilitiesPVE-desc = An automated supply rack hooked up to a small storage of various utilities and tools.
+ent-RMCSPPSurplusPVE-name = Поставщик униформы H-Tech
+ent-RMCSPPSurplusPVE-desc = Автоматизированная стойка снабжения, подключенная к небольшому складу стандартной униформы УПП.
+ent-RMCSPPUtilitiesPVE-name = Поставщик подразделения автоматизированных коммунальных услуг H-Tech
+ent-RMCSPPUtilitiesPVE-desc = Автоматизированный стеллаж для снабжения, соединенный с небольшим хранилищем различных утилит и инструментов.

@@ -1,1 +1,1 @@
-ent-RMCSpawnPointFORECONPVESquadLead = forecon squad lead spawn point
+ent-RMCSpawnPointFORECONPVESquadLead = Точка появления руководителя отряда форекон

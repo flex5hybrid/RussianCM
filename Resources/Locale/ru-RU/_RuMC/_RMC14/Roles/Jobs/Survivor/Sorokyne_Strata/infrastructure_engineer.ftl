@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetInfrastructureEngineer = infrastructure engineer preset
-ent-RMCSpawnPointSurvivorInfrastructureEngineer = survivor infrastructure engineer spawn point
+ent-RMCGearSurvivorPresetInfrastructureEngineer = предустановка инженера инфраструктуры
+ent-RMCSpawnPointSurvivorInfrastructureEngineer = точка появления инженера инфраструктуры выжившего

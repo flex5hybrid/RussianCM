@@ -1,1 +1,1 @@
-ent-RMCSpawnPointSurvivorTrijentGoon-name = survivor trijent weya secguard spawn point
+ent-RMCSpawnPointSurvivorTrijentGoon-name = выживший триджент, точка спавна охранника Weya

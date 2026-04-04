@@ -1,1 +1,1 @@
-ent-RMCAegisSpawner = AEGIS crate spawner
+ent-RMCAegisSpawner = Создатель ящиков AEGIS

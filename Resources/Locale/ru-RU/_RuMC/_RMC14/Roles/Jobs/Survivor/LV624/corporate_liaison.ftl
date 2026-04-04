@@ -1,2 +1,2 @@
-ent-RMCGearSurvivorPresetLV624CorporateLiaison = lv624 colonist preset
-ent-RMCSpawnPointSurvivorLV624CorporateLiaison = survivor lv624 coporate liaison spawn point
+ent-RMCGearSurvivorPresetLV624CorporateLiaison = Пресет колониста lv624
+ent-RMCSpawnPointSurvivorLV624CorporateLiaison = выживший lv624 точка спавна совместной связи

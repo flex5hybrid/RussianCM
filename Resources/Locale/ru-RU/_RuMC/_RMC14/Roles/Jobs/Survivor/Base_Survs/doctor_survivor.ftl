@@ -1,3 +1,3 @@
-ent-RMCRandomHumanoidSurvivorDoctor = doctor colonist ghost role
-ent-RMCSurvivorPresetDoctor = doctor colonist preset
-ent-RMCSpawnPointSurvivorDoctor = survivor doctor spawn point
+ent-RMCRandomHumanoidSurvivorDoctor = роль призрака врача-колониста
+ent-RMCSurvivorPresetDoctor = пресет доктора-колониста
+ent-RMCSpawnPointSurvivorDoctor = точка появления доктора-выжившего

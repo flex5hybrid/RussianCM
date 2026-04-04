@@ -1,2 +1,2 @@
-ent-RMCAreaBreakwaterStrandExterior-name = Breakwater Exterior
-ent-RMCAreaBreakwaterStrandInterior-name = Breakwater Interior
+ent-RMCAreaBreakwaterStrandExterior-name = Внешний вид волнореза
+ent-RMCAreaBreakwaterStrandInterior-name = Интерьер волнореза

@@ -1,1 +1,1 @@
-ent-RMCRandomHumanoidCLFSoldier = clf ghost role soldier
+ent-RMCRandomHumanoidCLFSoldier = clf роль призрака солдат

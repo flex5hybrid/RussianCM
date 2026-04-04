@@ -1,1 +1,1 @@
-ent-RMCSpawnPointRecruit = recruit spawn point
+ent-RMCSpawnPointRecruit = нанять точку возрождения
