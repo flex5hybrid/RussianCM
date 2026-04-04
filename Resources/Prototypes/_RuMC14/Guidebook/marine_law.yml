@@ -22,14 +22,14 @@
   id: RuMCCommandChain
   name: rumc-guide-entry-rules-command-chain
   priority: 0
-  text: "/ServerInfo/Guidebook/_RuMC14/Rules/Roleplay/RuMCCommandChain.xml"
+  text: "/ServerInfo/Guidebook/_RMC14/Rules/Roleplay/RMCCommandChain.xml"
 
 - type: guideEntry
   parent: RuMC
   id: RuMCMarineLawRanks
   name: rumc-guide-entry-marine-law-ranks
   priority: 0
-  text: "/ServerInfo/Guidebook/_RuMC14/Law/RMCMarineLawRanks.xml"
+  text: "ServerInfo/Guidebook/_RMC14/Law/RMCMarineLawRanks.xml"
 
 - type: guideEntry
   parent: RuMC
