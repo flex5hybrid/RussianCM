@@ -1,33 +1,3 @@
-cm-chatsan-word-deltard = дельтард
-cm-chatsan-replacement-deltard = дельта
-
-cm-chatsan-word-deltards = дельтарды
-cm-chatsan-replacement-deltards = дельты
-
-cm-chatsan-word-alphoid = альфоид
-cm-chatsan-replacement-alphoid = альфа
-
-cm-chatsan-word-alphoids = альфоиды
-cm-chatsan-replacement-alphoids = альфы
-
-cm-chatsan-word-bravoid = бравоид
-cm-chatsan-replacement-bravoid = браво
-
-cm-chatsan-word-bravoids = бравоиды
-cm-chatsan-replacement-bravoids = браво
-
-cm-chatsan-word-charloid = чарлоид
-cm-chatsan-replacement-charloid = чарли
-
-cm-chatsan-word-charloids = чарлоиды
-cm-chatsan-replacement-charloids = чарли
-
-cm-chatsan-word-deltoid = дельтоид
-cm-chatsan-replacement-deltoid = дельта
-
-cm-chatsan-word-deltoids = дельтоиды
-cm-chatsan-replacement-deltoids = дельты
-
 cm-chatsan-word-admins-marine = админы
 cm-chatsan-replacement-admins-marine = высшее командование
 
@@ -82,63 +52,6 @@ cm-chatsan-replacement-marine = лысая макака
 cm-chatsan-word-marines = морпехи
 cm-chatsan-replacement-marines = лысые макаки
 
-cm-chatsan-word-lizard = ящер
-cm-chatsan-replacement-lizard = чешуйчатый хост
-
-cm-chatsan-word-lizards = ящеры
-cm-chatsan-replacement-lizards = чешуйчатые хосты
-
-cm-chatsan-word-reptilian = рептилоид
-cm-chatsan-replacement-reptilian = чешуйчатый хост
-
-cm-chatsan-word-reptilians = рептилоиды
-cm-chatsan-replacement-reptilians = чешуйчатые хосты
-
-cm-chatsan-word-dwarf = дварф
-cm-chatsan-replacement-dwarf = низкий хост
-
-cm-chatsan-word-dwarves = дварфы
-cm-chatsan-replacement-dwarves = низкие хосты
-
-cm-chatsan-word-slime = слизь
-cm-chatsan-replacement-slime = слизистый хост
-
-cm-chatsan-word-slimes = слизни
-cm-chatsan-replacement-slimes = слизистые хосты
-
-cm-chatsan-word-diona = диона
-cm-chatsan-replacement-diona = растительный хост
-
-cm-chatsan-word-dionas = дионы
-cm-chatsan-replacement-dionas = растительные хосты
-
-cm-chatsan-word-moth = моль
-cm-chatsan-replacement-moth = крылатый хост
-
-cm-chatsan-word-moths = моли
-cm-chatsan-replacement-moths = крылатые хосты
-
-cm-chatsan-word-mothes = моты
-cm-chatsan-replacement-mothes = крылатые хосты
-
-cm-chatsan-word-spider = паук
-cm-chatsan-replacement-spider = паукоплюй
-
-cm-chatsan-word-spiders = пауки
-cm-chatsan-replacement-spiders = паукоплюи
-
-cm-chatsan-word-arachnid = арахнид
-cm-chatsan-replacement-arachnid = паукоплюющий хост
-
-cm-chatsan-word-arachnids = арахниды
-cm-chatsan-replacement-arachnids = паукоплюющие хосты
-
-cm-chatsan-word-skrell = скрелл
-cm-chatsan-replacement-skrell = лягушачий хост
-
-cm-chatsan-word-skrells = скреллы
-cm-chatsan-replacement-skrells = лягушачьи хосты
-
 cm-chatsan-word-dropship = дропшип
 cm-chatsan-replacement-dropship = железная птица
 
@@ -163,8 +76,8 @@ cm-chatsan-replacement-almayer = железный улей
 cm-chatsan-word-admins-xeno = админы
 cm-chatsan-replacement-admins-xeno = праматери
 
-cm-chatsan-word-ob = об
-cm-chatsan-replacement-ob = небесный огонь
+#cm-chatsan-word-ob = об
+#cm-chatsan-replacement-ob = небесный огонь
 
 cm-chatsan-word-orbital = орбитальный
 cm-chatsan-replacement-orbital = небесный
@@ -200,10 +113,10 @@ cm-chatsan-word-doctor = доктор
 cm-chatsan-replacement-doctor = лекарь макак
 
 cm-chatsan-word-squad-leader = лидер отряда
-cm-chatsan-replacement-squad-leader = вожак макак
+cm-chatsan-replacement-squad-leader = вожак касты макак
 
 cm-chatsan-word-sl = сл
-cm-chatsan-replacement-sl = вожак макак
+cm-chatsan-replacement-sl = вожак касты макак
 
 cm-chatsan-word-commanding-officer = командующий офицер
 cm-chatsan-replacement-commanding-officer = королева макак
@@ -211,118 +124,41 @@ cm-chatsan-replacement-commanding-officer = королева макак
 cm-chatsan-word-comm-officer = ком офицер
 cm-chatsan-replacement-comm-officer = королева макак
 
-cm-chatsan-word-co = ко
-cm-chatsan-replacement-co = королева макак
+#cm-chatsan-word-co = ко
+#cm-chatsan-replacement-co = королева макак
 
 cm-chatsan-word-staff-officer = офицер штаба
-cm-chatsan-replacement-staff-officer = молодая королева макак
+cm-chatsan-replacement-staff-officer = малая королева макак
 
-cm-chatsan-word-xo = хо
-cm-chatsan-replacement-xo = молодая королева макак
+#cm-chatsan-word-xo = хо
+#cm-chatsan-replacement-xo = молодая королева макак
 
 cm-chatsan-word-executive-officer = исполнительный офицер
-cm-chatsan-replacement-executive-officer = молодая королева макака
+cm-chatsan-replacement-executive-officer = молодая королева макак
 
-cm-chatsan-word-exec-officer = экзек офицер
-cm-chatsan-replacement-exec-officer = молодая высокая королева
+cm-chatsan-word-exec-officer = ио
+cm-chatsan-replacement-exec-officer = молодая королева макак
 
-cm-chatsan-word-senior-enlisted = старший рядовой
-cm-chatsan-replacement-senior-enlisted = молодая высокая королева
+#cm-chatsan-word-senior-enlisted = старший рядовой
+#cm-chatsan-replacement-senior-enlisted = молодая высокая королева
 
-cm-chatsan-word-senior-enlisted-advisor = старший советник
-cm-chatsan-replacement-senior-enlisted-advisor = молодая высокая королева
+#cm-chatsan-word-senior-enlisted-advisor = старший советник
+#cm-chatsan-replacement-senior-enlisted-advisor = молодая высокая королева
 
 cm-chatsan-word-lz = лз
 cm-chatsan-replacement-lz = насест железной птицы
 
 cm-chatsan-word-lz2 = зп
+cm-chatsan-replacement-lz2 = насест железной птицы
 
 cm-chatsan-word-shoot = стрелять
 cm-chatsan-replacement-shoot = плевать
-
-cm-chatsan-word-felinid = фелинид
-cm-chatsan-replacement-felinid = кошачий хост
-
-cm-chatsan-word-felinids = фелиниды
-cm-chatsan-replacement-felinids = кошачьи хосты
-
-cm-chatsan-word-cat = кот
-cm-chatsan-replacement-cat = кошачий хост
-
-cm-chatsan-word-cats = коты
-cm-chatsan-replacement-cats = кошачьи хосты
-
-cm-chatsan-word-vulpkanin = вульпканин
-cm-chatsan-replacement-vulpkanin = собачий хост
-
-cm-chatsan-word-vulpkanins = вульпканины
-cm-chatsan-replacement-vulpkanins = собачьи хосты
-
-cm-chatsan-word-vulp = вульп
-cm-chatsan-replacement-vulp = собачий хост
-
-cm-chatsan-word-vulps = вульпы
-cm-chatsan-replacement-vulps = собачьи хосты
-
-cm-chatsan-word-dog = собака
-cm-chatsan-replacement-dog = собачий хост
-
-cm-chatsan-word-dogs = собаки
-cm-chatsan-replacement-dogs = собачьи хосты
-
-cm-chatsan-word-avali = авали
-cm-chatsan-replacement-avali = четырехухий хост
-
-cm-chatsan-word-avalis = авалис
-cm-chatsan-replacement-avalis = четырехухие хосты
-
-cm-chatsan-word-rodentia = родентия
-cm-chatsan-replacement-rodentia = пищащий хост
-
-cm-chatsan-word-rodentias = родентии
-cm-chatsan-replacement-rodentias = пищащие хосты
-
-cm-chatsan-word-rodentiae = родентиае
-cm-chatsan-replacement-rodentiae = пищащие хосты
-
-cm-chatsan-word-rat = крыса
-cm-chatsan-replacement-rat = пищащий хост
-
-cm-chatsan-word-rats = крысы
-cm-chatsan-replacement-rats = пищащие хосты
-
-cm-chatsan-word-mouse = мышь
-cm-chatsan-replacement-mouse = пищащий хост
-
-cm-chatsan-word-mice = мыши
-cm-chatsan-replacement-mice = пищащие хосты
-
-cm-chatsan-word-feroxi = ферокси
-cm-chatsan-replacement-feroxi = водный хост
-
-cm-chatsan-word-feroxis = фероксис
-cm-chatsan-replacement-feroxis = водные хосты
-
-cm-chatsan-word-shark = акула
-cm-chatsan-replacement-shark = водный хост
-
-cm-chatsan-word-sharks = акулы
-cm-chatsan-replacement-sharks = водные хосты
-
-cm-chatsan-word-fish = рыба
-cm-chatsan-replacement-fish = водный хост
 
 cm-chatsan-word-grenade = граната
 cm-chatsan-replacement-grenade = бумпалка
 
 cm-chatsan-word-grenades = гранаты
 cm-chatsan-replacement-grenades = бумпалки
-
-cm-chatsan-word-gl = гл
-cm-chatsan-replacement-gl = метатель бумпалок
-
-cm-chatsan-word-gls = глс
-cm-chatsan-replacement-gls = метатели бумпалок
 
 cm-chatsan-word-bullet = пуля
 cm-chatsan-replacement-bullet = плевок
@@ -336,86 +172,59 @@ cm-chatsan-replacement-ammo = плевки
 cm-chatsan-word-laser = лазер
 cm-chatsan-replacement-laser = точка
 
-cm-chatsan-word-lazer = лазер
-cm-chatsan-replacement-lazer = точка
-
-cm-chatsan-word-flamer = флеймер
-cm-chatsan-replacement-flamer = огнеплюй
-
 cm-chatsan-word-flamethrower = огнемёт
 cm-chatsan-replacement-flamethrower = огнеплюй
 
 cm-chatsan-word-sadar = садар
-cm-chatsan-replacement-sadar = бумтруба
+cm-chatsan-replacement-sadar = бумпалка
 
 cm-chatsan-word-rocket = ракета
-cm-chatsan-replacement-rocket = бумный плевок
+cm-chatsan-replacement-rocket = бумпалка
 
-cm-chatsan-word-grenadier = гренадер
+cm-chatsan-word-grenadier = граник
 cm-chatsan-replacement-grenadier = метатель бумпалок
 
-cm-chatsan-word-scout = скаут спец
-cm-chatsan-replacement-scout = высокий луркер
-
-cm-chatsan-word-scout-specialist = скаут специалист
-cm-chatsan-replacement-scout-specialist = высокий луркер
+cm-chatsan-word-scout = скаут
+cm-chatsan-replacement-scout = прозрачная макака
 
 cm-chatsan-word-mortar = миномёт
 cm-chatsan-replacement-mortar = небесный бум
 
-cm-chatsan-word-demo = подрывник
-cm-chatsan-replacement-demo = бумтрубач
-
-cm-chatsan-word-demolitionist = подрывник
-cm-chatsan-replacement-demolitionist = бумтрубач
-
-cm-chatsan-word-ws = вс
-cm-chatsan-replacement-ws = особый высокий
-
 cm-chatsan-word-spec = спец
-cm-chatsan-replacement-spec = особый высокий
+cm-chatsan-replacement-spec = особый носитель
 
 cm-chatsan-word-cas = кас
 cm-chatsan-replacement-cas = небесный плевок
 
 cm-chatsan-word-sensors = сенсоры
-cm-chatsan-replacement-sensors = высокая глазная башня
+cm-chatsan-replacement-sensors = глазная башня
 
 cm-chatsan-word-sensor-tower = сенсорная башня
-cm-chatsan-replacement-sensor-tower = высокая глазная башня
+cm-chatsan-replacement-sensor-tower = глазная башня
 
 cm-chatsan-word-comms = коммы
-cm-chatsan-replacement-comms = высокая башня коллективного разума
+cm-chatsan-replacement-comms = башня коллективного разума
 
 cm-chatsan-word-tcomms = ткоммы
-cm-chatsan-replacement-tcomms = высокая башня коллективного разума
+cm-chatsan-replacement-tcomms = башня коллективного разума
 
 cm-chatsan-word-communications-tower = коммуникационная башня
-cm-chatsan-replacement-communications-tower = высокая башня коллективного разума
-
-cm-chatsan-word-smart-gun = смартган
-cm-chatsan-replacement-smartgun = умный плюй
-
-cm-chatsan-word-sg = сг
-cm-chatsan-replacement-sg = умный плюй
-
-cm-chatsan-word-sgs = сгс
-cm-chatsan-replacement-sgs = умные плюи
+cm-chatsan-replacement-communications-tower = башня коллективного разума
 
 cm-chatsan-word-smartgun = смартган
-cm-chatsan-replacement-smart-gun = умный плюй
+cm-chatsan-replacement-smartgun = умный плеватель
 
 cm-chatsan-word-smartgunner = смартганнер
-cm-chatsan-replacement-smartgunner = умный плюй
+cm-chatsan-replacement-smartgunner = умный плеватель
 
 cm-chatsan-word-smart-gunner = смарт ганнер
-cm-chatsan-replacement-smart-gunner = умный плюй
+cm-chatsan-replacement-smart-gunner = умный плеватель
 
-cm-chatsan-word-sentry = часовой
-cm-chatsan-replacement-sentry = авто-плюй
+cm-chatsan-word-sentry = турель
+cm-chatsan-replacement-sentry = автоплюй
 
-cm-chatsan-word-sentries = часовые
-cm-chatsan-replacement-sentries = авто-плюи
+cm-chatsan-word-sentries = турели
+cm-chatsan-replacement-sentries = автоплюи
 
 cm-chatsan-word-squad = отряд
 cm-chatsan-replacement-squad = каста
@@ -435,17 +244,14 @@ cm-chatsan-replacement-nades = бумпалки
 cm-chatsan-word-nuke = ядерка
 cm-chatsan-replacement-nuke = убийца улья
 
-cm-chatsan-word-intel = разведка
-cm-chatsan-replacement-intel = высокие падальщики
-
 cm-chatsan-word-survivor = выживший
-cm-chatsan-replacement-survivor = планетный высокий
+cm-chatsan-replacement-survivor = планетарный носитель
 
 cm-chatsan-word-survivors = выжившие
-cm-chatsan-replacement-survivors = планетные высокие
+cm-chatsan-replacement-survivors = планетарные носители
 
-cm-chatsan-word-surv = выж
-cm-chatsan-replacement-surv = планетный высокий
+cm-chatsan-word-surv = сурв
+cm-chatsan-replacement-surv = планетарный носитель
 
-cm-chatsan-word-survs = выжи
-cm-chatsan-replacement-survs = планетные высокие
+cm-chatsan-word-survs = сурвы
+cm-chatsan-replacement-survs = планетарные носители
