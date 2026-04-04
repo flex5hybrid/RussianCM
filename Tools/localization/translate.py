@@ -3,7 +3,7 @@ import re
 import requests
 import time
 
-LOCALE_DIR = "../../Resources/Locale/ru-RU/_RuMC"
+LOCALE_DIR = "../../Resources/Locale/ru-RU/_RuMC/_RMC14"
 
 def translate(text):
     url = "https://translate.googleapis.com/translate_a/single"
@@ -46,7 +46,10 @@ def translate_ftl_file(path):
 
     with open(path, "r", encoding="utf-8") as f:
         lines = f.readlines()
-
+     # Если хотя бы одна строка уже на русском — пропускаем весь файл
+    if any(contains_cyrillic(line) for line in lines):
+        print(f"⏭ Пропускаем уже переведённый файл: {path}")
+        return
     new_lines = []
 
     for line in lines:
@@ -76,6 +79,9 @@ def translate_ftl_file(path):
     with open(path, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
 
+def contains_cyrillic(text):
+    """Проверяет, есть ли в тексте кириллица"""
+    return bool(re.search(r'[а-яА-ЯёЁ]', text))
 
 def run():
 
