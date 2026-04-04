@@ -1,22 +1,37 @@
-ent-RMCDropshipAttachmentAmmoRocketMiniMikeIncendiary = AGR-59-I «Мини-Майк»
-  .desc = Зажигательная миниракета AGR-59-I «Мини-Майк» — это дешёвое и эффективное средство доставки «ненависти» на дистанцию И поджога цели! Хотя ракеты не имеют системы наведения, это компенсируется их количеством. Может заряжаться в блок НАР LAU-229.
-ent-RMCDropshipAttachmentAmmoRocketMiniMike = AGR-59 «Мини-Майк»
-  .desc = Миниракета AGR-59 «Мини-Майк» — это дешёвое и эффективное средство доставки «ненависти» на дистанцию. Хотя ракеты не имеют системы наведения, это компенсируется их количеством. Может заряжаться в блок НАР LAU-229.
-ent-RMCDropshipAttachmentAmmoRocketBanshee = AGM-227 «Банши»
-  .desc = Ракета AGM-227 является основным средством обновлённого флота дропшипов против любых мобильных или бронированных наземных целей. Она получила прозвище «Банши» из-за внезапного воя, который издаёт прямо перед попаданием в цель. Полезна для зачистки больших площадей. Может заряжаться в управляемую пусковую установку LAU-444.
-ent-RMCDropshipAttachmentAmmoRocketThermobaric = BLU-200 «Дыхание Дракона»
-  .desc = BLU-200 «Дыхание Дракона» — термобарическая объёмно-детонирующая бомба. Распылённая топливная смесь при подрыве создаёт вакуум, нанося серьёзный урон всем на своём пути. Может заряжаться в управляемую пусковую установку LAU-444.
-ent-RMCDropshipAttachmentAmmoRocketHarpoon = AGM-184 «Гарпун II»
-  .desc = AGM-184 «Гарпун II» — противокорабельная ракета, разработанная и используемая для эффективного уничтожения вражеских кораблей мощной ударной волной при низкой взрывной силе. Данный экземпляр модифицирован для использования наземных сигналов и может рассматриваться как более дешёвая альтернатива обычным боеприпасам. Может заряжаться в управляемую пусковую установку LAU-444.
-ent-RMCDropshipAttachmentAmmoRocketNapalm = AGM-99 «Напалм»
-  .desc = AGM-99 «Напалм» — зажигательная ракета, используемая для превращения конкретных целевых зон в гигантские шары огня на длительное время. Может заряжаться в управляемую пусковую установку LAU-444.
-ent-RMCDropshipAttachmentAmmoRocketKeeper = GBU-67 «Кипер II»
-  .desc = GBU-67 «Кипер II» — новейшее поколение лазерно-управляемого оружия, чья история восходит к XX веку. Своё прозвище получил от сокращения «Peacekeeper» (Миротворец), которое происходит от программы, разработавшей его систему наведения, и его различного применения в миротворческих конфликтах. Его боевая часть предназначена для уничтожения бронированных целей. Может заряжаться в управляемую пусковую установку LAU-444.
-ent-RMCDropshipAttachmentAmmoRocketWidowmaker = AIM-224B «Вдоводейка»
-  .desc = Ракета AIM-224B представляет собой модернизацию новейших технологий ракет «воздух-воздух». Получила прозвище «Вдоводейка» от различных пилотов дропшипов после улучшений боевой части наведения, которые предотвращают её подавление, что привело к высокому проценту поражений. Не очень подходит для бомбардировок наземных целей, но её высокая скорость позволяет быстро достигать цели. Данный экземпляр был модифицирован в свободнопадающую бомбу из-за нехватки боеприпасов для дропшипов. Может заряжаться в управляемую пусковую установку LAU-444.
-ent-RMCDropshipAttachmentAmmoRocket = абстрактная ракета
-ent-RMCEffectExplosionParticle = взрыв
-ent-RMCDropshipAttachmentAmmoGAUAP = ящик с боеприпасами PGU-105 30-мм противотанковыми
-  .desc = Ящик, полный специализированных 30-мм подкалиберных бронебойных снарядов PGU-105 со сплавом титана и вольфрама, созданных для борьбы с БТР, БМП и ОБТ противника при поддержке с воздуха. Способен пробить до эквивалента 1350 мм катаной стали при выстреле из GAU-21. Однако гораздо менее эффективен по незащищённым целям, в таком случае рекомендуются 30-мм обычные боеприпасы. ВНИМАНИЕ: сбрасываемые элементы снаряда могут быть опасны, если дропшип не наберёт необходимую скорость. Пожалуйста, ознакомьтесь со страницей 3574 руководства, доступного для заказа в любом магазине AEGIS. Может заряжаться в пушку GAU-21 калибра 30 мм.
-ent-RMCDropshipAttachmentAmmoGAU = ящик с боеприпасами PGU-100 многоцелевыми 30-мм
-  .desc = Ящик, полный 30-мм многоцелевых боеприпасов PGU-100, предназначенных для поражения лёгких (неусиленных) конструкций, а также уничтожения пехоты, IAV, LAV, IMV и MRAP. Эффективен на больших площадях против инсектоидных заражений 4-го класса и выше, а также разрешён к применению против повстанцев уровня 4 и выше. Однако lacks противотанковых возможностей, для которых требуются 30-мм бронебойные боеприпасы. Может заряжаться в пушку GAU-21 калибра 30 мм.
+ent-RMCDropshipAttachmentAmmoRocketMiniMikeIncendiary-name = AGR-59-I 'Mini-Mike'
+ent-RMCDropshipAttachmentAmmoRocketMiniMikeIncendiary-desc = The AGR-59-I 'Mini-Mike' incendiary minirocket is a cheap and efficient means of putting hate down range AND setting them on fire! Though rockets lack a guidance package, it makes up for it in ammunition count. Can be loaded into the LAU-229 Rocket Pod.
+
+ent-RMCDropshipAttachmentAmmoRocketMiniMike-name = AGR-59 'Mini-Mike'
+ent-RMCDropshipAttachmentAmmoRocketMiniMike-desc = The AGR-59 'Mini-Mike' minirocket is a cheap and efficient means of putting hate down range. Though rockets lack a guidance package, it makes up for it in ammunition count. Can be loaded into the LAU-229 Rocket Pod.
+
+ent-RMCDropshipAttachmentAmmoRocketBanshee-name = AGM-227 'Banshee'
+ent-RMCDropshipAttachmentAmmoRocketBanshee-desc = The AGM-227 missile is a mainstay of the overhauled dropship fleet against any mobile or armored ground targets. It's earned the nickname of 'Banshee' from the sudden wail that it emits right before hitting a target. Useful to clear out large areas. Can be loaded into the LAU-444 Guided Missile Launcher.
+
+ent-RMCDropshipAttachmentAmmoRocketThermobaric-name = BLU-200 'Dragon's Breath'
+ent-RMCDropshipAttachmentAmmoRocketThermobaric-desc = The BLU-200 'Dragon's Breath' is a thermobaric fuel-air bomb. The aerosolized fuel mixture creates a vacuum when ignited causing serious damage to those in its way. Can be loaded into the LAU-444 Guided Missile Launcher.
+
+ent-RMCDropshipAttachmentAmmoRocketHarpoon-name = AGM-184 'Harpoon II'
+ent-RMCDropshipAttachmentAmmoRocketHarpoon-desc = The AGM-184 Harpoon II is an Anti-Ship Missile, designed and used to effectively take down enemy ships with a huge blast wave with low explosive power. This one is modified to use ground signals and can be seen as a cheaper alternative to conventional ordnance. Can be loaded into the LAU-444 Guided Missile Launcher.
+
+ent-RMCDropshipAttachmentAmmoRocketNapalm-name = AGM-99 'Napalm'
+ent-RMCDropshipAttachmentAmmoRocketNapalm-desc = The AGM-99 'Napalm' is an incendiary missile used to turn specific targeted areas into giant balls of fire for a long time. Can be loaded into the LAU-444 Guided Missile Launcher.
+
+ent-RMCDropshipAttachmentAmmoRocketKeeper-name = GBU-67 'Keeper II'
+ent-RMCDropshipAttachmentAmmoRocketKeeper-desc = The GBU-67 'Keeper II' is the latest in a generation of laser guided weaponry that spans all the way back to the 20th century. Earning its nickname from a shortening of 'Peacekeeper' which comes from the program that developed its guidance system and the various uses of it during peacekeeping conflicts. Its payload is designed to devastate armored targets. Can be loaded into the LAU-444 Guided Missile Launcher.
+
+ent-RMCDropshipAttachmentAmmoRocketWidowmaker-name = AIM-224B 'Widowmaker'
+ent-RMCDropshipAttachmentAmmoRocketWidowmaker-desc = The AIM-224B missile is a retrofit of the latest in air-to-air missile technology. Earning the nickname of 'Widowmaker' from various dropship pilots after improvements to its guidance warhead prevents it from being jammed leading to its high kill rate. Not well suited for ground bombardment but its high velocity makes it reach its target quickly. This one has been modified to be a free-fall bomb as a result of dropship ammo shortages. Can be loaded into the LAU-444 Guided Missile Launcher.
+
+ent-RMCDropshipAttachmentAmmoRocket-name = abstract rocket
+
+ent-RMCEffectExplosionParticle-name = explosion
+
+ent-RMCDropshipAttachmentAmmoGAUAP-name = PGU-105 30mm Anti-tank ammo crate
+ent-RMCDropshipAttachmentAmmoGAUAP-desc = A crate full of PGU-105 Specialized 30mm APFSDS Titanium-Tungsten alloy penetrators, made for countering peer and near peer APCs, IFVs, and MBTs in CAS support. It is designed to penetrate up to the equivalent 1350mm of RHA when launched from a GAU-21. It is much less effective against soft targets however, in which case 30mm ball ammunition is recommended. WARNING: discarding petals from the ammunition can be harmful if the dropship does not pull out at the needed speeds. Please consult page 3574 of the manual, available for order at any AEGIS store. Can be loaded into the GAU-21 30mm cannon.
+
+ent-RMCDropshipAttachmentAmmoGAU-name = PGU-100 Multi-Purpose 30mm ammo crate
+ent-RMCDropshipAttachmentAmmoGAU-desc = A crate full of PGU-100 30mm Multi-Purpose ammo designed to penetrate light (non reinforced) structures, as well as shred infantry, IAVs, LAVs, IMVs, and MRAPs. Works in large areas for use on Class 4 and superior alien insectoid infestations, as well as fitting within the armaments allowed for use against a tier 4 insurgency as well as higher tiers. However, it lacks armor penetrating capabilities, for which Anti-Tank 30mm ammo is needed. Can be loaded into the GAU-21 30mm cannon.
+
+ent-RMCDropshipAttachmentAmmoLaunchableSentry-name = A/C-49-P Air Deployable Sentry
+ent-RMCDropshipAttachmentAmmoLaunchableSentry-desc = An omni-directional sentry, capable of defending an area from lightly armored hostile incursion. Can be loaded into the LAG-14 Internal Sentry Launcher.
+

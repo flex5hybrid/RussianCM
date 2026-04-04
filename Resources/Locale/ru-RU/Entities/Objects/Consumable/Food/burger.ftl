@@ -1,70 +1,107 @@
 ent-FoodBreadBun-name = bun
 ent-FoodBreadBun-desc = A hamburger bun. Round and convenient to hold.
+
 ent-FoodBreadBunBottom-name = bottom bun
 ent-FoodBreadBunBottom-desc = It's time to start building the burger tower.
+
 ent-FoodBreadBunTop-name = top bun
 ent-FoodBreadBunTop-desc = The perfect finish for your burger tower.
+
 ent-FoodBurgerJelly-name = jelly burger
 ent-FoodBurgerJelly-desc = Culinary delight..?
+
 ent-FoodBurgerAppendix-name = appendix burger
 ent-FoodBurgerAppendix-desc = Tastes like appendicitis.
+
 ent-FoodBurgerBacon-name = bacon burger
 ent-FoodBurgerBacon-desc = The perfect combination of all things American.
+
 ent-FoodBurgerBaseball-name = baseball burger
 ent-FoodBurgerBaseball-desc = It's still warm. The steam coming off of it smells kinda sweaty.
+
 ent-FoodBurgerBear-name = bearger
 ent-FoodBurgerBear-desc = Best served rawr.
+
 ent-FoodBurgerBig-name = big bite burger
 ent-FoodBurgerBig-desc = Forget the Big Mac. THIS is the future!
+
 ent-FoodBurgerBrain-name = brain burger
 ent-FoodBurgerBrain-desc = A strange looking burger. It looks almost sentient.
+
 ent-FoodBurgerCat-name = cat burger
 ent-FoodBurgerCat-desc = Finally those cats and catpeople are worth something!
+
 ent-FoodBurgerCheese-name = cheese burger
 ent-FoodBurgerCheese-desc = This noble burger stands proudly clad in golden cheese.
+
 ent-FoodBurgerChicken-name = chicken sandwich
 ent-FoodBurgerChicken-desc = A delicious chicken sandwich, it is said the proceeds from this treat helps criminalize disarming people on the space frontier.
+
 ent-FoodBurgerClown-name = clown burger
 ent-FoodBurgerClown-desc = This tastes funny...
+
 ent-FoodBurgerCorgi-name = corger
 ent-FoodBurgerCorgi-desc = The Head of Personnel's favorite!
+
 ent-FoodBurgerCrab-name = crab burger
 ent-FoodBurgerCrab-desc = A delicious patty of the crabby kind, slapped in between a bun.
+
 ent-FoodBurgerCrazy-name = crazy hamburger
 ent-FoodBurgerCrazy-desc = This looks like the sort of food that a demented clown in a trenchcoat would make.
+
 ent-FoodBurgerDuck-name = duck sandwich
 ent-FoodBurgerDuck-desc = A duck sandwich, only the criminally insane would dare to eat the meat of such an adorable creature.
+
 ent-FoodBurgerEmpowered-name = empowered burger
 ent-FoodBurgerEmpowered-desc = It's shockingly good, if you live off of electricity that is.
+
 ent-FoodBurgerCarp-name = fillet-o-carp burger
 ent-FoodBurgerCarp-desc = Almost like a carp is yelling somewhere...
+
 ent-FoodBurgerFive-name = five alarm burger
 ent-FoodBurgerFive-desc = HOT! HOT! HOT!
+
 ent-FoodBurgerGhost-name = ghost burger
 ent-FoodBurgerGhost-desc = Too spooky!
+
 ent-FoodBurgerHuman-name = human burger
 ent-FoodBurgerHuman-desc = You cant tell who this is made of...
+
 ent-FoodBurgerMcguffin-name = McGuffin
 ent-FoodBurgerMcguffin-desc = A cheap and greasy imitation of an eggs Benedict.
+
 ent-FoodBurgerMcrib-name = BBQ Rib Sandwich
 ent-FoodBurgerMcrib-desc = An elusive rib shaped burger with limited availability across the galaxy. Not as good as you remember it.
+
 ent-FoodBurgerMime-name = mime burger
 ent-FoodBurgerMime-desc = Its taste defies language.
+
 ent-FoodBurgerPlain-name = plain burger
 ent-FoodBurgerPlain-desc = A boring, dry burger.
+
 ent-FoodBurgerRat-name = rat burger
 ent-FoodBurgerRat-desc = Pretty much what you'd expect...
+
 ent-FoodBurgerRobot-name = roburger
 ent-FoodBurgerRobot-desc = The lettuce is the only organic component. Beep.
+
 ent-FoodBurgerSoy-name = soylent burger
 ent-FoodBurgerSoy-desc = After eating this you have the overwhelming urge to purchase overpriced figurines of superheroes.
+
 ent-FoodBurgerSpell-name = spell burger
 ent-FoodBurgerSpell-desc = This is absolutely Ei Nath.
+
 ent-FoodBurgerSuper-name = super bite burger
 ent-FoodBurgerSuper-desc = This is a mountain of a burger. FOOD!
+
 ent-FoodBurgerTofu-name = tofu burger
 ent-FoodBurgerTofu-desc = What... is that meat?
+
 ent-FoodBurgerXeno-name = xenoburger
 ent-FoodBurgerXeno-desc = Smells caustic. Tastes like heresy.
+
 ent-FoodBurgerMothRoach-name = mothroachburger
 ent-FoodBurgerMothRoach-desc = The last lamp it saw was the one inside the microwave.
+
+ent-FoodBurgerBase-name = item
+

@@ -1,2 +1,2 @@
-ent-CMXenoSentinel = Страж
-  .desc = Скользкий, плюющийся пришелец.
+ent-CMXenoSentinel-name = cm-job-name-xeno-sentinel
+

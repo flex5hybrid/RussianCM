@@ -1,2 +1,3 @@
-ent-RMCMirror = зеркало
-  .desc = Зеркало, зеркало на стене, кто из них самый крепкий?
+ent-RMCMirror-name = mirror
+ent-RMCMirror-desc = Mirror mirror on the wall, who's the most robust of them all?
+

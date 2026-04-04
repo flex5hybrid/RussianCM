@@ -1,4 +1,9 @@
-ent-RMCArmorHelmetSecurity = шлем
-  .desc = Стандартное снаряжение службы безопасности. Защищает голову от ударов.
-ent-ArmorHelmetRiot = штурмовой шлем
-  .desc = Это шлем, специально разработанный для защиты от атак ближнего радиуса. Он прикрывает уши.
+ent-RMCArmorHelmetSecurity-name = helmet
+ent-RMCArmorHelmetSecurity-desc = Standard security gear. Protects the head from impacts.
+
+ent-ArmorHelmetRiot-name = riot helmet
+ent-ArmorHelmetRiot-desc = It's a helmet specifically designed to protect against close range attacks. It covers your ears.
+
+ent-ArmorHelmetRiotOld-name = riot helmet
+ent-ArmorHelmetRiotOld-desc = BA scarred riot helmet covered in cobwebs. It still protects your ears.
+

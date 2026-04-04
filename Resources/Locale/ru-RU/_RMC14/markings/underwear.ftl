@@ -1,74 +1,50 @@
 marking-RMCUnderwearBoxers = Боксеры (песочные)
 marking-RMCUnderwearBoxers-c_boxers = Боксеры
-
 marking-RMCUnderwearBoxersBlue = Боксеры (пустынные)
 marking-RMCUnderwearBoxersBlue-d_boxers = Боксеры
-
 marking-RMCUnderwearBoxersJungle = Боксеры (джунглевые)
 marking-RMCUnderwearBoxersJungle-j_boxers = Боксеры
-
 marking-RMCUnderwearBoxersSnow = Боксеры (снежные)
 marking-RMCUnderwearBoxersSnow-s_boxers = Боксеры
-
 marking-RMCUnderwearBoxersUrban = Боксеры (городские)
 marking-RMCUnderwearBoxersUrban-urban_boxers = Боксеры
-
 marking-RMCUnderwearBriefs = Трусы (песочные)
 marking-RMCUnderwearBriefs-c_briefs = Трусы
-
 marking-RMCUnderwearBriefsDesert = Трусы (пустынные)
 marking-RMCUnderwearBriefsDesert-d_briefs = Трусы
-
 marking-RMCUnderwearBriefsJungle = Трусы (джунглевые)
 marking-RMCUnderwearBriefsJungle-j_briefs = Трусы
-
 marking-RMCUnderwearBriefsSnow = Трусы (снежные)
 marking-RMCUnderwearBriefsSnow-s_briefs = Трусы
-
 marking-RMCUnderwearBriefsUrban = Трусы (городские)
 marking-RMCUnderwearBriefsUrban-urban_briefs = Трусы
-
 marking-RMCUnderwearLowriders = Стринги (песочные)
 marking-RMCUnderwearLowriders-c_lowriders = Стринги
-
 marking-RMCUnderwearLowridersDesert = Стринги (пустынные)
 marking-RMCUnderwearLowridersDesert-d_lowriders = Стринги
-
 marking-RMCUnderwearLowridersJungle = Стринги (джунглевые)
 marking-RMCUnderwearLowridersJungle-j_lowriders = Стринги
-
 marking-RMCUnderwearLowridersSnow = Стринги (снежные)
 marking-RMCUnderwearLowridersSnow-s_lowriders = Стринги
-
 marking-RMCUnderwearLowridersUrban = Стринги (городские)
 marking-RMCUnderwearLowridersUrban-urban_lowriders = Стринги
-
 marking-RMCUnderwearSatin = Атласные (песочные)
 marking-RMCUnderwearSatin-c_satin = Атласные
-
 marking-RMCUnderwearSatinDesert = Атласные (пустынные)
 marking-RMCUnderwearSatinDesert-d_satin = Атласные
-
 marking-RMCUnderwearSatinJungle = Атласные (джунглевые)
 marking-RMCUnderwearSatinJungle-j_satin = Атласные
-
 marking-RMCUnderwearSatinSnow = Атласные (снежные)
 marking-RMCUnderwearSatinSnow-s_satin = Атласные
-
 marking-RMCUnderwearSatinUrban = Атласные (городские)
 marking-RMCUnderwearSatinUrban-urban_satin = Атласные
-
 marking-RMCUnderwearTanga = Танга (песочные)
 marking-RMCUnderwearTanga-classic_tanga = Танга
-
 marking-RMCUnderwearTangaDesert = Танга (пустынные)
 marking-RMCUnderwearTangaDesert-desert_tanga = Танга
-
 marking-RMCUnderwearTangaJungle = Танга (джунглевые)
 marking-RMCUnderwearTangaJungle-jungle_tanga = Танга
-
 marking-RMCUnderwearTangaSnow = Танга (снежные)
 marking-RMCUnderwearTangaSnow-snow_tanga = Танга
-
 marking-RMCUnderwearTangaUrban = Танга (городские)
 marking-RMCUnderwearTangaUrban-urban_tanga = Танга

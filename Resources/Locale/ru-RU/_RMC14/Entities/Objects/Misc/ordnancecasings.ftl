@@ -1,26 +1,37 @@
-ent-RMCCustomM34A1SmokeTankCase = кастомный дымовой бак M34
-  .desc = Незавершённый дымовой бак, используемый для хранения дымовой смеси для огнемётного блока M34.
-ent-RMCCustomM34TFuelTankCase = кастомный топливный бак M34-T
-  .desc = Незавершённый топливный бак, используемый для хранения топлива для огнемётного блока M34-T.
-ent-RMCCustomM34A1FuelTankCase = кастомный топливный бак M34
-  .desc = Незавершённый топливный бак, используемый для хранения топлива для огнемётного блока M34.
-ent-RMC80mmMortarCameraWarhead = боеголовка с камерой для 80-мм миномёта
-  .desc = Боеголовка с камерой для 80-мм миномёта.
-ent-RMC80mmMortarWarhead = боеголовка 80-мм миномётного снаряда
-  .desc = Боеголовка для 80-мм миномёта.
-ent-RMC80mmMortarShell = гильза 80-мм миномётного снаряда
-  .desc = Снаряд для 80-мм миномёта.
-ent-RMC84mmRocketWarhead = боеголовка 84-мм ракеты
-  .desc = Боеголовка для 84-мм ракеты.
-ent-RMC84mmRocketTube = трубка 84-мм ракеты
-  .desc = Трубка для 84-мм ракеты.
-ent-RMCC4PlasticCasing = пластиковый корпус C4
-  .desc = Корпус для пластиковой взрывчатки.
-ent-RMCM20MineCasing = корпус мины M20
-  .desc = Корпус для осколочной мины M20 «Клеймор».
-ent-RMCM15GrenadeCasing = гильза гранаты M15
-  .desc = Гильза для гранаты M15.
-ent-RMCM40GrenadeCasing = гильза гранаты M40
-  .desc = Гильза для гранаты M40.
-ent-RMCCasingBase = базовая гильза
-  .desc = Пустая гильза.
+ent-RMCCustomM34A1SmokeTankCase-name = base casing
+ent-RMCCustomM34A1SmokeTankCase-desc = An empty casing.
+
+ent-RMCCustomM34TFuelTankCase-name = кастомный топливный бак M34-T
+
+ent-RMCCustomM34A1FuelTankCase-name = кастомный топливный бак M34
+
+ent-RMC80mmMortarCameraWarhead-name = base casing
+ent-RMC80mmMortarCameraWarhead-desc = An empty casing.
+
+ent-RMC80mmMortarWarhead-name = base casing
+ent-RMC80mmMortarWarhead-desc = An empty casing.
+
+ent-RMC80mmMortarShell-name = base casing
+ent-RMC80mmMortarShell-desc = An empty casing.
+
+ent-RMC84mmRocketWarhead-name = base casing
+ent-RMC84mmRocketWarhead-desc = An empty casing.
+
+ent-RMC84mmRocketTube-name = base casing
+ent-RMC84mmRocketTube-desc = An empty casing.
+
+ent-RMCC4PlasticCasing-name = base casing
+ent-RMCC4PlasticCasing-desc = An empty casing.
+
+ent-RMCM20MineCasing-name = base casing
+ent-RMCM20MineCasing-desc = An empty casing.
+
+ent-RMCM15GrenadeCasing-name = base casing
+ent-RMCM15GrenadeCasing-desc = An empty casing.
+
+ent-RMCM40GrenadeCasing-name = base casing
+ent-RMCM40GrenadeCasing-desc = An empty casing.
+
+ent-RMCCasingBase-name = base casing
+ent-RMCCasingBase-desc = An empty casing.
+

@@ -1,5 +1,4 @@
 ### UI
-
 # Shown when examining the window. Each entry represents the window's health condition
 comp-window-damaged-1 = Повреждений нет.
 comp-window-damaged-2 = Имеется несколько царапин.

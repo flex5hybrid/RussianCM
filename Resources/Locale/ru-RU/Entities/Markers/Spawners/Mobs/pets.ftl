@@ -1,22 +1,44 @@
 ent-SpawnMobAlexander-name = Alexander Spawner
+
 ent-SpawnMobBandito-name = Bandito Spawner
+
 ent-SpawnMobCat-name = Random Cat Spawner
+
 ent-SpawnMobCatBingus-name = Bingus Spawner
+
 ent-SpawnMobCatException-name = Exception Spawner
+
 ent-SpawnMobCatFloppa-name = Floppa Spawner
+
 ent-SpawnMobCatRuntime-name = Runtime Spawner
+
 ent-SpawnMobCorgi-name = Corgi Spawner
+
 ent-SpawnMobCorgiMouse-name = Dev Mouse Spawner
+
 ent-SpawnMobCrabAtmos-name = Tropico Spawner
+
 ent-SpawnMobFoxRenault-name = Fox Renault Spawner
+
 ent-SpawnMobMcGriff-name = McGriff Spawner
+
 ent-SpawnMobHamsterHamlet-name = Hamster Hamlet Spawner
+
 ent-SpawnMobKangarooWillow-name = Willow Spawner
+
 ent-SpawnMobMonkeyPunpun-name = Pun Pun Spawner
+
 ent-SpawnMobPollyParrot-name = Polly the parrot Spawner
+
 ent-SpawnMobPossumMorty-name = Possum Morty Spawner
+
 ent-SpawnMobRaccoonMorticia-name = Raccoon Morticia Spawner
+
 ent-SpawnMobShiva-name = Shiva Spawner
+
 ent-SpawnMobSlothPaperwork-name = Sloth Paperwork Spawner
+
 ent-SpawnMobSmile-name = Smile Spawner
+
 ent-SpawnMobWalter-name = Walter Spawner
+

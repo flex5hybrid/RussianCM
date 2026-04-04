@@ -1,6 +1,12 @@
-ent-RMCMagazineRifleM54CMK1HEAP = магазин M54C МК1 КБП (10x24мм)
-ent-RMCMagazineRifleM54CMK1Incendiary = магазин M54C МК1 зажигательных (10x24мм)
-ent-CMMagazineRifleM54CMK1AP = магазин M54C МК1 БП (10x24мм)
-ent-CMMagazineRifleM54CMK1 = магазин M54C МК1 (10x24мм)
-ent-RMCWeaponRifleM54CMK1 = штурмовая винтовка M54C МК1
-  .desc = Более старая модель штурмовой винтовки, широко используемой Корпусом морской пехоты. Использует беспатронные боеприпасы 10x24мм.
+ent-RMCMagazineRifleM54CMK1HEAP-name = item
+
+ent-RMCMagazineRifleM54CMK1Incendiary-name = item
+
+ent-CMMagazineRifleM54CMK1AP-name = item
+
+ent-CMMagazineRifleM54CMK1-name = item
+
+ent-RMCWeaponRifleM54CMK1-name = штурмовая винтовка M54C МК1
+
+ent-RMCMagazineRifleM54CMK1WP-name = item
+

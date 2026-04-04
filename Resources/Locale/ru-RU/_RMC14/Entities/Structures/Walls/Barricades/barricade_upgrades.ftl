@@ -1,3 +1,6 @@
-ent-RMCExplosiveUpgrade-name = составное улучшение (++Взрывчатка, ++Снаряд, ++Огонь)
-ent-RMCBiohazardUpgrade-name = улучшение биологической опасности (+Сжечь)
-ent-RMCBruteUpgrade-name = усиленное улучшение (+Brute)
+ent-RMCExplosiveUpgradePlasteel-name = composite upgrade (++Explosive, ++Projectile, ++Fire)
+
+ent-RMCBiohazardUpgradePlasteel-name = biohazard upgrade (+Burn)
+
+ent-RMCBruteUpgradePlasteel-name = reinforced upgrade (+Brute)
+

@@ -1,7 +1,5 @@
 # UI
-
 ## Window
-
 air-alarm-ui-access-denied = Недостаточный уровень доступа!
 air-alarm-ui-window-pressure-label = Давление
 air-alarm-ui-window-temperature-label = Температура
@@ -36,32 +34,23 @@ air-alarm-ui-mode-wide-filtering = Фильтрация (широкая)
 air-alarm-ui-mode-fill = Заполнение
 air-alarm-ui-mode-panic = Паника
 air-alarm-ui-mode-none = Нет
-
 ## Widgets
-
 ### General
-
 air-alarm-ui-widget-enable = Включено
 air-alarm-ui-widget-copy = Копировать настройки на похожие устройства
 air-alarm-ui-widget-copy-tooltip = Копирует настройки данного устройства на все устройства данной вкладки воздушной сигнализации.
 air-alarm-ui-widget-ignore = Игнорировать
 air-alarm-ui-atmos-net-device-label = Адрес: { $address }
-
 ### Vent pumps
-
 air-alarm-ui-vent-pump-label = Направление вентиляции
 air-alarm-ui-vent-pressure-label = Ограничение давления
 air-alarm-ui-vent-external-bound-label = Внешняя граница
 air-alarm-ui-vent-internal-bound-label = Внутренняя граница
-
 ### Scrubbers
-
 air-alarm-ui-scrubber-pump-direction-label = Направление
 air-alarm-ui-scrubber-volume-rate-label = Объём (Л)
 air-alarm-ui-scrubber-wide-net-label = ШирокаяСеть
-
 ### Thresholds
-
 air-alarm-ui-sensor-gases = Газы
 air-alarm-ui-sensor-thresholds = Границы
 air-alarm-ui-thresholds-pressure-title = Границы (кПа)

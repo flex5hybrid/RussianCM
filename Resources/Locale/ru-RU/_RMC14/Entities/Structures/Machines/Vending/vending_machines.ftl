@@ -1,39 +1,87 @@
-ent-CMVendorIngredients = Система запроса вспомогательного складского помещения на камбузе
-  .desc = Торговый автомат, предназначенный для поваров.
-ent-CMVendorSodaSoviet = БОДА
-  .desc = Старый автомат по продаже сладкой воды, как он здесь оказался?
-ent-CMVendorDinnerware = Столовая посуда
-  .desc = Производитель кухонного и ресторанного оборудования.
-ent-CMVendorSeeds = МегаСид Сервитор
-  .desc = Когда срочно нужны семена!
-ent-CMVendorNutri = НутриМакс
-  .desc = Поставщик питательных веществ для растений.
-ent-CMVendorSEA = СЭАТек
-  .desc = Поставщик оборудования, призванного спасать жизни
-ent-RMCVendorSecArmory = Бунт Тех
-  .desc = Поставщик оборудования для массовых беспорядков.
-ent-CMVendorSec = Секретные технологии
-  .desc = Поставщик охранного оборудования.
-ent-RMCVendorCigsSPP = Командир Продавец сигарет
-  .desc = Государственный продавец сигарет. 
-ent-RMCVendorCigsWeYa = Сигаретный автомат марки Weston-Yamada
-  .desc = Автомат по продаже сигарет марки Weston-Yamada выглядит как пачка We-Ya Gold. 
-ent-RMCVendorCigsElectro = Электронная сигаретная машина марки
-  .desc = Автомат по продаже сигарет марки Electro. 
-ent-CMVendorCigs = Сигаретный автомат
-  .desc = Если вы хотите заболеть раком, сделайте это стильно!
-ent-RMCVendorColaSPP = Сюаньши Напитки
-  .desc = Продавцы напитков из давно забытого филиала СПП, торгующие нормированной водой, смешанной с трижды разбавленными 5% ароматизаторами.
-ent-RMCVendorNutriCoDrink = НутриКо АвтоДринк
-  .desc = Диспенсер NutriCo AutoDrink, способный готовить разнообразные напитки из смеси воды, растворимого вкусового сока и добавок с кофеином.
-ent-CMVendorCola = Бобда Безалкогольные напитки
-  .desc = Поставщик безалкогольных напитков, предоставленный компанией Bobda Soda Company, Гавана.
-ent-RMCVendorSnackSPP = Торговец излишками рациона
-  .desc = Торговый автомат, полный излишков пайков, рассматриваемый как роскошь готовых пайков SPP.
-ent-CMVendorSnack = Машина для приготовления горячих блюд
-  .desc = Торговый автомат, полный готовых блюд, ммммм, попробуйте всю их питательную ценность!
-ent-RMCVendorCoffeeSimple = Машина для приготовления горячего кофе
-ent-CMVendorCoffee = Автомат с горячими напитками
-  .desc = Торговый автомат по продаже горячих напитков.
-ent-CMVendor = Вендомат
-  .desc = Обычный торговый автомат.
+ent-CMVendorIngredients-name = Galley Auxiliary Storage Requisition System
+ent-CMVendorIngredients-desc = A vending machine meant to be use for cooks.
+
+ent-CMVendorSodaSoviet-name = Vendomat
+ent-CMVendorSodaSoviet-desc = A generic vending machine.
+
+ent-CMVendorDinnerware-name = Dinnerware
+ent-CMVendorDinnerware-desc = A kitchen and restaurant equipment vendor.
+
+ent-CMVendorSeeds-name = Vendomat
+ent-CMVendorSeeds-desc = A generic vending machine.
+
+ent-CMVendorNutri-name = Vendomat
+ent-CMVendorNutri-desc = A generic vending machine.
+
+ent-CMVendorSEA-name = Vendomat
+ent-CMVendorSEA-desc = A generic vending machine.
+
+ent-RMCVendorSecArmory-name = Riot Tech
+ent-RMCVendorSecArmory-desc = A security riot equipment vendor.
+
+ent-CMVendorSec-name = Vendomat
+ent-CMVendorSec-desc = A generic vending machine.
+
+ent-RMCVendorCigsSPP-name = Komandir Cigarettes Vendor
+ent-RMCVendorCigsSPP-desc = A state-owned cigarette vendor. Its drab colour was chosen to discourage purchases, but its existence is an admittance to the necessity for such machines to exist in the first place.
+
+ent-RMCVendorCigsWeYa-name = Vendomat
+ent-RMCVendorCigsWeYa-desc = A generic vending machine.
+
+ent-RMCVendorCigsElectro-name = Vendomat
+ent-RMCVendorCigsElectro-desc = A generic vending machine.
+
+ent-CMVendorCigs-name = Vendomat
+ent-CMVendorCigs-desc = A generic vending machine.
+
+ent-RMCVendorColaSPP-name = Xuanshi Drinks
+ent-RMCVendorColaSPP-desc = A drinks vendors from a long forgotten branch of the SPP, selling rationed water mixed with thrice diluted 5% flavourments.
+
+ent-RMCVendorNutriCoDrink-name = NutriCo AutoDrink
+ent-RMCVendorNutriCoDrink-desc = A NutriCo AutoDrink dispenser, capable of making a variety of drinks to consume from a mixture of water and instant flavoring juice and caffeine additives.
+
+ent-CMVendorCola-name = Vendomat
+ent-CMVendorCola-desc = A generic vending machine.
+
+ent-RMCVendorSnackSPP-name = Surplus Ration Vendor
+ent-RMCVendorSnackSPP-desc = A vending machine full of surplus rations, viewed as the luxury of ready-avaliable SPP rations.
+
+ent-CMVendorSnack-name = Vendomat
+ent-CMVendorSnack-desc = A generic vending machine.
+
+ent-RMCVendorCoffeeSimple-name = Vendomat
+ent-RMCVendorCoffeeSimple-desc = A generic vending machine.
+
+ent-CMVendorCoffee-name = Vendomat
+ent-CMVendorCoffee-desc = A generic vending machine.
+
+ent-CMVendor-name = Vendomat
+ent-CMVendor-desc = A generic vending machine.
+
+ent-CMVendorCoffeeLockedPowered-name = Vendomat
+ent-CMVendorCoffeeLockedPowered-desc = A generic vending machine.
+
+ent-RMCVendorSnackSimple-name = Vendomat
+ent-RMCVendorSnackSimple-desc = A generic vending machine.
+
+ent-RMCVendorColaResearch-name = Vendomat
+ent-RMCVendorColaResearch-desc = A generic vending machine.
+
+ent-RMCVendorNutriCoDrinkSPP-name = drink dispenser
+ent-RMCVendorNutriCoDrinkSPP-desc = A drinks vendors from a long forgotten branch of the SPP, selling rationed water mixed with thrice diluted 5% flavourments.
+
+ent-RMCVendorSoda-name = Vendomat
+ent-RMCVendorSoda-desc = A generic vending machine.
+
+ent-RMCVendorCigsFree-name = Vendomat
+ent-RMCVendorCigsFree-desc = A generic vending machine.
+
+ent-CMVendorDinnerwareLockedPowered-name = Dinnerware
+ent-CMVendorDinnerwareLockedPowered-desc = A kitchen and restaurant equipment vendor.
+
+ent-CMVendorIngredientsLockedPowered-name = Galley Auxiliary Storage Requisition System
+ent-CMVendorIngredientsLockedPowered-desc = A vending machine meant to be use for cooks.
+
+ent-RMCVendorSecTSEPA-name = Vendomat
+ent-RMCVendorSecTSEPA-desc = A generic vending machine.
+

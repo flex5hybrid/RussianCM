@@ -1,1 +1,3 @@
-ent-CMSpawnPointOrdnanceTech = точка появления артиллерийских технологий
+ent-CMSpawnPointOrdnanceTech-name = ordnance tech spawn point
+ent-CMSpawnPointOrdnanceTech-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

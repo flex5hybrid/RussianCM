@@ -1,8 +1,6 @@
 ﻿cm-ui-rmc14 = RMC14
-
 rmc-ui-options-cassettes-volume = Громкость кассет:
 rmc-ui-options-hijack-song-volume = Громкость сигнальной мелодии:
-
 rmc-ui-voicelines = Голосовые реплики
 rmc-ui-options-tab-voicelines = Голосовые реплики
 rmc-ui-audio-voicelines-yourself = Воспроизводить ваши реплики
@@ -19,7 +17,6 @@ rmc-ui-audio-voicelines-vulpkanin = Реплики вульпканинов
 rmc-ui-audio-voicelines-rodentia = Реплики грызунов
 rmc-ui-audio-voicelines-feroxi = Реплики ферокси
 rmc-ui-audio-voicelines-skrell = Реплики скреллов
-
 rmc-ui-emotes = Эмоции
 rmc-ui-audio-emotes-yourself = Ваши эмоции
 rmc-ui-audio-emotes-arachnid = Эмоции арахнидов
@@ -35,9 +32,7 @@ rmc-ui-audio-emotes-vulpkanin = Эмоции вульпканинов
 rmc-ui-audio-emotes-rodentia = Эмоции грызунов
 rmc-ui-audio-emotes-feroxi = Эмоции ферокси
 rmc-ui-audio-emotes-skrell = Эмоции скреллов
-
 cm-ui-roadmap = План разработки
-
 rmc-ui-link-discord-account = Привязать аккаунт Discord
 rmc-ui-link-discord-account-text = Нажмите кнопку ниже, чтобы скопировать код.
   Затем перейдите в канал #account-linking для привязки аккаунтов.
@@ -45,7 +40,6 @@ rmc-ui-link-discord-account-copy = Копировать код
 rmc-ui-link-discord-account-copied = Скопировано!
 rmc-ui-link-discord-account-already-linked = [bold]Ваш аккаунт уже привязан![/bold]
 rmc-ui-link-discord-account-open-channel = Открыть канал
-
 rmc-ui-named-items = Именные предметы
 rmc-ui-named-items-displayed-as = Будет отображаться как 'Ваше имя' Штурмовая винтовка M54C.
   Убедитесь, что выбранное имя не нарушает правила.
@@ -55,7 +49,6 @@ rmc-ui-named-sidearm = Имя пистолета
 rmc-ui-named-helmet = Имя шлема
 rmc-ui-named-armor = Имя брони
 rmc-ui-named-sentry = Имя турели
-
 rmc-ui-patron-perks = Привилегии патронов
 rmc-ui-lobby-message = Сообщение в лобби
 rmc-ui-lobby-message-description = Отображается игрокам перед началом игры.
@@ -79,20 +72,14 @@ rmc-ui-figurine-in-preferences = Вы можете экспортировать 
 rmc-ui-ghost-color = Цвет призрака
 rmc-ui-ghost-color-clear = Очистить
 rmc-ui-ghost-color-save = Сохранить
-
 rmc-ui-shoutout-marine = [bold]Операция профинансирована [color=green]{$name}[/color]![/bold]
 rmc-ui-shoutout-xeno = [bold]Улей основан [color=purple]{$name}[/color]![/bold]
-
 rmc-ui-discord = Discord
 rmc-ui-patreon = Patreon
-
 rmc-other-credits-tab = Другое
-
 rmc-ui-auto-punctuate = Автоматическая пунктуация внутриигровых сообщений
 rmc-ui-auto-eject-magazines = Автоматическое извлечение магазинов
 rmc-ui-damage-yourself = Разрешить самоповреждение в ближнем бою и из оружия
-
 rmc-tacmap-alert-area = Текущая зона: {$area}
 rmc-tacmap-alert-no-area = Неизвестно
-
 rmc-ui-options-alternate-sprites = Использовать спрайты без триггеров трипофобии

@@ -1,7 +1,5 @@
 food-sequence-no-space = Вы не можете положить больше!
-
 # GENERAL
-
 food-sequence-content-chicken = курицой
 food-sequence-content-duck = уткой
 food-sequence-content-crab = крабом
@@ -77,9 +75,7 @@ food-sequence-content-spacemans-trumpet = космической трубкой
 food-sequence-content-cherry = вишней
 food-sequence-content-snail = улиткой
 food-sequence-content-anomaly-berry = аномальной ягодой
-
 # BURGERS
-
 food-sequence-burger-gen = { $content }бургер
 food-sequence-burger-content-raw-meat = сыро
 food-sequence-burger-content-meat = мясо
@@ -119,11 +115,7 @@ food-sequence-burger-content-spacemans-trumpet = космотрубо
 food-sequence-burger-content-anomaly-berry = аномо
 food-sequence-burger-content-extradimensional-orange = три-дэ
 food-sequence-burger-content-world-pea = миро
-
 # TACO
-
 food-sequence-taco-gen = тако с { $content }
-
 # SKEWER
-
 food-sequence-skewer-gen = шашлык с { $content }

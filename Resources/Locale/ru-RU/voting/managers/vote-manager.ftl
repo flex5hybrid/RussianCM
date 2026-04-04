@@ -1,7 +1,5 @@
 ui-vote-initiator-server = Сервер
-
 ## Default.Votes
-
 ui-vote-restart-title = Перезапуск раунда
 ui-vote-restart-succeeded = Голосование о перезапуске раунда успешно.
 ui-vote-restart-failed = Голосование о перезапуске раунда отклонено (требуется { TOSTRING($ratio, "P0") }).

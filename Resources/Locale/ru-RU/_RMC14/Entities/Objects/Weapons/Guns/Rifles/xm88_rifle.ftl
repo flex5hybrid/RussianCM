@@ -1,4 +1,8 @@
-ent-RMCBox458SOCOM = коробка патронов .458 SOCOM
-  .desc = Коробка, заполненная горстями патронов .458 SOCOM, предназначенных для использования с тяжелой винтовкой XM88.
-ent-WeaponRifleXM88 = Тяжелая винтовка XM88
-  .desc = Экспериментальная переносная противо materiel винтовка под патрон .458 SOCOM. Перед каждым выстрелом необходимо вручную досылать патрон в патронник.
+ent-RMCBox458SOCOM-name = box of shotgun shells
+
+ent-WeaponRifleXM88-name = XM88 Heavy Rifle
+ent-WeaponRifleXM88-desc = An experimental man-portable anti-materiel rifle chambered in .458 SOCOM. It must be manually chambered for every shot.
+
+ent-RMCBullet458SOCOM-name = BaseBullet
+ent-RMCBullet458SOCOM-desc = If you can see this you're probably dead!
+

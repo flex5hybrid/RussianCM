@@ -1,14 +1,16 @@
-ent-RMCIntelTechTree = дерево технологий разведки
-ent-RMCComputerIntel = компьютер разведки
-  .desc = Компьютер разведки КМК для каталогизации и распространения данных.
-ent-RMCTechTreeConsole = консоль дерева технологий
-  .desc = Консоль для приобретения технологий.
-ent-RMCIntelTechnicalManual = техническое руководство
-  .desc = Специализированное техническое руководство, может быть полезно специалисту в соответствующей области.
-ent-RMCIntelFolder = папка с разведданными
-  .desc = Папка с документами внутри.
-ent-RMCIntelProgressReport = отчет о ходе работ
-  .desc = Письменный отчет кого-то для начальства о статусе какого-то проекта.
-ent-RMCIntelPaperScrap = клочок бумаги
-  .desc = Клочок бумаги, кажется, некоторые слова еще можно разобрать.
-ent-RMCIntelBase = разведданные
+ent-RMCIntelTechTree-name = дерево технологий разведки
+
+ent-RMCComputerIntel-name = компьютер разведки
+
+ent-RMCTechTreeConsole-name = консоль дерева технологий
+
+ent-RMCIntelTechnicalManual-name = техническое руководство
+
+ent-RMCIntelFolder-name = папка с разведданными
+
+ent-RMCIntelProgressReport-name = отчет о ходе работ
+
+ent-RMCIntelPaperScrap-name = клочок бумаги
+
+ent-RMCIntelBase-name = разведданные
+

@@ -1,14 +1,30 @@
-ent-RMCPlanetSorokyneRepaired = LV-976 - Сорокинские пласты (отремонтированный)
-ent-RMCPlanetHybrisaRepaired = LV-759 Гибриса Проспера (отремонтированный)
-ent-RMCPlanetCorsat = КОРСАТ
-ent-RMCPlanetArcticValley = Арктическая долина
-ent-RMCPlanetSorokyne = LV-976 Сорокинские пласты
-ent-RMCPlanetHybrisa = LV-759 Гибриза Проспера
-ent-RMCPlanetChances = LV-522 Претензия Шанса
-ent-RMCPlanetKutjevo = Кутьевский НПЗ
-ent-RMCPlanetVaradero = Новый Варадеро
-ent-RMCPlanetTrijent = Плотина Триджент
-ent-RMCPlanetFiorina = Научное приложение Фиорины
-ent-RMCPlanetShiva = Шива Снежок
-ent-RMCPlanetSolaris = Солярис Ридж
-ent-RMCPlanetLV624 = ЛВ-624
+ent-RMCPlanetSorokyneRepaired-name = LV-976 - Sorokyne Strata (Repaired)
+
+ent-RMCPlanetHybrisaRepaired-name = LV-759 Hybrisa Prospera (Repaired)
+
+ent-RMCPlanetCorsat-name = CORSAT
+
+ent-RMCPlanetArcticValley-name = Arctic Valley
+
+ent-RMCPlanetSorokyne-name = LV-976 Sorokyne Strata
+
+ent-RMCPlanetHybrisa-name = LV-759 Hybrisa Prospera
+
+ent-RMCPlanetChances-name = LV-522 Chance's Claim
+
+ent-RMCPlanetKutjevo-name = Kutjevo Refinery
+
+ent-RMCPlanetVaradero-name = New Varadero
+
+ent-RMCPlanetTrijent-name = Trijent Dam
+
+ent-RMCPlanetFiorina-name = Fiorina Science Annex
+
+ent-RMCPlanetShiva-name = Shivas Snowball
+
+ent-RMCPlanetSolaris-name = Solaris Ridge
+
+ent-RMCPlanetLV624-name = LV-624 Lazarus Landing
+
+ent-RMCPlanetJungleDelta-name = Jungle Delta
+

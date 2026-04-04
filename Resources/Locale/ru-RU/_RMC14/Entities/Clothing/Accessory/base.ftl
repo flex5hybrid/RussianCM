@@ -1,0 +1,2 @@
+ent-RMCBaseUniformAccessory-name = item
+

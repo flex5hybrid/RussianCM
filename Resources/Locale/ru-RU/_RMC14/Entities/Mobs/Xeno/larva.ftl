@@ -1,3 +1,5 @@
-ent-RMCXenoEmbryo = инопланетный эмбрион
-  .desc = Весь покрыт отвратительной слизью.
-ent-CMXenoLarva = Личинка
+ent-RMCXenoEmbryo-name = alien embryo
+ent-RMCXenoEmbryo-desc = All slimy and yucky.
+
+ent-CMXenoLarva-name = cm-job-name-xeno-larva
+

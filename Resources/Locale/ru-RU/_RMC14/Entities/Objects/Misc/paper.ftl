@@ -1,8 +1,12 @@
-ent-RMCPaperRequisitionInvoice = накладная на запрос
-  .desc = Единица бюрократии, ожидающая одобрения.
-ent-RMCPaperAegisInfoFax = передача Высшего Командования
-ent-CMPaperAlmayerStorage = записка об аварийном хранилище «Альмайер»
-ent-CMPaperJudgement = приговор
-ent-CMPaper = бумага
-ent-CMBasePaper = бумага
-  .desc = Лист белой бумаги.
+ent-RMCPaperRequisitionInvoice-name = накладная на запрос
+
+ent-RMCPaperAegisInfoFax-name = передача Высшего Командования
+
+ent-CMPaperAlmayerStorage-name = записка об аварийном хранилище «Альмайер»
+
+ent-CMPaperJudgement-name = приговор
+
+ent-CMPaper-name = бумага
+
+ent-CMBasePaper-name = бумага
+

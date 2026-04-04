@@ -1,6 +1,9 @@
-ent-CMCoatDressBluesGeneral = китель парадной формы офицера морпехов
-  .desc = Китель легендарной парадной формы морпехов, практически не изменившийся с XIX века. Имеет гладкий тёмный дизайн униформы, которую носит кадровый офицер.
-ent-CMCoatDressBluesSenior = китель парадной формы сержанта морпехов
-  .desc = Китель легендарной парадной формы морпехов, практически не изменившийся с XIX века. Имеет украшения награждённого сержанта. Наследие, воплощённое в жизнь.
-ent-CMCoatDressBluesEnlisted = китель парадной формы рядового морпеха
-  .desc = Китель легендарной парадной формы морпехов, практически не изменившийся с XIX века. На тебе история, морпех. Не подведи своих предков.
+ent-CMCoatDressBluesGeneral-name = marine officer dress blues jacket
+ent-CMCoatDressBluesGeneral-desc = The jacket of the legendary Marine dress blues, virtually unchanged since the 19th century. Features the sleek dark design of the uniform worn by a commissioned officer.
+
+ent-CMCoatDressBluesSenior-name = marine NCO dress blues jacket
+ent-CMCoatDressBluesSenior-desc = The jacket of the legendary Marine dress blues, virtually unchanged since the 19th century. Features the adornments of a decorated non-commissioned officer. Heritage, embodied.
+
+ent-CMCoatDressBluesEnlisted-name = marine enlisted dress blues jacket
+ent-CMCoatDressBluesEnlisted-desc = The jacket of the legendary Marine dress blues, virtually unchanged since the 19th century. You're wearing history, Marine. Don't let your ancestors down.
+

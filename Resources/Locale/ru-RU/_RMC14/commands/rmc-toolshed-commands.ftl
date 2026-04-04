@@ -1,72 +1,50 @@
 ﻿command-description-alertlevel-get = Выводит текущий уровень тревоги на боевом корабле.
 command-description-alertlevel-set = Изменяет уровень тревоги на боевом корабле.
-
 command-description-areas-load = Загружает все сохранённые зоны на карту как объекты.
 command-description-areas-loadmortar = Загружает только зоны для миномётов на карту как объекты.
 command-description-areas-save = Сохраняет все размеченные зоны карты.
-
 command-description-bioscan-marine = Вручную запускает сканирование ARES для морпехов (локация и количество ксеносов).
 command-description-bioscan-xeno = Вручную запускает сканирование Королевы-Матери для ксеносов (локация и количество морпехов).
 command-description-bioscan-all = Запускает двойное сканирование для обеих фракций.
-
 command-description-vendorpoints-get = Показывает баллы морпеха для закупок у вендоров.
 command-description-vendorpoints-getspecialist = Показывает баллы Специалиста для закупок снаряжения.
 command-description-vendorpoints-set = Устанавливает баллы для закупок у морпеха/группы.
 command-description-vendorpoints-setspecialist = Устанавливает баллы Специалиста/группы для закупок.
-
 command-description-evolutionpoints-get = Показывает очки эволюции ксеноса.
 command-description-evolutionpoints-set = Устанавливает очки эволюции ксеноса.
 command-description-evolutionpoints-max = Максимизирует очки эволюции ксеноса.
-
 command-description-excluderoletimer-add = Исключает игрока из требований по игровому времени для роли.
 command-description-excluderoletimer-get = Показывает роли с исключениями по игровому времени.
 command-description-excluderoletimer-remove = Удаляет исключение по игровому времени для роли.
-
 command-description-figurine-export = Экспортирует текущего персонажа как фигурку.
 command-description-figurine-openslots = Открывает все слоты профессий до перезагрузки сервера.
-
 command-description-hive-alldefault = Сбрасывает улей всех ксеносов на стандартный.
 command-description-hive-set = Устанавливает улей для ксеноса/группы.
-
 command-description-icon-get_human_readable = Показывает читаемое название иконки профессии.
 command-description-icon-get = Показывает название иконки профессии.
 command-description-icon-set = Устанавливает иконку профессии.
 command-description-icon-del = Удаляет иконку профессии.
-
 command-description-marine-randomize = Респавнит морпеха(ов) с рандомизированными параметрами.
 command-description-marine-randomizewithjob = Респавнит морпеха(ов) с заданной профессией и рандомными параметрами.
-
 command-description-removeinvalidweeds = Удаляет аномально распространившиеся грибницы.
-
 command-description-requisitions-addbudget = Добавляет бюджет Реквизиций.
 command-description-requisitions-removebudget = Уменьшает бюджет Реквизиций.
-
 command-description-rmcrejuvenate-marineplayersinrange = Полностью исцеляет морпехов в радиусе.
-
 command-description-intel-addpoints = Добавляет очки в дерево технологий Разведки.
 command-description-intel-removepoints = Удаляет очки из дерева технологий Разведки.
 command-description-intel-spawnintel = Спавнит разведданные на всех картах.
-
 command-description-prototypecontains = Фильтрует объекты по содержанию текста в ID.
-
 command-description-skills-get = Показывает уровень навыка морпеха.
 command-description-skills-set = Устанавливает уровень навыка морпеха(ов).
 command-description-skills-all = Устанавливает все навыки морпеха(ов).
-
 command-description-squad-get = Показывает ID отряда морпеха.
 command-description-squad-getname = Показывает название отряда морпеха.
 command-description-squad-set = Назначает морпеха(ов) в отряд.
 command-description-squad-with = Фильтрует морпехов по отряду.
 command-description-squad-refresh = Обновляет состав отряда вручную.
-
 command-description-xenomature = Мгновенно созревает ксеноса (Королева получает бонусы).
-
 command-description-weedkiller = Уничтожает грибницы и смоляные постройки в зоне.
-
 command-description-withxenotier = Фильтрует ксеносов по уровню развития.
-
 command-description-spawnallmapinserts = Принудительно спавнит все карточные объекты.
-
 command-description-rmcresetahelptracking = Сбрасывает статистику AHelp для Discord.
-
 command-description-hijack-trigger = Активирует сценарий угона на текущей карте.

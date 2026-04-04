@@ -1,24 +1,48 @@
-ent-RMCSkillVehicles = Техника
-ent-RMCSkillSurgery = Хирургия
-ent-RMCSkillSpecialistWeapons = Специализированное оружие
-ent-RMCSkillSmartGun = Умное оружие
-ent-RMCSkillResearch = Исследования
-ent-RMCSkillPowerLoader = Погрузчик
-ent-RMCSkillPolice = Полиция
-ent-RMCSkillPilot = Пилот
-ent-RMCSkillOverwatch = Управление
-ent-RMCSkillNavigations = Навигация
-ent-RMCSkillMeleeWeapons = Оружие ближнего боя
-ent-RMCSkillMedical = Медицина
-ent-RMCSkillLeadership = Лидерство
-ent-RMCSkillJtac = Целеуказание
-ent-RMCSkillIntel = Разведка
-ent-RMCSkillFireman = Перенос на плече
-ent-RMCSkillFirearms = Владение оружием
-ent-RMCSkillExecution = Казнь
-ent-RMCSkillEngineer = Инженер
-ent-RMCSkillEndurance = Выносливость
-ent-RMCSkillDomestics = Быт
-ent-RMCSkillCqc = Рукопашный бой
-ent-RMCSkillConstruction = Строительство
-ent-RMCSkillAntagonist = Антагонист
+ent-RMCSkillVehicles-name = Техника
+
+ent-RMCSkillSurgery-name = Хирургия
+
+ent-RMCSkillSpecialistWeapons-name = Специализированное оружие
+
+ent-RMCSkillSmartGun-name = Умное оружие
+
+ent-RMCSkillResearch-name = Исследования
+
+ent-RMCSkillPowerLoader-name = Погрузчик
+
+ent-RMCSkillPolice-name = Полиция
+
+ent-RMCSkillPilot-name = Пилот
+
+ent-RMCSkillOverwatch-name = Управление
+
+ent-RMCSkillNavigations-name = Навигация
+
+ent-RMCSkillMeleeWeapons-name = Оружие ближнего боя
+
+ent-RMCSkillMedical-name = Медицина
+
+ent-RMCSkillLeadership-name = Лидерство
+
+ent-RMCSkillJtac-name = Целеуказание
+
+ent-RMCSkillIntel-name = Разведка
+
+ent-RMCSkillFireman-name = Перенос на плече
+
+ent-RMCSkillFirearms-name = Владение оружием
+
+ent-RMCSkillExecution-name = Казнь
+
+ent-RMCSkillEngineer-name = Инженер
+
+ent-RMCSkillEndurance-name = Выносливость
+
+ent-RMCSkillDomestics-name = Быт
+
+ent-RMCSkillCqc-name = Рукопашный бой
+
+ent-RMCSkillConstruction-name = Строительство
+
+ent-RMCSkillAntagonist-name = Антагонист
+

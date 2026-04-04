@@ -1,68 +1,106 @@
 ent-PlushieThrongler-name = throngler plushie
 ent-PlushieThrongler-desc = A stuffed toy to remind cargo techs of what they can no longer have.
+
 ent-PlushieGhost-name = ghost soft toy
 ent-PlushieGhost-desc = The start of your personal GHOST GANG!
+
 ent-PlushieGhostRevenant-name = revenant soft toy
 ent-PlushieGhostRevenant-desc = So soft it almost makes you want to take a nap...
+
 ent-PlushieBee-name = bee plushie
 ent-PlushieBee-desc = A cute toy that resembles an even cuter programmer. You'd have to be a monster to grind this up.
+
 ent-PlushieHampter-name = hampter plushie
 ent-PlushieHampter-desc = A cute stuffed toy that resembles a hamster. Its face looks squished.
+
 ent-PlushieRGBee-name = RGBee plushie
 ent-PlushieRGBee-desc = A cute toy that resembles a bee plushie while you're on LSD.
+
 ent-PlushieNuke-name = nukie plushie
 ent-PlushieNuke-desc = A stuffed toy that resembles a syndicate nuclear operative. The tag claims operatives to be purely fictitious.
+
 ent-PlushieRouny-name = rouny plushie
 ent-PlushieRouny-desc = Rouny.
+
 ent-PlushieLamp-name = lamp plushie
 ent-PlushieLamp-desc = A light emitting friend!
+
 ent-PlushieArachind-name = arachnid plushie
 ent-PlushieArachind-desc = An adorable stuffed toy that resembles an arachnid. It feels silky..
+
 ent-PlushieLizard-name = lizard plushie
 ent-PlushieLizard-desc = An adorable stuffed toy that resembles a lizardperson. Made by CentComm as a token initiative to combat speciesism in work environments. "Welcome your new colleagues as you do this plush, with open arms!"
+
 ent-PlushieExperiment-name = experiment plushie
 ent-PlushieExperiment-desc = A plushie of a canid of sorts, it yearns to be detonated on a landmine.
+
 ent-PlushieRainbowLizard-name = rainbow lizard plushie
 ent-PlushieRainbowLizard-desc = An adorable stuffed toy that resembles a lizardperson of every color. You just might trip while staring at it...
+
 ent-PlushieSpaceLizard-name = space lizard plushie
 ent-PlushieSpaceLizard-desc = An adorable stuffed toy that resembles a lizardperson in an EVA suit. Made by CentComm as a token initiative to combat speciesism in space environments. "Welcome your new colleges as you do this plush, with open arms!"
+
 ent-PlushieLizardInversed-name = drazil plushie
 ent-PlushieLizardInversed-desc = An adorable stuffed toy that resembles a lizardperson from an inversed dimension. Hew!
+
 ent-PlushieDiona-name = diona plushie
 ent-PlushieDiona-desc = An adorable stuffed toy that resembles a diona. Love water and cuddles. Do not wet!
+
 ent-PlushieSharkBlue-name = blue shark soft toy
 ent-PlushieSharkBlue-desc = Big and safe to have by your side if you want to discover the world below the surface of the ocean.
+
 ent-PlushieSharkPink-name = pink shark soft toy
 ent-PlushieSharkPink-desc = Hehe shonk :)
+
 ent-PlushieSharkGrey-name = grey shark soft toy
 ent-PlushieSharkGrey-desc = A quiet, reserved kind of shonk. Loves to ride the grey tide.
+
 ent-PlushieRatvar-name = ratvar plushie
 ent-PlushieRatvar-desc = A large stuffed doll of the elder god Ratvar.
+
 ent-PlushieNar-name = nar'sie plushie
 ent-PlushieNar-desc = A large stuffed doll of the elder goddess Nar'Sie.
+
 ent-PlushieCarp-name = carp plushie
 ent-PlushieCarp-desc = An adorable stuffed toy that resembles the monstrous space carp.
+
 ent-PlushieMagicarp-name = magicarp plushie
 ent-PlushieMagicarp-desc = An adorable stuffed toy resembling the exceedingly rare magicarp.
+
 ent-PlushieRainbowCarp-name = rainbow carp plushie
 ent-PlushieRainbowCarp-desc = An adorable stuffed toy resembling the legendary rainbow carp.
+
 ent-PlushieHolocarp-name = holocarp plushie
 ent-PlushieHolocarp-desc = A holographic stuffed toy resembling science's nemesis - the holocarp.
+
 ent-PlushieSlime-name = slime plushie
 ent-PlushieSlime-desc = An adorable stuffed toy that resembles a slime. It's basically a hacky sack.
+
 ent-PlushieSnake-name = snake plushie
 ent-PlushieSnake-desc = An adorable stuffed toy that resembles a snake.
+
 ent-ToyMouse-name = mouse toy
 ent-ToyMouse-desc = A colorful toy mouse!
+
 ent-PlushieVox-name = vox plushie
 ent-PlushieVox-desc = SKREEEEEEEEEEEE!
+
 ent-PlushieAtmosian-name = atmosian plushie
 ent-PlushieAtmosian-desc = An adorable stuffed toy that resembles a brave atmosian. Unfortunately, he won't fix those depressurizations for you.
+
 ent-PlushieXeno-name = xeno plushie
 ent-PlushieXeno-desc = An adorable stuffed toy that resembles a scary xenomorf. You're lucky it's just a toy.
+
 ent-PlushiePenguin-name = penguin plushie
 ent-PlushiePenguin-desc = I use arch btw!
+
 ent-PlushieHuman-name = human plushie
 ent-PlushieHuman-desc = This is a felt plush of a human. All craftsmanship is of the lowest quality. The human is naked. The human is crying. The human is screaming.
+
 ent-PlushieMoth-name = moth plushie
 ent-PlushieMoth-desc = Cute and fluffy moth plushie. Enjoy, bz!
+
+ent-BasePlushie-name = item
+
+ent-PlushieLizardMirrored-name = item
+

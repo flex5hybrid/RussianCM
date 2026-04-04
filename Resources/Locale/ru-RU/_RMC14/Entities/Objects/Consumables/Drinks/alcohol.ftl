@@ -1,34 +1,56 @@
-ent-RMCDrinkAlcoholWhiskey = виски «Особый Резерв Дяди Гита»
-  .desc = Виски высшего качества из одного солода, нежно выдержанный в течение четырёх лет деревенскими жителями в глуши Алабамы.
-ent-RMCDrinkAlcoholVodka = водка «Красная Звезда»
-  .desc = Водка «Красная Звезда»: Основной продукт в рационе врага. Кто бы мог подумать, что жидкая картошка может пахнуть так сильно. На бутылке написано: «Ра-ра, Красный Звездный Человек: Ценитель Прекрасного». По крайней мере, ты так думаешь... ты не умеешь читать по-русски.
-ent-RMCDrinkAlcoholSake = сакэ «Вестон-Ямада»
-  .desc = Сакэ, приготовленное по древним технологиям, передававшимся тысячи лет. Сброжено в Айове корпорацией «Вестон-Ямада».
-ent-RMCDrinkAlcoholRum = ром «Капитан Пит Кубинский Пряный»
-  .desc = Названный в честь знаменитого Капитана «Кубинского» Пита, этот ром такой же непредсказуемый, как и его последняя миссия.
-ent-RMCDrinkAlcoholPurpleWine = вино «Бархат Колдуна»
-  .desc = Какая восхитительная упаковка для, несомненно, высококачественного вина! Сорт винограда, должно быть, потрясающий!
-ent-RMCDrinkAlcoholPatron = текила «Wrapp Artiste Patron»
-  .desc = Текила с серебряной инкрустацией, которую подают в ночных клубах по всей галактике.
-ent-RMCDrinkAlcoholBlueCuracao = ликёр «Мисс Блю Кюрасао»
-  .desc = Фруктовый, исключительно лазурный напиток. Не позволяет потребителю использовать пятую магию.
-ent-RMCDrinkAlcoholMelonLiquor = ликёр дынный «Изумрудный»
-  .desc = Бутылка дынного ликёра «Изумрудный» крепостью 46 градусов. Сладкий и лёгкий.
-ent-RMCDrinkAlcoholVermouth = вермут «Голденай»
-  .desc = Сладкая, сладкая сухость~
-ent-RMCDrinkAlcoholKahlua = кофейный ликёр «Роберта Робуста»
-  .desc = Широко известный мексиканский кофейный ликёр. Производится с 1936 года. ХОНК
-ent-RMCDrinkAlcoholGoldschlager = шнапс «Колледж Гёрл Гольдшлегер»
-  .desc = Потому что только они будут пить коричный шнапс крепостью 100 градусов.
-ent-RMCDrinkAlcoholGin = джин «Griffeater»
-  .desc = Бутылка высококачественного джина, произведённого на космической станции «Новый Лондон».
-ent-RMCDrinkAlcoholDavenport = виски «Дэвенпорт Ржаной»
-  .desc = Дорогой виски с характерным вкусом. На бутылке с гордостью заявлено, что это «Истинная Классика».
-ent-RMCDrinkAlcoholCognac = коньяк «Chateau de Baton Premium»
-  .desc = Сладкий и крепкий алкогольный напиток, созданный после многочисленных дистилляций и лет выдержки. Возможно, на этот раз ты не будешь орать «СМОТРИНЫ».
-ent-RMCDrinkAlcoholAbsinthe = абсент «Jailbreaker Verte»
-  .desc = Один глоток — и ты просто знаешь, что сейчас будет хорошее время.
-ent-RMCDrinkAlcoholTequila = текила «Какаво Гарантированного Качества»
-  .desc = Сделана из первоклассных нефтяных дистиллятов, чистой талидомида и других высококачественных ингредиентов!
-ent-RMCDrinkAlcoholGrenadine = сироп гранатовый «Брайар Роуз»
-  .desc = Сладкий и терпкий, барный сироп для придания напиткам цвета и вкуса.
+ent-RMCDrinkAlcoholWhiskey-name = uncle git's special reserve
+ent-RMCDrinkAlcoholWhiskey-desc = A premium single-malt whiskey, gently matured for four years by hillbillies in the backwaters of Alabama.
+
+ent-RMCDrinkAlcoholVodka-name = red star vodka
+ent-RMCDrinkAlcoholVodka-desc = Red Star Vodka: A staple of the enemy's diet. Who knew that liquid potato could smell this potent. The bottle reads, 'Ra Ra Red Star Man: Lover of the Finer Things.' Or at least that's what you assume...you can't read Russian.
+
+ent-RMCDrinkAlcoholSake-name = weston-yamada sake
+ent-RMCDrinkAlcoholSake-desc = Sake made with ancient techniques passed down for thousands of years. Fermented in Iowa by the Weston-Yamada Corporation.
+
+ent-RMCDrinkAlcoholRum-name = captain pete's cuban spiced rum
+ent-RMCDrinkAlcoholRum-desc = Named after the famed Captain 'Cuban' Pete, this rum is about as volatile as his final mission.
+
+ent-RMCDrinkAlcoholPurpleWine-name = warlock's velvet
+ent-RMCDrinkAlcoholPurpleWine-desc = What a delightful packaging for a surely high-quality wine! The vintage must be amazing!
+
+ent-RMCDrinkAlcoholPatron-name = wrapp artiste patron
+ent-RMCDrinkAlcoholPatron-desc = Silver laced tequila, served in space night clubs across the galaxy.
+
+ent-RMCDrinkAlcoholBlueCuracao-name = miss blue curacao
+ent-RMCDrinkAlcoholBlueCuracao-desc = A fruity, exceptionally azure drink. Does not allow the imbiber to use the fifth magic.
+
+ent-RMCDrinkAlcoholMelonLiquor-name = emeraldine melon liquor
+ent-RMCDrinkAlcoholMelonLiquor-desc = A bottle of 46 proof Emeraldine Melon Liquor. Sweet and light.
+
+ent-RMCDrinkAlcoholVermouth-name = goldeneye vermouth
+ent-RMCDrinkAlcoholVermouth-desc = Sweet, sweet dryness~
+
+ent-RMCDrinkAlcoholKahlua-name = robert robust's coffee liqueur
+ent-RMCDrinkAlcoholKahlua-desc = A widely known, Mexican coffee-flavoured liqueur. In production since 1936, HONK
+
+ent-RMCDrinkAlcoholGoldschlager-name = college girl goldschlager
+ent-RMCDrinkAlcoholGoldschlager-desc = Because they are the only ones who will drink 100 proof cinnamon schnapps.
+
+ent-RMCDrinkAlcoholGin-name = griffeater gin
+ent-RMCDrinkAlcoholGin-desc = A bottle of high-quality gin, produced in the New London Space Station.
+
+ent-RMCDrinkAlcoholDavenport-name = davenport rye whiskey
+ent-RMCDrinkAlcoholDavenport-desc = An expensive whiskey with a distinct flavor. The bottle proudly proclaims that it's, 'A True Classic.'
+
+ent-RMCDrinkAlcoholCognac-name = chateau de baton premium cognac
+ent-RMCDrinkAlcoholCognac-desc = A sweet and strongly alcoholic drink, made after numerous distillations and years of maturing. You might as well not scream 'SHITCURITY' this time.
+
+ent-RMCDrinkAlcoholAbsinthe-name = jailbreaker verte
+ent-RMCDrinkAlcoholAbsinthe-desc = One sip of this and you just know you're gonna have a good time.
+
+ent-RMCDrinkAlcoholTequila-name = caccavo guaranteed quality tequila
+ent-RMCDrinkAlcoholTequila-desc = Made from premium petroleum distillates, pure thalidomide and other fine quality ingredients!
+
+ent-RMCDrinkAlcoholGrenadine-name = briar rose grenadine syrup
+ent-RMCDrinkAlcoholGrenadine-desc = Sweet and tangy, a bar syrup used to add color or flavor to drinks.
+
+ent-RMCDrinkAlcoholBase-name = item
+
+ent-RMCDrinkAlcoholDavenportMostlyEmpty-name = davenport rye whiskey
+ent-RMCDrinkAlcoholDavenportMostlyEmpty-desc = An expensive whiskey with a distinct flavor. The bottle proudly proclaims that it's, 'A True Classic.' Only a tiny bit is left sloshing at the bottom of the bottle.
+

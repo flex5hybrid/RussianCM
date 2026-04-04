@@ -1,7 +1,11 @@
-ent-RMCExplosivePlastic = пластиковая взрывчатка
-  .desc = Используется для создания отверстий в определённых местах без лишних дыр.
-ent-RMCExplosiveBreachingChargeRubberTSEPA = штурмовой заряд X17 для подавления беспорядков ТСЕПА
-ent-RMCExplosiveBreachingChargeRubber = штурмовой заряд X17 для подавления беспорядков
-  .desc = Взрывное устройство, используемое для пробивания входов в зоны, защищая пользователя от взрыва. В отличие от стандартного штурмового заряда, X17 выпускает конусообразный разброс резиновых гранул для выведения из строя, а не для убийства.
-ent-RMCExplosiveBreachingCharge = штурмовой заряд
-  .desc = Взрывное устройство, используемое для пробивания входов в зоны, защищая пользователя от взрыва, а также выпуская смертоносную шрапнель с другой стороны.
+ent-RMCExplosivePlastic-name = plastic explosives
+ent-RMCExplosivePlastic-desc = Used to put holes in specific areas without too much extra hole.
+
+ent-RMCExplosiveBreachingChargeRubberTSEPA-name = TSEPA X17 riot charge
+ent-RMCExplosiveBreachingChargeRubberTSEPA-desc = An explosive device used to break into areas while protecting the user from the blast. Unlike the standard breaching charge, the X17 deploys a cone spray of rubber pellets to incapacitate rather than kill.
+
+ent-RMCExplosiveBreachingChargeRubber-name = X17 riot charge
+ent-RMCExplosiveBreachingChargeRubber-desc = An explosive device used to break into areas while protecting the user from the blast. Unlike the standard breaching charge, the X17 deploys a cone spray of rubber pellets to incapacitate rather than kill.
+
+ent-RMCExplosiveBreachingCharge-name = item
+

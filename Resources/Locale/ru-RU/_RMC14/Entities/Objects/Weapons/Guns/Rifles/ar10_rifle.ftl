@@ -1,5 +1,10 @@
-ent-RMCCartridgeRifleAR10 = патрон (7.62x51)
-  .desc = Винтовочный патрон 7.62x51
-ent-RMCMagazineRifleAR10 = магазин AR10 (7.62x51мм)
-ent-WeaponRifleAR10 = штурмовая винтовка AR10
-  .desc = Более ранняя версия широко распространённой винтовки M16. Считается отцом винтовки XX века. Как одна из них оказалась здесь — это отдельная загадка. Использует патрон 7.62x51мм.
+ent-RMCCartridgeRifleAR10-name = cartridge
+
+ent-RMCMagazineRifleAR10-name = item
+
+ent-WeaponRifleAR10-name = AR10 assault rifle
+ent-WeaponRifleAR10-desc = An earlier version of the more widespread M16 rifle. Considered to be the father of the 20th century rifle. How one of these ended up here is a mystery of its own. It is chambered in 7.62x51mm.
+
+ent-BulletRifleAR10-name = BaseBullet
+ent-BulletRifleAR10-desc = If you can see this you're probably dead!
+

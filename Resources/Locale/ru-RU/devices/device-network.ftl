@@ -11,9 +11,7 @@ device-frequency-prototype-name-cyborg-control = Управление кибор
 device-frequency-prototype-name-robotics-console = Консоль управления робототехникой
 device-frequency-prototype-name-turret = Охранная турель
 device-frequency-prototype-name-turret-control = Управление охранной турелью
-
 ## camera frequencies
-
 device-frequency-prototype-name-surveillance-camera-test = Тест подсети
 device-frequency-prototype-name-surveillance-camera-engineering = Камеры (Инженерный)
 device-frequency-prototype-name-surveillance-camera-security = Камеры (Охрана)

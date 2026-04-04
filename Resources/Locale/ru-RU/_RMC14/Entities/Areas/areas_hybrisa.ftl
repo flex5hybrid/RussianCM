@@ -1,259 +1,572 @@
-ent-RMCAreaLv759IndoorsWyResearchComplexHeadResearchOffice = Уэстон-Ямада - Комплекс перспективных биогеномных исследований - руководитель исследовательского отдела
-ent-RMCAreaLv759IndoorsWyResearchComplexChangingroom = Уэстон-Ямада — Комплекс передовых биогеномных исследований — Раздевалка
-ent-RMCAreaLv759IndoorsWyResearchComplexSoutheastexit = Уэстон-Ямада — Комплекс передовых биогеномных исследований — Юго-восточное техническое обслуживание и аварийный выход
-ent-RMCAreaLv759IndoorsWyResearchComplexHallwaysoutheast = Уэстон-Ямада — Комплекс передовых биогеномных исследований — Юго-восточный коридор
-ent-RMCAreaLv759IndoorsWyResearchComplexHallwaysouthwest = Уэстон-Ямада — Комплекс передовых биогеномных исследований — Юго-западный коридор
-ent-RMCAreaLv759IndoorsWyResearchComplexHallwaycentral = Уэстон-Ямада — Комплекс передовых биогеномных исследований — Центральный коридор
-ent-RMCAreaLv759IndoorsWyResearchComplexHallwayeast = Уэстон-Ямада — Комплекс передовых биогеномных исследований — Восточный коридор
-ent-RMCAreaLv759IndoorsWyResearchComplexHallwaynorthexit = Уэстон-Ямада — Комплекс передовых биогеномных исследований — Северный коридор — Восточный выход для персонала
-ent-RMCAreaLv759IndoorsWyResearchComplexHallwaynorth = Уэстон-Ямада — Комплекс передовых биогеномных исследований — Северный коридор
-ent-RMCAreaLv759IndoorsWyResearchComplexHangarbayshuttle = Уэстон-Ямада - Комплекс перспективных биогеномных исследований - Ангарный залив - Шаттл PMC ERT Уэстон-Ямада
-ent-RMCAreaLv759IndoorsWyResearchComplexHangarbay = Уэстон-Ямада - Комплекс передовых биогеномных исследований - Ангар-Бэй
-ent-RMCAreaLv759IndoorsWyResearchComplexSecurityarmory = Уэстон-Ямада - Комплекс передовых биогеномных исследований - Оружейная палата
-ent-RMCAreaLv759IndoorsWyResearchComplexSecuritycommand = Уэстон-Ямада - Комплекс передовых биогеномных исследований - Центр управления безопасностью и развертывание
-ent-RMCAreaLv759IndoorsWyResearchComplexDormsbedroom = Уэстон-Ямада - Комплекс передовых биогеномных исследований - общежития
-ent-RMCAreaLv759IndoorsWyResearchComplexDormsfoyer = Уэстон-Ямада — Комплекс перспективных биогеномных исследований — фойе общежития
-ent-RMCAreaLv759IndoorsWyResearchComplexCafeteriakitchen = Уэстон-Ямада — Комплекс перспективных биогеномных исследований — Кафетерий — Кухня
-ent-RMCAreaLv759IndoorsWyResearchComplexCafeteria = Уэстон-Ямада — Комплекс перспективных биогеномных исследований — Кафетерий
-ent-RMCAreaLv759IndoorsWyResearchComplexJanitor = Уэстон-Ямада - Комплекс передовых биогеномных исследований - Хранение хозяйственных принадлежностей
-ent-RMCAreaLv759IndoorsWyResearchComplexVehicledeploymentbay = Уэстон-Ямада - Комплекс перспективных биогеномных исследований - отсек для развертывания и технического обслуживания транспортных средств
-ent-RMCAreaLv759IndoorsWyResearchComplexXenoarcheology = Уэстон-Ямада - Комплекс передовых биогеномных исследований - Лаборатория ксеноархеологических исследований
-ent-RMCAreaLv759IndoorsWyResearchComplexWeaponresearchlabtesting = Уэстон-Ямада - Комплекс передовых биогеномных исследований - Лаборатория перспективных исследований оружия - Полигон для испытаний оружия
-ent-RMCAreaLv759IndoorsWyResearchComplexWeaponresearchlab = Уэстон-Ямада - Комплекс передовых биогеномных исследований - Лаборатория перспективных исследований оружия
-ent-RMCAreaLv759IndoorsWyResearchComplexXenobiology = Уэстон-Ямада - Комплекс передовых биогеномных исследований - Лаборатория передовой ксенобиологии
-ent-RMCAreaLv759IndoorsWyResearchComplexMainlabs = Уэстон-Ямада - Комплекс передовых биогеномных исследований - Лаборатория передовых химических испытаний и исследований
-ent-RMCAreaLv759IndoorsWyResearchComplexResearchanddevelopment = Уэстон-Ямада - Комплекс передовых биогеномных исследований - Лаборатория технологических исследований и разработок
-ent-RMCAreaLv759IndoorsWyResearchComplexCargo = Уэстон-Ямада — Комплекс перспективных биогеномных исследований — Реквизиты и груз
-ent-RMCAreaLv759IndoorsWyResearchComplexReception = Уэстон-Ямада - Комплекс передовых биогеномных исследований - прием и администрация
-ent-RMCAreaLv759IndoorsWyResearchComplexMedicalAnnex = Уэстон-Ямада - Комплекс передовых биогеномных исследований - Здание медицинского пристройки
-ent-RMCAreaLv759IndoorsWyResearchComplex = Уэстон-Ямада - Комплекс передовых биогеномных исследований
-ent-RMCAreaLv759IndoorsHobosecret = Скрытое убежище бродяг
-ent-RMCAreaLv759IndoorsWySecurityCheckpointNorthwest = Контрольно-пропускной пункт Уэстон-Ямада — Северо-Запад
-ent-RMCAreaLv759IndoorsWySecurityCheckpointWestCaves = Контрольно-пропускной пункт Уэстон-Ямада — вход в пещеры
-ent-RMCAreaLv759IndoorsWySecurityCheckpointWest = Контрольно-пропускной пункт Уэстон-Ямада — Запад
-ent-RMCAreaLv759IndoorsWySecurityCheckpointCentral = Контрольно-пропускной пункт Уэстон-Ямада — центральный
-ent-RMCAreaLv759IndoorsWySecurityCheckpointEast = Контрольно-пропускной пункт Уэстон-Ямада — восток
-ent-RMCAreaLv759IndoorsWySecurityCheckpointNortheast = Контрольно-пропускной пункт Уэстон-Ямада — северо-восток
-ent-RMCAreaLv759IndoorsWeymartMaintenance = Веймарт - Техническое обслуживание
-ent-RMCAreaLv759IndoorsWeymartBackrooms = Веймарт – Подсобные помещения
-ent-RMCAreaLv759IndoorsWeymart = Веймарт
-ent-RMCAreaLv759IndoorsTcommsNorthwest = Телекоммуникационная подстанция - Запад
-ent-RMCAreaLv759IndoorsPizzaria = Пицца Гэлакси - Аванпост Зета
-ent-RMCAreaLv759IndoorsCasinoCasinoVault = Казино Night Gold - Хранилище
-ent-RMCAreaLv759IndoorsCasinoCasinoRestroom = Казино Night Gold - Туалет
-ent-RMCAreaLv759IndoorsCasinoCasinoOffice = Казино Night Gold - Офис менеджера
-ent-RMCAreaLv759IndoorsCasino = Казино Ночное Золото
-ent-RMCAreaLv759IndoorsSouthwestPublicRestroom = Общественный туалет — юго-запад
-ent-RMCAreaLv759IndoorsSouthPublicRestroom = Общественный туалет — юг
-ent-RMCAreaLv759IndoorsRecyclingPlantWasteDisposalIncinerator = Уэстон-Ямада — Завод по восстановлению ресурсов — Комната для сжигания отходов
-ent-RMCAreaLv759IndoorsRecyclingPlantOffice = Уэстон-Ямада — Центр восстановления ресурсов — Офис
-ent-RMCAreaLv759IndoorsRecyclingPlantSyntheticStorage = Синтетическое хранилище
-ent-RMCAreaLv759IndoorsRecyclingPlantGarage = Уэстон-Ямада — Центр восстановления ресурсов — Гараж
-ent-RMCAreaLv759IndoorsRecyclingPlant = Уэстон-Ямада — Центр восстановления ресурсов
-ent-RMCAreaLv759IndoorsJacksSurplus = Военные излишки Джека
-ent-RMCAreaLv759IndoorsColonialMarshalsSouthwestMaintenance = NSPA — округ Айронбридж — техническое обслуживание — юго-запад
-ent-RMCAreaLv759IndoorsColonialMarshalsNorthMaintenance = NSPA — округ Айронбридж — техническое обслуживание — север
-ent-RMCAreaLv759IndoorsColonialMarshalsSouthMaintenance = NSPA — округ Айронбридж — техническое обслуживание — юг
-ent-RMCAreaLv759IndoorsColonialMarshalsRestroom = NSPA — округ Айронбридж — туалет и душевые
-ent-RMCAreaLv759IndoorsColonialMarshalsChangingRoom = NSPA — округ Айронбридж — раздевалка
-ent-RMCAreaLv759IndoorsColonialMarshalsPressRoom = NSPA — округ Айронбридж — зал суда
-ent-RMCAreaLv759IndoorsColonialMarshalsInterrogation = NSPA — участок Айронбридж — допрос
-ent-RMCAreaLv759IndoorsColonialMarshalsWardensOffice = NSPA — округ Айронбридж — офис начальника охраны
-ent-RMCAreaLv759IndoorsColonialMarshalsNorthOffice = NSPA — округ Айронбридж — северный офис
-ent-RMCAreaLv759IndoorsColonialMarshalsHeadOffice = NSPA - округ Айронбридж - бюро судебно-медицинской экспертизы
-ent-RMCAreaLv759IndoorsColonialMarshalsHoldingCells = NSPA — Округ Айронбридж — Камеры предварительного заключения
-ent-RMCAreaLv759IndoorsColonialMarshalsHallwayNorthLocker = NSPA — округ Айронбридж — северный коридор — раздевалка
-ent-RMCAreaLv759IndoorsColonialMarshalsHallwayNorth = NSPA — округ Айронбридж — северный коридор
-ent-RMCAreaLv759IndoorsColonialMarshalsHallwayReception = NSPA — Округ Айронбридж — Прихожая
-ent-RMCAreaLv759IndoorsColonialMarshalsHallwaySouth = NSPA — округ Айронбридж — Южный коридор
-ent-RMCAreaLv759IndoorsColonialMarshalsHallwayCentral = NSPA — округ Айронбридж — центральный коридор
-ent-RMCAreaLv759IndoorsColonialMarshalsReception = NSPA — округ Айронбридж — приемная
-ent-RMCAreaLv759IndoorsColonialMarshalsOffice = NSPA — округ Айронбридж — офис
-ent-RMCAreaLv759IndoorsColonialMarshalsArmoryEvidenceroom = NSPA — участок Айронбридж — комната для улик
-ent-RMCAreaLv759IndoorsColonialMarshalsArmoryFiringrange = NSPA — участок Айронбридж — полигон
-ent-RMCAreaLv759IndoorsColonialMarshalsArmory = NSPA — Округ Айронбридж — Оружейная
-ent-RMCAreaLv759IndoorsColonialMarshalsArmoryFoyer = NSPA — Округ Айронбридж — Фойе Оружейной палаты
-ent-RMCAreaLv759IndoorsColonialMarshalsGarage = NSPA — округ Айронбридж — размещение и обслуживание транспортных средств
-ent-RMCAreaLv759IndoorsColonialMarshalsPrisonersRecreationArea = NSPA — участок Айронбридж — палата строгого режима — зона отдыха и душевая комната
-ent-RMCAreaLv759IndoorsColonialMarshalsPrisonersFoyer = NSPA — участок Айронбридж — палата строгого режима — холл
-ent-RMCAreaLv759IndoorsColonialMarshalsPrisonersCells = NSPA — участок Айронбридж — палата строгого режима — камеры
-ent-RMCAreaLv759IndoorsColonialMarshals = NSPA - округ Айронбридж
-ent-RMCAreaLv759IndoorsPowerPlantEquipmentWest = Weston-Yamada DynaGrid Nexus — Складское помещение для оборудования — Запад
-ent-RMCAreaLv759IndoorsPowerPlantEquipmentEast = Weston-Yamada DynaGrid Nexus — Складское помещение для оборудования — Восток
-ent-RMCAreaLv759IndoorsPowerPlantWorkersCanteenKitchen = Weston-Yamada DynaGrid Nexus — Столовая для рабочих — Кухня
-ent-RMCAreaLv759IndoorsPowerPlantWorkersCanteen = Weston-Yamada DynaGrid Nexus — столовая для рабочих
-ent-RMCAreaLv759IndoorsPowerPlantTelecomms = Weston-Yamada DynaGrid Nexus – Телекоммуникации
-ent-RMCAreaLv759IndoorsPowerPlantFusionGenerators = Weston-Yamada DynaGrid Nexus — Центр управления
-ent-RMCAreaLv759IndoorsPowerPlantGasGenerators = Weston-Yamada DynaGrid Nexus – смешивание и хранение газа
-ent-RMCAreaLv759IndoorsPowerPlantTransformersSouth = Weston-Yamada DynaGrid Nexus — Трансформаторы — Юг
-ent-RMCAreaLv759IndoorsPowerPlantTransformersNorth = Weston-Yamada DynaGrid Nexus - Трансформеры - Север
-ent-RMCAreaLv759OutdoorsPowerPlantTransformersSouth = Weston-Yamada DynaGrid Nexus — Трансформаторы — Юг
-ent-RMCAreaLv759OutdoorsPowerPlantTransformersNorth = Weston-Yamada DynaGrid Nexus - Трансформеры - Север
-ent-RMCAreaLv759IndoorsPowerPlantPowerStorage = Weston-Yamada DynaGrid Nexus — помещение для хранения энергии
-ent-RMCAreaLv759IndoorsPowerPlantGeothermalGenerators = Weston-Yamada DynaGrid Nexus — Зал геотермальных генераторов
-ent-RMCAreaLv759IndoorsPowerPlantSouthHallway = Weston-Yamada DynaGrid Nexus — Южный коридор
-ent-RMCAreaLv759IndoorsPowerPlantHallwayEast = Weston-Yamada DynaGrid Nexus — Восточный коридор
-ent-RMCAreaLv759IndoorsPowerPlant = Weston-Yamada DynaGrid Nexus — Центральный коридор
-ent-RMCAreaLv759IndoorsElecticalSystemsSubstation3 = Электрические системы – Подстанция №3
-ent-RMCAreaLv759IndoorsElecticalSystemsSubstation2 = Электрические системы — Вторая подстанция
-ent-RMCAreaLv759IndoorsElecticalSystemsSubstation1 = Электрические системы — Первая подстанция — Диспетчерская
-ent-RMCAreaLv759OutdoorsMiningOutpostSouthEntrance = KMCC — Горнодобывающий аванпост — Юг — Вход для размещения техники
-ent-RMCAreaLv759IndoorsMiningOutpostCargoMaint = KMCC — Горнодобывающая застава — Восток — Техническое обслуживание
-ent-RMCAreaLv759IndoorsMiningOutpostEastCommand = KMCC — Горнодобывающая застава — Восток — Командный центр
-ent-RMCAreaLv759IndoorsMiningOutpostEastDeploymentbay = KMCC — Горнодобывающая застава — Восток — Отсек развертывания
-ent-RMCAreaLv759IndoorsMiningOutpostEastDorms = KMCC — Горнодобывающая застава — Восток — Общежития
-ent-RMCAreaLv759IndoorsMiningOutpostEast = KMCC — Горнодобывающая застава — Восток
-ent-RMCAreaLv759IndoorsMiningOutpostProcessing = KMCC - Горнодобывающий аванпост - Юг - Переработка и хранение
-ent-RMCAreaLv759IndoorsMiningOutpostVehicledeployment = KMCC — Горнодобывающая застава — Юг — Размещение техники
-ent-RMCAreaLv759IndoorsMiningOutpostSouth = KMCC — Горнодобывающая застава — Юго-восток
-ent-RMCAreaLv759IndoorsMiningOutpostNortheast = KMCC — Горнодобывающая застава — Северо-восток
-ent-RMCAreaLv759IndoorsMiningOutpostNorthMaint = KMCC — Горнодобывающая застава — Север — Техническое обслуживание
-ent-RMCAreaLv759IndoorsMiningOutpostNorth = KMCC — Горнодобывающая застава — Север
-ent-RMCAreaLv759IndoorsHospitalJanitor = Больничный комплекс Нова Медика - Гардероб дворников
-ent-RMCAreaLv759IndoorsHospitalMaintenanceSouth = Больничный комплекс Нова Медика - Унисекс-туалет
-ent-RMCAreaLv759IndoorsHospitalMaintenanceNorth = Больничный Комплекс Нова Медика - Техническое обслуживание Север
-ent-RMCAreaLv759IndoorsHospitalStorage = Больничный комплекс Нова Медика - Офис
-ent-RMCAreaLv759IndoorsHospitalIcu = Больничный комплекс Нова Медика - Палата интенсивной терапии
-ent-RMCAreaLv759IndoorsHospitalMorgue = Больничный комплекс Нова Медика - Морг
-ent-RMCAreaLv759IndoorsHospitalVirology = Больничный комплекс Нова Медика - Вирусология
-ent-RMCAreaLv759IndoorsHospitalPatientWard = Больничный комплекс Нова Медика - Палата пациентов
-ent-RMCAreaLv759IndoorsHospitalOperation = Больничный комплекс Нова Медика – операционные и смотровые площадки
-ent-RMCAreaLv759IndoorsHospitalMedicalStorage = Больничный комплекс Нова Медика - Медицинский склад
-ent-RMCAreaLv759IndoorsHospitalEastHallway = Больничный комплекс Нова Медика — Восточный коридор
-ent-RMCAreaLv759IndoorsHospitalCentralHallway = Больничный комплекс Нова Медика – Центральный коридор
-ent-RMCAreaLv759IndoorsHospitalOutgoing = Больничный комплекс Нова Медика - Выпускное отделение
-ent-RMCAreaLv759IndoorsHospitalPharmacy = Больничный комплекс Нова Медика – аптека и вестибюль
-ent-RMCAreaLv759IndoorsHospitalBreakRoom = Больничный комплекс Нова Медика - Комната отдыха
-ent-RMCAreaLv759IndoorsHospitalMaintenance = Больничный комплекс Нова Медика — Подпространственные коммуникации и электрические системы
-ent-RMCAreaLv759IndoorsHospitalCmoOffice = Больничный комплекс Нова Медика - Кабинет главного врача
-ent-RMCAreaLv759IndoorsHospitalReception = Больничный комплекс Нова Медика - Приемная
-ent-RMCAreaLv759IndoorsHospitalEmergencyRoom = Больничный комплекс Нова Медика - отделение неотложной помощи
-ent-RMCAreaLv759IndoorsHospitalCryoRoom = Больничный комплекс Нова Медика - Крио-отделение
-ent-RMCAreaLv759IndoorsHospitalParamedicsGarage = Больничный комплекс Нова Медика - Гараж фельдшера
-ent-RMCAreaLv759IndoorsHotelHotelRooms = Проспера Гранд Отель - Номер
-ent-RMCAreaLv759IndoorsHotelHotelHallway = Проспера Гранд Отель - Коридор
-ent-RMCAreaLv759IndoorsBotanyBotanyMainroom = Ботаника — Главный зал
-ent-RMCAreaLv759IndoorsBotanyBotanyMaintenance = Ботаника – Техническое обслуживание
-ent-RMCAreaLv759IndoorsBotanyBotanyHallway = Ботаника - Прихожая
-ent-RMCAreaLv759IndoorsBotanyBotanyGreenhouse = Ботаника - Теплица
-ent-RMCAreaLv759IndoorsBarKitchen = Бар - Кухня
-ent-RMCAreaLv759IndoorsBarMaintenance = Бар - Техническое обслуживание
-ent-RMCAreaLv759IndoorsBarBathroom = Бар - Туалеты
-ent-RMCAreaLv759IndoorsBarEntertainment = Бар – подраздел Развлечения
-ent-RMCAreaLv759IndoorsBar = Бар
-ent-RMCAreaLv759IndoorsWeyaOfficeSupervisor = Офисы Уэстон-Ямада - Офис надзирателей колонии
-ent-RMCAreaLv759IndoorsWeyaOfficePressroom = Офисы Weston-Yamada – Актовый зал
-ent-RMCAreaLv759IndoorsWeyaOfficeVip = Офисы Weston-Yamada - Конференц-зал
-ent-RMCAreaLv759IndoorsWeyaOfficeBreakroom = Офисы Weston-Yamada – Комната отдыха
-ent-RMCAreaLv759IndoorsWeyaOfficeFloor = Офисы Weston-Yamada — главный офисный этаж
-ent-RMCAreaLv759IndoorsWeyaOfficeHallway = Офисы Weston-Yamada – Западное фойе
-ent-RMCAreaLv759IndoorsWeyaOffice = Офисы Weston-Yamada – Прихожая
-ent-RMCAreaLv759IndoorsApartmentNorthapartments = Жилой комплекс Вестхейвен - Норт - Апартаменты
-ent-RMCAreaLv759IndoorsApartmentNorthhallway = Жилой комплекс Westhaven — Север — Коридор
-ent-RMCAreaLv759IndoorsApartmentNorthfoyer = Жилой комплекс Westhaven — Север — Фойе
-ent-RMCAreaLv759IndoorsApartmentEastbedroomsstorage = Жилой комплекс Westhaven – Восток – Спальни – Кладовая
-ent-RMCAreaLv759IndoorsApartmentEastbedrooms = Комплекс апартаментов Westhaven - Восток - Спальни
-ent-RMCAreaLv759IndoorsApartmentEastrestroomsshower = Жилой комплекс Westhaven – Восток – Туалеты и душевые
-ent-RMCAreaLv759IndoorsApartmentEastfoyer = Жилой комплекс Westhaven — Восток — Фойе
-ent-RMCAreaLv759IndoorsApartmentEastentrance = Комплекс апартаментов Westhaven — Восток — Прихожая
-ent-RMCAreaLv759IndoorsApartmentWestentertainment = Жилой комплекс Вестхейвен - Запад - Центр отдыха
-ent-RMCAreaLv759IndoorsApartmentWestrestroom = Жилой комплекс Вестхейвен - Запад - Туалеты
-ent-RMCAreaLv759IndoorsApartmentWestshowers = Жилой комплекс Westhaven - Запад - Душевые
-ent-RMCAreaLv759IndoorsApartmentWestbedrooms = Жилой комплекс Вестхейвен - Вест - Апартаменты
-ent-RMCAreaLv759IndoorsApartmentWesthallway = Жилой комплекс Westhaven — Запад — Коридор
-ent-RMCAreaLv759IndoorsApartmentWestfoyer = Жилой комплекс Westhaven — Запад — Фойе
-ent-RMCAreaLv759IndoorsMeridianMeridianMaintenanceEast = Меридиан — Заводской цех — Техническое обслуживание
-ent-RMCAreaLv759IndoorsMeridianMeridianMaintenance = Меридиан - Техническое обслуживание
-ent-RMCAreaLv759IndoorsMeridianMeridianRestroom = Меридиан - Туалет
-ent-RMCAreaLv759IndoorsMeridianMeridianFactory = Меридиан — Заводской цех
-ent-RMCAreaLv759IndoorsMeridianMeridianManagersoffice = Меридиан - Офис менеджера
-ent-RMCAreaLv759IndoorsMeridianMeridianOffice = Меридиан - Офисы
-ent-RMCAreaLv759IndoorsMeridianMeridianShowroom = Меридиан - Выставочный зал
-ent-RMCAreaLv759IndoorsMeridianMeridianFoyer = Меридиан - Фойе
-ent-RMCAreaLv759IndoorsGarageRestroom = Гараж - Туалет
-ent-RMCAreaLv759IndoorsGarageManagersoffice = Гараж - Офис менеджера
-ent-RMCAreaLv759IndoorsGarageWorkshopStorage = Гараж – Мастерская – Кладовая
-ent-RMCAreaLv759IndoorsGarageWorkshop = Гараж - Мастерская
-ent-RMCAreaLv759IndoorsGarageReception = Гараж - Стойка регистрации
-ent-RMCAreaLv759IndoorsSpaceportHorizonRunner = WY-LWI Горизонт Бегун HR-150
-ent-RMCAreaLv759IndoorsSpaceportStarglider = WY-LWI StarGlider SG-200
-ent-RMCAreaLv759IndoorsSpaceportDockingBay1 = Космический порт «Врата Селестии» Уэстон-Ямада — стыковочный отсек: 1
-ent-RMCAreaLv759IndoorsSpaceportDockingBay2 = Космический порт Уэстон-Ямада Селестия — стыковочный отсек: 2 — дозаправка и обслуживание
-ent-RMCAreaLv759IndoorsSpaceportKitchen = Космопорт Уэстон-Ямада Селестия Ворота — Кухня
-ent-RMCAreaLv759IndoorsSpaceportCuppajoes = Космический порт Уэстон-Ямада Ворота Селестия - Cuppa Joe's
-ent-RMCAreaLv759IndoorsSpaceportBaggagehandling = Космический порт Уэстон-Ямада Селестия Шлюз — Хранение и обработка багажа
-ent-RMCAreaLv759IndoorsSpaceportCargoMaintenance = Космический порт Уэстон-Ямада Селестия Шлюз — Груз — Техническое обслуживание
-ent-RMCAreaLv759IndoorsSpaceportCargo = Космический порт Уэстон-Ямада Селестия — грузовой отсек
-ent-RMCAreaLv759IndoorsSpaceportSecurityOffice = Космопорт Уэстон-Ямада Селестия Шлюз — Офис
-ent-RMCAreaLv759IndoorsSpaceportSecurity = Космический порт Уэстон-Ямада, шлюз Селестия — охрана, наблюдение и офис
-ent-RMCAreaLv759IndoorsSpaceportFlightControlRoom = Космопорт Уэстон-Ямада Селестия Шлюз — Комната управления полетом
-ent-RMCAreaLv759IndoorsSpaceportCommunicationsOffice = Космический порт Уэстон-Ямада Селестия Шлюз — Офис связи и администрирования
-ent-RMCAreaLv759IndoorsSpaceportMaintenanceEast = Космический порт Уэстон-Ямада Ворота Селестия — Техническое обслуживание — Восток
-ent-RMCAreaLv759IndoorsSpaceportJanitor = Космический порт «Врата Селестии» Уэстон-Ямада — подсобное помещение
-ent-RMCAreaLv759IndoorsSpaceportEngineering = Космический порт Уэстон-Ямада Селестия — Хранение и переработка топлива
-ent-RMCAreaLv759IndoorsSpaceportHeavyequip = Космический порт «Врата Селестии» Уэстон-Ямада — хранилище тяжелого оборудования
-ent-RMCAreaLv759IndoorsSpaceportHallwayEast = Космопорт Уэстон-Ямада Ворота Селестии — Коридор — Восток
-ent-RMCAreaLv759IndoorsSpaceportHallwayNorthwest = Космопорт Уэстон-Ямада Ворота Селестии — Коридор — Северо-Запад
-ent-RMCAreaLv759IndoorsSpaceportHallwayNorth = Космопорт Уэстон-Ямада Ворота Селестии — Коридор — Север
-ent-RMCAreaLv759IndoorsSpaceportHallwayNortheast = Космопорт Уэстон-Ямада Ворота Селестии — Коридор — Северо-восток
-ent-RMCAreaLv759OutdoorsColonyStreetsNorthStreet = Улицы колонии — север
-ent-RMCAreaLv759OutdoorsColonyStreetsNorthEastStreetLZ = Улицы колонии — северо-восток
-ent-RMCAreaLv759OutdoorsColonyStreetsNorthEastStreet = Улицы колонии — северо-восток
-ent-RMCAreaLv759OutdoorsColonyStreetsNorthWestStreet = Улицы колонии — северо-запад
-ent-RMCAreaLv759OutdoorsColonyStreetsSouthEastStreetComms = Улицы Колонии — Юго-восток — Подпространственные коммуникации
-ent-RMCAreaLv759OutdoorsColonyStreetsSouthWestStreet = Улицы Колонии — юго-запад — проход через контрольно-пропускной пункт штата Вайоминг
-ent-RMCAreaLv759OutdoorsColonyStreetsSouthEastStreet = Улицы колонии — юго-восток
-ent-RMCAreaLv759OutdoorsColonyStreetsSouthStreet = Улицы колонии — юг
-ent-RMCAreaLv759OutdoorsColonyStreetsEastCentralStreetLeft = Центральная улица - Восток
-ent-RMCAreaLv759OutdoorsColonyStreetsEastCentralStreet = Центральная улица - Восток
-ent-RMCAreaLv759OutdoorsColonyStreetsCentralStreets = Центральная улица - Запад
-ent-RMCAreaLv759OutdoorsColonyStreets = Улицы колонии
-ent-RMCAreaLv759OutdoorsCaveplateau = Пещеры - Плато
-ent-RMCAreaLv759IndoorsCavesNorthEastCavesComms2 = NMHC - Экстренное реагирование - Первая зона приземления - Пещеры - Северо-восток - Подпространственные коммуникации
-ent-RMCAreaLv759IndoorsCavesNorthEastCavesComms = KMCC — Горнодобывающий аванпост — Восток — Подпространственные коммуникации
-ent-RMCAreaLv759IndoorsCavesCentralCavesNorth = Пещеры – Центральный
-ent-RMCAreaLv759IndoorsCavesCentralCaves = Пещеры – Центральный
-ent-RMCAreaLv759IndoorsCavesNorthCaves = Пещеры — Север
-ent-RMCAreaLv759IndoorsCavesNorthEastCaves = Пещеры – северо-восток
-ent-RMCAreaLv759OutdoorsCavesNorthWestCavesOutdoors = Пещеры — северо-запад
-ent-RMCAreaLv759IndoorsCavesNorthWestCaves = Пещеры — северо-запад
-ent-RMCAreaLv759IndoorsCavesSouthWestCavesAlarm = Пещеры — юго-запад
-ent-RMCAreaLv759IndoorsCavesSouthWestCaves = Пещеры — юго-запад
-ent-RMCAreaLv759IndoorsCavesSouthEastCaves = Пещеры – юго-восток
-ent-RMCAreaLv759IndoorsCavesSouthCavesDerelictShip = Пещеры — Юг
-ent-RMCAreaLv759IndoorsCavesSouthCaves = Пещеры — Юг
-ent-RMCAreaLv759IndoorsCavesEastCavesNorth = Пещеры - Восток
-ent-RMCAreaLv759IndoorsCavesEastCaves = Пещеры - Восток
-ent-RMCAreaLv759IndoorsCavesWestCavesAlarm = Пещеры — Запад
-ent-RMCAreaLv759IndoorsCavesSensoryTower = Сенсорная башня - Пещеры Плато
-ent-RMCAreaLv759IndoorsCavesCommsTower = Башня связи — Центральные пещеры
-ent-RMCAreaLv759IndoorsCavesElectricFence3 = Электрический забор — Центральные пещеры
-ent-RMCAreaLv759IndoorsCavesElectricFence2 = Электрический забор — Восточные пещеры
-ent-RMCAreaLv759IndoorsCavesElectricFence1 = Электрический забор — Западные пещеры
-ent-RMCAreaLv759IndoorsCavesWestCaves = Пещеры — Запад
-ent-RMCAreaLv759IndoorsCavesWyResearchComplexEntrance = Уэстон-Ямада — Комплекс передовых биогеномных исследований — северный главный вход
-ent-RMCAreaLv759IndoorsCaves = Пещеры
-ent-RMCAreaLv759IndoorsDerelictShip = Заброшенный корабль
-ent-RMCAreaLv759OutdoorsLandingZone2KmccHubCargoEntranceSouth = Межзвездный грузовой узел KMCC — Центр обработки грузов — главный вход и южная разгрузочная платформа
-ent-RMCAreaLv759IndoorsLandingZone2KmccHubMaintenanceNorth = Межзвездный грузовой узел KMCC — Центр обработки грузов — Техническое обслуживание
-ent-RMCAreaLv759IndoorsLandingZone2KmccHubCargo = Межзвездный грузовой узел KMCC - Центр обработки грузов
-ent-RMCAreaLv759IndoorsLandingZone2KmccHubLz2Console = Межзвездный грузовой узел KMCC — консоль десантного корабля «Нормандия»
-ent-RMCAreaLv759IndoorsLandingZone2KmccHubMaintenance = Межзвездный грузовой узел KMCC – Отправление пассажиров – Техническое обслуживание
-ent-RMCAreaLv759IndoorsLandingZone2KmccHubSouthOffice = Межзвездный грузовой узел KMCC — Отправление пассажиров — Южный офис
-ent-RMCAreaLv759IndoorsLandingZone2KmccHubLoungeHallway = Межзвездный грузовой узел KMCC — Отделение отправления пассажиров — Коридор
-ent-RMCAreaLv759IndoorsLandingZone2KmccHubLoungeSouth = Межзвездный грузовой узел KMCC — Отделение отправления пассажиров — Южный зал ожидания
-ent-RMCAreaLv759IndoorsLandingZone2KmccHubFuel = Межзвездный грузовой узел KMCC — Хранение и обслуживание топлива — Север
-ent-RMCAreaLv759IndoorsLandingZone2KmccHubLoungeNorth = Межзвездный грузовой узел KMCC — Отделение отправления пассажиров — Северный зал ожидания
-ent-RMCAreaLv759IndoorsLandingZone2KmccHubSecurity = Межзвездный грузовой узел KMCC — Офис контрольно-пропускного пункта безопасности
-ent-RMCAreaLv759IndoorsLandingZone2KmccHubFlightControlRoom = Межзвездный грузовой узел KMCC — Комната управления полетом
-ent-RMCAreaLv759OutdoorsLandingZone2 = Межзвездный грузовой узел KMCC — вторая зона приземления
-ent-RMCAreaLv759IndoorsLandingZone1Lz1Console = Больничный комплекс Нова Медика — Экстренное реагирование — Первая зона приземления — Консоль десантного корабля Аламо
-ent-RMCAreaLv759IndoorsLandingZone1FlightControlRoom = Больничный комплекс Нова Медика – Экстренное реагирование – Первая зона приземления – Диспетчерская
-ent-RMCAreaLv759OutdoorsLandingZone1 = Больничный комплекс Нова Медика - Экстренная помощь - Первая зона приземления
-ent-RMCAreaLv759BunkerCheckpoint = Контрольно-пропускной пункт и скрытый бункер — вход
-ent-RMCAreaLv759BunkerGonzo = Укрытие Гонзо
-ent-RMCAreaLv759Bunker = За пределами границ
-ent-RMCAreaLv759Oob = За пределами границ
-ent-RMCAreaLv759Outdoors = Гибриса - На открытом воздухе
-ent-RMCAreaLv759Indoors = Гибриса - В помещении
-ent-RMCAreaLv759 = LV-759 Гибриза Проспера
+ent-RMCAreaLv759IndoorsWyResearchComplexHeadResearchOffice-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Head of Research's Office
+
+ent-RMCAreaLv759IndoorsWyResearchComplexChangingroom-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Locker Room
+
+ent-RMCAreaLv759IndoorsWyResearchComplexSoutheastexit-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - South East Maintenace & Emergency Exit
+
+ent-RMCAreaLv759IndoorsWyResearchComplexHallwaysoutheast-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - South East Hallway
+
+ent-RMCAreaLv759IndoorsWyResearchComplexHallwaysouthwest-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - South West Hallway
+
+ent-RMCAreaLv759IndoorsWyResearchComplexHallwaycentral-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Central Hallway
+
+ent-RMCAreaLv759IndoorsWyResearchComplexHallwayeast-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Hallway East
+
+ent-RMCAreaLv759IndoorsWyResearchComplexHallwaynorthexit-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - North Hallway - Personnel Exit East
+
+ent-RMCAreaLv759IndoorsWyResearchComplexHallwaynorth-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - North Hallway
+
+ent-RMCAreaLv759IndoorsWyResearchComplexHangarbayshuttle-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Hangar Bay - Weston-Yamada PMC ERT Shuttle
+
+ent-RMCAreaLv759IndoorsWyResearchComplexHangarbay-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Hangar Bay
+
+ent-RMCAreaLv759IndoorsWyResearchComplexSecurityarmory-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Armory
+
+ent-RMCAreaLv759IndoorsWyResearchComplexSecuritycommand-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Security Command Center & Deployment
+
+ent-RMCAreaLv759IndoorsWyResearchComplexDormsbedroom-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Dorms
+
+ent-RMCAreaLv759IndoorsWyResearchComplexDormsfoyer-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Dorms Foyer
+
+ent-RMCAreaLv759IndoorsWyResearchComplexCafeteriakitchen-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Cafeteria - Kitchen
+
+ent-RMCAreaLv759IndoorsWyResearchComplexCafeteria-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Cafeteria
+
+ent-RMCAreaLv759IndoorsWyResearchComplexJanitor-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Janitorial Supplies Storage
+
+ent-RMCAreaLv759IndoorsWyResearchComplexVehicledeploymentbay-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Vehicle Deployment & Maintenance Bay
+
+ent-RMCAreaLv759IndoorsWyResearchComplexXenoarcheology-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Xenoarcheology Research Lab
+
+ent-RMCAreaLv759IndoorsWyResearchComplexWeaponresearchlabtesting-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Advanced Weapon Research Lab - Weapons Testing Range
+
+ent-RMCAreaLv759IndoorsWyResearchComplexWeaponresearchlab-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Advanced Weapon Research Lab
+
+ent-RMCAreaLv759IndoorsWyResearchComplexXenobiology-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Advanced Xenobiology Lab
+
+ent-RMCAreaLv759IndoorsWyResearchComplexMainlabs-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Advanced Chemical Testing & Research Lab
+
+ent-RMCAreaLv759IndoorsWyResearchComplexResearchanddevelopment-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Technology Research & Development Lab
+
+ent-RMCAreaLv759IndoorsWyResearchComplexCargo-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Requisitions & Cargo
+
+ent-RMCAreaLv759IndoorsWyResearchComplexReception-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Reception & Administration
+
+ent-RMCAreaLv759IndoorsWyResearchComplexMedicalAnnex-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - Medical Annex Building
+
+ent-RMCAreaLv759IndoorsWyResearchComplex-name = Weston-Yamada - Advanced Bio-Genomic Research Complex
+
+ent-RMCAreaLv759IndoorsHobosecret-name = Hidden Hobo Haven
+
+ent-RMCAreaLv759IndoorsWySecurityCheckpointNorthwest-name = Weston-Yamada Security Checkpoint - North West
+
+ent-RMCAreaLv759IndoorsWySecurityCheckpointWestCaves-name = Weston-Yamada Security Checkpoint - Caverns Entrance
+
+ent-RMCAreaLv759IndoorsWySecurityCheckpointWest-name = Weston-Yamada Security Checkpoint - West
+
+ent-RMCAreaLv759IndoorsWySecurityCheckpointCentral-name = Weston-Yamada Security Checkpoint - Central
+
+ent-RMCAreaLv759IndoorsWySecurityCheckpointEast-name = Weston-Yamada Security Checkpoint - East
+
+ent-RMCAreaLv759IndoorsWySecurityCheckpointNortheast-name = Weston-Yamada Security Checkpoint - North East
+
+ent-RMCAreaLv759IndoorsWeymartMaintenance-name = Weymart - Maintenance
+
+ent-RMCAreaLv759IndoorsWeymartBackrooms-name = Weymart - Backrooms
+
+ent-RMCAreaLv759IndoorsWeymart-name = Weymart
+
+ent-RMCAreaLv759IndoorsTcommsNorthwest-name = Telecommunications Substation - West
+
+ent-RMCAreaLv759IndoorsPizzaria-name = Pizza Galaxy - Outpost Zeta
+
+ent-RMCAreaLv759IndoorsCasinoCasinoVault-name = Night Gold Casino - Vault
+
+ent-RMCAreaLv759IndoorsCasinoCasinoRestroom-name = Night Gold Casino - Restroom
+
+ent-RMCAreaLv759IndoorsCasinoCasinoOffice-name = Night Gold Casino - Managers Office
+
+ent-RMCAreaLv759IndoorsCasino-name = Night Gold Casino
+
+ent-RMCAreaLv759IndoorsSouthwestPublicRestroom-name = Public Restroom - Southwest
+
+ent-RMCAreaLv759IndoorsSouthPublicRestroom-name = Public Restroom - South
+
+ent-RMCAreaLv759IndoorsRecyclingPlantWasteDisposalIncinerator-name = Weston-Yamada - Resource Recovery Facility - Waste Disposal Incinerating Room
+
+ent-RMCAreaLv759IndoorsRecyclingPlantOffice-name = Weston-Yamada - Resource Recovery Facility - Office
+
+ent-RMCAreaLv759IndoorsRecyclingPlantSyntheticStorage-name = Synthetic Storage
+
+ent-RMCAreaLv759IndoorsRecyclingPlantGarage-name = Weston-Yamada - Resource Recovery Facility - Garage
+
+ent-RMCAreaLv759IndoorsRecyclingPlant-name = Weston-Yamada - Resource Recovery Facility
+
+ent-RMCAreaLv759IndoorsJacksSurplus-name = Jack's Military Surplus
+
+ent-RMCAreaLv759IndoorsColonialMarshalsSouthwestMaintenance-name = TSEPA - Ironbridge Precinct - Maintenance - Southwest
+
+ent-RMCAreaLv759IndoorsColonialMarshalsNorthMaintenance-name = TSEPA - Ironbridge Precinct - Maintenance - North
+
+ent-RMCAreaLv759IndoorsColonialMarshalsSouthMaintenance-name = TSEPA - Ironbridge Precinct - Maintenance - South
+
+ent-RMCAreaLv759IndoorsColonialMarshalsRestroom-name = TSEPA - Ironbridge Precinct - Restroom & Showers
+
+ent-RMCAreaLv759IndoorsColonialMarshalsChangingRoom-name = TSEPA - Ironbridge Precinct - Changing Room
+
+ent-RMCAreaLv759IndoorsColonialMarshalsPressRoom-name = TSEPA - Ironbridge Precinct - Court Room
+
+ent-RMCAreaLv759IndoorsColonialMarshalsInterrogation-name = TSEPA - Ironbridge Precinct - Interrogation
+
+ent-RMCAreaLv759IndoorsColonialMarshalsWardensOffice-name = TSEPA - Ironbridge Precinct - Wardens Office
+
+ent-RMCAreaLv759IndoorsColonialMarshalsNorthOffice-name = TSEPA - Ironbridge Precinct - North Office
+
+ent-RMCAreaLv759IndoorsColonialMarshalsHeadOffice-name = TSEPA - Ironbridge Precinct - Forensics Office
+
+ent-RMCAreaLv759IndoorsColonialMarshalsHoldingCells-name = TSEPA - Ironbridge Precinct - Holding Cells
+
+ent-RMCAreaLv759IndoorsColonialMarshalsHallwayNorthLocker-name = TSEPA - Ironbridge Precinct - North Hallway - Locker Room
+
+ent-RMCAreaLv759IndoorsColonialMarshalsHallwayNorth-name = TSEPA - Ironbridge Precinct - North Hallway
+
+ent-RMCAreaLv759IndoorsColonialMarshalsHallwayReception-name = TSEPA - Ironbridge Precinct - Reception Hallway
+
+ent-RMCAreaLv759IndoorsColonialMarshalsHallwaySouth-name = TSEPA - Ironbridge Precinct - South Hallway
+
+ent-RMCAreaLv759IndoorsColonialMarshalsHallwayCentral-name = TSEPA - Ironbridge Precinct - Central Hallway
+
+ent-RMCAreaLv759IndoorsColonialMarshalsReception-name = TSEPA - Ironbridge Precinct - Reception Office
+
+ent-RMCAreaLv759IndoorsColonialMarshalsOffice-name = TSEPA - Ironbridge Precinct - Office
+
+ent-RMCAreaLv759IndoorsColonialMarshalsArmoryEvidenceroom-name = TSEPA - Ironbridge Precinct - Evidence Room
+
+ent-RMCAreaLv759IndoorsColonialMarshalsArmoryFiringrange-name = TSEPA - Ironbridge Precinct - Firing Range
+
+ent-RMCAreaLv759IndoorsColonialMarshalsArmory-name = TSEPA - Ironbridge Precinct - Armory
+
+ent-RMCAreaLv759IndoorsColonialMarshalsArmoryFoyer-name = TSEPA - Ironbridge Precinct - Armory Foyer
+
+ent-RMCAreaLv759IndoorsColonialMarshalsGarage-name = TSEPA - Ironbridge Precinct - Vehicle Deployment & Maintenace
+
+ent-RMCAreaLv759IndoorsColonialMarshalsPrisonersRecreationArea-name = TSEPA - Ironbridge Precinct - Maximum Security Ward - Recreation Area & Shower Room
+
+ent-RMCAreaLv759IndoorsColonialMarshalsPrisonersFoyer-name = TSEPA - Ironbridge Precinct - Maximum Security Ward - Foyer
+
+ent-RMCAreaLv759IndoorsColonialMarshalsPrisonersCells-name = TSEPA - Ironbridge Precinct - Maximum Security Ward - Cells
+
+ent-RMCAreaLv759IndoorsColonialMarshals-name = TSEPA - Ironbridge Precinct
+
+ent-RMCAreaLv759IndoorsPowerPlantEquipmentWest-name = Weston-Yamada DynaGrid Nexus - Equipment Storage Room - West
+
+ent-RMCAreaLv759IndoorsPowerPlantEquipmentEast-name = Weston-Yamada DynaGrid Nexus - Equipment Storage Room - East
+
+ent-RMCAreaLv759IndoorsPowerPlantWorkersCanteenKitchen-name = Weston-Yamada DynaGrid Nexus - Worker's Canteen - Kitchen
+
+ent-RMCAreaLv759IndoorsPowerPlantWorkersCanteen-name = Weston-Yamada DynaGrid Nexus - Worker's Canteen
+
+ent-RMCAreaLv759IndoorsPowerPlantTelecomms-name = Weston-Yamada DynaGrid Nexus - Telecommunications
+
+ent-RMCAreaLv759IndoorsPowerPlantFusionGenerators-name = Weston-Yamada DynaGrid Nexus - Control Center
+
+ent-RMCAreaLv759IndoorsPowerPlantGasGenerators-name = Weston-Yamada DynaGrid Nexus - Gas Mixing & Storage
+
+ent-RMCAreaLv759IndoorsPowerPlantTransformersSouth-name = Weston-Yamada DynaGrid Nexus - Transformers - South
+
+ent-RMCAreaLv759IndoorsPowerPlantTransformersNorth-name = Weston-Yamada DynaGrid Nexus - Transformers - North
+
+ent-RMCAreaLv759OutdoorsPowerPlantTransformersSouth-name = Weston-Yamada DynaGrid Nexus - Transformers - South
+
+ent-RMCAreaLv759OutdoorsPowerPlantTransformersNorth-name = Weston-Yamada DynaGrid Nexus - Transformers - North
+
+ent-RMCAreaLv759IndoorsPowerPlantPowerStorage-name = Weston-Yamada DynaGrid Nexus - Power Storage Room
+
+ent-RMCAreaLv759IndoorsPowerPlantGeothermalGenerators-name = Weston-Yamada DynaGrid Nexus - Geothermal Generators Room
+
+ent-RMCAreaLv759IndoorsPowerPlantSouthHallway-name = Weston-Yamada DynaGrid Nexus - South Hallway
+
+ent-RMCAreaLv759IndoorsPowerPlantHallwayEast-name = Weston-Yamada DynaGrid Nexus - East Hallway
+
+ent-RMCAreaLv759IndoorsPowerPlant-name = Weston-Yamada DynaGrid Nexus - Central Hallway
+
+ent-RMCAreaLv759IndoorsElecticalSystemsSubstation3-name = Electrical Systems - Substation Three
+
+ent-RMCAreaLv759IndoorsElecticalSystemsSubstation2-name = Electrical Systems - Substation Two
+
+ent-RMCAreaLv759IndoorsElecticalSystemsSubstation1-name = Electrical Systems - Substation One - Control Room
+
+ent-RMCAreaLv759OutdoorsMiningOutpostSouthEntrance-name = TMCC - Mining Outpost - South - Vehicle Deployment Entrance
+
+ent-RMCAreaLv759IndoorsMiningOutpostCargoMaint-name = TMCC - Mining Outpost - East - Maintenance
+
+ent-RMCAreaLv759IndoorsMiningOutpostEastCommand-name = TMCC - Mining Outpost - East - Command Center
+
+ent-RMCAreaLv759IndoorsMiningOutpostEastDeploymentbay-name = TMCC - Mining Outpost - East - Deployment Bay
+
+ent-RMCAreaLv759IndoorsMiningOutpostEastDorms-name = TMCC - Mining Outpost - East - Dorms
+
+ent-RMCAreaLv759IndoorsMiningOutpostEast-name = TMCC - Mining Outpost - East
+
+ent-RMCAreaLv759IndoorsMiningOutpostProcessing-name = TMCC - Mining Outpost - South - Processing & Storage
+
+ent-RMCAreaLv759IndoorsMiningOutpostVehicledeployment-name = TMCC - Mining Outpost - South - Vehicle Deployment
+
+ent-RMCAreaLv759IndoorsMiningOutpostSouth-name = TMCC - Mining Outpost - Southeast
+
+ent-RMCAreaLv759IndoorsMiningOutpostNortheast-name = TMCC - Mining Outpost - Northeast
+
+ent-RMCAreaLv759IndoorsMiningOutpostNorthMaint-name = TMCC - Mining Outpost - North - Maintenance
+
+ent-RMCAreaLv759IndoorsMiningOutpostNorth-name = TMCC - Mining Outpost - North
+
+ent-RMCAreaLv759IndoorsHospitalJanitor-name = Nova Medica Hospital Complex - Janitors Closet
+
+ent-RMCAreaLv759IndoorsHospitalMaintenanceSouth-name = Nova Medica Hospital Complex - Unisex-Restroom
+
+ent-RMCAreaLv759IndoorsHospitalMaintenanceNorth-name = Nova Medica Hospital Complex - Maintenance North
+
+ent-RMCAreaLv759IndoorsHospitalStorage-name = Nova Medica Hospital Complex - Office
+
+ent-RMCAreaLv759IndoorsHospitalIcu-name = Nova Medica Hospital Complex - Intensive Care Ward
+
+ent-RMCAreaLv759IndoorsHospitalMorgue-name = Nova Medica Hospital Complex - Morgue
+
+ent-RMCAreaLv759IndoorsHospitalVirology-name = Nova Medica Hospital Complex - Virology
+
+ent-RMCAreaLv759IndoorsHospitalPatientWard-name = Nova Medica Hospital Complex - Patient Ward
+
+ent-RMCAreaLv759IndoorsHospitalOperation-name = Nova Medica Hospital Complex - Operation Theatres & Observation
+
+ent-RMCAreaLv759IndoorsHospitalMedicalStorage-name = Nova Medica Hospital Complex - Medical Storage
+
+ent-RMCAreaLv759IndoorsHospitalEastHallway-name = Nova Medica Hospital Complex - East Hallway
+
+ent-RMCAreaLv759IndoorsHospitalCentralHallway-name = Nova Medica Hospital Complex - Central Hallway
+
+ent-RMCAreaLv759IndoorsHospitalOutgoing-name = Nova Medica Hospital Complex - Outgoing Ward
+
+ent-RMCAreaLv759IndoorsHospitalPharmacy-name = Nova Medica Hospital Complex - Pharmacy & Outgoing Foyer
+
+ent-RMCAreaLv759IndoorsHospitalBreakRoom-name = Nova Medica Hospital Complex - Breakroom
+
+ent-RMCAreaLv759IndoorsHospitalMaintenance-name = Nova Medica Hospital Complex - Subspace Communications & Electrical Systems
+
+ent-RMCAreaLv759IndoorsHospitalCmoOffice-name = Nova Medica Hospital Complex - Chief Medical Officer's Office
+
+ent-RMCAreaLv759IndoorsHospitalReception-name = Nova Medica Hospital Complex - Reception
+
+ent-RMCAreaLv759IndoorsHospitalEmergencyRoom-name = Nova Medica Hospital Complex - Emergency Room
+
+ent-RMCAreaLv759IndoorsHospitalCryoRoom-name = Nova Medica Hospital Complex - Cryo Ward
+
+ent-RMCAreaLv759IndoorsHospitalParamedicsGarage-name = Nova Medica Hospital Complex - Paramedic's Garage
+
+ent-RMCAreaLv759IndoorsHotelHotelRooms-name = Prospera Grand Hotel - Room
+
+ent-RMCAreaLv759IndoorsHotelHotelHallway-name = Prospera Grand Hotel - Hallway
+
+ent-RMCAreaLv759IndoorsBotanyBotanyMainroom-name = Botany - Main Room
+
+ent-RMCAreaLv759IndoorsBotanyBotanyMaintenance-name = Botany - Maintenance
+
+ent-RMCAreaLv759IndoorsBotanyBotanyHallway-name = Botany - Hallway
+
+ent-RMCAreaLv759IndoorsBotanyBotanyGreenhouse-name = Botany - Greenhouse
+
+ent-RMCAreaLv759IndoorsBarKitchen-name = Bar - Kitchen
+
+ent-RMCAreaLv759IndoorsBarMaintenance-name = Bar - Maintenance
+
+ent-RMCAreaLv759IndoorsBarBathroom-name = Bar - Restrooms
+
+ent-RMCAreaLv759IndoorsBarEntertainment-name = Bar - Entertainment Subsection
+
+ent-RMCAreaLv759IndoorsBar-name = Bar
+
+ent-RMCAreaLv759IndoorsWeyaOfficeSupervisor-name = Weston-Yamada Offices - Colony Supervisors Office
+
+ent-RMCAreaLv759IndoorsWeyaOfficePressroom-name = Weston-Yamada Offices - Assembly Hall
+
+ent-RMCAreaLv759IndoorsWeyaOfficeVip-name = Weston-Yamada Offices - Conference Room
+
+ent-RMCAreaLv759IndoorsWeyaOfficeBreakroom-name = Weston-Yamada Offices - Breakroom
+
+ent-RMCAreaLv759IndoorsWeyaOfficeFloor-name = Weston-Yamada Offices - Main Office Floor
+
+ent-RMCAreaLv759IndoorsWeyaOfficeHallway-name = Weston-Yamada Offices - West Foyer
+
+ent-RMCAreaLv759IndoorsWeyaOffice-name = Weston-Yamada Offices - Reception Hallway
+
+ent-RMCAreaLv759IndoorsApartmentNorthapartments-name = Westhaven Apartment Complex - North - Apartments
+
+ent-RMCAreaLv759IndoorsApartmentNorthhallway-name = Westhaven Apartment Complex - North - Hallway
+
+ent-RMCAreaLv759IndoorsApartmentNorthfoyer-name = Westhaven Apartment Complex - North - Foyer
+
+ent-RMCAreaLv759IndoorsApartmentEastbedroomsstorage-name = Westhaven Apartment Complex - East - Bedrooms - Storage Room
+
+ent-RMCAreaLv759IndoorsApartmentEastbedrooms-name = Westhaven Apartment Complex - East - Bedrooms
+
+ent-RMCAreaLv759IndoorsApartmentEastrestroomsshower-name = Westhaven Apartment Complex - East - Restrooms & Showers
+
+ent-RMCAreaLv759IndoorsApartmentEastfoyer-name = Westhaven Apartment Complex - East - Foyer
+
+ent-RMCAreaLv759IndoorsApartmentEastentrance-name = Westhaven Apartment Complex - East - Entrance Room
+
+ent-RMCAreaLv759IndoorsApartmentWestentertainment-name = Westhaven Apartment Complex - West - Recreation Hub
+
+ent-RMCAreaLv759IndoorsApartmentWestrestroom-name = Westhaven Apartment Complex - West - Restrooms
+
+ent-RMCAreaLv759IndoorsApartmentWestshowers-name = Westhaven Apartment Complex - West - Showers
+
+ent-RMCAreaLv759IndoorsApartmentWestbedrooms-name = Westhaven Apartment Complex - West - Apartments
+
+ent-RMCAreaLv759IndoorsApartmentWesthallway-name = Westhaven Apartment Complex - West - Hallway
+
+ent-RMCAreaLv759IndoorsApartmentWestfoyer-name = Westhaven Apartment Complex - West - Foyer
+
+ent-RMCAreaLv759IndoorsMeridianMeridianMaintenanceEast-name = Meridian - Factory Floor - Maintenance
+
+ent-RMCAreaLv759IndoorsMeridianMeridianMaintenance-name = Meridian - Maintenance
+
+ent-RMCAreaLv759IndoorsMeridianMeridianRestroom-name = Meridian - Restroom
+
+ent-RMCAreaLv759IndoorsMeridianMeridianFactory-name = Meridian - Factory Floor
+
+ent-RMCAreaLv759IndoorsMeridianMeridianManagersoffice-name = Meridian - Manager's Office
+
+ent-RMCAreaLv759IndoorsMeridianMeridianOffice-name = Meridian - Offices
+
+ent-RMCAreaLv759IndoorsMeridianMeridianShowroom-name = Meridian - Showroom
+
+ent-RMCAreaLv759IndoorsMeridianMeridianFoyer-name = Meridian - Foyer
+
+ent-RMCAreaLv759IndoorsGarageRestroom-name = Garage - Restroom
+
+ent-RMCAreaLv759IndoorsGarageManagersoffice-name = Garage - Managers Office
+
+ent-RMCAreaLv759IndoorsGarageWorkshopStorage-name = Garage - Workshop - Storage Room
+
+ent-RMCAreaLv759IndoorsGarageWorkshop-name = Garage - Workshop
+
+ent-RMCAreaLv759IndoorsGarageReception-name = Garage - Reception
+
+ent-RMCAreaLv759IndoorsSpaceportHorizonRunner-name = WY-LWI Horizon Runner HR-150
+
+ent-RMCAreaLv759IndoorsSpaceportStarglider-name = WY-LWI StarGlider SG-200
+
+ent-RMCAreaLv759IndoorsSpaceportDockingBay1-name = Weston-Yamada Celestia Gateway Space-Port - Docking Bay: 1
+
+ent-RMCAreaLv759IndoorsSpaceportDockingBay2-name = Weston-Yamada Celestia Gateway Space-Port - Docking Bay: 2 - Refueling and Maintenance
+
+ent-RMCAreaLv759IndoorsSpaceportKitchen-name = Weston-Yamada Celestia Gateway Space-Port - Kitchen
+
+ent-RMCAreaLv759IndoorsSpaceportCuppajoes-name = Weston-Yamada Celestia Gateway Space-Port - Cuppa Joe's
+
+ent-RMCAreaLv759IndoorsSpaceportBaggagehandling-name = Weston-Yamada Celestia Gateway Space-Port - Baggage Storage & Handling
+
+ent-RMCAreaLv759IndoorsSpaceportCargoMaintenance-name = Weston-Yamada Celestia Gateway Space-Port - Cargo - Maintenance
+
+ent-RMCAreaLv759IndoorsSpaceportCargo-name = Weston-Yamada Celestia Gateway Space-Port - Cargo Bay
+
+ent-RMCAreaLv759IndoorsSpaceportSecurityOffice-name = Weston-Yamada Celestia Gateway Space-Port - Office
+
+ent-RMCAreaLv759IndoorsSpaceportSecurity-name = Weston-Yamada Celestia Gateway Space-Port - Security- Observation & Office
+
+ent-RMCAreaLv759IndoorsSpaceportFlightControlRoom-name = Weston-Yamada Celestia Gateway Space-Port - Flight Control Room
+
+ent-RMCAreaLv759IndoorsSpaceportCommunicationsOffice-name = Weston-Yamada Celestia Gateway Space-Port - Communications & Administration Office
+
+ent-RMCAreaLv759IndoorsSpaceportMaintenanceEast-name = Weston-Yamada Celestia Gateway Space-Port - Maintenance - East
+
+ent-RMCAreaLv759IndoorsSpaceportJanitor-name = Weston-Yamada Celestia Gateway Space-Port - Janitorial Storage Room
+
+ent-RMCAreaLv759IndoorsSpaceportEngineering-name = Weston-Yamada Celestia Gateway Space-Port - Fuel Storage & Processing
+
+ent-RMCAreaLv759IndoorsSpaceportHeavyequip-name = Weston-Yamada Celestia Gateway Space-Port - Heavy Equipment Storage
+
+ent-RMCAreaLv759IndoorsSpaceportHallwayEast-name = Weston-Yamada Celestia Gateway Space-Port - Hallway - East
+
+ent-RMCAreaLv759IndoorsSpaceportHallwayNorthwest-name = Weston-Yamada Celestia Gateway Space-Port - Hallway - Northwest
+
+ent-RMCAreaLv759IndoorsSpaceportHallwayNorth-name = Weston-Yamada Celestia Gateway Space-Port - Hallway - North
+
+ent-RMCAreaLv759IndoorsSpaceportHallwayNortheast-name = Weston-Yamada Celestia Gateway Space-Port - Hallway - Northeast
+
+ent-RMCAreaLv759OutdoorsColonyStreetsNorthStreet-name = Colony Streets - North
+
+ent-RMCAreaLv759OutdoorsColonyStreetsNorthEastStreetLZ-name = Colony Streets - Northeast
+
+ent-RMCAreaLv759OutdoorsColonyStreetsNorthEastStreet-name = Colony Streets - Northeast
+
+ent-RMCAreaLv759OutdoorsColonyStreetsNorthWestStreet-name = Colony Streets - Northwest
+
+ent-RMCAreaLv759OutdoorsColonyStreetsSouthEastStreetComms-name = Colony Streets - Southeast - Subspace-Communications
+
+ent-RMCAreaLv759OutdoorsColonyStreetsSouthWestStreet-name = Colony Streets - Southwest - WY Checkpoint Passthrough
+
+ent-RMCAreaLv759OutdoorsColonyStreetsSouthEastStreet-name = Colony Streets - Southeast
+
+ent-RMCAreaLv759OutdoorsColonyStreetsSouthStreet-name = Colony Streets - South
+
+ent-RMCAreaLv759OutdoorsColonyStreetsEastCentralStreetLeft-name = Central Street - East
+
+ent-RMCAreaLv759OutdoorsColonyStreetsEastCentralStreet-name = Central Street - East
+
+ent-RMCAreaLv759OutdoorsColonyStreetsCentralStreets-name = Central Street - West
+
+ent-RMCAreaLv759OutdoorsColonyStreets-name = Colony Streets
+
+ent-RMCAreaLv759OutdoorsCaveplateau-name = Caverns - Plateau
+
+ent-RMCAreaLv759IndoorsCavesNorthEastCavesComms2-name = NMHC - Emergency Response - Landing Zone One - Caverns - Northeast - Subspace-Communications
+
+ent-RMCAreaLv759IndoorsCavesNorthEastCavesComms-name = TMCC - Mining Outpost - East - Subspace-Communications
+
+ent-RMCAreaLv759IndoorsCavesCentralCavesNorth-name = Caverns - Central
+
+ent-RMCAreaLv759IndoorsCavesCentralCaves-name = Caverns - Central
+
+ent-RMCAreaLv759IndoorsCavesNorthCaves-name = Caverns - North
+
+ent-RMCAreaLv759IndoorsCavesNorthEastCaves-name = Caverns - Northeast
+
+ent-RMCAreaLv759OutdoorsCavesNorthWestCavesOutdoors-name = Caverns - Northwest
+
+ent-RMCAreaLv759IndoorsCavesNorthWestCaves-name = Caverns - Northwest
+
+ent-RMCAreaLv759IndoorsCavesSouthWestCavesAlarm-name = Caverns - Southwest
+
+ent-RMCAreaLv759IndoorsCavesSouthWestCaves-name = Caverns - Southwest
+
+ent-RMCAreaLv759IndoorsCavesSouthEastCaves-name = Caverns - Southeast
+
+ent-RMCAreaLv759IndoorsCavesSouthCavesDerelictShip-name = Caverns - South
+
+ent-RMCAreaLv759IndoorsCavesSouthCaves-name = Caverns - South
+
+ent-RMCAreaLv759IndoorsCavesEastCavesNorth-name = Caverns - East
+
+ent-RMCAreaLv759IndoorsCavesEastCaves-name = Caverns - East
+
+ent-RMCAreaLv759IndoorsCavesWestCavesAlarm-name = Caverns - West
+
+ent-RMCAreaLv759IndoorsCavesSensoryTower-name = Sensory Tower - Plateau Caves
+
+ent-RMCAreaLv759IndoorsCavesCommsTower-name = Comms Tower - Central Caves
+
+ent-RMCAreaLv759IndoorsCavesElectricFence3-name = Electrical Fence - Central Caves
+
+ent-RMCAreaLv759IndoorsCavesElectricFence2-name = Electrical Fence - East Caves
+
+ent-RMCAreaLv759IndoorsCavesElectricFence1-name = Electrical Fence - West Caves
+
+ent-RMCAreaLv759IndoorsCavesWestCaves-name = Caverns - West
+
+ent-RMCAreaLv759IndoorsCavesWyResearchComplexEntrance-name = Weston-Yamada - Advanced Bio-Genomic Research Complex - North Main Entrance
+
+ent-RMCAreaLv759IndoorsCaves-name = Caves
+
+ent-RMCAreaLv759IndoorsDerelictShip-name = Derelict Ship
+
+ent-RMCAreaLv759OutdoorsLandingZone2KmccHubCargoEntranceSouth-name = TMCC Interstellar Freight Hub - Cargo Processing Center - Main Entrance & South Unloading Platform
+
+ent-RMCAreaLv759IndoorsLandingZone2KmccHubMaintenanceNorth-name = TMCC Interstellar Freight Hub - Cargo Processing Center - Maintenance
+
+ent-RMCAreaLv759IndoorsLandingZone2KmccHubCargo-name = TMCC Interstellar Freight Hub - Cargo Processing Center
+
+ent-RMCAreaLv759IndoorsLandingZone2KmccHubLz2Console-name = TMCC Interstellar Freight Hub - Dropship Normandy Console
+
+ent-RMCAreaLv759IndoorsLandingZone2KmccHubMaintenance-name = TMCC Interstellar Freight Hub - Passenger Departures - Maintenance
+
+ent-RMCAreaLv759IndoorsLandingZone2KmccHubSouthOffice-name = TMCC Interstellar Freight Hub - Passenger Departures - South Office
+
+ent-RMCAreaLv759IndoorsLandingZone2KmccHubLoungeHallway-name = TMCC Interstellar Freight Hub - Passenger Departures - Hallway
+
+ent-RMCAreaLv759IndoorsLandingZone2KmccHubLoungeSouth-name = TMCC Interstellar Freight Hub - Passenger Departures - Lounge South
+
+ent-RMCAreaLv759IndoorsLandingZone2KmccHubFuel-name = TMCC Interstellar Freight Hub - Fuel Storage & Maintenance - North
+
+ent-RMCAreaLv759IndoorsLandingZone2KmccHubLoungeNorth-name = TMCC Interstellar Freight Hub - Passenger Departures - Lounge North
+
+ent-RMCAreaLv759IndoorsLandingZone2KmccHubSecurity-name = TMCC Interstellar Freight Hub - Security Checkpoint Office
+
+ent-RMCAreaLv759IndoorsLandingZone2KmccHubFlightControlRoom-name = TMCC Interstellar Freight Hub - Flight Control Room
+
+ent-RMCAreaLv759OutdoorsLandingZone2-name = TMCC Interstellar Freight Hub - Landing Zone Two
+
+ent-RMCAreaLv759IndoorsLandingZone1Lz1Console-name = Nova Medica Hospital Complex - Emergency Response - Landing Zone One - Dropship Alamo Console
+
+ent-RMCAreaLv759IndoorsLandingZone1FlightControlRoom-name = Nova Medica Hospital Complex - Emergency Response - Landing Zone One - Flight Control Room
+
+ent-RMCAreaLv759OutdoorsLandingZone1-name = Nova Medica Hospital Complex - Emergency Response - Landing Zone One
+
+ent-RMCAreaLv759BunkerCheckpoint-name = Checkpoint & Hidden Bunker - Entrance
+
+ent-RMCAreaLv759BunkerGonzo-name = Gonzo's hide-out
+
+ent-RMCAreaLv759Bunker-name = Out Of Bounds
+
+ent-RMCAreaLv759Oob-name = Out Of Bounds
+
+ent-RMCAreaLv759Outdoors-name = Hybrisa - Outdoors
+
+ent-RMCAreaLv759Indoors-name = Hybrisa - Indoors
+
+ent-RMCAreaLv759-name = LV-759 Hybrisa Prospera
+
+ent-RMCAreaLv759IndoorsLandingZone1-name = Hybrisa - Indoors
+
+ent-RMCAreaLv759IndoorsLandingZone2-name = Hybrisa - Indoors
+
+ent-RMCAreaLv759IndoorsLandingZone2KmccHub-name = Hybrisa - Indoors
+
+ent-RMCAreaLv759OutdoorsCaves-name = Hybrisa - Outdoors
+
+ent-RMCAreaLv759IndoorsCavesNorthEastCavesSouth-name = Caverns - Northeast
+
+ent-RMCAreaLv759IndoorsCavesNorthCavesEast-name = Caverns - North
+
+ent-RMCAreaLv759IndoorsSpaceport-name = Hybrisa - Indoors
+
+ent-RMCAreaLv759IndoorsSpaceportDogbite-name = UD-9M 'Dogbite' Utility Dropship
+
+ent-RMCAreaLv759IndoorsMeridian-name = Hybrisa - Indoors
+
+ent-RMCAreaLv759IndoorsApartment-name = Hybrisa - Indoors
+
+ent-RMCAreaLv759IndoorsBotany-name = Hybrisa - Indoors
+
+ent-RMCAreaLv759IndoorsHotel-name = Hybrisa - Indoors
+
+ent-RMCAreaLv759IndoorsHospital-name = Hybrisa - Indoors
+
+ent-RMCAreaLv759IndoorsMiningOutpost-name = Hybrisa - Indoors
+
+ent-RMCAreaLv759OutdoorsMiningOutpost-name = Hybrisa - Outdoors
+
+ent-RMCAreaLv759IndoorsElecticalSystems-name = Hybrisa - Indoors
+
+ent-RMCAreaLv759OutdoorsPowerPlant-name = Hybrisa - Outdoors
+
+ent-RMCAreaLv759IndoorsWySecurity-name = Hybrisa - Indoors
+
+ent-RMCAreaLv759IndoorsOutpostSouterMainHall-name = RCM-P Outpost Souter - Main Hall
+
+ent-RMCAreaLv759IndoorsOutpostSouterDorms-name = RCM-P Outpost Souter - Dormitories
+
+ent-RMCAreaLv759IndoorsOutpostSouterArmoury-name = RCM-P Outpost Souter - Armoury
+
+ent-RMCAreaLv759IndoorsOutpostSouterFlightMaints-name = RCM-P Outpost Souter - Flight Maintenance Room
+
+ent-RMCAreaLv759IndoorsOutpostSouterHangar-name = RCM-P Outpost Souter - Hangar
+
+ent-RMCAreaLv759IndoorsOutpostSouterReception-name = RCM-P Outpost Souter - Reception Office
+
+ent-RMCAreaLv759IndoorsOutpostSouterEntrance-name = RCM-P Outpost Souter - Entrance
+
+ent-RMCAreaLv759IndoorsOutpostSouterFlightControl-name = RCM-P Outpost Souter - Flight Control
+
+ent-RMCAreaLv759IndoorsOutpostSouterUD4UK-name = TSE UD4-UK
+

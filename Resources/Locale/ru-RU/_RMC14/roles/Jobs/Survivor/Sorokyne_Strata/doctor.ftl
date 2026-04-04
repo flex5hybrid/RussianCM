@@ -1,2 +1,5 @@
-ent-RMCGearSurvivorPresetMoHDoctor = Предварительная настройка врача Министерства здравоохранения
-ent-RMCSpawnPointSurvivorMoHDoctor = Место появления врачей Министерства здравоохранения
+ent-RMCGearSurvivorPresetMoHDoctor-name = ministry of health doctor preset
+
+ent-RMCSpawnPointSurvivorMoHDoctor-name = ministry of health doctor spawn point
+ent-RMCSpawnPointSurvivorMoHDoctor-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

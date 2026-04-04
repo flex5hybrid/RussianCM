@@ -1,2 +1,9 @@
-ent-RMCSensorTower = экспериментальная сенсорная башня
-  .desc = Башня с множеством тонких датчиков, предназначенных для отслеживания погодных условий. 
+ent-RMCSensorTower-name = experimental sensor tower
+ent-RMCSensorTower-desc = A tower with a lot of delicate sensors made to track weather conditions. This one has been adjusted to track biosignatures.
+
+ent-RMCSensorTowerOn-name = experimental sensor tower
+ent-RMCSensorTowerOn-desc = A tower with a lot of delicate sensors made to track weather conditions. This one has been adjusted to track biosignatures.
+
+ent-RMCSensorTowerOffset-name = experimental sensor tower
+ent-RMCSensorTowerOffset-desc = A tower with a lot of delicate sensors made to track weather conditions. This one has been adjusted to track biosignatures.
+

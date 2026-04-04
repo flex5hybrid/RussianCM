@@ -1,7 +1,32 @@
-ent-RMCMagazinePistolM13Drum = Барабанный магазин M13 ВС (10x20мм)
-ent-RMCMagazinePistolM13Ext = Расширенный магазин M13 ВС (10x20мм)
-ent-RMCMagazinePistolM13 = Магазин M13 ВС (10x20мм)
-ent-RMCWeaponPistolM13 = Автопистолет M13
-  .desc = Автопистолет M13, компактный, скорострельный пистолет, предназначенный для защиты в ближнем бою. С магазином на 40 патронов он делает ставку на скорострельность, а не на точность, обеспечивая эффективный подавляющий огонь в ближнем бою.
-ent-RMCWeaponPistolM13Empty = автопистолет M13
-  .desc = Автопистолет M13, компактный, скорострельный пистолет, предназначенный для защиты в ближнем бою. С магазином на 40 патронов он делает ставку на скорострельность, а не на точность, обеспечивая эффективный подавляющий огонь в ближнем бою.
+ent-RMCMagazinePistolM13Drum-name = item
+ent-RMCMagazinePistolM13Drum-desc = A pistol magazine.
+
+ent-RMCMagazinePistolM13Ext-name = item
+ent-RMCMagazinePistolM13Ext-desc = A pistol magazine.
+
+ent-RMCMagazinePistolM13-name = item
+ent-RMCMagazinePistolM13-desc = A pistol magazine.
+
+ent-RMCWeaponPistolM13-name = item
+
+ent-RMCWeaponPistolM13Empty-name = item
+
+ent-RMCMagazinePistolM13AP-name = item
+ent-RMCMagazinePistolM13AP-desc = A pistol magazine.
+
+ent-RMCMagazinePistolM13ExtAP-name = item
+ent-RMCMagazinePistolM13ExtAP-desc = A pistol magazine.
+
+ent-RMCMagazinePistolM13DrumAP-name = item
+ent-RMCMagazinePistolM13DrumAP-desc = A pistol magazine.
+
+ent-RMCCartridgeAutoPistol-name = cartridge (.25 caseless)
+
+ent-RMCCartridgeAutoPistolAP-name = cartridge (.25 caseless)
+
+ent-RMCBulletAutoPistol-name = BaseBullet
+ent-RMCBulletAutoPistol-desc = If you can see this you're probably dead!
+
+ent-RMCBulletAutoPistolAP-name = BaseBullet
+ent-RMCBulletAutoPistolAP-desc = If you can see this you're probably dead!
+

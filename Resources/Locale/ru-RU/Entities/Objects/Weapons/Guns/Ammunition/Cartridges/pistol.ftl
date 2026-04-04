@@ -1,10 +1,16 @@
 ent-BaseCartridgePistol-name = cartridge (.35 auto)
+
 ent-CartridgePistol-name = cartridge (.35 auto)
 ent-CartridgePistol-desc = Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Standard kinetic ammunition is common and useful in most situations.
+
 ent-CartridgePistolPractice-name = cartridge (.35 auto practice)
 ent-CartridgePistolPractice-desc = Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Chalk ammunition is generally non-harmful, used for practice.
+
 ent-CartridgePistolIncendiary-name = cartridge (.35 auto incendiary)
 ent-CartridgePistolIncendiary-desc = Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Incendiary ammunition contains a self-igniting compound that sets the target ablaze.
+
 ent-CartridgePistolUranium-name = cartridge (.35 auto uranium)
 ent-CartridgePistolUranium-desc = Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Uranium core ammunition features a load of fissile material, irradiating the target from the inside.
+
 ent-CartridgePistolSpent-name = cartridge (.35 auto)
+

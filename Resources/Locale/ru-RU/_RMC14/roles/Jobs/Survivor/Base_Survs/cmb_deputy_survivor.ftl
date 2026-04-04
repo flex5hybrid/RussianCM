@@ -1,2 +1,5 @@
-ent-RMCGearSurvivorPresetCMBDeputy = Предустановленные настройки заместителя колониста cmb
-ent-RMCSpawnPointSurvivorCMBDeputy = точка возрождения заместителя CMB выжившего
+ent-RMCGearSurvivorPresetCMBDeputy-name = cmb deputy colonist preset
+
+ent-RMCSpawnPointSurvivorCMBDeputy-name = survivor cmb deputy spawn point
+ent-RMCSpawnPointSurvivorCMBDeputy-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

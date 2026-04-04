@@ -1,27 +1,20 @@
 rmc-xeno-infection-shakes = {CAPITALIZE($victim)} начинает неконтролируемо трястись!
 rmc-xeno-infection-shakes-self = Вы чувствуете, как что-то шевелится внутри! Вас начинает трясти!
-
 rmc-xeno-infection-minorpain-chest = В груди лёгкая боль.
 rmc-xeno-infection-minorpain-stomach = Болит живот.
-
 rmc-xeno-infection-throat-sore = Горло першит.
 rmc-xeno-infection-throat-mucous = По горлу стекает слизь.
 rmc-xeno-infection-muscle-ache = Мышцы ломит.
-
 rmc-xeno-infection-majorpain-chest = Грудь пронзает острая боль.
 rmc-xeno-infection-majorpain-breathing = Дышать становится трудно.
 rmc-xeno-infection-majorpain-heart = Сердце бешено колотится, каждый удар болезненный.
-
 rmc-xeno-infection-insanepain-one = ОНО ВНУТРИ ВАС!
 rmc-xeno-infection-insanepain-two = ОНО ГРЫЗЁТ ВАС ИЗНУТРИ!
 rmc-xeno-infection-insanepain-three = ОСТАНОВИТЕ ЭТО!
 rmc-xeno-infection-insanepain-four = ВЫ УМРЁТЕ!
 rmc-xeno-infection-insanepain-five = ОНО РВЁТ ВАС НАЧАСТИ!
-
 rmc-xeno-infection-burst-soon = {CAPITALIZE($victim)} бьётся в конвульсиях!
 rmc-xeno-infection-burst-soon-self = Что-то ползает у вас внутри!
-
 rmc-xeno-infection-burst-now-victim = Вы чувствуете, как что-то разрывает вашу грудь!
 rmc-xeno-infection-burst-now-xeno = Мы вырываемся из груди {THE($victim)}!
-
 rmc-xeno-infected-bursted = {CAPITALIZE(SUBJECT($victim))} {CONJUGATE-HAVE($victim)} огромную дыру в {POSS-ADJ($victim)} груди!

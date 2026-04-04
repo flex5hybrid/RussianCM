@@ -1,2 +1,6 @@
-ent-CMChemMaster = ХимМастер 3000
-  .desc = Химический манипулятор промышленного класса, включающий производство таблеток и бутылок.
+ent-CMChemMaster-name = ChemMaster 3000
+ent-CMChemMaster-desc = An industrial grade chemical manipulator with pill and bottle production included.
+
+ent-RMCChemMasterIndustrial-name = industrial chemical mixer
+ent-RMCChemMasterIndustrial-desc = An industrial grade chemical manipulator.
+

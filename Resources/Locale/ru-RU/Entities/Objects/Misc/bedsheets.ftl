@@ -1,48 +1,81 @@
 ent-BedsheetBase-name = BedsheetBase
 ent-BedsheetBase-desc = A surprisingly soft linen bedsheet.
+
 ent-BedsheetBlack-name = black bedsheet
+
 ent-BedsheetBlue-name = blue bedsheet
+
 ent-BedsheetBrown-name = brown bedsheet
+
 ent-BedsheetCaptain-name = captain's bedsheet
 ent-BedsheetCaptain-desc = It has a Nanotrasen symbol on it, and was woven with a revolutionary new kind of thread guaranteed to have 0.01% permeability for most non-chemical substances, popular among most modern captains.
+
 ent-BedsheetCE-name = CE's bedsheet
 ent-BedsheetCE-desc = It's decorated with a wrench emblem. It's highly reflective and stain resistant, so you don't need to worry about ruining it with oil.
+
 ent-BedsheetCentcom-name = CentComm bedsheet
 ent-BedsheetCentcom-desc = Woven with advanced nanothread for warmth as well as being very decorated, essential for all officials.
+
 ent-BedsheetClown-name = clown's bedsheet
 ent-BedsheetClown-desc = A rainbow blanket with a clown mask woven in. It smells faintly of bananas.
+
 ent-BedsheetCMO-name = CMO's bedsheet
 ent-BedsheetCMO-desc = It's a sterilized blanket that has a cross emblem. There's some cat fur on it, likely from Runtime.
+
 ent-BedsheetCosmos-name = cosmos bedsheet
 ent-BedsheetCosmos-desc = Made from the dreams of those who wonder at the stars.
+
 ent-BedsheetCult-name = cult bedsheet
 ent-BedsheetCult-desc = You might dream of Nar'Sie if you sleep with this. It seems rather tattered and glows of an eldritch presence.
+
 ent-BedsheetGreen-name = green bedsheet
+
 ent-BedsheetGrey-name = grey bedsheet
+
 ent-BedsheetHOP-name = HOP's bedsheet
 ent-BedsheetHOP-desc = It's decorated with a key emblem. For those rare moments when you can rest and cuddle with Ian without someone screaming for you over the radio.
+
 ent-BedsheetHOS-name = HOS's bedsheet
 ent-BedsheetHOS-desc = It's decorated with a shield emblem. While crime doesn't sleep, you do, but you are still THE LAW!
+
 ent-BedsheetIan-name = Ian's bedsheet
+
 ent-BedsheetMedical-name = medical bedsheet
 ent-BedsheetMedical-desc = It's a sterilized blanket commonly used in the Medbay. Sterilization is voided if a virologist is present onboard the station.
+
 ent-BedsheetMime-name = mime's bedsheet
 ent-BedsheetMime-desc = A very soothing striped blanket. All the noise just seems to fade out when you're under the covers in this.
+
 ent-BedsheetNT-name = NT bedsheet
 ent-BedsheetNT-desc = It has the Nanotrasen logo on it and an aura of duty.
+
 ent-BedsheetOrange-name = orange bedsheet
+
 ent-BedsheetPurple-name = purple bedsheet
+
 ent-BedsheetQM-name = QM's bedsheet
+ent-BedsheetQM-desc = A surprisingly soft linen bedsheet.
+
 ent-BedsheetRainbow-name = rainbow bedsheet
+
 ent-BedsheetRD-name = RD's bedsheet
 ent-BedsheetRD-desc = It appears to have a beaker emblem, and is made out of fire-resistant material, although it probably won't protect you in the event of fires you're familiar with every day.
+
 ent-BedsheetBrigmedic-name = brigmedic's bedsheet
 ent-BedsheetBrigmedic-desc = Not worse than cotton.
+
 ent-BedsheetRed-name = red bedsheet
+
 ent-BedsheetSyndie-name = syndicate bedsheet
 ent-BedsheetSyndie-desc = It has a syndicate emblem and it has an aura of evil.
+
 ent-BedsheetUSA-name = USA bedsheet
+ent-BedsheetUSA-desc = A surprisingly soft linen bedsheet.
+
 ent-BedsheetWhite-name = white bedsheet
+
 ent-BedsheetWiz-name = wizard's bedsheet
 ent-BedsheetWiz-desc = A special fabric enchanted with magic so you can have an enchanted night. It even glows!
+
 ent-BedsheetYellow-name = yellow bedsheet
+

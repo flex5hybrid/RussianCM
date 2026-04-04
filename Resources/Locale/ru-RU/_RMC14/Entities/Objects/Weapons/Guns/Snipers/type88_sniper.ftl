@@ -1,6 +1,9 @@
-ent-RMCBulletSniperType88 = пуля (7.62x54ммR)
-ent-RMCCartridgeSniperType88 = патрон (7.62x54ммR)
-ent-RMCMagazineSniperType88 = Марксманский магазин Тип 88 (7.62x54ммR)
-  .desc = Магазин с марксманскими патронами Тип 88.
-ent-RMCType88SniperRifle = Снайперская винтовка Тип 88
-  .desc = Штатная марксманская винтовка ВПС. Тип 88 пользуется спросом у спортсменов-стрелков и террористов за свою высокую точность. Обычно снаряжается бронебойными патронами 7.62x54ммR в 12-зарядном магазине.
+ent-RMCBulletSniperType88-name = bullet (7.62x54mmR)
+ent-RMCBulletSniperType88-desc = If you can see this you're probably dead!
+
+ent-RMCCartridgeSniperType88-name = cartridge
+
+ent-RMCMagazineSniperType88-name = item
+
+ent-RMCType88SniperRifle-name = Снайперская винтовка Тип 88
+

@@ -1,2 +1,5 @@
-ent-RMCGearSurvivorPresetLV624Engineer = LV624Предустановка инженера-колониста
-ent-RMCSpawnPointSurvivorLV624Engineer = точка появления выжившего icb
+ent-RMCGearSurvivorPresetLV624Engineer-name = LV624Engineer colonist preset
+
+ent-RMCSpawnPointSurvivorLV624Engineer-name = survivor icb spawn point
+ent-RMCSpawnPointSurvivorLV624Engineer-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

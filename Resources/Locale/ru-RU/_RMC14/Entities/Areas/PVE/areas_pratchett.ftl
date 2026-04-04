@@ -1,25 +1,50 @@
 ent-RMCAreaPRT-name = Пратчетт
+
 ent-RMCAreaPRTHypersleep-name = Гиперсонное хранилище
+
 ent-RMCAreaPRTGalley-name = Камбуз
+
 ent-RMCAreaPRTCanteen-name = Столовая
+
 ent-RMCAreaPRTLounge-name = Общий салон
+
 ent-RMCAreaPRTMedbay-name = Медикал Бэй
+
 ent-RMCAreaPRTOffice-name = Канцелярия командующего войсками
+
 ent-RMCAreaPRTCargoBayUpper-name = Грузовой отсек верхней палубы
+
 ent-RMCAreaPRTCargoBayLower-name = Вспомогательная перегрузочная станция нижней палубы
+
 ent-RMCAreaPRTMaintenaceLower-name = Техническое обслуживание нижней палубы
+
 ent-RMCAreaPRTMaintenanceUpper-name = Обслуживание верхней палубы
+
 ent-RMCAreaPRTEngineering-name = Инженерный залив
+
 ent-RMCAreaPRTHangar-name = Ангар Бэй
+
 ent-RMCAreaPRTHangarCargo-name = Ангарное хранилище
+
 ent-RMCAreaPRTHallways-name = Коридоры верхней палубы
+
 ent-RMCAreaPRTDisposalsLower-name = Вал первичной утилизации переработанных отходов
+
 ent-RMCAreaPRTDisposalsUpper-name = Предварительная обработка отходов верхней палубы
+
 ent-RMCAreaPRTSurgicalBay-name = Хирургический отсек
+
 ent-RMCAreaPRTArmory-name = Хранение вооружения
+
 ent-RMCAreaPRTSynth-name = Синтетическое хранилище
+
 ent-RMCAreaPRTAICoreOuter-name = Внешняя камера ядра SHIVA
+
 ent-RMCAreaPRTAICoreInner-name = Внутренняя камера ядра ШИВА
+
 ent-RMCAreaPRTBunks-name = Комната
+
 ent-RMCAreaPRTBriefing-name = Комната для брифингов
+
 ent-RMCAreaPRTCraneTunnel-name = Грузовой транзитный вал
+

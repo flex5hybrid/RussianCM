@@ -1,9 +1,18 @@
 ent-BaseAsteroidDebris-name = asteroid debris
+
 ent-AsteroidDebrisSmall-name = asteroid debris small
+
 ent-AsteroidDebrisMedium-name = asteroid debris medium
+
 ent-AsteroidDebrisLarge-name = asteroid debris large
+
 ent-AsteroidDebrisLarger-name = asteroid debris larger
+
 ent-AsteroidSalvageSmall-name = salvage asteroid small
+
 ent-AsteroidSalvageMedium-name = salvage asteroid medium
+
 ent-AsteroidSalvageLarge-name = salvage asteroid large
+
 ent-AsteroidSalvageHuge-name = salvage asteroid huge
+

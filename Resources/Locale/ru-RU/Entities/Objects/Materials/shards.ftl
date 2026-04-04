@@ -1,11 +1,18 @@
+ent-ShardBase-name = item
 ent-ShardBase-desc = It's a shard of some unknown material.
+
 ent-ShardGlass-name = glass shard
 ent-ShardGlass-desc = A small piece of glass.
+
 ent-ShardGlassReinforced-name = reinforced glass shard
 ent-ShardGlassReinforced-desc = A small piece of reinforced glass.
+
 ent-ShardGlassPlasma-name = plasma glass shard
 ent-ShardGlassPlasma-desc = A small piece of plasma glass.
+
 ent-ShardGlassUranium-name = uranium glass shard
 ent-ShardGlassUranium-desc = A small piece of uranium glass.
+
 ent-ShardGlassClockwork-name = clockwork glass shard
 ent-ShardGlassClockwork-desc = A small piece of brass-infused glass.
+

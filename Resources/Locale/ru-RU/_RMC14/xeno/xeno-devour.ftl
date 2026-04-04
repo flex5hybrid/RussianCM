@@ -1,16 +1,12 @@
 cm-xeno-devour-self = Мы пожираем {$target}!
 cm-xeno-devour-target = {$user} пожирает вас!
 cm-xeno-devour-observer = {$user} пожирает {$target}!
-
 cm-xeno-devour-start-self = Начинаем пожирать {$target}
 cm-xeno-devour-start-target = {$user} пытается вас проглотить!
 cm-xeno-devour-start-observer = {$user} начинает пожирать {$target}!
-
 cm-xeno-devour-regurgitate = Мы собираемся извергнуть {$target}...
 cm-xeno-devour-hurl-out = Выплёвываем содержимое желудка!
-
 cm-xeno-devour-success = На вкус это было отвратительно.
-
 cm-xeno-devour-failed = Нельзя пожирать {$target}!
 cm-xeno-devour-failed-cant-now = Сейчас это невозможно!
 cm-xeno-devour-failed-stomach-full = Желудок уже полон, это не поместится!

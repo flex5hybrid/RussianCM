@@ -1,3 +1,7 @@
-ent-RMCRandomHumanoidSurvivorDoctor = роль призрака врача-колониста
-ent-RMCSurvivorPresetDoctor = пресет доктора-колониста
-ent-RMCSpawnPointSurvivorDoctor = точка появления доктора-выжившего
+ent-RMCRandomHumanoidSurvivorDoctor-name = doctor colonist ghost role
+
+ent-RMCSurvivorPresetDoctor-name = doctor colonist preset
+
+ent-RMCSpawnPointSurvivorDoctor-name = survivor doctor spawn point
+ent-RMCSpawnPointSurvivorDoctor-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

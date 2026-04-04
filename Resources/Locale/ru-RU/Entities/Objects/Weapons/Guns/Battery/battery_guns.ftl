@@ -1,48 +1,81 @@
 ent-WeaponLaserSvalinn-name = svalinn laser pistol
 ent-WeaponLaserSvalinn-desc = A cheap and widely used laser pistol.
+
 ent-WeaponLaserGun-name = retro laser blaster
 ent-WeaponLaserGun-desc = A weapon using light amplified by the stimulated emission of radiation.
+
 ent-WeaponMakeshiftLaser-name = makeshift laser pistol
 ent-WeaponMakeshiftLaser-desc = Better pray it won't burn your hands off.
+
 ent-WeaponTeslaGun-name = tesla gun
 ent-WeaponTeslaGun-desc = The power of the primordial element of lightning in your hands.
+
 ent-WeaponLaserCarbinePractice-name = practice laser rifle
 ent-WeaponLaserCarbinePractice-desc = This modified laser rifle fires nearly harmless beams in the 40-watt range, for target practice.
+
 ent-WeaponLaserCarbine-name = laser rifle
 ent-WeaponLaserCarbine-desc = Favoured by Nanotrasen Security for being cheap and easy to use.
+
 ent-WeaponPulsePistol-name = pulse pistol
 ent-WeaponPulsePistol-desc = A state of the art energy pistol favoured as a sidearm by the NT operatives.
+
 ent-WeaponPulseCarbine-name = pulse carbine
 ent-WeaponPulseCarbine-desc = A high tech energy carbine favoured by the NT-ERT operatives.
+
 ent-WeaponPulseRifle-name = pulse rifle
 ent-WeaponPulseRifle-desc = A weapon that is almost as infamous as its users.
+
 ent-WeaponLaserCannon-name = laser cannon
 ent-WeaponLaserCannon-desc = A heavy duty, high powered laser weapon.
+
 ent-WeaponParticleDecelerator-name = portable particle decelerator
 ent-WeaponParticleDecelerator-desc = A portable particle decelerator capable of decomposing a tesla or singularity.
+
 ent-WeaponXrayCannon-name = x-ray cannon
 ent-WeaponXrayCannon-desc = An experimental weapon that uses concentrated x-ray energy against its target.
+
 ent-WeaponDisablerPractice-name = practice disabler
 ent-WeaponDisablerPractice-desc = A self-defense weapon that exhausts organic targets, weakening them until they collapse. This one has been undertuned for cadets making it mostly harmless.
+
 ent-WeaponDisabler-name = disabler
 ent-WeaponDisabler-desc = A self-defense weapon that exhausts organic targets, weakening them until they collapse.
+
 ent-WeaponDisablerSMG-name = disabler SMG
 ent-WeaponDisablerSMG-desc = Advanced weapon that exhausts organic targets, weakening them until they collapse.
+
 ent-WeaponTaser-name = taser
 ent-WeaponTaser-desc = A low-capacity, energy-based stun gun used by security teams to subdue targets at range.
+
 ent-WeaponAntiqueLaser-name = antique laser pistol
 ent-WeaponAntiqueLaser-desc = This is an antique laser pistol. All craftsmanship is of the highest quality. It is decorated with a mahogany grip and chrome filigree. The object menaces with spikes of energy. On the item is an image of a captain and a clown. The clown is dead. The captain is striking a heroic pose.
+
 ent-WeaponAdvancedLaser-name = advanced laser pistol
 ent-WeaponAdvancedLaser-desc = An experimental high-energy laser pistol with a self-charging nuclear battery.
+
 ent-WeaponPistolCHIMP-name = C.H.I.M.P. handcannon
 ent-WeaponPistolCHIMP-desc = Just because it's a little C.H.I.M.P. doesn't mean it can't punch like an A.P.E.
+
 ent-WeaponPistolCHIMPUpgraded-name = experimental C.H.I.M.P. handcannon
 ent-WeaponPistolCHIMPUpgraded-desc = This C.H.I.M.P. seems to have a greater punch than usual...
+
 ent-WeaponBehonkerLaser-name = eye of a behonker
 ent-WeaponBehonkerLaser-desc = The eye of a behonker, it fires a laser when squeezed.
+
 ent-WeaponEnergyShotgun-name = energy shotgun
 ent-WeaponEnergyShotgun-desc = A one-of-a-kind prototype energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon.
+
 ent-WeaponTemperatureGun-name = temperature gun
 ent-WeaponTemperatureGun-desc = An advanced gun that shoots body-temperature-changing beams. This probably constitutes as some kind of war crime.
+
 ent-XenoborgLaserGun-name = xenoborg laser gun
+
 ent-XenoborgHeavyLaserGun-name = xenoborg heavy laser gun
+
+ent-BaseWeaponBattery-name = item
+
+ent-BaseWeaponPowerCell-name = item
+
+ent-BaseWeaponBatterySmall-name = item
+
+ent-BaseWeaponPowerCellSmall-name = item
+

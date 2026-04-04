@@ -1,32 +1,68 @@
-ent-RMCAreaBerkleyPress = Корреспондент
-ent-RMCAreaBerkleySynthetic = Синтетическое хранилище
-ent-RMCAreaBerkleyLifeboat = Стыковка спасательной шлюпки
-ent-RMCAreaBerkleyBriefing = Брифинг
-ent-RMCAreaBerkleySEA = Офис СЭО
-ent-RMCAreaBerkleyCorridor = Мидель Коридор
-ent-RMCAreaBerkleyPumpPortQuarter = Портовый четвертьнасос
-ent-RMCAreaBerkleyPumpPortBow = Порт-носовой насос
-ent-RMCAreaBerkleyPumpStarboardQuarter = Четверть насоса правого борта
-ent-RMCAreaBerkleyPumpStarboardBow = Носовой насос правого борта
-ent-RMCAreaBerkleyEngineering = Инженерное дело
-ent-RMCAreaBerkleyDelta = Подготовка Дельты
-ent-RMCAreaBerkleyCharlie = Подготовка Чарли
-ent-RMCAreaBerkleyCharlieDelta = Чарли-Дельта Подготовка
-ent-RMCAreaBerkleyBravo = Браво Подготовка
-ent-RMCAreaBerkleyAlpha = Альфа-подготовка
-ent-RMCAreaBerkleyAlphaBravo = Альфа-Браво Подготовка
-ent-RMCAreaBerkleyCanteen = Столовая
-ent-RMCAreaBerkleyPilotsRoom = Комната пилотов
-ent-RMCAreaBerkleyHangarStarboard = Ангар по правому борту
-ent-RMCAreaBerkleyHangarPort = Ангар Порт
-ent-RMCAreaBerkleyRequisitions = Реквизиты
-ent-RMCAreaBerkleyMedicalResearch = Исследовать
-ent-RMCAreaBerkleyMedical = Медицинский
-ent-RMCAreaBerkleyIO = офис ИО
-ent-RMCAreaBerkleyCryo = Командный крио
-ent-RMCAreaBerkleyCICingOfficer = Командир Банкс
-ent-RMCAreaBerkleyLiaison = Офис связи
-ent-RMCAreaBerkleyCIC = Боевой информационный центр
-ent-RMCAreaBerkleyPointDefense = Точечная защита
-ent-RMCAreaBerkleyBrigOB = Орбитальная пушечная комната
-ent-RMCAreaBerkleyBrig = Бриг
+ent-RMCAreaBerkleyPress-name = Correspondent
+
+ent-RMCAreaBerkleySynthetic-name = Synthetic Storage
+
+ent-RMCAreaBerkleyLifeboat-name = Lifeboat Docking
+
+ent-RMCAreaBerkleyBriefing-name = Briefing
+
+ent-RMCAreaBerkleySEA-name = SEA Office
+
+ent-RMCAreaBerkleyCorridor-name = Amidship Corridor
+
+ent-RMCAreaBerkleyPumpPortQuarter-name = Port Quarter Pump
+
+ent-RMCAreaBerkleyPumpPortBow-name = Port Bow Pump
+
+ent-RMCAreaBerkleyPumpStarboardQuarter-name = Starboard Quarter Pump
+
+ent-RMCAreaBerkleyPumpStarboardBow-name = Starboard Bow Pump
+
+ent-RMCAreaBerkleyEngineering-name = Engineering
+
+ent-RMCAreaBerkleyDelta-name = Delta Preparation
+
+ent-RMCAreaBerkleyCharlie-name = Charlie Preparation
+
+ent-RMCAreaBerkleyCharlieDelta-name = Charlie-Delta Preparation
+
+ent-RMCAreaBerkleyBravo-name = Bravo Preparation
+
+ent-RMCAreaBerkleyAlpha-name = Alpha Preparation
+
+ent-RMCAreaBerkleyAlphaBravo-name = Alpha-Bravo Preparation
+
+ent-RMCAreaBerkleyCanteen-name = Canteen
+
+ent-RMCAreaBerkleyPilotsRoom-name = Pilots Room
+
+ent-RMCAreaBerkleyHangarStarboard-name = Hangar Starboard
+
+ent-RMCAreaBerkleyHangarPort-name = Hangar Port
+
+ent-RMCAreaBerkleyRequisitions-name = Requisitions
+
+ent-RMCAreaBerkleyMedicalResearch-name = Research
+
+ent-RMCAreaBerkleyMedical-name = Medical
+
+ent-RMCAreaBerkleyIO-name = IO office
+
+ent-RMCAreaBerkleyCryo-name = Command Cryo
+
+ent-RMCAreaBerkleyCICingOfficer-name = Commanding Officer Bunks
+
+ent-RMCAreaBerkleyLiaison-name = Liaison Office
+
+ent-RMCAreaBerkleyCIC-name = Combat Information Center
+
+ent-RMCAreaBerkleyPointDefense-name = Point Defense
+
+ent-RMCAreaBerkleyBrigOB-name = Orbital Cannon Room
+
+ent-RMCAreaBerkleyBrig-name = Brig
+
+ent-RMCAreaBerkley-name = area
+
+ent-RMCAreaBerkleyPumpBase-name = area
+

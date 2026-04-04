@@ -14,12 +14,10 @@ rmc-loadout-group-foods-packaged = Еда (сухпай)
 rmc-loadout-group-foods-healthy = Еда (рацион)
 rmc-loadout-group-role-specific = Спецоснащение
 rmc-loadout-group-pins = Значки
-
 rmc-loadout-group-role-specific-ID = Командир (жетон)
 rmc-loadout-group-synthetic-uniform = Униформа синтетиков
 rmc-loadout-group-synthetic-glasses = Очки синтетиков
 rmc-loadout-group-synthetic-shoes = Обувь синтетиков
 rmc-loadout-group-synthetic-headwear = Головные уборы синтетиков
 rmc-loadout-group-synthetic-suits = Верхняя одежда синтетиков
-
 loadout-group-points-insufficient = Недостаточно очков!

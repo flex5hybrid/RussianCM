@@ -1,8 +1,6 @@
 parse-minutes-fail = Не удалось спарсить '{ $minutes }' как минуты
 parse-session-fail = Не найдена сессия для '{ $username }'
-
 ## Role Timer Commands
-
 # - playtime_addoverall
 cmd-playtime_addoverall-desc = Добавляет указанное число минут к общему игровому времени игрока
 cmd-playtime_addoverall-help = Использование: { $command } <user name> <minutes>
@@ -40,9 +38,7 @@ cmd-playtime_save-help = Использование: { $command } <user name>
 cmd-playtime_save-succeed = Игровое время { $username } сохранено
 cmd-playtime_save-arg-user = <user name>
 cmd-playtime_save-error-args = Ожидается ровно один аргумент
-
 ## 'playtime_flush' command'
-
 cmd-playtime_flush-desc = Записывает активные трекеры в хранение отслеживании игрового времени.
 cmd-playtime_flush-help =
     Использование: { $command } [user name]

@@ -1,1 +1,2 @@
-ent-RMCRandomVendor = генератор случайных продавцов еды
+ent-RMCRandomVendor-name = random food vendor spawner
+

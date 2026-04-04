@@ -1,18 +1,36 @@
-ent-RMCAreaMax = Макс
-ent-RMCAreaResin = смола
-ent-RMCAreaReinforcedMetal = армированный металл
-ent-RMCAreaDeepUndergroundMetal = глубокий подземный металл
-ent-RMCAreaDeepUnderground = глубоко под землей
-ent-RMCAreaProtectionFour = защита 4
-ent-RMCAreaUndergroundMetalBlockCAS = подземный металлический блок КАС
-ent-RMCAreaUndergroundBlockCAS = подземный блок КАС
-ent-RMCAreaProtectionThree = защита 3
-ent-RMCAreaUndergroundMetalAllowCAS = подземное металлическое разрешение cas
-ent-RMCAreaUndergroundAllowCAS = подземное разрешение cas
-ent-RMCAreaProtectionTwo = защита 2
-ent-RMCAreaProtectionMetal = металл
-ent-RMCAreaProtectionOne = защита 1
-ent-RMCAreaGlass = стекло
-ent-RMCAreaNone = никто
-ent-RMCAreaProtectionZero = защита 0
-ent-RMCAreaBase = область
+ent-RMCAreaMax-name = max
+
+ent-RMCAreaResin-name = resin
+
+ent-RMCAreaReinforcedMetal-name = reinforced metal
+
+ent-RMCAreaDeepUndergroundMetal-name = deep underground metal
+
+ent-RMCAreaDeepUnderground-name = deep underground
+
+ent-RMCAreaProtectionFour-name = protection 4
+
+ent-RMCAreaUndergroundMetalBlockCAS-name = underground metal block cas
+
+ent-RMCAreaUndergroundBlockCAS-name = underground block cas
+
+ent-RMCAreaProtectionThree-name = protection 3
+
+ent-RMCAreaUndergroundMetalAllowCAS-name = underground metal allow cas
+
+ent-RMCAreaUndergroundAllowCAS-name = underground allow cas
+
+ent-RMCAreaProtectionTwo-name = protection 2
+
+ent-RMCAreaProtectionMetal-name = metal
+
+ent-RMCAreaProtectionOne-name = protection 1
+
+ent-RMCAreaGlass-name = glass
+
+ent-RMCAreaNone-name = none
+
+ent-RMCAreaProtectionZero-name = protection 0
+
+ent-RMCAreaBase-name = area
+

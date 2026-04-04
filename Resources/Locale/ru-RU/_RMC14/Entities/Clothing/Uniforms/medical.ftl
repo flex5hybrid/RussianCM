@@ -1,20 +1,33 @@
-ent-RMCScrubsGrey = серые медицинские скрабы
-  .desc = Он изготовлен из специального волокна, обеспечивающего незначительную защиту от биологических опасностей. 
-ent-RMCScrubsOlive = оливковые лечебные скрабы
-  .desc = Он изготовлен из специального волокна, обеспечивающего незначительную защиту от биологических опасностей. 
-ent-RMCScrubsLightBlue = светло-голубые медицинские скрабы
-  .desc = Он изготовлен из специального волокна, обеспечивающего незначительную защиту от биологических опасностей. 
-ent-CMScrubsOrange = Медицинские скрабы апельсинового цвета
-  .desc = Он изготовлен из специального волокна, обеспечивающего незначительную защиту от биологических опасностей. 
-ent-CMScrubsPurple = фиолетовые медицинские скрабы
-  .desc = Он изготовлен из специального волокна, обеспечивающего незначительную защиту от биологических опасностей. 
-ent-CMScrubsGreen = зеленые медицинские скрабы
-  .desc = Он изготовлен из специального волокна, обеспечивающего незначительную защиту от биологических опасностей. 
-ent-CMScrubsBlue = синие медицинские скрабы
-  .desc = Они изготовлены из специального волокна, обеспечивающего незначительную защиту от биологических опасностей. 
-ent-CMJumpsuitRD = униформа директора по исследованиям
-  .desc = Он изготовлен из специального волокна, обеспечивающего незначительную защиту от биологических опасностей. 
-ent-CMJumpsuitResearch = одежда исследователя
-  .desc = Простой комплект гражданской одежды, которую носят исследователи.
-ent-CMJumpsuitCMO = комбинезон главного врача
-  .desc = Это комбинезон, который носят те, у кого есть опыт работы на должности главного врача. 
+ent-RMCScrubsGrey-name = grey medical scrubs
+ent-RMCScrubsGrey-desc = It's made of a special fiber that provides minor protection against biohazards. This one is in mundane grey.
+
+ent-RMCScrubsOlive-name = olive medical scrubs
+ent-RMCScrubsOlive-desc = It's made of a special fiber that provides minor protection against biohazards. This one is in olive green.
+
+ent-RMCScrubsLightBlue-name = light blue medical scrubs
+ent-RMCScrubsLightBlue-desc = It's made of a special fiber that provides minor protection against biohazards. This one is in light blue.
+
+ent-CMScrubsOrange-name = orange medical scrubs
+ent-CMScrubsOrange-desc = It's made of a special fiber that provides minor protection against biohazards. This one is in prisoner orange.
+
+ent-CMScrubsPurple-name = purple medical scrubs
+ent-CMScrubsPurple-desc = It's made of a special fiber that provides minor protection against biohazards. This one is in purple.
+
+ent-CMScrubsGreen-name = green medical scrubs
+ent-CMScrubsGreen-desc = It's made of a special fiber that provides minor protection against biohazards. This one is in dark green.
+
+ent-CMScrubsBlue-name = blue medical scrubs
+ent-CMScrubsBlue-desc = They're made of a special fiber that provides minor protection against biohazards. These are in blue.
+
+ent-CMJumpsuitRD-name = research director's uniform
+ent-CMJumpsuitRD-desc = It's made of a special fiber that provides minor protection against biohazards. It has markings that denote the wearer is a Research Director.
+
+ent-CMJumpsuitResearch-name = reseacher clothes
+ent-CMJumpsuitResearch-desc = A simple set of civilian clothes worn by researchers.
+
+ent-CMJumpsuitCMO-name = chief medical officer's jumpsuit
+ent-CMJumpsuitCMO-desc = It's a jumpsuit worn by those with the experience to be Chief Medical Officer. It provides minor biological protection.
+
+ent-RMCScrubsLightBlueArmband-name = light blue medical scrubs
+ent-RMCScrubsLightBlueArmband-desc = It's made of a special fiber that provides minor protection against biohazards. This one is in light blue.
+

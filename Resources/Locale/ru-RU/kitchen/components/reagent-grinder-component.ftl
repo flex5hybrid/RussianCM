@@ -1,5 +1,4 @@
 ## UI
-
 reagent-grinder-bound-user-interface-instant-button = МГНОВЕННО
 reagent-grinder-bound-user-interface-cook-time-label = ВРЕМЯ:
 reagent-grinder-component-cannot-put-entity-message = Вы не можете поместить это в измельчитель реагентов!

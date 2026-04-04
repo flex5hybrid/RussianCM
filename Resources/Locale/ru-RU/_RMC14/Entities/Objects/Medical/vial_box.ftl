@@ -1,2 +1,4 @@
-ent-RMCVialBox = коробка для хранения пробирок
-  .desc = Место для хранения ваших хрупких пробирок, когда вы их не используете.
+ent-RMCVialBox-name = storage item
+
+ent-RMCVialBoxFull-name = storage item
+

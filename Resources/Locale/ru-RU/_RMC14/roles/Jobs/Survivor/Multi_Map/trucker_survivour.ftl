@@ -1,3 +1,7 @@
-ent-RMCRandomHumanoidSurvivorTrucker = роль призрака-дальнобойщика-колониста
-ent-RMCSurvivorPresetTrucker = пресет дальнобойщика-колониста
-ent-RMCSpawnPointSurvivorTrucker = точка возрождения выжившего дальнобойщика
+ent-RMCRandomHumanoidSurvivorTrucker-name = trucker colonist ghost role
+
+ent-RMCSurvivorPresetTrucker-name = trucker colonist preset
+
+ent-RMCSpawnPointSurvivorTrucker-name = survivor trucker spawn point
+ent-RMCSpawnPointSurvivorTrucker-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

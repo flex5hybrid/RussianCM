@@ -1,1 +1,2 @@
-ent-RMCSpawnerCorpseFORECONSpotter = Создатель трупов - Разведывательный корректировщик UNMC
+ent-RMCSpawnerCorpseFORECONSpotter-name = Corpse Spawner - UNMC Reconnaissance Spotter
+

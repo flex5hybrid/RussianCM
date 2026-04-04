@@ -1,2 +1,3 @@
-ent-RMCIDCardUNMCResponder = Удостоверение офицера связи UNMC
-  .desc = Выдано факсимильным операторам Регионального командования UNMC.
+ent-RMCIDCardUNMCResponder-name = UNMC Communications Officer ID card
+ent-RMCIDCardUNMCResponder-desc = Issued to the fax operators of UNMC Regional Command.
+

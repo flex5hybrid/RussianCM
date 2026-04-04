@@ -1,53 +1,81 @@
+ent-FoodMealBase-name = item
 ent-FoodMealBase-desc = A delicious meal, cooked with love.
+
 ent-FoodMealPotatoLoaded-name = loaded baked potato
 ent-FoodMealPotatoLoaded-desc = Totally baked.
+
 ent-FoodMealFries-name = space fries
 ent-FoodMealFries-desc = AKA, French Fries, Freedom Fries, etc.
+
 ent-FoodMealFriesCheesy-name = cheesy fries
 ent-FoodMealFriesCheesy-desc = Fries. Covered in cheese. Duh.
+
 ent-FoodMealFriesCarrot-name = carrot fries
 ent-FoodMealFriesCarrot-desc = Tasty fries from fresh carrots.
+
 ent-FoodMealNachos-name = nachos
 ent-FoodMealNachos-desc = Chips from Space Mexico.
+
 ent-FoodMealNachosCheesy-name = cheesy nachos
 ent-FoodMealNachosCheesy-desc = The delicious combination of nachos and melting cheese.
+
 ent-FoodMealNachosCuban-name = Cuban nachos
 ent-FoodMealNachosCuban-desc = That's some dangerously spicy nachos.
+
 ent-FoodMealMint-name = mint
 ent-FoodMealMint-desc = It's wafer thin.
+
 ent-FoodMealEggplantParm-name = eggplant parmigiana
 ent-FoodMealEggplantParm-desc = The only good recipe for eggplant.
+
 ent-FoodMealPotatoYaki-name = yaki imo
 ent-FoodMealPotatoYaki-desc = Made with roasted sweet potatoes!
+
 ent-FoodMealCubancarp-name = Cuban carp
 ent-FoodMealCubancarp-desc = A grifftastic sandwich that burns your tongue and then leaves it numb!
+
 ent-FoodMealCornedbeef-name = corned beef and cabbage
 ent-FoodMealCornedbeef-desc = Now you can feel like a real tourist vacationing in Ireland.
+
 ent-FoodMealBearsteak-name = filet migrawr
 ent-FoodMealBearsteak-desc = Because eating bear wasn't manly enough.
+
 ent-FoodMealPigblanket-name = pig in a blanket
 ent-FoodMealPigblanket-desc = A tiny sausage wrapped in a flakey, buttery roll. Free this pig from its blanket prison by eating it.
+
 ent-FoodMealRibs-name = bbq ribs
 ent-FoodMealRibs-desc = BBQ ribs, slathered in a healthy coating of BBQ sauce. The least vegan thing to ever exist.
+
 ent-FoodMealEggsbenedict-name = eggs benedict
 ent-FoodMealEggsbenedict-desc = There is only one egg on this, how rude.
+
 ent-FoodMealOmelette-name = cheese omelette
 ent-FoodMealOmelette-desc = Cheesy.
+
 ent-FoodMealFriedegg-name = fried egg
 ent-FoodMealFriedegg-desc = A fried egg, with a touch of salt and pepper.
+
 ent-FoodMealMilkape-name = milk ape
 ent-FoodMealMilkape-desc = The king of Jungle Thick.
+
 ent-FoodMealMemoryleek-name = memory leek
 ent-FoodMealMemoryleek-desc = This should refresh your memory.
+
 ent-DisgustingSweptSoup-name = salty sweet miso cola soup
 ent-DisgustingSweptSoup-desc = Jesus christ.
+
 ent-FoodMealQueso-name = queso
 ent-FoodMealQueso-desc = A classic dipping sauce that you can't go wrong with.
+
 ent-FoodMealSashimi-name = sashimi
 ent-FoodMealSashimi-desc = Its taste can only be described as "Exotic". The poisoning though? That's pretty common.
+
 ent-FoodMealEnchiladas-name = enchiladas
 ent-FoodMealEnchiladas-desc = Viva La Mexico!
+
 ent-FoodSaladWatermelonFruitBowl-name = melon fruit bowl
 ent-FoodSaladWatermelonFruitBowl-desc = The only salad where you can eat the bowl.
+
 ent-FoodMealCornInButter-name = corn in butter
 ent-FoodMealCornInButter-desc = Buttery.
+

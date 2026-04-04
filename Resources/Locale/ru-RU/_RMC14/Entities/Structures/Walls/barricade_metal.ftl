@@ -1,14 +1,18 @@
-ent-CMBarricadeMetalDoor = складная металлическая баррикада
-  .desc = Складная металлическая баррикада слабее нескладного аналога. 
-ent-RMCBarricadeHybrisaPlasticRoadBarrier = пластиковый дорожный барьер
-ent-RMCBarricadeHandrail = поручень
-  .desc = Перила для ваших рук. 
-ent-CMBarricadeTurnstileMed = турникет
-  .desc = Перила, препятствующие выходу морских пехотинцев за линию. 
-ent-CMBarricadeTurnstile = турникет
-  .desc = Перила, препятствующие выходу морских пехотинцев за линию.
-ent-CMBarricadeMetal = металлическая баррикада
-  .desc = Прочная и легко собираемая баррикада из металлических пластин, часто используемая для быстрых укреплений. 
-ent-RMCBruteUpgrade = усиленное улучшение (+Brute)
-ent-RMCBiohazardUpgrade = улучшение биологической опасности (+Сжечь)
-ent-RMCExplosiveUpgrade = составное улучшение (++Взрывчатка, ++Снаряд, ++Огонь)
+ent-CMBarricadeMetalDoor-name = складная металлическая баррикада
+
+ent-RMCBarricadeHybrisaPlasticRoadBarrier-name = пластиковый дорожный барьер
+
+ent-RMCBarricadeHandrail-name = поручень
+
+ent-CMBarricadeTurnstileMed-name = турникет
+
+ent-CMBarricadeTurnstile-name = турникет
+
+ent-CMBarricadeMetal-name = металлическая баррикада
+
+ent-RMCBruteUpgrade-name = усиленное улучшение (+Brute)
+
+ent-RMCBiohazardUpgrade-name = улучшение биологической опасности (+Сжечь)
+
+ent-RMCExplosiveUpgrade-name = составное улучшение (++Взрывчатка, ++Снаряд, ++Огонь)
+

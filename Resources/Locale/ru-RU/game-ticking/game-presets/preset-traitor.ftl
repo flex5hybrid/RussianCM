@@ -1,5 +1,4 @@
 ## Traitor
-
 # Shown at the end of a round of Traitor
 traitor-round-end-agent-name = предатель
 objective-issuer-syndicate = [color=crimson]Синдикат[/color]
@@ -9,17 +8,13 @@ traitor-title = Предатели
 traitor-description = Среди нас есть предатели...
 traitor-not-enough-ready-players = Недостаточно игроков готовы к игре! Из { $minimumPlayers } необходимых игроков готовы { $readyPlayersCount }. Нельзя запустить пресет Предатели.
 traitor-no-one-ready = Нет готовых игроков! Нельзя запустить пресет Предатели.
-
 ## TraitorDeathMatch
-
 traitor-death-match-title = Бой насмерть предателей
 traitor-death-match-description = Все — предатели. Все хотят смерти друг друга.
 traitor-death-match-station-is-too-unsafe-announcement = На станции слишком опасно, чтобы продолжать. У вас есть одна минута.
 traitor-death-match-end-round-description-first-line = КПК были восстановлены...
 traitor-death-match-end-round-description-entry = КПК { $originalName }, с { $tcBalance } ТК
-
 ## TraitorRole
-
 # TraitorRole
 traitor-role-greeting =
     Вы - агент организации { $corporation } на задании [color = darkred]Синдиката.[/color].

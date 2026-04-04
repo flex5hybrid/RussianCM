@@ -1,10 +1,21 @@
 ent-ClothingShoesBootsMagBase-name = magboots
 ent-ClothingShoesBootsMagBase-desc = Magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
+
 ent-ClothingShoesBootsMagAdv-name = advanced magboots
 ent-ClothingShoesBootsMagAdv-desc = State-of-the-art magnetic boots that do not slow down their wearer.
+
 ent-ClothingShoesBootsMagBlinding-name = magboots of blinding speed
 ent-ClothingShoesBootsMagBlinding-desc = These would look fetching on a fetcher like you.
+
 ent-ClothingShoesBootsMagSyndie-name = blood-red magboots
 ent-ClothingShoesBootsMagSyndie-desc = Reverse-engineered magnetic boots that have a heavy magnetic pull and integrated thrusters. It can hold 0.75 L of gas.
+
 ent-ActionToggleMagboots-name = Toggle Magboots
 ent-ActionToggleMagboots-desc = Toggles the magboots on and off.
+
+ent-ClothingShoesBootsMag-name = magboots
+ent-ClothingShoesBootsMag-desc = Magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
+
+ent-ClothingShoesBootsMagSci-name = magboots
+ent-ClothingShoesBootsMagSci-desc = Magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
+

@@ -1,35 +1,50 @@
-ent-RMCActionAimedShot = Прицельный выстрел
-  .desc = В режиме боя наведите курсор на цель и нажмите кнопку уникального действия, чтобы начать прицеливание
-ent-RMCActionToggleLaser = Вкл/выкл лазер
-  .desc = Включает или выключает лазер.
-ent-RMCActionSpotTarget = Обозначить цель
-  .desc = Наведите курсор на цель и нажмите unique action key...
-ent-RMCActionCycleVisor = Переключить визор шлема
-  .desc = Переключает активный визор.
-ent-RMCActionToggleWeldingGoggles = Надеть/снять сварочные очки
-  .desc = Меняет положение сварочных очков на голове.
-ent-RMCActionToggleSechud = Переключить СБ HUD
-  .desc = Переключает оптическую матрицу HUD службы безопасности.
-ent-RMCActionToggleMedhud = Переключить мед. HUD
-  .desc = Переключает оптическую матрицу медицинского HUD.
-ent-RMCActionTelephone = Использовать телефон
-  .desc = Используется для вызова другого телефона.
-ent-RMCActionWhistle = Свисток
-  .desc = Подуть в свисток.
-ent-CMActionToggleAttachable = Активировать
-  .desc = Переключить навесной модуль. Если вы это видите, кто-то забыл properly.
-ent-RMCActionToggleIFF = Переключить IFF
-  .desc = Переключает IFF оружия.
-ent-RMCActionToggleIDLock = Переключить ID замок
-  .desc = Переключить ID замок на оружии, позволяя кому угодно использовать её.
-ent-CMActionToggleScoutVision = Переключить M42 ПНВ скаута
-  .desc = Позволяет видеть даже в полной темноте.
-ent-RMCActionCycleZoomLevel = Переключить степень приближения
-  .desc = Измените степень приближения вашей оптики.
-ent-CMActionToggleScope = Переключить оптику
-  .desc = Приближайте или отдаляйте при помощи оптики.
-ent-CMActionToggleAttachable-desc = Toggle an attachable. If you're seeing this, someone forgot to set the description properly.
+ent-RMCActionAimedShot-name = Aimed Shot
+ent-RMCActionAimedShot-desc = While in combat mode and hovering your mouse over a target, press the unique action key to begin aiming.
+
+ent-RMCActionToggleLaser-name = Toggle Laser
+ent-RMCActionToggleLaser-desc = Toggles your laser on or off
+
+ent-RMCActionSpotTarget-name = Spot Target
+ent-RMCActionSpotTarget-desc = Hover your mouse over a target and press the unique action key to start spotting.
+
+ent-RMCActionCycleVisor-name = Cycle helmet HUD
+ent-RMCActionCycleVisor-desc = Cycles the currently active visor.
+
+ent-RMCActionToggleWeldingGoggles-name = Toggle the welding goggles
+ent-RMCActionToggleWeldingGoggles-desc = Change the positions of the welding goggles on your forehead.
+
+ent-RMCActionToggleSechud-name = Toggle Security HUD
+ent-RMCActionToggleSechud-desc = Toggle the optical matrix of the security HUD.
+
+ent-RMCActionToggleMedhud-name = Переключить медицинский HUD
+ent-RMCActionToggleMedhud-desc = Toggle the optical matrix of the medical HUD.
+
+ent-RMCActionTelephone-name = Use Phone
+ent-RMCActionTelephone-desc = Используется, чтобы позвонить на другой телефон.
+
 ent-RMCActionWhistle-name = Свистнуть
 ent-RMCActionWhistle-desc = Дунуть в свисток.
-ent-RMCActionTelephone-desc = Используется, чтобы позвонить на другой телефон.
-ent-RMCActionToggleMedhud-name = Переключить медицинский HUD
+
+ent-CMActionToggleAttachable-name = Toggle Attachable
+ent-CMActionToggleAttachable-desc = Toggle an attachable. If you're seeing this, someone forgot to set the description properly.
+
+ent-RMCActionToggleIFF-name = Toggle IFF
+ent-RMCActionToggleIFF-desc = Toggles the IFF on the gun.
+
+ent-RMCActionToggleIDLock-name = Toggle ID lock
+ent-RMCActionToggleIDLock-desc = Toggles the ID lock on the gun, allowing anyone to use it.
+
+ent-CMActionToggleScoutVision-name = Toggle the M42 scout sight
+ent-CMActionToggleScoutVision-desc = Allows you to see even in complete darkness.
+
+ent-RMCActionCycleZoomLevel-name = Переключить степень приближения
+
+ent-CMActionToggleScope-name = Toggle Optics
+ent-CMActionToggleScope-desc = Scope in or out with your optics.
+
+ent-RMCActionBroiler-name = Switch Tank
+ent-RMCActionBroiler-desc = Switch to a different fuel tank.
+
+ent-RMCActionDismount-name = Dismount
+ent-RMCActionDismount-desc = Stop using the weapon
+

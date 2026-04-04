@@ -1,2 +1,3 @@
-ent-CMDisposalUnit = установка утилизации
-  .desc = Пневматическая установка для утилизации отходов.
+ent-CMDisposalUnit-name = disposal unit
+ent-CMDisposalUnit-desc = A pneumatic waste disposal unit.
+

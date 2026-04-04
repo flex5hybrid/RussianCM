@@ -1,2 +1,3 @@
-ent-WeaponLauncherM83 = гранатомёт M83
-  .desc = Тяжёлый 6-зарядный гранатомёт, используемый КМП для контроля территории и создания больших взрывов.
+ent-WeaponLauncherM83-name = M83 grenade launcher
+ent-WeaponLauncherM83-desc = A heavy, 6-shot grenade launcher used by the UNMC for area denial and big explosions.
+

@@ -1,12 +1,35 @@
-ent-RMCStraightRazor = опасная бритва
-  .desc = Любимое оружие коменданта против морпехов, осмелившихся нарушить стандарты ухода за внешностью.
-ent-RMCM2100Machete = мачете M2100 «Нгахье»
-  .desc = Более старая модель мачете КМП, так и не вышедшая из стадии испытаний. Разработана в Центральноафриканской Республике. Зазубрины затрудняли чистку, и поэтому КМП отказалась принимать его на вооружение — несмотря на превосходную ударную мощь.
-ent-RMCCeremonialSword = церемониальная сабля
-  .desc = Изящная церемониальная сабля, передаваемая из поколения в поколение. Несмотря на это, за ней очень хорошо ухаживали, и она находится в отличном состоянии.
-ent-CMM2132Machete = мачете M2132
-  .desc = Последняя модель мачете морской пехоты.
-ent-CMM11Knife = метательный нож M11
-  .desc = Армейский нож, предназначенный для метания во врага.
-ent-RMCM5Bayonet = штык-нож M5 «Ночной рейдер»
-  .desc = Штатный штык-нож морской пехоты. Этот нож можно засунуть в голенище сапога или прикрепить на конец винтовки.
+ent-RMCStraightRazor-name = straight razor
+ent-RMCStraightRazor-desc = The commandant's favorite weapon against marines who dare break the grooming standards.
+
+ent-RMCM2100Machete-name = M2132 machete
+ent-RMCM2100Machete-desc = Latest issue of the Marine Machete.
+
+ent-RMCCeremonialSword-name = M2132 machete
+ent-RMCCeremonialSword-desc = Latest issue of the Marine Machete.
+
+ent-CMM2132Machete-name = M2132 machete
+ent-CMM2132Machete-desc = Latest issue of the Marine Machete.
+
+ent-CMM11Knife-name = M11 throwing knife
+ent-CMM11Knife-desc = A military knife designed to be thrown at the enemy.
+
+ent-RMCM5Bayonet-name = штык-нож M5 «Ночной рейдер»
+
+ent-RMCCombatUtilityKnifeA-name = 'Druzhina' combat utility knife
+ent-RMCCombatUtilityKnifeA-desc = A heavy combat knife, designed for SPP special forces. Its heft and durability makes it popular for various uses in the field.
+
+ent-RMCCombatUtilityKnifeB-name = 'Druzhina' combat utility knife
+ent-RMCCombatUtilityKnifeB-desc = A heavy combat knife, designed for SPP special forces. Its heft and durability makes it popular for various uses in the field.
+
+ent-RMCTantoA-name = MK3 infantry service tanto
+ent-RMCTantoA-desc = Forged for the elite forces of the Royal Crown Marines, the sleek, tempered construction of this blade has been lauded by its wielders.
+
+ent-RMCTantoB-name = MK3 infantry service tanto
+ent-RMCTantoB-desc = Forged for the elite forces of the Royal Crown Marines, the sleek, tempered construction of this blade has been lauded by its wielders.
+
+ent-RMCSawtoothDaggerA-name = Fiore-pattern trench dagger
+ent-RMCSawtoothDaggerA-desc = This thin, yet rigid dagger is favored for its combination of elegant features and lethality in hand-to-hand combat.
+
+ent-RMCSawtoothDaggerB-name = Fiore-pattern trench dagger
+ent-RMCSawtoothDaggerB-desc = This thin, yet rigid dagger is favored for its combination of elegant features and lethality in hand-to-hand combat.
+

@@ -24,8 +24,6 @@ ui-vote-abuse-warning =
     Внимание!
     Злоупотребление голосованием за кик может привести к бессрочному бану!
 ui-vote-fluff = На основе Robust™ СЗИ-НСД
-
 ## Vote menu command
-
 ui-vote-menu-command-description = Открывает меню голосования
 ui-vote-menu-command-help-text = Использование: votemenu

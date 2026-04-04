@@ -1,8 +1,12 @@
-ent-RMCElectronicSystemAttachPoint = точка подключения электронной системы
-  .desc = Место, где можно установить тяжелое оборудование с помощью погрузчика.
-ent-RMCEngineAttachmentPoint = точка крепления системы двигателя
-  .desc = Место, где можно установить тяжелое оборудование с помощью погрузчика.
-ent-RMCUtilityAttachmentPoint = точка подключения утилиты
-  .desc = Точка крепления инженерных систем
-ent-RMCDropshipDoorBlocker = дверной блокиратор челнока
-  .desc = Блокирует затягивание баррикад в десантный корабль.
+ent-RMCElectronicSystemAttachPoint-name = electronic system attach point
+ent-RMCElectronicSystemAttachPoint-desc = A place where heavy equipment can be installed with a powerloader.
+
+ent-RMCEngineAttachmentPoint-name = engine system attach point
+ent-RMCEngineAttachmentPoint-desc = A place where heavy equipment can be installed with a powerloader.
+
+ent-RMCUtilityAttachmentPoint-name = utility attach point
+ent-RMCUtilityAttachmentPoint-desc = An attachment point for utility systems
+
+ent-RMCDropshipDoorBlocker-name = dropship door blocker
+ent-RMCDropshipDoorBlocker-desc = Blocks barricades from being pulled into the dropship.
+

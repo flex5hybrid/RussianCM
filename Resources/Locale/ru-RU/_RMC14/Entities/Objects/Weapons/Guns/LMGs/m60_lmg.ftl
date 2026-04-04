@@ -1,5 +1,9 @@
-ent-RMCCartridgeLMGM60 = патрон (7.62x51)
-  .desc = Патрон 7.62x51 НАТО.
-ent-RMCMagazineLMGM60 = коробка с патронами для M60 (7.62x51 НАТО)
-ent-RMCWeaponLMGM60 = единый пулемёт M60
-  .desc = «Свинья». Мечта героя боевика. Калибр 7.62x51 НАТО.
+ent-RMCCartridgeLMGM60-name = cartridge
+
+ent-RMCMagazineLMGM60-name = item
+
+ent-RMCWeaponLMGM60-name = единый пулемёт M60
+
+ent-RMCBulletLMGM60-name = BaseBullet
+ent-RMCBulletLMGM60-desc = If you can see this you're probably dead!
+

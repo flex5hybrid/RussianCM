@@ -1,44 +1,33 @@
-
 species-name-feroxi = Ферокси
-
 marking-FeroxiEars = Уши
 marking-FeroxiEars-feroxi-ears = Основа ушей
 marking-FeroxiEars-feroxi-ears-inner = Внутренняя часть
-
 marking-FeroxiEarsTips = Уши с кончиками
 marking-FeroxiEarsTips-feroxi-ears = Основа ушей
 marking-FeroxiEarsTips-feroxi-ears-inner = Внутренняя часть
 marking-FeroxiEarsTips-feroxi-ears-tips = Кончики ушей
-
 marking-FeroxiSnout = Морда
 marking-FeroxiSnout-feroxi-snout = Основа морды
-
 marking-FeroxiSnoutStripe = Полосатая морда
 marking-FeroxiSnoutStripe-feroxi-snout = Основа морды
 marking-FeroxiSnoutStripe-feroxi-snout-stripe = Полоса
-
 marking-FeroxiSnoutCountershading = Контрастная морда
 marking-FeroxiSnoutCountershading-feroxi-snout = Основа морды
 marking-FeroxiSnoutCountershading-feroxi-snout-Countershading = Контраст
-
 marking-FeroxiSnoutCountershadingStripe = Полосатая контрастная морда
 marking-FeroxiSnoutCountershadingStripe-feroxi-snout = Основа морды
 marking-FeroxiSnoutCountershadingStripe-feroxi-snout-countershading = Контраст
 marking-FeroxiSnoutCountershadingStripe-feroxi-snout-stripe = Полоса
-
 marking-FeroxiSnoutNurse = Морда с усиками
 marking-FeroxiSnoutNurse-feroxi-snout = Основа морды
 marking-FeroxiSnoutNurse-feroxi-snout-nurse = Усики
-
 marking-FeroxiSnoutNurseCountershading = Контрастная морда с усиками
 marking-FeroxiSnoutNurseCountershading-feroxi-snout = Основа морды
 marking-FeroxiSnoutNurseCountershading-feroxi-snout-countershading = Контраст
 marking-FeroxiSnoutNurseCountershading-feroxi-snout-nurse = Усики
-
 marking-FeroxiTailAndDorsal = Хвост и спинной плавник
 marking-FeroxiTailAndDorsal-feroxi-tail = Основа хвоста
 marking-FeroxiTailAndDorsal-feroxi-dorsal = Основа плавника
-
 marking-FeroxiTailBlitz = Полосатый хвост с плавниками
 marking-FeroxiTailBlitz-feroxi-tail = Основа хвоста
 marking-FeroxiTailBlitz-feroxi-tail-stripes = Полосы хвоста
@@ -47,19 +36,14 @@ marking-FeroxiTailBlitz-feroxi-tail-bottom-tip = Нижний кончик
 marking-FeroxiTailBlitz-feroxi-tail-under = Нижняя часть
 marking-FeroxiTailBlitz-feroxi-dorsal = Основа плавника
 marking-FeroxiTailBlitz-feroxi-dorsal-stripes = Полосы плавника
-
 marking-FeroxiTorsoStripesBlitz = Полосы на предплечьях
 marking-FeroxiTorsoStripesBlitz-feroxi-torso-stripes-blitz = Полосы
-
 marking-FeroxiTorsoStripesTiger = Полное полосатое тело
 marking-FeroxiTorsoStripesTiger-feroxi-torso-stripes-tiger = Полосы
-
 marking-FeroxiTorsoCountershadingF = Контраст (жен.)
 marking-FeroxiTorsoCountershadingF-feroxi-torso-countershading-f = Контраст
-
 marking-FeroxiTorsoCountershadingM = Контраст (муж.)
 marking-FeroxiTorsoCountershadingM-feroxi-torso-countershading-m = Контраст
-
 rmc-name-feroxi-female-1 = Seliara
 rmc-name-feroxi-female-2 = Xyshka
 rmc-name-feroxi-female-3 = Трайн
@@ -109,7 +93,6 @@ rmc-name-feroxi-female-46 = Ксалит
 rmc-name-feroxi-female-47 = Врошен
 rmc-name-feroxi-female-48 = Зишар
 rmc-name-feroxi-female-49 = Дразил
-
 rmc-name-feroxi-male-1 = Карзок
 rmc-name-feroxi-male-2 = Кситар
 rmc-name-feroxi-male-3 = Равакс
@@ -159,7 +142,6 @@ rmc-name-feroxi-male-46 = Малкир
 rmc-name-feroxi-male-47 = Кортас
 rmc-name-feroxi-male-48 = Неликс
 rmc-name-feroxi-male-49 = Крешан
-
 rmc-name-feroxi-last-1 = Ваэлора
 rmc-name-feroxi-last-2 = Нишара
 rmc-name-feroxi-last-3 = Селмари

@@ -1,46 +1,71 @@
 ent-BaseFoodCondimentPacket-name = condiment packet
 ent-BaseFoodCondimentPacket-desc = A small plastic pack with condiments to put on your food.
+
 ent-FoodCondimentPacketAstrotame-name = Astrotame
 ent-FoodCondimentPacketAstrotame-desc = The sweetness of a thousand sugars but none of the calories.
+
 ent-FoodCondimentPacketBbq-name = BBQ sauce
 ent-FoodCondimentPacketBbq-desc = Hand wipes not included.
+
 ent-FoodCondimentPacketCornoil-name = corn oil
 ent-FoodCondimentPacketCornoil-desc = Corn oil. A delicious oil used in cooking. Made from corn.
+
 ent-FoodCondimentPacketColdsauce-name = coldsauce
 ent-FoodCondimentPacketColdsauce-desc = Coldsauce. Leaves the tongue numb in its passage.
+
 ent-FoodCondimentPacketHorseradish-name = horseradish sauce
 ent-FoodCondimentPacketHorseradish-desc = A packet of smelly horseradish sauce.
+
 ent-FoodCondimentPacketHotsauce-name = hotsauce
 ent-FoodCondimentPacketHotsauce-desc = You can almost TASTE the stomach ulcers now!
+
 ent-FoodCondimentPacketKetchup-name = ketchup
 ent-FoodCondimentPacketKetchup-desc = You feel more American already.
+
 ent-FoodCondimentPacketMustard-name = mustard
 ent-FoodCondimentPacketMustard-desc = A condiment made from the ground-up seeds of the Mustard plant.
+
 ent-FoodCondimentPacketPepper-name = black pepper
 ent-FoodCondimentPacketPepper-desc = Often used to flavor food or make people sneeze.
+
 ent-FoodCondimentPacketSalt-name = salt
 ent-FoodCondimentPacketSalt-desc = Salt. From space oceans, presumably.
+
 ent-FoodCondimentPacketSoy-name = soy sauce
 ent-FoodCondimentPacketSoy-desc = A salty soy-based flavoring.
+
 ent-FoodCondimentPacketSugar-name = sugar
 ent-FoodCondimentPacketSugar-desc = Tasty spacey sugar!
+
 ent-BaseFoodCondimentBottle-name = condiment bottle
 ent-BaseFoodCondimentBottle-desc = A thin glass bottle used to store condiments.
+
 ent-FoodCondimentBottleColdsauce-name = coldsauce bottle
 ent-FoodCondimentBottleColdsauce-desc = Leaves the tongue numb in its passage.
+
 ent-FoodCondimentBottleEnzyme-name = universal enzyme
 ent-FoodCondimentBottleEnzyme-desc = Used in cooking various dishes.
+
 ent-FoodCondimentBottleVinegar-name = vinegar bottle
 ent-FoodCondimentBottleVinegar-desc = Used in cooking to enhance flavor.
+
 ent-FoodCondimentBottleHotsauce-name = hotsauce bottle
 ent-FoodCondimentBottleHotsauce-desc = You can almost TASTE the stomach ulcers now!
+
 ent-FoodCondimentBottleKetchup-name = ketchup bottle
 ent-FoodCondimentBottleKetchup-desc = You feel more American already.
+
 ent-FoodCondimentBottleBBQ-name = BBQ sauce bottle
 ent-FoodCondimentBottleBBQ-desc = Hand wipes not included.
+
 ent-BaseFoodShaker-name = empty shaker
 ent-BaseFoodShaker-desc = A shaker used to store and dispense spices.
+
 ent-FoodShakerSalt-name = salt shaker
 ent-FoodShakerSalt-desc = Salt. From space oceans, presumably.
+
 ent-FoodShakerPepper-name = pepper shaker
 ent-FoodShakerPepper-desc = Often used to flavor food or make people sneeze.
+
+ent-BaseFoodCondiment-name = item
+

@@ -1,2 +1,3 @@
-ent-RMCWeaponLauncherM81 = гранатомёт M81 для подавления беспорядков
-  .desc = Гранатомёт M81 для подавления беспорядков — это однозарядный гранатомёт с переламывающимся стволом, предназначенный для использования полицией с менее смертоносными боеприпасами.
+ent-RMCWeaponLauncherM81-name = M81 Riot grenade launcher
+ent-RMCWeaponLauncherM81-desc = The M81 riot grenade launcher is a single-shot, shoulder-fired, break-action grenade launcher designed for police use with Less-lethal munitions.
+

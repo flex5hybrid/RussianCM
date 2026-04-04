@@ -1,145 +1,228 @@
 ent-WheatBushel-name = wheat bushel
 ent-WheatBushel-desc = Sigh... wheat... a-grain?
+
 ent-MeatwheatBushel-name = meatwheat bushel
 ent-MeatwheatBushel-desc = Some blood-drenched wheat stalks. You can crush them into what passes for meat if you squint hard enough.
+
 ent-OatBushel-name = oat bushel
 ent-OatBushel-desc = Eat oats, do squats.
+
 ent-Sugarcane-name = sugarcane
 ent-Sugarcane-desc = Sickly sweet.
+
 ent-Papercane-name = papercane roll
 ent-Papercane-desc = Why do we even need to grow paper?
+
 ent-FoodLaughinPeaPod-name = laughin' pea pod
 ent-FoodLaughinPeaPod-desc = The clown's favorite plant.
+
 ent-Log-name = tower-cap log
 ent-Log-desc = It's better than bad, it's good!
+
 ent-SteelLog-name = steel-cap log
 ent-SteelLog-desc = Steel doesn't grow on trees! It grows on mushrooms, of course.
+
 ent-Nettle-name = nettle
 ent-Nettle-desc = Stingy little prick.
+
 ent-DeathNettle-name = death nettle
 ent-DeathNettle-desc = This nettle's out for blood.
+
 ent-FoodBanana-name = banana
 ent-FoodBanana-desc = Rich in potassium.
+
 ent-FoodMimana-name = mimana
 ent-FoodMimana-desc = Mime's favorite.
+
 ent-TrashBananaPeel-name = banana peel
+
 ent-TrashBakedBananaPeel-name = baked banana peel
+
 ent-TrashMimanaPeel-name = mimana peel
+
 ent-TrashBananiumPeel-name = bananium peel
+
 ent-FoodCarrot-name = carrot
 ent-FoodCarrot-desc = It's good for the eyes!
+
 ent-FoodCabbage-name = cabbage
 ent-FoodCabbage-desc = Ewwwwwwwwww. Cabbage.
+
 ent-FoodGarlic-name = garlic
 ent-FoodGarlic-desc = Delicious, but with a potentially overwhelming odor.
+
 ent-FoodLemon-name = lemon
 ent-FoodLemon-desc = When life gives you lemons, be grateful they aren't limes.
+
 ent-FoodLemoon-name = lemoon
 ent-FoodLemoon-desc = People says Moon is made out of cheese, but Moon is actually made out of milk and laurel!
+
 ent-FoodLime-name = lime
 ent-FoodLime-desc = Cures Space Scurvy, allows you to act like a Space Pirate.
+
 ent-FoodOrange-name = orange
 ent-FoodOrange-desc = Healthy, very orange.
+
 ent-FoodExtradimensionalOrange-name = extradimensional orange
 ent-FoodExtradimensionalOrange-desc = You can hardly wrap your head around this thing.
+
 ent-FoodPineapple-name = pineapple
 ent-FoodPineapple-desc = Mmm, tropical.
+
 ent-FoodPotato-name = potato
 ent-FoodPotato-desc = The space Irish starved to death after their potato crops died. Sadly they were unable to fish for space carp due to it being the queen's space. Bringing this up to any space IRA member will drive them insane with anger.
+
 ent-FoodTomato-name = tomato
 ent-FoodTomato-desc = I say to-mah-to, you say tom-mae-to.
+
 ent-FoodBlueTomato-name = blue tomato
 ent-FoodBlueTomato-desc = This one is blue.
+
 ent-FoodBloodTomato-name = blood tomato
 ent-FoodBloodTomato-desc = Wait, that's not ketchup...
+
 ent-FoodEggplant-name = eggplant
 ent-FoodEggplant-desc = Maybe there's a chicken inside?
+
 ent-FoodApple-name = apple
 ent-FoodApple-desc = It's a little piece of Eden.
+
 ent-FoodGoldenApple-name = golden apple
 ent-FoodGoldenApple-desc = It should be shaped like a cube, shouldn't it?
+
 ent-FoodCocoaPod-name = cocoa pod
 ent-FoodCocoaPod-desc = You can never have too much chocolate!
+
 ent-FoodCorn-name = ear of corn
 ent-FoodCorn-desc = Needs some butter! And some cooking...
+
 ent-FoodCornTrash-name = corn cob
 ent-FoodCornTrash-desc = Not a dang kernel left.
+
 ent-FoodOnion-name = onion
 ent-FoodOnion-desc = Nothing to cry over.
+
 ent-FoodOnionRed-name = red onion
 ent-FoodOnionRed-desc = Purple despite the name.
+
 ent-FoodMushroom-name = chanterelle cluster
 ent-FoodMushroom-desc = Cantharellus Cibarius: These jolly yellow little shrooms sure look tasty!
+
 ent-FoodPineappleSlice-name = pineapple slice
 ent-FoodPineappleSlice-desc = Mmm, tropical.
+
 ent-FoodOnionSlice-name = onion slice
 ent-FoodOnionSlice-desc = Nothing to cry over.
+
 ent-FoodOnionRedSlice-name = red onion slice
 ent-FoodOnionRedSlice-desc = Purple despite the name.
+
 ent-FoodChiliPepper-name = chili pepper
 ent-FoodChiliPepper-desc = Spicy, best not touch your eyes.
+
 ent-FoodChillyPepper-name = chilly pepper
 ent-FoodChillyPepper-desc = Icy hot.
+
 ent-FoodAloe-name = aloe
 ent-FoodAloe-desc = A fragrant plant with soothing properties.
+
 ent-FoodPoppy-name = poppy
 ent-FoodPoppy-desc = A flower with extracts often used in the production of medicine.
+
 ent-FoodLily-name = lily
 ent-FoodLily-desc = A beautiful orange flower.
+
 ent-FoodLingzhi-name = lingzhi
 ent-FoodLingzhi-desc = A potent medicinal mushroom. Don't go overboard.
+
 ent-FoodAmbrosiaVulgaris-name = ambrosia vulgaris
 ent-FoodAmbrosiaVulgaris-desc = A medicinal plant. May make you feel a little funny.
+
 ent-FoodAmbrosiaDeus-name = ambrosia deus
 ent-FoodAmbrosiaDeus-desc = An extremely sought-after medicinal plant. May have some funky side effects.
+
 ent-FoodGalaxythistle-name = galaxythistle
 ent-FoodGalaxythistle-desc = A medicinal plant used for its antitoxin.
+
 ent-FoodGlasstle-name = glasstle
 ent-FoodGlasstle-desc = A fragile crystal plant with lot of spiky thorns.
+
 ent-FoodFlyAmanita-name = fly amanita
 ent-FoodFlyAmanita-desc = A delicious-looking mushroom like you see in those cartoons.
+
 ent-FoodGatfruit-name = gatfruit
 ent-FoodGatfruit-desc = A delicious, gun-shaped fruit with a thick wooden stem.
+
 ent-FoodRealCapfruit-name = capfruit
 ent-FoodRealCapfruit-desc = A soft but smooth gun-shaped fruit.
+
 ent-FoodFakeCapfruit-name = capfruit
+ent-FoodFakeCapfruit-desc = A soft but smooth gun-shaped fruit.
+
 ent-RiceBushel-name = rice bushel
 ent-RiceBushel-desc = Can be ground into rice, perfect for pudding or sake.
+
 ent-FoodSoybeans-name = soybeans
 ent-FoodSoybeans-desc = For those who can't stand seeing good old meat.
+
 ent-FoodSpacemansTrumpet-name = spaceman's trumpet
 ent-FoodSpacemansTrumpet-desc = A vivid flower that smells faintly of freshly cut grass. Touching the flower seems to stain the skin some time after contact, yet most other surfaces seem to be unaffected by this phenomenon.
+
 ent-FoodKoibean-name = koibean
 ent-FoodKoibean-desc = These beans seem a little bit fishy.
+
 ent-FoodWatermelon-name = watermelon
 ent-FoodWatermelon-desc = Round green object that you can slice and eat.
+
 ent-FoodWatermelonSlice-name = watermelon slice
 ent-FoodWatermelonSlice-desc = Juicy green and red slice.
+
 ent-FoodHolymelon-name = holymelon
 ent-FoodHolymelon-desc = The water within this melon has been blessed by some deity that's particularly fond of watermelon.
+
 ent-FoodHolymelonSlice-name = holymelon slice
 ent-FoodHolymelonSlice-desc = Juicy golden and red slice.
+
 ent-FoodGrape-name = grapes
 ent-FoodGrape-desc = The food of emperors, Space France inhabitants (usually as wine) and soccer moms. One day it could be used in wine production for the bartender if he ever runs out.
+
 ent-FoodBerries-name = berries
 ent-FoodBerries-desc = A handful of various types of berries.
+
 ent-FoodBungo-name = bungo fruit
 ent-FoodBungo-desc = The humble bungo fruit.
+
 ent-FoodBungoPit-name = bungo pit
+
 ent-FoodPeaPod-name = pea pod
 ent-FoodPeaPod-desc = A duck's favorite treat!
+
 ent-FoodWorldPeas-name = cluster of world peas
 ent-FoodWorldPeas-desc = It's rumored to bring peace to any who consume it.
+
 ent-FoodPumpkin-name = pumpkin
 ent-FoodPumpkin-desc = A large, orange... berry. Seriously.
+
 ent-FoodBluePumpkin-name = blue pumpkin
 ent-FoodBluePumpkin-desc = A large, blue... berry. Seriously.
+
 ent-CottonBol-name = cotton boll
 ent-CottonBol-desc = Moth people's favorite snack, and just as fluffy as them.
+
 ent-PyrottonBol-name = pyrotton boll
 ent-PyrottonBol-desc = This will probably set you on fire.
+
 ent-FoodCherry-name = cherry
 ent-FoodCherry-desc = Juicy red cherry with a pit inside.
+
 ent-TrashCherryPit-name = cherry pit
+
 ent-FoodAnomalyBerry-name = anomaly berry
 ent-FoodAnomalyBerry-desc = A strange blue fruit. Something about it doesn't seem right.
+
+ent-ProduceBase-name = item
+
+ent-FoodProduceBase-name = item
+
+ent-ProduceSliceBase-name = item
+

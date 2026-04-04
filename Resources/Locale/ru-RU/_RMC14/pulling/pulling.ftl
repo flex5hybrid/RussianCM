@@ -1,14 +1,10 @@
 cm-pull-whitelist-denied = Нам не нужен {THE($name)}, зачем нам его трогать?
 cm-pull-whitelist-denied-dead = {THE($name)} мертв, зачем нам его трогать?
-
 rmc-pull-paralyze-self = Вы пытаетесь тащить {$pulled}, получая удар хвостом по голове!
 rmc-pull-paralyze-others = {$puller} пытается тащить {$pulled}, но вместо этого получает удар хвостом по голове!
-
 rmc-pull-infect-self = Вы пытаетесь тащить {$pulled}, но вас атакуют и заражают в процессе!
 rmc-pull-infect-others = {$puller} пытается тащить {$pulled}, но его атакуют и заражают в процессе!
-
 rmc-prevent-pull-alive = Вы не можете тащить {THE($target)}, пока {SUBJECT($target)} {CONJUGATE-BE($target)} жив!
-
 rmc-pull-aggressive-self = Вы грубо схватили {$pulled}!
 rmc-pull-aggressive-others = {$puller} грубо схватил {$pulled}!
 rmc-pull-break-start-self = Вы пытаетесь вырваться из хватки {$puller}!

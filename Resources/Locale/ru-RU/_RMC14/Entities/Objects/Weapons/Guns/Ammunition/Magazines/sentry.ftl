@@ -1,10 +1,10 @@
-ent-RMCMagazineSentryFireSmoke = топливный бак огнемётной турели
-  .desc = Топливный бак со сжатым ультрагустым нафталевом топливом, используемый в турели КМП 60-FP.
-ent-RMCMagazineSentryFireBlue = топливный бак огнемётной турели
-  .desc = Топливный бак, обычно с ультрагустым нафталевом топливом, липкой горючей жидкой химической смесью, используемый в турели КМП 55-FA.
-ent-RMCMagazineSentryFire = топливный бак огнемётной турели
-  .desc = Топливный бак с ультрагустым нафталевом топливом, используемый в турели КМП 45-FM. Содержит 100 единиц топлива.
-ent-RMCMagazineSentryShotgun = барабан 12-го калибра с картечью
-  .desc = Боевой барабан на 50 патронов 12-го калибра с картечью для дробовой турели КМП 12-G. Просто вставьте его в приёмник турели, когда у неё закончатся патроны.
-ent-RMCMagazineSentry = барабан M30 (10x28мм Беспатронные)
-  .desc = Боевой барабан на 500 патронов 10x28мм беспатронных для турели КМП 571-C. Просто вставьте его в приёмник турели, когда у неё закончатся патроны.
+ent-RMCMagazineSentryFireSmoke-name = magazine (.20 rifle)
+
+ent-RMCMagazineSentryFireBlue-name = magazine (.20 rifle)
+
+ent-RMCMagazineSentryFire-name = magazine (.20 rifle)
+
+ent-RMCMagazineSentryShotgun-name = item
+
+ent-RMCMagazineSentry-name = item
+

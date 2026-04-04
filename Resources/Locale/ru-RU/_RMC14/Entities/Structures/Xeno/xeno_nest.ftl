@@ -1,2 +1,3 @@
-ent-XenoNest = инопланетное гнездо
-  .desc = Это жуткая куча толстой, липкой смолы, имеющая форму гнезда.
+ent-XenoNest-name = alien nest
+ent-XenoNest-desc = It's a gruesome pile of thick, sticky resin shaped like a nest.
+

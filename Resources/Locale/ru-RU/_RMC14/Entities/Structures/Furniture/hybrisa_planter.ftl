@@ -1,2 +1,3 @@
-ent-RMCPlanter = бетонный плантатор
-  .desc = Декоративный бетонный горшок.
+ent-RMCPlanter-name = concrete planter
+ent-RMCPlanter-desc = A decorative concrete planter.
+

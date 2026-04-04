@@ -1,2 +1,2 @@
-ent-CMXenoSpitter = Плеватель
-  .desc = Какой-то отвратительный, склизкий инопланетянин.
+ent-CMXenoSpitter-name = cm-job-name-xeno-spitter
+

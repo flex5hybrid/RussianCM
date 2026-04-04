@@ -1,4 +1,6 @@
-ent-RMCPortableVendorCorporate = автоматизированный портфель-хранилище «Вестон-Ямада»
-  .desc = Автоматизированная система хранения и выдачи размером с портфель. Предназначена для эффективного хранения и выборочной выдачи мелких предметов. На боку этого экземпляра стоит логотип «Вестон-Ямада».
-ent-RMCPortableVendor = автоматизированный портфель-хранилище
-  .desc = Автоматизированная система хранения и выдачи размером с портфель. Предназначена для эффективного хранения и выборочной выдачи мелких предметов.
+ent-RMCPortableVendorCorporate-name = Weston-Yamada automated storage briefcase
+ent-RMCPortableVendorCorporate-desc = A suitcase-sized automated storage and retrieval system. Designed to efficiently store and selectively dispense small items. This one has the Weston-Yamada logo stamped on its side.
+
+ent-RMCPortableVendor-name = automated storage briefcase
+ent-RMCPortableVendor-desc = A suitcase-sized automated storage and retrieval system. Designed to efficiently store and selectively dispense small items.
+

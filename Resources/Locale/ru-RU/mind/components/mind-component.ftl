@@ -1,9 +1,6 @@
 # MindComponent localization
-
 comp-mind-ghosting-prevented = Вы не можете стать призраком в данный момент.
-
 ## Messages displayed when a body is examined and in a certain state
-
 comp-mind-examined-catatonic = { CAPITALIZE(SUBJECT($ent)) } в кататоническом ступоре. Стрессы жизни в глубоком космосе, должно быть, оказались слишком тяжелы для { OBJECT($ent) }. Любое восстановление невозможно.
 comp-mind-examined-dead =
     { CAPITALIZE(SUBJECT($ent)) } { GENDER($ent) ->

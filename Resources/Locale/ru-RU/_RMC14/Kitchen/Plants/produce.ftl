@@ -1,11 +1,18 @@
-ent-RMCFoodMango = манго
-  .desc = МАНГО МАНГО МАНГО
-ent-FoodGrass = пучок травы
-  .desc = Давай, потрогай траву.
-ent-FoodSunflower = подсолнечник
-  .desc = Это красиво! 
-ent-FoodWhiteBeet = сахарная свекла
-  .desc = Вы не можете победить белую свеклу.
-ent-FoodPeanut = арахис
-ent-FoodMushroomPlump = пухлый-Шлем
-  .desc = Плюмус Хеллмус: Ой, ЗАТКНИ уже насчёт КРОВАВЫХ грибов! 
+ent-RMCFoodMango-name = mango
+ent-RMCFoodMango-desc = MANGO MANGO MANGO
+
+ent-FoodGrass-name = bundle of grass
+ent-FoodGrass-desc = Go ahead, touch some grass.
+
+ent-FoodSunflower-name = sunflower
+ent-FoodSunflower-desc = It's beautiful! A certain person might beat you to death if you trample these.
+
+ent-FoodWhiteBeet-name = white beet
+ent-FoodWhiteBeet-desc = You can't beat white-beet.
+
+ent-FoodPeanut-name = peanut
+ent-FoodPeanut-desc = Nuts!
+
+ent-FoodMushroomPlump-name = plump-helmet
+ent-FoodMushroomPlump-desc = Plumus Hellmus: Oh, SHUT UP about the BLOODY mushrooms already! MOVE IT, marines!
+

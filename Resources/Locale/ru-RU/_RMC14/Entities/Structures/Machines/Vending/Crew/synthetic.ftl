@@ -1,9 +1,15 @@
-ent-RMCVendorBundleCompactNailgunKit = компактный набор для гвоздя
-  .desc = В комплект входит компактный гвоздодер, два магазина и кобура для гвоздемета.
-ent-WeYaExperimentalToolsVendor = We-Ya Торговец экспериментальными инструментами
-  .desc = Небольшой поставщик подключился к специально предоставленным экспериментальным инструментам и оборудованию, предоставленным Отделом исследований и разработок We-Ya (TM). 
-ent-ColMarTechCrewSyntheticGear = Синтетическая вспомогательная зубчатая рейка ColMarTech
-  .desc = Автоматизированная зубчатая стойка, подключенная к огромному хранилищу различных медицинских и инженерных принадлежностей. 
-ent-ColMarTechCrewSyntheticColony = Стойка для синтетического оборудования ColMarTech
-ent-ColMarTechCrewSynthetic = Стойка для синтетического оборудования ColMarTech
-  .desc = Автоматизированный стеллаж, подключенный к колоссальному хранилищу различного оборудования. 
+ent-RMCVendorBundleCompactNailgunKit-name = compact nailgun kit
+ent-RMCVendorBundleCompactNailgunKit-desc = Contains a compact nailgun, two magazines and a nailgun holster.
+
+ent-WeYaExperimentalToolsVendor-name = We-Ya Experimental Tools Vendor
+ent-WeYaExperimentalToolsVendor-desc = A smaller vendor hooked up to a cache of specially provisioned, experimental tools and equipment provided by the We-Ya Research and Development Division(TM). Handle with care.
+
+ent-ColMarTechCrewSyntheticGear-name = ColMarTech Synthetic Auxiliary Gear Rack
+ent-ColMarTechCrewSyntheticGear-desc = An automated gear rack hooked up to a colossal storage of various medical and engineering supplies. Can be accessed only by synthetic units.
+
+ent-ColMarTechCrewSyntheticColony-name = ColMarTech Synthetic Equipment Rack
+ent-ColMarTechCrewSyntheticColony-desc = An automated rack hooked up to a colossal storage of various equipment. Can be accessed only by synthetic units.
+
+ent-ColMarTechCrewSynthetic-name = ColMarTech Synthetic Equipment Rack
+ent-ColMarTechCrewSynthetic-desc = An automated rack hooked up to a colossal storage of various equipment. Can be accessed only by synthetic units.
+

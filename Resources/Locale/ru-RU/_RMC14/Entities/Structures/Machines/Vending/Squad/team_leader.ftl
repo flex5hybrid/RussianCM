@@ -1,6 +1,9 @@
-ent-RMCVendorBundleCrewFireteamLeader = необходимый набор командира огневой группы
-  .desc = содержит ЛЦУ и две пачки меток КАС.
-ent-ColMarTechFLEquipment = Стойка для снаряжения командира огневой группы ColMarTech
-.desc = Автоматизированная стойка, подключенная к колоссальному хранилищу стандартного снаряжения командира огневой группы.
-ent-ColMarTechFLGear = Стойка для снаряжения командира огневой группы ColMarTech
-.desc = Автоматизированная стойка для снаряжения командиров огневых групп.
+ent-RMCVendorBundleCrewFireteamLeader-name = essential fireteam leader utilities
+ent-RMCVendorBundleCrewFireteamLeader-desc = Contains a laser designator, and two packs of signal flares.
+
+ent-ColMarTechFLEquipment-name = ColMarTech fireteam leader equipment rack
+ent-ColMarTechFLEquipment-desc = An automated rack hooked up to a colossal storage of fireteam leader standard-issue equipment.
+
+ent-ColMarTechFLGear-name = ColMarTech fireteam leader gear rack
+ent-ColMarTechFLGear-desc = An automated gear rack for fireteam leaders.
+

@@ -1,4 +1,14 @@
-ent-RMCAttachmentSmartgunHarness = подвесная система тяжёлого оружейного комплекса ML66A
-  .desc = Специализированная подвесная система для тяжёлого оружейного комплекса ML66A, помогающая контролировать отдачу и повышающая стабильность, а также позволяющая легко маневрировать оружием и даже удерживать его без хвата.
-ent-RMCSmartGunPVE = тяжёлый оружейный комплекс ML66A
-  .desc = Собственно огнестрельное оружие в системе оружейного комплекса. По сути, тяжёлый, мобильный пулемёт.
+ent-RMCAttachmentSmartgunHarness-name = item
+
+ent-RMCSmartGunPVE-name = ML66A heavy support gun
+ent-RMCSmartGunPVE-desc = The actual firearm in the Support Gun System. Essentially a heavy, mobile machinegun.
+
+ent-RMCSmartGunPVENoCamo-name = ML66A heavy support gun
+ent-RMCSmartGunPVENoCamo-desc = The actual firearm in the Support Gun System. Essentially a heavy, mobile machinegun.
+
+ent-RMCSmartGunPMCPVE-name = ML79A heavy support gun
+ent-RMCSmartGunPMCPVE-desc = The actual firearm in the Support Gun System, modified for We-Ya PMCs. Essentially a heavy, mobile machinegun.
+
+ent-RMCSmartGunRCMPVE-name = ML66C general purpose machine gun
+ent-RMCSmartGunRCMPVE-desc = A heavy, mobile machinegun used by the Royal Crown Marines. Heavily modified from the UN's ML66A platform, it fires 10x30mm holotargeting rounds.
+

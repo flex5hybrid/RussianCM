@@ -1,11 +1,22 @@
 ent-BaseRune-name = rune
+
 ent-CollideRune-name = collision rune
+
 ent-ActivateRune-name = activation rune
+
 ent-CollideTimerRune-name = collision timed rune
+
 ent-ExplosionRune-name = explosion rune
+
 ent-StunRune-name = stun rune
+
 ent-IgniteRune-name = ignite rune
+
 ent-ExplosionTimedRune-name = explosion timed rune
+
 ent-ExplosionActivateRune-name = explosion activated rune
+
 ent-FlashRune-name = flash rune
+
 ent-FlashRuneTimer-name = flash timed rune
+

@@ -1,5 +1,9 @@
-ent-RMCCartridgeLMGQYJ72 = патрон (7.62x54мм R)
-  .desc = Патрон 7.62x54мм R
-ent-RMCMagazineLMGQYJ72 = боевая коробка QYJ-72 (7.62x54мм R)
-ent-RMCWeaponLMGQYJ72 = единый пулемёт QYJ-72
-  .desc = QYJ-72 — стандартный единый пулемёт Социалистической Прогрессивной Народной партии, под патрон 7.62x54мм R, он стреляет мощным патроном с высокой скорострельностью. С огроменной коробкой на 250 патронов, QJY-72 разработан с упором на ведение подавляющего огня и точность за счёт объёма огня.
+ent-RMCCartridgeLMGQYJ72-name = cartridge
+
+ent-RMCMagazineLMGQYJ72-name = item
+
+ent-RMCWeaponLMGQYJ72-name = единый пулемёт QYJ-72
+
+ent-RMCBulletLMGQYJ72-name = BaseBullet
+ent-RMCBulletLMGQYJ72-desc = If you can see this you're probably dead!
+

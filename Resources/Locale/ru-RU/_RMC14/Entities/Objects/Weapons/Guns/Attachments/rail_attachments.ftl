@@ -1,34 +1,50 @@
-ent-RMCType88IntegratedScope = интегрированный прицел Type 88
-  .desc = Он не должен сниматься с оружия. Как ты его получил?
-ent-RMCXM43E1IntegratedScope = интегрированный прицел XM43E1
-  .desc = Он не должен сниматься с оружия. Как ты его получил?
-ent-RMCM96SIntegratedScope = интегрированный прицел M96S
-  .desc = Он не должен сниматься с оружия. Как ты его получил?
-ent-RMCAttachmentB8SmartScope = смарт-прицел B8
-  .desc = Экспериментальный смарт-прицел B8. Основан на технологиях, используемых в смартгане от АЕГИС, этот прицел имеет встроенные системы «свой-чужой». Может устанавливаться только на боевую винтовку M4SPR и боевой револьвер M44.
-ent-RMCAttachmentMiniscopeHunting = охотничий мини-прицел 2x
-  .desc = Этот прицел гражданского класса часто встречается на охотничьих винтовках из-за низкой цены и отличной оптики. Фиксированное увеличение 2x.
-ent-RMCAttachmentS42xAdvancedTelescopicMiniscope = продвинутый мини-телескоп WeYa S4 2x
-  .desc = Телескопический окуляр АЕГИС S4, доработанный учёными WeYa для максимальной эргономики.
-ent-RMCAttachmentHuntingScope = охотничий мини-прицел 2x
-  .desc = Этот прицел гражданского класса часто встречается на охотничьих винтовках из-за низкой цены и отличной оптики. Фиксированное увеличение 2x.
-ent-RMCAttachmentFP9000Scope = мини-телескоп FP9000 2x
-  .desc = Прицел для ПП FN FP9000. Фиксированное увеличение 2x.
-ent-RMCAttachmentS42xTelescopicMiniscope = мини-телескоп S4 2x
-  .desc = Телескопический окуляр АЕГИС S4. Фиксированное увеличение 2x.
-ent-RMCAttachmentSlavicScope = телескопический прицел 4x
-  .desc = Опа! Как ты это снял с великого оружия Сталина? Блять, поставь обратно и работай, товарищ. Янки же не стреляет в себя, нет?
-ent-RMCAttachmentS84xTelescopicScope = телескопический прицел S8 4x
-  .desc = Телескопический окуляр АЕГИС S8. Фиксированное увеличение 4x.
-ent-RMCAttachmentS6ReflexSight = рефлексный прицел S6
-  .desc = Рефлексный прицел АЕГИС S6. Альтернатива механическим прицелам без увеличения с более открытым оптическим окном по сравнению с коллиматором S5. Помогает уменьшить разброс при автоматической стрельбе.
-ent-RMCAttachmentS5RedDotSight = коллиматорный прицел S5
-  .desc = Коллиматорный прицел АЕГИС S5. Оптика без увеличения, обеспечивающая более быстрый и точный захват цели.
-ent-RMCAttachmentTwoPointSling = двухточечный ремень
-  .desc = Традиционная полоса из упрочнённого нейлона с защёлками на обоих концах для крепления к подходящим точкам монтажа на большинстве длинноствольных образцов в арсеналах вооружённых сил ОН.
-ent-RMCAttachmentMagneticHarness = магнитная подвеска
-  .desc = Комплект магнитной подвески, крепящийся к планке оружия. При падении оружие притянется к любому комплекту брони морпеха.
-ent-RMCAttachmentRailFlashlight = фонарь на планку
-  .desc = Фонарь для планок на оружии. Можно включать и выключать. Лучший источник света, чем стандартные фонари брони модели M3.
+ent-RMCType88IntegratedScope-name = item
+
+ent-RMCXM43E1IntegratedScope-name = item
+
+ent-RMCM96SIntegratedScope-name = item
+
+ent-RMCAttachmentB8SmartScope-name = item
+
+ent-RMCAttachmentMiniscopeHunting-name = item
+
+ent-RMCAttachmentS42xAdvancedTelescopicMiniscope-name = item
+
+ent-RMCAttachmentHuntingScope-name = item
+
+ent-RMCAttachmentFP9000Scope-name = item
+
+ent-RMCAttachmentS42xTelescopicMiniscope-name = item
+
+ent-RMCAttachmentSlavicScope-name = item
+
+ent-RMCAttachmentS84xTelescopicScope-name = item
+
+ent-RMCAttachmentS6ReflexSight-name = item
+
+ent-RMCAttachmentS5RedDotSight-name = item
+
+ent-RMCAttachmentTwoPointSling-name = two-point sling
+ent-RMCAttachmentTwoPointSling-desc = A traditional strip of toughened nylon fabric with clips on either end for attaching to suitable mounting points on most longarms in the UN armed forces arsenals.
+
+ent-RMCAttachmentMagneticHarness-name = item
+
+ent-RMCAttachmentRailFlashlight-name = item
+
 ent-RMCAttachmentXS-9-name = ретранслятор наведения XS-9
 ent-RMCAttachmentXS-9-desc = Находясь ещё в разработке, ретранслятор наведения XS-9 имеет множество функций — большинство из них отключено для полевых испытаний — работает немного лучше стандартного прицела.
+ent-RMCRailAttachmentBase-name = item
+
+ent-RMCAttachmentS5MicroRedDotSight-name = item
+
+ent-RMCAttachmentScopeBase-name = item
+
+ent-RMCL112IntegratedScope-name = item
+
+ent-RMCAttachmentSASOS-name = item
+
+ent-RMCAttachmentScopeMGLIntegrated-name = L989A2 collimator sight assembly
+ent-RMCAttachmentScopeMGLIntegrated-desc = Blimey... I think that's supposed to be stuck on...
+
+ent-RMCAttachmentL89Scope-name = item
+

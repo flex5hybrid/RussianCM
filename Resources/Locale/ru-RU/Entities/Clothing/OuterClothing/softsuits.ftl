@@ -1,12 +1,18 @@
 ent-ClothingOuterHardsuitEVA-name = EVA suit
 ent-ClothingOuterHardsuitEVA-desc = A lightweight space suit with the basic ability to protect the wearer from the vacuum of space during emergencies.
+
 ent-ClothingOuterEVASuitSyndicate-name = syndicate EVA suit
 ent-ClothingOuterEVASuitSyndicate-desc = Has a tag on the back that reads: 'Totally not property of an enemy corporation, honest!'
+
 ent-ClothingOuterSuitEmergency-name = emergency EVA suit
 ent-ClothingOuterSuitEmergency-desc = An emergency EVA suit with a built-in helmet. It's horribly slow and lacking in temperature protection, but enough to buy you time from the harsh vacuum of space.
+
 ent-ClothingOuterHardsuitEVAPrisoner-name = prisoner EVA suit
 ent-ClothingOuterHardsuitEVAPrisoner-desc = A lightweight space suit for prisoners to protect them from the vacuum of space during emergencies.
+
 ent-ClothingOuterHardsuitAncientEVA-name = NTSRA voidsuit
 ent-ClothingOuterHardsuitAncientEVA-desc = An ancient space suit, designed by the NTSRA branch of CentComm. It is very finely crafted, allowing for greater mobility than most modern space suits.
+
 ent-ClothingOuterHardsuitVoidParamed-name = paramedic void suit
 ent-ClothingOuterHardsuitVoidParamed-desc = A void suit made for paramedics.
+

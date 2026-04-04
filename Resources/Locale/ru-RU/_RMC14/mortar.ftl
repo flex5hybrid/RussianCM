@@ -20,7 +20,6 @@ rmc-mortar-dial-start-self = Вы начинаете устанавливать 
 rmc-mortar-dial-start-others = {$user} начинает устанавливать параметры {THE($mortar)}.
 rmc-mortar-dial-finish-self = Вы установили параметры {THE($mortar)}.
 rmc-mortar-dial-finish-others = {$user} установил параметры {THE($mortar)}.
-
 rmc-mortar-shell-load-start-self = Вы начинаете заряжать {THE($shell)} в {THE($mortar)}.
 rmc-mortar-shell-load-start-others = {$user} заряжает {THE($shell)} в {THE($mortar)}.
 rmc-mortar-shell-load-finish-self = Вы зарядили {THE($shell)} в {THE($mortar)}.
@@ -29,23 +28,18 @@ rmc-mortar-shell-warning = СНАРЯД ПАДАЕТ С {$direction}
 rmc-mortar-shell-warning-above = СНАРЯД ПАДАЕТ ПРЯМО СВЕРХУ
 rmc-mortar-shell-impact-warning = СНАРЯД СЕЙЧАС УДАРИТ С {$direction}
 rmc-mortar-shell-impact-warning-above = СНАРЯД СЕЙЧАС УДАРИТ ПРЯМО СВЕРХУ
-
 rmc-mortar-interface = Интерфейс миномёта
-
 rmc-mortar-target-x = Цель X:
 rmc-mortar-target-y = Цель Y:
 rmc-mortar-target-set = Установить цель
 rmc-mortar-target-too-close = Цель слишком близко к миномёту.
 rmc-mortar-target-too-far = Цель слишком далеко от миномёта.
-
 rmc-mortar-offset-x = Смещение X:
 rmc-mortar-offset-y = Смещение Y:
 rmc-mortar-offset-set = Установить смещение
 rmc-mortar-offset-too-far = Слишком далеко от исходной цели.
 rmc-mortar-offset-too-close = Слишком близко к миномёту.
 rmc-mortar-offset-max = Макс. смещение: {$max}
-
 rmc-mortar-view-camera = Камера наблюдения
-
 rmc-mortar-camera-title = Интерфейс миномётной камеры
 rmc-mortar-camera-name = Пара-Камера ({$x}):({$y})

@@ -1,1 +1,2 @@
-ent-RMCRandomHumanoidCLFEngineer = clf — инженер по роли призрака
+ent-RMCRandomHumanoidCLFEngineer-name = clf ghost role engineer
+

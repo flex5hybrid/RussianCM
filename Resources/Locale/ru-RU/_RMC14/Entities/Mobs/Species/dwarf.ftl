@@ -1,1 +1,2 @@
-ent-CMMobDwarf = Морпех Урист Макхэндс Дворф
+ent-CMMobDwarf-name = Urist C.M McHands The Dwarf
+

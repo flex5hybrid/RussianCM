@@ -1,24 +1,56 @@
-ent-RMCBatonSlugProjectile = травматическая пуля HIRR
-  .desc = Близкий родственник резиновой пули M15, травматическая пуля HIRR была отозвана из военных и гражданских полицейских сил из-за перегруженности метательного заряда в поддоне. Теперь она используется как менее-смертельная опция в столкновениях с человеческими, а иногда и нечеловеческими силами. Исторически HIRR была невероятно популярна во время конфликта на Арктуре, так как было обнаружено, что сила удара надёжно выводит из строя силы сопротивления Арктура, ломая им рёбра и пробивая лёгкие.
-ent-RMCShrapnelIncendiary = горящая шрапнель
-ent-RMCShrapnelJagged = зазубренная шрапнель
-ent-RMCHornetRound = патрон .22 «Шершень»
-ent-RMCStarShellBullet = осветительная пуля
-ent-RMCAirBurstProjectileSmoke = граната M74 AGM-S 40мм
-ent-RMCAirBurstProjectileStarShell = осветительный снаряд M74 AGM-S
-ent-RMCAirBurstProjectileHornet = картечный снаряд M74 AGM-H 40мм «Шершень»
-ent-RMCAirBurstProjectileIncendiary = граната M74 AGM-I 40мм
-ent-RMCAirBurstProjectileFrag = граната M74 AGM-F 40мм
-ent-RMC40MMGrenadeM74AGMS = дымовая граната M74 AGM-S 40мм
-  .desc = M74 — боеприпас гранаты воздушного подрыва — дымовая. Эту гранату необходимо запускать из гранатомёта, и она взрывается по достижении цели. При детонации мгновенно сочетает несколько химикатов внутри своего корпуса, образуя дымовое облако.
-ent-RMCBatonSlugHIRR = травматическая пуля HIRR
-  .desc = Близкий родственник резиновой пули M15, травматическая пуля HIRR была отозвана из военных и гражданских полицейских сил из-за перегруженности метательного заряда в поддоне. Теперь она используется как менее-смертельная опция в столкновениях с человеческими, а иногда и нечеловеческими силами. Исторически HIRR была невероятно популярна во время конфликта на Арктуре, так как было обнаружено, что сила удара надёжно выводит из строя силы сопротивления Арктура, ломая им рёбра и пробивая лёгкие.
-ent-RMCStarShellM74AGMS = осветительный снаряд M74 AGM-S
-  .desc = Функционирует идентично стандартной гранате AGM-F 40мм, за исключением того, что вместо взрыва на шрапнель, осветительный снаряд разрывается на горящий фосфор, освещающий область.
-ent-RMCHornetShellM74AGMS = картечный снаряд M74 AGM-H 40мм «Шершень»
-  .desc = Функционирует идентично стандартной гранате AGM-F 40мм, за исключением того, что вместо взрыва на шрапнель, снаряд «Шершень» выпускает патроны .22lr с голографическим наведением. Эквивалент картечи на дистанции.
-ent-RMC40MMGrenadeM74AGMI = зажигательная граната M74 AGM-I 40мм
-  .desc = M74 — боеприпас гранаты воздушного подрыва — зажигательный. Эту гранату необходимо запускать из гранатомёта, и она взрывается по достижении цели. Рассеивает зазубренную шрапнель конусом перед собой, разрывая плоть и броню alike. Схема рассеивания оптимизирована против крупных целей. Страдает от избыточного пробития при прямом попадании.
-ent-RMC40MMGrenadeM74AGMF = осколочная граната M74 AGM-F 40мм
-  .desc = M74 — боеприпас гранаты воздушного подрыва — осколочный. Эту гранату необходимо запускать из гранатомёта, и она взрывается по достижении цели. Рассеивает зазубренную шрапнель конусом перед собой, разрывая плоть и броню alike. Схема рассеивания оптимизирована против крупных целей. Страдает от избыточного пробития при прямом попадании.
-ent-RMCBaseAirBurstGrenade = граната воздушного подрыва
+ent-RMCBatonSlugProjectile-name = HIRR baton slug
+ent-RMCBatonSlugProjectile-desc = Cousin to the M15 Rubber pellet, the HIRR baton slug was recalled from military and civilian police forces due to over-packed propellant in the sabot casing. Now it is utilized as a less-than-lethal option in engagements with human, and sometimes non-human, forces. Historically, the HIRR was incredibly popular during the Arcturus conflict, as the impact force was found to reliably incapacitate Arcturian resistance forces by breaking their ribs into their lungs.
+
+ent-RMCShrapnelIncendiary-name = flaming shrapnel
+ent-RMCShrapnelIncendiary-desc = If you can see this you're probably dead!
+
+ent-RMCShrapnelJagged-name = jagged shrapnel
+ent-RMCShrapnelJagged-desc = If you can see this you're probably dead!
+
+ent-RMCHornetRound-name = .22 hornet round
+ent-RMCHornetRound-desc = If you can see this you're probably dead!
+
+ent-RMCStarShellBullet-name = starshell bullet
+ent-RMCStarShellBullet-desc = If you can see this you're probably dead!
+
+ent-RMCAirBurstProjectileSmoke-name = M74 AGM-S 40mm grenade
+ent-RMCAirBurstProjectileSmoke-desc = If you can see this you're probably dead!
+
+ent-RMCAirBurstProjectileStarShell-name = M74 AGM-S star shell
+ent-RMCAirBurstProjectileStarShell-desc = If you can see this you're probably dead!
+
+ent-RMCAirBurstProjectileHornet-name = M74 AGM-H 40mm hornet shell
+ent-RMCAirBurstProjectileHornet-desc = If you can see this you're probably dead!
+
+ent-RMCAirBurstProjectileIncendiary-name = M74 AGM-I 40mm grenade
+ent-RMCAirBurstProjectileIncendiary-desc = If you can see this you're probably dead!
+
+ent-RMCAirBurstProjectileFrag-name = M74 AGM-F 40mm grenade
+ent-RMCAirBurstProjectileFrag-desc = If you can see this you're probably dead!
+
+ent-RMC40MMGrenadeM74AGMS-name = M74 AGM-S 40mm smoke grenade
+ent-RMC40MMGrenadeM74AGMS-desc = M74 - Airburst Grenade Munition - Smoke. This grenade must be launched with a grenade launcher, and detonates once it reaches its destination. Upon detonation, instantly combines multiple chemicals inside its casing to form a smoke cloud.
+
+ent-RMCBatonSlugHIRR-name = HIRR baton slug
+ent-RMCBatonSlugHIRR-desc = Cousin to the M15 Rubber pellet, the HIRR baton slug was recalled from military and civilian police forces due to over-packed propellant in the sabot casing. Now it is utilized as a less-than-lethal option in engagements with human, and sometimes non-human, forces. Historically, the HIRR was incredibly popular during the Arcturus conflict, as the impact force was found to reliably incapacitate Arcturian resistance forces by breaking their ribs into their lungs.
+
+ent-RMCStarShellM74AGMS-name = M74 AGM-S star shell
+ent-RMCStarShellM74AGMS-desc = Functions identically to the standard AGM-F 40mm grenade, except instead of exploding into shrapnel, the star shells bursts into burning phosphor that illuminates the area.
+
+ent-RMCHornetShellM74AGMS-name = M74 AGM-H 40mm hornet shell
+ent-RMCHornetShellM74AGMS-desc = Functions identically to the standard AGM-F 40mm grenade, except instead of exploding into shrapnel, the hornet shell shoots off holo-targeting .22lr rounds. The equivalent to buckshot at-range.
+
+ent-RMC40MMGrenadeM74AGMI-name = M74 AGM-I 40mm incendiary grenade
+ent-RMC40MMGrenadeM74AGMI-desc = M74 - Airburst Grenade Munition - Incendiary. This grenade must be launched with a grenade launcher, and detonates once it reaches its destination. It disperses jagged shrapnel in a cone in front of itself, tearing through sinews and armor alike. Dispersion pattern is optimized against large target. Suffers from overpenetration on a direct hit.
+
+ent-RMC40MMGrenadeM74AGMF-name = M74 AGM-F 40mm frag grenade
+ent-RMC40MMGrenadeM74AGMF-desc = M74 - Airburst Grenade Munition - Fragmentation. This grenade must be launched with a grenade launcher, and detonates once it reaches its destination. It disperses jagged shrapnel in a cone in front of itself, tearing through sinews and armor alike. Dispersion pattern is optimized against large target. Suffers from overpenetration on a direct hit.
+
+ent-RMCBaseAirBurstGrenade-name = air burst grenade
+
+ent-RMCBaseAirBurstProjectile-name = BaseBullet
+ent-RMCBaseAirBurstProjectile-desc = If you can see this you're probably dead!
+
+ent-RMCBaseAirburstRound-name = BaseBullet
+ent-RMCBaseAirburstRound-desc = If you can see this you're probably dead!
+

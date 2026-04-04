@@ -1,2 +1,5 @@
-ent-RMCGearSurvivorPresetKutjevoEngineer = Кутьевский инженер-колонист пресет
-ent-RMCSpawnPointSurvivorKutjevoEngineer = выживший инженер Кутьево, точка появления инженера
+ent-RMCGearSurvivorPresetKutjevoEngineer-name = kutjevo engineer colonist preset
+
+ent-RMCSpawnPointSurvivorKutjevoEngineer-name = survivor kutjevo engineer spawn point
+ent-RMCSpawnPointSurvivorKutjevoEngineer-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

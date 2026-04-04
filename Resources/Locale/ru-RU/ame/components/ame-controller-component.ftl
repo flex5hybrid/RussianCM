@@ -1,9 +1,7 @@
 ame-controller-component-fuel-slot-fail-whitelist = Это нельзя поместить в контроллер...
 ame-controller-component-fuel-slot-fail-locked = Выключите питание ДАМ перед манипуляциями с его топливом.
 ame-controller-component-fuel-slot-success-insert = Вы помещаете топливный бак в соответствующий слот.
-
 ## UI
-
 ame-window-title = Блок управления антиматерией
 ame-window-engine-status-label = Состояние двигателя:
 ame-window-engine-injection-status-not-injecting-label = Не впрыскивает

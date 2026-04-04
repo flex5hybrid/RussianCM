@@ -1,2 +1,6 @@
-ent-CMArmylathe = армейский токарный станок
-  .desc = Армейский токарный станок — это специализированный токарный станок UNMC, предназначенный для печати деталей для изготовления различных боеприпасов, таких как гильзы для гранат и минометные снаряды.
+ent-CMArmylathe-name = armylathe
+ent-CMArmylathe-desc = The armylathe is a specialized UNMC autolathe meant for printing parts to construct various ordnance, such as grenade casings and mortar shells.
+
+ent-RMCArmylatheEmpty-name = armylathe
+ent-RMCArmylatheEmpty-desc = The armylathe is a specialized UNMC autolathe meant for printing parts to construct various ordnance, such as grenade casings and mortar shells.
+

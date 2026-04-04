@@ -1,0 +1,2 @@
+ent-RMCBaseWeaponGrenadeLauncher-name = item
+

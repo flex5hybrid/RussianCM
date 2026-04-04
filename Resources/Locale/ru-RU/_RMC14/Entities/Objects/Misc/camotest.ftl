@@ -1,2 +1,3 @@
-ent-Test = тест камуфляжа "джунгли"
-  .desc = джунгли
+ent-Test-name = jungle camo test
+ent-Test-desc = junjle
+

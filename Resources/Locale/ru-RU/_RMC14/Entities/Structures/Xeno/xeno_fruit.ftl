@@ -1,13 +1,21 @@
-ent-XenoFruitPlasma = круоровые смолистые фрукты
-  .desc = Странная синяя штука, похожая на фрукт.
-ent-XenoFruitSpeed = алакритовые смолистые плоды
-  .desc = Странная штука фиолетового цвета, похожая на фрукт.
-ent-XenoFruitSpore = споровые смоляные плоды
-  .desc = Странное существо, похожее на гриб, с маленькими оранжевыми светящимися мешочками, покачивающимися на странных стеблях.
-ent-XenoFruitUnstable = нестабильные смолистые плоды
-  .desc = Странная штука бирюзового цвета, похожая на фрукт.
-ent-XenoFruitGreater = Большой смолистый плод
-ent-XenoFruitLesser = малые смолистые плоды
-  .desc = Странная зеленоватая штука, похожая на фрукт.
-ent-XenoFruitBase = смола фруктов
-  .desc = фрукт, которого не должно быть
+ent-XenoFruitPlasma-name = cruor resin fruit
+ent-XenoFruitPlasma-desc = A strange blue-ish fruit-looking thing.
+
+ent-XenoFruitSpeed-name = alacrit resin fruit
+ent-XenoFruitSpeed-desc = A strange purple-ish fruit-looking thing.
+
+ent-XenoFruitSpore-name = spore resin fruit
+ent-XenoFruitSpore-desc = A strange mushroom-looking thing, with small orange glowing sacs, bobbing on the weird stalks.
+
+ent-XenoFruitUnstable-name = unstable resin fruit
+ent-XenoFruitUnstable-desc = A strange turquoise fruit-looking thing.
+
+ent-XenoFruitGreater-name = greater resin fruit
+ent-XenoFruitGreater-desc = A strange green-ish fruit-looking thing.
+
+ent-XenoFruitLesser-name = lesser resin fruit
+ent-XenoFruitLesser-desc = A strange green-ish fruit-looking thing.
+
+ent-XenoFruitBase-name = resin fruit
+ent-XenoFruitBase-desc = a fruit that shouldn't exist
+

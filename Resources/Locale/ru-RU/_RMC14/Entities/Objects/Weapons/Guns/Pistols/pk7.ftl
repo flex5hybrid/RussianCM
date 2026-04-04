@@ -1,6 +1,10 @@
-ent-RMCBulletPistol9mmElectrostatic = электростатическая пуля (9мм)
-ent-RMCCartridgePistol9mmElectrostatic = электростатический патрон (9мм)
-ent-RMCMagazinePistolPK7 = электростатический магазин PK-7 (9мм)
-  .desc = Вмещает 19 патронов специализированного проводящего 9мм калибра. Электростатическое ускорение в PK-7 работает за счёт выстрела патроном cV9mm с пропорционально меньшей скоростью для сохранения более высокого коэффициента передачи кинетической энергии. Всё это превращает проникающий патрон в менее смертоносный.
-ent-RMCWeaponPistolPK7 = электростатический пистолет PK-7
-  .desc = Менее смертоносный пистолет производства «Вестон-Ямада». Изначально произведённый в 2080-х, электростатический пистолет ES-4 стреляет электрически заряженными пулями с высокой точностью, хотя его стоимость и постоянная необходимость в чистке делают его редким зрелищем.
+ent-RMCBulletPistol9mmElectrostatic-name = electrostatic bullet (9mm)
+ent-RMCBulletPistol9mmElectrostatic-desc = If you can see this you're probably dead!
+
+ent-RMCCartridgePistol9mmElectrostatic-name = cartridge (.35 auto)
+
+ent-RMCMagazinePistolPK7-name = item
+ent-RMCMagazinePistolPK7-desc = A pistol magazine.
+
+ent-RMCWeaponPistolPK7-name = item
+

@@ -3,9 +3,7 @@ shuttle-pilot-end = Пилотирование прекращено
 shuttle-console-in-ftl = Уже в БСС
 shuttle-console-mass = Слишком большой для БСС
 shuttle-console-prevent = Вы не можете пилотировать этот корабль
-
 # NAV
-
 shuttle-console-display-label = Дисплей
 shuttle-console-position = Координаты:
 shuttle-console-position-value = { $X }, { $Y }
@@ -21,9 +19,7 @@ shuttle-console-exclusion = Зона отчуждения
 shuttle-console-nav-settings = Настройки
 shuttle-console-iff-toggle = Показ системы опознавания
 shuttle-console-dock-toggle = Показ стыковочных портов
-
 # MAP
-
 shuttle-console-ftl-label = Статус БСС
 shuttle-console-ftl-state-Available = Доступно
 shuttle-console-ftl-state-Starting = Запуск

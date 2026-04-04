@@ -1,2 +1,3 @@
-ent-RMCMannequin = дисплей манекен
-  .desc = Обычный демонстрационный манекен, используемый для демонстрации одежды.
+ent-RMCMannequin-name = display mannequin
+ent-RMCMannequin-desc = A generic display mannequin, used to show off clothing.
+

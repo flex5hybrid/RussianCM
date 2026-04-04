@@ -1,2 +1,4 @@
-ent-RMCItemPoolBuckshot = запас боеприпасов для выживших
-ent-RMCItemPoolBase = запас боеприпасов для выживших
+ent-RMCItemPoolBuckshot-name = survivor ammo pool
+
+ent-RMCItemPoolBase-name = survivor ammo pool
+

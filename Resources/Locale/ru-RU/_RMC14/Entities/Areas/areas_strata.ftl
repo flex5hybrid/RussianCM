@@ -1,97 +1,202 @@
-ent-RMCAreaStrataInteriorOutpostClfOffice = Крайний Северный офис
-ent-RMCAreaStrataInteriorOutpostClfDorms = Общежитие Крайнего Севера
-ent-RMCAreaStrataInteriorCheckpointsClf = Бронированный блокпост Крайнего Севера
-ent-RMCAreaStrataExteriorRestricted = Суперсекретная комната кредитов
-ent-RMCAreaStrataInteriorResearch = Глубокие джунгли — секретная исследовательская станция
-ent-RMCAreaStrataInteriorPlanetCoreResearchStation = Глубокие джунгли — исследовательская станция мониторинга ядра планеты
-ent-RMCAreaStrataExteriorDeepJungleTearlake = Глубокие джунгли – Плачущий пруд
-ent-RMCAreaStrataExteriorDeepJungleRuin = Глубокие джунгли — древние общежития
-ent-RMCAreaStrataExteriorDeepJunglePlanetCoreResearchStationExterior = Глубокие джунгли — исследовательская станция мониторинга ядра планеты
-ent-RMCAreaStrataExteriorDeepJungleEast = Глубокие джунгли — к востоку от мониторинга ядра планеты.
-ent-RMCAreaStrataExteriorDeepJungleSouth = Глубокие джунгли — к югу от мониторинга ядра планеты
-ent-RMCAreaStrataExteriorDeepJungleWest = Глубокие джунгли — к западу от мониторинга ядра планеты.
-ent-RMCAreaStrataExteriorDeepJungleNorth = Глубокие джунгли — к югу от секретной исследовательской станции.
-ent-RMCAreaStrataExteriorDeepJungleOldTunnels = Глубокие джунгли – Старый путь – к западу от секретной исследовательской станции.
-ent-RMCAreaStrataExteriorDeepJungleHotSprings = Глубокие джунгли – Горячие источники
-ent-RMCAreaStrataExteriorDeepJunglePlatformEast = Глубокие джунгли — к востоку от платформы.
-ent-RMCAreaStrataExteriorDeepJunglePlatform = Глубокие джунгли — к югу от платформы.
-ent-RMCAreaStrataExteriorDeepJungleCarplakeEast = Глубокие джунгли — к востоку от Карпового озера.
-ent-RMCAreaStrataExteriorDeepJungleCarplakeNorth = Глубокие джунгли — к северу от Карпового озера.
-ent-RMCAreaStrataExteriorDeepJungle = Не используйте.
-ent-RMCAreaStrataExteriorCarplakeCenter = Глубокие джунгли — остров Лейк-Центр
-ent-RMCAreaStrataExteriorOutpostPlatform = Глубокие джунгли — Платформа
-ent-RMCAreaStrataInteriorUndergroundDormsBotany = Ботаническая исследовательская станция
-ent-RMCAreaStrataInteriorUndergroundDormsMed2 = Глубокие джунгли — Медицинское общежитие \#2
-ent-RMCAreaStrataInteriorUndergroundDormsMed1 = Глубокие джунгли — Медицинское общежитие \#1
-ent-RMCAreaStrataInteriorUndergroundDormsAdmin4 = Глубокие джунгли — Общежитие Генерального штаба \#4
-ent-RMCAreaStrataInteriorUndergroundDormsAdmin3 = Глубокие джунгли — Общежитие Генерального штаба \#3
-ent-RMCAreaStrataInteriorUndergroundDormsAdmin2 = Глубокие джунгли — Общежитие Генерального штаба \#2
-ent-RMCAreaStrataInteriorUndergroundDormsAdmin1 = Глубокие джунгли — Общежитие Генерального штаба \#1
-ent-RMCAreaStrataInteriorUndergroundDormsSec2 = Глубокие джунгли — общежитие охраны \#2
-ent-RMCAreaStrataInteriorUndergroundDormsSec1 = Глубокие джунгли — общежитие охраны \#1
-ent-RMCAreaStrataInteriorUndergroundDorms = Не используйте.
-ent-RMCAreaStrataInteriorSecureCheckpoint = Безопасный проход через контрольно-пропускной пункт
-ent-RMCAreaStrataInteriorBballCave = Аванпост — Пещеры Би-Болл
-ent-RMCAreaStrataInteriorBball = Outpost – баскетбольная площадка
-ent-RMCAreaStrataExteriorPartsStorageCave = Инженерное дело – Складирование деталей снаружи
-ent-RMCAreaStrataExteriorPartsStorageExterior = Инженерное дело – Складирование деталей снаружи
-ent-RMCAreaStrataInteriorGeneratorSubstation = Инжиниринг - Генераторная Подстанция
-ent-RMCAreaStrataInteriorPartsStorage = Инженерное дело – Хранение деталей
-ent-RMCAreaStrataInteriorCheckpointsOutpost = Аванпост — контрольно-пропускной пункт безопасности палубы
-ent-RMCAreaStrataInteriorCheckpointsSouth = Южный контрольно-пропускной пункт зоны приземления
-ent-RMCAreaStrataInteriorCheckpointsWest = Западный контрольно-пропускной пункт зоны приземления
-ent-RMCAreaStrataInteriorCheckpointsNorth = Северный контрольно-пропускной пункт зоны приземления
-ent-RMCAreaStrataInteriorCheckpointsNorthArmor = Бронированный контрольно-пропускной пункт Северной охраны
-ent-RMCAreaStrataInteriorWoodenRuins = Старое деревянное здание
-ent-RMCAreaStrataInteriorWoodenHospital = Деревянная больница - Собственно больница
-ent-RMCAreaStrataInteriorAdministration = Офисы управления полетами
-ent-RMCAreaStrataInteriorMiningOutpostFlightControl = Горнодобывающая застава — Управление полетом
-ent-RMCAreaStrataInteriorMiningOutpostCanteen = Шахтерская застава – столовая общежития
-ent-RMCAreaStrataInteriorMiningOutpostHive = Горнодобывающая застава — общежитие, геотермальное хранилище
-ent-RMCAreaStrataInteriorMiningOutpostMaintenance = Горнодобывающая застава – Обслуживание общежития
-ent-RMCAreaStrataInteriorMiningOutpostSouthDormitories = Горнодобывающая застава – Южные общежития
-ent-RMCAreaStrataInteriorMiningOutpost = Горнодобывающая застава — Центральный
-ent-RMCAreaStrataInteriorOutpostCanteenBar = Аванпост - Бар
-ent-RMCAreaStrataInteriorOutpostCanteen = Застава - Столовая
-ent-RMCAreaStrataInteriorOutpostAdmin = Аванпост - Администрация
-ent-RMCAreaStrataInteriorOutpostSecurity = Аванпост - Безопасность
-ent-RMCAreaStrataInteriorSupplyShuttleSof = СПП-ДС-3 «Волк»
-ent-RMCAreaStrataInteriorShuttleSof = СПП-ДС-3 «Ворон»
-ent-RMCAreaStrataInteriorOutpostEngiDromeShuttleMK3 = ВДВК Орел Мк 3
-ent-RMCAreaStrataInteriorOutpostEngiDromeShuttle = Разобранный ВДВК Eagle Mk 4
-ent-RMCAreaStrataInteriorOutpostEngiDrome = Аванпост - Аэродом
-ent-RMCAreaStrataInteriorOutpostEngi = Аванпост – Инженерное дело
-ent-RMCAreaStrataInteriorOutpostMed = Аванпост - Медицинский
-ent-RMCAreaStrataInteriorOutpostMaint = Застава – Столовая – Восточное обслуживание
-ent-RMCAreaStrataInteriorOutpostFoyer = Аванпост – Главное фойе
-ent-RMCAreaStrataInteriorOutpost = Сорокинская застава
-ent-RMCAreaStrataExteriorSouthOutpost = К югу от заставы
-ent-RMCAreaStrataExteriorFarNorthOutpost = Крайний север заставы
-ent-RMCAreaStrataExteriorNorthOutpost = Аванпост — Северный канал доступа
-ent-RMCAreaStrataExteriorMiningOutpostExterior = Горнодобывающая застава — внешний вид
-ent-RMCAreaStrataExteriorFlightControlExterior = Экстерьер управления полетом
-ent-RMCAreaStrataExteriorOutpostDecks = Аванпост - Колоды
-ent-RMCAreaStrataExteriorTcommsVehicleYard = Реле автомобильного двора
-ent-RMCAreaStrataExteriorTcommsMiningCaves = Реле горного пути
-ent-RMCAreaStrataInteriorVanyard = Склад транспортных средств управления полетом
-ent-RMCAreaStrataExteriorMarshWater = Геотермальная вода
-ent-RMCAreaStrataExteriorMarshCrash = Геотермальный разбившийся десантный корабль
-ent-RMCAreaStrataExteriorMarshRiver = Геотермальная река
-ent-RMCAreaStrataExteriorMarshCenter = Геотермальные источники
-ent-RMCAreaStrataExteriorMarshRelayMarshes = Геотермальные релейные болота
-ent-RMCAreaStrataExteriorMarshIslandMarshes = Геотермальные островные болота
-ent-RMCAreaStrataExteriorMarshWaterMarshes = Геотермальные воды болот
-ent-RMCAreaStrataExteriorMarshSpringMarshes = Геотермальные источники Болота
-ent-RMCAreaStrataExteriorMarsh = Не используйте.
-ent-RMCAreaStrataExteriorLzCaves = Путь внешнего горнодобывающего аэродрома
-ent-RMCAreaStrataExteriorShedFiveCaves = Тропа наверху терминала номер пять
-ent-RMCAreaStrataInteriorLandingZonesNearLz1 = Зона приземления 1 — Шахтный аэродром
-ent-RMCAreaStrataInteriorLandingZonesLz1 = Площадка посадочной зоны 1 — шахтерский аэродром
-ent-RMCAreaStrataExteriorLandingZonesNearLz2 = Зона приземления 2 — Скалистые поля
-ent-RMCAreaStrataExteriorLandingZonesLz2 = Площадка посадочной зоны 2 — Скалистые поля
-ent-RMCAreaStrataInteriorLandingZones = Не используйте.
-ent-RMCAreaStrataExteriorLandingZones = Не используйте.
-ent-RMCAreaStrataInterior = Интерьер
-ent-RMCAreaStrataExterior = Экстерьер
-ent-RMCAreaStrataInteriorOutOfBounds = За пределами границ
-ent-RMCAreaStrata = Сорокинские пласты
+ent-RMCAreaStrataInteriorOutpostClfOffice-name = Far North Office
+
+ent-RMCAreaStrataInteriorOutpostClfDorms-name = Far North Dormitory
+
+ent-RMCAreaStrataInteriorCheckpointsClf-name = Far North Armored Checkpoint
+
+ent-RMCAreaStrataExteriorRestricted-name = Super Secret Credits Room
+
+ent-RMCAreaStrataInteriorResearch-name = Deep Jungle - Classified Research Station
+
+ent-RMCAreaStrataInteriorPlanetCoreResearchStation-name = Deep Jungle - Planetary Core Monitoring Research Station
+
+ent-RMCAreaStrataExteriorDeepJungleTearlake-name = Deep Jungle - Weeping Pool
+
+ent-RMCAreaStrataExteriorDeepJungleRuin-name = Deep Jungle - Ancient Dorms
+
+ent-RMCAreaStrataExteriorDeepJunglePlanetCoreResearchStationExterior-name = Deep Jungle - Planetary Core Monitoring Research Station
+
+ent-RMCAreaStrataExteriorDeepJungleEast-name = Deep Jungle - East of Planetary Core Monitoring
+
+ent-RMCAreaStrataExteriorDeepJungleSouth-name = Deep Jungle - South of Planetary Core Monitoring
+
+ent-RMCAreaStrataExteriorDeepJungleWest-name = Deep Jungle - West of Planetary Core Monitoring
+
+ent-RMCAreaStrataExteriorDeepJungleNorth-name = Deep Jungle - South of Classified Research Station
+
+ent-RMCAreaStrataExteriorDeepJungleOldTunnels-name = Deep Jungle - Old Path - West of Classified Research Station
+
+ent-RMCAreaStrataExteriorDeepJungleHotSprings-name = Deep Jungle - Hot Springs
+
+ent-RMCAreaStrataExteriorDeepJunglePlatformEast-name = Deep Jungle - East of the Platform
+
+ent-RMCAreaStrataExteriorDeepJunglePlatform-name = Deep Jungle - South of the Platform
+
+ent-RMCAreaStrataExteriorDeepJungleCarplakeEast-name = Deep Jungle - East of Carp Lake
+
+ent-RMCAreaStrataExteriorDeepJungleCarplakeNorth-name = Deep Jungle - North of Carp Lake
+
+ent-RMCAreaStrataExteriorDeepJungle-name = Do not use.
+
+ent-RMCAreaStrataExteriorCarplakeCenter-name = Deep Jungle - Lake Center Island
+
+ent-RMCAreaStrataExteriorOutpostPlatform-name = Deep Jungle - Platform
+
+ent-RMCAreaStrataInteriorUndergroundDormsBotany-name = Botanical Research Station
+
+ent-RMCAreaStrataInteriorUndergroundDormsMed2-name = Deep Jungle - Medical Dorm \#2
+
+ent-RMCAreaStrataInteriorUndergroundDormsMed1-name = Deep Jungle - Medical Dorm \#1
+
+ent-RMCAreaStrataInteriorUndergroundDormsAdmin4-name = Deep Jungle - General Staff Dorm \#4
+
+ent-RMCAreaStrataInteriorUndergroundDormsAdmin3-name = Deep Jungle - General Staff Dorm \#3
+
+ent-RMCAreaStrataInteriorUndergroundDormsAdmin2-name = Deep Jungle - General Staff Dorm \#2
+
+ent-RMCAreaStrataInteriorUndergroundDormsAdmin1-name = Deep Jungle - General Staff Dorm \#1
+
+ent-RMCAreaStrataInteriorUndergroundDormsSec2-name = Deep Jungle - Security Dorm \#2
+
+ent-RMCAreaStrataInteriorUndergroundDormsSec1-name = Deep Jungle - Security Dorm \#1
+
+ent-RMCAreaStrataInteriorUndergroundDorms-name = Do not use.
+
+ent-RMCAreaStrataInteriorSecureCheckpoint-name = Secure Checkpoint Passthrough
+
+ent-RMCAreaStrataInteriorBballCave-name = Outpost - B-Ball Caves
+
+ent-RMCAreaStrataInteriorBball-name = Outpost - Basket Ball Court
+
+ent-RMCAreaStrataExteriorPartsStorageCave-name = Engineering - Parts Storage Exterior
+
+ent-RMCAreaStrataExteriorPartsStorageExterior-name = Engineering - Parts Storage Exterior
+
+ent-RMCAreaStrataInteriorGeneratorSubstation-name = Engineering - Generator Substation
+
+ent-RMCAreaStrataInteriorPartsStorage-name = Engineering - Parts Storage
+
+ent-RMCAreaStrataInteriorCheckpointsOutpost-name = Outpost - Deck Security Checkpoint
+
+ent-RMCAreaStrataInteriorCheckpointsSouth-name = Landing Zone South Security Checkpoint
+
+ent-RMCAreaStrataInteriorCheckpointsWest-name = Landing Zone West Security Checkpoint
+
+ent-RMCAreaStrataInteriorCheckpointsNorth-name = Landing Zone North Security Checkpoint
+
+ent-RMCAreaStrataInteriorCheckpointsNorthArmor-name = North Security Armored Checkpoint
+
+ent-RMCAreaStrataInteriorWoodenRuins-name = Old Wooden Building
+
+ent-RMCAreaStrataInteriorWoodenHospital-name = Wooden Hospital - Hospital Proper
+
+ent-RMCAreaStrataInteriorAdministration-name = Flight Control Offices
+
+ent-RMCAreaStrataInteriorMiningOutpostFlightControl-name = Mining Outpost - Flight Control
+
+ent-RMCAreaStrataInteriorMiningOutpostCanteen-name = Mining Outpost - Dormitory Canteen
+
+ent-RMCAreaStrataInteriorMiningOutpostHive-name = Mining Outpost - Dormitory Geothermal Storage
+
+ent-RMCAreaStrataInteriorMiningOutpostMaintenance-name = Mining Outpost - Dormitory Maintenance
+
+ent-RMCAreaStrataInteriorMiningOutpostSouthDormitories-name = Mining Outpost - South Dormitories
+
+ent-RMCAreaStrataInteriorMiningOutpost-name = Mining Outpost - Central
+
+ent-RMCAreaStrataInteriorOutpostCanteenBar-name = Outpost - Bar
+
+ent-RMCAreaStrataInteriorOutpostCanteen-name = Outpost - Canteen
+
+ent-RMCAreaStrataInteriorOutpostAdmin-name = Outpost - Administration
+
+ent-RMCAreaStrataInteriorOutpostSecurity-name = Outpost - Security
+
+ent-RMCAreaStrataInteriorSupplyShuttleSof-name = SPP-DS-3 'Volk'
+
+ent-RMCAreaStrataInteriorShuttleSof-name = SPP-DS-3 'Voron'
+
+ent-RMCAreaStrataInteriorOutpostEngiDromeShuttleMK3-name = VDVK Eagle Mk 3
+
+ent-RMCAreaStrataInteriorOutpostEngiDromeShuttle-name = Dismantled VDVK Eagle Mk 4
+
+ent-RMCAreaStrataInteriorOutpostEngiDrome-name = Outpost - Aerodome
+
+ent-RMCAreaStrataInteriorOutpostEngi-name = Outpost - Engineering
+
+ent-RMCAreaStrataInteriorOutpostMed-name = Outpost - Medical
+
+ent-RMCAreaStrataInteriorOutpostMaint-name = Outpost - Canteen - Eastern Maintenance
+
+ent-RMCAreaStrataInteriorOutpostFoyer-name = Outpost - Main Foyer
+
+ent-RMCAreaStrataInteriorOutpost-name = Sorokyne Outpost
+
+ent-RMCAreaStrataExteriorSouthOutpost-name = South Of The Outpost
+
+ent-RMCAreaStrataExteriorFarNorthOutpost-name = Far North Of The Outpost
+
+ent-RMCAreaStrataExteriorNorthOutpost-name = Outpost - North Access Channel
+
+ent-RMCAreaStrataExteriorMiningOutpostExterior-name = Mining Outpost - Exterior
+
+ent-RMCAreaStrataExteriorFlightControlExterior-name = Flight Control Exterior
+
+ent-RMCAreaStrataExteriorOutpostDecks-name = Outpost - Decks
+
+ent-RMCAreaStrataExteriorTcommsVehicleYard-name = Vehicle Yard Relay
+
+ent-RMCAreaStrataExteriorTcommsMiningCaves-name = Mining Pathway Relay
+
+ent-RMCAreaStrataInteriorVanyard-name = Flight Control Vehicle Yard
+
+ent-RMCAreaStrataExteriorMarshWater-name = Geothermal Water
+
+ent-RMCAreaStrataExteriorMarshCrash-name = Geothermal Crashed Dropship
+
+ent-RMCAreaStrataExteriorMarshRiver-name = Geothermal River
+
+ent-RMCAreaStrataExteriorMarshCenter-name = Geothermal Springs
+
+ent-RMCAreaStrataExteriorMarshRelayMarshes-name = Geothermal Relay Marshes
+
+ent-RMCAreaStrataExteriorMarshIslandMarshes-name = Geothermal Island Marshes
+
+ent-RMCAreaStrataExteriorMarshWaterMarshes-name = Geothermal Water Marshes
+
+ent-RMCAreaStrataExteriorMarshSpringMarshes-name = Geothermal Springs Marshes
+
+ent-RMCAreaStrataExteriorMarsh-name = Do not use.
+
+ent-RMCAreaStrataExteriorLzCaves-name = External Mining Aerodrome Pathway
+
+ent-RMCAreaStrataExteriorShedFiveCaves-name = Terminal Five Topside Pathway
+
+ent-RMCAreaStrataInteriorLandingZonesNearLz1-name = Landing Zone 1 - Mining Aerodrome
+
+ent-RMCAreaStrataInteriorLandingZonesLz1-name = Landing Zone 1 Pad - Mining Aerodrome
+
+ent-RMCAreaStrataExteriorLandingZonesNearLz2-name = Landing Zone 2 - Rocky Fields
+
+ent-RMCAreaStrataExteriorLandingZonesLz2-name = Landing Zone 2 Pad - Rocky Fields
+
+ent-RMCAreaStrataInteriorLandingZones-name = Do not use.
+
+ent-RMCAreaStrataExteriorLandingZones-name = Do not use.
+
+ent-RMCAreaStrataInterior-name = Interior
+
+ent-RMCAreaStrataExterior-name = Exterior
+
+ent-RMCAreaStrataInteriorOutOfBounds-name = Out of Bounds
+
+ent-RMCAreaStrata-name = Sorokyne Strata
+
+ent-RMCAreaStrataExteriorTcommsCrashedDropship-name = Crashed Dropship Relay
+
+ent-RMCAreaStrataExteriorTcommsGeosprings-name = Geothermal Springs Relay
+
+ent-RMCAreaStrataExteriorTcommsEngineeringPartsStorage-name = Engineering - Parts Storage Platform Relay
+
+ent-RMCAreaStrataInteriorCheckpoints-name = Interior
+

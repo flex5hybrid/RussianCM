@@ -1,16 +1,45 @@
-ent-RMCBottleMindbreaker = флакон ментального разрушителя
-  .desc = Небольшой флакон. Содержит токсин ментального разрушителя — портит жизнь любому, кто его примет.
-ent-RMCBottleAntiZed = флакон лекарства от 'патогена'
-  .desc = На флаконе спереди изображён символ биологической опасности и имеется этикетка, указывающая на его применение против агента A0-3959X.91–15, в просторечии известного как «Чёрная жижа».
-ent-CMBottleTricordrazine = флакон трикордразина
-  .desc = Небольшой флакон. Содержит трикордразин — слабое, но универсальное лекарство для лечения всех видов повреждений.
-ent-CMBottleInaprovaline = флакон инапровалина
-  .desc = Небольшой флакон. Содержит инапровалин — используется для стабилизации пациентов.
-ent-CMBottleDexalin = флакон дексалина
-  .desc = Небольшой флакон. Содержит дексалин — используется для лечения кислородного голодания.
-ent-CMBottleDylovene = флакон диловена
-  .desc = Небольшой флакон диловена. Противоядие, устраняет токсические повреждения. Чудо-лекарство.
-ent-CMBottleKelotane = флакон келотана
-  .desc = Небольшой флакон. Содержит келотан — используется для лечения ожогов.
-ent-CMBottleBicaridine = флакон бикаридина
-  .desc = Небольшой флакон. Содержит бикаридин — используется для лечения физических повреждений.
+ent-RMCBottleMindbreaker-name = mindbreaker bottle
+ent-RMCBottleMindbreaker-desc = A small bottle. Contains mindbreaker toxin - Fucks up anyone who takes it.
+
+ent-RMCBottleAntiZed-name = 'Pathogen' cure bottle
+ent-RMCBottleAntiZed-desc = The bottle has a biohazard symbol on the front, and has a label, designating its use against Agent A0-3959X.91–15, colloquially known as the "Black Goo".
+
+ent-CMBottleTricordrazine-name = tricordrazine bottle
+ent-CMBottleTricordrazine-desc = A small bottle. Contains tricordrazine - A weak but catch-all medicine for treating all sorts of damage.
+
+ent-CMBottleInaprovaline-name = inaprovaline bottle
+ent-CMBottleInaprovaline-desc = A small bottle. Contains inaprovaline - used to stabilize patients.
+
+ent-CMBottleDexalin-name = dexalin bottle
+ent-CMBottleDexalin-desc = A small bottle. Contains dexalin - used to treat oxygen deprivation.
+
+ent-CMBottleDylovene-name = dylovene bottle
+ent-CMBottleDylovene-desc = A small bottle of dylovene. Counters poisons, and repairs toxin damage. A wonder drug.
+
+ent-CMBottleKelotane-name = kelotane bottle
+ent-CMBottleKelotane-desc = A small bottle. Contains kelotane - used to treat burned areas.
+
+ent-CMBottleBicaridine-name = bicaridine bottle
+ent-CMBottleBicaridine-desc = A small bottle. Contains Bicaridine - Used to treat brute damage.
+
+ent-CMBottleEmpty-name = bottle
+ent-CMBottleEmpty-desc = A small bottle.
+
+ent-CMBottleFilled-name = bottle
+ent-CMBottleFilled-desc = A small bottle.
+
+ent-RMCLargeBottleEmpty-name = A large bottle.
+ent-RMCLargeBottleEmpty-desc = A small bottle.
+
+ent-RMCLargeBottleFilled-name = A large bottle.
+ent-RMCLargeBottleFilled-desc = A small bottle.
+
+ent-RMCLargeBottleDexalinPlus-name = large dexalin plus bottle
+ent-RMCLargeBottleDexalinPlus-desc = A large bottle. Contains dexalin plus - used to instantly treat oxygen deprivation.
+
+ent-RMCLargeBottleMeralyneBicaridine-name = large meralyne-bicaridine bottle
+ent-RMCLargeBottleMeralyneBicaridine-desc = A large bottle. Contains a mix of meralyne and bicaridine - used to treat brute damage.
+
+ent-RMCLargeBottleKelotaneDermaline-name = large kelotane-dermaline bottle
+ent-RMCLargeBottleKelotaneDermaline-desc = A large bottle. Contains a mix of kelotane and dermaline - used to treat burned areas.
+

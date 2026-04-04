@@ -1,4 +1,10 @@
-ent-CMAlamoDoorStarboard = люк для экипажа Аламо
-ent-CMAlamoDoorPort = люк для экипажа Аламо
-ent-CMAlamoDoorAft = грузовая дверь Аламо
-ent-CMAlamoDoor = люк для экипажа Аламо
+ent-CMAlamoDoorStarboard-name = alamo crew hatch
+
+ent-CMAlamoDoorPort-name = alamo crew hatch
+
+ent-CMAlamoDoorAft-name = alamo cargo door
+
+ent-CMAlamoDoor-name = alamo crew hatch
+
+ent-CMAlamoCockpit-name = cockpit
+

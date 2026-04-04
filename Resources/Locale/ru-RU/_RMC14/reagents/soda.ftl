@@ -1,29 +1,20 @@
 reagent-name-bobda-classic = Бобда Классик
 reagent-desc-bobda-classic = Газированная вода со вкусом мандарина, консервированная в Гаване.
-
 reagent-name-bobda-cherry = Черри Бобда
 reagent-desc-bobda-cherry = Газированная вода со вкусом вишни, которую консервируют в Гаване.
-
 reagent-name-bobda-lime = Лайм Бобда
 reagent-desc-bobda-lime = Газированная вода со вкусом лайма, консервированная в Гаване.
-
 reagent-name-bobda-grape = Виноградная Бобда
 reagent-desc-bobda-grape = Газированная вода со вкусом винограда, консервированная в Гаване.
-
 reagent-name-bobda-blue = Голубая малина Бобда
 reagent-desc-bobda-blue = Газированная вода со вкусом синих фруктов, консервированная в Гаване.
-
 reagent-name-bobda-peach = Персик Бобда
 reagent-desc-bobda-peach = Газированная вода со вкусом персика и плавающими внутри кусочками персиковой косточки, консервированная в Гаване.
-
 reagent-name-bobda-cranberry = Клюквенная Бобда
 reagent-desc-bobda-cranberry = Газированная вода со вкусом клюквы, консервированная в Гаване.
-
 reagent-name-bobda-vanilla = Ваниль Бобда
 reagent-desc-bobda-vanilla = Газированная вода со вкусом ванили, которую консервируют в Гаване.
-
 reagent-name-bobda-pineapple = Ананас Бобда
 reagent-desc-bobda-pineapple = Газированная вода со вкусом ананаса, консервированная в Гаване.
-
 reagent-name-fruit-beer = Фруктовое пиво
-reagent-desc-fruit-beer = Оскорбительный напиток со вкусом манго. 
+reagent-desc-fruit-beer = Оскорбительный напиток со вкусом манго.

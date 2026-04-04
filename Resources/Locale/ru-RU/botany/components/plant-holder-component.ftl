@@ -1,5 +1,4 @@
 ## Entity
-
 plant-holder-component-plant-success-message = Вы сажаете { $seedName }.
 plant-holder-component-already-seeded-message = { CAPITALIZE($name) } уже содержит семена!
 plant-holder-component-remove-weeds-message = Вы пропалываете { $name } от сорняков.

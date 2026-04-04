@@ -1,14 +1,11 @@
 ## UI
-
 hypospray-all-mode-text = Только ввод
 hypospray-mobs-only-mode-text = Забор и ввод
 hypospray-invalid-text = Ошибка
 hypospray-volume-label =
     Объём: [color=white]{ $currentVolume }/{ $totalVolume } ед.[/color]
     Режим: [color=white]{ $modeString }[/color]
-
 ## Entity
-
 hypospray-component-inject-other-message = Вы вводите { $other }.
 hypospray-component-inject-self-message = Вы делаете себе инъекцию.
 hypospray-component-inject-self-clumsy-message = Ой! Вы сделали себе инъекцию.

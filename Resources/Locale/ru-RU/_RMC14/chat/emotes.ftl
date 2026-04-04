@@ -1,25 +1,17 @@
 ﻿rmc-hands-emotes-highfive-attempt-self = Вы поднимаете руку для пятюни с {$target}.
 rmc-hands-emotes-highfive-attempt = {$ent} поднимает {POSS-ADJ($ent)} руку для пятюни с {$target}.
-
 rmc-hands-emotes-highfive-self = Вы даёте {$target} пятюню!
 rmc-hands-emotes-highfive = {$ent} даёт {$target} пятюню!
-
 rmc-hands-emotes-fistbump-self = Вы делаете кумпол {$target}!
 rmc-hands-emotes-fistbump = {$ent} делает кумпол {$target}!
-
 rmc-hands-emotes-fistbump-attempt-self = Вы поднимаете кулак для кумпола с {$target}.
 rmc-hands-emotes-fistbump-attempt = {$ent} поднимает {POSS-ADJ($ent)} кулак для кумпола с {$target}.
-
 rmc-hands-emotes-tailswipe-self = Вы бьётесь хвостами с {$target}!
 rmc-hands-emotes-tailswipe = {$ent} бьётся хвостом с {$target}!
-
 rmc-hands-emotes-tailswipe-attempt-self = Вы замахиваетесь хвостом для удара с {$target}.
 rmc-hands-emotes-tailswipe-attempt = {$ent} замахивается хвостом для удара с {$target}.
-
 rmc-hands-emotes-left-hanging = Вас оставили висеть в воздухе!
-
 rmc-hands-emotes-fistbump-perform = Кумпол
 rmc-hands-emotes-highfive-perform = Пятюня
 rmc-hands-emotes-tailswipe-perform = Удар хвостом
-
 rmc-hands-emotes-get-closer = Подойдите ближе.

@@ -1,10 +1,7 @@
 ### UI
-
 # Verb name for climbing
 comp-climbable-verb-climb = Взобраться
-
 ### Interaction Messages
-
 # Shown to you when your character climbs on $climbable
 comp-climbable-user-climbs = Вы взбираетесь на { $climbable }!
 # Shown to others when $user climbs on $climbable

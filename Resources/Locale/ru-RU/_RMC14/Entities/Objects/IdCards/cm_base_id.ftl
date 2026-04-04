@@ -1,16 +1,27 @@
-ent-CMIDCardLanyard = голо-бейдж на шнурке
-  .desc = Простой голо-бейдж на шнурке. Дешёвый, как только можно.
-ent-CMIDCardSilver = серебряный голо-бейдж
-  .desc = Серебристый голо-бейдж, символизирующий честь и преданность.
-ent-CMIDCardGold = золотой голо-бейдж
-  .desc = Золотистый голо-бейдж, символизирующий власть и могущество.
-ent-CMIDCardBase = голо-бейдж
-  .desc = Кусочек закодированного сжатого стекловолокна. Используется для идентификации и контроля доступа.
-ent-RMCDogtagProp = жетон
-  .desc = Жетон павшего морпеха, тела рядом не видно.
-ent-RMCInformationDogtag = информационный жетон
-  .desc = Информационный жетон павшего морпеха.
-ent-RMCInformationDogtagProp = потёртый информационный жетон
-  .desc = Информационный жетон павшего морпеха. Он выглядит потрёпанным, и имя стёрлось.
-ent-CMIDCardStandardDogtag = жетон
-  .desc = Жетон морского пехотинца.
+ent-CMIDCardLanyard-name = identification holo-lanyard
+ent-CMIDCardLanyard-desc = A crude holo-lanyard. As cheap as they come.
+
+ent-CMIDCardSilver-name = silver identification holo-badge
+ent-CMIDCardSilver-desc = A silver plated holo-badge which shows honour and dedication.
+
+ent-CMIDCardGold-name = gold identification holo-badge
+ent-CMIDCardGold-desc = A gold plated holo-badge which shows power and might.
+
+ent-CMIDCardBase-name = identification holo-badge
+ent-CMIDCardBase-desc = A slice of encoded compressed fiber glass. Used for identification and access control.
+
+ent-RMCDogtagProp-name = dog tag
+ent-RMCDogtagProp-desc = A fallen marine's dog tag, no body in sight.
+
+ent-RMCInformationDogtag-name = information dog tag
+ent-RMCInformationDogtag-desc = A fallen marine's information dog tag.
+
+ent-RMCInformationDogtagProp-name = faded information dog tag
+ent-RMCInformationDogtagProp-desc = A fallen marine's information dog tag. It looks battered and the name is worn out.
+
+ent-CMIDCardStandardDogtag-name = dog tag
+ent-CMIDCardStandardDogtag-desc = A marine dog tag.
+
+ent-RMCIDCardStandardDogtagHidden-name = dog tag
+ent-RMCIDCardStandardDogtagHidden-desc = A marine dog tag.
+

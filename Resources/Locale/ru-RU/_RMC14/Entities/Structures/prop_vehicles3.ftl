@@ -1,136 +1,204 @@
-ent-RMCPropVehicleSmallTruckRedF = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckRed = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckMiningF = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckMining = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckMedicalF = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckMedical = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckGreenF = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckGreen = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckGarbageF = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckGarbage = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckBrownCargoAltF = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckBrownCargoAlt = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckBrownCargoF = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckBrownCargo = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckBrownF = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckBrown = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckBlueCargoF = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckBlueCargo = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckBlueF = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleSmallTruckBlue = маленький грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLongTruckWeYaBlueF = дальнобойный грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLongTruckWeYaBlue = дальнобойный грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLongTruckRedF = дальнобойный грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLongTruckRed = дальнобойный грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLongTruckMiningF = дальнобойный грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLongTruckMining = дальнобойный грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLongTruckDonkF = дальнобойный грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLongTruckDonk = дальнобойный грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLongTruckBrownF = дальнобойный грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLongTruckBrown = дальнобойный грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLongTruckBlueF = дальнобойный грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLongTruckBlue = дальнобойный грузовик
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanWhiteF = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanWhite = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanRedF = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanRed = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanPizzaF = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanPizza = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanMiningF = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanMining = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanMaintWhiteF = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanMaintWhite = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanMaintGreyF = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanMaintGrey = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanBlueGreyF = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleBoxVanBlueGrey = фургон с закрытым кузовом
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckWhiteWeYaFilledF = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckWhiteWeYaFilled = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckWhiteWeYaF = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckWhiteWeYa = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckBlackFilledF = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckBlackFilled = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckBlackF = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckBlack = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckWhiteFilledF = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckWhiteFilled = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckWhiteF = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckWhite = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckTealFilledF = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckTealFilled = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckTealF = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckTeal = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckBlueFilledF = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckBlueFilled = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckBlueF = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleLoaderTruckBlue = грузовик-тяжеловоз
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleAmbulanceF = машина скорой помощи
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
-ent-RMCPropVehicleAmbulance = машина скорой помощи
-  .desc = Он заперт и, кажется, сломан, забудьте о вождении.
+ent-RMCPropVehicleSmallTruckRedF-name = small truck
+ent-RMCPropVehicleSmallTruckRedF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckRed-name = small truck
+ent-RMCPropVehicleSmallTruckRed-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckMiningF-name = small truck
+ent-RMCPropVehicleSmallTruckMiningF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckMining-name = small truck
+ent-RMCPropVehicleSmallTruckMining-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckMedicalF-name = small truck
+ent-RMCPropVehicleSmallTruckMedicalF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckMedical-name = small truck
+ent-RMCPropVehicleSmallTruckMedical-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckGreenF-name = small truck
+ent-RMCPropVehicleSmallTruckGreenF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckGreen-name = small truck
+ent-RMCPropVehicleSmallTruckGreen-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckGarbageF-name = small truck
+ent-RMCPropVehicleSmallTruckGarbageF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckGarbage-name = small truck
+ent-RMCPropVehicleSmallTruckGarbage-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckBrownCargoAltF-name = small truck
+ent-RMCPropVehicleSmallTruckBrownCargoAltF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckBrownCargoAlt-name = small truck
+ent-RMCPropVehicleSmallTruckBrownCargoAlt-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckBrownCargoF-name = small truck
+ent-RMCPropVehicleSmallTruckBrownCargoF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckBrownCargo-name = small truck
+ent-RMCPropVehicleSmallTruckBrownCargo-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckBrownF-name = small truck
+ent-RMCPropVehicleSmallTruckBrownF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckBrown-name = small truck
+ent-RMCPropVehicleSmallTruckBrown-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckBlueCargoF-name = small truck
+ent-RMCPropVehicleSmallTruckBlueCargoF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckBlueCargo-name = small truck
+ent-RMCPropVehicleSmallTruckBlueCargo-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckBlueF-name = small truck
+ent-RMCPropVehicleSmallTruckBlueF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleSmallTruckBlue-name = small truck
+ent-RMCPropVehicleSmallTruckBlue-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLongTruckWeYaBlueF-name = long-hauler truck
+ent-RMCPropVehicleLongTruckWeYaBlueF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLongTruckWeYaBlue-name = long-hauler truck
+ent-RMCPropVehicleLongTruckWeYaBlue-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLongTruckRedF-name = long-hauler truck
+ent-RMCPropVehicleLongTruckRedF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLongTruckRed-name = long-hauler truck
+ent-RMCPropVehicleLongTruckRed-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLongTruckMiningF-name = long-hauler truck
+ent-RMCPropVehicleLongTruckMiningF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLongTruckMining-name = long-hauler truck
+ent-RMCPropVehicleLongTruckMining-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLongTruckDonkF-name = long-hauler truck
+ent-RMCPropVehicleLongTruckDonkF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLongTruckDonk-name = long-hauler truck
+ent-RMCPropVehicleLongTruckDonk-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLongTruckBrownF-name = long-hauler truck
+ent-RMCPropVehicleLongTruckBrownF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLongTruckBrown-name = long-hauler truck
+ent-RMCPropVehicleLongTruckBrown-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLongTruckBlueF-name = long-hauler truck
+ent-RMCPropVehicleLongTruckBlueF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLongTruckBlue-name = long-hauler truck
+ent-RMCPropVehicleLongTruckBlue-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanWhiteF-name = box van
+ent-RMCPropVehicleBoxVanWhiteF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanWhite-name = box van
+ent-RMCPropVehicleBoxVanWhite-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanRedF-name = box van
+ent-RMCPropVehicleBoxVanRedF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanRed-name = box van
+ent-RMCPropVehicleBoxVanRed-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanPizzaF-name = box van
+ent-RMCPropVehicleBoxVanPizzaF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanPizza-name = box van
+ent-RMCPropVehicleBoxVanPizza-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanMiningF-name = box van
+ent-RMCPropVehicleBoxVanMiningF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanMining-name = box van
+ent-RMCPropVehicleBoxVanMining-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanMaintWhiteF-name = box van
+ent-RMCPropVehicleBoxVanMaintWhiteF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanMaintWhite-name = box van
+ent-RMCPropVehicleBoxVanMaintWhite-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanMaintGreyF-name = box van
+ent-RMCPropVehicleBoxVanMaintGreyF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanMaintGrey-name = box van
+ent-RMCPropVehicleBoxVanMaintGrey-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanBlueGreyF-name = box van
+ent-RMCPropVehicleBoxVanBlueGreyF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleBoxVanBlueGrey-name = box van
+ent-RMCPropVehicleBoxVanBlueGrey-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckWhiteWeYaFilledF-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckWhiteWeYaFilledF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckWhiteWeYaFilled-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckWhiteWeYaFilled-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckWhiteWeYaF-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckWhiteWeYaF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckWhiteWeYa-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckWhiteWeYa-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckBlackFilledF-name = Weston-Yamada security truck
+ent-RMCPropVehicleLoaderTruckBlackFilledF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckBlackFilled-name = Weston-Yamada security truck
+ent-RMCPropVehicleLoaderTruckBlackFilled-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckBlackF-name = Weston-Yamada security truck
+ent-RMCPropVehicleLoaderTruckBlackF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckBlack-name = Weston-Yamada security truck
+ent-RMCPropVehicleLoaderTruckBlack-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckWhiteFilledF-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckWhiteFilledF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckWhiteFilled-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckWhiteFilled-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckWhiteF-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckWhiteF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckWhite-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckWhite-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckTealFilledF-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckTealFilledF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckTealFilled-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckTealFilled-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckTealF-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckTealF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckTeal-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckTeal-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckBlueFilledF-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckBlueFilledF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckBlueFilled-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckBlueFilled-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckBlueF-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckBlueF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleLoaderTruckBlue-name = heavy-loader truck
+ent-RMCPropVehicleLoaderTruckBlue-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleAmbulanceF-name = ambulance
+ent-RMCPropVehicleAmbulanceF-desc = It's locked and seems to be broken down, forget driving this.
+
+ent-RMCPropVehicleAmbulance-name = ambulance
+ent-RMCPropVehicleAmbulance-desc = It's locked and seems to be broken down, forget driving this.
+

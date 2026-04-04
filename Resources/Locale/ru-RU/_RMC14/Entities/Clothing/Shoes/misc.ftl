@@ -1,18 +1,30 @@
-ent-RMCShoesSnow = зимние ботинки
-  .desc = Когда ваши ноги так же холодны, как ваше сердце.
-ent-RMCShoesSandals = сандалии
-  .desc = Пара довольно простых деревянных сандалий.
-ent-RMCShoesWeYaStompers = «Топтуны» Weston-Yamada
-  .desc = Пара кроссовок, разработанных для вызова морально поднимающего отклика у любого, кто их увидит.
-ent-RMCShoesGaloshes = галоши
-  .desc = Пара резиновых сапог.
-ent-RMCShoesPrisoner = обувь заключённого
-  .desc = Пара оранжевой обуви, которую носят заключённые в соответствии с законом морской пехоты.
-ent-RMCShoesJackboots = сапоги-ботфорты
-  .desc = Боевые ботинки службы безопасности для боевых сценариев или боевых ситуаций. Только бой, всё время.
-ent-RMCShoesFancyLeather = элегантные кожаные туфли
-  .desc = Элегантная пара кожаных туфель.
-ent-RMCShoesLaceup = шнурованные туфли
-  .desc = Вершина моды, и они уже начищены!
-ent-RMCShoesLaceupBrown = шнурованные туфли
-  .desc = Вершина моды, и они уже начищены!
+ent-RMCShoesSnow-name = snow boots
+ent-RMCShoesSnow-desc = When your feet are as cold as your heart.
+
+ent-RMCShoesSandals-name = sandals
+ent-RMCShoesSandals-desc = A pair of rather plain, wooden sandals.
+
+ent-RMCShoesWeYaStompers-name = Weston-Yamada stompers
+ent-RMCShoesWeYaStompers-desc = A pair of sneakers designed to elicit a morale boosting response within anyone that witnesses them.
+
+ent-RMCShoesGaloshes-name = galoshes
+ent-RMCShoesGaloshes-desc = A pair of rubber boots.
+
+ent-RMCShoesPrisoner-name = prisoner shoes
+ent-RMCShoesPrisoner-desc = A pair of orange shoes worn by prisoners as directed by Marine Law.
+
+ent-RMCShoesJackboots-name = jackboots
+ent-RMCShoesJackboots-desc = Security combat boots for combat scenarios or combat situations. All combat, all the time.
+
+ent-RMCShoesFancyLeather-name = fancy leather shoes
+ent-RMCShoesFancyLeather-desc = A fancy pair of leather shoes.
+
+ent-RMCShoesLaceup-name = laceup shoes
+ent-RMCShoesLaceup-desc = The height of fashion, and they're pre-polished!
+
+ent-RMCShoesLaceupBrown-name = laceup shoes
+ent-RMCShoesLaceupBrown-desc = The height of fashion, and they're pre-polished!
+
+ent-RMCShoesLaceupDress-name = dress shoes
+ent-RMCShoesLaceupDress-desc = Pre-polished fancy dress shoes. You can see your reflection in them.
+

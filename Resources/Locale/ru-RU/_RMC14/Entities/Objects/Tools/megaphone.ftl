@@ -1,2 +1,2 @@
-ent-RMCMegaphone = мегафон
-  .desc = Устройство для проецирования вашего голоса. Громко.
+ent-RMCMegaphone-name = item
+

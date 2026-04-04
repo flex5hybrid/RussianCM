@@ -1,2 +1,3 @@
-ent-RMCFuelPump = топливный насос
-  .desc = Это машина, которая перекачивает топливо по кораблю.
+ent-RMCFuelPump-name = fuel pump
+ent-RMCFuelPump-desc = It is a machine that pumps fuel around the ship.
+

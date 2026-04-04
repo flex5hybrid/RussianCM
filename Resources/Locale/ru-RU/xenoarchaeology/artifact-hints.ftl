@@ -1,6 +1,5 @@
 # you shouldn't be creating new hints for every effect/trigger
 # try and reuse them so that a hint isn't a dead giveaway. -emo
-
 artifact-effect-hint-mental = Мозговое воздействие
 artifact-effect-hint-environment = Воздействие на окружение
 artifact-effect-hint-electrical-interference = Электрическое воздействие
@@ -21,10 +20,8 @@ artifact-effect-hint-sentience = Неврологическая активнос
 artifact-effect-hint-polymorph = Трансмогрификационная активность
 artifact-effect-hint-magnet = Магнитные волны
 artifact-effect-hint-visual = Визуальное искажение
-
 # the triggers should be more obvious than the effects
 # gives people an idea of what to do: don't be too specific (i.e. no "welders")
-
 artifact-trigger-hint-electricity = Электричество
 artifact-trigger-hint-heat = Высокая температура
 artifact-trigger-hint-physical = Физические повреждения

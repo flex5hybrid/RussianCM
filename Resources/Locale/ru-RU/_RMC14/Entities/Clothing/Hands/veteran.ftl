@@ -1,12 +1,24 @@
-ent-RMCHandsVeteranCBRN = перчатки M3 MOPP
-  .desc = Перчатки M3 MOPP изготовлены из обработанного венлара, предназначенного для защиты рук пользователя от заражения при работе в условиях РХБЗ. Были приняты особые меры, чтобы обеспечить рукам пользователя достаточную ловкость для полного обслуживания винтовки или использования большинства ручных инструментов, в то время как круглые липкие узоры на пальцах обеспечивают улучшенный хват. Стандартный протокол РХБЗ предписывает, что перчатки имеют максимальный срок эффективности около двадцати четырёх часов после воздействия умеренных уровней заражения, и пользователям рекомендуется утилизировать и заменять их после этого.
-ent-RMCHandsVeteranRoyalMarine = боевые перчатки схемы L6
-  .desc = Тактические перчатки стандартной выдачи, используемые королевской морской пехотой.
-ent-RMCHandsVeteranPMCCommando = рукавицы M5X
-  .desc = Пара сильно бронированных перчаток, созданных для комплектации экзокостюма M5X.
-ent-RMCHandsVeteranPMC = перчатки ЧВК WeYa
-  .desc = Перчатки из кевларового волокна стандартной выдачи, производимые для и силами диспетчерского подразделения ЧВК Weston-Yamada. Они защищают от поражения электрическим током.
-ent-RMCHandsVeteranInsulated = диэлектрические бронированные перчатки
-  .desc = Нерегламентные перчатки из кевларового волокна. Эти, по-видимому, ОСОБЕННО диэлектрические.
-ent-RMCHandsVeteran = бронированные перчатки
-  .desc = Нерегламентные перчатки из кевларового волокна. Они диэлектрические и сильно бронированные.
+ent-RMCHandsVeteranCBRN-name = M3 MOPP gloves
+ent-RMCHandsVeteranCBRN-desc = M3 MOPP gloves are made of treated venlar designed to protect the user’s hands against contamination whilst working in CBRN environments. Special care has been taken to give the user’s hands enough dexterity to fully service a rifle or utilize most handheld tools, while circular adhesive patterns on the fingers provide the user with enhanced grips. Standard CBRN protocol dictates that the gloves are expected to have a lifespan of maximum effectiveness of around twenty-four hours once exposed to moderate levels of contamination and that users are recommended to discard and replace them afterwards.
+
+ent-RMCHandsVeteranRoyalMarine-name = L6 pattern combat gloves
+ent-RMCHandsVeteranRoyalMarine-desc = Standard issue tactical gloves used by the Royal Crown Marines.
+
+ent-RMCHandsVeteranPMCCommando-name = M5X gauntlets
+ent-RMCHandsVeteranPMCCommando-desc = A pair of heavily armored gloves made to complete the M5X exoskeleton armor.
+
+ent-RMCHandsVeteranPMC-name = WeYa PMC gloves
+ent-RMCHandsVeteranPMC-desc = Standard issue kevlon fiber gloves manufactured for and by Weston-Yamada PMC dispatch division. They are insulated against electrical shock.
+
+ent-RMCHandsVeteranInsulated-name = insulated armored gloves
+ent-RMCHandsVeteranInsulated-desc = Non-standard kevlon fiber gloves. These are apparently ESPECIALLY insulated.
+
+ent-RMCHandsVeteran-name = armored gloves
+ent-RMCHandsVeteran-desc = Non-standard kevlon fiber gloves. They're insulated and heavily armored.
+
+ent-RMCHandsVeteranSPP-name = armored gloves
+ent-RMCHandsVeteranSPP-desc = Non-standard kevlon fiber gloves. They're insulated and heavily armored.
+
+ent-RMCHandsVeteranPMCCommandoSurvivor-name = We-Ya Commando gloves
+ent-RMCHandsVeteranPMCCommandoSurvivor-desc = Standard issue kevlon fiber gloves manufactured for and by Weston-Yamada Commandos. They are insulated against electrical shock.
+

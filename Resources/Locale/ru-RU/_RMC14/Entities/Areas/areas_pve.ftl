@@ -1,5 +1,10 @@
-ent-RMCAreaPVEShuttle = Трансфер
-ent-RMCAreaPVEIndoors = В помещении
-ent-RMCAreaPVELZ = Зона приземления
-ent-RMCAreaPVEOutdoors = на открытом воздухе
-ent-RMCAreaPVEOOB = За пределами границ
+ent-RMCAreaPVEShuttle-name = Трансфер
+
+ent-RMCAreaPVEIndoors-name = В помещении
+
+ent-RMCAreaPVELZ-name = Зона приземления
+
+ent-RMCAreaPVEOutdoors-name = на открытом воздухе
+
+ent-RMCAreaPVEOOB-name = За пределами границ
+

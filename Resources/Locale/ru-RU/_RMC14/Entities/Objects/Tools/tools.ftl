@@ -1,37 +1,40 @@
-ent-CMCrowbarRed = аварийный лом
-ent-CMTRayScanner = Т-лучевой сканер
-  .desc = Высокотехнологичное сканирующее устройство, использующее терагерцевое излучение для обнаружения скрытой инфраструктуры.
-ent-CMMultitool = настройщик доступа
-  .desc = Небольшой ручной инструмент для переопределения различных функций машин.
+ent-CMCrowbarRed-name = emergency crowbar
+ent-CMCrowbarRed-desc = A multipurpose tool to pry open doors and fight interdimensional invaders.
 
-ent-CMCrowbar = монтировка
-  .desc = Многофункциональное устройство для открытия дверей и борьбы с инопришеленцами.
-ent-CMWirecutter = кусачки
-    .desc = Это убивает провод.
-ent-CMScrewdriver = отвёртка
-    .desc = Крутящий момент промышленного класса в небольшом корпусе отвёртки.
-ent-CMWrench = гаечный ключ
-    .desc = Главный инструмент для откручивания и крепления чего бы то ни было куда-нибудь.
-ent-CMNetworkConfigurator = конфигуратор сетей
-    .desc = Инструмент для соединения устройств между собой. Имеет два режима: режим списка — для массового соединения устройств, и режим соединения — для продвинутого соединения устройств.
-ent-CMPowerDrill = электродрель
-    .desc = Простая дрель с электроприводом.
-ent-CMRCD = РСУ
-    .desc = Новейшее ручное строительное устройство, которое может быстро размещать и демонтировать стены, полы и шлюзы.
-ent-RCDEmpty = { ent-RCD }
+ent-CMTRayScanner-name = t-ray scanner
+ent-CMTRayScanner-desc = A high-tech scanning device that uses Terahertz Radiation to detect subfloor infrastructure.
+
+ent-CMMultitool-name = настройщик доступа
+
+ent-CMCrowbar-name = crowbar
+ent-CMCrowbar-desc = A multipurpose tool to pry open doors and fight interdimensional invaders.
+
+ent-CMWirecutter-name = кусачки
+
+ent-CMScrewdriver-name = отвёртка
+
+ent-CMWrench-name = гаечный ключ
+
+ent-CMNetworkConfigurator-name = конфигуратор сетей
+
+ent-CMPowerDrill-name = электродрель
+
+ent-CMRCD-name = РСУ
+
+ent-RCDEmpty-name = { ent-RCD }
+
     .suffix = Пустой
-    .desc = { ent-RCD.desc }
-ent-RCDRecharging = экспериментальный РСУ
-    .desc = Блюспейс-улучшенное РСУ, пассивно регенерирующее заряды.
     .suffix = Автозарядка
-ent-RCDExperimental = экспериментальный РСУ
-    .desc = Блюспейс-улучшенное РСУ, пассивно регенерирующее заряды.
     .suffix = Адмемы
-ent-RCDAmmo = картридж РСУ
-    .desc = Картридж для РСУ.
-ent-Shovel = лопата
-    .desc = Большой инструмент для копания и перемещения грунта.
-ent-Omnitool = омнитул
-    .desc = Лучший друг дрона.
-ent-RollingPin = скалка
-    .desc = Приспособление, используемое для расплющивания теста.
+ent-RMCTacticalPrybar-name = tactical prybar
+ent-RMCTacticalPrybar-desc = Holding this makes you want to raid a townhouse filled with terrorists. Also doubles as a blunt weapon.
+
+ent-RMCWireSnappers-name = wire snappers
+ent-RMCWireSnappers-desc = The jaws are perfect for snipping large wires and other small metal bits, but are a bit too heavy for delicate work.
+
+ent-RMCWireSnappersNoRepeat-name = wire snappers
+ent-RMCWireSnappersNoRepeat-desc = The jaws are perfect for snipping large wires and other small metal bits, but are a bit too heavy for delicate work.
+
+ent-RMCWireSnappersNormal-name = wire snappers
+ent-RMCWireSnappersNormal-desc = The jaws are perfect for snipping large wires and other small metal bits, but are a bit too heavy for delicate work.
+

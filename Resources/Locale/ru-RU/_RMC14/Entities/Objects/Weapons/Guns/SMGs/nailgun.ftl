@@ -1,5 +1,10 @@
-ent-RMCCartridge7x45mm = гвоздь (7x45мм)
-ent-RMCMagazineSMGNailgun = магазин гвоздевого пистолета (7x45мм)
-  .desc = Большой магазин oversized пласталевых гвоздей. К сожалению, стоимость производства этих гвоздей делает их слишком дорогими для большинства военных проектов, и лишь некоторые специфические строительные проекты требуют их использования.
-ent-WeaponNailgun = гвоздевой пистолет
-  .desc = Столярный инструмент, используемый для забивания гвоздей в твердые поверхности. Конечно, если перед ним ничего нет, то это просто очень острый гвоздь, выпущенный с высокой скоростью...
+ent-RMCCartridge7x45mm-name = nail (7x45mm)
+
+ent-RMCMagazineSMGNailgun-name = item
+
+ent-WeaponNailgun-name = nailgun
+ent-WeaponNailgun-desc = A carpentry tool, used to drive nails into tough surfaces. Of course, if there isn't anything there, that's just a very sharp nail launching at high velocity...
+
+ent-RMCNail7x45mm-name = BaseBullet
+ent-RMCNail7x45mm-desc = If you can see this you're probably dead!
+

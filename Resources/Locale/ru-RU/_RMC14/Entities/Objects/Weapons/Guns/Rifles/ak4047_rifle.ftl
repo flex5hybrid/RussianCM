@@ -1,6 +1,10 @@
-ent-RMCMagazineRifleAK4047HEAP = Магазин АК4047 БОПС (10x24мм)
-ent-RMCMagazineRifleAK4047Incendiary = Зажигательный магазин АК4047 (10x24мм)
-ent-RMCMagazineRifleAK4047AP = Бронебойный магазин АК4047 (10x24мм)
-ent-RMCMagazineRifleAK4047 = Магазин АК4047 (10x24мм)
-ent-RMCWeaponRifleAK4047 = Штурмовая винтовка АК-4047
-  .desc = Аналог винтовки М54С в ВПС, АК-4047 — это дешевая и надежная замена. Как следствие, это оружие часто оказывается в руках наемников и повстанцев. Хотя и не такая точная, как М54, АК-4047 прочнее, чем оружие КМК. АК-4047 будет работать даже после падения со скалы и месячного пребывания под водой.
+ent-RMCMagazineRifleAK4047HEAP-name = item
+
+ent-RMCMagazineRifleAK4047Incendiary-name = item
+
+ent-RMCMagazineRifleAK4047AP-name = item
+
+ent-RMCMagazineRifleAK4047-name = item
+
+ent-RMCWeaponRifleAK4047-name = Штурмовая винтовка АК-4047
+

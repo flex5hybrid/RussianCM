@@ -1,5 +1,4 @@
 ## Guardian host specific
-
 guardian-created = Вы чувствуете... Одержимость.
 guardian-already-present-invalid-creation = Вы НЕ переживёте заново ту одержимость!
 guardian-no-actions-invalid-creation = У вас нет возможности содержать в себе стража!
@@ -9,14 +8,10 @@ guardian-activator-invalid-target = {CAPITALIZE($entity)} не может быт
 guardian-no-soul = У вашего стража нет души.
 guardian-available = У вашего стража теперь есть душа.
 guardian-inside-container = Здесь не хватает места, чтобы высвободить стража!
-
 ## Guardian entity specific
-
 guardian-entity-recall = Страж исчезает в воздухе!
 guardian-entity-taking-damage = Ваш страж получает урон!
-
 ## Health warnings
-
 guardian-host-critical-warn = ВАШ ХОЗЯИН РАНЕН!
 guardian-host-death-warn = ВЫ ПЕРЕСТАЁТЕ СУЩЕСТВОВАТЬ
 guardian-death-warn = ВАШЕ ТЕЛО ПРОНЗАЕТ СУБАТОМНАЯ БОЛЬ, КОГДА ОНО РАСПАДАЕТСЯ!

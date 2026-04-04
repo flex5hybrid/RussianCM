@@ -11,9 +11,7 @@ marking-used-forced = { $marking-name } (Принудительно)
 marking-slot-add = Добавить
 marking-slot-remove = Удалить
 marking-slot = Слот { $number }
-
 # Categories
-
 markings-category-Special = Специальное
 markings-category-Hair = Причёска
 markings-category-FacialHair = Лицевая растительность

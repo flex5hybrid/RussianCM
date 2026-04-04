@@ -1,2 +1,2 @@
-ent-CMRadioHandheld = армейская радиотрубка
-  .desc = Также известна как «Walkie-Talkie». Это устройство обеспечивает дальнюю связь, когда телекоммуникации недоступны.
+ent-CMRadioHandheld-name = item
+

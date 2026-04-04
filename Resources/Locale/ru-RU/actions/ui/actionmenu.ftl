@@ -1,5 +1,4 @@
 ## Action menu stuff (left panel, with hotbars etc)
-
 ui-actionmenu-title = Действия
 ui-actionmenu-filter-label = Фильтры: { $selectedLabels }
 ui-actionmenu-filter-button = Фильтр

@@ -1,14 +1,24 @@
-ent-RMCCartridgeRifleM4SPRA19Incendiary = патрон (A19 высокой скорости зажигательный)
-  .desc = Зажигательный патрон A19 высокой скорости. Подходит для кастомных магазинов M4SPR.
-ent-RMCCartridgeRifleM4SPRA19Impact = патрон (A19 высокой скорости повышенного воздействия)
-  .desc = Патрон A19 высокой скорости повышенного воздействия. Подходит для кастомных магазинов M4SPR.
-ent-RMCCartridgeRifleM4SPRA19 = патрон (A19 высокой скорости)
-  .desc = Патрон A19 высокой скорости. Подходит для кастомных магазинов M4SPR.
-ent-RMCMagazineRifleM4SPRA19Incendiary = магазин A19 ВС зажигательных (10x24мм)
-  .desc = Магазин зажигательных патронов A19 ВС для кастомной боевой винтовки M4SPR. Кастомная боевая винтовка M4SPR — единственное оружие, которое может использовать эти патроны.
-ent-RMCMagazineRifleM4SPRA19Impact = магазин A19 ВС повышенного воздействия (10x24мм)
-  .desc = Магазин патронов A19 ВС повышенного воздействия для кастомной боевой винтовки M4SPR. Кастомная боевая винтовка M4SPR — единственное оружие, которое может использовать эти патроны.
-ent-RMCMagazineRifleM4SPRA19 = магазин A19 ВС (10x24мм)
-  .desc = Магазин патронов A19 высокой скорости для кастомной боевой винтовки M4SPR. Кастомная боевая винтовка M4SPR — единственное оружие, которое может использовать эти патроны.
-ent-WeaponRifleM4SPRCustom = кастомная боевая винтовка M4SPR
-  .desc = Улучшение уже отличной M4SPR. Способна использовать патроны A19, а также имеет лучший контроль и точность ценой большей сложности в использовании. Может принимать стандартные магазины M4SPR, но с меньшим уроном.
+ent-RMCCartridgeRifleM4SPRA19Incendiary-name = cartridge
+
+ent-RMCCartridgeRifleM4SPRA19Impact-name = cartridge
+
+ent-RMCCartridgeRifleM4SPRA19-name = cartridge
+
+ent-RMCMagazineRifleM4SPRA19Incendiary-name = item
+
+ent-RMCMagazineRifleM4SPRA19Impact-name = item
+
+ent-RMCMagazineRifleM4SPRA19-name = item
+
+ent-WeaponRifleM4SPRCustom-name = M4SPR custom battle rifle
+ent-WeaponRifleM4SPRCustom-desc = An improvement over the already great M4SPR. Able to take A19 rounds, as well as having better control and accuracy at the cost of being harder to use. Can take traditional M4SPR mags, at lower damage.
+
+ent-BulletRifleM4SPRA19-name = BaseBullet
+ent-BulletRifleM4SPRA19-desc = If you can see this you're probably dead!
+
+ent-BulletRifleM4SPRA19Impact-name = BaseBullet
+ent-BulletRifleM4SPRA19Impact-desc = If you can see this you're probably dead!
+
+ent-BulletRifleM4SPRA19Incendiary-name = BaseBullet
+ent-BulletRifleM4SPRA19Incendiary-desc = If you can see this you're probably dead!
+

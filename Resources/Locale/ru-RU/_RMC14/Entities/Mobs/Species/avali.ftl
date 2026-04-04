@@ -1,1 +1,2 @@
-ent-CMMobAvali = Морпех Урист МакАвали
+ent-CMMobAvali-name = Urist C.M McRaptor
+

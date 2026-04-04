@@ -1,2 +1,2 @@
-ent-CMXenoLesserDrone = Малый дрон
-  .desc = Инопланетный дрон. Выглядит... меньше.
+ent-CMXenoLesserDrone-name = cm-job-name-xeno-lesser-drone
+

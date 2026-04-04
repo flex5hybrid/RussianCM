@@ -1,2 +1,3 @@
-ent-RMCWeaponTaser = дизаблер
-  .desc = Продвинутое стазис-устройство, способное стрелять шарами ионизированного электричества. Используется для несмертельных нейтрализаций.
+ent-RMCWeaponTaser-name = disabler gun
+ent-RMCWeaponTaser-desc = An advanced stun device capable of firing balls of ionized electricity. Used for nonlethal takedowns.
+

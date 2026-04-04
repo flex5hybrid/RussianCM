@@ -1,8 +1,8 @@
-ent-RMCReagentJug = ёмкость для реагентов
-  .desc = Большая ёмкость из нереактивного пластика, способная переносить большое количество различных химикатов туда, где они нужны. Вмещает 500 единиц.
-ent-RMCBucketJanitorial = уборочное ведро
-  .desc = Это большое ведро, которое помещается в уборочную тележку. Вмещает 500 единиц.
-ent-CMBucketMop = ведро для швабры
-  .desc = Большее ведро, обычно используемое со шваброй. Вмещает 240 единиц.
-ent-RMCBucket = ведро
-  .desc = Это ведро. Вмещает 120 единиц.
+ent-RMCReagentJug-name = item
+
+ent-RMCBucketJanitorial-name = item
+
+ent-CMBucketMop-name = item
+
+ent-RMCBucket-name = item
+

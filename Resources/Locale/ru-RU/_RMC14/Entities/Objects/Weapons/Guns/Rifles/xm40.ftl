@@ -1,4 +1,6 @@
-ent-RMCMagazineRifleXM40HEAP = Магазин XM40 HEAP (10x24 мм)
-ent-RMCMagazineRifleXM40AP = Магазин XM40 AP (10x24 мм)
-ent-RMCWeaponRifleXM40 = Штурмовая винтовка ХМ40
-  .desc = Один из экспериментальных предшественников линейки M54C, который так и не получил широкого распространения за пределами элитных подразделений Морпеха. 
+ent-RMCMagazineRifleXM40HEAP-name = item
+
+ent-RMCMagazineRifleXM40AP-name = item
+
+ent-RMCWeaponRifleXM40-name = Штурмовая винтовка ХМ40
+

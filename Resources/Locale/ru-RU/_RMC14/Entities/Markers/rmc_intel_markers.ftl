@@ -1,5 +1,10 @@
-ent-RMCSpawnerIntelScience = объективная ориентировочная наука
-ent-RMCSpawnerIntelFar = объективный ориентир далеко
-ent-RMCSpawnerIntelMedium = объективный ориентир средний
-ent-RMCSpawnerIntelClose = Объективный ориентир близко
-ent-RMCSpawnerIntelBase = генератор информации
+ent-RMCSpawnerIntelScience-name = objective landmark science
+
+ent-RMCSpawnerIntelFar-name = objective landmark far
+
+ent-RMCSpawnerIntelMedium-name = objective landmark medium
+
+ent-RMCSpawnerIntelClose-name = objective landmark close
+
+ent-RMCSpawnerIntelBase-name = intel spawner
+

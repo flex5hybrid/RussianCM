@@ -1,48 +1,96 @@
 ent-SpawnPointObserver-name = observer spawn point
+
 ent-SpawnPointLatejoin-name = latejoin spawn point
+
 ent-SpawnPointQuartermaster-name = quartermaster
+
 ent-SpawnPointCargoTechnician-name = cargotechnician
+
 ent-SpawnPointSalvageSpecialist-name = salvagespecialist
+
 ent-SpawnPointPassenger-name = passenger
+
 ent-SpawnPointTechnicalAssistant-name = technical assistant
+
 ent-SpawnPointMedicalIntern-name = medical intern
+
 ent-SpawnPointSecurityCadet-name = security cadet
+
 ent-SpawnPointResearchAssistant-name = research assistant
+
 ent-SpawnPointServiceWorker-name = service worker
+
 ent-SpawnPointBartender-name = bartender
+
 ent-SpawnPointChef-name = chef
+
 ent-SpawnPointBotanist-name = botanist
+
 ent-SpawnPointClown-name = clown
+
 ent-SpawnPointMime-name = mime
+
 ent-SpawnPointChaplain-name = chaplain
+
 ent-SpawnPointLibrarian-name = librarian
+
 ent-SpawnPointLawyer-name = lawyer
+
 ent-SpawnPointJanitor-name = janitor
+
 ent-SpawnPointMusician-name = musician
+
 ent-SpawnPointBoxer-name = boxer
+
 ent-SpawnPointBorg-name = cyborg
+
 ent-SpawnPointCaptain-name = captain
+
 ent-SpawnPointHeadOfPersonnel-name = headofpersonnel
+
 ent-SpawnPointChiefEngineer-name = chiefengineer
+
 ent-SpawnPointStationEngineer-name = stationengineer
+
 ent-SpawnPointAtmos-name = atmospherics
+
 ent-SpawnPointChiefMedicalOfficer-name = chiefmedicalofficer
+
 ent-SpawnPointMedicalDoctor-name = medicaldoctor
+
 ent-SpawnPointParamedic-name = paramedic
+
 ent-SpawnPointChemist-name = chemist
+
 ent-SpawnPointResearchDirector-name = researchdirector
+
 ent-SpawnPointScientist-name = scientist
+
 ent-SpawnPointHeadOfSecurity-name = headofsecurity
+
 ent-SpawnPointWarden-name = warden
+
 ent-SpawnPointSecurityOfficer-name = securityofficer
+
 ent-SpawnPointDetective-name = detective
+
 ent-SpawnPointBrigmedic-name = brigmedic
+
 ent-SpawnPointERTLeader-name = ERTleader
+
 ent-SpawnPointERTChaplain-name = ERTchaplain
+
 ent-SpawnPointERTEngineer-name = ERTengineer
+
 ent-SpawnPointERTMedical-name = ERTmedical
+
 ent-SpawnPointERTSecurity-name = ERTsecurity
+
 ent-SpawnPointERTJanitor-name = ERTjanitor
+
 ent-SpawnPointReporter-name = reporter
+
 ent-SpawnPointPsychologist-name = psychologist
+
 ent-SpawnPointZookeeper-name = zookeeper
+

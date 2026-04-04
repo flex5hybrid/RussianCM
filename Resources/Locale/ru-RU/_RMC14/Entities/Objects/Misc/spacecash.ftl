@@ -1,4 +1,27 @@
-ent-RMCSpaceCash1 = однодолларовая купюра
-  .desc = Одна однодолларовая купюра, отчеканенная Казначейством Объединённых Наций. На ней изображена давно забытая фигура ушедшей эпохи, лидер, чьё наследие теперь мало что значит для галактического населения. Хотя она имеет сентиментальную ценность для выходцев с определённых миров, её реальная стоимость невелика. В большинстве систем на неё можно купить разве что пол-хот-дога или аналогичную недорогую закуску.
-ent-RMCSpaceCash = доллары
-  .desc = Десять стодолларовых купюр, отчеканенных Казначейством Объединённых Наций. Каждая украшена лицом давно забытого дипломата с некогда могущественной планеты. Эти банкноты — не просто валюта, они кажутся живыми, будто несут в себе груз древней истории и суждения тех, кто когда-то управлял огромными империями. Лица на каждой купюре словно пристально смотрят на вас в безмолвном напряжении, как если бы каждое из них верило, что лишь оно должно быть в вашем владении.
+ent-RMCSpaceCash1-name = 1 dollar bill
+ent-RMCSpaceCash1-desc = A single one-dollar bill, minted by the United Nations Treasury. Its design features the image of a long-forgotten figure from a bygone era, a leader whose legacy now means little to the galactic populace. While it holds sentimental value for those from certain worlds, its actual worth is minimal. In most systems, it might fetch you half a hot-dog or a similar low-value snack.
+
+ent-RMCSpaceCash-name = spesos
+ent-RMCSpaceCash-desc = You gotta have money.
+
+ent-RMCSpaceCash10-name = 1 dollar bill
+ent-RMCSpaceCash10-desc = A single one-dollar bill, minted by the United Nations Treasury. Its design features the image of a long-forgotten figure from a bygone era, a leader whose legacy now means little to the galactic populace. While it holds sentimental value for those from certain worlds, its actual worth is minimal. In most systems, it might fetch you half a hot-dog or a similar low-value snack.
+
+ent-RMCSpaceCash20-name = 1 dollar bill
+ent-RMCSpaceCash20-desc = A single one-dollar bill, minted by the United Nations Treasury. Its design features the image of a long-forgotten figure from a bygone era, a leader whose legacy now means little to the galactic populace. While it holds sentimental value for those from certain worlds, its actual worth is minimal. In most systems, it might fetch you half a hot-dog or a similar low-value snack.
+
+ent-RMCSpaceCash50-name = 1 dollar bill
+ent-RMCSpaceCash50-desc = A single one-dollar bill, minted by the United Nations Treasury. Its design features the image of a long-forgotten figure from a bygone era, a leader whose legacy now means little to the galactic populace. While it holds sentimental value for those from certain worlds, its actual worth is minimal. In most systems, it might fetch you half a hot-dog or a similar low-value snack.
+
+ent-RMCSpaceCash100-name = 1 dollar bill
+ent-RMCSpaceCash100-desc = A single one-dollar bill, minted by the United Nations Treasury. Its design features the image of a long-forgotten figure from a bygone era, a leader whose legacy now means little to the galactic populace. While it holds sentimental value for those from certain worlds, its actual worth is minimal. In most systems, it might fetch you half a hot-dog or a similar low-value snack.
+
+ent-RMCSpaceCash200-name = 1 dollar bill
+ent-RMCSpaceCash200-desc = A single one-dollar bill, minted by the United Nations Treasury. Its design features the image of a long-forgotten figure from a bygone era, a leader whose legacy now means little to the galactic populace. While it holds sentimental value for those from certain worlds, its actual worth is minimal. In most systems, it might fetch you half a hot-dog or a similar low-value snack.
+
+ent-RMCSpaceCash500-name = 1 dollar bill
+ent-RMCSpaceCash500-desc = A single one-dollar bill, minted by the United Nations Treasury. Its design features the image of a long-forgotten figure from a bygone era, a leader whose legacy now means little to the galactic populace. While it holds sentimental value for those from certain worlds, its actual worth is minimal. In most systems, it might fetch you half a hot-dog or a similar low-value snack.
+
+ent-RMCSpaceCash1000-name = 1 dollar bill
+ent-RMCSpaceCash1000-desc = A single one-dollar bill, minted by the United Nations Treasury. Its design features the image of a long-forgotten figure from a bygone era, a leader whose legacy now means little to the galactic populace. While it holds sentimental value for those from certain worlds, its actual worth is minimal. In most systems, it might fetch you half a hot-dog or a similar low-value snack.
+

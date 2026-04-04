@@ -1,5 +1,4 @@
 ## Strings for the "grant_connect_bypass" command.
-
 cmd-grant_connect_bypass-desc = Temporarily allow a user to bypass regular connection checks.
 cmd-grant_connect_bypass-help =
     Usage: grant_connect_bypass <user> [duration minutes]

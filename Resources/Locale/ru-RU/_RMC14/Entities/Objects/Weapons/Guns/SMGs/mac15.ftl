@@ -1,5 +1,9 @@
-ent-RMCMagazineSMGMAC15Ext = удлинённый магазин MAC-15 (9мм)
-ent-RMCMagazineSMGMAC15 = магазин MAC-15 (9мм)
-  .desc = Магазин 9мм для MAC-15.
-ent-WeaponSMGMAC15 = пистолет-пулемёт MAC-15
-  .desc = Дешёвая, надёжная конструкция и производство делают этот повсеместный пистолет-пулемёт полезным, несмотря на возраст.
+ent-RMCMagazineSMGMAC15Ext-name = item
+
+ent-RMCMagazineSMGMAC15-name = item
+
+ent-WeaponSMGMAC15-name = MAC-15 submachinegun
+ent-WeaponSMGMAC15-desc = A cheap, reliable design and manufacture make this ubiquitous submachinegun useful despite the age.
+
+ent-RMCCartridge9mmSMGMAC15-name = cartridge (10x20mm)
+

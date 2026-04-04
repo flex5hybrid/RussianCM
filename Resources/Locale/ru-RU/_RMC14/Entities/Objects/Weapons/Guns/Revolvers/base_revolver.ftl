@@ -1,0 +1,2 @@
+ent-RMCWeaponRevolverBase-name = item
+

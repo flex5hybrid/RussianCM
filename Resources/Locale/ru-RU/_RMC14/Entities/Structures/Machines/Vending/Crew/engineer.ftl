@@ -1,4 +1,6 @@
-ent-CMVendorBundleCrewMaintenanceEssentials = необходимый набор для обслуживания
-  .desc = В комплект входит фонарик и заменитель света.
-ent-ColMarTechCrewMaintTech = Стойка для оборудования для технического обслуживания ColMarTech
-  .desc = Автоматизированная стойка, подключенная к огромному хранилищу стандартного оборудования для техников по техническому обслуживанию.
+ent-CMVendorBundleCrewMaintenanceEssentials-name = essential maintenance set
+ent-CMVendorBundleCrewMaintenanceEssentials-desc = Contains a flashlight and a light replacer.
+
+ent-ColMarTechCrewMaintTech-name = ColMarTech Maintenance Technician Equipment Rack
+ent-ColMarTechCrewMaintTech-desc = An automated rack hooked up to a colossal storage of Maintenance Technician standard-issue equipment.
+

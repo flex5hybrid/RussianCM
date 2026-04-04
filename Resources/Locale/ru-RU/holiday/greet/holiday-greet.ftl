@@ -1,9 +1,6 @@
 ## Generic Congrats
-
 holiday-greet = Счастливого { $holidayName }!
-
 ## Holiday Names
-
 holiday-name-new-year = Нового года
 holiday-name-mister-lizard = дня рождения Мистера Ящерки
 holiday-name-chinese-new-year = Китайского Нового года
@@ -70,9 +67,7 @@ holiday-name-boxing-day = Дня подарков
 holiday-name-friday-thirteenth = Дня неприятностей
 holiday-name-national-coming-out-day = Национального дня каминг-аута
 holiday-name-pride-month = Месяца гордости
-
 ## Custom congrats
-
 holiday-custom-cosmonautics-day = В этот день более 600 лет назад товарищ Юрий Гагарин первым полетел в космос!
 holiday-custom-mothers-day = С Днём матери в большинстве стран Северной и Южной Америки, Азии и Океании!
 holiday-custom-bastille-day = Вы слышите, как поёт народ?

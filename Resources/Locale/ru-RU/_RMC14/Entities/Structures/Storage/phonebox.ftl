@@ -1,4 +1,18 @@
-ent-RMCPhoneboxBrokenBase = разбитая телефонная будка
-  .desc = Это телефонная будка, устаревшая, но надежная технология. 
-ent-RMCPhoneboxBase = телефонная будка
-  .desc = Это телефонная будка, устаревшая, но надежная технология. 
+ent-RMCPhoneboxBrokenBase-name = wrecked phonebox
+ent-RMCPhoneboxBrokenBase-desc = It's a phonebox, outdated but realiable technology. These are used to communicate throughout the colony and connected colonies without interference. It seems it's completely wrecked, covered in blood and the glass is smashed. Hiding inside would be pointless.
+
+ent-RMCPhoneboxBase-name = phonebox
+ent-RMCPhoneboxBase-desc = It's a phonebox, outdated but realiable technology. These are used to communicate throughout the colony and connected colonies without interference. As reliable as they are, it seems the line is down.
+
+ent-RMCPhoneboxOff-name = phonebox
+ent-RMCPhoneboxOff-desc = It's a phonebox, outdated but realiable technology. These are used to communicate throughout the colony and connected colonies without interference. As reliable as they are, it seems the line is down.
+
+ent-RMCPhoneboxOn-name = phonebox
+ent-RMCPhoneboxOn-desc = It's a phonebox, outdated but realiable technology. These are used to communicate throughout the colony and connected colonies without interference. As reliable as they are, it seems the line is down.
+
+ent-RMCPhoneboxBroken-name = wrecked phonebox
+ent-RMCPhoneboxBroken-desc = It's a phonebox, outdated but realiable technology. These are used to communicate throughout the colony and connected colonies without interference. It seems it's completely wrecked, covered in blood and the glass is smashed. Hiding inside would be pointless.
+
+ent-RMCPhoneboxBrokenBloody-name = wrecked phonebox
+ent-RMCPhoneboxBrokenBloody-desc = It's a phonebox, outdated but realiable technology. These are used to communicate throughout the colony and connected colonies without interference. It seems it's completely wrecked, covered in blood and the glass is smashed. Hiding inside would be pointless.
+

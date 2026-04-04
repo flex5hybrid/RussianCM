@@ -1,2 +1,4 @@
-ent-RMCGuidebookBase = книга
-ent-RMCBookBase = книга
+ent-RMCGuidebookBase-name = book
+
+ent-RMCBookBase-name = book
+

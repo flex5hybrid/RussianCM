@@ -1,14 +1,36 @@
 ent-Crayon-name = crayon
 ent-Crayon-desc = A colourful crayon. Looks tasty. Mmmm...
+
 ent-CrayonWhite-name = white crayon
+ent-CrayonWhite-desc = A colourful crayon. Looks tasty. Mmmm...
+
 ent-CrayonMime-name = mime crayon
+ent-CrayonMime-desc = A colourful crayon. Looks tasty. Mmmm...
+
 ent-CrayonRainbow-name = rainbow crayon
+ent-CrayonRainbow-desc = A colourful crayon. Looks tasty. Mmmm...
+
 ent-CrayonBlack-name = black crayon
+ent-CrayonBlack-desc = A colourful crayon. Looks tasty. Mmmm...
+
 ent-CrayonRed-name = red crayon
+ent-CrayonRed-desc = A colourful crayon. Looks tasty. Mmmm...
+
 ent-CrayonOrange-name = orange crayon
+ent-CrayonOrange-desc = A colourful crayon. Looks tasty. Mmmm...
+
 ent-CrayonYellow-name = yellow crayon
+ent-CrayonYellow-desc = A colourful crayon. Looks tasty. Mmmm...
+
 ent-CrayonGreen-name = green crayon
+ent-CrayonGreen-desc = A colourful crayon. Looks tasty. Mmmm...
+
 ent-CrayonBlue-name = blue crayon
+ent-CrayonBlue-desc = A colourful crayon. Looks tasty. Mmmm...
+
 ent-CrayonPurple-name = purple crayon
+ent-CrayonPurple-desc = A colourful crayon. Looks tasty. Mmmm...
+
 ent-CrayonBox-name = crayon box
 ent-CrayonBox-desc = It's a box of crayons.
+

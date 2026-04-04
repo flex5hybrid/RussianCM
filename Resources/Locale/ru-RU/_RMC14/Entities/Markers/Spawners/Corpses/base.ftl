@@ -1,1 +1,2 @@
-ent-RMCSpawnerCorpse = Создатель трупов — неизвестно
+ent-RMCSpawnerCorpse-name = Corpse Spawner - Unknown
+

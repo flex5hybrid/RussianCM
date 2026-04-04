@@ -1,100 +1,150 @@
 ent-BaseFigurine-name = figurine
 ent-BaseFigurine-desc = A small miniature.
+
 ent-ToyFigurineHeadOfPersonnel-name = head of personnel figure
 ent-ToyFigurineHeadOfPersonnel-desc = A figurine depicting the glorious head of all personnel, away from their office as usual.
+
 ent-ToyFigurinePassenger-name = passenger figure
 ent-ToyFigurinePassenger-desc = A figurine depicting an every day, run-of-the-mill passenger. No funny business here.
+
 ent-ToyFigurineGreytider-name = greytider figure
 ent-ToyFigurineGreytider-desc = A figurine depicting a dubious-looking passenger. Greytide worldwide!
+
 ent-ToyFigurineClown-name = clown figure
 ent-ToyFigurineClown-desc = A figurine depicting a clown. You shudder to think of what people have probably done to this figurine before.
+
 ent-ToyFigurineHoloClown-name = holoclown figure
 ent-ToyFigurineHoloClown-desc = A figurine depicting a holoclown. Even more annoying than a clown and no less real.
+
 ent-ToyFigurineMime-name = mime figure
 ent-ToyFigurineMime-desc = A figurine depicting that silent bastard you are all too familiar with.
+
 ent-ToyFigurineMusician-name = musician figure
 ent-ToyFigurineMusician-desc = A figurine depicting a Musician, his music was electrifying.
+
 ent-ToyFigurineBoxer-name = boxer figure
 ent-ToyFigurineBoxer-desc = A figurine depicting a Boxer holding their red gloves.
+
 ent-ToyFigurineCaptain-name = captain figure
 ent-ToyFigurineCaptain-desc = A figurine depicting the standard outfit of a captain belonging to a civilian-sector Nanotrasen vessel.
+
 ent-ToyFigurineHeadOfSecurity-name = head of security figure
 ent-ToyFigurineHeadOfSecurity-desc = A figurine depicting the glorious head of the Security department.
+
 ent-ToyFigurineWarden-name = warden figure
 ent-ToyFigurineWarden-desc = A figurine depicting a Warden, ready to jail someone at any moment.
+
 ent-ToyFigurineDetective-name = detective figure
 ent-ToyFigurineDetective-desc = A figurine depicting a Detective wearing their iconic trench coat.
+
 ent-ToyFigurineSecurity-name = security officer figure
 ent-ToyFigurineSecurity-desc = A figurine depicting a Security Officer holding a stunbaton, ready to defend the station.
+
 ent-ToyFigurineLawyer-name = lawyer figure
 ent-ToyFigurineLawyer-desc = A figurine depicting a Lawyer sporting a freshly tailored suit.
+
 ent-ToyFigurineCargoTech-name = cargo technican figure
 ent-ToyFigurineCargoTech-desc = A figurine depicting a reptillian Cargo Technican.
+
 ent-ToyFigurineSalvage-name = salvage specialist figure
 ent-ToyFigurineSalvage-desc = A figurine depicting a Salvage Specialist holding a survival knife.
+
 ent-ToyFigurineQuartermaster-name = quartermaster figure
 ent-ToyFigurineQuartermaster-desc = A figurine depicting the glorious head of the Cargo department.
+
 ent-ToyFigurineChiefEngineer-name = chief engineer figure
 ent-ToyFigurineChiefEngineer-desc = A figurine depicting the glorious head of the Engineering department.
+
 ent-ToyFigurineEngineer-name = station engineer figure
 ent-ToyFigurineEngineer-desc = A figurine depicting a Station Engineer holding a crowbar at-ready.
+
 ent-ToyFigurineAtmosTech-name = atmospheric technician figure
 ent-ToyFigurineAtmosTech-desc = A figurine depicting an Atmos Tech holding an unlit welder.
+
 ent-ToyFigurineResearchDirector-name = research director figure
 ent-ToyFigurineResearchDirector-desc = A figurine depicting the glorious head of the Science department.
+
 ent-ToyFigurineScientist-name = scientist figurine
 ent-ToyFigurineScientist-desc = A figurine depicting a Scientist donning a labcoat.
+
 ent-ToyFigurineChiefMedicalOfficer-name = chief medical officer figure
 ent-ToyFigurineChiefMedicalOfficer-desc = A figurine depicting the glorious head of the Medical department.
+
 ent-ToyFigurineChemist-name = chemist figure
 ent-ToyFigurineChemist-desc = A figurine depicting a Chemist probably planning to make meth.
+
 ent-ToyFigurineParamedic-name = paramedic figure
 ent-ToyFigurineParamedic-desc = A figurine depicting a Paramedic wearing their void suit.
+
 ent-ToyFigurineMedicalDoctor-name = medical doctor figure
 ent-ToyFigurineMedicalDoctor-desc = A figurine depicting a Medical Doctor, donning a labcoat & syringe.
+
 ent-ToyFigurineLibrarian-name = librarian figure
 ent-ToyFigurineLibrarian-desc = A figurine depicting the one-and-only librarian.
+
 ent-ToyFigurineChaplain-name = chaplain figure
 ent-ToyFigurineChaplain-desc = A figurine depicting a Chaplain hopefully praying for good things.
+
 ent-ToyFigurineChef-name = chef figure
 ent-ToyFigurineChef-desc = A figurine depicting a chef, master of the culinary arts!.. most of the time.
+
 ent-ToyFigurineBartender-name = bartender figure
 ent-ToyFigurineBartender-desc = A figurine depicting a Bartender looking stylish with their rockin shades and tophat.
+
 ent-ToyFigurineBotanist-name = botanist figure
 ent-ToyFigurineBotanist-desc = A figurine depicting a Botanist that surely won't let kudzu get out of control.
+
 ent-ToyFigurineJanitor-name = janitor figure
 ent-ToyFigurineJanitor-desc = A figurine depicting a Janitor with their galoshes.
+
 ent-ToyFigurineNukie-name = syndicate operative figure
 ent-ToyFigurineNukie-desc = A figurine depicting someone in a blood-red hardsuit, similar to what someone on a nuclear operative team might wear.
+
 ent-ToyFigurineNukieElite-name = elite syndicate operative figure
 ent-ToyFigurineNukieElite-desc = A figurine depicting someone in an elite blood-red hardsuit, similar to what someone on a nuclear operative team might wear.
+
 ent-ToyFigurineNukieCommander-name = syndicate operative commander figure
 ent-ToyFigurineNukieCommander-desc = A figurine depicting someone in a beefed-up blood-red hardsuit, similar to what the commander of a nuclear operative team might wear.
+
 ent-ToyFigurineFootsoldier-name = syndicate footsoldier figure
 ent-ToyFigurineFootsoldier-desc = A figurine depicting the outfit of a syndicate footsoldier.
+
 ent-ToyFigurineWizard-name = wizard figure
 ent-ToyFigurineWizard-desc = A figurine depicting someone with a long, silky beard wearing a wizard outfit. Warlocks wish they had anything on this.
+
 ent-ToyFigurineWizardFake-name = fake wizard figure
 ent-ToyFigurineWizardFake-desc = A figurine depicting someone in a fake-ass wizard costume. What a ripoff!
+
 ent-ToyFigurineSpaceDragon-name = space dragon figure
 ent-ToyFigurineSpaceDragon-desc = A large figurine depicting a space dragon, its red eyes on gazing on its prey.
+
 ent-ToyFigurineQueen-name = xeno queen figure
 ent-ToyFigurineQueen-desc = A large figurine depicting a xeno queen, ready to attack.
+
 ent-ToyFigurineRatKing-name = rat king figure
 ent-ToyFigurineRatKing-desc = A large figurine depicting a rat king, prepared to make its nest.
+
 ent-ToyFigurineRatServant-name = rat servant figure
 ent-ToyFigurineRatServant-desc = A figurine depicting a rat serving the king of rats!
+
 ent-ToyFigurineMouse-name = mouse figure
 ent-ToyFigurineMouse-desc = A figurine depicting a mouse scuttling away to the nearest piece of food.
+
 ent-ToyFigurineSlime-name = slime figure
 ent-ToyFigurineSlime-desc = A figurine depicting a translucent blue slime.
+
 ent-ToyFigurineHamlet-name = hamlet figure
 ent-ToyFigurineHamlet-desc = A figurine depicting Hamlet, microwave not included.
+
 ent-ToyGriffin-name = griffin figure
 ent-ToyGriffin-desc = An action figure modeled after 'The Griffin', criminal mastermind.
+
 ent-ToyOwlman-name = owl figure
 ent-ToyOwlman-desc = An action figure modeled after 'The Owl', defender of justice.
+
 ent-ToySkeleton-name = skeleton figure
 ent-ToySkeleton-desc = Spooked ya!
+
 ent-ToyFigurineThief-name = thief character figure
 ent-ToyFigurineThief-desc = Hiding in the shadows...
+

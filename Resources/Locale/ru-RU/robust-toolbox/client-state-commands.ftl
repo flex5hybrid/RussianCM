@@ -1,5 +1,4 @@
 # Loc strings for various entity state & client-side PVS related commands
-
 cmd-reset-ent-help = Использование: resetent <Entity UID>
 cmd-reset-ent-desc = Сбрасывает сущность до последнего полученного от сервера состояния. Это также сбросит сущности, которые были удалены в null-space.
 cmd-reset-all-ents-help = Использование: resetallents

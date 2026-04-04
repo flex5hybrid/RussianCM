@@ -1,1 +1,3 @@
-ent-RMCSpawnPointTSEPASeniorConstable = точка появления старшего констебля цепы
+ent-RMCSpawnPointTSEPASeniorConstable-name = tsepa senior constable spawn point
+ent-RMCSpawnPointTSEPASeniorConstable-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

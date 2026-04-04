@@ -1,5 +1,4 @@
 ### EmitterComponent
-
 # Shows when attempting to turn the emitter on or off without proper access
 comp-emitter-access-locked = Доступ к { $target } заблокирован!
 # Shows when turning the emitter on/off

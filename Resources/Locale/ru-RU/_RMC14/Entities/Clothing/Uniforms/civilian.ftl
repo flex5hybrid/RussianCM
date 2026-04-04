@@ -1,6 +1,15 @@
-ent-RMCJumpsuitKhakiWorkwear = хаки рабочая форма
-  .desc = Пара джинсов в сочетании с рабочей рубашкой цвета хаки. Распространенный комплект среди рабочих из-за своего скромного вида.
-ent-RMCJumpsuitBlueWorkwear = синяя рабочая форма
-  .desc = Пара коричневых рабочих брюк из холста в сочетании с темно-синей рабочей рубашкой. Распространенный комплект среди рабочих.
-ent-RMCJumpsuitDispatcherUniform = униформа диспетчера
-  .desc = Синяя рубашка и брюки цвета хаки с маленькой красной шевроном службы безопасности.
+ent-RMCJumpsuitKhakiWorkwear-name = khaki workwear
+ent-RMCJumpsuitKhakiWorkwear-desc = A pair of jeans paired with a khaki workshirt. A common pairing among blue-collar workers due to its drab look.
+
+ent-RMCJumpsuitBlueWorkwear-name = blue workwear
+ent-RMCJumpsuitBlueWorkwear-desc = A pair of brown canvas workpants paired with a dark blue workshirt. A common pairing among blue-collar workers.
+
+ent-RMCJumpsuitDispatcherUniform-name = dispatchers uniform
+ent-RMCJumpsuitDispatcherUniform-desc = A blue dress shirt and khakis with a small red security patch sewn on.
+
+ent-RMCJumpsuitBlueWorkwearChancesGoon-name = blue workwear
+ent-RMCJumpsuitBlueWorkwearChancesGoon-desc = A pair of brown canvas workpants paired with a dark blue workshirt. A common pairing among blue-collar workers.
+
+ent-RMCJumpsuitKhakiWorkwearJacketless-name = khaki workwear
+ent-RMCJumpsuitKhakiWorkwearJacketless-desc = A pair of jeans paired with a khaki workshirt. A common pairing among blue-collar workers due to its drab look.
+

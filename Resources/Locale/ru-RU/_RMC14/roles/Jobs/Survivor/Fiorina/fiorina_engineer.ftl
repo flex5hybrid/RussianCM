@@ -1,1 +1,3 @@
-ent-RMCSpawnPointSurvivorFiorinaEngineer = точка возрождения выжившего инженера Фиорины
+ent-RMCSpawnPointSurvivorFiorinaEngineer-name = survivor fiorina engineer spawn point
+ent-RMCSpawnPointSurvivorFiorinaEngineer-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

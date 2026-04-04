@@ -1,17 +1,36 @@
-ent-SquadSunRiders = Солнечные ездоки
-ent-SquadUnassigned = Не назначенный
-ent-SquadCLF = CLF
-ent-SquadSOF = SOF
-ent-SquadFORECON = ФОРЕКОН
-ent-SquadProvost = Провосты
-ent-SquadRoyalMarines = Королевские морпехи
-ent-SquadFreelancer = Свободный
-ent-SquadPMC = ЧВК
-ent-SquadSPP = СПН
-ent-SquadIntel = Разведка
-ent-SquadEcho = Эхо
-ent-SquadFoxtrot = Фокстрот
-ent-SquadDelta = Дельта
-ent-SquadCharlie = Чарли
-ent-SquadBravo = Браво
-ent-SquadAlpha = Альфа
+ent-SquadSunRiders-name = Sun Riders
+
+ent-SquadUnassigned-name = Unassigned
+
+ent-SquadCLF-name = CLF
+
+ent-SquadSOF-name = SOF
+
+ent-SquadFORECON-name = Recon
+
+ent-SquadProvost-name = Provost
+
+ent-SquadRoyalMarines-name = Royal Marines
+
+ent-SquadFreelancer-name = Freelancer
+
+ent-SquadPMC-name = PMC
+
+ent-SquadSPP-name = SPP
+
+ent-SquadIntel-name = Intel
+
+ent-SquadEcho-name = Echo
+
+ent-SquadFoxtrot-name = Foxtrot
+
+ent-SquadDelta-name = Delta
+
+ent-SquadCharlie-name = Charlie
+
+ent-SquadBravo-name = Bravo
+
+ent-SquadAlpha-name = Alpha
+
+ent-SquadRoyalMarinesPVE-name = Whiskey Troop
+

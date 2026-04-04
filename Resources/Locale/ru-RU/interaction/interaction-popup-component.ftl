@@ -1,7 +1,5 @@
 ### Interaction Popup component
-
 ## Petting animals
-
 petting-success-generic = Вы гладите { $target } по голове.
 petting-success-soft-floofy = Вы гладите { $target } по { POSS-ADJ($target) } мягкой пушистой голове.
 petting-success-bingus = Вы гладите { $target } по { POSS-ADJ($target) } маленькой морщинистой голове.
@@ -50,9 +48,7 @@ petting-failure-bear = Вы думаете погладить { $target }, но 
 petting-failure-monkey = Вы тянетесь погладить { $target }, но { SUBJECT($target) } едва не кусает вас за пальцы!
 petting-failure-nymph = Вы тянетесь погладить { $target }, но { POSS-ADJ($target) } отодвигает свои ветви в сторону.
 petting-failure-shadow = Вы тянетесь погладить { $target }, но ваша рука проходит сквозь холодную тьму { POSS-ADJ($target) } тела.
-
 ## Petting silicons
-
 petting-success-honkbot = Вы гладите { $target } по { POSS-ADJ($target) } скользкой металлической голове.
 petting-success-mimebot = Вы гладите { $target } по { POSS-ADJ($target) } холодной металлической голове.
 petting-success-cleanbot = Вы гладите { $target } по { POSS-ADJ($target) } влажной металлической голове.
@@ -83,19 +79,13 @@ petting-failure-syndicate-cyborg = Вы тянетесь погладить { $t
 petting-failure-derelict-cyborg = Вы тянетесь погладить { $target }, но { POSS-ADJ($target) } ржавый и рваный внешний вид заставляет вас передумать.
 petting-failure-station-ai = Вы тянетесь погладить { $target }, но { POSS-ADJ($target) } разряд заставляет вас отдёрнуть руку.
 petting-success-station-ai-others = { CAPITALIZE($user) } гладит { $target } по { POSS-ADJ($target) } холодному, квадратному экрану.
-
 ## Rattling fences
-
 fence-rattle-success = *бдзынь*
-
 ## Hugging players
-
 hugging-success-generic = Вы обнимаете { $target }.
 hugging-success-generic-others = { CAPITALIZE($user) } обнимает { $target }.
 hugging-success-generic-target = { CAPITALIZE($user) } обнимает вас.
-
 ## Other
-
 petting-success-tesla = Вы гладите { $target }, попутно нарушая законы природы и физики.
 petting-failure-tesla = Вы тянетесь погладить { $target }, но { POSS-ADJ($target) } разряд заставляет вас отдёрнуть руку.
 petting-success-mail-teleporter = Вы гладите { $target } по { POSS-ADJ($target) } послушной, холодной обшивке.

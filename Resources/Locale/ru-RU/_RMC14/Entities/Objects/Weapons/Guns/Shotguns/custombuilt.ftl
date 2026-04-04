@@ -1,2 +1,3 @@
-ent-WeaponShotgunCustomBuilt = самодельный дробовик
-  .desc = Собранная на скорую руку куча хлама и инопланетного дерева. Направляйте конец на то, что хотите уничтожить. Имеет режим стрельбы очередью, как будто ему это было нужно.
+ent-WeaponShotgunCustomBuilt-name = custom built shotgun
+ent-WeaponShotgunCustomBuilt-desc = A cobbled-together pile of scrap and alien wood. Point end towards things you want to die. Has a burst fire feature, as if it needed it.
+

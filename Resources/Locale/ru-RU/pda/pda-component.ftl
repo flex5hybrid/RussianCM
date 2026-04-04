@@ -1,5 +1,4 @@
 ### UI
-
 # For the PDA screen
 comp-pda-ui = ID: [color=white]{ $owner }[/color], [color=yellow]{ CAPITALIZE($jobTitle) }[/color]
 comp-pda-ui-blank = ID:

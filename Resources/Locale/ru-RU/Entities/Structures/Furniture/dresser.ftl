@@ -1,2 +1,3 @@
 ent-Dresser-name = dresser
 ent-Dresser-desc = Wooden dresser, can store things inside itself, ideal for underwear, and someone's kidneys?...
+

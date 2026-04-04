@@ -1,1 +1,2 @@
-ent-RMCRandomHumanoidICBLiaison = роль призрака связи бюро межзвездной торговли
+ent-RMCRandomHumanoidICBLiaison-name = interstellar commerce bureau liaison ghost role
+

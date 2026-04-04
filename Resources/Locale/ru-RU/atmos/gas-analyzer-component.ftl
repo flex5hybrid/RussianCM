@@ -1,10 +1,7 @@
 ## Entity
-
 gas-analyzer-object-out-of-range = Объект покинул зону действия.
 gas-analyzer-shutoff = Газоанализатор выключается.
-
 ## UI
-
 gas-analyzer-window-name = Газоанализатор
 gas-analyzer-window-environment-tab-label = Окружение
 gas-analyzer-window-tab-title-capitalized = { CAPITALIZE($title) }

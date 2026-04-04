@@ -1,6 +1,9 @@
-ent-RMCMarineUniformDressGeneral = парадная синяя форма генерала морской пехоты
-  .desc = Рубашка и брюки легендарной парадной синей формы морской пехоты, практически не менявшейся с XIX века. Этот вариант отличается чёрными брюками и широкой Кровавой Полосой, которую носят генералы.
-ent-RMCMarineUniformDressSenior = парадная синяя форма старших чинов морской пехоты
-  .desc = Рубашка и брюки легендарной парадной синей формы морской пехоты, практически не менявшейся с XIX века. Этот вариант отличается знаменитой Кровавой Полосой, которую носят унтер-офицеры и офицеры.
-ent-RMCMarineUniformDressEnlisted = парадная синяя форма рядового состава морской пехоты
-  .desc = Рубашка и брюки легендарной парадной синей формы морской пехоты, практически не менявшейся с XIX века. Этот простой вариант предназначен для рядового состава, от E-1 до E-3.
+ent-RMCMarineUniformDressGeneral-name = marine general dress blues uniform
+ent-RMCMarineUniformDressGeneral-desc = The undershirt and trousers of the legendary Marine dress blues, virtually unchanged since the 19th century. This variant features black trousers and a large Blood Stripe, worn by general officers.
+
+ent-RMCMarineUniformDressSenior-name = marine senior dress blues uniform
+ent-RMCMarineUniformDressSenior-desc = The undershirt and trousers of the legendary Marine dress blues, virtually unchanged since the 19th century. This variant features the iconic Blood Stripe, worn by NCOs and officers.
+
+ent-RMCMarineUniformDressEnlisted-name = marine enlisted dress blues uniform
+ent-RMCMarineUniformDressEnlisted-desc = The undershirt and trousers of the legendary Marine dress blues, virtually unchanged since the 19th century. This unadorned variant is for enlisted personnel, E-1 thru E-3.
+

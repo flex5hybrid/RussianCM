@@ -1,5 +1,4 @@
 ## UI
-
 crew-monitoring-user-interface-title = Консоль мониторинга экипажа
 crew-monitor-filter-line-placeholder = Фильтр
 crew-monitoring-user-interface-name = Имя

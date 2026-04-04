@@ -1,20 +1,30 @@
-ent-RMCHandsLeatherBlack = чёрные кожаные перчатки
-  .desc = Мягкие чёрные кожаные перчатки, изготовленные из лучшей кожи. Стильные, прочные и готовые к работе или игре.
-ent-CMHandsBlackInsulated = чёрные диэлектрические перчатки
-  .desc = Эти перчатки защитят владельца от поражения электрическим током. Теперь в чёрном цвете.
-ent-RMCHandsPurple = фиолетовые перчатки
-  .desc = Пара перчаток, они не выглядят чем-то особенным.
-ent-CMHandsWhiteDress = парадные перчатки
-  .desc = Пара модных белых перчаток, которые носят морпехи в парадной форме.
-ent-CMHandsWhite = белые перчатки
-  .desc = Пара белых перчаток.
-ent-CMHandsLightBrown = светло-коричневые перчатки
-  .desc = Пара светло-коричневых перчаток.
-ent-CMHandsBrown = коричневые перчатки
-  .desc = Пара коричневых перчаток.
-ent-CMHandsInsulated = диэлектрические перчатки
-  .desc = Эти перчатки защитят владельца от поражения электрическим током.
-ent-RMCHandsCombat = боевые перчатки
-  .desc = Эти тактические перчатки несколько устойчивы к огню и ударам.
-ent-RMCHandsBlack = чёрные перчатки
-  .desc = Простая пара чёрных перчаток.
+ent-RMCHandsLeatherBlack-name = black leather gloves
+ent-RMCHandsLeatherBlack-desc = Supple, black leather gloves crafted from the finest leather. Stylish, durable, and ready for work or play.
+
+ent-CMHandsBlackInsulated-name = black insulated gloves
+ent-CMHandsBlackInsulated-desc = These gloves will protect the wearer from electric shocks. Now in black.
+
+ent-RMCHandsPurple-name = purple gloves
+ent-RMCHandsPurple-desc = A pair of gloves, they don't look special in any way.
+
+ent-CMHandsWhiteDress-name = dress gloves
+ent-CMHandsWhiteDress-desc = A pair of fashionable white gloves, worn by marines in dress.
+
+ent-CMHandsWhite-name = white gloves
+ent-CMHandsWhite-desc = A pair of white gloves.
+
+ent-CMHandsLightBrown-name = light brown gloves
+ent-CMHandsLightBrown-desc = A pair of light brown gloves.
+
+ent-CMHandsBrown-name = brown gloves
+ent-CMHandsBrown-desc = A pair of brown gloves.
+
+ent-CMHandsInsulated-name = insulated gloves
+ent-CMHandsInsulated-desc = These gloves will protect the wearer from electric shocks.
+
+ent-RMCHandsCombat-name = combat gloves
+ent-RMCHandsCombat-desc = These tactical gloves are somewhat fire and impact resistant.
+
+ent-RMCHandsBlack-name = black gloves
+ent-RMCHandsBlack-desc = A simple pair of black gloves.
+

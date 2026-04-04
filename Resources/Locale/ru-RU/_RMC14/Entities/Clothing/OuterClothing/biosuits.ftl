@@ -1,8 +1,17 @@
-ent-RMCSuitBioWeYa = биокостюм WeYa-TSS MK I
-  .desc = «Биокостюм Weston-Yamada TerraScientia MK I». Продвинутый лёгкий биокостюм, разработанный внутри компании Weston-Yamada. Это костюм, защищающий от биологического заражения.
-ent-RMCArmorSPPFirefighter = курсия пожарного T-20
-  .desc = Прочный, без излишеств огнестойкий плащ, выдаваемый промышленным и аварийным командам СПН. Основан на дизайне PyroTex LT, но с использованием более дешёвых материалов отечественного производства, предлагает базовую защиту от тепла и обломков ценой веса и комфорта.
-ent-RMCArmorFirefighter = огнестойкий костюм PT-LT
-  .desc = «PyroTex LT» — это продвинутый лёгкий огнестойкий костюм, разработанный компанией «Fujin». Он обеспечивает защиту от огня и тепла, а также предлагает некоторую степень защиты от травм от тупых ударов.
-ent-RMCSuitBioGeneral = биокостюм
-  .desc = Костюм, защищающий от биологического заражения.
+ent-RMCSuitBioWeYa-name = WeYa-TSS MK I - bio suit
+ent-RMCSuitBioWeYa-desc = The 'Weston-Yamada TerraScientia bio-suit MK I'. An advanced light-weight bio-suit developed in-house by Weston-Yamada. It's a suit that protects against biological contamination.
+
+ent-RMCArmorSPPFirefighter-name = T-20 fire response coat
+ent-RMCArmorSPPFirefighter-desc = A rugged, no-frills fire-resistant overcoat issued to SPP industrial and emergency crews. Based on the PyroTex LT design but using cheaper, domestically produced materials, it offers basic protection against heat and debris at the cost of weight and comfort.
+
+ent-RMCArmorFirefighter-name = PT-LT firesuit
+ent-RMCArmorFirefighter-desc = The 'PyroTex LT' is an advanced, lightweight firesuit developed by 'Fujin'. It provides protection against fire and heat, while also offering a degree of protection from blunt force trauma.
+
+ent-RMCSuitBioGeneral-name = bio suit
+ent-RMCSuitBioGeneral-desc = A suit that protects against biological contamination.
+
+ent-RMCBaseBioSuit-name = lathe-category-clothing
+
+ent-RMCSuitFirefighter-name = firesuit
+ent-RMCSuitFirefighter-desc = A suit that protects against fire and heat.
+

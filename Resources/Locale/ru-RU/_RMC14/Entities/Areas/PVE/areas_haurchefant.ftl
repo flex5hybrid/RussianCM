@@ -1,18 +1,10 @@
-ent-RMCAreaHF-name = Хауршефант
-ent-RMCAreaHFHypersleepStorageA-name = Гиперсонное хранилище
-ent-RMCAreaHFHypersleepGearLockers-name = Шкафчики для снаряжения Hypersleep
-ent-RMCAreaHFMessHall-name = Столовая
-ent-RMCAreaHFBathroom-name = Ванная комната
 ent-RMCAreaHFOffice-name = Офис
+
 ent-RMCAreaHFEngineering-name = Инженерное дело
+
 ent-RMCAreaHFSyntheticCloset-name = Синтетический шкаф
+
 ent-RMCAreaHFAICore-name = Ядро ИИ
-ent-RMCAreaHFDisposals-name = Выбытия
-ent-RMCAreaHFMedical-name = Медицинский
-ent-RMCAreaHFBriefRoom-name = Комната для брифингов
-ent-RMCAreaHFCommandDeck-name = Командная колода сил
-ent-RMCAreaHFPrep-name = Силовая подготовка
-ent-RMCAreaHFArmoury-name = Силовой арсенал
-ent-RMCAreaHFHangar-name = Ангар
+
 ent-RMCAreaHFHangar2-name = Нижний ангар
-ent-RMCAreaHFOOB-name = За пределами границ
+

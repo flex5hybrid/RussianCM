@@ -1,5 +1,15 @@
-ent-RMCCrateBoxAmmo458 = Ящик патронов .458 (300 шт.)
-ent-RMCCrateBoxShellsShotgunBreaching = Ящик патронов (120 пробивных)
-ent-RMCCrateBoxShellsShotgunFlechette = Ящик патронов (100 флешшет)
-ent-RMCCrateBoxShellsShotgunBuckshot = Ящик патронов (100 картечи)
-ent-RMCCrateBoxShellsShotgunSlugs = Ящик патронов (100 пуль)
+ent-RMCCrateBoxAmmo458-name = .458 bullets box (.458 x 300)
+ent-RMCCrateBoxAmmo458-desc = An ammunitions crate.
+
+ent-RMCCrateBoxShellsShotgunBreaching-name = Shell box (120x breaching shells)
+ent-RMCCrateBoxShellsShotgunBreaching-desc = An ammunitions crate.
+
+ent-RMCCrateBoxShellsShotgunFlechette-name = Shell box (100x flechette shells)
+ent-RMCCrateBoxShellsShotgunFlechette-desc = An ammunitions crate.
+
+ent-RMCCrateBoxShellsShotgunBuckshot-name = Shell box (100x buckshot shells)
+ent-RMCCrateBoxShellsShotgunBuckshot-desc = An ammunitions crate.
+
+ent-RMCCrateBoxShellsShotgunSlugs-name = Shell box (100x slug shells)
+ent-RMCCrateBoxShellsShotgunSlugs-desc = An ammunitions crate.
+

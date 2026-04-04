@@ -1,4 +1,6 @@
-ent-RMCDropshipAttachmentCoolingSystem = система охлаждения
-  .desc = Система охлаждения для дропшипов. Обеспечивает дополнительное охлаждение, сокращая задержки между запусками. Устанавливается в точки крепления двигателя. Для подъёма требуется погрузчик.
-ent-RMCDropshipAttachmentFuelEnhancer = усилитель топлива
-  .desc = Система улучшения топлива для дропшипов. Увеличивает тягу, создаваемую сгоранием топлива, для более быстрых перелётов. Устанавливается в точки крепления двигателя. Для подъёма требуется погрузчик.
+ent-RMCDropshipAttachmentCoolingSystem-name = cooling system
+ent-RMCDropshipAttachmentCoolingSystem-desc = A cooling system for dropships. It produces additional cooling reducing delays between launch. Fits inside the engine attach points. You need a powerloader to lift it.
+
+ent-RMCDropshipAttachmentFuelEnhancer-name = fuel enhancer
+ent-RMCDropshipAttachmentFuelEnhancer-desc = A fuel enhancement system for dropships. It improves the thrust produced by the fuel combustion for faster travels. Fits inside the engine attach points. You need a powerloader to lift it.
+

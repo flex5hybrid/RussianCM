@@ -22,9 +22,7 @@ log-probe-printout-header = Последние логи:
 log-probe-printout-entry = #{ $number } / { $time } / { $accessor }
 astro-nav-program-name = АстроНав
 med-tek-program-name = МедТек
-
 # NanoTask cartridge
-
 nano-task-ui-heading-high-priority-tasks =
     { $amount ->
         [zero] Нет задач высокого приоритета

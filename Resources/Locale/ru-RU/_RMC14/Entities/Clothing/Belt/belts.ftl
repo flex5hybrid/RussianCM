@@ -1,79 +1,247 @@
-ent-RMCBeltSPPBrown = разгрузка боеприпасов схемы 6B80
-  .desc = 6B80 — устаревшая, но надёжная разгрузка для боеприпасов, ранее бывшая стандартом для Армии СНП. Её модульный пояс вмещает различные боеприпасы, до сих пор используется силами безопасности и резервистами СНП за свою прочную конструкцию.
-ent-RMCM82FHolster = разгрузка для ракетницы M82F схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различных зажимов. Эта версия предназначена для ракетницы M82F и дополнительно может хранить до 16 ракет.
-ent-RMCM82FHolsterFilled = разгрузка для ракетницы M82F схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различных зажимов. Эта версия предназначена для ракетницы M82F и дополнительно может хранить до 16 ракет.
+ent-RMCBeltSPPBrown-name = 6B80 pattern ammo rig
+ent-RMCBeltSPPBrown-desc = The 6B80 is an outdated but reliable ammo rig, formerly standard for the SPP Army. Its modular belt holds various munitions, still used by SPP security forces and reserves for its rugged design.
 
-ent-RMCBeltHolsterNailgun = кастомная кобура для гвоздомёта
-  .desc = Комбинация пистолетной кобуры M276 и инженерного инструментального пояса, переделанная в уникальный пояс, который может вместить компактный гвоздомёт и два запасных магазина к нему.
-ent-RMCBeltSmartGunOperatorPistolPMC = разгрузка для пистолета оператора умного оружия схемы WY-TM410
-  .desc = Специальная модель боевого пояса производства We-Ya, предназначенная для переноски боеприпасов умного оружия и пистолета.
-ent-RMCBeltHolsterM13 = разгрузка для M13 схемы M276
-  .desc = Специальный вариант M276, предназначенный для ношения автоматического пистолета M13 и 8 запасных магазинов.
-ent-RMCM300SOCOMBelt = разгрузка для .458 SOCOM схемы M300
-  .desc = Пояс для боеприпасов, предназначенный для крупнокалиберных пуль .458 SOCOM для тяжёлой винтовки XM88.
-ent-RMCBeltXM51 = разгрузка для XM51 схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различных зажимов. Эта версия предназначена для штурмового дробовика XM51, обеспечивая более лёгкое хранение оружия. Имеет подсумки для двух магазинов и дополнительных патронов.
-ent-RMCMatebaBeltLuxurious = роскошная разгрузка для Mateba схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различных зажимов. Эта версия предназначена для мощного револьвера Mateba Magnum, вместе с пятью малыми подсумками для обойм. Эта конкретная — чёрного цвета с золотой гравировкой, сильно кастомизирована для высокопоставленного чиновника.
-ent-RMCMatebaBelt = разгрузка для Mateba схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различных зажимов. Эта версия предназначена для мощного револьвера Mateba Magnum, вместе с пятью малыми подсумками для обойм. Она входила в комплект заказанной по почте редакции Mateba autorevolver от КМП в начале 2110-х.
-ent-RMCMatebaBeltFilled = разгрузка для Mateba схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различных зажимов. Эта версия предназначена для мощного револьвера Mateba Magnum, вместе с пятью малыми подсумками для обойм. Она входила в комплект заказанной по почте редакции Mateba autorevolver от КМП в начале 2110-х.
+ent-RMCM82FHolster-name = belt
+ent-RMCM82FHolster-desc = Can hold various things.
 
-ent-RMCBeltHolsterSMGPouch = разгрузка для M63 схемы M276
-  .desc = Специальный вариант M276, предназначенный для ношения пистолета-пулемёта M63 и двух запасных магазинов. Редко выдаётся вспомогательному и специальному персоналу КМП.
-ent-RMCBeltUtilityGeneral = универсальный подсумок G8-A схемы M276
-  .desc = Малый лёгкий подсумок, который можно прикрепить к броне схемы M3 для дополнительного хранения. Новая модель G8-A, хотя и неудобная, также может закрепляться на поясе.
-ent-RMCBeltHolsterSMG = разгрузка для M63 схемы M276
-  .desc = Специальный вариант M276, предназначенный для ношения пистолета-пулемёта M63.
-ent-RMCBeltHolsterRevolver = универсальная револьверная разгрузка схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различных зажимов. Эта версия универсальна и регулируется для разных револьверов, вместе с шестью малыми подсумками для обойм. Пахнет сеном.
-ent-RMCBeltHolsterPistolPMC = пистолетная разгрузка M301
-  .desc = M301 — стандартное снаряжение для переноски грузов ЧВК Weston-Yamada. Состоит из модульного пояса с различных зажимов. Эта версия имеет кобуру, позволяющую носить самые распространённые пистолеты. Также содержит боковые подсумки для хранения большинства пистолетных магазинов.
-ent-RMCBeltHolsterPistolTSE = пистолетный пояс
-  .desc = Тёмно-коричневый кожаный пистолетный пояс, обычно выдаваемый офицерам ИТСП. Хотя разработан для служебного пистолета L54, он подходит для большинства пистолетов вместе с запасными магазинами. Стандартная выдача для правоохранительных органов, военных и сил безопасности ИТС.
-ent-RMCBeltHolsterPistolSPP = пистолетная разгрузка типа 47-S
-  .desc = Тип 47-S — стандартное снаряжение для переноски грузов СНП. Состоит из модульного пояса с различных зажимов. Эта версия имеет кобуру, позволяющую носить самые распространённые пистолеты. Также содержит боковые подсумки для хранения большинства пистолетных магазинов.
-ent-RMCBeltHolsterPistolWeYa = универсальная пистолетная разгрузка схемы WY-TM892
-  .desc = WY-TM892 — стандартное снаряжение для переноски грузов сил безопасности W-Y. Состоит из модульного пояса с различных зажимов. Эта версия имеет кобуру, позволяющую носить самые распространённые пистолеты. Также содержит боковые подсумки для хранения большинства пистолетных магазинов.
-ent-RMCBeltHolsterPistol = универсальная пистолетная разгрузка схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различных зажимов. Эта версия имеет кобуру, позволяющую носить самые распространённые пистолеты. Также содержит боковые подсумки для хранения большинства пистолетных магазинов.
-ent-RMCBeltSmartPistol = разгрузка для умного пистолета SU-6 схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различных зажимов. Эта версия предназначена для умного пистолета SU-6.
-ent-RMCBeltGrenadeLarge = разгрузка для гранат M40 схемы M276 Мк. II
-  .desc = M276 Мк. II — улучшенная версия разгрузки для гранат M276 с большей вместимостью.
-ent-RMCBeltGrenade = разгрузка для гранат M40 схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различных зажимов. Эта версия предназначена для переноски до 12 гранат серии M40.
-ent-RMCBeltSmartGunOperatorPistol = разгрузка для пистолета оператора умного оружия схемы M802
-  .desc = M802 — ограниченно выдаваемая модель снаряжения для переноски грузов КМП, предназначенная для переноски боеприпасов умного оружия и пистолета.
-ent-CMBeltSmartGunOperator = пояс оператора умного оружия схемы M280
-  .desc = Несмотря на то, что 1. барабанные магазины невероятно неэргономичны, и 2. требуют невероятно точной обработки для универсальной подгонки (спойлер: они не подходят, что лишь усиливает миф о «личностях умного оружия»), морпехи решили выпустить модифицированный морской пояс (более формально известный под обозначением M280) с крючками и пылезащитными чехлами (слишком сложными для среднего солдата) для барабанных боеприпасов системы ML66A. Когда защёлка переноски на барабане не застревает в промасленной липучке, разгрузка действительно неплохо справляется с переноской большого количества барабанов. Но в конечном счёте, по сравнению со стандартными разгрузками... она отстой, но разве не в этом суть быть морпехом?
-ent-CMBeltMortar = пояс оператора миномёта схемы M276
-  .desc = Разгрузка M276, сконфигурированная для переноски боеприпасов для миномёта M402 вместе с пистолетом.
-ent-CMBeltMedical = медицинская разгрузка схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различных зажимов. Эта версия — менее распространённая конфигурация, предназначенная для переноски громоздких медицинских принадлежностей.
-ent-CMBeltKnife = разгрузка для ножей схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различными зажимами. Эта версия специально разработана для хранения ножей. Выдаётся нечасто, но остаётся на службе.
-ent-CMBeltUtilityCombat = боевой инструментальный пояс схемы M276
-  .desc = Боевой инструментальный пояс схемы M276 — альтернативное снаряжение для переноски грузов КМП для инженеров, проводящих ремонты в боевых зонах. Состоит из модульного пояса с различными зажимами и подсумками для инструментов, а также кобурой для пистолета. Из-за громоздкости пистолета он не может вместить столько же инструментов, как его стандартный аналог.
-ent-RMCBeltConstruction = строительная разгрузка схемы M277
-  .desc = M277 — распространённая разгрузка, используемая боевыми техниками для переноски материалов и других припасов. Состоит из модульного пояса с различными зажимами. Эта версия жертвует местом для хранения в пользу специализированных зажимов для загрузки материалов.
-ent-CMBeltUtility = инструментальный пояс схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различными зажимами. Эта версия лишена боевых функций и обычно используется инженерами для переноски важных инструментов.
-ent-RMCBeltPMC = разгрузка боеприпасов схемы M305
-  .desc = M305 — стандартное снаряжение для переноски грузов ЧВК Weston-Yamada. Состоит из модульного пояса с различными зажимами. Это стандартный вариант, предназначенный для операций по переноске боеприпасов оптом.
-ent-RMCM276ShotgunShellLoadingRig = разгрузка для патронов дробовика схемы M276
-  .desc = Пояс для боеприпасов, предназначенный для патронов дробовика.
-ent-CMBeltMarine = разгрузка боеприпасов схемы M276
-  .desc = M276 — стандартное снаряжение для переноски грузов КМП. Состоит из модульного пояса с различными зажимами. Это стандартный вариант, предназначенный для операций по переноске боеприпасов оптом.
-ent-CMBeltInflatable = надувная утка
-  .desc = Не нужно тонуть или плыть, когда можно просто держаться на плаву!
+ent-RMCM82FHolsterFilled-name = belt
+ent-RMCM82FHolsterFilled-desc = Can hold various things.
 
+ent-RMCBeltHolsterNailgun-name = customized nailgun holster
+ent-RMCBeltHolsterNailgun-desc = Combination of a M276 pistol holster and engineering toolbelt that have been cannibalized into a unique belt that can holster a compact nailgun and two spare nailgun magazines.
+
+ent-RMCBeltSmartGunOperatorPistolPMC-name = WY-TM410 pattern smargunner sidearm rig
+ent-RMCBeltSmartGunOperatorPistolPMC-desc = A special pattern of We-Ya made combat belt, designed to carry smartgun ammunition and a sidearm.
+
+ent-RMCBeltHolsterM13-name = M276 pattern ammo load rig
+ent-RMCBeltHolsterM13-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+
+ent-RMCM300SOCOMBelt-name = M300 pattern .458 SOCOM loading rig
+ent-RMCM300SOCOMBelt-desc = An ammunition belt designed to hold the large .458 SOCOM caliber bullets for the XM88 heavy rifle.
+
+ent-RMCBeltXM51-name = M276 pattern XM51 holster rig
+ent-RMCBeltXM51-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the XM51 breaching scattergun, allowing easier storage of the weapon. It features pouches for storing two magazines along with extra shells.
+
+ent-RMCMatebaBeltLuxurious-name = luxurious M276 pattern Mateba holster rig
+ent-RMCMatebaBeltLuxurious-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with five small pouches for speedloaders. This specific one is tinted black and engraved with gold, heavily customized for a high-ranking official.
+
+ent-RMCMatebaBelt-name = M276 pattern Mateba holster rig
+ent-RMCMatebaBelt-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with five small pouches for speedloaders. It was included with the mail-order UNMC edition of the Mateba autorevolver in the early 2110s.
+
+ent-RMCMatebaBeltFilled-name = M276 pattern Mateba holster rig
+ent-RMCMatebaBeltFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with five small pouches for speedloaders. It was included with the mail-order UNMC edition of the Mateba autorevolver in the early 2110s.
+
+ent-RMCBeltHolsterSMGPouch-name = M276 pattern M63 holster rig
+ent-RMCBeltHolsterSMGPouch-desc = Special issue variant of the M276 designed to holster a M63 submachine gun and two spare magazines. Uncommonly issued to UNMC support and specialist personnel.
+
+ent-RMCBeltUtilityGeneral-name = M276 G8-A general utility pouch
+ent-RMCBeltUtilityGeneral-desc = A small, lightweight pouch that can be clipped onto M3 Pattern armor to provide additional storage. The newer G8-A model, while uncomfortable, can also be clipped around the waist.
+
+ent-RMCBeltHolsterSMG-name = M276 pattern M63 holster rig
+ent-RMCBeltHolsterSMG-desc = Special issue variant of the M276 designed to holster a M63 submachine gun.
+
+ent-RMCBeltHolsterRevolver-name = M276 pattern general revolver holster rig
+ent-RMCBeltHolsterRevolver-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is universal and adjustable for different revolvers, along with six small pouches for speedloaders. It smells faintly of hay.
+
+ent-RMCBeltHolsterPistolPMC-name = M301 pistol holster rig
+ent-RMCBeltHolsterPistolPMC-desc = The M301 is the standard load-bearing equipment of Weston-Yamada PMC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCBeltHolsterPistolTSE-name = pistol belt
+ent-RMCBeltHolsterPistolTSE-desc = A dark brown leather pistol belt commonly issued to TSEPA officers. Although designed for the L54 service pistol, it accommodates most sidearms along with spare magazines. Standard issue across TSE law enforcement, military, and security forces.
+
+ent-RMCBeltHolsterPistolSPP-name = Type 47-S pistol holster rig
+ent-RMCBeltHolsterPistolSPP-desc = The Type 47-S is the standard load-bearing equipment of the SPP. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCBeltHolsterPistolWeYa-name = WY-TM892 pattern general pistol holster rig
+ent-RMCBeltHolsterPistolWeYa-desc = The WY-TM892 is the standard load-bearing equipment of the W-Y security forces. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCBeltHolsterPistol-name = M276 pattern general pistol holster rig
+ent-RMCBeltHolsterPistol-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCBeltSmartPistol-name = M276 pattern SU-6 smart pistol holster rig
+ent-RMCBeltSmartPistol-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the SU-6 smartpistol.
+
+ent-RMCBeltGrenadeLarge-name = M276 pattern 30mm grenade rig Mk. II
+ent-RMCBeltGrenadeLarge-desc = The M276 Mk. II is an upgraded version of the M276 grenade rig, with more storage capacity.
+
+ent-RMCBeltGrenade-name = M276 pattern 30mm grenade rig
+ent-RMCBeltGrenade-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is designed to carry up to 12 of the 30mm type grenades.
+
+ent-RMCBeltSmartGunOperatorPistol-name = M802 pattern smart gun operator sidearm rig
+ent-RMCBeltSmartGunOperatorPistol-desc = The M802 is a limited-issue mark of UNMC load-bearing equipment, designed to carry smartgun ammunition and a sidearm.
+
+ent-CMBeltSmartGunOperator-name = M280 pattern smart gun operator drum belt
+ent-CMBeltSmartGunOperator-desc = Despite the fact that 1. drum magazines are incredibly non-ergonomical, and 2. require incredibly precise machining in order to fit universally (spoiler, they don't, adding further to the myth of 'Smart Gun Personalities'), the Marines decided to issue a modified marine belt (more formally known by the designation M280) with hooks and dust covers (overly complex for the average jarhead) for the ML66A system's drum munitions. When the carry catch on the drum isn't getting stuck in the oiled up velcro, the rig actually does do a decent job at holding a plentiful amount of drums. But at the end of the day, compared to standard rigs... it sucks, but isn't that what being a Marine is all about?
+
+ent-CMBeltMortar-name = M276 pattern mortar operator belt
+ent-CMBeltMortar-desc = An M276 load-bearing rig configured to carry ammunition for the M402 mortar, along with a sidearm.
+
+ent-CMBeltMedical-name = M276 pattern medical storage rig
+ent-CMBeltMedical-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is a less common configuration, designed to transport bulkier medical supplies.
+
+ent-CMBeltKnife-name = M276 pattern knife rig
+ent-CMBeltKnife-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is specially designed to store knives. Not commonly issued, but kept in service.
+
+ent-CMBeltUtilityCombat-name = M276 pattern combat toolbelt rig
+ent-CMBeltUtilityCombat-desc = The M276 pattern combat toolbelt rig is an alternative load-bearing equipment of the UNMC for engineers conducting repairs within combat zones. It consists of a modular belt with various clips and pouches for tools along with a holster for a sidearm. Due to the bulk of the sidearm, it is unable to hold as many tools as its standard counterpart.
+
+ent-RMCBeltConstruction-name = M277 pattern construction rig
+ent-RMCBeltConstruction-desc = The M277 is a common rig used by Combat Technicians to carry around materials and other supplies. It consists of a modular belt with various clips. This version sacrifices storage space for specialized material loading clips.
+
+ent-CMBeltUtility-name = M276 pattern toolbelt rig
+ent-CMBeltUtility-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version lacks any combat functionality, and is commonly used by engineers to transport important tools.
+
+ent-RMCBeltPMC-name = M305 pattern ammo load rig
+ent-RMCBeltPMC-desc = The M305 is the standard load-bearing equipment of Weston-Yamada PMCs. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+
+ent-RMCM276ShotgunShellLoadingRig-name = M276 pattern shotgun shell loading rig
+ent-RMCM276ShotgunShellLoadingRig-desc = An ammunition belt designed to hold shotgun shells.
+
+ent-CMBeltMarine-name = M276 pattern ammo load rig
+ent-CMBeltMarine-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+
+ent-CMBeltInflatable-name = inflatable duck
+ent-CMBeltInflatable-desc = No bother to sink or swim when you can just float!
 
 # filled smartgun variation
-ent-RMCBeltSmartGunOperatorPistolFilled = разгрузка для пистолета оператора умного оружия схемы M802
-  .desc = M802 — ограниченно выдаваемая модель снаряжения для переноски грузов КМП, предназначенная для переноски боеприпасов умного оружия и пистолета.
-ent-CMBeltSmartGunOperatorFilled = пояс оператора умного оружия схемы M280
-  .desc = Несмотря на то, что 1. барабанные магазины невероятно неэргономичны, и 2. требуют невероятно точной обработки для универсальной подгонки (спойлер: они не подходят, что лишь усиливает миф о «личностях умного оружия»), морпехи решили выпустить модифицированный морской пояс (более формально известный под обозначением M280) с крючками и пылезащитными чехлами (слишком сложными для среднего солдата) для барабанных боеприпасов системы ML66A. Когда защёлка переноски на барабане не застревает в промасленной липучке, разгрузка действительно неплохо справляется с переноской большого количества барабанов. Но в конечном счёте, по сравнению со стандартными разгрузками... она отстой, но разве не в этом суть быть морпехом?
+ent-RMCM276ShotgunShellLoadingRigFill-name = M276 pattern shotgun shell loading rig
+ent-RMCM276ShotgunShellLoadingRigFill-desc = An ammunition belt designed to hold shotgun shells.
+
+ent-RMCBeltSmartGunOperatorPistolForeconFilled-name = M802 pattern smart gun operator sidearm rig
+ent-RMCBeltSmartGunOperatorPistolForeconFilled-desc = The M802 is a limited-issue mark of UNMC load-bearing equipment, designed to carry smartgun ammunition and a sidearm.
+
+ent-RMCBeltSmartGunOperatorPistolCLF-name = M802 pattern 'Freedom' smart gun operator sidearm rig
+ent-RMCBeltSmartGunOperatorPistolCLF-desc = A modification of the standard M802 load-bearing equipment, designed to carry smart gun ammunition and a Mateba revolver. This one has the CLF logo carved over the manufacturing stamp.
+
+ent-RMCBeltHolsterPistolWeYaMK80Fill-name = WY-TM892 pattern general pistol holster rig
+ent-RMCBeltHolsterPistolWeYaMK80Fill-desc = The WY-TM892 is the standard load-bearing equipment of the W-Y security forces. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCBeltHolsterPistolSPPT73-name = Type 47-S pistol holster rig
+ent-RMCBeltHolsterPistolSPPT73-desc = The Type 47-S is the standard load-bearing equipment of the SPP. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCBeltHolsterPistolSPPNPZ92-name = Type 47-S pistol holster rig
+ent-RMCBeltHolsterPistolSPPNPZ92-desc = The Type 47-S is the standard load-bearing equipment of the SPP. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCBeltHolsterRevolverSpearheadFill-name = M276 pattern general revolver holster rig
+ent-RMCBeltHolsterRevolverSpearheadFill-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is universal and adjustable for different revolvers, along with six small pouches for speedloaders. It smells faintly of hay.
+
+ent-RMCBeltHolsterRevolverZHNK72Fill-name = M276 pattern general revolver holster rig
+ent-RMCBeltHolsterRevolverZHNK72Fill-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is universal and adjustable for different revolvers, along with six small pouches for speedloaders. It smells faintly of hay.
+
+ent-RMCHolsterSMGPouchFilledExtended-name = M276 pattern M63 holster rig
+ent-RMCHolsterSMGPouchFilledExtended-desc = Special issue variant of the M276 designed to holster a M63 submachine gun and two spare magazines. Uncommonly issued to UNMC support and specialist personnel.
+
+ent-RMCMatebaBeltLuxuriousFilled-name = luxurious M276 pattern Mateba holster rig
+ent-RMCMatebaBeltLuxuriousFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with five small pouches for speedloaders. This specific one is tinted black and engraved with gold, heavily customized for a high-ranking official.
+
+ent-RMCMatebaBeltLuxuriousFilledWEYA-name = luxurious M276 pattern Mateba holster rig
+ent-RMCMatebaBeltLuxuriousFilledWEYA-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with five small pouches for speedloaders. This specific one is tinted black and engraved with gold, heavily customized for a high-ranking official.
+
+ent-RMCMatebaBeltFilledAmmo-name = M276 pattern Mateba holster rig
+ent-RMCMatebaBeltFilledAmmo-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with five small pouches for speedloaders. It was included with the mail-order UNMC edition of the Mateba autorevolver in the early 2110s.
+
+ent-RMCMatebaBeltForeconFilled-name = M276 pattern Mateba holster rig
+ent-RMCMatebaBeltForeconFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with five small pouches for speedloaders. It was included with the mail-order UNMC edition of the Mateba autorevolver in the early 2110s.
+
+ent-RMCMK80BeltFilled-name = M276 pattern general pistol holster rig
+ent-RMCMK80BeltFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCMK80BeltRoyalFilled-name = L80 general pistol holster rig
+ent-RMCMK80BeltRoyalFilled-desc = The L80 is the standard load-bearing equipment of the Royal Crown Marines. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCM1984BeltFilled-name = M276 pattern general pistol holster rig
+ent-RMCM1984BeltFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCM44BeltFilled-name = M276 pattern general revolver holster rig
+ent-RMCM44BeltFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is universal and adjustable for different revolvers, along with six small pouches for speedloaders. It smells faintly of hay.
+
+ent-RMCT73BeltFilled-name = M276 pattern general pistol holster rig
+ent-RMCT73BeltFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCD50WinterWyvernBeltFilledAmmo-name = M276 pattern general pistol holster rig
+ent-RMCD50WinterWyvernBeltFilledAmmo-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCD50WinterWyvernBeltFilled-name = M276 pattern general pistol holster rig
+ent-RMCD50WinterWyvernBeltFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-GoldHandcannonBeltFilled-name = M276 pattern general pistol holster rig
+ent-GoldHandcannonBeltFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCM17BeltFilled-name = M276 pattern ammo load rig
+ent-RMCM17BeltFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+
+ent-RMCType71BeltFilled-name = M276 pattern ammo load rig
+ent-RMCType71BeltFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+
+ent-RMCMAR40BeltFilled-name = M276 pattern ammo load rig
+ent-RMCMAR40BeltFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+
+ent-RMCMAR50BeltFilled-name = M276 pattern ammo load rig
+ent-RMCMAR50BeltFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+
+ent-RMCL24BeltFilled-name = M276 pattern ammo load rig
+ent-RMCL24BeltFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+
+ent-RMCL83A3BeltFilled-name = M276 pattern ammo load rig
+ent-RMCL83A3BeltFilled-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+
+ent-RMCBeltUtiliyGeneralFilledRoyal-name = M276 G8-A general utility pouch
+ent-RMCBeltUtiliyGeneralFilledRoyal-desc = A small, lightweight pouch that can be clipped onto M3 Pattern armor to provide additional storage. The newer G8-A model, while uncomfortable, can also be clipped around the waist.
+
+ent-RMCBeltHolsterPistolFilledL54-name = M276 pattern general pistol holster rig
+ent-RMCBeltHolsterPistolFilledL54-desc = The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCBeltSmartGunOperatorPistolPMCFilled-name = WY-TM410 pattern smargunner sidearm rig
+ent-RMCBeltSmartGunOperatorPistolPMCFilled-desc = A special pattern of We-Ya made combat belt, designed to carry smartgun ammunition and a sidearm.
+
+ent-RMCBeltHolsterSMGFilledSMGM63B2-name = M276 pattern M63 holster rig
+ent-RMCBeltHolsterSMGFilledSMGM63B2-desc = Special issue variant of the M276 designed to holster a M63 submachine gun.
+
+ent-RMCBeltSPPBrownHalfFill-name = 6B80 pattern ammo rig
+ent-RMCBeltSPPBrownHalfFill-desc = The 6B80 is an outdated but reliable ammo rig, formerly standard for the SPP Army. Its modular belt holds various munitions, still used by SPP security forces and reserves for its rugged design.
+
+ent-RMCBeltMachineGunner-name = M804 heavygunner storage rig
+ent-RMCBeltMachineGunner-desc = The M804 heavygunner storage rig is an M276 pattern toolbelt rig modified to carry ammunition for heavy machinegun systems, and engineering tools for the gunner.
+
+ent-RMCMedicalL75RCM-name = L75 pattern medical storage rig
+ent-RMCMedicalL75RCM-desc = The L75 is the standard load-bearing equipment of the RCM. It consists of a modular belt with various clips. This version is designed to transport medical supplies and pistol ammunition.
+
+ent-RMCMedicalL75RCMFillPara-name = L75 pattern medical storage rig
+ent-RMCMedicalL75RCMFillPara-desc = The L75 is the standard load-bearing equipment of the RCM. It consists of a modular belt with various clips. This version is designed to transport medical supplies and pistol ammunition.
+
+ent-RMCBeltRCM-name = L70 pattern ammo load rig
+ent-RMCBeltRCM-desc = Good for carrying around extra ammo in the heat of the jungle. Made of special rot-resistant fabric.
+
+ent-RMCBeltUtilityGeneralRCM-name = L26 general utility belt
+ent-RMCBeltUtilityGeneralRCM-desc = A small, lightweight pouch that can be clipped onto armor to provide additional storage. This new RCM model, while uncomfortable, can also be clipped around the waist.
+
+ent-RMCBeltHolsterPistolRCM-name = L80 general pistol holster rig
+ent-RMCBeltHolsterPistolRCM-desc = The L80 is the standard load-bearing equipment of the Royal Crown Marines. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+
+ent-RMCBeltHolsterPistolPara-name = paramarine load bearing rig
+ent-RMCBeltHolsterPistolPara-desc = A sturdy belt fitted with a black leather holster designed for RCM Paramarines. A large utility pouch and several smaller compartments provide ample space for extra ammunition and field essentials — standard gear for Paramarines dropping into hostile territory.
+
+ent-RMCBeltHolsterPistolParaM44-name = paramarine load bearing rig
+ent-RMCBeltHolsterPistolParaM44-desc = A sturdy belt fitted with a black leather holster designed for RCM Paramarines. A large utility pouch and several smaller compartments provide ample space for extra ammunition and field essentials — standard gear for Paramarines dropping into hostile territory.
+
+ent-RMCBeltHolsterPistolParaM44Random-name = paramarine load bearing rig
+ent-RMCBeltHolsterPistolParaM44Random-desc = A sturdy belt fitted with a black leather holster designed for RCM Paramarines. A large utility pouch and several smaller compartments provide ample space for extra ammunition and field essentials — standard gear for Paramarines dropping into hostile territory.
+
+ent-RMCBeltHolsterPistolParaCustom-name = paramarine custom load-bearing rig
+ent-RMCBeltHolsterPistolParaCustom-desc = A modified RCM Paramarine belt featuring a black leather holster with gold inlay, a large utility pouch, and several smaller compartments provide ample space for extra ammunition and field essentials — standard gear for Paramarines dropping into hostile territory.
+
+ent-RMCBeltRoyalMortar-name = L79 pattern load-bearing rig
+ent-RMCBeltRoyalMortar-desc = An L79 pattern load-bearing rig configured to carry support ammunition for either the light mortar or L989A2 multiple grenade launcher, along with a sidearm & magazine. Made of special rot-resistant fabric.
+
+ent-RMCBeltRoyalMortarFilledGrenades-name = L79 pattern load-bearing rig
+ent-RMCBeltRoyalMortarFilledGrenades-desc = An L79 pattern load-bearing rig configured to carry support ammunition for either the light mortar or L989A2 multiple grenade launcher, along with a sidearm & magazine. Made of special rot-resistant fabric.
+
+ent-RMCBeltRoyalMortarFilledMortarShells-name = L79 pattern load-bearing rig
+ent-RMCBeltRoyalMortarFilledMortarShells-desc = An L79 pattern load-bearing rig configured to carry support ammunition for either the light mortar or L989A2 multiple grenade launcher, along with a sidearm & magazine. Made of special rot-resistant fabric.
+
+ent-RMCBeltHolsterPistolRCML29Filled-name = L29 sidearm rig
+ent-RMCBeltHolsterPistolRCML29Filled-desc = A dark brown leather pistol belt commonly issued to RCM officers. Although designed for the L14 service pistol, it accommodates most sidearms along with spare magazines. Standard issue across TSE law enforcement, military, and security forces.
+
+ent-RMCBeltUtilityGeneralRCMPVE-name = L26 general utility belt
+ent-RMCBeltUtilityGeneralRCMPVE-desc = A small, lightweight pouch that can be clipped onto armor to provide additional storage. This new RCM model, while uncomfortable, can also be clipped around the waist.
+

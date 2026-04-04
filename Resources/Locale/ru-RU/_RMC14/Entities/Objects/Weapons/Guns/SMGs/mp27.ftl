@@ -1,8 +1,12 @@
-ent-RMCCartridge46x30mm = патрон (46x30мм ПП)
-  .desc = Патрон 4.6мм для пистолета-пулемёта MP27
-ent-RMCMagazineSMGMP27Extend = удлинённый магазин MP27 (4.6x30мм)
-  .desc = Удлинённый магазин 4.6мм для MP27. Стреляет крупными, тяжёлыми пулями, которые имеют заметную мощь для ПП, но также имеют столь же заметный разброс и потерю точности.
-ent-RMCMagazineSMGMP27 = магазин MP27 (4.6x30мм)
-  .desc = Магазин 4.6мм для MP27. Стреляет крупными, тяжёлыми пулями, которые имеют заметную мощь для ПП, но также имеют столь же заметный разброс и потерю точности.
-ent-RMCWeaponSMGMP27 = пистолет-пулемёт MP27
-  .desc = Архаичная конструкция, уходящая корнями почти на век назад, MP27 был распространён в своё время. Сегодня он находит ограниченное применение в виде дешёвых компьютерных реплик или семейных реликвий. Чрезвычайно эргономичный и лёгкий дизайн позволяет легко наладить массовое производство и обеспечивает удивительно хорошую управляемость, но используемые дешёвые материалы заметно ухудшают разброс оружия.
+ent-RMCCartridge46x30mm-name = cartridge (10x20mm)
+
+ent-RMCMagazineSMGMP27Extend-name = item
+
+ent-RMCMagazineSMGMP27-name = item
+
+ent-RMCWeaponSMGMP27-name = MP27 submachinegun
+ent-RMCWeaponSMGMP27-desc = An archaic design going back almost a century, the MP27 was common in its day. Today it sees limited use as cheap computer-printed replicas or family heirlooms. An extremely ergonomic and lightweight design allows easy mass production and surpisingly good handling, but the cheap materials used hurt the weapon's scatter noticeably.
+
+ent-RMCBullet46x30mm-name = BaseBullet
+ent-RMCBullet46x30mm-desc = If you can see this you're probably dead!
+

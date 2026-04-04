@@ -1,2 +1,3 @@
-ent-RMCIDCardSPPResponder = Удостоверение сотрудника по связям с общественностью SPP
-  .desc = Удостоверение личности, выдаваемое младшим офицерам вооруженных сил Социалистических прогрессивных народов.
+ent-RMCIDCardSPPResponder-name = SPP Communications Officer ID card
+ent-RMCIDCardSPPResponder-desc = A ID card issued to the lower ranking officers of the Socialist Progressive Peoples military.
+

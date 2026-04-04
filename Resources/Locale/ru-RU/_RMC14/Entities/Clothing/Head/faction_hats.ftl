@@ -1,29 +1,47 @@
-ent-RMCHeadBeret = берет
-  .desc = Не защищает голову от пуль.
-ent-RMCHeadUNMCHeadset = гарнитура КМП
-  .desc = Гарнитура, обычно используемая радистами и офицерами. Эта, кажется, неисправна.
-ent-RMCHeadBeretQuartermaster = берет квартирмейстера КМП
-  .desc = Берет с эмблемой сержанта. Символизирует тяжёлую работу и тёмные делишки.
-ent-RMCHeadCapQuartermaster = фуражка квартирмейстера КМП
-  .desc = Это модная шляпа для не очень модного военного снабженца.
-ent-RMCHeadBeretGeneral = бронированный берет генерала
-  .desc = Прочный берет генерала. Защищает и выглядит стильнее, чем кажется. Пожалуйста, не меняйте его на шлем, как панк.
-ent-RMCHeadCapGeneral = бронированная фуражка генерала
-  .desc = Прочная фуражка генерала. Защищает лучше, чем кажется. Пожалуйста, не меняйте её на шлем, как панк.
-ent-RMCHeadMilitiaBucket = ведро ополченца
-ent-RMCHeadMilitiaHood = бронированный капюшон ополченца
-ent-RMCHeadBeretFreelancer = бронированный берет вольного наёмника
-  .desc = Прочный берет вольного наёмника. Защищает лучше, чем кажется.
-ent-RMCHeadCapFreelancer = бронированная кепка вольного наёмника
-  .desc = Прочная кепка вольного наёмника. Защищает лучше, чем кажется.
-ent-RMCHeadBeretAgentIvan = чёрный берет
-  .desc = Носится офицерами специальных подразделений.
-ent-RMCHeadBeretAgent = берет спецагента
-  .desc = Берет с эмблемой разведывательной службы.
-ent-RMCArmorCapProvost = фуражка провост-маршала
-  .desc = Дорогой головной убор провост-маршала. Содержит осколки кевлара для защиты ценного содержимого.
-ent-RMCHeadBeretProvostSenior = берет старшего военного полицейского КМП
-ent-RMCHeadBeretProvost = берет военной полиции КМП
-  .desc = Берет с эмблемой военной полиции КМП.
-ent-RMCHeadCapBureau = фуражка бюро
-  .desc = Тёмная фуражка с мощными буквами «MARSHAL», олицетворяющими правосудие, власть и защиту на внешнем рубеже. Законы Земли простираются дальше Солнца.
+ent-RMCHeadBeret-name = берет
+
+ent-RMCHeadUNMCHeadset-name = UNMC headset
+ent-RMCHeadUNMCHeadset-desc = A headset typically found in use by radio-operators and officers. This one appears to be malfunctioning.
+
+ent-RMCHeadBeretQuartermaster-name = UNMC Logistics Officer beret
+ent-RMCHeadBeretQuartermaster-desc = A beret with the sergeant insignia emblazoned on it. It symbolizes hard work and shady business.
+
+ent-RMCHeadCapQuartermaster-name = UNMC Logistics Officer cap
+ent-RMCHeadCapQuartermaster-desc = It's a fancy hat for a not-so-fancy military supply clerk.
+
+ent-RMCHeadBeretGeneral-name = armored general's beret
+ent-RMCHeadBeretGeneral-desc = A sturdy general officer's beret. More protective and stylish than it seems. Please don't ditch this for a helmet like a punk.
+
+ent-RMCHeadCapGeneral-name = armored general's cap
+ent-RMCHeadCapGeneral-desc = A sturdy general officer's cap. More protective than it seems. Please don't ditch this for a helmet like a punk.
+
+ent-RMCHeadMilitiaBucket-name = militia bucket
+ent-RMCHeadMilitiaBucket-desc = Does not protect a head from bullet.
+
+ent-RMCHeadMilitiaHood-name = armored militia cowl
+ent-RMCHeadMilitiaHood-desc = Does not protect a head from bullet.
+
+ent-RMCHeadBeretFreelancer-name = armored freelancer beret
+ent-RMCHeadBeretFreelancer-desc = A sturdy freelancer's beret. More protective than it seems.
+
+ent-RMCHeadCapFreelancer-name = armored freelancer cap
+ent-RMCHeadCapFreelancer-desc = A sturdy freelancer's cap. More protective than it seems.
+
+ent-RMCHeadBeretAgentIvan-name = black beret
+ent-RMCHeadBeretAgentIvan-desc = Worn by officers of special units.
+
+ent-RMCHeadBeretAgent-name = special agent beret
+ent-RMCHeadBeretAgent-desc = A beret with the intelligence service insignia emblazoned on it.
+
+ent-RMCArmorCapProvost-name = provost marshal cap
+ent-RMCArmorCapProvost-desc = The expensive headwear of a Provost Marshal. Contains shards of kevlar to keep its valuable contents safe.
+
+ent-RMCHeadBeretProvostSenior-name = UNMC senior provost beret
+ent-RMCHeadBeretProvostSenior-desc = A beret with the UNMC Military Police insignia emblazoned on it.
+
+ent-RMCHeadBeretProvost-name = UNMC provost beret
+ent-RMCHeadBeretProvost-desc = A beret with the UNMC Military Police insignia emblazoned on it.
+
+ent-RMCHeadCapBureau-name = bureau cap
+ent-RMCHeadCapBureau-desc = A dark cap inscribed with the powerful letters of 'MARSHAL' representing justice, authority, and protection in the outer rim.
+

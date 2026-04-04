@@ -1,5 +1,4 @@
 ## Messages shown to Pacified players when they try to do violence:
-
 # With projectiles:
 pacified-cannot-throw = Я не могу заставить себя бросить { $projectile }, это может кого-то покалечить!
 # With embedding projectiles:

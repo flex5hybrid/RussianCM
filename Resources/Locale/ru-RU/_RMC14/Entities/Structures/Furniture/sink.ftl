@@ -1,3 +1,6 @@
-ent-CMSink = раковина
-ent-CMSinkEmpty = раковина
-  .desc = Раковина, используемая для мытья рук и лица.
+ent-CMSink-name = sink
+ent-CMSink-desc = A sink used for washing one's hands and face.
+
+ent-CMSinkEmpty-name = sink
+ent-CMSinkEmpty-desc = A sink used for washing one's hands and face.
+

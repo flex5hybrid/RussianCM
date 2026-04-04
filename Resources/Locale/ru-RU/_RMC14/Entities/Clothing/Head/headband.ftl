@@ -1,18 +1,42 @@
-ent-CMHeadBandRebel = повстанческая повязка
-  .desc = Повязка из простого куска ткани. Спереди начертаны слова «ДОЛОЙ ТИРАНОВ».
-ent-CMHeadBandIntel = разведывательная повязка
-  .desc = Кусок ткани, принадлежавший опытному оперативнику спецназа, хотя никто, кажется, не помнит его имени. Гадюка..? Змей..?
-ent-CMHeadBandFoxtrot = повязка Фокстрот
-ent-CMHeadBandEcho = повязка Эхо
-ent-CMHeadBandDelta = повязка Дельта
-ent-CMHeadBandCharlie = повязка Чарли
-ent-CMHeadBandBravo = повязка Браво
-ent-CMHeadBandAlpha = повязка Альфы
-  .desc = Кусок ткани в цветах вашего отряда.
-ent-RMCHeadBandSquad = отрядная повязка КМП
-ent-CMHeadBandTan = бежевая повязка
-ent-CMHeadBandRed = красная повязка
-ent-CMHeadBandGray = серая повязка
-ent-CMHeadBandBrown = коричневая повязка
-ent-CMHeadBandGreen = зелёная повязка
-  .desc = Кусок ткани, чтобы обернуть вокруг головы.
+ent-CMHeadBandRebel-name = rebel headband
+ent-CMHeadBandRebel-desc = A headband made from a simple strip of cloth. The words "DOWN WITH TYRANTS" are emblazoned on the front.
+
+ent-CMHeadBandIntel-name = intel headband
+ent-CMHeadBandIntel-desc = A piece of cloth that belonged to an experienced special forces operative, nobody seems to recall his name though. Viper..? Serpent..?
+
+ent-CMHeadBandFoxtrot-name = foxtrot headband
+ent-CMHeadBandFoxtrot-desc = Piece of cloth in colors of your squad.
+
+ent-CMHeadBandEcho-name = echo headband
+ent-CMHeadBandEcho-desc = Piece of cloth in colors of your squad.
+
+ent-CMHeadBandDelta-name = delta headband
+ent-CMHeadBandDelta-desc = Piece of cloth in colors of your squad.
+
+ent-CMHeadBandCharlie-name = charlie headband
+ent-CMHeadBandCharlie-desc = Piece of cloth in colors of your squad.
+
+ent-CMHeadBandBravo-name = bravo headband
+ent-CMHeadBandBravo-desc = Piece of cloth in colors of your squad.
+
+ent-CMHeadBandAlpha-name = alpha headband
+ent-CMHeadBandAlpha-desc = Piece of cloth in colors of your squad.
+
+ent-RMCHeadBandSquad-name = UNMC squad headband
+ent-RMCHeadBandSquad-desc = Piece of cloth to wrap around the head.
+
+ent-CMHeadBandTan-name = tan headband
+ent-CMHeadBandTan-desc = Piece of cloth to wrap around the head.
+
+ent-CMHeadBandRed-name = red headband
+ent-CMHeadBandRed-desc = Piece of cloth to wrap around the head.
+
+ent-CMHeadBandGray-name = gray headband
+ent-CMHeadBandGray-desc = Piece of cloth to wrap around the head.
+
+ent-CMHeadBandBrown-name = brown headband
+ent-CMHeadBandBrown-desc = Piece of cloth to wrap around the head.
+
+ent-CMHeadBandGreen-name = green headband
+ent-CMHeadBandGreen-desc = Piece of cloth to wrap around the head.
+

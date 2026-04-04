@@ -1,7 +1,5 @@
 ### Localization used for the list verbs command.
-
 # Mostly help + error messages.
-
 list-verbs-command-description = Перечисляет все verbs, которые игрок может использовать на данной сущности.
 list-verbs-command-help = listverbs <playerUid | "self"> <targetUid>
 list-verbs-command-invalid-args = listverbs принимает 2 аргумента.

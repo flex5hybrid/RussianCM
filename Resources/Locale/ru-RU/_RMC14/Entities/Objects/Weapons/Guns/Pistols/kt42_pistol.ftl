@@ -1,4 +1,5 @@
-ent-RMCMagazinePistolKT42 = магазин KT-42 (.44)
-  .desc = Пистолетный магазин калибра .44.
-ent-RMCWeaponPistolKT42 = автомаг KT-42
-  .desc = Автомаг KT-42 — это архаичная, но надёжная конструкция, уходящая корнями на многие десятилетия назад. Существовало множество версий и вариаций, но модель 42 — безусловно, самая распространённая. С этим ружьём-пистолетом вы не ошибётесь.
+ent-RMCMagazinePistolKT42-name = item
+ent-RMCMagazinePistolKT42-desc = A pistol magazine.
+
+ent-RMCWeaponPistolKT42-name = item
+

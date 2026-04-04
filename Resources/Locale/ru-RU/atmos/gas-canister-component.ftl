@@ -1,13 +1,9 @@
 ## UI
-
 # Bound Interface
-
 gas-canister-bound-user-interface-title = Газовый баллон
 # Popup
 gas-canister-popup-denied = Доступ запрещён
-
 # window
-
 gas-canister-window-ok-text = ОК
 gas-canister-window-edit-text = Редактировать
 gas-canister-window-label-label = Метка:

@@ -1,6 +1,9 @@
-ent-RMCArmorM4RMarshallMedium = броня маршала CMB схемы M4R
-  .desc = Индивидуально подогнанная вариация штурмовой брони CMB, предназначенная для ношения самими маршалами, имеет золотую окантовку со знаками различия. Имеет дополнительный слой лёгких защитных материалов.
-ent-RMCArmorM4RMedium = броня CMB схемы M4R
-  .desc = Тёмный комплект брони, представляющий собой модификацию варианта безопасности брони M3 от Aegis Battlefield Armaments. Разработан с учётом контроля беспорядков и подавления протестов. На боку металлическая эмблема с надписью «CMB RIOT CONTROL». Законы Земли простираются дальше Солнца.
-ent-RMCArmorM4RLight = лёгкая броня CMB схемы M4R
-  .desc = Тёмный комплект брони, представляющий собой модификацию варианта безопасности брони M3 от Aegis Battlefield Armaments. Разработан с учётом контроля беспорядков и подавления протестов. На боку металлическая эмблема с надписью «CMB RIOT CONTROL». Законы Земли простираются дальше Солнца.
+ent-RMCArmorM4RMarshallMedium-name = M4R pattern CMB Marshal armor
+ent-RMCArmorM4RMarshallMedium-desc = A custom fit variation of the CMB Riot armor, intended to be worn the Marshals themselves, has a golden lining with rank insignia. Has additional layer of lightweight protective materials.
+
+ent-RMCArmorM4RMedium-name = M4R pattern CMB armor
+ent-RMCArmorM4RMedium-desc = A dark set of armor, which is a modification of the security variant of AEGIS Armaments M3 armor. Designed for riot control and protest suppression in mind. The side of it has a metallic insignia with 'CMB RIOT CONTROL' on it.
+
+ent-RMCArmorM4RLight-name = M4R pattern CMB light armor
+ent-RMCArmorM4RLight-desc = A dark set of armor, which is a modification of the security variant of AEGIS Armaments M3 armor. Designed for riot control and protest suppression in mind. The side of it has a metallic insignia with 'CMB RIOT CONTROL' on it.
+

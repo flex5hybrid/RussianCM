@@ -1,10 +1,15 @@
-ent-RMCCartridgeRifleMAR40 = патрон (7.62x39мм)
-  .desc = Винтовочный патрон 7.62x39мм
-ent-RMCMagazineMar50LMG = барабанный магазин MAR (7.62x39мм)
-  .desc = Барабанный магазин 7.62x39мм для ручного пулемёта MAR-50.
-ent-RMCMagazineRifleMAR40Ext = расширенный магазин MAR (7.62x39мм)
-  .desc = Магазин MAR 7.62x39мм, этот вмещает больше патронов, чем стандартный магазин.
-ent-RMCMagazineRifleMAR40 = магазин MAR (7.62x39мм)
-  .desc = Магазин 7.62x39мм для серии огнестрельного оружия MAR.
-ent-WeaponRifleMAR40 = боевая винтовка MAR-40
-  .desc = Дешёвая, надёжная штурмовая винтовка калибра 7.62x39мм. Часто встречается в руках преступников или наёмников, а также у бойцов СНП или ФОК.
+ent-RMCCartridgeRifleMAR40-name = cartridge
+
+ent-RMCMagazineMar50LMG-name = MAR drum magazine (7.62x39mm)
+ent-RMCMagazineMar50LMG-desc = A 7.62x39mm drum magazine for the MAR-50 LMG.
+
+ent-RMCMagazineRifleMAR40Ext-name = item
+
+ent-RMCMagazineRifleMAR40-name = item
+
+ent-WeaponRifleMAR40-name = MAR-40 battle rifle
+ent-WeaponRifleMAR40-desc = A cheap, reliable assault rifle chambered in 7.62x39mm. Commonly found in the hands of criminals or mercenaries, or in the hands of the SPP or CLF.
+
+ent-BulletRifleMAR40-name = BaseBullet
+ent-BulletRifleMAR40-desc = If you can see this you're probably dead!
+

@@ -1,12 +1,10 @@
 cm-xeno-egg-clear = Очищаем вылупившееся яйцо.
 cm-xeno-egg-not-developed = Яйцо ещё не созрело.
-
 cm-xeno-egg-failed-must-weeds = Яйцо нужно сажать на сорняки.
 cm-xeno-egg-failed-must-hive-weeds = Яйцо нужно сажать на ульевые сорняки.
 cm-xeno-egg-failed-plant-outside = Лучше не сажать это вне камеры содержания.
 cm-xeno-egg-failed-already-there = Здесь уже есть яйцо.
 cm-xeno-egg-blocked = Здесь уже что-то построено.
-
 rmc-xeno-egg-dead-child = Этот Лицехват мёртв.
 rmc-xeno-egg-has-child = Здесь уже есть Лицехват.
 rmc-xeno-egg-awake-child = {CAPITALIZE($parasite)} не хочет возвращаться!
@@ -15,20 +13,14 @@ rmc-xeno-egg-return-start = Начинаем помещать лицехвата
 rmc-xeno-egg-return-user = Помещаем лицехвата обратно в яйцо.
 rmc-xeno-egg-return-self = {CAPITALIZE($parasite)} заползает обратно в яйцо.
 rmc-xeno-egg-return = {CAPITALIZE($user)} запихивает {$parasite} обратно в яйцо.
-
 rmc-xeno-egg-ghost-verb = Стать Лицехватом
 rmc-xeno-egg-ghost-need-time = Вы недавно стали призраком. До возможности стать Лицехватом осталось 3 минуты ({$seconds} секунд).
 rmc-xeno-egg-ghost-need-time-round = Недостаточно времени с начала раунда ({$seconds} секунд осталось).
 rmc-xeno-egg-ghost-bypass-time = Вы успешно заразили цель. Можете снова стать Л.
 rmc-xeno-egg-ghost-confirm = Вы уверены, что хотите стать паразитом?
-
 rmc-xeno-egg-throw-xeno = Бросить яйцо - значит разбить его!
 rmc-xeno-egg-throw = Это плохая идея.
-
 rmc-xeno-egg-plant-self = Начинаем сажать яйцо.
 rmc-xeno-egg-plant = {CAPITALIZE($user)} начинает сажать яйцо.
-
 rmc-xeno-egg-carrier-death = {CAPITALIZE(THE($xeno))} выронил драгоценные яйца!
-
 rmc-xeno-fragile-egg-prefix = хрупкое {$baseName}
-

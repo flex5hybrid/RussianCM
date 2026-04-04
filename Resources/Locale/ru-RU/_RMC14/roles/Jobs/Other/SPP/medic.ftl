@@ -1,2 +1,4 @@
-ent-RMCRandomHumanoidSPPMedicFriendly = spp роль призрака медик
-ent-RMCRandomHumanoidSPPMedicHostile = spp роль призрака медик
+ent-RMCRandomHumanoidSPPMedicFriendly-name = spp ghost role medic
+
+ent-RMCRandomHumanoidSPPMedicHostile-name = spp ghost role medic
+

@@ -1,13 +1,20 @@
-ent-RMCBulletRevolver357Hollowpoint = пуля (.357) экспансивная
-ent-RMCBulletRevolver357 = пуля (.357)
-ent-RMCCartridgeRevolver357Hollowpoint = патрон (.357) экспансивный
-ent-RMCCartridgeRevolver357 = патрон (.357)
-ent-RMCSpeedLoader357Hollowpoint = Спидлоадер экспансивными (.357)
-  .desc = Револьверный спидлоадер, снаряженный экспансивными патронами.
-ent-RMCSpeedLoader357 = Спидлоадер (.357)
-  .desc = Револьверный спидлоадер.
-ent-RMCBaseSpeedLoader357 = Спидлоадер (.357)
-ent-RMCWeaponRevolverSpearheadCustom = Кастомный авторевольвер "Спирхед"
-  .desc = Автоматический револьвер под патрон .357, изготовленный на заказ из темного металла с деревянной рукоятью, явно созданный для человека со вкусом.
-ent-RMCWeaponRevolverSpearhead = Авторевольвер КМП "Спирхед"
-  .desc = Массивный револьвер, который иногда носят штурмовые подразделения и офицеры в Корпусе Морской Пехоты, а также сотрудники гражданских правоохранительных органов. Использует патроны .357 Magnum.
+ent-RMCBulletRevolver357Hollowpoint-name = bullet (.357) Hollowpoint
+ent-RMCBulletRevolver357Hollowpoint-desc = If you can see this you're probably dead!
+
+ent-RMCBulletRevolver357-name = bullet (.357)
+ent-RMCBulletRevolver357-desc = If you can see this you're probably dead!
+
+ent-RMCCartridgeRevolver357Hollowpoint-name = cartridge (.35 auto)
+
+ent-RMCCartridgeRevolver357-name = cartridge (.35 auto)
+
+ent-RMCSpeedLoader357Hollowpoint-name = Speed loader (.357)
+
+ent-RMCSpeedLoader357-name = Speed loader (.357)
+
+ent-RMCBaseSpeedLoader357-name = Speed loader (.357)
+
+ent-RMCWeaponRevolverSpearheadCustom-name = Кастомный авторевольвер "Спирхед"
+
+ent-RMCWeaponRevolverSpearhead-name = Авторевольвер КМП "Спирхед"
+

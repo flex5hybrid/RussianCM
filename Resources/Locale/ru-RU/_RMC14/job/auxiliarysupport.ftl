@@ -3,22 +3,18 @@ cm-job-name-aso = Офицер вспомогательного обеспече
 cm-job-description-aso = Координируйте работу вспомогательных подразделений операции.
 cm-job-prefix-aso = ОВО
 CMJobAuxiliarySupportOfficer = Офицер вспомогательного обеспечения
-
 cm-job-name-dropship-pilot = Пилот дропшипа
 cm-job-description-dropship-pilot = Транспортируйте морпехов на дропшипе и эвакуируйте раненых. Не допустите проникновения врага на борт.
 cm-job-prefix-dropship-pilot = ПД
 CMJobPilotDropship = Пилот дропшипа
-
 cm-job-name-gunship-pilot = Пилот ганшипа
 cm-job-description-gunship-pilot = Управляйте, защищайте и обслуживайте транспортный дропшип корабля.
 cm-job-prefix-gunship-pilot = ПГ
 CMJobPilotGunship = Офицер ганшипа
-
 cm-job-name-dcc = Старшина дропшипа
 cm-job-description-dcc = Помогайте пилотам дропшипа и ганшипа, обслуживайте корабельный дропшип и оказывайте помощь раненым на борту.
 cm-job-prefix-dcc = СД
 CMJobDropshipCrewChief = Старшина дропшипа
-
 cm-job-name-intel = Офицер разведки
 cm-job-description-intel = Добывайте разведданные на поверхности, обрабатывайте их и получайте техочки для поддержки операции через ОБ-боеголовки, очки дропшипа или снабжение.
 cm-job-prefix-intel = ОР

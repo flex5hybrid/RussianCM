@@ -1,18 +1,27 @@
-ent-RCMWallShivaReinforcedFabRed = усиленная стена сборной конструкции
-  .desc = Данная конструкция изготовлена ​​из металлических опорных стержней. 
-ent-RCMWallShivaReinforcedFabWhite = усиленная стена сборной конструкции
-  .desc = Данная конструкция изготовлена ​​из металлических опорных стержней. 
-ent-RCMWallShivaReinforcedFabPink = усиленная стена сборной конструкции
-  .desc = Данная конструкция изготовлена ​​из металлических опорных стержней. 
-ent-RCMWallShivaReinforcedFabBlue = усиленная стена сборной конструкции
-  .desc = Данная конструкция изготовлена ​​из металлических опорных стержней. 
-ent-RCMWallShivaReinforcedFabOrange = усиленная стена сборной конструкции
-  .desc = Данная конструкция изготовлена ​​из металлических опорных стержней. 
-ent-RCMWallShivaReinforcedFab = усиленная стена сборной конструкции
-  .desc = Данная конструкция изготовлена ​​из металлических опорных стержней. 
-ent-RCMWallShivaFab = сборная конструкция стены
-  .desc = Эта конструкция изготовлена ​​из металлических опорных стержней и прочного поликевлонового пластика. 
-ent-RCMWallShivaInvincibleFab = усиленная стена сборной конструкции
-  .desc = Его невозможно уничтожить любыми доступными вам способами. 
-ent-RCMWallShivaIce = плиты черного льда
-  .desc = Плиты на плитах грязного черного льда, покрывавшего коркой древние скальные образования. 
+ent-RCMWallShivaReinforcedFabRed-name = reinforced prefabricated structure wall
+ent-RCMWallShivaReinforcedFabRed-desc = This structure is made of metal support rods. The poly-kevlon has been replaced with sheet metal, reinforcing it.
+
+ent-RCMWallShivaReinforcedFabWhite-name = reinforced prefabricated structure wall
+ent-RCMWallShivaReinforcedFabWhite-desc = This structure is made of metal support rods. The poly-kevlon has been replaced with sheet metal, reinforcing it.
+
+ent-RCMWallShivaReinforcedFabPink-name = reinforced prefabricated structure wall
+ent-RCMWallShivaReinforcedFabPink-desc = This structure is made of metal support rods. The poly-kevlon has been replaced with sheet metal, reinforcing it.
+
+ent-RCMWallShivaReinforcedFabBlue-name = reinforced prefabricated structure wall
+ent-RCMWallShivaReinforcedFabBlue-desc = This structure is made of metal support rods. The poly-kevlon has been replaced with sheet metal, reinforcing it.
+
+ent-RCMWallShivaReinforcedFabOrange-name = reinforced prefabricated structure wall
+ent-RCMWallShivaReinforcedFabOrange-desc = This structure is made of metal support rods. The poly-kevlon has been replaced with sheet metal, reinforcing it.
+
+ent-RCMWallShivaReinforcedFab-name = reinforced prefabricated structure wall
+ent-RCMWallShivaReinforcedFab-desc = This structure is made of metal support rods. The poly-kevlon has been replaced with sheet metal, reinforcing it.
+
+ent-RCMWallShivaFab-name = prefabricated structure wall
+ent-RCMWallShivaFab-desc = This structure is made of metal support rods and robust poly-kevlon plastics. A derivative of the stuff used in UN ballistics vests, UNMC and SPP uniforms. These walls are pulled taut and have been reinforced into a more permanent structure.
+
+ent-RCMWallShivaInvincibleFab-name = reinforced prefabricated structure wall
+ent-RCMWallShivaInvincibleFab-desc = It cannot be destroyed by any means you have available. Perhaps praying to the gods may help.
+
+ent-RCMWallShivaIce-name = black ice slabs
+ent-RCMWallShivaIce-desc = Slabs on slabs of dirty black ice crusted over ancient rock formations. The permafrost fluctuates between 20in and 12in during the summer months.
+

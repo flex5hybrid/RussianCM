@@ -1,6 +1,15 @@
-ent-RMCIDCardCMBMarshal = золотой жетон маршала БКМ
-  .desc = Заветный золотой жетон, означающий, что его владелец — один из немногих маршалов БКМ, патрулирующих внешний rim. Это символ справедливости, власти и защиты. Защита тех, кто не может защитить себя. Этот жетон олицетворяет приверженность данной присяге, которая всегда соблюдается.
-ent-RMCIDCardCMBRiotOfficer = серебряный жетон офицера по подавлению беспорядков БКМ
-  .desc = Серебряный жетон, обозначающий, что его владелец является офицером по подавлению беспорядков БКМ. Это символ справедливости, власти и защиты. Защита тех, кто не может защитить себя. Этот жетон олицетворяет приверженность данной присяге, которая всегда соблюдается.
-ent-RMCIDCardCMBDeputy = серебряный жетон заместителя БКМ
-  .desc = Серебряный жетон, обозначающий, что его владелец является заместителем БКМ. Это символ справедливости, власти и защиты. Защита тех, кто не может защитить себя. Этот жетон олицетворяет приверженность данной присяге, которая всегда соблюдается.
+ent-RMCIDCardCMBMarshal-name = CMB marshal gold badge
+ent-RMCIDCardCMBMarshal-desc = A coveted gold badge signifying that the wearer is one of the few CMB Marshals patroling the outer rim. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept.
+
+ent-RMCIDCardCMBRiotOfficer-name = CMB riot control officer silver badge
+ent-RMCIDCardCMBRiotOfficer-desc = The silver badge which represents that the wearer is a CMB Riot Control Officer. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept.
+
+ent-RMCIDCardCMBDeputy-name = CMB deputy silver badge
+ent-RMCIDCardCMBDeputy-desc = The silver badge which represents that the wearer is a CMB Deputy. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept.
+
+ent-RMCIDCardCMBDeputySurvivor-name = bureau deputy silver badge
+ent-RMCIDCardCMBDeputySurvivor-desc = The silver badge which represents that the wearer is a Bureau Deputy. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept.
+
+ent-RMCIDCardCMBMarshalSurvivor-name = bureau marshal gold badge
+ent-RMCIDCardCMBMarshalSurvivor-desc = A coveted gold badge signifying that the wearer is one of the few CMB Marshals patroling the outer rim. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept.
+

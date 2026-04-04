@@ -1,3 +1,6 @@
-ent-CMWashingMachineDouble = стиральная машина (двухместная)
-ent-CMWashingMachine = стиральная машина
-  .desc = WM-321 представляет собой прочную цилиндрическую электростанцию ​​с прозрачным окном. 
+ent-CMWashingMachineDouble-name = washing machine (double)
+ent-CMWashingMachineDouble-desc = The WM-321 is a rugged, cylindrical powerhouse, equipped with a transparent window. This one is not operational.
+
+ent-CMWashingMachine-name = washing machine
+ent-CMWashingMachine-desc = The WM-321 is a rugged, cylindrical powerhouse, equipped with a transparent window. This one is not operational.
+

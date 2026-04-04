@@ -1,26 +1,39 @@
 ent-RMCHybrisaRainLightProp-name = небольшой дождь
 ent-RMCHybrisaRainLightProp-desc = Это небольшой дождь, падающий с неба.
+
 ent-RMCHybrisaRainVeryLightProp-name = очень легкий дождь
 ent-RMCHybrisaRainVeryLightProp-desc = Это очень небольшой дождь, падающий с неба.
+
 ent-RMCHybrisaRainProp-name = дождь
 ent-RMCHybrisaRainProp-desc = Это дождь, падающий с неба.
+
 ent-RMCTrijentRainLightProp-name = небольшой дождь
 ent-RMCTrijentRainLightProp-desc = Это небольшой дождь, падающий с неба.
+
 ent-RMCStrataStormVeryLightProp-name = очень легкий дождь
 ent-RMCStrataStormVeryLightProp-desc = Это очень небольшой дождь, падающий с неба.
+
 ent-RMCStrataStormLightProp-name = небольшой дождь
 ent-RMCStrataStormLightProp-desc = Это небольшой дождь, падающий с неба.
+
 ent-RMCStrataStormProp-name = дождь
 ent-RMCStrataStormProp-desc = Это дождь, падающий с неба.
+
 ent-RMCBigRedDustProp-name = пыльная буря
 ent-RMCBigRedDustProp-desc = Это пыль, падающая с неба.
+
 ent-RMCBigRedSandProp-name = песчаная буря
 ent-RMCBigRedSandProp-desc = Это песок, падающий с неба.
+
 ent-RMCBigRedRocksProp-name = каменная буря
 ent-RMCBigRedRocksProp-desc = Это камни, падающие с неба.
+
 ent-RMCStrataClearskyProp-name = легкий снег
 ent-RMCStrataClearskyProp-desc = Это снег, падающий с неба.
+
 ent-RMCStrataSnowingProp-name = метель
 ent-RMCStrataSnowingProp-desc = Это снег, падающий с неба.
+
 ent-RMCStrataBlizzardProp-name = метель
 ent-RMCStrataBlizzardProp-desc = С неба падает много снега.
+

@@ -1,2 +1,2 @@
-ent-CMXenoBurrower = Бурильщик
-  .desc = Мясной ксенос с острыми когтями.
+ent-CMXenoBurrower-name = cm-job-name-xeno-burrower
+

@@ -1,5 +1,4 @@
 ## Survivor
-
 roles-antag-survivor-name = Выживший
 # It's a Halo reference
 roles-antag-survivor-objective = Текущая задача: Выжить
@@ -23,9 +22,7 @@ survivor-round-end-alive-on-shuttle-count =
         [one] [color=green]{ $aliveCount }[/color] выживший выбрался живым.
        *[other] [color=green]{ $aliveCount }[/color] выживших выбралось живыми.
     }
-
 ## Wizard
-
 objective-issuer-swf = [color=turquoise]Федерация космических волшебников[/color]
 wizard-title = Волшебник
 wizard-description = На станции присутствует волшебник! Никогда не знаешь, что они могут натворить.
@@ -38,6 +35,4 @@ wizard-role-greeting =
     Хорошенько продемонстрируйте им свои способности.
     Вам решать, что именно предпринять, но помните, что Космические волшебники желают, чтобы вы вернулись живыми.
 wizard-round-end-name = волшебник
-
 ## TODO: Wizard Apprentice (Coming sometime post-wizard release)
-

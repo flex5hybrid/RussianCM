@@ -1,5 +1,4 @@
 ### Announcement
-
 earlyleave-cryo-job-unknown = Должность неизвестна
 # {$entity} available for GENDER function purposes
 earlyleave-cryo-announcement =

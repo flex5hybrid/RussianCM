@@ -1,7 +1,15 @@
-ent-RMCRandomHumanoidSurvivorCivilian = роль призрака гражданского колониста
-ent-RMCSurvivorPresetCivilianOutfits = Гражданский колонист со случайной одеждой
-ent-RMCSurvivorPresetCivilianRareItem = Гражданский колонист с редким предметом
-ent-RMCSurvivorPresetCivilian = настройки гражданского колониста
-ent-RMCSurvivorPresetNoGun = нет предустановленных настроек колониста с оружием
-ent-CMGuidebookRoleSurvivor = Выживший
-ent-CMSpawnPointSurvivor = точка появления выжившего
+ent-RMCRandomHumanoidSurvivorCivilian-name = civilian colonist ghost role
+
+ent-RMCSurvivorPresetCivilianOutfits-name = civilian colonist preset with random outfits
+
+ent-RMCSurvivorPresetCivilianRareItem-name = civilian colonist preset with rare item
+
+ent-RMCSurvivorPresetCivilian-name = civilian colonist preset
+
+ent-RMCSurvivorPresetNoGun-name = no gun colonist preset
+
+ent-CMGuidebookRoleSurvivor-name = Survivor
+
+ent-CMSpawnPointSurvivor-name = survivor spawn point
+ent-CMSpawnPointSurvivor-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

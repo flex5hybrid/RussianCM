@@ -15,6 +15,5 @@ rmc-ui-create-new-hive = Создать новый улей
 rmc-ui-create-hive-title = Имя нового улья
 rmc-ui-humanoid = Гуманоид
 rmc-ui-tier = Уровень {$tier}
-
 rmc-ui-admin = Админ-панель RMC
 rmc-ui-rejuvenate-nearby-marines = Омолодить всех nearby морпехов

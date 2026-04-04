@@ -1,58 +1,89 @@
 ent-RMCFoodDonutJellyFrosted-name = пончик с матовым желе
 ent-RMCFoodDonutJellyFrosted-desc = Ты желе?
+
 ent-RMCFoodDonutJelly-name = пончик с желе
 ent-RMCFoodDonutJelly-desc = Ты желе?
+
 ent-RMCFoodCookiePeanutButter-name = печенье с арахисовым маслом
 ent-RMCFoodCookiePeanutButter-desc = Мягкий, нежный и очень вкусный!
+
 ent-RMCFoodPBJSandwich-name = сэндвич с арахисовым маслом и желе
 ent-RMCFoodPBJSandwich-desc = Сладкий и пикантный сэндвич, который любят и взрослые, и морские пехотинцы!
+
 ent-RMCFoodOnigiri-name = онигири
-ent-RMCFoodOnigiri-desc = Эти пончики великолепны! 
+ent-RMCFoodOnigiri-desc = Эти пончики великолепны!
+
 ent-RMCFoodCarbonara-name = карбонара
-ent-RMCFoodCarbonara-desc = Бекон с макаронами? 
+ent-RMCFoodCarbonara-desc = Бекон с макаронами?
+
 ent-FoodRiceMango-name = липкий рис с манго
 ent-FoodRiceMango-desc = Это грандиозный жест, который ни в коей мере не великий.
+
 ent-FoodBanhMi-name = бан ми
 ent-FoodBanhMi-desc = Бан Ми, для Бан Ю
+
 ent-FoodBanhMiHalf-name = бан ми половина
 ent-FoodBanhMiHalf-desc = Это симфония в бутерброде!
+
 ent-FoodChickenParmHero-name = куриный парм-герой
 ent-FoodChickenParmHero-desc = Вот это сэндвич, черт возьми!
+
 ent-FoodChickenParmHalf-name = половинка куриного пармеза
 ent-FoodChickenParmHalf-desc = Это лучше, чем есть жареный сыр с радиатора.
+
 ent-FoodMeatballSub-name = фрикадельки
 ent-FoodMeatballSub-desc = Сделано с использованием секретов Смертельного Квон До!
+
 ent-FoodMeatballSubHalf-name = половинка фрикадельки
 ent-FoodMeatballSubHalf-desc = Этого достаточно, чтобы взрослый Морпех заплакал.
+
 ent-FoodGabagool-name = сэндвич с габагулом
 ent-FoodGabagool-desc = Проснулся сегодня утром, купил себе бутерброд.
+
 ent-FoodGabagoolHalf-name = половина сэндвича габагул
-ent-FoodGabagoolHalf-desc = Габагул? 
+ent-FoodGabagoolHalf-desc = Габагул?
+
 ent-FoodCheesesteak-name = чизстейк
 ent-FoodCheesesteak-desc = Если у вас не жирные руки, то действительно ли это чизстейк?
+
 ent-FoodCheesesteakHalf-name = половина чизстейка
 ent-FoodCheesesteakHalf-desc = Подается без лука.
+
 ent-FoodYorkshirePudding-name = йоркширский пудинг
 ent-FoodYorkshirePudding-desc = Какая восхитительная выпечка!
+
 ent-FoodCakeBlackForest-name = торт «Черный лес»
 ent-FoodCakeBlackForest-desc = Торт больше не ложь!
+
 ent-FoodBlackForestSlice-name = кусочек торта «Шварцвальд»
 ent-FoodBlackForestSlice-desc = Теперь без рыбьего этилбензола!
+
 ent-FoodMeatSausage-name = сырая колбаса
 ent-FoodMeatSausage-desc = Кусок смешанного длинного мяса.
+
 ent-FoodMeatSausageCooked-name = вареная колбаса
 ent-FoodMeatSausageCooked-desc = Эта коряга выглядит так, будто только что сошла с Барби!
+
 ent-FoodHotDog-name = хот-дог
-ent-FoodHotDog-desc = Жизнь очень вкусная! 
+ent-FoodHotDog-desc = Жизнь очень вкусная!
+
 ent-FoodTapsilog-name = тапсилог
 ent-FoodTapsilog-desc = Это как стейк и яйца, только лучше!
+
 ent-FoodCarpsilog-name = карпсилог
 ent-FoodCarpsilog-desc = Пропитано таким количеством уксуса, что вы забудете об этом карпотоксине!
+
 ent-FoodChicksilog-name = цыпленок
 ent-FoodChicksilog-desc = Я знаю, что ты просил тонкацу, но это все, что у нас есть сегодня.
+
 ent-FoodTocilog-name = тоцилог
 ent-FoodTocilog-desc = Совсем не похоже на бекон, но так же здорово!
+
 ent-FoodBangersMash-name = фейерверки и пюре
 ent-FoodBangersMash-desc = Сочетается как рыба с жареным картофелем, фасоль и… неважно.
+
 ent-FoodPieMash-name = пирог и пюре
 ent-FoodPieMash-desc = Сочетается как рыба с жареным картофелем, фасоль и… неважно.
+
+ent-CMFoodBase-name = item
+

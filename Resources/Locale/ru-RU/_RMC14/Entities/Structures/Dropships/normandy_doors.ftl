@@ -1,4 +1,10 @@
-ent-CMNormandyDoorStarboard = Люк экипажа Нормандии
-ent-CMNormandyDoorPort = Люк экипажа Нормандии
-ent-CMNormandyDoorAft = Нормандия грузовая дверь
-ent-CMNormandyDoor = Люк экипажа Нормандии
+ent-CMNormandyDoorStarboard-name = normandy crew hatch
+
+ent-CMNormandyDoorPort-name = normandy crew hatch
+
+ent-CMNormandyDoorAft-name = normandy cargo door
+
+ent-CMNormandyDoor-name = normandy crew hatch
+
+ent-CMNormandyCockpit-name = cockpit
+

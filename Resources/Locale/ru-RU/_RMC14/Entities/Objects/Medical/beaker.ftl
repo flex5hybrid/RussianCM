@@ -1,14 +1,35 @@
-ent-RMCVialTricordrazine = флакон трикордразина
-  .desc = Небольшой стеклянный флакон. Вмещает до 30 единиц. Содержит Трикордразин — слабое лекарство общего назначения для лечения повреждений.
-ent-RMCVial = флакон
-  .desc = Небольшой стеклянный флакон. Вмещает до 30 единиц.
-ent-RMCPressurizedCanister = pressurized canister
-  .desc = Напорный контейнер. Внутренняя часть напорного мешка для реагентов. Совместим только со своим мешком, оборудованием или накопительным баком.
-ent-CMMiniTank = умная заправочная ёмкость MS-11
-  .desc = Прочный маленький резервуар, способный заправлять автоинъекторы, которые ранее требовали наномед системы для пополнения. Благодаря чуду микрочипов, он автоматически сортирует правильные химикаты в большинство автоинъекторов с одним реагентом. Однако он не может заполнять их частично. Сверху есть клапан для перелива реагентов в другой контейнер или для полной промывки.
-ent-RMCBeakerHighCapacity = высоковместительная мензурка
-  .desc = Мензурка с увеличенной ёмкостью, изготовленная из голубого плексигласа для выдерживания большего давления. Вмещает до 300 единиц.
-ent-CMBeakerLarge = большая мензурка
-  .desc = Большая мензурка. Вмещает до 120 единиц.
-ent-CMBeaker = мензурка
-  .desc = Мензурка. Вмещает до 60 единиц.
+ent-RMCVialTricordrazine-name = tricordrazine vial
+ent-RMCVialTricordrazine-desc = A small glass vial. Can hold up to 30 units. Contains Tricordrazine, a weak general use medicine for treating damage.
+
+ent-RMCVial-name = vial
+ent-RMCVial-desc = A small glass vial. Can hold up to 30 units.
+
+ent-RMCPressurizedCanister-name = item
+
+ent-CMMiniTank-name = MS-11 Smart Refill Tank
+ent-CMMiniTank-desc = A robust little tank capable of refilling autoinjectors that previously required a nanomed system to refill. Using the wonders of microchips, it automatically sorts the correct chemicals into most single reagent autoinjectors. It is unable to partially fill them however. A valve exists on the top to transfer reagents to another container or to flush it entirely.
+
+ent-RMCBeakerHighCapacity-name = item
+
+ent-CMBeakerLarge-name = item
+
+ent-CMBeaker-name = item
+
+ent-CMBeakerBase-name = item
+
+ent-RMCBeakerBaseMetallic-name = item
+
+ent-RMCSealedChemicalContainer-name = item
+
+ent-RMCPressurizedCanisterBicaridine-name = item
+
+ent-RMCPressurizedCanisterKelotane-name = item
+
+ent-RMCPressurizedCanisterTricordrazineRevival-name = item
+
+ent-RMCPressurizedCanisterTricordrazine-name = item
+
+ent-RMCPressurizedCanisterMeraBic-name = item
+
+ent-RMCPressurizedCanisterKeloDerm-name = item
+

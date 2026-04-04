@@ -1,6 +1,7 @@
-ent-RMCMagazineRifleABR40 = магазин ABR-40 (10x24мм)
-  .desc = Магазин ABR-40, заряженный патронами с оболочечной пулей, для использования на стрельбище или на охоте. Теоретически совместим с боевой винтовкой L42A.
-ent-RMCWeaponRifleABR40Tactical = тактическая охотничья винтовка ABR-40
-  .desc = Гражданская версия боевой винтовки L42A, которую часто используют морпехи. Почти идентична и даже совместима с магазинами L42, просто не снимай приклад. У этой винтовки, кажется, уникальная тактическая сине-чёрная фурнитура вместе с различными сторонними модификациями.
-ent-RMCWeaponRifleABR40 = охотничья винтовка ABR-40
-  .desc = Гражданская версия боевой винтовки L42A. Почти идентична и даже совместима с магазинами L42, просто не снимай приклад.
+ent-RMCMagazineRifleABR40-name = item
+
+ent-RMCWeaponRifleABR40Tactical-name = тактическая охотничья винтовка ABR-40
+
+ent-RMCWeaponRifleABR40-name = ABR-40 hunting rifle
+ent-RMCWeaponRifleABR40-desc = The civilian version of the L42A battle rifle. Almost identical and even cross-compatible with L42 magazines, just don't take the stock off.
+

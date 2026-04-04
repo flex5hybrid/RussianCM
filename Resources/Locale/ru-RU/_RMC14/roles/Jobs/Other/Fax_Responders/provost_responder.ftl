@@ -1,2 +1,3 @@
-ent-RMCIDCardProvostResponder = удостоверение личности ответчика проректора
-  .desc = Выдается членам Управления проректора маршала.
+ent-RMCIDCardProvostResponder-name = provost responder ID card
+ent-RMCIDCardProvostResponder-desc = Issued to members of the Provost Marshal Office.
+

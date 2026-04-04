@@ -8,7 +8,6 @@ rmc-guide-entry-marine-law-lethal = Применение смертоносно�
 rmc-guide-entry-marine-law-searches = Обыски
 rmc-guide-entry-marine-law-demotions = Понижение в звании
 rmc-guide-entry-marine-law-executions = Казни
-
 rmc-guide-entry-marine-law-crimes = Преступления
 rmc-guide-entry-marine-law-crimes-variable = Преступления с переменной тяжестью
 rmc-guide-entry-marine-law-crimes-minor = Малозначительные преступления
@@ -16,24 +15,18 @@ rmc-guide-entry-marine-law-crimes-major = Тяжкие преступления
 rmc-guide-entry-marine-law-crimes-capital = Особо тяжкие преступления
 rmc-guide-entry-marine-law-crimes-optional = Факультативные преступления
 rmc-guide-entry-marine-law-crimes-precautionary = Превентивные правонарушения
-
 rmc-guide-entry-marine-law-prisoner-rights = Права заключённых
 rmc-guide-entry-marine-law-appeals = Права заключённых и апелляции
 rmc-guide-entry-marine-law-specialcircumstances = Особые обстоятельства
-
 rmc-guide-entry-marine-law-synthetics = Положения о синтетиках
 rmc-guide-entry-marine-law-special-provisions = Специальные положения
 rmc-guide-entry-marine-law-co-provisions = Положения для командного состава
-
 rmc-guide-entry-marine-sop = СОП (Стандартные операционные процедуры)
 rmc-guide-entry-marine-sop-general = Общие положения
 rmc-guide-entry-marine-sop-equipment = Регламент снаряжения
 rmc-guide-entry-marine-sop-department = Ведомственные инструкции
-
 rmc-guide-entry-marine-sop-nonmod-department = Неизменяемые: Ведомственные
 rmc-guide-entry-marine-sop-nonmod-command = Неизменяемые: Командные
 rmc-guide-entry-marine-sop-nonmod-deployment = Неизменяемые: Развёртывание
 rmc-guide-entry-marine-sop-nonmod-thirdparty = Неизменяемые: Третьи стороны
-
 rmc-guide-entry-marine-law-ranks = Звания и ранги
-

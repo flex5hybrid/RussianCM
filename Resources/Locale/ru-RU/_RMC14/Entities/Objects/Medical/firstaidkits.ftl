@@ -1,28 +1,51 @@
-ent-RMCRadiationAidKit = аптечка первой помощи при радиации
-  .desc = Содержит средства для лечения радиационного облучения. При наличии медицинской подготовки её можно поместить в рюкзак.
-ent-CMToxinAidKit = аптечка первой помощи при отравлениях
-  .desc = Это экстренный медицинский набор, содержащий жизненно важные антитоксические препараты. При наличии медицинской подготовки её можно поместить в рюкзак.
-ent-CMAdvFirstAidKit = продвинутая аптечка первой помощи
-  .desc = Содержит более эффективные методы медицинского лечения, чем базовая аптечка, такие как наборы от ожогов и травм. При наличии медицинской подготовки её можно поместить в рюкзак.
-ent-CMFirstAidO2Kit = аптечка первой помощи при гипоксии
-  .desc = Коробка, полная средств для восстановления оксигенации. При наличии медицинской подготовки её можно поместить в рюкзак.
-ent-CMBurnAidKit = аптечка первой помощи при ожогах
-  .desc = Это экстренный медицинский набор на случай, когда боезапас дропшипа самовозгорается. При наличии медицинской подготовки её можно поместить в рюкзак.
-ent-CMFirstAidKitSurgery = базовый набор для полевой хирургии
-ent-CMFirstAidKit = аптечка первой помощи
-  .desc = Это экстренный медицинский набор для серьёзных травм. При наличии медицинской подготовки её можно поместить в рюкзак.
+ent-RMCRadiationAidKit-name = storage item
+
+ent-CMToxinAidKit-name = storage item
+
+ent-CMAdvFirstAidKit-name = storage item
+
+ent-CMFirstAidO2Kit-name = storage item
+
+ent-CMBurnAidKit-name = storage item
+
+ent-CMFirstAidKitSurgery-name = basic field surgery kit
+
+ent-CMFirstAidKit-name = storage item
 
 # filled variation
-ent-RMCRadiationAidKitFilled = аптечка первой помощи при радиации
-  .desc = Содержит средства для лечения радиационного облучения. При наличии медицинской подготовки её можно поместить в рюкзак.
-ent-CMToxinAidKitFilled = аптечка первой помощи при отравлениях
-  .desc = Это экстренный медицинский набор, содержащий жизненно важные антитоксические препараты. При наличии медицинской подготовки её можно поместить в рюкзак.
-ent-CMAdvFirstAidKitFilled = продвинутая аптечка первой помощи
-  .desc = Содержит более эффективные методы медицинского лечения, чем базовая аптечка, такие как наборы от ожогов и травм. При наличии медицинской подготовки её можно поместить в рюкзак.
-ent-CMFirstAidO2KitFilled = аптечка первой помощи при гипоксии
-  .desc = Коробка, полная средств для восстановления оксигенации. При наличии медицинской подготовки её можно поместить в рюкзак.
-ent-CMBurnAidKitFilled = аптечка первой помощи при ожогах
-  .desc = Это экстренный медицинский набор на случай, когда боезапас дропшипа самовозгорается. При наличии медицинской подготовки её можно поместить в рюкзак.
-ent-CMFirstAidKitSurgeryFilled = базовый набор для полевой хирургии
-ent-CMFirstAidKitFilled = аптечка первой помощи
-  .desc = Это экстренный медицинский набор для серьёзных травм. При наличии медицинской подготовки её можно поместить в рюкзак.
+ent-RMCRadiationAidKitFilled-name = storage item
+
+ent-CMToxinAidKitFilled-name = storage item
+
+ent-CMAdvFirstAidKitFilled-name = storage item
+
+ent-CMFirstAidO2KitFilled-name = storage item
+
+ent-CMBurnAidKitFilled-name = storage item
+
+ent-CMFirstAidKitSurgeryFilled-name = basic field surgery kit
+ent-CMFirstAidKitSurgeryFilled-desc = Contains a surgical line, cautery, scalpel, hemostat, retractor, drapes and an oxycodone injector for tending wounds surgically. With medical training you can fit this in a backpack.
+
+ent-CMFirstAidKitFilled-name = storage item
+ent-CMFirstAidKitFilled-desc = It's an emergency medical kit containing basic medication and equipment. No training required to use. With medical training you can fit this in a backpack.
+
+ent-CMFirstAidKitFilledRobust-name = storage item
+
+ent-RMCStandardAidKitPVE-name = standard-issue first-aid pack
+ent-RMCStandardAidKitPVE-desc = A soft first-aid pack typically containing essential medical supplies for use in the field.
+
+ent-RMCStandardAidKitFilledPVE-name = standard-issue first-aid pack
+ent-RMCStandardAidKitFilledPVE-desc = A soft first-aid pack typically containing essential medical supplies for use in the field.
+
+ent-RMCBruteAidKitPVE-name = brute first-aid pack
+ent-RMCBruteAidKitPVE-desc = A soft first-aid pack containing equipment for physical treatment in the field.
+
+ent-RMCBruteAidKitFilledPVE-name = brute first-aid pack
+ent-RMCBruteAidKitFilledPVE-desc = A soft first-aid pack containing equipment for physical treatment in the field.
+
+ent-RMCBurnAidKitPVE-name = burn first-aid pack
+ent-RMCBurnAidKitPVE-desc = A soft first-aid pack containing equipment for burns treatment in the field.
+
+ent-RMCBurnAidKitFilledPVE-name = burn first-aid pack
+ent-RMCBurnAidKitFilledPVE-desc = A soft first-aid pack containing equipment for burns treatment in the field.
+

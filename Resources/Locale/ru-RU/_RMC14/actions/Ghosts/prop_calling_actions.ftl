@@ -1,4 +1,6 @@
-ent-ActionCallProps = Реквизит для звонков
-  .desc = Вызывает все сущности, которые подписались на проп-вызов.
-ent-ActionTogglePropCalling = Toggle Вызов реквизита
-  .desc = Присоединяйтесь или покиньте список вызовов реквизита.
+ent-ActionCallProps-name = Call Props
+ent-ActionCallProps-desc = Calls over all entities who have signed up for prop calling.
+
+ent-ActionTogglePropCalling-name = Toggle Prop Calling
+ent-ActionTogglePropCalling-desc = Join or leave the prop calling list.
+

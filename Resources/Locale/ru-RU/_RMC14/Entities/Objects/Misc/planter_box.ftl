@@ -1,4 +1,6 @@
-ent-RMCSoilNet = почвенная сетка
-  .desc = Учёные используют эти подвесные сетки для наложения сетки на участок грунта для исследований.
-ent-RMCPlanterBox = гроубокс
-  .desc = Корневая решётка наполовину погружена в гроубокс.
+ent-RMCSoilNet-name = soil net
+ent-RMCSoilNet-desc = Scientists use these suspended nets to superimpose a grid over a patch of ground for study.
+
+ent-RMCPlanterBox-name = grow box
+ent-RMCPlanterBox-desc = A root lattice is half buried inside the grow box.
+

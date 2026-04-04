@@ -1,74 +1,162 @@
-ent-RMCJumpsuitGreySuitPants = серые костюмные брюки
-  .desc = Выцветшая белая рубашка с красным галстуком и черными брюками.
-ent-RMCJumpsuitWornSuit = поношенный костюм
-  .desc = Выцветшая белая рубашка с черным галстуком и коричневыми брюками.
-ent-RMCJumpsuitBluePantsUniform = простая белая рубашка с синими брюками
-  .desc = Стильная рубашка и галстук.
-ent-RMCJumpsuitBlackPantsUniform = простая белая рубашка с черными брюками
-  .desc = Очень простая на вид белая рубашка и черные брюки.
-ent-RMCJumpsuitFemJetblackExecutiveSuit = женский смокинг
-  .desc = Формальный брючный костюм для женщин, предназначенный для лучших на корабле.
-ent-RMCJumpsuitJetblackExecutiveSuit = смокинг
-  .desc = Формальный черный костюм и красный галстук, предназначенные для лучших на корабле.
-ent-RMCJumpsuitCheckeredTailored = клетчатый костюм
-  .desc = У вас очень хороший костюм. Жаль, если с ним что-то случится, а?
-ent-RMCJumpsuitNavyTailored = темно-синий костюм
-  .desc = Темно-синий костюм и красный галстук, предназначенные для лучших на корабле.
-ent-RMCJumpsuitCharcoalTailored = угольный костюм
-  .desc = Костюм угольного цвета и красный галстук. Очень профессионально.
-ent-RMCJumpsuitBurgundyTailored = бордовый костюм
-  .desc = Бордовый костюм и черный галстук. Довольно формально.
-ent-RMCJumpsuitBlackTailored = черный костюм
-  .desc = Черный костюм и красный галстук. Очень формально.
-ent-RMCJumpsuitWEYATrainee = униформа стажера
-  .desc = Это униформа с эмблемой WEYA и надписью "Стажер" внизу.
-ent-RMCJumpsuitLiaisonSkirt = юбка представителя
-  .desc = Черный кардиган с красной юбкой, довольно модно!
-ent-RMCJumpsuitLiaisonManager = костюм менеджера
-  .desc = Это костюм, который носят те, у кого есть ноу-хау для достижения позиции "Корпоративный менеджер".
-ent-RMCJumpsuitLiaisonStowaway = грязный костюм
-  .desc = Жесткий, стильный коричневый костюм, который обычно носят бизнесмены из корпорации Weston-Yamada. Искусно создан, чтобы вы выглядели засранцем.
-ent-RMCJumpsuitLiaisonGreyWorkwear = серая рабочая одежда
-  .desc = Черные брюки и серая рабочая рубашка с короткими рукавами. Стандартная униформа для сотрудников Weston-Yamada, работающих в операциях и администрации колоний.
-ent-RMCJumpsuitLiaisonPinkWorkwear = розовая рабочая одежда
-  .desc = Джинсы в паре с хаки рабочей рубашкой. Распространенный комплект среди рабочих из-за своего простого вида.
-ent-RMCJumpsuitLiaisonKhakiWorkwear = рабочая одежда хаки
-  .desc = Джинсы в паре с хаки рабочей рубашкой. Распространенный комплект среди рабочих из-за своего простого вида.
-ent-RMCJumpsuitLiaisonPilot = униформа пилота Weston-Yamada
-  .desc = Серые брюки и белая рубашка на пуговицах с темно-серым галстуком и золотыми погонами, обозначающими звание; стандартная униформа для коммерческого пилота, связанного с Weston-Yamada.
-ent-RMCJumpsuitLiaisonExpensiveSuit = дорогой костюм
-  .desc = Роскошный костюм от дизайнера, недоступный для среднего человека. Это эксклюзивный выбор для топ-менеджеров и состоятельной элиты.
-ent-RMCJumpsuitLiaisonGreenWorkwear = зеленая рабочая одежда
-  .desc = Коричневые рабочие брюки из холста в паре с зеленой рабочей рубашкой. Распространенный комплект среди рабочих.
-ent-RMCJumpsuitLiaisonOrange = оранжевый наряд
-  .desc = Черные брюки в паре с очень ве-я оранжевой рубашкой. Популярный образ среди тех в корпоративном мире, кто ведет большую часть своего бизнеса из офисов Weston Yamada.
-ent-CMJumpsuitLiaisonBlue = синие костюмные брюки
-  .desc = Синие брюки в паре с белой рубашкой. Распространенный комплект среди корпоративных работников.
-ent-CMJumpsuitLiaisonBrown = коричневые костюмные брюки
-  .desc = Коричневые брюки в паре с белой рубашкой. Распространенный комплект среди корпоративных работников.
-ent-RMCJumpsuitLiaisonBlackSuitskirt = черная юбка-карандаш
-  .desc = Простая черная юбка-карандаш в паре с белой рубашкой. Распространенный комплект среди корпоративных работников.
-ent-CMJumpsuitLiaisonBlack = черные костюмные брюки
-  .desc = Черные брюки в паре с белой рубашкой. Самый распространенный комплект среди корпоративных работников.
-ent-CMJumpsuitLiaisonCorporateFormal = белые костюмные брюки
-  .desc = Брюки цвета слоновой кости в паре с белой рубашкой. Популярный комплект для формальных корпоративных мероприятий.
-ent-CMJumpsuitLiaisonIvy = наряд для загородного клуба
-  .desc = Брюки хаки в паре со светло-голубой рубашкой на пуговицах. Популярный образ среди тех в корпоративном мире, кто ведет большую часть своего бизнеса из загородных клубов.
-ent-RMCJumpsuitLiaisonFieldSuitskirt = корпоративная полевая юбка-карандаш
-  .desc = Черная юбка-карандаш в паре с темно-синей рубашкой на пуговицах. Популярный образ среди тех в корпоративном мире, кто ведет большую часть своего бизнеса из ночных клубов.
-ent-CMJumpsuitLiaisonField = корпоративный кэжуал
-  .desc = Темно-коричневые брюки в паре с темно-синей рубашкой на пуговицах. Популярный образ среди тех в корпоративном мире, кто ведет большую часть своего бизнеса из ночных клубов.
-ent-CMJumpsuitLiaisonBlazer = синий блейзер представителя
-  .desc = Жесткий, но повседневный синий блейзер. Подобные можно найти в любом офисе We-Ya. Только лучшая одежда для самых хитрых в галактике.
-ent-CMJumpsuitLiaisonSuspenders = одежда представителя
-  .desc = Рубашка с воротником, дополненная подтяжками. Носится сотрудниками We-Ya, которые задают жесткие вопросы. Пахнет сигарами и плохой игрой.
-ent-CMJumpsuitLiaisonFormal = белый костюм представителя
-  .desc = Формальный белый костюм. Выглядит как что-то, что наденут на похороны, корпоративный ужин We-Ya или на то и другое. Жесткий как доска, но заставляет чувствовать себя так, будто выкатываешься из Роллс-Ройса.
-ent-CMJumpsuitLiaisonOuting = наряд представителя
-  .desc = Повседневный наряд, состоящий из рубашки с воротником и жилетки. Похоже на то, что можно надеть на выходные или во время визита в заброшенную колонию.
-ent-RMCJumpsuitLiaisonCharcoalSuitskirt = угольная юбка-карандаш представителя
-  .desc = Жесткий, стильный угольный костюм, который обычно носят бизнес-леди из корпорации We-Ya. Искусно создан, чтобы вы выглядели засранцем.
-ent-CMJumpsuitLiaisonCharcoal = угольный костюм представителя
-  .desc = Жесткий, стильный угольный костюм, который обычно носят бизнесмены из корпорации We-Ya. Искусно создан, чтобы вы выглядели засранцем.
-ent-CMJumpsuitLiaison = коричневый костюм представителя
-  .desc = Жесткий, стильный коричневый костюм, который обычно носят бизнесмены из корпорации We-Ya. Искусно создан, чтобы вы выглядели засранцем.
+ent-RMCJumpsuitGreySuitPants-name = grey suit pants
+ent-RMCJumpsuitGreySuitPants-desc = A washed out white shirt with a red tie and black slacks.
+
+ent-RMCJumpsuitWornSuit-name = worn suit
+ent-RMCJumpsuitWornSuit-desc = A washed out white shirt with a black tie and brown slacks.
+
+ent-RMCJumpsuitBluePantsUniform-name = simple white shirt with blue pants
+ent-RMCJumpsuitBluePantsUniform-desc = A classy shirt and tie.
+
+ent-RMCJumpsuitBlackPantsUniform-name = simple white shirt with black pants
+ent-RMCJumpsuitBlackPantsUniform-desc = It's a very simple looking white shirt and black pants.
+
+ent-RMCJumpsuitFemJetblackExecutiveSuit-name = fem jet-black executive suit
+ent-RMCJumpsuitFemJetblackExecutiveSuit-desc = A formal trouser suit for women, intended for the ship's finest.
+
+ent-RMCJumpsuitJetblackExecutiveSuit-name = jet-black executive suit
+ent-RMCJumpsuitJetblackExecutiveSuit-desc = A formal black suit and red tie, intended for the ship's finest.
+
+ent-RMCJumpsuitCheckeredTailored-name = checkered tailored suit
+ent-RMCJumpsuitCheckeredTailored-desc = That's a very nice suit you have there. Shame if something were to happen to it, eh?
+
+ent-RMCJumpsuitNavyTailored-name = navy tailored suit
+ent-RMCJumpsuitNavyTailored-desc = A navy suit and red tie, intended for the ship's finest.
+
+ent-RMCJumpsuitCharcoalTailored-name = charcoal tailored suit
+ent-RMCJumpsuitCharcoalTailored-desc = A charcoal suit and red tie. Very professional.
+
+ent-RMCJumpsuitBurgundyTailored-name = burgundy tailored suit
+ent-RMCJumpsuitBurgundyTailored-desc = A burgundy suit and black tie. Somewhat formal.
+
+ent-RMCJumpsuitBlackTailored-name = black tailored suit
+ent-RMCJumpsuitBlackTailored-desc = A black suit and red tie. Very formal.
+
+ent-RMCJumpsuitWEYATrainee-name = trainee's uniform
+ent-RMCJumpsuitWEYATrainee-desc = It's a uniform with the WEYA insignia on it, with the words "Trainee" stamped below.
+
+ent-RMCJumpsuitLiaisonSkirt-name = liaison's skirt
+ent-RMCJumpsuitLiaisonSkirt-desc = A black cardigan with a red skirt, quite fancy!
+
+ent-RMCJumpsuitLiaisonManager-name = manager's suit
+ent-RMCJumpsuitLiaisonManager-desc = It's a suit worn by those with the know-how to achieve the position of "Corporate Manager".
+
+ent-RMCJumpsuitLiaisonStowaway-name = dirty suit
+ent-RMCJumpsuitLiaisonStowaway-desc = A stiff, stylish tan suit commonly worn by businessmen from the Weston-Yamada corporation. Expertly crafted to make you look like a prick.
+
+ent-RMCJumpsuitLiaisonGreyWorkwear-name = grey workwear
+ent-RMCJumpsuitLiaisonGreyWorkwear-desc = A pair of black slacks and a short-sleeve grey workshirt. Standard uniform for Weston-Yamada employees working in colony operations and administration.
+
+ent-RMCJumpsuitLiaisonPinkWorkwear-name = pink workwear
+ent-RMCJumpsuitLiaisonPinkWorkwear-desc = A pair of jeans paired with a khaki workshirt. A common pairing among blue-collar workers due to its drab look.
+
+ent-RMCJumpsuitLiaisonKhakiWorkwear-name = khaki workwear
+ent-RMCJumpsuitLiaisonKhakiWorkwear-desc = A pair of jeans paired with a khaki workshirt. A common pairing among blue-collar workers due to its drab look.
+
+ent-RMCJumpsuitLiaisonPilot-name = Weston-Yamada Pilot uniform
+ent-RMCJumpsuitLiaisonPilot-desc = A pair of grey slacks and a white button-down shirt with a dark-grey tie and golden epaulettes signifying rank; a standard uniform for a commercial grade Weston-Yamada affiliated Pilot.
+
+ent-RMCJumpsuitLiaisonExpensiveSuit-name = expensive suit
+ent-RMCJumpsuitLiaisonExpensiveSuit-desc = A luxurious designer suit, beyond the reach of the average person. It's an exclusive choice for high-level executives and the affluent elite.
+
+ent-RMCJumpsuitLiaisonGreenWorkwear-name = green workwear
+ent-RMCJumpsuitLiaisonGreenWorkwear-desc = A pair of brown canvas workpants paired with a green workshirt. An common pairing among blue-collar workers.
+
+ent-RMCJumpsuitLiaisonOrange-name = orange outfit
+ent-RMCJumpsuitLiaisonOrange-desc = A pair of black pants paired with a very We-Ya orange shirt. A popular look with those in the corporate world that conduct the majority of their business from Weston Yamada offices.
+
+ent-CMJumpsuitLiaisonBlue-name = blue suit pants
+ent-CMJumpsuitLiaisonBlue-desc = A pair of blue slacks paired with a white shirt. A common pairing among corporate workers.
+
+ent-CMJumpsuitLiaisonBrown-name = brown suit pants
+ent-CMJumpsuitLiaisonBrown-desc = A pair of brown slacks paired with a white shirt. A common pairing among corporate workers.
+
+ent-RMCJumpsuitLiaisonBlackSuitskirt-name = black suitskirt
+ent-RMCJumpsuitLiaisonBlackSuitskirt-desc = A simple black pencil skirt paired with a white shirt. A common pairing among corporate workers.
+
+ent-CMJumpsuitLiaisonBlack-name = black suit pants
+ent-CMJumpsuitLiaisonBlack-desc = A pair of black slacks paired with a white shirt. The most common pairing among corporate workers.
+
+ent-CMJumpsuitLiaisonCorporateFormal-name = white suit pants
+ent-CMJumpsuitLiaisonCorporateFormal-desc = A pair of ivory slacks paired with a white shirt. A popular pairing for formal corporate events.
+
+ent-CMJumpsuitLiaisonIvy-name = country club outfit
+ent-CMJumpsuitLiaisonIvy-desc = A pair of khaki slacks paired with a light blue button-down shirt. A popular look with those in the corporate world that conduct the majority of their business from country clubs.
+
+ent-RMCJumpsuitLiaisonFieldSuitskirt-name = corporate field suitskirt
+ent-RMCJumpsuitLiaisonFieldSuitskirt-desc = A black pencil skirt paired with a dark blue button-down shirt. A popular look among those in the corporate world that conduct the majority of their business from night clubs.
+
+ent-CMJumpsuitLiaisonField-name = corporate casual
+ent-CMJumpsuitLiaisonField-desc = A pair of dark brown slacks paired with a dark blue button-down shirt. A popular look among those in the corporate world that conduct the majority of their business from night clubs.
+
+ent-CMJumpsuitLiaisonBlazer-name = liaison's blue blazer
+ent-CMJumpsuitLiaisonBlazer-desc = A stiff but casual blue blazer. Similar can be found in any We-Ya office. Only the finest wear for the galaxy's most cunning.
+
+ent-CMJumpsuitLiaisonSuspenders-name = liaison's attire
+ent-CMJumpsuitLiaisonSuspenders-desc = A collared shirt, complimented by a pair of suspenders. Worn by We-Ya employees who ask the tough questions. Smells faintly of cigars and bad acting.
+
+ent-CMJumpsuitLiaisonFormal-name = liaison's white suit
+ent-CMJumpsuitLiaisonFormal-desc = A formal, white suit. Looks like something you'd wear to a funeral, a We-Ya corporate dinner, or both. Stiff as a board, but makes you feel like rolling out of a Rolls-Royce.
+
+ent-CMJumpsuitLiaisonOuting-name = liaison's outfit
+ent-CMJumpsuitLiaisonOuting-desc = A casual outfit consisting of a collared shirt and a vest. Looks like something you might wear on the weekends, or on a visit to a derelict colony.
+
+ent-RMCJumpsuitLiaisonCharcoalSuitskirt-name = liaison's charcoal suitskirt
+ent-RMCJumpsuitLiaisonCharcoalSuitskirt-desc = A stiff, stylish charcoal suit commonly worn by businesswomen from the We-Ya corporation. Expertly crafted to make you look like a prick.
+
+ent-CMJumpsuitLiaisonCharcoal-name = liaison's charcoal suit
+ent-CMJumpsuitLiaisonCharcoal-desc = A stiff, stylish charcoal suit commonly worn by businessmen from the We-Ya corporation. Expertly crafted to make you look like a prick.
+
+ent-CMJumpsuitLiaison-name = liaison's tan suit
+ent-CMJumpsuitLiaison-desc = A stiff, stylish tan suit commonly worn by businessmen from the We-Ya corporation. Expertly crafted to make you look like a prick.
+
+ent-CMJumpsuitLiaisonOutingRed-name = liaison's outfit
+ent-CMJumpsuitLiaisonOutingRed-desc = A casual outfit consisting of a collared shirt and a vest. Looks like something you might wear on the weekends, or on a visit to a derelict colony.
+
+ent-RMCJumpsuitLiaisonBrownTie-name = brown suit pants
+ent-RMCJumpsuitLiaisonBrownTie-desc = A pair of brown slacks paired with a white shirt. A common pairing among corporate workers.
+
+ent-CMJumpsuitLiaisonBlueKutjevoGoon-name = blue suit pants
+ent-CMJumpsuitLiaisonBlueKutjevoGoon-desc = A pair of blue slacks paired with a white shirt. A common pairing among corporate workers.
+
+ent-RMCJumpsuitLiaisonGreenWorkwearBrownWebbing-name = green workwear
+ent-RMCJumpsuitLiaisonGreenWorkwearBrownWebbing-desc = A pair of brown canvas workpants paired with a green workshirt. An common pairing among blue-collar workers.
+
+ent-RMCJumpsuitLiaisonExpensiveSuitDropPouch-name = expensive suit
+ent-RMCJumpsuitLiaisonExpensiveSuitDropPouch-desc = A luxurious designer suit, beyond the reach of the average person. It's an exclusive choice for high-level executives and the affluent elite.
+
+ent-RMCJumpsuitLiaisonExpensiveSuitBrown-name = expensive suit
+ent-RMCJumpsuitLiaisonExpensiveSuitBrown-desc = A luxurious designer suit, beyond the reach of the average person. It's an exclusive choice for high-level executives and the affluent elite.
+
+ent-RMCJumpsuitLiaisonExpensiveSuitBrownDropPouch-name = expensive suit
+ent-RMCJumpsuitLiaisonExpensiveSuitBrownDropPouch-desc = A luxurious designer suit, beyond the reach of the average person. It's an exclusive choice for high-level executives and the affluent elite.
+
+ent-RMCJumpsuitLiaisonExpensiveSuitJacket-name = expensive suit
+ent-RMCJumpsuitLiaisonExpensiveSuitJacket-desc = A luxurious designer suit, beyond the reach of the average person. It's an exclusive choice for high-level executives and the affluent elite.
+
+ent-RMCJumpsuitLiaisonExpensiveSuitJacketDropPouch-name = expensive suit
+ent-RMCJumpsuitLiaisonExpensiveSuitJacketDropPouch-desc = A luxurious designer suit, beyond the reach of the average person. It's an exclusive choice for high-level executives and the affluent elite.
+
+ent-RMCJumpsuitLiaisonExpensiveSuitBrownJacket-name = expensive suit
+ent-RMCJumpsuitLiaisonExpensiveSuitBrownJacket-desc = A luxurious designer suit, beyond the reach of the average person. It's an exclusive choice for high-level executives and the affluent elite.
+
+ent-RMCJumpsuitLiaisonExpensiveSuitBrownJacketDropPouch-name = expensive suit
+ent-RMCJumpsuitLiaisonExpensiveSuitBrownJacketDropPouch-desc = A luxurious designer suit, beyond the reach of the average person. It's an exclusive choice for high-level executives and the affluent elite.
+
+ent-RMCJumpsuitLiaisonExpensiveSuitJacketOnly-name = expensive suit
+ent-RMCJumpsuitLiaisonExpensiveSuitJacketOnly-desc = A luxurious designer suit, beyond the reach of the average person. It's an exclusive choice for high-level executives and the affluent elite.
+
+ent-RMCJumpsuitLiaisonExpensiveSuitJacketOnlyDropPouch-name = expensive suit
+ent-RMCJumpsuitLiaisonExpensiveSuitJacketOnlyDropPouch-desc = A luxurious designer suit, beyond the reach of the average person. It's an exclusive choice for high-level executives and the affluent elite.
+
+ent-RMCJumpsuitLiaisonCargoShorts-name = cargo shorts
+ent-RMCJumpsuitLiaisonCargoShorts-desc = A pair of Khaki shorts, and a short-sleeve dress shirt. A common choice for Executives working on warmer colonies.
+
+ent-RMCJumpsuitLiaisonLegalUniform-name = legal division jumpsuit
+ent-RMCJumpsuitLiaisonLegalUniform-desc = A grey and white jumpsuit with blue accents, often distributed to Legal Executives working in the frontier. Puncture and slash resistant, this uniform is fit for all the nasty places lawyers need to be.
+
+ent-RMCJumpsuitLiaisonDisco-name = stylish dress shirt
+ent-RMCJumpsuitLiaisonDisco-desc = A pink and purple dress shirt, coupled with grey dress pants. Makes a bold statement about the longevity of disco.
+
+ent-RMCJumpsuitLiaisonBlueGreyAdmin-name = blue-grey administrative uniform
+ent-RMCJumpsuitLiaisonBlueGreyAdmin-desc = A pair of blue pants and a blue-grey shirt. A common look for colonial administration clerks.
+

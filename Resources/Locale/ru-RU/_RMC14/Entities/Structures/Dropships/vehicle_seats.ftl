@@ -1,10 +1,15 @@
-ent-RMCSeatDark = пассажирское сиденье
-  .desc = Прочный стул с подпоркой, которая опускается над вашим телом. 
-ent-RMCSeatWhite = пассажирское сиденье
-  .desc = Прочный стул с подпоркой, которая опускается над вашим телом. 
-ent-RMCSeatHunter = стул охотника
-  .desc = Изысканное кресло для большого охотника-гуманоида.
-ent-CMSeatPilot = кресло пилота
-  .desc = Специально разработанное кресло для пилотов.
-ent-CMSeatPassenger = пассажирское сиденье
-  .desc = Прочный стул с подпоркой, которая опускается над вашим телом. 
+ent-RMCSeatDark-name = passenger seat
+ent-RMCSeatDark-desc = A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids! Fix with welding tool in case of damage.
+
+ent-RMCSeatWhite-name = passenger seat
+ent-RMCSeatWhite-desc = A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids! Fix with welding tool in case of damage.
+
+ent-RMCSeatHunter-name = hunter chair
+ent-RMCSeatHunter-desc = An exquisitely crafted chair for a large humanoid hunter.
+
+ent-CMSeatPilot-name = pilot's chair
+ent-CMSeatPilot-desc = A specially designed chair for pilots to sit in.
+
+ent-CMSeatPassenger-name = passenger seat
+ent-CMSeatPassenger-desc = A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids! Fix with welding tool in case of damage.
+

@@ -1,7 +1,14 @@
-ent-CMCartridgePistolM77AP = патрон (9мм БП)
-ent-CMBulletPistolM77AP = пуля (9мм БП)
-ent-CMMagazinePistolM77AP = магазин M77 БП (9мм)
-ent-RMCWeaponPistolM77 = боевой пистолет M77
-  .desc = Штатное огнестрельное оружие КМП. Также встречается у команд ЧВК «Ве-Я». Стреляет 9-мм бронебойными патронами и способен вести огонь очередями по 3 выстрела.
-ent-RMCWeaponPistolM77Empty = боевой пистолет M77
-  .desc = Штатное огнестрельное оружие КМП. Также встречается у команд ЧВК «Ве-Я». Стреляет 9-мм бронебойными патронами и способен вести огонь очередями по 3 выстрела.
+ent-CMCartridgePistolM77AP-name = cartridge (9mm AP)
+
+ent-CMBulletPistolM77AP-name = bullet (9mm AP)
+ent-CMBulletPistolM77AP-desc = If you can see this you're probably dead!
+
+ent-CMMagazinePistolM77AP-name = item
+ent-CMMagazinePistolM77AP-desc = A pistol magazine.
+
+ent-RMCWeaponPistolM77-name = M77 combat pistol
+ent-RMCWeaponPistolM77-desc = Standard issue UNMC firearm. Also found in the hands of We-Ya PMC teams. Fires 9mm armor shredding rounds and is capable of 3-round burst.
+
+ent-RMCWeaponPistolM77Empty-name = M77 combat pistol
+ent-RMCWeaponPistolM77Empty-desc = Standard issue UNMC firearm. Also found in the hands of We-Ya PMC teams. Fires 9mm armor shredding rounds and is capable of 3-round burst.
+

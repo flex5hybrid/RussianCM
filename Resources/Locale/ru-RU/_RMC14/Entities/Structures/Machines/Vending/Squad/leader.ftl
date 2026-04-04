@@ -1,17 +1,27 @@
-ent-RMCArmorM4Zipties = броня морпеха M4
-  .desc = Умело собранный гибрид сетки смартганнера и пластин типа M3. Прочная, но проворная, с местом для всех ваших подсумков. На этой модели есть отдельный подсумок для коробки стяжек.
-ent-RMCArmorB12Zipties = броня морпеха B12
-  .desc = Облегчённый бронежилет из углеродного волокна, созданный для быстрого передвижения. Выполнен в приятном лесном зелёном цвете. Используйте его, чтобы включить встроенный фонарь. На этой модели есть отдельный подсумок для коробки стяжек.
-ent-RMCKitPyroMini = комплект поддержки пиротехника M34
-ent-RMCKitEngineering = инженерный комплект снабжения
-  .desc = Содержит строительную сумку с 50 металла, 30 пластали и 15 колючей проволоки, а также сумку для электроники с тремя высокоёмкостными энергоэлементами.
-ent-RMCKitCM54C = комплект винтовки M54C
-  .desc = Содержит винтовку M54C, угловую рукоятку, глушитель, удлинённый ствол и 2 магазина БО.
-ent-RMCKitRifleM4SPR = комплект марксмана M4SPR
-  .desc = Содержит винтовку M4SPR, 4-х кратный телескопический прицел, глушитель, удлинённый ствол и 2 магазина БО.
-ent-RMCVendorBundleCrewLeader = необходимый набор командира отряда
-  .desc = Содержит лазерный целеуказатель, набор сигнальных ракет, штурмовой заряд и огнетушитель.
-ent-ColMarTechSLEquipment = стойка снаряжения командира отделения ColMarTech
-  .desc = Автоматизированная стойка, подключённая к огромному запасу стандартного снаряжения для командиров отделений.
-ent-ColMarTechSLGear = стойка экипировки командира отделения ColMarTech
-  .desc = Автоматизированная стойка экипировки для командиров отделений.
+ent-RMCArmorM4Zipties-name = leader M4 pattern marine armor
+ent-RMCArmorM4Zipties-desc = A well tinkered and crafted hybrid of Smart-Gunner mesh and M3 pattern plates. Robust, yet nimble, with room for all your pouches. This one has a separate pouch for a ziptie box.
+
+ent-RMCArmorB12Zipties-name = leader B12 pattern marine armor
+ent-RMCArmorB12Zipties-desc = A lightweight suit of carbon fiber body armor built for quick movement. Designed in a lovely forest green. Use it to toggle the built-in flashlight. This one has a separate pouch for a ziptie box.
+
+ent-RMCKitPyroMini-name = M34 pyrotechnician support kit
+ent-RMCKitPyroMini-desc = Contains a M34 incinerator unit, a G4-1 fueltank, 3 incinerator tanks, and a portable fire extinguisher.
+
+ent-RMCKitEngineering-name = engineering supply kit
+ent-RMCKitEngineering-desc = Contains a construction pouch with 50 metal, 30 plasteel and 15 barbed wire, and an electronics pouch with three high-capacity power cells.
+
+ent-RMCKitCM54C-name = M54C rifle kit
+ent-RMCKitCM54C-desc = Contains a M54C rifle, an angled grip, a suppressor, an extended barrel and 2 AP magazines.
+
+ent-RMCKitRifleM4SPR-name = M4SPR marksman kit
+ent-RMCKitRifleM4SPR-desc = Contains a M4SPR rifle, a 4x telescopic scope, a suppressor, an extended barrel and 2 AP magazines.
+
+ent-RMCVendorBundleCrewLeader-name = essential SL kit
+ent-RMCVendorBundleCrewLeader-desc = Contains a laser designator, a pack of signal flares, a breaching charge and a fire extinguisher.
+
+ent-ColMarTechSLEquipment-name = ColMarTech squad leader equipment rack
+ent-ColMarTechSLEquipment-desc = An automated rack hooked up to a colossal storage of Squad Leader standard-issue equipment.
+
+ent-ColMarTechSLGear-name = ColMarTech squad leader gear rack
+ent-ColMarTechSLGear-desc = An automated gear rack for Squad Leaders.
+

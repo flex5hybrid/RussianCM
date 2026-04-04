@@ -1,1 +1,2 @@
-ent-RMCSpawnerRandomFolder = генератор случайных папок
+ent-RMCSpawnerRandomFolder-name = random folder spawner
+

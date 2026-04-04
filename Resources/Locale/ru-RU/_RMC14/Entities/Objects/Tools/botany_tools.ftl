@@ -1,6 +1,9 @@
-ent-RMCToolHatchet = топорик
-  .desc = Острый ручной топорик, обычно используемый для разрубания вещей, будь то древесина или другие предметы. Часто встречается у лесорубов, скаутов и мародёров.
-ent-RMCToolSpade = заступ
-  .desc = Небольшой инструмент для копания и перемещения грунта.
-ent-RMCToolMiniHoe = мини-мотыга
-  .desc = Используется для прополки сорняков или почёсывания спины.
+ent-RMCToolHatchet-name = hatchet
+ent-RMCToolHatchet-desc = A sharp hand hatchet, commonly used to cut things apart, be it timber or other objects. Often found in the hands of woodsmen, scouts, and looters.
+
+ent-RMCToolSpade-name = spade
+ent-RMCToolSpade-desc = A small tool for digging and moving dirt.
+
+ent-RMCToolMiniHoe-name = mini hoe
+ent-RMCToolMiniHoe-desc = It's used for removing weeds or scratching your back.
+

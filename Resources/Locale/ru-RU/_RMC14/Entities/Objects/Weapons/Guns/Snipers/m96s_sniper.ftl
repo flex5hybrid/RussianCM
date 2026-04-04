@@ -1,13 +1,23 @@
-ent-CMM96SSniperRifle = снайперская винтовка M96S с прицелом
-  .desc = Тяжёлая снайперская винтовка производства Aegis Armaments. Имеет прицельную систему и стреляет бронебойными патронами из магазина на 15 патронов. «Мир через превосходящую огневую мощь».
-ent-CMMagazineSniperM96S = снайперский магазин M96S (10x28мм)
-  .desc = Магазин с патронами для снайперской винтовки. Прицельный выстрел из неё нанесёт значительный урон.
-ent-CMMagazineSniperM96SIncendiary = зажигательный магазин M96S (10x28мм)
-  .desc = Магазин с патронами для снайперской винтовки. Прицельный выстрел из неё временно ослепит цель и разожжёт пламя сильнее.
-ent-CMMagazineSniperM96SFlak = флаковый магазин M96S (10x28мм)
-  .desc = Магазин с патронами для снайперской винтовки. Прицельный выстрел из неё временно замедлит цель и минимизирует отдачу.
-ent-CMCartridgeSniper10x28mmIncendiary = патрон (10x28мм) (зажигательный)
-ent-CMCartridgeSniper10x28mmFlak = патрон (10x28мм) (Флак)
-ent-CMBulletSniper10x28mm = пуля (10x28мм)
-ent-CMBulletSniper10x28mmIncendiary = пуля (10x28мм)
-ent-CMBulletSniper10x28mmFlak = пуля (10x28мм)
+ent-CMM96SSniperRifle-name = снайперская винтовка M96S с прицелом
+
+ent-CMMagazineSniperM96S-name = item
+
+ent-CMMagazineSniperM96SIncendiary-name = M96S incendiary magazine (10x28mm)
+ent-CMMagazineSniperM96SIncendiary-desc = A magazine of sniper rifle ammo. An aimed shot with it will temporarily blind the targe and kindle the blaze further.
+
+ent-CMMagazineSniperM96SFlak-name = M96S flak magazine (10x28mm)
+ent-CMMagazineSniperM96SFlak-desc = A magazine of sniper rifle ammo. An aimed shot with it will temporarily slow the target and minimize the backlash.
+
+ent-CMCartridgeSniper10x28mmIncendiary-name = cartridge (10x28mm) (incendiary)
+
+ent-CMCartridgeSniper10x28mmFlak-name = cartridge (10x28mm) (Flak)
+
+ent-CMBulletSniper10x28mm-name = bullet (10x28mm)
+ent-CMBulletSniper10x28mm-desc = If you can see this you're probably dead!
+
+ent-CMBulletSniper10x28mmIncendiary-name = bullet (10x28mm)
+ent-CMBulletSniper10x28mmIncendiary-desc = If you can see this you're probably dead!
+
+ent-CMBulletSniper10x28mmFlak-name = bullet (10x28mm)
+ent-CMBulletSniper10x28mmFlak-desc = If you can see this you're probably dead!
+

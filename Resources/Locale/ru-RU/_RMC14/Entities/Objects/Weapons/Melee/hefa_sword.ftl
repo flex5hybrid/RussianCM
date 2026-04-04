@@ -1,2 +1,3 @@
-ent-RMCSwordHEFA = Меч ХЕФА
-  .desc = Клинок, известный своим использованием в Ордене ХЕФА.
+ent-RMCSwordHEFA-name = M2132 machete
+ent-RMCSwordHEFA-desc = Latest issue of the Marine Machete.
+

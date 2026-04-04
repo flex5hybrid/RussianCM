@@ -1,14 +1,1 @@
-ent-RMCAreaEndeavour-name = УНС Индевор
-ent-RMCAreaEndeavourBrief-name = Зал для брифингов
-ent-RMCAreaEndeavourDormitory-name = Общежитие
-ent-RMCAreaEndeavourCommandDeck-name = Командная колода
-ent-RMCAreaEndeavourMess-name = Столовая
-ent-RMCAreaEndeavourHypersleepStorage-name = Гиперсонное хранилище
-ent-RMCAreaEndeavourMaintenance-name = Обслуживание
-ent-RMCAreaEndeavourPrep-name = Стойки для передач
-ent-RMCAreaEndeavourMedical-name = Лазарет
-ent-RMCAreaEndeavourHangar-name = Ангар
-ent-RMCAreaEndeavourSupply-name = Отсек снабжения
-ent-RMCAreaEndeavourAICore-name = Ядро ИИ АРЕС
-ent-RMCAreaEndeavourSyntheticStorage-name = Синтетическое хранилище
-ent-RMCAreaEndeavourOOB-name = За пределами границ
+

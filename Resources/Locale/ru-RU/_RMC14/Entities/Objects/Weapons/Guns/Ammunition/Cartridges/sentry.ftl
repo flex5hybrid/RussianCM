@@ -1,2 +1,4 @@
-ent-RMCCartridgeSentry = патрон (10x28мм)
-ent-CMCartridgeSentry10x50mm = патрон (10x50мм)
+ent-RMCCartridgeSentry-name = cartridge
+
+ent-CMCartridgeSentry10x50mm-name = cartridge (10x50mm)
+

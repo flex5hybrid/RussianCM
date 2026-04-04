@@ -243,9 +243,7 @@ figurines-queen-3 = We consume all.
 figurines-queen-4 = We are the apex.
 figurines-queen-5 = You're just biomass.
 figurines-queen-6 = We must evolve.
-
 # figurines-queen
-
 figurines-rat-king-1 = Дай-ка немного еды, андестенд?
 figurines-rat-king-2 = Дазабей.
 figurines-rat-king-4 = Позволь мне сделать тебе предложение, от которого ты не сможешь отказаться, capiche?

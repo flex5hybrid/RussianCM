@@ -1,25 +1,38 @@
 ent-PianoInstrument-name = piano
 ent-PianoInstrument-desc = Play Needles Piano Now.
+
 ent-UprightPianoInstrument-name = upright piano
 ent-UprightPianoInstrument-desc = I said Piannie!
+
 ent-VibraphoneInstrument-name = vibraphone
 ent-VibraphoneInstrument-desc = Good vibes all around.
+
 ent-MarimbaInstrument-name = marimba
+
 ent-ChurchOrganInstrument-name = church organ
 ent-ChurchOrganInstrument-desc = This thing really blows!
+
 ent-TubaInstrument-name = tuba
 ent-TubaInstrument-desc = The big daddy of the brass family. Standing next to its majesty makes you feel insecure.
+
 ent-HarpInstrument-name = harp
 ent-HarpInstrument-desc = Plucking at the strings cuts your fingers, but at least the music is pretty.
+
 ent-TimpaniInstrument-name = timpani
 ent-TimpaniInstrument-desc = It goes BOOM BOOM BOOM BOOM!
+
 ent-TaikoInstrument-name = taiko
 ent-TaikoInstrument-desc = A large drum. Looking at it fills you with the urge to slap it.
+
 ent-ContrabassInstrument-name = contrabass
 ent-ContrabassInstrument-desc = Perfect for laying down a nice jazzy beat.
+
 ent-MinimoogInstrument-name = minimoog
 ent-MinimoogInstrument-desc = This is a minimoog, like a space piano, but more spacey!
+
 ent-TomDrumsInstrument-name = tom drums
 ent-TomDrumsInstrument-desc = Where'd the rest of the kit go?
+
 ent-DawInstrument-name = digital audio workstation
 ent-DawInstrument-desc = Cutting edge music technology, straight from the 90s.
+

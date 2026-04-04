@@ -1,1 +1,2 @@
-ent-CMMobDiona = Морпех Урист МакЦветы
+ent-CMMobDiona-name = Urist C.M McPlants
+

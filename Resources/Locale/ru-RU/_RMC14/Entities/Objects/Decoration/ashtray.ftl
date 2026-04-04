@@ -1,6 +1,9 @@
-ent-RMCAshtrayGlass = стеклянная пепельница
-  .desc = Стеклянная пепельница. Выглядит хрупкой.
-ent-RMCAshtrayBronze = бронзовая пепельница
-  .desc = Массивная бронзовая пепельница.
-ent-RMCAshtray = пластиковая пепельница
-  .desc = Дешёвая пластиковая пепельница.
+ent-RMCAshtrayGlass-name = glass ashtray
+ent-RMCAshtrayGlass-desc = Glass ashtray. Looks fragile.
+
+ent-RMCAshtrayBronze-name = bronze ashtray
+ent-RMCAshtrayBronze-desc = Massive bronze ashtray.
+
+ent-RMCAshtray-name = plastic ashtray
+ent-RMCAshtray-desc = Cheap platic ashtray.
+

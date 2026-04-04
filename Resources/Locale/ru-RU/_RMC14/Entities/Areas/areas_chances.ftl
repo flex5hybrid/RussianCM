@@ -1,88 +1,204 @@
-ent-RMCAreaLv522AtmosReactorGarage = Атмосферный процессор — Гараж
-ent-RMCAreaLv522AtmosSewer = Атмосферный процессор — канализация
-ent-RMCAreaLv522AtmosWayInCommandCentre = Атмосферный процессор — вход в реактор Северного корпуса
-ent-RMCAreaLv522AtmosFilt = Атмосферный процессор — система фильтрации
-ent-RMCAreaLv522AtmosNorthCommandCentre = Атмосферный процессор — контрольно-пропускной пункт Северного командного центра
-ent-RMCAreaLv522AtmosCommandCentre = Атмосферный процессор — Центральное командование
-ent-RMCAreaLv522AtmosCargoIntake = Атмосферный процессор — прием груза
-ent-RMCAreaLv522AtmosWestReactor = Атмосферный процессор – Западный реактор
-ent-RMCAreaLv522AtmosEastReactorWest = Атмосферный процессор — Внешний восточный реактор — запад
-ent-RMCAreaLv522AtmosEastReactorEast = Атмосферный процессор — Внешний восточный реактор — восток
-ent-RMCAreaLv522AtmosEastReactorSouth = Атмосферный процессор — Внешний восточный реактор — юг
-ent-RMCAreaLv522AtmosEastReactorNorth = Атмосферный процессор — Внешний восточный реактор — Север
-ent-RMCAreaLv522AtmosEastReactor = Атмосферный процессор – Восточный реактор
-ent-RMCAreaLv522AtmosOutdoor = Атмосферный процессор — на открытом воздухе
-ent-RMCAreaLv522Atmos = Атмосферный процессор
-ent-RMCAreaLv522OutdoorsPERockies = Восточный процессор - Скалистые горы
-ent-RMCAreaLv522OutdoorsPWRockies = Западный процессор - Скалистые горы
-ent-RMCAreaLv522OutdoorsPNwRockies = Северо-западный процессор — Скалистые горы
-ent-RMCAreaLv522OutdoorsPNRockies = Северный процессор - Скалистые горы
-ent-RMCAreaLv522OutdoorsWRockies = Западная колония – Скалистые горы
-ent-RMCAreaLv522OutdoorsNwRockies = Северо-западная колония — Скалистые горы
-ent-RMCAreaLv522OutdoorsNRockies = Северная колония – Скалистые горы
-ent-RMCAreaLv522IndoorsCBlockTComm = Блок C — Т-коммуникации Западного гаража
-ent-RMCAreaLv522IndoorsCBlockBridge = C-блок — мост для груза в гараж
-ent-RMCAreaLv522IndoorsCBlockCasino = C-Блок — Казино
-ent-RMCAreaLv522IndoorsCBlockGarage = C-Блок — Гараж
-ent-RMCAreaLv522IndoorsCBlockMining = C-Блок — Горное дело
-ent-RMCAreaLv522IndoorsCBlockCargo = C-блок — грузовой
-ent-RMCAreaLv522IndoorsCBlock = C-блок
-ent-RMCAreaLv522IndoorsBBlockBridge = B-Block — Сеть гидропонных мостов
-ent-RMCAreaLv522IndoorsBBlockBar = Блок Б - Бар
-ent-RMCAreaLv522IndoorsBBlockHydro = B-Блок — Гидропоника
-ent-RMCAreaLv522IndoorsBBlock = B-Блок
-ent-RMCAreaLv522IndoorsABlockGarden = Блок А — Западный операционный сад
-ent-RMCAreaLv522IndoorsABlockCorpo = А-Блок - Корпоративный офис
-ent-RMCAreaLv522IndoorsABlockBridgesGardenBridge = Блок А – Садовый мост
-ent-RMCAreaLv522IndoorsABlockBridgesOpCentre = A-Block — мост безопасности к операционному центру
-ent-RMCAreaLv522IndoorsABlockBridgesCorpo = A-Block — безопасность для корпоративного моста
-ent-RMCAreaLv522IndoorsABlockBridgesCorpoFitness = A-Block - Западные общежития и фитнес
-ent-RMCAreaLv522IndoorsABlockBridgesDormsFitness = A-Block - Мост от корпоративного к фитнесу
-ent-RMCAreaLv522IndoorsABlockBridges = Блок А — западные общежития к мосту безопасности
-ent-RMCAreaLv522IndoorsABlockDormNorth = Блок А – Северные общие общежития
-ent-RMCAreaLv522IndoorsABlockExecutive = Блок А — Представительский люкс
-ent-RMCAreaLv522IndoorsABlockKitchen = А-Блок – Кухня и Столовая
-ent-RMCAreaLv522IndoorsABlockSecurity = А-Блок – Безопасность
-ent-RMCAreaLv522IndoorsABlockMedical = А-Блок - Медицинский
-ent-RMCAreaLv522IndoorsABlockHallway = Блок А — Южный операционный коридор
-ent-RMCAreaLv522IndoorsABlockFitness = А-Блок - Фитнес-центр
-ent-RMCAreaLv522IndoorsABlockDorms = A-Block - Западные общежития и офисы
-ent-RMCAreaLv522IndoorsABlockAdmin = Блок А — Операционный центр колонии
-ent-RMCAreaLv522IndoorsABlock = А-Блок
-ent-RMCAreaLv522IndoorsLoneBuildingsChunk = Чанк и дамп
-ent-RMCAreaLv522IndoorsLoneBuildingsStorageBlocks = Открытое хранение
-ent-RMCAreaLv522IndoorsLoneBuildingsOutdoorBot = East LZ1 — наружная телекоммуникационная связь
-ent-RMCAreaLv522IndoorsLoneBuildingsSpaceport = Северная LZ1 — космодром
-ent-RMCAreaLv522IndoorsLoneBuildingsEngineering = Аварийная инженерия
-ent-RMCAreaLv522IndoorsToilet = LV522 - Уличные туалеты
-ent-RMCAreaLv522IndoorsLoneBuildings = LV522 - Одинокие здания
-ent-RMCAreaLv522OutdoorsColonyStreetsWinde = Улицы колонии — северо-запад
-ent-RMCAreaLv522OutdoorsColonyStreetsNorthStreet = Улицы колонии — север
-ent-RMCAreaLv522OutdoorsColonyStreetsNorthEastStreet = Улицы колонии — северо-восток
-ent-RMCAreaLv522OutdoorsColonyStreetsNorthWestStreet = Улицы колонии — северо-запад
-ent-RMCAreaLv522OutdoorsColonyStreetsSouthWestStreet = Улицы колонии — юго-запад
-ent-RMCAreaLv522OutdoorsColonyStreetsSouthEastStreet = Улицы колонии — юго-восток
-ent-RMCAreaLv522OutdoorsColonyStreetsSouthStreet = Улицы колонии — юг
-ent-RMCAreaLv522OutdoorsColonyStreetsEastCentralStreet = Центральные улицы - Восток
-ent-RMCAreaLv522OutdoorsColonyStreetsCentralStreets = Центральные улицы - Запад
-ent-RMCAreaLv522OutdoorsColonyStreetsWindbreakerObservation = Ветровки колонии — наблюдение
-ent-RMCAreaLv522OutdoorsColonyStreetsWindbreaker = Колониальные ветровки
-ent-RMCAreaLv522OutdoorsColonyStreetsContainers = Улицы Колонии — Контейнерный двор
-ent-RMCAreaLv522OutdoorsColonyStreets = Улицы колонии
-ent-RMCAreaLv522LandingZoneForeconUD6Tornado = Претензия Шанса - UD6 Торнадо
-ent-RMCAreaLv522LandingZoneForeconUD6Typhoon = Претензия Шанса - UD6 Тайфун
-ent-RMCAreaLv522LandingZoneForeconLandingZone4 = Заявление Ченса - Зона приземления 4
-ent-RMCAreaLv522LandingZoneForeconLandingZone3 = Претензия Ченса - Зона приземления 3
-ent-RMCAreaLv522LandingZoneForecon = Претензия Шанса - FORECON Shuttle
-ent-RMCAreaLv522LandingZone2Lz2Console = Претензия Шанса — Консоль Dropship Normandy
-ent-RMCAreaShuttleDrop2Lv522 = Претензия Шанса — Зона высадки десантного корабля в Нормандии
-ent-RMCAreaLv522LandingZone2 = Претензия Шанса - Вторая зона приземления
-ent-RMCAreaLv522LandingZone1Lz1Console = Претензия Шанса — Консоль Dropship Alamo
-ent-RMCAreaShuttleDrop1Lv522 = Претензия Шанса — Зона приземления десантного корабля Аламо
-ent-RMCAreaLv522LandingZone1TunnelFar = Претензия Шанса - Туннели первой зоны приземления
-ent-RMCAreaLv522LandingZone1Tunnel = Претензия Шанса - Туннели первой зоны приземления
-ent-RMCAreaLv522LandingZone1 = Претензия Шанса - Первая зона приземления
-ent-RMCAreaLv522OobWYVault = LV522 - Безопасное хранилище WEYA
-ent-RMCAreaLv522Oob = LV522 - За пределами поля
-ent-RMCAreaLv522Outdoors = Претензия Шанса — на открытом воздухе
-ent-RMCAreaLv522Indoors = Претензия Шанса — в помещении
+ent-RMCAreaLv522AtmosReactorGarage-name = Atmospheric Processor - Garage
+
+ent-RMCAreaLv522AtmosSewer-name = Atmospheric Processor - Sewer
+
+ent-RMCAreaLv522AtmosWayInCommandCentre-name = Atmospheric Processor - North Corpo Reactor Entrance
+
+ent-RMCAreaLv522AtmosFilt-name = Atmospheric Processor - Filtration System
+
+ent-RMCAreaLv522AtmosNorthCommandCentre-name = Atmospheric Processor - North Command Centre Checkpoint
+
+ent-RMCAreaLv522AtmosCommandCentre-name = Atmospheric Processor - Central Command
+
+ent-RMCAreaLv522AtmosCargoIntake-name = Atmospheric Processor - Cargo Intake
+
+ent-RMCAreaLv522AtmosWestReactor-name = Atmospheric Processor - Western Reactor
+
+ent-RMCAreaLv522AtmosEastReactorWest-name = Atmospheric Processor - Outer East Reactor - west
+
+ent-RMCAreaLv522AtmosEastReactorEast-name = Atmospheric Processor - Outer East Reactor - east
+
+ent-RMCAreaLv522AtmosEastReactorSouth-name = Atmospheric Processor - Outer East Reactor - south
+
+ent-RMCAreaLv522AtmosEastReactorNorth-name = Atmospheric Processor - Outer East Reactor - North
+
+ent-RMCAreaLv522AtmosEastReactor-name = Atmospheric Processor - Eastern Reactor
+
+ent-RMCAreaLv522AtmosOutdoor-name = Atmospheric Processor - Outdoors
+
+ent-RMCAreaLv522Atmos-name = Atmospheric Processor
+
+ent-RMCAreaLv522OutdoorsPERockies-name = East Processor - Rockies
+
+ent-RMCAreaLv522OutdoorsPWRockies-name = West Processor - Rockies
+
+ent-RMCAreaLv522OutdoorsPNwRockies-name = Northwest Processor - Rockies
+
+ent-RMCAreaLv522OutdoorsPNRockies-name = North Processor - Rockies
+
+ent-RMCAreaLv522OutdoorsWRockies-name = West Colony - Rockies
+
+ent-RMCAreaLv522OutdoorsNwRockies-name = Northwest Colony - Rockies
+
+ent-RMCAreaLv522OutdoorsNRockies-name = North Colony - Rockies
+
+ent-RMCAreaLv522IndoorsCBlockTComm-name = C-Block - West Garage T-comms
+
+ent-RMCAreaLv522IndoorsCBlockBridge-name = C-Block - Cargo To Garage Bridge
+
+ent-RMCAreaLv522IndoorsCBlockCasino-name = C-Block - Casino
+
+ent-RMCAreaLv522IndoorsCBlockGarage-name = C-Block - Garage
+
+ent-RMCAreaLv522IndoorsCBlockMining-name = C-Block - Mining
+
+ent-RMCAreaLv522IndoorsCBlockCargo-name = C-Block - Cargo
+
+ent-RMCAreaLv522IndoorsCBlock-name = C-Block
+
+ent-RMCAreaLv522IndoorsBBlockBridge-name = B-Block - Hydroponics Bridge Network
+
+ent-RMCAreaLv522IndoorsBBlockBar-name = B-Block - Bar
+
+ent-RMCAreaLv522IndoorsBBlockHydro-name = B-Block - Hydroponics
+
+ent-RMCAreaLv522IndoorsBBlock-name = B-Block
+
+ent-RMCAreaLv522IndoorsABlockGarden-name = A-Block - West Operations Garden
+
+ent-RMCAreaLv522IndoorsABlockCorpo-name = A-Block - Corporate Office
+
+ent-RMCAreaLv522IndoorsABlockBridgesGardenBridge-name = A-Block - Garden Bridge
+
+ent-RMCAreaLv522IndoorsABlockBridgesOpCentre-name = A-Block - Security To Operations Centre Bridge
+
+ent-RMCAreaLv522IndoorsABlockBridgesCorpo-name = A-Block - Security To Corporate Bridge
+
+ent-RMCAreaLv522IndoorsABlockBridgesCorpoFitness-name = A-Block - Western Dorms To Fitness
+
+ent-RMCAreaLv522IndoorsABlockBridgesDormsFitness-name = A-Block - Corporate To Fitness Bridge
+
+ent-RMCAreaLv522IndoorsABlockBridges-name = A-Block - Western Dorms To Security Bridge
+
+ent-RMCAreaLv522IndoorsABlockDormNorth-name = A-Block - Northern Shared Dorms
+
+ent-RMCAreaLv522IndoorsABlockExecutive-name = A-Block - Executive Suite
+
+ent-RMCAreaLv522IndoorsABlockKitchen-name = A-Block - Kitchen And Dining
+
+ent-RMCAreaLv522IndoorsABlockSecurity-name = A-Block - Security
+
+ent-RMCAreaLv522IndoorsABlockMedical-name = A-Block - Medical
+
+ent-RMCAreaLv522IndoorsABlockHallway-name = A-Block - South Operations Hallway
+
+ent-RMCAreaLv522IndoorsABlockFitness-name = A-Block - Fitness Centre
+
+ent-RMCAreaLv522IndoorsABlockDorms-name = A-Block - Western Dorms And Offices
+
+ent-RMCAreaLv522IndoorsABlockAdmin-name = A-Block - Colony Operations Centre
+
+ent-RMCAreaLv522IndoorsABlock-name = A-Block
+
+ent-RMCAreaLv522IndoorsLoneBuildingsChunk-name = Chunk 'N Dump
+
+ent-RMCAreaLv522IndoorsLoneBuildingsStorageBlocks-name = Outdoor Storage
+
+ent-RMCAreaLv522IndoorsLoneBuildingsOutdoorBot-name = East LZ1 - Outdoor T-Comms
+
+ent-RMCAreaLv522IndoorsLoneBuildingsSpaceport-name = North LZ1 - Spaceport
+
+ent-RMCAreaLv522IndoorsLoneBuildingsEngineering-name = Emergency Engineering
+
+ent-RMCAreaLv522IndoorsToilet-name = LV522 - Outdoor Toilets
+
+ent-RMCAreaLv522IndoorsLoneBuildings-name = LV522 - Lone buildings
+
+ent-RMCAreaLv522OutdoorsColonyStreetsWinde-name = Colony Streets - Northwest
+
+ent-RMCAreaLv522OutdoorsColonyStreetsNorthStreet-name = Colony Streets - North
+
+ent-RMCAreaLv522OutdoorsColonyStreetsNorthEastStreet-name = Colony Streets - Northeast
+
+ent-RMCAreaLv522OutdoorsColonyStreetsNorthWestStreet-name = Colony Streets - Northwest
+
+ent-RMCAreaLv522OutdoorsColonyStreetsSouthWestStreet-name = Colony Streets - Southwest
+
+ent-RMCAreaLv522OutdoorsColonyStreetsSouthEastStreet-name = Colony Streets - Southeast
+
+ent-RMCAreaLv522OutdoorsColonyStreetsSouthStreet-name = Colony Streets - South
+
+ent-RMCAreaLv522OutdoorsColonyStreetsEastCentralStreet-name = Central Streets - East
+
+ent-RMCAreaLv522OutdoorsColonyStreetsCentralStreets-name = Central Streets - West
+
+ent-RMCAreaLv522OutdoorsColonyStreetsWindbreakerObservation-name = Colony Windbreakers - Observation
+
+ent-RMCAreaLv522OutdoorsColonyStreetsWindbreaker-name = Colony Windbreakers
+
+ent-RMCAreaLv522OutdoorsColonyStreetsContainers-name = Colony Streets - Container Yard
+
+ent-RMCAreaLv522OutdoorsColonyStreets-name = Colony Streets
+
+ent-RMCAreaLv522LandingZoneForeconUD6Tornado-name = Chance's Claim - UD6 Tornado
+
+ent-RMCAreaLv522LandingZoneForeconUD6Typhoon-name = Chance's Claim - UD6 Typhoon
+
+ent-RMCAreaLv522LandingZoneForeconLandingZone4-name = Chance's claim - Landing Zone 4
+
+ent-RMCAreaLv522LandingZoneForeconLandingZone3-name = Chance's claim - Landing Zone 3
+
+ent-RMCAreaLv522LandingZoneForecon-name = Chance's Claim - FORECON Shuttle
+
+ent-RMCAreaLv522LandingZone2Lz2Console-name = Chance's Claim - Dropship Normandy Console
+
+ent-RMCAreaShuttleDrop2Lv522-name = Chance's Claim - Dropship Normandy Landing Zone
+
+ent-RMCAreaLv522LandingZone2-name = Chance's Claim - Landing Zone Two
+
+ent-RMCAreaLv522LandingZone1Lz1Console-name = Chance's Claim - Dropship Alamo Console
+
+ent-RMCAreaShuttleDrop1Lv522-name = Chance's Claim - Dropship Alamo Landing Zone
+
+ent-RMCAreaLv522LandingZone1TunnelFar-name = Chance's Claim - Landing Zone One Tunnels
+
+ent-RMCAreaLv522LandingZone1Tunnel-name = Chance's Claim - Landing Zone One Tunnels
+
+ent-RMCAreaLv522LandingZone1-name = Chance's Claim - Landing Zone One
+
+ent-RMCAreaLv522OobWYVault-name = LV522 - WEYA Secure Vault
+
+ent-RMCAreaLv522Oob-name = LV522 - Out Of Bounds
+
+ent-RMCAreaLv522Outdoors-name = Chance's Claim - Outdoors
+
+ent-RMCAreaLv522Indoors-name = Chance's Claim - Indoors
+
+ent-RMCAreaLv522-name = area
+
+ent-RMCAreaLv522LandingZone1Ceiling-name = Chance's Claim - Landing Zone One
+
+ent-RMCAreaLv522LandingZone2Ceiling-name = Chance's Claim - Landing Zone Two
+
+ent-RMCAreaLv522IndoorsABlockDormsGlass-name = A-Block - Western Dorms And Offices
+
+ent-RMCAreaLv522IndoorsABlockFitnessGlass-name = A-Block - Fitness Centre
+
+ent-RMCAreaLv522IndoorsABlockHallwayDamage-name = A-Block - South Operations Hallway
+
+ent-RMCAreaLv522IndoorsABlockMedicalGlass-name = A-Block - Medical
+
+ent-RMCAreaLv522IndoorsABlockSecurityGlass-name = A-Block - Security
+
+ent-RMCAreaLv522IndoorsABlockKitchenGlass-name = A-Block - Kitchen And Dining
+
+ent-RMCAreaLv522IndoorsABlockKitchenDamage-name = A-Block - Kitchen And Dining
+
+ent-RMCAreaLv522IndoorsABlockExecutiveGlass-name = A-Block - Executive Suite
+
+ent-RMCAreaLv522IndoorsABlockCorpoGlass-name = A-Block - Corporate Office
+
+ent-RMCAreaLv522IndoorsBBlockHydroGlass-name = B-Block - Hydroponics
+
+ent-RMCAreaLv522AtmosEastReactorSouthCas-name = Atmospheric Processor - Outer East Reactor - south
+

@@ -1,2 +1,4 @@
-ent-SpawnCMTestDummy = RMC Test Dummy Spawner
-ent-CMTestDummy = груша для битья
+ent-SpawnCMTestDummy-name = RMC Test Dummy Spawner
+
+ent-CMTestDummy-name = test dummy
+

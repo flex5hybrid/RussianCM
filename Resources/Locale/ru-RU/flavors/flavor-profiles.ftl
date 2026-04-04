@@ -1,13 +1,11 @@
 flavor-profile = На вкус { $flavor }.
 flavor-profile-multiple = На вкус { $flavors } и { $lastFlavor }.
 flavor-profile-unknown = Вкус неописуем.
-
 # Base flavors. Use these when you can't think of anything.
 # These are specifically flavors that are placed in front
 # of other flavors. When the flavors are processed, these
 # will go in front so you don't get this like "Tastes like tomatoes, sweet and spicy",
 # instead, you get "Tastes sweet, spicy and like tomatoes".
-
 flavor-base-savory = жгуче
 flavor-base-sweet = сладко
 flavor-base-salty = солёно
@@ -52,34 +50,23 @@ flavor-base-horrible = ужасно
 flavor-base-terrible = ужасающе
 flavor-base-mindful = разумно
 flavor-base-chewy = жевательно
-
 # Complex flavors. Put a flavor here when you want something that's more
 # specific.
-
 flavor-complex-nothing = как ничто
 flavor-complex-honey = как мёд
-
 # Condiments
-
 flavor-complex-ketchunaise = как помидоры и майонез
 flavor-complex-mayonnaise = как майонез
 flavor-complex-mustard = как горчица
-
 # Food-specific flavors.
-
 ## Food chemicals. In case you get something that has this inside.
-
 flavor-complex-nutriment = как питательные вещества
 flavor-complex-vitamin = как витамины
 flavor-complex-protein = как протеины
-
 ## Generic food taste. This should be replaced with an actual flavor profile,
 ## if you have food that looks как this.
-
 flavor-complex-food = как еда
-
 ## Basic foodstuffs (ingredients, generic flavors)
-
 flavor-complex-bun = как булочка
 flavor-complex-bread = как хлеб
 flavor-complex-batter = как тесто для торта
@@ -128,11 +115,8 @@ flavor-complex-nettles = как крапива
 flavor-complex-jungle = как джунгли
 flavor-complex-vegetables = как овощи
 flavor-complex-cherry = как вишня
-
 # use it when there multiple types of veggies
-
 ## Complex foodstuffs (cooked foods, joke flavors, etc)
-
 flavor-complex-pink = как розовый
 flavor-complex-curry = как карри
 flavor-complex-borsch-1 = как борщ
@@ -183,18 +167,13 @@ flavor-complex-true-nature = как истинная природа реальн
 flavor-complex-false-meat = как не совсем не мясо
 flavor-complex-paper = как кашеобразная масса
 flavor-complex-compressed-meat = как спрессованное мясо
-
 # Drink-specific flavors.
-
 ## Generic alcohol/soda taste. This should be replaced with an actual flavor profile.
-
 flavor-complex-alcohol = как алкоголь
 flavor-complex-soda = как газировка
 flavor-complex-juice = как сок
 flavor-complex-rocksandstones = как скалы и камни
-
 ## Basic drinks
-
 flavor-complex-water = как вода
 flavor-complex-beer = как моча
 flavor-complex-cognac = как сухой пряный алкоголь
@@ -230,9 +209,7 @@ flavor-complex-tea = как чай
 flavor-complex-ice = как лёд
 flavor-complex-mopwata = как застоявшаяся грязная вода
 flavor-complex-gin = как ферментированное зерно с можжевеловыми ягодами
-
 ## Cocktails
-
 flavor-complex-arnold-palmer = как попадание в лунку с первого удара
 flavor-complex-blue-hawaiian = как тропики
 flavor-complex-cosmopolitan = сладко и терпко
@@ -319,15 +296,10 @@ flavor-complex-vodka-martini = как русский шпионский филь
 flavor-complex-vodka-tonic = освежающе горько
 flavor-complex-coconut-rum = как орехово-ферментированный сахар
 flavor-complex-bacchus-blessing = как кирпичная стена
-
 ### This is exactly what pilk tastes как. I'm not even joking. I might've been a little drunk though
-
 flavor-complex-pilk = как сладкое молоко
-
 # Medicine/chemical-specific flavors.
-
 ## Generic flavors.
-
 flavor-complex-medicine = как лекарство
 flavor-complex-carpet = как горсть шерсти
 flavor-complex-bee = беспчеловечно

@@ -1,2 +1,3 @@
-ent-RMCBackpackFlamer = топливный бак G4-1 пиротехника КОАН
-  .desc = Ранцевая система старого поколения, в которой топливо хранится в двух баках. Между ними расположен небольшой регулятор. Имеет несколько ремней для крепления до трёх основных топливных баков огнемёта, которые вы будете заправлять.
+ent-RMCBackpackFlamer-name = backpack
+ent-RMCBackpackFlamer-desc = You wear this on your back and put items into it.
+

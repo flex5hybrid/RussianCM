@@ -1,3 +1,6 @@
-ent-RMCGuidebookRoleSO = Офицер штаба
-  .desc = Офицер штаба
-ent-CMSpawnPointStaffOfficer = staff officer spawn point
+ent-RMCGuidebookRoleSO-name = A Staff Officer
+ent-RMCGuidebookRoleSO-desc = A Staff Officer.
+
+ent-CMSpawnPointStaffOfficer-name = staff officer spawn point
+ent-CMSpawnPointStaffOfficer-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

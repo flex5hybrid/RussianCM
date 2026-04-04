@@ -1,6 +1,5 @@
 ﻿cm-pill-contains = Таблетка содержит:
 cm-pill-contains-none = Таблетка содержит: Нет реагентов.
-
 cm-pill-contents-unknown = Вы не знаете, что внутри.
 cm-pill-contents-none = {""}
 cm-pill-contents-bicaridine = Таблетка бикаридина. Лечит механический урон.

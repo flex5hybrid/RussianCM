@@ -1,36 +1,42 @@
-ent-CMMREFoodHoneyFlan = медовый флан
-  .desc = Содержимое стандартного ИРП морской пехоты. Это медовый флан.
-ent-CMMREFoodFlan = флан
-  .desc = Содержимое стандартного ИРП морской пехоты. Это флан.
-ent-CMMREFoodCocoBar = кокосовый батончик
-  .desc = Содержимое стандартного ИРП морской пехоты. Это кокосовый батончик.
-ent-CMMREFoodSugarCookie = сахарное печенье
-  .desc = Содержимое стандартного ИРП морской пехоты. Это сахарное печенье.
-ent-CMMREFoodChocolateBrownie = шоколадный брауни
-  .desc = Содержимое стандартного ИРП морской пехоты. Это шоколадный брауни.
-ent-CMMREFoodSpicedApples = яблоки со специями
-  .desc = Содержимое стандартного ИРП морской пехоты. Это яблоки со специями.
-ent-CMMREComponentHoneyFlan = компонент ИРП (медовый флан)
-  .desc = Дополнительный компонент ИРП. Содержит сладкий десерт, который следует есть после основного блюда (или до, если ты бунтарь). Это медовый флан.
-ent-CMMREComponentFlan = компонент ИРП (флан)
-  .desc = Дополнительный компонент ИРП. Содержит сладкий десерт, который следует есть после основного блюда (или до, если ты бунтарь). Это флан.
-ent-CMMREComponentCocoBar = компонент ИРП (кокосовый батончик)
-  .desc = Дополнительный компонент ИРП. Содержит сладкий десерт, который следует есть после основного блюда (или до, если ты бунтарь). Это кокосовый батончик.
-ent-CMMREComponentSugarCookie = компонент ИРП (сахарное печенье)
-  .desc = Дополнительный компонент ИРП. Содержит сладкий десерт, который следует есть после основного блюда (или до, если ты бунтарь). Это сахарное печенье.
-ent-CMMREComponentChocolateBrownie = компонент ИРП (шоколадный брауни)
-  .desc = Дополнительный компонент ИРП. Содержит сладкий десерт, который следует есть после основного блюда (или до, если ты бунтарь). Это шоколадный брауни.
-ent-CMMREComponentSpicedApples = компонент ИРП (яблоки со специями)
-  .desc = Дополнительный компонент ИРП. Содержит сладкий десерт, который следует есть после основного блюда (или до, если ты бунтарь). Это яблоки со специями.
+ent-CMMREFoodHoneyFlan-name = honey flan
+ent-CMMREFoodHoneyFlan-desc = The contents of a Marine Standard issue MRE. This one is honey flan.
 
+ent-CMMREFoodFlan-name = flan
+ent-CMMREFoodFlan-desc = The contents of a Marine Standard issue MRE. This one is flan.
 
+ent-CMMREFoodCocoBar-name = coco bar
+ent-CMMREFoodCocoBar-desc = The contents of a Marine Standard issue MRE. This one is a coco bar.
 
+ent-CMMREFoodSugarCookie-name = sugar cookie
+ent-CMMREFoodSugarCookie-desc = The contents of a Marine Standard issue MRE. This one is a sugar cookie.
 
+ent-CMMREFoodChocolateBrownie-name = chocolate brownie
+ent-CMMREFoodChocolateBrownie-desc = The contents of a Marine Standard issue MRE. This one is a chocolate brownie.
 
+ent-CMMREFoodSpicedApples-name = spiced apples
+ent-CMMREFoodSpicedApples-desc = The contents of a Marine Standard issue MRE. This one is spiced apples.
 
+ent-CMMREComponentHoneyFlan-name = MRE component (honey flan)
+ent-CMMREComponentHoneyFlan-desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is honey flan.
 
+ent-CMMREComponentFlan-name = MRE component (flan)
+ent-CMMREComponentFlan-desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is flan.
 
+ent-CMMREComponentCocoBar-name = MRE component (coco bar)
+ent-CMMREComponentCocoBar-desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is a coco bar.
 
+ent-CMMREComponentSugarCookie-name = MRE component (sugar cookie)
+ent-CMMREComponentSugarCookie-desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is a sugar cookie.
 
+ent-CMMREComponentChocolateBrownie-name = MRE component (chocolate brownie)
+ent-CMMREComponentChocolateBrownie-desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is a chocolate brownie.
 
+ent-CMMREComponentSpicedApples-name = MRE component (spiced apples)
+ent-CMMREComponentSpicedApples-desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is spiced apples.
+
+ent-CMMREDessertComponentBase-name = MRE component
+ent-CMMREDessertComponentBase-desc = An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious).
+
+ent-CMMREFoodDessert-name = item
+ent-CMMREFoodDessert-desc = The contents of a Marine Standard issue MRE.
 

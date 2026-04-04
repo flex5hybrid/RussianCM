@@ -1,2 +1,5 @@
-ent-RMCGearSurvivorPresetSoroMiner = пресет сорокинского майнера
-ent-RMCSpawnPointSurvivorSoroMiner = точка спавна сорокинского шахтера
+ent-RMCGearSurvivorPresetSoroMiner-name = пресет сорокинского майнера
+
+ent-RMCSpawnPointSurvivorSoroMiner-name = sorokyne miner spawn point
+ent-RMCSpawnPointSurvivorSoroMiner-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

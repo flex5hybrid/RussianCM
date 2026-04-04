@@ -1,1 +1,2 @@
-ent-RMCRandomHumanoidCLFMedic = clf роль призрака медик
+ent-RMCRandomHumanoidCLFMedic-name = clf ghost role medic
+

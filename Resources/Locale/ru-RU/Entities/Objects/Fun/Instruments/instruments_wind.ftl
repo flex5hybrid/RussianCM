@@ -1,15 +1,27 @@
 ent-SaxophoneInstrument-name = saxophone
 ent-SaxophoneInstrument-desc = An instrument. You could probably grind this into raw jazz.
+
 ent-HarmonicaInstrument-name = harmonica
+ent-HarmonicaInstrument-desc = That's an instrument.
+
 ent-ClarinetInstrument-name = clarinet
 ent-ClarinetInstrument-desc = Skweedward tintacklays.
+
 ent-FluteInstrument-name = flute
 ent-FluteInstrument-desc = Reaching new heights of being horrifyingly shrill.
+
 ent-RecorderInstrument-name = recorder
 ent-RecorderInstrument-desc = Comes in various colors of fashionable plastic!
+
 ent-PanFluteInstrument-name = pan flute
 ent-PanFluteInstrument-desc = Perfect for luring ancient mythical beings to dance with you.
+
 ent-OcarinaInstrument-name = ocarina
 ent-OcarinaInstrument-desc = Good for playing lullabies.
+
 ent-BagpipeInstrument-name = bagpipe
 ent-BagpipeInstrument-desc = Pairs nicely with a kilt.
+
+ent-BaseWoodwindInstrument-name = item
+ent-BaseWoodwindInstrument-desc = That's an instrument.
+

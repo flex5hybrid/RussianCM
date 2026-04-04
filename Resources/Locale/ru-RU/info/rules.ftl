@@ -1,5 +1,4 @@
 # Rules
-
 ui-rules-header = Правила сервера
 ui-rules-header-rp = РП правила сервера
 ui-rules-accept = Я ознакомился и согласен следовать правилам

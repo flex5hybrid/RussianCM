@@ -1,33 +1,53 @@
 ent-FoodFrozenSandwich-name = ice-cream sandwich
 ent-FoodFrozenSandwich-desc = Portable ice-cream in its own packaging.
+
 ent-FoodFrozenSandwichStrawberry-name = strawberry ice-cream sandwich
 ent-FoodFrozenSandwichStrawberry-desc = Portable ice-cream in its own packaging of the strawberry variety.
+
 ent-FoodFrozenFreezy-name = space freezy
 ent-FoodFrozenFreezy-desc = The best ice-cream in space.
+
 ent-FoodFrozenSundae-name = ice-cream sundae
 ent-FoodFrozenSundae-desc = A classic dessert.
+
 ent-FoodFrozenCornuto-name = cornuto
 ent-FoodFrozenCornuto-desc = A Neapolitan vanilla and chocolate ice-cream cone. It menaces with a sprinkling of caramelized nuts.
+
 ent-FoodFrozenPopsicleOrange-name = orange creamsicle
 ent-FoodFrozenPopsicleOrange-desc = A classic orange creamsicle. A sunny frozen treat.
+
 ent-FoodFrozenPopsicleBerry-name = berry creamsicle
 ent-FoodFrozenPopsicleBerry-desc = A vibrant berry creamsicle. A berry good frozen treat.
+
 ent-FoodFrozenPopsicleJumbo-name = jumbo ice-cream
 ent-FoodFrozenPopsicleJumbo-desc = A luxurious ice-cream covered in rich chocolate. It's smaller than you remember.
+
 ent-FoodFrozenSnowconeBase-name = sweet snowcone
 ent-FoodFrozenSnowconeBase-desc = It's just shaved ice and simple syrup, minimum effort.
+
 ent-FoodFrozenSnowcone-name = flavorless snowcone
 ent-FoodFrozenSnowcone-desc = It's just shaved ice. Still fun to chew on.
+
 ent-FoodFrozenSnowconeBerry-name = berry snowcone
 ent-FoodFrozenSnowconeBerry-desc = Berry syrup drizzled over a snowball in a paper cup.
+
 ent-FoodFrozenSnowconeFruit-name = fruit salad snowcone
 ent-FoodFrozenSnowconeFruit-desc = A delightful mix of citrus syrups drizzled over a snowball in a paper cup.
+
 ent-FoodFrozenSnowconeClown-name = clowncone
 ent-FoodFrozenSnowconeClown-desc = Laughter drizzled over a snowball in a paper cup.
+
 ent-FoodFrozenSnowconeMime-name = mime snowcone
+ent-FoodFrozenSnowconeMime-desc = ...
+
 ent-FoodFrozenSnowconeRainbow-name = rainbow snowcone
 ent-FoodFrozenSnowconeRainbow-desc = A very colorful snowball in a paper cup.
+
 ent-FoodFrozenSnowconeTrash-name = paper cone
 ent-FoodFrozenSnowconeTrash-desc = A crumpled paper cone used for an icy treat. Worthless.
+
 ent-FoodFrozenPopsicleTrash-name = popsicle stick
 ent-FoodFrozenPopsicleTrash-desc = Once held a delicious treat. Now, 'tis barren.
+
+ent-FoodFrozenBase-name = item
+

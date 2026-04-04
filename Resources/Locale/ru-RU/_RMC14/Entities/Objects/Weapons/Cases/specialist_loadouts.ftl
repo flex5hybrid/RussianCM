@@ -1,13 +1,24 @@
-ent-RMCKitSpotter = набор наводчика
-ent-RMCKitLoader = набор помощника
-  .desc = Большой набор, содержащий все необходимые припасы, чтобы превратить рядового в помощника по заряжанию для специалиста-подрывника. Небольшая серия инфографики показывает, как должно выполняться перезаряжание: Шаг первый: Возьмите ракету. Шаг второй: Встаньте позади специалиста. Шаг третий: Убедитесь, что специалист держит свою пусковую установку в руках. Шаг четвёртый: Зарядите ракету в пусковую установку. Шаг пятый: Отойдите от зоны обратной струи.
-ent-RMCScoutSpecEquipmentCase = кейс снаряжения разведчика
-  .desc = Большой кейс, содержащий кастомную боевую винтовку M4SPR, лёгкий бронежилет и шлем M3-S, боевой прицел M4SPR, термоплащ M68, реактивное термопокрывало V3, боеприпасы и дополнительные элементы экипировки. ПРИМЕЧАНИЕ: Нельзя класть предметы обратно в этот кейс.
-ent-RMCDemoSpecEquipmentCase = кейс снаряжения подрывника
-  .desc = Большой кейс, содержащий противотанковую пусковую установку крупного калибра M5, усиленный лёгкий бронежилет M3-T, пять 84-мм ракет и дополнительные элементы экипировки. ПРИМЕЧАНИЕ: Нельзя класть предметы обратно в этот кейс.
-ent-RMCGrenadeSpecEquipmentCase = кейс снаряжения тяжёлого гренадёра
-  .desc = Большой кейс, содержащий тяжёлый многозарядный гранатомёт M83, бронежилет и шлем гренадёра M3-G4, значительное количество различных гранат M40 и дополнительные элементы экипировки. ПРИМЕЧАНИЕ: Нельзя класть предметы обратно в этот кейс.
-ent-RMCAntiMaterielEquipmentCase = кейс снаряжения для антиматериального снайпера
-  .desc = Большой кейс, содержащий вашу собственную антиматериальную снайперскую винтовку дальнего действия XM43E1, маскировочный бронежилет и шлем M45, прицел M42, боеприпасы, оборудование наводчика и дополнительные элементы экипировки. ПРИМЕЧАНИЕ: Нельзя класть предметы обратно в этот кейс.
-ent-CMSniperEquipmentCase = кейс снайперского снаряжения
-  .desc = Большой кейс, содержащий вашу собственную снайперскую винтовку дальнего действия M96S, маскировочный бронежилет и шлем M45, прицел M42, боеприпасы, оборудование наводчика и дополнительные элементы экипировки. ПРИМЕЧАНИЕ: Нельзя класть предметы обратно в этот кейс.
+ent-RMCKitSpotter-name = kit
+ent-RMCKitSpotter-desc = It's just an ordinary box.
+
+ent-RMCKitLoader-name = kit
+ent-RMCKitLoader-desc = It's just an ordinary box.
+
+ent-RMCScoutSpecEquipmentCase-name = scout equipment case
+ent-RMCScoutSpecEquipmentCase-desc = A large case containing an M4SPR custom battle rifle, M3-S light armor and helmet, M4SPR battle sight, M68 thermal cloak, V3 reactive thermal tarp, ammunition and additional pieces of equipment.
+
+ent-RMCDemoSpecEquipmentCase-name = demolitionist equipment case
+ent-RMCDemoSpecEquipmentCase-desc = A large case containing a heavy-caliber M5 Anti-Tank Launcher, reinforced M3-T light armor, five 84mm rockets, and additional pieces of equipment.
+
+ent-RMCGrenadeSpecEquipmentCase-name = heavy grenadier equipment case
+ent-RMCGrenadeSpecEquipmentCase-desc = A large case containing a heavy-duty multi-shot M83 grenade launcher, M3-G4 grenadier armor and helmet, significant amount of various 30mm grenades and additional pieces of equipment.
+
+ent-RMCAntiMaterielEquipmentCase-name = anti-materiel sniper equipment case
+ent-RMCAntiMaterielEquipmentCase-desc = A large case containing your very own long-range XM43E1 anti-materiel sniper rifle, M45 ghillie armor and helmet, M42 scout sight, ammunition, spotter equipment, and additional pieces of equipment.
+
+ent-CMSniperEquipmentCase-name = sniper equipment case
+ent-CMSniperEquipmentCase-desc = A large case containing your very own long-range M96S sniper rifle, M45 ghillie armor and helmet, M42 scout sight, ammunition, spotter equipment, and additional pieces of equipment.
+
+ent-RMCPyroSpecEquipmentCase-name = pyrotechnician equipment case
+ent-RMCPyroSpecEquipmentCase-desc = A large case containing M34-T incinerator unit, M35 pyrotechnician armor and helmet, Broiler-T flexible refueling system and additional pieces of equipment.
+

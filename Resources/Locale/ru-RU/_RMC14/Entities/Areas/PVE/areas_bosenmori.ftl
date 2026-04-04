@@ -1,62 +1,128 @@
 ent-RMCAreaBosenmoriBashoOob-name = За пределами границ
+
 ent-RMCAreaBosenmoriBashoLZ1-name = Босенмори Басё — Площадка Нексуса
+
 ent-RMCAreaBosenmoriBashoLZ2-name = Босенмори Басё - Корпоративный лендинг
+
 ent-RMCAreaBosenmoriBashoLZ3-name = Босенмори басё — вход в пещеру
+
 ent-RMCAreaBosenmoriBashoUnknownCaves-name = Неизвестный
+
 ent-RMCAreaBosenmoriBashoFirstLevelCaves-name = Сеть подземных пещер
+
 ent-RMCAreaBosenmoriBashoRuinsInternal-name = Руины Интерала
+
 ent-RMCAreaBosenmoriBashoAbandonedSector-name = Заброшенный сектор
+
 ent-RMCAreaBosenmoriBashoAbandonedDome-name = Заброшенный купол
+
 ent-RMCAreaBosenmoriBashoPilgrimPath-name = Путь паломника
+
 ent-RMCAreaBosenmoriBashoDrowningCrow-name = Тонущая ворона
+
 ent-RMCAreaBosenmoriBashoFieldResearchSite-name = Сайт полевых исследований
+
 ent-RMCAreaBosenmoriBashoFieldResearchSiteInside-name = Сайт полевых исследований
+
 ent-RMCAreaBosenmoriBashoNorthBarrens-name = Северные Степи
+
 ent-RMCAreaBosenmoriBashoFiltration-name = Сектор фильтрации
+
 ent-RMCAreaBosenmoriBashoFiltrationInside-name = Отделение фильтрации
+
 ent-RMCAreaBosenmoriBashoCavernRiver-name = Река Каверн
+
 ent-RMCAreaBosenmoriBashoRiver-name = Река Босенмори
+
 ent-RMCAreaBosenmoriBashoWestSector-name = Западный сектор
+
 ent-RMCAreaBosenmoriBashoWestBarrens-name = Западные Степи
+
 ent-RMCAreaBosenmoriBashoSecuredArmory-name = Безопасная арсенал
+
 ent-RMCAreaBosenmoriBashoSouthWestSector-name = Юго-западный сектор
+
 ent-RMCAreaBosenmoriBashoSouthEastSector-name = Юго-восточный сектор
+
 ent-RMCAreaBosenmoriBashoEastSector-name = Восточный сектор
+
 ent-RMCAreaBosenmoriBashoNorthSector-name = Северный сектор
+
 ent-RMCAreaBosenmoriBashoMountainClearing-name = Горная поляна
+
 ent-RMCAreaBosenmoriBashoCorporateDome-name = Корпоративный купол Уэстон-Ямада
+
 ent-RMCAreaBosenmoriBashoTelecomms-name = Департамент телекоммуникаций
+
 ent-RMCAreaBosenmoriBashoEngineering-name = Инженерный отдел
+
 ent-RMCAreaBosenmoriBashoHumanResources-name = Отдел кадров
+
 ent-RMCAreaBosenmoriBashoTerrarnium-name = Террариум
+
 ent-RMCAreaBosenmoriBashoLivingSector-name = Живой сектор
+
 ent-RMCAreaBosenmoriBashoResearch-name = Исследовательский отдел
+
 ent-RMCAreaBosenmoriBashoGym-name = Спортзал
+
 ent-RMCAreaBosenmoriBashoMedical-name = Медицинский
+
 ent-RMCAreaBosenmoriBashoFoodProcessing-name = Отдел производства пищевых продуктов
+
 ent-RMCAreaBosenmoriBashoConstruction-name = Строительная площадка
+
 ent-RMCAreaBosenmoriBashoCargo-name = Грузовой отдел
+
 ent-RMCAreaBosenmoriBashoShipment-name = Отдел отгрузки
+
 ent-RMCAreaBosenmoriKitchen-name = Кухонный отдел
+
 ent-RMCAreaBosenmoriNexusMain-name = Главный зал Нексуса
+
 ent-RMCAreaBosenmoriSecurityDepartment-name = Отдел безопасности
+
 ent-RMCAreaBosenmoriArmory-name = Оружейная палата
+
 ent-RMCAreaBosenmoriSurplusStore-name = Магазин излишков
+
 ent-RMCAreaBosenmoriColonyOperation-name = Операционный центр колонии
+
 ent-RMCAreaBosenmoriBashoMaintenanceSegment-name = Сегмент технического обслуживания
+
 ent-RMCAreaBosenmoriBashoCorporateLow-name = Корпоративный нижний уровень
+
 ent-RMCAreaBosenmoriBashoSecuredArmoryLow-name = Охраняемый нижний уровень арсенала
+
 ent-RMCAreaBosenmoriBashoEngineeringLow-name = Инженерный нижний уровень
+
 ent-RMCAreaBosenmoriBashoUndergroundCaveNetwork-name = Подземная локальная сеть пещер
+
 ent-RMCAreaBosenmoriBashoShipmentLow-name = Нижний уровень отгрузки
+
 ent-RMCAreaBosenmoriBashoNexusLow-name = Нижний уровень Нексуса
+
 ent-RMCAreaBosenmoriBashoArmoryLow-name = Нижний уровень Оружейной
+
 ent-RMCAreaBosenmoriBashoEmergencyOpLow-name = Чрезвычайные операции нижнего уровня
+
 ent-RMCAreaBosenmoriBashoSewageSystem-name = Канализационная система Босенмори
+
 ent-RMCAreaBosenmoriBashoResearchLow-name = Исследование нижнего уровня
+
 ent-RMCAreaBosenmoriBashoTerraniumLow-name = Нижний уровень террариума
+
 ent-RMCAreaBosenmoriBashoFoodLow-name = Пищевая промышленность Нижний уровень
+
 ent-RMCAreaBosenmoriBashoCargoLow-name = Нижний уровень груза
+
 ent-RMCAreaBosenmoriBashoSandTemple-name = Песчаный храм
+
 ent-RMCAreaBosenmoriBashoRuinsPerimeter-name = Руины Периметра
+
 ent-RMCAreaBosenmoriBashoMining-name = Горнодобывающий сектор
+
+ent-RMCAreaBosenmoriBasho-name = area
+
+ent-RMCAreaBosenmoriBashoUnknownTemple-name = Unknown
+

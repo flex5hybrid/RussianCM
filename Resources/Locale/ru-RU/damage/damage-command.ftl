@@ -1,5 +1,4 @@
 ## Damage command loc.
-
 damage-command-description = Добавить или убрать урон сущности.
 damage-command-help = Использование: { $command } <type/group> <amount> [ignoreResistances] [uid]
 damage-command-arg-type = <damage type or group>

@@ -1,5 +1,4 @@
 ### UI
-
 chat-manager-max-message-length = Ваше сообщение превышает лимит в { $maxMessageLength } символов
 chat-manager-ooc-chat-enabled-message = OOC чат был включён.
 chat-manager-ooc-chat-disabled-message = OOC чат был отключён.

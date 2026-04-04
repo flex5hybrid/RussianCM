@@ -1,5 +1,4 @@
 ## Entity
-
 microwave-component-interact-using-no-power = У неё нет электричества!
 microwave-component-interact-using-broken = Она сломана!
 microwave-component-interact-using-container-full = Контейнер заполнен
@@ -11,14 +10,10 @@ microwave-component-suicide-multi-head-message = Вы зажариваете с�
 microwave-component-suicide-message = Вы зажариваете свою голову!
 microwave-component-interact-full = Она заполнена.
 microwave-component-interact-item-too-big = { CAPITALIZE($item) } не может поместиться в микроволновой печи из-за размера!
-
 ## Bound UI
-
 microwave-bound-user-interface-instant-button = МГНОВЕННО
 microwave-bound-user-interface-cook-time-label = ВРЕМЯ: { $time }
-
 ## UI
-
 microwave-menu-title = Микроволновая печь
 microwave-menu-start-button = Старт
 microwave-menu-eject-all-text = Извлечь всё

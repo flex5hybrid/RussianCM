@@ -1,26 +1,52 @@
-ent-RMCPylonMapIcon = пилон улья
-ent-RMCRecovNodeMapIcon = Узел восстановления
-ent-RMCTunnelMapIcon = Туннель
-ent-RMCClusterMapIcon = Кластер улья
-ent-RMCMorpherMapIcon = Яичный морфер
-ent-RMCHiveCoreMapIcon = Ядро улья
-ent-RMCLeaderMapIcon = Корона лидера
-ent-RMCQueenMapIcon = Королева
-ent-RMCPraetorianMapIcon = Преторианец
-ent-RMCRavagerMapIcon = Разрушитель
-ent-RMCLurkerMapIcon = Люркер
-ent-RMCRunnerMapIcon = Бегун
-ent-RMCBoilerMapIcon = Котел
-ent-RMCSpitterMapIcon = Спиттер
-ent-RMCSentinelMapIcon = Страж
-ent-RMCCrusherMapIcon = Крушитель
-ent-RMCWarriorMapIcon = Воин
-ent-RMCDefenderMapIcon = Защитник
-ent-RMCCarrierMapIcon = Перевозчик
-ent-RMCBurrowerMapIcon = Роющий
-ent-RMCHivelordMapIcon = Хивелорд
-ent-RMCDroneMapIcon = Дрон
-ent-RMCLarvaMapIcon = Личинка
-ent-RMCParasiteMapIcon = Паразит
-ent-RMCLesserMapIcon = Меньший
-ent-RMCBaseMapIcon = Икона
+ent-RMCPylonMapIcon-name = hive pylon
+
+ent-RMCRecovNodeMapIcon-name = Recovery node
+
+ent-RMCTunnelMapIcon-name = Tunnel
+
+ent-RMCClusterMapIcon-name = Hive cluster
+
+ent-RMCMorpherMapIcon-name = Egg morpher
+
+ent-RMCHiveCoreMapIcon-name = Hive core
+
+ent-RMCLeaderMapIcon-name = Leader Crown
+
+ent-RMCQueenMapIcon-name = Queen
+
+ent-RMCPraetorianMapIcon-name = Praetorian
+
+ent-RMCRavagerMapIcon-name = Ravager
+
+ent-RMCLurkerMapIcon-name = Lurker
+
+ent-RMCRunnerMapIcon-name = Runner
+
+ent-RMCBoilerMapIcon-name = Boiler
+
+ent-RMCSpitterMapIcon-name = Spitter
+
+ent-RMCSentinelMapIcon-name = Sentinel
+
+ent-RMCCrusherMapIcon-name = Crusher
+
+ent-RMCWarriorMapIcon-name = Warrior
+
+ent-RMCDefenderMapIcon-name = Defender
+
+ent-RMCCarrierMapIcon-name = Carrier
+
+ent-RMCBurrowerMapIcon-name = Burrower
+
+ent-RMCHivelordMapIcon-name = Hivelord
+
+ent-RMCDroneMapIcon-name = Drone
+
+ent-RMCLarvaMapIcon-name = Larva
+
+ent-RMCParasiteMapIcon-name = Parasite
+
+ent-RMCLesserMapIcon-name = Lesser
+
+ent-RMCBaseMapIcon-name = Icon
+

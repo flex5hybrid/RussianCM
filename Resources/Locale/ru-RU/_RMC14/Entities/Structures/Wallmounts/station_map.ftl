@@ -1,2 +1,3 @@
-ent-RMCStationMap = карта судна
-  .desc = Виртуальная карта судна, используемая для навигации.
+ent-RMCStationMap-name = vessel map
+ent-RMCStationMap-desc = A virtual map of the vessel, used for navigation.
+

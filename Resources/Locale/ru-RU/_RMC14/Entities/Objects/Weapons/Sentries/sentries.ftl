@@ -1,25 +1,45 @@
-ent-RMCSentrySniperFire = плазменная турель КМ 60-FP
-  .desc = Плазменная огнемётная турель автоматически отслеживает и стреляет по любой цели, носящей удостоверение, не подключённое к системам «Алмейера». Как и турель КМ 571-C, эта турель имеет систему «свой-чужой», но остаточный фосфор — нет.
-ent-RMCSentryFire = штурмовая огнемётная турель КМ 55-FA
-  .desc = Огнемётная турель автоматически отслеживает и стреляет по любой цели, носящей удостоверение, не подключённое к системам «Алмейера». Как и турель КМ 571-C, эта турель имеет систему «свой-чужой», но остаточное пламя — нет.
-ent-RMCSentryMiniFire = мини-турель КМ 45-FM
-  .desc = Мини-огнемётная турель автоматически отслеживает и стреляет по любой цели, носящей удостоверение, не подключённое к системам «Алмейера». Как и турель КМ 571-C, эта турель имеет систему «свой-чужой», но остаточное пламя — нет.
-ent-RMCTurretGaussDumb = повреждённая гаусс-турель КМ-577
-  .desc = Развёртываемая полуавтоматическая турель с возможностями целеуказания ИИ. Вооружена автоматической пушкой M30 и высокоёмкостным барабанным магазином. Система «свой-чужой» на этой турели выведена из строя кислотой, и она будет открывать огонь по любым целям в радиусе действия.
-ent-RMCSentryShotgun = дробовая турель КМ 12-G
-  .desc = Развёртываемая полуавтоматическая турель, специализированная для ближнего боя. Защищена более прочной бронёй и стальными шипами.
-ent-RMCSentryOmni = всенаправленная турель КМ 571-D
-  .desc = Развёртываемая полуавтоматическая турель с возможностями кругового целеуказания ИИ на 360 градусов. Вооружена автоматической пушкой M30 и барабанным магазином на 500 патронов.
-ent-RMCSentrySniper = снайперская турель КМ 725-D
-  .desc = Полностью автоматизированная оборонительная турель с возможностями дальнего целеуказания. Вооружена модифицированной автоматической пушкой M32-S и внутренней ленточной подачей.
-ent-RMCSentryMiniSPP = лёгкая турель СНП SDS-R8
-  .desc = Компактная версия оборонительной турели СНП SDS-R7. Предназначена для развёртывания в полевых условиях.
-ent-RMCSentryMiniWeYa = мини-турель «Ве-Я» 512-M
-  .desc = Компактная версия оборонительных систем КМП. Предназначена для быстрого развёртывания соответствующего типа в полевых условиях. Этот экземпляр модифицирован для использования наёмниками, работающими на «Вестон-Ямада».
-ent-RMCSentryMini = мини-турель КМ 512-M
-  .desc = Компактная версия оборонительных систем КМП. Предназначена для быстрого развёртывания соответствующего типа в полевых условиях.
-ent-RMCSentry = турель КМ 571-C
-  .desc = Развёртываемая полуавтоматическая турель с возможностями целеуказания ИИ. Вооружена автоматической пушкой M30 и барабанным магазином на 500 патронов.
-ent-RMCEngineeringUpgrade = инженерный комплект улучшений
-  .desc = Комплект для улучшения защиты инженерной турели. Ещё в 1980 году, когда машины попытались вырваться на свободу, именно один андроид положил их на лопатки. Теперь их технология широко используется на окраинах.
-ent-RMCBaseSentry = турель
+ent-RMCSentrySniperFire-name = UN 60-FP plasma sentry
+ent-RMCSentrySniperFire-desc = The Plasma Flamethrower Sentry Gun automatically tracks and fires upon any target that is wearing an ID not hooked up to the Almayer's systems. Just like the UA 571-C Sentry gun, this sentry has IFF but the phosphorus that lingers doesn't.
+
+ent-RMCSentryFire-name = UN 55-FA assault sentry flamer
+ent-RMCSentryFire-desc = The Flamethrower Sentry Gun automatically tracks and fires upon any target that is wearing an ID not hooked up to the Almayer's systems. Just like the UA 571-C Sentry gun, this sentry has IFF but the fire that lingers doesn't.
+
+ent-RMCSentryMiniFire-name = UN 45-FM mini sentry
+ent-RMCSentryMiniFire-desc = The Mini Flamethrower Sentry Gun automatically tracks and fires upon any target that is wearing an ID not hooked up to the Almayer's systems. Just like the UN 571-C Sentry gun, this sentry has IFF but the fire that lingers doesn't.
+
+ent-RMCTurretGaussDumb-name = damaged UN-577 gauss turret
+ent-RMCTurretGaussDumb-desc = A deployable, semi-automated turret with AI targeting capabilities. Armed with an M30 Autocannon and a high-capacity drum magazine. This one's IFF system has been fried via acid damage, and it will open fire on any targets within range.
+
+ent-RMCSentryShotgun-name = UN 12-G Shotgun Sentry
+ent-RMCSentryShotgun-desc = A deployable, semi-automated turret with specialized for close range combat. Protects itself with sturdier plating and steel tusks.
+
+ent-RMCSentryOmni-name = UN 571-D omnidirectional sentry gun
+ent-RMCSentryOmni-desc = A deployable, semi-automated turret with 360 degree range AI targeting capabilities. Armed with an M30 Autocannon and a 500-round drum magazine.
+
+ent-RMCSentrySniper-name = UN 725-D sniper sentry
+ent-RMCSentrySniper-desc = A fully-automated defence turret with long-range targeting capabilities. Armed with a modified M32-S Autocannon and an internal belt feed.
+
+ent-RMCSentryMiniSPP-name = SPP SDS-R8 light sentry
+ent-RMCSentryMiniSPP-desc = A compact version of the SPP defense sentry SDS-R7. Designed for deployment in the field.
+
+ent-RMCSentryMiniWeYa-name = We-Ya 512-M mini sentry
+ent-RMCSentryMiniWeYa-desc = A compact version of the UNMC defenses. Designed for quick deployment of the associated type in the field. This one has been modified for use by the mercenaries employed by Weston-Yamada.
+
+ent-RMCSentryMini-name = UN 512-M mini sentry
+ent-RMCSentryMini-desc = A compact version of the UNMC defenses. Designed for quick deployment of the associated type in the field.
+
+ent-RMCSentry-name = UN 571-C sentry gun
+ent-RMCSentry-desc = A deployable, semi-automated turret with AI targeting capabilities. Armed with an M30 Autocannon and a 500-round drum magazine.
+
+ent-RMCEngineeringUpgrade-name = engineering upgrade kit
+ent-RMCEngineeringUpgrade-desc = A kit used to upgrade the defenses of an engineer's sentry. Back in 1980 when the machines tried to break free, it was a single android who laid them low. Now their technology is used widely on the rim.
+
+ent-RMCBaseSentry-name = turret
+ent-RMCBaseSentry-desc = A deployable, semi-automated turret with AI targeting capabilities. Armed with an M30 Autocannon and a 500-round drum magazine.
+
+ent-RMCSentryConstruct-name = UN 571-C sentry gun
+ent-RMCSentryConstruct-desc = A deployable, semi-automated turret with AI targeting capabilities. Armed with an M30 Autocannon and a 500-round drum magazine.
+
+ent-RMCTurretGaussModifiedCLF-name = modified UN-577 gauss turret
+ent-RMCTurretGaussModifiedCLF-desc = A deployable, semi-automated turret with AI targeting capabilities. Armed with an M30 Autocannon and a high-capacity drum magazine. This one's IFF system has been fried via acid damage, and it will open fire on any targets within range.
+

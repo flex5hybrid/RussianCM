@@ -1,2 +1,3 @@
-ent-WeaponShotgunM890 = тактический дробовик M890
-  .desc = Самозарядный дробовик Weston-Yamada с высокой скорострельностью и подствольным гранатомётом. Вмещает 8 патронов в камере.
+ent-WeaponShotgunM890-name = M890 tactical shotgun
+ent-WeaponShotgunM890-desc = The Weston-Yamada M890 Shotgun, a semi-automatic shotgun with a quick fire rate.
+

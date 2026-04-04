@@ -1,39 +1,72 @@
-ent-CMBoneGel = флакон костного геля
-  .desc = Контейнер для костного геля, который часто требуется пополнять из специального аппарата.
-ent-CMAutopsy = Автоматическая система аутопсии бренда «Ве-Я» (ТМ)
-  .desc = Вернём ВЕСЕЛЬЕ в аутопсию. Этот маленький гаджет проводит полную аутопсию любого странного жизненного существа, которое вы нашли, примерно за 30 секунд.
-ent-CMWoundClamp = раневой зажим
-  .desc = Используется для зажима ран после лечения.
-ent-CMBonesetterPredator = костный фиксатор
-ent-CMBonesetter = костоправ
-  .desc = Используется для вправления костей на место.
-ent-CMCircularSawPredator = костная пила
-ent-CMCircularSaw = циркулярная пила
-  .desc = Для тяжёлых работ по резке.
-ent-CMScalpelManager = система управления разрезами
-  .desc = Истинное расширение тела хирурга, этот чудо-инструмент мгновенно и полностью подготавливает разрез, позволяя немедленно приступить к терапевтическим действиям.
-ent-CMScalpelPICT = система PICT
-  .desc = Инструмент для прецизионного разреза и прижигания использует высокочастотную вибрирующую лопасть, лазерное прижигание и систему контроля жидкости для точного отделения целевых тканей, предотвращая утечку жидкостей. Несмотря на проблемную программу разработки и ужасающую цену, за пределами сложных экспериментальных операций он ненамного лучше обычного двадцатидолларового скальпеля и не может создать бескровный разрез на всю длину.
-ent-CMScalpelLaserAdvanced = продвинутый лазерный скальпель
-  .desc = Скальпель, дополненный направленным лазером для контроля кровотечения во время разреза. Также функционирует как прижигатель. Похоже, это вершина точной энергетической режущей техники!
-ent-CMScalpelLaserImproved = лазерный скальпель
-  .desc = Скальпель, дополненный направленным лазером для контроля кровотечения во время разреза. Также функционирует как прижигатель. Выглядит доверительно, хотя может быть и лучше.
-ent-CMScalpelLaser = прототип лазерного скальпеля
-  .desc = Скальпель, дополненный направленным лазером для контроля кровотечения во время разреза. Также функционирует как прижигатель. Выглядит как ненадёжная ранняя модель.
-ent-CMScalpelPredator = резак
-ent-CMScalpel = скальпель
-  .desc = Режьте, режьте и ещё раз режьте.
-ent-CMSurgicalDrillPredator = костная дрель
-ent-CMSurgicalDrill = хирургическая дрель
-  .desc = Можно сверлить этим предметом. Поняли?
-ent-CMCauteryPredator = каутеризатор
-ent-CMCautery = прижигатель
-  .desc = Останавливает кровотечение.
-ent-CMHemostatPredator = зажим
-ent-CMHemostat = гемостат
-  .desc = Вам кажется, вы это уже видели.
-ent-CMRetractorPredator = открыватель
-ent-CMRetractor = ретрактор
-  .desc = Отводит ткани.
-ent-CMBaseToolSurgery = ретрактор
-  .desc = Отводит ткани.
+ent-CMBoneGel-name = bottle of bone gel
+ent-CMBoneGel-desc = A container for bone gel that often needs to be refilled from a specialized machine.
+
+ent-CMAutopsy-name = We-Ya Brand Automatic Autopsy System(TM)
+ent-CMAutopsy-desc = Putting the FUN back in Autopsy.  This little gadget performs an entire autopsy of whatever strange life form you've found in about 30 seconds.
+
+ent-CMWoundClamp-name = wound clamp
+ent-CMWoundClamp-desc = Used for clamping wounds after treatment.
+
+ent-CMBonesetterPredator-name = bone placer
+ent-CMBonesetterPredator-desc = Retracts stuff.
+
+ent-CMBonesetter-name = retractor
+ent-CMBonesetter-desc = Retracts stuff.
+
+ent-CMCircularSawPredator-name = bone saw
+ent-CMCircularSawPredator-desc = Retracts stuff.
+
+ent-CMCircularSaw-name = retractor
+ent-CMCircularSaw-desc = Retracts stuff.
+
+ent-CMScalpelManager-name = incision management system
+ent-CMScalpelManager-desc = A true extension of the surgeon's body, this marvel instantly and completely prepares an incision allowing for the immediate commencement of therapeutic steps.
+
+ent-CMScalpelPICT-name = PICT system
+ent-CMScalpelPICT-desc = The Precision Incision and Cauterization Tool uses a high-frequency vibrating blade, laser cautery, and suction liquid control system to precisely sever target tissues while preventing all fluid leakage. Despite its troubled development program and horrifying price tag, outside of complex experimental surgeries it isn't any better than an ordinary twenty-dollar scalpel and can't create a full-length incision bloodlessly.
+
+ent-CMScalpelLaserAdvanced-name = advanced laser scalpel
+ent-CMScalpelLaserAdvanced-desc = A scalpel augmented with a directed laser, for controlling bleeding as the incision is made. Also functions as a cautery. This one looks to be the pinnacle of precision energy cutlery!
+
+ent-CMScalpelLaserImproved-name = laser scalpel
+ent-CMScalpelLaserImproved-desc = A scalpel augmented with a directed laser, for controlling bleeding as the incision is made. Also functions as a cautery. This one looks trustworthy, though it could be better.
+
+ent-CMScalpelLaser-name = prototype laser scalpel
+ent-CMScalpelLaser-desc = A scalpel augmented with a directed laser, for controlling bleeding as the incision is made. Also functions as a cautery. This one looks like an unreliable early model.
+
+ent-CMScalpelPredator-name = cutter
+ent-CMScalpelPredator-desc = Retracts stuff.
+
+ent-CMScalpel-name = retractor
+ent-CMScalpel-desc = Retracts stuff.
+
+ent-CMSurgicalDrillPredator-name = bone drill
+ent-CMSurgicalDrillPredator-desc = Retracts stuff.
+
+ent-CMSurgicalDrill-name = retractor
+ent-CMSurgicalDrill-desc = Retracts stuff.
+
+ent-CMCauteryPredator-name = cauterizer
+ent-CMCauteryPredator-desc = Retracts stuff.
+
+ent-CMCautery-name = retractor
+ent-CMCautery-desc = Retracts stuff.
+
+ent-CMHemostatPredator-name = pincher
+ent-CMHemostatPredator-desc = Retracts stuff.
+
+ent-CMHemostat-name = retractor
+ent-CMHemostat-desc = Retracts stuff.
+
+ent-CMRetractorPredator-name = opener
+ent-CMRetractorPredator-desc = Retracts stuff.
+
+ent-CMRetractor-name = retractor
+ent-CMRetractor-desc = Retracts stuff.
+
+ent-CMBaseToolSurgery-name = retractor
+ent-CMBaseToolSurgery-desc = Retracts stuff.
+
+ent-RMCBoneGelEmpty-name = bottle of bone gel
+ent-RMCBoneGelEmpty-desc = A container for bone gel that often needs to be refilled from a specialized machine.
+

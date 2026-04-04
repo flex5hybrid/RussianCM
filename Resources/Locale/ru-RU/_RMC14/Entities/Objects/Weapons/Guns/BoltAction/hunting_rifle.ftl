@@ -1,5 +1,9 @@
-ent-RMCCartridgeBoltActionRifle = патрон (5.56x45)
-  .desc = Патрон для охотничьей винтовки «Басира-Армстронг». Соответствует ограничению в 15 патронов для гражданских охотничьих винтовок.
-ent-RMCMagazineRifleHunting = магазин для «Басира-Армстронг» (6.5мм)
-ent-RMCWeaponBoltActionRifle = охотничья винтовка с продольно-скользящим затвором «Басира-Армстронг»
-  .desc = Названная в честь своих эксцентричных создателей, «Басира-Армстронг» — это дешёвая, но надёжная гражданская винтовка с продольно-скользящим затвором, часто встречающаяся во внешних колониях. Несмотря на ограниченную по закону ёмкость магазина, её лёгкий вес и легендарная точность делают её популярной среди охотников и спортивных стрелков.
+ent-RMCCartridgeBoltActionRifle-name = cartridge
+
+ent-RMCMagazineRifleHunting-name = item
+
+ent-RMCWeaponBoltActionRifle-name = охотничья винтовка с продольно-скользящим затвором «Басира-Армстронг»
+
+ent-RMCBulletRifleHunting-name = BaseBullet
+ent-RMCBulletRifleHunting-desc = If you can see this you're probably dead!
+

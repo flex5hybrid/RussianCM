@@ -1,6 +1,9 @@
-ent-RMCStatusDisplayLarge = большой дисплей статуса
-  .desc = Большой настенный монитор. 
-ent-RMCStatusDisplayProp = отображение статуса
-  .desc = Монитор, отображающий текущее состояние корабля. 
-ent-RMCStatusDisplay = отображение статуса
-  .desc = Монитор, отображающий текущее состояние корабля. 
+ent-RMCStatusDisplayLarge-name = large status display
+ent-RMCStatusDisplayLarge-desc = A large wall mounted monitor. It doesnt seem to work properly.
+
+ent-RMCStatusDisplayProp-name = status display
+ent-RMCStatusDisplayProp-desc = A monitor depicting the ship's current status. It flickers every so often.
+
+ent-RMCStatusDisplay-name = status display
+ent-RMCStatusDisplay-desc = A monitor depicting the ship's current status. It flickers every so often.
+

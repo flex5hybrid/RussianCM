@@ -1,37 +1,63 @@
-ent-RMCArmorCBRNAdvanced = улучшенная броня РХБЗ M3-M
-ent-RMCArmorCBRN = броня РХБЗ M3-M
-  .desc = Хотя и lacking внешний вид брони схемы M3, носимой на регулярной службе, этот элемент брони всё же является её производным. Он был heavily модифицирован, чтобы надеваться поверх костюма MOPP, с удалёнными дополнительными амортизаторами и слоями композитного Венлара, чтобы не ограничивать движение владельца. Однако с уменьшением композитных слоёв личная защита меньше желаемой, и жалобы подаются с 2165 года.
-ent-RMCArmorPMCRiotSynth = синтетический бронежилет ОН-M1S
-  .desc = Основанная на схеме M3, используемой КМП, бронежилет ОН-M1 используется командами безопасности, контроля беспорядков и борьбы с профсоюзами. Модификация ОН-1MS совместима с программированием синтетиков, жертвуя защитой ради скорости и грузоподъёмности.
-ent-RMCArmorPMCRiot = штурмовая броня ОН-M1
-  .desc = Основанная на схеме M3, используемой КМП, бронежилет ОН-M1 используется командами безопасности, контроля беспорядков и борьбы с профсоюзами. Хотя robust против атак ближнего боя и пуль, в нём критически не хватает покрытия ног и рук.
-ent-RMCArmorMercenaryHEFA = броня рыцаря HEFA
-  .desc = Толстый доспех, украшающий HEFA. Обычно виден на рыцаре HEFA.
-ent-RMCArmorMercenaryEngineer = бронированный жилет наёмника Z7
-  .desc = Комплект синей брони с жёлтыми акцентами, созданной для защиты при строительстве или проведении медицинского лечения в highly опасных средах. Это специализированная униформа неизвестной группы наёмников, работающей в секторе.
-ent-RMCArmorMercenaryMiner = бронированный шахтёрский жилет наёмника Y8
-  .desc = Комплект бежевой, лёгкой брони, созданной для защиты при добыче полезных ископаемых. Это специализированная униформа неизвестной группы наёмников, работающей в секторе.
-ent-RMCArmorMercenaryHeavy = модифицированная керамическая броня наёмника K12
-  .desc = Комплект серой, тяжёлой керамической брони с тёмно-синими акцентами. Она была модифицирована дополнительными керамическими пластинами, размещёнными в её сумке для хранения, и, кажется, предназначена для поддержки extremely тяжёлого оружия.
-ent-RMCArmorMercenary = керамическая броня наёмника K12
-  .desc = Комплект серой, тяжёлой керамической брони с тёмно-синими акцентами. Это стандартная униформа неизвестной группы наёмников, работающей в секторе.
-ent-RMCCoatMilitiaHarness = разгрузка колониального ополчения
-  .desc = Хауберк члена колониального ополчения, созданный из варёной кожи и некоторых современных бронепластин. Хотя это не самая мощная форма брони и primitive по сравнению с большинством современных доспехов, она даёт носителю almost perfect мобильность, что соответствует потребностям местных колонистов. Она также быстро надевается, легко скрывается и дёшево производится в больших мастерских. На этой есть straps, переплетённые с пластинами, которые позволяют пользователю стрелять из захваченного умного оружия, хотя и немного неудобно.
-ent-RMCCoatMilitiaHauberk = частичный хауберк колониального ополчения
-  .desc = Хауберк члена колониального ополчения, созданный из варёной кожи и некоторых современных бронепластин. Хотя это не самая мощная форма брони и primitive по сравнению с большинством современных доспехов, она даёт носителю almost perfect мобильность, что соответствует потребностям местных колонистов. Она также быстро надевается, легко скрывается и дёшево производится в больших мастерских. В этом even lighter варианте удалены некоторые наплечные пластины.
-ent-RMCCoatMilitiaBrace = наплечник колониального ополчения
-  .desc = Хауберк члена колониального ополчения, созданный из варёной кожи и некоторых современных бронепластин. Хотя это не самая мощная форма брони и primitive по сравнению с большинством современных доспехов, она даёт носителю almost perfect мобильность, что соответствует потребностям местных колонистов. Она также быстро надевается, легко скрывается и дёшево производится в больших мастерских. В этом extremely light варианте удалены некоторые нагрудные пластины.
-ent-RMCCoatMilitiaVest = жилет колониального ополчения
-  .desc = Хауберк члена колониального ополчения, созданный из варёной кожи и некоторых современных бронепластин. Хотя это не самая мощная форма брони и primitive по сравнению с большинством современных доспехов, она даёт носителю almost perfect мобильность, что соответствует потребностям местных колонистов. Она также быстро надевается, легко скрывается и дёшево производится в больших мастерских. Этот extremely light вариант защищает только грудь и живот.
-ent-RMCCoatMilitia = хауберк колониального ополчения
-  .desc = Хауберк члена колониального ополчения, созданный из варёной кожи и некоторых современных бронепластин. Хотя это не самая мощная форма брони и primitive по сравнению с большинством современных доспехов, она даёт носителю almost perfect мобильность, что соответствует потребностям местных колонистов. Она также быстро надевается, легко скрывается и дёшево производится в больших мастерских.
-ent-CMArmorFreelancer = кираса вольного наёмника
-  .desc = Защитная нагрудная пластина, собранная из различных пластин. Она remarkably хорошо держится, так как качество изготовления solid, а дизайн mirrors подобные брони в СПН и КМП. Многочисленные skilled мастера в рядах вольных наёмников производят эти жилеты со скоростью about один в месяц.
-ent-CMArmorDutchJacket = сафари-куртка
-  .desc = Сшитая на заказ охотничья куртка, хитроумно подбитая сегментированными бронепластинами. Иногда дичь стреляет в ответ.
-ent-CMArmorDutchVest = бронежилет D2
-  .desc = Защитный жилет, который носят некоторые серьёзно опытные наёмники.
-ent-CMArmorIronBear = жилет «Железных Медведей» H1
-  .desc = Защитный жилет, который носят наёмники «Железные Медведи».
-ent-RMCArmorMARSOC = броня рейдера морской пехоты
-  .desc = Сильно кастомизированный комплект брони M3. Используется рейдерами морской пехоты.
+ent-RMCArmorCBRNAdvanced-name = CBRN M3-M advanced armor
+ent-RMCArmorCBRNAdvanced-desc = While lacking the appearance of the M3 pattern armor worn in regular service, this armor piece is still a derivative of it. It has been heavily modified to fit over the MOPP suit with additional padding and Venlar composite layers removed, so as not to restrict the wearer’s movement. However, with the reduction of composite layers, the personal protection offered is less than desired with complaints having been lodged since 2165.
+
+ent-RMCArmorCBRN-name = CBRN M3-M armor
+ent-RMCArmorCBRN-desc = While lacking the appearance of the M3 pattern armor worn in regular service, this armor piece is still a derivative of it. It has been heavily modified to fit over the MOPP suit with additional padding and Venlar composite layers removed, so as not to restrict the wearer’s movement. However, with the reduction of composite layers, the personal protection offered is less than desired with complaints having been lodged since 2165.
+
+ent-RMCArmorPMCRiotSynth-name = UN-M1S synthetic body armor
+ent-RMCArmorPMCRiotSynth-desc = Based on the M3 pattern employed by the UNMC, the UN-M1 body armor is employed by security, riot control and union-busting teams. The UN-1MS modification is Synthetic programming compliant, sacrificing protection for speed and carrying capacity.
+
+ent-RMCArmorPMCRiot-name = UN-M1 riot armor
+ent-RMCArmorPMCRiot-desc = Based on the M3 pattern employed by the UNMC, the UN-M1 body armor is employed by security, riot control and union-busting teams. While robust against melee and bullet attacks, it critically lacks coverage of the legs and arms.
+
+ent-RMCArmorMercenaryHEFA-name = HEFA knight armor
+ent-RMCArmorMercenaryHEFA-desc = A thick piece of armor adorning a HEFA. Usually seen on a HEFA knight.
+
+ent-RMCArmorMercenaryEngineer-name = mercenary Z7 armored vest
+ent-RMCArmorMercenaryEngineer-desc = A set of blue armor with yellow highlights built for protection while building or carrying out medical treatment in highly dangerous environments. It is a specialized uniform of an unknown mercenary group working in the sector.
+
+ent-RMCArmorMercenaryMiner-name = mercenary Y8 armored miner vest
+ent-RMCArmorMercenaryMiner-desc = A set of beige, light armor built for protection while mining. It is a specialized uniform of an unknown mercenary group working in the sector.
+
+ent-RMCArmorMercenaryHeavy-name = mercenary modified K12 ceramic plated armor
+ent-RMCArmorMercenaryHeavy-desc = A set of grey, heavy ceramic armor with dark blue highlights. It has been modified with extra ceramic plates placed in its storage pouch, and seems intended to support an extremely heavy weapon.
+
+ent-RMCArmorMercenary-name = mercenary K12 ceramic plated armor
+ent-RMCArmorMercenary-desc = A set of grey, heavy ceramic armor with dark blue highlights. It is the standard uniform of an unknown mercenary group working in the sector.
+
+ent-RMCCoatMilitiaHarness-name = colonial militia harness
+ent-RMCCoatMilitiaHarness-desc = The hauberk of a colonist militia member, created from boiled leather and some modern armored plates. While not the most powerful form of armor, and primitive compared to most modern suits of armor, it gives the wearer almost perfect mobility, which suits the needs of the local colonists. It is also quick to don, easy to hide, and cheap to produce in large workshops. This one has straps interweaved with the plates, that allow the user to fire a captured smart gun, if a bit uncomfortably.
+
+ent-RMCCoatMilitiaHauberk-name = colonial militia partial hauberk
+ent-RMCCoatMilitiaHauberk-desc = The hauberk of a colonist militia member, created from boiled leather and some modern armored plates. While not the most powerful form of armor, and primitive compared to most modern suits of armor, it gives the wearer almost perfect mobility, which suits the needs of the local colonists. It is also quick to don, easy to hide, and cheap to produce in large workshops. This even lighter variant has some of the arm pieces removed.
+
+ent-RMCCoatMilitiaBrace-name = colonial militia brace
+ent-RMCCoatMilitiaBrace-desc = The hauberk of a colonist militia member, created from boiled leather and some modern armored plates. While not the most powerful form of armor, and primitive compared to most modern suits of armor, it gives the wearer almost perfect mobility, which suits the needs of the local colonists. It is also quick to don, easy to hide, and cheap to produce in large workshops. This extremely light variant has some of the chest pieces removed.
+
+ent-RMCCoatMilitiaVest-name = colonial militia vest
+ent-RMCCoatMilitiaVest-desc = The hauberk of a colonist militia member, created from boiled leather and some modern armored plates. While not the most powerful form of armor, and primitive compared to most modern suits of armor, it gives the wearer almost perfect mobility, which suits the needs of the local colonists. It is also quick to don, easy to hide, and cheap to produce in large workshops. This extremely light variant protects only the chest and abdomen.
+
+ent-RMCCoatMilitia-name = colonial militia hauberk
+ent-RMCCoatMilitia-desc = The hauberk of a colonist militia member, created from boiled leather and some modern armored plates. While not the most powerful form of armor, and primitive compared to most modern suits of armor, it gives the wearer almost perfect mobility, which suits the needs of the local colonists. It is also quick to don, easy to hide, and cheap to produce in large workshops.
+
+ent-CMArmorFreelancer-name = freelancer cuirass
+ent-CMArmorFreelancer-desc = An armored protective chestplate scrapped together from various plates. It keeps up remarkably well, as the craftsmanship is solid, and the design mirrors such armors in the SPP and the UNMC. The many skilled craftsmen in the freelancers ranks produce these vests at a rate about one a month.
+
+ent-CMArmorDutchJacket-name = safari jacket
+ent-CMArmorDutchJacket-desc = A tailored hunting jacket, cunningly lined with segmented armor plates. Sometimes the game shoots back.
+
+ent-CMArmorDutchVest-name = D2 armored vest
+ent-CMArmorDutchVest-desc = A protective vest worn by some seriously experienced mercs.
+
+ent-CMArmorIronBear-name = H1 iron bears vest
+ent-CMArmorIronBear-desc = A protective vest worn by Iron Bears mercenaries.
+
+ent-RMCArmorMARSOC-name = marine raider armor
+ent-RMCArmorMARSOC-desc = A heavily customized suit of M3 armor. Used by Marine Raiders.
+
+ent-RMCArmorMARSOCXM40-name = marine raider armor
+ent-RMCArmorMARSOCXM40-desc = A heavily customized suit of M3 armor. Used by Marine Raiders.
+
+ent-RMCArmorMercenaryHEFAFilled-name = HEFA knight armor
+ent-RMCArmorMercenaryHEFAFilled-desc = A thick piece of armor adorning a HEFA. Usually seen on a HEFA knight.
+

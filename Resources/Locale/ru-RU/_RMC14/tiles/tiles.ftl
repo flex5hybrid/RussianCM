@@ -23,7 +23,6 @@ tiles-cm-test = Тестовая плитка
 tiles-cm-wy = Плитка WE-YU
 tiles-cm-cult = Культовая плитка
 tiles-cm-engine = Инженерная плитка
-
 tiles-cm-dirt = Грунтовая плитка
 tiles-cm-desert = Пустынная плитка
 tiles-cm-sand = Песчаная плитка
@@ -33,15 +32,12 @@ tiles-cm-rock = Каменная плитка
 tiles-rmc-red-desert = Красная пустынная плитка
 tiles-rmc-desert-water-shore = Береговая линия
 tiles-rmc-coagulation = Коагуляционная поверхность
-
 tiles-rmc-asphalt = Асфальтовая плитка
 tiles-rmc-cement = Цементная плитка
-
 tiles-cm-default-alpha = Альфа металлическая плитка
 tiles-cm-default-bravo = Браво металлическая плитка
 tiles-cm-default-charlie = Чарли металлическая плитка
 tiles-cm-default-delta = Дельта металлическая плитка
-
 tiles-cm-default-blue = Синяя металлическая плитка
 tiles-cm-default-brown = Коричневая металлическая плитка
 tiles-cm-default-green = Зеленая металлическая плитка
@@ -52,16 +48,11 @@ tiles-cm-default-orange = Оранжевая металлическая плит
 tiles-cm-default-cyan = Бирюзовая металлическая плитка
 tiles-cm-default-tan = Бежевая металлическая плитка
 tiles-cm-default-grey = Серая металлическая плитка
-
 tiles-cm-floor = Пол
-
 tiles-rmc-striped = Полосатая плитка
 tiles-rmc-research = Исследовательская плитка
 tiles-rmc-tcomms = Плитка коммуникаций
 tiles-rmc-outer-hull = Плитка внешнего корпуса
-
 tiles-rmc-escape-pod = Плитка спасательной капсулы
-
 tiles-rmc-grate = Решетчатая плитка
-
 tiles-rmc-supply-pad = Плитка грузовой площадки

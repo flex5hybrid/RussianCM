@@ -1,5 +1,8 @@
-ent-CMVinesHeavy = лоза
-  .desc = Густой, спутанный клубок переплетенных лоз.
-ent-CMVinesLight = лоза
-  .desc = Клубок переплетенных лоз.
-ent-CMVinesBase = лоза
+ent-CMVinesHeavy-name = vines
+ent-CMVinesHeavy-desc = A thick, coiled mass of twisted vines.
+
+ent-CMVinesLight-name = vines
+ent-CMVinesLight-desc = A mass of twisted vines.
+
+ent-CMVinesBase-name = vines
+

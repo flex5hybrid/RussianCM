@@ -1,7 +1,5 @@
 ### Localization for engine console commands
-
 ## generic command errors
-
 cmd-invalid-arg-number-error = Недопустимое число аргументов.
 cmd-parse-failure-integer = { $arg } не является допустимым integer.
 cmd-parse-failure-float = { $arg } не является допустимым float.
@@ -12,9 +10,7 @@ cmd-parse-failure-entity-exist = UID { $arg } не соответствует с
 cmd-error-file-not-found = Не удалось найти файл: { $file }.
 cmd-error-dir-not-found = Не удалось найти директорию: { $dir }.
 cmd-failure-no-attached-entity = К этой оболочке не привязана никакая сущность.
-
 ## 'help' command
-
 cmd-help-desc = Выводит общую справку или справку по определённой команде
 cmd-help-help =
     Использование: help [имя команды]
@@ -24,9 +20,7 @@ cmd-help-unknown = Неизвестная команда: { $command }
 cmd-help-top = { $command } - { $description }
 cmd-help-invalid-args = Недопустимое количество аргументов.
 cmd-help-arg-cmdname = [имя команды]
-
 ## 'cvar' command
-
 cmd-cvar-desc = Получает или устанавливает CVar.
 cmd-cvar-help =
     Использование: cvar <name | ?> [значение]
@@ -39,25 +33,19 @@ cmd-cvar-parse-error = Входное значение имеет неправи
 cmd-cvar-compl-list = Список доступных CVar-ов
 cmd-cvar-arg-name = <name | ?>
 cmd-cvar-value-hidden = <value hidden>
-
 ## 'list' command
-
 cmd-list-desc = Выводит список доступных команд с опциональным поисковым фильтром
 cmd-list-help =
     Использование: list [фильтр]
     Выводит список всех доступных команд. Если был предоставлен аргумент, он будет использоваться для фильтрации команд по имени.
 cmd-list-heading = SIDE NAME            DESC{ "\u000A" }-------------------------{ "\u000A" }
 cmd-list-arg-filter = [фильтр]
-
 ## '>' command, aka remote exec
-
 cmd-remoteexec-desc = Выполняет команду на стороне сервера
 cmd-remoteexec-help =
     Использование: > <command> [arg] [arg] [arg...]
     Выполняет команду на стороне сервера. Это необходимо, если на клиенте имеется команда с таким же именем, так как при простом выполнении команды сначала будет запущена команда на клиенте.
-
 ## 'gc' command
-
 cmd-gc-desc = Запускает GC (Garbage Collector, Сборка мусора)
 cmd-gc-help =
     Использование: gc [поколение]
@@ -66,17 +54,13 @@ cmd-gc-help =
     Используйте команду 'gfc' для проведения сборки мусора, со сжатием 'кучи больших объектов' (LOH-compacting).
 cmd-gc-failed-parse = Не удалось спарсить аргумент.
 cmd-gc-arg-generation = [поколение]
-
 ## 'gcf' command
-
 cmd-gcf-desc = Запускает GC, полную, со сжатием 'кучи больших объектов' (LOH-compacting) и всего.
 cmd-gcf-help =
     Использование: gcf
     Выполняет полный GC.Collect(2, GCCollectionMode.Forced, true, true) одновременно сжимая 'кучу больших объектов' LOH.
     Скорее всего, это приведёт к зависанию на сотни миллисекунд, имейте в виду.
-
 ## 'gc_mode' command
-
 cmd-gc_mode-desc = Изменяет/отображает режим задержки GC
 cmd-gc_mode-help =
     Использование: gc_mode [тип]
@@ -89,49 +73,35 @@ cmd-gc_mode-unknown = неизвестный режим задержки gc: { $
 cmd-gc_mode-attempt = попытка изменения режима задержки gc: { $prevMode } -> { $mode }
 cmd-gc_mode-result = полученный режим задержки gc: { $mode }
 cmd-gc_mode-arg-type = [тип]
-
 ## 'mem' command
-
 cmd-mem-desc = Выводит информацию об управляемой памяти
 cmd-mem-help = Использование: mem
 cmd-mem-report =
     Размер кучи: { TOSTRING($heapSize, "N0") }
     Всего распределено: { TOSTRING($totalAllocated, "N0") }
-
 ## 'physics' command
-
 cmd-physics-overlay = { $overlay } не является распознанным оверлеем
-
 ## 'lsasm' command
-
 cmd-lsasm-desc = Выводит список загруженных сборок по контексту загрузки
 cmd-lsasm-help = Использование: lsasm
-
 ## 'exec' command
-
 cmd-exec-desc = Исполняет скриптовый файл из записываемых пользовательских данных игры
 cmd-exec-help =
     Использование: exec <fileName>
     Каждая строка в файле выполняется как одна команда, если только она не начинается со знака #
 cmd-exec-arg-filename = <fileName>
-
 ## 'dump_net_comps' command
-
 cmd-dump_net_comps-desc = Выводит таблицу сетевых компонентов.
 cmd-dump_net_comps-help = Использование: dump_net-comps
 cmd-dump_net_comps-error-writeable = Регистрация всё ещё доступна для записи, сетевые идентификаторы не были сгенерированы.
 cmd-dump_net_comps-header = Регистрации сетевых компонентов:
-
 ## 'dump_event_tables' command
-
 cmd-dump_event_tables-desc = Выводит таблицы направленных событий для сущности.
 cmd-dump_event_tables-help = Использование: dump_event_tables <entityUid>
 cmd-dump_event_tables-missing-arg-entity = Отсутствует аргумент сущности
 cmd-dump_event_tables-error-entity = Недопустимая сущность
 cmd-dump_event_tables-arg-entity = <entityUid>
-
 ## 'monitor' command
-
 cmd-monitor-desc = Переключение отладочного монитора в меню F3.
 cmd-monitor-help =
     Использование: monitor <name>
@@ -142,9 +112,7 @@ cmd-monitor-invalid-name = Недопустимое имя монитора
 cmd-monitor-arg-count = Отсутствует аргумент монитора
 cmd-monitor-minus-all-hint = Скрывает все мониторы
 cmd-monitor-plus-all-hint = Показывает все мониторы
-
 ## Mapping commands
-
 cmd-set-ambient-light-desc = Позволяет установить эмбиентое освещение для указанной карты, в формате SRGB.
 cmd-set-ambient-light-help = setambientlight [mapid] [r g b a]
 cmd-set-ambient-light-parse = Не удалось спарсить аргументы как байтовые значения цветов.
@@ -168,11 +136,8 @@ cmd-hint-loadmap-y-position = [y-position]
 cmd-hint-loadmap-rotation = [rotation]
 cmd-hint-loadmap-uids = [float]
 cmd-hint-savebp-id = <Grid EntityID>
-
 ## 'flushcookies' command
-
 # Примечание: команда flushcookies взята из Robust.Client.WebView, её нет в коде основного движка.
-
 cmd-flushcookies-desc = Сброс хранилища CEF-cookie на диск
 cmd-flushcookies-help =
     Это гарантирует правильное сохранение файлов cookie на диске в случае неаккуратного выключения.

@@ -1,1 +1,2 @@
-ent-RMCRandomHumanoidProvostEnforcer = исполнитель роли призрака провоста
+ent-RMCRandomHumanoidProvostEnforcer-name = provost ghost role enforcer
+

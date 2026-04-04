@@ -1,5 +1,4 @@
 chat-radio-marine-highcommand = Командование
-
 chat-radio-marine-common = Алмейер
 chat-radio-marine-command = Командный
 chat-radio-marine-medical = МедНаука
@@ -8,28 +7,22 @@ chat-radio-marine-military-police = ВП
 chat-radio-marine-requisition = Снабжение
 chat-radio-marine-intel = Разведка
 chat-radio-marine-jtac = JTAC
-
 chat-radio-marine-alpha = Альфа
 chat-radio-marine-bravo = Браво
 chat-radio-marine-charlie = Чарли
 chat-radio-marine-delta = Дельта
 chat-radio-marine-echo = Эхо
 chat-radio-marine-foxtrot = Фокстрот
-
 chat-radio-forecon = РАЗВЕДКА
-
 chat-radio-colony = Колония
 chat-radio-WY = Вейланд-Ютани
 chat-radio-CMB = ККК
 chat-radio-provost = Полевая жандармерия
-
 chat-radio-spp-command = КП ППБ
 chat-radio-spp = ППБ
 chat-radio-spp-engi = Инж. ППБ
 chat-radio-spp-med = Мед. ППБ
 chat-radio-spp-cct = ЦУП ППБ
-
 chat-radio-royal-marine = Королевская морпеха
 chat-radio-tse = Империя Трёх Солнц
-
 chat-radio-hivemind = Улей

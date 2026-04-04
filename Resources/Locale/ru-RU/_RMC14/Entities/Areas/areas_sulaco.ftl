@@ -1,33 +1,74 @@
-ent-RMCAreaShuttleDistressArriveSEngi = VIP-шаттл
-ent-RMCAreaShuttleDistressArriveNEngi = VIP-шаттл
-ent-RMCAreaShuttleDistressTransitSmall = VIP-трансфер
-ent-RMCAreaShuttleDistressStartSmall = VIP-шаттл
-ent-RMCAreaShuttleDistressArriveSHangar = Аварийный шаттл
-ent-RMCAreaShuttleDistressArriveNHangar = Аварийный шаттл
-ent-RMCAreaShuttleDistressArrive3 = Аварийный шаттл
-ent-RMCAreaShuttleDistressArrive2 = Аварийный шаттл
-ent-RMCAreaShuttleDistressArrive1 = Аварийный шаттл
-ent-RMCAreaShuttleDistressTransitBig = Аварийный шаттл «Большой транзит»
-ent-RMCAreaShuttleDistressStartBig = Аварийный шаттл Большой
-ent-RMCAreaShuttleDistressTransitUpp = Аварийный шаттл СПП Транзит
-ent-RMCAreaShuttleDistressStartUpp = Аварийный шаттл СПП
-ent-RMCAreaShuttleDistressTransitPmc = Аварийный шаттл ЧВК Транзит
-ent-RMCAreaShuttleDistressStartPmc = Аварийный шаттл ЧВК
-ent-RMCAreaShuttleDistressTransit = Транзит аварийного шаттла
-ent-RMCAreaShuttleDistressStart = Аварийный шаттл
-ent-RMCAreaShuttleDrop2Lz2 = Зона высадки в Нормандии
-ent-RMCAreaShuttleDrop2Transit = Транзит Нормандия
-ent-RMCAreaShuttleDrop2DesertDam = Дропшиппинг Нормандия
-ent-RMCAreaShuttleDrop2IceColony = Дропшиппинг Нормандия
-ent-RMCAreaShuttleDrop2BigRed = Дропшиппинг Нормандия
-ent-RMCAreaShuttleDrop2Prison = Дропшиппинг Нормандия
-ent-RMCAreaShuttleDrop2LV624 = Дропшиппинг Нормандия
-ent-RMCAreaShuttleDrop2Sulaco = Дропшиппинг Нормандия
-ent-RMCAreaShuttleDrop1Lz1 = Зона приземления Аламо
-ent-RMCAreaShuttleDrop1Transit = Dropship Аламо Транзит
-ent-RMCAreaShuttleDrop1DesertDam = Дропшиппинг Аламо
-ent-RMCAreaShuttleDrop1IceColony = Дропшиппинг Аламо
-ent-RMCAreaShuttleDrop1BigRed = Дропшиппинг Аламо
-ent-RMCAreaShuttleDrop1Prison = Дропшиппинг Аламо
-ent-RMCAreaShuttleDrop1LV624 = Дропшиппинг Аламо
-ent-RMCAreaShuttleDrop1Sulaco = Дропшиппинг Аламо
+ent-RMCAreaShuttleDistressArriveSEngi-name = VIP Shuttle
+
+ent-RMCAreaShuttleDistressArriveNEngi-name = VIP Shuttle
+
+ent-RMCAreaShuttleDistressTransitSmall-name = VIP Shuttle Transit
+
+ent-RMCAreaShuttleDistressStartSmall-name = VIP Shuttle
+
+ent-RMCAreaShuttleDistressArriveSHangar-name = Distress Shuttle
+
+ent-RMCAreaShuttleDistressArriveNHangar-name = Distress Shuttle
+
+ent-RMCAreaShuttleDistressArrive3-name = Distress Shuttle
+
+ent-RMCAreaShuttleDistressArrive2-name = Distress Shuttle
+
+ent-RMCAreaShuttleDistressArrive1-name = Distress Shuttle
+
+ent-RMCAreaShuttleDistressTransitBig-name = Distress Shuttle Big Transit
+
+ent-RMCAreaShuttleDistressStartBig-name = Distress Shuttle Big
+
+ent-RMCAreaShuttleDistressTransitUpp-name = Distress Shuttle SPP Transit
+
+ent-RMCAreaShuttleDistressStartUpp-name = Distress Shuttle SPP
+
+ent-RMCAreaShuttleDistressTransitPmc-name = Distress Shuttle PMC Transit
+
+ent-RMCAreaShuttleDistressStartPmc-name = Distress Shuttle PMC
+
+ent-RMCAreaShuttleDistressTransit-name = Distress Shuttle Transit
+
+ent-RMCAreaShuttleDistressStart-name = Distress Shuttle
+
+ent-RMCAreaShuttleDrop2Lz2-name = Normandy Landing Zone
+
+ent-RMCAreaShuttleDrop2Transit-name = Dropship Normandy Transit
+
+ent-RMCAreaShuttleDrop2DesertDam-name = Dropship Normandy
+
+ent-RMCAreaShuttleDrop2IceColony-name = Dropship Normandy
+
+ent-RMCAreaShuttleDrop2BigRed-name = Dropship Normandy
+
+ent-RMCAreaShuttleDrop2Prison-name = Dropship Normandy
+
+ent-RMCAreaShuttleDrop2LV624-name = Dropship Normandy
+
+ent-RMCAreaShuttleDrop2Sulaco-name = Dropship Normandy
+
+ent-RMCAreaShuttleDrop1Lz1-name = Alamo Landing Zone
+
+ent-RMCAreaShuttleDrop1Transit-name = Dropship Alamo Transit
+
+ent-RMCAreaShuttleDrop1DesertDam-name = Dropship Alamo
+
+ent-RMCAreaShuttleDrop1IceColony-name = Dropship Alamo
+
+ent-RMCAreaShuttleDrop1BigRed-name = Dropship Alamo
+
+ent-RMCAreaShuttleDrop1Prison-name = Dropship Alamo
+
+ent-RMCAreaShuttleDrop1LV624-name = Dropship Alamo
+
+ent-RMCAreaShuttleDrop1Sulaco-name = Dropship Alamo
+
+ent-RMCAreaShuttle-name = area
+
+ent-RMCAreaShuttleDrop1-name = area
+
+ent-RMCAreaShuttleDrop2-name = area
+
+ent-RMCAreaShuttleDistress-name = area
+

@@ -1,7 +1,13 @@
-ent-RMCQueenEye = королевский глаз
-  .desc = Кажется, это чья-то визуальная проекция.
-ent-RMCXenoQueenBase = Королева
-  .desc = Огромное, угрожающее инопланетное существо. Самое большое и самое зловещее.
+ent-RMCQueenEye-name = queen eye
+ent-RMCQueenEye-desc = It seems to be a visual projection of someone.
 
-ent-RMCXenoQueen = Королева
-  .desc = Огромное, угрожающее инопланетное существо. Самое большое и самое зловещее.
+ent-RMCXenoQueenBase-name = Королева
+ent-RMCXenoQueenBase-desc = Огромное, угрожающее инопланетное существо. Самое большое и самое зловещее.
+
+ent-RMCXenoQueen-name = Королева
+
+ent-CMXenoQueen-name = cm-job-name-xeno-queen
+
+ent-RMCXenoQueenMaid-name = Королева
+ent-RMCXenoQueenMaid-desc = Огромное, угрожающее инопланетное существо. Самое большое и самое зловещее.
+

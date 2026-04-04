@@ -1,2 +1,5 @@
-ent-RMCGearSurvivorPresetLV624MedicalTechnician = lv624 пресет медицинского техника-колониста
-ent-RMCSpawnPointSurvivorLV624MedicalTechnician = выживший lv624 точка появления медицинского техника
+ent-RMCGearSurvivorPresetLV624MedicalTechnician-name = lv624 medical technician colonist preset
+
+ent-RMCSpawnPointSurvivorLV624MedicalTechnician-name = survivor lv624 medical technician spawn point
+ent-RMCSpawnPointSurvivorLV624MedicalTechnician-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

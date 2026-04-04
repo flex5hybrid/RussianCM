@@ -3,24 +3,20 @@ cm-xeno-construction-failed-need-weeds = Можно строить только 
 cm-xeno-construction-failed-cant-build = Здесь нельзя строить!
 cm-xeno-construction-failed-select-structure = Сначала выберите что строить! Используйте "Выбрать смоляную конструкцию".
 cm-xeno-construction-failed-requires-support = {CAPITALIZE(MAKEPLURAL($choice))} нужно строить рядом со стеной или смоляной дверью.
-
 rmc-xeno-construction-remote-failed-need-line-of-sight = Нужно видеть место строительства!
 rmc-xeno-construction-remote-failed-need-on-weeds = Нужно стоять на сорняках для связи со смолой.
 rmc-xeno-construction-remote-construct = Направляем плазму в сорняки, формируя конструкцию!
 rmc-xeno-construction-remote-open-door = Дистанционно открываем смоляную дверь.
 rmc-xeno-construction-remote-close-door = Дистанционно закрываем смоляную дверь.
-
 rmc-xeno-construction-no-map-resin-hole = Нельзя строить здесь.
 rmc-xeno-construction-must-have-weeds-resin-hole = Ловушки строятся только на сорняках.
 rmc-xeno-construction-blocked-resin-hole = Место уже занято.
 rmc-xeno-construction-similar-too-close-resin-hole = Слишком близко к другой ловушке!
 rmc-xeno-construction-dead-body = Тело мешает строительству.
-
 rmc-xeno-construction-structure-destroyed = {$structureName} уничтожен в {$location}!
 rmc-xeno-construction-resin-hole-destroyed = Ловушка {$structureName} в {$location} уничтожена!
 cm-xeno-construction-resin-hole-burned-down = Ловушка {$type} в {$location} сгорела!
 rmc-xeno-construction-resin-hole-activate = Ловушка {$type} в {$location} активирована!
-
 rmc-xeno-construction-resin-hole-no-acid = Нет кислоты для ловушки!
 rmc-xeno-construction-resin-hole-good-acid = Ловушка уже заполнена.
 cm-xeno-construction-resin-hole-full = Ловушка уже занята.
@@ -33,18 +29,15 @@ rmc-xeno-construction-resin-hole-finished-gas-self = Заполнили лову
 rmc-xeno-construction-resin-hole-filling-parasite = Помещаем паразита...
 rmc-xeno-construction-resin-hole-finished-parasite = Паразит помещён.
 rmc-xeno-construction-resin-hole-enter-parasite = {CAPITALIZE($parasite)} залезает в ловушку.
-
 rmc-xeno-construction-resin-hole-uproot = Расчищаем место для ловушки...
 rmc-xeno-construction-resin-hole-empty = Пусто.
 rmc-xeno-construction-resin-hole-parasite = Паразит внутри.
 rmc-xeno-construction-resin-hole-gas = Заполнена газом.
 rmc-xeno-construction-resin-hole-acid = Заполнена кислотой.
-
 rmc-xeno-construction-resin-hole-empty-name = пусто
 rmc-xeno-construction-resin-hole-parasite-name = паразит
 rmc-xeno-construction-resin-hole-gas-name = газ
 rmc-xeno-construction-resin-hole-acid-name = кислота
-
 rmc-xeno-construction-tunnel-empty-non-xeno-enter-failure = Тёмная глубокая дыра...
 rmc-xeno-construction-tunnel-occupied-non-xeno-enter-failure = В глубине видны огоньки... что-то там есть
 rmc-xeno-construction-tunnel-full-xeno-failure = Туннель переполнен!
@@ -57,30 +50,24 @@ rmc-xeno-construction-bad-area-tunnel = Нельзя рыть здесь.
 rmc-xeno-construction-bad-tile-tunnel = Непробиваемый пол.
 rmc-xeno-construction-resin-tunnel-uproot = Расчищаем место для туннеля...
 rmc-xeno-construction-resin-tunnel-create-tunnel = Роем туннель...
-
 rmc-xeno-construction-default-tunnel-name = {$areaName} ({$coordX}, {$coordY}) {$greekLetter}
 rmc-xeno-construction-default-area-name = Неизвестно
 rmc-xeno-construction-failed-tunnel-rename = Нужно уникальное имя!
 rmc-xeno-construction-tunnel-examine = Метка: {$tunnelName}
 rmc-xeno-construction-tunnel-examine-not-xeno-empty = [color=purple][italic]Тёмная дыра...[/italic][/color]
 rmc-xeno-construction-tunnel-examine-not-xeno = [color=purple][italic]Тёмная дыра с огоньками внутри...[/italic][/color]
-
 rmc-xeno-construction-tunnel-fill = Обрушиваем туннель!
 rmc-xeno-construction-tunnel-fill-xeno-drop = Туннель рушится под вами!
-
 rmc-xeno-order-construction-structure-designated = Строится {$construct} в {$area}!
 rmc-xeno-order-construction-limited-structure-designated = Строится {$construct}. Осталось: {$remainCount}/{$maxCount}
-
 rmc-xeno-construction-repair-structure-start-attempt = Чиним {$struct}...
 rmc-xeno-construction-repair-structure-success = {$struct} отремонтирован.
 rmc-xeno-construction-repair-structure-no-damage-failure = {$struct} не повреждён.
 rmc-xeno-construction-repair-structure-insufficient-plasma-warn = Нужно ещё {$remainingPlasma} плазмы.
-
 rmc-xeno-construction-egg-morpher-no-parasites = Морфер пуст!
 rmc-xeno-construction-egg-morpher-attempt-insert-non-parasite = Не подходит для морфера!
 rmc-xeno-construction-egg-morpher-already-full = Морфер заполнен!
 rmc-xeno-egg-morpher-return-self = {CAPITALIZE($parasite)} возвращается в морфер.
 rmc-xeno-construction-egg-morpher-examine = Паразитов: {$cur_paras}/{$max_paras}
-
 rmc-xeno-construction-recovery-node-heal-target = Чувствуем исцеление.
 rmc-xeno-construction-recovery-node-heal-other = {CAPITALIZE(THE($target))} исцеляется.

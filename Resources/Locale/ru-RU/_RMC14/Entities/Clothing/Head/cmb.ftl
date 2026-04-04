@@ -1,2 +1,6 @@
-ent-RMCArmorHelmetM10CMB = штурмовой шлем CMB схемы M11R
-  .desc = Вариант CMB стандартной схемы M10. Передняя пластина усилена. Эта модель сидит гораздо плотнее.
+ent-RMCArmorHelmetM10CMB-name = M11R pattern CMB Riot helmet
+ent-RMCArmorHelmetM10CMB-desc = A CMB variant of the standard M10 pattern. The front plate is reinforced. This one is a lot more tight fitting.
+
+ent-RMCArmorHelmetM10CMBVisorSWAT-name = M11R pattern CMB Riot helmet
+ent-RMCArmorHelmetM10CMBVisorSWAT-desc = A CMB variant of the standard M10 pattern. The front plate is reinforced. This one is a lot more tight fitting.
+

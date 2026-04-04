@@ -1,1 +1,2 @@
-ent-RMCOppressorTail = хвост угнетателя
+ent-RMCOppressorTail-name = oppressor tail
+

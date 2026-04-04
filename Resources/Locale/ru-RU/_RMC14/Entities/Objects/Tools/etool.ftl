@@ -1,2 +1,3 @@
-ent-CMEntrenchingTool = сапёрная лопатка
-  .desc = Используется для рытья ям и разбивания голов. Складывается для удобства хранения в малом пространстве.
+ent-CMEntrenchingTool-name = entrenching tool
+ent-CMEntrenchingTool-desc = Used to dig holes and bash heads in. Folds in to fit in small spaces.
+

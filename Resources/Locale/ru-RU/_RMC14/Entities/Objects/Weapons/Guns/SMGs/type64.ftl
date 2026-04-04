@@ -1,4 +1,9 @@
-ent-RMCCartridgeType64 = патрон (10x20мм)
-ent-RMCMagazineSMGType64 = Магазин Тип 64 (10x20мм)
-ent-RMCWeaponSMGType64 = Пистолет-пулемет Тип 64
-  .desc = Стандартный пистолет-пулемет ВПС, оснащенный необычным 64-зарядным барабанным магазином. Имеет высокую скорострельность, но необычно точный. Данная модель громоздкая и неэргономичная, что указывает на гражданское использование или экспортный вариант.
+ent-RMCCartridgeType64-name = cartridge (.25 caseless)
+
+ent-RMCMagazineSMGType64-name = item
+
+ent-RMCWeaponSMGType64-name = Пистолет-пулемет Тип 64
+
+ent-RMCBulletType64-name = BaseBullet
+ent-RMCBulletType64-desc = If you can see this you're probably dead!
+

@@ -1,6 +1,10 @@
-ent-RMCBulletSniper10x99mmAntiMateriel = пуля (10x99мм)
-ent-RMCCartridgeSniper10x99mmAntiMateriel = патрон (10x99мм) (Противо materiel)
-ent-RMCMagazineSniperXM43E1AntiMateriel = снайперский магазин XM43E1 (10x99мм)
-  .desc = Магазин беспатронных 10x99мм противо materiel патронов, способных пробивать большинство материалов пехотного уровня. В зависимости от того, во что вы попали, у него может даже хватить энергии, чтобы ранить anything за целью.
-ent-RMCXM43E1AntiMaterielRifle = противо materiel винтовка XM43E1
-  .desc = Экспериментальная противо materiel винтовка производства Aegis Armaments, недавно извлечённая из глубокого хранения заброшенного опытного производства. Данный экземпляр в настоящее время проходит полевые испытания. Использует беспатронные патроны 10x99мм. Это оружие может пробивать тонкую металлическую обшивку и стены, хотя при этом потеряет большую часть своей летальности. Оно может даже использоваться для подрывных работ, опытные стрелки известны тем, что разбирают участки сплошных, усиленных стен в полевых условиях всего одним стандартным магазином 10x99мм. Вместо взрывчатки или инженера они используют каждый из 8 выстрелов, чтобы разрушить жизненно важные структурные опоры, разбирая стену в процессе.
+ent-RMCBulletSniper10x99mmAntiMateriel-name = bullet (10x99mm)
+ent-RMCBulletSniper10x99mmAntiMateriel-desc = If you can see this you're probably dead!
+
+ent-RMCCartridgeSniper10x99mmAntiMateriel-name = cartridge
+
+ent-RMCMagazineSniperXM43E1AntiMateriel-name = XM43E1 marksman magazine (10x99mm)
+ent-RMCMagazineSniperXM43E1AntiMateriel-desc = A magazine of caseless 10x99mm anti-materiel rounds, capable of penetrating through most infantry-level materiel. Depending on what you hit, it might even have enough energy to wound anything behind the target.
+
+ent-RMCXM43E1AntiMaterielRifle-name = противо materiel винтовка XM43E1
+

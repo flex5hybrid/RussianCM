@@ -1,1 +1,2 @@
-ent-CMXenoHive = По умолчанию
+ent-CMXenoHive-name = Default
+

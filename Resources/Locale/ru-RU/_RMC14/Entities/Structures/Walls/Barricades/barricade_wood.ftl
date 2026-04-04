@@ -1,2 +1,3 @@
-ent-RMCBarricadeWood = деревянная баррикада
-  .desc = Стена из деревянных досок, скрепленных гвоздями. 
+ent-RMCBarricadeWood-name = Wooden Barricade
+ent-RMCBarricadeWood-desc = A makeshift wooden barricade.
+

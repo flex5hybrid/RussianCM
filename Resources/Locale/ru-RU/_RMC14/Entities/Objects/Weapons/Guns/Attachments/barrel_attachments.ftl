@@ -1,22 +1,42 @@
-ent-RMCAttachmentMatebaSnubNose = короткий ствол Матебы
-  .desc = Короткий ствол Матебы. Предлагает высокую скорострельность ценой точности.
-ent-RMCAttachmentMatebaMarksman = снайперский ствол Матебы
-  .desc = Снайперский ствол Матебы. Предлагает повышенную точность ценой скорости стрельбы.
-ent-RMCAttachmentMatebaStandard = стандартный ствол Матебы
-  .desc = Стандартный ствол Матебы. Предлагает баланс между точностью и скорострельностью.
-ent-RMCAttachmentSuppressorNPZ92 = интегрированный глушитель NPZ92
-  .desc = У вас этого быть не должно.
-ent-RMCAttachmentSuppressorXM40 = глушитель XM40
-  .desc = Небольшая трубка с выпускными отверстиями для отвода шума и газов. Не полностью заглушает оружие, но делает его гораздо тише ценой небольшого снижения урона.
-ent-RMCAttachmentSuppressor = глушитель
-  .desc = Небольшая трубка с выпускными отверстиями для отвода шума и газов. Не полностью заглушает оружие, но делает его гораздо тише ценой небольшого снижения урона.
-ent-RMCAttachmentShotgunChoke = чокер для дробовика
-  .desc = Резьбовой чокер, который можно вставить в дробовик M42A2. Улучшает точность, скорость, сужает разброс и увеличивает темп стрельбы. В обмен снижается урон и сила снаряда. Также увеличивает отдачу. Не рекомендуется для пулевых патронов.
-ent-RMCAttachmentRecoilCompensator = компенсатор отдачи
-  .desc = Дульное устройство, уменьшающее отдачу за счёт отвода выхлопных газов вверх. Уменьшает отдачу ценой небольшого снижения урона оружия.
-ent-RMCAttachmentBarrelCharger = ствольный ускоритель
-  .desc = Гиперпоточный удлинитель ствола, подходящий к дульному срезу большинства огнестрельных видов оружия. Значительно увеличивает урон снаряда ценой скорости стрельбы.
-ent-RMCAttachmentBarrelMar50 = ствол MAR-50
-  .desc = Тяжёлый ствол.
-ent-RMCAttachmentExtendedBarrel = удлинённый ствол
-  .desc = Удлинённый ствол ускоряет и стабилизирует пулю, увеличивая скорость.
+ent-RMCAttachmentMatebaSnubNose-name = item
+
+ent-RMCAttachmentMatebaMarksman-name = item
+
+ent-RMCAttachmentMatebaStandard-name = item
+
+ent-RMCAttachmentSuppressorNPZ92-name = item
+
+ent-RMCAttachmentSuppressorXM40-name = item
+
+ent-RMCAttachmentSuppressor-name = item
+
+ent-RMCAttachmentShotgunChoke-name = item
+
+ent-RMCAttachmentRecoilCompensator-name = item
+
+ent-RMCAttachmentBarrelCharger-name = item
+
+ent-RMCAttachmentBarrelMar50-name = item
+
+ent-RMCAttachmentExtendedBarrel-name = item
+
+ent-RMCBarrelAttachmentBase-name = item
+
+ent-RMCAttachmentExtendedCompensator-name = item
+
+ent-RMCAttachmentRecoilCompensatorM13-name = item
+
+ent-RMCAttachmentRecoilCompensatorM13Spiked-name = item
+
+ent-RMCAttachmentSuppressorCompact-name = item
+
+ent-RMCAttachmentSuppressorM96SB-name = item
+
+ent-RMCAttachmentSuppressorL112-name = item
+
+ent-RMCAttachmentMatebaStandardGolden-name = item
+
+ent-RMCAttachmentMatebaMarksmanGolden-name = item
+
+ent-RMCAttachmentMatebaSnubNoseGolden-name = item
+

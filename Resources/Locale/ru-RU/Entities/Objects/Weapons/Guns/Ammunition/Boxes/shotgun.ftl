@@ -1,8 +1,20 @@
 ent-BoxBeanbag-name = ammunition box (.50 beanbag)
+
 ent-BoxLethalshot-name = ammunition box (.50 pellet)
+
 ent-BoxShotgunSlug-name = ammunition box (.50 slug)
+
 ent-BoxShotgunFlare-name = ammunition box (.50 flare)
+
 ent-BoxShotgunIncendiary-name = ammunition box (.50 incendiary)
+
 ent-BoxShotgunUranium-name = ammunition box (.50 uranium)
+
 ent-BoxShotgunPractice-name = ammunition box (.50 practice)
+
 ent-BoxShellTranquilizer-name = ammunition box (.50 tranquilizer)
+
+ent-BaseAmmoProvider-name = item
+
+ent-AmmoProviderShotgunShell-name = item
+

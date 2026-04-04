@@ -1,5 +1,4 @@
 ## General stuff
-
 ui-options-title = Игровые настройки
 ui-options-tab-accessibility = Доступность
 ui-options-tab-admin = Админ
@@ -12,9 +11,7 @@ ui-options-apply = Сохранить и применить
 ui-options-reset-all = Сброс изменений
 ui-options-default = Сброс к настройкам по умолчанию
 ui-options-value-percent = { TOSTRING($value, "P0") }
-
 # Misc/General menu
-
 ui-options-discordrich = Включить Discord Rich Presence
 ui-options-general-ui-style = Стиль UI
 ui-options-general-discord = Discord
@@ -22,9 +19,7 @@ ui-options-general-cursor = Курсор
 ui-options-general-speech = Речь
 ui-options-general-storage = Инвентарь
 ui-options-general-accessibility = Доступность
-
 ## Audio menu
-
 ui-options-master-volume = Основная громкость:
 ui-options-midi-volume = Громкость MIDI (Муз. инструменты):
 ui-options-ambient-music-volume = Громкость музыки окружения:
@@ -42,9 +37,7 @@ ui-options-display-label = Дисплей
 ui-options-quality-label = Качество
 ui-options-misc-label = Разное
 ui-options-interface-label = Интерфейс
-
 ## Graphics menu
-
 ui-options-show-held-item = Показать удерживаемый элемент рядом с курсором
 ui-options-show-combat-mode-indicators = Показать индикатор боевого режима рядом с курсором
 ui-options-opaque-storage-window = Непрозрачность окна хранилища
@@ -96,9 +89,7 @@ ui-options-parallax-low-quality = Низкокачественный парал�
 ui-options-fps-counter = Показать счётчик FPS
 ui-options-vp-width = Ширина окна игры:
 ui-options-hud-layout = Тип HUD:
-
 ## Controls menu
-
 ui-options-binds-reset-all = Сбросить ВСЕ привязки
 ui-options-binds-explanation = ЛКМ — изменить кнопку, ПКМ — убрать кнопку
 ui-options-unbound = Пусто

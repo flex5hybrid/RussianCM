@@ -1,92 +1,146 @@
 ent-DrinkAbsintheBottleFull-name = Jailbreaker Verte
 ent-DrinkAbsintheBottleFull-desc = One sip of this and you just know you're gonna have a good time.
+
 ent-DrinkBlueCuracaoBottleFull-name = Miss Blue Curaçao
 ent-DrinkBlueCuracaoBottleFull-desc = A fruity, exceptionally azure drink. Does not allow the imbiber to use the fifth magic.
+
 ent-DrinkBottleOfNothingFull-name = bottle of nothing
 ent-DrinkBottleOfNothingFull-desc = A bottle filled with nothing.
+
 ent-DrinkChampagneBottleFull-name = champagne bottle
 ent-DrinkChampagneBottleFull-desc = Only people devoid of imagination can't find an excuse for champagne.
+
 ent-DrinkCognacBottleFull-name = cognac bottle
 ent-DrinkCognacBottleFull-desc = A sweet and strongly alcoholic drink, made after numerous distillations and years of maturing. You might as well not scream 'SHITCURITY' this time.
+
 ent-DrinkGrenadineBottleFull-name = Briar Rose grenadine syrup bottle
 ent-DrinkGrenadineBottleFull-desc = Sweet and tangy, a bar syrup used to add color or flavor to drinks.
+
 ent-DrinkGinBottleFull-name = Griffeater gin
 ent-DrinkGinBottleFull-desc = A bottle of high quality gin, produced in the New London Space Station.
+
 ent-DrinkGildlagerBottleFull-name = Gildlager bottle
 ent-DrinkGildlagerBottleFull-desc = 100 proof cinnamon schnapps, made for alcoholic teen girls on spring break.
+
 ent-DrinkCoffeeLiqueurBottleFull-name = coffee liqueur bottle
 ent-DrinkCoffeeLiqueurBottleFull-desc = The great taste of coffee with none of the benifits.
+
 ent-DrinkMelonLiquorBottleFull-name = Emeraldine melon liquor
 ent-DrinkMelonLiquorBottleFull-desc = A bottle of 46 proof Emeraldine melon liquor. Sweet and light.
+
 ent-DrinkPatronBottleFull-name = Wrapp Artiste Patrón bottle
 ent-DrinkPatronBottleFull-desc = Silver laced tequila, served in space night clubs across the galaxy.
+
 ent-DrinkPoisonWinebottleFull-name = Warlock's Velvet bottle
 ent-DrinkPoisonWinebottleFull-desc = What a delightful packaging for a surely high quality wine! The vintage must be amazing!
+
 ent-DrinkRumBottleFull-name = Captain Pete's Cuban spiced rum
 ent-DrinkRumBottleFull-desc = This isn't just rum, oh no. It's practically GRIFF in a bottle.
+
 ent-DrinkTequilaBottleFull-name = Caccavo Guaranteed Quality tequila bottle
 ent-DrinkTequilaBottleFull-desc = Made from premium petroleum distillates, pure thalidomide and other fine quality ingredients!
+
 ent-DrinkVermouthBottleFull-name = Goldeneye vermouth bottle
 ent-DrinkVermouthBottleFull-desc = Sweet, sweet dryness!
+
 ent-DrinkVodkaBottleFull-name = vodka bottle
 ent-DrinkVodkaBottleFull-desc = Aah, vodka. Prime choice of drink AND fuel by Russians worldwide.
+
 ent-DrinkWhiskeyBottleFull-name = Uncle Git's Special Reserve
 ent-DrinkWhiskeyBottleFull-desc = A premium single-malt whiskey, gently matured inside the tunnels of a nuclear shelter. TUNNEL WHISKEY RULES.
+
 ent-DrinkWineBottleFull-name = Doublebearded Bearded Special wine bottle
 ent-DrinkWineBottleFull-desc = A faint aura of unease and asspainery surrounds the bottle.
+
 ent-DrinkBeerGrowler-name = beer growler
 ent-DrinkBeerGrowler-desc = An alcoholic beverage made from malted grains, hops, yeast, and water. XL growler bottle.
+
 ent-DrinkAleBottleFullGrowler-name = Magm-Ale growler
 ent-DrinkAleBottleFullGrowler-desc = A true dorf's drink of choice. XL growler bottle.
+
 ent-DrinkColaBottleFull-name = Space Cola bottle
 ent-DrinkColaBottleFull-desc = Cola. In spaaace!
+
 ent-DrinkSpaceMountainWindBottleFull-name = Space Solar Wind bottle
 ent-DrinkSpaceMountainWindBottleFull-desc = Blows right through you like a solar wind.
+
 ent-DrinkSpaceUpBottleFull-name = Space-Up bottle
 ent-DrinkSpaceUpBottleFull-desc = Tastes like a hull breach in your mouth.
+
 ent-DrinkSodaWaterBottleFull-name = soda water bottle
 ent-DrinkSodaWaterBottleFull-desc = Like water, but angry!
+
 ent-DrinkTonicWaterBottleFull-name = tonic water bottle
 ent-DrinkTonicWaterBottleFull-desc = Like soda water, but angrier maybe? Often sweeter.
+
 ent-DrinkWaterBottleFull-name = water bottle
 ent-DrinkWaterBottleFull-desc = Simple clean water of unknown origin. You think that maybe you dont want to know it.
+
 ent-DrinkBeerBottleFull-name = beer bottle
 ent-DrinkBeerBottleFull-desc = An alcoholic beverage made from malted grains, hops, yeast, and water.
+
 ent-DrinkAleBottleFull-name = Magm-Ale bottle
 ent-DrinkAleBottleFull-desc = A true dorf's drink of choice.
+
 ent-DrinkSakeBottleFull-name = small sake bottle
 ent-DrinkSakeBottleFull-desc = The regret of the next morning seems to be nipping on the bottle too.
+
 ent-DrinkJuiceLimeCartonXL-name = lime juice XL
 ent-DrinkJuiceLimeCartonXL-desc = Sweet-sour goodness.
+
 ent-DrinkJuiceOrangeCartonXL-name = orange juice XL
 ent-DrinkJuiceOrangeCartonXL-desc = Full of vitamins and deliciousness!
+
 ent-DrinkCreamCartonXL-name = milk cream XL
 ent-DrinkCreamCartonXL-desc = It's cream. Made from milk. What else did you think you'd find in there?
+
 ent-DrinkSugarJug-name = sugar jug
 ent-DrinkSugarJug-desc = Some people put this in their coffee...
+
 ent-DrinkLemonLimeJug-name = Smite jug
 ent-DrinkLemonLimeJug-desc = A dual citrus sensation.
+
 ent-DrinkMeadJug-name = mead jug
 ent-DrinkMeadJug-desc = Storing mead in a plastic jug should be a crime.
+
 ent-DrinkIceJug-name = ice jug
 ent-DrinkIceJug-desc = Stubborn water. Pretty cool.
+
 ent-DrinkCoconutWaterJug-name = coconut water jug
 ent-DrinkCoconutWaterJug-desc = It's on the inside of the coconut that counts.
+
 ent-DrinkCoffeeJug-name = coffee jug
 ent-DrinkCoffeeJug-desc = Wake up juice, of the heated kind.
+
 ent-DrinkTeaJug-name = tea jug
 ent-DrinkTeaJug-desc = The drink of choice for the Bri'ish and hipsters.
+
 ent-DrinkGreenTeaJug-name = green tea jug
 ent-DrinkGreenTeaJug-desc = It's like tea... but green! great for settling the stomach.
+
 ent-DrinkIcedTeaJug-name = iced tea jug
 ent-DrinkIcedTeaJug-desc = For when the regular tea is too hot for you. Boohoo.
+
 ent-DrinkDrGibbJug-name = Dr. Gibb jug
 ent-DrinkDrGibbJug-desc = 42 different flavours... in a jug!
+
 ent-DrinkRootBeerJug-name = root beer jug
 ent-DrinkRootBeerJug-desc = This drink makes Australians giggle.
+
 ent-DrinkWaterMelonJuiceJug-name = watermelon juice jug
 ent-DrinkWaterMelonJuiceJug-desc = May include leftover seeds.
+
 ent-DrinkEnergyDrinkJug-name = Red Bool jug
 ent-DrinkEnergyDrinkJug-desc = A jug of Red Bool, with enough caffeine to kill a whole station.
+
 ent-CustomDrinkJug-name = beverage jug
 ent-CustomDrinkJug-desc = A jug for storing custom made drinks.
+
+ent-DrinkBottlePlasticBaseFull-name = item
+
+ent-DrinkBottlePlasticSmallBaseFull-name = item
+
+ent-DrinkBottleGlassSmallBaseFull-name = item
+
+ent-DrinkBottleGlassBaseFull-name = item
+

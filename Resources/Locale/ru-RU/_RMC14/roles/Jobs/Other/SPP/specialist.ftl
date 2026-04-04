@@ -1,2 +1,4 @@
-ent-RMCRandomHumanoidSPPSpecialistFriendly = специалист по роли призраков spp
-ent-RMCRandomHumanoidSPPSpecialistHostile = специалист по роли призраков spp
+ent-RMCRandomHumanoidSPPSpecialistFriendly-name = spp ghost role specialist
+
+ent-RMCRandomHumanoidSPPSpecialistHostile-name = spp ghost role specialist
+

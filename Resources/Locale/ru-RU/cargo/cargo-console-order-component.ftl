@@ -1,5 +1,4 @@
 ## UI
-
 cargo-console-order-menu-title = Форма заказа
 cargo-console-order-menu-product-label = Товар:
 cargo-console-order-menu-description-label = Описание:

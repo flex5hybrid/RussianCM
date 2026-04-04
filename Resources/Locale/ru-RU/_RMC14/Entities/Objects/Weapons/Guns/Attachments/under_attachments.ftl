@@ -1,30 +1,48 @@
-ent-RMCAttachmentLaserLightModule = лазерно-световой модуль MK80
-  .desc = Лазерно-световой модуль для служебного пистолета MK80, который в настоящее время проходит ограниченные полевые испытания в рамках программы морской пехоты по созданию пистолета следующего поколения. Все пистолеты MK80 поставляются с этим модулем.
-ent-RMCAttachmentFlashlightGrip = рукоятка с подствольным фонарём
-  .desc = Святое небо, RO, они приделали рукоятку к фонарю! Немного уменьшает отдачу и разброс. Работает как источник света.
-ent-RMCAttachmentVerticalGrip = вертикальная рукоятка
-  .desc = Вертикальная передняя рукоятка, обеспечивающая лучшую точность, меньшую отдачу и разброс, особенно при стрельбе очередями. Однако также увеличивает размер оружия.
-ent-RMCAttachmentM203GrenadeLauncher = гранатомёт M203
-  .desc = Антикварный подствольный гранатомёт. Принят на вооружение в 1969 году для M16, он устарел столетия назад; как он оказался здесь — для вас загадка. Вмещает только одну фирменную 40-мм гранату, не имеет современных систем «свой-чужой», не будет пролетать мимо своих.
-ent-RMCAttachmentMK1GrenadeLauncher = подствольный гранатомёт MK1
-  .desc = Старая версия классического подствольного гранатомёта. Может вмещать пять гранат, но стреляет ими медленнее.
-ent-RMCAttachmentU1GrenadeLauncher = гранатомёт U1
-  .desc = Перезаряжаемый гранатомёт, устанавливаемый на оружие.
-ent-RMCAttachmentUnderbarrelExtinguisher = подствольный огнетушитель HME-12
-  .desc = Подствольный огнетушитель Taiho-Technologies HME-12. Крепится под стволом большинства видов оружия. Направьте на пламя перед применением.
-ent-RMCAttachmentU7UnderbarrelShotgun = подствольный дробовик U7
-  .desc = Тактический дробовик AEGIS U7. Крепится под стволом большинства видов оружия. Способен заряжать только до пяти патронов с картечью. Специализирован для пролома в здания.
-ent-CMAttachmentXMVESG1FlamerNozzle = огнемётное сопло XM-VESG-1
-  .desc = Специальное сопло, предназначенное для изменения огнемётов в более наступательной манере. Внутренняя часть сопла покрыта специальным гелем и смолистым веществом, которое принимает проходящее топливо и затвердевает. При выходе из ствола вместо потока горящего нафта выбрасывается сгусток горящего геля.
-ent-RMCAttachmentMiniFlamethrower = подствольный огнемёт
-  .desc = Перезаряжаемое огнемётное устройство, устанавливаемое на оружие. Имеет вторичный режим для более интенсивного пламени с гораздо меньшей дальностью и высоким расходом топлива.
-ent-RMCAttachmentLaserSight = лазерный целеуказатель
-  .desc = Лазерный целеуказатель, крепящийся снизу большинства видов оружия. Повышает точность и уменьшает разброс, особенно при стрельбе с одной руки.
-ent-RMCAttachmentGyroscopicStabilizer = гироскопический стабилизатор
-  .desc = Набор грузов и балансиров для стабилизации оружия при стрельбе с одной руки. Снижает скорость стрельбы.
-ent-RMCAttachmentBurstFireAssembly = механизм стрельбы очередями
-  .desc = Небольшой угловой элемент точной механики, увеличивающий длину очереди на некоторых видах оружия.
-ent-RMCAttachmentBipod = сошки
-  .desc = Простой набор телескопических опор для стабилизации оружия при стрельбе. При правильной установке значительно повышает точность, скорострельность и уменьшает отдачу, но в сложенном состоянии увеличивает размер оружия и замедляет темп стрельбы.
-ent-RMCAttachmentAngledGrip = угловая рукоятка
-  .desc = Угловая передняя рукоятка, улучшающая эргономику оружия, что ускоряет время приведения в готовность. Однако также увеличивает размер оружия.
+ent-RMCAttachmentLaserLightModule-name = item
+
+ent-RMCAttachmentFlashlightGrip-name = item
+
+ent-RMCAttachmentVerticalGrip-name = item
+
+ent-RMCAttachmentM203GrenadeLauncher-name = item
+
+ent-RMCAttachmentMK1GrenadeLauncher-name = item
+
+ent-RMCAttachmentU1GrenadeLauncher-name = item
+
+ent-RMCAttachmentUnderbarrelExtinguisher-name = HME-12 underbarrel extinguisher
+ent-RMCAttachmentUnderbarrelExtinguisher-desc = A Taiho-Technologies HME-12 underbarrel extinguisher. Attaches to the underbarrel of most weapons. Point at flame before applying pressure.
+
+ent-RMCAttachmentU7UnderbarrelShotgun-name = item
+
+ent-CMAttachmentXMVESG1FlamerNozzle-name = XM-VESG-1 flamer nozzle
+ent-CMAttachmentXMVESG1FlamerNozzle-desc = A special nozzle designed to alter flamethrowers to be used in a more offense orientated manner. As the inside of the nozzle is coated in a special gel and resin substance that takes the fuel that passes through and hardens it. Upon exiting the barrel, a cluster of burning gel is projected instead of a stream of burning naphtha.
+
+ent-RMCAttachmentMiniFlamethrower-name = underbarrel flamethrower
+ent-RMCAttachmentMiniFlamethrower-desc = A weapon-mounted refillable flamethrower attachment. It has a secondary setting for a more intense flame with far less propulsion ability and heavy fuel usage.
+
+ent-RMCAttachmentLaserSight-name = item
+
+ent-RMCAttachmentGyroscopicStabilizer-name = item
+
+ent-RMCAttachmentBurstFireAssembly-name = item
+
+ent-RMCAttachmentBipod-name = item
+
+ent-RMCAttachmentAngledGrip-name = item
+
+ent-RMCUnderAttachmentBase-name = item
+
+ent-RMCAttachmentMicroLaserSight-name = item
+
+ent-RMCAttachmentUnderbarrelExtinguisherSpec-name = HME-88B underbarrel extinguisher
+ent-RMCAttachmentUnderbarrelExtinguisherSpec-desc = An experimental Taiho-Technologies HME-88B underbarrel extinguisher integrated with a select few gun models. It is capable of putting out the strongest of flames. Point at flame before applying pressure.
+
+ent-RMCAttachmentL91Bipod-name = item
+
+ent-RMCAttachmentL90GL-name = item
+
+ent-RMCAttachmentL90UBS-name = item
+
+ent-RMCAttachmentL88Grip-name = item
+

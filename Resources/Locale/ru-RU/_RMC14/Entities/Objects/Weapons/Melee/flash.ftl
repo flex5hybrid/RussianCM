@@ -1,2 +1,3 @@
-ent-CMFlash = ослепляющая граната
-  .desc = Используется для ослепления и чтобы быть мудаком. Перезаряжает одну вспышку каждые 15 секунд. Между использованиями необходимо ждать 1 секунду для перезарядки конденсатора.
+ent-CMFlash-name = flash
+ent-CMFlash-desc = Used for blinding and being an asshole. Recharges one flash every 15 seconds. You must wait 1 second between uses for the capacitor to recharge.
+

@@ -1,2 +1,5 @@
-ent-RMCCampfire = костер
-  .desc = Полезный инструмент, позволяющий превратить коллег-морпехов в друзей на всю жизнь. 
+ent-RMCCampfire-name = костер
+
+ent-RMCBrazier-name = brazier
+ent-RMCBrazier-desc = A burning pile of wood in a metal plate.
+

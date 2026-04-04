@@ -1,6 +1,21 @@
-ent-RMCSynthResetKey = ключ сброса синтетиков WeYa
-  .desc = Это устройство может исправлять серьёзные сбои или ошибки программирования синтетических юнитов, а также перезапускать синтетика, пострадавшего от критического отказа. Может быть использовано только один раз до сброса.
-ent-RMCDefibrillatorCompact = компактный дефибриллятор
-  .desc = Этот дефибриллятор имеет вдвое меньшую ёмкость заряда по сравнению со стандартным аварийным дефибриллятором, но помещается в карман.
-ent-CMBaseDefibrillator = аварийный дефибриллятор
-  .desc = Ручной аварийный дефибриллятор, используемый для восстановления пациентов с фибрилляцией. Может, опционально, возвращать людей с того света.
+ent-RMCSynthResetKey-name = WeYa synthetic reset key
+ent-RMCSynthResetKey-desc = This device can fix major glitches or programming errors of synthetic units, as well as being able to restart a synthetic that has suffered critical failure. It can only be used once before being reset.
+
+ent-RMCDefibrillatorCompact-name = compact defibrillator
+ent-RMCDefibrillatorCompact-desc = This particular defibrillator has halved charge capacity compared to the standard emergency defibrillator, but can fit in your pocket.
+
+ent-CMBaseDefibrillator-name = emergency defibrillator
+ent-CMBaseDefibrillator-desc = A handheld emergency defibrillator, used to restore fibrillating patients. Can optionally bring people back from the dead.
+
+ent-CMDefibrillator-name = emergency defibrillator
+ent-CMDefibrillator-desc = A handheld emergency defibrillator, used to restore fibrillating patients. Can optionally bring people back from the dead.
+
+ent-CMDefibrillatorEmpty-name = emergency defibrillator
+ent-CMDefibrillatorEmpty-desc = A handheld emergency defibrillator, used to restore fibrillating patients. Can optionally bring people back from the dead.
+
+ent-CMDefibrillatorInfinite-name = emergency defibrillator
+ent-CMDefibrillatorInfinite-desc = A handheld emergency defibrillator, used to restore fibrillating patients. Can optionally bring people back from the dead.
+
+ent-RMCSynthResetKeySMART-name = SMART WeYa synthetic reset key
+ent-RMCSynthResetKeySMART-desc = This device can fix major glitches or programming errors of synthetic units, as well as being able to restart a synthetic that has suffered critical failure. It can only be used once before being reset. This one has a microfunction AI and can be operated by anyone.
+

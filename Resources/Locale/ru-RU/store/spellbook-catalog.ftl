@@ -31,9 +31,7 @@ spellbook-slip-name = Скользкая дорожка
 spellbook-slip-desc = Изучите древние приёмы уборщиков и прокляните вашу цель, чтобы та была скользкой. Необходимо иметь шляпу и робу волшебника.
 spellbook-item-recall-name = Отозвать предмет
 spellbook-item-recall-description = Пометьте удерживаемый предмет и призывайте его обратно в любое время по щелчку пальцев.
-
 # Equipment
-
 spellbook-wand-polymorph-door-name = Волшебная палочка входа
 spellbook-wand-polymorph-door-description = На случай, когда нужен маршрут для побега.
 spellbook-wand-polymorph-carp-name = Волшебная палочка полиморфа карпа
@@ -46,9 +44,7 @@ spellbook-hammer-singularity-description = Вы когда-нибудь заду
 spellbook-wand-locker-description = Стреляйте в своих врагов проклятыми шкафчиками и запирайте их!
 spellbook-staff-animation-name = Посох оживления
 spellbook-staff-animation-description = Оживите неодушевлённые предметы!
-
 # Events
-
 spellbook-event-summon-ghosts-name = Призыв призраков
 spellbook-event-summon-ghosts-description = Who ya gonna call?
 spellbook-event-summon-guns-name = Призыв оружия

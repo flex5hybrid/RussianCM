@@ -1,5 +1,4 @@
 ## UI
-
 cargo-console-menu-title = Консоль заказа грузов
 cargo-console-menu-account-name-label = Имя аккаунта:{ " " }
 cargo-console-menu-account-name-none-text = Нет

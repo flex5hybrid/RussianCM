@@ -1,2 +1,5 @@
-ent-RMCGearSurvivorPresetKutjevoTrucker = Пресет колониста-дальнобойщика Кутьево
-ent-RMCSpawnPointSurvivorKutjevoTrucker = точка спавна дальнобойщиков в Кутьево
+ent-RMCGearSurvivorPresetKutjevoTrucker-name = Kutjevo trucker colonist preset
+
+ent-RMCSpawnPointSurvivorKutjevoTrucker-name = kutjevo trucker spawn point
+ent-RMCSpawnPointSurvivorKutjevoTrucker-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

@@ -1,12 +1,29 @@
-ent-RMCBulletPistol9mmRubber = резиновая пуля (9мм)
-ent-RMCCartridgePistol9mmRubber = резиновый патрон (9мм)
-ent-RMCMagazinePistolM77Rubber = магазин M77 с резиновыми пулями (9мм)
-ent-RMCMagazinePistolM1984Rubber = магазин M1984 с резиновыми пулями (9мм)
-ent-RMCCartridge10x20mmRubber = резиновый патрон (10x20мм)
-ent-RMCMagazineSMGM63Rubber = магазин M63 с резиновыми пулями (10x20мм)
-ent-RMCCartridgeRifle10x24mmRubber = резиновый патрон (10x24мм)
-  .desc = Патрон 10x24мм. Подходит для магазинов 10x24мм, этот предназначен для менее смертоносного применения.
-ent-RMCMagazineRifleM4SPRRubber = магазин M4SPR с резиновыми пулями (10x24мм)
-  .desc = Магазин с менее смертоносными резиновыми патронами 10x24мм для использования в боевой винтовке M4SPR.
-ent-RMCMagazineRifleM54CRubber = магазин M54C с резиновыми пулями (10x24мм)
-  .desc = Магазин с менее смертоносными резиновыми патронами 10x24мм для использования в боевой винтовке M54C.
+ent-RMCBulletPistol9mmRubber-name = rubber bullet (9mm)
+ent-RMCBulletPistol9mmRubber-desc = If you can see this you're probably dead!
+
+ent-RMCCartridgePistol9mmRubber-name = cartridge (.35 auto)
+
+ent-RMCMagazinePistolM77Rubber-name = item
+ent-RMCMagazinePistolM77Rubber-desc = A pistol magazine.
+
+ent-RMCMagazinePistolM1984Rubber-name = item
+ent-RMCMagazinePistolM1984Rubber-desc = A pistol magazine.
+
+ent-RMCCartridge10x20mmRubber-name = cartridge (.25 caseless)
+
+ent-RMCMagazineSMGM63Rubber-name = item
+
+ent-RMCCartridgeRifle10x24mmRubber-name = cartridge
+
+ent-RMCMagazineRifleM4SPRRubber-name = item
+
+ent-RMCMagazineRifleM54CRubber-name = item
+
+ent-RMCMagazineRifleM54CMK1Rubber-name = item
+
+ent-BulletRifle10x24mmRubber-name = BaseBullet
+ent-BulletRifle10x24mmRubber-desc = If you can see this you're probably dead!
+
+ent-Bullet10x20mmRubber-name = BaseBullet
+ent-Bullet10x20mmRubber-desc = If you can see this you're probably dead!
+

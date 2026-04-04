@@ -28,9 +28,7 @@ names-moth-first-female-dataset-13 = Рози
 names-moth-first-female-dataset-14 = Скарлет
 # Acherontia styx
 names-moth-first-female-dataset-15 = Стикс
-
 ## Other languages
-
 # Galician "moth" (avelaíña)
 names-moth-first-female-dataset-16 = Авелина
 # Italian "winter moth"
@@ -41,9 +39,7 @@ names-moth-first-female-dataset-18 = Менодора
 names-moth-first-female-dataset-19 = Моли
 # Spanish "moth"
 names-moth-first-female-dataset-20 = Полилла
-
 ## Myth and legend
-
 # Greek mythological figure
 names-moth-first-female-dataset-21 = Алфея
 # Roman goddess of the dawn
@@ -54,16 +50,12 @@ names-moth-first-female-dataset-23 = Хель
 names-moth-first-female-dataset-24 = Селена
 # Greek goddess of the night
 names-moth-first-female-dataset-25 = Никс
-
 ## Fun names
-
 names-moth-first-female-dataset-26 = Ангел
 names-moth-first-female-dataset-27 = Сэнди
 names-moth-first-female-dataset-28 = Либерти
 names-moth-first-female-dataset-29 = Беатрикс
-
 ## Common names, filler
-
 names-moth-first-female-dataset-30 = Дэйзи
 names-moth-first-female-dataset-31 = Доун
 names-moth-first-female-dataset-32 = Элизабет

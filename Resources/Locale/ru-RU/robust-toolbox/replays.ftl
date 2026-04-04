@@ -1,5 +1,4 @@
 # Playback Commands
-
 cmd-replay-play-desc = Resume replay playback.
 cmd-replay-play-help = replay_play
 cmd-replay-pause-desc = Pause replay playback
@@ -22,9 +21,7 @@ cmd-replay-error-args = Wrong number of arguments.
 cmd-replay-error-no-replay = Not currently playing a replay.
 cmd-replay-error-already-loaded = A replay is already loaded.
 cmd-replay-error-run-level = You cannot load a replay while connected to a server.
-
 # Recording commands
-
 cmd-replay-recording-start-desc = Starts a replay recording, optionally with some time limit.
 cmd-replay-recording-start-help = Usage: replay_recording_start [name] [overwrite] [time limit]
 cmd-replay-recording-start-success = Started recording a replay.

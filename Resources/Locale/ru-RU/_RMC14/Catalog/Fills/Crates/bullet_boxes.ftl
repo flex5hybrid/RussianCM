@@ -1,4 +1,12 @@
-ent-RMCCrateBoxBulletsSMGAP = ящик ББ патронов для ПП (10x20мм БП) (x600)
-ent-RMCCrateBoxBulletsSMG = ящик патронов для ПП (10x20мм) (x600)
-ent-RMCCrateBoxBulletsRifleAP = ящик ББ патронов для винтовки (10x24мм БП) (x600)
-ent-RMCCrateBoxBulletsRifle = ящик патронов для винтовки (10x24мм) (x600)
+ent-RMCCrateBoxBulletsSMGAP-name = smg AP ammo box crate (10x20mm AP) (x600 rounds)
+ent-RMCCrateBoxBulletsSMGAP-desc = An ammunitions crate.
+
+ent-RMCCrateBoxBulletsSMG-name = smg ammo box crate (10x20mm) (x600 rounds)
+ent-RMCCrateBoxBulletsSMG-desc = An ammunitions crate.
+
+ent-RMCCrateBoxBulletsRifleAP-name = rifle AP ammo box crate (10x24mm AP) (x600 rounds)
+ent-RMCCrateBoxBulletsRifleAP-desc = An ammunitions crate.
+
+ent-RMCCrateBoxBulletsRifle-name = rifle ammo box crate (10x24mm) (x600 rounds)
+ent-RMCCrateBoxBulletsRifle-desc = An ammunitions crate.
+

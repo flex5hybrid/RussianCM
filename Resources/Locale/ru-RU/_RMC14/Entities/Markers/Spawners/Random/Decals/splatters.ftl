@@ -1,4 +1,10 @@
-ent-RMCDecalSpawnerAcidBloodSplash = спаунер брызг ксенокислоты
-ent-RMCDecalSpawnerOilSplatters = производитель нефти
-ent-RMCDecalSpawnerXenoSplatters = ксеногенератор крови
-ent-RMCDecalSpawnerBloodSplatters = генератор крови
+ent-RMCDecalSpawnerAcidBloodSplash-name = xeno acid splash spawner
+
+ent-RMCDecalSpawnerOilSplatters-name = oil spawner
+
+ent-RMCDecalSpawnerXenoSplatters-name = xeno blood spawner
+
+ent-RMCDecalSpawnerBloodSplatters-name = blood spawner
+
+ent-RMCDecalSpawnerBase-name = Decal Spawner
+

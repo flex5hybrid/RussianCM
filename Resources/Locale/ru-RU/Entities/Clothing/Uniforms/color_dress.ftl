@@ -1,32 +1,48 @@
 ent-ClothingUniformJumpskirtBlackElegantDress-name = black elegant dress
 ent-ClothingUniformJumpskirtBlackElegantDress-desc = Elegant dress with a beautiful bow.
+
 ent-ClothingUniformJumpskirtRedElegantDress-name = red elegant dress
 ent-ClothingUniformJumpskirtRedElegantDress-desc = Elegant dress with a beautiful bow.
+
 ent-ClothingUniformJumpskirtGreenElegantDress-name = green elegant dress
 ent-ClothingUniformJumpskirtGreenElegantDress-desc = Elegant dress with a beautiful bow.
+
 ent-ClothingUniformJumpskirtBlueElegantDress-name = blue elegant dress
 ent-ClothingUniformJumpskirtBlueElegantDress-desc = Elegant dress with a beautiful bow.
+
 ent-ClothingUniformJumpskirtPurpleElegantDress-name = purple elegant dress
 ent-ClothingUniformJumpskirtPurpleElegantDress-desc = Elegant dress with a beautiful bow.
+
 ent-ClothingUniformJumpskirtCyanStripedDress-name = cyan striped dress
 ent-ClothingUniformJumpskirtCyanStripedDress-desc = Cute striped dress.
+
 ent-ClothingUniformJumpskirtRedStripedDress-name = red striped dress
 ent-ClothingUniformJumpskirtRedStripedDress-desc = Cute striped dress.
+
 ent-ClothingUniformJumpskirtGreenStripedDress-name = green striped dress
 ent-ClothingUniformJumpskirtGreenStripedDress-desc = Cute striped dress.
+
 ent-ClothingUniformJumpskirtPinkStripedDress-name = pink striped dress
 ent-ClothingUniformJumpskirtPinkStripedDress-desc = Cute striped dress.
+
 ent-ClothingUniformJumpskirtOrangeStripedDress-name = orange striped dress
 ent-ClothingUniformJumpskirtOrangeStripedDress-desc = Cute striped dress.
+
 ent-ClothingUniformJumpskirtPurpleTurtleneckDress-name = purple turtleneck dress
 ent-ClothingUniformJumpskirtPurpleTurtleneckDress-desc = Turtleneck dress with a unique design.
+
 ent-ClothingUniformJumpskirtRedTurtleneckDress-name = red turtleneck dress
 ent-ClothingUniformJumpskirtRedTurtleneckDress-desc = Turtleneck dress with a unique design.
+
 ent-ClothingUniformJumpskirtGreenTurtleneckDress-name = green turtleneck dress
 ent-ClothingUniformJumpskirtGreenTurtleneckDress-desc = Turtleneck dress with a unique design.
+
 ent-ClothingUniformJumpskirtBlueTurtleneckDress-name = blue turtleneck dress
 ent-ClothingUniformJumpskirtBlueTurtleneckDress-desc = Turtleneck dress with a unique design.
+
 ent-ClothingUniformJumpskirtYellowTurtleneckDress-name = yellow turtleneck dress
 ent-ClothingUniformJumpskirtYellowTurtleneckDress-desc = Turtleneck dress with a unique design.
+
 ent-ClothingUniformJumpskirtYellowOldDress-name = yellow old dress
 ent-ClothingUniformJumpskirtYellowOldDress-desc = Classic western dress.
+

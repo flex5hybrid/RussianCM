@@ -3,23 +3,19 @@ cm-iv-attach-others-injecting = {$user} присоединяет {THE($iv)} к {
 cm-iv-attach-self-drawing = Вы присоединяете {THE($iv)} к {$target}, забирая кровь у {OBJECT($target)}.
 cm-iv-attach-others-drawing = {$user} присоединяет {THE($iv)} к {$target}, забирая кровь у {OBJECT($target)}.
 cm-iv-attach-no-skill = Вы не умеете подключать это!
-
 cm-iv-detach-self = Вы отсоединяете {THE($iv)} от {$target}.
 cm-iv-detach-others = {$user} отсоединяет {THE($iv)} от {$target}.
 cm-iv-detach-no-skill = Вы не умеете отключать это!
-
 cm-iv-rip = Игла вырвана из {$target}, это должно быть больно!
 cm-iv-now-injecting = Капельница теперь вводит препарат.
 cm-iv-now-taking = Капельница теперь забирает кровь.
 cm-iv-verb-toggle-inject = Переключить ввод
-
 cm-iv-examine-injecting = {CAPITALIZE(THE($iv))} вводит препарат.
 cm-iv-examine-drawing = {CAPITALIZE(THE($iv))} забирает кровь.
 cm-iv-examine-chemicals = Подключен {$attached} с {$units} единицами жидкости.
 cm-iv-examine-chemicals-none = Препараты не подключены.
 cm-iv-examine-attached = {$attached} подключен.
 cm-iv-examine-attached-none = Никто не подключен.
-
 cm-blood-pack-cannot-self = Вы не можете подключить это к себе.
 cm-blood-pack-poke-self = Вы прокалываете {$target} с помощью {$pack}.
 cm-blood-pack-poke-others = {$user} прокалывает {$target} с помощью {$pack}.

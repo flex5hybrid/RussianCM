@@ -14,27 +14,21 @@ names-moth-last-dataset-6 = Уста
 names-moth-last-dataset-7 = Вайтвитч
 # Operophtera brumata
 names-moth-last-dataset-8 = Винтер
-
 ## Other languages
-
 # Ancient Greek "moth"
 names-moth-last-dataset-9 = Епилос
 # Conceivably any Old Norse descendant of mǫlr but probably more Danish than anything. "oe" digraph for ø.
 names-moth-last-dataset-10 = Моеллер
 # Literal pseudo-translation of German Nachtfalter
 names-moth-last-dataset-11 = Найтфлайтер
-
 ## Myth and legend
-
 # Belief of moths flying at night signalling the reception of a letter
 names-moth-last-dataset-12 = Херальд
 # Greek figure associated with Hero, and similar sounding to Oleander hawk-moth
 names-moth-last-dataset-13 = Лендер
 # Split between being a myth reference and actual possible surname given the actual Goodman, Hoffman, Newman, Coleman, etc.
 names-moth-last-dataset-14 = Мотхман
-
 ## Fun names
-
 names-moth-last-dataset-15 = Кометридер
 names-moth-last-dataset-16 = Евентид
 names-moth-last-dataset-17 = Фаерфлай

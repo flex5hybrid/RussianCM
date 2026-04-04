@@ -1,1 +1,2 @@
-ent-RMCRandomHumanoidCLFCellCommander = clf роль призрака командир ячейки
+ent-RMCRandomHumanoidCLFCellCommander-name = clf ghost role cell commander
+

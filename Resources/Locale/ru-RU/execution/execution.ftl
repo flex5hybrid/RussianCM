@@ -1,11 +1,9 @@
 execution-verb-name = Казнить
 execution-verb-message = Используйте своё оружие, чтобы казнить кого-то.
-
 # All the below localisation strings have access to the following variables
 # attacker (the person committing the execution)
 # victim (the person being executed)
 # weapon (the weapon used for the execution)
-
 execution-popup-melee-initial-internal = Вы прикладываете { $weapon } к горлу { $victim }.
 execution-popup-melee-initial-external = { CAPITALIZE($attacker) } прикладывает свой { $weapon } к горлу { $victim }.
 execution-popup-melee-complete-internal = Вы перерезаете горло { $victim }!

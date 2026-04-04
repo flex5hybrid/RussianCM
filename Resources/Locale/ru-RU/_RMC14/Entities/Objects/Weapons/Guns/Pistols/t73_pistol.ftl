@@ -1,10 +1,20 @@
-ent-RMCCartridgePistolT74Impact = патрон (7.62x25мм ударный)
-ent-RMCBulletPistolT74Impact = пуля (7.62x25мм ударная)
-ent-RMCCartridgePistolT73 = патрон (7.62x25мм)
-ent-RMCBulletPistolT73 = пуля (7.62x25мм)
-ent-RMCMagazinePistolT74Impact = Обойма Тип 74 ударная (7.62x25мм)
-ent-RMCMagazinePistolT73 = Обойма Тип 73 (7.62x25мм)
-ent-RMCWeaponPistolT74 = Пистолет Тип 74
-  .desc = Тип 74 — это обозначение специально модифицированного Типа 73 с интегрированной лазерной системой прицеливания, множественными облегчающими пропилами для снижения веса, что позволило использовать патрон более высокого давления с той же возвратной пружиной, и более удобной рукоятью. Из-за принятия на вооружение NP92, Тип 74 выпускался ограниченными партиями, и поэтому, как правило, выдается только по запросу старшим офицерам.
-ent-RMCWeaponPistolT73 = Пистолет Тип 73
-  .desc = Тип 73 — это некогда штатный пистолет ВПС. Замененный на NP92 в войсках ВПС, он остается популярным среди ветеранов ВПС благодаря привычности и большей мощности. Из-за огромного количества выпущенных экземпляров они часто попадают в руки формирований, пытающихся вооружиться с минимальными затратами. Среди пользователей — Социалистический Прогрессивный Народ, Фронт Колониального Освобождения и практически любые наемники или пираты.
+ent-RMCCartridgePistolT74Impact-name = cartridge (.35 auto)
+
+ent-RMCBulletPistolT74Impact-name = bullet (7.62x25mm impact)
+ent-RMCBulletPistolT74Impact-desc = If you can see this you're probably dead!
+
+ent-RMCCartridgePistolT73-name = cartridge (.35 auto)
+
+ent-RMCBulletPistolT73-name = bullet (7.62x25mm)
+ent-RMCBulletPistolT73-desc = If you can see this you're probably dead!
+
+ent-RMCMagazinePistolT74Impact-name = item
+ent-RMCMagazinePistolT74Impact-desc = A pistol magazine.
+
+ent-RMCMagazinePistolT73-name = item
+ent-RMCMagazinePistolT73-desc = A pistol magazine.
+
+ent-RMCWeaponPistolT74-name = item
+
+ent-RMCWeaponPistolT73-name = Пистолет Тип 73
+

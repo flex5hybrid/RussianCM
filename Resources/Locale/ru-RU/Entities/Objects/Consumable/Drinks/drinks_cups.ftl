@@ -1,41 +1,62 @@
 ent-DrinkBaseCup-name = base cup
+
 ent-DrinkGoldenCup-name = golden cup
 ent-DrinkGoldenCup-desc = A golden cup.
+
 ent-DrinkBaseMug-name = mug
 ent-DrinkBaseMug-desc = A mug.
+
 ent-DrinkMug-name = mug
 ent-DrinkMug-desc = A plain white mug.
+
 ent-DrinkMugBlack-name = black mug
 ent-DrinkMugBlack-desc = A sleek black mug.
+
 ent-DrinkMugBlue-name = blue mug
 ent-DrinkMugBlue-desc = A blue and black mug.
+
 ent-DrinkMugGreen-name = green mug
 ent-DrinkMugGreen-desc = A pale green and pink mug.
+
 ent-DrinkMugDog-name = funny dog mug
 ent-DrinkMugDog-desc = It looks like a cartoon beagle.
+
 ent-DrinkMugHeart-name = heart mug
 ent-DrinkMugHeart-desc = A white mug, it prominently features a red heart.
+
 ent-DrinkMugMetal-name = metal mug
 ent-DrinkMugMetal-desc = A metal mug. You're not sure which metal.
+
 ent-DrinkMugMoebius-name = moebius mug
 ent-DrinkMugMoebius-desc = A mug with a Moebius Laboratories logo on it. Not even your morning coffee is safe from corporate advertising.
+
 ent-DrinkMugOne-name = #1 mug
 ent-DrinkMugOne-desc = A white mug, it prominently features a #1.
+
 ent-DrinkMugRainbow-name = rainbow mug
 ent-DrinkMugRainbow-desc = A rainbow mug. The colors are almost as blinding as a welder.
+
 ent-DrinkMugRed-name = red mug
 ent-DrinkMugRed-desc = A red and black mug.
+
 ent-DrinkHotCoco-name = hot chocolate
 ent-DrinkHotCoco-desc = A heated drink consisting melted chocolate and heated milk.
+
 ent-DrinkHotCoffee-name = coffee
 ent-DrinkHotCoffee-desc = Coffee is a brewed drink prepared from roasted seeds, commonly called coffee beans, of the coffee plant.
+
 ent-DrinkCafeLatte-name = cafe latte
 ent-DrinkCafeLatte-desc = A nice, strong and tasty beverage while you are reading.
+
 ent-DrinkTeacup-name = teacup
 ent-DrinkTeacup-desc = A plain white porcelain teacup.
+
 ent-DrinkGreenTea-name = green tea
 ent-DrinkGreenTea-desc = A plain white porcelain teacup.
+
 ent-DrinkLean-name = grape juice
 ent-DrinkLean-desc = Damn, no fun allowed.
+
 ent-DrinkWaterCup-name = water cup
 ent-DrinkWaterCup-desc = A paper water cup.
+

@@ -1,8 +1,12 @@
-ent-CMRodPlasteel1 = пласталевой прут
-ent-CMRodPlasteel10 = пласталевой прут
-ent-CMRodPlasteel = пласталевой прут
-  .desc = Несколько пласталевых прутьев. Можно использовать для создания более прочных конструкций и объектов.
-ent-CMRodMetal1 = металлический прут
-ent-CMRodMetal10 = металлический прут
-ent-CMRodMetal = металлический прут
-  .desc = Несколько прутьев. Можно использовать для строительства или чего-то ещё.
+ent-CMRodPlasteel1-name = plasteel rod
+
+ent-CMRodPlasteel10-name = plasteel rod
+
+ent-CMRodPlasteel-name = plasteel rods
+
+ent-CMRodMetal1-name = metal rod
+
+ent-CMRodMetal10-name = metal rod
+
+ent-CMRodMetal-name = rods
+

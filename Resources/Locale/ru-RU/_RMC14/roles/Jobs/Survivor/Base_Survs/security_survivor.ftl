@@ -1,3 +1,7 @@
-ent-RMCRandomHumanoidSurvivorSecurity = роль призрака колониста службы безопасности
-ent-RMCSurvivorPresetSecurity = настройки колониста службы безопасности
-ent-RMCSpawnPointSurvivorSecurity = точка появления службы безопасности выжившего
+ent-RMCRandomHumanoidSurvivorSecurity-name = security colonist ghost role
+
+ent-RMCSurvivorPresetSecurity-name = security colonist preset
+
+ent-RMCSpawnPointSurvivorSecurity-name = survivor security spawn point
+ent-RMCSpawnPointSurvivorSecurity-desc = A RMC14 job spawner. Used for roundstart and late joins.
+

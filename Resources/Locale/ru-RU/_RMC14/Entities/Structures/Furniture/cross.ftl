@@ -1,2 +1,2 @@
-ent-RMCGraveCross = деревянный крест
-  .desc = Деревянный надгробный знак. 
+ent-RMCGraveCross-name = деревянный крест
+

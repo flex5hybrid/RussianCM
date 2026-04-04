@@ -1,13 +1,24 @@
-ent-RMCTablePartAlmayer = детали серого стола
-ent-RMCTablePartGambling = детали игрового стола
-ent-RMCTablePartWoodFancy = детали роскошного деревянного стола
-  .desc = Комплект для изысканного стола из красного дерева, включающий большую плоскую деревянную поверхность и четыре ножки. Требуется сборка.
-ent-RMCTablePartWoodPoor = детали простого деревянного стола
-  .desc = Комплект для грубо сделанного стола, включающий большую плоскую деревянную поверхность и четыре ножки. Требуется сборка.
-ent-RMCTablePartWood = детали деревянного стола
-  .desc = Комплект для стола, включающий большую плоскую деревянную поверхность и четыре ножки. Требуется сборка.
-ent-RMCTablePartReinforced = детали усиленного стола
-  .desc = Комплект для стола, включающий большую плоскую металлическую поверхность и четыре ножки. В этот комплект входят боковые панели. Требуется сборка.
-ent-RMCTablePartTan = детали бежевого стола
-ent-RMCTablePartBase = детали стола
-  .desc = Комплект для стола, включающий большую плоскую металлическую поверхность и четыре ножки. Требуется сборка.
+ent-RMCTablePartAlmayer-name = table parts
+ent-RMCTablePartAlmayer-desc = A kit for a table, including a large, flat metal surface and four legs. Some assembly required.
+
+ent-RMCTablePartGambling-name = table parts
+ent-RMCTablePartGambling-desc = A kit for a table, including a large, flat metal surface and four legs. Some assembly required.
+
+ent-RMCTablePartWoodFancy-name = table parts
+ent-RMCTablePartWoodFancy-desc = A kit for a table, including a large, flat metal surface and four legs. Some assembly required.
+
+ent-RMCTablePartWoodPoor-name = table parts
+ent-RMCTablePartWoodPoor-desc = A kit for a table, including a large, flat metal surface and four legs. Some assembly required.
+
+ent-RMCTablePartWood-name = table parts
+ent-RMCTablePartWood-desc = A kit for a table, including a large, flat metal surface and four legs. Some assembly required.
+
+ent-RMCTablePartReinforced-name = table parts
+ent-RMCTablePartReinforced-desc = A kit for a table, including a large, flat metal surface and four legs. Some assembly required.
+
+ent-RMCTablePartTan-name = table parts
+ent-RMCTablePartTan-desc = A kit for a table, including a large, flat metal surface and four legs. Some assembly required.
+
+ent-RMCTablePartBase-name = table parts
+ent-RMCTablePartBase-desc = A kit for a table, including a large, flat metal surface and four legs. Some assembly required.
+
