@@ -1,15 +1,15 @@
 ent-RMCPaperWeYa = Официальный документ Уэстон-Ямада
-  .desc = A piece of white paper.
+  .desc = Кусок белой бумаги.
 
 ent-RMCPaperWeYaLiaison = Документ Уэстон-Ямада
-  .desc = A piece of white paper.
+  .desc = Кусок белой бумаги.
 
-ent-CMBasePaperFaxable = paper
-  .desc = A piece of white paper.
+ent-CMBasePaperFaxable = бумага
+  .desc = Кусок белой бумаги.
 
-ent-CMPaperWritten = paper
-  .desc = A piece of white paper.
+ent-CMPaperWritten = бумага
+  .desc = Кусок белой бумаги.
 
-ent-RMCPaperAegisLobbyInfoFax = High Command Transmission
-  .desc = A piece of white paper.
+ent-RMCPaperAegisLobbyInfoFax = Передача высшего командования
+  .desc = Кусок белой бумаги.
 

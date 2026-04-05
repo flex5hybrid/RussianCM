@@ -37,7 +37,7 @@ ent-RMCDoubleDoorAlmayerSolidSynth = Двойная дверь из синтет
 ent-RMCDoubleDoorCommandGlassCommand = Командная двойная дверь
   .desc = Стеклянная дверь заперта для командования.
 
-ent-RMCDoubleDoorCommandSolidCommand = door
+ent-RMCDoubleDoorCommandSolidCommand = дверь
   .desc = Дверь заперта для командования.
 
 ent-RMCDoubleDoorCommandGlassSeniorCommand = Командная двойная дверь
@@ -70,51 +70,51 @@ ent-RMCDoubleDoorGenericGlassPress = Нажмите двойную дверь
 ent-RMCDoubleDoorGenericSolidPress = Нажмите двойную дверь
   .desc = Дверь заперта для Пресса.
 
-ent-RMCDoubleDoorMedicalGlassMedical = door
+ent-RMCDoubleDoorMedicalGlassMedical = дверь
 
-ent-RMCDoubleDoorMedicalSolidMedical = door
+ent-RMCDoubleDoorMedicalSolidMedical = дверь
 
-ent-RMCDoubleDoorMedicalSolidMorgue = door
+ent-RMCDoubleDoorMedicalSolidMorgue = дверь
 
-ent-RMCDoubleDoorMedicalGlassResearch = door
+ent-RMCDoubleDoorMedicalGlassResearch = дверь
 
-ent-RMCDoubleDoorMedicalSolidResearch = door
+ent-RMCDoubleDoorMedicalSolidResearch = дверь
 
-ent-RMCDoubleDoorPreparationsReq = door
+ent-RMCDoubleDoorPreparationsReq = дверь
 
-ent-RMCDoubleDoorPreparationsPrep = door
+ent-RMCDoubleDoorPreparationsPrep = дверь
 
-ent-RMCDoubleDoorPreparationsMeetingRoom = door
+ent-RMCDoubleDoorPreparationsMeetingRoom = дверь
 
-ent-RMCDoubleDoorPreparationsAlphaPrep = door
+ent-RMCDoubleDoorPreparationsAlphaPrep = дверь
 
-ent-RMCDoubleDoorPreparationsBravoPrep = door
+ent-RMCDoubleDoorPreparationsBravoPrep = дверь
 
-ent-RMCDoubleDoorPreparationsCharliePrep = door
+ent-RMCDoubleDoorPreparationsCharliePrep = дверь
 
-ent-RMCDoubleDoorPreparationsDeltaPrep = door
+ent-RMCDoubleDoorPreparationsDeltaPrep = дверь
 
-ent-RMCDoubleDoorPreparationsAlphaAlpha = door
+ent-RMCDoubleDoorPreparationsAlphaAlpha = дверь
 
-ent-RMCDoubleDoorPreparationsBravoBravo = door
+ent-RMCDoubleDoorPreparationsBravoBravo = дверь
 
-ent-RMCDoubleDoorPreparationsCharlieCharlie = door
+ent-RMCDoubleDoorPreparationsCharlieCharlie = дверь
 
-ent-RMCDoubleDoorPreparationsDeltaDelta = door
+ent-RMCDoubleDoorPreparationsDeltaDelta = дверь
 
-ent-RMCDoubleDoorSecurityGlassBrigCommand = door
+ent-RMCDoubleDoorSecurityGlassBrigCommand = дверь
 
-ent-RMCDoubleDoorSecuritySolidBrigCommand = door
+ent-RMCDoubleDoorSecuritySolidBrigCommand = дверь
 
-ent-RMCDoubleDoorSecurityGlassBrig = door
+ent-RMCDoubleDoorSecurityGlassBrig = дверь
 
-ent-RMCDoubleDoorSecuritySolidBrig = door
+ent-RMCDoubleDoorSecuritySolidBrig = дверь
 
-ent-RMCDoubleDoorSecurityGlassArmory = door
+ent-RMCDoubleDoorSecurityGlassArmory = дверь
 
-ent-RMCDoubleDoorSecuritySolidArmory = door
+ent-RMCDoubleDoorSecuritySolidArmory = дверь
 
-ent-RMCDoubleDoorSecurityGlassSeniorCommand = door
+ent-RMCDoubleDoorSecurityGlassSeniorCommand = дверь
 
-ent-RMCDoubleDoorSecuritySolidSeniorCommand = door
+ent-RMCDoubleDoorSecuritySolidSeniorCommand = дверь
 

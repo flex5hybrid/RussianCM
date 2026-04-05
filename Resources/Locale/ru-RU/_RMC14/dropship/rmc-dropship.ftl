@@ -38,7 +38,7 @@ rmc-dropship-weapons-night-vision-on = НВ-ВКЛ
 rmc-dropship-weapons-night-vision-off = НВ-ВЫКЛ
 rmc-dropship-weapons-weapon = ОРУЖИЕ
 rmc-dropship-weapons-previous = ^
-rmc-dropship-weapons-next = v
+rmc-dropship-weapons-next = в
 ### Сообщения об ошибках ###
 rmc-dropship-weapons-fire-no-weapon = Оружие не выбрано.
 rmc-dropship-weapons-fire-not-flying = Стрельба возможна только в полете.

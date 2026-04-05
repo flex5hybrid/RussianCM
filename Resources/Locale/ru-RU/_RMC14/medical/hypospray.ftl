@@ -1,7 +1,7 @@
 ﻿rmc-hypospray-label = Объём: [color=white]{$currentVolume}/{$totalVolume}[/color]
-    Инъекция ([color=white]{$transferVolume}u[/color])
+    Инъекция ([color= белый]{$transferVolume}u[/color])
 rmc-hypospray-label-novial = Без пробирки
-    Инъекция ([color=white]{$transferVolume}u[/color])
+    Инъекция ([color= белый]{$transferVolume}u[/color])
 rmc-hypospray-fail-tacreload = Вы недостаточно обучены для быстрой загрузки.
 rmc-hypospray-swap-tacreload = Вы начинаете менять пробирки.
 rmc-hypospray-load-tacreload = Вы начинаете загружать пробирку в {THE($hypo)}.

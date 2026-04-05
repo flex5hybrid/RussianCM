@@ -1,3 +1,3 @@
-ent-MobRodentiaDummy = Rodentia Dummy
-  .desc = A dummy rodentia meant to be used in character setup.
+ent-MobRodentiaDummy = Манекен грызунов
+  .desc = Манекен грызунов, предназначенный для использования в настройке персонажа.
 ent-CMMobRodentia = Морпех Урист Крыса

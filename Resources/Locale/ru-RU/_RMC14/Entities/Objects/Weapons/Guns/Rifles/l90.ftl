@@ -43,33 +43,33 @@ ent-RMCCartridgeRifleL90HEAP = HEAP-картридж (7х43 мм)
 ent-RMCCartridgeRifleL90Incendiary = зажигательный патрон (7х43мм)
   .desc = Винтовочно-зажигательный патрон 7х43 мм, предназначенный для винтовок модели L90.
 
-ent-RMCWeaponRifleL90A1Filled = L90A1 infantry carbine
-  .desc = The L90A1 infantry carbine. While lacking in modularity and noticeably less ergonomic than later models, it still packs a punch. Chambered in 7x43mm.
+ent-RMCWeaponRifleL90A1Filled = Пехотный карабин Л90А1
+  .desc = Пехотный карабин L90A1. 
 
-ent-RMCWeaponRifleL90A1FilledSemiStripped = L90A1 infantry carbine
-  .desc = The L90A1 infantry carbine. While lacking in modularity and noticeably less ergonomic than later models, it still packs a punch. Chambered in 7x43mm.
+ent-RMCWeaponRifleL90A1FilledSemiStripped = Пехотный карабин Л90А1
+  .desc = Пехотный карабин L90A1. 
 
-ent-RMCWeaponRifleL90A2Filled = L90A2 infantry carbine
-  .desc = The L90A2 infantry carbine. Highly modular, easy to handle, and hard-hitting, the A2 is widely regarded as a quality rifle by its users. Chambered in 7x43mm.
+ent-RMCWeaponRifleL90A2Filled = Пехотный карабин Л90А2
+  .desc = Пехотный карабин L90A2. 
 
-ent-RMCWeaponRifleL90A2FilledSemiStripped = L90A2 infantry carbine
-  .desc = The L90A2 infantry carbine. Highly modular, easy to handle, and hard-hitting, the A2 is widely regarded as a quality rifle by its users. Chambered in 7x43mm.
+ent-RMCWeaponRifleL90A2FilledSemiStripped = Пехотный карабин Л90А2
+  .desc = Пехотный карабин L90A2. 
 
-ent-RMCWeaponRifleL90A2Breacher = L90A2 infantry carbine
-  .desc = The L90A2 infantry carbine. Highly modular, easy to handle, and hard-hitting, the A2 is widely regarded as a quality rifle by its users. Chambered in 7x43mm.
+ent-RMCWeaponRifleL90A2Breacher = Пехотный карабин Л90А2
+  .desc = Пехотный карабин L90A2. 
 
-ent-RMCWeaponRifleL91SWSFilled = L91 SWS
-  .desc = The L91 Support Weapon System features a significantly longer and heavier barrel than the L90. While this makes it more unwieldy, the added length, weight, and durability enable accurate and sustained fire from a stationary position. Chambered in 7x43mm.
+ent-RMCWeaponRifleL91SWSFilled = L91 СВС
+  .desc = Система вспомогательного оружия L91 имеет значительно более длинный и тяжелый ствол, чем L90. 
 
-ent-BulletRifle7x43mm = BaseBullet
-  .desc = If you can see this you're probably dead!
+ent-BulletRifle7x43mm = БазаBullet
+  .desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletRifle7x43mmAP = BaseBullet
-  .desc = If you can see this you're probably dead!
+ent-BulletRifle7x43mmAP = БазаBullet
+  .desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletRifle7x43mmHEAP = BaseBullet
-  .desc = If you can see this you're probably dead!
+ent-BulletRifle7x43mmHEAP = БазаBullet
+  .desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletRifle7x43mmIncendiary = BaseBullet
-  .desc = If you can see this you're probably dead!
+ent-BulletRifle7x43mmIncendiary = БазаBullet
+  .desc = Если ты это видишь, ты, вероятно, мертв!
 

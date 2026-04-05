@@ -23,8 +23,8 @@ ent-RMCHelmetEVASPP = СПП Тип 2 давление Шлем
   .desc = Тяжелый космический шлем, предназначенный для использования в сочетании со скафандром типа 2, используемым Социалистическим прогрессивным народом и некоторыми другими организациями СПП.
 
 ent-RMCSuitEVACivilian = белый скафандр
-  .desc = A heavy and bulky space suit.
+  .desc = Тяжелый и громоздкий скафандр.
 
 ent-RMCHelmetEVACivilian = белое давление Шлем
-  .desc = A heavy space helmet, designed to be coupled with a pressure suit.
+  .desc = Тяжелый космический шлем, предназначенный для использования в скафандре.
 

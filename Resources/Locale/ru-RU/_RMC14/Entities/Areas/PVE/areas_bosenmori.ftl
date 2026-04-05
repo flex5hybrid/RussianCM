@@ -122,7 +122,7 @@ ent-RMCAreaBosenmoriBashoRuinsPerimeter = Руины Периметра
 
 ent-RMCAreaBosenmoriBashoMining = Горнодобывающий сектор
 
-ent-RMCAreaBosenmoriBasho = area
+ent-RMCAreaBosenmoriBasho = область
 
-ent-RMCAreaBosenmoriBashoUnknownTemple = Unknown
+ent-RMCAreaBosenmoriBashoUnknownTemple = Неизвестный
 

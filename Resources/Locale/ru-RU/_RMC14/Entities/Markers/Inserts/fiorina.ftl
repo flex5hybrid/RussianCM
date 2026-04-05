@@ -4,5 +4,5 @@ ent-RMCMapInsertFiorinaRocinanteCLF = Росинант - CLF
 
 ent-RMCMapInsertFiorinaRiotInProgress = Бунт в разгаре
 
-ent-RMCMapInsertFiorinaBase = Map Insert Base
+ent-RMCMapInsertFiorinaBase = База для вставки карты
 

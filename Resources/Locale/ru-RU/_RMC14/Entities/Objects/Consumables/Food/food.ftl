@@ -85,5 +85,5 @@ ent-FoodBangersMash = фейерверки и пюре
 ent-FoodPieMash = пирог и пюре
   .desc = Сочетается как рыба с жареным картофелем, фасоль и… неважно.
 
-ent-CMFoodBase = item
+ent-CMFoodBase = элемент
 

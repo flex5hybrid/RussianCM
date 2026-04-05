@@ -1,5 +1,5 @@
 ent-RMCSpawnPointSurvivorChancesAtmosProcessTech = Точка возрождения техника реактора обработки атмосферы
-  .desc = A RMC14 job spawner. Used for roundstart and late joins.
+  .desc = Создатель заданий RMC14. 
 
 ent-RMCRandomHumanoidSurvivorChancesAtmosProcessTech = Роль призрака: техник по реактору обработки атмосферы
 

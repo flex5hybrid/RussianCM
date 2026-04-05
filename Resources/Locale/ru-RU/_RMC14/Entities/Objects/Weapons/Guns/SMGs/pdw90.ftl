@@ -13,9 +13,9 @@ ent-RMCMagazineSMGPDW90AP = Магазин PDW90 AP (5,7×28 мм)
 ent-RMCCartridge57x28mmAP = патрон (ПП57х28мм)
   .desc = Патрон AP 5,7×28 мм для FN PDW90.
 
-ent-RMCBullet57x28mm = BaseBullet
-  .desc = If you can see this you're probably dead!
+ent-RMCBullet57x28mm = БазаBullet
+  .desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-RMCBullet57x28mmAP = BaseBullet
-  .desc = If you can see this you're probably dead!
+ent-RMCBullet57x28mmAP = БазаBullet
+  .desc = Если ты это видишь, ты, вероятно, мертв!
 

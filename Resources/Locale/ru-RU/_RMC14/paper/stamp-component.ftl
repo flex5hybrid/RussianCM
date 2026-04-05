@@ -1,5 +1,5 @@
 stamp-component-stamped-name-cm-default = Штамп
-stamp-component-stamped-name-cm-we-ya = We-Ya
+stamp-component-stamped-name-cm-we-ya = Мы-Я
 stamp-component-stamped-name-cm-marine = Главное командование морпехов
 stamp-component-stamped-name-cm-cmb = Бюро колониальных маршалов
 stamp-component-stamped-name-cm-provost = Офис провост-маршала

@@ -22,6 +22,6 @@ ent-RMCTentUNMCExtendedMess = Палатка-столовая UNMC
 ent-RMCTentUNMCExtendedMP = Палатка военной полиции UNMC
   .desc = Стандартная палатка военной полиции UNMC.
 
-ent-RMCTentUNMCStandard = UNMC Field Tent
-  .desc = A standard UNMC Tent. This one is just a general purpose version. Unfold in a suitable location for micro-FOB vibes. ComTech not included. ENTRANCE TO THE SOUTH.
+ent-RMCTentUNMCStandard = Полевая палатка UNMC
+  .desc = Стандартная палатка UNMC. 
 

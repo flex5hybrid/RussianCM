@@ -1,64 +1,64 @@
-ent-CMAirlockPrepDelta = delta squad preparations
-  .desc = It opens, it closes, and maybe crushes you.
+ent-CMAirlockPrepDelta = подготовка отряда дельта
+  .desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-CMAirlockPrepCharlie = charlie squad preparations
-  .desc = It opens, it closes, and maybe crushes you.
+ent-CMAirlockPrepCharlie = подготовка отряда Чарли
+  .desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-CMAirlockPrepBravo = bravo squad preparations
-  .desc = It opens, it closes, and maybe crushes you.
+ent-CMAirlockPrepBravo = подготовка отряда браво
+  .desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-CMAirlockPrepAlpha = alpha squad preparations
-  .desc = It opens, it closes, and maybe crushes you.
+ent-CMAirlockPrepAlpha = подготовка отряда альфа
+  .desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-CMAirlockPrep = preparations airlock
-  .desc = It opens, it closes, and maybe crushes you.
+ent-CMAirlockPrep = приготовления шлюзовой шлюз
+  .desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-CMAirlockGlassSecurity = security airlock
-  .desc = It opens, it closes, and maybe crushes you.
+ent-CMAirlockGlassSecurity = шлюз безопасности
+  .desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-CMAirlockGlassMedical = medical airlock
-  .desc = It opens, it closes, and maybe crushes you.
+ent-CMAirlockGlassMedical = медицинский шлюз
+  .desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-CMAirlockGlassEngineer = engineering airlock
-  .desc = It opens, it closes, and maybe crushes you.
+ent-CMAirlockGlassEngineer = инженерный шлюз
+  .desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-CMAirlockGlass = glass airlock
-  .desc = It opens, it closes, and maybe crushes you.
+ent-CMAirlockGlass = стеклянный шлюзовой шлюз
+  .desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-RMCAirlockRustedWhite = airlock
+ent-RMCAirlockRustedWhite = шлюзовая камера
 
-ent-RMCAirlockRusted = airlock
+ent-RMCAirlockRusted = шлюзовая камера
 
-ent-RMCAirlockHybrisaPersonal = airlock
+ent-RMCAirlockHybrisaPersonal = шлюзовая камера
 
-ent-RMCAirlockHybrisa = airlock
+ent-RMCAirlockHybrisa = шлюзовая камера
 
-ent-CMAirlockPrison = maintenance hatch
+ent-CMAirlockPrison = люк для обслуживания
 
-ent-CMAirlockCell = cell door
+ent-CMAirlockCell = дверь камеры
 
-ent-CMAirlockSecure = secure airlock
+ent-CMAirlockSecure = безопасный шлюз
 
-ent-CMAirlockMaintReinforced = reinforced maintenance hatch
+ent-CMAirlockMaintReinforced = усиленный люк для обслуживания
 
-ent-CMAirlockMaint = maintenance hatch
+ent-CMAirlockMaint = люк для обслуживания
 
-ent-CMAirlockSecurity = security airlock
+ent-CMAirlockSecurity = шлюз безопасности
 
-ent-CMAirlockMedical = medical airlock
+ent-CMAirlockMedical = медицинский шлюз
 
-ent-CMAirlockEngineer = engineering airlock
+ent-CMAirlockEngineer = инженерный шлюз
 
-ent-CMAirlockCommand = command airlock
+ent-CMAirlockCommand = командный шлюз
 
 ent-CMAirlock = шлюзовая камера
 
-ent-CMAirlockGlassHybrisa = glass airlock
-  .desc = It opens, it closes, and maybe crushes you.
+ent-CMAirlockGlassHybrisa = стеклянный шлюзовой шлюз
+  .desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-CMAirlockGlassHybrisaPersonal = glass airlock
-  .desc = It opens, it closes, and maybe crushes you.
+ent-CMAirlockGlassHybrisaPersonal = стеклянный шлюзовой шлюз
+  .desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-RMCAirlockSPPGreyGlass = glass airlock
-  .desc = It opens, it closes, and maybe crushes you.
+ent-RMCAirlockSPPGreyGlass = стеклянный шлюзовой шлюз
+  .desc = Он открывается, закрывается и, возможно, раздавит вас.
 

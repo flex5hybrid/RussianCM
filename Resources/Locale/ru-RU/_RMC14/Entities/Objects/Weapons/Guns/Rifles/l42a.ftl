@@ -16,9 +16,9 @@ ent-RMCMagazineRifleL42AWP = Магазин L42A WP (10х24мм)
 ent-RMCMagazineRifleL42AIncendiary = Магазин зажигательный Л42А (10х24мм)
   .desc = Магазин для зажигательной боевой винтовки размером 10х24 мм.
 
-ent-RMCMagazineRifleL42AEmpty = item
+ent-RMCMagazineRifleL42AEmpty = элемент
 
-ent-RMCMagazineRifleL42AExtendedEmpty = item
+ent-RMCMagazineRifleL42AExtendedEmpty = элемент
 
-ent-RMCMagazineRifleL42AAPEmpty = item
+ent-RMCMagazineRifleL42AAPEmpty = элемент
 

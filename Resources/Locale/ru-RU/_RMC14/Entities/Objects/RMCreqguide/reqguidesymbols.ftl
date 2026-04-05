@@ -19,9 +19,9 @@ ent-RMCTheLineGuideBook = Линия
 ent-RMCASRSinterfaceGuideBook = АСРС-интерфейс
   .desc = Интерфейс АСРС
 
-ent-RMCGuidebookPaperRequisitionsWritten = requisition invoice
-  .desc = A single unit of bureaucracy awaiting for approval.
+ent-RMCGuidebookPaperRequisitionsWritten = счет-фактура заявки
+  .desc = Единая бюрократическая единица, ожидающая одобрения.
 
-ent-RMCGuidebookPaperRequisitionsStamped = requisition invoice
-  .desc = A single unit of bureaucracy awaiting for approval.
+ent-RMCGuidebookPaperRequisitionsStamped = счет-фактура заявки
+  .desc = Единая бюрократическая единица, ожидающая одобрения.
 

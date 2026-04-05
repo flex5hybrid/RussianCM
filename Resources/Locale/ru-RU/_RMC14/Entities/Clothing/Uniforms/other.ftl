@@ -1,173 +1,173 @@
-ent-RMCJumpsuitCivilianFrontier = frontier jumpsuit
-  .desc = A cargo jumpsuit dressed down for full range of motion and state-of-the-art frontier temperature control. It's the best thing an engineer can wear in the Outer Veil.
+ent-RMCJumpsuitCivilianFrontier = пограничный комбинезон
+  .desc = Комбинезон-карго, обеспечивающий полную свободу движений и ультрасовременный контроль температуры. 
 
-ent-RMCJumpsuitCLFSoldier = Colonial Liberation Front uniform
-  .desc = A stylish grey-green jumpsuit - standard issue for colonists. This version appears to have the symbol of the Colonial Liberation Front emblazoned in select areas.
+ent-RMCJumpsuitCLFSoldier = Униформа Фронта освобождения колоний
+  .desc = Стильный серо-зеленый комбинезон – стандартная вещь для колонистов. 
 
-ent-RMCJumpsuitCivilianEngineerWorker = Weston-Yamada engineering utility uniform
-  .desc = A set of Weston-Yamada engineering utility workers uniform, a orange pair of work slacks and a grey polo-shirt with orange reflecting stripes.
+ent-RMCJumpsuitCivilianEngineerWorker = Униформа инженерно-технических служб Weston-Yamada
+  .desc = Комплект униформы инженерно-технических работников Weston-Yamada, пара оранжевых рабочих брюк и серая рубашка-поло с оранжевыми светоотражающими полосами.
 
-ent-RMCJumpsuitCivilianJanitor = janitor's jumpsuit
-  .desc = It's the official uniform of the colony's janitor.
+ent-RMCJumpsuitCivilianJanitor = комбинезон дворника
+  .desc = Это официальная форма дворника колонии.
 
 ent-RMCJumpsuitUNSecurity = Униформа службы безопасности Организации Объединенных Наций
 
-ent-RMCJumpsuitCivilianSecurity = security officer's jumpsuit
-  .desc = It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection.
+ent-RMCJumpsuitCivilianSecurity = комбинезон офицера безопасности
+  .desc = Он изготовлен из немного более прочного материала, чем стандартные комбинезоны, что обеспечивает надежную защиту.
 
-ent-RMCJumpsuitKutjevoDrysuit = kutjevo drysuit
-  .desc = A heavy-duty drysuit worn by the workers on Kutjevo.
+ent-RMCJumpsuitKutjevoDrysuit = Кутьево сухой костюм
+  .desc = Прочный сухой костюм рабочих в Кутьево.
 
-ent-RMCJumpsuitKutjevoJumper = kutjevo jumper
-  .desc = A heavy-duty jumpsuit worn by the workers on Kutjevo.
+ent-RMCJumpsuitKutjevoJumper = кутьево джемпер
+  .desc = Прочный комбинезон рабочих в Кутьево.
 
-ent-RMCJumpsuitLaborersOveralls = laborer's overalls
-  .desc = A set of durable overalls for getting the job done.
+ent-RMCJumpsuitLaborersOveralls = комбинезон рабочего
+  .desc = Комплект прочного комбинезона для выполнения работы.
 
-ent-RMCJumpsuitEMT = EMT - Paramedic uniform
-  .desc = A set of EMT - Paramedic fatigues, this one is red.
+ent-RMCJumpsuitEMT = ЕМТ - Форма фельдшера
+  .desc = Комплект скорой помощи - униформа фельдшера, красного цвета.
 
-ent-RMCJumpsuitDoctor = medical doctor's uniform
-  .desc = They're made of a special fiber that provides minor protection against biohazards. They have a cross on the chest denoting that the wearer is trained medical personnel.
+ent-RMCJumpsuitDoctor = униформа врача
+  .desc = Они изготовлены из специального волокна, обеспечивающего незначительную защиту от биологических опасностей. 
 
-ent-RMCJumpsuitTMCC = tartarus-mining uniform
-  .desc = A set of Tartarus-Mining fatigues, a yellow pair of utility work slacks and a light-grey polo-shirt with red reflecting stripes.
+ent-RMCJumpsuitTMCC = тартар-шахтерская униформа
+  .desc = Комплект униформы Tartarus-Mining, пара желтых рабочих брюк и светло-серая рубашка-поло с красными светоотражающими полосами.
 
-ent-RMCJumpsuitDailyGrind = The Daily Grind uniform
-  .desc = A pair of black slacks and a white short-sleeved button-down shirt; a standard uniform for a 'The Daily Grind' employee. Are you ready for the daily grind?
+ent-RMCJumpsuitDailyGrind = Униформа Daily Grind
+  .desc = Пара черных брюк и белая рубашка на пуговицах с короткими рукавами; 
 
-ent-RMCJumpsuitPizzaGalaxy = Pizza-Galaxy uniform
-  .desc = A pair of red slacks and a white button-down shirt with a large 'Pizza-Galaxy' logo on the back; a standard uniform for a Pizza-Galaxy employee. Pizza-Galaxy! To infinity and beyond!
+ent-RMCJumpsuitPizzaGalaxy = Пицца-Галактика униформа
+  .desc = Пара красных брюк и белая рубашка на пуговицах с большим логотипом Pizza-Galaxy на спине; 
 
-ent-RMCJumpsuitSanitation = Weston-Yamada RFF - sanitation uniform
-  .desc = A set of Weston-Yamada RFF - Sanitation fatigues, a green pair of work slacks and a grey polo-shirt with green reflecting stripes.
+ent-RMCJumpsuitSanitation = Weston-Yamada RFF - санитарная униформа
+  .desc = Комплект RFF Weston-Yamada — санитарная одежда, пара зеленых рабочих брюк и серая рубашка-поло с зелеными светоотражающими полосами.
 
-ent-RMCJumpsuitWeyamart = Weyamart uniform
-  .desc = A pair of dark-grey slacks and an orange button-down shirt; a standard uniform for the Weston-Yamada branded supermarket 'Weyamart'.
+ent-RMCJumpsuitWeyamart = Униформа Вейамарт
+  .desc = Пара темно-серых брюк и оранжевая рубашка на пуговицах; 
 
-ent-RMCJumpsuitSteward = steward utilities
-  .desc = A stylish brown vest and shorts - uniforms like this are often worn by clerks and shop stewards.
+ent-RMCJumpsuitSteward = стюард коммунальные услуги
+  .desc = Стильный коричневый жилет и шорты — такую ​​форму часто носят продавцы и профсоюзные служащие.
 
-ent-RMCJumpsuitOrange = orange jumpsuit
-  .desc = It's standardised prisoner-wear. Its suit sensors are stuck in the "Fully On" position.
+ent-RMCJumpsuitOrange = оранжевый комбинезон
+  .desc = Это стандартная одежда заключенных. 
 
-ent-RMCJumpsuitCivilianScientist = scientist's utility jumpsuit
-  .desc = It's made of a special fiber that provides minor protection against biohazards. It has markings that denote the wearer as a scientist.
+ent-RMCJumpsuitCivilianScientist = деловой комбинезон ученого
+  .desc = Он изготовлен из специального волокна, обеспечивающего незначительную защиту от биологических опасностей. 
 
-ent-RMCJumpsuitCivilianVirologist = virologist's uniform
-  .desc = It's made of a special fiber that gives special protection against biohazards. It has a virologist rank stripe on it.
+ent-RMCJumpsuitCivilianVirologist = униформа вирусолога
+  .desc = Он изготовлен из специального волокна, обеспечивающего особую защиту от биологических опасностей. 
 
-ent-RMCJumpsuitChaplain = chaplain's jumpsuit
-  .desc = It's a black jumpsuit, often worn by religious folk.
+ent-RMCJumpsuitChaplain = комбинезон капеллана
+  .desc = Это черный комбинезон, который часто носят религиозные люди.
 
-ent-RMCJumpsuitRedShorts = red shorts
-  .desc = A ratty pair of red shorts. Smells of cigarettes.
+ent-RMCJumpsuitRedShorts = красные шорты
+  .desc = Крысиная пара красных шорт. 
 
-ent-RMCJumpsuitNormCivilianBlue = blue jumpsuit
-  .desc = A blue jumpsuit.
+ent-RMCJumpsuitNormCivilianBlue = синий комбинезон
+  .desc = Синий комбинезон.
 
-ent-RMCJumpsuitNormCivilianYellow = yellow jumpsuit
-  .desc = A yellow jumpsuit.
+ent-RMCJumpsuitNormCivilianYellow = желтый комбинезон
+  .desc = Желтый комбинезон.
 
-ent-RMCJumpsuitNormCivilianGrey = grey jumpsuit
-  .desc = A grey jumpsuit.
+ent-RMCJumpsuitNormCivilianGrey = серый комбинезон
+  .desc = Серый комбинезон.
 
-ent-RMCJumpsuitNormCivilianLightBrown = light brown jumpsuit
-  .desc = A light brown jumpsuit.
+ent-RMCJumpsuitNormCivilianLightBrown = светло-коричневый комбинезон
+  .desc = Светло-коричневый комбинезон.
 
-ent-RMCJumpsuitNormCivilianBrown = brown jumpsuit
-  .desc = A brown jumpsuit.
+ent-RMCJumpsuitNormCivilianBrown = коричневый комбинезон
+  .desc = Коричневый комбинезон.
 
-ent-RMCJumpsuitNormCivilianWhiteAlt = white jumpsuit
-  .desc = A white jumpsuit.
+ent-RMCJumpsuitNormCivilianWhiteAlt = белый комбинезон
+  .desc = Белый комбинезон.
 
-ent-RMCJumpsuitCivilianYellow = yellow utility uniform
-  .desc = A grey utility uniform with yellow suspenders, made for shipside crew.
+ent-RMCJumpsuitCivilianYellow = желтая униформа
+  .desc = Серая служебная униформа с желтыми подтяжками, предназначенная для корабельного экипажа.
 
-ent-RMCJumpsuitCivilianRed = red utility uniform
-  .desc = A grey utility uniform with red suspenders and blue jeans, the sign of a veteran laborer, or someone not paid by the hour.
+ent-RMCJumpsuitCivilianRed = красная униформа
+  .desc = Серая рабочая униформа с красными подтяжками и синими джинсами — знак ветерана труда или человека, которому не платят почасово.
 
-ent-RMCJumpsuitCivilianBlue = blue utility uniform
-  .desc = A blue utility uniform with teal suspenders and rugged pants.
+ent-RMCJumpsuitCivilianBlue = Синяя униформа
+  .desc = Синяя униформа с бирюзовыми подтяжками и грубыми брюками.
 
-ent-RMCJumpsuitCivilianGreen = green utility uniform
-  .desc = A stylish green jumpsuit, popularly issued to UN contract workers on the frontier.
+ent-RMCJumpsuitCivilianGreen = зеленая униформа
+  .desc = Стильный зеленый комбинезон, который обычно выдают контрактникам ООН на границе.
 
-ent-RMCJumpsuitCivilianBrown = brown utility uniform
-  .desc = A stylish brown jumpsuit, popularly issued to UN contract workers on the frontier.
+ent-RMCJumpsuitCivilianBrown = коричневая униформа
+  .desc = Стильный коричневый комбинезон, который обычно выдают контрактникам ООН на границе.
 
-ent-RMCJumpsuitCivilian = gray utility uniform
-  .desc = A stylish gray jumpsuit, popularly issued to UN contract workers on the frontier.
+ent-RMCJumpsuitCivilian = серая униформа
+  .desc = Стильный серый комбинезон, который обычно выдают контрактникам ООН на границе.
 
-ent-RMCJumpsuitFreelancer = freelancer fatigues
-  .desc = A set of loose-fitting fatigues, perfect for an informal mercenary. Smells like gunpowder, apple pie, and covered in grease and sake stains.
+ent-RMCJumpsuitFreelancer = фрилансер
+  .desc = Комплект свободной униформы, идеально подходящий для неофициального наемника. 
 
-ent-RMCJumpsuitMarsoc = special operative uniform
-  .desc = A black uniform for elite Marine personnel. Designed to be comfortable and help blend into dark environments.
+ent-RMCJumpsuitMarsoc = специальная оперативная форма
+  .desc = Черная униформа для элитного персонала Морпеха. 
 
-ent-RMCJumpsuitMercenaryEngineer = mercenary engineer fatigues
-  .desc = A blue suit with yellow accents, used by engineers. There is an unknown symbol emblazed on the suit.
+ent-RMCJumpsuitMercenaryEngineer = наемник-инженер
+  .desc = Синий костюм с желтыми вставками, используемый инженерами. 
 
-ent-RMCJumpsuitMercenaryMiner = mercenary miner fatigues
-  .desc = A beige suit with a red armband. It looks a little thin, like it wasn't designed for protection. There is an unknown symbol emblazed on the suit.
+ent-RMCJumpsuitMercenaryMiner = униформа наемника-шахтера
+  .desc = Бежевый костюм с красной повязкой. 
 
-ent-RMCJumpsuitMercenaryHeavy = mercenary fatigues
-  .desc = A thick, beige suit with a red armband. There is an unknown symbol emblazed on the suit.
+ent-RMCJumpsuitMercenaryHeavy = наемник
+  .desc = Плотный бежевый костюм с красной повязкой на рукаве. 
 
-ent-RMCJumpsuitDutchBandolier = hunting clothes
-  .desc = A set of tailored clothes, made from fine but sturdy reinforced fabrics. Protects from thorns, weather, and the cuts and scrapes that forever bedevil outdoorsmen.
+ent-RMCJumpsuitDutchBandolier = охотничья одежда
+  .desc = Комплект сшитой на заказ одежды из тонких, но прочных армированных тканей. 
 
-ent-RMCJumpsuitDutch = Dutch's Dozen uniform
-  .desc = A comfortable uniform worn by the Dutch's Dozen mercenaries. It's seen some definite wear and tear, but is still in good condition.
+ent-RMCJumpsuitDutch = Униформа голландской дюжины
+  .desc = Удобная униформа наемников «Голландской дюжины». 
 
-ent-RMCJumpsuitCorrespondent = correspodent uniform
-  .desc = Standard-issue correspodents's uniform.
+ent-RMCJumpsuitCorrespondent = корреспондентская униформа
+  .desc = Стандартная форма корреспондентов.
 
-ent-RMCJumpsuitPizza = pizza delivery uniform
-  .desc = An ill-fitting, slightly stained uniform for a pizza delivery pilot. Smells of cheese.
+ent-RMCJumpsuitPizza = униформа для доставки пиццы
+  .desc = Неподходящая по размеру, слегка испачканная униформа пилота по доставке пиццы. 
 
-ent-RMCJumpsuitCorrespondentBlack = correspodent uniform
-  .desc = Standard-issue correspodents's uniform.
+ent-RMCJumpsuitCorrespondentBlack = корреспондентская униформа
+  .desc = Стандартная форма корреспондентов.
 
-ent-RMCJumpsuitCorrespondentOrange = correspodent uniform
-  .desc = Standard-issue correspodents's uniform.
+ent-RMCJumpsuitCorrespondentOrange = корреспондентская униформа
+  .desc = Стандартная форма корреспондентов.
 
-ent-RMCJumpsuitCorrespondentRed = correspodent uniform
-  .desc = Standard-issue correspodents's uniform.
+ent-RMCJumpsuitCorrespondentRed = корреспондентская униформа
+  .desc = Стандартная форма корреспондентов.
 
-ent-RMCJumpsuitMarsocWebbingBuckshot = special operative uniform
-  .desc = A black uniform for elite Marine personnel. Designed to be comfortable and help blend into dark environments.
+ent-RMCJumpsuitMarsocWebbingBuckshot = специальная оперативная форма
+  .desc = Черная униформа для элитного персонала Морпеха. 
 
-ent-RMCJumpsuitNormCivilianBlackWebbing = yellow jumpsuit
-  .desc = A yellow jumpsuit.
+ent-RMCJumpsuitNormCivilianBlackWebbing = желтый комбинезон
+  .desc = Желтый комбинезон.
 
-ent-RMCJumpsuitEMTGreen = EMT - Paramedic uniform
-  .desc = A set of EMT - Paramedic fatigues, this one is green.
+ent-RMCJumpsuitEMTGreen = ЕМТ - Форма фельдшера
+  .desc = Комплект скорой помощи - униформа фельдшера, зеленого цвета.
 
-ent-RMCJumpsuitRiotControl = riot control uniform
-  .desc = Overalls made of kevlar cover a snazzy blue dress shirt. Often utilized in riot control situations.
+ent-RMCJumpsuitRiotControl = униформа для борьбы с беспорядками
+  .desc = Комбинезон из кевлара сочетается с эффектной синей классической рубашкой. 
 
-ent-RMCJumpsuitRiotControlB92FS = riot control uniform
-  .desc = Overalls made of kevlar cover a snazzy blue dress shirt. Often utilized in riot control situations.
+ent-RMCJumpsuitRiotControlB92FS = униформа для борьбы с беспорядками
+  .desc = Комбинезон из кевлара сочетается с эффектной синей классической рубашкой. 
 
-ent-RMCJumpsuitRiotControlMK45 = riot control uniform
-  .desc = Overalls made of kevlar cover a snazzy blue dress shirt. Often utilized in riot control situations.
+ent-RMCJumpsuitRiotControlMK45 = униформа для борьбы с беспорядками
+  .desc = Комбинезон из кевлара сочетается с эффектной синей классической рубашкой. 
 
-ent-RMCJumpsuitRiotControlM1984 = riot control uniform
-  .desc = Overalls made of kevlar cover a snazzy blue dress shirt. Often utilized in riot control situations.
+ent-RMCJumpsuitRiotControlM1984 = униформа для борьбы с беспорядками
+  .desc = Комбинезон из кевлара сочетается с эффектной синей классической рубашкой. 
 
-ent-RMCJumpsuitCivilianEngineerWorkerAlt = Weston-Yamada engineering utility uniform
-  .desc = A set of Weston-Yamada engineering utility workers uniform, a blue pair of work slacks and a grey polo-shirt with yellow reflecting stripes.
+ent-RMCJumpsuitCivilianEngineerWorkerAlt = Униформа инженерно-технических служб Weston-Yamada
+  .desc = Комплект униформы инженерно-технических работников Weston-Yamada, пара синих рабочих брюк и серая рубашка-поло с желтыми светоотражающими полосами.
 
-ent-RMCJumpsuitCLFWebbing = Colonial Liberation Front uniform
-  .desc = A stylish grey-green jumpsuit - standard issue for colonists. This version appears to have the symbol of the Colonial Liberation Front emblazoned in select areas.
+ent-RMCJumpsuitCLFWebbing = Униформа Фронта освобождения колоний
+  .desc = Стильный серо-зеленый комбинезон – стандартная вещь для колонистов. 
 
-ent-RMCJumpsuitCLFWebbingMAR50 = Colonial Liberation Front uniform
-  .desc = A stylish grey-green jumpsuit - standard issue for colonists. This version appears to have the symbol of the Colonial Liberation Front emblazoned in select areas.
+ent-RMCJumpsuitCLFWebbingMAR50 = Униформа Фронта освобождения колоний
+  .desc = Стильный серо-зеленый комбинезон – стандартная вещь для колонистов. 
 
-ent-RMCJumpsuitCLFWebbingBuckshot = Colonial Liberation Front uniform
-  .desc = A stylish grey-green jumpsuit - standard issue for colonists. This version appears to have the symbol of the Colonial Liberation Front emblazoned in select areas.
+ent-RMCJumpsuitCLFWebbingBuckshot = Униформа Фронта освобождения колоний
+  .desc = Стильный серо-зеленый комбинезон – стандартная вещь для колонистов. 
 
-ent-RMCJumpsuitCLFWebbingSurgical = Colonial Liberation Front uniform
-  .desc = A stylish grey-green jumpsuit - standard issue for colonists. This version appears to have the symbol of the Colonial Liberation Front emblazoned in select areas.
+ent-RMCJumpsuitCLFWebbingSurgical = Униформа Фронта освобождения колоний
+  .desc = Стильный серо-зеленый комбинезон – стандартная вещь для колонистов. 
 

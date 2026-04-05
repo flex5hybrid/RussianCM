@@ -1,4 +1,4 @@
-ent-RMCSpawnerCorpseWeYaManager = Corpse Spawner - Corporate Supervisor
+ent-RMCSpawnerCorpseWeYaManager = Создатель трупов - Корпоративный супервайзер
 
 ent-RMCSpawnerCorpseWeYaPMCStandardBurst = Создатель трупов - Стандарт We-Ya PMC
 
@@ -8,39 +8,39 @@ ent-RMCSpawnerCorpseWeYaGoonKutjevo = Создатель трупов - We-Ya Go
 
 ent-RMCSpawnerCorpseWeYaGoon = Создатель трупов - We-Ya Goon
 
-ent-RMCSpawnerCorpseColonistKutjevoBust = Corpse Spawner - Colonist Kutjevo
+ent-RMCSpawnerCorpseColonistKutjevoBust = Создатель трупов - Колонист Кутьево
 
-ent-RMCSpawnerCorpseColonistKutjevo = Corpse Spawner - Colonist Kutjevo
+ent-RMCSpawnerCorpseColonistKutjevo = Создатель трупов - Колонист Кутьево
 
-ent-RMCSpawnerCorpseColonistBust = Corpse Spawner - Colonist
+ent-RMCSpawnerCorpseColonistBust = Создатель трупов - Колонист
 
-ent-RMCSpawnerCorpseColonist = Corpse Spawner - Colonist
+ent-RMCSpawnerCorpseColonist = Создатель трупов - Колонист
 
-ent-RMCSpawnerCorpsePrisonGuard = Corpse Spawner - Prison Guard
+ent-RMCSpawnerCorpsePrisonGuard = Создатель трупов - Тюремный охранник
 
-ent-RMCSpawnerCorpseLiaison = Corpse Spawner - Corporate Liaison
+ent-RMCSpawnerCorpseLiaison = Создатель трупов — корпоративная связь
 
 ent-RMCSpawnerCorpseDeputy = Создатель трупов - заместитель CMB
 
-ent-RMCSpawnerCorpseSecurity = Corpse Spawner - Security Officer
+ent-RMCSpawnerCorpseSecurity = Создатель трупов — офицер службы безопасности
 
-ent-RMCSpawnerCorpseMiner = Corpse Spawner - Shaft Miner
+ent-RMCSpawnerCorpseMiner = Создатель трупов - Шахтёр
 
-ent-RMCSpawnerCorpseScientistAegis = Corpse Spawner - Aegis Scientist
+ent-RMCSpawnerCorpseScientistAegis = Создатель трупов — учёный Эгиды
 
-ent-RMCSpawnerCorpseScientist = Corpse Spawner - Scientist
+ent-RMCSpawnerCorpseScientist = Создатель трупов — учёный
 
-ent-RMCSpawnerCorpseEngineer = Corpse Spawner - Engineer
+ent-RMCSpawnerCorpseEngineer = Создатель трупов — Инженер
 
-ent-RMCSpawnerCorpseDoctor = Corpse Spawner - Doctor
+ent-RMCSpawnerCorpseDoctor = Создатель трупов - Доктор
 
-ent-RMCSpawnerCorpseChef = Corpse Spawner - Chef
+ent-RMCSpawnerCorpseChef = Создатель трупов - Шеф-повар
 
-ent-RMCSpawnerCorpsePrisoner = Corpse Spawner - Prisoner
+ent-RMCSpawnerCorpsePrisoner = Создатель трупов - Узник
 
-ent-RMCSpawnerCorpseUNRiotOfficer = Corpse Spawner - CMB Riot Control Officer
+ent-RMCSpawnerCorpseUNRiotOfficer = Создатель трупов - офицер CMB по борьбе с беспорядками
 
-ent-RMCSpawnerCorpseUNRiotOfficerBurst = Corpse Spawner - CMB Riot Control Officer
+ent-RMCSpawnerCorpseUNRiotOfficerBurst = Создатель трупов - офицер CMB по борьбе с беспорядками
 
-ent-RMCSpawnerCorpseCLF = Corpse Spawner - CLF Soldier
+ent-RMCSpawnerCorpseCLF = Создатель трупов - Солдат CLF
 

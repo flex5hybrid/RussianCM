@@ -1,5 +1,5 @@
 ent-RMCCampfire = костер
 
-ent-RMCBrazier = brazier
-  .desc = A burning pile of wood in a metal plate.
+ent-RMCBrazier = мангал
+  .desc = Горящая куча дров в металлической пластине.
 

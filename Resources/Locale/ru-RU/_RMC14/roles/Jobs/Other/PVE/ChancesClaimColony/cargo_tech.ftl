@@ -1,5 +1,5 @@
 ent-RMCSpawnPointSurvivorChancesCargoTech = точка появления складского работника
-  .desc = A RMC14 job spawner. Used for roundstart and late joins.
+  .desc = Создатель заданий RMC14. 
 
 ent-RMCRandomHumanoidSurvivorChancesCargoTech = Роль призрака складского работника
 

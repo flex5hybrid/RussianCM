@@ -1,34 +1,34 @@
-ent-RMCWindowHybrisaHull = hull window
-  .desc = A glass window. Light refracts incorrectly when looking through. It looks rather strong. No way to get through here.
+ent-RMCWindowHybrisaHull = окно корпуса
+  .desc = Стеклянное окно. 
 
 ent-RMCWindowHybrisaReinforced = усиленное окно
 
 ent-RMCWindowHybrisa = окно
 
-ent-RMCWindowFrameHybrisa = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameHybrisa = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowFrameHybrisaReinforced = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameHybrisaReinforced = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowFrameHybrisaMedicalReinforced = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameHybrisaMedicalReinforced = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowFrameHybrisaEngiReinforced = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameHybrisaEngiReinforced = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowFrameHybrisaOfficeReinforced = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameHybrisaOfficeReinforced = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowFrameHybrisaSpacePort = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameHybrisaSpacePort = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowFrameHybrisaSpacePortReinforced = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameHybrisaSpacePortReinforced = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowFrameHybrisaSpacePortCell = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameHybrisaSpacePortCell = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowFrameHybrisaResearchReinforced = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameHybrisaResearchReinforced = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 

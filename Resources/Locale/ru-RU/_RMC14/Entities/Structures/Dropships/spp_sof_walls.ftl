@@ -1,237 +1,237 @@
 ent-RMCBaseSPPSOFDropshipWall = СПП-ДС-3 Стенка "Ворон"
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall1 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall1 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall2 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall2 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall3 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall3 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall4 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall4 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall5 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall5 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall6 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall6 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall7 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall7 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall8 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall8 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall9 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall9 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall10 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall10 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall11 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall11 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall12 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall12 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall13 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall13 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall14 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall14 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall15 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall15 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall16 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall16 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall17 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall17 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall18 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall18 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall19 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall19 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall20 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall20 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall21 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall21 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall22 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall22 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall23 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall23 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall24 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall24 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall25 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall25 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall26 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall26 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall27 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall27 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall28 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall28 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall29 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall29 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall30 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall30 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall31 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall31 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall32 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall32 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall33 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall33 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall34 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall34 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall35 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall35 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall36 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall36 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall37 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall37 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall38 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall38 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall39 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall39 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall40 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall40 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall41 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall41 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall42 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall42 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall43 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall43 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall44 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall44 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall45 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall45 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall46 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall46 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall47 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall47 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall48 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall48 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall49 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall49 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall50 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall50 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall51 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall51 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall52 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall52 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall53 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall53 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall54 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall54 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall55 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall55 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall56 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall56 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall57 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall57 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall58 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall58 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall59 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall59 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall60 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall60 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall61 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall61 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall62 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall62 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall63 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall63 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall64 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall64 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall65 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall65 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall66 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall66 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall67 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall67 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall68 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall68 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall69 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall69 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall70 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall70 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall71 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall71 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall72 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall72 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall73 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall73 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall74 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall74 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall75 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall75 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall76 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall76 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall77 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall77 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWall78 = SPP-DS-3 'Voron' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWall78 = СПП-ДС-3 Стенка "Ворон"
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 

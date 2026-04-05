@@ -1,5 +1,5 @@
 ent-RMCGearSurvivorPresetLV624CorporateLiaison = Пресет колониста lv624
 
-ent-RMCSpawnPointSurvivorLV624CorporateLiaison = survivor lv624 coporate liaison spawn point
-  .desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-RMCSpawnPointSurvivorLV624CorporateLiaison = выживший lv624 точка спавна совместной связи
+  .desc = Создатель заданий RMC14. 
 

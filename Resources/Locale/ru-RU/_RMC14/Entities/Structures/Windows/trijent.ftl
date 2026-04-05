@@ -4,12 +4,12 @@ ent-RMCWindowHangar = усиленное окно
 
 ent-RMCWindowChigusa = усиленное окно
 
-ent-RMCWindowFrameChigusa = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameChigusa = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowFrameHangar = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameHangar = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowFrameBunker = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameBunker = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 

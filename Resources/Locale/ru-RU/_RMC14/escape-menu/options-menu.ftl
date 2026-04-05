@@ -1,4 +1,4 @@
-ui-options-header-rmc = RMC14
+ui-options-header-rmc = РМЦ14
 ui-options-header-rmc-xeno = Ксеноморфы
 ui-options-function-rmc-activate-attachable-barrel = Активировать ствольный модуль
 ui-options-function-rmc-activate-attachable-rail = Активировать направляющую

@@ -1,237 +1,237 @@
 ent-RMCBaseSPPSOFDropshipWallAlt = СПП-ДС-3 "Волк" стенка
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt1 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt1 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt2 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt2 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt3 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt3 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt4 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt4 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt5 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt5 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt6 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt6 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt7 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt7 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt8 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt8 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt9 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt9 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt10 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt10 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt11 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt11 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt12 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt12 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt13 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt13 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt14 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt14 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt15 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt15 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt16 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt16 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt17 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt17 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt18 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt18 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt19 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt19 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt20 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt20 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt21 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt21 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt22 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt22 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt23 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt23 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt24 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt24 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt25 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt25 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt26 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt26 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt27 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt27 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt28 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt28 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt29 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt29 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt30 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt30 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt31 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt31 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt32 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt32 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt33 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt33 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt34 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt34 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt35 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt35 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt36 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt36 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt37 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt37 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt38 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt38 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt39 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt39 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt40 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt40 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt41 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt41 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt42 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt42 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt43 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt43 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt44 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt44 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt45 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt45 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt46 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt46 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt47 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt47 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt48 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt48 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt49 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt49 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt50 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt50 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt51 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt51 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt52 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt52 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt53 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt53 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt54 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt54 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt55 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt55 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt56 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt56 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt57 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt57 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt58 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt58 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt59 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt59 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt60 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt60 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt61 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt61 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt62 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt62 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt63 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt63 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt64 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt64 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt65 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt65 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt66 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt66 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt67 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt67 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt68 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt68 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt69 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt69 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt70 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt70 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt71 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt71 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt72 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt72 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt73 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt73 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt74 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt74 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt75 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt75 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt76 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt76 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt77 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt77 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCSPPSOFDropshipWallAlt78 = SPP-DS-3 'Volk' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCSPPSOFDropshipWallAlt78 = СПП-ДС-3 "Волк" стенка
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 

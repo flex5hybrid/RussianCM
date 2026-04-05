@@ -25,9 +25,9 @@ ent-RMCPVEArmorCaseB12 = Выкройка B12 Комплект Морпех Бр
 ent-RMCPVEArmorCaseM3SGO = Комплект боевой обвязки МЛ66А
   .desc = Кейс с боевой обвязкой ML66A, шлемом M10 и съемными деталями Брони.
 
-ent-RMCArmorM3PVESmooth = M3 pattern marine armor
-  .desc = Standard UNMC issue M3 Pattern Personal Armor. Composite ballistic armor, integral biomonitoring system, and brackets for the IMP system as well as the TNR Shoulder Lamp.
+ent-RMCArmorM3PVESmooth = Выкройка М3 Морпех Броня
+  .desc = Стандартный выпуск UNMC Персональная броня M3 Pattern. 
 
-ent-RMCArmorM3PVERidged = M3 pattern marine armor
-  .desc = Standard UNMC issue M3 Pattern Personal Armor. Composite ballistic armor, integral biomonitoring system, and brackets for the IMP system as well as the TNR Shoulder Lamp.
+ent-RMCArmorM3PVERidged = Выкройка М3 Морпех Броня
+  .desc = Стандартный выпуск UNMC Персональная броня M3 Pattern. 
 

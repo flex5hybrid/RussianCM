@@ -1,41 +1,41 @@
-ent-RMCWindowAIReinforced = reinforced window
-  .desc = A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
+ent-RMCWindowAIReinforced = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
 
-ent-RMCWindowWoodReinforced = reinforced window
-  .desc = A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
+ent-RMCWindowWoodReinforced = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
 
 ent-RMCWindowWood = окно
 
-ent-RMCHunterReinforcedWindow = reinforced window
-  .desc = A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
+ent-RMCHunterReinforcedWindow = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
 
-ent-CMWindowWhiteColonyReinforced = reinforced window
-  .desc = A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
+ent-CMWindowWhiteColonyReinforced = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
 
-ent-CMWindowWhiteColony = window
-  .desc = A glass window. It looks thin and flimsy. A few knocks with anything should shatter it.
+ent-CMWindowWhiteColony = окно
+  .desc = Стеклянное окно. 
 
-ent-CMWindowReinforcedWhite = reinforced window
-  .desc = A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
+ent-CMWindowReinforcedWhite = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
 
-ent-CMWindowReinforcedWhiteHull = hull window
-  .desc = An ultra-reinforced window designed to keep research a secure area. This one was made out of exotic materials to prevent hull breaches. No way to get through here.
+ent-CMWindowReinforcedWhiteHull = окно корпуса
+  .desc = Ультра-усиленное окно, предназначенное для обеспечения безопасности исследований. 
 
-ent-CMWindowReinforcedAlmayer = reinforced window
-  .desc = A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
+ent-CMWindowReinforcedAlmayer = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
 
-ent-CMWindowReinforcedAlmayerHull = hull window
-  .desc = A glass window with a special rod matrix inside a wall frame. This one was made out of exotic materials to prevent hull breaches. No way to get through here.
+ent-CMWindowReinforcedAlmayerHull = окно корпуса
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
 
-ent-RMCWindowReinforcedAIHull = hull window
-  .desc = A glass window with a special rod matrix inside a wall frame. This one was made out of exotic materials to prevent hull breaches. No way to get through here.
+ent-RMCWindowReinforcedAIHull = окно корпуса
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
 
-ent-RMCWindowReinforcedAIHullBlack = hull window
-  .desc = A glass window with a special rod matrix inside a wall frame. This one was made out of exotic materials to prevent hull breaches. No way to get through here.
+ent-RMCWindowReinforcedAIHullBlack = окно корпуса
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
 
-ent-RMCWindowReinforcedAlmayerHullHijackBustable = hull window
-  .desc = A glass window with a special rod matrix inside a wall frame. This one was made out of exotic materials to prevent hull breaches. No way to get through here.
+ent-RMCWindowReinforcedAlmayerHullHijackBustable = окно корпуса
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
 
-ent-CMWindowWhiteColonyHull = hull window
-  .desc = A glass window. Light refracts incorrectly when looking through. It looks rather strong. No way to get through here.
+ent-CMWindowWhiteColonyHull = окно корпуса
+  .desc = Стеклянное окно. 
 

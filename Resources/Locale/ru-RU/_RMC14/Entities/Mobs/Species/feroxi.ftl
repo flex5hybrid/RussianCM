@@ -1,3 +1,3 @@
-ent-MobFeroxiDummy = Feroxi Dummy
-  .desc = A dummy feroxi meant to be used in character setup.
+ent-MobFeroxiDummy = Манекен Ферокси
+  .desc = Манекен ферокси, предназначенный для использования при настройке персонажа.
 ent-RMCMobFeroxi = ересь

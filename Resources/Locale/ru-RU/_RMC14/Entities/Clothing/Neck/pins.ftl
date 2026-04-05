@@ -1,42 +1,42 @@
 ent-RMCPridePinBase = значок гордости
   .desc = Абстрактная булавка гордости.
 
-ent-RMCClothingNeckLGBTPin = pin
-  .desc = Be nothing do crime.
+ent-RMCClothingNeckLGBTPin = приколоть
+  .desc = Будьте никем, совершайте преступления.
 
-ent-RMCClothingNeckAromanticPin = pin
-  .desc = Be nothing do crime.
+ent-RMCClothingNeckAromanticPin = приколоть
+  .desc = Будьте никем, совершайте преступления.
 
-ent-RMCClothingNeckAsexualPin = pin
-  .desc = Be nothing do crime.
+ent-RMCClothingNeckAsexualPin = приколоть
+  .desc = Будьте никем, совершайте преступления.
 
-ent-RMCClothingNeckBisexualPin = pin
-  .desc = Be nothing do crime.
+ent-RMCClothingNeckBisexualPin = приколоть
+  .desc = Будьте никем, совершайте преступления.
 
-ent-RMCClothingNeckGayPin = pin
-  .desc = Be nothing do crime.
+ent-RMCClothingNeckGayPin = приколоть
+  .desc = Будьте никем, совершайте преступления.
 
-ent-RMCClothingNeckIntersexPin = pin
-  .desc = Be nothing do crime.
+ent-RMCClothingNeckIntersexPin = приколоть
+  .desc = Будьте никем, совершайте преступления.
 
-ent-RMCClothingNeckLesbianPin = pin
-  .desc = Be nothing do crime.
+ent-RMCClothingNeckLesbianPin = приколоть
+  .desc = Будьте никем, совершайте преступления.
 
-ent-RMCClothingNeckNonBinaryPin = pin
-  .desc = Be nothing do crime.
+ent-RMCClothingNeckNonBinaryPin = приколоть
+  .desc = Будьте никем, совершайте преступления.
 
-ent-RMCClothingNeckPansexualPin = pin
-  .desc = Be nothing do crime.
+ent-RMCClothingNeckPansexualPin = приколоть
+  .desc = Будьте никем, совершайте преступления.
 
-ent-RMCClothingNeckOmnisexualPin = pin
-  .desc = Be nothing do crime.
+ent-RMCClothingNeckOmnisexualPin = приколоть
+  .desc = Будьте никем, совершайте преступления.
 
-ent-RMCClothingNeckTransPin = pin
-  .desc = Be nothing do crime.
+ent-RMCClothingNeckTransPin = приколоть
+  .desc = Будьте никем, совершайте преступления.
 
-ent-RMCClothingNeckAutismPin = pin
-  .desc = Be nothing do crime.
+ent-RMCClothingNeckAutismPin = приколоть
+  .desc = Будьте никем, совершайте преступления.
 
-ent-RMCClothingNeckGoldAutismPin = pin
-  .desc = Be nothing do crime.
+ent-RMCClothingNeckGoldAutismPin = приколоть
+  .desc = Будьте никем, совершайте преступления.
 

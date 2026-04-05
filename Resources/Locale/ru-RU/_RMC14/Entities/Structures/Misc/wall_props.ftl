@@ -15,21 +15,21 @@ ent-RMCWallPropDeadTrooper = Неизвестный солдат
 ent-RMCWallPropDeadSteven = Представитель Стив Хайфиш
   .desc = Карта лежит у него на коленях.
 
-ent-RMCWallPropGraffitiTwo = graffiti
+ent-RMCWallPropGraffitiTwo = граффити
 
-ent-RMCWallPropGraffitiThree = graffiti
+ent-RMCWallPropGraffitiThree = граффити
 
-ent-RMCWallPropGraffitiFour = graffiti
+ent-RMCWallPropGraffitiFour = граффити
 
-ent-RMCWallPropGraffitiFive = graffiti
+ent-RMCWallPropGraffitiFive = граффити
 
-ent-RMCWallPropGraffitiSix = graffiti
+ent-RMCWallPropGraffitiSix = граффити
 
-ent-RMCWallPropGraffitiSeven = graffiti
+ent-RMCWallPropGraffitiSeven = граффити
 
-ent-RMCWallPropDeadPilotAlt = decapitated Weston-Yamada Pilot
-  .desc = What remains of a Weston-Yamada Pilot. Their entire head is missing. Where'd it roll off to?...
+ent-RMCWallPropDeadPilotAlt = обезглавленный пилот Уэстон-Ямада
+  .desc = То, что осталось от пилота Уэстон-Ямада. 
 
-ent-RMCWallPropDeadTrooperCabinet = Unknown Trooper
-  .desc = What remains of a unknown trooper. May they rest in peace.
+ent-RMCWallPropDeadTrooperCabinet = Неизвестный солдат
+  .desc = Что осталось от неизвестного солдата. 
 

@@ -1,5 +1,5 @@
 ent-RMCSpawnPointSurvivorChancesEnvironmentalResearcher = точка появления исследователя окружающей среды
-  .desc = A RMC14 job spawner. Used for roundstart and late joins.
+  .desc = Создатель заданий RMC14. 
 
 ent-RMCRandomHumanoidSurvivorChancesEnvironmentalResearcher = Шансы: роль призрака исследователя окружающей среды
 

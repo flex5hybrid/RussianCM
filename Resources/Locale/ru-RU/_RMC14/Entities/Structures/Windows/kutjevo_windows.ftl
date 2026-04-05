@@ -1,13 +1,13 @@
-ent-RMCWindowKutjevoHull = hull window
-  .desc = A glass window. Something tells you this one is somehow indestructible.
+ent-RMCWindowKutjevoHull = окно корпуса
+  .desc = Стеклянное окно. 
 
 ent-RMCWindowKutjevoReinforced = усиленное окно
 
 ent-RMCWindowKutjevo = окно
 
-ent-RMCWindowFrameKutjevo = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameKutjevo = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowFrameKutjevoReinforced = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameKutjevoReinforced = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 

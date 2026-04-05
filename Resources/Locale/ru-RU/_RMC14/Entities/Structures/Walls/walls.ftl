@@ -1,224 +1,224 @@
-ent-RMCWallHunterDegraded = degraded hunter wall
-  .desc = Ancient beyond measure, these walls make up the hull of a vessel of non human origin. Despite this, they can be felled with plastic explosives like any other opaque blocker.
+ent-RMCWallHunterDegraded = разрушенная стена охотника
+  .desc = Древние безмерно, эти стены составляют корпус судна нечеловеческого происхождения. 
 
-ent-RMCWallHunter = hunter wall
-  .desc = Nigh indestructible walls that make up the hull of a hunter ship.
+ent-RMCWallHunter = стена охотника
+  .desc = Почти неразрушимые стены, из которых состоит корпус корабля-охотника.
 
-ent-RMCWallContainmentWindow = cell window
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainmentWindow = окно ячейки
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 
-ent-RMCWallContainment = cell wall
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainment = клеточная стенка
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 
-ent-RMCWallElevatorGearAnimated = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorGearAnimated = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorGear = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorGear = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorResearch = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorResearch = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorFreight = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorFreight = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorDorm = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorDorm = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorArrivals = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorArrivals = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorButtonResearch = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorButtonResearch = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorButtonFreight = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorButtonFreight = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorButtonDorm = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorButtonDorm = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorButtonArrivals = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorButtonArrivals = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorNoConnect8 = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorNoConnect8 = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorNoConnect7 = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorNoConnect7 = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorNoConnect6 = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorNoConnect6 = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorNoConnect5 = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorNoConnect5 = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorNoConnect4 = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorNoConnect4 = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorNoConnect3 = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorNoConnect3 = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorNoConnect2 = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorNoConnect2 = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorNoConnect1 = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorNoConnect1 = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevatorBroken = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevatorBroken = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallElevator = elevator wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallElevator = стена лифта
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-CMWallJungle = jungle vegetation
-  .desc = Exceptionally dense vegetation that you can't see through.
+ent-CMWallJungle = растительность джунглей
+  .desc = Исключительно густая растительность, сквозь которую ничего не видно.
 
-ent-CMWallWood = wood wall
-  .desc = A wooden wall used to separate rooms.
+ent-CMWallWood = деревянная стена
+  .desc = Деревянная стена, используемая для разделения комнат.
 
-ent-CMWallCult = wall
-  .desc = The patterns engraved on the wall seem to shift as you try to focus on them. You feel sick.
+ent-CMWallCult = стена
+  .desc = Узоры, выгравированные на стене, кажутся смещающимися, когда вы пытаетесь на них сосредоточиться. 
 
-ent-CMWallRock = rock wall
-  .desc = A rough wall of hardened rock.
+ent-CMWallRock = каменная стена
+  .desc = Грубая стена из затвердевшего камня.
 
-ent-CMWallReinforcedHeavyAlmayerAI = heavy reinforced hull
-  .desc = An extremely reinforced metal wall used to isolate potentially dangerous areas. Looks virtually indestructible.
+ent-CMWallReinforcedHeavyAlmayerAI = тяжелый усиленный корпус
+  .desc = Чрезвычайно усиленная металлическая стена, используемая для изоляции потенциально опасных зон. 
 
-ent-CMWallReinforcedHeavyAlmayerWhite = heavy reinforced hull
-  .desc = A highly reinforced metal wall used to separate rooms and make up the ship. It would take a great impact to weaken this wall.
+ent-CMWallReinforcedHeavyAlmayerWhite = тяжелый усиленный корпус
+  .desc = Сильно укрепленная металлическая стена, используемая для разделения помещений и создания корабля. 
 
-ent-RMCWallAlmayerReinforcedHeavyDeco1 = heavy reinforced hull
-  .desc = A highly reinforced metal wall used to separate rooms and make up the ship. It would take a great impact to weaken this wall.
+ent-RMCWallAlmayerReinforcedHeavyDeco1 = тяжелый усиленный корпус
+  .desc = Сильно укрепленная металлическая стена, используемая для разделения помещений и создания корабля. 
 
-ent-CMWallReinforcedHeavyAlmayer = heavy reinforced hull
-  .desc = A highly reinforced metal wall used to separate rooms and make up the ship. It would take a great impact to weaken this wall.
+ent-CMWallReinforcedHeavyAlmayer = тяжелый усиленный корпус
+  .desc = Сильно укрепленная металлическая стена, используемая для разделения помещений и создания корабля. 
 
-ent-CMWallReinforcedHeavy = heavy reinforced hull
-  .desc = A huge chunk of ultra-reinforced metal used to separate rooms. Looks virtually indestructible.
+ent-CMWallReinforcedHeavy = тяжелый усиленный корпус
+  .desc = Огромный кусок сверхармированного металла, используемый для разделения комнат. 
 
-ent-CMWallReinforcedAlmayerAI = reinforced hull
-  .desc = A reinforced metal wall used to isolate potentially dangerous areas.
+ent-CMWallReinforcedAlmayerAI = усиленный корпус
+  .desc = Армированная металлическая стена, используемая для изоляции потенциально опасных зон.
 
-ent-CMWallReinforcedAlmayerWhite = reinforced hull
-  .desc = A reinforced metal wall used to separate rooms and make up the ship.
+ent-CMWallReinforcedAlmayerWhite = усиленный корпус
+  .desc = Усиленная металлическая стена, используемая для разделения помещений и создания корабля.
 
-ent-RMCWallAlmayerReinforcedDeco1 = reinforced hull
-  .desc = A huge chunk of reinforced metal used to separate rooms.
+ent-RMCWallAlmayerReinforcedDeco1 = усиленный корпус
+  .desc = Огромный кусок армированного металла, используемый для разделения комнат.
 
-ent-CMWallReinforcedAlmayer = reinforced hull
-  .desc = A reinforced metal wall used to separate rooms and make up the ship.
+ent-CMWallReinforcedAlmayer = усиленный корпус
+  .desc = Усиленная металлическая стена, используемая для разделения помещений и создания корабля.
 
 ent-CMWallSuperReinforced = усиленная стена
 
-ent-CMWallReinforced = reinforced wall
-  .desc = A huge chunk of reinforced metal used to separate rooms.
+ent-CMWallReinforced = усиленная стена
+  .desc = Огромный кусок армированного металла, используемый для разделения комнат.
 
-ent-CMWallMetalAlmayerWhite = wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-CMWallMetalAlmayerWhite = стена
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallAlmayerDeco1 = wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallAlmayerDeco1 = стена
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-CMWallMetalAlmayer = wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-CMWallMetalAlmayer = стена
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-CMWallMetal = wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-CMWallMetal = стена
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallAlmayerDeco2 = wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallAlmayerDeco2 = стена
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallAlmayerDeco3 = wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallAlmayerDeco3 = стена
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallAlmayerDeco4 = wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallAlmayerDeco4 = стена
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallAlmayerDecoElevator = wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallAlmayerDecoElevator = стена
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallAlmayerDecoFreight = wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCWallAlmayerDecoFreight = стена
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCBaseWallReinforced = reinforced wall
-  .desc = A huge chunk of reinforced metal used to separate rooms.
+ent-RMCBaseWallReinforced = усиленная стена
+  .desc = Огромный кусок армированного металла, используемый для разделения комнат.
 
-ent-RMCWallAlmayerReinforcedDeco2 = reinforced hull
-  .desc = A huge chunk of reinforced metal used to separate rooms.
+ent-RMCWallAlmayerReinforcedDeco2 = усиленный корпус
+  .desc = Огромный кусок армированного металла, используемый для разделения комнат.
 
-ent-RMCWallAlmayerReinforcedDeco3 = reinforced hull
-  .desc = A huge chunk of reinforced metal used to separate rooms.
+ent-RMCWallAlmayerReinforcedDeco3 = усиленный корпус
+  .desc = Огромный кусок армированного металла, используемый для разделения комнат.
 
-ent-RMCWallAlmayerReinforcedDeco4 = reinforced hull
-  .desc = A huge chunk of reinforced metal used to separate rooms.
+ent-RMCWallAlmayerReinforcedDeco4 = усиленный корпус
+  .desc = Огромный кусок армированного металла, используемый для разделения комнат.
 
-ent-RMCWallAlmayerReinforcedDecoElevator = reinforced hull
-  .desc = A huge chunk of reinforced metal used to separate rooms.
+ent-RMCWallAlmayerReinforcedDecoElevator = усиленный корпус
+  .desc = Огромный кусок армированного металла, используемый для разделения комнат.
 
-ent-RMCWallAlmayerReinforcedDecoFreight = reinforced hull
-  .desc = A huge chunk of reinforced metal used to separate rooms.
+ent-RMCWallAlmayerReinforcedDecoFreight = усиленный корпус
+  .desc = Огромный кусок армированного металла, используемый для разделения комнат.
 
-ent-RMCWallAlmayerReinforcedHeavyDeco2 = heavy reinforced hull
-  .desc = A highly reinforced metal wall used to separate rooms and make up the ship. It would take a great impact to weaken this wall.
+ent-RMCWallAlmayerReinforcedHeavyDeco2 = тяжелый усиленный корпус
+  .desc = Сильно укрепленная металлическая стена, используемая для разделения помещений и создания корабля. 
 
-ent-RMCWallAlmayerReinforcedHeavyDeco3 = heavy reinforced hull
-  .desc = A highly reinforced metal wall used to separate rooms and make up the ship. It would take a great impact to weaken this wall.
+ent-RMCWallAlmayerReinforcedHeavyDeco3 = тяжелый усиленный корпус
+  .desc = Сильно укрепленная металлическая стена, используемая для разделения помещений и создания корабля. 
 
-ent-RMCWallAlmayerReinforcedHeavyDeco4 = heavy reinforced hull
-  .desc = A highly reinforced metal wall used to separate rooms and make up the ship. It would take a great impact to weaken this wall.
+ent-RMCWallAlmayerReinforcedHeavyDeco4 = тяжелый усиленный корпус
+  .desc = Сильно укрепленная металлическая стена, используемая для разделения помещений и создания корабля. 
 
-ent-RMCWallAlmayerReinforcedHeavyDecoElevator = heavy reinforced hull
-  .desc = A highly reinforced metal wall used to separate rooms and make up the ship. It would take a great impact to weaken this wall.
+ent-RMCWallAlmayerReinforcedHeavyDecoElevator = тяжелый усиленный корпус
+  .desc = Сильно укрепленная металлическая стена, используемая для разделения помещений и создания корабля. 
 
-ent-RMCWallAlmayerReinforcedHeavyDecoFreight = heavy reinforced hull
-  .desc = A highly reinforced metal wall used to separate rooms and make up the ship. It would take a great impact to weaken this wall.
+ent-RMCWallAlmayerReinforcedHeavyDecoFreight = тяжелый усиленный корпус
+  .desc = Сильно укрепленная металлическая стена, используемая для разделения помещений и создания корабля. 
 
-ent-CMWallReinforcedHeavyAlmayerAINoLights = heavy reinforced hull
-  .desc = An extremely reinforced metal wall used to isolate potentially dangerous areas. Looks virtually indestructible.
+ent-CMWallReinforcedHeavyAlmayerAINoLights = тяжелый усиленный корпус
+  .desc = Чрезвычайно усиленная металлическая стена, используемая для изоляции потенциально опасных зон. 
 
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWallJungleStrata = jungle vegetation
-  .desc = Exceptionally dense vegetation that you can't see through.
+ent-RMCWallJungleStrata = растительность джунглей
+  .desc = Исключительно густая растительность, сквозь которую ничего не видно.
 
-ent-RMCWallContainmentCorner = cell wall
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainmentCorner = клеточная стенка
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 
-ent-RMCWallContainmentWest = cell wall
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainmentWest = клеточная стенка
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 
-ent-RMCWallContainmentEast = cell wall
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainmentEast = клеточная стенка
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 
-ent-RMCWallContainmentNorth = cell wall
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainmentNorth = клеточная стенка
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 
-ent-RMCWallContainmentConnect1 = cell wall
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainmentConnect1 = клеточная стенка
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 
-ent-RMCWallContainmentConnect2 = cell wall
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainmentConnect2 = клеточная стенка
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 
-ent-RMCWallContainmentConnect3 = cell wall
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainmentConnect3 = клеточная стенка
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 
-ent-RMCWallContainmentConnect4 = cell wall
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainmentConnect4 = клеточная стенка
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 
-ent-RMCWallContainmentConnect5 = cell wall
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainmentConnect5 = клеточная стенка
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 
-ent-RMCWallContainmentConnect6 = cell wall
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainmentConnect6 = клеточная стенка
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 
-ent-RMCWallContainmentConnect7 = cell wall
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainmentConnect7 = клеточная стенка
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 
-ent-RMCWallContainmentWindow2 = cell window
-  .desc = A metal wall used to separate rooms and make up the ship
+ent-RMCWallContainmentWindow2 = окно ячейки
+  .desc = Металлическая стена, разделяющая комнаты и образующая корабль.
 

@@ -1,11 +1,11 @@
-ent-RMCFenceBroken = broken fence
-  .desc = A mess of broken wire strewn between two poles, it's not blocking anyone's way through.
+ent-RMCFenceBroken = сломанный забор
+  .desc = Между двумя столбами разбросана кучка оборванных проводов, никому не загораживающая проход.
 
 ent-CMFence = изгородь
 
-ent-RMCFenceHybrisaBroken = broken fence
-  .desc = A mess of broken wire strewn between two poles, it's not blocking anyone's way through.
+ent-RMCFenceHybrisaBroken = сломанный забор
+  .desc = Между двумя столбами разбросана кучка оборванных проводов, никому не загораживающая проход.
 
-ent-RMCFenceHybrisaElectricBroken = broken fence
-  .desc = A mess of broken wire strewn between two poles, it's not blocking anyone's way through.
+ent-RMCFenceHybrisaElectricBroken = сломанный забор
+  .desc = Между двумя столбами разбросана кучка оборванных проводов, никому не загораживающая проход.
 

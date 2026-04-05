@@ -6,5 +6,5 @@ ent-RMCMagazineSMGL7A3SquashHead = Головка для магазина L7A3 (
 ent-RMCCartridgeSMG9mmSquashHead = 9-мм картридж с плоской головкой
 
 ent-RMCBulletSMG9mmSquashHead = 9 ммСквош-ГоловаПуля
-  .desc = If you can see this you're probably dead!
+  .desc = Если ты это видишь, ты, вероятно, мертв!
 

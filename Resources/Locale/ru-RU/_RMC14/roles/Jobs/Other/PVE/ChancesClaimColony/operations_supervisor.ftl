@@ -1,5 +1,5 @@
 ent-RMCSpawnPointSurvivorOperationsSupervisor = точка появления
-  .desc = A RMC14 job spawner. Used for roundstart and late joins.
+  .desc = Создатель заданий RMC14. 
 
 ent-RMCRandomHumanoidSurvivorOperationsSupervisor = роль призрака руководителя операций шансов
 

@@ -1,5 +1,5 @@
 ent-RMCSpawnPointSurvivorChancesCivilian = Шанс на точку появления гражданских лиц
-  .desc = A RMC14 job spawner. Used for roundstart and late joins.
+  .desc = Создатель заданий RMC14. 
 
 ent-RMCRandomHumanoidSurvivorChancesCivilian = Шанс роль призрака кейтерингового специалиста
 

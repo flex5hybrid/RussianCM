@@ -1,5 +1,5 @@
 ent-RMCSpawnPointSurvivorMSCResearcher = Точка возрождения исследователя колонизации Министерства космоса
-  .desc = A RMC14 job spawner. Used for roundstart and late joins.
+  .desc = Создатель заданий RMC14. 
 
 ent-RMCGearSurvivorPresetMSCResearcher = Предварительная настройка исследователя колонизации Министерства космического пространства
 

@@ -49,24 +49,24 @@ ent-RMCPVEArmorPaintInscription = надпись Броня краски
 ent-RMCPVEArmorPaintMixtape = пламя Броня краски
   .desc = Набор тонов краски, позволяющий запечатлеть прямое тепло на Броне Морпеха.
 
-ent-RMCPVEArmorPadsBase = armor accessory
-  .desc = Abstract armor accessories.
+ent-RMCPVEArmorPadsBase = Броня аксессуар
+  .desc = Абстрактные аксессуары Броня.
 
-ent-RMCPVEArmorBracersBase = armor accessory
-  .desc = Abstract armor accessories.
+ent-RMCPVEArmorBracersBase = Броня аксессуар
+  .desc = Абстрактные аксессуары Броня.
 
-ent-RMCPVEArmorNeckGuardBase = armor accessory
-  .desc = Abstract armor accessories.
+ent-RMCPVEArmorNeckGuardBase = Броня аксессуар
+  .desc = Абстрактные аксессуары Броня.
 
-ent-RMCPVEArmorGroinPlateBase = armor accessory
-  .desc = Abstract armor accessories.
+ent-RMCPVEArmorGroinPlateBase = Броня аксессуар
+  .desc = Абстрактные аксессуары Броня.
 
-ent-RMCPVEArmorShinGuardBase = armor accessory
-  .desc = Abstract armor accessories.
+ent-RMCPVEArmorShinGuardBase = Броня аксессуар
+  .desc = Абстрактные аксессуары Броня.
 
-ent-RMCPVEArmorKneeGuardBase = armor accessory
-  .desc = Abstract armor accessories.
+ent-RMCPVEArmorKneeGuardBase = Броня аксессуар
+  .desc = Абстрактные аксессуары Броня.
 
-ent-RMCPVEArmorPaintBase = armor accessory
-  .desc = Abstract armor accessories.
+ent-RMCPVEArmorPaintBase = Броня аксессуар
+  .desc = Абстрактные аксессуары Броня.
 

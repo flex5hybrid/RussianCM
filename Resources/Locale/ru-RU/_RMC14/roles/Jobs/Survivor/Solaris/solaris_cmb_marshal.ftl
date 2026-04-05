@@ -1,9 +1,9 @@
 ent-CMSpawnPointSolarisCMBMarshal = точка спавна маршала Solaris CMB
-  .desc = A RMC14 job spawner. Used for roundstart and late joins.
+  .desc = Создатель заданий RMC14. 
 
-ent-RMCMarshalCMBUniformSurvivorMarshal = colony marshal uniform
-  .desc = A pair of off-white slacks and a blue button-down shirt with a dark brown tie; the standard uniform of the Colony Marshals.
+ent-RMCMarshalCMBUniformSurvivorMarshal = униформа маршала колонии
+  .desc = Пара не совсем белых брюк, синяя рубашка на пуговицах и темно-коричневый галстук; 
 
-ent-RMCWebbingSurvivorCMBMarshal = shoulder holster
-  .desc = A handgun holster with an attached pouch, allowing two magazines or speedloaders to be stored along with it.
+ent-RMCWebbingSurvivorCMBMarshal = плечевая кобура
+  .desc = Кобура для пистолета с прикрепленным подсумком, позволяющая хранить вместе два магазина или спидлоадера.
 

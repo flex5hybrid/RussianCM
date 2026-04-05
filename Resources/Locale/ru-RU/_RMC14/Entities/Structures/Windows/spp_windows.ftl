@@ -1,20 +1,20 @@
-ent-RMCWindowSPPHull = hull window
-  .desc = A glass window. Something tells you this one is somehow indestructible.
+ent-RMCWindowSPPHull = окно корпуса
+  .desc = Стеклянное окно. 
 
 ent-RMCWindowSPPReinforced = окно военного назначения
 
-ent-RMCWindowFrameSPPReinforced = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameSPPReinforced = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowFrameSPPReinforcedGrey = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameSPPReinforcedGrey = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowFrameSPPReinforcedWhite = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameSPPReinforcedWhite = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-ent-RMCWindowSPPHullGrey = hull window
-  .desc = A glass window. Something tells you this one is somehow indestructible.
+ent-RMCWindowSPPHullGrey = окно корпуса
+  .desc = Стеклянное окно. 
 
-ent-RMCWindowSPPHullWhite = hull window
-  .desc = A glass window. Something tells you this one is somehow indestructible.
+ent-RMCWindowSPPHullWhite = окно корпуса
+  .desc = Стеклянное окно. 
 

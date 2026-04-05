@@ -14,5 +14,5 @@ ent-RMCCartridgeHMG10x28mm = патрон (10х28мм)
 ent-RMCCartridgeHMG10x28mmOffset = патрон (10х28мм)
 
 ent-RMCBulletHMG10x28mm = пуля (10х28мм)
-  .desc = If you can see this you're probably dead!
+  .desc = Если ты это видишь, ты, вероятно, мертв!
 

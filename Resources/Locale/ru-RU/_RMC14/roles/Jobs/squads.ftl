@@ -1,7 +1,7 @@
 ent-SquadSunRiders = Солнечные ездоки
 ent-SquadUnassigned = Не назначенный
-ent-SquadCLF = CLF
-ent-SquadSOF = SOF
+ent-SquadCLF = КЛФ
+ent-SquadSOF = ССО
 ent-SquadFORECON = ФОРЕКОН
 ent-SquadProvost = Провосты
 ent-SquadRoyalMarines = Королевские морпехи

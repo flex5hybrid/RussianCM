@@ -1,423 +1,423 @@
 ent-RMCBaseCLFDropshipWall = Стенка УД-9М «Собачий укус»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall1 = Хвостовое оперение УД-9М «Собачий укус»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall2 = Хвостовое оперение УД-9М «Собачий укус»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall4 = Хвостовое оперение УД-9М «Собачий укус»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall5 = Хвостовое оперение УД-9М «Собачий укус»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall6 = Хвостовое оперение УД-9М «Собачий укус»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall7 = Хвостовое оперение УД-9М «Собачий укус»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall8 = Хвостовое оперение УД-9М «Собачий укус»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall16 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall17 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall20 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall21 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall22 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall23 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall24 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall25 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall26 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall27 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall28 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall29 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall30 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall31 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall32 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall33 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall34 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall35 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall38 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall39 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall40 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall41 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall44 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall45 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall61 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall62 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall64 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall66 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall67 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall69 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall70 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall71 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall72 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall73 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall74 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWall86 = Окно УД-9М «Собачий укус»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallZWing1 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallZWing2 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallZWing3 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallZWing4 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallZWing5 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallZWing6 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallZWing7 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallZWing8 = Крыло УД-9М «Догбайт»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallLeftEngine1 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallLeftEngine2 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallLeftEngine3 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallRightEngine1 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallRightEngine2 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallRightEngine3 = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallBrokenDropshipConsole1 = Пульт десантного корабля УД-9М «Собачий укус»
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallWYLeftEngine = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCCLFDropshipWallWYRightEngine = Двигатель УД-9М «Собачий укус».
-  .desc = A huge chunk of metal used to separate rooms.
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall3 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall3 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall9 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall9 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall9Alt = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall9Alt = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall10 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall10 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall10Interior = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall10Interior = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall10Interior1 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall10Interior1 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall11 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall11 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall12 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall12 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall13 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall13 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall14 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall14 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall15 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall15 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall15Alt = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall15Alt = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall18 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall18 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall19 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall19 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall36 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall36 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall36Alt = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall36Alt = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall37 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall37 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall37Alt = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall37Alt = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall42 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall42 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall43 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall43 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall46 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall46 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall47 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall47 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall48 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall48 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall49 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall49 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall50 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall50 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall51 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall51 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall52 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall52 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall53 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall53 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall54 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall54 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall55 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall55 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall56 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall56 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall57 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall57 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall58 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall58 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall59 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall59 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall60 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall60 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall63 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall63 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall65 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall65 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall68 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall68 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall75 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall75 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall75Alt = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall75Alt = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall76 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall76 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall77 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall77 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall78 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall78 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall79 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall79 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall80 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall80 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall81 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall81 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall82 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall82 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall83 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall83 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall83Alt = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall83Alt = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall84 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall84 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall85 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall85 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall89 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall89 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall90 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall90 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall91 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall91 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall92 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall92 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall92Alt = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall92Alt = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall94Alt = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall94Alt = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall95 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall95 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall96 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall96 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall97 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall97 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall98 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall98 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall99 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall99 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall100 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall100 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall101 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall101 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall102 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall102 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall103 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall103 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall104 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall104 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall105 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall105 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall106 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall106 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall107 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall107 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall108 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall108 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall109 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall109 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall110 = UD-9M 'Dogbite' window
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall110 = Окно УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWallZWing0 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWallZWing0 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWallWY2 = UD-9M 'Dogbite' wall
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWallWY2 = Стенка УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWallBrokenDropshipConsole2 = UD-9M 'Dogbite' dropship console
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWallBrokenDropshipConsole2 = Пульт десантного корабля УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWallBrokenDropshipConsole3 = UD-9M 'Dogbite' dropship console
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWallBrokenDropshipConsole3 = Пульт десантного корабля УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall93a = UD-9M 'Dogbite' dropship console
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall93a = Пульт десантного корабля УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall93 = UD-9M 'Dogbite' dropship console
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall93 = Пульт десантного корабля УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCCLFDropshipWall93b = UD-9M 'Dogbite' dropship console
-  .desc = A huge chunk of metal used to separate rooms.
+ent-RMCCLFDropshipWall93b = Пульт десантного корабля УД-9М «Собачий укус»
+  .desc = Огромный кусок металла, используемый для разделения комнат.
 

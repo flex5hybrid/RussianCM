@@ -15,8 +15,8 @@ ent-RMCCartridgeSniper77x56mmR = патрон (7,7х56ммR)
 ent-RMCCartridgeSniper77x56mmRSH = Патрон с плоской головкой (7,7x56 ммR)
 
 ent-RMCBulletSniper77x56mmR = пуля (7,7х56ммR)
-  .desc = If you can see this you're probably dead!
+  .desc = Если ты это видишь, ты, вероятно, мертв!
 
 ent-RMCBulletSniper77x56mmRSH = пуля с плоской головкой (7,7x56 ммR)
-  .desc = If you can see this you're probably dead!
+  .desc = Если ты это видишь, ты, вероятно, мертв!
 

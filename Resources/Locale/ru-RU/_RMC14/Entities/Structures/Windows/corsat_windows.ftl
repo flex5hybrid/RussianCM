@@ -1,18 +1,18 @@
-ent-RMCWindowCorsatHull = hull window
-  .desc = A glass window with a special rod matrix inside a wall frame. This one has an automatic shutter system to prevent any atmospheric breach.
+ent-RMCWindowCorsatHull = окно корпуса
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
 
 ent-RMCWindowCorsatReinforced = усиленное окно
 
-ent-RMCWindowFrameCorsatReinforced = window frame
-  .desc = A big hole in the wall that used to sport a large window. Can be vaulted through.
+ent-RMCWindowFrameCorsatReinforced = оконная рама
+  .desc = Большая дыра в стене, в которой раньше было большое окно. 
 
-  .desc = A red tinted glass window with a special rod matrix inside a wall frame. It looks very strong.
+  .desc = Окно из красного тонированного стекла со специальной стержневой матрицей внутри настенной рамы. 
 
-  .desc = A purple tinted glass window with a special rod matrix inside a wall frame. It looks quite strong. Might take some good hits to shatter it.
+  .desc = Окно из тонированного фиолетового стекла со специальной стержневой матрицей внутри настенной рамы. 
 
-ent-RMCWindowCorsatHullResearch = hull window
-  .desc = A glass window with a special rod matrix inside a wall frame. This one has an automatic shutter system to prevent any atmospheric breach.
+ent-RMCWindowCorsatHullResearch = окно корпуса
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
 
-ent-RMCWindowCorsatHullSec = hull window
-  .desc = A glass window with a special rod matrix inside a wall frame. This one has an automatic shutter system to prevent any atmospheric breach.
+ent-RMCWindowCorsatHullSec = окно корпуса
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
 

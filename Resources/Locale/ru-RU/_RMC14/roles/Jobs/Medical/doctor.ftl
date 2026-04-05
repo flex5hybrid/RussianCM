@@ -1,2 +1,2 @@
 ent-CMGuidebookRoleDoctor = Доктор
-ent-CMSpawnPointDoctor = doctor spawn point
+ent-CMSpawnPointDoctor = точка появления доктора

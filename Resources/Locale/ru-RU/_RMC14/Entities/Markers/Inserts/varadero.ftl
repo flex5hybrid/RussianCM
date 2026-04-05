@@ -6,5 +6,5 @@ ent-RMCMapInsertVaraderoAltHospital = Альт.
 
 ent-RMCMapInsertVaraderoEngiHold = Энги Холд
 
-ent-RMCMapInsertVaraderoBase = Map Insert Base
+ent-RMCMapInsertVaraderoBase = База для вставки карты
 

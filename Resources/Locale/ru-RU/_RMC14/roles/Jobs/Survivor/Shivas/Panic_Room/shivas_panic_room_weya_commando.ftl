@@ -1,20 +1,20 @@
 ent-RMCSpawnPointSurvivorPanicRoomCommando = Специальная точка появления коммандос в комнате паники для выживших
-  .desc = A RMC14 job spawner. Used for roundstart and late joins.
+  .desc = Создатель заданий RMC14. 
 
-ent-CMArmorM4PMCCommandoSurvivorFilled = damaged MY7 pattern Commando armor
-  .desc = A modification of the W-Y PMC armor patterns. Designed for elite corporate mercenaries in mind. This one has a lot of scratches and acid damage.
+ent-CMArmorM4PMCCommandoSurvivorFilled = поврежденный рисунок MY7 Commando Броня
+  .desc = Модификация лекал W-Y PMC Броня. 
 
-ent-CMFirstAidKitFilledCommando = storage item
+ent-CMFirstAidKitFilledCommando = предмет хранения
 
-ent-RMCSurgicalCaseFilledCommandoElite = storage item
+ent-RMCSurgicalCaseFilledCommandoElite = предмет хранения
 
-ent-RMCSyringeCaseFilledCommando = storage item
+ent-RMCSyringeCaseFilledCommando = предмет хранения
 
-ent-CMMedicalUpgradeKitFilledCommando = storage item
+ent-CMMedicalUpgradeKitFilledCommando = предмет хранения
 
-ent-RMCBeltPMCFilledCommando = M305 pattern ammo load rig
-  .desc = The M305 is the standard load-bearing equipment of Weston-Yamada PMCs. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+ent-RMCBeltPMCFilledCommando = Установка для загрузки боеприпасов модели М305
+  .desc = М305 является штатной несущей техникой ЧВК Weston-Yamada. 
 
-ent-RMCSatchelPMCCommandoFilled = We-Ya Commando combat backpack
-  .desc = Ergonomic, protected, high capacity backpack, designed for Weston-Yamada Commandos.
+ent-RMCSatchelPMCCommandoFilled = Боевой рюкзак We-Ya Commando
+  .desc = Эргономичный, защищенный, большой вместительный рюкзак, разработанный для коммандос Weston-Yamada.
 

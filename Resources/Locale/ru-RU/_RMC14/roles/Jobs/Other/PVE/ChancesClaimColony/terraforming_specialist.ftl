@@ -1,5 +1,5 @@
 ent-RMCSpawnPointSurvivorChancesTerraformingSpecialist = точка спавна специалиста по терраформированию
-  .desc = A RMC14 job spawner. Used for roundstart and late joins.
+  .desc = Создатель заданий RMC14. 
 
 ent-RMCRandomHumanoidSurvivorChancesTerraformingSpecialist = Роль призрака специалиста по терраформированию
 
