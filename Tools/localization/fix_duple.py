@@ -1,7 +1,7 @@
 import os
 import re
 
-LOCALE_DIR = "../../Resources/Locale/ru-RU"
+LOCALE_DIR = "../../Resources/Locale/ru-RU/"
 
 # Регулярки
 NAME_PATTERN = re.compile(r"^(ent-[\w\d]+)-name\s*=\s*(.*)")
