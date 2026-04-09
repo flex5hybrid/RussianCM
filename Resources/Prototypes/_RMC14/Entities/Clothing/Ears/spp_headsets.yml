@@ -17,7 +17,7 @@
 - type: radioChannel
   id: SPPEngi
   name: chat-radio-spp-engi
-  keycode: "s"
+  keycode: "u"
   frequency: 1253
   color: "#9b0612"
   longRange: true
