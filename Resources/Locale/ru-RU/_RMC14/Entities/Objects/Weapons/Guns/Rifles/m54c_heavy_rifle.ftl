@@ -1,4 +1,4 @@
-ent-CMMagazineRifleM54CE2AP = магазин M54CE2 БО (10x24мм)
+ent-CMMagazineRifleM54CE2AP = магазин M54CE2 ББ (10x24мм)
 ent-CMCartridgeRifle10x24mmHT = патрон (10x24мм)
   .desc = Патрон 10x24мм ГН. Подходит для магазинов 10x24мм с голографическим наведением.
 ent-CMMagazineRifleM54CE2HT = магазин M54CE2 ГН (10x24мм)

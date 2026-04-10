@@ -85,7 +85,7 @@ public sealed class CommunicationsTowerSystem : EntitySystem
             if (ent.Comp.State != CommunicationsTowerState.Broken)
                 return;
 
-            args.PushMarkup("[color=red]It is damaged and needs a welder for repairs![/color]");
+            args.PushMarkup("[color=red]Вышка повреждена и требует сварки для починки![/color]");
         }
     }
 

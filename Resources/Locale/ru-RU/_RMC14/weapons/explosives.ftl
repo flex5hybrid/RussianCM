@@ -1,2 +1,2 @@
-rmc-mine-deploy-fail-occupied = There already is a mine at this position!
-rmc-explosive-deploy-container = It's too cramped in here to deploy the {$explosive}
+rmc-mine-deploy-fail-occupied = На этой позиции уже установлена мина!
+rmc-explosive-deploy-container = Здесь слишком тесно, чтобы развернуть {$explosive}

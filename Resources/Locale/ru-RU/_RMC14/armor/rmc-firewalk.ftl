@@ -1,2 +1,2 @@
-﻿rmc-firewalk-activate = FIREWALK protocol has been activated. You will now be immune to fire for 6 seconds!
-rmc-firewalk-end = FIREWALK protocol has finished.
+rmc-firewalk-activate = Протокол FIREWALK активирован. Вы теперь невосприимчивы к огню на 6 секунд!
+rmc-firewalk-end = Протокол FIREWALK завершён.

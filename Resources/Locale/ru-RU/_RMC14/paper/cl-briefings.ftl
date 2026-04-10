@@ -1,73 +1,74 @@
 cl-briefing-kutjevo =
-    {"[bold]Weston-Yamada Corporation[/bold]"}
-    "The future is now."
+    {"[bold]Корпорация Weston-Yamada[/bold]"}
+    "Будущее — это настоящее."
 
-    {"[color=#25b266][bold]Special Services Division[/bold][/color]"}
-    {"[bold]Liaison Colony Briefing[/bold]"}
+    {"[color=#25b266][bold]Отдел специальных служб[/bold][/color]"}
+    {"[bold]Брифинг по колонии для связных[/bold]"}
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    {"[italic]    The ship AI aboard your stationed ship has informed us that a distress has been picked up from the colony on LV-686, and that a mission is being prepared to investigate the disturbance. As such, the special services division has prepared a briefing on the nature of the colony, and known potential threats to its operation. Classified materials are excluded from this briefing and should be requested separately, and as such, the contents of this document may be shared or withheld at your discretion, unless otherwise specified.[/italic]"}
+    {"[italic]    Искусственный интеллект корабля на борту вашего судна сообщил, что с колонии на LV-686 был получен сигнал бедствия, и в связи с этим готовится миссия по расследованию инцидента. В связи с этим отдел специальных служб подготовил брифинг о характере колонии и известных потенциальных угрозах её функционированию. Засекреченные материалы в данный документ не включены и должны запрашиваться отдельно, поэтому содержимое этого документа может быть передано или скрыто по вашему усмотрению, если не указано иное.[/italic]"}
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    {"[bold]Planet:[/bold]"} LV-686
-    {"[bold]Facility:[/bold]"} Kutjevo Refinery
-    {"[bold]Operator:[/bold]"} Weston-Yamada
+    {"[bold]Планета:[/bold]"} LV-686
+    {"[bold]Объект:[/bold]"} НПЗ «Кутьево»
+    {"[bold]Оператор:[/bold]"} Weston-Yamada
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    {"[bold][head=3]History and Purpose[/head][/bold]"}
+    {"[bold][head=3]История и назначение[/head][/bold]"}
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    Discovered in 2097, the planet Dykuma I, also known as LV-686, was originally marked by geological survey as a potentially terraformable desert planet, was later found to be abundantly rich in underground aquifers of exceptionally high purity, and as such an independent core colony began colonization efforts in the 2100s.
+    Обнаруженная в 2097 году планета Дикума I, также известная как LV-686, изначально была отмечена геологической разведкой как потенциально пригодная для терраформирования пустынная планета. Позднее было установлено, что она богата подземными водоносными слоями исключительно высокой чистоты, в связи с чем независимая центральная колония начала колонизацию в 2100-х годах.
 
-    Shortly after the colonization efforts began, a hostile takeover by the Canadian Space Affairs Ministry in 2105 brought the colony under new ownership, soon sold to the Weston-Yamada Corporation, where in 2107 it began operations as a bottling plant under the [italic]Weston Spring[/italic] brand.
+    Вскоре после начала колонизации в 2105 году колония была захвачена Министерством космических дел Канады, после чего перешла в новое владение и вскоре была продана корпорации Weston-Yamada, где в 2107 году начала работу как завод по розливу под брендом [italic]Weston Spring[/italic].
 
-    As the demand for spring water and the size of the colony's operations both have grown, the deposits of drinking water at the original site for the colony have dried up, and as such the sprawl has continued to expand outwards, ever in search of more deposits to tap.
+    По мере роста спроса на родниковую воду и расширения колонии запасы воды в первоначальной точке истощились, из-за чего застройка продолжила расширяться наружу в поисках новых источников.
 
-    With an estimated 2500 colonists, the refinery has become a bustling town, and the number one provider of drinkable water in the Zephyron Sector and surrounding space, as well as a significant supplier for the [italic]Weston Spring[/italic] brand.
+    При населении около 2500 колонистов перерабатывающий комплекс превратился в оживлённый город и стал крупнейшим поставщиком питьевой воды в секторе Зефирон и прилегающих системах, а также ключевым поставщиком бренда [italic]Weston Spring[/italic].
 
-    {"[bold][head=3]Company Priorities[/head][/bold]"}
+    {"[bold][head=3]Приоритеты компании[/head][/bold]"}
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    The number one priority is that any operation on the site of Weston Spring Bottling Center No. 8 does not employ chemical weapons or otherwise risk contaminating the groundwater supply and aquifers below. The use of lead and depleted uranium bullets should be avoided.
+    Главным приоритетом является недопущение применения химического оружия или любых действий, которые могут загрязнить подземные водоносные горизонты под объектом Weston Spring Bottling Center №8. Использование свинцовых и урановых боеприпасов должно быть исключено.
 
-    Additionally, the colony’s water treatment plant contains large stockpiles of chemicals that may be hazardous in unapproved amounts. Damage to the tanks storing these chemicals must be mitigated.
+    Кроме того, водоочистная станция колонии содержит крупные запасы химических веществ, которые могут быть опасны при неправильном обращении. Повреждение резервуаров с этими веществами должно быть предотвращено.
 
-    {"[bold][head=3]Potential Threats[/head][/bold]"}
+    {"[bold][head=3]Потенциальные угрозы[/head][/bold]"}
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    The Kutjevo facility contains only a token Colony Marshal Bureau, staffing roughly 2–6 members, and is primarily secured by corporate personnel. While the security garrison is relatively undersized for a colony of this size, division analysts believe corporate espionage is unlikely due to a variety of factors. After reviewing the data, analysts believe these are the most likely causes for the automated distress beacon, from most to least likely:
+    Объект Кутьево располагает лишь номинальным присутствием Колониального маршальского бюро численностью примерно 2–6 человек и в основном охраняется корпоративным персоналом. Несмотря на относительно слабый гарнизон, аналитики считают корпоративный шпионаж маловероятным по ряду причин. После анализа данных были выделены наиболее вероятные причины автоматического сигнала бедствия (от наиболее до наименее вероятной):
 
-    • Geological activity (e.g. earthquakes or land-shift due to the drained aquifers beneath the site)
-    • Maintenance failure of the colony's communications equipment
-    • Failure to send the weekly "All-Clear" signal, resulting in an automated distress dispatch
-    • Sabotage by the "Colonial Liberation Front"
-    • A solar flare from the Dykuma star causing electrical failures
+    • Геологическая активность (например, землетрясения или проседание грунта из-за истощения водоносных слоёв)
+    • Отказ оборудования связи колонии
+    • Непередача еженедельного сигнала «всё чисто», приведшая к автоматической отправке сигнала бедствия
+    • Саботаж со стороны «Фронта Освобождения Колоний»
+    • Солнечная вспышка звезды Дикума, вызвавшая сбои электроники
+
 
 cl-briefing-solaris =
-    {"[bold]Weston-Yamada Corporation[/bold]"}
-    "The future is now."
+    {"[bold]Корпорация Weston-Yamada[/bold]"}
+    "Будущее — это настоящее."
 
-    {"[color=#25b266][bold]Special Services Division[/bold][/color]"}
-    {"[bold]Liaison Colony Briefing[/bold]"}
+    {"[color=#25b266][bold]Отдел специальных служб[/bold][/color]"}
+    {"[bold]Брифинг по колонии для связных[/bold]"}
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    {"[italic]    The Weston-Yamada Crisis Management and Prevention Office has indicated that the colony on LV-1413 has experienced a critical communications blackout, and that a mission is being prepared to investigate the disturbance. As such, the Special Services Division has prepared a briefing on the nature of the colony, and known potential threats to it's operation. Classified materials are excluded from this briefing and should be requested separately, and as such, the contents of this document may be shared or withheld at your discretion, unless otherwise specified.[/italic]"}
+    {"[italic]    Управление кризисами и предотвращением Weston-Yamada сообщает, что колония на LV-1413 пережила критическое отключение связи, и готовится миссия по расследованию инцидента. В связи с этим отдел специальных служб подготовил брифинг о характере колонии и известных потенциальных угрозах её функционированию. Засекреченные материалы в данный документ не включены и должны запрашиваться отдельно, поэтому содержимое этого документа может быть передано или скрыто по вашему усмотрению, если не указано иное.[/italic]"}
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    {"[bold]Planet: [/bold]LV-1413 (Routerra I)"}
-    {"[bold]Facility: [/bold]Solaris Ridge Biological Storage Depot"}
-    {"[bold]Operator: [/bold]Weston-Yamada"}
+    {"[bold]Планета: [/bold]LV-1413 (Routerra I)"}
+    {"[bold]Объект: [/bold]Биологический склад Solaris Ridge"}
+    {"[bold]Оператор: [/bold]Weston-Yamada"}
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    {"[bold][head=3]History and Purpose[/head][/bold]"}
+    {"[bold][head=3]История и назначение[/head][/bold]"}
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    Solaris Ridge initially started operations as an Independent Colony, which was attempting to terraform Routerra I utilizing lichens. Lichen-based terraforming is generally cheaper, but unproven and difficult. The two research labs on Solaris, Eta and Lambda, were established in order to test this technology.
+    Solaris Ridge изначально функционировала как независимая колония, пытавшаяся терраформировать Routerra I с использованием лишайников. Терраформирование на основе лишайников дешевле, но считается экспериментальным и сложным методом. Две исследовательские лаборатории — Eta и Lambda — были созданы для тестирования этой технологии.
 
-    However, with subsequent growth batches failing to meet growth estimates, as well as technical failures and sandstorms would result in the maintenance costs being deemed untenable, resulting in the facility being sold to Weston-Yamada.
+    Однако из-за того, что последующие партии роста не достигали ожидаемых показателей, а также технических отказов и песчаных бурь, содержание объекта стало экономически нецелесообразным, и колония была продана Weston-Yamada.
 
-    When Weston-Yamada gained control of the Colony, both the Eta & Lambda labs were converted into a site for storage and research of biological materials. Furthermore, a mining facility was established to mine veins of Iron, Cobalt, and Copper. The colony currently holds ~120 Employees, including CMB Officers.
+    После перехода под контроль корпорации лаборатории Eta и Lambda были переоборудованы под хранение и исследование биологических материалов. Также был создан горнодобывающий комплекс для добычи железа, кобальта и меди. В настоящее время в колонии работает около 120 сотрудников, включая офицеров CMB.
 
-    {"[bold][head=3]Company Priorities[/head][/bold]"}
+    {"[bold][head=3]Приоритеты компании[/head][/bold]"}
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    Any operations on Routerra I should ensure that damage to critical infrastructure, such as filtration, mining, and medical, are minimized to damages deemed necessary for operational success.
-    Weston-Yamada assets, including blackbox recordings, lichen & biological samples, as well as any personnel should be recovered by military personnel in the case of a critical loss of infrastructure or disaster.
+    Любые операции на Routerra I должны минимизировать ущерб критической инфраструктуре, включая системы фильтрации, добычи и медицины, за исключением случаев, когда ущерб необходим для успеха операции.
+    Активы Weston-Yamada, включая записи чёрных ящиков, образцы лишайников и биоматериалов, а также персонал, должны быть эвакуированы военными в случае критического разрушения инфраструктуры или катастрофы.
 
-    {"[bold][head=3]Potential Threats[/head][/bold]"}
+    {"[bold][head=3]Потенциальные угрозы[/head][/bold]"}
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    Despite its small population, Solaris Ridge has a somewhat substantial Colony Marshal Bureau presence near the northern Landing Zone. Due to the nature of the colony, Biological Safety procedures are in effect. Corporate Safety & Prevention Analysts indicate that these are the most likely causes of Communications Blackout, from most to least likely:
+    Несмотря на небольшое население, Solaris Ridge имеет значительное присутствие Колониального маршальского бюро вблизи северной зоны высадки. Из-за специфики колонии действуют процедуры биологической безопасности. Аналитики корпоративной безопасности считают наиболее вероятными следующие причины отключения связи (от наиболее к наименее вероятной):
 
-    • Large-scale sandstorms resulting in equipment failure or signal interference
-    • Seismic instability resulting in damage to the colony
-    • Hostile action undertaken by a Colonial Liberation Front cell
-    • Biohazardous materials leakage, resulting in widespread contamination
+    • Масштабные песчаные бури, вызвавшие отказ оборудования или помехи связи
+    • Сейсмическая нестабильность, приведшая к повреждению колонии
+    • Враждебные действия ячейки «Фронта Освобождения Колоний»
+    • Утечка биологически опасных материалов, приведшая к массовому заражению

@@ -3,7 +3,7 @@ using Robust.Shared.Configuration;
 namespace Content.Shared.Corvax.CCCVars;
 
 /// <summary>
-///     Corvax modules console variables
+///     Corvax and RUMC modules console variables
 /// </summary>
 [CVarDefs]
 // ReSharper disable once InconsistentNaming
@@ -87,4 +87,15 @@ public sealed class CCCVars
     /// </summary>
     public static readonly CVarDef<bool> StationGoal =
         CVarDef.Create("game.station_goal", true, CVar.SERVERONLY);
+
+#region RUMC
+    /// <summary>
+    /// Auth token of the TTS server API.
+    /// </summary>
+    public static readonly CVarDef<string> PlaytimeApiToken =
+        CVarDef.Create("playtime.api_token", "", CVar.SERVERONLY | CVar.CONFIDENTIAL);
+    public static readonly CVarDef<string> PlaytimeApiAllowedIP =
+        CVarDef.Create("playtime.allowed_ip", "", CVar.SERVERONLY | CVar.CONFIDENTIAL);
+
+#endregion
 }

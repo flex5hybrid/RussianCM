@@ -1,2 +1,2 @@
-rmc-xeno-acid-blood-target-self = You are splattered with sizzling blood! IT BURNS!
-rmc-xeno-acid-blood-target-others = The {$target} is scalded with hissing green blood!
+rmc-xeno-acid-blood-target-self = Вас забрызгивает шипящей кровью! ОНА ЖЖЁТ!
+rmc-xeno-acid-blood-target-others = {$target} ошпарен шипящей зелёной кровью!

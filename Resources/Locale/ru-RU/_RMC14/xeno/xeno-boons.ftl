@@ -1,83 +1,90 @@
-﻿rmc-boon-activate = Activate Boons
-rmc-boon-message = {$current} royal resin
-rmc-boon-name-cost = {$boon} ({$cost} resin, {$pylons} pylons)
-rmc-boon-not-enough-royal-resin = We don't have enough royal resin! We need {$cost} and have {$current}
-rmc-boon-not-enough-pylons = We don't have enough hive pylons! We need {$cost} and have {$current}
-rmc-boon-not-enough-time = Our hive is not mature enough yet to purchase this!
-rmc-boon-not-enough-marines = There is not enough danger to warrant hive buffs.
-rmc-boon-only-one-king = Only one King may exist at a time!
-rmc-boon-requires-core = You must first construct a hive core.
-rmc-boon-on-cooldown = Our hive has already used {$boon} recently! Wait {$minutes} minutes.
-rmc-boon-duplicate-active = We already have a boon of {$boon} active!
-rmc-boon-not-reusable = Our hive has already used {$boon} and cannot use it again!
+rmc-boon-activate = Активировать бонусы
+rmc-boon-message = {$current} королевской смолы
+rmc-boon-name-cost = {$boon} ({$cost} смолы, {$pylons} пилонов)
+rmc-boon-not-enough-royal-resin = У нас недостаточно королевской смолы! Нужно {$cost}, у нас есть {$current}
+rmc-boon-not-enough-pylons = У нас недостаточно пилонов улья! Нужно {$cost}, у нас есть {$current}
+rmc-boon-not-enough-time = Наш улей ещё недостаточно зрел, чтобы это приобрести!
+rmc-boon-not-enough-marines = Недостаточно угрозы, чтобы оправдать усиления улья.
+rmc-boon-only-one-king = Одновременно может существовать только один Король!
+rmc-boon-requires-core = Сначала необходимо построить ядро улья.
+rmc-boon-on-cooldown = Наш улей уже недавно использовал {$boon}! Подождите {$minutes} минут.
+rmc-boon-duplicate-active = У нас уже активен бонус {$boon}!
+rmc-boon-not-reusable = Наш улей уже использовал {$boon} и не может использовать его снова!
 
-rmc-boon-pylon-announcement-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-pylon-announcement-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Биологический сканер[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    ТРЕВОГА.
 
-    Irregular build up of energy around communication relays at {$area}, biological hazard detected.
+    Обнаружено аномальное накопление энергии вокруг коммуникационных реле в области {$area}, зафиксирована биологическая угроза.
 
-    DANGER: Hazard is strengthening xenonids, advise urgent termination of hazard by ground forces.[/font][/color]
+    ОПАСНОСТЬ: угроза усиливает ксеноморфов, рекомендуется немедленное уничтожение угрозы наземными силами.[/font][/color]
 
-rmc-boon-pylon-destroyed-announcement-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-pylon-destroyed-announcement-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Биологический сканер[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    ТРЕВОГА.
 
-    Energy build up around communication relay at {$area} halted.[/font][/color]
+    Накопление энергии вокруг коммуникационного реле в области {$area} прекращено.[/font][/color]
 
-rmc-boon-king-announcement-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-king-announcement-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Биологический сканер[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    ТРЕВОГА.
 
-    UNUSUAL ENERGY BUILDUP DETECTED IN {$area}.
+    ОБНАРУЖЕНО НЕОБЫЧНОЕ НАКОПЛЕНИЕ ЭНЕРГИИ В {$area}.
 
-    ESTIMATED TIME UNTIL COMPLETION - 10 MINUTES. RECOMMEND TERMINATION OF XENONID STRUCTURE AT THIS LOCATION, OR TERMINATION OF XENONID PYLON AT EITHER COMMUNICATIONS RELAY.[/font][/color]
-rmc-boon-king-announcement-xenos = The King is growing at {$area}. Protect it, as well as our pylons at their communications relays, at all costs!
+    ПРИБЛИЗИТЕЛЬНОЕ ВРЕМЯ ДО ЗАВЕРШЕНИЯ - 10 МИНУТ. РЕКОМЕНДУЕТСЯ УНИЧТОЖИТЬ СТРУКТУРУ КСЕНОМОРФОВ В ЭТОЙ ЛОКАЦИИ ИЛИ УНИЧТОЖИТЬ ПИЛОН КСЕНОМОРФОВ НА ЛЮБОМ ИЗ КОММУНИКАЦИОННЫХ РЕЛЕ.[/font][/color]
 
-rmc-boon-king-announcement-paused-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-king-announcement-xenos = Король развивается в {$area}. Защитите его, а также наши пилоны на коммуникационных реле любой ценой!
 
-    ALERT.
+rmc-boon-king-announcement-paused-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Биологический сканер[/bold][/font][/color][color=red][font size=16]
 
-    UNUSUAL ENERGY BUILDUP IN {$area} HAS BEEN PAUSED.[/font][/color]
-rmc-boon-king-announcement-paused-xeno = One of our pylons was destroyed, the hatchery has paused its progress!
+    ТРЕВОГА.
 
-rmc-boon-king-announcement-resumed-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Biological Scanner[/bold][/font][/color][color=red][font size=16]
+    НЕОБЫЧНОЕ НАКОПЛЕНИЕ ЭНЕРГИИ В {$area} ПРИОСТАНОВЛЕНО.[/font][/color]
 
-    ALERT.
+rmc-boon-king-announcement-paused-xeno = Один из наших пилонов был уничтожен, инкубатор приостановил прогресс!
 
-    UNUSUAL ENERGY BUILDUP IN {$area} HAS BEEN RESUMED.[/font][/color]
-rmc-boon-king-announcement-resumed-xeno = The hatchery's progress has resumed!
+rmc-boon-king-announcement-resumed-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Биологический сканер[/bold][/font][/color][color=red][font size=16]
 
-rmc-boon-king-announcement-stopped-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Biological Scanner[/bold][/font][/color][color=red][font size=16]
+    ТРЕВОГА.
 
-    ALERT.
+    НЕОБЫЧНОЕ НАКОПЛЕНИЕ ЭНЕРГИИ В {$area} ВОЗОБНОВЛЕНО.[/font][/color]
 
-    UNUSUAL ENERGY BUILDUP IN {$area} HAS BEEN STOPPED.[/font][/color]
-rmc-boon-king-announcement-stopped-xeno = THE HATCHERY WAS DESTROYED! VENGEANCE!
+rmc-boon-king-announcement-resumed-xeno = Прогресс инкубатора возобновлён!
 
-rmc-boon-king-announcement-minutes-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-king-announcement-stopped-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Биологический сканер[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    ТРЕВОГА.
 
-    UNUSUAL ENERGY BUILDUP DETECTED IN {$area}.
+    НЕОБЫЧНОЕ НАКОПЛЕНИЕ ЭНЕРГИИ В {$area} ОСТАНОВЛЕНО.[/font][/color]
 
-    ESTIMATED TIME UNTIL COMPLETION - {$minutes} MINUTES. RECOMMEND TERMINATION OF XENONID STRUCTURE AT THIS LOCATION, OR TERMINATION OF XENONID PYLON AT EITHER COMMUNICATIONS RELAY.[/font][/color]
-rmc-boon-king-announcement-minutes-xeno = The King will hatch in approximately {$minutes} minutes.
+rmc-boon-king-announcement-stopped-xeno = ИНКУБАТОР БЫЛ УНИЧТОЖЕН! МСТИТЕ!
 
-rmc-boon-king-announcement-seconds-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-king-announcement-minutes-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Биологический сканер[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    ТРЕВОГА.
 
-    UNUSUAL ENERGY BUILDUP DETECTED IN {$area}.
+    ОБНАРУЖЕНО НЕОБЫЧНОЕ НАКОПЛЕНИЕ ЭНЕРГИИ В {$area}.
 
-    ESTIMATED TIME UNTIL COMPLETION - {$seconds} SECONDS. RECOMMEND TERMINATION OF XENONID STRUCTURE AT THIS LOCATION, OR TERMINATION OF XENONID PYLON AT EITHER COMMUNICATIONS RELAY.[/font][/color]
-rmc-boon-king-announcement-seconds-xeno = The King will hatch in approximately {$seconds} seconds.
+    ПРИБЛИЗИТЕЛЬНОЕ ВРЕМЯ ДО ЗАВЕРШЕНИЯ - {$minutes} МИНУТ. РЕКОМЕНДУЕТСЯ УНИЧТОЖИТЬ СТРУКТУРУ КСЕНОМОРФОВ В ЭТОЙ ЛОКАЦИИ ИЛИ УНИЧТОЖИТЬ ПИЛОН КСЕНОМОРФОВ НА ЛЮБОМ ИЗ КОММУНИКАЦИОННЫХ РЕЛЕ.[/font][/color]
 
-rmc-boon-king-announcement-hatch-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-king-announcement-minutes-xeno = Король вылупится примерно через {$minutes} минут.
 
-    ALERT.
+rmc-boon-king-announcement-seconds-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Биологический сканер[/bold][/font][/color][color=red][font size=16]
 
-    EXTREME ENERGY INFLUX DETECTED IN {$area}.
+    ТРЕВОГА.
 
-    CAUTION IS ADVISED.
-rmc-boon-king-announcement-hatch-xeno = All hail the King.
+    ОБНАРУЖЕНО НЕОБЫЧНОЕ НАКОПЛЕНИЕ ЭНЕРГИИ В {$area}.
+
+    ПРИБЛИЗИТЕЛЬНОЕ ВРЕМЯ ДО ЗАВЕРШЕНИЯ - {$seconds} СЕКУНД. РЕКОМЕНДУЕТСЯ УНИЧТОЖИТЬ СТРУКТУРУ КСЕНОМОРФОВ В ЭТОЙ ЛОКАЦИИ ИЛИ УНИЧТОЖИТЬ ПИЛОН КСЕНОМОРФОВ НА ЛЮБОМ ИЗ КОММУНИКАЦИОННЫХ РЕЛЕ.[/font][/color]
+
+rmc-boon-king-announcement-seconds-xeno = Король вылупится примерно через {$seconds} секунд.
+
+rmc-boon-king-announcement-hatch-marine = [color=#CECECE][font size=16][bold]ARES v3.2 Биологический сканер[/bold][/font][/color][color=red][font size=16]
+
+    ТРЕВОГА.
+
+    ОБНАРУЖЕН СВЕРХВЫСОКИЙ ПРИТОК ЭНЕРГИИ В {$area}.
+
+    РЕКОМЕНДУЕТСЯ СОБЛЮДАТЬ ОСТОРОЖНОСТЬ.[/font][/color]
+
+rmc-boon-king-announcement-hatch-xeno = Да здравствует Король.

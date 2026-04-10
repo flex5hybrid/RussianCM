@@ -1,3 +1,3 @@
-rmc-structure-girder-examine-tip = It looks ready for a [color=lightgreen]screwdriver[/color] to a dismantle, [color=lightgreen]metal[/color] to create a wall or [color=lightgreen]plasteel[/color] to create a reinforced wall.
+rmc-structure-girder-examine-tip = Похоже, что его можно разобрать с помощью [color=lightgreen]отвёртки[/color], использовать [color=lightgreen]металл[/color] для создания стены или [color=lightgreen]пласталь[/color] для создания укреплённой стены.
 
-rmc-structure-displaced-examine-tip = It looks dislodged. [color=lightgreen]Crowbar[/color] to secure it.
+rmc-structure-displaced-examine-tip = Похоже, он смещён. Используйте [color=lightgreen]лом[/color], чтобы закрепить его.

@@ -1,2 +1,2 @@
-﻿rmc-xeno-communication-tower-taken-over = We have harnessed the tall's communication relay at Shiva's Snowball - North Colony Grounds.
-  We will now grow royal resin from this pylon. Hold it!
+rmc-xeno-communication-tower-taken-over = Мы захватили коммуникационное реле носителей на «Снежном шаре Шивы» — Северные территории колонии.
+  Теперь мы будем получать королевское желе от этого пилона. Удерживайте его!

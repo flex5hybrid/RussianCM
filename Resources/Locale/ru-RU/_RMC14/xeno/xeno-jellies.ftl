@@ -1,51 +1,50 @@
 # Jelly Types
-rmc-jelly-1 = Royal jelly of slaughter
-rmc-jelly-2 = Royal jelly of resilience
-rmc-jelly-3 = Royal jelly of sabotage
-rmc-jelly-4 = Royal jelly of proliferation
-rmc-jelly-5 = Royal jelly of rejuvenation
+rmc-jelly-1 = Королевское желе резни
+rmc-jelly-2 = Королевское желе стойкости
+rmc-jelly-3 = Королевское желе саботажа
+rmc-jelly-4 = Королевское желе размножения
+rmc-jelly-5 = Королевское желе возрождения
 
-rmc-jelly-special-1 = Queen Mother Royal jelly of supremacy
+rmc-jelly-special-1 = Королева-Мать: королевское желе превосходства
 
 # Jelly UI
-rmc-jelly-recipient = Jelly Recipient
-rmc-jelly-recipient-prompt = Who do you want to award a jelly to?
+rmc-jelly-recipient = Получатель желе
+rmc-jelly-recipient-prompt = Кому вы хотите выдать желе?
 
-rmc-jelly-type = Jelly Type
-rmc-jelly-type-prompt = What type of jelly do you want to award?
+rmc-jelly-type = Тип желе
+rmc-jelly-type-prompt = Какой тип желе вы хотите выдать?
 
-rmc-jelly-citation-prompt = What should the pheromone read?
-rmc-jelly-awarded = Jelly awarded
+rmc-jelly-citation-prompt = За какую заслугу выдаётся желе?
+rmc-jelly-awarded = Желе выдано
 
 # Jelly Errors
-rmc-jelly-error-cant-give = You can't give a jelly to that xeno!
-rmc-jelly-error-not-enough-playtime = You don't have the time required to hand out jellies { $requiredHours }!
-rmc-jelly-error-limit-reached = You can't give out any more jellies ({ $given }/{ $limit })!
+rmc-jelly-error-cant-give = Вы не можете выдать желе этому ксеноморфу!
+rmc-jelly-error-not-enough-playtime = У вас недостаточно игрового времени, чтобы выдавать желе ({ $requiredHours })!
+rmc-jelly-error-limit-reached = Вы больше не можете выдавать желе ({ $given }/{ $limit })!
 
 # Hive Management UI
-rmc-hivemanagement-deevolve = De-evolve (500)
-rmc-hivemanagement-reward = Reward Jelly (500)
+rmc-hivemanagement-deevolve = Деэволюция (500)
+rmc-hivemanagement-reward = Наградить желе (500)
 
-rmc-hivemanagement-exchange-larva = Exchange larva for evolution
-rmc-hivemanagement-exchange-larva-not-enough = We need at least 1 burrowed larva to sacrifice one for evolution points.
-rmc-hivemanagement-exchange-larva-title = Give Evolution Points
-rmc-hivemanagement-exchange-larva-description = Choose a xenonid to give {$points} evolution
-  points for a burrowed larva
-rmc-hivemanagement-exchange-larva-need-minutes = We must give some time for larva to spawn before sacrificing them. Please wait another {$minutes} minutes
-rmc-hivemanagement-exchange-larva-given-user = {$target} was given {$points} evolution points.
-rmc-hivemanagement-exchange-larva-given-target = {$user} has given us {$points} evolution points! Use them well.
+rmc-hivemanagement-exchange-larva = Обменять личинку на очки эволюции
+rmc-hivemanagement-exchange-larva-not-enough = Нам нужна хотя бы 1 зарытая личинка, чтобы пожертвовать её ради очков эволюции.
+rmc-hivemanagement-exchange-larva-title = Выдать очки эволюции
+rmc-hivemanagement-exchange-larva-description = Выберите ксеноморфов, чтобы выдать {$points} очков эволюции
+  за зарытую личинку
+rmc-hivemanagement-exchange-larva-need-minutes = Мы должны дать время, чтобы личинки успели появиться перед жертвоприношением. Пожалуйста, подождите ещё {$minutes} минут
+rmc-hivemanagement-exchange-larva-given-user = {$target} получил {$points} очков эволюции.
+rmc-hivemanagement-exchange-larva-given-target = {$user} дал нам {$points} очков эволюции! Используйте их с умом.
 
-rmc-hivemanagement-hive-management = Hive Management
-rmc-hivemanagement-manage-the-hive = Manage The Hive
-rmc-hivemanagement-deevolution = Deevolution
-rmc-hivemanagement-are-you-sure-deevolve = Are you sure you want to deevolve { $name }?
-rmc-hivemanagement-are-you-sure-deevolve-from = Are you sure you want to deevolve { $name } from { $from }?
-rmc-hivemanagement-are-you-sure-deevolve-from-to = Are you sure you want to deevolve { $name } from { $from } to { $to }?
-rmc-hivemanagement-choose-caste = Choose a caste
-rmc-hivemanagement-provide-reason = Provide a reason for deevolving { $name }
-rmc-hivemanagement-queen-deevolving = The queen is deevolving you for the following reason: { $reason }
-rmc-hivemanagement-must-overwatch = You must overwatch the xeno you want to de-evolve.
-rmc-hivemanagement-cant-be-devolved = { $name } can't be devolved!
-rmc-hivemanagement-cant-deevolve-larva = You cannot deevolve xenonids to larva.
-rmc-hivemanagement-cant-deevolve-other-hive = You cannot deevolve a member of another hive!
-
+rmc-hivemanagement-hive-management = Управление ульем
+rmc-hivemanagement-manage-the-hive = Управлять ульем
+rmc-hivemanagement-deevolution = Деэволюция
+rmc-hivemanagement-are-you-sure-deevolve = Вы уверены, что хотите деэволюционировать { $name }?
+rmc-hivemanagement-are-you-sure-deevolve-from = Вы уверены, что хотите деэволюционировать { $name } из { $from }?
+rmc-hivemanagement-are-you-sure-deevolve-from-to = Вы уверены, что хотите деэволюционировать { $name } из { $from } в { $to }?
+rmc-hivemanagement-choose-caste = Выберите касту
+rmc-hivemanagement-provide-reason = Укажите причину деэволюции { $name }
+rmc-hivemanagement-queen-deevolving = Королева деэволюционирует вас по следующей причине: { $reason }
+rmc-hivemanagement-must-overwatch = Вы должны наблюдать (overwatch) за ксеноморфовв, которого хотите деэволюционировать.
+rmc-hivemanagement-cant-be-devolved = { $name } нельзя деэволюционировать!
+rmc-hivemanagement-cant-deevolve-larva = Вы не можете деэволюционировать ксеноморфа в личинку.
+rmc-hivemanagement-cant-deevolve-other-hive = Вы не можете деэволюционировать ксеноморфа из другого улья!
