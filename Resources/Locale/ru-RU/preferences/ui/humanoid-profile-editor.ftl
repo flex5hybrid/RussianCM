@@ -1,6 +1,6 @@
 humanoid-profile-editor-randomize-everything-button = Случайная генерация
 humanoid-profile-editor-name-label = Имя:
-humanoid-profile-editor-name-random-button = Случайное
+humanoid-profile-editor-name-random-button = Случайное имя
 humanoid-profile-editor-appearance-tab = Внешность
 humanoid-profile-editor-clothing = Показать одежду
 humanoid-profile-editor-clothing-show = Показать
@@ -34,7 +34,7 @@ humanoid-profile-editor-enable = Включить
 humanoid-profile-editor-eyes-label = Цвет глаз:
 humanoid-profile-editor-jobs-tab = Должности
 humanoid-profile-editor-preference-unavailable-stay-in-lobby-button = Оставаться в лобби, если выбранная роль недоступна.
-humanoid-profile-editor-preference-unavailable-spawn-as-overflow-button = Стать {INDEFINITE($overflowJob)} {$overflowJob}, если выбранная роль недоступна.
+humanoid-profile-editor-preference-unavailable-spawn-as-overflow-button = Стать {$overflowJob}, если выбранная роль недоступна.
 humanoid-profile-editor-preference-jumpsuit = Комбинезон
 humanoid-profile-editor-preference-jumpskirt = Спортивная юбка
 humanoid-profile-editor-preference-backpack = Рюкзак

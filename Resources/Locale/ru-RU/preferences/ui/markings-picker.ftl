@@ -65,3 +65,5 @@ markings-layer-LFoot = Левая стопа
 markings-layer-Overlay = Наложение
 markings-layer-TailOverlay = Наложение
 
+markings-category-Hair = Волосы
+markings-category-FacialHair = Растительность на лице

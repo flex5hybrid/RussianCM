@@ -1,22 +1,22 @@
 trait-blindness-name = Слепота
-trait-blindness-desc = Вы совершенно слепы и не можете видеть дальше нескольких метров перед собой.
+trait-blindness-desc = Вы реально слепы и не можете чётко видеть дальше нескольких метров перед собой.
 
 trait-poor-vision-name = Близорукость
-trait-poor-vision-desc = Ваши глаза уже не те, что раньше, и вы с трудом видите предметы вдали без корректирующих очков.
+trait-poor-vision-desc = Ваше зрение уже не то, что раньше — вам трудно видеть на расстоянии без корректирующих очков.
 
 trait-narcolepsy-name = Нарколепсия
-trait-narcolepsy-desc = Вас одолевают приступы сонливости.
+trait-narcolepsy-desc = Вы случайно засыпаете.
 
 trait-pacifist-name = Пацифист
-trait-pacifist-desc = Вы не можете нападать и причинять вред живым существам.
+trait-pacifist-desc = Вы не можете атаковать или причинять вред живым существам.
 
-permanent-blindness-trait-examined = [color=lightblue]{ CAPITALIZE(POSS-ADJ($target)) } глаза остекленелые и расфокусированные. Не похоже, что { SUBJECT($target) } может хорошо вас видеть, если может вообще.[/color]
+permanent-blindness-trait-examined = [color=lightblue]{CAPITALIZE(POSS-ADJ($target))} глаза стеклянные и расфокусированы. Похоже, {SUBJECT($target)} почти или совсем не видит вас.[/color]
 
-trait-lightweight-name = Быстрое опьянение
-trait-lightweight-desc = Алкоголь сильнее воздействует на вас.
+trait-lightweight-name = Быстро пьянеющий
+trait-lightweight-desc = Алкоголь действует на вас сильнее обычного.
 
 trait-monochromacy-name = Монохромазия
-trait-monochromacy-desc = Вы полный дальтоник, всё, что вы видите, сводится к оттенкам от чёрного до белого.
+trait-monochromacy-desc = Вы полностью дальтоник, всё, что вы видите — это оттенки от чёрного до белого.
 
 trait-muted-name = Немота
 trait-muted-desc = Вы не можете говорить.
@@ -24,44 +24,44 @@ trait-muted-desc = Вы не можете говорить.
 trait-paracusia-name = Паракузия
 trait-paracusia-desc = Вы слышите звуки, которых на самом деле нет.
 
-trait-unrevivable-name = Невозрождаемость
-trait-unrevivable-desc = Вас невозможно оживить при помощи дефибриллятора.
+trait-unrevivable-name = Невоскрешаемый
+trait-unrevivable-desc = Вас невозможно оживить с помощью дефибрилляторов.
 
-trait-accentless-name = Отсутствие акцента
-trait-accentless-desc = У вас нет того акцента, который характерен для представителей вашего вида.
+trait-pirate-accent-name = Пиратский акцент
+trait-pirate-accent-desc = Вы не можете перестать говорить как пират!
 
-trait-frontal-lisp-name = Сигматизм
-trait-frontal-lisp-desc = У ваф имеютшя проблемы ш произношением.
+trait-accentless-name = Без акцента
+trait-accentless-desc = У вас нет акцента, характерного для вашей расы
+
+trait-frontal-lisp-name = Межзубный сигматизм
+trait-frontal-lisp-desc = Вы говогите с шепелявостью.
 
 trait-socialanxiety-name = Заикание
-trait-socialanxiety-desc = Вы заикаетесь.
+trait-socialanxiety-desc = Вы говорите с заиканием.
 
-trait-southern-name = Диалект юга США
-trait-southern-desc = У вас другая манера речи. Работает только с английским.
+trait-southern-name = Южный говор
+trait-southern-desc = У вас своеобразная манера речи.
 
 trait-snoring-name = Храп
-trait-snoring-desc = Вы храпите во время сна.
+trait-snoring-desc = Вы будете храпеть во сне.
 
 trait-liar-name = Патологический лжец
-trait-liar-desc = Вы с трудом заставляете себя говорить правду. Иногда вы всё равно лжёте.
+trait-liar-desc = Вам трудно говорить правду. Иногда вы врёте просто так.
+
+trait-cowboy-name = Ковбойский акцент
+trait-cowboy-desc = Вы говорите с характерным ковбойским акцентом!
 
 trait-german-name = Немецкий акцент
-trait-german-desc = Вы, кажется, родом из Космической Германии.
+trait-german-desc = Похоже, вы родом из космической Германии.
+
+trait-italian-name = Итальянский акцент
+trait-italian-desc = Мамма мия! Похоже, вы жили в космической Италии!
 
 trait-french-name = Французский акцент
-trait-french-desc = Ваш акцент, похоже, имеет определённый «je ne sais quoi».
+trait-french-desc = В вашем акценте есть некое «je ne sais quoi».
 
 trait-spanish-name = Испанский акцент
-trait-spanish-desc = Hola señor, как пройти в la biblioteca.
+trait-spanish-desc = Hola señor, donde esta la biblioteca.
 
-trait-scottish-name = Шотландский акцент
-trait-scottish-desc = Ты говоришь как настоящий шотландец!
-
-trait-painnumbness-name = Невосприимчивость к боли
-trait-painnumbness-desc = Вы не чувствуете боли и не осознаёте, насколько вы ранены.
-
-trait-hemophilia-name = Гемофилия
-trait-hemophilia-desc = Ваш организм не справляется со свёртыванием крови.
-
-trait-impaired-mobility-name = Нарушение подвижности
-trait-impaired-mobility-desc = Вам тяжело передвигаться без посторонней помощи.
+trait-painnumbness-name = Отсутствие боли
+trait-painnumbness-desc = Вы не чувствуете боль и можете не осознавать, насколько сильно ранены.
