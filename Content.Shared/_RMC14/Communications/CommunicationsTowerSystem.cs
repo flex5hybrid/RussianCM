@@ -80,7 +80,7 @@ public sealed class CommunicationsTowerSystem : EntitySystem
     {
         using (args.PushGroup(nameof(CommunicationsTowerComponent)))
         {
-            var msg = $"[color=cyan]If placed {(int) _hiveBoon.CommunicationTowerXenoTakeoverTime.TotalMinutes} minutes into the round, a hive cluster will turn into a hive pylon when its weeds take over this![/color]";
+            var msg = $"[color=cyan]После {(int) _hiveBoon.CommunicationTowerXenoTakeoverTime.TotalMinutes} минут раунда кластер улья превратится в пилон, как только смола дойдет до основания вышки.[/color]";
             args.PushMarkup(msg);
             if (ent.Comp.State != CommunicationsTowerState.Broken)
                 return;
