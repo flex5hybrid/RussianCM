@@ -460,7 +460,7 @@ public sealed class DropshipSystem : SharedDropshipSystem
         }
 
         if (offset)
-            destCoords = destCoords.Offset(new Vector2(-0.5f, -0.5f));
+            destCoords = destCoords.Offset(new Vector2(0.5f, 1.5f)); // RuMC change
 
         _shuttle.FTLToCoordinates(dropshipId.Value, shuttleComp, destCoords, rotation, startupTime: startupTime, hyperspaceTime: hyperspaceTime);
 
