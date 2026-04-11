@@ -11,12 +11,12 @@ requisitions-category-Food = Еда
 requisitions-category-Gear = Снаряжение
 requisitions-category-Medical = Медицина
 requisitions-category-Mortar = Миномёт
-requisitions-category-Reagent tanks = Баки с реагентами
+requisitions-category-Reagent_tanks = Баки с реагентами
 requisitions-category-Research = Исследования
-requisitions-category-Restricted Equipment = Ограниченное снаряжение
+requisitions-category-Restricted_Equipment = Ограниченное снаряжение
 requisitions-category-Supplies = Припасы
 requisitions-category-Weapons = Оружие
-requisitions-category-Weapons Specialist Ammo = Боеприпасы специалиста
+requisitions-category-Weapons_Specialist_Ammo = Боеприпасы специалиста
 
 # =========================
 # Ammo
