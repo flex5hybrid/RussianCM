@@ -12,11 +12,11 @@
                        Margin="8 0 0 0" VAlign="Center"
                        StyleClasses="LabelHeadingBigger" />
                 <Button Name="CommendationsReceivedButton" HorizontalExpand="True"
-                        Text="Medals and Jellies Received"
+                        Text="Полученные медали и желе"
                         StyleClasses="ButtonBig"
                         HorizontalAlignment="Right" />
                 <Button Name="CommendationsGivenButton"
-                        Text="Medals and Jellies Given"
+                        Text="Выданные медали и желе"
                         StyleClasses="ButtonBig"
                         HorizontalAlignment="Right" />
                 <Button Name="StatsButton"

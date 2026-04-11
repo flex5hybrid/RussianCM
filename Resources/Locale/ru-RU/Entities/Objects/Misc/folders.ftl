@@ -1,38 +1,37 @@
-ent-BoxFolderNuclearCodes-name = nuclear code folder
+ent-BoxFolderNuclearCodes-name = папка с ядерными кодами
 
-ent-BoxFolderBase-name = folder
-ent-BoxFolderBase-desc = A folder filled with top secret paperwork.
+ent-BoxFolderBase-name = папка
+ent-BoxFolderBase-desc = Папка, заполненная совершенно секретными документами.
 
-ent-BoxFolderCentCom-name = CentComm folder
-ent-BoxFolderCentCom-desc = CentComm's miserable little pile of secrets!
+ent-BoxFolderCentCom-name = папка ЦентКомм
+ent-BoxFolderCentCom-desc = Жалкая кучка секретов ЦентКомм!
 
-ent-BoxFolderClipboard-name = clipboard
-ent-BoxFolderClipboard-desc = The weapon of choice for those on the front lines of bureaucracy.
+ent-BoxFolderClipboard-name = планшет-папка
+ent-BoxFolderClipboard-desc = Оружие выбора тех, кто на передовой бюрократии.
 
-ent-BoxFolderCentComClipboard-name = CentComm clipboard
-ent-BoxFolderCentComClipboard-desc = A luxurious clipboard upholstered with green velvet. Often seen carried by CentComm officials, seldom seen actually used.
+ent-BoxFolderCentComClipboard-name = планшет ЦентКомм
+ent-BoxFolderCentComClipboard-desc = Роскошный планшет, обитый зелёным бархатом. Часто у офицеров ЦентКомм, но почти никогда не используется.
 
-ent-BoxFolderQmClipboard-name = requisition digi-board
-ent-BoxFolderQmClipboard-desc = A bulky electric clipboard, filled with shipping orders and financing details. With so many compromising documents, you ought to keep this safe.
+ent-BoxFolderQmClipboard-name = планшет снабжения
+ent-BoxFolderQmClipboard-desc = Громоздкий электронный планшет, наполненный заказами и финансовыми документами. С таким количеством компромата его стоит беречь.
 
-ent-BoxFolderRed-name = folder
-ent-BoxFolderRed-desc = A folder filled with top secret paperwork.
+ent-BoxFolderRed-name = папка
+ent-BoxFolderRed-desc = Папка, заполненная совершенно секретными документами.
 
-ent-BoxFolderBlue-name = folder
-ent-BoxFolderBlue-desc = A folder filled with top secret paperwork.
+ent-BoxFolderBlue-name = папка
+ent-BoxFolderBlue-desc = Папка, заполненная совершенно секретными документами.
 
-ent-BoxFolderYellow-name = folder
-ent-BoxFolderYellow-desc = A folder filled with top secret paperwork.
+ent-BoxFolderYellow-name = папка
+ent-BoxFolderYellow-desc = Папка, заполненная совершенно секретными документами.
 
-ent-BoxFolderWhite-name = folder
-ent-BoxFolderWhite-desc = A folder filled with top secret paperwork.
+ent-BoxFolderWhite-name = папка
+ent-BoxFolderWhite-desc = Папка, заполненная совершенно секретными документами.
 
-ent-BoxFolderGrey-name = folder
-ent-BoxFolderGrey-desc = A folder filled with top secret paperwork.
+ent-BoxFolderGrey-name = папка
+ent-BoxFolderGrey-desc = Папка, заполненная совершенно секретными документами.
 
-ent-BoxFolderBlack-name = folder
-ent-BoxFolderBlack-desc = A folder filled with top secret paperwork.
+ent-BoxFolderBlack-name = папка
+ent-BoxFolderBlack-desc = Папка, заполненная совершенно секретными документами.
 
-ent-BoxFolderGreen-name = folder
-ent-BoxFolderGreen-desc = A folder filled with top secret paperwork.
-
+ent-BoxFolderGreen-name = папка
+ent-BoxFolderGreen-desc = Папка, заполненная совершенно секретными документами.

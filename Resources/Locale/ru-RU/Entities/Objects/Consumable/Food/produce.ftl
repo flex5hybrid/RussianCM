@@ -1,228 +1,227 @@
-ent-WheatBushel-name = wheat bushel
-ent-WheatBushel-desc = Sigh... wheat... a-grain?
+ent-WheatBushel-name = пучок пшеницы
+ent-WheatBushel-desc = Эх... пшеница... злак?
 
-ent-MeatwheatBushel-name = meatwheat bushel
-ent-MeatwheatBushel-desc = Some blood-drenched wheat stalks. You can crush them into what passes for meat if you squint hard enough.
+ent-MeatwheatBushel-name = пучок мясной пшеницы
+ent-MeatwheatBushel-desc = Несколько пропитанных кровью стеблей пшеницы. Если очень сильно прищуриться, из них можно выжать нечто, что сойдёт за мясо.
 
-ent-OatBushel-name = oat bushel
-ent-OatBushel-desc = Eat oats, do squats.
+ent-OatBushel-name = пучок овса
+ent-OatBushel-desc = Ешь овёс — делай присед.
 
-ent-Sugarcane-name = sugarcane
-ent-Sugarcane-desc = Sickly sweet.
+ent-Sugarcane-name = сахарный тростник
+ent-Sugarcane-desc = Приторно сладкий.
 
-ent-Papercane-name = papercane roll
-ent-Papercane-desc = Why do we even need to grow paper?
+ent-Papercane-name = бумажный тростник
+ent-Papercane-desc = Зачем вообще выращивать бумагу?
 
-ent-FoodLaughinPeaPod-name = laughin' pea pod
-ent-FoodLaughinPeaPod-desc = The clown's favorite plant.
+ent-FoodLaughinPeaPod-name = хихикающий стручок гороха
+ent-FoodLaughinPeaPod-desc = Любимое растение клоуна.
 
-ent-Log-name = tower-cap log
-ent-Log-desc = It's better than bad, it's good!
+ent-Log-name = бревно башенного гриба
+ent-Log-desc = Это лучше, чем плохо — это хорошо!
 
-ent-SteelLog-name = steel-cap log
-ent-SteelLog-desc = Steel doesn't grow on trees! It grows on mushrooms, of course.
+ent-SteelLog-name = стальной грибной ствол
+ent-SteelLog-desc = Сталь не растёт на деревьях! Она растёт на грибах, конечно же.
 
-ent-Nettle-name = nettle
-ent-Nettle-desc = Stingy little prick.
+ent-Nettle-name = крапива
+ent-Nettle-desc = Жалящий маленький гад.
 
-ent-DeathNettle-name = death nettle
-ent-DeathNettle-desc = This nettle's out for blood.
+ent-DeathNettle-name = смертельная крапива
+ent-DeathNettle-desc = Эта крапива жаждет крови.
 
-ent-FoodBanana-name = banana
-ent-FoodBanana-desc = Rich in potassium.
+ent-FoodBanana-name = банан
+ent-FoodBanana-desc = Богат калием.
 
-ent-FoodMimana-name = mimana
-ent-FoodMimana-desc = Mime's favorite.
+ent-FoodMimana-name = мимана
+ent-FoodMimana-desc = Любимое лакомство мима.
 
-ent-TrashBananaPeel-name = banana peel
+ent-TrashBananaPeel-name = банановая кожура
 
-ent-TrashBakedBananaPeel-name = baked banana peel
+ent-TrashBakedBananaPeel-name = запечённая банановая кожура
 
-ent-TrashMimanaPeel-name = mimana peel
+ent-TrashMimanaPeel-name = кожура миманы
 
-ent-TrashBananiumPeel-name = bananium peel
+ent-TrashBananiumPeel-name = бананиумная кожура
 
-ent-FoodCarrot-name = carrot
-ent-FoodCarrot-desc = It's good for the eyes!
+ent-FoodCarrot-name = морковь
+ent-FoodCarrot-desc = Полезно для глаз!
 
-ent-FoodCabbage-name = cabbage
-ent-FoodCabbage-desc = Ewwwwwwwwww. Cabbage.
+ent-FoodCabbage-name = капуста
+ent-FoodCabbage-desc = Фу-у-у... капуста.
 
-ent-FoodGarlic-name = garlic
-ent-FoodGarlic-desc = Delicious, but with a potentially overwhelming odor.
+ent-FoodGarlic-name = чеснок
+ent-FoodGarlic-desc = Вкусный, но с очень резким запахом.
 
-ent-FoodLemon-name = lemon
-ent-FoodLemon-desc = When life gives you lemons, be grateful they aren't limes.
+ent-FoodLemon-name = лимон
+ent-FoodLemon-desc = Если жизнь даёт тебе лимоны — радуйся, что это не лаймы.
 
-ent-FoodLemoon-name = lemoon
-ent-FoodLemoon-desc = People says Moon is made out of cheese, but Moon is actually made out of milk and laurel!
+ent-FoodLemoon-name = лимуна
+ent-FoodLemoon-desc = Люди говорят, что Луна сделана из сыра, но на самом деле она сделана из молока и лавра!
 
-ent-FoodLime-name = lime
-ent-FoodLime-desc = Cures Space Scurvy, allows you to act like a Space Pirate.
+ent-FoodLime-name = лайм
+ent-FoodLime-desc = Лечит космическую цингу, позволяет вести себя как космический пират.
 
-ent-FoodOrange-name = orange
-ent-FoodOrange-desc = Healthy, very orange.
+ent-FoodOrange-name = апельсин
+ent-FoodOrange-desc = Полезный, очень оранжевый.
 
-ent-FoodExtradimensionalOrange-name = extradimensional orange
-ent-FoodExtradimensionalOrange-desc = You can hardly wrap your head around this thing.
+ent-FoodExtradimensionalOrange-name = межпространственный апельсин
+ent-FoodExtradimensionalOrange-desc = Его почти невозможно осмыслить.
 
-ent-FoodPineapple-name = pineapple
-ent-FoodPineapple-desc = Mmm, tropical.
+ent-FoodPineapple-name = ананас
+ent-FoodPineapple-desc = Ммм, тропики.
 
-ent-FoodPotato-name = potato
-ent-FoodPotato-desc = The space Irish starved to death after their potato crops died. Sadly they were unable to fish for space carp due to it being the queen's space. Bringing this up to any space IRA member will drive them insane with anger.
+ent-FoodPotato-name = картофель
+ent-FoodPotato-desc = Космические ирландцы умерли от голода, когда их урожай картофеля погиб. К сожалению, они не смогли ловить космических карпов, потому что это было в «пространстве королевы». Любой, кто упомянет это космическому ИРА, рискует вызвать их ярость.
 
-ent-FoodTomato-name = tomato
-ent-FoodTomato-desc = I say to-mah-to, you say tom-mae-to.
+ent-FoodTomato-name = помидор
+ent-FoodTomato-desc = Кто-то говорит томейто, кто-то — томато.
 
-ent-FoodBlueTomato-name = blue tomato
-ent-FoodBlueTomato-desc = This one is blue.
+ent-FoodBlueTomato-name = синий помидор
+ent-FoodBlueTomato-desc = Он синий.
 
-ent-FoodBloodTomato-name = blood tomato
-ent-FoodBloodTomato-desc = Wait, that's not ketchup...
+ent-FoodBloodTomato-name = кровавый помидор
+ent-FoodBloodTomato-desc = Погодите, это не кетчуп...
 
-ent-FoodEggplant-name = eggplant
-ent-FoodEggplant-desc = Maybe there's a chicken inside?
+ent-FoodEggplant-name = баклажан
+ent-FoodEggplant-desc = Может, внутри есть курица?
 
-ent-FoodApple-name = apple
-ent-FoodApple-desc = It's a little piece of Eden.
+ent-FoodApple-name = яблоко
+ent-FoodApple-desc = Маленький кусочек Эдема.
 
-ent-FoodGoldenApple-name = golden apple
-ent-FoodGoldenApple-desc = It should be shaped like a cube, shouldn't it?
+ent-FoodGoldenApple-name = золотое яблоко
+ent-FoodGoldenApple-desc = Оно должно быть кубическим, разве нет?
 
-ent-FoodCocoaPod-name = cocoa pod
-ent-FoodCocoaPod-desc = You can never have too much chocolate!
+ent-FoodCocoaPod-name = какао-плод
+ent-FoodCocoaPod-desc = Шоколада много не бывает!
 
-ent-FoodCorn-name = ear of corn
-ent-FoodCorn-desc = Needs some butter! And some cooking...
+ent-FoodCorn-name = початок кукурузы
+ent-FoodCorn-desc = Нужен маслице! И готовка...
 
-ent-FoodCornTrash-name = corn cob
-ent-FoodCornTrash-desc = Not a dang kernel left.
+ent-FoodCornTrash-name = кукурузный початок
+ent-FoodCornTrash-desc = Ни одного зёрнышка не осталось.
 
-ent-FoodOnion-name = onion
-ent-FoodOnion-desc = Nothing to cry over.
+ent-FoodOnion-name = лук
+ent-FoodOnion-desc = Нечего тут плакать.
 
-ent-FoodOnionRed-name = red onion
-ent-FoodOnionRed-desc = Purple despite the name.
+ent-FoodOnionRed-name = красный лук
+ent-FoodOnionRed-desc = Фиолетовый, несмотря на название.
 
-ent-FoodMushroom-name = chanterelle cluster
-ent-FoodMushroom-desc = Cantharellus Cibarius: These jolly yellow little shrooms sure look tasty!
+ent-FoodMushroom-name = лисички (гриб)
+ent-FoodMushroom-desc = Cantharellus Cibarius: эти весёлые жёлтые грибочки выглядят очень аппетитно!
 
-ent-FoodPineappleSlice-name = pineapple slice
-ent-FoodPineappleSlice-desc = Mmm, tropical.
+ent-FoodPineappleSlice-name = ломтик ананаса
+ent-FoodPineappleSlice-desc = Ммм, тропики.
 
-ent-FoodOnionSlice-name = onion slice
-ent-FoodOnionSlice-desc = Nothing to cry over.
+ent-FoodOnionSlice-name = ломтик лука
+ent-FoodOnionSlice-desc = Нечего тут плакать.
 
-ent-FoodOnionRedSlice-name = red onion slice
-ent-FoodOnionRedSlice-desc = Purple despite the name.
+ent-FoodOnionRedSlice-name = ломтик красного лука
+ent-FoodOnionRedSlice-desc = Фиолетовый, несмотря на название.
 
-ent-FoodChiliPepper-name = chili pepper
-ent-FoodChiliPepper-desc = Spicy, best not touch your eyes.
+ent-FoodChiliPepper-name = перец чили
+ent-FoodChiliPepper-desc = Острый, лучше не трогать глаза.
 
-ent-FoodChillyPepper-name = chilly pepper
-ent-FoodChillyPepper-desc = Icy hot.
+ent-FoodChillyPepper-name = холодный перец
+ent-FoodChillyPepper-desc = Ледяной жар.
 
-ent-FoodAloe-name = aloe
-ent-FoodAloe-desc = A fragrant plant with soothing properties.
+ent-FoodAloe-name = алоэ
+ent-FoodAloe-desc = Ароматное растение с успокаивающими свойствами.
 
-ent-FoodPoppy-name = poppy
-ent-FoodPoppy-desc = A flower with extracts often used in the production of medicine.
+ent-FoodPoppy-name = мак
+ent-FoodPoppy-desc = Цветок, экстракты которого часто используют в медицине.
 
-ent-FoodLily-name = lily
-ent-FoodLily-desc = A beautiful orange flower.
+ent-FoodLily-name = лилия
+ent-FoodLily-desc = Красивый оранжевый цветок.
 
-ent-FoodLingzhi-name = lingzhi
-ent-FoodLingzhi-desc = A potent medicinal mushroom. Don't go overboard.
+ent-FoodLingzhi-name = линчжи
+ent-FoodLingzhi-desc = Сильнодействующий лечебный гриб. Не злоупотребляйте.
 
-ent-FoodAmbrosiaVulgaris-name = ambrosia vulgaris
-ent-FoodAmbrosiaVulgaris-desc = A medicinal plant. May make you feel a little funny.
+ent-FoodAmbrosiaVulgaris-name = амброзия вульгарис
+ent-FoodAmbrosiaVulgaris-desc = Лекарственное растение. Может слегка «прибить».
 
-ent-FoodAmbrosiaDeus-name = ambrosia deus
-ent-FoodAmbrosiaDeus-desc = An extremely sought-after medicinal plant. May have some funky side effects.
+ent-FoodAmbrosiaDeus-name = амброзия деус
+ent-FoodAmbrosiaDeus-desc = Чрезвычайно редкое лекарственное растение. Может иметь странные побочные эффекты.
 
-ent-FoodGalaxythistle-name = galaxythistle
-ent-FoodGalaxythistle-desc = A medicinal plant used for its antitoxin.
+ent-FoodGalaxythistle-name = галактический чертополох
+ent-FoodGalaxythistle-desc = Лекарственное растение с антитоксическим эффектом.
 
-ent-FoodGlasstle-name = glasstle
-ent-FoodGlasstle-desc = A fragile crystal plant with lot of spiky thorns.
+ent-FoodGlasstle-name = стеклочертополох
+ent-FoodGlasstle-desc = Хрупкое кристаллическое растение с множеством острых шипов.
 
-ent-FoodFlyAmanita-name = fly amanita
-ent-FoodFlyAmanita-desc = A delicious-looking mushroom like you see in those cartoons.
+ent-FoodFlyAmanita-name = мухомор
+ent-FoodFlyAmanita-desc = Съедобно выглядящий гриб, как в мультфильмах.
 
-ent-FoodGatfruit-name = gatfruit
-ent-FoodGatfruit-desc = A delicious, gun-shaped fruit with a thick wooden stem.
+ent-FoodGatfruit-name = гатфрут
+ent-FoodGatfruit-desc = Вкусный фрукт в форме оружия с деревянным стеблем.
 
-ent-FoodRealCapfruit-name = capfruit
-ent-FoodRealCapfruit-desc = A soft but smooth gun-shaped fruit.
+ent-FoodRealCapfruit-name = капфрут
+ent-FoodRealCapfruit-desc = Мягкий, гладкий фрукт в форме оружия.
 
-ent-FoodFakeCapfruit-name = capfruit
-ent-FoodFakeCapfruit-desc = A soft but smooth gun-shaped fruit.
+ent-FoodFakeCapfruit-name = капфрут
+ent-FoodFakeCapfruit-desc = Мягкий, гладкий фрукт в форме оружия.
 
-ent-RiceBushel-name = rice bushel
-ent-RiceBushel-desc = Can be ground into rice, perfect for pudding or sake.
+ent-RiceBushel-name = пучок риса
+ent-RiceBushel-desc = Можно перемолоть в рис — отлично для пудинга или саке.
 
-ent-FoodSoybeans-name = soybeans
-ent-FoodSoybeans-desc = For those who can't stand seeing good old meat.
+ent-FoodSoybeans-name = соевые бобы
+ent-FoodSoybeans-desc = Для тех, кто не переносит обычное мясо.
 
-ent-FoodSpacemansTrumpet-name = spaceman's trumpet
-ent-FoodSpacemansTrumpet-desc = A vivid flower that smells faintly of freshly cut grass. Touching the flower seems to stain the skin some time after contact, yet most other surfaces seem to be unaffected by this phenomenon.
+ent-FoodSpacemansTrumpet-name = космическая труба
+ent-FoodSpacemansTrumpet-desc = Яркий цветок с запахом свежескошенной травы. Прикосновение оставляет след на коже спустя время.
 
-ent-FoodKoibean-name = koibean
-ent-FoodKoibean-desc = These beans seem a little bit fishy.
+ent-FoodKoibean-name = кои-боб
+ent-FoodKoibean-desc = Эти бобы выглядят немного… рыбно.
 
-ent-FoodWatermelon-name = watermelon
-ent-FoodWatermelon-desc = Round green object that you can slice and eat.
+ent-FoodWatermelon-name = арбуз
+ent-FoodWatermelon-desc = Круглый зелёный объект, который можно разрезать и съесть.
 
-ent-FoodWatermelonSlice-name = watermelon slice
-ent-FoodWatermelonSlice-desc = Juicy green and red slice.
+ent-FoodWatermelonSlice-name = ломтик арбуза
+ent-FoodWatermelonSlice-desc = Сочный зелёно-красный ломтик.
 
-ent-FoodHolymelon-name = holymelon
-ent-FoodHolymelon-desc = The water within this melon has been blessed by some deity that's particularly fond of watermelon.
+ent-FoodHolymelon-name = святой арбуз
+ent-FoodHolymelon-desc = Вода внутри этого арбуза благословлена каким-то божеством, особенно любящим арбузы.
 
-ent-FoodHolymelonSlice-name = holymelon slice
-ent-FoodHolymelonSlice-desc = Juicy golden and red slice.
+ent-FoodHolymelonSlice-name = ломтик святого арбуза
+ent-FoodHolymelonSlice-desc = Сочный золотисто-красный ломтик.
 
-ent-FoodGrape-name = grapes
-ent-FoodGrape-desc = The food of emperors, Space France inhabitants (usually as wine) and soccer moms. One day it could be used in wine production for the bartender if he ever runs out.
+ent-FoodGrape-name = виноград
+ent-FoodGrape-desc = Пища императоров, жителей космической Франции (обычно в виде вина) и домохозяек. Когда-нибудь из него можно будет делать вино для бармена.
 
-ent-FoodBerries-name = berries
-ent-FoodBerries-desc = A handful of various types of berries.
+ent-FoodBerries-name = ягоды
+ent-FoodBerries-desc = Горсть различных ягод.
 
-ent-FoodBungo-name = bungo fruit
-ent-FoodBungo-desc = The humble bungo fruit.
+ent-FoodBungo-name = фрукт бунго
+ent-FoodBungo-desc = Скромный фрукт бунго.
 
-ent-FoodBungoPit-name = bungo pit
+ent-FoodBungoPit-name = косточка бунго
 
-ent-FoodPeaPod-name = pea pod
-ent-FoodPeaPod-desc = A duck's favorite treat!
+ent-FoodPeaPod-name = стручок гороха
+ent-FoodPeaPod-desc = Любимое лакомство уток!
 
-ent-FoodWorldPeas-name = cluster of world peas
-ent-FoodWorldPeas-desc = It's rumored to bring peace to any who consume it.
+ent-FoodWorldPeas-name = гроздь мирового гороха
+ent-FoodWorldPeas-desc = Говорят, он приносит мир тем, кто его съест.
 
-ent-FoodPumpkin-name = pumpkin
-ent-FoodPumpkin-desc = A large, orange... berry. Seriously.
+ent-FoodPumpkin-name = тыква
+ent-FoodPumpkin-desc = Большая оранжевая… ягода. Серьёзно.
 
-ent-FoodBluePumpkin-name = blue pumpkin
-ent-FoodBluePumpkin-desc = A large, blue... berry. Seriously.
+ent-FoodBluePumpkin-name = синяя тыква
+ent-FoodBluePumpkin-desc = Большая синяя… ягода. Серьёзно.
 
-ent-CottonBol-name = cotton boll
-ent-CottonBol-desc = Moth people's favorite snack, and just as fluffy as them.
+ent-CottonBol-name = хлопковая коробочка
+ent-CottonBol-desc = Любимое лакомство мотыльков и такая же пушистая.
 
-ent-PyrottonBol-name = pyrotton boll
-ent-PyrottonBol-desc = This will probably set you on fire.
+ent-PyrottonBol-name = пироттоновая коробочка
+ent-PyrottonBol-desc = Скорее всего подожжёт тебя.
 
-ent-FoodCherry-name = cherry
-ent-FoodCherry-desc = Juicy red cherry with a pit inside.
+ent-FoodCherry-name = вишня
+ent-FoodCherry-desc = Сочная красная вишня с косточкой.
 
-ent-TrashCherryPit-name = cherry pit
+ent-TrashCherryPit-name = косточка вишни
 
-ent-FoodAnomalyBerry-name = anomaly berry
-ent-FoodAnomalyBerry-desc = A strange blue fruit. Something about it doesn't seem right.
+ent-FoodAnomalyBerry-name = аномальная ягода
+ent-FoodAnomalyBerry-desc = Странная синяя ягода. С ней что-то не так.
 
-ent-ProduceBase-name = item
+ent-ProduceBase-name = предмет
 
-ent-FoodProduceBase-name = item
+ent-FoodProduceBase-name = предмет
 
-ent-ProduceSliceBase-name = item
-
+ent-ProduceSliceBase-name = предмет
