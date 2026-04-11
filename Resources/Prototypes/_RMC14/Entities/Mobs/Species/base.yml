@@ -376,3 +376,4 @@
     hideLayersOnEquip:
     - UndergarmentTop
     - Hair
+  - type: TTS # TTS RuCM
