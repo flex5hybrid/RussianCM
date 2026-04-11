@@ -1,71 +1,114 @@
-ent-RMCBoxAGMI = ящик гранат M74 АВМ-З
-  .desc = Защищённый ящик, содержащий 25 зажигательных гранат M74 АВМ. Сильно горючи, не хранить рядом с топливом для огнемётов.
-ent-RMCBoxAGMF = ящик гранат M74 АВМ-О
-  .desc = Защищённый ящик, содержащий 25 осколочных гранат M74 АВМ. Взрывчатка, не хранить рядом с топливом для огнемётов.
-ent-RMCBoxHEFA = ящик гранат M40 ОФП
-  .desc = Защищённый ящик, содержащий 25 осколочно-фугасных противопехотных гранат M40. Взрывчатка, не хранить рядом с топливом для огнемётов.
-ent-RMCBoxHEDP = ящик гранат M40 ОФ
-  .desc = Защищённый ящик, содержащий 25 осколочно-фугасных гранат M40 двойного назначения. Взрывчатка, не хранить рядом с топливом для огнемётов.
-ent-RMCBoxBase = ящик с гранатами
-  .desc = Защищённый ящик с гранатами. Взрывчатка, не хранить рядом с топливом для огнемётов.
-ent-CMPacketGrenadeFragOld = пакет осколочных гранат M15
-  .desc = Содержит три осколочные гранаты M15. Обращаться с осторожностью.
-ent-RMCPacketGrenadeIncendiary = пакет З гранат
-  .desc = Содержит три З зажигательные гранаты.
-ent-RMCPacketGrenadeBatonSlugHIRR = пакет травматических пуль ПВВ
-  .desc = Содержит три травматических пули ПВВ.
-ent-RMCPacketGrenadeM74AGMSStarShell = пакет гранат M74АВМ-Д «Звёздная ракета»
-  .desc = Содержит три осветительные гранаты M74АВМ-Д «Звёздная ракета» воздушного подрыва.
-ent-RMCPacketGrenadeM74AGMSHornet = пакет гранат M74АВМ-Д «Шершень»
-  .desc = Содержит три дымовые гранаты M74АВМ-Д «Шершень» воздушного подрыва.
-ent-RMCPacketGrenadeM74AGMS = пакет гранат M74АВМ-Д
-  .desc = Содержит три дымовые гранаты M74АВМ воздушного подрыва.
-ent-RMCPacketGrenadeM74AGMI = пакет гранат M74АВМ-З
-  .desc = Содержит три зажигательные гранаты M74АВМ воздушного подрыва.
-ent-RMCPacketGrenadeM74AGMF = пакет гранат M74АВМ-О
-  .desc = Содержит три осколочные гранаты M74АВМ воздушного подрыва.
-ent-RMCPacketGrenadeSmoke = пакет Д гранат
-  .desc = Содержит три Д дымовые гранаты.
-ent-RMCPacketGrenadeFlashBang = коробка светошумовых гранат (ОСТОРОЖНО)
-ent-CMPacketGrenadeFrag = пакет ОФП гранат
-  .desc = Содержит три ОФП гранаты. Не говорите ордену ОФП.
-ent-CMPacketGrenadeHighExplosive = пакет ОФ гранат
-  .desc = Содержит три ОФ осколочно-фугасные гранаты.
+# =========================
+# BASE
+# =========================
+
 ent-CMPacketBase = пакет
+    .desc = Универсальный контейнер для хранения небольших предметов.
 
+# =========================
+# GRENADE PACKETS
+# =========================
 
-ent-RMCBoxAGMIFilled = ящик гранат M74 АВМ-З
-  .desc = Защищённый ящик, содержащий 25 зажигательных гранат M74 АВМ. Сильно горючи, не хранить рядом с топливом для огнемётов.
-ent-RMCBoxAGMFFilled = ящик гранат M74 АВМ-О
-  .desc = Защищённый ящик, содержащий 25 осколочных гранат M74 АВМ. Взрывчатка, не хранить рядом с топливом для огнемётов.
-ent-RMCBoxHEFAFilled = ящик гранат M40 ОФП
-  .desc = Защищённый ящик, содержащий 25 осколочно-фугасных противопехотных гранат M40. Взрывчатка, не хранить рядом с топливом для огнемётов.
-ent-RMCBoxHEDPFilled = ящик гранат M40 ОФ
-  .desc = Защищённый ящик, содержащий 25 осколочно-фугасных гранат M40 двойного назначения. Взрывчатка, не хранить рядом с топливом для огнемётов.
-ent-RMCBoxBaseFilled = ящик с гранатами
-  .desc = Защищённый ящик с гранатами. Взрывчатка, не хранить рядом с топливом для огнемётов.
-ent-CMPacketGrenadeFragOldFilled = пакет осколочных гранат M15
-  .desc = Содержит три осколочные гранаты M15. Обращаться с осторожностью.
-ent-RMCPacketGrenadeIncendiaryFilled = пакет З гранат
-  .desc = Содержит три З зажигательные гранаты.
-ent-RMCPacketGrenadeBatonSlugHIRRFilled = пакет травматических пуль ПВВ
-  .desc = Содержит три травматических пули ПВВ.
-ent-RMCPacketGrenadeM74AGMSStarShellFilled = пакет гранат M74АВМ-Д «Звёздная ракета»
-  .desc = Содержит три осветительные гранаты M74АВМ-Д «Звёздная ракета» воздушного подрыва.
-ent-RMCPacketGrenadeM74AGMSHornetFilled = пакет гранат M74АВМ-Д «Шершень»
-  .desc = Содержит три дымовые гранаты M74АВМ-Д «Шершень» воздушного подрыва.
-ent-RMCPacketGrenadeM74AGMSFilled = пакет гранат M74АВМ-Д
-  .desc = Содержит три дымовые гранаты M74АВМ воздушного подрыва.
-ent-RMCPacketGrenadeM74AGMIFilled = пакет гранат M74АВМ-З
-  .desc = Содержит три зажигательные гранаты M74АВМ воздушного подрыва.
-ent-RMCPacketGrenadeM74AGMFFilled = пакет гранат M74АВМ-О
-  .desc = Содержит три осколочные гранаты M74АВМ воздушного подрыва.
-ent-RMCPacketGrenadeSmokeFilled = пакет Д гранат
-  .desc = Содержит три Д дымовые гранаты.
-ent-RMCPacketGrenadeFlashBangFilled = коробка светошумовых гранат (ОСТОРОЖНО)
-ent-CMPacketGrenadeFragFilled = пакет ОФП гранат
-  .desc = Содержит три ОФП гранаты. Не говорите ордену ОФП.
-ent-CMPacketGrenadeHighExplosiveFilled = пакет ОФ гранат
-  .desc = Содержит три ОФ осколочно-фугасные гранаты.
-ent-CMPacketBaseFilled = пакет
+ent-CMPacketGrenadeHighExplosive = пакет гранат HEDP
+    .desc = Содержит три осколочно-фугасные гранаты HEDP.
 
+ent-CMPacketGrenadeHighExplosiveFilled = пакет гранат HEDP (полный)
+    .desc = Содержит три осколочно-фугасные гранаты HEDP.
+
+ent-CMPacketGrenadeFrag = пакет гранат HEFA
+    .desc = Содержит три гранаты HEFA. Не говорите об этом приказу HEFA.
+
+ent-CMPacketGrenadeFragFilled = пакет гранат HEFA (полный)
+    .desc = Содержит три гранаты HEFA.
+
+ent-RMCPacketGrenadeFlashBang = коробка светошумовых гранат (ВНИМАНИЕ)
+    .desc = Содержит несколько светошумовых гранат.
+
+ent-RMCPacketGrenadeSmoke = пакет дымовых гранат HSDP
+    .desc = Содержит три дымовые гранаты HSDP.
+
+ent-RMCPacketGrenadeSmokeFilled = пакет дымовых гранат HSDP (полный)
+    .desc = Содержит три дымовые гранаты HSDP.
+
+ent-RMCPacketGrenadeM74AGMF = пакет гранат M74 AGM-F
+    .desc = Содержит три осколочные гранаты воздушного подрыва M74 AGM-F.
+
+ent-RMCPacketGrenadeM74AGMFFilled = пакет гранат M74 AGM-F (полный)
+    .desc = Содержит три осколочные гранаты воздушного подрыва M74 AGM-F.
+
+ent-RMCPacketGrenadeM74AGMI = пакет гранат M74 AGM-I
+    .desc = Содержит три зажигательные гранаты воздушного подрыва M74 AGM-I.
+
+ent-RMCPacketGrenadeM74AGMIFilled = пакет гранат M74 AGM-I (полный)
+    .desc = Содержит три зажигательные гранаты воздушного подрыва M74 AGM-I.
+
+ent-RMCPacketGrenadeM74AGMS = пакет гранат M74 AGM-S
+    .desc = Содержит три дымовые гранаты воздушного подрыва M74 AGM-S.
+
+ent-RMCPacketGrenadeM74AGMSFilled = пакет гранат M74 AGM-S (полный)
+    .desc = Содержит три дымовые гранаты воздушного подрыва M74 AGM-S.
+
+ent-RMCPacketGrenadeM74AGMSHornet = пакет гранат M74 AGM-S Hornet
+    .desc = Содержит три гранаты Hornet воздушного подрыва M74 AGM-S.
+
+ent-RMCPacketGrenadeM74AGMSHornetFilled = пакет гранат M74 AGM-S Hornet (полный)
+    .desc = Содержит три гранаты Hornet воздушного подрыва M74 AGM-S.
+
+ent-RMCPacketGrenadeM74AGMSStarShell = пакет сигнальных гранат M74 AGM-S
+    .desc = Содержит три сигнальные (Starshell) гранаты M74 AGM-S.
+
+ent-RMCPacketGrenadeM74AGMSStarShellFilled = пакет сигнальных гранат M74 AGM-S (полный)
+    .desc = Содержит три сигнальные (Starshell) гранаты M74 AGM-S.
+
+ent-RMCPacketGrenadeBatonSlugHIRR = пакет патронов HIRR Baton Slug
+    .desc = Содержит три патрона HIRR Baton Slug.
+
+ent-RMCPacketGrenadeBatonSlugHIRRFilled = пакет патронов HIRR Baton Slug (полный)
+    .desc = Содержит три патрона HIRR Baton Slug.
+
+ent-RMCPacketGrenadeIncendiary = пакет гранат HIDP
+    .desc = Содержит три зажигательные гранаты HIDP.
+
+ent-RMCPacketGrenadeIncendiaryFilled = пакет гранат HIDP (полный)
+    .desc = Содержит три зажигательные гранаты HIDP.
+
+ent-CMPacketGrenadeFragOld = пакет гранат M15
+    .desc = Содержит три осколочные гранаты M15. Обращаться с осторожностью.
+
+ent-CMPacketGrenadeFragOldFilled = пакет гранат M15 (полный)
+    .desc = Содержит три осколочные гранаты M15.
+
+# =========================
+# GRENADE BOXES
+# =========================
+
+ent-RMCBoxBase = ящик с гранатами
+    .desc = Защищённый ящик для хранения гранат. Взрывоопасно, не хранить рядом с топливом огнемёта.
+
+ent-RMCBoxHEDP = ящик гранат 30мм HEDP
+    .desc = Защищённый ящик с 25 гранатами HEDP двойного назначения.
+
+ent-RMCBoxHEFA = ящик гранат 30мм HEFA
+    .desc = Защищённый ящик с 25 осколочно-противопехотными гранатами HEFA.
+
+ent-RMCBoxAGMF = ящик гранат M74 AGM-F
+    .desc = Защищённый ящик с 25 осколочными гранатами M74 AGM-F.
+
+ent-RMCBoxAGMI = ящик гранат M74 AGM-I
+    .desc = Защищённый ящик с 25 зажигательными гранатами M74 AGM-I.
+
+# =========================
+# 20MM PACKETS (PVE)
+# =========================
+
+ent-RMCPacketGrenade20mmHE = пакет гранат L109A1 HE
+    .desc = Содержит восемь 20мм осколочно-фугасных гранат L109A1.
+
+ent-RMCPacketGrenade20mmHEFilled = пакет гранат L109A1 HE (полный)
+    .desc = Содержит восемь 20мм осколочно-фугасных гранат L109A1.
+
+ent-RMCPacketGrenade20mmIncendiary = пакет гранат L109A2 зажигательных
+    .desc = Содержит восемь 20мм зажигательных гранат L109A2.
+
+ent-RMCPacketGrenade20mmIncendiaryFilled = пакет гранат L109A2 зажигательных (полный)
+    .desc = Содержит восемь 20мм зажигательных гранат L109A2.
