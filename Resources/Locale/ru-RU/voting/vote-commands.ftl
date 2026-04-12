@@ -12,8 +12,8 @@ cmd-createvote-arg-vote-type = <vote type>
 
 cmd-customvote-desc = Создаёт настраиваемое голосование
 cmd-customvote-help = Использование: customvote <title> <option1> <option2> [option3...]
-cmd-customvote-on-finished-tie = Голосование "{ $options.Title }" закончилось: ничья между { $ties }!
-cmd-customvote-on-finished-win = Голосование "{ $options.Title }" закончилось: { $winner } побеждает!
+cmd-customvote-on-finished-tie = Голосование закончилось: ничья между { $ties }!
+cmd-customvote-on-finished-win = Голосование закончилось: { $winner } побеждает!
 cmd-customvote-arg-title = <title>
 cmd-customvote-arg-option-n = <option{ $n }>
 
