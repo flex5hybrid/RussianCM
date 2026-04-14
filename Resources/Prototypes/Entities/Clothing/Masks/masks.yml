@@ -120,6 +120,19 @@
         Heat: 0.95
 
 - type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskGasExplorerCult
+  name: маска культа
+  description: Защищает ваше лицо от неприятностей
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/gasexplorer.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/gasexplorer.rsi
+  - type: ParasiteResistance
+    MaxCount: 999
+
+- type: entity
   parent: ClothingMaskPullableBase
   id: ClothingMaskBreathMedical
   name: medical mask

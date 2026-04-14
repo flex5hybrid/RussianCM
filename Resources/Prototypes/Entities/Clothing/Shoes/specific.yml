@@ -153,6 +153,20 @@
 
 - type: entity
   parent: ClothingShoesBaseButcherable
+  id: ClothingShoesSwatCult
+  name: сапоги культиста
+  description: Лёгкие сапоги, позволяющие быстро бегать
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Specific/swat.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Specific/swat.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.3
+    sprintModifier: 1.3
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
   id: ClothingShoesWizard
   name: wizard shoes
   description: A pair of magic shoes.

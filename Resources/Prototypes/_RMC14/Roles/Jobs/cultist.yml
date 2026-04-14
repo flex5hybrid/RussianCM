@@ -1,0 +1,24 @@
+- type: startingGear
+  id: RuMCCultist
+  equipment:
+    jumpsuit: RMCJumpsuitNormCultistLightBrown
+    outerClothing: RuMCArmorCultist
+    back: CMSatchelMarine
+    shoes: ClothingShoesSwatCult  
+    mask: ClothingMaskGasExplorerCult
+    gloves: RMCHandsGreyMarine
+    ears: RMCHeadsetDistressWeYa
+
+#КУЛЬТИСТАМ ВЫДАВАТЬ СЛЕДУЮЩИЕ НАВЫКИ
+#        RMCSkillConstruction: 2
+#        RMCSkillEndurance: 4
+#        RMCSkillFireman: 1
+#        RMCSkillMedical: 3
+#        RMCSkillSurgery: 2
+#        RMCSkillCqc: 2
+#        RMCSkillPolice: 1
+#        RMCSkillLeadership: 1
+ #       RMCSkillMeleeWeapons: 2
+ #       RMCSkillOverwatch: 1
+#RMCSkillEngineer: 3
+#я не смог нахуярить им врожденные навыки, поэтому выдаем бумажками

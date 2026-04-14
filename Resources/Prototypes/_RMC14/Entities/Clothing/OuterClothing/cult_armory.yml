@@ -1,0 +1,32 @@
+#Ивентовый культ, MADE BY TerminatorBo
+- type: entity
+  id: RuMCArmorCultist
+  parent: [ ClothingOuterBaseMedium, RMCAllowSuitStorageClothingArmor]
+  name: броня культа
+  description: Запылённая, старая культисткая броня. В этой особенные бронепластины из неизвестного материала 
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Armor/cult_armour.rsi
+  - type: CMArmor
+    melee: 45
+    bullet: 60
+    bio: 25
+    explosionArmor: 90
+  - type: RMCArmorSpeedTier
+    speedTier: medium
+
+- type: entity
+  parent: RMCJumpsuitCivilian
+  id: RMCJumpsuitNormCultistLightBrown
+  name: коричневый костюм культиста
+  description: Обычный запылённый костюм, ничего такоого.
+  components:
+  - type: CMArmor
+    melee: 5
+    bullet: 5
+    bio: 5
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Uniforms/Civilian/lightbrown_jumpsuit.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Uniforms/Civilian/lightbrown_jumpsuit.rsi
+    

@@ -1,0 +1,34 @@
+- type: entity
+  parent: [ RMCBaseMeleeWeapon, BaseKnife ]
+  id: RuCMCultistSword
+  name: меч культиста
+  description: На первый взгляд самый обыкновенный, очень острый меч. На нём видна еще не обсохшая кровь.
+  components:
+  - type: Tag
+    tags:
+    - Machete
+  - type: Sprite
+    sprite: _RuMC/ShitSpawn/cult_machete.rsi
+    state: icon
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 70
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 15
+  - type: UsableWhileDevoured
+  - type: Item
+    size: Large
+    sprite: _RuMC/ShitSpawn/cult_machete.rsi
+  - type: DisarmMalus
+    malus: 0.225
+  - type: Tool
+    qualities:
+    - Prying
+  - type: Prying
+    pryPowered: false
+    speedModifier: 5
+    useSound:
+      path: /Audio/Items/crowbar.ogg

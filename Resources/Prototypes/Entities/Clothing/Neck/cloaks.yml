@@ -162,6 +162,15 @@
       toggleable-clothing: !type:ContainerSlot {}
 
 - type: entity
+  parent: ClothingNeckCloakGoliathCloak
+  id: ClothingNeckCloakCultist
+  name: плащ культиста
+  description: Плащ сделанный из кожи неизвестного внеземного чудовища, сейчас он на вас и выглядит круто!
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/goliathcloak.rsi
+
+- type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCloakPirateCap
   name: pirate captain cloak
