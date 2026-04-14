@@ -1,0 +1,6 @@
+# - type: marking
+#   id: PredatorColorTan
+#   markingCategory: PredatorColor
+#   sprite:
+#     sprite: _RuMC14/Mobs/Species/Predator/colors.rsi
+#     state: tan

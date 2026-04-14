@@ -1,0 +1,6 @@
+- type: job
+  id: Predator
+  name: Predator
+  setPreference: false
+  whitelistRequired: true
+  canBeAntag: false

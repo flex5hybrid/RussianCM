@@ -1,0 +1,7 @@
+- type: damageModifierSet
+  id: Predator
+  coefficients:
+    Slash: 0.7
+    Piercing: 0.8
+    Blunt: 0.8
+    Heat: 1.2

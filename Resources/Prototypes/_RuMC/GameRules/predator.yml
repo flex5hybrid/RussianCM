@@ -1,0 +1,20 @@
+# - type: gameRule
+#   id: PredatorRule
+#   name: Predator Invasion
+#   description: Ancient hunters have entered the sector...
+#   minPlayers: 10
+#     - type: LoadMapRule
+#     mapPath: /Maps/Nonstations/nukieplanet.yml
+
+
+- type: entity
+  id: PredatorRule
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: GameRule
+    minPlayers: 1
+  - type: CMDistressSignalRule
+    components:
+  - type: LoadMapRule
+    mapPath: /Maps/Nonstations/nukieplanet.yml

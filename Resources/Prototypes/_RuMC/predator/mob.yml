@@ -1,0 +1,52 @@
+# Anything human specific (e.g. UI, input) goes under MobHuman
+- type: entity
+  parent: RMCBaseMobSpeciesOrganic
+  id: RuCMBaseMobPredator
+  name: Urist McPredator
+  abstract: true
+  components:
+  - type: Hunger
+  - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
+    sprite: _RuMC/Mobs/Species/Predator/parts.rsi
+    state: full
+  - type: Thirst
+  - type: HumanoidAppearance
+    species: Predator
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobPredatorDummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+
+- type: entity
+  id: RuCMMobPredator
+  parent: RuCMBaseMobPredator
+  name: predator
+  components:
+  - type: HumanoidAppearance
+    species: Predator
+  - type: Predator
+  - type: Damageable
+    damageModifierSet: Predator
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 20
