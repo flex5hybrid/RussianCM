@@ -13,8 +13,6 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: GameRule
-    minPlayers: 1
-  - type: CMDistressSignalRule
-    components:
+    minPlayers: 0
   - type: LoadMapRule
-    mapPath: /Maps/Nonstations/nukieplanet.yml
+    mapPath: /Maps/_RuMC14/predator.yml

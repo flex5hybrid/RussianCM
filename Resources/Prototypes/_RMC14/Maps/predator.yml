@@ -1,0 +1,21 @@
+﻿# The Almayer map file is currently considered private content by RMC14.
+# The Almayer map file is to serve as a solution for a test fail that would result from the lack of its existence otherwise.
+- type: gameMap
+  id: PredatorMap
+  mapName: PredatorMap
+  mapPath: /Maps/_RuMC14/predator.yml
+  minPlayers: 0 # TODO RMC14 74
+  maxRandomOffset: 0
+  randomRotation: false
+  fallback: true
+  stations:
+    PredatorStation:
+      stationProto: StandardUNMCWarship
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Dev"
+        - type: StationJobs
+          availableJobs:
+            #Command
+            Predator: [ -1, -1 ]
+            CMAuxiliarySupportOfficer: [ -1, -1 ]

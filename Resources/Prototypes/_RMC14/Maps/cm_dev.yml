@@ -13,6 +13,7 @@
         mapNameTemplate: "Dev"
       - type: StationJobs
         availableJobs:
+          Predator: [ -1, -1 ]
           CMAuxiliarySupportOfficer: [ -1, -1 ]
           CMDropshipCrewChief: [ -1, -1 ]
           CMPilotDropship: [ -1, -1 ]

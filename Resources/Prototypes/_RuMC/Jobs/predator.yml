@@ -1,6 +1,37 @@
 - type: job
+  parent: CMJobBase
   id: Predator
   name: Predator
-  setPreference: false
-  whitelistRequired: true
+  # setPreference: false
+  whitelistRequired: false
   canBeAntag: false
+  playTimeTracker: CMJobPredator
+
+- type: entity
+  parent: CMSpawnPointJobBase
+  id: CMSpawnPointPredator
+  name: predator spawn point
+  components:
+  - type: SpawnPoint
+    job_id: Predator
+  - type: Sprite # TODO: Replace with landmark sprite
+    layers:
+    - sprite: Markers/jobs.rsi
+      state: green
+    - sprite: _RMC14/Markers/cm_jobs.rsi
+      state: auxiliary_support_officer
+
+- type: playTimeTracker
+  id: CMJobPredator
+  isHumanoid: false
+
+- type: department
+  parent: CMDepartmentBase
+  id: CMPredatorDepartament
+  name: department-predator
+  description: cm-department-predator-description
+  color: "#C38312"
+  roles:
+    - Predator
+  departmentRadio: MarineJTAC
+  headOfDepartment: Predator

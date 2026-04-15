@@ -1,0 +1,125 @@
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunter
+  name: hunter floor
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/floor.png
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterTile1
+  name: hunter tile 1
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_tile_1.png
+  variants: 4
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterTile2
+  name: hunter tile 2
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_tile_2.png
+  variants: 4
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterTile3
+  name: hunter tile 3
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_tile_3.png
+  variants: 4
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterTile4
+  name: hunter tile 4
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_tile_4.png
+  variants: 4
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterTile5
+  name: hunter tile 5
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_tile_5.png
+  variants: 4
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterTile6
+  name: hunter tile 6
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_tile_6.png
+  variants: 4
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterOuterHull
+  name: hunter outer hull
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/outerhull.png
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterOuterHullAlt
+  name: hunter outer hull alt
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/outerhull_alt.png
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterBridge
+  name: hunter bridge
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_bridge.png
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterCatwalk
+  name: hunter catwalk
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_catwalk.png
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterCatwalkAlt
+  name: hunter catwalk alt
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_catwalk_alt.png
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterCatwalkNew
+  name: hunter catwalk new
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_catwalk_new.png
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterGrille
+  name: hunter grille
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_grille.png
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterRed
+  name: hunter red tile
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_red.png
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterRed2
+  name: hunter red tile 2
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_red_2.png
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterRed3
+  name: hunter red tile 3
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_red_3.png
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterRed4
+  name: hunter red tile 4
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_red_4.png
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterRed5
+  name: hunter red tile 5
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_red_5.png
+
+- type: tile
+  parent: CMTileBase
+  id: CMFloorHunterRed6
+  name: hunter red tile 6
+  sprite: /Textures/_RuMC14/Tiles/hunter/hunter_floors.rsi/hunter_red_6.png
