@@ -12,13 +12,12 @@
 #КУЛЬТИСТАМ ВЫДАВАТЬ СЛЕДУЮЩИЕ НАВЫКИ
 #        RMCSkillConstruction: 2
 #        RMCSkillEndurance: 4
-#        RMCSkillFireman: 1
+#        RMCSkillFireman: 2
 #        RMCSkillMedical: 3
 #        RMCSkillSurgery: 2
 #        RMCSkillCqc: 2
-#        RMCSkillPolice: 1
-#        RMCSkillLeadership: 1
+#        RMCSkillPolice: 2
+#        RMCSkillLeadership: 2
  #       RMCSkillMeleeWeapons: 2
- #       RMCSkillOverwatch: 1
-#RMCSkillEngineer: 3
+#        RMCSkillEngineer: 3
 #я не смог нахуярить им врожденные навыки, поэтому выдаем бумажками
