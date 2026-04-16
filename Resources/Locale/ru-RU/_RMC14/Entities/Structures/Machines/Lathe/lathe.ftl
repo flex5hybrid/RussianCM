@@ -1,6 +1,6 @@
-ent-CMAutolathe = токарный станок
+ent-CMAutolathe = автолат
   .desc = Производит изделия из металла и стекла.
 
-ent-RMCAutolatheEmpty = токарный станок
+ent-RMCAutolatheEmpty = автолат
   .desc = Производит изделия из металла и стекла.
 

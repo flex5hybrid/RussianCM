@@ -1,87 +1,86 @@
-ent-Cigarette-name = cigarette
-ent-Cigarette-desc = A roll of tobacco and nicotine.
+ent-Cigarette-name = сигарета
+ent-Cigarette-desc = Скрученный табак с никотином.
 
-ent-SoakedCigarette-name = cigarette
-ent-SoakedCigarette-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-SoakedCigarette-name = сигарета
+ent-SoakedCigarette-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteSyndicate-name = cigarette
-ent-CigaretteSyndicate-desc = A roll of tobacco and nicotine.
+ent-CigaretteSyndicate-name = сигарета
+ent-CigaretteSyndicate-desc = Скрученный табак с никотином.
 
-ent-CigaretteOmnizine-name = Hot Dog Water Flavor Explosion
-ent-CigaretteOmnizine-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteOmnizine-name = Взрыв вкуса «горячей собачьей воды»
+ent-CigaretteOmnizine-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteIron-name = Rusty Orange Baja Blast
-ent-CigaretteIron-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteIron-name = Ржавый оранжевый «Баха Бласт»
+ent-CigaretteIron-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteTricordrazine-name = Licorice Allsorts
-ent-CigaretteTricordrazine-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteTricordrazine-name = Лакричные конфеты «ассорти»
+ent-CigaretteTricordrazine-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteDylovene-name = Urinal Cake Dissolver
-ent-CigaretteDylovene-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteDylovene-name = Растворитель писсуарных блоков
+ent-CigaretteDylovene-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteDermaline-name = Aloe Peanut Butter Medley
-ent-CigaretteDermaline-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteDermaline-name = Алоэ с арахисовой пастой
+ent-CigaretteDermaline-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteArithrazine-name = Roman Pipe Works
-ent-CigaretteArithrazine-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteArithrazine-name = Римская трубочная мастерская
+ent-CigaretteArithrazine-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteNutriment-name = Grandma's Christmas Fruitcake
-ent-CigaretteNutriment-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteNutriment-name = Рождественский фруктовый кекс от бабушки
+ent-CigaretteNutriment-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteBicaridine-name = Wet Dog Enhanced Cigarette
-ent-CigaretteBicaridine-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteBicaridine-name = Усиленная «мокрой собакой» сигарета
+ent-CigaretteBicaridine-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteDexalin-name = Rocky Mountain Musk
-ent-CigaretteDexalin-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteDexalin-name = Запах Скалистых гор
+ent-CigaretteDexalin-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteSaline-name = North Atlantic Cruise
-ent-CigaretteSaline-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteSaline-name = Североатлантический круиз
+ent-CigaretteSaline-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteBbqSauce-name = Spicy Wood Aroma
-ent-CigaretteBbqSauce-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteBbqSauce-name = Пряный древесный аромат
+ent-CigaretteBbqSauce-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteFrezon-name = Atmospheric Adventure
-ent-CigaretteFrezon-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteFrezon-name = Атмосферное приключение
+ent-CigaretteFrezon-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteCapsaicinOil-name = Chilly P
-ent-CigaretteCapsaicinOil-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteCapsaicinOil-name = Острый П
+ent-CigaretteCapsaicinOil-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteRadium-name = Ex Ray
-ent-CigaretteRadium-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteRadium-name = Рентген-излучение
+ent-CigaretteRadium-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteHaloperidol-name = Warm Bovine Extract
-ent-CigaretteHaloperidol-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteHaloperidol-name = Тёплый бычий экстракт
+ent-CigaretteHaloperidol-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteLaughter-name = Clown Adjacency Bonus
-ent-CigaretteLaughter-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteLaughter-name = Бонус за близость к клоуну
+ent-CigaretteLaughter-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteLipolicide-name = 80's Workout Routine
-ent-CigaretteLipolicide-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteLipolicide-name = Тренировка 80-х
+ent-CigaretteLipolicide-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteSodiumPolyacrylate-name = Unhealthy Habits
-ent-CigaretteSodiumPolyacrylate-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteSodiumPolyacrylate-name = Нездоровые привычки
+ent-CigaretteSodiumPolyacrylate-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteMold-name = Beneath The Sink Experience
-ent-CigaretteMold-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteMold-name = Опыт жизни под раковиной
+ent-CigaretteMold-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteLicoxide-name = Wake Up Call
-ent-CigaretteLicoxide-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteLicoxide-name = Будильник
+ent-CigaretteLicoxide-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteWeldingFuel-name = Plasma Sauce
-ent-CigaretteWeldingFuel-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteWeldingFuel-name = Плазменный соус
+ent-CigaretteWeldingFuel-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteRobustHarvest-name = Hippie Romance Novel
-ent-CigaretteRobustHarvest-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteRobustHarvest-name = Хиппи-роман
+ent-CigaretteRobustHarvest-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigarettePhlogiston-name = Dragon Dating Sim
-ent-CigarettePhlogiston-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigarettePhlogiston-name = Симулятор свиданий с драконом
+ent-CigarettePhlogiston-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteBanana-name = Pun Pun's Tropical Getaway
-ent-CigaretteBanana-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteBanana-name = Тропический отпуск Пун Пуна
+ent-CigaretteBanana-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteBlackPepper-name = English Spice
-ent-CigaretteBlackPepper-desc = A roll of tobacco and nicotine soaked in some chemical.
+ent-CigaretteBlackPepper-name = Английская специя
+ent-CigaretteBlackPepper-desc = Скрученный табак с никотином, пропитанный химикатами.
 
-ent-CigaretteSpent-name = cigarette
-ent-CigaretteSpent-desc = A roll of tobacco and nicotine.
-
+ent-CigaretteSpent-name = сигарета
+ent-CigaretteSpent-desc = Скрученный табак с никотином.

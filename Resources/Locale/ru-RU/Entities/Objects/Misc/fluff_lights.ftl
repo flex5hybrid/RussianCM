@@ -1,20 +1,19 @@
-ent-BaseLamp-name = lantern
+ent-BaseLamp-name = фонарь
 
-ent-Lamp-name = lamp
-ent-Lamp-desc = A light emitting device.
+ent-Lamp-name = лампа
+ent-Lamp-desc = Осветительное устройство.
 
-ent-LampBanana-name = banana lamp
-ent-LampBanana-desc = A light emitting device, shaped like a banana.
+ent-LampBanana-name = банановая лампа
+ent-LampBanana-desc = Осветительное устройство в форме банана.
 
-ent-LampGold-name = desk lamp
-ent-LampGold-desc = A light emitting device that would look great on a desk.
+ent-LampGold-name = настольная лампа
+ent-LampGold-desc = Осветительное устройство, которое отлично смотрится на столе.
 
-ent-LampInterrogator-name = interrogator lamp
-ent-LampInterrogator-desc = Ultra-bright lamp for the bad cop.
+ent-LampInterrogator-name = лампа допроса
+ent-LampInterrogator-desc = Сверхяркая лампа для «плохого копа».
 
-ent-Floodlight-name = floodlight
-ent-Floodlight-desc = A pole with powerful mounted lights on it.
+ent-Floodlight-name = прожектор
+ent-Floodlight-desc = Стойка с мощными установленными светильниками.
 
-ent-FloodlightBroken-name = broken floodlight
-ent-FloodlightBroken-desc = A pole with powerful mounted lights on it. It's broken.
-
+ent-FloodlightBroken-name = сломанный прожектор
+ent-FloodlightBroken-desc = Стойка с мощными установленными светильниками. Сломан.

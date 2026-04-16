@@ -73,6 +73,6 @@ ent-RMCPouchSurvivalFillRadioOff = сумка для выживания
 ent-RMCPouchSurvivalBlackFilled = сумка для выживания
   .desc = Сумка, выдаваемая колонистам на случай чрезвычайной ситуации.
 
-ent-RMCPouchSurvivalSynthFill = сумка для выживания синтезатора
-  .desc = Аварийный мешочек для силиконов на случай чрезвычайной ситуации.
+ent-RMCPouchSurvivalSynthFill = сумка для выживания синтетика
+  .desc = Аварийный мешочек для синтетиков на случай чрезвычайной ситуации.
 
