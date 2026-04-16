@@ -24,7 +24,6 @@ rmc-vendor-section-sidearms = Вторичное оружие
 rmc-vendor-section-restricted-firearms = Ограниченное оружие
 rmc-vendor-section-explosives = Взрывчатка
 rmc-vendor-section-webbings = Разгрузка
-rmc-vendor-section-backpacks = Рюкзаки
 rmc-vendor-section-belts = Пояса
 rmc-vendor-section-pouches = Подсумки
 rmc-vendor-section-essential-devices = Важные устройства
