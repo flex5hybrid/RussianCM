@@ -91,7 +91,7 @@ ent-RMCCrateUNMCGuns = Ящик с огнестрельным оружием UNM
 ent-RMCCrateUNMCGunsSingle = Ящик для огнестрельного оружия UNMC
   .desc = Ящик с припасами, содержащий огнестрельное оружие, используемое силами UNMC.
 
-ent-RMCCrateMedicalVendor = Ящик Ви-Я-Мед Плюс
+ent-RMCCrateMedicalVendor = Ящик Ве-Я-Мед Плюс
   .desc = Ящик с одним продавцом We-Ya-Med Plus.
 
 ent-RMCCrateGeneratorPACMAN = П.А.К.М.А.Н. 

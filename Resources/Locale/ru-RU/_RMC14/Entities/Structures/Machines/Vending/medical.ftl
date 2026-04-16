@@ -10,7 +10,7 @@ ent-RMCNanoMed = НаноМед
 ent-ColMarTechMarineMedical = КолМарТек МаринМед
   .desc = Медицинский фармацевтический дозатор с основными медикаментами для морской пехоты.
 
-ent-CMVendorChemistry = Ви-Я-Чем Плюс
+ent-CMVendorChemistry = Ве-Я-Мед Плюс
   .desc = Дозатор медицинской химии. 
 
 ent-CMVendorMedicalAllAccess = Ве-Я-Мед Плюс
