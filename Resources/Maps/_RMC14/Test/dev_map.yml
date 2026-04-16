@@ -44,6 +44,9 @@ entities:
     - type: MetaData
     - type: Transform
       parent: 1
+    - type: GridAmbience
+      sound:
+        collection: AlmayerAmbience
     - type: MapGrid
       chunks:
         -1,0:
