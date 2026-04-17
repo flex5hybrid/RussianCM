@@ -107,7 +107,7 @@
 - type: entity
   id: RMCDefibrillatorCompact
   parent: CMDefibrillator
-  name: Compact Defibrillator
+  name: compact defibrillator
   description: This particular defibrillator has halved charge capacity compared to the standard emergency defibrillator, but can fit in your pocket.
   components:
   - type: Sprite
@@ -116,7 +116,7 @@
     sprite: _RMC14/Objects/Medical/compact_defib.rsi
     size: Small
   - type: PowerCellDraw
-    useRate: 99
+    useRate: 132
 
 - type: entity
   parent: [CMBaseDefibrillator, RMCPowerCellSlotUnremovable]
