@@ -73,13 +73,7 @@
         types:
           Blunt: 35
     - type: Synth
-    - type: ShowHealthBars
-    - type: ShowHealthIcons
-    - type: HolocardScanner
-    - type: ShowMindShieldIcons
-    - type: ShowCriminalRecordIcons
-    - type: FlashImmunity
-    - type: EyeProtection
+  hidden: true
 
 - type: startingGear
   id: RMCGearSyntheticEquipped
