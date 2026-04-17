@@ -1,8 +1,8 @@
 - type: entity
-  parent: BaseItem
-  id: RMCStunBatonDamaged
-  name: damaged stun baton
-  description: A stun baton for incapacitating people with. This one seems pretty broken and beat up, especially around the on/off switch..
+  parent: RMCStunBatonDamaged
+  id: TelescopicBaton
+  name: telescopic baton
+  description: A telescopic baton for close-quarters combat. Minor damage when off, powerful hits when extended.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Melee/stun_baton.rsi
@@ -16,34 +16,14 @@
     - Suitstorage
   - type: Item
     heldPrefix: off
-    size: Normal
+    size: Small
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-     enum.ToggleableVisuals.Enabled:
+      enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
           True: {state: stunbaton_on}
           False: {state: stunbaton_off}
-
-- type: entity
-  parent: RMCStunBatonDamaged
-  id: CMStunbaton
-  name: stun baton
-  description: A stun baton for incapacitating people with.
-  components:
-  - type: Stunbaton
-    energyPerUse: 50
-  - type: RMCStaminaDamageOnHit
-    damage: 100
-    jitterDuration: 2
-  - type: MeleeRequiresSkill
-    skills:
-      RMCSkillPolice: 1
-  - type: StunOnHit
-    duration: 20
-    whitelist:
-      components:
-      - Marine
   - type: ItemToggle
     predictable: false
     soundActivate:
@@ -69,21 +49,24 @@
         variation: 0.2
     activatedDamage:
       types:
-        Blunt: 0
+        Blunt: 35
+    activatedCritical: true
   - type: MeleeWeapon
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 7
+        Blunt: 5
     bluntStaminaDamageFactor: 2.0
     angle: 60
     animation: WeaponArcThrust
   - type: RMCStaminaDamageOnCollide
     damage: 35
-  - type: LandAtCursor # it deals stamina damage when thrown
-  - type: Battery
-    maxCharge: 1000
-    startingCharge: 1000
+  - type: LandAtCursor
   - type: UseDelay
   - type: DisarmMalus
     malus: 0.225
+  - type: StunOnHit
+    duration: 20
+    whitelist:
+      components:
+      - Marine
