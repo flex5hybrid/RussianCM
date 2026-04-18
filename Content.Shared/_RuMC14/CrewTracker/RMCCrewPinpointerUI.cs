@@ -2,7 +2,7 @@ using Content.Shared.CrewManifest;
 using Robust.Shared.Maths;
 using Robust.Shared.Serialization;
 
-namespace Content.Shared._RMC14.CrewTracker;
+namespace Content.Shared._RuMC14.CrewTracker;
 
 [Serializable, NetSerializable]
 public enum RMCCrewPinpointerUiKey : byte

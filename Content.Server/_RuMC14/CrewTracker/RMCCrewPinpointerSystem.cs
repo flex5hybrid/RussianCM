@@ -4,7 +4,7 @@ using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
 using Content.Server.StationRecords;
 using Content.Server.StationRecords.Systems;
-using Content.Shared._RMC14.CrewTracker;
+using Content.Shared._RuMC14.CrewTracker;
 using Content.Shared.CrewManifest;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
@@ -19,7 +19,7 @@ using Robust.Shared.Utility;
 using Content.Shared.Humanoid;
 using Content.Shared.Examine;
 
-namespace Content.Server._RMC14.CrewTracker;
+namespace Content.Server._RuMC14.CrewTracker;
 
 public sealed class RMCCrewPinpointerSystem : EntitySystem
 {

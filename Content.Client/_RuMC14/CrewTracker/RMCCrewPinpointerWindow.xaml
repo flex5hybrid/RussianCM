@@ -1,6 +1,6 @@
 <controls:RMCCrewPinpointerWindow
     xmlns="https://spacestation14.io"
-    xmlns:controls="clr-namespace:Content.Client._RMC14.CrewTracker"
+    xmlns:controls="clr-namespace:Content.Client._RuMC14.CrewTracker"
     Title="{Loc rmc-crew-pinpointer-window-title}"
     MinSize="450 640"
     SetSize="450 640">

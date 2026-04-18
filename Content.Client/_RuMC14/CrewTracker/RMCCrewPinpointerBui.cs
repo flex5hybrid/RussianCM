@@ -1,7 +1,7 @@
-using Content.Shared._RMC14.CrewTracker;
+using Content.Shared._RuMC14.CrewTracker;
 using JetBrains.Annotations;
 
-namespace Content.Client._RMC14.CrewTracker;
+namespace Content.Client._RuMC14.CrewTracker;
 
 [UsedImplicitly]
 public sealed class RMCCrewPinpointerBui : BoundUserInterface

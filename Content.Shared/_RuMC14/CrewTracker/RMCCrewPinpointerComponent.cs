@@ -1,4 +1,4 @@
-namespace Content.Shared._RMC14.CrewTracker;
+namespace Content.Shared._RuMC14.CrewTracker;
 
 [RegisterComponent]
 public sealed partial class RMCCrewPinpointerComponent : Component
