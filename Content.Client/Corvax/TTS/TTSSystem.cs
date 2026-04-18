@@ -1,10 +1,10 @@
-using System.Diagnostics;
 using Content.Shared.Chat;
 using Content.Shared.Corvax.CCCVars;
 using Content.Shared.Corvax.TTS;
 using Robust.Client.Audio;
 using Robust.Client.ResourceManagement;
 using Robust.Shared.Audio;
+using Robust.Shared.Audio.Components;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
 using Robust.Shared.ContentPack;
@@ -37,6 +37,12 @@ public sealed class TTSSystem : EntitySystem
     /// The volume at which the TTS sound will not be heard.
     /// </summary>
     private const float MinimalVolume = -10f;
+
+    /// <summary>
+    /// Occlusion value applied to radio TTS audio to simulate bandpass filter.
+    /// cutoff = exp(-RadioOcclusion) ≈ 0.082 HF gain — characteristic muffled radio sound.
+    /// </summary>
+    private const float RadioOcclusion = 2.5f;
 
     private float _volume = 0.0f;
     private int _fileIdx = 0;
@@ -88,13 +94,20 @@ public sealed class TTSSystem : EntitySystem
 
         if (ev.IsRadio)
         {
-            Logger.Debug("ev.IsRadio сработало!");
-            _audio.PlayGlobal(audioResource.AudioStream, soundSpecifier, audioParams);
+            var result = _audio.PlayGlobal(audioResource.AudioStream, soundSpecifier, audioParams);
+            if (result.HasValue)
+                result.Value.Component.Occlusion = RadioOcclusion;
+            _contentRoot.RemoveFile(filePath);
+            return;
         }
+
         if (ev.SourceUid != null)
         {
             if (!TryGetEntity(ev.SourceUid.Value, out _))
+            {
+                _contentRoot.RemoveFile(filePath);
                 return;
+            }
             var sourceUid = GetEntity(ev.SourceUid.Value);
             _audio.PlayEntity(audioResource.AudioStream, sourceUid, soundSpecifier, audioParams);
         }

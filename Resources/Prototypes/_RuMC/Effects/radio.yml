@@ -1,0 +1,32 @@
+- type: audioPreset
+  id: Radio
+  density: 0.1
+  diffusion: 0.1
+
+  gain: 0.8
+  gainHF: 0.3
+  gainLF: 0.2
+
+  decayTime: 0.1
+  decayHFRatio: 0.2
+  decayLFRatio: 0.2
+
+  reflectionsGain: 0
+  reflectionsDelay: 0
+
+  lateReverbGain: 0
+  lateReverbDelay: 0
+
+  echoTime: 0.05
+  echoDepth: 0.2
+
+  modulationTime: 0
+  modulationDepth: 0
+
+  airAbsorptionGainHF: 0.5
+
+  hfReference: 5000
+  lfReference: 500
+
+  roomRolloffFactor: 0
+  decayHFLimit: true
