@@ -8,6 +8,7 @@ using Robust.Shared.Audio.Components;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
 using Robust.Shared.ContentPack;
+using Robust.Shared.Player;
 using Robust.Shared.Utility;
 
 namespace Content.Client.Corvax.TTS;
@@ -43,6 +44,9 @@ public sealed class TTSSystem : EntitySystem
     /// cutoff = exp(-RadioOcclusion) ≈ 0.082 HF gain — characteristic muffled radio sound.
     /// </summary>
     private const float RadioOcclusion = 2.5f;
+
+    private static readonly SoundSpecifier RadioStaticSound =
+        new SoundPathSpecifier("/Audio/_RMC14/Effects/radiostatic.ogg");
 
     private float _volume = 0.0f;
     private int _fileIdx = 0;
@@ -94,6 +98,8 @@ public sealed class TTSSystem : EntitySystem
 
         if (ev.IsRadio)
         {
+            _audio.PlayGlobal(RadioStaticSound, Filter.Local(), false,
+                AudioParams.Default.WithVolume(-8f).WithVariation(0.1f));
             var result = _audio.PlayGlobal(audioResource.AudioStream, soundSpecifier, audioParams);
             if (result.HasValue)
                 result.Value.Component.Occlusion = RadioOcclusion;
