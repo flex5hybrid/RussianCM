@@ -83,7 +83,10 @@ public sealed class TTSManager
         };
 
         // Build the full URL with query parameters
-
+        var uriBuilder = new UriBuilder(_apiUrl)
+        {
+            Query = await new FormUrlEncodedContent(queryParams).ReadAsStringAsync()
+        };
         var requestUrl = uriBuilder.ToString();
 
         _httpClient.DefaultRequestHeaders.Remove("Authorization");
