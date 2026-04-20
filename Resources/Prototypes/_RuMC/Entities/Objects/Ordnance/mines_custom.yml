@@ -65,6 +65,7 @@
         name: rmc-chembomb-detonator-slot
         whitelist:
           tags:
+          - RMCOrdnanceAssemblyLocked
           - RMCProximityAssembly
   - type: StepTrigger
     active: false

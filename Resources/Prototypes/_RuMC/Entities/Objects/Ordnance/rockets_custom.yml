@@ -48,6 +48,7 @@
         name: rmc-chembomb-detonator-slot
         whitelist:
           tags:
+          - RMCOrdnanceAssemblyLocked
           - RMCDoubleIgniterAssembly
   - type: Item
     size: Normal

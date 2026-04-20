@@ -1,8 +1,10 @@
+using Content.Server.Popups;
 using Content.Shared._RuMC14.Ordnance;
 using Content.Shared.Interaction;
+using Content.Shared.Popups;
+using Content.Shared.Tag;
+using Content.Shared.Tools;
 using Content.Shared.Tools.Systems;
-using Discord.Commands;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
 
@@ -11,48 +13,23 @@ namespace Content.Server._RuMC14.Ordnance;
 public sealed class RMCOrdnanceAssemblySystem : EntitySystem
 {
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
+    [Dependency] private readonly PopupSystem _popup = default!;
+    [Dependency] private readonly TagSystem _tags = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly SharedToolSystem _toolSystem = default!;
 
     private static readonly EntProtoId AssemblyPrototype = "RMCOrdnanceAssembly";
+    private static readonly ProtoId<TagPrototype> LockedTag = "RMCOrdnanceAssemblyLocked";
+    private static readonly ProtoId<ToolQualityPrototype> PryingQuality = "Prying";
+    private static readonly ProtoId<ToolQualityPrototype> ScrewingQuality = "Screwing";
 
     public override void Initialize()
     {
-        SubscribeLocalEvent<RMCOrdnancePartComponent, InteractUsingEvent>(OnInteractUsing); // Сборка из двух компонентов
+        SubscribeLocalEvent<RMCOrdnancePartComponent, InteractUsingEvent>(OnPartInteractUsing);
         SubscribeLocalEvent<RMCOrdnanceAssemblyComponent, InteractUsingEvent>(OnAssemblyInteractUsing);
     }
-    private void OnAssemblyInteractUsing(Entity<RMCOrdnanceAssemblyComponent> ent, ref InteractUsingEvent args)
-    {
-        // Когда человек нажимает ломиком по сборке - она распадается на две частички.
 
-        if (_toolSystem.HasQuality(args.Used, "Prying"))
-            OnAssemblyInteractPrying(ent);
-        else if (_toolSystem.HasQuality(args.Used, "Screwing"))
-            // Пытаемся "прикрутить" сборку.
-            return;
-
-    }
-    /// <summary>
-    /// Метод, разбирающий Assembly на составные части
-    /// </summary>
-    private void OnAssemblyInteractPrying(Entity<RMCOrdnanceAssemblyComponent> ent)
-    {
-        // Пытаемся разобрать сборку
-        var leftPart = ent.Comp.LeftPartType;
-        var rightPart = ent.Comp.RightPartType;
-
-        var xform = Transform(ent).Coordinates; // Получаем координаты сборки
-
-        // Спавним обе части
-        Spawn(leftPart.ToString(), xform);
-        Spawn(rightPart.ToString(), xform);
-
-        // Удаляем сборку
-        QueueDel(ent);
-    }
-
-
-    private void OnInteractUsing(Entity<RMCOrdnancePartComponent> target, ref InteractUsingEvent args)
+    private void OnPartInteractUsing(Entity<RMCOrdnancePartComponent> target, ref InteractUsingEvent args)
     {
         if (args.Handled)
             return;
@@ -76,5 +53,77 @@ public sealed class RMCOrdnanceAssemblySystem : EntitySystem
 
         _appearance.SetData(assemblyEnt, RMCAssemblyVisualKey.LeftType, leftType);
         _appearance.SetData(assemblyEnt, RMCAssemblyVisualKey.RightType, rightType);
+    }
+
+    private void OnAssemblyInteractUsing(Entity<RMCOrdnanceAssemblyComponent> ent, ref InteractUsingEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (_toolSystem.HasQuality(args.Used, PryingQuality))
+        {
+            if (ent.Comp.IsLocked)
+            {
+                _popup.PopupEntity("Сначала разберите сборку отвёрткой.", ent, args.User, PopupType.SmallCaution);
+                args.Handled = true;
+                return;
+            }
+
+            Disassemble(ent, args.User);
+            args.Handled = true;
+            return;
+        }
+
+        if (_toolSystem.HasQuality(args.Used, ScrewingQuality))
+        {
+            ToggleLocked(ent, args.User);
+            args.Handled = true;
+        }
+    }
+
+    private void ToggleLocked(Entity<RMCOrdnanceAssemblyComponent> ent, EntityUid user)
+    {
+        ent.Comp.IsLocked = !ent.Comp.IsLocked;
+        Dirty(ent);
+
+        if (ent.Comp.IsLocked)
+        {
+            _tags.AddTag(ent, LockedTag);
+            _popup.PopupEntity("Сборка закрыта. Можно вставить в корпус.", ent, user);
+        }
+        else
+        {
+            _tags.RemoveTag(ent, LockedTag);
+            _popup.PopupEntity("Сборка открыта. Можно настроить сенсоры.", ent, user);
+        }
+    }
+
+    /// <summary>
+    /// Разбирает Assembly обратно на две части.
+    /// </summary>
+    private void Disassemble(Entity<RMCOrdnanceAssemblyComponent> ent, EntityUid user)
+    {
+        var xform = Transform(ent).Coordinates;
+
+        if (ent.Comp.LeftPartType is { } left)
+            Spawn(GetPartProto(left), xform);
+
+        if (ent.Comp.RightPartType is { } right)
+            Spawn(GetPartProto(right), xform);
+
+        _popup.PopupEntity("Сборка разобрана.", ent, user);
+        QueueDel(ent);
+    }
+
+    private static EntProtoId GetPartProto(RMCOrdnancePartType type)
+    {
+        return type switch
+        {
+            RMCOrdnancePartType.RMCOrdnanceIgniter => "RMCOrdnanceIgniter",
+            RMCOrdnancePartType.RMCOrdnanceTimer => "RMCOrdnanceTimer",
+            RMCOrdnancePartType.RMCOrdnanceSignaler => "RMCOrdnanceSignaller",
+            RMCOrdnancePartType.RMCOrdnanceProximitySensor => "RMCOrdnanceProximitySensor",
+            _ => "RMCOrdnanceIgniter"
+        };
     }
 }

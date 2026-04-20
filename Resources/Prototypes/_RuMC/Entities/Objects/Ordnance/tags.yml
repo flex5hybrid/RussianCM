@@ -2,13 +2,10 @@
   id: RMCProximityAssembly
 
 - type: Tag
+  id: RMCOrdnanceAssemblyLocked
+
+- type: Tag
   id: RMCDoubleIgniterAssembly
-
-- type: Tag
-  id: LauncherCompatibleGrenade
-
-- type: Tag
-  id: RMCGrenadeM40
 
 - type: Tag
   id: RMC80mmMortarShell

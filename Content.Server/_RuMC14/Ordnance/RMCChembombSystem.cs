@@ -1,5 +1,6 @@
 using Content.Server.Explosion.EntitySystems;
 using Content.Server.Popups;
+using Content.Shared.Explosion.Components;
 using Content.Shared._RMC14.Atmos;
 using Content.Shared._RMC14.Chemistry.Reagent;
 using Content.Shared._RMC14.Explosion;
@@ -376,22 +377,79 @@ public sealed class RMCChembombSystem : EntitySystem
 
     private void OnItemInserted(Entity<RMCChembombCasingComponent> ent, ref EntInsertedIntoContainerMessage args)
     {
-        if (!TryComp<RMCDetonatorAssemblyComponent>(args.Entity, out var comp))
+        // Старая система детонаторов
+        if (TryComp<RMCDetonatorAssemblyComponent>(args.Entity, out var oldComp))
+        {
+            if (!oldComp.Ready)
+                return;
+            ent.Comp.HasActiveDetonator = true;
+            Dirty(ent);
             return;
-        // Если взрыватель не готов к использованию => вставляем его, но не делаем детонатор активным
-        if (!comp.Ready)
+        }
+
+        // Новая система: RMCOrdnanceAssembly должна быть закрыта отвёрткой
+        if (!TryComp<RMCOrdnanceAssemblyComponent>(args.Entity, out var assembly) || !assembly.IsLocked)
             return;
+
         ent.Comp.HasActiveDetonator = true;
         Dirty(ent);
+
+        // Добавляем компонент триггера на корпус в зависимости от типа сенсора
+        var sensor = GetSensorType(assembly);
+        switch (sensor)
+        {
+            case null: // DoubleIgniter — мгновенная детонация
+            {
+                var trigger = EnsureComp<OnUseTimerTriggerComponent>(ent);
+                trigger.Delay = 1f;
+                trigger.DoPopup = false;
+                trigger.InitialBeepDelay = 0f;
+                trigger.BeepInterval = 99999f;
+                break;
+            }
+            case RMCOrdnancePartType.RMCOrdnanceTimer:
+            {
+                var trigger = EnsureComp<OnUseTimerTriggerComponent>(ent);
+                trigger.Delay = assembly.TimerDelay;
+                trigger.DelayOptions = new List<float> { 3f, 5f, 10f, 30f };
+                trigger.DoPopup = true;
+                trigger.InitialBeepDelay = 0f;
+                trigger.BeepInterval = 5f;
+                break;
+            }
+            // Proximity и Signaler: триггер реализуется отдельно
+        }
     }
 
     private void OnItemRemoved(Entity<RMCChembombCasingComponent> ent, ref EntRemovedFromContainerMessage args)
     {
-        if (!HasComp<RMCDetonatorAssemblyComponent>(args.Entity))
+        // Старая система
+        if (HasComp<RMCDetonatorAssemblyComponent>(args.Entity))
+        {
+            ent.Comp.HasActiveDetonator = false;
+            Dirty(ent);
+            return;
+        }
+
+        // Новая система
+        if (!HasComp<RMCOrdnanceAssemblyComponent>(args.Entity))
             return;
 
+        RemCompDeferred<OnUseTimerTriggerComponent>(ent);
         ent.Comp.HasActiveDetonator = false;
         Dirty(ent);
+    }
+
+    /// <summary>
+    /// Возвращает тип сенсора сборки (не-igniter часть), или null если обе части — igniters.
+    /// </summary>
+    private static RMCOrdnancePartType? GetSensorType(RMCOrdnanceAssemblyComponent comp)
+    {
+        if (comp.LeftPartType != null && comp.LeftPartType != RMCOrdnancePartType.RMCOrdnanceIgniter)
+            return comp.LeftPartType;
+        if (comp.RightPartType != null && comp.RightPartType != RMCOrdnancePartType.RMCOrdnanceIgniter)
+            return comp.RightPartType;
+        return null;
     }
 
     private void StartToolDoAfter<T>(Entity<RMCChembombCasingComponent> ent, EntityUid user, EntityUid tool, float delay)

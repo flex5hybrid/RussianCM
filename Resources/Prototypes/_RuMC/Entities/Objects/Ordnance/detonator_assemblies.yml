@@ -23,7 +23,7 @@
   - type: Item
     size: Tiny
   - type: RMCOrdnancePart
-    partType: Igniter
+    partType: RMCOrdnanceIgniter
 
 - type: entity
   parent: BaseItem
@@ -37,7 +37,7 @@
   - type: Item
     size: Small
   - type: RMCOrdnancePart
-    partType: Timer
+    partType: RMCOrdnanceTimer
 
 - type: entity
   parent: BaseItem
@@ -51,7 +51,7 @@
   - type: Item
     size: Small
   - type: RMCOrdnancePart
-    partType: Proximity
+    partType: RMCOrdnanceProximitySensor
 
 - type: entity
   parent: BaseItem
@@ -65,7 +65,7 @@
   - type: Item
     size: Small
   - type: RMCOrdnancePart
-    partType: Signaler
+    partType: RMCOrdnanceSignaler
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Complete assemblies (result of combining parts)
