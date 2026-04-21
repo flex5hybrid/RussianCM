@@ -1,12 +1,13 @@
-# Охлаждающая камера для синтеза взрывчатки в OT.
-# Помещённые внутрь мензурки охлаждаются до ~277K (4°C),
-# что необходимо для реакций с maxTemp: 280 (нитроглицерин, циклонит, октоген).
+﻿# РћС…Р»Р°Р¶РґР°СЋС‰Р°СЏ РєР°РјРµСЂР° РґР»СЏ СЃРёРЅС‚РµР·Р° РІР·СЂС‹РІС‡Р°С‚РєРё РІ OT.
+# РџРѕРјРµС‰С‘РЅРЅС‹Рµ РІРЅСѓС‚СЂСЊ РјРµРЅР·СѓСЂРєРё РѕС…Р»Р°Р¶РґР°СЋС‚СЃСЏ РґРѕ ~277K (4В°C),
+# С‡С‚Рѕ РЅРµРѕР±С…РѕРґРёРјРѕ РґР»СЏ СЂРµР°РєС†РёР№ СЃ maxTemp: 280 (РЅРёС‚СЂРѕРіР»РёС†РµСЂРёРЅ, С†РёРєР»РѕРЅРёС‚, РѕРєС‚РѕРіРµРЅ).
 - type: entity
   parent: CMLockerFridge
   id: RuMCCoolingChamber
   name: cooling chamber
   description: An industrial refrigeration unit for maintaining low temperatures during synthesis of sensitive chemical compounds.
   components:
+  - type: ApcPowerReceiver
   - type: RMCPowerReceiver
     idleLoad: 5
     activeLoad: 200
@@ -17,3 +18,4 @@
   - type: Lock
     locked: false
     lockOnClick: false
+

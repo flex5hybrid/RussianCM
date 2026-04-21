@@ -20,9 +20,14 @@ using Content.Server.Temperature.Components;
 using Content.Server.Temperature.Systems;
 using Content.Server.Traits.Assorted;
 using Content.Server.Zombies;
+using Content.Shared._RMC14.Atmos;
+using Content.Shared._RMC14.Chemistry.Effects;
+using Content.Shared._RMC14.Chemistry.Reagent;
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Components;
 using Content.Shared.Body.Components;
+using Content.Shared.Chemistry.Components;
+using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Coordinates.Helpers;
 using Content.Shared.EntityEffects;
 using Content.Shared.EntityEffects.EffectConditions;
@@ -68,6 +73,8 @@ public sealed class EntityEffectSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedPointLightSystem _pointLight = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly SharedRMCFlammableSystem _rmcFlammable = default!;
+    [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly SmokeSystem _smoke = default!;
     [Dependency] private readonly SpreaderSystem _spreader = default!;
     [Dependency] private readonly TemperatureSystem _temperature = default!;
@@ -113,6 +120,7 @@ public sealed class EntityEffectSystem : EntitySystem
         SubscribeLocalEvent<ExecuteEntityEffectEvent<FlammableReaction>>(OnExecuteFlammableReaction);
         SubscribeLocalEvent<ExecuteEntityEffectEvent<FlashReactionEffect>>(OnExecuteFlashReactionEffect);
         SubscribeLocalEvent<ExecuteEntityEffectEvent<Ignite>>(OnExecuteIgnite);
+        SubscribeLocalEvent<ExecuteEntityEffectEvent<RMCVolatileReactionEffect>>(OnExecuteRmcVolatileReactionEffect);
         SubscribeLocalEvent<ExecuteEntityEffectEvent<MakeSentient>>(OnExecuteMakeSentient);
         SubscribeLocalEvent<ExecuteEntityEffectEvent<ModifyBleedAmount>>(OnExecuteModifyBleedAmount);
         SubscribeLocalEvent<ExecuteEntityEffectEvent<ModifyBloodLevel>>(OnExecuteModifyBloodLevel);
@@ -739,6 +747,78 @@ public sealed class EntityEffectSystem : EntitySystem
         {
             _flammable.Ignite(args.Args.TargetEntity, args.Args.TargetEntity, flammable: flammable);
         }
+    }
+
+    private void OnExecuteRmcVolatileReactionEffect(ref ExecuteEntityEffectEvent<RMCVolatileReactionEffect> args)
+    {
+        if (args.Args is not EntityEffectReagentArgs reagentArgs ||
+            reagentArgs.Source == null ||
+            reagentArgs.Quantity <= args.Effect.Threshold)
+        {
+            return;
+        }
+
+        float explosivePower = 0f;
+        var explosiveFalloff = args.Effect.BaseExplosiveFalloff;
+        float fireIntensity = 0f;
+        float fireRadius = 0f;
+        float fireDuration = 0f;
+        var fireEntity = args.Effect.DefaultFireEntity;
+        var strongestFire = int.MinValue;
+
+        foreach (var reagent in reagentArgs.Source)
+        {
+            if (!_protoManager.TryIndexReagent(reagent.Reagent.Prototype, out var proto))
+                continue;
+
+            var quantity = (float) reagent.Quantity;
+            explosivePower += quantity * (float) proto!.PowerMod;
+            explosiveFalloff += quantity * (float) proto.FalloffMod;
+            fireIntensity += quantity * (float) proto.IntensityMod;
+            fireRadius += quantity * (float) proto.RadiusMod;
+            fireDuration += quantity * (float) proto.DurationMod;
+
+            if (proto.Intensity > strongestFire)
+            {
+                strongestFire = proto.Intensity;
+                fireEntity = proto.FireEntity;
+            }
+        }
+
+        var reacted = false;
+
+        if (explosivePower > 0f)
+        {
+            explosivePower = MathF.Min(explosivePower, args.Effect.MaxExplosivePower);
+            var totalIntensity = MathF.Max(1f, explosivePower);
+            var intensitySlope = MathF.Max(1.5f, explosiveFalloff / 14f);
+            var maxIntensity = MathF.Max(5f, explosivePower / 15f);
+
+            _explosion.QueueExplosion(
+                args.Args.TargetEntity,
+                args.Effect.ExplosionType,
+                totalIntensity,
+                intensitySlope,
+                maxIntensity);
+
+            reacted = true;
+        }
+
+        if (fireIntensity > 0f)
+        {
+            var intensity = Math.Clamp((int) MathF.Floor(fireIntensity), args.Effect.MinFireIntensity, args.Effect.MaxFireIntensity);
+            var radius = Math.Clamp((int) MathF.Floor(fireRadius), args.Effect.MinFireRadius, args.Effect.MaxFireRadius);
+            var duration = Math.Clamp((int) MathF.Floor(fireDuration), args.Effect.MinFireDuration, args.Effect.MaxFireDuration);
+            var coordinates = _xform.GetMoverCoordinates(args.Args.TargetEntity);
+
+            _rmcFlammable.SpawnFireDiamond(fireEntity, coordinates, radius, intensity, duration);
+            reacted = true;
+        }
+
+        if (!reacted || !TryComp<SolutionComponent>(args.Args.TargetEntity, out var solutionComponent))
+            return;
+
+        _solution.RemoveAllSolution((args.Args.TargetEntity, solutionComponent));
     }
 
     private void OnExecuteMakeSentient(ref ExecuteEntityEffectEvent<MakeSentient> args)

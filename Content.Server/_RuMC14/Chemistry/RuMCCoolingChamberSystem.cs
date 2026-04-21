@@ -1,27 +1,63 @@
+﻿using Content.Server.Power.EntitySystems;
 using Content.Server.Storage.Components;
-using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Power;
+using Content.Shared.Storage.Components;
+using Robust.Shared.Containers;
 
 namespace Content.Server._RuMC14.Chemistry;
 
 public sealed class RuMCCoolingChamberSystem : EntitySystem
 {
+    [Dependency] private readonly PowerReceiverSystem _power = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solutionContainer = default!;
 
     public override void Initialize()
     {
         base.Initialize();
+
         SubscribeLocalEvent<RuMCCoolingChamberComponent, PowerChangedEvent>(OnPowerChanged);
+        SubscribeLocalEvent<RuMCCoolingChamberComponent, StorageAfterCloseEvent>(OnStorageAfterClose);
+        SubscribeLocalEvent<RuMCCoolingChamberComponent, StorageAfterOpenEvent>(OnStorageAfterOpen);
+        SubscribeLocalEvent<RuMCCoolingChamberComponent, EntInsertedIntoContainerMessage>(OnContentsChanged);
+        SubscribeLocalEvent<RuMCCoolingChamberComponent, EntRemovedFromContainerMessage>(OnContentsChanged);
     }
 
-    private void OnPowerChanged(Entity<RuMCCoolingChamberComponent> entity, ref PowerChangedEvent args)
+    private void OnPowerChanged(Entity<RuMCCoolingChamberComponent> ent, ref PowerChangedEvent args)
     {
-        if (args.Powered)
-            EnsureComp<ActiveRuMCCoolingChamberComponent>(entity);
+        UpdateActive(ent);
+    }
+
+    private void OnStorageAfterClose(Entity<RuMCCoolingChamberComponent> ent, ref StorageAfterCloseEvent args)
+    {
+        UpdateActive(ent);
+    }
+
+    private void OnStorageAfterOpen(Entity<RuMCCoolingChamberComponent> ent, ref StorageAfterOpenEvent args)
+    {
+        UpdateActive(ent);
+    }
+
+    private void OnContentsChanged(Entity<RuMCCoolingChamberComponent> ent, ref EntInsertedIntoContainerMessage args)
+    {
+        UpdateActive(ent);
+    }
+
+    private void OnContentsChanged(Entity<RuMCCoolingChamberComponent> ent, ref EntRemovedFromContainerMessage args)
+    {
+        UpdateActive(ent);
+    }
+
+    private void UpdateActive(Entity<RuMCCoolingChamberComponent> ent)
+    {
+        if (!TryComp<EntityStorageComponent>(ent, out var storage))
+            return;
+
+        if (_power.IsPowered(ent) && !storage.Open && storage.Contents.ContainedEntities.Count > 0)
+            EnsureComp<ActiveRuMCCoolingChamberComponent>(ent);
         else
-            RemComp<ActiveRuMCCoolingChamberComponent>(entity);
+            RemCompDeferred<ActiveRuMCCoolingChamberComponent>(ent);
     }
 
     public override void Update(float frameTime)
@@ -31,27 +67,24 @@ public sealed class RuMCCoolingChamberSystem : EntitySystem
         var query = EntityQueryEnumerator<ActiveRuMCCoolingChamberComponent, RuMCCoolingChamberComponent, EntityStorageComponent>();
         while (query.MoveNext(out _, out _, out var cooler, out var storage))
         {
-            // Копия списка чтобы избежать изменения коллекции при итерации
             foreach (var contained in new List<EntityUid>(storage.Contents.ContainedEntities))
             {
                 if (!TryComp<SolutionContainerManagerComponent>(contained, out var manager))
                     continue;
 
-                // Явная типизация для корректной перегрузки метода
                 Entity<SolutionContainerManagerComponent?> entityManager = new(contained, manager);
-                foreach (var (_, soln) in _solutionContainer.EnumerateSolutions(entityManager))
+                foreach (var (_, solution) in _solutionContainer.EnumerateSolutions(entityManager))
                 {
-                    var temp = soln.Comp.Solution.Temperature;
-                    if (temp <= cooler.TargetTemperature)
+                    if (solution.Comp.Solution.Temperature <= cooler.TargetTemperature)
                         continue;
 
-                    _solutionContainer.AddThermalEnergy(soln, -cooler.CoolPerSecond * frameTime);
+                    _solutionContainer.AddThermalEnergy(solution, -cooler.CoolPerSecond * frameTime);
 
-                    // Не переохлаждаем ниже целевой температуры
-                    if (soln.Comp.Solution.Temperature < cooler.TargetTemperature)
-                        _solutionContainer.SetTemperature(soln, cooler.TargetTemperature);
+                    if (solution.Comp.Solution.Temperature < cooler.TargetTemperature)
+                        _solutionContainer.SetTemperature(solution, cooler.TargetTemperature);
                 }
             }
         }
     }
 }
+

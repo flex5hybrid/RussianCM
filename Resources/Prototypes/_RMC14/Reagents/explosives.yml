@@ -1,8 +1,8 @@
 # Explosive reagents for Ordnance Technician chembomb crafting.
-# powerMod  = added explosion power per unit
+# powerMod = added explosion power per unit
 # falloffMod = explosion falloff per unit (positive = smaller blast, negative = larger)
 # intensityMod/radiusMod/durationMod = fire modifiers per unit
-# Based on CMSS13 Ordnance Technician wiki chembomb chart.
+# Values are aligned to CMSS-13 OT chemistry where the RMC system has direct equivalents.
 
 - type: reagent
   parent: CMReagent
@@ -11,7 +11,7 @@
   desc: reagent-desc-rmc-cyclonite
   physicalDesc: reagent-physical-desc-crystalline
   flavor: bitter
-  color: "#FFFFFF"
+  color: "#E3E0BA"
   unknown: true
   powerMod: 1.5
   falloffMod: -0.4
@@ -23,7 +23,7 @@
   desc: reagent-desc-rmc-anfo
   physicalDesc: reagent-physical-desc-granular
   flavor: bitter
-  color: "#C8B880"
+  color: "#E0E0E0"
   unknown: true
   powerMod: 1
   falloffMod: -0.6
@@ -35,7 +35,7 @@
   desc: reagent-desc-rmc-nitroglycerin
   physicalDesc: reagent-physical-desc-oily
   flavor: bitter
-  color: "#F0E8D0"
+  color: "#808080"
   unknown: true
   powerMod: 1
   falloffMod: -0.5
@@ -47,7 +47,7 @@
   desc: reagent-desc-rmc-octogen
   physicalDesc: reagent-physical-desc-crystalline
   flavor: bitter
-  color: "#E8E8E8"
+  color: "#F5F5F5"
   unknown: true
   powerMod: 2
   falloffMod: -0.2
@@ -62,7 +62,7 @@
   desc: reagent-desc-rmc-ammonium-nitrate
   physicalDesc: reagent-physical-desc-granular
   flavor: bitter
-  color: "#FFFFFF"
+  color: "#E5E5E5"
   unknown: true
   powerMod: 0.4
   falloffMod: 1.5
@@ -93,38 +93,6 @@
 
 - type: reagent
   parent: CMReagent
-  id: RMCPotassiumChloride
-  name: reagent-name-rmc-potassium-chloride
-  desc: reagent-desc-rmc-potassium-chloride
-  physicalDesc: reagent-physical-desc-crystalline
-  flavor: salty
-  color: "#F5F5F5"
-  unknown: true
-  intensityMod: 0.1
-
-- type: reagent
-  parent: CMReagent
-  id: RMCSodiumChloride
-  name: reagent-name-rmc-sodium-chloride
-  desc: reagent-desc-rmc-sodium-chloride
-  physicalDesc: reagent-physical-desc-granular
-  flavor: salty
-  color: "#FFFFFF"
-  unknown: true
-  intensityMod: 0.1
-
-- type: reagent
-  parent: CMReagent
-  id: RMCNitricAcid
-  name: reagent-name-rmc-nitric-acid
-  desc: reagent-desc-rmc-nitric-acid
-  physicalDesc: reagent-physical-desc-fuming
-  flavor: acid
-  color: "#E8F0E0"
-  unknown: true
-
-- type: reagent
-  parent: CMReagent
   id: RMCGlycerol
   name: reagent-name-rmc-glycerol
   desc: reagent-desc-rmc-glycerol
@@ -142,21 +110,25 @@
     RMCPolytrinicAcid:
       amount: 1
   products:
-    RMCAmmoniumNitrate: 1
-    Water: 1
+    RMCAmmoniumNitrate: 2
 
 - type: reaction
   id: RMCANFOReaction
+  impact: High
   reactants:
     RMCAmmoniumNitrate:
-      amount: 3
+      amount: 2
     WeldingFuel:
       amount: 1
   products:
-    RMCANFO: 4
+    RMCANFO: 2
+  effects:
+  - !type:RMCVolatileReactionEffect
+    threshold: 60.01
 
 - type: reaction
   id: RMCPotassiumHydroxideReaction
+  impact: High
   reactants:
     RMCPotassium:
       amount: 1
@@ -164,218 +136,55 @@
       amount: 1
   products:
     RMCPotassiumHydroxide: 1
-    RMCHydrogen: 1
+  effects:
+  - !type:RMCVolatileReactionEffect
 
-# Азотная кислота: нитрогенизация через нагрев (N2 + 2O2 + H2O → 2HNO3)
-- type: reaction
-  id: RMCNitricAcidReaction
-  reactants:
-    RMCNitrogen:
-      amount: 1
-    RMCOxygen:
-      amount: 2
-    Water:
-      amount: 1
-  products:
-    RMCNitricAcid: 2
-  minTemp: 450
-
-# Гексамин: конденсация формальдегида с аммиаком (6CH2O + 4NH3 → C6H12N4 + 6H2O)
 - type: reaction
   id: RMCHexamineReaction
   reactants:
-    Formaldehyde:
-      amount: 6
+    RMCFormaldehyde:
+      amount: 3
     Ammonia:
-      amount: 4
+      amount: 2
   products:
-    RMCHexamine: 4
-    Water: 2
+    RMCHexamine: 3
 
-# Циклонит: нитрование гексамина (требует охлаждения!)
 - type: reaction
   id: RMCCycloniteReaction
   reactants:
     RMCHexamine:
-      amount: 3
+      amount: 1
     RMCPolytrinicAcid:
-      amount: 6
+      amount: 1
   products:
-    RMCCyclonite: 3
-    Water: 3
-    Ammonia: 3
-  maxTemp: 280
+    RMCCyclonite: 1
 
-# Октоген: синтез из циклонита и нитрата аммония (требует охлаждения!)
 - type: reaction
   id: RMCOctogenReaction
   reactants:
-    RMCCyclonite:
-      amount: 3
+    RMCHexamine:
+      amount: 1
+    RMCPolytrinicAcid:
+      amount: 1
+    RMCParaformaldehyde:
+      amount: 1
     RMCAmmoniumNitrate:
       amount: 1
   products:
-    RMCOctogen: 4
-  maxTemp: 280
+    RMCOctogen: 2
 
-# Нитроглицерин: нитрование глицерола (требует охлаждения!)
 - type: reaction
   id: RMCNitroglycerinReaction
+  impact: High
   reactants:
     RMCGlycerol:
       amount: 1
-    RMCNitricAcid:
-      amount: 3
-    SulfuricAcid:
+    RMCPolytrinicAcid:
+      amount: 1
+    RMCSulphuricAcid:
       amount: 1
   products:
-    RMCNitroglycerin: 3
-    Water: 1
-  maxTemp: 280
-
-# Хлорид калия: реакция калия с хлором
-- type: reaction
-  id: RMCPotassiumChlorideReaction
-  reactants:
-    RMCPotassium:
-      amount: 1
-    RMCChlorine:
-      amount: 1
-  products:
-    RMCPotassiumChloride: 1
-
-# Хлорид натрия: реакция натрия с хлором
-- type: reaction
-  id: RMCSodiumChlorideReaction
-  reactants:
-    RMCSodium:
-      amount: 1
-    RMCChlorine:
-      amount: 1
-  products:
-    RMCSodiumChloride: 1
-
-
-# Polytrinic acid
-- type: reagent
-  id: RMCPolytrinicAcid
-  name: reagent-name-polytrinic-acid
-  group: Toxins
-  desc: reagent-desc-polytrinic-acid
-  physicalDesc: reagent-physical-desc-strong-smelling
-  flavor: acid
-  color: "#8E18A9"
-  boilingPoint: 78.2 # This isn't a real chemical...
-  meltingPoint: -19.4
-  plantMetabolism:
-  - !type:PlantAdjustToxins
-    amount: 20
-  - !type:PlantAdjustWeeds
-    amount: -4
-  - !type:PlantAdjustHealth
-    amount: -8
-  reactiveEffects:
-    Acidic:
-      methods: [ Touch ]
-      effects:
-      - !type:HealthChange
-        scaleByQuantity: true
-        ignoreResistances: false
-        damage:
-          types:
-            Caustic: 0.5
-      - !type:Emote
-        emote: Scream
-        probability: 0.3
-  metabolisms:
-    Poison:
-      metabolismRate : 3.00 # High damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Caustic: 11.0
-      - !type:PopupMessage
-        type: Local
-        visualType: Large
-        messages: [ "generic-reagent-effect-burning-insides" ]
-        probability: 0.33
-      - !type:Emote
-        emote: Scream
-        probability: 0.3
-
-- type: reaction
-  id: RMCPolytrinicAcid
-  reactants:
-    SulfuricAcid:
-      amount: 1
-    Chlorine:
-      amount: 1
-    Potassium:
-      amount: 1
-  products:
-    PolytrinicAcid: 3
-
-# Formaldehyde
-- type: reagent
-  id: Formaldehyde
-  name: reagent-name-formaldehyde
-  group: Toxins
-  desc: reagent-desc-formaldehyde
-  physicalDesc: reagent-physical-desc-pungent
-  flavor: bitter
-  color: "#b7fff2"
-  boilingPoint: 253.9
-  meltingPoint: -92.0
-  metabolisms:
-    Poison:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Caustic: 1
-      - !type:HealthChange
-        damage:
-          types:
-            Radiation: 0.5
-
-- type: reaction
-  id: Formaldehyde
-  reactants:
-    RMCMethane:
-      amount: 1
-    RMCPhoron:
-      amount: 1
-    RMCOxygen:
-      amount: 1
-  products:
-    Formaldehyde: 3
-  minTemp: 0.1
-
-- type: reagent
-  id: Paraformaldehyde
-  name: reagent-name-paraformaldehyde
-  group: Toxins
-  desc: reagent-desc-paraformaldehyde
-  physicalDesc: reagent-physical-desc-powdery
-  flavor: bitter
-  color: "#e6fff7"
-  metabolisms:
-    Poison:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Poison: 1
-
-- type: reaction
-  id: Paraformaldehyde
-  reactants:
-    Formaldehyde:
-      amount: 1
-    Water:
-      amount: 1
-  products:
-    Paraformaldehyde: 2
-  minTemp: 200
-  maxTemp: 260
+    RMCNitroglycerin: 2
+  effects:
+  - !type:RMCVolatileReactionEffect
+    threshold: 5.01

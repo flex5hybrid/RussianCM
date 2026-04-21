@@ -30,7 +30,7 @@ public sealed partial class RMCChemicalDispenserComponent : Component
         "RMCAluminum", "RMCCarbon", "RMCChlorine", "RMCCopper", "RMCEthanol", "RMCFluorine",
         "RMCHydrogen", "RMCIron", "RMCLithium", "RMCMercury", "RMCNitrogen", "RMCOxygen",
         "RMCPhosphorus", "RMCPotassium", "RMCRadium", "RMCSilicon", "RMCSodium", "RMCSugar",
-        "RMCSulfur", "RMCSulphuricAcid", "Water",
+        "RMCSulfur", "RMCSulphuricAcid", "RMCSilver", "Water",
         // Прекурсоры для синтеза взрывчатки (OT-химия)
         "Ammonia", "RMCGlycerol",
     ];

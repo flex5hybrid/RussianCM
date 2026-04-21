@@ -208,6 +208,14 @@
   materials:
     CMGlass: 6250 # 5000
 
+- type: latheRecipe
+  id: RMCBeakerSilver
+  result: RMCBeakerSilver
+  completetime: 4
+  materials:
+    CMGlass: 6250 # 5000
+    Silver: 625 # 500
+
 #- type: latheRecipe
 #  id: CMDrinkingGlass
 #  result: DrinkGlass <- todo RMC14, rest is already complete
