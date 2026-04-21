@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Text.Json.Serialization;
+using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Administration;
 using Content.Server.Players.PlayTimeTracking;
@@ -27,6 +28,8 @@ internal sealed class PlaytimeApi : IPostInjectInit
     private string _secret = string.Empty;
     private string _allowedIP = string.Empty;
 
+    private static readonly SemaphoreSlim _handlerLock = new(1, 1);
+
     void IPostInjectInit.PostInject()
     {
         _log = Logger.GetSawmill("playtimeApi");
@@ -39,7 +42,6 @@ internal sealed class PlaytimeApi : IPostInjectInit
         _log.Info("Playtime API initialized");
     }
 
-    // FIX #1: нормальное сравнение IP через IPAddress, поддержка нескольких адресов через запятую
     private bool IsIpAllowed(string remoteIp)
     {
         if (!IPAddress.TryParse(remoteIp, out var remote))
@@ -69,7 +71,6 @@ internal sealed class PlaytimeApi : IPostInjectInit
 
         _log.Info($"Incoming request from {ip}");
 
-        // FIX #1 применён здесь
         if (!IsIpAllowed(ip))
         {
             _log.Warning($"Blocked request from unauthorized IP: {ip}");
@@ -106,6 +107,49 @@ internal sealed class PlaytimeApi : IPostInjectInit
             return true;
         }
 
+        if (!await _handlerLock.WaitAsync(0))
+        {
+            _log.Warning("Another request is being processed, queuing...");
+            if (!await _handlerLock.WaitAsync(TimeSpan.FromSeconds(30)))
+            {
+                _log.Error("Timeout waiting for handler lock");
+                await context.RespondErrorAsync(HttpStatusCode.ServiceUnavailable);
+                return true;
+            }
+        }
+
+        try
+        {
+            int operations = await ProcessRequestAsync(request);
+            var response = new ApiResponse
+            {
+                Success = true,
+                ProcessedOperations = operations
+            };
+            await context.RespondJsonAsync(response, HttpStatusCode.OK);
+            _log.Info($"Processed {operations} playtime operations");
+            return true;
+        }
+        catch (NullReferenceException ex)
+        {
+            _log.Error($"NullReferenceException during processing: {ex.Message}\n{ex.StackTrace}");
+            await context.RespondErrorAsync(HttpStatusCode.ServiceUnavailable);
+            return true;
+        }
+        catch (Exception ex)
+        {
+            _log.Error($"Unexpected error during processing: {ex.Message}\n{ex.StackTrace}");
+            await context.RespondErrorAsync(HttpStatusCode.InternalServerError);
+            return true;
+        }
+        finally
+        {
+            _handlerLock.Release();
+        }
+    }
+
+    private async Task<int> ProcessRequestAsync(PlaytimeRequest request)
+    {
         int operations = 0;
 
         foreach (var player in request.Players)
@@ -122,7 +166,7 @@ internal sealed class PlaytimeApi : IPostInjectInit
                 continue;
             }
 
-            NetUserId userId;
+            NetUserId? userId = null;
 
             if (Guid.TryParse(player.Ckey, out var guid))
             {
@@ -130,12 +174,11 @@ internal sealed class PlaytimeApi : IPostInjectInit
             }
             else
             {
+                _log.Info($"Looking up player: {player.Ckey}");
                 var dbGuid = await _playerLocator.LookupIdByNameAsync(player.Ckey);
                 if (dbGuid == null)
                 {
-                    _log.Error(Loc.GetString("parse-session-fail", ("username", player.Ckey)));
-                    // FIX #2: был return false — говорил роутеру "запрос не обработан".
-                    // Теперь continue — пропускаем этого игрока и продолжаем обработку остальных.
+                    _log.Error($"Player not found in DB: {player.Ckey}");
                     continue;
                 }
                 userId = dbGuid.UserId;
@@ -154,28 +197,14 @@ internal sealed class PlaytimeApi : IPostInjectInit
 
                 _log.Info($"Playtime add request: {player.Ckey} | {roleName} | {minutes} minutes");
 
-                _playTimeTracking.AddTimeToTrackerById(userId, roleName, TimeSpan.FromMinutes(minutes));
+                _playTimeTracking.AddTimeToTrackerById(userId.Value, roleName, TimeSpan.FromMinutes(minutes));
 
                 operations++;
             }
         }
 
-        var response = new ApiResponse
-        {
-            Success = true,
-            ProcessedOperations = operations
-        };
-
-        await context.RespondJsonAsync(response, HttpStatusCode.OK);
-
-        _log.Info($"Processed {operations} playtime operations");
-
-        return true;
+        return operations;
     }
-
-    // =========================
-    // DATA MODELS
-    // =========================
 
     private sealed class PlaytimeRequest
     {
