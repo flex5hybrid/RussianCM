@@ -69,3 +69,24 @@ rmc-mine-planted = Mine planted.
 # Ordnance part assembly (combine igniter/timer → detonator assembly)
 rmc-ordnance-assembly-incompatible = These parts are not compatible.
 rmc-ordnance-assembly-combined = You combine the parts into a {$result}.
+
+# 84mm rocket assembly
+rmc-rocket-warhead-not-armed = The warhead is not armed. Seal it with a screwdriver and prime with wirecutters first.
+rmc-rocket-warhead-no-detonator = No detonator assembly installed in the warhead.
+rmc-rocket-tube-no-fuel = The rocket tube has no fuel. Fill it with 60u of methane or hydrogen first.
+rmc-rocket-tube-insufficient-fuel = Not enough fuel. Need {$required}u, have {$current}u.
+rmc-rocket-assembling = Assembling rocket...
+rmc-rocket-assembled = Rocket assembled. Load it into an M5-ATL launcher.
+rmc-rocket-assembly-failed = Assembly failed. Check the warhead status.
+
+# 80mm mortar shell assembly
+rmc-mortar-shell-warhead-not-armed = The mortar warhead is not armed. Complete the assembly process first.
+rmc-mortar-shell-warhead-no-detonator = No detonator assembly installed in the mortar warhead.
+rmc-mortar-shell-no-fuel = The mortar shell casing has no fuel. Fill it with 60u of hydrogen first.
+rmc-mortar-shell-insufficient-fuel = Not enough fuel in shell casing. Need {$required}u, have {$current}u.
+rmc-mortar-shell-assembling = Assembling mortar shell...
+rmc-mortar-shell-assembled = Mortar shell assembled. Load it into the mortar.
+rmc-mortar-shell-assembly-failed = Assembly failed. Check the warhead status.
+
+# Chemical explosion warning (SSCM13 parity)
+rmc-chemical-explosion-warning = The explosive mixture detonates!

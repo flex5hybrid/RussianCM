@@ -1,11 +1,15 @@
+# ─── Компоненты ракеты ─────────────────────────────────────────────────────────
+
 - type: entity
   name: 84mm rocket tube
-  description: A fuel tube for the 84mm rocket. Fill with 60u of methane before assembly.
+  description: A fuel tube for the 84mm rocket. Fill with 60u of methane or hydrogen fuel before assembly.
   parent: RMCCasingBase
   id: RMC84mmRocketTube
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/CustomOrdnance/84mmrockettube.rsi
+    layers:
+    - state: custom_no_fuel
   - type: PhysicalComposition
     materialComposition:
       CMSteel: 7500
@@ -15,10 +19,11 @@
         maxVol: 60
   - type: Item
     size: Normal
+  - type: RuMCRocketTube
 
 - type: entity
   name: 84mm rocket warhead
-  description: A warhead for the 84mm rocket. Insert a double-igniter assembly and fill with chemicals.
+  description: A warhead for the 84mm rocket. Insert a detonator assembly and fill with chemicals.
   parent: RMCCasingBase
   id: RMC84mmRocketWarhead
   components:
@@ -52,3 +57,85 @@
           - RMCDoubleIgniterAssembly
   - type: Item
     size: Normal
+  - type: RuMCRocketWarhead
+
+# ─── Собранная кастомная ракета (картридж для M5-ATL) ─────────────────────────
+
+- type: entity
+  name: 84mm custom rocket
+  description: An assembled 84mm custom rocket, ready to be loaded into an M5-ATL launcher. Contains a chemical warhead.
+  id: RMCCustomRocket84mm
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+    - RMCRocketAmmo84mm
+  - type: CartridgeAmmo
+    proto: RMCCustomProjectileRocket84mm
+    deleteOnSpawn: false
+  - type: RuMCCustomOrdnancePayload
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/CustomOrdnance/84mmrockettube.rsi
+    layers:
+    - state: custom_locked
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Item
+    size: Normal
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: custom_locked
+    suffix: false
+  - type: IgnorePredictionHide
+  - type: AssistedReloadAmmo
+
+# ─── Снаряд-проджектайл кастомной ракеты ──────────────────────────────────────
+
+- type: entity
+  id: RMCCustomProjectileRocket84mm
+  name: 84mm custom rocket
+  categories: [ HideSpawnMenu ]
+  description: Uh oh.
+  components:
+  # Срабатывает при столкновении → RMCCustomOrdnanceSystem.OnRocketTrigger
+  - type: TriggerOnCollide
+    fixtureID: projectile
+  - type: Physics
+    bodyType: Dynamic
+    fixedRotation: false
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.15,0.15,0.15"
+        hard: false
+        mask:
+        - Impassable
+        - BulletImpassable
+        restitution: 0.0
+        density: 20
+  - type: Projectile
+    impactEffect: BulletImpactEffect
+    damage:
+      types:
+        Blunt: 15
+    maxFixedRange: 6
+    queueDeletion: true
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/m5spec_projectiles.rsi
+    layers:
+    - state: m5_84mm_he
+  - type: CMExplosionEffect
+  - type: RMCScorchEffect
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: IgnorePredictionHide
+  - type: RMCProjectileAccuracy
+    accuracy: 95
+    thresholds:
+    - range: 7
+      falloff: 10
+  # Параметры взрыва заполняются в RMCCustomOrdnanceSystem.OnGunShot
+  - type: RuMCCustomOrdnancePayload

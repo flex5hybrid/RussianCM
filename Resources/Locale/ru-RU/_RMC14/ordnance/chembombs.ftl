@@ -69,3 +69,24 @@ rmc-mine-planted = Мина установлена.
 # Ordnance part assembly (combine igniter/timer → detonator assembly)
 rmc-ordnance-assembly-incompatible = Эти части несовместимы.
 rmc-ordnance-assembly-combined = Вы соединяете части в {$result}.
+
+# 84мм ракета: сборка
+rmc-rocket-warhead-not-armed = Боеголовка не взведена. Сначала закройте её отвёрткой и примените кусачки.
+rmc-rocket-warhead-no-detonator = В боеголовку не установлена детонаторная сборка.
+rmc-rocket-tube-no-fuel = В трубе ракеты нет топлива. Заправьте 60 ед. метана или водорода.
+rmc-rocket-tube-insufficient-fuel = Недостаточно топлива. Нужно {$required}ед., есть {$current}ед.
+rmc-rocket-assembling = Собираю ракету...
+rmc-rocket-assembled = Ракета собрана. Загрузите её в пусковую установку M5-ATL.
+rmc-rocket-assembly-failed = Сборка не удалась. Проверьте состояние боеголовки.
+
+# 80мм миномётный снаряд: сборка
+rmc-mortar-shell-warhead-not-armed = Боеголовка миномётного снаряда не взведена. Завершите сборку сначала.
+rmc-mortar-shell-warhead-no-detonator = В боеголовку снаряда не установлена детонаторная сборка.
+rmc-mortar-shell-no-fuel = В корпусе снаряда нет топлива. Заправьте 60 ед. водорода.
+rmc-mortar-shell-insufficient-fuel = Недостаточно топлива в корпусе. Нужно {$required}ед., есть {$current}ед.
+rmc-mortar-shell-assembling = Собираю миномётный снаряд...
+rmc-mortar-shell-assembled = Миномётный снаряд собран. Загрузите его в миномёт.
+rmc-mortar-shell-assembly-failed = Сборка не удалась. Проверьте состояние боеголовки.
+
+# Химический взрыв (паритет SSCM13)
+rmc-chemical-explosion-warning = Взрывчатая смесь детонирует!

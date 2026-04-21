@@ -1,6 +1,8 @@
+# ─── Боеголовка 80мм миномётного снаряда ──────────────────────────────────────
+
 - type: entity
   name: 80mm mortar warhead
-  description: A warhead for the 80mm mortar. Insert a double-igniter assembly and fill with chemicals.
+  description: A warhead for the 80mm mortar. Insert a detonator assembly and fill with chemicals.
   parent: RMCCasingBase
   id: RMC80mmMortarWarhead
   components:
@@ -32,13 +34,14 @@
           tags:
           - RMCOrdnanceAssemblyLocked
           - RMCDoubleIgniterAssembly
-
   - type: Item
     size: Normal
 
+# ─── Корпус 80мм миномётного снаряда (топливная часть) ────────────────────────
+
 - type: entity
   name: 80mm mortar shell casing
-  description: A shell for the 80mm mortar. Fill with 60u of hydrogen fuel before assembly.
+  description: A shell casing for the 80mm mortar. Fill with 60u of hydrogen fuel, then combine with a prepared warhead.
   parent: RMCCasingBase
   id: RMC80mmMortarShell
   components:
@@ -56,10 +59,9 @@
   - type: Tag
     tags:
     - RMC80mmMortarShell
-  - type: Construction
-    graph: RMC80mmMortarCasingCustomGraph
-    node: emptyCasing
+  - type: RuMCMortarShellCasing
 
+# ─── Боеголовка-камера 80мм (стандартная, без кастомной сборки) ───────────────
 
 - type: entity
   name: 80mm mortar camera warhead
@@ -97,3 +99,17 @@
   - type: Item
     size: Normal
 
+# ─── Собранный кастомный миномётный снаряд ────────────────────────────────────
+
+- type: entity
+  name: 80mm custom mortar shell
+  description: An assembled 80mm mortar shell with a custom chemical warhead. Load into a mortar to fire.
+  id: RMCCustomMortarShell80mm
+  parent: RMCMortarShellBase
+  components:
+  - type: Item
+    heldPrefix: cas
+  - type: CMExplosionEffect
+  - type: RMCScorchEffect
+  # Параметры взрыва записываются при сборке в RMCCustomOrdnanceSystem
+  - type: RuMCCustomOrdnancePayload
