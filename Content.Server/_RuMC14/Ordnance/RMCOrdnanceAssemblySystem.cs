@@ -121,7 +121,7 @@ public sealed class RMCOrdnanceAssemblySystem : EntitySystem
         {
             RMCOrdnancePartType.RMCOrdnanceIgniter => "RMCOrdnanceIgniter",
             RMCOrdnancePartType.RMCOrdnanceTimer => "RMCOrdnanceTimer",
-            RMCOrdnancePartType.RMCOrdnanceSignaler => "RMCOrdnanceSignaller",
+            RMCOrdnancePartType.RMCOrdnanceSignaler => "RMCOrdnanceSignaler",
             RMCOrdnancePartType.RMCOrdnanceProximitySensor => "RMCOrdnanceProximitySensor",
             _ => "RMCOrdnanceIgniter"
         };

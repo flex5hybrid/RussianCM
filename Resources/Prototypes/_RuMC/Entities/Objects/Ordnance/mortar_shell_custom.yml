@@ -24,18 +24,14 @@
     solutions:
       chemicals:
         maxVol: 240
-  # - type: ItemSlots
-  #   slots:
-  #     detonator:
-  #       name: rmc-chembomb-detonator-slot
-  #       whitelist:
-  #         tags:
-  #         - RMCDoubleIgniterAssembly
-  #     propellingCharge:
-  #       name: rmc-propelling-charge-slot
-  #       whitelist::
-  #         tags:
-  #         - RMC80mmMortarShell
+  - type: ItemSlots
+    slots:
+      detonator:
+        name: rmc-chembomb-detonator-slot
+        whitelist:
+          tags:
+          - RMCOrdnanceAssemblyLocked
+          - RMCDoubleIgniterAssembly
 
   - type: Item
     size: Normal

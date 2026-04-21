@@ -1,0 +1,9 @@
+# Construction graph для 80mm корпуса миномётной мины.
+# Сейчас определяет только начальный узел emptyCasing.
+# Планируется расширение: emptyCasing → (вставить warhead) → assembled (с MortarShell компонентом).
+- type: constructionGraph
+  id: RMC80mmMortarCasingCustomGraph
+  start: emptyCasing
+  graph:
+    - node: emptyCasing
+      entity: RMC80mmMortarShell
