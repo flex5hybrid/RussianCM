@@ -115,6 +115,10 @@ public sealed class RMCOrdnanceAssemblySystem : EntitySystem
         if (!args.CanAccess || !args.CanInteract)
             return;
 
+        // Если сборка закручена, изменять нельзя
+        if (ent.Comp.IsLocked)
+            return;
+
         if (HasType(ent.Comp, RMCOrdnancePartType.RMCOrdnanceTimer))
             AddTimerVerbs(ent, ref args);
 
