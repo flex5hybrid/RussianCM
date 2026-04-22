@@ -6,13 +6,31 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared._RuMC14.Ordnance;
 
+/// <summary>
+///     Assembly stages for a custom ordnance casing.
+/// </summary>
+[Serializable, NetSerializable]
 public enum RMCCasingAssemblyStage : byte
 {
-    Open,    // can insert/remove detonator, fill chemicals
-    Sealed,  // screwdriver applied — chemicals locked in, detonator slot locked
-    Armed,   // wirecutters applied — ready to trigger
+    /// <summary>
+    ///     Casing is open and can still be filled or accept a detonator assembly.
+    /// </summary>
+    Open,
+
+    /// <summary>
+    ///     Casing is closed but not yet live.
+    /// </summary>
+    Sealed,
+
+    /// <summary>
+    ///     Casing is fully armed and will react to its trigger path.
+    /// </summary>
+    Armed,
 }
 
+/// <summary>
+///     Shared configuration and replicated state for grenade, mine, rocket, mortar, and C4-style chemical casings.
+/// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class RMCChembombCasingComponent : Component
 {
@@ -20,11 +38,11 @@ public sealed partial class RMCChembombCasingComponent : Component
     [DataField(required: true), AutoNetworkedField]
     public FixedPoint2 MaxVolume;
 
-    /// <summary>Base explosion power before chemical modifiers.</summary>
+    /// <summary>Base explosion power before chemical modifiers are applied.</summary>
     [DataField, AutoNetworkedField]
     public float BasePower = 180f;
 
-    /// <summary>Base explosion falloff before chemical modifiers.</summary>
+    /// <summary>Base explosion falloff before chemical modifiers are applied.</summary>
     [DataField, AutoNetworkedField]
     public float BaseFalloff = 80f;
 
@@ -32,37 +50,47 @@ public sealed partial class RMCChembombCasingComponent : Component
     [DataField, AutoNetworkedField]
     public int BaseShards;
 
-    /// <summary>Whether a detonator assembly has been inserted.</summary>
+    /// <summary>Whether a valid detonator assembly is currently installed.</summary>
     [DataField, AutoNetworkedField]
     public bool HasActiveDetonator;
 
-    /// <summary>Current assembly stage of the casing.</summary>
+    /// <summary>Current assembly state of the casing.</summary>
     [DataField, AutoNetworkedField]
     public RMCCasingAssemblyStage Stage;
 
-    /// <summary>Name of the solution container holding the chemicals.</summary>
+    /// <summary>Name of the solution container holding the chemical payload.</summary>
     [DataField]
     public string ChemicalSolution = "chemicals";
 
-    // Fire stat ranges for this casing type
+    /// <summary>Minimum fire intensity after reagent modifiers are applied.</summary>
     [DataField]
     public float MinFireIntensity = 3f;
+
+    /// <summary>Maximum fire intensity after reagent modifiers are applied.</summary>
     [DataField]
     public float MaxFireIntensity = 25f;
+
+    /// <summary>Minimum fire radius after reagent modifiers are applied.</summary>
     [DataField]
     public float MinFireRadius = 1f;
+
+    /// <summary>Maximum fire radius after reagent modifiers are applied.</summary>
     [DataField]
     public float MaxFireRadius = 5f;
+
+    /// <summary>Minimum fire duration after reagent modifiers are applied.</summary>
     [DataField]
     public float MinFireDuration = 3f;
+
+    /// <summary>Maximum fire duration after reagent modifiers are applied.</summary>
     [DataField]
     public float MaxFireDuration = 24f;
 
-    /// <summary>Default fire entity spawned if no reagent-specific fire is set.</summary>
+    /// <summary>Fallback fire entity when no reagent overrides the spawned fire type.</summary>
     [DataField, AutoNetworkedField]
     public EntProtoId DefaultFireEntity = "RMCTileFire";
 
-    /// <summary>Minimum effective falloff (CMSS13 minimum = 25).</summary>
+    /// <summary>Minimum effective falloff used by the custom ordnance parity math.</summary>
     [DataField]
     public float MinFalloff = 25f;
 
@@ -71,8 +99,14 @@ public sealed partial class RMCChembombCasingComponent : Component
     public EntProtoId ShrapnelProto = "RMCShrapnel";
 }
 
+/// <summary>
+///     Completes the casing seal or arm action after the associated do-after finishes.
+/// </summary>
 [Serializable, NetSerializable]
 public sealed partial class RMCCasingScrewDoAfterEvent : SimpleDoAfterEvent;
 
+/// <summary>
+///     Reserved for casing wire or cut interactions.
+/// </summary>
 [Serializable, NetSerializable]
 public sealed partial class RMCCasingCutDoAfterEvent : SimpleDoAfterEvent;

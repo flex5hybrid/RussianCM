@@ -1,9 +1,7 @@
+using System.Numerics;
 using Content.Server.Explosion.EntitySystems;
-using Content.Shared._RMC14.Chemistry.Reagent;
 using Content.Shared._RuMC14.Ordnance;
 using Content.Shared.Chemistry.EntitySystems;
-using Content.Shared.Chemistry.Reagent;
-using Content.Shared.FixedPoint;
 using Content.Shared.Hands.EntitySystems;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
@@ -15,6 +13,9 @@ using Robust.Shared.Timing;
 
 namespace Content.Server._RuMC14.Ordnance;
 
+/// <summary>
+///     Runs the handheld demolitions simulator by replaying a casing inside a disposable test chamber.
+/// </summary>
 public sealed class RMCDemolitionsSimulatorSystem : EntitySystem
 {
     [Dependency] private readonly IGameTiming _timing = default!;
@@ -27,7 +28,6 @@ public sealed class RMCDemolitionsSimulatorSystem : EntitySystem
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
-    [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly ViewSubscriberSystem _viewSubscriber = default!;
 
     public override void Initialize()
@@ -49,22 +49,13 @@ public sealed class RMCDemolitionsSimulatorSystem : EntitySystem
 
     private void OnBuiOpened(Entity<RMCDemolitionsSimulatorComponent> ent, ref BoundUIOpenedEvent args)
     {
-        if (ent.Comp.ChamberCameraEnt != EntityUid.Invalid &&
-            _playerManager.TryGetSessionByEntity(args.Actor, out var session))
-        {
-            _viewSubscriber.AddViewSubscriber(ent.Comp.ChamberCameraEnt, session);
-        }
-
+        ToggleViewer(ent.Comp.ChamberCameraEnt, args.Actor, true);
         UpdateUiState(ent);
     }
 
     private void OnBuiClosed(Entity<RMCDemolitionsSimulatorComponent> ent, ref BoundUIClosedEvent args)
     {
-        if (ent.Comp.ChamberCameraEnt != EntityUid.Invalid &&
-            _playerManager.TryGetSessionByEntity(args.Actor, out var session))
-        {
-            _viewSubscriber.RemoveViewSubscriber(ent.Comp.ChamberCameraEnt, session);
-        }
+        ToggleViewer(ent.Comp.ChamberCameraEnt, args.Actor, false);
     }
 
     private void OnSimulateMsg(Entity<RMCDemolitionsSimulatorComponent> ent, ref RMCDemolitionsSimulatorSimulateMsg args)
@@ -91,17 +82,10 @@ public sealed class RMCDemolitionsSimulatorSystem : EntitySystem
         RunSimulation(ent, item.Value, casing);
         ent.Comp.CooldownEnd = now + RMCDemolitionsSimulatorComponent.Cooldown;
 
-        // Recreate chamber so mannequins are fresh
+        // Every run gets a clean chamber so the replay always starts from a known state.
         CreateChamber(ent);
+        ToggleViewer(ent.Comp.ChamberCameraEnt, args.Actor, true);
 
-        // Re-subscribe current viewer to new camera
-        if (ent.Comp.ChamberCameraEnt != EntityUid.Invalid &&
-            _playerManager.TryGetSessionByEntity(args.Actor, out var session))
-        {
-            _viewSubscriber.AddViewSubscriber(ent.Comp.ChamberCameraEnt, session);
-        }
-
-        // Schedule explosion 1.5 s after chamber is created (so player sees the room first)
         ent.Comp.PendingExplosion = true;
         ent.Comp.ExplosionAt = now + TimeSpan.FromSeconds(1.5);
 
@@ -125,7 +109,9 @@ public sealed class RMCDemolitionsSimulatorSystem : EntitySystem
 
             var xform = Transform(comp.ChamberCameraEnt);
             var center = new MapCoordinates(xform.WorldPosition, xform.MapID);
-            _explosion.QueueExplosion(center, "RMC",
+            _explosion.QueueExplosion(
+                center,
+                "RMC",
                 comp.PendingTotalIntensity,
                 comp.PendingIntensitySlope,
                 comp.PendingMaxIntensity,
@@ -136,97 +122,56 @@ public sealed class RMCDemolitionsSimulatorSystem : EntitySystem
 
     private void CreateChamber(Entity<RMCDemolitionsSimulatorComponent> ent)
     {
-        // Delete previous chamber map if it exists
         if (ent.Comp.ChamberMapEnt != EntityUid.Invalid && EntityManager.EntityExists(ent.Comp.ChamberMapEnt))
             QueueDel(ent.Comp.ChamberMapEnt);
 
-        // Create a dedicated map for this chamber
         var mapEnt = _mapSystem.CreateMap(out var mapId);
         ent.Comp.ChamberMapEnt = mapEnt;
 
-        // Create a grid on the map
         var gridEnt = _mapManager.CreateGridEntity(mapId);
         var gridComp = Comp<MapGridComponent>(gridEnt);
 
-        // Lay floor tiles in an 11×11 area
         var floorTile = new Tile(_tileDefinitionManager["FloorSteel"].TileId);
         for (var x = -5; x <= 5; x++)
+        {
             for (var y = -5; y <= 5; y++)
+            {
                 _mapSystem.SetTile(gridEnt, gridComp, new Vector2i(x, y), floorTile);
+            }
+        }
 
-        // Spawn 4 training dummies at increasing distances north of center
-        for (var i = 1; i <= 4; i++)
-            Spawn("RMCTrainingDummy", new EntityCoordinates(gridEnt, new System.Numerics.Vector2(0, i)));
+        for (var index = 1; index <= 4; index++)
+        {
+            Spawn("RMCTrainingDummy", new EntityCoordinates(gridEnt, new Vector2(0, index)));
+        }
 
-        // Spawn camera at center tile (y=0), looking south toward the dummies
-        var cam = Spawn("RMCDemolitionsCamera", new EntityCoordinates(gridEnt, System.Numerics.Vector2.Zero));
-        ent.Comp.ChamberCameraEnt = cam;
-        ent.Comp.ChamberCamera = GetNetEntity(cam);
+        var camera = Spawn("RMCDemolitionsCamera", new EntityCoordinates(gridEnt, Vector2.Zero));
+        ent.Comp.ChamberCameraEnt = camera;
+        ent.Comp.ChamberCamera = GetNetEntity(camera);
 
         Dirty(ent);
     }
 
-    private void RunSimulation(Entity<RMCDemolitionsSimulatorComponent> simEnt, EntityUid casing, RMCChembombCasingComponent comp)
+    private void RunSimulation(Entity<RMCDemolitionsSimulatorComponent> simEnt, EntityUid casingUid, RMCChembombCasingComponent casing)
     {
-        float powerMod = 0f, falloffMod = 0f;
-        float intensityMod = 0f, radiusMod = 0f, durationMod = 0f;
-        float totalVolume = 0f;
-        bool hasExplosive = false, hasIncendiary = false;
+        _solution.TryGetSolution(casingUid, casing.ChemicalSolution, out _, out var solution);
+        var estimate = RMCOrdnanceYieldEstimator.Estimate(solution, _prototype, RMCOrdnanceYieldEstimator.FromCasing(casing));
 
-        if (_solution.TryGetSolution(casing, comp.ChemicalSolution, out _, out var solution))
-        {
-            foreach (var reagent in solution)
-            {
-                if (!_prototype.TryIndexReagent(reagent.Reagent.Prototype, out var proto))
-                    continue;
+        simEnt.Comp.LastCasingName = MetaData(casingUid).EntityName;
+        simEnt.Comp.LastCurrentVolume = estimate.CurrentVolume;
+        simEnt.Comp.LastMaxVolume = (float) casing.MaxVolume;
+        simEnt.Comp.LastHasExplosion = estimate.HasExplosion;
+        simEnt.Comp.LastTotalIntensity = estimate.TotalIntensity;
+        simEnt.Comp.LastIntensitySlope = estimate.IntensitySlope;
+        simEnt.Comp.LastMaxIntensity = estimate.MaxIntensity;
+        simEnt.Comp.LastHasFire = estimate.HasFire;
+        simEnt.Comp.LastFireIntensity = estimate.FireIntensity;
+        simEnt.Comp.LastFireRadius = estimate.FireRadius;
+        simEnt.Comp.LastFireDuration = estimate.FireDuration;
 
-                var qty = (float) reagent.Quantity;
-                totalVolume += qty;
-                powerMod += qty * (float) proto!.PowerMod;
-                falloffMod += qty * (float) proto.FalloffMod;
-                intensityMod += qty * (float) proto.IntensityMod;
-                radiusMod += qty * (float) proto.RadiusMod;
-                durationMod += qty * (float) proto.DurationMod;
-
-                if (proto.PowerMod > FixedPoint2.Zero) hasExplosive = true;
-                if (proto.IntensityMod > FixedPoint2.Zero || proto.Intensity > 0) hasIncendiary = true;
-            }
-        }
-
-        float totalIntensity = 0f, intensitySlope = 0f, maxIntensity = 0f;
-        if (hasExplosive || powerMod > 0)
-        {
-            float power = comp.BasePower + powerMod;
-            float falloff = MathF.Max(comp.MinFalloff, comp.BaseFalloff + falloffMod);
-            totalIntensity = MathF.Max(1f, power);
-            intensitySlope = MathF.Max(1.5f, falloff / 14f);
-            maxIntensity = MathF.Max(5f, power / 15f);
-        }
-
-        float fireIntensity = 0f, fireRadius = 0f, fireDuration = 0f;
-        if (hasIncendiary)
-        {
-            fireIntensity = Math.Clamp(comp.MinFireIntensity + intensityMod, comp.MinFireIntensity, comp.MaxFireIntensity);
-            fireRadius = Math.Clamp(comp.MinFireRadius + radiusMod, comp.MinFireRadius, comp.MaxFireRadius);
-            fireDuration = Math.Clamp(comp.MinFireDuration + durationMod, comp.MinFireDuration, comp.MaxFireDuration);
-        }
-
-        simEnt.Comp.LastCasingName = MetaData(casing).EntityName;
-        simEnt.Comp.LastCurrentVolume = totalVolume;
-        simEnt.Comp.LastMaxVolume = (float) comp.MaxVolume;
-        simEnt.Comp.LastHasExplosion = hasExplosive || powerMod > 0;
-        simEnt.Comp.LastTotalIntensity = totalIntensity;
-        simEnt.Comp.LastIntensitySlope = intensitySlope;
-        simEnt.Comp.LastMaxIntensity = maxIntensity;
-        simEnt.Comp.LastHasFire = hasIncendiary;
-        simEnt.Comp.LastFireIntensity = fireIntensity;
-        simEnt.Comp.LastFireRadius = fireRadius;
-        simEnt.Comp.LastFireDuration = fireDuration;
-
-        // Store pending blast parameters for the deferred explosion
-        simEnt.Comp.PendingTotalIntensity = totalIntensity;
-        simEnt.Comp.PendingIntensitySlope = intensitySlope;
-        simEnt.Comp.PendingMaxIntensity = maxIntensity;
+        simEnt.Comp.PendingTotalIntensity = estimate.TotalIntensity;
+        simEnt.Comp.PendingIntensitySlope = estimate.IntensitySlope;
+        simEnt.Comp.PendingMaxIntensity = estimate.MaxIntensity;
 
         Dirty(simEnt);
     }
@@ -235,7 +180,9 @@ public sealed class RMCDemolitionsSimulatorSystem : EntitySystem
     {
         var now = _timing.CurTime;
         var onCooldown = now < ent.Comp.CooldownEnd;
-        var secsLeft = onCooldown ? (int)(ent.Comp.CooldownEnd - now).TotalSeconds : 0;
+        var secondsLeft = onCooldown
+            ? Math.Max(0, (int) Math.Ceiling((ent.Comp.CooldownEnd - now).TotalSeconds))
+            : 0;
 
         var state = new RMCDemolitionsSimulatorBuiState(
             ent.Comp.LastCasingName,
@@ -250,9 +197,20 @@ public sealed class RMCDemolitionsSimulatorSystem : EntitySystem
             ent.Comp.LastFireRadius,
             ent.Comp.LastFireDuration,
             onCooldown,
-            secsLeft,
+            secondsLeft,
             ent.Comp.ChamberCamera);
 
         _ui.SetUiState(ent.Owner, RMCDemolitionsSimulatorUiKey.Key, state);
+    }
+
+    private void ToggleViewer(EntityUid camera, EntityUid actor, bool subscribed)
+    {
+        if (camera == EntityUid.Invalid || !_playerManager.TryGetSessionByEntity(actor, out var session))
+            return;
+
+        if (subscribed)
+            _viewSubscriber.AddViewSubscriber(camera, session);
+        else
+            _viewSubscriber.RemoveViewSubscriber(camera, session);
     }
 }

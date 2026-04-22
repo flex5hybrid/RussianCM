@@ -18,6 +18,7 @@
   - type: RMCOrdnancePayloadAssembly
     fuelSolution: fuel
     requiredFuel: 60
+    requiredFuelReagent: RMCMethane
     results:
     - payload: RMC84mmRocketWarhead
       result: RMCRocket84mmCustom
@@ -68,7 +69,6 @@
         name: rmc-chembomb-detonator-slot
         whitelist:
           tags:
-          - RMCOrdnanceAssemblyLocked
           - RMCDoubleIgniterAssembly
   - type: Item
     size: Normal
@@ -86,15 +86,15 @@
     proto: RMCProjectileRocket84mmCustom
     deleteOnSpawn: false
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/CustomOrdnance/84mmrockettube.rsi
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Explosives/m5spec.rsi
     layers:
-    - state: custom
+    - state: m5_84mm_custom_complete
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Item
     size: Normal
   - type: Appearance
   - type: SpentAmmoVisuals
-    state: custom_e
+    state: m5_84mm_custom_complete
     suffix: false
   - type: SolutionContainerManager
     solutions:
@@ -144,6 +144,8 @@
     basePower: 220
     baseFalloff: 160
     baseShards: 80
+    hasActiveDetonator: true
+    stage: Armed
     minFireIntensity: 4
     maxFireIntensity: 45
     minFireRadius: 2

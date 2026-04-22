@@ -1,5 +1,7 @@
 using Content.Server.Popups;
+using Content.Shared._RMC14.Chemistry.Reagent;
 using Content.Shared._RuMC14.Ordnance;
+using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.FixedPoint;
@@ -11,10 +13,14 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._RuMC14.Ordnance;
 
+/// <summary>
+///     Combines armed chemical warheads with fueled rocket and mortar bodies.
+/// </summary>
 public sealed class RMCOrdnancePayloadAssemblySystem : EntitySystem
 {
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
 
     private static readonly SoundSpecifier InsertSound = new SoundPathSpecifier("/Audio/_RMC14/Weapons/Guns/Reload/grenade_insert.ogg");
@@ -44,10 +50,8 @@ public sealed class RMCOrdnancePayloadAssemblySystem : EntitySystem
             return;
         }
 
-        if (!_solution.TryGetSolution(ent.Owner, ent.Comp.FuelSolution, out _, out var fuelSolution) ||
-            fuelSolution.Volume < ent.Comp.RequiredFuel)
+        if (!TryValidateFuel(ent, args.User))
         {
-            _popup.PopupEntity(Loc.GetString("rmc-ordnance-payload-no-fuel"), ent, args.User, PopupType.SmallCaution);
             return;
         }
 
@@ -59,13 +63,7 @@ public sealed class RMCOrdnancePayloadAssemblySystem : EntitySystem
         }
 
         var result = Spawn(resultProto.Value, Transform(ent).Coordinates);
-
-        if (_solution.TryGetSolution(args.Used, casing.ChemicalSolution, out var sourceChemicals, out var _)
-            && _solution.TryGetSolution(result, ent.Comp.ChemicalSolution, out var resultChemicals, out _))
-        {
-            var transferred = _solution.SplitSolution(sourceChemicals.Value, chemicalSolution.Volume);
-            _solution.TryAddSolution(resultChemicals.Value, transferred);
-        }
+        TransferPayloadChemicals(args.Used, casing.ChemicalSolution, result, ent.Comp.ChemicalSolution, chemicalSolution.Volume);
 
         _audio.PlayPredicted(InsertSound, result, args.User);
         _popup.PopupEntity(Loc.GetString("rmc-ordnance-payload-assembled"), result, args.User);
@@ -87,5 +85,55 @@ public sealed class RMCOrdnancePayloadAssemblySystem : EntitySystem
         }
 
         return null;
+    }
+
+    private bool TryValidateFuel(Entity<RMCOrdnancePayloadAssemblyComponent> ent, EntityUid user)
+    {
+        if (!_solution.TryGetSolution(ent.Owner, ent.Comp.FuelSolution, out _, out Solution? fuelSolution) ||
+            fuelSolution == null)
+        {
+            _popup.PopupEntity(Loc.GetString("rmc-ordnance-payload-no-fuel"), ent, user, PopupType.SmallCaution);
+            return false;
+        }
+
+        if (fuelSolution.Volume < ent.Comp.RequiredFuel)
+        {
+            _popup.PopupEntity(Loc.GetString("rmc-ordnance-payload-no-fuel"), ent, user, PopupType.SmallCaution);
+            return false;
+        }
+
+        if (ent.Comp.RequiredFuelReagent is not { } fuelReagent ||
+            fuelSolution.GetTotalPrototypeQuantity(fuelReagent) >= ent.Comp.RequiredFuel)
+        {
+            return true;
+        }
+
+        var fuelName = _prototype.TryIndexReagent(fuelReagent, out ReagentPrototype? fuelProto)
+            ? fuelProto.LocalizedName
+            : fuelReagent.Id;
+
+        _popup.PopupEntity(
+            Loc.GetString("rmc-ordnance-payload-wrong-fuel", ("fuel", fuelName)),
+            ent,
+            user,
+            PopupType.SmallCaution);
+        return false;
+    }
+
+    private void TransferPayloadChemicals(
+        EntityUid source,
+        string sourceSolutionName,
+        EntityUid result,
+        string resultSolutionName,
+        FixedPoint2 quantity)
+    {
+        if (!_solution.TryGetSolution(source, sourceSolutionName, out var sourceChemicals, out _)
+            || !_solution.TryGetSolution(result, resultSolutionName, out var resultChemicals, out _))
+        {
+            return;
+        }
+
+        var transferred = _solution.SplitSolution(sourceChemicals.Value, quantity);
+        _solution.TryAddSolution(resultChemicals.Value, transferred);
     }
 }

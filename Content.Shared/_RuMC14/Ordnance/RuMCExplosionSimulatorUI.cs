@@ -2,24 +2,39 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared._RuMC14.Ordnance;
 
+/// <summary>
+///     UI channel for the explosion simulator computer.
+/// </summary>
 [Serializable, NetSerializable]
 public enum RMCExplosionSimulatorUiKey
 {
     Key,
 }
 
+/// <summary>
+///     Requests a fresh two-minute simulation pass for the inserted beaker.
+/// </summary>
 [Serializable, NetSerializable]
 public sealed class RMCExplosionSimulatorSimulateMsg : BoundUserInterfaceMessage;
 
+/// <summary>
+///     Switches the replay formation that the console will spawn inside its test chamber.
+/// </summary>
 [Serializable, NetSerializable]
 public sealed class RMCExplosionSimulatorTargetMsg(RMCExplosionSimulatorTarget target) : BoundUserInterfaceMessage
 {
     public readonly RMCExplosionSimulatorTarget Target = target;
 }
 
+/// <summary>
+///     Requests the chamber replay for the most recently completed analysis package.
+/// </summary>
 [Serializable, NetSerializable]
 public sealed class RMCExplosionSimulatorReplayMsg : BoundUserInterfaceMessage;
 
+/// <summary>
+///     Snapshot of the console state used by the client to render analysis progress and results.
+/// </summary>
 [Serializable, NetSerializable]
 public sealed class RMCExplosionSimulatorBuiState(
     bool hasBeaker,

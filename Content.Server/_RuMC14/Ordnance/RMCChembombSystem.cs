@@ -23,6 +23,7 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.Popups;
 using Content.Shared.Tools;
 using Content.Shared.Tools.Systems;
+using Content.Shared.UserInterface;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
@@ -49,9 +50,11 @@ public sealed class RMCChembombSystem : EntitySystem
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly SharedToolSystem _tool = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
+    [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
 
     private static readonly SoundSpecifier InsertSound = new SoundPathSpecifier("/Audio/_RMC14/Weapons/Guns/Reload/grenade_insert.ogg");
     private static readonly SoundSpecifier ArmSound = new SoundPathSpecifier("/Audio/_RMC14/Explosion/armbomb.ogg");
+    private static readonly SoundSpecifier C4TimerBeepSound = new SoundPathSpecifier("/Audio/Machines/Nuke/general_beep.ogg");
     private static readonly ProtoId<ToolQualityPrototype> ScrewingQuality = "Screwing";
 
     public override void Initialize()
@@ -120,67 +123,9 @@ public sealed class RMCChembombSystem : EntitySystem
             return;
 
         args.Handled = true;
-
-        float powerMod = 0f, falloffMod = 0f, intensityMod = 0f, radiusMod = 0f, durationMod = 0f;
-        bool hasExplosive = false, hasIncendiary = false;
-
-        if (_solution.TryGetSolution(target, casing.ChemicalSolution, out _, out var solution))
-        {
-            foreach (var reagent in solution)
-            {
-                if (!_prototype.TryIndexReagent(reagent.Reagent.Prototype, out var proto))
-                    continue;
-
-                var qty = (float) reagent.Quantity;
-                powerMod += qty * (float) proto!.PowerMod;
-                falloffMod += qty * (float) proto.FalloffMod;
-                intensityMod += qty * (float) proto.IntensityMod;
-                radiusMod += qty * (float) proto.RadiusMod;
-                durationMod += qty * (float) proto.DurationMod;
-
-                if (proto.PowerMod > FixedPoint2.Zero)
-                    hasExplosive = true;
-
-                if (proto.IntensityMod > FixedPoint2.Zero || proto.Intensity > 0)
-                    hasIncendiary = true;
-            }
-        }
-
-        var sb = new System.Text.StringBuilder();
-        sb.AppendLine(Loc.GetString("rmc-demolitions-sim-header", ("name", MetaData(target).EntityName)));
-
-        var currentVol = FixedPoint2.Zero;
-        if (_solution.TryGetSolution(target, casing.ChemicalSolution, out _, out var chem))
-            currentVol = chem.Volume;
-        sb.AppendLine(Loc.GetString("rmc-demolitions-sim-volume",
-            ("current", (int) (float) currentVol), ("max", (int) (float) casing.MaxVolume)));
-
-        if (!hasExplosive && !hasIncendiary)
-        {
-            sb.AppendLine(Loc.GetString("rmc-demolitions-sim-empty"));
-        }
-        else
-        {
-            if (hasExplosive || powerMod > 0)
-            {
-                var power = casing.BasePower + powerMod;
-                var falloff = MathF.Max(casing.MinFalloff, casing.BaseFalloff + falloffMod);
-                var approxRadius = MathF.Sqrt(MathF.Max(1f, power) / MathF.Max(1.5f, falloff / 14f));
-                sb.AppendLine(Loc.GetString("rmc-demolitions-sim-explosion",
-                    ("power", (int) power), ("falloff", (int) falloff), ("radius", approxRadius.ToString("F1"))));
-            }
-
-            if (hasIncendiary)
-            {
-                var intensity = Math.Clamp(casing.MinFireIntensity + intensityMod, casing.MinFireIntensity, casing.MaxFireIntensity);
-                var radius = Math.Clamp(casing.MinFireRadius + radiusMod, casing.MinFireRadius, casing.MaxFireRadius);
-                var duration = Math.Clamp(casing.MinFireDuration + durationMod, casing.MinFireDuration, casing.MaxFireDuration);
-                sb.AppendLine(Loc.GetString("rmc-demolitions-sim-fire",
-                    ("intensity", (int) intensity), ("radius", (int) radius), ("duration", (int) duration)));
-            }
-        }
-
-        _popup.PopupEntity(sb.ToString(), target, args.User, PopupType.Large);
+        var state = GetScannerState(target, casing);
+        _ui.SetUiState(scanner.Owner, RMCDemolitionsScannerUiKey.Key, state);
+        _ui.TryOpenUi(scanner.Owner, RMCDemolitionsScannerUiKey.Key, args.User);
     }
 
     private void OnTrigger(Entity<RMCChembombCasingComponent> ent, ref TriggerEvent args)
@@ -202,64 +147,30 @@ public sealed class RMCChembombSystem : EntitySystem
             return;
         }
 
-        var powerMod = 0f;
-        var falloffMod = 0f;
-        var intensityMod = 0f;
-        var radiusMod = 0f;
-        var durationMod = 0f;
-        var fireEntity = ent.Comp.DefaultFireEntity;
-        var hasExplosive = false;
-        var hasIncendiary = false;
-
-        foreach (var reagent in solution)
-        {
-            if (!_prototype.TryIndexReagent(reagent.Reagent.Prototype, out var proto))
-                continue;
-
-            var qty = (float) reagent.Quantity;
-            powerMod += qty * (float) proto!.PowerMod;
-            falloffMod += qty * (float) proto.FalloffMod;
-            intensityMod += qty * (float) proto.IntensityMod;
-            radiusMod += qty * (float) proto.RadiusMod;
-            durationMod += qty * (float) proto.DurationMod;
-
-            if (proto.PowerMod > FixedPoint2.Zero)
-                hasExplosive = true;
-
-            if (proto.IntensityMod > FixedPoint2.Zero || proto.Intensity > 0)
-            {
-                hasIncendiary = true;
-                if (proto.Intensity > 0)
-                    fireEntity = proto.FireEntity;
-            }
-        }
+        var estimate = RMCOrdnanceYieldEstimator.Estimate(solution, _prototype, RMCOrdnanceYieldEstimator.FromCasing(ent.Comp));
 
         var coords = _transform.GetMoverCoordinates(ent.Owner);
 
-        if (hasExplosive || powerMod > 0)
+        if (estimate.HasExplosion)
         {
-            var power = ent.Comp.BasePower + powerMod;
-            var falloff = MathF.Max(ent.Comp.MinFalloff, ent.Comp.BaseFalloff + falloffMod);
-            var totalIntensity = MathF.Max(1f, power);
-            var intensitySlope = MathF.Max(1.5f, falloff / 14f);
-            var maxIntensity = MathF.Max(5f, power / 15f);
-
             _explosion.QueueExplosion(
                 _transform.GetMapCoordinates(ent.Owner),
                 "RMC",
-                totalIntensity,
-                intensitySlope,
-                maxIntensity,
+                estimate.TotalIntensity,
+                estimate.IntensitySlope,
+                estimate.MaxIntensity,
                 ent.Owner);
         }
 
-        if (hasIncendiary)
+        if (estimate.HasFire)
         {
-            var intensity = Math.Clamp(ent.Comp.MinFireIntensity + intensityMod, ent.Comp.MinFireIntensity, ent.Comp.MaxFireIntensity);
-            var radius = Math.Clamp(ent.Comp.MinFireRadius + radiusMod, ent.Comp.MinFireRadius, ent.Comp.MaxFireRadius);
-            var duration = Math.Clamp(ent.Comp.MinFireDuration + durationMod, ent.Comp.MinFireDuration, ent.Comp.MaxFireDuration);
             var tile = coords.SnapToGrid(EntityManager, _map);
-            _flammable.SpawnFireDiamond(fireEntity, tile, (int) radius, (int) intensity, (int) duration);
+            _flammable.SpawnFireDiamond(
+                estimate.FireEntity,
+                tile,
+                (int) estimate.FireRadius,
+                (int) estimate.FireIntensity,
+                (int) estimate.FireDuration);
         }
 
         args.Handled = true;
@@ -404,6 +315,15 @@ public sealed class RMCChembombSystem : EntitySystem
                 trigger.DoPopup = false;
                 trigger.InitialBeepDelay = 0f;
                 trigger.BeepInterval = 5f;
+
+                if (IsC4PlasticCasing(ent))
+                {
+                    trigger.BeepSound = C4TimerBeepSound;
+                    trigger.BeepInterval = 1f;
+                    trigger.StartOnStick = true;
+                    trigger.AllowToggleStartOnStick = true;
+                }
+
                 break;
             }
             case RMCOrdnanceAssemblyKind.Signaler:
@@ -486,6 +406,33 @@ public sealed class RMCChembombSystem : EntitySystem
             return RMCOrdnanceAssemblyKind.Proximity;
 
         return RMCOrdnanceAssemblyKind.DoubleIgniter;
+    }
+
+    private bool IsC4PlasticCasing(Entity<RMCChembombCasingComponent> ent)
+    {
+        return TryComp<MetaDataComponent>(ent, out var meta) &&
+               meta.EntityPrototype?.ID == "RMCC4PlasticCasing";
+    }
+
+    private RMCDemolitionsScannerBuiState GetScannerState(EntityUid target, RMCChembombCasingComponent casing)
+    {
+        _solution.TryGetSolution(target, casing.ChemicalSolution, out _, out var solution);
+        var estimate = RMCOrdnanceYieldEstimator.Estimate(solution, _prototype, RMCOrdnanceYieldEstimator.FromCasing(casing));
+
+        return new RMCDemolitionsScannerBuiState(
+            MetaData(target).EntityName,
+            estimate.CurrentVolume,
+            (float) casing.MaxVolume,
+            casing.HasActiveDetonator,
+            casing.Stage,
+            estimate.HasExplosion,
+            estimate.TotalIntensity,
+            estimate.BlastFalloff,
+            estimate.ApproxBlastRadius,
+            estimate.HasFire,
+            estimate.FireIntensity,
+            estimate.FireRadius,
+            estimate.FireDuration);
     }
 
     private enum RMCOrdnanceAssemblyKind : byte

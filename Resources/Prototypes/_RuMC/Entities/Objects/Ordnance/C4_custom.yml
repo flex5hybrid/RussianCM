@@ -6,11 +6,27 @@
   id: RMCC4PlasticCasing
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/CustomOrdnance/c4plasticcasing.rsi
+    sprite: _RMC14/Objects/Weapons/Explosives/plastic_explosives.rsi
     layers:
     - state: icon
       map: ["state"]
+  - type: Sticky
+    stickDelay: 5
+    unstickDelay: 5
+    stickPopupStart: comp-sticky-start-stick-bomb
+    stickPopupSuccess: comp-sticky-success-stick-bomb
+    unstickPopupStart: comp-sticky-start-unstick-bomb
+    unstickPopupSuccess: comp-sticky-success-unstick-bomb
+    blacklist:
+      components:
+      - Item
+  - type: StickyVisualizer
   - type: Appearance
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/_RMC14/Explosion/armbomb.ogg
+      params:
+        volume: -5
   - type: GenericVisualizer
     visuals:
       enum.RMCCasingVisualKey.State:
@@ -19,6 +35,9 @@
           Loaded: { state: icon }
           Sealed: { state: icon }
           Armed: { state: icon }
+      enum.Trigger.TriggerVisuals.VisualState:
+        state:
+          Primed: { state: active }
   - type: PhysicalComposition
     materialComposition:
       CMSteel: 7500
@@ -44,7 +63,5 @@
         name: rmc-chembomb-detonator-slot
         whitelist:
           tags:
-          - RMCOrdnanceAssemblyLocked
           - RMCTimerAssembly
-          - RMCDoubleIgniterAssembly
           - RMCSignalerAssembly

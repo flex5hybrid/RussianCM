@@ -1,57 +1,136 @@
-<DefaultWindow
-    xmlns="https://spacestation14.io"
-    xmlns:controls="clr-namespace:Robust.Client.UserInterface.Controls"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    x:Class="Content.Client._RuMC14.Ordnance.RuMCExplosionSimulatorWindow"
-    Title="Explosion Simulation Computer"
-    MinSize="460 320"
-    SetSize="460 320">
+<cc:RuMCExplosionSimulatorWindow xmlns="https://spacestation14.io"
+                                 xmlns:cc="clr-namespace:Content.Client._RuMC14.Ordnance"
+                                 Title="Explosion Simulation Computer"
+                                 MinSize="740 560"
+                                 SetSize="740 560">
+    <BoxContainer Orientation="Vertical" Margin="8" SeparationOverride="8">
+        <PanelContainer StyleClasses="Inset">
+            <BoxContainer Orientation="Horizontal" Margin="10" SeparationOverride="12">
+                <BoxContainer Orientation="Vertical" HorizontalExpand="True" SeparationOverride="4">
+                    <RichTextLabel Name="HeaderLabel"
+                                   Access="Public" />
+                    <Label Text="Two-minute predictive analysis for custom explosive payloads."
+                           FontColorOverride="#7c8ea8" />
+                </BoxContainer>
 
-    <BoxContainer Orientation="Vertical" Margin="10" SeparationOverride="8">
+                <PanelContainer>
+                    <BoxContainer Orientation="Vertical" Margin="8" SeparationOverride="4">
+                        <Label Text="Analysis Cycle"
+                               FontColorOverride="#b8d5ff" />
+                        <ProgressBar Name="ProcessingBar"
+                                     Access="Public"
+                                     HorizontalExpand="True"
+                                     MaxValue="1"
+                                     MinValue="0"
+                                     SetSize="220 24">
+                            <Label Name="ProcessingLabel"
+                                   Access="Public"
+                                   HorizontalAlignment="Center"
+                                   Margin="4 0"
+                                   Text="Standby" />
+                        </ProgressBar>
+                    </BoxContainer>
+                </PanelContainer>
+            </BoxContainer>
+        </PanelContainer>
 
-        <!-- Beaker slot status -->
-        <Label Name="BeakerLabel" Access="Public"
-               Text="Beaker: Not inserted"
-               FontColorOverride="#cccccc"/>
+        <BoxContainer Orientation="Horizontal" SeparationOverride="8" VerticalExpand="True">
+            <PanelContainer HorizontalExpand="True" VerticalExpand="True">
+                <BoxContainer Orientation="Vertical" Margin="10" SeparationOverride="8">
+                    <Label Text="Target Profile"
+                           FontColorOverride="#d9e8ff" />
+                    <Label Text="Select the formation to seed into the replay chamber."
+                           FontColorOverride="#7c8ea8" />
 
-        <!-- Target type selection -->
-        <BoxContainer Orientation="Horizontal" SeparationOverride="4">
-            <Label Text="Target:  " FontColorOverride="#aaaaaa" VerticalAlignment="Center"/>
-            <Button Name="MarinesButton" Access="Public" Text="USCM Marines" MinSize="110 0"/>
-            <Button Name="SpecialForcesButton" Access="Public" Text="Special Forces" MinSize="110 0"/>
-            <Button Name="XenomorphsButton" Access="Public" Text="Xenomorphs" MinSize="100 0"/>
+                    <Button Name="MarinesButton"
+                            Access="Public"
+                            Text="USCM Marines"
+                            MinSize="0 36" />
+                    <Button Name="SpecialForcesButton"
+                            Access="Public"
+                            Text="Special Forces"
+                            MinSize="0 36" />
+                    <Button Name="XenomorphsButton"
+                            Access="Public"
+                            Text="Xenomorph Hive"
+                            MinSize="0 36" />
+
+                    <PanelContainer StyleClasses="Inset" VerticalExpand="True">
+                        <BoxContainer Orientation="Vertical" Margin="8" SeparationOverride="4">
+                            <Label Text="Threat Notes"
+                                   FontColorOverride="#9effb6" />
+                            <RichTextLabel Name="TargetNotesLabel"
+                                           Access="Public"
+                                           VerticalExpand="True" />
+                        </BoxContainer>
+                    </PanelContainer>
+
+                    <PanelContainer StyleClasses="Inset">
+                        <BoxContainer Orientation="Vertical" Margin="8" SeparationOverride="4">
+                            <Label Text="Sample Status"
+                                   FontColorOverride="#ffd37a" />
+                            <Label Name="BeakerLabel"
+                                   Access="Public"
+                                   Text="No beaker inserted." />
+                            <RichTextLabel Name="ReadinessLabel"
+                                           Access="Public" />
+                        </BoxContainer>
+                    </PanelContainer>
+                </BoxContainer>
+            </PanelContainer>
+
+            <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True" SeparationOverride="8">
+                <PanelContainer HorizontalExpand="True">
+                    <BoxContainer Orientation="Vertical" Margin="10" SeparationOverride="4">
+                        <Label Text="Blast Projection"
+                               FontColorOverride="#ffd37a" />
+                        <RichTextLabel Name="BlastLabel"
+                                       Access="Public" />
+                    </BoxContainer>
+                </PanelContainer>
+
+                <PanelContainer HorizontalExpand="True">
+                    <BoxContainer Orientation="Vertical" Margin="10" SeparationOverride="4">
+                        <Label Text="Incendiary Projection"
+                               FontColorOverride="#ff9d6b" />
+                        <RichTextLabel Name="FireLabel"
+                                       Access="Public" />
+                    </BoxContainer>
+                </PanelContainer>
+
+                <PanelContainer HorizontalExpand="True" VerticalExpand="True">
+                    <BoxContainer Orientation="Vertical" Margin="10" SeparationOverride="6">
+                        <Label Text="Simulation Summary"
+                               FontColorOverride="#9effb6" />
+                        <RichTextLabel Name="StatusLabel"
+                                       Access="Public"
+                                       VerticalExpand="True" />
+                    </BoxContainer>
+                </PanelContainer>
+
+                <BoxContainer Orientation="Horizontal" SeparationOverride="8">
+                    <Button Name="SimulateButton"
+                            Access="Public"
+                            Text="Run 120s Analysis"
+                            HorizontalExpand="True"
+                            MinSize="0 36" />
+                    <Button Name="ReplayButton"
+                            Access="Public"
+                            Text="Replay Chamber"
+                            HorizontalExpand="True"
+                            MinSize="0 36"
+                            Disabled="True" />
+                </BoxContainer>
+            </BoxContainer>
         </BoxContainer>
 
-        <!-- Simulate button -->
-        <BoxContainer Orientation="Horizontal" SeparationOverride="6">
-            <Button Name="SimulateButton" Access="Public"
-                    Text="▶ Simulate (120s)"
-                    MinSize="150 0"/>
+        <BoxContainer Orientation="Horizontal" Margin="4 0 4 0">
+            <Label Text="Explosion Analysis Suite"
+                   StyleClasses="WindowFooterText" />
+            <Label Text="OT Research Annex"
+                   StyleClasses="WindowFooterText"
+                   HorizontalAlignment="Right"
+                   HorizontalExpand="True" />
         </BoxContainer>
-
-        <!-- Status label -->
-        <Label Name="StatusLabel" Access="Public"
-               Text="Insert a beaker and press Simulate."
-               FontColorOverride="#888888"/>
-
-        <!-- Results (hidden until simulation ready) -->
-        <BoxContainer Name="ResultsBox" Access="Public" Orientation="Vertical" SeparationOverride="4" Visible="False">
-            <Control MinSize="0 4"/>
-            <Label Text="Blast Parameters" FontColorOverride="#ffcc44"/>
-            <Label Name="BlastLabel" Access="Public" Text="—" FontColorOverride="#ffffff"/>
-            <Label Text="Fire Parameters" FontColorOverride="#ff6633"/>
-            <Label Name="FireLabel" Access="Public" Text="—" FontColorOverride="#ffffff"/>
-        </BoxContainer>
-
-        <Control VerticalExpand="True"/>
-
-        <!-- Replay button -->
-        <Button Name="ReplayButton" Access="Public"
-                Text="▶ Replay Simulation"
-                Disabled="True"
-                MinSize="160 0"
-                HorizontalAlignment="Left"/>
-
     </BoxContainer>
-
-</DefaultWindow>
+</cc:RuMCExplosionSimulatorWindow>

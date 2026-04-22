@@ -50,10 +50,7 @@
         name: rmc-chembomb-detonator-slot
         whitelist:
           tags:
-          - RMCOrdnanceAssemblyLocked
           - RMCTimerAssembly
-          - RMCDoubleIgniterAssembly
-          - RMCSignalerAssembly
   - type: Tag
     tags:
     - RMCGrenadeM40
@@ -111,7 +108,4 @@
         name: rmc-chembomb-detonator-slot
         whitelist:
           tags:
-          - RMCOrdnanceAssemblyLocked
           - RMCTimerAssembly
-          - RMCDoubleIgniterAssembly
-          - RMCSignalerAssembly

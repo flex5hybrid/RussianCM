@@ -81,6 +81,7 @@ rmc-ordnance-assembly-unlocked = You unlock the assembly. The parts can be adjus
 rmc-ordnance-assembly-disassembled = You separate the assembly back into parts.
 rmc-ordnance-payload-not-ready = The warhead is not armed yet.
 rmc-ordnance-payload-no-fuel = The propulsion casing is missing fuel.
+rmc-ordnance-payload-wrong-fuel = The propulsion casing must be filled with {$fuel}.
 rmc-ordnance-payload-no-chemicals = The warhead has no chemical payload.
 rmc-ordnance-payload-assembled = The ordnance is fully assembled.
 
@@ -97,3 +98,30 @@ rmc-ordnance-frequency-popup = Frequency set to {$frequency}.
 rmc-ordnance-proximity-set = {$range} tile radius
 rmc-ordnance-proximity-current = {$range} tile radius (current)
 rmc-ordnance-proximity-popup = Proximity radius set to {$range} tiles.
+rmc-demolitions-scanner-ui-title = Demolitions Scanner
+rmc-demolitions-scanner-ui-idle = Scan a custom casing to display a full readout.
+rmc-demolitions-scanner-ui-status = Scan complete: {$name}
+rmc-demolitions-scanner-ui-section-overview = Casing Overview
+rmc-demolitions-scanner-ui-section-yield = Blast Estimate
+rmc-demolitions-scanner-ui-section-fire = Incendiary Estimate
+rmc-demolitions-scanner-ui-section-summary = Tactical Summary
+rmc-demolitions-scanner-ui-casing = Casing: {$name}
+rmc-demolitions-scanner-ui-stage = Assembly state: {$stage}
+rmc-demolitions-scanner-ui-detonator = Detonator: {$status}
+rmc-demolitions-scanner-ui-detonator-present = installed
+rmc-demolitions-scanner-ui-detonator-missing = missing
+rmc-demolitions-scanner-ui-volume = Chemicals: {$current}/{$max}u
+rmc-demolitions-scanner-ui-stage-open = Open
+rmc-demolitions-scanner-ui-stage-sealed = Sealed
+rmc-demolitions-scanner-ui-stage-armed = Armed
+rmc-demolitions-scanner-ui-blast-present = [color=#ffd37a]Projected blast:[/color] Power {$power}, falloff {$falloff}, approx. radius {$radius} tiles.
+rmc-demolitions-scanner-ui-blast-none = [color=#7f8a99]No explosive payload detected.[/color]
+rmc-demolitions-scanner-ui-fire-present = [color=#ff9d6b]Projected fire:[/color] Intensity {$intensity}, radius {$radius} tiles, duration {$duration}s.
+rmc-demolitions-scanner-ui-fire-none = [color=#7f8a99]No incendiary payload detected.[/color]
+rmc-demolitions-scanner-ui-summary-empty = [color=#7f8a99]Payload is chemically inert. No meaningful blast or fire effect is expected.[/color]
+rmc-demolitions-scanner-ui-summary-payload = [color=#9effb6]Reactive payload detected. Handle as live ordnance.[/color]
+rmc-demolitions-scanner-ui-summary-no-detonator = [color=#ffb36b]Trigger path incomplete: no detonator assembly is installed.[/color]
+rmc-demolitions-scanner-ui-summary-not-armed = [color=#ffd37a]Trigger path present, but the casing is not fully armed yet.[/color]
+rmc-demolitions-scanner-ui-summary-ready = [color=#ff7a7a]Casing is armed and has an active detonator. Treat as immediately dangerous.[/color]
+rmc-demolitions-scanner-ui-summary-radius = Estimated lethal blast envelope reaches roughly {$radius} tiles from impact.
+rmc-demolitions-scanner-ui-summary-fire = Incendiary spread may cover up to {$radius} tiles for about {$duration} seconds.

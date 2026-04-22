@@ -261,8 +261,10 @@ public sealed class RMCOrdnanceAssemblySystem : EntitySystem
         _tags.RemoveTag(ent, SignalerTag);
         _tags.RemoveTag(ent, DoubleIgniterTag);
 
-        if (ent.Comp.IsLocked)
-            _tags.AddTag(ent, LockedTag);
+        if (!ent.Comp.IsLocked)
+            return;
+
+        _tags.AddTag(ent, LockedTag);
 
         switch (GetAssemblyKind(ent.Comp))
         {

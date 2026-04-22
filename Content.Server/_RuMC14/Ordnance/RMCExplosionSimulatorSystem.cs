@@ -1,11 +1,11 @@
+using System.Numerics;
 using Content.Server.Explosion.EntitySystems;
-using Robust.Server.Audio;
-using Content.Shared._RMC14.Chemistry.Reagent;
 using Content.Shared._RuMC14.Ordnance;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Containers.ItemSlots;
-using Content.Shared.FixedPoint;
+using Content.Shared.Movement.Events;
 using Content.Shared.Popups;
+using Robust.Server.Audio;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Audio;
@@ -14,12 +14,52 @@ using Robust.Shared.Map.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
-using Content.Shared.Movement.Events;
 
 namespace Content.Server._RuMC14.Ordnance;
 
+/// <summary>
+///     Runs the large console-based explosion simulator by sampling a beaker and replaying the predicted blast
+///     against a target formation inside a temporary chamber map.
+/// </summary>
 public sealed class RMCExplosionSimulatorSystem : EntitySystem
 {
+    private static readonly SoundPathSpecifier BeepSound = new("/Audio/Machines/twobeep.ogg");
+    private const string BeakerSlotId = "beakerSlot";
+
+    private static readonly Dictionary<RMCExplosionSimulatorTarget, Vector2[]> TargetFormations = new()
+    {
+        [RMCExplosionSimulatorTarget.Marines] =
+        [
+            new Vector2(2, 1),
+            new Vector2(2, -1),
+            new Vector2(3, 2),
+            new Vector2(3, 0),
+            new Vector2(3, -2),
+            new Vector2(4, 1),
+            new Vector2(4, -1),
+        ],
+        [RMCExplosionSimulatorTarget.SpecialForces] =
+        [
+            new Vector2(2, 0),
+            new Vector2(2, 1),
+            new Vector2(2, -1),
+            new Vector2(3, 0),
+            new Vector2(3, 1),
+        ],
+        [RMCExplosionSimulatorTarget.Xenomorphs] =
+        [
+            new Vector2(1, 0),
+            new Vector2(1, 1),
+            new Vector2(1, -1),
+            new Vector2(2, 0),
+            new Vector2(2, 1),
+            new Vector2(2, -1),
+            new Vector2(3, 0),
+            new Vector2(3, 1),
+            new Vector2(3, -1),
+        ],
+    };
+
     [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly IMapManager _mapManager = default!;
@@ -32,16 +72,13 @@ public sealed class RMCExplosionSimulatorSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
-    [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly ViewSubscriberSystem _viewSubscriber = default!;
     [Dependency] private readonly EyeSystem _eye = default!;
-
-    private static readonly SoundPathSpecifier BeepSound = new("/Audio/Machines/twobeep.ogg");
-    private const string BeakerSlotId = "beakerSlot";
 
     public override void Initialize()
     {
         SubscribeLocalEvent<RMCExplosionSimulatorWatchingComponent, MoveInputEvent>(OnWatchingMoveInput);
+
         Subs.BuiEvents<RMCExplosionSimulatorComponent>(RMCExplosionSimulatorUiKey.Key, subs =>
         {
             subs.Event<BoundUIOpenedEvent>(OnBuiOpened);
@@ -54,22 +91,13 @@ public sealed class RMCExplosionSimulatorSystem : EntitySystem
 
     private void OnBuiOpened(Entity<RMCExplosionSimulatorComponent> ent, ref BoundUIOpenedEvent args)
     {
-        if (ent.Comp.ChamberCameraEnt != EntityUid.Invalid &&
-            _playerManager.TryGetSessionByEntity(args.Actor, out var session))
-        {
-            _viewSubscriber.AddViewSubscriber(ent.Comp.ChamberCameraEnt, session);
-        }
-
+        ToggleViewer(ent.Comp.ChamberCameraEnt, args.Actor, true);
         UpdateUiState(ent);
     }
 
     private void OnBuiClosed(Entity<RMCExplosionSimulatorComponent> ent, ref BoundUIClosedEvent args)
     {
-        if (ent.Comp.ChamberCameraEnt != EntityUid.Invalid &&
-            _playerManager.TryGetSessionByEntity(args.Actor, out var session))
-        {
-            _viewSubscriber.RemoveViewSubscriber(ent.Comp.ChamberCameraEnt, session);
-        }
+        ToggleViewer(ent.Comp.ChamberCameraEnt, args.Actor, false);
     }
 
     private void OnSimulateMsg(Entity<RMCExplosionSimulatorComponent> ent, ref RMCExplosionSimulatorSimulateMsg args)
@@ -131,122 +159,88 @@ public sealed class RMCExplosionSimulatorSystem : EntitySystem
                 UpdateUiState((uid, comp));
             }
 
-            if (comp.PendingExplosion && _timing.CurTime >= comp.ExplosionAt)
-            {
-                comp.PendingExplosion = false;
-                Dirty(uid, comp);
+            if (!comp.PendingExplosion || _timing.CurTime < comp.ExplosionAt)
+                continue;
 
-                if (!EntityManager.EntityExists(comp.ChamberCameraEnt))
-                    continue;
+            comp.PendingExplosion = false;
+            Dirty(uid, comp);
 
-                var xform = Transform(comp.ChamberCameraEnt);
-                var center = new MapCoordinates(xform.WorldPosition, xform.MapID);
-                _explosion.QueueExplosion(center, "RMC",
-                    comp.PendingTotalIntensity,
-                    comp.PendingIntensitySlope,
-                    comp.PendingMaxIntensity,
-                    null,
-                    addLog: false);
-            }
+            if (!EntityManager.EntityExists(comp.ChamberCameraEnt))
+                continue;
+
+            var xform = Transform(comp.ChamberCameraEnt);
+            var center = new MapCoordinates(xform.WorldPosition, xform.MapID);
+            _explosion.QueueExplosion(
+                center,
+                "RMC",
+                comp.PendingTotalIntensity,
+                comp.PendingIntensitySlope,
+                comp.PendingMaxIntensity,
+                null,
+                addLog: false);
         }
     }
 
     private void RunSimulation(Entity<RMCExplosionSimulatorComponent> simEnt, EntityUid beaker)
     {
-        float powerMod = 0f, falloffMod = 0f;
-        float intensityMod = 0f, radiusMod = 0f, durationMod = 0f;
-        bool hasExplosive = false, hasIncendiary = false;
+        _solution.TryGetFitsInDispenser(beaker, out _, out var solution);
+        var estimate = RMCOrdnanceYieldEstimator.Estimate(
+            solution,
+            _prototype,
+            RMCOrdnanceYieldEstimator.ExplosionSimulationProfile);
 
-        if (_solution.TryGetFitsInDispenser(beaker, out _, out var solution))
-        {
-            foreach (var reagent in solution)
-            {
-                if (!_prototype.TryIndexReagent(reagent.Reagent.Prototype, out var proto))
-                    continue;
+        simEnt.Comp.LastHasExplosion = estimate.HasExplosion;
+        simEnt.Comp.LastTotalIntensity = estimate.TotalIntensity;
+        simEnt.Comp.LastIntensitySlope = estimate.IntensitySlope;
+        simEnt.Comp.LastMaxIntensity = estimate.MaxIntensity;
+        simEnt.Comp.LastHasFire = estimate.HasFire;
+        simEnt.Comp.LastFireIntensity = estimate.FireIntensity;
+        simEnt.Comp.LastFireRadius = estimate.FireRadius;
+        simEnt.Comp.LastFireDuration = estimate.FireDuration;
 
-                var qty = (float)reagent.Quantity;
-                powerMod += qty * (float)proto!.PowerMod;
-                falloffMod += qty * (float)proto.FalloffMod;
-                intensityMod += qty * (float)proto.IntensityMod;
-                radiusMod += qty * (float)proto.RadiusMod;
-                durationMod += qty * (float)proto.DurationMod;
-
-                if (proto.PowerMod > FixedPoint2.Zero) hasExplosive = true;
-                if (proto.IntensityMod > FixedPoint2.Zero || proto.Intensity > 0) hasIncendiary = true;
-            }
-        }
-
-        float totalIntensity = 0f, intensitySlope = 0f, maxIntensity = 0f;
-        if (hasExplosive || powerMod > 0)
-        {
-            float power = 180f + powerMod;
-            float falloff = MathF.Max(25f, 80f + falloffMod);
-            totalIntensity = MathF.Max(1f, power);
-            intensitySlope = MathF.Max(1.5f, falloff / 14f);
-            maxIntensity = MathF.Max(5f, power / 15f);
-        }
-
-        float fireIntensity = 0f, fireRadius = 0f, fireDuration = 0f;
-        if (hasIncendiary)
-        {
-            fireIntensity = Math.Clamp(3f + intensityMod, 3f, 25f);
-            fireRadius = Math.Clamp(1f + radiusMod, 1f, 5f);
-            fireDuration = Math.Clamp(3f + durationMod, 3f, 24f);
-        }
-
-        simEnt.Comp.LastHasExplosion = hasExplosive || powerMod > 0;
-        simEnt.Comp.LastTotalIntensity = totalIntensity;
-        simEnt.Comp.LastIntensitySlope = intensitySlope;
-        simEnt.Comp.LastMaxIntensity = maxIntensity;
-        simEnt.Comp.LastHasFire = hasIncendiary;
-        simEnt.Comp.LastFireIntensity = fireIntensity;
-        simEnt.Comp.LastFireRadius = fireRadius;
-        simEnt.Comp.LastFireDuration = fireDuration;
-
-        simEnt.Comp.PendingTotalIntensity = totalIntensity;
-        simEnt.Comp.PendingIntensitySlope = intensitySlope;
-        simEnt.Comp.PendingMaxIntensity = maxIntensity;
+        simEnt.Comp.PendingTotalIntensity = estimate.TotalIntensity;
+        simEnt.Comp.PendingIntensitySlope = estimate.IntensitySlope;
+        simEnt.Comp.PendingMaxIntensity = estimate.MaxIntensity;
 
         Dirty(simEnt);
     }
 
     private void CreateChamberAndReplay(Entity<RMCExplosionSimulatorComponent> ent, EntityUid actor)
     {
+        ToggleViewer(ent.Comp.ChamberCameraEnt, actor, false);
+
         if (ent.Comp.ChamberMapEnt != EntityUid.Invalid && EntityManager.EntityExists(ent.Comp.ChamberMapEnt))
             QueueDel(ent.Comp.ChamberMapEnt);
-
-        if (ent.Comp.ChamberCameraEnt != EntityUid.Invalid &&
-            _playerManager.TryGetSessionByEntity(actor, out var oldSession))
-        {
-            _viewSubscriber.RemoveViewSubscriber(ent.Comp.ChamberCameraEnt, oldSession);
-        }
 
         var mapEnt = _mapSystem.CreateMap(out var mapId);
         ent.Comp.ChamberMapEnt = mapEnt;
 
         var gridEnt = _mapManager.CreateGridEntity(mapId);
         var gridComp = Comp<MapGridComponent>(gridEnt);
-
         var floorTile = new Tile(_tileDefinitionManager["FloorSteel"].TileId);
+
         for (var x = -8; x <= 8; x++)
+        {
             for (var y = -8; y <= 8; y++)
+            {
                 _mapSystem.SetTile(gridEnt, gridComp, new Vector2i(x, y), floorTile);
+            }
+        }
 
         SpawnTargetEntities(ent.Comp.SelectedTarget, gridEnt);
 
-        var cam = Spawn("RMCDemolitionsCamera", new EntityCoordinates(gridEnt, System.Numerics.Vector2.Zero));
-        ent.Comp.ChamberCameraEnt = cam;
-        ent.Comp.ChamberCamera = GetNetEntity(cam);
+        var camera = Spawn("RMCDemolitionsCamera", new EntityCoordinates(gridEnt, Vector2.Zero));
+        ent.Comp.ChamberCameraEnt = camera;
+        ent.Comp.ChamberCamera = GetNetEntity(camera);
 
-        if (_playerManager.TryGetSessionByEntity(actor, out var session))
-            _viewSubscriber.AddViewSubscriber(cam, session);
+        ToggleViewer(camera, actor, true);
 
-        _eye.SetTarget(actor, cam);
+        _eye.SetTarget(actor, camera);
         _eye.SetDrawLight(actor, false);
-        var watchingComp = EnsureComp<RMCExplosionSimulatorWatchingComponent>(actor);
-        watchingComp.Watching = cam;
+        EnsureComp<RMCExplosionSimulatorWatchingComponent>(actor).Watching = camera;
+
         ent.Comp.PendingExplosion = true;
-        ent.Comp.ExplosionAt = _timing.CurTime + TimeSpan.FromSeconds(2.0);
+        ent.Comp.ExplosionAt = _timing.CurTime + TimeSpan.FromSeconds(2);
 
         Dirty(ent);
         UpdateUiState(ent);
@@ -254,43 +248,27 @@ public sealed class RMCExplosionSimulatorSystem : EntitySystem
 
     private void SpawnTargetEntities(RMCExplosionSimulatorTarget target, EntityUid gridEnt)
     {
-        System.Numerics.Vector2[] positions = target switch
-        {
-            RMCExplosionSimulatorTarget.Marines => new[]
-            {
-                new System.Numerics.Vector2(2, 1),  new System.Numerics.Vector2(2, -1),
-                new System.Numerics.Vector2(3, 2),  new System.Numerics.Vector2(3, 0),  new System.Numerics.Vector2(3, -2),
-                new System.Numerics.Vector2(4, 1),  new System.Numerics.Vector2(4, -1),
-            },
-            RMCExplosionSimulatorTarget.SpecialForces => new[]
-            {
-                new System.Numerics.Vector2(2, 0),  new System.Numerics.Vector2(2, 1),  new System.Numerics.Vector2(2, -1),
-                new System.Numerics.Vector2(3, 0),  new System.Numerics.Vector2(3, 1),
-            },
-            RMCExplosionSimulatorTarget.Xenomorphs => new[]
-            {
-                new System.Numerics.Vector2(1, 0),  new System.Numerics.Vector2(1, 1),  new System.Numerics.Vector2(1, -1),
-                new System.Numerics.Vector2(2, 0),  new System.Numerics.Vector2(2, 1),  new System.Numerics.Vector2(2, -1),
-                new System.Numerics.Vector2(3, 0),  new System.Numerics.Vector2(3, 1),  new System.Numerics.Vector2(3, -1),
-            },
-            _ => Array.Empty<System.Numerics.Vector2>(),
-        };
+        if (!TargetFormations.TryGetValue(target, out var positions))
+            return;
 
-        foreach (var pos in positions)
-            Spawn("RMCTrainingDummy", new EntityCoordinates(gridEnt, pos));
+        foreach (var position in positions)
+        {
+            Spawn("RMCTrainingDummy", new EntityCoordinates(gridEnt, position));
+        }
     }
 
     private void UpdateUiState(Entity<RMCExplosionSimulatorComponent> ent)
     {
         var hasBeaker = _itemSlots.TryGetSlot(ent, BeakerSlotId, out var slot) && slot.Item.HasValue;
-        var now = _timing.CurTime;
-        var secsLeft = ent.Comp.IsProcessing ? (int)(ent.Comp.ProcessingEnd - now).TotalSeconds : 0;
+        var secondsLeft = ent.Comp.IsProcessing
+            ? Math.Max(0, (int) Math.Ceiling((ent.Comp.ProcessingEnd - _timing.CurTime).TotalSeconds))
+            : 0;
 
         var state = new RMCExplosionSimulatorBuiState(
             hasBeaker,
             ent.Comp.SelectedTarget,
             ent.Comp.IsProcessing,
-            secsLeft,
+            secondsLeft,
             ent.Comp.SimulationReady,
             ent.Comp.LastHasExplosion,
             ent.Comp.LastTotalIntensity,
@@ -305,22 +283,31 @@ public sealed class RMCExplosionSimulatorSystem : EntitySystem
         _ui.SetUiState(ent.Owner, RMCExplosionSimulatorUiKey.Key, state);
     }
 
-    // Это нужно будет переписать под шейрд
+    /// <summary>
+    ///     Any movement input exits the detached camera view and returns the actor to their normal eye target.
+    /// </summary>
     private void OnWatchingMoveInput(Entity<RMCExplosionSimulatorWatchingComponent> ent, ref MoveInputEvent args)
     {
-        if (!args.HasDirectionalMovement)
+        if (!args.HasDirectionalMovement || !HasComp<ActorComponent>(ent))
             return;
 
-        if (TryComp(ent, out ActorComponent? actor))
-            Unwatch(ent.Owner, actor.PlayerSession);
+        _eye.SetTarget(ent.Owner, null);
+        _eye.SetDrawLight(ent.Owner, true);
+
+        if (ent.Comp.Watching is { } watching)
+            ToggleViewer(watching, ent.Owner, false);
+
+        ent.Comp.Watching = EntityUid.Invalid;
     }
 
-    private void Unwatch(Entity<EyeComponent?> watcher, ICommonSession player)
+    private void ToggleViewer(EntityUid camera, EntityUid actor, bool subscribed)
     {
-        if (!Resolve(watcher, ref watcher.Comp))
+        if (camera == EntityUid.Invalid || !_playerManager.TryGetSessionByEntity(actor, out var session))
             return;
 
-        _eye.SetTarget(watcher, null);
-        _eye.SetDrawLight(watcher, true);
+        if (subscribed)
+            _viewSubscriber.AddViewSubscriber(camera, session);
+        else
+            _viewSubscriber.RemoveViewSubscriber(camera, session);
     }
 }

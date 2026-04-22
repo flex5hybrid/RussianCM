@@ -2,26 +2,50 @@ using Robust.Shared.GameStates;
 
 namespace Content.Shared._RuMC14.Ordnance;
 
+/// <summary>
+///     Server-owned state for the explosion simulator computer.
+/// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class RMCExplosionSimulatorComponent : Component
 {
+    /// <summary>
+    ///     Console analysis time. The UI counts this down live while the server tracks the authoritative end time.
+    /// </summary>
     public static readonly TimeSpan ProcessingDuration = TimeSpan.FromSeconds(120);
 
+    /// <summary>
+    ///     Current replay formation selected in the UI.
+    /// </summary>
     [DataField, AutoNetworkedField]
     public RMCExplosionSimulatorTarget SelectedTarget = RMCExplosionSimulatorTarget.Marines;
 
+    /// <summary>
+    ///     True while the console is processing the inserted reagent sample.
+    /// </summary>
     [DataField, AutoNetworkedField]
     public bool IsProcessing;
 
+    /// <summary>
+    ///     Absolute end time for the active analysis cycle.
+    /// </summary>
     [DataField, AutoNetworkedField]
     public TimeSpan ProcessingEnd;
 
+    /// <summary>
+    ///     Set once the last completed simulation can be replayed.
+    /// </summary>
     [DataField, AutoNetworkedField]
     public bool SimulationReady;
 
+    /// <summary>
+    ///     Net ID of the replay chamber camera so clients can subscribe to it when needed.
+    /// </summary>
     [DataField, AutoNetworkedField]
     public NetEntity? ChamberCamera;
 
+    /// <summary>
+    ///     Cached explosive estimate from the most recent simulation pass.
+    /// </summary>
     [DataField, AutoNetworkedField]
     public bool LastHasExplosion;
 
@@ -46,10 +70,24 @@ public sealed partial class RMCExplosionSimulatorComponent : Component
     [DataField, AutoNetworkedField]
     public float LastFireDuration;
 
-    // Server-only transient state
+    /// <summary>
+    ///     Server-only replay chamber map for the currently cached result.
+    /// </summary>
     public EntityUid ChamberMapEnt = EntityUid.Invalid;
+
+    /// <summary>
+    ///     Server-side entity for the current chamber camera.
+    /// </summary>
     public EntityUid ChamberCameraEnt = EntityUid.Invalid;
+
+    /// <summary>
+    ///     Actor who started the current analysis cycle and should receive completion feedback.
+    /// </summary>
     public EntityUid ProcessingActor = EntityUid.Invalid;
+
+    /// <summary>
+    ///     Whether a replay explosion is queued for the chamber camera position.
+    /// </summary>
     public bool PendingExplosion;
     public TimeSpan ExplosionAt;
     public float PendingTotalIntensity;
@@ -57,6 +95,9 @@ public sealed partial class RMCExplosionSimulatorComponent : Component
     public float PendingMaxIntensity;
 }
 
+/// <summary>
+///     Supported replay formations for the explosion simulator chamber.
+/// </summary>
 public enum RMCExplosionSimulatorTarget : byte
 {
     Marines = 0,
