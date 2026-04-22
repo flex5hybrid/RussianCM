@@ -39,7 +39,7 @@
 
             #Engineering
             CMChiefEngineer: [1, 1]
-            CMOrdnanceTech: [3, 3] # RuMC Ordnance Tech
+            CMOrdnanceTech: [2, 2] # RuMC Ordnance Tech
             CMMaintTech: [3, 3]
 
             #Medical
