@@ -1,0 +1,64 @@
+- type: entity
+  id: RMCDemolitionsCamera
+  name: simulation camera
+  save: false
+  components:
+  - type: Eye
+    drawFov: false
+    drawLight: false
+
+
+# - type: entity
+#   parent: CMBaseStructure
+#   id: RMCDemolitionsSimulator
+#   name: demolitions simulator
+#   description: This computer was designed to simulate the effects of demolitions in a safe virtual environment. Because the simulations take a lot of processing, the processors must cool down for 2 minutes between each simulation.
+#   components:
+#   - type: Transform
+#     anchored: true
+#   - type: Physics
+#     bodyType: Static
+#     canCollide: true
+#   - type: Sprite
+#     drawdepth: SmallObjects
+#     sprite: _RMC14/Structures/Machines/computer.rsi
+#     layers:
+#     - state: engineering_terminal
+#     - state: engineering_terminal
+#       map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+#       visible: false
+#   - type: Clickable
+#   - type: Corrodible
+#     isCorrodible: false
+#   - type: InteractionOutline
+#   - type: Damageable
+#     damageContainer: Inorganic
+#     damageModifierSet: Metallic
+#   - type: Destructible
+#     thresholds:
+#     - trigger:
+#         !type:DamageTrigger
+#         damage: 50
+#       behaviors:
+#       - !type:DoActsBehavior
+#         acts: [ "Destruction" ]
+#       - !type:PlaySoundBehavior
+#         sound:
+#           collection: MetalBreak
+#   - type: InteractedBlacklist
+#     blacklist:
+#       components:
+#       - Xeno
+#   - type: WallMount
+#     arc: 360
+#   - type: RMCDemolitionsSimulator
+#   - type: ActivatableUI
+#     key: enum.RMCDemolitionsSimulatorUiKey.Key
+#   - type: UserInterface
+#     interfaces:
+#       enum.RMCDemolitionsSimulatorUiKey.Key:
+#         type: RMCDemolitionsSimulatorBui
+#   - type: AccessReader
+#     access:
+#     - - OT
+#     - - CMAccessCE

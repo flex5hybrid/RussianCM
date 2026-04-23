@@ -100,6 +100,7 @@ public sealed class DropshipSystem : SharedDropshipSystem
         SubscribeLocalEvent<DropshipComponent, FTLStartedEvent>(OnFTLStarted);
         SubscribeLocalEvent<DropshipComponent, FTLCompletedEvent>(OnFTLCompleted);
         SubscribeLocalEvent<DropshipComponent, FTLUpdatedEvent>(OnFTLUpdated);
+        SubscribeLocalEvent<DropshipComponent, BeforeFTLStartedEvent>(OnBeforeFTLStarted);
 
         SubscribeLocalEvent<DropshipInFlyByComponent, FTLCompletedEvent>(OnInFlyByFTLCompleted);
 
@@ -238,6 +239,11 @@ public sealed class DropshipSystem : SharedDropshipSystem
         }
 
         RefreshUI();
+    }
+
+    private void OnBeforeFTLStarted(Entity<DropshipComponent> ent, ref BeforeFTLStartedEvent args)
+    {
+        RelayToMountedEntities(ent, args);
     }
 
     private void OnRefreshUI<T>(Entity<DropshipComponent> ent, ref T args)
@@ -522,7 +528,7 @@ public sealed class DropshipSystem : SharedDropshipSystem
         }
 
         if (offset)
-            destCoords = destCoords.Offset(new Vector2(-0.5f, -0.5f));
+            destCoords = destCoords.Offset(new Vector2(0.5f, 1.5f)); // RuMC change
 
         _shuttle.FTLToCoordinates(dropshipId.Value, shuttleComp, destCoords, rotation, startupTime: startupTime, hyperspaceTime: hyperspaceTime);
 

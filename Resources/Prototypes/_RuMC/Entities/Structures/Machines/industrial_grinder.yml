@@ -1,0 +1,19 @@
+# Промышленный гриндер для кабинета оружейного техника.
+# Перетирает материалы в реагенты. Вместимость увеличена по сравнению с кухонным вариантом.
+# TODO: заменить спрайт на CMSS13-вариант из science_machines.dmi (industrial_grinder / grinder_* states).
+- type: entity
+  parent: RMCKitchenReagentGrinder
+  id: RuMCIndustrialGrinder
+  name: industrial reagent grinder
+  description: A heavy-duty grinder that pulverizes materials into their component reagents. Output accumulates in the internal reservoir.
+  components:
+  - type: ReagentGrinder
+    storageMaxEntities: 20
+  - type: RMCPowerReceiver
+    idleLoad: 5
+    activeLoad: 200
+    channel: Equipment
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno

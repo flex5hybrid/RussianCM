@@ -1,0 +1,10 @@
+ent-CMIDCardProvostSectorMarshal = удостоверение маршала Провост
+  .desc = Выдаётся сотрудникам Офиса Провост.
+ent-CMIDCardHighCommand = удостоверение генерала
+  .desc = Высшее руководство высшего руководства. Выдаётся только самым преданным.
+ent-CMIDCardExecutiveOfficer = удостоверение исполнительного офицера
+ent-RMCIDCardCommandingOfficerPlus = удостоверение командующего офицера
+  .desc = Высшее руководство высшего руководства. Выдаётся только самым преданным.
+ent-CMIDCardCommandingOfficer = удостоверение командующего офицера
+ent-RMCIDCardPlatoonCommander = удостоверение командира взвода
+ent-CMIDCardStaffOfficer = удостоверение штабного офицера

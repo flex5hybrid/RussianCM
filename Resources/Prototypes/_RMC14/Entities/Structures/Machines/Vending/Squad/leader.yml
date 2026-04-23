@@ -340,18 +340,18 @@
   name: M4SPR marksman kit
   description: Contains a M4SPR rifle, a 4x telescopic scope, a suppressor, an extended barrel and 2 AP magazines.
   components:
-  - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,9,1
-  - type: StorageFill
-    contents:
-    - id: WeaponRifleM4SPR
-    - id: RMCAttachmentS84xTelescopicScope
-    - id: RMCAttachmentSuppressor
-    - id: RMCAttachmentExtendedBarrel
-    - id: CMMagazineRifleM4SPRAP
-      amount: 2
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,9,1
+    - type: StorageFill
+      contents:
+        - id: WeaponRifleM4SPR
+        - id: RMCAttachmentS84xTelescopicScope
+        - id: RMCAttachmentSuppressor
+        - id: RMCAttachmentExtendedBarrel
+        - id: CMMagazineRifleM4SPRAP
+          amount: 2
 
 - type: entity
   parent: RMCKitBase
@@ -359,18 +359,18 @@
   name: M54C rifle kit
   description: Contains a M54C rifle, an angled grip, a suppressor, an extended barrel and 2 AP magazines.
   components:
-  - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,9,1
-  - type: StorageFill
-    contents:
-    - id: RMCWeaponRifleM54C
-    - id: RMCAttachmentAngledGrip
-    - id: RMCAttachmentSuppressor
-    - id: RMCAttachmentExtendedBarrel
-    - id: CMMagazineRifleM54CAP
-      amount: 2
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,9,1
+    - type: StorageFill
+      contents:
+        - id: RMCWeaponRifleM54C
+        - id: RMCAttachmentAngledGrip
+        - id: RMCAttachmentSuppressor
+        - id: RMCAttachmentExtendedBarrel
+        - id: CMMagazineRifleM54CAP
+          amount: 2
 
 - type: entity
   parent: RMCKitBase
@@ -422,20 +422,20 @@
   description: A lightweight suit of carbon fiber body armor built for quick movement. Designed in a lovely forest green. Use it to toggle the built-in flashlight. This one has a separate pouch for a ziptie box.
   suffix: Zipties
   components:
-  - type: Storage
-    grid:
-    - 0,0,7,1
-  - type: StorageFill
-    contents:
-    - id: RMCBoxZiptie
-  - type: LimitedStorage
-    limits:
-    - popup: rmc-storage-limit-not-ziptie-box
-      blacklist:
-        tags:
-        - RMCBoxZipties
-      whitelist: null
-      count: 3
+    - type: Storage
+      grid:
+        - 0,0,7,1
+    - type: StorageFill
+      contents:
+        - id: RMCBoxZiptie
+    - type: LimitedStorage
+      limits:
+        - popup: rmc-storage-limit-not-ziptie-box
+          blacklist:
+            tags:
+              - RMCBoxZipties
+          whitelist: null
+          count: 3
 
 - type: entity
   parent: CMArmorM4
@@ -444,17 +444,17 @@
   description: A well tinkered and crafted hybrid of Smart-Gunner mesh and M3 pattern plates. Robust, yet nimble, with room for all your pouches. This one has a separate pouch for a ziptie box.
   suffix: Zipties
   components:
-  - type: Storage
-    grid:
-    - 0,0,9,1
-  - type: StorageFill
-    contents:
-    - id: RMCBoxZiptie
-  - type: LimitedStorage
-    limits:
-    - popup: rmc-storage-limit-not-ziptie-box
-      blacklist:
-        tags:
-        - RMCBoxZipties
-      whitelist: null
-      count: 4
+    - type: Storage
+      grid:
+        - 0,0,9,1
+    - type: StorageFill
+      contents:
+        - id: RMCBoxZiptie
+    - type: LimitedStorage
+      limits:
+        - popup: rmc-storage-limit-not-ziptie-box
+          blacklist:
+            tags:
+              - RMCBoxZipties
+          whitelist: null
+          count: 4

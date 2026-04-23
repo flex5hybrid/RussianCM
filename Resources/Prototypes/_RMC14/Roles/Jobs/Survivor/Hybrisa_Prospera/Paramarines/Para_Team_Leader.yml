@@ -7,6 +7,7 @@
   supervisors: rmc-job-supervisors-commander
   startingGear: RMCGearParaTeamLeader
   icon: RMCJobIconParaTeamLeader
+  playTimeTracker: RMCJobSurvivorMilitary
   spawnMenuRoleName: Royal Paramarine Team Leader (Survivor)
   special:
     - !type:AddComponentSpecial
@@ -15,6 +16,7 @@
           factions:
             - RoyalMarines
             - TSE
+        - type: RMCSurvivor
         - type: Skills
           preset: RMCSkillPresetParaLeader
         - type: RMCAllowSuitStorage
@@ -35,7 +37,6 @@
           background:
             sprite: /Textures/_RMC14/Interface/map_blips.rsi
             state: background_para
-
         - type: JobPrefix
           prefix: rmc-job-prefix-para-team-leader
   hidden: true
@@ -44,8 +45,11 @@
   parent: RMCGearParaBase
   id: RMCGearParaTeamLeader
   equipment:
+    id: RMCIDRoyalParamarinesTeamLeader
     head: RMCHeadParaBeretLead
+    ears: RMCHeadsetParaTeamLead
     outerClothing: RMCArmorParaVest
+    back: RMCSatchelLightpackFilledPara
 
 - type: entity
   parent: CMSpawnPointJobBase

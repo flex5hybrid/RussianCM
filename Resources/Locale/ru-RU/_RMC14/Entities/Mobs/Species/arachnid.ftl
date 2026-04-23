@@ -1,0 +1,1 @@
+ent-CMMobArachnid = Урист Маквеб

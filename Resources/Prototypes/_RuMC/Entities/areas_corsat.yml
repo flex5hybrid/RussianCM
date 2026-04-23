@@ -1,0 +1,610 @@
+# Старые зоны от RuMC. Они были заменены визовскими.
+
+# - type: entity
+#   parent: RMCAreaBase
+#   id: RMCAreaCorsat
+#   name: Corsat Orbital Research Station
+#   suffix: Corsat Area
+#   components:
+#   - type: Sprite
+#     sprite: _RMC14/Areas/areas_fiorina.rsi
+#     state: fiorina
+#   - type: Area
+#     buildSpecial: true
+#     CAS: true
+#     fulton: true
+#     mortarPlacement: true
+#     mortarFire: true
+#     lasing: true
+#     medevac: true
+#     OB: true
+#     supplyDrop: true
+#     minimapColor: '#6C6767D8'
+#     weatherEnabled: false
+
+# - type: entity
+#   parent: RMCAreaCorsat
+#   id: RMCAreaCorsatLz
+#   name: Corsat - LZ
+#   components:
+#   - type: Sprite
+#     state: lz
+#   - type: Area
+#     CAS: true
+#     fulton: true
+#     mortarPlacement: true
+#     mortarFire: true
+#     lasing: true
+#     medevac: true
+#     OB: true
+#     supplyDrop: true
+#     landingZone: true
+#     minimapColor: '#EBE5E5E3'
+#     weatherEnabled: true
+
+# - type: entity
+#   parent: RMCAreaShuttleDrop1
+#   id: RMCAreaShuttleDrop1Corsat
+#   name: Corsat Station - Dropship Alamo Landing Zone
+#   components:
+#   - type: Sprite
+#     sprite: _RMC14/Areas/areas_shiva.rsi
+#     state: shuttle
+#   - type: Area
+#     linkedLz: dropship_lz1
+#     minimapColor: '#EBE5E5E3'
+#     weatherEnabled: true
+
+# - type: entity
+#   parent: RMCAreaCorsatLz
+#   id: RMCAreaCorsatLzNearLzI
+#   name: Corsat - LZ1 Gamma Port
+#   components:
+#   - type: Area
+#     linkedLz: dropship_lz1
+#   - type: Sprite
+#     state: lz1
+
+# - type: entity
+#   parent: RMCAreaCorsatLzNearLzI
+#   id: RMCAreaCorsatStationArrivalsNearLzI
+#   name: Corsat - Station Arrivals Gamma
+#   components:
+#   - type: Area
+#   - type: Sprite
+#     state: police_line
+
+# - type: entity
+#   parent: RMCAreaCorsatLzNearLzI
+#   id: RMCAreaCorsatStationFoyer
+#   name: Corsat - Foyer
+#   components:
+#   - type: Area
+#   - type: Sprite
+#     state: station3
+# - type: entity
+#   parent: RMCAreaCorsatLz
+#   id: RMCAreaCorsatLzNearLzII
+#   name: Corsat - LZ2 Sigma Port
+#   components:
+#   - type: Area
+#     linkedLz: dropship_lz2
+#   - type: Sprite
+#     state: lz2
+
+# - type: entity
+#   parent: RMCAreaCorsatLzNearLzII
+#   id: RMCAreaCorsatStationArrivalsNearLzII
+#   name: Corsat - Station Arrivals Sigma
+#   components:
+#   - type: Area
+#   - type: Sprite
+#     state: police_line
+
+# - type: entity
+#   parent: RMCAreaShuttleDrop2
+#   id: RMCAreaShuttleDrop2Corsat
+#   name: Corsat Station - Dropship Normandy Landing Zone
+#   components:
+#   - type: Sprite
+#     sprite: _RMC14/Areas/areas_shiva.rsi
+#     state: shuttle2
+#   - type: Area
+#     linkedLz: dropship_lz2
+#     minimapColor: '#EBE5E5E3'
+#     weatherEnabled: true
+
+# - type: entity
+#   parent: RMCAreaCorsat
+#   id: RMCAreaCorsatMaintenance
+#   name: Corsat - Maintenance
+#   components:
+#   - type: Sprite
+#     state: maints
+#   - type: Area
+#     CAS: true
+#     fulton: true
+#     mortarPlacement: false
+#     mortarFire: true
+#     lasing: false
+#     medevac: false
+#     OB: true
+#     supplyDrop: true
+
+# - type: entity
+#   parent: RMCAreaCorsat
+#   id: RMCAreaCorsatStation
+#   name: Corsat - Station Interior
+#   components:
+#   - type: Sprite
+#     state: station0
+#   - type: Area
+#     CAS: true
+#     fulton: true
+#     mortarPlacement: true
+#     mortarFire: true
+#     lasing: true
+#     medevac: true
+#     OB: true
+#     supplyDrop: true
+#     weatherEnabled: true
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationCargoGamma
+#   name: Corsat - Cargo Gamma
+#   components:
+#   - type: Sprite
+#     sprite: _RMC14/Areas/areas_shiva.rsi
+#     state: hangars0
+
+# - type: entity
+#   parent: RMCAreaCorsatStationCargoGamma
+#   id: RMCAreaCorsatStationCargoSigma
+#   name: Corsat - Cargo Sigma
+#   components:
+#   - type: Sprite
+#     state: hangars1
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationEngineeringGamma
+#   name: Corsat - Engineering Gamma
+#   components:
+#   - type: Sprite
+#     sprite: _RMC14/Areas/areas_dam.rsi
+#     state: central_ss
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationEngineeringSigma
+#   name: Corsat - Engineering Sigma
+#   components:
+#   - type: Sprite
+#     sprite: _RMC14/Areas/areas_dam.rsi
+#     state: western_ss
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationRobotics
+#   name: Corsat - Robotics
+#   components:
+#   - type: Sprite
+#     state: station3
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationSigmaRemote
+#   name: Corsat - Sigma Remote
+#   components:
+#   - type: Sprite
+#     sprite: _RMC14/Areas/areas_dam.rsi
+#     state: filtrationb_ss
+
+# - type: entity
+#   parent: RMCAreaCorsatStationEngineeringGamma
+#   id: RMCAreaCorsatStationMainCore
+#   name: Corsat - Main Core
+#   components:
+#   - type: Sprite
+#     state: eastern_ss
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationSecurityGamma
+#   name: Corsat - Security Gamma
+#   components:
+#   - type: Sprite
+#     state: security_hub
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationSecuritySigma
+#   name: Corsat - Security Sigma
+#   components:
+#   - type: Sprite
+#     state: security_hub
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationResearchComplexSigma
+#   name: Corsat - Research Complex Sigma
+#   components:
+#   - type: Sprite
+#     state: tumor-fiberbush
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationCafe
+#   name: Corsat - Cafe
+#   components:
+#   - type: Sprite
+#     state: station3
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationSigmaBackupCore
+#   name: Corsat - Sigma Backup Core
+#   components:
+#   - type: Sprite
+#     state: power0
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationDataCenter
+#   name: Corsat - Data Center
+#   components:
+#   - type: Sprite
+#     state: wardens
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationSigmaLounge
+#   name: Corsat - Sigma Lounge
+#   components:
+#   - type: Sprite
+#     state: botany
+
+
+# - type: entity
+#   parent: RMCAreaCorsatStationSecurityGamma
+#   id: RMCAreaCorsatFlightControlCenter
+#   name: Corsat - Flight Control Center
+#   components:
+#   - type: Sprite
+#     state: station1
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatMonorailStationGamma
+#   name: Corsat - Monorail Station Gamma
+#   components:
+#   - type: Sprite
+#     state: station0
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatMedbay
+#   name: Corsat - Medbay
+#   components:
+#   - type: Sprite
+#     sprite: _RMC14/Areas/areas_strata.rsi
+#     state: outpost_med
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatBar
+#   name: Corsat - Bar
+#   components:
+#   - type: Sprite
+#     state: disco
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatFoodModule
+#   name: Corsat - Food Module
+#   components:
+#   - type: Sprite
+#     state: tumor0
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatCanteen
+#   name: Corsat - Canteen
+#   components:
+#   - type: Sprite
+#     state: tumor1
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatBaths
+#   name: Corsat - Baths
+#   components:
+#   - type: Sprite
+#     state: tumor2
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatResidentialModulesNorth
+#   name: Corsat - Residential Modules North
+#   components:
+#   - type: Sprite
+#     state: station0
+
+# - type: entity
+#   parent: RMCAreaCorsatResidentialModulesNorth
+#   id: RMCAreaCorsatResidentialModulesSouth
+#   name: Corsat - Residential Modules South
+#   components:
+#   - type: Sprite
+#     state: station1
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatSigmaResidentialModulesWest
+#   name: Corsat - Sigma Residential Modules West
+#   components:
+#   - type: Sprite
+#     state: station0
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatSigmaResidentialModulesEast
+#   name: Corsat - Sigma Residential Modules East
+#   components:
+#   - type: Sprite
+#     state: station1
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationAcademy
+#   name: Corsat - Corsat Academy
+#   components:
+#   - type: Sprite
+#     state: wardens
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationLounge
+#   name: Corsat - Lounge
+#   components:
+#   - type: Sprite
+#     state: botany
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationResearchQuarters
+#   name: Corsat - Research Quarters
+#   components:
+#   - type: Sprite
+#     state: tumor-fiberbush
+
+# - type: entity
+#   parent: RMCAreaCorsatStation
+#   id: RMCAreaCorsatStationAdministration
+#   name: Corsat - Administration
+#   components:
+#   - type: Sprite
+#     state: police_line
+
+# - type: entity
+#   parent: RMCAreaCorsatMonorailStationGamma
+#   id: RMCAreaCorsatMonorailStationSigma
+#   name: Corsat - Monorail Station Sigma
+#   components:
+#   - type: Sprite
+#     state: station0
+
+
+
+
+# - type: entity
+#   parent: RMCAreaCorsat
+#   id: RMCAreaCorsatStationExterior
+#   name: Corsat - Station Exterior
+#   components:
+#   - type: Sprite
+#     state: fiorina
+#   - type: Area
+#     CAS: false
+#     fulton: false
+#     mortarPlacement: true
+#     mortarFire: false
+#     lasing: true
+#     medevac: false
+#     OB: true
+#     supplyDrop: false
+#     weatherEnabled: false
+
+# - type: entity
+#   parent: RMCAreaCorsatStationExterior
+#   id: RMCAreaCorsatMonorailWest
+#   name: Corsat - Monorail West
+#   components:
+#   - type: Sprite
+#     state: station2
+
+# - type: entity
+#   parent: RMCAreaCorsatStationExterior
+#   id: RMCAreaCorsatMonorailEast
+#   name: Corsat - Monorail East
+#   components:
+#   - type: Sprite
+#     state: station1
+
+# - type: entity
+#   parent: RMCAreaCorsat
+#   id: RMCAreaCorsatBiodomeGamma
+#   name: Corsat - Biodome Gamma
+#   components:
+#   - type: Sprite
+#     state: oob
+#   - type: Area
+#     CAS: true
+#     fulton: true
+#     mortarPlacement: true
+#     mortarFire: true
+#     lasing: true
+#     medevac: true
+#     OB: true
+#     supplyDrop: true
+#     weatherEnabled: true
+
+# - type: entity
+#   parent: RMCAreaCorsatBiodomeGamma
+#   id: RMCAreaCorsatResearchComplexGamma
+#   name: Corsat - Research Complex Gamma
+#   components:
+#   - type: Sprite
+#     state: tumor-fiberbush
+
+# - type: entity
+#   parent: RMCAreaCorsatBiodomeGamma
+#   id: RMCAreaCorsatControlModuleGamma
+#   name: Corsat - Control Module Gamma
+#   components:
+#   - type: Sprite
+#     state: security_hub
+
+# - type: entity
+#   parent: RMCAreaCorsat
+#   id: RMCAreaCorsatBiodomeSigma
+#   name: Corsat - Biodome Sigma
+#   components:
+#   - type: Sprite
+#     state: oob
+#   - type: Area
+#     CAS: true
+#     fulton: true
+#     mortarPlacement: true
+#     mortarFire: true
+#     lasing: true
+#     medevac: true
+#     OB: true
+#     supplyDrop: true
+#     weatherEnabled: true
+
+# - type: entity
+#   parent: RMCAreaCorsatBiodomeSigma
+#   id: RMCAreaCorsatGunRangeSigma
+#   name: Corsat - Gun Range Sigma
+#   components:
+#   - type: Sprite
+#     state: wardens
+
+# - type: entity
+#   parent: RMCAreaCorsatBiodomeSigma
+#   id: RMCAreaCorsatBlastZoneSigma
+#   name: Corsat - Blast Zone Sigma
+#   components:
+#   - type: Sprite
+#     state: tumor3
+
+# - type: entity
+#   parent: RMCAreaCorsatBiodomeSigma
+#   id: RMCAreaCorsatScrapyardSigma
+#   name: Corsat - Scrapyard Sigma
+#   components:
+#   - type: Sprite
+#     state: tumor0-deep
+
+# - type: entity
+#   parent: RMCAreaCorsatBiodomeSigma
+#   id: RMCAreaCorsatControlModuleSigma
+#   name: Corsat - Control Module Sigma
+#   components:
+#   - type: Sprite
+#     state: security_hub
+
+# - type: entity
+#   parent: RMCAreaCorsat
+#   id: RMCAreaCorsatBiodomeTheta
+#   name: Corsat - Biodome Theta
+#   components:
+#   - type: Sprite
+#     state: oob
+#   - type: Area
+#     CAS: true
+#     fulton: true
+#     mortarPlacement: true
+#     mortarFire: true
+#     lasing: true
+#     medevac: true
+#     OB: true
+#     supplyDrop: true
+#     weatherEnabled: true
+
+# - type: entity
+#   parent: RMCAreaCorsatBiodomeTheta
+#   id: RMCAreaCorsatResearchComplexTheta
+#   name: Corsat - Research Complex Theta
+#   components:
+#   - type: Sprite
+#     state: tumor-fiberbush
+
+# - type: entity
+#   parent: RMCAreaCorsatBiodomeTheta
+#   id: RMCAreaCorsatControlModuleTheta
+#   name: Corsat - Control Module Theta
+#   components:
+#   - type: Sprite
+#     state: security_hub
+
+# - type: entity
+#   parent: RMCAreaCorsat
+#   id: RMCAreaCorsatBiodomeOmega1
+#   name: Corsat - Biodome Omega
+#   components:
+#   - type: Sprite
+#     state: oob
+#   - type: Area
+#     CAS: false
+#     fulton: false
+#     mortarPlacement: false
+#     mortarFire: false
+#     lasing: false
+#     medevac: false
+#     OB: true
+#     supplyDrop: false
+#     weatherEnabled: false
+
+# - type: entity
+#   parent: RMCAreaCorsatBiodomeOmega1
+#   id: RMCAreaCorsatOfficesOmega
+#   name: Corsat - Offices Omega
+#   components:
+#   - type: Sprite
+#     state: station4
+
+# - type: entity
+#   parent: RMCAreaCorsatBiodomeOmega1
+#   id: RMCAreaCorsatSecurityOmega
+#   name: Corsat - Security Omega
+#   components:
+#   - type: Sprite
+#     state: security_hub
+
+# - type: entity
+#   parent: RMCAreaCorsatBiodomeOmega1
+#   id: RMCAreaCorsatCheckpointOmega
+#   name: Corsat - Checkpoint Omega
+#   components:
+#   - type: Sprite
+#     state: wardens
+
+# - type: entity
+#   parent: RMCAreaCorsatBiodomeOmega1
+#   id: RMCAreaCorsatEastHallwaysOmega
+#   name: Corsat - East Hallways Omega
+#   components:
+#   - type: Sprite
+#     state: police_line
+
+# - type: entity
+#   parent: RMCAreaCorsatBiodomeOmega1
+#   id: RMCAreaCorsatLandingBayOmega
+#   name: Corsat - Landing Bay Omega
+#   components:
+#   - type: Sprite
+#     state: lz
+

@@ -1,0 +1,21 @@
+ent-WindoorAssembly-name = windoor assembly
+ent-WindoorAssembly-desc = It opens, it closes, and you can see through it!
+
+ent-WindoorAssemblySecure-name = secure windoor assembly
+ent-WindoorAssemblySecure-desc = It opens, it closes, and you can see through it! This one looks tough.
+
+ent-WindoorAssemblyClockwork-name = clockwork windoor assembly
+ent-WindoorAssemblyClockwork-desc = It opens, it closes, and you can see through it! This one looks tough.
+
+ent-WindoorAssemblyPlasma-name = plasma windoor assembly
+ent-WindoorAssemblyPlasma-desc = It opens, it closes, and you can see through it! This one looks purp-, no, pink. Wait...
+
+ent-WindoorAssemblySecurePlasma-name = secure plasma windoor assembly
+ent-WindoorAssemblySecurePlasma-desc = It opens, it closes, and you can see through it! This one looks strong and pin-, no, purple. Hold on...
+
+ent-WindoorAssemblyUranium-name = uranium windoor assembly
+ent-WindoorAssemblyUranium-desc = It opens, it closes, and you can see through it! This one looks sickly green...
+
+ent-WindoorAssemblySecureUranium-name = secure uranium windoor assembly
+ent-WindoorAssemblySecureUranium-desc = It opens, it closes, and you can see through it! This one looks strong and radioactive-lime-green!
+

@@ -1,0 +1,3 @@
+../../Resources/Locale/ru-RU/_RMC14/actions\Marines\marine_action_items.ftl:31 -> ent-CMActionToggleAttachable-desc = Toggle an attachable. If you're seeing this, someone forgot to set the description properly.
+../../Resources/Locale/ru-RU/_RMC14/actions\Marines\marine_action_items.ftl:34 -> ent-RMCActionTelephone-desc = Используется, чтобы позвонить на другой телефон.
+../../Resources/Locale/ru-RU/_RMC14/Entities\Structures\Dropships\weya_walls.ftl:181 -> ent-RMCWeyaWallStandard18 = -desc = Огромный кусок металла, используемый для разделения комнат.

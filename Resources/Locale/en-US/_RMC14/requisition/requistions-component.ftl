@@ -13,7 +13,7 @@ requisition-paper-print-content = - {$count} {$item}
 
 # Supply Drop Console
 ui-supply-drop-consle-name = Supply Drop Console
-ui-supply-drop-console-name-bolded = [bold]SUPPLY DROP[/bold] 
+ui-supply-drop-console-name-bolded = [bold]SUPPLY DROP[/bold]
 ui-supply-drop-console-longitude = Longitude:
 ui-supply-drop-console-latitude = Latitude:
 ui-supply-drop-pad-status = [bold]Supply Pad Status[/bold]

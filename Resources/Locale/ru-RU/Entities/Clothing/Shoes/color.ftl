@@ -1,0 +1,27 @@
+ent-ClothingShoesColorBlack-name = black shoes
+ent-ClothingShoesColorBlack-desc = Stylish black shoes.
+
+ent-ClothingShoesColorWhite-name = white shoes
+ent-ClothingShoesColorWhite-desc = Don't take them off at your office Christmas party.
+
+ent-ClothingShoesColorBlue-name = blue shoes
+ent-ClothingShoesColorBlue-desc = Stylish blue shoes.
+
+ent-ClothingShoesColorBrown-name = brown shoes
+ent-ClothingShoesColorBrown-desc = A pair of brown shoes.
+
+ent-ClothingShoesColorGreen-name = green shoes
+ent-ClothingShoesColorGreen-desc = Stylish green shoes.
+
+ent-ClothingShoesColorOrange-name = orange shoes
+ent-ClothingShoesColorOrange-desc = Stylish orange shoes.
+
+ent-ClothingShoesColorRed-name = red shoes
+ent-ClothingShoesColorRed-desc = Stylish red shoes.
+
+ent-ClothingShoesColorYellow-name = yellow shoes
+ent-ClothingShoesColorYellow-desc = Stylish yellow shoes.
+
+ent-ClothingShoesColorPurple-name = purple shoes
+ent-ClothingShoesColorPurple-desc = Stylish purple shoes.
+

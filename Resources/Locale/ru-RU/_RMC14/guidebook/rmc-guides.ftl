@@ -1,0 +1,25 @@
+﻿
+rmc-guide-entry-rmc = Руководство RMC14
+rmc-guide-entry-rules = Правила сервера
+rmc-guide-entry-rules-ban-types = Типы и сроки банов
+rmc-guide-entry-rules-zero-tolerance = Нулевая терпимость
+rmc-guide-entry-rules-language = Язык сервера
+rmc-guide-entry-rules-multikey = Мультиаккаунты
+rmc-guide-entry-rules-escalation = Эскалация боя
+rmc-guide-entry-rules-metaknowledge = Использование знаний персонажа
+rmc-guide-entry-rules-kindness = Правила вежливости
+rmc-guide-entry-rules-mutinies = Мятежи и бунты
+rmc-guide-entry-rules-command-roles = Командные роли и дисконнекты
+rmc-guide-entry-rules-marine-law = Устав морской пехоты
+rmc-guide-entry-rules-higher-standards = Повышенные требования к командованию и ВОХР
+rmc-guide-entry-rules-general-roleplay-standards = Общие стандарты ролевой игры
+rmc-guide-entry-rules-marine-character-names = Имена персонажей морпехов
+rmc-guide-entry-rules-marine-roleplay-standards = Стандарты отыгрыша морпехов
+rmc-guide-entry-rules-command-roleplay = Отыгрыш командного состава
+rmc-guide-entry-rules-xeno-roleplay = Отыгрыш ксеносов
+rmc-guide-entry-rules-survivor-roleplay = Отыгрыш выживших
+rmc-guide-entry-rules-hostile-faction-roleplay = Отыгрыш враждебных фракций
+rmc-guide-entry-rules-command-chain = Цепь командования
+rmc-guide-entry-rules-core = Основные правила
+rmc-guide-entry-rules-command = Правила для командования
+rmc-guide-entry-rules-roleplay-standards = Стандарты ролевой игры

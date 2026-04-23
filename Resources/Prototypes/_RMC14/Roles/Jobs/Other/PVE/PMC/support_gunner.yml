@@ -24,7 +24,6 @@
       preset: RMCSkillPresetPVESGO
     - type: JobPrefix
       prefix: rmc-job-prefix-pmc-gunner
-
     - type: DemoSpecWhitelist
     - type: GrenadeSpecWhitelist
     - type: ScoutWhitelist

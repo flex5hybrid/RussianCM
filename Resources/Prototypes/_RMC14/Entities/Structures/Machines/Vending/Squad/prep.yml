@@ -453,77 +453,77 @@
   name: ColMarTech automated utilities squad vendor
   description: An automated supply rack hooked up to a small storage of various utilities and tools. Can be accessed by any Marine Rifleman.
   components:
-  - type: AccessReader
-    access:
-    - [ "CMAccessMarinePrep" ]
-    - [ "CMAccessRequisitions" ]
-  - type: Sprite
-    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/attachments.rsi
-  - type: CMAutomatedVendor
-    access:
-    - "CMAccessMarinePrep"
-    - "CMAccessRequisitions"
-    hackable: true
-    sections:
-    - name: Food
-      entries:
-      - id: CMMRE
-        amount: 5
-      - id: RMCBoxMRE
-        amount: 1
-    - name: Tools
-      entries:
-      - id: CMEntrenchingTool
-        amount: 2
-      - id: CMScrewdriver
-        amount: 5
-      - id: CMWirecutter
-        amount: 5
-      - id: CMCrowbar
-        amount: 5
-      - id: CMWrench
-        amount: 5
-      - id: CMMultitool
-        amount: 1
-      - id: CMWelderSmall
-        amount: 1
-    - name: Flare and light
-      entries:
-      - id: RMCFlashlight # Combat Flashlight
-        amount: 5
-      - id: RMCBoxFlashlights
-        amount: 1
-      - id: RMCBoxPackFlare
-        amount: 1
-      - id: CMPackFlare
-        amount: 10
-      - id: RMCPackFlareCAS
-        amount: 1
-    - name: Miscellaneous
-      entries:
-      - id: RMCEngineerKit
-        amount: 1
-      #- id: CMMap
-      #  amount: 5
-      - id: CMFireExtinguisher
-        amount: 5
-      - id: CMFireExtinguisherPortable
-        amount: 1
-      - id: CMRollerBedSpawnFolded
-        amount: 1
-      - id: RMCScabbardMacheteFilled
-        name: machete scabbard (Full)
-        amount: 5
-      - id: RMCBinoculars
-        amount: 1
-      #- id: CMFoldingBarricadesMB6x3
-      #  amount: 2
-      #- id: CMSparePDTLBattleBuddyKit
-      #  amount: 3
-      - id: RMCPowerCellCrap
-        amount: 2
-      - id: RMCMagazineSMGNailgun
-        amount: 2
+    - type: AccessReader
+      access:
+        - ["CMAccessMarinePrep"]
+        - ["CMAccessRequisitions"]
+    - type: Sprite
+      sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/attachments.rsi
+    - type: CMAutomatedVendor
+      access:
+        - "CMAccessMarinePrep"
+        - "CMAccessRequisitions"
+      hackable: true
+      sections:
+        - name: Food
+          entries:
+            - id: CMMRE
+              amount: 5
+            - id: RMCBoxMRE
+              amount: 1
+        - name: Tools
+          entries:
+            - id: CMEntrenchingTool
+              amount: 2
+            - id: CMScrewdriver
+              amount: 5
+            - id: CMWirecutter
+              amount: 5
+            - id: CMCrowbar
+              amount: 5
+            - id: CMWrench
+              amount: 5
+            - id: CMMultitool
+              amount: 1
+            - id: CMWelderSmall
+              amount: 1
+        - name: Flare and light
+          entries:
+            - id: RMCFlashlight # Combat Flashlight
+              amount: 5
+            - id: RMCBoxFlashlights
+              amount: 1
+            - id: RMCBoxPackFlare
+              amount: 1
+            - id: CMPackFlare
+              amount: 10
+            - id: RMCPackFlareCAS
+              amount: 1
+        - name: Miscellaneous
+          entries:
+            - id: RMCEngineerKit
+              amount: 1
+            #- id: CMMap
+            #  amount: 5
+            - id: CMFireExtinguisher
+              amount: 5
+            - id: CMFireExtinguisherPortable
+              amount: 1
+            - id: CMRollerBedSpawnFolded
+              amount: 1
+            - id: RMCScabbardMacheteFilled
+              name: подсумок мачете (полный)
+              amount: 5
+            - id: RMCBinoculars
+              amount: 1
+            #- id: CMFoldingBarricadesMB6x3
+            #  amount: 2
+            #- id: CMSparePDTLBattleBuddyKit
+            #  amount: 3
+            - id: RMCPowerCellCrap
+              amount: 2
+            - id: RMCMagazineSMGNailgun
+              amount: 2
 
 - type: entity
   parent: ColMarTechBase

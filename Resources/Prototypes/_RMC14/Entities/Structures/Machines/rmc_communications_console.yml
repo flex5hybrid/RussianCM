@@ -250,6 +250,7 @@
   components:
   - type: EvacuationComputer
     earlyCrashChance: 0
+  - type: ActivatableUIRequiresAccess
   - type: AccessReader
     access: [ [ "RMCAccessWeYa" ] ]
 
@@ -270,6 +271,7 @@
       enum.LifeboatComputerUi.Key:
         type: LifeboatComputerBui
   - type: LifeboatComputer
+  - type: ActivatableUIRequiresAccess
   - type: AccessReader
     access: [ [ "AU14AccessGovforPilot" ], [ "AU14AccessGovforCommand" ] ] # replace Command with Senior access
   - type: ActivatableUIBlacklist

@@ -1,0 +1,2 @@
+ent-RMCPerspectiveDarkness = темнота
+

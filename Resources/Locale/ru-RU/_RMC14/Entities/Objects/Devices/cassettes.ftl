@@ -1,0 +1,14 @@
+ent-RMCCassetteTapePigeonBeans = кассета «PigeonBeans»
+ent-RMCCassetteTapeQwertyquerty = кассета «Qwertyquerty»
+  .desc = Пластиковая кассета.
+ent-RMCCassetteTapeBolgarich = кассета «Bolgarich»
+ent-RMCCassetteTapeRedQwesta = кассета «Qwesta»
+ent-RMCCassetteTapeGoodShowOldChap = кассета «GoodShowOldChap»
+ent-RMCCassetteTapeNighty = кассета «Nighty»
+ent-RMCCassetteTapeMendax = кассета «Mendax»
+ent-RMCCassetteTapeWigWoo1 = кассета «WigWoo1»
+ent-RMCCassetteTapeCustom = пользовательская кассета
+ent-RMCCassetteTapeBase = кассета
+  .desc = Пластиковая кассета.
+ent-RMCCassettePlayer = кассетный плеер
+  .desc = Кассетный плеер, впервые появившийся на рынке более 100 лет назад. Безумие, как они до сих пор не вышли из моды.

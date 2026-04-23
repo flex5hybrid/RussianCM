@@ -1,0 +1,11 @@
+﻿cm-pill-contains = Таблетка содержит:
+cm-pill-contains-none = Таблетка содержит: Нет реагентов.
+cm-pill-contents-unknown = Вы не знаете, что внутри.
+cm-pill-contents-none = {""}
+cm-pill-contents-bicaridine = Таблетка бикаридина. Лечит механический урон.
+cm-pill-contents-dexalin = Таблетка дексалина. Используется для лечения кислородного голодания.
+cm-pill-contents-dylovene = Таблетка анти-токсина. Нейтрализует большинство распространнёных токсинов, как и лечит урон от ядов.
+cm-pill-contents-inaprovaline = Таблетка инапровалина. Используется для стабилизации пациентов.
+cm-pill-contents-kelotane = Таблетка келотана. Используется для лечения ожогов.
+cm-pill-contents-tricordrazine = Таблетка трикордразина. Слабое лекарство общего назначения для лечения повреждений.
+rmc-pill-contents-meralyne-bicaridine = Таблетка мералина-бикаридина. Быстро лечит механический урон.

@@ -1,0 +1,2 @@
+ent-WeaponWandBase-name = item
+

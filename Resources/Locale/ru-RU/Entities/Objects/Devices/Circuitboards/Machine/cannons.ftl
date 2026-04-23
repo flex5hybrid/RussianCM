@@ -1,0 +1,15 @@
+ent-ShuttleGunSvalinnMachineGunCircuitboard-name = LSE-400c "Svalinn machine gun" machine board
+ent-ShuttleGunSvalinnMachineGunCircuitboard-desc = A machine printed circuit board for an LSE-400c "Svalinn machine gun".
+
+ent-ShuttleGunPerforatorCircuitboard-name = LSE-1200c "Perforator" machine board
+ent-ShuttleGunPerforatorCircuitboard-desc = A machine printed circuit board for an LSE-1200c "Perforator".
+
+ent-ShuttleGunFriendshipCircuitboard-name = EXP-320g "Friendship" machine board
+ent-ShuttleGunFriendshipCircuitboard-desc = A machine printed circuit board for an EXP-320g "Friendship".
+
+ent-ShuttleGunDusterCircuitboard-name = EXP-2100g "Duster" machine board
+ent-ShuttleGunDusterCircuitboard-desc = A machine printed circuit board for an EXP-2100g "Duster".
+
+ent-ShuttleGunKineticCircuitboard-name = PTK-800 "Matter Dematerializer" machine board
+ent-ShuttleGunKineticCircuitboard-desc = A machine printed circuit board for an PTK-800 "Matter Dematerializer".
+

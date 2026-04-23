@@ -106,7 +106,7 @@
   components:
   - type: OverwatchConsole
     canOrbitalBombardment: false
-    group: Gamma Troop
+    group: Whiskey Troop
 
 - type: entity
   parent: RMCOverwatchConsoleRCM

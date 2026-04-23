@@ -1,0 +1,69 @@
+ent-ClothingBackpackDuffelSurgeryFilled-name = surgical duffel bag
+ent-ClothingBackpackDuffelSurgeryFilled-desc = A large duffel bag for holding extra medical supplies - this one seems to be designed for holding surgical tools.
+
+ent-ClothingBackpackDuffelSyndicateFilledMedical-name = syndicate surgical duffel bag
+ent-ClothingBackpackDuffelSyndicateFilledMedical-desc = A large duffel bag containing a full suite of surgical tools.
+
+ent-ClothingBackpackDuffelSyndicateFilledShotgun-name = Bulldog bundle
+ent-ClothingBackpackDuffelSyndicateFilledShotgun-desc = Lean and mean: Contains the popular Bulldog Shotgun, a 12g slug drum, and four 12g buckshot drums.
+
+ent-ClothingBackpackDuffelSyndicateFilledSMG-name = C-20r bundle
+ent-ClothingBackpackDuffelSyndicateFilledSMG-desc = Old faithful: The classic C-20r Submachine Gun, bundled with three magazines.
+
+ent-ClothingBackpackDuffelSyndicateFilledRifle-name = Estoc DMR bundle
+ent-ClothingBackpackDuffelSyndicateFilledRifle-desc = For medium-range sharpshooting, the Estoc DMR. Bundled with three magazines.
+
+ent-ClothingBackpackDuffelSyndicateFilledRevolver-name = Python bundle
+ent-ClothingBackpackDuffelSyndicateFilledRevolver-desc = Go loud and proud with a fully loaded Magnum Python, bundled with two speed loaders.
+
+ent-ClothingBackpackDuffelSyndicateFilledLMG-name = L6 Saw bundle
+ent-ClothingBackpackDuffelSyndicateFilledLMG-desc = More dakka: The iconic L6 lightmachinegun, bundled with 2 box magazines.
+
+ent-ClothingBackpackDuffelSyndicateFilledGrenadeLauncher-name = China-Lake bundle
+ent-ClothingBackpackDuffelSyndicateFilledGrenadeLauncher-desc = An old China-Lake grenade launcher bundled with 11 rounds of various destruction capability.
+
+ent-ClothingBackpackDuffelSyndicateFilledCarbine-name = M-90gl bundle
+ent-ClothingBackpackDuffelSyndicateFilledCarbine-desc = A versatile battle rifle with an attached grenade launcher, bundled with 3 magazines and 6 grenades of various capabilities.
+
+ent-ClothingBackpackDuffelSyndicateAmmoFilled-name = ammo bundle
+ent-ClothingBackpackDuffelSyndicateAmmoFilled-desc = Reloading! Contains 4 magazines for the C-20r, 5 drums for the Bulldog, and 2 ammo boxes for the L6 SAW.
+
+ent-ClothingBackpackDuffelSyndicateCarpSuit-name = carp suit duffel bag
+ent-ClothingBackpackDuffelSyndicateCarpSuit-desc = Contains a carp suit and some friends to play with.
+
+ent-ClothingBackpackDuffelSyndicatePyjamaBundle-name = syndicate pyjama duffel bag
+ent-ClothingBackpackDuffelSyndicatePyjamaBundle-desc = Contains 3 pairs of syndicate pyjamas and 4 plushies for the ultimate sleepover.
+
+ent-ClothingBackpackDuffelSyndicateC4tBundle-name = syndicate C-4 bundle
+ent-ClothingBackpackDuffelSyndicateC4tBundle-desc = Contains a lot of C-4 charges.
+
+ent-ClothingBackpackDuffelSyndicateEVABundle-name = syndicate EVA bundle
+ent-ClothingBackpackDuffelSyndicateEVABundle-desc = Contains the Syndicate approved EVA suit.
+
+ent-ClothingBackpackDuffelSyndicateHardsuitBundle-name = syndicate hardsuit bundle
+ent-ClothingBackpackDuffelSyndicateHardsuitBundle-desc = Contains the Syndicate's signature blood red hardsuit.
+
+ent-ClothingBackpackDuffelSyndicateEliteHardsuitBundle-name = syndicate elite hardsuit bundle
+ent-ClothingBackpackDuffelSyndicateEliteHardsuitBundle-desc = Contains the Syndicate's elite hardsuit, which comes with some more stuff in it.
+
+ent-ClothingBackpackDuffelSyndicateHardsuitExtrasBundle-name = syndicate hardsuit extras bundle
+ent-ClothingBackpackDuffelSyndicateHardsuitExtrasBundle-desc = Contains stuff that you will absolutely want to have when purchasing a hardsuit.
+
+ent-ClothingBackpackDuffelZombieBundle-name = syndicate zombie bundle
+ent-ClothingBackpackDuffelZombieBundle-desc = An all-in-one kit for unleashing the undead upon a station.
+
+ent-ClothingBackpackDuffelSyndicateMedicalBundleFilled-name = medical bundle
+ent-ClothingBackpackDuffelSyndicateMedicalBundleFilled-desc = All you need to get your comrades back in the fight.
+
+ent-ClothingBackpackDuffelSyndicateDecoyKitFilled-name = decoy bundle
+ent-ClothingBackpackDuffelSyndicateDecoyKitFilled-desc = Contains distractions, both auditory and visual. Smell coming soon.
+
+ent-ClothingBackpackDuffelSyndicateFilledStarterKit-name = basic operative bundle
+ent-ClothingBackpackDuffelSyndicateFilledStarterKit-desc = Contains a weapon, medical supplies, breaching tools, spare ammo, and some simple utilities.
+
+ent-ClothingBackpackDuffelSyndicateCostumeClown-name = clown duffel bag
+ent-ClothingBackpackDuffelSyndicateCostumeClown-desc = A large duffel bag for holding extra honk goods.
+
+ent-ClothingBackpackChameleonFill-name = backpack
+ent-ClothingBackpackChameleonFill-desc = You wear this on your back and put items into it.
+

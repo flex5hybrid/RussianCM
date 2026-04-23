@@ -1,0 +1,38 @@
+ent-SpawnMobBee-name = Bee Spawner
+
+ent-SpawnMobButterfly-name = Butterfly Spawner
+
+ent-SpawnMobCatGeneric-name = Generic Cat Spawner
+
+ent-SpawnMobCatKitten-name = Kitten Spawner
+
+ent-SpawnMobCatSpace-name = Space Cat Spawner
+
+ent-SpawnMobCockroach-name = Cockroach Spawner
+
+ent-SpawnMobCow-name = Cow Spawner
+
+ent-SpawnMobCrab-name = Crab Spawner
+
+ent-SpawnMobFrog-name = Frog Spawner
+
+ent-SpawnMobGoat-name = Goat Spawner
+
+ent-SpawnMobGorilla-name = Gorilla Spawner
+
+ent-SpawnMobLizard-name = Lizard Spawner
+
+ent-SpawnMobMonkey-name = Monkey Spawner
+
+ent-SpawnMobMouse-name = Mouse Spawner
+
+ent-SpawnMobParrot-name = Parrot Spawner
+
+ent-SpawnMobPenguin-name = Penguin Spawner
+
+ent-SpawnMobReindeerBuck-name = Reindeer Buck Spawner
+
+ent-SpawnMobReindeerDoe-name = Reindeer Doe Spawner
+
+ent-SpawnMobSlug-name = Slug Spawner
+

@@ -1,0 +1,17 @@
+ent-Grille-name = grille
+ent-Grille-desc = A flimsy framework of iron rods.
+
+ent-ClockworkGrille-name = clockwork grille
+ent-ClockworkGrille-desc = A flimsy framework of iron rods assembled in traditional Ratvarian fashion.
+
+ent-GrilleBroken-name = grille
+ent-GrilleBroken-desc = A flimsy framework of iron rods. It has seen better days.
+
+ent-ClockworkGrilleBroken-name = clockwork grille
+ent-ClockworkGrilleBroken-desc = A flimsy framework of iron rods assembled in traditional Ratvarian fashion. It has seen better days.
+
+ent-GrilleDiagonal-name = diagonal grille
+
+ent-ClockworkGrilleDiagonal-name = diagonal clockwork grille
+ent-ClockworkGrilleDiagonal-desc = A flimsy framework of iron rods assembled in traditional Ratvarian fashion.
+

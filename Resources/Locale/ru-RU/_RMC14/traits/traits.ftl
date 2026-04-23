@@ -1,0 +1,11 @@
+rmc-trait-category-inconveniences = Особенности
+rmc-trait-russian-accent = Русский акцент
+  .desc = Вы родом из Российского сектора
+rmc-trait-french-accent = Французский акцент
+  .desc = Вы родом из Французкого сектора
+rmc-trait-mobster-accent = Акцент гангстера
+  .desc = Ньехх, Хто, Дазабей. Ньехх, хлеп, видишь?
+rmc-trait-spanish-accent = Испанский акцент
+  .desc = Вы родом из Испанского Сектора
+rmc-trait-scottish-accent = Шотландский акцент
+  .desc = Для тех, кто происходит из горного клана.

@@ -1,0 +1,13 @@
+ent-XenoOppressorTailHook = хвостовой крюк
+ent-XenoAcidBallProjectile = кислотный шар
+  .desc = Небольшой пульсирующий шар газа.
+ent-CMGuidebookXenoBombardNeurotoxinProjectile = Нейротоксичный сгусток
+ent-XenoBombardNeurotoxinProjectile = сгусток нейротоксичного газа
+ent-CMGuidebookXenoBombardAcidProjectile = Кислотный сгусток
+ent-XenoBombardAcidProjectile = сгусток кислотного газа
+ent-XenoBoneChipsProjectile = осколки кости
+ent-XenoScatteredSpitProjectile = разбросанный плевок
+ent-XenoQueenNeuroSpitProjectile = нейротоксичный плевок
+ent-XenoSlowingSpitProjectile = замедляющий плевок
+ent-XenoSpitProjectile = плевок
+ent-XenoBaseProjectile = снаряд

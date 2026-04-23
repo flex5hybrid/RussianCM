@@ -1,0 +1,27 @@
+ent-BaseGenerator-name = generator
+ent-BaseGenerator-desc = A high efficiency thermoelectric generator.
+
+ent-BaseGeneratorWallmount-name = wallmount generator
+ent-BaseGeneratorWallmount-desc = A high efficiency thermoelectric generator stuffed in a wall cabinet.
+
+ent-BaseGeneratorWallmountFrame-name = wallmount generator frame
+ent-BaseGeneratorWallmountFrame-desc = A construction frame for a wallmount generator.
+
+ent-GeneratorWallmountAPU-name = shuttle APU
+ent-GeneratorWallmountAPU-desc = An auxiliary power unit for a shuttle - 6kW.
+
+ent-GeneratorRTG-name = RTG
+ent-GeneratorRTG-desc = A Radioisotope Thermoelectric Generator for long term power.
+
+ent-GeneratorRTGDamaged-name = damaged RTG
+ent-GeneratorRTGDamaged-desc = A Radioisotope Thermoelectric Generator for long term power. This one has damaged shielding.
+
+ent-GeneratorBasic-name = generator
+ent-GeneratorBasic-desc = A high efficiency thermoelectric generator.
+
+ent-GeneratorBasic15kW-name = generator
+ent-GeneratorBasic15kW-desc = A high efficiency thermoelectric generator.
+
+ent-GeneratorWallmountBasic-name = wallmount generator
+ent-GeneratorWallmountBasic-desc = A high efficiency thermoelectric generator stuffed in a wall cabinet.
+

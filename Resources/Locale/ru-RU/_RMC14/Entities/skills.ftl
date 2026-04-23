@@ -1,0 +1,48 @@
+ent-RMCSkillVehicles = Техника
+
+ent-RMCSkillSurgery = Хирургия
+
+ent-RMCSkillSpecialistWeapons = Специализированное оружие
+
+ent-RMCSkillSmartGun = Умное оружие
+
+ent-RMCSkillResearch = Исследования
+
+ent-RMCSkillPowerLoader = Погрузчик
+
+ent-RMCSkillPolice = Полиция
+
+ent-RMCSkillPilot = Пилот
+
+ent-RMCSkillOverwatch = Управление
+
+ent-RMCSkillNavigations = Навигация
+
+ent-RMCSkillMeleeWeapons = Оружие ближнего боя
+
+ent-RMCSkillMedical = Медицина
+
+ent-RMCSkillLeadership = Лидерство
+
+ent-RMCSkillJtac = Целеуказание
+
+ent-RMCSkillIntel = Разведка
+
+ent-RMCSkillFireman = Перенос на плече
+
+ent-RMCSkillFirearms = Владение оружием
+
+ent-RMCSkillExecution = Казнь
+
+ent-RMCSkillEngineer = Инженер
+
+ent-RMCSkillEndurance = Выносливость
+
+ent-RMCSkillDomestics = Быт
+
+ent-RMCSkillCqc = Рукопашный бой
+
+ent-RMCSkillConstruction = Строительство
+
+ent-RMCSkillAntagonist = Антагонист
+

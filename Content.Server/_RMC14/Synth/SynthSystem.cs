@@ -1,4 +1,5 @@
 using Content.Server.Body.Systems;
+using Content.Server.Explosion.EntitySystems;
 using Content.Shared._RMC14.Humanoid;
 using Content.Shared._RMC14.Medical.HUD.Components;
 using Content.Shared._RMC14.Synth;
@@ -13,9 +14,18 @@ namespace Content.Server._RMC14.Synth;
 
 public sealed class SynthSystem : SharedSynthSystem
 {
+    private const string GrenadeTag = "Grenade";
+
     [Dependency] private readonly DamageableSystem _damageable = default!;
     [Dependency] private readonly BloodstreamSystem _bloodstream = default!;
     [Dependency] private readonly SharedBodySystem _body = default!;
+    [Dependency] private readonly TagSystem _tags = default!;
+
+    public override void Initialize()
+    {
+        base.Initialize();
+        SubscribeLocalEvent<TagComponent, UseInHandEvent>(OnTaggedUseInHand, before: [typeof(TriggerSystem)]);
+    }
 
     protected override void MakeSynth(Entity<SynthComponent> ent)
     {
@@ -78,5 +88,23 @@ public sealed class SynthSystem : SharedSynthSystem
             var newBrain = SpawnNextToOrDrop(ent.Comp.NewBrain, ent);
             _body.AddOrganToFirstValidSlot(part.Id, newBrain);
         }
+    }
+
+    private void OnTaggedUseInHand(Entity<TagComponent> ent, ref UseInHandEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (!HasComp<SynthComponent>(args.User))
+            return;
+
+        if (!_tags.HasTag(ent.Owner, GrenadeTag))
+            return;
+
+        if (!HasComp<OnUseTimerTriggerComponent>(ent.Owner))
+            return;
+
+        DoSynthUnableToUsePopup(args.User, ent.Owner);
+        args.Handled = true;
     }
 }

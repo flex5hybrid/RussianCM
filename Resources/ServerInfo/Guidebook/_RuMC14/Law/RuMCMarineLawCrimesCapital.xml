@@ -1,0 +1,89 @@
+﻿<Document>
+  # Особо тяжкие преступления
+  - Эти преступления отличаются особой жестокостью.
+  - Все эти преступления могут быть наказаны [bold]постоянным заключением и понижением в должности, либо казнью и лишением удостоверения личности[/bold].
+  <Table Columns="2">
+    <ColorBox>
+      <Box>
+        Преступление
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Описание
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Побег из места заключения
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Совершить побег, оказать содействие в побеге, попытаться сбежать или умышленно и сознательно выйти из камеры.
+      </Box>
+    </ColorBox>
+
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Покушение на убийство
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Попытка убить человека, но не удалось это сделать. Если улики показывают, что арестованный явно пытался убить кого-то со злым умыслом, но не смог этого сделать.
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Убийство/несанкционированная казнь
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Умышленное убийство. Под эту статью также попадает убийство синтетиков. Обвинение применяется, даже если жертва впоследствии реанимирована. Также под эту статью подпадает казнь совершенная вразрез с процедурой казни.
+        \nЭто также включает в себя отказ или предотвращение оживления любого, кто не был казнен в соответствии с процедурой казни.
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Подстрекательство
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Действия или бездействие, направленные на свержение или узурпацию законной командной структуры.
+        Создание масштабной угрозы кораблю без ведома и одобрения [color=#008000][bold]Командира[/bold][/color] подпадает под подстрекательство.
+        [color=#90EE90][bold]Дежурный офицер[/bold][/color] не может одобрить действия, подпадающие под это условие.
+        Провозглашение верности CLF или действия от его имени являются актом мятежа против UN.
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Дезертирство
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Отказ от выполнения обязанностей, необходимых на посту, или самовольное оставление поста без намерения вернуться. (Отступление с планеты при прорыве ПОБ не является Дезертирством, отказ вернуться по приказу - является).
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Преступления против человечности
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Совершать действия, нарушающие права человека или являющиеся чудовищными актами против человечности. Примерами могут служить пытки, каннибализм и принудительное заражение любого рода.
+      </Box>
+    </ColorBox>
+
+  </Table>
+</Document>

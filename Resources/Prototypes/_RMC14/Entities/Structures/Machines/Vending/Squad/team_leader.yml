@@ -264,13 +264,13 @@
   name: essential fireteam leader utilities
   description: Contains a laser designator, and two packs of signal flares.
   components:
-  - type: Sprite
-    sprite: _RMC14/Objects/Devices/binoculars.rsi
-    layers:
-    - state: rangefinder
-    - state: laser_cas
-  - type: CMVendorBundle
-    bundle:
-    - RMCPackFlareCAS
-    - RMCPackFlareCAS
-    - RMCLaserDesignator
+    - type: Sprite
+      sprite: _RMC14/Objects/Devices/binoculars.rsi
+      layers:
+        - state: rangefinder
+        - state: laser_cas
+    - type: CMVendorBundle
+      bundle:
+        - RMCPackFlareCAS
+        - RMCPackFlareCAS
+        - RMCLaserDesignator

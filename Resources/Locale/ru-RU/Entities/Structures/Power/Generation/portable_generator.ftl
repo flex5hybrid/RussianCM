@@ -1,0 +1,9 @@
+ent-PortableGeneratorPacman-name = P.A.C.M.A.N.-type portable generator
+ent-PortableGeneratorPacman-desc = A flexible backup generator for powering a variety of equipment. Runs off solid plasma sheets and is rated for up to 30 kW.
+
+ent-PortableGeneratorSuperPacman-name = S.U.P.E.R.P.A.C.M.A.N.-type portable generator
+ent-PortableGeneratorSuperPacman-desc = An advanced generator for powering departments. Runs off uranium sheets and is rated for up to 50 kW.
+
+ent-PortableGeneratorJrPacman-name = J.R.P.A.C.M.A.N.-type portable generator
+ent-PortableGeneratorJrPacman-desc = A small generator capable of powering individual rooms, in case of emergencies. Runs off welding fuel and is rated for up to 8 kW. Rated ages 3 and up.
+

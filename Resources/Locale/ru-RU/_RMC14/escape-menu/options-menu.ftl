@@ -1,0 +1,17 @@
+ui-options-header-rmc = РМЦ14
+ui-options-header-rmc-xeno = Ксеноморфы
+ui-options-function-rmc-activate-attachable-barrel = Активировать ствольный модуль
+ui-options-function-rmc-activate-attachable-rail = Активировать направляющую
+ui-options-function-rmc-activate-attachable-stock = Активировать приклад
+ui-options-function-rmc-activate-attachable-underbarrel = Активировать подствольник
+ui-options-function-rmc-field-strip-held-item = Быстрая разборка (в руках)
+ui-options-function-rmc-cycle-fire-mode = Смена режима огня
+ui-options-function-cm-unique-action = Уникальное действие
+ui-options-function-rmc-pick-up-dropped-items = Подобрать предметы
+ui-options-function-rmc-interact-with-other-hand = Взаимодействие другой рукой
+ui-options-function-rmc-rest = Отдых
+ui-options-function-cm-holster-primary = Достать основное
+ui-options-function-cm-holster-secondary = Достать второстепенное
+ui-options-function-cm-holster-tertiary = Достать третичное
+ui-options-function-cm-holster-quaternary = Достать четвертичное
+ui-options-function-cm-xeno-wide-swing = Атака ксеноморфа (размашистая)

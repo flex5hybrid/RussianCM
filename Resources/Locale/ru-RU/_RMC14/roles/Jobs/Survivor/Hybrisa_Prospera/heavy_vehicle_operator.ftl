@@ -1,0 +1,2 @@
+ent-RMCGearSurvivorPresetHybrisaHeavyVehicleOperator = Предустановка колониста оператора транспортного средства Hybrisa
+

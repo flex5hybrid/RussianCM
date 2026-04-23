@@ -1,0 +1,116 @@
+ent-RMCAreaShivaInteriorAuxPower = Снежок Шивы — Вспомогательная генераторная станция
+
+ent-RMCAreaShivaInteriorLz2Habs = Снежок Шивы - Аргентинский исследовательский штаб
+
+ent-RMCAreaShivaInteriorGarage = Снежок Шивы - Станция ремонта грузовых буксиров
+
+ent-RMCAreaShivaInteriorValleyHutsDisposals = Снежок Шивы - Избавление от долины
+
+ent-RMCAreaShivaInteriorValleyHutsNo2 = Снежок Шивы - Бункер Долины 2
+
+ent-RMCAreaShivaInteriorValleyHuts = Снежок Шивы — Бункер в Долине 1
+
+ent-RMCAreaShivaInteriorWarehouseCaves = Снежок Шивы — Ледяная пещера Синего склада
+
+ent-RMCAreaShivaInteriorWarehouse = Снежок Шивы — Синий склад
+
+ent-RMCAreaShivaInteriorFortBiceps = Снежок Шивы — интерьер Форта Бицепс
+
+ent-RMCAreaShivaInteriorBar = Снежок Шивы - незамерзающий батончик
+
+ent-RMCAreaShivaInteriorAerodrome = Снежок Шивы - Аэродром
+
+ent-RMCAreaShivaInteriorColonyDeck = Снежок Шивы — открытая колода Colony MegaStruct™
+
+ent-RMCAreaShivaInteriorColonyMedseceng = Снежок Шивы - Мед-сек-англоязычный сегмент колонии MegaStruct(TM)
+
+ent-RMCAreaShivaInteriorColonyResearchHab = Снежок Шивы — Интерьер исследовательского центра
+
+ent-RMCAreaShivaInteriorColonyCentral = Снежок Шивы - Жилая жизнь MegaStruct(TM)
+
+ent-RMCAreaShivaInteriorColonyNAdmin = Снежок Шивы - Администрация MegaStruct(TM)
+
+ent-RMCAreaShivaInteriorColonySAdmin = Снежок Шивы - Кризисный центр MegaStruct™
+
+ent-RMCAreaShivaInteriorColonyBotany = Снежок Шивы - Ботанические общежития MegaStruct(TM)
+
+ent-RMCAreaShivaInteriorColony = Снежок Шивы - Колония MegaStruct(TM)
+
+ent-RMCAreaShivaInteriorCavesMedsecengCaves = Снежок Шивы - Пещеры Южного Медико-Инженерного Комплекса
+
+ent-RMCAreaShivaInteriorCavesResearchCaves = Снежок Шивы — Пещеры Южного исследовательского центра
+
+ent-RMCAreaShivaInteriorCavesCpCamp = Снежок Шивы — Пещерный лагерь
+
+ent-RMCAreaShivaInteriorCavesSLz2 = Снежок Шивы — южные пещеры LZ2.
+
+ent-RMCAreaShivaInteriorCavesLeftSpiders = Снежок Шивы — Проход в расщелину
+
+ent-RMCAreaShivaInteriorCavesRightSpiders = Снежок Шивы - Забытый проход
+
+ent-RMCAreaShivaInteriorCaves = Снежок Шивы - Пещеры
+
+ent-RMCAreaShivaExteriorResearchAlley = Снежок Шивы — Южная исследовательская аллея
+
+ent-RMCAreaShivaExteriorCpLz2 = Снежок Шивы — Территория Северной колонии
+
+ent-RMCAreaShivaExteriorCpSResearch = Снежок Шивы — внешний вид исследовательского центра
+
+ent-RMCAreaShivaExteriorJunkyardCpBar = Снежок Шивы - Территория бара
+
+ent-RMCAreaShivaExteriorJunkyardFortbiceps = Снежок Шивы – Форт Бицепс
+
+ent-RMCAreaShivaExteriorJunkyard = Снежок Шивы - Свалка
+
+ent-RMCAreaShivaExteriorCpColonyGrounds = Снежок Шивы — Территория колонии
+
+ent-RMCAreaShivaExteriorSouthwestValley = Снежок Шивы — Юго-Западная долина
+
+ent-RMCAreaShivaExteriorValley = Снежок Шивы — Долина бункеров-хранилищ
+
+ent-RMCAreaShivaExteriorLz2Fortress = Снежок Шивы — приземляющийся оплот
+
+ent-RMCAreaShivaExteriorLz1Valley = Снежок Шивы - Долина приземления
+
+ent-RMCAreaShivaCavesTelecommLz2South = Снежок Шивы — резервное реле связи
+
+ent-RMCAreaShivaCavesTelecomm = Снежок Шивы - Реле связи
+
+ent-RMCAreaShivaInteriorTelecommLz2Research = Снежок Шивы - аргентинская ретранслятор связи
+
+ent-RMCAreaShivaInteriorTelecommLz1Flight = Снежок Шивы - Реле аэродромной связи LZ1
+
+ent-RMCAreaShivaInteriorTelecommLz1Biceps = Снежок Шивы — реле связи форта бицепс
+
+ent-RMCAreaShivaInteriorTelecomm = Снежок Шивы - Реле связи
+
+ent-RMCAreaShivaExteriorTelecommLz2Northeast = Снежок Шивы — северо-восточное реле связи LZ2
+
+ent-RMCAreaShivaExteriorTelecommLz2Southeast = Снежок Шивы — юго-восточное реле связи LZ2
+
+ent-RMCAreaShivaExteriorTelecommLz1North = Снежок Шивы — реле связи North LZ1
+
+ent-RMCAreaShivaExteriorTelecomm = Снежок Шивы - Реле связи
+
+ent-RMCAreaShivaInteriorOobDevRoom = Снежок Шивы — Секретная комната
+
+ent-RMCAreaShivaInteriorOob = Снежок Шивы - За пределами границ
+
+ent-RMCAreaShivaInterior = Снежок Шивы - Интерьер
+
+ent-RMCAreaShivaExterior = Снежок Шивы — Внешний вид
+
+ent-RMCAreaShivaExteriorLz1ConsoleTwo = Снежок Шивы — Консоль Dropship Normandy
+
+ent-RMCAreaShivaExteriorLz1Console = Снежок Шивы — консоль Alamo Dropship
+
+ent-RMCAreaShuttleDrop2Shiva = Снежок Шивы - Зона высадки десантного корабля в Нормандии
+
+ent-RMCAreaShuttleDrop1Shiva = Снежок Шивы — зона приземления десантного корабля Аламо
+
+ent-RMCAreaShiva = Снежок Шивы
+
+ent-RMCAreaShivaCaves = Снежок Шивы
+
+ent-RMCAreaShivaInteriorColonyCargoShuttle = Снежок Шивы — грузовой шаттл для инвалидов
+

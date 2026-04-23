@@ -1,0 +1,2 @@
+ent-RMCSurvivorPresetHybrisaCorporateSecurity = Предустановка колониста корпоративной безопасности hybrisa
+

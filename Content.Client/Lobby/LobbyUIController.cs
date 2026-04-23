@@ -28,6 +28,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Client.Corvax.TTS;
 
 namespace Content.Client.Lobby;
 
@@ -182,7 +183,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
         var (characterGui, profileEditor) = EnsureGui();
         characterGui.ReloadCharacterPickers();
         profileEditor.SetProfile(
-            (HumanoidCharacterProfile?) _preferencesManager.Preferences?.SelectedCharacter,
+            (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter,
             _preferencesManager.Preferences?.SelectedCharacterIndex);
     }
 
@@ -412,7 +413,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
                         // Try startinggear first
                         if (_prototypeManager.TryIndex(loadoutProto.StartingGear, out var loadoutGear))
                         {
-                            var itemType = ((IEquipmentLoadout) loadoutGear).GetGear(slot.Name);
+                            var itemType = ((IEquipmentLoadout)loadoutGear).GetGear(slot.Name);
 
                             if (_inventory.TryUnequip(dummy, slot.Name, out var unequippedItem, silent: true, force: true, reparent: false))
                             {
@@ -427,7 +428,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
                         }
                         else
                         {
-                            var itemType = ((IEquipmentLoadout) loadoutProto).GetGear(slot.Name);
+                            var itemType = ((IEquipmentLoadout)loadoutProto).GetGear(slot.Name);
 
                             if (_inventory.TryUnequip(dummy, slot.Name, out var unequippedItem, silent: true, force: true, reparent: false))
                             {
@@ -452,10 +453,10 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
 
         foreach (var slot in slots)
         {
-            var itemType = ((IEquipmentLoadout) gear).GetGear(slot.Name);
+            var itemType = ((IEquipmentLoadout)gear).GetGear(slot.Name);
 
             if (itemType == string.Empty && dummyGear != null)
-                itemType = ((IEquipmentLoadout) dummyGear).GetGear(slot.Name);
+                itemType = ((IEquipmentLoadout)dummyGear).GetGear(slot.Name);
 
             if (_inventory.TryUnequip(dummy, slot.Name, out var unequippedItem, silent: true, force: true, reparent: false))
             {

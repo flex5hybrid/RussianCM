@@ -1,0 +1,2 @@
+ent-RMCGearSurvivorPresetPara = пункт предустановки
+

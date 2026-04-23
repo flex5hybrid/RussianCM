@@ -1,0 +1,130 @@
+ent-CommandVisitorSpawner-name = command visitor spawner
+
+ent-VisitorCaptainSpawner-name = visiting captain spawner
+
+ent-VisitorCESpawner-name = visiting chief engineer spawner
+
+ent-VisitorCMOSpawner-name = visiting chief medical officer spawner
+
+ent-VisitorHOPSpawner-name = visiting head of personnel spawner
+
+ent-VisitorHOSSpawner-name = visiting head of security spawner
+
+ent-VisitorRDSpawner-name = visiting research director spawner
+
+ent-VisitorQMSpawner-name = visiting quartermaster spawner
+
+ent-SecurityVisitorSpawner-name = security visitor spawner
+
+ent-VisitorSecurityCadetSpawner-name = visiting security cadet spawner
+
+ent-VisitorSecurityOfficerSpawner-name = visiting security officer spawner
+
+ent-VisitorDetective-name = visiting detective spawner
+
+ent-VisitorWarden-name = visiting warden spawner
+
+ent-VisitingCargonianSpawner-name = cargonian visitor spawner
+
+ent-VisitorCargoTechnicianSpawner-name = visiting cargo technician spawner
+
+ent-VisitorSalvageSpecialistSpawner-name = visiting salvage specialist spawner
+
+ent-EngineeringVisitorSpawner-name = engineering visitor spawner
+
+ent-VisitorAtmosTechSpawner-name = visiting atmospheric technician spawner
+
+ent-VisitorTechnicalAssistantSpawner-name = visiting technical assistant spawner
+
+ent-VisitorEngineerSpawner-name = visiting engineer spawner
+
+ent-VisitingMedicalSpawner-name = medical visitor spawner
+
+ent-VisitorChemistSpawner-name = visiting chemist spawner
+
+ent-VisitorMedicalInternSpawner-name = visiting medical intern spawner
+
+ent-VisitorMedicalDoctorSpawner-name = visiting medical doctor spawner
+
+ent-VisitorParamedicSpawner-name = visiting paramedic spawner
+
+ent-VisitorVirologistSpawner-name = visiting virologist spawner
+
+ent-VisitorGeneticistSpawner-name = visiting geneticist spawner
+
+ent-VisitorPsychologistSpawner-name = visiting psychologist spawner
+
+ent-VisitorDentistSpawner-name = visiting dentist spawner
+
+ent-VisitingScientistSpawner-name = scientific visitor spawner
+
+ent-VisitorScientistSpawner-name = visiting scientist spawner
+
+ent-VisitorResearchAssistantSpawner-name = visiting research assistant spawner
+
+ent-VisitingCivilianSpawner-name = civilian visitor spawner
+
+ent-VisitorBartenderSpawner-name = visiting bartender spawner
+
+ent-VisitorBotanistSpawner-name = visiting botanist spawner
+
+ent-VisitorBoxerSpawner-name = visiting boxer spawner
+
+ent-VisitorChaplainSpawner-name = visiting chaplain spawner
+
+ent-VisitorChefSpawner-name = visiting chef spawner
+
+ent-VisitorClownSpawner-name = visiting clown spawner
+
+ent-VisitorJanitorSpawner-name = visiting janitor spawner
+
+ent-VisitorLawyerSpawner-name = visiting lawyer spawner
+
+ent-VisitorLawyerCentcomSpawner-name = visiting centcom lawyer spawner
+
+ent-VisitorLibrarianSpawner-name = visiting librarian spawner
+
+ent-VisitorMusicianSpawner-name = visiting musician spawner
+
+ent-VisitorMusicianFancySpawner-name = visiting fancy musician spawner
+
+ent-VisitorMusicianRelaxedSpawner-name = visiting relaxed musician spawner
+
+ent-VisitorMimeSpawner-name = visiting mime spawner
+
+ent-VisitorReporterSpawner-name = visiting reporter spawner
+
+ent-VisitorServiceWorkerSpawner-name = visiting service worker spawner
+
+ent-VisitorZookeeperSpawner-name = visiting zookeeper spawner
+
+ent-ChallengeVictimSpawner-name = disaster victim spawner
+
+ent-ChallengeCargoTechnicianSpawner-name = challenge cargo technician spawner
+
+ent-NTVisitorSpawner-name = NanoTrasen visitor spawner
+
+ent-NTVisitorSpawner50-name = NanoTrasen visitor spawner
+
+ent-NTVisitorSpawner33-name = NanoTrasen visitor spawner
+
+ent-NTVisitorSpawner25-name = NanoTrasen visitor spawner
+
+ent-NTVisitorSpawner20-name = NanoTrasen visitor spawner
+
+ent-NTVisitorSpawner10-name = NanoTrasen visitor spawner
+
+ent-SyndieSoldierTeamLeaderSpawner-name = syndicate team leader spawner
+
+ent-SyndieSoldierSpawner-name = syndicate soldier spawner
+
+ent-SyndieVisitorSpawner-name = syndie disaster victim spawner
+
+ent-PirateScoonerSpawner-name = pirate crewman spawner
+
+ent-PirateCaptainScoonerSpawner-name = pirate captain spawner
+
+ent-VisitorBlackmarketeerSpawner-name = Blackmarketeer spawner
+
+ent-CossackSpawner-name = cossack spawner
+

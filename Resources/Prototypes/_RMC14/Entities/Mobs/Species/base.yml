@@ -40,6 +40,7 @@
   - type: InjectableSolution
     solution: chemicals
   - type: RMCStamina
+  - type: RMCPulse
   - type: Bloodstream
     bloodReagent: Blood
     bloodMaxVolume: 560
@@ -87,6 +88,7 @@
     - DoorBumpOpener
   - type: Marine
   - type: RMCSuitLight
+  - type: RMCLastBodyScanResult
   - type: HolocardState
   - type: Hunger
     baseDecayRate: 0.03125
@@ -377,3 +379,5 @@
     hideLayersOnEquip:
     - UndergarmentTop
     - Hair
+  - type: TTS # TTS RuCM
+    faction: Human

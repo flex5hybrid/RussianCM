@@ -17,8 +17,8 @@
   whitelisted: true
   supervisors: rmc-job-supervisors-commander
   accessGroups:
-  - ShipMasterAccess
-  - Synth
+    - ShipMasterAccess
+    - Synth
   roleWeight: 0.25
   special:
   - !type:AddComponentSpecial
@@ -73,7 +73,13 @@
         types:
           Blunt: 35
     - type: Synth
-  hidden: true
+    - type: ShowHealthBars
+    - type: ShowHealthIcons
+    - type: HolocardScanner
+    - type: ShowMindShieldIcons
+    - type: ShowCriminalRecordIcons
+    - type: FlashImmunity
+    - type: EyeProtection
 
 - type: startingGear
   id: RMCGearSyntheticEquipped
@@ -89,10 +95,10 @@
   id: RMCSpawnPointSynth
   name: synthetic spawn point
   components:
-  - type: SpawnPoint
-    job_id: RMCJobSynthetic
-  - type: Sprite
-    state: syn_spawn
+    - type: SpawnPoint
+      job_id: RMCJobSynthetic
+    - type: Sprite
+      state: syn_spawn
 
 - type: playTimeTracker
   id: RMCJobSynthetic

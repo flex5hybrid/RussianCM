@@ -578,7 +578,7 @@
   description: An automated gear rack for specialized chemicals for the medical assistants.
   components:
   - type: CMAutomatedVendor
-    jobs: 
+    jobs:
     - CMRoyalMarinesMedicPVE
     pointsType: Chemicals
     sections:

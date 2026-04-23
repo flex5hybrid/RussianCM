@@ -141,12 +141,12 @@
   name: ColMarTech squad weapons specialist gear rack
   description: An automated gear rack for Squad Weapons Specialists.
   components:
-  - type: RMCVendorSpecialist
-  - type: AccessReader
-    access:
-    - [ "CMAccessSpecPrep" ]
-  - type: Sprite
-    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/specialist_gear.rsi
+    - type: RMCVendorSpecialist
+    - type: AccessReader
+      access:
+        - ["CMAccessSpecPrep"]
+    - type: Sprite
+      sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/specialist_gear.rsi
 
 - type: entity
   parent: [BaseItem, RMCVendorWeaponsSpecialistGearBase]
@@ -154,24 +154,24 @@
   name: specialist kit
   description: A paper box. Open it and get a specialist kit.
   components:
-  - type: Sprite
-    sprite: _RMC14/Objects/loadout_kits.rsi
-    layers:
-    - state: closed
-      map: [ base ]
-  - type: AccessReader
-    access:
-    - [ "CMAccessSpecPrep" ]
-  - type: UserInterface
-    interfaces:
-      enum.CMAutomatedVendorUI.Key:
-        type: CMAutomatedVendorBui
-  - type: ActivatableUI
-    key: enum.CMAutomatedVendorUI.Key
-  - type: ActivatableUIRequiresAccess
-  - type: CMAutomatedVendor
-    jobs:
-    - CMWeaponsSpecialist
+    - type: Sprite
+      sprite: _RMC14/Objects/loadout_kits.rsi
+      layers:
+        - state: closed
+          map: [base]
+    - type: AccessReader
+      access:
+        - ["CMAccessSpecPrep"]
+    - type: UserInterface
+      interfaces:
+        enum.CMAutomatedVendorUI.Key:
+          type: CMAutomatedVendorBui
+    - type: ActivatableUI
+      key: enum.CMAutomatedVendorUI.Key
+    - type: ActivatableUIRequiresAccess
+    - type: CMAutomatedVendor
+      jobs:
+        - CMWeaponsSpecialist
 
 - type: entity
   parent: ColMarTechBase

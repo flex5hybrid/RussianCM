@@ -231,7 +231,7 @@
   desc: reagent-desc-sulfuric-acid
   physicalDesc: reagent-physical-desc-oily
   flavor: acid
-  color: "#BF8C00"
+  color: "#DB5008"
   recognizable: true
   boilingPoint: 337.0
   meltingPoint: 10.31

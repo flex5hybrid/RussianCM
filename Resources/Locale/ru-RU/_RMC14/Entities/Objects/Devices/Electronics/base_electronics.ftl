@@ -1,0 +1,1 @@
+ent-CMBaseElectronics = базовая электроника

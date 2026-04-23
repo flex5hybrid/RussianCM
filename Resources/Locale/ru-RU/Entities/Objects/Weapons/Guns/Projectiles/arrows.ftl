@@ -1,0 +1,17 @@
+ent-ArrowRegular-name = arrow
+ent-ArrowRegular-desc = You can feel the power of the steppe within you.
+
+ent-ArrowImprovised-name = glass shard arrow
+ent-ArrowImprovised-desc = The greyshirt's preferred projectile.
+
+ent-ArrowImprovisedPlasma-name = plasma glass shard arrow
+ent-ArrowImprovisedPlasma-desc = The greyshirt's preferred projectile. Now with extra lethality!
+
+ent-ArrowImprovisedUranium-name = uranium glass shard arrow
+ent-ArrowImprovisedUranium-desc = The greyshirt's preferred projectile. Now with added radiation!
+
+ent-ArrowImprovisedCarp-name = carp tooth arrow
+ent-ArrowImprovisedCarp-desc = The salvager's preferred arrow. Kill your enemies with the teeth of their families.
+
+ent-BaseArrow-name = item
+

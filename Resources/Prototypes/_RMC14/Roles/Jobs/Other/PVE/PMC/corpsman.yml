@@ -33,7 +33,6 @@
         Chemicals: 120
     - type: JobPrefix
       prefix: rmc-job-prefix-pmc-medic
-
     - type: DemoSpecWhitelist
     - type: GrenadeSpecWhitelist
     - type: ScoutWhitelist

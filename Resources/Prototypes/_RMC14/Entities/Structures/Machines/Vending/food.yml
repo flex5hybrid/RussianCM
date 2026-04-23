@@ -58,9 +58,9 @@
   name: NutriCo AutoChef
   description: An autochef food dispenser, capable of distributing food containing all the essential vitamins and nutrients anyone could ever need. Inedible-looking sludge is passed through a variety of heaters, re-shapers, and solidifiers before being artificially flavored to create something that looks and tastes mostly edible.
   components:
-  - type: Sprite
-    sprite: _RMC14/Structures/Machines/VendingMachines/NutriCo/food.rsi
-    offset: 0, 0.5
+    - type: Sprite
+      sprite: _RMC14/Structures/Machines/VendingMachines/NutriCo/food.rsi
+      offset: 0, 0.5
 
 - type: entity
   parent: RMCNutriCoVendor
@@ -122,6 +122,9 @@
     access:
     - [ "CMAccessKitchen" ]
     - [ "CMAccessColonyPublic" ]
+  - type: Corrodible
+    timeToApply: 4
+    structure: true
   - type: CMAutomatedVendor
     access:
     - "CMAccessKitchen"
@@ -202,6 +205,9 @@
     layers:
     - state: "off"
     - state: "normal-unshaded"
+  - type: Corrodible
+    timeToApply: 4
+    structure: true
   - type: CMAutomatedVendor
     hackable: true
     sections:

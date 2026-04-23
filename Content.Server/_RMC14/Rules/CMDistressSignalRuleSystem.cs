@@ -1322,6 +1322,12 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
 
             if (Timing.CurTime >= distress.QueenDiedCheck)
             {
+                if (distress.Hijack)
+                {
+                    EndRound(distress, DistressSignalRuleResult.MinorXenoVictory);
+                    continue;
+                }
+
                 if (_xenoEvolution.HasLiving<XenoComponent>(4))
                     EndRound(distress, DistressSignalRuleResult.MinorMarineVictory);
                 else
@@ -1695,7 +1701,9 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
 
         if (time >= component.QueenDiedCheck)
         {
-            if (_xenoEvolution.HasLiving<XenoComponent>(4))
+            if (component.Hijack)
+                EndRound(component, DistressSignalRuleResult.MinorXenoVictory);
+            else if (_xenoEvolution.HasLiving<XenoComponent>(4))
                 EndRound(component, DistressSignalRuleResult.MinorMarineVictory);
             else
                 EndRound(component, DistressSignalRuleResult.MajorMarineVictory, "rmc-distress-signal-majormarinevictory-timeout");
@@ -1927,13 +1935,13 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
 
                 var ares = _ares.EnsureARES();
                 _marineAnnounce.AnnounceRadio(ares,
-                    "Bioscan complete. No unknown lifeform signature detected.",
+                    "Биосканирование завершено. Неизвестные формы жизни не обнаружены.",
                     rule.AllClearChannel);
                 _marineAnnounce.AnnounceRadio(ares,
-                    "Saving operational report to archive.",
+                    "Сохранение операционного отчёта в архив.",
                     rule.AllClearChannel);
                 _marineAnnounce.AnnounceRadio(ares,
-                    "Commencing final systems scan in 3 minutes.",
+                    "Запуск финального сканирования систем через 3 минуты.",
                     rule.AllClearChannel);
                 rule.EndAtAllClear ??= Timing.CurTime + rule.AllClearEndDelay;
                 break;

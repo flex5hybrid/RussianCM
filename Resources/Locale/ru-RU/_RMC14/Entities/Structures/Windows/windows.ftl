@@ -1,0 +1,41 @@
+ent-RMCWindowAIReinforced = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
+
+ent-RMCWindowWoodReinforced = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
+
+ent-RMCWindowWood = окно
+
+ent-RMCHunterReinforcedWindow = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
+
+ent-CMWindowWhiteColonyReinforced = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
+
+ent-CMWindowWhiteColony = окно
+  .desc = Стеклянное окно. 
+
+ent-CMWindowReinforcedWhite = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
+
+ent-CMWindowReinforcedWhiteHull = окно корпуса
+  .desc = Ультра-усиленное окно, предназначенное для обеспечения безопасности исследований. 
+
+ent-CMWindowReinforcedAlmayer = усиленное окно
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
+
+ent-CMWindowReinforcedAlmayerHull = окно корпуса
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
+
+ent-RMCWindowReinforcedAIHull = окно корпуса
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
+
+ent-RMCWindowReinforcedAIHullBlack = окно корпуса
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
+
+ent-RMCWindowReinforcedAlmayerHullHijackBustable = окно корпуса
+  .desc = Стеклянное окно со специальной стержневой матрицей внутри настенной рамы. 
+
+ent-CMWindowWhiteColonyHull = окно корпуса
+  .desc = Стеклянное окно. 
+

@@ -29,7 +29,6 @@
       factions:
       - WeYa
       - Civilian
-
   useLoadoutOfJob: CMSurvivor # for inheritance
 
 - type: startingGear
