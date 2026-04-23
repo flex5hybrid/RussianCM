@@ -67,7 +67,8 @@
         groups:
           Brute: 48
     - type: Tackle
-      chance: 0.45
+      min: 4
+      max: 4
     - type: Fixtures
       fixtures:
         fix1:

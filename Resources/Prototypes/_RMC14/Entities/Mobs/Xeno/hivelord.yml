@@ -51,8 +51,8 @@
       groups:
         Brute: 30
   - type: Tackle
-    max: 4
-    chance: 0.45
+    min: 3
+    max: 3
     stunMin: 4
     stunMax: 5
   - type: TunnelRenamer
@@ -290,10 +290,10 @@
     pheromonesMultiplier: 3
     pheroSuffix: strong
   - type: Tackle
-    max: 4
-    chance: 0.45
-    stunMin: 5
-    stunMax: 6
+    min: 3
+    max: 3
+    stunMin: 4
+    stunMax: 5
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.15
     baseSprintSpeed: 3.9

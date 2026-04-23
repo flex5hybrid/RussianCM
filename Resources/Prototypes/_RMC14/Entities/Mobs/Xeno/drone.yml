@@ -58,7 +58,8 @@
     maxPlasma: 1000
     plasmaRegenOnWeeds: 4.5
   - type: Tackle
-    max: 4
+    min: 3
+    max: 3
     stunMin: 3
     stunMax: 4
   - type: WhitelistPickup
@@ -282,10 +283,10 @@
     - XenoFruitLesser
     maxFruitAllowed: 3
   - type: Tackle
-    max: 4
+    min: 3
+    max: 3
     stunMin: 3
     stunMax: 4
-    chance: 0.30
   - type: XenoEnergy
     alert: XenoEnergyHealer
     max: 7500

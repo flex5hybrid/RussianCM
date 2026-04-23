@@ -123,9 +123,8 @@
           Brute: 54
     - type: XenoOvipositorCapable
     - type: Tackle
-      chance: 0.55
-      stunMin: 5
-      stunMax: 6
+      min: 3
+      max: 3
     - type: TunnelRenamer
     - type: Fixtures
       fixtures:

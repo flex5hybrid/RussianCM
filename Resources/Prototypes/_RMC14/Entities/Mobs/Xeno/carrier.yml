@@ -61,8 +61,8 @@
       groups:
         Brute: 42
   - type: Tackle
-    max: 4
-    chance: 0.5
+    min: 3
+    max: 3
     stunMin: 4
     stunMax: 5
   - type: TunnelRenamer

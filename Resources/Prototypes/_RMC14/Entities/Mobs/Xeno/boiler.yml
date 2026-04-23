@@ -105,7 +105,8 @@
       groups:
         Brute: 22.5
   - type: Tackle
-    chance: 0.25
+    min: 4
+    max: 4
     stunMin: 3
     stunMax: 4
   - type: AcidBloodSplash

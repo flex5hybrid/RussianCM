@@ -83,8 +83,8 @@
       groups:
         Brute: 54
   - type: Tackle
-    max: 5
-    chance: 0.35
+    min: 4
+    max: 4
     stunMin: 4
     stunMax: 5
   - type: Fixtures
@@ -201,6 +201,11 @@
       0: Alive
       590: Critical
       690: Dead
+  - type: Tackle
+    min: 6
+    max: 6
+    stunMin: 6
+    stunMax: 6
   - type: CMArmor
     xenoArmor: 30
     explosionArmor: 80
@@ -274,6 +279,11 @@
       0: Alive
       650: Critical
       750: Dead
+  - type: Tackle
+    min: 6
+    max: 6
+    stunMin: 6
+    stunMax: 6
   - type: CMArmor
     xenoArmor: 25
     explosionArmor: 100

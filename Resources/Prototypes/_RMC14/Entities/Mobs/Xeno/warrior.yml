@@ -80,6 +80,7 @@
       groups:
         Brute: 48
   - type: Tackle
+    min: 4
     max: 4
   - type: SlowOnPull
     slowdowns:
