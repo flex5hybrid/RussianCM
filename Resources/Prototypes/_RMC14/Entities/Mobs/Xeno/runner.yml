@@ -12,6 +12,9 @@
   name: Бегун
   description: Маленький красный инопланетянин, который, судя по всему, может бегать довольно быстро...
   components:
+  - type: TTS
+    voice: GYROCOPTER_DOTA_2
+    faction: Xeno
   - type: GhostRole
     name: cm-job-name-xeno-runner
   - type: Sprite
@@ -87,9 +90,8 @@
       groups:
         Brute: 30
   - type: Tackle
-    min: 4
+    min: 5
     max: 5
-    chance: 0.4
     stunMin: 4
     stunMax: 4
   - type: SlowOnPull
@@ -136,8 +138,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      230: Critical
-      330: Dead
+      275: Critical
+      375: Dead
   - type: Xeno
     actionIds:
     - ActionXenoRest

@@ -34,7 +34,7 @@
       amount: 0.6
     FoamingAgent:
       amount: 0.2
-    PolytrinicAcid:
+    RMCPolytrinicAcid:
       amount: 0.2
   effects:
     - !type:AreaReactionEffect
@@ -52,7 +52,7 @@
       amount: 0.6
     FoamingAgent:
       amount: 0.2
-    PolytrinicAcid:
+    RMCPolytrinicAcid:
       amount: 0.2
   effects:
     - !type:AreaReactionEffect

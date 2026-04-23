@@ -9,6 +9,7 @@ using Content.Shared._RMC14.Marines.Squads;
 using Content.Shared._RMC14.Rules;
 using Content.Shared._RMC14.Survivor;
 using Content.Shared.Chat;
+using Content.Shared.Corvax.TTS;
 using Content.Shared.Database;
 using Content.Shared.Ghost;
 using Content.Shared.Radio;
@@ -112,7 +113,7 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
         // TODO RMC14
         if (excludeSurvivors)
             filter.RemoveWhereAttachedEntity(HasComp<RMCSurvivorComponent>);
-
+        // RaiseLocalEvent(new RMCAnnouncementMadeEvent(null, message)); // RuMC Announce TTS
         _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Radio, message, message, default, false, true, null);
         _audio.PlayGlobal(sound ?? DefaultAnnouncementSound, filter, true, AudioParams.Default.WithVolume(-2f));
     }
@@ -122,6 +123,7 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
         string? author = null,
         SoundSpecifier? sound = null)
     {
+        RaiseLocalEvent(new RMCAnnouncementMadeEvent(null, message)); // RuMC Announce TTS
         var wrappedMessage = FormatHighCommand(author, message);
         AnnounceToMarines(wrappedMessage);
     }
@@ -132,7 +134,7 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
         ProtoId<RadioChannelPrototype> channel)
     {
         base.AnnounceRadio(sender, message, channel);
-
+        RaiseLocalEvent(new RMCAnnouncementMadeEvent(sender, message)); // RuMC Announce TTS
         _adminLogs.Add(LogType.RMCMarineAnnounce, $"{ToPrettyString(sender):source} marine announced radio message: {message}");
         _radio.SendRadioMessage(sender, message, channel, sender);
     }
@@ -145,6 +147,7 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
     {
         base.AnnounceARESStaging(source, message, sound, announcement);
 
+        RaiseLocalEvent(new RMCAnnouncementMadeEvent(source, message)); // RuMC Announce TTS
         message = FormatARESStaging(announcement, message);
 
         AnnounceToMarines(message, sound);
@@ -156,7 +159,6 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
         base.AnnounceSquad(message, squad, sound);
 
         var filter = Filter.Empty().AddWhereAttachedEntity(e => _squad.IsInSquad(e, squad));
-
         _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Radio, message, message, default, false, true, null);
         _audio.PlayGlobal(sound ?? DefaultSquadSound, filter, true, AudioParams.Default.WithVolume(-2f));
     }

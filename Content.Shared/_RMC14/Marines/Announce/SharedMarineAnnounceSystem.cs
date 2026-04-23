@@ -7,6 +7,7 @@ using Content.Shared._RMC14.Overwatch;
 using Content.Shared._RMC14.TacticalMap;
 using Content.Shared.Administration.Logs;
 using Content.Shared.CCVar;
+using Content.Shared.Corvax.TTS;
 using Content.Shared.Database;
 using Content.Shared.Ghost;
 using Content.Shared.Popups;
@@ -260,6 +261,7 @@ public abstract class SharedMarineAnnounceSystem : EntitySystem
         var wrappedMessage = Loc.GetString("rmc-announcement-message-signed", ("author", author), ("message", message), ("name", name));
 
         AnnounceToMarines(wrappedMessage, sound, filter, excludeSurvivors);
+        RaiseLocalEvent(new RMCAnnouncementMadeEvent(sender, message)); // RuMC Announce TTS
         _adminLog.Add(LogType.RMCMarineAnnounce, $"{ToPrettyString(sender):source} marine announced message: {message}");
     }
 

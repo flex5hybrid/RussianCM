@@ -10,6 +10,9 @@
   name: Бойлер
   description: Большой, гротескный ксеноид, покрытый желевидной кислотой.
   components:
+  - type: TTS
+    voice: UNDERLORD_DOTA_2
+    faction: Xeno
   - type: GuideHelp
     guides:
     - RMCGuideRoleBoiler
@@ -102,7 +105,8 @@
       groups:
         Brute: 22.5
   - type: Tackle
-    chance: 0.25
+    min: 4
+    max: 4
     stunMin: 3
     stunMax: 4
   - type: AcidBloodSplash

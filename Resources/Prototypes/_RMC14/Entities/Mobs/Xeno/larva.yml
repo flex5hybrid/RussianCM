@@ -6,6 +6,9 @@
   id: CMXenoLarva
   name: Личинка
   components:
+  - type: TTS
+    voice: SOPHRONIA_FRANKLIN
+    faction: Xeno
   - type: GuideHelp
     guides:
     - RMCGuideRoleDrone

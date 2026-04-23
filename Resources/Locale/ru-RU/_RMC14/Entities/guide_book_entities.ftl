@@ -1,4 +1,4 @@
-ent-RMCPylonMapIcon = пилон улья
+ent-RMCPylonMapIcon = Пилон улья
 
 ent-RMCRecovNodeMapIcon = Узел восстановления
 
@@ -6,7 +6,7 @@ ent-RMCTunnelMapIcon = Туннель
 
 ent-RMCClusterMapIcon = Кластер улья
 
-ent-RMCMorpherMapIcon = Яичный морфер
+ent-RMCMorpherMapIcon = Морфер яиц
 
 ent-RMCHiveCoreMapIcon = Ядро улья
 
@@ -18,13 +18,13 @@ ent-RMCPraetorianMapIcon = Преторианец
 
 ent-RMCRavagerMapIcon = Разрушитель
 
-ent-RMCLurkerMapIcon = Люркер
+ent-RMCLurkerMapIcon = Охотник
 
 ent-RMCRunnerMapIcon = Бегун
 
-ent-RMCBoilerMapIcon = Котел
+ent-RMCBoilerMapIcon = Бойлер
 
-ent-RMCSpitterMapIcon = Спиттер
+ent-RMCSpitterMapIcon = Плеватель
 
 ent-RMCSentinelMapIcon = Страж
 
@@ -34,11 +34,11 @@ ent-RMCWarriorMapIcon = Воин
 
 ent-RMCDefenderMapIcon = Защитник
 
-ent-RMCCarrierMapIcon = Перевозчик
+ent-RMCCarrierMapIcon = Носитель
 
-ent-RMCBurrowerMapIcon = Роющий
+ent-RMCBurrowerMapIcon = Бурильщик
 
-ent-RMCHivelordMapIcon = Хивелорд
+ent-RMCHivelordMapIcon = Лорд улья
 
 ent-RMCDroneMapIcon = Дрон
 
@@ -46,7 +46,7 @@ ent-RMCLarvaMapIcon = Личинка
 
 ent-RMCParasiteMapIcon = Паразит
 
-ent-RMCLesserMapIcon = Меньший
+ent-RMCLesserMapIcon = Малый дрон
 
 ent-RMCBaseMapIcon = Икона
 

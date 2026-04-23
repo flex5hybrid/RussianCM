@@ -49,16 +49,16 @@
 - type: latheRecipePack
   id: RMCRecipesArmyLathe
   recipes:
-  # TODO RMC14: Implement the commented out ones
-  # - RMCM40GrenadeCasing
-  # - RMCM15GrenadeCasing
-  # - RMCM20MineCasing
-  # - RMCC4PlasticCasing
-  # - RMC84mmRocketTube
-  # - RMC84mmRocketWarhead
-  # - RMC80mmMortarShell
-  # - RMC80mmMortarWarhead
-  # - RMC80mmMortarCameraWarhead
+  # Casings
+  - RMCM40GrenadeCasing
+  - RMCM15GrenadeCasing
+  - RMCM20MineCasing
+  - RMCC4PlasticCasing
+  - RMC84mmRocketTube
+  - RMC84mmRocketWarhead
+  - RMC80mmMortarShell
+  - RMC80mmMortarWarhead
+  - RMC80mmMortarCameraWarhead
   - RMCTankFlamerCustom
   # - RMCTankFlamerUpgraded # Hidden behind research.
   - RMCTankFlamerLargeCustom

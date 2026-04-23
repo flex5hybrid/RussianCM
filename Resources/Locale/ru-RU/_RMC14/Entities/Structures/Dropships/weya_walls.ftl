@@ -169,104 +169,104 @@ ent-RMCWeyaTailLeft2 = хвост
 ent-RMCWeyaTailLeft1 = хвост
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCBaseWeyaWall = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCBaseWeyaWall = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard7 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard7 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard8 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard8 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
 ent-RMCWeyaWallStandard18 = -desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard19 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard19 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard24 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard24 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard25 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard25 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard30 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard30 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard31 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard31 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard46 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard46 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard47 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard47 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard48 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard48 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard49 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard49 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard53 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard53 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard56 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard56 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard62 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard62 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard64 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard64 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard67 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard67 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard68 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard68 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard69 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard69 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard72 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard72 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard73 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard73 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard75 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard75 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard76 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard76 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard79 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard79 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard81 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard81 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard83 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard83 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard92 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard92 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard94 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard94 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard95 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard95 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandard99 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandard99 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandardwy2 = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandardwy2 = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandardwyleftengine = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandardwyleftengine = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 
-ent-RMCWeyaWallStandardwyrightengine = Мы-Я-ЛВИ Бегун HR-150
+ent-RMCWeyaWallStandardwyrightengine = стена HR-150
   .desc = Огромный кусок металла, используемый для разделения комнат.
 

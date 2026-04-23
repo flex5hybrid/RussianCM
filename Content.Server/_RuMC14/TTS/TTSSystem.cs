@@ -1,23 +1,21 @@
 using System.Threading.Tasks;
 using Content.Server.Chat.Systems;
-using Content.Server.Database.Migrations.Postgres;
+using Content.Shared._RMC14.Marines;
 using Content.Shared.Corvax.CCCVars;
 using Content.Shared.Corvax.TTS;
 using Content.Shared.GameTicking;
+using Content.Shared.Ghost;
 using Content.Shared.Players.RateLimiting;
 using Content.Shared.Radio;
-using Microsoft.CodeAnalysis.Emit;
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
-
 using Content.Server.Radio.EntitySystems;
 using Content.Server.Radio.Components;
 using Content.Shared.Radio.Components;
 using Content.Server.Radio;
-using Content.Shared.RetractableItemAction;
-using Content.Shared._RMC14.Medical.Wounds;
+using Content.Shared._RMC14.Radio;
 
 namespace Content.Server.Corvax.TTS;
 
@@ -57,10 +55,14 @@ public sealed partial class TTSSystem : EntitySystem
 
         SubscribeLocalEvent<TransformSpeechEvent>(OnTransformSpeech);
 
-        SubscribeLocalEvent<TTSComponent, EntitySpokeEvent>(OnEntitySpoke);
+        SubscribeLocalEvent<TTSComponent, EntitySpokeEvent>(OnEntitySpoke,
+            before: new[] { typeof(RadioSystem), typeof(HeadsetSystem) });
 
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestartCleanup);
 
+        SubscribeLocalEvent<ActorComponent, HeadsetRadioReceiveRelayEvent>(OnHeadsetRadioReceive);
+        SubscribeLocalEvent<TTSComponent, RadioReceiveEvent>(OnIntrinsicRadioReceive);
+        SubscribeLocalEvent<RMCAnnouncementMadeEvent>(OnAnnouncementMade);
         SubscribeNetworkEvent<RequestPreviewTTSEvent>(OnRequestPreviewTTS);
 
         RegisterRateLimits();
@@ -94,7 +96,8 @@ public sealed partial class TTSSystem : EntitySystem
 
         if (!_isEnabled ||
             args.Message.Length > MaxMessageChars ||
-            voiceId == null)
+            voiceId == null ||
+            args.Channel != null)
             return;
         var voiceEv = new TransformSpeakerVoiceEvent(uid, voiceId);
         RaiseLocalEvent(uid, voiceEv);
@@ -109,16 +112,31 @@ public sealed partial class TTSSystem : EntitySystem
             return;
         }
 
-        HandleSay(uid, args.Message, protoVoice.Speaker);
+        HandleSay(uid, args.Message, protoVoice.Speaker, component.Faction);
     }
 
-    private async void HandleSay(EntityUid uid, string message, string speaker)
+    private async void HandleSay(EntityUid uid, string message, string speaker, HearingFaction faction)
     {
         var soundData = await GenerateTTS(message, speaker);
         if (soundData is null) return;
-        RaiseNetworkEvent(new PlayTTSEvent(soundData, GetNetEntity(uid)), Filter.Pvs(uid));
-    }
+        var recipients = Filter.Pvs(uid).Recipients;
 
+        foreach (var session in recipients)
+        {
+            if (!session.AttachedEntity.HasValue)
+                continue;
+
+            var listener = session.AttachedEntity.Value;
+
+            if (!TryComp<TTSComponent>(listener, out var listenerTts))
+                continue;
+
+            if (listenerTts.Faction != faction)
+                continue;
+
+            RaiseNetworkEvent(new PlayTTSEvent(soundData, GetNetEntity(uid)), session);
+        }
+    }
     private async void HandleWhisper(EntityUid uid, string message, string obfMessage, string speaker)
     {
         var fullSoundData = await GenerateTTS(message, speaker, true);
@@ -145,7 +163,72 @@ public sealed partial class TTSSystem : EntitySystem
             RaiseNetworkEvent(distance > ChatSystem.WhisperClearRange ? obfTtsEvent : fullTtsEvent, session);
         }
     }
+    private void OnHeadsetRadioReceive(EntityUid uid, ActorComponent actor, ref HeadsetRadioReceiveRelayEvent args)
+    {
+        _ = HandleRadioTTS(uid, actor, args.RelayedEvent);
+    }
 
+    private void OnIntrinsicRadioReceive(EntityUid uid, TTSComponent component, ref RadioReceiveEvent args)
+    {
+        if (TryComp<ActorComponent>(uid, out var actor))
+            _ = HandleRadioTTS(uid, actor, args);
+    }
+
+    private async void OnAnnouncementMade(RMCAnnouncementMadeEvent args)
+    {
+        Logger.Debug("OnAnnouncementMade");
+        var voiceId = "TURRET_FLOOR";
+        if (TryComp<TTSComponent>(args.Source, out var component))
+            voiceId = component.VoicePrototypeId;
+        if (voiceId is null)
+            voiceId = "TURRET_FLOOR";
+
+        Logger.Debug(voiceId);
+        if (!_isEnabled)
+            return;
+
+        if (!_prototypeManager.TryIndex<TTSVoicePrototype>(voiceId, out var protoVoice))
+            return;
+        Logger.Debug("get him");
+        var soundData = await GenerateTTS(args.RawMessage, protoVoice.Speaker);
+        if (soundData is null)
+            return;
+        Logger.Debug("get his ass");
+
+        var filter = Filter.Empty()
+            .AddWhereAttachedEntity(e => HasComp<MarineComponent>(e) || HasComp<GhostComponent>(e));
+
+        foreach (var session in filter.Recipients)
+        {
+            RaiseNetworkEvent(new PlayTTSEvent(soundData, isRadio: true), session);
+        }
+    }
+
+    public async Task HandleRadioTTS(
+    EntityUid receiver,
+    ActorComponent actor,
+    RadioReceiveEvent ev)
+    {
+        if (!_isEnabled)
+            return;
+
+        var speaker = ev.MessageSource;
+
+        if (!speaker.IsValid() || !TryComp<TTSComponent>(speaker, out var tts) || tts.VoicePrototypeId == null)
+            return;
+
+        if (!_prototypeManager.TryIndex<TTSVoicePrototype>(tts.VoicePrototypeId, out var protoVoice))
+            return;
+
+        var sound = await GenerateTTS(ev.Message, protoVoice.Speaker);
+
+        if (sound == null)
+            return;
+
+        RaiseNetworkEvent(
+            new PlayTTSEvent(sound, GetNetEntity(speaker), isRadio: true),
+            Filter.SinglePlayer(actor.PlayerSession));
+    }
     // ReSharper disable once InconsistentNaming
     public async Task<byte[]?> GenerateTTS(string text, string speaker, bool isWhisper = false)
     {

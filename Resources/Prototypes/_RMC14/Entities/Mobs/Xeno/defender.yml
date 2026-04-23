@@ -11,6 +11,9 @@
   name: Защитник
   description: Пришелец с бронированным панцирем.
   components:
+  - type: TTS
+    voice: DRAGON_KNIGHT_DRAGON_DOTA_2
+    faction: Xeno
   - type: GhostRole
     name: cm-job-name-xeno-defender
   - type: Sprite
@@ -78,6 +81,7 @@
           variation: 0.15
     hitAnimationId: RMCEffectSlam
   - type: Tackle
+    min: 4
     max: 4
   - type: Fixtures
     fixtures:

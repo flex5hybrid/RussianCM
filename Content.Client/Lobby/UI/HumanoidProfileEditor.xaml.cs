@@ -611,19 +611,19 @@ namespace Content.Client.Lobby.UI
             foreach (var child in TabContainer.Children)
                 children.Add(child);
 
-            TabContainer.RemoveAllChildren();
+            // TabContainer.RemoveAllChildren();
+            TabContainer.AddChild(_ttsTab);
 
-            for (int i = 0; i < children.Count; i++)
-            {
-                if (i == 1) // Set the tab to the 2nd place.
-                {
-                    TabContainer.AddChild(_ttsTab);
-                }
-                TabContainer.AddChild(children[i]);
-            }
+            // for (int i = 0; i < children.Count; i++)
+            // {
+            //     if (i == 1) // Set the tab to the 2nd place.
+            //     {
+            //         TabContainer.AddChild(_ttsTab);
+            //     }
+            //     TabContainer.AddChild(children[i]);
+            // }
 
-            TabContainer.SetTabTitle(1, Loc.GetString("humanoid-profile-editor-voice-tab"));
-
+            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-voice-tab"));
             _ttsTab.OnVoiceSelected += voiceId =>
             {
                 SetVoice(voiceId);

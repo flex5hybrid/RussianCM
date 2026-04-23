@@ -1,72 +1,71 @@
-ent-SeatBase-name = chair
-ent-SeatBase-desc = You sit in this. Either by will or force.
+ent-SeatBase-name = стул
+ent-SeatBase-desc = На этом сидят. По своей воле или принудительно.
 
-ent-UnanchoredChairBase-name = chair
-ent-UnanchoredChairBase-desc = You sit in this. Either by will or force.
+ent-UnanchoredChairBase-name = стул
+ent-UnanchoredChairBase-desc = На этом сидят. По своей воле или принудительно.
 
-ent-ChairBase-name = chair
-ent-ChairBase-desc = You sit in this. Either by will or force.
+ent-ChairBase-name = стул
+ent-ChairBase-desc = На этом сидят. По своей воле или принудительно.
 
-ent-OfficeChairBase-name = chair
-ent-OfficeChairBase-desc = You sit in this. Either by will or force.
+ent-OfficeChairBase-name = стул
+ent-OfficeChairBase-desc = На этом сидят. По своей воле или принудительно.
 
-ent-StoolBase-name = stool
-ent-StoolBase-desc = You sit in this. Either by will or force.
+ent-StoolBase-name = табурет
+ent-StoolBase-desc = На этом сидят. По своей воле или принудительно.
 
-ent-Chair-name = chair
-ent-Chair-desc = You sit in this. Either by will or force.
+ent-Chair-name = стул
+ent-Chair-desc = На этом сидят. По своей воле или принудительно.
 
-ent-ChairGreyscale-name = chair
-ent-ChairGreyscale-desc = You sit in this. Either by will or force.
+ent-ChairGreyscale-name = стул
+ent-ChairGreyscale-desc = На этом сидят. По своей воле или принудительно.
 
-ent-Stool-name = stool
-ent-Stool-desc = Apply butt.
+ent-Stool-name = табурет
+ent-Stool-desc = Просто сядь.
 
-ent-StoolBar-name = bar stool
-ent-StoolBar-desc = You sit in this. Either by will or force.
+ent-StoolBar-name = барный табурет
+ent-StoolBar-desc = На этом сидят. По своей воле или принудительно.
 
-ent-ChairBrass-name = brass chair
-ent-ChairBrass-desc = You sit in this. Either by will or force.
+ent-ChairBrass-name = латунный стул
+ent-ChairBrass-desc = На этом сидят. По своей воле или принудительно.
 
-ent-ChairOfficeLight-name = white office chair
-ent-ChairOfficeLight-desc = You sit in this. Either by will or force.
+ent-ChairOfficeLight-name = белое офисное кресло
+ent-ChairOfficeLight-desc = На этом сидят. По своей воле или принудительно.
 
-ent-ChairOfficeDark-name = dark office chair
-ent-ChairOfficeDark-desc = You sit in this. Either by will or force.
+ent-ChairOfficeDark-name = тёмное офисное кресло
+ent-ChairOfficeDark-desc = На этом сидят. По своей воле или принудительно.
 
-ent-ComfyChair-name = comfy chair
-ent-ComfyChair-desc = It looks comfy.
+ent-ComfyChair-name = удобное кресло
+ent-ComfyChair-desc = Выглядит удобным.
 
-ent-ChairPilotSeat-name = pilot seat
-ent-ChairPilotSeat-desc = The pilot seat of a prestigious ship.
+ent-ChairPilotSeat-name = кресло пилота
+ent-ChairPilotSeat-desc = Пилотское кресло на борту служебного судна.
 
-ent-ChairWood-name = wooden chair
-ent-ChairWood-desc = You sit in this. Either by will or force.
+ent-ChairWood-name = деревянный стул
+ent-ChairWood-desc = На этом сидят. По своей воле или принудительно.
 
-ent-ChairRitual-name = ritual chair
-ent-ChairRitual-desc = Looks uncomfortable.
+ent-ChairRitual-name = ритуальный стул
+ent-ChairRitual-desc = Выглядит неудобно.
 
-ent-ChairMeat-name = meat chair
-ent-ChairMeat-desc = Uncomfortably sweaty.
+ent-ChairMeat-name = мясной стул
+ent-ChairMeat-desc = Неприятно влажный.
 
-ent-ChairCursed-name = cursed chair
-ent-ChairCursed-desc = It's staring back.
+ent-ChairCursed-name = проклятый стул
+ent-ChairCursed-desc = Он смотрит в ответ.
 
-ent-ChairWeb-name = web chair
-ent-ChairWeb-desc = For true web developers.
+ent-ChairWeb-name = паутинный стул
+ent-ChairWeb-desc = Для настоящих веб-разработчиков.
 
-ent-ChairFolding-name = folding chair
-ent-ChairFolding-desc = If you carry six of these you become the coolest kid at church.
+ent-ChairFolding-name = складной стул
+ent-ChairFolding-desc = Если носишь шесть таких — ты самый крутой в церкви.
 
-ent-SteelBench-name = steel bench
-ent-SteelBench-desc = A long chair made for a metro. Really standard design.
+ent-SteelBench-name = стальная скамья
+ent-SteelBench-desc = Длинное сиденье, типичное для метро. Стандартная конструкция.
 
-ent-WoodenBench-name = wooden bench
-ent-WoodenBench-desc = Did you get a splinter? Well, at least it’s eco friendly.
+ent-WoodenBench-name = деревянная скамья
+ent-WoodenBench-desc = Занозу уже получил? Зато экологично.
 
-ent-ChairXeno-name = xeno chair
-ent-ChairXeno-desc = You sit in this. Either by will or force.
+ent-ChairXeno-name = ксеностул
+ent-ChairXeno-desc = На этом сидят. По своей воле или принудительно.
 
-ent-ChairFoldingSpawnFolded-name = chair
-ent-ChairFoldingSpawnFolded-desc = You sit in this. Either by will or force.
-
+ent-ChairFoldingSpawnFolded-name = стул
+ent-ChairFoldingSpawnFolded-desc = На этом сидят. По своей воле или принудительно.

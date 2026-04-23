@@ -11,6 +11,9 @@
   name: Охотник
   description: Мускулистый, быстрый инопланетянин с острыми когтями.
   components:
+  - type: TTS
+    voice: KEEPER_OF_THE_LIGHT_DOTA_2
+    faction: Xeno
   - type: GhostRole
     name: cm-job-name-xeno-lurker
   - type: Sprite
@@ -71,6 +74,8 @@
       groups:
         Brute: 35
   - type: Tackle
+    min: 3
+    max: 3
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.7
     baseSprintSpeed: 5
@@ -162,6 +167,9 @@
       0: Alive
       390: Critical
       490: Dead
+  - type: Tackle
+    min: 4
+    max: 4
   - type: XenoLeap
     delay: 0
     range: 4

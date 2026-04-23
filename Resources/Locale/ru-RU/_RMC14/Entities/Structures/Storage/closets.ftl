@@ -19,10 +19,10 @@ ent-CMClosetTool = шкаф для инструментов
 ent-CMClosetFire = шкаф пожарной безопасности
   .desc = Это склад противопожарных принадлежностей.
 
-ent-CMClosetEmergency = аварийный туалет
+ent-CMClosetEmergency = аварийный шкаф
   .desc = Это хранилище для аварийных масок и баллонов с кислородом.
 
-ent-RMCClosetPurple = чулан для содержания под стражей
+ent-RMCClosetPurple = фиолетовый шкаф
   .desc = Это хранилище для уборочной одежды и инвентаря.
 
 ent-RMCClosetBlue = юридический шкаф
@@ -31,7 +31,7 @@ ent-RMCClosetBlue = юридический шкаф
 ent-RMCClosetBlack = формальный гардероб
   .desc = Это хранилище для официальной одежды.
 
-ent-RMCCabinetBase = кабинет
+ent-RMCCabinetBase = шкаф
   .desc = Старое всегда будет в моде.
 
 ent-CMClosetBaseUnanchored = шкаф
@@ -40,7 +40,7 @@ ent-CMClosetBaseUnanchored = шкаф
 ent-CMClosetBase = шкаф
   .desc = Это базовая единица хранения.
 
-ent-RMCCabinetBaseUnanchored = кабинет
+ent-RMCCabinetBaseUnanchored = шкаф
   .desc = Старое всегда будет в моде.
 
 ent-CMClosetBioVirology = Шкаф для костюмов биологической защиты 3-го уровня

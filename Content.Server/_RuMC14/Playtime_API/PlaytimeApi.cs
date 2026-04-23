@@ -39,14 +39,26 @@ internal sealed class PlaytimeApi : IPostInjectInit
         _log.Info("Playtime API initialized");
     }
 
+    // FIX #1: нормальное сравнение IP через IPAddress, поддержка нескольких адресов через запятую
+    private bool IsIpAllowed(string remoteIp)
+    {
+        if (!IPAddress.TryParse(remoteIp, out var remote))
+            return false;
+
+        foreach (var entry in _allowedIP.Split(','))
+        {
+            if (IPAddress.TryParse(entry.Trim(), out var allowed) && allowed.Equals(remote))
+                return true;
+        }
+
+        return false;
+    }
+
     private async Task<bool> PlaytimeHandler(IStatusHandlerContext context)
     {
         if (_secret == string.Empty)
-        {
             return false;
-        }
 
-        // Проверяем endpoint
         if (context.RequestMethod != HttpMethod.Post ||
             context.Url.AbsolutePath != "/api/playtime/add")
         {
@@ -57,15 +69,14 @@ internal sealed class PlaytimeApi : IPostInjectInit
 
         _log.Info($"Incoming request from {ip}");
 
-        // IP whitelist
-        if (!_allowedIP.Contains(ip))
+        // FIX #1 применён здесь
+        if (!IsIpAllowed(ip))
         {
             _log.Warning($"Blocked request from unauthorized IP: {ip}");
             await context.RespondErrorAsync(HttpStatusCode.Forbidden);
             return true;
         }
 
-        // Проверка токена
         if (!context.RequestHeaders.TryGetValue("Authorization", out StringValues token) ||
             token.Count == 0 ||
             token[0] != _secret)
@@ -111,6 +122,25 @@ internal sealed class PlaytimeApi : IPostInjectInit
                 continue;
             }
 
+            NetUserId userId;
+
+            if (Guid.TryParse(player.Ckey, out var guid))
+            {
+                userId = new NetUserId(guid);
+            }
+            else
+            {
+                var dbGuid = await _playerLocator.LookupIdByNameAsync(player.Ckey);
+                if (dbGuid == null)
+                {
+                    _log.Error(Loc.GetString("parse-session-fail", ("username", player.Ckey)));
+                    // FIX #2: был return false — говорил роутеру "запрос не обработан".
+                    // Теперь continue — пропускаем этого игрока и продолжаем обработку остальных.
+                    continue;
+                }
+                userId = dbGuid.UserId;
+            }
+
             foreach (var role in player.Roles)
             {
                 var roleName = role.Key;
@@ -124,23 +154,6 @@ internal sealed class PlaytimeApi : IPostInjectInit
 
                 _log.Info($"Playtime add request: {player.Ckey} | {roleName} | {minutes} minutes");
 
-                // TODO: реальное начисление playtime
-                // AddPlaytime(player.Ckey, roleName, minutes);
-                NetUserId userId;
-                if (Guid.TryParse(player.Ckey, out var guid))
-                {
-                    userId = new NetUserId(guid);
-                }
-                else
-                {
-                    var dbGuid = await _playerLocator.LookupIdByNameAsync(player.Ckey);
-                    if (dbGuid == null)
-                    {
-                        _log.Error(Loc.GetString("parse-session-fail", ("username", player.Ckey)));
-                        return false;
-                    }
-                    userId = dbGuid.UserId;
-                }
                 _playTimeTracking.AddTimeToTrackerById(userId, roleName, TimeSpan.FromMinutes(minutes));
 
                 operations++;

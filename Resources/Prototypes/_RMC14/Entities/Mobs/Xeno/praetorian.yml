@@ -11,6 +11,9 @@
   name: Преторианец
   description: Большой чёрный инопланетянин.
   components:
+    - type: TTS
+      voice: QUEEN_OF_PAIN_DOTA_2
+      faction: Xeno
     - type: GhostRole
       name: cm-job-name-xeno-praetorian
     - type: Sprite
@@ -64,7 +67,8 @@
         groups:
           Brute: 48
     - type: Tackle
-      chance: 0.45
+      min: 4
+      max: 4
     - type: Fixtures
       fixtures:
         fix1:

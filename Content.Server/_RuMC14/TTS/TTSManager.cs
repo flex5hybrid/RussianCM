@@ -64,94 +64,101 @@ public sealed class TTSManager
     public async Task<byte[]?> ConvertTextToSpeech(string speaker, string text)
     {
         WantedCount.Inc();
+
         var cacheKey = GenerateCacheKey(speaker, text);
-        if (_cache.TryGetValue(cacheKey, out var data))
+
+        if (_cache.TryGetValue(cacheKey, out var cached))
         {
             ReusedCount.Inc();
-            _sawmill.Verbose($"Use cached sound for '{text}' speech by '{speaker}' speaker");
-            return data;
+            _sawmill.Verbose($"Use cached TTS for '{text}' by '{speaker}'");
+            return cached;
         }
 
-        _sawmill.Verbose($"Generate new audio for '{text}' speech by '{speaker}' speaker");
+        _sawmill.Verbose($"Generate TTS for '{text}' by '{speaker}'");
 
-        // Create the query string parameters instead of a POST body
         var queryParams = new Dictionary<string, string>
         {
             ["speaker"] = speaker,
             ["text"] = text,
-            ["ext"] = "wav" // или "ogg", в зависимости от ваших потребностей
+            ["ext"] = "wav"
         };
 
-        // Build the full URL with query parameters
-        var uriBuilder = new UriBuilder(_apiUrl)
+        if (!Uri.TryCreate(_apiUrl, UriKind.Absolute, out var baseUri))
         {
-            Query = await new FormUrlEncodedContent(queryParams).ReadAsStringAsync()
-        };
-        var requestUrl = uriBuilder.ToString();
+            _sawmill.Error($"Invalid TTS API URL: '{_apiUrl}'");
+            return null;
+        }
+
+        var query = string.Join("&",
+            queryParams.Select(kv =>
+                $"{kv.Key}={Uri.EscapeDataString(kv.Value)}"));
+
+        var requestUri = new UriBuilder(baseUri)
+        {
+            Query = query
+        }.Uri;
 
         _httpClient.DefaultRequestHeaders.Remove("Authorization");
         _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {_apiToken}");
 
-        var reqTime = DateTime.UtcNow;
+        var startTime = DateTime.UtcNow;
+
         try
         {
             var timeout = _cfg.GetCVar(CCCVars.TTSApiTimeout);
-            var cts = new CancellationTokenSource(TimeSpan.FromSeconds(timeout));
+            using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(timeout));
 
-            // Send the GET request
-            var response = await _httpClient.GetAsync(requestUrl, cts.Token);
+            var response = await _httpClient.GetAsync(requestUri, cts.Token);
+
             if (!response.IsSuccessStatusCode)
             {
                 if (response.StatusCode == HttpStatusCode.TooManyRequests)
                 {
-                    _sawmill.Warning("TTS request was rate limited");
+                    _sawmill.Warning("TTS rate limited");
                     return null;
                 }
 
-                _sawmill.Error($"TTS request returned bad status code: {response.StatusCode}");
+                _sawmill.Error($"TTS API error: {response.StatusCode}");
                 return null;
             }
-
-            // var json = await response.Content.ReadFromJsonAsync<GenerateVoiceResponse>(cancellationToken: cts.Token);
-            // if (json.Results == null || json.Results.Count == 0)
-            // {
-            //     _sawmill.Error($"TTS API returned empty results for '{text}'");
-            //     return null;
-            // }
-
-            // var firstResult = json.Results[0];
-            // if (string.IsNullOrEmpty(firstResult.Audio))
-            // {
-            //     _sawmill.Error($"TTS API returned empty audio data for '{text}'");
-            //     return null;
-            // }
 
             var soundData = await response.Content.ReadAsByteArrayAsync(cts.Token);
 
             _cache.Add(cacheKey, soundData);
             _cacheKeysSeq.Add(cacheKey);
+
             if (_cache.Count > _maxCachedCount)
             {
-                var firstKey = _cacheKeysSeq.First();
-                _cache.Remove(firstKey);
-                _cacheKeysSeq.Remove(firstKey);
+                var first = _cacheKeysSeq[0];
+                _cache.Remove(first);
+                _cacheKeysSeq.RemoveAt(0);
             }
 
-            _sawmill.Debug($"Generated new audio for '{text}' speech by '{speaker}' speaker ({soundData.Length} bytes)");
-            RequestTimings.WithLabels("Success").Observe((DateTime.UtcNow - reqTime).TotalSeconds);
+            _sawmill.Debug(
+                $"TTS generated ({soundData.Length} bytes) for '{text}' by '{speaker}'");
+
+            RequestTimings
+                .WithLabels("Success")
+                .Observe((DateTime.UtcNow - startTime).TotalSeconds);
 
             return soundData;
         }
         catch (TaskCanceledException)
         {
-            RequestTimings.WithLabels("Timeout").Observe((DateTime.UtcNow - reqTime).TotalSeconds);
-            _sawmill.Error($"Timeout of request generation new audio for '{text}' speech by '{speaker}' speaker");
+            RequestTimings
+                .WithLabels("Timeout")
+                .Observe((DateTime.UtcNow - startTime).TotalSeconds);
+
+            _sawmill.Error($"TTS timeout for '{text}'");
             return null;
         }
         catch (Exception e)
         {
-            RequestTimings.WithLabels("Error").Observe((DateTime.UtcNow - reqTime).TotalSeconds);
-            _sawmill.Error($"Failed of request generation new sound for '{text}' speech by '{speaker}' speaker\n{e}");
+            RequestTimings
+                .WithLabels("Error")
+                .Observe((DateTime.UtcNow - startTime).TotalSeconds);
+
+            _sawmill.Error($"TTS failed for '{text}'\n{e}");
             return null;
         }
     }

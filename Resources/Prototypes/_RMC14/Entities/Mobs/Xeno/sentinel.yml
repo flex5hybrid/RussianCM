@@ -11,6 +11,9 @@
   name: Страж
   description: Скользкий, плюющийся пришелец.
   components:
+  - type: TTS
+    voice: BOUNTY_HUNTER_DOTA_2
+    faction: Xeno
   - type: GuideHelp
     guides:
     - RMCGuideRoleSentinel
@@ -81,7 +84,6 @@
   - type: Tackle
     min: 4
     max: 4
-    chance: 0.5
     stunMin: 4
     stunMax: 4
   - type: RMCXenoDamageVisuals

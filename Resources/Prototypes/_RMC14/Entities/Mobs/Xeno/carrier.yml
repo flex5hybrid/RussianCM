@@ -11,6 +11,9 @@
   description: A strange-looking alien creature. It carries a number of scuttling jointed crablike creatures.
   abstract: true
   components:
+  - type: TTS
+    voice: KHAJIIT
+    faction: Xeno
   - type: CanBuildThickFromConstructNode
   - type: GhostRole
     name: cm-job-name-xeno-carrier
@@ -58,8 +61,8 @@
       groups:
         Brute: 42
   - type: Tackle
-    max: 4
-    chance: 0.5
+    min: 3
+    max: 3
     stunMin: 4
     stunMax: 5
   - type: TunnelRenamer

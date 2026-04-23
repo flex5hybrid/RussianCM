@@ -31,4 +31,7 @@ public sealed class TTSVoicePrototype : IPrototype
 
     [DataField("sponsorOnly")]
     public bool SponsorOnly { get; } = false;
+
+    [DataField("category")]
+    public string Category { get; } = "Other";
 }

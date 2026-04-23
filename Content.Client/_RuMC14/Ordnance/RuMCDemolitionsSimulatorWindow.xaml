@@ -1,0 +1,72 @@
+<cc:RuMCDemolitionsSimulatorWindow
+    xmlns="https://spacestation14.io"
+    xmlns:cc="clr-namespace:Content.Client._RuMC14.Ordnance"
+    Title="{Loc 'rmc-demolitions-simulator-ui-title'}"
+    MinSize="560 480"
+    SetSize="560 480">
+    <BoxContainer Orientation="Vertical" Margin="8" SeparationOverride="6">
+        <BoxContainer Orientation="Horizontal" SeparationOverride="10" VerticalExpand="True">
+            <BoxContainer Orientation="Vertical" SeparationOverride="4">
+                <Label Text="{Loc 'rmc-demolitions-simulator-ui-blast-zone'}"
+                       FontColorOverride="#aaaaaa"
+                       HorizontalAlignment="Center" />
+                <GridContainer Name="BlastGrid"
+                               Access="Public"
+                               MinSize="306 306"
+                               SetSize="306 306" />
+                <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center" SeparationOverride="4">
+                    <Label Text="{Loc 'rmc-demolitions-simulator-ui-target'}" />
+                    <Button Name="TargetButton"
+                            Access="Public"
+                            Text="{Loc 'rmc-demolitions-simulator-ui-target-xenomorph-drone'}"
+                            MinSize="160 0" />
+                </BoxContainer>
+            </BoxContainer>
+
+            <BoxContainer Orientation="Vertical" HorizontalExpand="True" SeparationOverride="6">
+                <Label Name="CasingLabel"
+                       Access="Public"
+                       Text="{Loc 'rmc-demolitions-simulator-ui-no-casing'}"
+                       FontColorOverride="#cccccc" />
+                <Label Name="VolumeLabel"
+                       Access="Public"
+                       Text=""
+                       FontColorOverride="#aaaaaa" />
+                <Control MinSize="0 4" />
+                <Label Text="{Loc 'rmc-demolitions-simulator-ui-blast-parameters'}" FontColorOverride="#ffcc44" />
+                <Label Name="BlastStatsLabel"
+                       Access="Public"
+                       Text="--"
+                       FontColorOverride="#ffffff" />
+                <Control MinSize="0 4" />
+                <Label Text="{Loc 'rmc-demolitions-simulator-ui-fire-parameters'}" FontColorOverride="#ff6633" />
+                <Label Name="FireStatsLabel"
+                       Access="Public"
+                       Text="--"
+                       FontColorOverride="#ffffff" />
+                <Control MinSize="0 8" />
+                <Label Text="{Loc 'rmc-demolitions-simulator-ui-damage-estimates'}" FontColorOverride="#88dd88" />
+                <ScrollContainer HScrollEnabled="False" HorizontalExpand="True" VerticalExpand="True">
+                    <RichTextLabel Name="DamageTable" Access="Public" HorizontalExpand="True" />
+                </ScrollContainer>
+            </BoxContainer>
+        </BoxContainer>
+
+        <BoxContainer Orientation="Horizontal" SeparationOverride="8" HorizontalAlignment="Center">
+            <Button Name="SimulateButton"
+                    Access="Public"
+                    Text="{Loc 'rmc-demolitions-simulator-ui-simulate'}"
+                    MinSize="120 0" />
+            <Label Name="CooldownLabel"
+                   Access="Public"
+                   Visible="False"
+                   FontColorOverride="#ff8800" />
+        </BoxContainer>
+
+        <Label Name="StatusLabel"
+               Access="Public"
+               Text="{Loc 'rmc-demolitions-simulator-ui-status'}"
+               FontColorOverride="#888888"
+               HorizontalAlignment="Center" />
+    </BoxContainer>
+</cc:RuMCDemolitionsSimulatorWindow>

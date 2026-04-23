@@ -9,6 +9,9 @@
   name: Малый дрон
   description: Инопланетный дрон. Выглядит... меньше.
   components:
+  - type: TTS
+    voice: SANCTUARY_HOUSE_ELF
+    faction: Xeno
   - type: GhostRole
     name: cm-job-name-xeno-lesser-drone
     description: roles-lesser-drone-description
@@ -70,7 +73,7 @@
       groups:
         Brute: 24
   - type: Tackle
-    min: 4
+    min: 5
     max: 5
   - type: AcidBloodSplash
     damage:

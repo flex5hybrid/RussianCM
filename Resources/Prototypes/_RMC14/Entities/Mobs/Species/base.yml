@@ -377,3 +377,4 @@
     - UndergarmentTop
     - Hair
   - type: TTS # TTS RuCM
+    faction: Human

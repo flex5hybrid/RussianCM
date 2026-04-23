@@ -7,7 +7,6 @@ namespace Content.Shared.Corvax.TTS;
 /// Apply TTS for entity chat say messages
 /// </summary>
 [RegisterComponent, NetworkedComponent]
-// ReSharper disable once InconsistentNaming
 public sealed partial class TTSComponent : Component
 {
     /// <summary>
@@ -16,4 +15,17 @@ public sealed partial class TTSComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("voice", customTypeSerializer: typeof(PrototypeIdSerializer<TTSVoicePrototype>))]
     public string? VoicePrototypeId { get; set; }
+
+    /// <summary>
+    /// Фракция говорящего (ксено / люди)
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
+    [DataField("faction")]
+    public HearingFaction Faction { get; set; } = HearingFaction.Human;
+}
+
+public enum HearingFaction
+{
+    Human,
+    Xeno
 }

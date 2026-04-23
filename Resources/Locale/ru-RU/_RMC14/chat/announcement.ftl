@@ -6,7 +6,7 @@ rmc-announcement-message-signed = [font size=16][bold][color=#CECECE]Сообщ�
     {$message}[italic]
     Подписано:
     {$name}[/italic][/color][/font]
-rmc-announcement-message-raw = [размер шрифта=16][жирный][цвет=#CECECE]{$author}[/color][/bold][/font][размер шрифта=16][color=red]
+rmc-announcement-message-raw = [font size=16][bold][color=#CECECE]{$author}[/color][/bold][/font][font size=16][color=red]
     {$message}
 rmc-announcement-ares-message = [color=#CECECE][font size=16][bold]ARES v3.2 Боевое распоряжение[/bold][/font][/color][color=red][font size=16][bold]
     {$message}[/bold][/font][/color]
@@ -26,7 +26,7 @@ rmc-announcement-delta = [color=#CECECE][font size=16][bold]СИСТЕМА СА�
 rmc-announcement-general-quarters = ТРЕВОГА! БОЕВАЯ ГОТОВНОСТЬ. ВСЕМ ЗАНЯТЬ БОЕВЫЕ ПОЗИЦИИ.
 rmc-announcement-dropship-hijack = Обнаружен несанкционированный взлёт десантного корабля из зоны операции. Вероятен угон. Автопилот отключён.
 rmc-announcement-dropship-hijack-hive = Королева приказала железной птице отправиться в металлический улей на небесах! Ликуйте!
-rmc-announcement-ares-command = [color=#CECECE][размер шрифта=16][жирный шрифт]ARES v3.2[/bold][/font][/color][color=red][размер шрифта=16]
+rmc-announcement-ares-command = [color=#CECECE][font size=16][bold]ARES v3.2[/bold][/font][/color][color=red][font size=16]
     {$message}[/font][/color]
 rmc-announcement-unidentified-lifesigns = [color=#CECECE][font size=16][bold]Неопознанные биосигнатуры[/bold][/font][/color][color=red][font size=16][bold]
     На борту десантного корабля {$name} обнаружены неопознанные биосигнатуры ({$count}). Рекомендация: заблокировать внешние шлюзы, включая вентиляционные каналы.[/bold][/font][/color]
