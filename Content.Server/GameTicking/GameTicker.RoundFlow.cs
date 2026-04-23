@@ -222,7 +222,7 @@ namespace Content.Server.GameTicking
                     ev.Offset,
                     ev.Rotation))
             {
-            throw new Exception($"Failed to load game map {ev.GameMap.ID}");
+                throw new Exception($"Failed to load game map {ev.GameMap.ID}");
             }
 
             mapId = map.Value.Comp.MapId;
