@@ -65,11 +65,9 @@ rmc-chembomb-not-armed = Корпус не готов. Сначала завер
 
 # Examine stage
 rmc-chembomb-examine-open = Не закрыт.
-rmc-chembomb-examine-sealed = [color=yellow]Закрыт.[/color] Взведите кусачками.
 
 # Mine casing deployment
 rmc-mine-no-detonator = Детонаторная сборка не установлена.
-rmc-mine-deploy-fail-occupied = Здесь уже есть мина!
 rmc-mine-planted = Мина установлена.
 
 # Ordnance part assembly (combine igniter/timer → detonator assembly)

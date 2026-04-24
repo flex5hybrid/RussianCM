@@ -65,11 +65,9 @@ rmc-chembomb-not-armed = The casing is not ready. Complete the assembly first.
 
 # Examine stage
 rmc-chembomb-examine-open = Unsealed.
-rmc-chembomb-examine-sealed = [color=yellow]Sealed.[/color] Prime with wirecutters.
 
 # Mine casing deployment
 rmc-mine-no-detonator = No detonator assembly installed.
-rmc-mine-deploy-fail-occupied = There is already a mine here!
 rmc-mine-planted = Mine planted.
 
 # Ordnance part assembly (combine igniter/timer → detonator assembly)

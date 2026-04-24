@@ -8,7 +8,10 @@ using Content.Shared.Body.Organ;
 using Content.Shared.Body.Part;
 using Content.Shared.Body.Systems;
 using Content.Shared.Damage;
+using Content.Shared.Explosion.Components;
 using Content.Shared.Humanoid;
+using Content.Shared.Interaction.Events;
+using Content.Shared.Tag;
 
 namespace Content.Server._RMC14.Synth;
 

@@ -136,8 +136,6 @@ public sealed partial class SynthComponent : Component
     [DataField]
     public TimeSpan NextUnableUsePopup;
 
-}
-
     [DataField, AutoNetworkedField]
     public bool HideGeneration = false;
 

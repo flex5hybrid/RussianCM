@@ -26,17 +26,14 @@
         RMCSkillFirearms: 1
         RMCSkillFireman: 3
         RMCSkillConstruction: 1
-        RMCSkillCqc: 3
+        RMCSkillEngineer: 2
         RMCSkillEndurance: 3
         RMCSkillMedical: 2
         RMCSkillSurgery: 1
         RMCSkillMeleeWeapons: 1
         RMCSkillJtac: 1
-        RMCSkillLeadership: 1
-        RMCSkillMedical: 2
-        RMCSkillMeleeWeapons: 1
         RMCSkillPilot: 1
-        RMCSkillSurgery: 1
+        RMCSkillLeadership: 1
     - type: MarineOrders
       moveOrderSoundMale:
         collection: AU14MaleMoveOrder
@@ -56,6 +53,7 @@
     - type: RMCTrackable
     - type: JobPrefix
       prefix: rmc-job-prefix-rcm-pve-team-leader
+
     - type: TacticalMapIcon
       icon:
         sprite: /Textures/_RMC14/Interface/map_blips.rsi

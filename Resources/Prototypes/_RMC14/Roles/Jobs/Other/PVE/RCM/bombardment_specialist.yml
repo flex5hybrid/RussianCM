@@ -26,23 +26,21 @@
         RMCSkillFirearms: 1
         RMCSkillFireman: 3
         RMCSkillConstruction: 1
-        RMCSkillCqc: 3
+        RMCSkillEngineer: 1
         RMCSkillEndurance: 3
         RMCSkillMedical: 2
         RMCSkillSurgery: 1
         RMCSkillMeleeWeapons: 1
         RMCSkillJtac: 1
-        RMCSkillMedical: 2
-        RMCSkillMeleeWeapons: 1
         RMCSkillPilot: 1
         RMCSkillSpecialistWeapons: 1
-        RMCSkillSurgery: 1
     - type: CMVendorUser
       extraPoints:
         Specialist: 120
     - type: GrenadeSpecWhitelist
     - type: JobPrefix
       prefix: rmc-job-prefix-rcm-pve-bombardment-specialist
+
     - type: TacticalMapIcon
       icon:
         sprite: /Textures/_RMC14/Interface/map_blips.rsi
