@@ -1,0 +1,10 @@
+ent-AU14DefibrillatorCabinet-name = Шкаф LifePak 15
+ent-AU14DefibrillatorCabinet-desc = Настенный шкаф, предназначенный для хранения LifePak 15.
+ent-CMUDefibrillatorCabinetFilled-name = Шкаф LifePak 15
+ent-CMUDefibrillatorCabinetFilled-desc = Настенный шкаф, предназначенный для хранения LifePak 15.
+ent-AU14DefibrillatorCabinetOpen-name = шкаф для дефибриллятора
+ent-AU14DefibrillatorCabinetOpen-desc = Маленький настенный шкаф, предназначенный для хранения дефибриллятора.
+ent-AU14DefibrillatorCabinetFilled-name = шкаф для дефибриллятора
+ent-AU14DefibrillatorCabinetFilled-desc = Маленький настенный шкаф, предназначенный для хранения дефибриллятора.
+ent-AU14DefibrillatorCabinetFilledOpen-name = шкаф для дефибриллятора
+ent-AU14DefibrillatorCabinetFilledOpen-desc = Маленький настенный шкаф, предназначенный для хранения дефибриллятора.

@@ -1,0 +1,9 @@
+ent-killteamobjective-name = Цель: Убить врагов
+ent-killplatcoobjectivegovforfof-name = Убить командира ОПФОР (Свой-Чужой)
+ent-killplatcoobjectiveopforfof-name = Убить командира ГОВФОР (Свой-Чужой)
+ent-killplatcoobjective-name = Убить командира ГОВФОР
+ent-killcelleaderobjective-name = Убить лидера ячейки КОФ
+ent-killinsurgentsobjective-name = Убить повстанцев
+ent-killgovforobjective-name = Убить силы ГОВФОР
+ent-killplatcoobjectiveupp-name = Убить командира взвода СПН
+ent-killplatcoobjectivermc-name = Убить командира взвода королевских морпехов

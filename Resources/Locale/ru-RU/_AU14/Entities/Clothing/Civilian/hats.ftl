@@ -1,0 +1,16 @@
+ent-AU14USCMVeteranCap-name = Кепка ветерана КМП США
+ent-AU14USCMVeteranCap-desc = Чёрная кепка с нашивкой КМП США, окружённая словами «USCMC Veteran Semper Fi»
+ent-AU14CivBallCapBlack-name = Чёрная кепка
+ent-AU14CivBallCapBlack-desc = Простая кепка.
+ent-AU14CivFedoraTan-name = Бежевая федора
+ent-AU14CivFedoraTan-desc = Стильная шляпа.
+ent-AU14CivFedoraBrown-name = Коричневая федора
+ent-AU14CivFedoraBrown-desc = Стильная шляпа.
+ent-AU14CivFedoraGray-name = Серая федора
+ent-AU14CivFedoraGray-desc = Стильная шляпа.
+ent-AU14CivBallCapBlueTrucker-name = Синяя кепка тракера
+ent-AU14CivBallCapBlueTrucker-desc = Кепка тракера.
+ent-AU14CivBallCapRedTrucker-name = Красная кепка таркера
+ent-AU14CivBallCapRedTrucker-desc = Кепка- тракера.
+ent-AU14HeadPithHelmet-name = Пробковый шлем
+ent-AU14HeadPithHelmet-desc = Пережиток ушедшей эпохи империализма. Эта стильно простая и незамысловатая шляпа — любимый головной убор одного известного охотника на крупную дичь.

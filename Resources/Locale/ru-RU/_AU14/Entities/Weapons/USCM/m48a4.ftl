@@ -1,0 +1,9 @@
+ent-AU14WeaponPistolM48A5Officer-name = Табельный пистолет M48A5
+ent-AU14WeaponPistolM48A5Officer-desc = Нестареющая классика со времён Первой мировой войны, M1911A1 имеет ограниченное применение в КМП США и часто используется негосударственными структурами в качестве табельного оружия из-за своей надёжности. Адаптация M48A4 с усиленной каморой, стволом и затвором для работы с более высокими нагрузками, обозначенная как M48A5. Использует патрон .45 Super, но также может заряжаться обычным .45 ACP.
+ent-AU14MagazinePistolM48A4-name = предмет
+ent-AU14MagazinePistolM48A4-desc = Пистолетный магазин.
+ent-AU14MagazinePistolM48A5Super-name = предмет
+ent-AU14MagazinePistolM48A5Super-desc = Пистолетный магазин.
+ent-AU14CartridgePistolM48A5Super-name = патрон (.35 auto)
+ent-AU14BulletPistol45Super-name = пуля (.45 Super)
+ent-AU14BulletPistol45Super-desc = Если ты это видишь, ты, вероятно, мёртв!

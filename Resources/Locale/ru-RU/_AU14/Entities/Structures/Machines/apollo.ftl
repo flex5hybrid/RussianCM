@@ -1,0 +1,15 @@
+ent-AU14AICoreApolloCivilian-name = Центральный ИИ APOLLO
+ent-AU14AICoreApolloCivilian-desc = Это система искусственного интеллекта для мониторинга Рабочих Джо. Произведено корпорацией Seegson.
+ent-AU14AICoreApolloGOVFOR-name = Центральный ИИ APOLLO
+ent-AU14AICoreApolloGOVFOR-desc = Это система искусственного интеллекта для мониторинга Рабочих Джо. Произведено корпорацией Seegson.
+ent-AU14AICoreApolloOPFOR-name = Центральный ИИ APOLLO
+ent-AU14AICoreApolloOPFOR-desc = Это система искусственного интеллекта для мониторинга Рабочих Джо. Произведено корпорацией Seegson.
+ent-AU14AICoreCPU-name = Центральный процессор APOLLO
+ent-AU14AICoreCPU-desc = Это центральный процессор APOLLO. Изготовленный в корпусе, способном выдержать ядерный взрыв, процессор также содержит регистратор чёрного ящика APOLLO.
+ent-AU14AICoreSubstrate-name = Субстрат APOLLO
+ent-AU14AICoreSubstrate-desc = Субстрат памяти APOLLO, содержащий сложные протоколы и информацию. Ограниченные возможности могут работать только на субстрате, без функционирования основного блока APOLLO.
+ent-APOLLOAICoreProcessor-name = Процессор APOLLO
+ent-APOLLOAICoreProcessor-desc = Внешний процессор для APOLLO, используемый для обработки огромных объёмов информации.
+ent-AU14AreaGAAI-name = Интерфейс Центрального ИИ APOLLO
+ent-AU14ChairComfyAI-name = кресло-интерфейс Центрального ИИ APOLLO
+ent-AU14ChairComfyAI-desc = Функциональное кресло, предназначенное для комфортного размещения одного человека с целью облегчения взаимодействия с корабельным ИИ.

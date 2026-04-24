@@ -1,0 +1,16 @@
+ent-AU14Dumpster-name = мусорный бак
+ent-AU14Dumpster-desc = Наполнен тем, что вы надеетесь, является просто мусором, но вы знаете, что это не так.
+ent-AU14DumpsterBlue-name = мусорный бак
+ent-AU14DumpsterBlue-desc = Наполнен тем, что вы надеетесь, является просто мусором, но вы знаете, что это не так.
+ent-AU14DumpsterYellow-name = мусорный бак
+ent-AU14DumpsterYellow-desc = Наполнен тем, что вы надеетесь, является просто мусором, но вы знаете, что это не так.
+ent-AU14DumpsterRed-name = мусорный бак
+ent-AU14DumpsterRed-desc = Наполнен тем, что вы надеетесь, является просто мусором, но вы знаете, что это не так.
+ent-AU14DumpsterGreen-name = мусорный бак
+ent-AU14DumpsterGreen-desc = Наполнен тем, что вы надеетесь, является просто мусором, но вы знаете, что это не так.
+ent-AU14DumpsterOrange-name = мусорный бак
+ent-AU14DumpsterOrange-desc = Наполнен тем, что вы надеетесь, является просто мусором, но вы знаете, что это не так.
+ent-AU14DumpsterPurple-name = мусорный бак
+ent-AU14DumpsterPurple-desc = Наполнен тем, что вы надеетесь, является просто мусором, но вы знаете, что это не так.
+ent-AU14DumpsterWeYu-name = мусорный бак
+ent-AU14DumpsterWeYu-desc = Наполнен тем, что вы надеетесь, является просто мусором, но вы знаете, что это не так.

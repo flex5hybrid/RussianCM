@@ -1,0 +1,10 @@
+ent-AU14WYPMCFatigues-name = Полевая форма ЧВК ВЕ-Ю
+ent-AU14WYPMCFatigues-desc = Стандартный комплект полевой формы ЧВК Weyland-Yutani. Содержит вставки из лёгкого кевлара для защиты от осколков.
+ent-AU14JumpsuitVeteranPMCCorporate-name = Корпоративная форма безопасности We-Yu
+ent-AU14JumpsuitVeteranPMCCorporate-desc = Бронированная форма, которую носят сотрудники корпоративной службы безопасности We-Yu. Этот вариант обычно носят «боевики».
+ent-AU14JumpsuitVeteranPMCCorporateLead-name = Корпоративная форма безопасности We-Yu
+ent-AU14JumpsuitVeteranPMCCorporateLead-desc = Бронированная форма, которую носят сотрудники корпоративной службы безопасности We-Yu. Этот вариант обычно носит руководитель «боевой группы», как их в просторечии называют.
+ent-AU14WYPMCFatiguesEngineer-name = Полевая форма инженера ЧВК ВЕ-Ю
+ent-AU14WYPMCFatiguesEngineer-desc = Стандартный комплект полевой формы инженера ЧВК Weyland-Yutani. Содержит вставки из лёгкого кевлара для защиты от осколков.
+ent-AU14WYGuardFatigues-name = Полевая форма охраны ВЕ-Ю
+ent-AU14WYGuardFatigues-desc = Стандартный комплект полевой формы охраны Weyland-Yutani. Содержит вставки из лёгкого кевлара для защиты от осколков.

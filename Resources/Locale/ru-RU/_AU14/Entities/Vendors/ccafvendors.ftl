@@ -1,0 +1,12 @@
+ent-AU14CCAFclothingequipmentvendor-name = Торговый автомат со снаряжением CCAF
+ent-AU14CCAFclothingequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу специализированной морской экипировки.
+ent-AU14CCAFMGequipmentvendor-name = Торговый автомат со снаряжением оператора смартгана CCAF
+ent-AU14CCAFMGequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу снаряжения пулемётчика.
+ent-AU14CCAFWeaponsVendor-name = Оружейная стойка CCAF
+ent-AU14CCAFWeaponsVendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу оружия.
+ent-AU14CCAFSpecialWeaponsVendor-name = Стойка специального оружия CCAF
+ent-AU14CCAFSpecialWeaponsVendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу специального оружия.
+ent-AU14CCAFcommandequipmentvendor-name = Командный торговый автомат CCAF
+ent-AU14CCAFcommandequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу командной экипировки и снаряжения. Вперёд, морпехи!
+ent-AU14CCAFsectionleaderequipmentvendor-name = Торговый автомат командира отделения CCAF
+ent-AU14CCAFsectionleaderequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу экипировки и снаряжения для командира отделения.

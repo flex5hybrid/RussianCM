@@ -1,0 +1,15 @@
+ent-AUPlanetLV747-name = Солнечный Овраг
+ent-AUPlanetShepherdsPride-name = Приют Пастыря
+ent-AUPlanetStableGarrison-name = Гарнизон
+ent-AUPlanetLV624-name = LV624
+ent-AUPlanetGixensCaverns-name = Пещеры Гиксена
+ent-AUPlanetFlight-name = Побег
+ent-AUPlanetLV759-name = Метрополитен Гибриса
+ent-AUPlanetLV327-name = Порт Нероид
+ent-AUPlanetCorsatStation-name = Станция Корсат
+ent-CMUPlanetLament-name = LV-376 «Уликс»
+ent-AUPlanetSorokyne-name = Сорокина Страта
+ent-AUPlanetTrijent-name = Дамба Триджент
+ent-AuPlanetShivasSnowball-name = Снежный Шар Шивы
+ent-AuPlanetKutjevo-name = Биолаборатория Кутьево
+ent-AuPlanetFiorina-name = Тюрьма Фиорина
