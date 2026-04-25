@@ -17,7 +17,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-defender
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Defender/defender.rsi
+    sprite: _AU14/Mobs/Xenos/Defender/defender.rsi # AU14-Edit
   - type: MobState
     allowedStates:
     - Alive
@@ -150,7 +150,7 @@
   suffix: Steelcrest
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Defender/steelcrest_defender.rsi
+    sprite: _AU14/Mobs/Xenos/Defender/steelcrest_defender.rsi # AU14-Edit
   - type: Xeno
     actionIds:
     - ActionXenoRest

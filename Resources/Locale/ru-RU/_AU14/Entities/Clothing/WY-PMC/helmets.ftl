@@ -1,0 +1,10 @@
+ent-AU14WYPMCHelmet-name = Шлем ЧВК ВЕ-Ю
+ent-AU14WYPMCHelmet-desc = Шлем ЧВК ВЕ-Ю.
+ent-AU14WYPMCSniperHat-name = Шляпа снайпера ЧВК ВЕ-Ю
+ent-AU14WYPMCSniperHat-desc = Шлем ЧВК ВЕ-Ю.
+ent-AU14ArmorHelmetPMCTactical-name = Тактический шлем ЧВК ВЕ-Ю
+ent-AU14ArmorHelmetPMCTactical-desc = Претендент на использование Королевскими Морпехами-Коммандос, в настоящее время проходит полевые испытания исключительно на наёмниках Weyland-Yutani. Оснащён баллистической маской и встроенным дисплеем, связанным с визором.
+ent-AU14ArmorHelmetPMCTacticalEngi-name = Тактический шлем инженера ЧВК ВЕ-Ю
+ent-AU14ArmorHelmetPMCTacticalEngi-desc = Претендент на использование Королевскими Морпехами-Коммандос, в настоящее время проходит полевые испытания исключительно на наёмниках Weyland-Yutani. Оснащён баллистической маской и встроенным дисплеем, связанным с визором.
+ent-AU14WYPMCHelmetHeavy-name = Тяжёлый шлем ЧВК ВЕ-Ю
+ent-AU14WYPMCHelmetHeavy-desc = Шлем ЧВК ВЕ-Ю.

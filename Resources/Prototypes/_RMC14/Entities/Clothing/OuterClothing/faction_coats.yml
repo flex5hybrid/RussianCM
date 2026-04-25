@@ -1,7 +1,7 @@
 # Bureau
 
 - type: entity
-  parent: [RMCAllowSuitStorageClothingJacketMB, RMCBaseJacket]
+  parent: RMCOuterClothingExternalWebbing
   id: RMCCoatBureauTrenchCoatBrown
   name: brown trench-coat
   description: A worn, brown, old style trench-coat. When a bum sees a cop coming, he don't stick around.
@@ -35,7 +35,7 @@
 
 # Bureau Deputy
 - type: entity
-  parent: [RMCAllowSuitStorageClothingJacketMB, RMCBaseJacket]
+  parent: RMCOuterClothingExternalWebbing
   id: RMCCoatBureauDeputy
   name: CMB deputy jacket
   description: A thick and stylish black leather jacket with a Marshal's Deputy badge pinned to it. The back is enscribed with the powerful letters of 'DEPUTY' representing justice, authority, and protection in the outer rim.
@@ -129,10 +129,10 @@
 
 # TSEPA
 - type: entity
-  parent: [RMCAllowSuitStorageClothingJacketMB, RMCBaseJacket]
+  parent: RMCOuterClothingExternalWebbing
   id: RMCCoatTSEPA
-  name: TSEPA police jacket
-  description: A black polyester jacket with a silver Sakura emblem of the TSEPA pinned to it. Empire and Honor, Bound by Duty. Duty Beyond Borders, Justice Across Worlds.
+  name: NSPA police jacket
+  description: A black polyester jacket with a silver Sakura emblem of the Neroid Sector Policing Authority pinned to it. Empire and Honor, Bound by Duty. Duty Beyond Borders, Justice Across Worlds.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/jacket.rsi
@@ -147,8 +147,8 @@
 - type: entity
   parent: RMCCoatTSEPA
   id: RMCCoatTSEPAFormal
-  name: TSEPA police formal jacket
-  description: A heavy woolen formal coat commonly used by TSEPA Constables. Empire and Honor, Bound by Duty. Duty Beyond Borders, Justice Across Worlds.
+  name: NSPA police formal jacket
+  description: A heavy woolen formal coat commonly used by Neroid Sector Policing Authority Constables. Empire and Honor, Bound by Duty. Duty Beyond Borders, Justice Across Worlds.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/formal_jacket.rsi
@@ -158,8 +158,8 @@
 - type: entity
   parent: RMCCoatTSEPA
   id: RMCCoatTSEPAHighVis
-  name: TSEPA high-vis jacket
-  description: A green and white striped (high-visibility) polyester vest commonly used by TSEPA personnel.
+  name: NSPA high-vis jacket
+  description: A green and white striped (high-visibility) polyester vest commonly used by Neroid Sector Policing Authority personnel.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/highvis_jacket.rsi
@@ -169,8 +169,8 @@
 - type: entity
   parent: RMCCoatTSEPA
   id: RMCCoatTSEPAHighVisVest
-  name: TSEPA hazard vest
-  description: A green and white striped (high-visibility) polyester vest commonly used by TSEPA personnel.
+  name: NSPA hazard vest
+  description: A green and white striped (high-visibility) polyester vest commonly used by Neroid Sector Policing Authority personnel.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/highvis_vest.rsi
@@ -194,8 +194,8 @@
 - type: entity
   parent: RMCBaseJacket
   id: RMCCoatWeYaPilot
-  name: Weston-Yamada Pilot formal-jacket
-  description: A suit-style jacket with a fur lined collar and golden epaulettes signifying rank. Worn by Weston-Yamada qualified civilian Pilots, akin to old Earth formal Pilots-wear.
+  name: Weyland-Yutani Pilot formal-jacket
+  description: A suit-style jacket with a fur lined collar and golden epaulettes signifying rank. Worn by Weyland-Yutani qualified civilian Pilots, akin to old Earth formal Pilots-wear.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/weya_pilot.rsi

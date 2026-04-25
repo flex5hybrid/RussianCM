@@ -6,7 +6,6 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 namespace Content.Shared._RMC14.Requisitions.Components;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState(true), AutoGenerateComponentPause]
-[Access(typeof(SharedRequisitionsSystem))]
 public sealed partial class RequisitionsElevatorComponent : Component
 {
     [DataField]
@@ -71,6 +70,9 @@ public sealed partial class RequisitionsElevatorComponent : Component
 
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
     public TimeSpan NextChasmCheck;
+
+    [DataField("faction")]
+    public string Faction = "none";
 }
 
 [Serializable, NetSerializable]

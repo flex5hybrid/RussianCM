@@ -371,3 +371,11 @@
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/aegis.rsi
     state: bloody
+
+# AU14 edit
+
+- type: entity
+  id: FactionWeYa
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: IFFFaction

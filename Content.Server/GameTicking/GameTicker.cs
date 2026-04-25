@@ -1,6 +1,8 @@
 using Content.Server._RMC14.Rules;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
+using Content.Server.AU14.Objectives;
+using Content.Server.AU14.Round;
 using Content.Server.Chat.Managers;
 using Content.Server.Chat.Systems;
 using Content.Server.Database;
@@ -22,6 +24,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Console;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.Map;
+using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
@@ -67,7 +70,7 @@ namespace Content.Server.GameTicking
         [Dependency] private readonly SharedRoleSystem _roles = default!;
         [Dependency] private readonly ServerDbEntryManager _dbEntryManager = default!;
         [Dependency] private readonly CMDistressSignalRuleSystem _distressSignal = default!;
-
+        [Dependency] private readonly AuObjectiveSystem _auobjectivesystem = default!;
         [ViewVariables] private bool _initialized;
         [ViewVariables] private bool _postInitialized;
 
@@ -99,6 +102,7 @@ namespace Content.Server.GameTicking
                 "Overflow role does not have the correct name!");
             InitializeGameRules();
             InitializeReplays();
+            SubscribeNetworkEvent<Content.Shared.GameTicking.TickerJoinLobbyEvent>(OnTickerJoinLobbyEvent);
             _initialized = true;
         }
 
@@ -134,6 +138,26 @@ namespace Content.Server.GameTicking
             base.Update(frameTime);
             UpdateRoundFlow(frameTime);
             UpdateGameRules();
+        }
+
+        private void OnTickerJoinLobbyEvent(Content.Shared.GameTicking.TickerJoinLobbyEvent ev, EntitySessionEventArgs args)
+        {
+            var presetId = CurrentPreset?.ID?.ToLowerInvariant();
+            if (presetId != "forceonforce")
+            {
+                _chatManager.DispatchServerMessage(args.SenderSession, "Respawn is disabled in this gamemode");
+                return;
+            }
+
+            if (_auobjectivesystem.iswinactive)
+            {
+
+                _chatManager.DispatchServerMessage(args.SenderSession, "Respawn is disabled in this gamemode");
+                return;
+
+            }
+            // Send the requesting player to the lobby
+            PlayerJoinLobby(args.SenderSession);
         }
     }
 }

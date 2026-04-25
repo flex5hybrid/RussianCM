@@ -1,0 +1,67 @@
+﻿- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardMobBoss
+  name: Mob boss ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobMobBoss
+  - type: IdCard
+    jobTitle: au14-id-job-title-colony-civilian
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardMobGoon
+  name: Mob goon ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobMobGoon
+  - type: IdCard
+    jobTitle: au14-id-job-title-colony-civilian
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardCivilianPizzaDeliveryBoy
+  name: delivery pizza boy ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobCivilianDeliveryPizzaBoy
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardCivilianProfessorVonBandolier
+  name: professor von bandolier ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobCivilianProfessorVonBandolier
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardTimeSharesSalesman
+  name: times shares saleperson ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobCivilianTimesSharesSalesman
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardRedCrossCMO
+  name: icrc medical staff cmo ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobRedCrossCMO
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardRedCrossDoctor
+  name: icrc medical staff doctor ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobRedCrossDoctor
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardRedCrossNurse
+  name: icrc medical staff nurse ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobRedCrossNurse

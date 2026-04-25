@@ -1,7 +1,7 @@
 ﻿- type: entity
   id: RMCOrbitalCannonDerelict
-  name: derelict orbital cannon
-  description: "The UNMC Orbital Cannon System. Used for shooting large targets on the planet that is orbited. This one appears inoperable."
+  name: orbital cannon
+  description: "The USCMC Orbital Cannon System. Used for shooting large targets on the planet that is orbited. It accelerates its payload with solid fuel for devastating results upon impact."
   placement:
     mode: SnapgridCenter
   components:

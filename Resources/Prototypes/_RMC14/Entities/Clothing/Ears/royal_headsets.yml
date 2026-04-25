@@ -17,14 +17,14 @@
       - RMCEncryptionKeyRoyalMarine
   - type: RMCHeadset
     channels:
-    - RoyalMarine
-  - type: GrantTacMapAlert
+    - TWESOF
+
 
 - type: entity
   parent: RMCHeadsetRoyalMarine
   id: RMCHeadsetRoyalMarineLeader
   name: royal marine leader's headset
-  description: A sleek headset used by the Royal Crown Marines. Low profile enough to fit under their unique helmets. 
+  description: A sleek headset used by the Royal Crown Marines. Low profile enough to fit under their unique helmets.
   components:
   - type: ContainerFill
     containers:
@@ -32,7 +32,7 @@
       - RMCEncryptionKeyRoyalMarineCommand
   - type: RMCHeadset
     radioTextIncrease: 2
-  - type: GrantTacMapAlert
+
 
 - type: entity
   parent: RMCHeadsetRoyalMarine
@@ -46,14 +46,14 @@
       - RMCEncryptionKeyRoyalMarineCommand
   - type: RMCHeadset
     radioTextIncrease: 3
-  - type: GrantTacMapAlert
+
 
 - type: entity
   parent: RMCHeadsetRoyalMarine
   id: RMCHeadsetRoyalMarinePVE
   name: royal marine's headset
   suffix: PVE
-  description: A sleek headset used by the Royal Crown Marines. Low profile enough to fit under their unique helmets. 
+  description: A sleek headset used by the Royal Crown Marines. Low profile enough to fit under their unique helmets.
   components:
   - type: GrantSquadLeaderTracker
     defaultMode: RCMPVETroopCommander
@@ -64,8 +64,8 @@
     - RCMPVETroopCommander
   - type: RMCHeadset
     channels:
-    - RoyalMarine
-  - type: GrantTacMapAlert
+    - TWESOF
+
 
 - type: entity
   parent: RMCHeadsetRoyalMarinePVE
@@ -80,7 +80,7 @@
       - RMCEncryptionKeyRoyalMarineCommand
   - type: RMCHeadset
     radioTextIncrease: 3
-  - type: GrantTacMapAlert
+
 
 - type: entity
   parent: CMEncryptionKey
@@ -90,8 +90,8 @@
   - type: EncryptionKey
     channels:
     - MarineCommon
-    - RoyalMarine
-    defaultChannel: RoyalMarine
+    - TWESOF
+    defaultChannel: TWESOF
   - type: Sprite
     state: sl_key
 
@@ -103,5 +103,5 @@
   - type: EncryptionKey
     channels:
     - MarineCommon
-    - RoyalMarine
+    - TWESOF
     - MarineCommand

@@ -48,7 +48,6 @@
   - type: GunDamageModifier
     multiplier: 0.9
   - type: AttachableHolder
-    randomAttachmentChance: 0.38
     slots:
       rmc-aslot-barrel:
         whitelist:
@@ -58,10 +57,6 @@
           - RMCAttachmentRecoilCompensator
           - RMCAttachmentExtendedCompensator
           - RMCM5Bayonet
-        random:
-          - RMCAttachmentExtendedBarrel
-          - RMCAttachmentSuppressor
-          - RMCM5Bayonet # Replace with SPP Bayonet when that is added
       rmc-aslot-rail:
         whitelist:
           tags:
@@ -71,11 +66,6 @@
           - RMCAttachmentS6ReflexSight
           - RMCAttachmentS42xTelescopicMiniscope
           - RMCAttachmentS84xTelescopicScope
-        random:
-          - RMCAttachmentMagneticHarness
-          - RMCAttachmentS5RedDotSight
-          - RMCAttachmentS6ReflexSight
-          - RMCAttachmentS42xTelescopicMiniscope
       rmc-aslot-underbarrel:
         whitelist:
           tags:
@@ -89,13 +79,6 @@
           - RMCAttachmentAngledGrip
           - RMCAttachmentVerticalGrip
           - RMCAttachmentLaserSight
-        random:
-          - RMCAttachmentLaserSight
-          - RMCAttachmentAngledGrip
-          - RMCAttachmentVerticalGrip
-          - RMCAttachmentU7UnderbarrelShotgun
-          - RMCAttachmentUnderbarrelExtinguisher
-          - RMCAttachmentBipod
   - type: AttachableHolderVisuals
     offsets:
       rmc-aslot-barrel: 0.75, 0.00

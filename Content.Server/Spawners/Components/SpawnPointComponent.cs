@@ -27,4 +27,6 @@ public enum SpawnPointType
     LateJoin,
     Job,
     Observer,
+    LateJoinOpfor,
+    LateJoinGovfor,
 }

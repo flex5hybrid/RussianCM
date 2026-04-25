@@ -3,6 +3,7 @@ using Content.Shared.Antag;
 using Content.Shared.Destructible.Thresholds;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
+using Content.Shared.Roles.Jobs;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
 using Robust.Shared.Player;
@@ -134,8 +135,17 @@ public partial struct AntagSelectionDefinition()
     [DataField]
     public bool LateJoinAdditional = false;
 
-    //todo: find out how to do this with minimal boilerplate: filler department, maybe?
-    //public HashSet<ProtoId<JobPrototype>> JobBlacklist = new()
+    /// <summary>
+    /// If set, only players with one of these jobs can become this antag.
+    /// </summary>
+    [DataField]
+    public HashSet<ProtoId<JobPrototype>>? JobWhitelist;
+
+    /// <summary>
+    /// If set, players with any of these jobs cannot become this antag.
+    /// </summary>
+    [DataField]
+    public HashSet<ProtoId<JobPrototype>>? JobBlacklist;
 
     /// <remarks>
     /// Mostly just here for legacy compatibility and reducing boilerplate

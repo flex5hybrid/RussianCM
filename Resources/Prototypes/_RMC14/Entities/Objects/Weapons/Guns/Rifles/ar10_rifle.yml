@@ -114,6 +114,7 @@
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleAR10
   name: "AR10 Magazine (7.62x51mm)"
+  description: A 20-round magazine for the AR10 rifle.
   components:
   - type: Tag
     tags:
@@ -123,7 +124,7 @@
     mayTransfer: True
     whitelist:
       tags:
-      - RMCCartridgeRifleAR10
+        - RMCCartridgeRifleAR10
     proto: RMCCartridgeRifleAR10
     capacity: 20
   - type: Sprite
@@ -138,8 +139,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleAR10
-  name: Cartridge (7.62x51)
-  description: A 7.62x51 rifle cartridge
+  name: cartridge (7.62x51mm)
+  description: A 7.62x51mm cartridge for the AR10 rifle.
   components:
   - type: Tag
     tags:

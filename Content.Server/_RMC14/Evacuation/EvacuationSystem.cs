@@ -31,6 +31,13 @@ public sealed class EvacuationSystem : SharedEvacuationSystem
     {
         base.LaunchEvacuationFTL(grid, crashLandChance, launchSound);
 
+        // Mark this grid as evacuated so kill-all rules can exclude its occupants.
+        EnsureComp<EvacuatedGridComponent>(grid);
+
+        // Raise broadcast event so kill-all rules re-check victory conditions (prevents softlock).
+        var ev = new EvacuationLaunchedEvent(grid);
+        RaiseLocalEvent(ref ev);
+
         var sound = EnsureComp<PlaySoundOnFTLStartComponent>(grid);
         sound.Sound = launchSound;
         Dirty(grid, sound);

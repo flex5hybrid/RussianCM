@@ -29,9 +29,22 @@
     - type: SniperWhitelist
     - type: PyroWhitelist
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: NpcFactionMember
       factions:
       - CLF
+    - type: CLFMember
     - type: JobPrefix
       prefix: rmc-job-prefix-clf-specialist
   hidden: true
@@ -78,7 +91,6 @@
     gloves: CMHandsBlackMarine
     shoes: RMCShoesBrown
     id: RMCIDCardCLFSpecialist
-    belt: RMCM77BeltFilled
     back: RMCSatchelLightpack
     suitstorage: RMCWeaponMar50LMG
     pocket1: RMCPouchExplosiveFilledC4SPP

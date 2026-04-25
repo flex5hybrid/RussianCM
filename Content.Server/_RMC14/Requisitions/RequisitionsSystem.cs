@@ -1,24 +1,39 @@
-﻿using System.Numerics;
+﻿using System;
+using System.Numerics;
 using System.Runtime.InteropServices;
 using Content.Server.Administration.Logs;
+using Content.Server.AU14.Round;
 using Content.Server.Cargo.Components;
 using Content.Server.Chat.Systems;
 using Content.Server.Storage.EntitySystems;
+using Content.Shared.Access;
+using Content.Shared.Access.Components;
+using Content.Shared.Access.Systems;
+using Content.Shared.Containers.ItemSlots;
+using Content.Shared.Labels.Components;
+using Content.Shared.Lock;
+using Content.Shared.Paper;
+using Content.Server.Store.Components;
 using Content.Shared._RMC14.CCVar;
 using Content.Shared._RMC14.Requisitions;
 using Content.Shared._RMC14.Requisitions.Components;
 using Content.Shared._RMC14.Weapons.Ranged.IFF;
 using Content.Shared._RMC14.Xenonids;
+using Content.Shared.AU14.ColonyEconomy;
+using Content.Shared.AU14.util;
+using Content.Shared.Cargo.Components;
 using Content.Shared.Chasm;
 using Content.Shared.Coordinates;
 using Content.Shared.Database;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Physics;
 using Content.Shared.Random.Helpers;
+using Content.Shared.Stacks;
 using Content.Shared.UserInterface;
 using Robust.Server.Audio;
 using Robust.Server.GameObjects;
 using Robust.Shared.Configuration;
+using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Physics.Dynamics;
@@ -44,6 +59,7 @@ public sealed partial class RequisitionsSystem : SharedRequisitionsSystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly XenoSystem _xeno = default!;
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
     private static readonly EntProtoId AccountId = "RMCASRSAccount";
     private static readonly EntProtoId PaperRequisitionInvoice = "RMCPaperRequisitionInvoice";
@@ -62,8 +78,10 @@ public sealed partial class RequisitionsSystem : SharedRequisitionsSystem
 
         _chasmQuery = GetEntityQuery<ChasmComponent>();
         _chasmFallingQuery = GetEntityQuery<ChasmFallingComponent>();
+        SubscribeLocalEvent<ColonyAtmComponent, EntInsertedIntoContainerMessage>(OnMoneyInserted);
 
         SubscribeLocalEvent<RequisitionsComputerComponent, MapInitEvent>(OnComputerMapInit);
+        SubscribeLocalEvent<RequisitionsComputerComponent, ComponentStartup>(OnComputerStartup);
         SubscribeLocalEvent<RequisitionsComputerComponent, BeforeActivatableUIOpenEvent>(OnComputerBeforeActivatableUIOpen);
 
         Subs.BuiEvents<RequisitionsComputerComponent>(RequisitionsUIKey.Key, subs =>
@@ -74,12 +92,76 @@ public sealed partial class RequisitionsSystem : SharedRequisitionsSystem
 
         Subs.CVar(_config, RMCCVars.RMCRequisitionsBalanceGain, v => _gain = v, true);
         Subs.CVar(_config, RMCCVars.RMCRequisitionsFreeCratesXenoDivider, v => _freeCratesXenoDivider = v, true);
+
     }
 
-    private void OnComputerMapInit(Entity<RequisitionsComputerComponent> ent, ref MapInitEvent args)
+    private void OnComputerStartup(EntityUid uid, RequisitionsComputerComponent comp, ComponentStartup args)
     {
-        ent.Comp.Account = GetAccount();
-        Dirty(ent);
+        ApplyPlatoonCatalogToComputer(uid, comp);
+    }
+
+    private void OnComputerMapInit(EntityUid uid, RequisitionsComputerComponent comp, MapInitEvent args)
+    {
+        // Assign a faction-specific account where applicable
+        comp.Account = GetAccount(comp.Faction);
+
+        // Also apply platoon catalog in case the console needs a custom catalog based on current round
+        ApplyPlatoonCatalogToComputer(uid, comp);
+        Dirty(uid, comp);
+    }
+
+    private void ApplyPlatoonCatalogToComputer(EntityUid consoleUid, RequisitionsComputerComponent comp)
+    {
+        if (comp == null)
+            return;
+
+        var faction = comp.Faction ?? "none";
+        Log.Debug($"[Requisitions] Applying platoon catalog for console {consoleUid} faction={faction}");
+        var platoonSys = EntityManager.EntitySysManager.GetEntitySystem<PlatoonSpawnRuleSystem>();
+        var govPlatoon = platoonSys?.SelectedGovforPlatoon;
+        var opPlatoon = platoonSys?.SelectedOpforPlatoon;
+
+        PlatoonPrototype? chosenPlatoon = null;
+        if (string.Equals(faction, "govfor", StringComparison.OrdinalIgnoreCase))
+            chosenPlatoon = govPlatoon;
+        else if (string.Equals(faction, "opfor", StringComparison.OrdinalIgnoreCase))
+            chosenPlatoon = opPlatoon;
+
+        if (chosenPlatoon == null)
+        {
+            Log.Debug($"[Requisitions] No chosen platoon found for faction {faction}");
+            return;
+        }
+
+        var catalogProtoId = chosenPlatoon.Reqlist;
+        Log.Debug($"[Requisitions] Chosen platoon ID {chosenPlatoon.ID} reqlist={catalogProtoId}");
+        if (string.IsNullOrEmpty(catalogProtoId))
+            return;
+
+        if (!_prototypeManager.TryIndex<EntityPrototype>(catalogProtoId, out var catalogProto))
+        {
+            Log.Debug($"[Requisitions] Catalog prototype {catalogProtoId} not found");
+            return;
+        }
+
+        if (!catalogProto.Components.TryGetValue("RequisitionsComputer", out var compEntry))
+        {
+            Log.Debug($"[Requisitions] Catalog prototype {catalogProtoId} has no RequisitionsComputer component");
+            return;
+        }
+
+        if (compEntry.Component is not RequisitionsComputerComponent catalogComp)
+        {
+            Log.Debug($"[Requisitions] Catalog prototype {catalogProtoId} RequisitionsComputer component has unexpected type");
+            return;
+        }
+
+        comp.Categories = catalogComp.Categories != null
+            ? new List<RequisitionsCategory>(catalogComp.Categories)
+            : new List<RequisitionsCategory>();
+
+        Dirty(consoleUid, comp);
+        Log.Debug($"[Requisitions] Applied catalog {catalogProtoId} to console {consoleUid}");
     }
 
     private void OnComputerBeforeActivatableUIOpen(Entity<RequisitionsComputerComponent> computer, ref BeforeActivatableUIOpenEvent args)
@@ -105,7 +187,9 @@ public sealed partial class RequisitionsSystem : SharedRequisitionsSystem
         }
 
         var order = category.Entries[args.Order];
-        if (!TryComp(computer.Comp.Account, out RequisitionsAccountComponent? account) ||
+        // Ensure we check the correct faction account for balance
+        var accountEnt = computer.Comp.Account ?? GetAccount(computer.Comp.Faction);
+        if (!TryComp(accountEnt, out RequisitionsAccountComponent? account) ||
             account.Balance < order.Cost)
         {
             return;
@@ -167,19 +251,50 @@ public sealed partial class RequisitionsSystem : SharedRequisitionsSystem
         Dirty(elevator);
     }
 
-    private Entity<RequisitionsAccountComponent> GetAccount()
-    {
+    // Returns the first existing account matching faction, or creates a new one.
+    // If faction is null or "none", behaves like the original GetAccount (single global account).
+    private Entity<RequisitionsAccountComponent> GetAccount(string? faction = null)
+     {
         var query = EntityQueryEnumerator<RequisitionsAccountComponent>();
-        while (query.MoveNext(out var uid, out var account))
+
+        // Prefer an account matching faction if provided
+        if (!string.IsNullOrEmpty(faction) && faction != "none")
         {
-            return (uid, account);
+            while (query.MoveNext(out var uid, out var account))
+            {
+                if (account.Faction == faction)
+                    return (uid, account);
+            }
+            // No matching account found, spawn a new faction account
+            var newAccount = Spawn(AccountId, MapCoordinates.Nullspace);
+            var newAccountComp = EnsureComp<RequisitionsAccountComponent>(newAccount);
+            newAccountComp.Faction = faction;
+
+            // Set faction-specific starting balance
+            if (faction == "govfor" || faction == "opfor")
+            {
+                newAccountComp.Balance = 10000;
+            }
+            else if (faction == "colony")
+            {
+                newAccountComp.Balance = 450;
+                // Colony accounts should not receive random military deliveries (flares, batteries, etc.)
+                newAccountComp.RandomCrates.Clear();
+            }
+
+            return (newAccount, newAccountComp);
         }
 
-        var newAccount = Spawn(AccountId, MapCoordinates.Nullspace);
-        var newAccountComp = EnsureComp<RequisitionsAccountComponent>(newAccount);
+        // Fallback to the old behavior: return any existing account or create one
+        while (query.MoveNext(out var anyUid, out var anyAccount))
+        {
+            return (anyUid, anyAccount);
+        }
 
-        return (newAccount, newAccountComp);
-    }
+        var created = Spawn(AccountId, MapCoordinates.Nullspace);
+        var createdComp = EnsureComp<RequisitionsAccountComponent>(created);
+        return (created, createdComp);
+     }
 
     private void UpdateRailings(Entity<RequisitionsElevatorComponent> elevator, RequisitionsRailingMode mode)
     {
@@ -318,7 +433,16 @@ public sealed partial class RequisitionsSystem : SharedRequisitionsSystem
                     _entityStorage.Insert(entity, crate);
                 }
 
-                PrintInvoice(crate, coordinates, PaperRequisitionInvoice);
+                // If this order came from a department console, attach a department note
+                // instead of the generic invoice so it shows on the crate label.
+                if (order.DeptName != null)
+                {
+                    ApplyDepartmentCrateMetadata(crate, coordinates, order);
+                }
+                else
+                {
+                    PrintInvoice(crate, coordinates, PaperRequisitionInvoice);
+                }
 
                 yOffset--;
                 if (yOffset < -comp.Radius)
@@ -365,79 +489,85 @@ public sealed partial class RequisitionsSystem : SharedRequisitionsSystem
 
     private bool Sell(Entity<RequisitionsElevatorComponent> elevator)
     {
-        var account = GetAccount();
-        var entities = _lookup.GetEntitiesIntersecting(elevator);
-        var soldAny = false;
-        var rewards = 0;
-        foreach (var entity in entities)
-        {
-            if (entity == elevator.Comp.Audio)
-                continue;
+        // Deposits from selling items go to the elevator's nearest account based on faction
+        var account = GetAccount(elevator.Comp.Faction);
+         var entities = _lookup.GetEntitiesIntersecting(elevator);
+         var soldAny = false;
+         var rewards = 0;
+         foreach (var entity in entities)
+         {
+             if (entity == elevator.Comp.Audio)
+                 continue;
 
-            if (HasComp<CargoSellBlacklistComponent>(entity))
-                continue;
+             if (HasComp<CargoSellBlacklistComponent>(entity))
+                 continue;
 
-            rewards += SubmitInvoices(entity);
+             rewards += SubmitInvoices(entity);
 
-            if (TryComp(entity, out RequisitionsCrateComponent? crate))
-            {
-                rewards += crate.Reward;
-                soldAny = true;
-            }
+             if (TryComp(entity, out RequisitionsCrateComponent? crate))
+             {
+                 rewards += crate.Reward;
+                 soldAny = true;
+             }
 
-            QueueDel(entity);
-        }
+             QueueDel(entity);
+         }
 
-        if (rewards > 0)
-            SendUIFeedback(Loc.GetString("requisition-paperwork-reward-message", ("amount", rewards)));
+         // Colony ASRS does not receive budget or feedback for selling items
+         if (elevator.Comp.Faction != "colony")
+         {
+             if (rewards > 0)
+                 SendUIFeedback(Loc.GetString("requisition-paperwork-reward-message", ("amount", rewards)));
 
-        account.Comp.Balance += rewards;
+             account.Comp.Balance += rewards;
+         }
 
-        if (soldAny)
-            Dirty(account);
+         if (soldAny)
+             Dirty(account);
 
-        return soldAny;
-    }
+         return soldAny;
+     }
 
-    private void GetCrateWeight(Entity<RequisitionsAccountComponent> account, Dictionary<EntProtoId, float> crates, out Entity<RequisitionsComputerComponent> computer)
-    {
-        // TODO RMC14 price scaling
-        computer = default;
-        var computers = EntityQueryEnumerator<RequisitionsComputerComponent>();
-        while (computers.MoveNext(out var uid, out var comp))
-        {
-            if (comp.Account != account)
-                continue;
+     private void GetCrateWeight(Entity<RequisitionsAccountComponent> account, Dictionary<EntProtoId, float> crates, out Entity<RequisitionsComputerComponent> computer)
+     {
+         // TODO RMC14 price scaling
+         computer = default;
+         var computers = EntityQueryEnumerator<RequisitionsComputerComponent>();
+         while (computers.MoveNext(out var uid, out var comp))
+         {
+             // Prefer computers whose account matches this account entity reference
+             if (comp.Account != account)
+                 continue;
 
-            computer = (uid, comp);
-            foreach (var category in comp.Categories)
-            {
-                foreach (var entry in category.Entries)
-                {
-                    if (crates.ContainsKey(entry.Crate))
-                        crates[entry.Crate] = 10000f / entry.Cost;
-                }
-            }
-        }
-    }
+             computer = (uid, comp);
+             foreach (var category in comp.Categories)
+             {
+                 foreach (var entry in category.Entries)
+                 {
+                     if (crates.ContainsKey(entry.Crate))
+                         crates[entry.Crate] = 10000f / entry.Cost;
+                 }
+             }
+         }
+     }
 
-    public override void Update(float frameTime)
-    {
-        base.Update(frameTime);
+     public override void Update(float frameTime)
+     {
+         base.Update(frameTime);
 
-        var time = _timing.CurTime;
-        var updateUI = false;
-        var accounts = EntityQueryEnumerator<RequisitionsAccountComponent>();
-        while (accounts.MoveNext(out var uid, out var account))
-        {
-            if (time > account.NextGain)
-            {
-                account.NextGain = time + account.GainEvery;
-                account.Balance += _gain;
-                Dirty(uid, account);
-
-                updateUI = true;
-            }
+         var time = _timing.CurTime;
+         var updateUI = false;
+         var accounts = EntityQueryEnumerator<RequisitionsAccountComponent>();
+         while (accounts.MoveNext(out var uid, out var account))
+         {
+            // Disabled periodic budget gain
+            // if (time > account.NextGain)
+            // {
+            //     account.NextGain = time + account.GainEvery;
+            //     account.Balance += _gain;
+            //     Dirty(uid, account);
+            //     updateUI = true;
+            // }
 
             var xenos = _xeno.GetGroundXenosAlive();
             var randomCrates = CollectionsMarshal.AsSpan(account.RandomCrates);
@@ -490,7 +620,7 @@ public sealed partial class RequisitionsSystem : SharedRequisitionsSystem
                     elevator.Comp.Orders.Add(new RequisitionsEntry { Crate = crate });
                 }
             }
-        }
+         }
 
         var elevators = EntityQueryEnumerator<RequisitionsElevatorComponent>();
         while (elevators.MoveNext(out var uid, out var elevator))
@@ -598,5 +728,133 @@ public sealed partial class RequisitionsSystem : SharedRequisitionsSystem
         }
 
         return false;
+    }
+
+    private void OnMoneyInserted(EntityUid uid, ColonyAtmComponent comp, EntInsertedIntoContainerMessage args)
+    {
+        int stackCount = 1;
+        if (TryComp(args.Entity, out StackComponent? stack))
+            stackCount = stack.Count;
+
+        // Add to requisitions budget for each item in the stack
+        _adminLogs.Add(LogType.RMCRequisitionsBuy, $"ATM submission: +{stackCount} to requisitions budget");
+
+        // Try to credit a faction-specific account near the ATM first (prefer elevator, then computer)
+        string? faction = null;
+        var coords = _transform.GetMapCoordinates(uid);
+
+        // Search for nearby elevators with a faction
+        var nearbyElevators = _lookup.GetEntitiesInRange<RequisitionsElevatorComponent>(coords, 10);
+        Entity<RequisitionsElevatorComponent>? nearestElevator = null;
+        var nearestElevatorDist = float.MaxValue;
+        foreach (var elev in nearbyElevators)
+        {
+            var elevCoords = _transform.GetMapCoordinates(elev);
+            if (coords.MapId != elevCoords.MapId)
+                continue;
+            if (string.IsNullOrEmpty(elev.Comp.Faction) || elev.Comp.Faction == "none")
+                continue;
+            var d = (elevCoords.Position - coords.Position).LengthSquared();
+            if (d < nearestElevatorDist)
+            {
+                nearestElevator = elev;
+                nearestElevatorDist = d;
+            }
+        }
+
+        if (nearestElevator != null)
+        {
+            faction = nearestElevator.Value.Comp.Faction;
+        }
+        else
+        {
+            // If no elevator found, search for nearby computers with a faction
+            var nearbyComputers = _lookup.GetEntitiesInRange<RequisitionsComputerComponent>(coords, 10);
+            Entity<RequisitionsComputerComponent>? nearestComputer = null;
+            var nearestComputerDist = float.MaxValue;
+            foreach (var compEnt in nearbyComputers)
+            {
+                var compCoords = _transform.GetMapCoordinates(compEnt);
+                if (coords.MapId != compCoords.MapId)
+                    continue;
+                if (string.IsNullOrEmpty(compEnt.Comp.Faction) || compEnt.Comp.Faction == "none")
+                    continue;
+                var d = (compCoords.Position - coords.Position).LengthSquared();
+                if (d < nearestComputerDist)
+                {
+                    nearestComputer = compEnt;
+                    nearestComputerDist = d;
+                }
+            }
+
+            if (nearestComputer != null)
+                faction = nearestComputer.Value.Comp.Faction;
+        }
+
+        Entity<RequisitionsAccountComponent> reqAccount;
+        if (!string.IsNullOrEmpty(faction) && faction != "none")
+            reqAccount = GetAccount(faction);
+        else
+            reqAccount = GetAccount();
+
+        reqAccount.Comp.Balance += stackCount;
+        Dirty(reqAccount);
+
+        EntityManager.QueueDeleteEntity(args.Entity);
+        SendUIStateAll();
+    }
+
+    public void ReapplyPlatoonCatalogs()
+    {
+        Log.Debug("[Requisitions] Reapplying platoon catalogs to all consoles");
+        var computers = EntityQueryEnumerator<RequisitionsComputerComponent>();
+        while (computers.MoveNext(out var uid, out var comp))
+        {
+            ApplyPlatoonCatalogToComputer(uid, comp);
+            Dirty(uid, comp);
+        }
+    }
+
+    /// <summary>
+    ///     Locks a crate to the department's access and attaches a paper note with order info.
+    /// </summary>
+    private void ApplyDepartmentCrateMetadata(EntityUid crate, EntityCoordinates coordinates, RequisitionsEntry order)
+    {
+        var lockSys = EntityManager.System<LockSystem>();
+        var accessSys = EntityManager.System<AccessReaderSystem>();
+
+        // Lock the crate with department access
+        if (!string.IsNullOrEmpty(order.DeptAccessLevel))
+        {
+            var accessReader = EnsureComp<AccessReaderComponent>(crate);
+            accessSys.SetAccesses((crate, accessReader),
+                new List<HashSet<ProtoId<AccessLevelPrototype>>>
+                {
+                    new() { order.DeptAccessLevel }
+                });
+
+            var lockComp = EnsureComp<LockComponent>(crate);
+            lockSys.Lock(crate, null, lockComp);
+        }
+
+        // Spawn a requisition invoice with department order information and attach as label
+        var noteContent =
+            $"[head=2]{order.DeptName ?? "Department"} Order[/head]\n" +
+            $"[bold]Ordered by:[/bold] {order.DeptOrderedBy ?? "Unknown"}\n" +
+            $"[bold]Reason:[/bold] {order.DeptReason ?? "N/A"}\n" +
+            $"[bold]Deliver to:[/bold] {order.DeptDeliverTo ?? "N/A"}";
+
+        var paper = Spawn(PaperRequisitionInvoice, coordinates);
+        if (TryComp<PaperComponent>(paper, out var paperComp))
+        {
+            _metaSystem.SetEntityName(paper, $"{order.DeptName ?? "Dept."} Order Note");
+            _paperSystem.SetContent((paper, paperComp), noteContent);
+        }
+
+        // Attach the note as a paper label on the crate
+        if (TryComp<PaperLabelComponent>(crate, out var label))
+        {
+            _slots.TryInsert(crate, label.LabelSlot, paper, null);
+        }
     }
 }

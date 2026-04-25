@@ -1,0 +1,5 @@
+- type: entity
+  parent: RMCHEFAArmband
+  id: AU14ArmbandYellow
+  name: yellow armband
+  description: Fancy yellow armband.

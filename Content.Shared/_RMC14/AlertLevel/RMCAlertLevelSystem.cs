@@ -4,6 +4,7 @@ using Content.Shared._RMC14.Dropship;
 using Content.Shared._RMC14.Marines;
 using Content.Shared._RMC14.Marines.Announce;
 using Content.Shared.Administration.Logs;
+using Content.Shared.AU14;
 using Content.Shared.Database;
 using Content.Shared.Doors.Components;
 using Content.Shared.Doors.Systems;
@@ -40,8 +41,7 @@ public sealed class RMCAlertLevelSystem : EntitySystem
 
     private void OnDropshipHijackLanded(ref DropshipHijackLandedEvent ev)
     {
-        // TODO RMC14 is this real
-        // Set(RMCAlertLevels.Red);
+        Set(RMCAlertLevels.Delta, null, playSound: false, sendAnnouncement: false);
     }
 
     private bool TryGetAlertLevel(out Entity<RMCAlertLevelComponent> alert)
@@ -102,18 +102,24 @@ public sealed class RMCAlertLevelSystem : EntitySystem
 
         _adminLog.Add(LogType.RMCAlertLevel, $"{ToPrettyString(user)} set alert level to {level}");
 
-        var almayers = new HashSet<EntityUid>();
+        var shipMaps = new HashSet<EntityUid>();
         var almayerQuery = EntityQueryEnumerator<AlmayerComponent>();
         while (almayerQuery.MoveNext(out var uid, out _))
         {
-            almayers.Add(uid);
+            shipMaps.Add(uid);
+        }
+
+        var shipFactionQuery = EntityQueryEnumerator<ShipFactionComponent>();
+        while (shipFactionQuery.MoveNext(out var uid, out _))
+        {
+            shipMaps.Add(uid);
         }
 
         var transformQuery = EntityManager.TransformQuery;
         var filter = Filter.Empty()
             .AddWhereAttachedEntity(entity =>
             {
-                if (transformQuery.CompOrNull(entity)?.MapUid is { } map && almayers.Contains(map))
+                if (transformQuery.CompOrNull(entity)?.MapUid is { } map && shipMaps.Contains(map))
                     return true;
 
                 if (_ghostQuery.HasComp(entity))

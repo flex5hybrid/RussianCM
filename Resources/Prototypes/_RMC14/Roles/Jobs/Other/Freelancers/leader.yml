@@ -24,7 +24,7 @@
       skills:
         RMCSkillCqc: 1
         RMCSkillMedical: 2
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 2
         RMCSkillConstruction: 2
         RMCSkillEngineer: 2
@@ -35,6 +35,18 @@
         RMCSkillPolice: 1 # RMC14 disallow use of flashbangs
       # TODO RMC14 add English, russian, Chinese and Japanese languages
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: SquadArmorWearer
       leader: true
     - type: JobPrefix

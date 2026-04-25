@@ -281,8 +281,8 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeIncendiary
-  name: HIDP grenade packet
-  description: It contains three HIDP incendiary grenades.
+  name: M77 HIAM grenade packet
+  description: It contains three M77 High-explosive-Incendiary, Anti-Mobility grenades.
   components:
   - type: Sprite
     layers:

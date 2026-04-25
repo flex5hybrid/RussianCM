@@ -490,8 +490,8 @@
 - type: entity
   parent: RMCStockAttachmentCollapsibleBase
   id: RMCAttachmentM54CStockCollapsible
-  name: M54C folding stock
-  description: The standard back end of any gun starting with M54. Compatible with the M54C series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle.
+  name: M41A folding stock
+  description: The standard back end of any gun starting with M41A. Compatible with the M41A series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/m54_stocks/desert.rsi
@@ -509,7 +509,7 @@
     iconActive:
       sprite: _RMC14/Objects/Weapons/Guns/Attachments/m54_stocks/desert.rsi
       state: m54c-col-on
-    actionName: Toggle M54C Folding Stock
+    actionName: Toggle M41A Folding Stock
   - type: AttachableSizeMods
     modifiers:
       - size: 1
@@ -565,23 +565,27 @@
   parent: RMCAttachmentM54CStockCollapsible
   id: RMCAttachmentM54C2StockCollapsible
   suffix: PMC
-  description: The standard back end of any gun starting with M54. Compatible with the M54C series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle. Painted in a lovely corporate black camo.
+  description: The standard back end of any gun starting with M41. Compatible with the M41A series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle. Painted in a lovely corporate black camo.
   components:
   - type: ItemCamouflage
     camouflageVariations: { }
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Attachments/m54c2_stocks.rsi
+    sprite: _RMC14/Objects/Weapons/Guns/Attachments/m54_stocks/urban.rsi
     state: m54c-col
   - type: AttachableToggleable
     doAfterBreakOnMove: false
     doAfter: 0.5
     icon:
-      sprite: _RMC14/Objects/Weapons/Guns/Attachments/m54c2_stocks.rsi
+      sprite: _RMC14/Objects/Weapons/Guns/Attachments/m54_stocks/urban.rsi
       state: m54c-col
     iconActive:
-      sprite: _RMC14/Objects/Weapons/Guns/Attachments/m54c2_stocks.rsi
+      sprite: _RMC14/Objects/Weapons/Guns/Attachments/m54_stocks/urban.rsi
       state: m54c-col-on
-    actionName: Toggle M54C Folding Stock
+    actionName: Toggle M41A/2 Folding Stock
+  - type: Tag
+    tags:
+    - RMCAttachmentStock
+    - RMCAttachmentM54C2StockCollapsible
 
 - type: entity
   parent: RMCAttachmentM54CStockCollapsible
@@ -713,21 +717,6 @@
 
 - type: entity
   parent: RMCAttachableBase
-  id: RMCAttachmentLPO80Stock
-  name: LPO80 stock
-  components:
-  - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Attachments/stock.rsi
-    state: lpo80-stock
-  - type: AttachableVisuals
-    suffix: ""
-  - type: Tag
-    tags:
-    - RMCAttachmentStock
-    - RMCAttachmentLPO80Stock
-
-- type: entity
-  parent: RMCAttachableBase
   id: RMCAttachmentM16Stock
   name: M16 bump stock
   description: Technically illegal in the state of California.
@@ -785,21 +774,6 @@
       accuracyAddMult: 0.10
       recoilFlat: -1
       scatterFlat: -4
-
-- type: entity
-  parent: RMCAttachableBase
-  id: RMCAttachmentM16A5Stock
-  name: M16A5 bump stock
-  components:
-  - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Attachments/stock.rsi
-    state: m16a5-stock
-  - type: AttachableVisuals
-    suffix: ""
-  - type: Tag
-    tags:
-    - RMCAttachmentStock
-    - RMCAttachmentM16A5Stock
 
 - type: entity
   parent: RMCStockAttachmentBase
@@ -1175,12 +1149,12 @@
 - type: entity
   parent: RMCAttachableBase
   id: RMCAttachmentL24Stock
-  name: L24 solid stock
-  description: Intergrated into the L24. You shouldn't have this.
+  name: L23 solid stock
+  description: Intergrated into the L23. You shouldn't have this.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_stock.rsi
-    state: L24
+    sprite: _AU14/Weapons/Guns/Attachments/royal_stock.rsi
+    state: rmc_nsg_stock
   - type: AttachableVisuals
     suffix: ""
   - type: Tag
@@ -1250,6 +1224,21 @@
     - RMCAttachmentStock
     - RMCAttachmentAK4047StockCollapsible
 
+- type: entity
+  parent: RMCAttachableBase
+  id: AU14AttachmentTwoBoreStock
+  name: Two Bore Rifle solid stock
+  description: Intergrated into the Two Bore Rifle. You shouldn't have this.
+  components:
+  - type: Sprite
+    sprite: _AU14/Weapons/Guns/Attachments/stock.rsi
+    state: twobore_stock
+  - type: AttachableVisuals
+    suffix: ""
+  - type: Tag
+    tags:
+    - RMCAttachmentStock
+    - AU14AttachmentTwoBoreStock
 
 - type: Tag
   id: RMCAttachmentHG3712Stock
@@ -1292,9 +1281,6 @@
 
 - type: Tag
   id: RMCAttachmentM16StockCollapsible
-
-- type: Tag
-  id: RMCAttachmentM16A5Stock
 
 - type: Tag
   id: RMCAttachmentM63Stock
@@ -1360,4 +1346,4 @@
   id: RMCAttachmentM13StockCollapsible
 
 - type: Tag
-  id: RMCAttachmentLPO80Stock
+  id: AU14AttachmentTwoBoreStock

@@ -19,7 +19,19 @@
       factions:
       - UNMC
     - type: Skills
-      preset: RMCSkillPresetPVESquadLeader
+      skills:
+        RMCSkillCqc: 1
+        RMCSkillFirearms: 2
+        RMCSkillPolice: 2
+        RMCSkillFireman: 2
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 2
+        RMCSkillEndurance: 1
+        RMCSkillPilot: 1
+        RMCSkillSmartGun: 1
+        RMCSkillJtac: 2
+        RMCSkillPowerLoader: 1
+        RMCSkillLeadership: 1
     - type: SquadArmorWearer
     - type: JobPrefix
       prefix: rmc-job-prefix-pve-forecon-assistant-lead
@@ -32,6 +44,18 @@
         sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: tl
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: RMCPointing
     - type: RMCTrackable
     - type: DemoSpecWhitelist

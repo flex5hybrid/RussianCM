@@ -1,0 +1,39 @@
+- type: accessLevel
+  id: AU14AccessGovfor
+  name: Govfor
+
+- type: accessLevel
+  id: AU14AccessGovforSquad
+  name: Govfor Squad
+
+- type: accessLevel
+  id: AU14AccessGovforCommand
+  name: Govfor Command
+
+- type: accessLevel
+  id: AU14AccessGovforSecurity
+  name: Govfor Security
+
+- type: accessLevel
+  id: AU14AccessGovforMedical
+  name: Govfor Medical
+
+- type: accessLevel
+  id: AU14AccessGovforEngineering
+  name: Govfor Engineering
+
+- type: accessLevel
+  id: AU14AccessGovforFTL
+  name: Govfor Squad Sergeant
+
+- type: accessLevel
+  id: AU14AccessGovforGunner
+  name: Govfor Smart Gun Operator
+
+- type: accessLevel
+  id: AU14AccessGovforPilot
+  name: Govfor Pilot
+
+- type: accessLevel
+  id: AU14AccessJuniorOfficer
+  name: Junior Officer

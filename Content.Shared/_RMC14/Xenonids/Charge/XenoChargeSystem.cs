@@ -318,8 +318,12 @@ public sealed class XenoChargeSystem : EntitySystem
         if (attempt.Cancelled)
             return;
 
-        if (!_xenoPlasma.TryRemovePlasmaPopup(xeno.Owner, xeno.Comp.PlasmaCost))
-            return;
+        // If the charge has a plasma cost, require plasma. If cost is zero, allow entities without XenoPlasmaComponent (e.g., apes)
+        if (xeno.Comp.PlasmaCost > 0)
+        {
+            if (!_xenoPlasma.TryRemovePlasmaPopup(xeno.Owner, xeno.Comp.PlasmaCost))
+                return;
+        }
 
         args.Handled = true;
 

@@ -1,0 +1,53 @@
+- type: job
+  parent: AU14Jobk9handlerBase
+  id: AU14JobGOVFORk9handler
+  name: K9 Handler
+  description: K9 Handler
+  setPreference: false
+  ranks:
+    RMCRankStaffSergeant: []
+  startingGear: AU14GearGOVFORK9Handler
+  icon: "AU14JobIconGovK9Handler"
+  requireAdminNotify: false
+  spawnMenuRoleName: K9 Handler (GOVFOR)
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforCorpsman
+  - AU14GovforSquad
+  overwatchSortPriority: -2
+  overwatchRoleName: K9 Handler#
+  roleWeight: 0.25
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Skills
+      preset: AU14SkillPresetPlatoonHospitalCorpsman
+    - type: JobPrefix
+      prefix: au14-job-prefix-govfork9handler
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: synth
+  hidden: true
+
+- type: startingGear
+  id: AU14GearGOVFORK9Handler
+  equipment:
+    id: AU14IDCardSquadK9HandlerGOVFOR
+    ears: AU14HeadsetSectionLeader
+    eyes: RMCGlassesMedicalHUDGlasses
+    jumpsuit: AU14UniversalBlackFatigues
+    shoes: CMBootsBlack
+    belt: RMCM1984BeltFilled
+    pocket1: RMCFlashlight
+
+- type: entity
+  parent: CMSpawnPointJobBase
+  id: AU14SpawnPointGOVFORK9Handler
+  name: (DO NOT MAP) Spawn Point GOVFOR K9 Handler
+  components:
+  - type: SpawnPoint
+    job_id: AU14JobGOVFORk9handler
+  - type: Sprite
+    state: syn_spawn

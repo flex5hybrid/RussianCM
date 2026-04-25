@@ -112,8 +112,7 @@ public sealed class SkillsSystem : EntitySystem
     private void OnSkillsVerbExamine(Entity<SkillsComponent> ent, ref GetVerbsEvent<ExamineVerb> args)
     {
         var user = args.User;
-
-        if (!args.CanInteract || !args.CanAccess || HasComp<XenoComponent>(user))
+        if (!args.CanInteract || !args.CanAccess || HasComp<XenoComponent>(user) || user != ent.Owner)
             return;
 
         _skillsSorted.Clear();

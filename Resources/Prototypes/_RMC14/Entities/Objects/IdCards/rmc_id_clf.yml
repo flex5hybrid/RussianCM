@@ -2,18 +2,13 @@
   parent: CMIDCardBase
   id: RMCIDCardCLFBase
   abstract: true
-  components:
-  - type: ItemIFF
-    factions:
-    - FactionCLF
+
 
 - type: entity
   parent: RMCIDCardCLFBase
   id: RMCIDCardCLFSoldier
   name: clf soldier's ID card
-  components:
-  - type: PresetIdCard
-    job: RMCCLFSoldier
+
 
 - type: entity
   parent: RMCIDCardCLFBase

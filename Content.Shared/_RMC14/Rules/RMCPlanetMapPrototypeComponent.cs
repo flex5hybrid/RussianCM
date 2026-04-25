@@ -1,4 +1,8 @@
 using Content.Shared._RMC14.Item;
+using Content.Shared.AU14;
+using Content.Shared.AU14.Allegiance;
+using Content.Shared.AU14.Threats;
+using Content.Shared.AU14.util;
 using Content.Shared.Paper;
 using Content.Shared.Roles;
 using Robust.Shared.GameStates;
@@ -12,8 +16,9 @@ namespace Content.Shared._RMC14.Rules;
 [Access(typeof(RMCPlanetSystem))]
 public sealed partial class RMCPlanetMapPrototypeComponent : Component
 {
+    // Changed from ResPath to string (GameMapPrototype ID)
     [DataField(required: true), AutoNetworkedField, Access(Other = AccessPermissions.ReadExecute)]
-    public ResPath Map;
+    public string MapId = string.Empty;
 
     [DataField, AutoNetworkedField]
     public CamouflageType Camouflage = CamouflageType.Jungle;
@@ -42,8 +47,8 @@ public sealed partial class RMCPlanetMapPrototypeComponent : Component
     /// Useful for FORECON so any survivor preference will be overriden to FORECON survivor
     /// Basically, if security survivor is overriden by forecon survivor, it will be as if sec survivor: high is forecon survivor: high
     /// </summary>
-    [DataField, AutoNetworkedField]
-    public Dictionary<ProtoId<JobPrototype>, ProtoId<JobPrototype>>? SurvivorJobOverrides;
+    [DataField("joboverrides"), AutoNetworkedField]
+    public Dictionary<ProtoId<JobPrototype>, ProtoId<JobPrototype>>? ColonyJobOverrides;
 
     /// <summary>
     /// Instead of using the limits of the variant, this will select a random variant and use the base job's limit when true.
@@ -86,6 +91,77 @@ public sealed partial class RMCPlanetMapPrototypeComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public Dictionary<string, EntProtoId<PaperComponent>>? SpecialFaxes;
+
+    [DataField, AutoNetworkedField]
+    public List<ProtoId<PlatoonPrototype>> PlatoonsGovfor = new();
+
+    [DataField, AutoNetworkedField]
+    public List<ProtoId<PlatoonPrototype>> PlatoonsOpfor = new();
+
+    [DataField("defaultgovfor")]
+    public string? DefaultGovforPlatoon;
+
+    [DataField("defaultopfor")]
+    public string? DefaultOpforPlatoon;
+
+    [DataField("daycycleenabled"), AutoNetworkedField]
+    public bool DaycycleEnabled = true;
+
+    [DataField("govforinship"), AutoNetworkedField]
+    public bool GovforInShip = false;
+
+    [DataField("opforinship"), AutoNetworkedField]
+    public bool OpforInShip = false;
+
+    [DataField("votename")]
+    public string? VoteName  = String.Empty;
+
+    [DataField("lorePrimer")]
+    public ProtoId<LorePrimerPrototype>? LorePrimer;
+
+    [DataField("faction")]
+    public string? Faction  = String.Empty;
+
+    /// <summary>
+    /// The allegiance associated with this colony.
+    /// Characters with a matching allegiance will preferentially spawn here.
+    /// </summary>
+    [DataField("Allegiance"), AutoNetworkedField]
+    public ProtoId<AllegiancePrototype>? Allegiance;
+
+    [DataField("govforfighters")]
+    public int govforfighters = 0;
+
+    [DataField("opforfighters")]
+    public int opforfighters = 0;
+
+    [DataField("govfordropships")]
+    public int govfordropships = 2;
+
+    [DataField("opfordropships")]
+    public int opfordropships = 2;
+
+    [DataField("threats")]
+    public List<ProtoId<ThreatPrototype>> AllowedThreats = new();
+    [DataField("thirdparties")]
+    public List<ProtoId<AuThirdPartyPrototype>> ThirdParties = new();
+
+
+    [DataField("thirdpartyinterval"), AutoNetworkedField]
+    public int? ThirdPartyInterval =18000;
+
+    /// <summary>
+    /// Optional job scaling prototype for human job slots in ForceOnForce mode.
+    /// </summary>
+    [DataField("jobScalingFof")]
+    public ProtoId<JobScalePrototype>? JobScalingFof;
+
+    /// <summary>
+    /// Optional job scaling prototype for human job slots in Insurgency mode.
+    /// </summary>
+    [DataField("jobScalingIns")]
+    public ProtoId<JobScalePrototype>? JobScalingIns;
+
 }
 
 [DataDefinition]

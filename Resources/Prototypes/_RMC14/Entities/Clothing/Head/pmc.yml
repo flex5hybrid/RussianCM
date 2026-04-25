@@ -190,7 +190,7 @@
 - type: entity
   parent: ArmorHelmetPMC
   id: ArmorHelmetPMCCorporate
-  name: We-Ya corporate security helmet
+  name: WY corporate security helmet
   description: A basic skull-helm worn by corporate security assets, graded to protect your head from an unruly scientist armed with a crowbar.
   components:
   - type: Sprite
@@ -212,7 +212,7 @@
   parent: ArmorHelmetPMC
   id: ArmorHelmetPMCRiot
   name: RC6 helmet
-  description: The standard UN Riot Control 6 helmet is of odd design, lacking a face shield by default (mounting points are available). The distinct white pattern and red emblem are synonymous with oppression throughout the rim.
+  description: The standard UA Riot Control 6 helmet is of odd design, lacking a face shield by default (mounting points are available). The distinct white pattern and red emblem are synonymous with oppression throughout the rim.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/riot.rsi
@@ -314,8 +314,8 @@
 - type: entity
   parent: RMCHeadCapFlippable
   id: RMCHeadCapWestonYamadaDark
-  name: Weston-Yamada cap
-  description: A dark cap enscribed with the Weston-Yamada 'Wings' logo, representing corporate justice.
+  name: Weyland-Yutani cap
+  description: A dark cap enscribed with the Weyland-Yutani 'Wings' logo, representing corporate justice.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/hybrisa_cap.rsi

@@ -11,6 +11,44 @@
 
 - type: entity
   parent: RMCPouchGeneralLarge
+  id: AU14PouchGeneralLargeMilDoctorFill
+  suffix: Military Doctor, Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: CMPortableSurgicalBedSpawnFolded
+    - id: RMCFlashlightPen
+    - id: CMBloodPackFull
+
+- type: entity
+  parent: RMCPouchFirstResponderFill
+  id: AU14PouchFirstResponderFilledMilitaryDoctor
+  suffix: Military Doctor, Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: CMPortableSurgicalBedSpawnFolded
+    - id: CMRollerBedSpawnFolded
+    - id: CMBloodPackFull
+    - id: CMFireExtinguisherPortable
+
+- type: entity
+  parent: RMCPouchAutoinjector
+  id: AU14PouchAutoinjectorFilledMilitaryDoctor
+  suffix: Military Doctor, Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCIronAutoInjector
+    - id: RMCIronAutoInjector
+    - id: CMEpinephrineAutoInjector
+    - id: CMEpinephrineAutoInjector
+    - id: CMInaprovalineAutoInjector
+    - id: CMInaprovalineAutoInjector
+    - id: AU14NaloxoneAutoInjector
+
+- type: entity
+  parent: RMCPouchGeneralLarge
   id: RMCPouchGeneralLargeICBLiaison
   suffix: Interstellar Commerce Bureau Liaison, Filled
   components:

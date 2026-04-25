@@ -11,6 +11,8 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Timing;
+using Content.Shared.BarricadeBlock;
+using Robust.Shared.Random;
 
 namespace Content.Shared.Throwing
 {
@@ -26,8 +28,9 @@ namespace Content.Shared.Throwing
         [Dependency] private readonly SharedBroadphaseSystem _broadphase = default!;
         [Dependency] private readonly SharedPhysicsSystem _physics = default!;
         [Dependency] private readonly SharedGravitySystem _gravity = default!;
+        [Dependency] private readonly IRobustRandom _random = default!;
+        [Dependency] private readonly SharedTransformSystem _transform = default!; private const string ThrowingFixture = "throw-fixture";
 
-        private const string ThrowingFixture = "throw-fixture";
 
         public override void Initialize()
         {
@@ -39,6 +42,78 @@ namespace Content.Shared.Throwing
             SubscribeLocalEvent<ThrownItemComponent, ThrownEvent>(ThrowItem);
 
             SubscribeLocalEvent<PullStartedMessage>(HandlePullStarted);
+        }
+        private void PreventCollision(EntityUid uid, ThrownItemComponent component, ref PreventCollideEvent args)
+        {
+            if (args.OtherEntity == component.Thrower)
+            {
+                args.Cancelled = true;
+            }
+            //check for BarricadeBlock component (percentage of chance to hit/pass over)
+            if (TryComp(args.OtherEntity, out BarricadeBlockComponent? BarricadeBlock))
+            {
+                var alwaysPassThrough = false;
+                //_sawmill.Info("Checking BarricadeBlock...");
+                if (component.Thrower is { } shooterUid && Exists(shooterUid))
+                {
+                    // Condition 1: Directions are the same (using cardinal directions).
+                    // Or, if bidirectional, directions can be opposite.
+                    var shooterWorldRotation = _transform.GetWorldRotation(shooterUid);
+                    var BarricadeBlockWorldRotation = _transform.GetWorldRotation(args.OtherEntity);
+
+                    var shooterDir = shooterWorldRotation.GetCardinalDir();
+                    var BarricadeBlockDir = BarricadeBlockWorldRotation.GetCardinalDir();
+
+                    bool directionallyAllowed = false;
+                    if (shooterDir == BarricadeBlockDir)
+                    {
+                        directionallyAllowed = true;
+                        //_sawmill.Debug("Shooter and BarricadeBlock facing same cardinal direction.");
+                    }
+                    else if (BarricadeBlock.Bidirectional)
+                    {
+                        var oppositeBarricadeBlockDir = (Direction)(((int)BarricadeBlockDir + 4) % 8);
+                        if (shooterDir == oppositeBarricadeBlockDir)
+                        {
+                            directionallyAllowed = true;
+                            //_sawmill.Debug("Shooter and BarricadeBlock facing opposite cardinal directions (bidirectional pass).");
+                        }
+                    }
+
+                    if (directionallyAllowed)
+                    {
+                        // Condition 2: Firer is within 1 tile of the BarricadeBlock.
+                        var shooterCoords = Transform(shooterUid).Coordinates;
+                        var BarricadeBlockCoords = Transform(args.OtherEntity).Coordinates;
+
+                        if (shooterCoords.TryDistance(EntityManager, BarricadeBlockCoords, out var distance) &&
+                            distance <= 1.5f)
+                        {
+                            alwaysPassThrough = true;
+                        }
+                    }
+                }
+
+                if (alwaysPassThrough)
+                {
+                    args.Cancelled = true;
+                }
+                else
+                {
+                    //_sawmill.Debug("BarricadeBlock direction/distance check failed or shooter not valid.");
+                    // Standard BarricadeBlock blocking logic if the special conditions are not met.
+                    var rando = _random.NextFloat(0.0f, 100.0f);
+                    if (rando >= 12)
+                    {
+                        args.Cancelled = true;
+                        return;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+            }
         }
 
         private void OnMapInit(EntityUid uid, ThrownItemComponent component, MapInitEvent args)
@@ -71,17 +146,7 @@ namespace Content.Shared.Throwing
             ThrowCollideInteraction(component, args.OurEntity, args.OtherEntity);
         }
 
-        private void PreventCollision(EntityUid uid, ThrownItemComponent component, ref PreventCollideEvent args)
-        {
-            // RMC14
-            if (HasComp<ThrownHitUserComponent>(uid))
-                return;
 
-            if (args.OtherEntity == component.Thrower)
-            {
-                args.Cancelled = true;
-            }
-        }
 
         private void OnSleep(EntityUid uid, ThrownItemComponent thrownItem, ref PhysicsSleepEvent @event)
         {

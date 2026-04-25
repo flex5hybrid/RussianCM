@@ -31,7 +31,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 75
+        damage: 300
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -42,3 +42,6 @@
   - type: XenoToggleChargingDamage
     sound:
       path: /Audio/Effects/Footsteps/snowstep3.ogg
+  - type: BarricadeBlock
+    bidirectional: true
+    blocking: 38

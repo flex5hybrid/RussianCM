@@ -254,7 +254,7 @@
 # Visors
 
 - type: entity
-  parent: RMCHelmetGarbBase
+  parent: [RMCHelmetGarbBase, CMUBaseGasMaskFilterSlot]
   id: RMCHelmetGarbGasmask
   name: M5 integrated gasmask
   description: The UNMC had its funding pulled for these when it became apparent that not every deployed enlisted was wearing a helmet 24/7; much to the bafflement of UN High Command.
@@ -418,8 +418,8 @@
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbGunOil
-  name: gun oil
-  description: It is a bottle of oil, for your gun. Don't fall for the rumors, the M54C is NOT a self-cleaning firearm.
+  name: CLP weapon lubricant
+  description: "A standardized cleaner, lubricant and preservative issued to maintain small arms and crew-served weapons. Removes carbon fouling, reduces friction and protects metal surfaces from corrosion. Reliable in most environments, though not specialized for extreme conditions. Also collectively known as 'rifle piss'."
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/gun_oil.rsi

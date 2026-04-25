@@ -2,7 +2,7 @@
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   id: RMCType88SniperRifle
   name: Type 88 designated marksman rifle
-  description: The standard issue DMR of the SPP, the Type 88 is sought after by competitive shooters and terrorists alike for its high degree of accuracy. Typically loaded with armor-piercing 7.62x54mmR rounds in a 12 round magazine.
+  description: The standard issue DMR of the UPP, the Type 88 is sought after by competitive shooters and terrorists alike for its high degree of accuracy. Typically loaded with armor-piercing 7.62x54mmR rounds in a 12 round magazine.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Snipers/type88/type88_inhands.rsi
@@ -38,7 +38,7 @@
     - SemiAuto
     recoilWielded: 1
     scatterWielded: 3
-    baseFireRate: 1.6675
+    baseFireRate: 0.78
   - type: RMCWeaponAccuracy
     accuracyMultiplier: 3
   - type: WieldableSpeedModifiers
@@ -70,7 +70,7 @@
   - type: Corrodible
     isCorrodible: false
   - type: GunIFF
-    enabled: true
+    enabled: false
   - type: RMCNameItemOnVend
     item: PrimaryGun
   - type: AttachableHolder

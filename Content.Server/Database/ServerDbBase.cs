@@ -12,6 +12,8 @@ using Content.Server.Administration.Managers;
 using Content.Server.IP;
 using Content.Shared._RMC14.NamedItems;
 using Content.Shared.Administration.Logs;
+using Content.Shared.AU14.Allegiance;
+using Content.Shared.AU14.Origin;
 using Content.Shared.Construction.Prototypes;
 using Content.Shared.Database;
 using Content.Shared.Humanoid;
@@ -230,6 +232,13 @@ namespace Content.Server.Database
             if (Enum.TryParse<ArmorPreference>(profile.ArmorPreference, true, out var armorVal))
                 armorPreference = armorVal;
 
+            ProtoId<AllegiancePrototype>? allegiance = profile.Allegiance is { } allegianceId
+                ? new ProtoId<AllegiancePrototype>(allegianceId)
+                : (ProtoId<AllegiancePrototype>?)null;
+            ProtoId<OriginPrototype>? origin = profile.Origin is { } originId
+                ? new ProtoId<OriginPrototype>(originId)
+                : (ProtoId<OriginPrototype>?)null;
+
             var gender = sex == Sex.Male ? Gender.Male : Gender.Female;
             if (Enum.TryParse<Gender>(profile.Gender, true, out var genderVal))
                 gender = genderVal;
@@ -316,7 +325,9 @@ namespace Content.Server.Database
                 },
                 profile.PlaytimePerks,
                 profile.XenoPrefix,
-                profile.XenoPostfix
+                profile.XenoPostfix,
+                allegiance,
+                origin
             );
         }
 
@@ -413,6 +424,8 @@ namespace Content.Server.Database
             profile.PlaytimePerks = humanoid.PlaytimePerks;
             profile.XenoPrefix = humanoid.XenoPrefix;
             profile.XenoPostfix = humanoid.XenoPostfix;
+            profile.Allegiance = humanoid.Allegiance?.Id;
+            profile.Origin = humanoid.Origin?.Id;
 
             return profile;
         }

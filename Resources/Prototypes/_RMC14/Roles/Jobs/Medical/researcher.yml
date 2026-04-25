@@ -3,29 +3,8 @@
   id: CMResearcher
   name: rmc-job-name-researcher
   description: rmc-job-description-researcher
+  setPreference: false
   playTimeTracker: CMJobResearcher
-  requirements:
-  - !type:TotalJobsTimeRequirement
-    group: CMJobsMedical
-    time: 18000 # 5 hours
-  ranks:
-    RMCRankCivilianRegentsProfessor:
-    - !type:RoleTimeRequirement
-      role: CMJobResearcher
-      time: 630000 # 175 hours
-    RMCRankCivilianProfessor:
-    - !type:RoleTimeRequirement
-      role: CMJobResearcher
-      time: 252000 # 70 hours
-    RMCRankCivilianAssociateProfessor:
-    - !type:RoleTimeRequirement
-      role: CMJobResearcher
-      time: 90000 # 25 hours
-    RMCRankCivilianAssistantProfessor:
-    - !type:RoleTimeRequirement
-      role: CMJobResearcher
-      time: 36000 # 10 hours
-    RMCRankCivilianDoctor: []
   startingGear: CMGearResearcher
   icon: "CMJobIconResearcher"
   joinNotifyCrew: false

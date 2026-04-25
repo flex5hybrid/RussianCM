@@ -138,7 +138,6 @@
     dest: cargo-gift-dest-med
     gifts:
       MedicalSupplies: 1
-      MedicalChemistrySupplies: 1
       EmergencyBruteKit: 1
       EmergencyAdvancedKit: 1
       MedicalBiosuit: 1

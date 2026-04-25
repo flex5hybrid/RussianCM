@@ -271,6 +271,8 @@
   - type: Construction
     graph: CMSeat
     node: chairOfficeDark
+  - type: Rotatable
+    rotateWhileAnchored: true
 
 - type: entity
   parent: CMChairOfficeDark
@@ -282,6 +284,8 @@
   - type: Construction
     graph: CMSeat
     node: chairOfficeWhite
+  - type: Rotatable
+    rotateWhileAnchored: true
 
 # Wooden chair
 - type: entity

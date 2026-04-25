@@ -1,0 +1,61 @@
+
+- type: threat
+  id: XenoThreat
+  lorePrimer: AU14PrimerThreatXeno
+  roundstartspawns: XenoThreatSpawns
+  blacklistedgamemodes:
+   - ColonyFall
+  jobScaling: DefaultDistressScale
+
+  winconditions:
+  - KillAllGovforRule
+  - KillAllXenoRule
+
+- type: partySpawn
+  id: XenoThreatSpawns
+  leadersToSpawn:
+    CMXenoQueen: 1
+  gruntsToSpawn:
+    CMXenoLarva: 6
+  spawnTogether: true
+  scaling:
+    CMXenoLarva:
+      scale: 0.16
+      whenToBeginScaling: 30
+
+
+- type: threat
+  id: XenoThreatCF
+  lorePrimer: AU14PrimerThreatXeno
+  roundstartspawns: XenoThreatSpawnsCF
+  whitelistedgamemodes:
+  - ColonyFall
+  blacklistedgamemodes:
+  - DistressSignal
+  winconditions:
+  - KillAllColonistRule
+  - KillAllXenoRule
+
+- type: partySpawn
+  id: XenoThreatSpawnsCF
+  leadersToSpawn:
+    CMXenoQueen: 1
+  gruntsToSpawn:
+    CMXenoLarva: 1
+  spawnTogether: true
+  scaling:
+    CMXenoLarva:
+      scale: 0.08
+      whenToBeginScaling: 50
+  Markers:
+    Member: xenocf
+    Leader: xenocf
+
+- type: lorePrimer
+  id: AU14PrimerThreatXeno
+  threattext: You are a member of the hive, grow and evolve!"
+  KnowledgeLevelsGovforThreat:
+    "Threat Unknown": 1
+    "Threat is biological in nature.": 2
+    "Xenosmorphs identified, full threat knowledge": 3
+

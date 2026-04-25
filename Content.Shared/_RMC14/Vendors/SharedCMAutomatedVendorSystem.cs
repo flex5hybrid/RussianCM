@@ -44,6 +44,7 @@ using Content.Shared._RMC14.Marines.Roles.Ranks;
 using Content.Shared.Storage.EntitySystems;
 using Content.Shared.Storage;
 using Content.Shared._RMC14.Cryostorage;
+using Content.Shared.AU14.Objectives;
 
 namespace Content.Shared._RMC14.Vendors;
 
@@ -572,29 +573,60 @@ public abstract class SharedCMAutomatedVendorSystem : EntitySystem
 
         if (entry.Points != null)
         {
-            if (user == null)
+            if (vendor.Comp.UseObjectivePoints)
             {
-                Log.Error(
-                    $"{ToPrettyString(actor)} tried to buy {entry.Id} for {entry.Points} points without having points.");
-                return;
-            }
+                Log.Info($"[VENDOR DEBUG] Objective purchase: actor={ToPrettyString(actor)}, entry={entry.Id}, cost={entry.Points}");
+                // Read the cached faction win points directly from the vendor component
+                var available = vendor.Comp.CachedFactionWinPoints;
 
-            var userPoints = vendor.Comp.PointsType == null
-                ? user.Points
-                : user.ExtraPoints?.GetValueOrDefault(vendor.Comp.PointsType) ?? 0;
-            if (userPoints < entry.Points)
+                if (available < entry.Points.Value)
+                {
+                    _popup.PopupEntity(Loc.GetString("cm-vending-machine-not-enough-points"), vendor, actor);
+                    ResetChoices();
+                    return;
+                }
+
+                // Raise event to deduct points - AuObjectiveSystem handles updating the master
+                var faction = vendor.Comp.Faction.ToLowerInvariant();
+                var spendEvent = new Content.Shared.AU14.Objectives.SpendWinPointsEvent
+                {
+                    Team = faction,
+                    Amount = entry.Points.Value
+                };
+                RaiseLocalEvent(spendEvent);
+
+                // Update the vendor cache immediately so the UI reflects the new balance
+                var newBalance = available - entry.Points.Value;
+                UpdateVendorFactionPointsCache(faction, newBalance);
+
+                Log.Info($"[VENDOR DEBUG] Points deducted successfully, new balance: {newBalance}");
+            }
+            else
             {
-                Log.Error(
-                    $"{ToPrettyString(actor)} with {user.Points} tried to buy {entry.Id} for {entry.Points} points without having enough points.");
-                return;
+                if (user == null)
+                {
+                    Log.Error(
+                        $"{ToPrettyString(actor)} tried to buy {entry.Id} for {entry.Points} points without having points.");
+                    return;
+                }
+
+                var userPoints = vendor.Comp.PointsType == null
+                    ? user.Points
+                    : user.ExtraPoints?.GetValueOrDefault(vendor.Comp.PointsType) ?? 0;
+                if (userPoints < entry.Points)
+                {
+                    Log.Error(
+                        $"{ToPrettyString(actor)} with {user.Points} tried to buy {entry.Id} for {entry.Points} points without having enough points.");
+                    return;
+                }
+
+                if (vendor.Comp.PointsType == null)
+                    user.Points -= entry.Points.Value;
+                else if (user.ExtraPoints != null)
+                    user.ExtraPoints[vendor.Comp.PointsType] = userPoints - (entry.Points ?? 0);
+
+                Dirty(actor, user);
             }
-
-            if (vendor.Comp.PointsType == null)
-                user.Points -= entry.Points.Value;
-            else if (user.ExtraPoints != null)
-                user.ExtraPoints[vendor.Comp.PointsType] = userPoints - (entry.Points ?? 0);
-
-            Dirty(actor, user);
         }
 
         if (entry.Amount != null)
@@ -659,6 +691,7 @@ public abstract class SharedCMAutomatedVendorSystem : EntitySystem
 
         var min = comp.MinOffset;
         var max = comp.MaxOffset;
+        Log.Info($"[VENDOR DEBUG] Spawning {entry.Spawn} copies of {entry.Id}");
         for (var i = 0; i < entry.Spawn; i++)
         {
             var offset = _random.NextVector2Box(min.X, min.Y, max.X, max.Y);
@@ -874,5 +907,25 @@ public abstract class SharedCMAutomatedVendorSystem : EntitySystem
 
         vendor.GlobalSharedVends[ent.Comp.Entry] = current - 1;
         Dirty(ent.Comp.Vendor, vendor);
+    }
+
+    /// <summary>
+    ///     Pushes <paramref name="newPoints"/> into the <see cref="CMAutomatedVendorComponent.CachedFactionWinPoints"/>
+    ///     of every objective-point vendor that matches <paramref name="faction"/>, then dirties each one so the
+    ///     client BUI receives the updated value regardless of whether the ObjectiveMasterComponent entity is in PVS.
+    /// </summary>
+    public void UpdateVendorFactionPointsCache(string faction, int newPoints)
+    {
+        var factionKey = faction.ToLowerInvariant();
+        var q = EntityQueryEnumerator<CMAutomatedVendorComponent>();
+        while (q.MoveNext(out var uid, out var comp))
+        {
+            if (!comp.UseObjectivePoints)
+                continue;
+            if (comp.Faction.ToLowerInvariant() != factionKey)
+                continue;
+            comp.CachedFactionWinPoints = newPoints;
+            Dirty(uid, comp);
+        }
     }
 }

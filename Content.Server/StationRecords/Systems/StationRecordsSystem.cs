@@ -98,7 +98,15 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
         TryComp<FingerprintComponent>(player, out var fingerprintComponent);
         TryComp<DnaComponent>(player, out var dnaComponent);
 
-        CreateGeneralRecord(station, idUid.Value, profile.Name, profile.Age, profile.Species, profile.Gender, jobId, fingerprintComponent?.Fingerprint, dnaComponent?.DNA, profile, records);
+        // If no fingerprint or DNA, set to 'none found'
+        var mobFingerprint = fingerprintComponent?.Fingerprint;
+        var dna = dnaComponent?.DNA;
+        if (string.IsNullOrEmpty(mobFingerprint))
+            mobFingerprint = "none found";
+        if (string.IsNullOrEmpty(dna))
+            dna = "none found";
+
+        CreateGeneralRecord(station, idUid.Value, profile.Name, profile.Age, profile.Species, profile.Gender, jobId, mobFingerprint, dna, profile, records);
     }
 
 
@@ -396,8 +404,6 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
                 !someRecord.Name.ToLower().Contains(filterLowerCaseValue),
             StationRecordFilterType.Job =>
                 !someRecord.JobTitle.ToLower().Contains(filterLowerCaseValue),
-            StationRecordFilterType.Species =>
-                !someRecord.Species.ToLower().Contains(filterLowerCaseValue),
             StationRecordFilterType.Prints => someRecord.Fingerprint != null
                 && IsFilterWithSomeCodeValue(someRecord.Fingerprint, filterLowerCaseValue),
             StationRecordFilterType.DNA => someRecord.DNA != null

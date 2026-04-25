@@ -15,6 +15,8 @@ using Content.Shared._RMC14.LinkAccount;
 using Content.Shared._RMC14.Marines.Squads;
 using Content.Shared._RMC14.NamedItems;
 using Content.Shared._RMC14.Prototypes;
+using Content.Shared.AU14.Allegiance;
+using Content.Shared.AU14.Origin;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.GameTicking;
@@ -103,6 +105,10 @@ namespace Content.Client.Lobby.UI
         public HumanoidCharacterProfile? Profile;
 
         private List<SpeciesPrototype> _species = new();
+
+        private List<AllegiancePrototype> _allegiances = new();
+
+        private List<OriginPrototype> _origins = new();
 
         private List<(string, RequirementsSelector)> _jobPriorities = new();
 
@@ -241,6 +247,36 @@ namespace Content.Client.Lobby.UI
                 UpdateHairPickers();
                 OnSkinColorOnValueChanged();
             };
+
+            #region Allegiance
+
+            RefreshAllegiances();
+
+            AllegianceButton.OnItemSelected += args =>
+            {
+                AllegianceButton.SelectId(args.Id);
+                if (args.Id == 0)
+                    SetAllegiance(null);
+                else
+                    SetAllegiance(_allegiances[args.Id - 1].ID);
+            };
+
+            #endregion Allegiance
+
+            #region Origin
+
+            RefreshOrigins();
+
+            OriginButton.OnItemSelected += args =>
+            {
+                OriginButton.SelectId(args.Id);
+                if (args.Id == 0)
+                    SetOrigin(null);
+                else
+                    SetOrigin(_origins[args.Id - 1].ID);
+            };
+
+            #endregion Origin
 
             #region Skin
 
@@ -471,7 +507,9 @@ namespace Content.Client.Lobby.UI
 
             #region Jobs
 
-            TabContainer.SetTabTitle(1, Loc.GetString("humanoid-profile-editor-jobs-tab"));
+            TabContainer.SetTabTitle(1, Loc.GetString("humanoid-profile-editor-military-jobs-tab"));
+            TabContainer.SetTabTitle(2, Loc.GetString("humanoid-profile-editor-threat-jobs-tab"));
+            TabContainer.SetTabTitle(3, Loc.GetString("humanoid-profile-editor-civilian-jobs-tab"));
 
             PreferenceUnavailableButton.AddItem(
                 Loc.GetString("humanoid-profile-editor-preference-unavailable-stay-in-lobby-button"),
@@ -495,15 +533,14 @@ namespace Content.Client.Lobby.UI
 
             #endregion Jobs
 
-            TabContainer.SetTabTitle(2, Loc.GetString("humanoid-profile-editor-antags-tab"));
-            // TODO RMC14 antags
-            TabContainer.SetTabVisible(2, false);
+            TabContainer.SetTabTitle(4, Loc.GetString("humanoid-profile-editor-antags-tab"));
+            TabContainer.SetTabVisible(4, true);
 
             RefreshTraits();
 
             #region Markings
 
-            TabContainer.SetTabTitle(4, Loc.GetString("humanoid-profile-editor-markings-tab"));
+            TabContainer.SetTabTitle(6, Loc.GetString("humanoid-profile-editor-markings-tab"));
 
             Markings.OnMarkingAdded += OnMarkingChange;
             Markings.OnMarkingRemoved += OnMarkingChange;
@@ -555,8 +592,8 @@ namespace Content.Client.Lobby.UI
             }
 
             var namedItems = UserInterfaceManager.GetUIController<NamedItemsUIController>();
-            TabContainer.SetTabTitle(5, Loc.GetString("rmc-ui-named-items"));
-            TabContainer.SetTabVisible(5, namedItems.Available);
+            TabContainer.SetTabTitle(7, Loc.GetString("rmc-ui-named-items"));
+            TabContainer.SetTabVisible(7, namedItems.Available);
             NamedItems.PrimaryGun.OnTextChanged += args => SetItemName(RMCNamedItemType.PrimaryGun, args.Text);
             NamedItems.Sidearm.OnTextChanged += args => SetItemName(RMCNamedItemType.Sidearm, args.Text);
             NamedItems.Helmet.OnTextChanged += args => SetItemName(RMCNamedItemType.Helmet, args.Text);
@@ -657,7 +694,7 @@ namespace Content.Client.Lobby.UI
             TraitsList.DisposeAllChildren();
 
             var traits = _prototypeManager.EnumeratePrototypes<TraitPrototype>().OrderBy(t => Loc.GetString(t.Name)).ToList();
-            TabContainer.SetTabTitle(3, Loc.GetString("humanoid-profile-editor-traits-tab"));
+            TabContainer.SetTabTitle(5, Loc.GetString("humanoid-profile-editor-traits-tab"));
 
             if (traits.Count < 1)
             {
@@ -802,56 +839,75 @@ namespace Content.Client.Lobby.UI
                 ("humanoid-profile-editor-antag-preference-no-button", 1)
             };
 
-            foreach (var antag in _prototypeManager.EnumerateCM<AntagPrototype>().OrderBy(a => Loc.GetString(a.Name)))
+            // Group antags by category
+            var antagsByCategory = _prototypeManager.EnumerateCM<AntagPrototype>()
+                .Where(a => a.SetPreference)
+                .GroupBy(a => string.IsNullOrEmpty(a.Category) ? Loc.GetString("humanoid-profile-editor-antag-category-uncategorized") : Loc.GetString(a.Category))
+                .OrderBy(g => g.Key);
+
+            foreach (var categoryGroup in antagsByCategory)
             {
-                if (!antag.SetPreference)
-                    continue;
-
-                var antagContainer = new BoxContainer()
+                // Create a container for the category
+                var categoryContainer = new BoxContainer
                 {
-                    Orientation = LayoutOrientation.Horizontal,
+                    Orientation = LayoutOrientation.Vertical
                 };
-
-                var selector = new RequirementsSelector()
+                categoryContainer.AddChild(new Label
                 {
-                    Margin = new Thickness(3f, 3f, 3f, 0f),
-                };
-                selector.OnOpenGuidebook += OnOpenGuidebook;
-
-                var title = Loc.GetString(antag.Name);
-                var description = Loc.GetString(antag.Objective);
-                selector.Setup(items, title, 250, description, guides: antag.Guides);
-                selector.Select(Profile?.AntagPreferences.Contains(antag.ID) == true ? 0 : 1);
-
-                var requirements = _entManager.System<SharedRoleSystem>().GetAntagRequirement(antag);
-                if (!_requirements.CheckRoleRequirements(requirements, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason))
-                {
-                    selector.LockRequirements(reason);
-                    Profile = Profile?.WithAntagPreference(antag.ID, false);
-                    SetDirty();
-                }
-                else
-                {
-                    selector.UnlockRequirements();
-                }
-
-                selector.OnSelected += preference =>
-                {
-                    Profile = Profile?.WithAntagPreference(antag.ID, preference == 0);
-                    SetDirty();
-                };
-
-                antagContainer.AddChild(selector);
-
-                antagContainer.AddChild(new Button()
-                {
-                    Disabled = true,
-                    Text = Loc.GetString("loadout-window"),
-                    HorizontalAlignment = HAlignment.Right,
-                    Margin = new Thickness(3f, 0f, 0f, 0f),
+                    Text = categoryGroup.Key,
+                    StyleClasses = { StyleNano.StyleClassLabelHeadingBigger }
                 });
 
-                AntagList.AddChild(antagContainer);
+                foreach (var antag in categoryGroup.OrderBy(a => Loc.GetString(a.Name)))
+                {
+                    var antagContainer = new BoxContainer()
+                    {
+                        Orientation = LayoutOrientation.Horizontal,
+                    };
+
+                    var selector = new RequirementsSelector()
+                    {
+                        Margin = new Thickness(3f, 3f, 3f, 0f),
+                    };
+                    selector.OnOpenGuidebook += OnOpenGuidebook;
+
+                    var title = Loc.GetString(antag.Name);
+                    var description = Loc.GetString(antag.Objective);
+                    selector.Setup(items, title, 250, description, guides: antag.Guides);
+                    selector.Select(Profile?.AntagPreferences.Contains(antag.ID) == true ? 0 : 1);
+
+                    var requirements = _entManager.System<SharedRoleSystem>().GetAntagRequirement(antag);
+                    if (!_requirements.CheckRoleRequirements(requirements, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason))
+                    {
+                        selector.LockRequirements(reason);
+                        Profile = Profile?.WithAntagPreference(antag.ID, false);
+                        SetDirty();
+                    }
+                    else
+                    {
+                        selector.UnlockRequirements();
+                    }
+
+                    selector.OnSelected += preference =>
+                    {
+                        Profile = Profile?.WithAntagPreference(antag.ID, preference == 0);
+                        SetDirty();
+                    };
+
+                    antagContainer.AddChild(selector);
+
+                    antagContainer.AddChild(new Button()
+                    {
+                        Disabled = true,
+                        Text = Loc.GetString("loadout-window"),
+                        HorizontalAlignment = HAlignment.Right,
+                        Margin = new Thickness(3f, 0f, 0f, 0f),
+                    });
+
+                    categoryContainer.AddChild(antagContainer);
+                }
+
+                AntagList.AddChild(categoryContainer);
             }
         }
 
@@ -878,7 +934,7 @@ namespace Content.Client.Lobby.UI
 
         public void RefreshRMC(SharedRMCPatronTier? tier)
         {
-            TabContainer.SetTabVisible(5, tier is { NamedItems: true });
+            TabContainer.SetTabVisible(7, tier is { NamedItems: true });
         }
 
         /// <summary>
@@ -943,11 +999,15 @@ namespace Content.Client.Lobby.UI
             UpdatePlaytimePerks();
             UpdateXenoPrefix();
             UpdateXenoPostfix();
+            UpdateAllegianceControls();
+            UpdateOriginControls();
 
             RefreshAntags();
             RefreshJobs();
             RefreshLoadouts();
             RefreshSpecies();
+            RefreshAllegiances();
+            RefreshOrigins();
             RefreshTraits();
             RefreshFlavorText();
             ReloadPreview();
@@ -999,10 +1059,14 @@ namespace Content.Client.Lobby.UI
         /// </summary>
         public void RefreshJobs()
         {
-            JobList.DisposeAllChildren();
+            MilitaryJobList.DisposeAllChildren();
+            ThreatJobList.DisposeAllChildren();
+            CivilianJobList.DisposeAllChildren();
             _jobCategories.Clear();
             _jobPriorities.Clear();
-            var firstCategory = true;
+            var firstMilitary = true;
+            var firstThreat = true;
+            var firstCivilian = true;
 
             // Get all displayed departments
             var departments = new List<DepartmentPrototype>();
@@ -1028,6 +1092,27 @@ namespace Content.Client.Lobby.UI
             {
                 var departmentName = Loc.GetString(department.Name);
 
+                // Determine which tab this department goes into
+                BoxContainer targetList;
+                ref var firstFlag = ref firstMilitary;
+
+                if (department.Faction is "govfor" or "opfor")
+                {
+                    targetList = MilitaryJobList;
+                    firstFlag = ref firstMilitary;
+                }
+                else if (department.Faction == "colonist")
+                {
+                    targetList = CivilianJobList;
+                    firstFlag = ref firstCivilian;
+                }
+                else
+                {
+                    // Threat / Third Party (no faction or unknown faction)
+                    targetList = ThreatJobList;
+                    firstFlag = ref firstThreat;
+                }
+
                 if (!_jobCategories.TryGetValue(department.ID, out var category))
                 {
                     category = new BoxContainer
@@ -1040,9 +1125,9 @@ namespace Content.Client.Lobby.UI
 
                     category.Visible = department.IsCM && !department.Hidden;
 
-                    if (firstCategory && category.Visible)
+                    if (firstFlag && category.Visible)
                     {
-                        firstCategory = false;
+                        firstFlag = false;
                     }
                     else
                     {
@@ -1066,7 +1151,7 @@ namespace Content.Client.Lobby.UI
                     });
 
                     _jobCategories[department.ID] = category;
-                    JobList.AddChild(category);
+                    targetList.AddChild(category);
                 }
 
                 var jobs = department.Roles.Select(jobId => _prototypeManager.Index(jobId))
@@ -1452,6 +1537,116 @@ namespace Content.Client.Lobby.UI
         {
             Profile = Profile?.WithXenoPostfix(postfix);
             SetDirty();
+        }
+
+        private void SetAllegiance(string? allegiance)
+        {
+            Profile = Profile?.WithAllegiance(allegiance != null ? new Robust.Shared.Prototypes.ProtoId<AllegiancePrototype>(allegiance) : (ProtoId<AllegiancePrototype>?)null);
+            SetDirty();
+        }
+
+        private void SetOrigin(string? origin)
+        {
+            Profile = Profile?.WithOrigin(origin != null ? new Robust.Shared.Prototypes.ProtoId<OriginPrototype>(origin) : (ProtoId<OriginPrototype>?)null);
+            SetDirty();
+        }
+
+        /// <summary>
+        /// Refreshes the allegiance selector.
+        /// </summary>
+        public void RefreshAllegiances()
+        {
+            AllegianceButton.Clear();
+            _allegiances.Clear();
+
+            AllegianceButton.AddItem(Loc.GetString("humanoid-profile-editor-allegiance-none"), 0);
+
+            _allegiances.AddRange(_prototypeManager.EnumeratePrototypes<AllegiancePrototype>().Where(o => o.RoundStart));
+
+            for (var i = 0; i < _allegiances.Count; i++)
+            {
+                var name = Loc.GetString(_allegiances[i].Name);
+                AllegianceButton.AddItem(name, i + 1);
+
+                if (Profile?.Allegiance?.Id == _allegiances[i].ID)
+                {
+                    AllegianceButton.SelectId(i + 1);
+                }
+            }
+
+            if (Profile?.Allegiance == null)
+            {
+                AllegianceButton.SelectId(0);
+            }
+        }
+
+        /// <summary>
+        /// Refreshes the origin selector.
+        /// </summary>
+        public void RefreshOrigins()
+        {
+            OriginButton.Clear();
+            _origins.Clear();
+
+            OriginButton.AddItem(Loc.GetString("humanoid-profile-editor-origin-none"), 0);
+
+            _origins.AddRange(_prototypeManager.EnumeratePrototypes<OriginPrototype>().Where(o => o.RoundStart));
+
+            for (var i = 0; i < _origins.Count; i++)
+            {
+                var name = Loc.GetString(_origins[i].Name);
+                OriginButton.AddItem(name, i + 1);
+
+                if (Profile?.Origin?.Id == _origins[i].ID)
+                {
+                    OriginButton.SelectId(i + 1);
+                }
+            }
+
+            if (Profile?.Origin == null)
+            {
+                OriginButton.SelectId(0);
+            }
+        }
+
+        private void UpdateAllegianceControls()
+        {
+            if (Profile?.Allegiance == null)
+            {
+                AllegianceButton.SelectId(0);
+                return;
+            }
+
+            for (var i = 0; i < _allegiances.Count; i++)
+            {
+                if (_allegiances[i].ID == Profile.Allegiance.Value.Id)
+                {
+                    AllegianceButton.SelectId(i + 1);
+                    return;
+                }
+            }
+
+            AllegianceButton.SelectId(0);
+        }
+
+        private void UpdateOriginControls()
+        {
+            if (Profile?.Origin == null)
+            {
+                OriginButton.SelectId(0);
+                return;
+            }
+
+            for (var i = 0; i < _origins.Count; i++)
+            {
+                if (_origins[i].ID == Profile.Origin.Value.Id)
+                {
+                    OriginButton.SelectId(i + 1);
+                    return;
+                }
+            }
+
+            OriginButton.SelectId(0);
         }
 
         public bool IsDirty

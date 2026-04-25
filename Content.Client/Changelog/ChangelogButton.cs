@@ -14,6 +14,7 @@ namespace Content.Client.Changelog
             // So that measuring before opening returns a correct height,
             // and the window has the correct size when opened.
             Text = " ";
+                Visible = false;
         }
 
         protected override void EnteredTree()

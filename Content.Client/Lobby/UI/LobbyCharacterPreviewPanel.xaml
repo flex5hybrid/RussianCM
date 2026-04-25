@@ -14,11 +14,17 @@
             </BoxContainer>
             <controls:VSpacer/>
             <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Name="PrevCharButton" Text="◀" ToolTip="{Loc 'lobby-character-preview-prev-char-tooltip'}" Margin="0 5 5 0" />
                 <Button Name="CharacterSetup" Text="{Loc 'lobby-character-preview-panel-character-setup-button'}"
                         HorizontalAlignment="Center"
                         Margin="0 5 0 0" />
+                <Button Name="NextCharButton" Text="▶" ToolTip="{Loc 'lobby-character-preview-next-char-tooltip'}" Margin="5 5 0 0" />
                 <Button Name="PatronPerks" Access="Public" Text="{Loc 'rmc-ui-patron-perks'}"
-                        Margin="0 5 0 0" Visible="False" />
+                        Margin="5 5 0 0" Visible="False" />
+            </BoxContainer>
+            <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 3 0 0">
+                <Button Name="IgnoreAllegianceButton" ToggleMode="True" Text="{Loc 'lobby-character-preview-ignore-allegiance'}"
+                        ToolTip="{Loc 'lobby-character-preview-ignore-allegiance-tooltip'}" />
             </BoxContainer>
         </BoxContainer>
         <Label Name="Unloaded" Text="{Loc 'lobby-character-preview-panel-unloaded-preferences-label'}"/>

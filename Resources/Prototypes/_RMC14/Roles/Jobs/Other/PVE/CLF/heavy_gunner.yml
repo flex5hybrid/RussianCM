@@ -19,6 +19,7 @@
     - type: NpcFactionMember
       factions:
       - CLF
+    - type: CLFMember
     - type: Skills
       preset: RMCSkillPresetPVESGO
     - type: SquadArmorWearer

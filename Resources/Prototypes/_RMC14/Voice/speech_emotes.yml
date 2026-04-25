@@ -174,7 +174,7 @@
     - whined.
     - whined!
     - whining.
-      
+
 - type: emote
   id: Yip
   name: rmc-emote-name-yip
@@ -315,84 +315,55 @@
     - warbles.
     - warbles!
 
-# Reptilian
+# Удалено, чтобы не конфликтовало с _RuMC/SoundCollections/warcry.yml
+# - type: emote
+#   id: Warcry
+#   name: au14-emote-name-warcry
+#   category: Vocal
+#   whitelist:
+#     components:
+#     - Vocal
+#   blacklist:
+#     components:
+#     - BorgChassis
+#     tags:
+#       - WorkingJoe
+#   icon: _AU14/Interface/Emotes/warcry.png
+#   chatMessages: ["au14-chat-emote-msg-warcry"]
+#   chatTriggers:
+#    - shouts an inspiring cry
+#    - shouts an inspiring cry!
+#    - warcry
+#    - warcry.
+#    - warcry!
+#    - warcries
+#    - warcries!
+#    - warcries.
+#    - war cry
+#    - war cry.
+#    - war cry!
 
 - type: emote
-  id: RMCReptileRattle
-  name: rmc-emote-name-r-rattle
-  category: Hands
-  available: false
-  icon: _RMC14/Actions/species_emotes.rsi/snarl.png
-  whitelist:
-    components:
-    - Vocal
-  blacklist:
-    components:
-    - BorgChassis
-  chatMessages: ["rmc-emote-r-rattle"]
-  chatTriggers:
-    - rattle
-    - rattles
-    - rattling
-    - rattled
-    - rattle tail
-    - rattles tail
-    - rattles their tail
-    - rattles her tail
-    - rattles his tail
-    - rattles its tail
-
-# Slime
-
-- type: emote
-  id: RMCSlimeBubble
-  name: rmc-emote-name-slime-bubble
+  id: Corpsman
+  name: au14-emote-name-corpsman
   category: Vocal
-  available: false
-  icon: Interface/Emotes/squish.png # todo: new icons?
   whitelist:
-    components: 
+    components:
     - Vocal
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["rmc-emote-slime-bubble"]
+    tags:
+      - WorkingJoe
+  icon: _AU14/Interface/Emotes/corpsman.png
+  chatMessages: ["au14-chat-emote-msg-corpsman"]
   chatTriggers:
-  - bubbles
-  - bubbling
-
-- type: emote
-  id: RMCSlimePop
-  name: rmc-emote-name-slime-pop
-  category: Vocal
-  available: false
-  icon: Interface/Emotes/squish.png # todo: new icons?
-  whitelist:
-    components: 
-    - Vocal
-  blacklist:
-    components:
-    - BorgChassis
-  chatMessages: ["rmc-emote-slime-pop"]
-  chatTriggers:
-  - pops
-  - popping
-
-- type: emote
-  id: RMCSlimeWobble
-  name: rmc-emote-name-slime-wobble
-  category: Vocal
-  available: false
-  icon: Interface/Emotes/squish.png # todo: new icons?
-  whitelist:
-    components: 
-    - Vocal
-  blacklist:
-    components:
-    - BorgChassis
-  chatMessages: ["rmc-emote-slime-wobble"]
-  chatTriggers:
-  - wobbles
-  - wobbling
-  - wibbles 
-  - wibbling
+   - screams for a corpsman
+   - screams for a corpsman!
+   - corpsman!!
+   - corpsman!
+   - corpsman
+   - medic
+   - medic!
+   - medic.
+   - corpsman.

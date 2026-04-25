@@ -13,6 +13,19 @@ public sealed partial class EvacuationProgressComponent : Component
     [DataField, AutoNetworkedField]
     public bool DropShipCrashed;
 
+    /// <summary>
+    /// The faction whose ship was hijacked. Used to scope evacuation announcements.
+    /// Null = default marine (govfor).
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public string? VictimFaction;
+
+    /// <summary>
+    /// Whether this was a human-vs-human hijack. Suppresses xeno announcements.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool IsHumanHijack;
+
     [DataField, AutoNetworkedField]
     public bool StartAnnounced;
 

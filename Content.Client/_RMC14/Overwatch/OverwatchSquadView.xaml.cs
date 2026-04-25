@@ -35,6 +35,7 @@ public sealed partial class OverwatchSquadView : Control
         SquadMonitorButton.OnPressed += OnSquadMonitorPressed;
         SupplyDropButton.OnPressed += OnSupplyDropPressed;
         OrbitalBombardmentButton.OnPressed += OnOrbitalBombardmentPressed;
+        FireteamsButton.OnPressed += OnFireteamsPressed;
 
         // Set default tab to Squad Monitor
         ShowTab("SquadMonitor");
@@ -221,17 +222,24 @@ public sealed partial class OverwatchSquadView : Control
         ShowTab("OrbitalBombardment");
     }
 
+    private void OnFireteamsPressed(ButtonEventArgs obj)
+    {
+        ShowTab("Fireteams");
+    }
+
     private void ShowTab(string tabName)
     {
         // Hide all content panels
         SquadMonitor.Visible = false;
         SupplyDrop.Visible = false;
         OrbitalBombardment.Visible = false;
+        Fireteams.Visible = false;
 
         // Reset all button styles to unselected state
         SquadMonitorButton.ModulateSelfOverride = Color.FromHex("#202020");
         SupplyDropButton.ModulateSelfOverride = Color.FromHex("#202020");
         OrbitalBombardmentButton.ModulateSelfOverride = Color.FromHex("#202020");
+        FireteamsButton.ModulateSelfOverride = Color.FromHex("#202020");
 
         // Show the selected panel and highlight the button
         switch (tabName)
@@ -247,6 +255,10 @@ public sealed partial class OverwatchSquadView : Control
             case "OrbitalBombardment":
                 OrbitalBombardment.Visible = true;
                 OrbitalBombardmentButton.ModulateSelfOverride = Color.FromHex("#404040");
+                break;
+            case "Fireteams":
+                Fireteams.Visible = true;
+                FireteamsButton.ModulateSelfOverride = Color.FromHex("#404040");
                 break;
         }
     }

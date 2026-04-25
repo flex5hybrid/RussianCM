@@ -1,6 +1,11 @@
 ﻿rmc-dropship-pre-flight-fueling = The shuttle is still undergoing pre-flight fueling and cannot depart yet. Please wait another {$minutes} minutes before trying again.
 rmc-dropship-pre-hijack = This terminal won't be operational for another {$minutes} minutes.
 rmc-dropship-invalid-hijack = Lights flash from the terminal but you can't comprehend their meaning.
+rmc-dropship-hijack-human-hacking = You begin hacking the navigation console to override the flight controls...
+rmc-dropship-hijack-no-intel = Your faction does not have enough intel points to hijack the dropship.
+rmc-dropship-hijack-no-enemy-lz = No enemy primary landing zones are available to hijack to.
+rmc-dropship-hijack-thirdparty = This shuttle's navigation systems are incompatible with your override device.
+rmc-dropship-terminal-wrong-faction = This terminal does not recognize your credentials.
 
 rmc-dropship-weapons-title = Weapons Console
 

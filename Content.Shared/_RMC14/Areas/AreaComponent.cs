@@ -96,4 +96,7 @@ public sealed partial class AreaComponent : Component
 
     [DataField, AutoNetworkedField]
     public int ResinConstructCount;
+
+    [DataField, AutoNetworkedField]
+    public bool CountAsArrestedForEndConditions;
 }

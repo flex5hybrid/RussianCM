@@ -7,6 +7,8 @@ using Content.Client.Lobby.UI;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Station;
 using Content.Shared._RMC14.Armor;
+using Content.Shared.AU14.Allegiance;
+using Content.Shared.AU14.Origin;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.GameTicking;
@@ -127,6 +129,16 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
             if (obj.WasModified<SpeciesPrototype>())
             {
                 _profileEditor.RefreshSpecies();
+            }
+
+            if (obj.WasModified<AllegiancePrototype>())
+            {
+                _profileEditor.RefreshAllegiances();
+            }
+
+            if (obj.WasModified<OriginPrototype>())
+            {
+                _profileEditor.RefreshOrigins();
             }
 
             if (obj.WasModified<TraitPrototype>())

@@ -2,7 +2,6 @@
   id: LockerFillMedicine
   table: !type:AllSelector
     children:
-    - id: BoxSyringe
     - id: ChemistryBottleEpinephrine
     - id: Brutepack
       amount: !type:ConstantNumberSelector
@@ -90,12 +89,9 @@
   id: LockerFillChemistry
   table: !type:AllSelector
     children:
-    - id: BoxSyringe
     - id: BoxBeaker
     - id: BoxBeaker
       prob: 0.3
-    - id: BoxPillCanister
-    - id: BoxBottle
     - id: BoxVial
     - id: PlasmaChemistryVial
     - id: ChemBag

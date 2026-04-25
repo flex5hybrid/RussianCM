@@ -5,11 +5,15 @@
   description: cm-job-description-survivor
   playTimeTracker: CMJobSurvivorSecurity
   ranks:
-    RMCRankSPPEfreitor:
+    RMCRankSPPStrsh:
+    - !type:RoleTimeRequirement
+      role: CMJobSurvivorSecurity
+      time: 630000 # 175 hours
+    RMCRankSPPSMlts:
     - !type:RoleTimeRequirement
       role: CMJobSurvivorSecurity
       time: 252000 # 70 hours
-    RMCRankSPPRyadovoy: []
+    RMCRankSPPMlts: []
   startingGear: RMCGearSurvivorArmyReservist
   accessGroups:
   - ColonistSec
@@ -18,7 +22,16 @@
   - !type:AddComponentSpecial
     components:
     - type: Skills
-      preset: RMCSkillPresetSurvivorSPPPrivate
+      skills:
+        RMCSkillEngineer: 2
+        RMCSkillMeleeWeapons: 1
+        RMCSkillConstruction: 1
+        RMCSkillMedical: 1
+        RMCSkillEndurance: 2
+        RMCSkillCqc: 1
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 2
+        RMCSkillJtac: 1
     - type: EquipSurvivorPreset
       preset: RMCGearSurvivorPresetArmyReservist
     - type: RMCSurvivor
@@ -43,7 +56,7 @@
     gloves: RMCHandsVeteran
     belt: RMCBeltSPPBrownHalfFill
     back: RMCSatchelLightpack5Slot
-    ears: RMCHeadsetSPP
+
     id: RMCIDSPP
     pocket1: RMCPouchSurvivalBlackFilled
     pocket2: RMCPouchFirstAidSPPArmyFill

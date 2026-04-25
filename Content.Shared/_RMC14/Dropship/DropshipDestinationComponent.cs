@@ -17,4 +17,20 @@ public sealed partial class DropshipDestinationComponent : Component
 
     [DataField, AutoNetworkedField]
     public EntityUid? ArrivalSoundEntity;
+
+    [DataField("FactionControlling", required: false), AutoNetworkedField]
+    public string FactionController = String.Empty;
+
+
+    [DataField("destinationtype")]
+    public  DestinationType Destinationtype = DestinationType.Dropship;
+
+    [DataField("Home")]
+    public bool Home = false;
+    public enum DestinationType
+    {
+        Figher,
+        Dropship,
+        Bigship
+    }
 }

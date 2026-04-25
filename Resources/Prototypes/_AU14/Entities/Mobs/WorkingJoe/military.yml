@@ -1,0 +1,53 @@
+- type: entity
+  parent: AU14MobWorkingJoe
+  id: AU14MobWorkingJoeGOVFOR
+  suffix: AU14, GOVFOR
+  components:
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - AI
+    - MarineCommand
+    - MarineJTAC
+    - MarineAlpha
+    - GovforCharlie
+    - GovforBravo
+    - GovforIntel
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    reregister: false
+    name: au14-job-name-workingjoe
+    description: au14-job-description-workingjoe
+    job: AU14JobGOVFORWorkingJoe
+    raffle:
+      settings: short
+
+- type: entity
+  parent: AU14MobWorkingJoe
+  id: AU14MobWorkingJoeOPFOR
+  suffix: AU14, OPFOR
+  components:
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - AI
+    - opfor
+    - opforcommand
+    - OpforCharlie
+    - OpforBravo
+    - OpforIntel
+    - opforjtac
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    reregister: false
+    name: au14-job-name-workingjoe
+    description: au14-job-description-workingjoe
+    job: AU14JobOPFORWorkingJoe
+    raffle:
+      settings: short

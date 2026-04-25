@@ -21,7 +21,7 @@
     - type: Skills
       skills:
         RMCSkillEndurance: 1
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
     - type: SquadArmorWearer
     - type: JobPrefix
       prefix: rmc-job-prefix-spp-rifleman
@@ -66,7 +66,6 @@
       role: CMJobRifleman
       time: 18000 # 5 Hours
   - type: GhostRoleApplySpecial
-    squad: SquadSPP
 
 - type: randomHumanoidSettings
   parent: RMCSPPRifleman
@@ -81,13 +80,12 @@
     raffle:
       settings: short
   - type: GhostRoleApplySpecial
-    squad: SquadSPP
 
 - type: startingGear
   id: RMCGearSPPRifleman
   equipment:
     head: ArmorHelmetSPP
-    ears: RMCHeadsetSPP
+
     jumpsuit: CMJumpsuitSPP
     outerClothing: RMCArmorSPPRifleman
     gloves: RMCHandsVeteranSPP

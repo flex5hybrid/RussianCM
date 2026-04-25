@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseWeaponBatterySmall
   id: RMCWeaponTaser
-  name: disabler gun
-  description: An advanced stun device capable of firing balls of ionized electricity. Used for nonlethal takedowns.
+  name: projectile taser
+  description: An advanced stun device capable of firing a taser cartridge. Used for nonlethal takedowns. Requires recharging after every use.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Energy/taser.rsi
@@ -17,14 +17,14 @@
     shape: null # needed to disable the parent's weird shape
   - type: Gun
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/taser.ogg
+      path: /Audio/Weapons/Guns/Hits/taser_hit.ogg
   - type: Wieldable
   - type: Battery
     maxCharge: 800
     startingCharge: 800
   - type: ProjectileBatteryAmmoProvider
     proto: RMCProjectileTaser
-    fireCost: 50
+    fireCost: 800
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -39,7 +39,7 @@
     weaponGroup: Handgun
   - type: GunRequiresSkills
     skills:
-      RMCSkillPolice: 2
+      RMCSkillPolice: 1
   - type: AltFireMelee
   - type: MeleeWeapon
     attackRate: 1
@@ -47,11 +47,11 @@
       types:
         Blunt: 5
     soundHit:
-      path: /Audio/Weapons/Guns/Hits/taser_hit.ogg
+      path: /Audio/Weapons/Guns/Hits/energy_metal2.ogg
   - type: Stunbaton
     energyPerUse: 50
   - type: RMCStaminaDamageOnHit
-    damage: 100
+    damage: 15
   - type: MeleeRequiresSkill
     skills:
       RMCSkillPolice: 2

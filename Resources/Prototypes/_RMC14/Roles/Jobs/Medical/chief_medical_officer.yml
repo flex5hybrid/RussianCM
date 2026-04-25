@@ -3,6 +3,7 @@
   id: CMCMO
   name: rmc-job-name-cmo
   description: rmc-job-description-cmo
+  setPreference: false
   playTimeTracker: CMJobCMO
   requirements:
   - !type:TotalJobsTimeRequirement
@@ -46,6 +47,18 @@
     - type: CMVendorUser
       points: 45
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: RMCPointing
     - type: JobPrefix
       prefix: rmc-job-prefix-cmo
@@ -59,8 +72,6 @@
         sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: background_command
     - type: RMCTrackable
-    - type: RMCAwardRecommendation
-    - type: SeeNewPlayers
 
 - type: startingGear
   id: CMGearCMO
@@ -68,7 +79,6 @@
     jumpsuit: CMJumpsuitCMO
     shoes: ClothingShoesColorWhite
     id: CMIDCardCMO
-    ears: CMHeadsetCMO
     # TODO RMC14 random chemical synthesis note
 
 - type: startingGear

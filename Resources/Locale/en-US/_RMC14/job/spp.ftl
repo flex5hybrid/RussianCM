@@ -7,33 +7,33 @@ rmc-ghost-role-information-spp-friendly-description = Render assistance towards 
 rmc-ghost-role-information-spp-hostile-description = Eliminate the UN Forces to ensure the SPP presence in this sector is continued. Listen to your superior officers and take over the main UNS vessel at all costs.
 rmc-ghost-role-information-spp-pve-description = Follow any orders from command and carry them out to the best of your abillity. For the people!
 
-rmc-ghost-name-spp-hostile-leader = SPP Squad Leader (Hostile)
-rmc-ghost-name-spp-friendly-leader = SPP Squad Leader (Friendly)
+rmc-ghost-name-spp-hostile-leader = UPP Squad Leader
+rmc-ghost-name-spp-friendly-leader = UPP Squad Leader
 rmc-job-name-spp-leader = Starshiy Serzhant
 rmc-job-prefix-spp-leader = SL
 
-rmc-ghost-name-spp-hostile-specialist = SPP Squad Specialist (Hostile)
-rmc-ghost-name-spp-friendly-specialist = SPP Squad Specialist (Friendly)
+rmc-ghost-name-spp-hostile-specialist = UPP Squad Specialist
+rmc-ghost-name-spp-friendly-specialist = UPP Squad Specialist
 rmc-job-name-spp-specialist = Serzhant
 rmc-job-prefix-spp-specialist = Spc
 
-rmc-ghost-name-spp-hostile-rifleman = SPP Squad Conscript (Hostile)
-rmc-ghost-name-spp-friendly-rifleman = SPP Squad Conscript (Friendly)
+rmc-ghost-name-spp-hostile-rifleman = UPP Squad Conscript
+rmc-ghost-name-spp-friendly-rifleman = UPP Squad Conscript
 rmc-job-name-spp-rifleman = Conscript
 rmc-job-prefix-spp-rifleman = Sol
 
-rmc-ghost-name-spp-hostile-engineer = SPP Squad Sapper (Hostile)
-rmc-ghost-name-spp-friendly-engineer = SPP Squad Sapper (Friendly)
+rmc-ghost-name-spp-hostile-engineer = UPP Squad Sapper
+rmc-ghost-name-spp-friendly-engineer = UPP Squad Sapper
 rmc-job-name-spp-engineer = MSzht Engineer
 rmc-job-prefix-spp-engineer = Sap
 
-rmc-ghost-name-spp-hostile-medic = SPP Squad Medic (Hostile)
-rmc-ghost-name-spp-friendly-medic = SPP Squad Medic (Friendly)
+rmc-ghost-name-spp-hostile-medic = UPP Squad Medic
+rmc-ghost-name-spp-friendly-medic = UPP Squad Medic
 rmc-job-name-spp-medic = MSzht Medic
 rmc-job-prefix-spp-medic = Med
 
-rmc-ghost-name-spp-hostile-mp = SPP Military Police (Hostile)
-rmc-ghost-name-spp-friendly-mp = SPP Military Police (Friendly)
+rmc-ghost-name-spp-hostile-mp = UPP Military Police
+rmc-ghost-name-spp-friendly-mp = UPP Military Police
 rmc-job-name-spp-mp = Politsiya
 rmc-job-prefix-spp-mp = MP
 

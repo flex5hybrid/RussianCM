@@ -137,6 +137,7 @@ namespace Content.Client.GameTicking.Managers
 
         private void JoinGame(TickerJoinGameEvent message)
         {
+            Log.Debug("ClientGameTicker: received TickerJoinGameEvent, requesting GameplayState");
             _stateManager.RequestStateChange<GameplayState>();
         }
 

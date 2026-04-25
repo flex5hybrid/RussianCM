@@ -171,11 +171,10 @@
   name: reagent-name-cminaprovaline
   desc: reagent-desc-cminaprovaline
   color: "#fe33cb"
-  overdose: 60
-  criticalOverdose: 100
+  overdose: 110
   metabolisms:
     Medicine:
-      metabolismRate: 0.1
+      metabolismRate: 0.5
       effects:
       - !type:HealthChange
         conditions:
@@ -187,25 +186,14 @@
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
-          min: 60
+          min: 110
       - !type:GenericStatusEffect
         conditions:
         - !type:ReagentThreshold
-          min: 60
-        key: Unconscious
-        component: RMCUnconscious # Change to Knockdown+Stun refresh: true
-        time: 40
-        type: Add
-        refresh: true
-      - !type:GenericStatusEffect
-        conditions:
-        - !type:ReagentThreshold #0.25 heart damage/s
-          min: 100               #5% chance emote twitch, blink_r, shiver
-        # TODO RMC14 Drowsiness. if drowsiness > 10 5% change to paralyze(knockout) for 10 seconds.
+          min: 110
         key: Unconscious
         component: RMCUnconscious
-        probability: 0.05
-        time: 10
+        time: 10 #Yes, it's this much.
         type: Add
         refresh: true
 

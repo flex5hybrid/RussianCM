@@ -37,9 +37,6 @@
     layers:
     - state: laser_battery_10
       map: [ "enum.DropshipAmmoVisuals.Fill"]
-  - type: DropshipFabricatorPrintable
-    category: Ammo
-    cost: 200
   - type: DropshipAmmo
     ammoType: laser_battery
     rounds: 100

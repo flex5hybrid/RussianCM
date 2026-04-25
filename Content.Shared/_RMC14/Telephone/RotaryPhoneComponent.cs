@@ -7,7 +7,6 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 namespace Content.Shared._RMC14.Telephone;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState, AutoGenerateComponentPause]
-[Access(typeof(SharedRMCTelephoneSystem))]
 public sealed partial class RotaryPhoneComponent : Component
 {
     [DataField, AutoNetworkedField]
@@ -67,6 +66,15 @@ public sealed partial class RotaryPhoneComponent : Component
     [DataField, AutoNetworkedField]
     public bool TryGetHolderName = true;
 
+
+    [DataField]
+    public string Faction = string.Empty;
+
+    /// <summary>
+    /// If true, this phone can be called by any caller regardless of faction.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool CallableByAll;
     /// <summary>
     /// Should admins be notified when being called.
     /// </summary>

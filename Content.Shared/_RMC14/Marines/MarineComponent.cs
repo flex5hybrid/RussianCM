@@ -6,11 +6,13 @@ using Robust.Shared.Utility;
 namespace Content.Shared._RMC14.Marines;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(SharedMarineSystem))]
+//[Access(typeof(SharedMarineSystem))]
 public sealed partial class MarineComponent : Component
 {
     [DataField, AutoNetworkedField]
     public SpriteSpecifier? Icon;
+    [DataField("Faction"), AutoNetworkedField]
+    public string? Faction { get; set; } = "";
 
     [DataField, AutoNetworkedField]
     public Dictionary<ProtoId<NpcFactionPrototype>, SpriteSpecifier> GenericFactionIcons = new()

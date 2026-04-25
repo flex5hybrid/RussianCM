@@ -36,9 +36,15 @@
                                                Align="Left"
                                                FontColorOverride="{x:Static maths:Color.DarkGray}"
                                                StyleClasses="LabelBig" HorizontalExpand="True" />
-                                        <!-- RMC14 -->
-                                        <Button Name="JoinXenoButton" Access="Public"
-                                                Text="{Loc 'rmc-lobby-join-xeno'}"
+                                        <!-- RMC14/AU -->
+                                        <Button Name="JoinGovforButton" Access="Public"
+                                                Text="{Loc 'rmc-lobby-join-govfor'}"
+                                                StyleClasses="ButtonBig" MinWidth="137" Visible="False" />
+                                        <Button Name="JoinOpforButton" Access="Public"
+                                                Text="{Loc 'rmc-lobby-join-opfor'}"
+                                                StyleClasses="ButtonBig" MinWidth="137" Visible="False" />
+                                        <Button Name="JoinOtherButton" Access="Public"
+                                                Text="{Loc 'rmc-lobby-join-other'}"
                                                 StyleClasses="ButtonBig" MinWidth="137" Visible="False" />
                                         <Button Name="ReadyButton" Access="Public" ToggleMode="True"
                                                 Text="{Loc 'ui-lobby-ready-up-button'}"
@@ -119,7 +125,7 @@
             </PanelContainer>
         </SplitContainer>
         <PanelContainer Name="ExpandPanel"
-                        StyleClasses="AngleRect" 
+                        StyleClasses="AngleRect"
                         HorizontalAlignment="Right"
                         VerticalAlignment="Top"
                         Margin="0 2 2 0"

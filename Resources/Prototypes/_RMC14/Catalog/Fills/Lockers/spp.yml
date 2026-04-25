@@ -4,7 +4,6 @@
     children:
     - id: CMBootsBrownFilled
     - id: CMJumpsuitSPP
-    - id: RMCHeadsetSPP
 
 - type: entityTable
   id: RMCClosetSPPSLFill

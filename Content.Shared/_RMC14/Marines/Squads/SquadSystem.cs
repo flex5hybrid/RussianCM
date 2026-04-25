@@ -34,6 +34,7 @@ using Content.Shared.Roles.Jobs;
 using Content.Shared.Storage;
 using Content.Shared.GameTicking;
 using Content.Shared.Whitelist;
+using Robust.Client.GameObjects;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -516,16 +517,19 @@ public sealed class SquadSystem : EntitySystem
         var member = EnsureComp<SquadMemberComponent>(marine);
         var oldSquadId = member.Squad;
         var role = job ?? _originalRoleQuery.CompOrNull(marine)?.Job;
-        if (_squadTeamQuery.TryComp(oldSquadId, out var oldSquad))
+        SquadTeamComponent? oldSquad = null;
+        if (_squadTeamQuery.TryComp(oldSquadId, out var oldSquadTmp))
+            oldSquad = oldSquadTmp;
+        if (_squadTeamQuery.TryComp(oldSquadId, out var oldSquadCheck))
         {
-            oldSquad.Members.Remove(marine);
+            oldSquadCheck.Members.Remove(marine);
 
             if (role != null)
             {
-                if (oldSquad.Roles.TryGetValue(role.Value, out var oldJobs) &&
+                if (oldSquadCheck.Roles.TryGetValue(role.Value, out var oldJobs) &&
                     oldJobs > 0)
                 {
-                    oldSquad.Roles[role.Value] = oldJobs - 1;
+                    oldSquadCheck.Roles[role.Value] = oldJobs - 1;
                 }
             }
         }
@@ -576,8 +580,67 @@ public sealed class SquadSystem : EntitySystem
 
         UpdateSquadTitle(marine);
 
-        // Search for any squad-specific items to map
         SearchForMappedItems((marine, member), member.Squad.Value);
+
+        ProtoId<RadioChannelPrototype>? oldRadio = null;
+        if (oldSquad != null)
+            oldRadio = oldSquad.Radio;
+        ProtoId<RadioChannelPrototype>? newRadio = team.Comp.Radio;
+        AdjustCommonKeyForMember(marine, oldRadio, newRadio);
+    }
+
+
+    private void AdjustCommonKeyForMember(EntityUid marine, ProtoId<RadioChannelPrototype>? removeRadio, ProtoId<RadioChannelPrototype>? addRadio)
+    {
+        var slots = _inventory.GetSlotEnumerator(marine, SlotFlags.EARS);
+        while (slots.MoveNext(out var slot))
+        {
+            if (slot.ContainedEntity is not { } headset)
+                continue;
+
+            if (!TryComp(headset, out Content.Shared.Radio.Components.EncryptionKeyHolderComponent? holder))
+                continue;
+
+            var changed = false;
+            foreach (var keyEnt in holder.KeyContainer.ContainedEntities)
+            {
+                var protoId = CompOrNull<MetaDataComponent>(keyEnt)?.EntityPrototype?.ID;
+                if (protoId != "CMEncryptionKeyCommon")
+                    continue;
+
+                if (!TryComp(keyEnt, out Content.Shared.Radio.Components.EncryptionKeyComponent? keyComp))
+                    continue;
+
+                if (removeRadio is { } r)
+                {
+                    var rStr = r.ToString();
+                    if (keyComp.Channels.Contains(rStr))
+                    {
+                        keyComp.Channels.Remove(rStr);
+                        changed = true;
+                    }
+                }
+
+                if (addRadio is { } a)
+                {
+                    var aStr = a.ToString();
+                    if (!keyComp.Channels.Contains(aStr))
+                    {
+                        keyComp.Channels.Add(aStr);
+                        changed = true;
+                    }
+                }
+
+                if (changed)
+                {
+                    Dirty(keyEnt, keyComp);
+                    // Recompute holder channels
+                    _encryptionKey.UpdateChannels(headset, holder);
+                }
+            }
+
+            break;
+        }
     }
 
     public void RemoveSquad(EntityUid marine, ProtoId<JobPrototype>? job)
@@ -587,6 +650,11 @@ public sealed class SquadSystem : EntitySystem
             return;
 
         var oldSquadId = member.Squad;
+        // Determine old squad radio to remove from common key
+        ProtoId<RadioChannelPrototype>? oldRadio = null;
+        if (_squadTeamQuery.TryComp(oldSquadId, out var oldSquadComp))
+            oldRadio = oldSquadComp.Radio;
+
         var role = job ?? _originalRoleQuery.CompOrNull(marine)?.Job;
         if (_squadTeamQuery.TryComp(oldSquadId, out var oldSquad))
         {
@@ -603,6 +671,11 @@ public sealed class SquadSystem : EntitySystem
         }
 
         RemComp<SquadMemberComponent>(marine);
+
+        // Remove the old squad radio from CMEncryptionKeyCommon
+        if (oldRadio != null)
+            AdjustCommonKeyForMember(marine, oldRadio, null);
+
         if (oldSquadId != null && oldSquad != null)
         {
             var removeEv = new SquadMemberRemovedEvent((oldSquadId.Value, oldSquad), marine);
@@ -1031,3 +1104,4 @@ public sealed class SquadSystem : EntitySystem
         _membersToUpdate.Clear();
     }
 }
+

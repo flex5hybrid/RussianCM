@@ -1,8 +1,10 @@
-﻿[game]
+﻿[build]
+engine_version = "v264.0.2-fix-physics"
+
+[game]
+defaultpreset = "ColonyFall"
 # Straight in-game baby
-lobbyenabled = false
-# Dev map for faster loading & convenience
-map = "RMCDev"
+lobbyenabled = true
 role_timers = false
 
 [events]
@@ -43,9 +45,6 @@ preload_grids = false
 [admin]
 see_own_notes = true
 
-[rmc]
-automatic_commander_promotion = false
-planet_map_vote = false
 
 [ic]
 # random_characters = true

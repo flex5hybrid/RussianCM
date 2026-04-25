@@ -273,7 +273,7 @@ public sealed class XenoHudOverlay : Overlay
         var ranks = _entity.EntityQueryEnumerator<XenoRankComponent, SpriteComponent, TransformComponent>();
         while (ranks.MoveNext(out var uid, out var comp, out var sprite, out var xform))
         {
-            if (comp.Rank < 2 || comp.Rank > 6 || _xenoMaturingQuery.HasComp(uid))
+            if (comp.Rank < 2 || comp.Rank > 7 || _xenoMaturingQuery.HasComp(uid))
                 continue;
 
             if (xform.MapID != args.MapId)
@@ -296,7 +296,15 @@ public sealed class XenoHudOverlay : Overlay
             var matrix = Matrix3x2.Multiply(rotationMatrix, scaledWorld);
             handle.SetTransform(matrix);
 
-            var icon = new Rsi(_rsiPath, $"hudxenoupgrade{comp.Rank}");
+            // Highest playtime rank is still 6 in XenoRoleSystem, but the tier-7 RSI art is the intended top icon
+            // (matches RMCPlaytimeStatsWindow using hudxenoupgrade7-ui for Ruby+).
+            var rankState = comp.Rank switch
+            {
+                7 => "hudxenoupgrade8",
+                6 => "hudxenoupgrade7",
+                _ => $"hudxenoupgrade{comp.Rank}"
+            };
+            var icon = new Rsi(_rsiPath, rankState);
             var texture = _sprite.GetFrame(icon, _timing.CurTime);
 
             var yOffset = (bounds.Height + sprite.Offset.Y) / 2f - (float) texture.Height / EyeManager.PixelsPerMeter * bounds.Height;

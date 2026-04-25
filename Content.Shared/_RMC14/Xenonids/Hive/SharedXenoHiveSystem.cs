@@ -59,6 +59,10 @@ public abstract class SharedXenoHiveSystem : EntitySystem
 
     private void OnDropshipHijackStart(ref DropshipHijackStartEvent ev)
     {
+        // Evolution boost is xeno-specific; skip for human-vs-human hijacks
+        if (ev.IsHumanHijack)
+            return;
+
         var hives = EntityQueryEnumerator<HiveComponent>();
         while (hives.MoveNext(out var uid, out var hive))
         {

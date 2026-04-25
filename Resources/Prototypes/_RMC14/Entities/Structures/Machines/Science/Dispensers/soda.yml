@@ -1,5 +1,5 @@
 - type: entity
-  parent: RMCDispenserBase
+  parent: BoozeDispenser
   id: CMDispenserSoda
   name: soda fountain
   description: A drink fabricating machine, capable of producing many sugary drinks with just one touch.
@@ -14,45 +14,35 @@
     snapCardinals: true
     layers:
     - state: soda_dispenser
+  - type: StorageFill
+    contents:
+    - id: DrinkCoconutWaterJug
+    - id: DrinkCoffeeJug
+    - id: DrinkColaBottleFull
+    - id: DrinkCreamCartonXL
+    - id: DrinkDrGibbJug
+    - id: DrinkEnergyDrinkJug
+    - id: DrinkGreenTeaJug
+    - id: DrinkIceJug
+    - id: DrinkJuiceLimeCartonXL
+    - id: DrinkJuiceOrangeCartonXL
+    - id: DrinkLemonLimeJug
+    - id: DrinkRootBeerJug
+    - id: DrinkSodaWaterBottleFull
+    - id: DrinkSpaceMountainWindBottleFull
+    - id: DrinkSpaceUpBottleFull
+    - id: DrinkSugarJug
+    - id: DrinkTeaJug
+    - id: DrinkTonicWaterBottleFull
+    - id: DrinkWaterMelonJuiceJug
   - type: Machine
-    board: CMCircuitboardDispenserSoda
-  - type: RMCChemicalDispenser
-    network: RMCChemStorageDrinks
-    reagents:
-    - JuiceBanana
-    - JuiceBerry
-    - JuiceCarrot
-    - Coffee
-    - Cola
-    - Cream
-    - DrGibb
-    - JuiceGrape
-    - Ice
-    - JuiceLemon
-    - LemonLime
-    - JuiceLime
-    - RMCJuiceMango
-    - JuiceOrange
-    - RootBeer
-    - SodaWater
-    - SpaceMountainWind
-    - SpaceUp
-    - RMCSugar
-    - Tea
-    - JuiceTomato
-    - TonicWater
-    - Water
-    - JuiceWatermelon
-  - type: ItemSlots
-    slots:
-      chemical_dispenser_slot:
-        name: Soda Fountain
-        whitelist:
-          tags:
-          - GlassBeaker
-          - ChemDispensable
-          - DrinkGlass
-  - type: Pullable
+    board: CMCircuitboardDispenserBooze
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno
+  - type: ApcPowerReceiver
+    needsPower: false
 
 - type: entity
   parent: RMCChemStorageBase

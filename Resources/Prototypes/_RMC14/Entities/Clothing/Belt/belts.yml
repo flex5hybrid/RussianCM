@@ -15,7 +15,7 @@
   parent: CMBeltBaseStorage
   id: CMBeltMarine
   name: M276 pattern ammo load rig
-  description: The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/marine/jungle-classic.rsi
@@ -151,7 +151,7 @@
   parent: CMBeltMarine
   id: RMCBeltPMC
   name: M305 pattern ammo load rig
-  description: The M305 is the standard load-bearing equipment of Weston-Yamada PMCs. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+  description: The M305 is the standard load-bearing equipment of Weyland-Yutani PMCs. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/pmc.rsi
@@ -182,7 +182,7 @@
   parent: CMBeltBaseStorage
   id: CMBeltUtility
   name: M276 pattern toolbelt rig
-  description: The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version lacks any combat functionality, and is commonly used by engineers to transport important tools.
+  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version lacks any combat functionality, and is commonly used by engineers to transport important tools.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/utility.rsi
@@ -278,7 +278,7 @@
   parent: CMBeltUtility
   id: CMBeltUtilityCombat
   name: M276 pattern combat toolbelt rig
-  description: The M276 pattern combat toolbelt rig is an alternative load-bearing equipment of the UNMC for engineers conducting repairs within combat zones. It consists of a modular belt with various clips and pouches for tools along with a holster for a sidearm. Due to the bulk of the sidearm, it is unable to hold as many tools as its standard counterpart.
+  description: The M276 pattern combat toolbelt rig is an alternative load-bearing equipment of the USCM for engineers conducting repairs within combat zones. It consists of a modular belt with various clips and pouches for tools along with a holster for a sidearm. Due to the bulk of the sidearm, it is unable to hold as many tools as its standard counterpart.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/combat_utility.rsi
@@ -343,7 +343,7 @@
   parent: CMBeltBase
   id: CMBeltKnife
   name: M276 pattern knife rig
-  description: The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is specially designed to store knives. Not commonly issued, but kept in service.
+  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is specially designed to store knives. Not commonly issued, but kept in service.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/knife/jungle-classic.rsi
@@ -373,7 +373,7 @@
   parent: CMBeltBaseStorage
   id: CMBeltMedical
   name: M276 pattern medical storage rig
-  description: The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is a less common configuration, designed to transport bulkier medical supplies.
+  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is a less common configuration, designed to transport bulkier medical supplies.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/medical.rsi
@@ -520,7 +520,7 @@
   parent: CMBeltMarine
   id: RMCBeltSmartGunOperatorPistol
   name: M802 pattern smart gun operator sidearm rig
-  description: The M802 is a limited-issue mark of UNMC load-bearing equipment, designed to carry smartgun ammunition and a sidearm.
+  description: The M802 is a limited-issue mark of USCM load-bearing equipment, designed to carry smartgun ammunition and a sidearm.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/smart_gun_operator_pistol.rsi
@@ -609,8 +609,8 @@
 - type: entity
   parent: CMBeltMarine
   id: RMCBeltGrenade
-  name: M276 pattern 30mm grenade rig
-  description: The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is designed to carry up to 12 of the 30mm type grenades.
+  name: M276 pattern M40 grenade rig
+  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is designed to carry up to 12 of the M40 series of grenades.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/grenade.rsi
@@ -646,7 +646,7 @@
   parent: CMBeltMarine
   id: RMCBeltSmartPistol
   name: M276 pattern SU-6 smart pistol holster rig
-  description: The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the SU-6 smartpistol.
+  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is for the SU-6 smartpistol.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/smart_pistol.rsi
@@ -705,7 +705,7 @@
   parent: CMBeltMarine
   id: RMCBeltHolsterPistol
   name: M276 pattern general pistol holster rig
-  description: The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_pistol/classic-jungle.rsi
@@ -889,7 +889,7 @@
   parent: RMCBeltHolsterPistol
   id: RMCBeltHolsterPistolSPP
   name: Type 47-S pistol holster rig
-  description: The Type 47-S is the standard load-bearing equipment of the SPP. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+  description: The Type 47-S is the standard load-bearing equipment of the UPP. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_spp.rsi
@@ -924,8 +924,8 @@
   parent: RMCBeltHolsterPistol
   id: RMCBeltHolsterPistolTSE
   name: pistol belt
-  description: A dark brown leather pistol belt commonly issued to TSEPA officers. Although designed for the L54 service pistol, it accommodates most sidearms along with spare magazines. Standard issue across TSE law enforcement, military, and security forces.
-  suffix: TSE
+  description: A dark brown leather pistol belt. It accommodates most sidearms along with spare magazines. Standard issue across law enforcement, military, and security forces.
+  suffix: NSPA
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_tsepa.rsi
@@ -938,13 +938,13 @@
   parent: RMCBeltHolsterPistolSPP
   id: RMCBeltHolsterPistolPMC
   name: M301 pistol holster rig
-  description: The M301 is the standard load-bearing equipment of Weston-Yamada PMC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+  description: The M301 is the standard load-bearing equipment of Weyland-Yutani PMC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
 
 - type: entity
   parent: CMBeltMarine
   id: RMCBeltHolsterRevolver
   name: M276 pattern general revolver holster rig
-  description: The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is universal and adjustable for different revolvers, along with six small pouches for speedloaders. It smells faintly of hay.
+  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is universal and adjustable for different revolvers, along with six small pouches for speedloaders. It smells faintly of hay.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_revolver.rsi
@@ -1040,12 +1040,12 @@
     - id: RMCSpeedLoaderZHNK72
       amount: 6
     - id: RMCWeaponRevolverZHNK72
-          
+
 - type: entity
   parent: ClothingBeltBase # Can't have storage slots on this one
   id: RMCBeltHolsterSMG
-  name: M276 pattern M63 holster rig
-  description: Special issue variant of the M276 designed to holster a M63 submachine gun.
+  name: M276 pattern M39 holster rig
+  description: Special issue variant of the M276 designed to holster a M39 submachine gun.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_smg.rsi
@@ -1126,8 +1126,8 @@
 - type: entity
   parent: CMBeltBaseStorage
   id: RMCBeltHolsterSMGPouch
-  name: M276 pattern M63 holster rig
-  description: Special issue variant of the M276 designed to holster a M63 submachine gun and two spare magazines. Uncommonly issued to UNMC support and specialist personnel.
+  name: M276 pattern M39 holster rig
+  description: Special issue variant of the M276 designed to holster a M39 submachine gun and two spare magazines. Uncommonly issued to USCM support and specialist personnel.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/smg_mags.rsi
@@ -1197,7 +1197,7 @@
   parent: CMBeltBaseStorage
   id: RMCMatebaBelt
   name: M276 pattern Mateba holster rig
-  description: The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with five small pouches for speedloaders. It was included with the mail-order UNMC edition of the Mateba autorevolver in the early 2110s.
+  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with five small pouches for speedloaders. It was included with the mail-order USCM edition of the Mateba autorevolver in the early 2170s.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/mateba_belt.rsi
@@ -1245,7 +1245,7 @@
   parent: RMCMatebaBelt
   id: RMCMatebaBeltLuxurious
   name: luxurious M276 pattern Mateba holster rig
-  description: The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with five small pouches for speedloaders. This specific one is tinted black and engraved with gold, heavily customized for a high-ranking official.
+  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with five small pouches for speedloaders. This specific one is tinted black and engraved with gold, heavily customized for a high-ranking official.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/amateba_belt.rsi
@@ -1388,7 +1388,7 @@
   parent: CMBeltBaseStorage
   id: RMCBeltXM51
   name: M276 pattern XM51 holster rig
-  description: The M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the XM51 breaching scattergun, allowing easier storage of the weapon. It features pouches for storing two magazines along with extra shells.
+  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is for the XM51 breaching scattergun, allowing easier storage of the weapon. It features pouches for storing two magazines along with extra shells.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/xm51.rsi
@@ -1804,7 +1804,7 @@
   parent: RMCBeltBaseStorageNoVisuals
   id: RMCM82FHolster
   name: M276 pattern M82F flare gun holster rig
-  description: he M276 is the standard load-bearing equipment of the UNMC. It consists of a modular belt with various clips. This version is for the M82F flare gun and can additionally store up to 16 flares.
+  description: he M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is for the M82F flare gun and can additionally store up to 16 flares.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_flaregun.rsi
@@ -1875,7 +1875,7 @@
   parent: CMBeltMarine
   id: RMCBeltSPPBrown
   name: 6B80 pattern ammo rig
-  description: The 6B80 is an outdated but reliable ammo rig, formerly standard for the SPP Army. Its modular belt holds various munitions, still used by SPP security forces and reserves for its rugged design.
+  description: The 6B80 is an outdated but reliable ammo rig, formerly standard for the UPP Army. Its modular belt holds various munitions, still used by UPP security forces and reserves for its rugged design.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/spp_brown.rsi
@@ -1934,7 +1934,7 @@
   - type: Tag
     tags:
     - RMCMachineGunnerRig
-      
+
 # RCM/Paramarines Belts
 
 - type: entity
@@ -1989,7 +1989,7 @@
           - Defibrillator
           - Pill
           - RMCLighter
-            
+
 - type: entity
   parent: RMCMedicalL75RCM
   id: RMCMedicalL75RCMFillPara
@@ -2005,7 +2005,7 @@
         - id: CMBurnKit10
         # - id: 5 splints
         - id: CMHealthAnalyzer
-          
+
 - type: entity
   parent: CMBeltMarine
   id: RMCBeltRCM
@@ -2018,8 +2018,8 @@
     - type: Clothing
       sprite: _RMC14/Objects/Clothing/Belt/rcm_ammo.rsi
     - type: ItemCamouflage
-      camouflageVariations: {}         
-      
+      camouflageVariations: {}
+
 - type: entity
   parent: CMBeltBaseStorage
   id: RMCBeltUtilityGeneralRCM
@@ -2045,7 +2045,7 @@
   - type: Tag
     tags:
     - RMCG8Pouch
-      
+
 - type: entity
   parent: RMCBeltHolsterPistol
   id: RMCBeltHolsterPistolRCM
@@ -2138,7 +2138,7 @@
         l54_fill:
           whitelist:
             tags:
-              - RMCWeaponPistolL54   
+              - RMCWeaponPistolL54
 
 - type: entity
   parent: RMCBeltHolsterPistolPara
@@ -2194,11 +2194,6 @@
       sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_para_custom.rsi
     - type: ItemCamouflage
       camouflageVariations: { }
-    - type: StorageFill
-      contents:
-        - id: RMCWeaponPistolL54Custom
-        - id: RMCMagazinePistolL54Custom
-          amount: 7
     - type: ItemMapper
       spriteLayers:
         - holstered
@@ -2313,8 +2308,8 @@
     - id: RMCWeaponPistolL14
       amount: 1
     - id: RMCMagazinePistolL14
-      amount: 6
-      
+      amount: 5
+
 - type: entity
   parent: RMCBeltUtilityGeneralRCM
   id: RMCBeltUtilityGeneralRCMPVE

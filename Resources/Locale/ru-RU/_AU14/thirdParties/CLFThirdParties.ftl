@@ -1,0 +1,2 @@
+ent-AU14IntelThirdPartyCLFInsurgentReinforcements-name = Подкрепление повстанцев
+ent-AU14IntelThirdPartyCLFInsurgentReinforcementsMachineGunner-name = Пулемётчик повстанцев

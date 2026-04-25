@@ -30,10 +30,6 @@
           - RMCAttachmentMagneticHarness
       rmc-aslot-stock:
         locked: true
-        startingAttachable: RMCAttachmentLPO80Stock
-        whitelist:
-          tags:
-          - RMCAttachmentLPO80Stock
       rmc-aslot-underbarrel:
         whitelist:
           tags:

@@ -3,6 +3,7 @@ using Content.Client.Ghost;
 using Content.Client.UserInterface.Systems.Gameplay;
 using Content.Client.UserInterface.Systems.Ghost.Widgets;
 using Content.Shared.Ghost;
+using Robust.Client.Console;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
 
@@ -12,6 +13,7 @@ namespace Content.Client.UserInterface.Systems.Ghost;
 public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSystem>
 {
     [Dependency] private readonly IEntityNetworkManager _net = default!;
+    [Dependency] private readonly IClientConsoleHost _consoleHost = default!;
 
     [UISystemDependency] private readonly GhostSystem? _system = default;
 
@@ -127,6 +129,7 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.GhostRolesPressed += GhostRolesPressed;
         Gui.TargetWindow.WarpClicked += OnWarpClicked;
         Gui.TargetWindow.OnGhostnadoClicked += OnGhostnadoClicked;
+        Gui.LateJoinPressed += LateJoinPressed;
 
         UpdateGui();
     }
@@ -140,6 +143,7 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.ReturnToBodyPressed -= ReturnToBody;
         Gui.GhostRolesPressed -= GhostRolesPressed;
         Gui.TargetWindow.WarpClicked -= OnWarpClicked;
+        Gui.LateJoinPressed -= LateJoinPressed;
 
         Gui.Hide();
     }
@@ -159,5 +163,11 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
     private void GhostRolesPressed()
     {
         _system?.OpenGhostRoles();
+    }
+
+    private void LateJoinPressed()
+    {
+        // Send a network event to request joining the lobby (works for all players)
+        _net.SendSystemNetworkMessage(new Content.Shared.GameTicking.TickerJoinLobbyEvent());
     }
 }

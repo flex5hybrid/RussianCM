@@ -30,6 +30,15 @@ public sealed partial class TacticalMapUserComponent : Component
     public bool Xenos;
 
     [DataField, AutoNetworkedField]
+    public bool Opfor;
+
+    [DataField, AutoNetworkedField]
+    public bool Govfor;
+
+    [DataField, AutoNetworkedField]
+    public bool Clf;
+
+    [DataField, AutoNetworkedField]
     public Dictionary<int, TacticalMapBlip> MarineBlips = new();
 
     [DataField, AutoNetworkedField]
@@ -37,6 +46,15 @@ public sealed partial class TacticalMapUserComponent : Component
 
     [DataField, AutoNetworkedField]
     public Dictionary<int, TacticalMapBlip> XenoStructureBlips = new();
+
+    [DataField, AutoNetworkedField]
+    public Dictionary<int, TacticalMapBlip> OpforBlips = new();
+
+    [DataField, AutoNetworkedField]
+    public Dictionary<int, TacticalMapBlip> GovforBlips = new();
+
+    [DataField, AutoNetworkedField]
+    public Dictionary<int, TacticalMapBlip> ClfBlips = new();
 
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoNetworkedField, AutoPausedField]
     public TimeSpan LastAnnounceAt;
@@ -49,4 +67,8 @@ public sealed partial class TacticalMapUserComponent : Component
 
     [DataField, AutoNetworkedField]
     public SoundSpecifier Sound = new SoundCollectionSpecifier("XenoQueenCommand", AudioParams.Default.WithVolume(-6));
+
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? Controller;
 }

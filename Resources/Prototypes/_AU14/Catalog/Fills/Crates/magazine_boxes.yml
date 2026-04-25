@@ -1,0 +1,10 @@
+# RMC
+
+- type: entity
+  parent: RMCCrateAmmo
+  id: AU14CrateBoxMagazinePistolL165A1
+  name: Magazine box (L165A1, 16x mags)
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCBoxMagazinePistolMK80

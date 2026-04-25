@@ -34,7 +34,7 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanCola
-  name: classic cola
+  name: Coca Cola
   description: A classic cola with a taste that's been around for centuries. Nobody can beat it.
   components:
   - type: Sprite
@@ -52,8 +52,8 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanMountainWind
-  name: mountain wind
-  description: Blows right through you like a space wind.
+  name: Mountain Dew
+  description: Do the Dew.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/mountain_wind.rsi
@@ -70,8 +70,8 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanThirteenLoko
-  name: thirteen loko
-  description: Consumption of Thirteen Loko may result in seizures, blindness, drunkenness, or even death. Please Drink Responsibly.
+  name:  Fourteen loko
+  description: Consumption of Fourteen Loko may result in seizures, blindness, drunkenness, or even death. Please Drink Responsibly.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/thirteen_loko.rsi
@@ -90,7 +90,7 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanDrGibb
-  name: dr. gibb
+  name: Dr Pepper
   description: A delicious mixture of 42 different flavors of chemicals that you can't pronounce.
   components:
   - type: Sprite
@@ -108,8 +108,8 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanStarkist
-  name: star-kist
-  description: The taste of a star in liquid form. And, a bit of tuna...?
+  name: Sunkist
+  description: Sunkist orange soda, now with 0.00001% real orange juice!
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/starkist.rsi
@@ -126,8 +126,8 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanSpaceUp
-  name: space-up
-  description: Tastes like a hull breach in your mouth.
+  name: Seven Up
+  description: Cures any and all stomach issues, or your money back.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/space_up.rsi
@@ -259,7 +259,7 @@
   parent: CMDrinkCanBase
   id: CMDrinkCanFruitBeer
   name: fruit-beer
-  description: In theory, Mango flavored root beer sounds like a pretty good idea. We-Ya has disproved yet another theory with its latest line of cola. Canned by the We-Ya Corporation.
+  description: In theory, Mango flavored root beer sounds like a pretty good idea. We-Yu has disproved yet another theory with its latest line of cola. Canned by the We-Yu Corporation.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/fruit_beer.rsi
@@ -276,8 +276,8 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanBeerLite
-  name: We-Ya Lite
-  description: Beer. You've dialed in your target. Time to fire for effect. Canned by the Weston-Yamada Corporation
+  name: We-Yu Lite
+  description: Beer. You've dialed in your target. Time to fire for effect. Canned by the Weyland-Yutani Corporation
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/beer.rsi
@@ -294,8 +294,8 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanAle
-  name: We-Ya IPA
-  description: Beer's misunderstood cousin. Canned by the Weston-Yamada Corporation.
+  name: We-Yu IPA
+  description: Beer's misunderstood cousin. Canned by the Weyland-Yutani Corporation.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/ale.rsi
@@ -369,8 +369,8 @@
 - type: entity
   parent: CMDrinkCanBase
   id: RMCDrinkCanSequoiaBeer
-  name: Weston-Yamada sequoia beer
-  description: "Pretty good when you get past the fact that it tastes like piss. Canned by the Weston-Yamada Corporation."
+  name: Weyland-Yutani sequoia beer
+  description: "Pretty good when you get past the fact that it tastes like piss. Canned by the Weyland-Yutani Corporation."
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/beer_pack.rsi
@@ -403,7 +403,7 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanBobda
-  name: bobda can
+  name: suoto can
   description: Canned in Havana.
   abstract: true
   components:
@@ -415,7 +415,7 @@
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaClassic
-  name: bobda classic
+  name: suoto classic
   description: The can boldly proclaims it to be tangerine flavored. You can't help but think that's a lie. Canned in Havana.
   components:
   - type: SolutionContainerManager
@@ -429,7 +429,7 @@
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaCherry
-  name: cherry bobda
+  name: cherry suoto
   description: Now with more artificial flavors! Canned in Havana
   components:
   - type: Sprite
@@ -447,7 +447,7 @@
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaLime
-  name: lime bobda
+  name: lime suoto
   description: It's not bad. It's not good either, but it's not bad. Canned in Havana.
   components:
   - type: Sprite
@@ -465,7 +465,7 @@
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaGrape
-  name: grape bobda
+  name: grape suoto
   description: An old standby for soda flavors. This, however, tastes like grape flavored cough syrup. Canned in Havana.
   components:
   - type: Sprite
@@ -483,7 +483,7 @@
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaBlue
-  name: blue raspberry bobda
+  name: blue raspberry suoto
   description: It tastes like the color blue. Technology really is amazing. Canned in Havana.
   components:
   - type: Sprite
@@ -501,7 +501,7 @@
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaPeach
-  name: peach bobda
+  name: peach suoto
   description: On one hand, it tastes pretty good. On the other hand, you think you can hear a peach pit rattling on the inside. Canned in Havana.
   components:
   - type: Sprite
@@ -519,8 +519,8 @@
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaCranberry
-  name: cranberry bobda
-  description: On closer inspection, the can reads, 'CRAMberry Bobda.' What the Hell is a Cramberry? Canned in Havana.
+  name: cranberry suoto
+  description: On closer inspection, the can reads, 'CRAMberry Suoto.' What the Hell is a Cramberry? Canned in Havana.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/cranberry.rsi
@@ -537,8 +537,8 @@
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaVanilla
-  name: vanilla bobda
-  description: When most soft drinks say 'vanilla,' they really mean their classic flavor with a bit of vanilla added. NOT THE BOBDA CORPORATION, BABY! This bad boy is filled to the brim with 100% pure carbonated vanilla extract! It tastes terrible. Canned in Havana.
+  name: vanilla suoto
+  description: When most soft drinks say 'vanilla,' they really mean their classic flavor with a bit of vanilla added. NOT THE SUOTO CORPORATION, BABY! This bad boy is filled to the brim with 100% pure carbonated vanilla extract! It tastes terrible. Canned in Havana.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/vanilla.rsi
@@ -555,7 +555,7 @@
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaPineapple
-  name: pineapple bobda
+  name: pineapple suoto
   description: This tastes like battery acid with a full cup of sugar mixed in. Canned in Havana.
   components:
   - type: Sprite
@@ -574,7 +574,7 @@
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaDiet
-  name: diet bobda
+  name: diet suoto
   description: Now with 0% fruit juice! Canned in Havana
   components:
   - type: Sprite
@@ -592,7 +592,7 @@
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaClassicDiet
-  name: diet bobda classic
+  name: diet suoto classic
   description: Now with 0% fruit juice! Canned in Havana
   components:
   - type: SolutionContainerManager
@@ -606,7 +606,7 @@
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaCherryDiet
-  name: diet cherry bobda
+  name: diet cherry suoto
   description: It's neither diet nor cherry flavored. Canned in Havana.
   components:
   - type: Sprite
@@ -624,7 +624,7 @@
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaLimeDiet
-  name: diet lime bobda
+  name: diet lime suoto
   description: Ten kinds of acid, two cups of fake sugar, almost a full tank of carbon dioxide, and about 210 kPa all crammed into an aluminum can. What's not to love? Canned in Havana.
   components:
   - type: Sprite
@@ -642,7 +642,7 @@
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaGrapeDiet
-  name: diet grape bobda
+  name: diet grape suoto
   description: You're fairly certain that this is just grape cough syrup and carbonated water. Canned in Havana.
   components:
   - type: Sprite
@@ -660,7 +660,7 @@
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaBlueDiet
-  name: diet blue raspberry bobda
+  name: diet blue raspberry suoto
   description: WHAT A SCAM! It doesn't even taste like blue! At best, it tastes like cyan. Canned in Havana.
   components:
   - type: Sprite
@@ -678,7 +678,7 @@
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaPeachDiet
-  name: diet peach bobda
+  name: diet peach suoto
   description: On one hand, it tastes pretty good. On the other hand, you think you can hear half of a peach pit rattling on the inside. Canned in Havana.
   components:
   - type: Sprite
@@ -696,7 +696,7 @@
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaCranberryDiet
-  name: diet cranberry bobda
+  name: diet cranberry suoto
   description: This tastes more like prunes than cranberries. It's not bad; it's just wrong. Canned in Havana.
   components:
   - type: Sprite
@@ -716,7 +716,7 @@
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaVanillaDiet
-  name: diet vanilla bobda
+  name: diet vanilla suoto
   description: This is a can of watery bitter vanilla extract. You can't possibly imagine who would greenlight such a concept. Canned in Havana.
   components:
   - type: Sprite
@@ -736,7 +736,7 @@
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaPineappleDiet
-  name: diet pineapple bobda
+  name: diet pineapple suoto
   description: This tastes like battery acid with a half cup of sugar mixed in. Canned in Havana.
   components:
   - type: Sprite

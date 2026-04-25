@@ -88,4 +88,23 @@ public sealed partial class DropshipComponent : Component
 
     [DataField]
     public SoundSpecifier ArrivalSound = new SoundPathSpecifier("/Audio/_RMC14/Machines/Shuttle/engine_landing.ogg");
+
+    /// <summary>
+    ///     The faction of the hijacker, if any. Set during FlyTo when hijack=true.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public string? HijackerFaction;
+
+    /// <summary>
+    ///     The faction of the victim (the dropship owner). Set during FlyTo when hijack=true.
+    ///     Used by evacuation to scope announcements. Null = default marine.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public string? VictimFaction;
+
+    /// <summary>
+    ///     Whether this was a human-vs-human hijack. Set during FlyTo when hijack=true.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool IsHumanHijack;
 }

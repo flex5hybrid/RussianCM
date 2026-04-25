@@ -21,7 +21,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 600
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -46,3 +46,6 @@
   - type: XenoCrusherChargable
     instantDestroy: true
   - type: Climbable
+  - type: BarricadeBlock
+    bidirectional: true
+    blocking: 45

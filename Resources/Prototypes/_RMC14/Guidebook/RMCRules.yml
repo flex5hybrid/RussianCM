@@ -1,165 +1,89 @@
 ﻿- type: guideEntry
   parent: RMC
   id: RMCOverview
-  name: rmc-guide-entry-rules
+  name: Rules Overview
   priority: 0
   text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCOverview.xml"
   children:
-  - RMCBanTypes
-  - RMCZeroTolerance
-  - RMCRulesGeneralInformation
-  - RMCRulesCommunity
-  - RMCRulesCommand
-  - RMCRulesRoleplayStandards
+  - AU14RulesZeroTolerance
+  - AU14RulesGeneral
+  - AU14RulesRoleplay
+  - AU14GamemodeRulesOverview
 
 - type: guideEntry
   parent: RMC
-  id: RMCBanTypes
-  name: rmc-guide-entry-rules-ban-types
+  id: AU14RulesZeroTolerance
+  name: Zero Tolerance Rules
   priority: 1
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCBanTypes.xml"
+  text: "/ServerInfo/Guidebook/_AU14/Rules/AU14ZeroTolerance.xml"
 
 - type: guideEntry
   parent: RMC
-  id: RMCZeroTolerance
-  name: rmc-guide-entry-rules-zero-tolerance
+  id: AU14RulesGeneral
+  name: General Rules
   priority: 2
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCZeroTolerance.xml"
+  text: "/ServerInfo/Guidebook/_AU14/Rules/AU14GeneralRules.xml"
 
-# general information
 - type: guideEntry
   parent: RMC
-  id: RMCRulesGeneralInformation
-  name: rmc-guide-entry-rules-core
+  id: AU14RulesRoleplay
+  name: Roleplay Rules
   priority: 3
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCRulesCore.xml"
+  text: "/ServerInfo/Guidebook/_AU14/Rules/AU14RoleplayRules.xml"
   children:
-  - RMCLanguage
-  - RMCMultikey
-  - RMCRulesEscalation
-  - RMCMetaknowledge
-  - RMCKindness
-  - RMCMutinies
+  - AU14HighRoleplayRoles
 
 - type: guideEntry
   parent: RMC
-  id: RMCLanguage
-  name: rmc-guide-entry-rules-language
-  priority: 1
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/Core/RMCLanguage.xml"
-
-- type: guideEntry
-  parent: RMC
-  id: RMCMultikey
-  name: rmc-guide-entry-rules-multikey
-  priority: 2
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/Core/RMCMultikey.xml"
-
-- type: guideEntry
-  parent: RMC
-  id: RMCRulesEscalation
-  name: rmc-guide-entry-rules-escalation
-  priority: 3
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/Core/RMCRulesEscalation.xml"
-
-- type: guideEntry
-  parent: RMC
-  id: RMCMetaknowledge
-  name: rmc-guide-entry-rules-metaknowledge
+  id: AU14GamemodeRulesOverview
+  name: Gamemode Rules
   priority: 4
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/Core/RMCMetaknowledge.xml"
+  text: "/ServerInfo/Guidebook/_AU14/Rules/Gamemodes/AU14GamemodeRulesOverview.xml"
+  children:
+  - AU14GamemodeRulesInsurgency
+  - AU14GamemodeRulesForceOnForce
+  - AU14GamemodeRulesDistressSignal
+  - AU14GamemodeRulesColonyFall
+  - AU14GamemodeRulesPrometheus
 
 - type: guideEntry
   parent: RMC
-  id: RMCKindness
-  name: rmc-guide-entry-rules-kindness
+  id: AU14HighRoleplayRoles
+  name: High Roleplay Roles
   priority: 5
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/Core/RMCKindness.xml"
+  text: "/ServerInfo/Guidebook/_AU14/Rules/AU14HighRoleplayRoles.xml"
 
 - type: guideEntry
   parent: RMC
-  id: RMCMutinies
-  name: rmc-guide-entry-rules-mutinies
+  id: AU14GamemodeRulesInsurgency
+  name: Insurgency Rules
   priority: 6
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCMutinies.xml"
-
-# Community Rules
-- type: guideEntry
-  parent: RMC
-  id: RMCRulesCommunity
-  name: rmc-guide-entry-rules-community
-  priority: 4
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCRulesCommunity.xml"
-
-# command
-- type: guideEntry
-  parent: RMC
-  id: RMCRulesCommand
-  name: rmc-guide-entry-rules-command
-  priority: 5
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCRulesCommand.xml"
-
-# roleplay standards
-- type: guideEntry
-  parent: RMC
-  id: RMCRulesRoleplayStandards
-  name: rmc-guide-entry-rules-roleplay-standards
-  priority: 5
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCRulesRoleplay.xml"
-  children:
-  - RMCGeneralRoleplayStandards
-  - RMCCharacterNames
-  - RMCMarineRoleplayStandards
-  - RMCCommandRoleplay
-  - RMCXenoRoleplay
-  - RMCSurvivorRoleplay
-  - RMCHostileFactionRoleplay
+  text: "/ServerInfo/Guidebook/_AU14/Rules/Gamemodes/AU14GamemodeRulesInsurgency.xml"
 
 - type: guideEntry
   parent: RMC
-  id: RMCGeneralRoleplayStandards
-  name: rmc-guide-entry-rules-general-roleplay-standards
-  priority: 18
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/Roleplay/RMCGeneralRoleplayStandards.xml"
+  id: AU14GamemodeRulesForceOnForce
+  name: Force on Force Rules
+  priority: 7
+  text: "/ServerInfo/Guidebook/_AU14/Rules/Gamemodes/AU14GamemodeRulesForceOnForce.xml"
 
 - type: guideEntry
   parent: RMC
-  id: RMCCharacterNames
-  name: rmc-guide-entry-rules-marine-character-names
-  priority: 19
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/Roleplay/RMCCharacterNames.xml"
+  id: AU14GamemodeRulesDistressSignal
+  name: Distress Signal Rules
+  priority: 8
+  text: "/ServerInfo/Guidebook/_AU14/Rules/Gamemodes/AU14GamemodeRulesDistressSignal.xml"
 
 - type: guideEntry
   parent: RMC
-  id: RMCMarineRoleplayStandards
-  name: rmc-guide-entry-rules-marine-roleplay-standards
-  priority: 20
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/Roleplay/RMCMarineRoleplayStandards.xml"
+  id: AU14GamemodeRulesColonyFall
+  name: Colony Fall Rules
+  priority: 9
+  text: "/ServerInfo/Guidebook/_AU14/Rules/Gamemodes/AU14GamemodeRulesColonyFall.xml"
 
 - type: guideEntry
   parent: RMC
-  id: RMCCommandRoleplay
-  name: rmc-guide-entry-rules-command-roleplay
-  priority: 22
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/Roleplay/RMCCommandRoleplay.xml"
-
-- type: guideEntry
-  parent: RMC
-  id: RMCXenoRoleplay
-  name: rmc-guide-entry-rules-xeno-roleplay
-  priority: 23
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/Roleplay/RMCXenoRoleplay.xml"
-
-- type: guideEntry
-  parent: RMC
-  id: RMCSurvivorRoleplay
-  name: rmc-guide-entry-rules-survivor-roleplay
-  priority: 24
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/Roleplay/RMCSurvivorRoleplay.xml"
-
-- type: guideEntry
-  parent: RMC
-  id: RMCHostileFactionRoleplay
-  name: rmc-guide-entry-rules-hostile-faction-roleplay
-  priority: 25
-  text: "/ServerInfo/Guidebook/_RMC14/Rules/Roleplay/RMCHostileFactionRoleplay.xml"
+  id: AU14GamemodeRulesPrometheus
+  name: Prometheus Rules
+  priority: 10
+  text: "/ServerInfo/Guidebook/_AU14/Rules/Gamemodes/AU14GamemodeRulesPrometheus.xml"

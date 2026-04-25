@@ -118,6 +118,9 @@
           Quantity: 10
   - type: Item
     heldPrefix: iron
+  - type: Tag
+    tags:
+    - SteelOre
 
 - type: entity
   id: SteelOre1

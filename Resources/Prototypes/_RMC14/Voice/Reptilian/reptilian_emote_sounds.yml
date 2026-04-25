@@ -25,13 +25,3 @@
 - type: emoteSounds
   parent: [RMCBaseFemaleSounds, RMCUnisexReptilian]
   id: RMCFemaleReptilian
-
-- type: emoteSounds
-  parent: [ReptilianBodyEmotes]
-  id: RMCReptilianBodyEmotes
-  sounds:
-    RMCReptileRattle:
-      path: /Audio/_RMC14/Voice/Reptilian/lizard_rattle.ogg
-      params:
-        variation: 0.125
-        volume: -1

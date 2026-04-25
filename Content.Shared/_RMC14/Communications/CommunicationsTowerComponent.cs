@@ -8,7 +8,6 @@ using Robust.Shared.Serialization;
 namespace Content.Shared._RMC14.Communications;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(CommunicationsTowerSystem))]
 public sealed partial class CommunicationsTowerComponent : Component
 {
     [DataField, AutoNetworkedField]
@@ -23,6 +22,9 @@ public sealed partial class CommunicationsTowerComponent : Component
     [DataField, AutoNetworkedField]
     [Access(typeof(HiveBoonSystem))]
     public bool XenoControlled;
+    [DataField, AutoNetworkedField]
+    public string Faction = string.Empty;
+
 }
 
 [Serializable, NetSerializable]

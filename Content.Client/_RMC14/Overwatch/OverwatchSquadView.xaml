@@ -68,6 +68,9 @@
                         <Button Name="OrbitalBombardmentButton" Access="Public" Text="{Loc rmc-overwatch-console-orbital-bombardment}"
                                 StyleClasses="ActionButton" VerticalAlignment="Top"
                                 Margin="0 10 0 0" MinWidth="250" />
+                        <Button Name="FireteamsButton" Access="Public" Text="Fireteams"
+                                StyleClasses="ActionButton" VerticalAlignment="Top"
+                                Margin="0 10 0 0" MinWidth="250" />
                     </BoxContainer>
                     <BoxContainer Name="TabContentContainer" Access="Public" Orientation="Vertical" HorizontalExpand="True">
                         <BoxContainer Name="SquadMonitor" Access="Public" Orientation="Vertical"
@@ -76,7 +79,7 @@
                                 <PanelContainer.PanelOverride>
                                     <graphics:StyleBoxFlat
                                     BorderColor="#3A3A3A"
-                                    BorderThickness="1"
+                                    BorderThickness="0 0 0 1"
                                     BackgroundColor="#1A1A1A" />
                                 </PanelContainer.PanelOverride>
                                 <BoxContainer Orientation="Vertical" VerticalExpand="True">
@@ -211,6 +214,23 @@
                                     </BoxContainer>
                                 </BoxContainer>
                             </PanelContainer>
+                        </BoxContainer>
+                        <BoxContainer Name="Fireteams" Access="Public" Orientation="Vertical" VerticalExpand="True" Visible="False">
+                            <PanelContainer VerticalExpand="True">
+                                <PanelContainer.PanelOverride>
+                                    <graphics:StyleBoxFlat
+                                    BorderColor="#3A3A3A"
+                                    BorderThickness="0 0 0 1"
+                                    BackgroundColor="#1A1A1A" />
+                                </PanelContainer.PanelOverride>
+                                <BoxContainer Orientation="Horizontal" Margin="5">
+                                    <Label Text="Fireteams" />
+                                    <Control HorizontalExpand="True" />
+                                </BoxContainer>
+                            </PanelContainer>
+                            <ScrollContainer VerticalExpand="True">
+                                <BoxContainer Name="FireteamsList" Access="Public" Orientation="Vertical" HorizontalExpand="True" />
+                            </ScrollContainer>
                         </BoxContainer>
                         <BoxContainer Name="SupplyDrop" Access="Public" Orientation="Vertical"
                                       VerticalExpand="True" Visible="False">

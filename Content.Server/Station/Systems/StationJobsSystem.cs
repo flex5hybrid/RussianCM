@@ -524,4 +524,23 @@ public sealed partial class StationJobsSystem : EntitySystem
     }
 
     #endregion
+
+    /// <summary>
+    /// Sets the roundstart job slot count for a given job on a station.
+    /// </summary>
+    public void SetRoundStartJobSlot(EntityUid station, ProtoId<JobPrototype> jobId, int amount, StationJobsComponent? stationJobs = null)
+    {
+        if (!Resolve(station, ref stationJobs))
+            return;
+        if (!stationJobs.SetupAvailableJobs.TryGetValue(jobId, out var arr) || arr.Length < 2)
+        {
+            stationJobs.SetupAvailableJobs[jobId] = new[] { amount, -1 };
+        }
+        else
+        {
+            stationJobs.SetupAvailableJobs[jobId][0] = amount;
+        }
+
+        UpdateJobsAvailable();
+    }
 }

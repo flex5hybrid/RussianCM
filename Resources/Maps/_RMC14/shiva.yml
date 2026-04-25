@@ -124174,18 +124174,6 @@ entities:
     - type: Transform
       pos: 174.5,153.5
       parent: 1
-- proto: RMCSpawnerCorpseWeYaGoon
-  entities:
-  - uid: 16039
-    components:
-    - type: Transform
-      pos: 85.5,93.5
-      parent: 1
-  - uid: 16040
-    components:
-    - type: Transform
-      pos: 109.5,68.5
-      parent: 1
   - uid: 16041
     components:
     - type: Transform

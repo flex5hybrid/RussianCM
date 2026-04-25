@@ -1,0 +1,165 @@
+﻿- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardopforPlatCo
+  name: platoon commander ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOpforPlatCo
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardopforPlatOp
+  name: platoon operations officer ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOpforPlatOp
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardopforDSPilot
+  name: dropship pilot ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOpforDSPilot
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardopforDCC
+  name: dropship crew chief ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOpforDCC
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardopforSecSergeant
+  name: platoon sergeant ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOpforSectionSergeant
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardopforSquadSergeant
+  name: squad sergeant ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOpforSquadSergeant
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardopforSquadRifleman
+  name: squad rifleman ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOpforSquadRifleman
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardopforSquadAutomaticRifleman
+  name: squad sergeant ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOpforSquadAutomaticRifleman
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14JobIDCardopforPlatoonCorpsman
+  name: platoon corpsman ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOpforPlatoonCorpsman
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14JobIDCardopforRadioTelephoneOperator
+  name: radio telephone operator ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOpforRadioTelephoneOperator
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardOPFORAuxSupportSynth
+  name: support synthetic ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOPFORAuxSupportSynth
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardOPFORCT
+  name: combat technician ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOPFORSquadCombatTech
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardOPFORAdvisor
+  name: advisor ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOPFORadvisor
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardOPFORDoctor
+  name: doctor ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOPFORMilitaryDoctor
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardOPFORWorkingJoe
+  categories: [ HideSpawnMenu ]
+  name: Working Joe ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOPFORWorkingJoe
+  - type: ItemIFF
+    factions:
+    - GOVFOR

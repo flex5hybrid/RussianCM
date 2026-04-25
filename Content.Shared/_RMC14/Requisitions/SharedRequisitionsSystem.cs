@@ -69,6 +69,7 @@ public abstract class SharedRequisitionsSystem : EntitySystem
 
     private void OnRailingMapInit(Entity<RequisitionsRailingComponent> railing, ref MapInitEvent args)
     {
+
         UpdateRailing(railing);
     }
 
@@ -102,11 +103,27 @@ public abstract class SharedRequisitionsSystem : EntitySystem
 
     public void ChangeBudget(int amount)
     {
+        ChangeBudget(amount, null);
+    }
+
+    public void ChangeBudget(int amount, string? faction)
+    {
         var accountQuery = EntityQueryEnumerator<RequisitionsAccountComponent>();
         while (accountQuery.MoveNext(out var uid, out var comp))
         {
-            comp.Balance += amount;
-            Dirty(uid, comp);
+            if (string.IsNullOrEmpty(faction) || faction == "none")
+            {
+                comp.Balance += amount;
+                Dirty(uid, comp);
+            }
+            else
+            {
+                if (comp.Faction == faction)
+                {
+                    comp.Balance += amount;
+                    Dirty(uid, comp);
+                }
+            }
         }
 
         SendUIStateAll();
@@ -159,16 +176,48 @@ public abstract class SharedRequisitionsSystem : EntitySystem
         if (elevators.Count == 1)
             return elevators[0];
 
-        var computerCoords = _transform.GetMapCoordinates(computer);
+        // If the computer has a faction set, prefer elevators which match that faction to fully segregate lifts
+        var compFaction = computer.Comp.Faction;
+        if (!string.IsNullOrEmpty(compFaction) && compFaction != "none")
+        {
+            Entity<RequisitionsElevatorComponent>? closestMatching = null;
+            var closestMatchingDistance = float.MaxValue;
+
+            var computerCoords = _transform.GetMapCoordinates(computer);
+
+            foreach (var (uid, elevator, xform) in elevators)
+            {
+                var elevatorCoords = _transform.GetMapCoordinates(uid, xform);
+                if (computerCoords.MapId != elevatorCoords.MapId)
+                    continue;
+
+                if (elevator.Faction != compFaction)
+                    continue;
+
+                var distance = (elevatorCoords.Position - computerCoords.Position).LengthSquared();
+                if (closestMatchingDistance > distance)
+                {
+                    closestMatchingDistance = distance;
+                    closestMatching = (uid, elevator);
+                }
+            }
+
+            // If a matching elevator exists, return it; otherwise enforce strict segregation by returning null
+            if (closestMatching != null)
+                return closestMatching;
+            return null;
+        }
+
+        var computerCoordsDefault = _transform.GetMapCoordinates(computer);
         Entity<RequisitionsElevatorComponent>? closest = null;
         var closestDistance = float.MaxValue;
         foreach (var (uid, elevator, xform) in elevators)
         {
             var elevatorCoords = _transform.GetMapCoordinates(uid, xform);
-            if (computerCoords.MapId != elevatorCoords.MapId)
+            if (computerCoordsDefault.MapId != elevatorCoords.MapId)
                 continue;
 
-            var distance = (elevatorCoords.Position - computerCoords.Position).LengthSquared();
+            var distance = (elevatorCoords.Position - computerCoordsDefault.Position).LengthSquared();
             if (closestDistance > distance)
             {
                 closestDistance = distance;
@@ -189,10 +238,20 @@ public abstract class SharedRequisitionsSystem : EntitySystem
 
         account.Comp.Started = true;
 
-        var startingPoints = Starting;
-        var scalePoints = (int) (PointsScale * scale);
-        var perMarinePoints = (int) (StartingDollarsPerMarine * marines);
-        account.Comp.Balance = startingPoints + scalePoints + perMarinePoints;
+        // Set faction-specific starting balance
+        if (account.Comp.Faction == "govfor" || account.Comp.Faction == "opfor")
+        {
+            ChangeBudget(200000,account.Comp.Faction);
+        }
+        else if (account.Comp.Faction == "colony")
+        {
+            ChangeBudget(450,account.Comp.Faction);
+        }
+        else
+        {
+            // Default/fallback - use the configured starting balance
+            account.Comp.Balance = Starting;
+        }
 
         Dirty(account);
     }

@@ -5,6 +5,9 @@
   components:
   - type: SpriteFade
   - type: Clickable
+  - type: OreVein
+    currentOre: OreWood
+    oreChance: 1.0
   - type: Sprite
     noRot: true
     sprite: Objects/Decoration/Flora/flora_trees.rsi
@@ -34,13 +37,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 1250
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 1250
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -73,7 +76,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 4500
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -95,6 +98,11 @@
         offset: 0
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+- type: ore
+  id: OreWood
+  oreEntity: Log
+  minOreYield: 1
+  maxOreYield: 6
 
 - type: entity
   parent: RMCBaseTree

@@ -88,7 +88,7 @@
   name: chat-radio-marine-alpha
   keycode: "а" #a in cm13
   frequency: 1491
-  color: "#dc0a0a"
+  color: "#F0433E"
   longRange: true
   tower: true
 
@@ -97,7 +97,7 @@
   name: chat-radio-marine-bravo
   keycode: "б" #b in cm13
   frequency: 1492
-  color: "#f2af03"
+  color: "#B9A76D"
   longRange: true
   tower: true
 
@@ -106,7 +106,7 @@
   name: chat-radio-marine-charlie
   keycode: "ч" #c in cm13
   frequency: 1493
-  color: "#a94ac2"
+  color: "#7A967E"
   longRange: true
   tower: true
 

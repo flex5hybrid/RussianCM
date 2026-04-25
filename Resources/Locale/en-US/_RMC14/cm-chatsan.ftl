@@ -34,17 +34,11 @@ cm-chatsan-replacement-admins-marine = high command
 cm-chatsan-word-eorg-marine = eorg
 cm-chatsan-replacement-eorg-marine = warcrimes
 
-cm-chatsan-word-xx121-marine = xx121
-cm-chatsan-replacement-xx121-marine = xenonids
+cm-chatsan-word-xenoid = xenomorph
+cm-chatsan-replacement-xenoid = xenomorph
 
-cm-chatsan-word-xx-121-marine = xx-121
-cm-chatsan-replacement-xx-121-marine = xenonids
-
-cm-chatsan-word-xenoid = xenoid
-cm-chatsan-replacement-xenoid = xenonid
-
-cm-chatsan-word-xenoids = xenoids
-cm-chatsan-replacement-xenoids = xenonids
+cm-chatsan-word-xenoids = xenomorphs
+cm-chatsan-replacement-xenoids = xenomorphs
 
 cm-chatsan-word-beno = beno
 cm-chatsan-replacement-beno = xeno
@@ -743,6 +737,26 @@ cm-chatsan-replacement-folder = sheet holder
 cm-chatsan-word-folders = folders
 cm-chatsan-replacement-folders = sheet holders
 
+cm-chatsan-word-weya = weya
+cm-chatsan-replacement-weya = weyu
+
+cm-chatsan-word-unmc = unmc
+cm-chatsan-replacement-unmc = uscm
+
+cm-chatsan-word-spp = spp
+cm-chatsan-replacement-spp = upp
+
+cm-chatsan-word-weyafull = weston yamada
+cm-chatsan-replacement-weyafull = Weyland-Yutani
+
+cm-chatsan-word-weyafullhyphenated = weston-yamada
+cm-chatsan-replacement-weyafullhyphenated = Weyland-Yutani
+
+cm-chatsan-word-unmcfull = united nations marine corps
+cm-chatsan-replacement-unmcfull = United States Colonial Marines
+
+cm-chatsan-word-sppfull = Socialist Progressive Peoples
+cm-chatsan-replacement-sppfull = Union of Progressive Peoples
 cm-chatsan-word-zerker = zerker
 cm-chatsan-word-replacement-zerker = berserker
 
@@ -806,9 +820,6 @@ cm-chatsan-word-replacement-m63 = fast spitter
 
 cm-chatsan-word-p90 = p90
 cm-chatsan-word-replacement-p90 = fast spitter
-
-cm-chatsan-word-pdw90 = pdw90
-cm-chatsan-word-replacement-pdw90 = fast spitter
 
 cm-chatsan-word-m54c = m54c
 cm-chatsan-word-replacement-m54c = spitter

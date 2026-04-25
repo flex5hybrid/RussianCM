@@ -63,8 +63,8 @@
 - type: entity
   parent: RMCBasePhotocopier
   id: RMCPhotocopierPro
-  name: We-Ya Photocopier
-  description: A photocopier used for copying... you know, photos! Also useful for copying documents on paper. This specific model has been manufactured by We-Ya in a more modern and robust frame than the average photocopiers you see from smaller companies. It uses some of the most advanced technologies in the area of paper-printing such as bigger toner economy and much higher printing capabilities. All that makes it the favorite among consumers that need to print high amounts of paperwork for their daily duties.
+  name: We-Yu Photocopier
+  description: A photocopier used for copying... you know, photos! Also useful for copying documents on paper. This specific model has been manufactured by We-Yu in a more modern and robust frame than the average photocopiers you see from smaller companies. It uses some of the most advanced technologies in the area of paper-printing such as bigger toner economy and much higher printing capabilities. All that makes it the favorite among consumers that need to print high amounts of paperwork for their daily duties.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/photocopier.rsi

@@ -35,6 +35,18 @@
         RMCSkillJtac: 2
         RMCSkillVehicles: 1
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: SquadLeader
       icon:
         sprite: _RMC14/Interface/cm_job_icons.rsi
@@ -115,7 +127,6 @@
     - CMStunbaton
     - CMCrowbar # TODO RMC14: tactical prybar
     - RMCRangefinder
-    - RMCMREWeYaPMC
     - RMCGrenadeBlastM12
     - RMCExplosivePlastic
     - CMMagazineRifleM54CAP

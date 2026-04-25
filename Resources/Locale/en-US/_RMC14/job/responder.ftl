@@ -14,12 +14,12 @@ rmc-ghost-role-information-responder-rules = You are a [color=red][bold]Fax Resp
 
 
 #UNMC fax responder
-rmc-job-name-unmc-responder = UNMC Communications Officer
-rmc-job-description-unmc-responder = "You are acting on behalf of UNMC Regional Command to respond to faxes sent to UNMC High Command."
+rmc-job-name-unmc-responder = USCM Communications Officer
+rmc-job-description-unmc-responder = "You are acting on behalf of USCM Regional Command to respond to faxes sent to USCM High Command."
 
 #We-Ya fax responder
-rmc-job-name-weya-responder = We-Ya Communications Executive
-rmc-job-description-weya-responder = "You are acting on behalf of the Regional We-Ya special services department to respond to faxes."
+rmc-job-name-weya-responder = We-Yu Communications Executive
+rmc-job-description-weya-responder = "You are acting on behalf of the Regional We-Yu special services department to respond to faxes."
 
 #Provost fax responder
 rmc-job-name-provost-responder = Provost Communications Officer
@@ -35,12 +35,12 @@ rmc-job-description-clf-responder = "You are a member of a regional CLF cell. In
 rmc-job-prefix-clf-responder = INFO
 
 #SPP fax responder
-rmc-job-name-spp-responder = SPP Communications Officer
-rmc-job-description-spp-responder = "You are acting on behalf of SPP Regional Command to respond to faxes sent to SPP Command."
+rmc-job-name-spp-responder = UPP Communications Officer
+rmc-job-description-spp-responder = "You are acting on behalf of UPP Regional Command to respond to faxes sent to UPP Command."
 
 #TSE fax responder
-rmc-job-name-tse-responder = TSE Communications Officer
-rmc-job-description-tse-responder = "You are acting on behalf of TSE Regional Command to respond to faxes sent to TSE Command."
+rmc-job-name-tse-responder = TWE Communications Officer
+rmc-job-description-tse-responder = "You are acting on behalf of TSE Regional Command to respond to faxes sent to TWE Command."
 
 #CMB fax responder
 rmc-job-name-cmb-responder = CMB Communications Officer

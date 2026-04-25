@@ -1,8 +1,8 @@
 ﻿- type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: M4SPR battle rifle
+  name: M4RA battle rifle
   id: WeaponRifleM4SPR
-  description: The M4SPR battle rifle is a designated marksman rifle in service with the Marine Corps. Sporting a bullpup configuration, the M4SPR battle rifle is perfect for reconnaissance and fire support teams.
+  description: The M4RA battle rifle is a designated marksman rifle in service with the Marine. Sporting a bullpup configuration, the M4RA battle rifle is perfect for reconnaissance and fire support teams.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m4spr/desert.rsi
@@ -93,28 +93,23 @@
       rmc-aslot-rail: 0.225, 0.125
       rmc-aslot-underbarrel: 0.62, -0.31
   - type: ItemCamouflage
-    camouflageVariations:
-      Jungle: _RMC14/Objects/Weapons/Guns/Rifles/m4spr/jungle.rsi
-      Desert: _RMC14/Objects/Weapons/Guns/Rifles/m4spr/desert.rsi
-      Snow: _RMC14/Objects/Weapons/Guns/Rifles/m4spr/snow.rsi
-      Classic: _RMC14/Objects/Weapons/Guns/Rifles/m4spr/classic.rsi
-      Urban: _RMC14/Objects/Weapons/Guns/Rifles/m4spr/urban.rsi
+    camouflageVariations: { }
     layers:
       barrel:
-        Jungle: m4spr_barrel
+        Jungle: d_m4spr_barrel
         Desert: d_m4spr_barrel
-        Snow: s_m4spr_barrel
-        Classic: c_m4spr_barrel
-        Urban: u_m4spr_barrel
+        Snow: d_m4spr_barrel
+        Classic: d_m4spr_barrel
+        Urban: d_m4spr_barrel
   - type: Tag
     tags:
     - RMCWeaponRifleM4SPR
 
 - type: entity
   parent: WeaponRifleM4SPR
-  name: M5SPR battle rifle
+  name: M5RA battle rifle
   id: WeaponRifleM5SPR
-  description: The M5SPR battle rifle is a modified version of the M4SPR, able to chamber High Velocity Piercing rounds, and equipped a two-burst configuration.
+  description: The M5RA battle rifle is a modified version of the M4RA, able to chamber High Velocity Piercing rounds, and equipped a two-burst configuration.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/desert.rsi
@@ -169,19 +164,14 @@
           - RMCMagazineRifleM5SPRHVP
           - RMCMagazineRifleM5SPRHVHIP
   - type: ItemCamouflage
-    camouflageVariations:
-      Jungle: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/jungle.rsi
-      Desert: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/desert.rsi
-      Snow: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/snow.rsi
-      Classic: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/classic.rsi
-      Urban: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/urban.rsi
+    camouflageVariations: { }
     layers:
       barrel:
-        Jungle: m4spr_custom_barrel
+        Jungle: d_m4spr_custom_barrel
         Desert: d_m4spr_custom_barrel
-        Snow: s_m4spr_custom_barrel
-        Classic: c_m4spr_custom_barrel
-        Urban: u_m4spr_custom_barrel
+        Snow: d_m4spr_custom_barrel
+        Classic: d_m4spr_custom_barrel
+        Urban: d_m4spr_custom_barrel
   - type: Tag
     tags:
     - RMCWeaponRifleM5SPR
@@ -189,8 +179,8 @@
 - type: entity
   parent: WeaponRifleM5SPR
   id: WeaponRifleM5SPR2
-  name: M5SPR/2 battle rifle
-  description: The M5SPR/2 battle rifle is a modified version of the M5SPR, designed for PMC Operatives to take out targets at longer ranges.
+  name: M5RA/2 battle rifle
+  description: The M5RA/2 battle rifle is a modified version of the M5RA, designed for PMC Operatives to take out targets at longer ranges.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m5spr2.rsi
@@ -256,18 +246,11 @@
           - RMCMagazineRifleM4SPRWP
           - RMCMagazineRifleM4SPRIncendiary
           - RMCMagazineRifleM4SPRHEAP
-  - type: ItemCamouflage
-    camouflageVariations:
-      Jungle: _RMC14/Objects/Weapons/Guns/Rifles/m4spr/jungle.rsi
-      Desert: _RMC14/Objects/Weapons/Guns/Rifles/m4spr/desert.rsi
-      Snow: _RMC14/Objects/Weapons/Guns/Rifles/m4spr/snow.rsi
-      Classic: _RMC14/Objects/Weapons/Guns/Rifles/m4spr/classic.rsi
-      Urban: _RMC14/Objects/Weapons/Guns/Rifles/m4spr/urban.rsi
 
 - type: entity
   parent: CMMagazineRifleBase
   id: CMMagazineRifleM4SPR
-  name: "M4SPR magazine (10x24mm)"
+  name: "M4RA magazine (10x24mm)"
   description: "A magazine of standard 10x24mm rounds for use in the M4SPR battle rifle."
   components:
   - type: Tag
@@ -429,8 +412,8 @@
 - type: entity
   parent: CMMagazineRifleM4SPR
   id: RMCMagazineRifleM5SPRHVP
-  name: "M5SPR HV-Piercing magazine (10x24mm)"
-  description: "A magazine of HV-Piercing 10x24mm rounds for use in the M5SPR battle rifle."
+  name: "M5RA HV-Piercing magazine (10x24mm)"
+  description: "A magazine of HV-Piercing 10x24mm rounds for use in the M5RA battle rifle."
   components:
   - type: BallisticAmmoProvider
     mayTransfer: True
@@ -457,7 +440,7 @@
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleM5SPRHVP
   name: cartridge (HV-Piercing)
-  description: A high-velocity HV-Piercing cartridge. Fits in M5SPR custom magazines.
+  description: A high-velocity HV-Piercing cartridge. Fits in M5RA custom magazines.
   components:
   - type: Tag
     tags:
@@ -497,7 +480,7 @@
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleM5SPRHVHIP
   name: cartridge (HVHI-Piercing)
-  description: A high-velocity HVHI-Piercing cartridge. Fits in M5SPR custom magazines.
+  description: A high-velocity HVHI-Piercing cartridge. Fits in M5RA custom magazines.
   components:
   - type: Tag
     tags:
@@ -523,8 +506,8 @@
 - type: entity
   parent: RMCMagazineRifleM5SPRHVP
   id: RMCMagazineRifleM5SPRHVHIP
-  name: "M5SPR HVHI-Piercing magazine (10x24mm)"
-  description: "A magazine of HVHI-Piercing 10x24mm rounds for use in the M5SPR battle rifle."
+  name: "M5RA HVHI-Piercing magazine (10x24mm)"
+  description: "A magazine of HVHI-Piercing 10x24mm rounds for use in the M5RA battle rifle."
   components:
   - type: BallisticAmmoProvider
     mayTransfer: True

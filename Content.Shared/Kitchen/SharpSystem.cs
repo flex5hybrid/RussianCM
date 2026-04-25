@@ -46,6 +46,8 @@ public sealed class SharpSystem : EntitySystem
         SubscribeLocalEvent<ButcherableComponent, GetVerbsEvent<InteractionVerb>>(OnGetInteractionVerbs);
     }
 
+    [Dependency] private readonly Content.Shared._RMC14.Medical.Unrevivable.RMCUnrevivableSystem _unrevivable = default!;
+
     private void OnAfterInteract(EntityUid uid, SharpComponent component, AfterInteractEvent args)
     {
         if (args.Handled || args.Target is null || !args.CanReach)
@@ -64,6 +66,10 @@ public sealed class SharpSystem : EntitySystem
             return false;
 
         if (TryComp<MobStateComponent>(target, out var mobState) && !_mobStateSystem.IsDead(target, mobState))
+            return false;
+
+        // If this butcherable requires waiting for rot, ensure the target is unrevivable.
+        if (butcher.WaitForRot && !_unrevivable.IsUnrevivable(target))
             return false;
 
         if (butcher.Type != ButcheringType.Knife && target != user)

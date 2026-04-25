@@ -50,7 +50,7 @@
     - FullAuto
     recoilUnwielded: 0
     scatterUnwielded: 0
-    baseFireRate: 10
+    baseFireRate: 7
     modifiers:
       FullAuto:
         maxScatterModifier: 0

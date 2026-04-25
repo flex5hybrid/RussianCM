@@ -41,8 +41,8 @@
 - type: entity
   parent: RMCHandsVeteran
   id: RMCHandsVeteranPMC
-  name: WeYa PMC gloves
-  description: Standard issue kevlon fiber gloves manufactured for and by Weston-Yamada PMC dispatch division. They are insulated against electrical shock.
+  name: WY PMC gloves
+  description: Standard issue kevlon fiber gloves manufactured for and by Weyland-Yutani PMC dispatch division. They are insulated against electrical shock.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/pmc.rsi

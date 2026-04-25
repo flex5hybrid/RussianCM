@@ -3,21 +3,47 @@
   hostile:
   - RMCXeno
   - CLF
+  - AUColonist
+  - Civilian
+  - CMUAPE
 
 - type: npcFaction
   id: RMCXeno
   hostile:
   - UNMC
+  - NanoTrasen
   - SPP
+  - GOVFOR
+  - OPFOR
   - Halcyon
   - WeYa
   - Civilian
   - CLF
   - TSE
+  - AUColonist
+  - CMUAPE
+
+- type: npcFaction
+  id: CMUAPE
+  hostile:
+  - UNMC
+  - NanoTrasen
+  - SPP
+  - GOVFOR
+  - OPFOR
+  - Halcyon
+  - WeYa
+  - Civilian
+  - CLF
+  - TSE
+  - AUColonist
+
 
 - type: npcFaction
   id: RMCDumb
   hostile:
+  - GOVFOR
+  - OPFOR
   - UNMC
   - RMCXeno
   - SPP
@@ -26,6 +52,9 @@
   - Civilian
   - CLF
   - TSE
+  - AUColonist
+  - CMUAPE
+
 
 - type: npcFaction
   id: SPP
@@ -37,11 +66,7 @@
   hostile:
   - RMCXeno
 
-- type: npcFaction
-  id: CLF
-  hostile:
-  - RMCXeno
-  - UNMC
+
 
 - type: npcFaction
   id: WeYa

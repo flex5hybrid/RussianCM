@@ -38,7 +38,7 @@ public sealed partial class XenoToggleChargingComponent : Component
     public ProtoId<EmotePrototype>? Emote = "XenoRoar";
 
     [DataField, AutoNetworkedField]
-    public TimeSpan? EmoteCooldown = TimeSpan.FromSeconds(20);
+    public TimeSpan? EmoteCooldown = TimeSpan.FromSeconds(8);
 
     [DataField, AutoNetworkedField]
     public TimeSpan LastMovedGrace = TimeSpan.FromSeconds(0.5);

@@ -5,7 +5,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared.NPC.Components;
 
-[RegisterComponent, NetworkedComponent, Access(typeof(NpcFactionSystem)), AutoGenerateComponentState]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class NpcFactionMemberComponent : Component
 {
     /// <summary>

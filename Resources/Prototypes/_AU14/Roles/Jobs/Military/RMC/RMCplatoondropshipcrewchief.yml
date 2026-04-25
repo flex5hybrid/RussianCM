@@ -1,0 +1,67 @@
+- type: job
+  parent: AU14JobDCCBase
+  id: AU14JobGOVFORDCCRMC
+  name: au14-job-name-govfordccRMC
+  description: au14-job-description-govfordcc
+  setPreference: true
+  canBeAntag: false
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Epilepsy
+    - NonResuscitable
+  ranks:
+    RMC_WarrantOfficer1:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORDCC
+      time: 360000 # 100 hours
+    RMC_WarrantOfficer2:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORDCC
+      time: 216000 # 60 hours
+    RMC_ColourSergeant:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORDCC
+      time: 43200 # 12 hours
+    RMC_Sergeant: []
+  startingGear: AU14GearGOVFORDCC
+  dummyStartingGear: AU14GearGOVFORDCCDummy
+  icon: "AU14JobIconDCC"
+  requireAdminNotify: true
+  spawnMenuRoleName: Dropship Crew Chief (TWE RMC)
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforPilot
+  - AU14GovforCorpsman
+  - AU14GovforSquad
+  roleWeight: 0.25
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - GOVFOR
+    - type: Marine
+      Faction: govfor
+    - type: Skills
+      skills:
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 1
+        RMCSkillIntel: 1
+        RMCSkillJtac: 2
+        RMCSkillLeadership: 1
+        RMCSkillMedical: 2
+        RMCSkillOverwatch: 1
+        RMCSkillPilot: 2
+        RMCSkillPowerLoader: 2
+        RMCSkillSurgery: 1
+        RMCSkillPolice: 1
+    - type: JobPrefix
+      prefix: au14-job-prefix-govfordcc
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: synth
+  hidden: true

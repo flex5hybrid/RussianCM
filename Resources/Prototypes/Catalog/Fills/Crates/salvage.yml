@@ -54,8 +54,6 @@
         #  - Medical
       - id: MedkitFilled
         prob: 0.1
-      - id: BoxSyringe
-        prob: 0.1
       - id: BoxBeaker
         prob: 0.1
         #  - Heh

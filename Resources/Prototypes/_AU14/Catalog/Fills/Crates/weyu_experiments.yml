@@ -1,0 +1,54 @@
+- type: entity
+  id: AU14CrateSecureWeYuXenoEggs
+  parent: RMCCrateSecureWeYa
+  name: secure We-Yu crate
+  description: A secure crate with We-Yu insignia on it.
+  suffix: AU14, Xeno Eggs
+  components:
+  - type: StorageFill
+    contents:
+      - id: XenoEgg
+        amount: 2
+      - id: RMCTentUNMCStandardMedicalFolded
+      - id: AU14TentBigFoldedSurgical
+
+- type: entity
+  id: AU14CrateSecureWeYuMindBreaker
+  parent: AU14CrateSecureWeYuXenoEggs
+  name: secure We-Yu crate
+  suffix: AU14, MindBreaker
+  components:
+  - type: StorageFill
+    contents:
+      - id: RMCBottleMindbreaker
+        amount: 7
+      - id: RMCTentUNMCStandardMedicalFolded
+      - id: AU14TentBigFoldedSurgical
+
+- type: entity
+  id: AU14CrateSecureWeYuDrug
+  parent: AU14CrateSecureWeYuXenoEggs
+  name: secure We-Yu crate
+  suffix: AU14, Speed Demon
+  components:
+  - type: StorageFill
+    contents:
+      - id: AU14DrugDealerDrugBottle
+        amount: 7
+      - id: RMCTentUNMCStandardMedicalFolded
+      - id: AU14TentBigFoldedSurgical
+
+- type: entity
+  id: AU14CrateSecureWeYuMMI
+  parent: AU14CrateSecureWeYuXenoEggs
+  name: secure We-Yu crate
+  suffix: AU14, MMI
+  components:
+  - type: StorageFill
+    contents:
+      - id: MMI
+        amount: 1
+      - id: DeathAcidifierImplanter
+        amount: 1
+      - id: RMCTentUNMCStandardMedicalFolded
+      - id: AU14TentBigFoldedSurgical

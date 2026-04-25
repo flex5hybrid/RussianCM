@@ -24,7 +24,7 @@
   coefficients:
     Blunt: 0.75
     Slash: 0.75
-    Piercing: 0.75
+    Piercing: 0.2
 
 # Used in sandbags
 - type: damageModifierSet
@@ -34,6 +34,7 @@
     Shock: 1.15
     Cold: 1.15
     Caustic: 1.15
+    Slash: 17.0
 
 - type: damageModifierSet
   id: CMBloodlossHuman

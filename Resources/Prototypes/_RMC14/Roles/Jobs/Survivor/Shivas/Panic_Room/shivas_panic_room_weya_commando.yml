@@ -61,10 +61,7 @@
   parent: CMArmorM4PMCCommandoSurvivor
   id: CMArmorM4PMCCommandoSurvivorFilled
   suffix: Filled
-  components:
-  - type: StorageFill
-    contents:
-    - id: RMCMREWeYaPMC
+
 
 - type: entity
   parent: CMFirstAidKit

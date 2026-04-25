@@ -16,11 +16,23 @@
         RMCSkillEndurance: 2
         RMCSkillFireman: 1
         RMCSkillCqc: 2
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillLeadership: 1
     - type: EquipSurvivorPreset
       preset: RMCGearSurvivorPresetGangLeader
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: RMCSurvivor
     - type: MotionDetectorTracked
     - type: NpcFactionMember

@@ -1,0 +1,137 @@
+- type: entity
+  parent: CMMobMonkey
+  id: CMUMobCarp
+  name: carp
+  description: It's a carp. Adapted to migrate up hill both ways.
+  suffix: CMU
+  components:
+  - type: Inventory
+    templateId: carp
+    speciesId: carp
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 80
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: GhostRole
+    name: Carp
+    description: A endangered species of fish. They are adapted to migrate up hill both ways
+    prob: 1.0
+
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+      sprite: _AU14/Mobs/Animals/carp.rsi
+    - map: [ "mask" ]
+    - map: [ "clownedon" ]
+      sprite: "Effects/creampie.rsi"
+      state: "creampie_human"
+      visible: false
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Critical
+    - Dead
+  
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      200: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 3.5
+  - type: Stamina
+    critThreshold: 100
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: Body
+    prototype: Bloodsucker
+    requiredLegs: 1
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Generic_mob_burning
+  - type: InteractionPopup
+    interactSuccessString: petting-success-carp
+    interactFailureString: petting-failure-carp
+    interactFailureSound:
+      path: /Audio/Items/wirecutter.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    angle: 0
+    animation: WeaponArcBite
+    damage:
+      types:
+        Blunt: 3
+        Piercing: 3
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatFish
+      amount: 2
+  - type: TypingIndicator
+    proto: alien
+  - type: Tag
+    tags:
+    - Carp
+    - DoorBumpOpener
+  - type: ReplacementAccent
+    accent: genericAggressive
+  - type: Speech
+    speechSounds: Bass
+    speechVerb: LargeMob
+  - type: RemoveComponents
+    components:
+    - type: NameIdentifier
+    - type: MonkeyAccent
+    - type: AlwaysRevolutionaryConvertible
+    - type: Clumsy
+    - type: Deathgasp
+    - type: Cuffable
+    - type: Stripping
+    - type: Hands
+    - type: ComplexInteraction
+    - type: Puller
+    - type: CanHostGuardian
+    - type: IdExaminable
+
+- type: inventoryTemplate
+  id: carp
+  slots:
+  - name: mask
+    slotTexture: mask
+    slotFlags: MASK
+    uiWindowPos: 0,1
+    strippingWindowPos: 1,1
+    displayName: Mask
+
+- type: entity
+  name: Carp Spawner
+  id: CMUSpawnMobCarp
+  parent: MarkerBase
+  suffix: CMU
+  components:
+  - type: Sprite
+    layers:
+    - state: carp_spawn
+      sprite: _AU14/Mobs/Animals/carp.rsi
+  - type: ProportionalSpawner
+    id: CMUSpawnMobCarp
+    ratio: 16
+    prototypes:
+    - CMUMobCarp

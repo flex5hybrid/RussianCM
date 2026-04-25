@@ -1,6 +1,7 @@
 ﻿- type: department
   parent: CMDepartmentBase
   id: CMSurvivor
+  hidden: true
   name: department-CMSurvivor
   description: cm-department-Survivor-description
   color: "#C38312"

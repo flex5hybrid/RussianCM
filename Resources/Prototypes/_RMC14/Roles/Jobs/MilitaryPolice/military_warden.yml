@@ -3,6 +3,7 @@
   id: CMMilitaryWarden
   name: cm-job-name-militarywarden
   description: cm-job-description-militarywarden
+  setPreference: false
   playTimeTracker: CMJobMilitaryWarden
   requirements:
   - !type:DepartmentTimeRequirement
@@ -36,7 +37,7 @@
         RMCSkillCqc: 2
         RMCSkillEndurance: 2
         RMCSkillEngineer: 2
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 2
         RMCSkillLeadership: 1
         RMCSkillMedical: 1

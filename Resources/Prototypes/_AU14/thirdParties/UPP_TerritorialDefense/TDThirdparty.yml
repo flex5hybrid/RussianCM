@@ -1,0 +1,19 @@
+- type: partySpawn
+  id: UPPTDLostTeamSpawn
+  leadersToSpawn:
+    AU14JobUPPTerritorialDefenseSquadLeader: 1
+  gruntsToSpawn:
+    AU14JobUPPTerritorialDefenseRifleman: 1
+    AU14JobUPPTerritorialDefenseLoader: 1
+  scalewithpop: false
+  spawnTogether: true
+
+- type: auThirdParty
+  id: UPPTDLostTeam
+  partyspawn: UPPTDLostTeamSpawn
+  entrymethod: shuttle
+  weight:  20
+  minplayers: 0
+  maxplayers: 400
+  GhostsNeeded: 3
+  roundstart: false

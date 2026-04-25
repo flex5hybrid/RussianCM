@@ -41,6 +41,7 @@ public sealed class XenoRoleSystem : EntitySystem
     private TimeSpan _rankFourTime;
     private TimeSpan _rankFiveTime;
     private TimeSpan _rankSixTime;
+    private TimeSpan _rankSevenTime;
 
     private readonly List<Entity<XenoComponent>> _toUpdate = new();
 
@@ -63,6 +64,7 @@ public sealed class XenoRoleSystem : EntitySystem
         Subs.CVar(_config, RMCCVars.RMCPlaytimeGoldMedalTimeHours, v => _rankFourTime = TimeSpan.FromHours(v), true);
         Subs.CVar(_config, RMCCVars.RMCPlaytimePlatinumMedalTimeHours, v => _rankFiveTime = TimeSpan.FromHours(v), true);
         Subs.CVar(_config, RMCCVars.RMCPlaytimeRubyMedalTimeHours, v => _rankSixTime = TimeSpan.FromHours(v), true);
+        Subs.CVar(_config, RMCCVars.RMCPlaytimeAmethystMedalTimeHours, v => _rankSevenTime = TimeSpan.FromHours(v), true);
         Subs.CVar(_config, RMCCVars.RMCDisconnectedXenoGhostRoleTimeSeconds, v => _disconnectedXenoGhostRoleTime = TimeSpan.FromSeconds(v), true);
     }
 
@@ -138,6 +140,8 @@ public sealed class XenoRoleSystem : EntitySystem
         int rank;
         if (!profile.PlaytimePerks)
             rank = 1;
+        else if (time > _rankSevenTime)
+            rank = 6;
         else if (time > _rankSixTime)
             rank = 6;
         else if (time > _rankFiveTime)

@@ -176,7 +176,7 @@
     - Vegetable
 
 - type: entity
-  name: tower-cap log
+  name: Log
   description: It's better than bad, it's good!
   id: Log
   parent: ProduceBase
@@ -193,6 +193,11 @@
   - type: Produce
     seedId: towercap
   - type: Log
+    spawnedPrototype: RMCPlankWood25
+    spawnCount: 1
+  - type: Tag
+    tags:
+       - AUwood
 
 - type: entity
   name: steel-cap log

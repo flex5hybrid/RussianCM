@@ -4,6 +4,7 @@ using Content.Shared._RMC14.Dropship.AttachmentPoint;
 using Content.Shared._RMC14.Dropship.Utility.Components;
 using Content.Shared._RMC14.Dropship.Weapon;
 using Content.Shared._RMC14.Evacuation;
+using Content.Shared._RMC14.Marines;
 using Content.Shared._RMC14.Marines.Announce;
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared._RMC14.Rules;
@@ -11,8 +12,11 @@ using Content.Shared._RMC14.Thunderdome;
 using Content.Shared._RMC14.Tracker;
 using Content.Shared._RMC14.Xenonids;
 using Content.Shared._RMC14.Xenonids.Maturing;
+using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Administration.Logs;
+using Content.Shared.AU14;
+using Content.Shared.AU14.Round;
 using Content.Shared.Database;
 using Content.Shared.DoAfter;
 using Content.Shared.Examine;
@@ -56,6 +60,7 @@ public abstract class SharedDropshipSystem : EntitySystem
         SubscribeLocalEvent<DropshipNavigationComputerComponent, ActivatableUIOpenAttemptEvent>(OnUIOpenAttempt);
         SubscribeLocalEvent<DropshipNavigationComputerComponent, AfterActivatableUIOpenEvent>(OnNavigationOpen);
         SubscribeLocalEvent<DropshipNavigationComputerComponent, DropshipLockoutOverrideDoAfterEvent>(OnNavigationLockoutOverride);
+        SubscribeLocalEvent<DropshipNavigationComputerComponent, DropshipHumanHijackDoAfterEvent>(OnHumanHijackDoAfter);
 
         SubscribeLocalEvent<DropshipTerminalComponent, ActivateInWorldEvent>(OnDropshipTerminalActivateInWorld, before: [typeof(ActivatableUISystem), typeof(ActivatableUIRequiresAccessSystem)]);
         SubscribeLocalEvent<DropshipTerminalComponent, ActivatableUIOpenAttemptEvent>(OnTerminalOpenAttempt);
@@ -136,7 +141,11 @@ public abstract class SharedDropshipSystem : EntitySystem
         if (args.Cancelled)
             return;
 
-        if (HasComp<XenoComponent>(args.User) && !HasComp<DropshipHijackerComponent>(args.User))
+        var isXeno = HasComp<XenoComponent>(args.User);
+        var isHijacker = TryComp<DropshipHijackerComponent>(args.User, out var hijackerComp);
+
+        // Xenos without hijacker comp can't use the console at all
+        if (isXeno && !isHijacker)
         {
             args.Cancel();
             return;
@@ -150,6 +159,16 @@ public abstract class SharedDropshipSystem : EntitySystem
             return;
         }
 
+        // Block hijacking third-party dropships entirely
+        if (isHijacker &&
+            TryComp<WhitelistedShuttleComponent>(ent.Owner, out var wsComp) &&
+            string.Equals(wsComp.Faction, "thirdparty", StringComparison.OrdinalIgnoreCase))
+        {
+            args.Cancel();
+            _popup.PopupClient(Loc.GetString("rmc-dropship-hijack-thirdparty"), ent, args.User, PopupType.MediumCaution);
+            return;
+        }
+
         if (!TryDropshipLaunchPopup(ent, args.User, true))
         {
             args.Cancel();
@@ -157,7 +176,7 @@ public abstract class SharedDropshipSystem : EntitySystem
         }
 
         var lockedOutRemaining = ent.Comp.LockedOutUntil - _timing.CurTime;
-        if (lockedOutRemaining > TimeSpan.Zero && !HasComp<DropshipHijackerComponent>(args.User))
+        if (lockedOutRemaining > TimeSpan.Zero && !isHijacker)
         {
             args.Cancel();
             _popup.PopupClient(Loc.GetString("rmc-dropship-locked-out", ("minutes", (int)lockedOutRemaining.TotalMinutes)), ent, args.User, PopupType.MediumCaution);
@@ -178,7 +197,8 @@ public abstract class SharedDropshipSystem : EntitySystem
             return;
         }
 
-        if (lockedOutRemaining <= TimeSpan.Zero && HasComp<DropshipHijackerComponent>(args.User))
+        // Xeno hijacker (queen) lockout behavior - short 3s do-after
+        if (lockedOutRemaining <= TimeSpan.Zero && isHijacker && !hijackerComp!.IsHumanHijacker)
         {
             args.Cancel();
 
@@ -195,8 +215,8 @@ public abstract class SharedDropshipSystem : EntitySystem
             return;
         }
 
-        // Queen only from here on.
-        if (!HasComp<DropshipHijackerComponent>(args.User))
+        // Hijacker (xeno or human) from here on.
+        if (!isHijacker)
             return;
 
         args.Cancel();
@@ -204,15 +224,109 @@ public abstract class SharedDropshipSystem : EntitySystem
         if (!TryDropshipHijackPopup(ent, args.User, false))
             return;
 
-        var destinations = new List<(NetEntity Id, string Name)>();
-        var query = EntityQueryEnumerator<DropshipHijackDestinationComponent>();
-        while (query.MoveNext(out var uid, out _))
+        // Human hijacker: 60s do-after before opening the hijack destination menu
+        if (hijackerComp!.IsHumanHijacker)
         {
-            destinations.Add((GetNetEntity(uid), Name(uid)));
+            _popup.PopupEntity(Loc.GetString("rmc-dropship-hijack-human-hacking"), ent, args.User, PopupType.LargeCaution);
+
+            var ev = new DropshipHumanHijackDoAfterEvent();
+            var doAfter = new DoAfterArgs(EntityManager, args.User, TimeSpan.FromSeconds(hijackerComp.HijackDoAfterSeconds), ev, ent, ent)
+            {
+                BreakOnMove = true,
+                BreakOnDamage = true,
+                BreakOnRest = true,
+                DuplicateCondition = DuplicateConditions.SameEvent,
+                CancelDuplicate = true
+            };
+            _doAfter.TryStartDoAfter(doAfter);
+            return;
         }
 
-        _ui.OpenUi(ent.Owner, DropshipHijackerUiKey.Key, args.User);
-        _ui.SetUiState(ent.Owner, DropshipHijackerUiKey.Key, new DropshipHijackerBuiState(destinations));
+        // Xeno hijacker: open destination menu immediately
+        OpenHijackDestinationMenu(ent, args.User);
+    }
+
+    /// <summary>
+    ///     Opens the hijack destination selection UI for a user.
+    ///     For xeno hijackers: shows DropshipHijackDestination entities on the hijackee's ship only.
+    ///     For human hijackers: shows enemy primary LZs only.
+    /// </summary>
+    private void OpenHijackDestinationMenu(EntityUid computer, EntityUid user)
+    {
+        var destinations = new List<(NetEntity Id, string Name)>();
+
+        var isHumanHijacker = TryComp<DropshipHijackerComponent>(user, out var hijacker) && hijacker.IsHumanHijacker;
+
+        if (isHumanHijacker)
+        {
+            // Resolve the hijacker's own faction
+            string? userFaction = null;
+            if (TryComp<MarineComponent>(user, out var marine) && !string.IsNullOrEmpty(marine.Faction))
+                userFaction = marine.Faction.ToLowerInvariant();
+
+            // Show only ENEMY primary LZs (primary LZs whose faction doesn't match the hijacker's)
+            var primaryQuery = EntityQueryEnumerator<PrimaryLandingZoneComponent>();
+            while (primaryQuery.MoveNext(out var uid, out var primary))
+            {
+                var lzFaction = string.IsNullOrEmpty(primary.Faction) ? null : primary.Faction.ToLowerInvariant();
+
+                // Skip own faction's primary LZs
+                if (lzFaction != null && string.Equals(lzFaction, userFaction, StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                // Skip null-faction LZs if the hijacker has no faction (shouldn't happen, but safety)
+                if (lzFaction == null && userFaction == null)
+                    continue;
+
+                destinations.Add((GetNetEntity(uid), Name(uid)));
+            }
+
+            if (destinations.Count == 0)
+            {
+                _popup.PopupEntity(Loc.GetString("rmc-dropship-hijack-no-enemy-lz"), computer, user, PopupType.LargeCaution);
+                return;
+            }
+        }
+        else
+        {
+            // Xeno/threat hijacker: show crash landing destinations on ANY ship
+            var shipMaps = GetAllShipMaps();
+            var query = EntityQueryEnumerator<DropshipHijackDestinationComponent, TransformComponent>();
+            while (query.MoveNext(out var uid, out _, out var xform))
+            {
+                if (xform.MapUid is { } mapUid && shipMaps.Contains(mapUid))
+                    destinations.Add((GetNetEntity(uid), Name(uid)));
+            }
+        }
+
+        _ui.OpenUi(computer, DropshipHijackerUiKey.Key, user);
+        _ui.SetUiState(computer, DropshipHijackerUiKey.Key, new DropshipHijackerBuiState(destinations));
+    }
+
+    /// <summary>
+    ///     Gets the map UIDs of ALL ships in the game.
+    ///     Used to filter xeno/threat hijack destinations to any ship.
+    ///     Includes AlmayerComponent maps (default marine) and all ShipFactionComponent maps.
+    /// </summary>
+    private HashSet<EntityUid> GetAllShipMaps()
+    {
+        var shipMaps = new HashSet<EntityUid>();
+
+        var almayerQuery = EntityQueryEnumerator<AlmayerComponent, TransformComponent>();
+        while (almayerQuery.MoveNext(out _, out _, out var xform))
+        {
+            if (xform.MapUid is { } mapUid)
+                shipMaps.Add(mapUid);
+        }
+
+        var shipQuery = EntityQueryEnumerator<ShipFactionComponent, TransformComponent>();
+        while (shipQuery.MoveNext(out _, out _, out var xform2))
+        {
+            if (xform2.MapUid is { } mapUid)
+                shipMaps.Add(mapUid);
+        }
+
+        return shipMaps;
     }
 
     private void OnNavigationOpen(Entity<DropshipNavigationComputerComponent> ent, ref AfterActivatableUIOpenEvent args)
@@ -237,20 +351,52 @@ public abstract class SharedDropshipSystem : EntitySystem
         _popup.PopupClient(Loc.GetString("rmc-dropship-locked-out-bypass"), ent, args.User, PopupType.Medium);
     }
 
+    private void OnHumanHijackDoAfter(Entity<DropshipNavigationComputerComponent> ent, ref DropshipHumanHijackDoAfterEvent args)
+    {
+        if (args.Cancelled || args.Handled)
+            return;
+
+        args.Handled = true;
+
+        if (!TryComp<DropshipHijackerComponent>(args.User, out var hijacker) || !hijacker.IsHumanHijacker)
+            return;
+
+        // Check and spend intel points
+        if (!TrySpendHijackIntel(args.User, hijacker.IntelCost))
+        {
+            _popup.PopupEntity(Loc.GetString("rmc-dropship-hijack-no-intel"), ent, args.User, PopupType.LargeCaution);
+            return;
+        }
+
+        // Open the hijack destination menu
+        OpenHijackDestinationMenu(ent, args.User);
+    }
+
+    /// <summary>
+    ///     Attempts to spend intel points for a human hijacker. Override on server side.
+    /// </summary>
+    protected virtual bool TrySpendHijackIntel(EntityUid user, double cost)
+    {
+        // Only server can spend intel points, default to false
+        return false;
+    }
+
     private void OnDropshipTerminalActivateInWorld(Entity<DropshipTerminalComponent> ent, ref ActivateInWorldEvent args)
     {
         var user = args.User;
-        if (!HasComp<XenoComponent>(user))
-        {
-            // not handled -> Open the UI for marines.
+        var isXeno = HasComp<XenoComponent>(user);
+        var isHijacker = HasComp<DropshipHijackerComponent>(user);
+        var isHumanHijacker = TryComp<DropshipHijackerComponent>(user, out var hijackerComp) && hijackerComp.IsHumanHijacker;
+
+        // Non-xeno non-hijacker: fall through to normal UI
+        if (!isXeno && !isHijacker)
             return;
-        }
 
         args.Handled = true;
         if (_net.IsClient)
             return;
 
-        if (!HasComp<DropshipHijackerComponent>(user))
+        if (!isHijacker)
         {
             _popup.PopupEntity($"You stare cluelessly at the {Name(ent.Owner)}", user, user);
             return;
@@ -276,8 +422,15 @@ public abstract class SharedDropshipSystem : EntitySystem
             return;
         }
 
-        if (Count<PrimaryLandingZoneComponent>() > 0 &&
-            !HasComp<PrimaryLandingZoneComponent>(closestDestination))
+        // Use the planetside terminal's faction to determine which faction's dropship to call.
+        // The terminal belongs to the hijackees, so we call a dropship of that same faction.
+        string? terminalFaction = string.IsNullOrWhiteSpace(ent.Comp.Faction)
+            ? null
+            : ent.Comp.Faction.ToLowerInvariant();
+
+        // If a global primary exists OR a primary exists for the terminal's faction, and the closest destination isn't primary for that same faction, block.
+        if ((PrimaryExistsForFaction(null) || PrimaryExistsForFaction(terminalFaction)) &&
+            !IsPrimaryForFaction(closestDestination.Value.Owner, terminalFaction))
         {
             _popup.PopupEntity("The shuttle isn't responding to prompts, it looks like this isn't the primary shuttle.", user, user, PopupType.MediumCaution);
             return;
@@ -298,8 +451,29 @@ public abstract class SharedDropshipSystem : EntitySystem
                 if (!computer.Hijackable)
                     continue;
 
-                if (Transform(computerId).GridUid == uid &&
-                    FlyTo((computerId, computer), closestDestination.Value, user))
+                if (Transform(computerId).GridUid != uid)
+                    continue;
+
+                // Resolve shuttle faction once for multiple checks
+                string? shuttleFaction = null;
+                if (TryComp<WhitelistedShuttleComponent>(computerId, out var wsComp) &&
+                    !string.IsNullOrEmpty(wsComp.Faction))
+                {
+                    shuttleFaction = wsComp.Faction.ToLowerInvariant();
+                }
+
+                // Never hijack third-party dropships
+                if (string.Equals(shuttleFaction, "thirdparty", StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                // Only call dropships belonging to the terminal's faction (the hijackees' faction)
+                if (terminalFaction != null &&
+                    !string.Equals(shuttleFaction, terminalFaction, StringComparison.OrdinalIgnoreCase))
+                {
+                    continue;
+                }
+
+                if (FlyTo((computerId, computer), closestDestination.Value, user))
                 {
                     _popup.PopupEntity("You call down one of the dropships to your location", user, user, PopupType.LargeCaution);
                     return;
@@ -315,8 +489,28 @@ public abstract class SharedDropshipSystem : EntitySystem
         if (args.Cancelled)
             return;
 
-        if (HasComp<XenoComponent>(args.User))
+        // Block xenos and human hijackers from the normal terminal UI
+        // (they use the hijack flow via ActivateInWorld instead)
+        if (HasComp<XenoComponent>(args.User) || HasComp<DropshipHijackerComponent>(args.User))
+        {
             args.Cancel();
+            return;
+        }
+
+        // Faction whitelisting: if the terminal has a faction set, only users of that faction can use it
+        if (!string.IsNullOrEmpty(terminal.Comp.Faction))
+        {
+            string? userFaction = null;
+            if (TryComp<MarineComponent>(args.User, out var marine) && !string.IsNullOrEmpty(marine.Faction))
+                userFaction = marine.Faction.ToLowerInvariant();
+
+            if (!string.Equals(terminal.Comp.Faction, userFaction, StringComparison.OrdinalIgnoreCase))
+            {
+                _popup.PopupClient(Loc.GetString("rmc-dropship-terminal-wrong-faction"), terminal, args.User, PopupType.MediumCaution);
+                args.Cancel();
+                return;
+            }
+        }
     }
 
     private void OnTerminalOpen(Entity<DropshipTerminalComponent> terminal, ref AfterActivatableUIOpenEvent args)
@@ -332,6 +526,9 @@ public abstract class SharedDropshipSystem : EntitySystem
             return;
         }
 
+        // Determine the terminal's faction for filtering dropships
+        var terminalFaction = terminal.Comp.Faction;
+
         var dropships = new List<DropshipEntry>();
         var dropshipQuery = EntityQueryEnumerator<DropshipComponent>();
         while (dropshipQuery.MoveNext(out var uid, out var _))
@@ -346,6 +543,18 @@ public abstract class SharedDropshipSystem : EntitySystem
                 // On a different grid => not the associated computer.
                 if (Transform(computerId).GridUid != uid)
                     continue;
+
+                // Faction filter: if the terminal has a faction, only show dropships
+                // whose WhitelistedShuttleComponent faction matches (or dropships with no faction)
+                if (!string.IsNullOrEmpty(terminalFaction))
+                {
+                    if (TryComp<WhitelistedShuttleComponent>(computerId, out var shuttle) &&
+                        !string.IsNullOrEmpty(shuttle.Faction) &&
+                        !string.Equals(shuttle.Faction, terminalFaction, StringComparison.OrdinalIgnoreCase))
+                    {
+                        continue;
+                    }
+                }
 
                 dropships.Add(new DropshipEntry(GetNetEntity(computerId), Name(uid)));
             }
@@ -518,23 +727,80 @@ public abstract class SharedDropshipSystem : EntitySystem
             return;
         }
 
-        if (!HasComp<DropshipHijackDestinationComponent>(destination))
+        var isHumanHijacker = TryComp<DropshipHijackerComponent>(args.Actor, out var hijackerComp) && hijackerComp.IsHumanHijacker;
+
+        if (isHumanHijacker)
         {
-            Log.Warning(
-                $"{ToPrettyString(args.Actor)} tried to hijack to invalid destination {ToPrettyString(destination)}");
-            return;
+            // Human hijackers target enemy primary LZs
+            if (!HasComp<PrimaryLandingZoneComponent>(destination))
+            {
+                Log.Warning(
+                    $"{ToPrettyString(args.Actor)} tried to human-hijack to non-primary-LZ {ToPrettyString(destination)}");
+                return;
+            }
+
+            // Fly to the enemy LZ (as a hijack, but not a crash)
+            if (FlyTo(ent, destination.Value, args.Actor, true) &&
+                TryComp(ent, out TransformComponent? xform) &&
+                xform.ParentUid.Valid)
+            {
+                var dropship = EnsureComp<DropshipComponent>(xform.ParentUid);
+                // Human hijack does NOT set Crashed - the dropship lands normally at the enemy LZ
+                Dirty(xform.ParentUid, dropship);
+
+                // Remove access restrictions from ALL navigation consoles on this dropship
+                // so anyone can use them after hijack
+                var gridChildren = Transform(xform.ParentUid).ChildEnumerator;
+                while (gridChildren.MoveNext(out var child))
+                {
+                    if (HasComp<DropshipNavigationComputerComponent>(child))
+                    {
+                        RemCompDeferred<AccessReaderComponent>(child);
+                        RemCompDeferred<ActivatableUIRequiresAccessComponent>(child);
+                    }
+                }
+
+                // Determine hijacker faction for downstream systems
+                string? hijackerFaction = null;
+                if (TryComp<MarineComponent>(args.Actor, out var marine) && !string.IsNullOrEmpty(marine.Faction))
+                    hijackerFaction = marine.Faction.ToLowerInvariant();
+
+                var ev = new DropshipHijackStartEvent(xform.ParentUid, hijackerFaction, true);
+                RaiseLocalEvent(ref ev);
+            }
         }
-
-        if (FlyTo(ent, destination.Value, args.Actor, true) &&
-            TryComp(ent, out TransformComponent? xform) &&
-            xform.ParentUid.Valid)
+        else
         {
-            var dropship = EnsureComp<DropshipComponent>(xform.ParentUid);
-            dropship.Crashed = true;
-            Dirty(xform.ParentUid, dropship);
+            // Xeno hijacker: crash-land on the hijackee's ship
+            if (!HasComp<DropshipHijackDestinationComponent>(destination))
+            {
+                Log.Warning(
+                    $"{ToPrettyString(args.Actor)} tried to hijack to invalid destination {ToPrettyString(destination)}");
+                return;
+            }
 
-            var ev = new DropshipHijackStartEvent(xform.ParentUid);
-            RaiseLocalEvent(ref ev);
+            // Validate destination is on a valid ship
+            var shipMaps = GetAllShipMaps();
+            if (TryComp<TransformComponent>(destination, out var destXform) &&
+                destXform.MapUid is { } destMap &&
+                !shipMaps.Contains(destMap))
+            {
+                Log.Warning(
+                    $"{ToPrettyString(args.Actor)} tried to hijack to destination on wrong ship {ToPrettyString(destination)}");
+                return;
+            }
+
+            if (FlyTo(ent, destination.Value, args.Actor, true) &&
+                TryComp(ent, out TransformComponent? xform) &&
+                xform.ParentUid.Valid)
+            {
+                var dropship = EnsureComp<DropshipComponent>(xform.ParentUid);
+                dropship.Crashed = true;
+                Dirty(xform.ParentUid, dropship);
+
+                var ev = new DropshipHijackStartEvent(xform.ParentUid);
+                RaiseLocalEvent(ref ev);
+            }
         }
     }
 
@@ -596,6 +862,29 @@ public abstract class SharedDropshipSystem : EntitySystem
         return false;
     }
 
+    // Helper: check if a primary landing zone exists for a given faction (null/empty = global)
+    protected bool PrimaryExistsForFaction(string? faction)
+    {
+        var normalized = string.IsNullOrWhiteSpace(faction) ? null : faction.ToLowerInvariant();
+        var query = EntityQueryEnumerator<PrimaryLandingZoneComponent>();
+        while (query.MoveNext(out _, out var comp))
+        {
+            var compFaction = string.IsNullOrWhiteSpace(comp.Faction) ? null : comp.Faction.ToLowerInvariant();
+            if (compFaction == normalized)
+                return true;
+        }
+        return false;
+    }
+
+    protected bool IsPrimaryForFaction(EntityUid destination, string? faction)
+    {
+        if (!EntityManager.TryGetComponent<PrimaryLandingZoneComponent>(destination, out var comp))
+            return false;
+        var compFaction = string.IsNullOrWhiteSpace(comp.Faction) ? null : comp.Faction.ToLowerInvariant();
+        var normalized = string.IsNullOrWhiteSpace(faction) ? null : faction.ToLowerInvariant();
+        return compFaction == normalized;
+    }
+
     private bool TryDropshipLaunchPopup(EntityUid computer, EntityUid user, bool predicted)
     {
         var roundDuration = _gameTicker.RoundDuration();
@@ -633,12 +922,23 @@ public abstract class SharedDropshipSystem : EntitySystem
 
         var map = _transform.GetMap(user.Owner);
 
-        // Prevent shipside hijacks by immature queens.
-        if (HasComp<XenoMaturingComponent>(user) &&
-            !HasComp<RMCPlanetComponent>(map) ||
-            // Prevent double hijack.
-            TryComp(map, out EvacuationProgressComponent? evacuation) &&
+        // Prevent double hijack.
+        if (TryComp(map, out EvacuationProgressComponent? evacuation) &&
             evacuation.DropShipCrashed)
+        {
+            var msg = Loc.GetString("rmc-dropship-invalid-hijack");
+
+            if (predicted)
+                _popup.PopupClient(msg, computer, user, PopupType.MediumCaution);
+            else
+                _popup.PopupEntity(msg, computer, user, PopupType.MediumCaution);
+
+            return false;
+        }
+
+        // Prevent shipside hijacks by immature xeno queens (xeno-specific check).
+        if (HasComp<XenoMaturingComponent>(user) &&
+            !HasComp<RMCPlanetComponent>(map))
         {
             var msg = Loc.GetString("rmc-dropship-invalid-hijack");
 
@@ -663,9 +963,15 @@ public abstract class SharedDropshipSystem : EntitySystem
             return false;
         }
 
-        if (Count<PrimaryLandingZoneComponent>() > 0)
+        // Determine desired faction from the DropshipDestination's FactionController (if any).
+        string? desiredFaction = null;
+        if (EntityManager.TryGetComponent<DropshipDestinationComponent>(lz, out var lzComp) && !string.IsNullOrWhiteSpace(lzComp.FactionController))
+            desiredFaction = lzComp.FactionController.ToLowerInvariant();
+
+        // Prevent duplicate primary for the same faction
+        if (PrimaryExistsForFaction(desiredFaction))
         {
-            Log.Warning($"{ToPrettyString(actor)} tried to designate as primary LZ entity {ToPrettyString(lz)} when one already exists!");
+            Log.Warning($"{ToPrettyString(actor)} tried to designate as primary LZ entity {ToPrettyString(lz)} when a primary already exists for that faction!");
             return false;
         }
 
@@ -684,19 +990,41 @@ public abstract class SharedDropshipSystem : EntitySystem
 
         _adminLog.Add(LogType.RMCPrimaryLZ, $"{ToPrettyString(actor):player} designated {ToPrettyString(lz):lz} as primary landing zone");
 
-        EnsureComp<PrimaryLandingZoneComponent>(lz);
+        var primary = EnsureComp<PrimaryLandingZoneComponent>(lz);
+        primary.Faction = desiredFaction;
+        EntityManager.Dirty(lz, primary);
         EnsureComp<RMCTrackableComponent>(lz);
+
+        // Auto-set faction on all DropshipTerminal entities on the same map as the LZ
+        if (TryComp<TransformComponent>(lz, out var lzXform))
+        {
+            var terminalQuery = EntityQueryEnumerator<DropshipTerminalComponent, TransformComponent>();
+            while (terminalQuery.MoveNext(out var termUid, out var termComp, out var termXform))
+            {
+                if (termXform.MapID != lzXform.MapID)
+                    continue;
+
+                termComp.Faction = desiredFaction;
+                Dirty(termUid, termComp);
+            }
+        }
+
         RefreshUI();
 
         var message = Loc.GetString("rmc-announcement-ares-lz-designated", ("name", Name(lz)));
-        _marineAnnounce.AnnounceARESStaging(actor, message);
+        _marineAnnounce.AnnounceARESStaging(actor, message, null, null, desiredFaction);
 
         return true;
     }
 
-    public IEnumerable<Entity<MetaDataComponent>> GetPrimaryLZCandidates()
+    public IEnumerable<Entity<MetaDataComponent>> GetPrimaryLZCandidates(string? faction = null)
     {
-        if (Count<PrimaryLandingZoneComponent>() != 0)
+        // If a global primary exists no candidates should be shown.
+        if (PrimaryExistsForFaction(null))
+            yield break;
+
+        // If a primary exists for the caller's faction, don't show candidates to that faction either.
+        if (!string.IsNullOrWhiteSpace(faction) && PrimaryExistsForFaction(faction))
             yield break;
 
         var landingZoneQuery = EntityQueryEnumerator<DropshipDestinationComponent, MetaDataComponent, TransformComponent>();
@@ -813,5 +1141,28 @@ public abstract class SharedDropshipSystem : EntitySystem
             return FindClosestLZ(transform);
 
         return null;
+    }
+
+    /// <summary>
+    /// Safely sets the FactionController for a DropshipDestinationComponent and networks the change.
+    /// </summary>
+    public void SetFactionController(EntityUid uid, string faction)
+    {
+        if (EntityManager.TryGetComponent<DropshipDestinationComponent>(uid, out var comp))
+        {
+            comp.FactionController = faction;
+            EntityManager.Dirty(uid, comp);
+        }
+    }
+
+
+    public void SetDestinationType(EntityUid uid, string destinationtype)
+    {
+        if (EntityManager.TryGetComponent<DropshipDestinationComponent>(uid, out var comp))
+        {
+            if (Enum.TryParse<DropshipDestinationComponent.DestinationType>(destinationtype, out var parsed))
+                comp.Destinationtype = parsed;
+            EntityManager.Dirty(uid, comp);
+        }
     }
 }

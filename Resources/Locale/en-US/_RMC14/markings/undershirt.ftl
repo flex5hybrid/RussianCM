@@ -69,3 +69,9 @@ marking-RMCUndershirtStraplesUrban-u_strapless = Bra
 
 marking-RMCUndershirtNone = None
 marking-RMCUndershirtNone-blank = None
+
+marking-AU14UndershirtWY = Undershirt (WY, Standard)
+marking-AU14UndershirtWY-blank = Undershirt (WY, Standard)
+
+marking-AU14UndershirtUSCM = Undershirt (USCM, Standard)
+marking-AU14UndershirtUSCM-blank = Undershirt (USCM, Standard)

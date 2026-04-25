@@ -1,0 +1,34 @@
+- files: ["AliensTitle.ogg"]
+  license: "Custom"
+  copyright: "James Horner - Aliens Soundtrack"
+  source: "Aliens Track 01 - Main Title"
+
+- files: ["DarkDiscovery.ogg"]
+  license: "Custom"
+  copyright: "James Horner - Aliens Soundtrack"
+  source: "Aliens Track 03 - Dark Discovery"
+
+- files: ["LV426.ogg"]
+  license: "Custom"
+  copyright: "James Horner - Aliens Soundtrack"
+  source: "Aliens Track 04 - LV426"
+
+- files: ["AlienMainTitle.ogg"]
+  license: "Custom"
+  copyright: "Jerry Goldsmith - Alien Soundtrack"
+  source: "Alien Track 01 - Main Title"
+
+- files: ["HyperSleep.ogg"]
+  license: "Custom"
+  copyright: "Jerry Goldsmith - Aliens Soundtrack"
+  source: "Alien Track 02 - Hyper Sleep"
+
+- files: ["TheSurvivorIsAWoman.ogg"]
+  license: "Custom"
+  copyright: "Elliot Goldenthal - Aliens Soundtrack"
+  source: "Alien 3 Track 04 - The Survivor is a Woman"
+
+- files: ["Morgue.ogg"]
+  license: "Custom"
+  copyright: "Elliot Goldenthal - Aliens Soundtrack"
+  source: "Alien 3 Track 08 - Morgue"

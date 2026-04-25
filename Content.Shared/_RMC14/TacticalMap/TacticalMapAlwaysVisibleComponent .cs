@@ -17,4 +17,13 @@ public sealed partial class TacticalMapAlwaysVisibleComponent : Component
 
     [DataField, AutoNetworkedField]
     public bool VisibleAsXenoStructure = false;
+
+    [DataField, AutoNetworkedField]
+    public bool VisibleToOpfor = false;
+
+    [DataField, AutoNetworkedField]
+    public bool VisibleToGovfor = false;
+
+    [DataField, AutoNetworkedField]
+    public bool VisibleToClf = false;
 }

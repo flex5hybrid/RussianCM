@@ -150,7 +150,7 @@
   suffix: Charger
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Crusher/charger_crusher.rsi
+    sprite: _AU14/Mobs/Xenos/Crusher/charger_crusher.rsi # AU14-Edit
   - type: MobThresholds
     thresholds:
       0: Alive

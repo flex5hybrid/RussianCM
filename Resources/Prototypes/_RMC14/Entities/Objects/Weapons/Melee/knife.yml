@@ -117,7 +117,7 @@
   parent: RMCM5Bayonet
   id: RMCTantoA # bayonet
   name: "MK3 infantry service tanto"
-  description: Forged for the elite forces of the Royal Crown Marines, the sleek, tempered construction of this blade has been lauded by its wielders.
+  description: Forged for the elite forces of the Royal Marines Commando, the sleek, tempered construction of this blade has been lauded by its wielders.
   components:
   - type: Clothing
     slots:
@@ -139,7 +139,7 @@
   parent: RMCM5Bayonet
   id: RMCTantoB # bayonet
   name: "MK3 infantry service tanto"
-  description: Forged for the elite forces of the Royal Crown Marines, the sleek, tempered construction of this blade has been lauded by its wielders.
+  description: Forged for the elite forces of the Royal Marines Commando, the sleek, tempered construction of this blade has been lauded by its wielders.
   components:
   - type: Clothing
     slots:
@@ -218,7 +218,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 5
+        Slash: 55
   - type: LandAtCursor
   - type: DamageOtherOnHit
     damage:

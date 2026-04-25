@@ -86,7 +86,7 @@ public sealed class WoundsSystem : SharedWoundsSystem
                     }
                 }
 
-                if (!bleedEv.Cancelled && !wound.Treated && time < wound.StopBleedAt)
+                if (!bleedEv.Cancelled && !wound.Treated)
                     bloodloss += wound.Bloodloss;
             }
 

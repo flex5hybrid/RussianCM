@@ -1,0 +1,10 @@
+ent-AU14HybrisaExtinguisherCabinet-name = шкаф для огнетушителя
+ent-AU14HybrisaExtinguisherCabinet-desc = Маленький настенный шкаф, предназначенный для хранения огнетушителя.
+ent-CMUHybrisaExtinguisherCabinetFilled-name = шкаф для огнетушителя
+ent-CMUHybrisaExtinguisherCabinetFilled-desc = Маленький настенный шкаф, предназначенный для хранения огнетушителя.
+ent-AU14ExtinguisherCabinetOpen-name = шкаф для огнетушителя
+ent-AU14ExtinguisherCabinetOpen-desc = Маленький настенный шкаф, предназначенный для хранения огнетушителя.
+ent-AU14ExtinguisherCabinetFilled-name = шкаф для огнетушителя
+ent-AU14ExtinguisherCabinetFilled-desc = Маленький настенный шкаф, предназначенный для хранения огнетушителя.
+ent-AU14ExtinguisherCabinetFilledOpen-name = шкаф для огнетушителя
+ent-AU14ExtinguisherCabinetFilledOpen-desc = Маленький настенный шкаф, предназначенный для хранения огнетушителя.

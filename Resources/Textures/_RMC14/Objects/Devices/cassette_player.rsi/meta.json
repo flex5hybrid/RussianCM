@@ -32,6 +32,9 @@
       "name": "walkman_5"
     },
     {
+      "name": "walkman_6"
+    },
+    {
       "name": "playing",
       "delays": [
         [
@@ -71,6 +74,9 @@
     },
     {
       "name": "cassette_camo"
+    },
+    {
+      "name": "cassette_tan"
     },
     {
       "name": "cassette_orange_blue"

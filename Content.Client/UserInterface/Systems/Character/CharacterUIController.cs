@@ -130,7 +130,7 @@ public sealed class CharacterUIController : UIController, IOnStateEntered<Gamepl
             return;
         }
 
-        var (entity, job, objectives, briefing, entityName) = data;
+        var (entity, job, objectives, briefing, entityName, lorePrimerLines) = data;
 
         _window.SpriteView.SetEntity(entity);
 
@@ -138,6 +138,23 @@ public sealed class CharacterUIController : UIController, IOnStateEntered<Gamepl
 
         _window.NameLabel.Text = entityName;
         _window.SubText.Text = job;
+        _window.LorePrimerContainer.RemoveAllChildren();
+        _window.LorePrimerLabel.Visible = lorePrimerLines.Count > 0;
+
+        foreach (var line in lorePrimerLines)
+        {
+            var msg = new FormattedMessage();
+            msg.AddText(line);
+
+            var lineLabel = new RichTextLabel
+            {
+                MaxWidth = 380,
+                Margin = new Thickness(0, 0, 0, 4),
+            };
+            lineLabel.SetMessage(msg);
+            _window.LorePrimerContainer.AddChild(lineLabel);
+        }
+
         _window.Objectives.RemoveAllChildren();
         _window.ObjectivesLabel.Visible = objectives.Any();
 

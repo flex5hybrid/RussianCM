@@ -1,0 +1,7 @@
+- type: entity
+  parent: RMCPouchFlare
+  id: AU14PouchFlareFilledRMC
+  suffix: Filled, RM
+  components:
+  - type: CMItemSlots
+    startingItem: AU14FlareRMC

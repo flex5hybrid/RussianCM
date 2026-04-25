@@ -3,11 +3,9 @@
   id: CMQuartermaster
   name: cm-job-name-quartermaster
   description: cm-job-description-quartermaster
+  setPreference: false
   playTimeTracker: CMJobQuartermaster
-  requirements:
-  - !type:DepartmentTimeRequirement
-    department: CMRequisitions
-    time: 36000 # 10 hours
+  requirements: []
   ranks:
     RMCRankFirstLT:
     - !type:RoleTimeRequirement
@@ -31,7 +29,7 @@
       skills:
         RMCSkillConstruction: 2
         RMCSkillEndurance: 1
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 1
         RMCSkillIntel: 1
         RMCSkillJtac: 3

@@ -26,21 +26,20 @@
       - TSE
     - type: Skills
       skills:
-        RMCSkillConstruction: 1
         RMCSkillCqc: 3
-        RMCSkillEndurance: 3
-        RMCSkillEngineer: 1
         RMCSkillFirearms: 1
         RMCSkillFireman: 3
-        RMCSkillJtac: 1
+        RMCSkillConstruction: 1
+        RMCSkillEngineer: 1
+        RMCSkillEndurance: 3
         RMCSkillMedical: 2
-        RMCSkillMeleeWeapons: 1
-        RMCSkillPilot: 1
         RMCSkillSurgery: 2
+        RMCSkillMeleeWeapons: 1
+        RMCSkillJtac: 1
+        RMCSkillPilot: 1
     - type: JobPrefix
       prefix: rmc-job-prefix-rcm-pve-medical-assistant
-    - type: AssignSquad
-      squad: SquadRoyalMarinesPVE
+
     - type: TacticalMapIcon
       icon:
         sprite: /Textures/_RMC14/Interface/map_blips.rsi

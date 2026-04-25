@@ -85,7 +85,7 @@
     powerLoad: 0
     needsPower: false
   - type: AccessReader
-    access: [["CMAccessDropship"]]
+    access: [ [ "AU14AccessGovforPilot" ] ]
   - type: BlockTileFire
 
 - type: entity

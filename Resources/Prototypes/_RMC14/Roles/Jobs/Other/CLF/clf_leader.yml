@@ -15,7 +15,7 @@
     components:
     - type: Skills
       skills:
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillEngineer: 2
         RMCSkillCqc: 2
         RMCSkillLeadership: 3
@@ -31,6 +31,7 @@
     - type: NpcFactionMember
       factions:
       - CLF
+    - type: CLFMember
     - type: JobPrefix
       prefix: rmc-job-prefix-clf-cell-leader
     - type: SquadLeader
@@ -39,6 +40,18 @@
         state: clf_sl
     - type: RMCPointing
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
   hidden: true
 
 - type: entity

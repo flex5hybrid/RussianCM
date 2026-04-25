@@ -3,7 +3,7 @@
   id: CMMilitaryPolice
   name: cm-job-name-militarypolice
   description: cm-job-description-militarypolice
-  newToJobInfo: rmc-new-to-job-military-police
+  setPreference: false
   playTimeTracker: CMJobMilitaryPolice
   requirements:
   - !type:DepartmentTimeRequirement
@@ -35,7 +35,7 @@
       skills:
         RMCSkillCqc: 2
         RMCSkillEndurance: 2
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 2
         RMCSkillPolice: 2
     - type: JobPrefix

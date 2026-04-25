@@ -1,18 +1,18 @@
-- type: entity
+﻿- type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: M59A prototype rifle
+  name: M46A prototype rifle
   id: RMCWeaponRifleM59A
-  description: A prototype M59A, an experimental rifle platform built to outperform the standard M54C. Back issue only. Uses standard MK1 & MK2 rifle magazines.
+  description: A prototype M46A, an experimental rifle platform built to outperform the standard M41A. Back issue only. Uses standard MK1 & MK2 rifle magazines.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Rifles/m59a/desert.rsi
+    sprite: _RMC14/Objects/Weapons/Guns/Rifles/m59a/desert.rsi #TODO RMC: Change when new sprites
     layers:
     - state: bolt-open
       map: [ "enum.GunVisualLayers.Base" ]
     - state: mag-0
       map: [ "enum.GunVisualLayers.Mag" ]
   - type: Clothing
-    sprite: _RMC14/Objects/Weapons/Guns/Rifles/m59a/desert.rsi
+    sprite: _RMC14/Objects/Weapons/Guns/Rifles/m59a/desert.rsi #TODO RMC: Change when new sprites
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

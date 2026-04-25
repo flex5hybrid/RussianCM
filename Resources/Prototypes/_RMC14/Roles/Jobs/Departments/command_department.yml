@@ -13,3 +13,4 @@
   primary: false
   departmentRadio: MarineCommand
   headOfDepartment: CMCommandingOfficer
+  hidden: true

@@ -117,3 +117,14 @@ public sealed class CriminalRecordSetStatusFilter : BoundUserInterfaceMessage
     }
 }
 
+[Serializable, NetSerializable]
+public sealed class CriminalRecordSetBounty : BoundUserInterfaceMessage
+{
+    public readonly uint RecordKey;
+    public readonly int Bounty;
+    public CriminalRecordSetBounty(uint recordKey, int bounty)
+    {
+        RecordKey = recordKey;
+        Bounty = bounty;
+    }
+}

@@ -3,7 +3,7 @@
   id: CMCombatTech
   name: cm-job-name-combat-tech
   description: cm-job-description-combat-tech
-  newToJobInfo: rmc-new-to-job-combat-tech
+  setPreference: false
   playTimeTracker: CMJobCombatTech
   requirements:
   - !type:DepartmentTimeRequirement
@@ -27,8 +27,8 @@
   supervisors: cm-job-supervisors-sl
   accessGroups:
   - CombatTech
-  overwatchSortPriority: -1
-  overwatchRoleName: Combat Technicians
+ # overwatchSortPriority: -1
+ # overwatchRoleName: Combat Technicians
   roleWeight: 1
   displayWeight: 1
   special:
@@ -39,7 +39,7 @@
         RMCSkillConstruction: 2
         RMCSkillEndurance: 1
         RMCSkillEngineer: 3
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 1
         RMCSkillJtac: 1
         RMCSkillVehicles: 1

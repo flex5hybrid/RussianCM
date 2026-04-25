@@ -3,6 +3,8 @@ using System.Text.RegularExpressions;
 using Content.Shared._RMC14.Marines.Squads;
 using Content.Shared._RMC14.NamedItems;
 using Content.Shared._RMC14.Xenonids.Name;
+using Content.Shared.AU14.Allegiance;
+using Content.Shared.AU14.Origin;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
@@ -156,6 +158,18 @@ namespace Content.Shared.Preferences
         [DataField]
         public string XenoPostfix { get; private set; } = string.Empty;
 
+        /// <summary>
+        /// The allegiance selected for this character. Affects platoon/colony spawning.
+        /// </summary>
+        [DataField]
+        public ProtoId<AllegiancePrototype>? Allegiance { get; private set; } = null;
+
+        /// <summary>
+        /// The origin selected for this character. Adds components, accents, items and traits at spawn.
+        /// </summary>
+        [DataField]
+        public ProtoId<OriginPrototype>? Origin { get; private set; } = "UAAmerica";
+
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
@@ -176,7 +190,9 @@ namespace Content.Shared.Preferences
             SharedRMCNamedItems namedItems,
             bool playtimePerks,
             string xenoPrefix,
-            string xenoPostfix)
+            string xenoPostfix,
+            ProtoId<AllegiancePrototype>? allegiance = null,
+            ProtoId<OriginPrototype>? origin = null)
         {
             Name = name;
             FlavorText = flavortext;
@@ -213,6 +229,8 @@ namespace Content.Shared.Preferences
             PlaytimePerks = playtimePerks;
             XenoPrefix = xenoPrefix;
             XenoPostfix = xenoPostfix;
+            Allegiance = allegiance;
+            Origin = origin;
         }
 
         /// <summary>Copy constructor</summary>
@@ -236,7 +254,9 @@ namespace Content.Shared.Preferences
                 other.NamedItems,
                 other.PlaytimePerks,
                 other.XenoPrefix,
-                other.XenoPostfix)
+                other.XenoPostfix,
+                other.Allegiance,
+                other.Origin)
         {
         }
 
@@ -406,6 +426,16 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile WithXenoPostfix(string postfix)
         {
             return new(this) { XenoPostfix = postfix };
+        }
+
+        public HumanoidCharacterProfile WithAllegiance(ProtoId<AllegiancePrototype>? allegiance)
+        {
+            return new(this) { Allegiance = allegiance };
+        }
+
+        public HumanoidCharacterProfile WithOrigin(ProtoId<OriginPrototype>? origin)
+        {
+            return new(this) { Origin = origin };
         }
 
         public HumanoidCharacterProfile WithJobPriorities(IEnumerable<KeyValuePair<ProtoId<JobPrototype>, JobPriority>> jobPriorities)
@@ -580,6 +610,8 @@ namespace Content.Shared.Preferences
             if (PlaytimePerks != other.PlaytimePerks) return false;
             if (XenoPrefix != other.XenoPrefix) return false;
             if (XenoPostfix != other.XenoPostfix) return false;
+            if (Allegiance != other.Allegiance) return false;
+            if (Origin != other.Origin) return false;
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
@@ -735,6 +767,18 @@ namespace Content.Shared.Preferences
                 !team.RoundStart)
             {
                 SquadPreference = null;
+            }
+
+            // Validate allegiance
+            if (Allegiance != null && !prototypeManager.HasIndex<AllegiancePrototype>(Allegiance.Value))
+            {
+                Allegiance = null;
+            }
+
+            // Validate origin
+            if (Origin != null && !prototypeManager.HasIndex<OriginPrototype>(Origin.Value))
+            {
+                Origin = null;
             }
 
             _jobPriorities.Clear();
@@ -915,6 +959,8 @@ namespace Content.Shared.Preferences
             hashCode.Add(PlaytimePerks);
             hashCode.Add(XenoPrefix);
             hashCode.Add(XenoPostfix);
+            hashCode.Add(Allegiance);
+            hashCode.Add(Origin);
             return hashCode.ToHashCode();
         }
 

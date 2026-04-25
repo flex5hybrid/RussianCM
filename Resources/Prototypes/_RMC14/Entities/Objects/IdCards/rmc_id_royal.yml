@@ -5,7 +5,7 @@
   - type: IFFFaction
   - type: FactionFrequencies
     channels:
-    - RoyalMarine
+    - TWESOF
 
 - type: entity
   parent: CMIDCardStandardDogtag

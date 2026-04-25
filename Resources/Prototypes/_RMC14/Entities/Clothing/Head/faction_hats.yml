@@ -14,8 +14,8 @@
 - type: entity
   parent: CMHeadBeretRed
   id: RMCHeadBeretProvost
-  name: UNMC provost beret
-  description: A beret with the UNMC Military Police insignia emblazoned on it.
+  name: USCM provost beret
+  description: A beret with the USCMC Military Police insignia emblazoned on it.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_wo.rsi
@@ -25,7 +25,7 @@
 - type: entity
   parent: RMCHeadBeretProvost
   id: RMCHeadBeretProvostSenior
-  name: UNMC senior provost beret
+  name: USCM senior provost beret
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/CO/beret_black.rsi
@@ -139,7 +139,7 @@
 - type: entity
   parent: CMHeadCapCargo
   id: RMCHeadCapQuartermaster
-  name: UNMC Logistics Officer cap
+  name: USCM quartermaster cap
   description: It's a fancy hat for a not-so-fancy military supply clerk.
   components:
   - type: Sprite
@@ -150,7 +150,7 @@
 - type: entity
   parent: CMHeadBeret
   id: RMCHeadBeretQuartermaster
-  name: UNMC Logistics Officer beret
+  name: USCM quartermaster beret
   description: A beret with the sergeant insignia emblazoned on it. It symbolizes hard work and shady business.
   components:
   - type: Sprite
@@ -162,7 +162,7 @@
 - type: entity
   parent: CMHeadBeret
   id: RMCHeadUNMCHeadset
-  name: UNMC headset
+  name: headset
   description: A headset typically found in use by radio-operators and officers. This one appears to be malfunctioning.
   components:
   - type: Sprite

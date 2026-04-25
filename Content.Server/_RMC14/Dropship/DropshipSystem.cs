@@ -2,6 +2,7 @@
 using System.Numerics;
 using Content.Server._RMC14.Marines;
 using Content.Server._RMC14.Shuttles;
+using Content.Server.AU14.Round;
 using Content.Server.Doors.Systems;
 using Content.Server.GameTicking;
 using Content.Server.Shuttles.Components;
@@ -15,12 +16,17 @@ using Content.Shared._RMC14.Dropship;
 using Content.Shared._RMC14.Dropship.AttachmentPoint;
 using Content.Shared._RMC14.Dropship.Utility.Components;
 using Content.Shared._RMC14.Explosion;
+using Content.Shared._RMC14.Intel;
 using Content.Shared._RMC14.Marines;
+using Content.Shared._RMC14.Marines.ControlComputer;
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared._RMC14.Rules;
+using Content.Shared._RMC14.Telephone;
 using Content.Shared._RMC14.Xenonids;
 using Content.Shared._RMC14.Xenonids.Announce;
 using Content.Shared.Administration.Logs;
+using Content.Shared.AU14;
+using Content.Shared.AU14.Round;
 using Content.Shared.CCVar;
 using Content.Shared.Coordinates;
 using Content.Shared.Database;
@@ -66,6 +72,7 @@ public sealed class DropshipSystem : SharedDropshipSystem
     [Dependency] private readonly SharedRMCExplosionSystem _rmcExplosion = default!;
     [Dependency] private readonly RMCAlertLevelSystem _alertLevelSystem = default!;
     [Dependency] private readonly AreaSystem _area = default!;
+    [Dependency] private readonly IntelSystem _intel = default!;
 
     private EntityQuery<DockingComponent> _dockingQuery;
     private EntityQuery<DoorComponent> _doorQuery;
@@ -119,7 +126,7 @@ public sealed class DropshipSystem : SharedDropshipSystem
         OnRefreshUI(ent, ref args);
 
         var map = args.FromMapUid;
-        if (HasComp<AlmayerComponent>(map))
+        if (map != null && IsShipMap(map.Value))
         {
             var ev = new DropshipLaunchedFromWarshipEvent(ent);
             RaiseLocalEvent(ent, ref ev, true);
@@ -146,11 +153,26 @@ public sealed class DropshipSystem : SharedDropshipSystem
 
             if (xenoCount > 0)
             {
+                // Determine the victim faction to scope the announcement
+                string? victimFaction = null;
+                var navComputers = EntityQueryEnumerator<DropshipNavigationComputerComponent, TransformComponent>();
+                while (navComputers.MoveNext(out var navUid, out _, out var navXform))
+                {
+                    if (navXform.GridUid == _dropshipId &&
+                        TryComp<WhitelistedShuttleComponent>(navUid, out var ws) &&
+                        !string.IsNullOrEmpty(ws.Faction))
+                    {
+                        victimFaction = ws.Faction;
+                        break;
+                    }
+                }
+
                 _alertLevelSystem.Set(RMCAlertLevels.Red, _dropshipId, false, false);
                 _marineAnnounce.AnnounceToMarines(Loc.GetString("rmc-announcement-unidentified-lifesigns",
                     ("name", dropshipName),
                     ("count", xenoCount)),
-                    dropship.UnidentifledlifesignsSound);
+                    dropship.UnidentifledlifesignsSound,
+                    faction: victimFaction);
             }
         }
     }
@@ -169,10 +191,37 @@ public sealed class DropshipSystem : SharedDropshipSystem
             RaiseLocalEvent(ref ev);
         }
 
-        if (HasComp<AlmayerComponent>(map) && ent.Comp.Crashed)
+        // Detect hijack: HijackLandAt is set for ALL hijack flights in FlyTo
+        if (ent.Comp.HijackLandAt != null)
         {
-            var ev = new DropshipHijackLandedEvent(map);
-            RaiseLocalEvent(ref ev);
+            Log.Info($"Hijack FTL completed for {ToPrettyString(ent)}: MapUid={map}, Crashed={ent.Comp.Crashed}, IsHumanHijack={ent.Comp.IsHumanHijack}, HijackLandAt={ent.Comp.HijackLandAt}, VictimFaction={ent.Comp.VictimFaction}, HijackerFaction={ent.Comp.HijackerFaction}");
+
+            if (ent.Comp.Crashed && !ent.Comp.IsHumanHijack)
+            {
+                // Xeno hijack: dropship crash-landed on the victim's ship.
+                // The arrival map IS the ship map — no need for IsShipMap check.
+                Log.Info($"Raising DropshipHijackLandedEvent for xeno hijack on map {map}");
+                var ev = new DropshipHijackLandedEvent(map, ent.Comp.HijackerFaction, ent.Comp.VictimFaction, false);
+                RaiseLocalEvent(ref ev);
+            }
+            else if (ent.Comp.IsHumanHijack)
+            {
+                // Human hijack: dropship landed at enemy LZ (planet),
+                // need to find the victim's ship map for post-hijack effects
+                if (TryGetVictimShipMap(ent.Comp.VictimFaction, out var victimMap))
+                {
+                    Log.Info($"Raising DropshipHijackLandedEvent for human hijack on victim map {victimMap}");
+                    var ev = new DropshipHijackLandedEvent(victimMap, ent.Comp.HijackerFaction, ent.Comp.VictimFaction, true);
+                    RaiseLocalEvent(ref ev);
+                }
+                else
+                {
+                    Log.Warning($"Human hijack: could not find victim ship map for faction '{ent.Comp.VictimFaction}'");
+                }
+
+                // Clear human hijack state so subsequent normal flights don't re-trigger
+                ent.Comp.IsHumanHijack = false;
+            }
         }
 
         RelayToMountedEntities(ent, args);
@@ -344,6 +393,18 @@ public sealed class DropshipSystem : SharedDropshipSystem
     {
         base.FlyTo(computer, destination, user, hijack, startupTime, hyperspaceTime);
 
+        if (TryComp(computer.Owner, out WhitelistedShuttleComponent? whitelistComp) &&
+            IsStrictThirdPartyFaction(whitelistComp.Faction) &&
+            TryComp(destination, out DropshipDestinationComponent? destinationComp) &&
+            !IsThirdPartyDestination(destinationComp))
+        {
+            if (user != null)
+                _popup.PopupEntity("This shuttle can only land at third party dropship destinations.", computer.Owner, user.Value, PopupType.MediumCaution);
+
+            Log.Warning($"{ToPrettyString(user)} tried to launch thirdparty whitelisted shuttle {ToPrettyString(computer.Owner)} to non-thirdparty destination {ToPrettyString(destination)}");
+            return false;
+        }
+
         _hijack = hijack;
         var dropshipId = Transform(computer).GridUid;
         _dropshipId = dropshipId ?? EntityUid.Invalid;
@@ -353,10 +414,18 @@ public sealed class DropshipSystem : SharedDropshipSystem
             return false;
         }
 
-        if (HasComp<FTLComponent>(dropshipId))
+        if (TryComp(dropshipId, out FTLComponent? existingFtl))
         {
-            Log.Warning($"Tried to launch shuttle {ToPrettyString(dropshipId)} in FTL");
-            return false;
+            // During hijack, allow overriding FTL cooldown (the ship has already landed)
+            if (hijack && existingFtl.State == FTLState.Cooldown)
+            {
+                RemComp<FTLComponent>(dropshipId.Value);
+            }
+            else
+            {
+                Log.Warning($"Tried to launch shuttle {ToPrettyString(dropshipId)} in FTL");
+                return false;
+            }
         }
 
         var dropship = EnsureComp<DropshipComponent>(dropshipId.Value);
@@ -468,18 +537,77 @@ public sealed class DropshipSystem : SharedDropshipSystem
         {
             if (user != null)
             {
-                var xenoText = Loc.GetString("rmc-announcement-dropship-hijack-hive");
-                _xenoAnnounce.AnnounceSameHive(user.Value, xenoText);
-                _audio.PlayPvs(dropship.LocalHijackSound, dropshipId.Value);
+                var isHumanHijacker = TryComp<DropshipHijackerComponent>(user.Value, out var hijackerComp) && hijackerComp.IsHumanHijacker;
 
-                var marineText = Loc.GetString("rmc-announcement-dropship-hijack");
-                _marineAnnounce.AnnounceARESStaging(dropshipId.Value, marineText, dropship.MarineHijackSound, new LocId("rmc-announcement-dropship-message"));
+                // Set Crashed on server-side for xeno hijack so OnFTLCompleted and
+                // the Update crash-effects loop can reliably detect it.
+                // (The shared code in OnHijackerDestinationChosenMsg also sets this,
+                // but setting it here ensures the server-side component is correct.)
+                if (!isHumanHijacker)
+                    dropship.Crashed = true;
+
+                // Store hijack info on the dropship for use when FTL completes
+                dropship.IsHumanHijack = isHumanHijacker;
+                if (isHumanHijacker && TryComp<MarineComponent>(user.Value, out var hijackerMarine) && !string.IsNullOrEmpty(hijackerMarine.Faction))
+                    dropship.HijackerFaction = hijackerMarine.Faction;
+                else if (!isHumanHijacker)
+                    dropship.HijackerFaction = null; // xeno hijack
+
+                // Determine the victim faction (the faction that owns this dropship)
+                string? victimFaction = null;
+                var navComputers = EntityQueryEnumerator<DropshipNavigationComputerComponent, TransformComponent>();
+                while (navComputers.MoveNext(out var navUid, out _, out var navXform))
+                {
+                    if (navXform.GridUid == dropshipId.Value &&
+                        TryComp<WhitelistedShuttleComponent>(navUid, out var ws) &&
+                        !string.IsNullOrEmpty(ws.Faction))
+                    {
+                        victimFaction = ws.Faction;
+                        break;
+                    }
+                }
+
+                // Fallback: try to determine faction from the hijack destination's map
+                // (for xeno hijack, the destination is ON the victim's ship)
+                if (string.IsNullOrEmpty(victimFaction))
+                {
+                    var destXform = Transform(destination);
+                    victimFaction = TryGetFactionFromMap(destXform.MapUid);
+                }
+
+                // Fallback: try from the departure location's map
+                // (for human hijack, the dropship may have departed from the victim's ship)
+                if (string.IsNullOrEmpty(victimFaction) && dropship.DepartureLocation is { } depLoc)
+                {
+                    var depXform = Transform(depLoc);
+                    victimFaction = TryGetFactionFromMap(depXform.MapUid);
+                }
+
+                dropship.VictimFaction = victimFaction;
+
+                if (isHumanHijacker)
+                {
+                    // Human faction hijack announcements
+                    var marineText = Loc.GetString("rmc-announcement-dropship-hijack-human");
+                    _marineAnnounce.AnnounceARESStaging(dropshipId.Value, marineText, dropship.MarineHijackSound, new LocId("rmc-announcement-dropship-message"), victimFaction);
+                }
+                else
+                {
+                    // Xeno hijack announcements
+                    var xenoText = Loc.GetString("rmc-announcement-dropship-hijack-hive");
+                    _xenoAnnounce.AnnounceSameHive(user.Value, xenoText);
+                    _audio.PlayPvs(dropship.LocalHijackSound, dropshipId.Value);
+
+                    var marineText = Loc.GetString("rmc-announcement-dropship-hijack");
+                    _marineAnnounce.AnnounceARESStaging(dropshipId.Value, marineText, dropship.MarineHijackSound, new LocId("rmc-announcement-dropship-message"), victimFaction);
+                }
 
                 var generalQuartersText = Loc.GetString("rmc-announcement-general-quarters");
+                var gqFaction = victimFaction; // capture for closure
                 Timer.Spawn(TimeSpan.FromSeconds(10), () =>
                 {
                     _alertLevelSystem.Set(RMCAlertLevels.Red, dropshipId.Value, false, false);
-                    _marineAnnounce.AnnounceARESStaging(dropshipId.Value, generalQuartersText, dropship.GeneralQuartersSound, null);
+                    _marineAnnounce.AnnounceARESStaging(dropshipId.Value, generalQuartersText, dropship.GeneralQuartersSound, null, gqFaction);
                 });
             }
 
@@ -511,8 +639,43 @@ public sealed class DropshipSystem : SharedDropshipSystem
             NetEntity? flyBy = null;
             var destinations = new List<Destination>();
             var query = EntityQueryEnumerator<DropshipDestinationComponent>();
+
+            // --- Determine shuttle type ---
+            var shuttleType = GetShuttleTypeForNavConsole(computer.Owner);
+
+            string? whitelistedFaction = null;
+            if (TryComp(computer.Owner, out WhitelistedShuttleComponent? whitelistComp) && !string.IsNullOrEmpty(whitelistComp.Faction))
+            {
+                whitelistedFaction = whitelistComp.Faction.ToLowerInvariant();
+            }
+
             while (query.MoveNext(out var uid, out var comp))
             {
+                if (IsStrictThirdPartyFaction(whitelistedFaction))
+                {
+                    if (!IsThirdPartyDestination(comp))
+                        continue;
+                }
+                else if (!string.IsNullOrEmpty(comp.FactionController))
+                {
+                    if (string.IsNullOrEmpty(whitelistedFaction) || comp.FactionController.ToLowerInvariant() != whitelistedFaction)
+                        continue;
+                }
+
+                // --- Filter by destination type ---
+                if (shuttleType == DropshipDestinationComponent.DestinationType.Figher)
+                {
+                    // Fighters can select Figher and Dropship destinations
+                    if (comp.Destinationtype != DropshipDestinationComponent.DestinationType.Figher && comp.Destinationtype != DropshipDestinationComponent.DestinationType.Dropship)
+                        continue;
+                }
+                else // Dropship or default
+                {
+                    // Dropships can only select Dropship destinations
+                    if (comp.Destinationtype != DropshipDestinationComponent.DestinationType.Dropship)
+                        continue;
+                }
+
                 var netDestination = GetNetEntity(uid);
                 if (comp.Ship == grid)
                 {
@@ -555,6 +718,29 @@ public sealed class DropshipSystem : SharedDropshipSystem
         _ui.SetUiState(computer.Owner, DropshipNavigationUiKey.Key, travelState);
     }
 
+    /// <summary>
+    /// Determines the shuttle type for a navigation console. Defaults to Dropship if not set.
+    /// </summary>
+    private DropshipDestinationComponent.DestinationType GetShuttleTypeForNavConsole(EntityUid navConsole)
+    {
+        if (TryComp(navConsole, out WhitelistedShuttleComponent? whitelistComp))
+        {
+            return whitelistComp.ShuttleType;
+        }
+        // Default to Dropship if not set
+        return DropshipDestinationComponent.DestinationType.Dropship;
+    }
+
+    private static bool IsStrictThirdPartyFaction(string? faction)
+    {
+        return string.Equals(faction, "thirdparty", StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static bool IsThirdPartyDestination(DropshipDestinationComponent destination)
+    {
+        return string.Equals(destination.FactionController, "thirdparty", StringComparison.OrdinalIgnoreCase);
+    }
+
     protected override bool IsShuttle(EntityUid dropship)
     {
         return HasComp<ShuttleComponent>(dropship);
@@ -563,6 +749,29 @@ public sealed class DropshipSystem : SharedDropshipSystem
     protected override bool IsInFTL(EntityUid dropship)
     {
         return HasComp<FTLComponent>(dropship);
+    }
+
+    protected override bool TrySpendHijackIntel(EntityUid user, double cost)
+    {
+        // Resolve the user's faction team from MarineComponent
+        var team = string.Empty;
+        if (TryComp<MarineComponent>(user, out var marine) && !string.IsNullOrEmpty(marine.Faction))
+            team = marine.Faction.ToLowerInvariant();
+
+        if (string.IsNullOrEmpty(team))
+        {
+            Log.Warning($"{ToPrettyString(user)} tried to human-hijack but has no faction team");
+            return false;
+        }
+
+        if (!_intel.TrySpendIntelPoints(team, cost))
+        {
+            Log.Info($"{ToPrettyString(user)} tried to human-hijack but team '{team}' lacks {cost} intel points");
+            return false;
+        }
+
+        Log.Info($"{ToPrettyString(user)} spent {cost} intel points for team '{team}' to hijack a dropship");
+        return true;
     }
 
     protected override void RefreshUI()
@@ -789,7 +998,21 @@ public sealed class DropshipSystem : SharedDropshipSystem
                 dropship.AnnouncedCrash = true;
                 Dirty(uid, dropship);
 
-                _marineAnnounce.AnnounceToMarines(Loc.GetString("rmc-announcement-emergency-dropship-crash"), dropship.CrashWarningSound);
+                // Determine victim faction for scoped announcement
+                string? crashFaction = null;
+                var navQ = EntityQueryEnumerator<DropshipNavigationComputerComponent, TransformComponent>();
+                while (navQ.MoveNext(out var navUid, out _, out var navXform))
+                {
+                    if (navXform.GridUid == uid &&
+                        TryComp<WhitelistedShuttleComponent>(navUid, out var ws) &&
+                        !string.IsNullOrEmpty(ws.Faction))
+                    {
+                        crashFaction = ws.Faction;
+                        break;
+                    }
+                }
+
+                _marineAnnounce.AnnounceToMarines(Loc.GetString("rmc-announcement-emergency-dropship-crash"), dropship.CrashWarningSound, faction: crashFaction);
                 continue;
             }
 
@@ -815,16 +1038,93 @@ public sealed class DropshipSystem : SharedDropshipSystem
             }
         }
 
-        if (Count<PrimaryLandingZoneComponent>() > 0)
-            return;
 
-        if (_gameTicker.RoundDuration() < _lzPrimaryAutoDelay)
-            return;
+    }
 
-        foreach (var primaryLZCandidate in GetPrimaryLZCandidates())
+    /// <summary>
+    ///     Checks if any grid on the given map entity has AlmayerComponent or ShipFactionComponent.
+    ///     These components are placed on grid entities, not on the map entity itself,
+    ///     so we can't just HasComp on the map UID.
+    /// </summary>
+    private bool IsShipMap(EntityUid mapUid)
+    {
+        var almayerQuery = EntityQueryEnumerator<AlmayerComponent, TransformComponent>();
+        while (almayerQuery.MoveNext(out _, out _, out var xform))
         {
-            if (TryDesignatePrimaryLZ(default, primaryLZCandidate))
-                break;
+            if (xform.MapUid == mapUid)
+                return true;
         }
+
+        var shipQuery = EntityQueryEnumerator<ShipFactionComponent, TransformComponent>();
+        while (shipQuery.MoveNext(out _, out _, out var xform2))
+        {
+            if (xform2.MapUid == mapUid)
+                return true;
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    ///     Tries to find the map entity for a victim faction's ship.
+    ///     Used by human hijack to target the victim's ship for post-hijack effects.
+    /// </summary>
+    private bool TryGetVictimShipMap(string? victimFaction, out EntityUid mapUid)
+    {
+        mapUid = default;
+
+        // Try to find a ship matching the victim faction via ShipFactionComponent
+        if (!string.IsNullOrEmpty(victimFaction))
+        {
+            var shipQuery = EntityQueryEnumerator<ShipFactionComponent, TransformComponent>();
+            while (shipQuery.MoveNext(out _, out var ship, out var xform))
+            {
+                if (string.Equals(ship.Faction, victimFaction, StringComparison.OrdinalIgnoreCase) &&
+                    xform.MapUid is { } foundMap)
+                {
+                    mapUid = foundMap;
+                    return true;
+                }
+            }
+        }
+
+        // Fall back to Almayer (default marine ship)
+        var almayerQuery = EntityQueryEnumerator<AlmayerComponent, TransformComponent>();
+        while (almayerQuery.MoveNext(out _, out _, out var almayerXform))
+        {
+            if (almayerXform.MapUid is { } foundMap)
+            {
+                mapUid = foundMap;
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    ///     Tries to determine a faction string from entities on the given map.
+    ///     Checks ShipFactionComponent, then MarineControlComputerComponent.
+    /// </summary>
+    private string? TryGetFactionFromMap(EntityUid? mapUid)
+    {
+        if (mapUid is not { } map)
+            return null;
+
+        var shipFactions = EntityQueryEnumerator<ShipFactionComponent, TransformComponent>();
+        while (shipFactions.MoveNext(out _, out var shipFaction, out var sfXform))
+        {
+            if (sfXform.MapUid == map && !string.IsNullOrEmpty(shipFaction.Faction))
+                return shipFaction.Faction;
+        }
+
+        var controlComputers = EntityQueryEnumerator<MarineControlComputerComponent, TransformComponent>();
+        while (controlComputers.MoveNext(out _, out var cc, out var ccXform))
+        {
+            if (ccXform.MapUid == map && !string.IsNullOrEmpty(cc.Faction))
+                return cc.Faction;
+        }
+
+        return null;
     }
 }

@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RMCSPPPlatCoPVE
   name: rmc-job-name-spp-overwatch
-  description: rmc-job-description-spp-overwatch
+  description: rmc-ghost-role-information-spp-pve-description
   playTimeTracker: RMCJobSPPPlatCoPVE
   requirements:
   - !type:RoleTimeRequirement
@@ -23,11 +23,39 @@
       factions:
       - SPP
     - type: Skills
-      preset: RMCSkillPresetPVEPlatoonCommander
+      skills:
+        RMCSkillFirearms: 2
+        RMCSkillPolice: 2
+        RMCSkillFireman: 2
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 2
+        RMCSkillMedical: 2
+        RMCSkillSurgery: 1
+        RMCSkillCqc: 1
+        RMCSkillLeadership: 3
+        RMCSkillOverwatch: 1
+        RMCSkillEndurance: 1
+        RMCSkillJtac: 4
+        RMCSkillExecution: 1
+        RMCSkillPilot: 1
+        RMCSkillPowerLoader: 1
+        RMCSkillSmartGun: 1
     - type: SquadArmorWearer
     - type: JobPrefix
       prefix: rmc-job-prefix-spp-overwatch
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: RMCPointing
     - type: RMCTrackable
     - type: DemoSpecWhitelist
@@ -53,7 +81,7 @@
   id: RMCSPPPlatCoPVEGear
   equipment:
     id: RMCIDSPP
-    ears: RMCHeadsetSPP
+
     jumpsuit: CMJumpsuitSPPOfficer
     outerClothing: RMCCoatSPP
     head: CMHeadCapSPPBeret

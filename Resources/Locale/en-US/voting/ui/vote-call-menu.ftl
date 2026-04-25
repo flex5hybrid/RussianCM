@@ -2,6 +2,7 @@ ui-vote-type-restart = Restart round
 ui-vote-type-gamemode = Next gamemode
 ui-vote-type-map = Next map
 ui-vote-type-votekick = Votekick
+ui-vote-type-platoon = Platoon
 
 # Votekick reasons
 ui-vote-votekick-type-raiding = Raiding

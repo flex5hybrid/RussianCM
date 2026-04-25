@@ -120,8 +120,8 @@
 - type: entity
   parent: RMCMortarShellBase
   id: RMCMortarShellHE
-  name: 80mm high explosive mortar shell
-  description: An 80mm mortar shell, loaded with a high explosive charge.
+  name: M889 HE mortar shell
+  description: An 80mm mortar shell loaded with an high explosive charge.
   components:
   - type: Item
     heldPrefix: he
@@ -131,8 +131,29 @@
   - type: Explosive
     explosionType: RMCMortar
     maxIntensity: 30.1 # max 150 brute, 150 burn
-    intensitySlope: 5
-    totalIntensity: 800
+    intensitySlope: 2
+    totalIntensity: 1000
+    canCreateVacuum: false
+  - type: CMExplosionEffect
+  - type: RMCScorchEffect
+  - type: MortarShell
+
+- type: entity
+  parent: RMCMortarShellBase
+  id: AU14MortarShellHEATMP
+  name: M971 HEAT-MP mortar shell
+  description: An 80mm mortar shell loaded with an high explosive anti tank multi purpose charge. It has a smaller blast radius than an HE round, but a devastating effect.
+  components:
+  - type: Item
+    heldPrefix: heat
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/mortar.rsi
+    state: mortar_ammo_heat
+  - type: Explosive
+    explosionType: RMCMortar
+    maxIntensity: 300
+    intensitySlope: 35
+    totalIntensity: 1000
     canCreateVacuum: false
   - type: CMExplosionEffect
   - type: RMCScorchEffect
@@ -141,8 +162,8 @@
 - type: entity
   parent: RMCMortarShellBase
   id: RMCMortarShellIncendiary
-  name: 80mm incendiary mortar shell
-  description: An 80mm mortar shell, loaded with a Type B napalm charge. Perfect for long-range area denial.
+  name: M902 HE-INC mortar shell
+  description: An 80mm mortar shell loaded with an high explosive incendiary charge. Perfect for long-range area denial.
   components:
   - type: Item
     heldPrefix: inc
@@ -151,21 +172,22 @@
     state: mortar_ammo_inc
   - type: Explosive
     explosionType: RMCMortar
-    maxIntensity: 0
-    intensitySlope: 0
-    totalIntensity: 0
+    maxIntensity: 30.1
+    intensitySlope: 2
+    totalIntensity: 100
     canCreateVacuum: false
+  - type: CMExplosionEffect
   - type: RMCScorchEffect
   - type: MortarShell
   - type: TileFireOnTrigger
-    spawn: RMCTileFireGreen
+    spawn: RMCTileFire
     range: 5
 
 - type: entity
   parent: RMCMortarShellBase
   id: RMCMortarShellFlare
-  name: 80mm flare/camera mortar shell
-  description: An 80mm mortar shell, loaded with an illumination flare / camera combo, attached to a parachute.
+  name: M853 ILLUM-OBS mortar shell
+  description: An 80mm mortar shell, loaded with an illumination flare and observation camera, attached to a parachute.
   components:
   - type: Item
     heldPrefix: flr
@@ -193,11 +215,11 @@
         id: turn_on
         maxDuration: 5.0
         startValue: 2.5
-        endValue: 7.0
+        endValue: 20.0
       - !type:FadeBehaviour
         id: fade_out
         maxDuration: 30
-        startValue: 7.0
+        startValue: 20.0
         endValue: 3.0
   - type: Appearance
   - type: Transform
@@ -206,9 +228,86 @@
     bodyType: Static
     canCollide: false
   - type: PointLight
+    color: "#E3DAC9"
     enabled: false
     netsync: false
-    radius: 5
+    radius: 30
+  - type: TimedDespawn
+    lifetime: 180
+
+- type: entity
+  id: AU14MortarFlareRed
+  name: red illumination flare
+  description: It's really bright, and unreachable.
+  components:
+  - type: ExpendableLight
+    startsActivated: true
+    glowDuration: 150
+    fadeOutDuration: 30
+    turnOnBehaviourID: turn_on
+    fadeOutBehaviourID: fade_out
+    iconStateSpent: overlay
+  - type: LightBehaviour
+    behaviours:
+    - !type:FadeBehaviour
+      id: turn_on
+      maxDuration: 5.0
+      startValue: 2.5
+      endValue: 20.0
+    - !type:FadeBehaviour
+      id: fade_out
+      maxDuration: 30
+      startValue: 20.0
+      endValue: 3.0
+  - type: Appearance
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+    canCollide: false
+  - type: PointLight
+    color: "#FF0000"
+    enabled: false
+    netsync: false
+    radius: 30
+  - type: TimedDespawn
+    lifetime: 180
+
+- type: entity
+  id: AU14MortarFlareGreen
+  name: green illumination flare
+  description: It's really bright, and unreachable.
+  components:
+  - type: ExpendableLight
+    startsActivated: true
+    glowDuration: 150
+    fadeOutDuration: 30
+    turnOnBehaviourID: turn_on
+    fadeOutBehaviourID: fade_out
+    iconStateSpent: overlay
+  - type: LightBehaviour
+    behaviours:
+    - !type:FadeBehaviour
+      id: turn_on
+      maxDuration: 5.0
+      startValue: 2.5
+      endValue: 20.0
+    - !type:FadeBehaviour
+      id: fade_out
+      maxDuration: 30
+      startValue: 20.0
+      endValue: 3.0
+  - type: Appearance
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+    canCollide: false
+  - type: PointLight
+    color: "#09C51E"
+    enabled: false
+    netsync: false
+    radius: 30
   - type: TimedDespawn
     lifetime: 180
 

@@ -45,7 +45,6 @@
     mask: RMCMaskSWAT
     head: RMCArmorHelmetM10CMBVisorSWAT
     back: RMCSatchelSecuritySurvivorFillRiotControlOfficer
-    eyes: RMCGlassesSecuritySwat
 
 
 - type: entity

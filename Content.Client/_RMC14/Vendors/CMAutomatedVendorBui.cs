@@ -231,9 +231,23 @@ public sealed class CMAutomatedVendorBui : BoundUserInterface
 
         var anyEntryWithPoints = false;
         var user = EntMan.GetComponentOrNull<CMVendorUserComponent>(_player.LocalEntity);
-        var userPoints = vendor.PointsType == null
-            ? user?.Points ?? 0
-            : user?.ExtraPoints?.GetValueOrDefault(vendor.PointsType) ?? 0;
+
+        // For objective-point vendors, the balance comes from the faction win-point pool,
+        // not the individual player's points.
+        int userPoints;
+        string pointsLabel;
+        if (vendor.UseObjectivePoints)
+        {
+            userPoints = vendor.CachedFactionWinPoints;
+            pointsLabel = $"{vendor.Faction.ToUpperInvariant()} Win Points: {userPoints}";
+        }
+        else
+        {
+            userPoints = vendor.PointsType == null
+                ? user?.Points ?? 0
+                : user?.ExtraPoints?.GetValueOrDefault(vendor.PointsType) ?? 0;
+            pointsLabel = $"Points Remaining: {userPoints}";
+        }
         for (var sectionIndex = 0; sectionIndex < vendor.Sections.Count; sectionIndex++)
         {
             var section = vendor.Sections[sectionIndex];
@@ -274,10 +288,12 @@ public sealed class CMAutomatedVendorBui : BoundUserInterface
                     anyEntryWithPoints = true;
                     uiEntry.Amount.Text = $"{entry.Points}P";
 
-                    if (user == null || userPoints < entry.Points)
-                    {
+                    var notEnoughPoints = vendor.UseObjectivePoints
+                        ? userPoints < entry.Points
+                        : user == null || userPoints < entry.Points;
+
+                    if (notEnoughPoints)
                         disabled = true;
-                    }
                 }
                 else
                 {
@@ -298,7 +314,7 @@ public sealed class CMAutomatedVendorBui : BoundUserInterface
             }
         }
 
-        _window.PointsLabel.Text = anyEntryWithPoints ? $"Points Remaining: {userPoints}" : string.Empty;
+        _window.PointsLabel.Text = anyEntryWithPoints ? pointsLabel : string.Empty;
 
         if (!EntMan.TryGetComponent(Owner, out CMSolutionRefillerComponent? refiller))
         {

@@ -14,6 +14,9 @@ public sealed partial class LobbyCharacterPreviewPanel : Control
     [Dependency] private readonly IEntityManager _entManager = default!;
 
     public Button CharacterSetupButton => CharacterSetup;
+    public Button PrevCharacterButton => PrevCharButton;
+    public Button NextCharacterButton => NextCharButton;
+    public Button IgnoreAllegianceToggle => IgnoreAllegianceButton;
 
     private EntityUid? _previewDummy;
 

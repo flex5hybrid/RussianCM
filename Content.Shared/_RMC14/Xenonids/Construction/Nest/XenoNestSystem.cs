@@ -89,6 +89,7 @@ public sealed class XenoNestSystem : EntitySystem
 
         SubscribeLocalEvent<XenoNestComponent, ComponentRemove>(OnNestRemove);
         SubscribeLocalEvent<XenoNestComponent, EntityTerminatingEvent>(OnNestTerminating);
+        SubscribeLocalEvent<XenoNestComponent, InteractHandEvent>(OnNestInteractHand);
 
         SubscribeLocalEvent<XenoNestableComponent, BeforeRangedInteractEvent>(OnNestableBeforeRangedInteract);
         SubscribeLocalEvent<XenoNestableComponent, ShouldHandleVirtualItemInteractEvent>(OnNestableShouldHandle);
@@ -108,6 +109,9 @@ public sealed class XenoNestSystem : EntitySystem
         SubscribeLocalEvent<XenoNestedComponent, IsEquippingAttemptEvent>(OnNestedCancel);
         SubscribeLocalEvent<XenoNestedComponent, IsUnequippingAttemptEvent>(OnNestedCancel);
         SubscribeLocalEvent<XenoNestedComponent, GetInfectedIncubationMultiplierEvent>(OnInNestGetInfectedIncubationMultiplier);
+        SubscribeLocalEvent<XenoNestedComponent, MoveInputEvent>(OnNestedMoveInput);
+        SubscribeLocalEvent<XenoNestedComponent, XenoNestBreakoutDoAfterEvent>(OnNestedBreakoutDoAfter);
+        SubscribeLocalEvent<XenoNestedComponent, DoAfterAttemptEvent<XenoNestBreakoutDoAfterEvent>>(OnNestedBreakoutDoAfterAttempt);
     }
 
     private void OnXenoGetUsedEntity(Entity<XenoComponent> ent, ref GetUsedEntityEvent args)
@@ -142,6 +146,47 @@ public sealed class XenoNestSystem : EntitySystem
         DetachNested(ent, ent.Comp.Nested);
     }
 
+    private void OnNestInteractHand(Entity<XenoNestComponent> ent, ref InteractHandEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (!HasComp<XenoComponent>(args.User))
+            return;
+
+        if (ent.Comp.Nested is not { } nested ||
+            !TryComp(nested, out XenoNestedComponent? nestedComp) ||
+            nestedComp.BreakoutDoAfter is not { } doAfterId ||
+            !_doAfter.IsRunning(doAfterId))
+        {
+            return;
+        }
+
+        args.Handled = true;
+
+        if (_net.IsClient)
+            return;
+
+        _doAfter.Cancel(doAfterId);
+        nestedComp.BreakoutDoAfter = null;
+        Dirty(nested, nestedComp);
+
+        _popup.PopupEntity(Loc.GetString("cm-xeno-nest-resecure-self", ("target", nested)), args.User, args.User);
+
+        foreach (var session in Filter.PvsExcept(args.User).Recipients)
+        {
+            if (session.AttachedEntity is not { } recipient)
+                continue;
+
+            if (recipient == nested)
+                _popup.PopupEntity(Loc.GetString("cm-xeno-nest-resecure-target", ("user", args.User)), args.User, recipient, PopupType.MediumCaution);
+            else
+                _popup.PopupEntity(Loc.GetString("cm-xeno-nest-resecure-observer", ("user", args.User), ("target", nested)), args.User, recipient);
+        }
+
+        _adminLog.Add(LogType.RMCXenoNest, $"{ToPrettyString(args.User):user} re-secured {ToPrettyString(nested):victim} in nest {ToPrettyString(ent):nest}");
+    }
+
     private void OnNestableBeforeRangedInteract(Entity<XenoNestableComponent> ent, ref BeforeRangedInteractEvent args)
     {
         if (!args.CanReach || !TryComp(args.Target, out XenoNestSurfaceComponent? surface))
@@ -167,6 +212,12 @@ public sealed class XenoNestSystem : EntitySystem
 
     private void OnNestedRemove(Entity<XenoNestedComponent> ent, ref ComponentRemove args)
     {
+        if (ent.Comp.BreakoutDoAfter is { } breakoutId)
+        {
+            _doAfter.Cancel(breakoutId);
+            ent.Comp.BreakoutDoAfter = null;
+        }
+
         DetachNested(null, ent);
         _actionBlocker.UpdateCanMove(ent);
 
@@ -331,6 +382,87 @@ public sealed class XenoNestSystem : EntitySystem
     private void OnNestedCancel<T>(Entity<XenoNestedComponent> ent, ref T args) where T : CancellableEntityEventArgs
     {
         args.Cancel();
+    }
+
+    private void OnNestedMoveInput(Entity<XenoNestedComponent> ent, ref MoveInputEvent args)
+    {
+        if (!args.HasDirectionalMovement)
+            return;
+
+        if (ent.Comp.Detached)
+            return;
+
+        if (_mobState.IsIncapacitated(ent))
+            return;
+
+        if (_net.IsClient)
+            return;
+
+        if (ent.Comp.BreakoutDoAfter is { } existing && _doAfter.IsRunning(existing))
+            return;
+
+        var ev = new XenoNestBreakoutDoAfterEvent();
+        var doAfter = new DoAfterArgs(EntityManager, ent, ent.Comp.BreakoutTime, ev, ent)
+        {
+            NeedHand = false,
+            BreakOnMove = false,
+            BreakOnDamage = false,
+            BreakOnRest = false,
+            RequireCanInteract = false,
+            CancelDuplicate = true,
+            BlockDuplicate = true,
+            DuplicateCondition = DuplicateConditions.SameEvent,
+            AttemptFrequency = AttemptFrequency.EveryTick,
+        };
+
+        if (!_doAfter.TryStartDoAfter(doAfter, out var id))
+            return;
+
+        ent.Comp.BreakoutDoAfter = id;
+        ent.Comp.NextStruggleMessage = _timing.CurTime + ent.Comp.StruggleMessageInterval;
+        Dirty(ent);
+
+        _popup.PopupEntity(Loc.GetString("cm-xeno-nest-break-out-start-self"), ent, ent, PopupType.MediumCaution);
+
+        foreach (var session in Filter.PvsExcept(ent).Recipients)
+        {
+            if (session.AttachedEntity is not { } recipient)
+                continue;
+
+            _popup.PopupEntity(Loc.GetString("cm-xeno-nest-break-out-start-others", ("user", ent.Owner)), ent, recipient);
+        }
+    }
+
+    private void OnNestedBreakoutDoAfterAttempt(Entity<XenoNestedComponent> ent, ref DoAfterAttemptEvent<XenoNestBreakoutDoAfterEvent> args)
+    {
+        if (ent.Comp.Detached || _mobState.IsIncapacitated(ent))
+            args.Cancel();
+    }
+
+    private void OnNestedBreakoutDoAfter(Entity<XenoNestedComponent> ent, ref XenoNestBreakoutDoAfterEvent args)
+    {
+        ent.Comp.BreakoutDoAfter = null;
+
+        if (args.Cancelled || args.Handled)
+            return;
+
+        args.Handled = true;
+
+        var nest = ent.Comp.Nest;
+
+        _popup.PopupEntity(Loc.GetString("cm-xeno-nest-break-out-success-self"), ent, ent, PopupType.Medium);
+
+        foreach (var session in Filter.PvsExcept(ent).Recipients)
+        {
+            if (session.AttachedEntity is not { } recipient)
+                continue;
+
+            _popup.PopupEntity(Loc.GetString("cm-xeno-nest-break-out-success-others", ("user", ent.Owner)), ent, recipient, PopupType.MediumCaution);
+        }
+
+        _adminLog.Add(LogType.RMCXenoNest, $"{ToPrettyString(ent):victim} broke free of nest {ToPrettyString(nest):nest}");
+
+        DetachNested(nest, ent);
     }
 
     private void OnInNestGetInfectedIncubationMultiplier(Entity<XenoNestedComponent> ent, ref GetInfectedIncubationMultiplierEvent args)
@@ -653,7 +785,31 @@ public sealed class XenoNestSystem : EntitySystem
     public override void Update(float frameTime)
     {
         if (_net.IsServer)
+        {
+            var now = _timing.CurTime;
+            var query = EntityQueryEnumerator<XenoNestedComponent>();
+            while (query.MoveNext(out var uid, out var nestedComp))
+            {
+                if (nestedComp.BreakoutDoAfter is not { } doAfterId || !_doAfter.IsRunning(doAfterId))
+                    continue;
+
+                if (now < nestedComp.NextStruggleMessage)
+                    continue;
+
+                nestedComp.NextStruggleMessage = now + nestedComp.StruggleMessageInterval;
+                Dirty(uid, nestedComp);
+
+                foreach (var session in Filter.PvsExcept(uid).Recipients)
+                {
+                    if (session.AttachedEntity is not { } recipient)
+                        continue;
+
+                    _popup.PopupEntity(Loc.GetString("cm-xeno-nest-break-out-struggle-others", ("user", uid)), uid, recipient);
+                }
+            }
+
             return;
+        }
 
         if (_player.LocalEntity is not { } ent)
             return;

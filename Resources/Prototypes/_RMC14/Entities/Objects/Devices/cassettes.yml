@@ -38,7 +38,7 @@
   name: custom cassette
   components:
   - type: Sprite
-    state: cassette_rising_sun
+    state: cassette_gray
   - type: Item
     size: Small
   - type: CassetteTape

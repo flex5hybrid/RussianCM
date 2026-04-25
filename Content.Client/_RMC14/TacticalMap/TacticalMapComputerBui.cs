@@ -22,12 +22,7 @@ public sealed class TacticalMapComputerBui(EntityUid owner, Enum uiKey) : RMCPop
     {
         base.Open();
 
-        EntityUid? mapEntity = null;
         var computer = EntMan.GetComponentOrNull<TacticalMapComputerComponent>(Owner);
-        if (computer?.Map != null)
-        {
-            mapEntity = computer.Map.Value;
-        }
 
         Window = this.CreatePopOutableWindow<TacticalMapWindow>();
 
@@ -134,13 +129,53 @@ public sealed class TacticalMapComputerBui(EntityUid owner, Enum uiKey) : RMCPop
 
         var lines = EntMan.GetComponentOrNull<TacticalMapLinesComponent>(Owner);
         if (lines != null)
-            Window.Wrapper.Map.Lines.AddRange(lines.MarineLines);
+        {
+            // Determine faction view for this computer
+            var computerComp = EntMan.GetComponentOrNull<TacticalMapComputerComponent>(Owner);
+            var faction = computerComp?.Faction?.ToUpperInvariant();
+            bool WantsMarines() => string.IsNullOrEmpty(faction) || faction == "MARINES" || faction == "UNMC";
+            bool WantsXenos() => string.IsNullOrEmpty(faction) || faction == "XENONIDS" || faction == "XENONID";
+            bool WantsOpfor() => string.IsNullOrEmpty(faction) || faction == "OPFOR";
+            bool WantsGovfor() => string.IsNullOrEmpty(faction) || faction == "GOVFOR";
+            bool WantsClf() => string.IsNullOrEmpty(faction) || faction == "CLF";
+
+            if (WantsMarines())
+                Window.Wrapper.Map.Lines.AddRange(lines.MarineLines);
+            if (WantsXenos())
+                Window.Wrapper.Map.Lines.AddRange(lines.XenoLines);
+            if (WantsOpfor())
+                Window.Wrapper.Map.Lines.AddRange(lines.OpforLines);
+            if (WantsGovfor())
+                Window.Wrapper.Map.Lines.AddRange(lines.GovforLines);
+            if (WantsClf())
+                Window.Wrapper.Map.Lines.AddRange(lines.ClfLines);
+        }
 
         if (_refreshed)
             return;
 
+        // Canvas initial content
         if (lines != null)
-            Window.Wrapper.Canvas.Lines.AddRange(lines.MarineLines);
+        {
+            var computerComp = EntMan.GetComponentOrNull<TacticalMapComputerComponent>(Owner);
+            var faction = computerComp?.Faction?.ToUpperInvariant();
+            bool WantsMarines() => string.IsNullOrEmpty(faction) || faction == "MARINES" || faction == "UNMC";
+            bool WantsXenos() => string.IsNullOrEmpty(faction) || faction == "XENONIDS" || faction == "XENONID";
+            bool WantsOpfor() => string.IsNullOrEmpty(faction) || faction == "OPFOR";
+            bool WantsGovfor() => string.IsNullOrEmpty(faction) || faction == "GOVFOR";
+            bool WantsClf() => string.IsNullOrEmpty(faction) || faction == "CLF";
+
+            if (WantsMarines())
+                Window.Wrapper.Canvas.Lines.AddRange(lines.MarineLines);
+            if (WantsXenos())
+                Window.Wrapper.Canvas.Lines.AddRange(lines.XenoLines);
+            if (WantsOpfor())
+                Window.Wrapper.Canvas.Lines.AddRange(lines.OpforLines);
+            if (WantsGovfor())
+                Window.Wrapper.Canvas.Lines.AddRange(lines.GovforLines);
+            if (WantsClf())
+                Window.Wrapper.Canvas.Lines.AddRange(lines.ClfLines);
+        }
 
         _refreshed = true;
     }
@@ -184,9 +219,55 @@ public sealed class TacticalMapComputerBui(EntityUid owner, Enum uiKey) : RMCPop
         var labels = EntMan.GetComponentOrNull<TacticalMapLabelsComponent>(Owner);
         if (labels != null)
         {
-            Window.Wrapper.Map.UpdateTacticalLabels(labels.MarineLabels);
+            // Merge labels according to computer faction
+            var computerComp = EntMan.GetComponentOrNull<TacticalMapComputerComponent>(Owner);
+            var faction = computerComp?.Faction?.ToUpperInvariant();
+            bool WantsMarines() => string.IsNullOrEmpty(faction) || faction == "MARINES" || faction == "UNMC";
+            bool WantsXenos() => string.IsNullOrEmpty(faction) || faction == "XENONIDS" || faction == "XENONID";
+            bool WantsOpfor() => string.IsNullOrEmpty(faction) || faction == "OPFOR";
+            bool WantsGovfor() => string.IsNullOrEmpty(faction) || faction == "GOVFOR";
+            bool WantsClf() => string.IsNullOrEmpty(faction) || faction == "CLF";
+
+            var allLabels = new Dictionary<Vector2i, string>();
+            if (WantsMarines())
+            {
+                foreach (var kv in labels.MarineLabels)
+                {
+                    allLabels[kv.Key] = kv.Value;
+                }
+            }
+            if (WantsXenos())
+            {
+                foreach (var kv in labels.XenoLabels)
+                {
+                    allLabels[kv.Key] = kv.Value;
+                }
+            }
+            if (WantsOpfor())
+            {
+                foreach (var kv in labels.OpforLabels)
+                {
+                    allLabels[kv.Key] = kv.Value;
+                }
+            }
+            if (WantsGovfor())
+            {
+                foreach (var kv in labels.GovforLabels)
+                {
+                    allLabels[kv.Key] = kv.Value;
+                }
+            }
+            if (WantsClf())
+            {
+                foreach (var kv in labels.ClfLabels)
+                {
+                    allLabels[kv.Key] = kv.Value;
+                }
+            }
+
+            Window.Wrapper.Map.UpdateTacticalLabels(allLabels);
             if (!_refreshed)
-                Window.Wrapper.Canvas.UpdateTacticalLabels(labels.MarineLabels);
+                Window.Wrapper.Canvas.UpdateTacticalLabels(allLabels);
         }
         else
         {

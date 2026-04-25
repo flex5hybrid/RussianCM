@@ -1,0 +1,73 @@
+﻿- type: npcFaction
+  id: GOVFOR
+  hostile:
+  - RMCXeno
+  #- CLF
+  - AUGoo
+  - OPFOR
+  - CMUAPE
+
+- type: npcFaction
+  id: AUGoo
+  hostile:
+  - GOVFOR
+  - AUUpp
+  - AUWeYu
+  - AUColonist
+  - CLF
+  - CMUAPE
+
+- type: npcFaction
+  id: AUUpp
+  hostile:
+  - RMCXeno
+  - AUGoo
+  - CMUAPE
+
+- type: npcFaction
+  id: CLF
+  hostile:
+  - GOVFOR
+  - RMCXeno
+#hostile to govofr but not vice versa so turrets cant detect
+- type: npcFaction
+  id: AUWeYu
+  hostile:
+  - RMCXeno
+  - AUGoo
+  - CMUAPE
+
+- type: npcFaction
+  id: ColonySynth
+
+
+
+- type: npcFaction
+  id: AUColonist
+  hostile:
+  - RMCXeno
+  - AUGoo
+  - CMUAPE
+
+- type: npcFaction
+  id: AUBureau
+  hostile:
+  - RMCXeno
+  - AUGoo
+  - CMUAPE
+
+- type: npcFaction
+  id: OPFOR
+  hostile:
+  - RMCXeno
+  - CLF
+  - GOVFOR
+  - AUGoo
+  - CMUAPE
+
+
+- type: npcFaction
+  id: THREAT
+  hostile:
+   - GOVFOR
+

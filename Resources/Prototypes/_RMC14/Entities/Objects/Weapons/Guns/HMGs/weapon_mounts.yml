@@ -79,8 +79,8 @@
 - type: entity
   parent: RMCBaseWeaponMount
   id: RMCML66DNestSandbag
-  name: scoped ML66D heavy machine gun nest
-  description: A scoped ML66D heavy machine gun mounted upon a small reinforced post with sandbags to provide a small machine gun nest for all your defensive needs.
+  name: scoped M56D heavy machine gun nest
+  description: A scoped M56D heavy machine gun mounted upon a small reinforced post with sandbags to provide a small machine gun nest for all your defensive needs.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/HMGs/ML66D/mount.rsi
@@ -102,8 +102,8 @@
 - type: entity
   parent: RMCML66DNestSandbag
   id: RMCML66DNestMetal
-  name: scoped ML66D heavy machine gun
-  description: A scoped ML66D heavy machine gun mounted behind a metal shield.
+  name: scoped M56D heavy machine gun
+  description: A scoped M56D heavy machine gun mounted behind a metal shield.
   components:
   - type: Sprite
     state: towergun_folding
@@ -111,8 +111,8 @@
 - type: entity
   parent: [RMCBaseWeaponMount, BaseDeployFoldable, BaseItem]
   id: RMCML66DMount
-  name: ML66D mount
-  description: A foldable mount for the ML66D, provides stability to the ML66D.
+  name: M56D mount
+  description: A foldable mount for the M56D, provides stability to the M56D.
   suffix: Folded
   components:
   - type: Item
@@ -177,7 +177,7 @@
 - type: entity
   parent: RMCML66DMount
   id: RMCML66DMountAssembled
-  name: ML66D heavy machine gun
+  name: M56D heavy machine gun
   description: A deployable, heavy machine gun. It fires specialized tungsten rounds for increased armor penetration.
   suffix: Folded, Assembled
   components:
@@ -269,10 +269,10 @@
     isWeaponSecured: true
     isWeaponLocked: true
     canRotateWithoutTool: true
-    mountOnDeploy: true
+    mountOnDeploy: false
     mountExclusionAreaSize: 0
     barricadeExclusionAreaSize: 2
-    assembleDelay: 0.5
+    assembleDelay: 3
     undeploySound: null
     acidableWhileUndeployed: true
   - type: Tag

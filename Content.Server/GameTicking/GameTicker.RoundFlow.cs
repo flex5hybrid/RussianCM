@@ -1,13 +1,18 @@
 using System.Linq;
 using System.Numerics;
 using Content.Server.Announcements;
+using Content.Server.AU14.Threats;
+using Content.Server.RoundEnd;
 using Content.Server.Discord;
 using Content.Server.GameTicking.Events;
 using Content.Server.Ghost;
 using Content.Server.Maps;
 using Content.Server.Roles;
+using Content.Shared._RMC14.Power;
 using Content.Shared._RMC14.CCVar;
 using Content.Shared._RMC14.Prototypes;
+using Content.Shared._RMC14.TacticalMap;
+using Content.Shared.AU14;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
@@ -34,6 +39,8 @@ namespace Content.Server.GameTicking
         [Dependency] private readonly DiscordWebhook _discord = default!;
         [Dependency] private readonly RoleSystem _role = default!;
         [Dependency] private readonly ITaskManager _taskManager = default!;
+        [Dependency] private readonly SharedRMCPowerSystem _power = default!;
+        [Dependency] private readonly RoundEndSystem _roundEndSystem = default!;
 
         private static readonly Counter RoundNumberMetric = Metrics.CreateCounter(
             "ss14_round_number",
@@ -99,33 +106,47 @@ namespace Content.Server.GameTicking
 
             var maps = new List<GameMapPrototype>();
 
-            // the map might have been force-set by something
-            // (i.e. votemap or forcemap)
-            var mainStationMap = _gameMapManager.GetSelectedMap();
-            if (mainStationMap == null)
+            // Check for voted planet from AuRoundSystem
+            var auRoundSystem = EntitySystem.Get<Content.Server.AU14.Round.AuRoundSystem>();
+            var selectedPlanet = auRoundSystem?.GetSelectedPlanet();
+            if (selectedPlanet != null)
             {
-                // otherwise set the map using the config rules
-                _gameMapManager.SelectMapByConfigRules();
-                mainStationMap = _gameMapManager.GetSelectedMap();
-            }
-
-            // Small chance the above could return no map.
-            // ideally SelectMapByConfigRules will always find a valid map
-            if (mainStationMap != null)
-            {
-                maps.Add(mainStationMap);
+                // Use the voted planet's map as the primary map
+                if (_prototypeManager.TryIndex<GameMapPrototype>(selectedPlanet.MapId, out var planetMapProto))
+                {
+                    maps.Add(planetMapProto);
+                }
             }
             else
             {
-                throw new Exception("invalid config; couldn't select a valid station map!");
+                // the map might have been force-set by something
+                // (i.e. votemap or forcemap)
+                var mainStationMap = _gameMapManager.GetSelectedMap();
+                if (mainStationMap == null)
+                {
+                    // otherwise set the map using the config rules
+                    _gameMapManager.SelectMapByConfigRules();
+                    mainStationMap = _gameMapManager.GetSelectedMap();
+                }
+
+                // Small chance the above could return no map.
+                // ideally SelectMapByConfigRules will always find a valid map
+                if (mainStationMap != null)
+                {
+                    maps.Add(mainStationMap);
+                }
+                else
+                {
+                    throw new Exception("invalid config; couldn't select a valid station map!");
+                }
             }
 
             if (CurrentPreset?.MapPool != null &&
                 _prototypeManager.TryIndex<GameMapPoolPrototype>(CurrentPreset.MapPool, out var pool) &&
-                !pool.Maps.Contains(mainStationMap.ID))
+                maps.Count > 0 && !pool.Maps.Contains(maps[0].ID))
             {
                 var msg = Loc.GetString("game-ticker-start-round-invalid-map",
-                    ("map", mainStationMap.MapName),
+                    ("map", maps[0].MapName),
                     ("mode", Loc.GetString(CurrentPreset.ModeTitle)));
                 Log.Debug(msg);
                 SendServerMessage(msg);
@@ -143,11 +164,63 @@ namespace Content.Server.GameTicking
 
             for (var i = 0; i < maps.Count; i++)
             {
-                LoadGameMap(maps[i], out var mapId);
+                var loadedEntities = LoadGameMap(maps[i], out var mapId);
                 DebugTools.Assert(!_map.IsInitialized(mapId));
 
                 if (i == 0)
+                {
                     DefaultMap = mapId;
+                    // If this is a planet map, add RMCPlanetComponent and TacticalMapComponent to the map entity (not just the grid), like CMDistress
+                    if (selectedPlanet != null)
+                    {
+                        // Get the map entity from the MapId
+                        var mapEntity = _mapManager.GetMapEntityId(mapId);
+                        if (!EntityManager.HasComponent<Content.Shared._RMC14.Rules.RMCPlanetComponent>(mapEntity))
+                            EntityManager.AddComponent<Content.Shared._RMC14.Rules.RMCPlanetComponent>(mapEntity);
+                        if (!EntityManager.HasComponent<TacticalMapComponent>((EntityUid)mapEntity))
+                            EntityManager.AddComponent<TacticalMapComponent>(mapEntity);
+                    }
+                }
+            }
+
+            // --- AU14 SHIP SPAWNING LOGIC ---
+            // After planet map is loaded, spawn selected ships for govfor and opfor
+            if (auRoundSystem != null)
+            {
+                var govforShipId = auRoundSystem.GetSelectedGovforShip();
+                if (!string.IsNullOrEmpty(govforShipId) && _prototypeManager.TryIndex<GameMapPrototype>(govforShipId, out var govforShipProto))
+                {
+                    var govforGrids = LoadGameMap(govforShipProto, out var _, new DeserializationOptions { InitializeMaps = true });
+                    foreach (var grid in govforGrids)
+                    {
+                        if (!EntityManager.HasComponent<ShipFactionComponent>(grid))
+                        {
+                            var comp = EntityManager.AddComponent<ShipFactionComponent>(grid);
+                            comp.Faction = "govfor";
+                        }
+                        if (!EntityManager.HasComponent<Content.Server.Station.Components.BecomesStationComponent>(grid))
+                        {
+                            EntityManager.AddComponent<Content.Server.Station.Components.BecomesStationComponent>(grid);
+                        }
+                    }
+                }
+                var opforShipId = auRoundSystem.GetSelectedOpforShip();
+                if (!string.IsNullOrEmpty(opforShipId) && _prototypeManager.TryIndex<GameMapPrototype>(opforShipId, out var opforShipProto))
+                {
+                    var opforGrids = LoadGameMap(opforShipProto, out var _, new DeserializationOptions { InitializeMaps = true });
+                    foreach (var grid in opforGrids)
+                    {
+                        if (!EntityManager.HasComponent<ShipFactionComponent>(grid))
+                        {
+                            var comp = EntityManager.AddComponent<ShipFactionComponent>(grid);
+                            comp.Faction = "opfor";
+                        }
+                        if (!EntityManager.HasComponent<Content.Server.Station.Components.BecomesStationComponent>(grid))
+                        {
+                            EntityManager.AddComponent<Content.Server.Station.Components.BecomesStationComponent>(grid);
+                        }
+                    }
+                }
             }
         }
 
@@ -427,7 +500,7 @@ namespace Content.Server.GameTicking
 
             // MapInitialize *before* spawning players, our codebase is too shit to do it afterwards...
             _map.InitializeMap(DefaultMap);
-
+            _power.RecalculatePower();
             SpawnPlayers(readyPlayers, readyPlayerProfiles, force);
 
             _roundStartDateTime = DateTime.UtcNow;
@@ -502,6 +575,20 @@ namespace Content.Server.GameTicking
             catch (Exception e)
             {
                 Log.Error($"Error while sending round end Discord message: {e}");
+            }
+
+            // Ensure a round restart is scheduled. Some code calls GameTicker.EndRound
+            // directly and expects the RoundEndSystem to schedule the restart. Call
+            // RoundEndSystem.EndRound here to guarantee the restart countdown is set
+            // up. RoundEndSystem.EndRound will not re-call GameTicker.EndRound if the
+            // RunLevel is already PostRound.
+            try
+            {
+                _roundEndSystem.EndRound();
+            }
+            catch (Exception e)
+            {
+                Log.Error($"Error while scheduling round restart via RoundEndSystem: {e}");
             }
         }
 
@@ -622,7 +709,7 @@ namespace Content.Server.GameTicking
                 if (_distressSignal.SelectedPlanetMapName is { } planet &&
                     _distressSignal.OperationName is { } operation)
                 {
-                    var mapName = _gameMapManager.GetSelectedMap()?.MapName;
+                    var mapName = _auRoundSystem.GetSelectedPlanet()?.VoteName;
                     mapName ??= Loc.GetString("discord-round-notifications-unknown-map");
                     content = Loc.GetString("rmc-discord-round-notifications-end",
                         ("id", RoundId),

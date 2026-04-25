@@ -1,4 +1,4 @@
-using Content.Shared._RMC14.Areas;
+﻿using Content.Shared._RMC14.Areas;
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared._RMC14.Sprite;
 using Content.Shared._RMC14.Tools;
@@ -132,7 +132,26 @@ public abstract class SharedRMCPowerSystem : EntitySystem
         if (ent.Comp.StartingCell is { } startingCell)
             TrySpawnInContainer(startingCell, ent, ent.Comp.CellContainerSlot, out _);
 
-        OffsetApc(ent);
+        var sprite = EnsureComp<SpriteSetRenderOrderComponent>(ent);
+        /*
+        switch (Transform(ent).LocalRotation.GetDir())
+        {
+            case Direction.South:
+                _sprite.SetOffset(ent, new Vector2(0.45f, -0.32f));
+                break;
+            case Direction.East:
+                _sprite.SetOffset(ent, new Vector2(0.7f, -1.45f));
+                break;
+            case Direction.North:
+                _sprite.SetOffset(ent, new Vector2(-0.5f, -1.5f));
+                break;
+            case Direction.West:
+                _sprite.SetOffset(ent, new Vector2(-0.7f, -0.4f));
+                break;
+        }
+        */
+
+        Dirty(ent, sprite);
     }
 
     private void OnApcRemove<T>(Entity<RMCApcComponent> ent, ref T args)
@@ -828,7 +847,7 @@ public abstract class SharedRMCPowerSystem : EntitySystem
     private void OffsetApc(Entity<RMCApcComponent> ent)
     {
         var sprite = EnsureComp<SpriteSetRenderOrderComponent>(ent);
-        switch (Transform(ent).LocalRotation.GetDir())
+        /*switch (Transform(ent).LocalRotation.GetDir())
         {
             case Direction.South:
                 _sprite.SetOffset(ent, new Vector2(0.45f, -0.32f));
@@ -842,7 +861,7 @@ public abstract class SharedRMCPowerSystem : EntitySystem
             case Direction.West:
                 _sprite.SetOffset(ent, new Vector2(-0.7f, -0.4f));
                 break;
-        }
+        }*/
 
         Dirty(ent, sprite);
     }

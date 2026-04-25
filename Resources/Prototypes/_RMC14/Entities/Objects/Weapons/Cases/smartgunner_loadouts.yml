@@ -1,8 +1,8 @@
 ﻿- type: entity
   parent: RMCBaseEquipmentCase
   id: CMSmartGunOperatorEquipmentCase
-  name: ML66A smart gun system case
-  description: "A large case containing an ML66A Smartgun, ML66A combat harness, head mounted sight and powerpack.\n\nNOTE: You cannot put items back inside this case."
+  name: M56B smart gun system case
+  description: "A large case containing an M56B Smartgun, M56 combat harness, head mounted sight and powerpack.\n\nNOTE: You cannot put items back inside this case."
   components:
   - type: Sprite
     layers:
@@ -17,7 +17,7 @@
   - type: StorageFill
     contents:
     - id: RMCGlassesSmartGunSight
-    - id: RMCSmartGunUNMC
+    - id: RMCSmartGun
     - id: RMCPowerCellSmartgun
     - id: CMArmorSmartGunCombatHarness
     - id: RMCMagazineSmartGun
@@ -34,7 +34,7 @@
   - type: StorageFill
     contents:
     - id: RMCGlassesSmartGunSight
-    - id: RMCSmartGunUNMC
+    - id: RMCSmartGun
     - id: RMCPowerCellSmartgun
     - id: CMArmorSmartGunCombatHarness
     - id: CMBeltSmartGunOperatorFilled
@@ -42,8 +42,8 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: CMCOSmartGunOperatorEquipmentCase
-  name: ML66B smart gun system case
-  description: "A large case containing an ML66B 'cavalier' Smartgun, ML66A combat harness, head mounted sight and powerpack.\n\nNOTE: You cannot put items back inside this case."
+  name: M56B smart gun system case
+  description: "A large case containing an M56C 'cavalier' Smartgun, M56 combat harness, head mounted sight and powerpack.\n\nNOTE: You cannot put items back inside this case."
   components:
   - type: Sprite
     layers:

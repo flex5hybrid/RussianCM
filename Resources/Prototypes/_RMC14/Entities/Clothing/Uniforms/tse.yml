@@ -3,8 +3,8 @@
 - type: entity
   parent: RMCArmoredUniformBase
   id: RMCJumpsuitTSEPA
-  name: tsepa uniform
-  description: The standard uniform of a TSEPA officer.
+  name: nspa uniform
+  description: The standard uniform of a Neroid Sector Policing Authority officer.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/TSE/TSEPA/standard.rsi
@@ -16,8 +16,8 @@
 - type: entity
   parent: [RMCJumpsuitTSEPA, RMCAlternateFoldableUniformBase]
   id: RMCJumpsuitMarineRoyal
-  name: royal crown marine uniform
-  description: The field uniform of the royal crown marines. They have shards of light Kevlar to help protect against stabbing weapons and bullets. Onpar with similar UNMC equipment.
+  name: royal marine commando uniform
+  description: The field uniform of the royal marine commandoes. They have shards of light Kevlar to help protect against stabbing weapons and bullets. Onpar with similar USCMC equipment.
   suffix: Filled, Royal
   components:
   - type: Sprite
@@ -58,8 +58,8 @@
 - type: entity
   parent: [RMCJumpsuitTSEPA, RMCAlternateFoldableUniformBase]
   id: RMCJumpsuitMarineRoyalTeamlead
-  name: royal crown marine uniform
-  description: The field uniform of the royal crown marines. They have shards of light Kevlar to help protect against stabbing weapons and bullets. Onpar with similar UNMC equipment.
+  name: royal marine commando uniform
+  description: The field uniform of the royal marine commandoes. They have shards of light Kevlar to help protect against stabbing weapons and bullets. Onpar with similar USCMC equipment.
   suffix: Filled, Royal, Teamlead
   components:
   - type: Sprite

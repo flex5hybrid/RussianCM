@@ -1,0 +1,90 @@
+- type: job
+  parent: CMJobBase
+  id: AU14JobWYGuardBase
+  name: au14-job-name-wyguard
+  description: au14-job-description-wyguard
+  playTimeTracker: AU14JobWYGuard
+  basePlaytimeTracker: true
+  hidden: true
+
+- type: job
+  parent: AU14JobWYGuardBase
+  id: AU14JobWYGuard
+  name: au14-job-name-wyguard
+  description: au14-job-description-wyguard
+  setPreference: true
+  ranks:
+    AU14RankWYSecurityOfficer: []
+  startingGear: AU14GearWYGuard
+  icon: "RMCJobIconPMCGoonStandard"
+  requireAdminNotify: false
+  requirements:
+  - !type:AgeRequirement
+    requiredAge: 21
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Epilepsy
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-wy
+  accessGroups:
+  - auwy
+  - AUPrisonStaff
+  roleWeight: 0.25
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Skills
+      skills:
+        RMCSkillCqc: 1
+        RMCSkillEndurance: 1
+        RMCSkillFirearms: 1
+        RMCSkillFireman: 1
+        RMCSkillIntel: 1
+        RMCSkillOverwatch: 1
+        RMCSkillPolice: 2
+        RMCSkillVehicles: 1
+    - type: JobPrefix
+      prefix: au14-job-prefix-wyguard
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: synth
+    - type: AssignSquad
+      whitelist:
+        tags:
+        - SquadPMC
+    - type: NpcFactionMember
+      factions:
+      - GOVFOR
+    - type: Marine
+      Faction: govfor
+  hidden: false
+
+- type: startingGear
+  id: AU14GearWYGuard
+  equipment:
+    id: AU14IDCardColonyCorporateLiaison
+    outerClothing: RMCOuterClothingExternalWebbingBlack
+    jumpsuit: AU14WYSecurityUniformRig
+    shoes: RMCBootsPMCFilled
+    head: AU14CivBallCapBlack
+    belt: AU14BeltUtilityGeneralBlack
+    back: RMCSatchelLightpackWeYa
+    ears2: AU14ColonyWeylandHeadset
+    ears: RMCM5CameraGear
+    suitstorage: RMCM77BeltPMCFilled
+
+- type: entity
+  parent: CMSpawnPointJobBase
+  id: AU14SpawnPointWYGuard
+  name: Spawn Point WY guard
+  components:
+  - type: SpawnPoint
+    job_id: AU14JobWYGuard
+  - type: Sprite
+    state: syn_spawn
+
+- type: playTimeTracker
+  id: AU14JobWYGuard
+  isHumanoid: true

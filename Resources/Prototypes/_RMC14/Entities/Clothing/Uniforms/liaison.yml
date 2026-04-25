@@ -315,8 +315,8 @@
 - type: entity
   parent: RMCJumpsuitLiaisonOrange
   id: RMCJumpsuitLiaisonPilot
-  name: Weston-Yamada Pilot uniform
-  description: A pair of grey slacks and a white button-down shirt with a dark-grey tie and golden epaulettes signifying rank; a standard uniform for a commercial grade Weston-Yamada affiliated Pilot.
+  name: Weyland-Yutani Pilot uniform
+  description: A pair of grey slacks and a white button-down shirt with a dark-grey tie and golden epaulettes signifying rank; a standard uniform for a commercial grade Weyland-Yutani affiliated Pilot.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Liaison/pilot.rsi

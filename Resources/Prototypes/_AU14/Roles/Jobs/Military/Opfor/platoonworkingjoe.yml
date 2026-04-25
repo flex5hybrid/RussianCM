@@ -1,0 +1,156 @@
+- type: job
+  parent: AU14JobWorkingJoeBase
+  id: AU14JobOPFORWorkingJoe
+  requirements:
+  - !type:RoleTimeRequirement
+    role: AU14JobGOVFORAuxSupportSynth
+    time: 9000 # 2.5 hours
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - SocialAnxietyHeavy
+    - FrontalLisp
+    - NonResuscitable
+    - Epilepsy
+  startingGear: AU14GearOPFORWorkingJoe
+  dummyStartingGear: AU14GearOPFORWorkingJoeDummy
+  icon: "AU14JobIconOPFORWorkingJoe"
+  spawnMenuRoleName: Working Joe (OPFOR)
+  supervisors: au14-job-supervisors-workingjoe-military
+  accessGroups:
+  - AU14OpforCommand
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Skills
+      preset: AU14SkillPresetPlatoonWorkingJoe
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: synth
+    - type: MeleeWeapon
+      soundHit:
+        path: /Audio/_RMC14/Weapons/synthpunch1.ogg
+        params:
+          variation: 0.15
+          volume: -1
+      angle: 30
+      animation: WeaponArcFist
+      attackRate: 1
+      damage:
+        types:
+          Blunt: 60
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 2.85
+      baseSprintSpeed: 3.25
+    - type: Synth
+      generation: "species-name-workingjoe"
+      critThreshold: 300
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        300: Critical # doesnt do anything
+        500: Dead
+    - type: NameModifier
+      baseName: "Working Joe"
+    - type: AssignXenoName
+    - type: HumanoidAppearance
+      species: WorkingJoe
+      hideLayersOnEquip:
+      - UndergarmentTop
+      - HeadTop
+    - type: Icon
+      sprite: _AU14/Mobs/WorkingJoe/parts.rsi
+      state: full
+    - type: UserIFF
+      factions:
+      - OPFOR
+    - type: WorkingJoeVoice
+    - type: UserInterface
+      interfaces:
+        enum.WorkingJoeVoiceUiKey.Key:
+          type: WorkingJoeVoiceBui
+        enum.VoiceMaskUIKey.Key:
+          type: VoiceMaskBoundUserInterface
+        enum.HumanoidMarkingModifierKey.Key:
+          type: HumanoidMarkingModifierBoundUserInterface
+        enum.StrippingUiKey.Key:
+          type: StrippableBoundUserInterface
+        enum.CMSurgeryUIKey.Key:
+          type: CMSurgeryBui
+        enum.HolocardChangeUIKey.Key:
+          type: HolocardChangeBoundUserInterface
+          interactionRange: 0
+          requireInputValidation: false
+        enum.CMMobStateActionsUI.Key:
+          type: CMGhostActionBui
+          requireInputValidation: false
+        enum.TacticalMapUserUi.Key:
+          type: TacticalMapUserBui
+        enum.SquadLeaderTrackerUI.Key:
+          type: SquadInfoBui
+        enum.DialogUiKey.Key:
+          type: DialogBui
+        enum.ViewIntelObjectivesUI.Key:
+          type: ViewIntelObjectivesBui
+    - type: Vocal
+      sounds:
+        Male: AU14WorkingJoeSounds
+        Female: AU14WorkingJoeSounds
+        Unsexed: AU14WorkingJoeSounds
+    - type: TypingIndicator
+      proto: joe
+    - type: IntrinsicRadioReceiver
+    - type: IntrinsicRadioTransmitter
+      channels:
+      - AI
+      - opfor
+      - opforcommand
+      - OpforCharlie
+      - OpforBravo
+      - OpforIntel
+      - opforjtac
+    - type: ActiveRadio
+      channels:
+      - AI
+      - opfor
+      - opforcommand
+      - OpforCharlie
+      - OpforBravo
+      - OpforIntel
+      - opforjtac
+    - type: Access
+      groups:
+      - AU14OpforCommand
+      - AUPrisonStaff
+      - auwy
+    - type: Tag
+      tags:
+      - WorkingJoe
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+  hidden: true
+
+- type: startingGear
+  parent: AU14GearWorkingJoeBase
+  id: AU14GearOPFORWorkingJoe
+  equipment:
+    id: AU14IDCardOPFORWorkingJoe
+    ears: AU14HeadsetWorkingJoe
+    ears2: RMCM5CameraGear
+    back: CMSatchelMarine
+
+- type: entity
+  parent: CMSpawnPointJobBase
+  id: AU14SpawnPointOPFORWorkingJoe
+  name: Spawn Point Working Joe (OPFOR)
+  components:
+  - type: SpawnPoint
+    job_id: AU14JobOPFORWorkingJoe
+  - type: Sprite
+    state: syn_spawn
+
+- type: startingGear
+  parent: AU14GearOPFORWorkingJoe
+  id: AU14GearOPFORWorkingJoeDummy

@@ -6,9 +6,6 @@
   - type: Sprite
     sprite: _RMC14/Objects/dropship_attachments.rsi
     offset: 0.5, 0.5
-  - type: DropshipFabricatorPrintable
-    category: Equipment
-    cost: 800
   - type: PowerLoaderGrabbable
     delay: 1
   - type: DropshipEngine

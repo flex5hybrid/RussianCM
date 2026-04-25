@@ -247,12 +247,13 @@
   name: lantern
   description: A mining lantern.
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Tools/Light/lantern.rsi
-      layers:
-        - state: lantern
-        - state: lantern-on
-          visible: false
-          map: ["light"]
-    - type: PointLight
-      radius: 6
+  - type: Sprite
+    sprite: _RMC14/Objects/Tools/Light/lantern.rsi
+    layers:
+      - state: lantern
+      - state: lantern-on
+        visible: false
+        map: [ "light" ]
+  - type: PointLight
+    radius: 6
+    color: "#FFC458FF"

@@ -267,11 +267,18 @@ namespace Content.Server.RoundEnd
             // BACK AT IT FOR ROUND TWO, GOTTA CHECK THIS SHIT HERE TOOOOOOOOOOOOOOOOOOOOOOOOO????!?!??!
             if (_cfg.GetCVar(RMCCVars.RMCDelayRoundEnd)) return;
             // RMC14
-            if (_gameTicker.RunLevel != GameRunLevel.InRound) return;
+           // if (_gameTicker.RunLevel != GameRunLevel.InRound) return;
             LastCountdownStart = null;
             ExpectedCountdownEnd = null;
             RaiseLocalEvent(RoundEndSystemChangedEvent.Default);
-            _gameTicker.EndRound();
+            // Only call GameTicker.EndRound if the ticker still believes it's in-round.
+            // Some code paths call GameTicker.EndRound directly; in that case we must
+            // not call it again (would trigger DebugTools.Assert). But we still want
+            // to ensure the restart countdown is scheduled, so allow proceeding.
+            if (_gameTicker.RunLevel == GameRunLevel.InRound)
+            {
+                _gameTicker.EndRound();
+            }
             _countdownTokenSource?.Cancel();
             _countdownTokenSource = new();
 

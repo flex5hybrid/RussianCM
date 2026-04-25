@@ -2,11 +2,11 @@
   parent: Flash
   id: CMFlash
   name: flash
-  description: Used for blinding and being an asshole. Recharges one flash every 15 seconds. You must wait 1 second between uses for the capacitor to recharge.
+  description: Used for blinding and being an asshole. Recharges one flash every 60 seconds. You must wait 5 seconds between uses for the capacitor to recharge.
   components:
   - type: Flash
-    slowTo: 0.25
-    meleeStunDuration: 12
+    slowTo: 0.55
+    meleeStunDuration: 8
     range: 3
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Melee/flash.rsi
@@ -14,12 +14,12 @@
     size: Small
     sprite: _RMC14/Objects/Weapons/Melee/flash.rsi
   - type: LimitedCharges
-    maxCharges: 5
-    lastCharges: 5
+    maxCharges: 2
+    lastCharges: 2
   - type: AutoRecharge
-    rechargeDuration: 15
+    rechargeDuration: 60
   - type: UseDelay
-    delay: 0.5
+    delay: 5
   - type: Appearance
   - type: GenericVisualizer
     visuals:

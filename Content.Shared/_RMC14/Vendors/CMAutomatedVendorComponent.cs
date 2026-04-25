@@ -11,7 +11,6 @@ using Robust.Shared.Utility;
 namespace Content.Shared._RMC14.Vendors;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState(true)]
-[Access(typeof(SharedCMAutomatedVendorSystem))]
 public sealed partial class CMAutomatedVendorComponent : Component
 {
     // TODO RMC14 make this EntProtoId<T>? instead of string?
@@ -81,4 +80,26 @@ public sealed partial class CMAutomatedVendorComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public bool EjectContentsOnDestruction = false;
+
+    /// <summary>
+    ///     When true, item <c>Points</c> costs are paid from the faction's win-point pool
+    ///     (ObjectiveMasterComponent) rather than the individual player's vendor points.
+    ///     Set <see cref="Faction"/> to the faction whose pool is used.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool UseObjectivePoints;
+
+    /// <summary>
+    ///     The faction whose win points are spent when <see cref="UseObjectivePoints"/> is true.
+    ///     Valid values: "govfor", "opfor", "clf", "scientist".
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public string Faction = string.Empty;
+
+    /// <summary>
+    ///     Cached copy of the faction's current win points, kept in sync server-side so the BUI
+    ///     can read it directly without needing PVS coverage of the ObjectiveMasterComponent entity.
+    /// </summary>
+    [AutoNetworkedField]
+    public int CachedFactionWinPoints;
 }

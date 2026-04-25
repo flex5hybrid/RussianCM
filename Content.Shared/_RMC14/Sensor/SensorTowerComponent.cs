@@ -52,6 +52,9 @@ public sealed partial class SensorTowerComponent : Component
 
     [DataField, AutoNetworkedField]
     public TimeSpan DestroyDelay = TimeSpan.FromSeconds(4);
+
+    [DataField, AutoNetworkedField]
+    public string Faction = string.Empty;
 }
 
 [Serializable, NetSerializable]

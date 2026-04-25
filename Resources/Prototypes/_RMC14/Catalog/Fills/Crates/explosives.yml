@@ -11,7 +11,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: RMCCrateGrenadesIncendiary
-  name: 30mm HIDP incendiary grenades crate (x6)
+  name: 30mm HIAM grenades crate (x6)
   components:
   - type: StorageFill
     contents:

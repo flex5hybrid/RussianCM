@@ -1049,7 +1049,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportHallwayNortheast
-  name: Weston-Yamada Celestia Gateway Space-Port - Hallway - Northeast
+  name: Weyland-Yutani Celestia Gateway Space-Port - Hallway - Northeast
   components:
   - type: Sprite
     state: wyspaceport
@@ -1057,7 +1057,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportHallwayNorth
-  name: Weston-Yamada Celestia Gateway Space-Port - Hallway - North
+  name: Weyland-Yutani Celestia Gateway Space-Port - Hallway - North
   components:
   - type: Sprite
     state: wyspaceport
@@ -1065,7 +1065,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportHallwayNorthwest
-  name: Weston-Yamada Celestia Gateway Space-Port - Hallway - Northwest
+  name: Weyland-Yutani Celestia Gateway Space-Port - Hallway - Northwest
   components:
   - type: Sprite
     state: wyspaceport
@@ -1073,7 +1073,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportHallwayEast
-  name: Weston-Yamada Celestia Gateway Space-Port - Hallway - East
+  name: Weyland-Yutani Celestia Gateway Space-Port - Food Court - East
   components:
   - type: Sprite
     state: wyspaceport
@@ -1081,7 +1081,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportHeavyequip
-  name: Weston-Yamada Celestia Gateway Space-Port - Heavy Equipment Storage
+  name: Weyland-Yutani Celestia Gateway Space-Port - Heavy Equipment Storage
   components:
   - type: Sprite
     state: wyspaceport
@@ -1089,7 +1089,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportEngineering
-  name: Weston-Yamada Celestia Gateway Space-Port - Fuel Storage & Processing
+  name: Weyland-Yutani Celestia Gateway Space-Port - Fuel Storage & Processing
   components:
   - type: Sprite
     state: wyspaceport
@@ -1097,7 +1097,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportJanitor
-  name: Weston-Yamada Celestia Gateway Space-Port - Janitorial Storage Room
+  name: Weyland-Yutani Celestia Gateway Space-Port - Janitorial Storage Room
   components:
   - type: Sprite
     state: wyspaceport
@@ -1105,7 +1105,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportMaintenanceEast
-  name: Weston-Yamada Celestia Gateway Space-Port - Maintenance - East
+  name: Weyland-Yutani Celestia Gateway Space-Port - Maintenance - East
   components:
   - type: Sprite
     state: wyspaceport
@@ -1113,7 +1113,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportCommunicationsOffice
-  name: Weston-Yamada Celestia Gateway Space-Port - Communications & Administration Office
+  name: Weyland-Yutani Celestia Gateway Space-Port - Communications & Administration Office
   components:
   - type: Sprite
     state: wyspaceportadmin
@@ -1121,7 +1121,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportFlightControlRoom
-  name: Weston-Yamada Celestia Gateway Space-Port - Flight Control Room
+  name: Weyland-Yutani Celestia Gateway Space-Port - Flight Control Room
   components:
   - type: Sprite
     state: wyspaceportadmin
@@ -1129,7 +1129,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportSecurity
-  name: Weston-Yamada Celestia Gateway Space-Port - Security- Observation & Office
+  name: Weyland-Yutani Celestia Gateway Space-Port - Security- Observation & Office
   components:
   - type: Sprite
     state: security_checkpoint
@@ -1137,7 +1137,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportSecurityOffice
-  name: Weston-Yamada Celestia Gateway Space-Port - Office
+  name: Weyland-Yutani Celestia Gateway Space-Port - Office
   components:
   - type: Sprite
     state: security_checkpoint
@@ -1145,7 +1145,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportCargo
-  name: Weston-Yamada Celestia Gateway Space-Port - Cargo Bay
+  name: Weyland-Yutani Celestia Gateway Space-Port - Cargo Bay
   components:
   - type: Sprite
     state: wyspaceportcargo
@@ -1153,7 +1153,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportCargoMaintenance
-  name: Weston-Yamada Celestia Gateway Space-Port - Cargo - Maintenance
+  name: Weyland-Yutani Celestia Gateway Space-Port - Cargo - Maintenance
   components:
   - type: Sprite
     state: wyspaceportcargo
@@ -1161,7 +1161,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportBaggagehandling
-  name: Weston-Yamada Celestia Gateway Space-Port - Baggage Storage & Handling
+  name: Weyland-Yutani Celestia Gateway Space-Port - Baggage Storage & Handling
   components:
   - type: Sprite
     state: wyspaceportbaggage
@@ -1169,7 +1169,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportCuppajoes
-  name: Weston-Yamada Celestia Gateway Space-Port - Cuppa Joe's
+  name: Weyland-Yutani Celestia Gateway Space-Port - Cuppa Joe's
   components:
   - type: Sprite
     state: cuppajoes
@@ -1177,7 +1177,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportKitchen
-  name: Weston-Yamada Celestia Gateway Space-Port - Kitchen
+  name: Weyland-Yutani Celestia Gateway Space-Port - Kitchen
   components:
   - type: Sprite
     state: wyspaceportblue
@@ -1185,7 +1185,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportDockingBay2
-  name: 'Weston-Yamada Celestia Gateway Space-Port - Docking Bay: 2 - Refueling and Maintenance'
+  name: 'Weyland-Yutani Celestia Gateway Space-Port - Docking Bay: 2 - Refueling and Maintenance'
   components:
   - type: Sprite
     state: wyspaceportblue
@@ -1193,7 +1193,7 @@
 - type: entity
   parent: RMCAreaLv759IndoorsSpaceport
   id: RMCAreaLv759IndoorsSpaceportDockingBay1
-  name: 'Weston-Yamada Celestia Gateway Space-Port - Docking Bay: 1'
+  name: 'Weyland-Yutani Celestia Gateway Space-Port - Docking Bay: 1'
   components:
   - type: Sprite
     state: wyspaceport

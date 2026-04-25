@@ -11,4 +11,8 @@ public partial record SquadLeaderTrackerFireteam
 
     [DataField]
     public Dictionary<NetEntity, SquadLeaderTrackerMarine>? Members;
+
+    // New: optional nickname for the fireteam (networked and saved).
+    [DataField]
+    public string? Nickname;
 }

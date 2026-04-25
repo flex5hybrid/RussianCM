@@ -1,0 +1,15 @@
+ent-AU14SkillPresetPlatoonRifleman-name = Стрелок
+ent-AU14SkillPresetPlatoonRTO-name = Радиотелефонист
+ent-AU14SkillPresetPlatoonAutomaticRifleman-name = Автоматчик
+ent-AU14SkillPresetPlatoonHospitalCorpsman-name = Санитар Госпиталя
+ent-AU14SkillPresetPlatoonCombatTechnician-name = Боевой Техник
+ent-AU14SkillPresetPlatoonSergeant-name = Сержант
+ent-AU14SkillPresetPlatoonSeniorSergeant-name = Старший Сержант
+ent-AU14SkillPresetPlatoonJuniorOfficer-name = Младший Офицер
+ent-AU14SkillPresetPlatoonCommander-name = Командир
+ent-AU14SkillPresetPlatoonAdvisor-name = Советник
+ent-AU14SkillPresetPlatoonDP-name = Пилот Дропшипа
+ent-AU14SkillPresetPlatoonDCC-name = Бортмеханик Дропшипа
+ent-AU14SkillPresetPlatoonAuxiliarySupportSynth-name = Вспомогательный Синтетик
+ent-AU14SkillPresetMilitaryDoctor-name = Военный Врач
+ent-AU14SkillPresetPlatoonWorkingJoe-name = Рабочий Джо

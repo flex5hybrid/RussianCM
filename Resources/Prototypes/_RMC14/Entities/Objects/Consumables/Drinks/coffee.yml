@@ -39,8 +39,8 @@
 - type: entity
   parent: RMCDrinkCoffee
   id: RMCDrinkCoffeeGrind
-  name: The Daily Grind
-  description: Rise and Shine! Time to drink the Daily Grind!
+  name: "Cuppa Joe's Dark Roast Coffee"
+  description: "Rise and Shine! Time to drink your Cuppa Joe's!"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/coffee_joe.rsi

@@ -12,4 +12,13 @@ public sealed partial class TacticalMapLabelsComponent : Component
 
     [DataField, AutoNetworkedField]
     public Dictionary<Vector2i, string> XenoLabels = new();
+
+    [DataField, AutoNetworkedField]
+    public Dictionary<Vector2i, string> OpforLabels = new();
+
+    [DataField, AutoNetworkedField]
+    public Dictionary<Vector2i, string> GovforLabels = new();
+
+    [DataField, AutoNetworkedField]
+    public Dictionary<Vector2i, string> ClfLabels = new();
 }

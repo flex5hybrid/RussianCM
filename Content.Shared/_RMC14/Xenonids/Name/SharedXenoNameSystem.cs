@@ -145,7 +145,7 @@ public abstract class SharedXenoNameSystem : EntitySystem
     public int GetMaxXenoPostfixLength(ICommonSession player)
     {
         var time = GetXenoPlaytime(player);
-        if (time > _xenoPostfixTwoTime)
+        if (time >= _xenoPostfixTwoTime)
             return 2;
         else if (time > _xenoPostfixTime)
             return 1;

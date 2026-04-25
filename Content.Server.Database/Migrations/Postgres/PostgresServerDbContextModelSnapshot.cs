@@ -831,6 +831,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("integer")
                         .HasColumnName("age");
 
+                    b.Property<string>("Allegiance")
+                        .HasColumnType("text")
+                        .HasColumnName("allegiance");
+
                     b.Property<string>("ArmorPreference")
                         .IsRequired()
                         .HasColumnType("text")
@@ -879,6 +883,10 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Property<JsonDocument>("Markings")
                         .HasColumnType("jsonb")
                         .HasColumnName("markings");
+
+                    b.Property<string>("Origin")
+                        .HasColumnType("text")
+                        .HasColumnName("origin");
 
                     b.Property<bool>("PlaytimePerks")
                         .ValueGeneratedOnAdd()
@@ -1119,6 +1127,18 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("boolean")
+                        .HasColumnName("deleted");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("deleted_at");
+
+                    b.Property<Guid?>("DeletedById")
+                        .HasColumnType("uuid")
+                        .HasColumnName("deleted_by_id");
+
                     b.Property<Guid>("GiverId")
                         .HasColumnType("uuid")
                         .HasColumnName("giver_id");
@@ -1151,18 +1171,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("text");
 
-                    b.Property<bool>("Deleted")
-                        .HasColumnType("boolean")
-                        .HasColumnName("deleted");
-
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("deleted_at");
-
-                    b.Property<Guid?>("DeletedById")
-                        .HasColumnType("uuid")
-                        .HasColumnName("deleted_by_id");
-
                     b.Property<int>("Type")
                         .HasColumnType("integer")
                         .HasColumnName("type");
@@ -1170,8 +1178,7 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.HasKey("Id")
                         .HasName("PK_rmc_commendations");
 
-                    b.HasIndex("DeletedById")
-                        .HasDatabaseName("IX_rmc_commendations_deleted_by_id");
+                    b.HasIndex("DeletedById");
 
                     b.HasIndex("GiverId");
 
@@ -2379,6 +2386,13 @@ namespace Content.Server.Database.Migrations.Postgres
 
             modelBuilder.Entity("Content.Server.Database.RMCCommendation", b =>
                 {
+                    b.HasOne("Content.Server.Database.Player", "DeletedBy")
+                        .WithMany("CommendationsDeleted")
+                        .HasForeignKey("DeletedById")
+                        .HasPrincipalKey("UserId")
+                        .OnDelete(DeleteBehavior.SetNull)
+                        .HasConstraintName("FK_rmc_commendations_player_deleted_by_id");
+
                     b.HasOne("Content.Server.Database.Player", "Giver")
                         .WithMany("CommendationsGiven")
                         .HasForeignKey("GiverId")
@@ -2394,13 +2408,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_rmc_commendations_player_receiver_id");
-
-                    b.HasOne("Content.Server.Database.Player", "DeletedBy")
-                        .WithMany("CommendationsDeleted")
-                        .HasForeignKey("DeletedById")
-                        .HasPrincipalKey("UserId")
-                        .OnDelete(DeleteBehavior.SetNull)
-                        .HasConstraintName("FK_rmc_commendations_player_deleted_by_id");
 
                     b.HasOne("Content.Server.Database.Round", "Round")
                         .WithMany("Commendations")

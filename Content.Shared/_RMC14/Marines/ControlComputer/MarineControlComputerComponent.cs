@@ -9,6 +9,10 @@ namespace Content.Shared._RMC14.Marines.ControlComputer;
 [Access(typeof(SharedMarineControlComputerSystem))]
 public sealed partial class MarineControlComputerComponent : Component
 {
+
+    [DataField, AutoNetworkedField]
+    public string Faction = "govfor";
+
     [DataField, AutoNetworkedField]
     public bool Evacuating;
 

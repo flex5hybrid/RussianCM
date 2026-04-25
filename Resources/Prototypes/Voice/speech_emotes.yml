@@ -7,6 +7,9 @@
   whitelist:
     components:
     - Vocal
+  blacklist:
+    tags:
+    - WorkingJoe
   chatMessages: ["chat-emote-msg-scream"]
   chatTriggers:
     - scream
@@ -37,6 +40,7 @@
   blacklist:
     tags:
     - SiliconEmotes
+    - WorkingJoe
   chatMessages: ["chat-emote-msg-laugh"]
   chatTriggers:
     - laugh
@@ -84,6 +88,7 @@
   blacklist:
     tags:
     - SiliconEmotes
+    - WorkingJoe
   chatMessages: ["chat-emote-msg-sigh"]
   chatTriggers:
     - sigh
@@ -101,6 +106,7 @@
   blacklist:
     tags:
     - SiliconEmotes
+    - WorkingJoe
   chatMessages: ["chat-emote-msg-whistle"]
   chatTriggers:
     - whistle
@@ -118,6 +124,7 @@
   blacklist:
     tags:
     - SiliconEmotes
+    - WorkingJoe
   chatMessages: ["chat-emote-msg-crying"]
   chatTriggers:
     - cry
@@ -193,6 +200,7 @@
   blacklist:
     tags:
     - SiliconEmotes
+    - WorkingJoe
   chatMessages: ["chat-emote-msg-click"]
   chatTriggers:
    - click
@@ -210,6 +218,7 @@
   blacklist:
     tags:
     - SiliconEmotes
+    - WorkingJoe
   chatMessages: ["chat-emote-msg-clap"]
   chatTriggers:
     - claps
@@ -227,6 +236,7 @@
   blacklist:
     tags:
     - SiliconEmotes
+    - WorkingJoe
   chatMessages: [ "chat-emote-msg-clap-single" ]
   chatTriggers:
     - clap
@@ -246,6 +256,7 @@
   blacklist:
     tags:
     - SiliconEmotes
+    - WorkingJoe
   chatMessages: ["chat-emote-msg-snap"]
   chatTriggers:
     - snap
@@ -297,6 +308,7 @@
   blacklist:
     tags:
     - SiliconEmotes
+    - WorkingJoe
   chatMessages: ["chat-emote-msg-salute"]
   chatTriggers:
     - salute

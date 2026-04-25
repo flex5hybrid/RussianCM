@@ -28,3 +28,4 @@
   - CMRoyalMarinesRiflemanPVE
   departmentRadio: null
   headOfDepartment: CMSquadLeader
+  hidden: true

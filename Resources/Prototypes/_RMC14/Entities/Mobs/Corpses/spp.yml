@@ -25,8 +25,8 @@
     gloves: RMCHandsVeteranSPP
     shoes: RMCBootsSPPFilled
     head: ArmorHelmetSPP
-    id: RMCIDSPPRifleman
-    ears: RMCHeadsetSPP
+    id: RMCIDSPP # RMCIDSPPRifleman
+    ears: CMHeadsetColony # RMCHeadsetSPP
   storage:
     outerClothing:
     - RMCBinoculars

@@ -823,6 +823,34 @@ public sealed partial class TacticalMapWrapper : Control
             }
         }
 
+        // Check additional factions
+        foreach ((int id, TacticalMapBlip blip) in userComp.OpforBlips)
+        {
+            if (id == playerNetId)
+            {
+                playerIndices = blip.Indices;
+                return true;
+            }
+        }
+
+        foreach ((int id, TacticalMapBlip blip) in userComp.GovforBlips)
+        {
+            if (id == playerNetId)
+            {
+                playerIndices = blip.Indices;
+                return true;
+            }
+        }
+
+        foreach ((int id, TacticalMapBlip blip) in userComp.ClfBlips)
+        {
+            if (id == playerNetId)
+            {
+                playerIndices = blip.Indices;
+                return true;
+            }
+        }
+
         return false;
     }
 

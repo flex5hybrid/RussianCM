@@ -235,6 +235,19 @@
   iconColor: "#4a4a4a"
   objectType: Item
 
+# L165A1
+- type: construction
+  parent: RMC
+  name: Magazine Box (L165A1 Reg)
+  id: AU14BoxMagazinePistolL165A1
+  graph: RMCBoxMagazine
+  startNode: start
+  targetNode: AU14BoxMagazinePistolL165A1Empty
+  category: construction-category-cm-box-magazine
+  description: A magazine box that can contain regular L165A1 mags.
+  iconColor: "#4a4a4a"
+  objectType: Item
+
 # SU-6 Smart pistol
 - type: construction
   parent: RMC
@@ -741,6 +754,13 @@
         amount: 1
         doAfter: 0.25
 
+    # L165A1
+    - to: AU14BoxMagazinePistolL165A1Empty
+      steps:
+      - material: RMCSheetCardboard
+        amount: 1
+        doAfter: 0.25
+
     # SU-6
     - to: RMCBoxMagazinePistolSU6Empty
       steps:
@@ -930,6 +950,10 @@
   # MK80
   - node: RMCBoxMagazinePistolMK80Empty
     entity: RMCBoxMagazinePistolMK80Empty
+
+  # L165A1
+  - node: AU14BoxMagazinePistolL165A1Empty
+    entity: AU14BoxMagazinePistolL165A1Empty
 
   # SU-6
   - node: RMCBoxMagazinePistolSU6Empty

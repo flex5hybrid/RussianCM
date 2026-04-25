@@ -1,0 +1,388 @@
+- type: entity
+  parent: ColMarTechBase
+  id: AU14HAZOPSclothingequipmentvendor
+  name: HAZOPS apparel vendor
+  description: An automated rack hooked up to a small storage of specialized marine apparel.
+  components:
+  - type: Sprite
+    sprite: _AU14/Structures/Vendors/uscmgearrack.rsi
+  - type: CMAutomatedVendor
+    sections:
+    - name: Fatigues
+      entries:
+      - id: AU14HAZOPUrbanFatigues
+        amount: 45
+    - name: Footwear
+      entries:
+      - id: CMBootsBlack
+        amount: 40
+      - id: RMCBootsCBRN
+        amount: 10
+    - name: Gloves
+      entries:
+      - id: CMHandsBrown
+        amount: 20
+      - id: AU14PVEHandsInsulatedBlackMarine
+        amount: 20
+      - id: AU14PVEHandsFingerlessBlackGloves
+        amount: 20
+      - id: RMCHandsVeteranCBRN
+        amount: 10
+    - name: Webbings
+      entries:
+      - id: AU14WebbingMagazine
+        amount: 25
+      - id: AU14WebbingUtility
+        amount: 30
+      - id: AU14WebbingDumpPouch
+        amount: 25
+      - id: AU14WebbingAdminPouch
+        amount: 15
+      - id: AU14WebbingDropPouch
+        amount: 15
+      - id: AU14WebbingKnivesFilled
+        amount: 1
+    - name: Headgear
+      entries:
+      - id: AU14HAZOPShelmet
+        amount: 45
+      - id: AU14JungleBoonieHat
+        amount: 35
+      - id: AU14JunglePatrolCap
+        amount: 35
+    - name: Headsets
+      entries:
+      - id: AU14HeadsetSectionMarine
+        amount: 20
+    - name: Heads Up Display
+      entries:
+      - id: RMCVisorSquad
+        amount: 25
+      - id: RMCVisorWelding
+        amount: 5
+    - name: Armor
+      entries:
+      - id: AU14ArmorHAZOPSPWA
+        amount: 60
+    - name: Armor Components
+      entries:
+      - id: AU14KitJungleArmor
+        amount: 30
+    - name: Backpack
+      entries:
+      - id: CMBackpackMarine
+        amount: 15
+      - id: AU14IMPBackpackMarine
+        amount: 3
+      - id: AU14TechBackpackMarine
+        amount: 3
+      - id: CMSatchelMarine
+        amount: 15
+#      - id: Marine Chestrig
+#        amount: 15
+      - id: RMCSatchelWelderChestrig
+        amount: 2
+      - id: RMCScabbardShotgun
+        amount: 2
+      - id: RMCBackpackAmmo
+        amount: 1
+    - name: Belts
+      entries:
+      - id: CMBeltMarine
+        amount: 25
+      - id: RMCBeltGrenade
+        amount: 2
+      - id: RMCM276ShotgunShellLoadingRig
+        amount: 2
+      - id: RMCBeltHolsterPistol
+        amount: 15
+      - id: RMCBeltHolsterRevolver
+        amount: 15
+#      - id: M276 Pattern M82F Holster Rig
+#        amount: 5
+      - id: CMBeltKnifeFilled
+        name: M276 Knife Rig (Full)
+        amount: 1
+      - id: RMCBeltUtilityGeneral
+        amount: 15
+    - name: Pouches
+      entries:
+      - id: RMCPouchBayonet
+        name: Bayonet Sheath
+        amount: 15
+      - id: RMCPouchFlareFilled
+        name: Flare Pouch (Full)
+        amount: 15
+      - id: RMCPouchDocumentSmall
+        amount: 1
+      - id: RMCPouchMagazine
+        amount: 15
+      - id: RMCPouchMagazineLarge
+        amount: 2
+      - id: RMCPouchShotgunLarge
+        amount: 4
+      - id: RMCPouchGeneralMedium
+        amount: 15
+      - id: RMCPouchGeneralLarge
+        amount: 2
+      - id: RMCPouchMagazinePistol
+        amount: 15
+      - id: RMCPouchMagazinePistolLarge
+        amount: 2
+      - id: RMCPouchPistol
+        amount: 15
+      - id: RMCPouchConstruction
+        amount: 1
+      - id: RMCPouchExplosive
+        amount: 1
+      - id: RMCPouchTools
+        amount: 15
+#      - id: Sling Pouch
+#        amount: 1
+    - name: Mask
+      entries:
+      - id: AU14MaskGasHAZOPSM40
+        amount: 40
+      - id: CMUGasMaskFilterHAZOPS
+        amount: 80
+      - id: CMMaskCoif
+        amount: 10
+      - id: RMCMaskTornScarfGreen
+        amount: 10
+      - id: RMCMaskTornScarfSnow
+        amount: 10
+      - id: RMCMaskTornScarfBlack
+        amount: 10
+    - name: Glasses & Goggles
+      entries:
+      - id: AU14GogglesM1A1ClearBallistic
+        amount: 25
+      - id: AU14GogglesM1A1Ballistic
+        amount: 25
+      - id: AU14GogglesM1A1DarkBallistic
+        amount: 20
+      - id: AU14GogglesM1A1LaserBallistic
+        amount: 20
+      - id: AU14GogglesM1A1OrangeBallistic
+        amount: 20
+      - id: AU14GogglesM1A1PolarizedBallistic
+        amount: 20
+      - id: AU14GogglesM60
+        amount: 20
+      - id: RMCGlassesMarineRpg
+        amount: 20
+      - id: AU14GlassesBiMex
+        amount: 20
+      - id: AU14GlassesBiMexOrange
+        amount: 20
+      - id: RMCGlassesTriMaxBronze
+        amount: 20
+    - name: Helmet Garb
+      entries:
+      - id: AU14HelmetGarbM10SkrimJungle
+        amount: 20
+      - id: AU14HelmetGarbM10SkrimSnow
+        amount: 20
+      - id: AU14HelmetGarbM10RainCover
+        amount: 20
+      - id: RMCHelmetGarbGasmaskJungle
+        amount: 30
+      - id: RMCHelmetGarbGasmaskUrban
+        amount: 30
+    - name: Patches
+      entries:
+      - id: AU14PatchUAFlag
+        amount: 20
+      - id: AU14PatchUSFlag
+        amount: 20
+      - id: AU14PatchUSCM
+        amount: 20
+      - id: AU14HAZOPShecuPatch
+        amount: 30
+
+- type: entity
+  parent: ColMarTechBase
+  id: AU14HAZOPSMGequipmentvendor
+  name: HAZOPS smartgunner equipment vendor
+  description: An automated rack hooked up to a small storage of smartgunner equipment.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/smart_gun_operator_gear.rsi
+  - type: CMAutomatedVendor
+    sections:
+    - name: Essential Equipment
+      takeAll: CMUAREssentialEquipment
+      entries:
+      - id: AU14SmartGunMinigunHAZOPS
+      - id: AU14HAZOPSBatteryMinigunGAU19Backpack
+    - name: Munitions
+      entries:
+      - id: AU14MagazineMinigunHAZOPS
+        amount: 8
+
+- type: entity
+  parent: ColMarTechBase
+  id: AU14HAZOPSWeaponsVendor
+  name: HAZOPS weapons rack
+  description: An automated rack hooked up to a small storage of weapons.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/guns.rsi
+  - type: CMAutomatedVendor
+    sections:
+    - name: Weapons
+      choices: { CMUPrimaryWeapon: 1 }
+      entries:
+      - id: AU14KitWeaponXMP5A6
+    - name: Primary Ammunition
+      entries:
+      - id: AU14MagazineXMP5A6
+        amount: 60
+      - id: CMMagazineRifleM54CAP
+    - name: Handguns
+      choices: { CMUHandgunsWeapon: 1 }
+      entries:
+      - id: AU14KitWeaponM4A3
+    - name: Handgun Ammunition
+      entries:
+      - id: CMMagazinePistolM1984
+        amount: 60
+    - name: Attachments
+      choices: { CMUAttachmentsVendor: 2 }
+      entries:
+      - id: RMCAttachmentRailFlashlight
+      - id: RMCAttachmentTwoPointSling
+      - id: AU14AttachmentM203A4GrenadeLauncher
+
+- type: entity
+  parent: ColMarTechBase
+  id: AU14HAZOPSSpecialWeaponsVendor
+  name: HAZOPS special weapons rack
+  description: An automated rack hooked up to a small storage of special weapons.
+  components:
+  - type: Sprite
+    sprite: _AU14/Structures/Vendors/genericweaponrack.rsi
+  - type: CMAutomatedVendor
+    sections:
+    - name: M240A2 Heavy Incinerator
+      entries:
+      - id: AU14WeaponFlamerM240A2HAZOPS
+        amount: 1
+      - id: AU14TankFlamerM240A2HAZOPS
+        amount: 8
+      - id: RMCBackpackFlamer
+        name: G4-1 fueltank
+        amount: 1
+    - name: SPAS-12-HAZ Specialized Shotgun
+      entries:
+      - id: AU14WeaponShotgunSPAS12HAZOPS
+        amount: 1
+      - id: RMCBoxShotgunBuckshot
+        amount: 12
+      - id: RMCBoxShotgunSlugs
+        amount: 12
+    - name: M50 'Bald Eagle' Handcannon
+      entries:
+      - id: AU14WeaponPistolM50HAZOPS
+        amount: 8
+      - id: AU14MagazinePistolM50
+        amount: 80
+    - name: Explosives
+      entries:
+      - id: RMCBoxHEDP
+        amount: 2
+      - id: CMPacketGrenadeFragOldFilled
+        amount: 4
+      - id: RMCPacketGrenadeSmokeFilled
+        amount: 4
+      - id: RMCExplosivePlastic
+        amount: 4
+      - id: RMCExplosiveBreachingCharge
+        amount: 6
+
+- type: entity
+  parent: ColMarTechBase
+  id: AU14HAZOPScommandequipmentvendor
+  name: HAZOPS command vendor
+  description: An automated rack hooked up to a small storage of command apparel and equipment. Let's go, Marines!
+  components:
+  - type: Sprite
+    sprite: _AU14/Structures/Vendors/uscmcommandclothes.rsi
+  - type: CMAutomatedVendor
+    sections:
+    - name: Fatigues
+      entries:
+      - id: CMJumpsuitXOFormal
+        amount: 2
+      - id: AU14HAZOPUrbanFatigues
+        amount: 2
+    - name: Footwear
+      entries:
+      - id: CMBootsBlack
+        amount: 2
+      - id: CMBootsBrown
+        amount: 2
+      - id: AU14BootsJungle
+        amount: 2
+    - name: Headgear
+      entries:
+      - id: AU14JungleM11Helmet
+        amount: 2
+      - id: CMHeadCapPeakedFormal
+        amount: 2
+      - id: CMHeadCapPeakedService
+        amount: 2
+      - id: AU14HAZOPShecuBeret
+        amount: 4
+      - id: AU14JunglePatrolCap
+        amount: 2
+    - name: Headsets
+      entries:
+      - id: AU14HeadsetSectionLeader
+        amount: 2
+    - name: Pouches
+      entries:
+      - id: AU14PouchCommandFill
+        amount: 2
+    - name: Miscellaneous
+      entries:
+      - id: RMCLaserDesignator
+        amount: 2
+      - id: RMCWhistle
+        amount: 2
+      - id: RMCPackFlareCAS
+        amount: 2
+
+- type: entity
+  parent: ColMarTechBase
+  id: AU14HAZOPSsectionleaderequipmentvendor
+  name: HAZOPS section leader vendor
+  description: An automated rack hooked up to a small storage of apparel and equipment for the section leader.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
+  - type: CMAutomatedVendor
+    sections:
+    - name: Headsets
+      entries:
+      - id: AU14HeadsetSectionLeader
+        amount: 1
+    - name: Helmets and Hats
+      entries:
+      - id: AU14JungleM11Helmet
+        amount: 1
+      - id: AU14HAZOPShecuBeret
+        amount: 4
+      - id: AU14JunglePatrolCap
+        amount: 1
+    - name: Miscellaneous
+      entries:
+      - id: RMCLaserDesignator
+        amount: 1
+      - id: RMCWhistle
+        amount: 1
+      - id: RMCPackFlareCAS
+        amount: 2
+
+
+

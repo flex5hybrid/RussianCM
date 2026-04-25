@@ -524,7 +524,22 @@ public sealed partial class TacticalMapControl : TextureRect
         SpriteSpecifier.Rsi defibbableRsi4 = new(new ResPath("/Textures/_RMC14/Interface/map_blips.rsi"), "defibbable4");
         SpriteSpecifier.Rsi undefibbableRsi = new(new ResPath("/Textures/_RMC14/Interface/map_blips.rsi"), "undefibbable");
         SpriteSpecifier.Rsi hiveLeaderRsi = new(new ResPath("/Textures/_RMC14/Interface/map_blips.rsi"), "xenoleader");
-        Texture background = system.Frame0(backgroundRsi);
+
+        Texture background;
+        try
+        {
+            // Attempt to get the background frame. If this fails (RSI missing/corrupt), skip blip drawing.
+            background = system.Frame0(backgroundRsi);
+        }
+        catch (Exception)
+        {
+            // Don't let a resource failure crash the entire UI. Skip drawing blips.
+            DrawModeBorder(handle, Vector2.Zero, Vector2.Zero, 1f); // still draw border if appropriate
+            DrawLines(handle, 1f, Vector2.Zero);
+            DrawPreviewLine(handle, 1f, Vector2.Zero);
+            DrawLabels(handle, 1f, Vector2.Zero);
+            return;
+        }
 
         (Vector2 actualSize, Vector2 actualTopLeft, float overlayScale) = GetDrawParameters();
 
@@ -532,7 +547,15 @@ public sealed partial class TacticalMapControl : TextureRect
         handle.DrawTextureRect(Texture, textureRect);
 
         DrawModeBorder(handle, actualTopLeft, actualSize, overlayScale);
-        DrawBlips(handle, system, background, defibbableRsi, defibbableRsi2, defibbableRsi3, defibbableRsi4, undefibbableRsi, hiveLeaderRsi, actualTopLeft, overlayScale, curTime);
+        // Wrap DrawBlips in a try/catch as an extra safety net for any runtime resource issues.
+        try
+        {
+            DrawBlips(handle, system, background, defibbableRsi, defibbableRsi2, defibbableRsi3, defibbableRsi4, undefibbableRsi, hiveLeaderRsi, actualTopLeft, overlayScale, curTime);
+        }
+        catch (Exception)
+        {
+            // swallow—blips are non-critical; the rest of the UI should render.
+        }
         DrawLines(handle, overlayScale, actualTopLeft);
         DrawPreviewLine(handle, overlayScale, actualTopLeft);
         DrawLabels(handle, overlayScale, actualTopLeft);
@@ -578,8 +601,30 @@ public sealed partial class TacticalMapControl : TextureRect
             float scaledBlipSize = GetScaledBlipSize(overlayScale);
             UIBox2 rect = UIBox2.FromDimensions(position, new Vector2(scaledBlipSize, scaledBlipSize));
 
-            handle.DrawTextureRect(blip.Background != null ? system.GetFrame(blip.Background, curTime) : background, rect, blip.Color);
-            handle.DrawTextureRect(system.GetFrame(blip.Image, curTime), rect);
+            // Draw background / base frame but protect against resource failures per-frame
+            try
+            {
+                Texture bgTex = blip.Background != null ? system.GetFrame(blip.Background, curTime) : background;
+                handle.DrawTextureRect(bgTex, rect, blip.Color);
+            }
+            catch (Exception)
+            {
+                // ignore and continue—don't crash the UI for missing background frames
+            }
+
+            // Draw main blip image safely
+            try
+            {
+                if (blip.Image != null)
+                {
+                    var frame = system.GetFrame(blip.Image, curTime);
+                    handle.DrawTextureRect(frame, rect);
+                }
+            }
+            catch (Exception)
+            {
+                // skip drawing this blip image if the frame cannot be loaded
+            }
 
             if (_localPlayerEntityId.HasValue && _blipEntityIds != null && i < _blipEntityIds.Length)
             {
@@ -590,7 +635,17 @@ public sealed partial class TacticalMapControl : TextureRect
             }
 
             if (blip.HiveLeader)
-                handle.DrawTextureRect(system.GetFrame(hiveLeaderRsi, curTime), rect);
+            {
+                try
+                {
+                    var hiveTex = system.GetFrame(hiveLeaderRsi, curTime);
+                    handle.DrawTextureRect(hiveTex, rect);
+                }
+                catch (Exception)
+                {
+                    // ignore
+                }
+            }
 
             var defibTexture = blip.Status switch
             {
@@ -602,7 +657,18 @@ public sealed partial class TacticalMapControl : TextureRect
                 _ => null,
             };
             if (defibTexture != null)
-                handle.DrawTextureRect(system.GetFrame(defibTexture, curTime), rect);
+            {
+                try
+                {
+                    var dtex = system.GetFrame(defibTexture, curTime);
+                    if (dtex != null)
+                        handle.DrawTextureRect(dtex, rect);
+                }
+                catch (Exception)
+                {
+                    // ignore
+                }
+            }
         }
     }
 

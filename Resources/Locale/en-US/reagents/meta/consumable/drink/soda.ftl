@@ -1,4 +1,4 @@
-reagent-name-cola = Space Cola
+reagent-name-cola = coca-cola
 reagent-desc-cola = A sweet, carbonated soft drink.
 
 reagent-name-shirley-temple = Shirley Temple
@@ -7,10 +7,10 @@ reagent-desc-shirley-temple = A favorite amongst younger members of the crew.
 reagent-name-changeling-sting = Changeling Sting
 reagent-desc-changeling-sting = You take a tiny sip and feel a burning sensation...
 
-reagent-name-dr-gibb = Dr. Gibb
+reagent-name-dr-gibb = Dr. Pepper
 reagent-desc-dr-gibb = A delicious blend of 42 different flavours.
 
-reagent-name-energy-drink = Red Bool
+reagent-name-energy-drink = monster energy
 reagent-desc-energy-drink = A dose of energy! Nanotrasen is not responsible if you grow avian appendages.
 
 reagent-name-grape-soda = grape soda
@@ -41,10 +41,10 @@ reagent-name-roy-rogers = Roy Rogers
 reagent-desc-roy-rogers = Solid proof that there IS something known as too sweet.
 
 # RMC14
-reagent-name-space-mountain-wind = Solar Wind
+reagent-name-space-mountain-wind = sprite
 reagent-desc-space-mountain-wind = Blows right through you like a solar wind.
 
-reagent-name-space-up = Space-Up
+reagent-name-space-up = seven-up
 reagent-desc-space-up = Tastes like a hull breach in your mouth.
 
 reagent-name-starkist = Starkist

@@ -291,6 +291,9 @@ public sealed class OverwatchConsoleBui : RMCPopOutBui<OverwatchConsoleWindow>
                     }
                 };
 
+                monitor.FireteamsButton.OnPressed += _ =>
+                    SendPredictedMessage(new OverwatchConsoleOpenSquadFireteamsBuiMsg(squad.Id));
+
                 var canSupplyDrop = EntMan.HasComponent<SupplyDropComputerComponent>(Owner) && squad.CanSupplyDrop;
                 TabContainer.SetTabVisible(monitor.SupplyDrop, canSupplyDrop);
 
@@ -312,6 +315,8 @@ public sealed class OverwatchConsoleBui : RMCPopOutBui<OverwatchConsoleWindow>
             monitor.OverwatchLabel.Text = Loc.GetString("rmc-overwatch-console-dashboard", ("squadName", squad.Name));
 
             monitor.OnStop += () => SendPredictedMessage(new OverwatchConsoleStopOverwatchBuiMsg());
+
+            // Fireteams are handled by the SquadInfo UI (opened by Overwatch) so we don't populate them locally here.
 
             var allAlive = 0;
             var roles = new Dictionary<ProtoId<JobPrototype>, (HashSet<OverwatchMarine> Deployed, HashSet<OverwatchMarine> Alive, HashSet<OverwatchMarine> All)>();

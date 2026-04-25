@@ -255,6 +255,7 @@
   - RMCBoxMagazinePistolM1984HPEmptyBuild
   - RMCDividerConstruction
   - RMCBoxMagazinePistolMK80EmptyBuild
+  - AU14BoxMagazinePistolL165A1EmptyBuild
   - RMCDividerConstruction
   - RMCBoxMagazinePistolSU6EmptyBuild
   - RMCDividerConstruction
@@ -293,6 +294,12 @@
   id: RMCBoxMagazinePistolMK80EmptyBuild
   name: MK80 magazine box
   prototype: RMCBoxMagazinePistolMK80Empty
+
+- type: rmcConstruction
+  parent: RMCCardboardBuildBase
+  id: AU14BoxMagazinePistolL165A1EmptyBuild
+  name: L165A1 magazine box
+  prototype: AU14BoxMagazinePistolL165A1Empty
 
 - type: rmcConstruction
   parent: RMCCardboardBuildBase

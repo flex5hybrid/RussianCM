@@ -160,6 +160,9 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/clf_armband.rsi
       state: armband
+  - type: JobTitleChanger
+    jobTitle: CLF Fighter
+    override: true
 
 # HEFA
 - type: entity

@@ -55,10 +55,6 @@
         whitelist:
           tags:
           - RMCMagazineXM43E1
-  - type: GunUserWhitelist
-    whitelist:
-      components:
-      - SniperWhitelist
   - type: GunRequiresWield
   - type: Corrodible
     isCorrodible: false

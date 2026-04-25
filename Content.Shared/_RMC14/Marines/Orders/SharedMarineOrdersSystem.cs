@@ -2,10 +2,14 @@ using Content.Shared._RMC14.Evasion;
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared.Actions;
 using Content.Shared.Damage;
+using Content.Shared.Humanoid;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Systems;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Network;
 using Robust.Shared.Timing;
 
 namespace Content.Shared._RMC14.Marines.Orders;
@@ -13,11 +17,13 @@ namespace Content.Shared._RMC14.Marines.Orders;
 public abstract class SharedMarineOrdersSystem : EntitySystem
 {
     [Dependency] private readonly SharedActionsSystem _actions = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly EntityLookupSystem _entityLookup = default!;
     [Dependency] private readonly EvasionSystem _evasionSystem = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly MovementSpeedModifierSystem _movementSpeed = default!;
+    [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly SkillsSystem _skills = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
 
@@ -178,7 +184,72 @@ public abstract class SharedMarineOrdersSystem : EntitySystem
             AddOrder<T>(receiver, level, duration);
         }
 
+        // Order Handler, checks which order should be played - server side only
+        if (_net.IsServer && (typeof(T) == typeof(MoveOrderComponent) || typeof(T) == typeof(FocusOrderComponent)|| typeof(T) == typeof(HoldOrderComponent)))
+        {
+            SoundSpecifier? sound = null;
+            if (typeof(T) == typeof(MoveOrderComponent))
+                sound = GetMoveSound(orders);
+            else if (typeof(T) == typeof(FocusOrderComponent))
+                sound = GetFocusSound(orders);
+            else if (typeof(T) == typeof(HoldOrderComponent))
+                sound = GetHoldSound(orders);
+
+            if (sound != null)
+            {
+                _audio.PlayPvs(sound, orders.Owner);
+            }
+        }
+
         return true;
+    }
+
+    private SoundSpecifier? GetMoveSound(Entity<MarineOrdersComponent> orders)
+    {
+        // Check entity's gender from HumanoidAppearanceComponent
+        if (TryComp<HumanoidAppearanceComponent>(orders.Owner, out var appearance))
+        {
+            if (appearance.Sex == Sex.Male && orders.Comp.MoveOrderSoundMale != null)
+                return orders.Comp.MoveOrderSoundMale;
+
+            if (appearance.Sex == Sex.Female && orders.Comp.MoveOrderSoundFemale != null)
+                return orders.Comp.MoveOrderSoundFemale;
+        }
+
+        // Fallback to male sound
+        return orders.Comp.MoveOrderSound ?? orders.Comp.MoveOrderSoundMale;
+    }
+
+    private SoundSpecifier? GetFocusSound(Entity<MarineOrdersComponent> orders)
+    {
+        // Check entity's gender from HumanoidAppearanceComponent
+        if (TryComp<HumanoidAppearanceComponent>(orders.Owner, out var appearance))
+        {
+            if (appearance.Sex == Sex.Male && orders.Comp.FocusOrderSoundMale != null)
+                return orders.Comp.FocusOrderSoundMale;
+
+            if (appearance.Sex == Sex.Female && orders.Comp.FocusOrderSoundFemale != null)
+                return orders.Comp.FocusOrderSoundFemale;
+        }
+
+        // Fallback to male sound
+        return orders.Comp.FocusOrderSound ?? orders.Comp.FocusOrderSoundMale;
+    }
+
+    private SoundSpecifier? GetHoldSound(Entity<MarineOrdersComponent> orders)
+    {
+        // Check entity's gender from HumanoidAppearanceComponent
+        if (TryComp<HumanoidAppearanceComponent>(orders.Owner, out var appearance))
+        {
+            if (appearance.Sex == Sex.Male && orders.Comp.HoldOrderSoundMale != null)
+                return orders.Comp.HoldOrderSoundMale;
+
+            if (appearance.Sex == Sex.Female && orders.Comp.HoldOrderSoundFemale != null)
+                return orders.Comp.HoldOrderSoundFemale;
+        }
+
+        // Fallback to male sound
+        return orders.Comp.HoldOrderSound ?? orders.Comp.HoldOrderSoundMale;
     }
 
     /// <summary>

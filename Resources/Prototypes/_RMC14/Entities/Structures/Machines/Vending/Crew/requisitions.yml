@@ -308,7 +308,7 @@
         boxAmount: 3
         boxSlots: 3
       - id: RMCPacketGrenadeIncendiaryFilled
-        name: 30mm HIDP grenade packet
+        name: 30mm HIAM grenade packet
         box: RMCGrenadeIncendiary
         boxAmount: 3
         boxSlots: 3

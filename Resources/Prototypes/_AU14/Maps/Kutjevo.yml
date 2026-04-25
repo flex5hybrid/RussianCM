@@ -1,0 +1,14 @@
+- type: gameMap
+  id: auKutjevo
+  mapName: Kutjevo Biolab
+  mapPath: /Maps/_AU14/kutjevo.yml
+  minPlayers: 0
+  maxPlayers: 200
+  maxRandomOffset: 0
+  randomRotation: false
+  stations:
+    kutjevo:
+      stationProto: StandardUNMCWarship
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Kutjevo Biolab'

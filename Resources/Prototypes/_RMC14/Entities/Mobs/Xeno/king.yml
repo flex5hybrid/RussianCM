@@ -12,7 +12,7 @@
   - type: GhostRole
     name: rmc-job-name-xeno-king
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/King/king.rsi
+    sprite: _AU14/Mobs/Xenos/King/king.rsi # AU14-Edit
   - type: MobState
     allowedStates:
     - Alive
@@ -21,7 +21,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      1500: Critical
+      800: Critical
       1600: Dead
   - type: Tag
     tags:

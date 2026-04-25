@@ -18,7 +18,7 @@ rmc-health-analyzer-advice-defib = [color=yellow][font="Emoji"]⚡[/font][/color
 rmc-health-analyzer-advice-defib-repeated = [color=yellow][font="Emoji"]⚡[/font][/color] Apply repeated shocks via defibrillator.
 rmc-health-analyzer-advice-cpr = [color=skyblue][font="Emoji"]🫀[/font][/color] Perform CPR regularly to prevent braindeath.
 
-rmc-health-analyzer-advice-larva-surgery = [color=purple][font="Emoji"]🐛[/font][/color] Take patient to a surgical table to perform embryo removal surgery.
+rmc-health-analyzer-advice-larva-surgery = [color=purple][font="Emoji"]🐛[/font][/color] Further evaluate patient for disease.
 
 rmc-health-analyzer-advice-brute-wounds = [color=green][font="Emoji"]🩹[/font][/color] Use trauma kits or surgical line to repair the lacerated areas.
 rmc-health-analyzer-advice-burn-wounds = [color=orange][font="Emoji"]🩹[/font][/color] Use burn kits or synth-graft to repair the burned areas.

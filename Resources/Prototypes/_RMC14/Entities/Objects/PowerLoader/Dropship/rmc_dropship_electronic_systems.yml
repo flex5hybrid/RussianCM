@@ -5,9 +5,6 @@
   components:
   - type: Sprite
     sprite: _RMC14/Objects/dropship_electronic_system_attachments.rsi
-  - type: DropshipFabricatorPrintable
-    category: Equipment
-    cost: 800
   - type: PowerLoaderGrabbable
     delay: 1
   - type: DropshipElectronicSystem
@@ -46,9 +43,6 @@
     sprite:
       sprite: _RMC14/Objects/dropship_electronic_system_attachments.rsi
       state: spotlights_off
-  - type: DropshipFabricatorPrintable
-    category: Equipment
-    cost: 50
   - type: DropshipSpotlight
 
 - type: entity
@@ -64,9 +58,6 @@
     sprite:
       sprite: _RMC14/Objects/dropship_electronic_system_attachments.rsi
       state: lz_detector_installed
-  - type: DropshipFabricatorPrintable
-    category: Equipment
-    cost: 50
   - type: CameraSignalGranter
     protoIds:
     - RMCMonitorCameraLandingZone

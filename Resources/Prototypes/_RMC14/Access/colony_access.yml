@@ -31,9 +31,19 @@
   id: CMAccessColonyArmory
   name: rmc-access-colony-armory
 
+
+- type: accessLevel
+  id: AUAccessPrison
+  name: au-access-prison
+
 # this is used to allow colony doctors into their chem but not marine chem
 - type: accessLevel
   id: CMAccessColonyChem
+
+# Grants access to manage player-operated shopkeeper vendor machines
+- type: accessLevel
+  id: AU14AccessShopkeep
+  name: au14-access-shopkeep
 
 # PVE Hybrisa Exclusive
 - type: accessLevel

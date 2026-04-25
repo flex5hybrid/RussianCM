@@ -601,6 +601,8 @@ namespace Content.Server.Database
         public bool PlaytimePerks { get; set; } = true;
         public string XenoPrefix { get; set; } = string.Empty;
         public string XenoPostfix { get; set; } = string.Empty;
+        public string? Allegiance { get; set; }
+        public string? Origin { get; set; }
     }
 
     public class Job

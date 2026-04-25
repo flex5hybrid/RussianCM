@@ -594,6 +594,7 @@
   - CMPPeakedCapRMC
 
 # Synthetic
+
 - type: loadoutGroup
   id: SynthUniformRMC
   name: rmc-loadout-group-synthetic-uniform

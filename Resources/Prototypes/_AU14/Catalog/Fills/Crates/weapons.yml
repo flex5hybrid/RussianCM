@@ -1,0 +1,13 @@
+# RMC
+
+- type: entity
+  id: AU14CrateL165A1
+  parent: RMCCrateWeapons
+  name: L165A1 Hand Cannon Crate (x2)
+  components:
+  - type: StorageFill
+    contents:
+    - id: AU14GunCasePistolL165A1
+      amount: 2
+    - id: AU14MagazinePistolL165A1
+      amount: 4

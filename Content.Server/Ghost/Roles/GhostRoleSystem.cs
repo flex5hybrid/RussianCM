@@ -52,6 +52,7 @@ public sealed class GhostRoleSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly PopupSystem _popupSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
+    [Dependency] private readonly Content.Server.GameTicking.GameTicker _gameTicker = default!;
 
     private uint _nextRoleIdentifier;
     private bool _needsUpdateGhostRoleCount = true;
@@ -127,10 +128,6 @@ public sealed class GhostRoleSystem : EntitySystem
 
     public void OpenEui(ICommonSession session)
     {
-        if (session.AttachedEntity is not { Valid: true } attached ||
-            !HasComp<GhostComponent>(attached))
-            return;
-
         if (_openUis.ContainsKey(session))
             CloseEui(session);
 
@@ -268,25 +265,29 @@ public sealed class GhostRoleSystem : EntitySystem
         }
     }
 
+
+
     private bool TryTakeover(ICommonSession player, uint identifier)
     {
-        // TODO: the following two checks are kind of redundant since they should already be removed
-        //           from the raffle
-        // can't win if you are disconnected (although you shouldn't be a candidate anyway)
-        if (player.Status != SessionStatus.InGame)
+        if (player.Status == SessionStatus.Disconnected || player.Status == SessionStatus.Zombie)
+        {
+            Log.Debug($"TryTakeover: session {player.Name} ({player.UserId}) has invalid status {player.Status}");
             return false;
+        }
 
-        // can't win if you are no longer a ghost (e.g. if you returned to your body)
-        if (player.AttachedEntity == null || !HasComp<GhostComponent>(player.AttachedEntity))
-            return false;
+        // Attempt takeover and log result for diagnostics (helps for lobby/preview sessions)
+        var attached = player.AttachedEntity.HasValue ? player.AttachedEntity.Value.ToString() : "(none)";
+        Log.Debug($"TryTakeover: attempting takeover for session {player.Name} ({player.UserId}), status={player.Status}, attached={attached}, roleId={identifier}");
 
         if (Takeover(player, identifier))
         {
             // takeover successful, we have a winner! remove the winner from other raffles they might be in
+            Log.Debug($"TryTakeover: takeover succeeded for session {player.Name} ({player.UserId})");
             LeaveAllRaffles(player);
             return true;
         }
 
+        Log.Debug($"TryTakeover: takeover failed for session {player.Name} ({player.UserId})");
         return false;
     }
 
@@ -465,6 +466,7 @@ public sealed class GhostRoleSystem : EntitySystem
     /// <param name="identifier">ID of the ghost role.</param>
     public void Request(ICommonSession player, uint identifier)
     {
+        // Allow any connected session (including lobby/preview) to request or join raffles.
         if (!_ghostRoles.TryGetValue(identifier, out var roleEnt))
             return;
 
@@ -496,6 +498,50 @@ public sealed class GhostRoleSystem : EntitySystem
         if (player.AttachedEntity != null)
             _adminLogger.Add(LogType.GhostRoleTaken, LogImpact.Low, $"{player:player} took the {role.Comp.RoleName:roleName} ghost role {ToPrettyString(player.AttachedEntity.Value):entity}");
 
+        // Try to get the mind we just created/transferred and attach the session directly to its entity.
+        // This forces the client out of the lobby UI into the game view if takeover succeeded while in preview.
+        // Try to get the mind we just created/transferred and attach the session directly to its entity.
+        if (_mindSystem.TryGetMind(player.UserId, out var mid, out var mindComp) && mindComp?.CurrentEntity != null)
+        {
+            var entity = mindComp.CurrentEntity.Value;
+
+            // First ensure the session is marked InGame so GameTicker/client expect gameplay state.
+            if (player.Status != SessionStatus.InGame && player.Status != SessionStatus.Disconnected && player.Status != SessionStatus.Zombie)
+            {
+                try
+                {
+                    _playerManager.SetStatus(player, SessionStatus.InGame);
+                    Log.Debug($"Takeover: SetStatus(InGame) called for {player.Name}");
+                }
+                catch (Exception e)
+                {
+                    Log.Error($"Failed to set player session to InGame after ghost role takeover for {player.Name}: {e}");
+                }
+            }
+
+            try
+            {
+                var attached = _playerManager.SetAttachedEntity(player, entity, true);
+                Log.Debug($"Takeover: SetAttachedEntity result for {player.Name} -> {entity}: {attached}");
+                if (attached)
+                {
+                    // Inform GameTicker to run its join logic which will send the client JoinGame event and update server state
+                    try
+                    {
+                        _gameTicker.PlayerJoinGame(player);
+                    }
+                    catch (Exception e)
+                    {
+                        Log.Warning($"Failed to call GameTicker.PlayerJoinGame for takeover winner {player.Name}: {e}");
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Log.Warning($"Failed to SetAttachedEntity for takeover winner {player.Name}: {e}");
+            }
+        }
+
         CloseEui(player);
         return true;
     }
@@ -516,18 +562,23 @@ public sealed class GhostRoleSystem : EntitySystem
         if (!Resolve(roleUid, ref role))
             return;
 
-        DebugTools.AssertNotNull(player.ContentData());
-
+        // Sessions in the lobby may not have ContentData or an attached entity; don't require them.
         // After taking a ghost role, the player cannot return to the original body, so wipe the player's current mind
-        // unless it is a visiting mind
-        if(_mindSystem.TryGetMind(player.UserId, out _, out var mind) && !mind.IsVisitingEntity)
+        if (_mindSystem.TryGetMind(player.UserId, out _, out var mind) && !mind.IsVisitingEntity)
             _mindSystem.WipeMind(player);
 
         var newMind = _mindSystem.CreateMind(player.UserId,
             Comp<MetaDataComponent>(mob).EntityName);
 
-        _mindSystem.SetUserId(newMind, player.UserId);
+        Log.Debug($"GhostRoleInternalCreateMindAndTransfer: created mind {newMind.Owner} for player {player.Name} (user {player.UserId}) targeting mob {mob}");
+
+        // Transfer the mind to the mob first, then set the user id. Setting the user id will attach
+        // the player's session to the mind's CurrentEntity if they have an active session.
         _mindSystem.TransferTo(newMind, mob);
+        Log.Debug($"GhostRoleInternalCreateMindAndTransfer: transferred mind {newMind.Owner} to mob {mob}. CurrentEntity={newMind.Comp.OwnedEntity}");
+
+        _mindSystem.SetUserId(newMind, player.UserId);
+        Log.Debug($"GhostRoleInternalCreateMindAndTransfer: set user id on mind {newMind.Owner} (user {player.UserId})");
 
         _roleSystem.MindAddRoles(newMind.Owner, role.MindRoles, newMind.Comp);
 

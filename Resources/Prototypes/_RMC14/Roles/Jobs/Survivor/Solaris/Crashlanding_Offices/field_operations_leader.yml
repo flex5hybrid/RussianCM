@@ -19,6 +19,18 @@
     - type: Skills
       preset: RMCSkillPresetSurvivorWeYaPMCCommander
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: RMCPointing
     - type: CommandAccent
     - type: InnateCommandSpeech
@@ -32,8 +44,6 @@
       factions:
       - WeYa
       - Civilian
-    - type: AssignSquad
-      squad: SquadPMC
     - type: JobPrefix
       prefix: rmc-job-prefix-pmc-leader
     - type: TacticalMapIcon

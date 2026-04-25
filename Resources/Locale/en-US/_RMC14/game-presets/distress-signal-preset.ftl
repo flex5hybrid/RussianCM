@@ -9,6 +9,8 @@ cm-distress-signal-minorxenovictory = [color=purple]The xenonids hijacked the me
 
 rmc-distress-signal-minorxenovictory-timeout = [color=purple]The xenonids hijacked the metal bird and entered the metal hive, igniting a brutal battle in the sky.[/color] [color=yellow]In the chaos, the vessel lost control and crashed into the surface before everyone could evacuate. All hands were lost.[/color] [color=purple]Yet, the surface remains overrun, and the xenonids endure.[/color]
 
+rmc-distress-signal-alldied-timeout = [color=yellow]The hijacked vessel crashed, and in the aftermath neither side could claim victory. The wreckage drifts silently, all hands lost.[/color]
+
 cm-distress-signal-alldied = [color=yellow]Neither marines nor xenonids survived the carnage. The battlefield lies silent, a graveyard for both.[/color]
 cm-distress-signal-none = [color=yellow]ARES 3.2 Log Error: Operation records are missing or corrupted. Please contact support with error code 404 for further assistance.[/color]
 

@@ -1,6 +1,7 @@
 using Content.Shared._RMC14.Marines.Skills;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Audio;
 
 namespace Content.Shared._RMC14.Marines.Orders;
 
@@ -63,4 +64,38 @@ public sealed partial class MarineOrdersComponent : Component
 
     [DataField, AutoNetworkedField]
     public bool Intrinsic = true;
+
+    // Gender-based "Move!" Voicelines.
+    [DataField, AutoNetworkedField]
+    public SoundSpecifier? MoveOrderSoundMale;
+
+    [DataField, AutoNetworkedField]
+    public SoundSpecifier? MoveOrderSoundFemale;
+
+    // Fallback for backwards compatibility
+    [DataField, AutoNetworkedField]
+    public SoundSpecifier? MoveOrderSound;
+
+    // Gender-based "Focus!" Voicelines.
+    [DataField, AutoNetworkedField]
+    public SoundSpecifier? FocusOrderSoundMale;
+
+    [DataField, AutoNetworkedField]
+    public SoundSpecifier? FocusOrderSoundFemale;
+
+    // Fallback for backwards compatibility
+    [DataField, AutoNetworkedField]
+    public SoundSpecifier? FocusOrderSound;
+
+    // Gender-based "Hold!" Voicelines.
+    [DataField, AutoNetworkedField]
+    public SoundSpecifier? HoldOrderSoundMale;
+
+    [DataField, AutoNetworkedField]
+    public SoundSpecifier? HoldOrderSoundFemale;
+
+    // Fallback for backwards compatibility
+    [DataField, AutoNetworkedField]
+    public SoundSpecifier? HoldOrderSound;
+
 }

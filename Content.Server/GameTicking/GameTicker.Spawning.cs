@@ -28,18 +28,140 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 using Content.Server._RMC14.Announce;
+using Content.Server._RMC14.Xenonids.Hive;
+using Content.Server.AU14.Round;
+using Content.Server.AU14.Threats;
+using Content.Shared._RMC14.Xenonids.Hive;
+using Content.Shared.AU14.util;
 
 namespace Content.Server.GameTicking
 {
     public sealed partial class GameTicker
     {
+        [Dependency] private readonly XenoHiveSystem _hive = default!;
+
         [Dependency] private readonly IAdminManager _adminManager = default!;
         [Dependency] private readonly SharedJobSystem _jobs = default!;
         [Dependency] private readonly AdminSystem _admin = default!;
         [Dependency] private readonly MarinePresenceAnnounceSystem _marinePresenceAnnounce = default!;
+        [Dependency] private readonly AuJobSelectionSystem _auJobSelectionSystem = default!;
+        [Dependency] private readonly AuThreatSystem _auThreatSystem = default!;
+        [Dependency] private readonly Content.Server.AU14.ThirdParty.AuThirdPartySystem _auThirdParty = default!;
+        [Dependency] private readonly Content.Server.AU14.Allegiance.AllegianceSystem _allegianceSystem = default!;
+        [Dependency] private readonly Content.Server.AU14.Origin.OriginSystem _originSystem = default!;
 
         public static readonly EntProtoId ObserverPrototypeName = "MobObserver";
         public static readonly EntProtoId AdminObserverPrototypeName = "RMCAdminObserver";
+
+        /// <summary>
+        /// Determines which platoon a job belongs to based on its ID.
+        /// Returns null if the job doesn't belong to a specific platoon.
+        /// </summary>
+        private PlatoonPrototype? GetPlatoonForJob(string? jobId)
+        {
+            if (string.IsNullOrEmpty(jobId))
+                return null;
+
+            if (jobId.Contains("GOVFOR", StringComparison.OrdinalIgnoreCase))
+                return _platoonSpawnRuleSystem.SelectedGovforPlatoon;
+
+            if (jobId.Contains("OPFOR", StringComparison.OrdinalIgnoreCase))
+                return _platoonSpawnRuleSystem.SelectedOpforPlatoon;
+
+            return null;
+        }
+
+        /// <summary>
+        /// Resolves the correct character profile for a player based on allegiance.
+        /// If the player is ignoring allegiance or the job/platoon has no requirements, returns the selected profile.
+        /// If the selected profile doesn't match, searches other profiles.
+        /// Returns null if no matching profile is found and the player isn't ignoring allegiance.
+        /// </summary>
+        private HumanoidCharacterProfile? ResolveProfileForAllegiance(
+            NetUserId userId,
+            HumanoidCharacterProfile selectedProfile,
+            string? jobId)
+        {
+            HumanoidCharacterProfile? FindMatchingProfile(Func<HumanoidCharacterProfile, bool> predicate)
+            {
+                if (_prefsManager.TryGetCachedPreferences(userId, out var prefs))
+                {
+                    foreach (var (_, profile) in prefs.Characters)
+                    {
+                        if (profile is HumanoidCharacterProfile humanoid && predicate(humanoid))
+                            return humanoid;
+                    }
+                }
+
+                return null;
+            }
+
+            // If player is ignoring allegiance, always use selected profile
+            if (_allegianceSystem.IsIgnoringAllegiance(userId))
+                return selectedProfile;
+
+            JobPrototype? jobProto = null;
+            if (jobId != null)
+                _prototypeManager.TryIndex<JobPrototype>(jobId, out jobProto);
+
+            bool MeetsJobRequirements(HumanoidCharacterProfile profile)
+            {
+                if (jobProto == null)
+                    return true;
+
+                return _allegianceSystem.DoesCharacterMeetJobAllegiance(profile, jobProto)
+                       && _allegianceSystem.DoesCharacterMeetJobOrigin(profile, jobProto);
+            }
+
+            var platoon = GetPlatoonForJob(jobId);
+
+            // No platoon for this job = no allegiance restriction
+            if (platoon == null)
+            {
+                if (MeetsJobRequirements(selectedProfile))
+                    return selectedProfile;
+
+                return FindMatchingProfile(MeetsJobRequirements);
+            }
+
+            // No allegiance set on the platoon = no restriction
+            if (platoon.Allegiance == null)
+            {
+                if (MeetsJobRequirements(selectedProfile))
+                    return selectedProfile;
+
+                return FindMatchingProfile(MeetsJobRequirements);
+            }
+
+            // Job ignores allegiance
+            if (jobProto is { IgnoreAllegiance: true })
+            {
+                if (MeetsJobRequirements(selectedProfile))
+                    return selectedProfile;
+
+                return FindMatchingProfile(MeetsJobRequirements);
+            }
+
+            // Check if the selected profile matches
+            if (_allegianceSystem.IsAllegianceApplicableForPlatoon(selectedProfile, platoon, jobProto))
+                return selectedProfile;
+
+            // Selected doesn't match — search all character profiles
+            if (_prefsManager.TryGetCachedPreferences(userId, out var prefs))
+            {
+                var match = _allegianceSystem.FindApplicableCharacterForPlatoon(
+                    prefs.Characters,
+                    prefs.SelectedCharacterIndex,
+                    platoon,
+                    jobProto);
+
+                if (match != null)
+                    return match;
+            }
+
+            // No matching profile found
+            return null;
+        }
 
         /// <summary>
         /// How many players have joined the round through normal methods.
@@ -66,6 +188,8 @@ namespace Content.Server.GameTicking
             Dictionary<NetUserId, HumanoidCharacterProfile> profiles,
             bool force)
         {
+            _distressSignal.TheHive = _hive.CreateHive("xenonid hive", "CMXenoHive");
+
             // Allow game rules to spawn players by themselves if needed. (For example, nuke ops or wizard)
             RaiseLocalEvent(new RulePlayerSpawningEvent(readyPlayers, profiles, force));
 
@@ -91,8 +215,11 @@ namespace Content.Server.GameTicking
                 }
             }
 
+            _auJobSelectionSystem.AssignThreatAndThirdPartyJobs(profiles);
+
             var spawnableStations = GetSpawnableStations();
             var assignedJobs = _stationJobs.AssignJobs(profiles, spawnableStations);
+            _auThreatSystem.SpawnThreatAtRoundStart(_auRoundSystem._selectedthreat, DefaultMap, assignedJobs);
 
             _stationJobs.AssignOverflowJobs(ref assignedJobs, playerNetIds, profiles, spawnableStations);
 
@@ -119,13 +246,29 @@ namespace Content.Server.GameTicking
             // Spawn everybody in!
             foreach (var (player, (job, station)) in assignedJobs)
             {
+                if (job != null && (job == "AU14JobThreatLeader" || job == "AU14JobThreatMember"))
+                    continue;
                 if (job == null)
                     continue;
 
-                SpawnPlayer(_playerManager.GetSessionById(player), profiles[player], station, job, false);
+                // Allegiance check: resolve the correct character profile for this player's job/platoon
+                var selectedProfile = profiles[player];
+                var resolvedProfile = ResolveProfileForAllegiance(player, selectedProfile, job);
+
+                if (resolvedProfile == null)
+                {
+                    // No matching character for this platoon's allegiance — keep player in lobby
+                    var playerSession = _playerManager.GetSessionById(player);
+                    _chatManager.DispatchServerMessage(playerSession,
+                        Loc.GetString("allegiance-no-matching-character"));
+                    continue;
+                }
+
+                SpawnPlayer(_playerManager.GetSessionById(player), resolvedProfile, station, job, false);
             }
 
             RefreshLateJoinAllowed();
+            _auThirdParty.StartThirdPartySpawning(_auRoundSystem._selectedthreat, assignedJobs);
 
             // Allow rules to add roles to players who have been spawned in. (For example, on-station traitors)
             RaiseLocalEvent(new RulePlayerJobsAssignedEvent(
@@ -154,7 +297,18 @@ namespace Content.Server.GameTicking
                     return;
             }
 
-            SpawnPlayer(player, character, station, jobId, lateJoin, silent);
+            // Allegiance check: resolve the correct character profile for this job/platoon
+            var resolvedProfile = ResolveProfileForAllegiance(player.UserId, character, jobId);
+
+            if (resolvedProfile == null)
+            {
+                // No matching character for this platoon's allegiance — keep player in lobby
+                _chatManager.DispatchServerMessage(player,
+                    Loc.GetString("allegiance-no-matching-character"));
+                return;
+            }
+
+            SpawnPlayer(player, resolvedProfile, station, jobId, lateJoin, silent);
         }
 
         private void SpawnPlayer(ICommonSession player,
@@ -271,6 +425,9 @@ namespace Content.Server.GameTicking
             var mobMaybe = _stationSpawning.SpawnPlayerCharacterOnStation(station, jobId, character);
             DebugTools.AssertNotNull(mobMaybe);
             var mob = mobMaybe!.Value;
+
+            // Apply origin effects (components, accents, items)
+            _originSystem.ApplyOrigin(mob, character);
 
             _mind.TransferTo(newMind, mob);
 

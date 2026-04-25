@@ -6,6 +6,13 @@
   name: Urist C.M. McHands
   suffix: RMC14
   components:
+  - type: Butcherable
+    butcheringType: Knife
+    waitForRot: true
+    spawned:
+    - id: FoodMeatHuman
+      amount: 6
+  - type: Fingerprint
   - type: Fixtures
     fixtures:
       fix1:
@@ -84,7 +91,7 @@
   - type: RMCLastBodyScanResult
   - type: HolocardState
   - type: Hunger
-    baseDecayRate: 0.025
+    baseDecayRate: 0.03125
     thresholds:
       Overfed: 550
       Okay: 400
@@ -98,7 +105,7 @@
       Starving: 1
       Dead: 0
   - type: Thirst
-    baseDecayRate: 0.01666666666
+    baseDecayRate: 0.02083
   - type: Body
     prototype: Human
     requiredLegs: 2
@@ -232,8 +239,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      150: Critical
-      200: Dead
+      200: Critical
+      275: Dead
   - type: MobStateActions
     actions:
       Critical:
@@ -244,7 +251,7 @@
     thresholds: [ ]
   - type: NpcFactionMember
     factions:
-    - UNMC
+    - AUColonist
   - type: RMCNightVisionVisible
   - type: CrashLandable
   - type: StunShakeable
@@ -355,10 +362,6 @@
   - type: IVDripTarget
   - type: FixedIdentity
     name: rmc-host
-    whitelist:
-      components:
-      - Xeno
-  - type: HiddenAppearance
     whitelist:
       components:
       - Xeno

@@ -6,51 +6,51 @@
   name: ColMarTech food vendor
   description: Marine Food Vendor, containing standard military Prepared Meals.
   components:
-    - type: Sprite
-      sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/food.rsi
-    - type: CMAutomatedVendor
-      hackable: true
-      sections:
-        - name: Festive Meals
-          holidays:
-            - FestiveSeason
-          entries:
-            - id: RMCMarinePreparedMealCookies
-              amount: 25
-            - id: RMCMarinePreparedMealGingerbread
-              amount: 25
-            - id: RMCMarinePreparedMealFruitcake
-              amount: 25
-        - name: Prepared Meals
-          entries:
-            - id: CMMRE
-              name: UNMC Meal Ready to Eat
-              amount: 15
-            - id: CMMarinePreparedMealChicken
-              amount: 15
-            - id: CMMarinePreparedMealCornbread
-              amount: 15
-            - id: CMMarinePreparedMealPasta
-              amount: 15
-            - id: CMMarinePreparedMealPizza
-              amount: 15
-            - id: CMMarinePreparedMealPork
-              amount: 15
-            - id: CMMarinePreparedMealTofu
-              amount: 15
-            - id: CMMarineProteinBar
-              amount: 50
-        - name: Flasks
-          entries:
-            - id: CMCanteen
-              amount: 10
-            - id: CMMetalFlask
-              name: металлическая фляжка (пустая) # Изменение локализации 01.10.2025 Advancer RuMC
-              amount: 10
-            - id: CMMarineFlask
-              amount: 5
-            - id: CMWEYAFlask
-              amount: 5
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/food.rsi
+  - type: CMAutomatedVendor
+    hackable: true
+    sections:
+    - name: Festive Meals
+      holidays:
+      - FestiveSeason
+      entries:
+      - id: RMCMarinePreparedMealCookies
+        amount: 25
+      - id: RMCMarinePreparedMealGingerbread
+        amount: 25
+      - id: RMCMarinePreparedMealFruitcake
+        amount: 25
+    - name: Prepared Meals
+      entries:
+      - id: CMMRE
+        name: Meal Ready to Eat
+        amount: 25
+      - id: CMMarinePreparedMealChicken
+        amount: 20
+      - id: CMMarinePreparedMealCornbread
+        amount: 20
+      - id: CMMarinePreparedMealPasta
+        amount: 20
+      - id: CMMarinePreparedMealPizza
+        amount: 20
+      - id: CMMarinePreparedMealPork
+        amount: 20
+      - id: CMMarinePreparedMealTofu
+        amount: 20
+      - id: CMMarineProteinBar
+        amount: 50
+    - name: Flasks
+      entries:
+      - id: CMCanteen
+        amount: 50
+      - id: CMMetalFlask
+        name: metal flask (empty)
+        amount: 10
+      - id: CMMarineFlask
+        amount: 5
+      - id: CMWEYAFlask
+        amount: 5
 
 - type: entity
   parent: ColMarTechFood
@@ -61,51 +61,6 @@
     - type: Sprite
       sprite: _RMC14/Structures/Machines/VendingMachines/NutriCo/food.rsi
       offset: 0, 0.5
-
-# RCM food vendor
-
-- type: entity
-  parent: ColMarTechFood
-  id: RMCNutriCoVendorRCM
-  suffix: PVE
-  name: We-Ya Section AutoChef
-  description: A repurposed NutriCo machine refilled with recipes and components for Three Suns Empire cuisine by Weston-Yamada. Equally as inedible as its Nations counterpart, but at least it looks more appealing. Slightly.
-  components:
-  - type: Sprite
-    sprite: _RMC14/Structures/Machines/VendingMachines/NutriCo/food.rsi
-    offset: 0, 0.5
-  - type: CMAutomatedVendor
-    hackable: true
-    sections:
-    - name: Prepared Meals
-      entries:
-      - id: RMCMRETSE
-        amount: 15
-      - id: RMCMarinePreparedMealRCMFish
-        amount: 15
-      - id: RMCMarinePreparedMealRCMKatsu
-        amount: 15
-      - id: RMCMarinePreparedMealRCMSausage
-        amount: 15
-      - id: RMCMarinePreparedMealRCMMeat
-        amount: 15
-      - id: RMCMarinePreparedMealRCMTikka
-        amount: 15
-      - id: RMCTrayEmptyRCM
-        amount: 15
-      - id: RMCMarineRCMSnackBar
-        amount: 50
-    - name: Flasks
-      entries:
-      - id: CMCanteen
-        amount: 15
-      - id: CMMetalFlask
-        name: metal flask (empty)
-        amount: 15
-      - id: CMWEYAFlask
-        amount: 10
-      - id: RMCWeYaThermos
-        amount: 1
 
 - type: entity
   parent: RMCNutriCoVendor
@@ -120,7 +75,7 @@
     - name: Prepared Meals
       entries:
       - id: RMCMRESPP
-        name: SPP Combat Ration
+        name: UPP Combat Ration
         amount: 15
       - id: RMCMarinePreparedMealSPPBanush
         amount: 15
@@ -153,45 +108,6 @@
         amount: 10
 
 - type: entity
-  parent: RMCNutriCoVendor
-  id: RMCVendorNutriCoFoodPMC
-  name: food dispenser
-  suffix: PMC
-  description: A food dispenser, capable of distributing food containing all the essential vitamins and nutrients anyone could ever need.
-  components:
-  - type: CMAutomatedVendor
-    hackable: true
-    sections:
-    - name: Prepared Meals
-      entries:
-      - id: RMCMREWeYa
-        name: PMC Combat Ration
-        amount: 15
-      - id: RMCMarinePreparedMealPMCIkanBakar
-        amount: 15
-      - id: RMCMarinePreparedMealPMCSoba
-        amount: 15
-      - id: RMCMarinePreparedMealPMCAlooGobi
-        amount: 15
-      - id: RMCMarinePreparedMealPMCFishAndChips
-        amount: 15
-      - id: RMCMarinePreparedMealPMCButterChicken
-        amount: 15
-      - id: RMCMarinePreparedMealPMCBirria
-        amount: 15
-      - id: RMCMarinePreparedMealPMCBobotie
-        amount: 15
-    - name: Flasks
-      entries:
-      - id: CMCanteen
-        amount: 10
-      - id: CMMetalFlask
-        name: metal flask (empty)
-        amount: 10
-      - id: CMWEYAFlask
-        amount: 10
-
-- type: entity
   parent: ColMarTechBaseAnchorable
   id: CMVendorBooze
   name: Booze-O-Mat
@@ -215,20 +131,15 @@
     - "CMAccessColonyPublic"
     hackable: true
     scaling: false
-    randomUnstockAmount: 3 # between 1 and 3
-    randomEmptyChance: 0.25 # 25% chance
     sections:
     - name: Alcohol
       entries:
       - id: CMDrinkCanAle
         name: ale
-        amount: 6
+        amount: 12
       - id: CMDrinkCanBeerLite
         name: beer
-        amount: 6
-      - id: RMCDrinkCanSequoiaBeer
-        name: sequoia beer
-        amount: 6
+        amount: 12
       - id: RMCDrinkAlcoholGrenadine
         amount: 5
       - id: RMCDrinkAlcoholTequila
@@ -243,20 +154,18 @@
         amount: 5
       - id: RMCDrinkAlcoholMelonLiquor
         amount: 2
-      - id: RMCDrinkAlcoholVermouth
-        amount: 5
+#      - id: DrinkVermouthBottleFull
+#        amount: 5
       - id: RMCDrinkAlcoholGin
-        amount: 5
+        amount: 10 # TODO RMC14 5
       - id: RMCDrinkAlcoholAbsinthe
         amount: 2
-      - id: RMCDrinkAlcoholBlueCuracao
-        amount: 2
+#      - id: DrinkBlueCuracaoBottleFull
+#        amount: 2
       - id: RMCDrinkAlcoholVodka
-        amount: 5
-      - id: RMCDrinkAlcoholKahlua
-        amount: 5
-      - id: RMCDrinkAlcoholWhiskey
-        amount: 5
+        amount: 12 # TODO RMC14 5
+#      - id: DrinkCoffeeLiqueurBottleFull
+#        amount: 5
     - name: Craft Beers
       entries: []
     - name: Non-Alcohol
@@ -288,8 +197,8 @@
 - type: entity
   parent: ColMarTechBaseAnchorable
   id: CMVendorChess
-  name: Chess-O-Mat
-  description: In 2107 Red Star Drinks, a SPP-CA (Colony Administration) affiliated corporation ran a promotional sweepstakes for drinkers who had found special codes on the inside of the caps of a limited run of Red Star Vodka, shipping them a Chess-O-Mat with unlimited refills.
+  name: Chess-o-mat
+  description: In 2143 Red Star Drinks, a UPP-CA (Colony Administration) affiliated corporation ran a promotional sweepstakes for drinkers who had found special codes on the inside of the caps of a limited run of Red Star Vodka, shipping them a Chess-O-Mat with unlimited refills.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/chessomat.rsi
@@ -327,22 +236,5 @@
         name: Queen
         amount: 2
     - name: Black Pieces
-      entries:
-      - id: RMCDrinkAlcoholVodkaChessBlackPawn
-        name: Pawn
-        amount: 2
-      - id: RMCDrinkAlcoholVodkaChessBlackBishop
-        name: Bishop
-        amount: 2
-      - id: RMCDrinkAlcoholVodkaChessBlackKnight
-        name: Knight
-        amount: 2
-      - id: RMCDrinkAlcoholVodkaChessBlackRook
-        name: Rook
-        amount: 2
-      - id: RMCDrinkAlcoholVodkaChessBlackKing
-        name: King
-        amount: 2
-      - id: RMCDrinkAlcoholVodkaChessBlackQueen
-        name: Queen
-        amount: 2
+      entries: []
+    # TODO RMC14 vodka chess pieces

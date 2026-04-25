@@ -8,6 +8,9 @@
     sprite: _RMC14/Objects/Weapons/Melee/fireaxe.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Melee/fireaxe.rsi
+    slots:
+    - suitStorage
+    - Back
   - type: MeleeWeapon
     damage:
       types:

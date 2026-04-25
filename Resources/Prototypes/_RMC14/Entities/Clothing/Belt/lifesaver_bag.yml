@@ -2,7 +2,7 @@
   parent: CMBeltMedical
   id: CMBeltMedicBag
   name: M276 pattern lifesaver bag
-  description: The M276 is the standard load-bearing equipment of the UNMC. This configuration mounts a duffel bag filled with a range of injectors and light medical supplies, and is common among medics.
+  description: The M276 is the standard load-bearing equipment of the USCM. This configuration mounts a duffel bag filled with a range of injectors and light medical supplies, and is common among medics.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/medicbag/jungle-classic.rsi
@@ -15,23 +15,39 @@
     whitelist:
       tags:
       - DiscreteHealthAnalyzer
-      - BodyBag
+      - Dropper
+      - GlassBeaker
       - Bottle
       - PillPacket
       - PillCanister
       - Syringe
-      - CMAutoInjector
+      - CMSurgicalLine
+      - CMSynthGraft
       - Brutepack
+      - CMBloodPack
       - Gauze
       - Ointment
       - CMOintment
       - CMTraumaKit
       - CMBurnKit
       #      - # TODO RMC14 splints
+      - CMAutoInjector
+      - CMRollerItem
+      - BodyBag
       - RMCGlovesLatex
+      - SterileMask
+      - Hypospray
+      - CigPack
+      - RMCPenlight
+      - Flare
+      #      - # TODO RMC14 minitank (needs full implementation and a tag to fit it in here, but the item exists as CMMiniTank)
+      #      - # TODO RMC14 reagent analyzer
+      #      - # TODO RMC14 plant analyzer
       components:
+      - Hypospray
       - Defibrillator
       - Pill
+      - RMCLighter
   - type: FixedItemSizeStorage
   - type: IgnoreContentsSize
     items:
@@ -76,7 +92,7 @@
   parent: CMBeltMedicBag
   id: RMCBeltMedicBagSPP
   name: Type 41 pattern lifesaver bag
-  description: The Type 41 load rig is the standard load-bearing equipment of the SPP military. This configuration mounts a duffel bag filled with a range of injectors and light medical supplies, and is common among medics.
+  description: The Type 41 load rig is the standard load-bearing equipment of the UPP military. This configuration mounts a duffel bag filled with a range of injectors and light medical supplies, and is common among medics.
   components:
   # TODO RMC14 - Sprites
   - type: ItemCamouflage

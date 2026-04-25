@@ -20,19 +20,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-ravager
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Ravager/ravager.rsi
-    layers:
-    - map: [ "enum.XenoVisualLayers.Base", "enum.XenoShardVisualLayers.Base" ]
-      state: alive
-    - map: [ "enum.RMCDamageVisualLayers.Base" ]
-      visible: false
-    - map: [ "enum.RMCShieldVisuals.Base" ]
-      sprite: _RMC14/Effects/xeno_shields.rsi
-      visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Left" ]
-      visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Right" ]
-      visible: false
+    sprite: _AU14/Mobs/Xenos/Ravager/ravager.rsi # AU14-Edit
   - type: MobState
     allowedStates:
     - Alive
@@ -185,7 +173,7 @@
   suffix: Berserker
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Ravager/berserker_ravager.rsi
+    sprite: _AU14/Mobs/Xenos/Ravager/berserker_ravager.rsi
   - type: Xeno
     actionIds:
     - ActionXenoRest
@@ -263,7 +251,7 @@
   suffix: Hedgehog
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Ravager/hedgehog_ravager.rsi
+    sprite: _AU14/Mobs/Xenos/Ravager/hedgehog_ravager.rsi
   - type: Xeno
     actionIds:
     - ActionXenoRest

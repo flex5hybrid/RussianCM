@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCArmorVest
   id: RMCArmorVestTSEPA
-  name: TSEPA armored vest
-  description: An TSEPA armored vest that protects against some damage.
+  name: NSPA armored vest
+  description: An Neroid Sector Policing Authority armored vest that protects against some damage.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/tsepa_police_vest.rsi
@@ -28,8 +28,8 @@
 - type: entity
   parent: [RMCBaseTSEArmor, RMCBaseMarineArmorLight]
   id: RMCArmourM4TSEPA
-  name: M4 pattern light TSEPA armour
-  description: A modified variant of the M4R armor, stripped of additional riot plating for civilian officer use. A 'TSEPA' badge is sewn into the chestplate.
+  name: M4 pattern light NSPA armour
+  description: A modified variant of the M4R armor, stripped of additional riot plating for civilian officer use. A Neroid Sector Policing Authority badge is sewn into the chestplate.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/standard.rsi
@@ -45,8 +45,8 @@
 - type: entity
   parent: [RMCBaseTSEArmor, RMCBaseMarineArmorLight]
   id: RMCArmourM4TSEPAChief
-  name: M4 pattern inspector TSEPA armour
-  description: A modified variant of the M4 TSEPA armour to have the additional riot plating returned, featuring a golden insignia on the chestplate.
+  name: M4 pattern inspector NSPA armour
+  description: A modified variant of the M4 Neroid Sector Policing Authority armour to have the additional riot plating returned, feauturing a golden insignia on the chestplate.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/marshal.rsi

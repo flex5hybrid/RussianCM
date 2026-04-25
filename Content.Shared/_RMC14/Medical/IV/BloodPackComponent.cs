@@ -55,7 +55,7 @@ public sealed partial class BloodPackComponent : Component
     public ProtoId<EmotePrototype> RipEmote = "Scream";
 
     [DataField, AutoNetworkedField]
-    public Dictionary<EntProtoId<SkillDefinitionComponent>, int> SkillRequired = new() { ["RMCSkillSurgery"] = 1 };
+    public Dictionary<EntProtoId<SkillDefinitionComponent>, int> SkillRequired = new() { ["RMCSkillMedical"] = 2 };
 
     // TODO RMC-14 blood types
     [DataField, AutoNetworkedField]

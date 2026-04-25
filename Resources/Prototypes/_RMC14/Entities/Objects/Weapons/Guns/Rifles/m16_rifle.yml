@@ -174,10 +174,6 @@
         - RMCAttachmentS42xTelescopicMiniscope
       rmc-aslot-stock:
         locked: true
-        startingAttachable: RMCAttachmentM16A5Stock
-        whitelist:
-          tags:
-          - RMCAttachmentM16A5Stock
       rmc-aslot-underbarrel:
         whitelist:
           tags:
@@ -237,8 +233,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleM16
-  name: Cartridge (5.56x45)
-  description: A 5.56x45 rifle cartridge
+  name: cartridge (5.56x45mm)
+  description: "A 5.56x45mm cartridge for the M16 rifle."
   components:
   - type: Tag
     tags:

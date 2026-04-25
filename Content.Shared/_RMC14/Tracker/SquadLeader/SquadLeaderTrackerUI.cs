@@ -48,3 +48,10 @@ public sealed class SquadLeaderTrackerDemoteFireteamLeaderMsg(int fireteam) : Bo
 
 [Serializable, NetSerializable]
 public sealed class SquadLeaderTrackerChangeTrackedMsg : BoundUserInterfaceMessage;
+
+[Serializable, NetSerializable]
+public sealed class SquadLeaderTrackerSetFireteamNicknameMsg(int index, string nickname) : BoundUserInterfaceMessage
+{
+    public readonly int Index = index;
+    public readonly string Nickname = nickname;
+}

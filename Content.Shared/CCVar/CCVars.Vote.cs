@@ -177,4 +177,16 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<bool> VotekickIgnoreGhostReqInLobby =
         CVarDef.Create("votekick.ignore_ghost_req_in_lobby", true, CVar.SERVERONLY);
+
+    /// <summary>
+    ///     Controls if platoon votes should be run.
+    /// </summary>
+    public static readonly CVarDef<bool> VotePlatoonEnabled =
+        CVarDef.Create("vote.platoon_enabled", true, CVar.SERVERONLY);
+
+    /// <summary>
+    ///     Sets the duration of the platoon vote timer in seconds.
+    /// </summary>
+    public static readonly CVarDef<int> VotePlatoonDuration =
+        CVarDef.Create("vote.platoon_duration", 30, CVar.SERVERONLY);
 }

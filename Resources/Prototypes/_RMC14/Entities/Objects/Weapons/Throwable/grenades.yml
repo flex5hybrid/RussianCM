@@ -45,12 +45,6 @@
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/flashbang.rsi
-  - type: RMCStunOnTrigger
-    filters:
-    - paralyze: 2.5
-      whitelist:
-        skills:
-          RMCSkillPolice: 2
   - type: SoundOnTrigger
     sound:
       path: "/Audio/Effects/flash_bang.ogg"
@@ -68,7 +62,7 @@
     - RMCGrenadeFlashBang
   - type: RequiresSkill
     skills:
-      RMCSkillPolice: 2
+      RMCSkillPolice: 1
 
 - type: entity
   parent:
@@ -232,7 +226,7 @@
     deleteAfterExplosion: false
   - type: ProjectileGrenade
     fillPrototype: CMProjectileShrapnel
-    capacity: 48 #same as HEFA
+    capacity: 65 #same as HEFA
     directHit: false
   - type: ContainerContainer
     containers:
@@ -286,8 +280,8 @@
   - RMCM40DPTags
   - CMGrenadeBase
   id: RMCGrenadeIncendiary
-  name: 30mm HIDP incendiary grenade
-  description: The 30mm HIDP is a small, but deceptively strong incendiary grenade designed to disrupt enemy mobility with long-lasting Type B napalm. It is set to detonate in 4 seconds.
+  name: 30mm HIAM grenade
+  description: The 30mm High-explosive-Incendiary, Anti-Mobility grenade is a small, but deceptively strong incendiary grenade designed to disrupt enemy mobility with long-lasting Type B napalm. It is set to detonate in 4 seconds.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/m40hidp.rsi
@@ -322,7 +316,7 @@
 - type: entity
   parent: CMGrenadeBase
   id: RMCGrenadeIED
-  name: improvised explosive device
+  name: throwable improvised explosive device
   description: An improvised chemical explosive grenade. Designed to kill through fragmentation.
   components:
   - type: Sprite

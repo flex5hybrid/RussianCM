@@ -3,21 +3,12 @@
   id: CMSmartGunOperator
   name: cm-job-name-smart-gun-operator
   description: cm-job-description-smart-gun-operator
+  setPreference: false
   playTimeTracker: CMJobSmartGunOperator
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: CMSquad
-      time: 36000 # 10 hours
   ranks:
-    RMCRankSergeant:
-    - !type:RoleTimeRequirement
-      role: CMJobSmartGunOperator
-      time: 252000 # 70 hours
-    RMCRankCorporal:
-    - !type:RoleTimeRequirement
-      role: CMJobSmartGunOperator
-      time: 36000 # 10 hours
+    RMCRankCorporal: []
     RMCRankLanceCorporal: []
+    RMCRankPrivateFirstClass: []
   startingGear: CMGearSmartGunOperator
   dummyStartingGear: CMGearSmartGunOperatorEquipped
   icon: "CMJobIconSmartGunOperator"
@@ -27,8 +18,8 @@
   accessGroups:
   - SmartGunOperator
   overwatchSortPriority: -3
-  overwatchShowName: true
-  overwatchRoleName: Smart Gun Operator
+ # overwatchShowName: true
+#  overwatchRoleName: Smart Gun Operator
   roleWeight: 1
   displayWeight: 3
   special:
@@ -37,10 +28,12 @@
     - type: Skills
       skills:
         RMCSkillEndurance: 1
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 1
         RMCSkillJtac: 1
         RMCSkillSmartGun: 1
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 3
     - type: CMVendorUser
       id: CMSmartGunOperator
       points: 45

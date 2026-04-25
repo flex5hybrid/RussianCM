@@ -1,0 +1,40 @@
+- type: partySpawn
+  id: PAPInvestigationPartySpawn
+  leadersToSpawn:
+    AU14JobPaPThirdpartySeniorInvestigator: 1
+  gruntsToSpawn:
+    AU14JobPaPThirdpartyInvestigator: 1
+    AU14JobPaPThirdpartyInvestigatorSMG: 1
+  scalewithpop: false
+  spawnTogether: true
+
+- type: partySpawn
+  id: PAPInvestigationPartySpawnAlt
+  leadersToSpawn:
+    AU14JobPaPThirdpartySeniorInvestigator: 1
+  gruntsToSpawn:
+    AU14JobPaPThirdpartyInvestigator: 1
+    AU14JobPaPThirdpartyInvestigatorSMG: 1
+    AU14JobPAPThirdpartyObserver: 1
+  scalewithpop: false
+  spawnTogether: true
+
+- type: auThirdParty
+  id: PAPInvestigationPartyAlt
+  partyspawn: PAPInvestigationPartySpawnAlt
+  entrymethod: shuttle
+  weight: 10
+  minplayers: 0
+  maxplayers: 400
+  GhostsNeeded: 6
+  roundstart: false
+
+- type: auThirdParty
+  id: PAPInvestigationParty
+  partyspawn: PAPInvestigationPartySpawn
+  entrymethod: shuttle
+  weight: 20
+  minplayers: 0
+  maxplayers: 400
+  GhostsNeeded: 3
+  roundstart: false

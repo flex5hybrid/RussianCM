@@ -36,30 +36,68 @@
     overrideDir: South
     enableOverrideDir: false
 
-# WeYa
+# WeYa PMC
 - type: entity
   parent: RMCOverwatchConsole
   id: RMCOverwatchConsoleWeYa
-  suffix: WeYa
+  suffix: WeYu
   components:
   - type: OverwatchConsole
     canOrbitalBombardment: false
     group: WeYa
-  - type: AccessReader
-    access: [ [ "RMCAccessWeYa" ] ]
-  - type: RequiresSkill
-    skills:
-      RMCSkillOverwatch: 0 # So that CL may use it.
 
 - type: entity
   parent: RMCOverwatchConsoleWeYa
   id: RMCOverwatchConsoleWeYaRotating
-  suffix: WeYa, Rotating
+  suffix: WeYu, Rotating
   components:
   - type: Sprite
     overrideDir: South
     enableOverrideDir: false
 
+# Govfor
+- type: entity
+  parent: RMCOverwatchConsole
+  id: RMCOverwatchConsoleGovfor
+  suffix: Govfor
+  components:
+  - type: TacticalMapComputer
+    faction: govfor
+  - type: OverwatchConsole
+    canOrbitalBombardment: false
+    group: GOVFOR
+
+- type: entity
+  parent: RMCOverwatchConsoleGovfor
+  id: RMCOverwatchConsoleGovforRotating
+  suffix: Govfor, Rotating
+  components:
+  - type: Sprite
+    overrideDir: South
+    enableOverrideDir: false
+  - type: TacticalMapComputer
+    faction: govfor
+# Opfor
+- type: entity
+  parent: RMCOverwatchConsole
+  id: RMCOverwatchConsoleOpfor
+  suffix: Opfor
+  components:
+  - type: OverwatchConsole
+    canOrbitalBombardment: false
+    group: OPFOR
+  - type: TacticalMapComputer
+    faction: opfor
+- type: entity
+  parent: RMCOverwatchConsoleOpfor
+  id: RMCOverwatchConsoleOpforRotating
+  suffix: Opfor, Rotating
+  components:
+  - type: Sprite
+    overrideDir: South
+    enableOverrideDir: false
+  - type: TacticalMapComputer
+    faction: opfor
 # RCM
 - type: entity
   parent: RMCOverwatchConsole

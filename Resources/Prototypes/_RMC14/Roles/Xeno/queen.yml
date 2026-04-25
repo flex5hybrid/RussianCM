@@ -2,6 +2,7 @@
   parent: CMJobXenoBase
   id: CMXenoQueen
   name: cm-job-name-xeno-queen
+  setPreference: false
   playTimeTracker: CMJobXenoQueen
   requirements:
   - !type:TotalJobsTimeRequirement
@@ -31,7 +32,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Queen/queen.rsi
+    sprite: _AU14/Mobs/Xenos/Queen/queen.rsi
     layers:
     - state: alive
       scale: 0.5, 0.5

@@ -5,7 +5,7 @@ cm-job-prefix-correspondent = PRESS
 CMJobCorrespondent = Correspondent
 
 cm-job-name-liaison = Corporate Liaison
-cm-job-description-liaison = Be the direct line of communication between the Almayer and We-Ya by sending faxes. Make sure the interests of the We-Ya are retained.
+cm-job-description-liaison = Be the direct line of communication between the colony and Weyland-Yutani by sending faxes and communicating with the colony administrator. Make sure the interests of the WY are retained.
 cm-job-prefix-liaison = CL
 CMJobLiaison = Corporate Liaison
 

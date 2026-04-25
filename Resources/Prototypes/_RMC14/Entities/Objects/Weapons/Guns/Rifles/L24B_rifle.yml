@@ -1,23 +1,18 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   id: RMCWeaponRifleL24B
-  name: L24B rifle
-  description: A rare sight, this rifle is most commonly seen in the hands of the Three Suns Empire's Royal Crown Marine units. This particular model was modified to facilitate RCM operations in tight quarters.
-  suffix: Filled
+  name: L23B 'Breacher' assault rifle
+  description: Pulse action 8.8x51mm caseless assault rifle of the Royal Marine Commandos, personal friend of any Marine Commando. Comes with semi-auto and burst-fire firemodes and features an integrated 30mm grenade launcher that can hold two grenades on backup with one in the chamber
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Rifles/L24B/inhand.rsi
+    sprite: _AU14/Weapons/Guns/RMC/L23.rsi
     layers:
     - state: base
-      sprite: _RMC14/Objects/Weapons/Guns/Rifles/L24B/icon.rsi
-    - state: bolt-open
-      sprite: _RMC14/Objects/Weapons/Guns/Rifles/L24B/icon.rsi
       map: [ "enum.GunVisualLayers.Base" ]
     - state: mag-0
-      sprite: _RMC14/Objects/Weapons/Guns/Rifles/L24B/icon.rsi
       map: [ "enum.GunVisualLayers.Mag" ]
   - type: Clothing
-    sprite: _RMC14/Objects/Weapons/Guns/Rifles/L24B/inhand.rsi
+    sprite: _AU14/Weapons/Guns/RMC/L23.rsi
   - type: Gun
     shotsPerBurst: 3
     selectedMode: FullAuto
@@ -33,18 +28,18 @@
     - Burst
     - FullAuto
     recoilWielded: 2
-    recoilUnwielded: 2
+    recoilUnwielded: 0.5
     scatterWielded: 3
     scatterUnwielded: 10
     baseFireRate: 2.75
     burstScatterMult: 1
     modifiers:
       Burst:
-        fireDelay: 0.225
+        fireDelay: 0.08
         maxScatterModifier: 6
         useBurstScatterMult: true
         unwieldedScatterMultiplier: 2
-        shotsToMaxScatter: 6
+        shotsToMaxScatter: 3
       FullAuto:
         fireDelay: 0
         maxScatterModifier: 6
@@ -75,14 +70,11 @@
   - type: GunDamageModifier
     multiplier: 1
   - type: AttachableHolder
-    randomAttachmentChance: 1
     slots:
       rmc-aslot-barrel:
         whitelist:
           tags:
           - RMCM5Bayonet
-        random:
-        - RMCM5Bayonet
       rmc-aslot-rail:
         whitelist:
           tags:
@@ -90,14 +82,12 @@
           - RMCAttachmentS5RedDotSight
           - RMCAttachmentS6ReflexSight
           - RMCAttachmentS42xTelescopicMiniscope
-        random:
-        - RMCAttachmentS6ReflexSight
       rmc-aslot-stock:
         locked: true
-        startingAttachable: RMCAttachmentL24BStock
+        startingAttachable: RMCAttachmentL24Stock
         whitelist:
           tags:
-          - RMCAttachmentL24BStock
+          - RMCAttachmentL24Stock
       rmc-aslot-underbarrel:
         locked: true
         startingAttachable: RMCAttachmentU7UnderbarrelShotgun
@@ -106,10 +96,11 @@
           - RMCAttachmentU7UnderbarrelShotgun
   - type: AttachableHolderVisuals
     offsets:
-      rmc-aslot-barrel: 0.906, 0.03125
-      rmc-aslot-rail: -0.0175, 0.19
-      rmc-aslot-stock: -0.469, 0.01
+      rmc-aslot-barrel: 0.8, -0.03
+      rmc-aslot-rail: -0.0175, 0.12
+      rmc-aslot-stock: -0.5, -0.1
       rmc-aslot-underbarrel: 0.31375, -0.315
+
 
 - type: Tag
   id: RMCWeaponRifleL24B

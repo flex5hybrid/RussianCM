@@ -2,7 +2,7 @@
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   name: AK-4047 assault rifle
   id: RMCWeaponRifleAK4047
-  description: The SPP equivalent to the M54C Rifle, the AK-4047 is a cheap and reliable substitute. As such, the weapon often winds up in the hands of mercenaries and insurgents. While not as accurate as the M54, the AK-4047 is sturdier than the UNMC weapon. An AK-4047 still works after being thrown off a cliff and left underwater for a month.
+  description: A UPP assault rifle, designed to mimic the performance of the American M41A. The 4047 is built with a more utilitarian approach, and can survive use in harsh environments, as long as its user maintains it regularly. Many civilian enthusiasts claim the weapon is nigh invincible, but anyone who has ever served with it will tell you nothing could be further from the truth.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/ak4047.rsi

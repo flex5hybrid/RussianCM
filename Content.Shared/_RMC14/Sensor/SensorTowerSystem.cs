@@ -1,8 +1,9 @@
-using Content.Shared._RMC14.Communications;
+using Content.Shared._RMC14.Dialog;
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared._RMC14.TacticalMap;
 using Content.Shared._RMC14.Tools;
 using Content.Shared._RMC14.Xenonids;
+using Content.Shared.Database;
 using Content.Shared.DoAfter;
 using Content.Shared.Examine;
 using Content.Shared.Hands.Components;
@@ -11,7 +12,10 @@ using Content.Shared.Popups;
 using Content.Shared.Tools.Systems;
 using Robust.Shared.Network;
 using Robust.Shared.Random;
+using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
+using Content.Shared.Administration.Logs;
+using Content.Shared._RMC14.Weapons.Ranged.IFF;
 
 namespace Content.Shared._RMC14.Sensor;
 
@@ -25,6 +29,8 @@ public sealed class SensorTowerSystem : EntitySystem
     [Dependency] private readonly SkillsSystem _skills = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedToolSystem _tool = default!;
+    [Dependency] private readonly ISharedAdminLogManager _adminLog = default!;
+    [Dependency] private readonly GunIFFSystem _gunIFF = default!;
 
     public override void Initialize()
     {
@@ -36,6 +42,67 @@ public sealed class SensorTowerSystem : EntitySystem
         SubscribeLocalEvent<SensorTowerComponent, ExaminedEvent>(OnSensorTowerExamined);
         SubscribeLocalEvent<SensorTowerComponent, SensorTowerRepairDoAfterEvent>(OnSensorTowerRepairDoAfter);
         SubscribeLocalEvent<SensorTowerComponent, SensorTowerDestroyDoAfterEvent>(OnSensorTowerDestroyDoAfter);
+        // Allow claiming/wiping faction like communications towers
+        SubscribeLocalEvent<SensorTowerComponent, DialogChosenEvent>(OnSensorTowerDialogChosen);
+        SubscribeLocalEvent<SensorTowerComponent, SensorTowerWipeDoAfterEvent>(OnSensorTowerDialogWipeDoAfter);
+        SubscribeLocalEvent<SensorTowerComponent, SensorTowerAddDoAfterEvent>(OnSensorTowerDialogAddDoAfter);
+    }
+
+    private void OnSensorTowerDialogChosen(Entity<SensorTowerComponent> ent, ref DialogChosenEvent args)
+    {
+        DoAfterEvent ev;
+        var delay = TimeSpan.Zero;
+        if (args.Index == 0)
+            ev = new SensorTowerWipeDoAfterEvent();
+        else
+        {
+            ev = new SensorTowerAddDoAfterEvent();
+            delay = TimeSpan.FromSeconds(1);
+        }
+
+        var doAfter = new DoAfterArgs(EntityManager, args.Actor, delay, ev, ent)
+        {
+            BreakOnMove = true,
+        };
+        _doAfter.TryStartDoAfter(doAfter);
+    }
+
+    private void OnSensorTowerDialogWipeDoAfter(Entity<SensorTowerComponent> ent, ref SensorTowerWipeDoAfterEvent args)
+    {
+        if (args.Handled || args.Cancelled)
+            return;
+
+        if (ent.Comp.State == SensorTowerState.Weld)
+            return;
+
+        args.Handled = true;
+        ent.Comp.Faction = string.Empty;
+        Dirty(ent);
+        var msg = $"You wipe the faction settings from the {Name(ent)}.";
+        _popup.PopupClient(msg, ent, args.User, PopupType.Medium);
+        // Notify tactical map system that sensor ownership changed so the canvas updates immediately
+        RaiseLocalEvent(ent.Owner, new SensorTowerStateChangedEvent(ent.Owner));
+    }
+
+    private void OnSensorTowerDialogAddDoAfter(Entity<SensorTowerComponent> ent, ref SensorTowerAddDoAfterEvent args)
+    {
+        if (args.Handled || args.Cancelled)
+            return;
+
+        if (ent.Comp.State == SensorTowerState.Weld)
+            return;
+
+        if (_gunIFF.TryGetFaction(args.User, out var faction))
+        {
+            // Save faction as string for compatibility with tactical map checks
+            ent.Comp.Faction = faction.ToString();
+            Dirty(ent);
+            args.Handled = true;
+            var msg = $"You set the {Name(ent)} to faction {faction}.";
+            _popup.PopupClient(msg, ent, args.User, PopupType.Medium);
+            // Notify tactical map system that sensor ownership changed so the canvas updates immediately
+            RaiseLocalEvent(ent.Owner, new SensorTowerStateChangedEvent(ent.Owner));
+        }
     }
 
     private void OnTacticalMapIncludeXenos(ref TacticalMapIncludeXenosEvent ev)
@@ -67,6 +134,45 @@ public sealed class SensorTowerSystem : EntitySystem
         }
 
         var used = args.Used;
+
+        // If using a multitool, claim the tower for your faction immediately (wipe/overwrite previous owner).
+        if (HasComp<MultitoolComponent>(used))
+        {
+            // Do not allow claiming if the tower is destroyed/welded
+            if (ent.Comp.State == SensorTowerState.Weld)
+            {
+                var msg = "This sensor tower is too damaged to reconfigure.";
+                _popup.PopupClient(msg, ent, args.User, PopupType.SmallCaution);
+                args.Handled = true;
+                return;
+            }
+
+            // Try to get the user's faction via IFF system. If present, assign it; otherwise wipe.
+            if (_gunIFF.TryGetFaction(args.User, out var faction))
+            {
+                ent.Comp.Faction = faction.ToString();
+                Dirty(ent);
+                var msg = $"You configure the {Name(ent)} to faction {faction}.";
+                _popup.PopupClient(msg, ent, args.User, PopupType.Medium);
+                _adminLog.Add(LogType.RMCCommunicationsTower, $"{ToPrettyString(args.User)} set {ToPrettyString(ent)} to faction {faction}.");
+            }
+            else
+            {
+                // No faction found on user - wipe the tower
+                ent.Comp.Faction = string.Empty;
+                Dirty(ent);
+                var msg = $"You wipe the faction settings from the {Name(ent)}.";
+                _popup.PopupClient(msg, ent, args.User, PopupType.Medium);
+                _adminLog.Add(LogType.RMCCommunicationsTower, $"{ToPrettyString(args.User)} wiped faction settings from {ToPrettyString(ent)}.");
+            }
+
+            // Notify tactical map system that sensor ownership changed so the canvas updates immediately
+            RaiseLocalEvent(ent.Owner, new SensorTowerStateChangedEvent(ent.Owner));
+
+            args.Handled = true;
+            return;
+        }
+
 
         if (TryComp<RMCDeviceBreakerComponent>(args.Used, out var breaker) && ent.Comp.State != SensorTowerState.Weld)
         {
@@ -135,8 +241,8 @@ public sealed class SensorTowerSystem : EntitySystem
         else if (state == SensorTowerState.On)
             state = SensorTowerState.Off;
 
-        Dirty(ent);
-        UpdateAppearance(ent);
+        _adminLog.Add(LogType.RMCCommunicationsTower, $"{ToPrettyString(args.User)} turned {ToPrettyString(ent)} {state}.");
+        ChangeState(ent, state);
     }
 
     private void OnSensorTowerExamined(Entity<SensorTowerComponent> ent, ref ExaminedEvent args)
@@ -306,16 +412,59 @@ public sealed class SensorTowerSystem : EntitySystem
             {
                 _popup.PopupEntity($"The {Name(uid)} beeps wildly and sprays random pieces everywhere! Use a wrench to repair it.", uid, uid, PopupType.LargeCaution);
                 tower.State = SensorTowerState.Wrench;
-                Dirty(uid, tower);
+                ChangeState((uid, tower), SensorTowerState.Wrench);
             }
             else
             {
                 _popup.PopupEntity($"The {Name(uid)} beeps wildly and a fuse blows! Use wirecutters, then a wrench to repair it.", uid, uid, PopupType.LargeCaution);
-                tower.State = SensorTowerState.Wire;
-                Dirty(uid, tower);
+                ChangeState((uid, tower), SensorTowerState.Wire);
             }
 
             UpdateAppearance((uid, tower));
         }
     }
+
+    private void ChangeState(Entity<SensorTowerComponent> tower, SensorTowerState newState)
+    {
+        tower.Comp.State = newState;
+        Dirty(tower);
+
+        var ev = new SensorTowerStateChangedEvent(tower.Owner);
+        // Raise local event on the tower entity; event payload carries the EntityUid only (not Entity<T>)
+        RaiseLocalEvent(tower.Owner, ev);
+        UpdateAppearance(tower);
+    }
+
+
+    public bool HasOnlineSensorForFaction(string? faction)
+    {
+        if (string.IsNullOrWhiteSpace(faction))
+            return false;
+
+        var comps = EntityQueryEnumerator<SensorTowerComponent>();
+        while (comps.MoveNext(out _, out var comp))
+        {
+            if (comp.State != SensorTowerState.On)
+                continue;
+
+            if (string.Equals(comp.Faction, faction, StringComparison.OrdinalIgnoreCase))
+                return true;
+        }
+
+        return false;
+    }
+}
+
+// Event types for DoAfter claiming/wiping sensor towers (use SimpleDoAfterEvent like communications)
+[Serializable, NetSerializable]
+public sealed partial class SensorTowerWipeDoAfterEvent : SimpleDoAfterEvent;
+
+[Serializable, NetSerializable]
+public sealed partial class SensorTowerAddDoAfterEvent : SimpleDoAfterEvent;
+
+// Local event for sensor tower state changes. Not net-serializable to avoid serializing Entity<T>.
+public sealed class SensorTowerStateChangedEvent : EntityEventArgs
+{
+    public EntityUid TowerUid;
+    public SensorTowerStateChangedEvent(EntityUid towerUid) { TowerUid = towerUid; }
 }

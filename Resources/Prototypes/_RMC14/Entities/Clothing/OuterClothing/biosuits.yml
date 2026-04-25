@@ -80,7 +80,7 @@
   parent: RMCArmorFirefighter
   id: RMCArmorSPPFirefighter
   name: T-20 fire response coat
-  description: A rugged, no-frills fire-resistant overcoat issued to SPP industrial and emergency crews. Based on the PyroTex LT design but using cheaper, domestically produced materials, it offers basic protection against heat and debris at the cost of weight and comfort.
+  description: A rugged, no-frills fire-resistant overcoat issued to UPP industrial and emergency crews. Based on the PyroTex LT design but using cheaper, domestically produced materials, it offers basic protection against heat and debris at the cost of weight and comfort.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/firefighter.rsi
@@ -90,9 +90,9 @@
 - type: entity
   parent: RMCBaseBioSuit
   id: RMCSuitBioWeYa
-  name: WeYa-TSS MK I - bio suit
-  description: The 'Weston-Yamada TerraScientia bio-suit MK I'. An advanced light-weight bio-suit developed in-house by Weston-Yamada. It's a suit that protects against biological contamination.
-  suffix: Generic, WeYa
+  name: WeYu-TSS MK I - bio suit
+  description: The 'Weyland-Yutani TerraScientia bio-suit MK I'. An advanced light-weight bio-suit developed in-house by Weston-Yamada. It's a suit that protects against biological contamination.
+  suffix: Generic, WeYu
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Misc/biosuit_weya.rsi

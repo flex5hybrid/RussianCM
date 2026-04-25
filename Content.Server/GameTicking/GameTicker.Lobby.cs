@@ -4,11 +4,15 @@ using Content.Server.Station.Components;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using System.Text;
+using Content.Server.AU14.Round;
 
 namespace Content.Server.GameTicking
 {
     public sealed partial class GameTicker
     {
+        [Dependency] private readonly AuRoundSystem _auRoundSystem = default!;
+        [Dependency] private readonly PlatoonSpawnRuleSystem _platoonSpawnRuleSystem = default!;
+
         [ViewVariables]
         private readonly Dictionary<NetUserId, PlayerGameStatus> _playerGameStatuses = new();
 
@@ -72,10 +76,21 @@ namespace Content.Server.GameTicking
                                     Loc.GetString("game-ticker-no-map-selected"));
             }
 
-            var planetName = _distressSignal.SelectedPlanetMapName ??
-                Loc.GetString("game-ticker-no-map-selected");
+
+            var selectedPlanet = _auRoundSystem.GetSelectedPlanet();
+            var planetName = selectedPlanet?.VoteName ?? Loc.GetString("game-ticker-no-map-selected");
+
+            var govforShip = _auRoundSystem.GetSelectedGovforShip();
+            var opforShip = _auRoundSystem.GetSelectedOpforShip();
+            var govforShipDisplay = !string.IsNullOrWhiteSpace(govforShip) ? govforShip : "None";
+            var opforShipDisplay = !string.IsNullOrWhiteSpace(opforShip) ? opforShip : "None";
+
             var gmTitle = Loc.GetString(preset.ModeTitle);
             var desc = Loc.GetString(preset.Description);
+            var govforPlatoon = _platoonSpawnRuleSystem.SelectedGovforPlatoon?.Name;
+            var opforPlatoon = _platoonSpawnRuleSystem.SelectedOpforPlatoon?.Name;
+            var govforPlatoonDisplay = !string.IsNullOrWhiteSpace(govforPlatoon) ? govforPlatoon : "None";
+            var opforPlatoonDisplay = !string.IsNullOrWhiteSpace(opforPlatoon) ? opforPlatoon : "None";
             return Loc.GetString(
                 RunLevel == GameRunLevel.PreRoundLobby
                     ? "game-ticker-get-info-preround-text"
@@ -84,6 +99,10 @@ namespace Content.Server.GameTicking
                 ("playerCount", playerCount),
                 ("readyCount", readyCount),
                 ("planetName", planetName),
+                ("govforShip", govforShipDisplay),
+                ("opforShip", opforShipDisplay),
+                ("govforPlatoon", govforPlatoonDisplay),
+                ("opforPlatoon", opforPlatoonDisplay),
                 ("mapName", stationNames.ToString()),
                 ("gmTitle", gmTitle),
                 ("desc", desc));

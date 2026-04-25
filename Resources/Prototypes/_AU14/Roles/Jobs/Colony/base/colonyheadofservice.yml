@@ -1,0 +1,67 @@
+- type: job
+  parent: CMJobBase
+  id: AU14JobCivilianHeadOfService
+  name: au14-job-name-civilianheadofservice
+  description: au14-job-description-civilianheadofservice
+  setPreference: true
+  canBeAntag: false
+  playTimeTracker: AU14JobCivilianHeadOfService
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 10800 # 3 hours
+  - !type:AgeRequirement
+    requiredAge: 23
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - NonResuscitable
+  ranks:
+    RMCRankCivilian: []
+  startingGear: AU14GearCivilianHeadOfService
+  icon: "CMJobIconEmpty"
+  requireAdminNotify: false
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-colonyadministrator
+  accessGroups:
+  - Colonist
+  roleWeight: 0.25
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Skills
+      skills:
+        RMCSkillFireman: 1
+        RMCSkillVehicles: 1
+        RMCSkillDomestics: 3
+        RMCSkillConstruction: 1
+        RMCSkillFirearms: 2
+    - type: JobPrefix
+      prefix: au14-job-prefix-headofservice
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: synth
+  hidden: false
+
+- type: startingGear
+  id: AU14GearCivilianHeadOfService
+  equipment:
+    jumpsuit: AU14CivilianWorkwearYellow
+    shoes: RMCShoesBlack
+    id: AU14IDCardColonyHeadOfService
+    outerClothing: RMCMedicalApron
+
+- type: entity
+  parent: CMSpawnPointJobBase
+  id: AU14SpawnPointCivilianHeadOfService
+  name: Spawn Point Head of Service
+  components:
+  - type: SpawnPoint
+    job_id: AU14JobCivilianHeadOfService
+  - type: Sprite
+    state: syn_spawn
+
+- type: playTimeTracker
+  id: AU14JobCivilianHeadOfService
+  isHumanoid: true
+

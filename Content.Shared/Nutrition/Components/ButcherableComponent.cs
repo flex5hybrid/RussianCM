@@ -18,6 +18,11 @@ namespace Content.Shared.Nutrition.Components
         [ViewVariables(VVAccess.ReadWrite), DataField("butcheringType")]
         public ButcheringType Type = ButcheringType.Knife;
 
+                [ViewVariables(VVAccess.ReadWrite), DataField("waitForRot")]
+                public bool WaitForRot = false;
+
+
+
         /// <summary>
         /// Prevents butchering same entity on two and more spikes simultaneously and multiple doAfters on the same Spike
         /// </summary>
@@ -29,6 +34,6 @@ namespace Content.Shared.Nutrition.Components
     {
         Knife, // e.g. goliaths
         Spike, // e.g. monkeys
-        Gibber // e.g. humans. TODO
+        Gibber, // e.g. humans. TODO
     }
 }

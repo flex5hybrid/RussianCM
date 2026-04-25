@@ -1,0 +1,57 @@
+- type: accessGroup
+  id: AU14OpforCommand
+  tags:
+  - AU14AccessOpfor
+  - AU14AccessOpforSquad
+  - AU14AccessOpforCommand
+  - AU14AccessOpforSecurity
+  - AU14AccessOpforFTL
+  - AU14AccessOpforMedical
+  - AU14AccessOpforEngineering
+  - AU14AccessOpforGunner
+  - AU14AccessOpforPilot
+
+- type: accessGroup
+  id: AU14OpforFTL
+  tags:
+  - AU14AccessOpfor
+  - AU14AccessOpforSquad
+  - AU14AccessOpforFTL
+
+- type: accessGroup
+  id: AU14OpforPilot
+  tags:
+  - AU14AccessOpfor
+  - AU14AccessOpforPilot
+
+- type: accessGroup
+  id: AU14OpforGunner
+  tags:
+  - AU14AccessOpfor
+  - AU14AccessOpforSquad
+  - AU14AccessOpforGunner
+
+- type: accessGroup
+  id: AU14OpforCorpsman
+  tags:
+  - AU14AccessOpfor
+  - AU14AccessOpforMedical
+
+- type: accessGroup
+  id: AU14OpforSquad
+  tags:
+  - AU14AccessOpfor
+  - AU14AccessOpforSquad
+
+- type: accessGroup
+  id: AU14OpforEngineering
+  tags:
+  - AU14AccessOpfor
+  - AU14AccessOpforSquad
+  - AU14AccessOpforEngineering
+
+- type: accessGroup
+  id: AU14Opfor
+  tags:
+  - AU14AccessOpfor
+  - AU14AccessOpforSquad

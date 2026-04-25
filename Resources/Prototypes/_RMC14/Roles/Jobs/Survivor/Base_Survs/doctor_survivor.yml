@@ -18,7 +18,7 @@
         RMCSkillConstruction: 1
         RMCSkillEndurance: 2
         RMCSkillFireman: 1
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillMedical: 3
         RMCSkillSurgery: 2
     - type: EquipSurvivorPreset
@@ -36,7 +36,6 @@
   id: RMCGearSurvivorDoctor
   equipment:
     mask: CMMaskSterile
-    ears: CMHeadsetColony
     jumpsuit: CMJumpsuitLiaisonBlue
     outerClothing: RMCLabcoat
     gloves: CMHandsLatex

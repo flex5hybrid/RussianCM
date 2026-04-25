@@ -4,6 +4,8 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using System.Diagnostics;
 using System.Numerics;
+using Content.Server.AU14;
+using Content.Shared.AU14;
 
 namespace Content.Server.Maps;
 
@@ -63,7 +65,8 @@ public sealed partial class GameMapPrototype : IPrototype
             ID = ID,
             MapName = MapName,
             MapPath = mapPath,
-            _stations = _stations
+            _stations = _stations,
+
         };
     }
 }

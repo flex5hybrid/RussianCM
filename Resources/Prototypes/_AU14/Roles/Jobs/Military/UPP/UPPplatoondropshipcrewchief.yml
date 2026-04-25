@@ -1,0 +1,52 @@
+- type: job
+  parent: AU14JobDCCBase
+  id: AU14JobGOVFORDCCUPP
+  name: Dropship Crew Chief
+  description: au14-job-description-govfordcc
+  setPreference: false
+  canBeAntag: false
+  ranks:
+    UPP_Chotar:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORDCC
+      time: 360000 # 100 hours
+    UPP_StaffSergeant:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORDCC
+      time: 108000 # 30 hours
+    UPP_Sergeant: []
+  startingGear: AU14GearGOVFORDCC
+  dummyStartingGear: AU14GearGOVFORDCCDummy
+  icon: "AU14JobIconDCC"
+  requireAdminNotify: false
+  spawnMenuRoleName: Dropship Crew Chief (UPP)
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforPilot
+  - AU14GovforCorpsman
+  - AU14GovforSquad
+  roleWeight: 0.25
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Skills
+      skills:
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 1
+        RMCSkillIntel: 1
+        RMCSkillJtac: 2
+        RMCSkillLeadership: 1
+        RMCSkillMedical: 2
+        RMCSkillOverwatch: 1
+        RMCSkillPilot: 2
+        RMCSkillPowerLoader: 2
+        RMCSkillSurgery: 1
+        RMCSkillPolice: 1
+    - type: JobPrefix
+      prefix: au14-job-prefix-AU14JobGOVFORDCCUPP
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: synth
+  hidden: true

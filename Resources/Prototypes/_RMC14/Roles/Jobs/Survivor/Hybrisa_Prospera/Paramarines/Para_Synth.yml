@@ -33,8 +33,6 @@
           background:
             sprite: /Textures/_RMC14/Interface/map_blips.rsi
             state: background_para
-        - type: AssignSquad
-          squad: SquadPara
         - type: JobPrefix
           prefix: rmc-job-prefix-para-synth
         - type: MeleeWeapon

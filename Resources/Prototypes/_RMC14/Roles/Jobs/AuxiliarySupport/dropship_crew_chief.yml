@@ -3,15 +3,8 @@
   id: CMDropshipCrewChief
   name: cm-job-name-dcc
   description: cm-job-description-dcc
-  newToJobInfo: rmc-new-to-job-dcc
+  setPreference: false
   playTimeTracker: CMJobDropshipCrewChief
-  requirements:
-  - !type:DepartmentTimeRequirement
-    department: CMSquad
-    time: 18000 # 5 hours
-  - !type:TotalJobsTimeRequirement
-    group: CMJobsMedical
-    time: 3600 # 1 hours
   ranks:
     RMCRankWarrantOfficer:
     - !type:RoleTimeRequirement
@@ -40,7 +33,7 @@
       skills:
         RMCSkillEndurance: 1
         RMCSkillEngineer: 2
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 1
         RMCSkillJtac: 2
         RMCSkillLeadership: 1

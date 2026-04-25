@@ -28,7 +28,11 @@
   - !type:AddComponentSpecial
     components:
     - type: Skills
-      preset: RMCSkillPresetSurvivor
+      skills:
+        RMCSkillConstruction: 1
+        RMCSkillEndurance: 2
+        RMCSkillFireman: 1
+        RMCSkillFirearms: 2
     - type: EquipSurvivorPreset
       preset: RMCSurvivorPresetCorporate
     - type: RMCSurvivor
@@ -39,13 +43,6 @@
       - Civilian
     - type: IntelRescueSurvivorObjective
     - type: RMCAllowSuitStorage
-    - type: TacticalMapIcon
-      icon:
-        sprite: /Textures/_RMC14/Interface/map_blips.rsi
-        state: cl
-      background:
-        sprite: /Textures/_RMC14/Interface/map_blips.rsi
-        state: background_goon
   useLoadoutOfJob: CMSurvivorCorporate # for inheritance
 
 - type: startingGear

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from cmss13 at https://github.com/cmss13-devs/cmss13/blob/789a362bc55d2d6331bc89699bb4f9f792695853/icons/obj/structures/props/dropship/dropship_ammo64.dmi",
+  "copyright": "Taken from cmss13 at https://github.com/cmss13-devs/cmss13/blob/789a362bc55d2d6331bc89699bb4f9f792695853/icons/obj/structures/props/dropship/dropship_ammo64.dmi and https://github.com/cmss13-devs/cmss13/blob/8a61ffe860c467e9575f29c9d4d0a69edc79f354/code/modules/cm_marines/dropship_ammo.dm",
   "size": {
     "x": 64,
     "y": 64
@@ -14,10 +14,34 @@
       "name": "double_1"
     },
     {
+      "name": "jdam"
+    },
+    {
+      "name": "jdami"
+    },
+    {
       "name": "single"
     },
     {
+      "name": "cluster"
+    },
+    {
+      "name": "zeus"
+    },
+    {
+      "name": "bansheem"
+    },
+    {
+      "name": "hellhound"
+    },
+    {
+      "name": "sgw"
+    },
+    {
       "name": "banshee"
+    },
+    {
+      "name": "chubby"
     },
     {
       "name": "paveway"

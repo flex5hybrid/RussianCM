@@ -1,4 +1,4 @@
-﻿using Content.Shared._RMC14.IdentityManagement;
+using Content.Shared._RMC14.IdentityManagement;
 using Content.Shared._RMC14.Medical.HUD.Components;
 using Content.Shared._RMC14.Medical.Unrevivable;
 using Content.Shared._RMC14.Repairable;
@@ -86,12 +86,35 @@ public abstract class SharedSynthSystem : EntitySystem
 
         if (TryComp<RMCHealthIconsComponent>(ent.Owner, out var healthIcons))
         {
-            healthIcons.Icons = ent.Comp.HealthIconOverrides;
+            if (ent.Comp.UseHumanHealthIcons)
+                healthIcons.Icons = new();
+            else
+                healthIcons.Icons = ent.Comp.HealthIconOverrides;
             Dirty(ent.Owner, healthIcons);
         }
 
         RemCompDeferred<RMCRevivableComponent>(ent.Owner);
         RemCompDeferred<SlowOnDamageComponent>(ent.Owner);
+    }
+
+    public void SetGunRestriction(EntityUid ent, bool value)
+    {
+        if (TryComp<SynthComponent>(ent, out var comp))
+        {
+            comp.CanUseGuns = value;
+            DirtyEntity(ent);
+        }
+        else return;
+    }
+
+    public void SetMeleeRestriction(EntityUid ent, bool value)
+    {
+        if (TryComp<SynthComponent>(ent, out var comp))
+        {
+            comp.CanUseMeleeWeapons = value;
+            DirtyEntity(ent);
+        }
+        else return;
     }
 
     private void OnMeleeAttempted(Entity<SynthComponent> ent, ref AttackAttemptEvent args)
@@ -129,7 +152,7 @@ public abstract class SharedSynthSystem : EntitySystem
             return;
 
         // TODO
-        // When limb damage is released, make this system re-used for prosthetic limbs. They use the exact same values in CM13.
+        // When limb damage is released, make this systefsm re-used for prosthetic limbs. They use the exact same values in CM13.
         // Give synths robot limbs
 
         var used = args.Used;

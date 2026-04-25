@@ -16,16 +16,13 @@
   name: dropship navigation computer
   description: A flight computer that can be used for autopilot or long-range flights.
   components:
-  - type: GuideHelp
-    guides:
-    - RMCGuideRoleCAS
   - type: Sprite
     state: console
   - type: DropshipNavigationComputer
   - type: ActivatableUI
     key: enum.DropshipNavigationUiKey.Key
   - type: AccessReader
-    access: [["CMAccessSquadLeaderPrep"], ["CMAccessDropship"], ["CMAccessXeno"]] # Xeno have access as to not cause the "Access denied!" popup.
+    access: [ [ "AU14AccessGovforFTL" ], [ "AU14AccessGovforPilot" ] ]
   - type: ActivatableUIRequiresAccess
   - type: UserInterface
     interfaces:
@@ -33,6 +30,18 @@
         type: DropshipNavigationBui
       enum.DropshipHijackerUiKey.Key:
         type: DropshipHijackerBui
+
+- type: entity
+  parent: CMComputerDropshipNavigation
+  id: CMComputerDropshipNavigationOpfor
+  name: dropship navigation computer
+  suffix: Opfor
+  components:
+  - type: AccessReader
+    access: [ ]
+  - type: WhitelistedShuttle
+    faction: opfor
+    ShuttleType: Dropship
 
 - type: entity
   parent: CMComputerDropshipNavigation
@@ -67,65 +76,6 @@
         type: DropshipTerminalBui
 
 - type: entity
-  parent: CMComputerDropship
-  id: CMComputerDropshipCamerasAlamo
-  name: camera controls
-  description: A computer to monitor cameras linked to the dropship.
-  suffix: Alamo
-  components:
-  - type: GuideHelp
-    guides:
-    - RMCGuideRoleCAS
-  - type: Sprite
-    state: consoleleft
-  - type: UserInterface
-    interfaces:
-      enum.RMCCameraUiKey.Key:
-        type: RMCCameraBui
-  - type: RMCCameraComputer
-    protoIds:
-    - RMCMonitorCameraAlamo
-  - type: ActivatableUI
-    key: enum.RMCCameraUiKey.Key
-
-- type: entity
-  parent: CMComputerDropshipCamerasAlamo
-  id: RMCComputerDropshipCamerasNormandy
-  name: camera controls
-  description: A computer to monitor cameras linked to the dropship.
-  suffix: Normandy
-  components:
-  - type: RMCCameraComputer
-    protoIds:
-    - RMCMonitorCameraNormandy
-
-- type: entity
-  parent: CMComputerDropship
-  id: CMComputerDropshipWeapons
-  name: weapons controls
-  description: A computer to manage equipment, weapons and simulations installed on the dropship.
-  components:
-  - type: GuideHelp
-    guides:
-    - RMCGuideRoleCAS
-  - type: Sprite
-    state: consoleright
-  - type: ActivatableUI
-    key: enum.DropshipTerminalWeaponsUi.Key
-  - type: AccessReader
-    access: [ [ "CMAccessPilot" ], [ "CMAccessSquadLeaderPrep" ], [ "RMCAccessWeYaFlight" ] ]
-  - type: ActivatableUIRequiresAccess
-  - type: UserInterface
-    interfaces:
-      enum.DropshipTerminalWeaponsUi.Key:
-        type: DropshipWeaponsBui
-  - type: DropshipTerminalWeapons
-  - type: TacticalMapComputer
-  - type: RequiresSkill
-    skills:
-      RMCSkillPilot: 1
-
-- type: entity
   parent: CMBaseStructure
   id: RMCComputerDropshipNavigationSmall
   name: dropship navigation computer
@@ -155,7 +105,7 @@
   - type: ActivatableUI
     key: enum.DropshipNavigationUiKey.Key
   - type: AccessReader
-    access: [ ["CMAccessSquadLeaderPrep"], [ "CMAccessDropship" ] ]
+    access: [ [ "AU14AccessGovforFTL" ], [ "AU14AccessGovforPilot" ] ]
   - type: ActivatableUIRequiresAccess
   - type: UserInterface
     interfaces:
@@ -172,51 +122,86 @@
     color: "#FFEFD2"
     mask: /Textures/_RMC14/Effects/LightMasks/quad_cone.png
 
+# TODO RMC14 alamo and normandy specific names for each
 - type: entity
-  parent: CMBaseStructure
-  id: RMCComputerDropshipWeaponsSmall
+  parent: CMComputerDropship
+  id: CMComputerDropshipCamerasAlamo
+  name: camera controls
+  description: A computer to monitor cameras linked to the dropship.
+  components:
+  - type: Sprite
+    state: consoleleft
+
+- type: entity
+  parent: CMComputerDropship
+  id: CMComputerDropshipWeapons
   name: weapons controls
   description: A computer to manage equipment, weapons and simulations installed on the dropship.
   components:
-  - type: Transform
-    anchored: false
-  - type: Physics
-    bodyType: Static
-    canCollide: false
   - type: Sprite
-    drawdepth: Objects
-    sprite: _RMC14/Structures/Machines/computer.rsi
-    state: security_cam
-    layers: [ ]
-  - type: Clickable
-  - type: Corrodible
-    isCorrodible: false
-  - type: InteractionOutline
-  - type: InteractedBlacklist
-    blacklist:
-      components:
-      - Xeno
-  - type: WallMount
-    arc: 360
-  - type: AccessReader
-    access: [ ["CMAccessSquadLeaderPrep"], [ "CMAccessDropship" ] ]
-  - type: PointLight
-    enabled: true
-    radius: 1.5
-    netsync: true
-    energy: 1
-    offset: "0,0"
-    color: "#FFEFD2"
-    mask: /Textures/_RMC14/Effects/LightMasks/quad_cone.png
+    state: consoleright
   - type: ActivatableUI
     key: enum.DropshipTerminalWeaponsUi.Key
+  - type: AccessReader
+    #access: [ [ "CMAccessPilot" ], [ "CMAccessSquadLeaderPrep" ], [ "RMCAccessWeYaFlight" ] ]
+    access: [ [ "AU14AccessGovforFTL" ], [ "AU14AccessGovforPilot" ] ]
   - type: ActivatableUIRequiresAccess
   - type: UserInterface
     interfaces:
       enum.DropshipTerminalWeaponsUi.Key:
         type: DropshipWeaponsBui
   - type: DropshipTerminalWeapons
-  - type: TacticalMapComputer
+  - type: RequiresSkill
+    skills:
+      RMCSkillPilot: 1
+
+- type: entity
+  parent: CMComputerDropship
+  id: CMComputerDropshipWeaponsGovfor
+  name: weapons controls
+  description: A computer to manage equipment, weapons and simulations installed on the govfor dropship.
+  suffix: Govfor
+  components:
+  - type: Sprite
+    state: consoleright
+  - type: ActivatableUI
+    key: enum.DropshipTerminalWeaponsUi.Key
+  - type: AccessReader
+    #access: [ [ "CMAccessPilot" ], [ "CMAccessSquadLeaderPrep" ], [ "RMCAccessWeYaFlight" ] ]
+    access: [ [ "AU14AccessGovforFTL" ], [ "AU14AccessGovforPilot" ] ]
+  - type: ActivatableUIRequiresAccess
+  - type: UserInterface
+    interfaces:
+      enum.DropshipTerminalWeaponsUi.Key:
+        type: DropshipWeaponsBui
+  - type: DropshipTerminalWeapons
+  - type: RequiresSkill
+    skills:
+      RMCSkillPilot: 1
+
+- type: entity
+  parent: CMComputerDropship
+  id: CMComputerDropshipWeaponsOpfor
+  name: weapons controls
+  description: A computer to manage equipment, weapons and simulations installed on the opfor dropship.
+  suffix: Opfor
+  components:
+  - type: Sprite
+    state: consoleright
+  - type: ActivatableUI
+    key: enum.DropshipTerminalWeaponsUi.Key
+  - type: AccessReader
+    #access: [ [ "CMAccessPilot" ], [ "CMAccessSquadLeaderPrep" ], [ "RMCAccessWeYaFlight" ] ]
+    access: [ [ "AU14AccessOpforFTL" ], [ "AU14AccessOpforPilot" ] ]
+  - type: ActivatableUIRequiresAccess
+  - type: UserInterface
+    interfaces:
+      enum.DropshipTerminalWeaponsUi.Key:
+        type: DropshipWeaponsBui
+  - type: DropshipTerminalWeapons
+  - type: RequiresSkill
+    skills:
+      RMCSkillPilot: 1
 
 - type: entity
   parent: MarkerBase
@@ -235,6 +220,38 @@
 
 - type: entity
   parent: MarkerBase
+  id: CMDropshipDestinationHome
+  name: dropship destination(home)
+  description: Defines a valid location for the dropships to FTL to when piloted. (home)
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    state: green
+  - type: FTLBeacon
+  - type: DropshipDestination
+  # NOT YET IMPLEMENTED  home: True
+  - type: FTLSmashImmune
+  - type: NoFTL
+
+- type: entity
+  parent: MarkerBase
+  id: CMDropshipDestinationOpforWhitelist
+  name: dropship destination
+  description: Defines a valid location for the dropships to FTL to when piloted.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    state: green
+  - type: FTLBeacon
+  - type: DropshipDestination
+    FactionControlling: opfor
+  - type: FTLSmashImmune
+  - type: NoFTL
+
+- type: entity
+  parent: MarkerBase
   id: CMDropshipHijackDestination
   name: hijack destination
   description: Defines a valid location for the dropships to FTL to when hijacked.
@@ -247,3 +264,65 @@
   - type: DropshipHijackDestination
   - type: FTLSmashImmune
   - type: NoFTL
+
+- type: entity
+  parent: MarkerBase
+  id: CMDropshipDestinationThirdPartyWhitelist
+  name: dropship destination (third party)
+  description: Defines a valid location for third party dropships to FTL to when piloted.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    state: green
+  - type: FTLBeacon
+  - type: DropshipDestination
+    FactionControlling: thirdparty
+  - type: FTLSmashImmune
+  - type: NoFTL
+
+- type: entity
+  parent: MarkerBase
+  id: CMDropshipDestinationGovforWhitelist
+  name: dropship destination (govfor)
+  description: Defines a valid location for third party dropships to FTL to when piloted.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    state: green
+  - type: FTLBeacon
+  - type: DropshipDestination
+    FactionControlling: govfor
+  - type: FTLSmashImmune
+  - type: NoFTL
+
+- type: entity
+  parent: CMComputerDropshipNavigation
+  id: CMComputerDropshipNavigationGovfor
+  name: dropship navigation computer (govfor)
+  components:
+  - type: AccessReader
+    access: [ ]
+  - type: WhitelistedShuttle
+    faction: govfor
+    ShuttleType: Dropship
+
+
+- type: entity
+  parent: CMComputerDropshipNavigation
+  id: CMComputerDropshipNavigationThirdParty
+  name: dropship navigation computer (Third Party)
+  components:
+  - type: WhitelistedShuttle
+    faction: thirdparty
+    ShuttleType: Dropship
+  - type: AccessReader
+    access: []
+- type: entity
+  parent: CMComputerDropshipNavigationThirdParty
+  id: CMComputerDropshipNavigationOldThirdParty
+  components:
+  - type: Sprite
+    sprite: _AU14/Structures/Machines/shuttle_console.rsi
+    state: consoleold

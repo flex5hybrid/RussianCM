@@ -1,0 +1,117 @@
+# Cash-operated vending machines — require cash inserted to dispense items.
+# Sales tax (set via admin console) is applied on top of the base price.
+# All tax revenue goes to the colony budget.
+
+# Base entity for pay-to-use vendors
+- type: entity
+  id: AU14CashVendorBase
+  abstract: true
+  parent: CMBaseStructureCorrodible
+  name: vending machine
+  description: Insert cash and select an item to purchase.
+  components:
+  - type: ItemSlots
+    slots:
+      ItemCabinet:
+        whitelist:
+          tags:
+          - Currency
+  - type: AU14CashVendor
+  - type: ActivatableUI
+    key: enum.AU14CashVendorUi.Key
+  - type: UserInterface
+    interfaces:
+      enum.AU14CashVendorUi.Key:
+        type: AU14CashVendorBui
+  - type: ApcPowerReceiver
+    powerLoad: 0
+    needsPower: false
+  - type: ContainerContainer
+    containers:
+      ItemCabinet: !type:ContainerSlot {}
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.35,0.25,0.35"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/corp_wardrobe.rsi
+    layers:
+    - state: "base"
+  - type: InteractionOutline
+  - type: Appearance
+
+# Base for cash vendors that also have shopkeeper stock management
+- type: entity
+  id: AU14CashVendorShopkeepBase
+  abstract: true
+  parent: AU14CashVendorBase
+  components:
+  - type: AU14ShopkeeperVendor
+  - type: AccessReader
+    access:
+    - - AU14AccessShopkeep
+  - type: UserInterface
+    interfaces:
+      enum.AU14CashVendorUi.Key:
+        type: AU14CashVendorBui
+      enum.AU14ShopkeeperVendorUi.Shop:
+        type: AU14ShopkeeperVendorBui
+  - type: ContainerContainer
+    containers:
+      ItemCabinet: !type:ContainerSlot {}
+      shopkeeper_cash: !type:ContainerSlot {}
+      shopkeeper_stock: !type:Container {}
+
+# Corporate drink machine — sells beverages for cash
+- type: entity
+  id: AU14CashDrinkMachine
+  parent: AU14CashVendorShopkeepBase
+  name: WY Refreshments
+  description: A Weyland-Yutani branded beverage dispenser. Insert cash to purchase a drink. Prices subject to colonial sales tax.
+  suffix: Cash, Drinks
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/VendingMachines/coffee.rsi
+    layers:
+    - state: "normal-unshaded"
+
+
+# Corporate snack machine — sells food for cash
+- type: entity
+  id: AU14CashSnackMachine
+  parent: AU14CashVendorBase
+  name: WY Provisions
+  description: A Weyland-Yutani branded snack dispenser. Insert cash to purchase a snack. Prices subject to colonial sales tax.
+  suffix: Cash, Snacks
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/VendingMachines/coffee.rsi
+    layers:
+    - state: "normal-unshaded"
+  - type: AU14CashVendor
+    items:
+    - id: RMCFoodSnackBarcaridine
+      name: Barcaridine Bar
+      price: 4
+    - id: RMCFoodSnackKeplarCrisps
+      name: Keplar Crisps
+      price: 3
+    - id: RMCFoodSnackBoonie
+      name: Boonie Bar
+      price: 4
+    - id: RMCFoodSnackCHUNK
+      name: CHUNK Bar
+      price: 3
+    - id: CMMRE
+      name: MRE (Mil-Spec)
+      price: 8
+

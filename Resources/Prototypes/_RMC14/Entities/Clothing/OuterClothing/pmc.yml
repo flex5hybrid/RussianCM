@@ -26,12 +26,6 @@
     - 0,0,3,1 # 2 slots
   - type: ItemCamouflage
     camouflageVariations: { }
-  - type: ClothingRequireEquipped
-    autoUnequip: true
-    denyReason: rmc-armor-not-pmc-jumpsuit
-    whitelist:
-      tags:
-      - RMCUniformPMC
 
 - type: entity
   parent: [RMCArmorM4PMCNoLight, RMCBasePMCArmorLight]
@@ -75,7 +69,7 @@
   parent: [RMCArmorM4PMCNoLight, RMCBaseMarineArmorLight]
   id: CMArmorM4PMCCorporate
   name: M1 pattern corporate security armor
-  description: A basic vest with a We-Ya badge on the right breast. This is commonly worn by low-level guards protecting We-Ya facilities.
+  description: A basic vest with a We-Yu badge on the right breast. This is commonly worn by low-level guards protecting We-Yu facilities.
   suffix: ""
   components:
   - type: Sprite
@@ -92,7 +86,7 @@
 - type: entity
   parent: CMArmorM4PMCCorporate
   id: CMArmorM4PMCCorporateLead
-  description: A basic vest with a We-Ya badge on the right breast. This variant is worn by low-level guards that have elevated in rank due to 'good conduct in the field', also known as corporate bootlicking.
+  description: A basic vest with a We-Yu badge on the right breast. This variant is worn by low-level guards that have elevated in rank due to 'good conduct in the field', also known as corporate bootlicking.
   suffix: Leader
   components:
   - type: Sprite

@@ -34,7 +34,7 @@
       skills:
         RMCSkillCqc: 3
         RMCSkillEndurance: 3
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 2
         RMCSkillMeleeWeapons: 1
         RMCSkillPolice: 2
@@ -44,6 +44,18 @@
     - type: JobPrefix
       prefix: rmc-job-prefix-provost-inspector
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: CommandAccent
     - type: RMCPointing
     - type: RMCTrackable

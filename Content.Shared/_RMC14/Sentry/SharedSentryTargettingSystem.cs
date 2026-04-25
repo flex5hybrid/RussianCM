@@ -22,15 +22,11 @@ public abstract class SharedSentryTargetingSystem : EntitySystem
 
     public static readonly Dictionary<string, EntProtoId<IFFFactionComponent>> SentryFactionToIff = new()
     {
-        { "UNMC", "FactionMarine" },
-        { "CLF", "FactionCLF" },
-        { "SPP", "FactionSPP" },
-        { "Halcyon", "FactionHalcyon" },
-        { "WeYa", "FactionWeYa" },
-        { "Civilian", "FactionSurvivor" },
-        { "RoyalMarines", "FactionRoyalMarines" },
-        { "Bureau", "FactionBureau" },
-        { "TSE", "FactionTSE" }
+        { "GOVFOR", "GOVFOR" },
+        { "OPFOR", "OPFOR" },
+        { "Colony", "AUColonist" },
+        { "Bureau", "AUBureau" },
+        { "UPP", "AUUpp" }
     };
 
     public static readonly HashSet<string> SentryAllowedFactions = SentryFactionToIff.Keys.ToHashSet();

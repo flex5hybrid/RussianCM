@@ -49,7 +49,6 @@
     pocket2: RMCPouchMagazine
     id: RMCIDCardPaP
     back: RMCSatchelBlack
-    ears: RMCHeadsetSPPPaP
   storage:
     back:
     - CMSheetMetal20

@@ -18,13 +18,13 @@
       params:
         volume: 5
   - type: RMCStaminaDamageOnCollide
-    damage: 60
+    damage: 100
   - type: Projectile
     damage:
       types:
         Heat: 5
     soundHit:
-      path: /Audio/_RMC14/Bullets/energy_impact1.ogg
+      path: /Audio/Weapons/Guns/Hits/energy_metal1.ogg
     forceSound: true
   - type: RMCProjectileAccuracy
     accuracy: 125

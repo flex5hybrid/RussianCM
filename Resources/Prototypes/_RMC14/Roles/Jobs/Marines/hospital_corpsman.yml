@@ -3,24 +3,11 @@
   id: CMHospitalCorpsman
   name: cm-job-name-hospital-corpsman
   description: cm-job-description-hospital-corpsman
+  setPreference: false
   playTimeTracker: CMJobHospitalCorpsman
-  requirements:
-  - !type:TotalJobsTimeRequirement
-    group: CMJobsMedical
-    time: 3600 # 1 hours
-  - !type:DepartmentTimeRequirement
-    department: CMSquad
-    time: 3600 # 1 hour
   ranks:
-    RMCRankCorporal:
-    - !type:RoleTimeRequirement
-      role: CMJobHospitalCorpsman
-      time: 252000 # 70 hours
-    RMCRankLanceCorporal:
-    - !type:RoleTimeRequirement
-      role: CMJobHospitalCorpsman
-      time: 36000 # 10 hours
-    RMCRankPrivateFirstClass: []
+    RMCRankCorporal: []
+    RMCRankLanceCorporal: []
   startingGear: CMGearHospitalCorpsman
   dummyStartingGear: CMGearHospitalCorpsmanEquipped
   icon: "CMJobIconHospitalCorpsman"
@@ -29,8 +16,8 @@
   supervisors: cm-job-supervisors-sl
   accessGroups:
   - HospitalCorpsman
-  overwatchSortPriority: -2
-  overwatchRoleName: Hospital Corpsmen
+  #overwatchSortPriority: -2
+  #overwatchRoleName: Hospital Corpsmen
   roleWeight: 1
   displayWeight: 2
   special:
@@ -39,11 +26,13 @@
     - type: Skills
       skills:
         RMCSkillEndurance: 1
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 1
         RMCSkillJtac: 1
         RMCSkillMedical: 2
         RMCSkillSurgery: 1
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 3
     - type: CMVendorUser
       id: CMHospitalCorpsman
       points: 45

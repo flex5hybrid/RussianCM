@@ -3,6 +3,7 @@
   id: CMChiefEngineer
   name: cm-job-name-chief-engineer
   description: cm-job-description-chief-engineer
+  setPreference: false
   playTimeTracker: CMJobChiefEngineer
   requirements:
   - !type:TotalJobsTimeRequirement
@@ -32,7 +33,7 @@
         RMCSkillConstruction: 3
         RMCSkillEndurance: 1
         RMCSkillEngineer: 3
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 1
         RMCSkillIntel: 1
         RMCSkillJtac: 4

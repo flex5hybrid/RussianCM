@@ -37,9 +37,10 @@
 - type: entity
   parent: ClothingHandsBase
   id: CMHandsBrown
-  name: brown gloves
+  name: insulated combat gloves
   description: A pair of brown gloves.
   components:
+  - type: Insulated
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/brown.rsi
   - type: Clothing

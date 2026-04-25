@@ -71,6 +71,12 @@ public sealed partial class SynthComponent : Component
     };
 
     /// <summary>
+    /// If false, do not spawn a brain organ for this synth.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool ChangeBrain = true;
+
+    /// <summary>
     /// New brain organ to add when the synth is created.
     /// </summary>
     [DataField, AutoNetworkedField]
@@ -130,5 +136,14 @@ public sealed partial class SynthComponent : Component
     [DataField]
     public TimeSpan NextUnableUsePopup;
 
-}
+    [DataField, AutoNetworkedField]
+    public bool HideGeneration = false;
 
+    /// <summary>
+    /// If true, use human health icons instead of synth icons.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool UseHumanHealthIcons = false;
+
+
+}

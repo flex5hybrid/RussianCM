@@ -3,11 +3,8 @@
   id: CMPilotGunship
   name: cm-job-name-gunship-pilot
   description: cm-job-description-gunship-pilot
+  setPreference: false
   playTimeTracker: CMJobPilotGunship
-  requirements:
-  - !type:TotalJobsTimeRequirement
-    group: CMJobsDropshipPilot
-    time: 18000 # 5 hours
   ranks:
     RMCRankSecondLT:
     - !type:RoleTimeRequirement
@@ -32,7 +29,7 @@
     - type: Skills
       skills:
         RMCSkillEndurance: 1
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 1
         RMCSkillIntel: 1
         RMCSkillJtac: 2

@@ -14,6 +14,7 @@ using Content.Shared._RMC14.Rules;
 using Content.Shared._RMC14.Scoping;
 using Content.Shared._RMC14.SupplyDrop;
 using Content.Shared._RMC14.TacticalMap;
+using Content.Shared._RMC14.Tracker.SquadLeader;
 using Content.Shared._RMC14.Vendors;
 using Content.Shared._RMC14.Xenonids;
 using Content.Shared.Administration.Logs;
@@ -99,33 +100,37 @@ public abstract class SharedOverwatchConsoleSystem : EntitySystem
         SubscribeLocalEvent<OverwatchWatchingComponent, MoveInputEvent>(OnWatchingMoveInput);
         SubscribeLocalEvent<OverwatchWatchingComponent, DamageChangedEvent>(OnWatchingDamageChanged);
 
-        Subs.BuiEvents<OverwatchConsoleComponent>(OverwatchConsoleUI.Key, subs =>
-        {
-            subs.Event<OverwatchConsoleSelectSquadBuiMsg>(OnOverwatchSelectSquadBui);
-            subs.Event<OverwatchViewTacticalMapBuiMsg>(OnOverwatchViewTacticalMapBui);
-            subs.Event<OverwatchConsoleTakeOperatorBuiMsg>(OnOverwatchTakeOperatorBui);
-            subs.Event<OverwatchConsoleStopOverwatchBuiMsg>(OnOverwatchStopBui);
-            subs.Event<OverwatchConsoleSetLocationBuiMsg>(OnOverwatchSetLocationBui);
-            subs.Event<OverwatchConsoleShowDeadBuiMsg>(OnOverwatchShowDeadBui);
-            subs.Event<OverwatchConsoleShowHiddenBuiMsg>(OnOverwatchShowHiddenBui);
-            subs.Event<OverwatchConsoleTransferMarineBuiMsg>(OnOverwatchTransferMarineBui);
-            subs.Event<OverwatchConsoleWatchBuiMsg>(OnOverwatchWatchBui);
-            subs.Event<OverwatchConsoleHideBuiMsg>(OnOverwatchHideBui);
-            subs.Event<OverwatchConsolePromoteLeaderBuiMsg>(OnOverwatchPromoteLeaderBui);
-            subs.Event<OverwatchConsoleSupplyDropLongitudeBuiMsg>(OnOverwatchSupplyDropLongitudeBui);
-            subs.Event<OverwatchConsoleSupplyDropLatitudeBuiMsg>(OnOverwatchSupplyDropLatitudeBui);
-            subs.Event<OverwatchConsoleSupplyDropLaunchBuiMsg>(OnOverwatchSupplyDropLaunchBui);
-            subs.Event<OverwatchConsoleSupplyDropSaveBuiMsg>(OnOverwatchSupplyDropSaveBui);
-            subs.Event<OverwatchConsoleLocationCommentBuiMsg>(OnOverwatchSupplyDropCommentBui);
-            subs.Event<OverwatchConsoleOrbitalLongitudeBuiMsg>(OnOverwatchOrbitalCoordinatesBui);
-            subs.Event<OverwatchConsoleOrbitalLatitudeBuiMsg>(OnOverwatchOrbitalCoordinatesBui);
-            subs.Event<OverwatchConsoleOrbitalLaunchBuiMsg>(OnOverwatchOrbitalLaunchBui);
-            // subs.Event<OverwatchConsoleOrbitalSaveBuiMsg>(OnOverwatchOrbitalSaveBui);
-            // subs.Event<OverwatchConsoleOrbitalCommentBuiMsg>(OnOverwatchOrbitalCommentBui);
-            subs.Event<OverwatchConsoleSendMessageBuiMsg>(OnOverwatchSendMessageBui);
-            subs.Event<OverwatchConsoleSetSquadObjectiveBuiMsg>(OnOverwatchSetSquadObjectiveBui);
-            subs.Event<OverwatchConsoleClearSquadObjectiveBuiMsg>(OnOverwatchClearSquadObjectiveBui);
-        });
+        Subs.BuiEvents<OverwatchConsoleComponent>(
+            OverwatchConsoleUI.Key,
+            subs =>
+            {
+                subs.Event<OverwatchConsoleSelectSquadBuiMsg>(OnOverwatchSelectSquadBui);
+                subs.Event<OverwatchViewTacticalMapBuiMsg>(OnOverwatchViewTacticalMapBui);
+                subs.Event<OverwatchConsoleTakeOperatorBuiMsg>(OnOverwatchTakeOperatorBui);
+                subs.Event<OverwatchConsoleStopOverwatchBuiMsg>(OnOverwatchStopBui);
+                subs.Event<OverwatchConsoleSetLocationBuiMsg>(OnOverwatchSetLocationBui);
+                subs.Event<OverwatchConsoleShowDeadBuiMsg>(OnOverwatchShowDeadBui);
+                subs.Event<OverwatchConsoleShowHiddenBuiMsg>(OnOverwatchShowHiddenBui);
+                subs.Event<OverwatchConsoleTransferMarineBuiMsg>(OnOverwatchTransferMarineBui);
+                subs.Event<OverwatchConsoleWatchBuiMsg>(OnOverwatchWatchBui);
+                subs.Event<OverwatchConsoleHideBuiMsg>(OnOverwatchHideBui);
+                subs.Event<OverwatchConsolePromoteLeaderBuiMsg>(OnOverwatchPromoteLeaderBui);
+                subs.Event<OverwatchConsoleSupplyDropLongitudeBuiMsg>(OnOverwatchSupplyDropLongitudeBui);
+                subs.Event<OverwatchConsoleSupplyDropLatitudeBuiMsg>(OnOverwatchSupplyDropLatitudeBui);
+                subs.Event<OverwatchConsoleSupplyDropLaunchBuiMsg>(OnOverwatchSupplyDropLaunchBui);
+                subs.Event<OverwatchConsoleSupplyDropSaveBuiMsg>(OnOverwatchSupplyDropSaveBui);
+                subs.Event<OverwatchConsoleLocationCommentBuiMsg>(OnOverwatchSupplyDropCommentBui);
+                subs.Event<OverwatchConsoleOrbitalLongitudeBuiMsg>(OnOverwatchOrbitalCoordinatesBui);
+                subs.Event<OverwatchConsoleOrbitalLatitudeBuiMsg>(OnOverwatchOrbitalCoordinatesBui);
+                subs.Event<OverwatchConsoleOrbitalLaunchBuiMsg>(OnOverwatchOrbitalLaunchBui);
+                // subs.Event<OverwatchConsoleOrbitalSaveBuiMsg>(OnOverwatchOrbitalSaveBui);
+                // subs.Event<OverwatchConsoleOrbitalCommentBuiMsg>(OnOverwatchOrbitalCommentBui);
+                subs.Event<OverwatchConsoleSendMessageBuiMsg>(OnOverwatchSendMessageBui);
+                subs.Event<OverwatchConsoleSetFireteamNicknameBuiMsg>(OnOverwatchSetFireteamNicknameBui);
+                subs.Event<OverwatchConsoleOpenSquadFireteamsBuiMsg>(OnOverwatchOpenSquadFireteamsBui);
+                subs.Event<OverwatchConsoleSetSquadObjectiveBuiMsg>(OnOverwatchSetSquadObjectiveBui);
+                subs.Event<OverwatchConsoleClearSquadObjectiveBuiMsg>(OnOverwatchClearSquadObjectiveBui);
+            });
 
         Subs.CVar(_config, RMCCVars.RMCOverwatchMaxProcessTimeMilliseconds, v => _maxProcessTime = TimeSpan.FromMilliseconds(v), true);
         Subs.CVar(_config, RMCCVars.RMCOverwatchConsoleUpdateEverySeconds, v => _updateEvery = TimeSpan.FromSeconds(v), true);
@@ -686,6 +691,7 @@ public abstract class SharedOverwatchConsoleSystem : EntitySystem
     {
         var squads = new List<OverwatchSquad>();
         var marines = new Dictionary<NetEntity, List<OverwatchMarine>>();
+        var fireteams = new Dictionary<NetEntity, FireteamData>();
         var query = EntityQueryEnumerator<SquadTeamComponent>();
         while (query.MoveNext(out var uid, out var team))
         {
@@ -702,10 +708,20 @@ public abstract class SharedOverwatchConsoleSystem : EntitySystem
                     members.Add(data);
             }
 
+            // Include fireteam metadata (nicknames) if available
+            try
+            {
+                fireteams[netUid] = team.Fireteams;
+            }
+            catch
+            {
+                fireteams[netUid] = new FireteamData();
+            }
+
             squads.Add(squad);
         }
 
-        return new OverwatchConsoleBuiState(squads, marines);
+        return new OverwatchConsoleBuiState(squads, marines, fireteams);
     }
 
     public bool IsHidden(Entity<OverwatchConsoleComponent> console, NetEntity marine)
@@ -857,5 +873,90 @@ public abstract class SharedOverwatchConsoleSystem : EntitySystem
     {
         ProcessData();
         UpdateConsoles();
+    }
+
+    private void OnOverwatchSetFireteamNicknameBui(Entity<OverwatchConsoleComponent> ent, ref OverwatchConsoleSetFireteamNicknameBuiMsg args)
+    {
+        // Client-only local UI updating handled by client; server processes authoritative changes.
+        if (_net.IsClient)
+            return;
+
+        Log.Debug($"OnOverwatchSetFireteamNicknameBui called: Squad={args.Squad} Index={args.Index} Nick='{args.Nickname}'");
+
+        if (args.Index < 0 || args.Index >= 3)
+            return;
+
+        if (!TryGetEntity(args.Squad, out var squad) || !TryComp(squad, out SquadTeamComponent? team))
+            return;
+
+        // Update the team's Fireteams data structure.
+        var fireteams = team.Fireteams;
+        // Fireteams array is always present in FireteamData; ensure slot exists.
+        var ft = fireteams.Fireteams[args.Index] ??= new SquadLeaderTrackerFireteam();
+
+        // Trim and limit length
+        var nickname = args.Nickname.Trim();
+        if (string.IsNullOrWhiteSpace(nickname))
+            nickname = null; // allow clearing via empty input
+
+        const int maxLength = 64;
+        if (nickname != null && nickname.Length > maxLength)
+            nickname = nickname.Substring(0, maxLength);
+
+        ft.Nickname = nickname;
+
+        // Persist back to component and mark dirty for network sync.
+        team.Fireteams = fireteams;
+        Dirty(squad.Value, team);
+
+        // Raise an update event on the squad so other systems (trackers, tactical map, etc.) can react.
+        var ev = new SquadMemberUpdatedEvent(squad.Value);
+        RaiseLocalEvent(squad.Value, ref ev);
+
+        // Refresh all open Overwatch console UIs so clients see the new nickname immediately.
+        var consoles = EntityQueryEnumerator<OverwatchConsoleComponent>();
+        while (consoles.MoveNext(out var consoleId, out var consoleComp))
+        {
+            if (!_ui.IsUiOpen(consoleId, OverwatchConsoleUI.Key))
+                continue;
+
+            var state = GetOverwatchBuiState(consoleComp);
+            _ui.SetUiState(consoleId, OverwatchConsoleUI.Key, state);
+        }
+    }
+
+    private void OnOverwatchOpenSquadFireteamsBui(Entity<OverwatchConsoleComponent> ent, ref OverwatchConsoleOpenSquadFireteamsBuiMsg args)
+    {
+        if (_net.IsClient)
+            return;
+
+        // Validate squad entity
+        if (!TryGetEntity(args.Squad, out var squad) || !TryComp(squad, out SquadTeamComponent? team))
+            return;
+
+        // Try to find the current squad leader and open the SquadInfo UI on their tracker entity.
+        if (!_squad.TryGetSquadLeader((squad.Value, team), out var leader))
+        {
+            // No squad leader
+            return;
+        }
+
+        // Ensure a SquadLeaderTrackerComponent exists on the leader so the UI can bind to it even if they
+        // don't have a physical tracker equipped. Populate its Fireteams so the UI shows current data.
+        // Ensure tracker component exists (use out overload to get the component instance)
+        EnsureComp<SquadLeaderTrackerComponent>(leader.Owner, out var trackerComp);
+        trackerComp.Fireteams = team.Fireteams;
+        // Grant temporary overwrite permission to this overwatch actor so they can edit nicknames via the UI.
+        var actorNet = GetNetEntity(args.Actor);
+        trackerComp.TemporaryOverwatchEditors.Add(actorNet);
+        Log.Debug($"Overwatch opened SquadInfo: leader={leader.Owner}, trackerEntity={leader.Owner}, actorNet={actorNet}");
+        Dirty(leader.Owner, trackerComp);
+
+        // Open the SquadInfo UI bound to the squad leader's tracker entity for the requesting actor
+        _ui.TryOpenUi(leader.Owner, SquadLeaderTrackerUI.Key, args.Actor);
+
+        // Also raise event for other systems if needed
+        var openedEv = new OverwatchSquadUiOpenedEvent(args.Actor);
+        RaiseLocalEvent(leader.Owner, ref openedEv);
     }
 }

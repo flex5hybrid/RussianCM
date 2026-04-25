@@ -1,0 +1,21 @@
+# specialization
+
+- type: loadout
+  id: ColonyUSASFRecruiterSpecializationDefaultAU14
+  equipment:
+    id: AU14IDCardColonyUSASFRecruiter
+
+- type: loadout
+  id: ColonyUSASFRecruiterSpecializationMarinesAU14
+  equipment:
+    id: AU14IDCardColonyUSASFRecruiterMarines
+
+- type: loadout
+  id: ColonyUSASFRecruiterSpecializationUSArmyAU14
+  equipment:
+    id: AU14IDCardColonyUSASFRecruiterUSArmy
+
+- type: loadout
+  id: ColonyUSASFRecruiterSpecializationCCAFAU14
+  equipment:
+    id: AU14IDCardColonyUSASFRecruiterCCAF

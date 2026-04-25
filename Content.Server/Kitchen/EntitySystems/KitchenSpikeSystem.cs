@@ -39,6 +39,7 @@ namespace Content.Server.Kitchen.EntitySystems
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly MetaDataSystem _metaData = default!;
         [Dependency] private readonly SharedSuicideSystem _suicide = default!;
+        [Dependency] private readonly Content.Shared._RMC14.Medical.Unrevivable.RMCUnrevivableSystem _unrevivable = default!;
 
         public override void Initialize()
         {
@@ -238,6 +239,12 @@ namespace Content.Server.Kitchen.EntitySystems
             switch (butcherable.Type)
             {
                 case ButcheringType.Spike:
+                    // If the butcherable requires rot, deny spike butchering until rotten
+                    if (butcherable.WaitForRot && !_unrevivable.IsUnrevivable(victimUid))
+                    {
+                        _popupSystem.PopupEntity(Loc.GetString("comp-kitchen-spike-deny-not-rotten", ("victim", Identity.Entity(victimUid, EntityManager)), ("this", uid)), victimUid, userUid);
+                        return false;
+                    }
                     return true;
                 case ButcheringType.Knife:
                     _popupSystem.PopupEntity(Loc.GetString("comp-kitchen-spike-deny-butcher-knife", ("victim", Identity.Entity(victimUid, EntityManager)), ("this", uid)), victimUid, userUid);

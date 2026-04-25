@@ -14,9 +14,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 using System.Linq;
-using System.Numerics;
-using Content.Shared.StatusIcon;
-using Robust.Client.GameObjects;
 
 namespace Content.Client.CriminalRecords;
 
@@ -29,7 +26,6 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
     private readonly IRobustRandom _random;
     private readonly AccessReaderSystem _accessReader;
     [Dependency] private readonly IEntityManager _entManager = default!;
-    private readonly SpriteSystem _spriteSystem;
 
     public readonly EntityUid Console;
 
@@ -44,6 +40,7 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
     public Action<SecurityStatus, string>? OnDialogConfirmed;
 
     public Action<SecurityStatus>? OnStatusFilterPressed;
+    public Action<CriminalRecord, int>? OnSetBounty;
     private uint _maxLength;
     private bool _access;
     private uint? _selectedKey;
@@ -65,7 +62,6 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
         _random = robustRandom;
         _accessReader = accessReader;
         IoCManager.InjectDependencies(this);
-        _spriteSystem = _entManager.System<SpriteSystem>();
 
         _maxLength = maxLength;
         _currentFilterType = StationRecordFilterType.Name;
@@ -222,44 +218,37 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
 
     private void PopulateRecordContainer(GeneralStationRecord stationRecord, CriminalRecord criminalRecord)
     {
-        var specifier = new SpriteSpecifier.Rsi(new ResPath("Interface/Misc/job_icons.rsi"), "Unknown");
         var na = Loc.GetString("generic-not-available-shorthand");
         PersonName.Text = stationRecord.Name;
-        PersonJob.Text = stationRecord.JobTitle ?? na;
-
-        // Job icon
-        if (_proto.TryIndex<JobIconPrototype>(stationRecord.JobIcon, out var proto))
+        PersonPrints.Text = stationRecord.Fingerprint ?? na;
+        PersonDna.Text = stationRecord.DNA ?? na;
+        PersonBounty.Text = criminalRecord.Bounty > 0 ? criminalRecord.Bounty.ToString() : na;
+        // Show bounty input and set button only if user can edit
+        BountyInput.Visible = _access;
+        BountySetButton.Visible = _access;
+        if (_access)
         {
-            PersonJobIcon.Texture = _spriteSystem.Frame0(proto.Icon);
+            BountyInput.Text = criminalRecord.Bounty > 0 ? criminalRecord.Bounty.ToString() : string.Empty;
+            BountySetButton.OnPressed += BountySetButton_Pressed;
         }
 
-        PersonPrints.Text = stationRecord.Fingerprint ??  Loc.GetString("generic-not-available-shorthand");
-        PersonDna.Text = stationRecord.DNA ??  Loc.GetString("generic-not-available-shorthand");
-
-        if (criminalRecord.Status != SecurityStatus.None)
-        {
-            specifier = new SpriteSpecifier.Rsi(new ResPath("Interface/Misc/security_icons.rsi"),  GetStatusIcon(criminalRecord.Status));
-        }
-        PersonStatusTX.SetFromSpriteSpecifier(specifier);
-        PersonStatusTX.DisplayRect.TextureScale = new Vector2(3f, 3f);
-
-        StatusOptionButton.SelectId((int)criminalRecord.Status);
-        if (criminalRecord.Reason is { } reason)
-        {
-            var message = FormattedMessage.FromMarkupOrThrow(Loc.GetString("criminal-records-console-wanted-reason"));
-
-            if (criminalRecord.Status == SecurityStatus.Suspected)
-            {
-                message = FormattedMessage.FromMarkupOrThrow(Loc.GetString("criminal-records-console-suspected-reason"));
-            }
-            message.AddText($": {reason}");
-
-            WantedReason.SetMessage(message);
-            WantedReason.Visible = true;
-        }
         else
         {
-            WantedReason.Visible = false;
+            BountyInput.Text = string.Empty;
+        }
+
+    }
+
+
+
+    // Handler for when the bounty set button is pressed
+    private void BountySetButton_Pressed(BaseButton.ButtonEventArgs args)
+    {
+        if (_selectedRecord == null)
+            return;
+        if (int.TryParse(BountyInput.Text, out var bounty))
+        {
+            OnSetBounty?.Invoke(_selectedRecord, bounty);
         }
     }
 
@@ -313,18 +302,6 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
 
         _reasonDialog.OnClose += () => { _reasonDialog = null; };
     }
-    private string GetStatusIcon(SecurityStatus status)
-    {
-        return status switch
-        {
-            SecurityStatus.Paroled => "hud_paroled",
-            SecurityStatus.Wanted => "hud_wanted",
-            SecurityStatus.Detained => "hud_incarcerated",
-            SecurityStatus.Discharged => "hud_discharged",
-            SecurityStatus.Suspected => "hud_suspected",
-            _ => "SecurityIconNone"
-        };
-    }
     private string GetTypeFilterLocals(StationRecordFilterType type)
     {
         return Loc.GetString($"criminal-records-{type.ToString().ToLower()}-filter");
@@ -346,4 +323,6 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
 
         return result;
     }
+
+    public uint? SelectedKey => _selectedKey;
 }

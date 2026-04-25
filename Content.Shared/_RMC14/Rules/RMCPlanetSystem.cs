@@ -165,7 +165,8 @@ public sealed class RMCPlanetSystem : EntitySystem
             if (!entity.TryGetComponent(out RMCPlanetMapPrototypeComponent? planetMapPrototype, _compFactory))
                 continue;
 
-            planetPaths[planetMapPrototype.Map.ToString()] = entity.ID;
+            // Use the entity ID as the key to allow multiple planets with the same map path
+            planetPaths[entity.ID] = entity.ID;
         }
 
         PlanetPaths = planetPaths.ToImmutableDictionary();

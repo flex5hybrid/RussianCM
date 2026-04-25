@@ -74,7 +74,6 @@
   id: RMCGearSyntheticColonistBase
   equipment:
     id: RMCIDCardSynthColony
-    ears: CMHeadsetColony
     belt: CMBeltUtilityFilled
     pocket1: RMCPouchSurvivalSynthFill
     pocket2: RMCPouchToolsFill

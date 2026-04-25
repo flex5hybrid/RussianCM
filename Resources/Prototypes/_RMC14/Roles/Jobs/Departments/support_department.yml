@@ -14,3 +14,4 @@
     - RMCJobSynthetic
   departmentRadio: MarineJTAC
   headOfDepartment: CMAuxiliarySupportOfficer
+  hidden: true

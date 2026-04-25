@@ -2,8 +2,6 @@ using System.Numerics;
 using Content.Client._RMC14.UserInterface;
 using Robust.Client.Player;
 using Robust.Client.UserInterface.Controls;
-using Robust.Shared.Localization;
-using Robust.Shared.Maths;
 using Content.Shared._RMC14.Areas;
 using Content.Shared._RMC14.TacticalMap;
 using JetBrains.Annotations;
@@ -63,7 +61,7 @@ public sealed class TacticalMapUserBui(EntityUid owner, Enum uiKey) : RMCPopOutB
         }
         catch (Exception ex)
         {
-            _logger.Error($"Failed to load tactical map user settings for map '{_currentMapName}': {ex}");
+            Logger.Error($"Failed to load tactical map user settings for map '{_currentMapName}': {ex}");
         }
 
         Refresh();
@@ -99,7 +97,7 @@ public sealed class TacticalMapUserBui(EntityUid owner, Enum uiKey) : RMCPopOutB
             }
             catch (Exception ex)
             {
-                _logger.Error($"Failed to save tactical map user settings during disposal for map '{_currentMapName}': {ex}");
+                Logger.Error($"Failed to save tactical map user settings during disposal for map '{_currentMapName}': {ex}");
             }
         }
 
@@ -124,6 +122,9 @@ public sealed class TacticalMapUserBui(EntityUid owner, Enum uiKey) : RMCPopOutB
         {
             Window.Wrapper.Map.Lines.AddRange(lines.MarineLines);
             Window.Wrapper.Map.Lines.AddRange(lines.XenoLines);
+            Window.Wrapper.Map.Lines.AddRange(lines.OpforLines);
+            Window.Wrapper.Map.Lines.AddRange(lines.GovforLines);
+            Window.Wrapper.Map.Lines.AddRange(lines.ClfLines);
         }
 
         if (_refreshed)
@@ -135,6 +136,9 @@ public sealed class TacticalMapUserBui(EntityUid owner, Enum uiKey) : RMCPopOutB
         {
             Window.Wrapper.Canvas.Lines.AddRange(lines.MarineLines);
             Window.Wrapper.Canvas.Lines.AddRange(lines.XenoLines);
+            Window.Wrapper.Canvas.Lines.AddRange(lines.OpforLines);
+            Window.Wrapper.Canvas.Lines.AddRange(lines.GovforLines);
+            Window.Wrapper.Canvas.Lines.AddRange(lines.ClfLines);
         }
 
         var user = EntMan.GetComponentOrNull<TacticalMapUserComponent>(Owner);
@@ -162,7 +166,7 @@ public sealed class TacticalMapUserBui(EntityUid owner, Enum uiKey) : RMCPopOutB
             return;
         }
 
-        var totalCount = user.MarineBlips.Count + user.XenoBlips.Count + user.XenoStructureBlips.Count;
+        var totalCount = user.MarineBlips.Count + user.XenoBlips.Count + user.XenoStructureBlips.Count + user.OpforBlips.Count + user.GovforBlips.Count + user.ClfBlips.Count;
         var blips = new TacticalMapBlip[totalCount];
         var entityIds = new int[totalCount];
         var i = 0;
@@ -188,6 +192,27 @@ public sealed class TacticalMapUserBui(EntityUid owner, Enum uiKey) : RMCPopOutB
             i++;
         }
 
+        foreach (var (entityId, blip) in user.OpforBlips)
+        {
+            blips[i] = blip;
+            entityIds[i] = entityId;
+            i++;
+        }
+
+        foreach (var (entityId, blip) in user.GovforBlips)
+        {
+            blips[i] = blip;
+            entityIds[i] = entityId;
+            i++;
+        }
+
+        foreach (var (entityId, blip) in user.ClfBlips)
+        {
+            blips[i] = blip;
+            entityIds[i] = entityId;
+            i++;
+        }
+
         Window.Wrapper.UpdateBlips(blips, entityIds);
 
         int? localPlayerId = _player.LocalEntity != null
@@ -207,9 +232,25 @@ public sealed class TacticalMapUserBui(EntityUid owner, Enum uiKey) : RMCPopOutB
         {
             var allLabels = new Dictionary<Vector2i, string>();
             foreach (var label in labels.MarineLabels)
+            {
                 allLabels[label.Key] = label.Value;
+            }
             foreach (var label in labels.XenoLabels)
+            {
                 allLabels[label.Key] = label.Value;
+            }
+            foreach (var label in labels.OpforLabels)
+            {
+                allLabels[label.Key] = label.Value;
+            }
+            foreach (var label in labels.GovforLabels)
+            {
+                allLabels[label.Key] = label.Value;
+            }
+            foreach (var label in labels.ClfLabels)
+            {
+                allLabels[label.Key] = label.Value;
+            }
 
             Window.Wrapper.Map.UpdateTacticalLabels(allLabels);
         }

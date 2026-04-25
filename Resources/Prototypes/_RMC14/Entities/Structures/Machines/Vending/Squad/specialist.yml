@@ -110,7 +110,7 @@
         points: 40
         spawn: 6
       - id: RMCGrenadeIncendiary
-        name: 30mm HIDP Incendiary Grenades (x6)
+        name: 30mm HIAM Grenades (x6)
         points: 40
         spawn: 6
       #- id: M40HPDPWhitePhosphorusGrenadesx6

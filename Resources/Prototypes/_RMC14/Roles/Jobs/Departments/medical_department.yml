@@ -12,3 +12,4 @@
   - RMCFieldDoctor
   departmentRadio: MarineMedical
   headOfDepartment: CMCMO
+  hidden: true

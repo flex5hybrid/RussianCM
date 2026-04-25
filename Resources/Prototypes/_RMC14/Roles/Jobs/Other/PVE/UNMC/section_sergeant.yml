@@ -20,7 +20,21 @@
   - !type:AddComponentSpecial
     components:
     - type: Skills
-      preset: RMCSkillPresetPVESectionSergeant
+      skills:
+        RMCSkillEngineer: 3
+        RMCSkillConstruction: 2
+        RMCSkillFireman: 3
+        RMCSkillPowerLoader: 1
+        RMCSkillEndurance: 3
+        RMCSkillCqc: 1
+        RMCSkillLeadership: 2
+        RMCSkillMedical: 1
+        RMCSkillSurgery: 1
+        RMCSkillVehicles: 1
+        RMCSkillJtac: 2
+        RMCSkillIntel: 1
+        RMCSkillPilot: 2
+        RMCSkillFirearms: 2
     - type: SquadLeader
     - type: DemoSpecWhitelist
     - type: GrenadeSpecWhitelist
@@ -28,6 +42,18 @@
     - type: SniperWhitelist
     - type: PyroWhitelist
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: RMCPointing
     - type: JobPrefix
       prefix: cm-job-prefix-section-sergeant

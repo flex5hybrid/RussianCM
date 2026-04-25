@@ -266,7 +266,14 @@ public sealed class FoodSystem : EntitySystem
             return;
         }
 
-        _reaction.DoEntityReaction(args.Target.Value, solution, ReactionMethod.Ingestion);
+
+        var foodIsOrgan = TryComp<OrganComponent>(entity.Owner, out _);
+        var eaterIsApe = HasComp<Content.Shared._CMU14.Ape.ApeDestroyComponent>(args.Target.Value);
+
+        if (!(foodIsOrgan && eaterIsApe))
+        {
+            _reaction.DoEntityReaction(args.Target.Value, solution, ReactionMethod.Ingestion);
+        }
         _stomach.TryTransferSolution(stomachToUse!.Value.Owner, split, stomachToUse);
 
         var flavors = args.FlavorMessage;

@@ -25,7 +25,7 @@
         RMCSkillConstruction: 1
         RMCSkillEndurance: 2
         RMCSkillEngineer: 1
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 1
         RMCSkillJtac: 1
         RMCSkillMeleeWeapons: 1
@@ -74,7 +74,6 @@
       role: CMJobWeaponsSpecialist
       time: 18000 # 5 Hours
   - type: GhostRoleApplySpecial
-    squad: SquadSPP
 
 - type: randomHumanoidSettings
   parent: RMCSPPSpecialist
@@ -89,13 +88,12 @@
     raffle:
       settings: short
   - type: GhostRoleApplySpecial
-    squad: SquadSPP
 
 - type: startingGear
   id: RMCGearSPPSpecialist
   equipment:
     head: ArmorHelmetSPPHeavy
-    ears: RMCHeadsetSPP
+
     jumpsuit: CMJumpsuitSPP
     outerClothing: RMCArmorSPPHeavySpecialist
     gloves: RMCHandsVeteranSPP

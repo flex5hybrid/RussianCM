@@ -90,76 +90,82 @@
   id: RMCBarricadeBurnPlasteel
   suffix: Biohazard
   components:
-    - type: Sprite
-      sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
-      layers:
-      - state: plasteel
-      - state: burn_upgrade
-      - map: [ "acided" ]
-    - type: Damageable
-      damageContainer: Inorganic
-      damageModifierSet: CMBurnBarricade
-    - type: DamageVisuals
-      thresholds: [4, 8, 12]
-      damageDivisor: 25
-      trackAllDamage: true
-      damageOverlay:
-        sprite: _RMC14/Structures/Walls/Barricades/burn_barricade_cracks.rsi
-    - type: RMCConstructionUpgradeTarget
-      upgrades: null
-    - type: Flammable
-      damage:
-        types:
-          Heat: 2.8125
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    layers:
+    - state: plasteel
+    - state: burn_upgrade
+    - map: [ "acided" ]
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: CMBurnBarricade
+  - type: DamageVisuals
+    thresholds: [4, 8, 12]
+    damageDivisor: 25
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _RMC14/Structures/Walls/Barricades/burn_barricade_cracks.rsi
+  - type: RMCConstructionUpgradeTarget
+    upgrades: null
+  - type: Flammable
+    damage:
+      types:
+        Heat: 2.8125
 
 - type: entity
   parent: RMCBarricadePlasteel
   id: RMCBarricadeBrutePlasteel
   suffix: Reinforced
   components:
-    - type: Sprite
-      sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
-      layers:
-      - state: plasteel
-      - state: brute_upgrade
-      - map: [ "acided" ]
-    - type: Damageable
-      damageContainer: Inorganic
-      damageModifierSet: CMBruteBarricade
-    - type: DamageVisuals
-      thresholds: [4, 8, 12]
-      damageDivisor: 25
-      trackAllDamage: true
-      damageOverlay:
-        sprite: _RMC14/Structures/Walls/Barricades/brute_barricade_cracks.rsi
-    - type: RMCConstructionUpgradeTarget
-      upgrades: null
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    layers:
+    - state: plasteel
+    - state: brute_upgrade
+    - map: [ "acided" ]
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: CMBruteBarricade
+  - type: DamageVisuals
+    thresholds: [4, 8, 12]
+    damageDivisor: 25
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _RMC14/Structures/Walls/Barricades/brute_barricade_cracks.rsi
+  - type: RMCConstructionUpgradeTarget
+    upgrades: null
+  - type: BarricadeBlock
+    bidirectional: true
+    blocking: 55
 
 - type: entity
   parent: RMCBarricadePlasteel
   id: RMCBarricadeExplosivePlasteel
   suffix: Composite
   components:
-    - type: Sprite
-      sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
-      layers:
-      - state: plasteel
-      - state: explosive_upgrade
-      - map: [ "acided" ]
-    - type: ExplosionResistance
-      damageCoefficient: 0.5
-    - type: DamageVisuals
-      thresholds: [4, 8, 12]
-      damageDivisor: 25
-      trackAllDamage: true
-      damageOverlay:
-        sprite: _RMC14/Structures/Walls/Barricades/explosive_barricade_cracks.rsi
-    - type: RMCConstructionUpgradeTarget
-      upgrades: null
-    - type: Flammable
-      damage:
-        types:
-          Heat: 1.875
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    layers:
+    - state: plasteel
+    - state: explosive_upgrade
+    - map: [ "acided" ]
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: DamageVisuals
+    thresholds: [4, 8, 12]
+    damageDivisor: 25
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _RMC14/Structures/Walls/Barricades/explosive_barricade_cracks.rsi
+  - type: RMCConstructionUpgradeTarget
+    upgrades: null
+  - type: Flammable
+    damage:
+      types:
+        Heat: 1.875
+  - type: BarricadeBlock
+    bidirectional: true
+    blocking: 55
 
 - type: entity
   parent: CMBarricadeMetalDoor

@@ -101,6 +101,18 @@
                                                    ToolTip="{Loc 'humanoid-profile-editor-guidebook-button-tooltip'}"/>
                                     <OptionButton Name="SpeciesButton" HorizontalAlignment="Right" />
                                 </BoxContainer>
+                                <!-- Allegiance -->
+                                <BoxContainer HorizontalExpand="True">
+                                    <Label Text="{Loc 'humanoid-profile-editor-allegiance-label'}" />
+                                    <Control HorizontalExpand="True"/>
+                                    <OptionButton Name="AllegianceButton" HorizontalAlignment="Right" />
+                                </BoxContainer>
+                                <!-- Origin -->
+                                <BoxContainer HorizontalExpand="True">
+                                    <Label Text="{Loc 'humanoid-profile-editor-origin-label'}" />
+                                    <Control HorizontalExpand="True"/>
+                                    <OptionButton Name="OriginButton" HorizontalAlignment="Right" />
+                                </BoxContainer>
                                 <!-- Age -->
                                 <BoxContainer HorizontalExpand="True">
                                     <Label Text="{Loc 'humanoid-profile-editor-age-label'}" />
@@ -152,10 +164,22 @@
                     </ScrollContainer>
                 </BoxContainer>
                 <BoxContainer Orientation="Vertical">
-                    <!-- Jobs -->
+                    <!-- Military Jobs -->
                     <OptionButton Name="PreferenceUnavailableButton" />
                     <ScrollContainer VerticalExpand="True">
-                        <BoxContainer Name="JobList" Orientation="Vertical" />
+                        <BoxContainer Name="MilitaryJobList" Orientation="Vertical" />
+                    </ScrollContainer>
+                </BoxContainer>
+                <BoxContainer Orientation="Vertical">
+                    <!-- Threat / Third Party Jobs -->
+                    <ScrollContainer VerticalExpand="True">
+                        <BoxContainer Name="ThreatJobList" Orientation="Vertical" />
+                    </ScrollContainer>
+                </BoxContainer>
+                <BoxContainer Orientation="Vertical">
+                    <!-- Civilian Jobs -->
+                    <ScrollContainer VerticalExpand="True">
+                        <BoxContainer Name="CivilianJobList" Orientation="Vertical" />
                     </ScrollContainer>
                 </BoxContainer>
                 <BoxContainer Orientation="Vertical" Margin="10">

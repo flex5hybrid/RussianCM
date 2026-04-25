@@ -280,18 +280,9 @@ public abstract partial class SharedXenoParasiteSystem : EntitySystem
         _tagSystem.AddTag(ent, ParasiteIsPreparingLeapProtoID);
         _rmcSprite.UpdateDrawDepth(ent);
 
-        if (TryComp<XenoHideComponent>(ent, out var xenoHideComp) &&
-            xenoHideComp.Hiding)
+        foreach (var action in _rmcActions.GetActionsWithEvent<XenoHideActionEvent>(ent))
         {
-            var ev = new XenoHideActionEvent();
-            ev.Performer = ent;
-            ev.Toggle = false;
-            RaiseLocalEvent(ent, ev);
-
-            foreach (var action in _rmcActions.GetActionsWithEvent<XenoHideActionEvent>(ent))
-            {
-                _action.SetEnabled(action.AsNullable(), false);
-            }
+            _action.SetEnabled(action.AsNullable(), false);
         }
     }
 

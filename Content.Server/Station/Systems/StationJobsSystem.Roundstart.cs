@@ -1,9 +1,11 @@
 using System.Linq;
 using Content.Server.Administration.Managers;
 using Content.Server.Antag;
+using Content.Server.AU14.Round;
 using Content.Server.Players.PlayTimeTracking;
 using Content.Server.Station.Components;
 using Content.Server.Station.Events;
+using Content.Shared.AU14;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Robust.Server.Player;
@@ -20,15 +22,21 @@ public sealed partial class StationJobsSystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IBanManager _banManager = default!;
     [Dependency] private readonly AntagSelectionSystem _antag = default!;
+    [Dependency] private readonly AuJobSelectionSystem _auJobSelectionSystem = default!;
+    [Dependency] private readonly StationSystem _stationSystem = default!;
 
     private Dictionary<int, HashSet<string>> _jobsByWeight = default!;
     private List<int> _orderedWeights = default!;
+    // Toggle used for ForceOnForce overflow assignment to alternate GOVFOR/OPFOR rifleman
+    private bool _forceOnForceNextGovfor = true;
 
     /// <summary>
     /// Sets up some tables used by AssignJobs, including jobs sorted by their weights, and a list of weights in order from highest to lowest.
     /// </summary>
     private void InitializeRoundStart()
     {
+        // Reset alternation each round so ForceOnForce starts consistently.
+        _forceOnForceNextGovfor = true;
         _jobsByWeight = new Dictionary<int, HashSet<string>>();
         foreach (var job in _prototypeManager.EnumeratePrototypes<JobPrototype>())
         {
@@ -68,6 +76,41 @@ public sealed partial class StationJobsSystem
 
         // Player <-> (job, station)
         var assigned = new Dictionary<NetUserId, (ProtoId<JobPrototype>?, EntityUid)>(profiles.Count);
+
+        // --- AU14: Assign forced jobs first ---
+        var forcedAssignments = _auJobSelectionSystem.ForcedJobAssignments;
+        var forcedToRemove = new List<NetUserId>();
+        foreach (var (player, jobId) in forcedAssignments)
+        {
+            if (!profiles.ContainsKey(player))
+                continue;
+            // Find a station with the job available
+            EntityUid? assignedStation = null;
+            ProtoId<JobPrototype>? protoJob = null;
+            foreach (var station in stations)
+            {
+                var jobs = useRoundStartJobs ? GetRoundStartJobs(station) : GetJobs(station);
+                if (jobs.ContainsKey(jobId) && (jobs[jobId] == null || jobs[jobId] > 0))
+                {
+                    assignedStation = station;
+                    protoJob = new ProtoId<JobPrototype>(jobId);
+                    break;
+                }
+            }
+            // If not found, just assign to first station (fallback)
+            if (assignedStation == null && stations.Count > 0)
+            {
+                assignedStation = stations[0];
+                protoJob = new ProtoId<JobPrototype>(jobId);
+            }
+            assigned[player] = (protoJob, assignedStation ?? EntityUid.Invalid);
+            forcedToRemove.Add(player);
+        }
+        // Remove forced players from profiles so they are not assigned again
+        foreach (var player in forcedToRemove)
+        {
+            profiles.Remove(player);
+        }
 
         // The jobs left on the stations. This collection is modified as jobs are assigned to track what's available.
         var stationJobs = new Dictionary<EntityUid, Dictionary<ProtoId<JobPrototype>, int?>>();
@@ -285,6 +328,9 @@ public sealed partial class StationJobsSystem
         if (givenStations.Count == 0)
             return; // Don't attempt to assign them if there are no stations.
         // For players without jobs, give them the overflow job if they have that set...
+        // Determine the current preset so we can apply gamemode specific overflow behaviour.
+        var presetId = _gameTicker.CurrentPreset?.ID ?? _gameTicker.Preset?.ID;
+
         foreach (var player in allPlayersToAssign)
         {
             if (assignedJobs.ContainsKey(player))
@@ -301,18 +347,104 @@ public sealed partial class StationJobsSystem
 
             _random.Shuffle(givenStations);
 
+            // Build a mapping of station -> ship faction (if any) so we can prefer shipside stations for specific factions.
+            var stationFaction = new Dictionary<EntityUid, string?>();
+            var shipQuery = EntityQueryEnumerator<ShipFactionComponent>();
+            while (shipQuery.MoveNext(out var shipUid, out var shipComp))
+            {
+                var owning = _stationSystem.GetOwningStation(shipUid);
+                if (owning != null)
+                {
+                    stationFaction[owning.Value] = shipComp.Faction?.ToLowerInvariant();
+                }
+            }
+
+            // Try to select a station+overflow job pair according to gamemode rules.
             foreach (var station in givenStations)
             {
-                // Pick a random overflow job from that station
-                var overflows = GetOverflowJobs(station).ToList();
-                _random.Shuffle(overflows);
+                ProtoId<JobPrototype>? chosenOverflow = null;
 
-                // Stations with no overflow slots should simply get skipped over.
-                if (overflows.Count == 0)
-                    continue;
+                // Helper proto ids for common roles
+                var protoColonist = new ProtoId<JobPrototype>("AU14JobCivilianColonist");
+                var protoGovRifle = new ProtoId<JobPrototype>("AU14JobGOVFORSquadRifleman");
+                var protoOpfRifle = new ProtoId<JobPrototype>("AU14JobOpforSquadRifleman");
 
-                // If the overflow exists, put them in as it.
-                assignedJobs.Add(player, (overflows[0], givenStations[0]));
+                var stationOverflows = GetOverflowJobs(station);
+
+                // Colony modes: prefer colonist
+                if (!string.IsNullOrEmpty(presetId) && (presetId.Equals("Insurgency", StringComparison.InvariantCultureIgnoreCase) || presetId.Equals("ColonyFall", StringComparison.InvariantCultureIgnoreCase)))
+                {
+                    if (stationOverflows.Contains(protoColonist))
+                        chosenOverflow = protoColonist;
+                }
+
+                // Distress signal: put them as GOVFOR rifleman if possible and prefer GOVFOR ships
+                if (chosenOverflow == null && !string.IsNullOrEmpty(presetId) && presetId.Equals("DistressSignal", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    // Prefer GOVFOR stations (ships) if present
+                    if (stationFaction.TryGetValue(station, out var faction) && faction != null && faction == "govfor")
+                    {
+                        var jobs = GetJobs(station);
+                        if (jobs.ContainsKey(protoGovRifle) || stationOverflows.Contains(protoGovRifle))
+                            chosenOverflow = protoGovRifle;
+                    }
+
+                    // Fallback: any station that has the job
+                    if (chosenOverflow == null)
+                    {
+                        if (stationOverflows.Contains(protoGovRifle))
+                            chosenOverflow = protoGovRifle;
+                        else
+                        {
+                            var jobs = GetJobs(station);
+                            if (jobs.ContainsKey(protoGovRifle))
+                                chosenOverflow = protoGovRifle;
+                        }
+                    }
+                }
+
+                // Force on Force: alternate between GOVFOR and OPFOR rifleman and prefer the ship station for that faction
+                if (chosenOverflow == null && !string.IsNullOrEmpty(presetId) && presetId.Equals("ForceOnForce", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    var wantGov = _forceOnForceNextGovfor;
+                    var wantProto = wantGov ? protoGovRifle : protoOpfRifle;
+
+                    // If this station matches the faction we want, pick it.
+                    if (stationFaction.TryGetValue(station, out var faction) && faction != null && ((wantGov && faction == "govfor") || (!wantGov && faction == "opfor")))
+                    {
+                        var jobs = GetJobs(station);
+                        if (jobs.ContainsKey(wantProto) || stationOverflows.Contains(wantProto))
+                            chosenOverflow = wantProto;
+                    }
+                    else
+                    {
+                        // Otherwise, if the station has the job in overflow or regular jobs, pick it as fallback.
+                        if (stationOverflows.Contains(wantProto))
+                            chosenOverflow = wantProto;
+                        else
+                        {
+                            var jobs = GetJobs(station);
+                            if (jobs.ContainsKey(wantProto))
+                                chosenOverflow = wantProto;
+                        }
+                    }
+
+                    // If we successfully chose one, flip the toggle for the next assignment
+                    if (chosenOverflow != null)
+                        _forceOnForceNextGovfor = !_forceOnForceNextGovfor;
+                }
+
+                // Fallback: pick any overflow job on the station as before
+                if (chosenOverflow == null)
+                {
+                    var overflows = stationOverflows.ToList();
+                    _random.Shuffle(overflows);
+                    if (overflows.Count == 0)
+                        continue;
+                    chosenOverflow = overflows[0];
+                }
+
+                assignedJobs.Add(player, (chosenOverflow, station));
                 break;
             }
         }

@@ -54,17 +54,11 @@
           - RMCAttachmentMagneticHarness
           - RMCAttachmentS5RedDotSight
           - RMCAttachmentS6ReflexSight
-        random:
-        - RMCAttachmentS5RedDotSight
-        - RMCAttachmentS6ReflexSight
-        - RMCAttachmentMagneticHarness
       rmc-aslot-underbarrel:
         whitelist:
           tags:
           - RMCAttachmentFlashlightGrip
           - RMCAttachmentGyroscopicStabilizer
-        random:
-        - RMCAttachmentFlashlightGrip
       rmc-aslot-stock:
         locked: true
         startingAttachable: RMCAttachmentHG3712Stock

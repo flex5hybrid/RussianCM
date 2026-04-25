@@ -28,6 +28,18 @@
         RMCSkillVehicles: 1
         RMCSkillPolice: 1
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: JobPrefix
       prefix: rmc-job-prefix-spp-kommissar
   hidden: true
@@ -61,13 +73,10 @@
   id: RMCGearSPPKommissar
   equipment:
     head: RMCHeadCapSPPPolBlack
-    ears: RMCHeadsetSPPCommand
     ears2: RMCM5CameraGear
-    jumpsuit: RMCJumpsuitSPPOfficerShirt
     outerClothing: RMCCoatKommissarShortBlack
     gloves: RMCHandsVeteranSPP
     shoes: RMCBootsSPPFilled
-    id: RMCIDSPPCard
     belt: RMCBeltHolsterRevolverZHNK72Fill
     back: CMSatchel
     pocket1: RMCPouchAutoinjectorFill
@@ -119,6 +128,18 @@
         RMCSkillVehicles: 1
         RMCSkillPolice: 1
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: JobPrefix
       prefix: rmc-job-prefix-spp-battalion-kommissar
   hidden: true
@@ -190,6 +211,18 @@
         RMCSkillVehicles: 1
         RMCSkillPolice: 1
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: JobPrefix
       prefix: rmc-job-prefix-spp-sr-battalion-kommissar
   hidden: true
@@ -261,6 +294,18 @@
         RMCSkillVehicles: 1
         RMCSkillPolice: 1
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: JobPrefix
       prefix: rmc-job-prefix-spp-regimental-kommissar
   hidden: true
@@ -332,6 +377,18 @@
         RMCSkillVehicles: 1
         RMCSkillPolice: 1
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: JobPrefix
       prefix: rmc-job-prefix-spp-brigade-kommissar
   hidden: true
@@ -406,6 +463,18 @@
         RMCSkillOverwatch: 1
         RMCSkillEndurance: 2
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: JobPrefix
       prefix: rmc-job-prefix-spp-division-kommissar
   hidden: true
@@ -417,13 +486,10 @@
   id: RMCGearSPPDivisionKommissar
   equipment:
     head: RMCHeadCapSPPPolKomWhite
-    ears: RMCHeadsetSPPCommand
     ears2: RMCM5CameraGear
-    jumpsuit: RMCJumpsuitSPPOfficerShirt
     outerClothing: RMCCoatOfficerShortWhite
     gloves: RMCHandsVeteranSPP
     shoes: RMCBootsSPPFilled
-    id: RMCIDSPPCard
     belt: RMCMatebaBeltFilled
     back: CMSatchel
     pocket1: RMCPouchAutoinjectorFill

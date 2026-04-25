@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RMCSPPSquadLeadPVE
   name: rmc-job-name-spp-squadlead
-  description: rmc-job-description-spp-squadlead
+  description: rmc-ghost-role-information-spp-pve-description
   playTimeTracker: RMCJobSPPSquadLeadPVE
   ranks:
     RMCRankSPPSerzhant: []
@@ -19,13 +19,37 @@
       factions:
       - SPP
     - type: Skills
-      preset: RMCSkillPresetPVESquadLeader
+      skills:
+        RMCSkillCqc: 2
+        RMCSkillFirearms: 2
+        RMCSkillPolice: 2
+        RMCSkillFireman: 2
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 2
+        RMCSkillEndurance: 1
+        RMCSkillLeadership: 1
+        RMCSkillOverwatch: 1
+        RMCSkillMedical: 1
+        RMCSkillJtac: 1
+        RMCSkillPilot: 1
+        RMCSkillPowerLoader: 1
+        RMCSkillSmartGun: 1
     - type: SquadArmorWearer
     - type: JobPrefix
       prefix: rmc-job-prefix-spp-squadlead
-    - type: AssignSquad
-      squad: SquadSPP
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: RMCPointing
     - type: RMCTrackable
     - type: DemoSpecWhitelist

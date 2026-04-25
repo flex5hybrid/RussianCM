@@ -7,6 +7,7 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Client._RMC14.Overwatch;
 
 namespace Content.Client._RMC14.Tracker.SquadLeader;
 
@@ -54,12 +55,17 @@ public sealed class SquadInfoBui : BoundUserInterface
             backgroundColor = ownerMember.BackgroundColor;
         }
 
-        var isSquadLeader = EntMan.HasComponent<SquadLeaderComponent>(Owner);
+        // Only allow the local viewer to change tracker settings if they are the squad leader.
+        var isSquadLeader = EntMan.HasComponent<SquadLeaderComponent>(PlayerManager.LocalEntity);
         var squadLeader = tracker.Fireteams.SquadLeader == null
             ? Loc.GetString("rmc-squad-info-squad-leader-none")
             : Loc.GetString("rmc-squad-info-squad-leader-name", ("leader", tracker.Fireteams.SquadLeader));
         _window.SquadLeaderLabel.Text = squadLeader;
-        _window.ChangeTrackerButton.OnPressed += _ => SendPredictedMessage(new SquadLeaderTrackerChangeTrackedMsg());
+        _window.ChangeTrackerButton.Visible = isSquadLeader;
+        if (isSquadLeader)
+        {
+            _window.ChangeTrackerButton.OnPressed += _ => SendPredictedMessage(new SquadLeaderTrackerChangeTrackedMsg());
+        }
 
         // Get squad objectives from state
         Dictionary<SquadObjectiveType, string> objectives = new();
@@ -101,6 +107,26 @@ public sealed class SquadInfoBui : BoundUserInterface
                 continue;
 
             var container = new SquadFireteamContainer();
+            // Show edit nickname button; server will validate permissions when message is sent.
+            container.EditNicknameButton.Visible = true;
+            var fireteamIndex = i;
+            container.EditNicknameButton.OnPressed += _ =>
+            {
+                var window = new OverwatchTextInputWindow { Title = "Edit Fireteam Nickname" };
+                window.MessageBox.Text = fireteam.Nickname ?? string.Empty;
+
+                void SendNickname()
+                {
+                    SendPredictedMessage(new SquadLeaderTrackerSetFireteamNicknameMsg(fireteamIndex, window.MessageBox.Text));
+                    window.Close();
+                }
+
+                window.MessageBox.OnTextEntered += _ => SendNickname();
+                window.OkButton.OnPressed += _ => SendNickname();
+                window.CancelButton.OnPressed += _ => window.Close();
+                window.OpenCentered();
+            };
+
             var teamLeader = fireteam.Leader == null
                 ? Loc.GetString("rmc-squad-info-team-leader-none")
                 : Loc.GetString("rmc-squad-info-team-leader-name", ("leader", fireteam.Leader.Value.Name));
@@ -109,8 +135,12 @@ public sealed class SquadInfoBui : BoundUserInterface
             var fireatemIndex = i;
             container.RemoveLeaderButton.OnPressed +=
                 _ => SendPredictedMessage(new SquadLeaderTrackerDemoteFireteamLeaderMsg(fireatemIndex));
-            container.RemoveLeaderButton.Visible = fireteam.Leader != null && isSquadLeader;
-            container.FireteamLabel.Text = Loc.GetString("rmc-squad-info-fireteam", ("fireteam", i + 1));
+            // Allow Overwatch to remove a fireteam leader too; only hide tracker-mode change for non-leaders.
+            container.RemoveLeaderButton.Visible = fireteam.Leader != null;
+            var fireteamLabel = Loc.GetString("rmc-squad-info-fireteam", ("fireteam", i + 1));
+            if (!string.IsNullOrWhiteSpace(fireteam.Nickname))
+                fireteamLabel += $": {fireteam.Nickname}";
+            container.FireteamLabel.Text = fireteamLabel;
 
             foreach (var (_, member) in fireteam.Members)
             {
@@ -132,7 +162,8 @@ public sealed class SquadInfoBui : BoundUserInterface
                     Margin = new Thickness(0, 0, 2, 0)
                 };
 
-                promoteButton.Visible = isSquadLeader;
+                // Allow Overwatch actors to promote as well; server will validate permission.
+                promoteButton.Visible = true;
                 promoteButton.OnPressed += _ =>
                     SendPredictedMessage(new SquadLeaderTrackerPromoteFireteamLeaderMsg(member.Id));
 
@@ -150,7 +181,8 @@ public sealed class SquadInfoBui : BoundUserInterface
                     Margin = new Thickness(0, 0, 2, 0)
                 };
 
-                unassignButton.Visible = isSquadLeader;
+                // Allow Overwatch actors to unassign members too; server will validate permission.
+                unassignButton.Visible = true;
                 unassignButton.OnPressed += _ =>
                     SendPredictedMessage(new SquadLeaderTrackerUnassignFireteamMsg(member.Id));
 
@@ -185,7 +217,8 @@ public sealed class SquadInfoBui : BoundUserInterface
                 };
 
                 var fireteamIndex = i;
-                button.Visible = isSquadLeader;
+                // Allow Overwatch actors to assign members; server validates permissions.
+                button.Visible = true;
                 button.OnPressed += _ =>
                     SendPredictedMessage(new SquadLeaderTrackerAssignFireteamMsg(unassigned.Id, fireteamIndex));
 

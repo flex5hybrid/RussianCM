@@ -2,12 +2,9 @@
   id: RMCBaseCMBArmor
   abstract: true
   components:
-  - type: ClothingRequireEquipped
-    autoUnequip: true
-    denyReason: rmc-armor-not-cmb-jumpsuit
-    whitelist:
-      tags:
-      - RMCUniformCMB
+  - type: ClothingSpeedModifier # light armor speed
+    walkModifier: .725
+    sprintModifier: .725
 
 - type: entity
   parent: [RMCBaseCMBArmor, RMCBaseMarineArmorLight]

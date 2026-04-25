@@ -22,7 +22,7 @@
     - type: Skills
       skills:
         RMCSkillEndurance: 1
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 1
         RMCSkillJtac: 1
         RMCSkillMedical: 2
@@ -71,7 +71,6 @@
       role: CMJobHospitalCorpsman
       time: 18000 # 5 Hours
   - type: GhostRoleApplySpecial
-    squad: SquadSPP
 
 - type: randomHumanoidSettings
   parent: RMCSPPMedic
@@ -87,13 +86,11 @@
       settings: short
     requirements:
   - type: GhostRoleApplySpecial
-    squad: SquadSPP
 
 - type: startingGear
   id: RMCGearSPPMedic
   equipment:
     head: CMHeadCapSPP
-    ears: RMCHeadsetSPPMedic
     ears2: RMCM5CameraGear
     eyes: RMCGlassesMedicalHUDGlasses
     jumpsuit: CMJumpsuitSPPMedic

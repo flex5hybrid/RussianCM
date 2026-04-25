@@ -1,4 +1,6 @@
 using Content.Shared.Access;
+using Content.Shared.AU14.Allegiance;
+using Content.Shared.AU14.Origin;
 using Content.Shared.Guidebook;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.StatusIcon;
@@ -146,6 +148,35 @@ namespace Content.Shared.Roles
 
         [DataField]
         public bool Whitelisted;
+
+        /// <summary>
+        /// If set, this job requires the player's character to have this specific allegiance.
+        /// For example, a UPP-exclusive job would set this to "UPP" — only characters
+        /// with UPP allegiance can be assigned to it.
+        /// </summary>
+        [DataField]
+        public ProtoId<AllegiancePrototype>? AllegianceOverride { get; private set; }
+
+        /// <summary>
+        /// If true, this job bypasses allegiance checks entirely.
+        /// The player can spawn into this job regardless of their character's allegiance.
+        /// </summary>
+        [DataField]
+        public bool IgnoreAllegiance { get; private set; }
+
+        /// <summary>
+        /// Optional list of origins allowed for this job.
+        /// If null or empty, any origin is allowed unless blocked by <see cref="OriginBlackist"/>.
+        /// </summary>
+        [DataField("originwhitelist")]
+        public HashSet<ProtoId<OriginPrototype>>? OriginWhitelist { get; private set; }
+
+        /// <summary>
+        /// Optional list of origins blocked for this job.
+        /// If null or empty, no origins are explicitly blocked.
+        /// </summary>
+        [DataField("originblackist")]
+        public HashSet<ProtoId<OriginPrototype>>? OriginBlackist { get; private set; }
 
         /// <summary>
         /// Optional list of guides associated with this role. If the guides are opened, the first entry in this list

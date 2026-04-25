@@ -84,7 +84,7 @@
       key_slots:
       - CMEncryptionKeyCommon
       - RMCEncryptionKeyLiaison
-  - type: GrantTacMapAlert
+
   - type: GrantSquadLeaderTracker
     defaultMode: LeaderPmc
     trackerModes:
@@ -97,7 +97,7 @@
 - type: entity
   parent: RMCHeadsetDistressWeYa
   id: RMCHeadsetDistressPMCPVE
-  name: PMC headset
+  name: corporate headset
   description: A special headset used by corporate personnel.
   suffix: PVE
   components:
@@ -105,14 +105,11 @@
     containers:
       key_slots:
       - CMEncryptionKeyWEYA
-  - type: Clothing
-    sprite: _RMC14/Objects/Clothing/Ears/headset_onmob.rsi
-  - type: GrantTacMapAlert
   - type: GrantSquadLeaderTracker
-    defaultMode: LeaderPmcPVE
+    defaultMode: SquadLeader
     trackerModes:
-    - LeaderPmcPVE
-    - TeamLeaderPmcPVE
+    - SquadLeader
+    - FireteamLeader
 
 - type: entity
   parent: RMCHeadsetDistressPMC
@@ -135,7 +132,7 @@
       key_slots:
       - CMEncryptionKeyCommon
       - RMCEncryptionKeyLiaison
-  - type: GrantTacMapAlert
+
   - type: RMCHeadset
     radioTextIncrease: 3
   - type: GrantSquadLeaderTracker
@@ -158,7 +155,7 @@
       - CMEncryptionKeyCommon
       - RMCEncryptionKeyLiaison
   - type: GrantMarineIcons
-  - type: GrantTacMapAlert
+
   - type: GrantSquadLeaderTracker
     defaultMode: LeaderGoon
     trackerModes:
@@ -191,7 +188,7 @@
       - CMEncryptionKeyCommon
       - RMCEncryptionKeyLiaison
   - type: GrantMarineIcons
-  - type: GrantTacMapAlert
+
   - type: RMCHeadset
     radioTextIncrease: 3
   - type: GrantSquadLeaderTracker
@@ -242,13 +239,13 @@
       - CMEncryptionKeyColony
   - type: RMCHeadset
     channels:
-    - MarineSOF
+    - UASOF
   - type: GrantSquadLeaderTracker
     defaultMode: SquadLeader
     trackerModes:
     - SquadLeader
     - FORECONCommandingOfficer
-      
+
 # Paramarine Hybrisa survivor insert
 - type: entity
   parent: RMCHeadsetIconsPara
@@ -266,7 +263,7 @@
           - CMEncryptionKeyColony
     - type: RMCHeadset
       channels:
-        - RoyalMarine
+        - TWESOF
     - type: GrantSquadLeaderTracker
       defaultMode: ParaTeamLeader
       trackerModes:
@@ -282,11 +279,11 @@
   components:
     - type: RMCHeadset
       channels:
-        - RoyalMarine
+        - TWESOF
       radioTextIncrease: 2
     - type: GrantSquadLeaderTracker
       defaultMode: ParaCommander
-          
+
 - type: entity
   parent: RMCHeadsetPara
   id: RMCHeadsetParaOfficer
@@ -296,7 +293,7 @@
   components:
     - type: RMCHeadset
       channels:
-        - RoyalMarine
+        - TWESOF
       radioTextIncrease: 3
     - type: GrantSquadLeaderTracker
       defaultMode: ParaTeamLeader
@@ -327,7 +324,7 @@
       key_slots:
       - CMEncryptionKeySOF
   - type: GrantMarineIcons
-  - type: GrantTacMapAlert
+
   - type: GrantSquadLeaderTracker
     defaultMode: MARSOCLeader
     trackerModes:

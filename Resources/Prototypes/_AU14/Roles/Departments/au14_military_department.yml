@@ -1,0 +1,25 @@
+﻿- type: department
+  parent: CMDepartmentBase
+  id: AU14DepartmentGovernmentForces
+  name: au14-department-govforces
+  description: au14-department-govforces-description
+  color: "#e3ce94"
+  faction: govfor
+  roles:
+  - AU14JobGOVFORSectionSergeant
+  - AU14JobGOVFORSquadSergeant
+  - AU14JobGOVFORSquadRifleman
+  - AU14JobGOVFORRadioTelephoneOperator
+  - AU14JobGOVFORSquadAutomaticRifleman
+  - AU14JobGOVFORPlatoonCorpsman
+  - AU14JobGOVFORPlatCo
+  - AU14JobGOVFORPlatOp
+  - AU14JobGOVFORDSPilot
+  - AU14JobGOVFORDCC
+  - AU14JobGOVFORAuxSupportSynth
+  - AU14JobGOVFORWorkingJoe
+  - AU14JobGOVFORSquadCombatTech
+  - AU14JobGOVFORadvisor
+  - AU14JobGOVFORMilitaryDoctor
+  departmentRadio: null
+  headOfDepartment: null

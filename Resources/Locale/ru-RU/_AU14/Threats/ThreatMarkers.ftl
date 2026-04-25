@@ -1,0 +1,12 @@
+ent-threatleaderspawnmarker-name = Маркер спавна лидера угрозы
+ent-threatmemberspawnmarker-name = Маркер спавна члена угрозы
+ent-threatentityspawnmarker-name = Маркер спавна сущности угрозы
+ent-parachutemarker-name = Маркер парашюта
+ent-thirdpartyleaderspawnmarker-name = Маркер спавна лидера третьей стороны
+ent-thirdpartymemberspawnmarker-name = Маркер спавна члена третьей стороны
+ent-thirdpartyentityspawnmarker-name = Маркер спавна сущности третьей стороны
+ent-xenocfthreatentityspawnmarker-name = Маркер спавна сущности угрозы (ксеноморфы, КОФ)
+ent-xenocfthreatmemberspawnmarker-name = Маркер спавна члена угрозы (ксеноморфы, КОФ)
+ent-xenocfthreatleaderspawnmarker-name = Маркер спавна лидера угрозы (ксеноморфы, КОФ)
+ent-cultistcfthreatmemberspawnmarker-name = Маркер спавна члена угрозы (культисты, КОФ)
+ent-cultistcfthreatleaderspawnmarker-name = Маркер спавна лидера угрозы (культисты, КОФ)

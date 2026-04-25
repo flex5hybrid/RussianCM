@@ -69,4 +69,12 @@ public sealed partial class IdCardComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid? OriginalOwner;
     //RMC14
+
+    //AU14
+    /// <summary>
+    ///     The personal bank account balance stored on this ID card.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public int AccountBalance;
+    //AU14
 }

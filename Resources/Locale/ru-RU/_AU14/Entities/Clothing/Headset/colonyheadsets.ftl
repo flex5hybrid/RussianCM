@@ -1,0 +1,16 @@
+ent-AU14EncryptionKeyCMB-name = ключ шифрования БКМ
+ent-AU14EncryptionKeyCMB-desc = Ключ шифрования, используемый для связи по колониальным каналам и каналам БКМ.
+ent-AU14EncryptionKeyWEYU-name = колониальный ключ шифрования Weyland
+ent-AU14EncryptionKeyWEYU-desc = Ключ шифрования, используемый для связи по колониальным каналам и каналам Weyland.
+ent-AU14EncryptionKeyCMBOnly-name = ключ шифрования БКМ
+ent-AU14EncryptionKeyCMBOnly-desc = Ключ шифрования, используемый для связи по колониальным каналам и каналам БКМ.
+ent-AU14EncryptionKeyAdmin-name = ключ шифрования администрации колонии
+ent-AU14EncryptionKeyAdmin-desc = Ключ шифрования, используемый для связи по колониальным каналам, каналам We-Yu и БКМ.
+ent-AU14CMBHeadset-name = гарнитура БКМ
+ent-AU14CMBHeadset-desc = Гарнитура, используемая БКМ для связи.
+ent-AU14CMBHeadsetOnlyCMB-name = Наушник БКМ
+ent-AU14CMBHeadsetOnlyCMB-desc = Гарнитура, используемая БКМ для связи.
+ent-AU14ColonyAdminHeadset-name = гарнитура администрации колонии
+ent-AU14ColonyAdminHeadset-desc = Гарнитура, используемая администрацией колонии для связи.
+ent-AU14ColonyWeylandHeadset-name = гарнитура Weyland-Yutani колонии
+ent-AU14ColonyWeylandHeadset-desc = Гарнитура, используемая Weyland-Yutani для связи.

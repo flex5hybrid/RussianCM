@@ -205,12 +205,15 @@ public sealed class XenoPlasmaSystem : EntitySystem
 
     public bool HasPlasmaPopup(Entity<XenoPlasmaComponent?> xeno, FixedPoint2 plasma, bool predicted = true, bool doPopup = true, EntityUid? popupOn = null)
     {
+        if (plasma == FixedPoint2.Zero)
+            return true;
+
         void DoPopup()
         {
             if (!doPopup)
                 return;
 
-            popupOn ??= xeno;
+            popupOn ??= xeno.Owner;
             var popup = Loc.GetString("cm-xeno-not-enough-plasma");
             if (predicted)
                 _popup.PopupClient(popup, popupOn.Value, xeno, PopupType.MediumCaution);
@@ -265,6 +268,10 @@ public sealed class XenoPlasmaSystem : EntitySystem
 
     public bool TryRemovePlasma(Entity<XenoPlasmaComponent?> xeno, FixedPoint2 plasma)
     {
+        // Zero-cost plasma removal always succeeds (for apes without XenoPlasmaComponent)
+        if (plasma == FixedPoint2.Zero)
+            return true;
+
         if (!Resolve(xeno, ref xeno.Comp, false))
             return false;
 
@@ -277,6 +284,10 @@ public sealed class XenoPlasmaSystem : EntitySystem
 
     public bool TryRemovePlasmaPopup(Entity<XenoPlasmaComponent?> xeno, FixedPoint2 plasma, bool predicted = true, EntityCoordinates? popupOn = null)
     {
+        // Zero-cost plasma removal always succeeds (for apes without XenoPlasmaComponent)
+        if (plasma == FixedPoint2.Zero)
+            return true;
+
         if (!Resolve(xeno, ref xeno.Comp, false))
             return false;
 

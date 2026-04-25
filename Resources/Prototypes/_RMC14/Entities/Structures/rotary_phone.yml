@@ -41,7 +41,6 @@
   - type: GuideHelp
     guides:
     - RMCGuideMarineCommunications
-    - RMCLanguage
     - RMCGuideCommunicationsTowers
     - RMCGuideRoleCombatTechnician
     - RMCGuideRoleMaintenanceTechnician
@@ -84,7 +83,6 @@
   - type: GuideHelp
     guides:
     - RMCGuideMarineCommunications
-    - RMCLanguage
     - RMCGuideCommunicationsTowers
     - RMCGuideRoleCombatTechnician
     - RMCGuideRoleMaintenanceTechnician

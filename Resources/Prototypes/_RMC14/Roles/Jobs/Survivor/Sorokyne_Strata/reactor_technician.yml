@@ -14,7 +14,7 @@
     - type: Skills
       skills:
         RMCSkillEndurance: 2
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 1
         RMCSkillEngineer: 2
         RMCSkillConstruction: 2
@@ -37,7 +37,6 @@
   id: RMCGearSurvivorReactorTechnician
   equipment:
     jumpsuit: RMCJumpsuitNormCivilianWhiteAlt
-    ears: RMCHeadsetDistressSPP
     pocket2: RMCWelderIndustrial
   storage:
     back:

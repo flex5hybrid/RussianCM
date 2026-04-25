@@ -174,9 +174,6 @@
   - type: Tag
     tags:
     - DoorBumpOpener
-  - type: ItemIFF
-    factions:
-    - FactionMarine
   - type: Corrodible
     isCorrodible: false
 
@@ -224,3 +221,45 @@
     slots:
     - idcard
     sprite: _RMC14/Objects/CMIDs/lanyard.rsi
+
+- type: entity
+  id: FactionMarine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: IFFFaction
+  - type: FactionFrequencies
+    channels:
+    - MarineCommand
+    - MarineMedical
+    - MarineEngineer
+    - MarineMilitaryPolice
+#    - TODO RMC14 sentry
+    - MarineAlpha
+    - MarineBravo
+    - MarineCharlie
+    - MarineDelta
+    - MarineEcho
+    - MarineFoxtrot
+    - MarineRequisition
+    - MarineJTAC
+    - MarineIntel
+    - WEYA
+
+- type: entity
+  id: FactionSurvivor
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: IFFFaction
+  - type: FactionFrequencies
+    channels:
+    - Colony
+
+- type: entity
+  id: FactionTSE
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: IFFFaction
+  - type: FactionFrequencies
+    channels:
+    - Colony
+    - TSE

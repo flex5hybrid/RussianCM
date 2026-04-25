@@ -1327,9 +1327,9 @@ CableTerminal: RMCCableTerminal
 ClothingEyesGlassesChemical: RMCGlassesReagentHUDGlasses
 
 # 2025-07-08
-RMCGlassesBiMexYellow: RMCGlassesTriMaxYellow
-RMCGlassesBiMexBronze: RMCGlassesTriMaxBronze
-RMCGlassesBiMexBlack: RMCGlassesTriMaxBlack
+RMCGlassesTriMaxYellow: RMCGlassesTriMaxYellow
+RMCGlassesTriMaxBronze: RMCGlassesTriMaxBronze
+RMCGlassesTriMaxBlack: RMCGlassesTriMaxBlack
 
 # 2025-07-12
 FoamedIronMetal: RMCFoamedIronMetal
@@ -1363,10 +1363,16 @@ BoxSyringe: RMCBoxSyringe
 WeaponRifleSSG45: RMCWeaponRifleSSG45
 
 # 2025-08-06
-RMCSmartGun: RMCSmartGunUNMC
+RMCSmartGun: RMCSmartGun
 
 # 2025-08-07
 RMCAttachmentM42A2WoodenStock: RMCAttachmentM42A2CollapsibleStock
+
+# 2025-08-29 AU14
+RMCTallFloodlight: AU14TallFloodlight
+RMCFloodlightBroken: AU14FloodlightBroken
+RMCStreetlight: AU14Streetlight
+RMCStreetlightBroken: AU14StreetlightBroken
 
 # 2025-08-12
 GasPipeHalf: RMCGasPipeHalf
@@ -1430,8 +1436,8 @@ SignNoSmoking: CMPosterNoSmoking
 SignSmoking: CMPosterNoSmoking2
 
 # 2025-10-12
-CMLightReplacerEmpty: RMCLightReplacerEmpty
-CMLightReplacer: RMCLightReplacer
+RMCLightReplacerEmpty: RMCLightReplacerEmpty
+RMCLightReplacer: RMCLightReplacer
 CMLightFixture: RMCLightFixture
 CMLightFixtureSmall:  RMCLightFixtureSmall
 CMLightFixtureAlwaysPowered: RMCLightFixtureAlwaysPowered

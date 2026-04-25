@@ -1,8 +1,8 @@
 - type: entity
   parent: [ CMBaseWeaponGun, BaseItem]
   id: RMCSmartGunMounted
-  name: ML66D heavy machine gun
-  description: The top half of a ML66D heavy machine gun post. However it ain't much use without the tripod.
+  name: M56D heavy machine gun
+  description: The top half of a M56D heavy machine gun post. However it ain't much use without the tripod.
   components:
   - type: Item
     size: Huge
@@ -52,7 +52,7 @@
     - SemiAuto
     recoilUnwielded: 0
     scatterUnwielded: 0
-    baseFireRate: 3.33
+    baseFireRate: 6
     modifiers:
       FullAuto:
         maxScatterModifier: 0
@@ -132,7 +132,7 @@
 - type: entity
   parent: RMCSmartGunMounted
   id: RMCSmartGunMountedStatic
-  name: ML66D heavy machine gun
+  name: M56D heavy machine gun
   suffix: Scoped
   components:
   - type: MagazineAmmoProvider
@@ -171,8 +171,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineML66D
-  name: ML66D drum magazine (10x28mm)
-  description: A box of 700, 10x28mm caseless tungsten rounds for the ML66D heavy machine gun system.
+  name: M56D drum magazine (10x28mm)
+  description: A box of 700, 10x28mm caseless tungsten rounds for the M56D heavy machine gun system.
   components:
   - type: Tag
     tags:
@@ -200,8 +200,8 @@
 - type: entity
   parent: RMCMagazineML66D
   id: RMCMagazineML66DLarge
-  name: large ML66D drum magazine (10x28mm)
-  description: A box of 1500, 10x28mm caseless tungsten rounds for the ML66D heavy machine gun system.
+  name: large M56D drum magazine (10x28mm)
+  description: A box of 1500, 10x28mm caseless tungsten rounds for the M56D heavy machine gun system.
   components:
   - type: Tag
     tags:
@@ -256,7 +256,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 36
+        Piercing: 20
   - type: CMArmorPiercing
     amount: 50
   - type: RMCProjectileDamageFalloff

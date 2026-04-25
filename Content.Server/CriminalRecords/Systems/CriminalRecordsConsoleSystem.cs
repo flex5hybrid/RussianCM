@@ -31,6 +31,9 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
 
+    // Tracks which records have been scanned and are viewable on the console
+    private readonly HashSet<StationRecordKey> _scannedRecords = new();
+
     public override void Initialize()
     {
         SubscribeLocalEvent<CriminalRecordsConsoleComponent, RecordModifiedEvent>(UpdateUserInterface);
@@ -45,6 +48,7 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
             subs.Event<CriminalRecordAddHistory>(OnAddHistory);
             subs.Event<CriminalRecordDeleteHistory>(OnDeleteHistory);
             subs.Event<CriminalRecordSetStatusFilter>(OnStatusFilterPressed);
+            subs.Event<CriminalRecordSetBounty>(OnSetBounty);
         });
     }
 
@@ -122,11 +126,6 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
         // will probably never fail given the checks above
         name = _records.RecordName(key.Value);
         officer = Loc.GetString("criminal-records-console-unknown-officer");
-        var jobName = "Unknown";
-
-        _records.TryGetRecord<GeneralStationRecord>(key.Value, out var entry);
-        if (entry != null)
-            jobName = entry.JobTitle;
 
         var tryGetIdentityShortInfoEvent = new TryGetIdentityShortInfoEvent(null, mob.Value);
         RaiseLocalEvent(tryGetIdentityShortInfoEvent);
@@ -137,9 +136,9 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
 
         (string, object)[] args;
         if (reason != null)
-            args = new (string, object)[] { ("name", name), ("officer", officer), ("reason", reason), ("job", jobName) };
+            args = new (string, object)[] { ("name", name), ("officer", officer), ("reason", reason) };
         else
-            args = new (string, object)[] { ("name", name), ("officer", officer), ("job", jobName) };
+            args = new (string, object)[] { ("name", name), ("officer", officer) };
 
         // figure out which radio message to send depending on transition
         var statusString = (oldStatus, msg.Status) switch
@@ -203,6 +202,34 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
         UpdateUserInterface(ent);
     }
 
+    private void OnSetBounty(Entity<CriminalRecordsConsoleComponent> ent, ref CriminalRecordSetBounty msg)
+    {
+        // Reconstruct the StationRecordKey from the record key and the owning station
+        var owningStation = _station.GetOwningStation(ent);
+        if (owningStation == null)
+            return;
+        var stationRecordKey = new StationRecordKey(msg.RecordKey, owningStation.Value);
+        if (!_records.TryGetRecord<CriminalRecord>(stationRecordKey, out var record))
+            return;
+        record.Bounty = msg.Bounty;
+        UpdateUserInterface(ent);
+    }
+
+    /// <summary>
+    /// Call this when a player is scanned with the forensics scanner to add their record to the console.
+    /// </summary>
+    public void AddScannedRecord(StationRecordKey key)
+    {
+        if (_scannedRecords.Add(key))
+        {
+            // Update all consoles (could be optimized to only update relevant ones)
+            foreach (var ent in EntityQuery<CriminalRecordsConsoleComponent>())
+            {
+                UpdateUserInterface((ent.Owner, ent));
+            }
+        }
+    }
+
     private void UpdateUserInterface(Entity<CriminalRecordsConsoleComponent> ent)
     {
         var (uid, console) = ent;
@@ -215,7 +242,10 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
         }
 
         // get the listing of records to display
-        var listing = _records.BuildListing((owningStation.Value, stationRecords), console.Filter);
+        var allListing = _records.BuildListing((owningStation.Value, stationRecords), console.Filter);
+        // Only include records that have been scanned
+        var listing = allListing.Where(x => _scannedRecords.Contains(new StationRecordKey(x.Key, owningStation.Value)))
+                               .ToDictionary(x => x.Key, x => x.Value);
 
         // filter the listing by the selected criminal record status
         //if NONE, dont filter by status, just show all crew

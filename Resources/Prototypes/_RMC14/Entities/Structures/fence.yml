@@ -29,7 +29,7 @@
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 550
       behaviors:
         - !type:PlaySoundBehavior
           sound:

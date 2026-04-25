@@ -9,6 +9,7 @@
     size: Small
   - type: Clothing
     slots: [mask]
+  - type: IdentityBlocker
   - type: StaticPrice
     price: 25
 

@@ -48,6 +48,7 @@ public abstract class SharedMarineControlComputerSystem : EntitySystem
         SubscribeLocalEvent<EvacuationDisabledEvent>(OnRefreshComputers);
         SubscribeLocalEvent<EvacuationProgressEvent>(OnRefreshComputers);
         SubscribeLocalEvent<DropshipHijackStartEvent>(OnRefreshComputers);
+        SubscribeLocalEvent<DropshipHijackLandedEvent>(OnRefreshComputers);
         SubscribeLocalEvent<RMCAlertLevelChangedEvent>(OnRefreshComputers);
 
         SubscribeLocalEvent<MarineControlComputerComponent, BeforeActivatableUIOpenEvent>(OnComputerBeforeUIOpen);
@@ -504,8 +505,25 @@ public abstract class SharedMarineControlComputerSystem : EntitySystem
 
         ent.Comp.LastToggle = time;
 
+        // Find the map that has an EvacuationProgressComponent matching this computer's faction
+        EntityUid? targetMap = null;
+        var normalizedFaction = ent.Comp.Faction?.ToLowerInvariant();
+        var evacuations = EntityQueryEnumerator<EvacuationProgressComponent>();
+        while (evacuations.MoveNext(out var mapUid, out var progress))
+        {
+            var victimNormalized = progress.VictimFaction?.ToLowerInvariant();
+            if (normalizedFaction == victimNormalized)
+            {
+                targetMap = mapUid;
+                break;
+            }
+        }
+
+        // Fall back to the computer's own map if no faction match found
+        targetMap ??= _transform.GetMap(ent.Owner);
+
         // TODO RMC14 evacuation start sound
-        _evacuation.ToggleEvacuation(null, ent.Comp.EvacuationCancelledSound, _transform.GetMap(ent.Owner));
+        _evacuation.ToggleEvacuation(null, ent.Comp.EvacuationCancelledSound, targetMap);
         RefreshComputers();
     }
 
@@ -530,12 +548,36 @@ public abstract class SharedMarineControlComputerSystem : EntitySystem
         if (_net.IsClient)
             return;
 
-        var canEvacuate = _alertLevel.IsRedOrDeltaAlert() || _evacuation.IsEvacuationEnabled();
-        var evacuationEnabled = _evacuation.IsEvacuationEnabled();
+        var globalRedOrDelta = _alertLevel.IsRedOrDeltaAlert();
+
+        // Build a lookup of faction → evacuation state from all active EvacuationProgressComponents
+        var evacuations = new Dictionary<string, EvacuationProgressComponent>();
+        var evacQuery = EntityQueryEnumerator<EvacuationProgressComponent>();
+        while (evacQuery.MoveNext(out _, out var progress))
+        {
+            var key = progress.VictimFaction?.ToLowerInvariant() ?? string.Empty;
+            evacuations[key] = progress;
+        }
+
         var computers = EntityQueryEnumerator<MarineControlComputerComponent>();
         while (computers.MoveNext(out var uid, out var computer))
         {
-            computer.Evacuating = evacuationEnabled;
+            bool canEvacuate;
+            bool evacuating;
+
+            var factionKey = computer.Faction?.ToLowerInvariant() ?? string.Empty;
+            if (evacuations.TryGetValue(factionKey, out var matchedProgress))
+            {
+                evacuating = matchedProgress.Enabled;
+                canEvacuate = matchedProgress.DropShipCrashed || evacuating || globalRedOrDelta;
+            }
+            else
+            {
+                evacuating = false;
+                canEvacuate = globalRedOrDelta;
+            }
+
+            computer.Evacuating = evacuating;
             computer.CanEvacuate = canEvacuate;
             Dirty(uid, computer);
         }

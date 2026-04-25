@@ -32,6 +32,9 @@
             volume: -4
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: BarricadeBlock
+    bidirectional: true
+    blocking: 65
 
 - type: entity
   parent: RMCPlanterBox

@@ -27,10 +27,12 @@ public enum OverwatchConsoleUI
 [Serializable, NetSerializable]
 public sealed class OverwatchConsoleBuiState(
     List<OverwatchSquad> squads,
-    Dictionary<NetEntity, List<OverwatchMarine>> marines) : BoundUserInterfaceState
+    Dictionary<NetEntity, List<OverwatchMarine>> marines,
+    Dictionary<NetEntity, Content.Shared._RMC14.Tracker.SquadLeader.FireteamData> fireteams) : BoundUserInterfaceState
 {
     public readonly List<OverwatchSquad> Squads = squads;
     public readonly Dictionary<NetEntity, List<OverwatchMarine>> Marines = marines;
+    public readonly Dictionary<NetEntity, Content.Shared._RMC14.Tracker.SquadLeader.FireteamData> Fireteams = fireteams;
 }
 
 [Serializable, NetSerializable]
@@ -151,6 +153,20 @@ public sealed class OverwatchConsoleOrbitalCommentBuiMsg(int index, string comme
 public sealed class OverwatchConsoleSendMessageBuiMsg(string message) : BoundUserInterfaceMessage
 {
     public readonly string Message = message;
+}
+
+[Serializable, NetSerializable]
+public sealed class OverwatchConsoleSetFireteamNicknameBuiMsg(NetEntity squad, int index, string nickname) : BoundUserInterfaceMessage
+{
+    public readonly NetEntity Squad = squad;
+    public readonly int Index = index;
+    public readonly string Nickname = nickname;
+}
+
+[Serializable, NetSerializable]
+public sealed class OverwatchConsoleOpenSquadFireteamsBuiMsg(NetEntity squad) : BoundUserInterfaceMessage
+{
+    public readonly NetEntity Squad = squad;
 }
 
 [Serializable, NetSerializable]

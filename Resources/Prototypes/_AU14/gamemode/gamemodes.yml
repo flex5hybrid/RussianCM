@@ -1,0 +1,234 @@
+- type: gamePreset
+  id: ForceOnForce
+  alias:
+    - forceonforce
+  name: Force on Force
+  showInVote: true
+  description: Two units face each other in combat.
+  minPlayers: 140
+  requiresOpforVote: true
+  requiresGovforVote: true
+  supportedPlanets:
+  #- AUPlanetGixensCaverns Rout of rotation till fixed - eg
+  - AUPlanetShepherdsPride
+  #- AUPlanetFlight
+  - AUPlanetLV759
+  - AUPlanetLV327
+  - AUPlanetCorsatStation
+  - AUPlanetSorokyne
+ # - AUPlanetStableGarrison
+  - AUPlanetTrijent
+  - CMUPlanetLament
+  rules:
+  - AuVoteRule
+  - PlatoonSpawn
+  - AddGovfor
+  - AddOpfor
+  - RemoveAllJobs
+
+- type: gamePreset
+  id: Insurgency
+  alias:
+    - insurgency
+  name: Insurgency
+  showInVote: true
+  description: Insurgency mode
+  minPlayers: 40
+  requiresGovforVote: true
+  supportedPlanets:
+    - AUPlanetShepherdsPride
+    #- AUPlanetLV624
+    - CMUPlanetLament
+    #- AUPlanetLV747
+    #- AUPlanetSorokyne
+    #- AUPlanetLV759 removed pending rework
+  rules:
+  - AuVoteRule
+  - PlatoonSpawn
+  - AddGovfor
+  - AddClf
+  - ColonyAntags
+  - InsWinConditionsRule
+
+- type: gamePreset
+  id: DistressSignal
+  name: Distress Signal
+  showInVote: true
+  description: Investigate a mysterious distress signal as government forces.
+  requiresGovforVote: true
+  supportedPlanets:
+  - AUPlanetShepherdsPride
+  - AUPlanetLV747
+  #- AUPlanetFlight
+  - AUPlanetLV327
+   - AUPlanetSorokyne
+  - AUPlanetCorsatStation
+  - AUPlanetStableGarrison
+  - AUPlanetTrijent
+#  - AuPlanetFiorina -removed due to load errors
+  - AuPlanetKutjevo
+  - AuPlanetShivasSnowball
+  - CMUPlanetLament
+  rules:
+  - AuVoteRule
+  - PlatoonSpawn
+  - AddGovfor
+  - RemoveAllJobs
+
+- type: gamePreset
+  id: ColonyFall
+  alias:
+    - colonyfall
+  name: Colony Fall
+  showInVote: true
+  minPlayers: 0
+  description: Live in an offworld colony as it falls into chaos.
+  rules:
+    - AuVoteRule
+    - ColonyAntags
+  supportedPlanets:
+    #- AUPlanetLV747
+    - AUPlanetShepherdsPride
+   # - AUPlanetLV624
+   # - AUPlanetLV327
+   # - AUPlanetSorokyne
+    #- AUPlanetStableGarrison
+    - CMUPlanetLament
+
+- type: gamePreset
+  id: Jailbreak
+  alias:
+    - jailbreak
+  name: Jailbreak
+  showInVote: false
+  description: Jailbreak mode
+  rules:
+    - AuVoteRule
+
+- type: gamePreset
+  id: Prometheus
+  alias:
+    - prometheus
+  name: Prometheus
+  showInVote: false
+  description: Prometheus mode
+  rules:
+    - AuVoteRule
+
+- type: gamePreset
+  id: Criminal
+  alias:
+    - criminal
+  name: Criminal
+  showInVote: false
+  description: Criminal mode
+  rules:
+    - AuVoteRule
+
+
+
+
+
+
+
+- type: entity
+  id: PlatoonSpawn
+  parent: BaseGameRule
+  components:
+  - type: PlatoonSpawnRule
+
+- type: entity
+  id: AddGovfor
+  parent: BaseGameRule
+  components:
+  - type: AddJobsRule
+    addToShip: true
+    shipFaction: govfor
+    jobs:
+      AU14JobGOVFORPlatCo: 1
+      AU14JobGOVFORPlatoonCorpsman: 9
+      AU14JobGOVFORDCC: 1
+      AU14JobGOVFORPlatOp: 5
+      AU14JobGOVFORDSPilot: 2
+      AU14JobGOVFORRadioTelephoneOperator: 4
+      AU14JobGOVFORSquadSergeant: 3
+      AU14JobGOVFORSquadAutomaticRifleman: 3
+      AU14JobGOVFORSquadCombatTech: 6
+      AU14JobGOVFORSquadRifleman: 75
+      AU14JobGOVFORAuxSupportSynth: 2
+      AU14JobGOVFORadvisor: 1
+      AU14JobGOVFORMilitaryDoctor: 1
+
+
+- type: entity
+  id: AddOpfor
+  parent: BaseGameRule
+  components:
+  - type: AddJobsRule
+    shipFaction: opfor
+    addToShip: true
+    jobs:
+      AU14JobOpforPlatCo: 1
+      AU14JobOpforPlatoonCorpsman: 9
+      AU14JobOpforDCC: 1
+      AU14JobOpforPlatOp: 5
+      AU14JobOpforDSPilot: 2
+      AU14JobOpforRadioTelephoneOperator: 3
+      AU14JobOpforSquadSergeant: 3
+      AU14JobOpforSquadAutomaticRifleman: 3
+      AU14JobOPFORSquadCombatTech: 6
+      AU14JobOpforSquadRifleman: 75
+      AU14JobOPFORAuxSupportSynth: 2
+      AU14JobOPFORadvisor: 1
+      AU14JobOPFORMilitaryDoctor: 1
+
+- type: entity
+  id: AddClf
+  parent: BaseGameRule
+  components:
+  - type: AddJobsRule
+    jobs:
+      AU14JobCLFCellLeader: 1
+      AU14JobCLFPhysician: 1
+      AU14JobCLFGuerilla: 3
+
+- type: entity
+  id: ColonyAntags
+  parent: BaseGameRule
+  name: Colony Antags
+  description: Randomly rolls for each colony antag to be present this round.
+  components:
+  - type: GameRule
+  - type: ColonyAntagsRule
+
+
+- type: entity
+  id: AuVoteRule
+  parent: BaseGameRule
+  name: Colony Antags
+  description: If you want your mode to load planets and platoons automatically
+  components:
+  - type: AuVoteRule
+
+
+
+
+- type: entity
+  id: RemoveAllJobs
+  parent: BaseGameRule
+  name: Remove All Jobs
+  description: Removes all jobs on the planet's main station prior to round start. Optionally removes jobs on ship stations.
+  components:
+  - type: RemoveJobsRule
+
+
+
+- type: GamePlanetPool
+  id: ColonyPlanetPool
+  planets:
+    - AUPlanetLV747
+    - AUPlanetShepherdsPride
+    - AUPlanetStableGarrison
+    - AUPlanetLV624
+    - AUPlanetFlight
+

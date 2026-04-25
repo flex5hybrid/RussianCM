@@ -1,4 +1,6 @@
 # Metal Barricade Tree
+
+
 - type: entity
   parent: CMBarricadeBase
   id: CMBarricadeMetal

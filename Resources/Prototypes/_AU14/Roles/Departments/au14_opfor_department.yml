@@ -1,0 +1,28 @@
+﻿- type: department
+  parent: CMDepartmentBase
+  id: AU14DepartmentOpfor
+  name: au14-department-opfor
+  description: au14-department-opfor-description
+  color: "#9e1a0b"
+  roles:
+  - AU14JobOpforPlatCo
+  - AU14JobOpforPlatOp
+  - AU14JobOpforDSPilot
+  - AU14JobOpforDCC
+  - AU14JobOpforSectionSergeant
+  - AU14JobOpforSquadSergeant
+  - AU14JobOpforSquadRifleman
+  - AU14JobOpforRadioTelephoneOperator
+  - AU14JobOpforSquadAutomaticRifleman
+  - AU14JobOpforPlatoonCorpsman
+  - AU14JobOPFORAuxSupportSynth
+  - AU14JobOPFORWorkingJoe
+  - AU14JobOPFORSquadCombatTech
+  - AU14JobOPFORadvisor
+  - AU14JobOPFORMilitaryDoctor
+  departmentRadio: null
+  headOfDepartment: null
+  faction: opfor
+
+
+

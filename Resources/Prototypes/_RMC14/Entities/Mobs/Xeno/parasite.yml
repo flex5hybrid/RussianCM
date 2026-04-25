@@ -19,7 +19,7 @@
     raffle:
       settings: parasiteTimeRequirement
   - type: Sprite
-    sprite: _RMC14/Mobs/Xenonids/Parasite/parasite.rsi
+    sprite: _AU14/Mobs/Xenos/Parasite/parasite.rsi # AU14-Edit
   - type: MobState
     allowedStates:
     - Alive
@@ -100,7 +100,7 @@
   - type: Clothing
     quickEquip: false
     slots: [mask]
-    sprite: _RMC14/Mobs/Xenonids/Parasite/parasite.rsi
+    sprite: _AU14/Mobs/Xenos/Parasite/parasite.rsi # AU14-Edit
   - type: HideLayerClothing
     slots:
     - Snout

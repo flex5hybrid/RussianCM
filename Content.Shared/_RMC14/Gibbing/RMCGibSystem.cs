@@ -2,6 +2,7 @@ using Content.Shared.Body.Events;
 using Content.Shared.Body.Systems;
 using Content.Shared.Damage;
 using Content.Shared.Gibbing.Components;
+using Content.Shared.AU14;
 using Content.Shared.Inventory;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
@@ -48,6 +49,10 @@ public sealed class RMCGibSystem : EntitySystem
 
     private void OnDeath(Entity<RMCGibOnDeathComponent> ent, ref MobStateChangedEvent args)
     {
+        // Apes should not gib.
+        if (HasComp<ApeComponent>(ent))
+            return;
+
         if (!HasComp<GibbableComponent>(ent))
             return;
 

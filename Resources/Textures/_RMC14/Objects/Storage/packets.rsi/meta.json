@@ -210,6 +210,18 @@
     },
     {
       "name": "mfhs_packet_e"
+    },
+    {
+      "name": "model_r2175"
+    },
+    {
+      "name": "rmchedp"
+    },
+    {
+      "name": "rmchidp"
+    },
+    {
+      "name": "rmcgas"
     }
   ]
 }

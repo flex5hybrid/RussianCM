@@ -1,0 +1,83 @@
+- type: job
+  parent: AU14JobPlatCoBase
+  id: AU14JobGOVFORPlatCo
+  name: au14-job-name-govforplatco
+  description: au14-job-description-govforplatco
+  setPreference: true
+  canBeAntag: false
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 18000 # 5 hours
+  - !type:AgeRequirement
+    requiredAge: 30
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - SocialAnxiety
+    - SocialAnxietyHeavy
+    - FrontalLisp
+    - NonResuscitable
+    - Epilepsy
+  ranks:
+    RMCRankCaptain:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORPlatCo
+      time: 360000 # 100 hours
+    RMCRankFirstLT: []
+  startingGear: AU14GearGOVFORPlatCo
+  dummyStartingGear: AU14GearGOVFORPlatCoDummy
+  icon: "AU14JobIconPlatCo"
+  requireAdminNotify: true
+  spawnMenuRoleName: Platoon Commander (GOVFOR)
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govforplatco
+  accessGroups:
+  - AU14GovforCommand
+  roleWeight: 0.25
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: CommendationGiver
+    - type: NpcFactionMember
+      factions:
+      - GOVFOR
+    - type: Marine
+      Faction: govfor
+    - type: Skills
+      preset: AU14SkillPresetPlatoonCommander
+    - type: JobPrefix
+      prefix: au14-job-prefix-govforplatco
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: co
+    - type: UserIFF
+      factions:
+      - GOVFOR
+  hidden: false
+
+- type: startingGear
+  id: AU14GearGOVFORPlatCo
+  equipment:
+    id: AU14IDCardGOVFORPlatCo
+    ears: AU14HeadsetSectionLeader
+  inhand:
+    -  RMCTabletGovfor
+- type: entity
+  parent: CMSpawnPointJobBase
+  id: AU14SpawnPointGOVFORPlatCo
+  name: Spawn Point GOVFOR Platoon Commander
+  components:
+  - type: SpawnPoint
+    job_id: AU14JobGOVFORPlatCo
+  - type: Sprite
+    state: syn_spawn
+
+
+- type: startingGear
+  id: AU14GearGOVFORPlatCoDummy
+  equipment:
+    shoes: CMBootsBlack
+    head: CMHeadCapPeakedFormal
+    jumpsuit: CMJumpsuitXOFormal
+    ears: AU14HeadsetSectionLeader

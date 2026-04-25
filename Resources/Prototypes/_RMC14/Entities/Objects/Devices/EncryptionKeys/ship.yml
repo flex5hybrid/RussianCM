@@ -16,7 +16,6 @@
   - type: GuideHelp
     guides:
     - RMCGuideMarineCommunications
-    - RMCLanguage
     - RMCGuideCommunicationsTowers
     - RMCGuideRoleCombatTechnician
     - RMCGuideRoleMaintenanceTechnician
@@ -29,9 +28,6 @@
   name: public radio encryption key
   components:
   - type: EncryptionKey
-    channels:
-    - MarineCommon
-    defaultChannel: MarineCommon
   - type: Sprite
     state: stripped_key
 
@@ -52,7 +48,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyWEYA
-  name: we-ya encryption key
+  name: we-yu encryption key
   components:
   - type: EncryptionKey
     channels:
@@ -82,7 +78,6 @@
   - type: EncryptionKey
     channels:
     - CMB
-    - WEYA
     - MarineCommand
     - MarineMedical
     - MarineIntel

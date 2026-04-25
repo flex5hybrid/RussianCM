@@ -35,6 +35,12 @@ public sealed partial record CriminalRecord
     /// </summary>
     [DataField]
     public List<CrimeHistory> History = new();
+
+    /// <summary>
+    /// Bounty placed on the person, can be set by security.
+    /// </summary>
+    [DataField]
+    public int Bounty;
 }
 
 /// <summary>

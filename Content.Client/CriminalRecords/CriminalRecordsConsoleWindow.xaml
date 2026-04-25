@@ -58,16 +58,6 @@
                            StyleClasses="LabelBig" />
                     <BoxContainer Orientation="Horizontal"
                                   Margin="0 0 0 5">
-                        <Label Text="{Loc 'crew-monitoring-user-interface-job'}"
-                               FontColorOverride="DarkGray" />
-                        <TextureRect Name="PersonJobIcon"
-                                     TextureScale="2 2"
-                                     Margin="6 0"
-                                     VerticalAlignment="Center" />
-                        <Label Name="PersonJob" />
-                    </BoxContainer>
-                    <BoxContainer Orientation="Horizontal"
-                                  Margin="0 0 0 5">
                         <Label Text="{Loc 'general-station-record-prints-filter'}"
                                FontColorOverride="DarkGray" />
                         <Label Text=":"
@@ -107,6 +97,17 @@
                     <Button Name="HistoryButton"
                             Text="{Loc 'criminal-records-console-crime-history'}"
                             Margin="0 5" />
+                    <BoxContainer Orientation="Horizontal"
+                                  Margin="0 0 0 5">
+                        <Label Text="{Loc 'Bounty'}"
+                               FontColorOverride="Gold" />
+                        <Label Text=":"
+                               Margin="0 0 6 0"
+                               FontColorOverride="Gold" />
+                        <Label Name="PersonBounty" FontColorOverride="Gold" />
+                        <LineEdit Name="BountyInput" Visible="False" MinWidth="60" Margin="5 0" />
+                        <Button Name="BountySetButton" Text="Set Bounty" Visible="False" Margin="5 0" />
+                    </BoxContainer>
                 </BoxContainer>
             </BoxContainer>
             <BoxContainer Orientation="Horizontal"

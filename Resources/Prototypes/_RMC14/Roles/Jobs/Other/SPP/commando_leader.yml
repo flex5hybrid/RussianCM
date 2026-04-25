@@ -38,6 +38,18 @@
     - type: SniperWhitelist
     - type: PyroWhitelist
     - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
     - type: RMCPointing
     - type: JobPrefix
       prefix: rmc-job-prefix-spp-commando-leader
@@ -71,13 +83,12 @@
     raffle:
       settings: short
   - type: GhostRoleApplySpecial
-    squad: SquadSPP
 
 - type: startingGear
   id: RMCGearSPPCommandoLeader
   equipment:
     head: CMHeadCapSPPBeret
-    ears: RMCHeadsetSPPCommando
+
     ears2: RMCM5CameraGear
     jumpsuit: CMJumpsuitSPP
     outerClothing: RMCArmorSPPCommando

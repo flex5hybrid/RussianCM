@@ -114,7 +114,6 @@
     - id: CrateEmergencyO2Kit
     - id: CrateEmergencyRadiationKit
     - id: CrateBodyBags
-    - id: CrateChemistrySupplies
     - id: CrateChemistryP
       weight: 0.5
     - id: CrateChemistryS

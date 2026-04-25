@@ -13,7 +13,7 @@
     containers:
       key_slots:
       - CMEncryptionKeyWEYAColony
-  - type: GrantTacMapAlert
+
   - type: GrantSquadLeaderTracker
     defaultMode: LeaderPmc
     trackerModes:

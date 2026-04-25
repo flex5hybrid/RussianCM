@@ -2,6 +2,7 @@ using System.Linq;
 using Content.Shared.Lathe;
 using Content.Shared.Research.Components;
 using Content.Shared.Research.Prototypes;
+using Content.Shared.AU14.Objectives;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
@@ -82,6 +83,20 @@ public abstract class SharedResearchSystem : EntitySystem
         foreach (var prereq in tech.TechnologyPrerequisites)
         {
             if (!component.UnlockedTechnologies.Contains(prereq))
+                return false;
+        }
+
+        var objQuery = EntityQueryEnumerator<AuObjectiveComponent>();
+        while (objQuery.MoveNext(out _, out var obj))
+        {
+            if (obj.TechUnlocks.Count == 0)
+                continue;
+            if (!obj.TechUnlocks.Contains(tech.ID))
+                continue;
+
+
+            var completed = obj.FactionStatuses.Values.Any(s => s == AuObjectiveComponent.ObjectiveStatus.Completed);
+            if (!completed)
                 return false;
         }
 

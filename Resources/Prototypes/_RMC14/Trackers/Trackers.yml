@@ -223,3 +223,7 @@
   id: HiveCore
   component: HiveCore
   alert: HiveCoreTracker
+
+- type: trackerMode
+  id: BattleBuddy
+  alert: SquadTracker

@@ -24,7 +24,7 @@
         RMCSkillConstruction: 2
         RMCSkillEndurance: 1
         RMCSkillEngineer: 3
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 1
         RMCSkillJtac: 1
         RMCSkillVehicles: 1
@@ -72,7 +72,6 @@
       role: CMJobCombatTech
       time: 18000 # 5 Hours
   - type: GhostRoleApplySpecial
-    squad: SquadSPP
 
 - type: randomHumanoidSettings
   parent: RMCSPPEngineer
@@ -87,13 +86,11 @@
     raffle:
       settings: short
   - type: GhostRoleApplySpecial
-    squad: SquadSPP
 
 - type: startingGear
   id: RMCGearSPPEngineer
   equipment:
     head: ArmorHelmetSPPEngineer
-    ears: RMCHeadsetSPPEngineer
     eyes: RMCWeldingGoggles
     mask: CMMaskGas
     jumpsuit: CMJumpsuitSPPEngi

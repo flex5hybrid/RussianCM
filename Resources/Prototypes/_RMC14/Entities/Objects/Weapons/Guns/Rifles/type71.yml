@@ -2,7 +2,7 @@
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   name: Type 71 assault rifle
   id: RMCWeaponRifleType71
-  description: The primary service rifle of the SPP space forces, the Type 71 is an ergonomic, lightweight assault rifle chambered in 5.45x39mm. In accordance with doctrinal principles of overmatch and suppression, the rifle has a high rate of fire and a high-capacity casket magazine. Despite lackluster precision, an integrated recoil-dampening mechanism makes the rifle surprisingly controllable in bursts.
+  description: The primary service rifle of the UPP armed forces, the Type 71 is an ergonomic, lightweight assault rifle chambered in 5.45x39mm. In accordance with doctrinal principles of overmatch and suppression, the rifle has a high rate of fire and a high-capacity casket magazine. Despite lackluster precision, an integrated recoil-dampening mechanism makes the rifle surprisingly controllable in bursts.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/type71.rsi
@@ -34,7 +34,7 @@
     recoilUnwielded: 3
     scatterWielded: 10
     scatterUnwielded: 14
-    baseFireRate: 2.5
+    baseFireRate: 2.8
     burstScatterMult: 1
     modifiers:
       Burst:

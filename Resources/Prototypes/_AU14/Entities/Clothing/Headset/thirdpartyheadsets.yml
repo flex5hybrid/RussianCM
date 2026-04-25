@@ -1,0 +1,48 @@
+- type: entity
+  parent: RMCHeadsetMarine
+  id: AU14HeadsetUSArmy
+  name: US Army headset
+  description: Issued to US Army units.
+  suffix: US Army
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/headsets.rsi
+    state: soc_headset
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - CMEncryptionKeyColony
+  - type: RMCHeadset
+    channels:
+    - UASOF
+  - type: GrantSquadLeaderTracker
+    defaultMode: SquadLeader
+    trackerModes:
+    - SquadLeader
+    - USArmyCommandingOfficer
+
+- type: entity
+  parent: AU14HeadsetSectionLeader
+  id: AU14HeadsetUSArmyERT
+  name: US Army ERT radio headset
+  description: Issued to US Army units.
+  components:
+  - type: RMCHeadset
+    channels:
+    - UASOF
+
+- type: entity
+  parent: AU14HeadsetUSArmyERT
+  id: AU14HeadsetFORECONERT
+  name: UNMC SOF headset
+  description: Issued exclusively to Marine Raiders and members of the UNMC's Force Reconnaissance.
+
+- type: entity
+  parent: AU14HeadsetSectionLeader
+  id: AU14HeadsetRMCRRT
+  name: RMC RRT radio headset
+  description: Issued to Royal Commandos units.
+  components:
+  - type: RMCHeadset
+    channels:
+    - TWESOF

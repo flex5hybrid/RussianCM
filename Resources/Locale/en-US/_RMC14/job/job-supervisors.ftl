@@ -1,5 +1,5 @@
 ﻿# supervisors
-cm-job-supervisors-we-ya = the We-Ya Corporate Office
+cm-job-supervisors-we-ya = the Weyland-Yutani Corporate Office
 cm-job-supervisors-aso = the Auxiliary Support Officer
 cm-job-supervisors-co = the Commanding Officer
 rmc-job-supervisors-commander = the current Commander

@@ -106,7 +106,7 @@
     - RMCWeaponRifleMAR30: RMCMagazineRifleMAR40
     - WeaponRifleAR10: RMCMagazineRifleAR10
     - RMCWeaponRifleABR40: RMCMagazineRifleABR40
-    - RMCWeaponRifleSSG45NoLockStripped: RMCMagazineRifleSSG45
+  #  - RMCWeaponRifleSSG45NoLockStripped: RMCMagazineRifleSSG45
 
 - type: entity
   parent: RMCSpawnerRandomGunRifle

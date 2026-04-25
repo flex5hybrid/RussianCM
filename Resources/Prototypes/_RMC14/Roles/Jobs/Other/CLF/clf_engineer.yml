@@ -15,7 +15,7 @@
     components:
     - type: Skills
       skills:
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 1
         RMCSkillConstruction: 2
         RMCSkillEngineer: 2
@@ -27,6 +27,7 @@
     - type: NpcFactionMember
       factions:
       - CLF
+    - type: CLFMember
     - type: JobPrefix
       prefix: rmc-job-prefix-clf-engineer
   hidden: true

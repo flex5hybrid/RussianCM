@@ -31,7 +31,7 @@
         RMCSkillConstruction: 1
         RMCSkillEndurance: 2
         RMCSkillFireman: 1
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
     - type: EquipSurvivorPreset
       preset: RMCSurvivorPresetCivilianOutfits
     - type: RMCSurvivor
@@ -52,7 +52,6 @@
   id: RMCGearSurvivorBaseNoBackpack
   equipment:
     id: CMIDCardColonist
-    ears: CMHeadsetColony
     pocket1: RMCPouchSurvivalFill
 
 - type: startingGear

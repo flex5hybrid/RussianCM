@@ -1,5 +1,5 @@
+using System.Linq;
 using Content.Client._RMC14.LinkAccount;
-using Content.Client._RMC14.Lobby;
 using Content.Client.Audio;
 using Content.Client.GameTicking.Managers;
 using Content.Client.LateJoin;
@@ -8,7 +8,9 @@ using Content.Client.Message;
 using Content.Client.Playtime;
 using Content.Client.UserInterface.Systems.Chat;
 using Content.Client.Voting;
+using Content.Shared.AU14.Allegiance;
 using Content.Shared.CCVar;
+using Content.Shared.Preferences;
 using Robust.Client;
 using Robust.Client.Console;
 using Robust.Client.ResourceManagement;
@@ -34,9 +36,19 @@ namespace Content.Client.Lobby
 
         // RMC14
         [Dependency] private readonly LinkAccountManager _linkAccount = default!;
+        [Dependency] private readonly IClientPreferencesManager _preferencesManager = default!;
+
+        /// <summary>
+        /// Whether the player wants to ignore allegiance for spawning the current character.
+        /// </summary>
+        public bool IgnoreAllegiance { get; set; }
 
         private ClientGameTicker _gameTicker = default!;
         private ContentAudioSystem _contentAudioSystem = default!;
+        // Cached references to join buttons (looked up from XAML at runtime)
+        private Robust.Client.UserInterface.Controls.Button? _joinGovforButton;
+        private Robust.Client.UserInterface.Controls.Button? _joinOpforButton;
+        private Robust.Client.UserInterface.Controls.Button? _joinOtherButton;
 
         protected override Type? LinkedScreenType { get; } = typeof(LobbyGui);
         public LobbyGui? Lobby;
@@ -74,6 +86,9 @@ namespace Content.Client.Lobby
 
             Lobby.CharacterPreview.CharacterSetupButton.OnPressed += OnSetupPressed;
             Lobby.CharacterPreview.PatronPerks.OnPressed += OnPatronPerksPressed;
+            Lobby.CharacterPreview.PrevCharacterButton.OnPressed += OnPrevCharPressed;
+            Lobby.CharacterPreview.NextCharacterButton.OnPressed += OnNextCharPressed;
+            Lobby.CharacterPreview.IgnoreAllegianceToggle.OnToggled += OnIgnoreAllegianceToggled;
             Lobby.ReadyButton.OnPressed += OnReadyPressed;
             Lobby.ReadyButton.OnToggled += OnReadyToggled;
 
@@ -81,10 +96,28 @@ namespace Content.Client.Lobby
             _gameTicker.LobbyStatusUpdated += LobbyStatusUpdated;
             _gameTicker.LobbyLateJoinStatusUpdated += LobbyLateJoinStatusUpdated;
 
-            // RMC14
-            Lobby.JoinXenoButton.OnPressed += _ =>
-                _userInterfaceManager.GetUIController<RMCLobbyUIController>().OpenJoinXenoWindow();
-            Lobby.JoinXenoButton.AddStyleClass("OpenRight");
+            // RMC14: look up join buttons from the loaded XAML and wire handlers
+            _joinGovforButton = Lobby.FindControl<Robust.Client.UserInterface.Controls.Button>("JoinGovforButton");
+            if (_joinGovforButton != null)
+            {
+                _joinGovforButton.OnPressed += OnJoinGovforPressed;
+                _joinGovforButton.AddStyleClass("OpenRight");
+            }
+
+            _joinOpforButton = Lobby.FindControl<Robust.Client.UserInterface.Controls.Button>("JoinOpforButton");
+            if (_joinOpforButton != null)
+            {
+                _joinOpforButton.OnPressed += OnJoinOpforPressed;
+                _joinOpforButton.AddStyleClass("OpenRight");
+            }
+
+            // 'Other' opens ghost roles UI (all ghost roles)
+            _joinOtherButton = Lobby.FindControl<Robust.Client.UserInterface.Controls.Button>("JoinOtherButton");
+            if (_joinOtherButton != null)
+            {
+                _joinOtherButton.OnPressed += OnJoinOtherPressed;
+                _joinOtherButton.AddStyleClass("OpenRight");
+            }
         }
 
         protected override void Shutdown()
@@ -100,8 +133,19 @@ namespace Content.Client.Lobby
 
             Lobby!.CharacterPreview.CharacterSetupButton.OnPressed -= OnSetupPressed;
             Lobby.CharacterPreview.PatronPerks.OnPressed -= OnPatronPerksPressed;
+            Lobby.CharacterPreview.PrevCharacterButton.OnPressed -= OnPrevCharPressed;
+            Lobby.CharacterPreview.NextCharacterButton.OnPressed -= OnNextCharPressed;
+            Lobby.CharacterPreview.IgnoreAllegianceToggle.OnToggled -= OnIgnoreAllegianceToggled;
             Lobby!.ReadyButton.OnPressed -= OnReadyPressed;
             Lobby!.ReadyButton.OnToggled -= OnReadyToggled;
+
+            // Unhook RMC14 buttons
+            if (_joinGovforButton != null)
+                _joinGovforButton.OnPressed -= OnJoinGovforPressed;
+            if (_joinOpforButton != null)
+                _joinOpforButton.OnPressed -= OnJoinOpforPressed;
+            if (_joinOtherButton != null)
+                _joinOtherButton.OnPressed -= OnJoinOtherPressed;
 
             Lobby = null;
         }
@@ -130,7 +174,8 @@ namespace Content.Client.Lobby
                 return;
             }
 
-            new LateJoinGui().OpenCentered();
+            // Second-stage ready action: open colonists-filtered late-join UI
+            new LateJoinGui("colonists").OpenCentered();
         }
 
         private void OnReadyToggled(BaseButton.ButtonToggledEventArgs args)
@@ -205,7 +250,9 @@ namespace Content.Client.Lobby
 
                 // RMC14
                 Lobby.ReadyButton.AddStyleClass("OpenLeft");
-                Lobby.JoinXenoButton.Visible = true;
+                if (_joinGovforButton != null) _joinGovforButton.Visible = true;
+                if (_joinOpforButton != null) _joinOpforButton.Visible = true;
+                if (_joinOtherButton != null) _joinOtherButton.Visible = true;
             }
             else
             {
@@ -218,7 +265,9 @@ namespace Content.Client.Lobby
 
                 // RMC14
                 Lobby.ReadyButton.RemoveStyleClass("OpenLeft");
-                Lobby.JoinXenoButton.Visible = false;
+                if (_joinGovforButton != null) _joinGovforButton.Visible = false;
+                if (_joinOpforButton != null) _joinOpforButton.Visible = false;
+                if (_joinOtherButton != null) _joinOtherButton.Visible = false;
             }
 
             if (_gameTicker.ServerInfoBlob != null)
@@ -297,6 +346,71 @@ namespace Content.Client.Lobby
             }
 
             _consoleHost.ExecuteCommand($"toggleready {newReady}");
+        }
+
+        private void OnJoinGovforPressed(BaseButton.ButtonEventArgs args)
+        {
+            new LateJoinGui("govfor").OpenCentered();
+        }
+
+        private void OnJoinOpforPressed(BaseButton.ButtonEventArgs args)
+        {
+            new LateJoinGui("opfor").OpenCentered();
+        }
+
+        private void OnJoinOtherPressed(BaseButton.ButtonEventArgs args)
+        {
+             // Open the ghost roles UI (server-driven) to display all ghost roles
+             _consoleHost.RemoteExecuteCommand(null, "ghostroles");
+        }
+
+        private void OnPrevCharPressed(BaseButton.ButtonEventArgs args)
+        {
+            if (_preferencesManager.Preferences == null || _preferencesManager.Settings == null)
+                return;
+
+            var characters = _preferencesManager.Preferences.Characters;
+            var currentIndex = _preferencesManager.Preferences.SelectedCharacterIndex;
+
+            // Find the previous occupied slot
+            var sortedSlots = characters.Keys.OrderBy(k => k).ToList();
+            if (sortedSlots.Count <= 1)
+                return;
+
+            var idx = sortedSlots.IndexOf(currentIndex);
+            var prevIdx = idx <= 0 ? sortedSlots.Count - 1 : idx - 1;
+            _preferencesManager.SelectCharacter(sortedSlots[prevIdx]);
+            _userInterfaceManager.GetUIController<LobbyUIController>().ReloadCharacterSetup();
+        }
+
+        private void OnNextCharPressed(BaseButton.ButtonEventArgs args)
+        {
+            if (_preferencesManager.Preferences == null || _preferencesManager.Settings == null)
+                return;
+
+            var characters = _preferencesManager.Preferences.Characters;
+            var currentIndex = _preferencesManager.Preferences.SelectedCharacterIndex;
+
+            // Find the next occupied slot
+            var sortedSlots = characters.Keys.OrderBy(k => k).ToList();
+            if (sortedSlots.Count <= 1)
+                return;
+
+            var idx = sortedSlots.IndexOf(currentIndex);
+            var nextIdx = idx >= sortedSlots.Count - 1 ? 0 : idx + 1;
+            _preferencesManager.SelectCharacter(sortedSlots[nextIdx]);
+            _userInterfaceManager.GetUIController<LobbyUIController>().ReloadCharacterSetup();
+        }
+
+        private void OnIgnoreAllegianceToggled(BaseButton.ButtonToggledEventArgs args)
+        {
+            IgnoreAllegiance = args.Pressed;
+            var netManager = IoCManager.Resolve<Robust.Shared.Network.IClientNetManager>();
+            var msg = new MsgIgnoreAllegiance
+            {
+                IgnoreAllegiance = args.Pressed
+            };
+            netManager.ClientSendMessage(msg);
         }
     }
 }

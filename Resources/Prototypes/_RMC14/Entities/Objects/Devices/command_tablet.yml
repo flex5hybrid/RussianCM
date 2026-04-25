@@ -12,8 +12,6 @@
   - type: ActivatableUI
     key: enum.MarineCommunicationsComputerUI.Key
   - type: ActivatableUIRequiresAccess
-  - type: AccessReader
-    access: [ [ "RMCAccessSeniorCommand" ] ]
   - type: UserInterface
     interfaces:
       enum.MarineCommunicationsComputerUI.Key:

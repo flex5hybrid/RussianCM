@@ -1,0 +1,208 @@
+- type: entity
+  parent: SquadBase
+  id: AU14SquadGROM
+  name: GROM
+  components:
+  - type: SquadTeam
+    color: "#edae72"
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: UPPSOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_spp_alpha
+    leaderIcon:
+      sprite: _RMC14/Interface/cm_job_icons.rsi
+      state: upp_lt
+    canSupplyDrop: false
+    group: GROM
+  - type: Tag
+    tags:
+    - AU14SquadGROM
+
+- type: entity
+  parent: SquadBase
+  id: AU14SquadTD
+  name: Territorial Defense
+  components:
+  - type: SquadTeam
+    color: "#ed7e57"
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: UPPSOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_spp
+    canSupplyDrop: false
+    group: TD
+  - type: Tag
+    tags:
+    - AU14SquadTD
+
+- type: entity
+  parent: SquadBase
+  id: AU14SquadUACG
+  name: Colonial Guard
+  components:
+  - type: SquadTeam
+    color: "#edae72"
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: UASOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_ua
+    canSupplyDrop: false
+    group: UACG
+  - type: Tag
+    tags:
+    - AU14SquadUACG
+
+- type: entity
+  parent: SquadBase
+  id: AU14SquadUSArmy
+  name: US Army
+  components:
+  - type: SquadTeam
+    color: "#2e4f68"
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: UASOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_ua
+    leaderIcon:
+      sprite: _AU14/Interface/job_icons.rsi
+      state: hudsquad_sl_army
+    canSupplyDrop: false
+    group: USArmy
+  - type: Tag
+    tags:
+    - AU14SquadUSArmy
+
+- type: entity
+  parent: SquadBase
+  id: AU14SquadUSArmy32nd
+  name: 32nd Arm
+  components:
+  - type: SquadTeam
+    color: "#2e4f68"
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: UASOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_ua
+    leaderIcon:
+      sprite: _AU14/Interface/job_icons.rsi
+      state: hudsquad_sl_army
+    canSupplyDrop: false
+    group: USArmy
+  - type: Tag
+    tags:
+    - AU14SquadUSArmy
+
+- type: entity
+  parent: SquadBase
+  id: AU14SquadRMCRRT
+  name: RRT
+  components:
+  - type: SquadTeam
+    color: "#3D6F43"
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: UASOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_twe
+    leaderIcon:
+      sprite: _RMC14/Interface/cm_job_icons.rsi
+      state: rmc_lieutenant
+    canSupplyDrop: false
+    group: RRT
+  - type: Tag
+    tags:
+    - AU14SquadRMCRRT
+
+- type: entity
+  parent: SquadBase
+  id: AU14SquadFirstRecon
+  name: First Recon
+  components:
+  - type: SquadTeam
+    color: "#32CD32"
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: UASOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_forecon
+    canSupplyDrop: false
+    group: FORECON
+  - type: Tag
+    tags:
+    - AU14SquadFirstRecon
+
+- type: entity
+  parent: SquadBase
+  id: AU14SquadLACNCommando
+  name: LACN Commando
+  components:
+  - type: SquadTeam
+    color: "#32CD32"
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: UASOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_forecon
+    canSupplyDrop: false
+    group: LACNCommando
+  - type: Tag
+    tags:
+    - AU14SquadLACNCommando
+
+- type: Tag
+  id: AU14SquadUACG
+
+- type: Tag
+  id: AU14SquadGROM
+
+- type: Tag
+  id: AU14SquadTD
+
+- type: Tag
+  id: AU14SquadUSArmy
+
+- type: Tag
+  id: AU14SquadRMCRRT
+
+- type: Tag
+  id: AU14SquadFirstRecon
+
+- type: Tag
+  id: AU14SquadLACNCommando

@@ -27,8 +27,6 @@
       factions:
       - WeYa
       - Civilian
-    - type: AssignSquad
-      squad: SquadPMC
     - type: JobPrefix
       prefix: rmc-job-prefix-pmc-medic
     - type: TacticalMapIcon

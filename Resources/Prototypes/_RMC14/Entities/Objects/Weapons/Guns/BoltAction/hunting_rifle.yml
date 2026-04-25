@@ -23,9 +23,9 @@
   - type: RMCSelectiveFire
     baseFireModes:
     - SemiAuto
-    recoilWielded: 2
+    recoilWielded: 1
     recoilUnwielded: 4
-    scatterWielded: 10
+    scatterWielded: 3
     scatterUnwielded: 20
     baseFireRate: 1.25
     burstScatterMult: 5
@@ -121,8 +121,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeBoltActionRifle
-  name: Cartridge (5.56x45)
-  description: A Cartridge for the Basira-Armstrong hunting rifle. Compliant with the 15-cartridge limit on civilian hunting rifles.
+  name: cartridge (6.5mm)
+  description: "A 6.5mm cartridge for the Basira-Armstrong hunting rifle. Compliant with the 15-cartridge limit on civilian hunting rifles."
   components:
   - type: Tag
     tags:
@@ -139,9 +139,9 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 42
+        Piercing: 37
   - type: CMArmorPiercing
-    amount: 30
+    amount: 10
   - type: RMCStunOnHit
     stuns:
     - whitelist:

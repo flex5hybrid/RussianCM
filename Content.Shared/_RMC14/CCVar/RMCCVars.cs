@@ -95,7 +95,7 @@ public sealed partial class RMCCVars : CVars
         CVarDef.Create("rmc.ftl_crash_land", true, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<float> RMCDropshipInitialDelayMinutes =
-        CVarDef.Create("rmc.dropship_initial_delay_minutes", 15f, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.dropship_initial_delay_minutes", 1f, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCDropshipHijackInitialDelayMinutes =
         CVarDef.Create("rmc.dropship_hijack_initial_delay_minutes", 40, CVar.REPLICATED | CVar.SERVER);
@@ -212,7 +212,7 @@ public sealed partial class RMCCVars : CVars
         CVarDef.Create("rmc.job_slot_scaling", true, CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<float> RMCEmoteCooldownSeconds =
-        CVarDef.Create("rmc.emote_cooldown_seconds", 20f, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("rmc.emote_cooldown_seconds", 5f, CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<float> RMCPowerUpdateEverySeconds =
         CVarDef.Create("rmc.power_update_every_seconds", 1f, CVar.REPLICATED | CVar.SERVER);
@@ -272,16 +272,16 @@ public sealed partial class RMCCVars : CVars
         CVarDef.Create("rmc.playtime_silver_medal_time_hours", 25, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCPlaytimeGoldMedalTimeHours =
-        CVarDef.Create("rmc.playtime_gold_medal_time_hours", 70, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.playtime_gold_medal_time_hours", 50, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCPlaytimePlatinumMedalTimeHours =
-        CVarDef.Create("rmc.playtime_platinum_medal_time_hours", 175, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.playtime_platinum_medal_time_hours", 70, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCPlaytimeRubyMedalTimeHours =
-        CVarDef.Create("rmc.playtime_ruby_medal_time_hours", 350, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.playtime_ruby_medal_time_hours", 100, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCPlaytimeAmethystMedalTimeHours =
-        CVarDef.Create("rmc.playtime_amethyst_medal_time_hours", 600, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.playtime_amethyst_medal_time_hours", 120, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCPlaytimeEmeraldMedalTimeHours =
         CVarDef.Create("rmc.playtime_emerald_medal_time_hours", 1000, CVar.REPLICATED | CVar.SERVER);
@@ -291,13 +291,13 @@ public sealed partial class RMCCVars : CVars
     // For the future coder: 2100, 2800, 3600, 4500
 
     public static readonly CVarDef<int> RMCPlaytimeXenoPrefixThreeTimeHours =
-        CVarDef.Create("rmc.playtime_xeno_prefix_three_time_hours", 124, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.playtime_xeno_prefix_three_time_hours", 0, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCPlaytimeXenoPostfixTimeHours =
-        CVarDef.Create("rmc.playtime_xeno_postfix_time_hours", 24, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.playtime_xeno_postfix_time_hours", 0, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCPlaytimeXenoPostfixTwoTimeHours =
-        CVarDef.Create("rmc.playtime_xeno_postfix_two_time_hours", 300, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.playtime_xeno_postfix_two_time_hours", 0, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCDisconnectedXenoGhostRoleTimeSeconds =
         CVarDef.Create("rmc.disconnected_xeno_ghost_role_time_seconds", 300, CVar.REPLICATED | CVar.SERVER);

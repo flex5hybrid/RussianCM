@@ -268,7 +268,14 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
         bool midround = false)
     {
         var playerPool = GetPlayerPool(ent, pool, def);
-        var existingAntagCount = ent.Comp.PreSelectedSessions.TryGetValue(def, out var existingAntags) ?  existingAntags.Count : 0;
+        var existingAntagCount = 0;
+        if (ent.Comp.PreSelectedSessions.TryGetValue(def, out var existingAntags))
+        {
+            // Drop entries that are no longer eligible so replacement picks can happen later in the same pass.
+            existingAntags.RemoveWhere(session => !IsSessionValid(ent, session, def) || !IsEntityValid(session.AttachedEntity, def));
+            existingAntagCount = existingAntags.Count;
+        }
+
         var count = GetTargetAntagCount(ent, GetTotalPlayerCount(pool), def) - existingAntagCount;
 
         // if there is both a spawner and players getting picked, let it fall back to a spawner.
@@ -553,6 +560,29 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
 
         // todo: expand this to allow for more fine antag-selection logic for game rules.
         if (!_jobs.CanBeAntag(session))
+            return false;
+
+        if (!MatchesJobConstraints(session, def, mind))
+            return false;
+
+        return true;
+    }
+
+    private bool MatchesJobConstraints(ICommonSession session, AntagSelectionDefinition def, EntityUid? mind = null)
+    {
+        if (def.JobWhitelist == null && def.JobBlacklist == null)
+            return true;
+
+        mind ??= session.GetMind();
+
+        // If the player has no job yet, defer filtering until a later selection pass.
+        if (!_jobs.MindTryGetJobId(mind, out var jobId) || jobId == null)
+            return true;
+
+        if (def.JobWhitelist != null && !def.JobWhitelist.Contains(jobId.Value))
+            return false;
+
+        if (def.JobBlacklist != null && def.JobBlacklist.Contains(jobId.Value))
             return false;
 
         return true;

@@ -1,0 +1,70 @@
+- type: job
+  parent: AU14JobRadioTelephoneOperatorBase
+  id: AU14JobGOVFORRadioTelephoneOperatorRMC
+  name: au14-job-name-radiotelephoneoperatorRMC
+  description: au14-job-description-radiotelephoneooerator
+  setPreference: true
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Epilepsy
+    - NonResuscitable
+  ranks:
+    RMC_Corporal:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORSquadAutomaticRifleman
+      time: 216000 # 60 hours
+    RMC_LanceCorporal:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORSquadAutomaticRifleman
+      time: 108000 # 30 hours
+    RMC_Marine: []
+  startingGear: AU14GearGOVFORRadioTelephoneOperator
+  dummyStartingGear: AU14GearGOVFORRadioTelephoneOperatorDummy
+  icon: "AU14JobIconRTO"
+  requireAdminNotify: false
+  spawnMenuRoleName: Fireteam Leader (TWE RMC)
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforFTL
+  overwatchSortPriority: -5
+  overwatchRoleName: Radio Telephone Operator
+  roleWeight: 0.25
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - GOVFOR
+    - type: Marine
+      Faction: govfor
+    - type: Skills
+      skills:
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 3
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 1
+        RMCSkillJtac: 3
+        RMCSkillPolice: 1
+    - type: JobPrefix
+      prefix: au14-job-prefix-radiotelephoneoperator
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: synth
+    - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
+  hidden: true

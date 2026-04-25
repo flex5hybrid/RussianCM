@@ -1,0 +1,14 @@
+- type: gameMap
+  id: auShivas
+  mapName: Shivas Snowball
+  mapPath: /Maps/_AU14/shivas.yml
+  minPlayers: 0
+  maxPlayers: 200
+  maxRandomOffset: 0
+  randomRotation: false
+  stations:
+    shiva:
+      stationProto: StandardUNMCWarship
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Shivas Snowball'

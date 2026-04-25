@@ -33,6 +33,7 @@
     OB: true
     supplyDrop: true
     paradropping: true
+    countAsArrestedForEndConditions: false
   - type: PlacementReplacement
     key: rmc_areas
 

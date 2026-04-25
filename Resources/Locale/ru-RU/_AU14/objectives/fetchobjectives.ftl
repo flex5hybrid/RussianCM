@@ -1,0 +1,12 @@
+ent-fetchoreobjective-name = Цель: Добыть руду
+ent-fetchoreobjectivemarker-name = Точка появления цели «Добыть руду»
+ent-fetchreturnopfor-name = Точка возврата (Опфор)
+ent-fetchreturngovfor-name = Точка возврата (Говфор)
+ent-fetchcrownobjective-name = Цель: Добыть корону
+ent-fetchanprcobjective-name = Цель: Добыть AN/PRC-982
+ent-fetchblackboxobjective-name = Цель: Добыть CIR-60 «Чёрный ящик»
+ent-fetchnuclearlaunchcodesobjective-name = Цель: Добыть брошюру с кодами ядерного запуска
+ent-fetchtheaterhandbookobjective-name = Цель: Добыть справочник по театральным операциям
+ent-fetchattmosdatastorageunit-name = Цель: Добыть RCS-9 ARDSU
+ent-fetchwylaptopobjective-name = Цель: Добыть ноутбук В-Я
+ent-fetchobjectivemarkergenericspawnpoint-name = Точка спавна цели

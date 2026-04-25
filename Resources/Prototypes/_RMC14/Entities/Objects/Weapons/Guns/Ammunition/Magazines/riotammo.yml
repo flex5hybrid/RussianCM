@@ -190,7 +190,7 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolM1984Rubber
-  name: M1984 rubber magazine (9mm)
+  name: M4A3 rubber magazine (9mm)
   components:
   - type: Tag
     tags:

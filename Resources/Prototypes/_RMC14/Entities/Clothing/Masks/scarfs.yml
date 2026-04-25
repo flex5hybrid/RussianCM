@@ -239,6 +239,8 @@
   id: RMCMaskTornScarfBase
   abstract: true
   components:
+  - type: IdentityBlocker
+    coverage: MOUTH
   - type: Clothing
     slots:
     - mask
@@ -342,6 +344,8 @@
   name: neckerchief
   description: A simple cloth worn around the neck, adjustable between a loose fit or a more tightly secured style.
   components:
+  - type: IdentityBlocker
+    coverage: MOUTH
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/Neckerchief/alpha.rsi
   - type: Clothing

@@ -3,6 +3,7 @@
   id: CMIntelOfficer
   name: cm-job-name-intel
   description: cm-job-description-intel
+  setPreference: false
   playTimeTracker: CMJobIntelOfficer
   requirements:
   - !type:DepartmentTimeRequirement
@@ -33,7 +34,7 @@
         RMCSkillCqc: 1
         RMCSkillEndurance: 1
         RMCSkillEngineer: 2
-        RMCSkillFirearms: 1
+        RMCSkillFirearms: 2
         RMCSkillFireman: 1
         RMCSkillIntel: 2
         RMCSkillJtac: 2

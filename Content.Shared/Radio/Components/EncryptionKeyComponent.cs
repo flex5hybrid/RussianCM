@@ -1,4 +1,5 @@
 using Content.Shared.Chat;
+using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Set;
@@ -9,10 +10,11 @@ namespace Content.Shared.Radio.Components;
 ///     This component is currently used for providing access to channels for "HeadsetComponent"s.
 ///     It should be used for intercoms and other radios in future.
 /// </summary>
-[RegisterComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+
 public sealed partial class EncryptionKeyComponent : Component
 {
-    [DataField("channels", customTypeSerializer: typeof(PrototypeIdHashSetSerializer<RadioChannelPrototype>))]
+    [DataField("channels", customTypeSerializer: typeof(PrototypeIdHashSetSerializer<RadioChannelPrototype>)), AutoNetworkedField]
     public HashSet<string> Channels = new();
 
     /// <summary>
