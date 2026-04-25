@@ -127,6 +127,9 @@
   - type: TacticalMapUser
     marines: true
     xenos: true
+    opfor: true
+    govfor: true
+    clf: true
     liveUpdate: true
   
 

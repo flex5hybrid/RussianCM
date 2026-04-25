@@ -1,6 +1,7 @@
 using System.Numerics;
 using Content.Shared._RMC14.Projectiles.Penetration;
 using Content.Shared._RMC14.Weapons.Ranged.Prediction;
+using Content.Shared._RMC14.Weapons.Ranged;
 using Content.Shared._RMC14.Xenonids.Damage;
 using Content.Shared._RMC14.Xenonids.Projectile;
 using Content.Shared.Administration.Logs;
@@ -16,6 +17,7 @@ using Content.Shared.Inventory;
 using Content.Shared.Throwing;
 using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Physics;
@@ -39,6 +41,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
     [Dependency] private readonly SharedDestructibleSystem _destructible = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
+    [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
@@ -296,6 +299,21 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         {
             args.Cancelled = true;
         }
+
+        if (component.Weapon is { } weapon && HasComp<GunIgnoreContainerOwnerCollisionComponent>(weapon))
+        {
+            var current = weapon;
+            while (_container.TryGetContainingContainer((current, null), out var container))
+            {
+                if (args.OtherEntity == container.Owner)
+                {
+                    args.Cancelled = true;
+                    return;
+                }
+
+                current = container.Owner;
+            }
+        }
         //check for BarricadeBlock component (percentage of chance to hit/pass over)
         if (TryComp(args.OtherEntity, out BarricadeBlockComponent? BarricadeBlock))
         {
@@ -480,7 +498,6 @@ public abstract partial class SharedProjectileSystem : EntitySystem
             EmbedDetach(embedded, embeddedComp);
         }
     }
-
 
 
     public void SetShooter(EntityUid id, ProjectileComponent component, EntityUid? shooterId = null)

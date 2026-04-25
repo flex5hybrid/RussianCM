@@ -1,7 +1,9 @@
+using System.Collections.Generic;
 using Content.Shared._RMC14.Map;
 using Content.Shared._RMC14.Weapons.Ranged.IFF;
 using Content.Shared._RMC14.Xenonids;
 using Content.Shared._RMC14.Xenonids.Projectile;
+using Content.Shared.Inventory;
 using Content.Shared.Damage;
 using Content.Shared.DoAfter;
 using Content.Shared.Hands.Components;
@@ -19,6 +21,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._RMC14.Explosion;
@@ -65,8 +68,11 @@ public abstract partial class SharedRMCLandmineSystem : EntitySystem
         _collisionWake.SetEnabled(ent, false);
         _physics.SetBodyType(ent, BodyType.Static);
 
-        GunIff.TryGetFaction(args.User, out var faction);
-        ent.Comp.Faction = faction;
+        ent.Comp.Factions.Clear();
+        var iffFactions = new HashSet<EntProtoId<IFFFactionComponent>>();
+        var iffEvent = new GetIFFFactionEvent(SlotFlags.IDCARD | SlotFlags.BELT | SlotFlags.POCKET, iffFactions);
+        RaiseLocalEvent(args.User, ref iffEvent);
+        ent.Comp.Factions.UnionWith(iffFactions);
         ent.Comp.Armed = true;
 
         UpdateAppearance(ent);

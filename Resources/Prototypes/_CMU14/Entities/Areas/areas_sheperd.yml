@@ -71,6 +71,8 @@
   components:
   - type: Sprite
     state: military_brig
+  - type: Area
+    countAsArrestedForEndConditions: true
 
 - type: entity
   parent: CMUAreaShepMil
@@ -262,8 +264,48 @@
 
 - type: entity
   parent: CMUAreaShepIndoors
+  id: CMUAreaShepNorthColonyShop
+  name: North Colony - Shop
+  components:
+  - type: Sprite
+    state: n_colony_dorms
+  - type: Area
+    minimapColor: '#92673ECC'
+
+- type: entity
+  parent: CMUAreaShepIndoors
+  id: CMUAreaShepNorthColonyBoat
+  name: North Colony - Riverboat
+  components:
+  - type: Sprite
+    state: n_colony_dorms
+  - type: Area
+    minimapColor: '#295B43CC'
+
+- type: entity
+  parent: CMUAreaShepIndoors
   id: CMUAreaShepSouthColonyDorms
   name: South Colony
+  components:
+  - type: Sprite
+    state: s_colony_dorms
+  - type: Area
+    minimapColor: '#806721CC'
+
+- type: entity
+  parent: CMUAreaShepIndoors
+  id: CMUAreaShepSouthColonyEmbassy1
+  name: South Colony - UA Embassy
+  components:
+  - type: Sprite
+    state: s_colony_dorms
+  - type: Area
+    minimapColor: '#806721CC'
+
+- type: entity
+  parent: CMUAreaShepIndoors
+  id: CMUAreaShepSouthColonyEmbassy2
+  name: South Colony - UPP Embassy
   components:
   - type: Sprite
     state: s_colony_dorms

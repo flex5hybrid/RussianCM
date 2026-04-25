@@ -36,3 +36,6 @@ tool-quality-digging-tool-name = Shovel
 
 tool-quality-brushing-name = Brushing
 tool-quality-brushing-tool-name = Wire Brush
+
+tool-quality-vehicle-servicing-name = Vehicle Servicing
+tool-quality-vehicle-servicing-tool-name = Maintenance Jack

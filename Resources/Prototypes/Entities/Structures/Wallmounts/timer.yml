@@ -89,7 +89,7 @@
   description: It's a timer for brig cells.
   components:
   - type: AccessReader
-    access: [["CMAccessBrig"]]
+    access: [["CMAccessBrig"], ["CMAccessColonyBrig"], ["AU14AccessGovforSecurity"], ["AU14AccessOpforSecurity"]]
   - type: Construction
     graph: Timer
     node: brig

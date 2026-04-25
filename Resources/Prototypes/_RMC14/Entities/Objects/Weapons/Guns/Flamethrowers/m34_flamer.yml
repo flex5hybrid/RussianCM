@@ -27,10 +27,10 @@
     - Back
   - type: Gun
     cameraRecoilScalar: 0
-    fireRate: 1
-    selectedMode: SemiAuto
+    fireRate: 1.9
+    selectedMode: FullAuto
     availableModes:
-    - SemiAuto
+    - FullAuto
     soundGunshot:
       collection: RMCFlamerShoot
   - type: ShootUseDelay

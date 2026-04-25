@@ -20,6 +20,13 @@
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: VehicleSmashable
+    deleteOnHit: true
+    damageOnHit: 900
+    selfDamageMultiplier: 0.1
+    requiredVehicleTag: VehicleHeavy
+    smashSound:
+      collection: XenoResinBreak
   - type: XenoNestSurface
   - type: XenoConstructionMinRange
   - type: XenoConstructionPlasmaCost
@@ -55,6 +62,13 @@
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: VehicleSmashable
+    deleteOnHit: true
+    damageOnHit: 1350
+    selfDamageMultiplier: 0.25
+    requiredVehicleTag: VehicleHeavy
+    smashSound:
+      collection: XenoResinBreak
   - type: MeleeReceivedMultiplier
     xenoDamage:
       types:

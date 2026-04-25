@@ -98,6 +98,19 @@
           tags:
           - Vegetable
 
+- type: entity
+  parent: AUSubmissionPointBase
+  id: AUSubmissionPointFruit
+  name: Submission Point (Fruit)
+  description: A place to submit  resources for shipping.
+  components:
+  - type: ItemSlots
+    slots:
+      ItemCabinet:
+        whitelist:
+          tags:
+          - Fruit
+
 - type: Tag
   id: SteelOre
 

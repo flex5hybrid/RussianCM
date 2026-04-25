@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Content.Shared._RMC14.Weapons.Ranged.IFF;
 using Content.Shared.Tools;
 using Robust.Shared.Audio;
@@ -34,10 +35,10 @@ public sealed partial class RMCLandmineComponent : Component
     public ProtoId<ToolQualityPrototype> DisarmTool = "Pulsing";
 
     /// <summary>
-    ///     The faction the claymore will ignore.
+    ///     The IFF factions the claymore will treat as friendly (inherited from the deployer).
     /// </summary>
     [DataField, AutoNetworkedField]
-    public EntProtoId<IFFFactionComponent>? Faction;
+    public HashSet<EntProtoId<IFFFactionComponent>> Factions = new();
 
     /// <summary>
     ///     The amount of times the claymore has been shot.

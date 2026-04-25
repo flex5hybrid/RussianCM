@@ -1,10 +1,9 @@
 ﻿using System.Linq;
 using Content.Shared._RMC14.CCVar;
 using Content.Shared._RMC14.Communications;
-using Content.Shared._RMC14.Marines;
 using Content.Shared._RMC14.Sensor;
-using Content.Shared._RMC14.Xenonids;
 using Content.Shared._RMC14.Xenonids.Construction.Tunnel;
+using Content.Shared.Ghost;
 using Robust.Shared.Configuration;
 using Robust.Shared.Utility;
 
@@ -28,41 +27,29 @@ public abstract class SharedTacticalMapSystem : EntitySystem
 
     private void OnUserOpenAction(Entity<TacticalMapUserComponent> ent, ref OpenTacticalMapActionEvent args)
     {
-
-        ent.Comp.Marines = false;
-        ent.Comp.Xenos = false;
-        ent.Comp.Opfor = false;
-        ent.Comp.Govfor = false;
-        ent.Comp.Clf = false;
-
-
         ent.Comp.Controller = args.Performer == default ? null : args.Performer;
 
-        if (args.Performer != default && TryComp<XenoComponent>(args.Performer, out _))
+        // Match upstream: trust the yml-configured flags (marines/xenos/opfor/govfor/clf)
+        // rather than resetting and re-deriving them here. The CMU fork's previous reset
+        // pattern clobbered ghost flags every open, leaving observers with an empty map.
+        if (args.Performer != default && HasComp<GhostComponent>(args.Performer))
         {
-            ent.Comp.Xenos = true;
-        }
-        else if (args.Performer != default && TryComp<MarineComponent>(args.Performer, out var marine))
-        {
-            // Use MarineComponent.Faction to determine specific map selection
-            var faction = (marine.Faction ?? string.Empty).ToUpperInvariant();
-            if (faction.Contains("CLF"))
-                ent.Comp.Clf = true;
-            else if (faction.Contains("OPFOR") || faction.Contains("OPF"))
-                ent.Comp.Opfor = true;
-            else if (faction.Contains("GOVFOR") || faction.Contains("GOV"))
-                ent.Comp.Govfor = true;
-            else
-                ent.Comp.Marines = true;
-        }
-        else
-        {
-            // Fallback - show marines map
+            // Belt-and-suspenders: force-grant every faction + live updates to any ghost
+            // that somehow lost its yml flags (e.g. from a prior buggy build).
             ent.Comp.Marines = true;
+            ent.Comp.Xenos = true;
+            ent.Comp.Opfor = true;
+            ent.Comp.Govfor = true;
+            ent.Comp.Clf = true;
+            ent.Comp.LiveUpdate = true;
         }
 
         if (TryGetTacticalMap(out var map))
+        {
+            ent.Comp.Map = map.Owner;
+            Dirty(ent);
             UpdateUserData(ent, map);
+        }
 
         ToggleMapUI(ent);
     }

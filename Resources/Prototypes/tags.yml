@@ -811,6 +811,21 @@
   id: InvalidForSurvivorAntag
 
 - type: Tag
+  id: JanicartKeys
+
+- type: Tag
+  id: VehicleSmashIgnore
+
+- type: Tag
+  id: VehiclePlow
+
+- type: Tag
+  id: VehicleHeavy
+
+- type: Tag
+  id: VehicleHeavyDriveOver
+
+- type: Tag
   id: JawsOfLife
 
 - type: Tag

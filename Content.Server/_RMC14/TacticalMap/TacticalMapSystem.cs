@@ -28,6 +28,7 @@ using Content.Shared.Atmos.Rotting;
 using Content.Shared.AU14.Objectives;
 using Content.Shared.Cuffs.Components;
 using Content.Shared.Database;
+using Content.Shared.Ghost;
 using Content.Shared.Mind.Components;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
@@ -111,6 +112,8 @@ public sealed class TacticalMapSystem : SharedTacticalMapSystem
         SubscribeLocalEvent<TacticalMapComponent, MapInitEvent>(OnTacticalMapMapInit);
 
         SubscribeLocalEvent<TacticalMapUserComponent, MapInitEvent>(OnUserMapInit);
+        SubscribeLocalEvent<TacticalMapUserComponent, RoleAddedEvent>(OnUserFactionChanged);
+        SubscribeLocalEvent<TacticalMapUserComponent, MindAddedMessage>(OnUserFactionChanged);
 
         SubscribeLocalEvent<TacticalMapComputerComponent, MapInitEvent>(OnComputerMapInit);
         SubscribeLocalEvent<TacticalMapComputerComponent, BeforeActivatableUIOpenEvent>(OnComputerBeforeUIOpen);
@@ -224,6 +227,127 @@ public sealed class TacticalMapSystem : SharedTacticalMapSystem
         if (TryGetTacticalMap(out var map))
             ent.Comp.Map = map;
 
+        SyncUserFactionFlags(ent);
+        SyncTrackedFaction(ent.Owner);
+        Dirty(ent);
+    }
+
+    private void OnUserFactionChanged<T>(Entity<TacticalMapUserComponent> ent, ref T args)
+    {
+        if (_timing.ApplyingState || TerminatingOrDeleted(ent))
+            return;
+
+        SyncUserFactionFlags(ent);
+        SyncTrackedFaction(ent.Owner);
+    }
+
+    // Swap MarineMapTracked for the correct faction-specific tracked component based on
+    // MarineComponent.Faction. Otherwise opfor/govfor/clf humans land in map.MarineBlips
+    // because base.yml ships with MarineMapTracked for every humanoid.
+    private void SyncTrackedFaction(EntityUid uid)
+    {
+        if (!TryComp<MarineComponent>(uid, out var marine))
+            return;
+
+        var faction = (marine.Faction ?? string.Empty).ToUpperInvariant();
+        var wantMarines = false;
+        var wantOpfor = false;
+        var wantGovfor = false;
+        var wantClf = false;
+        if (faction.Contains("CLF"))
+            wantClf = true;
+        else if (faction.Contains("OPFOR") || faction.Contains("OPF"))
+            wantOpfor = true;
+        else if (faction.Contains("GOVFOR") || faction.Contains("GOV"))
+            wantGovfor = true;
+        else
+            wantMarines = true;
+
+        if (wantMarines)
+            EnsureComp<MarineMapTrackedComponent>(uid);
+        else
+            RemComp<MarineMapTrackedComponent>(uid);
+
+        if (wantOpfor)
+            EnsureComp<OpforMapTrackedComponent>(uid);
+        else
+            RemComp<OpforMapTrackedComponent>(uid);
+
+        if (wantGovfor)
+            EnsureComp<GovforMapTrackedComponent>(uid);
+        else
+            RemComp<GovforMapTrackedComponent>(uid);
+
+        if (wantClf)
+            EnsureComp<ClfMapTrackedComponent>(uid);
+        else
+            RemComp<ClfMapTrackedComponent>(uid);
+
+        // BreakTracking on old map so the stale blip is cleared, then force re-add.
+        if (TryComp<ActiveTacticalMapTrackedComponent>(uid, out var active))
+        {
+            if (_tacticalMapQuery.TryComp(active.Map, out var oldMap))
+            {
+                oldMap.MarineBlips.Remove(uid.Id);
+                oldMap.OpforBlips.Remove(uid.Id);
+                oldMap.GovforBlips.Remove(uid.Id);
+                oldMap.ClfBlips.Remove(uid.Id);
+                oldMap.MapDirty = true;
+            }
+            UpdateTracked((uid, active));
+        }
+    }
+
+    // Sync TacticalMapUser faction flags to the player's actual faction.
+    // This is what keeps opfor/govfor/clf segregation working: humans all share the
+    // base marine prototype (marines: true), so we translate MarineComponent.Faction
+    // into the correct per-faction flag at role-assignment time. Ghosts are forced
+    // to see every faction live.
+    private void SyncUserFactionFlags(Entity<TacticalMapUserComponent> ent)
+    {
+        if (HasComp<GhostComponent>(ent))
+        {
+            var changed = !ent.Comp.Marines || !ent.Comp.Xenos || !ent.Comp.Opfor
+                || !ent.Comp.Govfor || !ent.Comp.Clf || !ent.Comp.LiveUpdate;
+            ent.Comp.Marines = true;
+            ent.Comp.Xenos = true;
+            ent.Comp.Opfor = true;
+            ent.Comp.Govfor = true;
+            ent.Comp.Clf = true;
+            ent.Comp.LiveUpdate = true;
+            if (changed)
+                Dirty(ent);
+            return;
+        }
+
+        if (HasComp<XenoComponent>(ent))
+            return;
+
+        if (!TryComp<MarineComponent>(ent, out var marine))
+            return;
+
+        var faction = (marine.Faction ?? string.Empty).ToUpperInvariant();
+        var marines = false;
+        var opfor = false;
+        var govfor = false;
+        var clf = false;
+        if (faction.Contains("CLF"))
+            clf = true;
+        else if (faction.Contains("OPFOR") || faction.Contains("OPF"))
+            opfor = true;
+        else if (faction.Contains("GOVFOR") || faction.Contains("GOV"))
+            govfor = true;
+        else
+            marines = true;
+
+        if (ent.Comp.Marines == marines && ent.Comp.Opfor == opfor
+            && ent.Comp.Govfor == govfor && ent.Comp.Clf == clf)
+            return;
+
+        ent.Comp.Marines = marines;
+        ent.Comp.Opfor = opfor;
+        ent.Comp.Govfor = govfor;
+        ent.Comp.Clf = clf;
         Dirty(ent);
     }
 
@@ -476,15 +600,69 @@ public sealed class TacticalMapSystem : SharedTacticalMapSystem
             Dirty(uid, computer);
         }
 
-        // Use the computer's configured faction to decide which map to update.
-        var faction = ent.Comp.Faction?.ToUpperInvariant();
-        bool wantsMarines = faction == null || faction == "" || faction == "MARINES" || faction == "UNMC";
-        bool wantsXenos = faction == null || faction == "" || faction == "XENONIDS" || faction == "XENONID";
-        bool wantsOpfor = faction == null || faction == "" || faction == "OPFOR";
-        bool wantsGovfor = faction == null || faction == "" || faction == "GOVFOR";
-        bool wantsClf = faction == null || faction == "" || faction == "CLF";
+        var (wantsMarines, wantsXenos, wantsOpfor, wantsGovfor, wantsClf) = ResolveComputerWriteFaction(ent, user);
+        if (!wantsMarines && !wantsXenos && !wantsOpfor && !wantsGovfor && !wantsClf)
+            return;
 
         UpdateCanvas(lines, labels, wantsMarines, wantsXenos, wantsOpfor, wantsGovfor, wantsClf, user);
+    }
+
+    // Resolves which faction's canvas a drawing/label from a TacticalMapComputer should be written to.
+    // If the computer has no faction yet, the first user with an identifiable faction locks theirs
+    // in permanently; users with no faction do not assign anything and their action is dropped.
+    private (bool marines, bool xenos, bool opfor, bool govfor, bool clf) ResolveComputerWriteFaction(
+        Entity<TacticalMapComputerComponent> computer, EntityUid user)
+    {
+        var faction = computer.Comp.Faction?.ToUpperInvariant();
+        if (!string.IsNullOrEmpty(faction))
+        {
+            return (faction == "MARINES" || faction == "UNMC",
+                    faction == "XENONIDS" || faction == "XENONID",
+                    faction == "OPFOR",
+                    faction == "GOVFOR",
+                    faction == "CLF");
+        }
+
+        string? assign = null;
+        var result = (marines: false, xenos: false, opfor: false, govfor: false, clf: false);
+
+        if (HasComp<XenoComponent>(user))
+        {
+            assign = "XENONIDS";
+            result = (false, true, false, false, false);
+        }
+        else if (TryComp<MarineComponent>(user, out var marine))
+        {
+            var userFaction = (marine.Faction ?? string.Empty).ToUpperInvariant();
+            if (userFaction.Contains("CLF"))
+            {
+                assign = "CLF";
+                result = (false, false, false, false, true);
+            }
+            else if (userFaction.Contains("OPFOR") || userFaction.Contains("OPF"))
+            {
+                assign = "OPFOR";
+                result = (false, false, true, false, false);
+            }
+            else if (userFaction.Contains("GOVFOR") || userFaction.Contains("GOV"))
+            {
+                assign = "GOVFOR";
+                result = (false, false, false, true, false);
+            }
+            else
+            {
+                assign = "MARINES";
+                result = (true, false, false, false, false);
+            }
+        }
+
+        if (assign != null)
+        {
+            computer.Comp.Faction = assign;
+            Dirty(computer);
+        }
+
+        return result;
     }
 
     private void OnUserCreateLabelMsg(Entity<TacticalMapUserComponent> ent, ref TacticalMapCreateLabelMsg args)
@@ -601,12 +779,9 @@ public sealed class TacticalMapSystem : SharedTacticalMapSystem
         if (time < ent.Comp.NextAnnounceAt)
             return;
 
-        var faction = ent.Comp.Faction?.ToUpperInvariant();
-        bool wantsMarines = faction == null || faction == "" || faction == "MARINES" || faction == "UNMC";
-        bool wantsXenos = faction == null || faction == "" || faction == "XENONIDS" || faction == "XENONID";
-        bool wantsOpfor = faction == null || faction == "" || faction == "OPFOR";
-        bool wantsGovfor = faction == null || faction == "" || faction == "GOVFOR";
-        bool wantsClf = faction == null || faction == "" || faction == "CLF";
+        var (wantsMarines, wantsXenos, wantsOpfor, wantsGovfor, wantsClf) = ResolveComputerWriteFaction(ent, user);
+        if (!wantsMarines && !wantsXenos && !wantsOpfor && !wantsGovfor && !wantsClf)
+            return;
 
         UpdateIndividualLabel(args.Position, args.Text, wantsMarines, wantsXenos, wantsOpfor, wantsGovfor, wantsClf, user, LabelOperation.Create);
     }
@@ -621,12 +796,9 @@ public sealed class TacticalMapSystem : SharedTacticalMapSystem
         if (time < ent.Comp.NextAnnounceAt)
             return;
 
-        var faction = ent.Comp.Faction?.ToUpperInvariant();
-        bool wantsMarines = faction == null || faction == "" || faction == "MARINES" || faction == "UNMC";
-        bool wantsXenos = faction == null || faction == "" || faction == "XENONIDS" || faction == "XENONID";
-        bool wantsOpfor = faction == null || faction == "" || faction == "OPFOR";
-        bool wantsGovfor = faction == null || faction == "" || faction == "GOVFOR";
-        bool wantsClf = faction == null || faction == "" || faction == "CLF";
+        var (wantsMarines, wantsXenos, wantsOpfor, wantsGovfor, wantsClf) = ResolveComputerWriteFaction(ent, user);
+        if (!wantsMarines && !wantsXenos && !wantsOpfor && !wantsGovfor && !wantsClf)
+            return;
 
         UpdateIndividualLabel(args.Position, args.NewText, wantsMarines, wantsXenos, wantsOpfor, wantsGovfor, wantsClf, user, LabelOperation.Edit);
     }
@@ -641,12 +813,9 @@ public sealed class TacticalMapSystem : SharedTacticalMapSystem
         if (time < ent.Comp.NextAnnounceAt)
             return;
 
-        var faction = ent.Comp.Faction?.ToUpperInvariant();
-        bool wantsMarines = faction == null || faction == "" || faction == "MARINES" || faction == "UNMC";
-        bool wantsXenos = faction == null || faction == "" || faction == "XENONIDS" || faction == "XENONID";
-        bool wantsOpfor = faction == null || faction == "" || faction == "OPFOR";
-        bool wantsGovfor = faction == null || faction == "" || faction == "GOVFOR";
-        bool wantsClf = faction == null || faction == "" || faction == "CLF";
+        var (wantsMarines, wantsXenos, wantsOpfor, wantsGovfor, wantsClf) = ResolveComputerWriteFaction(ent, user);
+        if (!wantsMarines && !wantsXenos && !wantsOpfor && !wantsGovfor && !wantsClf)
+            return;
 
         UpdateIndividualLabel(args.Position, string.Empty, wantsMarines, wantsXenos, wantsOpfor, wantsGovfor, wantsClf, user, LabelOperation.Delete);
     }
@@ -661,12 +830,9 @@ public sealed class TacticalMapSystem : SharedTacticalMapSystem
         if (time < ent.Comp.NextAnnounceAt)
             return;
 
-        var faction = ent.Comp.Faction?.ToUpperInvariant();
-        bool wantsMarines = faction == null || faction == "" || faction == "MARINES" || faction == "UNMC";
-        bool wantsXenos = faction == null || faction == "" || faction == "XENONIDS" || faction == "XENONID";
-        bool wantsOpfor = faction == null || faction == "" || faction == "OPFOR";
-        bool wantsGovfor = faction == null || faction == "" || faction == "GOVFOR";
-        bool wantsClf = faction == null || faction == "" || faction == "CLF";
+        var (wantsMarines, wantsXenos, wantsOpfor, wantsGovfor, wantsClf) = ResolveComputerWriteFaction(ent, user);
+        if (!wantsMarines && !wantsXenos && !wantsOpfor && !wantsGovfor && !wantsClf)
+            return;
 
         UpdateMoveLabel(args.OldPosition, args.NewPosition, wantsMarines, wantsXenos, wantsOpfor, wantsGovfor, wantsClf, user);
     }
@@ -1312,9 +1478,12 @@ public sealed class TacticalMapSystem : SharedTacticalMapSystem
             }
 
             lines.XenoLines = map.XenoLines;
-            lines.MarineLines = _emptyLines;
             labels.XenoLabels = map.XenoLabels;
-            labels.MarineLabels = _emptyLabels;
+        }
+        else
+        {
+            lines.XenoLines = _emptyLines;
+            labels.XenoLabels = _emptyLabels;
         }
 
         // Marines: mark enemies with enemy sprite
@@ -1340,11 +1509,14 @@ public sealed class TacticalMapSystem : SharedTacticalMapSystem
             }
 
             lines.MarineLines = map.MarineLines;
-            lines.XenoLines = _emptyLines;
             labels.MarineLabels = map.MarineLabels;
-            labels.XenoLabels = _emptyLabels;
             // Ensure non-friendly humans appear as enemy_blip for this user when their team has active sensors
             ApplyEnemySpritesToUser("MARINES", user.Comp.MarineBlips, playerId);
+        }
+        else
+        {
+            lines.MarineLines = _emptyLines;
+            labels.MarineLabels = _emptyLabels;
         }
         Dirty(user);
         if (user.Comp.Opfor)
