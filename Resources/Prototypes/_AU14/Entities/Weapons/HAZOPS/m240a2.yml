@@ -24,10 +24,10 @@
     - Back
   - type: Gun
     cameraRecoilScalar: 0
-    fireRate: 2
-    selectedMode: SemiAuto
+    fireRate: 2.5
+    selectedMode: FullAuto
     availableModes:
-    - SemiAuto
+    - FullAuto
     soundGunshot:
       collection: RMCFlamerShoot
   - type: ShootUseDelay
@@ -103,14 +103,14 @@
       map: [ "enum.SolutionContainerLayers.Fill" ]
   - type: RMCFlamerTank
     maxIntensity: 70
-    maxRange: 8
+    maxRange: 7
   - type: SolutionContainerManager
     solutions:
       rmc_flamer_tank:
-        maxVol: 250
+        maxVol: 150
         reagents:
         - ReagentId: RMCNapalmUT
-          Quantity: 250
+          Quantity: 150
   - type: SolutionContainerVisuals
     maxFillLevels: 2
     fillBaseName: flametank_strip

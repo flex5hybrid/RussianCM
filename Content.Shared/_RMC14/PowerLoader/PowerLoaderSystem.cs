@@ -89,9 +89,13 @@ public sealed class PowerLoaderSystem : EntitySystem
         SubscribeLocalEvent<PowerLoaderComponent, DidUnequipHandEvent>(OnHandsChanged);
 
         SubscribeLocalEvent<PowerLoaderGrabbableComponent, PickupAttemptEvent>(OnGrabbablePickupAttempt);
+        SubscribeLocalEvent<PowerLoaderGrabbableComponent, GettingPickedUpAttemptEvent>(OnGrabbableGettingPickedUp);
         SubscribeLocalEvent<PowerLoaderGrabbableComponent, AfterInteractEvent>(OnGrabbableAfterInteract);
         SubscribeLocalEvent<PowerLoaderGrabbableComponent, CombatModeShouldHandInteractEvent>(OnGrababbleShouldInteract);
         SubscribeLocalEvent<PowerLoaderGrabbableComponent, BeforeRangedInteractEvent>(OnGrabbableBeforeRangedInteract);
+        SubscribeLocalEvent<PowerLoaderGrabbableComponent, GotEquippedHandEvent>(OnGrabbableEquippedHand);
+        SubscribeLocalEvent<PowerLoaderGrabbableComponent, GotUnequippedHandEvent>(OnGrabbableUnequippedHand);
+        SubscribeLocalEvent<PowerLoaderGrabbableComponent, HeldRelayedEvent<RefreshMovementSpeedModifiersEvent>>(OnGrabbableHeldRefreshSpeed);
 
         // Detach events and doAfters
         SubscribeLocalEvent<DropshipWeaponPointComponent, ActivateInWorldEvent>(OnPointActivateInWorld);
@@ -388,13 +392,63 @@ public sealed class PowerLoaderSystem : EntitySystem
             return;
 
         // TODO RMC14 popup
-        if (!HasComp<PowerLoaderComponent>(args.User))
+        if (!IsAuthorizedPowerLoaderUser(args.User))
             args.Cancel();
+    }
+
+    /// <summary>
+    /// PickupAttemptEvent is raised on the mob, not the item — so a subscription on
+    /// <see cref="PowerLoaderGrabbableComponent"/> would never fire for it. This handler
+    /// catches the item-side <see cref="GettingPickedUpAttemptEvent"/> so non-loaders
+    /// actually get blocked from picking the item up.
+    /// </summary>
+    private void OnGrabbableGettingPickedUp(Entity<PowerLoaderGrabbableComponent> ent, ref GettingPickedUpAttemptEvent args)
+    {
+        if (args.Cancelled)
+            return;
+
+        if (!IsAuthorizedPowerLoaderUser(args.User))
+            args.Cancel();
+    }
+
+    /// <summary>
+    /// True if the entity is the loader itself or is currently piloting a loader — both should
+    /// be allowed to handle grabbable items. The pilot counts because flows like hardpoint
+    /// removal (<c>TryEjectToHands</c>) go through the pilot's CanPickup, not the loader's.
+    /// </summary>
+    private bool IsAuthorizedPowerLoaderUser(EntityUid user)
+    {
+        return HasComp<PowerLoaderComponent>(user) || HasComp<ActivePowerLoaderPilotComponent>(user);
     }
 
     private void OnGrabbableAfterInteract(Entity<PowerLoaderGrabbableComponent> ent, ref AfterInteractEvent args)
     {
         TryDropLoaderHeld(args.User, args.ClickLocation, args.Used);
+    }
+
+    private void OnGrabbableEquippedHand(Entity<PowerLoaderGrabbableComponent> ent, ref GotEquippedHandEvent args)
+    {
+        _movementSpeed.RefreshMovementSpeedModifiers(args.User);
+    }
+
+    private void OnGrabbableUnequippedHand(Entity<PowerLoaderGrabbableComponent> ent, ref GotUnequippedHandEvent args)
+    {
+        _movementSpeed.RefreshMovementSpeedModifiers(args.User);
+    }
+
+    /// <summary>
+    /// A non-loader that somehow got a loader-only item into their hand (admin spawn, exploit, etc.)
+    /// walks at a crawl — 15% of normal speed. Loaders are unaffected.
+    /// </summary>
+    private void OnGrabbableHeldRefreshSpeed(Entity<PowerLoaderGrabbableComponent> ent, ref HeldRelayedEvent<RefreshMovementSpeedModifiersEvent> args)
+    {
+        if (!_container.TryGetContainingContainer(ent.Owner, out var container))
+            return;
+
+        if (HasComp<PowerLoaderComponent>(container.Owner))
+            return;
+
+        args.Args.ModifySpeed(0.15f, 0.15f);
     }
 
     private void OnGetSlot(Entity<DropshipWeaponPointComponent> ent, ref GetAttachmentSlotEvent args)
@@ -574,41 +628,39 @@ public sealed class PowerLoaderSystem : EntitySystem
         if (args.Target is not { } target)
             return;
 
-        args.Handled = true;
-
-        if (!_interaction.InRangeUnobstructed(args.User, target, 2f))
-        {
-            var msg = Loc.GetString("rmc-power-loader-too-far");
-            foreach (var buckled in GetBuckled(args.User))
-            {
-                _popup.PopupClient(msg, args.User, buckled, PopupType.SmallCaution);
-            }
-
-            return;
-        }
-
         var user = new Entity<PowerLoaderComponent?>(args.User, null);
         var used = args.Used;
         var powerLoaderEv = new PowerLoaderInteractEvent(args.User, target, args.Used, GetBuckled(args.User).ToList());
         RaiseLocalEvent(used, ref powerLoaderEv);
         if (powerLoaderEv.Handled)
+        {
+            args.Handled = true;
             return;
+        }
 
         var slotEv = new GetAttachmentSlotEvent(GetNetEntity(user), GetNetEntity(used));
         RaiseLocalEvent(target, slotEv);
+        // No attachment slot resolved — let the interaction fall through to
+        // InteractUsingEvent. This is what allows vehicle hardpoints to install
+        // via their HardpointSlotsComponent handler instead of being silently eaten.
         if (string.IsNullOrWhiteSpace(slotEv.SlotId))
             return;
 
         var slot = _container.EnsureContainer<ContainerSlot>(target, slotEv.SlotId);
 
         if (!slotEv.CanUse)
+        {
+            args.Handled = true;
             return;
+        }
 
         if (!TryComp(used, out PowerLoaderAttachableComponent? attachableComponent) ||
             !_tag.HasAnyTag(target, attachableComponent.AttachableTypes))
         {
             return;
         }
+
+        args.Handled = true;
 
         var ev = new DropshipAttachDoAfterEvent(GetNetEntity(target), GetNetEntity(used), slot.ID);
         var doAfter = new DoAfterArgs(EntityManager, user, attachableComponent.AttachDelay, ev, target, target, used)

@@ -74,3 +74,10 @@
   toolName: tool-quality-brushing-tool-name
   spawn: WireBrush
   icon: { sprite: Objects/Specific/Janitorial/wirebrush.rsi, state: icon }
+
+- type: tool
+  id: VehicleServicing
+  name: tool-quality-vehicle-servicing-name
+  toolName: tool-quality-vehicle-servicing-tool-name
+  spawn: MaintenanceJack
+  icon: { sprite: _RMC14/Objects/Tools/maintenance_jack.rsi, state: icon }

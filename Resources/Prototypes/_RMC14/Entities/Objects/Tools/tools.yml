@@ -122,8 +122,8 @@
 - type: entity
   parent: Multitool
   id: CMMultitool
-  name: security access tuner
-  description: A small handheld tool used to override various machine functions.
+  name: access tuner
+  description: A small handheld tool used to override or connect various machine functions.
   suffix: Multitool
   components:
   - type: Sprite
@@ -262,6 +262,35 @@
   - type: Item
     heldPrefix: red
     storedSprite: null
+
+- type: entity
+  parent: BaseItem
+  id: MaintenanceJack
+  name: vehicle maintenance jack
+  description: A heavy-duty hardpoint jack for servicing armored vehicles. Works where a crowbar can't.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Tools/maintenance_jack.rsi
+    state: icon
+  - type: Item
+    size: Normal
+    sprite: _RMC14/Objects/Tools/maintenance_jack.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Tools/maintenance_jack.rsi
+    slots:
+    - Suitstorage
+    - Belt
+  - type: Tool
+    qualities:
+    - VehicleServicing
+    speedModifier: 1.0
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 200
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 12
 
 - type: entity
   parent: CMCrowbar

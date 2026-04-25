@@ -61,6 +61,13 @@
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: VehicleSmashable
+    deleteOnHit: true
+    damageOnHit: 600
+    selfDamageMultiplier: 0.1
+    requiredVehicleTag: VehicleHeavy
+    smashSound:
+      collection: XenoResinBreak
   - type: PlacementReplacement
     key: walls
   - type: IconSmooth
@@ -134,6 +141,13 @@
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: VehicleSmashable
+    deleteOnHit: true
+    damageOnHit: 900
+    selfDamageMultiplier: 0.25
+    requiredVehicleTag: VehicleHeavy
+    smashSound:
+      collection: XenoResinBreak
   - type: IconSmooth
     key: walls
     mode: NoSprite

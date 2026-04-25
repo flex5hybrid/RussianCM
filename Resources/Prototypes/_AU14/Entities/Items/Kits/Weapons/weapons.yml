@@ -629,5 +629,7 @@
     contents:
       - id: AU14WeaponSMGXMP5A6HAZOPS
         amount: 1
+      - id: CMMagazineRifleM54CAP
+        amount: 1
       - id: AU14MagazineXMP5A6
         amount: 8

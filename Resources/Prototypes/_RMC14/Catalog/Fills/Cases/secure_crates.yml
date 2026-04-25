@@ -60,8 +60,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped
   id: RMCSecureCaseStrappedWater
-  name: We-Ya Bottled Water crate (x50)
-  description: A crate containing fifty Weston-Yamada Bottled Spring Water bottles.
+  name: Bottled Water crate (x50)
+  description: A crate containing fifty Bottled Spring Water bottles.
   components:
   - type: CrateOpenable
     spawn:
@@ -71,8 +71,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped
   id: RMCSecureCaseStrappedMRE
-  name: UNMC MRE crate (x60)
-  description: A supply crate containing sixty UNMC MRE packets.
+  name: MRE crate (x60)
+  description: A supply crate containing sixty MRE packets.
   components:
   - type: CrateOpenable
     spawn:
@@ -82,8 +82,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped
   id: RMCSecureCaseStrappedTSEMRE
-  name: TSE ORP rations crate (x60)
-  description: A supply crate containing sixty TSE ORP ration packets.
+  name: TWE ORP rations crate (x60)
+  description: A supply crate containing sixty TWE ORP ration packets.
   components:
   - type: CrateOpenable
     spawn:

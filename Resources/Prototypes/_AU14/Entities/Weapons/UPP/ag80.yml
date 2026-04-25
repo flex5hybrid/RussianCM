@@ -147,6 +147,7 @@
   parent: CMMagazineRifleBase
   id: AU14MagazineRifleAG80
   name: "AG80 magazine (9.7x16mm)"
+  description: "A magazine of 9.7x16mm rounds for the AG80 rifle."
   components:
   - type: Tag
     tags:
@@ -157,7 +158,7 @@
     whitelist:
       tags:
       - AU14CartridgeRifle97x16mm
-    proto: CMCartridgeRifle10x24mm
+    proto: AU14CartridgeRifle97x16mm
     capacity: 60
   - type: Sprite
     sprite: _AU14/Weapons/Guns/Ammo/Magazines/ag80.rsi
@@ -168,12 +169,13 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Appearance
   - type: RefillableByBulletBox
-    bulletType: RMCBoxBulletsRifle
+    bulletType: RMCBoxBulletsRifle # TODO: Box is 10x24mm
 
 - type: entity
   parent: CMMagazineRifleM54C
   id: AU14MagazineRifleAG80AP
   name: "AG80 AP magazine (9.7x16mm)"
+  description: "A magazine of armor-piercing 9.7x16mm rounds for the AG80 rifle."
   suffix: AP
   components:
   - type: Tag
@@ -200,7 +202,8 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: AU14MagazineRifleAG80Ext
-  name: "AG80 extended magazine (10x24mm)"
+  name: "AG80 extended magazine (9.7x16mm)"
+  description: "An extended magazine of 9.7x16mm rounds for the AG80 rifle."
   components:
   - type: Tag
     tags:
@@ -232,7 +235,7 @@
   parent: CMBaseCartridgeRifle
   id: AU14CartridgeRifle97x16mm
   name: cartridge (9.7x16mm)
-  description: A 9.7x16mm cartridge. Fits in 9.7x16mm magazines.
+  description: "A 9.7x16mm cartridge for the AG80 rifle."
   components:
   - type: Tag
     tags:
@@ -244,8 +247,8 @@
 - type: entity
   parent: AU14CartridgeRifle97x16mm
   id: AU14CartridgeRifle97x16mmAP
-  name: AP cartridge (10x24mm)
-  description: An armor piercing 10x24mm cartridge. Fits in 10x24mm AP magazines.
+  name: AP cartridge (9.7x16mm)
+  description: "A 9.7x16mm armor-piercing cartridge for the AG80 rifle."
   components:
   - type: Tag
     tags:

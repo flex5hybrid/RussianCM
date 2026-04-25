@@ -451,15 +451,20 @@
   - type: LightBehaviour
     behaviours:
       - !type:FadeBehaviour
-       id: turn_on
-       maxDuration: 5.0
-       startValue: 2.5
-       endValue: 7.0
+        id: turn_on
+        maxDuration: 5
+        startValue: 2.5
+        endValue: 5
       - !type:FadeBehaviour
-       id: fade_out
-       maxDuration: 30
-       startValue: 7.0
-       endValue: 1.0
+        id: phase_1
+        maxDuration: 145
+        startValue: 5
+        endValue: 5
+      - !type:FadeBehaviour
+        id: fade_out
+        maxDuration: 30
+        startValue: 5
+        endValue: 1
   - type: PointLight
     color: "#A7FFA7"
     radius: 8.0
@@ -470,9 +475,9 @@
     lifetime: 180
 
 - type: entity
-  name: flare
-  parent: BaseItem
+  parent: CMFlare
   id: RMCFlareL96
+  name: flare
   description: A vibrant purple Royal Crown Marines issued flare. There are instructions on the side, it reads 'To light, pull cord'.
   components:
   - type: Tag

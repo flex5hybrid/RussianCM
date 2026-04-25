@@ -3,6 +3,9 @@
   parent: BaseStructure
   abstract: true
   components:
+  - type: Tag
+    tags:
+    - VehicleHeavyDriveOver
   - type: Physics
     bodyType: Static
   - type: Fixtures

@@ -5,6 +5,9 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: Tag
+    tags:
+    - VehicleHeavyDriveOver
   - type: Animateable
   - type: MeleeSound
     soundGroups:

@@ -31,8 +31,6 @@
     - cultistThreat
     - XenoThreat
     - XenoThreatCF
-    - apethreat
-    - apethreatcf
     - wendigoThreat
     thirdparties:
     - FORECON
@@ -112,8 +110,6 @@
     threats:
     - cultistThreat
     - XenoThreat
-    - apethreat
-    - apethreatcf
     - wendigoThreat
     # Shepherds' Pride exposes CWPS Ranger as its map-specific LEO role.
     joboverrides:
@@ -223,8 +219,6 @@
     threats:
     - cultistThreat
     - XenoThreat
-    - apethreat
-    - apethreatcf
     - wendigoThreat
     joboverrides:
       AU14JobLEOLeaderBase: AU14JobCivilianCMBMarshal
@@ -289,7 +283,6 @@
     daycycleenabled: true
     threats:
     - XenoThreat
-    - apethreat
     thirdparties:
     - USArmy
     - USArmyAlt
@@ -330,8 +323,6 @@
     threats:
     - XenoThreat
     - XenoThreatCF
-    - apethreat
-    - apethreatcf
     - wendigoThreat
     thirdparties:
     - USArmy
@@ -387,8 +378,6 @@
     - cultistThreat
     - XenoThreat
     - XenoThreatCF
-    - apethreat
-    - apethreatcf
     - wendigoThreat
     thirdparties:
     - FORECON
@@ -554,8 +543,6 @@
     threats:
     - cultistThreat
     - XenoThreat
-    - apethreat
-    - apethreatcf
     - wendigoThreat
     jobScalingFof: DefaultGovforOpforScale
     jobScalingIns: DefaultInsurgencyScale

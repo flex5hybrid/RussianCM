@@ -3,6 +3,9 @@
   parent: CMBaseStructure
   id: RMCCommunicationsConsoleBase
   components:
+  - type: Tag
+    tags:
+    - VehicleHeavyDriveOver
   - type: Transform
     anchored: false
   - type: Physics

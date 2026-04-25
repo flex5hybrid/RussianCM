@@ -42,6 +42,9 @@
   components:
   - type: PresetIdCard
     job: AU14FORECONFirstReconCorpsman
+  - type: ItemIFF
+    factions:
+    - GOVFOR
 
 - type: entity
   parent: CMIDCardBase
@@ -51,6 +54,9 @@
   components:
   - type: PresetIdCard
     job: AU14FORECONFirstReconSmartGunOperator
+  - type: ItemIFF
+    factions:
+    - GOVFOR
 
 - type: entity
   parent: CMIDCardBase
@@ -60,6 +66,9 @@
   components:
   - type: PresetIdCard
     job: AU14FORECONFirstReconRifleman
+  - type: ItemIFF
+    factions:
+    - GOVFOR
 
 - type: entity
   parent: CMIDCardBase
@@ -69,6 +78,9 @@
   components:
   - type: PresetIdCard
     job: AU14FORECONFirstReconSquadleader
+  - type: ItemIFF
+    factions:
+    - GOVFOR
 
 - type: entity
   parent: CMIDCardBase
@@ -78,6 +90,9 @@
   components:
   - type: PresetIdCard
     job: AU14FORECONKillTeamSniper
+  - type: ItemIFF
+    factions:
+    - GOVFOR
 
 - type: entity
   parent: CMIDCardBase
@@ -87,6 +102,9 @@
   components:
   - type: PresetIdCard
     job: AU14FORECONKillTeamSpotter
+  - type: ItemIFF
+    factions:
+    - GOVFOR
 
 - type: entity
   parent: CMIDCardGold

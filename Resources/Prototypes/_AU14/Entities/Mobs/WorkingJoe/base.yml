@@ -90,6 +90,7 @@
   - type: Synth
     generation: "species-name-workingjoe"
     critThreshold: 300
+  - type: EyeProtection
   - type: MobThresholds
     thresholds:
       0: Alive

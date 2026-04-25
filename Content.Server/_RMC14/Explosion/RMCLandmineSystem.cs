@@ -38,8 +38,14 @@ public sealed partial class RMCLandmineSystem : SharedRMCLandmineSystem
             return;
         }
 
-        if (ent.Comp.Faction != null && GunIff.IsInFaction(args.Tripper, ent.Comp.Faction.Value))
-            args.Cancelled = true;
+        foreach (var faction in ent.Comp.Factions)
+        {
+            if (GunIff.IsInFaction(args.Tripper, faction))
+            {
+                args.Cancelled = true;
+                return;
+            }
+        }
     }
 
     private void OnStartCollide(Entity<RMCLandmineComponent> ent, ref StartCollideEvent args)

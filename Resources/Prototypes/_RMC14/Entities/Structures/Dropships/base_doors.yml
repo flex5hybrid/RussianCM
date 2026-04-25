@@ -6,6 +6,10 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: Tag
+    tags:
+    - Airlock
+    - VehicleSmashIgnore
   - type: Sprite
     layers:
     - state: door_closed

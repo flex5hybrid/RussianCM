@@ -13,6 +13,7 @@
     - id: FoodMeatHuman
       amount: 6
   - type: Fingerprint
+  - type: FootPrints
   - type: Fixtures
     fixtures:
       fix1:
@@ -342,6 +343,7 @@
   - type: RMCDisarmable
   - type: StunOnExplosionReceived
   - type: DeafenWhileCrit
+  - type: CrawlWhileCrit
   - type: RMCStopDropRollVisuals
   - type: XenoToggleChargingDamage
     damage:

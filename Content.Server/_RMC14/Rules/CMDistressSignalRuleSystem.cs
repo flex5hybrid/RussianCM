@@ -297,6 +297,7 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
 
             // TODO: come up with random name like operation name, in a function that can be reused for hive v hive
             comp.Hive = _hive.CreateHive("xenonid hive", comp.HiveId);
+            TheHive = comp.Hive;
             if (comp.SpawnPlanet && !SpawnXenoMap((uid, comp)))
             {
                 Log.Error("Failed to load xeno map");
@@ -1955,7 +1956,7 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
     /// Sets the hive of all loaded xeno friendly entities (e.g. weeds).
     /// Only makes sense for distress signal with 1 hive, with multiple hives you would need to determine which weeds belong to which hive
     /// </summary>
-    private void SetFriendlyHives(EntityUid hive)
+    public void SetFriendlyHives(EntityUid hive)
     {
         var query = EntityQueryEnumerator<XenoFriendlyComponent>();
         while (query.MoveNext(out var weeds, out _))

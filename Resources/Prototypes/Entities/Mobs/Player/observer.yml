@@ -90,6 +90,10 @@
     actionId: RMCActionOpenTacticalMapGhost
     marines: true
     xenos: true
+    opfor: true
+    govfor: true
+    clf: true
+    liveUpdate: true
   - type: ViewIntelObjectives
   - type: VentSight
   - type: IgnoreInteractionRange

@@ -1,22 +1,73 @@
-﻿using Content.Shared._RMC14.Overwatch;
+﻿using Content.Server.Chat.Systems;
+using Content.Shared._RMC14.Overwatch;
+using Content.Shared.Inventory;
 using Robust.Server.GameObjects;
 using Robust.Shared.Player;
+using static Content.Server.Chat.Systems.ChatSystem;
 
 namespace Content.Server._RMC14.Overwatch;
 
 public sealed class OverwatchConsoleSystem : SharedOverwatchConsoleSystem
 {
     [Dependency] private readonly SharedEyeSystem _eye = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!;
+    [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly ViewSubscriberSystem _viewSubscriber = default!;
+
+    private EntityQuery<ActorComponent> _actorQuery;
+    private EntityQuery<OverwatchCameraComponent> _cameraQuery;
+
+    private readonly Dictionary<ICommonSession, ICChatRecipientData> _recipients = new();
 
     public override void Initialize()
     {
         base.Initialize();
 
+        _actorQuery = GetEntityQuery<ActorComponent>();
+        _cameraQuery = GetEntityQuery<OverwatchCameraComponent>();
+
         SubscribeLocalEvent<OverwatchCameraComponent, ComponentRemove>(OnWatchedRemove);
         SubscribeLocalEvent<OverwatchCameraComponent, EntityTerminatingEvent>(OnWatchedRemove);
         SubscribeLocalEvent<OverwatchWatchingComponent, ComponentRemove>(OnWatchingRemove);
         SubscribeLocalEvent<OverwatchWatchingComponent, EntityTerminatingEvent>(OnWatchingRemove);
+
+        SubscribeLocalEvent<ExpandICChatRecipientsEvent>(OnExpandRecipients);
+    }
+
+    private void OnExpandRecipients(ExpandICChatRecipientsEvent ev)
+    {
+        if (!_inventory.TryGetInventoryEntity<OverwatchCameraComponent>(ev.Source, out var camera))
+            return;
+
+        if (!_cameraQuery.TryComp(camera, out var cameraComp) || cameraComp.Watching.Count == 0)
+            return;
+
+        var sourceTransform = Transform(ev.Source);
+        var sourcePos = _transform.GetWorldPosition(sourceTransform);
+
+        _recipients.Clear();
+        foreach (var watcher in cameraComp.Watching)
+        {
+            if (!_actorQuery.TryComp(watcher, out var actor))
+                continue;
+
+            if (ev.Recipients.ContainsKey(actor.PlayerSession))
+                continue;
+
+            var watcherTransform = Transform(watcher);
+            float range;
+            if (watcherTransform.MapID == sourceTransform.MapID)
+                range = (sourcePos - _transform.GetWorldPosition(watcherTransform)).Length();
+            else
+                range = -1;
+
+            _recipients.TryAdd(actor.PlayerSession, new ICChatRecipientData(range, false, false));
+        }
+
+        foreach (var recipient in _recipients)
+        {
+            ev.Recipients.TryAdd(recipient.Key, recipient.Value);
+        }
     }
 
     private void OnWatchedRemove<T>(Entity<OverwatchCameraComponent> ent, ref T args)
