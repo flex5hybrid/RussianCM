@@ -1,71 +1,71 @@
-ent-RMCJumpsuitVeteranPMCDirector = режиссерский костюм
+ent-RMCJumpsuitVeteranPMCDirector = костюм ветерана Ве-Я
   .desc = Этот костюм излучает авторитет. 
 
-ent-RMCJumpsuitVeteranPMCCorporateLead = Униформа корпоративной охраны We-Ya
-  .desc = Бронированная униформа, которую носят сотрудники корпоративной безопасности We-Ya. 
+ent-RMCJumpsuitVeteranPMCCorporateLead = Униформа корпоративной охраны Ве-Я
+  .desc = Бронированная униформа, которую носят сотрудники корпоративной безопасности Ве-Я. 
 
-ent-RMCJumpsuitVeteranPMCCorporate = Униформа корпоративной охраны We-Ya
-  .desc = Бронированная униформа, которую носят сотрудники корпоративной безопасности We-Ya. 
+ent-RMCJumpsuitVeteranPMCCorporate = Униформа корпоративной охраны Ве-Я
+  .desc = Бронированная униформа, которую носят сотрудники корпоративной безопасности Ве-Я. 
 
-ent-RMCJumpsuitVeteranPMCCommando = Униформа коммандос ЧВК
-  .desc = Бронированная униформа элитных коммандос Ве-Я. 
+ent-RMCJumpsuitVeteranPMCCommando = Униформа коммандоса ЧВК
+  .desc = Бронированная униформа элитных коммандосов Ве-Я. 
 
-ent-RMCJumpsuitVeteranPMCLeader = Утомление командования ЧВК
+ent-RMCJumpsuitVeteranPMCLeader = униформа командования ЧВК Ве-Я
   .desc = Белый комплект спецодежды, предназначенный для частных охранников. 
 
-ent-RMCJumpsuitVeteranPMCEngineer = Инженер ЧВК утомляет
+ent-RMCJumpsuitVeteranPMCEngineer = униформа инженера ЧВК Ве-Я
   .desc = Комплект униформы черного цвета, предназначенный для сотрудников вневедомственной охраны. 
 
-ent-RMCJumpsuitVeteranPMCNoWebbing = Утомляемость ЧВК
+ent-RMCJumpsuitVeteranPMCNoWebbing = униформа ЧВК Ве-Я
   .desc = Белый комплект спецодежды, предназначенный для частных охранников. 
 
 ent-RMCVeteranUniformBase = токарный станок-категория-одежда
 
-ent-RMCJumpsuitVeteranPMCNoWebbingPatch = Утомляемость ЧВК
+ent-RMCJumpsuitVeteranPMCNoWebbingPatch = униформа ЧВК Ве-Я
   .desc = Белый комплект спецодежды, предназначенный для частных охранников. 
 
-ent-RMCJumpsuitVeteranPMCNoWebbingPatchFolded = Утомляемость ЧВК
+ent-RMCJumpsuitVeteranPMCNoWebbingPatchFolded = униформа ЧВК Ве-Я
   .desc = Белый комплект спецодежды, предназначенный для частных охранников. 
 
-ent-RMCJumpsuitVeteranPMC = Утомляемость ЧВК
+ent-RMCJumpsuitVeteranPMC = униформа ЧВК Ве-Я
   .desc = Белый комплект спецодежды, предназначенный для частных охранников. 
 
-ent-RMCJumpsuitVeteranPMCMedic = Утомляемость ЧВК
+ent-RMCJumpsuitVeteranPMCMedic = униформа ЧВК Ве-Я
   .desc = Белый комплект спецодежды, предназначенный для частных охранников. 
 
-ent-RMCJumpsuitVeteranPMCGunner = Утомляемость ЧВК
+ent-RMCJumpsuitVeteranPMCGunner = униформа ЧВК Ве-Я
   .desc = Белый комплект спецодежды, предназначенный для частных охранников. 
 
-ent-RMCJumpsuitVeteranPMCSynth = Утомляемость ЧВК
+ent-RMCJumpsuitVeteranPMCSynth = униформа ЧВК Ве-Я
   .desc = Белый комплект спецодежды, предназначенный для частных охранников. 
 
-ent-RMCJumpsuitVeteranPMCEngineerNoWebbing = Инженер ЧВК утомляет
+ent-RMCJumpsuitVeteranPMCEngineerNoWebbing = униформа инженера ЧВК Ве-Я
   .desc = Комплект униформы черного цвета, предназначенный для сотрудников вневедомственной охраны. 
 
-ent-RMCJumpsuitVeteranPMCEngineerNoWebbingPatch = Инженер ЧВК утомляет
+ent-RMCJumpsuitVeteranPMCEngineerNoWebbingPatch = униформа инженера ЧВК Ве-Я
   .desc = Комплект униформы черного цвета, предназначенный для сотрудников вневедомственной охраны. 
 
-ent-RMCJumpsuitVeteranPMCLeaderNoWebbing = Утомление командования ЧВК
+ent-RMCJumpsuitVeteranPMCLeaderNoWebbing = униформа командования ЧВК Ве-Я
   .desc = Белый комплект спецодежды, предназначенный для частных охранников. 
 
-ent-RMCJumpsuitVeteranPMCLeaderNoWebbingPatch = Утомление командования ЧВК
+ent-RMCJumpsuitVeteranPMCLeaderNoWebbingPatch = униформа командования ЧВК Ве-Я
   .desc = Белый комплект спецодежды, предназначенный для частных охранников. 
 
-ent-RMCJumpsuitVeteranPMCLeaderHolsterPatch = Утомление командования ЧВК
+ent-RMCJumpsuitVeteranPMCLeaderHolsterPatch = униформа командования ЧВК Ве-Я
   .desc = Белый комплект спецодежды, предназначенный для частных охранников. 
 
-ent-RMCJumpsuitVeteranPMCCommandoSurvivor = Униформа We-Ya Commando
-  .desc = Бронированная униформа элитных коммандос Ве-Я. 
+ent-RMCJumpsuitVeteranPMCCommandoSurvivor = Униформа Ве-Я Коммандо
+  .desc = Бронированная униформа элитных коммандосов Ве-Я. 
 
-ent-RMCJumpsuitVeteranPMCKutjevo = Униформа корпоративной охраны We-Ya
-  .desc = Бронированная униформа, которую носят сотрудники корпоративной безопасности We-Ya. 
+ent-RMCJumpsuitVeteranPMCKutjevo = Униформа корпоративной охраны Ве-Я
+  .desc = Бронированная униформа, которую носят сотрудники корпоративной безопасности Ве-Я. 
 
-ent-RMCJumpsuitVeteranPMCKutjevoLead = Униформа корпоративной охраны We-Ya
-  .desc = Бронированная униформа, которую носят сотрудники корпоративной безопасности We-Ya. 
+ent-RMCJumpsuitVeteranPMCKutjevoLead = Униформа корпоративной охраны Ве-Я
+  .desc = Бронированная униформа, которую носят сотрудники корпоративной безопасности Ве-Я. 
 
-ent-RMCJumpsuitVeteranPMCHybrisa = Униформа корпоративной охраны We-Ya
-  .desc = Бронированная униформа, которую носят сотрудники корпоративной безопасности We-Ya. 
+ent-RMCJumpsuitVeteranPMCHybrisa = Униформа корпоративной охраны Ве-Я
+  .desc = Бронированная униформа, которую носят сотрудники корпоративной безопасности Ве-Я. 
 
-ent-RMCJumpsuitVeteranPMCHybrisaLead = Униформа корпоративной охраны We-Ya
-  .desc = Бронированная униформа, которую носят сотрудники корпоративной безопасности We-Ya. 
+ent-RMCJumpsuitVeteranPMCHybrisaLead = Униформа корпоративной охраны Ве-Я
+  .desc = Бронированная униформа, которую носят сотрудники корпоративной безопасности Ве-Я. 
 
