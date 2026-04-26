@@ -273,7 +273,7 @@ public sealed partial class RequisitionsSystem : SharedRequisitionsSystem
             // Set faction-specific starting balance
             if (faction == "govfor" || faction == "opfor")
             {
-                newAccountComp.Balance = 10000;
+                newAccountComp.Balance = 45000;
             }
             else if (faction == "colony")
             {

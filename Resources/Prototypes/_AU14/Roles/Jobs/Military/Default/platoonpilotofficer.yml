@@ -36,6 +36,7 @@
   - AU14GovforPilot
   - AU14GovforCorpsman
   - AU14GovforSquad
+  - CMCargoTech
   roleWeight: 0.25
   special:
   - !type:AddComponentSpecial
