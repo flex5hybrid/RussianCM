@@ -22,6 +22,27 @@
     cm-chatsan-word-sppfull: cm-chatsan-replacement-sppfull
     cm-chatsan-word-weyafull: cm-chatsan-replacement-weyafull
     cm-chatsan-word-weyafullhyphenated: cm-chatsan-replacement-weyafullhyphenated
+    cm-chatsan-word-sigh: cm-chatsan-replacement-sigh
+    cm-chatsan-word-thanks: cm-chatsan-replacement-thanks
+    cm-chatsan-word-shrug: cm-chatsan-replacement-shrug
+    cm-chatsan-word-dunno: cm-chatsan-replacement-dunno
+    cm-chatsan-word-surprised: cm-chatsan-replacement-surprised
+    cm-chatsan-word-salute: cm-chatsan-replacement-salute
+    cm-chatsan-word-maybe: cm-chatsan-replacement-maybe
+    cm-chatsan-word-please-short: cm-chatsan-replacement-please
+    cm-chatsan-word-please: cm-chatsan-replacement-please
+    cm-chatsan-word-fuck: cm-chatsan-replacement-fuck
+    cm-chatsan-word-good: cm-chatsan-replacement-good
+    cm-chatsan-word-dont-care: cm-chatsan-replacement-dont-care
+    cm-chatsan-word-queen: cm-chatsan-replacement-queen
+    cm-chatsan-word-laugh: cm-chatsan-replacement-laugh
+    cm-chatsan-word-smile: cm-chatsan-replacement-smile
+    cm-chatsan-word-frown: cm-chatsan-replacement-frown
+    cm-chatsan-word-capture: cm-chatsan-replacement-capture
+    cm-chatsan-word-captures: cm-chatsan-replacement-captures
+    cm-chatsan-word-capturing: cm-chatsan-replacement-capturing
+    cm-chatsan-word-captured: cm-chatsan-replacement-captured
+    cm-chatsan-word-captured-plural: cm-chatsan-replacement-captured-plural
 
 - type: accent
   id: CMChatSanitizeMarine
