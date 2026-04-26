@@ -265,7 +265,7 @@ public abstract class SharedMarineAnnounceSystem : EntitySystem
         var wrappedMessage = Loc.GetString("rmc-announcement-message-signed", ("author", author), ("message", message), ("name", name));
 
         AnnounceToMarines(wrappedMessage, sound, filter, excludeSurvivors, faction);
-        RaiseLocalEvent(new RMCAnnouncementMadeEvent(sender, message)); // RuMC Announce TTS
+        RaiseLocalEvent(new RMCAnnouncementMadeEvent(sender, message, filter, excludeSurvivors, faction)); // RuMC Announce TTS
         _adminLog.Add(LogType.RMCMarineAnnounce, $"{ToPrettyString(sender):source} marine announced message: {message}");
     }
 

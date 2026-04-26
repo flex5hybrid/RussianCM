@@ -7,6 +7,7 @@ using Content.Shared.GameTicking;
 using Content.Shared.Ghost;
 using Content.Shared.Players.RateLimiting;
 using Content.Shared.Radio;
+using Content.Shared._RMC14.Survivor;
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -174,29 +175,48 @@ public sealed partial class TTSSystem : EntitySystem
             _ = HandleRadioTTS(uid, actor, args);
     }
 
+    private Filter BuildAnnouncementFilter(RMCAnnouncementMadeEvent args)
+    {
+        if (args.Filter != null)
+            return args.Filter;
+
+        var filter = Filter.Empty().AddWhereAttachedEntity(e =>
+        {
+            var targetFaction = string.IsNullOrWhiteSpace(args.Faction) ? "govfor" : args.Faction.ToLowerInvariant();
+
+            if (TryComp<MarineComponent>(e, out var marine))
+            {
+                return !string.IsNullOrWhiteSpace(marine.Faction) &&
+                       string.Equals(marine.Faction, targetFaction, StringComparison.OrdinalIgnoreCase);
+            }
+
+            return HasComp<GhostComponent>(e);
+        });
+
+        if (args.ExcludeSurvivors)
+            filter.RemoveWhereAttachedEntity(HasComp<RMCSurvivorComponent>);
+
+        return filter;
+    }
+
     private async void OnAnnouncementMade(RMCAnnouncementMadeEvent args)
     {
-        Logger.Debug("OnAnnouncementMade");
         var voiceId = "TURRET_FLOOR";
         if (TryComp<TTSComponent>(args.Source, out var component))
             voiceId = component.VoicePrototypeId;
         if (voiceId is null)
             voiceId = "TURRET_FLOOR";
 
-        Logger.Debug(voiceId);
         if (!_isEnabled)
             return;
 
         if (!_prototypeManager.TryIndex<TTSVoicePrototype>(voiceId, out var protoVoice))
             return;
-        Logger.Debug("get him");
         var soundData = await GenerateTTS(args.RawMessage, protoVoice.Speaker);
         if (soundData is null)
             return;
-        Logger.Debug("get his ass");
 
-        var filter = Filter.Empty()
-            .AddWhereAttachedEntity(e => HasComp<MarineComponent>(e) || HasComp<GhostComponent>(e));
+        var filter = BuildAnnouncementFilter(args);
 
         foreach (var session in filter.Recipients)
         {
