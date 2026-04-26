@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Threading.Tasks;
 using Content.Server.Chat.Systems;
 using Content.Shared._RMC14.Marines;
@@ -7,10 +8,12 @@ using Content.Shared.GameTicking;
 using Content.Shared.Ghost;
 using Content.Shared.Players.RateLimiting;
 using Content.Shared.Radio;
+using Content.Shared._RMC14.Survivor;
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Robust.Shared.Timing;
 using Content.Server.Radio.EntitySystems;
 using Content.Server.Radio.Components;
 using Content.Shared.Radio.Components;
@@ -27,6 +30,7 @@ public sealed partial class TTSSystem : EntitySystem
     [Dependency] private readonly TTSManager _ttsManager = default!;
     [Dependency] private readonly SharedTransformSystem _xforms = default!;
     [Dependency] private readonly IRobustRandom _rng = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
 
     private readonly List<string> _sampleText =
         new()
@@ -46,8 +50,11 @@ public sealed partial class TTSSystem : EntitySystem
         };
 
     private const int MaxMessageChars = 100 * 2; // same as SingleBubbleCharLimit * 2
+    private static readonly TimeSpan RadioGhostTtsDedupeTime = TimeSpan.FromSeconds(2);
     private bool _isEnabled = false;
     private EntityQuery<TelecomExemptComponent> _exemptQuery;
+    private readonly Dictionary<int, TimeSpan> _radioGhostTtsSentAt = new();
+    private readonly object _radioGhostTtsLock = new();
 
     public override void Initialize()
     {
@@ -136,7 +143,10 @@ public sealed partial class TTSSystem : EntitySystem
 
             RaiseNetworkEvent(new PlayTTSEvent(soundData, GetNetEntity(uid)), session);
         }
+
+        SendGhostTTS(uid, new PlayTTSEvent(soundData), ChatSystem.VoiceRange);
     }
+
     private async void HandleWhisper(EntityUid uid, string message, string obfMessage, string speaker)
     {
         var fullSoundData = await GenerateTTS(message, speaker, true);
@@ -162,7 +172,10 @@ public sealed partial class TTSSystem : EntitySystem
 
             RaiseNetworkEvent(distance > ChatSystem.WhisperClearRange ? obfTtsEvent : fullTtsEvent, session);
         }
+
+        SendGhostTTS(uid, new PlayTTSEvent(fullSoundData, isWhisper: true), ChatSystem.WhisperMuffledRange);
     }
+
     private void OnHeadsetRadioReceive(EntityUid uid, ActorComponent actor, ref HeadsetRadioReceiveRelayEvent args)
     {
         _ = HandleRadioTTS(uid, actor, args.RelayedEvent);
@@ -174,29 +187,114 @@ public sealed partial class TTSSystem : EntitySystem
             _ = HandleRadioTTS(uid, actor, args);
     }
 
+    private bool IsGhostInTTSRange(
+        EntityUid listener,
+        TransformComponent sourceXform,
+        float range,
+        EntityQuery<TransformComponent> xformQuery)
+    {
+        if (!HasComp<GhostComponent>(listener) ||
+            !xformQuery.TryGetComponent(listener, out var listenerXform) ||
+            listenerXform.MapID != sourceXform.MapID)
+        {
+            return false;
+        }
+
+        return sourceXform.Coordinates.TryDistance(EntityManager, listenerXform.Coordinates, out var distance) &&
+               distance <= range;
+    }
+
+    private void SendGhostTTS(EntityUid source, PlayTTSEvent ev, float range)
+    {
+        var xformQuery = GetEntityQuery<TransformComponent>();
+        if (!xformQuery.TryGetComponent(source, out var sourceXform))
+            return;
+
+        var filter = Filter.Empty()
+            .AddWhereAttachedEntity(e => IsGhostInTTSRange(e, sourceXform, range, xformQuery));
+
+        foreach (var session in filter.Recipients)
+        {
+            RaiseNetworkEvent(ev, session);
+        }
+    }
+
+    private bool TrySendRadioTtsToGhosts(RadioReceiveEvent ev)
+    {
+        var key = ev.ChatMsg.GetHashCode();
+        var now = _timing.CurTime;
+
+        lock (_radioGhostTtsLock)
+        {
+            foreach (var (sentKey, sentAt) in _radioGhostTtsSentAt.ToArray())
+            {
+                if (now - sentAt > RadioGhostTtsDedupeTime)
+                    _radioGhostTtsSentAt.Remove(sentKey);
+            }
+
+            if (_radioGhostTtsSentAt.ContainsKey(key))
+                return false;
+
+            _radioGhostTtsSentAt[key] = now;
+            return true;
+        }
+    }
+
+    private Filter BuildAnnouncementFilter(RMCAnnouncementMadeEvent args)
+    {
+        if (args.Filter != null)
+            return args.Filter;
+
+        var filter = Filter.Empty().AddWhereAttachedEntity(e =>
+        {
+            var targetFaction = string.IsNullOrWhiteSpace(args.Faction) ? "govfor" : args.Faction.ToLowerInvariant();
+
+            if (TryComp<MarineComponent>(e, out var marine))
+            {
+                return !string.IsNullOrWhiteSpace(marine.Faction) &&
+                       string.Equals(marine.Faction, targetFaction, StringComparison.OrdinalIgnoreCase);
+            }
+
+            return HasComp<GhostComponent>(e);
+        });
+
+        if (args.ExcludeSurvivors)
+            filter.RemoveWhereAttachedEntity(HasComp<RMCSurvivorComponent>);
+
+        var xformQuery = GetEntityQuery<TransformComponent>();
+        if (args.Source is { Valid: true } source &&
+            xformQuery.TryGetComponent(source, out var sourceXform))
+        {
+            filter.RemoveWhereAttachedEntity(e =>
+                HasComp<GhostComponent>(e) &&
+                !IsGhostInTTSRange(e, sourceXform, ChatSystem.VoiceRange, xformQuery));
+        }
+        else
+        {
+            filter.RemoveWhereAttachedEntity(HasComp<GhostComponent>);
+        }
+
+        return filter;
+    }
+
     private async void OnAnnouncementMade(RMCAnnouncementMadeEvent args)
     {
-        Logger.Debug("OnAnnouncementMade");
         var voiceId = "TURRET_FLOOR";
         if (TryComp<TTSComponent>(args.Source, out var component))
             voiceId = component.VoicePrototypeId;
         if (voiceId is null)
             voiceId = "TURRET_FLOOR";
 
-        Logger.Debug(voiceId);
         if (!_isEnabled)
             return;
 
         if (!_prototypeManager.TryIndex<TTSVoicePrototype>(voiceId, out var protoVoice))
             return;
-        Logger.Debug("get him");
         var soundData = await GenerateTTS(args.RawMessage, protoVoice.Speaker);
         if (soundData is null)
             return;
-        Logger.Debug("get his ass");
 
-        var filter = Filter.Empty()
-            .AddWhereAttachedEntity(e => HasComp<MarineComponent>(e) || HasComp<GhostComponent>(e));
+        var filter = BuildAnnouncementFilter(args);
 
         foreach (var session in filter.Recipients)
         {
@@ -220,6 +318,7 @@ public sealed partial class TTSSystem : EntitySystem
         if (!_prototypeManager.TryIndex<TTSVoicePrototype>(tts.VoicePrototypeId, out var protoVoice))
             return;
 
+        var sendToGhosts = TrySendRadioTtsToGhosts(ev);
         var sound = await GenerateTTS(ev.Message, protoVoice.Speaker);
 
         if (sound == null)
@@ -228,6 +327,9 @@ public sealed partial class TTSSystem : EntitySystem
         RaiseNetworkEvent(
             new PlayTTSEvent(sound, GetNetEntity(speaker), isRadio: true),
             Filter.SinglePlayer(actor.PlayerSession));
+
+        if (sendToGhosts)
+            SendGhostTTS(speaker, new PlayTTSEvent(sound, GetNetEntity(speaker), isRadio: true), ChatSystem.VoiceRange);
     }
     // ReSharper disable once InconsistentNaming
     public async Task<byte[]?> GenerateTTS(string text, string speaker, bool isWhisper = false)

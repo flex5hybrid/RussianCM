@@ -113,6 +113,27 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
         _ui.SetUiState(computer.Owner, MarineCommunicationsComputerUI.Key, state);
     }
 
+    private Filter BuildMarineAnnouncementFilter(Filter? filter, bool excludeSurvivors, string? faction)
+    {
+        filter ??= Filter.Empty().AddWhereAttachedEntity(e =>
+        {
+            var targetFaction = string.IsNullOrWhiteSpace(faction) ? "govfor" : faction.ToLowerInvariant();
+
+            if (TryComp<MarineComponent>(e, out var marine))
+            {
+                return !string.IsNullOrWhiteSpace(marine.Faction) &&
+                       string.Equals(marine.Faction, targetFaction, StringComparison.OrdinalIgnoreCase);
+            }
+
+            return HasComp<GhostComponent>(e);
+        });
+
+        if (excludeSurvivors)
+            filter.RemoveWhereAttachedEntity(HasComp<RMCSurvivorComponent>);
+
+        return filter;
+    }
+
     public override void AnnounceToMarines(
         string message,
         SoundSpecifier? sound = null,
@@ -120,27 +141,7 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
         bool excludeSurvivors = true,
         string? faction = null)
     {
-
-        if (filter == null)
-        {
-            var targetFaction = string.IsNullOrWhiteSpace(faction) ? "govfor" : faction.ToLowerInvariant();
-            filter = Filter.Empty().AddWhereAttachedEntity(e =>
-            {
-                if (TryComp<MarineComponent>(e, out var marine))
-                {
-                    return !string.IsNullOrWhiteSpace(marine.Faction) && string.Equals(marine.Faction, targetFaction, StringComparison.OrdinalIgnoreCase);
-                }
-
-                if (HasComp<GhostComponent>(e))
-                    return true;
-
-                return false;
-            });
-        }
-
-        if (excludeSurvivors)
-            filter.RemoveWhereAttachedEntity(HasComp<RMCSurvivorComponent>);
-        // RaiseLocalEvent(new RMCAnnouncementMadeEvent(null, message)); // RuMC Announce TTS
+        filter = BuildMarineAnnouncementFilter(filter, excludeSurvivors, faction);
         _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Radio, message, message, default, false, true, null);
         _audio.PlayGlobal(sound ?? DefaultAnnouncementSound, filter, true, AudioParams.Default.WithVolume(-2f));
     }
@@ -161,7 +162,6 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
         ProtoId<RadioChannelPrototype> channel)
     {
         base.AnnounceRadio(sender, message, channel);
-        RaiseLocalEvent(new RMCAnnouncementMadeEvent(sender, message)); // RuMC Announce TTS
         _adminLogs.Add(LogType.RMCMarineAnnounce, $"{ToPrettyString(sender):source} marine announced radio message: {message}");
         _radio.SendRadioMessage(sender, message, channel, sender);
     }
@@ -175,7 +175,6 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
     {
         base.AnnounceARESStaging(source, message, sound, announcement, faction);
 
-        RaiseLocalEvent(new RMCAnnouncementMadeEvent(source, message)); // RuMC Announce TTS
         message = FormatARESStaging(announcement, message);
 
         Filter? filter = null;
@@ -194,6 +193,9 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
                 return false;
             });
         }
+
+        filter = BuildMarineAnnouncementFilter(filter, true, faction);
+        RaiseLocalEvent(new RMCAnnouncementMadeEvent(source, message, filter)); // RuMC Announce TTS
 
         AnnounceToMarines(message, sound, filter);
         _adminLogs.Add(LogType.RMCMarineAnnounce, $"{ToPrettyString(source):player} ARES announced message: {message}");

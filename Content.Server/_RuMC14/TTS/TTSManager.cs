@@ -39,6 +39,7 @@ public sealed class TTSManager
     private ISawmill _sawmill = default!;
     private readonly Dictionary<string, byte[]> _cache = new();
     private readonly List<string> _cacheKeysSeq = new();
+    private readonly object _cacheLock = new();
     private int _maxCachedCount = 200;
     private string _apiUrl = string.Empty;
     private string _apiToken = string.Empty;
@@ -67,11 +68,14 @@ public sealed class TTSManager
 
         var cacheKey = GenerateCacheKey(speaker, text);
 
-        if (_cache.TryGetValue(cacheKey, out var cached))
+        lock (_cacheLock)
         {
-            ReusedCount.Inc();
-            _sawmill.Verbose($"Use cached TTS for '{text}' by '{speaker}'");
-            return cached;
+            if (_cache.TryGetValue(cacheKey, out var cached))
+            {
+                ReusedCount.Inc();
+                _sawmill.Verbose($"Use cached TTS for '{text}' by '{speaker}'");
+                return cached;
+            }
         }
 
         _sawmill.Verbose($"Generate TTS for '{text}' by '{speaker}'");
@@ -98,17 +102,16 @@ public sealed class TTSManager
             Query = query
         }.Uri;
 
-        _httpClient.DefaultRequestHeaders.Remove("Authorization");
-        _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {_apiToken}");
-
         var startTime = DateTime.UtcNow;
 
         try
         {
             var timeout = _cfg.GetCVar(CCCVars.TTSApiTimeout);
             using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(timeout));
+            using var request = new HttpRequestMessage(HttpMethod.Get, requestUri);
+            request.Headers.Authorization = new("Bearer", _apiToken);
 
-            var response = await _httpClient.GetAsync(requestUri, cts.Token);
+            var response = await _httpClient.SendAsync(request, cts.Token);
 
             if (!response.IsSuccessStatusCode)
             {
@@ -124,14 +127,23 @@ public sealed class TTSManager
 
             var soundData = await response.Content.ReadAsByteArrayAsync(cts.Token);
 
-            _cache.Add(cacheKey, soundData);
-            _cacheKeysSeq.Add(cacheKey);
-
-            if (_cache.Count > _maxCachedCount)
+            lock (_cacheLock)
             {
-                var first = _cacheKeysSeq[0];
-                _cache.Remove(first);
-                _cacheKeysSeq.RemoveAt(0);
+                if (_cache.TryGetValue(cacheKey, out var cached))
+                {
+                    ReusedCount.Inc();
+                    return cached;
+                }
+
+                _cache[cacheKey] = soundData;
+                _cacheKeysSeq.Add(cacheKey);
+
+                if (_cache.Count > _maxCachedCount)
+                {
+                    var first = _cacheKeysSeq[0];
+                    _cache.Remove(first);
+                    _cacheKeysSeq.RemoveAt(0);
+                }
             }
 
             _sawmill.Debug(
@@ -165,8 +177,11 @@ public sealed class TTSManager
 
     public void ResetCache()
     {
-        _cache.Clear();
-        _cacheKeysSeq.Clear();
+        lock (_cacheLock)
+        {
+            _cache.Clear();
+            _cacheKeysSeq.Clear();
+        }
     }
 
     private string GenerateCacheKey(string speaker, string text)
