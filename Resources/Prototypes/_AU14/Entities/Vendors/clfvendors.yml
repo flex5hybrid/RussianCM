@@ -92,6 +92,8 @@
       entries:
       - id: RMCGrenadeMolotov
         amount: 10
+      - id: CMUPipeBomb
+        amount: 10
       - id: CMGrenadeSmoke
         amount: 5
       - id: CMGrenadeFragOld
