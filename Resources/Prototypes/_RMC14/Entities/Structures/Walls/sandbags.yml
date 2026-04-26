@@ -120,7 +120,7 @@
   parent: BaseItem
   id: CMSandbagFull
   name: sandbags
-  description: Some bags filled with sand. For now, just cumbersome, but soon to be used for fortifications.
+  description: Обычные мешки с песком. Сейчас они пусты и нигде не годятся, но скоро будут использованы для укреплений.
   components:
   - type: Item
     size: Huge

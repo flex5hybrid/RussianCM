@@ -1,5 +1,5 @@
 ent-RMCBulletSniper10x99mmAntiMateriel = пуля (10x99мм)
-ent-RMCCartridgeSniper10x99mmAntiMateriel = патрон (10x99мм) (Противо materiel)
+ent-RMCCartridgeSniper10x99mmAntiMateriel = патрон (10x99мм) (противоматериальный)
 ent-RMCMagazineSniperXM43E1AntiMateriel = снайперский магазин XM43E1 (10x99мм)
   .desc = Магазин безгильзовых 10x99мм противоматериальных патронов, способных пробивать большинство материалов пехотного уровня. В зависимости от того, во что вы попали, у него может даже хватить энергии, чтобы ранить anything за целью.
 ent-RMCXM43E1AntiMaterielRifle = противоматериальная винтовка XM43E1
