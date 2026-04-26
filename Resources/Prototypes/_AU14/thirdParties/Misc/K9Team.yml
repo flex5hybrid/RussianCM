@@ -23,8 +23,6 @@
       settings: short
   - type: Skills
     preset: AU14SkillPresetPlatoonHospitalCorpsman
-  - type: Loadout
-    prototypes: [ AU14GearK9HandlerGOVFOR ]
 
 - type: partySpawn
   id: AU14IntelThirdPartyK9HandlerSpawnGOVFOR
@@ -45,43 +43,4 @@
   GhostsNeeded: 600
   roundstart: false
 
-- type: startingGear
-  id: AU14GearK9HandlerGOVFOR
-  equipment:
-    jumpsuit: RMCJumpsuitVeteranPMCCommando
-    outerClothing: AU14WYPPOArmor
-    shoes: RMCScoutShoes
-    ears: RMCM5CameraGear
-    head: ArmorHelmetPMCFieldOfficer
-    neck: RMCWhistle
-    gloves: AU14PVEHandsInsulatedBlackMarine
-    belt: RMCM77BeltPMCFilled
-    pocket1: RMCPouchMedkitPMCFilled
-    pocket2: AU14PouchAutoinjectorFilledMilitaryDoctor
-    back: CMBackpackMedical
-    mask: CMTarbackCigar
-  storage:
-    back:
-    - CMBurnKit10
-    - CMBurnKit10
-    - CMTraumaKit10
-    - CMTraumaKit10
-    - CMPillCanisterBicaridine
-    - CMPillCanisterKelotane
-    - CMPillCanisterDexalin
-    - CMPillCanisterDylovene
-    - CMPillCanisterInaprovaline
-    - CMPillCanisterTricordrazine
-    - RMCPillCanisterIron
-    - AU14IVFoldableFolded
-    - CMDefibrillator
-    - RMCRadioHandheldColonyOff
-    outerClothing:
-    - RMCMREWeYa
-  jumpsuit:
-    - CMMRE
-    - RMCWebbingLegPouchBlack
-  pocket1:
-    - CMRollerBedSpawnFolded
-  inhand:
-    - RMCZippo
+

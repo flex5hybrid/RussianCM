@@ -71,8 +71,13 @@
         amount: 15
       - id: AU14DesertFlapCap
         amount: 15
+    - name: Headsets
+      entries:
       - id: RMCM5CameraGear
         amount: 30
+      - id: AU14HeadsetSectionMarine
+        name: empty headset
+        amount: 20
     - name: Heads Up Display
       entries:
       - id: AU14VisorSquadRMC
@@ -679,7 +684,7 @@
     - name: Fatigues
       entries:
       - id: AU14FatiguesServiceRMC
-        amount: 2
+        amount: 3
       - id: AU14FatiguesBlackRMCTeamlead
         amount: 2
       - id: AU14FatiguesDesertRMCTeamlead
@@ -687,36 +692,44 @@
     - name: Footwear
       entries:
       - id: RMCBootsRoyal
-        amount: 2
+        amount: 3
       - id: RMCShoesLaceup
         amount: 2
     - name: Headgear
       entries:
       - id: AU14HeadHelmetRMC
-        amount: 2
+        amount: 5
       - id: AU14HeadHelmetRMCBallistic
-        amount: 2
+        amount: 5
       - id: AU14HeadCapOfficerRMC
-        amount: 2
+        amount: 5
       - id: AU14HeadBeretRMCOfficer
-        amount: 2
+        amount: 5
         name: Officer Beret
       - id: AU14JunglePatrolCap
-        amount: 2
+        amount: 5
       - id: AU14DesertPatrolCap
+        amount: 5
+    - name: Headsets
+      entries:
+      - id: AU14HeadsetSectionLeader
         amount: 2
+    - name: Backpack
+      entries:
+      - id: RMCBackpackRTO
+        amount: 5
     - name: Pouches
       entries:
       - id: AU14PouchCommandFill
-        amount: 2
+        amount: 10
     - name: Miscellaneous
       entries:
       - id: RMCLaserDesignator
-        amount: 2
+        amount: 4
       - id: RMCWhistle
-        amount: 2
+        amount: 10
       - id: RMCPackFlareCAS
-        amount: 2
+        amount: 10
 
 - type: entity
   parent: ColMarTechBase
