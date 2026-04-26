@@ -74,6 +74,6 @@ public sealed partial class AuThirdPartyPrototype : IPrototype
 
 
     [DataField("announcearrival", required: false)]
-    public string? AnnounceArrival { get; private set; } = "A new force has entered the battlefield.";
+    public string? AnnounceArrival { get; private set; } = "Новая сторона вошла на поле битвы.";
 
 }

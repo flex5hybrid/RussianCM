@@ -1,6 +1,6 @@
 - type: entity
   id: RMCASRSAccount
-  name: ASRS account
+  name: АСПДХ аккаунт
   categories: [ HideSpawnMenu ]
   components:
   - type: RequisitionsAccount
@@ -36,8 +36,8 @@
 - type: entity
   parent: [ CMBaseStructureCorrodible, CMCargoCatalog ]
   id: CMASRSConsole
-  name: ASRS console
-  description: A console for the Automated Storage Retrieval System.
+  name: консоль АСПДХ
+  description: Консоль для автоматизированной системы поиска данных в хранилище.
   suffix: Requisitions
   components:
   - type: ItemSlots
@@ -136,7 +136,7 @@
 
 - type: entity
   id: CMCargoElevator
-  name: cargo elevator
+  name: карго лифт
   suffix: Lowered, Requisitions
   placement:
     mode: SnapgridCenter
@@ -234,7 +234,7 @@
 - type: entity
   parent: [ CMASRSConsole ]
   id: CMASRSConsoleGovfor
-  name: ASRS console (Govfor)
+  name: АСПДХ консоль (ГОВФОР)
   components:
   - type: AccessReader
     access: [ [ "AU14AccessGovforCommand" ] ]
@@ -244,7 +244,7 @@
 - type: entity
   parent: [ CMASRSConsole ]
   id: CMASRSConsoleOpfor
-  name: ASRS console (Opfor)
+  name: АСПДХ консоль (ОПФОР)
   components:
   - type: AccessReader
     access: [ [ "AU14AccessOpforCommand" ] ]
@@ -254,7 +254,7 @@
 - type: entity
   parent: CMCargoElevator
   id: CMCargoElevatorGovfor
-  name: cargo elevator (Govfor)
+  name: карго лифт (ГОВФОР)
   components:
   - type: RequisitionsElevator
     faction: govfor
@@ -262,7 +262,7 @@
 - type: entity
   parent: CMCargoElevator
   id: CMCargoElevatorOpfor
-  name: cargo elevator (Opfor)
+  name: карго лифт (Опфор)
   components:
   - type: RequisitionsElevator
     faction: opfor
@@ -270,7 +270,7 @@
 - type: entity
   parent: [ CMASRSConsole ]
   id: CMASRSConsoleColony
-  name: ASRS console (Colony)
+  name: консоль АСПДХ (Колония)
   components:
   - type: AccessReader
     access: [ [ "CMAccessRequisitions" ], [ "CMAccessColonyCommand" ] ]
@@ -280,7 +280,7 @@
 - type: entity
   parent: CMCargoElevator
   id: CMCargoElevatorColony
-  name: cargo elevator (Colony)
+  name: карго лифт (Колония)
   components:
   - type: RequisitionsElevator
     faction: colony

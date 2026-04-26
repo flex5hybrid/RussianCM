@@ -105,8 +105,8 @@ public sealed class CorporateConsoleSystem : EntitySystem
         {
             var sound = new Robust.Shared.Audio.SoundPathSpecifier("/Audio/Announcements/announce.ogg");
             _chat.DispatchGlobalAnnouncement(
-                $"Corporate transit tariff has been set to {clamped:F0}%. Submission payouts to the colony have been adjusted.",
-                "Corporate Affairs",
+                $"Корпоративный транзитный тариф установлен на уровне {clamped:F0}%. Скорректированы выплаты в колонии при подаче заявления.",
+                "Корпоративные Аферы",
                 playSound: true,
                 announcementSound: sound);
         }
