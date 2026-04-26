@@ -64,7 +64,7 @@
   - type: Sprite
     sprite: _AU14/Clothing/Civilian/Uniforms/darkblueboilersuit.rsi
   - type: WebbingClothing
-    startingWebbing: CMWebbingSurgicalBlue
+    startingWebbing: RMCWebbingSurgicalBlue
 
 - type: entity
   parent: AU14CivilianBoilerSuitDarkBlueSynth
