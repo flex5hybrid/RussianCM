@@ -1,4 +1,4 @@
-# Apparel, equipment, medic, aircrew, section-leader, weaponry
+# Apparel, equipment, medic, aircrew, command, section-leader, weaponry
 - type: entity
   parent: ColMarTechBase
   id: AU14UNISCclothingequipmentvendor
@@ -63,8 +63,13 @@
         amount: 40
       - id: AU14HelmetGarbRiotVisor
         amount: 40
+    - name: Headsets
+      entries:
       - id: RMCM5CameraGear
         amount: 30
+      - id: AU14HeadsetSectionMarine
+        name: empty headset
+        amount: 20
     - name: Heads Up Display
       entries:
       - id: RMCVisorSquad
@@ -586,34 +591,42 @@
     - name: Fatigues
       entries:
       - id: CMJumpsuitXOFormal
-        amount: 2
+        amount: 5
     - name: Footwear
       entries:
       - id: CMBootsBlack
-        amount: 2
+        amount: 5
     - name: Headgear
       entries:
       - id: AU14UNISCM11Helmet
-        amount: 2
+        amount: 5
       - id: CMHeadCapPeakedFormal
-        amount: 2
+        amount: 5
       - id: CMHeadCapPeakedService
-        amount: 2
+        amount: 5
       - id: RMCHeadBeretSquad
-        amount: 2
+        amount: 5
         name: Black Beret
+    - name: Headsets
+      entries:
+      - id: AU14HeadsetSectionLeader
+        amount: 2
+    - name: Backpack
+      entries:
+      - id: RMCBackpackRTO
+        amount: 5
     - name: Pouches
       entries:
       - id: AU14PouchCommandFill
-        amount: 2
+        amount: 10
     - name: Miscellaneous
       entries:
       - id: RMCLaserDesignator
-        amount: 2
+        amount: 4
       - id: RMCWhistle
-        amount: 2
+        amount: 10
       - id: RMCPackFlareCAS
-        amount: 2
+        amount: 10
 
 - type: entity
   parent: ColMarTechBase
@@ -661,6 +674,8 @@
     sections:
     - name: Rifle Ammunition
       entries:
+      - id: CMMagazineRifleM54CMK1
+        amount: 120
       - id: CMMagazineRifleM54C
         amount: 120
       - id: AU14MagazineRifleAG80
@@ -670,6 +685,8 @@
       - id: AU14WeaponRifleKramerMagazineStandard
         amount: 120
       - id: RMCMagazineRifleL24
+        amount: 120
+      - id: AU14MagazineRifleL90
         amount: 120
     - name: Handgun Ammunition
       entries:
