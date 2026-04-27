@@ -37899,4 +37899,123 @@ entities:
       text: brig
     - type: WarpPoint
       location: Savannah brig
+- proto: CMDemolitionsScanner
+  entities:
+  - uid: 8202
+    components:
+    - type: Transform
+      pos: -31.682251,-19.350954
+      parent: 1
+- proto: RMCExplosionSimulator
+  entities:
+  - uid: 6990
+    components:
+    - type: Transform
+      pos: -34.75,-16.5
+      parent: 1
+- proto: RMCCoolingChamber
+  entities:
+  - uid: 6540
+    components:
+    - type: Transform
+      pos: -41.5,-19.5
+      parent: 1
+    - type: Lock
+      locked: True
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 6541
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+- proto: RMCIndustrialGrinder
+  entities:
+  - uid: 9280
+    components:
+    - type: Transform
+      pos: -34.5,-19.5
+      parent: 1
+- proto: RMCBeakerSilver
+  entities:
+  - uid: 6541
+    components:
+    - type: Transform
+      parent: 6540
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: RMCTankReagentAmmonia
+  entities:
+  - uid: 32715
+    components:
+    - type: Transform
+      pos: -27.5,-23.5
+      parent: 1
+- proto: RMCTankReagentRMCEthanol
+  entities:
+  - uid: 32716
+    components:
+    - type: Transform
+      pos: -37.5,-26.5
+      parent: 1
+  - uid: 32717
+    components:
+    - type: Transform
+      pos: -38.5,-26.5
+      parent: 1
+- proto: RMCTankReagentRMCHydrogen
+  entities:
+  - uid: 32718
+    components:
+    - type: Transform
+      pos: -27.5,-26.5
+      parent: 1
+  - uid: 32719
+    components:
+    - type: Transform
+      pos: -28.5,-26.5
+      parent: 1
+- proto: RMCTankReagentRMCMethane
+  entities:
+  - uid: 32720
+    components:
+    - type: Transform
+      pos: -36.5,-26.5
+      parent: 1
+- proto: RMCTankReagentRMCOxygen
+  entities:
+  - uid: 32721
+    components:
+    - type: Transform
+      pos: -35.5,-23.5
+      parent: 1
+  - uid: 32722
+    components:
+    - type: Transform
+      pos: -36.5,-23.5
+      parent: 1
+- proto: RMCTankReagentRMCPolytrinicAcid
+  entities:
+  - uid: 32723
+    components:
+    - type: Transform
+      pos: -38.5,-23.5
+      parent: 1
+- proto: RMCTankReagentSulphuricAcid
+  entities:
+  - uid: 32724
+    components:
+    - type: Transform
+      pos: -29.5,-23.5
+      parent: 1
+  - uid: 32725
+    components:
+    - type: Transform
+      pos: -30.5,-23.5
+      parent: 1
 ...
