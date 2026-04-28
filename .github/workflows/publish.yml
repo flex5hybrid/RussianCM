@@ -12,10 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # - name: Fail if we are attempting to run on the master branch
-    #   if: ${{GITHUB.REF_NAME == 'master'}}
-    #   run: exit 1
-
     - name: Install dependencies
       run: sudo apt-get install -y python3-paramiko python3-lxml
 
@@ -31,7 +27,6 @@ jobs:
       run: |
         cd RobustToolbox
         git fetch --depth=1
-
     - name: Install dependencies
       run: dotnet restore
 
@@ -50,9 +45,19 @@ jobs:
         PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
 
-    - name: Publish changelog (Discord)
+    - name: Publish changelog (Discord — YAML)
       continue-on-error: true
       run: Tools/actions_changelogs_since_last_run.py
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
+
+    - name: Publish AI changelog (Discord — Gemini)
+      continue-on-error: true
+      run: python3 Tools/ai_changelog.py
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
+        GITHUB_RUN_ID: ${{ github.run_id }}
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
