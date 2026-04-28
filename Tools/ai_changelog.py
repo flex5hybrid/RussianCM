@@ -65,11 +65,12 @@ class GitHubClient:
         self.base = cfg.GITHUB_API_URL
         self.session = requests.Session()
         self.session.headers.update({
-            "Authorization": f"Bearer {token}",
             "Accept": "application/vnd.github+json",
             "X-GitHub-Api-Version": "2022-11-28",
             "User-Agent": "AI-Changelog-Generator/1.0",
         })
+        if self.token:
+            self.session.headers["Authorization"] = f"Bearer {self.token}"
 
     def _get(self, path: str, **kwargs) -> requests.Response:
         url = f"{self.base}/repos/{self.repo}{path}"
@@ -754,6 +755,24 @@ class DiscordSender:
 
 # ─── Main ──────────────────────────────────────────────────────────────────────
 
+def _resolve_git_ref(ref: str) -> str:
+    """Resolve a git ref (SHA, tag, HEAD~N) to an actual SHA using local git."""
+    import subprocess
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", ref],
+            capture_output=True,
+            text=True,
+            timeout=10,
+            cwd=os.path.dirname(os.path.abspath(__file__)) + "/..",
+        )
+        if result.returncode == 0:
+            return result.stdout.strip()
+    except Exception:
+        pass
+    return ref  # Return original if resolution fails
+
+
 def main():
     print("=" * 60)
     print("AI Changelog Generator — запуск")
@@ -776,53 +795,73 @@ def main():
         return
 
     token = cfg.GITHUB_TOKEN or os.environ.get("GITHUB_TOKEN", "")
-    if not token:
-        print("[ERROR] GITHUB_TOKEN не задан")
-        return
 
     github = GitHubClient(token, repo)
 
-    # ── Найти последний successful run ────────────────────────────────────────
-    current_run_id = os.environ.get("GITHUB_RUN_ID", "")
-    last_sha, last_run_id, tag_from_run = github.get_last_successful_run_sha(
-        current_run_id
-    )
+    # ── HEAD SHA ────────────────────────────────────────────────────────────────
+    head_sha = os.environ.get("GITHUB_SHA", "").strip()
+    head_input = os.environ.get("INPUT_HEAD_SHA", "").strip()
+    if head_input:
+        resolved = _resolve_git_ref(head_input)
+        head_sha = resolved
+        print(f"[GIT] HEAD resolve: {head_input} -> {head_sha[:8] if head_sha else 'FAILED'}")
 
-    if not last_sha:
-        print("[GITHUB] Предыдущий successful run не найден")
-        print("[GITHUB] Использую последний тег как границу...")
-        fallback_tag = github.get_latest_tag()
-        if fallback_tag:
-            # Попробуем получить SHA этого тега
-            try:
-                tag_ref = github._get_json(f"/git/refs/tags/{fallback_tag}")
-                last_sha = tag_ref["object"]["sha"]
-            except Exception:
-                last_sha = ""
-        if not last_sha:
-            print("[GITHUB] Не удалось определить границу, пропуск")
-            return
-
-    print(f"[GITHUB] Базовая SHA: {last_sha[:8] if last_sha else 'N/A'}")
-
-    # ── HEAD SHA текущего репозитория ────────────────────────────────────────────
-    # В GitHub Actions checkout делается без fetch тегов,
-    # поэтому используем GITHUB_SHA env
-    head_sha = os.environ.get("GITHUB_SHA", "")
     if not head_sha:
-        head_sha = last_sha  # Fallback
+        # Попробовать через локальный git
+        try:
+            head_sha = _resolve_git_ref("HEAD")
+            print(f"[GIT] HEAD resolved: {head_sha[:8]}")
+        except Exception:
+            pass
 
-    print(f"[GITHUB] HEAD SHA: {head_sha[:8] if head_sha else 'N/A'}")
+    if not head_sha:
+        print("[GITHUB] HEAD SHA не определена, пропуск")
+        return
+
+    # ── Base SHA ────────────────────────────────────────────────────────────────
+    base_sha = os.environ.get("INPUT_BASE_SHA", "").strip()
+    base_input_raw = base_sha  # для логирования
+
+    if not base_sha:
+        current_run_id = os.environ.get("GITHUB_RUN_ID", "")
+        last_sha, last_run_id, tag_from_run = github.get_last_successful_run_sha(
+            current_run_id
+        )
+        if last_sha:
+            base_sha = last_sha
+            tag_name = tag_from_run
+        else:
+            # Fallback: предыдущий тег
+            tag_name = github.get_latest_tag()
+            if tag_name:
+                try:
+                    tag_ref = github._get_json(f"/git/refs/tags/{tag_name}")
+                    base_sha = tag_ref["object"]["sha"]
+                except Exception:
+                    base_sha = ""
+
+    if not base_sha:
+        print("[GITHUB] Base SHA не определена, пропуск")
+        return
+
+    # Разрешить git-ссылки (HEAD~N, теги и т.д.)
+    if base_sha.startswith("HEAD") or not all(c in "0123456789abcdef" for c in base_sha[:8]):
+        resolved = _resolve_git_ref(base_sha)
+        print(f"[GIT] Base resolve: {base_sha} → {resolved[:8] if resolved else 'FAILED'}")
+        base_sha = resolved
+
+    print(f"[GITHUB] Base:  {base_sha[:8] if base_sha else 'N/A'}")
+    print(f"[GITHUB] HEAD:  {head_sha[:8] if head_sha else 'N/A'}")
 
     # ── Тег ─────────────────────────────────────────────────────────────────────
-    tag_name = tag_from_run or github.get_latest_tag()
+    tag_name = tag_name or github.get_latest_tag()
     if not tag_name:
         tag_name = os.environ.get("INPUT_TAG_NAME", "Latest Release")
     print(f"[GITHUB] Тег релиза: {tag_name}")
 
     # ── Получить PR между SHA ───────────────────────────────────────────────────
-    print("[GITHUB] Получаю PR между последним run и HEAD...")
-    prs = github.get_prs_between_shhas(last_sha, head_sha)
+    print("[GITHUB] Получаю PR между base и HEAD...")
+    prs = github.get_prs_between_shhas(base_sha, head_sha)
     print(f"[GITHUB] Найдено {len(prs)} PR")
 
     if not prs:
