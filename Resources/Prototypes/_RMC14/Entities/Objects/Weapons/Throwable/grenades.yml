@@ -204,6 +204,8 @@
   - type: ClusterLimitHits
   - type: CMExplosionEffect
     maxShrapnel: 0
+  - type: CMVocalizeTrigger
+  - type: RMCScorchEffect
   - type: Tag
     tags:
     - Grenade
@@ -239,9 +241,11 @@
   - type: ClusterLimitHits
   - type: CMExplosionEffect
     maxShrapnel: 0
+  - type: CMVocalizeTrigger
+  - type: RMCScorchEffect
 
 - type: entity
-  parent: CMGrenadeHighExplosive
+  parent: CMGrenadeFragOld
   id: RMCGrenadeBlastM12
   name: M12 blast grenade
   description: A high-explosive grenade produced for private security firms. It explodes around 3 seconds after the pin has been pulled.
@@ -249,13 +253,25 @@
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/m12blast.rsi
   - type: Explosive
-    maxIntensity: 35 # max 175 brute, 175 burn
-    intensitySlope: 5
+    maxIntensity: 20
+    intensitySlope: 8
     totalIntensity: 280
+    deleteAfterExplosion: false
+  - type: ProjectileGrenade
+    fillPrototype: CMProjectileShrapnel
+    capacity: 48 #same as HEFA
+    directHit: false
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
   - type: Tag
     tags:
     - Grenade
-    - LauncherCompatibleGrenade
+  - type: Ammo
+  - type: ClusterLimitHits
+  - type: CMExplosionEffect
+    maxShrapnel: 0
+  - type: RMCScorchEffect
 
 - type: entity
   parent: CMGrenadeBase
@@ -294,21 +310,28 @@
       path: /Audio/_RMC14/Weapons/Guns/Flamer/gun_flamethrower2.ogg
 
 - type: entity
-  parent: RMCGrenadeIncendiary
+  parent: CMUIEDBase
   id: RMCGrenadeMolotov
   name: improvised firebomb
   description: A potent, improvised firebomb, coupled with a pinch of gunpowder. Cheap, very effective, and deadly in confined spaces. Commonly found in the hands of rebels and terrorists. It can be difficult to predict how many seconds you have before it goes off, so be careful. Chances are, it might explode in your face.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/molotov.rsi
-  - type: OnUseTimerTrigger
+    layers:
+    - state: icon
+  - type: CMUOnLightTimerTrigger
     examinable: false
-  - type: RandomTimerTrigger
+    initialBeepDelay: 0
+    beepSound: null
     min: 1
     max: 4
+    instantfusechance: false
+    instfusechance: 10
+  - type: CMVocalizeTrigger
   - type: TileFireOnTrigger
     spawn: RMCTileFire
-    duration: 60
+    sound:
+      path: /Audio/_RMC14/Weapons/Guns/Flamer/gun_flamethrower2.ogg
   - type: Tag
     tags:
     - Grenade
