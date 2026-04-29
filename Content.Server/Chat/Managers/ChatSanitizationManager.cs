@@ -95,6 +95,7 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         { "kek", "chatsan-laughs" },
         { "rofl", "chatsan-laughs" },
         { "o7", "chatsan-salutes" },
+        { "о7", "chatsan-salutes" },
         { ";_;7", "chatsan-tearfully-salutes" },
         { ";-;7", "chatsan-tearfully-salutes" }, // RMC14
         { "t.t7", "chatsan-tearfully-salutes" }, // RMC14
