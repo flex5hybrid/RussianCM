@@ -17,6 +17,7 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         { ":)", "chatsan-smiles" },
         { ":]", "chatsan-smiles" },
         { "=)", "chatsan-smiles" },
+        { ")", "chatsan-smiles" }, // RuMC
         { "=]", "chatsan-smiles" },
         { "(:", "chatsan-smiles" },
         { "[:", "chatsan-smiles" },
@@ -25,6 +26,7 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         { "^^", "chatsan-smiles" },
         { "^-^", "chatsan-smiles" },
         { ":(", "chatsan-frowns" },
+        { "(", "chatsan-frowns" }, // RuMC
         { ":[", "chatsan-frowns" },
         { "=(", "chatsan-frowns" },
         { "=[", "chatsan-frowns" },
