@@ -21,7 +21,7 @@
 - type: radioChannel
   id: opfor
   name: chat-radio-opfor
-  keycode: "s"
+  keycode: "л"
   frequency: 1601
   color: "#bb91d8"
   longRange: true
@@ -30,7 +30,7 @@
 - type: radioChannel
   id: opforcommand
   name: chat-radio-opforcommand
-  keycode: "e" #z in cm13
+  keycode: "н" #z in cm13
   frequency: 1479
   color: "#5b96d4"
   longRange: true
@@ -39,7 +39,7 @@
 - type: radioChannel
   id: opforjtac
   name: chat-radio-opforjtac
-  keycode: "d" #z in cm13
+  keycode: "е" #z in cm13
   frequency: 1474
   color: "#ad3b98"
   longRange: true
@@ -48,7 +48,7 @@
 - type: radioChannel
   id: OpforIntel
   name: chat-radio-opforintel
-  keycode: "k"
+  keycode: "д"
   frequency: 1602
   color: "#e4860c"
   longRange: true
@@ -57,7 +57,7 @@
 - type: radioChannel
   id: OpforBravo
   name: chat-radio-opforbravo
-  keycode: "t"
+  keycode: "ъ"
   frequency: 1603
   color: "#c6c1a8"
   longRange: true
@@ -66,7 +66,7 @@
 - type: radioChannel
   id: OpforCharlie
   name: chat-radio-opforcharlie
-  keycode: "u"
+  keycode: "з"
   frequency: 1604
   color: "#bb44bd"
   longRange: true
@@ -75,7 +75,7 @@
 - type: radioChannel
   id: GovforIntel
   name: chat-radio-govforintel
-  keycode: "y"
+  keycode: "й"
   frequency: 1605
   color: "#e4860c"
   longRange: true
@@ -84,7 +84,7 @@
 - type: radioChannel
   id: GovforBravo
   name: chat-radio-govforbravo
-  keycode: "b"
+  keycode: "б"
   frequency: 1606
   color: "#c7b646"
   longRange: true
@@ -93,7 +93,7 @@
 - type: radioChannel
   id: GovforCharlie
   name: chat-radio-govforcharlie
-  keycode: "c"
+  keycode: "ч"
   frequency: 1607
   color: "#9D3EF0"
   longRange: true
@@ -126,7 +126,7 @@
 - type: radioChannel
   id: TWESOF
   name: chat-radio-twe
-  keycode: "q"
+  keycode: "-"
   frequency: 1557
   color: "#2e4f68"
   longRange: true
@@ -134,7 +134,7 @@
 - type: radioChannel
   id: ICSCSOF
   name: chat-radio-icsc
-  keycode: "g"
+  keycode: "="
   frequency: 1557
   color: "#2e4f68"
   longRange: true

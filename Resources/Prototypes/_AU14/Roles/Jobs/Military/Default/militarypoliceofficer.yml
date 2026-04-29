@@ -82,6 +82,3 @@
     ears2: AU14HeadsetSectionLeader
     outerClothing: AU14ArmorM3JungleThree
 
-- type: playTimeTracker
-  id: AU14JobGOVFORMilitaryPoliceMan
-  isHumanoid: true
