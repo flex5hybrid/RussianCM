@@ -107,7 +107,7 @@
       - id: CMBeltMedicalFilled
         name: M276 medical storage rig (Full)
       - id: CMBeltUtilityFilled
-        name: M276 Toolbelt Rig (Full)
+        name: пояс схемы M276 для инструментов (Заполненный)
     - name: Pouches
       choices: { CMPouch: 2 }
       entries:

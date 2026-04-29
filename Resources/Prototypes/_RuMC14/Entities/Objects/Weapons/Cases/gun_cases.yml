@@ -1,0 +1,85 @@
+- type: entity
+  parent: RMCCaseBase
+  id: RMCGunCaseBase
+  abstract: true
+  name: base gun case
+  description: A gun case.
+  components:
+  - type: RMCUnfoldCardboard
+    spawns:
+    - id: RMCSheetPlastic1
+
+- type: entity
+  abstract: true
+  parent: BaseStorageItem
+  id: RMCCaseBase
+  name: case
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _RMC14/Objects/Storage/guncase.rsi
+    layers:
+    - state: closed
+      map: [ base ]
+  - type: Icon
+    sprite: _RMC14/Objects/Storage/guncase.rsi
+    state: closed
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        base:
+          True: { state: open }
+          False: { state: closed }
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,27,1
+  - type: FixedItemSizeStorage
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno
+
+- type: entity
+  name: "storage item"
+  id: BaseStorageItem
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Storage
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+
+- type: entity
+  parent: RMCGunCaseBase
+  id: RuMCM54CMK1CaseSL
+  name: M54C assault rifle MK1 case
+  description: A gun case containing the M54C assault rifle MK1. It can only use proprietary MK1 magazines.
+  components:
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,11,1
+    whitelist:
+      tags:
+      - RMCWeaponRifleM54CMK1
+      - CMMagazineRifleM54CMK1
+      - RMCAttachmentS6ReflexSight
+      - RMCAttachmentU7UnderbarrelShotgun
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponRifleM54CMK1AP
+    - id: CMMagazineRifleM54CMK1
+    - id: CMMagazineRifleM54CMK1
+    - id: CMMagazineRifleM54CMK1
+    - id: RMCAttachmentS6ReflexSight
+    - id: RMCAttachmentU7UnderbarrelShotgun

@@ -15,7 +15,7 @@
     jobs:
     - CMFireteamLeader
     sections:
-    - name: Explosives
+    - name: Гранаты
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 18
@@ -39,7 +39,7 @@
     #  points: 5
     # -id: RMCElectroshockGrenadex3
     #  points: 16
-    - name: Primary Ammunition
+    - name: Основные боеприпасы
       entries:
       - id: CMMagazineRifleM4SPRAP
         points: 10
@@ -57,7 +57,7 @@
         points: 10
       - id: CMMagazineRifleM54CExt
         points: 10
-    - name: Sidearm Ammunition
+    - name: Боеприпасы к вторичному оружию
       entries:
       - id: RMCMagazinePistolM13Ext
         points: 6
@@ -73,40 +73,48 @@
         points: 5
       - id: RMCMagazinePistolSU6
         points: 10
-    - name: Restricted Firearms
+    - name: Огнестрельное оружие с ограниченным доступом.
       entries:
       - id: RMCGunCasePistolMK80
         points: 10
       - id: RMCGunCasePistolSmart
         points: 15
+      - id: RMCGunCaseRifleM54CE2
+        points: 30
       - id: RMCM85A1Case
         points: 30
-    - name: Armors
+    - name: Броня
       entries:
       - id: CMArmorB12
         points: 30
-    - name: Clothing Items
+    - name: Предметы одежды
       entries:
       - id: RMCBackpackRTO
         points: 5
       - id: RMCScabbardMacheteFilled
-        name: machete scabbard (Full)
+        name: ножны для мачете (Заполненные)
         points: 5
       - id: RMCPouchMacheteFilled
-        name: machete pouch (Full)
+        name: подсумок с мачете (Полный)
         points: 15
       - id: RMCWeldingGoggles
         points: 3
       - id: CMBeltUtilityCombat
         points: 15
       - id: RMCPouchAutoinjectorFill
-        name: autoinjector pouch (Full)
+        name: подсумок автоинъекторов (Заполненный)
         points: 15
+      - id: RMCPouchGeneralLarge
+        points: 15
+      - id: RMCPouchMagazineLarge
+        points: 10
+      - id: RMCPouchShotgunLarge
+        points: 10
       - id: CMHandsInsulated
         points: 3
       - id: CMHandsBlackInsulated
         points: 3
-    - name: Engineering Supplies
+    - name: Инженерные принадлежности
       entries:
       - id: RMCExplosivePlastic
         points: 10
@@ -114,11 +122,11 @@
         points: 5
       - id: RMCExplosiveBreachingCharge
         points: 10
-#      - id: ES-11 Mobile Fuel Canister
-#        points: 10
+      - id: RuMCFuelCanister
+        points: 10
       - id: CMWelderSmall
         points: 5
-    - name: Utilities
+    - name: Утилиты
       entries:
       - id: RMCMotionDetector
         points: 15
@@ -131,7 +139,7 @@
         points: 5
       - id: RMCWhistle
         points: 5
-    - name: Binoculars
+    - name: Бинокль
       entries:
       - id: RMCBinoculars
         points: 5
@@ -139,7 +147,7 @@
         points: 10
       - id: RMCLaserDesignator
         points: 15
-    - name: Helmet Optics
+    - name: Визор для шлема
       entries:
       - id: RMCVisorNightVision
         points: 30
@@ -148,7 +156,7 @@
         points: 15
       - id: RMCVisorWelding
         points: 5
-    - name: Radio Keys
+    - name: Радиоключи
       entries:
       - id: CMEncryptionKeyEngineer
         points: 5
@@ -176,7 +184,7 @@
     jobs:
     - CMFireteamLeader
     sections:
-    - name: Standard Equipment
+    - name: Стандартная экипировка
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleFireteamLeaderApparel
@@ -185,18 +193,19 @@
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
       - id: RMCVendorBundleCrewFireteamLeader
-    - name: Gloves
+    - name: Перчатки
       choices: { CMHands: 1 }
       entries:
       - id: CMHandsInsulated
       - id: CMHandsBlackInsulated
-    - name: Armor
+    - name: Броня
       choices: { CMArmor: 1 }
       entries:
       - id: CMArmorM4
         recommended: true
       - id: RMCArmorVestSquad
-    - name: Belt
+        name: сверхлёгкая броня М3-XL
+    - name: пояс
       choices: { CMBelt: 1 }
       entries:
       - id: RMCBeltUtilityGeneral
@@ -210,23 +219,24 @@
       - id: RMCM82FHolster
       - id: RMCM276ShotgunShellLoadingRig
       - id: CMBeltUtilityFilled
-        name: M276 pattern toolbelt rig (Full)
+        name: пояс схемы M276 для инструментов (Заполненный)
         recommended: true
       - id: RMCBeltGrenade
-    - name: Pouches
+    - name: подсумки
       choices: { RMCPouch: 2 }
       entries:
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: подсумок первой помощи (инъекторы)
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: подсумок первой помощи (бинт, мазь, инъектор трикордразина) # TODO RMC14 splints comma
         recommended: true
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: подсумок первой помощи (таблетки)
+        recommended: true
       - id: RMCPouchFirstResponder
       - id: RMCPouchFlareFilled
-        name: Flare pouch (Full)
+        name: подсумок фаеров (Заполненный)
       - id: RMCPouchFuelTank
       - id: RMCPouchGeneralLarge
       - id: RMCPouchSling
@@ -236,8 +246,8 @@
       - id: RMCPouchPistol
       - id: RMCPouchToolsFill
         recommended: true
-        name: Tools pouch (Full)
-    - name: Accessories
+        name: подсумок инструментов (Заполненный)
+    - name: Разгрузки
       choices: { CMAccessories: 1 }
       entries:
       - id: CMWebbingBlack
@@ -251,7 +261,7 @@
       - id: RMCWebbingDropPouchBlack
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
-    - name: Mask
+    - name: Маски
       choices: { CMMask: 1 }
       entries:
       - id: CMMaskGas

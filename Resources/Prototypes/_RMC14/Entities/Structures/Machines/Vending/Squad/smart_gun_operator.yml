@@ -15,18 +15,18 @@
     jobs:
     - CMSmartGunOperator
     sections:
-    - name: Smart Gun Set (Mandatory)
+    - name: Набор Оператора Смартгана (Обязательный)
       takeAll: CMSmartGunSet
       entries:
       - id: CMSmartGunOperatorEquipmentCase
-    - name: Gun Attachments
+    - name: Обвесы для пистолета
       choices: { CMGunAttachments: 1 }
       entries:
       - id: RMCAttachmentLaserSight
       - id: RMCAttachmentS5RedDotSight
       - id: RMCAttachmentS5MicroRedDotSight
       - id: RMCAttachmentS6ReflexSight
-    - name: Explosives
+    - name: Гранаты
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 30
@@ -46,7 +46,7 @@
         points: 20
       - id: RMCBoxClaymoreMineFilled
         points: 20
-    - name: Sidearm Ammunitions
+    - name: Боеприпасы к вторичному оружию
       entries:
       - id: RMCMagazinePistolM13Ext
         points: 6
@@ -62,13 +62,13 @@
         points: 5
       - id: RMCMagazinePistolSU6
         points: 10
-    - name: Restricted Firearms
+    - name: Огнестрельное оружие с ограниченным доступом
       entries:
       - id: RMCGunCasePistolMK80
         points: 15
       - id: RMCGunCasePistolSmart
         points: 15
-    - name: Clothing Items
+    - name: Предметы одежды
       entries:
       - id: RMCScabbardMacheteSGFilled
         points: 15
@@ -76,7 +76,7 @@
         points: 5
       - id: RMCPouchGeneralLarge
         points: 6
-    - name: Utilities
+    - name: Утилиты
       entries:
       - id: CMFireExtinguisherPortable
         points: 5
@@ -88,7 +88,7 @@
         points: 5
       - id: RMCPowerCellSmartgun
         points: 15
-    - name: Binoculars
+    - name: Бинокль
       entries:
       - id: RMCBinoculars
         points: 5
@@ -96,19 +96,19 @@
         points: 10
       - id: RMCLaserDesignator
         points: 15
-    - name: Helmet Optics
+    - name: Визор для шлема
       entries:
       - id: RMCVisorMedical
         points: 15
       - id: RMCVisorWelding
         points: 5
-    - name: Pamphlets
+    - name: Брошюры
       entries:
       - id: CMPamphletJTAC
         points: 15
       - id: CMPamphletEngineer
         points: 15
-    - name: Radio Keys
+    - name: Радиоключи
       entries:
       - id: CMEncryptionKeyEngineer
         points: 5
@@ -136,31 +136,32 @@
     jobs:
     - CMSmartGunOperator
     sections:
-    - name: Standard Equipment
+    - name: Стандартная экипировка
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleRiflemanApparel
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
-    - name: Belt
+    - name: Пояс
       choices: { CMBelt: 1 }
       entries:
       - id: CMBeltSmartGunOperatorFilled
       - id: RMCBeltSmartGunOperatorPistolFilled
-    - name: Pouches
+    - name: Подсумки
       choices: { RMCPouch: 2 }
       entries:
       - id: RMCPouchFlareFilled
-        name: Flare pouch (Full)
+        name: подсумок фаеров (Заполненный)
       - id: RMCPouchElectronics
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: подсумок первой помощи (инъекторы)
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: подсумок первой помощи (бинт, мазь, инъектор трикордразина) # TODO RMC14 splints comma
         recommended: true
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: подсумок первой помощи (таблетки)
+        recommended: true
         recommended: true
       - id: RMCPouchMagazinePistolLarge
         recommended: true
@@ -169,9 +170,9 @@
       - id: RMCPouchGeneralMedium
       - id: RMCPouchPistol
       - id: RMCPouchMacheteFilled
-        name: machete pouch (Full)
+        name: Подсумок с мачете (Заполненный)
       - id: RMCPouchSling
-    - name: Accessories
+    - name: Разгрузка
       choices: { CMAccessories: 1 }
       entries:
       - id: CMWebbingBrown
@@ -185,7 +186,7 @@
       - id: RMCWebbingDropPouchBlack
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
-    - name: Mask
+    - name: Маски
       choices: { CMMask: 1 }
       entries:
       - id: CMMaskGas

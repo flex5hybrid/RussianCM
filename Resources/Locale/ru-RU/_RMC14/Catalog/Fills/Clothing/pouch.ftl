@@ -1,8 +1,8 @@
-ent-RMCPouchGeneralLargeBureauObserverFill = большая общая сумка
-  .desc = Универсальная сумка, используемая для переноски предметов разного размера.
+ent-RMCPouchGeneralLargeBureauObserverFill = большой общий подсумок
+  .desc = Универсальный подсумок, используемая для переноски предметов разного размера.
 
-ent-RMCPouchGeneralLargeICBLiaison = большая общая сумка
-  .desc = Универсальная сумка, используемая для переноски предметов разного размера.
+ent-RMCPouchGeneralLargeICBLiaison = большой общий подсумок
+  .desc = Универсальный подсумок используемая для переноски предметов разного размера.
 
 ent-RMCPouchMagazineFilledMP5 = подсумок магазинов
   .desc = Он может содержать магазины.
@@ -19,13 +19,13 @@ ent-RMCPouchMagazineFilledKT42 = подсумок магазинов
 ent-RMCPouchMagazineFilledMAR40Ext = подсумок магазинов
   .desc = Он может содержать магазины.
 
-ent-RMCPouchMagazineLargeMP5 = большая подсумок магазинов
+ent-RMCPouchMagazineLargeMP5 = большой подсумок магазинов
   .desc = Он может содержать много магазинов.
 
-ent-RMCPouchMagazineType64 = большая подсумок магазинов
+ent-RMCPouchMagazineType64 = большой подсумок магазинов
   .desc = Он может содержать много магазинов.
 
-ent-RMCPouchMagazinePistolFilledMateba = Подсумок магазинов Mateba
+ent-RMCPouchMagazinePistolFilledMateba = Подсумок магазинов Матеба
   .desc = Он может нести магазины «Mateba и револьверные спидлоадеры.
 
 ent-RMCPouchShotgunFilledBuckshot = подсумок дроби
@@ -49,7 +49,7 @@ ent-RMCPouchFlareFilled = подсумок фаеров
 ent-RMCPouchFlareL96Filled = сумка-рассветная сумка L96
   .desc = Сумка, предназначенная для хранения сигнальных ракет, используемых Королевской морской пехотой.
 
-ent-RMCPouchElectronicsFill = подсуомк для электроники
+ent-RMCPouchElectronicsFill = подсумок для электроники
   .desc = Он предназначен для хранения большинства электронных устройств, силовых элементов и печатных плат.
 
 ent-RMCPouchToolsFill = подсумок инструментов
@@ -74,5 +74,5 @@ ent-RMCPouchSurvivalBlackFilled = сумка для выживания
   .desc = Сумка, выдаваемая колонистам на случай чрезвычайной ситуации.
 
 ent-RMCPouchSurvivalSynthFill = сумка для выживания синтетика
-  .desc = Аварийный мешочек для синтетиков на случай чрезвычайной ситуации.
+  .desc = Аварийный подсумок для синтетиков на случай чрезвычайных ситуаций.
 

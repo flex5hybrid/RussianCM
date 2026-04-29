@@ -1,0 +1,71 @@
+- type: entity
+  parent: RMCBeakerBaseMetallic
+  id: RuMCFuelCanister
+  name: ES-11 mobile fuel canister
+  description: A compact fuel tank for storing and transferring welding fuel.
+  suffix: Fuel
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Objects/Tanks/minitank.rsi
+    layers:
+    - state: icon
+    - state: minitank1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+
+  - type: Item
+    size: Small
+    sprite: _RuMC14/Objects/Tanks/minitank.rsi
+
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        maxVol: 180
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 180
+        reagentWhitelist:
+          - WeldingFuel
+
+
+  - type: SolutionContainerVisuals
+    maxFillLevels: 5
+    fillBaseName: minitank
+
+  - type: StaticPrice
+    price: 20
+
+  - type: Tag
+    tags:
+    - RMCMiniTank
+    - RMCTankFuel
+    - ChemDispensable
+
+  - type: ReagentTank
+    tankType: Fuel
+
+  - type: DrainableSolution
+    solution: tank
+
+  - type: RefillableSolution
+    solution: tank
+
+  - type: ExaminableSolution
+    solution: tank
+
+  - type: SolutionTransfer
+    transferAmount: 30
+    maxTransferAmount: 180
+    canChangeTransferAmount: true
+    transferAmounts:
+    - 10
+    - 20
+    - 30
+    - 60
+    - 90
+    - 120
+    - 180
+
+  - type: PhysicalComposition
+    materialComposition:
+      CMSteel: 500

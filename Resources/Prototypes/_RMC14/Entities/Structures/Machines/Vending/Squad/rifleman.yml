@@ -18,38 +18,35 @@
       entries:
       - id: CMVendorBundleRiflemanApparel
       - id: CMMRE
-        name: MRE
       #- id: CMMap # TODO: Make a map
-    - name: Armor
-      choices: { CMArmour: 1 }
+    - name: Броня
+      choices: { CMArmor: 1 }
       entries:
       - id: RMCArmorVestSquad
-        name: armor vest
+        name: сверхлёгкая броня М3-XL
       - id: RMCArmorM3LightVariants
-        name: light armor
+        name: лёгкая броня
       - id: RMCArmorM3MediumVariants
-        name: medium armor
+        name: средняя броня
         recommended: true
       - id: RMCArmorM3HeavyVariants
-        name: heavy armor
-    - name: Backpack
+        name: тяжёлая броня
+    - name: Рюкзаки
       choices: { CMBackpack: 1 }
       entries:
       - id: CMBackpackMarine
         replaceSlot: back
-        name: backpack
       - id: CMSatchelMarine
         replaceSlot: back
-        name: satchel
         recommended: true
       - id: RMCScabbardShotgun
-    - name: Belt
+    - name: Пояс
       choices: { CMBelt: 1 }
       entries:
       - id: CMBeltMarine
         recommended: true
       - id: CMBeltKnifeFilled
-        name: M276 knife rig (Full)
+        name: M276 пояс с ножами (Заполненный)
       - id: RMCBeltHolsterPistol
       - id: RMCBeltHolsterRevolver
       - id: RMCBeltHolsterSMG
@@ -59,22 +56,22 @@
       - id: CMBeltUtility
       - id: RMCBeltUtilityGeneral
       - id: RMCBeltGrenade
-    - name: Pouches
+    - name: Подсумки
       choices: { RMCPouch: 2 }
       entries:
       - id: RMCPouchBayonetFill
-        name: bayonet sheath (Full)
+        name: подсумок ножей (Заполненный)
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: подсумок первой помощи (инъекторы)
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: подсумок первой помощи (бинт, мазь, инъектор трикордразина) # TODO RMC14 splints comma
         recommended: true
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: подсумок первой помощи (таблетки)
         recommended: true
       - id: RMCPouchFlareFilled
-        name: Flare pouch (Full)
+        name: подсумок фаеров (Заполненный)
         recommended: true
       - id: RMCPouchDocumentSmall
       - id: RMCPouchMagazine
@@ -82,24 +79,24 @@
       - id: RMCPouchGeneral
       - id: RMCPouchMagazinePistol
       - id: RMCPouchPistol
-    - name: Mask
+    - name: Маски
       choices: { CMMask: 1 }
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif
       - id: RMCMaskRebreather
-    - name: Engineering Supplies
+    - name: Инженерные принадлежности
       entries:
       - id: CMEntrenchingTool
         points: 5
       - id: CMSandbagEmpty25
         name: sandbags x25
         points: 20
-#      - id: ES-11 Mobile Fuel Canister
-#        points: 5
+      - id: RuMCFuelCanister
+        points: 6
       - id: CMWelderSmall
         points: 5
-    - name: Restricted Firearms
+    - name: Огнестрельное оружие с ограниченным доступом
       entries:
       - id: RMCGunCasePistolMK80
         points: 15
@@ -107,7 +104,7 @@
         points: 15
       - id: RMCM85A1Case
         points: 30
-    - name: Explosives
+    - name: Гранаты
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 20
@@ -127,7 +124,7 @@
         points: 15
       - id: RMCBoxClaymoreMineFilled
         points: 20
-    - name: Primary Ammunition
+    - name: Основные боеприпасы
       entries:
       - id: CMMagazineRifleM4SPRAP
         points: 10
@@ -145,7 +142,7 @@
         points: 10
       - id: CMMagazineRifleM54CExt
         points: 10
-    - name: Sidearm Ammunition
+    - name: Боеприпасы к вторичному оружию
       entries:
       - id: RMCMagazinePistolM13Ext
         points: 6
@@ -161,13 +158,13 @@
         points: 5
       - id: RMCMagazinePistolSU6
         points: 10
-    - name: Armors
+    - name: Броня
       entries:
       - id: CMArmorB12
         points: 30
       - id: CMArmorM4
         points: 20
-    - name: Clothing Items
+    - name: Предметы одежды
       entries:
       - id: CMWebbing
         points: 10
@@ -190,10 +187,10 @@
       - id: RMCWebbingHolsterBlack
         points: 15
       - id: RMCScabbardMacheteFilled
-        name: machete scabbard (Full)
+        name: ножны для мачете (Заполненные)
         points: 15
       - id: RMCPouchMacheteFilled
-        name: machete pouch (Full)
+        name: подсумок с мачете (Заполненный)
         points: 15
       - id: RMCBackpackRTO
         replaceSlot: back
@@ -206,7 +203,11 @@
         points: 15
       - id: RMCPouchGeneralLarge
         points: 15
-    - name: Utilities
+      - id: RMCPouchMagazineLarge
+        points: 15
+      - id: RMCPouchShotgunLarge
+        points: 15
+    - name: Утилиты
       entries:
       - id: CMRollerBedSpawnFolded
         points: 5
@@ -220,7 +221,7 @@
         points: 15
       - id: RMCWhistle
         points: 5
-    - name: Binoculars
+    - name: Бинокль
       entries:
       - id: RMCBinoculars
         points: 5
@@ -228,19 +229,21 @@
         points: 10
       - id: RMCLaserDesignator
         points: 15
-    - name: Helmet Optics
+    - name: Визор для шлема
       entries:
       - id: RMCVisorMedical
         points: 15
       - id: RMCVisorWelding
         points: 5
-    - name: Pamphlets
+    - name: Брошюры
       entries:
       - id: CMPamphletJTAC
         points: 15
       - id: CMPamphletEngineer
         points: 15
-    - name: Radio Keys
+      - id: CMPamphletPowerloader
+        points: 45
+    - name: Радиоключи
       entries:
       - id: CMEncryptionKeyEngineer
         points: 5
