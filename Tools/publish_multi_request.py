@@ -15,7 +15,7 @@ RELEASE_DIR = "release"
 # CONFIGURATION PARAMETERS
 # Forks should change these to publish to their own infrastructure.
 #
-ROBUST_CDN_URL = "https://neonify.ru/"
+ROBUST_CDN_URL = "https://cdn.rumc.dev/"
 FORK_ID = "rumc"
 
 def main():
