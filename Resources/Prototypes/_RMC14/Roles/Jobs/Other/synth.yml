@@ -114,7 +114,6 @@
     onlyHalf: true
     alert: SynthNightVision
   - type: EyeProtection
-  - type: WoundableUntreatable
   - type: Insulated
   - type: RMCLeapProtection
     inherentStunDuration: 3
@@ -134,10 +133,13 @@
   - type: Thirst
   - type: Perishable
   - type: ThermalRegulator
+  - type: Temperature
   - type: Stamina
   - type: DamageForceSay
   - type: Dna
   - type: InjectableSolution
   - type: IVDripTarget
+  - type: Woundable
+  - type: Wounded
   - type: RMCSuicide
     damage: { }
