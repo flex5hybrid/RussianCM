@@ -284,15 +284,15 @@
     - name: Liquid bottles
       entries:
       - id: CMBottleBicaridine
-        amount: 16
+        amount: 6
       - id: CMBottleDylovene
-        amount: 12
+        amount: 6
       - id: CMBottleDexalin
-        amount: 8
+        amount: 6
       - id: CMBottleInaprovaline
-        amount: 8
+        amount: 6
       - id: CMBottleKelotane
-        amount: 14
+        amount: 6
 #      - id: CMBottleOxycodone # TODO RMC14
 #        amount: 6
 #      - id: CMBottlePeridaxon # TODO RMC14
@@ -303,16 +303,16 @@
       entries:
       - id: CMBeaker
         name: Beaker (60 units)
-        amount: 10
+        amount: 3
       - id: CMBeakerLarge
         name: Beaker, Large (120 units)
-        amount: 6
+        amount: 3
       - id: RMCBoxPillCanister
-        amount: 5
+        amount: 2
       - id: RMCDropper
-        amount: 5
+        amount: 3
       - id: CMSyringe
-        amount: 12
+        amount: 7
 
 
 - type: entity

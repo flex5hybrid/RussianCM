@@ -36,6 +36,7 @@
   id: AU14JobFORECONKillTeamSniper
   name: FORECON Sniper (Kill Team)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: SquadFORECON

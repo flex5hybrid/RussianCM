@@ -49,6 +49,7 @@
   id: AU14JobFORECONFirstReconCorpsman
   name: FORECON Corpsman (3rd party)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadFirstRecon

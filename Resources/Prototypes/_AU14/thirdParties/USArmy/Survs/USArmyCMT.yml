@@ -48,6 +48,7 @@
   id: AU14JobUSArmyCMT
   name: US Army Combat Medical Technician (Surv)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadUSArmy

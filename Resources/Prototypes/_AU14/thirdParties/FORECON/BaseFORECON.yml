@@ -4,6 +4,7 @@
   abstract: true
   suffix: AU14, UA, FORECON
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: RandomHumanoidAppearance
   - type: RandomHumanoidAppearanceWhitelisted

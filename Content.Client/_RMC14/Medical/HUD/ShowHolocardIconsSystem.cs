@@ -1,5 +1,4 @@
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using Content.Client.Overlays;
 using Content.Shared._RMC14.Medical.HUD;
 using Content.Shared._RMC14.Medical.HUD.Components;
@@ -17,12 +16,6 @@ public sealed class ShowHolocardIconsSystem : EquipmentHudSystem<HolocardScanner
     private static readonly ProtoId<HealthIconPrototype> Emergency = "EmergencyHolocardIcon";
     private static readonly ProtoId<HealthIconPrototype> Xeno = "XenoHolocardIcon";
     private static readonly ProtoId<HealthIconPrototype> Permadead = "PermaHolocardIcon";
-    private static readonly ProtoId<HealthIconPrototype> Stable = "StableHolocardIcon";
-    private static readonly ProtoId<HealthIconPrototype> Trauma = "TraumaHolocardIcon";
-    private static readonly ProtoId<HealthIconPrototype> OrganFailure = "OrganFailureHolocardIcon";
-
-    private readonly Dictionary<HolocardStatus, StatusIconData> _iconByStatus = new();
-    private bool _iconsCached;
 
     public override void Initialize()
     {
@@ -31,46 +24,25 @@ public sealed class ShowHolocardIconsSystem : EquipmentHudSystem<HolocardScanner
         SubscribeLocalEvent<HolocardStateComponent, GetStatusIconsEvent>(OnGetStatusIconsEvent);
     }
 
-    private void EnsureIconsCached()
-    {
-        if (_iconsCached)
-            return;
-        _iconsCached = true;
-
-        Cache(HolocardStatus.Urgent, Urgent);
-        Cache(HolocardStatus.Emergency, Emergency);
-        Cache(HolocardStatus.Xeno, Xeno);
-        Cache(HolocardStatus.Permadead, Permadead);
-        Cache(HolocardStatus.Stable, Stable);
-        Cache(HolocardStatus.Trauma, Trauma);
-        Cache(HolocardStatus.OrganFailure, OrganFailure);
-
-        void Cache(HolocardStatus status, ProtoId<HealthIconPrototype> id)
-        {
-            if (_prototypes.TryIndex(id, out var proto))
-                _iconByStatus[status] = proto;
-        }
-    }
-
     private void OnGetStatusIconsEvent(Entity<HolocardStateComponent> entity, ref GetStatusIconsEvent args)
     {
         if (!IsActive)
             return;
 
-        EnsureIconsCached();
+        var holocardIcons = GetIcons(entity);
 
-        if (_iconByStatus.TryGetValue(entity.Comp.HolocardStatus, out var icon))
-            args.StatusIcons.Add(icon);
+        args.StatusIcons.AddRange(holocardIcons);
     }
 
     public IReadOnlyList<StatusIconData> GetIcons(Entity<HolocardStateComponent> entity)
     {
-        EnsureIconsCached();
-
-        if (_iconByStatus.TryGetValue(entity.Comp.HolocardStatus, out var icon))
-            return new[] { icon };
-
-        return Array.Empty<StatusIconData>();
+        var icons = new List<StatusIconData>();
+        if (TryGetHolocardData(entity.Comp.HolocardStatus, out var holocardData) && holocardData.HolocardIcon != null)
+        {
+            var holocardIconPrototype = _prototypes.Index(holocardData.HolocardIcon.Value);
+            icons.Add(holocardIconPrototype);
+        }
+        return icons;
     }
 
     public bool TryGetHolocardData(HolocardStatus holocardStatus, out HolocardData data)
@@ -97,18 +69,6 @@ public sealed class ShowHolocardIconsSystem : EquipmentHudSystem<HolocardScanner
             case HolocardStatus.Permadead:
                 data.HolocardIcon = Permadead;
                 data.Description = Loc.GetString("hc-permadead-description");
-                break;
-            case HolocardStatus.Stable:
-                data.HolocardIcon = Stable;
-                data.Description = Loc.GetString("cmu-medical-holocard-stable-desc");
-                break;
-            case HolocardStatus.Trauma:
-                data.HolocardIcon = Trauma;
-                data.Description = Loc.GetString("cmu-medical-holocard-trauma-desc");
-                break;
-            case HolocardStatus.OrganFailure:
-                data.HolocardIcon = OrganFailure;
-                data.Description = Loc.GetString("cmu-medical-holocard-organ-failure-desc");
                 break;
             default:
                 data = default;
@@ -138,15 +98,6 @@ public sealed class ShowHolocardIconsSystem : EquipmentHudSystem<HolocardScanner
             case HolocardStatus.Permadead:
                 holocardName = Loc.GetString("hc-permadead-name");
                 break;
-            case HolocardStatus.Stable:
-                holocardName = Loc.GetString("cmu-medical-holocard-stable");
-                break;
-            case HolocardStatus.Trauma:
-                holocardName = Loc.GetString("cmu-medical-holocard-trauma");
-                break;
-            case HolocardStatus.OrganFailure:
-                holocardName = Loc.GetString("cmu-medical-holocard-organ-failure");
-                break;
             default:
                 return false;
         }
@@ -169,15 +120,6 @@ public sealed class ShowHolocardIconsSystem : EquipmentHudSystem<HolocardScanner
                 break;
             case HolocardStatus.Permadead:
                 holocardColor = Color.Black;
-                break;
-            case HolocardStatus.Stable:
-                holocardColor = Color.LightGreen;
-                break;
-            case HolocardStatus.Trauma:
-                holocardColor = Color.Orange;
-                break;
-            case HolocardStatus.OrganFailure:
-                holocardColor = Color.Red;
                 break;
             default:
                 return false;

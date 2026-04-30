@@ -72574,6 +72574,9 @@ entities:
       inSlot: head
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
   - uid: 60
     components:
     - type: Transform
@@ -72594,6 +72597,9 @@ entities:
       inSlot: head
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
 - proto: AU14CivFedoraTan
   entities:
   - uid: 67
@@ -86422,6 +86428,9 @@ entities:
       inSlot: jumpsuit
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
 - proto: CMLockerBase
   entities:
   - uid: 121
@@ -86759,6 +86768,9 @@ entities:
       parent: 2257
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 2259
     components:
@@ -86766,6 +86778,9 @@ entities:
       parent: 2257
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 2260
     components:
@@ -86773,6 +86788,9 @@ entities:
       parent: 2257
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 2261
     components:
@@ -86780,6 +86798,9 @@ entities:
       parent: 2257
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 2262
     components:
@@ -86787,6 +86808,9 @@ entities:
       parent: 2257
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 2263
     components:
@@ -86794,6 +86818,9 @@ entities:
       parent: 2257
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 2264
     components:
@@ -86801,6 +86828,9 @@ entities:
       parent: 2257
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 2265
     components:
@@ -86808,6 +86838,9 @@ entities:
       parent: 2257
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 2266
     components:
@@ -86815,6 +86848,9 @@ entities:
       parent: 2257
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 2267
     components:
@@ -86822,6 +86858,9 @@ entities:
       parent: 2257
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 2268
     components:
@@ -86829,6 +86868,9 @@ entities:
       parent: 2257
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
 - proto: CMMatchBook
   entities:
@@ -122579,6 +122621,9 @@ entities:
       parent: 8905
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
 - proto: RMCAttachmentM63Stock
   entities:
@@ -122603,6 +122648,9 @@ entities:
       parent: 8905
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
 - proto: RMCBarrelBlue
   entities:
@@ -127183,6 +127231,9 @@ entities:
       parent: 8905
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 8909
     components:
@@ -127190,6 +127241,9 @@ entities:
       parent: 8905
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 8910
     components:
@@ -127197,6 +127251,9 @@ entities:
       parent: 8905
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 8911
     components:
@@ -127204,6 +127261,9 @@ entities:
       parent: 8905
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 9743
     components:
@@ -137318,6 +137378,9 @@ entities:
       inSlot: outerClothing
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
 - proto: RMCJumpsuitBlueWorkwear
   entities:
   - uid: 11354
@@ -337771,6 +337834,9 @@ entities:
           endTime: 13902.8860975
           startTime: 13902.4860975
           length: 0.4
+    - type: RMCRecentlyVended
+      preventCollide:
+      - invalid
     - type: InsideEntityStorage
   - uid: 8913
     components:

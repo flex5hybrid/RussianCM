@@ -56,6 +56,7 @@
   id: AU14JobUSArmyTrooperArmored
   name: US Army Trooper (ERT)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadUSArmy32nd

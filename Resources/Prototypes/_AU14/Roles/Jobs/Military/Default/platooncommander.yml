@@ -7,7 +7,7 @@
   canBeAntag: false
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 36000 # 10 hours
+    time: 18000 # 5 hours
   - !type:AgeRequirement
     requiredAge: 30
   - !type:TraitsRequirement
@@ -19,11 +19,11 @@
     - NonResuscitable
     - Epilepsy
   ranks:
-    RMCRankMajor:
+    RMCRankCaptain:
     - !type:RoleTimeRequirement
       role: AU14JobGOVFORPlatCo
       time: 360000 # 100 hours
-    RMCRankCaptain: []
+    RMCRankFirstLT: []
   startingGear: AU14GearGOVFORPlatCo
   dummyStartingGear: AU14GearGOVFORPlatCoDummy
   icon: "AU14JobIconPlatCo"

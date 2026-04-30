@@ -572,7 +572,6 @@
       sprite: _RMC14/Objects/Weapons/Guns/Attachments/under.rsi
       state: grenade-on
   - type: AttachableVisuals
-    offset: 0.08, 0.06
     redrawOnAppearanceChange: true
   - type: Tag
     tags:
@@ -616,7 +615,7 @@
       sprite: _RMC14/Objects/Weapons/Guns/Attachments/under.rsi
       state: grenade-mk1-on
   - type: AttachableVisuals
-    offset: -0.01, 0.285
+    offset: -0.1, 0.218
   - type: Tag
     tags:
     - RMCAttachmentUnderbarrel

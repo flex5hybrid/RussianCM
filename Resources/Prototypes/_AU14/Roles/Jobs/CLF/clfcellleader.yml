@@ -8,7 +8,7 @@
   playTimeTracker: AU14JobCLFCellLeader
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 36000 # 10 hours
+    time: 18000 # 5 hours
   - !type:TraitsRequirement
     inverted: true
     traits:

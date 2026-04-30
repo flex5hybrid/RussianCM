@@ -46,6 +46,7 @@
   id: AU14JobFORECONSpotterDetachment
   name: FORECON Spotter (Detachment)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: SquadFORECON

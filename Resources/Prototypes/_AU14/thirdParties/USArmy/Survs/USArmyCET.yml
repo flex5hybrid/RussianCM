@@ -47,6 +47,7 @@
   id: AU14JobUSArmyCET
   name: US Army Combat Engineer Technician (Surv)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadUSArmy

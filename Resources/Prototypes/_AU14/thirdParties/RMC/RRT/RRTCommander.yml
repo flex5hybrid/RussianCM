@@ -59,6 +59,7 @@
   id: AU14JobRMCRRTCommander
   name: RMC reaction troop commander
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadRMCRRT

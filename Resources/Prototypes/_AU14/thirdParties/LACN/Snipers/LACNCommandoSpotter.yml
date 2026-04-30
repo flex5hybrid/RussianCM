@@ -44,6 +44,7 @@
   id: AU14JobCommandoSniperTeamSpotter
   name: LACN Commando Spotter (3rd party)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadLACNCommando

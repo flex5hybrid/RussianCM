@@ -58,6 +58,7 @@
   id: AU14JobUACGLostSquadLeader
   name: Lost Squad Leader
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadUACG

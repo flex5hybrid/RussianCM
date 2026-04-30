@@ -65,6 +65,7 @@
   id: NSPAInvestigationPartyJobInspector
   name: NSPA Inspector
   components:  
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
   - type: GhostRole

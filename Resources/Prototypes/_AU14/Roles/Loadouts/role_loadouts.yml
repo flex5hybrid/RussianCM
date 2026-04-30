@@ -434,9 +434,6 @@
   id: JobAU14JobGOVFORMilitaryDoctor
   points: 7
   groups:
-  - GOVFORDoctorEquipmentAU14
-  - GOVFORDoctorUniformAU14
-  - MedJacketMilitaryAU14
   - EyewearRMCPVE
   - MasksRMCPVE
   - HeadwearRMCPVE
@@ -445,6 +442,7 @@
   - RecreationalRMC
   - CannedDrinksAU14
   - SmokablesRMC
+  - WeaponsRMC
 
 - type: roleLoadout
   id: JobAU14JobGOVFORadvisor

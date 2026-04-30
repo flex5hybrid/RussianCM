@@ -44,6 +44,7 @@
   id: AU14JobUPPGROMMachinegunner
   name: UPP GROM Machinegunner
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadGROM

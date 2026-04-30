@@ -45,6 +45,7 @@
   id: NSPAInvestigationPartyJobICCLiaison
   name: Interstellar Commerce Commission Liaison
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
   - type: GhostRole

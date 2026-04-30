@@ -39,6 +39,7 @@
   id: AU14JobFORECONMarksmanDetachment
   name: FORECON Marksman (Detachment)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: SquadFORECON

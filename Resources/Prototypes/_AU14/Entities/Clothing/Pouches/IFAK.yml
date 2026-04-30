@@ -9,7 +9,7 @@
   - type: Storage
     maxItemSize: Large
     grid:
-    - 0,0,13,1 #4 slots
+    - 0,0,9,1 #4 slots
     whitelist:
       tags:
       - DiscreteHealthAnalyzer
@@ -34,8 +34,6 @@
       - Hypospray
       components:
       - Hypospray
-      - CMUSplintItem
-      - SpawnItemsOnUse
   - type: FixedItemSizeStorage
 
 - type: entity
@@ -45,10 +43,8 @@
   components:
   - type: StorageFill
     contents:
-    - id: AU14HemostaticGauzePacket
     - id: AU14Tourniquet
-    - id: AU14Tourniquet
+    - id: AU14HemostaticGauze
+    - id: CMOintment10
+    - id: AU14FirstAidAutoInjectorNoSkill
     - id: CMPacketPillsTricordrazine
-    - id: AU14PacketPillsTramadol
-    - id: CMUSplintItem
-    - id: CMUSplintItem

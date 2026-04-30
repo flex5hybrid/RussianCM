@@ -44,6 +44,7 @@
   id: AU14JobUSArmyTankGunner
   name: US Army Tank Gunner
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadUSArmy32nd

@@ -12,7 +12,7 @@ public sealed partial class FootPrintComponent : Component
     [DataField]
     public string SolutionName = "step";
 
-    [ViewVariables(VVAccess.ReadOnly)]
+    [DataField]
     public Entity<SolutionComponent>? Solution;
 
     /// <summary>

@@ -53,6 +53,7 @@
   id: AU14JobIPIELawyer
   name: WY IPIE Lawyer (3rd party)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: SquadPMC
@@ -78,6 +79,7 @@
     canUseGuns: true
     hideGeneration: true
     useHumanHealthIcons: true
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: SquadPMC

@@ -87,6 +87,7 @@
   id: AU14JobUSArmySynth
   name: US Army Synthetic (Surv)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadUSArmy

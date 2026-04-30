@@ -37,6 +37,7 @@
   id: AU14JobPizzaDeliveryBoy
   name: Pizza Delivery Boy
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
   - type: GhostRole

@@ -1,7 +1,6 @@
 using Content.Shared.CCVar;
 using Content.Shared.StatusEffectNew;
 using Robust.Shared.Configuration;
-using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
@@ -17,7 +16,6 @@ public sealed class SSDIndicatorSystem : EntitySystem
 
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly SharedStatusEffectsSystem _statusEffects = default!;
 
     private bool _icSsdSleep;
@@ -75,10 +73,7 @@ public sealed class SSDIndicatorSystem : EntitySystem
     {
         base.Update(frameTime);
 
-        // Sleep is server-authoritative and networked back to clients via the status effect entity.
-        // Running this on the client just churns prediction (it spawns the predicted effect each frame
-        // until the server's confirmation lands).
-        if (!_net.IsServer || !_icSsdSleep)
+        if (!_icSsdSleep)
             return;
 
         var query = EntityQueryEnumerator<SSDIndicatorComponent>();
@@ -90,13 +85,7 @@ public sealed class SSDIndicatorSystem : EntitySystem
                 ssd.FallAsleepTime <= _timing.CurTime &&
                 !TerminatingOrDeleted(uid))
             {
-                if (!_statusEffects.TrySetStatusEffectDuration(uid, StatusEffectSSDSleeping, null))
-                    continue;
-
-                // Don't keep retrying every tick once the effect is applied — TrySetStatusEffectDuration
-                // walks ActiveStatusEffects on the target every call. Reset on PlayerDetached.
-                ssd.FallAsleepTime = TimeSpan.MaxValue;
-                Dirty(uid, ssd);
+                _statusEffects.TrySetStatusEffectDuration(uid, StatusEffectSSDSleeping, null);
             }
         }
     }

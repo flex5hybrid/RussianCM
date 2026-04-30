@@ -2304,6 +2304,7 @@ entities:
           showEnts: False
           occludes: True
           ents:
+          - 122
           - 121
         paper_label: !type:ContainerSlot
           showEnts: False
@@ -2526,7 +2527,7 @@ entities:
       desc: Hey! I think you left this back at Black Mesa!
       name: particular crowbar
     - type: Transform
-      parent: 120
+      parent: 220
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -3629,7 +3630,7 @@ entities:
   - uid: 131
     components:
     - type: Transform
-      parent: 130
+      parent: 230
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -36163,7 +36164,7 @@ entities:
   - uid: 149
     components:
     - type: Transform
-      parent: 148
+      parent: 248
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -39088,7 +39089,7 @@ entities:
   - uid: 124
     components:
     - type: Transform
-      parent: 123
+      parent: 223
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -39516,14 +39517,14 @@ entities:
   - uid: 137
     components:
     - type: Transform
-      parent: 136
+      parent: 236
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
   - uid: 142
     components:
     - type: Transform
-      parent: 141
+      parent: 241
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -39863,7 +39864,7 @@ entities:
   - uid: 125
     components:
     - type: Transform
-      parent: 123
+      parent: 223
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -39936,7 +39937,7 @@ entities:
   - uid: 140
     components:
     - type: Transform
-      parent: 139
+      parent: 239
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -43806,7 +43807,7 @@ entities:
   - uid: 128
     components:
     - type: Transform
-      parent: 127
+      parent: 227
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -44326,7 +44327,7 @@ entities:
   - uid: 126
     components:
     - type: Transform
-      parent: 123
+      parent: 223
     - type: Physics
       canCollide: False
     - type: UseDelay

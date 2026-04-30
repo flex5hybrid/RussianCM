@@ -156,6 +156,7 @@
   id: AU14JobWYPMCPartyContractor
   name: WY PMC Party Contractor (3rd party, M41A/2)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: SquadPMC
@@ -176,6 +177,7 @@
   id: AU14JobWYPMCPartyContractorM39B2
   name: WY PMC Party Contractor (3rd party, M39B/2)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: SquadPMC
@@ -196,6 +198,7 @@
   id: AU14JobWYPMCPartyContractorNSG23
   name: WY PMC Party Contractor (3rd party, NSG-23)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: SquadPMC
@@ -216,6 +219,7 @@
   id: AU14JobWYPMCPartyContractorM42A
   name: WY PMC Party Sniper (3rd party, M42A)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: SquadPMC

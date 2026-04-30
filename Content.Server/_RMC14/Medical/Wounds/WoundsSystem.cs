@@ -1,4 +1,4 @@
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 using Content.Server.Body.Systems;
 using Content.Shared._RMC14.Damage;
 using Content.Shared._RMC14.Medical.Wounds;
@@ -6,8 +6,6 @@ using Content.Shared.Body.Components;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
 using Content.Shared.FixedPoint;
-using Content.Shared.Mobs;
-using Content.Shared.Mobs.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
@@ -15,8 +13,6 @@ namespace Content.Server._RMC14.Medical.Wounds;
 
 public sealed class WoundsSystem : SharedWoundsSystem
 {
-    private static readonly TimeSpan DeadWoundUpdateCooldown = TimeSpan.FromSeconds(10);
-
     [Dependency] private readonly BloodstreamSystem _bloodstream = default!;
     [Dependency] private readonly SharedRMCDamageableSystem _rmcDamageable = default!;
     [Dependency] private readonly DamageableSystem _damageable = default!;
@@ -27,25 +23,13 @@ public sealed class WoundsSystem : SharedWoundsSystem
 
     private EntityQuery<BloodstreamComponent> _bloodstreamQuery;
     private EntityQuery<DamageableComponent> _damageableQuery;
-    private EntityQuery<MobStateComponent> _mobStateQuery;
 
     public override void Initialize()
     {
         base.Initialize();
 
-        SubscribeLocalEvent<WoundedComponent, MobStateChangedEvent>(OnWoundedMobStateChanged);
-
         _bloodstreamQuery = GetEntityQuery<BloodstreamComponent>();
         _damageableQuery = GetEntityQuery<DamageableComponent>();
-        _mobStateQuery = GetEntityQuery<MobStateComponent>();
-    }
-
-    private void OnWoundedMobStateChanged(Entity<WoundedComponent> ent, ref MobStateChangedEvent args)
-    {
-        if (args.NewMobState == MobState.Dead)
-            return;
-
-        ent.Comp.UpdateAt = _timing.CurTime;
     }
 
     public override void Update(float frameTime)
@@ -59,20 +43,8 @@ public sealed class WoundsSystem : SharedWoundsSystem
             if (time < comp.UpdateAt)
                 continue;
 
-            var dead = _mobStateQuery.TryComp(uid, out var mobState) &&
-                       mobState.CurrentState == MobState.Dead;
-            comp.UpdateAt = time + (dead ? DeadWoundUpdateCooldown : comp.UpdateCooldown);
-
-            if (dead)
-            {
-                if (_bloodstreamQuery.TryComp(uid, out var deadBloodstream) &&
-                    deadBloodstream.BleedAmount > 0)
-                {
-                    _bloodstream.TryModifyBleedAmount(uid, -deadBloodstream.BleedAmount);
-                }
-
-                continue;
-            }
+            comp.UpdateAt = time + comp.UpdateCooldown;
+            Dirty(uid, comp);
 
             _passiveDamage.DamageDict.Clear();
             _toRemove.Clear();
@@ -130,13 +102,7 @@ public sealed class WoundsSystem : SharedWoundsSystem
             }
 
             if (comp.Wounds.Count == 0)
-            {
                 RemCompDeferred<WoundedComponent>(uid);
-            }
-            else if (_toRemove.Count > 0)
-            {
-                Dirty(uid, comp);
-            }
 
             if (_bloodstreamQuery.TryComp(uid, out var bloodstream))
             {

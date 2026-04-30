@@ -360,7 +360,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: CMShellShotgunBuckshot
+    - id: CMShellShotgunBeanbag
       amount: 7
 
 # Large Documents Pouch

@@ -14,7 +14,7 @@
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
     resetOnHandSelected: false
   - type: GunIFF
-    enabled: false
+    enabled: true
   - type: RMCSelectiveFire
     baseFireModes:
     - SemiAuto

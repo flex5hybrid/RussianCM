@@ -193,7 +193,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - RMCGrenadeAGMF
+      - RMC40MMGrenadeM74AGMF
     proto: RMC40MMGrenadeM74AGMF
     capacity: 15
     deleteWhenEmpty: false
@@ -220,7 +220,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - RMCGrenadeAGMH
+      - RMCHornetShellM74AGMS
     proto: RMCHornetShellM74AGMS
     capacity: 15
     deleteWhenEmpty: false
@@ -247,7 +247,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - RMCGrenadeAGMS
+      - RMC40MMGrenadeM74AGMS
     proto: RMC40MMGrenadeM74AGMS
     capacity: 15
     deleteWhenEmpty: false

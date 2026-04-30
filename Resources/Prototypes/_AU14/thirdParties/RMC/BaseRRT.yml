@@ -4,6 +4,7 @@
   id: AU14BaseMobSpeciesOrganicRMCRRT
   abstract: true
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: RandomHumanoidAppearance
   - type: RandomHumanoidAppearanceWhitelisted

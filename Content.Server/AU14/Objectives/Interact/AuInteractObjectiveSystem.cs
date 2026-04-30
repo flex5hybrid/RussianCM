@@ -15,17 +15,15 @@ namespace Content.Server.AU14.Objectives.Interact;
 /// </summary>
 public sealed class AuInteractObjectiveSystem : EntitySystem
 {
-    [Robust.Shared.IoC.Dependency] private readonly IEntityManager _entManager = default!;
+    [Robust.Shared.IoC.Dependency]private readonly IEntityManager _entManager = default!;
     [Robust.Shared.IoC.Dependency] private readonly AuObjectiveSystem _objectiveSystem = default!;
     [Robust.Shared.IoC.Dependency] private readonly PopupSystem _popup = default!;
-    [Robust.Shared.IoC.Dependency] private readonly ILogManager _logManager = default!;
 
-    private ISawmill _sawmill = default!;
+    private static readonly ISawmill Sawmill = Logger.GetSawmill("au14-interactobj");
 
     public override void Initialize()
     {
         base.Initialize();
-        _sawmill = _logManager.GetSawmill("au14-interactobj");
         SubscribeLocalEvent<InteractObjectiveComponent, ComponentStartup>(OnObjectiveStartup);
         SubscribeLocalEvent<InteractObjectiveTrackerComponent, InteractObjectiveDoAfterEvent>(OnInteractDoAfter);
     }
@@ -58,7 +56,7 @@ public sealed class AuInteractObjectiveSystem : EntitySystem
             if (registered > 0)
             {
                 component.EntitiesSpawned = true;
-                _sawmill.Info($"[INTERACT OBJ] Registered {registered} preplaced entities for objective {uid}");
+                Sawmill.Info($"[INTERACT OBJ] Registered {registered} preplaced entities for objective {uid}");
             }
             return;
         }
@@ -69,7 +67,7 @@ public sealed class AuInteractObjectiveSystem : EntitySystem
 
         if (component.Interactables.Count == 0)
         {
-            _sawmill.Warning($"[INTERACT OBJ] Objective {uid} has no Interactables defined!");
+            Sawmill.Warning($"[INTERACT OBJ] Objective {uid} has no Interactables defined!");
             return;
         }
 
@@ -93,7 +91,7 @@ public sealed class AuInteractObjectiveSystem : EntitySystem
 
         if (markers.Count == 0 || string.IsNullOrEmpty(entityToSpawn))
         {
-            _sawmill.Warning($"[INTERACT OBJ] No markers found for objective {uid}");
+            Sawmill.Warning($"[INTERACT OBJ] No markers found for objective {uid}");
             return;
         }
 
@@ -126,7 +124,7 @@ public sealed class AuInteractObjectiveSystem : EntitySystem
         }
 
         component.EntitiesSpawned = true;
-        _sawmill.Info($"[INTERACT OBJ] Spawned {toSpawn} interactable entities for objective {uid}");
+        Sawmill.Info($"[INTERACT OBJ] Spawned {toSpawn} interactable entities for objective {uid}");
     }
 
     /// <summary>
@@ -210,7 +208,7 @@ public sealed class AuInteractObjectiveSystem : EntitySystem
         var popupUser = args.User != EntityUid.Invalid ? args.User : uid;
 
         _popup.PopupEntity(interactComp.DoAfterMessageComplete, uid, popupUser, PopupType.Medium);
-        _sawmill.Info($"[INTERACT OBJ] Entity {uid} interacted by {args.User} for faction {faction}. Interaction {currentInteractions}/{interactComp.Interactionsneeded}");
+        Sawmill.Info($"[INTERACT OBJ] Entity {uid} interacted by {args.User} for faction {faction}. Interaction {currentInteractions}/{interactComp.Interactionsneeded}");
 
         // Check if this entity has reached the required number of interactions for one completion
         if (currentInteractions >= interactComp.Interactionsneeded)
@@ -232,14 +230,14 @@ public sealed class AuInteractObjectiveSystem : EntitySystem
                 ? interactComp.TotalCompletionsNeeded
                 : interactComp.AmountToSpawn;
 
-            _sawmill.Info($"[INTERACT OBJ] Entity {uid} completed for faction {faction}. Total completions: {interactComp.CompletionsPerFaction[faction]}/{totalNeeded}");
+            Sawmill.Info($"[INTERACT OBJ] Entity {uid} completed for faction {faction}. Total completions: {interactComp.CompletionsPerFaction[faction]}/{totalNeeded}");
 
             // Destroy entity if configured
             if (interactComp.DestroyOnComplete && tracker.CompletionsPerFaction[faction] >= interactComp.CompletionsPerEnt)
             {
                 if (_entManager.EntityExists(uid))
                 {
-                    _sawmill.Info($"[INTERACT OBJ] Destroying entity {uid} after completion");
+                    Sawmill.Info($"[INTERACT OBJ] Destroying entity {uid} after completion");
                     _entManager.QueueDeleteEntity(uid);
                 }
             }
@@ -250,7 +248,7 @@ public sealed class AuInteractObjectiveSystem : EntitySystem
             // Check if the overall objective is complete
             if (interactComp.CompletionsPerFaction[faction] >= totalNeeded)
             {
-                _sawmill.Info($"[INTERACT OBJ] Objective {tracker.ObjectiveUid} completed for faction {faction}!");
+                Sawmill.Info($"[INTERACT OBJ] Objective {tracker.ObjectiveUid} completed for faction {faction}!");
                 _objectiveSystem.CompleteObjectiveForFaction(tracker.ObjectiveUid, objComp, faction);
             }
         }

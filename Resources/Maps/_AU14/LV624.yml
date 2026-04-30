@@ -77420,6 +77420,8 @@ entities:
       inSlot: head
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide: []
 - proto: AU14CivilianBaristaApron
   entities:
   - uid: 15
@@ -77552,6 +77554,8 @@ entities:
         components: null
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide: []
 - proto: AU14CivilianJacketKhakiPufferVest
   entities:
   - uid: 45
@@ -78015,6 +78019,8 @@ entities:
       inSlot: eyes
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide: []
 - proto: AU14GlassesPersonalOrange
   entities:
   - uid: 41
@@ -78263,6 +78269,8 @@ entities:
       inSlot: back
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide: []
   - uid: 43
     components:
     - type: Transform
@@ -78283,6 +78291,8 @@ entities:
       inSlot: back
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide: []
 - proto: AU14SpawnPointCivilianCMBDeputy
   entities:
   - uid: 165
@@ -94114,6 +94124,8 @@ entities:
       inSlot: jumpsuit
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide: []
 - proto: CMJumpsuitMessTech
   entities:
   - uid: 19
@@ -242547,6 +242559,8 @@ entities:
       inSlot: eyes
     - type: Physics
       canCollide: False
+    - type: RMCRecentlyVended
+      preventCollide: []
   - uid: 30067
     components:
     - type: Transform

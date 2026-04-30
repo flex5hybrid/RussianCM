@@ -20,8 +20,6 @@
       entries:
       - id: AU14FatiguesUPP
         amount: 40
-      - id: AU14JumpsuitMPUPP
-        amount: 5
     - name: Footwear
       entries:
       - id: RMCBootsSPPBlack
@@ -322,7 +320,16 @@
     - name: Essential Equipment
       takeAll: CMUEssentialEquipment
       entries:
-      - id: AU14VendorBundleCorpsmanEssentials
+      - id: RMCVisorMedical
+      - id: AU14CMDefibrillator
+      - id: CMHealthAnalyzer
+      - id: RMCFlashlightPen
+      - id: ClothingNeckStethoscope
+      - id: CMRollerBedSpawnFolded
+      - id: RMCMedevacStretcherFolded
+      - id: AU14IVFoldableFolded
+      - id: CMSurgicalLine
+      - id: CMSynthGraft
     - name: Medical Pouches
       choices: { CMUPlatoonMedicalPouch: 2 }
       entries:
@@ -352,13 +359,14 @@
       - id: CMTraumaKit10
         amount: 30
     - name: Limited Pill Medications
-      takeAll: CMULimitedPills
+      choices: { CMUPlatoonMedicalLimitedMedications: 2 }
       entries:
       - id: AU14PillCanisterMeralyne
       - id: AU14PillCanisterDermaline
       - id: AU14PillCanisterAlbuterol
+      - id: AU14PillCanisterImidazoline
     - name: Limited Injector Medications
-      choices: { CMUPlatoonMedicalLimitedMedicationsInjectors: 6 }
+      choices: { CMUPlatoonMedicalLimitedMedicationsInjectors: 3 }
       entries:
       - id: AU14MeraBicAutoInjector
       - id: AU14KeloDermAutoInjector
@@ -366,46 +374,40 @@
       - id: AU14RevivalMixAutoInjector
     - name: Pill Bottles
       entries:
-      - id: CMPillCanisterDexalin
-        amount: 20
-      - id: CMPillCanisterDylovene
-        amount: 20
-      - id: CMPillCanisterInaprovaline
-        amount: 20
       - id: CMPillCanisterBicaridine
-        amount: 20
+        amount: 15
+      - id: CMPillCanisterDexalin
+        amount: 15
+      - id: CMPillCanisterDylovene
+        amount: 15
+      - id: CMPillCanisterInaprovaline
+        amount: 15
       - id: CMPillCanisterKelotane
-        amount: 20
+        amount: 15
       - id: CMPillCanisterTricordrazine
-        amount: 20
-      - id: RMCPillCanisterIron
-        amount: 20
-    #      - id: CMPillCanisterPeridaxon
-    #      - id: CMPillCanisterTramadol
+        amount: 15
+#      - id: CMPillCanisterPeridaxon
+#      - id: CMPillCanisterTramadol
     - name: Injectors
       entries:
       - id: CMEpinephrineAutoInjector
-        amount: 40
+        amount: 15
       - id: AU14NaloxoneAutoInjector
-        amount: 40
-      - id: RMCIronAutoInjector
-        amount: 40
+        amount: 15
       - id: CMInaprovalineAutoInjector
-        amount: 40
+        amount: 15
       - id: CMDexalinPlusAutoInjector
-        amount: 40
+        amount: 15
       - id: CMTricordrazineAutoInjector
-        amount: 40
-      - id: CMBicaridineAutoInjector
-        amount: 40
-      - id: CMKelotaneAutoInjector
-        amount: 40
-      - id: AU14ParacetamolAutoInjector
-        amount: 40
-      - id: AU14TramadolAutoInjector
-        amount: 40
-      - id: AU14OxycodoneAutoInjector
-        amount: 40
+        amount: 15
+    - name: Medical Helmets
+      choices: { CMUPlatoonMedicalHelmet: 1 }
+      entries:
+      - id: AU14HeadHelmetRMCMedic
+    - name: Medical Uniform
+      choices: { CMUPlatoonMedicalUniform: 1 }
+      entries:
+      - id: AU14JumpsuitMedicUPP
     - name: Medical Gloves
       choices: { CMUPlatoonMedicalGloves: 1 }
       entries:

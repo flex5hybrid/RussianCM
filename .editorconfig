@@ -10,13 +10,10 @@ indent_style = space
 tab_width = 4
 
 # New line preferences
-end_of_line = lf
+#end_of_line = crlf
 insert_final_newline = true
 trim_trailing_whitespace = true
 max_line_length = 120
-
-[*.{bat,cmd,ps1}]
-end_of_line = crlf
 
 #### .NET Coding Conventions ####
 
@@ -356,16 +353,11 @@ resharper_csharp_qualified_using_at_nested_scope = false
 resharper_csharp_prefer_qualified_reference = false
 resharper_csharp_allow_alias = false
 
-# Data/config formatted files can be compacter
-[*.{csproj,xml,yml,yaml,toml,json,msbuildproj,targets,props}]
-indent_size = 2
-
-# Legacy
-[*.dll.config]
+[*.{csproj,xml,yml,yaml,dll.config,msbuildproj,targets,props}]
 indent_size = 2
 
 [nuget.config]
 indent_size = 2
 
-[*.{yaml,yml}]
+[{*.yaml,*.yml}]
 ij_yaml_indent_sequence_value = false

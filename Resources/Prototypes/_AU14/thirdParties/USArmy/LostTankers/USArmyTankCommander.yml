@@ -59,6 +59,7 @@
   id: AU14JobUSArmyTankCommander
   name: US Army Tank Commander
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadUSArmy32nd

@@ -31,10 +31,10 @@
     - FullAuto
     recoilWielded: 1
     recoilUnwielded: 4
-    scatterWielded: 6
+    scatterWielded: 10
     scatterUnwielded: 20
     baseFireRate: 2
-    burstScatterMult: 1
+    burstScatterMult: 3
     modifiers:
       Burst:
         maxScatterModifier: 10

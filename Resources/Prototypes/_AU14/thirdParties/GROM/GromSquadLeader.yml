@@ -60,6 +60,7 @@
   id: AU14JobUPPGROMSquadleader
   name: UPP GROM Squad Leader
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadGROM

@@ -38,6 +38,7 @@
   id: AU14JobUACGLostAmmobearer
   name: Lost Ammo Bearer
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadUACG

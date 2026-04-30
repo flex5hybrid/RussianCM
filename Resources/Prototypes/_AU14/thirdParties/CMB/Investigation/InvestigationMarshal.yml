@@ -72,6 +72,7 @@
   id: CMBInvestigationPartyJobMarshal
   name: CMB Marshal
   components:  
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
   - type: GhostRole

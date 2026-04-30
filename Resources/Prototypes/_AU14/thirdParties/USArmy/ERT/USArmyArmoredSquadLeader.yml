@@ -72,6 +72,7 @@
   id: AU14JobUSArmySquadLeaderArmored
   name: US Army Squad Leader (ERT)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadUSArmy32nd

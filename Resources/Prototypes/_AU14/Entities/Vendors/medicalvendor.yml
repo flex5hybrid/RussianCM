@@ -1,7 +1,7 @@
 - type: entity
   parent: ColMarTechBase
   id: AU14GeneralMedicalVendor
-  name: We-Yu Medical Supply Vendor
+  name: WeYu Medical Supply Vendor
   description: An automated supply vendor hooked up to a storage of medical supplies.
   suffix: AU14 MED
   components:
@@ -20,8 +20,6 @@
         amount: 40
       - id: AU14Tourniquet
         amount: 30
-      - id: CMUSplintItem
-        amount: 25
       - id: CMBurnKit10
         amount: 25
       - id: CMTraumaKit10
@@ -31,16 +29,16 @@
       - id: CMSynthGraft
         amount: 12
       - id: CMSyringe
-        amount: 30
+        amount: 20
     - name: Pill Bottles
       entries:
+      - id: CMPillCanisterBicaridine
+        amount: 10
       - id: CMPillCanisterDexalin
         amount: 10
       - id: CMPillCanisterDylovene
         amount: 10
       - id: CMPillCanisterInaprovaline
-        amount: 10
-      - id: CMPillCanisterBicaridine
         amount: 10
       - id: CMPillCanisterKelotane
         amount: 10
@@ -56,22 +54,8 @@
         amount: 7
       - id: AU14PillCanisterEthylredoxrazine
         amount: 7
-      - id: AU14PillCanisterParacetamol
-        amount: 10
-      - id: AU14PillCanisterTramadol
-        amount: 10
-      - id: AU14PillCanisterOxycodone
-        amount: 10
-      - id: AU14PillCanisterCardiocaine
-        amount: 10
-      - id: AU14PillCanisterHepatocytin
-        amount: 10
-      - id: AU14PillCanisterNephronate
-        amount: 10
-      - id: AU14PillCanisterOsteoCalc
-        amount: 10
-      - id: AU14PillCanisterPulmovine
-        amount: 10
+#      - id: CMPillCanisterPeridaxon
+#      - id: CMPillCanisterTramadol
     - name: Injectors
       entries:
       - id: CMEpinephrineAutoInjector
@@ -81,41 +65,25 @@
       - id: RMCIronAutoInjector
         amount: 20
       - id: CMInaprovalineAutoInjector
-        amount: 25
+        amount: 20
       - id: CMDexalinPlusAutoInjector
-        amount: 25
+        amount: 20
       - id: CMTricordrazineAutoInjector
-        amount: 25
-      - id: CMBicaridineAutoInjector
-        amount: 25
-      - id: CMKelotaneAutoInjector
-        amount: 25
-      - id: AU14ParacetamolAutoInjector
-        amount: 20
-      - id: AU14TramadolAutoInjector
-        amount: 20
-      - id: AU14OxycodoneAutoInjector
         amount: 20
     - name: Medical Utilities
       entries:
       - id: CMRollerBedSpawnFolded
         amount: 25
-      - id: CMPortableSurgicalBedSpawnFolded
-        amount: 5
-      - id: RMCWheelchair
-        amount: 10
       - id: RMCBoxBodyBag
         amount: 4
       - id: RMCBoxSterileMask
         amount: 3
       - id: RMCBoxLatexGloves
         amount: 3
-      - id: RMCDefibrillatorCompact
-        amount: 2
-      - id: AU14CMDefibrillator
-        amount: 10
       - id: CMHealthAnalyzer
-        amount: 25
+        amount: 12
+      - id: AU14CMDefibrillator
+        amount: 20
       - id: RMCVial
         amount: 35
      # FixOVien
@@ -148,7 +116,7 @@
     - name: Blood Packs
       entries:
       - id: CMBloodPackFull
-        amount: 35
+        amount: 45
     - name: Empty Packs
       entries:
       - id: CMBloodPack
@@ -183,11 +151,11 @@
     - name: Blood Packs
       entries:
       - id: CMBloodPackFull
-        amount: 6
+        amount: 8
     - name: Miscellaneous
       entries:
       - id: CMBloodPack
-        amount: 20
+        amount: 22
         name: empty blood pack
 
 - type: entity

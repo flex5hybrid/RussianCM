@@ -51,7 +51,7 @@
     shoes: RMCShoesLaceupBrown
     id: AU14IDCardColonyCorporateLiaison
     outerClothing: RMCCoatSPP
-    ears: AU14AmbassadorUPPHeadset
+    ears: AU14ColonyAdminHeadset
   inhand:
   - RMCPortableVendorCorporate
 

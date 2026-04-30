@@ -37,6 +37,7 @@
   id: AU14JobFORECONFirstReconSmartGunOperator
   name: FORECON Automatic Rifleman (3rd party)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadFirstRecon

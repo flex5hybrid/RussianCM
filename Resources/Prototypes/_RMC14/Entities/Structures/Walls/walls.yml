@@ -38,6 +38,8 @@
       types:
         Structural: 750
 
+
+
 - type: entity
   parent: CMWallMetal
   id: CMWallMetalAlmayer
@@ -187,9 +189,8 @@
   - type: StaticPrice
     price: 150
   - type: XenoCrusherChargable
-    setDamage:
-      types:
-        Structural: 750
+    types:
+      Structural: 750
 
 - type: entity
   parent: RMCBaseWallReinforced
@@ -1042,6 +1043,7 @@
     state: containment_window
 
 # Hunter Walls
+
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallHunter

@@ -63,6 +63,7 @@
   id: CMBInvestigationPartyJobRightsObserver
   name: Interstellar Human Rights Observer
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
   - type: GhostRole

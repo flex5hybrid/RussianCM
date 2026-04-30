@@ -64,6 +64,7 @@
   id: CMBInvestigationPartyJobDeputy
   name: CMB Deputy
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
   - type: GhostRole

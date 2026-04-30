@@ -63,6 +63,7 @@
   id: AU14PartyJobICRCNurse
   name: ICRC Medical Staff Nurse
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
   - type: GhostRole

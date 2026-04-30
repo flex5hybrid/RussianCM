@@ -47,6 +47,7 @@
   id: AU14JobFORECONSniperDetachment
   name: FORECON Sniper (Detachment)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: SquadFORECON

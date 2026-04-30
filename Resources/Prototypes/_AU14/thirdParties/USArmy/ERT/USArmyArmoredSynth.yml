@@ -96,6 +96,7 @@
   id: AU14JobUSArmySynthArmored
   name: US Army Synthetic (ERT)
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: AU14SquadUSArmy32nd

@@ -62,6 +62,7 @@
   id: AU14PartyJobICRCDoctor
   name: ICRC Medical Staff Doctor
   components:
+  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
   - type: GhostRole

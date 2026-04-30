@@ -57,8 +57,9 @@ public sealed class ShowHealthIconsSystem : EquipmentHudSystem<ShowHealthIconsCo
         if (!IsActive)
             return;
 
-        if (_healthIcons.TryGetIcon(entity, out var healthIcon))
-            args.StatusIcons.Add(healthIcon);
+        var healthIcons = _healthIcons.GetIcons(entity);
+
+        args.StatusIcons.AddRange(healthIcons);
     }
 
     private IReadOnlyList<HealthIconPrototype> DecideHealthIcons(Entity<DamageableComponent> entity)

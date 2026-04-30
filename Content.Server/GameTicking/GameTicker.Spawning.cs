@@ -231,19 +231,13 @@ namespace Content.Server.GameTicking
             // EXCEPTION_TOLERANCE catch (only enabled in Release/Tools builds), which calls
             // RestartRound() — making the round appear to "instantly restart at start" in
             // production. Wrap the threat spawn so a single subsystem can't take the round down.
-            if (_auRoundSystem._selectedthreat != null)
+            try
             {
-                try
-                {
-                    _auThreatSystem.SpawnThreatAtRoundStart(_auRoundSystem._selectedthreat, DefaultMap, assignedJobs);
-                }
-                catch (Exception threatEx)
-                {
-                    Log.Error($"SpawnThreatAtRoundStart threw — round will continue without threat spawn. {threatEx}");
-                }
+                _auThreatSystem.SpawnThreatAtRoundStart(_auRoundSystem._selectedthreat, DefaultMap, assignedJobs);
             }
-            else {
-                Log.Debug("SpawnThreatAtRoundStart debug — no threat selected, skipping threat spawn.");
+            catch (Exception threatEx)
+            {
+                Log.Error($"SpawnThreatAtRoundStart threw — round will continue without threat spawn. {threatEx}");
             }
 
             _stationJobs.AssignOverflowJobs(ref assignedJobs, playerNetIds, profiles, spawnableStations);
@@ -307,19 +301,13 @@ namespace Content.Server.GameTicking
 
             // Defensive: same rationale as the SpawnThreatAtRoundStart try/catch above. Without
             // this, an exception inside third-party spawning kills the entire round at start.
-            if (_auRoundSystem._selectedthreat != null)
+            try
             {
-                try
-                {
-                    _auThirdParty.StartThirdPartySpawning(_auRoundSystem._selectedthreat, assignedJobs);
-                }
-                catch (Exception thirdPartyEx)
-                {
-                    Log.Error($"StartThirdPartySpawning threw — round will continue without third-party spawn. {thirdPartyEx}");
-                }
+                _auThirdParty.StartThirdPartySpawning(_auRoundSystem._selectedthreat, assignedJobs);
             }
-            else {
-                Log.Debug("StartThirdPartySpawning debug — no threat selected, skipping third-party spawn.");
+            catch (Exception thirdPartyEx)
+            {
+                Log.Error($"StartThirdPartySpawning threw — round will continue without third-party spawn. {thirdPartyEx}");
             }
 
             // Allow rules to add roles to players who have been spawned in. (For example, on-station traitors)

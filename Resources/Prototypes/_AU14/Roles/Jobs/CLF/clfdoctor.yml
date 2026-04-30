@@ -7,8 +7,6 @@
   ignoreAllegiance: true
   playTimeTracker: AU14JobCLFPhysician
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 14400 # 4 hours
   - !type:TraitsRequirement
     inverted: true
     traits:
