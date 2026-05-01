@@ -119,8 +119,8 @@ public sealed class AdminConsoleSystem : EntitySystem
         {
             var sound = new Robust.Shared.Audio.SoundPathSpecifier("/Audio/Announcements/announce.ogg");
             _chat.DispatchGlobalAnnouncement(
-                $"Colony sales tax has been set to {clamped:F0}%.",
-                "Administration",
+                $"Налог с продаж колонии был установлен в размере {clamped:F0}%.",
+                "Администрация",
                 playSound: true,
                 announcementSound: sound);
         }
@@ -142,8 +142,8 @@ public sealed class AdminConsoleSystem : EntitySystem
         {
             var sound = new Robust.Shared.Audio.SoundPathSpecifier("/Audio/Announcements/announce.ogg");
             _chat.DispatchGlobalAnnouncement(
-                $"Colony income tax has been set to {clamped:F0}%. This affects salary payouts and corporate withdrawals.",
-                "Administration",
+                $"Налог на доход колонии был установлен на {clamped:F0}%. Это влияет на выплаты заработной платы и корпоративными снятиями средств.",
+                "Администрация",
                 playSound: true,
                 announcementSound: sound);
         }
