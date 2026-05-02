@@ -111,6 +111,70 @@
           tags:
           - Fruit
 
+- type: entity
+  parent: AUSubmissionPointBase
+  id: AUSubmissionPointVegetablesWeYu
+  name: Submission Point (Vegetables - We-Yu)
+  description: A place to submit vegetables for the We-Yu faction.
+  components:
+    - type: ItemSlots
+      slots:
+        ItemCabinet:
+          whitelist:
+            tags:
+              - Vegetable
+    - type: SubmissionStorage
+      asrsFaction: corporate
+      isCorporate: true
+
+- type: entity
+  parent: AUSubmissionPointBase
+  id: AUSubmissionPointFruitWeYu
+  name: Submission Point (Fruit - We-Yu)
+  description: A place to submit vegetables for the We-Yu faction.
+  components:
+    - type: ItemSlots
+      slots:
+        ItemCabinet:
+          whitelist:
+            tags:
+              - Fruit
+    - type: SubmissionStorage
+      asrsFaction: corporate
+      isCorporate: true
+
+- type: entity
+  parent: AUSubmissionPointBase
+  id: AUSubmissionPointWoodWeYu
+  name: Submission Point (Wood - We-Yu)
+  description: A place to submit wood for the We-Yu faction.
+  components:
+    - type: ItemSlots
+      slots:
+        ItemCabinet:
+          whitelist:
+            tags:
+              - AUwood
+    - type: SubmissionStorage
+      asrsFaction: corporate
+      isCorporate: true
+
+- type: entity
+  parent: AUSubmissionPointBase
+  id: AUSubmissionPointSteelWeYu
+  name: Submission Point (Steel - We-Yu)
+  description: A place to submit steel for the We-Yu faction.
+  components:
+    - type: ItemSlots
+      slots:
+        ItemCabinet:
+          whitelist:
+            tags:
+              - SteelOre
+    - type: SubmissionStorage
+      asrsFaction: corporate
+      isCorporate: true
+
 - type: Tag
   id: SteelOre
 

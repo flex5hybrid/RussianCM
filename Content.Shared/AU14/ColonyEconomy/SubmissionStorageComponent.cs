@@ -11,4 +11,7 @@ public sealed partial class SubmissionStorageComponent : Component
 {
     [DataField("rewardAmount")]
     public float RewardAmount = 20f;
+
+    [DataField("isCorporate")]
+    public bool IsCorporate = false;
 }

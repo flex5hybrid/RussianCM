@@ -35,6 +35,15 @@ public sealed class SubmissionStorageSystem : EntitySystem
 
         EntityManager.QueueDeleteEntity(args.Entity);
 
+        // Corporate submission points bypass tariff entirely
+        
+        if (submission.IsCorporate)
+        {
+            if (reward > 0f)
+                _corporateConsole.AddToCorporateBudget(reward);
+            return;
+        }
+
         // Split: tariff % goes to corporate budget, remainder to colony budget
         var tariffAmount = reward * tariff;
         var colonyAmount = reward - tariffAmount;

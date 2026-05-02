@@ -198,3 +198,139 @@
       amount: 1
     - id: AU14BoxHIDPUPP
       amount: 1
+
+
+
+# We-Yu Weapon Crates
+- type: entity
+  parent: RMCCrateWeapons
+  id: AU14CrateM41AMK2
+  name: M41A MK2 crate (1x M41A MK2, 3x magazines M41A MK2)
+  description: A crate containing one M41A MK2 rifles and three magazines.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponRifleM54CWhiteNoLock
+      amount: 1
+    - id: CMMagazineRifleM54C
+      amount: 3
+
+- type: entity
+  parent: RMCCrateWeapons
+  id: AU14CrateM240A1
+  name: M240A1 incinerator crate (1x M240A1 incinerator unit, 2x fuel tanks)
+  description: A crate containing one M240A1 incinerator units and two fuel tanks.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponFlamer
+      amount: 2
+    - id: RMCTankFlamer
+      amount: 4
+
+- type: entity
+  parent: RMCCrateWeapons
+  id: AU14CrateFP9000
+  name: FP9000/2 crate (1x FP9000/2, 3x FP9000/2 magazines)
+  description: A crate containing one FP9000/2 rifles and three magazines.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponSMGFP9000
+      amount: 1
+    - id: RMCMagazineSMGFP9000
+      amount: 3
+
+- type: entity
+  parent: RMCCrateWeapons
+  id: AU14CrateSSG45
+  name: SSG-45 assault rifle crate (1x SSG-45 assault rifle, 3x SSG-45 magazines)
+  description: A crate containing one SSG-45 assault rifle and three magazines.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponRifleSSG45NoLock
+      amount: 1
+    - id: RMCMagazineRifleSSG45
+      amount: 3
+
+- type: entity
+  parent: RMCCrateWeapons
+  id: AU14CrateM5A1SLAW_We-Yu
+  name: M5A1 SLAW anti-tank launcher crate (x2)
+  description: A crate containing four M5A1 SLAW anti-tank launchers.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCIweaponLauncherDisposableFolded
+      amount: 2
+
+- type: entity
+  parent: RMCCrateWeapons
+  id: AU14CrateM39B2
+  name: M39B/2 SMG crate (1x M39B/2 SMG, 4 M39B/2 magazines)
+  description: A crate containing one M39B/2 submachine gun and four magazines.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponSMGM63B2
+      amount: 1
+    - id: CMMagazineSMGM63
+      amount: 4
+
+
+# We-Yu Ammo Crates
+- type: entity
+  parent: RMCCrateAmmo
+  id: AU14CrateM41AMK2Ammo
+  name: M41A MK2 magazine crate (x4)
+  description: A crate containing four M41A MK2 magazines.
+  components:
+  - type: StorageFill
+    contents:
+    - id: CMMagazineRifleM54C
+      amount: 4
+
+- type: entity
+  parent: RMCCrateAmmo
+  id: AU14CrateM240A1Ammo
+  name: M240A1 incinerator tank crate (x2)
+  description: A crate containing two incinerator fuel tanks.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCTankFlamer
+      amount: 2
+
+- type: entity
+  parent: RMCCrateAmmo
+  id: AU14CrateFP9000Ammo
+  name: FP9000/2 magazine crate (x4)
+  description: A crate containing four FP9000/2 magazines.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCMagazineSMGFP9000
+      amount: 4
+
+- type: entity
+  parent: RMCCrateAmmo
+  id: AU14CrateSSG45Ammo
+  name: SSG-45 magazine crate (x4)
+  description: A crate containing four SSG-45 magazines.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCMagazineRiflessG45
+      amount: 4
+
+- type: entity
+  parent: RMCCrateAmmo
+  id: AU14CrateM39B2Ammo
+  name: M39B/2 magazine crate (x5)
+  description: A crate containing five M39B/2 magazines.
+  components:
+  - type: StorageFill
+    contents:
+    - id: CMMagazineSMGM63
+      amount: 5
