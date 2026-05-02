@@ -44,7 +44,14 @@ jobs:
       env:
         PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
-
+    - name: Create release tag
+      if: success()
+      run: |
+        TAG="v$(date +%Y.%m.%d-%H%M%S)"
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git tag "$TAG" -m "Release $TAG"
+        git push origin "$TAG"
     - name: Publish changelog (Discord — YAML)
       continue-on-error: true
       run: Tools/actions_changelogs_since_last_run.py
