@@ -117,7 +117,7 @@
         reagents:
           - ReagentId: FoamingAgent
             Quantity: 10
-          - ReagentId: PolytrinicAcid
+          - ReagentId: RMCPolytrinicAcid
             Quantity: 10
 
 # Weedkiller

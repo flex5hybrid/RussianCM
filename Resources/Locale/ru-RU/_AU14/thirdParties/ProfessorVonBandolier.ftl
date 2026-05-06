@@ -1,0 +1,11 @@
+ent-AU14PartyJobProfessorVonBandolier-name = Профессор Фон Бандольер
+ent-AU14M276ShotgunShellLoadingRigBlackVonBandolier-name = Разгрузка для патронов M276
+ent-AU14M276ShotgunShellLoadingRigBlackVonBandolier-desc = Пояс для боеприпасов, предназначенный для переноски картечи.
+ent-CMArmorDutchJacketVonBandolier-name = сафари-куртка
+ent-CMArmorDutchJacketVonBandolier-desc = Сшитая на заказ охотничья куртка, искусно подбитая сегментированными бронепластинами. Иногда дичь стреляет в ответ.
+ent-RMCPouchMedkitVonBandolier-name = подсумок для аптечки
+ent-RMCPouchMedkitVonBandolier-desc = Специально сделан для хранения медицинских предметов.
+ent-RMCPouchMagazinePistolLargeVonBandolier-name = большой подсумок для пистолетных магазинов
+ent-RMCPouchMagazinePistolLargeVonBandolier-desc = Может вмещать много пистолетных магазинов или спидлоадеров для револьвера.
+ent-RMCBeltHolsterRevolverVonBandolier-name = Универсальная кобурная разгрузка для револьвера M276
+ent-RMCBeltHolsterRevolverVonBandolier-desc = M276 — стандартное снаряжение КМП США. Состоит из модульного пояса с различными клипсами. Эта версия универсальна и регулируется под разные револьверы, а также имеет шесть маленьких подсумков для спидлоадеров. Слегка пахнет сеном.

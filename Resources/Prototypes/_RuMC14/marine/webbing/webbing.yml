@@ -1,0 +1,56 @@
+- type: entity
+  parent: CMWebbingBase
+  id: CMWebbingConstruction
+  name: Construction Webbing Vest
+  description: A compact webbing vest designed for synthetic units, with reinforced pockets for carrying essential construction materials.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Webbing/webbing_black.rsi
+    state: webbing
+
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,7,1
+    whitelist:
+      tags:
+      - Sheet
+      - RodMetal1
+      - CableCoil
+      components:
+      - BarbedWire
+      - FloorTile
+      - EntrenchingTool
+      - EmptySandbag
+      - LightReplacer
+
+  - type: FixedItemSizeStorage
+
+  - type: Webbing
+    components:
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+      - 0,0,7,1
+      whitelist:
+        tags:
+        - Sheet
+        - RodMetal1
+        - CableCoil
+        components:
+        - BarbedWire
+        - FloorTile
+        - EntrenchingTool
+        - EmptySandbag
+        - LightReplacer
+
+    - type: FixedItemSizeStorage
+
+    - type: RMCStorageEjectHand
+      state: Open
+
+    - type: ExplosionResistance
+      damageCoefficient: 0
+      worn: false
+
+    - type: StoreAfterFailedInteract

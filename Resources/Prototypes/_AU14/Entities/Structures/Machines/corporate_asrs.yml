@@ -6,8 +6,8 @@
 - type: entity
   parent: CMASRSConsole
   id: AU14CorporateASRSConsole
-  name: corporate supply console
-  description: A Weyland-Yutani corporate supply management terminal. Orders placed here are subject to the current sales tax rate.
+  name: корпоративная консоль поставок
+  description: Корпоративный терминал управления поставками Вестон-Ямада. На заказы, размещенные здесь, распространяется действующая ставка налога с продаж.
   suffix: Corporate, ASRS
   components:
   - type: RequisitionsComputer

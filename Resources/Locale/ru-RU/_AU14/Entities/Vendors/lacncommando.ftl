@@ -1,0 +1,10 @@
+ent-AU14LACNcommandoclothingequipmentvendor-name = Торговый автомат со снаряжением морских коммандос LACN
+ent-AU14LACNcommandoclothingequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу специальной экипировки LACN.
+ent-AU14LACNcommandocommandequipmentvendor-name = Командный торговый автомат морских коммандос LACN
+ent-AU14LACNcommandocommandequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу командной экипировки и снаряжения.
+ent-AU14LACNcommandosectionleaderequipmentvendor-name = Торговый автомат командира отделения морских коммандос LACN
+ent-AU14LACNcommandosectionleaderequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу экипировки и снаряжения для командира отделения.
+ent-AU14LACNcommandoWeaponsVendor-name = Оружейная стойка морских коммандос LACN
+ent-AU14LACNcommandoWeaponsVendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу оружия.
+ent-AU14LACNcommandoSpecialWeaponsVendor-name = Стойка специального оружия морских коммандос LACN
+ent-AU14LACNcommandoSpecialWeaponsVendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу специального оружия.

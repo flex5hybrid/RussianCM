@@ -1,0 +1,23 @@
+﻿# Невоенный персонал
+cm-job-name-correspondent = Корреспондент
+cm-job-description-correspondent = Освещайте любые события, которые сочтёте достойными публикации в новостях.
+cm-job-prefix-correspondent = ПРЕСС
+CMJobCorrespondent = Корреспондент
+cm-job-name-liaison = Корпоративный представитель
+cm-job-description-liaison = Обеспечивайте прямую связь между "Алмайером" и We-Yu посредством факсов. Защищайте интересы We-Yu.
+cm-job-prefix-liaison = КП
+CMJobLiaison = Корпоративный представитель
+rmc-job-name-synth = Синтетик UNMC
+rmc-job-description-synth = Оказывайте поддержку подразделениям и персоналу UNMC.
+rmc-job-prefix-synth = СИН
+RMCJobSynthetic = Синтетик
+rmc-job-name-synth-colony = Колониальный синтетик
+rmc-job-description-synth-colony = Оказывайте помощь персоналу колонии.
+rmc-job-name-dynagrid-engineer = Инженер DynaGrid
+rmc-job-description-dynagrid-engineer = Обслуживайте энергоузел DynaGrid и другие энергообъекты Гибриса Проспера.
+rmc-job-prefix-dynagrid-engineer = ДГ ИНЖ
+rmc-job-name-novamed-doctor = Врач Nova Medica
+rmc-job-description-novamed-doctor = Оказывайте медицинскую помощь пациентам госпиталя Nova Medica.
+rmc-job-prefix-novamed-doctor = НМ ВРАЧ
+rmc-job-name-hybrisa-civilian = Колонист Гибриса Проспера
+rmc-job-description-hybrisa-civilian = Живите своей жизнью в колонии Гибрис Проспера.

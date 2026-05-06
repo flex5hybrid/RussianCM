@@ -2281,8 +2281,8 @@
 
 - type: entity
   parent: RMCBeltRoyalMortar
-  id: RMCBeltRoyalMortarFilled
-  suffix: PVE, RCM, Filled
+  id: RMCBeltRoyalMortarFilledGrenades
+  suffix: PVE, RCM, Filled Grenades
   components:
   - type: StorageFill
     contents:
@@ -2294,6 +2294,20 @@
       amount: 2
     - id: RMCPacketGrenade20mmIncendiaryFilled
       amount: 1
+
+- type: entity
+  parent: RMCBeltRoyalMortar
+  id: RMCBeltRoyalMortarFilledMortarShells
+  suffix: PVE, RCM, Filled Mortar
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponPistolL14
+      amount: 1
+    - id: RMCMagazinePistolL14
+      amount: 1
+    - id: RMCMortarShellHE
+      amount: 3
 
 - type: entity
   parent: RMCBeltHolsterPistolTSE

@@ -1,0 +1,39 @@
+ent-DisposalHolder-name = disposal holder
+
+ent-DisposalPipeBroken-name = broken disposal pipe
+ent-DisposalPipeBroken-desc = A BBP (big broken pipe).
+
+ent-DisposalPipe-name = disposal pipe segment
+ent-DisposalPipe-desc = A huge pipe segment used for constructing disposal systems.
+
+ent-DisposalTagger-name = disposal pipe tagger
+ent-DisposalTagger-desc = A pipe that tags entities for routing.
+
+ent-DisposalSignaller-name = disposal signaller
+ent-DisposalSignaller-desc = A pipe that emits a signal when in item goes through it.
+
+ent-DisposalTrunk-name = disposal trunk
+ent-DisposalTrunk-desc = A pipe trunk used as an entry point for disposal systems.
+
+ent-DisposalRouter-name = disposal router
+ent-DisposalRouter-desc = A three-way router. Entities with matching tags get routed to the side via configurable filters.
+
+ent-DisposalRouterFlipped-desc = A three-way router. Entities with matching tags get routed to the side.
+
+ent-DisposalJunction-name = disposal junction
+ent-DisposalJunction-desc = A three-way junction. The arrow indicates where items exit.
+
+ent-DisposalJunctionFlipped-desc = A three-way junction. The arrow indicates where items exit.
+
+ent-DisposalYJunction-name = disposal y-junction
+ent-DisposalYJunction-desc = A three-way junction with another exit point.
+
+ent-DisposalXJunction-name = disposal x-junction
+ent-DisposalXJunction-desc = A four-way junction. The arrow indicates where items exit.
+
+ent-DisposalBend-name = disposal bend
+ent-DisposalBend-desc = A tube bent at a 90 degree angle.
+
+ent-DisposalSignalRouter-name = disposal signal router
+ent-DisposalSignalRouter-desc = A signal-controlled three-way router.
+

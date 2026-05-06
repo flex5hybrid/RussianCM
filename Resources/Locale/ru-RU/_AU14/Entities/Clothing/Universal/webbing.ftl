@@ -1,0 +1,14 @@
+ent-AU14WebbingMagazine-name = разгрузка для магазинов
+ent-AU14WebbingMagazine-desc = Синт-хлопковая разгрузка с тремя карманами для магазинов.
+ent-AU14WebbingDumpPouch-name = подсумок-сбросник
+ent-AU14WebbingDumpPouch-desc = Подсумок для сброса пустых магазинов.
+ent-AU14WebbingUtility-name = универсальная разгрузка
+ent-AU14WebbingUtility-desc = Синт-хлопковый разгрузочный жилет с множеством карманов для всего, что вам нужно, но нельзя носить в руках.
+ent-AU14WebbingDropPouch-name = подсумок-карман
+ent-AU14WebbingDropPouch-desc = Удобный подсумок для переноски различных мелочей.
+ent-AU14WebbingAdminPouch-name = административный подсумок
+ent-AU14WebbingAdminPouch-desc = Подсумок для переноски вашего административного снаряжения.
+ent-AU14WebbingKnives-name = разгрузка для ножей
+ent-AU14WebbingKnives-desc = Разгрузка для ножей старого поколения. Может вместить до 5 ножей. Сделана из синт-хлопка.
+ent-AU14WebbingKnivesFilled-name = разгрузка для ножей
+ent-AU14WebbingKnivesFilled-desc = Разгрузка для ножей старого поколения. Может вместить до 5 ножей. Сделана из синт-хлопка.

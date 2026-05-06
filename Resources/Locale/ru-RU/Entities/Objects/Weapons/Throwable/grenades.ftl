@@ -1,0 +1,53 @@
+ent-ExGrenade-name = explosive grenade
+ent-ExGrenade-desc = Grenade that creates a small but devastating explosion.
+
+ent-GrenadeFlashBang-name = flashbang
+ent-GrenadeFlashBang-desc = Eeeeeeeeeeeeeeeeeeeeee.
+
+ent-SyndieMiniBomb-name = syndicate minibomb
+ent-SyndieMiniBomb-desc = A syndicate-manufactured explosive used to stow destruction and cause chaos.
+
+ent-SelfDestructSeq-name = self destruct
+ent-SelfDestructSeq-desc = Go out on your own terms!
+
+ent-SingularityGrenade-name = singularity grenade
+ent-SingularityGrenade-desc = Grenade that simulates the power of a singularity, pulling things in a heap.
+
+ent-WhiteholeGrenade-name = whitehole grenade
+ent-WhiteholeGrenade-desc = Grenade that repulses everything around for some time.
+
+ent-NuclearGrenade-name = the nuclear option
+ent-NuclearGrenade-desc = Please don't throw it, think of the children.
+
+ent-ModularGrenade-name = modular grenade
+ent-ModularGrenade-desc = A grenade casing. Requires a trigger and a payload.
+
+ent-EmpGrenade-name = EMP grenade
+ent-EmpGrenade-desc = A grenade designed to wreak havoc on electronic systems.
+
+ent-HolyHandGrenade-name = holy hand grenade
+ent-HolyHandGrenade-desc = O Lord, bless this thy hand grenade, that with it thou mayst blow thine enemies to tiny bits, in thy mercy.
+
+ent-SmokeGrenade-name = smoke grenade
+ent-SmokeGrenade-desc = A tactical grenade that releases a large, long-lasting cloud of smoke when used.
+
+ent-CleanerGrenade-name = cleanade
+ent-CleanerGrenade-desc = Special grenade for janitors, releasing large cloud of space cleaner foam.
+
+ent-TearGasGrenade-name = tear gas grenade
+ent-TearGasGrenade-desc = A riot control tear gas grenade. Causes irritation, pain and makes you cry your eyes out.
+
+ent-MetalFoamGrenade-name = metal foam grenade
+ent-MetalFoamGrenade-desc = An emergency tool used for patching hull breaches with special quick-set metal foam. Almost as good as real floors!
+
+ent-AirGrenade-name = air grenade
+ent-AirGrenade-desc = A special solid state chemical grenade used for quickly releasing standard air into a spaced area. Fills up to 30 tiles!
+
+ent-GrenadeDummy-name = trick grenade
+ent-GrenadeDummy-desc = All the grenade without any of the boom.
+
+ent-SyndieTrickyBomb-name = syndicate trickybomb
+ent-SyndieTrickyBomb-desc = A syndicate-manufactured explosive used to make an excellent distraction.
+
+ent-GrenadeBase-name = item
+

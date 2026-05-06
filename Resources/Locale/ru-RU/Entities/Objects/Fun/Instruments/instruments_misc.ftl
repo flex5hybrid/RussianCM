@@ -1,0 +1,30 @@
+ent-MusicalLungInstrument-name = musical lung
+ent-MusicalLungInstrument-desc = The spiritual and magical lung of a former opera singer. Though, to be honest, the vocal chords make the performance.
+
+ent-SeashellInstrument-name = seashell
+ent-SeashellInstrument-desc = For laying down the shoreline beat.
+
+ent-BirdToyInstrument-name = bird whistle
+ent-BirdToyInstrument-desc = A delightful little whistle in the shape of a bird. It sings beautifully.
+
+ent-PhoneInstrument-name = red phone
+ent-PhoneInstrument-desc = Should anything ever go wrong...
+
+ent-PhoneInstrumentSyndicate-name = blood-red phone
+ent-PhoneInstrumentSyndicate-desc = For evil people to call their friends.
+
+ent-HelicopterInstrument-name = toy helicopter
+ent-HelicopterInstrument-desc = Ch-ka-ch-ka-ch-ka-ch-ka-ch-ka-ch-ka...
+
+ent-CannedApplauseInstrument-name = canned applause
+ent-CannedApplauseInstrument-desc = Seems like someone already used it all up...
+
+ent-GunpetInstrument-name = gunpet
+ent-GunpetInstrument-desc = Why do you need to examine this? Is it not self-explanatory?
+
+ent-BikeHornInstrument-name = gilded bike horn
+ent-BikeHornInstrument-desc = An exquisitely decorated bike horn, capable of honking in a variety of notes.
+
+ent-BananaPhoneInstrument-name = banana phone
+ent-BananaPhoneInstrument-desc = A direct line to the Honkmother. Seems to always go to voicemail.
+

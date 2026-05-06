@@ -1,0 +1,14 @@
+ent-WeldingMaskBase-name = welding mask
+
+ent-ClothingHeadHatWelding-name = welding mask
+ent-ClothingHeadHatWelding-desc = A head-mounted face cover designed to protect the wearer completely from space-arc eye.
+
+ent-ClothingHeadHatWeldingMaskFlame-name = flame welding mask
+ent-ClothingHeadHatWeldingMaskFlame-desc = A painted welding helmet, this one has flames on it.
+
+ent-ClothingHeadHatWeldingMaskFlameBlue-name = blue-flame welding mask
+ent-ClothingHeadHatWeldingMaskFlameBlue-desc = A painted welding helmet, this one has blue flames on it.
+
+ent-ClothingHeadHatWeldingMaskPainted-name = painted welding mask
+ent-ClothingHeadHatWeldingMaskPainted-desc = A welding helmet, painted in crimson.
+

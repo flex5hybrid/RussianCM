@@ -1,0 +1,16 @@
+ent-AU14ObjectiveItemPortableRadioTransceiver-name = Блок переносного радиотрансивера AN/PRC-982
+ent-AU14ObjectiveItemPortableRadioTransceiver-desc = Серый радиоблок, используемый для приёма дальней связи. Также записывает весь проходящий через него радиообмен.
+ent-AU14ObjectiveItemBlackboxRecorder-name = Регистратор информации колонии CIR-60 «чёрный ящик»
+ent-AU14ObjectiveItemBlackboxRecorder-desc = Маленькая красная коробочка, которая записывает объявления колонии, смерти колонистов и другие ключевые показатели. Обычно называется чёрным ящиком, хотя этот — кроваво-красный.
+ent-AU14ObjectiveItemAtmosphericRadarStorageUnit-name = Блок хранения данных атмосферного радара ARCS-9
+ent-AU14ObjectiveItemAtmosphericRadarStorageUnit-desc = Чёрный блок данных, используемый для хранения информации от массивов атмосферного радара.
+ent-AU14ObjectiveItemWYLaptop-name = Ноутбук отдела биологического оружия Weyland-Yutani
+ent-AU14ObjectiveItemWYLaptop-desc = Портативный компьютер, содержащий исследовательские данные Отдела биологического оружия Weyland-Yutani.
+ent-AU14ObjectiveItemTheaterHandbook-name = Справочник по театральным операциям
+ent-AU14ObjectiveItemTheaterHandbook-desc = Секретный документ, содержащий боевые планы крупной фракции в текущем театре военных действий.
+ent-AU14ObjectiveItemNuclearLaunchCodes-name = Брошюра с кодами ядерного запуска
+ent-AU14ObjectiveItemNuclearLaunchCodes-desc = Секретный документ, содержащий коды ядерного запуска.
+ent-AU14ObjectiveItemAIProcessor-name = Процессор ИИ
+ent-AU14ObjectiveItemAIProcessor-desc = Внешний процессор для ИИ, используемый для обработки огромных объёмов информации.
+ent-AU14ObjectiveItemHackableComputer-name = Полевой операционный компьютер
+ent-AU14ObjectiveItemHackableComputer-desc = Защищённый военный ноутбук, содержащий зашифрованные данные связи. Может быть взломан для извлечения критически важной разведывательной информации.

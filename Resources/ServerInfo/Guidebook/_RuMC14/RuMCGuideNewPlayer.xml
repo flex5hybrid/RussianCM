@@ -1,0 +1,80 @@
+﻿<Document>
+
+    # Руководство для начинающих
+
+    - Вы можете использовать кнопку осмотра [color=yellow][bold][keybind="ExamineEntity"][/bold][/color] чтобы осмотреть любые игровые объеквы, представленные в руководстве.
+    - Настройте бинды на свой вкус в настройках, и обратите внимание на категорию RMC, эти бинды были перенесены из CM13 и могут быть крайне полезны.
+
+    ## Флотская пехота
+    - [textlink="Первая миссия в роли стрелка!" link="RMCGuideRoleRifleman"]
+
+    ## Ксеноиды
+    - [textlink="Вы родились в улье! Что же дальше?" link="RMCGuideRoleDrone"]
+
+    # Управление
+
+    <Box>Вы можете настроить бинды в любое время здесь:</Box>
+    <Box Orientation="Vertical"><CommandButton Text="ui-options-tab-controls" Command="options 2"/></Box>
+
+    ## RMC-14 Специальные комбинации клавиш
+    - [color=yellow][bold][keybind="CMUniqueAction"][/bold][/color]: Уникальное действие оружия (помпа дробовика, открытие гранатомёта)
+    - [color=yellow][bold][keybind="CMXenoWideSwing"][/bold][/color]: Широкая атака ксеноса.
+    - [color=yellow][bold][keybind="RMCActivateAttachableUnderbarrel"][/bold][/color]: Переключиться на подствольный обвес.
+    - [color=yellow][bold][keybind="RMCCycleFireMode"][/bold][/color]: Сменить режим стрельбы.
+    - [color=yellow][bold][keybind="CMHolsterPrimary"][/bold][/color]: Выхватить основное оружие.
+    - [color=yellow][bold][keybind="CMHolsterSecondary"][/bold][/color]: Выхватить вторичное оружие.
+    - [color=yellow][bold][keybind="RMCPickUpDroppedItems"][/bold][/color]: Подобрать последний потеряный предмет.
+    - [color=yellow][bold][keybind="RMCInteractWithOtherHand"][/bold][/color]: Взаимодействовать с использованием неактивной руки.
+    - [color=yellow][bold][keybind="RMCActivateAttachableRail"][/bold][/color]: Активировать рельсовый обвес (прицелы).
+    - [color=yellow][bold][keybind="RMCActivateAttachableStock"][/bold][/color]: Активировать приклад.
+
+    ## Передвижение
+    Вы можете передвигаться используя [color=yellow][bold][keybind="MoveUp"][keybind="MoveLeft"][keybind="MoveDown"][keybind="MoveRight"][/bold][/color].
+    При удерживании клавиш [color=yellow][bold][keybind="Walk"][/bold][/color], вы будете двигаться со скоростью ходьбы.
+
+    Вы можете переключить ходьбу на [color=cyan]toggle[/color] в меню управления.
+
+    [color=cyan]Перетягивание[/color] объектов осуществляется при помощи [color=yellow][bold][keybind="TryPullObject"][/bold][/color].
+    Пока вы тянете объект, вы можете передвигать в сторону курсора  [color=yellow][bold][keybind="MovePulledObject"][/bold][/color].
+    Нажатие [color=yellow][bold][keybind="ReleasePulledObject"][/bold][/color] приведёт к отпусканию объекта, который вы держите.
+
+    ## Взаимодействия
+    Общие взаимодействия выполняются с помощью [color=yellow][bold][keybind="Use"][/bold][/color].
+    Они [bold]зависят от констекста[/bold] и могут зависеть от объекта в основной руке.
+    Вы также можете нажать [color=yellow][bold][keybind="AltActivateItemInWorld"][/bold][/color] чтобы выполнить [bold] альтернативное взаимодействие [/bold].
+
+    Чтобы исполнить [color=cyan]базовые взаимодействия[/color], используй [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color].
+    Это подобно [bold]взаимодействию с объектом пустой рукой[/bold].
+    Нажатие на [color=yellow][bold][keybind="ActivateItemInHand"][/bold][/color] вызывает тот же эффект для текущего предмета в руке.
+    Чаще всего используется для базовых взаимодействий при использовании руки, занятой предметом. К примеру открывание двери занятой рукой.
+
+    Наведение курсора на объект и нажатие [color=yellow][bold][keybind="UIRightClick"/][/bold][/color] открывает [color=cyan]контекстное меню[/color].
+    Это не только помогает разобраться в куче вещей, но и позволяет выполнять [bold]дополнительные взаимодействия.[/bold]
+
+    [color=cyan]Осмотр объектов[/color] выполняется при помощи [color=yellow][bold][keybind="ExamineEntity"][/bold][/color], это действие выводит окно с именем объекта, небольшим описанием и другими важными деталями.
+    [italic]Осмотр вещей вокруг вас поможет понять их свойства[/italic].
+
+    ## Руки
+    Использование [color=yellow][bold][keybind="Use"][/bold][/color] на объектах в мире переместит их в вашу активную руку.
+    Вы можете сменить текущую активную руку при помощи [color=yellow][bold][keybind="SwapHands"][/bold][/color].
+
+    Вы можете [color=cyan] уронить [/color] объект, который держите, нажав на [color=yellow][bold][keybind="Drop"][/bold][/color] или же [color=cyan]бросить его[/color] в сторону курсора [color=yellow][bold][keybind="ThrowItemInHand"][/bold][/color].
+
+    ## Инвентарь
+    Вы можете [color=cyan]открыть [/color] свой инвентарь нажав [color=yellow][bold][keybind="OpenInventoryMenu"][/bold][/color].
+    Каждая позиция в вашем HUD (интерфейсе) может быть заполнена соответствующим [bold]предметом[/bold] или [bold]элементом одежды[/bold].
+
+    Два слота в интерфейсе ответственны за ваши [bold]сумку и пояс[/bold].
+    Вы можете открыть их используя [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color] на них или нажав на иконку в [bold]их нижней правой части[/bold].
+
+    Нажав на [color=yellow][bold][keybind="MoveStoredItem"][/bold][/color] вы [color=cyan]достанете предмет[/color] из рюкзака.
+    Во время перетаскивания нажатие на [color=yellow][bold][keybind="RotateStoredItem"][/bold][/color] приведёт к [color=cyan]вращению[/color] предмета.
+
+    Вы всё ещё можете проводить обычные взаимодействия с предметами в рюкзаке, включая [color=cyan]осмотр[/color] и открытие [color=cyan]контекстного меню[/color].
+
+    ## Камера
+    Камера может [color=cyan]фокусироваться[/color] и расфокусироваться при нажатии [color=yellow][bold][keybind="ZoomIn"][/bold][/color] и [color=yellow][bold][keybind="ZoomOut"][/bold][/color] и может быть возвращена к исходному состоянию нажатием [color=yellow][bold][keybind="ResetZoom"][/bold][/color].
+    Подобным образом вы можете [color=cyan]вращать[/color] её влево и вправо [color=yellow][bold][keybind="CameraRotateLeft"][/bold][/color] и [color=yellow][bold][keybind="CameraRotateRight"][/bold][/color].
+    Вы можете сбросить ротацию камеры при помощи [color=yellow][bold][keybind="CameraReset"][/bold][/color].
+
+  </Document>

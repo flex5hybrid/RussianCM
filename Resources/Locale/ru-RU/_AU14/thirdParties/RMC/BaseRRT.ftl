@@ -1,0 +1,15 @@
+ent-AU14BaseMobSpeciesOrganicRMCRRT-name = Урист Ц.М. МакХэндс
+ent-RMCBeltSmartGunOperatorPistolFilledL165A1-name = M802 разгрузка оператора смартгана
+ent-RMCBeltSmartGunOperatorPistolFilledL165A1-desc = M802 — ограниченная серия снаряжения КМП США, предназначенная для переноски боеприпасов для смартгана и табельного оружия.
+ent-RMCPouchDrumPMCFilled-name = подсумок для барабанов смартгана
+ent-RMCPouchDrumPMCFilled-desc = Тяжёлый подсумок, предназначенный для переноски большого количества барабанов для смартгана.
+ent-AU14RMCRRTBackpackCommander-name = малый рюкзак королевского морпеха
+ent-AU14RMCRRTBackpackCommander-desc = Стандартный рюкзак сил Империи Трёх Миров. Предназначен для перевозки снаряжения на поле боя.
+ent-AU14RMCRRTBackpackRifleman-name = малый рюкзак королевского морпеха
+ent-AU14RMCRRTBackpackRifleman-desc = Стандартный рюкзак сил Империи Трёх Миров. Предназначен для перевозки снаряжения на поле боя.
+ent-AU14RMCRRTBackpackBreacher-name = малый рюкзак королевского морпеха
+ent-AU14RMCRRTBackpackBreacher-desc = Стандартный рюкзак сил Империи Трёх Миров. Предназначен для перевозки снаряжения на поле боя.
+ent-AU14RMCRRTBackpackMarksman-name = малый рюкзак королевского морпеха
+ent-AU14RMCRRTBackpackMarksman-desc = Стандартный рюкзак сил Империи Трёх Миров. Предназначен для перевозки снаряжения на поле боя.
+ent-AU14RMCRTTPouchMagazineL90A2-name = подсумок для магазинов
+ent-AU14RMCRTTPouchMagazineL90A2-desc = Может вмещать магазины.

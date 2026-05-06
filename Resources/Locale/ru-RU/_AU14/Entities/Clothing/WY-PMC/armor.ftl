@@ -1,0 +1,10 @@
+ent-AU14WYPMCArmor-name = Броня ЧВК ВЕ-Ю
+ent-AU14WYPMCArmor-desc = Комплект брони ЧВК Weyland-Yutani.
+ent-AU14WYPMCArmorMin-name = Минималистичная броня ЧВК ВЕ-Ю
+ent-AU14WYPMCArmorMin-desc = Комплект брони ЧВК Weyland-Yutani. Эта пара довольно мала по сравнению со стандартной и обеспечит меньшую защиту.
+ent-AU14SuitBioWeYu-name = Биокостюм WeYu-TSS MK I
+ent-AU14SuitBioWeYu-desc = «Биокостюм Weyland-Yutani TerraScientia MK I». Продвинутый лёгкий биокостюм, разработанный Weston-Yamada. Костюм защищает от биологического заражения.
+ent-AU14WYPMCArmorEngineer-name = Броня инженера ЧВК ВЕ-Ю
+ent-AU14WYPMCArmorEngineer-desc = Комплект брони инженера ЧВК Weyland-Yutani.
+ent-AU14WYPPOArmor-name = Броня офицера личной охраны ВЕ-Ю
+ent-AU14WYPPOArmor-desc = Комплект брони офицера личной охраны Weyland-Yutani. Эта пара довольно мала по сравнению со стандартной и обеспечит меньшую защиту.

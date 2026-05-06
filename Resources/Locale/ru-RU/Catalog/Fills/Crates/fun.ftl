@@ -1,0 +1,72 @@
+ent-CratePlants-name = plant crate
+ent-CratePlants-desc = A variety pack of potted plants to spruce up your station!
+
+ent-CrateFunPlushie-name = plushie crate
+ent-CrateFunPlushie-desc = A buncha soft plushies. Throw them around and then wonder how you're gonna explain this purchase to NT.
+
+ent-CrateFunLizardPlushieBulk-name = bulk lizard plushie crate
+ent-CrateFunLizardPlushieBulk-desc = A buncha soft lizard plushies. Throw them around and then wonder how you're gonna explain this purchase to NT.
+
+ent-CrateFunSharkPlushieBulk-name = bulk soft toy shark crate
+ent-CrateFunSharkPlushieBulk-desc = A crate filled with a variety of everyone's favorite finned friend. Rawr!
+
+ent-CrateFunInstrumentsVariety-name = variety instrument collection
+ent-CrateFunInstrumentsVariety-desc = Get your sad station movin' and groovin' with this catch-all variety pack! Contains seven different instruments.
+
+ent-CrateFunInstrumentsBrass-name = brass instrument ensemble crate
+ent-CrateFunInstrumentsBrass-desc = Bring some jazz to the station with the brass ensemble. Contains a variety of brass instruments for the whole station to play.
+
+ent-CrateFunInstrumentsString-name = string instrument ensemble crate
+ent-CrateFunInstrumentsString-desc = Pluck or pick, slap or shred! Play a smooth melody or melt peoples' faces with this package of stringed instruments.
+
+ent-CrateFunInstrumentsWoodwind-name = woodwind instrument ensemble crate
+ent-CrateFunInstrumentsWoodwind-desc = If atmos is good at their job, use air to play music with these woodwind instruments! Real wood not guaranteed with every item.
+
+ent-CrateFunInstrumentsKeyedPercussion-name = keyed/percussion instrument ensemble crate
+ent-CrateFunInstrumentsKeyedPercussion-desc = Hit some keys with some sticks or your hands, with this Keyed and Percussion instrument ensemble crate.
+
+ent-CrateFunInstrumentsSpecial-name = special instrument collector's crate
+ent-CrateFunInstrumentsSpecial-desc = Create some noise with this special collection of arguably-instruments! Centcomm is not responsible for any trauma caused by the contents.
+
+ent-CrateFunArtSupplies-name = art supplies
+ent-CrateFunArtSupplies-desc = Make some happy little accidents with lots of crayons!
+
+ent-CrateFunBoardGames-name = board game crate
+ent-CrateFunBoardGames-desc = Game nights have been proven to either decrease boredom or increase murderous rage depending on the game.
+
+ent-CrateFunSadTromboneImplants-name = sad trombone implants
+ent-CrateFunSadTromboneImplants-desc = Death's never been so fun before! Implant these to make dying a bit more happy.
+
+ent-CrateFunLightImplants-name = light implants
+ent-CrateFunLightImplants-desc = Light up your skin with these implants!
+
+ent-CrateFunParty-name = party crate
+ent-CrateFunParty-desc = An entire party just waiting for you to open it. Includes party favors, party beverages, and even a cake.
+
+ent-CrateFunWaterGuns-name = water gun crate
+ent-CrateFunWaterGuns-desc = A summer special with a variety of brightly colored water guns. Water not included.
+
+ent-CrateFunFoamGuns-name = Foam Force crate
+ent-CrateFunFoamGuns-desc = Contains four Foam Force rifles, some grenades, and extra ammo. It's [REDACTED] or nothing!
+
+ent-CrateFunBoxing-name = boxing crate
+ent-CrateFunBoxing-desc = Want to set up an underground fight club or host a tournament amongst station crew? This crate is for you!
+
+ent-CrateFunBikeHornImplants-name = bike horn implants
+ent-CrateFunBikeHornImplants-desc = A thousand honks a day keeps security officers away!
+
+ent-CrateFunMysteryFigurines-name = mystery figure crate
+ent-CrateFunMysteryFigurines-desc = A collection of 10 Mystery Figurine boxes. Duplicates non refundable.
+
+ent-CrateFunDartsSet-name = dartboard box set
+ent-CrateFunDartsSet-desc = A box with everything you need for a fun game of darts.
+
+ent-CrateFunScurret-name = hydrated scurret
+ent-CrateFunScurret-desc = Wait, what?
+
+ent-CrateFunPirate-name = pirate chest
+ent-CrateFunPirate-desc = A space pirate chest, not for station lubbers.
+
+ent-CrateFunToyBox-name = toy box
+ent-CrateFunToyBox-desc = A box overflowing with fun.
+

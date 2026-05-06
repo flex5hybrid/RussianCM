@@ -5,12 +5,13 @@
   description: cm-department-AuxiliarySupport-description
   color: "#C38312"
   roles:
-  - CMAuxiliarySupportOfficer
-  - CMPilotDropship
-  - CMPilotGunship
-  - CMDropshipCrewChief
-  - CMIntelOfficer
-  - CMSeniorEnlistedAdvisor
+    - CMAuxiliarySupportOfficer
+    - CMPilotDropship
+    - CMPilotGunship
+    - CMDropshipCrewChief
+    - CMIntelOfficer
+    - CMSeniorEnlistedAdvisor
+    - RMCJobSynthetic
   departmentRadio: MarineJTAC
   headOfDepartment: CMAuxiliarySupportOfficer
   hidden: true

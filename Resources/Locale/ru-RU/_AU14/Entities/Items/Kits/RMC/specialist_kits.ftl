@@ -1,0 +1,12 @@
+ent-AU14KitRMCPointmanL90B-name = Набор щитовка L90/B КМП ИТМ
+ent-AU14KitRMCPointmanL90B-desc = Обычная коробка.
+ent-AU14KitRMCPointmanL23B-name = Набор щитовика L23B КМП ИТМ
+ent-AU14KitRMCPointmanL23B-desc = Обычная коробка.
+ent-AU14KitRMCMarksmanL90M-name = Набор меткого стрелка L90M КМП ИТМ
+ent-AU14KitRMCMarksmanL90M-desc = Обычная коробка.
+ent-AU14KitRMCMarksmanL64A3-name = Набор меткого стрелка L64A3 КМП ИТМ
+ent-AU14KitRMCMarksmanL64A3-desc = Обычная коробка.
+ent-AU14KitRMCMarksmanL164A3-name = Набор гранатомётчика L164A3 КМП ИТМ
+ent-AU14KitRMCMarksmanL164A3-desc = Обычная коробка.
+ent-AU14KitRMCPointman-name = Герметичный набор щитовка КМП ИТМ
+ent-AU14KitRMCPointman-desc = Герметичный набор, содержащий снаряжение щитовика. Этикетка нечитаема. Содержит либо набор щитовика L90B, либо L23B.

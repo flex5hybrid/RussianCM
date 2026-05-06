@@ -1,0 +1,25 @@
+name: Notify Discord on Issue Opened
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  new_issue_send_discord:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send New Issue
+        if: always()
+        uses: sarisia/actions-status-discord@v1
+        with:
+          # берем из секрета, как настроили ранее
+          webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          # текст уведомления: номер, заголовок и ссылка на issue
+          description: |
+            🔔 **Новая Issue**
+            [Номер ${{ github.event.issue.number }}](${{ github.event.issue.html_url }})
+            **${{ github.event.issue.title }}**
+            _от_ **${{ github.event.issue.user.login }}**
+          status: success
+          color: 0x5865F2 # Cиний

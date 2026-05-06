@@ -1,0 +1,17 @@
+ent-SquadSunRiders = Солнечные ездоки
+ent-SquadUnassigned = Не назначенный
+ent-SquadCLF = КЛФ
+ent-SquadSOF = ССО
+ent-SquadFORECON = ФОРЕКОН
+ent-SquadProvost = Провосты
+ent-SquadRoyalMarines = Королевские морпехи
+ent-SquadFreelancer = Свободный
+ent-SquadPMC = ЧВК
+ent-SquadSPP = СПН
+ent-SquadIntel = Разведка
+ent-SquadEcho = Эхо
+ent-SquadFoxtrot = Фокстрот
+ent-SquadDelta = Дельта
+ent-SquadCharlie = Чарли
+ent-SquadBravo = Браво
+ent-SquadAlpha = Альфа

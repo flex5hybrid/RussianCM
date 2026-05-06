@@ -29,6 +29,17 @@ public abstract class SharedChatSystem : EntitySystem
     public const char MentorPrefix = '}';
     public const char DefaultChannelKey = 'h';
 
+    //
+    // RUMC ADDITION TTS
+    //
+    public const int VoiceRange = 10; // how far voice goes in world units
+    public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
+    public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
+
+    ///
+    /// END
+    ///
+
     public static readonly ProtoId<RadioChannelPrototype> CommonChannel = "MarineCommon";
     public static readonly ProtoId<RadioChannelPrototype> HivemindChannel = "Hivemind";
 

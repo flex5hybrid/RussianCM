@@ -192,6 +192,139 @@ public sealed class PlayTimeTrackingManager : ISharedPlaytimeManager, IPostInjec
         FlushSingleTracker(data, time);
     }
 
+    // RUMC ADD FOR OFFLINE TRACKERS START
+    public async Task FlushTrackerById(NetUserId userId)
+    {
+        var playTimes = await _db.GetPlayTimes(userId, CancellationToken.None);
+
+        foreach (var timer in playTimes)
+        {
+            await _db.UpdatePlayTimes(new List<PlayTimeUpdate> { new PlayTimeUpdate(userId, timer.Tracker, timer.TimeSpent) });
+        }
+    }
+
+    public async Task SaveSessionById(NetUserId userId)
+    {
+        var playTimes = await _db.GetPlayTimes(userId, CancellationToken.None);
+
+        foreach (var timer in playTimes)
+        {
+            await _db.UpdatePlayTimes(new List<PlayTimeUpdate> { new PlayTimeUpdate(userId, timer.Tracker, timer.TimeSpent) });
+        }
+    }
+
+    public async Task AddTimeToTrackerById(NetUserId userId, string tracker, TimeSpan time)
+    {
+        foreach (var (session, data) in _playTimeData)
+        {
+            if (session.UserId == userId)
+            {
+                AddTimeToTracker(session, tracker, time);
+                return;
+            }
+        }
+
+        // игрок оффлайн
+        var playTimes = await _db.GetPlayTimes(userId, CancellationToken.None);
+
+        foreach (var timer in playTimes)
+        {
+            if (timer.Tracker == tracker)
+            {
+                timer.TimeSpent += time;
+
+                await _db.UpdatePlayTimes(new List<PlayTimeUpdate>
+            {
+                new(userId, tracker, timer.TimeSpent)
+            });
+
+                return;
+            }
+        }
+
+        await _db.UpdatePlayTimes(new List<PlayTimeUpdate>
+    {
+        new(userId, tracker, time)
+    });
+    }
+
+    public async Task AddTimeToOverallPlaytimeById(NetUserId userId, TimeSpan time)
+    {
+        foreach (var (session, data) in _playTimeData)
+        {
+            if (session.UserId == userId)
+            {
+                AddTimeToOverallPlaytime(session, time);
+                return;
+            }
+        }
+
+        var playTimes = await _db.GetPlayTimes(userId, CancellationToken.None);
+
+        foreach (var timer in playTimes)
+        {
+            if (timer.Tracker == PlayTimeTrackingShared.TrackerOverall)
+            {
+                timer.TimeSpent += time;
+
+                await _db.UpdatePlayTimes(new List<PlayTimeUpdate>
+            {
+                new(userId, timer.Tracker, timer.TimeSpent)
+            });
+
+                return;
+            }
+        }
+
+        await _db.UpdatePlayTimes(new List<PlayTimeUpdate>
+    {
+        new(userId, PlayTimeTrackingShared.TrackerOverall, time)
+    });
+    }
+
+    public async Task<TimeSpan> GetOverallPlaytimeById(NetUserId userId)
+    {
+        var playTimes = await _db.GetPlayTimes(userId, CancellationToken.None);
+
+        foreach (var timer in playTimes)
+        {
+            if (timer.Tracker == PlayTimeTrackingShared.TrackerOverall)
+            {
+                return timer.TimeSpent;
+            }
+        }
+
+        return TimeSpan.Zero;
+    }
+
+    public async Task<Dictionary<string, TimeSpan>> GetTrackerTimesById(NetUserId userId)
+    {
+        var playTimes = await _db.GetPlayTimes(userId, CancellationToken.None);
+        var trackerTimes = new Dictionary<string, TimeSpan>();
+
+        foreach (var timer in playTimes)
+        {
+            trackerTimes[timer.Tracker] = timer.TimeSpent;
+        }
+
+        return trackerTimes;
+    }
+
+    public async Task<TimeSpan> GetPlayTimeForTrackerById(NetUserId userId, string tracker)
+    {
+        var playTimes = await _db.GetPlayTimes(userId, CancellationToken.None);
+
+        foreach (var timer in playTimes)
+        {
+            if (timer.Tracker == tracker)
+            {
+                return timer.TimeSpent;
+            }
+        }
+
+        return TimeSpan.Zero;
+    }
+    // RUMC ADD FOR OFFLINE TRACKERS END
     private static void FlushSingleTracker(PlayTimeData data, TimeSpan time)
     {
         var delta = time - data.LastUpdate;

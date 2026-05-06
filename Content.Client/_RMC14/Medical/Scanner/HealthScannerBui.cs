@@ -982,8 +982,8 @@ public sealed class HealthScannerBui : BoundUserInterface
 
     private void OpenChangeHolocardUI(BaseButton.ButtonEventArgs obj)
     {
-        if (_player.LocalEntity is { } viewer)
-            SendMessage(new OpenChangeHolocardUIEvent(_entities.GetNetEntity(viewer), _lastTarget));
+        if (_player.LocalEntity is not null && _entities.GetEntity(_lastTarget) is { Valid: true })
+            _entities.EntityNetManager.SendSystemNetworkMessage(new OpenHolocardFromScanEvent(_lastTarget));
     }
 
     private static void AddGroup(RichTextLabel label, Color color, Content.Shared.FixedPoint.FixedPoint2 damage, bool untreated, string labelStr)

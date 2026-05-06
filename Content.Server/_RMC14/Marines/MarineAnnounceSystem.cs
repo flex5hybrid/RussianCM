@@ -9,6 +9,7 @@ using Content.Shared._RMC14.Marines.Squads;
 using Content.Shared._RMC14.Rules;
 using Content.Shared._RMC14.Survivor;
 using Content.Shared.Chat;
+using Content.Shared.Corvax.TTS;
 using Content.Shared.Database;
 using Content.Shared.Ghost;
 using Content.Shared.Radio;
@@ -112,6 +113,27 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
         _ui.SetUiState(computer.Owner, MarineCommunicationsComputerUI.Key, state);
     }
 
+    private Filter BuildMarineAnnouncementFilter(Filter? filter, bool excludeSurvivors, string? faction)
+    {
+        filter ??= Filter.Empty().AddWhereAttachedEntity(e =>
+        {
+            var targetFaction = string.IsNullOrWhiteSpace(faction) ? "govfor" : faction.ToLowerInvariant();
+
+            if (TryComp<MarineComponent>(e, out var marine))
+            {
+                return !string.IsNullOrWhiteSpace(marine.Faction) &&
+                       string.Equals(marine.Faction, targetFaction, StringComparison.OrdinalIgnoreCase);
+            }
+
+            return HasComp<GhostComponent>(e);
+        });
+
+        if (excludeSurvivors)
+            filter.RemoveWhereAttachedEntity(HasComp<RMCSurvivorComponent>);
+
+        return filter;
+    }
+
     public override void AnnounceToMarines(
         string message,
         SoundSpecifier? sound = null,
@@ -119,27 +141,7 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
         bool excludeSurvivors = true,
         string? faction = null)
     {
-
-        if (filter == null)
-        {
-            var targetFaction = string.IsNullOrWhiteSpace(faction) ? "govfor" : faction.ToLowerInvariant();
-            filter = Filter.Empty().AddWhereAttachedEntity(e =>
-            {
-                if (TryComp<MarineComponent>(e, out var marine))
-                {
-                    return !string.IsNullOrWhiteSpace(marine.Faction) && string.Equals(marine.Faction, targetFaction, StringComparison.OrdinalIgnoreCase);
-                }
-
-                if (HasComp<GhostComponent>(e))
-                    return true;
-
-                return false;
-            });
-        }
-
-        if (excludeSurvivors)
-            filter.RemoveWhereAttachedEntity(HasComp<RMCSurvivorComponent>);
-
+        filter = BuildMarineAnnouncementFilter(filter, excludeSurvivors, faction);
         _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Radio, message, message, default, false, true, null);
         _audio.PlayGlobal(sound ?? DefaultAnnouncementSound, filter, true, AudioParams.Default.WithVolume(-2f));
     }
@@ -149,6 +151,7 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
         string? author = null,
         SoundSpecifier? sound = null)
     {
+        RaiseLocalEvent(new RMCAnnouncementMadeEvent(null, message)); // RuMC Announce TTS
         var wrappedMessage = FormatHighCommand(author, message);
         AnnounceToMarines(wrappedMessage);
     }
@@ -159,7 +162,6 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
         ProtoId<RadioChannelPrototype> channel)
     {
         base.AnnounceRadio(sender, message, channel);
-
         _adminLogs.Add(LogType.RMCMarineAnnounce, $"{ToPrettyString(sender):source} marine announced radio message: {message}");
         _radio.SendRadioMessage(sender, message, channel, sender);
     }
@@ -192,6 +194,9 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
             });
         }
 
+        filter = BuildMarineAnnouncementFilter(filter, true, faction);
+        RaiseLocalEvent(new RMCAnnouncementMadeEvent(source, message, filter)); // RuMC Announce TTS
+
         AnnounceToMarines(message, sound, filter);
         _adminLogs.Add(LogType.RMCMarineAnnounce, $"{ToPrettyString(source):player} ARES announced message: {message}");
     }
@@ -201,7 +206,6 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
         base.AnnounceSquad(message, squad, sound);
 
         var filter = Filter.Empty().AddWhereAttachedEntity(e => _squad.IsInSquad(e, squad));
-
         _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Radio, message, message, default, false, true, null);
         _audio.PlayGlobal(sound ?? DefaultSquadSound, filter, true, AudioParams.Default.WithVolume(-2f));
     }

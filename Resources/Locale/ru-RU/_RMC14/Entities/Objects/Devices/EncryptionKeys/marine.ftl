@@ -1,0 +1,10 @@
+ent-RMCEncryptionKeySunRiders = ключ шифрования «Санрайдерс»
+ent-RMCEncryptionKeyFORECON = ключ шифрования ФОРЭКОН
+ent-CMEncryptionKeySOF = ключ шифрования ССО
+ent-CMEncryptionKeyFoxtrot = ключ шифрования «Фокстрот»
+ent-CMEncryptionKeyEcho = ключ шифрования «Эхо»
+ent-CMEncryptionKeyDelta = ключ шифрования «Дельта»
+ent-CMEncryptionKeyCharlie = ключ шифрования «Чарли»
+ent-CMEncryptionKeyBravo = ключ шифрования «Браво»
+ent-CMEncryptionKeyAlpha = ключ шифрования «Альфа»
+ent-CMEncryptionKeySquadLeader = ключ шифрования командира отделения

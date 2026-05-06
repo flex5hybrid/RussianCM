@@ -6,6 +6,7 @@
     RMCRankParaCorporal: [ ]
   startingGear: RMCGearParaPilot
   icon: RMCJobIconParaPilot
+  playTimeTracker: RMCJobSurvivorMilitary
   spawnMenuRoleName: Royal Paramarine Fleet Air Arm Pilot (Survivor)
   special:
     - !type:AddComponentSpecial
@@ -14,6 +15,7 @@
           factions:
             - RoyalMarines
             - TSE
+        - type: RMCSurvivor
         - type: RMCAllowSuitStorage
         - type: IntelRescueSurvivorObjective
         - type: MotionDetectorTracked
@@ -26,7 +28,6 @@
           background:
             sprite: /Textures/_RMC14/Interface/map_blips.rsi
             state: background_para
-
         - type: JobPrefix
           prefix: rmc-job-prefix-paramarine
   hidden: true
@@ -35,9 +36,11 @@
   parent: RMCGearParaBase
   id: RMCGearParaPilot
   equipment:
+    id: RMCIDRoyalParamarinesPilot
     head: RMCHeadRoyalFlightHelmet
     jumpsuit: RMCJumpsuitMarineParaPDW90
     outerClothing: RMCArmorParaVest
+    back: RMCSatchelLightpackFilledPara
     suitstorage: RMCWeaponSMGPDW90TSE
 
 - type: entity

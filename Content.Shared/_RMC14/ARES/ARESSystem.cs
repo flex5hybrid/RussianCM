@@ -1,4 +1,6 @@
-﻿namespace Content.Shared._RMC14.ARES;
+﻿using Content.Shared.Corvax.TTS;
+
+namespace Content.Shared._RMC14.ARES;
 
 public sealed class ARESSystem : EntitySystem
 {
@@ -25,6 +27,7 @@ public sealed class ARESSystem : EntitySystem
         var uid = Spawn();
         _metaData.SetEntityName(uid, "ARES v3.2");
         var comp = EnsureComp<ARESComponent>(uid);
+        EnsureComp<TTSComponent>(uid).VoicePrototypeId = "ADJUTANT"; // RuMC TTS Announce
         return (uid, comp);
     }
 }

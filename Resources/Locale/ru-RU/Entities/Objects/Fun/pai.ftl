@@ -1,0 +1,24 @@
+ent-PersonalAI-name = personal ai device
+ent-PersonalAI-desc = Your electronic pal who's fun to be with!
+
+ent-SyndicatePersonalAI-name = syndicate personal ai device
+ent-SyndicatePersonalAI-desc = Your Syndicate pal who's fun to be with!
+
+ent-GoldenPersonalAI-name = golden personal ai device
+ent-GoldenPersonalAI-desc = Your electronic pal who's fun to be with! Special golden edition!
+
+ent-PotatoAI-name = potato artificial intelligence
+ent-PotatoAI-desc = It's a potato. You forced it to be sentient, you monster.
+
+ent-ActionPAIOpenShop-name = Software Catalog
+ent-ActionPAIOpenShop-desc = Install new software to assist your owner.
+
+ent-ActionPAIMassScanner-name = Mass Scanner
+ent-ActionPAIMassScanner-desc = View a mass scanner interface.
+
+ent-ActionPAIPlayMidi-name = Play MIDI
+ent-ActionPAIPlayMidi-desc = Open your portable MIDI interface to soothe your owner.
+
+ent-ActionPAIOpenMap-name = Open Map
+ent-ActionPAIOpenMap-desc = Open your map interface and guide your owner.
+

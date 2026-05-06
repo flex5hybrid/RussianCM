@@ -490,7 +490,7 @@ public sealed class CMUSurgeryDispatchSystem : EntitySystem
 
             entries.Add(new CMUSurgeryEntry(
                 metadata.Surgery,
-                metadata.DisplayName ?? surgeryProto.Name,
+                metadata.DisplayName != null ? Loc.GetString(metadata.DisplayName) : surgeryProto.Name,
                 resolved.StepLabel,
                 resolved.ToolCategory,
                 resolved.AbsoluteStepIndex,

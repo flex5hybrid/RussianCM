@@ -1,0 +1,11 @@
+ent-AU14AICoreMUTHURCivilian-name = ИИ MU/TH/UR 6000
+ent-AU14AICoreMUTHURCivilian-desc = Это система искусственного интеллекта для мониторинга космических кораблей, колоний или станций. Произведено Weyland-Yutani.
+ent-AU14AICoreCPUMUTHUR-name = Центральный процессор ИИ MU/TH/UR 6000
+ent-AU14AICoreCPUMUTHUR-desc = Это центральный процессор MU/TH/UR. Изготовленный в корпусе, способном выдержать ядерный взрыв, процессор также содержит регистратор чёрного ящика MU/TH/UR.
+ent-AU14AICoreSubstrateMUTHUR-name = Субстрат ИИ MU/TH/UR 6000
+ent-AU14AICoreSubstrateMUTHUR-desc = Субстрат памяти MU/TH/UR, содержащий сложные протоколы и информацию. Ограниченные возможности могут работать только на субстрате, без функционирования основного блока MU/TH/UR.
+ent-MUTHURAICoreProcessor-name = Процессор ИИ MU/TH/UR 6000
+ent-MUTHURAICoreProcessor-desc = Внешний процессор для MU/TH/UR, используемый для обработки огромных объёмов информации.
+ent-AU14AreaGAAIMUTHUR-name = Интерфейс ИИ MU/TH/UR 6000
+ent-AU14ChairComfyAIMUTHUR-name = кресло-интерфейс ИИ MU/TH/UR 6000
+ent-AU14ChairComfyAIMUTHUR-desc = Функциональное кресло, предназначенное для комфортного размещения одного человека с целью облегчения взаимодействия с корабельным ИИ.

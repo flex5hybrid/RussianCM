@@ -1,11 +1,14 @@
 - type: entity
   parent:
-  - CMXenoUndeveloped
-  - CMXenoFlammable
-  - RMCXenoVentCrawler
+    - CMXenoUndeveloped
+    - CMXenoFlammable
+    - RMCXenoVentCrawler
   id: CMXenoLarva
-  name: Larva
+  name: Личинка
   components:
+  - type: TTS
+    voice: SOPHRONIA_FRANKLIN
+    faction: Xeno
   - type: GuideHelp
     guides:
     - RMCGuideRoleDrone

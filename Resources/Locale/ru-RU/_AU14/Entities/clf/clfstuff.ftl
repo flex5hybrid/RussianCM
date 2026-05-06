@@ -1,0 +1,17 @@
+ent-AU14CLFObjectiveWeaponsVendor-name = Стойка снабжения КОФ
+ent-AU14CLFObjectiveWeaponsVendor-desc = Схрон с ценным оружием, доступ к которому возможен только с использованием оперативных средств КОФ.
+ent-safehousemarker-name = Маркер убежища
+ent-AU14CrateCLFinitalTools-name = Ящик
+ent-AU14CrateCLFinitalTools-desc = Содержит несколько инструментов
+ent-CMFaxCLF-name = ФАКС
+ent-CMFaxCLF-desc = Лучший и единственный друг связного.
+ent-AU14WeaponRevolverM44Inscribed-name = гравированный боевой револьвер M44
+ent-AU14WeaponRevolverM44Inscribed-desc = Сильно поношенный боевой револьвер M44 с грубыми гравировками, нацарапанными на стволе и рукояти. Слова «СВОБОДА ИЛИ СМЕРТЬ» выгравированы вдоль боковой стороны. Это оружие явно повидало много боёв.
+ent-AU14TattooGun-name = Тату машинка
+ent-AU14TattooGun-desc = Используется для посвящения людей в КОФ.
+ent-AU14TattooInkCartridge-name = картридж с тату-краской
+ent-AU14TattooInkCartridge-desc = Маленький картридж с тёмной краской для использования с тату машинкой.
+ent-AU14CMJumpsuitColonistCLF-name = форма колониста
+ent-AU14CMJumpsuitColonistCLF-desc = Стильный серо-зелёный комбинезон — стандартная форма для колонистов. К воротнику пристёгнут небольшой наушник.
+ent-AU14RMCJumpsuitCivilianCLF-name = серая рабочая форма
+ent-AU14RMCJumpsuitCivilianCLF-desc = Стильный серый комбинезон, популярный среди контрактников ООН на фронтире. К воротнику пристёгнут небольшой наушник.

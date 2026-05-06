@@ -1,0 +1,1 @@
+ent-cultistJob-name = Культист

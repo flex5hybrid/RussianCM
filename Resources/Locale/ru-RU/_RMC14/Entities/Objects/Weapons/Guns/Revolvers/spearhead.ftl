@@ -1,0 +1,13 @@
+ent-RMCBulletRevolver357Hollowpoint = пуля (.357) экспансивная
+ent-RMCBulletRevolver357 = пуля (.357)
+ent-RMCCartridgeRevolver357Hollowpoint = патрон (.357) экспансивный
+ent-RMCCartridgeRevolver357 = патрон (.357)
+ent-RMCSpeedLoader357Hollowpoint = Спидлоадер экспансивными (.357)
+  .desc = Револьверный спидлоадер, снаряженный экспансивными патронами.
+ent-RMCSpeedLoader357 = Спидлоадер (.357)
+  .desc = Револьверный спидлоадер.
+ent-RMCBaseSpeedLoader357 = Спидлоадер (.357)
+ent-RMCWeaponRevolverSpearheadCustom = Кастомный авторевольвер "Спирхед"
+  .desc = Автоматический револьвер под патрон .357, изготовленный на заказ из темного металла с деревянной рукоятью, явно созданный для человека со вкусом.
+ent-RMCWeaponRevolverSpearhead = Авторевольвер БКМ "Спирхед"
+  .desc = Массивный револьвер, который иногда носят БКМ, а также сотрудники гражданских правоохранительных органов. Использует патроны .357 Magnum.

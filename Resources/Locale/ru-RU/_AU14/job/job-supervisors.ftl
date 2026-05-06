@@ -1,0 +1,12 @@
+au14-job-supervisors-platco = Командир взвода
+au14-job-supervisors-coyco = Штаб роты
+au14-job-supervisors-civiliankellandwarden = Компания, местные правоохранительные органы
+au14-job-supervisors-loner = Ты сам, и только ты
+au14-job-supervisors-foreman = Твой бригадир, администрация колонии
+au14-job-supervisors-mobboss = Интересы твоей семьи
+au14-job-supervisors-mobgoon = Глава семьи
+au14-job-supervisors-wy = Высший руководитель корпорации
+au14-job-supervisors-workingjoe-military = Командир взвода, ядро ИИ военного корабля
+au14-job-supervisors-workingjoe-colony = Администратор колонии, ядро ИИ колонии
+au14-job-supervisors-orbital = Орбитальный менеджер
+au14-job-supervisors-orbitalmanager = Менеджер солнечной системы

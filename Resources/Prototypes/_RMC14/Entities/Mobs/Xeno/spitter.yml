@@ -1,16 +1,19 @@
 - type: entity
   parent:
-  - CMXenoDeveloped
-  - CMXenoTail
-  - CMXenoFlammable
-  - RMCXenoSpeechSounds
-  - RMCXenoCommendationReceiver
-  - RMCXenoMobCollision
-  - RMCXenoVentCrawler
+    - CMXenoDeveloped
+    - CMXenoTail
+    - CMXenoFlammable
+    - RMCXenoSpeechSounds
+    - RMCXenoCommendationReceiver
+    - RMCXenoMobCollision
+    - RMCXenoVentCrawler
   id: CMXenoSpitter
-  name: Spitter
-  description: A gross, oozing alien of some kind.
+  name: Плеватель
+  description: Какой-то отвратительный, склизкий инопланетянин.
   components:
+  - type: TTS
+    voice: REXXAR
+    faction: Xeno
   - type: GuideHelp
     guides:
     - RMCGuideRoleSpitter
@@ -83,9 +86,8 @@
       groups:
         Brute: 25
   - type: Tackle
-    min: 2
-    max: 6
-    chance: 0.45
+    min: 4
+    max: 4
     stunMin: 4
     stunMax: 5
   - type: MovementSpeedModifier

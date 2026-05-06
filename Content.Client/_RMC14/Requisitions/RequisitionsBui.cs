@@ -49,35 +49,35 @@ public sealed class RequisitionsBui(EntityUid owner, Enum uiKey) : BoundUserInte
     {
         _window ??= this.CreateWindow<RequisitionsWindow>();
 
-        var platformLabel = "No platform";
-        var platformButtonLabel = "No platform";
+        var platformLabel = "Нет платформы";
+        var platformButtonLabel = "Нет платформы";
         var platformButtonDisabled = false;
         bool? raise = null;
         switch (uiState.PlatformLowered)
         {
             case Lowered or Raised when uiState.Busy:
-                platformLabel = $"Platform position: {uiState.PlatformLowered}";
-                platformButtonLabel = "ASRS is busy";
+                platformLabel = $"Положение платформы: {uiState.PlatformLowered}";
+                platformButtonLabel = "ASRS занят";
                 platformButtonDisabled = true;
                 break;
             case Lowered:
-                platformButtonLabel = "Raise platform";
-                platformLabel = "Platform position: Lowered";
+                platformButtonLabel = "Поднять платформу";
+                platformLabel = "Положение платформы: Опущена";
                 raise = true;
                 break;
             case Raised:
-                platformButtonLabel = "Lower platform";
-                platformLabel = "Platform position: Raised";
+                platformButtonLabel = "Опустить платформу";
+                platformLabel = "Положение платформы: Поднята";
                 raise = false;
                 break;
             case Lowering:
-                platformButtonLabel = "Please wait";
-                platformLabel = "Platform lowering...";
+                platformButtonLabel = "Пожалуйста, подождите";
+                platformLabel = "Платформа опускается...";
                 platformButtonDisabled = true;
                 break;
             case Raising:
-                platformButtonLabel = "Please wait";
-                platformLabel = "Platform raising...";
+                platformButtonLabel = "Пожалуйста, подождите";
+                platformLabel = "Платформа поднимается...";
                 platformButtonDisabled = true;
                 break;
             case null:
@@ -96,14 +96,14 @@ public sealed class RequisitionsBui(EntityUid owner, Enum uiKey) : BoundUserInte
         }
 
         var budget = new FormattedMessage();
-        budget.AddMarkupOrThrow($"[bold]Supply budget: ${uiState.Balance}[/bold]");
+        budget.AddMarkupOrThrow($"[bold]Бюджет поставок: ${uiState.Balance}[/bold]");
         _window.MainView.BudgetLabel.SetMessage(budget);
         _window.OrderCategoriesView.BudgetLabel.SetMessage(budget);
         _window.CategoryView.BudgetLabel.SetMessage(budget);
         _window.OrderSearchView.BudgetLabel.SetMessage(budget);
 
         var categoryHeader = new FormattedMessage();
-        categoryHeader.AddMarkupOrThrow("[bold]Select a category[/bold]");
+        categoryHeader.AddMarkupOrThrow("[bold]Выберите категорию[/bold]");
         _window.OrderCategoriesView.CategoryHeaderLabel.SetMessage(categoryHeader);
         _window.OrderCategoriesView.CategoriesContainer.DisposeAllChildren();
 
@@ -165,7 +165,7 @@ public sealed class RequisitionsBui(EntityUid owner, Enum uiKey) : BoundUserInte
 
         var category = computer.Categories[categoryIndex];
         var requestMsg = new FormattedMessage();
-        requestMsg.AddMarkupOrThrow($"[bold]Request from: {category.Name}[/bold]");
+        requestMsg.AddMarkupOrThrow($"[bold]Запрос от: {category.Name}[/bold]");
         _window.CategoryView.RequestFromLabel.SetMessage(requestMsg);
 
         var state = State as RequisitionsBuiState;
@@ -229,7 +229,7 @@ public sealed class RequisitionsBui(EntityUid owner, Enum uiKey) : BoundUserInte
                 continue;
 
             var categoryHeader = new FormattedMessage();
-            categoryHeader.AddMarkupOrThrow($"[bold]Request from: {category.Name}[/bold]");
+            categoryHeader.AddMarkupOrThrow($"[bold]Запрос от: {category.Name}[/bold]");
             categoryGroup.GroupLabel.SetMessage(categoryHeader);
 
             _window.OrderSearchView.ResultContainer.AddChild(categoryGroup);

@@ -1,0 +1,9 @@
+ent-RMCCartridge10x20mmHEAP = патрон ОБП (10x20мм)
+ent-CMCartridge10x20mmAP = патрон ББ (10x20мм)
+ent-CMCartridge10x20mm = патрон (10x20мм)
+ent-CMMagazineSMGM63Ext = расширенный магазин M63 (10x20мм)
+ent-RMCMagazineSMGM63HEAP = магазин M63 ОБП (10x20мм)
+ent-CMMagazineSMGM63AP = магазин M63 ББ (10x20мм)
+ent-CMMagazineSMGM63 = магазин M63 ВС (10x20мм)
+ent-WeaponSMGM63 = пистолет-пулемёт M63
+  .desc = Пистолет-пулемёт M-63 от Aegis Battlefield Armaments. Иногда используется лёгкой пехотой, разведчиками, инженерами и медиками.

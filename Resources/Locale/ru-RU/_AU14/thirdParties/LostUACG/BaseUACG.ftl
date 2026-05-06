@@ -1,0 +1,13 @@
+ent-AU14BaseMobSpeciesOrganicUACG-name = Урист Ц.М. МакХэндс
+ent-AU14UACGBeltFilledM20a-name = Разгрузка для боеприпасов M276
+ent-AU14UACGBeltFilledM20a-desc = M276 — стандартное снаряжение КМП США. Состоит из модульного пояса с различными клипсами. Это стандартный вариант, предназначенный для переноски боеприпасов.
+ent-AU14UACGPouchFilledM20a-name = подсумок для магазинов
+ent-AU14UACGPouchFilledM20a-desc = Может вмещать магазины.
+ent-AU14UACGCigPouch-name = большой универсальный подсумок
+ent-AU14UACGCigPouch-desc = Универсальный подсумок для переноски предметов разного размера.
+ent-AU14UACGPatrolRucksack-name = походный рюкзак IMP
+ent-AU14UACGPatrolRucksack-desc = Стандартный рюкзак, используемый тыловым персоналом. Иногда выдаётся боевым подразделениям для длительных экспедиций и рейдов в дальний космос.
+ent-AU14UACGPatrolRucksackAmmobearer-name = походный рюкзак IMP
+ent-AU14UACGPatrolRucksackAmmobearer-desc = Стандартный рюкзак, используемый тыловым персоналом. Иногда выдаётся боевым подразделениям для длительных экспедиций и рейдов в дальний космос.
+ent-AU14UACGAmmoBearerBelt-name = M276 G8-A универсальный подсумок
+ent-AU14UACGAmmoBearerBelt-desc = Небольшой лёгкий подсумок, который можно пристегнуть к броне M3 Pattern для дополнительного хранения. Новая модель G8-A, хоть и неудобная, также позволяет крепить её на пояс.

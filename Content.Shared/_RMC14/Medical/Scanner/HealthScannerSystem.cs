@@ -35,6 +35,7 @@ public sealed class HealthScannerSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedRMCBloodstreamSystem _rmcBloodstream = default!;
     [Dependency] private readonly RMCHandsSystem _rmcHands = default!;
+    [Dependency] private readonly RMCPulseSystem _rmcPulse = default!;
     [Dependency] private readonly SharedRMCTemperatureSystem _rmcTemperature = default!;
     [Dependency] private readonly RMCUnrevivableSystem _rmcUnrevivable = default!;
     [Dependency] private readonly SharedRottingSystem _rotting = default!;
@@ -193,6 +194,7 @@ public sealed class HealthScannerSystem : EntitySystem
         _rmcBloodstream.TryGetChemicalSolution(target, out _, out var chemicals);
         _rmcTemperature.TryGetCurrentTemperature(target, out var temperature);
 
+        var pulse = _rmcPulse.TryGetPulseReading(target, true, out _);
         var bleeding = _rmcBloodstream.IsBleeding(target);
         var state = new HealthScannerBuiState(GetNetEntity(target), blood, maxBlood, temperature, chemicals, bleeding);
         FillBaseMedicalReadout(target, state);
@@ -200,10 +202,11 @@ public sealed class HealthScannerSystem : EntitySystem
         EntityUid? examiner = null;
         if (_rmcHands.TryGetHolder(scanner, out var holder))
             examiner = holder;
-        var buildEv = new HealthScannerBuildStateEvent(scanner.Owner, target, examiner, state);
+        var uiState = new HealthScannerBuiState(state);
+        var buildEv = new HealthScannerBuildStateEvent(scanner.Owner, target, examiner, uiState);
         RaiseLocalEvent(scanner.Owner, ref buildEv);
 
-        _ui.SetUiState(scanner.Owner, HealthScannerUIKey.Key, state);
+        _ui.SetUiState(scanner.Owner, HealthScannerUIKey.Key, uiState);
     }
 
     private void FillBaseMedicalReadout(EntityUid target, HealthScannerBuiState state)

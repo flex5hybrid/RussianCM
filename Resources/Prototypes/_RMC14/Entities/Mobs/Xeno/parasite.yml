@@ -1,12 +1,15 @@
 - type: entity
   abstract: true
   parent:
-  - CMXenoUndeveloped
-  - CMXenoFlammable
-  - RMCXenoVentCrawler
+    - CMXenoUndeveloped
+    - CMXenoFlammable
+    - RMCXenoVentCrawler
   id: CMXenoParasiteBase
-  name: Facehugger
+  name: Лицехват
   components:
+  - type: TTS
+    voice: SHEOGORATH
+    faction: Xeno
   - type: GuideHelp
     guides:
     - RMCGuideRoleParasite

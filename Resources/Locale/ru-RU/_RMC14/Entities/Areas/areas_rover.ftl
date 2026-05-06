@@ -1,0 +1,2 @@
+ent-RMCAreaRover = УНС Ровер
+

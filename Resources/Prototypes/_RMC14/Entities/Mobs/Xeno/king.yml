@@ -68,6 +68,8 @@
       groups:
         Brute: 66
   - type: Tackle
+    min: 3
+    max: 3
     stunMin: 6
     stunMax: 10
   - type: Fixtures

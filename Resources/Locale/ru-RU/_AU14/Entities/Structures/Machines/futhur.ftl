@@ -1,0 +1,13 @@
+ent-AU14AICoreFARTHURGOVFOR-name = ИИ FAR/TH/UR 2600
+ent-AU14AICoreFARTHURGOVFOR-desc = Это система искусственного интеллекта для мониторинга космических кораблей, колоний или станций. Произведено Weyland-Yutani.
+ent-AU14AICoreFARTHUROPFOR-name = ИИ FAR/TH/UR 2600
+ent-AU14AICoreFARTHUROPFOR-desc = Это система искусственного интеллекта для мониторинга космических кораблей, колоний или станций. Произведено Weyland-Yutani.
+ent-AU14AICoreCPUFARTHUR-name = Центральный процессор ИИ FAR/TH/UR 2600
+ent-AU14AICoreCPUFARTHUR-desc = Это центральный процессор FAR/TH/UR. Изготовленный в корпусе, способном выдержать ядерный взрыв, процессор также содержит регистратор чёрного ящика FAR/TH/UR.
+ent-AU14AICoreSubstrateFARTHUR-name = Субстрат ИИ FAR/TH/UR 2600
+ent-AU14AICoreSubstrateFARTHUR-desc = Субстрат памяти FAR/TH/UR, содержащий сложные протоколы и информацию. Ограниченные возможности могут работать только на субстрате, без функционирования основного блока FAR/TH/UR.
+ent-FARTHURAICoreProcessor-name = Процессор ИИ FAR/TH/UR 2600
+ent-FARTHURAICoreProcessor-desc = Внешний процессор для FAR/TH/UR, используемый для обработки огромных объёмов информации.
+ent-AU14AreaGAAIFARTHUR-name = Интерфейс ИИ FAR/TH/UR 2600
+ent-AU14ChairComfyAIFARTHUR-name = кресло-интерфейс ИИ FAR/TH/UR 2600
+ent-AU14ChairComfyAIFARTHUR-desc = Функциональное кресло, предназначенное для комфортного размещения одного человека с целью облегчения взаимодействия с корабельным ИИ.

@@ -1,0 +1,1903 @@
+- type: ttsVoice
+  id: PAPICH
+  name: Папич
+  category: Стримеры
+  sex: Male
+  speaker: papich
+  roundStart: true
+
+- type: ttsVoice
+  id: BEBEY
+  name: Бэбэй
+  category: Стримеры
+  sex: Male
+  speaker: bebey
+  roundStart: true
+
+- type: ttsVoice
+  id: PUCHKOW
+  name: Дмитрий Пучков
+  category: Стримеры
+  sex: Male
+  speaker: puchkow
+  roundStart: true
+
+- type: ttsVoice
+  id: MORIARTI
+  name: Мориарти
+  category: Стримеры
+  sex: Male
+  speaker: moriarti
+  roundStart: true
+
+- type: ttsVoice
+  id: CHARLOTTE
+  name: Шарлотта
+  category: Стримеры
+  sex: Female
+  speaker: charlotte
+  roundStart: true
+
+- type: ttsVoice
+  id: PLANYA
+  name: Планя
+  category: Стримеры
+  sex: Female
+  speaker: planya
+  roundStart: true
+
+- type: ttsVoice
+  id: MANA
+  name: Мана
+  category: Стримеры
+  sex: Female
+  speaker: mana
+  roundStart: true
+
+- type: ttsVoice
+  id: AMINA
+  name: Амина
+  category: Стримеры
+  sex: Female
+  speaker: amina
+  roundStart: true
+
+- type: ttsVoice
+  id: BIDEN
+  name: Джо Байден
+  category: Политики
+  sex: Male
+  speaker: biden
+  roundStart: true
+
+- type: ttsVoice
+  id: OBAMA
+  name: Барак Обама
+  category: Политики
+  sex: Male
+  speaker: obama
+  roundStart: true
+
+- type: ttsVoice
+  id: TRUMP
+  name: Дональд Трамп
+  category: Политики
+  sex: Male
+  speaker: trump
+  roundStart: true
+
+- type: ttsVoice
+  id: DBKN2
+  name: Добакин
+  category: Стримеры
+  sex: Male
+  speaker: dbkn2
+  roundStart: true
+
+- type: ttsVoice
+  id: XRENOID
+  name: Хреноид
+  category: Стримеры
+  sex: Male
+  speaker: xrenoid
+  roundStart: true
+
+- type: ttsVoice
+  id: PLAYBOYZTV
+  name: PlayBoyzTV
+  category: Стримеры
+  sex: Male
+  speaker: playboyztv
+  roundStart: true
+
+- type: ttsVoice
+  id: BRIMAN
+  name: Уоллес Брин
+  category: Half-Life 2
+  sex: Male
+  speaker: briman
+  roundStart: true
+
+- type: ttsVoice
+  id: FATHER_GRIGORI
+  name: Отец Григорий
+  category: Half-Life 2
+  sex: Male
+  speaker: father_grigori
+  roundStart: true
+
+- type: ttsVoice
+  id: KLEINER
+  name: Доктор Кляйнер
+  category: Half-Life 2
+  sex: Male
+  speaker: kleiner
+  roundStart: true
+
+- type: ttsVoice
+  id: MOSSMAN
+  name: Джудит Моссман
+  category: Half-Life 2
+  sex: Female
+  speaker: mossman
+  roundStart: true
+
+- type: ttsVoice
+  id: VANCE
+  name: Илай Вэнс
+  category: Half-Life 2
+  sex: Male
+  speaker: vance
+  roundStart: true
+
+- type: ttsVoice
+  id: ALYX
+  name: Аликс Вэнс
+  category: Half-Life 2
+  sex: Female
+  speaker: alyx
+  roundStart: true
+
+- type: ttsVoice
+  id: GMAN
+  name: G-Man
+  category: Half-Life 2
+  sex: Male
+  speaker: gman
+  roundStart: true
+
+- type: ttsVoice
+  id: BARNI
+  name: Барни Калхун
+  category: Half-Life 2
+  sex: Male
+  speaker: barni
+  roundStart: true
+
+- type: ttsVoice
+  id: NECO
+  name: Неко-Арк
+  category: Другое
+  sex: Female
+  speaker: neco
+  roundStart: true
+
+- type: ttsVoice
+  id: NECO_ARC_2
+  name: Неко-Арк 2
+  category: Другое
+  sex: Female
+  speaker: neco_arc_2
+  roundStart: true
+
+- type: ttsVoice
+  id: ANGRY_NECO_ARC
+  name: Злая Неко-Арк
+  category: Другое
+  sex: Female
+  speaker: angry_neco_arc
+  roundStart: true
+
+- type: ttsVoice
+  id: VILLAGER
+  name: Житель
+  category: Другое
+  sex: Male
+  speaker: villager
+  roundStart: true
+
+- type: ttsVoice
+  id: SQUIDWARD
+  name: Сквидвард
+  category: Другое
+  sex: Male
+  speaker: squidward
+  roundStart: true
+
+- type: ttsVoice
+  id: SENTRYBOT
+  name: SentryBot
+  category: Fallout
+  sex: Male
+  speaker: sentrybot
+  roundStart: true
+
+- type: ttsVoice
+  id: MOIRA_BROWN
+  name: Мойра Браун
+  category: Fallout
+  sex: Female
+  speaker: moira_brown
+  roundStart: true
+
+- type: ttsVoice
+  id: ROBERT_MACCREADY
+  name: Робер МакКриди
+  category: Fallout
+  sex: Male
+  speaker: robert_maccready
+  roundStart: true
+
+- type: ttsVoice
+  id: THREEDOG
+  name: Тридогнайт
+  category: Fallout
+  sex: Male
+  speaker: threedog
+  roundStart: true
+
+- type: ttsVoice
+  id: THREEDOG_RADIO
+  name: Тридогнайт Радио
+  category: Fallout
+  sex: Male
+  speaker: threedog_radio
+  roundStart: true
+
+- type: ttsVoice
+  id: MISTER_HANDY_FL3
+  name: Мистер Помощник
+  category: Fallout
+  sex: Male
+  speaker: mister_handy_fl3
+  roundStart: true
+
+- type: ttsVoice
+  id: MISTER_GUTSY_FL3
+  name: Мистер Храбрец
+  category: Fallout
+  sex: Male
+  speaker: mister_gutsy_fl3
+  roundStart: true
+
+- type: ttsVoice
+  id: JERICHO_FL3
+  name: Джерико
+  category: Fallout
+  sex: Male
+  speaker: jericho_fl3
+  roundStart: true
+
+- type: ttsVoice
+  id: ELDER_LYONS_FL3
+  name: Старейшина Лайонс
+  category: Fallout
+  sex: Male
+  speaker: elder_lyons_fl3
+  roundStart: true
+
+- type: ttsVoice
+  id: SARAH_LYONS_FL3
+  name: Сара Лайонс
+  category: Fallout
+  sex: Female
+  speaker: sarah_lyons_fl3
+  roundStart: true
+
+- type: ttsVoice
+  id: COLIN_MORIARTY_FL3
+  name: Колин Мориарти
+  category: Fallout
+  sex: Male
+  speaker: colin_moriarty_fl3
+  roundStart: true
+
+- type: ttsVoice
+  id: JOHN_HENRY_EDEN_FL3
+  name: Джон Генри Эдем
+  category: Fallout
+  sex: Male
+  speaker: john_henry_eden_fl3
+  roundStart: true
+
+- type: ttsVoice
+  id: SUPER_MUTANT_FL3
+  name: Супер-Мутант
+  category: Fallout
+  sex: Male
+  speaker: super_mutant_fl3
+  roundStart: true
+
+- type: ttsVoice
+  id: POLINA
+  name: Полина Морозова
+  category: Другое
+  sex: Female
+  speaker: polina
+  roundStart: true
+
+- type: ttsVoice
+  id: ROMKA
+  name: Рома Пятифанов
+  category: Другое
+  sex: Male
+  speaker: romka
+  roundStart: true
+
+- type: ttsVoice
+  id: BORIS_PETROV_FATHER_TB
+  name: Борис Петров
+  category: Другое
+  sex: Male
+  speaker: boris_petrov_father_tb
+  roundStart: true
+
+- type: ttsVoice
+  id: KARINA_PETROVA_TB
+  name: Карина Петрова
+  category: Другое
+  sex: Female
+  speaker: karina_petrova_tb
+  roundStart: true
+
+- type: ttsVoice
+  id: KATE_SMIRNOVA_TB
+  name: Катя Смирнова
+  category: Другое
+  sex: Female
+  speaker: kate_smirnova_tb
+  roundStart: true
+
+- type: ttsVoice
+  id: SEMEN_BABURIN_TB
+  name: Семён Бабурин
+  category: Другое
+  sex: Male
+  speaker: semen_baburin_tb
+  roundStart: true
+
+- type: ttsVoice
+  id: TIHONOV_TB
+  name: Лейтенант Тихонов
+  category: Другое
+  sex: Male
+  speaker: tihonov_tb
+  roundStart: true
+
+- type: ttsVoice
+  id: CICERO
+  name: Цицерон
+  category: Skyrim
+  sex: Male
+  speaker: cicero
+  roundStart: true
+
+- type: ttsVoice
+  id: SHEOGORATH
+  name: Шеогорат
+  category: Skyrim
+  sex: Male
+  speaker: sheogorath
+  roundStart: true
+
+- type: ttsVoice
+  id: KODLAKWHITEMANE
+  name: Кодлак Белая Грива
+  category: Skyrim
+  sex: Male
+  speaker: kodlakwhitemane
+  roundStart: true
+
+- type: ttsVoice
+  id: KHAJIIT
+  name: Каджит
+  category: Skyrim
+  sex: Male
+  speaker: khajiit
+  roundStart: true
+
+- type: ttsVoice
+  id: ELENWEN
+  name: Эленвен
+  category: Skyrim
+  sex: Female
+  speaker: elenwen
+  roundStart: true
+
+- type: ttsVoice
+  id: EMPEROR
+  name: Тит Мид II
+  category: Skyrim
+  sex: Male
+  speaker: emperor
+  roundStart: true
+
+- type: ttsVoice
+  id: GUARD
+  name: Стражник
+  category: Skyrim
+  sex: Male
+  speaker: guard
+  roundStart: true
+
+- type: ttsVoice
+  id: HAGRAVEN
+  name: Ворожея
+  category: Skyrim
+  sex: Male
+  speaker: hagraven
+  roundStart: true
+
+- type: ttsVoice
+  id: HERMAEUS_MORA
+  name: Хермеус Мора
+  category: Skyrim
+  sex: Male
+  speaker: hermaeus_mora
+  roundStart: true
+
+- type: ttsVoice
+  id: NORD
+  name: Норд
+  category: Skyrim
+  sex: Male
+  speaker: nord
+  roundStart: true
+
+- type: ttsVoice
+  id: ULFRIC
+  name: Ульфрик Буревестник
+  category: Skyrim
+  sex: Male
+  speaker: ulfric
+  roundStart: true
+
+- type: ttsVoice
+  id: ASTRID
+  name: Астрид
+  category: Skyrim
+  sex: Female
+  speaker: astrid
+  roundStart: true
+
+- type: ttsVoice
+  id: MAVEN
+  name: Мавен Чёрный Вереск
+  category: Skyrim
+  sex: Female
+  speaker: maven
+  roundStart: true
+
+- type: ttsVoice
+  id: NAZIR
+  name: Назир
+  category: Skyrim
+  sex: Male
+  speaker: nazir
+  roundStart: true
+
+- type: ttsVoice
+  id: FEMALE_COMMANDER
+  name: Женщина командир
+  category: Skyrim
+  sex: Female
+  speaker: female_commander
+  roundStart: true
+
+- type: ttsVoice
+  id: LORD_HARKON
+  name: Лорд Харкон
+  category: Skyrim
+  sex: Male
+  speaker: lord_harkon
+  roundStart: true
+
+- type: ttsVoice
+  id: SERANA
+  name: Серана
+  category: Skyrim
+  sex: Female
+  speaker: serana
+  roundStart: true
+
+- type: ttsVoice
+  id: GLADOS
+  name: GLaDOS
+  category: Portal
+  sex: Female
+  speaker: glados
+  roundStart: true
+
+- type: ttsVoice
+  id: ADVENTURE_CORE
+  name: Модуль Приключений
+  category: Portal
+  sex: Male
+  speaker: adventure_core
+  roundStart: true
+
+- type: ttsVoice
+  id: FACT_CORE
+  name: Модуль Фактов
+  category: Portal
+  sex: Male
+  speaker: fact_core
+  roundStart: true
+
+- type: ttsVoice
+  id: SPACE_CORE
+  name: Модуль Космоса
+  category: Portal
+  sex: Male
+  speaker: space_core
+  roundStart: true
+
+- type: ttsVoice
+  id: TURRET_FLOOR
+  name: Турель
+  category: Portal
+  sex: Female
+  speaker: turret_floor
+  roundStart: true
+
+- type: ttsVoice
+  id: GERALT
+  name: Геральт из Ривии
+  category: The Witcher
+  sex: Male
+  speaker: geralt
+  roundStart: true
+
+- type: ttsVoice
+  id: CIRILLA
+  name: Цирилла
+  category: The Witcher
+  sex: Female
+  speaker: cirilla
+  roundStart: true
+
+- type: ttsVoice
+  id: CERYS
+  name: Керис ан Крайт
+  category: The Witcher
+  sex: Female
+  speaker: cerys
+  roundStart: true
+
+- type: ttsVoice
+  id: LAMBERT
+  name: Ламберт
+  category: The Witcher
+  sex: Male
+  speaker: lambert
+  roundStart: true
+
+- type: ttsVoice
+  id: TRISS
+  name: Трисс
+  category: The Witcher
+  sex: Female
+  speaker: triss
+  roundStart: true
+
+- type: ttsVoice
+  id: KOVIR_NOBLEMAN
+  name: Ковир Ноблеман
+  category: The Witcher
+  sex: Male
+  speaker: kovir_nobleman
+  roundStart: true
+
+- type: ttsVoice
+  id: ZOLTAN_CHIVAY
+  name: Золтан Хивай
+  category: The Witcher
+  sex: Male
+  speaker: zoltan_chivay
+  roundStart: true
+
+- type: ttsVoice
+  id: VESEMIR
+  name: Весемир
+  category: The Witcher
+  sex: Male
+  speaker: vesemir
+  roundStart: true
+
+- type: ttsVoice
+  id: GUILLAUME_DE_LAUNFAL
+  name: Гильом де Лонфаль
+  category: The Witcher
+  sex: Male
+  speaker: guillaume_de_launfal
+  roundStart: true
+
+- type: ttsVoice
+  id: PHILIPPA_EILHART
+  name: Филиппа Эйльхарт
+  category: The Witcher
+  sex: Female
+  speaker: philippa_eilhart
+  roundStart: true
+
+- type: ttsVoice
+  id: EWALD_BORSODI
+  name: Эвальд Борсоди
+  category: The Witcher
+  sex: Male
+  speaker: ewald_borsodi
+  roundStart: true
+
+- type: ttsVoice
+  id: DANDELION
+  name: Лютик
+  category: The Witcher
+  sex: Male
+  speaker: dandelion
+  roundStart: true
+
+- type: ttsVoice
+  id: SHANI
+  name: Шани
+  category: The Witcher
+  sex: Female
+  speaker: shani
+  roundStart: true
+
+- type: ttsVoice
+  id: AZIR
+  name: Азир
+  category: League of Legends
+  sex: Male
+  speaker: azir
+  roundStart: true
+
+- type: ttsVoice
+  id: EKKO
+  name: Экко
+  category: League of Legends
+  sex: Male
+  speaker: ekko
+  roundStart: true
+
+- type: ttsVoice
+  id: TWITCH
+  name: Твич
+  category: League of Legends
+  sex: Male
+  speaker: twitch
+  roundStart: true
+
+- type: ttsVoice
+  id: ZIGGS
+  name: Зиггс
+  category: League of Legends
+  sex: Male
+  speaker: ziggs
+  roundStart: true
+
+- type: ttsVoice
+  id: CAITLYN
+  name: Кэйтлин
+  category: League of Legends
+  sex: Female
+  speaker: caitlyn
+  roundStart: true
+
+- type: ttsVoice
+  id: ARTHAS
+  name: Артас Менетил
+  category: Warcraft
+  sex: Male
+  speaker: arthas
+  roundStart: true
+
+- type: ttsVoice
+  id: ILLIDAN
+  name: Иллидан Ярость Бури
+  category: Warcraft
+  sex: Male
+  speaker: illidan
+  roundStart: true
+
+- type: ttsVoice
+  id: REXXAR
+  name: Рексар
+  category: Warcraft
+  sex: Male
+  speaker: rexxar
+  roundStart: true
+
+- type: ttsVoice
+  id: VOLJIN
+  name: Вол'джин
+  category: Warcraft
+  sex: Male
+  speaker: voljin
+  roundStart: true
+
+- type: ttsVoice
+  id: ANDUIN
+  name: Андуин Ринн
+  category: Warcraft
+  sex: Male
+  speaker: anduin
+  roundStart: true
+
+- type: ttsVoice
+  id: BRUKAN
+  name: Бру'кан
+  category: Warcraft
+  sex: Male
+  speaker: brukan
+  roundStart: true
+
+- type: ttsVoice
+  id: GARROSH
+  name: Гаррош Адский Крик
+  category: Warcraft
+  sex: Male
+  speaker: garrosh
+  roundStart: true
+
+- type: ttsVoice
+  id: JAINA
+  name: Джайна Праудмур
+  category: Warcraft
+  sex: Female
+  speaker: jaina
+  roundStart: true
+
+- type: ttsVoice
+  id: UTHER_HS
+  name: Утер Светоносный
+  category: Warcraft
+  sex: Male
+  speaker: uther_hs
+  roundStart: true
+
+- type: ttsVoice
+  id: BANDIT
+  name: Бандит
+  category: S.T.A.L.K.E.R.
+  sex: Male
+  speaker: bandit
+  roundStart: true
+
+- type: ttsVoice
+  id: FORESTER
+  name: Лесник
+  category: S.T.A.L.K.E.R.
+  sex: Male
+  speaker: forester
+  roundStart: true
+
+- type: ttsVoice
+  id: SIDOROVICH
+  name: Сидорович
+  category: S.T.A.L.K.E.R.
+  sex: Male
+  speaker: sidorovich
+  roundStart: true
+
+- type: ttsVoice
+  id: STRELOK
+  name: Стрелок
+  category: S.T.A.L.K.E.R.
+  sex: Male
+  speaker: strelok
+  roundStart: true
+
+- type: ttsVoice
+  id: TRACER
+  name: Трэйсер
+  category: Overwatch
+  sex: Female
+  speaker: tracer
+  roundStart: true
+
+- type: ttsVoice
+  id: SOLDIER
+  name: Солдат
+  category: Team Fortress 2
+  sex: Male
+  speaker: soldier
+  roundStart: true
+
+- type: ttsVoice
+  id: ENGINEER
+  name: Инженер
+  category: Team Fortress 2
+  sex: Male
+  speaker: engineer
+  roundStart: true
+
+- type: ttsVoice
+  id: HEAVY
+  name: Хэви
+  category: Team Fortress 2
+  sex: Male
+  speaker: heavy
+  roundStart: true
+
+- type: ttsVoice
+  id: MEDIC
+  name: Медик
+  category: Team Fortress 2
+  sex: Male
+  speaker: medic
+  roundStart: true
+
+- type: ttsVoice
+  id: DEMOMAN
+  name: Подрывник
+  category: Team Fortress 2
+  sex: Male
+  speaker: demoman
+  roundStart: true
+
+- type: ttsVoice
+  id: SNIPER
+  name: Снайпер
+  category: Team Fortress 2
+  sex: Male
+  speaker: sniper
+  roundStart: true
+
+- type: ttsVoice
+  id: SPY
+  name: Шпион
+  category: Team Fortress 2
+  sex: Male
+  speaker: spy
+  roundStart: true
+
+- type: ttsVoice
+  id: PUNISHER
+  name: Каратель
+  category: Marvel
+  sex: Male
+  speaker: punisher
+  roundStart: true
+
+- type: ttsVoice
+  id: JOHNNY
+  name: Джонни Сильверхенд
+  category: Cyberpunk 2077
+  sex: Male
+  speaker: johnny
+  roundStart: true
+
+- type: ttsVoice
+  id: PANAM
+  name: Панам Палмер
+  category: Cyberpunk 2077
+  sex: Female
+  speaker: panam
+  roundStart: true
+
+- type: ttsVoice
+  id: V_FEMALE
+  name: Ви
+  category: Cyberpunk 2077
+  sex: Female
+  speaker: v_female
+  roundStart: true
+
+- type: ttsVoice
+  id: JUDY
+  name: Джуди Альварес
+  category: Cyberpunk 2077
+  sex: Female
+  speaker: judy
+  roundStart: true
+
+- type: ttsVoice
+  id: MITCH
+  name: Митч Андерсон
+  category: Cyberpunk 2077
+  sex: Male
+  speaker: mitch
+  roundStart: true
+
+- type: ttsVoice
+  id: SKIPPY
+  name: Скиппи
+  category: Cyberpunk 2077
+  sex: Male
+  speaker: skippy
+  roundStart: true
+
+- type: ttsVoice
+  id: JACKIE
+  name: Джеки Уэллс
+  category: Cyberpunk 2077
+  sex: Male
+  speaker: jackie
+  roundStart: true
+
+- type: ttsVoice
+  id: MAIKO
+  name: Майко Маэда
+  category: Cyberpunk 2077
+  sex: Female
+  speaker: maiko
+  roundStart: true
+
+- type: ttsVoice
+  id: BRENDAN
+  name: Брендан
+  category: Cyberpunk 2077
+  sex: Male
+  speaker: brendan
+  roundStart: true
+
+- type: ttsVoice
+  id: NANCY_HARTLEY
+  name: Нэнси Хартли
+  category: Cyberpunk 2077
+  sex: Female
+  speaker: nancy_hartley
+  roundStart: true
+
+- type: ttsVoice
+  id: OSWALD_FORREST
+  name: Освальд Форрест
+  category: Cyberpunk 2077
+  sex: Male
+  speaker: oswald_forrest
+  roundStart: true
+
+- type: ttsVoice
+  id: STEVE
+  name: Стив Санчес
+  category: Cyberpunk 2077
+  sex: Male
+  speaker: steve
+  roundStart: true
+
+- type: ttsVoice
+  id: DORNAN
+  name: Сержант Дорнан
+  category: Fallout
+  sex: Male
+  speaker: dornan
+  roundStart: true
+
+- type: ttsVoice
+  id: OFFICER_ENCLAVE
+  name: Офицер Анклава
+  category: Fallout
+  sex: Male
+  speaker: officer_enclave
+  roundStart: true
+
+- type: ttsVoice
+  id: RICHARDSON
+  name: Дик Ричардсон
+  category: Fallout
+  sex: Male
+  speaker: richardson
+  roundStart: true
+
+- type: ttsVoice
+  id: BUTCH
+  name: Бутч Харрис
+  category: Fallout
+  sex: Male
+  speaker: butch
+  roundStart: true
+
+- type: ttsVoice
+  id: MARCUS
+  name: Маркус
+  category: Fallout
+  sex: Male
+  speaker: marcus
+  roundStart: true
+
+- type: ttsVoice
+  id: SULIK
+  name: Сулик
+  category: Fallout
+  sex: Male
+  speaker: sulik
+  roundStart: true
+
+- type: ttsVoice
+  id: MYRON
+  name: Майрон
+  category: Fallout
+  sex: Male
+  speaker: myron
+  roundStart: true
+
+- type: ttsVoice
+  id: GOOD_THALYA
+  name: Добрая Талия
+  category: Другое
+  sex: Female
+  speaker: good_thalya
+  roundStart: true
+
+- type: ttsVoice
+  id: EVIL_THALYA
+  name: Злая Талия
+  category: Другое
+  sex: Female
+  speaker: evil_thalya
+  roundStart: true
+
+- type: ttsVoice
+  id: NARRATOR_D3
+  name: Рассказчик
+  category: Diablo 3
+  sex: Male
+  speaker: narrator_d3
+  roundStart: true
+
+- type: ttsVoice
+  id: DUDE
+  name: Чувак
+  category: Другое
+  sex: Male
+  speaker: dude
+  roundStart: true
+
+- type: ttsVoice
+  id: ADJUTANT
+  name: Адъютант
+  category: Starcraft 2
+  sex: Female
+  speaker: adjutant
+  roundStart: true
+
+- type: ttsVoice
+  id: HANSON
+  name: Ариэль Хэнсон
+  category: Starcraft 2
+  sex: Female
+  speaker: hanson
+  roundStart: true
+
+- type: ttsVoice
+  id: BRALIK
+  name: Бралик
+  category: Starcraft 2
+  sex: Male
+  speaker: bralik
+  roundStart: true
+
+- type: ttsVoice
+  id: HORNER
+  name: Мэтт Хорнер
+  category: Starcraft 2
+  sex: Male
+  speaker: horner
+  roundStart: true
+
+- type: ttsVoice
+  id: TOSH
+  name: Габриэль Тош
+  category: Starcraft 2
+  sex: Male
+  speaker: tosh
+  roundStart: true
+
+- type: ttsVoice
+  id: TYCHUS
+  name: Тайкус Финдли
+  category: Starcraft 2
+  sex: Male
+  speaker: tychus
+  roundStart: true
+
+- type: ttsVoice
+  id: AMITKAKKAR
+  name: Амит Таккар
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: amitkakkar
+  roundStart: true
+
+- type: ttsVoice
+  id: ELEAZARFIG
+  name: Элеазар Фиг
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: eleazarfig
+  roundStart: true
+
+- type: ttsVoice
+  id: ERNIELARK
+  name: Эрни Ларк
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: ernielark
+  roundStart: true
+
+- type: ttsVoice
+  id: IGNATIAFLOOTRAVEL
+  name: Игнатия Уайлдсмит
+  category: Hogwarts Legacy
+  sex: Female
+  speaker: ignatiaflootravel
+  roundStart: true
+
+- type: ttsVoice
+  id: LODGOK
+  name: Лодгок
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: lodgok
+  roundStart: true
+
+- type: ttsVoice
+  id: PHINEASBLACK
+  name: Финеас Найджелус Блэк
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: phineasblack
+  roundStart: true
+
+- type: ttsVoice
+  id: RANRAK
+  name: Ранрок
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: ranrak
+  roundStart: true
+
+- type: ttsVoice
+  id: VICTORROOKWOOD
+  name: Виктор Руквуд
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: victorrookwood
+  roundStart: true
+
+- type: ttsVoice
+  id: ZENOBIANOKE
+  name: Зенобия Ноук
+  category: Hogwarts Legacy
+  sex: Female
+  speaker: zenobianoke
+  roundStart: true
+
+- type: ttsVoice
+  id: GLADWINMOON
+  name: Глэдвин Мун
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: gladwinmoon
+  roundStart: true
+
+- type: ttsVoice
+  id: MATILDAWEASLEY
+  name: Матильда Уизли
+  category: Hogwarts Legacy
+  sex: Female
+  speaker: matildaweasley
+  roundStart: true
+
+- type: ttsVoice
+  id: NATSAIONAI
+  name: Натсай Онай
+  category: Hogwarts Legacy
+  sex: Female
+  speaker: natsaionai
+  roundStart: true
+
+- type: ttsVoice
+  id: OMINISGAUNT
+  name: Оминис Мракс
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: ominisgaunt
+  roundStart: true
+
+- type: ttsVoice
+  id: POPPYSWEETING
+  name: Поппи Добринг
+  category: Hogwarts Legacy
+  sex: Female
+  speaker: poppysweeting
+  roundStart: true
+
+- type: ttsVoice
+  id: GENERIC_GOBLIN_C
+  name: Гоблин В
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: generic_goblin_c
+  roundStart: true
+
+- type: ttsVoice
+  id: DINAH_HECAT
+  name: Дина Гекат
+  category: Hogwarts Legacy
+  sex: Female
+  speaker: dinah_hecat
+  roundStart: true
+
+- type: ttsVoice
+  id: AESOP_SHARP
+  name: Эзоп Шарп
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: aesop_sharp
+  roundStart: true
+
+- type: ttsVoice
+  id: ABRAHAM_RONEN
+  name: Абрахам Ронен
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: abraham_ronen
+  roundStart: true
+
+- type: ttsVoice
+  id: SAMANTHA_DALE
+  name: Саманта Дейл
+  category: Hogwarts Legacy
+  sex: Female
+  speaker: samantha_dale
+  roundStart: true
+
+- type: ttsVoice
+  id: SIRONA_RYAN
+  name: Сирона Райан
+  category: Hogwarts Legacy
+  sex: Female
+  speaker: sirona_ryan
+  roundStart: true
+
+- type: ttsVoice
+  id: SOPHRONIA_FRANKLIN
+  name: Софрония Франклин
+  category: Hogwarts Legacy
+  sex: Female
+  speaker: sophronia_franklin
+  roundStart: true
+
+- type: ttsVoice
+  id: EVERETT_CLOPTON
+  name: Эверетт Клоптон
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: everett_clopton
+  roundStart: true
+
+- type: ttsVoice
+  id: GENERIC_GOBLIN_B
+  name: Гоблин Б
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: generic_goblin_b
+  roundStart: true
+
+- type: ttsVoice
+  id: SANCTUARY_HOUSE_ELF
+  name: Домовой эльф из святилища
+  category: Hogwarts Legacy
+  sex: Male
+  speaker: sanctuary_house_elf
+  roundStart: true
+
+- type: ttsVoice
+  id: ABADDON_DOTA_2
+  name: Abaddon
+  category: DOTA 2
+  sex: Male
+  speaker: abaddon_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: ALCHEMIST_DOTA_2
+  name: Achemist
+  category: DOTA 2
+  sex: Male
+  speaker: alchemist_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: ANTI-MAGE_DOTA_2
+  name: Anti-Mage
+  category: DOTA 2
+  sex: Male
+  speaker: anti-mage_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: ARC_WARDEN_DOTA_2
+  name: Arc Warden
+  category: DOTA 2
+  sex: Male
+  speaker: arc_warden_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: BATRIDER_DOTA_2
+  name: Batrider
+  category: DOTA 2
+  sex: Male
+  speaker: batrider_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: BLOODSEEKER_DOTA_2
+  name: Bloodseeker
+  category: DOTA 2
+  sex: Male
+  speaker: bloodseeker_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: BOUNTY_HUNTER_DOTA_2
+  name: Bounty Hunter
+  category: DOTA 2
+  sex: Male
+  speaker: bounty_hunter_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: BRISTLEBACK_DOTA_2
+  name: Bristleback
+  category: DOTA 2
+  sex: Male
+  speaker: bristleback_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: BROODMOTHER_DOTA_2
+  name: Broodmother
+  category: DOTA 2
+  sex: Female
+  speaker: broodmother_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: CENTAUR_WARRUNNER_DOTA_2
+  name: Centaur Warrunner
+  category: DOTA 2
+  sex: Male
+  speaker: centaur_warrunner_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: CLINKZ_DOTA_2
+  name: Clinkz
+  category: DOTA 2
+  sex: Male
+  speaker: clinkz_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: CLOCKWERK_DOTA_2
+  name: Clockwerk
+  category: DOTA 2
+  sex: Male
+  speaker: clockwerk_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: CRYSTAL_MAIDEN_DOTA_2
+  name: Crystal Maiden
+  category: DOTA 2
+  sex: Female
+  speaker: crystal_maiden_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: DAZZLE_DOTA_2
+  name: Dazzle
+  category: DOTA 2
+  sex: Male
+  speaker: dazzle_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: DISRUPTOR_DOTA_2
+  name: Disruptor
+  category: DOTA 2
+  sex: Male
+  speaker: disruptor_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: DOOM_DOTA_2
+  name: Doom
+  category: DOTA 2
+  sex: Male
+  speaker: doom_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: DRAGON_KNIGHT_DOTA_2
+  name: Dragon Knight
+  category: DOTA 2
+  sex: Male
+  speaker: dragon_knight_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: DRAGON_KNIGHT_DRAGON_DOTA_2
+  name: Dragon Knight Dragon
+  category: DOTA 2
+  sex: Male
+  speaker: dragon_knight_dragon_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: DROW_RANGER_DOTA_2
+  name: Drow Ranger
+  category: DOTA 2
+  sex: Female
+  speaker: drow_ranger_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: EARTHSHAKER_DOTA_2
+  name: Earthshaker
+  category: DOTA 2
+  sex: Male
+  speaker: earthshaker_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: EMBER_SPIRIT_DOTA_2
+  name: Ember Spirit
+  category: DOTA 2
+  sex: Male
+  speaker: ember_spirit_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: ENIGMA_DOTA_2
+  name: Enigma
+  category: DOTA 2
+  sex: Male
+  speaker: enigma_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: GYROCOPTER_DOTA_2
+  name: Gyrocopter
+  category: DOTA 2
+  sex: Male
+  speaker: gyrocopter_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: HUSKAR_DOTA_2
+  name: Huskar
+  category: DOTA 2
+  sex: Male
+  speaker: huskar_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: INVOKER_DOTA_2
+  name: Invoker
+  category: DOTA 2
+  sex: Male
+  speaker: invoker_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: JUGGERNAUT_DOTA_2
+  name: Juggernaut
+  category: DOTA 2
+  sex: Male
+  speaker: juggernaut_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: KEEPER_OF_THE_LIGHT_DOTA_2
+  name: Keeper Of The Light
+  category: DOTA 2
+  sex: Male
+  speaker: keeper_of_the_light_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: KUNKKA_DOTA_2
+  name: Kunkka
+  category: DOTA 2
+  sex: Male
+  speaker: kunkka_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: LEGION_COMMANDER_DEMON_DOTA_2
+  name: Legion Commander Demon
+  category: DOTA 2
+  sex: Female
+  speaker: legion_commander_demon_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: LEGION_COMMANDER_DOTA_2
+  name: Legion Commander
+  category: DOTA 2
+  sex: Female
+  speaker: legion_commander_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: LICH_DOTA_2
+  name: Lich
+  category: DOTA 2
+  sex: Male
+  speaker: lich_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: LINA_DOTA_2
+  name: Lina
+  category: DOTA 2
+  sex: Female
+  speaker: lina_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: LUNA_DOTA_2
+  name: Luna
+  category: DOTA 2
+  sex: Female
+  speaker: luna_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: LYCAN_DOTA_2
+  name: Lycan
+  category: DOTA 2
+  sex: Male
+  speaker: lycan_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: LYCAN_WOLF_DOTA_2
+  name: Lycan Wolf
+  category: DOTA 2
+  sex: Male
+  speaker: lycan_wolf_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: MEEPO_DOTA_2
+  name: Meepo
+  category: DOTA 2
+  sex: Male
+  speaker: meepo_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: MIRANA_DOTA_2
+  name: Mirana
+  category: DOTA 2
+  sex: Female
+  speaker: mirana_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: MONKEY_KING_CROWN_DOTA_2
+  name: Monkey King Crown
+  category: DOTA 2
+  sex: Male
+  speaker: monkey_king_crown_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: MONKEY_KING_DOTA_2
+  name: Monkey King
+  category: DOTA 2
+  sex: Male
+  speaker: monkey_king_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: NECROPHOS_DOTA_2
+  name: Necrophos
+  category: DOTA 2
+  sex: Male
+  speaker: necrophos_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: NYX_ASSASSIN_DOTA_2
+  name: Nyx Assassin
+  category: DOTA 2
+  sex: Male
+  speaker: nyx_assassin_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: OMNIKNIGHT_DOTA_2
+  name: Omniknight
+  category: DOTA 2
+  sex: Male
+  speaker: omniknight_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: OUTWORLD_DESTROYER_DOTA_2
+  name: Outworld Destroyer
+  category: DOTA 2
+  sex: Male
+  speaker: outworld_destroyer_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: PHANTOM_ASSASSIN_ARCANA_DOTA_2
+  name: Phantom Assassin Arcana
+  category: DOTA 2
+  sex: Female
+  speaker: phantom_assassin_arcana_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: PHANTOM_ASSASSIN_DOTA_2
+  name: Phantom Assassin
+  category: DOTA 2
+  sex: Female
+  speaker: phantom_assassin_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: PHANTOM_LANCER_DOTA_2
+  name: Phantom Lancer
+  category: DOTA 2
+  sex: Male
+  speaker: phantom_lancer_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: PUDGE_DOTA_2
+  name: Pudge
+  category: DOTA 2
+  sex: Male
+  speaker: pudge_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: QUEEN_OF_PAIN_DOTA_2
+  name: Queen Of Pain
+  category: DOTA 2
+  sex: Female
+  speaker: queen_of_pain_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: RAZOR_DOTA_2
+  name: Razor
+  category: DOTA 2
+  sex: Male
+  speaker: razor_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: RIKI_DOTA_2
+  name: Riki
+  category: DOTA 2
+  sex: Male
+  speaker: riki_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: RUBICK_DOTA_2
+  name: Rubick
+  category: DOTA 2
+  sex: Male
+  speaker: rubick_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: SAND_KING_DOTA_2
+  name: Sand King
+  category: DOTA 2
+  sex: Male
+  speaker: sand_king_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: SHADOW_FIEND_DOTA_2
+  name: Shadow Fiend
+  category: DOTA 2
+  sex: Male
+  speaker: shadow_fiend_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: SHADOW_SHAMAN_DOTA_2
+  name: Shadow Shaman
+  category: DOTA 2
+  sex: Male
+  speaker: shadow_shaman_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: SKYWRATH_MAGE_DOTA_2
+  name: Skywrath Mage
+  category: DOTA 2
+  sex: Male
+  speaker: skywrath_mage_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: SLARDAR_DOTA_2
+  name: Slardar
+  category: DOTA 2
+  sex: Male
+  speaker: slardar_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: SLARK_DOTA_2
+  name: Slark
+  category: DOTA 2
+  sex: Male
+  speaker: slark_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: SPIRIT_BREAKER_DOTA_2
+  name: Spirit Breaker
+  category: DOTA 2
+  sex: Male
+  speaker: spirit_breaker_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: STORM_SPIRIT_DOTA_2
+  name: Storm Spirit
+  category: DOTA 2
+  sex: Male
+  speaker: storm_spirit_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: SVEN_DOTA_2
+  name: Sven
+  category: DOTA 2
+  sex: Male
+  speaker: sven_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: TEMPLAR_ASSASSIN_DOTA_2
+  name: Templar Assassin
+  category: DOTA 2
+  sex: Female
+  speaker: templar_assassin_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: TIDEHUNTER_DOTA_2
+  name: Tidehunter
+  category: DOTA 2
+  sex: Male
+  speaker: tidehunter_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: TREANT_PROTECTOR_DOTA_2
+  name: Treant Protector
+  category: DOTA 2
+  sex: Male
+  speaker: treant_protector_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: UNDERLORD_DOTA_2
+  name: Underlord
+  category: DOTA 2
+  sex: Male
+  speaker: underlord_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: URSA_DOTA_2
+  name: Ursa
+  category: DOTA 2
+  sex: Male
+  speaker: ursa_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: WINDRANGER_DOTA_2
+  name: Windranger
+  category: DOTA 2
+  sex: Female
+  speaker: windranger_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: WINTER_WYVERN_DOTA_2
+  name: Winter Wyvern
+  category: DOTA 2
+  sex: Female
+  speaker: winter_wyvern_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: WITCH_DOCTOR_DOTA_2
+  name: Witch Doctor
+  category: DOTA 2
+  sex: Male
+  speaker: witch_doctor_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: WRAITH_KING_DOTA_2
+  name: Wraith King
+  category: DOTA 2
+  sex: Male
+  speaker: wraith_king_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: ZEUS_DOTA_2
+  name: Zeus
+  category: DOTA 2
+  sex: Male
+  speaker: zeus_dota_2
+  roundStart: true
+
+- type: ttsVoice
+  id: MITA
+  name: Мита
+  category: Miside
+  sex: Female
+  speaker: mita
+  roundStart: true
+
+- type: ttsVoice
+  id: MITADREAM
+  name: Сонная Мита
+  category: Miside
+  sex: Female
+  speaker: mitadream
+  roundStart: true
+
+- type: ttsVoice
+  id: MITAGHOST
+  name: Мита Призрак
+  category: Miside
+  sex: Female
+  speaker: mitaghost
+  roundStart: true
+
+- type: ttsVoice
+  id: MITAKIND
+  name: Добрая Мита
+  category: Miside
+  sex: Female
+  speaker: mitakind
+  roundStart: true
+
+- type: ttsVoice
+  id: MITASHORTHAIRS
+  name: Коротковолосая Мита
+  category: Miside
+  sex: Female
+  speaker: mitashorthairs
+  roundStart: true
+
+- type: ttsVoice
+  id: BOYZ_ORKS
+  name: Бойзы Орков
+  category: Warhammer
+  sex: Female
+  speaker: orks_dow
+  roundStart: true

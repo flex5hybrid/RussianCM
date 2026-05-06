@@ -1,0 +1,12 @@
+ent-RMCDogtagPVESectionSergeant = жетон сержанта секции
+ent-RMCDogtagPVESquadLeader = жетон командира отделения
+ent-RMCDogtagPVESmartGunOperator = жетон оператора умного оружия
+ent-RMCDogtagPVERifleman = жетон стрелка
+ent-RMCDogtagPVEHospitalCorpsman = жетон госпитального санитара
+ent-CMDogtagWeaponsSpecialist = жетон специалиста по вооружению
+ent-CMDogtagSquadLeader = жетон командира отделения
+ent-CMDogtagSmartGunOperator = жетон оператора умного оружия
+ent-CMDogtagHospitalCorpsman = жетон госпитального санитара
+ent-CMDogtagFireteamLeader = жетон лидера огневой группы
+ent-CMDogtagCombatTech = жетон боевого техника
+ent-CMDogtagRifleman = жетон стрелка

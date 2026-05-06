@@ -1,16 +1,19 @@
 - type: entity
   parent:
-  - CMXenoDeveloped
-  - CMXenoTail
-  - CMXenoFlammable
-  - RMCXenoSpeechSounds
-  - RMCXenoCommendationReceiver
-  - RMCXenoMobCollision
-  - RMCXenoVentCrawler
+    - CMXenoDeveloped
+    - CMXenoTail
+    - CMXenoFlammable
+    - RMCXenoSpeechSounds
+    - RMCXenoCommendationReceiver
+    - RMCXenoMobCollision
+    - RMCXenoVentCrawler
   id: CMXenoBurrower
-  name: Burrower
-  description: A beefy alien with sharp claws.
+  name: Бурильщик
+  description: Мускулистый ксенос с острыми когтями.
   components:
+  - type: TTS
+    voice: WITCH_DOCTOR_DOTA_2
+    faction: Xeno
   - type: CanBuildThickFromConstructNode
   - type: GuideHelp
     guides:
@@ -84,9 +87,8 @@
       groups:
         Brute: 36
   - type: Tackle
-    min: 3
-    max: 5
-    chance: 0.4
+    min: 4
+    max: 4
     stunMin: 4
     stunMax: 5
   - type: TunnelRenamer

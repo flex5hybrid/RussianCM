@@ -1,0 +1,49 @@
+name: PR Discord Notify
+
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send Discord Embed
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d '{
+            "embeds": [
+              {
+                "title": "📢 Новый Pull Request",
+                "description": "**${{ github.event.pull_request.title }}**",
+                "url": "${{ github.event.pull_request.html_url }}",
+                "color": 5814783,
+                "author": {
+                  "name": "${{ github.actor }}"
+                },
+                "fields": [
+                  {
+                    "name": "📦 Бранч",
+                    "value": "${{ github.event.pull_request.head.ref }} → ${{ github.event.pull_request.base.ref }}",
+                    "inline": true
+                  },
+                  {
+                    "name": "🔢 Номер PR",
+                    "value": "#${{ github.event.pull_request.number }}",
+                    "inline": true
+                  },
+                  {
+                    "name": "🕒 Статус",
+                    "value": "${{ github.event.pull_request.draft == true && 'Draft' || 'Ready' }}",
+                    "inline": true
+                  }
+                ],
+                "footer": {
+                  "text": "GitHub Actions"
+                }
+              }
+            ]
+          }' \
+          ${{ secrets.DISCORD_WEBHOOK_PR }}

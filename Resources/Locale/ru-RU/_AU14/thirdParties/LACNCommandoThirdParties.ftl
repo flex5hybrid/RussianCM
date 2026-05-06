@@ -1,0 +1,12 @@
+ent-AU14JobCommandoSniperTeamSpotter-name = Корректировщик морских коммандос LACN
+ent-AU14JobCommandoSniperTeamSniper-name = Снайпер морских коммандос LACN
+ent-AU14BeltHolsterPistolLACNTPR23B-name = поясная кобура
+ent-AU14BeltHolsterPistolLACNTPR23B-desc = Кобура на пояс из тёмно-коричневой кожи. Подходит для большинства табельных пистолетов и запасных магазинов. Стандартное снаряжение для полиции, военных и сил безопасности.
+ent-AU14PouchSlingBinocs-name = ремень через плечо
+ent-AU14PouchSlingBinocs-desc = Удерживает один предмет на ремне.
+ent-AU14PouchSlingBinocsTwo-name = ремень через плечо
+ent-AU14PouchSlingBinocsTwo-desc = Удерживает один предмет на ремне.
+ent-AU14LACNBackpackSpotter-name = стандартный рюкзак LACN
+ent-AU14LACNBackpackSpotter-desc = Стандартный рюкзак десантных сил LACN. Предназначен для перевозки снаряжения на поле боя.
+ent-AU14LACNBackpackSniper-name = стандартный рюкзак LACN
+ent-AU14LACNBackpackSniper-desc = Стандартный рюкзак десантных сил LACN. Предназначен для перевозки снаряжения на поле боя.

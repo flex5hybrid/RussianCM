@@ -1,0 +1,32 @@
+ent-RMCAreaTdomeTdomeobserve = заброшенный Громовой Купол (Наблюдатель.)
+
+ent-RMCAreaTdomeTdomeadmin = заброшенный Громовой Купол (Админ.)
+
+ent-RMCAreaTdomeTdome2 = заброшенный Громовой Купол (Команда 2)
+
+ent-RMCAreaTdomeTdome1 = заброшенный Громовой Купол (Команда 1)
+
+ent-RMCAreaTdome = заброшенный Громовой Купол
+
+ent-RMCAreaCentcomLiving = заброшенные жилые помещения Центкома
+
+ent-RMCAreaCentcomControl = заброшенный Centcom Control
+
+ent-RMCAreaCentcom = заброшенный Центком
+
+ent-RMCAreaStart = стартовая зона
+
+ent-RMCAreaSpaceHighalt = Большая высота
+
+ent-RMCAreaAdminDroppodLoading = Административные поставки снижают загрузку
+
+ent-RMCAreaAdminDroppodHolding = Административные поставки Droppod
+
+ent-RMCAreaAdmin = Комната администратора
+
+ent-RMCAreaSpace = Космос
+
+ent-RMCAreaEngine = область
+
+ent-RMCAreaAdminDroppod = Комната администратора
+

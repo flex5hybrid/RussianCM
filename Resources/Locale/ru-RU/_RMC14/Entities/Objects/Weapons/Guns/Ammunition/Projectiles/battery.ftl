@@ -1,0 +1,1 @@
+ent-RMCProjectileTaser = тазерный болт

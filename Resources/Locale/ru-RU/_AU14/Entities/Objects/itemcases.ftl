@@ -1,0 +1,12 @@
+ent-AU14CaseSentry-name = Кейс с турелью 571-C
+ent-AU14CaseSentry-desc = Оружейный кейс, содержащий турельную установку 571-C и запасной барабан.
+ent-AU14CaseSentryMini-name = Кейс с мини-турелью 512-M
+ent-AU14CaseSentryMini-desc = Оружейный кейс, содержащий турельную установку 512-M и запасной барабан.
+ent-AU14CaseSentrySniper-name = Кейс со снайперской турелью 725-D
+ent-AU14CaseSentrySniper-desc = Оружейный кейс, содержащий снайперскую турельную установку 725-D и запасной барабан.
+ent-AU14CaseSentryShotgun-name = Кейс с дробовичной турелью 12-G
+ent-AU14CaseSentryShotgun-desc = Оружейный кейс, содержащий дробовичную турельную установку 12-G и запасной барабан.
+ent-AU14CaseSentryFlamer-name = Кейс со штурмовой огнемётной турелью 55-FA
+ent-AU14CaseSentryFlamer-desc = Оружейный кейс, содержащий штурмовую огнемётную турельную установку 55-FA и запасной барабан.
+ent-AU14CaseSentryFlamerMini-name = Кейс с мини-огнемётной турелью 45-FM
+ent-AU14CaseSentryFlamerMini-desc = Оружейный кейс, содержащий мини-огнемётную турельную установку 45-FM и запасной барабан.

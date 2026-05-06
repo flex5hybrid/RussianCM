@@ -132740,7 +132740,7 @@ entities:
   - uid: 12744
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 27.5,-17.5
@@ -132750,7 +132750,7 @@ entities:
   - uid: 12745
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 27.5,-18.5
@@ -132760,7 +132760,7 @@ entities:
   - uid: 12746
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 27.5,-19.5
@@ -132770,7 +132770,7 @@ entities:
   - uid: 12747
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 27.5,-20.5
@@ -132780,7 +132780,7 @@ entities:
   - uid: 12748
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 27.5,-21.5
@@ -132790,7 +132790,7 @@ entities:
   - uid: 12749
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 27.5,-22.5
@@ -132800,7 +132800,7 @@ entities:
   - uid: 12750
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 27.5,-23.5
@@ -132810,7 +132810,7 @@ entities:
   - uid: 12751
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 222.5,-75.5
@@ -132820,7 +132820,7 @@ entities:
   - uid: 12752
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 222.5,-76.5
@@ -132830,7 +132830,7 @@ entities:
   - uid: 12753
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 222.5,-77.5
@@ -132840,7 +132840,7 @@ entities:
   - uid: 12754
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 222.5,-78.5
@@ -132850,7 +132850,7 @@ entities:
   - uid: 12755
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 222.5,-79.5
@@ -132860,7 +132860,7 @@ entities:
   - uid: 12756
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 126.5,-2.5
@@ -132870,7 +132870,7 @@ entities:
   - uid: 12757
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 126.5,-3.5
@@ -132880,7 +132880,7 @@ entities:
   - uid: 12758
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 126.5,-4.5
@@ -132890,7 +132890,7 @@ entities:
   - uid: 12759
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 126.5,-5.5
@@ -132900,7 +132900,7 @@ entities:
   - uid: 12760
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 126.5,-6.5
@@ -132910,7 +132910,7 @@ entities:
   - uid: 12761
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 202.5,-177.5
@@ -132920,7 +132920,7 @@ entities:
   - uid: 12762
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 202.5,-178.5
@@ -132930,7 +132930,7 @@ entities:
   - uid: 12763
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 202.5,-179.5
@@ -132940,7 +132940,7 @@ entities:
   - uid: 12764
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 202.5,-180.5
@@ -132950,7 +132950,7 @@ entities:
   - uid: 12765
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 202.5,-181.5
@@ -132960,7 +132960,7 @@ entities:
   - uid: 12766
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 202.5,-182.5
@@ -132970,7 +132970,7 @@ entities:
   - uid: 12767
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 202.5,-183.5
@@ -132980,7 +132980,7 @@ entities:
   - uid: 12768
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 37.5,-17.5
@@ -132990,7 +132990,7 @@ entities:
   - uid: 12769
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 37.5,-18.5
@@ -133000,7 +133000,7 @@ entities:
   - uid: 12770
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 37.5,-19.5
@@ -133010,7 +133010,7 @@ entities:
   - uid: 12771
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 37.5,-20.5
@@ -133020,7 +133020,7 @@ entities:
   - uid: 12772
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 37.5,-21.5
@@ -133030,7 +133030,7 @@ entities:
   - uid: 12773
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 37.5,-22.5
@@ -133040,7 +133040,7 @@ entities:
   - uid: 12774
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 37.5,-23.5
@@ -135220,7 +135220,7 @@ entities:
   - uid: 12994
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       pos: 16.34375,-16.75
       parent: 1
@@ -135440,7 +135440,7 @@ entities:
   - uid: 13014
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       pos: 37.25,-16.5
       parent: 1
@@ -135451,7 +135451,7 @@ entities:
   - uid: 13015
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       pos: 197.5,-170.75
       parent: 1
@@ -135528,7 +135528,7 @@ entities:
   - uid: 13022
     components:
     - type: MetaData
-      name: Gate Shutters
+      name: ставни
     - type: Transform
       pos: 38.5,-16.75
       parent: 1

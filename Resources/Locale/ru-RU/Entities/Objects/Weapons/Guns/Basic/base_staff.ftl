@@ -1,0 +1,2 @@
+ent-WeaponStaffBase-name = item
+

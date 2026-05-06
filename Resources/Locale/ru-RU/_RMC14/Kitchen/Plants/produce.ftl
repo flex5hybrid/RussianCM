@@ -1,0 +1,18 @@
+ent-RMCFoodMango = манго
+  .desc = МАНГО МАНГО МАНГО
+
+ent-FoodGrass = пучок травы
+  .desc = Давай, потрогай траву.
+
+ent-FoodSunflower = подсолнечник
+  .desc = Это красиво! 
+
+ent-FoodWhiteBeet = сахарная свекла
+  .desc = Вы не можете победить белую свеклу.
+
+ent-FoodPeanut = арахис
+  .desc = Орехи!
+
+ent-FoodMushroomPlump = пухлый-Шлем
+  .desc = Плюмус Хеллмус: Ой, ЗАТКНИ уже насчёт КРОВАВЫХ грибов! 
+

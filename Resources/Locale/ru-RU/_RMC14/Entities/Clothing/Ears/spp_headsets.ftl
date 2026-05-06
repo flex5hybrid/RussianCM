@@ -1,0 +1,14 @@
+ent-RMCHeadsetDistressHalcyon = корпоративная гарнитура Halcyon
+  .desc = Гарнитура, которую обычно носят корпоративные сотрудники Halcyon Dynamics.
+ent-RMCHeadsetSPPPaP = гарнитура НО СНП
+  .desc = Специальная гарнитура, используемая Народной вооружённой полицией СНП.
+ent-RMCHeadsetDistressSPP = гарнитура колонии СНП
+ent-RMCHeadsetSPPMedic = гарнитура СНП-МЕД
+ent-RMCHeadsetSPPEngineer = гарнитура СНП-ИНЖ
+ent-RMCHeadsetSPPCommand = гарнитура СНП-КОМ
+ent-RMCHeadsetSPP = гарнитура СНП
+ent-RMCEncryptionKeyHalcyon = ключ шифрования радио Halcyon
+ent-RMCEncryptionKeySPPMedic = ключ шифрования медицинского радио СНП
+ent-RMCEncryptionKeySPPEngineer = ключ шифрования инженерного радио СНП
+ent-RMCEncryptionKeySPPCommand = ключ шифрования командного радио СНП
+ent-RMCEncryptionKeySPP = ключ шифрования радио СНП

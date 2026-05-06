@@ -10,7 +10,7 @@ on:
 
 jobs:
   label:
-    if: github.event.pull_request.draft == false
+    if: github.actor != 'PJBot' && github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write

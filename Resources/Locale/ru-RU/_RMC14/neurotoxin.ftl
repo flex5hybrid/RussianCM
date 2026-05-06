@@ -1,0 +1,17 @@
+﻿rmc-neuro-tired = Ваше тело немеет, вы быстро устаёте!
+rmc-neuro-numb = Тело немеет, вы не чувствуете пальцев!
+rmc-neuro-where = Где я?
+rmc-neuro-very-numb = Всё тело онемело!
+rmc-neuro-erratic = Движения стали неуправляемыми!
+rmc-neuro-panic = Паника охватывает вас по мере онемения тела!
+rmc-neuro-sting = Глаза болят, вы ничего не видите!
+rmc-neuro-what = Что я делаю?
+rmc-neuro-hearing = Слух пропадает, вы ничего не слышите!
+rmc-neuro-pain = Резкая боль пронзает живот!
+rmc-neuro-agh = ВСЁ БОЛИТ!! ААА!!!
+rmc-neuro-so-numb = Тело полностью онемело!
+rmc-neuro-limbs = Вы не чувствуете конечностей!
+rmc-neuro-think = Сознание пустеет, вы не можете думать!
+rmc-stumble = Вы спотыкаетесь!
+rmc-stumble-others = {CAPITALIZE($victim)} спотыкается в {POSS-ADJ($victim)} замешательстве!
+rmc-bloodcough = Вы кашляете кровью!

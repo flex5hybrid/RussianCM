@@ -1,0 +1,10 @@
+﻿rmc-access-spp-general = Общий сектор СПН
+rmc-access-spp-medical = Мед-пункт СПН
+rmc-access-spp-engineering = Инженерный сектор СПН
+rmc-access-spp-security = Сектор безопасности СПН
+rmc-access-spp-armory = Оружейная СПН
+rmc-access-spp-flight = Ангар СПН
+rmc-access-spp-research = Исследовательский сектор СПН
+rmc-access-spp-commando = Отряд коммандос СПН
+rmc-access-spp-leadership = Командование СПН
+rmc-access-spp-senior-lead = Старшее командование СПН

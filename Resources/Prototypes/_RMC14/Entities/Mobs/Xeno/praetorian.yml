@@ -1,125 +1,127 @@
 - type: entity
   abstract: true
   parent:
-  - CMXenoDeveloped
-  - CMXenoTail
-  - CMXenoFlammable
-  - RMCXenoSpeechSounds
-  - RMCXenoCommendationReceiver
-  - RMCXenoMobCollision
+    - CMXenoDeveloped
+    - CMXenoTail
+    - CMXenoFlammable
+    - RMCXenoSpeechSounds
+    - RMCXenoCommendationReceiver
+    - RMCXenoMobCollision
   id: CMXenoPraetorianBase
-  name: Praetorian
-  description: A huge, looming beast of an alien.
+  name: Преторианец
+  description: Большой чёрный инопланетянин.
   components:
-  - type: GhostRole
-    name: cm-job-name-xeno-praetorian
-  - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Praetorian/praetorian.rsi # AU14-Edit
-  - type: MobState
-    allowedStates:
-    - Alive
-    - Critical
-    - Dead
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      650: Critical
-      750: Dead
-  - type: Xeno
-    role: CMXenoPraetorian
-    actionIds:
-    - ActionXenoRest
-    - ActionXenoRegurgitate
-    - ActionXenoWatch
-    - ActionXenoTailStab
-    - ActionXenoAcidNormal
-    - ActionXenoSpitPraetorian
-    - ActionXenoDash
-    - ActionXenoAcidBall
-    - ActionXenoSprayAcidPraetorian
-    - ActionXenoDevolve
-    tier: 3
-    hudOffset: -0.15,0.16
-    unlockAt: 900 # 15 minutes
-  - type: XenoHeavy
-  - type: XenoDevolve
-    devolvesTo:
-    - CMXenoWarrior
-    - CMXenoSpitter
-  - type: XenoAcid
-  - type: XenoDevour
-  - type: XenoPlasma
-    plasma: 800
-    maxPlasma: 800
-    plasmaRegenOnWeeds: 3
-  - type: CMArmor
-    xenoArmor: 25
-    explosionArmor: 40
-  - type: MeleeWeapon
-    damage:
-      groups:
-        Brute: 40
-  - type: XenoTailStab
-    tailDamage:
-      groups:
-        Brute: 48
-  - type: Tackle
-    chance: 0.45
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 185
-        mask:
-        - MobMask
-        - BarbedBarricade
-        - BarricadeImpassable
-        layer:
-        - MobLayer
-      fix2:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.45
-        density: 185
-        layer:
-        - BulletImpassable
-  - type: RMCSize
-    size: Big
-  - type: RMCXenoDamageVisuals
-    prefix: praetorian
-  - type: XenoSpit
-    projectileId: XenoSpitProjectilePraetorian
-  - type: XenoSprayAcid
-    barricadeDamage:
-      types:
-        Heat: 5
-    range: 7
-  - type: TacticalMapIcon
-    icon:
-      sprite: /Textures/_RMC14/Interface/map_blips.rsi
-      state: praetorian
-  - type: SlowOnPull
-    slowdowns:
-    - multiplier: 0.5875
-      whitelist:
-        components:
-        - Marine
-    - multiplier: 0.645
-      whitelist:
-        components:
-        - XenoLight
-    - multiplier: 0.4275
-      whitelist:
-        components:
-        - XenoHeavy
-  - type: IntelRecoverCorpseObjectiveOnDeath
-    value: 0.7
-  - type: FixedIdentity
-    name: cm-job-name-xeno-praetorian
-  - type: RMCSurgeryXenoHeart
-    item: RMCOrganXenoHeartT3
+    - type: TTS
+      voice: QUEEN_OF_PAIN_DOTA_2
+      faction: Xeno
+    - type: GhostRole
+      name: cm-job-name-xeno-praetorian
+    - type: Sprite
+      sprite: _RMC14/Mobs/Xenonids/Praetorian/praetorian.rsi
+    - type: MobState
+      allowedStates:
+        - Alive
+        - Critical
+        - Dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        650: Critical
+        750: Dead
+    - type: Xeno
+      role: CMXenoPraetorian
+      actionIds:
+        - ActionXenoRest
+        - ActionXenoRegurgitate
+        - ActionXenoWatch
+        - ActionXenoTailStab
+        - ActionXenoAcidNormal
+        - ActionXenoSpitPraetorian
+        - ActionXenoDash
+        - ActionXenoAcidBall
+        - ActionXenoSprayAcidPraetorian
+        - ActionXenoDevolve
+      tier: 3
+      hudOffset: -0.15,0.16
+      unlockAt: 900 # 15 minutes
+    - type: XenoHeavy
+    - type: XenoDevolve
+      devolvesTo:
+        - CMXenoWarrior
+        - CMXenoSpitter
+    - type: XenoAcid
+    - type: XenoDevour
+    - type: XenoPlasma
+      plasma: 800
+      maxPlasma: 800
+      plasmaRegenOnWeeds: 3
+    - type: CMArmor
+      xenoArmor: 25
+      explosionArmor: 40
+    - type: MeleeWeapon
+      damage:
+        groups:
+          Brute: 40
+    - type: XenoTailStab
+      tailDamage:
+        groups:
+          Brute: 48
+    - type: Tackle
+      min: 4
+      max: 4
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeCircle
+            radius: 0.35
+          density: 185
+          mask:
+            - MobMask
+            - BarbedBarricade
+            - BarricadeImpassable
+          layer:
+            - MobLayer
+        fix2:
+          shape: !type:PhysShapeCircle
+            radius: 0.45
+          density: 185
+          layer:
+            - BulletImpassable
+    - type: RMCSize
+      size: Big
+    - type: RMCXenoDamageVisuals
+      prefix: praetorian
+    - type: XenoSpit
+      projectileId: XenoSpitProjectilePraetorian
+    - type: XenoSprayAcid
+      barricadeDamage:
+        types:
+          Heat: 5
+      range: 7
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: praetorian
+    - type: SlowOnPull
+      slowdowns:
+        - multiplier: 0.5875
+          whitelist:
+            components:
+              - Marine
+        - multiplier: 0.645
+          whitelist:
+            components:
+              - XenoLight
+        - multiplier: 0.4275
+          whitelist:
+            components:
+              - XenoHeavy
+    - type: IntelRecoverCorpseObjectiveOnDeath
+      value: 0.7
+    - type: FixedIdentity
+      name: cm-job-name-xeno-praetorian
+    - type: RMCSurgeryXenoHeart
+      item: RMCOrganXenoHeartT3
 
 - type: entity
   parent: CMXenoPraetorianBase

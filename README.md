@@ -18,3 +18,7 @@ All code implemented post 4/30/2026 is licensed under an [AGPL 3.0 License](http
 Exceptions will be clearly declared in both the header and the file as well as a reason for why.
 
 Most art assets are licensed under [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/) unless stated otherwise. Assets have their license and the copyright in the metadata file. [Example](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
+
+Все оригинальные материалы, созданные специально для Russian Marine Corps, включая брендинг проекта, логотипы, уникальные спрайты, карты, тексты, лор, код, UI-элементы и документацию, лицензированы AGPL.
+
+Данное ограничение не распространяется на сторонние материалы, upstream-код, ассеты или контент, распространяемые по их исходным лицензиям. Такие материалы регулируются соответствующими лицензиями и требованиями к атрибуции.

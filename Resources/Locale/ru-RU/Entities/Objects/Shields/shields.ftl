@@ -1,0 +1,36 @@
+ent-BaseShield-name = base shield
+ent-BaseShield-desc = A shield!
+
+ent-RiotShield-name = riot shield
+ent-RiotShield-desc = A large tower shield. Good for controlling crowds.
+
+ent-RiotLaserShield-name = laser shield
+ent-RiotLaserShield-desc = A shield built for withstanding lasers, but not much else.
+
+ent-RiotBulletShield-name = ballistic shield
+ent-RiotBulletShield-desc = A shield built for protecting against ballistics, but not much else.
+
+ent-WoodenBuckler-name = wooden buckler
+ent-WoodenBuckler-desc = A small round wooden makeshift shield.
+
+ent-MakeshiftShield-name = makeshift shield
+ent-MakeshiftShield-desc = A rundown looking shield, not good for much.
+
+ent-WebShield-name = web shield
+ent-WebShield-desc = A stringy shield. It's weak, and doesn't seem to do well against heat.
+
+ent-ClockworkShield-name = clockwork shield
+ent-ClockworkShield-desc = Ratvar oyrffrf lbh jvgu uvf cebgrpgvba.
+
+ent-MirrorShield-name = mirror shield
+ent-MirrorShield-desc = Eerily glows red... you hear the geometer whispering
+
+ent-EnergyShield-name = energy shield
+ent-EnergyShield-desc = Exotic energy shield, when folded, can even fit in your pocket.
+
+ent-BrokenEnergyShield-name = broken energy shield
+ent-BrokenEnergyShield-desc = Something inside is burned out, it is no longer functional.
+
+ent-TelescopicShield-name = telescopic shield
+ent-TelescopicShield-desc = An advanced riot shield made of lightweight materials that collapses for easy storage.
+

@@ -1,0 +1,9 @@
+rmc-job-name-tsepa-constable = Констебль TSEPA
+rmc-job-description-tsepa-constable = Обеспечивает соблюдение законов TSE.
+rmc-job-prefix-tsepa-constable = КСТ TSEPA
+rmc-job-name-tsepa-senior-constable = Старший констебль TSEPA
+rmc-job-description-tsepa-senior-constable = Надзор за исполнением законов TSE.
+rmc-job-prefix-tsepa-senior-constable = СТ.КСТ TSEPA
+rmc-job-name-tsepa-inspector = Инспектор TSEPA
+rmc-job-description-tsepa-inspector = Контролирует работу по соблюдению законов TSE.
+rmc-job-prefix-tsepa-inspector = ИНСП TSEPA

@@ -1,0 +1,14 @@
+ent-KillAllGovforRule-name = Убить всех Говфор
+ent-KillAllGovforRule-desc = Угроза побеждает, когда все Говфор мертвы (или когда указанный процент мертв).
+ent-ThreatSurviveRule-name = Выживание угрозы по таймеру
+ent-ThreatSurviveRule-desc = Угроза побеждает, если выживет X минут после начала раунда.
+ent-KillAllColonistRule-name = Убить всех Колонистов
+ent-KillAllColonistRule-desc = Угроза побеждает, когда все колонисты AU мертвы (или когда указанный процент мертв).
+ent-KillAllApeRule-name = Убить всех Обезьян
+ent-KillAllApeRule-desc = Угроза побеждает, когда все Обезьяны мертвы (или когда указанный процент мертв).
+ent-KillAllXenoRule-name = Убить всех Ксено/Культистов
+ent-KillAllXenoRule-desc = Угроза побеждает, когда все Ксено и Культисты мертвы (или когда указанный процент мертв).
+ent-KillAllHumanRule-name = Убить всех Людей
+ent-KillAllHumanRule-desc = Угроза побеждает, когда все гуманоиды (исключая ксеносов) мертвы (или когда указанный процент мертв).
+ent-InsWinConditionsRule-name = Убить всех Говфор/убить всех членов КОФ соответственно
+ent-InsWinConditionsRule-desc = Угроза побеждает, когда все Говфор мертвы (или когда указанный процент мертв).

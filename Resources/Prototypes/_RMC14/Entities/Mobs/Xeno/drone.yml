@@ -1,17 +1,20 @@
 - type: entity
   abstract: true
   parent:
-  - CMXenoDeveloped
-  - CMXenoTail
-  - CMXenoFlammable
-  - RMCXenoSpeechSounds
-  - RMCXenoCommendationReceiver
-  - RMCXenoMobCollision
-  - RMCXenoVentCrawler
+    - CMXenoDeveloped
+    - CMXenoTail
+    - CMXenoFlammable
+    - RMCXenoSpeechSounds
+    - RMCXenoCommendationReceiver
+    - RMCXenoMobCollision
+    - RMCXenoVentCrawler
   id: CMXenoDroneBase
-  name: Drone
-  description: An alien drone.
+  name: Дрон
+  description: Инопланетный дрон.
   components:
+  - type: TTS
+    voice: TWITCH
+    faction: Xeno
   - type: GhostRole
     name: cm-job-name-xeno-drone
   - type: MobState
@@ -55,7 +58,8 @@
     maxPlasma: 1000
     plasmaRegenOnWeeds: 4.5
   - type: Tackle
-    max: 4
+    min: 3
+    max: 3
     stunMin: 3
     stunMax: 4
   - type: WhitelistPickup
@@ -279,10 +283,10 @@
     - XenoFruitLesser
     maxFruitAllowed: 3
   - type: Tackle
-    max: 4
+    min: 3
+    max: 3
     stunMin: 3
     stunMax: 4
-    chance: 0.30
   - type: XenoEnergy
     alert: XenoEnergyHealer
     max: 7500

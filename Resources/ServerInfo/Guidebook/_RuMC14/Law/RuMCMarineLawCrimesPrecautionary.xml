@@ -1,0 +1,56 @@
+﻿<Document>
+  # Особые преступления
+  - Они используются для заключения людей на неопределенный срок.
+  <Table Columns="2">
+    <ColorBox>
+      <Box>
+        Преступление
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Описание
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Невменяемость
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Объявляется только главным врачом или синтетиком, только в случае, когда преступник не находится здравом уме. Субъект, находящийся в здравом уме, может быть освобожден от этого конкретного обвинения.
+        \В отсутствие главного врача или синтетика, [color=#008000][bold]Командир[/bold][/color] или [color=#8B0000][bold]Начальник Военной Полиции[/bold][/color] может назначить офицера медицинского отдела для проведения экспертизы вместо них.
+        \nИсключение составляют случаи подтвержденного самоубийства или попытки самоубийства, в этом случае субъект может подать апелляцию или обратиться к любому медицинскому персоналу.
+
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Военнопленный
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Быть враждебным членом признанной фракции.
+        \nВоеннопленные не могут быть казнены, если только они не представляют активной угрозы для других.
+      </Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+        Безвременное задержание
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="3">
+          Это дискреционное обвинение, используемое [color=#00CBFE][bold]Командующим Офицером[/bold][/color] для задержания персонала по любой причине - для обеспечения безопасности и пользы операции или охраны.
+        \nОно может быть обжаловано только [color=#00CBFE][bold]Командующему Офицеру [/bold][/color] или [color=#ffa500][bold]Управлению Маршалов Провост[/bold][/color], и может быть отменено в любое время [color=#00CBFE][bold]Командующим Офицером[/bold][/color].
+
+      </Box>
+    </ColorBox>
+
+  </Table>
+</Document>

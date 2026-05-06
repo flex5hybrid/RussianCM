@@ -10,22 +10,35 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared._RMC14.Medical.Scanner;
 
+/// <summary>
+///     Pure scan state — no BUI dependency. Used by body scanner snapshots, stored medical
+///     records, and as the payload inside <see cref="HealthScannerBuiState"/>.
+/// </summary>
+[DataRecord, Serializable, NetSerializable]
+public readonly record struct HealthScanState(
+    NetEntity Target,
+    FixedPoint2 Blood,
+    FixedPoint2 MaxBlood,
+    float? Temperature,
+    string Pulse,
+    Solution? Chemicals,
+    bool Bleeding,
+    HealthScanDetailLevel DetailLevel);
+
+/// <summary>
+///     Thin BUI wrapper around <see cref="HealthScanState"/> for the health analyzer live-update path.
+/// </summary>
 [Serializable, NetSerializable]
-public sealed class HealthScannerBuiState(
-    NetEntity target,
-    FixedPoint2 blood,
-    FixedPoint2 maxBlood,
-    float? temperature,
-    Solution? chemicals,
-    bool bleeding)
-    : BoundUserInterfaceState
+public sealed class HealthScannerBuiState(HealthScanState scanState) : BoundUserInterfaceState
 {
-    public readonly NetEntity Target = target;
-    public readonly FixedPoint2 Blood = blood;
-    public readonly FixedPoint2 MaxBlood = maxBlood;
-    public readonly float? Temperature = temperature;
-    public readonly Solution? Chemicals = chemicals;
-    public readonly bool Bleeding = bleeding;
+    public readonly NetEntity Target = scanState.Target;
+    public readonly FixedPoint2 Blood = scanState.Blood;
+    public readonly FixedPoint2 MaxBlood = scanState.MaxBlood;
+    public readonly float? Temperature = scanState.Temperature;
+    public readonly string Pulse = scanState.Pulse;
+    public readonly Solution? Chemicals = scanState.Chemicals;
+    public readonly bool Bleeding = scanState.Bleeding;
+    public readonly HealthScanDetailLevel DetailLevel = scanState.DetailLevel;
     public Dictionary<BodyPartType, CMUBodyPartReadout>? CMUParts;
     public List<CMUOrganReadout>? CMUOrgans;
     public List<CMUFractureReadout>? CMUFractures;
@@ -131,4 +144,12 @@ public enum CMUPainShockRisk : byte
 public enum HealthScannerUIKey
 {
     Key
+}
+
+[Serializable, NetSerializable]
+public enum HealthScanDetailLevel : byte
+{
+    HealthAnalyzer = 0,
+    BodyScan = 1,
+    Full = 2,
 }

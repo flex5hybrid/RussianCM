@@ -1,0 +1,26 @@
+ent-WeaponWandPolymorphCarp-name = wand of carp polymorph
+ent-WeaponWandPolymorphCarp-desc = For when you need a carp filet quick and the clown is looking juicy.
+
+ent-WeaponWandPolymorphMonkey-name = wand of monkey polymorph
+ent-WeaponWandPolymorphMonkey-desc = For when you need a monkey friend.
+
+ent-WeaponWandFireball-name = wand of fireball
+ent-WeaponWandFireball-desc = Great big balls of fire!
+
+ent-WeaponWandLocker-name = wand of the locker
+ent-WeaponWandLocker-desc = Stuff nerds at a distance!
+
+ent-WeaponWandDeath-name = magical wand of instant death
+ent-WeaponWandDeath-desc = Only the best and brightest of the Space Wizards R&D team worked together to create this beauty.
+
+ent-WeaponWandPolymorphDoor-name = wand of entrance
+ent-WeaponWandPolymorphDoor-desc = For when you need a get-away route.
+
+ent-WeaponWandCluwne-name = wand of cluwning
+ent-WeaponWandCluwne-desc = Make their situation worse by turning them into a cluwne.
+
+ent-WeaponWandPolymorphBread-name = magic bread wand
+ent-WeaponWandPolymorphBread-desc = Turn all your friends into bread! Your boss! Your enemies! Your dog! Make everything bread!
+
+ent-WeaponWandPolymorphBase-name = item
+

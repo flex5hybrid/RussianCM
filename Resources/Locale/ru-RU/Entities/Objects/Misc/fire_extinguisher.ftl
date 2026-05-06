@@ -1,0 +1,14 @@
+ent-FireExtinguisher-name = fire extinguisher
+ent-FireExtinguisher-desc = It extinguishes fires.
+
+ent-BorgFireExtinguisher-name = maneuvering jet
+ent-BorgFireExtinguisher-desc = Based on fire extinguisher technology, the maneuvering jet is... well yes, its just a bigger fire extinguisher.
+
+ent-ExtinguisherSpray-name = extinguisher spray
+
+ent-FireExtinguisherMini-name = pocket fire extinguisher
+ent-FireExtinguisherMini-desc = A light and compact fibreglass-framed model fire extinguisher. It holds less water than its bigger brother.
+
+ent-SelfRechargingFireExtinguisher-name = self-recharging fire extinguisher
+ent-SelfRechargingFireExtinguisher-desc = It extinguishes fires. it slowly refills with water.
+

@@ -36,6 +36,8 @@ using Content.Shared.Chat;
 using Content.Shared.Kitchen;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
+using Content.Server.Corvax.TTS;
+using Content.Server.API; // RUMC
 
 namespace Content.Server.IoC
 {
@@ -64,6 +66,7 @@ namespace Content.Server.IoC
             IoCManager.Register<ContentNetworkResourceManager>();
             IoCManager.Register<IAdminNotesManager, AdminNotesManager>();
             IoCManager.Register<GhostKickManager>();
+            IoCManager.Register<TTSManager>(); // Corvax-TTS
             IoCManager.Register<ISharedAdminLogManager, AdminLogManager>();
             IoCManager.Register<IAdminLogManager, AdminLogManager>();
             IoCManager.Register<PlayTimeTrackingManager>();
@@ -95,6 +98,9 @@ namespace Content.Server.IoC
             IoCManager.Register<CommendationManager>();
             IoCManager.Register<RMCActionsManager>();
             IoCManager.Register<RMCChatBansManager>();
+
+            // RUMC
+            IoCManager.Register<PlaytimeApi>();
         }
     }
 }

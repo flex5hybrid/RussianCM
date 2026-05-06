@@ -1,15 +1,18 @@
 - type: entity
   parent:
-  - CMXenoDeveloped
-  - CMXenoTail
-  - CMXenoFlammable
-  - RMCXenoSpeechSounds
-  - RMCXenoCommendationReceiver
-  - RMCXenoMobCollision
+    - CMXenoDeveloped
+    - CMXenoTail
+    - CMXenoFlammable
+    - RMCXenoSpeechSounds
+    - RMCXenoCommendationReceiver
+    - RMCXenoMobCollision
   id: CMXenoWarrior
-  name: Warrior
-  description: A beefy alien with an armored carapace.
+  name: Воин
+  description: Мускулистый пришелец с бронированным панцирем.
   components:
+  - type: TTS
+    voice: CLINKZ_DOTA_2
+    faction: Xeno
   - type: GuideHelp
     guides:
     - RMCGuideRoleWarrior
@@ -77,6 +80,7 @@
       groups:
         Brute: 48
   - type: Tackle
+    min: 4
     max: 4
   - type: SlowOnPull
     slowdowns:

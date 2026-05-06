@@ -1,0 +1,1 @@
+ent-RMCFireAxe = пожарный топор

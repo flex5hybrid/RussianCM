@@ -1,0 +1,11 @@
+ent-AU14MagazineRifleAG80-name = предмет
+ent-AU14MagazineRifleAG80AP-name = предмет
+ent-AU14MagazineRifleAG80Ext-name = предмет
+ent-AU14CartridgeRifle97x16mm-name = патрон
+ent-AU14CartridgeRifle97x16mmAP-name = патрон
+ent-BulletRifle97x16mm-name = БазоваяПуля
+ent-BulletRifle97x16mm-desc = Если ты это видишь, ты, вероятно, мёртв!
+ent-BulletRifle97x16mmAP-name = БазоваяПуля
+ent-BulletRifle97x16mmAP-desc = Если ты это видишь, ты, вероятно, мёртв!
+ent-AU14AttachmentAG80StockCollapsible-name = предмет
+ent-AU14AttachmentGP45GrenadeLauncher-name = предмет

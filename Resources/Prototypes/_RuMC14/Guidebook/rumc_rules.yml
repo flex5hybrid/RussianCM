@@ -1,0 +1,14 @@
+- type: guideEntry
+  parent: RuMC
+  id: RuMCOverview
+  name: rumc-guide-entry-rules-core
+  priority: 0
+  text: "/ServerInfo/Guidebook/_RuMC14/Rules/RuMCRulesCore.xml"
+
+
+- type: guideEntry
+  parent: RuMC
+  id: RMCRulesCore
+  name: rumc-guide-entry-rules
+  priority: 1
+  text: "/ServerInfo/Guidebook/_RuMC14/Rules/RuMCRulesCore.xml"

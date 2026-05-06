@@ -929,7 +929,7 @@
 
 - type: entity
   parent: CMWebbingBase
-  id: CMWebbingSurgicalGreen
+  id: RMCWebbingSurgicalGreen
   name: surgical webbing vest
   description: A robust webbing vest specially designed to hold a fully array of surgical equipment. Typically issued to field doctors or synthetic personnel.
   suffix: Medical, Filled

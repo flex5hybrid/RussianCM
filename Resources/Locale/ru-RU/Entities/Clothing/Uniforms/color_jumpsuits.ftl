@@ -1,0 +1,51 @@
+ent-ClothingUniformJumpsuitColorWhite-name = white jumpsuit
+ent-ClothingUniformJumpsuitColorWhite-desc = A generic white jumpsuit with no rank markings.
+
+ent-ClothingUniformJumpsuitColorGrey-name = grey jumpsuit
+ent-ClothingUniformJumpsuitColorGrey-desc = A tasteful grey jumpsuit that reminds you of the good old days.
+
+ent-ClothingUniformJumpsuitColorBlack-name = black jumpsuit
+ent-ClothingUniformJumpsuitColorBlack-desc = A generic black jumpsuit with no rank markings.
+
+ent-ClothingUniformJumpsuitColorBlue-name = blue jumpsuit
+ent-ClothingUniformJumpsuitColorBlue-desc = A generic blue jumpsuit with no rank markings.
+
+ent-ClothingUniformJumpsuitColorDarkBlue-name = dark blue jumpsuit
+ent-ClothingUniformJumpsuitColorDarkBlue-desc = A generic dark blue jumpsuit with no rank markings.
+
+ent-ClothingUniformJumpsuitColorTeal-name = teal jumpsuit
+ent-ClothingUniformJumpsuitColorTeal-desc = A generic teal jumpsuit with no rank markings.
+
+ent-ClothingUniformJumpsuitColorGreen-name = green jumpsuit
+ent-ClothingUniformJumpsuitColorGreen-desc = A generic green jumpsuit with no rank markings.
+
+ent-ClothingUniformJumpsuitColorDarkGreen-name = dark green jumpsuit
+ent-ClothingUniformJumpsuitColorDarkGreen-desc = A generic dark green jumpsuit with no rank markings.
+
+ent-ClothingUniformJumpsuitColorOrange-name = orange jumpsuit
+ent-ClothingUniformJumpsuitColorOrange-desc = Don't wear this near paranoid security officers.
+
+ent-ClothingUniformJumpsuitColorPink-name = pink jumpsuit
+ent-ClothingUniformJumpsuitColorPink-desc = Just looking at this makes you feel <i>fabulous</i>.
+
+ent-ClothingUniformJumpsuitColorRed-name = red jumpsuit
+ent-ClothingUniformJumpsuitColorRed-desc = A generic red jumpsuit with no rank markings.
+
+ent-ClothingUniformJumpsuitColorYellow-name = yellow jumpsuit
+ent-ClothingUniformJumpsuitColorYellow-desc = A generic yellow jumpsuit with no rank markings.
+
+ent-ClothingUniformJumpsuitColorPurple-name = purple jumpsuit
+ent-ClothingUniformJumpsuitColorPurple-desc = A generic light purple jumpsuit with no rank markings.
+
+ent-ClothingUniformJumpsuitColorLightBrown-name = light brown jumpsuit
+ent-ClothingUniformJumpsuitColorLightBrown-desc = A generic light brown jumpsuit with no rank markings.
+
+ent-ClothingUniformJumpsuitColorBrown-name = brown jumpsuit
+ent-ClothingUniformJumpsuitColorBrown-desc = A generic brown jumpsuit with no rank markings.
+
+ent-ClothingUniformJumpsuitColorMaroon-name = maroon jumpsuit
+ent-ClothingUniformJumpsuitColorMaroon-desc = A generic maroon jumpsuit with no rank markings.
+
+ent-ClothingUniformColorRainbow-name = rainbow jumpsuit
+ent-ClothingUniformColorRainbow-desc = A multi-colored jumpsuit!
+

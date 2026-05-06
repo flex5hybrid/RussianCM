@@ -1,0 +1,87 @@
+ent-BaseScrap-name = scrap
+ent-BaseScrap-desc = Worthless junk. You could probably get some materials out of it though.
+
+ent-BaseScrapLarge-name = scrap
+ent-BaseScrapLarge-desc = Worthless junk. You could probably get some materials out of it though.
+
+ent-ScrapSteel-name = blasted steel pile
+ent-ScrapSteel-desc = An pile of steel welded together in extreme heat. It's of a decent size overall; you could probably get a fair amount of sheets out of it.
+
+ent-ScrapGlass-name = scrap circuitry
+ent-ScrapGlass-desc = A huge lump of various circuits, strangely fused together. You could likely extract some materials out of this.
+
+ent-ScrapAirlock1-name = airlock door
+ent-ScrapAirlock1-desc = This used to keep air in. Now it doesn't seem to be doing anything at all.
+
+ent-ScrapAirlock2-name = airlock light
+ent-ScrapAirlock2-desc = Serves it right for flashing red all those times.
+
+ent-ScrapBucket-name = busted bucket
+ent-ScrapBucket-desc = Dear god...
+
+ent-ScrapCamera-name = broken camera
+ent-ScrapCamera-desc = It might still be watching.
+
+ent-ScrapCanister1-name = canister handle
+ent-ScrapCanister1-desc = Helpful for holding a canister. Now you just need the actual canister part.
+
+ent-ScrapCanister2-name = canister valve
+ent-ScrapCanister2-desc = A valve from a gas canister.
+
+ent-ScrapCloset-name = closet door
+ent-ScrapCloset-desc = A blown off door from a maintenance closet. Looks like a nice piece of wall decor.
+
+ent-ScrapFaxMachine-name = fax machine
+ent-ScrapFaxMachine-desc = The unfortunate result of one too many ASCII arts being sent to Central Command.
+
+ent-ScrapFireExtinguisher-name = split fire extinguisher
+ent-ScrapFireExtinguisher-desc = The large gash down the center makes you worry for the previous user.
+
+ent-ScrapFirelock1-name = firelock door
+ent-ScrapFirelock1-desc = At least you still know what it's meant for.
+
+ent-ScrapFirelock2-name = firelock door
+ent-ScrapFirelock2-desc = OH! That's where the other half went!
+
+ent-ScrapFirelock3-name = firelock frame
+ent-ScrapFirelock3-desc = Worthless junk. You could probably get some materials out of it though.
+
+ent-ScrapIntercom-name = intercom scrap
+ent-ScrapIntercom-desc = You wish it at least came with some encryption keys.
+
+ent-ScrapJetpack-name = busted jetpack
+ent-ScrapJetpack-desc = Looks like it won't be flying any more.
+
+ent-ScrapMedkit-name = snapped medkit
+ent-ScrapMedkit-desc = Hopefully they got some use out of it.
+
+ent-ScrapMopBucket-name = half a mop bucket
+ent-ScrapMopBucket-desc = Tiders die. Janitors survive.
+
+ent-ScrapPAI-name = personal ai device
+ent-ScrapPAI-desc = A buddy! You still in there? Hello? Buddy???
+
+ent-ScrapPAIGold-name = gilded personal ai device
+ent-ScrapPAIGold-desc = Wow! What a one-in-a-million find! This would be worth a fortune... if it was in good condition.
+
+ent-ScrapTube-name = shattered sample tube
+ent-ScrapTube-desc = A glass tube containing some kind of rare sample. Or at least, it used to contain it. Not much left in there now.
+
+ent-ScrapGeneratorPlasmaLeaking-name = leaking P.A.C.M.A.N. generator
+ent-ScrapGeneratorPlasmaLeaking-desc = An old looking P.A.C.M.A.N. generator whos plasma tanks started leaking.
+
+ent-ScrapGeneratorPlasma-name = old P.A.C.M.A.N. generator
+ent-ScrapGeneratorPlasma-desc = An old looking P.A.C.M.A.N. generator. It's in very poor condition and non functional.
+
+ent-ScrapGeneratorUraniumLeaking-name = leaking S.U.P.E.R.P.A.C.M.A.N. generator
+ent-ScrapGeneratorUraniumLeaking-desc = A S.U.P.E.R.P.A.C.M.A.N. generator that appears to have had some kind of catastrophic failure. Its leaking uranium.
+
+ent-ScrapGeneratorUranium-name = destroyed S.U.P.E.R.P.A.C.M.A.N. generator
+ent-ScrapGeneratorUranium-desc = A S.U.P.E.R.P.A.C.M.A.N. generator that appears to have had some kind of catastrophic failure.
+
+ent-ScrapGeneratorFrame-name = generator frame
+ent-ScrapGeneratorFrame-desc = A frame of a P.A.C.M.A.N. or S.U.P.E.R.P.A.C.M.A.N. type generator. Where is the rest of it?
+
+ent-ScrapGeneratorFuelTank-name = fuel tank
+ent-ScrapGeneratorFuelTank-desc = A fuel tank from a S.U.P.E.R.P.A.C.M.A.N. type generator. The gauge indicates its got a little fuel left.
+

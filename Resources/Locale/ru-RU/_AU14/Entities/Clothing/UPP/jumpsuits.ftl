@@ -1,0 +1,14 @@
+ent-AU14FatiguesUPP-name = Полевая форма морской пехоты СПН
+ent-AU14FatiguesUPP-desc = Стандартный комплект полевой формы Союза Прогрессивных Народов. Содержит вставки из лёгкого кевлара для защиты от осколков.
+ent-AU14JumpsuitEngiUPP-name = Полевая форма инженера СПН
+ent-AU14JumpsuitMPUPP-name = Полевая форма военной полиции СПН
+ent-AU14JumpsuitMedicUPP-name = Полевая форма медика СПН
+ent-AU14JumpsuitOfficerUPP-name = Полевая форма офицера СПН
+ent-AU14ServiceFatiguesUPP-name = Парадная форма СПН
+ent-AU14ServiceFatiguesUPP-desc = Стандартная парадная форма армии СПН. Обычно носится офицерами.
+ent-AU14BoilerFatiguesUPP-name = Спецкомбез СПН
+ent-AU14BoilerFatiguesUPP-desc = Стандартная форма армии СПН. Обычно носится пилотами и членами лётных экипажей.
+ent-AU14JumpsuitArmyUPP-name = Полевая форма армии СПН
+ent-AU14JumpsuitArmyUPP-desc = Комплект полевой формы СПН, массово производимый для Вооружённого Коллектива Союза Прогрессивных Народов. Редкое зрелище, особенно в зонах ИТМ. Этот конкретный комплект имеет стандартный узор СПН 202-го пехотного полка армии СПН.
+ent-AU14SuitCBRNUPP-name = Костюм МОПП СПН
+ent-AU14SuitCBRNUPP-desc = Комбинезон из костюма МОПП Вооружённых Сил СПН.

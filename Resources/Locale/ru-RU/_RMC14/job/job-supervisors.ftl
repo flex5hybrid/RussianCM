@@ -1,0 +1,27 @@
+﻿# supervisors
+cm-job-supervisors-we-ya = Корпоративный офис Ве-Я
+cm-job-supervisors-aso = Офицер вспомогательной поддержки
+cm-job-supervisors-co = Командующий офицер
+rmc-job-supervisors-commander = действующий Командующий
+cm-job-supervisors-cmo = Главный врач
+cm-job-supervisors-ares = ARES и APOLLO
+cm-job-supervisors-po = Пилоты десантных кораблей и штурмовых кораблей
+cm-job-supervisors-marine-high-command = Верховное командование морской пехоты
+cm-job-supervisors-cmp = Начальник военной полиции
+cm-job-supervisors-qm = Офицер логистики
+cm-job-supervisors-ce = Главный инженер
+cm-job-supervisors-sl = действующий командир отряда
+cm-job-supervisors-staff = Администрация сервера
+cm-job-supervisors-nobody = никто, вы предоставлены сами себе
+cm-job-supervisors-colonists = колонисты
+cm-job-supervisors-secserg = командир секции
+cm-job-supervisors-platco = командир взвода
+cm-job-supervisors-company-command = командование компании
+cm-job-supervisors-royal-tl = командир отделения
+cm-job-supervisors-royal-lieutenant = лейтенант
+cm-job-supervisors-royal-captain = капитан
+cm-job-supervisors-royal-major = майор
+cm-job-supervisors-royal-section-leader = командир секции
+cm-job-supervisors-royal-troop-sergeant = сержант отряда
+cm-job-supervisors-royal-troop-commander = командир отряда
+cm-job-supervisors-squadron-command = командование эскадрильи

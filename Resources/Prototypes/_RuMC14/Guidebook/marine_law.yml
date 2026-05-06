@@ -1,0 +1,277 @@
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLaw
+  name: rumc-guide-entry-rules-marine-law
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLaw.xml"
+  priority: 3
+  children:
+  - RuMCCommandChain
+  - RuMCMarineLawRanks
+  - RuMCMarineLawDefinitions
+  - RuMCMarineLawProcedures
+  - RuMCMarineLawCrimes
+  - RuMCMarineLawPrisonerRights
+  - RuMCMarineLawAppeals
+  - RuMCMarineLawSpecialProvisions
+  - RuMCMarineLawSynthetics
+  - RuMCMarineLawCOProvisions
+  - RuMCMarineSOP
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCCommandChain
+  name: rumc-guide-entry-rules-command-chain
+  priority: 0
+  text: "/ServerInfo/Guidebook/_RMC14/Rules/Roleplay/RMCCommandChain.xml"
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawRanks
+  name: rumc-guide-entry-marine-law-ranks
+  priority: 0
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawRanks.xml"
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawDefinitions
+  name: rumc-guide-entry-marine-law-definitions
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawDefinitions.xml"
+  priority: 1
+
+# Procedures
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawProcedures
+  name: rumc-guide-entry-marine-law-procedures
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawProcedures.xml"
+  priority: 2
+  children:
+  - RuMCMarineLawArresting
+  - RuMCMarineLawCharging
+  - RuMCMarineLawNJP
+  - RuMCMarineLawLethal
+  - RuMCMarineLawSearches
+  - RuMCMarineLawDemotions
+  - RuMCMarineLawExecutions
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawArresting
+  name: rumc-guide-entry-marine-law-arresting
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawArresting.xml"
+  priority: 1
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawCharging
+  name: rumc-guide-entry-marine-law-charging
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawCharging.xml"
+  priority: 2
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawNJP
+  name: rumc-guide-entry-marine-law-njp
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawNJP.xml"
+  priority: 3
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawLethal
+  name: rumc-guide-entry-marine-law-lethal
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawLethal.xml"
+  priority: 4
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawSearches
+  name: rumc-guide-entry-marine-law-searches
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawSearches.xml"
+  priority: 5
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawDemotions
+  name: rumc-guide-entry-marine-law-demotions
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawDemotions.xml"
+  priority: 6
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawExecutions
+  name: rumc-guide-entry-marine-law-executions
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawExecutions.xml"
+  priority: 7
+
+# Crimes
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawCrimes
+  name: rumc-guide-entry-marine-law-crimes
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawCrimes.xml"
+  priority: 3
+  children:
+  - RuMCMarineLawCrimesVariable
+  - RuMCMarineLawCrimesMinor
+  - RuMCMarineLawCrimesMajor
+  - RuMCMarineLawCrimesCapital
+  - RuMCMarineLawCrimesOptional
+  - RuMCMarineLawCrimesPrecautionary
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawCrimesVariable
+  name: rumc-guide-entry-marine-law-crimes-variable
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawCrimesVariable.xml"
+  priority: 0
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawCrimesMinor
+  name: rumc-guide-entry-marine-law-crimes-minor
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawCrimesMinor.xml"
+  priority: 1
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawCrimesMajor
+  name: rumc-guide-entry-marine-law-crimes-major
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawCrimesMajor.xml"
+  priority: 2
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawCrimesCapital
+  name: rumc-guide-entry-marine-law-crimes-capital
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawCrimesCapital.xml"
+  priority: 3
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawCrimesOptional
+  name: rumc-guide-entry-marine-law-crimes-optional
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawCrimesOptional.xml"
+  priority: 4
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawCrimesPrecautionary
+  name: rumc-guide-entry-marine-law-crimes-precautionary
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawCrimesPrecautionary.xml"
+  priority: 5
+
+# Prisoner Rights
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawPrisonerRights
+  name: rumc-guide-entry-marine-law-prisoner-rights
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawPrisonerRights.xml"
+  priority: 4
+
+# Appeals
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawAppeals
+  name: rumc-guide-entry-marine-law-appeals
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawAppeals.xml"
+  priority: 5
+
+# Special Circumstances
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawSpecialProvisions
+  name: rumc-guide-entry-marine-law-special-provisions
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawSpecialProvisions.xml"
+  priority: 6
+
+# Synthetics
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawSynthetics
+  name: rumc-guide-entry-marine-law-synthetics
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawSynthetics.xml"
+  priority: 7
+
+# Commanding Officer provisions and regulations
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineLawCOProvisions
+  name: rumc-guide-entry-marine-law-co-provisions
+  text: "/ServerInfo/Guidebook/_RuMC14/Law/RuMCMarineLawCOProvisions.xml"
+  priority: 8
+
+  # SOP
+
+# SOP
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineSOP
+  name: rumc-guide-entry-marine-sop
+  text: "/ServerInfo/Guidebook/_RuMC14/SOP/RuMCMarineSOP.xml"
+  priority: 9
+  children:
+  - RuMCMarineSOPGeneral
+  - RuMCMarineSOPEquipment
+  - RuMCMarineSOPDepartment
+  - RuMCMarineSOPNONModDepartment
+  - RuMCMarineSOPNONModCommand
+  - RuMCMarineSOPNONModDeployment
+  - RuMCMarineSOPNONModThirdparty
+
+# General Regulations
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineSOPGeneral
+  name: rumc-guide-entry-marine-sop-general
+  text: "/ServerInfo/Guidebook/_RuMC14/SOP/RuMCMarineSOPGeneral.xml"
+  priority: 1
+
+# Equipment Regulations
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineSOPEquipment
+  name: rumc-guide-entry-marine-sop-equipment
+  text: "/ServerInfo/Guidebook/_RuMC14/SOP/RuMCMarineSOPEquipment.xml"
+  priority: 2
+
+# Department Regulations
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineSOPDepartment
+  name: rumc-guide-entry-marine-sop-department
+  text: "/ServerInfo/Guidebook/_RuMC14/SOP/RuMCMarineSOPDepartment.xml"
+  priority: 3
+
+  # NON-Modifiable
+
+# NON-Modifiable Department
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineSOPNONModDepartment
+  name: rumc-guide-entry-marine-sop-nonmod-department
+  text: "/ServerInfo/Guidebook/_RuMC14/SOP/RuMCMarineSOPNONModDepartment.xml"
+  priority: 4
+
+# NON-Modifiable Command
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineSOPNONModCommand
+  name: rumc-guide-entry-marine-sop-nonmod-command
+  text: "/ServerInfo/Guidebook/_RuMC14/SOP/RuMCMarineSOPNONModCommand.xml"
+  priority: 5
+
+# NON-Modifiable Deployment Restrictions
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineSOPNONModDeployment
+  name: rumc-guide-entry-marine-sop-nonmod-deployment
+  text: "/ServerInfo/Guidebook/_RuMC14/SOP/RuMCMarineSOPNONModDeployment.xml"
+  priority: 6
+
+# NON-Modifiable Third Parties
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMarineSOPNONModThirdparty
+  name: rumc-guide-entry-marine-sop-nonmod-thirdparty
+  text: "/ServerInfo/Guidebook/_RuMC14/SOP/RuMCMarineSOPNONModThirdParty.xml"
+  priority: 7

@@ -1,0 +1,3 @@
+ent-ChurchBell-name = church bell
+ent-ChurchBell-desc = You feel your soul grow ever closer to the realms beyond for every chime this bell tolls...
+

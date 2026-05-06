@@ -4,48 +4,68 @@
   placement:
     mode: SnapgridCenter
   components:
-    - type: Transform
-    - type: Physics
-      bodyType: Static
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PhysShapeCircle
-            radius: 0.40
-          density: 190
-          mask:
-            - MachineMask
-          layer:
-            - MachineLayer
-    - type: Clickable
-    - type: InteractionOutline
-    - type: RMCChemicalDispenser
-    - type: ApcPowerReceiver
-      needsPower: false # TODO RMC14
-      powerLoad: 0
-    - type: ItemSlots
-      slots:
-        chemical_dispenser_slot:
-          name: Chemical Dispenser
-          whitelist:
-            tags:
-              - GlassBeaker
-              - ChemDispensable
-    - type: ContainerContainer
-      containers:
-        chemical_dispenser_slot: !type:ContainerSlot
-        machine_board: !type:Container
-        machine_parts: !type:Container
-    - type: UserInterface
-      interfaces:
-        enum.RMCChemicalDispenserUi.Key:
-          type: RMCChemicalDispenserBui
-    - type: ActivatableUI
-      key: enum.RMCChemicalDispenserUi.Key
-    - type: InteractedBlacklist
-      blacklist:
-        components:
-          - Xeno
+  - type: Transform
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.40
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Corrodible
+    timeToApply: 4
+    structure: true
+  - type: Damageable
+    damageContainer: StructuralMarine
+    damageModifierSet: null
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Clickable
+  - type: InteractionOutline
+  - type: RMCChemicalDispenser
+  - type: ApcPowerReceiver
+    needsPower: false # TODO RMC14
+    powerLoad: 0
+  - type: ItemSlots
+    slots:
+      chemical_dispenser_slot:
+        name: Chemical Dispenser
+        whitelist:
+          tags:
+          - GlassBeaker
+          - ChemDispensable
+  - type: ContainerContainer
+    containers:
+      chemical_dispenser_slot: !type:ContainerSlot
+      machine_board: !type:Container
+      machine_parts: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.RMCChemicalDispenserUi.Key:
+        type: RMCChemicalDispenserBui
+  - type: ActivatableUI
+    key: enum.RMCChemicalDispenserUi.Key
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno
 
 - type: entity
   abstract: true

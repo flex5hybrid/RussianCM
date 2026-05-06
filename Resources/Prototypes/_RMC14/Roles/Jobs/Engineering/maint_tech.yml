@@ -4,6 +4,7 @@
   name: cm-job-name-maint-tech
   description: cm-job-description-maint-tech
   setPreference: false
+  newToJobInfo: rmc-new-to-job-maint-tech
   playTimeTracker: CMJobMaintTech
   requirements: []
   startingGear: CMGearMaintTech

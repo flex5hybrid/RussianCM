@@ -1,0 +1,27 @@
+- type: entity
+  parent: MarkerBase
+  id: RuMCSpawnerAlamo
+  name: спавнер Аламо
+  description: Определяет положение спавна Аламо. Обратите внимание, центр Аламо смещен на 1 тайл вправо!
+  suffix: Alamo
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    state: green
+  - type: GridSpawner
+    spawn: "/Maps/_RMC14/alamo.yml"
+
+- type: entity
+  parent: MarkerBase
+  id: RuMCSpawnerNormandy
+  name: спавнер Нормандии
+  description: Определяет положение спавна Нормандии. Обратите внимание, центр Нормандии смещен на 1 тайл вправо!
+  suffix: Alamo
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    state: green
+  - type: GridSpawner
+    spawn: "/Maps/_RMC14/normandy.yml"

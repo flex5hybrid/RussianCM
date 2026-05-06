@@ -1,0 +1,48 @@
+ent-RMCAreaGAOOB = За пределами границ
+
+ent-RMCAreaGASupplyDrop = Отсек припасов
+
+ent-RMCAreaGALiaisonOffice = Офис связи
+
+ent-RMCAreaGAAI = AI-интерфейс
+
+ent-RMCAreaGASynth = Синтетический шкаф для хранения вещей
+
+ent-RMCAreaGAEngineering = Инженерное дело
+
+ent-RMCAreaGAMaint = Обслуживание
+
+ent-RMCAreaGASupply = Поставлять
+
+ent-RMCAreaGAHangar = Ангар
+
+ent-RMCAreaGAArmoury = Взводный арсенал
+
+ent-RMCAreaGAPrep = Подготовка взвода
+
+ent-RMCAreaGACommandRooms = Комнаты управления взводом
+
+ent-RMCAreaGACommandDeck = Командная палуба взвода
+
+ent-RMCAreaGABriefRoom = Комната для брифингов
+
+ent-RMCAreaGAMedical = Медицинский
+
+ent-RMCAreaGADisposals = Выбытия
+
+ent-RMCAreaGABathroom = Ванная комната
+
+ent-RMCAreaGAMessHall = Столовая
+
+ent-RMCAreaGAHypersleepGearLockers = Шкафчики для снаряжения Hypersleep
+
+ent-RMCAreaGAHypersleepStorageD = Хранилище Hypersleep D
+
+ent-RMCAreaGAHypersleepStorageC = Хранилище Hypersleep C
+
+ent-RMCAreaGAHypersleepStorageB = Хранилище Hypersleep B
+
+ent-RMCAreaGAHypersleepStorageA = Хранилище Hypersleep A
+
+ent-RMCAreaGA = Золотая Стрела
+

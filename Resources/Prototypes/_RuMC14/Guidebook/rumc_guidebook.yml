@@ -1,0 +1,91 @@
+- type: guideEntry
+  abstract: true
+  id: RuMC
+  isCM: true
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMC14
+  name: rmc-guide-entry-rmc
+  priority: 1
+  text: "/ServerInfo/Guidebook/_RuMC14/RuMC14.xml"
+  children:
+  - RuMCGuideNewPlayer
+  - RuMCChemicals
+  - RuMCIntel
+  - RuMCMedical
+
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCGuideNewPlayer
+  name: "New Player Guide"
+  text: "/ServerInfo/Guidebook/_RuMC14/RuMCGuideNewPlayer.xml"
+  children:
+  - RuMCGuideRoleRifleman
+  - RuMCGuideRoleDrone
+  - RuMCSurvivor
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCGuideRoleRifleman
+  priority: 0
+  name: "Rifleman Guide"
+  text: "/ServerInfo/Guidebook/_RuMC14/NewPlayerGuide/RuMCGuideRoleRifleman.xml"
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCGuideRoleDrone
+  priority: 1
+  name: "Drone Guide"
+  text: "/ServerInfo/Guidebook/_RuMC14/NewPlayerGuide/RuMCGuideRoleDrone.xml"
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCSurvivor
+  priority: 8
+  name: "Survivor"
+  text: "/ServerInfo/Guidebook/_RuMC14/NewPlayerGuide/RuMCSurvivor.xml"
+
+
+# Chemistry stuff
+- type: guideEntry
+  parent: RuMC
+  id: RuMCChemicals
+  name: guide-entry-chemicals
+  text: "/ServerInfo/Guidebook/_RuMC14/Chemicals/RuMCChemicals.xml"
+  priority: 33
+  children:
+  #  - RuMCElements
+  - RuMCMedicine
+  #  - RuMCNarcotics
+  #  - RuMCPyrotechnic
+  #  - RuMCToxins
+  #  - RuMCFoods
+  #  - RuMCBotanical
+  #  - RuMCBiological
+  #  - RuMCOthers
+  filterEnabled: True
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMedicine
+  name: guide-entry-medicine
+  text: "/ServerInfo/Guidebook/_RuMC14/Chemicals/Medicine.xml"
+  filterEnabled: True
+
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCIntel
+  priority: 7
+  name: "Intel"
+  text: "/ServerInfo/Guidebook/_RuMC14/Guides/RuMCIntel.xml"
+
+
+- type: guideEntry
+  parent: RuMC
+  id: RuMCMedical
+  priority: 5
+  name: "Medical"
+  text: "/ServerInfo/Guidebook/_RuMC14/Guides/RuMCMedical.xml"

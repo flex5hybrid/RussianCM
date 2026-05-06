@@ -1,0 +1,40 @@
+ent-RandomHumanoidSpawnerDeathSquad-name = Death Squad Agent
+
+ent-RandomHumanoidSpawnerERTLeader-name = ERT leader
+
+ent-RandomHumanoidSpawnerERTLeaderEVA-name = ERT leader
+
+ent-RandomHumanoidSpawnerERTChaplain-name = ERT chaplain
+
+ent-RandomHumanoidSpawnerERTChaplainEVA-name = ERT chaplain
+
+ent-RandomHumanoidSpawnerERTJanitor-name = ERT janitor
+
+ent-RandomHumanoidSpawnerERTJanitorEVA-name = ERT janitor
+
+ent-RandomHumanoidSpawnerERTEngineer-name = ERT engineer
+
+ent-RandomHumanoidSpawnerERTEngineerEVA-name = ERT engineer
+
+ent-RandomHumanoidSpawnerERTSecurity-name = ERT security
+
+ent-RandomHumanoidSpawnerERTSecurityEVA-name = ERT security
+
+ent-RandomHumanoidSpawnerERTMedical-name = ERT medic
+
+ent-RandomHumanoidSpawnerERTMedicalEVA-name = ERT medic
+
+ent-RandomHumanoidSpawnerCBURNUnit-name = CBURN Agent
+
+ent-RandomHumanoidSpawnerCentcomOfficial-name = CentComm official
+
+ent-RandomHumanoidSpawnerSyndicateAgent-name = syndicate agent
+
+ent-RandomHumanoidSpawnerNukeOp-name = Nuclear Operative
+
+ent-RandomHumanoidSpawnerCluwne-name = Cluwne
+
+ent-RandomHumanoidSpawnerERTLeaderEVALecter-name = ERT leader
+
+ent-RandomHumanoidSpawnerERTSecurityEVALecter-name = ERT security
+

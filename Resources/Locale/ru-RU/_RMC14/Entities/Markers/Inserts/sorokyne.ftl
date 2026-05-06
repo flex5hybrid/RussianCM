@@ -1,0 +1,1 @@
+ent-RMCMapInsertSorokyneMedbay = Лагерь выживших

@@ -1,0 +1,14 @@
+ent-RMCCrateHighCapacityPowerCell = ящик высокоёмких батарей
+ent-RMCCrateFlashlights = ящик фонариков
+ent-RMCCrateSuperPacmanParts = детали портативного генератора Супер Пакман
+ent-RMCCratePacmanParts = детали портативного генератора Пакман
+ent-RMCCrateReplacementLights = ящик сменных ламп
+ent-RMCCrateMechanicalMaintenance = ящик механического оборудования
+ent-RMCCrateElectricalMaintenance = ящик электромонтажного оборудования
+ent-RMCCrateSuperconductingMagneticCoil = ящик сверхпроводящих магнитных катушек
+ent-RMCCrateWoodenPlanks = ящик деревянных досок
+ent-RMCCrateGlassSheets = ящик стеклянных листов
+ent-RMCCratePlasteelSheets = ящик пласталевых листов
+ent-RMCCrateMetalSheets = ящик металлических листов
+ent-RMCCrateSandbagsConstructionKit = набор для строительства мешков с песком
+ent-RMCCrateEmptySandbags = ящик пустых мешков с песком

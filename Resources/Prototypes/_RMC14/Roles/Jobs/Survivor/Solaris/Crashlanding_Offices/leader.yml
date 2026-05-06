@@ -47,7 +47,6 @@
       factions:
       - WeYa
       - Civilian
-
     - type: JobPrefix
       prefix: rmc-job-prefix-pmc-leader
     - type: TacticalMapIcon

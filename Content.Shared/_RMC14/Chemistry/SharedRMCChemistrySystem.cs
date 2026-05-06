@@ -61,8 +61,7 @@ public abstract class SharedRMCChemistrySystem : EntitySystem
 
     private void OnSolutionGetState(Entity<SolutionComponent> ent, ref ComponentGetState args)
     {
-        var s = new Solution(ent.Comp.Solution, _prototypes);
-        args.State = new SolutionComponentState(s);
+        args.State = new SolutionComponentState(ent.Comp.Solution);
     }
 
     private void OnSolutionHandleState(Entity<SolutionComponent> ent, ref ComponentHandleState args)
@@ -70,7 +69,7 @@ public abstract class SharedRMCChemistrySystem : EntitySystem
         if (args.Current is not SolutionComponentState s)
             return;
 
-        ent.Comp.Solution = new Solution(s.Solution, _prototypes);
+        ent.Comp.Solution = s.Solution;
     }
 
     private void OnDetailedSolutionExamined(Entity<DetailedExaminableSolutionComponent> ent, ref ExaminedEvent args)

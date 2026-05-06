@@ -1,0 +1,39 @@
+ent-ProjectileFireball-name = fireball
+ent-ProjectileFireball-desc = You better GITTAH WEIGH.
+
+ent-ProjectileDragonsBreath-name = dragon's breath
+ent-ProjectileDragonsBreath-desc = Try not to get toasted.
+
+ent-ProjectileAnomalyFireball-name = fireball
+ent-ProjectileAnomalyFireball-desc = Hovering blob of flame.
+
+ent-ProjectileLocker-name = cursed locker
+ent-ProjectileLocker-desc = A cursed magical locker! Can you resist?
+
+ent-ProjectilePolyboltCarp-name = carp polybolt
+ent-ProjectilePolyboltCarp-desc = Nooo, I don't wanna be fish!
+
+ent-ProjectilePolyboltMonkey-name = monkey polybolt
+ent-ProjectilePolyboltMonkey-desc = Nooo, I don't wanna be monkey!
+
+ent-ProjectilePolyboltDoor-name = door polybolt
+ent-ProjectilePolyboltDoor-desc = Nooo, I don't wanna be door!
+
+ent-ProjectileHealingBolt-name = healing bolt
+ent-ProjectileHealingBolt-desc = I COMMAND YOU TO LIVE!
+
+ent-BulletInstakillMagic-name = magical lead cylinder
+ent-BulletInstakillMagic-desc = This looks familiar.
+
+ent-ProjectilePolyboltCluwne-name = cluwne polybolt
+ent-ProjectilePolyboltCluwne-desc = KnoH KnoH!
+
+ent-ProjectileIcicle-name = icicle
+ent-ProjectileIcicle-desc = Brrrrr.
+
+ent-ProjectilePolyboltBread-name = bread polybolt
+ent-ProjectilePolyboltBread-desc = Nooo, I don't wanna be bread!
+
+ent-ProjectilePolyboltBase-name = BaseBullet
+ent-ProjectilePolyboltBase-desc = If you can see this you're probably dead!
+

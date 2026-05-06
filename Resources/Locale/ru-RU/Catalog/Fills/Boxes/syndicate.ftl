@@ -1,0 +1,14 @@
+ent-ElectricalDisruptionKit-name = electrical disruption kit
+
+ent-ChemicalSynthesisKit-name = chemical synthesis kit
+ent-ChemicalSynthesisKit-desc = A starter kit for the aspiring chemist, includes two vials of vestine for all your criminal needs!
+
+ent-ThrowingKnivesKit-name = throwing knives kit
+ent-ThrowingKnivesKit-desc = A set of 4 syndicate branded throwing knives, perfect for embedding into the body of your victims.
+
+ent-BoxDeathRattleImplants-name = deathrattle implant box
+ent-BoxDeathRattleImplants-desc = Six deathrattle implants for the whole squad.
+
+ent-CombatBakeryKit-name = combat bakery kit
+ent-CombatBakeryKit-desc = A kit of clandestine baked weapons.
+

@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.2
   forkId: ""
   forkVersion: ""
-  time: 02/08/2026 01:31:51
-  entityCount: 35752
+  time: 03/19/2026 17:29:28
+  entityCount: 35725
 maps:
 - 1
 grids:
@@ -81521,163 +81521,6 @@ entities:
     - type: Transform
       pos: 194.5,-213.5
       parent: 1
-- proto: CMSpawnPointSurvivor
-  entities:
-  - uid: 3195
-    components:
-    - type: Transform
-      pos: 12.5,-176.5
-      parent: 1
-  - uid: 3196
-    components:
-    - type: Transform
-      pos: 17.5,-136.5
-      parent: 1
-  - uid: 3197
-    components:
-    - type: Transform
-      pos: 22.5,-92.5
-      parent: 1
-  - uid: 3198
-    components:
-    - type: Transform
-      pos: 23.5,-77.5
-      parent: 1
-  - uid: 3199
-    components:
-    - type: Transform
-      pos: 28.5,-103.5
-      parent: 1
-  - uid: 3200
-    components:
-    - type: Transform
-      pos: 32.5,-51.5
-      parent: 1
-  - uid: 3201
-    components:
-    - type: Transform
-      pos: 35.5,-101.5
-      parent: 1
-  - uid: 3202
-    components:
-    - type: Transform
-      pos: 50.5,-141.5
-      parent: 1
-  - uid: 3203
-    components:
-    - type: Transform
-      pos: 50.5,-65.5
-      parent: 1
-  - uid: 3204
-    components:
-    - type: Transform
-      pos: 55.5,-181.5
-      parent: 1
-  - uid: 3205
-    components:
-    - type: Transform
-      pos: 55.5,-24.5
-      parent: 1
-  - uid: 3206
-    components:
-    - type: Transform
-      pos: 61.5,-210.5
-      parent: 1
-  - uid: 3207
-    components:
-    - type: Transform
-      pos: 61.5,-196.5
-      parent: 1
-  - uid: 3208
-    components:
-    - type: Transform
-      pos: 66.5,-104.5
-      parent: 1
-  - uid: 3209
-    components:
-    - type: Transform
-      pos: 73.5,-84.5
-      parent: 1
-  - uid: 3210
-    components:
-    - type: Transform
-      pos: 78.5,-126.5
-      parent: 1
-  - uid: 3211
-    components:
-    - type: Transform
-      pos: 78.5,-11.5
-      parent: 1
-  - uid: 3212
-    components:
-    - type: Transform
-      pos: 87.5,-36.5
-      parent: 1
-  - uid: 3213
-    components:
-    - type: Transform
-      pos: 88.5,-97.5
-      parent: 1
-  - uid: 3214
-    components:
-    - type: Transform
-      pos: 89.5,-207.5
-      parent: 1
-  - uid: 3215
-    components:
-    - type: Transform
-      pos: 93.5,-100.5
-      parent: 1
-  - uid: 3216
-    components:
-    - type: Transform
-      pos: 98.5,-181.5
-      parent: 1
-  - uid: 3217
-    components:
-    - type: Transform
-      pos: 106.5,-197.5
-      parent: 1
-  - uid: 3218
-    components:
-    - type: Transform
-      pos: 110.5,-162.5
-      parent: 1
-  - uid: 3219
-    components:
-    - type: Transform
-      pos: 119.5,-74.5
-      parent: 1
-  - uid: 3220
-    components:
-    - type: Transform
-      pos: 125.5,-181.5
-      parent: 1
-  - uid: 3221
-    components:
-    - type: Transform
-      pos: 137.5,-71.5
-      parent: 1
-  - uid: 3222
-    components:
-    - type: Transform
-      pos: 141.5,-142.5
-      parent: 1
-  - uid: 3223
-    components:
-    - type: Transform
-      pos: 160.5,-131.5
-      parent: 1
-  - uid: 3224
-    components:
-    - type: Transform
-      pos: 179.5,-152.5
-      parent: 1
-  - uid: 3225
-    components:
-    - type: Transform
-      pos: 183.5,-138.5
-      parent: 1
 - proto: CMSpawnPointXeno
   entities:
   - uid: 3226
@@ -161172,6 +161015,34 @@ entities:
     components:
     - type: Transform
       pos: 21.5,-67.5
+      parent: 1
+- proto: RMCMapInsertTrijentSurvSpawnBar
+  entities:
+  - uid: 3197
+    components:
+    - type: Transform
+      pos: 72.5,-135.5
+      parent: 1
+- proto: RMCMapInsertTrijentSurvSpawnDam
+  entities:
+  - uid: 3195
+    components:
+    - type: Transform
+      pos: 133.5,-76.5
+      parent: 1
+- proto: RMCMapInsertTrijentSurvSpawnHospital
+  entities:
+  - uid: 3196
+    components:
+    - type: Transform
+      pos: 141.5,-138.5
+      parent: 1
+- proto: RMCMapInsertTrijentSurvSpawnTunnelDorm
+  entities:
+  - uid: 3198
+    components:
+    - type: Transform
+      pos: 86.5,-106.5
       parent: 1
 - proto: RMCMapInsertTrijentTempleIntact
   entities:

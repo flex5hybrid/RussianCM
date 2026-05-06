@@ -1,0 +1,41 @@
+<controls:RMCCrewPinpointerWindow
+    xmlns="https://spacestation14.io"
+    xmlns:controls="clr-namespace:Content.Client._RuMC14.CrewTracker"
+    Title="{Loc rmc-crew-pinpointer-window-title}"
+    MinSize="450 640"
+    SetSize="450 640">
+    <BoxContainer Orientation="Vertical"
+                  VerticalExpand="True"
+                  HorizontalExpand="True">
+        <Label Name="StatusLabel"
+               HorizontalAlignment="Center"
+               Margin="0 4 0 4" />
+
+        <BoxContainer Orientation="Horizontal"
+                      SeparationOverride="4"
+                      HorizontalExpand="True">
+            <Button Name="ToggleButton"
+                    HorizontalExpand="True" />
+            <Button Name="RefreshButton"
+                    Text="{Loc rmc-crew-pinpointer-refresh}"
+                    HorizontalExpand="True" />
+            <Button Name="ClearButton"
+                    Text="{Loc rmc-crew-pinpointer-clear}"
+                    HorizontalExpand="True" />
+        </BoxContainer>
+
+        <LineEdit Name="SearchLineEdit"
+                  Margin="0 6 0 0"
+                  PlaceHolder="{Loc rmc-crew-pinpointer-search-placeholder}"
+                  HorizontalExpand="True" />
+
+        <ScrollContainer HorizontalExpand="True"
+                         VerticalExpand="True"
+                         Margin="0 6 0 0">
+            <BoxContainer Name="Listing"
+                          Orientation="Vertical"
+                          HorizontalExpand="True"
+                          SeparationOverride="4" />
+        </ScrollContainer>
+    </BoxContainer>
+</controls:RMCCrewPinpointerWindow>

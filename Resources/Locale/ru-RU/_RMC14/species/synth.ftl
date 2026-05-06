@@ -1,0 +1,15 @@
+rmc-species-name-synth = Синтетик
+rmc-species-synth-programming-prevents-use = Ваше программирование запрещает использовать {THE($tool)}!
+rmc-species-synth-generation-first = Первое поколение
+rmc-species-synth-generation-second = Второе поколение
+rmc-species-synth-generation-third = Третье поколение
+rmc-species-synth-defib-attempt = Невозможно дефибриллировать {$target}. Требуется ключ перезагрузки для синтетиков!
+rmc-species-synth-reset-key-invalid = Ключ перезагрузки несовместим - цель не является синтетиком!
+rmc-synth-repair-brute-start-others = {THE($user)} начинает устранять вмятины на своем {$limb}.
+rmc-synth-repair-brute-start-self = Вы аккуратно устраняете вмятины на своем {$limb}, стараясь не аннулировать гарантию.
+rmc-synth-repair-burn-start-others = {THE($user)} начинает ремонтировать термические повреждения на своем {$limb}.
+rmc-synth-repair-burn-start-self = Вы осторожно ремонтируете термические повреждения на своем {$limb}, соблюдая условия гарантии.
+rmc-synth-repair-brute-finish-self = Вы устраняете вмятины на {THE($target)}'s {$limb} при помощи {THE($tool)}.
+rmc-synth-repair-burn-finish-self = Вы ремонтируете термические повреждения на {THE($target)}'s {$limb} с помощью {THE($tool)}.
+rmc-synth-repair-brute-finish = {THE($user)} устраняет вмятины на {THE($target)}'s {$limb} при помощи {THE($tool)}.
+rmc-synth-repair-burn-finish = {THE($user)} ремонтирует термические повреждения на {THE($target)}'s {$limb} с помощью {THE($tool)}.

@@ -1,0 +1,14 @@
+ent-AU14UNISCclothingequipmentvendor-name = Торговый автомат со снаряжением UNISC
+ent-AU14UNISCclothingequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу стандартной морской экипировки.
+ent-AU14UNISCequipmentvendor-name = Торговый автомат со снаряжением UNISC
+ent-AU14UNISCequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу стандартного морского снаряжения.
+ent-AU14UNISCcorpsmanvendor-name = Медицинский торговый автомат UNISC
+ent-AU14UNISCcorpsmanvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу медицинских принадлежностей.
+ent-AU14UNISCaircrewvendor-name = Торговый автомат лётного состава UNISC
+ent-AU14UNISCaircrewvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу экипировки и снаряжения лётного состава.
+ent-AU14UNISCcommandequipmentvendor-name = Командный торговый автомат UNISC
+ent-AU14UNISCcommandequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу командной экипировки и снаряжения.
+ent-AU14UNISCsectionleaderequipmentvendor-name = Торговый автомат командира отделения UNISC
+ent-AU14UNISCsectionleaderequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу экипировки и снаряжения для командира отделения.
+ent-AU14UNISCWeaponsVendor-name = Оружейная стойка UNISC
+ent-AU14UNISCWeaponsVendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу оружия.

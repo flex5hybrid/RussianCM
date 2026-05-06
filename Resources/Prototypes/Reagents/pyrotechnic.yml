@@ -23,6 +23,11 @@
   color: "#757245"
   boilingPoint: 2977.0 # Aluminum oxide
   meltingPoint: 2030.0
+  powerMod: 0.5
+  falloffMod: 1
+  intensityMod: 0.3
+  radiusMod: -0.08
+  durationMod: 0.9
   tileReactions:
   - !type:FlammableTileReaction
     temperatureMultiplier: 2
@@ -158,9 +163,10 @@
   boilingPoint: -84.7 # Acetylene. Close enough.
   meltingPoint: -80.7
   friction: 0.4
-  intensity: 10 # <RMC14>
-  duration: 10
+  intensity: 16 # <RMC14>
+  duration: 33
   radius: 4
+  fireEntity: RMCTileFireWeldingFuel
   intensityMod: 0.1
   durationMod: 0.7
   radiusMod: -0.08

@@ -1,0 +1,270 @@
+ent-RMCAreaBigredv2OutsideFiltrationCaveCas = Вход в пещеры с фильтрацией
+
+ent-RMCAreaBigredv2OutsideLz2SouthCas = Вход в пещеры блокировки ЭТА
+
+ent-RMCAreaBigredv2OutsideLz2WestCas = Вход в юго-западные пещеры
+
+ent-RMCAreaBigredv2OutsideLz1TelecommCas = Вход в вирусологические пещеры
+
+ent-RMCAreaBigredv2OutsideLz1NorthCas = Вход в Северные пещеры
+
+ent-RMCAreaBigredv2LandingConsole2 = LZ2 «Грузовой»
+
+ent-RMCAreaBigredv2LandingConsole = LZ1 «Телекоммуникации»
+
+ent-RMCAreaBigredv2CavesNorth = Северные пещеры
+
+ent-RMCAreaBigredv2CavesEast = Восточные пещеры
+
+ent-RMCAreaBigredv2CavesSe = Юго-восточные пещеры
+
+ent-RMCAreaBigredv2CavesResearch = Пещеры исследовательской лаборатории We-Ya
+
+ent-RMCAreaBigredv2CavesSw = Юго-западные пещеры
+
+ent-RMCAreaBigredv2CavesVirology = Вирусологические пещеры
+
+ent-RMCAreaBigredv2OutsideGeneralOffices = Общие офисы
+
+ent-RMCAreaBigredv2OutsideAtmos = Атмосферный стабилизатор
+
+ent-RMCAreaBigredv2OutsideSolarPlant = Солнечная электростанция
+
+ent-RMCAreaBigredv2OutsideStorage = Хранилище
+
+ent-RMCAreaBigredv2OutsideEngineeringReactor = Главный реактор
+
+ent-RMCAreaBigredv2OutsideEngineering = Инженерный комплекс
+
+ent-RMCAreaBigredv2OutsideTelecommEngi = Реле инженерной связи
+
+ent-RMCAreaBigredv2OutsideTelecommAdmin = Реле административной связи
+
+ent-RMCAreaBigredv2OutsideTelecommStore = Реле связи универсального магазина
+
+ent-RMCAreaBigredv2OutsideTelecommSecurity = Реле охранной связи
+
+ent-RMCAreaBigredv2OutsideTelecommWarehouse = Реле складской связи
+
+ent-RMCAreaBigredv2OutsideTelecommNCave = Реле связи Северной пещеры
+
+ent-RMCAreaBigredv2OutsideTelecommLz2Cave = Реле связи с центральной территорией
+
+ent-RMCAreaBigredv2OutsideTelecomm = Реле связи LZ1
+
+ent-RMCAreaBigredv2OutsideSpacePortLz2 = Грузовая посадочная площадка
+
+ent-RMCAreaBigredv2OutsideSpacePort = Космический порт
+
+ent-RMCAreaBigredv2OutsideOfficeComplex = Офисный комплекс
+
+ent-RMCAreaBigredv2OutsideLibrary = Библиотека
+
+ent-RMCAreaBigredv2OutsideHydroponics = Гидропоника
+
+ent-RMCAreaBigredv2OutsideChapel = Часовня
+
+ent-RMCAreaBigredv2OutsideBar = Бар
+
+ent-RMCAreaBigredv2OutsideDorms = Общежития
+
+ent-RMCAreaBigredv2OutsideVirology = Вирусологическая лаборатория
+
+ent-RMCAreaBigredv2OutsideFiltrationPlant = Фильтрационная установка
+
+ent-RMCAreaBigredv2OutsideAdminBuilding = Администрация
+
+ent-RMCAreaBigredv2OutsideMedical = Больница
+
+ent-RMCAreaBigredv2OutsideMarshalOffice = Маршальские офисы
+
+ent-RMCAreaBigredv2OutsideGeneralStore = Универсальный магазин
+
+ent-RMCAreaBigredv2OutsideCargo = Груз
+
+ent-RMCAreaBigredv2CavesEtaResearch = Эта Исследования
+
+ent-RMCAreaBigredv2CavesEtaStorage = Эта хранилище
+
+ent-RMCAreaBigredv2CavesEtaXenobiology = Эта ксенобиология
+
+ent-RMCAreaBigredv2CavesEtaLiving = Жилые помещения Эта
+
+ent-RMCAreaBigredv2OutsideEta = Комплекс Эта Лабораторий
+
+ent-RMCAreaBigredv2CavesMining = Юго-западные заброшенные шахтерские пещеры
+
+ent-RMCAreaBigredv2Caves = Неизвестный район
+
+ent-RMCAreaBigredv2OutsideSw = Юго-западная колония
+
+ent-RMCAreaBigredv2OutsideS = Территория Южной колонии
+
+ent-RMCAreaBigredv2OutsideSe = Юго-восточная колония
+
+ent-RMCAreaBigredv2OutsideE = Территория Восточной колонии
+
+ent-RMCAreaBigredv2OutsideW = Территория Западной колонии
+
+ent-RMCAreaBigredv2OutsideN = Территория Северной колонии
+
+ent-RMCAreaBigredv2OutsideC = Центральная колония
+
+ent-RMCAreaBigredv2OutsideNw = Территория северо-западной колонии
+
+ent-RMCAreaBigredv2OutsideNe = Территория северо-восточной колонии
+
+ent-RMCAreaBigredv2Outside = Территория колонии
+
+ent-RMCAreaBigredv2Oob = Большой Красный за пределами поля
+
+ent-RMCAreaBigredv2OutsideLambdaCaveCas = Вход в пещеры Лямбда-локдаун
+
+ent-RMCAreaBigredv2LambdaCaves = Пещеры лаборатории Лямбда
+
+ent-RMCAreaBigredv2CavesLambdaXenobiology = Лямбда-ксенобиология
+
+ent-RMCAreaBigredv2CavesLambdaBreakroom = Лямбда-комната отдыха
+
+ent-RMCAreaBigredv2CavesLambdaResearch = Лямбда-исследования
+
+ent-RMCAreaBigredv2CavesLambdaVirology = Лямбда-вирусология
+
+ent-RMCAreaBigredUgroundSafeRoom = Корпоративная сейфовая комната
+
+ent-RMCAreaBigredUgroundCargoElevator = Грузовой лифт
+
+ent-RMCAreaBigredUgroundQuarantine = Карантинная зона
+
+ent-RMCAreaBigredUgroundVirology = Лаборатория вирусологии
+
+ent-RMCAreaBigredUgroundTeleporter = Лаборатория телепортации
+
+ent-RMCAreaBigredUgroundAnomalyLab = Лаборатория аномальных материалов
+
+ent-RMCAreaBigredUgroundMiscLab = Разное Лаборатория
+
+ent-RMCAreaBigredUgroundDisection = Лаборатория диссекции
+
+ent-RMCAreaBigredUgroundChemistry = Химическая лаборатория
+
+ent-RMCAreaBigredUgroundXenoFlora = Лаборатория Ксено-Флоры
+
+ent-RMCAreaBigredUgroundXeno = Ксенобиологическая лаборатория
+
+ent-RMCAreaBigredUgroundHallway = Исследовательский коридор
+
+ent-RMCAreaBigredUgroundLobby = Исследовательское лобби
+
+ent-RMCAreaBigredGroundCargo = Грузовой отсек
+
+ent-RMCAreaBigredGroundExteriorEast = Внешний вид восточного объекта
+
+ent-RMCAreaBigredGroundExteriorWest = Внешний вид западного объекта
+
+ent-RMCAreaBigredGroundExteriorSouth = Внешний вид южного объекта
+
+ent-RMCAreaBigredGroundExteriorNorth = Внешний вид северного объекта
+
+ent-RMCAreaBigredGroundExterior = Метро
+
+ent-RMCAreaBigredGroundMaintAtmos = Обслуживание атмосферы
+
+ent-RMCAreaBigredGroundMaintEngineering = Инженерное обслуживание
+
+ent-RMCAreaBigredGroundMaintCommand = Командное обслуживание
+
+ent-RMCAreaBigredGroundMaintScience = Наука Техническое обслуживание
+
+ent-RMCAreaBigredGroundMaintCentral = Центральная шахта технического обслуживания
+
+ent-RMCAreaBigredGroundHr = Отдел кадров
+
+ent-RMCAreaBigredGroundToilet = Туалеты
+
+ent-RMCAreaBigredGroundScienceResearch = Исследовательская лаборатория
+
+ent-RMCAreaBigredGroundScienceOffice = Администрация
+
+ent-RMCAreaBigredGroundScienceAssembly = Актовый зал
+
+ent-RMCAreaBigredGroundScienceRobotics = Лаборатория робототехники
+
+ent-RMCAreaBigredGroundScienceHall = Научный коридор
+
+ent-RMCAreaBigredGroundScienceDecon = Обеззараживание
+
+ent-RMCAreaBigredGroundEngineeringAtmosphericsGenerator = Терраформирующий процессор
+
+ent-RMCAreaBigredGroundEngineeringAtmospherics = Атмосфера
+
+ent-RMCAreaBigredGroundEngineeringCustodial = Кастодиальное хранение
+
+ent-RMCAreaBigredGroundEngineeringEngine = Машинное отделение
+
+ent-RMCAreaBigredGroundEngineeringEngineControl = Основной контроль
+
+ent-RMCAreaBigredGroundEngineeringSmesRoom = Энергетическое хранилище
+
+ent-RMCAreaBigredGroundChapel = Часовня
+
+ent-RMCAreaBigredGroundForehall = Передний коридор
+
+ent-RMCAreaBigredGroundCrewQuarters = Общежития для экипажа
+
+ent-RMCAreaBigredGroundHanger = Вешалка
+
+ent-RMCAreaBigredGroundLaundry = прачечная самообслуживания
+
+ent-RMCAreaBigredGroundCryogenics = Криогенное хранилище
+
+ent-RMCAreaBigredGroundGarden = Сад
+
+ent-RMCAreaBigredGroundCentralHall3 = Центральный коридор
+
+ent-RMCAreaBigredGroundMedicalLobby = Медицинское лобби
+
+ent-RMCAreaBigredGroundMedbay = Медикал Бэй
+
+ent-RMCAreaBigredGroundBridge = Командная комната
+
+ent-RMCAreaBigredGroundSecurity = Модуль безопасности
+
+ent-RMCAreaBigredGroundKitchen = Кухня
+
+ent-RMCAreaBigredGroundCanteen = Кафетерий
+
+ent-RMCAreaBigredGroundCentralHall = Центральный коридор
+
+ent-RMCAreaBigredGroundEngineeringEngineeringHall = Инженерный коридор
+
+ent-RMCAreaBigredGroundNexus = Центральный Нексус
+
+ent-RMCAreaBigredGroundShip = Разбившееся судно
+
+ent-RMCAreaBigredGroundGarageWorkshop = Гаражная мастерская
+
+ent-RMCAreaBigredUground = наземный
+
+ent-RMCAreaBigredGround = земля
+
+ent-RMCAreaBigred = область
+
+ent-RMCAreaBigredGroundEngineering = земля
+
+ent-RMCAreaBigredGroundMedical = земля
+
+ent-RMCAreaBigredGroundScience = земля
+
+ent-RMCAreaBigredGroundMaint = земля
+
+ent-RMCAreaBigredv2CavesLambda = Неизвестный район
+
+ent-RMCAreaBigredv2 = область
+
+ent-RMCAreaBigredv2OutsideNwCeiling = Территория северо-западной колонии
+
+ent-RMCAreaBigredv2CavesEta = Неизвестный район
+
+ent-RMCAreaBigredv2Landing = область
+

@@ -1,0 +1,22 @@
+ent-PartDiona-name = diona body part
+
+ent-TorsoDiona-name = diona torso
+
+ent-HeadDiona-name = diona head
+
+ent-LeftArmDiona-name = left diona arm
+
+ent-RightArmDiona-name = right diona arm
+
+ent-LeftHandDiona-name = left diona hand
+
+ent-RightHandDiona-name = right diona hand
+
+ent-LeftLegDiona-name = left diona leg
+
+ent-RightLegDiona-name = right diona leg
+
+ent-LeftFootDiona-name = left diona foot
+
+ent-RightFootDiona-name = right diona foot
+

@@ -27,12 +27,7 @@
     RMCSulphuricAcid:
       amount: 1
   effects:
-  - !type:ExplosionReactionEffect
-    explosionType: RMC
-    maxIntensity: 100
-    intensityPerUnit: 0.33
-    intensitySlope: 4
-    maxTotalIntensity: 100
+  - !type:RMCVolatileReactionEffect
 
 - type: reaction
   id: RMCCLF3
@@ -59,12 +54,7 @@
     RMCFluorine:
       amount: 3
   effects:
-  - !type:ExplosionReactionEffect
-    explosionType: RMC
-    maxIntensity: 100
-    intensityPerUnit: 0.25
-    intensitySlope: 4
-    maxTotalIntensity: 100
+  - !type:RMCVolatileReactionEffect
 
 - type: reaction
   id: RMCNapalmHighCombustion

@@ -1,0 +1,24 @@
+ent-Smoke-name = smoke
+
+ent-TearGasSmoke-name = tear gas
+
+ent-WizardSmoke-name = smoke
+
+ent-Foam-name = foam
+
+ent-MetalFoam-name = metal foam
+
+ent-IronMetalFoam-name = iron metal foam
+
+ent-AluminiumMetalFoam-name = aluminium metal foam
+
+ent-BaseFoamedMetal-name = base foamed metal
+
+ent-FoamedIronMetal-name = foamed iron metal
+ent-FoamedIronMetal-desc = For sealing hull breaches.
+
+ent-FoamedAluminiumMetal-name = foamed aluminium metal
+ent-FoamedAluminiumMetal-desc = Leftover sparse foam from an aluminum foam grenade. Easily destroyed.
+
+ent-TearGasSmokeWhite-name = tear gas
+

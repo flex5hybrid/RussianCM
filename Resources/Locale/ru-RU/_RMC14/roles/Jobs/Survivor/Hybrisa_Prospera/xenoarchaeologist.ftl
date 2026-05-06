@@ -1,0 +1,5 @@
+ent-RMCGearSurvivorPresetHybrisaXenoarchaeologist = пресет ксеноархеолога
+
+ent-RMCSpawnPointSurvivorHybrisaXenoarchaeologist = точка спавна ксеноархеологов
+ 
+

@@ -1,0 +1,2 @@
+ent-WeaponProtoKineticAcceleratorBase-name = item
+

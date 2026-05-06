@@ -1,0 +1,12 @@
+ent-RMCAirlockLifeboat = причальный люк для спасательной шлюпки
+  .desc = Тяжелая переборка для спасательной шлюпки.
+
+ent-RMCAirlockEvacuation = Эвакуационный шлюз ПЛ-6
+  .desc = Он открывается и закрывается.
+
+ent-RMCAirlockEvacuationBlack = Эвакуационный шлюз ПЛ-6
+  .desc = Он открывается и закрывается.
+
+ent-RMCAirlockEvacuationWhite = Эвакуационный шлюз ПЛ-6
+  .desc = Он открывается и закрывается.
+

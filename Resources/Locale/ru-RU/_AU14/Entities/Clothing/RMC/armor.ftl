@@ -1,0 +1,12 @@
+ent-AU14ArmorRMC-name = бронежилет Kestrel
+ent-AU14ArmorRMC-desc = Настраиваемая персональная бронесистема, используемая Королевскими Морпехами.
+ent-AU14ArmorLightRMC-name = лёгкий бронежилет Kestrel
+ent-AU14ArmorLightRMC-desc = Настраиваемая персональная бронесистема, используемая Королевскими Морпехами.
+ent-AU14ArmorPaddedRMC-name = бронежилет-разгрузка Kestrel
+ent-AU14ArmorPaddedRMC-desc = Настраиваемая персональная бронесистема, используемая Королевскими Морпехами.
+ent-AU14ArmorSmartGunDesertCombatHarnessRMC-name = бронированная упряжь для смартгана Kestrel
+ent-AU14ArmorSmartGunDesertCombatHarnessRMC-desc = упряжь для смартгана Kestrel, специально изготовленная для операторов смартгана.
+ent-AU14ArmorPointmanRMC-name = броня наконечника Kestrel
+ent-AU14ArmorPointmanRMC-desc = Стандартная броня, используемая многими военными организациями США. Обеспечивает умеренную защиту от пуль и ударов в ближнем бою. Также имеет направленный фонарь на плече для ночного боя.
+ent-AU14ICPS2RMC-name = Лётная броня королевского морпеха ICPS-2
+ent-AU14ICPS2RMC-desc = Комплект баллистической брони, используемый лётным составом RMC.

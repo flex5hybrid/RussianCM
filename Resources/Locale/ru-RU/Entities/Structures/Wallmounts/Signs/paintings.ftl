@@ -1,0 +1,62 @@
+ent-PaintingEmpty-name = empty frame
+ent-PaintingEmpty-desc = An empty frame, waiting to be filled with art.
+
+ent-PaintingMoony-name = Abstract No.1
+ent-PaintingMoony-desc = An imposing abstract painting. It feels like it's pressuring you to do good.
+
+ent-PaintingPersistenceOfMemory-name = The Persistence of Memory
+ent-PaintingPersistenceOfMemory-desc = This painting depicts a barren landscape. It's filled with various surreal objects.
+
+ent-PaintingTheSonOfMan-name = The Son of Man
+ent-PaintingTheSonOfMan-desc = This painting depicts a formal-looking man. His face is obscured by an apple.
+
+ent-PaintingTheKiss-name = The Kiss
+ent-PaintingTheKiss-desc = This painting depicts a couple in tender embrace. It's covered in glittery gold ornamentation.
+
+ent-PaintingTheScream-name = The Scream
+ent-PaintingTheScream-desc = This painting depicts a distressed man standing on a bridge.
+
+ent-PaintingTheGreatWave-name = The Great Wave off Kanagawa
+ent-PaintingTheGreatWave-desc = This painting depicts a majestic wave. It's throwing around several small fishing boats.
+
+ent-PaintingCafeTerraceAtNight-name = Cafe Terrace at Night
+ent-PaintingCafeTerraceAtNight-desc = This painting depicts lively night scene at a cafe.
+
+ent-PaintingNightHawks-name = Nighthawks
+ent-PaintingNightHawks-desc = This painting depicts a lonely-looking diner. The patrons are sitting glumly at the counter.
+
+ent-PaintingSkeletonCigarette-name = Skull of a Skeleton with Burning Cigarette
+ent-PaintingSkeletonCigarette-desc = This painting depicts an impressionist portrait of a skeleton. A lit cigarette is wedged between its teeth.
+
+ent-PaintingSkeletonBoof-name = Skull of MLG Skeleton with Fat Boof
+ent-PaintingSkeletonBoof-desc = Painting goes hard. Feel free to screenshot.
+
+ent-PaintingPrayerHands-name = Study of the Hands of an Apostle
+ent-PaintingPrayerHands-desc = This painting depicts a pair of hands clasped in prayer.
+
+ent-PaintingOldGuitarist-name = The Old Guitarist
+ent-PaintingOldGuitarist-desc = This painting depicts an old, thin man clutching a guitar. His face looks shallow and sickly.
+
+ent-PaintingOlympia-name = Olympia
+ent-PaintingOlympia-desc = This painting depicts a nude woman lying on a bed. A servant is tending to her.
+
+ent-PaintingSaturn-name = Saturn Devouring His Son
+ent-PaintingSaturn-desc = This painting depicts giant devouring a human corpse. He has a frightening look in his eyes.
+
+ent-PaintingSleepingGypsy-name = The Sleeping Gypsy
+ent-PaintingSleepingGypsy-desc = This painting depicts a gypsy sleeping among their belongings in the desert. A lion stands behind them.
+
+ent-PaintingRedBlueYellow-name = Composition with Red Blue and Yellow
+ent-PaintingRedBlueYellow-desc = This painting is made up of several boxes. They are filled with flat shades of color.
+
+ent-PaintingAmogusTriptych-name = Amogus Triptych (Untitled.)
+ent-PaintingAmogusTriptych-desc = This painting is made up of 3 individual sections. Each depicts a religious figure.
+
+ent-PaintingHelloWorld-name = Hello World
+ent-PaintingHelloWorld-desc = This painting is made up of lots of multicolored squares arranged in a peculiar pattern. Perhaps it means something?
+
+ent-PaintingSadClown-name = Sad Clown
+ent-PaintingSadClown-desc = This painting is a sad clown! It sparks joy.
+
+ent-PaintingBase-name = base sign
+

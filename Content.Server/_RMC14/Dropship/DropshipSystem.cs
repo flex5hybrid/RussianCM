@@ -2,6 +2,7 @@
 using System.Numerics;
 using Content.Server._CMU14.Dropship.TacticalLand;
 using Content.Server._RMC14.Marines;
+using Content.Server._RMC14.Shuttles;
 using Content.Server.AU14.Round;
 using Content.Server.AU14.ThirdParty;
 using Content.Server.Doors.Systems;
@@ -106,6 +107,7 @@ public sealed class DropshipSystem : SharedDropshipSystem
         SubscribeLocalEvent<DropshipComponent, FTLStartedEvent>(OnFTLStarted);
         SubscribeLocalEvent<DropshipComponent, FTLCompletedEvent>(OnFTLCompleted);
         SubscribeLocalEvent<DropshipComponent, FTLUpdatedEvent>(OnFTLUpdated);
+        SubscribeLocalEvent<DropshipComponent, BeforeFTLStartedEvent>(OnBeforeFTLStarted);
 
         SubscribeLocalEvent<DropshipInFlyByComponent, FTLCompletedEvent>(OnInFlyByFTLCompleted);
         SubscribeLocalEvent<ThirdPartyDropshipDeactivatedConsoleComponent, InteractHandEvent>(OnDeactivatedThirdPartyConsoleInteract);
@@ -245,6 +247,11 @@ public sealed class DropshipSystem : SharedDropshipSystem
         }
 
         RefreshUI();
+    }
+
+    private void OnBeforeFTLStarted(Entity<DropshipComponent> ent, ref BeforeFTLStartedEvent args)
+    {
+        RelayToMountedEntities(ent, args);
     }
 
     private void OnRefreshUI<T>(Entity<DropshipComponent> ent, ref T args)
@@ -611,7 +618,7 @@ public sealed class DropshipSystem : SharedDropshipSystem
         }
 
         if (offset)
-            destCoords = destCoords.Offset(new Vector2(-0.5f, -0.5f));
+            destCoords = destCoords.Offset(new Vector2(0.5f, 1.5f)); // RuMC change
 
         _shuttle.FTLToCoordinates(dropshipId.Value, shuttleComp, destCoords, rotation, startupTime: startupTime, hyperspaceTime: hyperspaceTime);
         ResetThirdPartyAutoReturnCountdown(dropshipId.Value);

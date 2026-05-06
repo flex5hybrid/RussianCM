@@ -1,0 +1,12 @@
+ent-AU14HAZOPSclothingequipmentvendor-name = Торговый автомат со снаряжением HECU
+ent-AU14HAZOPSclothingequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу специализированной морской экипировки.
+ent-AU14HAZOPSMGequipmentvendor-name = Торговый автомат со снаряжением оператора смартганаHECU
+ent-AU14HAZOPSMGequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу снаряжения оператора смартгана
+ent-AU14HAZOPSWeaponsVendor-name = Оружейная стойка HECU
+ent-AU14HAZOPSWeaponsVendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу оружия.
+ent-AU14HAZOPSSpecialWeaponsVendor-name = Стойка специального оружия HECU
+ent-AU14HAZOPSSpecialWeaponsVendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу специального оружия.
+ent-AU14HAZOPScommandequipmentvendor-name = Командный торговый автомат HECU
+ent-AU14HAZOPScommandequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу командной экипировки и снаряжения. Вперёд, морпехи!
+ent-AU14HAZOPSsectionleaderequipmentvendor-name = Торговый автомат командира отделения HECU
+ent-AU14HAZOPSsectionleaderequipmentvendor-desc = Автоматизированная стойка, подключённая к небольшому хранилищу экипировки и снаряжения для командира отделения.

@@ -1490,6 +1490,10 @@ RMCSpawnerShuttleZSPA: RMCSpawnerShuttleTSEPA
 RMCWeaponSMGP90: RMCWeaponSMGPDW90
 RMCMagazineSMGP90: RMCMagazineSMGPDW90
 
+# 2026-03-18
+CMWebbingSurgicalGreen: RMCWebbingSurgicalGreen
+CMWebbingSurgicalBlue: RMCWebbingSurgicalBlue
+
 # 2026-04-23 - CMU
 CMVendorMedical: AU14GeneralMedicalVendor
 CMVendorBlood: AU14VendorBlood
