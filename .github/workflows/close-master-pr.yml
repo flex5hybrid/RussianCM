@@ -13,7 +13,7 @@ jobs:
     if: ${{github.head_ref == 'master' || github.head_ref == 'main' || github.head_ref == 'develop'}}
     
     steps:    
-    - uses: actions/github-script@v8
+    - uses: actions/github-script@v9
       with:
         script: |
           const pull_number = context.payload.pull_request.number;

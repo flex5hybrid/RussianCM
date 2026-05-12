@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: size-label
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const pull_number = context.payload.pull_request.number;

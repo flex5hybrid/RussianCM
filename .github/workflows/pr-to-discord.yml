@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Send Discord Embed
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         env:
           DISCORD_WEBHOOK_PR: ${{ secrets.DISCORD_WEBHOOK_PR }}
         with:
