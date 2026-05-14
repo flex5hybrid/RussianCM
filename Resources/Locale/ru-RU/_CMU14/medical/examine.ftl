@@ -3,7 +3,7 @@ cmu-medical-examine-wound-describe =
     { $treated ->
         [true] обработанная
        *[false] {""}
-    }{ $size ->
+    } { $size ->
         [small] небольшая
         [deep] глубокая
         [gaping] зияющая
@@ -20,13 +20,18 @@ cmu-medical-examine-wound-describe =
 # Описание переломов
 cmu-medical-examine-fracture-describe =
     { $stabilized ->
-        [true] зафиксированный
-       *[false] {""}
-    } { $severity ->
-        [hairline] трещина кости
-        [compound] оскольчатый перелом
-        [comminuted] раздробленная кость
-       *[simple] перелом кости
+        [true] { $severity ->
+            [hairline] зафиксированная трещина кости
+            [compound] зафиксированный оскольчатый перелом
+            [comminuted] зафиксированная раздробленная кость
+           *[simple] зафиксированный перелом кости
+        }
+       *[false] { $severity ->
+            [hairline] трещина кости
+            [compound] оскольчатый перелом
+            [comminuted] раздробленная кость
+           *[simple] перелом кости
+        }
     }
 
 # Некроз(эщар)
@@ -35,14 +40,14 @@ cmu-medical-examine-eschar = обугленная ткань
 # Названия частей тела
 cmu-medical-examine-part-name =
     { $symmetry ->
-        [left] Левый { $type ->
+        [left] Левая { $type ->
             [arm] рука
             [hand] кисть
             [leg] нога
             [foot] стопа
            *[other] { $type }
         }
-        [right] Правый { $type ->
+        [right] Правая { $type ->
             [arm] рука
             [hand] кисть
             [leg] нога
