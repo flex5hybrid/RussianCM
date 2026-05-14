@@ -1,9 +1,9 @@
-ent-Spaceshroom-name = spaceshroom
-ent-Spaceshroom-desc = A cluster of wild mushrooms that likes to grow in dark, moist environments.
+ent-Spaceshroom-name = космический гриб
+ent-Spaceshroom-desc = Группа лесных грибов, которые любят расти в темной и влажной среде.
 
-ent-FoodSpaceshroom-name = spaceshroom
-ent-FoodSpaceshroom-desc = A wild mushroom. There's no telling what effect it could have...
+ent-FoodSpaceshroom-name = космический гриб
+ent-FoodSpaceshroom-desc = Лесной гриб. Неизвестно, какой эффект это может иметь...
 
-ent-FoodSpaceshroomCooked-name = cooked spaceshroom
-ent-FoodSpaceshroomCooked-desc = A wild mushroom that has been cooked through. It seems the heat has removed its chemical effects.
+ent-FoodSpaceshroomCooked-name = приготовленный космический гриб
+ent-FoodSpaceshroomCooked-desc = Прожаренный лесной гриб. Кажется, жара устранила его химическое воздействие.
 

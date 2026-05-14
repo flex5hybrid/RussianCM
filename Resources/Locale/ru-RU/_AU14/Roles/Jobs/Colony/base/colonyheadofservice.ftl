@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianHeadOfService-name = Spawn Point Head of Service
-ent-AU14SpawnPointCivilianHeadOfService-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianHeadOfService-name = Руководитель службы Spawn Point
+ent-AU14SpawnPointCivilianHeadOfService-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

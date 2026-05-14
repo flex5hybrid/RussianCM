@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianForeman-name = Spawn Point Civilian Foreman
-ent-AU14SpawnPointCivilianForeman-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianForeman-name = Гражданский бригадир точки возрождения
+ent-AU14SpawnPointCivilianForeman-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

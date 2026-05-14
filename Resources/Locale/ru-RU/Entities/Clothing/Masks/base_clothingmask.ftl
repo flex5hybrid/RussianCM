@@ -1,5 +1,5 @@
-ent-ActionToggleMask-name = Toggle Mask
-ent-ActionToggleMask-desc = Handy, but prevents insertion of pie into your pie hole.
+ent-ActionToggleMask-name = Переключить маску
+ent-ActionToggleMask-desc = Удобно, но предотвращает попадание пирога в отверстие для пирога.
 
 ent-ClothingMaskBase-name = lathe-category-clothing
 

@@ -1,57 +1,57 @@
-ent-SheetGlassBase-name = glass
-ent-SheetGlassBase-desc = A sheet of glass, used often on the station in various applications.
+ent-SheetGlassBase-name = стекло
+ent-SheetGlassBase-desc = Лист стекла, часто используемый на станции в различных целях.
 
-ent-SheetRGlass-name = reinforced glass
-ent-SheetRGlass-desc = A reinforced sheet of glass.
+ent-SheetRGlass-name = армированное стекло
+ent-SheetRGlass-desc = Армированный лист стекла.
 
-ent-SheetRGlass1-name = reinforced glass
-ent-SheetRGlass1-desc = A sheet of glass, used often on the station in various applications.
+ent-SheetRGlass1-name = армированное стекло
+ent-SheetRGlass1-desc = Лист стекла, часто используемый на станции в различных целях.
 
-ent-SheetPGlass-name = plasma glass
-ent-SheetPGlass-desc = A sheet of translucent plasma.
+ent-SheetPGlass-name = плазменное стекло
+ent-SheetPGlass-desc = Лист полупрозрачной плазмы.
 
-ent-SheetPGlass1-name = plasma glass
-ent-SheetPGlass1-desc = A sheet of glass, used often on the station in various applications.
+ent-SheetPGlass1-name = плазменное стекло
+ent-SheetPGlass1-desc = Лист стекла, часто используемый на станции в различных целях.
 
-ent-SheetRPGlass-name = reinforced plasma glass
-ent-SheetRPGlass-desc = A reinforced sheet of translucent plasma.
+ent-SheetRPGlass-name = армированное плазменное стекло
+ent-SheetRPGlass-desc = Усиленный слой полупрозрачной плазмы.
 
-ent-SheetRPGlass1-name = reinforced plasma glass
-ent-SheetRPGlass1-desc = A sheet of glass, used often on the station in various applications.
+ent-SheetRPGlass1-name = армированное плазменное стекло
+ent-SheetRPGlass1-desc = Лист стекла, часто используемый на станции в различных целях.
 
-ent-SheetUGlass-name = uranium glass
-ent-SheetUGlass-desc = A sheet of uranium glass.
+ent-SheetUGlass-name = урановое стекло
+ent-SheetUGlass-desc = Лист уранового стекла.
 
-ent-SheetUGlass1-name = uranium glass
-ent-SheetUGlass1-desc = A sheet of glass, used often on the station in various applications.
+ent-SheetUGlass1-name = урановое стекло
+ent-SheetUGlass1-desc = Лист стекла, часто используемый на станции в различных целях.
 
-ent-SheetRUGlass-name = reinforced uranium glass
-ent-SheetRUGlass-desc = A reinforced sheet of uranium.
+ent-SheetRUGlass-name = армированное урановое стекло
+ent-SheetRUGlass-desc = Армированный лист урана.
 
-ent-SheetRUGlass1-name = reinforced uranium glass
-ent-SheetRUGlass1-desc = A sheet of glass, used often on the station in various applications.
+ent-SheetRUGlass1-name = армированное урановое стекло
+ent-SheetRUGlass1-desc = Лист стекла, часто используемый на станции в различных целях.
 
-ent-SheetClockworkGlass-name = clockwork glass
-ent-SheetClockworkGlass-desc = A sheet of brass-hardened glass, primarily used by clockwork enthusiasts and remnants of Ratvarian cults.
+ent-SheetClockworkGlass-name = заводное стекло
+ent-SheetClockworkGlass-desc = Лист закаленного латунным стеклом, в основном используемый энтузиастами часового дела и остатками ратварианских культов.
 
-ent-SheetClockworkGlass1-name = clockwork glass
-ent-SheetClockworkGlass1-desc = A sheet of glass, used often on the station in various applications.
+ent-SheetClockworkGlass1-name = заводное стекло
+ent-SheetClockworkGlass1-desc = Лист стекла, часто используемый на станции в различных целях.
 
-ent-SheetGlass-name = glass
-ent-SheetGlass-desc = A sheet of glass, used often on the station in various applications.
+ent-SheetGlass-name = стекло
+ent-SheetGlass-desc = Лист стекла, часто используемый на станции в различных целях.
 
-ent-SheetGlass10-name = glass
-ent-SheetGlass10-desc = A sheet of glass, used often on the station in various applications.
+ent-SheetGlass10-name = стекло
+ent-SheetGlass10-desc = Лист стекла, часто используемый на станции в различных целях.
 
-ent-SheetGlass1-name = glass
-ent-SheetGlass1-desc = A sheet of glass, used often on the station in various applications.
+ent-SheetGlass1-name = стекло
+ent-SheetGlass1-desc = Лист стекла, часто используемый на станции в различных целях.
 
-ent-SheetGlassLingering0-name = glass
-ent-SheetGlassLingering0-desc = A sheet of glass, used often on the station in various applications.
+ent-SheetGlassLingering0-name = стекло
+ent-SheetGlassLingering0-desc = Лист стекла, часто используемый на станции в различных целях.
 
-ent-SheetRGlassLingering0-name = glass
-ent-SheetRGlassLingering0-desc = A sheet of glass, used often on the station in various applications.
+ent-SheetRGlassLingering0-name = стекло
+ent-SheetRGlassLingering0-desc = Лист стекла, часто используемый на станции в различных целях.
 
-ent-SheetRPGlassLingering0-name = glass
-ent-SheetRPGlassLingering0-desc = A sheet of glass, used often on the station in various applications.
+ent-SheetRPGlassLingering0-name = стекло
+ent-SheetRPGlassLingering0-desc = Лист стекла, часто используемый на станции в различных целях.
 

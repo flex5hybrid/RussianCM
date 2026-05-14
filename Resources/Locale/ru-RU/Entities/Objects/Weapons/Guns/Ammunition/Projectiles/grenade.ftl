@@ -1,9 +1,9 @@
-ent-PelletClusterRubber-name = pellet (ball, rubber)
-ent-PelletClusterRubber-desc = If you can see this you're probably dead!
+ent-PelletClusterRubber-name = гранула (мяч, резина)
+ent-PelletClusterRubber-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletClusterLethal-name = pellet (ball, lethal)
-ent-PelletClusterLethal-desc = If you can see this you're probably dead!
+ent-PelletClusterLethal-name = пуля (шар, смертельная)
+ent-PelletClusterLethal-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletClusterIncendiary-name = pellet (ball, incendiary)
-ent-PelletClusterIncendiary-desc = If you can see this you're probably dead!
+ent-PelletClusterIncendiary-name = пулька (шаровая, зажигательная)
+ent-PelletClusterIncendiary-desc = Если ты это видишь, ты, вероятно, мертв!
 

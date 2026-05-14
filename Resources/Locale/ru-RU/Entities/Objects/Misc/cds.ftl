@@ -1,3 +1,3 @@
-ent-CoordinatesDisk-name = coordinates disk
-ent-CoordinatesDisk-desc = A disk containing the coordinates to a location in space. Necessary for any FTL-traversing vessel to reach their destination. Fits inside shuttle consoles.
+ent-CoordinatesDisk-name = координатный диск
+ent-CoordinatesDisk-desc = Диск, содержащий координаты места в космосе. Необходимо для того, чтобы любое судно, пересекающее сверхсветовую скорость, достигло пункта назначения. Подходит для консолей шаттла.
 

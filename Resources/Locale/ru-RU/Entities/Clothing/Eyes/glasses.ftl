@@ -1,51 +1,51 @@
-ent-ClothingEyesGlassesGar-name = gar glasses
-ent-ClothingEyesGlassesGar-desc = Go beyond impossible and kick reason to the curb!
+ent-ClothingEyesGlassesGar-name = гаровые очки
+ent-ClothingEyesGlassesGar-desc = Выйдите за рамки невозможного и отбросьте разум на обочину!
 
-ent-ClothingEyesGlassesGarOrange-name = orange gar glasses
-ent-ClothingEyesGlassesGarOrange-desc = Just who the hell do you think I am?!
+ent-ClothingEyesGlassesGarOrange-name = очки с апельсиновым гаром
+ent-ClothingEyesGlassesGarOrange-desc = Кто, черт возьми, ты меня считаешь?!
 
-ent-ClothingEyesGlassesGarGiga-name = giga gar glasses
-ent-ClothingEyesGlassesGarGiga-desc = We evolve past the person we were a minute before. Little by little we advance with each turn. That's how a drill works!
+ent-ClothingEyesGlassesGarGiga-name = очки гига-гар
+ent-ClothingEyesGlassesGarGiga-desc = Мы эволюционируем за пределы того человека, которым были минуту назад. Постепенно мы продвигаемся с каждым поворотом. Вот как работает дрель!
 
-ent-ClothingEyesGlassesMeson-name = engineering goggles
-ent-ClothingEyesGlassesMeson-desc = Green-tinted goggles using a proprietary polymer that provides protection from eye damage of all types.
+ent-ClothingEyesGlassesMeson-name = инженерные очки
+ent-ClothingEyesGlassesMeson-desc = Очки с зеленым оттенком, изготовленные из запатентованного полимера, обеспечивающего защиту от любого типа повреждений глаз.
 
-ent-ClothingEyesGlasses-name = glasses
-ent-ClothingEyesGlasses-desc = A pair of spectacular spectacles with prescription lenses.
+ent-ClothingEyesGlasses-name = очки
+ent-ClothingEyesGlasses-desc = Пара эффектных очков с дифракционными линзами.
 
-ent-ClothingEyesGlassesJensen-name = jensen glasses
-ent-ClothingEyesGlassesJensen-desc = A pair of yellow tinted folding glasses. You never asked for these.
+ent-ClothingEyesGlassesJensen-name = Дженсен очки
+ent-ClothingEyesGlassesJensen-desc = Пара складных очков желтого оттенка. Вы никогда не просили об этом.
 
-ent-ClothingEyesGlassesJamjar-name = jamjar glasses
-ent-ClothingEyesGlassesJamjar-desc = These retro glasses remind you of a simpler time.
+ent-ClothingEyesGlassesJamjar-name = очки для варенья
+ent-ClothingEyesGlassesJamjar-desc = Эти ретро-очки напоминают о более простых временах.
 
-ent-ClothingEyesGlassesOutlawGlasses-name = outlaw glasses
-ent-ClothingEyesGlassesOutlawGlasses-desc = A must for every self-respecting undercover agent.
+ent-ClothingEyesGlassesOutlawGlasses-name = очки преступника
+ent-ClothingEyesGlassesOutlawGlasses-desc = Необходимая вещь для каждого уважающего себя агента под прикрытием.
 
-ent-ClothingEyesGlassesCheapSunglasses-name = cheap sunglasses
-ent-ClothingEyesGlassesCheapSunglasses-desc = A pair of black sunglasses. Doesn't block light well, more of an accessory than something useful.
+ent-ClothingEyesGlassesCheapSunglasses-name = дешевые солнцезащитные очки
+ent-ClothingEyesGlassesCheapSunglasses-desc = Пара черных солнцезащитных очков. Плохо блокирует свет, скорее аксессуар, чем что-то полезное.
 
-ent-ClothingEyesGlassesSunglasses-name = sun glasses
-ent-ClothingEyesGlassesSunglasses-desc = A pair of black sunglasses.
+ent-ClothingEyesGlassesSunglasses-name = солнцезащитные очки
+ent-ClothingEyesGlassesSunglasses-desc = Пара черных солнцезащитных очков.
 
-ent-ClothingEyesGlassesSecurity-name = security glasses
-ent-ClothingEyesGlassesSecurity-desc = Upgraded sunglasses that provide flash immunity and a security HUD.
+ent-ClothingEyesGlassesSecurity-name = защитные очки
+ent-ClothingEyesGlassesSecurity-desc = Модернизированные солнцезащитные очки с защитой от вспышки и защитным интерфейсом.
 
-ent-ClothingEyesGlassesCommand-name = administration glasses
-ent-ClothingEyesGlassesCommand-desc = Upgraded sunglasses that provide flash immunity and show ID card status.
+ent-ClothingEyesGlassesCommand-name = административные очки
+ent-ClothingEyesGlassesCommand-desc = Модернизированные солнцезащитные очки, обеспечивающие защиту от вспышек и показывающие статус удостоверения личности.
 
-ent-ClothingEyesGlassesMercenary-name = mercenary glasses
-ent-ClothingEyesGlassesMercenary-desc = Glasses made for combat, to protect the eyes from bright blinding flashes.
+ent-ClothingEyesGlassesMercenary-name = наемные очки
+ent-ClothingEyesGlassesMercenary-desc = Очки созданы для боя, чтобы защитить глаза от ярких ослепляющих вспышек.
 
-ent-ClothingEyesGlassesThermal-name = optical thermal scanner
-ent-ClothingEyesGlassesThermal-desc = Thermals in the shape of glasses.
+ent-ClothingEyesGlassesThermal-name = оптический тепловой сканер
+ent-ClothingEyesGlassesThermal-desc = Термобелье в форме очков.
 
-ent-ClothingEyesGlassesChemical-name = chemical analysis goggles
-ent-ClothingEyesGlassesChemical-desc = Goggles that can scan the chemical composition of a solution.
+ent-ClothingEyesGlassesChemical-name = очки для химического анализа
+ent-ClothingEyesGlassesChemical-desc = Очки, которые могут сканировать химический состав раствора.
 
-ent-ClothingEyesVisorNinja-name = ninja visor
-ent-ClothingEyesVisorNinja-desc = An advanced visor protecting a ninja's eyes from flashing lights.
+ent-ClothingEyesVisorNinja-name = ниндзя козырек
+ent-ClothingEyesVisorNinja-desc = Усовершенствованный визор, защищающий глаза ниндзя от мигалок.
 
-ent-ClothingEyesGlassesNoir-name = noir-tech glasses
-ent-ClothingEyesGlassesNoir-desc = A pair of glasses that simulate what the world looked like before the invention of color.
+ent-ClothingEyesGlassesNoir-name = очки в стиле нуар
+ent-ClothingEyesGlassesNoir-desc = Пара очков, имитирующих то, как выглядел мир до изобретения цвета.
 

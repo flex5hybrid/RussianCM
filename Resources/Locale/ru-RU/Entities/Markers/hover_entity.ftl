@@ -1,2 +1,2 @@
-ent-hoverentity-name = hover entity
+ent-hoverentity-name = наведение объекта
 

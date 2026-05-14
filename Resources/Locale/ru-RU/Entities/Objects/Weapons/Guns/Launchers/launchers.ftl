@@ -1,38 +1,38 @@
-ent-BaseWeaponLauncher-name = BaseWeaponLauncher
-ent-BaseWeaponLauncher-desc = A rooty tooty point and shooty.
+ent-BaseWeaponLauncher-name = БазаОружиеПусковая установка
+ent-BaseWeaponLauncher-desc = Коренной зубастый и стрелковый.
 
-ent-WeaponLauncherChinaLake-name = china lake
-ent-WeaponLauncherChinaLake-desc = PLOOP.
+ent-WeaponLauncherChinaLake-name = Китайское озеро
+ent-WeaponLauncherChinaLake-desc = ПЛЮП.
 
-ent-WeaponLauncherHydra-name = hydra
-ent-WeaponLauncherHydra-desc = PLOOP... FSSSSSS
+ent-WeaponLauncherHydra-name = гидра
+ent-WeaponLauncherHydra-desc = ПЛЮП... ФСССССС
 
-ent-WeaponLauncherRocket-name = RPG-7
-ent-WeaponLauncherRocket-desc = A modified ancient rocket-propelled grenade launcher.
+ent-WeaponLauncherRocket-name = РПГ-7
+ent-WeaponLauncherRocket-desc = Модифицированный древний реактивный гранатомет.
 
-ent-WeaponLauncherMultipleRocket-name = multiple rocket launcher
-ent-WeaponLauncherMultipleRocket-desc = A modified ancient rocket-propelled grenade launcher.
+ent-WeaponLauncherMultipleRocket-name = реактивная система залпового огня
+ent-WeaponLauncherMultipleRocket-desc = Модифицированный древний реактивный гранатомет.
 
-ent-WeaponLauncherPirateCannon-name = pirate cannon
-ent-WeaponLauncherPirateCannon-desc = Kaboom!
+ent-WeaponLauncherPirateCannon-name = пиратская пушка
+ent-WeaponLauncherPirateCannon-desc = Бум!
 
-ent-WeaponTetherGun-name = tether gun
-ent-WeaponTetherGun-desc = Manipulates gravity around objects to fling them at high velocities.
+ent-WeaponTetherGun-name = тросовый пистолет
+ent-WeaponTetherGun-desc = Управляет гравитацией вокруг объектов, чтобы бросать их с высокой скоростью.
 
-ent-WeaponForceGun-name = force gun
-ent-WeaponForceGun-desc = Manipulates gravity around objects to fling them at high velocities.
+ent-WeaponForceGun-name = Силовой пистолет
+ent-WeaponForceGun-desc = Управляет гравитацией вокруг объектов, чтобы бросать их с высокой скоростью.
 
-ent-WeaponGrapplingGun-name = grappling gun
+ent-WeaponGrapplingGun-name = абордажный пистолет
 
-ent-WeaponTetherGunAdmin-name = tether gun
-ent-WeaponTetherGunAdmin-desc = Manipulates gravity around objects to fling them at high velocities.
+ent-WeaponTetherGunAdmin-name = тросовый пистолет
+ent-WeaponTetherGunAdmin-desc = Управляет гравитацией вокруг объектов, чтобы бросать их с высокой скоростью.
 
-ent-WeaponForceGunAdmin-name = force gun
-ent-WeaponForceGunAdmin-desc = Manipulates gravity around objects to fling them at high velocities.
+ent-WeaponForceGunAdmin-name = Силовой пистолет
+ent-WeaponForceGunAdmin-desc = Управляет гравитацией вокруг объектов, чтобы бросать их с высокой скоростью.
 
-ent-WeaponLauncherAdmemeMeteorLarge-name = meteor launcher
-ent-WeaponLauncherAdmemeMeteorLarge-desc = It fires large meteors.
+ent-WeaponLauncherAdmemeMeteorLarge-name = метеоритная пусковая установка
+ent-WeaponLauncherAdmemeMeteorLarge-desc = Он запускает большие метеоры.
 
-ent-WeaponLauncherAdmemeImmovableRodSlow-name = immovable rod launcher
-ent-WeaponLauncherAdmemeImmovableRodSlow-desc = It fires slow immovable rods.
+ent-WeaponLauncherAdmemeImmovableRodSlow-name = неподвижная пусковая установка для стержней
+ent-WeaponLauncherAdmemeImmovableRodSlow-desc = Он стреляет медленными неподвижными стержнями.
 

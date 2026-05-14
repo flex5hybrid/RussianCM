@@ -1,105 +1,105 @@
-ent-ClothingOuterHardsuitAtmos-name = atmos hardsuit
-ent-ClothingOuterHardsuitAtmos-desc = A special suit that protects against hazardous, low pressure environments. Has thermal shielding.
+ent-ClothingOuterHardsuitAtmos-name = атмос комбинезон
+ent-ClothingOuterHardsuitAtmos-desc = Специальный костюм, защищающий от опасных сред низкого давления. Имеет термозащиту.
 
-ent-ClothingOuterHardsuitEngineering-name = engineering hardsuit
-ent-ClothingOuterHardsuitEngineering-desc = A special suit that protects against hazardous, low pressure environments. Has radiation shielding.
+ent-ClothingOuterHardsuitEngineering-name = инженерный комбинезон
+ent-ClothingOuterHardsuitEngineering-desc = Специальный костюм, защищающий от опасных сред низкого давления. Имеет радиационную защиту.
 
-ent-ClothingOuterHardsuitSpatio-name = spationaut hardsuit
-ent-ClothingOuterHardsuitSpatio-desc = A lightweight hardsuit designed for industrial EVA in zero gravity.
+ent-ClothingOuterHardsuitSpatio-name = костюм для спанаута
+ent-ClothingOuterHardsuitSpatio-desc = Легкий жесткий костюм, предназначенный для промышленного выхода в открытый космос в условиях невесомости.
 
-ent-ClothingOuterHardsuitSalvage-name = mining hardsuit
-ent-ClothingOuterHardsuitSalvage-desc = A special suit that protects against hazardous, low pressure environments. Has reinforced plating for wildlife encounters.
+ent-ClothingOuterHardsuitSalvage-name = горнодобывающий комбинезон
+ent-ClothingOuterHardsuitSalvage-desc = Специальный костюм, защищающий от опасных сред низкого давления. Имеет усиленное покрытие для встреч с дикой природой.
 
-ent-ClothingOuterHardsuitGoliath-name = goliath hardsuit
-ent-ClothingOuterHardsuitGoliath-desc = A lightweight hardsuit, adorned with a patchwork of thick, chitinous goliath hide.
+ent-ClothingOuterHardsuitGoliath-name = голиаф
+ent-ClothingOuterHardsuitGoliath-desc = Легкий жесткий костюм, украшенный лоскутным одеялом из толстой хитиновой шкуры голиафа.
 
-ent-ClothingOuterHardsuitMaxim-name = salvager maxim hardsuit
-ent-ClothingOuterHardsuitMaxim-desc = Fire. Heat. These things forge great weapons, they also forge great salvagers.
+ent-ClothingOuterHardsuitMaxim-name = жёсткий костюм спасателя Максима
+ent-ClothingOuterHardsuitMaxim-desc = Огонь. Нагревать. Эти твари создают великолепное оружие, а также великих спасателей.
 
-ent-ClothingOuterHardsuitSecurity-name = security hardsuit
-ent-ClothingOuterHardsuitSecurity-desc = A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
+ent-ClothingOuterHardsuitSecurity-name = защитный костюм
+ent-ClothingOuterHardsuitSecurity-desc = Специальный костюм, защищающий от опасных сред низкого давления. Имеет дополнительный слой брони.
 
-ent-ClothingOuterHardsuitBrigmedic-name = brigmedic hardsuit
-ent-ClothingOuterHardsuitBrigmedic-desc = Special hardsuit of the guardian angel of the brig. It is the medical version of the security hardsuit.
+ent-ClothingOuterHardsuitBrigmedic-name = Бригмедик
+ent-ClothingOuterHardsuitBrigmedic-desc = Специальный костюм ангела-хранителя брига. Это медицинская версия защитного костюма.
 
-ent-ClothingOuterHardsuitWarden-name = warden's hardsuit
-ent-ClothingOuterHardsuitWarden-desc = A specialized riot suit geared to combat low pressure environments.
+ent-ClothingOuterHardsuitWarden-name = костюм начальника тюрьмы
+ent-ClothingOuterHardsuitWarden-desc = Специализированный костюм для подавления беспорядков, предназначенный для борьбы с низким давлением.
 
-ent-ClothingOuterHardsuitCap-name = captain's armored spacesuit
-ent-ClothingOuterHardsuitCap-desc = A formal armored spacesuit, made for the station's captain.
+ent-ClothingOuterHardsuitCap-name = капитанский бронированный скафандр
+ent-ClothingOuterHardsuitCap-desc = Формальный бронированный скафандр, сделанный для капитана станции.
 
-ent-ClothingOuterHardsuitEngineeringWhite-name = chief engineer's hardsuit
-ent-ClothingOuterHardsuitEngineeringWhite-desc = A special hardsuit that protects against hazardous, low pressure environments, made for the chief engineer of the station.
+ent-ClothingOuterHardsuitEngineeringWhite-name = костюм главного инженера
+ent-ClothingOuterHardsuitEngineeringWhite-desc = Специальный жесткий костюм, защищающий от опасных сред низкого давления, изготовленный для главного инженера станции.
 
-ent-ClothingOuterHardsuitMedical-name = chief medical officer's hardsuit
-ent-ClothingOuterHardsuitMedical-desc = A special suit that protects against hazardous, low pressure environments. Built with lightweight materials for easier movement.
+ent-ClothingOuterHardsuitMedical-name = жесткий костюм главного врача
+ent-ClothingOuterHardsuitMedical-desc = Специальный костюм, защищающий от опасных сред низкого давления. Изготовлен из легких материалов для облегчения передвижения.
 
-ent-ClothingOuterHardsuitRd-name = experimental research hardsuit
-ent-ClothingOuterHardsuitRd-desc = A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
+ent-ClothingOuterHardsuitRd-name = экспериментальный исследовательский комбинезон
+ent-ClothingOuterHardsuitRd-desc = Специальный костюм, защищающий от опасных сред низкого давления. Имеет дополнительный слой брони.
 
-ent-ClothingOuterHardsuitSecurityRed-name = head of security's hardsuit
-ent-ClothingOuterHardsuitSecurityRed-desc = A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
+ent-ClothingOuterHardsuitSecurityRed-name = костюм начальника службы безопасности
+ent-ClothingOuterHardsuitSecurityRed-desc = Специальный костюм, защищающий от опасных сред низкого давления. Имеет дополнительный слой брони.
 
-ent-ClothingOuterHardsuitLuxury-name = luxury mining hardsuit
-ent-ClothingOuterHardsuitLuxury-desc = A refurbished mining hardsuit, fashioned after the Quartermaster's colors. Graphene lining provides less protection, but is much easier to move.
+ent-ClothingOuterHardsuitLuxury-name = роскошный горнодобывающий комбинезон
+ent-ClothingOuterHardsuitLuxury-desc = Отремонтированный горный костюм, выполненный в цветах интенданта. Графеновая подкладка обеспечивает меньшую защиту, но ее гораздо легче перемещать.
 
-ent-ClothingOuterHardsuitSyndie-name = blood-red hardsuit
-ent-ClothingOuterHardsuitSyndie-desc = A heavily armored hardsuit designed for work in special operations. Property of Gorlex Marauders.
+ent-ClothingOuterHardsuitSyndie-name = кроваво-красный костюм
+ent-ClothingOuterHardsuitSyndie-desc = Тяжелобронированный костюм, предназначенный для работы в специальных операциях. Собственность Горлекс Мародеров.
 
-ent-ClothingOuterHardsuitSyndieMedic-name = blood-red medic hardsuit
-ent-ClothingOuterHardsuitSyndieMedic-desc = A heavily armored and agile advanced hardsuit specifically designed for field medic operations.
+ent-ClothingOuterHardsuitSyndieMedic-name = кроваво-красный костюм медика
+ent-ClothingOuterHardsuitSyndieMedic-desc = Тяжелобронированный и маневренный усовершенствованный жесткий костюм, специально разработанный для полевых медицинских операций.
 
-ent-ClothingOuterHardsuitSyndieElite-name = syndicate elite hardsuit
-ent-ClothingOuterHardsuitSyndieElite-desc = An elite version of the blood-red hardsuit, with improved radiation resistance and fireproofing. Property of Gorlex Marauders.
+ent-ClothingOuterHardsuitSyndieElite-name = элитный костюм синдиката
+ent-ClothingOuterHardsuitSyndieElite-desc = Элитная версия кроваво-красного костюма с улучшенной радиационной и огнезащитной защитой. Собственность Горлекс Мародеров.
 
-ent-ClothingOuterHardsuitSyndieCommander-name = syndicate commander hardsuit
-ent-ClothingOuterHardsuitSyndieCommander-desc = A bulked up version of the blood-red hardsuit, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
+ent-ClothingOuterHardsuitSyndieCommander-name = комбинезон командира синдиката
+ent-ClothingOuterHardsuitSyndieCommander-desc = Увеличенная версия кроваво-красного костюма, специально созданная для командира оперативного отделения синдиката. Значительно улучшена броня для смертоносных перестрелок на передовой.
 
-ent-ClothingOuterHardsuitJuggernaut-name = cybersun juggernaut suit
-ent-ClothingOuterHardsuitJuggernaut-desc = A suit made by the cutting edge R&D department at cybersun to be hyper resilient.
+ent-ClothingOuterHardsuitJuggernaut-name = костюм джаггернаута киберсолнца
+ent-ClothingOuterHardsuitJuggernaut-desc = Костюм, созданный передовым отделом исследований и разработок CyberSun, должен быть сверхвыносливым.
 
-ent-ClothingOuterHardsuitWizard-name = wizard hardsuit
-ent-ClothingOuterHardsuitWizard-desc = A bizarre gem-encrusted suit that radiates magical energies.
+ent-ClothingOuterHardsuitWizard-name = волшебник
+ent-ClothingOuterHardsuitWizard-desc = Причудливый инкрустированный драгоценными камнями костюм, излучающий магическую энергию.
 
-ent-ClothingOuterHardsuitLing-name = organic space suit
-ent-ClothingOuterHardsuitLing-desc = A spaceworthy biomass of pressure and temperature resistant tissue.
+ent-ClothingOuterHardsuitLing-name = органический космический костюм
+ent-ClothingOuterHardsuitLing-desc = Пригодная для использования в космосе биомасса ткани, устойчивой к давлению и температуре.
 
-ent-ClothingOuterHardsuitPirateEVA-name = deep space EVA suit
-ent-ClothingOuterHardsuitPirateEVA-desc = A heavy space suit that provides some basic protection from the cold harsh realities of deep space.
+ent-ClothingOuterHardsuitPirateEVA-name = костюм для выхода в открытый космос для глубокого космоса
+ent-ClothingOuterHardsuitPirateEVA-desc = Тяжелый скафандр, обеспечивающий базовую защиту от суровых холодных реалий глубокого космоса.
 
-ent-ClothingOuterHardsuitPirateCap-name = pirate captain's hardsuit
-ent-ClothingOuterHardsuitPirateCap-desc = An ancient armored hardsuit, perfect for defending against space scurvy and toolbox-wielding scallywags.
+ent-ClothingOuterHardsuitPirateCap-name = костюм капитана пиратов
+ent-ClothingOuterHardsuitPirateCap-desc = Древний бронированный костюм, идеально подходящий для защиты от космической цинги и негодяев с ящиками с инструментами.
 
-ent-ClothingOuterHardsuitERTLeader-name = ERT leader's hardsuit
-ent-ClothingOuterHardsuitERTLeader-desc = A protective hardsuit worn by the leader of an emergency response team.
+ent-ClothingOuterHardsuitERTLeader-name = Костюм руководителя ERT
+ent-ClothingOuterHardsuitERTLeader-desc = Защитный костюм, который носит руководитель группы экстренного реагирования.
 
-ent-ClothingOuterHardsuitERTChaplain-name = ERT chaplain's hardsuit
-ent-ClothingOuterHardsuitERTChaplain-desc = A protective hardsuit worn by the chaplains of an Emergency Response Team.
+ent-ClothingOuterHardsuitERTChaplain-name = Жесткий костюм капеллана ERT
+ent-ClothingOuterHardsuitERTChaplain-desc = Защитный костюм, который носят капелланы группы экстренного реагирования.
 
-ent-ClothingOuterHardsuitERTEngineer-name = ERT engineer's hardsuit
-ent-ClothingOuterHardsuitERTEngineer-desc = A protective hardsuit worn by the engineers of an emergency response team.
+ent-ClothingOuterHardsuitERTEngineer-name = Комбинезон инженера ERT
+ent-ClothingOuterHardsuitERTEngineer-desc = Защитный костюм, который носят инженеры аварийно-спасательной службы.
 
-ent-ClothingOuterHardsuitERTMedical-name = ERT medic's hardsuit
-ent-ClothingOuterHardsuitERTMedical-desc = A protective hardsuit worn by the medics of an emergency response team.
+ent-ClothingOuterHardsuitERTMedical-name = Комбинезон врача скорой медицинской помощи
+ent-ClothingOuterHardsuitERTMedical-desc = Защитный костюм, который носят медики бригады экстренного реагирования.
 
-ent-ClothingOuterHardsuitERTSecurity-name = ERT security's hardsuit
-ent-ClothingOuterHardsuitERTSecurity-desc = A protective hardsuit worn by the security officers of an emergency response team.
+ent-ClothingOuterHardsuitERTSecurity-name = Костюм службы безопасности ERT
+ent-ClothingOuterHardsuitERTSecurity-desc = Защитный костюм, который носят сотрудники службы безопасности группы экстренного реагирования.
 
-ent-ClothingOuterHardsuitERTJanitor-name = ERT janitor's hardsuit
-ent-ClothingOuterHardsuitERTJanitor-desc = A protective hardsuit worn by the janitors of an emergency response team.
+ent-ClothingOuterHardsuitERTJanitor-name = Костюм дворника ERT
+ent-ClothingOuterHardsuitERTJanitor-desc = Защитный костюм, который носят дворники бригады экстренного реагирования.
 
-ent-ClothingOuterHardsuitDeathsquad-name = death squad hardsuit
-ent-ClothingOuterHardsuitDeathsquad-desc = An advanced hardsuit favored by commandos for use in special operations.
+ent-ClothingOuterHardsuitDeathsquad-name = костюм отряда смерти
+ent-ClothingOuterHardsuitDeathsquad-desc = Усовершенствованный жесткий костюм, который коммандос предпочитают использовать в специальных операциях.
 
-ent-ClothingOuterHardsuitCBURN-name = CBURN exosuit
-ent-ClothingOuterHardsuitCBURN-desc = A lightweight yet strong exosuit used for special cleanup operations.
+ent-ClothingOuterHardsuitCBURN-name = CBRN экзокостюм
+ent-ClothingOuterHardsuitCBURN-desc = Легкий, но прочный экзокостюм, используемый для специальных операций по очистке.
 
-ent-ClothingOuterHardsuitClown-name = clown hardsuit
-ent-ClothingOuterHardsuitClown-desc = A custom-made clown hardsuit.
+ent-ClothingOuterHardsuitClown-name = клоун
+ent-ClothingOuterHardsuitClown-desc = Костюм клоуна, изготовленный на заказ.
 
-ent-ClothingOuterHardsuitMime-name = mime hardsuit
-ent-ClothingOuterHardsuitMime-desc = A custom-made mime hardsuit.
+ent-ClothingOuterHardsuitMime-name = мимический костюм
+ent-ClothingOuterHardsuitMime-desc = Костюм мима, изготовленный на заказ.
 
-ent-ClothingOuterHardsuitSanta-name = Santa's hardsuit
-ent-ClothingOuterHardsuitSanta-desc = A festive, cheerful hardsuit that protects the jolly gift-giver while on sleighrides in space. Offers some resistance against asteroid strikes.
+ent-ClothingOuterHardsuitSanta-name = жесткий костюм Санты
+ent-ClothingOuterHardsuitSanta-desc = Праздничный, жизнерадостный жесткий костюм, который защитит веселого дарителя подарков во время катания на санях в космосе. Обеспечивает некоторую устойчивость к ударам астероидов.
 

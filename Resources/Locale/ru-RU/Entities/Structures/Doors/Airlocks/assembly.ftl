@@ -1,117 +1,117 @@
-ent-PinionAirlockAssembly-name = airlock assembly
-ent-PinionAirlockAssembly-desc = It opens, it closes, and maybe crushes you.
+ent-PinionAirlockAssembly-name = шлюзовая сборка
+ent-PinionAirlockAssembly-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyAtmospherics-name = airlock assembly
-ent-AirlockAssemblyAtmospherics-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyAtmospherics-name = шлюзовая сборка
+ent-AirlockAssemblyAtmospherics-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyAtmosphericsGlass-name = airlock assembly
-ent-AirlockAssemblyAtmosphericsGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyAtmosphericsGlass-name = шлюзовая сборка
+ent-AirlockAssemblyAtmosphericsGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyCargo-name = airlock assembly
-ent-AirlockAssemblyCargo-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyCargo-name = шлюзовая сборка
+ent-AirlockAssemblyCargo-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyCargoGlass-name = airlock assembly
-ent-AirlockAssemblyCargoGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyCargoGlass-name = шлюзовая сборка
+ent-AirlockAssemblyCargoGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-PinionAirlockAssemblyGlass-name = airlock assembly
-ent-PinionAirlockAssemblyGlass-desc = It opens, it closes, and maybe crushes you.
+ent-PinionAirlockAssemblyGlass-name = шлюзовая сборка
+ent-PinionAirlockAssemblyGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyCommand-name = airlock assembly
-ent-AirlockAssemblyCommand-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyCommand-name = шлюзовая сборка
+ent-AirlockAssemblyCommand-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyCommandGlass-name = airlock assembly
-ent-AirlockAssemblyCommandGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyCommandGlass-name = шлюзовая сборка
+ent-AirlockAssemblyCommandGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyEngineering-name = airlock assembly
-ent-AirlockAssemblyEngineering-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyEngineering-name = шлюзовая сборка
+ent-AirlockAssemblyEngineering-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyEngineeringGlass-name = airlock assembly
-ent-AirlockAssemblyEngineeringGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyEngineeringGlass-name = шлюзовая сборка
+ent-AirlockAssemblyEngineeringGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyExternal-name = airlock assembly
-ent-AirlockAssemblyExternal-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyExternal-name = шлюзовая сборка
+ent-AirlockAssemblyExternal-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyExternalGlass-name = airlock assembly
-ent-AirlockAssemblyExternalGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyExternalGlass-name = шлюзовая сборка
+ent-AirlockAssemblyExternalGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyGlass-name = airlock assembly
-ent-AirlockAssemblyGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyGlass-name = шлюзовая сборка
+ent-AirlockAssemblyGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyFreezer-name = airlock assembly
-ent-AirlockAssemblyFreezer-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyFreezer-name = шлюзовая сборка
+ent-AirlockAssemblyFreezer-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyHydroponics-name = airlock assembly
-ent-AirlockAssemblyHydroponics-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyHydroponics-name = шлюзовая сборка
+ent-AirlockAssemblyHydroponics-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyHydroponicsGlass-name = airlock assembly
-ent-AirlockAssemblyHydroponicsGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyHydroponicsGlass-name = шлюзовая сборка
+ent-AirlockAssemblyHydroponicsGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyMaintenance-name = airlock assembly
-ent-AirlockAssemblyMaintenance-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyMaintenance-name = шлюзовая сборка
+ent-AirlockAssemblyMaintenance-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyMaintenanceGlass-name = airlock assembly
-ent-AirlockAssemblyMaintenanceGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyMaintenanceGlass-name = шлюзовая сборка
+ent-AirlockAssemblyMaintenanceGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyMedical-name = airlock assembly
-ent-AirlockAssemblyMedical-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyMedical-name = шлюзовая сборка
+ent-AirlockAssemblyMedical-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyMedicalGlass-name = airlock assembly
-ent-AirlockAssemblyMedicalGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyMedicalGlass-name = шлюзовая сборка
+ent-AirlockAssemblyMedicalGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblySalvage-name = airlock assembly
-ent-AirlockAssemblySalvage-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblySalvage-name = шлюзовая сборка
+ent-AirlockAssemblySalvage-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblySalvageGlass-name = airlock assembly
-ent-AirlockAssemblySalvageGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblySalvageGlass-name = шлюзовая сборка
+ent-AirlockAssemblySalvageGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyScience-name = airlock assembly
-ent-AirlockAssemblyScience-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyScience-name = шлюзовая сборка
+ent-AirlockAssemblyScience-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyScienceGlass-name = airlock assembly
-ent-AirlockAssemblyScienceGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyScienceGlass-name = шлюзовая сборка
+ent-AirlockAssemblyScienceGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblySecurity-name = airlock assembly
-ent-AirlockAssemblySecurity-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblySecurity-name = шлюзовая сборка
+ent-AirlockAssemblySecurity-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblySecurityGlass-name = airlock assembly
-ent-AirlockAssemblySecurityGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblySecurityGlass-name = шлюзовая сборка
+ent-AirlockAssemblySecurityGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyShuttle-name = airlock assembly
-ent-AirlockAssemblyShuttle-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyShuttle-name = шлюзовая сборка
+ent-AirlockAssemblyShuttle-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyShuttleGlass-name = airlock assembly
-ent-AirlockAssemblyShuttleGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyShuttleGlass-name = шлюзовая сборка
+ent-AirlockAssemblyShuttleGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyVirology-name = airlock assembly
-ent-AirlockAssemblyVirology-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyVirology-name = шлюзовая сборка
+ent-AirlockAssemblyVirology-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyVirologyGlass-name = airlock assembly
-ent-AirlockAssemblyVirologyGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyVirologyGlass-name = шлюзовая сборка
+ent-AirlockAssemblyVirologyGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyCentralCommand-name = airlock assembly
-ent-AirlockAssemblyCentralCommand-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyCentralCommand-name = шлюзовая сборка
+ent-AirlockAssemblyCentralCommand-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyCentralCommandGlass-name = airlock assembly
-ent-AirlockAssemblyCentralCommandGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyCentralCommandGlass-name = шлюзовая сборка
+ent-AirlockAssemblyCentralCommandGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyMining-name = airlock assembly
-ent-AirlockAssemblyMining-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyMining-name = шлюзовая сборка
+ent-AirlockAssemblyMining-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyMiningGlass-name = airlock assembly
-ent-AirlockAssemblyMiningGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyMiningGlass-name = шлюзовая сборка
+ent-AirlockAssemblyMiningGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblySyndicate-name = airlock assembly
-ent-AirlockAssemblySyndicate-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblySyndicate-name = шлюзовая сборка
+ent-AirlockAssemblySyndicate-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblySyndicateGlass-name = airlock assembly
-ent-AirlockAssemblySyndicateGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblySyndicateGlass-name = шлюзовая сборка
+ent-AirlockAssemblySyndicateGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyShuttleSyndicate-name = airlock assembly
-ent-AirlockAssemblyShuttleSyndicate-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyShuttleSyndicate-name = шлюзовая сборка
+ent-AirlockAssemblyShuttleSyndicate-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyShuttleSyndicateGlass-name = airlock assembly
-ent-AirlockAssemblyShuttleSyndicateGlass-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyShuttleSyndicateGlass-name = шлюзовая сборка
+ent-AirlockAssemblyShuttleSyndicateGlass-desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-AirlockAssemblyHighSec-name = airlock assembly
-ent-AirlockAssemblyHighSec-desc = It opens, it closes, and maybe crushes you.
+ent-AirlockAssemblyHighSec-name = шлюзовая сборка
+ent-AirlockAssemblyHighSec-desc = Он открывается, закрывается и, возможно, раздавит вас.
 

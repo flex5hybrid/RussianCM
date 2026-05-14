@@ -1,6 +1,6 @@
-ent-MrChips-name = mr chips
-ent-MrChips-desc = It's a dummy, dummy!
+ent-MrChips-name = мистер чипсы
+ent-MrChips-desc = Это чушь, дура!
 
-ent-MrDips-name = mr dips
-ent-MrDips-desc = It's a dummy, dummy!
+ent-MrDips-name = мистер Дипс
+ent-MrDips-desc = Это чушь, дура!
 

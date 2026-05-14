@@ -1,12 +1,12 @@
-ent-Joint-name = joint
-ent-Joint-desc = A roll of dried plant matter wrapped in thin paper.
+ent-Joint-name = совместный
+ent-Joint-desc = Рулон сушеных растений, завернутый в тонкую бумагу.
 
-ent-JointRainbow-name = joint
-ent-JointRainbow-desc = A roll of dried plant matter wrapped in thin paper. Seems to be colorful inside.
+ent-JointRainbow-name = совместный
+ent-JointRainbow-desc = Рулон сушеных растений, завернутый в тонкую бумагу. Внутри он кажется красочным.
 
-ent-Blunt-name = blunt
-ent-Blunt-desc = A roll of dried plant matter wrapped in a dried tobacco leaf.
+ent-Blunt-name = тупой
+ent-Blunt-desc = Рулон высушенных растений, завернутый в сушеный табачный лист.
 
-ent-BluntRainbow-name = blunt
-ent-BluntRainbow-desc = A roll of dried plant matter wrapped in a dried tobacco leaf. Seems to be colorful inside.
+ent-BluntRainbow-name = тупой
+ent-BluntRainbow-desc = Рулон высушенных растений, завернутый в сушеный табачный лист. Внутри он кажется красочным.
 

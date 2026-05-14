@@ -1,15 +1,15 @@
-ent-InflatableWallStack-name = inflatable barricade
-ent-InflatableWallStack-desc = A folded membrane which rapidly expands into a large cubical shape on activation.
+ent-InflatableWallStack-name = надувная баррикада
+ent-InflatableWallStack-desc = Складчатая мембрана, которая при активации быстро расширяется до большой кубической формы.
 
-ent-InflatableDoorStack-name = inflatable door
-ent-InflatableDoorStack-desc = A folded membrane which rapidly expands into a large cubical shape on activation.
+ent-InflatableDoorStack-name = надувная дверь
+ent-InflatableDoorStack-desc = Складчатая мембрана, которая при активации быстро расширяется до большой кубической формы.
 
-ent-InflatableWallStack5-name = inflatable barricade
-ent-InflatableWallStack5-desc = A folded membrane which rapidly expands into a large cubical shape on activation.
+ent-InflatableWallStack5-name = надувная баррикада
+ent-InflatableWallStack5-desc = Складчатая мембрана, которая при активации быстро расширяется до большой кубической формы.
 
-ent-InflatableWallStack1-name = inflatable barricade
-ent-InflatableWallStack1-desc = A folded membrane which rapidly expands into a large cubical shape on activation.
+ent-InflatableWallStack1-name = надувная баррикада
+ent-InflatableWallStack1-desc = Складчатая мембрана, которая при активации быстро расширяется до большой кубической формы.
 
-ent-InflatableDoorStack1-name = inflatable door
-ent-InflatableDoorStack1-desc = A folded membrane which rapidly expands into a large cubical shape on activation.
+ent-InflatableDoorStack1-name = надувная дверь
+ent-InflatableDoorStack1-desc = Складчатая мембрана, которая при активации быстро расширяется до большой кубической формы.
 

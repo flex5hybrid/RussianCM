@@ -1,9 +1,9 @@
-ent-MobRatvarBase-name = Ratvar
-ent-MobRatvarBase-desc = Your mind aches as it fails to understand the complex mechanics of what is before you.
+ent-MobRatvarBase-name = Ратвар
+ent-MobRatvarBase-desc = Ваш разум болит, поскольку он не может понять сложную механику того, что находится перед вами.
 
-ent-MobRatvarSpawn-name = Ratvar
-ent-MobRatvarSpawn-desc = Your mind aches as it fails to understand the complex mechanics of what is before you.
+ent-MobRatvarSpawn-name = Ратвар
+ent-MobRatvarSpawn-desc = Ваш разум болит, поскольку он не может понять сложную механику того, что находится перед вами.
 
-ent-MobRatvar-name = Ratvar
-ent-MobRatvar-desc = Your mind aches as it fails to understand the complex mechanics of what is before you.
+ent-MobRatvar-name = Ратвар
+ent-MobRatvar-desc = Ваш разум болит, поскольку он не может понять сложную механику того, что находится перед вами.
 

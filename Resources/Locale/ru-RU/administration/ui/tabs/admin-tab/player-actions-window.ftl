@@ -6,3 +6,11 @@ admin-player-actions-window-shuttle = Вызвать/отозвать шаттл
 admin-player-actions-window-admin-logs = Админ логи
 admin-player-actions-window-admin-fax = Админ факс
 admin-player-actions-window-admin-chat = Админ чат
+
+# Missing entries synced from en-US
+
+admin-player-actions-window-title = Панель действий игрока
+
+admin-player-actions-window-teleport = Телепортироваться
+
+admin-player-actions-window-admin-notes = Заметки администратора

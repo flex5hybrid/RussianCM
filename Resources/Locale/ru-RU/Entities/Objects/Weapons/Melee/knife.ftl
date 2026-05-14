@@ -1,38 +1,38 @@
-ent-KitchenKnife-name = kitchen knife
-ent-KitchenKnife-desc = A general purpose Chef's Knife made by Asters Merchant Guild. Guaranteed to stay sharp for years to come..
+ent-KitchenKnife-name = кухонный нож
+ent-KitchenKnife-desc = Поварской нож общего назначения, изготовленный Торговой гильдией Астерс. Гарантированно сохранит остроту на долгие годы.
 
-ent-ButchCleaver-name = butcher's cleaver
-ent-ButchCleaver-desc = A huge blade used for chopping and chopping up meat. This includes clowns and clown-by-products.
+ent-ButchCleaver-name = нож мясника
+ent-ButchCleaver-desc = Огромное лезвие, используемое для рубки и измельчения мяса. Сюда входят клоуны и побочные продукты клоунов.
 
-ent-CombatKnife-name = combat knife
-ent-CombatKnife-desc = A deadly knife intended for melee confrontations.
+ent-CombatKnife-name = боевой нож
+ent-CombatKnife-desc = Смертоносный нож, предназначенный для рукопашных схваток.
 
-ent-SurvivalKnife-name = survival knife
-ent-SurvivalKnife-desc = Weapon of first and last resort for combatting space carp.
+ent-SurvivalKnife-name = нож выживания
+ent-SurvivalKnife-desc = Оружие первой и последней инстанции для борьбы с космическим карпом.
 
-ent-KukriKnife-name = kukri knife
-ent-KukriKnife-desc = Professionals have standards. Be polite. Be efficient. Have a plan to kill everyone you meet.
+ent-KukriKnife-name = нож кукри
+ent-KukriKnife-desc = У профессионалов есть стандарты. Будьте вежливы. Будьте эффективны. Имейте план убить всех, кого встретите.
 
-ent-BladedFlatcapGrey-name = grey flatcap
-ent-BladedFlatcapGrey-desc = Fashionable for both the working class and old man Jenkins. It has glass shards hidden in the brim.
+ent-BladedFlatcapGrey-name = серая кепка
+ent-BladedFlatcapGrey-desc = Модно как для рабочего класса, так и для старика Дженкинса. По краям спрятаны осколки стекла.
 
-ent-BladedFlatcapBrown-name = brown flatcap
-ent-BladedFlatcapBrown-desc = "Stupid clown! You made me look bad!" It has glass shards hidden in the brim.
+ent-BladedFlatcapBrown-name = коричневая кепка
+ent-BladedFlatcapBrown-desc = «Глупый клоун! Ты выставил меня в плохом свете!» По краям спрятаны осколки стекла.
 
-ent-Shiv-name = shiv
-ent-Shiv-desc = A crude weapon fashioned from a piece of cloth and a glass shard.
+ent-Shiv-name = заточка
+ent-Shiv-desc = Грубое оружие, сделанное из куска ткани и осколка стекла.
 
-ent-ReinforcedShiv-name = reinforced shiv
-ent-ReinforcedShiv-desc = A crude weapon fashioned from a piece of cloth and a reinforced glass shard.
+ent-ReinforcedShiv-name = усиленная заточка
+ent-ReinforcedShiv-desc = Грубое оружие, сделанное из куска ткани и укрепленного осколка стекла.
 
-ent-PlasmaShiv-name = plasma shiv
-ent-PlasmaShiv-desc = A crude weapon fashioned from a piece of cloth and a plasma glass shard.
+ent-PlasmaShiv-name = плазменная заточка
+ent-PlasmaShiv-desc = Грубое оружие, сделанное из куска ткани и осколка плазменного стекла.
 
-ent-UraniumShiv-name = uranium shiv
-ent-UraniumShiv-desc = A crude weapon fashioned from a piece of cloth and a uranium glass shard. Violates the geneva convention!
+ent-UraniumShiv-name = урановая заточка
+ent-UraniumShiv-desc = Грубое оружие, сделанное из куска ткани и осколка уранового стекла. Нарушает Женевскую конвенцию!
 
-ent-ThrowingKnife-name = throwing knife
-ent-ThrowingKnife-desc = This blood-red knife is very aerodynamic and easy to throw, but good luck trying to fight someone hand-to-hand.
+ent-ThrowingKnife-name = метательный нож
+ent-ThrowingKnife-desc = Этот кроваво-красный нож очень аэродинамичен, и его легко бросать, но удачи вам в рукопашной схватке.
 
-ent-BaseKnife-name = item
+ent-BaseKnife-name = элемент
 

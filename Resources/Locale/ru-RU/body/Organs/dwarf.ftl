@@ -1,9 +1,9 @@
-ent-OrganDwarfHeart-name = dwarf heart
-ent-OrganDwarfHeart-desc = I feel bad for the heartless bastard who lost this.
+ent-OrganDwarfHeart-name = карликовое сердце
+ent-OrganDwarfHeart-desc = Мне жаль бессердечного ублюдка, который проиграл это.
 
-ent-OrganDwarfLiver-name = dwarf liver
-ent-OrganDwarfLiver-desc = Pairing suggestion: chianti and fava beans.
+ent-OrganDwarfLiver-name = карликовая печень
+ent-OrganDwarfLiver-desc = Рекомендуемое сочетание: кьянти и фасоль.
 
-ent-OrganDwarfStomach-name = dwarf stomach
-ent-OrganDwarfStomach-desc = Gross. This is hard to stomach.
+ent-OrganDwarfStomach-name = карликовый желудок
+ent-OrganDwarfStomach-desc = Валовой. Это тяжело переварить.
 

@@ -1,14 +1,14 @@
-ent-BaseCartridgeLightRifle-name = cartridge (.30 rifle)
+ent-BaseCartridgeLightRifle-name = патрон (винтовка .30)
 
-ent-CartridgeLightRifle-name = cartridge (.30 rifle)
-ent-CartridgeLightRifle-desc = A classic intermediate cartridge used by many combat rifles and LMGs. Standard kinetic ammunition is common and useful in most situations.
+ent-CartridgeLightRifle-name = патрон (винтовка .30)
+ent-CartridgeLightRifle-desc = Классический промежуточный патрон, используемый во многих боевых винтовках и ручных пулеметах. Стандартные кинетические боеприпасы распространены и полезны в большинстве ситуаций.
 
-ent-CartridgeLightRiflePractice-name = cartridge (.30 rifle practice)
-ent-CartridgeLightRiflePractice-desc = A classic intermediate cartridge used by many combat rifles and LMGs. Chalk ammunition is generally non-harmful, used for practice.
+ent-CartridgeLightRiflePractice-name = патрон (тренировочная винтовка .30)
+ent-CartridgeLightRiflePractice-desc = Классический промежуточный патрон, используемый во многих боевых винтовках и ручных пулеметах. Меловые боеприпасы в целом безвредны, используются для практики.
 
-ent-CartridgeLightRifleIncendiary-name = cartridge (.30 rifle incendiary)
-ent-CartridgeLightRifleIncendiary-desc = A classic intermediate cartridge used by many combat rifles and LMGs. Incendiary ammunition contains a self-igniting compound that sets the target ablaze.
+ent-CartridgeLightRifleIncendiary-name = патрон (винтовочный зажигательный .30)
+ent-CartridgeLightRifleIncendiary-desc = Классический промежуточный патрон, используемый во многих боевых винтовках и ручных пулеметах. Зажигательные боеприпасы содержат самовоспламеняющееся соединение, которое поджигает цель.
 
-ent-CartridgeLightRifleUranium-name = cartridge (.30 rifle uranium)
-ent-CartridgeLightRifleUranium-desc = A classic intermediate cartridge used by many combat rifles and LMGs. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating the target from the inside.
+ent-CartridgeLightRifleUranium-name = патрон (винтовочный уран .30)
+ent-CartridgeLightRifleUranium-desc = Классический промежуточный патрон, используемый во многих боевых винтовках и ручных пулеметах. Урановый боеприпас заменяет свинцовый сердечник пули делящимся материалом, облучая цель изнутри.
 

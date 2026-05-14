@@ -1,12 +1,12 @@
-ent-BodyBag-name = body bag
-ent-BodyBag-desc = A plastic bag designed for the storage and transportation of cadavers to stop body decomposition.
+ent-BodyBag-name = мешок для трупов
+ent-BodyBag-desc = Пластиковый пакет, предназначенный для хранения и транспортировки трупов, чтобы остановить разложение тела.
 
-ent-BodyBagFolded-name = body bag
-ent-BodyBagFolded-desc = A plastic bag designed for the storage and transportation of cadavers to stop body decomposition.
+ent-BodyBagFolded-name = мешок для трупов
+ent-BodyBagFolded-desc = Пластиковый пакет, предназначенный для хранения и транспортировки трупов, чтобы остановить разложение тела.
 
-ent-Ash-name = ash
-ent-Ash-desc = This used to be something, but now it's not.
+ent-Ash-name = ясень
+ent-Ash-desc = Раньше это было что-то, а сейчас нет.
 
-ent-Ectoplasm-name = ectoplasm
-ent-Ectoplasm-desc = Much less deadly in this form.
+ent-Ectoplasm-name = эктоплазма
+ent-Ectoplasm-desc = В этой форме он гораздо менее смертоносен.
 

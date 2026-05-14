@@ -1,3 +1,3 @@
-ent-Igniter-name = igniter
-ent-Igniter-desc = Creates a spark when activated by a signal.
+ent-Igniter-name = воспламенитель
+ent-Igniter-desc = Создает искру при активации сигналом.
 

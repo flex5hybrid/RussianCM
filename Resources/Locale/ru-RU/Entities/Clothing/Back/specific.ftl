@@ -1,12 +1,12 @@
-ent-ClothingBackpackChameleon-name = backpack
-ent-ClothingBackpackChameleon-desc = You wear this on your back and put items into it.
+ent-ClothingBackpackChameleon-name = рюкзак
+ent-ClothingBackpackChameleon-desc = Вы носите это на спине и кладете в него предметы.
 
-ent-ClothingBackpackWaterTank-name = backpack water tank
-ent-ClothingBackpackWaterTank-desc = Holds a large amount of fluids. Supplies to spray nozzles in your hands, and has a slot on the side for said spray nozzles.
+ent-ClothingBackpackWaterTank-name = резервуар для воды рюкзака
+ent-ClothingBackpackWaterTank-desc = Удерживает большое количество жидкости. Поставляется с распылительными форсунками в ваших руках и имеет прорезь сбоку для указанных распылительных форсунок.
 
-ent-ClothingBagPet-name = pet bag
-ent-ClothingBagPet-desc = A small bag designed for use by pets and small animals.
+ent-ClothingBagPet-name = сумка для домашних животных
+ent-ClothingBagPet-desc = Небольшая сумка, предназначенная для домашних и мелких животных.
 
 ent-ClothingBackpackHarmpack-name = H.A.R.M.P.A.C.K.
-ent-ClothingBackpackHarmpack-desc = Now you can reload, punch, and eat a snack - simultaneously.
+ent-ClothingBackpackHarmpack-desc = Теперь вы можете перезаряжаться, пробивать удары и перекусывать — одновременно.
 

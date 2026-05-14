@@ -1,33 +1,33 @@
-ent-EvidenceMarker-name = evidence marker
-ent-EvidenceMarker-desc = A numbered yellow marker, useful for labeling evidence on a crime scene.
+ent-EvidenceMarker-name = маркер доказательства
+ent-EvidenceMarker-desc = Желтый маркер с номером, который можно использовать для обозначения улик на месте преступления.
 
-ent-BoxEvidenceMarkers-name = evidence marker box
-ent-BoxEvidenceMarkers-desc = A pack of numbered yellow markers, useful for labeling evidence on a crime scene.
+ent-BoxEvidenceMarkers-name = коробка для маркера доказательств
+ent-BoxEvidenceMarkers-desc = Набор пронумерованных желтых маркеров, которые можно использовать для обозначения улик на месте преступления.
 
-ent-EvidenceMarkerOne-name = evidence marker
-ent-EvidenceMarkerOne-desc = A numbered yellow marker, useful for labeling evidence on a crime scene.
+ent-EvidenceMarkerOne-name = маркер доказательства
+ent-EvidenceMarkerOne-desc = Желтый маркер с номером, который можно использовать для обозначения улик на месте преступления.
 
-ent-EvidenceMarkerTwo-name = evidence marker
-ent-EvidenceMarkerTwo-desc = A numbered yellow marker, useful for labeling evidence on a crime scene.
+ent-EvidenceMarkerTwo-name = маркер доказательства
+ent-EvidenceMarkerTwo-desc = Желтый маркер с номером, который можно использовать для обозначения улик на месте преступления.
 
-ent-EvidenceMarkerThree-name = evidence marker
-ent-EvidenceMarkerThree-desc = A numbered yellow marker, useful for labeling evidence on a crime scene.
+ent-EvidenceMarkerThree-name = маркер доказательства
+ent-EvidenceMarkerThree-desc = Желтый маркер с номером, который можно использовать для обозначения улик на месте преступления.
 
-ent-EvidenceMarkerFour-name = evidence marker
-ent-EvidenceMarkerFour-desc = A numbered yellow marker, useful for labeling evidence on a crime scene.
+ent-EvidenceMarkerFour-name = маркер доказательства
+ent-EvidenceMarkerFour-desc = Желтый маркер с номером, который можно использовать для обозначения улик на месте преступления.
 
-ent-EvidenceMarkerFive-name = evidence marker
-ent-EvidenceMarkerFive-desc = A numbered yellow marker, useful for labeling evidence on a crime scene.
+ent-EvidenceMarkerFive-name = маркер доказательства
+ent-EvidenceMarkerFive-desc = Желтый маркер с номером, который можно использовать для обозначения улик на месте преступления.
 
-ent-EvidenceMarkerSix-name = evidence marker
-ent-EvidenceMarkerSix-desc = A numbered yellow marker, useful for labeling evidence on a crime scene.
+ent-EvidenceMarkerSix-name = маркер доказательства
+ent-EvidenceMarkerSix-desc = Желтый маркер с номером, который можно использовать для обозначения улик на месте преступления.
 
-ent-EvidenceMarkerSeven-name = evidence marker
-ent-EvidenceMarkerSeven-desc = A numbered yellow marker, useful for labeling evidence on a crime scene.
+ent-EvidenceMarkerSeven-name = маркер доказательства
+ent-EvidenceMarkerSeven-desc = Желтый маркер с номером, который можно использовать для обозначения улик на месте преступления.
 
-ent-EvidenceMarkerEight-name = evidence marker
-ent-EvidenceMarkerEight-desc = A numbered yellow marker, useful for labeling evidence on a crime scene.
+ent-EvidenceMarkerEight-name = маркер доказательства
+ent-EvidenceMarkerEight-desc = Желтый маркер с номером, который можно использовать для обозначения улик на месте преступления.
 
-ent-EvidenceMarkerNine-name = evidence marker
-ent-EvidenceMarkerNine-desc = A numbered yellow marker, useful for labeling evidence on a crime scene.
+ent-EvidenceMarkerNine-name = маркер доказательства
+ent-EvidenceMarkerNine-desc = Желтый маркер с номером, который можно использовать для обозначения улик на месте преступления.
 

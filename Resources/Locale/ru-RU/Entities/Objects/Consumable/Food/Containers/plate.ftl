@@ -1,24 +1,24 @@
-ent-FoodPlate-name = large plate
-ent-FoodPlate-desc = A large plate, excellent for bread.
+ent-FoodPlate-name = большая тарелка
+ent-FoodPlate-desc = Большая тарелка, отлично подходит для хлеба.
 
-ent-FoodPlateTrash-name = broken plate
-ent-FoodPlateTrash-desc = A broken plate. Useless.
+ent-FoodPlateTrash-name = сломанная тарелка
+ent-FoodPlateTrash-desc = Сломанная тарелка. Бесполезный.
 
-ent-FoodPlateSmall-name = small plate
-ent-FoodPlateSmall-desc = A small plate. Delicate.
+ent-FoodPlateSmall-name = маленькая тарелка
+ent-FoodPlateSmall-desc = Маленькая тарелка. Нежный.
 
-ent-FoodPlatePlastic-name = plastic plate
-ent-FoodPlatePlastic-desc = A large blue plastic plate, excellent for a birthday cake.
+ent-FoodPlatePlastic-name = пластиковая тарелка
+ent-FoodPlatePlastic-desc = Большая синяя пластиковая тарелка, отлично подходящая для праздничного торта.
 
-ent-FoodPlateSmallPlastic-name = plastic plate
-ent-FoodPlateSmallPlastic-desc = A blue plastic plate, excellent for slices of birthday cake.
+ent-FoodPlateSmallPlastic-name = пластиковая тарелка
+ent-FoodPlateSmallPlastic-desc = Синяя пластиковая тарелка, отлично подходящая для кусочков праздничного торта.
 
-ent-FoodPlateTin-name = pie tin
-ent-FoodPlateTin-desc = A cheap foil tin for pies.
+ent-FoodPlateTin-name = форма для пирога
+ent-FoodPlateTin-desc = Дешевая форма из фольги для пирогов.
 
-ent-FoodPlateMuffinTin-name = muffin tin
-ent-FoodPlateMuffinTin-desc = A cheap foil tin for muffins.
+ent-FoodPlateMuffinTin-name = форма для кексов
+ent-FoodPlateMuffinTin-desc = Дешевая форма для кексов из фольги.
 
-ent-FoodPlateSmallTrash-name = broken plate
-ent-FoodPlateSmallTrash-desc = A broken plate. Useless.
+ent-FoodPlateSmallTrash-name = сломанная тарелка
+ent-FoodPlateSmallTrash-desc = Сломанная тарелка. Бесполезный.
 

@@ -1,14 +1,14 @@
-ent-PackPaperRolling-name = pack of rolling paper
-ent-PackPaperRolling-desc = A pack of thin pieces of paper used to make fine smokeables.
+ent-PackPaperRolling-name = пачка рулонной бумаги
+ent-PackPaperRolling-desc = Пачка тонких листов бумаги, из которых делают хорошие курительные трубки.
 
-ent-PackPaperRollingFilters-name = pack of rolling paper with filters
-ent-PackPaperRollingFilters-desc = A pack of filters and thin pieces of paper used to make fine smokeables.
+ent-PackPaperRollingFilters-name = упаковка рулонной бумаги с фильтрами
+ent-PackPaperRollingFilters-desc = Пакет фильтров и тонкие кусочки бумаги, используемые для изготовления качественных курительных сигарет.
 
-ent-PaperRolling-name = rolling paper
-ent-PaperRolling-desc = A thin piece of paper used to make fine smokeables.
+ent-PaperRolling-name = рулонная бумага
+ent-PaperRolling-desc = Тонкий лист бумаги, используемый для изготовления хороших курительных сигарет.
 
-ent-CigaretteFilter-name = cigarette filter
-ent-CigaretteFilter-desc = A strip of firm paper used as a filter for handmade cigarettes.
+ent-CigaretteFilter-name = сигаретный фильтр
+ent-CigaretteFilter-desc = Полоска твердой бумаги, используемая в качестве фильтра для сигарет ручной работы.
 
 ent-PaperRolling1-name = stack-rolling-paper
 

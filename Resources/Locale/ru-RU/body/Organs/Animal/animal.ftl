@@ -1,16 +1,16 @@
-ent-OrganAnimalLungs-name = lungs
+ent-OrganAnimalLungs-name = легкие
 
-ent-OrganAnimalStomach-name = stomach
+ent-OrganAnimalStomach-name = желудок
 
-ent-OrganMouseStomach-name = stomach
+ent-OrganMouseStomach-name = желудок
 
-ent-OrganAnimalLiver-name = liver
+ent-OrganAnimalLiver-name = печень
 
-ent-OrganAnimalHeart-name = heart
+ent-OrganAnimalHeart-name = сердце
 
-ent-OrganAnimalKidneys-name = kidneys
+ent-OrganAnimalKidneys-name = почки
 
-ent-BaseAnimalOrganUnGibbable-name = item
+ent-BaseAnimalOrganUnGibbable-name = элемент
 
-ent-BaseAnimalOrgan-name = item
+ent-BaseAnimalOrgan-name = элемент
 

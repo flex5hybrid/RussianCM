@@ -1,6 +1,6 @@
-ent-SpawnVendingMachineRestockFoodDrink-name = Vending Machine Restock
+ent-SpawnVendingMachineRestockFoodDrink-name = Пополнение торгового автомата
 
-ent-SpawnVendingMachineRestockFood-name = Vending Machine Restock
+ent-SpawnVendingMachineRestockFood-name = Пополнение торгового автомата
 
-ent-SpawnVendingMachineRestockDrink-name = Vending Machine Restock
+ent-SpawnVendingMachineRestockDrink-name = Пополнение торгового автомата
 

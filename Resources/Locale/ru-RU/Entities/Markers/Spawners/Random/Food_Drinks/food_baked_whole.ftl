@@ -1,2 +1,2 @@
-ent-RandomFoodBakedWhole-name = random baked food spawner
+ent-RandomFoodBakedWhole-name = генератор случайной выпечки
 

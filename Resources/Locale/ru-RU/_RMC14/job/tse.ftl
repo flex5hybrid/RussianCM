@@ -7,3 +7,11 @@ rmc-job-prefix-tsepa-senior-constable = СТ.КСТ TSEPA
 rmc-job-name-tsepa-inspector = Инспектор TSEPA
 rmc-job-description-tsepa-inspector = Контролирует работу по соблюдению законов TSE.
 rmc-job-prefix-tsepa-inspector = ИНСП TSEPA
+
+# Missing entries synced from en-US
+
+rmc-job-name-tsepa-synth = Поддержка TSEPA Синтетика
+
+rmc-job-description-tsepa-synth = Поддерживать и помогать персоналу TSEPA.
+
+rmc-job-prefix-tsepa-synth = СИН

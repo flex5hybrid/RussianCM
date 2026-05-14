@@ -1,2 +1,2 @@
-ent-BaseMobGingerbread-name = Urist McCookie
+ent-BaseMobGingerbread-name = Урист МакКуки
 

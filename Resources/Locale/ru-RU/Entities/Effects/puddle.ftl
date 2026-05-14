@@ -1,38 +1,38 @@
-ent-PuddleSparkle-name = sparkle
+ent-PuddleSparkle-name = сверкать
 
-ent-Puddle-name = puddle
-ent-Puddle-desc = A puddle of liquid.
+ent-Puddle-name = лужа
+ent-Puddle-desc = Лужа жидкости.
 
-ent-PuddleTemporary-name = puddle
-ent-PuddleTemporary-desc = A puddle of liquid.
+ent-PuddleTemporary-name = лужа
+ent-PuddleTemporary-desc = Лужа жидкости.
 
-ent-PuddleSmear-name = puddle
-ent-PuddleSmear-desc = A puddle of liquid.
+ent-PuddleSmear-name = лужа
+ent-PuddleSmear-desc = Лужа жидкости.
 
-ent-PuddleVomit-name = puddle
-ent-PuddleVomit-desc = A puddle of liquid.
+ent-PuddleVomit-name = лужа
+ent-PuddleVomit-desc = Лужа жидкости.
 
-ent-PuddleEgg-name = puddle
-ent-PuddleEgg-desc = A puddle of liquid.
+ent-PuddleEgg-name = лужа
+ent-PuddleEgg-desc = Лужа жидкости.
 
-ent-PuddleTomato-name = puddle
-ent-PuddleTomato-desc = A puddle of liquid.
+ent-PuddleTomato-name = лужа
+ent-PuddleTomato-desc = Лужа жидкости.
 
-ent-PuddleBloodSmall-name = puddle
-ent-PuddleBloodSmall-desc = A puddle of liquid.
+ent-PuddleBloodSmall-name = лужа
+ent-PuddleBloodSmall-desc = Лужа жидкости.
 
-ent-PuddleBlood-name = puddle
-ent-PuddleBlood-desc = A puddle of liquid.
+ent-PuddleBlood-name = лужа
+ent-PuddleBlood-desc = Лужа жидкости.
 
-ent-PuddleFluorosulfuricAcidSmall-name = puddle
-ent-PuddleFluorosulfuricAcidSmall-desc = A puddle of liquid.
+ent-PuddleFluorosulfuricAcidSmall-name = лужа
+ent-PuddleFluorosulfuricAcidSmall-desc = Лужа жидкости.
 
-ent-PuddleFluorosulfuricAcid-name = puddle
-ent-PuddleFluorosulfuricAcid-desc = A puddle of liquid.
+ent-PuddleFluorosulfuricAcid-name = лужа
+ent-PuddleFluorosulfuricAcid-desc = Лужа жидкости.
 
-ent-PuddleWatermelon-name = puddle
-ent-PuddleWatermelon-desc = A puddle of liquid.
+ent-PuddleWatermelon-name = лужа
+ent-PuddleWatermelon-desc = Лужа жидкости.
 
-ent-PuddleFlour-name = puddle
-ent-PuddleFlour-desc = A puddle of liquid.
+ent-PuddleFlour-name = лужа
+ent-PuddleFlour-desc = Лужа жидкости.
 

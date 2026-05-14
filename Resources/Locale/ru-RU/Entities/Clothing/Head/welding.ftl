@@ -1,14 +1,14 @@
-ent-WeldingMaskBase-name = welding mask
+ent-WeldingMaskBase-name = сварочная маска
 
-ent-ClothingHeadHatWelding-name = welding mask
-ent-ClothingHeadHatWelding-desc = A head-mounted face cover designed to protect the wearer completely from space-arc eye.
+ent-ClothingHeadHatWelding-name = сварочная маска
+ent-ClothingHeadHatWelding-desc = Крепящаяся на голову маска для лица, предназначенная для полной защиты владельца от глаз космической дуги.
 
-ent-ClothingHeadHatWeldingMaskFlame-name = flame welding mask
-ent-ClothingHeadHatWeldingMaskFlame-desc = A painted welding helmet, this one has flames on it.
+ent-ClothingHeadHatWeldingMaskFlame-name = маска для сварки пламенем
+ent-ClothingHeadHatWeldingMaskFlame-desc = Раскрашенный сварочный шлем, на нем пламя.
 
-ent-ClothingHeadHatWeldingMaskFlameBlue-name = blue-flame welding mask
-ent-ClothingHeadHatWeldingMaskFlameBlue-desc = A painted welding helmet, this one has blue flames on it.
+ent-ClothingHeadHatWeldingMaskFlameBlue-name = сварочная маска синего пламени
+ent-ClothingHeadHatWeldingMaskFlameBlue-desc = Раскрашенный сварочный шлем с голубым пламенем.
 
-ent-ClothingHeadHatWeldingMaskPainted-name = painted welding mask
-ent-ClothingHeadHatWeldingMaskPainted-desc = A welding helmet, painted in crimson.
+ent-ClothingHeadHatWeldingMaskPainted-name = окрашенная сварочная маска
+ent-ClothingHeadHatWeldingMaskPainted-desc = Сварочный шлем, окрашенный в малиновый цвет.
 

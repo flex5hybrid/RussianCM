@@ -1,18 +1,18 @@
-ent-Bed-name = bed
-ent-Bed-desc = This is used to lie in, sleep in or strap on. Resting here provides extremely slow healing.
+ent-Bed-name = кровать
+ent-Bed-desc = Его используют, чтобы лежать, спать или пристегивать. Отдых здесь обеспечивает чрезвычайно медленное исцеление.
 
-ent-MedicalBed-name = medical bed
-ent-MedicalBed-desc = A hospital bed for patients to recover in. Resting here provides fairly slow healing.
+ent-MedicalBed-name = медицинская кровать
+ent-MedicalBed-desc = Больничная койка для восстановления пациентов. Отдых здесь обеспечивает довольно медленное выздоровление.
 
-ent-DogBed-name = dog bed
-ent-DogBed-desc = A comfy-looking dog bed. You can even strap your pet in, in case the gravity turns off.
+ent-DogBed-name = кровать для собаки
+ent-DogBed-desc = Удобная лежанка для собаки. Вы даже можете пристегнуть своего питомца на случай, если гравитация отключится.
 
-ent-Mattress-name = mattress
-ent-Mattress-desc = Better sleep in that then on the floor i guess.
+ent-Mattress-name = матрас
+ent-Mattress-desc = Думаю, лучше спать в нем, чем на полу.
 
-ent-WebBed-name = web bed
-ent-WebBed-desc = You got webbed.
+ent-WebBed-name = веб-кровать
+ent-WebBed-desc = Ты попал в паутину.
 
-ent-PsychBed-name = psychologist bed
-ent-PsychBed-desc = An upholstered bed for the psychological care of patients.
+ent-PsychBed-name = кровать психолога
+ent-PsychBed-desc = Кровать с мягкой обивкой для психологической помощи пациентам.
 

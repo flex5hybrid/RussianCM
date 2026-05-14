@@ -15,3 +15,7 @@ ui-options-function-cm-holster-secondary = Достать второстепен
 ui-options-function-cm-holster-tertiary = Достать третичное
 ui-options-function-cm-holster-quaternary = Достать четвертичное
 ui-options-function-cm-xeno-wide-swing = Атака ксеноморфа (размашистая)
+
+# Missing entries synced from en-US
+
+ui-options-function-rmc-xeno-rest = Ксенонид Отдых

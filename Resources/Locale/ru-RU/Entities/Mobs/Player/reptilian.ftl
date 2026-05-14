@@ -1,2 +1,2 @@
-ent-MobReptilian-name = Urist McScales
+ent-MobReptilian-name = Урист МакСкейлс
 

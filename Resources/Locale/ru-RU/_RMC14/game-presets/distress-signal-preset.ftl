@@ -18,3 +18,17 @@ cm-distress-signal-medals = Награжденные медалями:
 cm-distress-signal-jellies = Награды "Королевское желе":
 rmc-distress-signal-got-medal = {$receiver} награжден {$award}: "{$awardDescription}"
 rmc-distress-signal-got-jelly = {$receiver} получает {$award}: "{$awardDescription}" от {$giver}
+
+# Missing entries synced from en-US
+
+rmc-distress-signal-alldied-timeout = [color=yellow]Захваченное судно потерпело крушение, и после этого ни одна из сторон не могла претендовать на победу. Обломки бесшумно дрейфуют, все руки потеряны.[/color]
+
+cm-distress-signal-marine = {$player}
+
+rmc-distress-signal-next-map-header = Результаты голосования на карте
+
+rmc-distress-signal-next-map-votes = {$map}: голоса {$votes}
+
+rmc-distress-signal-next-map-votes-new = {$map}: голоса {$votes} (новый {$newVotes})
+
+rmc-distress-signal-next-map-tiebreaker = Голосование разделилось между:

@@ -1,72 +1,72 @@
-ent-CrateNPCBee-name = crate of bees
-ent-CrateNPCBee-desc = A crate containing a swarm of eight bees.
+ent-CrateNPCBee-name = ящик с пчелами
+ent-CrateNPCBee-desc = Ящик с ройом из восьми пчел.
 
-ent-CrateNPCButterflies-name = crate of butterflies
-ent-CrateNPCButterflies-desc = A crate containing five butterflies.
+ent-CrateNPCButterflies-name = ящик с бабочками
+ent-CrateNPCButterflies-desc = Ящик с пятью бабочками.
 
-ent-CrateNPCCat-name = cat crate
-ent-CrateNPCCat-desc = A crate containing a single cat.
+ent-CrateNPCCat-name = кошачий ящик
+ent-CrateNPCCat-desc = Ящик, в котором находится одинокий кот.
 
-ent-CrateNPCChicken-name = chicken crate
-ent-CrateNPCChicken-desc = A crate containing four fully grown chickens.
+ent-CrateNPCChicken-name = куриный ящик
+ent-CrateNPCChicken-desc = Ящик с четырьмя взрослыми цыплятами.
 
-ent-CrateNPCCrab-name = crab crate
-ent-CrateNPCCrab-desc = A crate containing three huge crabs.
+ent-CrateNPCCrab-name = ящик для крабов
+ent-CrateNPCCrab-desc = Ящик с тремя огромными крабами.
 
-ent-CrateNPCDuck-name = duck crate
-ent-CrateNPCDuck-desc = A crate containing six fully grown ducks.
+ent-CrateNPCDuck-name = ящик для уток
+ent-CrateNPCDuck-desc = Ящик с шестью взрослыми утками.
 
-ent-CrateNPCCorgi-name = corgi crate
-ent-CrateNPCCorgi-desc = A crate containing a single corgi.
+ent-CrateNPCCorgi-name = ящик для корги
+ent-CrateNPCCorgi-desc = Ящик с одним корги.
 
-ent-CrateNPCPuppyCorgi-name = puppy corgi crate
-ent-CrateNPCPuppyCorgi-desc = A crate containing a single puppy corgi. Awww.
+ent-CrateNPCPuppyCorgi-name = клетка для щенка корги
+ent-CrateNPCPuppyCorgi-desc = Ящик с единственным щенком корги. Оууу.
 
-ent-CrateNPCCow-name = cow crate
-ent-CrateNPCCow-desc = A crate containing a single cow.
+ent-CrateNPCCow-name = коровий ящик
+ent-CrateNPCCow-desc = Ящик с единственной коровой.
 
-ent-CrateNPCGoat-name = goat crate
-ent-CrateNPCGoat-desc = A crate containing a single goat.
+ent-CrateNPCGoat-name = клетка для коз
+ent-CrateNPCGoat-desc = Ящик с единственной козой.
 
-ent-CrateNPCGoose-name = goose crate
-ent-CrateNPCGoose-desc = A crate containing two geese.
+ent-CrateNPCGoose-name = ящик для гусей
+ent-CrateNPCGoose-desc = Ящик с двумя гусями.
 
-ent-CrateNPCGorilla-name = gorilla crate
-ent-CrateNPCGorilla-desc = A crate containing a single gorilla.
+ent-CrateNPCGorilla-name = ящик гориллы
+ent-CrateNPCGorilla-desc = Ящик с единственной гориллой.
 
-ent-CrateNPCMonkeyCube-name = monkey cube crate
-ent-CrateNPCMonkeyCube-desc = A crate containing single box of monkey cubes.
+ent-CrateNPCMonkeyCube-name = ящик для кубиков обезьян
+ent-CrateNPCMonkeyCube-desc = Ящик, содержащий одну коробку кубиков обезьян.
 
-ent-CrateNPCKoboldCube-name = kobold cube crate
-ent-CrateNPCKoboldCube-desc = A crate containing single box of kobold cubes.
+ent-CrateNPCKoboldCube-name = ящик для куба кобольда
+ent-CrateNPCKoboldCube-desc = Ящик, содержащий одну коробку кубиков кобольдов.
 
-ent-CrateNPCMouse-name = mice crate
-ent-CrateNPCMouse-desc = A crate containing five mice.
+ent-CrateNPCMouse-name = клетка для мышей
+ent-CrateNPCMouse-desc = Ящик с пятью мышами.
 
-ent-CrateNPCParrot-name = parrot crate
-ent-CrateNPCParrot-desc = A crate containing three parrots.
+ent-CrateNPCParrot-name = клетка для попугая
+ent-CrateNPCParrot-desc = Ящик с тремя попугаями.
 
-ent-CrateNPCPenguin-name = penguin crate
-ent-CrateNPCPenguin-desc = A crate containing two penguins.
+ent-CrateNPCPenguin-name = ящик для пингвинов
+ent-CrateNPCPenguin-desc = Ящик с двумя пингвинами.
 
-ent-CrateNPCPig-name = pig crate
-ent-CrateNPCPig-desc = A crate containing a single pig.
+ent-CrateNPCPig-name = ящик для свиней
+ent-CrateNPCPig-desc = Ящик, в котором находится одна свинья.
 
-ent-CrateNPCSnake-name = snake crate
-ent-CrateNPCSnake-desc = A crate containing three snakes.
+ent-CrateNPCSnake-name = змеиный ящик
+ent-CrateNPCSnake-desc = Ящик с тремя змеями.
 
-ent-CrateNPCLizard-name = lizard crate
-ent-CrateNPCLizard-desc = A crate containing a lizard.
+ent-CrateNPCLizard-name = ящик для ящерицы
+ent-CrateNPCLizard-desc = Ящик с ящерицей.
 
-ent-CrateNPCKangaroo-name = kangaroo crate
-ent-CrateNPCKangaroo-desc = A crate containing a kangaroo.
+ent-CrateNPCKangaroo-name = ящик кенгуру
+ent-CrateNPCKangaroo-desc = Ящик с кенгуру.
 
-ent-CrateNPCMothroach-name = crate of mothroaches
-ent-CrateNPCMothroach-desc = A crate containing four mothroaches.
+ent-CrateNPCMothroach-name = ящик с молью
+ent-CrateNPCMothroach-desc = Ящик с четырьмя молями.
 
-ent-CrateNPCHamster-name = hamster cage
-ent-CrateNPCHamster-desc = A large container for items.
+ent-CrateNPCHamster-name = клетка для хомяка
+ent-CrateNPCHamster-desc = Большой контейнер для вещей.
 
-ent-CrateNPCHamlet-name = hamster cage
-ent-CrateNPCHamlet-desc = A large container for items.
+ent-CrateNPCHamlet-name = клетка для хомяка
+ent-CrateNPCHamlet-desc = Большой контейнер для вещей.
 

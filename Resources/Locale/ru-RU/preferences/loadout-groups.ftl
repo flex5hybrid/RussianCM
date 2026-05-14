@@ -207,3 +207,15 @@ loadout-group-reporter-head = Репортёр, голова
 loadout-group-reporter-outerclothing = Репортёр, верхняя одежда
 
 loadout-group-psychologist-jumpsuit = Психолог, комбинезон
+
+# Missing entries synced from en-US
+
+loadout-group-medical-gloves = Медицинские перчатки
+
+loadout-group-medical-glasses = Медицинские очки
+
+# Wildcards
+
+loadout-group-boxer-jumpsuit = Боксёрский комбинезон
+
+loadout-group-boxer-gloves = Боксерские перчатки

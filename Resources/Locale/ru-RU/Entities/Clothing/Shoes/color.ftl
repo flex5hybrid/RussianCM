@@ -1,27 +1,27 @@
-ent-ClothingShoesColorBlack-name = black shoes
-ent-ClothingShoesColorBlack-desc = Stylish black shoes.
+ent-ClothingShoesColorBlack-name = черные туфли
+ent-ClothingShoesColorBlack-desc = Стильные черные туфли.
 
-ent-ClothingShoesColorWhite-name = white shoes
-ent-ClothingShoesColorWhite-desc = Don't take them off at your office Christmas party.
+ent-ClothingShoesColorWhite-name = белые туфли
+ent-ClothingShoesColorWhite-desc = Не снимайте их на рождественской вечеринке в офисе.
 
-ent-ClothingShoesColorBlue-name = blue shoes
-ent-ClothingShoesColorBlue-desc = Stylish blue shoes.
+ent-ClothingShoesColorBlue-name = синие туфли
+ent-ClothingShoesColorBlue-desc = Стильные синие туфли.
 
-ent-ClothingShoesColorBrown-name = brown shoes
-ent-ClothingShoesColorBrown-desc = A pair of brown shoes.
+ent-ClothingShoesColorBrown-name = коричневые туфли
+ent-ClothingShoesColorBrown-desc = Пара коричневых туфель.
 
-ent-ClothingShoesColorGreen-name = green shoes
-ent-ClothingShoesColorGreen-desc = Stylish green shoes.
+ent-ClothingShoesColorGreen-name = зеленые туфли
+ent-ClothingShoesColorGreen-desc = Стильные зеленые туфли.
 
-ent-ClothingShoesColorOrange-name = orange shoes
-ent-ClothingShoesColorOrange-desc = Stylish orange shoes.
+ent-ClothingShoesColorOrange-name = оранжевые туфли
+ent-ClothingShoesColorOrange-desc = Стильные оранжевые туфли.
 
-ent-ClothingShoesColorRed-name = red shoes
-ent-ClothingShoesColorRed-desc = Stylish red shoes.
+ent-ClothingShoesColorRed-name = красные туфли
+ent-ClothingShoesColorRed-desc = Стильные красные туфли.
 
-ent-ClothingShoesColorYellow-name = yellow shoes
-ent-ClothingShoesColorYellow-desc = Stylish yellow shoes.
+ent-ClothingShoesColorYellow-name = желтые туфли
+ent-ClothingShoesColorYellow-desc = Стильные желтые туфли.
 
-ent-ClothingShoesColorPurple-name = purple shoes
-ent-ClothingShoesColorPurple-desc = Stylish purple shoes.
+ent-ClothingShoesColorPurple-name = фиолетовые туфли
+ent-ClothingShoesColorPurple-desc = Стильные фиолетовые туфли.
 

@@ -1,20 +1,20 @@
-ent-BaseSpellbook-name = spellbook
+ent-BaseSpellbook-name = книга заклинаний
 
-ent-WizardsGrimoire-name = wizards grimoire
+ent-WizardsGrimoire-name = гримуар волшебника
 
-ent-WizardsGrimoireNoRefund-name = wizards grimoire
+ent-WizardsGrimoireNoRefund-name = гримуар волшебника
 
-ent-SpawnSpellbook-name = spawn spellbook
+ent-SpawnSpellbook-name = вызвать книгу заклинаний
 
-ent-ForceWallSpellbook-name = force wall spellbook
+ent-ForceWallSpellbook-name = книга заклинаний силовой стены
 
-ent-BlinkBook-name = blink spellbook
+ent-BlinkBook-name = мигающая книга заклинаний
 
-ent-SmiteBook-name = smite spellbook
+ent-SmiteBook-name = поразить книгу заклинаний
 
-ent-KnockSpellbook-name = knock spellbook
+ent-KnockSpellbook-name = стук в книгу заклинаний
 
-ent-FireballSpellbook-name = fireball spellbook
+ent-FireballSpellbook-name = книга заклинаний огненного шара
 
-ent-ScrollRunes-name = scroll of runes
+ent-ScrollRunes-name = свиток с рунами
 

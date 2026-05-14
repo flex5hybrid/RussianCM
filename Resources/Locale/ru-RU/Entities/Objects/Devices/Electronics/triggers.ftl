@@ -1,9 +1,9 @@
-ent-TimerTrigger-name = timer trigger
-ent-TimerTrigger-desc = A configurable timer.
+ent-TimerTrigger-name = триггер таймера
+ent-TimerTrigger-desc = Настраиваемый таймер.
 
-ent-SignalTrigger-name = signal trigger
-ent-SignalTrigger-desc = Adds a machine link that is triggered by signals.
+ent-SignalTrigger-name = триггер сигнала
+ent-SignalTrigger-desc = Добавляет ссылку на машину, которая активируется сигналами.
 
-ent-VoiceTrigger-name = voice trigger
-ent-VoiceTrigger-desc = Adds a machine link that is triggered by vocal keywords.
+ent-VoiceTrigger-name = голосовой триггер
+ent-VoiceTrigger-desc = Добавляет ссылку на компьютер, которая активируется голосовыми ключевыми словами.
 

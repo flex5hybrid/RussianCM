@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianAmbassadorUPP-name = Spawn Point Civilian UPP Ambassador
-ent-AU14SpawnPointCivilianAmbassadorUPP-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianAmbassadorUPP-name = Гражданский посол UPP в Spawn Point
+ent-AU14SpawnPointCivilianAmbassadorUPP-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

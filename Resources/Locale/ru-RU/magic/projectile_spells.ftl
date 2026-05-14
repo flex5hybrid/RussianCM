@@ -1,9 +1,9 @@
-ent-ActionFireball-name = Fireball
-ent-ActionFireball-desc = Fires an explosive fireball towards the clicked location.
+ent-ActionFireball-name = Огненный шар
+ent-ActionFireball-desc = Выпускает взрывной огненный шар в выбранное место.
 
-ent-ActionFireballII-name = Fireball II
-ent-ActionFireballII-desc = Fires a fireball, but faster!
+ent-ActionFireballII-name = Огненный шар II
+ent-ActionFireballII-desc = Стреляет огненным шаром, но быстрее!
 
-ent-ActionFireballIII-name = Fireball III
-ent-ActionFireballIII-desc = The fastest fireball in the west!
+ent-ActionFireballIII-name = Огненный шар III
+ent-ActionFireballIII-desc = Самый быстрый огненный шар на западе!
 

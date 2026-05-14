@@ -10,19 +10,19 @@ feedbackpopup-control-no-entries= Нет записей
 feedbackpopup-control-ui-footer = Поделитесь своим мнением!
 
 # Command strings
-command-description-openfeedbackpopup = Opens the feedback popup window.
-command-description-feedback-show = Opens the feedback popup window for the given sessions.
-command-description-feedback-add = Adds a feedback popup prototype to the given clients and opens the popup window if the client didn't already have the prototype listed.
-command-description-feedback-remove = Removes a feedback popup prototype from the given clients.
+command-description-openfeedbackpopup = Открывает всплывающее окно обратной связи.
+command-description-feedback-show = Открывает всплывающее окно обратной связи для данных сеансов.
+command-description-feedback-add = Добавляет прототип всплывающего окна обратной связи указанным клиентам и открывает всплывающее окно, если у клиента еще нет прототипа в списке.
+command-description-feedback-remove = Удаляет прототип всплывающего окна обратной связи у указанных клиентов.
 
-feedbackpopup-give-command-name = givefeedbackpopup
-feedbackpopup-show-command-name = showfeedbackpopup
-cmd-givefeedbackpopup-desc = Gives the targeted player a feedback popup.
-cmd-givefeedbackpopup-help = Usage: givefeedbackpopup <playerUid> <prototypeId>
-cmd-showfeedbackpopup-desc = Open the feedback popup window.
-cmd-showfeedbackpopup-help = Usage: showfeedbackpopup
-feedbackpopup-command-error-invalid-proto = Invalid feedback popup prototype.
-feedbackpopup-command-error-popup-send-fail = Failed to send popup! There probably isn't a mind attached to the given entity.
-feedbackpopup-command-success = Sent popup!
+feedbackpopup-give-command-name = дать обратную связьвсплывающее окно
+feedbackpopup-show-command-name = показатьвсплывающее окно обратной связи
+cmd-givefeedbackpopup-desc = Дает целевому игроку всплывающее окно обратной связи.
+cmd-givefeedbackpopup-help = Использование: Givefeedbackpopup <playerUid> <prototypeId>
+cmd-showfeedbackpopup-desc = Откройте всплывающее окно обратной связи.
+cmd-showfeedbackpopup-help = Использование: showfeedbackpopup
+feedbackpopup-command-error-invalid-proto = Неверный прототип всплывающего окна обратной связи.
+feedbackpopup-command-error-popup-send-fail = Не удалось отправить всплывающее окно! Вероятно, к данной сущности не прикреплен разум.
+feedbackpopup-command-success = Отправлено всплывающее окно!
 feedbackpopup-command-hint-playerUid = <playerUid>
 feedbackpopup-command-hint-protoId = <prototypeId>

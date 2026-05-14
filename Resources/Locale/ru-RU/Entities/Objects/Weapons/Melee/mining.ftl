@@ -1,21 +1,21 @@
-ent-Pickaxe-name = pickaxe
-ent-Pickaxe-desc = Notched to perfection, for jamming it into rocks.
+ent-Pickaxe-name = кирка
+ent-Pickaxe-desc = Зазубрен до совершенства, чтобы втыкать его в камни.
 
-ent-MiningDrill-name = mining drill
-ent-MiningDrill-desc = Powerful tool used to quickly drill through rocks.
+ent-MiningDrill-name = горный бур
+ent-MiningDrill-desc = Мощный инструмент, используемый для быстрого сверления камней.
 
-ent-MiningDrillDiamond-name = diamond tipped mining drill
-ent-MiningDrillDiamond-desc = A significantly more efficient mining drill tipped with diamond.
+ent-MiningDrillDiamond-name = горный бур с алмазным наконечником
+ent-MiningDrillDiamond-desc = Значительно более эффективное буровое сверло с алмазным наконечником.
 
-ent-BaseWeaponCrusher-name = crusher
-ent-BaseWeaponCrusher-desc = An early design of the proto-kinetic accelerator.
+ent-BaseWeaponCrusher-name = дробилка
+ent-BaseWeaponCrusher-desc = Ранняя конструкция протокинетического ускорителя.
 
-ent-WeaponCrusherDagger-name = crusher dagger
-ent-WeaponCrusherDagger-desc = A scaled down version of a proto-kinetic crusher. Uses kinetic energy to vibrate the blade at high speeds.
+ent-WeaponCrusherDagger-name = дробилка кинжал
+ent-WeaponCrusherDagger-desc = Уменьшенная версия протокинетической дробилки. Использует кинетическую энергию для вибрации лезвия на высоких скоростях.
 
-ent-WeaponCrusherGlaive-name = crusher glaive
-ent-WeaponCrusherGlaive-desc = An early design of the proto-kinetic accelerator, in glaive form. Provides better healing in exchange for less charged damage.
+ent-WeaponCrusherGlaive-name = дробилка глефа
+ent-WeaponCrusherGlaive-desc = Ранняя конструкция протокинетического ускорителя в форме глефы. Обеспечивает лучшее лечение в обмен на меньший заряженный урон.
 
-ent-WeaponCrusher-name = crusher
-ent-WeaponCrusher-desc = An early design of the proto-kinetic accelerator.
+ent-WeaponCrusher-name = дробилка
+ent-WeaponCrusher-desc = Ранняя конструкция протокинетического ускорителя.
 

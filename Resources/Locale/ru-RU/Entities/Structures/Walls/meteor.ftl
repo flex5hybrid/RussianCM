@@ -1,30 +1,30 @@
-ent-MeteorRock-name = meteorite rock
-ent-MeteorRock-desc = What remains of a meteorite.
+ent-MeteorRock-name = метеоритная скала
+ent-MeteorRock-desc = То, что осталось от метеорита.
 
-ent-MeteorRockCoal-name = meteorite rock
-ent-MeteorRockCoal-desc = An ore vein rich with coal.
+ent-MeteorRockCoal-name = метеоритная скала
+ent-MeteorRockCoal-desc = Рудная жила, богатая углем.
 
-ent-MeteorRockGold-name = meteorite rock
-ent-MeteorRockGold-desc = An ore vein rich with gold.
+ent-MeteorRockGold-name = метеоритная скала
+ent-MeteorRockGold-desc = Рудная жила, богатая золотом.
 
-ent-MeteorRockDiamond-name = meteorite rock
-ent-MeteorRockDiamond-desc = An ore vein rich with diamonds.
+ent-MeteorRockDiamond-name = метеоритная скала
+ent-MeteorRockDiamond-desc = Рудная жила, богатая алмазами.
 
-ent-MeteorRockPlasma-name = meteorite rock
-ent-MeteorRockPlasma-desc = An ore vein rich with plasma.
+ent-MeteorRockPlasma-name = метеоритная скала
+ent-MeteorRockPlasma-desc = Рудная жила, богатая плазмой.
 
-ent-MeteorRockQuartz-name = meteorite rock
-ent-MeteorRockQuartz-desc = An ore vein rich with quartz.
+ent-MeteorRockQuartz-name = метеоритная скала
+ent-MeteorRockQuartz-desc = Рудная жила, богатая кварцем.
 
-ent-MeteorRockSilver-name = meteorite rock
-ent-MeteorRockSilver-desc = An ore vein rich with silver.
+ent-MeteorRockSilver-name = метеоритная скала
+ent-MeteorRockSilver-desc = Рудная жила, богатая серебром.
 
-ent-MeteorRockTin-name = meteorite rock
-ent-MeteorRockTin-desc = An ore vein rich with iron.
+ent-MeteorRockTin-name = метеоритная скала
+ent-MeteorRockTin-desc = Рудная жила, богатая железом.
 
-ent-MeteorRockUranium-name = meteorite rock
-ent-MeteorRockUranium-desc = An ore vein rich with uranium.
+ent-MeteorRockUranium-name = метеоритная скала
+ent-MeteorRockUranium-desc = Рудная жила, богатая ураном.
 
-ent-MeteorRockBananium-name = meteorite rock
-ent-MeteorRockBananium-desc = An ore vein rich with bananium.
+ent-MeteorRockBananium-name = метеоритная скала
+ent-MeteorRockBananium-desc = Рудная жила, богатая бананом.
 

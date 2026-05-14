@@ -1,6 +1,6 @@
-ent-ContainmentFieldGenerator-name = containment field generator
-ent-ContainmentFieldGenerator-desc = A machine that generates a containment field when powered by an emitter. Keeps the Singularity docile.
+ent-ContainmentFieldGenerator-name = генератор сдерживающего поля
+ent-ContainmentFieldGenerator-desc = Машина, генерирующая сдерживающее поле при питании от излучателя. Сохраняет Сингулярность послушной.
 
-ent-ContainmentField-name = containment field
-ent-ContainmentField-desc = A containment field that repels gravitational singularities.
+ent-ContainmentField-name = поле сдерживания
+ent-ContainmentField-desc = Сдерживающее поле, отталкивающее гравитационные сингулярности.
 

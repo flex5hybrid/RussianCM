@@ -1,3 +1,3 @@
-ent-ClothingNeckChameleon-name = striped red scarf
-ent-ClothingNeckChameleon-desc = A stylish striped red scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+ent-ClothingNeckChameleon-name = полосатый красный шарф
+ent-ClothingNeckChameleon-desc = Стильный полосатый красный шарф. Идеальный зимний аксессуар для тех, кто тонко чувствует моду, а также для тех, кто просто не переносит холодный ветерок на шее.
 

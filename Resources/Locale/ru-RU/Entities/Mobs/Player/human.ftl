@@ -1,20 +1,20 @@
-ent-MobHuman-name = Urist McHands
+ent-MobHuman-name = Урист МакХэндс
 
-ent-MobHumanSyndicateAgentBase-name = syndicate agent
+ent-MobHumanSyndicateAgentBase-name = агент синдиката
 
-ent-MobHumanSyndicateAgent-name = syndicate agent
+ent-MobHumanSyndicateAgent-name = агент синдиката
 
-ent-MobHumanSyndicateAgentMedic-name = syndicate medic
+ent-MobHumanSyndicateAgentMedic-name = медик синдиката
 
-ent-MobHumanSyndicateAgentSpy-name = syndicate spy
+ent-MobHumanSyndicateAgentSpy-name = шпион синдиката
 
-ent-MobHumanSyndicateAgentThief-name = syndicate thief
+ent-MobHumanSyndicateAgentThief-name = вор синдиката
 
-ent-MobHumanNukeOp-name = Nuclear Operative
+ent-MobHumanNukeOp-name = Ядерный оперативник
 
-ent-MobHumanLoneNuclearOperative-name = Lone Operative
+ent-MobHumanLoneNuclearOperative-name = Одинокий оперативник
 
-ent-MobHumanWizard-name = Wizard
+ent-MobHumanWizard-name = Волшебник
 
-ent-MobHumanSyndicateAgentNukeops-name = syndicate agent
+ent-MobHumanSyndicateAgentNukeops-name = агент синдиката
 

@@ -1,3 +1,3 @@
-ent-ClothingHeadsetChameleon-name = passenger headset
-ent-ClothingHeadsetChameleon-desc = An updated, modular intercom that fits over the head. Takes encryption keys.
+ent-ClothingHeadsetChameleon-name = пассажирская гарнитура
+ent-ClothingHeadsetChameleon-desc = Обновленный модульный домофон, который крепится через голову. Берет ключи шифрования.
 

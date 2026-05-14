@@ -1,9 +1,9 @@
 server-info-rules-button = Правила
 server-info-guidebook-button = Руководство
-server-info-discord-button = Discord
+server-info-discord-button = Раздор
 server-info-website-button = Сайт
-server-info-wiki-button = Wiki
+server-info-wiki-button = Вики
 server-info-forum-button = Форум
-server-info-telegram-button = Telegram
+server-info-telegram-button = Телеграмма
 server-info-report-button = Сообщить об ошибке
 server-info-credits-button = Авторы

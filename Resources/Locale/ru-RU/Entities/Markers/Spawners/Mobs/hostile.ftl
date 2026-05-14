@@ -1,36 +1,36 @@
-ent-SpawnClownSpider-name = clown spider spawner
+ent-SpawnClownSpider-name = спаунер пауков-клоунов
 
-ent-SpawnMobBear-name = Space Bear Spawner
+ent-SpawnMobBear-name = Создатель космических медведей
 
-ent-SpawnMobBehonker-name = behonker Spawner
+ent-SpawnMobBehonker-name = Бехонкёр Спаунер
 
-ent-SpawnMobBoxingKangaroo-name = Boxing Kangaroo Spawner
+ent-SpawnMobBoxingKangaroo-name = Создатель боксерского кенгуру
 
-ent-SpawnMobHellspawn-name = Hellspawn Spawner
+ent-SpawnMobHellspawn-name = Адский спаунер
 
-ent-SpawnMobKangaroo-name = Space Kangaroo Spawner
+ent-SpawnMobKangaroo-name = Спаунер космического кенгуру
 
-ent-SpawnMobLuminousEntity-name = luminous entity spawner
+ent-SpawnMobLuminousEntity-name = генератор светящихся сущностей
 
-ent-SpawnMobLuminousObject-name = luminous object spawner
+ent-SpawnMobLuminousObject-name = генератор светящихся объектов
 
-ent-SpawnMobLuminousPerson-name = luminous person spawner
+ent-SpawnMobLuminousPerson-name = генератор светящихся людей
 
-ent-SpawnMobOreCrab-name = ore crab spawner
+ent-SpawnMobOreCrab-name = производитель рудных крабов
 
-ent-SpawnMobPurpleSnake-name = Purple Snake Spawner
+ent-SpawnMobPurpleSnake-name = Производитель фиолетовых змей
 
-ent-SpawnMobSmallPurpleSnake-name = Small Purple Snake Spawner
+ent-SpawnMobSmallPurpleSnake-name = Маленький генератор фиолетовых змей
 
-ent-SpawnMobSpaceCobra-name = Space Cobra Spawner
+ent-SpawnMobSpaceCobra-name = Создатель космической кобры
 
-ent-SpawnMobSpaceSpider-name = Space Spider Spawner
+ent-SpawnMobSpaceSpider-name = Создатель космических пауков
 
-ent-SpawnMobWatcherIcewing-name = Watcher Icewing Spawner
+ent-SpawnMobWatcherIcewing-name = Создатель наблюдателя ледяного крыла
 
-ent-SpawnMobWatcherLavaland-name = Watcher Lavaland Spawner
+ent-SpawnMobWatcherLavaland-name = Наблюдатель Лавалэнда Создатель
 
-ent-SpawnMobWatcherMagmawing-name = Watcher Magmawing Spawner
+ent-SpawnMobWatcherMagmawing-name = Наблюдатель: Создатель магмовыделения
 
-ent-SpawnMobWatcherPride-name = Watcher Pride Spawner
+ent-SpawnMobWatcherPride-name = Создатель гордости наблюдателя
 

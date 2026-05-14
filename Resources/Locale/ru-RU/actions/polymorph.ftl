@@ -1,18 +1,18 @@
-ent-ActionRevertPolymorph-name = Revert
-ent-ActionRevertPolymorph-desc = Revert back into your original form.
+ent-ActionRevertPolymorph-name = Вернуть
+ent-ActionRevertPolymorph-desc = Вернитесь в исходную форму.
 
-ent-ActionPolymorphWizardSpider-name = Spider Polymorph
-ent-ActionPolymorphWizardSpider-desc = Polymorphs you into a Spider.
+ent-ActionPolymorphWizardSpider-name = Полиморф паука
+ent-ActionPolymorphWizardSpider-desc = Превращает вас в паука.
 
-ent-ActionPolymorphWizardRod-name = Rod Form
-ent-ActionPolymorphWizardRod-desc = CLANG!
+ent-ActionPolymorphWizardRod-name = Форма стержня
+ent-ActionPolymorphWizardRod-desc = КЛАНГ!
 
-ent-ActionPolymorphJaunt-name = Ethereal Jaunt
-ent-ActionPolymorphJaunt-desc = Melt into the Ethereal Plane for a quick getaway!
+ent-ActionPolymorphJaunt-name = Эфирная прогулка
+ent-ActionPolymorphJaunt-desc = Растворитесь в Эфирном Плане, чтобы быстро сбежать!
 
-ent-ActionPolymorphJauntII-name = Ethereal Jaunt II
-ent-ActionPolymorphJauntII-desc = Melt into the Ethereal Plane for an even quicker getaway!
+ent-ActionPolymorphJauntII-name = Эфирная прогулка II
+ent-ActionPolymorphJauntII-desc = Растворитесь в Эфирном Плане, чтобы сбежать еще быстрее!
 
-ent-ActionPolymorphJauntIII-name = Ethereal Jaunt III
-ent-ActionPolymorphJauntIII-desc = Are you even tangible anymore?
+ent-ActionPolymorphJauntIII-name = Эфирная прогулка III
+ent-ActionPolymorphJauntIII-desc = Ты вообще уже осязаема?
 

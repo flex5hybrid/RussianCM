@@ -1,21 +1,21 @@
-ent-MobFireBot-name = firebot
-ent-MobFireBot-desc = A little fire extinguishing bot. He looks rather anxious.
+ent-MobFireBot-name = пожарный робот
+ent-MobFireBot-desc = Маленький пожарный бот. Он выглядит довольно встревоженным.
 
-ent-MobHonkBot-name = honkbot
-ent-MobHonkBot-desc = Horrifying.
+ent-MobHonkBot-name = хонкбот
+ent-MobHonkBot-desc = Ужасно.
 
-ent-MobJonkBot-name = jonkbot
-ent-MobJonkBot-desc = Horrifying.
+ent-MobJonkBot-name = Джонкбот
+ent-MobJonkBot-desc = Ужасно.
 
-ent-MobCleanBot-name = cleanbot
-ent-MobCleanBot-desc = The creep of automation now threatening space janitors.
+ent-MobCleanBot-name = чистыйбот
+ent-MobCleanBot-desc = Ползущая автоматизация теперь угрожает космическим уборщикам.
 
-ent-MobMedibot-name = medibot
-ent-MobMedibot-desc = No substitute for a doctor, but better than nothing.
+ent-MobMedibot-name = медибот
+ent-MobMedibot-desc = Не заменит врача, но лучше, чем ничего.
 
-ent-MobMimeBot-name = mimebot
-ent-MobMimeBot-desc = Why not give the mimebot a friendly wave?
+ent-MobMimeBot-name = мимебот
+ent-MobMimeBot-desc = Почему бы не помахать мимеботу дружелюбно?
 
-ent-MobSupplyBot-name = supplybot
-ent-MobSupplyBot-desc = Delivers cargo!
+ent-MobSupplyBot-name = робот-поставщик
+ent-MobSupplyBot-desc = Доставляет груз!
 

@@ -1,81 +1,81 @@
-ent-WeaponLaserSvalinn-name = svalinn laser pistol
-ent-WeaponLaserSvalinn-desc = A cheap and widely used laser pistol.
+ent-WeaponLaserSvalinn-name = лазерный пистолет свалинн
+ent-WeaponLaserSvalinn-desc = Дешевый и широко используемый лазерный пистолет.
 
-ent-WeaponLaserGun-name = retro laser blaster
-ent-WeaponLaserGun-desc = A weapon using light amplified by the stimulated emission of radiation.
+ent-WeaponLaserGun-name = ретро лазерный бластер
+ent-WeaponLaserGun-desc = Оружие, использующее свет, усиленный за счет вынужденного излучения.
 
-ent-WeaponMakeshiftLaser-name = makeshift laser pistol
-ent-WeaponMakeshiftLaser-desc = Better pray it won't burn your hands off.
+ent-WeaponMakeshiftLaser-name = импровизированный лазерный пистолет
+ent-WeaponMakeshiftLaser-desc = Лучше молитесь, чтобы это не обожгло вам руки.
 
-ent-WeaponTeslaGun-name = tesla gun
-ent-WeaponTeslaGun-desc = The power of the primordial element of lightning in your hands.
+ent-WeaponTeslaGun-name = Тесла пистолет
+ent-WeaponTeslaGun-desc = Сила первородной стихии молнии в ваших руках.
 
-ent-WeaponLaserCarbinePractice-name = practice laser rifle
-ent-WeaponLaserCarbinePractice-desc = This modified laser rifle fires nearly harmless beams in the 40-watt range, for target practice.
+ent-WeaponLaserCarbinePractice-name = практиковаться в лазерной винтовке
+ent-WeaponLaserCarbinePractice-desc = Эта модифицированная лазерная винтовка стреляет почти безвредными лучами мощностью 40 Вт для тренировок по мишеням.
 
-ent-WeaponLaserCarbine-name = laser rifle
-ent-WeaponLaserCarbine-desc = Favoured by Nanotrasen Security for being cheap and easy to use.
+ent-WeaponLaserCarbine-name = лазерная винтовка
+ent-WeaponLaserCarbine-desc = Nanotrasen Security отдает предпочтение за дешевизну и простоту использования.
 
-ent-WeaponPulsePistol-name = pulse pistol
-ent-WeaponPulsePistol-desc = A state of the art energy pistol favoured as a sidearm by the NT operatives.
+ent-WeaponPulsePistol-name = импульсный пистолет
+ent-WeaponPulsePistol-desc = Современный энергетический пистолет, который оперативники NT предпочитают использовать в качестве личного оружия.
 
-ent-WeaponPulseCarbine-name = pulse carbine
-ent-WeaponPulseCarbine-desc = A high tech energy carbine favoured by the NT-ERT operatives.
+ent-WeaponPulseCarbine-name = импульсный карабин
+ent-WeaponPulseCarbine-desc = Высокотехнологичный энергетический карабин, любимый боевиками NT-ERT.
 
-ent-WeaponPulseRifle-name = pulse rifle
-ent-WeaponPulseRifle-desc = A weapon that is almost as infamous as its users.
+ent-WeaponPulseRifle-name = импульсная винтовка
+ent-WeaponPulseRifle-desc = Оружие, которое почти так же печально известно, как и его пользователи.
 
-ent-WeaponLaserCannon-name = laser cannon
-ent-WeaponLaserCannon-desc = A heavy duty, high powered laser weapon.
+ent-WeaponLaserCannon-name = лазерная пушка
+ent-WeaponLaserCannon-desc = Мощное и мощное лазерное оружие.
 
-ent-WeaponParticleDecelerator-name = portable particle decelerator
-ent-WeaponParticleDecelerator-desc = A portable particle decelerator capable of decomposing a tesla or singularity.
+ent-WeaponParticleDecelerator-name = портативный замедлитель частиц
+ent-WeaponParticleDecelerator-desc = Портативный замедлитель частиц, способный разложить Теслу или сингулярность.
 
-ent-WeaponXrayCannon-name = x-ray cannon
-ent-WeaponXrayCannon-desc = An experimental weapon that uses concentrated x-ray energy against its target.
+ent-WeaponXrayCannon-name = рентгеновская пушка
+ent-WeaponXrayCannon-desc = Экспериментальное оружие, использующее концентрированную рентгеновскую энергию против цели.
 
-ent-WeaponDisablerPractice-name = practice disabler
-ent-WeaponDisablerPractice-desc = A self-defense weapon that exhausts organic targets, weakening them until they collapse. This one has been undertuned for cadets making it mostly harmless.
+ent-WeaponDisablerPractice-name = практиковать дизейлер
+ent-WeaponDisablerPractice-desc = Оружие самообороны, которое истощает органические цели, ослабляя их до тех пор, пока они не разрушатся. Этот вариант был адаптирован для кадетов, что сделало его практически безвредным.
 
-ent-WeaponDisabler-name = disabler
-ent-WeaponDisabler-desc = A self-defense weapon that exhausts organic targets, weakening them until they collapse.
+ent-WeaponDisabler-name = отключитель
+ent-WeaponDisabler-desc = Оружие самообороны, которое истощает органические цели, ослабляя их до тех пор, пока они не разрушатся.
 
-ent-WeaponDisablerSMG-name = disabler SMG
-ent-WeaponDisablerSMG-desc = Advanced weapon that exhausts organic targets, weakening them until they collapse.
+ent-WeaponDisablerSMG-name = дизейблер ППМ
+ent-WeaponDisablerSMG-desc = Усовершенствованное оружие, истощающее органические цели, ослабляющее их до тех пор, пока они не разрушатся.
 
-ent-WeaponTaser-name = taser
-ent-WeaponTaser-desc = A low-capacity, energy-based stun gun used by security teams to subdue targets at range.
+ent-WeaponTaser-name = электрошокер
+ent-WeaponTaser-desc = Энергетический электрошокер малой мощности, используемый службами безопасности для подавления целей на расстоянии.
 
-ent-WeaponAntiqueLaser-name = antique laser pistol
-ent-WeaponAntiqueLaser-desc = This is an antique laser pistol. All craftsmanship is of the highest quality. It is decorated with a mahogany grip and chrome filigree. The object menaces with spikes of energy. On the item is an image of a captain and a clown. The clown is dead. The captain is striking a heroic pose.
+ent-WeaponAntiqueLaser-name = старинный лазерный пистолет
+ent-WeaponAntiqueLaser-desc = Это старинный лазерный пистолет. Все работы высочайшего качества. Он украшен рукояткой из красного дерева и хромированной филигранью. Объект угрожает выбросами энергии. На изделии изображены капитан и клоун. Клоун мертв. Капитан принимает героическую позу.
 
-ent-WeaponAdvancedLaser-name = advanced laser pistol
-ent-WeaponAdvancedLaser-desc = An experimental high-energy laser pistol with a self-charging nuclear battery.
+ent-WeaponAdvancedLaser-name = усовершенствованный лазерный пистолет
+ent-WeaponAdvancedLaser-desc = Экспериментальный высокоэнергетический лазерный пистолет с самозаряжающейся ядерной батареей.
 
-ent-WeaponPistolCHIMP-name = C.H.I.M.P. handcannon
-ent-WeaponPistolCHIMP-desc = Just because it's a little C.H.I.M.P. doesn't mean it can't punch like an A.P.E.
+ent-WeaponPistolCHIMP-name = Ч.Х.И.М.П. ручная пушка
+ent-WeaponPistolCHIMP-desc = Просто потому, что это немного C.H.I.M.P. это не значит, что он не может бить, как A.P.E.
 
-ent-WeaponPistolCHIMPUpgraded-name = experimental C.H.I.M.P. handcannon
-ent-WeaponPistolCHIMPUpgraded-desc = This C.H.I.M.P. seems to have a greater punch than usual...
+ent-WeaponPistolCHIMPUpgraded-name = экспериментальный C.H.I.M.P. ручная пушка
+ent-WeaponPistolCHIMPUpgraded-desc = Этот C.H.I.M.P. кажется, у него больший удар, чем обычно...
 
-ent-WeaponBehonkerLaser-name = eye of a behonker
-ent-WeaponBehonkerLaser-desc = The eye of a behonker, it fires a laser when squeezed.
+ent-WeaponBehonkerLaser-name = глаз наблюдателя
+ent-WeaponBehonkerLaser-desc = Глаз бегуна, при нажатии стреляет лазером.
 
-ent-WeaponEnergyShotgun-name = energy shotgun
-ent-WeaponEnergyShotgun-desc = A one-of-a-kind prototype energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon.
+ent-WeaponEnergyShotgun-name = энергетический дробовик
+ent-WeaponEnergyShotgun-desc = Единственный в своем роде прототип энергетического оружия, в котором используются дробовики различных конфигураций. Он дает возможность производить как смертельные, так и несмертельные выстрелы, что делает его универсальным оружием.
 
-ent-WeaponTemperatureGun-name = temperature gun
-ent-WeaponTemperatureGun-desc = An advanced gun that shoots body-temperature-changing beams. This probably constitutes as some kind of war crime.
+ent-WeaponTemperatureGun-name = температурный пистолет
+ent-WeaponTemperatureGun-desc = Усовершенствованная пушка, стреляющая лучами, изменяющими температуру тела. Вероятно, это является своего рода военным преступлением.
 
-ent-XenoborgLaserGun-name = xenoborg laser gun
+ent-XenoborgLaserGun-name = лазерная пушка ксеноборга
 
-ent-XenoborgHeavyLaserGun-name = xenoborg heavy laser gun
+ent-XenoborgHeavyLaserGun-name = Тяжелая лазерная пушка Ксеноборга
 
-ent-BaseWeaponBattery-name = item
+ent-BaseWeaponBattery-name = элемент
 
-ent-BaseWeaponPowerCell-name = item
+ent-BaseWeaponPowerCell-name = элемент
 
-ent-BaseWeaponBatterySmall-name = item
+ent-BaseWeaponBatterySmall-name = элемент
 
-ent-BaseWeaponPowerCellSmall-name = item
+ent-BaseWeaponPowerCellSmall-name = элемент
 

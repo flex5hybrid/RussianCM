@@ -43,3 +43,53 @@ rmc-mortar-offset-max = Макс. смещение: {$max}
 rmc-mortar-view-camera = Камера наблюдения
 rmc-mortar-camera-title = Интерфейс миномётной камеры
 rmc-mortar-camera = Пара-Камера ({$x}):({$y})
+
+# Missing entries synced from en-US
+
+rmc-mortar-target-title = Целевые координаты
+
+rmc-mortar-offset-title = Целевое смещение
+
+rmc-mortar-camera-name = Пара-камера ({$x}):({$y})
+
+# Targeting mode
+
+rmc-mortar-toggle-mode = Переключить режим таргетинга
+
+rmc-mortar-toggle-mode-message = Переключение между режимами координатного и лазерного прицеливания
+
+rmc-mortar-coordinates-mode-switched-self = Вы переключаете {THE($mortar)} в режим наведения по координатам.
+
+rmc-mortar-laser-mode-switched-self = Вы переключаете {THE($mortar)} в режим лазерного наведения.
+
+rmc-mortar-coordinates-mode-switched-others = {$user} переключает {THE($mortar)} в режим наведения по координатам.
+
+rmc-mortar-laser-mode-switched-others = {$user} переключает {THE($mortar)} в режим лазерного наведения.
+
+rmc-mortar-linking-start = Вы начинаете связывать {THE($laserDesignator)} с {THE($mortar)}.
+
+rmc-mortar-laser-linked-self = Вы успешно связали {THE($laserDesignator)} с {THE($mortar)}.
+
+rmc-mortar-laser-linked-others = {$user} успешно связывает {THE($laserDesignator)} с {THE($mortar)}.
+
+rmc-mortar-already-linking = {CAPITALIZE(THE($mortar))} уже привязан к лазерному целеуказателю.
+
+rmc-mortar-no-laser-target = У {CAPITALIZE(THE($mortar))} нет лазерной цели, по которой можно стрелять!
+
+rmc-mortar-no-laser-designator = {CAPITALIZE(THE($mortar))} не имеет связанного с ним лазерного целеуказателя!
+
+rmc-mortar-in-coordinates-mode = {CAPITALIZE(THE($mortar))} в настоящее время установлен в режим нацеливания по координатам.
+
+rmc-mortar-in-laser-mode = {CAPITALIZE(THE($mortar))} в настоящее время установлен в режим лазерного наведения.
+
+rmc-mortar-laser-aimed = {CAPITALIZE(THE($mortar))} нацелен на цель и готов к стрельбе!
+
+rmc-mortar-toggle-mode-hint = [color=cyan]Alt + Нажмите миномет, чтобы переключить режимы прицеливания. [/color]
+
+rmc-mortar-dial-coordinates = {CAPITALIZE(THE($mortar))} установлен в режим лазерного наведения, переключитесь на координатное наведение, чтобы набрать координаты!
+
+rmc-mortar-beeping = гудит!
+
+rmc-mortar-beeping-warning = предупредительно пищит!
+
+rmc-mortar-targeting = {CAPITALIZE(THE($mortar))} все еще нацелен.

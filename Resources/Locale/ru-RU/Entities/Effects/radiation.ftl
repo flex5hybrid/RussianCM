@@ -1,3 +1,3 @@
-ent-RadiationPulse-name = shimmering anomaly
-ent-RadiationPulse-desc = Looking at this anomaly makes you feel strange, like something is pushing at your eyes.
+ent-RadiationPulse-name = мерцающая аномалия
+ent-RadiationPulse-desc = Глядя на эту аномалию, вы чувствуете себя странно, как будто что-то давит вам в глаза.
 

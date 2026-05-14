@@ -1,60 +1,60 @@
-ent-ClothingShoesBootsWork-name = workboots
-ent-ClothingShoesBootsWork-desc = Engineering lace-up work boots for the especially blue-collar.
+ent-ClothingShoesBootsWork-name = рабочие ботинки
+ent-ClothingShoesBootsWork-desc = Рабочие ботинки на шнуровке для инженеров, особенно для «синих воротничков».
 
-ent-ClothingShoesBootsJack-name = jackboots
-ent-ClothingShoesBootsJack-desc = Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time.
+ent-ClothingShoesBootsJack-name = сапоги
+ent-ClothingShoesBootsJack-desc = Боевые ботинки безопасности нанотрасена для боевых сценариев или боевых ситуаций. Все боевые действия, все время.
 
-ent-ClothingShoesBootsSalvage-name = salvage boots
-ent-ClothingShoesBootsSalvage-desc = Steel-toed salvage boots for salvaging in hazardous environments.
+ent-ClothingShoesBootsSalvage-name = спасательные ботинки
+ent-ClothingShoesBootsSalvage-desc = Спасательные ботинки со стальным носком для утилизации в опасных средах.
 
-ent-ClothingShoesBootsPerformer-name = performer's boots
-ent-ClothingShoesBootsPerformer-desc = These boots provide great traction for when you're up on stage.
+ent-ClothingShoesBootsPerformer-name = ботинки артиста
+ent-ClothingShoesBootsPerformer-desc = Эти ботинки обеспечивают отличное сцепление с дорогой, когда вы находитесь на сцене.
 
-ent-ClothingShoesBootsCombat-name = combat boots
-ent-ClothingShoesBootsCombat-desc = Robust combat boots for combat scenarios or combat situations. All combat, all the time.
+ent-ClothingShoesBootsCombat-name = боевые ботинки
+ent-ClothingShoesBootsCombat-desc = Прочные боевые ботинки для боевых сценариев или боевых ситуаций. Все боевые действия, все время.
 
-ent-ClothingShoesHighheelBoots-name = high-heeled boots
-ent-ClothingShoesHighheelBoots-desc = Snazy boots for when you want to be stylish, yet prepared.
+ent-ClothingShoesHighheelBoots-name = сапоги на высоком каблуке
+ent-ClothingShoesHighheelBoots-desc = Эффектные ботинки для тех, кто хочет выглядеть стильно и в то же время подготовленно.
 
-ent-ClothingShoesBootsMerc-name = mercenary boots
-ent-ClothingShoesBootsMerc-desc = Boots that have gone through many conflicts and that have proven their combat reliability.
+ent-ClothingShoesBootsMerc-name = наемные сапоги
+ent-ClothingShoesBootsMerc-desc = Ботинки, прошедшие множество конфликтов и доказавшие свою боевую надежность.
 
-ent-ClothingShoesBootsLaceup-name = laceup shoes
-ent-ClothingShoesBootsLaceup-desc = The height of fashion, and they're pre-polished!
+ent-ClothingShoesBootsLaceup-name = туфли на шнуровке
+ent-ClothingShoesBootsLaceup-desc = Пик моды, а они уже отполированы!
 
-ent-ClothingShoesBootsWinter-name = winter boots
-ent-ClothingShoesBootsWinter-desc = Fluffy boots to help survive even the coldest of winters.
+ent-ClothingShoesBootsWinter-name = зимние ботинки
+ent-ClothingShoesBootsWinter-desc = Пушистые сапожки помогут пережить даже самую холодную зиму.
 
-ent-ClothingShoesBootsWinterCargo-name = cargo winter boots
-ent-ClothingShoesBootsWinterCargo-desc = Fluffy boots to help survive even the coldest of winters.
+ent-ClothingShoesBootsWinterCargo-name = зимние ботинки карго
+ent-ClothingShoesBootsWinterCargo-desc = Пушистые сапожки помогут пережить даже самую холодную зиму.
 
-ent-ClothingShoesBootsWinterEngi-name = engineering winter boots
-ent-ClothingShoesBootsWinterEngi-desc = Fluffy boots to help survive even the coldest of winters.
+ent-ClothingShoesBootsWinterEngi-name = инженерные зимние ботинки
+ent-ClothingShoesBootsWinterEngi-desc = Пушистые сапожки помогут пережить даже самую холодную зиму.
 
-ent-ClothingShoesBootsWinterMed-name = medical winter boots
-ent-ClothingShoesBootsWinterMed-desc = Fluffy boots to help survive even the coldest of winters.
+ent-ClothingShoesBootsWinterMed-name = медицинские зимние ботинки
+ent-ClothingShoesBootsWinterMed-desc = Пушистые сапожки помогут пережить даже самую холодную зиму.
 
-ent-ClothingShoesBootsWinterSci-name = science winter boots
-ent-ClothingShoesBootsWinterSci-desc = Fluffy boots to help survive even the coldest of winters.
+ent-ClothingShoesBootsWinterSci-name = научные зимние ботинки
+ent-ClothingShoesBootsWinterSci-desc = Пушистые сапожки помогут пережить даже самую холодную зиму.
 
-ent-ClothingShoesBootsWinterSec-name = security winter boots
-ent-ClothingShoesBootsWinterSec-desc = Fluffy boots to help survive even the coldest of winters.
+ent-ClothingShoesBootsWinterSec-name = защитные зимние ботинки
+ent-ClothingShoesBootsWinterSec-desc = Пушистые сапожки помогут пережить даже самую холодную зиму.
 
-ent-ClothingShoesBootsWinterSyndicate-name = syndicate's winter boots
-ent-ClothingShoesBootsWinterSyndicate-desc = Durable heavy boots, looks like merch from "Syndieland".
+ent-ClothingShoesBootsWinterSyndicate-name = зимние ботинки синдиката
+ent-ClothingShoesBootsWinterSyndicate-desc = Прочные тяжелые ботинки, похожи на мерч из "Синдиленда".
 
-ent-ClothingShoesBootsWinterWeb-name = web winter boots
-ent-ClothingShoesBootsWinterWeb-desc = Boots made out of dense webbing to help survive even the coldest of winters.
+ent-ClothingShoesBootsWinterWeb-name = веб-зимние ботинки
+ent-ClothingShoesBootsWinterWeb-desc = Сапоги из плотной тесьмы помогут пережить даже самую холодную зиму.
 
-ent-ClothingShoesBootsCowboyBrown-name = brown cowboy boots
-ent-ClothingShoesBootsCowboyBrown-desc = They got spurs that jingle and/or jangle.
+ent-ClothingShoesBootsCowboyBrown-name = коричневые ковбойские сапоги
+ent-ClothingShoesBootsCowboyBrown-desc = У них есть шпоры, которые звенят и/или звенят.
 
-ent-ClothingShoesBootsCowboyBlack-name = black cowboy boots
-ent-ClothingShoesBootsCowboyBlack-desc = They got spurs that jingle and/or jangle.
+ent-ClothingShoesBootsCowboyBlack-name = черные ковбойские сапоги
+ent-ClothingShoesBootsCowboyBlack-desc = У них есть шпоры, которые звенят и/или звенят.
 
-ent-ClothingShoesBootsCowboyWhite-name = white cowboy boots
-ent-ClothingShoesBootsCowboyWhite-desc = They got spurs that jingle and/or jangle.
+ent-ClothingShoesBootsCowboyWhite-name = белые ковбойские сапоги
+ent-ClothingShoesBootsCowboyWhite-desc = У них есть шпоры, которые звенят и/или звенят.
 
-ent-ClothingShoesBootsCowboyFancy-name = fancy cowboy boots
-ent-ClothingShoesBootsCowboyFancy-desc = They got spurs that jingle and/or jangle.
+ent-ClothingShoesBootsCowboyFancy-name = модные ковбойские сапоги
+ent-ClothingShoesBootsCowboyFancy-desc = У них есть шпоры, которые звенят и/или звенят.
 

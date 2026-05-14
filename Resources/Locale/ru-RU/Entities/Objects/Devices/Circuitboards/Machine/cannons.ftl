@@ -1,15 +1,15 @@
-ent-ShuttleGunSvalinnMachineGunCircuitboard-name = LSE-400c "Svalinn machine gun" machine board
-ent-ShuttleGunSvalinnMachineGunCircuitboard-desc = A machine printed circuit board for an LSE-400c "Svalinn machine gun".
+ent-ShuttleGunSvalinnMachineGunCircuitboard-name = Бортовой станок ЛСЭ-400с «Пулемет Свалинна»
+ent-ShuttleGunSvalinnMachineGunCircuitboard-desc = Машинная печатная плата для пулемета ЛСЭ-400с "Свалинн".
 
-ent-ShuttleGunPerforatorCircuitboard-name = LSE-1200c "Perforator" machine board
-ent-ShuttleGunPerforatorCircuitboard-desc = A machine printed circuit board for an LSE-1200c "Perforator".
+ent-ShuttleGunPerforatorCircuitboard-name = Плата станка ЛСЭ-1200с «Перфоратор»
+ent-ShuttleGunPerforatorCircuitboard-desc = Машинная печатная плата для LSE-1200c "Перфоратор".
 
-ent-ShuttleGunFriendshipCircuitboard-name = EXP-320g "Friendship" machine board
-ent-ShuttleGunFriendshipCircuitboard-desc = A machine printed circuit board for an EXP-320g "Friendship".
+ent-ShuttleGunFriendshipCircuitboard-name = Плата станка ЭКС-320г "Дружба"
+ent-ShuttleGunFriendshipCircuitboard-desc = Машинная печатная плата для ЭКСП-320г "Дружба".
 
-ent-ShuttleGunDusterCircuitboard-name = EXP-2100g "Duster" machine board
-ent-ShuttleGunDusterCircuitboard-desc = A machine printed circuit board for an EXP-2100g "Duster".
+ent-ShuttleGunDusterCircuitboard-name = Плата станка EXP-2100g «Дастер»
+ent-ShuttleGunDusterCircuitboard-desc = Машинная печатная плата для EXP-2100g "Дастер".
 
-ent-ShuttleGunKineticCircuitboard-name = PTK-800 "Matter Dematerializer" machine board
-ent-ShuttleGunKineticCircuitboard-desc = A machine printed circuit board for an PTK-800 "Matter Dematerializer".
+ent-ShuttleGunKineticCircuitboard-name = Плата станка ПТК-800 «Дематериализатор материи»
+ent-ShuttleGunKineticCircuitboard-desc = Машинная печатная плата для ПТК-800 «Дематериализатор материи».
 

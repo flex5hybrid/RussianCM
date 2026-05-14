@@ -1,6 +1,6 @@
-ent-AirAlarmElectronics-name = air alarm electronics
-ent-AirAlarmElectronics-desc = An electronics board used in air alarms.
+ent-AirAlarmElectronics-name = электроника воздушной сигнализации
+ent-AirAlarmElectronics-desc = Электронная плата, используемая в воздушной сигнализации.
 
-ent-FireAlarmElectronics-name = fire alarm electronics
-ent-FireAlarmElectronics-desc = An electronics board used in fire alarms.
+ent-FireAlarmElectronics-name = электроника пожарной сигнализации
+ent-FireAlarmElectronics-desc = Электронная плата, используемая в пожарной сигнализации.
 

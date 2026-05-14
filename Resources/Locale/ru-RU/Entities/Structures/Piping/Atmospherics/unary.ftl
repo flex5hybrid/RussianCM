@@ -1,38 +1,38 @@
-ent-GasVentPump-name = air vent
-ent-GasVentPump-desc = Has a valve and a pump attached to it.
+ent-GasVentPump-name = вентиляционное отверстие
+ent-GasVentPump-desc = К нему прикреплен клапан и насос.
 
-ent-GasPassiveVent-name = passive vent
-ent-GasPassiveVent-desc = It's an open vent.
+ent-GasPassiveVent-name = пассивное вентиляционное отверстие
+ent-GasPassiveVent-desc = Это открытая вентиляция.
 
-ent-GasVentScrubber-name = air scrubber
-ent-GasVentScrubber-desc = Has a valve and pump attached to it.
+ent-GasVentScrubber-name = очиститель воздуха
+ent-GasVentScrubber-desc = К нему прикреплен клапан и насос.
 
-ent-GasOutletInjector-name = air injector
-ent-GasOutletInjector-desc = Has a valve and pump attached to it.
+ent-GasOutletInjector-name = воздушный инжектор
+ent-GasOutletInjector-desc = К нему прикреплен клапан и насос.
 
-ent-BaseGasThermoMachine-name = thermomachine
+ent-BaseGasThermoMachine-name = термомашина
 
-ent-GasThermoMachineFreezer-name = freezer
-ent-GasThermoMachineFreezer-desc = Cools gas in connected pipes.
+ent-GasThermoMachineFreezer-name = морозильник
+ent-GasThermoMachineFreezer-desc = Охлаждает газ в присоединенных трубах.
 
-ent-GasThermoMachineHeater-name = heater
-ent-GasThermoMachineHeater-desc = Heats gas in connected pipes.
+ent-GasThermoMachineHeater-name = обогреватель
+ent-GasThermoMachineHeater-desc = Нагревает газ в подключенных трубах.
 
-ent-GasThermoMachineHellfireFreezer-name = hellfire freezer
-ent-GasThermoMachineHellfireFreezer-desc = An advanced machine that cools gas in connected pipes. Has the side effect of chilling the surrounding area. Cold as Hell!
+ent-GasThermoMachineHellfireFreezer-name = адский огонь морозильник
+ent-GasThermoMachineHellfireFreezer-desc = Усовершенствованная машина, охлаждающая газ в соединенных трубах. Имеет побочный эффект охлаждения окружающей среды. Холодно как ад!
 
-ent-GasThermoMachineHellfireHeater-name = hellfire heater
-ent-GasThermoMachineHellfireHeater-desc = An advanced machine that heats gas in connected pipes. Has the side effect of leaking heat into the surrounding area. Hot as Hell!
+ent-GasThermoMachineHellfireHeater-name = обогреватель адского огня
+ent-GasThermoMachineHellfireHeater-desc = Усовершенствованная машина, нагревающая газ в соединенных трубах. Имеет побочный эффект утечки тепла в окружающую среду. Горячо как ад!
 
-ent-BaseGasCondenser-name = condenser
-ent-BaseGasCondenser-desc = Condenses gases into liquids. Now we just need some plumbing.
+ent-BaseGasCondenser-name = конденсатор
+ent-BaseGasCondenser-desc = Конденсирует газы в жидкости. Теперь нам просто нужна сантехника.
 
-ent-GasUnaryBase-name = gas pipe
-ent-GasUnaryBase-desc = Holds gas.
+ent-GasUnaryBase-name = газовая труба
+ent-GasUnaryBase-desc = Держит газ.
 
-ent-GasThermoMachineFreezerEnabled-name = freezer
-ent-GasThermoMachineFreezerEnabled-desc = Cools gas in connected pipes.
+ent-GasThermoMachineFreezerEnabled-name = морозильник
+ent-GasThermoMachineFreezerEnabled-desc = Охлаждает газ в присоединенных трубах.
 
-ent-GasThermoMachineHeaterEnabled-name = heater
-ent-GasThermoMachineHeaterEnabled-desc = Heats gas in connected pipes.
+ent-GasThermoMachineHeaterEnabled-name = обогреватель
+ent-GasThermoMachineHeaterEnabled-desc = Нагревает газ в подключенных трубах.
 

@@ -1,6 +1,6 @@
-entity-category-name-debug = Debug
+entity-category-name-debug = Отладка
 entity-category-desc-debug = Прототипы сущностей, предназначенные для отладки и тестирования.
-entity-category-suffix-debug = Debug
+entity-category-suffix-debug = Отладка
 
 entity-category-name-spawner = Спавнер
 entity-category-desc-spawner = Прототипы сущностей, спавнящие других сущностей.

@@ -1,99 +1,99 @@
-ent-BoxCardboard-name = cardboard box
-ent-BoxCardboard-desc = A cardboard box for storing things.
+ent-BoxCardboard-name = картонная коробка
+ent-BoxCardboard-desc = Картонная коробка для хранения вещей.
 
-ent-BoxMousetrap-name = mousetrap box
-ent-BoxMousetrap-desc = This box is filled with mousetraps. Try not to get your hand stuck in one.
+ent-BoxMousetrap-name = ящик для мышеловки
+ent-BoxMousetrap-desc = Эта коробка наполнена мышеловками. Постарайтесь не застрять в одном из них.
 
-ent-BoxLightbulb-name = lightbulb box
-ent-BoxLightbulb-desc = This box is shaped on the inside so that only light tubes and bulbs fit.
+ent-BoxLightbulb-name = коробка с лампочкой
+ent-BoxLightbulb-desc = Эта коробка имеет такую ​​внутреннюю форму, что в нее помещаются только осветительные трубки и лампочки.
 
-ent-BoxWarmLightbulb-name = lightbulb box warm
-ent-BoxWarmLightbulb-desc = This box is shaped on the inside so that only light tubes and bulbs fit.
+ent-BoxWarmLightbulb-name = коробка с лампочкой теплая
+ent-BoxWarmLightbulb-desc = Эта коробка имеет такую ​​внутреннюю форму, что в нее помещаются только осветительные трубки и лампочки.
 
-ent-BoxLighttube-name = lighttube box
-ent-BoxLighttube-desc = This box is shaped on the inside so that only light tubes and bulbs fit.
+ent-BoxLighttube-name = коробка для световой трубки
+ent-BoxLighttube-desc = Эта коробка имеет такую ​​внутреннюю форму, что в нее помещаются только осветительные трубки и лампочки.
 
-ent-BoxLightMixed-name = mixed lights box
-ent-BoxLightMixed-desc = This box is shaped on the inside so that only light tubes and bulbs fit.
+ent-BoxLightMixed-name = смешанный световой короб
+ent-BoxLightMixed-desc = Эта коробка имеет такую ​​внутреннюю форму, что в нее помещаются только осветительные трубки и лампочки.
 
-ent-BoxLighttubeHoliday-name = holiday lighttube box
-ent-BoxLighttubeHoliday-desc = This box is shaped on the inside so that only light tubes and bulbs fit.
+ent-BoxLighttubeHoliday-name = праздничный короб для лампочек
+ent-BoxLighttubeHoliday-desc = Эта коробка имеет такую ​​внутреннюю форму, что в нее помещаются только осветительные трубки и лампочки.
 
-ent-BoxPDA-name = PDA box
-ent-BoxPDA-desc = A box of spare PDA microcomputers.
+ent-BoxPDA-name = КПК коробка
+ent-BoxPDA-desc = Коробка запасных микрокомпьютеров КПК.
 
-ent-BoxID-name = ID card box
-ent-BoxID-desc = A box of spare blank ID cards.
+ent-BoxID-name = ящик для удостоверения личности
+ent-BoxID-desc = Коробка запасных пустых удостоверений личности.
 
-ent-BoxHeadset-name = headset box
-ent-BoxHeadset-desc = A box of spare passenger headsets.
+ent-BoxHeadset-name = коробка для гарнитуры
+ent-BoxHeadset-desc = Коробка запасных пассажирских наушников.
 
-ent-BoxMesonScanners-name = meson box
-ent-BoxMesonScanners-desc = A box of spare meson goggles.
+ent-BoxMesonScanners-name = мезонный ящик
+ent-BoxMesonScanners-desc = Коробка запасных мезонных очков.
 
 ent-BoxMRE-name = M.R.E.
-ent-BoxMRE-desc = A box of decades old military surplus rations. It is surprisingly not rotten.
+ent-BoxMRE-desc = Коробка с излишками военного пайка десятилетней давности. На удивление он не гнилой.
 
-ent-BoxInflatable-name = inflatable wall box
-ent-BoxInflatable-desc = Inflatable walls are not to be used as floatation devices.
+ent-BoxInflatable-name = надувной настенный ящик
+ent-BoxInflatable-desc = Надувные стены не должны использоваться в качестве плавучих средств.
 
-ent-BoxPerformer-name = hatsune miku day bag
-ent-BoxPerformer-desc = Happy Hatsune Miku Day!
+ent-BoxPerformer-name = дневная сумка Хацунэ Мику
+ent-BoxPerformer-desc = С Днем Хацунэ Мику!
 
-ent-BoxFlare-name = flare box
-ent-BoxFlare-desc = A box of flares. Party time.
+ent-BoxFlare-name = факельная коробка
+ent-BoxFlare-desc = Коробка с вспышками. Время вечеринки.
 
-ent-BoxTrashbag-name = trashbag box
-ent-BoxTrashbag-desc = A box of trashbags. Happy janitor noises.
+ent-BoxTrashbag-name = мешок для мусора
+ent-BoxTrashbag-desc = Коробка с мешками для мусора. Веселые звуки дворника.
 
-ent-BoxEncryptionKeyPassenger-name = passenger encryption key box
-ent-BoxEncryptionKeyPassenger-desc = A box of spare encryption keys.
+ent-BoxEncryptionKeyPassenger-name = ящик с ключами шифрования для пассажира
+ent-BoxEncryptionKeyPassenger-desc = Коробка запасных ключей шифрования.
 
-ent-BoxEncryptionKeyCargo-name = cargo encryption key box
-ent-BoxEncryptionKeyCargo-desc = A box of spare encryption keys.
+ent-BoxEncryptionKeyCargo-name = ящик с ключами шифрования груза
+ent-BoxEncryptionKeyCargo-desc = Коробка запасных ключей шифрования.
 
-ent-BoxEncryptionKeyEngineering-name = engineering encryption key box
-ent-BoxEncryptionKeyEngineering-desc = A box of spare encryption keys.
+ent-BoxEncryptionKeyEngineering-name = ящик для ключей инженерного шифрования
+ent-BoxEncryptionKeyEngineering-desc = Коробка запасных ключей шифрования.
 
-ent-BoxEncryptionKeyMedicalScience-name = med-sci encryption key box
-ent-BoxEncryptionKeyMedicalScience-desc = A box of spare encryption keys.
+ent-BoxEncryptionKeyMedicalScience-name = ящик для ключей шифрования для медицинских наук
+ent-BoxEncryptionKeyMedicalScience-desc = Коробка запасных ключей шифрования.
 
-ent-BoxEncryptionKeyMedical-name = medical encryption key box
-ent-BoxEncryptionKeyMedical-desc = A box of spare encryption keys.
+ent-BoxEncryptionKeyMedical-name = медицинский ящик для ключей шифрования
+ent-BoxEncryptionKeyMedical-desc = Коробка запасных ключей шифрования.
 
-ent-BoxEncryptionKeyRobo-name = robotech encryption key box
-ent-BoxEncryptionKeyRobo-desc = A box of spare encryption keys.
+ent-BoxEncryptionKeyRobo-name = коробка с ключами шифрования робототехники
+ent-BoxEncryptionKeyRobo-desc = Коробка запасных ключей шифрования.
 
-ent-BoxEncryptionKeyScience-name = science encryption key box
-ent-BoxEncryptionKeyScience-desc = A box of spare encryption keys.
+ent-BoxEncryptionKeyScience-name = ящик для ключей научного шифрования
+ent-BoxEncryptionKeyScience-desc = Коробка запасных ключей шифрования.
 
-ent-BoxEncryptionKeySecurity-name = security encryption key box
-ent-BoxEncryptionKeySecurity-desc = A box of spare encryption keys.
+ent-BoxEncryptionKeySecurity-name = ящик для ключей шифрования безопасности
+ent-BoxEncryptionKeySecurity-desc = Коробка запасных ключей шифрования.
 
-ent-BoxEncryptionKeyService-name = service encryption key box
-ent-BoxEncryptionKeyService-desc = A box of spare encryption keys.
+ent-BoxEncryptionKeyService-name = ящик с ключом шифрования службы
+ent-BoxEncryptionKeyService-desc = Коробка запасных ключей шифрования.
 
-ent-BoxEncryptionKeySyndie-name = syndicate encryption key box
-ent-BoxEncryptionKeySyndie-desc = Two syndicate encryption keys for the price of one. Miniaturized for ease of use.
+ent-BoxEncryptionKeySyndie-name = ящик с ключами шифрования синдиката
+ent-BoxEncryptionKeySyndie-desc = Два синдикатных ключа шифрования по цене одного. Миниатюризирован для удобства использования.
 
-ent-BoxLeadLined-name = lead-lined box
-ent-BoxLeadLined-desc = This box stymies the transmission of harmful radiation.
+ent-BoxLeadLined-name = свинцовая коробка
+ent-BoxLeadLined-desc = Этот ящик блокирует передачу вредного излучения.
 
-ent-BoxCandle-name = candle box
-ent-BoxCandle-desc = This box is specifically moulded to only carry candles.
+ent-BoxCandle-name = коробка для свечей
+ent-BoxCandle-desc = Эта коробка специально предназначена для хранения только свечей.
 
-ent-BoxCandleSmall-name = small candle box
-ent-BoxCandleSmall-desc = This box is specifically moulded to only carry candles.
+ent-BoxCandleSmall-name = маленькая коробочка для свечей
+ent-BoxCandleSmall-desc = Эта коробка специально предназначена для хранения только свечей.
 
-ent-BoxDarts-name = darts box
-ent-BoxDarts-desc = A box filled with colorful darts.
+ent-BoxDarts-name = коробка для дартса
+ent-BoxDarts-desc = Коробка с разноцветными дротиками.
 
-ent-BoxEnvelope-name = envelope box
-ent-BoxEnvelope-desc = A box filled with envelopes.
+ent-BoxEnvelope-name = конверт коробка
+ent-BoxEnvelope-desc = Коробка, наполненная конвертами.
 
-ent-BoxUtensil-name = utensil box
-ent-BoxUtensil-desc = A box filled with forks and spoons.
+ent-BoxUtensil-name = ящик для посуды
+ent-BoxUtensil-desc = Коробка с вилками и ложками.
 
-ent-BoxHugHealing-name = box of hugs
-ent-BoxHugHealing-desc = A special box for sensitive people.
+ent-BoxHugHealing-name = коробка объятий
+ent-BoxHugHealing-desc = Специальный бокс для чувствительных людей.
 

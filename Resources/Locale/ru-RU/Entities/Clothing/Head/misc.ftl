@@ -1,63 +1,63 @@
-ent-ClothingHeadHatBunny-name = bunny ears
-ent-ClothingHeadHatBunny-desc = Cute bunny ears.
+ent-ClothingHeadHatBunny-name = уши кролика
+ent-ClothingHeadHatBunny-desc = Симпатичные заячьи ушки.
 
-ent-ClothingHeadHatCake-name = cake hat
-ent-ClothingHeadHatCake-desc = You put the cake on your head. Brilliant.
+ent-ClothingHeadHatCake-name = торт шляпа
+ent-ClothingHeadHatCake-desc = Ты кладешь торт себе на голову. Великолепно.
 
-ent-ClothingHeadHatChickenhead-name = chicken head
-ent-ClothingHeadHatChickenhead-desc = It's a chicken head. Bok bok bok!
+ent-ClothingHeadHatChickenhead-name = куриная голова
+ent-ClothingHeadHatChickenhead-desc = Это куриная голова. Бок-бок-бок!
 
-ent-ClothingHeadHatFlowerWreath-name = flower wreath
-ent-ClothingHeadHatFlowerWreath-desc = A wreath of colourful flowers. Can be worn both on head and neck.
+ent-ClothingHeadHatFlowerWreath-name = цветочный венок
+ent-ClothingHeadHatFlowerWreath-desc = Венок из ярких цветов. Можно носить как на голове, так и на шее.
 
-ent-ClothingHeadHatPumpkin-name = pumpkin hat
-ent-ClothingHeadHatPumpkin-desc = A jack o' lantern! Believed to ward off evil spirits.
+ent-ClothingHeadHatPumpkin-name = тыквенная шляпа
+ent-ClothingHeadHatPumpkin-desc = Фонарь из тыквы! Считается, что он отгоняет злых духов.
 
-ent-ClothingHeadHatPwig-name = pwig
-ent-ClothingHeadHatPwig-desc = To be honest, those look ridiculous.
+ent-ClothingHeadHatPwig-name = парик
+ent-ClothingHeadHatPwig-desc = Честно говоря, это выглядит смешно.
 
-ent-ClothingHeadMirror-name = head mirror
-ent-ClothingHeadMirror-desc = I doubt even the CMO knows how to use this thing.
+ent-ClothingHeadMirror-name = зеркало на голове
+ent-ClothingHeadMirror-desc = Сомневаюсь, что даже директор по маркетингу знает, как этой штукой пользоваться.
 
-ent-ClothingHeadHatRichard-name = richard
-ent-ClothingHeadHatRichard-desc = Do you like hurting people?
+ent-ClothingHeadHatRichard-name = Ричард
+ent-ClothingHeadHatRichard-desc = Тебе нравится причинять людям боль?
 
-ent-ClothingHeadHatSkub-name = skub hat
-ent-ClothingHeadHatSkub-desc = Best paired with the Skub Suit.
+ent-ClothingHeadHatSkub-name = скуб шляпа
+ent-ClothingHeadHatSkub-desc = Лучше всего сочетается с костюмом Скуб.
 
-ent-ClothingHeadHatShrineMaidenWig-name = shrine maiden's wig
-ent-ClothingHeadHatShrineMaidenWig-desc = The tag reads "All proceeds go to the Hakurei Shrine."
+ent-ClothingHeadHatShrineMaidenWig-name = парик жрицы
+ent-ClothingHeadHatShrineMaidenWig-desc = На бирке написано: «Все доходы пойдут в храм Хакурей».
 
-ent-ClothingHeadHatCone-name = warning cone
-ent-ClothingHeadHatCone-desc = This cone is trying to warn you of something!
+ent-ClothingHeadHatCone-name = предупреждающий конус
+ent-ClothingHeadHatCone-desc = Этот конус пытается вас о чем-то предупредить!
 
-ent-ClothingHeadHatFancyCrown-name = fancy crown
-ent-ClothingHeadHatFancyCrown-desc = It smells like dead rat. Lets you speak like one!
+ent-ClothingHeadHatFancyCrown-name = необычная корона
+ent-ClothingHeadHatFancyCrown-desc = Пахнет дохлой крысой. Позволяет вам говорить как один!
 
-ent-ClothingHeadHatCatEars-name = cat ears
-ent-ClothingHeadHatCatEars-desc = NYAH!
+ent-ClothingHeadHatCatEars-name = кошачьи уши
+ent-ClothingHeadHatCatEars-desc = НЯ!
 
-ent-ActionBecomeValid-name = Become Valid
-ent-ActionBecomeValid-desc = *notices your killsign* owo whats this
+ent-ActionBecomeValid-name = Стать действительным
+ent-ActionBecomeValid-desc = *заметил твой знак уничтожения* оу, что это
 
-ent-ClothingHeadHatDogEars-name = doggy ears
-ent-ClothingHeadHatDogEars-desc = Only for good boys.
+ent-ClothingHeadHatDogEars-name = собачьи уши
+ent-ClothingHeadHatDogEars-desc = Только для хороших мальчиков.
 
-ent-ClothingHeadHatSquid-name = squiddy
-ent-ClothingHeadHatSquid-desc = Scare your friends with this eldritch mask.
+ent-ClothingHeadHatSquid-name = кальмар
+ent-ClothingHeadHatSquid-desc = Напугайте своих друзей этой жуткой маской.
 
-ent-ClothingHeadHatRedRacoon-name = red racoon hat
-ent-ClothingHeadHatRedRacoon-desc = Fluffy hat of red racoon!
+ent-ClothingHeadHatRedRacoon-name = красная шапка енота
+ent-ClothingHeadHatRedRacoon-desc = Пушистая шапка рыжего енота!
 
-ent-WaterDropletHat-name = water droplet
-ent-WaterDropletHat-desc = Makes 8-eyed friends 8 times more adorable!
+ent-WaterDropletHat-name = капля воды
+ent-WaterDropletHat-desc = Делает 8-глазых друзей в 8 раз очаровательнее!
 
-ent-ClothingHeadHatHairflower-name = hairflower
-ent-ClothingHeadHatHairflower-desc = A beautiful hairflower that can be inserted between locks of hair.
+ent-ClothingHeadHatHairflower-name = волосатый цветок
+ent-ClothingHeadHatHairflower-desc = Красивый цветок из волос, который можно вставить между прядями волос.
 
-ent-ClothingHeadPerformerWig-name = performer's wig
-ent-ClothingHeadPerformerWig-desc = On a closer inspection, it appears that it is made from optic fiber.
+ent-ClothingHeadPerformerWig-name = парик артиста
+ent-ClothingHeadPerformerWig-desc = При ближайшем рассмотрении оказывается, что он сделан из оптоволокна.
 
-ent-ClothingHeadHatCatEarsValid-name = cat ears
-ent-ClothingHeadHatCatEarsValid-desc = NYAH!
+ent-ClothingHeadHatCatEarsValid-name = кошачьи уши
+ent-ClothingHeadHatCatEarsValid-desc = НЯ!
 

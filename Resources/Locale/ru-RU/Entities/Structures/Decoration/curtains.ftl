@@ -1,63 +1,63 @@
-ent-BaseCurtains-name = curtains
-ent-BaseCurtains-desc = Hides what others shouldn't see.
+ent-BaseCurtains-name = шторы
+ent-BaseCurtains-desc = Скрывает то, что другие не должны видеть.
 
-ent-HospitalCurtains-name = curtains
-ent-HospitalCurtains-desc = Contains less than 1% mercury.
+ent-HospitalCurtains-name = шторы
+ent-HospitalCurtains-desc = Содержит менее 1% ртути.
 
-ent-HospitalCurtainsOpen-name = curtains
-ent-HospitalCurtainsOpen-desc = Contains less than 1% mercury.
+ent-HospitalCurtainsOpen-name = шторы
+ent-HospitalCurtainsOpen-desc = Содержит менее 1% ртути.
 
 ent-CurtainsBlack-name = construction-recipe-curtains-black
-ent-CurtainsBlack-desc = Hides what others shouldn't see.
+ent-CurtainsBlack-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsBlackOpen-name = construction-recipe-curtains-black
-ent-CurtainsBlackOpen-desc = Hides what others shouldn't see.
+ent-CurtainsBlackOpen-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsBlue-name = construction-recipe-curtains-blue
-ent-CurtainsBlue-desc = Hides what others shouldn't see.
+ent-CurtainsBlue-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsBlueOpen-name = construction-recipe-curtains-blue
-ent-CurtainsBlueOpen-desc = Hides what others shouldn't see.
+ent-CurtainsBlueOpen-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsCyan-name = construction-recipe-curtains-cyan
-ent-CurtainsCyan-desc = Hides what others shouldn't see.
+ent-CurtainsCyan-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsCyanOpen-name = construction-recipe-curtains-cyan
-ent-CurtainsCyanOpen-desc = Hides what others shouldn't see.
+ent-CurtainsCyanOpen-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsGreen-name = construction-recipe-curtains-green
-ent-CurtainsGreen-desc = Hides what others shouldn't see.
+ent-CurtainsGreen-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsGreenOpen-name = construction-recipe-curtains-green
-ent-CurtainsGreenOpen-desc = Hides what others shouldn't see.
+ent-CurtainsGreenOpen-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsOrange-name = construction-recipe-curtains-orange
-ent-CurtainsOrange-desc = Hides what others shouldn't see.
+ent-CurtainsOrange-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsOrangeOpen-name = construction-recipe-curtains-orange
-ent-CurtainsOrangeOpen-desc = Hides what others shouldn't see.
+ent-CurtainsOrangeOpen-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsPink-name = construction-recipe-curtains-pink
-ent-CurtainsPink-desc = Hides what others shouldn't see.
+ent-CurtainsPink-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsPinkOpen-name = construction-recipe-curtains-pink
-ent-CurtainsPinkOpen-desc = Hides what others shouldn't see.
+ent-CurtainsPinkOpen-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsPurple-name = construction-recipe-curtains-purple
-ent-CurtainsPurple-desc = Hides what others shouldn't see.
+ent-CurtainsPurple-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsPurpleOpen-name = construction-recipe-curtains-purple
-ent-CurtainsPurpleOpen-desc = Hides what others shouldn't see.
+ent-CurtainsPurpleOpen-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsRed-name = construction-recipe-curtains-red
-ent-CurtainsRed-desc = Hides what others shouldn't see.
+ent-CurtainsRed-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsRedOpen-name = construction-recipe-curtains-red
-ent-CurtainsRedOpen-desc = Hides what others shouldn't see.
+ent-CurtainsRedOpen-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsWhite-name = construction-recipe-curtains-white
-ent-CurtainsWhite-desc = Hides what others shouldn't see.
+ent-CurtainsWhite-desc = Скрывает то, что другие не должны видеть.
 
 ent-CurtainsWhiteOpen-name = construction-recipe-curtains-white
-ent-CurtainsWhiteOpen-desc = Hides what others shouldn't see.
+ent-CurtainsWhiteOpen-desc = Скрывает то, что другие не должны видеть.
 

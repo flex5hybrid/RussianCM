@@ -1,8 +1,8 @@
-ent-ClothingOuterHardsuitBase-name = base hardsuit
+ent-ClothingOuterHardsuitBase-name = базовый комбинезон
 
-ent-ClothingOuterEVASuitBase-name = base EVA Suit
+ent-ClothingOuterEVASuitBase-name = базовый костюм EVA
 
-ent-ClothingOuterBaseToggleable-name = hoodie with hood
+ent-ClothingOuterBaseToggleable-name = толстовка с капюшоном
 
 ent-ClothingOuterBase-name = lathe-category-clothing
 

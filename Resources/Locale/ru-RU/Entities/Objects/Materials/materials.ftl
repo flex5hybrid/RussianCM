@@ -1,108 +1,108 @@
-ent-MaterialBase-name = item
-ent-MaterialBase-desc = A raw material.
+ent-MaterialBase-name = элемент
+ent-MaterialBase-desc = Сырье.
 
-ent-MaterialCardboard-name = cardboard
-ent-MaterialCardboard-desc = A raw material.
+ent-MaterialCardboard-name = картон
+ent-MaterialCardboard-desc = Сырье.
 
-ent-MaterialCloth-name = cloth
-ent-MaterialCloth-desc = A raw material.
+ent-MaterialCloth-name = ткань
+ent-MaterialCloth-desc = Сырье.
 
-ent-MaterialDurathread-name = durathread
-ent-MaterialDurathread-desc = A raw material.
+ent-MaterialDurathread-name = дуратред
+ent-MaterialDurathread-desc = Сырье.
 
-ent-MaterialWoodPlank-name = wood
-ent-MaterialWoodPlank-desc = A raw material.
+ent-MaterialWoodPlank-name = дерево
+ent-MaterialWoodPlank-desc = Сырье.
 
-ent-MaterialBiomass-name = biomass
-ent-MaterialBiomass-desc = A raw material.
+ent-MaterialBiomass-name = биомасса
+ent-MaterialBiomass-desc = Сырье.
 
-ent-MaterialHideBear-name = bear hide
-ent-MaterialHideBear-desc = A raw material.
+ent-MaterialHideBear-name = медвежья шкура
+ent-MaterialHideBear-desc = Сырье.
 
-ent-MaterialHideCorgi-name = corgi hide
-ent-MaterialHideCorgi-desc = Luxury pelt used in only the most elite fashion. Rumors say this is found when a corgi is sent to the nice farm.
+ent-MaterialHideCorgi-name = корги шкура
+ent-MaterialHideCorgi-desc = Роскошная шкура, используемая только в самой элитной моде. Ходят слухи, что его находят, когда корги отправляют на красивую ферму.
 
-ent-MaterialDiamond-name = refined diamond
-ent-MaterialDiamond-desc = A raw material.
+ent-MaterialDiamond-name = очищенный алмаз
+ent-MaterialDiamond-desc = Сырье.
 
-ent-MaterialCotton-name = cotton
-ent-MaterialCotton-desc = A raw material.
+ent-MaterialCotton-name = хлопок
+ent-MaterialCotton-desc = Сырье.
 
-ent-MaterialPyrotton-name = pyrotton
-ent-MaterialPyrotton-desc = A raw material.
+ent-MaterialPyrotton-name = пироттон
+ent-MaterialPyrotton-desc = Сырье.
 
-ent-MaterialBananium-name = bananium
-ent-MaterialBananium-desc = A raw material.
+ent-MaterialBananium-name = банан
+ent-MaterialBananium-desc = Сырье.
 
-ent-MaterialWebSilk-name = silk
-ent-MaterialWebSilk-desc = A webby material.
+ent-MaterialWebSilk-name = шелк
+ent-MaterialWebSilk-desc = Сетчатый материал.
 
-ent-MaterialToothSpaceCarp-name = space carp tooth
-ent-MaterialToothSpaceCarp-desc = Pretty small but plenty nasty. You like them best when they're not sinking into you.
+ent-MaterialToothSpaceCarp-name = Зуб космического карпа
+ent-MaterialToothSpaceCarp-desc = Довольно маленький, но очень противный. Они тебе нравятся больше всего, когда они не тонут в тебе.
 
-ent-MaterialToothSharkminnow-name = sharkminnow tooth
-ent-MaterialToothSharkminnow-desc = Looks sharp. Sharp enough to poke someone's eye out. Holy fuck it's big.
+ent-MaterialToothSharkminnow-name = зуб акулы
+ent-MaterialToothSharkminnow-desc = Выглядит остро. Достаточно острый, чтобы выколоть кому-нибудь глаз. Черт побери, он такой большой.
 
-ent-MaterialBones-name = bones
-ent-MaterialBones-desc = A raw material.
+ent-MaterialBones-name = кости
+ent-MaterialBones-desc = Сырье.
 
-ent-MaterialGunpowder-name = gunpowder
-ent-MaterialGunpowder-desc = An explosive compound.
+ent-MaterialGunpowder-name = порох
+ent-MaterialGunpowder-desc = Взрывчатое соединение.
 
-ent-MaterialGoliathHide-name = goliath hide plates
-ent-MaterialGoliathHide-desc = Pieces of a goliath's rocky hide, these might be able to make your suit a bit more durable to attack from the local fauna.
+ent-MaterialGoliathHide-name = пластины из шкуры голиафа
+ent-MaterialGoliathHide-desc = Кусочки каменистой шкуры голиафа, возможно, сделают ваш костюм более устойчивым к атакам местной фауны.
 
-ent-MaterialCardboard10-name = cardboard
-ent-MaterialCardboard10-desc = A raw material.
+ent-MaterialCardboard10-name = картон
+ent-MaterialCardboard10-desc = Сырье.
 
-ent-MaterialCardboard1-name = cardboard
-ent-MaterialCardboard1-desc = A raw material.
+ent-MaterialCardboard1-name = картон
+ent-MaterialCardboard1-desc = Сырье.
 
-ent-MaterialCloth10-name = cloth
-ent-MaterialCloth10-desc = A raw material.
+ent-MaterialCloth10-name = ткань
+ent-MaterialCloth10-desc = Сырье.
 
-ent-MaterialCloth1-name = cloth
-ent-MaterialCloth1-desc = A raw material.
+ent-MaterialCloth1-name = ткань
+ent-MaterialCloth1-desc = Сырье.
 
-ent-MaterialDurathread1-name = item
-ent-MaterialDurathread1-desc = A raw material.
+ent-MaterialDurathread1-name = элемент
+ent-MaterialDurathread1-desc = Сырье.
 
-ent-MaterialWoodPlank10-name = wood
-ent-MaterialWoodPlank10-desc = A raw material.
+ent-MaterialWoodPlank10-name = дерево
+ent-MaterialWoodPlank10-desc = Сырье.
 
-ent-MaterialWoodPlank1-name = wood
-ent-MaterialWoodPlank1-desc = A raw material.
+ent-MaterialWoodPlank1-name = дерево
+ent-MaterialWoodPlank1-desc = Сырье.
 
-ent-MaterialBiomass1-name = biomass
-ent-MaterialBiomass1-desc = A raw material.
+ent-MaterialBiomass1-name = биомасса
+ent-MaterialBiomass1-desc = Сырье.
 
-ent-MaterialDiamond1-name = item
-ent-MaterialDiamond1-desc = A raw material.
+ent-MaterialDiamond1-name = элемент
+ent-MaterialDiamond1-desc = Сырье.
 
-ent-MaterialCotton1-name = cotton
-ent-MaterialCotton1-desc = A raw material.
+ent-MaterialCotton1-name = хлопок
+ent-MaterialCotton1-desc = Сырье.
 
-ent-MaterialPyrotton1-name = pyrotton
-ent-MaterialPyrotton1-desc = A raw material.
+ent-MaterialPyrotton1-name = пироттон
+ent-MaterialPyrotton1-desc = Сырье.
 
-ent-MaterialBananium1-name = bananium
-ent-MaterialBananium1-desc = A raw material.
+ent-MaterialBananium1-name = банан
+ent-MaterialBananium1-desc = Сырье.
 
-ent-MaterialWebSilk25-name = silk
-ent-MaterialWebSilk25-desc = A webby material.
+ent-MaterialWebSilk25-name = шелк
+ent-MaterialWebSilk25-desc = Сетчатый материал.
 
-ent-MaterialWebSilk1-name = silk
-ent-MaterialWebSilk1-desc = A webby material.
+ent-MaterialWebSilk1-name = шелк
+ent-MaterialWebSilk1-desc = Сетчатый материал.
 
-ent-MaterialToothSpaceCarp1-name = space carp tooth
-ent-MaterialToothSpaceCarp1-desc = Pretty small but plenty nasty. You like them best when they're not sinking into you.
+ent-MaterialToothSpaceCarp1-name = Зуб космического карпа
+ent-MaterialToothSpaceCarp1-desc = Довольно маленький, но очень противный. Они тебе нравятся больше всего, когда они не тонут в тебе.
 
-ent-MaterialToothSharkminnow1-name = sharkminnow tooth
-ent-MaterialToothSharkminnow1-desc = Looks sharp. Sharp enough to poke someone's eye out. Holy fuck it's big.
+ent-MaterialToothSharkminnow1-name = зуб акулы
+ent-MaterialToothSharkminnow1-desc = Выглядит остро. Достаточно острый, чтобы выколоть кому-нибудь глаз. Черт побери, он такой большой.
 
-ent-MaterialBones1-name = bones
-ent-MaterialBones1-desc = A raw material.
+ent-MaterialBones1-name = кости
+ent-MaterialBones1-desc = Сырье.
 
-ent-MaterialGoliathHide1-name = goliath hide plates
-ent-MaterialGoliathHide1-desc = Pieces of a goliath's rocky hide, these might be able to make your suit a bit more durable to attack from the local fauna.
+ent-MaterialGoliathHide1-name = пластины из шкуры голиафа
+ent-MaterialGoliathHide1-desc = Кусочки каменистой шкуры голиафа, возможно, сделают ваш костюм более устойчивым к атакам местной фауны.
 

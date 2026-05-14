@@ -1,18 +1,18 @@
-ent-BaseFenceMetal-name = chain link fence
-ent-BaseFenceMetal-desc = A metal piece of fencing cordoning off something likely very important.
+ent-BaseFenceMetal-name = сетчатый забор
+ent-BaseFenceMetal-desc = Металлическая часть ограждения, огораживающая что-то, вероятно, очень важное.
 
-ent-FenceMetalBroken-name = broken chain link fence
-ent-FenceMetalBroken-desc = Someone got real mad at an inanimate object.
+ent-FenceMetalBroken-name = сломанная цепь забора
+ent-FenceMetalBroken-desc = Кто-то очень разозлился на неодушевленный предмет.
 
-ent-FenceMetalGate-name = chain link fence gate
-ent-FenceMetalGate-desc = You could use the door instead of vaulting over--if you're a COWARD, that is.
+ent-FenceMetalGate-name = ворота для забора из звеньев цепи
+ent-FenceMetalGate-desc = Вы могли бы использовать дверь вместо того, чтобы перепрыгивать через нее - конечно, если вы ТРУС.
 
-ent-FenceMetalStraight-name = chain link fence
-ent-FenceMetalStraight-desc = A metal piece of fencing cordoning off something likely very important.
+ent-FenceMetalStraight-name = сетчатый забор
+ent-FenceMetalStraight-desc = Металлическая часть ограждения, огораживающая что-то, вероятно, очень важное.
 
 ent-FenceMetalCorner-name = construction-recipe-fence-metal-corner
-ent-FenceMetalCorner-desc = A metal piece of fencing cordoning off something likely very important.
+ent-FenceMetalCorner-desc = Металлическая часть ограждения, огораживающая что-то, вероятно, очень важное.
 
 ent-FenceMetalEnd-name = construction-recipe-fence-metal-end
-ent-FenceMetalEnd-desc = A metal piece of fencing cordoning off something likely very important.
+ent-FenceMetalEnd-desc = Металлическая часть ограждения, огораживающая что-то, вероятно, очень важное.
 

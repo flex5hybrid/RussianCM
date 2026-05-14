@@ -1,2 +1,2 @@
-ent-MiningWindow-name = mining window
+ent-MiningWindow-name = окно добычи полезных ископаемых
 

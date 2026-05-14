@@ -1,9 +1,9 @@
-ent-TrashBag-name = trash bag
+ent-TrashBag-name = мешок для мусора
 
-ent-TrashBagBlue-name = trash bag
+ent-TrashBagBlue-name = мешок для мусора
 
-ent-BagOfSummoningGarbage-name = spell of all-consuming cleanliness
+ent-BagOfSummoningGarbage-name = заклинание всепоглощающей чистоты
 
-ent-BorgTrashBag-name = internal trash bag
-ent-BorgTrashBag-desc = An upgraded trash bag with a larger internal volume, installed directly into a custodial cyborg.
+ent-BorgTrashBag-name = внутренний мешок для мусора
+ent-BorgTrashBag-desc = Модернизированный мешок для мусора с увеличенным внутренним объёмом, устанавливаемый непосредственно в киборга-заключённого.
 

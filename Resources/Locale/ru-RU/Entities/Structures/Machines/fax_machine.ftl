@@ -1,12 +1,12 @@
-ent-FaxMachineBase-name = long range fax machine
-ent-FaxMachineBase-desc = Bluespace technologies on the application of bureaucracy.
+ent-FaxMachineBase-name = факсимильный аппарат дальнего действия
+ent-FaxMachineBase-desc = Технологии Bluespace по применению бюрократии.
 
-ent-FaxMachineCentcom-name = CentComm long range fax machine
-ent-FaxMachineCentcom-desc = Bluespace technologies on the application of bureaucracy.
+ent-FaxMachineCentcom-name = Факс дальнего действия CentComm
+ent-FaxMachineCentcom-desc = Технологии Bluespace по применению бюрократии.
 
-ent-FaxMachineSyndie-name = syndicate long range fax machine
-ent-FaxMachineSyndie-desc = Bluespace technologies on the application of bureaucracy.
+ent-FaxMachineSyndie-name = факсимильный аппарат синдиката дальнего действия
+ent-FaxMachineSyndie-desc = Технологии Bluespace по применению бюрократии.
 
-ent-FaxMachineCaptain-name = captain long range fax machine
-ent-FaxMachineCaptain-desc = Bluespace technologies on the application of bureaucracy.
+ent-FaxMachineCaptain-name = капитан дальнего факса
+ent-FaxMachineCaptain-desc = Технологии Bluespace по применению бюрократии.
 

@@ -1,3 +1,3 @@
-ent-Chainsaw-name = chainsaw
-ent-Chainsaw-desc = A very large chainsaw. Usually you use this for cutting down trees... usually.
+ent-Chainsaw-name = бензопила
+ent-Chainsaw-desc = Очень большая бензопила. Обычно вы используете это для вырубки деревьев... обычно.
 

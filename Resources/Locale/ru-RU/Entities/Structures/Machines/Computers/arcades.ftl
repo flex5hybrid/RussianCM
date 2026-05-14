@@ -1,12 +1,12 @@
-ent-ArcadeBase-name = arcade
-ent-ArcadeBase-desc = An arcade cabinet.
+ent-ArcadeBase-name = аркада
+ent-ArcadeBase-desc = Аркадный кабинет.
 
-ent-SpaceVillainArcade-name = space villain arcade
-ent-SpaceVillainArcade-desc = An arcade cabinet.
+ent-SpaceVillainArcade-name = космический злодей аркада
+ent-SpaceVillainArcade-desc = Аркадный кабинет.
 
-ent-BlockGameArcade-name = NT block game
-ent-BlockGameArcade-desc = An arcade cabinet with a strangely familiar game.
+ent-BlockGameArcade-name = NT-блочная игра
+ent-BlockGameArcade-desc = Игровой автомат со странно знакомой игрой.
 
-ent-SpaceVillainArcadeFilled-name = space villain arcade
-ent-SpaceVillainArcadeFilled-desc = An arcade cabinet.
+ent-SpaceVillainArcadeFilled-name = космический злодей аркада
+ent-SpaceVillainArcadeFilled-desc = Аркадный кабинет.
 

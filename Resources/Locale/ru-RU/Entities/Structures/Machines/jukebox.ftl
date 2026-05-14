@@ -1,3 +1,3 @@
-ent-Jukebox-name = jukebox
-ent-Jukebox-desc = A machine capable of playing a wide variety of tunes. Enjoyment not guaranteed.
+ent-Jukebox-name = музыкальный автомат
+ent-Jukebox-desc = Машина, способная воспроизводить самые разнообразные мелодии. Удовольствие не гарантировано.
 

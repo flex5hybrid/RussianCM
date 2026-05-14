@@ -1,39 +1,39 @@
-ent-BaseFigurineMech-name = figurine
-ent-BaseFigurineMech-desc = A small miniature.
+ent-BaseFigurineMech-name = фигурка
+ent-BaseFigurineMech-desc = Небольшая миниатюра.
 
-ent-ToyRipley-name = ripley toy
-ent-ToyRipley-desc = Mini-Mecha action figure! 'Mecha No. 1/12' is written on the back.
+ent-ToyRipley-name = Рипли игрушка
+ent-ToyRipley-desc = Фигурка мини-механика! На спине написано «Меха № 1/12».
 
-ent-ToyFireRipley-name = fire ripley
-ent-ToyFireRipley-desc = Mini-Mecha action figure! 'Mecha No. 2/12' is written on the back.
+ent-ToyFireRipley-name = огонь Рипли
+ent-ToyFireRipley-desc = Фигурка мини-механика! На спине написано «Меха № 2/12».
 
-ent-ToyDeathRipley-name = deathripley toy
-ent-ToyDeathRipley-desc = Mini-Mecha action figure! 'Mecha No. 3/12' is written on the back.
+ent-ToyDeathRipley-name = игрушка смертирипли
+ent-ToyDeathRipley-desc = Фигурка мини-механика! На спине написано «Меха № 3/12».
 
-ent-ToyGygax-name = gygax toy
-ent-ToyGygax-desc = Mini-Mecha action figure! 'Mecha No. 4/12' is written on the back.
+ent-ToyGygax-name = игрушка гигакс
+ent-ToyGygax-desc = Фигурка мини-механика! На спине написано «Меха № 4/12».
 
-ent-ToyDurand-name = durand toy
-ent-ToyDurand-desc = Mini-Mecha action figure! 'Mecha No. 5/12' is written on the back.
+ent-ToyDurand-name = дуранд игрушка
+ent-ToyDurand-desc = Фигурка мини-механика! На спине написано «Меха № 5/12».
 
-ent-ToyHonk-name = H.O.N.K. toy
-ent-ToyHonk-desc = Mini-Mecha action figure! 'Mecha No. 6/12' is written on the back.
+ent-ToyHonk-name = Х.О.Н.К. игрушка
+ent-ToyHonk-desc = Фигурка мини-механика! На спине написано «Меха № 6/12».
 
-ent-ToyMarauder-name = marauder toy
-ent-ToyMarauder-desc = Mini-Mecha action figure! 'Mecha No. 7/12' is written on the back.
+ent-ToyMarauder-name = мародер игрушка
+ent-ToyMarauder-desc = Фигурка мини-механика! На спине написано «Меха № 7/12».
 
-ent-ToySeraph-name = seraph toy
-ent-ToySeraph-desc = Mini-Mecha action figure! 'Mecha No. 8/12' is written on the back.
+ent-ToySeraph-name = серафим игрушка
+ent-ToySeraph-desc = Фигурка мини-механика! На спине написано «Меха № 8/12».
 
-ent-ToyMauler-name = mauler toy
-ent-ToyMauler-desc = Mini-Mecha action figure! 'Mecha No. 9/12' is written on the back.
+ent-ToyMauler-name = игрушка-громил
+ent-ToyMauler-desc = Фигурка мини-механика! На спине написано «Меха № 9/12».
 
-ent-ToyOdysseus-name = odysseus toy
-ent-ToyOdysseus-desc = Mini-Mecha action figure! 'Mecha No. 10/12' is written on the back.
+ent-ToyOdysseus-name = Одиссей игрушка
+ent-ToyOdysseus-desc = Фигурка мини-механика! На спине написано «Меха № 10/12».
 
-ent-ToyPhazon-name = phazon toy
-ent-ToyPhazon-desc = Mini-Mecha action figure! 'Mecha No. 11/12' is written on the back.
+ent-ToyPhazon-name = Фазоновая игрушка
+ent-ToyPhazon-desc = Фигурка мини-механика! На спине написано «Меха № 11/12».
 
-ent-ToyReticence-name = reticence toy
-ent-ToyReticence-desc = Mini-Mecha action figure! 'Mecha No. 12/12' is written on the back.
+ent-ToyReticence-name = сдержанная игрушка
+ent-ToyReticence-desc = Фигурка мини-механика! На спине написано «Меха № 12/12».
 

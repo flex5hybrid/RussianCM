@@ -1,24 +1,24 @@
-ent-Soap-name = soap
-ent-Soap-desc = A cheap bar of soap. Doesn't smell.
+ent-Soap-name = мыло
+ent-Soap-desc = Дешевый кусок мыла. Не пахнет.
 
-ent-SoapNT-name = soap
-ent-SoapNT-desc = A Nanotrasen brand bar of soap. Smells of plasma.
+ent-SoapNT-name = мыло
+ent-SoapNT-desc = Кусок мыла марки Nanotrasen. Пахнет плазмой.
 
-ent-SoapDeluxe-name = soap
-ent-SoapDeluxe-desc = A deluxe Waffle Co. brand bar of soap. Smells of strawberries.
+ent-SoapDeluxe-name = мыло
+ent-SoapDeluxe-desc = Роскошный кусок мыла марки Waffle Co. Пахнет клубникой.
 
-ent-SoapSyndie-name = soap
-ent-SoapSyndie-desc = An untrustworthy bar of soap. Smells of fear.
+ent-SoapSyndie-name = мыло
+ent-SoapSyndie-desc = Ненадежный кусок мыла. Пахнет страхом.
 
-ent-SoapletSyndie-name = soaplet
-ent-SoapletSyndie-desc = A tiny piece of syndicate soap.
+ent-SoapletSyndie-name = мыльница
+ent-SoapletSyndie-desc = Маленький кусочек синдикатного мыла.
 
-ent-SoapHomemade-name = soap
-ent-SoapHomemade-desc = A homemade bar of soap. Smells of... well....
+ent-SoapHomemade-name = мыло
+ent-SoapHomemade-desc = Домашнее мыло. Пахнет... ну....
 
-ent-SoapOmega-name = omega soap
-ent-SoapOmega-desc = The most advanced soap known to mankind. Smells of bluespace.
+ent-SoapOmega-name = омега мыло
+ent-SoapOmega-desc = Самое современное мыло, известное человечеству. Пахнет голубым космосом.
 
-ent-SoapBorg-name = soap
-ent-SoapBorg-desc = A Nanotrasen brand bar of soap. Smells of plasma and machines.
+ent-SoapBorg-name = мыло
+ent-SoapBorg-desc = Кусок мыла марки Nanotrasen. Запах плазмы и станков.
 

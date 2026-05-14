@@ -177,3 +177,35 @@ au14-job-prefix-civilianambassadortwe = Пос. ИТМ
 au14-job-name-civilianambassadorcca = Посол КЦА
 au14-job-description-civilianambassadorcca = Руководи дипломатической миссией КЦА в колонии.
 au14-job-prefix-civilianambassadorcca = Пос. КЦА
+
+# Missing entries synced from en-US
+
+au14-department-ambassadors-description = Послы разных стран.
+
+au14-department-ambassadors = посол
+
+au14-job-name-civiliangeneralpractitioner = Врач общей практики
+
+au14-job-name-civiliansurgeon = Хирург
+
+au14-job-name-civilianpharmacist = Фармацевт
+
+au14-job-name-civilianambassador = посол
+
+au14-job-name-civilianrightsobserver = Межзвездный наблюдатель за соблюдением прав человека
+
+au14-job-description-investigationrightsobserver = Благодаря упорному труду вам удалось пробраться на границу вместе с патрулем CMB, чтобы документировать и фиксировать любые злодеяния, которые могут происходить в этом темном секторе космоса. Отчасти это пиар-ход, но это важная работа. В случае чрезвычайной ситуации вы также сможете оказать медицинскую помощь нуждающимся.
+
+au14-job-prefix-civilianrightsobserver = ИХРО
+
+au14-job-name-civiliannspainspector = Инспектор НСПА
+
+au14-job-description-civiliannspainspector = Вы инспектор полицейского управления сектора Нероидов. Обеспечьте в колонии верховенство закона и выполняйте аресты и ордера. (Роль доступна на Гибрисе и Порт-Нероиде)
+
+au14-job-prefix-civiliannspainspector = НСПЕЙНС
+
+au14-job-name-civilianiccliaison = Представитель Комиссии по межзвездной торговле
+
+au14-job-description-civilianiccliaison = Вы — представитель по корпоративным связям Комиссии по межзвездной торговле, опытный агент ICC, прикрепленный к команде NSPA. Вы работаете с NSPA специально для того, чтобы соблюдать надлежащую торговую практику и расследовать любые возможности контрабанды или деятельности на черном рынке.
+
+au14-job-prefix-civilianiccliaison = ИККЛ

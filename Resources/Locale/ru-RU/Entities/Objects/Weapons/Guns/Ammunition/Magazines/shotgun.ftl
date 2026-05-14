@@ -1,12 +1,12 @@
-ent-BaseMagazineShotgun-name = ammo drum (.50 shells)
+ent-BaseMagazineShotgun-name = боекомплект (патроны .50)
 
-ent-MagazineShotgunEmpty-name = ammo drum (.50 shells any)
+ent-MagazineShotgunEmpty-name = боекомплект (патроны .50 любые)
 
-ent-MagazineShotgun-name = ammo drum (.50 pellet)
+ent-MagazineShotgun-name = боекомплект (пульса .50)
 
-ent-MagazineShotgunBeanbag-name = ammo drum (.50 beanbags)
+ent-MagazineShotgunBeanbag-name = Бочка для боеприпасов (0,50 мешков с фасолью)
 
-ent-MagazineShotgunSlug-name = ammo drum (.50 slug)
+ent-MagazineShotgunSlug-name = барабан для боеприпасов (пуля .50)
 
-ent-MagazineShotgunIncendiary-name = ammo drum (.50 incendiary)
+ent-MagazineShotgunIncendiary-name = боекомплект (зажигательный .50)
 

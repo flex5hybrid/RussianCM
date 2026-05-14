@@ -1,3 +1,3 @@
-cmd-persistencesave-desc = Saves server data to a persistence file to be loaded later.
-cmd-persistencesave-usage = persistencesave [mapId] [filePath — default: game.map (CCVar) ]
-cmd-persistencesave-no-path = filePath was not specified and CCVar { $cvar } is not set. Manually set the filePath param in order to save the map.
+cmd-persistencesave-desc = Сохраняет данные сервера в файл постоянного хранения для последующей загрузки.
+cmd-persistencesave-usage = сохранение сохранения [mapId] [filePath — default: game.map (CCVar) ]
+cmd-persistencesave-no-path = filePath не указан, а CCVar { $cvar } не установлен. Вручную установите параметр filePath, чтобы сохранить карту.

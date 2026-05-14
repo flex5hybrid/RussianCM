@@ -1,12 +1,12 @@
-ent-FireAxeCabinet-name = fire axe cabinet
-ent-FireAxeCabinet-desc = There is a small label that reads "For Emergency use only" along with details for safe use of the axe. As if.
+ent-FireAxeCabinet-name = шкаф для пожарного топора
+ent-FireAxeCabinet-desc = Имеется небольшая этикетка с надписью «Только для экстренного использования» и инструкциями по безопасному использованию топора. Как будто.
 
-ent-FireAxeCabinetOpen-name = fire axe cabinet
-ent-FireAxeCabinetOpen-desc = There is a small label that reads "For Emergency use only" along with details for safe use of the axe. As if.
+ent-FireAxeCabinetOpen-name = шкаф для пожарного топора
+ent-FireAxeCabinetOpen-desc = Имеется небольшая этикетка с надписью «Только для экстренного использования» и инструкциями по безопасному использованию топора. Как будто.
 
-ent-FireAxeCabinetFilled-name = fire axe cabinet
-ent-FireAxeCabinetFilled-desc = There is a small label that reads "For Emergency use only" along with details for safe use of the axe. As if.
+ent-FireAxeCabinetFilled-name = шкаф для пожарного топора
+ent-FireAxeCabinetFilled-desc = Имеется небольшая этикетка с надписью «Только для экстренного использования» и инструкциями по безопасному использованию топора. Как будто.
 
-ent-FireAxeCabinetFilledOpen-name = fire axe cabinet
-ent-FireAxeCabinetFilledOpen-desc = There is a small label that reads "For Emergency use only" along with details for safe use of the axe. As if.
+ent-FireAxeCabinetFilledOpen-name = шкаф для пожарного топора
+ent-FireAxeCabinetFilledOpen-desc = Имеется небольшая этикетка с надписью «Только для экстренного использования» и инструкциями по безопасному использованию топора. Как будто.
 

@@ -1,24 +1,24 @@
-ent-AtmosFixBlockerMarker-name = Atmos Fix Vacuum Marker
-ent-AtmosFixBlockerMarker-desc = Vacuum, T20C
+ent-AtmosFixBlockerMarker-name = Вакуумный маркер Atmos Fix
+ent-AtmosFixBlockerMarker-desc = Вакуум, Т20С
 
-ent-AtmosFixOxygenMarker-name = Atmos Fix Oxygen Marker
-ent-AtmosFixOxygenMarker-desc = Oxygen @ gas miner pressure, T20C
+ent-AtmosFixOxygenMarker-name = Маркер кислорода Atmos Fix
+ent-AtmosFixOxygenMarker-desc = Кислород при давлении шахтного газа, T20C
 
-ent-AtmosFixNitrogenMarker-name = Atmos Fix Nitrogen Marker
-ent-AtmosFixNitrogenMarker-desc = Nitrogen @ gas miner pressure, T20C
+ent-AtmosFixNitrogenMarker-name = Маркер азота Atmos Fix
+ent-AtmosFixNitrogenMarker-desc = Азот при давлении шахтного газа, T20C
 
-ent-AtmosFixPlasmaMarker-name = Atmos Fix Plasma Marker
-ent-AtmosFixPlasmaMarker-desc = Plasma @ gas miner pressure, T20C
+ent-AtmosFixPlasmaMarker-name = Плазменный маркер Atmos Fix
+ent-AtmosFixPlasmaMarker-desc = Плазма при давлении шахтного газа, T20C
 
-ent-AtmosFixInstantPlasmaFireMarker-name = Atmos Fix Instant Plasmafire Marker
-ent-AtmosFixInstantPlasmaFireMarker-desc = INSTANT PLASMAFIRE
+ent-AtmosFixInstantPlasmaFireMarker-name = Маркер мгновенного плазменного огня Atmos Fix
+ent-AtmosFixInstantPlasmaFireMarker-desc = МГНОВЕННЫЙ ПЛАЗМЕННЫЙ ОГОНЬ
 
-ent-AtmosFixFreezerMarker-name = Atmos Fix Freezer Marker
-ent-AtmosFixFreezerMarker-desc = Change air temp to 235K, for freezer with a bit of wiggle room to get set up.
+ent-AtmosFixFreezerMarker-name = Маркер Atmos Fix Freezer
+ent-AtmosFixFreezerMarker-desc = Измените температуру воздуха на 235K, чтобы в морозильной камере было немного места для маневра при настройке.
 
-ent-AtmosFixVoxMarker-name = Atmos Fix Nitrogen Marker
-ent-AtmosFixVoxMarker-desc = Nitrogen @ 101 kPa, 20C
+ent-AtmosFixVoxMarker-name = Маркер азота Atmos Fix
+ent-AtmosFixVoxMarker-desc = Азот при 101 кПа, 20°C
 
-ent-AtmosFixAirMarker-name = Atmos Fix Air Marker
-ent-AtmosFixAirMarker-desc = Oxygen (21%) and nitrogen (79%) @ gas miner pressure, T20C
+ent-AtmosFixAirMarker-name = Маркер воздуха Atmos Fix
+ent-AtmosFixAirMarker-desc = Кислород (21%) и азот (79%) при давлении шахтного газа, T20C
 

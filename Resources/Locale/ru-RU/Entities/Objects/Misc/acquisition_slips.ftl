@@ -1,21 +1,21 @@
-ent-PaperAcquisitionSlip-name = acquisition slip
-ent-PaperAcquisitionSlip-desc = A slip with order details on it. It can be given to Cargo to complete the order.
+ent-PaperAcquisitionSlip-name = квитанция о приобретении
+ent-PaperAcquisitionSlip-desc = Квитанция с подробной информацией о заказе. Его можно передать Cargo для выполнения заказа.
 
-ent-PaperAcquisitionSlipMedical-name = acquisition slip
-ent-PaperAcquisitionSlipMedical-desc = A slip with order details on it. It can be given to Cargo to complete the order.
+ent-PaperAcquisitionSlipMedical-name = квитанция о приобретении
+ent-PaperAcquisitionSlipMedical-desc = Квитанция с подробной информацией о заказе. Его можно передать Cargo для выполнения заказа.
 
-ent-PaperAcquisitionSlipScience-name = acquisition slip
-ent-PaperAcquisitionSlipScience-desc = A slip with order details on it. It can be given to Cargo to complete the order.
+ent-PaperAcquisitionSlipScience-name = квитанция о приобретении
+ent-PaperAcquisitionSlipScience-desc = Квитанция с подробной информацией о заказе. Его можно передать Cargo для выполнения заказа.
 
-ent-PaperAcquisitionSlipSecurity-name = acquisition slip
-ent-PaperAcquisitionSlipSecurity-desc = A slip with order details on it. It can be given to Cargo to complete the order.
+ent-PaperAcquisitionSlipSecurity-name = квитанция о приобретении
+ent-PaperAcquisitionSlipSecurity-desc = Квитанция с подробной информацией о заказе. Его можно передать Cargo для выполнения заказа.
 
-ent-PaperAcquisitionSlipService-name = acquisition slip
-ent-PaperAcquisitionSlipService-desc = A slip with order details on it. It can be given to Cargo to complete the order.
+ent-PaperAcquisitionSlipService-name = квитанция о приобретении
+ent-PaperAcquisitionSlipService-desc = Квитанция с подробной информацией о заказе. Его можно передать Cargo для выполнения заказа.
 
-ent-PaperAcquisitionSlipCargo-name = acquisition slip
-ent-PaperAcquisitionSlipCargo-desc = A slip with order details on it. It can be given to Cargo to complete the order.
+ent-PaperAcquisitionSlipCargo-name = квитанция о приобретении
+ent-PaperAcquisitionSlipCargo-desc = Квитанция с подробной информацией о заказе. Его можно передать Cargo для выполнения заказа.
 
-ent-PaperAcquisitionSlipEngineering-name = acquisition slip
-ent-PaperAcquisitionSlipEngineering-desc = A slip with order details on it. It can be given to Cargo to complete the order.
+ent-PaperAcquisitionSlipEngineering-name = квитанция о приобретении
+ent-PaperAcquisitionSlipEngineering-desc = Квитанция с подробной информацией о заказе. Его можно передать Cargo для выполнения заказа.
 

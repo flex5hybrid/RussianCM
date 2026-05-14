@@ -40,30 +40,34 @@ markings-organ-FootLeft = Левая стопа
 markings-organ-FootRight = Правая стопа
 markings-organ-Eyes = Глаза
 
-markings-layer-Special = Особое
-markings-layer-Tail = Хвост
-markings-layer-Tail-Moth = Крылья
-markings-layer-Hair = Волосы
-markings-layer-FacialHair = Лицевая растительность
-markings-layer-UndergarmentTop = Нижняя рубашка
-markings-layer-UndergarmentBottom = Трусы
-markings-layer-Chest = Туловищие
-markings-layer-Head = Голова
-markings-layer-Snout = Нос
-markings-layer-SnoutCover = Нос (Покрытие)
-markings-layer-HeadSide = Голова (Бок)
-markings-layer-HeadTop = Голова (Верх)
-markings-layer-Eyes = Глаза
-markings-layer-RArm = Правая рука
-markings-layer-LArm = Левая рука
-markings-layer-RHand = Правая кисть
-markings-layer-LHand = Левая кисть
-markings-layer-RLeg = Правая нога
-markings-layer-LLeg = Левая нога
-markings-layer-RFoot = Правая стопа
-markings-layer-LFoot = Левая стопа
-markings-layer-Overlay = Наложение
-markings-layer-TailOverlay = Наложение
-
+markings-category-Special = Особое
 markings-category-Hair = Волосы
+markings-category-HeadTop = Голова (Верх)
+markings-category-HeadSide = Голова (Бок)
+markings-category-Snout = Нос
+markings-category-UndergarmentTop = Нижняя рубашка
+markings-category-UndergarmentBottom = Трусы
+markings-category-Chest = Туловище
+markings-category-Arms = Руки
+markings-category-Legs = Ноги
+markings-category-Tail = Хвост
+markings-category-Overlay = Наложение
+
 markings-category-FacialHair = Растительность на лице
+
+markings-used = Используемые метки
+markings-unused = Доступные метки
+markings-add = Добавить метку
+markings-remove = Удалить метку
+markings-rank-up = Вверх
+markings-rank-down = Вниз
+marking-points-remaining = Осталось меток: { $points }
+marking-used = { $marking-name }
+marking-used-forced = { $marking-name } (Принудительно)
+marking-slot-add = Добавить
+marking-slot-remove = Удалить
+marking-slot = Слот { $number }
+
+# Missing entries synced from en-US
+
+markings-category-Head = Глава

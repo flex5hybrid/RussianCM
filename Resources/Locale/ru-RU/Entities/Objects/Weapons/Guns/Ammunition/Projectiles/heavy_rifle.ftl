@@ -1,6 +1,6 @@
-ent-BulletHeavyRifle-name = bullet (.20 rifle)
-ent-BulletHeavyRifle-desc = If you can see this you're probably dead!
+ent-BulletHeavyRifle-name = пуля (винтовка .20)
+ent-BulletHeavyRifle-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletMinigun-name = minigun bullet (.10 rifle)
-ent-BulletMinigun-desc = If you can see this you're probably dead!
+ent-BulletMinigun-name = пуля для минигана (винтовка .10)
+ent-BulletMinigun-desc = Если ты это видишь, ты, вероятно, мертв!
 

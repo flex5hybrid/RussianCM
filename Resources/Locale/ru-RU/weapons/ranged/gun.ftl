@@ -62,3 +62,19 @@ gun-speedloader-empty = Спидлоадер пуст
 # GunSpreadModifier
 examine-gun-spread-modifier-reduction = Разброс снижен на [color=yellow]{ $percentage }%[/color].
 examine-gun-spread-modifier-increase = Разброс повышен на [color=yellow]{ $percentage }%[/color].
+
+# Missing entries synced from en-US
+
+gun-set-fire-mode = Установите {$mode}
+
+gun-ballistic-cycle-delayed = Вы начинаете выгружать {CAPITALIZE(THE($entity))}. Держись еще...
+
+gun-ballistic-cycle-delayed-cancelled = Вы прекращаете выгружать {CAPITALIZE(THE($entity))}.
+
+gun-ballistic-cycle-delayed-empty = {CAPITALIZE(THE($entity))} уже выгружен.
+
+gun-ballistic-transfer-cancelled = Ваша перезагрузка была прервана!
+
+gun-ballistic-transfer-primed = Вы не можете загрузить заряженный {$ammoEntity}!
+
+# CartridgeAmmo

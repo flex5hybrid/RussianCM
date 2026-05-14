@@ -1,18 +1,18 @@
-ent-ClothingHeadHelmetEVA-name = EVA helmet
-ent-ClothingHeadHelmetEVA-desc = An old-but-gold helmet designed for extravehicular activites. Infamous for making security officers paranoid.
+ent-ClothingHeadHelmetEVA-name = ЭВА шлем
+ent-ClothingHeadHelmetEVA-desc = Старый, но золотой шлем, предназначенный для работы в открытом космосе. Печально известен тем, что довел офицеров службы безопасности до параноика.
 
-ent-ClothingHeadHelmetEVALarge-name = EVA helmet
-ent-ClothingHeadHelmetEVALarge-desc = An old-but-gold helmet designed for extravehicular activites.
+ent-ClothingHeadHelmetEVALarge-name = ЭВА шлем
+ent-ClothingHeadHelmetEVALarge-desc = Старый, но золотой шлем, предназначенный для работы в открытом космосе.
 
-ent-ClothingHeadHelmetSyndicate-name = syndicate EVA helmet
-ent-ClothingHeadHelmetSyndicate-desc = A simple, stylish EVA helmet. Designed for maximum humble space-badassery.
+ent-ClothingHeadHelmetSyndicate-name = синдикатный шлем из ЭВА
+ent-ClothingHeadHelmetSyndicate-desc = Простой и стильный шлем из ЭВА. Создан для максимально скромного космического беспредела.
 
-ent-ClothingHeadHelmetCosmonaut-name = cosmonaut helmet
-ent-ClothingHeadHelmetCosmonaut-desc = Ancient design, but advanced manufacturing.
+ent-ClothingHeadHelmetCosmonaut-name = шлем космонавта
+ent-ClothingHeadHelmetCosmonaut-desc = Древний дизайн, но передовое производство.
 
-ent-ClothingHeadHelmetAncient-name = NTSRA void helmet
-ent-ClothingHeadHelmetAncient-desc = An ancient space helmet, designed by the NTSRA branch of CentComm.
+ent-ClothingHeadHelmetAncient-name = Пустотный шлем НТСРА
+ent-ClothingHeadHelmetAncient-desc = Древний космический шлем, разработанный отделением NTSRA CentComm.
 
-ent-ClothingHeadHelmetVoidParamed-name = paramedic void helmet
-ent-ClothingHeadHelmetVoidParamed-desc = A void helmet made for paramedics.
+ent-ClothingHeadHelmetVoidParamed-name = парамедик пустотный шлем
+ent-ClothingHeadHelmetVoidParamed-desc = Пустотный шлем, созданный для парамедиков.
 

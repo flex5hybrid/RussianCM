@@ -1,3 +1,3 @@
-ent-CargoTelepad-name = cargo telepad
-ent-CargoTelepad-desc = Beam in the pizzas and dig in.
+ent-CargoTelepad-name = грузовой телепад
+ent-CargoTelepad-desc = Лучите пиццу и закопайте.
 

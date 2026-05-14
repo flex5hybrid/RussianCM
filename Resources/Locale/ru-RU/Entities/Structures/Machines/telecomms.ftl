@@ -1,30 +1,30 @@
-ent-TelecomServer-name = telecommunication server
-ent-TelecomServer-desc = When powered and filled with encryption keys it allows radio headset communication.
+ent-TelecomServer-name = телекоммуникационный сервер
+ent-TelecomServer-desc = Когда он включен и заполнен ключами шифрования, он позволяет общаться через радиогарнитуру.
 
-ent-TelecomServerFilled-name = telecommunication server
-ent-TelecomServerFilled-desc = When powered and filled with encryption keys it allows radio headset communication.
+ent-TelecomServerFilled-name = телекоммуникационный сервер
+ent-TelecomServerFilled-desc = Когда он включен и заполнен ключами шифрования, он позволяет общаться через радиогарнитуру.
 
-ent-TelecomServerFilledCommon-name = telecommunication server
-ent-TelecomServerFilledCommon-desc = When powered and filled with encryption keys it allows radio headset communication.
+ent-TelecomServerFilledCommon-name = телекоммуникационный сервер
+ent-TelecomServerFilledCommon-desc = Когда он включен и заполнен ключами шифрования, он позволяет общаться через радиогарнитуру.
 
-ent-TelecomServerFilledCargo-name = telecommunication server
-ent-TelecomServerFilledCargo-desc = When powered and filled with encryption keys it allows radio headset communication.
+ent-TelecomServerFilledCargo-name = телекоммуникационный сервер
+ent-TelecomServerFilledCargo-desc = Когда он включен и заполнен ключами шифрования, он позволяет общаться через радиогарнитуру.
 
-ent-TelecomServerFilledEngineering-name = telecommunication server
-ent-TelecomServerFilledEngineering-desc = When powered and filled with encryption keys it allows radio headset communication.
+ent-TelecomServerFilledEngineering-name = телекоммуникационный сервер
+ent-TelecomServerFilledEngineering-desc = Когда он включен и заполнен ключами шифрования, он позволяет общаться через радиогарнитуру.
 
-ent-TelecomServerFilledMedical-name = telecommunication server
-ent-TelecomServerFilledMedical-desc = When powered and filled with encryption keys it allows radio headset communication.
+ent-TelecomServerFilledMedical-name = телекоммуникационный сервер
+ent-TelecomServerFilledMedical-desc = Когда он включен и заполнен ключами шифрования, он позволяет общаться через радиогарнитуру.
 
-ent-TelecomServerFilledScience-name = telecommunication server
-ent-TelecomServerFilledScience-desc = When powered and filled with encryption keys it allows radio headset communication.
+ent-TelecomServerFilledScience-name = телекоммуникационный сервер
+ent-TelecomServerFilledScience-desc = Когда он включен и заполнен ключами шифрования, он позволяет общаться через радиогарнитуру.
 
-ent-TelecomServerFilledSecurity-name = telecommunication server
-ent-TelecomServerFilledSecurity-desc = When powered and filled with encryption keys it allows radio headset communication.
+ent-TelecomServerFilledSecurity-name = телекоммуникационный сервер
+ent-TelecomServerFilledSecurity-desc = Когда он включен и заполнен ключами шифрования, он позволяет общаться через радиогарнитуру.
 
-ent-TelecomServerFilledService-name = telecommunication server
-ent-TelecomServerFilledService-desc = When powered and filled with encryption keys it allows radio headset communication.
+ent-TelecomServerFilledService-name = телекоммуникационный сервер
+ent-TelecomServerFilledService-desc = Когда он включен и заполнен ключами шифрования, он позволяет общаться через радиогарнитуру.
 
-ent-TelecomServerFilledCommand-name = telecommunication server
-ent-TelecomServerFilledCommand-desc = When powered and filled with encryption keys it allows radio headset communication.
+ent-TelecomServerFilledCommand-name = телекоммуникационный сервер
+ent-TelecomServerFilledCommand-desc = Когда он включен и заполнен ключами шифрования, он позволяет общаться через радиогарнитуру.
 

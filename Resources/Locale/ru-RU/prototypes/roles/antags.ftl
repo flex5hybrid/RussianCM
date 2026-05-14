@@ -49,3 +49,13 @@ roles-antag-mothership-core-objective = Используйте своих ксе
 
 roles-antag-xenoborg-name = Ксеноборг
 roles-antag-xenoborg-objective = Помогите материнскому кораблю создать больше ксеноборгов.
+
+# Missing entries synced from en-US
+
+roles-antag-suspicion-innocent-name = Невинный
+
+roles-antag-suspicion-innocent-objective = Обнаружьте и уничтожьте всех предателей.
+
+roles-antag-suspicion-suspect-name = Подозреваемый
+
+roles-antag-suspicion-suspect-objective = Убейте невинных.

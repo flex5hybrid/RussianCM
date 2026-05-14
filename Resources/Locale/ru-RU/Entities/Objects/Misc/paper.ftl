@@ -1,47 +1,47 @@
-ent-Paper-name = paper
-ent-Paper-desc = A piece of white paper.
+ent-Paper-name = бумага
+ent-Paper-desc = Кусок белой бумаги.
 
-ent-PaperScrap-name = paper scrap
-ent-PaperScrap-desc = A crumpled up piece of white paper.
+ent-PaperScrap-name = бумажный обрывок
+ent-PaperScrap-desc = Смятый лист белой бумаги.
 
-ent-PaperOffice-name = office paper
-ent-PaperOffice-desc = A plain sheet of office paper.
+ent-PaperOffice-name = офисная бумага
+ent-PaperOffice-desc = Обычный лист офисной бумаги.
 
-ent-PaperArtifactAnalyzer-name = artifact analyzer printout
-ent-PaperArtifactAnalyzer-desc = The readout of a device forgotten to time.
+ent-PaperArtifactAnalyzer-name = распечатка анализатора артефактов
+ent-PaperArtifactAnalyzer-desc = Показания забытого во времени устройства.
 
-ent-PaperCaptainsThoughts-name = captain's thoughts
-ent-PaperCaptainsThoughts-desc = A page of the captain's journal. In luxurious lavender.
+ent-PaperCaptainsThoughts-name = мысли капитана
+ent-PaperCaptainsThoughts-desc = Страница капитанского журнала. В роскошной лаванде.
 
-ent-PaperCargoInvoice-name = cargo invoice
-ent-PaperCargoInvoice-desc = A single unit of bureaucracy.
+ent-PaperCargoInvoice-name = грузовая накладная
+ent-PaperCargoInvoice-desc = Единая бюрократическая единица.
 
-ent-PaperNanoTaskItem-name = NanoTask item
-ent-PaperNanoTaskItem-desc = A printed NanoTask item. Can be inserted into your PDA to add it to your tasks.
+ent-PaperNanoTaskItem-name = Элемент NanoTask
+ent-PaperNanoTaskItem-desc = Распечатанный элемент NanoTask. Может быть вставлен в ваш КПК, чтобы добавить его к вашим задачам.
 
-ent-PaperCargoBountyManifest-name = bounty manifest
-ent-PaperCargoBountyManifest-desc = A paper label designating a crate as containing a bounty. Selling a crate with this label will fulfill the bounty.
+ent-PaperCargoBountyManifest-name = манифест награды
+ent-PaperCargoBountyManifest-desc = Бумажная этикетка, обозначающая ящик с наградой. Продажа ящика с этой этикеткой принесет награду.
 
-ent-PaperSalvageJobLabel-name = salvage job shipment label
-ent-PaperSalvageJobLabel-desc = A paper label designating a crate as containing a shipment to fulfill a salvage job. Selling a crate with this will fulfill the job.
+ent-PaperSalvageJobLabel-name = Этикетка для перевозки аварийных работ
+ent-PaperSalvageJobLabel-desc = Бумажная этикетка, обозначающая ящик как содержащий груз для выполнения работ по спасению. Продажа ящика с этим выполнит задание.
 
-ent-PaperCNCSheet-name = character sheet
-ent-PaperCNCSheet-desc = A sheet for your Carps and Crypts characters.
+ent-PaperCNCSheet-name = лист персонажа
+ent-PaperCNCSheet-desc = Лист для ваших персонажей Carps and Crypts.
 
-ent-NukeCodePaper-name = nuclear authentication codes
+ent-NukeCodePaper-name = коды ядерной аутентификации
 
-ent-TraitorCodePaper-name = syndicate codeword
-ent-TraitorCodePaper-desc = A leaked codeword to possibly get in touch with the Syndicate.
+ent-TraitorCodePaper-name = кодовое слово синдиката
+ent-TraitorCodePaper-desc = Утечка кодового слова, позволяющего связаться с Синдикатом.
 
-ent-AllTraitorCodesPaper-name = syndicate codewords registry
-ent-AllTraitorCodesPaper-desc = A registry of all active Syndicate codewords.
+ent-AllTraitorCodesPaper-name = реестр кодовых слов синдиката
+ent-AllTraitorCodesPaper-desc = Реестр всех активных кодовых слов Syndicate.
 
-ent-Envelope-name = envelope
-ent-Envelope-desc = A small envelope for keeping prying eyes off of your sensitive documents.
+ent-Envelope-name = конверт
+ent-Envelope-desc = Небольшой конверт, который защитит ваши конфиденциальные документы от посторонних глаз.
 
-ent-BasePaper-name = item
+ent-BasePaper-name = элемент
 
 ent-PaperWritten-name = stack-paper
 
-ent-NukeCodePaperStation-name = nuclear authentication codes
+ent-NukeCodePaperStation-name = коды ядерной аутентификации
 

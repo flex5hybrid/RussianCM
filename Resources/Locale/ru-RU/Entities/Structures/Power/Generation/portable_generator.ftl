@@ -1,9 +1,9 @@
-ent-PortableGeneratorPacman-name = P.A.C.M.A.N.-type portable generator
-ent-PortableGeneratorPacman-desc = A flexible backup generator for powering a variety of equipment. Runs off solid plasma sheets and is rated for up to 30 kW.
+ent-PortableGeneratorPacman-name = Портативный генератор типа P.A.C.M.A.N.
+ent-PortableGeneratorPacman-desc = Гибкий резервный генератор для питания различного оборудования. Работает от твердых плазменных листов и рассчитан на мощность до 30 кВт.
 
-ent-PortableGeneratorSuperPacman-name = S.U.P.E.R.P.A.C.M.A.N.-type portable generator
-ent-PortableGeneratorSuperPacman-desc = An advanced generator for powering departments. Runs off uranium sheets and is rated for up to 50 kW.
+ent-PortableGeneratorSuperPacman-name = Портативный генератор типа S.U.P.E.R.P.A.C.M.A.N.
+ent-PortableGeneratorSuperPacman-desc = Усовершенствованный генератор для электроснабжения. Работает от урановых листов и рассчитан на мощность до 50 кВт.
 
-ent-PortableGeneratorJrPacman-name = J.R.P.A.C.M.A.N.-type portable generator
-ent-PortableGeneratorJrPacman-desc = A small generator capable of powering individual rooms, in case of emergencies. Runs off welding fuel and is rated for up to 8 kW. Rated ages 3 and up.
+ent-PortableGeneratorJrPacman-name = Портативный генератор типа J.R.P.A.C.M.A.N.
+ent-PortableGeneratorJrPacman-desc = Небольшой генератор, способный обеспечить питанием отдельные комнаты в случае возникновения чрезвычайной ситуации. Работает на сварочном топливе и рассчитан на мощность до 8 кВт. Рассчитан на возраст от 3 лет.
 

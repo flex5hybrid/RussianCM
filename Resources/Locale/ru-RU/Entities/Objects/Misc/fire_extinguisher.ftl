@@ -1,14 +1,14 @@
-ent-FireExtinguisher-name = fire extinguisher
-ent-FireExtinguisher-desc = It extinguishes fires.
+ent-FireExtinguisher-name = огнетушитель
+ent-FireExtinguisher-desc = Он тушит пожары.
 
-ent-BorgFireExtinguisher-name = maneuvering jet
-ent-BorgFireExtinguisher-desc = Based on fire extinguisher technology, the maneuvering jet is... well yes, its just a bigger fire extinguisher.
+ent-BorgFireExtinguisher-name = маневрирующий реактивный самолет
+ent-BorgFireExtinguisher-desc = Маневренный реактивный самолет, основанный на технологии огнетушителей, представляет собой… ну да, это просто огнетушитель большего размера.
 
-ent-ExtinguisherSpray-name = extinguisher spray
+ent-ExtinguisherSpray-name = огнетушитель спрей
 
-ent-FireExtinguisherMini-name = pocket fire extinguisher
-ent-FireExtinguisherMini-desc = A light and compact fibreglass-framed model fire extinguisher. It holds less water than its bigger brother.
+ent-FireExtinguisherMini-name = карманный огнетушитель
+ent-FireExtinguisherMini-desc = Легкая и компактная модель огнетушителя в корпусе из стекловолокна. Он удерживает меньше воды, чем его старший брат.
 
-ent-SelfRechargingFireExtinguisher-name = self-recharging fire extinguisher
-ent-SelfRechargingFireExtinguisher-desc = It extinguishes fires. it slowly refills with water.
+ent-SelfRechargingFireExtinguisher-name = самоперезаряжающийся огнетушитель
+ent-SelfRechargingFireExtinguisher-desc = Он тушит пожары. он медленно наполняется водой.
 

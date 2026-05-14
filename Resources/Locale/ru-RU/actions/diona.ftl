@@ -1,6 +1,6 @@
-ent-DionaGibAction-name = Gib Yourself!
-ent-DionaGibAction-desc = Split apart into 3 nymphs.
+ent-DionaGibAction-name = Гибни себя!
+ent-DionaGibAction-desc = Разделился на 3 нимфы.
 
-ent-DionaReformAction-name = Reform
-ent-DionaReformAction-desc = Reform back into a whole Diona.
+ent-DionaReformAction-name = Реформа
+ent-DionaReformAction-desc = Превратитесь обратно в целую Диону.
 

@@ -1,3 +1,3 @@
-ent-ReplayObserver-name = observer
-ent-ReplayObserver-desc = Boo!
+ent-ReplayObserver-name = наблюдатель
+ent-ReplayObserver-desc = Бу!
 

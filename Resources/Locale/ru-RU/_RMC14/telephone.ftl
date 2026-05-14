@@ -1,5 +1,5 @@
-admin-call-incoming = "{$to}" is being called from "{$from}" by "{$actor}"
-phone-dnd-button = DO NOT DISTURB
-phone-dnd-tooltip-enabled = DO NOT DISTURB is ENABLED
-phone-dnd-tooltip-disabled = DO NOT DISTURB is DISABLED
-phone-dnd-tooltip-locked = DO NOT DISTURB is DISABLED (LOCKED)
+admin-call-incoming = "{$to}" вызывается из "{$from}" от "{$actor}"
+phone-dnd-button = ПРОСЬБА НЕ БЕСПОКОИТЬ
+phone-dnd-tooltip-enabled = НЕ БЕСПОКОИТЬ ВКЛЮЧЕНО
+phone-dnd-tooltip-disabled = НЕ БЕСПОКОИТЬ ОТКЛЮЧЕНО
+phone-dnd-tooltip-locked = Функция «НЕ БЕСПОКОИТЬ» ОТКЛЮЧЕНА (ЗАБЛОКИРОВАНА).

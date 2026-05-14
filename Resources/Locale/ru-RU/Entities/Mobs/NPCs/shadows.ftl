@@ -1,3 +1,3 @@
-ent-MobCatShadow-name = shadow cat
-ent-MobCatShadow-desc = A lovely piece of darkness. Hope he doesn't bring you a curse.
+ent-MobCatShadow-name = теневой кот
+ent-MobCatShadow-desc = Прекрасный кусочек тьмы. Надеюсь, он не навлечет на тебя проклятие.
 

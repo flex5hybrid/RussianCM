@@ -1,2 +1,2 @@
-ent-FtlVisualizerEntity-desc = Visualizer for shuttles arriving. You shouldn't see this!
+ent-FtlVisualizerEntity-desc = Визуализатор прибывающих шаттлов. Вы не должны этого видеть!
 

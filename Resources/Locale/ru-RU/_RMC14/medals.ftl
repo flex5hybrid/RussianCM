@@ -56,3 +56,8 @@ rmc-commendation-examine-title = Надпись
 rmc-commendation-examine-1 = Надпись на этой награде гласит:
 rmc-commendation-examine-2 = [italic]Выдано [bolditalic]{$receiver}[/bolditalic] от [bolditalic]{$giver}[/bolditalic] за: {$text}[/italic]
 rmc-commendation-examine-hover = Прочитать полную надпись на этой награде
+
+
+
+rmc-commendations-received-button = Полученные медали и желе
+rmc-commendations-given-button = Выданные медали и желе

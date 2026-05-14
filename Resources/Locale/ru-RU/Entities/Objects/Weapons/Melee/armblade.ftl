@@ -1,3 +1,3 @@
-ent-ArmBlade-name = arm blade
-ent-ArmBlade-desc = A grotesque blade made out of bone and flesh that can pry open doors and cleaves through people as a hot knife through butter.
+ent-ArmBlade-name = лезвие руки
+ent-ArmBlade-desc = Гротескный клинок, сделанный из костей и плоти, способный открывать двери и пронзать людей, как горячий нож масло.
 

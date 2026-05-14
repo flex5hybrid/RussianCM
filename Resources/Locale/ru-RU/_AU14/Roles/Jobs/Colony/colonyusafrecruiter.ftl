@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianUSASFRecruiter-name = Spawn Point USASF Recruiter LV624 SPECIFIC
-ent-AU14SpawnPointCivilianUSASFRecruiter-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianUSASFRecruiter-name = Точка возрождения USASF Recruiter LV624 СПЕЦИФИЧЕСКИЙ
+ent-AU14SpawnPointCivilianUSASFRecruiter-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

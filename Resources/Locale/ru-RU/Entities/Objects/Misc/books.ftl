@@ -1,65 +1,65 @@
-ent-BookBase-name = book
-ent-BookBase-desc = A hardcover book.
+ent-BookBase-name = книга
+ent-BookBase-desc = Книга в твердом переплете.
 
-ent-BookSpaceEncyclopedia-name = space encyclopedia
-ent-BookSpaceEncyclopedia-desc = An encyclopedia containing all the knowledge. The author of this encyclopedia is unknown.
+ent-BookSpaceEncyclopedia-name = космическая энциклопедия
+ent-BookSpaceEncyclopedia-desc = Энциклопедия, содержащая все знания. Автор этой энциклопедии неизвестен.
 
-ent-BookTheBookOfControl-name = the book of control
-ent-BookTheBookOfControl-desc = Essential to become robust.
+ent-BookTheBookOfControl-name = книга контроля
+ent-BookTheBookOfControl-desc = Необходим для того, чтобы стать крепким.
 
-ent-BookBartendersManual-name = bartender's manual
-ent-BookBartendersManual-desc = This manual is stained with beer.
+ent-BookBartendersManual-name = руководство бармена
+ent-BookBartendersManual-desc = Это руководство запятнано пивом.
 
-ent-BookHowToCookForFortySpaceman-name = How To Cook For Forty Spacemen
-ent-BookHowToCookForFortySpaceman-desc = A book about cooking written by a space chef.
+ent-BookHowToCookForFortySpaceman-name = Как приготовить еду для сорока космонавтов
+ent-BookHowToCookForFortySpaceman-desc = Книга о кулинарии, написанная космическим поваром.
 
-ent-BookLeafLoversSecret-name = leaf lover's secret
-ent-BookLeafLoversSecret-desc = It has a strong weed smell. It motivates you to feed and seed.
+ent-BookLeafLoversSecret-name = секрет любителя листьев
+ent-BookLeafLoversSecret-desc = Имеет сильный запах травы. Это мотивирует вас кормить и сеять.
 
-ent-BookEngineersHandbook-name = engineer's handbook
-ent-BookEngineersHandbook-desc = A handbook about engineering written by Nanotrasen.
+ent-BookEngineersHandbook-name = справочник инженера
+ent-BookEngineersHandbook-desc = Справочник по инженерному делу, написанный Nanotrasen.
 
-ent-BookScientistsGuidebook-name = scientist's guidebook
-ent-BookScientistsGuidebook-desc = A guidebook about science written by Nanotrasen.
+ent-BookScientistsGuidebook-name = путеводитель учёного
+ent-BookScientistsGuidebook-desc = Путеводитель по науке, написанный Нанотрасеном.
 
-ent-BookSecurity-name = security 101
-ent-BookSecurity-desc = A book about security written by Nanotrasen. The book is stained with blood. It seems to have been used more as a weapon than reading material.
+ent-BookSecurity-name = безопасность 101
+ent-BookSecurity-desc = Книга о безопасности, написанная Нанотрасеном. Книга запятнана кровью. Похоже, его использовали скорее как оружие, чем как материал для чтения.
 
-ent-BookHowToKeepStationClean-name = how to keep station clean
-ent-BookHowToKeepStationClean-desc = This book is very clean.
+ent-BookHowToKeepStationClean-name = как поддерживать станцию в чистоте
+ent-BookHowToKeepStationClean-desc = Эта книга очень чистая.
 
-ent-BookHowToRockAndStone-name = how to rock and stone
-ent-BookHowToRockAndStone-desc = A very detailed guide about salvage written by Karl, a legendary space miner, however he's missing. It motivates you to rock and stone.
+ent-BookHowToRockAndStone-name = как рок и камень
+ent-BookHowToRockAndStone-desc = Очень подробное руководство по спасению, написанное Карлом, легендарным космическим шахтёром, однако он пропал. Это мотивирует вас качаться и камнями.
 
-ent-BookMedicalReferenceBook-name = medical reference book
-ent-BookMedicalReferenceBook-desc = A reference book about medical written by an old doctor. The handwriting is barely comprehensible.
+ent-BookMedicalReferenceBook-name = медицинский справочник
+ent-BookMedicalReferenceBook-desc = Справочник по медицине, написанный старым врачом. Почерк почти неразборчив.
 
-ent-BookHowToSurvive-name = how to survive
-ent-BookHowToSurvive-desc = Ironically the author of this book is dead.
+ent-BookHowToSurvive-name = как выжить
+ent-BookHowToSurvive-desc = По иронии судьбы автор этой книги умер.
 
-ent-BookChemicalCompendium-name = chempendium
-ent-BookChemicalCompendium-desc = A comprehensive guide written by some old skeleton of a professor about chemical synthesis.
+ent-BookChemicalCompendium-name = Чемпендиум
+ent-BookChemicalCompendium-desc = Подробное руководство по химическому синтезу, написанное каким-то старым скелетом профессора.
 
-ent-BookSpaceLaw-name = space law
-ent-BookSpaceLaw-desc = A set of Nanotrasen guidelines for keeping law and order on their space stations.
+ent-BookSpaceLaw-name = космическое право
+ent-BookSpaceLaw-desc = Набор руководств Нанотрасена по поддержанию правопорядка на своих космических станциях.
 
-ent-BookRandom-name = book
-ent-BookRandom-desc = Each book is unique! What is hidden in this one?
+ent-BookRandom-name = книга
+ent-BookRandom-desc = Каждая книга уникальна! Что в этом скрыто?
 
-ent-BookAtmosDistro-name = Newton's Guide to Atmos: The Distro
-ent-BookAtmosDistro-desc = There are endless illegible notes scribbled in the margins. Most of the text is covered in handwritten question marks.
+ent-BookAtmosDistro-name = Путеводитель Ньютона по Atmos: Дистрибутив
+ent-BookAtmosDistro-desc = На полях исписаны бесконечные неразборчивые пометки. Большая часть текста покрыта рукописными вопросительными знаками.
 
-ent-BookAtmosWaste-name = Newton's Guide to Atmos: Waste
-ent-BookAtmosWaste-desc = There are endless illegible notes scribbled in the margins. Most of the text is covered in handwritten question marks.
+ent-BookAtmosWaste-name = Путеводитель Ньютона по Атмосу: отходы
+ent-BookAtmosWaste-desc = На полях исписаны бесконечные неразборчивые пометки. Большая часть текста покрыта рукописными вопросительными знаками.
 
-ent-BookAtmosAirAlarms-name = Newton's Guide to Atmos: Air Alarms
-ent-BookAtmosAirAlarms-desc = There are endless illegible notes scribbled in the margins. Most of the text is covered in handwritten question marks.
+ent-BookAtmosAirAlarms-name = Путеводитель Ньютона по Atmos: воздушная сигнализация
+ent-BookAtmosAirAlarms-desc = На полях исписаны бесконечные неразборчивые пометки. Большая часть текста покрыта рукописными вопросительными знаками.
 
-ent-BookAtmosVentsMore-name = Newton's Guide to Atmos: Vents and More
-ent-BookAtmosVentsMore-desc = There are endless illegible notes scribbled in the margins. Most of the text is covered in handwritten question marks.
+ent-BookAtmosVentsMore-name = Путеводитель Ньютона по Атмосу: вентиляционные отверстия и многое другое
+ent-BookAtmosVentsMore-desc = На полях исписаны бесконечные неразборчивые пометки. Большая часть текста покрыта рукописными вопросительными знаками.
 
-ent-BaseGuidebook-name = item
+ent-BaseGuidebook-name = элемент
 
-ent-BookRandomStory-name = book
-ent-BookRandomStory-desc = Each book is unique! What is hidden in this one?
+ent-BookRandomStory-name = книга
+ent-BookRandomStory-desc = Каждая книга уникальна! Что в этом скрыто?
 

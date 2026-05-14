@@ -1,12 +1,12 @@
-ent-BoxCleanerGrenades-name = cleanades box
-ent-BoxCleanerGrenades-desc = A box full of cleanades.
+ent-BoxCleanerGrenades-name = коробка для чистки
+ent-BoxCleanerGrenades-desc = Коробка, полная чисток.
 
-ent-BoxAgrichem-name = NT "AgriChem Is Fun" kit
-ent-BoxAgrichem-desc = For the budding botanist ready to learn about maximizing farm output. This faded box must be at least 50 years old.
+ent-BoxAgrichem-name = Комплект НТ "АгриХим - это весело"
+ent-BoxAgrichem-desc = Для начинающих ботаников, готовых узнать, как максимизировать производительность фермы. Этой выцветшей коробке должно быть не менее 50 лет.
 
-ent-BoxLightbulbColorfulMixed-name = mixed colorful lightbulb box
-ent-BoxLightbulbColorfulMixed-desc = This box is shaped on the inside so that only light tubes and bulbs fit.
+ent-BoxLightbulbColorfulMixed-name = смешанная красочная коробка с лампочкой
+ent-BoxLightbulbColorfulMixed-desc = Эта коробка имеет такую ​​внутреннюю форму, что в нее помещаются только осветительные трубки и лампочки.
 
-ent-BoxLighttubeColorfulMixed-name = mixed colorful lighttube box
-ent-BoxLighttubeColorfulMixed-desc = This box is shaped on the inside so that only light tubes and bulbs fit.
+ent-BoxLighttubeColorfulMixed-name = смешанная красочная коробка для лампочек
+ent-BoxLighttubeColorfulMixed-desc = Эта коробка имеет такую ​​внутреннюю форму, что в нее помещаются только осветительные трубки и лампочки.
 

@@ -1,27 +1,27 @@
-ent-MobRatKing-name = rat king
-ent-MobRatKing-desc = He's da rat. He make da roolz.
+ent-MobRatKing-name = крысиный король
+ent-MobRatKing-desc = Он крыса. Он делает да рулз.
 
-ent-MobRatServant-name = rat servant
-ent-MobRatServant-desc = He's da mini rat. He don't make da roolz.
+ent-MobRatServant-name = крыса-слуга
+ent-MobRatServant-desc = Он маленькая крыса. Он не делает да рулз.
 
-ent-ActionRatKingRaiseArmy-name = Raise Army
-ent-ActionRatKingRaiseArmy-desc = Spend some hunger to summon an allied rat to help defend you.
+ent-ActionRatKingRaiseArmy-name = Поднять армию
+ent-ActionRatKingRaiseArmy-desc = Потратьте немного голода, чтобы вызвать союзную крысу, которая поможет защитить вас.
 
-ent-ActionRatKingDomain-name = Rat King's Domain
-ent-ActionRatKingDomain-desc = Spend some hunger to release a cloud of ammonia into the air.
+ent-ActionRatKingDomain-name = Владения Крысиного короля
+ent-ActionRatKingDomain-desc = Потратьте немного голода, чтобы выпустить в воздух облако аммиака.
 
-ent-ActionRatKingOrderStay-name = Stay
-ent-ActionRatKingOrderStay-desc = Command your army to stand in place.
+ent-ActionRatKingOrderStay-name = Оставайся
+ent-ActionRatKingOrderStay-desc = Прикажите своей армии стоять на месте.
 
-ent-ActionRatKingOrderFollow-name = Follow
-ent-ActionRatKingOrderFollow-desc = Command your army to follow you around.
+ent-ActionRatKingOrderFollow-name = Следовать
+ent-ActionRatKingOrderFollow-desc = Прикажите своей армии следовать за вами.
 
-ent-ActionRatKingOrderCheeseEm-name = Cheese 'Em
-ent-ActionRatKingOrderCheeseEm-desc = Command your army to attack whoever you point at.
+ent-ActionRatKingOrderCheeseEm-name = Сыр 'Эм
+ent-ActionRatKingOrderCheeseEm-desc = Прикажите своей армии атаковать любого, на кого вы укажете.
 
-ent-ActionRatKingOrderLoose-name = Loose
-ent-ActionRatKingOrderLoose-desc = Command your army to act at their own will.
+ent-ActionRatKingOrderLoose-name = Свободный
+ent-ActionRatKingOrderLoose-desc = Прикажите своей армии действовать по своему усмотрению.
 
-ent-MobRatKingBuff-name = rat king
-ent-MobRatKingBuff-desc = He's da rat. He make da roolz.
+ent-MobRatKingBuff-name = крысиный король
+ent-MobRatKingBuff-desc = Он крыса. Он делает да рулз.
 

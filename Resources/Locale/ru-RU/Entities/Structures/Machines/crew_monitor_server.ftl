@@ -1,3 +1,3 @@
-ent-CrewMonitoringServer-name = crew monitoring server
-ent-CrewMonitoringServer-desc = Receives and relays the status of all active suit sensors on the station.
+ent-CrewMonitoringServer-name = сервер мониторинга экипажа
+ent-CrewMonitoringServer-desc = Получает и передает статус всех активных датчиков костюма на станции.
 

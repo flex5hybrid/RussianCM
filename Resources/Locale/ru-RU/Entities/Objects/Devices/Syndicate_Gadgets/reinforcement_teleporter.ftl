@@ -1,21 +1,21 @@
-ent-ReinforcementRadio-name = syndicate reinforcement radio
-ent-ReinforcementRadio-desc = Call in a syndicate agent of questionable quality, instantly! Only basic equipment provided.
+ent-ReinforcementRadio-name = радио подкрепления синдиката
+ent-ReinforcementRadio-desc = Немедленно вызовите агента синдиката сомнительного качества! Предоставляется только базовое оборудование.
 
-ent-ReinforcementRadioSyndicate-name = syndicate reinforcement radio
-ent-ReinforcementRadioSyndicate-desc = Call in a syndicate agent of questionable quality, instantly!
+ent-ReinforcementRadioSyndicate-name = радио подкрепления синдиката
+ent-ReinforcementRadioSyndicate-desc = Немедленно вызовите агента синдиката сомнительного качества!
 
-ent-ReinforcementRadioSyndicateNukeops-name = nuclear operative radio
-ent-ReinforcementRadioSyndicateNukeops-desc = Call in a nuclear operative of questionable quality, instantly! Basic nukeop equipment provided.
+ent-ReinforcementRadioSyndicateNukeops-name = ядерная оперативная радиостанция
+ent-ReinforcementRadioSyndicateNukeops-desc = Вызовите ядерщика сомнительного качества, немедленно! Предоставляется базовое ядерное оборудование.
 
-ent-ReinforcementRadioSyndicateAncestor-name = syndicate genetic ancestor reinforcement radio
-ent-ReinforcementRadioSyndicateAncestor-desc = Calls in a specially trained ancestor of your choosing to assist you.
+ent-ReinforcementRadioSyndicateAncestor-name = радио синдиката с усилением генетического предка
+ent-ReinforcementRadioSyndicateAncestor-desc = Призывает специально обученного предка по вашему выбору, чтобы тот помог вам.
 
-ent-ReinforcementRadioSyndicateSyndiCat-name = syndicat reinforcement radio
-ent-ReinforcementRadioSyndicateSyndiCat-desc = Calls in a faithfully trained cat with a microbomb to assist you.
+ent-ReinforcementRadioSyndicateSyndiCat-name = радио подкрепления синдиката
+ent-ReinforcementRadioSyndicateSyndiCat-desc = Призывает на помощь преданно обученного кота с микробомбой.
 
-ent-ReinforcementRadioSyndicateCyborgAssault-name = syndicate assault cyborg reinforcement radio
-ent-ReinforcementRadioSyndicateCyborgAssault-desc = Call in a well armed assault cyborg, instantly!
+ent-ReinforcementRadioSyndicateCyborgAssault-name = синдикат нападение киборг подкрепление радио
+ent-ReinforcementRadioSyndicateCyborgAssault-desc = Немедленно вызовите хорошо вооруженного штурмового киборга!
 
-ent-ReinforcementRadioSyndicateAncestorNukeops-name = syndicate genetic ancestor reinforcement radio
-ent-ReinforcementRadioSyndicateAncestorNukeops-desc = Calls in a specially trained ancestor of your choosing to assist you.
+ent-ReinforcementRadioSyndicateAncestorNukeops-name = радио синдиката с усилением генетического предка
+ent-ReinforcementRadioSyndicateAncestorNukeops-desc = Призывает специально обученного предка по вашему выбору, чтобы тот помог вам.
 

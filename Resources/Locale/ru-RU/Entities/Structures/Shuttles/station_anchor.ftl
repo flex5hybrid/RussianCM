@@ -1,12 +1,12 @@
-ent-StationAnchorBase-name = station anchor
-ent-StationAnchorBase-desc = Prevents stations from moving.
+ent-StationAnchorBase-name = якорь станции
+ent-StationAnchorBase-desc = Предотвращает перемещение станций.
 
-ent-StationAnchorIndestructible-name = station anchor
-ent-StationAnchorIndestructible-desc = Prevents stations from moving.
+ent-StationAnchorIndestructible-name = якорь станции
+ent-StationAnchorIndestructible-desc = Предотвращает перемещение станций.
 
-ent-StationAnchor-name = station anchor
-ent-StationAnchor-desc = Prevents stations from moving.
+ent-StationAnchor-name = якорь станции
+ent-StationAnchor-desc = Предотвращает перемещение станций.
 
-ent-StationAnchorOff-name = station anchor
-ent-StationAnchorOff-desc = Prevents stations from moving.
+ent-StationAnchorOff-name = якорь станции
+ent-StationAnchorOff-desc = Предотвращает перемещение станций.
 

@@ -1,2 +1,2 @@
-ent-AU14SpawnPointopforDCC-name = Spawn Point opfor Dropship Crew Chief
-ent-AU14SpawnPointopforDCC-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointopforDCC-name = Точка появления для начальника экипажа десантного корабля
+ent-AU14SpawnPointopforDCC-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

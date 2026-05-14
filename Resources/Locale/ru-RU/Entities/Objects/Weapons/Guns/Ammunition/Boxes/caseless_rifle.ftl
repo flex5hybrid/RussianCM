@@ -1,8 +1,8 @@
-ent-BaseMagazineBoxCaselessRifle-name = ammunition box (.25 caseless)
+ent-BaseMagazineBoxCaselessRifle-name = ящик для боеприпасов (.25 безгильзовый)
 
-ent-MagazineBoxCaselessRifle-name = ammunition box (.25 caseless)
-ent-MagazineBoxCaselessRifle-desc = A cardboard box of .25 caseless rounds. Intended to hold general-purpose kinetic ammunition.
+ent-MagazineBoxCaselessRifle-name = ящик для боеприпасов (.25 безгильзовый)
+ent-MagazineBoxCaselessRifle-desc = Картонная коробка безгильзовых патронов .25. Предназначен для хранения кинетических боеприпасов общего назначения.
 
-ent-MagazineBoxCaselessRiflePractice-name = ammunition box (.25 caseless practice)
-ent-MagazineBoxCaselessRiflePractice-desc = A cardboard box of .25 caseless rounds. Intended to hold non-harmful chalk ammunition.
+ent-MagazineBoxCaselessRiflePractice-name = ящик для боеприпасов (безгильзовая практика .25)
+ent-MagazineBoxCaselessRiflePractice-desc = Картонная коробка безгильзовых патронов .25. Предназначен для хранения неопасных меловых боеприпасов.
 

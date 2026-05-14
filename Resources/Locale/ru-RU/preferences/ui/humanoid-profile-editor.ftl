@@ -32,6 +32,17 @@ humanoid-profile-editor-xeno-postfix = Постфикс ксено:
 humanoid-profile-editor-xeno-postfix-tooltip = 1 буква, если у вас 24 часа в ксено-ролях. 2 буквы или 1 буква и 1 цифра, если у вас 300 часов в ксено-ролях. Постфикс нельзя использовать с 3-буквенным префиксом.
 humanoid-profile-editor-enable = Включить
 humanoid-profile-editor-eyes-label = Цвет глаз:
+
+humanoid-profile-editor-military-jobs-tab = Военные должности
+humanoid-profile-editor-threat-jobs-tab = Угрозы / Третьи стороны
+humanoid-profile-editor-civilian-jobs-tab = Гражданские должности
+
+humanoid-profile-editor-allegiance-label = Принадлежность:
+humanoid-profile-editor-allegiance-none = Нет
+
+humanoid-profile-editor-origin-label = Происхождение:
+humanoid-profile-editor-origin-none = Нет
+
 humanoid-profile-editor-jobs-tab = Должности
 humanoid-profile-editor-preference-unavailable-stay-in-lobby-button = Оставаться в лобби, если выбранная роль недоступна.
 humanoid-profile-editor-preference-unavailable-spawn-as-overflow-button = Стать {$overflowJob}, если выбранная роль недоступна.
@@ -70,3 +81,12 @@ humanoid-profile-editor-trait-count-hint = Доступные очки: [{$curre
 trait-category-disabilities = Инвалидности
 trait-category-speech = Речевые черты
 trait-category-quirks = Причуды
+
+# Armor
+humanoid-profile-editor-preference-armor-random = Случайная
+humanoid-profile-editor-preference-armor-padded = С подкладками
+humanoid-profile-editor-preference-armor-padless = Без подкладок
+humanoid-profile-editor-preference-armor-ridged = Ребристая
+humanoid-profile-editor-preference-armor-carrier = Разгрузочная
+humanoid-profile-editor-preference-armor-skull = С черепом
+humanoid-profile-editor-preference-armor-smooth = Гладкая

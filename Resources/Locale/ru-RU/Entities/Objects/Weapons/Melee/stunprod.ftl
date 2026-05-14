@@ -1,3 +1,3 @@
-ent-Stunprod-name = stun prod
-ent-Stunprod-desc = A stun prod for illegal incapacitation.
+ent-Stunprod-name = оглушить
+ent-Stunprod-desc = Электрошокер для незаконного вывода из строя.
 

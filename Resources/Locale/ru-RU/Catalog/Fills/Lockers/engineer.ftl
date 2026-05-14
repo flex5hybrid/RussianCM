@@ -1,30 +1,30 @@
-ent-ClosetToolFilled-name = tool closet
-ent-ClosetToolFilled-desc = It's a storage unit for tools.
+ent-ClosetToolFilled-name = шкаф для инструментов
+ent-ClosetToolFilled-desc = Это хранилище для инструментов.
 
-ent-LockerElectricalSuppliesFilled-name = electrical supplies locker
-ent-LockerElectricalSuppliesFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerElectricalSuppliesFilled-name = шкафчик для электроприборов
+ent-LockerElectricalSuppliesFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerWeldingSuppliesFilled-name = welding supplies locker
-ent-LockerWeldingSuppliesFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerWeldingSuppliesFilled-name = шкафчик для сварочных принадлежностей
+ent-LockerWeldingSuppliesFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerAtmosphericsFilledHardsuit-name = atmospheric technician's locker
-ent-LockerAtmosphericsFilledHardsuit-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerAtmosphericsFilledHardsuit-name = шкафчик атмосферного техника
+ent-LockerAtmosphericsFilledHardsuit-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerAtmosphericsFilled-name = atmospheric technician's locker
-ent-LockerAtmosphericsFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerAtmosphericsFilled-name = шкафчик атмосферного техника
+ent-LockerAtmosphericsFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerEngineerFilledHardsuit-name = engineer's locker
-ent-LockerEngineerFilledHardsuit-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerEngineerFilledHardsuit-name = шкафчик инженера
+ent-LockerEngineerFilledHardsuit-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerEngineerFilled-name = engineer's locker
-ent-LockerEngineerFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerEngineerFilled-name = шкафчик инженера
+ent-LockerEngineerFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-ClosetRadiationSuitFilled-name = radiation suit closet
-ent-ClosetRadiationSuitFilled-desc = More comfortable than radiation poisioning.
+ent-ClosetRadiationSuitFilled-name = шкаф для радиационного костюма
+ent-ClosetRadiationSuitFilled-desc = Удобнее, чем радиационное отравление.
 
-ent-LockerEvacRepairFilled-name = emergency shuttle emergency locker
-ent-LockerEvacRepairFilled-desc = It's emergencies all the way down.
+ent-LockerEvacRepairFilled-name = аварийный шаттл, аварийный шкафчик
+ent-LockerEvacRepairFilled-desc = Это чрезвычайные ситуации полностью.
 
-ent-LockerWallEvacRepairFilled-name = emergency shuttle emergency wall locker
-ent-LockerWallEvacRepairFilled-desc = It's emergencies all the way down.
+ent-LockerWallEvacRepairFilled-name = аварийный шаттл, аварийный настенный шкафчик
+ent-LockerWallEvacRepairFilled-desc = Это чрезвычайные ситуации полностью.
 

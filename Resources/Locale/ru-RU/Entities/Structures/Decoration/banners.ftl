@@ -1,39 +1,39 @@
-ent-BannerBase-name = base banner
-ent-BannerBase-desc = It's the concept of a banner, you shouldn't be seeing this.
+ent-BannerBase-name = базовый баннер
+ent-BannerBase-desc = Это концепция баннера, вы не должны этого видеть.
 
-ent-BannerNanotrasen-name = nanotrasen banner
-ent-BannerNanotrasen-desc = A banner displaying the Nanotrasen logo. It looks rather cheap.
+ent-BannerNanotrasen-name = нанотрасен баннер
+ent-BannerNanotrasen-desc = Баннер с логотипом Nanotrasen. Выглядит довольно дешево.
 
-ent-BannerCargo-name = cargo banner
-ent-BannerCargo-desc = A banner displaying the colors of the cargo department. Not. Cargonia.
+ent-BannerCargo-name = грузовой баннер
+ent-BannerCargo-desc = Баннер с цветами грузового отдела. Нет. Каргония.
 
-ent-BannerEngineering-name = engineering banner
-ent-BannerEngineering-desc = A banner displaying the colors of the engineering department. Scrungularty.
+ent-BannerEngineering-name = инженерное знамя
+ent-BannerEngineering-desc = Баннер с цветами инженерного отдела. Скрангулярность.
 
-ent-BannerMedical-name = medical banner
-ent-BannerMedical-desc = A banner displaying the colors of the medical department. How sterile.
+ent-BannerMedical-name = медицинский баннер
+ent-BannerMedical-desc = Баннер с цветами медицинского ведомства. Как стерильно.
 
-ent-BannerRevolution-name = revolution banner
-ent-BannerRevolution-desc = A banner displaying revolution. Viva!
+ent-BannerRevolution-name = знамя революции
+ent-BannerRevolution-desc = Баннер, изображающий революцию. Вива!
 
-ent-BannerSyndicate-name = syndicate banner
-ent-BannerSyndicate-desc = A banner from which, according to the syndicate, you should feel hatred for NT.
+ent-BannerSyndicate-name = баннер синдиката
+ent-BannerSyndicate-desc = Баннер, от которого, по мнению синдиката, должна возникнуть ненависть к NT.
 
-ent-BannerScience-name = science banner
-ent-BannerScience-desc = A banner displaying the colors of the science department. Where science has no bounds, and regulations are rarely followed.
+ent-BannerScience-name = научное знамя
+ent-BannerScience-desc = Баннер с цветами научного факультета. Где наука не имеет границ, а правила редко соблюдаются.
 
-ent-BannerSecurity-name = security banner
-ent-BannerSecurity-desc = A banner displaying the colors of the security department. You're surprised it's not vandalised.
+ent-BannerSecurity-name = баннер безопасности
+ent-BannerSecurity-desc = Баннер с цветами службы безопасности. Вы удивлены, что он не подвергся вандализму.
 
-ent-BannerBlue-name = blue banner
-ent-BannerBlue-desc = A banner displaying the color blue. Dabudidabudai.
+ent-BannerBlue-name = синий баннер
+ent-BannerBlue-desc = Баннер синего цвета. Дабудидабудай.
 
-ent-BannerRed-name = red banner
-ent-BannerRed-desc = A banner displaying the color red. The edgy one.
+ent-BannerRed-name = Красное знамя
+ent-BannerRed-desc = Баннер красного цвета. Самый острый.
 
-ent-BannerYellow-name = yellow banner
-ent-BannerYellow-desc = A banner displaying the color yellow. Reminds you of ducks and lemon stands.
+ent-BannerYellow-name = желтый баннер
+ent-BannerYellow-desc = Баннер желтого цвета. Напоминает уток и подставки для лимона.
 
-ent-BannerGreen-name = green banner
-ent-BannerGreen-desc = A banner displaying the color green. Grass, leaves, guacamole.
+ent-BannerGreen-name = зеленое знамя
+ent-BannerGreen-desc = Баннер зеленого цвета. Трава, листья, гуакамоле.
 

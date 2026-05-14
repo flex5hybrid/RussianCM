@@ -23,3 +23,17 @@ cm-department-AuxiliarySupport-description = Обеспечивают огнев
 department-CMOther = Другое
 # survivor
 department-CMSurvivor = Выживший
+
+# Missing entries synced from en-US
+
+cm-department-Other-description = ""
+
+# survivor
+
+cm-department-Survivor-description = Выживайте, когда это возможно, в одиночку или вместе с другими выжившими.
+
+# human
+
+department-CMHuman = Человек
+
+cm-department-Human-description = Все человеческие роли.

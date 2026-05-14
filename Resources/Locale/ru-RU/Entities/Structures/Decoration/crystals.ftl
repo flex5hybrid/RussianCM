@@ -1,24 +1,24 @@
-ent-CrystalGreen-name = crystal
-ent-CrystalGreen-desc = A crystaline solid.
+ent-CrystalGreen-name = кристалл
+ent-CrystalGreen-desc = Кристаллическое твердое вещество.
 
-ent-CrystalPink-name = crystal
-ent-CrystalPink-desc = A crystaline solid.
+ent-CrystalPink-name = кристалл
+ent-CrystalPink-desc = Кристаллическое твердое вещество.
 
-ent-CrystalGrey-name = crystal
-ent-CrystalGrey-desc = A crystaline solid.
+ent-CrystalGrey-name = кристалл
+ent-CrystalGrey-desc = Кристаллическое твердое вещество.
 
-ent-CrystalOrange-name = crystal
-ent-CrystalOrange-desc = A crystaline solid.
+ent-CrystalOrange-name = кристалл
+ent-CrystalOrange-desc = Кристаллическое твердое вещество.
 
-ent-CrystalBlack-name = crystal
-ent-CrystalBlack-desc = A crystaline solid.
+ent-CrystalBlack-name = кристалл
+ent-CrystalBlack-desc = Кристаллическое твердое вещество.
 
-ent-CrystalBlue-name = crystal
-ent-CrystalBlue-desc = A crystaline solid.
+ent-CrystalBlue-name = кристалл
+ent-CrystalBlue-desc = Кристаллическое твердое вещество.
 
-ent-CrystalYellow-name = crystal
-ent-CrystalYellow-desc = A crystaline solid.
+ent-CrystalYellow-name = кристалл
+ent-CrystalYellow-desc = Кристаллическое твердое вещество.
 
-ent-CrystalCyan-name = crystal
-ent-CrystalCyan-desc = A crystaline solid.
+ent-CrystalCyan-name = кристалл
+ent-CrystalCyan-desc = Кристаллическое твердое вещество.
 

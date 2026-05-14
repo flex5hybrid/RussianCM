@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianNurse-name = Spawn Point Civilian Nurse
-ent-AU14SpawnPointCivilianNurse-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianNurse-name = Гражданская медсестра точки возрождения
+ent-AU14SpawnPointCivilianNurse-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

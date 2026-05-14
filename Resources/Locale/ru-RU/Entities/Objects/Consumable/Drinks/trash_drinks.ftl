@@ -1,84 +1,84 @@
-ent-DrinkBottleBaseEmpty-name = base empty bottle
-ent-DrinkBottleBaseEmpty-desc = An empty bottle.
+ent-DrinkBottleBaseEmpty-name = базовая пустая бутылка
+ent-DrinkBottleBaseEmpty-desc = Пустая бутылка.
 
-ent-DrinkBottleBaseSmallEmpty-name = base empty bottle
-ent-DrinkBottleBaseSmallEmpty-desc = An empty bottle.
+ent-DrinkBottleBaseSmallEmpty-name = базовая пустая бутылка
+ent-DrinkBottleBaseSmallEmpty-desc = Пустая бутылка.
 
-ent-DrinkCartonBaseEmpty-name = base empty carton
-ent-DrinkCartonBaseEmpty-desc = An empty carton.
+ent-DrinkCartonBaseEmpty-name = базовая пустая коробка
+ent-DrinkCartonBaseEmpty-desc = Пустая коробка.
 
-ent-DrinkCartonBaseLargeEmpty-name = base empty bottle
-ent-DrinkCartonBaseLargeEmpty-desc = An empty carton.
+ent-DrinkCartonBaseLargeEmpty-name = базовая пустая бутылка
+ent-DrinkCartonBaseLargeEmpty-desc = Пустая коробка.
 
-ent-DrinkBottleAbsinthe-name = Jailbreaker Verte bottle
-ent-DrinkBottleAbsinthe-desc = An empty bottle.
+ent-DrinkBottleAbsinthe-name = Бутылка Jailbreaker Verte
+ent-DrinkBottleAbsinthe-desc = Пустая бутылка.
 
-ent-DrinkBottleAlcoClear-name = alcohol bottle
-ent-DrinkBottleAlcoClear-desc = An empty bottle.
+ent-DrinkBottleAlcoClear-name = бутылка алкоголя
+ent-DrinkBottleAlcoClear-desc = Пустая бутылка.
 
-ent-DrinkBottleAle-name = ale bottle
-ent-DrinkBottleAle-desc = An empty bottle.
+ent-DrinkBottleAle-name = бутылка эля
+ent-DrinkBottleAle-desc = Пустая бутылка.
 
-ent-DrinkBottleBeer-name = beer bottle
-ent-DrinkBottleBeer-desc = An empty bottle.
+ent-DrinkBottleBeer-name = бутылка пива
+ent-DrinkBottleBeer-desc = Пустая бутылка.
 
-ent-DrinkBottleCognac-name = cognac bottle
-ent-DrinkBottleCognac-desc = An empty bottle.
+ent-DrinkBottleCognac-name = бутылка коньяка
+ent-DrinkBottleCognac-desc = Пустая бутылка.
 
-ent-DrinkBottleGin-name = Griffeater gin bottle
-ent-DrinkBottleGin-desc = An empty bottle.
+ent-DrinkBottleGin-name = Бутылка джина Griffeater
+ent-DrinkBottleGin-desc = Пустая бутылка.
 
-ent-DrinkBottleGildlager-name = gildlager bottle
-ent-DrinkBottleGildlager-desc = An empty bottle.
+ent-DrinkBottleGildlager-name = бутылка гилдлагера
+ent-DrinkBottleGildlager-desc = Пустая бутылка.
 
-ent-DrinkBottleCoffeeLiqueur-name = coffee liqueur bottle
-ent-DrinkBottleCoffeeLiqueur-desc = An empty bottle.
+ent-DrinkBottleCoffeeLiqueur-name = бутылка кофейного ликера
+ent-DrinkBottleCoffeeLiqueur-desc = Пустая бутылка.
 
-ent-DrinkBottleNTCahors-name = nt cahors bottle
-ent-DrinkBottleNTCahors-desc = An empty bottle.
+ent-DrinkBottleNTCahors-name = бутылка кагора без запаха
+ent-DrinkBottleNTCahors-desc = Пустая бутылка.
 
-ent-DrinkBottlePatron-name = patron bottle
-ent-DrinkBottlePatron-desc = An empty bottle.
+ent-DrinkBottlePatron-name = бутылка патрона
+ent-DrinkBottlePatron-desc = Пустая бутылка.
 
-ent-DrinkBottlePoisonWine-name = poison wine bottle
-ent-DrinkBottlePoisonWine-desc = An empty bottle.
+ent-DrinkBottlePoisonWine-name = ядовитая бутылка вина
+ent-DrinkBottlePoisonWine-desc = Пустая бутылка.
 
-ent-DrinkBottleRum-name = rum bottle
-ent-DrinkBottleRum-desc = An empty bottle.
+ent-DrinkBottleRum-name = бутылка рома
+ent-DrinkBottleRum-desc = Пустая бутылка.
 
-ent-DrinkBottleTequila-name = tequila bottle
-ent-DrinkBottleTequila-desc = An empty bottle.
+ent-DrinkBottleTequila-name = бутылка текилы
+ent-DrinkBottleTequila-desc = Пустая бутылка.
 
-ent-DrinkBottleVermouth-name = vermouth bottle
-ent-DrinkBottleVermouth-desc = An empty bottle.
+ent-DrinkBottleVermouth-name = бутылка вермута
+ent-DrinkBottleVermouth-desc = Пустая бутылка.
 
-ent-DrinkBottleVodka-name = vodka bottle
-ent-DrinkBottleVodka-desc = An empty bottle.
+ent-DrinkBottleVodka-name = бутылка водки
+ent-DrinkBottleVodka-desc = Пустая бутылка.
 
-ent-DrinkBottleWhiskey-name = whiskey bottle
-ent-DrinkBottleWhiskey-desc = An empty bottle.
+ent-DrinkBottleWhiskey-name = бутылка виски
+ent-DrinkBottleWhiskey-desc = Пустая бутылка.
 
-ent-DrinkBottleWine-name = wine bottle
-ent-DrinkBottleWine-desc = An empty bottle.
+ent-DrinkBottleWine-name = бутылка вина
+ent-DrinkBottleWine-desc = Пустая бутылка.
 
-ent-DrinkCartonLime-name = lime juice carton
-ent-DrinkCartonLime-desc = An empty carton.
+ent-DrinkCartonLime-name = пакет сока лайма
+ent-DrinkCartonLime-desc = Пустая коробка.
 
-ent-DrinkCartonOrange-name = orange juice carton
-ent-DrinkCartonOrange-desc = An empty carton.
+ent-DrinkCartonOrange-name = коробка апельсинового сока
+ent-DrinkCartonOrange-desc = Пустая коробка.
 
-ent-DrinkCartonTomato-name = tomato juice carton
-ent-DrinkCartonTomato-desc = An empty carton.
+ent-DrinkCartonTomato-name = коробка томатного сока
+ent-DrinkCartonTomato-desc = Пустая коробка.
 
-ent-DrinkCartonCream-name = milk cream carton
-ent-DrinkCartonCream-desc = An empty carton.
+ent-DrinkCartonCream-name = картонная коробка для молочных сливок
+ent-DrinkCartonCream-desc = Пустая коробка.
 
-ent-DrinkCartonMilk-name = milk carton
-ent-DrinkCartonMilk-desc = An empty carton.
+ent-DrinkCartonMilk-name = пакет молока
+ent-DrinkCartonMilk-desc = Пустая коробка.
 
-ent-DrinkCartonSoyMilk-name = soy milk carton
-ent-DrinkCartonSoyMilk-desc = An empty carton.
+ent-DrinkCartonSoyMilk-name = картонная упаковка соевого молока
+ent-DrinkCartonSoyMilk-desc = Пустая коробка.
 
-ent-DrinkCartonOatMilk-name = oat milk carton
-ent-DrinkCartonOatMilk-desc = An empty carton.
+ent-DrinkCartonOatMilk-name = пакет овсяного молока
+ent-DrinkCartonOatMilk-desc = Пустая коробка.
 

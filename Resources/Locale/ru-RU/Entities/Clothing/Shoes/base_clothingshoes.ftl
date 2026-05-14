@@ -1,5 +1,5 @@
 ent-ClothingShoesBaseWinterBoots-name = lathe-category-clothing
-ent-ClothingShoesBaseWinterBoots-desc = Fluffy boots to help survive even the coldest of winters.
+ent-ClothingShoesBaseWinterBoots-desc = Пушистые сапожки помогут пережить даже самую холодную зиму.
 
 ent-ClothingShoesBase-name = lathe-category-clothing
 

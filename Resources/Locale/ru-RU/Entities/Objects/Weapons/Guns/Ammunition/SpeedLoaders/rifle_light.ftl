@@ -1,3 +1,3 @@
-ent-SpeedLoaderLightRifle-name = speed loader (.30 rifle)
-ent-SpeedLoaderLightRifle-desc = 5-round 'stripper clip' for quickly reloading the Kardashev-Mosin. Holds 5 rounds of .30 rifle.
+ent-SpeedLoaderLightRifle-name = скоростной погрузчик (винтовка .30)
+ent-SpeedLoaderLightRifle-desc = «Обойма для стриптиза» на 5 патронов для быстрой перезарядки пистолета Кардашева-Мосина. Вмещает 5 патронов для винтовки .30.
 

@@ -1,3 +1,3 @@
-ent-Turnstile-name = turnstile
-ent-Turnstile-desc = A mechanical door that permits one-way access and prevents tailgating.
+ent-Turnstile-name = турникет
+ent-Turnstile-desc = Механическая дверь, обеспечивающая односторонний доступ и предотвращающая закрытие багажника.
 

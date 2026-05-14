@@ -1,134 +1,134 @@
-ent-FoodSoupPea-name = pea soup
-ent-FoodSoupPea-desc = A humble split pea soup.
+ent-FoodSoupPea-name = гороховый суп
+ent-FoodSoupPea-desc = Скромный гороховый суп.
 
-ent-FoodSaladAesir-name = aesir salad
-ent-FoodSaladAesir-desc = Probably too incredible for mortals to fully enjoy.
+ent-FoodSaladAesir-name = Асирский салат
+ent-FoodSaladAesir-desc = Наверное, слишком невероятно, чтобы смертные могли в полной мере насладиться им.
 
-ent-FoodSaladHerb-name = herb salad
-ent-FoodSaladHerb-desc = A tasty salad with apples on top.
+ent-FoodSaladHerb-name = салат из трав
+ent-FoodSaladHerb-desc = Вкусный салат с яблоками сверху.
 
-ent-FoodSaladValid-name = valid salad
-ent-FoodSaladValid-desc = It's just an herb salad with meatballs and fried potato slices. Nothing suspicious about it.
+ent-FoodSaladValid-name = действительный салат
+ent-FoodSaladValid-desc = Это просто салат с зеленью, фрикадельками и ломтиками жареного картофеля. В этом нет ничего подозрительного.
 
-ent-FoodSaladColeslaw-name = coleslaw
-ent-FoodSaladColeslaw-desc = Shredded cabbage and red onions dressed with a vinaigrette.
+ent-FoodSaladColeslaw-name = салат из капусты
+ent-FoodSaladColeslaw-desc = Нашинкованная капуста и красный лук заправлены винегретом.
 
-ent-FoodSaladCaesar-name = caesar salad
-ent-FoodSaladCaesar-desc = A simple yet flavorful salad of onions, lettuce, croutons, and shreds of cheese dressed in oil. Comes with a slice of pita bread!
+ent-FoodSaladCaesar-name = салат цезарь
+ent-FoodSaladCaesar-desc = Простой, но ароматный салат из лука, салата, гренок и кусочков сыра, заправленный маслом. В комплекте идет кусочек лаваша!
 
-ent-FoodSaladKimchi-name = kimchi salad
-ent-FoodSaladKimchi-desc = It really is just a spicy salad.
+ent-FoodSaladKimchi-name = салат кимчи
+ent-FoodSaladKimchi-desc = На самом деле это просто острый салат.
 
-ent-FoodSaladFruit-name = fruit salad
-ent-FoodSaladFruit-desc = Your standard fruit salad.
+ent-FoodSaladFruit-name = фруктовый салат
+ent-FoodSaladFruit-desc = Ваш стандартный фруктовый салат.
 
-ent-FoodSaladJungle-name = jungle salad
-ent-FoodSaladJungle-desc = Exotic fruits in a bowl.
+ent-FoodSaladJungle-name = салат из джунглей
+ent-FoodSaladJungle-desc = Экзотические фрукты в миске.
 
-ent-FoodSaladCitrus-name = citrus salad
-ent-FoodSaladCitrus-desc = Citrus overload!
+ent-FoodSaladCitrus-name = цитрусовый салат
+ent-FoodSaladCitrus-desc = Цитрусовый перебор!
 
-ent-FoodSaladEden-name = salad of eden
-ent-FoodSaladEden-desc = A salad brimming with untapped potential.
+ent-FoodSaladEden-name = салат Эдема
+ent-FoodSaladEden-desc = Салат, полный неиспользованного потенциала.
 
-ent-FoodRiceBoiled-name = boiled rice
-ent-FoodRiceBoiled-desc = A warm bowl of rice.
+ent-FoodRiceBoiled-name = отварной рис
+ent-FoodRiceBoiled-desc = Теплая миска риса.
 
-ent-FoodRiceEgg-name = egg-fried rice
-ent-FoodRiceEgg-desc = A bowl of rice with a fried egg.
+ent-FoodRiceEgg-name = рис, жареный в яйце
+ent-FoodRiceEgg-desc = Чашка риса с жареным яйцом.
 
-ent-FoodRicePork-name = rice and pork
-ent-FoodRicePork-desc = Well, it looks like pork...
+ent-FoodRicePork-name = рис и свинина
+ent-FoodRicePork-desc = Ну, похоже на свинину...
 
-ent-FoodRicePudding-name = rice pudding
-ent-FoodRicePudding-desc = Everybody loves rice pudding!
+ent-FoodRicePudding-name = рисовый пудинг
+ent-FoodRicePudding-desc = Все любят рисовый пудинг!
 
-ent-FoodRiceGumbo-name = black-eyed gumbo
-ent-FoodRiceGumbo-desc = A spicy and savory meat and rice dish.
+ent-FoodRiceGumbo-name = черноглазый гамбо
+ent-FoodRiceGumbo-desc = Пикантное и пикантное блюдо из мяса и риса.
 
-ent-FoodOatmeal-name = oatmeal
-ent-FoodOatmeal-desc = A nice bowl of oatmeal.
+ent-FoodOatmeal-name = овсянка
+ent-FoodOatmeal-desc = Хорошая тарелка овсянки.
 
-ent-FoodJellyDuff-name = space liberty duff
-ent-FoodJellyDuff-desc = Jello gelatin, from Alfred Hubbard's cookbook.
+ent-FoodJellyDuff-name = космическая свобода, дафф
+ent-FoodJellyDuff-desc = Желатиновое желе из кулинарной книги Альфреда Хаббарда.
 
-ent-FoodJellyAmanita-name = amanita jelly
-ent-FoodJellyAmanita-desc = It's evil, don't touch it!
+ent-FoodJellyAmanita-name = мухомор желе
+ent-FoodJellyAmanita-desc = Это зло, не трогайте его!
 
-ent-FoodSoupMeatball-name = meatball soup
-ent-FoodSoupMeatball-desc = You've got balls kid, BALLS!
+ent-FoodSoupMeatball-name = суп с фрикадельками
+ent-FoodSoupMeatball-desc = У тебя есть яйца, малыш, ЯИЦЫ!
 
-ent-FoodSoupSlime-name = slime soup
-ent-FoodSoupSlime-desc = If no water is available, you may substitute tears.
+ent-FoodSoupSlime-name = суп из слизи
+ent-FoodSoupSlime-desc = Если воды нет, ее можно заменить слезами.
 
-ent-FoodSoupTomatoBlood-name = tomato soup
-ent-FoodSoupTomatoBlood-desc = Smells like copper... is that a bone?
+ent-FoodSoupTomatoBlood-name = томатный суп
+ent-FoodSoupTomatoBlood-desc = Медью пахнет... это кость?
 
-ent-FoodSoupWingFangChu-name = wing fang chu
-ent-FoodSoupWingFangChu-desc = A savory dish of alien wing wang in soy.
+ent-FoodSoupWingFangChu-name = крыло клык чу
+ent-FoodSoupWingFangChu-desc = Пикантное блюдо из крыльев инопланетян в соевом соусе.
 
-ent-FoodSoupClown-name = clown's tears
-ent-FoodSoupClown-desc = Not very funny.
+ent-FoodSoupClown-name = слезы клоуна
+ent-FoodSoupClown-desc = Не очень смешно.
 
-ent-FoodSoupVegetable-name = vegetable soup
-ent-FoodSoupVegetable-desc = A true vegan meal.
+ent-FoodSoupVegetable-name = овощной суп
+ent-FoodSoupVegetable-desc = Настоящее веганское блюдо.
 
-ent-FoodSoupNettle-name = nettle soup
-ent-FoodSoupNettle-desc = To think, the botanist would've beat you to death with one of these.
+ent-FoodSoupNettle-name = суп из крапивы
+ent-FoodSoupNettle-desc = Подумать только, ботаник забил бы тебя до смерти одним из них.
 
-ent-FoodSoupMystery-name = mystery soup
-ent-FoodSoupMystery-desc = The mystery is, why aren't you eating it?
+ent-FoodSoupMystery-name = таинственный суп
+ent-FoodSoupMystery-desc = Загадка в том, почему вы это не едите?
 
-ent-FoodSoupChiliHot-name = bowl of hot chili
-ent-FoodSoupChiliHot-desc = A Texan five-alarm chili!
+ent-FoodSoupChiliHot-name = миска острого чили
+ent-FoodSoupChiliHot-desc = Техасский перец чили «пять тревог»!
 
-ent-FoodSoupChiliCold-name = cold chili
-ent-FoodSoupChiliCold-desc = This slush is barely a liquid!
+ent-FoodSoupChiliCold-name = холодный перец чили
+ent-FoodSoupChiliCold-desc = Эта слякоть почти жидкая!
 
-ent-FoodSoupChiliClown-name = chili con carnival
-ent-FoodSoupChiliClown-desc = A delicious stew of meat, chilies, and salty, salty clown tears.
+ent-FoodSoupChiliClown-name = карнавал чили кон
+ent-FoodSoupChiliClown-desc = Вкусное рагу из мяса, перца чили и соленых клоунских слез.
 
-ent-FoodSoupMonkey-name = monkey's delight
-ent-FoodSoupMonkey-desc = A delicious soup with hunks of monkey meat simmered to perfection, in a broth that tastes faintly of bananas.
+ent-FoodSoupMonkey-name = обезьяний восторг
+ent-FoodSoupMonkey-desc = Восхитительный суп с кусочками обезьяньего мяса, приготовленными на медленном огне, в бульоне с легким банановым привкусом.
 
-ent-FoodSoupTomato-name = tomato soup
-ent-FoodSoupTomato-desc = Drinking this feels like being a vampire! A tomato vampire...
+ent-FoodSoupTomato-name = томатный суп
+ent-FoodSoupTomato-desc = Выпивая это, чувствуешь себя вампиром! Томатный вампир...
 
-ent-FoodSoupEyeball-name = eyeball soup
-ent-FoodSoupEyeball-desc = It's looking back at you...
+ent-FoodSoupEyeball-name = суп из глазного яблока
+ent-FoodSoupEyeball-desc = Оно смотрит на тебя...
 
-ent-FoodSoupMiso-name = miso soup
-ent-FoodSoupMiso-desc = Salty, fishy soup, best had with ramen.
+ent-FoodSoupMiso-name = суп мисо
+ent-FoodSoupMiso-desc = Соленый рыбный суп, лучше всего есть с раменом.
 
-ent-FoodSoupMushroom-name = mushroom soup
-ent-FoodSoupMushroom-desc = A delicious and hearty mushroom soup.
+ent-FoodSoupMushroom-name = грибной суп
+ent-FoodSoupMushroom-desc = Вкусный и сытный грибной суп.
 
-ent-FoodSoupBeet-name = beet soup
-ent-FoodSoupBeet-desc = Wait, how do you spell it again..?
+ent-FoodSoupBeet-name = свекольный суп
+ent-FoodSoupBeet-desc = Подождите, а как это еще раз написать?
 
-ent-FoodSoupBeetRed-name = red beet soup
-ent-FoodSoupBeetRed-desc = Quite a delicacy.
+ent-FoodSoupBeetRed-name = суп из красной свеклы
+ent-FoodSoupBeetRed-desc = Довольно деликатес.
 
-ent-FoodSoupStew-name = stew
-ent-FoodSoupStew-desc = A nice and warm stew. Healthy and strong.
+ent-FoodSoupStew-name = тушить
+ent-FoodSoupStew-desc = Вкусное и теплое рагу. Здоровый и сильный.
 
-ent-FoodSoupPotato-name = sweet potato soup
-ent-FoodSoupPotato-desc = Delicious sweet potato in soup form.
+ent-FoodSoupPotato-name = сладкий картофельный суп
+ent-FoodSoupPotato-desc = Вкусный сладкий картофель в виде супа.
 
-ent-FoodSoupOnion-name = french onion soup
-ent-FoodSoupOnion-desc = Good enough to make a grown mime cry.
+ent-FoodSoupOnion-name = французский луковый суп
+ent-FoodSoupOnion-desc = Достаточно хорошо, чтобы заставить взрослого мима плакать.
 
-ent-FoodSoupBisque-name = bisque
-ent-FoodSoupBisque-desc = A classic entrée from Space France.
+ent-FoodSoupBisque-name = бисквит
+ent-FoodSoupBisque-desc = Классическое блюдо от Space France.
 
-ent-FoodSoupElectron-name = electron soup
-ent-FoodSoupElectron-desc = A gastronomic curiosity of ethereal origin.
+ent-FoodSoupElectron-name = электронный суп
+ent-FoodSoupElectron-desc = Гастрономическая диковинка неземного происхождения.
 
-ent-FoodSoupBungo-name = bungo curry
-ent-FoodSoupBungo-desc = A spicy vegetable curry made with the humble bungo fruit, Exotic!
+ent-FoodSoupBungo-name = банго карри
+ent-FoodSoupBungo-desc = Пряное овощное карри, приготовленное из скромных фруктов бунго, Exotic!
 
-ent-FoodSoupEscargot-name = escargot
-ent-FoodSoupEscargot-desc = A creamy and rich bowl of snails, bon appetit!
+ent-FoodSoupEscargot-name = улитка
+ent-FoodSoupEscargot-desc = Нежная и насыщенная тарелка с улитками, приятного аппетита!
 
-ent-FoodBowlBase-name = item
+ent-FoodBowlBase-name = элемент
 

@@ -1,51 +1,51 @@
-ent-BaseFlatpack-name = base flatpack
-ent-BaseFlatpack-desc = A flatpack used for constructing something.
+ent-BaseFlatpack-name = базовый плоский пакет
+ent-BaseFlatpack-desc = Плоская упаковка, используемая для создания чего-либо.
 
-ent-SolarAssemblyFlatpack-name = solar assembly flatpack
-ent-SolarAssemblyFlatpack-desc = A flatpack used for constructing a solar assembly.
+ent-SolarAssemblyFlatpack-name = солнечная сборка в плоской упаковке
+ent-SolarAssemblyFlatpack-desc = Плоская упаковка, используемая для сборки солнечной батареи.
 
-ent-AmePartFlatpack-name = AME flatpack
-ent-AmePartFlatpack-desc = A flatpack used for constructing an antimatter engine reactor.
+ent-AmePartFlatpack-name = плоский пакет AME
+ent-AmePartFlatpack-desc = Плоский пакет, используемый для создания реактора двигателя на антивеществе.
 
-ent-SingularityGeneratorFlatpack-name = singularity generator flatpack
-ent-SingularityGeneratorFlatpack-desc = A flatpack used for constructing a singularity generator.
+ent-SingularityGeneratorFlatpack-name = плоский пакет генератора сингулярности
+ent-SingularityGeneratorFlatpack-desc = Flatpack, используемый для создания генератора сингулярностей.
 
-ent-RadiationCollectorFlatpack-name = radiation collector flatpack
-ent-RadiationCollectorFlatpack-desc = A flatpack used for constructing a radiation collector.
+ent-RadiationCollectorFlatpack-name = плоский пакет коллектора радиации
+ent-RadiationCollectorFlatpack-desc = Плоская упаковка, используемая для изготовления коллектора радиации.
 
-ent-ContainmentFieldGeneratorFlatpack-name = containment field generator flatpack
-ent-ContainmentFieldGeneratorFlatpack-desc = A flatpack used for constructing a containment field generator.
+ent-ContainmentFieldGeneratorFlatpack-name = плоский пакет генератора поля сдерживания
+ent-ContainmentFieldGeneratorFlatpack-desc = Плоская упаковка, используемая для создания генератора сдерживающего поля.
 
-ent-EmitterFlatpack-name = emitter flatpack
-ent-EmitterFlatpack-desc = A flatpack used for constructing an emitter.
+ent-EmitterFlatpack-name = плоский пакет излучателя
+ent-EmitterFlatpack-desc = Плоский пакет, используемый для создания излучателя.
 
-ent-TeslaGeneratorFlatpack-name = tesla generator flatpack
-ent-TeslaGeneratorFlatpack-desc = A flatpack used for constructing a tesla generator.
+ent-TeslaGeneratorFlatpack-name = генератор тесла в плоской упаковке
+ent-TeslaGeneratorFlatpack-desc = Плоский пакет, используемый для сборки генератора Тесла.
 
-ent-TeslaCoilFlatpack-name = tesla coil flatpack
-ent-TeslaCoilFlatpack-desc = A flatpack used for constructing a tesla coil.
+ent-TeslaCoilFlatpack-name = катушка тесла в плоской упаковке
+ent-TeslaCoilFlatpack-desc = Плоская упаковка, используемая для изготовления катушки Тесла.
 
-ent-TeslaGroundingRodFlatpack-name = grounding rod flatpack
-ent-TeslaGroundingRodFlatpack-desc = A flatpack used for constructing a grounding rod.
+ent-TeslaGroundingRodFlatpack-name = плоский пакет заземляющего стержня
+ent-TeslaGroundingRodFlatpack-desc = Плоская упаковка, используемая для изготовления заземляющего стержня.
 
-ent-GyroscopeFlatpack-name = gyroscope flatpack
-ent-GyroscopeFlatpack-desc = A flatpack used for constructing a gyroscope.
+ent-GyroscopeFlatpack-name = гироскоп
+ent-GyroscopeFlatpack-desc = Flatpack, используемый для сборки гироскопа.
 
-ent-ThrusterFlatpack-name = thruster flatpack
-ent-ThrusterFlatpack-desc = A flatpack used for constructing a thruster.
+ent-ThrusterFlatpack-name = подруливающее устройство
+ent-ThrusterFlatpack-desc = Плоский пакет, используемый для сборки двигателя.
 
-ent-SpaceHeaterFlatpack-name = space heater flatpack
-ent-SpaceHeaterFlatpack-desc = A flatpack used for constructing a space heater.
+ent-SpaceHeaterFlatpack-name = плоский обогреватель
+ent-SpaceHeaterFlatpack-desc = Плоская упаковка, используемая для сборки обогревателя.
 
-ent-FaxMachineFlatpack-name = fax machine flatpack
-ent-FaxMachineFlatpack-desc = A flatpack used for constructing a fax machine.
+ent-FaxMachineFlatpack-name = плоский пакет факса
+ent-FaxMachineFlatpack-desc = Плоская упаковка, используемая для сборки факсимильного аппарата.
 
-ent-CrewMonitoringServerFlatpack-name = crew monitoring server flatpack
-ent-CrewMonitoringServerFlatpack-desc = A flatpack used for constructing a crew monitoring server.
+ent-CrewMonitoringServerFlatpack-name = плоский пакет сервера мониторинга экипажа
+ent-CrewMonitoringServerFlatpack-desc = Flatpack, используемый для создания сервера мониторинга экипажа.
 
-ent-CrewMonitoringComputerFlatpack-name = crew monitoring computer flatpack
-ent-CrewMonitoringComputerFlatpack-desc = A flatpack used for constructing a crew monitoring console.
+ent-CrewMonitoringComputerFlatpack-name = плоский компьютер для мониторинга экипажа
+ent-CrewMonitoringComputerFlatpack-desc = Flatpack, используемый для сборки пульта наблюдения экипажа.
 
-ent-HydroponicsTrayFlatpack-name = hydroponics tray flatpack
-ent-HydroponicsTrayFlatpack-desc = A flatpack used for constructing a hydroponics tray.
+ent-HydroponicsTrayFlatpack-name = лоток для гидропоники в плоской упаковке
+ent-HydroponicsTrayFlatpack-desc = Плоская упаковка, используемая для изготовления лотка для гидропоники.
 

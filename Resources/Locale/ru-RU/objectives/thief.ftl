@@ -1,3 +1,3 @@
-ent-EscapeThiefShuttleObjective-name = Escape to centcomm alive and unrestrained.
-ent-EscapeThiefShuttleObjective-desc = You don't want your illegal activities to be discovered by anyone, do you?
+ent-EscapeThiefShuttleObjective-name = Сбегите в Центкомм живым и безудержным.
+ent-EscapeThiefShuttleObjective-desc = Вы ведь не хотите, чтобы о вашей незаконной деятельности кто-нибудь узнал?
 

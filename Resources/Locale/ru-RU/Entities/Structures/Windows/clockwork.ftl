@@ -1,8 +1,8 @@
-ent-ClockworkWindow-name = clockwork window
-ent-ClockworkWindow-desc = Don't smudge up the brass down there.
+ent-ClockworkWindow-name = заводное окно
+ent-ClockworkWindow-desc = Не пачкай там медь.
 
-ent-WindowClockworkDirectional-name = directional clockwork window
-ent-WindowClockworkDirectional-desc = Don't smudge up the brass down there.
+ent-WindowClockworkDirectional-name = направленное заводное окно
+ent-WindowClockworkDirectional-desc = Не пачкай там медь.
 
 ent-ClockworkWindowDiagonal-name = construction-recipe-clockwork-window-diagonal
 

@@ -1,21 +1,21 @@
-ent-ClothingShoesBootsMagBase-name = magboots
-ent-ClothingShoesBootsMagBase-desc = Magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
+ent-ClothingShoesBootsMagBase-name = магнитные сапоги
+ent-ClothingShoesBootsMagBase-desc = Магнитные ботинки, часто используемые во время выхода в открытый космос, чтобы гарантировать, что пользователь остается надежно прикрепленным к транспортному средству.
 
-ent-ClothingShoesBootsMagAdv-name = advanced magboots
-ent-ClothingShoesBootsMagAdv-desc = State-of-the-art magnetic boots that do not slow down their wearer.
+ent-ClothingShoesBootsMagAdv-name = продвинутые магнитные сапоги
+ent-ClothingShoesBootsMagAdv-desc = Современные магнитные ботинки, которые не замедляют движение своего владельца.
 
-ent-ClothingShoesBootsMagBlinding-name = magboots of blinding speed
-ent-ClothingShoesBootsMagBlinding-desc = These would look fetching on a fetcher like you.
+ent-ClothingShoesBootsMagBlinding-name = магические сапоги ослепляющей скорости
+ent-ClothingShoesBootsMagBlinding-desc = На таком сборщике, как вы, они бы выглядели привлекательно.
 
-ent-ClothingShoesBootsMagSyndie-name = blood-red magboots
-ent-ClothingShoesBootsMagSyndie-desc = Reverse-engineered magnetic boots that have a heavy magnetic pull and integrated thrusters. It can hold 0.75 L of gas.
+ent-ClothingShoesBootsMagSyndie-name = кроваво-красные магические сапоги
+ent-ClothingShoesBootsMagSyndie-desc = Магнитные ботинки обратной разработки с сильным магнитным притяжением и встроенными двигателями. Он вмещает 0,75 л газа.
 
-ent-ActionToggleMagboots-name = Toggle Magboots
-ent-ActionToggleMagboots-desc = Toggles the magboots on and off.
+ent-ActionToggleMagboots-name = Переключить Магботы
+ent-ActionToggleMagboots-desc = Включает и выключает магнитные ботинки.
 
-ent-ClothingShoesBootsMag-name = magboots
-ent-ClothingShoesBootsMag-desc = Magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
+ent-ClothingShoesBootsMag-name = магнитные сапоги
+ent-ClothingShoesBootsMag-desc = Магнитные ботинки, часто используемые во время выхода в открытый космос, чтобы гарантировать, что пользователь остается надежно прикрепленным к транспортному средству.
 
-ent-ClothingShoesBootsMagSci-name = magboots
-ent-ClothingShoesBootsMagSci-desc = Magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
+ent-ClothingShoesBootsMagSci-name = магнитные сапоги
+ent-ClothingShoesBootsMagSci-desc = Магнитные ботинки, часто используемые во время выхода в открытый космос, чтобы гарантировать, что пользователь остается надежно прикрепленным к транспортному средству.
 

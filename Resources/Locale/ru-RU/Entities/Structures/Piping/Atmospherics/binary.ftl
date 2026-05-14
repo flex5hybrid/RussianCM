@@ -1,36 +1,36 @@
-ent-GasPressurePump-name = gas pump
-ent-GasPressurePump-desc = A pump that moves gas by pressure.
+ent-GasPressurePump-name = бензонасос
+ent-GasPressurePump-desc = Насос, который перемещает газ под давлением.
 
-ent-GasVolumePump-name = volumetric gas pump
-ent-GasVolumePump-desc = A pump that moves gas by volume.
+ent-GasVolumePump-name = объемный газовый насос
+ent-GasVolumePump-desc = Насос, перемещающий газ по объему.
 
-ent-GasPressureRegulator-name = inlet pressure regulator
-ent-GasPressureRegulator-desc = A valve that releases gas when the inlet pressure exceeds a certain threshold.
+ent-GasPressureRegulator-name = регулятор входного давления
+ent-GasPressureRegulator-desc = Клапан, который выпускает газ, когда входное давление превышает определенный порог.
 
-ent-GasPassiveGate-name = passive gate
-ent-GasPassiveGate-desc = A one-way air valve that does not require power.
+ent-GasPassiveGate-name = пассивные ворота
+ent-GasPassiveGate-desc = Односторонний воздушный клапан, не требующий питания.
 
-ent-GasValve-name = manual valve
-ent-GasValve-desc = A pipe with a valve that can be used to disable the flow of gas through it.
+ent-GasValve-name = ручной клапан
+ent-GasValve-desc = Труба с клапаном, с помощью которого можно перекрыть поток газа через нее.
 
-ent-SignalControlledValve-name = signal valve
-ent-SignalControlledValve-desc = A pipe with a valve that can be controlled with signals.
+ent-SignalControlledValve-name = сигнальный клапан
+ent-SignalControlledValve-desc = Труба с клапаном, которым можно управлять с помощью сигналов.
 
-ent-GasPort-name = connector port
-ent-GasPort-desc = For connecting portable devices related to atmospherics control.
+ent-GasPort-name = порт разъема
+ent-GasPort-desc = Для подключения портативных устройств, связанных с контролем атмосферы.
 
-ent-GasDualPortVentPump-name = dual-port air vent
-ent-GasDualPortVentPump-desc = Has a valve and a pump attached to it. There are two ports, one is an input for releasing air, the other is an output when siphoning.
+ent-GasDualPortVentPump-name = двухпортовый воздухоотводчик
+ent-GasDualPortVentPump-desc = К нему прикреплен клапан и насос. Имеется два порта, один — вход для выпуска воздуха, другой — выход при сифонировании.
 
-ent-GasRecycler-name = gas recycler
-ent-GasRecycler-desc = Recycles carbon dioxide and nitrous oxide. Heater and compressor not included.
+ent-GasRecycler-name = рециркулятор газа
+ent-GasRecycler-desc = Перерабатывает углекислый газ и закись азота. Нагреватель и компрессор в комплект не входят.
 
-ent-HeatExchanger-name = radiator
-ent-HeatExchanger-desc = Transfers heat between the pipe and its surroundings.
+ent-HeatExchanger-name = радиатор
+ent-HeatExchanger-desc = Переносит тепло между трубой и окружающей средой.
 
-ent-GasBinaryBase-name = gas pipe
-ent-GasBinaryBase-desc = Holds gas.
+ent-GasBinaryBase-name = газовая труба
+ent-GasBinaryBase-desc = Держит газ.
 
 ent-HeatExchangerBend-name = construction-recipe-heat-exchanger-bend
-ent-HeatExchangerBend-desc = Holds gas.
+ent-HeatExchangerBend-desc = Держит газ.
 

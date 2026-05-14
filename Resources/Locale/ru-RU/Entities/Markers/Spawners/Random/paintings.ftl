@@ -1,2 +1,2 @@
-ent-RandomPainting-name = random painting spawner
+ent-RandomPainting-name = генератор случайных картин
 

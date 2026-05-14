@@ -9,7 +9,7 @@ cmd-replay-pause-help = replay_pause
 cmd-replay-toggle-desc = Переключить паузу повтора.
 cmd-replay-toggle-help = replay_toggle
 
-cmd-replay-toggle-screenshot-mode-desc = Toggles screenshot mode for replays, hiding the replay control widget.
+cmd-replay-toggle-screenshot-mode-desc = Переключает режим скриншотов для повторов, скрывая виджет управления повторами.
 cmd-replay-toggle-screenshot-mode-help = replay_toggle_screenshot_mode
 
 cmd-replay-stop-desc = Остановить и выгрузить повтор.
@@ -17,7 +17,7 @@ cmd-replay-stop-help = replay_stop
 
 cmd-replay-load-desc = Загрузить и начать повтор.
 cmd-replay-load-help = replay_load <папка повтора>
-cmd-replay-load-hint = Replay folder
+cmd-replay-load-hint = Папка воспроизведения
 
 cmd-replay-skip-desc = Перемотать вперёд или назад.
 cmd-replay-skip-help = replay_skip <кол-во тиков или timespan>
@@ -55,7 +55,7 @@ cmd-replay-recording-stats-result = Продолжительность: { $time 
 
 
 # Time Control UI
-replay-time-box-scrubbing-label = Dynamic Scrubbing
+replay-time-box-scrubbing-label = Динамическая очистка
 replay-time-box-replay-time-label = Время записи: { $current } / { $end }  ({ $percentage }%)
 replay-time-box-server-time-label = Серверное время: { $current } / { $end }
 replay-time-box-index-label = Индекс: { $current } / { $total }

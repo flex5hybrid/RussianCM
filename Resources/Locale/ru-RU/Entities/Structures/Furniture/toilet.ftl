@@ -1,15 +1,15 @@
-ent-BaseToilet-name = toilet
-ent-BaseToilet-desc = The HT-451, a torque rotation-based, waste disposal unit for small matter. This one seems remarkably clean.
+ent-BaseToilet-name = туалет
+ent-BaseToilet-desc = HT-451, устройство для удаления мелких отходов с вращающимся моментом. Этот кажется удивительно чистым.
 
-ent-ToiletEmpty-name = toilet
-ent-ToiletEmpty-desc = The HT-451, a torque rotation-based, waste disposal unit for small matter. This one seems remarkably clean.
+ent-ToiletEmpty-name = туалет
+ent-ToiletEmpty-desc = HT-451, устройство для удаления мелких отходов с вращающимся моментом. Этот кажется удивительно чистым.
 
-ent-ToiletGoldenEmpty-name = golden toilet
-ent-ToiletGoldenEmpty-desc = The HT-451G is the gold version of the device. It says on the side that it is made of the purest Mercurian gold and a real leather seat.
+ent-ToiletGoldenEmpty-name = золотой унитаз
+ent-ToiletGoldenEmpty-desc = HT-451G — золотая версия устройства. Сбоку написано, что он изготовлен из чистейшего меркурианского золота, а сиденье из настоящей кожи.
 
-ent-ToiletDirtyWater-name = toilet
-ent-ToiletDirtyWater-desc = The HT-451, a torque rotation-based, waste disposal unit for small matter. This one seems remarkably clean.
+ent-ToiletDirtyWater-name = туалет
+ent-ToiletDirtyWater-desc = HT-451, устройство для удаления мелких отходов с вращающимся моментом. Этот кажется удивительно чистым.
 
 ent-ToiletGoldenDirtyWater-name = steal-target-groups-toilet-golden-dirty-water
-ent-ToiletGoldenDirtyWater-desc = The HT-451G is the gold version of the device. It says on the side that it is made of the purest Mercurian gold and a real leather seat.
+ent-ToiletGoldenDirtyWater-desc = HT-451G — золотая версия устройства. Сбоку написано, что он изготовлен из чистейшего меркурианского золота, а сиденье из настоящей кожи.
 

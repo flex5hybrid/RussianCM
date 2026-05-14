@@ -1,7 +1,7 @@
-ent-ReinforcedWindow-name = reinforced window
+ent-ReinforcedWindow-name = усиленное окно
 
-ent-WindowReinforcedDirectional-name = directional reinforced window
-ent-WindowReinforcedDirectional-desc = Don't smudge up the glass down there.
+ent-WindowReinforcedDirectional-name = направленное усиленное окно
+ent-WindowReinforcedDirectional-desc = Не испачкай там стекло.
 
 ent-ReinforcedWindowDiagonal-name = construction-recipe-reinforced-window-diagonal
 

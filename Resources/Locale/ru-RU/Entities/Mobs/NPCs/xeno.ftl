@@ -1,33 +1,33 @@
-ent-MobXeno-name = burrower
-ent-MobXeno-desc = They mostly come at night. Mostly.
+ent-MobXeno-name = роющий
+ent-MobXeno-desc = В основном они приходят ночью. По большей части.
 
-ent-MobXenoPraetorian-name = praetorian
-ent-MobXenoPraetorian-desc = They mostly come at night. Mostly.
+ent-MobXenoPraetorian-name = преторианец
+ent-MobXenoPraetorian-desc = В основном они приходят ночью. По большей части.
 
-ent-MobXenoDrone-name = drone
-ent-MobXenoDrone-desc = They mostly come at night. Mostly.
+ent-MobXenoDrone-name = дрон
+ent-MobXenoDrone-desc = В основном они приходят ночью. По большей части.
 
-ent-MobXenoQueen-name = queen
-ent-MobXenoQueen-desc = They mostly come at night. Mostly.
+ent-MobXenoQueen-name = королева
+ent-MobXenoQueen-desc = В основном они приходят ночью. По большей части.
 
-ent-MobXenoRavager-name = ravager
-ent-MobXenoRavager-desc = They mostly come at night. Mostly.
+ent-MobXenoRavager-name = опустошитель
+ent-MobXenoRavager-desc = В основном они приходят ночью. По большей части.
 
-ent-MobXenoRunner-name = runner
-ent-MobXenoRunner-desc = They mostly come at night. Mostly.
+ent-MobXenoRunner-name = бегун
+ent-MobXenoRunner-desc = В основном они приходят ночью. По большей части.
 
-ent-MobXenoRouny-name = rouny
-ent-MobXenoRouny-desc = They mostly come at night. Mostly.
+ent-MobXenoRouny-name = кругленький
+ent-MobXenoRouny-desc = В основном они приходят ночью. По большей части.
 
-ent-MobXenoSpitter-name = spitter
-ent-MobXenoSpitter-desc = They mostly come at night. Mostly.
+ent-MobXenoSpitter-name = плевак
+ent-MobXenoSpitter-desc = В основном они приходят ночью. По большей части.
 
-ent-MobPurpleSnake-name = space adder
-ent-MobPurpleSnake-desc = A menacing purple snake from Kepler-283c.
+ent-MobPurpleSnake-name = пространственный сумматор
+ent-MobPurpleSnake-desc = Угрожающая фиолетовая змея из Кеплера-283c.
 
-ent-MobSmallPurpleSnake-name = space adder
-ent-MobSmallPurpleSnake-desc = A smaller version of the menacing purple snake from Kepler-283c.
+ent-MobSmallPurpleSnake-name = пространственный сумматор
+ent-MobSmallPurpleSnake-desc = Уменьшенная версия грозной фиолетовой змеи с Кеплера-283c.
 
-ent-MobXenoLonePraetorianNoGhost-name = "Dale"
-ent-MobXenoLonePraetorianNoGhost-desc = A praetorian left over from the station's initial security sweep. Has a pair of bloodied dog tags engraved with the name "Pvt. Dale" stuck in its maw.
+ent-MobXenoLonePraetorianNoGhost-name = "Дейл"
+ent-MobXenoLonePraetorianNoGhost-desc = Преторианец, оставшийся после первой зачистки станции. В его пасти застряла пара окровавленных жетонов с выгравированным именем «Рядовой Дейл».
 

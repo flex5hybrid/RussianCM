@@ -1,21 +1,21 @@
-ent-BaseShellShotgun-name = shell (.50)
+ent-BaseShellShotgun-name = снаряд (.50)
 
-ent-ShellShotgunBeanbag-name = shell (.50 beanbag)
+ent-ShellShotgunBeanbag-name = оболочка (погремушка 0,50)
 
-ent-ShellShotgunSlug-name = shell (.50 slug)
+ent-ShellShotgunSlug-name = гильза (пуля .50)
 
-ent-ShellShotgunFlare-name = shell (.50 flare)
+ent-ShellShotgunFlare-name = снаряд (ракушка .50)
 
-ent-ShellShotgun-name = shell (.50 pellet)
+ent-ShellShotgun-name = снаряд (пульса .50)
 
-ent-ShellShotgunIncendiary-name = shell (.50 incendiary)
+ent-ShellShotgunIncendiary-name = снаряд (.50 зажигательный)
 
-ent-ShellShotgunPractice-name = shell (.50 practice)
+ent-ShellShotgunPractice-name = снаряд (практика .50)
 
-ent-ShellTranquilizer-name = shell (.50 tranquilizer)
+ent-ShellTranquilizer-name = снаряд (транквилизатор .50)
 
-ent-ShellShotgunImprovised-name = improvised shotgun shell
-ent-ShellShotgunImprovised-desc = A homemade shotgun shell that shoots painful glass shrapnel. The spread is so wide that it couldn't hit the broad side of a barn.
+ent-ShellShotgunImprovised-name = импровизированный патрон для дробовика
+ent-ShellShotgunImprovised-desc = Самодельный патрон для дробовика, стреляющий болезненными стеклянными осколками. Распространение настолько велико, что не может поразить широкую стену сарая.
 
-ent-ShellShotgunUranium-name = uranium shotgun shell
+ent-ShellShotgunUranium-name = урановый патрон для дробовика
 

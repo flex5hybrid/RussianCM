@@ -1,27 +1,27 @@
-ent-BoxHandcuff-name = handcuff box
-ent-BoxHandcuff-desc = A box full of handcuffs.
+ent-BoxHandcuff-name = коробка для наручников
+ent-BoxHandcuff-desc = Коробка, полная наручников.
 
-ent-BoxZiptie-name = ziptie box
-ent-BoxZiptie-desc = A box full of zipties.
+ent-BoxZiptie-name = коробка на молнии
+ent-BoxZiptie-desc = Коробка, полная молний.
 
-ent-BoxFlashbang-name = flashbang box
-ent-BoxFlashbang-desc = WARNING: These devices are extremely dangerous and can cause blindness or deafness in repeated use.
+ent-BoxFlashbang-name = коробка для светошумовой гранаты
+ent-BoxFlashbang-desc = ВНИМАНИЕ: Эти устройства чрезвычайно опасны и при многократном использовании могут вызвать слепоту или глухоту.
 
-ent-BoxStinger-name = stinger grenade box
-ent-BoxStinger-desc = A box full of stinger grenades. Disperse!
+ent-BoxStinger-name = ящик для гранат "Стингер"
+ent-BoxStinger-desc = Коробка с гранатами-жалами. Разойтись!
 
-ent-BoxTearGas-name = tear gas grenade box
-ent-BoxTearGas-desc = A box full of tear gas grenades. Hold your breath.
+ent-BoxTearGas-name = ящик для гранат со слезоточивым газом
+ent-BoxTearGas-desc = Ящик, полный гранат со слезоточивым газом. Задержите дыхание.
 
-ent-BoxSechud-name = sechud box
-ent-BoxSechud-desc = A box of sechuds.
+ent-BoxSechud-name = Сехуд-коробка
+ent-BoxSechud-desc = Коробка секудов.
 
-ent-BoxSecglasses-name = secglasses box
-ent-BoxSecglasses-desc = A box of security glasses.
+ent-BoxSecglasses-name = коробка для очков
+ent-BoxSecglasses-desc = Коробка защитных очков.
 
-ent-BoxSunglasses-name = sunglasses box
-ent-BoxSunglasses-desc = A box of cool flash-proof sunglasses.
+ent-BoxSunglasses-name = коробка для солнцезащитных очков
+ent-BoxSunglasses-desc = Коробка крутых солнцезащитных очков с защитой от вспышек.
 
-ent-BoxForensicPad-name = forensic pad box
-ent-BoxForensicPad-desc = A box of forensic pads.
+ent-BoxForensicPad-name = коробка для судебно-медицинской экспертизы
+ent-BoxForensicPad-desc = Коробка с криминалистическими блокнотами.
 

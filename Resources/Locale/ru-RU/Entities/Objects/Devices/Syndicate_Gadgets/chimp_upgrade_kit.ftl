@@ -1,3 +1,3 @@
-ent-WeaponPistolCHIMPUpgradeKit-name = C.H.I.M.P. handcannon upgrade chip
-ent-WeaponPistolCHIMPUpgradeKit-desc = An experimental upgrade kit for the C.H.I.M.P.
+ent-WeaponPistolCHIMPUpgradeKit-name = ШИМПАНЗЕ. чип обновления ручной пушки
+ent-WeaponPistolCHIMPUpgradeKit-desc = Экспериментальный комплект модернизации для C.H.I.M.P.
 

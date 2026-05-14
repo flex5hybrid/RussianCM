@@ -1,3 +1,3 @@
-ent-MobPathfindDummy-name = pathfind dummy
-ent-MobPathfindDummy-desc = They mostly come at night. Mostly.
+ent-MobPathfindDummy-name = манекен для поиска пути
+ent-MobPathfindDummy-desc = В основном они приходят ночью. По большей части.
 

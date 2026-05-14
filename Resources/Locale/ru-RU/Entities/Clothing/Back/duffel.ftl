@@ -1,72 +1,72 @@
-ent-ClothingBackpackDuffel-name = duffel bag
-ent-ClothingBackpackDuffel-desc = A large duffel bag for holding extra things.
+ent-ClothingBackpackDuffel-name = вещевой мешок
+ent-ClothingBackpackDuffel-desc = Большая спортивная сумка для хранения дополнительных вещей.
 
-ent-ClothingBackpackDuffelEngineering-name = engineering duffel bag
-ent-ClothingBackpackDuffelEngineering-desc = A large duffel bag for holding extra tools and supplies.
+ent-ClothingBackpackDuffelEngineering-name = инженерная спортивная сумка
+ent-ClothingBackpackDuffelEngineering-desc = Большая спортивная сумка для хранения дополнительных инструментов и расходных материалов.
 
-ent-ClothingBackpackDuffelAtmospherics-name = atmospherics duffel bag
-ent-ClothingBackpackDuffelAtmospherics-desc = A large duffel bag made of fire resistant fibers. Smells like plasma.
+ent-ClothingBackpackDuffelAtmospherics-name = спортивная сумка атмосферы
+ent-ClothingBackpackDuffelAtmospherics-desc = Большая спортивная сумка из огнестойкого волокна. Пахнет плазмой.
 
-ent-ClothingBackpackDuffelMedical-name = medical duffel bag
-ent-ClothingBackpackDuffelMedical-desc = A large duffel bag for holding extra medical supplies.
+ent-ClothingBackpackDuffelMedical-name = медицинская спортивная сумка
+ent-ClothingBackpackDuffelMedical-desc = Большая спортивная сумка для хранения дополнительных медикаментов.
 
-ent-ClothingBackpackDuffelCaptain-name = captain's duffel bag
-ent-ClothingBackpackDuffelCaptain-desc = A large duffel bag for holding extra captainly goods.
+ent-ClothingBackpackDuffelCaptain-name = капитанская спортивная сумка
+ent-ClothingBackpackDuffelCaptain-desc = Большая спортивная сумка для хранения дополнительных капитанских вещей.
 
-ent-ClothingBackpackDuffelClown-name = clown duffel bag
-ent-ClothingBackpackDuffelClown-desc = A large duffel bag for holding extra honk goods.
+ent-ClothingBackpackDuffelClown-name = спортивная сумка клоуна
+ent-ClothingBackpackDuffelClown-desc = Большая спортивная сумка для хранения дополнительных вещей.
 
-ent-ClothingBackpackDuffelSecurity-name = security duffel bag
-ent-ClothingBackpackDuffelSecurity-desc = A large duffel bag for holding extra security related goods.
+ent-ClothingBackpackDuffelSecurity-name = спортивная сумка безопасности
+ent-ClothingBackpackDuffelSecurity-desc = Большая спортивная сумка для хранения дополнительных вещей, связанных с безопасностью.
 
-ent-ClothingBackpackDuffelBrigmedic-name = brigmedic duffel bag
-ent-ClothingBackpackDuffelBrigmedic-desc = A large duffel bag for holding extra medical related goods.
+ent-ClothingBackpackDuffelBrigmedic-name = спортивная сумка Brigmedic
+ent-ClothingBackpackDuffelBrigmedic-desc = Большая спортивная сумка для хранения дополнительных медицинских товаров.
 
-ent-ClothingBackpackDuffelChemistry-name = chemistry duffel bag
-ent-ClothingBackpackDuffelChemistry-desc = A large duffel bag for holding extra beakers and test tubes.
+ent-ClothingBackpackDuffelChemistry-name = химическая спортивная сумка
+ent-ClothingBackpackDuffelChemistry-desc = Большая спортивная сумка для хранения дополнительных стаканов и пробирок.
 
-ent-ClothingBackpackDuffelVirology-name = virology duffel bag
-ent-ClothingBackpackDuffelVirology-desc = A large duffel bag made of hypo-allergenic fibers. It's designed to help prevent the spread of disease. Smells like monkey.
+ent-ClothingBackpackDuffelVirology-name = спортивная сумка для вирусологии
+ent-ClothingBackpackDuffelVirology-desc = Большая спортивная сумка из гипоаллергенного волокна. Он создан, чтобы помочь предотвратить распространение болезней. Пахнет обезьяной.
 
-ent-ClothingBackpackDuffelGenetics-name = genetics duffel bag
-ent-ClothingBackpackDuffelGenetics-desc = A large duffel bag for holding extra genetic mutations.
+ent-ClothingBackpackDuffelGenetics-name = спортивная сумка с генетикой
+ent-ClothingBackpackDuffelGenetics-desc = Большая спортивная сумка для хранения дополнительных генетических мутаций.
 
-ent-ClothingBackpackDuffelMime-name = mime duffel bag
-ent-ClothingBackpackDuffelMime-desc = A large duffel bag for holding... mime... stuff.
+ent-ClothingBackpackDuffelMime-name = спортивная сумка мима
+ent-ClothingBackpackDuffelMime-desc = Большая спортивная сумка для хранения... мимов... вещей.
 
-ent-ClothingBackpackDuffelScience-name = science duffel bag
-ent-ClothingBackpackDuffelScience-desc = A large duffel bag for holding extra science related goods.
+ent-ClothingBackpackDuffelScience-name = научная спортивная сумка
+ent-ClothingBackpackDuffelScience-desc = Большая спортивная сумка для хранения дополнительных предметов, связанных с наукой.
 
-ent-ClothingBackpackDuffelHydroponics-name = hydroponics duffel bag
-ent-ClothingBackpackDuffelHydroponics-desc = A large duffel bag for holding extra gardening tools.
+ent-ClothingBackpackDuffelHydroponics-name = спортивная сумка для гидропоники
+ent-ClothingBackpackDuffelHydroponics-desc = Большая спортивная сумка для хранения дополнительных садовых инструментов.
 
-ent-ClothingBackpackDuffelCargo-name = cargo duffel bag
-ent-ClothingBackpackDuffelCargo-desc = A large duffel bag for stealing cargo's precious loot.
+ent-ClothingBackpackDuffelCargo-name = грузовая спортивная сумка
+ent-ClothingBackpackDuffelCargo-desc = Большая спортивная сумка для кражи драгоценной добычи.
 
-ent-ClothingBackpackDuffelSalvage-name = salvage duffel bag
-ent-ClothingBackpackDuffelSalvage-desc = A large duffel bag for holding extra exotic treasures.
+ent-ClothingBackpackDuffelSalvage-name = спасательная спортивная сумка
+ent-ClothingBackpackDuffelSalvage-desc = Большая спортивная сумка для хранения экзотических сокровищ.
 
-ent-ClothingBackpackDuffelSyndicate-name = syndicate duffel bag
-ent-ClothingBackpackDuffelSyndicate-desc = A large duffel bag for holding various traitor goods.
+ent-ClothingBackpackDuffelSyndicate-name = спортивная сумка Syndicate
+ent-ClothingBackpackDuffelSyndicate-desc = Большая спортивная сумка для хранения различных предательских товаров.
 
-ent-ClothingBackpackDuffelHolding-name = duffelbag of holding
-ent-ClothingBackpackDuffelHolding-desc = A duffelbag that opens into a localized pocket of bluespace.
+ent-ClothingBackpackDuffelHolding-name = вещевой мешок холдинга
+ent-ClothingBackpackDuffelHolding-desc = Спортивная сумка, открывающаяся в локальный карман синего пространства.
 
-ent-ClothingBackpackDuffelCBURN-name = CBURN duffel bag
-ent-ClothingBackpackDuffelCBURN-desc = A duffel bag containing a variety of biological containment equipment.
+ent-ClothingBackpackDuffelCBURN-name = спортивная сумка CBURN
+ent-ClothingBackpackDuffelCBURN-desc = Спортивная сумка, содержащая различные средства биологической защиты.
 
-ent-ClothingBackpackDuffelSyndicateBundle-name = syndicate duffel bag
-ent-ClothingBackpackDuffelSyndicateBundle-desc = A large duffel bag for holding various traitor goods.
+ent-ClothingBackpackDuffelSyndicateBundle-name = спортивная сумка Syndicate
+ent-ClothingBackpackDuffelSyndicateBundle-desc = Большая спортивная сумка для хранения различных предательских товаров.
 
-ent-ClothingBackpackDuffelSyndicateAmmo-name = syndicate duffel bag
-ent-ClothingBackpackDuffelSyndicateAmmo-desc = A large duffel bag for holding various traitor goods.
+ent-ClothingBackpackDuffelSyndicateAmmo-name = спортивная сумка Syndicate
+ent-ClothingBackpackDuffelSyndicateAmmo-desc = Большая спортивная сумка для хранения различных предательских товаров.
 
-ent-ClothingBackpackDuffelSyndicateAmmoBundle-name = syndicate duffel bag
-ent-ClothingBackpackDuffelSyndicateAmmoBundle-desc = A large duffel bag for holding various traitor goods.
+ent-ClothingBackpackDuffelSyndicateAmmoBundle-name = спортивная сумка Syndicate
+ent-ClothingBackpackDuffelSyndicateAmmoBundle-desc = Большая спортивная сумка для хранения различных предательских товаров.
 
-ent-ClothingBackpackDuffelSyndicateMedical-name = syndicate duffel bag
-ent-ClothingBackpackDuffelSyndicateMedical-desc = A large duffel bag for holding various traitor goods.
+ent-ClothingBackpackDuffelSyndicateMedical-name = спортивная сумка Syndicate
+ent-ClothingBackpackDuffelSyndicateMedical-desc = Большая спортивная сумка для хранения различных предательских товаров.
 
-ent-ClothingBackpackDuffelSyndicateMedicalBundle-name = syndicate duffel bag
-ent-ClothingBackpackDuffelSyndicateMedicalBundle-desc = A large duffel bag for holding various traitor goods.
+ent-ClothingBackpackDuffelSyndicateMedicalBundle-name = спортивная сумка Syndicate
+ent-ClothingBackpackDuffelSyndicateMedicalBundle-desc = Большая спортивная сумка для хранения различных предательских товаров.
 

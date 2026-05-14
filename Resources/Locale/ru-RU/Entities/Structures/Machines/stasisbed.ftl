@@ -1,3 +1,3 @@
-ent-StasisBed-name = stasis bed
-ent-StasisBed-desc = A bed that massively slows down the patient's metabolism and prevents bodily decay, allowing more time to administer a proper treatment for stabilization.
+ent-StasisBed-name = стазисная кровать
+ent-StasisBed-desc = Кровать, которая значительно замедляет обмен веществ пациента и предотвращает разложение тела, что дает больше времени для проведения надлежащего лечения для стабилизации.
 

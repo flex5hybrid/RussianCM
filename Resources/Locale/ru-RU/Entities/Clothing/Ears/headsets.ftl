@@ -1,60 +1,60 @@
-ent-ClothingHeadset-name = headset
-ent-ClothingHeadset-desc = An updated, modular intercom that fits over the head. Takes encryption keys.
+ent-ClothingHeadset-name = гарнитура
+ent-ClothingHeadset-desc = Обновленный модульный домофон, который крепится через голову. Берет ключи шифрования.
 
-ent-ClothingHeadsetGrey-name = passenger headset
-ent-ClothingHeadsetGrey-desc = An updated, modular intercom that fits over the head. Takes encryption keys.
+ent-ClothingHeadsetGrey-name = пассажирская гарнитура
+ent-ClothingHeadsetGrey-desc = Обновленный модульный домофон, который крепится через голову. Берет ключи шифрования.
 
-ent-ClothingHeadsetCargo-name = cargo headset
-ent-ClothingHeadsetCargo-desc = A headset used by supply employees.
+ent-ClothingHeadsetCargo-name = грузовая гарнитура
+ent-ClothingHeadsetCargo-desc = Гарнитура, используемая сотрудниками снабжения.
 
-ent-ClothingHeadsetMining-name = mining headset
-ent-ClothingHeadsetMining-desc = Headset used by shaft miners.
+ent-ClothingHeadsetMining-name = шахтерская гарнитура
+ent-ClothingHeadsetMining-desc = Гарнитура, используемая шахтерами.
 
-ent-ClothingHeadsetQM-name = qm headset
-ent-ClothingHeadsetQM-desc = A headset used by the quartermaster.
+ent-ClothingHeadsetQM-name = qm гарнитура
+ent-ClothingHeadsetQM-desc = Гарнитура, используемая интендантом.
 
-ent-ClothingHeadsetCentCom-name = CentComm headset
-ent-ClothingHeadsetCentCom-desc = A headset used by the upper echelons of Nanotrasen.
+ent-ClothingHeadsetCentCom-name = гарнитура CentComm
+ent-ClothingHeadsetCentCom-desc = Гарнитура, используемая высшими эшелонами Nanotrasen.
 
-ent-ClothingHeadsetCommand-name = command headset
-ent-ClothingHeadsetCommand-desc = A headset with a commanding channel.
+ent-ClothingHeadsetCommand-name = командная гарнитура
+ent-ClothingHeadsetCommand-desc = Гарнитура с командным каналом.
 
-ent-ClothingHeadsetEngineering-name = engineering headset
-ent-ClothingHeadsetEngineering-desc = A headset for engineers to chat while the station burns around them.
+ent-ClothingHeadsetEngineering-name = инженерная гарнитура
+ent-ClothingHeadsetEngineering-desc = Гарнитура, позволяющая инженерам общаться, пока вокруг них горит станция.
 
-ent-ClothingHeadsetCE-name = ce headset
-ent-ClothingHeadsetCE-desc = A headset for the chief engineer to ignore all emergency calls on.
+ent-ClothingHeadsetCE-name = ce гарнитура
+ent-ClothingHeadsetCE-desc = Гарнитура, позволяющая главному инженеру игнорировать все экстренные вызовы.
 
-ent-ClothingHeadsetMedical-name = medical headset
-ent-ClothingHeadsetMedical-desc = A headset for the trained staff of the medbay.
+ent-ClothingHeadsetMedical-name = медицинская гарнитура
+ent-ClothingHeadsetMedical-desc = Гарнитура для обученного персонала медотсека.
 
-ent-ClothingHeadsetCMO-name = cmo headset
-ent-ClothingHeadsetCMO-desc = A headset used by the CMO.
+ent-ClothingHeadsetCMO-name = cmo гарнитура
+ent-ClothingHeadsetCMO-desc = Гарнитура, используемая директором по маркетингу.
 
-ent-ClothingHeadsetScience-name = science headset
-ent-ClothingHeadsetScience-desc = A sciency headset. Like usual.
+ent-ClothingHeadsetScience-name = научная гарнитура
+ent-ClothingHeadsetScience-desc = Научная гарнитура. Как обычно.
 
-ent-ClothingHeadsetMedicalScience-name = medical research headset
-ent-ClothingHeadsetMedicalScience-desc = A headset that is a result of the mating between medical and science.
+ent-ClothingHeadsetMedicalScience-name = гарнитура для медицинских исследований
+ent-ClothingHeadsetMedicalScience-desc = Гарнитура, ставшая результатом слияния медицины и науки.
 
-ent-ClothingHeadsetRobotics-name = robotics headset
-ent-ClothingHeadsetRobotics-desc = Made specifically for the roboticists, who cannot decide between departments.
+ent-ClothingHeadsetRobotics-name = робототехника гарнитура
+ent-ClothingHeadsetRobotics-desc = Сделано специально для робототехников, которые не могут сделать выбор между отделами.
 
-ent-ClothingHeadsetRD-name = rd headset
-ent-ClothingHeadsetRD-desc = Lamarr used to love chewing on this...
+ent-ClothingHeadsetRD-name = третья гарнитура
+ent-ClothingHeadsetRD-desc = Ламарр любил это жевать...
 
-ent-ClothingHeadsetSecurity-name = security headset
-ent-ClothingHeadsetSecurity-desc = This is used by your elite security force.
+ent-ClothingHeadsetSecurity-name = охранная гарнитура
+ent-ClothingHeadsetSecurity-desc = Это используется вашей элитной службой безопасности.
 
-ent-ClothingHeadsetBrigmedic-name = brigmedic headset
-ent-ClothingHeadsetBrigmedic-desc = A headset that helps to hear the death cries.
+ent-ClothingHeadsetBrigmedic-name = бригмедик гарнитура
+ent-ClothingHeadsetBrigmedic-desc = Гарнитура, помогающая услышать предсмертные крики.
 
-ent-ClothingHeadsetService-name = service headset
-ent-ClothingHeadsetService-desc = Headset used by the service staff, tasked with keeping the station full, happy and clean.
+ent-ClothingHeadsetService-name = сервисная гарнитура
+ent-ClothingHeadsetService-desc = Гарнитура, используемая обслуживающим персоналом, которому поручено поддерживать станцию заполненной, счастливой и чистой.
 
-ent-ClothingHeadsetFreelance-name = freelancer headset
-ent-ClothingHeadsetFreelance-desc = This is used by a roaming group of freelancers.
+ent-ClothingHeadsetFreelance-name = фрилансер гарнитура
+ent-ClothingHeadsetFreelance-desc = Это используется роуминговой группой фрилансеров.
 
-ent-ClothingHeadsetWizard-name = wizard headset
-ent-ClothingHeadsetWizard-desc = A headset used by the dreaded space wizards.
+ent-ClothingHeadsetWizard-name = волшебная гарнитура
+ent-ClothingHeadsetWizard-desc = Гарнитура, используемая ужасными космическими волшебниками.
 

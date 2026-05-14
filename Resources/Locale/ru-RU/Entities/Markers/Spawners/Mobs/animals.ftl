@@ -1,38 +1,38 @@
-ent-SpawnMobBee-name = Bee Spawner
+ent-SpawnMobBee-name = Производитель пчел
 
-ent-SpawnMobButterfly-name = Butterfly Spawner
+ent-SpawnMobButterfly-name = Создатель бабочек
 
-ent-SpawnMobCatGeneric-name = Generic Cat Spawner
+ent-SpawnMobCatGeneric-name = Универсальный спаунер для кошек
 
-ent-SpawnMobCatKitten-name = Kitten Spawner
+ent-SpawnMobCatKitten-name = Производитель котят
 
-ent-SpawnMobCatSpace-name = Space Cat Spawner
+ent-SpawnMobCatSpace-name = Спаунер космических котов
 
-ent-SpawnMobCockroach-name = Cockroach Spawner
+ent-SpawnMobCockroach-name = Производитель тараканов
 
-ent-SpawnMobCow-name = Cow Spawner
+ent-SpawnMobCow-name = Производитель коров
 
-ent-SpawnMobCrab-name = Crab Spawner
+ent-SpawnMobCrab-name = Производитель крабов
 
-ent-SpawnMobFrog-name = Frog Spawner
+ent-SpawnMobFrog-name = Производитель лягушек
 
-ent-SpawnMobGoat-name = Goat Spawner
+ent-SpawnMobGoat-name = Производитель коз
 
-ent-SpawnMobGorilla-name = Gorilla Spawner
+ent-SpawnMobGorilla-name = Горилла Спаунер
 
-ent-SpawnMobLizard-name = Lizard Spawner
+ent-SpawnMobLizard-name = Производитель ящериц
 
-ent-SpawnMobMonkey-name = Monkey Spawner
+ent-SpawnMobMonkey-name = Производитель обезьян
 
-ent-SpawnMobMouse-name = Mouse Spawner
+ent-SpawnMobMouse-name = Создатель мыши
 
-ent-SpawnMobParrot-name = Parrot Spawner
+ent-SpawnMobParrot-name = Спаунер попугаев
 
-ent-SpawnMobPenguin-name = Penguin Spawner
+ent-SpawnMobPenguin-name = Производитель пингвинов
 
-ent-SpawnMobReindeerBuck-name = Reindeer Buck Spawner
+ent-SpawnMobReindeerBuck-name = Производитель оленей
 
-ent-SpawnMobReindeerDoe-name = Reindeer Doe Spawner
+ent-SpawnMobReindeerDoe-name = Производитель оленей
 
-ent-SpawnMobSlug-name = Slug Spawner
+ent-SpawnMobSlug-name = Создатель слизней
 

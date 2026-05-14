@@ -1,4 +1,4 @@
-ent-LootSpawnerIndustrialFluff-name = industrial fluff spawner
+ent-LootSpawnerIndustrialFluff-name = промышленный генератор пуха
 
-ent-LootSpawnerIndustrial-name = industrial loot spawner
+ent-LootSpawnerIndustrial-name = промышленный генератор добычи
 

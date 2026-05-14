@@ -13,3 +13,9 @@ rmc-synth-repair-brute-finish-self = Вы устраняете вмятины н
 rmc-synth-repair-burn-finish-self = Вы ремонтируете термические повреждения на {THE($target)}'s {$limb} с помощью {THE($tool)}.
 rmc-synth-repair-brute-finish = {THE($user)} устраняет вмятины на {THE($target)}'s {$limb} при помощи {THE($tool)}.
 rmc-synth-repair-burn-finish = {THE($user)} ремонтирует термические повреждения на {THE($target)}'s {$limb} с помощью {THE($tool)}.
+
+# Missing entries synced from en-US
+
+rmc-synth-item-restricted = Ваша программа не позволяет вам использовать {THE($item)}!
+
+rmc-synth-item-too-heavy = {CAPITALIZE(THE($item))} слишком тяжел для тех, у кого нет синтетической прочности.

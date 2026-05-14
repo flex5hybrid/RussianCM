@@ -1,6 +1,6 @@
-ent-hydroponicsSoil-name = soil
-ent-hydroponicsSoil-desc = A mix of organic matter and minerals creating a soil to grow your plant in space. Seems to be dry.
+ent-hydroponicsSoil-name = почва
+ent-hydroponicsSoil-desc = Смесь органических веществ и минералов создает почву для выращивания вашего растения в космосе. Кажется, сухо.
 
-ent-FungalSoil-name = fungal soil
-ent-FungalSoil-desc = A mix of organic matter and fungal root creating a soil to grow your plant in space. Seems to be dry.
+ent-FungalSoil-name = грибковая почва
+ent-FungalSoil-desc = Смесь органических веществ и корней грибов создает почву для выращивания вашего растения в космосе. Кажется, сухо.
 

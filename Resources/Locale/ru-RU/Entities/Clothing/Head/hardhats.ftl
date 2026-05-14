@@ -1,23 +1,23 @@
-ent-ClothingHeadHatHardhatBlue-name = blue hard hat
-ent-ClothingHeadHatHardhatBlue-desc = A hard hat, painted in blue, used in dangerous working conditions to protect the head. Comes with a built-in flashlight.
+ent-ClothingHeadHatHardhatBlue-name = синяя каска
+ent-ClothingHeadHatHardhatBlue-desc = Каска, окрашенная в синий цвет, используется в опасных условиях труда для защиты головы. Поставляется со встроенным фонариком.
 
-ent-ClothingHeadHatHardhatOrange-name = orange hard hat
-ent-ClothingHeadHatHardhatOrange-desc = A hard hat, painted in orange, used in dangerous working conditions to protect the head. Comes with a built-in flashlight.
+ent-ClothingHeadHatHardhatOrange-name = оранжевая каска
+ent-ClothingHeadHatHardhatOrange-desc = Каска, окрашенная в оранжевый цвет, используется в опасных условиях труда для защиты головы. Поставляется со встроенным фонариком.
 
-ent-ClothingHeadHatHardhatRed-name = red hard hat
-ent-ClothingHeadHatHardhatRed-desc = A hard hat, painted in red, used in dangerous working conditions to protect the head. Comes with a built-in flashlight.
+ent-ClothingHeadHatHardhatRed-name = красная каска
+ent-ClothingHeadHatHardhatRed-desc = Каска, окрашенная в красный цвет, используется в опасных условиях труда для защиты головы. Поставляется со встроенным фонариком.
 
-ent-ClothingHeadHatHardhatWhite-name = white hard hat
-ent-ClothingHeadHatHardhatWhite-desc = A hard hat, painted in white, used in dangerous working conditions to protect the head. Comes with a built-in flashlight.
+ent-ClothingHeadHatHardhatWhite-name = белая каска
+ent-ClothingHeadHatHardhatWhite-desc = Каска, окрашенная в белый цвет, используется в опасных условиях труда для защиты головы. Поставляется со встроенным фонариком.
 
-ent-ClothingHeadHatHardhatYellow-name = yellow hard hat
-ent-ClothingHeadHatHardhatYellow-desc = A hard hat, painted in yellow, used in dangerous working conditions to protect the head. Comes with a built-in flashlight.
+ent-ClothingHeadHatHardhatYellow-name = желтая каска
+ent-ClothingHeadHatHardhatYellow-desc = Каска, окрашенная в желтый цвет, используется в опасных условиях труда для защиты головы. Поставляется со встроенным фонариком.
 
-ent-ClothingHeadHatHardhatYellowDark-name = dark yellow hard hat
-ent-ClothingHeadHatHardhatYellowDark-desc = A hard hat, painted in dark yellow, used in dangerous working conditions to protect the head. Comes with a built-in flashlight.
+ent-ClothingHeadHatHardhatYellowDark-name = темно-желтая каска
+ent-ClothingHeadHatHardhatYellowDark-desc = Каска, окрашенная в темно-желтый цвет, используется в опасных условиях труда для защиты головы. Поставляется со встроенным фонариком.
 
-ent-ClothingHeadHatHardhatArmored-name = armored hard hat
-ent-ClothingHeadHatHardhatArmored-desc = An armored hard hat. Provides the best of both worlds in both protection & utility - perfect for the engineer on the frontlines.
+ent-ClothingHeadHatHardhatArmored-name = бронированная каска
+ent-ClothingHeadHatHardhatArmored-desc = Бронированная каска. Обеспечивает лучшее из обоих миров как в защите, так и в удобстве — идеально подходит для инженеров, работающих на передовой.
 
 ent-ClothingHeadHatHardhatBase-name = lathe-category-clothing
 

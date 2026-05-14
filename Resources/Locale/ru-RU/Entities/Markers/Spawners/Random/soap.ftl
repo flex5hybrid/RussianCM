@@ -1,2 +1,2 @@
-ent-RandomSoap-name = random soap spawner
+ent-RandomSoap-name = случайный генератор мыла
 

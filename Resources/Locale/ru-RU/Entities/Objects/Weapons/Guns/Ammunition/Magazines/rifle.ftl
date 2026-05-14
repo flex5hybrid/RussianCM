@@ -1,12 +1,12 @@
-ent-BaseMagazineRifle-name = magazine (.20 rifle)
+ent-BaseMagazineRifle-name = магазин (винтовка .20)
 
-ent-MagazineRifle-name = magazine (.20 rifle)
+ent-MagazineRifle-name = магазин (винтовка .20)
 
-ent-MagazineRifleEmpty-name = magazine (.20 rifle any)
+ent-MagazineRifleEmpty-name = магазин (винтовка .20 любой)
 
-ent-MagazineRifleIncendiary-name = magazine (.20 rifle incendiary)
+ent-MagazineRifleIncendiary-name = магазин (винтовочный зажигательный .20)
 
-ent-MagazineRiflePractice-name = magazine (.20 rifle practice)
+ent-MagazineRiflePractice-name = магазин (тренировочная винтовка .20)
 
-ent-MagazineRifleUranium-name = magazine (.20 rifle uranium)
+ent-MagazineRifleUranium-name = магазин (винтовочный уран .20)
 

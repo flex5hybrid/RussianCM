@@ -1,218 +1,218 @@
-ent-MobBat-name = bat
-ent-MobBat-desc = Some cultures find them terrifying, others crunchy on the teeth.
+ent-MobBat-name = летучая мышь
+ent-MobBat-desc = В некоторых культурах они кажутся устрашающими, в других — хрустящими на зубах.
 
-ent-MobBee-name = bee
-ent-MobBee-desc = Nice to have, but you can't build a civilization on a foundation of honey alone.
+ent-MobBee-name = пчела
+ent-MobBee-desc = Приятно иметь, но невозможно построить цивилизацию только на меде.
 
-ent-MobAngryBee-name = bee
-ent-MobAngryBee-desc = How nice a bee. Oh no, it looks angry and wants my pizza.
+ent-MobAngryBee-name = пчела
+ent-MobAngryBee-desc = Как хороша пчелка. О нет, оно выглядит злым и хочет мою пиццу.
 
-ent-MobChicken-name = chicken
-ent-MobChicken-desc = Comes before an egg, and IS a dinosaur!
+ent-MobChicken-name = курица
+ent-MobChicken-desc = Предшествует яйцу и ЯВЛЯЕТСЯ динозавром!
 
-ent-MobCockroach-name = cockroach
-ent-MobCockroach-desc = This station is just crawling with bugs.
+ent-MobCockroach-name = таракан
+ent-MobCockroach-desc = Эта станция просто кишит жуками.
 
-ent-MobGlockroach-name = glockroach
-ent-MobGlockroach-desc = This station is just crawling with bu- OH GOD THAT COCKROACH HAS A GUN!!!
+ent-MobGlockroach-name = таракан
+ent-MobGlockroach-desc = Эта станция просто кишит бу- О БОЖЕ, У ЭТОГО ТАРАКАНА ЕСТЬ РУЖЬЕ!!!
 
-ent-MobMothroach-name = mothroach
-ent-MobMothroach-desc = This is the adorable by-product of multiple attempts at genetically mixing mothpeople with cockroaches.
+ent-MobMothroach-name = моль
+ent-MobMothroach-desc = Это восхитительный побочный продукт многочисленных попыток генетического смешивания людей-мотыльков с тараканами.
 
-ent-MobDuckMallard-name = mallard duck
-ent-MobDuckMallard-desc = An adorable mallard duck, it's fluffy and soft!
+ent-MobDuckMallard-name = кряква
+ent-MobDuckMallard-desc = Очаровательная кряква, она пушистая и мягкая!
 
-ent-MobDuckWhite-name = white duck
-ent-MobDuckWhite-desc = An adorable white duck, it's fluffy and soft!
+ent-MobDuckWhite-name = белая утка
+ent-MobDuckWhite-desc = Очаровательная белая утка, она пушистая и мягкая!
 
-ent-MobDuckBrown-name = brown duck
-ent-MobDuckBrown-desc = An adorable brown duck, it's fluffy and soft!
+ent-MobDuckBrown-name = коричневая утка
+ent-MobDuckBrown-desc = Очаровательная коричневая утка, она пушистая и мягкая!
 
-ent-MobButterfly-name = butterfly
-ent-MobButterfly-desc = Despite popular misconceptions, it's not actually made of butter.
+ent-MobButterfly-name = бабочка
+ent-MobButterfly-desc = Несмотря на распространенные заблуждения, на самом деле оно сделано не из сливочного масла.
 
-ent-MobCow-name = cow
-ent-MobCow-desc = Moo.
+ent-MobCow-name = корова
+ent-MobCow-desc = Муу.
 
-ent-MobCrab-name = crab
-ent-MobCrab-desc = A folk legend goes around that his claw snaps spacemen out of existence over distasteful remarks. Be polite and tolerant for your own safety.
+ent-MobCrab-name = краб
+ent-MobCrab-desc = Ходит народная легенда, что его коготь уничтожает космонавтов из-за неприятных замечаний. Будьте вежливы и терпимы ради собственной безопасности.
 
-ent-MobGoat-name = goat
-ent-MobGoat-desc = Her spine consists of long sharp segments, no wonder she is so grumpy.
+ent-MobGoat-name = коза
+ent-MobGoat-desc = Ее позвоночник состоит из длинных острых сегментов, неудивительно, что она такая сварливая.
 
-ent-MobGoose-name = goose
-ent-MobGoose-desc = Its stomach and mind are an enigma beyond human comprehension.
+ent-MobGoose-name = гусь
+ent-MobGoose-desc = Его желудок и разум — загадка, превосходящая человеческое понимание.
 
-ent-MobGorilla-name = gorilla
-ent-MobGorilla-desc = Smashes, roars, looks cool. Don't stand near one.
+ent-MobGorilla-name = горилла
+ent-MobGorilla-desc = Громит, ревет, выглядит круто. Не стойте рядом с одним.
 
-ent-MobKangaroo-name = kangaroo
-ent-MobKangaroo-desc = A large marsupial herbivore. It has powerful hind legs, with nails that resemble long claws.
+ent-MobKangaroo-name = кенгуру
+ent-MobKangaroo-desc = Крупное сумчатое травоядное животное. У него мощные задние лапы с когтями, напоминающими длинные когти.
 
-ent-MobBoxingKangaroo-name = boxing kangaroo
-ent-MobBoxingKangaroo-desc = A large marsupial herbivore. It has powerful hind legs, with nails that resemble long claws.
+ent-MobBoxingKangaroo-name = боксерский кенгуру
+ent-MobBoxingKangaroo-desc = Крупное сумчатое травоядное животное. У него мощные задние лапы с когтями, напоминающими длинные когти.
 
-ent-MobBaseAncestor-name = genetic ancestor
-ent-MobBaseAncestor-desc = The genetic bipedal ancestor of... Uh... Something. Yeah, there's definitely something on the station that descended from whatever this is.
+ent-MobBaseAncestor-name = генетический предок
+ent-MobBaseAncestor-desc = Генетический двуногий предок... Э... Что-то. Да, на станции определенно есть что-то, что произошло от чего бы то ни было.
 
-ent-MobMonkey-name = monkey
-ent-MobMonkey-desc = New church of neo-darwinists actually believe that EVERY animal evolved from a monkey. Tastes like pork, and killing them is both fun and relaxing.
+ent-MobMonkey-name = обезьяна
+ent-MobMonkey-desc = Новая церковь неодарвинистов фактически верит, что КАЖДОЕ животное произошло от обезьяны. На вкус они напоминают свинину, и убивать их одновременно весело и расслабляюще.
 
-ent-MobBaseSyndicateMonkey-name = monkey
-ent-MobBaseSyndicateMonkey-desc = New church of neo-darwinists actually believe that EVERY animal evolved from a monkey. Tastes like pork, and killing them is both fun and relaxing.
+ent-MobBaseSyndicateMonkey-name = обезьяна
+ent-MobBaseSyndicateMonkey-desc = Новая церковь неодарвинистов фактически верит, что КАЖДОЕ животное произошло от обезьяны. На вкус они напоминают свинину, и убивать их одновременно весело и расслабляюще.
 
-ent-MobBaseKobold-name = kobold
-ent-MobBaseKobold-desc = Cousins to the sentient race of lizard people, kobolds blend in with their natural habitat and are as nasty as monkeys; ready to pull out your hair and stab you to death.
+ent-MobBaseKobold-name = кобольд
+ent-MobBaseKobold-desc = Двоюродные братья разумной расы людей-ящериц, кобольды сливаются с их естественной средой обитания и столь же противны, как обезьяны; готов вырвать тебе волосы и заколоть тебя до смерти.
 
-ent-MobKobold-name = kobold
-ent-MobKobold-desc = Cousins to the sentient race of lizard people, kobolds blend in with their natural habitat and are as nasty as monkeys; ready to pull out your hair and stab you to death.
+ent-MobKobold-name = кобольд
+ent-MobKobold-desc = Двоюродные братья разумной расы людей-ящериц, кобольды сливаются с их естественной средой обитания и столь же противны, как обезьяны; готов вырвать тебе волосы и заколоть тебя до смерти.
 
-ent-MobGuidebookMonkey-name = guidebook monkey
-ent-MobGuidebookMonkey-desc = A hopefully helpful monkey whose only purpose in life is for you to click on. Does this count as having a monkey give you a tutorial?
+ent-MobGuidebookMonkey-name = путеводитель обезьяна
+ent-MobGuidebookMonkey-desc = Надеемся, полезная обезьянка, чья единственная цель в жизни — чтобы вы на нее нажимали. Считается ли это, что обезьяна обучает вас?
 
-ent-MobMouse-name = mouse
-ent-MobMouse-desc = Squeak!
+ent-MobMouse-name = мышь
+ent-MobMouse-desc = Писк!
 
-ent-MobMouseDead-name = mouse
-ent-MobMouseDead-desc = Squeak!
+ent-MobMouseDead-name = мышь
+ent-MobMouseDead-desc = Писк!
 
-ent-MobMouseCancer-name = cancer mouse
-ent-MobMouseCancer-desc = Toxic. Squeak!
+ent-MobMouseCancer-name = раковая мышь
+ent-MobMouseCancer-desc = Токсично. Писк!
 
-ent-MobLizard-name = lizard
-ent-MobLizard-desc = A harmless dragon.
+ent-MobLizard-name = ящерица
+ent-MobLizard-desc = Безобидный дракон.
 
-ent-MobSlug-name = slug
-ent-MobSlug-desc = And they called this a lizard?
+ent-MobSlug-name = слизняк
+ent-MobSlug-desc = И они назвали это ящерицей?
 
-ent-MobFrog-name = frog
-ent-MobFrog-desc = Hop hop hop. Lookin' moist.
+ent-MobFrog-name = лягушка
+ent-MobFrog-desc = Хоп-хоп-хоп. Выглядишь влажным.
 
-ent-MobParrotBase-desc = Infiltrates your domain, spies on you, and somehow still a cool pet.
+ent-MobParrotBase-desc = Проникает в ваш домен, шпионит за вами и каким-то образом остается крутым питомцем.
 
-ent-MobParrot-name = parrot
-ent-MobParrot-desc = Infiltrates your domain, spies on you, and somehow still a cool pet.
+ent-MobParrot-name = попугай
+ent-MobParrot-desc = Проникает в ваш домен, шпионит за вами и каким-то образом остается крутым питомцем.
 
-ent-MobPenguin-name = penguin
-ent-MobPenguin-desc = Their lives are constant pain due to their inner-body knees.
+ent-MobPenguin-name = пингвин
+ent-MobPenguin-desc = Их жизнь — это постоянная боль из-за коленей внутри тела.
 
-ent-MobGrenadePenguin-name = grenade penguin
-ent-MobGrenadePenguin-desc = A small penguin with a grenade strapped around its neck. Harvested by the Syndicate from icy shit-hole planets.
+ent-MobGrenadePenguin-name = гранатовый пингвин
+ent-MobGrenadePenguin-desc = Маленький пингвин с гранатой на шее. Собрано Синдикатом на ледяных загаженных планетах.
 
-ent-MobSnake-name = snake
-ent-MobSnake-desc = Hissss! Bites aren't poisonous.
+ent-MobSnake-name = змея
+ent-MobSnake-desc = Шипение! Укусы не ядовиты.
 
-ent-MobGiantSpider-name = tarantula
-ent-MobGiantSpider-desc = Widely recognized to be the literal worst thing in existence.
+ent-MobGiantSpider-name = тарантул
+ent-MobGiantSpider-desc = Широко признано, что это буквально худшая вещь, которая существует.
 
-ent-MobClownSpider-name = clown spider
-ent-MobClownSpider-desc = Combines the two most terrifying things in existence, spiders and clowns.
+ent-MobClownSpider-name = клоун паук
+ent-MobClownSpider-desc = Сочетает в себе две самые ужасающие вещи на свете: пауков и клоунов.
 
-ent-MobGiantSpiderWizard-name = wizard spider
-ent-MobGiantSpiderWizard-desc = This spider looks a little magical
+ent-MobGiantSpiderWizard-name = паук-волшебник
+ent-MobGiantSpiderWizard-desc = Этот паук выглядит немного волшебно
 
-ent-MobPossum-name = possum
-ent-MobPossum-desc = "O Possum! My Possum!" -- Walt Whitman, 1865
+ent-MobPossum-name = опоссум
+ent-MobPossum-desc = «О Опоссум! Мой Опоссум!» -- Уолт Уитмен, 1865 г.
 
-ent-MobPossumOld-name = possum
-ent-MobPossumOld-desc = "O Possum! My Possum!" -- Walt Whitman, 1865
+ent-MobPossumOld-name = опоссум
+ent-MobPossumOld-desc = «О Опоссум! Мой Опоссум!» -- Уолт Уитмен, 1865 г.
 
-ent-MobRaccoon-name = raccoon
-ent-MobRaccoon-desc = Trash panda!
+ent-MobRaccoon-name = енот
+ent-MobRaccoon-desc = Мусорная панда!
 
-ent-MobFox-name = fox
-ent-MobFox-desc = They're a fox.
+ent-MobFox-name = лиса
+ent-MobFox-desc = Они лисы.
 
-ent-MobCorgiBase-name = corgi
-ent-MobCorgiBase-desc = Finally, a space corgi!
+ent-MobCorgiBase-name = корги
+ent-MobCorgiBase-desc = Наконец-то космический корги!
 
-ent-MobCorgiNarsi-name = corrupted corgi
-ent-MobCorgiNarsi-desc = Ian! No!
+ent-MobCorgiNarsi-name = испорченный корги
+ent-MobCorgiNarsi-desc = Ян! Нет!
 
-ent-MobCorgiPuppy-name = corgi puppy
-ent-MobCorgiPuppy-desc = A little corgi! Aww...
+ent-MobCorgiPuppy-name = щенок корги
+ent-MobCorgiPuppy-desc = Маленький корги! Оуу...
 
-ent-MobCat-name = cat
-ent-MobCat-desc = Feline pet, very funny.
+ent-MobCat-name = кот
+ent-MobCat-desc = Кошачий питомец, очень забавный.
 
-ent-MobCatCalico-name = calico cat
-ent-MobCatCalico-desc = Feline pet, very funny.
+ent-MobCatCalico-name = ситцевый кот
+ent-MobCatCalico-desc = Кошачий питомец, очень забавный.
 
-ent-MobCatSyndy-name = syndicat
-ent-MobCatSyndy-desc = Explosive kitten.
+ent-MobCatSyndy-name = синдикат
+ent-MobCatSyndy-desc = Взрывной котёнок.
 
-ent-MobCatSpace-name = space cat
-ent-MobCatSpace-desc = Feline pet, prepared for the worst.
+ent-MobCatSpace-name = космический кот
+ent-MobCatSpace-desc = Кошачий питомец, готовый к худшему.
 
-ent-MobCatCaracal-name = caracal cat
-ent-MobCatCaracal-desc = Hilarious.
+ent-MobCatCaracal-name = каракал кот
+ent-MobCatCaracal-desc = Весело.
 
-ent-MobCatKitten-name = kitten
-ent-MobCatKitten-desc = Small and fluffy.
+ent-MobCatKitten-name = котенок
+ent-MobCatKitten-desc = Маленький и пушистый.
 
-ent-MobSloth-name = sloth
-ent-MobSloth-desc = Very slow animal. For people with low energy.
+ent-MobSloth-name = ленивец
+ent-MobSloth-desc = Очень медленное животное. Для людей с низкой энергетикой.
 
-ent-MobFerret-name = ferret
-ent-MobFerret-desc = Just a silly little guy!
+ent-MobFerret-name = хорек
+ent-MobFerret-desc = Просто глупый малый!
 
-ent-MobHamster-name = hamster
-ent-MobHamster-desc = A cute, fluffy, robust hamster.
+ent-MobHamster-name = хомяк
+ent-MobHamster-desc = Милый, пушистый, крепкий хомяк.
 
-ent-MobPig-name = pig
-ent-MobPig-desc = Oink.
+ent-MobPig-name = свинья
+ent-MobPig-desc = Хрю.
 
-ent-MobDionaNymph-name = diona nymph
-ent-MobDionaNymph-desc = It's like a cat, only.... branch-ier.
+ent-MobDionaNymph-name = Диона, нимфа
+ent-MobDionaNymph-desc = Это как кошка, только....ветвистая.
 
-ent-MobReindeerBuck-name = reindeer buck
-ent-MobReindeerBuck-desc = You think it can pull a sleigh?
+ent-MobReindeerBuck-name = олень самец
+ent-MobReindeerBuck-desc = Думаешь, оно может тянуть сани?
 
-ent-MobReindeerDoe-name = reindeer doe
-ent-MobReindeerDoe-desc = You think it can pull a sleigh?
+ent-MobReindeerDoe-name = северный олень
+ent-MobReindeerDoe-desc = Думаешь, оно может тянуть сани?
 
-ent-MobCorgiSmart-name = smart corgi
-ent-MobCorgiSmart-desc = An unusually smart dog.
+ent-MobCorgiSmart-name = умный корги
+ent-MobCorgiSmart-desc = Необычайно умная собака.
 
-ent-MobChicken1-name = chicken
-ent-MobChicken1-desc = Comes before an egg, and IS a dinosaur!
+ent-MobChicken1-name = курица
+ent-MobChicken1-desc = Предшествует яйцу и ЯВЛЯЕТСЯ динозавром!
 
-ent-MobChicken2-name = chicken
-ent-MobChicken2-desc = Comes before an egg, and IS a dinosaur!
+ent-MobChicken2-name = курица
+ent-MobChicken2-desc = Предшествует яйцу и ЯВЛЯЕТСЯ динозавром!
 
-ent-FoodEggChickenFertilized-name = egg
-ent-FoodEggChickenFertilized-desc = An egg!
+ent-FoodEggChickenFertilized-name = яйцо
+ent-FoodEggChickenFertilized-desc = Яйцо!
 
-ent-FoodEggDuckFertilized-name = egg
-ent-FoodEggDuckFertilized-desc = An egg!
+ent-FoodEggDuckFertilized-name = яйцо
+ent-FoodEggDuckFertilized-desc = Яйцо!
 
-ent-MobMonkeySyndicateAgent-name = monkey
-ent-MobMonkeySyndicateAgent-desc = New church of neo-darwinists actually believe that EVERY animal evolved from a monkey. Tastes like pork, and killing them is both fun and relaxing.
+ent-MobMonkeySyndicateAgent-name = обезьяна
+ent-MobMonkeySyndicateAgent-desc = Новая церковь неодарвинистов фактически верит, что КАЖДОЕ животное произошло от обезьяны. На вкус они напоминают свинину, и убивать их одновременно весело и расслабляюще.
 
-ent-MobMonkeySyndicateAgentNukeops-name = monkey
-ent-MobMonkeySyndicateAgentNukeops-desc = New church of neo-darwinists actually believe that EVERY animal evolved from a monkey. Tastes like pork, and killing them is both fun and relaxing.
+ent-MobMonkeySyndicateAgentNukeops-name = обезьяна
+ent-MobMonkeySyndicateAgentNukeops-desc = Новая церковь неодарвинистов фактически верит, что КАЖДОЕ животное произошло от обезьяны. На вкус они напоминают свинину, и убивать их одновременно весело и расслабляюще.
 
-ent-MobBaseSyndicateKobold-name = kobold
-ent-MobBaseSyndicateKobold-desc = Cousins to the sentient race of lizard people, kobolds blend in with their natural habitat and are as nasty as monkeys; ready to pull out your hair and stab you to death.
+ent-MobBaseSyndicateKobold-name = кобольд
+ent-MobBaseSyndicateKobold-desc = Двоюродные братья разумной расы людей-ящериц, кобольды сливаются с их естественной средой обитания и столь же противны, как обезьяны; готов вырвать тебе волосы и заколоть тебя до смерти.
 
-ent-MobKoboldSyndicateAgent-name = kobold
-ent-MobKoboldSyndicateAgent-desc = Cousins to the sentient race of lizard people, kobolds blend in with their natural habitat and are as nasty as monkeys; ready to pull out your hair and stab you to death.
+ent-MobKoboldSyndicateAgent-name = кобольд
+ent-MobKoboldSyndicateAgent-desc = Двоюродные братья разумной расы людей-ящериц, кобольды сливаются с их естественной средой обитания и столь же противны, как обезьяны; готов вырвать тебе волосы и заколоть тебя до смерти.
 
-ent-MobKoboldSyndicateAgentNukeops-name = kobold
-ent-MobKoboldSyndicateAgentNukeops-desc = Cousins to the sentient race of lizard people, kobolds blend in with their natural habitat and are as nasty as monkeys; ready to pull out your hair and stab you to death.
+ent-MobKoboldSyndicateAgentNukeops-name = кобольд
+ent-MobKoboldSyndicateAgentNukeops-desc = Двоюродные братья разумной расы людей-ящериц, кобольды сливаются с их естественной средой обитания и столь же противны, как обезьяны; готов вырвать тебе волосы и заколоть тебя до смерти.
 
-ent-MobMouseAdmeme-name = mouse
-ent-MobMouseAdmeme-desc = Squeak!
+ent-MobMouseAdmeme-name = мышь
+ent-MobMouseAdmeme-desc = Писк!
 
-ent-MobMouse1-name = mouse
-ent-MobMouse1-desc = Squeak!
+ent-MobMouse1-name = мышь
+ent-MobMouse1-desc = Писк!
 
-ent-MobMouse2-name = mouse
-ent-MobMouse2-desc = Squeak!
+ent-MobMouse2-name = мышь
+ent-MobMouse2-desc = Писк!
 
-ent-MobCorgi-name = corgi
-ent-MobCorgi-desc = Finally, a space corgi!
+ent-MobCorgi-name = корги
+ent-MobCorgi-desc = Наконец-то космический корги!
 
-ent-MobDionaNymphAccent-name = diona nymph
-ent-MobDionaNymphAccent-desc = It's like a cat, only.... branch-ier.
+ent-MobDionaNymphAccent-name = Диона, нимфа
+ent-MobDionaNymphAccent-desc = Это как кошка, только....ветвистая.
 

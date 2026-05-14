@@ -1,2 +1,2 @@
-cmd-ooc-desc = Send Out Of Character chat messages.
+cmd-ooc-desc = Отправляйте нехарактерные сообщения в чате.
 cmd-ooc-help = Usage: ooc <text>

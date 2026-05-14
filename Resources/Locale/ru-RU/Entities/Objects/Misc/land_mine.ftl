@@ -1,14 +1,14 @@
-ent-LandMineKickUnarmed-name = kick mine
+ent-LandMineKickUnarmed-name = пни мою
 
-ent-LandMineModularUnarmed-name = modular mine
-ent-LandMineModularUnarmed-desc = This bad boy could be packing any number of dangers. Or a bike horn.
+ent-LandMineModularUnarmed-name = модульная мина
+ent-LandMineModularUnarmed-desc = Этот плохой мальчик может таить в себе множество опасностей. Или велосипедный гудок.
 
-ent-LandMineExplosiveUnarmed-name = explosive mine
+ent-LandMineExplosiveUnarmed-name = взрывная мина
 
-ent-LandMineKick-name = kick mine
+ent-LandMineKick-name = пни мою
 
-ent-LandMineModular-name = modular mine
-ent-LandMineModular-desc = This bad boy could be packing any number of dangers. Or a bike horn.
+ent-LandMineModular-name = модульная мина
+ent-LandMineModular-desc = Этот плохой мальчик может таить в себе множество опасностей. Или велосипедный гудок.
 
-ent-LandMineExplosive-name = explosive mine
+ent-LandMineExplosive-name = взрывная мина
 

@@ -1,9 +1,9 @@
-ent-DiseaseSwab-name = sterile swab
-ent-DiseaseSwab-desc = Used for taking and transferring samples. Sterile until open. Single use only.
+ent-DiseaseSwab-name = стерильный тампон
+ent-DiseaseSwab-desc = Используется для отбора и передачи проб. Стерилен до открытия. Только одноразовое использование.
 
-ent-BoxMouthSwab-name = sterile swab dispenser
-ent-BoxMouthSwab-desc = Dispenses 30 sterile swabs, extremely useful for botany.
+ent-BoxMouthSwab-name = диспенсер для стерильных тампонов
+ent-BoxMouthSwab-desc = Выдает 30 стерильных тампонов, чрезвычайно полезных для ботаники.
 
-ent-Vaccine-name = vaccine
-ent-Vaccine-desc = Prevents people who DON'T already have a disease from catching it.
+ent-Vaccine-name = вакцина
+ent-Vaccine-desc = Предотвращает заражение людей, у которых еще НЕТ заболевания.
 

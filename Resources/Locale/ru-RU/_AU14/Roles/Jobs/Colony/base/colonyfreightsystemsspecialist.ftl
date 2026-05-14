@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianFreightSystemsSpecialist-name = Spawn Point Freight Systems Specialist
-ent-AU14SpawnPointCivilianFreightSystemsSpecialist-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianFreightSystemsSpecialist-name = Специалист по грузовым системам точки возрождения
+ent-AU14SpawnPointCivilianFreightSystemsSpecialist-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

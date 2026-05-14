@@ -1,6 +1,6 @@
-ent-CrateEngineeringThruster-name = thruster crate
-ent-CrateEngineeringThruster-desc = Contains a thruster flatpack.
+ent-CrateEngineeringThruster-name = ящик подруливающего устройства
+ent-CrateEngineeringThruster-desc = Содержит плоский пакет подруливающего устройства.
 
-ent-CrateEngineeringGyroscope-name = gyroscope crate
-ent-CrateEngineeringGyroscope-desc = Contains a gyroscope flatpack.
+ent-CrateEngineeringGyroscope-name = ящик для гироскопа
+ent-CrateEngineeringGyroscope-desc = Содержит плоский пакет гироскопа.
 

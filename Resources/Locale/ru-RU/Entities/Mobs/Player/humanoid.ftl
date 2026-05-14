@@ -1,40 +1,40 @@
-ent-RandomHumanoidSpawnerDeathSquad-name = Death Squad Agent
+ent-RandomHumanoidSpawnerDeathSquad-name = Агент Отряда Смерти
 
-ent-RandomHumanoidSpawnerERTLeader-name = ERT leader
+ent-RandomHumanoidSpawnerERTLeader-name = Лидер ЭРТ
 
-ent-RandomHumanoidSpawnerERTLeaderEVA-name = ERT leader
+ent-RandomHumanoidSpawnerERTLeaderEVA-name = Лидер ЭРТ
 
-ent-RandomHumanoidSpawnerERTChaplain-name = ERT chaplain
+ent-RandomHumanoidSpawnerERTChaplain-name = капеллан ERT
 
-ent-RandomHumanoidSpawnerERTChaplainEVA-name = ERT chaplain
+ent-RandomHumanoidSpawnerERTChaplainEVA-name = капеллан ERT
 
-ent-RandomHumanoidSpawnerERTJanitor-name = ERT janitor
+ent-RandomHumanoidSpawnerERTJanitor-name = дворник ЭРТ
 
-ent-RandomHumanoidSpawnerERTJanitorEVA-name = ERT janitor
+ent-RandomHumanoidSpawnerERTJanitorEVA-name = дворник ЭРТ
 
-ent-RandomHumanoidSpawnerERTEngineer-name = ERT engineer
+ent-RandomHumanoidSpawnerERTEngineer-name = инженер ЭРТ
 
-ent-RandomHumanoidSpawnerERTEngineerEVA-name = ERT engineer
+ent-RandomHumanoidSpawnerERTEngineerEVA-name = инженер ЭРТ
 
-ent-RandomHumanoidSpawnerERTSecurity-name = ERT security
+ent-RandomHumanoidSpawnerERTSecurity-name = безопасность ERT
 
-ent-RandomHumanoidSpawnerERTSecurityEVA-name = ERT security
+ent-RandomHumanoidSpawnerERTSecurityEVA-name = безопасность ERT
 
-ent-RandomHumanoidSpawnerERTMedical-name = ERT medic
+ent-RandomHumanoidSpawnerERTMedical-name = врач скорой помощи
 
-ent-RandomHumanoidSpawnerERTMedicalEVA-name = ERT medic
+ent-RandomHumanoidSpawnerERTMedicalEVA-name = врач скорой помощи
 
-ent-RandomHumanoidSpawnerCBURNUnit-name = CBURN Agent
+ent-RandomHumanoidSpawnerCBURNUnit-name = Агент CBURN
 
-ent-RandomHumanoidSpawnerCentcomOfficial-name = CentComm official
+ent-RandomHumanoidSpawnerCentcomOfficial-name = Официальный представитель ЦентКомма
 
-ent-RandomHumanoidSpawnerSyndicateAgent-name = syndicate agent
+ent-RandomHumanoidSpawnerSyndicateAgent-name = агент синдиката
 
-ent-RandomHumanoidSpawnerNukeOp-name = Nuclear Operative
+ent-RandomHumanoidSpawnerNukeOp-name = Ядерный оперативник
 
-ent-RandomHumanoidSpawnerCluwne-name = Cluwne
+ent-RandomHumanoidSpawnerCluwne-name = Клювн
 
-ent-RandomHumanoidSpawnerERTLeaderEVALecter-name = ERT leader
+ent-RandomHumanoidSpawnerERTLeaderEVALecter-name = Лидер ЭРТ
 
-ent-RandomHumanoidSpawnerERTSecurityEVALecter-name = ERT security
+ent-RandomHumanoidSpawnerERTSecurityEVALecter-name = безопасность ERT
 

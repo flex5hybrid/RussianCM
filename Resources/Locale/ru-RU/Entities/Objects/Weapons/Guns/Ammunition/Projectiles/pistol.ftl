@@ -1,12 +1,12 @@
-ent-BulletPistol-name = bullet (.35 auto)
-ent-BulletPistol-desc = If you can see this you're probably dead!
+ent-BulletPistol-name = пуля (.35 автомат)
+ent-BulletPistol-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletPistolPractice-name = bullet (.35 auto practice)
-ent-BulletPistolPractice-desc = If you can see this you're probably dead!
+ent-BulletPistolPractice-name = пуля (автоматическая практика .35)
+ent-BulletPistolPractice-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletPistolIncendiary-name = bullet (.35 auto incendiary)
-ent-BulletPistolIncendiary-desc = If you can see this you're probably dead!
+ent-BulletPistolIncendiary-name = пуля (автозажигательная .35)
+ent-BulletPistolIncendiary-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletPistolUranium-name = bullet (.35 auto uranium)
-ent-BulletPistolUranium-desc = If you can see this you're probably dead!
+ent-BulletPistolUranium-name = пуля (.35 авто уран)
+ent-BulletPistolUranium-desc = Если ты это видишь, ты, вероятно, мертв!
 

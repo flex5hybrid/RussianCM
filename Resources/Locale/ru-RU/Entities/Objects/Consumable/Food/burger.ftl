@@ -1,107 +1,107 @@
-ent-FoodBreadBun-name = bun
-ent-FoodBreadBun-desc = A hamburger bun. Round and convenient to hold.
+ent-FoodBreadBun-name = булочка
+ent-FoodBreadBun-desc = Булочка для гамбургера. Круглый, удобно держать.
 
-ent-FoodBreadBunBottom-name = bottom bun
-ent-FoodBreadBunBottom-desc = It's time to start building the burger tower.
+ent-FoodBreadBunBottom-name = нижняя булочка
+ent-FoodBreadBunBottom-desc = Пришло время начать строить бургерную башню.
 
-ent-FoodBreadBunTop-name = top bun
-ent-FoodBreadBunTop-desc = The perfect finish for your burger tower.
+ent-FoodBreadBunTop-name = верхняя булочка
+ent-FoodBreadBunTop-desc = Идеальная отделка вашей бургер-башни.
 
-ent-FoodBurgerJelly-name = jelly burger
-ent-FoodBurgerJelly-desc = Culinary delight..?
+ent-FoodBurgerJelly-name = желейный бургер
+ent-FoodBurgerJelly-desc = Кулинарное наслаждение..?
 
-ent-FoodBurgerAppendix-name = appendix burger
-ent-FoodBurgerAppendix-desc = Tastes like appendicitis.
+ent-FoodBurgerAppendix-name = аппендикс бургер
+ent-FoodBurgerAppendix-desc = На вкус как аппендицит.
 
-ent-FoodBurgerBacon-name = bacon burger
-ent-FoodBurgerBacon-desc = The perfect combination of all things American.
+ent-FoodBurgerBacon-name = бургер с беконом
+ent-FoodBurgerBacon-desc = Идеальное сочетание всего американского.
 
-ent-FoodBurgerBaseball-name = baseball burger
-ent-FoodBurgerBaseball-desc = It's still warm. The steam coming off of it smells kinda sweaty.
+ent-FoodBurgerBaseball-name = бейсбольный бургер
+ent-FoodBurgerBaseball-desc = Еще тепло. Пар, идущий от него, пахнет потом.
 
-ent-FoodBurgerBear-name = bearger
-ent-FoodBurgerBear-desc = Best served rawr.
+ent-FoodBurgerBear-name = предъявитель
+ent-FoodBurgerBear-desc = Лучше всего подавать сырым.
 
-ent-FoodBurgerBig-name = big bite burger
-ent-FoodBurgerBig-desc = Forget the Big Mac. THIS is the future!
+ent-FoodBurgerBig-name = большой кусок бургера
+ent-FoodBurgerBig-desc = Забудьте о Биг Маке. ЭТО будущее!
 
-ent-FoodBurgerBrain-name = brain burger
-ent-FoodBurgerBrain-desc = A strange looking burger. It looks almost sentient.
+ent-FoodBurgerBrain-name = мозговой бургер
+ent-FoodBurgerBrain-desc = Странный на вид бургер. Он выглядит почти разумным.
 
-ent-FoodBurgerCat-name = cat burger
-ent-FoodBurgerCat-desc = Finally those cats and catpeople are worth something!
+ent-FoodBurgerCat-name = кошачий бургер
+ent-FoodBurgerCat-desc = Наконец-то эти кошки и котолюди чего-то стоят!
 
-ent-FoodBurgerCheese-name = cheese burger
-ent-FoodBurgerCheese-desc = This noble burger stands proudly clad in golden cheese.
+ent-FoodBurgerCheese-name = чизбургер
+ent-FoodBurgerCheese-desc = Этот благородный бургер гордо покрыт золотистым сыром.
 
-ent-FoodBurgerChicken-name = chicken sandwich
-ent-FoodBurgerChicken-desc = A delicious chicken sandwich, it is said the proceeds from this treat helps criminalize disarming people on the space frontier.
+ent-FoodBurgerChicken-name = куриный сэндвич
+ent-FoodBurgerChicken-desc = Говорят, что доходы от этого вкусного сэндвича с курицей помогают криминализировать разоружение людей на границе космоса.
 
-ent-FoodBurgerClown-name = clown burger
-ent-FoodBurgerClown-desc = This tastes funny...
+ent-FoodBurgerClown-name = клоун бургер
+ent-FoodBurgerClown-desc = Это забавно на вкус...
 
-ent-FoodBurgerCorgi-name = corger
-ent-FoodBurgerCorgi-desc = The Head of Personnel's favorite!
+ent-FoodBurgerCorgi-name = коргер
+ent-FoodBurgerCorgi-desc = Любимец начальника отдела кадров!
 
-ent-FoodBurgerCrab-name = crab burger
-ent-FoodBurgerCrab-desc = A delicious patty of the crabby kind, slapped in between a bun.
+ent-FoodBurgerCrab-name = крабовый бургер
+ent-FoodBurgerCrab-desc = Вкусная котлета в духе раздражительной булочки.
 
-ent-FoodBurgerCrazy-name = crazy hamburger
-ent-FoodBurgerCrazy-desc = This looks like the sort of food that a demented clown in a trenchcoat would make.
+ent-FoodBurgerCrazy-name = сумасшедший гамбургер
+ent-FoodBurgerCrazy-desc = Это похоже на еду, которую приготовил бы сумасшедший клоун в плаще.
 
-ent-FoodBurgerDuck-name = duck sandwich
-ent-FoodBurgerDuck-desc = A duck sandwich, only the criminally insane would dare to eat the meat of such an adorable creature.
+ent-FoodBurgerDuck-name = сэндвич с уткой
+ent-FoodBurgerDuck-desc = Сэндвич с уткой, только безумные преступники осмелятся съесть мясо такого очаровательного существа.
 
-ent-FoodBurgerEmpowered-name = empowered burger
-ent-FoodBurgerEmpowered-desc = It's shockingly good, if you live off of electricity that is.
+ent-FoodBurgerEmpowered-name = усиленный бургер
+ent-FoodBurgerEmpowered-desc = Это потрясающе хорошо, если вы живете за счет электричества.
 
-ent-FoodBurgerCarp-name = fillet-o-carp burger
-ent-FoodBurgerCarp-desc = Almost like a carp is yelling somewhere...
+ent-FoodBurgerCarp-name = бургер из филе карпа
+ent-FoodBurgerCarp-desc = Будто карп где-то кричит...
 
-ent-FoodBurgerFive-name = five alarm burger
-ent-FoodBurgerFive-desc = HOT! HOT! HOT!
+ent-FoodBurgerFive-name = бургер пять тревог
+ent-FoodBurgerFive-desc = ГОРЯЧО! ГОРЯЧИЙ! ГОРЯЧИЙ!
 
-ent-FoodBurgerGhost-name = ghost burger
-ent-FoodBurgerGhost-desc = Too spooky!
+ent-FoodBurgerGhost-name = призрак бургер
+ent-FoodBurgerGhost-desc = Слишком жутко!
 
-ent-FoodBurgerHuman-name = human burger
-ent-FoodBurgerHuman-desc = You cant tell who this is made of...
+ent-FoodBurgerHuman-name = человеческий бургер
+ent-FoodBurgerHuman-desc = Невозможно сказать, из кого это сделано...
 
-ent-FoodBurgerMcguffin-name = McGuffin
-ent-FoodBurgerMcguffin-desc = A cheap and greasy imitation of an eggs Benedict.
+ent-FoodBurgerMcguffin-name = Макгаффин
+ent-FoodBurgerMcguffin-desc = Дешевая и жирная имитация яиц Бенедикт.
 
-ent-FoodBurgerMcrib-name = BBQ Rib Sandwich
-ent-FoodBurgerMcrib-desc = An elusive rib shaped burger with limited availability across the galaxy. Not as good as you remember it.
+ent-FoodBurgerMcrib-name = Сэндвич с ребрами барбекю
+ent-FoodBurgerMcrib-desc = Неуловимый бургер в форме ребра, доступность которого по всей галактике ограничена. Не так хорошо, как ты это помнишь.
 
-ent-FoodBurgerMime-name = mime burger
-ent-FoodBurgerMime-desc = Its taste defies language.
+ent-FoodBurgerMime-name = мим-бургер
+ent-FoodBurgerMime-desc = Его вкус не поддается описанию.
 
-ent-FoodBurgerPlain-name = plain burger
-ent-FoodBurgerPlain-desc = A boring, dry burger.
+ent-FoodBurgerPlain-name = простой бургер
+ent-FoodBurgerPlain-desc = Скучный, сухой бургер.
 
-ent-FoodBurgerRat-name = rat burger
-ent-FoodBurgerRat-desc = Pretty much what you'd expect...
+ent-FoodBurgerRat-name = крысиный бургер
+ent-FoodBurgerRat-desc = Примерно то, что и следовало ожидать...
 
-ent-FoodBurgerRobot-name = roburger
-ent-FoodBurgerRobot-desc = The lettuce is the only organic component. Beep.
+ent-FoodBurgerRobot-name = робургер
+ent-FoodBurgerRobot-desc = Салат является единственным органическим компонентом. Звуковой сигнал.
 
-ent-FoodBurgerSoy-name = soylent burger
-ent-FoodBurgerSoy-desc = After eating this you have the overwhelming urge to purchase overpriced figurines of superheroes.
+ent-FoodBurgerSoy-name = сойлентовый бургер
+ent-FoodBurgerSoy-desc = После этого у вас возникает непреодолимое желание приобрести фигурки супергероев по завышенной цене.
 
-ent-FoodBurgerSpell-name = spell burger
-ent-FoodBurgerSpell-desc = This is absolutely Ei Nath.
+ent-FoodBurgerSpell-name = заклинание гамбургер
+ent-FoodBurgerSpell-desc = Это абсолютно Эй Натх.
 
-ent-FoodBurgerSuper-name = super bite burger
-ent-FoodBurgerSuper-desc = This is a mountain of a burger. FOOD!
+ent-FoodBurgerSuper-name = супер бургер
+ent-FoodBurgerSuper-desc = Это гора гамбургеров. ЕДА!
 
-ent-FoodBurgerTofu-name = tofu burger
-ent-FoodBurgerTofu-desc = What... is that meat?
+ent-FoodBurgerTofu-name = бургер с тофу
+ent-FoodBurgerTofu-desc = Что... это мясо?
 
-ent-FoodBurgerXeno-name = xenoburger
-ent-FoodBurgerXeno-desc = Smells caustic. Tastes like heresy.
+ent-FoodBurgerXeno-name = ксенобургер
+ent-FoodBurgerXeno-desc = Пахнет едкой. На вкус как ересь.
 
-ent-FoodBurgerMothRoach-name = mothroachburger
-ent-FoodBurgerMothRoach-desc = The last lamp it saw was the one inside the microwave.
+ent-FoodBurgerMothRoach-name = моло-бургер
+ent-FoodBurgerMothRoach-desc = Последняя лампа, которую он увидел, была внутри микроволновой печи.
 
-ent-FoodBurgerBase-name = item
+ent-FoodBurgerBase-name = элемент
 

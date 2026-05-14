@@ -1,81 +1,81 @@
-ent-TableFrame-name = table frame
-ent-TableFrame-desc = Pieces of metal that make the frame of a table.
+ent-TableFrame-name = каркас стола
+ent-TableFrame-desc = Кусочки металла, из которых состоит каркас стола.
 
-ent-CounterWoodFrame-name = wooden counter frame
-ent-CounterWoodFrame-desc = Pieces of wood that make the frame of a table.
+ent-CounterWoodFrame-name = деревянная рама счетчика
+ent-CounterWoodFrame-desc = Кусочки дерева, из которых состоит каркас стола.
 
-ent-CounterMetalFrame-name = metal counter frame
-ent-CounterMetalFrame-desc = Pieces of metal that make the frame of a table.
+ent-CounterMetalFrame-name = металлическая стойка счетчика
+ent-CounterMetalFrame-desc = Кусочки металла, из которых состоит каркас стола.
 
-ent-Table-name = table
-ent-Table-desc = A square piece of metal standing on four metal legs.
+ent-Table-name = стол
+ent-Table-desc = Квадратный кусок металла, стоящий на четырех металлических ножках.
 
-ent-TableReinforced-name = reinforced table
-ent-TableReinforced-desc = A square piece of metal standing on four metal legs. Extra robust.
+ent-TableReinforced-name = усиленный стол
+ent-TableReinforced-desc = Квадратный кусок металла, стоящий на четырех металлических ножках. Очень прочный.
 
-ent-TableGlass-name = glass table
-ent-TableGlass-desc = A square piece of glass, standing on four metal legs.
+ent-TableGlass-name = стеклянный стол
+ent-TableGlass-desc = Квадратный кусок стекла, стоящий на четырех металлических ножках.
 
-ent-TableReinforcedGlass-name = reinforced glass table
-ent-TableReinforcedGlass-desc = A square piece of glass, standing on four metal legs. Extra robust.
+ent-TableReinforcedGlass-name = стол из усиленного стекла
+ent-TableReinforcedGlass-desc = Квадратный кусок стекла, стоящий на четырех металлических ножках. Очень прочный.
 
-ent-TablePlasmaGlass-name = plasma glass table
-ent-TablePlasmaGlass-desc = A square piece of plasma glass, standing on four metal legs. Pretty!
+ent-TablePlasmaGlass-name = плазменный стеклянный стол
+ent-TablePlasmaGlass-desc = Квадратный кусок плазменного стекла, стоящий на четырех металлических ножках. Симпатичный!
 
-ent-TableBrass-name = brass table
-ent-TableBrass-desc = A shiny, corrosion resistant brass table. Steampunk!
+ent-TableBrass-name = латунный стол
+ent-TableBrass-desc = Блестящий, устойчивый к коррозии латунный стол. Стимпанк!
 
-ent-TableWood-name = wood table
-ent-TableWood-desc = Do not apply fire to this. Rumour says it burns easily.
+ent-TableWood-name = деревянный стол
+ent-TableWood-desc = Не применяйте при этом огонь. Ходят слухи, что он легко горит.
 
-ent-TableCarpet-name = gambling table
-ent-TableCarpet-desc = Play em' cowboy.
+ent-TableCarpet-name = игровой стол
+ent-TableCarpet-desc = Поиграй в ковбоя.
 
-ent-TableStone-name = stone table
-ent-TableStone-desc = Literally the sturdiest thing you have ever seen.
+ent-TableStone-name = каменный стол
+ent-TableStone-desc = Буквально самая крепкая вещь, которую вы когда-либо видели.
 
-ent-TableWeb-name = web table
-ent-TableWeb-desc = Really smooth and surprisingly durable.
+ent-TableWeb-name = веб-таблица
+ent-TableWeb-desc = Действительно гладкий и удивительно прочный.
 
-ent-TableXeno-name = xeno table
-ent-TableXeno-desc = I wouldn't put the silverware on it.
+ent-TableXeno-name = ксено стол
+ent-TableXeno-desc = Я бы не стал ставить туда столовое серебро.
 
-ent-TableFancyBase-name = fancy table
-ent-TableFancyBase-desc = Expensive and rich.
+ent-TableFancyBase-name = необычный стол
+ent-TableFancyBase-desc = Дорого и богато.
 
-ent-TableDebug-name = table
-ent-TableDebug-desc = PUT ON THEM CODERSOCKS!!
+ent-TableDebug-name = стол
+ent-TableDebug-desc = НАДЕВАЙТЕ НА НИХ КОДЕРСКИЕ НОСКИ!!
 
-ent-TableCounterWood-name = wood counter
-ent-TableCounterWood-desc = Do not apply fire to this. Rumour says it burns easily.
+ent-TableCounterWood-name = деревянный счетчик
+ent-TableCounterWood-desc = Не применяйте при этом огонь. Ходят слухи, что он легко горит.
 
-ent-TableCounterMetal-name = metal counter
-ent-TableCounterMetal-desc = Looks like a good place to put a drink down.
+ent-TableCounterMetal-name = металлический счетчик
+ent-TableCounterMetal-desc = Похоже, хорошее место, чтобы выпить.
 
 ent-TableFancyBlue-name = construction-recipe-table-fancy-blue
-ent-TableFancyBlue-desc = Expensive and rich.
+ent-TableFancyBlue-desc = Дорого и богато.
 
 ent-TableFancyCyan-name = construction-recipe-table-fancy-cyan
-ent-TableFancyCyan-desc = Expensive and rich.
+ent-TableFancyCyan-desc = Дорого и богато.
 
 ent-TableFancyBlack-name = construction-recipe-table-fancy-black
-ent-TableFancyBlack-desc = Expensive and rich.
+ent-TableFancyBlack-desc = Дорого и богато.
 
 ent-TableFancyRed-name = construction-recipe-table-fancy-red
-ent-TableFancyRed-desc = Expensive and rich.
+ent-TableFancyRed-desc = Дорого и богато.
 
 ent-TableFancyPurple-name = construction-recipe-table-fancy-purple
-ent-TableFancyPurple-desc = Expensive and rich.
+ent-TableFancyPurple-desc = Дорого и богато.
 
 ent-TableFancyPink-name = construction-recipe-table-fancy-pink
-ent-TableFancyPink-desc = Expensive and rich.
+ent-TableFancyPink-desc = Дорого и богато.
 
 ent-TableFancyGreen-name = construction-recipe-table-fancy-green
-ent-TableFancyGreen-desc = Expensive and rich.
+ent-TableFancyGreen-desc = Дорого и богато.
 
 ent-TableFancyOrange-name = construction-recipe-table-fancy-orange
-ent-TableFancyOrange-desc = Expensive and rich.
+ent-TableFancyOrange-desc = Дорого и богато.
 
 ent-TableFancyWhite-name = construction-recipe-table-fancy-white
-ent-TableFancyWhite-desc = Expensive and rich.
+ent-TableFancyWhite-desc = Дорого и богато.
 

@@ -1,8 +1,8 @@
-ent-BaseWeaponTurret-name = turret
+ent-BaseWeaponTurret-name = турель
 
-ent-BaseWeaponBallisticTurret-name = ballistic turret
-ent-BaseWeaponBallisticTurret-desc = A ballistic machine gun auto-turret.
+ent-BaseWeaponBallisticTurret-name = баллистическая турель
+ent-BaseWeaponBallisticTurret-desc = Баллистический пулемет-автотурель.
 
-ent-BaseWeaponEnergyTurret-name = laser turret
-ent-BaseWeaponEnergyTurret-desc = An auto-turret armed with a heavy laser. Its weapon will recharge while connected to an active power grid.
+ent-BaseWeaponEnergyTurret-name = лазерная турель
+ent-BaseWeaponEnergyTurret-desc = Автотурель, вооруженная тяжелым лазером. Его оружие будет перезаряжаться при подключении к активной электросети.
 

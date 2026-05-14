@@ -1,3 +1,3 @@
-ent-DisposalMachineFrame-name = high pressure machine frame
-ent-DisposalMachineFrame-desc = A machine frame made to withstand the amount of pressure used in the station's disposal system.
+ent-DisposalMachineFrame-name = рама машины высокого давления
+ent-DisposalMachineFrame-desc = Рама машины рассчитана на то, чтобы выдерживать давление, используемое в системе утилизации станции.
 

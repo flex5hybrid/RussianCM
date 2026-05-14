@@ -1,14 +1,14 @@
-ent-Stunbaton-name = stun baton
-ent-Stunbaton-desc = A stun baton for incapacitating people with. Actively harming with this is considered bad tone.
+ent-Stunbaton-name = электрошоковая дубинка
+ent-Stunbaton-desc = Электрошоковая дубинка для вывода из строя людей. Активно причинять таким образом вред считается дурным тоном.
 
-ent-Truncheon-name = truncheon
-ent-Truncheon-desc = A rigid, steel-studded baton, meant to harm.
+ent-Truncheon-name = дубинка
+ent-Truncheon-desc = Жесткая дубинка со стальными шипами, предназначенная для нанесения вреда.
 
-ent-Flash-name = flash
-ent-Flash-desc = An ultrabright flashbulb with a trigger, which causes the victim to be dazed and lose their eyesight for a moment. Useless when burnt out.
+ent-Flash-name = вспышка
+ent-Flash-desc = Сверхяркая вспышка со спусковым крючком, вызывающая ошеломление жертвы и потерю на мгновение зрения. Бесполезен при сгорании.
 
-ent-SciFlash-name = flash
+ent-SciFlash-name = вспышка
 
-ent-PortableFlasher-name = portable flasher
-ent-PortableFlasher-desc = An ultrabright flashbulb with a proximity trigger, useful for making an area security-only.
+ent-PortableFlasher-name = портативный флешер
+ent-PortableFlasher-desc = Сверхяркая вспышка с бесконтактным триггером, полезная для того, чтобы сделать зону доступной только для охраны.
 

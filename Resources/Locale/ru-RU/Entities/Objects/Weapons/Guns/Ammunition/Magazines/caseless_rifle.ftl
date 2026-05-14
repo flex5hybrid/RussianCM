@@ -1,22 +1,22 @@
-ent-BaseMagazineCaselessRifle-name = magazine (.25 caseless)
+ent-BaseMagazineCaselessRifle-name = магазин (.25 без гильзы)
 
-ent-BaseMagazineCaselessRifleShort-name = caseless rifle short magazine (.25 caseless)
+ent-BaseMagazineCaselessRifleShort-name = безгильзовая винтовка с коротким магазином (безгильзовый .25)
 
-ent-BaseMagazinePistolCaselessRifle-name = pistol magazine (.25 caseless)
+ent-BaseMagazinePistolCaselessRifle-name = пистолетный магазин (безгильзовый.25)
 
-ent-MagazineCaselessRifle10x24-name = box magazine (.25 caseless)
+ent-MagazineCaselessRifle10x24-name = коробчатый магазин (безгильзовый .25)
 
-ent-MagazinePistolCaselessRifle-name = pistol magazine (.25 caseless)
-ent-MagazinePistolCaselessRifle-desc = 10-round magazine for the Cobra pistol. Intended to hold general-purpose kinetic ammunition.
+ent-MagazinePistolCaselessRifle-name = пистолетный магазин (безгильзовый.25)
+ent-MagazinePistolCaselessRifle-desc = Магазин на 10 патронов для пистолета Кобра. Предназначен для хранения кинетических боеприпасов общего назначения.
 
-ent-MagazinePistolCaselessRiflePractice-name = pistol magazine (.25 caseless practice)
-ent-MagazinePistolCaselessRiflePractice-desc = 10-round magazine for the Cobra pistol. Intended to hold non-harmful chalk ammunition.
+ent-MagazinePistolCaselessRiflePractice-name = пистолетный магазин (безгильзовый тренировочный .25)
+ent-MagazinePistolCaselessRiflePractice-desc = Магазин на 10 патронов для пистолета Кобра. Предназначен для хранения неопасных меловых боеприпасов.
 
-ent-MagazineCaselessRifle-name = magazine (.25 caseless)
+ent-MagazineCaselessRifle-name = магазин (.25 без гильзы)
 
-ent-MagazineCaselessRiflePractice-name = magazine (.25 caseless practice)
+ent-MagazineCaselessRiflePractice-name = журнал (безгильзовая практика .25)
 
-ent-MagazineCaselessRifleShort-name = short magazine (.25 caseless)
+ent-MagazineCaselessRifleShort-name = короткий магазин (без гильзы .25)
 
-ent-MagazineCaselessRifleShortPractice-name = short magazine (.25 caseless practice)
+ent-MagazineCaselessRifleShortPractice-name = короткий магазин (безгильзовая практика .25)
 

@@ -1,48 +1,48 @@
-ent-ClosetTool-name = tool closet
-ent-ClosetTool-desc = It's a storage unit for tools.
+ent-ClosetTool-name = шкаф для инструментов
+ent-ClosetTool-desc = Это хранилище для инструментов.
 
-ent-ClosetRadiationSuit-name = radiation suit closet
-ent-ClosetRadiationSuit-desc = More comfortable than radiation poisioning.
+ent-ClosetRadiationSuit-name = шкаф для радиационного костюма
+ent-ClosetRadiationSuit-desc = Удобнее, чем радиационное отравление.
 
-ent-ClosetEmergency-name = emergency closet
-ent-ClosetEmergency-desc = It's a storage unit for emergency breath masks and O2 tanks.
+ent-ClosetEmergency-name = аварийный туалет
+ent-ClosetEmergency-desc = Это хранилище для аварийных дыхательных масок и баллонов с кислородом.
 
-ent-ClosetEmergencyN2-name = emergency nitrogen closet
-ent-ClosetEmergencyN2-desc = It's full of life-saving equipment. Assuming, that is, that you breathe nitrogen.
+ent-ClosetEmergencyN2-name = аварийный азотный шкаф
+ent-ClosetEmergencyN2-desc = Там полно спасательного оборудования. Предположим, что вы дышите азотом.
 
-ent-ClosetFire-name = fire-safety closet
-ent-ClosetFire-desc = It's a storage unit for fire-fighting supplies.
+ent-ClosetFire-name = шкаф пожарной безопасности
+ent-ClosetFire-desc = Это склад противопожарных принадлежностей.
 
-ent-ClosetBomb-name = EOD closet
-ent-ClosetBomb-desc = It's a storage unit for explosion-protective suits.
+ent-ClosetBomb-name = шкаф EOD
+ent-ClosetBomb-desc = Это хранилище взрывозащитных костюмов.
 
-ent-ClosetJanitorBomb-name = janitorial bomb suit closet
-ent-ClosetJanitorBomb-desc = It's a storage unit for janitorial explosion-protective suits.
+ent-ClosetJanitorBomb-name = шкаф для уборки бомбового костюма
+ent-ClosetJanitorBomb-desc = Это склад служебных взрывозащитных костюмов.
 
-ent-ClosetL3-name = level 3 biohazard gear closet
-ent-ClosetL3-desc = It's a storage unit for level 3 biohazard gear.
+ent-ClosetL3-name = Шкаф с биологически опасным снаряжением 3-го уровня
+ent-ClosetL3-desc = Это хранилище для биологического оборудования 3-го уровня.
 
-ent-ClosetMaintenance-name = maintenance closet
-ent-ClosetMaintenance-desc = It's a storage unit.
+ent-ClosetMaintenance-name = подсобное помещение
+ent-ClosetMaintenance-desc = Это складское помещение.
 
-ent-LockerSyndicate-name = armory closet
-ent-LockerSyndicate-desc = It's a storage unit.
+ent-LockerSyndicate-name = оружейный шкаф
+ent-LockerSyndicate-desc = Это складское помещение.
 
-ent-ClosetBluespace-name = suspicious closet
-ent-ClosetBluespace-desc = It's a storage unit... right?
+ent-ClosetBluespace-name = подозрительный шкаф
+ent-ClosetBluespace-desc = Это хранилище... верно?
 
-ent-ClosetBluespaceUnstable-name = suspicious closet
-ent-ClosetBluespaceUnstable-desc = It's a storage unit... right?
+ent-ClosetBluespaceUnstable-name = подозрительный шкаф
+ent-ClosetBluespaceUnstable-desc = Это хранилище... верно?
 
-ent-ClosetL3Science-name = level 3 biohazard gear closet
-ent-ClosetL3Science-desc = It's a storage unit for level 3 biohazard gear.
+ent-ClosetL3Science-name = Шкаф с биологически опасным снаряжением 3-го уровня
+ent-ClosetL3Science-desc = Это хранилище для биологического оборудования 3-го уровня.
 
-ent-ClosetL3Virology-name = level 3 biohazard gear closet
-ent-ClosetL3Virology-desc = It's a storage unit for level 3 biohazard gear.
+ent-ClosetL3Virology-name = Шкаф с биологически опасным снаряжением 3-го уровня
+ent-ClosetL3Virology-desc = Это хранилище для биологического оборудования 3-го уровня.
 
-ent-ClosetL3Security-name = level 3 biohazard gear closet
-ent-ClosetL3Security-desc = It's a storage unit for level 3 biohazard gear.
+ent-ClosetL3Security-name = Шкаф с биологически опасным снаряжением 3-го уровня
+ent-ClosetL3Security-desc = Это хранилище для биологического оборудования 3-го уровня.
 
-ent-ClosetL3Janitor-name = level 3 biohazard gear closet
-ent-ClosetL3Janitor-desc = It's a storage unit for level 3 biohazard gear.
+ent-ClosetL3Janitor-name = Шкаф с биологически опасным снаряжением 3-го уровня
+ent-ClosetL3Janitor-desc = Это хранилище для биологического оборудования 3-го уровня.
 

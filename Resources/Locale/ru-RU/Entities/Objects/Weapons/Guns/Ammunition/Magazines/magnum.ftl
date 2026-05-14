@@ -1,29 +1,29 @@
-ent-BaseMagazineMagnum-name = pistol magazine (.45 magnum)
+ent-BaseMagazineMagnum-name = пистолетный магазин (.45 магнум)
 
-ent-BaseMagazineMagnumSubMachineGun-name = SMG magazine (.45 magnum)
+ent-BaseMagazineMagnumSubMachineGun-name = Магазин SMG (.45 магнум)
 
-ent-MagazineMagnumEmpty-name = pistol magazine (.45 magnum any)
-ent-MagazineMagnumEmpty-desc = 7-round single stack pistol magazine.
+ent-MagazineMagnumEmpty-name = пистолетный магазин (.45 магнум любой)
+ent-MagazineMagnumEmpty-desc = Пистолетный однорядный магазин на 7 патронов.
 
-ent-MagazineMagnum-name = pistol magazine (.45 magnum)
-ent-MagazineMagnum-desc = 7-round single stack pistol magazine. Intended to hold general-purpose kinetic ammunition.
+ent-MagazineMagnum-name = пистолетный магазин (.45 магнум)
+ent-MagazineMagnum-desc = Пистолетный однорядный магазин на 7 патронов. Предназначен для хранения кинетических боеприпасов общего назначения.
 
-ent-MagazineMagnumPractice-name = pistol magazine (.45 magnum practice)
-ent-MagazineMagnumPractice-desc = 7-round single stack pistol magazine. Intended to hold non-harmful chalk ammunition.
+ent-MagazineMagnumPractice-name = пистолетный магазин (практика .45 магнум)
+ent-MagazineMagnumPractice-desc = Пистолетный однорядный магазин на 7 патронов. Предназначен для хранения неопасных меловых боеприпасов.
 
-ent-MagazineMagnumUranium-name = pistol magazine (.45 magnum uranium)
-ent-MagazineMagnumUranium-desc = 7-round single stack pistol magazine. Intended to hold exotic uranium-core ammunition.
+ent-MagazineMagnumUranium-name = пистолетный магазин (.45 магнум уран)
+ent-MagazineMagnumUranium-desc = Пистолетный однорядный магазин на 7 патронов. Предназначен для хранения экзотических боеприпасов с урановым сердечником.
 
-ent-MagazineMagnumAP-name = pistol magazine (.45 magnum armor-piercing)
-ent-MagazineMagnumAP-desc = 7-round single stack pistol magazine. Intended to hold rare armor-piercing ammunition.
+ent-MagazineMagnumAP-name = пистолетный магазин (бронебойный .45 магнум)
+ent-MagazineMagnumAP-desc = Пистолетный однорядный магазин на 7 патронов. Предназначен для хранения редких бронебойных боеприпасов.
 
-ent-MagazineMagnumSubMachineGunEmpty-name = SMG magazine (.45 magnum any)
+ent-MagazineMagnumSubMachineGunEmpty-name = Магазин SMG (.45 магнум любой)
 
-ent-MagazineMagnumSubMachineGun-name = SMG magazine (.45 magnum)
+ent-MagazineMagnumSubMachineGun-name = Магазин SMG (.45 магнум)
 
-ent-MagazineMagnumSubMachineGunPractice-name = SMG magazine (.45 magnum practice)
+ent-MagazineMagnumSubMachineGunPractice-name = Магазин SMG (практика .45 Magnum)
 
-ent-MagazineMagnumSubMachineGunUranium-name = SMG magazine (.45 magnum uranium)
+ent-MagazineMagnumSubMachineGunUranium-name = Магазин SMG (уран .45 Magnum)
 
-ent-MagazineMagnumSubMachineGunPiercing-name = SMG magazine (.45 magnum armour-piercing)
+ent-MagazineMagnumSubMachineGunPiercing-name = Магазин для пистолета-пулемета (бронебойный .45 магнум)
 

@@ -1,27 +1,27 @@
-ent-BaseMeteor-name = meteor
-ent-BaseMeteor-desc = You prefer them when they're burning up in the atmosphere.
+ent-BaseMeteor-name = метеор
+ent-BaseMeteor-desc = Вы предпочитаете их, когда они сгорают в атмосфере.
 
-ent-MeteorSpaceDust-name = space dust
-ent-MeteorSpaceDust-desc = Makes a station sneeze.
+ent-MeteorSpaceDust-name = космическая пыль
+ent-MeteorSpaceDust-desc = Заставляет станцию чихать.
 
-ent-MeteorUrist-name = Urist McMeteor
-ent-MeteorUrist-desc = As a successful member of society with a stable unflinching psyche and limitless drive, natural affinity for finance and domination, you have been selected, no, you have been effortlessly guided by divine (biological) trauma towards this moment. The gates of destiny fling open, and once again you're left standing on pulsating nothingness. A strobing headache of the soul.
+ent-MeteorUrist-name = Урист МакМетеор
+ent-MeteorUrist-desc = Как успешный член общества со стабильной непоколебимой психикой и безграничным стремлением, естественной склонностью к финансам и господству, вы были выбраны, нет, вас легко направила божественная (биологическая) травма к этому моменту. Врата судьбы распахиваются, и вы снова остаетесь стоять в пульсирующем небытии. Страшная головная боль души.
 
-ent-MeteorCow-name = Cosmic cow
-ent-MeteorCow-desc = Moo-ving at relativistic speeds!
+ent-MeteorCow-name = Космическая корова
+ent-MeteorCow-desc = Движение на релятивистских скоростях!
 
-ent-MeteorClown-name = Honksteroid
-ent-MeteorClown-desc = The final honkening!
+ent-MeteorClown-name = Хонкстероид
+ent-MeteorClown-desc = Финальный сигнал!
 
-ent-MeteorPotato-name = Space potato
-ent-MeteorPotato-desc = A starchy threat from the depths of the space. Contains 200% of your daily sodium intake!
+ent-MeteorPotato-name = Космическая картошка
+ent-MeteorPotato-desc = Крахмалистая угроза из глубин космоса. Содержит 200% дневной нормы натрия!
 
-ent-MeteorSmall-name = meteor
-ent-MeteorSmall-desc = You prefer them when they're burning up in the atmosphere.
+ent-MeteorSmall-name = метеор
+ent-MeteorSmall-desc = Вы предпочитаете их, когда они сгорают в атмосфере.
 
-ent-MeteorMedium-name = meteor
-ent-MeteorMedium-desc = You prefer them when they're burning up in the atmosphere.
+ent-MeteorMedium-name = метеор
+ent-MeteorMedium-desc = Вы предпочитаете их, когда они сгорают в атмосфере.
 
-ent-MeteorLarge-name = meteor
-ent-MeteorLarge-desc = You prefer them when they're burning up in the atmosphere.
+ent-MeteorLarge-name = метеор
+ent-MeteorLarge-desc = Вы предпочитаете их, когда они сгорают в атмосфере.
 

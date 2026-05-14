@@ -1,12 +1,12 @@
-ent-MobBaseScurret-name = scurret
-ent-MobBaseScurret-desc = The genetic bipedal ancestor of... Uh... Something. Yeah, there's definitely something on the station that descended from whatever this is.
+ent-MobBaseScurret-name = бежать
+ent-MobBaseScurret-desc = Генетический двуногий предок... Э... Что-то. Да, на станции определенно есть что-то, что произошло от чего бы то ни было.
 
-ent-MobScurret-name = scurret
-ent-MobScurret-desc = Commonly known as Wawa, from the wetlands of Planet Wawa, these critters make up the bulk of Arnolds's Pizza's "loyal workforce".
+ent-MobScurret-name = бежать
+ent-MobScurret-desc = Эти твари, широко известные как Вава, из водно-болотных угодий планеты Вава, составляют основную часть «верных сотрудников Arnolds's Pizza».
 
-ent-MobBaseEmotionalSupportScurret-name = Emotional Support Scurret
-ent-MobBaseEmotionalSupportScurret-desc = The genetic bipedal ancestor of... Uh... Something. Yeah, there's definitely something on the station that descended from whatever this is.
+ent-MobBaseEmotionalSupportScurret-name = Эмоциональная поддержка
+ent-MobBaseEmotionalSupportScurret-desc = Генетический двуногий предок... Э... Что-то. Да, на станции определенно есть что-то, что произошло от чего бы то ни было.
 
-ent-MobEmotionalSupportScurret-name = Emotional Support Scurret
-ent-MobEmotionalSupportScurret-desc = Commonly known as Wawa, from the wetlands of Planet Wawa, these critters make up the bulk of Arnold's Pizza's "loyal workforce". This one is here as a temp.
+ent-MobEmotionalSupportScurret-name = Эмоциональная поддержка
+ent-MobEmotionalSupportScurret-desc = Эти твари, широко известные как Вава, из водно-болотных угодий планеты Вава, составляют основную часть «верной рабочей силы» Arnold's Pizza. Этот здесь временно.
 

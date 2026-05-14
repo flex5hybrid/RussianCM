@@ -1,6 +1,6 @@
-ent-MachineElectrolysisUnit-name = electrolysis unit
-ent-MachineElectrolysisUnit-desc = The latest in medicinal electrocution technology.
+ent-MachineElectrolysisUnit-name = электролизная установка
+ent-MachineElectrolysisUnit-desc = Новейшие технологии медицинского поражения электрическим током.
 
-ent-MachineCentrifuge-name = tabletop centrifuge
-ent-MachineCentrifuge-desc = Around and around it goes...
+ent-MachineCentrifuge-name = настольная центрифуга
+ent-MachineCentrifuge-desc = Это происходит кругом и кругом...
 

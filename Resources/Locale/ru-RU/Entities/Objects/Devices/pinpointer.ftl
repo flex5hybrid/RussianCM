@@ -1,18 +1,18 @@
-ent-PinpointerBase-name = pinpointer
-ent-PinpointerBase-desc = A handheld tracking device. While typically far more capable, this one has been configured to lock onto certain signals. Keep upright to retain accuracy.
+ent-PinpointerBase-name = пинпоинтер
+ent-PinpointerBase-desc = Портативное устройство слежения. Хотя этот вариант обычно гораздо более функционален, он настроен на фиксацию определенных сигналов. Держите вертикально, чтобы сохранить точность.
 
-ent-PinpointerNuclear-name = pinpointer
-ent-PinpointerNuclear-desc = A handheld tracking device. While typically far more capable, this one has been configured to lock onto certain signals. Keep upright to retain accuracy.
+ent-PinpointerNuclear-name = пинпоинтер
+ent-PinpointerNuclear-desc = Портативное устройство слежения. Хотя этот вариант обычно гораздо более функционален, он настроен на фиксацию определенных сигналов. Держите вертикально, чтобы сохранить точность.
 
-ent-PinpointerSyndicateNuclear-name = syndicate pinpointer
-ent-PinpointerSyndicateNuclear-desc = Produced specifically for nuclear operative missions, get that disk!
+ent-PinpointerSyndicateNuclear-name = пинпоинтер синдиката
+ent-PinpointerSyndicateNuclear-desc = Создан специально для ядерных операций, получите этот диск!
 
-ent-PinpointerUniversal-name = universal pinpointer
-ent-PinpointerUniversal-desc = A handheld tracking device that locks onto any physical entity while off. Keep upright to retain accuracy.
+ent-PinpointerUniversal-name = универсальный пинпоинтер
+ent-PinpointerUniversal-desc = Портативное устройство слежения, которое фиксирует любой физический объект, когда он выключен. Держите вертикально, чтобы сохранить точность.
 
-ent-PinpointerStation-name = station pinpointer
-ent-PinpointerStation-desc = A handheld tracking device that leads to the direction of any nearby station.
+ent-PinpointerStation-name = станция-пинпоинтер
+ent-PinpointerStation-desc = Портативное устройство слежения, которое определяет направление на любую близлежащую станцию.
 
-ent-PinpointerMothership-name = core pinpointer
-ent-PinpointerMothership-desc = A handheld tracking device that leads to the direction of the mothership core.
+ent-PinpointerMothership-name = основной пинпоинтер
+ent-PinpointerMothership-desc = Портативное устройство слежения, которое определяет направление ядра корабля-носителя.
 

@@ -1,12 +1,12 @@
-ent-BriefcaseBrownFilled-name = brown briefcase
-ent-BriefcaseBrownFilled-desc = Useful for carrying items in your hands.
+ent-BriefcaseBrownFilled-name = коричневый портфель
+ent-BriefcaseBrownFilled-desc = Полезно для переноски предметов в руках.
 
-ent-BriefcaseSyndieSniperBundleFilled-name = brown briefcase
-ent-BriefcaseSyndieSniperBundleFilled-desc = Useful for carrying items in your hands.
+ent-BriefcaseSyndieSniperBundleFilled-name = коричневый портфель
+ent-BriefcaseSyndieSniperBundleFilled-desc = Полезно для переноски предметов в руках.
 
-ent-BriefcaseSyndieLobbyingBundleFilled-name = brown briefcase
-ent-BriefcaseSyndieLobbyingBundleFilled-desc = Useful for carrying items in your hands.
+ent-BriefcaseSyndieLobbyingBundleFilled-name = коричневый портфель
+ent-BriefcaseSyndieLobbyingBundleFilled-desc = Полезно для переноски предметов в руках.
 
-ent-BriefcaseThiefBribingBundleFilled-name = brown briefcase
-ent-BriefcaseThiefBribingBundleFilled-desc = Useful for carrying items in your hands.
+ent-BriefcaseThiefBribingBundleFilled-name = коричневый портфель
+ent-BriefcaseThiefBribingBundleFilled-desc = Полезно для переноски предметов в руках.
 

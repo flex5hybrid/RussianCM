@@ -1,12 +1,12 @@
-ent-PaperBin-name = paper bin
-ent-PaperBin-desc = What secrets lie at the bottom of its endless stack?
+ent-PaperBin-name = корзина для бумаги
+ent-PaperBin-desc = Какие секреты скрываются на дне его бесконечной стопки?
 
-ent-PaperBin5-name = paper bin
-ent-PaperBin5-desc = What secrets lie at the bottom of its endless stack?
+ent-PaperBin5-name = корзина для бумаги
+ent-PaperBin5-desc = Какие секреты скрываются на дне его бесконечной стопки?
 
-ent-PaperBin10-name = paper bin
-ent-PaperBin10-desc = What secrets lie at the bottom of its endless stack?
+ent-PaperBin10-name = корзина для бумаги
+ent-PaperBin10-desc = Какие секреты скрываются на дне его бесконечной стопки?
 
-ent-PaperBin20-name = paper bin
-ent-PaperBin20-desc = What secrets lie at the bottom of its endless stack?
+ent-PaperBin20-name = корзина для бумаги
+ent-PaperBin20-desc = Какие секреты скрываются на дне его бесконечной стопки?
 

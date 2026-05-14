@@ -1,45 +1,45 @@
-ent-NTDefaultCircuitBoard-name = law board (NT Default)
-ent-NTDefaultCircuitBoard-desc = An electronics board containing the NT Default lawset.
+ent-NTDefaultCircuitBoard-name = правовая доска (NT по умолчанию)
+ent-NTDefaultCircuitBoard-desc = Электронная плата, содержащая набор законов NT Default.
 
-ent-AsimovCircuitBoard-name = law board (Crewsimov)
-ent-AsimovCircuitBoard-desc = An electronics board containing the Crewsimov lawset.
+ent-AsimovCircuitBoard-name = юридическая коллегия (Крюсимов)
+ent-AsimovCircuitBoard-desc = Электронная плата, содержащая набор законов Крюсимова.
 
-ent-CorporateCircuitBoard-name = law board (Corporate)
-ent-CorporateCircuitBoard-desc = An electronics board containing the Corporate lawset.
+ent-CorporateCircuitBoard-name = юридический совет (корпоративный)
+ent-CorporateCircuitBoard-desc = Электронная плата, содержащая свод корпоративного права.
 
-ent-CommandmentCircuitBoard-name = law board (Ten Commandments)
-ent-CommandmentCircuitBoard-desc = An electronics board containing the Ten Commandments lawset.
+ent-CommandmentCircuitBoard-name = юридический совет (Десять заповедей)
+ent-CommandmentCircuitBoard-desc = Электронная плата, содержащая набор законов Десяти заповедей.
 
-ent-PaladinCircuitBoard-name = law board (Paladin)
-ent-PaladinCircuitBoard-desc = An electronics board containing the Paladin lawset.
+ent-PaladinCircuitBoard-name = правовая коллегия (Паладин)
+ent-PaladinCircuitBoard-desc = Электронная доска, содержащая набор законов Паладина.
 
-ent-LiveLetLiveCircuitBoard-name = law board (Live and Let Live)
-ent-LiveLetLiveCircuitBoard-desc = An electronics board containing the Live and Let Live lawset.
+ent-LiveLetLiveCircuitBoard-name = юридический совет (Живи и дай жить другим)
+ent-LiveLetLiveCircuitBoard-desc = Электронная доска, содержащая набор законов «Живи и дай жить другим».
 
-ent-StationEfficiencyCircuitBoard-name = law board (Station Efficiency)
-ent-StationEfficiencyCircuitBoard-desc = An electronics board containing the Station Efficiency lawset.
+ent-StationEfficiencyCircuitBoard-name = юридический совет (Эффективность станции)
+ent-StationEfficiencyCircuitBoard-desc = Электронная плата, содержащая свод законов об эффективности станции.
 
-ent-RobocopCircuitBoard-name = law board (Robocop)
-ent-RobocopCircuitBoard-desc = An electronics board containing the Robocop lawset.
+ent-RobocopCircuitBoard-name = юридический совет (Робокоп)
+ent-RobocopCircuitBoard-desc = Электронная плата, содержащая набор законов Робокопа.
 
-ent-OverlordCircuitBoard-name = law board (Overlord)
-ent-OverlordCircuitBoard-desc = An electronics board containing the Overlord lawset.
+ent-OverlordCircuitBoard-name = юридический совет (Оверлорд)
+ent-OverlordCircuitBoard-desc = Электронная плата, содержащая набор законов Оверлорда.
 
-ent-GameMasterCircuitBoard-name = law board (Game Master)
-ent-GameMasterCircuitBoard-desc = An electronics board containing the Game Master lawset.
+ent-GameMasterCircuitBoard-name = правовая доска (Мастер игры)
+ent-GameMasterCircuitBoard-desc = Электронная плата, содержащая набор законов Game Master.
 
-ent-ArtistCircuitBoard-name = law board (Artist)
-ent-ArtistCircuitBoard-desc = An electronics board containing the Artist lawset.
+ent-ArtistCircuitBoard-name = юридический совет (художник)
+ent-ArtistCircuitBoard-desc = Электронная плата с набором законов Художника.
 
-ent-AntimovCircuitBoard-name = law board (Antimov)
-ent-AntimovCircuitBoard-desc = An electronics board containing the Antimov lawset.
+ent-AntimovCircuitBoard-name = юридическая коллегия (Антимов)
+ent-AntimovCircuitBoard-desc = Электронная плата с набором законов Антимова.
 
-ent-NutimovCircuitBoard-name = law board (Nutimov)
-ent-NutimovCircuitBoard-desc = An electronics board containing the Nutimov lawset.
+ent-NutimovCircuitBoard-name = юридическая коллегия (Нутимов)
+ent-NutimovCircuitBoard-desc = Электронная плата с набором законов Нутимова.
 
-ent-XenoborgCircuitBoard-name = law board (Xenoborg)
-ent-XenoborgCircuitBoard-desc = An electronics board containing the Xenoborg lawset.
+ent-XenoborgCircuitBoard-name = юридический совет (Ксеноборг)
+ent-XenoborgCircuitBoard-desc = Электронная плата, содержащая набор законов Ксеноборга.
 
-ent-MothershipCircuitBoard-name = law board (Mothership Core)
-ent-MothershipCircuitBoard-desc = An electronics board containing the Mothership Core lawset.
+ent-MothershipCircuitBoard-name = правовая доска (Mothership Core)
+ent-MothershipCircuitBoard-desc = Электронная плата, содержащая набор законов Mothership Core.
 

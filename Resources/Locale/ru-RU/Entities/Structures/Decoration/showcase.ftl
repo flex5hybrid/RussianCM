@@ -1,15 +1,15 @@
-ent-BaseShowcaseRobot-name = security robot showcase
-ent-BaseShowcaseRobot-desc = A non-functional replica of an old security robot.
+ent-BaseShowcaseRobot-name = витрина роботов-охранников
+ent-BaseShowcaseRobot-desc = Нефункциональная копия старого робота-охранника.
 
-ent-ShowcaseRobot-name = security robot showcase
-ent-ShowcaseRobot-desc = A non-functional replica of an old security robot.
+ent-ShowcaseRobot-name = витрина роботов-охранников
+ent-ShowcaseRobot-desc = Нефункциональная копия старого робота-охранника.
 
-ent-ShowcaseRobotWhite-name = white robot showcase
-ent-ShowcaseRobotWhite-desc = A non-functional replica of an old robot.
+ent-ShowcaseRobotWhite-name = витрина с белыми роботами
+ent-ShowcaseRobotWhite-desc = Нефункциональная копия старого робота.
 
-ent-ShowcaseRobotAntique-name = cargo robot showcase
-ent-ShowcaseRobotAntique-desc = A non-functional replica of an old cargo robot.
+ent-ShowcaseRobotAntique-name = витрина грузовых роботов
+ent-ShowcaseRobotAntique-desc = Нефункциональная копия старого грузового робота.
 
-ent-ShowcaseRobotMarauder-name = marauder showcase
-ent-ShowcaseRobotMarauder-desc = A non-functional replica of a marauder, painted green.
+ent-ShowcaseRobotMarauder-name = витрина мародеров
+ent-ShowcaseRobotMarauder-desc = Нефункциональная копия мародера, окрашенная в зеленый цвет.
 

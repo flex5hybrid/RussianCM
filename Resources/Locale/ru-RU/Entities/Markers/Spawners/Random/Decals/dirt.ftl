@@ -1,12 +1,12 @@
-ent-DecalSpawnerDirtBase-name = Decal Spawner
+ent-DecalSpawnerDirtBase-name = Создатель декалей
 
-ent-DecalSpawnerDirtSingle-name = Decal Spawner
+ent-DecalSpawnerDirtSingle-name = Создатель декалей
 
-ent-DecalSpawnerDirtNear-name = Decal Spawner
+ent-DecalSpawnerDirtNear-name = Создатель декалей
 
-ent-DecalSpawnerDirtWide-name = Decal Spawner
+ent-DecalSpawnerDirtWide-name = Создатель декалей
 
-ent-DecalSpawnerDirtMonospace-name = Decal Spawner
+ent-DecalSpawnerDirtMonospace-name = Создатель декалей
 
-ent-DecalSpawnerBurns-name = Decal Spawner
+ent-DecalSpawnerBurns-name = Создатель декалей
 

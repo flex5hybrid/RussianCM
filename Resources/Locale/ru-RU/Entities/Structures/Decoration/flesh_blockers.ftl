@@ -1,3 +1,3 @@
-ent-FleshBlocker-name = flesh clump
-ent-FleshBlocker-desc = An annoying clump of flesh.
+ent-FleshBlocker-name = комок плоти
+ent-FleshBlocker-desc = Раздражающий комок плоти.
 

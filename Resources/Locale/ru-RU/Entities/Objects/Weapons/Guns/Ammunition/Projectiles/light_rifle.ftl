@@ -1,12 +1,12 @@
-ent-BulletLightRifle-name = bullet (.20 rifle)
-ent-BulletLightRifle-desc = If you can see this you're probably dead!
+ent-BulletLightRifle-name = пуля (винтовка .20)
+ent-BulletLightRifle-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletLightRiflePractice-name = bullet (.20 rifle practice)
-ent-BulletLightRiflePractice-desc = If you can see this you're probably dead!
+ent-BulletLightRiflePractice-name = пуля (тренировочная винтовка .20)
+ent-BulletLightRiflePractice-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletLightRifleIncendiary-name = bullet (.20 rifle incendiary)
-ent-BulletLightRifleIncendiary-desc = If you can see this you're probably dead!
+ent-BulletLightRifleIncendiary-name = пуля (винтовочная зажигательная .20)
+ent-BulletLightRifleIncendiary-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletLightRifleUranium-name = bullet (.20 rifle uranium)
-ent-BulletLightRifleUranium-desc = If you can see this you're probably dead!
+ent-BulletLightRifleUranium-name = пуля (винтовочная урановая .20)
+ent-BulletLightRifleUranium-desc = Если ты это видишь, ты, вероятно, мертв!
 

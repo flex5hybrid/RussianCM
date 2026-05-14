@@ -1,2 +1,2 @@
-ent-SpawnPointPirates-name = Pirate spawn point
+ent-SpawnPointPirates-name = Место спавна пиратов
 

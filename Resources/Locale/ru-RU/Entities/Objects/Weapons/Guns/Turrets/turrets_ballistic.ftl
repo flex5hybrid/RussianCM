@@ -1,18 +1,18 @@
-ent-WeaponTurretSyndicateDisposable-name = disposable ballistic turret
-ent-WeaponTurretSyndicateDisposable-desc = A ballistic machine gun auto-turret.
+ent-WeaponTurretSyndicateDisposable-name = одноразовая баллистическая турель
+ent-WeaponTurretSyndicateDisposable-desc = Баллистический пулемет-автотурель.
 
-ent-WeaponTurretXeno-name = xeno turret
-ent-WeaponTurretXeno-desc = Shoots 9mm acid projectiles.
+ent-WeaponTurretXeno-name = ксено турель
+ent-WeaponTurretXeno-desc = Стреляет кислотными снарядами калибра 9 мм.
 
-ent-WeaponTurretSyndicate-name = ballistic turret
-ent-WeaponTurretSyndicate-desc = A ballistic machine gun auto-turret.
+ent-WeaponTurretSyndicate-name = баллистическая турель
+ent-WeaponTurretSyndicate-desc = Баллистический пулемет-автотурель.
 
-ent-WeaponTurretNanoTrasen-name = ballistic turret
-ent-WeaponTurretNanoTrasen-desc = A ballistic machine gun auto-turret.
+ent-WeaponTurretNanoTrasen-name = баллистическая турель
+ent-WeaponTurretNanoTrasen-desc = Баллистический пулемет-автотурель.
 
-ent-WeaponTurretHostile-name = ballistic turret
-ent-WeaponTurretHostile-desc = A ballistic machine gun auto-turret.
+ent-WeaponTurretHostile-name = баллистическая турель
+ent-WeaponTurretHostile-desc = Баллистический пулемет-автотурель.
 
-ent-WeaponTurretAllHostile-name = ballistic turret
-ent-WeaponTurretAllHostile-desc = A ballistic machine gun auto-turret.
+ent-WeaponTurretAllHostile-name = баллистическая турель
+ent-WeaponTurretAllHostile-desc = Баллистический пулемет-автотурель.
 

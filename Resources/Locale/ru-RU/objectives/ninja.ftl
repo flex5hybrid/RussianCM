@@ -1,13 +1,13 @@
-ent-StealResearchObjective-desc = Your gloves can be used to hack a research server and steal its precious data. If science has been slacking you'll have to get to work.
+ent-StealResearchObjective-desc = Ваши перчатки могут быть использованы для взлома исследовательского сервера и кражи ценных данных. Если наука слабеет, вам придется приступить к работе.
 
-ent-SpiderChargeObjective-desc = This bomb can be detonated in a specific location. Note that the bomb will not work anywhere else!
+ent-SpiderChargeObjective-desc = Эту бомбу можно взорвать в определенном месте. Учтите, что бомба больше нигде не сработает!
 
-ent-NinjaSurviveObjective-name = Survive
-ent-NinjaSurviveObjective-desc = You wouldn't be a very good ninja if you died, now would you?
+ent-NinjaSurviveObjective-name = Выжить
+ent-NinjaSurviveObjective-desc = Если бы ты умер, ты бы не стал хорошим ниндзя, не так ли?
 
-ent-TerrorObjective-name = Call in a threat
-ent-TerrorObjective-desc = Use your gloves on a communication console in order to bring another threat to the station.
+ent-TerrorObjective-name = Звонок с угрозой
+ent-TerrorObjective-desc = Используйте перчатки на консоли связи, чтобы принести на станцию еще одну угрозу.
 
-ent-MassArrestObjective-name = Set everyone to wanted
-ent-MassArrestObjective-desc = Use your gloves to hack a criminal records console, setting the entire station to be wanted!
+ent-MassArrestObjective-name = Установить всех в розыск
+ent-MassArrestObjective-desc = Используйте свои перчатки, чтобы взломать консоль криминального учета и объявить в розыск всю станцию!
 

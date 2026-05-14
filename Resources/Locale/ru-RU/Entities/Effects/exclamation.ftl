@@ -1,4 +1,4 @@
-ent-Exclamation-name = exclamation
+ent-Exclamation-name = восклицание
 
-ent-WhistleExclamation-name = exclamation
+ent-WhistleExclamation-name = восклицание
 

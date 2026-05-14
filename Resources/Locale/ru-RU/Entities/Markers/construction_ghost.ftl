@@ -1,2 +1,2 @@
-ent-constructionghost-name = construction ghost
+ent-constructionghost-name = строительный призрак
 

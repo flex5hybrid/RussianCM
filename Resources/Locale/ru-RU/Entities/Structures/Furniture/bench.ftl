@@ -1,12 +1,12 @@
-ent-BenchComfy-name = comfortable bench
-ent-BenchComfy-desc = A bench with an extremely comfortable backrest.
+ent-BenchComfy-name = удобная скамейка
+ent-BenchComfy-desc = Скамейка с очень удобной спинкой.
 
-ent-BenchColorfulComfy-name = comfortable bench
-ent-BenchColorfulComfy-desc = A bench with an extremely comfortable backrest.
+ent-BenchColorfulComfy-name = удобная скамейка
+ent-BenchColorfulComfy-desc = Скамейка с очень удобной спинкой.
 
-ent-BenchRedComfy-name = comfortable bench
-ent-BenchRedComfy-desc = A bench with an extremely comfortable backrest.
+ent-BenchRedComfy-name = удобная скамейка
+ent-BenchRedComfy-desc = Скамейка с очень удобной спинкой.
 
-ent-BenchBlueComfy-name = comfortable bench
-ent-BenchBlueComfy-desc = A bench with an extremely comfortable backrest.
+ent-BenchBlueComfy-name = удобная скамейка
+ent-BenchBlueComfy-desc = Скамейка с очень удобной спинкой.
 

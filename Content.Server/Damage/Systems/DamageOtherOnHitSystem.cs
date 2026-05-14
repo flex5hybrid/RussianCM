@@ -1,7 +1,10 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Weapons.Ranged.Systems;
+using Content.Shared._RMC14.Chemistry.Reagent;
 using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Camera;
+using Content.Shared.Body.Components;
+using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Events;
@@ -13,15 +16,19 @@ using Content.Shared.Throwing;
 using Content.Shared.Wires;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Player;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.Damage.Systems
 {
     public sealed class DamageOtherOnHitSystem : SharedDamageOtherOnHitSystem
     {
+        private static readonly ProtoId<ReagentPrototype> YautjaBloodReagent = "CMUYautjaBlood";
+
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
         [Dependency] private readonly GunSystem _guns = default!;
         [Dependency] private readonly DamageableSystem _damageable = default!;
         [Dependency] private readonly DamageExamineSystem _damageExamine = default!;
+        [Dependency] private readonly RMCReagentSystem _reagent = default!;
         [Dependency] private readonly SharedCameraRecoilSystem _sharedCameraRecoil = default!;
         [Dependency] private readonly SharedColorFlashEffectSystem _color = default!;
 
@@ -45,7 +52,7 @@ namespace Content.Server.Damage.Systems
 
             if (dmg is { Empty: false })
             {
-                _color.RaiseEffect(Color.Red, new List<EntityUid>() { args.Target }, Filter.Pvs(args.Target, entityManager: EntityManager));
+                _color.RaiseEffect(GetDamageEffectColor(args.Target), new List<EntityUid>() { args.Target }, Filter.Pvs(args.Target, entityManager: EntityManager));
             }
 
             _guns.PlayImpactSound(args.Target, dmg, null, false);
@@ -67,6 +74,18 @@ namespace Content.Server.Damage.Systems
         private void OnAttemptPacifiedThrow(Entity<DamageOtherOnHitComponent> ent, ref AttemptPacifiedThrowEvent args)
         {
             args.Cancel("pacified-cannot-throw");
+        }
+
+        private Color GetDamageEffectColor(EntityUid target)
+        {
+            if (TryComp(target, out BloodstreamComponent? bloodstream) &&
+                bloodstream.BloodReagent == YautjaBloodReagent &&
+                _reagent.TryIndex(bloodstream.BloodReagent, out var reagent))
+            {
+                return reagent.SubstanceColor;
+            }
+
+            return Color.Red;
         }
     }
 }

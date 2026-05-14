@@ -1,3 +1,3 @@
-ent-MachineMaterialSilo-name = material silo
-ent-MachineMaterialSilo-desc = An advanced machine, capable of using bluespace technology to transmit materials to nearby machines.
+ent-MachineMaterialSilo-name = бункер для материалов
+ent-MachineMaterialSilo-desc = Усовершенствованная машина, способная использовать технологию bluespace для передачи материалов на ближайшие машины.
 

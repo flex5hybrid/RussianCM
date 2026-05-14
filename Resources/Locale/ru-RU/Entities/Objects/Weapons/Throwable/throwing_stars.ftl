@@ -1,6 +1,6 @@
-ent-ThrowingStar-name = throwing star
-ent-ThrowingStar-desc = An ancient weapon still used to this day, due to its ease of lodging itself into its victim's body parts.
+ent-ThrowingStar-name = метательная звезда
+ent-ThrowingStar-desc = Древнее оружие, которое до сих пор используется из-за легкости проникновения в части тела жертвы.
 
-ent-ThrowingStarNinja-name = ninja throwing star
-ent-ThrowingStarNinja-desc = An ancient weapon still used to this day, due to its ease of lodging itself into its victim's body parts.
+ent-ThrowingStarNinja-name = ниндзя метательная звезда
+ent-ThrowingStarNinja-desc = Древнее оружие, которое до сих пор используется из-за легкости проникновения в части тела жертвы.
 

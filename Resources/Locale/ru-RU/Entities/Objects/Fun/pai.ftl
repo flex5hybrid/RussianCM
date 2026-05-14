@@ -1,24 +1,24 @@
-ent-PersonalAI-name = personal ai device
-ent-PersonalAI-desc = Your electronic pal who's fun to be with!
+ent-PersonalAI-name = персональное устройство искусственного интеллекта
+ent-PersonalAI-desc = Ваш электронный приятель, с которым весело!
 
-ent-SyndicatePersonalAI-name = syndicate personal ai device
-ent-SyndicatePersonalAI-desc = Your Syndicate pal who's fun to be with!
+ent-SyndicatePersonalAI-name = Персональное устройство искусственного интеллекта синдиката
+ent-SyndicatePersonalAI-desc = Твой приятель по Синдикату, с которым весело!
 
-ent-GoldenPersonalAI-name = golden personal ai device
-ent-GoldenPersonalAI-desc = Your electronic pal who's fun to be with! Special golden edition!
+ent-GoldenPersonalAI-name = Золотое личное устройство искусственного интеллекта
+ent-GoldenPersonalAI-desc = Ваш электронный приятель, с которым весело! Специальное золотое издание!
 
-ent-PotatoAI-name = potato artificial intelligence
-ent-PotatoAI-desc = It's a potato. You forced it to be sentient, you monster.
+ent-PotatoAI-name = картофельный искусственный интеллект
+ent-PotatoAI-desc = Это картофель. Ты заставил его стать разумным, чудовище.
 
-ent-ActionPAIOpenShop-name = Software Catalog
-ent-ActionPAIOpenShop-desc = Install new software to assist your owner.
+ent-ActionPAIOpenShop-name = Каталог программного обеспечения
+ent-ActionPAIOpenShop-desc = Установите новое программное обеспечение, чтобы помочь вашему владельцу.
 
-ent-ActionPAIMassScanner-name = Mass Scanner
-ent-ActionPAIMassScanner-desc = View a mass scanner interface.
+ent-ActionPAIMassScanner-name = Массовый сканер
+ent-ActionPAIMassScanner-desc = Просмотр интерфейса массового сканера.
 
-ent-ActionPAIPlayMidi-name = Play MIDI
-ent-ActionPAIPlayMidi-desc = Open your portable MIDI interface to soothe your owner.
+ent-ActionPAIPlayMidi-name = Играть в MIDI
+ent-ActionPAIPlayMidi-desc = Откройте портативный MIDI-интерфейс, чтобы успокоить своего владельца.
 
-ent-ActionPAIOpenMap-name = Open Map
-ent-ActionPAIOpenMap-desc = Open your map interface and guide your owner.
+ent-ActionPAIOpenMap-name = Открыть карту
+ent-ActionPAIOpenMap-desc = Откройте интерфейс карты и помогите своему владельцу.
 

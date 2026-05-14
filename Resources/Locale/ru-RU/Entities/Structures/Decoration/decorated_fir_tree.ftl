@@ -1,3 +1,3 @@
-ent-DecoratedFirTree-name = decorated fir tree
-ent-DecoratedFirTree-desc = A very festive tree for a very festive holiday.
+ent-DecoratedFirTree-name = украшенная ель
+ent-DecoratedFirTree-desc = Очень праздничное дерево для очень праздничного праздника.
 

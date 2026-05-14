@@ -1,15 +1,15 @@
-ent-AirlockShuttle-name = external airlock
-ent-AirlockShuttle-desc = Necessary for connecting two space craft together.
+ent-AirlockShuttle-name = внешний шлюзовой шлюз
+ent-AirlockShuttle-desc = Необходим для соединения двух космических кораблей вместе.
 
-ent-AirlockGlassShuttle-name = external airlock
-ent-AirlockGlassShuttle-desc = Necessary for connecting two space craft together.
+ent-AirlockGlassShuttle-name = внешний шлюзовой шлюз
+ent-AirlockGlassShuttle-desc = Необходим для соединения двух космических кораблей вместе.
 
-ent-AirlockShuttleAssembly-name = external airlock assembly
-ent-AirlockShuttleAssembly-desc = An incomplete structure necessary for connecting two space craft together.
+ent-AirlockShuttleAssembly-name = внешний шлюзовой узел
+ent-AirlockShuttleAssembly-desc = Незавершенная конструкция, необходимая для соединения двух космических кораблей.
 
-ent-AirlockGlassShuttleSyndicate-name = external airlock
-ent-AirlockGlassShuttleSyndicate-desc = Necessary for connecting two space craft together.
+ent-AirlockGlassShuttleSyndicate-name = внешний шлюзовой шлюз
+ent-AirlockGlassShuttleSyndicate-desc = Необходим для соединения двух космических кораблей вместе.
 
-ent-AirlockShuttleSyndicate-name = external airlock
-ent-AirlockShuttleSyndicate-desc = Necessary for connecting two space craft together.
+ent-AirlockShuttleSyndicate-name = внешний шлюзовой шлюз
+ent-AirlockShuttleSyndicate-desc = Необходим для соединения двух космических кораблей вместе.
 

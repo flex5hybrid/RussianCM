@@ -1,90 +1,90 @@
-ent-ActionScream-name = Scream
-ent-ActionScream-desc = AAAAAAAAAAAAAAAAAAAAAAAAA
+ent-ActionScream-name = Крик
+ent-ActionScream-desc = АААААААААААААААААААААААА
 
-ent-ActionTurnUndead-name = Turn Undead
-ent-ActionTurnUndead-desc = Succumb to your infection and become a zombie.
+ent-ActionTurnUndead-name = Изгнать нежить
+ent-ActionTurnUndead-desc = Поддайтесь инфекции и станьте зомби.
 
-ent-ActionToggleLight-name = Toggle Light
-ent-ActionToggleLight-desc = Turn the light on and off.
+ent-ActionToggleLight-name = Переключить свет
+ent-ActionToggleLight-desc = Включите и выключите свет.
 
-ent-ActionOpenStorageImplant-name = Toggle Storage Implant
-ent-ActionOpenStorageImplant-desc = Opens or closes the storage implant embedded under your skin
+ent-ActionOpenStorageImplant-name = Toggle Хранительный имплантат
+ent-ActionOpenStorageImplant-desc = Открывает или закрывает имплантат, встроенный под кожу.
 
-ent-ActionActivateMicroBomb-name = Activate Microbomb
-ent-ActionActivateMicroBomb-desc = Activates your internal microbomb, completely destroying you and your equipment
+ent-ActionActivateMicroBomb-name = Активировать микробомбу
+ent-ActionActivateMicroBomb-desc = Активирует вашу внутреннюю микробомбу, полностью уничтожая вас и ваше оборудование.
 
-ent-ActionActivateDeathAcidifier-name = Activate Death-Acidifier
-ent-ActionActivateDeathAcidifier-desc = Activates your death-acidifier, completely melting you and your equipment
+ent-ActionActivateDeathAcidifier-name = Активировать подкислитель смерти
+ent-ActionActivateDeathAcidifier-desc = Активирует ваш подкислитель смерти, полностью расплавляя вас и ваше снаряжение.
 
-ent-ActionActivateFreedomImplant-name = Break Free
-ent-ActionActivateFreedomImplant-desc = Activating your freedom implant will free you from any hand restraints
+ent-ActionActivateFreedomImplant-name = Вырваться на свободу
+ent-ActionActivateFreedomImplant-desc = Активация имплантата свободы освободит вас от любых ограничений для рук.
 
-ent-ActionOpenUplinkImplant-name = Open Uplink
-ent-ActionOpenUplinkImplant-desc = Opens the syndicate uplink embedded under your skin
+ent-ActionOpenUplinkImplant-name = Открыть восходящий канал
+ent-ActionOpenUplinkImplant-desc = Открывает восходящий канал синдиката, встроенный под вашу кожу.
 
-ent-ActionActivateEmpImplant-name = Activate EMP
-ent-ActionActivateEmpImplant-desc = Triggers a small EMP pulse around you
+ent-ActionActivateEmpImplant-name = Активировать ЭМИ
+ent-ActionActivateEmpImplant-desc = Вызывает небольшой ЭМИ-импульс вокруг вас.
 
-ent-ActionActivateScramImplant-name = SCRAM!
-ent-ActionActivateScramImplant-desc = Randomly teleports you within a large distance.
+ent-ActionActivateScramImplant-name = БЕРЕГ!
+ent-ActionActivateScramImplant-desc = Случайным образом телепортирует вас на большое расстояние.
 
-ent-ActionActivateDnaScramblerImplant-name = Scramble DNA
-ent-ActionActivateDnaScramblerImplant-desc = Randomly changes your name and appearance.
+ent-ActionActivateDnaScramblerImplant-name = Скрембл ДНК
+ent-ActionActivateDnaScramblerImplant-desc = Случайным образом меняет ваше имя и внешний вид.
 
-ent-ActionToggleSuitPiece-name = Toggle Suit Piece
-ent-ActionToggleSuitPiece-desc = Remember to equip the important pieces of your suit before going into action.
+ent-ActionToggleSuitPiece-name = Переключить часть костюма
+ent-ActionToggleSuitPiece-desc = Не забудьте экипировать важные части вашего костюма, прежде чем приступить к действию.
 
-ent-ActionCombatModeToggle-name = [color=red]Combat Mode[/color]
-ent-ActionCombatModeToggle-desc = Enter combat mode
+ent-ActionCombatModeToggle-name = [color=red]Боевой режим[/color]
+ent-ActionCombatModeToggle-desc = Войти в боевой режим
 
-ent-ActionChangeVoiceMask-name = Set name
-ent-ActionChangeVoiceMask-desc = Change the name others hear to something else.
+ent-ActionChangeVoiceMask-name = Установить имя
+ent-ActionChangeVoiceMask-desc = Измените имя, которое слышат другие, на что-нибудь другое.
 
-ent-ActionVendingThrow-name = Dispense Item
-ent-ActionVendingThrow-desc = Randomly dispense an item from your stock.
+ent-ActionVendingThrow-name = Выдать предмет
+ent-ActionVendingThrow-desc = Случайным образом выдайте предмет из вашего запаса.
 
-ent-ActionToggleBlock-name = Block
-ent-ActionToggleBlock-desc = Raise or lower your shield.
+ent-ActionToggleBlock-name = Блокировать
+ent-ActionToggleBlock-desc = Поднимите или опустите свой щит.
 
-ent-ActionClearNetworkLinkOverlays-name = Clear network link overlays
-ent-ActionClearNetworkLinkOverlays-desc = Clear network link overlays.
+ent-ActionClearNetworkLinkOverlays-name = Очистить наложения сетевых ссылок
+ent-ActionClearNetworkLinkOverlays-desc = Очистите наложения сетевых ссылок.
 
-ent-ActionAnimalLayEgg-name = Lay egg
-ent-ActionAnimalLayEgg-desc = Uses hunger to lay an egg.
+ent-ActionAnimalLayEgg-name = Отложить яйцо
+ent-ActionAnimalLayEgg-desc = Использует голод, чтобы отложить яйцо.
 
-ent-ActionSleep-name = Sleep
-ent-ActionSleep-desc = Go to sleep.
+ent-ActionSleep-name = Спать
+ent-ActionSleep-desc = Иди спать.
 
-ent-ActionWake-name = Wake up
-ent-ActionWake-desc = Stop sleeping.
+ent-ActionWake-name = Просыпайся
+ent-ActionWake-desc = Хватит спать.
 
-ent-ActionActivateHonkImplant-name = Honk
-ent-ActionActivateHonkImplant-desc = Activates your honking implant, which will produce the signature sound of the clown.
+ent-ActionActivateHonkImplant-name = сигналить
+ent-ActionActivateHonkImplant-desc = Активирует ваш сигнальный имплант, который издает характерный звук клоуна.
 
-ent-ActionFireStarter-name = Ignite
-ent-ActionFireStarter-desc = Ignites enemies in a radius around you.
+ent-ActionFireStarter-name = Зажечь
+ent-ActionFireStarter-desc = Поджигает врагов в радиусе вокруг вас.
 
-ent-ActionToggleEyes-name = Open/Close eyes
-ent-ActionToggleEyes-desc = Close your eyes to protect your peepers, or open your eyes to enjoy the pretty lights.
+ent-ActionToggleEyes-name = Открыть/закрыть глаза
+ent-ActionToggleEyes-desc = Закройте глаза, чтобы защитить наблюдателей, или откройте глаза, чтобы насладиться красивыми огнями.
 
-ent-ActionToggleWagging-name = Wagging Tail
-ent-ActionToggleWagging-desc = Start or stop wagging your tail.
+ent-ActionToggleWagging-name = Виляющий хвост
+ent-ActionToggleWagging-desc = Начни или перестань вилять хвостом.
 
 ent-FakeMindShieldToggleAction-name = [color=green]Toggle Fake Mindshield[/color]
-ent-FakeMindShieldToggleAction-desc = Turn the Fake Mindshield implant's transmission on/off
+ent-FakeMindShieldToggleAction-desc = Включите/выключите передачу имплантата Fake Mindshield.
 
-ent-ActionToggleParamedicSiren-name = Toggle Paramedic Siren
-ent-ActionToggleParamedicSiren-desc = Toggles the paramedic siren on and off.
+ent-ActionToggleParamedicSiren-name = Переключить сирену фельдшера
+ent-ActionToggleParamedicSiren-desc = Включает и выключает сирену фельдшера.
 
-ent-ActionGravityJump-name = Jump
-ent-ActionGravityJump-desc = Activating the advanced propulsion system, you propel yourself a short distance in the direction of your gaze.
+ent-ActionGravityJump-name = Прыжок
+ent-ActionGravityJump-desc = Активируя усовершенствованную двигательную систему, вы перемещаетесь на небольшое расстояние в направлении вашего взгляда.
 
-ent-ActionToggleRootable-name = Rootable
-ent-ActionToggleRootable-desc = Begin or stop being rooted to the floor.
+ent-ActionToggleRootable-name = Рутируемый
+ent-ActionToggleRootable-desc = Начните или перестаньте быть прикованным к полу.
 
-ent-ActionChameleonController-name = Control clothing
-ent-ActionChameleonController-desc = Change your entire outfit fast!
+ent-ActionChameleonController-name = Контрольная одежда
+ent-ActionChameleonController-desc = Быстро смените весь свой наряд!
 
-ent-ActionCombatModeToggleOff-name = [color=red]Combat Mode[/color]
-ent-ActionCombatModeToggleOff-desc = Enter combat mode
+ent-ActionCombatModeToggleOff-name = [color=red]Боевой режим[/color]
+ent-ActionCombatModeToggleOff-desc = Войти в боевой режим
 

@@ -1,3 +1,3 @@
-ent-SingularityGenerator-name = gravitational singularity generator
-ent-SingularityGenerator-desc = An Odd Device which produces a Gravitational Singularity when set up. Comes with a temporary shutdown containment failsafe.
+ent-SingularityGenerator-name = генератор гравитационной сингулярности
+ent-SingularityGenerator-desc = Странное устройство, которое при установке создает гравитационную сингулярность. Поставляется с отказоустойчивым устройством сдерживания временного отключения.
 

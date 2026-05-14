@@ -40,3 +40,9 @@ ui-vote-fluff = На основе Robust™ СЗИ-НСД
 
 cmd-votemenu-desc = Открывает меню голосования.
 cmd-votemenu-help = Использование: votemenu
+
+# Missing entries synced from en-US
+
+ui-vote-type-platoon = Взвод
+
+# Votekick reasons

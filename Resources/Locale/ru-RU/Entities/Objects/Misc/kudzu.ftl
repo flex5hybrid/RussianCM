@@ -1,19 +1,19 @@
-ent-Kudzu-name = kudzu
-ent-Kudzu-desc = A rapidly growing, dangerous plant. WHY ARE YOU STOPPING TO LOOK AT IT?!
+ent-Kudzu-name = Кудзу
+ent-Kudzu-desc = Быстрорастущее и опасное растение. ПОЧЕМУ ВЫ ПЕРЕСТАЕТЕ НА ЭТО ПОСМОТРЕТЬ?!
 
-ent-KudzuFlowerFriendly-name = floral carpet
-ent-KudzuFlowerFriendly-desc = A colorful carpet of flowers sprawling in every direction. You're not sure whether to take it down or leave it up.
+ent-KudzuFlowerFriendly-name = цветочный ковер
+ent-KudzuFlowerFriendly-desc = Яркий ковер цветов, раскинувшийся во всех направлениях. Вы не уверены, стоит ли его убрать или оставить.
 
-ent-FleshKudzu-name = tendons
-ent-FleshKudzu-desc = A rapidly growing cluster of meaty tendons. WHY ARE YOU STOPPING TO LOOK AT IT?!
+ent-FleshKudzu-name = сухожилия
+ent-FleshKudzu-desc = Быстрорастущее скопление мясистых сухожилий. ПОЧЕМУ ВЫ ПЕРЕСТАЕТЕ НА ЭТО ПОСМОТРЕТЬ?!
 
-ent-ShadowKudzu-name = dark haze
+ent-ShadowKudzu-name = темная дымка
 
-ent-ShadowKudzuWeak-name = haze
+ent-ShadowKudzuWeak-name = дымка
 
-ent-WeakKudzu-name = kudzu
-ent-WeakKudzu-desc = A rapidly growing, dangerous plant. WHY ARE YOU STOPPING TO LOOK AT IT?!
+ent-WeakKudzu-name = Кудзу
+ent-WeakKudzu-desc = Быстрорастущее и опасное растение. ПОЧЕМУ ВЫ ПЕРЕСТАЕТЕ НА ЭТО ПОСМОТРЕТЬ?!
 
-ent-KudzuFlowerAngry-name = floral carpet
-ent-KudzuFlowerAngry-desc = A colorful carpet of flowers sprawling in every direction. You're not sure whether to take it down or leave it up.
+ent-KudzuFlowerAngry-name = цветочный ковер
+ent-KudzuFlowerAngry-desc = Яркий ковер цветов, раскинувшийся во всех направлениях. Вы не уверены, стоит ли его убрать или оставить.
 

@@ -13,3 +13,13 @@ rmc-xeno-mature-king = Беспощадный {$baseName}
 rmc-xeno-young-larva = Малая {$baseName}
 rmc-xeno-mature-larva = Взрослая {$baseName}
 rmc-xeno-elder-larva = Старшая {$baseName}
+
+# Missing entries synced from en-US
+
+rmc-xeno-name-leader = Лидер
+
+rmc-xeno-name = {$baseName} ({$prefix}{$postfix})
+
+rmc-xeno-apex = Апекс {$baseName}
+
+rmc-xeno-royal = Королевский {$baseName}

@@ -1,6 +1,6 @@
-ent-RadioHandheld-name = handheld radio
-ent-RadioHandheld-desc = A handy handheld radio.
+ent-RadioHandheld-name = портативное радио
+ent-RadioHandheld-desc = Удобная портативная радиостанция.
 
-ent-RadioHandheldSecurity-name = security radio
-ent-RadioHandheldSecurity-desc = A handy security radio.
+ent-RadioHandheldSecurity-name = охранное радио
+ent-RadioHandheldSecurity-desc = Удобная охранная радиостанция.
 

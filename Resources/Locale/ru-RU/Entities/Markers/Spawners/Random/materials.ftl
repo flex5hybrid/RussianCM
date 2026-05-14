@@ -1,12 +1,12 @@
-ent-LootSpawnerMaterials-name = materials spawner
+ent-LootSpawnerMaterials-name = генератор материалов
 
-ent-LootSpawnerMaterialsSupplementary-name = materials spawner
+ent-LootSpawnerMaterialsSupplementary-name = генератор материалов
 
-ent-LootSpawnerMaterialsHighValueConstruction-name = high-value materials spawner
+ent-LootSpawnerMaterialsHighValueConstruction-name = генератор ценных материалов
 
-ent-LootSpawnerMaterialsHighValue-name = high-value materials spawner
+ent-LootSpawnerMaterialsHighValue-name = генератор ценных материалов
 
-ent-LootSpawnerMaterialsSurplus-name = surplus materials spawner
+ent-LootSpawnerMaterialsSurplus-name = генератор излишков материалов
 
-ent-LootSpawnerCableCoil-name = cable coil spawner
+ent-LootSpawnerCableCoil-name = генератор катушек кабеля
 

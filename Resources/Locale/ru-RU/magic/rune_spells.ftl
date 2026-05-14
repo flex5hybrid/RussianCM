@@ -1,12 +1,12 @@
-ent-ActionFlashRune-name = Flash Rune
-ent-ActionFlashRune-desc = Summons a rune that flashes if used.
+ent-ActionFlashRune-name = Флэш-руна
+ent-ActionFlashRune-desc = Вызывает руну, которая мигает при использовании.
 
-ent-ActionExplosionRune-name = Explosion Rune
-ent-ActionExplosionRune-desc = Summons a rune that explodes if used.
+ent-ActionExplosionRune-name = Взрывная руна
+ent-ActionExplosionRune-desc = Вызывает руну, которая взрывается при использовании.
 
-ent-ActionIgniteRune-name = Ignite Rune
-ent-ActionIgniteRune-desc = Summons a rune that ignites if used.
+ent-ActionIgniteRune-name = Зажгите руну
+ent-ActionIgniteRune-desc = Призывает руну, которая воспламеняется при использовании.
 
-ent-ActionStunRune-name = Stun Rune
-ent-ActionStunRune-desc = Summons a rune that stuns if used.
+ent-ActionStunRune-name = Оглушающая руна
+ent-ActionStunRune-desc = Вызывает руну, которая оглушает при использовании.
 

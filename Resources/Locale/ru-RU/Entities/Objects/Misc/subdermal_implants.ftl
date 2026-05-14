@@ -1,63 +1,63 @@
-ent-BaseSubdermalImplant-name = implant
-ent-BaseSubdermalImplant-desc = A microscopic chip that's injected under the skin.
+ent-BaseSubdermalImplant-name = имплантат
+ent-BaseSubdermalImplant-desc = Микроскопический чип, который вводится под кожу.
 
-ent-SadTromboneImplant-name = sad trombone implant
-ent-SadTromboneImplant-desc = This implant plays a sad tune when the user dies.
+ent-SadTromboneImplant-name = грустный имплантат тромбона
+ent-SadTromboneImplant-desc = Этот имплантат играет грустную мелодию, когда пользователь умирает.
 
-ent-LightImplant-name = light implant
-ent-LightImplant-desc = This implant emits light from the user's skin on activation.
+ent-LightImplant-name = легкий имплантат
+ent-LightImplant-desc = Этот имплантат излучает свет от кожи пользователя при активации.
 
-ent-BikeHornImplant-name = bike horn implant
-ent-BikeHornImplant-desc = This implant lets the user honk anywhere at any time.
+ent-BikeHornImplant-name = имплантат велосипедного рожка
+ent-BikeHornImplant-desc = Этот имплант позволяет пользователю сигналить где угодно и когда угодно.
 
-ent-TrackingImplant-name = tracking implant
-ent-TrackingImplant-desc = This implant has a tracking device attached to the suit sensor network.
+ent-TrackingImplant-name = отслеживающий имплантат
+ent-TrackingImplant-desc = Этот имплант имеет устройство слежения, подключенное к сенсорной сети костюма.
 
-ent-StorageImplant-name = storage implant
-ent-StorageImplant-desc = This implant grants hidden storage within a person's body using bluespace technology.
+ent-StorageImplant-name = имплантат для хранения
+ent-StorageImplant-desc = Этот имплант обеспечивает скрытое хранилище внутри тела человека с использованием технологии bluespace.
 
-ent-FreedomImplant-name = freedom implant
-ent-FreedomImplant-desc = This implant lets the user break out of hand restraints up to three times before ceasing to function anymore.
+ent-FreedomImplant-name = Имплантат свободы
+ent-FreedomImplant-desc = Этот имплант позволяет пользователю вырваться из ручных ограничителей до трех раз, прежде чем он перестанет функционировать.
 
-ent-RadioImplant-name = radio implant
-ent-RadioImplant-desc = This implant grants access to the Syndicate channel without a headset.
+ent-RadioImplant-name = радиоимплант
+ent-RadioImplant-desc = Этот имплантат предоставляет доступ к каналу Синдиката без гарнитуры.
 
-ent-UplinkImplant-name = uplink implant
-ent-UplinkImplant-desc = This implant lets the user access a hidden Syndicate uplink at will.
+ent-UplinkImplant-name = имплантат восходящей линии связи
+ent-UplinkImplant-desc = Этот имплантат позволяет пользователю получить доступ к скрытому восходящему каналу Синдиката по своему желанию.
 
-ent-EmpImplant-name = EMP implant
-ent-EmpImplant-desc = This implant creates an electromagnetic pulse when activated.
+ent-EmpImplant-name = ЭМИ-имплантат
+ent-EmpImplant-desc = Этот имплантат при активации создает электромагнитный импульс.
 
-ent-ScramImplant-name = scram implant
-ent-ScramImplant-desc = This implant randomly teleports the user within a large radius when activated.
+ent-ScramImplant-name = быстрый имплантат
+ent-ScramImplant-desc = Этот имплант случайным образом телепортирует пользователя в большом радиусе при активации.
 
-ent-DnaScramblerImplant-name = DNA scrambler implant
-ent-DnaScramblerImplant-desc = This implant lets the user randomly change their appearance and name once.
+ent-DnaScramblerImplant-name = Имплант скремблера ДНК
+ent-DnaScramblerImplant-desc = Этот имплант позволяет пользователю один раз случайным образом изменить свой внешний вид и имя.
 
-ent-ChameleonControllerImplant-name = chameleon controller implant
-ent-ChameleonControllerImplant-desc = This implant allows you to instantly change the appearance of all worn chameleon clothing.
+ent-ChameleonControllerImplant-name = имплантат контроллера-хамелеона
+ent-ChameleonControllerImplant-desc = Этот имплант позволяет мгновенно изменить внешний вид всей надетой одежды-хамелеона.
 
-ent-MicroBombImplant-name = micro-bomb implant
-ent-MicroBombImplant-desc = This implant detonates the user upon activation or upon death.
+ent-MicroBombImplant-name = имплантат микробомбы
+ent-MicroBombImplant-desc = Этот имплантат взрывает пользователя при активации или смерти.
 
-ent-MacroBombImplant-name = macro-bomb implant
-ent-MacroBombImplant-desc = This implant creates a large explosion on death after a preprogrammed countdown.
+ent-MacroBombImplant-name = Имплантат макробомбы
+ent-MacroBombImplant-desc = Этот имплант создает большой взрыв в случае смерти после заранее запрограммированного обратного отсчета.
 
-ent-DeathAcidifierImplant-name = death-acidifier implant
-ent-DeathAcidifierImplant-desc = This implant melts the user and their equipment upon death.
+ent-DeathAcidifierImplant-name = имплантат смертельного подкислителя
+ent-DeathAcidifierImplant-desc = Этот имплантат расплавляет пользователя и его оборудование после смерти.
 
-ent-DeathRattleImplant-name = death rattle implant
-ent-DeathRattleImplant-desc = This implant will inform the Syndicate radio channel should the user fall into critical condition or die.
+ent-DeathRattleImplant-name = Имплантат предсмертного хрипа
+ent-DeathRattleImplant-desc = Этот имплант сообщит радиоканалу Синдиката, если пользователь попадет в критическое состояние или умрет.
 
-ent-FakeMindShieldImplant-name = fake mindshield implant
-ent-FakeMindShieldImplant-desc = This implant allows the implanter to produce a fake signal that NT security huds use to identify individuals implanted with a mindshield.
+ent-FakeMindShieldImplant-name = фальшивый имплантат ментального щита
+ent-FakeMindShieldImplant-desc = Этот имплант позволяет имплантатору генерировать ложный сигнал, который службы безопасности NT используют для идентификации людей, которым имплантирован мысленный щит.
 
-ent-MindShieldImplant-name = mindshield implant
-ent-MindShieldImplant-desc = This implant will ensure loyalty to Nanotrasen and prevent mind control devices.
+ent-MindShieldImplant-name = имплантат ментального щита
+ent-MindShieldImplant-desc = Этот имплантат обеспечит лояльность к Нанотрасену и предотвратит устройства контроля над разумом.
 
-ent-RadioImplantCentcomm-name = radio implant
-ent-RadioImplantCentcomm-desc = This implant grants access to the Centcomm channel without a headset. Only authorized for Centcomm employees.
+ent-RadioImplantCentcomm-name = радиоимплант
+ent-RadioImplantCentcomm-desc = Этот имплантат обеспечивает доступ к каналу Центкомма без гарнитуры. Разрешено только сотрудникам Centcomm.
 
-ent-DeathRattleImplantCentcomm-name = centcomm death rattle implant
-ent-DeathRattleImplantCentcomm-desc = This implant will inform the Centcomm radio channel should the user fall into critical condition or die.
+ent-DeathRattleImplantCentcomm-name = Имплантат предсмертного хрипа Центкомма
+ent-DeathRattleImplantCentcomm-desc = Этот имплантат сообщит радиоканалу Центкомма, если пользователь попадет в критическое состояние или умрет.
 

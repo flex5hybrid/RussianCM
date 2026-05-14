@@ -1,24 +1,24 @@
-ent-ToolboxEmergencyFilled-name = emergency toolbox
-ent-ToolboxEmergencyFilled-desc = A bright red toolbox, stocked with emergency tools.
+ent-ToolboxEmergencyFilled-name = аварийный ящик для инструментов
+ent-ToolboxEmergencyFilled-desc = Ярко-красный ящик для инструментов, наполненный аварийными инструментами.
 
-ent-ToolboxElectricalFilled-name = electrical toolbox
-ent-ToolboxElectricalFilled-desc = A toolbox typically stocked with electrical gear.
+ent-ToolboxElectricalFilled-name = электрический ящик для инструментов
+ent-ToolboxElectricalFilled-desc = Ящик для инструментов обычно снабжен электрооборудованием.
 
-ent-ToolboxElectricalTurretFilled-name = electrical toolbox
-ent-ToolboxElectricalTurretFilled-desc = A toolbox typically stocked with electrical gear.
+ent-ToolboxElectricalTurretFilled-name = электрический ящик для инструментов
+ent-ToolboxElectricalTurretFilled-desc = Ящик для инструментов обычно снабжен электрооборудованием.
 
-ent-ToolboxArtisticFilled-name = artistic toolbox
-ent-ToolboxArtisticFilled-desc = A toolbox typically stocked with artistic supplies.
+ent-ToolboxArtisticFilled-name = художественный ящик для инструментов
+ent-ToolboxArtisticFilled-desc = Ящик для инструментов обычно наполнен художественными принадлежностями.
 
-ent-ToolboxMechanicalFilled-name = mechanical toolbox
-ent-ToolboxMechanicalFilled-desc = A blue box, stocked with mechanical tools.
+ent-ToolboxMechanicalFilled-name = механический ящик для инструментов
+ent-ToolboxMechanicalFilled-desc = Синяя коробка, наполненная механическими инструментами.
 
-ent-ToolboxMechanicalFilledAllTools-name = mechanical toolbox
-ent-ToolboxMechanicalFilledAllTools-desc = A blue box, stocked with mechanical tools.
+ent-ToolboxMechanicalFilledAllTools-name = механический ящик для инструментов
+ent-ToolboxMechanicalFilledAllTools-desc = Синяя коробка, наполненная механическими инструментами.
 
-ent-ToolboxGoldFilled-name = golden toolbox
-ent-ToolboxGoldFilled-desc = A solid gold toolbox. A rapper would kill for this.
+ent-ToolboxGoldFilled-name = золотой ящик для инструментов
+ent-ToolboxGoldFilled-desc = Ящик для инструментов из цельного золота. Рэпер убил бы за это.
 
-ent-ToolboxSyndicateFilled-name = suspicious toolbox
-ent-ToolboxSyndicateFilled-desc = A sinister looking toolbox filled with elite syndicate tools.
+ent-ToolboxSyndicateFilled-name = подозрительный ящик для инструментов
+ent-ToolboxSyndicateFilled-desc = Зловещий на вид ящик с инструментами элитного синдиката.
 

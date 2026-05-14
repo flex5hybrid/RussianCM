@@ -6,8 +6,8 @@ cryo-pod-empty-beaker = Тут пусто!
 # Shown when a normal ejection through the eject verb is attempted on a locked pod.
 cryo-pod-locked = Механизм извлечения не реагирует!
 
-cryo-pod-window-product-name = Nanotrasen CRPX-229
-cryo-pod-window-product-subtitle = Cryogenic Restoration Pod
+cryo-pod-window-product-name = Нанотрасен CRPX-229
+cryo-pod-window-product-subtitle = Модуль криогенного восстановления
 cryo-pod-window-loading = Инициализация
 cryo-pod-window-atmos-pressure = Давление
 cryo-pod-window-atmos-temperature = Температура

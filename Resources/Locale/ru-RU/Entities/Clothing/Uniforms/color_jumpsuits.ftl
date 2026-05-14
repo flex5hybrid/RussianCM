@@ -1,51 +1,51 @@
-ent-ClothingUniformJumpsuitColorWhite-name = white jumpsuit
-ent-ClothingUniformJumpsuitColorWhite-desc = A generic white jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitColorWhite-name = белый комбинезон
+ent-ClothingUniformJumpsuitColorWhite-desc = Обычный белый комбинезон без знаков ранга.
 
-ent-ClothingUniformJumpsuitColorGrey-name = grey jumpsuit
-ent-ClothingUniformJumpsuitColorGrey-desc = A tasteful grey jumpsuit that reminds you of the good old days.
+ent-ClothingUniformJumpsuitColorGrey-name = серый комбинезон
+ent-ClothingUniformJumpsuitColorGrey-desc = Изящный серый комбинезон, напоминающий о старых добрых временах.
 
-ent-ClothingUniformJumpsuitColorBlack-name = black jumpsuit
-ent-ClothingUniformJumpsuitColorBlack-desc = A generic black jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitColorBlack-name = черный комбинезон
+ent-ClothingUniformJumpsuitColorBlack-desc = Обычный черный комбинезон без знаков ранга.
 
-ent-ClothingUniformJumpsuitColorBlue-name = blue jumpsuit
-ent-ClothingUniformJumpsuitColorBlue-desc = A generic blue jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitColorBlue-name = синий комбинезон
+ent-ClothingUniformJumpsuitColorBlue-desc = Обычный синий комбинезон без знаков ранга.
 
-ent-ClothingUniformJumpsuitColorDarkBlue-name = dark blue jumpsuit
-ent-ClothingUniformJumpsuitColorDarkBlue-desc = A generic dark blue jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitColorDarkBlue-name = темно-синий комбинезон
+ent-ClothingUniformJumpsuitColorDarkBlue-desc = Обычный темно-синий комбинезон без знаков ранга.
 
-ent-ClothingUniformJumpsuitColorTeal-name = teal jumpsuit
-ent-ClothingUniformJumpsuitColorTeal-desc = A generic teal jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitColorTeal-name = бирюзовый комбинезон
+ent-ClothingUniformJumpsuitColorTeal-desc = Обычный бирюзовый комбинезон без знаков ранга.
 
-ent-ClothingUniformJumpsuitColorGreen-name = green jumpsuit
-ent-ClothingUniformJumpsuitColorGreen-desc = A generic green jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitColorGreen-name = зеленый комбинезон
+ent-ClothingUniformJumpsuitColorGreen-desc = Обычный зеленый комбинезон без знаков ранга.
 
-ent-ClothingUniformJumpsuitColorDarkGreen-name = dark green jumpsuit
-ent-ClothingUniformJumpsuitColorDarkGreen-desc = A generic dark green jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitColorDarkGreen-name = темно-зеленый комбинезон
+ent-ClothingUniformJumpsuitColorDarkGreen-desc = Обычный темно-зеленый комбинезон без знаков ранга.
 
-ent-ClothingUniformJumpsuitColorOrange-name = orange jumpsuit
-ent-ClothingUniformJumpsuitColorOrange-desc = Don't wear this near paranoid security officers.
+ent-ClothingUniformJumpsuitColorOrange-name = оранжевый комбинезон
+ent-ClothingUniformJumpsuitColorOrange-desc = Не носите это рядом с параноидальными офицерами безопасности.
 
-ent-ClothingUniformJumpsuitColorPink-name = pink jumpsuit
-ent-ClothingUniformJumpsuitColorPink-desc = Just looking at this makes you feel <i>fabulous</i>.
+ent-ClothingUniformJumpsuitColorPink-name = розовый комбинезон
+ent-ClothingUniformJumpsuitColorPink-desc = Просто глядя на это, вы чувствуете себя <i>потрясающе</i>.
 
-ent-ClothingUniformJumpsuitColorRed-name = red jumpsuit
-ent-ClothingUniformJumpsuitColorRed-desc = A generic red jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitColorRed-name = красный комбинезон
+ent-ClothingUniformJumpsuitColorRed-desc = Обычный красный комбинезон без знаков ранга.
 
-ent-ClothingUniformJumpsuitColorYellow-name = yellow jumpsuit
-ent-ClothingUniformJumpsuitColorYellow-desc = A generic yellow jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitColorYellow-name = желтый комбинезон
+ent-ClothingUniformJumpsuitColorYellow-desc = Обычный желтый комбинезон без знаков ранга.
 
-ent-ClothingUniformJumpsuitColorPurple-name = purple jumpsuit
-ent-ClothingUniformJumpsuitColorPurple-desc = A generic light purple jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitColorPurple-name = фиолетовый комбинезон
+ent-ClothingUniformJumpsuitColorPurple-desc = Обычный светло-фиолетовый комбинезон без знаков ранга.
 
-ent-ClothingUniformJumpsuitColorLightBrown-name = light brown jumpsuit
-ent-ClothingUniformJumpsuitColorLightBrown-desc = A generic light brown jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitColorLightBrown-name = светло-коричневый комбинезон
+ent-ClothingUniformJumpsuitColorLightBrown-desc = Обычный светло-коричневый комбинезон без знаков ранга.
 
-ent-ClothingUniformJumpsuitColorBrown-name = brown jumpsuit
-ent-ClothingUniformJumpsuitColorBrown-desc = A generic brown jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitColorBrown-name = коричневый комбинезон
+ent-ClothingUniformJumpsuitColorBrown-desc = Обычный коричневый комбинезон без знаков ранга.
 
-ent-ClothingUniformJumpsuitColorMaroon-name = maroon jumpsuit
-ent-ClothingUniformJumpsuitColorMaroon-desc = A generic maroon jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitColorMaroon-name = бордовый комбинезон
+ent-ClothingUniformJumpsuitColorMaroon-desc = Обычный темно-бордовый комбинезон без знаков ранга.
 
-ent-ClothingUniformColorRainbow-name = rainbow jumpsuit
-ent-ClothingUniformColorRainbow-desc = A multi-colored jumpsuit!
+ent-ClothingUniformColorRainbow-name = радужный комбинезон
+ent-ClothingUniformColorRainbow-desc = Разноцветный комбинезон!
 

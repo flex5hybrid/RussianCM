@@ -1,6 +1,6 @@
-ent-CleanerDispenser-name = space cleaner dispenser
-ent-CleanerDispenser-desc = Wallmount reagent dispenser.
+ent-CleanerDispenser-name = дозатор для чистки помещений
+ent-CleanerDispenser-desc = Настенный дозатор реагентов.
 
-ent-FuelDispenser-name = fuel dispenser
-ent-FuelDispenser-desc = Wallmount reagent dispenser.
+ent-FuelDispenser-name = ТРК
+ent-FuelDispenser-desc = Настенный дозатор реагентов.
 

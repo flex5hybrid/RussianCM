@@ -1,3 +1,3 @@
-ent-Vaccinator-name = vaccinator
-ent-Vaccinator-desc = A machine that creates vaccines.
+ent-Vaccinator-name = вакцинатор
+ent-Vaccinator-desc = Машина, создающая вакцины.
 

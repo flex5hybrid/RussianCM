@@ -1,33 +1,33 @@
-ent-SurveillanceCameraBase-name = camera
-ent-SurveillanceCameraBase-desc = A surveillance camera. It's watching you. Kinda.
+ent-SurveillanceCameraBase-name = камера
+ent-SurveillanceCameraBase-desc = Камера наблюдения. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceCameraConstructed-name = camera
-ent-SurveillanceCameraConstructed-desc = A surveillance camera. It's watching you. Kinda.
+ent-SurveillanceCameraConstructed-name = камера
+ent-SurveillanceCameraConstructed-desc = Камера наблюдения. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceCameraEngineering-name = camera
-ent-SurveillanceCameraEngineering-desc = A surveillance camera. It's watching you. Kinda.
+ent-SurveillanceCameraEngineering-name = камера
+ent-SurveillanceCameraEngineering-desc = Камера наблюдения. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceCameraSecurity-name = camera
-ent-SurveillanceCameraSecurity-desc = A surveillance camera. It's watching you. Kinda.
+ent-SurveillanceCameraSecurity-name = камера
+ent-SurveillanceCameraSecurity-desc = Камера наблюдения. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceCameraScience-name = camera
-ent-SurveillanceCameraScience-desc = A surveillance camera. It's watching you. Kinda.
+ent-SurveillanceCameraScience-name = камера
+ent-SurveillanceCameraScience-desc = Камера наблюдения. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceCameraSupply-name = camera
-ent-SurveillanceCameraSupply-desc = A surveillance camera. It's watching you. Kinda.
+ent-SurveillanceCameraSupply-name = камера
+ent-SurveillanceCameraSupply-desc = Камера наблюдения. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceCameraCommand-name = camera
-ent-SurveillanceCameraCommand-desc = A surveillance camera. It's watching you. Kinda.
+ent-SurveillanceCameraCommand-name = камера
+ent-SurveillanceCameraCommand-desc = Камера наблюдения. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceCameraService-name = camera
-ent-SurveillanceCameraService-desc = A surveillance camera. It's watching you. Kinda.
+ent-SurveillanceCameraService-name = камера
+ent-SurveillanceCameraService-desc = Камера наблюдения. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceCameraMedical-name = camera
-ent-SurveillanceCameraMedical-desc = A surveillance camera. It's watching you. Kinda.
+ent-SurveillanceCameraMedical-name = камера
+ent-SurveillanceCameraMedical-desc = Камера наблюдения. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceCameraGeneral-name = camera
-ent-SurveillanceCameraGeneral-desc = A surveillance camera. It's watching you. Kinda.
+ent-SurveillanceCameraGeneral-name = камера
+ent-SurveillanceCameraGeneral-desc = Камера наблюдения. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceCameraAssembly-name = camera
-ent-SurveillanceCameraAssembly-desc = A surveillance camera. Doesn't seem to be watching anybody any time soon. Probably.
+ent-SurveillanceCameraAssembly-name = камера
+ent-SurveillanceCameraAssembly-desc = Камера наблюдения. Кажется, в ближайшее время ни за кем не буду следить. Вероятно.
 

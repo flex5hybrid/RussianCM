@@ -1,3 +1,3 @@
-ent-ActionMindSwap-name = Mind Swap
-ent-ActionMindSwap-desc = Exchange bodies with another person!
+ent-ActionMindSwap-name = Обмен разумом
+ent-ActionMindSwap-desc = Обменяйтесь телами с другим человеком!
 

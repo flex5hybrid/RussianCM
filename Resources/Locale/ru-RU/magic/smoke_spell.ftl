@@ -1,3 +1,3 @@
-ent-ActionSmoke-name = Smoke
-ent-ActionSmoke-desc = Summons smoke around the user.
+ent-ActionSmoke-name = Дым
+ent-ActionSmoke-desc = Вызывает дым вокруг пользователя.
 

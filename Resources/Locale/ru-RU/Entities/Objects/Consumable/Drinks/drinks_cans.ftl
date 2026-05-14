@@ -1,70 +1,70 @@
-ent-DrinkColaCan-name = Space Cola can
-ent-DrinkColaCan-desc = A sweet, carbonated soft drink.
+ent-DrinkColaCan-name = Космическая кола может
+ent-DrinkColaCan-desc = Сладкий газированный безалкогольный напиток.
 
-ent-DrinkIcedTeaCan-name = iced tea can
-ent-DrinkIcedTeaCan-desc = A refreshing can of iced tea.
+ent-DrinkIcedTeaCan-name = банка холодного чая
+ent-DrinkIcedTeaCan-desc = Освежающая банка холодного чая.
 
-ent-DrinkLemonLimeCan-name = Smite can
-ent-DrinkLemonLimeCan-desc = You wanted ORANGE. It gave you Lemon-Lime.
+ent-DrinkLemonLimeCan-name = Smite может
+ent-DrinkLemonLimeCan-desc = Вы хотели ОРАНЖЕВЫЙ. Это дало вам Лимон-Лайм.
 
-ent-DrinkLemonLimeCranberryCan-name = Smite Cranberry can
-ent-DrinkLemonLimeCranberryCan-desc = Y'all want a Smite Cranberry? Beloved by administrators everywhere. Drink in moderation. A limited run for the holidays!
+ent-DrinkLemonLimeCranberryCan-name = Smite Cranberry может
+ent-DrinkLemonLimeCranberryCan-desc = Хотите Smite Cranberry? Любимец администраторов во всем мире. Пейте умеренно. К праздникам ограниченный тираж!
 
-ent-DrinkGrapeCan-name = grape soda can
-ent-DrinkGrapeCan-desc = Sweetened drink with a grape flavor and a deep purple color.
+ent-DrinkGrapeCan-name = банка виноградной газировки
+ent-DrinkGrapeCan-desc = Подслащенный напиток с виноградным вкусом и насыщенным фиолетовым цветом.
 
-ent-DrinkRootBeerCan-name = root beer can
-ent-DrinkRootBeerCan-desc = Some of that tasty root beer goodness, now in a portable can!
+ent-DrinkRootBeerCan-name = банка корневого пива
+ent-DrinkRootBeerCan-desc = Немного вкусного корневого пива теперь в портативной банке!
 
-ent-DrinkSodaWaterCan-name = soda water can
-ent-DrinkSodaWaterCan-desc = Soda water. Why not make a scotch and soda?
+ent-DrinkSodaWaterCan-name = банка газированной воды
+ent-DrinkSodaWaterCan-desc = Газированная вода. Почему бы не сделать скотч с содовой?
 
-ent-DrinkSpaceMountainWindCan-name = Space Solar Wind can
-ent-DrinkSpaceMountainWindCan-desc = Blows right through you like a solar wind.
+ent-DrinkSpaceMountainWindCan-name = Космический солнечный ветер может
+ent-DrinkSpaceMountainWindCan-desc = Дует сквозь тебя, как солнечный ветер.
 
-ent-DrinkSpaceUpCan-name = Space-Up can
-ent-DrinkSpaceUpCan-desc = Tastes like a hull breach in your mouth.
+ent-DrinkSpaceUpCan-name = Space-Up может
+ent-DrinkSpaceUpCan-desc = Во рту вкус пробоины корпуса.
 
-ent-DrinkSolDryCan-name = Sol Dry can
-ent-DrinkSolDryCan-desc = Sweet ginger soda from outer space!
+ent-DrinkSolDryCan-name = Сол Сухой баллончик
+ent-DrinkSolDryCan-desc = Сладкая имбирная газировка из космоса!
 
-ent-DrinkStarkistCan-name = Starkist can
-ent-DrinkStarkistCan-desc = The taste of a star in liquid form. And, a bit of tuna...?
+ent-DrinkStarkistCan-name = Старкист может
+ent-DrinkStarkistCan-desc = Вкус звезды в жидком виде. И немного тунца...?
 
-ent-DrinkTonicWaterCan-name = tonic water can
-ent-DrinkTonicWaterCan-desc = Quinine tastes funny, but at least it'll keep that Space Malaria away.
+ent-DrinkTonicWaterCan-name = тоник может
+ent-DrinkTonicWaterCan-desc = Хинин имеет странный вкус, но, по крайней мере, он убережет от космической малярии.
 
-ent-DrinkFourteenLokoCan-name = Fourteen Loko can
-ent-DrinkFourteenLokoCan-desc = The MBO has advised crew members that consumption of Fourteen Loko may result in seizures, blindness, drunkeness, or even death. Please Drink Responsibly.
+ent-DrinkFourteenLokoCan-name = Четырнадцать Локо может
+ent-DrinkFourteenLokoCan-desc = MBO сообщило членам экипажа, что употребление «Четырнадцати Локо» может привести к судорогам, слепоте, опьянению или даже смерти. Пожалуйста, пейте ответственно.
 
-ent-DrinkChangelingStingCan-name = Changeling Sting can
-ent-DrinkChangelingStingCan-desc = You take a tiny sip and feel a burning sensation...
+ent-DrinkChangelingStingCan-name = Перевертыш Стинг может
+ent-DrinkChangelingStingCan-desc = Делаешь маленький глоток и чувствуешь жжение...
 
-ent-DrinkDrGibbCan-name = Dr. Gibb can
-ent-DrinkDrGibbCan-desc = A delicious blend of 42 different flavours.
+ent-DrinkDrGibbCan-name = Доктор Гибб может
+ent-DrinkDrGibbCan-desc = Восхитительная смесь из 42 различных вкусов.
 
-ent-DrinkNukieCan-name = Blood-red Brew can
-ent-DrinkNukieCan-desc = A home-brewed drink made from the crazed minds at the Syndicate. Not recommended by doctors.
+ent-DrinkNukieCan-name = Кроваво-красная банка пива
+ent-DrinkNukieCan-desc = Домашний напиток, приготовленный сумасшедшими умами Синдиката. Не рекомендуется врачами.
 
-ent-DrinkEnergyDrinkCan-name = Red Bool can
-ent-DrinkEnergyDrinkCan-desc = A can of Red Bool, with enough caffeine to kill a horse.
+ent-DrinkEnergyDrinkCan-name = Красный Бул может
+ent-DrinkEnergyDrinkCan-desc = Банка Red Bool, в которой столько кофеина, что можно убить лошадь.
 
-ent-DrinkCanPack-name = 6pack
+ent-DrinkCanPack-name = 6 упаковок
 
-ent-DrinkShamblersJuiceCan-name = Shambler's Juice can
-ent-DrinkShamblersJuiceCan-desc = ~Shake me up some of that Shambler's Juice!~
+ent-DrinkShamblersJuiceCan-name = Сок Шамблера может
+ent-DrinkShamblersJuiceCan-desc = ~Налей мне немного сока этого шарлатана!~
 
-ent-DrinkPwrGameCan-name = PWR Game can
-ent-DrinkPwrGameCan-desc = The only drink with the PWR that true gamers crave. When a gamer talks about gamerfuel, this is what they're literally referring to.
+ent-DrinkPwrGameCan-name = PWR Игра может
+ent-DrinkPwrGameCan-desc = Единственный напиток с PWR, которого жаждут настоящие геймеры. Когда геймер говорит о GamerFuel, он буквально имеет в виду именно это.
 
-ent-DrinkBeerCan-name = beer can
-ent-DrinkBeerCan-desc = Small joy, big taste, no worries!
+ent-DrinkBeerCan-name = банка пива
+ent-DrinkBeerCan-desc = Маленькая радость, большой вкус, никаких забот!
 
-ent-DrinkWineCan-name = wine can
-ent-DrinkWineCan-desc = Your way to forgetting all worries and having fun!
+ent-DrinkWineCan-name = вино может
+ent-DrinkWineCan-desc = Ваш способ забыть все заботы и весело провести время!
 
-ent-DrinkCanBaseFull-name = item
+ent-DrinkCanBaseFull-name = элемент
 
-ent-DrinkColaCanEmpty-name = Space Cola can
-ent-DrinkColaCanEmpty-desc = A sweet, carbonated soft drink.
+ent-DrinkColaCanEmpty-name = Космическая кола может
+ent-DrinkColaCanEmpty-desc = Сладкий газированный безалкогольный напиток.
 

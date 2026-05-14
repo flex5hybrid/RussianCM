@@ -32,3 +32,25 @@ rmc-emote-peep = испуганно пищит!
 rmc-emote-anger = гневно трещит!
 rmc-emote-trill = издаёт мелодичный трель!
 rmc-emote-warble = переливается трелями!
+
+# Missing entries synced from en-US
+
+rmc-emote-name-yip = Йип
+
+rmc-emote-yip = yips.
+
+rmc-emote-name-r-rattle = Гремучий хвост
+
+rmc-emote-r-rattle = гремит хвостом {POSS-ADJ($entity)}.
+
+rmc-emote-name-slime-bubble = Пузырь
+
+rmc-emote-name-slime-pop = Поп
+
+rmc-emote-name-slime-wobble = Колебание
+
+rmc-emote-slime-bubble = bubbles.
+
+rmc-emote-slime-pop = хлопает!
+
+rmc-emote-slime-wobble = wobbles.

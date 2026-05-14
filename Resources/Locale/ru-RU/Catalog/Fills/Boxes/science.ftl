@@ -1,3 +1,3 @@
-ent-BoxBeaker-name = beaker box
-ent-BoxBeaker-desc = A box full of beakers.
+ent-BoxBeaker-name = коробка для стаканов
+ent-BoxBeaker-desc = Коробка полная стаканов.
 

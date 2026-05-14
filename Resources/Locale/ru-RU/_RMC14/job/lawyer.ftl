@@ -9,3 +9,15 @@ rmc-job-prefix-corp-exec-specialist = КОРП СПЦ
 rmc-ghost-name-corp-exec-supervisor = Надзирающий исполнитель (Нейтральный)
 rmc-job-name-corp-exec-supervisor = Надзирающий исполнитель
 rmc-job-prefix-corp-exec-supervisor = КОРП НДЗ
+
+# Missing entries synced from en-US
+
+rmc-ghost-role-information-corp-legal-description = Вы должны оказывать необходимую юридическую поддержку отделу корпоративных связей и защищать интересы Weston-Yamada.
+
+rmc-ghost-name-corp-exec-specialist-legal = Специалист по корпоративному праву (нейтральный)
+
+rmc-job-name-corp-exec-specialist-legal = Специалист по корпоративному праву
+
+rmc-ghost-name-corp-exec-supervisor-legal = Корпоративный юридический супервайзер (нейтральный)
+
+rmc-job-name-corp-exec-supervisor-legal = Корпоративный юридический супервайзер

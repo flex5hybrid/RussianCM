@@ -1,3 +1,3 @@
-ent-MedicalScanner-name = medical scanner
-ent-MedicalScanner-desc = A bulky medical scanner.
+ent-MedicalScanner-name = медицинский сканер
+ent-MedicalScanner-desc = Громоздкий медицинский сканер.
 

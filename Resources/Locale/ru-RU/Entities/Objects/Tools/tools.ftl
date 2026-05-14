@@ -1,39 +1,39 @@
-ent-Wirecutter-name = wirecutter
-ent-Wirecutter-desc = This kills the wire.
+ent-Wirecutter-name = кусачки
+ent-Wirecutter-desc = Это убивает провод.
 
-ent-Screwdriver-name = screwdriver
-ent-Screwdriver-desc = Industrial grade torque in a small screwdriving package.
+ent-Screwdriver-name = отвертка
+ent-Screwdriver-desc = Крутящий момент промышленного класса в небольшом наборе отверток.
 
-ent-Wrench-name = wrench
-ent-Wrench-desc = A common tool for assembly and disassembly. Remember: lefty latchy, righty removey.
+ent-Wrench-name = гаечный ключ
+ent-Wrench-desc = Обычный инструмент для сборки и разборки. Помните: левая фиксируется, правая удаляется.
 
-ent-Multitool-name = multitool
-ent-Multitool-desc = An advanced tool to copy, store, and send electrical pulses and signals through wires and machines.
+ent-Multitool-name = мультитул
+ent-Multitool-desc = Усовершенствованный инструмент для копирования, хранения и отправки электрических импульсов и сигналов через провода и машины.
 
-ent-NetworkConfigurator-name = network configurator
-ent-NetworkConfigurator-desc = A tool for linking devices together. Has two modes, a list mode for mass linking devices and a linking mode for advanced device linking.
+ent-NetworkConfigurator-name = сетевой конфигуратор
+ent-NetworkConfigurator-desc = Инструмент для объединения устройств вместе. Имеет два режима: режим списка для массового связывания устройств и режим связывания для расширенного связывания устройств.
 
-ent-PowerDrill-name = power drill
-ent-PowerDrill-desc = A simple powered hand drill.
+ent-PowerDrill-name = электрическая дрель
+ent-PowerDrill-desc = Простая ручная дрель.
 
-ent-RCD-name = RCD
-ent-RCD-desc = The rapid construction device can be used to quickly place and remove various station structures and fixtures. Requires compressed matter to function.
+ent-RCD-name = УЗО
+ent-RCD-desc = Устройство быстрого строительства можно использовать для быстрой установки и демонтажа различных конструкций и приспособлений станции. Для работы требуется сжатое вещество.
 
-ent-RCDRecharging-name = experimental RCD
-ent-RCDRecharging-desc = Cyborg-mounted Rapid Construction Device which creates compressed matter on the fly using an internal fabricator.
+ent-RCDRecharging-name = экспериментальное УЗО
+ent-RCDRecharging-desc = Установленное киборгом устройство быстрого строительства, которое создает сжатую материю на лету с помощью внутреннего производителя.
 
-ent-RCDExperimental-name = experimental RCD
-ent-RCDExperimental-desc = A bluespace-enhanced rapid construction device that passively generates its own compressed matter.
+ent-RCDExperimental-name = экспериментальное УЗО
+ent-RCDExperimental-desc = Устройство быстрого строительства, улучшенное синим пространством, которое пассивно генерирует собственную сжатую материю.
 
-ent-RCDAmmo-name = compressed matter
-ent-RCDAmmo-desc = A cartridge of raw matter compacted by bluespace technology. Used in rapid construction devices.
+ent-RCDAmmo-name = сжатое вещество
+ent-RCDAmmo-desc = Картридж с сырьем, уплотненным по технологии bluespace. Используется в устройствах быстрого строительства.
 
-ent-Omnitool-name = omnitool
-ent-Omnitool-desc = A drone's best friend.
+ent-Omnitool-name = омни-инструмент
+ent-Omnitool-desc = Лучший друг дрона.
 
-ent-Shovel-name = shovel
-ent-Shovel-desc = A large tool for digging and moving dirt.
+ent-Shovel-name = лопата
+ent-Shovel-desc = Большой инструмент для копания и перемещения грязи.
 
-ent-RollingPin-name = rolling pin
-ent-RollingPin-desc = A tool used to shape and flatten dough.
+ent-RollingPin-name = скалка
+ent-RollingPin-desc = Инструмент, используемый для придания формы и раскатывания теста.
 

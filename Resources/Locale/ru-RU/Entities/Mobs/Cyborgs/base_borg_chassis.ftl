@@ -1,18 +1,18 @@
-ent-BaseBorgChassisNotIonStormable-name = cyborg
-ent-BaseBorgChassisNotIonStormable-desc = A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
+ent-BaseBorgChassisNotIonStormable-name = киборг
+ent-BaseBorgChassisNotIonStormable-desc = Гибрид человека и машины, помогающий в работе станции. Им нравится, когда их просят излагать свои законы снова и снова.
 
-ent-BaseXenoborgChassis-name = xenoborg
-ent-BaseXenoborgChassis-desc = A man-machine hybrid that aims to replicate itself. They love extracting brains to insert into fresh xenoborg chassis to grow their army.
+ent-BaseXenoborgChassis-name = ксеноборг
+ent-BaseXenoborgChassis-desc = Гибрид человека и машины, стремящийся воспроизвести себя. Они любят извлекать мозги и вставлять их в новые шасси ксеноборгов, чтобы увеличить свою армию.
 
-ent-BaseBorgChassis-name = cyborg
-ent-BaseBorgChassis-desc = A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
+ent-BaseBorgChassis-name = киборг
+ent-BaseBorgChassis-desc = Гибрид человека и машины, помогающий в работе станции. Им нравится, когда их просят излагать свои законы снова и снова.
 
-ent-BaseBorgChassisNT-name = cyborg
-ent-BaseBorgChassisNT-desc = A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
+ent-BaseBorgChassisNT-name = киборг
+ent-BaseBorgChassisNT-desc = Гибрид человека и машины, помогающий в работе станции. Им нравится, когда их просят излагать свои законы снова и снова.
 
-ent-BaseBorgChassisSyndicate-name = cyborg
-ent-BaseBorgChassisSyndicate-desc = A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
+ent-BaseBorgChassisSyndicate-name = киборг
+ent-BaseBorgChassisSyndicate-desc = Гибрид человека и машины, помогающий в работе станции. Им нравится, когда их просят излагать свои законы снова и снова.
 
-ent-BaseBorgChassisDerelict-name = cyborg
-ent-BaseBorgChassisDerelict-desc = A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
+ent-BaseBorgChassisDerelict-name = киборг
+ent-BaseBorgChassisDerelict-desc = Гибрид человека и машины, помогающий в работе станции. Им нравится, когда их просят излагать свои законы снова и снова.
 

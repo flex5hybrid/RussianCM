@@ -52,3 +52,19 @@ lathe-category-command = Командование
 lathe-category-hats = Шляпы
 lathe-category-jumpsuits = Комбинезоны
 lathe-category-neck = Шея
+
+# Missing entries synced from en-US
+
+lathe-category-concrete = Бетон
+
+lathe-category-dark = Темный
+
+lathe-category-maints = Майнц
+
+lathe-category-steel = Сталь
+
+lathe-category-white = Белый
+
+lathe-category-wood = Дерево
+
+# Science

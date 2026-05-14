@@ -1,2 +1,2 @@
-ent-TorsoRat-name = animal torso
+ent-TorsoRat-name = туловище животного
 

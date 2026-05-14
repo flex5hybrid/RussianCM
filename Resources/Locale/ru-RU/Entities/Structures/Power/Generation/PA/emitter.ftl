@@ -1,18 +1,18 @@
-ent-ParticleAcceleratorEmitterPort-name = PA port containment emitter
-ent-ParticleAcceleratorEmitterPort-desc = This launchs the Alpha particles, might not want to stand near this end.
+ent-ParticleAcceleratorEmitterPort-name = Эмиттер сдерживания порта PA
+ent-ParticleAcceleratorEmitterPort-desc = Это запускает альфа-частицы, возможно, они не захотят стоять возле этого конца.
 
-ent-ParticleAcceleratorEmitterFore-name = PA fore containment emitter
-ent-ParticleAcceleratorEmitterFore-desc = This launchs the Alpha particles, might not want to stand near this end.
+ent-ParticleAcceleratorEmitterFore-name = Передний излучатель защитной оболочки PA
+ent-ParticleAcceleratorEmitterFore-desc = Это запускает альфа-частицы, возможно, они не захотят стоять возле этого конца.
 
-ent-ParticleAcceleratorEmitterStarboard-name = PA starboard containment emitter
-ent-ParticleAcceleratorEmitterStarboard-desc = This launchs the Alpha particles, might not want to stand near this end.
+ent-ParticleAcceleratorEmitterStarboard-name = Излучатель сдерживания правого борта PA
+ent-ParticleAcceleratorEmitterStarboard-desc = Это запускает альфа-частицы, возможно, они не захотят стоять возле этого конца.
 
-ent-ParticleAcceleratorEmitterPortUnfinished-name = PA port containment emitter
-ent-ParticleAcceleratorEmitterPortUnfinished-desc = This launchs the Alpha particles, might not want to stand near this end. It looks unfinished.
+ent-ParticleAcceleratorEmitterPortUnfinished-name = Эмиттер сдерживания порта PA
+ent-ParticleAcceleratorEmitterPortUnfinished-desc = Это запускает альфа-частицы, возможно, они не захотят стоять возле этого конца. Выглядит незавершенным.
 
-ent-ParticleAcceleratorEmitterForeUnfinished-name = PA fore containment emitter
-ent-ParticleAcceleratorEmitterForeUnfinished-desc = This launchs the Alpha particles, might not want to stand near this end. It looks unfinished.
+ent-ParticleAcceleratorEmitterForeUnfinished-name = Передний излучатель защитной оболочки PA
+ent-ParticleAcceleratorEmitterForeUnfinished-desc = Это запускает альфа-частицы, возможно, они не захотят стоять возле этого конца. Выглядит незавершенным.
 
-ent-ParticleAcceleratorEmitterStarboardUnfinished-name = PA starboard containment emitter
-ent-ParticleAcceleratorEmitterStarboardUnfinished-desc = This launchs the Alpha particles, might not want to stand near this end. It looks unfinished.
+ent-ParticleAcceleratorEmitterStarboardUnfinished-name = Излучатель сдерживания правого борта PA
+ent-ParticleAcceleratorEmitterStarboardUnfinished-desc = Это запускает альфа-частицы, возможно, они не захотят стоять возле этого конца. Выглядит незавершенным.
 

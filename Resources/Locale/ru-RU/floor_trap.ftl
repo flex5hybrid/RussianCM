@@ -1,14 +1,10 @@
-ent-CollideFloorTrapSpawn-name = floor trap spawn
+ent-CollideFloorTrapSpawn-name = появление напольной ловушки
+ent-FloorTrapExplosion-name = взрывная напольная ловушка
 
-ent-FloorTrapExplosion-name = explosion floor trap
+ent-SpawnFloorTrapCarp-name = появление напольной ловушки
+ent-SpawnFloorTrapBear-name = появление напольной ловушки
 
-ent-SpawnFloorTrapCarp-name = floor trap spawn
+ent-SpawnFloorTrapKangaroo-name = появление напольной ловушки
 
-ent-SpawnFloorTrapBear-name = floor trap spawn
-
-ent-SpawnFloorTrapKangaroo-name = floor trap spawn
-
-ent-SpawnFloorTrapXenoDrone-name = floor trap spawn
-
-ent-SpawnFloorTrapXenoBurrower-name = floor trap spawn
-
+ent-SpawnFloorTrapXenoDrone-name = появление напольной ловушки
+ent-SpawnFloorTrapXenoBurrower-name = появление напольной ловушки

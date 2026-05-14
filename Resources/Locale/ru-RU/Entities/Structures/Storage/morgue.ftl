@@ -1,6 +1,6 @@
-ent-Morgue-name = morgue
-ent-Morgue-desc = Used to store bodies until someone fetches them. Includes a high-tech alert system for false-positives!
+ent-Morgue-name = морг
+ent-Morgue-desc = Используется для хранения тел, пока кто-нибудь их не заберет. Включает в себя высокотехнологичную систему оповещения о ложных срабатываниях!
 
-ent-Crematorium-name = crematorium
-ent-Crematorium-desc = A human incinerator. Works well on barbecue nights.
+ent-Crematorium-name = крематорий
+ent-Crematorium-desc = Человеческий мусоросжигатель. Хорошо работает по вечерам с барбекю.
 

@@ -1,6 +1,6 @@
-ent-LockerBase-name = closet
-ent-LockerBase-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerBase-name = шкаф
+ent-LockerBase-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerBaseSecure-name = closet
-ent-LockerBaseSecure-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerBaseSecure-name = шкаф
+ent-LockerBaseSecure-desc = Стандартное хранилище Nanotrasen.
 

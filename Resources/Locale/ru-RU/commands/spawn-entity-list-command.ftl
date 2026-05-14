@@ -1,4 +1,4 @@
-cmd-spawnentitylist-desc = Spawns a list of entities around you.
-cmd-spawnentitylist-help = Usage: spawnentitylist <entityListPrototypeId>
-cmd-spawnentitylist-failed = No { $prototype } found with id { $id },
-cmd-spawnentitylist-success = Spawned { $count } entities.
+cmd-spawnentitylist-desc = Создает список сущностей вокруг вас.
+cmd-spawnentitylist-help = Использование: spawnentitylist <entityListPrototypeId>
+cmd-spawnentitylist-failed = { $prototype } с идентификатором { $id } не найден,
+cmd-spawnentitylist-success = Созданы сущности { $count }.

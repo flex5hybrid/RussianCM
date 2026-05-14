@@ -10,9 +10,9 @@ allegiance-is-name = Независимые Системы
 allegiance-is-description = Независимые Системы.
 allegiance-clf-name = КОФ
 allegiance-clf-description = Колониальный Освободительный Фронт. Ополчение колонистов, борющееся за независимость от корпоративного и государственного контроля.
-allegiance-laselle-name = Laselle Bionational
+allegiance-laselle-name = Лазель Бионациональ
 allegiance-laselle-description = Laselle Bionational. Мощная биотехнологическая корпорация с собственными колониальными интересами.
-allegiance-wy-name = Weyland-Yutani
+allegiance-wy-name = Вейланд-Ютани
 allegiance-wy-description = Корпорация Weyland-Yutani. «Строим лучшие миры». Доминирующая мегакорпорация в космосе.
 allegiance-twe-name = Империя Трёх Миров
 allegiance-twe-description = Империя Трёх Миров. Конституционная монархия, охватывающая Великобританию, Японию, Индию и Австралию.
@@ -128,3 +128,11 @@ origin-corp-colonies-name = Корпоративные - Колонии
 origin-corp-colonies-description = Вырос в принадлежащей корпорации внесолнечной колонии.
 origin-corp-other-name = Корпоративные - Другое
 origin-corp-other-description = С другой корпоративной территории.
+
+# Missing entries synced from en-US
+
+origin-is-icsc-name = КМГС - Колониальный
+
+origin-is-icsc-description = Родился в колонии, входящей в состав ICSC.
+
+# Origins - Corporate

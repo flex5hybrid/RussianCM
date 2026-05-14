@@ -1,9 +1,9 @@
-ent-StationMapBroken-name = station map
-ent-StationMapBroken-desc = A virtual map of the surrounding station.
+ent-StationMapBroken-name = карта станции
+ent-StationMapBroken-desc = Виртуальная карта близлежащей станции.
 
-ent-StationMap-name = station map
-ent-StationMap-desc = A virtual map of the surrounding station.
+ent-StationMap-name = карта станции
+ent-StationMap-desc = Виртуальная карта близлежащей станции.
 
-ent-StationMapAssembly-name = station map assembly
-ent-StationMapAssembly-desc = A station map assembly.
+ent-StationMapAssembly-name = сборка карты станции
+ent-StationMapAssembly-desc = Сборка карты станции.
 

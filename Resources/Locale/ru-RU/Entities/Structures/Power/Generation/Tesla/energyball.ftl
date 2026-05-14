@@ -1,6 +1,6 @@
-ent-TeslaEnergyBall-name = ball lightning
-ent-TeslaEnergyBall-desc = A giant ball of pure energy. The space around it is humming and melting.
+ent-TeslaEnergyBall-name = шаровая молния
+ent-TeslaEnergyBall-desc = Гигантский шар чистой энергии. Пространство вокруг гудит и тает.
 
-ent-TeslaMiniEnergyBall-name = mini ball lightning
-ent-TeslaMiniEnergyBall-desc = The cub of a destructive energy cage. Not as dangerous, but still not worth touching with bare hands.
+ent-TeslaMiniEnergyBall-name = мини-шаровая молния
+ent-TeslaMiniEnergyBall-desc = Детеныш разрушительной энергетической клетки. Не так опасно, но трогать голыми руками все же не стоит.
 

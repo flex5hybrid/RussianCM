@@ -1,3 +1,3 @@
-ent-ActionRetractableItemArmBlade-name = Arm Blade
-ent-ActionRetractableItemArmBlade-desc = Shed your flesh and reform it into a fleshy blade.
+ent-ActionRetractableItemArmBlade-name = Рука Лезвие
+ent-ActionRetractableItemArmBlade-desc = Освободите свою плоть и превратите ее в мясистый клинок.
 

@@ -1,36 +1,36 @@
-ent-BaseFenceWood-name = wooden fence
-ent-BaseFenceWood-desc = Wooden piece of fencing. I hope there is babushka's garden behind it.
+ent-BaseFenceWood-name = деревянный забор
+ent-BaseFenceWood-desc = Деревянный кусок ограждения. Надеюсь, за этим есть бабушкин сад.
 
-ent-BaseFenceWoodSmall-name = small wooden fence
-ent-BaseFenceWoodSmall-desc = Wooden piece of small fence. The best protection for the fencing of a private territory!
+ent-BaseFenceWoodSmall-name = небольшой деревянный забор
+ent-BaseFenceWoodSmall-desc = Деревянный кусок небольшого забора. Лучшая защита для ограждения частной территории!
 
-ent-FenceWoodHighGate-name = wooden fence gate
-ent-FenceWoodHighGate-desc = Do you have any idea what awaits you behind these gates? It can be either a toilet or a luxurious mansion. But you continue to love your emo boys.
+ent-FenceWoodHighGate-name = деревянные ворота для забора
+ent-FenceWoodHighGate-desc = Вы хоть представляете, что ждет вас за этими воротами? Это может быть как туалет, так и роскошный особняк. Но ты продолжаешь любить своих эмо-мальчиков.
 
-ent-FenceWoodSmallGate-name = wooden fence gate
-ent-FenceWoodSmallGate-desc = Looking at this gate, a familiar image pops up in your head. Where's my piggy?
+ent-FenceWoodSmallGate-name = деревянные ворота для забора
+ent-FenceWoodSmallGate-desc = Глядя на эти ворота, в голове всплывает знакомая картинка. Где моя свинка?
 
-ent-FenceWoodHighStraight-name = wooden fence
-ent-FenceWoodHighStraight-desc = Wooden piece of fencing. I hope there is babushka's garden behind it.
+ent-FenceWoodHighStraight-name = деревянный забор
+ent-FenceWoodHighStraight-desc = Деревянный кусок ограждения. Надеюсь, за этим есть бабушкин сад.
 
-ent-FenceWoodHighEnd-name = wooden fence
-ent-FenceWoodHighEnd-desc = Wooden piece of fencing. I hope there is babushka's garden behind it.
+ent-FenceWoodHighEnd-name = деревянный забор
+ent-FenceWoodHighEnd-desc = Деревянный кусок ограждения. Надеюсь, за этим есть бабушкин сад.
 
-ent-FenceWoodHighCorner-name = wooden fence
-ent-FenceWoodHighCorner-desc = Wooden piece of fencing. I hope there is babushka's garden behind it.
+ent-FenceWoodHighCorner-name = деревянный забор
+ent-FenceWoodHighCorner-desc = Деревянный кусок ограждения. Надеюсь, за этим есть бабушкин сад.
 
-ent-FenceWoodHighTJunction-name = wooden fence
-ent-FenceWoodHighTJunction-desc = Wooden piece of fencing. I hope there is babushka's garden behind it.
+ent-FenceWoodHighTJunction-name = деревянный забор
+ent-FenceWoodHighTJunction-desc = Деревянный кусок ограждения. Надеюсь, за этим есть бабушкин сад.
 
-ent-FenceWoodSmallStraight-name = small wooden fence
-ent-FenceWoodSmallStraight-desc = Wooden piece of small fence. The best protection for the fencing of a private territory!
+ent-FenceWoodSmallStraight-name = небольшой деревянный забор
+ent-FenceWoodSmallStraight-desc = Деревянный кусок небольшого забора. Лучшая защита для ограждения частной территории!
 
-ent-FenceWoodSmallEnd-name = small wooden fence
-ent-FenceWoodSmallEnd-desc = Wooden piece of small fence. The best protection for the fencing of a private territory!
+ent-FenceWoodSmallEnd-name = небольшой деревянный забор
+ent-FenceWoodSmallEnd-desc = Деревянный кусок небольшого забора. Лучшая защита для ограждения частной территории!
 
-ent-FenceWoodSmallCorner-name = small wooden fence
-ent-FenceWoodSmallCorner-desc = Wooden piece of small fence. The best protection for the fencing of a private territory!
+ent-FenceWoodSmallCorner-name = небольшой деревянный забор
+ent-FenceWoodSmallCorner-desc = Деревянный кусок небольшого забора. Лучшая защита для ограждения частной территории!
 
-ent-FenceWoodSmallTJunction-name = small wooden fence
-ent-FenceWoodSmallTJunction-desc = Wooden piece of small fence. The best protection for the fencing of a private territory!
+ent-FenceWoodSmallTJunction-name = небольшой деревянный забор
+ent-FenceWoodSmallTJunction-desc = Деревянный кусок небольшого забора. Лучшая защита для ограждения частной территории!
 

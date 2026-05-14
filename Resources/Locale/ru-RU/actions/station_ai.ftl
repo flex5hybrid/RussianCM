@@ -1,9 +1,9 @@
-ent-ActionJumpToCore-name = Jump to core
-ent-ActionJumpToCore-desc = Sends your eye back to the core.
+ent-ActionJumpToCore-name = Перейти к ядру
+ent-ActionJumpToCore-desc = Направляет ваш глаз обратно в ядро.
 
-ent-ActionSurvCameraLights-name = Toggle camera lights
-ent-ActionSurvCameraLights-desc = Enable surveillance camera lights near wherever you're viewing.
+ent-ActionSurvCameraLights-name = Переключить освещение камеры
+ent-ActionSurvCameraLights-desc = Включите освещение камеры наблюдения рядом с местом, где вы просматриваете.
 
-ent-ActionAIViewLaws-name = View Laws
-ent-ActionAIViewLaws-desc = View the laws that you must follow.
+ent-ActionAIViewLaws-name = Посмотреть законы
+ent-ActionAIViewLaws-desc = Ознакомьтесь с законами, которым вы должны следовать.
 

@@ -1,21 +1,21 @@
-ent-GlockenspielInstrument-name = glockenspiel
-ent-GlockenspielInstrument-desc = That's an instrument.
+ent-GlockenspielInstrument-name = глокеншпиль
+ent-GlockenspielInstrument-desc = Это инструмент.
 
-ent-MusicBoxInstrument-name = music box
-ent-MusicBoxInstrument-desc = Playing this makes you feel safe from scary animatronics.
+ent-MusicBoxInstrument-name = музыкальная шкатулка
+ent-MusicBoxInstrument-desc = Играя в эту игру, вы почувствуете себя в безопасности от страшных аниматроников.
 
-ent-XylophoneInstrument-name = xylophone
-ent-XylophoneInstrument-desc = Rainbow colored glockenspiel.
+ent-XylophoneInstrument-name = ксилофон
+ent-XylophoneInstrument-desc = Глокеншпиль радужного цвета.
 
-ent-MicrophoneInstrument-name = microphone
-ent-MicrophoneInstrument-desc = Perfect for singing your heart out.
+ent-MicrophoneInstrument-name = микрофон
+ent-MicrophoneInstrument-desc = Идеально подходит для пения от души.
 
-ent-WoodblockInstrument-name = woodblock
-ent-WoodblockInstrument-desc = If you listen to this enough it'll start driving itself into your mind.
+ent-WoodblockInstrument-name = гравюра на дереве
+ent-WoodblockInstrument-desc = Если вы послушаете это достаточно долго, это начнет проникать в ваш разум.
 
-ent-ReverseCymbalsInstrument-name = reverse cymbals
-ent-ReverseCymbalsInstrument-desc = I think you have it the wrong way around?
+ent-ReverseCymbalsInstrument-name = обратные тарелки
+ent-ReverseCymbalsInstrument-desc = Мне кажется, у вас все не так?
 
-ent-BasePercussionInstrument-name = item
-ent-BasePercussionInstrument-desc = That's an instrument.
+ent-BasePercussionInstrument-name = элемент
+ent-BasePercussionInstrument-desc = Это инструмент.
 

@@ -1,18 +1,18 @@
-ent-MobCivilian-name = civilian
-ent-MobCivilian-desc = A miserable pile of secrets.
+ent-MobCivilian-name = гражданский
+ent-MobCivilian-desc = Жалкая куча секретов.
 
-ent-MobSalvager-name = salvager
+ent-MobSalvager-name = спасатель
 
-ent-MobSpirate-name = spirate
-ent-MobSpirate-desc = Yarr!
+ent-MobSpirate-name = пират
+ent-MobSpirate-desc = Ярр!
 
-ent-MobSyndicateFootsoldier-name = syndicate footsoldier
+ent-MobSyndicateFootsoldier-name = пеший солдат синдиката
 
-ent-MobSyndicateFootsoldierPilot-name = syndicate shuttle pilot
+ent-MobSyndicateFootsoldierPilot-name = пилот шаттла синдиката
 
-ent-SalvageHumanCorpse-name = unidentified corpse
-ent-SalvageHumanCorpse-desc = I think they're dead.
+ent-SalvageHumanCorpse-name = неопознанный труп
+ent-SalvageHumanCorpse-desc = Я думаю, они мертвы.
 
-ent-MobCluwne-name = person
-ent-MobCluwne-desc = A polymorphed unfortunate.
+ent-MobCluwne-name = человек
+ent-MobCluwne-desc = Полиморфный несчастный.
 

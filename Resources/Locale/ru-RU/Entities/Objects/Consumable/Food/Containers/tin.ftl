@@ -1,33 +1,33 @@
-ent-FoodTinBase-name = tin
-ent-FoodTinBase-desc = A tin of something, sealed tight.
+ent-FoodTinBase-name = олово
+ent-FoodTinBase-desc = Банка с чем-то, плотно запечатанная.
 
-ent-FoodTinBaseTrash-name = empty tin
-ent-FoodTinBaseTrash-desc = An empty tin. Could get a bit of metal from this.
+ent-FoodTinBaseTrash-name = пустая банка
+ent-FoodTinBaseTrash-desc = Пустая банка. Из этого можно получить немного металла.
 
-ent-FoodTinPeaches-name = tinned peaches
-ent-FoodTinPeaches-desc = Just a nice can of ripe peaches swimming in their own juices.
+ent-FoodTinPeaches-name = консервированные персики
+ent-FoodTinPeaches-desc = Просто красивая банка спелых персиков, плавающих в собственном соку.
 
-ent-FoodTinPeachesTrash-name = tinned peaches
-ent-FoodTinPeachesTrash-desc = An empty tin. Could get a bit of metal from this.
+ent-FoodTinPeachesTrash-name = консервированные персики
+ent-FoodTinPeachesTrash-desc = Пустая банка. Из этого можно получить немного металла.
 
-ent-FoodTinPeachesMaint-name = maintenance peaches
-ent-FoodTinPeachesMaint-desc = Just a nice can of ripe peaches swimming in their own juices.
+ent-FoodTinPeachesMaint-name = уход за персиками
+ent-FoodTinPeachesMaint-desc = Просто красивая банка спелых персиков, плавающих в собственном соку.
 
-ent-FoodTinPeachesMaintTrash-name = maintenance peaches
-ent-FoodTinPeachesMaintTrash-desc = An empty tin. Could get a bit of metal from this.
+ent-FoodTinPeachesMaintTrash-name = уход за персиками
+ent-FoodTinPeachesMaintTrash-desc = Пустая банка. Из этого можно получить немного металла.
 
-ent-FoodTinBeans-name = tin of beans
-ent-FoodTinBeans-desc = Musical fruit in a slightly less musical container.
+ent-FoodTinBeans-name = банка фасоли
+ent-FoodTinBeans-desc = Музыкальный фрукт в чуть менее музыкальном контейнере.
 
-ent-FoodTinBeansTrash-name = tin of beans
-ent-FoodTinBeansTrash-desc = An empty tin. Could get a bit of metal from this.
+ent-FoodTinBeansTrash-name = банка фасоли
+ent-FoodTinBeansTrash-desc = Пустая банка. Из этого можно получить немного металла.
 
-ent-FoodTinMRE-name = tinned meat
-ent-FoodTinMRE-desc = A standard issue tin of meat with a convenient pull tab.
+ent-FoodTinMRE-name = консервы мясные
+ent-FoodTinMRE-desc = Стандартная банка для мяса с удобным язычком.
 
-ent-FoodTinMRETrash-name = tinned meat
-ent-FoodTinMRETrash-desc = An empty tin. Could get a bit of metal from this.
+ent-FoodTinMRETrash-name = консервы мясные
+ent-FoodTinMRETrash-desc = Пустая банка. Из этого можно получить немного металла.
 
-ent-FoodTinPeachesMaintOpen-name = maintenance peaches
-ent-FoodTinPeachesMaintOpen-desc = Just a nice can of ripe peaches swimming in their own juices.
+ent-FoodTinPeachesMaintOpen-name = уход за персиками
+ent-FoodTinPeachesMaintOpen-desc = Просто красивая банка спелых персиков, плавающих в собственном соку.
 

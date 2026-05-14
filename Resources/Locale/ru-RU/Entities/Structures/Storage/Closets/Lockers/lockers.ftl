@@ -1,129 +1,129 @@
-ent-LockerBooze-name = booze storage
-ent-LockerBooze-desc = This is where the bartender keeps the booze.
+ent-LockerBooze-name = хранилище для выпивки
+ent-LockerBooze-desc = Здесь бармен хранит выпивку.
 
-ent-LockerSteel-name = secure closet
-ent-LockerSteel-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerSteel-name = безопасный шкаф
+ent-LockerSteel-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerQuarterMaster-name = quartermaster's locker
-ent-LockerQuarterMaster-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerQuarterMaster-name = шкафчик интенданта
+ent-LockerQuarterMaster-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerSalvageSpecialist-name = salvage specialist's equipment
-ent-LockerSalvageSpecialist-desc = Nevermind the pickaxe.
+ent-LockerSalvageSpecialist-name = оборудование специалиста по спасению
+ent-LockerSalvageSpecialist-desc = Не говоря уже о кирке.
 
-ent-LockerCaptain-name = captain's locker
-ent-LockerCaptain-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerCaptain-name = капитанский рундук
+ent-LockerCaptain-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerHeadOfPersonnel-name = head of personnel's locker
-ent-LockerHeadOfPersonnel-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerHeadOfPersonnel-name = шкафчик начальника отдела кадров
+ent-LockerHeadOfPersonnel-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerChiefEngineer-name = chief engineer's locker
-ent-LockerChiefEngineer-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerChiefEngineer-name = шкафчик главного инженера
+ent-LockerChiefEngineer-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerElectricalSupplies-name = electrical supplies locker
-ent-LockerElectricalSupplies-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerElectricalSupplies-name = шкафчик для электроприборов
+ent-LockerElectricalSupplies-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerWeldingSupplies-name = welding supplies locker
-ent-LockerWeldingSupplies-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerWeldingSupplies-name = шкафчик для сварочных принадлежностей
+ent-LockerWeldingSupplies-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerAtmospherics-name = atmospheric technician's locker
-ent-LockerAtmospherics-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerAtmospherics-name = шкафчик атмосферного техника
+ent-LockerAtmospherics-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerEngineer-name = engineer's locker
-ent-LockerEngineer-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerEngineer-name = шкафчик инженера
+ent-LockerEngineer-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerEvacRepair-name = emergency shuttle emergency locker
-ent-LockerEvacRepair-desc = It's emergencies all the way down.
+ent-LockerEvacRepair-name = аварийный шаттл, аварийный шкафчик
+ent-LockerEvacRepair-desc = Это чрезвычайные ситуации полностью.
 
-ent-LockerFreezerBase-name = freezer
-ent-LockerFreezerBase-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerFreezerBase-name = морозильник
+ent-LockerFreezerBase-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerFreezer-name = freezer
-ent-LockerFreezer-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerFreezer-name = морозильник
+ent-LockerFreezer-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerBotanist-name = botanist's locker
-ent-LockerBotanist-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerBotanist-name = шкафчик ботаника
+ent-LockerBotanist-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerMedicine-name = medicine locker
-ent-LockerMedicine-desc = Filled to the brim with medical junk.
+ent-LockerMedicine-name = шкафчик для лекарств
+ent-LockerMedicine-desc = Забит до краёв медицинским хламом.
 
-ent-LockerMedical-name = medical doctor's locker
-ent-LockerMedical-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerMedical-name = шкафчик врача
+ent-LockerMedical-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerParamedic-name = paramedic's locker
-ent-LockerParamedic-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerParamedic-name = шкафчик фельдшера
+ent-LockerParamedic-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerChemistry-name = chemical locker
-ent-LockerChemistry-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerChemistry-name = химический шкафчик
+ent-LockerChemistry-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerChiefMedicalOfficer-name = chief medical officer's locker
-ent-LockerChiefMedicalOfficer-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerChiefMedicalOfficer-name = шкафчик главного врача
+ent-LockerChiefMedicalOfficer-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerResearchDirector-name = research director's locker
-ent-LockerResearchDirector-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerResearchDirector-name = шкафчик директора по исследованиям
+ent-LockerResearchDirector-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerScientist-name = scientist's locker
-ent-LockerScientist-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerScientist-name = шкафчик ученого
+ent-LockerScientist-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerHeadOfSecurity-name = head of security's locker
-ent-LockerHeadOfSecurity-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerHeadOfSecurity-name = шкафчик начальника службы безопасности
+ent-LockerHeadOfSecurity-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerWarden-name = warden's locker
-ent-LockerWarden-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerWarden-name = шкафчик начальника
+ent-LockerWarden-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerBrigmedic-name = brigmedic locker
-ent-LockerBrigmedic-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerBrigmedic-name = Бригмедик шкафчик
+ent-LockerBrigmedic-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerSecurity-name = security officer's locker
-ent-LockerSecurity-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerSecurity-name = шкафчик офицера безопасности
+ent-LockerSecurity-desc = Стандартное хранилище Nanotrasen.
 
-ent-GunSafe-name = gun safe
-ent-GunSafe-desc = A standard-issue Nanotrasen storage unit.
+ent-GunSafe-name = оружейный сейф
+ent-GunSafe-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerPrisoner-name = prisoner closet
-ent-LockerPrisoner-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerPrisoner-name = шкаф для заключенных
+ent-LockerPrisoner-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerDetective-name = detective's cabinet
-ent-LockerDetective-desc = Usually cold and empty... like your heart.
+ent-LockerDetective-name = кабинет детектива
+ent-LockerDetective-desc = Обычно холодно и пусто... как и твое сердце.
 
-ent-LockerEvidence-name = evidence locker
-ent-LockerEvidence-desc = To store bags of bullet casings and detainee belongings.
+ent-LockerEvidence-name = шкафчик для улик
+ent-LockerEvidence-desc = Хранить мешки с гильзами и вещи задержанных.
 
-ent-LockerSyndicatePersonal-name = armory closet
-ent-LockerSyndicatePersonal-desc = It's a personal storage unit for operative gear.
+ent-LockerSyndicatePersonal-name = оружейный шкаф
+ent-LockerSyndicatePersonal-desc = Это личное хранилище для оперативного снаряжения.
 
-ent-LockerBluespaceStation-name = bluespace locker
-ent-LockerBluespaceStation-desc = Advanced locker technology.
+ent-LockerBluespaceStation-name = шкафчик bluespace
+ent-LockerBluespaceStation-desc = Передовая технология шкафчиков.
 
-ent-LockerClown-name = clown locker
-ent-LockerClown-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerClown-name = клоун шкафчик
+ent-LockerClown-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerMime-name = mime locker
-ent-LockerMime-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerMime-name = шкафчик для мимов
+ent-LockerMime-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerRepresentative-name = representative locker
-ent-LockerRepresentative-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerRepresentative-name = Представительский шкафчик
+ent-LockerRepresentative-desc = Стандартное хранилище Nanotrasen.
 
-ent-GunSafeBaseSecure-name = closet
-ent-GunSafeBaseSecure-desc = A standard-issue Nanotrasen storage unit.
+ent-GunSafeBaseSecure-name = шкаф
+ent-GunSafeBaseSecure-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerPrisoner2-name = prisoner closet
-ent-LockerPrisoner2-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerPrisoner2-name = шкаф для заключенных
+ent-LockerPrisoner2-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerPrisoner3-name = prisoner closet
-ent-LockerPrisoner3-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerPrisoner3-name = шкаф для заключенных
+ent-LockerPrisoner3-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerPrisoner4-name = prisoner closet
-ent-LockerPrisoner4-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerPrisoner4-name = шкаф для заключенных
+ent-LockerPrisoner4-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerPrisoner5-name = prisoner closet
-ent-LockerPrisoner5-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerPrisoner5-name = шкаф для заключенных
+ent-LockerPrisoner5-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerPrisoner6-name = prisoner closet
-ent-LockerPrisoner6-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerPrisoner6-name = шкаф для заключенных
+ent-LockerPrisoner6-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerPrisoner7-name = prisoner closet
-ent-LockerPrisoner7-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerPrisoner7-name = шкаф для заключенных
+ent-LockerPrisoner7-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerPrisoner8-name = prisoner closet
-ent-LockerPrisoner8-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerPrisoner8-name = шкаф для заключенных
+ent-LockerPrisoner8-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 

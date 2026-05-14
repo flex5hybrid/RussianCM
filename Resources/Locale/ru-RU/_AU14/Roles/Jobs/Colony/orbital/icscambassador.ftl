@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianAmbassadorICSC-name = Spawn Point Civilian ICSC Ambassador
-ent-AU14SpawnPointCivilianAmbassadorICSC-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianAmbassadorICSC-name = Гражданский посол ICSC в Spawn Point
+ent-AU14SpawnPointCivilianAmbassadorICSC-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

@@ -1,6 +1,6 @@
-ent-UniformShortsRed-name = boxing shorts
-ent-UniformShortsRed-desc = These are shorts, not boxers.
+ent-UniformShortsRed-name = боксерские шорты
+ent-UniformShortsRed-desc = Это шорты, а не боксеры.
 
-ent-UniformShortsRedWithTop-name = boxing shorts with top
-ent-UniformShortsRedWithTop-desc = These are shorts, not boxers.
+ent-UniformShortsRedWithTop-name = боксерские шорты с топом
+ent-UniformShortsRedWithTop-desc = Это шорты, а не боксеры.
 

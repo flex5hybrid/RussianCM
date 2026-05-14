@@ -1,6 +1,6 @@
 # List Commendations Command
-cmd-rmclistcommendations-desc = Lists commendations by round, player, id, or recent entries.
-cmd-rmclistcommendations-help = Usage:
+cmd-rmclistcommendations-desc = Список похвал по раундам, игрокам, идентификаторам или недавним записям.
+cmd-rmclistcommendations-help = Использование:
   rmclistcommendations last <count> [type]
     - Lists the most recent commendations
     - count: number of most recent commendations to show
@@ -33,36 +33,36 @@ cmd-rmclistcommendations-help = Usage:
     rmclistcommendations player receiver PlayerName 5 jelly
 
 # Errors
-cmd-rmclistcommendations-invalid-arguments = Incorrect arguments!
-cmd-rmclistcommendations-invalid-round-id = Invalid round ID!
-cmd-rmclistcommendations-invalid-id = Invalid commendation ID!
-cmd-rmclistcommendations-invalid-type = Invalid type '{ $type }'!
-cmd-rmclistcommendations-invalid-player-mode = Invalid player mode! Must be 'giver' or 'receiver'.
-cmd-rmclistcommendations-invalid-count = Invalid count! Must be a positive number.
-cmd-rmclistcommendations-player-not-found = Player '{ $player }' not found.
-cmd-rmclistcommendations-no-results = No commendations found.
+cmd-rmclistcommendations-invalid-arguments = Неверные аргументы!
+cmd-rmclistcommendations-invalid-round-id = Неверный идентификатор раунда!
+cmd-rmclistcommendations-invalid-id = Неверный идентификатор благодарности!
+cmd-rmclistcommendations-invalid-type = Неверный тип «{ $type }»!
+cmd-rmclistcommendations-invalid-player-mode = Неверный режим игрока! Должно быть «дающий» или «получатель».
+cmd-rmclistcommendations-invalid-count = Неверный счетчик! Должно быть положительное число.
+cmd-rmclistcommendations-player-not-found = Игрок «{ $player }» не найден.
+cmd-rmclistcommendations-no-results = Похвалы не найдены.
 
 # Headers
-cmd-rmclistcommendations-last-header = Showing { $count } most recent commendations (requested: { $total }):
-cmd-rmclistcommendations-round-header = Commendations for Round { $round } ({ $count } total):
-cmd-rmclistcommendations-id-header = Commendation { $id }:
-cmd-rmclistcommendations-giver-header = Showing { $count } most recent commendations given (requested: { $total }):
-cmd-rmclistcommendations-receiver-header = Showing { $count } most recent commendations received (requested: { $total }):
+cmd-rmclistcommendations-last-header = Показаны последние похвалы { $count } (запрос: { $total }):
+cmd-rmclistcommendations-round-header = Благодарности за раунд { $round } (всего { $count }):
+cmd-rmclistcommendations-id-header = Благодарность { $id }:
+cmd-rmclistcommendations-giver-header = Показаны последние полученные благодарности { $count } (запрос: { $total }):
+cmd-rmclistcommendations-receiver-header = Показаны последние полученные благодарности { $count } (запрос: { $total }):
 
 # Format
-cmd-rmclistcommendations-format = id [{ $id }] { $type }: { $name } - { $giverUserName } ({ $giver }) → { $receiverUserName } ({ $receiver }) Round { $round }: { $text }
+cmd-rmclistcommendations-format = id [{ $id }] { $type }: { $name } - { $giverUserName } ({ $giver }) → { $receiverUserName } ({ $receiver }) Раунд { $round }: { $text }
 
 # Completion hints
-cmd-rmclistcommendations-hint-mode = Mode (last, round, id, or player)
-cmd-rmclistcommendations-hint-mode-last = List most recent commendations
-cmd-rmclistcommendations-hint-mode-round = List commendations by round
-cmd-rmclistcommendations-hint-mode-id = List a commendation by id
-cmd-rmclistcommendations-hint-mode-player = List commendations by player
-cmd-rmclistcommendations-hint-round-id = Round ID
-cmd-rmclistcommendations-hint-commendation-id = Commendation ID
-cmd-rmclistcommendations-hint-player-mode = Player mode (giver or receiver)
-cmd-rmclistcommendations-hint-player-giver = Commendations given by player
-cmd-rmclistcommendations-hint-player-receiver = Commendations received by player
-cmd-rmclistcommendations-hint-player = Player username or UserId
-cmd-rmclistcommendations-hint-count = Number of commendations to show
-cmd-rmclistcommendations-hint-type = Type commendation filter
+cmd-rmclistcommendations-hint-mode = Режим (последний, раунд, идентификатор или игрок)
+cmd-rmclistcommendations-hint-mode-last = Перечислите последние похвалы
+cmd-rmclistcommendations-hint-mode-round = Список наград по раундам
+cmd-rmclistcommendations-hint-mode-id = Перечислить похвалы по идентификатору
+cmd-rmclistcommendations-hint-mode-player = Список похвал от игрока
+cmd-rmclistcommendations-hint-round-id = Идентификатор раунда
+cmd-rmclistcommendations-hint-commendation-id = Идентификатор рекомендации
+cmd-rmclistcommendations-hint-player-mode = Режим игрока (дающий или получающий)
+cmd-rmclistcommendations-hint-player-giver = Благодарности от игрока
+cmd-rmclistcommendations-hint-player-receiver = Благодарности, полученные игроком
+cmd-rmclistcommendations-hint-player = Имя пользователя или UserId игрока
+cmd-rmclistcommendations-hint-count = Количество похвал для отображения
+cmd-rmclistcommendations-hint-type = Тип рекомендательного фильтра

@@ -1,14 +1,14 @@
-ent-ClothingNeckStethoscope-name = stethoscope
-ent-ClothingNeckStethoscope-desc = An outdated medical apparatus for listening to the sounds of the human body. It also makes you look like you know what you're doing.
+ent-ClothingNeckStethoscope-name = стетоскоп
+ent-ClothingNeckStethoscope-desc = Устаревший медицинский аппарат для прослушивания звуков человеческого тела. Это также заставляет вас выглядеть так, будто вы знаете, что делаете.
 
-ent-ActionStethoscope-name = Listen with stethoscope
+ent-ActionStethoscope-name = Слушайте стетоскопом
 
-ent-ClothingNeckBling-name = bling
-ent-ClothingNeckBling-desc = Damn, it feels good to be a gangster.
+ent-ClothingNeckBling-name = шик
+ent-ClothingNeckBling-desc = Черт, как приятно быть гангстером.
 
-ent-ClothingNeckLawyerbadge-name = lawyer badge
-ent-ClothingNeckLawyerbadge-desc = A badge to show that the owner is a 'legitimate' lawyer who passed the NT bar exam required to practice law.
+ent-ClothingNeckLawyerbadge-name = адвокат значок
+ent-ClothingNeckLawyerbadge-desc = Значок, показывающий, что владелец является «законным» юристом, сдавшим экзамен на адвоката штата Северная Каролина, необходимый для юридической практики.
 
-ent-Dinkystar-name = star sticker
-ent-Dinkystar-desc = A dinky lil star for only the hardest working security officers! It's not even sticky anymore.
+ent-Dinkystar-name = звезда стикер
+ent-Dinkystar-desc = Маленькая звездочка для самых трудолюбивых сотрудников службы безопасности! Оно уже даже не липкое.
 

@@ -1,6 +1,6 @@
-ent-Mousetrap-name = mousetrap
-ent-Mousetrap-desc = Useful for catching rodents sneaking into your kitchen.
+ent-Mousetrap-name = мышеловка
+ent-Mousetrap-desc = Полезно для поимки грызунов, пробравшихся на кухню.
 
-ent-MousetrapArmed-name = mousetrap
-ent-MousetrapArmed-desc = Useful for catching rodents sneaking into your kitchen.
+ent-MousetrapArmed-name = мышеловка
+ent-MousetrapArmed-desc = Полезно для поимки грызунов, пробравшихся на кухню.
 

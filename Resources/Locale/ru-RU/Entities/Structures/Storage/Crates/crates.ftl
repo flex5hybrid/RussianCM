@@ -1,122 +1,122 @@
-ent-CrateGenericSteel-name = crate
-ent-CrateGenericSteel-desc = A large container for items.
+ent-CrateGenericSteel-name = ящик
+ent-CrateGenericSteel-desc = Большой контейнер для вещей.
 
-ent-CratePlastic-name = plastic crate
-ent-CratePlastic-desc = A large container for items.
+ent-CratePlastic-name = пластиковый ящик
+ent-CratePlastic-desc = Большой контейнер для вещей.
 
-ent-CrateFreezer-name = freezer
-ent-CrateFreezer-desc = A large container for items.
+ent-CrateFreezer-name = морозильник
+ent-CrateFreezer-desc = Большой контейнер для вещей.
 
-ent-CrateHydroponics-name = hydroponics crate
-ent-CrateHydroponics-desc = A large container for items.
+ent-CrateHydroponics-name = ящик для гидропоники
+ent-CrateHydroponics-desc = Большой контейнер для вещей.
 
-ent-CrateMedical-name = medical crate
-ent-CrateMedical-desc = A large container for items.
+ent-CrateMedical-name = медицинский ящик
+ent-CrateMedical-desc = Большой контейнер для вещей.
 
-ent-CrateRadiation-name = radiation gear crate
-ent-CrateRadiation-desc = Is not actually lead lined. Do not store your plutonium in this.
+ent-CrateRadiation-name = ящик с радиационным снаряжением
+ent-CrateRadiation-desc = На самом деле не покрыт свинцом. Не храните здесь свой плутоний.
 
-ent-CrateInternals-name = oxygen crate
-ent-CrateInternals-desc = A large container for items.
+ent-CrateInternals-name = кислородный ящик
+ent-CrateInternals-desc = Большой контейнер для вещей.
 
-ent-CrateElectrical-name = electrical crate
-ent-CrateElectrical-desc = A large container for items.
+ent-CrateElectrical-name = электрический ящик
+ent-CrateElectrical-desc = Большой контейнер для вещей.
 
-ent-CrateEngineering-name = engineering crate
-ent-CrateEngineering-desc = A large container for items.
+ent-CrateEngineering-name = инженерный ящик
+ent-CrateEngineering-desc = Большой контейнер для вещей.
 
-ent-CrateScience-name = science crate
-ent-CrateScience-desc = A large container for items.
+ent-CrateScience-name = научный ящик
+ent-CrateScience-desc = Большой контейнер для вещей.
 
-ent-CrateSurgery-name = surgery crate
-ent-CrateSurgery-desc = A large container for items.
+ent-CrateSurgery-name = хирургический ящик
+ent-CrateSurgery-desc = Большой контейнер для вещей.
 
-ent-CrateWeb-name = web crate
-ent-CrateWeb-desc = A large container for items.
+ent-CrateWeb-name = веб-ящик
+ent-CrateWeb-desc = Большой контейнер для вещей.
 
-ent-CrateSecgear-name = secgear crate
-ent-CrateSecgear-desc = A large container for items.
+ent-CrateSecgear-name = ящик для снаряжения
+ent-CrateSecgear-desc = Большой контейнер для вещей.
 
-ent-CrateEngineeringSecure-name = secure engineering crate
-ent-CrateEngineeringSecure-desc = A large container for items.
+ent-CrateEngineeringSecure-name = безопасный инженерный ящик
+ent-CrateEngineeringSecure-desc = Большой контейнер для вещей.
 
-ent-CrateMedicalSecure-name = secure medical crate
-ent-CrateMedicalSecure-desc = A large container for items.
+ent-CrateMedicalSecure-name = безопасный медицинский ящик
+ent-CrateMedicalSecure-desc = Большой контейнер для вещей.
 
-ent-CrateChemistrySecure-name = secure chemistry crate
-ent-CrateChemistrySecure-desc = A large container for items.
+ent-CrateChemistrySecure-name = безопасный ящик для химикатов
+ent-CrateChemistrySecure-desc = Большой контейнер для вещей.
 
-ent-CratePrivateSecure-name = private crate
-ent-CratePrivateSecure-desc = A large container for items.
+ent-CratePrivateSecure-name = частный ящик
+ent-CratePrivateSecure-desc = Большой контейнер для вещей.
 
-ent-CrateScienceSecure-name = secure science crate
-ent-CrateScienceSecure-desc = A large container for items.
+ent-CrateScienceSecure-name = безопасный научный ящик
+ent-CrateScienceSecure-desc = Большой контейнер для вещей.
 
-ent-CratePlasma-name = plasma crate
-ent-CratePlasma-desc = A large container for items.
+ent-CratePlasma-name = плазменный ящик
+ent-CratePlasma-desc = Большой контейнер для вещей.
 
-ent-CrateSecure-name = secure crate
-ent-CrateSecure-desc = A large container for items.
+ent-CrateSecure-name = безопасный ящик
+ent-CrateSecure-desc = Большой контейнер для вещей.
 
-ent-CrateHydroSecure-name = secure hydroponics crate
-ent-CrateHydroSecure-desc = A large container for items.
+ent-CrateHydroSecure-name = безопасный ящик для гидропоники
+ent-CrateHydroSecure-desc = Большой контейнер для вещей.
 
-ent-CrateWeaponSecure-name = secure weapon crate
-ent-CrateWeaponSecure-desc = A large container for items.
+ent-CrateWeaponSecure-name = безопасный ящик с оружием
+ent-CrateWeaponSecure-desc = Большой контейнер для вещей.
 
-ent-CrateContrabandStorageSecure-name = contraband storage crate
-ent-CrateContrabandStorageSecure-desc = An armory access locked crate for storing contraband confiscated from suspects or prisoners.
+ent-CrateContrabandStorageSecure-name = ящик для хранения контрабанды
+ent-CrateContrabandStorageSecure-desc = Запираемый ящик для доступа к арсеналу для хранения контрабанды, конфискованной у подозреваемых или заключенных.
 
-ent-CrateCommandSecure-name = command crate
-ent-CrateCommandSecure-desc = A large container for items.
+ent-CrateCommandSecure-name = командный ящик
+ent-CrateCommandSecure-desc = Большой контейнер для вещей.
 
-ent-CrateLivestock-name = livestock crate
-ent-CrateLivestock-desc = A large container for items.
+ent-CrateLivestock-name = ящик для скота
+ent-CrateLivestock-desc = Большой контейнер для вещей.
 
-ent-CrateRodentCage-name = hamster cage
-ent-CrateRodentCage-desc = A large container for items.
+ent-CrateRodentCage-name = клетка для хомяка
+ent-CrateRodentCage-desc = Большой контейнер для вещей.
 
-ent-CrateBaseLockBox-name = lock box
-ent-CrateBaseLockBox-desc = A secure lock box. Funds from its sale will be distributed back to the department. Just remember: Cargo always takes a cut.
+ent-CrateBaseLockBox-name = сейф
+ent-CrateBaseLockBox-desc = Надежный сейф с замком. Средства от его продажи будут возвращены ведомству. Просто помните: груз всегда берет на себя часть расходов.
 
-ent-CrateLockBoxEngineering-name = engineering lock box
-ent-CrateLockBoxEngineering-desc = A secure lock box. Funds from its sale will be distributed back to the department. Just remember: Cargo always takes a cut.
+ent-CrateLockBoxEngineering-name = инженерный замок
+ent-CrateLockBoxEngineering-desc = Надежный сейф с замком. Средства от его продажи будут возвращены ведомству. Просто помните: груз всегда берет на себя часть расходов.
 
-ent-CrateLockBoxMedical-name = medical lock box
-ent-CrateLockBoxMedical-desc = A secure lock box. Funds from its sale will be distributed back to the department. Just remember: Cargo always takes a cut.
+ent-CrateLockBoxMedical-name = медицинский замок
+ent-CrateLockBoxMedical-desc = Надежный сейф с замком. Средства от его продажи будут возвращены ведомству. Просто помните: груз всегда берет на себя часть расходов.
 
-ent-CrateLockBoxScience-name = science lock box
-ent-CrateLockBoxScience-desc = A secure lock box. Funds from its sale will be distributed back to the department. Just remember: Cargo always takes a cut.
+ent-CrateLockBoxScience-name = научный сейф
+ent-CrateLockBoxScience-desc = Надежный сейф с замком. Средства от его продажи будут возвращены ведомству. Просто помните: груз всегда берет на себя часть расходов.
 
-ent-CrateLockBoxSecurity-name = security lock box
-ent-CrateLockBoxSecurity-desc = A secure lock box. Funds from its sale will be distributed back to the department. Just remember: Cargo always takes a cut.
+ent-CrateLockBoxSecurity-name = сейф с замком
+ent-CrateLockBoxSecurity-desc = Надежный сейф с замком. Средства от его продажи будут возвращены ведомству. Просто помните: груз всегда берет на себя часть расходов.
 
-ent-CrateLockBoxService-name = service lock box
-ent-CrateLockBoxService-desc = A secure lock box. Funds from its sale will be distributed back to the department. Just remember: Cargo always takes a cut.
+ent-CrateLockBoxService-name = сервисный замок
+ent-CrateLockBoxService-desc = Надежный сейф с замком. Средства от его продажи будут возвращены ведомству. Просто помните: груз всегда берет на себя часть расходов.
 
-ent-CratePirate-name = pirate chest
-ent-CratePirate-desc = A space pirate chest, not for station lubbers.
+ent-CratePirate-name = пиратский сундук
+ent-CratePirate-desc = Сундук космического пирата, не для станционных фанатов.
 
-ent-CrateToyBox-name = toy box
-ent-CrateToyBox-desc = A box overflowing with fun.
+ent-CrateToyBox-name = ящик для игрушек
+ent-CrateToyBox-desc = Коробка, полная веселья.
 
-ent-CrateCoffin-name = coffin
-ent-CrateCoffin-desc = A comfy coffin, excellent place for the vampires and corpses.
+ent-CrateCoffin-name = гроб
+ent-CrateCoffin-desc = Удобный гроб, отличное место для вампиров и трупов.
 
-ent-CrateWoodenGrave-name = grave
-ent-CrateWoodenGrave-desc = Someone died here...
+ent-CrateWoodenGrave-name = могила
+ent-CrateWoodenGrave-desc = Здесь кто-то умер...
 
-ent-CrateStoneGrave-name = grave
-ent-CrateStoneGrave-desc = Someone died here...
+ent-CrateStoneGrave-name = могила
+ent-CrateStoneGrave-desc = Здесь кто-то умер...
 
-ent-CrateSyndicate-name = Syndicate crate
-ent-CrateSyndicate-desc = A dark steel crate with red bands and a letter S embossed on the front.
+ent-CrateSyndicate-name = Ящик Синдиката
+ent-CrateSyndicate-desc = Ящик из темной стали с красными полосами и тисненой буквой S спереди.
 
-ent-CrateTrashCart-name = trash cart
+ent-CrateTrashCart-name = мусорная тележка
 
-ent-CrateTrashCartJani-name = janitorial trash cart
-ent-CrateTrashCartJani-desc = A large container for items.
+ent-CrateTrashCartJani-name = мусорная тележка для уборки
+ent-CrateTrashCartJani-desc = Большой контейнер для вещей.
 
-ent-InvisibleCrate-name = crate
-ent-InvisibleCrate-desc = A large container for items.
+ent-InvisibleCrate-name = ящик
+ent-InvisibleCrate-desc = Большой контейнер для вещей.
 

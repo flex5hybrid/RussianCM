@@ -1,3 +1,3 @@
-ent-DragonSurviveObjective-name = Survive
-ent-DragonSurviveObjective-desc = You have to stay alive to maintain control.
+ent-DragonSurviveObjective-name = Выжить
+ent-DragonSurviveObjective-desc = Вы должны остаться в живых, чтобы сохранить контроль.
 

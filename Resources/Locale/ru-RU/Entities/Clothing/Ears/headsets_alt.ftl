@@ -1,33 +1,33 @@
-ent-ClothingHeadsetAlt-name = headset
-ent-ClothingHeadsetAlt-desc = An updated, modular intercom that fits over the head. Takes encryption keys.
+ent-ClothingHeadsetAlt-name = гарнитура
+ent-ClothingHeadsetAlt-desc = Обновленный модульный домофон, который крепится через голову. Берет ключи шифрования.
 
-ent-ClothingHeadsetAltCargo-name = quartermaster's over-ear headset
-ent-ClothingHeadsetAltCargo-desc = An updated, modular intercom that fits over the head. Takes encryption keys.
+ent-ClothingHeadsetAltCargo-name = полноразмерная интендантская гарнитура
+ent-ClothingHeadsetAltCargo-desc = Обновленный модульный домофон, который крепится через голову. Берет ключи шифрования.
 
-ent-ClothingHeadsetAltCentCom-name = CentComm over-ear headset
-ent-ClothingHeadsetAltCentCom-desc = An updated, modular intercom that fits over the head. Takes encryption keys.
+ent-ClothingHeadsetAltCentCom-name = Полноразмерная гарнитура CentComm
+ent-ClothingHeadsetAltCentCom-desc = Обновленный модульный домофон, который крепится через голову. Берет ключи шифрования.
 
-ent-ClothingHeadsetAltCommand-name = command over-ear headset
-ent-ClothingHeadsetAltCommand-desc = An updated, modular intercom that fits over the head. Takes encryption keys.
+ent-ClothingHeadsetAltCommand-name = командная полноразмерная гарнитура
+ent-ClothingHeadsetAltCommand-desc = Обновленный модульный домофон, который крепится через голову. Берет ключи шифрования.
 
-ent-ClothingHeadsetAltEngineering-name = chief engineer's over-ear headset
-ent-ClothingHeadsetAltEngineering-desc = An updated, modular intercom that fits over the head. Takes encryption keys.
+ent-ClothingHeadsetAltEngineering-name = Полноразмерная гарнитура главного инженера
+ent-ClothingHeadsetAltEngineering-desc = Обновленный модульный домофон, который крепится через голову. Берет ключи шифрования.
 
-ent-ClothingHeadsetAltMedical-name = chief medical officer's over-ear headset
-ent-ClothingHeadsetAltMedical-desc = An updated, modular intercom that fits over the head. Takes encryption keys.
+ent-ClothingHeadsetAltMedical-name = Полноразмерная гарнитура главного врача
+ent-ClothingHeadsetAltMedical-desc = Обновленный модульный домофон, который крепится через голову. Берет ключи шифрования.
 
-ent-ClothingHeadsetAltSecurity-name = head of security's over-ear headset
-ent-ClothingHeadsetAltSecurity-desc = An updated, modular intercom that fits over the head. Takes encryption keys.
+ent-ClothingHeadsetAltSecurity-name = наушники-вкладыши начальника службы безопасности
+ent-ClothingHeadsetAltSecurity-desc = Обновленный модульный домофон, который крепится через голову. Берет ключи шифрования.
 
-ent-ClothingHeadsetAltScience-name = research director's over-ear headset
-ent-ClothingHeadsetAltScience-desc = An updated, modular intercom that fits over the head. Takes encryption keys.
+ent-ClothingHeadsetAltScience-name = Полноразмерная гарнитура директора по исследованиям
+ent-ClothingHeadsetAltScience-desc = Обновленный модульный домофон, который крепится через голову. Берет ключи шифрования.
 
-ent-ClothingHeadsetAltSyndicate-name = blood-red over-ear headset
-ent-ClothingHeadsetAltSyndicate-desc = An updated, modular syndicate intercom that fits over the head and takes encryption keys (there are 5 key slots.).
+ent-ClothingHeadsetAltSyndicate-name = кроваво-красная полноразмерная гарнитура
+ent-ClothingHeadsetAltSyndicate-desc = Обновленный модульный домофон синдиката, который надевается на голову и принимает ключи шифрования (имеется 5 гнезд для ключей).
 
-ent-ClothingHeadsetAltFreelancer-name = freelancer's over-ear headset
-ent-ClothingHeadsetAltFreelancer-desc = An updated, modular intercom that fits over the head. Takes encryption keys.
+ent-ClothingHeadsetAltFreelancer-name = полноразмерная гарнитура фрилансера
+ent-ClothingHeadsetAltFreelancer-desc = Обновленный модульный домофон, который крепится через голову. Берет ключи шифрования.
 
-ent-ClothingHeadsetAltWizard-name = wizard's over-ear headset
-ent-ClothingHeadsetAltWizard-desc = An updated, modular intercom that fits over the head. Takes encryption keys.
+ent-ClothingHeadsetAltWizard-name = полноразмерная гарнитура волшебника
+ent-ClothingHeadsetAltWizard-desc = Обновленный модульный домофон, который крепится через голову. Берет ключи шифрования.
 

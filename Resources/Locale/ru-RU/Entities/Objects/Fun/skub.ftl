@@ -1,3 +1,3 @@
-ent-Skub-name = skub
-ent-Skub-desc = Skub is the fifth Chaos God.
+ent-Skub-name = скуб
+ent-Skub-desc = Скуб — пятый Бог Хаоса.
 

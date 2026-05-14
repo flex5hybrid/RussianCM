@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCLFPhysician-name = Spawn Point CLF Physician
-ent-AU14SpawnPointCLFPhysician-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCLFPhysician-name = Врач CLF точки возрождения
+ent-AU14SpawnPointCLFPhysician-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

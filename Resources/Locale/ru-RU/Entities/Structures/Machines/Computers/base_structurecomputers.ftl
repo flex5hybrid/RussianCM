@@ -1,4 +1,4 @@
-ent-BaseComputer-name = computer
+ent-BaseComputer-name = компьютер
 
-ent-BaseComputerAiAccess-name = computer
+ent-BaseComputerAiAccess-name = компьютер
 

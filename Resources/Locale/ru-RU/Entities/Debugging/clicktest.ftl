@@ -1,12 +1,12 @@
-ent-ClickTestRotatingCornerVisible-name = ClickTestRotatingCornerVisible
+ent-ClickTestRotatingCornerVisible-name = НажмитеТестRotatingCornerVisible
 
-ent-ClickTestRotatingCornerVisibleNoRot-name = ClickTestRotatingCornerVisibleNoRot
+ent-ClickTestRotatingCornerVisibleNoRot-name = НажмитеТестRotatingCornerVisibleNoRot
 
-ent-ClickTestRotatingCornerInvisible-name = ClickTestRotatingCornerInvisible
+ent-ClickTestRotatingCornerInvisible-name = НажмитеТестRotatingCornerInvisible
 
-ent-ClickTestRotatingCornerInvisibleNoRot-name = ClickTestRotatingCornerInvisibleNoRot
+ent-ClickTestRotatingCornerInvisibleNoRot-name = НажмитеТестRotatingCornerInvisibleNoRot
 
-ent-ClickTestFixedCornerVisible-name = ClickTestFixedCornerVisible
+ent-ClickTestFixedCornerVisible-name = КликТестФикседКорнерВидимый
 
-ent-ClickTestFixedCornerInvisible-name = ClickTestFixedCornerInvisible
+ent-ClickTestFixedCornerInvisible-name = НажмитеTestFixedCornerInvisible
 

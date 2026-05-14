@@ -1,3 +1,3 @@
-ent-HandLabeler-name = hand labeler
-ent-HandLabeler-desc = A hand labeler, used to label items and objects.
+ent-HandLabeler-name = ручной этикетировщик
+ent-HandLabeler-desc = Ручной этикетировщик, используемый для маркировки предметов и предметов.
 

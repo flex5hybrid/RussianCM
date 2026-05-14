@@ -16,3 +16,9 @@ rmc-power-loader-occupied-weapon = Там уже установлено оруж
 rmc-power-loader-occupied-ammo = Сначала вам нужно разгрузить ящик с боеприпасами внутри!
 rmc-power-loader-ammo-no-weapon = Сначала вам нужно установить оружие!
 rmc-power-loader-occupied = Там уже что-то установлено!
+
+# Missing entries synced from en-US
+
+rmc-power-loader-occupied-deployer = Там уже установлен развертыватель оборудования!
+
+rmc-power-loader-occupied-deployable = Сначала вам нужно разгрузить боеприпасы внутри!

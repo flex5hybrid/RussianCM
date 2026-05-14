@@ -1,11 +1,11 @@
-ent-BaseSmokable-name = item
-ent-BaseSmokable-desc = If you want to get cancer, might as well do it in style.
+ent-BaseSmokable-name = элемент
+ent-BaseSmokable-desc = Если вы хотите заболеть раком, сделайте это стильно.
 
-ent-BaseCigar-name = item
-ent-BaseCigar-desc = If you want to get cancer, might as well do it in style.
+ent-BaseCigar-name = элемент
+ent-BaseCigar-desc = Если вы хотите заболеть раком, сделайте это стильно.
 
-ent-BaseSmokingPipe-name = item
-ent-BaseSmokingPipe-desc = If you want to get cancer, might as well do it in style.
+ent-BaseSmokingPipe-name = элемент
+ent-BaseSmokingPipe-desc = Если вы хотите заболеть раком, сделайте это стильно.
 
-ent-BaseVape-name = item
+ent-BaseVape-name = элемент
 

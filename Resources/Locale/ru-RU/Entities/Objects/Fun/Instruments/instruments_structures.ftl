@@ -1,38 +1,38 @@
-ent-PianoInstrument-name = piano
-ent-PianoInstrument-desc = Play Needles Piano Now.
+ent-PianoInstrument-name = фортепиано
+ent-PianoInstrument-desc = Сыграйте на пианино Needles прямо сейчас.
 
-ent-UprightPianoInstrument-name = upright piano
-ent-UprightPianoInstrument-desc = I said Piannie!
+ent-UprightPianoInstrument-name = пианино
+ent-UprightPianoInstrument-desc = Я сказал Пианни!
 
-ent-VibraphoneInstrument-name = vibraphone
-ent-VibraphoneInstrument-desc = Good vibes all around.
+ent-VibraphoneInstrument-name = вибрафон
+ent-VibraphoneInstrument-desc = Хорошее настроение повсюду.
 
-ent-MarimbaInstrument-name = marimba
+ent-MarimbaInstrument-name = маримба
 
-ent-ChurchOrganInstrument-name = church organ
-ent-ChurchOrganInstrument-desc = This thing really blows!
+ent-ChurchOrganInstrument-name = церковный орган
+ent-ChurchOrganInstrument-desc = Эта штука действительно потрясающая!
 
-ent-TubaInstrument-name = tuba
-ent-TubaInstrument-desc = The big daddy of the brass family. Standing next to its majesty makes you feel insecure.
+ent-TubaInstrument-name = туба
+ent-TubaInstrument-desc = Большой папа семьи Брассов. Находясь рядом с его величием, чувствуешь себя неуверенно.
 
-ent-HarpInstrument-name = harp
-ent-HarpInstrument-desc = Plucking at the strings cuts your fingers, but at least the music is pretty.
+ent-HarpInstrument-name = арфа
+ent-HarpInstrument-desc = Передергивание струн порежет пальцы, но, по крайней мере, музыка красивая.
 
-ent-TimpaniInstrument-name = timpani
-ent-TimpaniInstrument-desc = It goes BOOM BOOM BOOM BOOM!
+ent-TimpaniInstrument-name = литавры
+ent-TimpaniInstrument-desc = Это БУМ БУМ БУМ БУМ!
 
-ent-TaikoInstrument-name = taiko
-ent-TaikoInstrument-desc = A large drum. Looking at it fills you with the urge to slap it.
+ent-TaikoInstrument-name = тайко
+ent-TaikoInstrument-desc = Большой барабан. Глядя на него, вы испытываете желание дать ему пощечину.
 
-ent-ContrabassInstrument-name = contrabass
-ent-ContrabassInstrument-desc = Perfect for laying down a nice jazzy beat.
+ent-ContrabassInstrument-name = контрабас
+ent-ContrabassInstrument-desc = Идеально подходит для создания приятного джазового ритма.
 
-ent-MinimoogInstrument-name = minimoog
-ent-MinimoogInstrument-desc = This is a minimoog, like a space piano, but more spacey!
+ent-MinimoogInstrument-name = минимуг
+ent-MinimoogInstrument-desc = Это минимуг, похож на космическое пианино, только более просторный!
 
-ent-TomDrumsInstrument-name = tom drums
-ent-TomDrumsInstrument-desc = Where'd the rest of the kit go?
+ent-TomDrumsInstrument-name = Том барабаны
+ent-TomDrumsInstrument-desc = Куда делся остальной комплект?
 
-ent-DawInstrument-name = digital audio workstation
-ent-DawInstrument-desc = Cutting edge music technology, straight from the 90s.
+ent-DawInstrument-name = цифровая аудио рабочая станция
+ent-DawInstrument-desc = Передовые музыкальные технологии прямиком из 90-х.
 

@@ -50,3 +50,23 @@ injector-component-spray-injecting-target = { CAPITALIZE($user) } начинае
 
 ## Target Popup Success messages
 injector-component-feel-prick-message = Вы чувствуете легкий укол!
+
+# Missing entries synced from en-US
+
+injector-draw-text = Ничья
+
+injector-inject-text = Вводить
+
+injector-invalid-injector-toggle-mode = Недействительный
+
+injector-component-drawing-text = Сейчас рисую
+
+injector-component-injecting-text = Сейчас делаю инъекции
+
+injector-component-drawing-user = Вы начинаете рисовать иглу.
+
+injector-component-injecting-user = Вы начинаете вводить иглу.
+
+injector-component-drawing-target = {CAPITALIZE(THE($user))} пытается использовать иглу, чтобы вытянуть из вас!
+
+injector-component-injecting-target = {CAPITALIZE(THE($user))} пытается вколоть вам иглу!

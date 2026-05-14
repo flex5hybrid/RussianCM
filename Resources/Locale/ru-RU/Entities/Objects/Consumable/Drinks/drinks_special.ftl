@@ -1,21 +1,21 @@
-ent-DrinkShaker-name = shaker
-ent-DrinkShaker-desc = The trusty mixing buddy of the bartender.
+ent-DrinkShaker-name = шейкер
+ent-DrinkShaker-desc = Верный приятель бармена.
 
-ent-DrinkShotGlass-name = shot glass
-ent-DrinkShotGlass-desc = Perfect for slamming down onto the table angrily.
+ent-DrinkShotGlass-name = рюмка
+ent-DrinkShotGlass-desc = Идеально подходит для того, чтобы в гневе свалиться на стол.
 
-ent-DrinkJar-name = jar
-ent-DrinkJar-desc = The hipster's cup.
+ent-DrinkJar-name = банка
+ent-DrinkJar-desc = Кубок хипстера.
 
-ent-DrinkJarWhat-name = jar of something
-ent-DrinkJarWhat-desc = You can't really tell what this is.
+ent-DrinkJarWhat-name = банка чего-то
+ent-DrinkJarWhat-desc = Вы не можете точно сказать, что это такое.
 
-ent-DrinkJigger-name = jigger
-ent-DrinkJigger-desc = Like a shaker, but smaller. Used to control the amount of ingredients.
+ent-DrinkJigger-name = джиггер
+ent-DrinkJigger-desc = Похож на шейкер, но меньшего размера. Используется для контроля количества ингредиентов.
 
-ent-DrinkIceBucket-name = ice bucket
-ent-DrinkIceBucket-desc = A special bucket of refreshy ice. Prohibited use for challenge with the same name!
+ent-DrinkIceBucket-name = ведро для льда
+ent-DrinkIceBucket-desc = Специальное ведерко с освежающим льдом. Запрещено использование для одноименного вызова!
 
-ent-Pitcher-name = metal pitcher
-ent-Pitcher-desc = A stainless steel insulated pitcher. Everyone's best friend in the morning.
+ent-Pitcher-name = металлический кувшин
+ent-Pitcher-desc = Изолированный кувшин из нержавеющей стали. Лучший друг каждого с утра.
 

@@ -47,7 +47,7 @@ comp-kitchen-spike-unhook-verb = Снять с крюка
 
 comp-kitchen-spike-hooked = [color=red]На крюке { CAPITALIZE($victim) }![/color]
 
-comp-kitchen-spike-meat-name = { $name } ({ $victim })
+comp-kitchen-spike-meat-name = мясо { $victim }
 
 comp-kitchen-spike-victim-examine = [color=orange]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-BASIC($target, "выглядят", "выглядит") } довольно { GENDER($target) ->
     [male] худым
@@ -57,3 +57,27 @@ comp-kitchen-spike-victim-examine = [color=orange]{ CAPITALIZE(SUBJECT($target))
 }.[/color]
 
 comp-kitchen-spike-deconstruct-occupied = Далее, [color=red]снимите тело с крюка[/color].
+
+# Missing entries synced from en-US
+
+comp-kitchen-spike-deny-collect = У { CAPITALIZE(THE($this)) } уже что-то есть, сначала собери его мясо!
+
+comp-kitchen-spike-deny-butcher = { CAPITALIZE(THE($victim)) } нельзя зарезать на { THE($this) }.
+
+comp-kitchen-spike-deny-butcher-knife = { CAPITALIZE(THE($victim)) } нельзя разделать на { THE($this) }, его нужно разделывать ножом.
+
+comp-kitchen-spike-deny-not-dead = { CAPITALIZE(THE($victim)) } нельзя зарезать. { CAPITALIZE(SUBJECT($victim)) } { CONJUGATE-BE($victim) } не ​​умер!
+
+comp-kitchen-spike-begin-hook-victim = { CAPITALIZE(THE($user)) } начинает перетаскивать вас на { THE($this) }!
+
+comp-kitchen-spike-kill = { CAPITALIZE(THE($user)) } заставил { THE($victim) } атаковать { THE($this) }, мгновенно убив { OBJECT($victim) }!
+
+comp-kitchen-spike-suicide-other = { CAPITALIZE(THE($victim)) } бросил { REFLEXIVE($victim) } на { THE($this) }!
+
+comp-kitchen-spike-suicide-self = Ты бросаешься на { THE($this) }!
+
+comp-kitchen-spike-knife-needed = Для этого вам понадобится нож.
+
+comp-kitchen-spike-remove-meat = Вы удаляете немного мяса из { THE($victim) }.
+
+comp-kitchen-spike-remove-meat-last = Вы убираете последний кусок мяса с { THE($victim) }!

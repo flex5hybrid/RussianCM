@@ -1,57 +1,57 @@
-ent-CrateEngineeringGear-name = engineering gear crate
-ent-CrateEngineeringGear-desc = Various engineering gear parts.
+ent-CrateEngineeringGear-name = ящик для инженерного снаряжения
+ent-CrateEngineeringGear-desc = Различные детали инженерного оборудования.
 
-ent-CrateEngineeringToolbox-name = toolbox crate
-ent-CrateEngineeringToolbox-desc = Two mechanical and two electrical toolboxes.
+ent-CrateEngineeringToolbox-name = ящик для инструментов
+ent-CrateEngineeringToolbox-desc = Два механических и два электрических ящика для инструментов.
 
-ent-CrateEngineeringCableLV-name = LV cable crate
-ent-CrateEngineeringCableLV-desc = 3 coils of LV cables.
+ent-CrateEngineeringCableLV-name = Ящик для кабеля низкого напряжения
+ent-CrateEngineeringCableLV-desc = 3 катушки кабелей низкого напряжения.
 
-ent-CrateEngineeringCableMV-name = MV cable crate
-ent-CrateEngineeringCableMV-desc = 3 coils of MV cables.
+ent-CrateEngineeringCableMV-name = Кабельный ящик среднего напряжения
+ent-CrateEngineeringCableMV-desc = 3 катушки кабелей среднего напряжения.
 
-ent-CrateEngineeringCableHV-name = HV cable crate
-ent-CrateEngineeringCableHV-desc = 3 coils of HV cables.
+ent-CrateEngineeringCableHV-name = Ящик для высоковольтного кабеля
+ent-CrateEngineeringCableHV-desc = 3 катушки высоковольтных кабелей.
 
-ent-CrateEngineeringFoamGrenade-name = sealant grenade crate
-ent-CrateEngineeringFoamGrenade-desc = 5 metal foam sealant grenades.
+ent-CrateEngineeringFoamGrenade-name = герметик ящика для гранат
+ent-CrateEngineeringFoamGrenade-desc = 5 гранат из металлической пены.
 
-ent-CrateEngineeringCableBulk-name = bulk cable crate
-ent-CrateEngineeringCableBulk-desc = 2 coils each for every cable type.
+ent-CrateEngineeringCableBulk-name = объемный кабельный ящик
+ent-CrateEngineeringCableBulk-desc = По 2 катушки для каждого типа кабеля.
 
-ent-CrateEngineeringElectricalSupplies-name = electrical supplies crate
-ent-CrateEngineeringElectricalSupplies-desc = NT is not responsible for any workplace infighting relating to the insulated gloves included within these crates.
+ent-CrateEngineeringElectricalSupplies-name = ящик для электроприборов
+ent-CrateEngineeringElectricalSupplies-desc = NT не несет ответственности за любые распри на рабочем месте, связанные с изолированными перчатками, входящими в эти ящики.
 
-ent-CrateEngineeringStationBeaconBundle-name = station beacon bundle
-ent-CrateEngineeringStationBeaconBundle-desc = A crate containing 5 station beacon assemblies for modifying the station map.
+ent-CrateEngineeringStationBeaconBundle-name = комплект радиомаяков станции
+ent-CrateEngineeringStationBeaconBundle-desc = Ящик, содержащий 5 блоков маяков станций для изменения карты станции.
 
-ent-CrateEngineeringJetpack-name = jetpack crate
-ent-CrateEngineeringJetpack-desc = Two jetpacks for those who don't know how to use fire extinguishers.
+ent-CrateEngineeringJetpack-name = ящик с реактивным ранцем
+ent-CrateEngineeringJetpack-desc = Два реактивных ранца для тех, кто не умеет пользоваться огнетушителями.
 
-ent-CrateEngineeringMiniJetpack-name = mini jetpack crate
-ent-CrateEngineeringMiniJetpack-desc = Two mini jetpacks for those who want an extra challenge.
+ent-CrateEngineeringMiniJetpack-name = мини-ящик для реактивного ранца
+ent-CrateEngineeringMiniJetpack-desc = Два мини-реактивных ранца для тех, кто хочет новых испытаний.
 
-ent-CrateAirlockKit-name = airlock kit
-ent-CrateAirlockKit-desc = A kit for building 6 airlocks, doesn't include tools.
+ent-CrateAirlockKit-name = комплект шлюзового шлюза
+ent-CrateAirlockKit-desc = Набор для постройки 6 шлюзов, без инструментов.
 
-ent-CrateEvaKit-name = EVA kit
-ent-CrateEvaKit-desc = A set consisting of two prestigious EVA suits and helmets.
+ent-CrateEvaKit-name = комплект для выхода в открытый космос
+ent-CrateEvaKit-desc = Комплект, состоящий из двух престижных костюмов и шлемов для выхода в открытый космос.
 
-ent-CrateRCDAmmo-name = compressed matter crate
-ent-CrateRCDAmmo-desc = Contains three compressed matter cartridges.
+ent-CrateRCDAmmo-name = ящик со сжатым веществом
+ent-CrateRCDAmmo-desc = Содержит три картриджа со сжатым материалом.
 
-ent-CrateRCD-name = RCD crate
-ent-CrateRCD-desc = A crate containing a single rapid construction device.
+ent-CrateRCD-name = ящик УЗО
+ent-CrateRCD-desc = Ящик, содержащий одно устройство для быстрого строительства.
 
-ent-CrateParticleDecelerators-name = particle decelerators crate
-ent-CrateParticleDecelerators-desc = A crate containing 3 Particle Decelerators.
+ent-CrateParticleDecelerators-name = ящик с замедлителями частиц
+ent-CrateParticleDecelerators-desc = Ящик с тремя замедлителями частиц.
 
-ent-CrateEngineeringSpaceHeater-name = space heater crate
-ent-CrateEngineeringSpaceHeater-desc = Contains a space heater for climate control.
+ent-CrateEngineeringSpaceHeater-name = ящик для обогревателя
+ent-CrateEngineeringSpaceHeater-desc = Содержит обогреватель для климат-контроля.
 
-ent-CrateTechBoardRandom-name = surplus boards
-ent-CrateTechBoardRandom-desc = Surplus boards from somewhere.
+ent-CrateTechBoardRandom-name = излишки досок
+ent-CrateTechBoardRandom-desc = Излишки досок откуда-то.
 
-ent-CrateAirGrenade-name = air grenade crate
-ent-CrateAirGrenade-desc = A crate containing 3 air grenades.
+ent-CrateAirGrenade-name = ящик с воздушной гранатой
+ent-CrateAirGrenade-desc = Ящик с тремя воздушными гранатами.
 

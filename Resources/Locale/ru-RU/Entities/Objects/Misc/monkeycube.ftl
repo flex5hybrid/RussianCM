@@ -1,23 +1,23 @@
-ent-MonkeyCubeBox-name = monkey cube box
-ent-MonkeyCubeBox-desc = Drymate brand monkey cubes. Just add water!
+ent-MonkeyCubeBox-name = коробка для кубиков обезьяны
+ent-MonkeyCubeBox-desc = Кубики обезьянки торговой марки Drymate. Просто добавьте воды!
 
-ent-MonkeyCubeWrapped-name = monkey cube
-ent-MonkeyCubeWrapped-desc = Unwrap this to get a monkey cube.
+ent-MonkeyCubeWrapped-name = обезьяний куб
+ent-MonkeyCubeWrapped-desc = Разверните это, чтобы получить кубик обезьяны.
 
-ent-KoboldCubeBox-name = kobold cube box
-ent-KoboldCubeBox-desc = Condensed kobolds in a cube. Just add water!
+ent-KoboldCubeBox-name = коробка для кубиков кобольда
+ent-KoboldCubeBox-desc = Конденсированные кобольды в кубе. Просто добавьте воды!
 
-ent-VariantCubeBox-name = variant cube box
-ent-VariantCubeBox-desc = Both kobold cubes and monkey cubes. Just add water!
+ent-VariantCubeBox-name = вариант коробки для кубиков
+ent-VariantCubeBox-desc = И кубики кобольдов, и кубики обезьян. Просто добавьте воды!
 
-ent-KoboldCubeWrapped-name = kobold cube
-ent-KoboldCubeWrapped-desc = Unwrap this to get a kobold cube.
+ent-KoboldCubeWrapped-name = кобольд куб
+ent-KoboldCubeWrapped-desc = Разверните это, чтобы получить куб кобольда.
 
-ent-SyndicateSpongeBox-name = monkey cube box
-ent-SyndicateSpongeBox-desc = Drymate brand monkey cubes. Just add water!
+ent-SyndicateSpongeBox-name = коробка для кубиков обезьяны
+ent-SyndicateSpongeBox-desc = Кубики обезьянки торговой марки Drymate. Просто добавьте воды!
 
-ent-SyndicateSpongeWrapped-name = monkey cube
-ent-SyndicateSpongeWrapped-desc = Unwrap this to get a monkey cube.
+ent-SyndicateSpongeWrapped-name = обезьяний куб
+ent-SyndicateSpongeWrapped-desc = Разверните это, чтобы получить кубик обезьяны.
 
-ent-BaseWrappedCube-name = item
+ent-BaseWrappedCube-name = элемент
 

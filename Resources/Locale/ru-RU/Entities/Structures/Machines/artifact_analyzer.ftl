@@ -1,6 +1,6 @@
-ent-MachineArtifactAnalyzer-name = artifact analyzer
-ent-MachineArtifactAnalyzer-desc = A platform capable of performing analysis on various types of artifacts.
+ent-MachineArtifactAnalyzer-name = анализатор артефактов
+ent-MachineArtifactAnalyzer-desc = Платформа, способная выполнять анализ различных типов артефактов.
 
-ent-MachineArtifactCrusher-name = artifact crusher
-ent-MachineArtifactCrusher-desc = Best not to let your fingers get stuck...
+ent-MachineArtifactCrusher-name = дробилка артефактов
+ent-MachineArtifactCrusher-desc = Лучше не застревать пальцами...
 

@@ -1,15 +1,15 @@
-ent-SignalButtonExt1-name = exterior button 1
-ent-SignalButtonExt1-desc = It's a button for activating something.
+ent-SignalButtonExt1-name = внешняя кнопка 1
+ent-SignalButtonExt1-desc = Это кнопка для активации чего-либо.
 
-ent-SignalButtonExt2-name = exterior button 2
-ent-SignalButtonExt2-desc = It's a button for activating something.
+ent-SignalButtonExt2-name = внешняя кнопка 2
+ent-SignalButtonExt2-desc = Это кнопка для активации чего-либо.
 
-ent-SignalButtonExt3-name = exterior button 3
-ent-SignalButtonExt3-desc = It's a button for activating something.
+ent-SignalButtonExt3-name = внешняя кнопка 3
+ent-SignalButtonExt3-desc = Это кнопка для активации чего-либо.
 
-ent-SignalButtonBridge-name = bridge windows button
-ent-SignalButtonBridge-desc = It's a button for activating something.
+ent-SignalButtonBridge-name = кнопка окна моста
+ent-SignalButtonBridge-desc = Это кнопка для активации чего-либо.
 
-ent-SignalButtonWindows-name = exterior windows button
-ent-SignalButtonWindows-desc = It's a button for activating something.
+ent-SignalButtonWindows-name = кнопка наружных окон
+ent-SignalButtonWindows-desc = Это кнопка для активации чего-либо.
 

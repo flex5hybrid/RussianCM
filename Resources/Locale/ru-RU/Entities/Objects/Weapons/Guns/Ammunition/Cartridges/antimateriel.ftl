@@ -1,2 +1,2 @@
-ent-CartridgeAntiMateriel-name = cartridge (.60 anti-materiel)
+ent-CartridgeAntiMateriel-name = патрон (противоматериальный .60)
 

@@ -1,14 +1,14 @@
-ent-BaseMagazineBoxPistol-name = ammunition box (.35 auto)
+ent-BaseMagazineBoxPistol-name = ящик для боеприпасов (автомат .35)
 
-ent-MagazineBoxPistol-name = ammunition box (.35 auto)
-ent-MagazineBoxPistol-desc = A cardboard box of .35 auto rounds. Intended to hold general-purpose kinetic ammunition.
+ent-MagazineBoxPistol-name = ящик для боеприпасов (автомат .35)
+ent-MagazineBoxPistol-desc = Картонная коробка с автопатронами .35. Предназначен для хранения кинетических боеприпасов общего назначения.
 
-ent-MagazineBoxPistolPractice-name = ammunition box (.35 auto practice)
-ent-MagazineBoxPistolPractice-desc = A cardboard box of .35 auto rounds. Intended to hold non-harmful chalk ammunition.
+ent-MagazineBoxPistolPractice-name = ящик для боеприпасов (автоматическая практика .35)
+ent-MagazineBoxPistolPractice-desc = Картонная коробка с автопатронами .35. Предназначен для хранения неопасных меловых боеприпасов.
 
-ent-MagazineBoxPistolIncendiary-name = ammunition box (.35 auto incendiary)
-ent-MagazineBoxPistolIncendiary-desc = A cardboard box of .35 auto rounds. Intended to hold self-igniting incendiary ammunition.
+ent-MagazineBoxPistolIncendiary-name = ящик для боеприпасов (автозажигательный .35)
+ent-MagazineBoxPistolIncendiary-desc = Картонная коробка с автопатронами .35. Предназначен для хранения самовоспламеняющихся боеприпасов.
 
-ent-MagazineBoxPistolUranium-name = ammunition box (.35 auto uranium)
-ent-MagazineBoxPistolUranium-desc = A cardboard box of .35 auto rounds. Intended to hold exotic uranium-core ammunition.
+ent-MagazineBoxPistolUranium-name = ящик для боеприпасов (.35 авто уран)
+ent-MagazineBoxPistolUranium-desc = Картонная коробка с автопатронами .35. Предназначен для хранения экзотических боеприпасов с урановым сердечником.
 

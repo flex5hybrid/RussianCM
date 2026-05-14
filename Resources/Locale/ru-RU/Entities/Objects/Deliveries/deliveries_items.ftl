@@ -1,3 +1,3 @@
-ent-MailSpamLetter-name = spam letter
-ent-MailSpamLetter-desc = Even space isn't safe from junk mail.
+ent-MailSpamLetter-name = спам-письмо
+ent-MailSpamLetter-desc = Даже космос не застрахован от нежелательной почты.
 

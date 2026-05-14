@@ -1,9 +1,9 @@
-ent-Memorial-name = memorial
-ent-Memorial-desc = Commemorating something.
+ent-Memorial-name = мемориал
+ent-Memorial-desc = В память о чем-либо.
 
-ent-SS13Memorial-name = tomb of the unknown employee
-ent-SS13Memorial-desc = Here rests an unknown employee Unknown by name or rank Whose acts will not be forgotten
+ent-SS13Memorial-name = могила неизвестного сотрудника
+ent-SS13Memorial-desc = Здесь покоится неизвестный сотрудник Неизвестный по имени и званию, чьи деяния не будут забыты
 
-ent-Monolith-name = monolith
-ent-Monolith-desc = Holy shit modern art. I bet it's worth a fortune.
+ent-Monolith-name = монолит
+ent-Monolith-desc = Черт возьми, современное искусство. Могу поспорить, это стоит целое состояние.
 

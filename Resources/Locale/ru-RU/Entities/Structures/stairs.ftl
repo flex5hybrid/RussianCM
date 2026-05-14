@@ -1,24 +1,24 @@
-ent-Stairs-name = stairs
-ent-Stairs-desc = The greatest invention since rocket-propelled grenades.
+ent-Stairs-name = лестница
+ent-Stairs-desc = Величайшее изобретение со времен реактивных гранат.
 
-ent-StairStage-name = stairs
-ent-StairStage-desc = The greatest invention since rocket-propelled grenades.
+ent-StairStage-name = лестница
+ent-StairStage-desc = Величайшее изобретение со времен реактивных гранат.
 
-ent-StairWhite-name = stairs
-ent-StairWhite-desc = The greatest invention since rocket-propelled grenades.
+ent-StairWhite-name = лестница
+ent-StairWhite-desc = Величайшее изобретение со времен реактивных гранат.
 
-ent-StairStageWhite-name = stairs
-ent-StairStageWhite-desc = The greatest invention since rocket-propelled grenades.
+ent-StairStageWhite-name = лестница
+ent-StairStageWhite-desc = Величайшее изобретение со времен реактивных гранат.
 
-ent-StairDark-name = stairs
-ent-StairDark-desc = The greatest invention since rocket-propelled grenades.
+ent-StairDark-name = лестница
+ent-StairDark-desc = Величайшее изобретение со времен реактивных гранат.
 
-ent-StairStageDark-name = stairs
-ent-StairStageDark-desc = The greatest invention since rocket-propelled grenades.
+ent-StairStageDark-name = лестница
+ent-StairStageDark-desc = Величайшее изобретение со времен реактивных гранат.
 
-ent-StairWood-name = stairs
-ent-StairWood-desc = The greatest invention since rocket-propelled grenades.
+ent-StairWood-name = лестница
+ent-StairWood-desc = Величайшее изобретение со времен реактивных гранат.
 
-ent-StairStageWood-name = stairs
-ent-StairStageWood-desc = The greatest invention since rocket-propelled grenades.
+ent-StairStageWood-name = лестница
+ent-StairStageWood-desc = Величайшее изобретение со времен реактивных гранат.
 

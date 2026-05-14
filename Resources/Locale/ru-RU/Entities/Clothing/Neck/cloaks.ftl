@@ -1,81 +1,81 @@
-ent-ClothingNeckCloakCentcom-name = central commander's cloak
-ent-ClothingNeckCloakCentcom-desc = A pompous and elite green cloak with a nice gold trim, tailored specifically to the Central Commander. It's so heavy, the gold trim might be real.
+ent-ClothingNeckCloakCentcom-name = плащ центрального командира
+ent-ClothingNeckCloakCentcom-desc = Помпезный элитный зеленый плащ с красивой золотой отделкой, сшитый специально для Главнокомандующего. Он такой тяжелый, что золотая отделка может быть настоящей.
 
-ent-ClothingNeckCloakCap-name = captain's cloak
-ent-ClothingNeckCloakCap-desc = A pompous and comfy blue cloak with a nice gold trim, while not particularly valuable as your other possessions, it sure is fancy.
+ent-ClothingNeckCloakCap-name = капитанский плащ
+ent-ClothingNeckCloakCap-desc = Помпезный и удобный синий плащ с красивой золотой отделкой, хоть и не такой ценный, как другие ваши вещи, но, безусловно, изысканный.
 
-ent-ClothingNeckCloakHos-name = head of security's cloak
-ent-ClothingNeckCloakHos-desc = An exquisite dark and red cloak fitting for those who can assert dominance over wrongdoers. Take a stab at being civil in prosecution!
+ent-ClothingNeckCloakHos-name = плащ начальника службы безопасности
+ent-ClothingNeckCloakHos-desc = Изысканный темно-красный плащ подойдет тем, кто способен утвердить власть над злодеями. Постарайтесь проявить гражданскую позицию в судебном преследовании!
 
-ent-ClothingNeckCloakCe-name = chief engineer's cloak
-ent-ClothingNeckCloakCe-desc = A dark green cloak with light blue ornaments, given to those who proved themselves to master the precise art of engineering.
+ent-ClothingNeckCloakCe-name = плащ главного инженера
+ent-ClothingNeckCloakCe-desc = Темно-зеленый плащ с голубым орнаментом, вручаемый тем, кто доказал, что владеет точным инженерным искусством.
 
-ent-ClothingCloakCmo-name = chief medical officer's cloak
-ent-ClothingCloakCmo-desc = A sterile blue cloak with a green cross, radiating with a sense of duty and willingness to help others.
+ent-ClothingCloakCmo-name = плащ главного врача
+ent-ClothingCloakCmo-desc = Стерильный синий плащ с зеленым крестом, излучающий чувство долга и готовность помочь другим.
 
-ent-ClothingNeckCloakRd-name = research director's cloak
-ent-ClothingNeckCloakRd-desc = A white cloak with violet stripes, showing your status as the arbiter of cutting-edge technology.
+ent-ClothingNeckCloakRd-name = плащ директора по исследованиям
+ent-ClothingNeckCloakRd-desc = Белый плащ с фиолетовыми полосками, демонстрирующий ваш статус арбитра передовых технологий.
 
-ent-ClothingNeckCloakQm-name = quartermaster's cloak
-ent-ClothingNeckCloakQm-desc = A strong brown cloak with a reflective stripe, while not as fancy as others, it does show your managing skills.
+ent-ClothingNeckCloakQm-name = плащ интенданта
+ent-ClothingNeckCloakQm-desc = Прочный коричневый плащ со светоотражающей полосой, хоть и не такой нарядный, как другие, но демонстрирует ваши управленческие навыки.
 
-ent-ClothingNeckCloakHop-name = head of personnel's cloak
-ent-ClothingNeckCloakHop-desc = A blue cloak with red shoulders and gold buttons, proving you are the gatekeeper to any airlock on the station.
+ent-ClothingNeckCloakHop-name = плащ начальника штаба
+ent-ClothingNeckCloakHop-desc = Синий плащ с красными плечами и золотыми пуговицами, доказывающий, что вы являетесь стражем любого шлюза на станции.
 
-ent-ClothingNeckCloakHerald-name = herald's cloak
-ent-ClothingNeckCloakHerald-desc = An evil-looking red cloak with spikes on its shoulders.
+ent-ClothingNeckCloakHerald-name = плащ герольда
+ent-ClothingNeckCloakHerald-desc = Зловещий красный плащ с шипами на плечах.
 
-ent-ClothingNeckCloakNanotrasen-name = nanotrasen cloak
-ent-ClothingNeckCloakNanotrasen-desc = A stately blue cloak to represent NanoTrasen.
+ent-ClothingNeckCloakNanotrasen-name = нанотрасен плащ
+ent-ClothingNeckCloakNanotrasen-desc = Величественный синий плащ, символизирующий НаноТрасен.
 
-ent-ClothingNeckCloakCapFormal-name = captain's formal cloak
-ent-ClothingNeckCloakCapFormal-desc = A lavish and decorated cloak for special occasions.
+ent-ClothingNeckCloakCapFormal-name = формальный плащ капитана
+ent-ClothingNeckCloakCapFormal-desc = Роскошный и декорированный плащ для особых случаев.
 
-ent-ClothingNeckCloakAdmin-name = weh cloak
-ent-ClothingNeckCloakAdmin-desc = Weh!
+ent-ClothingNeckCloakAdmin-name = мы плащ
+ent-ClothingNeckCloakAdmin-desc = Ух!
 
-ent-ClothingNeckCloakSalvagerSupreme-name = supereme salvager's cloak
-ent-ClothingNeckCloakSalvagerSupreme-desc = Worn by the most skilled salvagers, for one who has mastered space and made the mining asteroid his domain. They don't just hand these things out, y'know?
+ent-ClothingNeckCloakSalvagerSupreme-name = плащ спасателя суперэме
+ent-ClothingNeckCloakSalvagerSupreme-desc = Носится самыми опытными спасателями для тех, кто освоил космос и сделал горнодобывающий астероид своей вотчиной. Они не раздают эти вещи просто так, понимаешь?
 
-ent-ClothingNeckCloakTrans-name = vampire cloak
-ent-ClothingNeckCloakTrans-desc = Worn by high ranking vampires of the transylvanian society of vampires.
+ent-ClothingNeckCloakTrans-name = плащ вампира
+ent-ClothingNeckCloakTrans-desc = Носят высокопоставленные вампиры Трансильванского общества вампиров.
 
-ent-ClothingNeckCloakGoliathCloak-name = goliath cloak
-ent-ClothingNeckCloakGoliathCloak-desc = A cloak made from the hide of resilient fauna from a distant planet, though its protective value has faded with its age.
+ent-ClothingNeckCloakGoliathCloak-name = плащ голиафа
+ent-ClothingNeckCloakGoliathCloak-desc = Плащ, сделанный из шкуры выносливой фауны с далекой планеты, хотя его защитная ценность с возрастом исчезла.
 
-ent-ClothingNeckCloakPirateCap-name = pirate captain cloak
-ent-ClothingNeckCloakPirateCap-desc = A rather fetching black pirate cloak, complete with skull motif.
+ent-ClothingNeckCloakPirateCap-name = плащ пиратского капитана
+ent-ClothingNeckCloakPirateCap-desc = Довольно привлекательный черный пиратский плащ с изображением черепа.
 
-ent-ClothingNeckCloakMoth-name = moth cloak
-ent-ClothingNeckCloakMoth-desc = A cloak in the form of moth wings is an unusual and original element of the wardrobe that can attract the attention of others. It is made of a thin fabric imitating moth wings, with soft and fluffy edges. The raincoat is fastened around the neck with Velcro, and has a hood in the shape of a moths head.
+ent-ClothingNeckCloakMoth-name = плащ от моли
+ent-ClothingNeckCloakMoth-desc = Плащ в виде крыльев мотылька – необычный и оригинальный элемент гардероба, способный привлечь внимание окружающих. Он изготовлен из тонкой ткани, имитирующей крылья мотылька, с мягкими и пушистыми краями. Плащ застегивается на шее на липучке, имеет капюшон в форме головы мотылька.
 
-ent-ClothingNeckCloakVoid-name = void cloak
-ent-ClothingNeckCloakVoid-desc = A cloak of darkness. For those who have gone to the dark side of the force.
+ent-ClothingNeckCloakVoid-name = Пустотный плащ
+ent-ClothingNeckCloakVoid-desc = Плащ тьмы. Для тех, кто перешел на темную сторону силы.
 
-ent-ClothingNeckCloakAce-name = pilot's cloak
-ent-ClothingNeckCloakAce-desc = Cloak awarded to Nanotrasen's finest space aces.
+ent-ClothingNeckCloakAce-name = плащ пилота
+ent-ClothingNeckCloakAce-desc = Плащ, которым награждаются лучшие космические асы Нанотрасена.
 
-ent-ClothingNeckCloakAro-name = werewolf cloak
-ent-ClothingNeckCloakAro-desc = This cloak lets others know you're a lone wolf.
+ent-ClothingNeckCloakAro-name = плащ оборотня
+ent-ClothingNeckCloakAro-desc = Этот плащ позволит другим узнать, что вы одинокий волк.
 
-ent-ClothingNeckCloakAroace-name = aeropilot's cloak
-ent-ClothingNeckCloakAroace-desc = Cloak awarded to Nanotrasen's finest pilots on planets with inhabitable atmospheres.
+ent-ClothingNeckCloakAroace-name = плащ аэропилота
+ent-ClothingNeckCloakAroace-desc = Плащ, которым награждаются лучшие пилоты Нанотрасена на планетах с обитаемой атмосферой.
 
-ent-ClothingNeckCloakBi-name = poison cloak
-ent-ClothingNeckCloakBi-desc = The purple color is a clear indicator you are poisonous.
+ent-ClothingNeckCloakBi-name = ядовитый плащ
+ent-ClothingNeckCloakBi-desc = Фиолетовый цвет — явный признак того, что вы ядовиты.
 
-ent-ClothingNeckCloakIntersex-name = cyclops cloak
-ent-ClothingNeckCloakIntersex-desc = The circle on this cloak represents a cyclops' eye.
+ent-ClothingNeckCloakIntersex-name = плащ циклопа
+ent-ClothingNeckCloakIntersex-desc = Круг на этом плаще представляет собой глаз циклопа.
 
-ent-ClothingNeckCloakLesbian-name = poet cloak
-ent-ClothingNeckCloakLesbian-desc = This cloak belonged to an ancient poet, you forgot which one.
+ent-ClothingNeckCloakLesbian-name = поэт плащ
+ent-ClothingNeckCloakLesbian-desc = Этот плащ принадлежал древнему поэту, вы забыли какому.
 
-ent-ClothingNeckCloakGay-name = multi-level marketing cloak
-ent-ClothingNeckCloakGay-desc = This cloak is highly sought after in the Nanotrasen Marketing Offices.
+ent-ClothingNeckCloakGay-name = многоуровневый маркетинговый плащ
+ent-ClothingNeckCloakGay-desc = Этот плащ пользуется большим спросом в маркетинговых офисах Nanotrasen.
 
-ent-ClothingNeckCloakEnby-name = treasure hunter cloak
-ent-ClothingNeckCloakEnby-desc = This cloak belonged to a greedy treasure hunter.
+ent-ClothingNeckCloakEnby-name = плащ охотника за сокровищами
+ent-ClothingNeckCloakEnby-desc = Этот плащ принадлежал жадному охотнику за сокровищами.
 
-ent-ClothingNeckCloakPan-name = chef's cloak
-ent-ClothingNeckCloakPan-desc = Meant to be worn alongside a frying pan.
+ent-ClothingNeckCloakPan-name = плащ повара
+ent-ClothingNeckCloakPan-desc = Предназначен для ношения рядом со сковородой.
 

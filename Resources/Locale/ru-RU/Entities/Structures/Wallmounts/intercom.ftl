@@ -1,45 +1,45 @@
-ent-BaseIntercom-name = intercom
-ent-BaseIntercom-desc = An intercom. For when the station just needs to know something.
+ent-BaseIntercom-name = домофон
+ent-BaseIntercom-desc = Домофон. На тот случай, когда станции просто нужно что-то узнать.
 
-ent-IntercomAssembly-name = intercom assembly
-ent-IntercomAssembly-desc = An intercom. It doesn't seem very helpful right now.
+ent-IntercomAssembly-name = домофон в сборе
+ent-IntercomAssembly-desc = Домофон. Сейчас это кажется не очень полезным.
 
-ent-IntercomCommand-name = intercom
-ent-IntercomCommand-desc = An intercom. It's been reinforced with metal.
+ent-IntercomCommand-name = домофон
+ent-IntercomCommand-desc = Домофон. Он усилен металлом.
 
-ent-IntercomSecurity-name = intercom
-ent-IntercomSecurity-desc = An intercom. It's been reinforced with metal from security helmets, making it a bitch-and-a-half to open.
+ent-IntercomSecurity-name = домофон
+ent-IntercomSecurity-desc = Домофон. Он усилен металлом от защитных касок, поэтому открыть его очень сложно.
 
-ent-IntercomConstructed-name = intercom
-ent-IntercomConstructed-desc = An intercom. For when the station just needs to know something.
+ent-IntercomConstructed-name = домофон
+ent-IntercomConstructed-desc = Домофон. На тот случай, когда станции просто нужно что-то узнать.
 
-ent-Intercom-name = intercom
-ent-Intercom-desc = An intercom. For when the station just needs to know something.
+ent-Intercom-name = домофон
+ent-Intercom-desc = Домофон. На тот случай, когда станции просто нужно что-то узнать.
 
-ent-BaseIntercomSecure-name = intercom
-ent-BaseIntercomSecure-desc = An intercom. For when the station just needs to know something.
+ent-BaseIntercomSecure-name = домофон
+ent-BaseIntercomSecure-desc = Домофон. На тот случай, когда станции просто нужно что-то узнать.
 
-ent-IntercomCommon-name = intercom
-ent-IntercomCommon-desc = An intercom. For when the station just needs to know something.
+ent-IntercomCommon-name = домофон
+ent-IntercomCommon-desc = Домофон. На тот случай, когда станции просто нужно что-то узнать.
 
-ent-IntercomEngineering-name = intercom
-ent-IntercomEngineering-desc = An intercom. For when the station just needs to know something.
+ent-IntercomEngineering-name = домофон
+ent-IntercomEngineering-desc = Домофон. На тот случай, когда станции просто нужно что-то узнать.
 
-ent-IntercomMedical-name = intercom
-ent-IntercomMedical-desc = An intercom. For when the station just needs to know something.
+ent-IntercomMedical-name = домофон
+ent-IntercomMedical-desc = Домофон. На тот случай, когда станции просто нужно что-то узнать.
 
-ent-IntercomScience-name = intercom
-ent-IntercomScience-desc = An intercom. For when the station just needs to know something.
+ent-IntercomScience-name = домофон
+ent-IntercomScience-desc = Домофон. На тот случай, когда станции просто нужно что-то узнать.
 
-ent-IntercomService-name = intercom
-ent-IntercomService-desc = An intercom. For when the station just needs to know something.
+ent-IntercomService-name = домофон
+ent-IntercomService-desc = Домофон. На тот случай, когда станции просто нужно что-то узнать.
 
-ent-IntercomSupply-name = intercom
-ent-IntercomSupply-desc = An intercom. For when the station just needs to know something.
+ent-IntercomSupply-name = домофон
+ent-IntercomSupply-desc = Домофон. На тот случай, когда станции просто нужно что-то узнать.
 
-ent-IntercomAll-name = intercom
-ent-IntercomAll-desc = An intercom. For when the station just needs to know something.
+ent-IntercomAll-name = домофон
+ent-IntercomAll-desc = Домофон. На тот случай, когда станции просто нужно что-то узнать.
 
-ent-IntercomFreelance-name = intercom
-ent-IntercomFreelance-desc = An intercom. For when the station just needs to know something.
+ent-IntercomFreelance-name = домофон
+ent-IntercomFreelance-desc = Домофон. На тот случай, когда станции просто нужно что-то узнать.
 

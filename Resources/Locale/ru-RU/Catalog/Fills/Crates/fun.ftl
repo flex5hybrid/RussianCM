@@ -1,72 +1,72 @@
-ent-CratePlants-name = plant crate
-ent-CratePlants-desc = A variety pack of potted plants to spruce up your station!
+ent-CratePlants-name = ящик для растений
+ent-CratePlants-desc = Разнообразный набор горшечных растений, которые украсят вашу станцию!
 
-ent-CrateFunPlushie-name = plushie crate
-ent-CrateFunPlushie-desc = A buncha soft plushies. Throw them around and then wonder how you're gonna explain this purchase to NT.
+ent-CrateFunPlushie-name = плюшевый ящик
+ent-CrateFunPlushie-desc = Куча мягких плюшек. Разбросайте их повсюду, а затем задайтесь вопросом, как вы собираетесь объяснить эту покупку NT.
 
-ent-CrateFunLizardPlushieBulk-name = bulk lizard plushie crate
-ent-CrateFunLizardPlushieBulk-desc = A buncha soft lizard plushies. Throw them around and then wonder how you're gonna explain this purchase to NT.
+ent-CrateFunLizardPlushieBulk-name = объемный плюшевый ящик для ящерицы
+ent-CrateFunLizardPlushieBulk-desc = Множество мягких плюшевых ящериц. Разбросайте их повсюду, а затем задайтесь вопросом, как вы собираетесь объяснить эту покупку NT.
 
-ent-CrateFunSharkPlushieBulk-name = bulk soft toy shark crate
-ent-CrateFunSharkPlushieBulk-desc = A crate filled with a variety of everyone's favorite finned friend. Rawr!
+ent-CrateFunSharkPlushieBulk-name = объемный ящик для мягких игрушек в виде акулы
+ent-CrateFunSharkPlushieBulk-desc = Ящик, наполненный множеством любимых всеми плавниковых друзей. Рорр!
 
-ent-CrateFunInstrumentsVariety-name = variety instrument collection
-ent-CrateFunInstrumentsVariety-desc = Get your sad station movin' and groovin' with this catch-all variety pack! Contains seven different instruments.
+ent-CrateFunInstrumentsVariety-name = коллекция эстрадных инструментов
+ent-CrateFunInstrumentsVariety-desc = Заставьте свою грустную станцию ​​двигаться и веселиться с помощью этого универсального разнообразного набора! Содержит семь различных инструментов.
 
-ent-CrateFunInstrumentsBrass-name = brass instrument ensemble crate
-ent-CrateFunInstrumentsBrass-desc = Bring some jazz to the station with the brass ensemble. Contains a variety of brass instruments for the whole station to play.
+ent-CrateFunInstrumentsBrass-name = ящик для ансамбля духовых инструментов
+ent-CrateFunInstrumentsBrass-desc = Принесите на станцию ​​немного джаза вместе с духовым ансамблем. Содержит множество духовых инструментов, на которых может играть вся станция.
 
-ent-CrateFunInstrumentsString-name = string instrument ensemble crate
-ent-CrateFunInstrumentsString-desc = Pluck or pick, slap or shred! Play a smooth melody or melt peoples' faces with this package of stringed instruments.
+ent-CrateFunInstrumentsString-name = ящик для ансамбля струнных инструментов
+ent-CrateFunInstrumentsString-desc = Вырви или выдерни, шлепни или порви! Сыграйте плавную мелодию или растопите лица людей с помощью этого набора струнных инструментов.
 
-ent-CrateFunInstrumentsWoodwind-name = woodwind instrument ensemble crate
-ent-CrateFunInstrumentsWoodwind-desc = If atmos is good at their job, use air to play music with these woodwind instruments! Real wood not guaranteed with every item.
+ent-CrateFunInstrumentsWoodwind-name = ящик для ансамбля деревянных духовых инструментов
+ent-CrateFunInstrumentsWoodwind-desc = Если Atmos хорошо справляется со своей работой, используйте воздух для воспроизведения музыки на этих деревянных духовых инструментах! Настоящее дерево не гарантируется для каждого предмета.
 
-ent-CrateFunInstrumentsKeyedPercussion-name = keyed/percussion instrument ensemble crate
-ent-CrateFunInstrumentsKeyedPercussion-desc = Hit some keys with some sticks or your hands, with this Keyed and Percussion instrument ensemble crate.
+ent-CrateFunInstrumentsKeyedPercussion-name = Ящик для ансамбля клавишных/ударных инструментов
+ent-CrateFunInstrumentsKeyedPercussion-desc = Ударьте по клавишам палочками или руками в этом ящике для ансамбля клавишных и ударных инструментов.
 
-ent-CrateFunInstrumentsSpecial-name = special instrument collector's crate
-ent-CrateFunInstrumentsSpecial-desc = Create some noise with this special collection of arguably-instruments! Centcomm is not responsible for any trauma caused by the contents.
+ent-CrateFunInstrumentsSpecial-name = ящик для коллекционера специальных инструментов
+ent-CrateFunInstrumentsSpecial-desc = Создайте немного шума с помощью этой специальной коллекции спорных инструментов! Centcomm не несет ответственности за любые травмы, вызванные содержанием.
 
-ent-CrateFunArtSupplies-name = art supplies
-ent-CrateFunArtSupplies-desc = Make some happy little accidents with lots of crayons!
+ent-CrateFunArtSupplies-name = художественные принадлежности
+ent-CrateFunArtSupplies-desc = Устройте несколько счастливых маленьких происшествий с помощью большого количества мелков!
 
-ent-CrateFunBoardGames-name = board game crate
-ent-CrateFunBoardGames-desc = Game nights have been proven to either decrease boredom or increase murderous rage depending on the game.
+ent-CrateFunBoardGames-name = ящик для настольных игр
+ent-CrateFunBoardGames-desc = Доказано, что игровые вечера либо уменьшают скуку, либо усиливают убийственную ярость в зависимости от игры.
 
-ent-CrateFunSadTromboneImplants-name = sad trombone implants
-ent-CrateFunSadTromboneImplants-desc = Death's never been so fun before! Implant these to make dying a bit more happy.
+ent-CrateFunSadTromboneImplants-name = грустные имплантаты тромбона
+ent-CrateFunSadTromboneImplants-desc = Смерть еще никогда не была такой веселой! Имплантируйте их, чтобы сделать смерть более счастливой.
 
-ent-CrateFunLightImplants-name = light implants
-ent-CrateFunLightImplants-desc = Light up your skin with these implants!
+ent-CrateFunLightImplants-name = легкие имплантаты
+ent-CrateFunLightImplants-desc = Осветите свою кожу с помощью этих имплантатов!
 
-ent-CrateFunParty-name = party crate
-ent-CrateFunParty-desc = An entire party just waiting for you to open it. Includes party favors, party beverages, and even a cake.
+ent-CrateFunParty-name = ящик для вечеринок
+ent-CrateFunParty-desc = Вся компания ждет, пока вы откроете ее. Включает в себя праздничные сувениры, праздничные напитки и даже торт.
 
-ent-CrateFunWaterGuns-name = water gun crate
-ent-CrateFunWaterGuns-desc = A summer special with a variety of brightly colored water guns. Water not included.
+ent-CrateFunWaterGuns-name = ящик для водяного пистолета
+ent-CrateFunWaterGuns-desc = Летнее предложение с разнообразными яркими водяными пистолетами. Вода не включена.
 
-ent-CrateFunFoamGuns-name = Foam Force crate
-ent-CrateFunFoamGuns-desc = Contains four Foam Force rifles, some grenades, and extra ammo. It's [REDACTED] or nothing!
+ent-CrateFunFoamGuns-name = Ящик Foam Force
+ent-CrateFunFoamGuns-desc = Содержит четыре винтовки Foam Force, несколько гранат и дополнительные боеприпасы. Это [REDACTED] или ничего!
 
-ent-CrateFunBoxing-name = boxing crate
-ent-CrateFunBoxing-desc = Want to set up an underground fight club or host a tournament amongst station crew? This crate is for you!
+ent-CrateFunBoxing-name = ящик для бокса
+ent-CrateFunBoxing-desc = Хотите создать подпольный бойцовский клуб или провести турнир среди сотрудников станции? Этот ящик для вас!
 
-ent-CrateFunBikeHornImplants-name = bike horn implants
-ent-CrateFunBikeHornImplants-desc = A thousand honks a day keeps security officers away!
+ent-CrateFunBikeHornImplants-name = имплантаты велосипедного рога
+ent-CrateFunBikeHornImplants-desc = Тысяча гудков в день отпугивает сотрудников службы безопасности!
 
-ent-CrateFunMysteryFigurines-name = mystery figure crate
-ent-CrateFunMysteryFigurines-desc = A collection of 10 Mystery Figurine boxes. Duplicates non refundable.
+ent-CrateFunMysteryFigurines-name = ящик с загадочными фигурками
+ent-CrateFunMysteryFigurines-desc = Коллекция из 10 коробок с загадочными фигурками. Дубликаты возврату не подлежат.
 
-ent-CrateFunDartsSet-name = dartboard box set
-ent-CrateFunDartsSet-desc = A box with everything you need for a fun game of darts.
+ent-CrateFunDartsSet-name = набор коробок для дартса
+ent-CrateFunDartsSet-desc = Коробка со всем необходимым для веселой игры в дартс.
 
-ent-CrateFunScurret-name = hydrated scurret
-ent-CrateFunScurret-desc = Wait, what?
+ent-CrateFunScurret-name = гидратированная скаррет
+ent-CrateFunScurret-desc = Подожди, что?
 
-ent-CrateFunPirate-name = pirate chest
-ent-CrateFunPirate-desc = A space pirate chest, not for station lubbers.
+ent-CrateFunPirate-name = пиратский сундук
+ent-CrateFunPirate-desc = Сундук космического пирата, не для станционных фанатов.
 
-ent-CrateFunToyBox-name = toy box
-ent-CrateFunToyBox-desc = A box overflowing with fun.
+ent-CrateFunToyBox-name = ящик для игрушек
+ent-CrateFunToyBox-desc = Коробка, полная веселья.
 

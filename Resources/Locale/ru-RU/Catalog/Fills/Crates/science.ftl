@@ -1,6 +1,6 @@
-ent-CrateScienceBiosuit-name = scientist bio suit crate
-ent-CrateScienceBiosuit-desc = Contains 2 biohazard suits to ensure that no disease will distract you from doing science. Requires Science access to open.
+ent-CrateScienceBiosuit-name = ящик биологического костюма учёного
+ent-CrateScienceBiosuit-desc = Содержит 2 костюма биологической защиты, которые гарантируют, что никакая болезнь не отвлечет вас от занятий наукой. Для открытия требуется доступ к науке.
 
-ent-CrateCrewMonitoring-name = crew monitoring crate
-ent-CrateCrewMonitoring-desc = Contains a flatpack of a crew monitoring server and a few crew monitoring computers. Requires Science access to open.
+ent-CrateCrewMonitoring-name = ящик для наблюдения за экипажем
+ent-CrateCrewMonitoring-desc = Содержит плоский пакет сервера мониторинга экипажа и несколько компьютеров для мониторинга экипажа. Для открытия требуется доступ к науке.
 

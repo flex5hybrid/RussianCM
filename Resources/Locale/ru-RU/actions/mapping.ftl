@@ -1,2 +1,2 @@
-ent-ActionMappingEraser-name = Erase Entity
+ent-ActionMappingEraser-name = Стереть объект
 

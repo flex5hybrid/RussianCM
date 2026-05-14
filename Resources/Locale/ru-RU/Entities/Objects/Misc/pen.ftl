@@ -1,27 +1,27 @@
-ent-Pen-name = pen
-ent-Pen-desc = A dark ink pen.
+ent-Pen-name = ручка
+ent-Pen-desc = Ручка с темными чернилами.
 
-ent-LuxuryPen-name = luxury pen
-ent-LuxuryPen-desc = A fancy and expensive pen that you only deserve to own if you're qualified to handle vast amounts of paperwork.
+ent-LuxuryPen-name = роскошная ручка
+ent-LuxuryPen-desc = Модная и дорогая ручка, которую вы заслуживаете только в том случае, если у вас есть квалификация для обработки огромного количества документов.
 
-ent-CyberPen-name = Cybersun pen
-ent-CyberPen-desc = A high-tech pen straight from Cybersun's legal department, capable of refracting hard-light at impossible angles through its diamond tip in order to write. So powerful, it's even able to rewrite officially stamped documents should the need arise.
+ent-CyberPen-name = Киберсан ручка
+ent-CyberPen-desc = Высокотехнологичная ручка прямо из юридического отдела Cybersun, способная преломлять жесткий свет под невозможными углами через свой алмазный наконечник, чтобы писать. Он настолько мощный, что в случае необходимости он даже способен переписать официально проштампованные документы.
 
-ent-PenCentcom-name = CentComm pen
-ent-PenCentcom-desc = In an attempt to keep up with the "power" of the cybersun bureaucracy, NT made a replica of cyber pen, in their corporate style.
+ent-PenCentcom-name = Ручка CentComm
+ent-PenCentcom-desc = Пытаясь не отставать от «власти» бюрократии CyberSun, NT создала копию киберручки в своем фирменном стиле.
 
-ent-PenCap-name = captain's fountain pen
-ent-PenCap-desc = A luxurious fountain pen for the captain of the station.
+ent-PenCap-name = капитанская авторучка
+ent-PenCap-desc = Роскошная авторучка для капитана станции.
 
-ent-PenHop-name = hop's fountain pen
-ent-PenHop-desc = A luxurious fountain pen for the hop of the station.
+ent-PenHop-name = авторучка Хопа
+ent-PenHop-desc = Роскошная перьевая ручка для прохожих на вокзале.
 
-ent-PenWiz-name = wizard's magical pen
-ent-PenWiz-desc = A luxurious fountain pen. Seems to have a magical crystal eraser.
+ent-PenWiz-name = волшебное перо волшебника
+ent-PenWiz-desc = Роскошная перьевая ручка. Кажется, у него есть волшебный кристаллический ластик.
 
-ent-PenEmbeddable-name = pen
-ent-PenEmbeddable-desc = A dark ink pen.
+ent-PenEmbeddable-name = ручка
+ent-PenEmbeddable-desc = Ручка с темными чернилами.
 
-ent-BaseAdvancedPen-name = pen
-ent-BaseAdvancedPen-desc = A dark ink pen.
+ent-BaseAdvancedPen-name = ручка
+ent-BaseAdvancedPen-desc = Ручка с темными чернилами.
 

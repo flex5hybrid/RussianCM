@@ -1,9 +1,9 @@
-ent-SpectralLocatorUnpowered-name = spectral locator
-ent-SpectralLocatorUnpowered-desc = Appears to be a modified anomaly locator. Seems very old.
+ent-SpectralLocatorUnpowered-name = спектральный локатор
+ent-SpectralLocatorUnpowered-desc = Похоже, это модифицированный локатор аномалий. Кажется очень старым.
 
-ent-SpectralLocator-name = spectral locator
-ent-SpectralLocator-desc = Appears to be a modified anomaly locator. Seems very old.
+ent-SpectralLocator-name = спектральный локатор
+ent-SpectralLocator-desc = Похоже, это модифицированный локатор аномалий. Кажется очень старым.
 
-ent-SpectralLocatorEmpty-name = spectral locator
-ent-SpectralLocatorEmpty-desc = Appears to be a modified anomaly locator. Seems very old.
+ent-SpectralLocatorEmpty-name = спектральный локатор
+ent-SpectralLocatorEmpty-desc = Похоже, это модифицированный локатор аномалий. Кажется очень старым.
 

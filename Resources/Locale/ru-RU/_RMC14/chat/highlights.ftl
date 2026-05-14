@@ -1,68 +1,68 @@
 # Auxiliary Support
-highlights-auxiliary-support-officer = Auxiliary Support Officer, "ASO", Auxiliary Support, "Intel", Flight Crew
-highlights-dropship-crew-chief = Dropship Crew Chief, "DCC", Alamo, Normandy, Flight Crew, Dropship, "Evac", Evacuation, Medevac, Fulton, "JTAC"
-highlights-dropship-pilot = Dropship Pilot, "DP", Pilot, Alamo, Flight Crew, Dropship, "Evac", Evacuation, Medevac, Fulton, "JTAC"
-highlights-gunship-pilot = Gunship Pilot, "GP", Pilot, Normandy, Flight Crew, Gunship, "CAS", Medevac, Fulton, "JTAC"
-highlights-intelligence-officer = Intelligence Officer, "IO", "Intel", Intelligence, Survivors
-highlights-senior-enlisted-advisor = Senior Enlisted Advisor, "SEA", New Recruit, E1, New Player, Training, Mentor
+highlights-auxiliary-support-officer = Офицер вспомогательной поддержки, «ASO», вспомогательная поддержка, «Интел», летный экипаж
+highlights-dropship-crew-chief = Начальник экипажа десантного корабля, «DCC», Аламо, Нормандия, летный экипаж, десантный корабль, «Эвакуация», эвакуация, медицинская эвакуация, Фултон, «JTAC»
+highlights-dropship-pilot = Пилот десантного корабля, «ДП», Пилот, Аламо, Летный экипаж, Десантный корабль, «Эвакуация», Эвакуация, Медицинская эвакуация, Фултон, «JTAC»
+highlights-gunship-pilot = Пилот боевого корабля, «GP», Пилот, Нормандия, Летный экипаж, Боевой корабль, «CAS», Медэвак, Фултон, «JTAC»
+highlights-intelligence-officer = Офицер разведки, «ИО», «Разведка», Разведка, Выжившие
+highlights-senior-enlisted-advisor = Старший рядовой советник, «SEA», новый рекрут, E1, новый игрок, обучение, наставник
 
 # Command
-highlights-commanding-officer = Commanding Officer, "CO", Major, Lieutenant Colonel, Colonel, Combat Information Center, "CIC", Command, Overwatch, "OW", Appeal, Queen, "OB", Coords, Coordinates, Supply, Loose, Burst, "FOB", Comms, Tacmap, Map, "Intel", Phone, "TECH REPORT", "SL", Commander
-highlights-executive-officer = Executive Officer, "XO", Captain, "Cap", Combat Information Center, "CIC", Command, Overwatch, "OW", Appeal, Queen, "OB", Coords, Coordinates, Supply, Loose, Burst, "FOB", Comms, Tacmap, Map, "Intel", Phone, "TECH REPORT", "SL", Commander
-highlights-staff-officer = Staff Officer, "SO", Combat Information Center, "CIC", Command, Overwatch, "OW", Appeal, Queen, "OB", Coords, Coordinates, Supply, Loose, Burst, "FOB", Comms, Tacmap, Map, Phone, "TECH REPORT", "SL", Commander
+highlights-commanding-officer = Командир, «CO», майор, подполковник, полковник, Центр боевой информации, «CIC», Командование, Надзор, «OW», Обращение, Королева, «OB», Координаты, Координаты, Снабжение, Свободный взрыв, «FOB», Связь, Такмап, Карта, «Разведка», Телефон, «ТЕХНИЧЕСКИЙ ОТЧЕТ», «SL», Командир
+highlights-executive-officer = Старший офицер, «XO», капитан, «Кепка», Центр боевой информации, «CIC», Командование, Надзор, «OW», Обращение, Королева, «OB», Координаты, Координаты, Снабжение, Свободный, Взрыв, «FOB», Связь, Tacmap, Карта, «Интел», Телефон, «ТЕХНИЧЕСКИЙ ОТЧЕТ», «SL», Командир
+highlights-staff-officer = Штабной офицер, «SO», Центр боевой информации, «CIC», Командование, Надзор, «OW», Обращение, Королева, «OB», Координаты, Координаты, Снабжение, Свободный, Взрыв, «FOB», Связь, Tacmap, Карта, Телефон, «ТЕХНИЧЕСКИЙ ОТЧЕТ», «SL», Командир
 
 # Requisitions
-highlights-logistics-officer = Logistics Officer, "LO", Requisitions, "Req", Command, Supply, "Drop", Crate, Budget, Ammo
-highlights-requisitions-technician = Requisitions Technician, Req Technician, Requisitions Tech, Req Tech, "RT", Requisitions, "Req", Supply, "Drop", Crate, Budget, Ammo
+highlights-logistics-officer = Офицер логистики, «ЛО», Реквизиции, «Требование», Командование, Снабжение, «Выброс», Ящик, Бюджет, Боеприпасы
+highlights-requisitions-technician = Техник по реквизициям, Техник по реквизициям, Технологии по реквизициям, Технологии по реквизициям, "RT", Реквизиты, "Требования", Припасы, "Добыча", Ящик, Бюджет, Боеприпасы
 
 # Engineering
-highlights-chief-engineer = Chief Engineer, "CE", Engineering, Engineer, "Engi", Command, "OB", "OT"
-highlights-maintenance-technician = Maintenance Technician, "MT", Engineering, Engineer, "Engi", "OB"
-highlights-ordnance-technician = Ordnance Technician, "OT", Engineering, Engineer, "Engi", "OB"
+highlights-chief-engineer = Главный инженер, «СЕ», Инженер, Инженер, «Инги», Командование, «ОБ», «ОТ»
+highlights-maintenance-technician = Техник по эксплуатации, «МТ», Инжиниринг, Инженер, «Инжи», «ОБ»
+highlights-ordnance-technician = Техник-артиллерист, «ОТ», Инженер, Инженер, «Инги», «ОБ»
 
 # Medical
-highlights-chief-medical-officer = Chief Medical Officer, "CMO", Medical, MedBay, "Med", Infected, Surgery, "Chem", "Chems", Pill, Command
-highlights-doctor = Doctor, "Doc", Medical, MedBay, "Med", Infected, Surgery, "Chem", "Chems", Pill
-highlights-nurse = Nurse, Medical, MedBay, "Med", Infected, Surgery, "Chem", "Chems", Pill
-highlights-researcher = Researcher, Research, Science, "Sci", "Chem", "Chems"
+highlights-chief-medical-officer = Главный медицинский директор, «CMO», Медицинский, MedBay, «Med», Инфицированный, Хирургический, «Химия», «Химические препараты», Таблетки, Командование
+highlights-doctor = Доктор, «Док», Медицинский, MedBay, «Мед», Инфицированный, Хирургия, «Химия», «Химические препараты», Таблетка
+highlights-nurse = Медсестра, Медицинский, MedBay, «Мед», Инфицированный, Хирургия, «Химия», «Химические препараты», Таблетка
+highlights-researcher = Исследователь, Исследования, Наука, «Наука», «Химия», «Химия»
 
 # Military Police
-highlights-chief-mp = Chief MP, "CMP", "MP", "MPs", "MW", "Alert", Brig, "Perma", Loose, Burst, Colonist, Survivor, "SOP", Arrest, Detain, Appeal, "Command", Execution, Executed
-highlights-military-warden = Military Warden, Warden, "CMP", "MP", "MPs", "MW", "Alert", Brig, "Perma", Loose, Burst, Colonist, Survivor, "SOP", Arrest, Detain, Appeal, Execution, Executed
-highlights-military-police = Military Police, "CMP", "MP", "MPs", "MW", "Alert", Brig, "Perma", Loose, Burst, Colonist, Survivor, "SOP", Arrest, Detain, Appeal, Execution, Executed
-highlights-provost-inspector = Provost Inspector, Inspector, @"PvI", "CMP", "MP", "MPs", "MW", "Alert", Brig, "Perma", Loose, Burst, Colonist, Survivor, "SOP", "Mlaw", Marine Law, Arrest, Detain, Appeal, Execution, Executed
+highlights-chief-mp = Главный депутат, «CMP», «MP», «MPs», «MW», «Тревога», Бриг, «Перма», «Свободный», «Взрыв», «Колонист», «Выживший», «СОП», Арест, Задержание, Апелляция, «Командование», Казнь, Казнь
+highlights-military-warden = Военный надзиратель, надзиратель, "CMP", "MP", "MPs", "MW", "Alert", Бриг, "Перма", Свободный, Взрыв, Колонист, Выживший, "СОП", Арест, Задержание, Апелляция, Казнь, Казнь
+highlights-military-police = Военная полиция, «CMP», «MP», «MPs», «MW», «Alert», Бриг, «Перма», «Свободный», «Взрыв», «Колонист», «Выживший», «СОП», Арест, Задержание, Апелляция, Казнь, Казнь
+highlights-provost-inspector = Провост-инспектор, Инспектор, @"PvI", "CMP", "MP", "MPs", "MW", "Alert", Бриг, "Перма", Свободный, Взрыв, Колонист, Выживший, "SOP", "Mlaw", Морское право, Арест, Задержание, Апелляция, Казнь, Казнь
 
 # Other
-highlights-corporate-liaison = Corporate Liaison, "CL", Liaison, Weston-Yamada, Weston Yamada, "WeYa", We-Ya
-highlights-correspondent = Correspondent, "CC", News
-highlights-mess-technician = Mess Technician, "MST", Mess Tech, "Mess", Kitchen, Food, Hungry
+highlights-corporate-liaison = Корпоративное взаимодействие, «CL», Связь, Уэстон-Ямада, Уэстон Ямада, «ВеЯ», Ве-Я
+highlights-correspondent = Корреспондент "ЦК", Новости
+highlights-mess-technician = Столовая, «MST», Столовая, «Беспорядок», Кухня, Еда, Голодный
 
 # Marines
-highlights-squad-leader = Squad Leader, "SL", Command, Queen, "OB", Coords, Coordinates, Supply, Tacmap, Comms, Map, "FT", Fireteam, Squad
-highlights-fireteam-leader = Fireteam Leader, "FTL", "JTAC", "CAS", Normandy, "FT", Fireteam, Coords, Coordinates, "SL", Command
-highlights-smart-gun-operator = Smart Gun Operator, "SGO", "SG", "SL", Command
-highlights-weapons-specialist = Weapons Specialist, "WS", "SADAR", Grenadier, Scout, Pyro, "AMR", Sniper, "SL", Command
-highlights-combat-technician = Combat Technician, "CT", "ComTech", Engineer, Barricade, Cade, "SL", Command
-highlights-hospital-corpsman = Hospital Corpsman, "HM", Corpsman, "Medic", Injured, Infected, Hugged, "SL", Command
-highlights-rifleman = Rifleman, "RFN", "SL", Command
+highlights-squad-leader = Командир отделения, «SL», Командование, Королева, «OB», Координаты, Координаты, Снабжение, Тактическая карта, Связь, Карта, «FT», Боевая группа, Отряд
+highlights-fireteam-leader = Руководитель боевой группы, «FTL», «JTAC», «CAS», Нормандия, «FT», огневая группа, координаты, координаты, «SL», командование
+highlights-smart-gun-operator = Оператор умного оружия, «СГО», «СГ», «СЛ», Командование
+highlights-weapons-specialist = Специалист по вооружению, «WS», «САДАР», гренадер, разведчик, поджигатель, «AMR», снайпер, «SL», командир
+highlights-combat-technician = Боевой техник, «КТ», «КомТех», Инженер, Баррикада, Кейд, «СЛ», Командование
+highlights-hospital-corpsman = Санитар госпиталя, «HM», Санитар, «Медик», Раненый, Зараженный, Обнятый, «SL», Командование
+highlights-rifleman = Стрелок, «РФН», «СЛ», Командование
 
 # Xenonids
 
-highlights-boiler = Boiler, "Pat"
-highlights-burrower = Burrower, "Pat", Tunnel, "Weed", Trap, Traps
-highlights-carrier = Carrier, "Pat", Parasite, "Weed", Cluster, Morpher, "Infect", Trap, Traps, Capture, child, children
-highlights-crusher = Crusher, "Pat"
-highlights-defender = Defender, "Pat"
-highlights-drone = "Drone", "Pat", "Weed", Cluster, Heal, Capture
-highlights-hivelord = Hivelord, "Pat", "Weed", Cluster
-highlights-larva = Larva, "Pat"
-highlights-lesser-drone = "Lesser Drone", "Pat", "Lesser", "Weed"
-highlights-lurker = Lurker, "Pat"
-highlights-parasite = Parasite, "Infect", child, children
-highlights-praetorian = Praetorian, "Pat"
-highlights-queen = "Queen", "Mom", "Mother", "Tall Lurker", "Tuber"
-highlights-ravager = Ravager, "Pat"
-highlights-runner = Runner, "Pat", Capture
-highlights-sentinel = Sentinel, "Pat"
-highlights-spitter = Spitter, "Pat"
-highlights-warrior = Warrior, "Pat"
+highlights-boiler = Котел, "Пэт"
+highlights-burrower = Нора, «Пэт», Туннель, «Сорняк», Ловушка, Ловушки
+highlights-carrier = Перевозчик, «Погладить», Паразит, «Сорняк», Кластер, Морфер, «Заразить», Ловушка, Ловушки, Поимка, ребенок, дети
+highlights-crusher = Крашер, "Пэт"
+highlights-defender = Защитник, «Пэт»
+highlights-drone = «Дрон», «Пэт», «Травка», «Сгруппировать», «Исцелить», «Захватить».
+highlights-hivelord = Хивелорд, «Пэт», «Сорняк», Кластер
+highlights-larva = Личинка, "Пэт"
+highlights-lesser-drone = «Меньший дрон», «Пэт», «Меньший», «Сорняк»
+highlights-lurker = Люркер, «Пэт»
+highlights-parasite = Паразит, "Заразить", ребенок, дети
+highlights-praetorian = Преторианец, "Пэт"
+highlights-queen = «Королева», «Мама», «Мать», «Высокий Люк», «Клубень».
+highlights-ravager = Опустошитель, «Пэт»
+highlights-runner = Бегун, «Пэт», Захват
+highlights-sentinel = Страж, «Пэт»
+highlights-spitter = Спиттер, «Пэт»
+highlights-warrior = Воин, «Пэт»

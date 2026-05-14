@@ -10,6 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write    # для git tag и git push
 
     steps:
     - name: Install dependencies
@@ -27,6 +29,7 @@ jobs:
       run: |
         cd RobustToolbox
         git fetch --depth=1
+
     - name: Install dependencies
       run: dotnet restore
 
@@ -43,7 +46,16 @@ jobs:
       run: Tools/publish_multi_request.py
       env:
         PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
-        GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
+        GITHUB_REPOSITORY: ${{ github.repository }}
+
+    - name: Create release tag
+      if: success()
+      run: |
+        TAG="v$(date +%Y.%m.%d-%H%M%S)"
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git tag "$TAG" -m "Release $TAG"
+        git push origin "$TAG"
 
     - name: Publish changelog (Discord — YAML)
       continue-on-error: true
@@ -52,12 +64,12 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
         DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
 
-    - name: Publish AI changelog (Discord — Gemini)
+    - name: Publish AI changelog (Discord — Mistral)
       continue-on-error: true
       run: python3 Tools/ai_changelog.py
       env:
         GITHUB_TOKEN: ${{ github.token }}
-        GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
+        GITHUB_REPOSITORY: ${{ github.repository }}
         GITHUB_RUN_ID: ${{ github.run_id }}
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}

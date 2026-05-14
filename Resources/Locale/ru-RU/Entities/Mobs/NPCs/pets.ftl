@@ -1,78 +1,78 @@
-ent-MobCorgiIan-name = Ian
-ent-MobCorgiIan-desc = Favorite pet corgi.
+ent-MobCorgiIan-name = Ян
+ent-MobCorgiIan-desc = Любимый домашний питомец корги.
 
-ent-MobCorgiIanOld-name = Old Ian
-ent-MobCorgiIanOld-desc = Still the favorite pet corgi. Love his wheels.
+ent-MobCorgiIanOld-name = Старый Ян
+ent-MobCorgiIanOld-desc = До сих пор любимый корги. Нравятся его колеса.
 
-ent-MobCorgiLisa-name = Lisa
-ent-MobCorgiLisa-desc = Ian's favorite corgi.
+ent-MobCorgiLisa-name = Лиза
+ent-MobCorgiLisa-desc = Любимый корги Йена.
 
-ent-MobCorgiMouse-name = real mouse
-ent-MobCorgiMouse-desc = It's 100% a real hungry mouse.
+ent-MobCorgiMouse-name = настоящая мышь
+ent-MobCorgiMouse-desc = Это 100% настоящая голодная мышь.
 
-ent-MobCorgiIanPup-name = Puppy Ian
-ent-MobCorgiIanPup-desc = Favourite puppy corgi. Awww.
+ent-MobCorgiIanPup-name = Щенок Ян
+ent-MobCorgiIanPup-desc = Любимый щенок корги. Оууу.
 
-ent-MobCatRuntime-name = Runtime
-ent-MobCatRuntime-desc = Professional mouse hunter. Escape artist.
+ent-MobCatRuntime-name = Время выполнения
+ent-MobCatRuntime-desc = Профессиональный охотник на мышей. Художник побега.
 
-ent-MobCatException-name = Exception
-ent-MobCatException-desc = Ask nicely, and maybe they'll give you one of their spare lives.
+ent-MobCatException-name = Исключение
+ent-MobCatException-desc = Попросите вежливо, и, возможно, они отдадут вам одну из своих запасных жизней.
 
-ent-MobCatFloppa-name = Floppa
-ent-MobCatFloppa-desc = He out here.
+ent-MobCatFloppa-name = Флоппа
+ent-MobCatFloppa-desc = Он здесь.
 
-ent-MobBandito-name = Bandito
-ent-MobBandito-desc = Just a silly little guy!
+ent-MobBandito-name = Бандито
+ent-MobBandito-desc = Просто глупый малый!
 
-ent-MobBingus-name = Bingus
-ent-MobBingus-desc = Bingus my beloved...
+ent-MobBingus-name = Бингус
+ent-MobBingus-desc = Бингус, мой любимый...
 
-ent-MobMcGriff-name = McGriff
-ent-MobMcGriff-desc = This dog can tell something smells around here, and that something is CRIME!
+ent-MobMcGriff-name = МакГрифф
+ent-MobMcGriff-desc = Эта собака может сказать, что здесь что-то пахнет, и это ПРЕСТУПЛЕНИЕ!
 
-ent-MobPaperwork-name = Paperwork
-ent-MobPaperwork-desc = Took up a new job sorting books in the library after he got transferred from Space Station 13. He seems to be just as slow at this.
+ent-MobPaperwork-name = Оформление документов
+ent-MobPaperwork-desc = После того, как его перевели с Космической станции 13, он устроился на новую работу по сортировке книг в библиотеке. Кажется, он так же медлителен в этом.
 
-ent-MobWalter-name = Walter
-ent-MobWalter-desc = He likes chems and treats. Walter.
+ent-MobWalter-name = Уолтер
+ent-MobWalter-desc = Он любит химикаты и лакомства. Уолтер.
 
-ent-MobPossumMorty-name = Morty
-ent-MobPossumMorty-desc = The station's resident Didelphis virginiana. A sensitive but resilient kind of guy.
+ent-MobPossumMorty-name = Морти
+ent-MobPossumMorty-desc = Житель станции Didelphis Virginiana. Чувствительный, но стойкий парень.
 
-ent-MobPossumMortyOld-name = Morty
-ent-MobPossumMortyOld-desc = The station's resident Didelphis virginiana. A sensitive but resilient kind of guy.
+ent-MobPossumMortyOld-name = Морти
+ent-MobPossumMortyOld-desc = Житель станции Didelphis Virginiana. Чувствительный, но стойкий парень.
 
-ent-MobPossumPoppy-name = Poppy
-ent-MobPossumPoppy-desc = It's an opossum, a small scavenging marsupial. It's wearing appropriate personal protective equipment.
+ent-MobPossumPoppy-name = Мак
+ent-MobPossumPoppy-desc = Это опоссум, маленькое сумчатое животное-падальщик. Он носит соответствующие средства индивидуальной защиты.
 
-ent-MobRaccoonMorticia-name = Morticia
-ent-MobRaccoonMorticia-desc = A powerful creature of the night. Her eyeshadow is always on point.
+ent-MobRaccoonMorticia-name = Мортиша
+ent-MobRaccoonMorticia-desc = Могущественное существо ночи. Ее тени для век всегда на высоте.
 
-ent-MobAlexander-name = Alexander
-ent-MobAlexander-desc = Chef's finest colleague.
+ent-MobAlexander-name = Александр
+ent-MobAlexander-desc = Лучший коллега шеф-повара.
 
-ent-MobFoxRenault-name = Renault
-ent-MobFoxRenault-desc = The captain's trustworthy fox.
+ent-MobFoxRenault-name = Рено
+ent-MobFoxRenault-desc = Надежный капитанский лис.
 
-ent-MobHamsterHamlet-name = Hamlet
-ent-MobHamsterHamlet-desc = A grumpy, cute and fluffy hamster.
+ent-MobHamsterHamlet-name = Гамлет
+ent-MobHamsterHamlet-desc = Сварливый, милый и пушистый хомяк.
 
-ent-MobSpiderShiva-name = Shiva
-ent-MobSpiderShiva-desc = The first defender of the station.
+ent-MobSpiderShiva-name = Шива
+ent-MobSpiderShiva-desc = Первый защитник станции.
 
-ent-MobKangarooWillow-name = Willow
-ent-MobKangarooWillow-desc = Willow the boxing kangaroo.
+ent-MobKangarooWillow-name = Ива
+ent-MobKangarooWillow-desc = Боксерский кенгуру Уиллоу.
 
-ent-MobSlimesPet-name = Smile
-ent-MobSlimesPet-desc = This masterpiece has gone through thousands of experiments. But it is the sweetest creature in the world. Smile Slime!
+ent-MobSlimesPet-name = Улыбка
+ent-MobSlimesPet-desc = Этот шедевр прошел через тысячи экспериментов. Но это самое милое существо на свете. Улыбайся, слайм!
 
-ent-MobMonkeyPunpun-name = Pun Pun
-ent-MobMonkeyPunpun-desc = A prominent representative of monkeys with unlimited access to alcohol.
+ent-MobMonkeyPunpun-name = каламбур каламбур
+ent-MobMonkeyPunpun-desc = Яркий представитель обезьян с неограниченным доступом к алкоголю.
 
-ent-MobCrabAtmos-name = Tropico
-ent-MobCrabAtmos-desc = The noble and stalwart defender of Atmosia. Viva!
+ent-MobCrabAtmos-name = Тропико
+ent-MobCrabAtmos-desc = Благородный и стойкий защитник Атмосии. Вива!
 
-ent-MobPollyParrot-name = Polly the parrot
-ent-MobPollyParrot-desc = An expert in quantum cracker theory
+ent-MobPollyParrot-name = Попугай Полли
+ent-MobPollyParrot-desc = Эксперт в теории квантового взлома.
 

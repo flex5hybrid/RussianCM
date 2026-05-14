@@ -1,4 +1,4 @@
-ent-MaintsRoomMarker-name = Maints interior marker
+ent-MaintsRoomMarker-name = Маркер для интерьера
 
-ent-MaintsRoomMarkerClearing-name = Maints interior marker
+ent-MaintsRoomMarkerClearing-name = Маркер для интерьера
 

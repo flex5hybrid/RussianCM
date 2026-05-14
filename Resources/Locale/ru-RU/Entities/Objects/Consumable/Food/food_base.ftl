@@ -1,6 +1,6 @@
-ent-EdibleBase-name = item
+ent-EdibleBase-name = элемент
 
-ent-FoodBase-name = item
+ent-FoodBase-name = элемент
 
-ent-FoodInjectableBase-name = item
+ent-FoodInjectableBase-name = элемент
 

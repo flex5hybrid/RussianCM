@@ -1,3 +1,3 @@
-ent-DebugItemShapeWeird-name = weirdly shaped item
-ent-DebugItemShapeWeird-desc = What is it...?
+ent-DebugItemShapeWeird-name = предмет странной формы
+ent-DebugItemShapeWeird-desc = Что это...?
 

@@ -1,9 +1,9 @@
-ent-CrateGeneric-name = crate
-ent-CrateGeneric-desc = A large container for items.
+ent-CrateGeneric-name = ящик
+ent-CrateGeneric-desc = Большой контейнер для вещей.
 
-ent-CrateBaseWeldable-name = crate
-ent-CrateBaseWeldable-desc = A large container for items.
+ent-CrateBaseWeldable-name = ящик
+ent-CrateBaseWeldable-desc = Большой контейнер для вещей.
 
-ent-CrateBaseSecure-name = crate
-ent-CrateBaseSecure-desc = A large container for items.
+ent-CrateBaseSecure-name = ящик
+ent-CrateBaseSecure-desc = Большой контейнер для вещей.
 

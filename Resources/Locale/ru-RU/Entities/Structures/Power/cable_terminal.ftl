@@ -1,3 +1,3 @@
-ent-CableTerminal-name = cable terminal
-ent-CableTerminal-desc = You see a small warning on the red cables in grungy black ink. "CONNECT RED TO BATTERY FOR CHARGE."
+ent-CableTerminal-name = кабельный терминал
+ent-CableTerminal-desc = На красных кабелях вы видите небольшое предупреждение, написанное шероховатыми черными чернилами. «ПОДКЛЮЧИТЕ КРАСНЫЙ К АККУМУЛЯТОРУ ДЛЯ ЗАРЯДКИ».
 

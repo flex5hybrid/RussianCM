@@ -1,9 +1,9 @@
 ent-ClothingNeckTieRed-name = red-tie
-ent-ClothingNeckTieRed-desc = A neosilk clip-on red tie.
+ent-ClothingNeckTieRed-desc = Красный галстук из неошелка с клипсой.
 
-ent-ClothingNeckTieDet-name = detective's tie
-ent-ClothingNeckTieDet-desc = A loosely tied necktie, a perfect accessory for the over-worked detective.
+ent-ClothingNeckTieDet-name = галстук детектива
+ent-ClothingNeckTieDet-desc = Свободно завязанный галстук — идеальный аксессуар для переутомленного детектива.
 
-ent-ClothingNeckTieSci-name = scientist's tie
-ent-ClothingNeckTieSci-desc = Why do we all have to wear these ridiculous ties?
+ent-ClothingNeckTieSci-name = галстук ученого
+ent-ClothingNeckTieSci-desc = Почему мы все должны носить эти нелепые галстуки?
 

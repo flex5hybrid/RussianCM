@@ -1,36 +1,36 @@
-ent-BaseShield-name = base shield
-ent-BaseShield-desc = A shield!
+ent-BaseShield-name = базовый щит
+ent-BaseShield-desc = Щит!
 
-ent-RiotShield-name = riot shield
-ent-RiotShield-desc = A large tower shield. Good for controlling crowds.
+ent-RiotShield-name = щит для массовых беспорядков
+ent-RiotShield-desc = Большой башенный щит. Хорошо подходит для контроля толпы.
 
-ent-RiotLaserShield-name = laser shield
-ent-RiotLaserShield-desc = A shield built for withstanding lasers, but not much else.
+ent-RiotLaserShield-name = лазерный щит
+ent-RiotLaserShield-desc = Щит, созданный для защиты от лазеров, но не более того.
 
-ent-RiotBulletShield-name = ballistic shield
-ent-RiotBulletShield-desc = A shield built for protecting against ballistics, but not much else.
+ent-RiotBulletShield-name = баллистический щит
+ent-RiotBulletShield-desc = Щит, созданный для защиты от баллистики, но не более того.
 
-ent-WoodenBuckler-name = wooden buckler
-ent-WoodenBuckler-desc = A small round wooden makeshift shield.
+ent-WoodenBuckler-name = деревянный баклер
+ent-WoodenBuckler-desc = Небольшой круглый деревянный импровизированный щит.
 
-ent-MakeshiftShield-name = makeshift shield
-ent-MakeshiftShield-desc = A rundown looking shield, not good for much.
+ent-MakeshiftShield-name = импровизированный щит
+ent-MakeshiftShield-desc = Обшарпанный на вид щит, ни на что не годный.
 
-ent-WebShield-name = web shield
-ent-WebShield-desc = A stringy shield. It's weak, and doesn't seem to do well against heat.
+ent-WebShield-name = веб-щит
+ent-WebShield-desc = Струнный щит. Он слабый и, похоже, плохо переносит жару.
 
-ent-ClockworkShield-name = clockwork shield
-ent-ClockworkShield-desc = Ratvar oyrffrf lbh jvgu uvf cebgrpgvba.
+ent-ClockworkShield-name = заводной щит
+ent-ClockworkShield-desc = Ратвар ойрффрф lbh jvgu uvf cebgrpgvba.
 
-ent-MirrorShield-name = mirror shield
-ent-MirrorShield-desc = Eerily glows red... you hear the geometer whispering
+ent-MirrorShield-name = зеркальный щит
+ent-MirrorShield-desc = Устрашающе светится красным... ты слышишь, как шепчет геометр
 
-ent-EnergyShield-name = energy shield
-ent-EnergyShield-desc = Exotic energy shield, when folded, can even fit in your pocket.
+ent-EnergyShield-name = энергетический щит
+ent-EnergyShield-desc = Экзотический энергетический щит в сложенном виде поместится даже в кармане.
 
-ent-BrokenEnergyShield-name = broken energy shield
-ent-BrokenEnergyShield-desc = Something inside is burned out, it is no longer functional.
+ent-BrokenEnergyShield-name = сломанный энергетический щит
+ent-BrokenEnergyShield-desc = Что-то внутри сгорело, оно уже не функционально.
 
-ent-TelescopicShield-name = telescopic shield
-ent-TelescopicShield-desc = An advanced riot shield made of lightweight materials that collapses for easy storage.
+ent-TelescopicShield-name = телескопический щит
+ent-TelescopicShield-desc = Усовершенствованный защитный щит, изготовленный из легких материалов, который складывается для удобства хранения.
 

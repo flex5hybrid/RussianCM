@@ -1,69 +1,69 @@
-ent-Candle-name = candle
-ent-Candle-desc = A thin wick threaded through fat.
+ent-Candle-name = свеча
+ent-Candle-desc = Тонкий фитиль, продетый сквозь жир.
 
-ent-CandleRed-name = red candle
-ent-CandleRed-desc = A thin wick threaded through fat.
+ent-CandleRed-name = красная свеча
+ent-CandleRed-desc = Тонкий фитиль, продетый сквозь жир.
 
-ent-CandleBlue-name = blue candle
-ent-CandleBlue-desc = A thin wick threaded through fat.
+ent-CandleBlue-name = синяя свеча
+ent-CandleBlue-desc = Тонкий фитиль, продетый сквозь жир.
 
-ent-CandleBlack-name = black candle
-ent-CandleBlack-desc = A thin wick threaded through fat.
+ent-CandleBlack-name = черная свеча
+ent-CandleBlack-desc = Тонкий фитиль, продетый сквозь жир.
 
-ent-CandleGreen-name = green candle
-ent-CandleGreen-desc = A thin wick threaded through fat.
+ent-CandleGreen-name = зеленая свеча
+ent-CandleGreen-desc = Тонкий фитиль, продетый сквозь жир.
 
-ent-CandlePurple-name = purple candle
-ent-CandlePurple-desc = A thin wick threaded through fat.
+ent-CandlePurple-name = фиолетовая свеча
+ent-CandlePurple-desc = Тонкий фитиль, продетый сквозь жир.
 
-ent-CandleSmall-name = small candle
-ent-CandleSmall-desc = A thin wick threaded through fat.
+ent-CandleSmall-name = маленькая свеча
+ent-CandleSmall-desc = Тонкий фитиль, продетый сквозь жир.
 
-ent-CandleRedSmall-name = small red candle
-ent-CandleRedSmall-desc = A thin wick threaded through fat.
+ent-CandleRedSmall-name = маленькая красная свеча
+ent-CandleRedSmall-desc = Тонкий фитиль, продетый сквозь жир.
 
-ent-CandleBlueSmall-name = small blue candle
-ent-CandleBlueSmall-desc = A thin wick threaded through fat.
+ent-CandleBlueSmall-name = маленькая синяя свеча
+ent-CandleBlueSmall-desc = Тонкий фитиль, продетый сквозь жир.
 
-ent-CandleBlackSmall-name = small black candle
-ent-CandleBlackSmall-desc = A thin wick threaded through fat.
+ent-CandleBlackSmall-name = маленькая черная свеча
+ent-CandleBlackSmall-desc = Тонкий фитиль, продетый сквозь жир.
 
-ent-CandleGreenSmall-name = small green candle
-ent-CandleGreenSmall-desc = A thin wick threaded through fat.
+ent-CandleGreenSmall-name = маленькая зеленая свеча
+ent-CandleGreenSmall-desc = Тонкий фитиль, продетый сквозь жир.
 
-ent-CandlePurpleSmall-name = small purple candle
-ent-CandlePurpleSmall-desc = A thin wick threaded through fat.
+ent-CandlePurpleSmall-name = маленькая фиолетовая свеча
+ent-CandlePurpleSmall-desc = Тонкий фитиль, продетый сквозь жир.
 
-ent-CandleInfinite-name = magic candle
-ent-CandleInfinite-desc = It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
+ent-CandleInfinite-name = волшебная свеча
+ent-CandleInfinite-desc = Это либо магия, либо высокие технологии, но эта свеча никогда не гаснет. С другой стороны, его пламя довольно холодное.
 
-ent-CandleRedInfinite-name = magic red candle
-ent-CandleRedInfinite-desc = It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
+ent-CandleRedInfinite-name = волшебная красная свеча
+ent-CandleRedInfinite-desc = Это либо магия, либо высокие технологии, но эта свеча никогда не гаснет. С другой стороны, его пламя довольно холодное.
 
-ent-CandleBlueInfinite-name = magic blue candle
-ent-CandleBlueInfinite-desc = It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
+ent-CandleBlueInfinite-name = волшебная синяя свеча
+ent-CandleBlueInfinite-desc = Это либо магия, либо высокие технологии, но эта свеча никогда не гаснет. С другой стороны, его пламя довольно холодное.
 
-ent-CandleBlackInfinite-name = magic black candle
-ent-CandleBlackInfinite-desc = It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
+ent-CandleBlackInfinite-name = волшебная черная свеча
+ent-CandleBlackInfinite-desc = Это либо магия, либо высокие технологии, но эта свеча никогда не гаснет. С другой стороны, его пламя довольно холодное.
 
-ent-CandleGreenInfinite-name = magic green candle
-ent-CandleGreenInfinite-desc = It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
+ent-CandleGreenInfinite-name = волшебная зеленая свеча
+ent-CandleGreenInfinite-desc = Это либо магия, либо высокие технологии, но эта свеча никогда не гаснет. С другой стороны, его пламя довольно холодное.
 
-ent-CandlePurpleInfinite-name = magic purple candle
-ent-CandlePurpleInfinite-desc = It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
+ent-CandlePurpleInfinite-name = волшебная фиолетовая свеча
+ent-CandlePurpleInfinite-desc = Это либо магия, либо высокие технологии, но эта свеча никогда не гаснет. С другой стороны, его пламя довольно холодное.
 
-ent-CandleRedSmallInfinite-name = small magic red candle
-ent-CandleRedSmallInfinite-desc = It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
+ent-CandleRedSmallInfinite-name = маленькая волшебная красная свеча
+ent-CandleRedSmallInfinite-desc = Это либо магия, либо высокие технологии, но эта свеча никогда не гаснет. С другой стороны, его пламя довольно холодное.
 
-ent-CandleBlueSmallInfinite-name = small magic blue candle
-ent-CandleBlueSmallInfinite-desc = It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
+ent-CandleBlueSmallInfinite-name = маленькая волшебная синяя свеча
+ent-CandleBlueSmallInfinite-desc = Это либо магия, либо высокие технологии, но эта свеча никогда не гаснет. С другой стороны, его пламя довольно холодное.
 
-ent-CandleBlackSmallInfinite-name = small magic black candle
-ent-CandleBlackSmallInfinite-desc = It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
+ent-CandleBlackSmallInfinite-name = маленькая волшебная черная свеча
+ent-CandleBlackSmallInfinite-desc = Это либо магия, либо высокие технологии, но эта свеча никогда не гаснет. С другой стороны, его пламя довольно холодное.
 
-ent-CandleGreenSmallInfinite-name = small magic green candle
-ent-CandleGreenSmallInfinite-desc = It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
+ent-CandleGreenSmallInfinite-name = маленькая волшебная зеленая свеча
+ent-CandleGreenSmallInfinite-desc = Это либо магия, либо высокие технологии, но эта свеча никогда не гаснет. С другой стороны, его пламя довольно холодное.
 
-ent-CandlePurpleSmallInfinite-name = small magic purple candle
-ent-CandlePurpleSmallInfinite-desc = It's either magic or high tech, but this candle never goes out. On the other hand, its flame is quite cold.
+ent-CandlePurpleSmallInfinite-name = маленькая волшебная фиолетовая свеча
+ent-CandlePurpleSmallInfinite-desc = Это либо магия, либо высокие технологии, но эта свеча никогда не гаснет. С другой стороны, его пламя довольно холодное.
 
