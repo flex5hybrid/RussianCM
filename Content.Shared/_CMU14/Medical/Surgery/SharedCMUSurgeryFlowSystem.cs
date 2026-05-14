@@ -1069,7 +1069,7 @@ public abstract class SharedCMUSurgeryFlowSystem : EntitySystem
             // a prereq is currently being run.
             var leafId = string.IsNullOrEmpty(armed.LeafSurgeryId) ? armed.SurgeryId : armed.LeafSurgeryId;
             string leafDisplayName = ResolveSurgeryDisplayName(leafId);
-            armedInfo = new CMUArmedStepInfo(armed.SurgeryId, leafDisplayName, armed.StepIndex, armed.StepLabel, armed.RequiredToolCategory);
+            armedInfo = new CMUArmedStepInfo(armed.SurgeryId, leafDisplayName, armed.StepIndex, armed.TotalSteps, armed.StepLabel, armed.RequiredToolCategory); // RuCM edit
         }
 
         CMUSurgeryInFlightInfo? inFlight = null;

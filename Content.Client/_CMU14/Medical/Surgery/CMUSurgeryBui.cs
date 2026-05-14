@@ -118,9 +118,10 @@ public sealed class CMUSurgeryBui : BoundUserInterface
         if (armed is not null)
         {
             var stepLabel = ResolveLabel(armed.StepLabel);
-            _window.InProgressStepLabel.Text = Loc.GetString(
+            _window.InProgressStepLabel.Text = Loc.GetString( // RuCM edit
                 "cmu-medical-surgery-step-now",
                 ("step", armed.StepIndex + 1),
+                ("total", armed.TotalSteps),
                 ("label", stepLabel));
 
             var tool = FormatToolCategory(armed.ToolCategory);
@@ -134,9 +135,10 @@ public sealed class CMUSurgeryBui : BoundUserInterface
         else if (inFlight is not null && TryGetInFlightEntry(state, inFlight, out var next))
         {
             var stepLabel = ResolveLabel(next.NextStepLabel);
-            _window.InProgressStepLabel.Text = Loc.GetString(
+            _window.InProgressStepLabel.Text = Loc.GetString( // RuCM edit
                 "cmu-medical-surgery-step-now",
                 ("step", next.NextStepIndex + 1),
+                ("total", next.TotalSteps),
                 ("label", stepLabel));
 
             var tool = FormatToolCategory(next.NextStepToolCategory);

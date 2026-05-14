@@ -41,6 +41,9 @@ public sealed partial class CMUSurgeryArmedStepComponent : Component
     [DataField, AutoNetworkedField]
     public string StepLabel = string.Empty;
 
+    [DataField, AutoNetworkedField] // RuCM edit
+    public int TotalSteps;
+
     [DataField, AutoPausedField, AutoNetworkedField]
     public TimeSpan ArmedAt;
 

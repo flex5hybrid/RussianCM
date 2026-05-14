@@ -72,6 +72,7 @@ public sealed record CMUArmedStepInfo(
     string SurgeryId,
     string SurgeryDisplayName,
     int StepIndex,
+    int TotalSteps, // RuCM edit
     string StepLabel,
     string? ToolCategory);
 

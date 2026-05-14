@@ -1,10 +1,12 @@
 ﻿rmc-health-analyzer-title = СКАНИРОВАНИЕ ЗДОРОВЬЯ
 rmc-health-analyzer-patient = Пациент: {$name}
+
 rmc-health-analyzer-brute = Травмы
 rmc-health-analyzer-burn = Ожоги
 rmc-health-analyzer-toxin = Токсины
 rmc-health-analyzer-oxygen = Кислород
 rmc-health-analyzer-clone = Клон
+
 rmc-health-analyzer-permadead = Смерть необратима
 rmc-health-analyzer-healthy = {$percent} здоровья
 rmc-health-analyzer-unknown-reagents = [color=white][italic]Обнаружены неизвестные реагенты.[/italic][/color]

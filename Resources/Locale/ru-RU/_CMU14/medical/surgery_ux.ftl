@@ -127,7 +127,7 @@ cmu-medical-surgery-step-amputate-limb-label = Ампутировать коне
 cmu-medical-surgery-step-reattach-limb-label = Пришить отсечённую конечность
 cmu-medical-surgery-step-trim-necrotic-stump-label = Обработать некротическую культю
 cmu-medical-surgery-step-prep-reattach-socket-label = Подготовить место пришивания
-cmu-medical-surgery-step-debride-eschar-label = Удалить струп
+cmu-medical-surgery-step-debride-eschar-label = Удалить некроз
 
 # ---- Названия операций ----------------------------------------------
 

@@ -72,7 +72,7 @@ public sealed class CMUMedicalExamineSystem : EntitySystem
                 }
 
                 if (HasComp<CMUEscharComponent>(partUid))
-                    untreated.Add("charred burn tissue");
+                    untreated.Add(Loc.GetString("cmu-medical-examine-eschar")); // RuCM edit localization key
 
                 if (untreated.Count > 0)
                     sections.Add($"[color={UntreatedWoundColor}]{ToSentence(untreated)}[/color]");
@@ -109,9 +109,9 @@ public sealed class CMUMedicalExamineSystem : EntitySystem
         }
     }
 
-    private static string DescribeWound(Wound wound, WoundSize size, TimeSpan now)
+    private string DescribeWound(Wound wound, WoundSize size, TimeSpan now) // RuCM edit localization keys
     {
-        var sizeText = size switch
+        var sizeKey = size switch
         {
             WoundSize.Small => "small",
             WoundSize.Deep => "deep",
@@ -120,52 +120,53 @@ public sealed class CMUMedicalExamineSystem : EntitySystem
             _ => "deep",
         };
 
-        var kind = wound.Type switch
+        var kindKey = wound.Type switch
         {
             WoundType.Burn => "burn",
-            WoundType.Surgery => "surgical wound",
-            _ => "trauma wound",
+            WoundType.Surgery => "surgery",
+            _ => "trauma",
         };
 
-        var treated = wound.Treated ? "treated " : string.Empty;
-        var bleeding = !wound.Treated
+        var isBleeding = !wound.Treated
             && wound.Bloodloss > 0f
-            && (wound.StopBleedAt is null || now < wound.StopBleedAt.Value)
-                ? " (bleeding)"
-                : string.Empty;
+            && (wound.StopBleedAt is null || now < wound.StopBleedAt.Value);
 
-        return $"a {treated}{sizeText} {kind}{bleeding}";
+        return Loc.GetString("cmu-medical-examine-wound-describe",
+            ("size", sizeKey),
+            ("kind", kindKey),
+            ("treated", wound.Treated),
+            ("bleeding", isBleeding));
     }
 
-    private static string DescribeFracture(FractureSeverity severity, bool stabilized)
+    private string DescribeFracture(FractureSeverity severity, bool stabilized) // RuCM edit localization keys
     {
-        var prefix = stabilized ? "stabilized " : string.Empty;
-        return severity switch
+        var severityKey = severity switch
         {
-            FractureSeverity.Hairline => $"a {prefix}hairline fracture",
-            FractureSeverity.Simple => $"a {prefix}broken bone",
-            FractureSeverity.Compound => $"a {prefix}compound fracture",
-            FractureSeverity.Comminuted => $"a {prefix}shattered bone",
-            _ => "a broken bone",
+            FractureSeverity.Hairline => "hairline",
+            FractureSeverity.Simple => "simple",
+            FractureSeverity.Compound => "compound",
+            FractureSeverity.Comminuted => "comminuted",
+            _ => "simple",
         };
+
+        return Loc.GetString("cmu-medical-examine-fracture-describe",
+            ("severity", severityKey),
+            ("stabilized", stabilized));
     }
 
-    private static string FormatPartName(BodyPartType type, BodyPartSymmetry symmetry)
+    private string FormatPartName(BodyPartType type, BodyPartSymmetry symmetry) // RuCM edit localization keys
     {
-        var part = type.ToString().ToLowerInvariant();
-        if (symmetry == BodyPartSymmetry.Left)
-            return "Left " + part;
+        var typeKey = type.ToString().ToLowerInvariant();
+        var symmetryKey = symmetry switch
+        {
+            BodyPartSymmetry.Left => "left",
+            BodyPartSymmetry.Right => "right",
+            _ => "none",
+        };
 
-        if (symmetry == BodyPartSymmetry.Right)
-            return "Right " + part;
-
-        if (type == BodyPartType.Head)
-            return "Head";
-
-        if (type == BodyPartType.Torso)
-            return "Torso";
-
-        return type.ToString();
+        return Loc.GetString("cmu-medical-examine-part-name",
+            ("type", typeKey),
+            ("symmetry", symmetryKey));
     }
 
     private static int BodyPartSortOrder(BodyPartType type, BodyPartSymmetry symmetry)
@@ -197,14 +198,17 @@ public sealed class CMUMedicalExamineSystem : EntitySystem
         };
     }
 
-    private static string ToSentence(List<string> parts)
+    private string ToSentence(List<string> parts) // RuCM edit localization keys
     {
         return parts.Count switch
         {
             0 => string.Empty,
             1 => parts[0],
-            2 => $"{parts[0]} and {parts[1]}",
-            _ => $"{string.Join(", ", parts.GetRange(0, parts.Count - 1))}, and {parts[parts.Count - 1]}",
+            2 => Loc.GetString("cmu-medical-examine-sentence-two",
+                    ("a", parts[0]), ("b", parts[1])),
+            _ => Loc.GetString("cmu-medical-examine-sentence-many",
+                    ("list", string.Join(", ", parts.GetRange(0, parts.Count - 1))),
+                    ("last", parts[parts.Count - 1])),
         };
     }
 

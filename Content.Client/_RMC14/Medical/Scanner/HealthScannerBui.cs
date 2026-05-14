@@ -208,7 +208,7 @@ public sealed class HealthScannerBui : BoundUserInterface
         _window.ChemicalsContainer.Visible = anyChemicals;
         _window.ChemicalContentsCard.Visible = anyChemicals || anyUnknown;
 
-        _window.BloodTypeLabel.Text = "Blood:";
+        _window.BloodTypeLabel.Text = Loc.GetString("cmu-medical-scanner-blood-label"); // RuMC edit localisation key
         var bloodMsg = new FormattedMessage();
         bloodMsg.PushColor(Color.FromHex("#25B732"));
 
@@ -218,10 +218,10 @@ public sealed class HealthScannerBui : BoundUserInterface
         bloodMsg.Pop();
         _window.BloodAmountLabel.SetMessage(bloodMsg);
 
-        if (uiState.CMUExternalBleeding)
-            _window.Bleeding.SetMarkup(" [bold][color=#DF3E3E]\\[Bleeding\\][/color][/bold]");
+        if (uiState.CMUExternalBleeding) // RuMC edit localisation key
+            _window.Bleeding.SetMarkupPermissive($" [bold][color=#DF3E3E]\\[{Loc.GetString("cmu-medical-scanner-chip-bleeding")}\\][/color][/bold]");
         else if (uiState.Bleeding)
-            _window.Bleeding.SetMarkup(" [bold][color=#DF3E3E]\\[Bleeding\\][/color][/bold]");
+            _window.Bleeding.SetMarkupPermissive($" [bold][color=#DF3E3E]\\[{Loc.GetString("cmu-medical-scanner-chip-bleeding")}\\][/color][/bold]");
         else
             _window.Bleeding.SetMessage(string.Empty);
 
@@ -813,8 +813,8 @@ public sealed class HealthScannerBui : BoundUserInterface
             row.AddChild(new Label
             {
                 Text = organ.Removed
-                    ? Loc.GetString("cmu-medical-scanner-organ-removed-short")
-                    : organ.Stage.ToString(),
+                    ? Loc.GetString("cmu-medical-scanner-organ-removed-short")  // RuMC edit localisation key
+                    : Loc.GetString("cmu-medical-scanner-organ-stage-" + organ.Stage.ToString().ToLowerInvariant()),
                 MinWidth = 70,
                 FontColorOverride = SeverityTextColor(sev),
             });
@@ -921,11 +921,26 @@ public sealed class HealthScannerBui : BoundUserInterface
         _ => string.Empty,
     };
 
-    private static string PartDisplayName(BodyPartType type, BodyPartSymmetry sym)
+    private static string PartDisplayName(BodyPartType type, BodyPartSymmetry sym) // RuMC edit localisation key
     {
-        if (sym == BodyPartSymmetry.None)
-            return type.ToString();
-        return $"{sym} {type}";
+        var typeKey = type switch
+        {
+            BodyPartType.Head  => "head",
+            BodyPartType.Torso => "torso",
+            BodyPartType.Arm   => "arm",
+            BodyPartType.Leg   => "leg",
+            BodyPartType.Hand  => "hand",
+            BodyPartType.Foot  => "foot",
+            _ => type.ToString().ToLowerInvariant(),
+        };
+        var symKey = sym switch
+        {
+            BodyPartSymmetry.Left  => "left",
+            BodyPartSymmetry.Right => "right",
+            _ => "none",
+        };
+        return Loc.GetString("cmu-medical-scanner-part-name",
+            ("type", typeKey), ("symmetry", symKey));
     }
 
     // Small switch from CMU organ prototype id (attached organ path) OR

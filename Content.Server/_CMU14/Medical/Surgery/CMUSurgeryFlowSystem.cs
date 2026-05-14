@@ -218,7 +218,7 @@ public sealed class CMUSurgeryFlowSystem : SharedCMUSurgeryFlowSystem
         // refreshes the surgeon snapshot each time so a fresh surgeon
         // picking up an abandoned-but-armed surgery is credited as the
         // new operator.
-        var leafDisplay = ResolveLeafDisplayName(leafId);
+        var leafDisplay = ResolveSurgeryDisplayName(leafId); // RuCM edit
         EnsureSurgeryInFlight(patient, stepPart, surgeon, leafId, leafDisplay, armed.TargetPartType, armed.TargetSymmetry);
 
         if (RmcSurgery.GetSingleton(leafId) is { } leafEnt
@@ -260,6 +260,7 @@ public sealed class CMUSurgeryFlowSystem : SharedCMUSurgeryFlowSystem
                 armed.StepIndex = nextLinear.StepIndex;
                 armed.RequiredToolCategory = nextLinear.ToolCategory;
                 armed.StepLabel = nextLinear.StepLabel;
+                armed.TotalSteps = nextLinear.TotalSteps; // RuCM edit
                 armed.ArmedAt = Timing.CurTime;
                 Dirty(patient, armed);
                 _dispatch.RefreshUiForPatient(patient);
@@ -273,6 +274,7 @@ public sealed class CMUSurgeryFlowSystem : SharedCMUSurgeryFlowSystem
             armed.StepIndex = next.StepIndex;
             armed.RequiredToolCategory = next.ToolCategory;
             armed.StepLabel = next.StepLabel;
+            armed.TotalSteps = next.TotalSteps; // RuCM edit
             armed.ArmedAt = Timing.CurTime;
             Dirty(patient, armed);
             _dispatch.RefreshUiForPatient(patient);
@@ -403,7 +405,7 @@ public sealed class CMUSurgeryFlowSystem : SharedCMUSurgeryFlowSystem
         if (next is null)
             return false;
 
-        var display = ResolveLeafDisplayName(best.SurgeryId);
+        var display = ResolveSurgeryDisplayName(best.SurgeryId); // RuCM edit
         EnsureSurgeryInFlight(patient, stepPart, surgeon, best.SurgeryId, display, armed.TargetPartType, armed.TargetSymmetry);
         Popup.PopupEntity(
             Loc.GetString("cmu-medical-surgery-auto-continue", ("surgery", display)),
@@ -475,14 +477,14 @@ public sealed class CMUSurgeryFlowSystem : SharedCMUSurgeryFlowSystem
         return category is "suture" or "head_organ";
     }
 
-    private string ResolveLeafDisplayName(string leafId)
-    {
-        if (TryGetMetadata(leafId, out var metadata))
-            return metadata.DisplayName ?? leafId;
-        if (Prototypes.TryIndex<EntityPrototype>(leafId, out var proto))
-            return proto.Name;
-        return leafId;
-    }
+    // private string ResolveLeafDisplayName(string leafId) // RuCM edit
+    // {
+    //     if (TryGetMetadata(leafId, out var metadata))
+    //         return metadata.DisplayName ?? leafId;
+    //     if (Prototypes.TryIndex<EntityPrototype>(leafId, out var proto))
+    //         return proto.Name;
+    //     return leafId;
+    // }
 
     private bool TryFailSurgeryStep(EntityUid patient, string stepProtoId, string? toolCategory, EntityUid surgeon, EntityUid? tool)
     {

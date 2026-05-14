@@ -1,5 +1,6 @@
 cmu-medical-scanner-body-map-header        = Body Map
 cmu-medical-scanner-pulse-label            = Pulse:
+cmu-medical-scanner-blood-label            = Blood:
 cmu-medical-scanner-body-parts-header      = Body parts
 cmu-medical-scanner-organs-header          = Organs
 cmu-medical-scanner-fractures-header       = Fractures
@@ -134,3 +135,22 @@ cmu-medical-stethoscope-pain-mild          = The patient seems uncomfortable.
 cmu-medical-stethoscope-pain-moderate      = The patient is in noticeable pain.
 cmu-medical-stethoscope-pain-severe        = The patient is in heavy pain.
 cmu-medical-stethoscope-pain-shock         = The patient is in shock.
+
+# Part display names
+cmu-medical-scanner-part-name =
+    { $symmetry ->
+        [left] Left { $type }
+        [right] Right { $type }
+       *[none] { $type ->
+            [head] Head
+            [torso] Torso
+           *[other] { $type }
+        }
+    }
+
+# Organ damage stages
+cmu-medical-scanner-organ-stage-healthy  = Healthy
+cmu-medical-scanner-organ-stage-bruised  = Bruised
+cmu-medical-scanner-organ-stage-damaged  = Damaged
+cmu-medical-scanner-organ-stage-failing  = Failing
+cmu-medical-scanner-organ-stage-dead     = Dead
