@@ -1,22 +1,22 @@
-ent-PartMoth-name = часть тела мотылька
+ent-PartMoth-name = moth body part
 
-ent-TorsoMoth-name = туловище мотылька
+ent-TorsoMoth-name = moth torso
 
-ent-HeadMoth-name = голова мотылька
+ent-HeadMoth-name = moth head
 
-ent-LeftArmMoth-name = левая рука мотылька
+ent-LeftArmMoth-name = left moth arm
 
-ent-RightArmMoth-name = правая рука мотылька
+ent-RightArmMoth-name = right moth arm
 
-ent-LeftHandMoth-name = левая рука мотылька
+ent-LeftHandMoth-name = left moth hand
 
-ent-RightHandMoth-name = правая рука мотылька
+ent-RightHandMoth-name = right moth hand
 
-ent-LeftLegMoth-name = левая нога мотылька
+ent-LeftLegMoth-name = left moth leg
 
-ent-RightLegMoth-name = правая нога мотылька
+ent-RightLegMoth-name = right moth leg
 
-ent-LeftFootMoth-name = левая нога мотылька
+ent-LeftFootMoth-name = left moth foot
 
-ent-RightFootMoth-name = правая нога мотылька
+ent-RightFootMoth-name = right moth foot
 

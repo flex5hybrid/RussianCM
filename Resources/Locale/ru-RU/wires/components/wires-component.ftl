@@ -9,7 +9,7 @@ wires-component-ui-on-receive-message-cannot-mend-uncut-wire = Вы не мож�
 ## UI
 
 wires-menu-name-label = Провода
-wires-menu-dead-beef-text = МЕРТВАЯ ГОВЯДИНА
+wires-menu-dead-beef-text = DEAD-BEEF
 wires-menu-help-popup =
     Кликайте на позолоченные контакты рукой с мультитулом чтобы подавать импульсы на соответствующие провода.
     Кликайте на провода рукой с кусачками чтобы перерезать или соединять их.

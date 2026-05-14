@@ -1,3 +1,3 @@
-ent-ActionKnock-name = Стук
-ent-ActionKnock-desc = Это заклинание открывает ближайшие двери.
+ent-ActionKnock-name = Knock
+ent-ActionKnock-desc = This spell opens nearby doors.
 

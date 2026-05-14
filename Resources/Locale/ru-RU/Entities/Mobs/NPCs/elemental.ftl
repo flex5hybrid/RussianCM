@@ -1,64 +1,64 @@
-ent-MobOreCrab-name = рудный краб
+ent-MobOreCrab-name = ore crab
 
-ent-MobQuartzCrab-name = рудный краб
-ent-MobQuartzCrab-desc = Рудный краб из кварца.
+ent-MobQuartzCrab-name = ore crab
+ent-MobQuartzCrab-desc = An ore crab made from Quartz.
 
-ent-MobIronCrab-name = рудный краб
-ent-MobIronCrab-desc = Рудный краб из железа.
+ent-MobIronCrab-name = ore crab
+ent-MobIronCrab-desc = An ore crab made from iron.
 
-ent-MobCoalCrab-name = рудный краб
-ent-MobCoalCrab-desc = Рудный краб из угля.
+ent-MobCoalCrab-name = ore crab
+ent-MobCoalCrab-desc = An ore crab made from coal.
 
-ent-MobUraniumCrab-name = рудный краб
-ent-MobUraniumCrab-desc = Рудный краб из урана.
+ent-MobUraniumCrab-name = ore crab
+ent-MobUraniumCrab-desc = An ore crab made from uranium.
 
-ent-MobBananiumCrab-name = рудный краб
-ent-MobBananiumCrab-desc = Рудный краб из банана.
+ent-MobBananiumCrab-name = ore crab
+ent-MobBananiumCrab-desc = An ore crab made from bananium.
 
-ent-MobSilverCrab-name = рудный краб
-ent-MobSilverCrab-desc = Рудный краб из серебра.
+ent-MobSilverCrab-name = ore crab
+ent-MobSilverCrab-desc = An ore crab made from silver.
 
-ent-MobGoldCrab-name = рудный краб
-ent-MobGoldCrab-desc = Рудный краб из золота.
+ent-MobGoldCrab-name = ore crab
+ent-MobGoldCrab-desc = An ore crab made from gold.
 
-ent-ReagentSlime-name = реагент слизи
-ent-ReagentSlime-desc = Оно состоит из жидкости и хочет растворить вас в себе.
+ent-ReagentSlime-name = reagent slime
+ent-ReagentSlime-desc = It consists of a liquid, and it wants to dissolve you in itself.
 
-ent-ReagentSlimeSpawner-name = Реагентный генератор слизи
+ent-ReagentSlimeSpawner-name = Reagent Slime Spawner
 
-ent-ReagentSlimeBeer-name = реагент слизи
-ent-ReagentSlimeBeer-desc = Оно состоит из жидкости и хочет растворить вас в себе.
+ent-ReagentSlimeBeer-name = reagent slime
+ent-ReagentSlimeBeer-desc = It consists of a liquid, and it wants to dissolve you in itself.
 
-ent-ReagentSlimePax-name = реагент слизи
-ent-ReagentSlimePax-desc = Оно состоит из жидкости и хочет растворить вас в себе.
+ent-ReagentSlimePax-name = reagent slime
+ent-ReagentSlimePax-desc = It consists of a liquid, and it wants to dissolve you in itself.
 
-ent-ReagentSlimeNocturine-name = реагент слизи
-ent-ReagentSlimeNocturine-desc = Оно состоит из жидкости и хочет растворить вас в себе.
+ent-ReagentSlimeNocturine-name = reagent slime
+ent-ReagentSlimeNocturine-desc = It consists of a liquid, and it wants to dissolve you in itself.
 
-ent-ReagentSlimeTHC-name = реагент слизи
-ent-ReagentSlimeTHC-desc = Оно состоит из жидкости и хочет растворить вас в себе.
+ent-ReagentSlimeTHC-name = reagent slime
+ent-ReagentSlimeTHC-desc = It consists of a liquid, and it wants to dissolve you in itself.
 
-ent-ReagentSlimeBicaridine-name = реагент слизи
-ent-ReagentSlimeBicaridine-desc = Оно состоит из жидкости и хочет растворить вас в себе.
+ent-ReagentSlimeBicaridine-name = reagent slime
+ent-ReagentSlimeBicaridine-desc = It consists of a liquid, and it wants to dissolve you in itself.
 
-ent-ReagentSlimeToxin-name = реагент слизи
-ent-ReagentSlimeToxin-desc = Оно состоит из жидкости и хочет растворить вас в себе.
+ent-ReagentSlimeToxin-name = reagent slime
+ent-ReagentSlimeToxin-desc = It consists of a liquid, and it wants to dissolve you in itself.
 
-ent-ReagentSlimeNapalm-name = реагент слизи
-ent-ReagentSlimeNapalm-desc = Оно состоит из жидкости и хочет растворить вас в себе.
+ent-ReagentSlimeNapalm-name = reagent slime
+ent-ReagentSlimeNapalm-desc = It consists of a liquid, and it wants to dissolve you in itself.
 
-ent-ReagentSlimeOmnizine-name = реагент слизи
-ent-ReagentSlimeOmnizine-desc = Оно состоит из жидкости и хочет растворить вас в себе.
+ent-ReagentSlimeOmnizine-name = reagent slime
+ent-ReagentSlimeOmnizine-desc = It consists of a liquid, and it wants to dissolve you in itself.
 
-ent-ReagentSlimeMuteToxin-name = реагент слизи
-ent-ReagentSlimeMuteToxin-desc = Оно состоит из жидкости и хочет растворить вас в себе.
+ent-ReagentSlimeMuteToxin-name = reagent slime
+ent-ReagentSlimeMuteToxin-desc = It consists of a liquid, and it wants to dissolve you in itself.
 
-ent-ReagentSlimeNorepinephricAcid-name = реагент слизи
-ent-ReagentSlimeNorepinephricAcid-desc = Оно состоит из жидкости и хочет растворить вас в себе.
+ent-ReagentSlimeNorepinephricAcid-name = reagent slime
+ent-ReagentSlimeNorepinephricAcid-desc = It consists of a liquid, and it wants to dissolve you in itself.
 
-ent-ReagentSlimeEphedrine-name = реагент слизи
-ent-ReagentSlimeEphedrine-desc = Оно состоит из жидкости и хочет растворить вас в себе.
+ent-ReagentSlimeEphedrine-name = reagent slime
+ent-ReagentSlimeEphedrine-desc = It consists of a liquid, and it wants to dissolve you in itself.
 
-ent-ReagentSlimeRobustHarvest-name = реагент слизи
-ent-ReagentSlimeRobustHarvest-desc = Оно состоит из жидкости и хочет растворить вас в себе.
+ent-ReagentSlimeRobustHarvest-name = reagent slime
+ent-ReagentSlimeRobustHarvest-desc = It consists of a liquid, and it wants to dissolve you in itself.
 

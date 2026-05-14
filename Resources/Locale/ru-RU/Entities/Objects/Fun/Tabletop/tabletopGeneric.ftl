@@ -1,14 +1,14 @@
-ent-RedTabletopPiece-name = красный кусок
+ent-RedTabletopPiece-name = red piece
 
-ent-GreenTabletopPiece-name = зеленый кусок
+ent-GreenTabletopPiece-name = green piece
 
-ent-YellowTabletopPiece-name = желтый кусок
+ent-YellowTabletopPiece-name = yellow piece
 
-ent-BlueTabletopPiece-name = синий кусок
+ent-BlueTabletopPiece-name = blue piece
 
-ent-WhiteTabletopPiece-name = белый кусок
+ent-WhiteTabletopPiece-name = white piece
 
-ent-BlackTabletopPiece-name = черный кусок
+ent-BlackTabletopPiece-name = black piece
 
-ent-BaseGenericTabletopPiece-name = элемент
+ent-BaseGenericTabletopPiece-name = item
 

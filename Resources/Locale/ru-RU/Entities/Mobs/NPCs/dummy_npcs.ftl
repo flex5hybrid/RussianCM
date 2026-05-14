@@ -1,3 +1,3 @@
-ent-MobHumanPathDummy-name = манекен для поиска пути
-ent-MobHumanPathDummy-desc = Жалкая куча секретов.
+ent-MobHumanPathDummy-name = pathfinding dummy
+ent-MobHumanPathDummy-desc = A miserable pile of secrets.
 

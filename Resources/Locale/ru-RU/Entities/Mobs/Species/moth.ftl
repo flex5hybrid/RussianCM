@@ -1,2 +1,2 @@
-ent-BaseMobMoth-name = Урист МакФлафф
+ent-BaseMobMoth-name = Urist McFluff
 

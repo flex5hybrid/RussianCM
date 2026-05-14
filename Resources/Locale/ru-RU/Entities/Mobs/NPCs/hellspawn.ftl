@@ -1,3 +1,3 @@
-ent-MobHellspawn-name = адское порождение
-ent-MobHellspawn-desc = Непреодолимая сила кровавой бойни.
+ent-MobHellspawn-name = hellspawn
+ent-MobHellspawn-desc = An unstoppable force of carnage.
 

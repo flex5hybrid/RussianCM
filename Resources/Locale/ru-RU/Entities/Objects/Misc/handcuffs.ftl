@@ -1,20 +1,20 @@
-ent-Handcuffs-name = наручники
-ent-Handcuffs-desc = Используется для задержания преступников и прочих придурков.
+ent-Handcuffs-name = handcuffs
+ent-Handcuffs-desc = Used to detain criminals and other assholes.
 
-ent-Cablecuffs-name = самодельные наручники
-ent-Cablecuffs-desc = Самодельные наручники из запасных кабелей.
+ent-Cablecuffs-name = makeshift handcuffs
+ent-Cablecuffs-desc = Homemade handcuffs crafted from spare cables.
 
-ent-Zipties-name = молнии
-ent-Zipties-desc = Прочные одноразовые пластиковые застежки-молнии, идеально подходящие для удержания буйных заключенных.
+ent-Zipties-name = zipties
+ent-Zipties-desc = Tough single-use plastic zipties, ideal for restraining rowdy prisoners.
 
-ent-ZiptiesBroken-name = сломанные молнии
-ent-ZiptiesBroken-desc = Эти молнии выглядят так, будто они пытались проложить не те кабели.
+ent-ZiptiesBroken-name = broken zipties
+ent-ZiptiesBroken-desc = These zipties look like they tried to manage the wrong cables.
 
-ent-CablecuffsBroken-name = сломанные кабели
-ent-CablecuffsBroken-desc = Эти кабели сломаны в нескольких местах и кажутся бесполезными.
+ent-CablecuffsBroken-name = broken cables
+ent-CablecuffsBroken-desc = These cables are broken in several places and don't seem very useful.
 
-ent-ClothingOuterStraightjacket-name = смирительная рубашка
-ent-ClothingOuterStraightjacket-desc = Используется для сдерживания тех, кто может причинить вред себе или другим.
+ent-ClothingOuterStraightjacket-name = straitjacket
+ent-ClothingOuterStraightjacket-desc = Used to restrain those who may cause harm to themselves or others.
 
-ent-BaseHandcuffsBroken-name = элемент
+ent-BaseHandcuffsBroken-name = item
 

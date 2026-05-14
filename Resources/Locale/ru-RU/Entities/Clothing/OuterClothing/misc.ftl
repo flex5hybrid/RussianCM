@@ -1,80 +1,80 @@
-ent-ClothingOuterApron-name = фартук
-ent-ClothingOuterApron-desc = Модный фартук для стильной особы.
+ent-ClothingOuterApron-name = apron
+ent-ClothingOuterApron-desc = A fancy apron for a stylish person.
 
-ent-ClothingOuterApronBar-name = фартук
-ent-ClothingOuterApronBar-desc = Темный фартук, предназначенный для барменов.
+ent-ClothingOuterApronBar-name = apron
+ent-ClothingOuterApronBar-desc = A darker apron designed for bartenders.
 
-ent-ClothingOuterApronBotanist-name = фартук
-ent-ClothingOuterApronBotanist-desc = Толстый синий фартук идеально защитит вашу мягкую плоть от грязи, грязи и шипов.
+ent-ClothingOuterApronBotanist-name = apron
+ent-ClothingOuterApronBotanist-desc = A thick blue-apron, perfect for insulating your soft flesh from spills, soil and thorns.
 
-ent-ClothingOuterApronChef-name = фартук
-ent-ClothingOuterApronChef-desc = Фартук-пиджак, используемый поваром высокого класса.
+ent-ClothingOuterApronChef-name = apron
+ent-ClothingOuterApronChef-desc = An apron-jacket used by a high class chef.
 
-ent-ClothingOuterJacketChef-name = куртка шеф-повара
-ent-ClothingOuterJacketChef-desc = Фартук-пиджак, используемый поваром высокого класса.
+ent-ClothingOuterJacketChef-name = chef jacket
+ent-ClothingOuterJacketChef-desc = An apron-jacket used by a high class chef.
 
-ent-ClothingOuterHoodieBlack-name = черная толстовка
-ent-ClothingOuterHoodieBlack-desc = Боже мой, это черная толстовка!
+ent-ClothingOuterHoodieBlack-name = black hoodie
+ent-ClothingOuterHoodieBlack-desc = Oh my God, it's a black hoodie!
 
-ent-ClothingOuterHoodieGrey-name = серая толстовка
-ent-ClothingOuterHoodieGrey-desc = Серая толстовка.
+ent-ClothingOuterHoodieGrey-name = grey hoodie
+ent-ClothingOuterHoodieGrey-desc = A grey hoodie.
 
-ent-ClothingOuterCardborg-name = Кардборг костюм
-ent-ClothingOuterCardborg-desc = Обычная картонная коробка с прорезанными по бокам дырочками.
+ent-ClothingOuterCardborg-name = cardborg costume
+ent-ClothingOuterCardborg-desc = An ordinary cardboard box with holes cut in the sides.
 
-ent-ClothingOuterHoodieChaplain-name = толстовка капеллана
-ent-ClothingOuterHoodieChaplain-desc = Черное и строгое худи капеллана.
+ent-ClothingOuterHoodieChaplain-name = chaplain's hoodie
+ent-ClothingOuterHoodieChaplain-desc = Black and strict chaplain hoodie.
 
-ent-ClothingOuterPonchoClassic-name = классическое пончо
-ent-ClothingOuterPonchoClassic-desc = Теплое и удобное классическое пончо.
+ent-ClothingOuterPonchoClassic-name = classic poncho
+ent-ClothingOuterPonchoClassic-desc = A warm and comfy classic poncho.
 
-ent-ClothingOuterRobesCult-name = культовые одежды
-ent-ClothingOuterRobesCult-desc = Не существует культа без классических красно-малиновых культовых одежд.
+ent-ClothingOuterRobesCult-name = cult robes
+ent-ClothingOuterRobesCult-desc = There's no cult without classic red/crimson cult robes.
 
-ent-ClothingOuterRobesJudge-name = судейские мантии
-ent-ClothingOuterRobesJudge-desc = Эта мантия внушает власть.
+ent-ClothingOuterRobesJudge-name = judge robes
+ent-ClothingOuterRobesJudge-desc = This robe commands authority.
 
-ent-ClothingOuterPoncho-name = пончо
-ent-ClothingOuterPoncho-desc = Теплое и удобное пончо.
+ent-ClothingOuterPoncho-name = poncho
+ent-ClothingOuterPoncho-desc = A warm and comfy poncho.
 
-ent-ClothingOuterSanta-name = костюм Санты
+ent-ClothingOuterSanta-name = santa suit
 ent-ClothingOuterSanta-desc = Ho ho ho!
 
-ent-ClothingOuterWizardViolet-name = фиолетовые мантии волшебника
-ent-ClothingOuterWizardViolet-desc = Причудливое, инкрустированное драгоценными камнями фиолетовое одеяние, излучающее магическую энергию.
+ent-ClothingOuterWizardViolet-name = violet wizard robes
+ent-ClothingOuterWizardViolet-desc = A bizarre gem-encrusted violet robe that radiates magical energies.
 
-ent-ClothingOuterWizard-name = мантия волшебника
-ent-ClothingOuterWizard-desc = Причудливое инкрустированное драгоценными камнями синее одеяние, излучающее магическую энергию.
+ent-ClothingOuterWizard-name = wizard robes
+ent-ClothingOuterWizard-desc = A bizarre gem-encrusted blue robe that radiates magical energies.
 
-ent-ClothingOuterWizardRed-name = красные мантии волшебника
-ent-ClothingOuterWizardRed-desc = Странная красная шляпа, наверняка принадлежащая настоящему магу.
+ent-ClothingOuterWizardRed-name = red wizard robes
+ent-ClothingOuterWizardRed-desc = Strange-looking, red, hat-wear that most certainly belongs to a real magic user.
 
-ent-ClothingOuterSkub-name = скаб костюм
-ent-ClothingOuterSkub-desc = На внешней стороне этого цилиндрического костюма грубо написано «Скуб».
+ent-ClothingOuterSkub-name = skub suit
+ent-ClothingOuterSkub-desc = Skub is crudely written on the outside of this cylindrical suit.
 
-ent-ClothingOuterPlagueSuit-name = костюм чумного доктора
-ent-ClothingOuterPlagueSuit-desc = Плохое предзнаменование.
+ent-ClothingOuterPlagueSuit-name = plague doctor suit
+ent-ClothingOuterPlagueSuit-desc = A bad omen.
 
-ent-ClothingOuterNunRobe-name = монашеский халат
-ent-ClothingOuterNunRobe-desc = Максимальное благочестие в этой звездной системе.
+ent-ClothingOuterNunRobe-name = nun robe
+ent-ClothingOuterNunRobe-desc = Maximum piety in this star system.
 
-ent-ClothingOuterGhostSheet-name = призрачный лист
-ent-ClothingOuterGhostSheet-desc = Жуткий!!!
+ent-ClothingOuterGhostSheet-name = ghost sheet
+ent-ClothingOuterGhostSheet-desc = Spooky!!!
 
-ent-ClothingOuterHospitalGown-name = больничный халат
-ent-ClothingOuterHospitalGown-desc = Изготовлен из шерсти забитых ягнят. Жестокость делает его мягче.
+ent-ClothingOuterHospitalGown-name = hospital gown
+ent-ClothingOuterHospitalGown-desc = Made from the wool of slaughtered baby lambs. The cruelty makes it softer.
 
-ent-ClothingOuterFlannelRed-name = красная фланелевая куртка
-ent-ClothingOuterFlannelRed-desc = Старомодная красная фланелевая куртка для космической осени.
+ent-ClothingOuterFlannelRed-name = red flannel jacket
+ent-ClothingOuterFlannelRed-desc = An old fashioned red flannel jacket for space autumn.
 
-ent-ClothingOuterFlannelBlue-name = синяя фланелевая куртка
-ent-ClothingOuterFlannelBlue-desc = Старомодная синяя фланелевая куртка для космической осени.
+ent-ClothingOuterFlannelBlue-name = blue flannel jacket
+ent-ClothingOuterFlannelBlue-desc = An old fashioned blue flannel jacket for space autumn.
 
-ent-ClothingOuterFlannelGreen-name = зеленая фланелевая куртка
-ent-ClothingOuterFlannelGreen-desc = Старомодная зеленая фланелевая куртка для космической осени.
+ent-ClothingOuterFlannelGreen-name = green flannel jacket
+ent-ClothingOuterFlannelGreen-desc = An old fashioned green flannel jacket for space autumn.
 
-ent-ClothingOuterRedRacoon-name = красный костюм енота
-ent-ClothingOuterRedRacoon-desc = Пушистый костюм рыжего енота!
+ent-ClothingOuterRedRacoon-name = red racoon suit
+ent-ClothingOuterRedRacoon-desc = Fluffy suit of red racoon!
 
 ent-ClothingOuterWizardBase-name = lathe-category-clothing
 

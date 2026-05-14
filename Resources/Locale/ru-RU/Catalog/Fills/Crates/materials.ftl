@@ -1,45 +1,45 @@
-ent-CrateMaterialGlass-name = ящик из листового стекла
-ent-CrateMaterialGlass-desc = 90 листов стекла, тщательно упакованных.
+ent-CrateMaterialGlass-name = glass sheet crate
+ent-CrateMaterialGlass-desc = 90 sheets of glass, packed with care.
 
-ent-CrateMaterialSteel-name = ящик из стального листа
-ent-CrateMaterialSteel-desc = 90 листов стали.
+ent-CrateMaterialSteel-name = steel sheet crate
+ent-CrateMaterialSteel-desc = 90 sheets of steel.
 
-ent-CrateMaterialTextiles-name = текстильный ящик
-ent-CrateMaterialTextiles-desc = 60 кусков ткани и 30 кусков дюрнита.
+ent-CrateMaterialTextiles-name = textiles crate
+ent-CrateMaterialTextiles-desc = 60 pieces of cloth and 30 pieces of durathread.
 
-ent-CrateMaterialPlastic-name = ящик из пластикового листа
-ent-CrateMaterialPlastic-desc = 90 листов пластика.
+ent-CrateMaterialPlastic-name = plastic sheet crate
+ent-CrateMaterialPlastic-desc = 90 sheets of plastic.
 
-ent-CrateMaterialWood-name = деревянный ящик
-ent-CrateMaterialWood-desc = Куча деревянных досок.
+ent-CrateMaterialWood-name = wood crate
+ent-CrateMaterialWood-desc = Bunch of wood planks.
 
-ent-CrateMaterialBrass-name = латунный ящик
-ent-CrateMaterialBrass-desc = 90 листов латуни.
+ent-CrateMaterialBrass-name = brass crate
+ent-CrateMaterialBrass-desc = 90 sheets of brass.
 
-ent-CrateMaterialPlasteel-name = пластальный ящик
-ent-CrateMaterialPlasteel-desc = 30 листов пластали.
+ent-CrateMaterialPlasteel-name = plasteel crate
+ent-CrateMaterialPlasteel-desc = 30 sheets of plasteel.
 
-ent-CrateMaterialPlasma-name = твердый плазменный ящик
-ent-CrateMaterialPlasma-desc = 30 листов плазмы.
+ent-CrateMaterialPlasma-name = solid plasma crate
+ent-CrateMaterialPlasma-desc = 30 sheets of plasma.
 
-ent-CrateMaterialGold-name = золотой ящик
-ent-CrateMaterialGold-desc = 30 слитков золота.
+ent-CrateMaterialGold-name = gold crate
+ent-CrateMaterialGold-desc = 30 bars of gold.
 
-ent-CrateMaterialSilver-name = серебряный ящик
-ent-CrateMaterialSilver-desc = 30 слитков серебра.
+ent-CrateMaterialSilver-name = silver crate
+ent-CrateMaterialSilver-desc = 30 bars of silver.
 
-ent-CrateMaterialCardboard-name = картонный ящик
-ent-CrateMaterialCardboard-desc = 90 штук картона.
+ent-CrateMaterialCardboard-name = cardboard crate
+ent-CrateMaterialCardboard-desc = 90 pieces of cardboard.
 
-ent-CrateMaterialPaper-name = бумажный ящик
-ent-CrateMaterialPaper-desc = 90 листов бумаги.
+ent-CrateMaterialPaper-name = paper crate
+ent-CrateMaterialPaper-desc = 90 sheets of paper.
 
-ent-CrateMaterialRandom-name = излишки материалов
-ent-CrateMaterialRandom-desc = Откуда-то излишки материалов.
+ent-CrateMaterialRandom-name = surplus materials
+ent-CrateMaterialRandom-desc = Surplus materials from somewhere.
 
-ent-CrateMaterialSilo-name = ящик для силоса для материалов
-ent-CrateMaterialSilo-desc = Пакет, включающий все материалы для создания бункера для материалов.
+ent-CrateMaterialSilo-name = material silo crate
+ent-CrateMaterialSilo-desc = A package including all the materials to create a material silo.
 
-ent-CrateMaterialBasicResource-name = основной ящик из листов
-ent-CrateMaterialBasicResource-desc = 30 листов стали, стекла и пластика.
+ent-CrateMaterialBasicResource-name = basic sheet crate
+ent-CrateMaterialBasicResource-desc = 30 sheets of steel, glass, and plastic.
 

@@ -1,22 +1,22 @@
-ent-PartVox-name = вокс-часть тела
+ent-PartVox-name = vox body part
 
-ent-TorsoVox-name = вокс-торс
+ent-TorsoVox-name = vox torso
 
-ent-HeadVox-name = вокс-голова
+ent-HeadVox-name = vox head
 
-ent-LeftArmVox-name = левая рука вокс
+ent-LeftArmVox-name = left vox arm
 
-ent-RightArmVox-name = правая вокс-рука
+ent-RightArmVox-name = right vox arm
 
-ent-LeftHandVox-name = левая вокс-рука
+ent-LeftHandVox-name = left vox hand
 
-ent-RightHandVox-name = правая рука вокс
+ent-RightHandVox-name = right vox hand
 
-ent-LeftLegVox-name = левая вокс-нога
+ent-LeftLegVox-name = left vox leg
 
-ent-RightLegVox-name = правая вокс-нога
+ent-RightLegVox-name = right vox leg
 
-ent-LeftFootVox-name = левая вокс-нога
+ent-LeftFootVox-name = left vox foot
 
-ent-RightFootVox-name = правая вокс-нога
+ent-RightFootVox-name = right vox foot
 

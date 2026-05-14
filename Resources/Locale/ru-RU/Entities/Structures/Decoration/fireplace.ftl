@@ -1,3 +1,3 @@
-ent-Fireplace-name = камин
-ent-Fireplace-desc = Место, где есть огонь. Уютный!
+ent-Fireplace-name = fireplace
+ent-Fireplace-desc = A place that has fire. Cozy!
 

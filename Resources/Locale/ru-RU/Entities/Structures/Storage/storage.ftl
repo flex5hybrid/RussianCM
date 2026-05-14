@@ -1,3 +1,3 @@
-ent-Rack-name = стойка
-ent-Rack-desc = Полка для хранения вещей.
+ent-Rack-name = rack
+ent-Rack-desc = A rack for storing things on.
 

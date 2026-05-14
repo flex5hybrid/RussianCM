@@ -1,2 +1,2 @@
-ent-RandomDrinkSoda-name = случайный генератор газировки
+ent-RandomDrinkSoda-name = random soda spawner
 

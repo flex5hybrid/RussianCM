@@ -1,14 +1,14 @@
-ent-MobSpawnCrabQuartz-name = спаунер мобов кварцкраб
+ent-MobSpawnCrabQuartz-name = mobspawner quartzcrab
 
-ent-MobSpawnCrabIron-name = спаунер мобов железный краб
+ent-MobSpawnCrabIron-name = mobspawner ironcrab
 
-ent-MobSpawnCrabCoal-name = создатель мобов угольный краб
+ent-MobSpawnCrabCoal-name = mobspawner coalcrab
 
-ent-MobSpawnCrabSilver-name = спаунер мобов серебряный краб
+ent-MobSpawnCrabSilver-name = mobspawner silvercrab
 
-ent-MobSpawnCrabGold-name = золотой краб
+ent-MobSpawnCrabGold-name = mobspawner goldcrab
 
-ent-MobSpawnCrabUranium-name = создатель мобов урановый краб
+ent-MobSpawnCrabUranium-name = mobspawner uraniumcrab
 
-ent-MobSpawnCrabBananium-name = создатель мобов банановый краб
+ent-MobSpawnCrabBananium-name = mobspawner bananiumcrab
 

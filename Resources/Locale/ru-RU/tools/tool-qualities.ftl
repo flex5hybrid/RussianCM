@@ -36,9 +36,3 @@ tool-quality-digging-tool-name = Лопата
 
 tool-quality-brushing-name = Оттирание
 tool-quality-brushing-tool-name = Проволочная щётка
-
-# Missing entries synced from en-US
-
-tool-quality-vehicle-servicing-name = Автосервис
-
-tool-quality-vehicle-servicing-tool-name = Ремонтный домкрат

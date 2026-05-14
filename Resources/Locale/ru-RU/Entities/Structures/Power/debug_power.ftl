@@ -1,20 +1,20 @@
-ent-DebugConsumer-name = потребитель
+ent-DebugConsumer-name = consumer
 
-ent-DebugBatteryStorage-name = аккумулятор для хранения
+ent-DebugBatteryStorage-name = battery storage
 
-ent-DebugBatteryDischarger-name = разрядник аккумулятора
+ent-DebugBatteryDischarger-name = battery discharger
 
-ent-DebugPowerReceiver-name = приемник энергии
+ent-DebugPowerReceiver-name = power receiver
 
-ent-DebugGenerator-name = генератор
-ent-DebugGenerator-desc = Высокоэффективный термоэлектрический генератор.
+ent-DebugGenerator-name = generator
+ent-DebugGenerator-desc = A high efficiency thermoelectric generator.
 
-ent-DebugSMES-name = МСП
-ent-DebugSMES-desc = Сверхпроводящий магнитный накопитель энергии (СМЕС) большой емкости.
+ent-DebugSMES-name = SMES
+ent-DebugSMES-desc = A high-capacity superconducting magnetic energy storage (SMES) unit.
 
-ent-DebugSubstation-name = подстанция
-ent-DebugSubstation-desc = Уменьшает напряжение подаваемой в него электроэнергии.
+ent-DebugSubstation-name = substation
+ent-DebugSubstation-desc = Reduces the voltage of electricity put into it.
 
-ent-DebugAPC-name = БТР
-ent-DebugAPC-desc = Терминал управления электрическими системами района.
+ent-DebugAPC-name = APC
+ent-DebugAPC-desc = A control terminal for the area's electrical systems.
 

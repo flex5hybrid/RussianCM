@@ -1,2 +1,2 @@
-ent-BaseSign-name = базовый знак
+ent-BaseSign-name = base sign
 

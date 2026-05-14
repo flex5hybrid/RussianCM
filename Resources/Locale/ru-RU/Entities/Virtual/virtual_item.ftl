@@ -1,2 +1,2 @@
-ent-VirtualItem-name = ВИРТУАЛЬНЫЙ ПРЕДМЕТ, ВЫ НЕ ДОЛЖНЫ ВИДЕТЬ ЭТО
+ent-VirtualItem-name = VIRTUAL ITEM YOU SHOULD NOT SEE THIS
 

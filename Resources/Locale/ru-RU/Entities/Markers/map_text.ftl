@@ -1,2 +1,2 @@
-ent-MapText-name = текст карты
+ent-MapText-name = map text
 

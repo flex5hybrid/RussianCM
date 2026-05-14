@@ -1,4 +1,4 @@
-ent-BaseXenoArtifactStructure-name = артефакт
+ent-BaseXenoArtifactStructure-name = artifact
 
-ent-ComplexXenoArtifact-name = артефакт
+ent-ComplexXenoArtifact-name = artifact
 

@@ -1,26 +1,26 @@
-ent-WeaponWandPolymorphCarp-name = палочка карпа полиморф
-ent-WeaponWandPolymorphCarp-desc = Для тех случаев, когда филе карпа нужно быстро, а клоун выглядит сочным.
+ent-WeaponWandPolymorphCarp-name = wand of carp polymorph
+ent-WeaponWandPolymorphCarp-desc = For when you need a carp filet quick and the clown is looking juicy.
 
-ent-WeaponWandPolymorphMonkey-name = палочка обезьяны полиморф
-ent-WeaponWandPolymorphMonkey-desc = На случай, если вам понадобится друг-обезьяна.
+ent-WeaponWandPolymorphMonkey-name = wand of monkey polymorph
+ent-WeaponWandPolymorphMonkey-desc = For when you need a monkey friend.
 
-ent-WeaponWandFireball-name = палочка огненного шара
-ent-WeaponWandFireball-desc = Огромные огненные шары!
+ent-WeaponWandFireball-name = wand of fireball
+ent-WeaponWandFireball-desc = Great big balls of fire!
 
-ent-WeaponWandLocker-name = палочка из шкафчика
-ent-WeaponWandLocker-desc = Вещи ботанов на расстоянии!
+ent-WeaponWandLocker-name = wand of the locker
+ent-WeaponWandLocker-desc = Stuff nerds at a distance!
 
-ent-WeaponWandDeath-name = волшебная палочка мгновенной смерти
-ent-WeaponWandDeath-desc = Только лучшие и самые умные представители научно-исследовательской команды Space Wizards работали вместе, чтобы создать эту красоту.
+ent-WeaponWandDeath-name = magical wand of instant death
+ent-WeaponWandDeath-desc = Only the best and brightest of the Space Wizards R&D team worked together to create this beauty.
 
-ent-WeaponWandPolymorphDoor-name = палочка входа
-ent-WeaponWandPolymorphDoor-desc = На случай, если вам нужен маршрут для отступления.
+ent-WeaponWandPolymorphDoor-name = wand of entrance
+ent-WeaponWandPolymorphDoor-desc = For when you need a get-away route.
 
-ent-WeaponWandCluwne-name = палочка стуканья
-ent-WeaponWandCluwne-desc = Ухудшите их положение, превратив их в клунов.
+ent-WeaponWandCluwne-name = wand of cluwning
+ent-WeaponWandCluwne-desc = Make their situation worse by turning them into a cluwne.
 
-ent-WeaponWandPolymorphBread-name = волшебная хлебная палочка
-ent-WeaponWandPolymorphBread-desc = Превратите всех своих друзей в хлеб! Ваш босс! Ваши враги! Ваша собака! Делайте все хлебом!
+ent-WeaponWandPolymorphBread-name = magic bread wand
+ent-WeaponWandPolymorphBread-desc = Turn all your friends into bread! Your boss! Your enemies! Your dog! Make everything bread!
 
-ent-WeaponWandPolymorphBase-name = элемент
+ent-WeaponWandPolymorphBase-name = item
 

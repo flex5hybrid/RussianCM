@@ -1,2 +1,2 @@
-ent-WeaponWandBase-name = элемент
+ent-WeaponWandBase-name = item
 

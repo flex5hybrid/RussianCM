@@ -1,3 +1,3 @@
-ent-LidSalami-name = крышка салями
-ent-LidSalami-desc = Не подойдет, не подойдет.
+ent-LidSalami-name = salami lid
+ent-LidSalami-desc = Ain't gon' fit, won't fit.
 

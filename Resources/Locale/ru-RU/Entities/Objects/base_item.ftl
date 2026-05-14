@@ -1,4 +1,4 @@
-ent-BaseItem-name = элемент
+ent-BaseItem-name = item
 
-ent-BaseStorageItem-name = предмет хранения
+ent-BaseStorageItem-name = storage item
 

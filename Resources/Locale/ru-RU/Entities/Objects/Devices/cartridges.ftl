@@ -1,27 +1,27 @@
-ent-NotekeeperCartridge-name = картридж для блокнота
-ent-NotekeeperCartridge-desc = Программа для ведения заметок.
+ent-NotekeeperCartridge-name = notekeeper cartridge
+ent-NotekeeperCartridge-desc = A program for keeping notes.
 
-ent-NanoTaskCartridge-name = Картридж NanoTask
-ent-NanoTaskCartridge-desc = Программа, позволяющая вести список дел, которые нужно сделать.
+ent-NanoTaskCartridge-name = NanoTask cartridge
+ent-NanoTaskCartridge-desc = A program that allows you to keep a list of tasks to do.
 
-ent-NewsReaderCartridge-name = новостной картридж
-ent-NewsReaderCartridge-desc = Программа для чтения новостей.
+ent-NewsReaderCartridge-name = news cartridge
+ent-NewsReaderCartridge-desc = A program for reading news.
 
-ent-CrewManifestCartridge-name = картридж с декларацией экипажа
-ent-CrewManifestCartridge-desc = Программа для внесения в список ваших коллег по экипажу.
+ent-CrewManifestCartridge-name = crew manifest cartridge
+ent-CrewManifestCartridge-desc = A program for listing your fellow crewmembers.
 
-ent-NetProbeCartridge-name = Картридж NetProbe
-ent-NetProbeCartridge-desc = Программа для получения адреса и частоты сетевых устройств.
+ent-NetProbeCartridge-name = NetProbe cartridge
+ent-NetProbeCartridge-desc = A program for getting the address and frequency of network devices.
 
-ent-LogProbeCartridge-name = Картридж LogProbe
-ent-LogProbeCartridge-desc = Программа для получения логов доступа с устройств.
+ent-LogProbeCartridge-name = LogProbe cartridge
+ent-LogProbeCartridge-desc = A program for getting access logs from devices.
 
-ent-WantedListCartridge-name = Картридж из списка разыскиваемых
-ent-WantedListCartridge-desc = Программа для получения списка разыскиваемых лиц.
+ent-WantedListCartridge-name = Wanted list cartridge
+ent-WantedListCartridge-desc = A program to get a list of wanted persons.
 
-ent-MedTekCartridge-name = МедТек картридж
-ent-MedTekCartridge-desc = Программа, предоставляющая инструменты медицинской диагностики.
+ent-MedTekCartridge-name = MedTek cartridge
+ent-MedTekCartridge-desc = A program that provides medical diagnostic tools.
 
-ent-AstroNavCartridge-name = Картридж АстроНав
-ent-AstroNavCartridge-desc = Программа для навигации, предоставляющая координаты GPS.
+ent-AstroNavCartridge-name = AstroNav cartridge
+ent-AstroNavCartridge-desc = A program for navigation that provides GPS coordinates.
 

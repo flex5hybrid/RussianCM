@@ -1,6 +1,6 @@
-ent-ToySpawner-name = Создатель игрушек
+ent-ToySpawner-name = Toy Spawner
 
-ent-FigureSpawner-name = Создатель призовых фигурок
+ent-FigureSpawner-name = Prize Figurine Spawner
 
-ent-SpacemenFigureSpawner-name = Создатель минифигурок космонавтов
+ent-SpacemenFigureSpawner-name = Spacemen Minifigure Spawner
 

@@ -1,9 +1,9 @@
-ent-ClothingEyesBlindfold-name = повязка на глаза
-ent-ClothingEyesBlindfold-desc = Привязь, ведущая слепого.
+ent-ClothingEyesBlindfold-name = blindfold
+ent-ClothingEyesBlindfold-desc = The bind leading the blind.
 
-ent-ClothingEyesEyepatch-name = повязка на глазу
-ent-ClothingEyesEyepatch-desc = Ярр.
+ent-ClothingEyesEyepatch-name = eyepatch
+ent-ClothingEyesEyepatch-desc = Yarr.
 
-ent-ClothingEyesEyepatchFlipped-name = повязка на глазу
-ent-ClothingEyesEyepatchFlipped-desc = Ярр.
+ent-ClothingEyesEyepatchFlipped-name = eyepatch
+ent-ClothingEyesEyepatchFlipped-desc = Yarr.
 

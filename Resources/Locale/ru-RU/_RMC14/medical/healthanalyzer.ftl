@@ -24,7 +24,3 @@ rmc-health-analyzer-advice-dexalin = [color=#5887D5][font="Emoji"]💉[/font][/c
 rmc-health-analyzer-advice-bicaridine = [color=#ed4847][font="Emoji"]💉[/font][/color] Ввести одну дозу бикаридина.
 rmc-health-analyzer-advice-kelotane = [color=#f5e123][font="Emoji"]💉[/font][/color] Ввести одну дозу келотана.
 rmc-health-analyzer-advice-dylovene = [color=#3fc92a][font="Emoji"]💉[/font][/color] Ввести одну дозу диловена.
-
-# Missing entries synced from en-US
-
-rmc-health-analyzer-advice-larva-bursted = [color=red][font="Emoji"]☠[/font][/color] Разрыв грудной клетки — хирургическое восстановление пациента невозможно.

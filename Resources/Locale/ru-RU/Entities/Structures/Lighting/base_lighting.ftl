@@ -1,96 +1,96 @@
-ent-AlwaysPoweredWallLight-name = свет
-ent-AlwaysPoweredWallLight-desc = Всегда включенный свет.
+ent-AlwaysPoweredWallLight-name = light
+ent-AlwaysPoweredWallLight-desc = An always powered light.
 
-ent-PoweredlightEmpty-name = свет
-ent-PoweredlightEmpty-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
+ent-PoweredlightEmpty-name = light
+ent-PoweredlightEmpty-desc = A light fixture. Draws power and produces light when equipped with a light tube.
 
-ent-Poweredlight-name = свет
-ent-Poweredlight-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
+ent-Poweredlight-name = light
+ent-Poweredlight-desc = A light fixture. Draws power and produces light when equipped with a light tube.
 
-ent-PoweredlightLED-name = свет
-ent-PoweredlightLED-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
+ent-PoweredlightLED-name = light
+ent-PoweredlightLED-desc = A light fixture. Draws power and produces light when equipped with a light tube.
 
-ent-PoweredlightExterior-name = свет
-ent-PoweredlightExterior-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
+ent-PoweredlightExterior-name = light
+ent-PoweredlightExterior-desc = A light fixture. Draws power and produces light when equipped with a light tube.
 
-ent-PoweredlightSodium-name = свет
-ent-PoweredlightSodium-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
+ent-PoweredlightSodium-name = light
+ent-PoweredlightSodium-desc = A light fixture. Draws power and produces light when equipped with a light tube.
 
-ent-SmallLight-name = маленький свет
-ent-SmallLight-desc = Всегда включенный свет.
+ent-SmallLight-name = small light
+ent-SmallLight-desc = An always powered light.
 
-ent-PoweredSmallLightEmpty-name = маленький свет
-ent-PoweredSmallLightEmpty-desc = Светильник. Потребляет энергию и излучает свет, если оснащен лампочкой.
+ent-PoweredSmallLightEmpty-name = small light
+ent-PoweredSmallLightEmpty-desc = A light fixture. Draws power and produces light when equipped with a light bulb.
 
-ent-EmergencyLight-name = аварийное освещение
-ent-EmergencyLight-desc = Небольшой фонарь с внутренней батареей, который включается, как только на него перестает поступать питание. Технология Nanotrasen позволяет ему адаптировать свой цвет, чтобы предупреждать экипаж об условиях на станции.
+ent-EmergencyLight-name = emergency light
+ent-EmergencyLight-desc = A small light with an internal battery that turns on as soon as it stops receiving any power. Nanotrasen technology allows it to adapt its color to alert crew to the conditions of the station.
 
-ent-AlwaysPoweredLightLED-name = свет
-ent-AlwaysPoweredLightLED-desc = Всегда включенный свет.
+ent-AlwaysPoweredLightLED-name = light
+ent-AlwaysPoweredLightLED-desc = An always powered light.
 
-ent-AlwaysPoweredLightExterior-name = свет
-ent-AlwaysPoweredLightExterior-desc = Всегда включенный свет.
+ent-AlwaysPoweredLightExterior-name = light
+ent-AlwaysPoweredLightExterior-desc = An always powered light.
 
-ent-AlwaysPoweredLightSodium-name = свет
-ent-AlwaysPoweredLightSodium-desc = Всегда включенный свет.
+ent-AlwaysPoweredLightSodium-name = light
+ent-AlwaysPoweredLightSodium-desc = An always powered light.
 
-ent-PoweredLEDSmallLight-name = маленький свет
-ent-PoweredLEDSmallLight-desc = Светильник. Потребляет энергию и излучает свет, если оснащен лампочкой.
+ent-PoweredLEDSmallLight-name = small light
+ent-PoweredLEDSmallLight-desc = A light fixture. Draws power and produces light when equipped with a light bulb.
 
-ent-PoweredDimSmallLight-name = маленький свет
-ent-PoweredDimSmallLight-desc = Светильник. Потребляет энергию и излучает свет, если оснащен лампочкой.
+ent-PoweredDimSmallLight-name = small light
+ent-PoweredDimSmallLight-desc = A light fixture. Draws power and produces light when equipped with a light bulb.
 
-ent-PoweredWarmSmallLight-name = маленький свет
-ent-PoweredWarmSmallLight-desc = Светильник. Потребляет энергию и излучает свет, если оснащен лампочкой.
+ent-PoweredWarmSmallLight-name = small light
+ent-PoweredWarmSmallLight-desc = A light fixture. Draws power and produces light when equipped with a light bulb.
 
-ent-PoweredSmallLight-name = маленький свет
-ent-PoweredSmallLight-desc = Светильник. Потребляет энергию и излучает свет, если оснащен лампочкой.
+ent-PoweredSmallLight-name = small light
+ent-PoweredSmallLight-desc = A light fixture. Draws power and produces light when equipped with a light bulb.
 
-ent-PoweredlightCyan-name = свет
-ent-PoweredlightCyan-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
+ent-PoweredlightCyan-name = light
+ent-PoweredlightCyan-desc = A light fixture. Draws power and produces light when equipped with a light tube.
 
-ent-AlwaysPoweredlightCyan-name = свет
-ent-AlwaysPoweredlightCyan-desc = Всегда включенный свет.
+ent-AlwaysPoweredlightCyan-name = light
+ent-AlwaysPoweredlightCyan-desc = An always powered light.
 
-ent-PoweredlightBlue-name = свет
-ent-PoweredlightBlue-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
+ent-PoweredlightBlue-name = light
+ent-PoweredlightBlue-desc = A light fixture. Draws power and produces light when equipped with a light tube.
 
-ent-AlwaysPoweredlightBlue-name = свет
-ent-AlwaysPoweredlightBlue-desc = Всегда включенный свет.
+ent-AlwaysPoweredlightBlue-name = light
+ent-AlwaysPoweredlightBlue-desc = An always powered light.
 
-ent-PoweredlightYellow-name = свет
-ent-PoweredlightYellow-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
+ent-PoweredlightYellow-name = light
+ent-PoweredlightYellow-desc = A light fixture. Draws power and produces light when equipped with a light tube.
 
-ent-AlwaysPoweredlightYellow-name = свет
-ent-AlwaysPoweredlightYellow-desc = Всегда включенный свет.
+ent-AlwaysPoweredlightYellow-name = light
+ent-AlwaysPoweredlightYellow-desc = An always powered light.
 
-ent-PoweredlightPink-name = свет
-ent-PoweredlightPink-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
+ent-PoweredlightPink-name = light
+ent-PoweredlightPink-desc = A light fixture. Draws power and produces light when equipped with a light tube.
 
-ent-AlwaysPoweredlightPink-name = свет
-ent-AlwaysPoweredlightPink-desc = Всегда включенный свет.
+ent-AlwaysPoweredlightPink-name = light
+ent-AlwaysPoweredlightPink-desc = An always powered light.
 
-ent-PoweredlightOrange-name = свет
-ent-PoweredlightOrange-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
+ent-PoweredlightOrange-name = light
+ent-PoweredlightOrange-desc = A light fixture. Draws power and produces light when equipped with a light tube.
 
-ent-AlwaysPoweredlightOrange-name = свет
-ent-AlwaysPoweredlightOrange-desc = Всегда включенный свет.
+ent-AlwaysPoweredlightOrange-name = light
+ent-AlwaysPoweredlightOrange-desc = An always powered light.
 
-ent-PoweredlightBlack-name = свет
-ent-PoweredlightBlack-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
+ent-PoweredlightBlack-name = light
+ent-PoweredlightBlack-desc = A light fixture. Draws power and produces light when equipped with a light tube.
 
-ent-AlwaysPoweredlightBlack-name = свет
-ent-AlwaysPoweredlightBlack-desc = Всегда включенный свет.
+ent-AlwaysPoweredlightBlack-name = light
+ent-AlwaysPoweredlightBlack-desc = An always powered light.
 
-ent-PoweredlightRed-name = свет
-ent-PoweredlightRed-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
+ent-PoweredlightRed-name = light
+ent-PoweredlightRed-desc = A light fixture. Draws power and produces light when equipped with a light tube.
 
-ent-AlwaysPoweredlightRed-name = свет
-ent-AlwaysPoweredlightRed-desc = Всегда включенный свет.
+ent-AlwaysPoweredlightRed-name = light
+ent-AlwaysPoweredlightRed-desc = An always powered light.
 
-ent-PoweredlightGreen-name = свет
-ent-PoweredlightGreen-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
+ent-PoweredlightGreen-name = light
+ent-PoweredlightGreen-desc = A light fixture. Draws power and produces light when equipped with a light tube.
 
-ent-AlwaysPoweredlightGreen-name = свет
-ent-AlwaysPoweredlightGreen-desc = Всегда включенный свет.
+ent-AlwaysPoweredlightGreen-name = light
+ent-AlwaysPoweredlightGreen-desc = An always powered light.
 

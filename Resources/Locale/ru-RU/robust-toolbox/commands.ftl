@@ -59,7 +59,7 @@ cmd-list-desc = Выводит список доступных команд с �
 cmd-list-help = Использование: { $command } [фильтр]
     Выводит список всех доступных команд. Если был предоставлен аргумент, он будет использоваться для фильтрации команд по имени.
 
-cmd-list-heading = НАЗВАНИЕ СТОРОНЫ DESC{ "\u000A" }-------------------------{ "\u000A" }
+cmd-list-heading = SIDE NAME            DESC{ "\u000A" }-------------------------{ "\u000A" }
 
 cmd-list-arg-filter = [фильтр]
 
@@ -164,7 +164,7 @@ cmd-hint-savemap-id = <MapID>
 cmd-hint-savemap-path = <Путь>
 cmd-hint-savemap-force = [bool]
 
-cmd-loadmap-desc = Загружает карту с диска в игру.
+cmd-loadmap-desc = Loads a map from disk into the game.
 cmd-loadmap-help = Использование: { $command } <MapID> <Путь> [x] [y] [вращение] [consistentUids]
 cmd-loadmap-nullspace = Вы не можеге загрузить в карту 0.
 cmd-loadmap-exists = Карта { $mapId } уже существует.
@@ -178,8 +178,7 @@ cmd-hint-loadmap-uids = [float]
 cmd-hint-savebp-id = <Grid EntityID>
 
 ## 'flushcookies' command
-
-# Примечание: команда flushcookies взята из Robust.Client.WebView, её нет в коде основного движка.
+# Note: the flushcookies command is from Robust.Client.WebView, it's not in the main engine code.
 
 cmd-flushcookies-desc = Сброс хранилища CEF-cookie на диск.
 cmd-flushcookies-help = Использование: { $command }
@@ -587,4 +586,4 @@ cmd-localization_set_culture-help = Использование: { $command } <cu
 cmd-localization_set_culture-culture-name = <cultureName>
 cmd-localization_set_culture-changed = Локализация изменена на { $code } ({ $nativeName } / { $englishName })
 
-cmd-addmap-hint-2 = запуститьMapInit [true / false]
+cmd-addmap-hint-2 = runMapInit [true / false]

@@ -44,5 +44,3 @@ serialkiller-role-greeting = You have an insatiable urge to kill. Find your vict
 roles-antag-serialkiller-name = Serial Killer
 roles-antag-serialkiller-objective = Kill and avoid capture
 
-antag-category-colony-antags = Colony Antags
-antag-category-prometheus-antags = Prometheus Antags

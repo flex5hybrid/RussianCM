@@ -3,7 +3,6 @@ using Content.Server.Chat.Managers;
 using Content.Server.Chat.Systems;
 using Content.Server.Speech.EntitySystems;
 using Content.Server.Speech.Prototypes;
-using Content.Shared._CMU14.Yautja;
 using Content.Shared._RMC14.Chat;
 using Content.Shared._RMC14.Marines;
 using Content.Shared._RMC14.Xenonids;
@@ -50,12 +49,8 @@ public sealed class CMChatSystem : SharedCMChatSystem
             if (data.Observer)
                 continue;
 
-            if (session.AttachedEntity is { } attached &&
-                HasComp<XenoComponent>(attached) &&
-                !IsHivebrokenXeno(attached))
-            {
+            if (HasComp<XenoComponent>(session.AttachedEntity))
                 _toRemove.Add(session);
-            }
         }
 
         foreach (var session in _toRemove)
@@ -68,21 +63,18 @@ public sealed class CMChatSystem : SharedCMChatSystem
     {
         _toRemove.Clear();
 
-        if (!IsHivebrokenXeno(ent.Owner))
+        foreach (var (session, data) in args.Recipients)
         {
-            foreach (var (session, data) in args.Recipients)
-            {
-                if (data.Observer)
-                    continue;
+            if (data.Observer)
+                continue;
 
-                if (!HasComp<XenoComponent>(session.AttachedEntity))
-                    _toRemove.Add(session);
-            }
+            if (!HasComp<XenoComponent>(session.AttachedEntity))
+                _toRemove.Add(session);
+        }
 
-            foreach (var session in _toRemove)
-            {
-                args.Recipients.Remove(session);
-            }
+        foreach (var session in _toRemove)
+        {
+            args.Recipients.Remove(session);
         }
     }
 
@@ -90,9 +82,7 @@ public sealed class CMChatSystem : SharedCMChatSystem
     {
         msg = _wordreplacement.ApplyReplacements(msg, ChatSanitize);
 
-        var factionSanitize = HasComp<XenoComponent>(source) && !IsHivebrokenXeno(source)
-            ? XenoChatSanitize
-            : MarineChatSanitize;
+        var factionSanitize = HasComp<XenoComponent>(source) ? XenoChatSanitize : MarineChatSanitize;
         msg = _wordreplacement.ApplyReplacements(msg, factionSanitize);
 
         return msg;

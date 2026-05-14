@@ -1,2 +1,2 @@
-ent-RandomIngredient-name = генератор случайных ингредиентов
+ent-RandomIngredient-name = random ingredient spawner
 

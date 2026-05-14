@@ -1,6 +1,6 @@
-ent-LootSpawnerScienceMinor-name = производитель научных материалов
+ent-LootSpawnerScienceMinor-name = science supplies spawner
 
-ent-LootSpawnerScienceMajor-name = производитель научных материалов
+ent-LootSpawnerScienceMajor-name = science supplies spawner
 
-ent-LootSpawnerRoboticsBorgModule-name = спаунер досок робототехники
+ent-LootSpawnerRoboticsBorgModule-name = robotics board spawner
 

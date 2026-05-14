@@ -1,11 +1,11 @@
-ent-GrenadeStinger-name = жало гранаты
-ent-GrenadeStinger-desc = Здесь не на что смотреть, пожалуйста, разойдитесь.
+ent-GrenadeStinger-name = stinger grenade
+ent-GrenadeStinger-desc = Nothing to see here, please disperse.
 
-ent-GrenadeIncendiary-name = зажигательная граната
-ent-GrenadeIncendiary-desc = Гарантированно поднимем настроение.
+ent-GrenadeIncendiary-name = incendiary grenade
+ent-GrenadeIncendiary-desc = Guaranteed to light up the mood.
 
-ent-GrenadeShrapnel-name = шрапнельная граната
-ent-GrenadeShrapnel-desc = Выпускает смертоносную шрапнель, вызывающую сильное кровотечение.
+ent-GrenadeShrapnel-name = shrapnel grenade
+ent-GrenadeShrapnel-desc = Releases a deadly spray of shrapnel that causes severe bleeding.
 
-ent-ProjectileGrenadeBase-name = элемент
+ent-ProjectileGrenadeBase-name = item
 

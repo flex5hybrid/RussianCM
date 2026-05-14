@@ -1,8 +1,8 @@
-ent-CarpetBase-name = ковер
-ent-CarpetBase-desc = Необычная поверхность для ходьбы.
+ent-CarpetBase-name = carpet
+ent-CarpetBase-desc = Fancy walking surface.
 
-ent-CarpetChapel-name = ковер часовни
+ent-CarpetChapel-name = chapel's carpet
 
-ent-CarpetSBlue-name = ковер
-ent-CarpetSBlue-desc = Необычная поверхность для ходьбы.
+ent-CarpetSBlue-name = carpet
+ent-CarpetSBlue-desc = Fancy walking surface.
 

@@ -1,2 +1,2 @@
-cmd-npc-desc = Открывает окно отладки для NPC.
-cmd-npc-help = Использование: НПС
+cmd-npc-desc = Opens the debug window for NPCs.
+cmd-npc-help = Usage: npc

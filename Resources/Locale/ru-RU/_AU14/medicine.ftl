@@ -24,31 +24,3 @@ au14-hs-user-popup = Вы тампонируете гемостатическу�
 au14-hs-target-popup = { $user } тампонирует гемостатическую марлю в ваши раны.
 au14-hs-others-popup = { $user } тампонирует гемостатическую марлю в раны { $target }.
 au-pill-contents-speed-demon = Это демон скорости. Опасный наркотик.
-
-# Missing entries synced from en-US
-
-cm-pill-contents-oxycodone = Сильное обезболивающее, обычно используемое при хирургических процедурах. Значительно уменьшает боль.
-
-cm-pill-contents-tramadol = Обезболивающее среднего уровня. Уменьшает боль.
-
-cm-pill-contents-paracetamol = Легкое обезболивающее. Уменьшает легкую боль.
-
-cm-pill-contents-hepatocytin = Лечит повреждения печени.
-
-cm-pill-contents-pulmovine = Лечит повреждения легких.
-
-cm-pill-contents-nephronate = Лечит повреждения почек.
-
-cm-pill-contents-cardiocaine = Лечит повреждения сердца.
-
-cm-pill-contents-osteocalc = Лечит повреждения костей.
-
-rmc-osteocalc-container-label-text = OL
-
-rmc-cardiocaine-container-label-text = CE
-
-rmc-nephronate-container-label-text = NE
-
-rmc-pulmovine-container-label-text = PE
-
-rmc-hepatocytin-container-label-text = HN

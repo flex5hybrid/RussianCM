@@ -1,13 +1,13 @@
-ent-CheckerBoard-name = шахматная доска
-ent-CheckerBoard-desc = Шахматная доска. Детали включены!
+ent-CheckerBoard-name = checkerboard
+ent-CheckerBoard-desc = A checkerboard. Pieces included!
 
-ent-CheckerBoardTabletop-name = шахматная доска
+ent-CheckerBoardTabletop-name = checkerboard
 
-ent-CheckerPieceWhite-name = белая шашка
+ent-CheckerPieceWhite-name = white checker piece
 
-ent-CheckerCrownWhite-name = белая клетчатая корона
+ent-CheckerCrownWhite-name = white checker crown
 
-ent-CheckerPieceBlack-name = черная шашка
+ent-CheckerPieceBlack-name = black checker piece
 
-ent-CheckerCrownBlack-name = черная клетчатая корона
+ent-CheckerCrownBlack-name = black checker crown
 

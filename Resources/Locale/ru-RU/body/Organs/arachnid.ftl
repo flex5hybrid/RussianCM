@@ -1,23 +1,23 @@
-ent-OrganArachnidStomach-name = желудок
-ent-OrganArachnidStomach-desc = Валовой. Это тяжело переварить.
+ent-OrganArachnidStomach-name = stomach
+ent-OrganArachnidStomach-desc = Gross. This is hard to stomach.
 
-ent-OrganArachnidLungs-name = легкие
-ent-OrganArachnidLungs-desc = Фильтрует кислород из атмосферы... только более жадно.
+ent-OrganArachnidLungs-name = lungs
+ent-OrganArachnidLungs-desc = Filters oxygen from an atmosphere... just more greedily.
 
-ent-OrganArachnidHeart-name = сердце
-ent-OrganArachnidHeart-desc = Отвратительно стойкий маленький биологический насос, созданный для пауков.
+ent-OrganArachnidHeart-name = heart
+ent-OrganArachnidHeart-desc = A disgustingly persistent little biological pump made for spiders.
 
-ent-OrganArachnidLiver-name = печень
-ent-OrganArachnidLiver-desc = Рекомендуемое сочетание: кьянти и фасоль.
+ent-OrganArachnidLiver-name = liver
+ent-OrganArachnidLiver-desc = Pairing suggestion: chianti and fava beans.
 
-ent-OrganArachnidKidneys-name = почки
-ent-OrganArachnidKidneys-desc = Фильтрует токсины из кровотока.
+ent-OrganArachnidKidneys-name = kidneys
+ent-OrganArachnidKidneys-desc = Filters toxins from the bloodstream.
 
-ent-OrganArachnidEyes-name = глаза
-ent-OrganArachnidEyes-desc = Два — это уже слишком много.
+ent-OrganArachnidEyes-name = eyes
+ent-OrganArachnidEyes-desc = Two was already too many.
 
-ent-OrganArachnidTongue-name = язык
-ent-OrganArachnidTongue-desc = Мясистая мышца, используемая в основном для лжи.
+ent-OrganArachnidTongue-name = tongue
+ent-OrganArachnidTongue-desc = A fleshy muscle mostly used for lying.
 
-ent-BaseArachnidOrgan-name = элемент
+ent-BaseArachnidOrgan-name = item
 

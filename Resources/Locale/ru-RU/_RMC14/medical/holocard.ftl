@@ -20,15 +20,3 @@ ui-holocard-change-searchbar-placeholder = Голокарта
 ui-health-scanner-holocard-change = Сменить
 
 ui-holocard-change-insufficient-skill = Вам не хватает медицинских знаний для смены статуса голокарты.
-
-# Missing entries synced from en-US
-
-hc-none-name = Нет
-
-hc-urgent-name = Хирургия
-
-hc-emergency-name = Чрезвычайная ситуация
-
-hc-permadead-name = Постоянная смерть
-
-hc-xeno-name = Болезнь

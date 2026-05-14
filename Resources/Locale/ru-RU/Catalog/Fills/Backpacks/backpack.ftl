@@ -1,6 +1,6 @@
-ent-ClothingBackpackSyndicateRaidBundle-name = Комплект костюмов для рейда синдиката
-ent-ClothingBackpackSyndicateRaidBundle-desc = Содержит прочный рейдовый доспех Синдиката.
+ent-ClothingBackpackSyndicateRaidBundle-name = syndicate raid suit bundle
+ent-ClothingBackpackSyndicateRaidBundle-desc = Contains the Syndicate's durable raid armor suit.
 
-ent-ClothingBackpackSyndicateBundle-name = рюкзак синдиката
-ent-ClothingBackpackSyndicateBundle-desc = Вы носите это на спине и кладете в него предметы.
+ent-ClothingBackpackSyndicateBundle-name = syndicate backpack
+ent-ClothingBackpackSyndicateBundle-desc = You wear this on your back and put items into it.
 

@@ -1,4 +1,4 @@
-ent-RandomSmokables-name = случайный спаунер для курения
+ent-RandomSmokables-name = random smokable spawner
 
-ent-RandomSoakedCigarette-name = Случайный генератор пропитанных сигарет
+ent-RandomSoakedCigarette-name = random soaked cigarette spawner
 

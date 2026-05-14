@@ -38,27 +38,3 @@ ghost-roles-window-rules-footer = Кнопка станет доступна ч�
 
 ghost-return-to-body-title = Вернуться в тело
 ghost-return-to-body-text = Вас воскрешают! Вернуться в своё тело?
-
-# Missing entries synced from en-US
-
-ghost-target-window-search-placeholder = Поиск по имени, роли, фракции
-
-ghost-target-window-empty = НЕТ АКТИВНЫХ ЦЕЛЕЙ варпа
-
-ghost-target-window-no-results = НЕТ СООТВЕТСТВУЮЩИХ ЦЕЛЕЙ
-
-ghost-target-window-location-role = Точка навигации
-
-ghost-target-window-tracked-count = {$count} отслеживается
-
-ghost-roles-window-join-raffle-button-timer = Присоединяйтесь к розыгрышу ({$time}s)
-
-ghost-roles-window-leave-raffle-button-timer = Покинуть лотерею ({$time}s)
-
-ghost-roles-window-leave-raffle-button-confirm = Выйти из розыгрыша
-
-ghost-roles-window-no-results-label = Нет подходящих ролей-призраков.
-
-ghost-roles-window-search-placeholder = Поиск ролей-призраков
-
-ghost-roles-window-available-count = {$count} ДОСТУПЕН

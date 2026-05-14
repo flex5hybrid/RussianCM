@@ -1,6 +1,6 @@
-ent-BaseWeaponHeavyMachineGun-name = БазаОружиеТяжелыйМашинаПистолет
-ent-BaseWeaponHeavyMachineGun-desc = Распыляйте и молись.
+ent-BaseWeaponHeavyMachineGun-name = BaseWeaponHeavyMachineGun
+ent-BaseWeaponHeavyMachineGun-desc = Spray and pray.
 
-ent-WeaponMinigun-name = миниган
-ent-WeaponMinigun-desc = Взззззт! Рара-ра-ра! Вррррр! Использует винтовочные патроны .10.
+ent-WeaponMinigun-name = minigun
+ent-WeaponMinigun-desc = Vzzzzzt! Rahrahrahrah! Vrrrrr! Uses .10 rifle ammo.
 

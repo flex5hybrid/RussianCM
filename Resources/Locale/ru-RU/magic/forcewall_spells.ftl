@@ -1,3 +1,3 @@
-ent-ActionForceWall-name = силовая стена
-ent-ActionForceWall-desc = Создает магический барьер.
+ent-ActionForceWall-name = forcewall
+ent-ActionForceWall-desc = Creates a magical barrier.
 

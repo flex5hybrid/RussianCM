@@ -13,7 +13,6 @@
   - type: FixedIdentity
     name: cm-chatsan-replacement-human
   - type: CMUHumanMedical
-  - type: YautjaTrophySource
   - type: HitLocation
   - type: PainShock
   - type: BodyZoneTargeting

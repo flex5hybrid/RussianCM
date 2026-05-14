@@ -1,5 +1,5 @@
-ent-ParchisBoard-name = совет прихода
-ent-ParchisBoard-desc = Настольная игра «Крест и круг», известная тем, что разрушила бесчисленное количество друзей.
+ent-ParchisBoard-name = parchís board
+ent-ParchisBoard-desc = Cross and circle board game famous for destroying countless friendships.
 
-ent-ParchisBoardTabletop-name = Париж
+ent-ParchisBoardTabletop-name = parchís
 

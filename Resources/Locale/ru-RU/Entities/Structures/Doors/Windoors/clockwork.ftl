@@ -1,2 +1,2 @@
-ent-BaseClockworkWindoor-name = заводной механизм
+ent-BaseClockworkWindoor-name = clockwork windoor
 

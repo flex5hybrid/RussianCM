@@ -1,4 +1,4 @@
-ent-MobDiona-name = Урист МакПлэнтс
+ent-MobDiona-name = Urist McPlants
 
-ent-MobDionaReformed-name = Реформатская Диона
+ent-MobDionaReformed-name = Reformed Diona
 

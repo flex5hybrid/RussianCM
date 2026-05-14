@@ -1,10 +1,10 @@
-ent-BaseCartridgeRifle-name = патрон (винтовка .20)
+ent-BaseCartridgeRifle-name = cartridge (.20 rifle)
 
-ent-CartridgeRifle-name = патрон (винтовка .20)
+ent-CartridgeRifle-name = cartridge (.20 rifle)
 
-ent-CartridgeRiflePractice-name = патрон (тренировочная винтовка .20)
+ent-CartridgeRiflePractice-name = cartridge (.20 rifle practice)
 
-ent-CartridgeRifleIncendiary-name = патрон (винтовочный зажигательный .20)
+ent-CartridgeRifleIncendiary-name = cartridge (.20 rifle incendiary)
 
-ent-CartridgeRifleUranium-name = патрон (винтовочный уран .20)
+ent-CartridgeRifleUranium-name = cartridge (.20 rifle uranium)
 

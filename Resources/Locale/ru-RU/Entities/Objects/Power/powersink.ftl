@@ -1,3 +1,3 @@
-ent-PowerSink-name = источник питания
-ent-PowerSink-desc = Потребляет огромное количество электроэнергии из сети.
+ent-PowerSink-name = power sink
+ent-PowerSink-desc = Drains immense amounts of electricity from the grid.
 

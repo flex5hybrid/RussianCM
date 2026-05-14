@@ -1,9 +1,9 @@
-ent-MobHivebot-name = улейбот
-ent-MobHivebot-desc = Механизированные вредители.
+ent-MobHivebot-name = hivebot
+ent-MobHivebot-desc = Agitating, mechanized pests.
 
-ent-MobHivebotRanged-name = улейбот
-ent-MobHivebotRanged-desc = Механизированные вредители. У этого есть пистолет.
+ent-MobHivebotRanged-name = hivebot
+ent-MobHivebotRanged-desc = Agitating, mechanized pests. This one has a gun.
 
-ent-MobHivebotStrong-name = сильный улейбот
-ent-MobHivebotStrong-desc = Механизированные вредители. Этот выглядит намного сильнее обычного.
+ent-MobHivebotStrong-name = strong hivebot
+ent-MobHivebotStrong-desc = Agitating, mechanized pests. This one looks much stronger then normal.
 

@@ -1,34 +1,34 @@
-ent-DrinkJuiceLimeCarton-name = сок лайма
-ent-DrinkJuiceLimeCarton-desc = Кисло-сладкое совершенство.
+ent-DrinkJuiceLimeCarton-name = lime juice
+ent-DrinkJuiceLimeCarton-desc = Sweet-sour goodness.
 
-ent-DrinkJuiceOrangeCarton-name = апельсиновый сок
-ent-DrinkJuiceOrangeCarton-desc = Полно витаминов и вкуса!
+ent-DrinkJuiceOrangeCarton-name = orange juice
+ent-DrinkJuiceOrangeCarton-desc = Full of vitamins and deliciousness!
 
-ent-DrinkJuiceTomatoCarton-name = томатный сок
-ent-DrinkJuiceTomatoCarton-desc = Ну, по крайней мере, это ВЫГЛЯДИТ как томатный сок. Ничего не скажешь со всей этой краснотой.
+ent-DrinkJuiceTomatoCarton-name = tomato juice
+ent-DrinkJuiceTomatoCarton-desc = Well, at least it LOOKS like tomato juice. You can't tell with all that redness.
 
-ent-DrinkCoconutWaterCarton-name = кокосовая вода
-ent-DrinkCoconutWaterCarton-desc = Значение имеет внутренняя часть кокоса.
+ent-DrinkCoconutWaterCarton-name = coconut water
+ent-DrinkCoconutWaterCarton-desc = It's the inside of the coconut that counts.
 
-ent-DrinkCreamCarton-name = молочный крем
-ent-DrinkCreamCarton-desc = Это крем. Изготовлено из молока. Что еще, по вашему мнению, вы там найдете?
+ent-DrinkCreamCarton-name = milk cream
+ent-DrinkCreamCarton-desc = It's cream. Made from milk. What else did you think you'd find in there?
 
-ent-DrinkMilkCarton-name = молоко
-ent-DrinkMilkCarton-desc = Непрозрачная белая жидкость, вырабатываемая молочными железами млекопитающих.
+ent-DrinkMilkCarton-name = milk
+ent-DrinkMilkCarton-desc = An opaque white liquid produced by the mammary glands of mammals.
 
-ent-DrinkSoyMilkCarton-name = соевое молоко
-ent-DrinkSoyMilkCarton-desc = Белое и питательное соевое совершенство!
+ent-DrinkSoyMilkCarton-name = soy milk
+ent-DrinkSoyMilkCarton-desc = White and nutritious soy goodness!
 
-ent-DrinkOatMilkCarton-name = овсяное молоко
-ent-DrinkOatMilkCarton-desc = Это овсяное молоко. Загар и питательное совершенство!
+ent-DrinkOatMilkCarton-name = oat milk
+ent-DrinkOatMilkCarton-desc = It's oat milk. Tan and nutritious goodness!
 
-ent-DrinkJuiceLemonCarton-name = лимонный сок
-ent-DrinkJuiceLemonCarton-desc = Сначала кисло, потом еще кисло.
+ent-DrinkJuiceLemonCarton-name = lemon juice
+ent-DrinkJuiceLemonCarton-desc = First it's sour, then it's still sour.
 
-ent-DrinkJuicePineappleCarton-name = ананасовый сок
-ent-DrinkJuicePineappleCarton-desc = На вкус как тропический отпуск вдали от космоса.
+ent-DrinkJuicePineappleCarton-name = pineapple juice
+ent-DrinkJuicePineappleCarton-desc = Tastes like a tropical vacation far from space.
 
-ent-DrinkCartonBaseFull-name = элемент
+ent-DrinkCartonBaseFull-name = item
 
-ent-DrinkCartonBaseLargeFull-name = элемент
+ent-DrinkCartonBaseLargeFull-name = item
 

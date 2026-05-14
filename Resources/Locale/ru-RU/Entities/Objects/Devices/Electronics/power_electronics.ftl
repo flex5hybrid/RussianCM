@@ -1,15 +1,15 @@
-ent-APCElectronics-name = электроника АПК
-ent-APCElectronics-desc = Схема, используемая в конструкции БТР.
+ent-APCElectronics-name = APC electronics
+ent-APCElectronics-desc = Circuit used in APC construction.
 
-ent-WallmountSubstationElectronics-name = электроника подстанции настенного монтажа
-ent-WallmountSubstationElectronics-desc = Схема, используемая для строительства настенной подстанции.
+ent-WallmountSubstationElectronics-name = wallmount substation electronics
+ent-WallmountSubstationElectronics-desc = Circuit used to construct a wallmount substation.
 
-ent-WallmountGeneratorElectronics-name = электроника настенного генератора
-ent-WallmountGeneratorElectronics-desc = Схема, используемая для создания настенного генератора.
+ent-WallmountGeneratorElectronics-name = wallmount generator electronics
+ent-WallmountGeneratorElectronics-desc = Circuit used to construct a wallmount generator.
 
-ent-WallmountGeneratorAPUElectronics-name = настенное крепление для электроники APU
-ent-WallmountGeneratorAPUElectronics-desc = Схема, используемая для создания настенного APU.
+ent-WallmountGeneratorAPUElectronics-name = wallmount APU electronics
+ent-WallmountGeneratorAPUElectronics-desc = Circuit used to construct a wallmount APU.
 
-ent-SolarTrackerElectronics-name = электроника солнечного трекера
-ent-SolarTrackerElectronics-desc = Усовершенствованная плата, используемая для отслеживания ближайшей звезды.
+ent-SolarTrackerElectronics-name = solar tracker electronics
+ent-SolarTrackerElectronics-desc = Advanced circuit board used to track the nearest star.
 

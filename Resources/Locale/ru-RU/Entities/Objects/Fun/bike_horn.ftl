@@ -1,15 +1,15 @@
-ent-BikeHorn-name = велосипедный гудок
-ent-BikeHorn-desc = Звуковой сигнал от велосипеда.
+ent-BikeHorn-name = bike horn
+ent-BikeHorn-desc = A horn off of a bicycle.
 
-ent-CluwneHorn-name = сломанный велосипедный гудок
-ent-CluwneHorn-desc = Сломанный гудок велосипеда.
+ent-CluwneHorn-name = broken bike horn
+ent-CluwneHorn-desc = A broken horn off of a bicycle.
 
-ent-GoldenBikeHorn-name = золотой сигнал
-ent-GoldenBikeHorn-desc = Счастливый приз, молитесь богам о награде.
+ent-GoldenBikeHorn-name = golden honker
+ent-GoldenBikeHorn-desc = A happy honk prize, pray to the gods for your reward.
 
-ent-BananiumHorn-name = банановый рог
-ent-BananiumHorn-desc = Воздушный рожок из банана.
+ent-BananiumHorn-name = bananium horn
+ent-BananiumHorn-desc = An air horn made from bananium.
 
-ent-PushHorn-name = гудок
-ent-PushHorn-desc = Этот мощный велосипедный рожок обязательно сгонит недовольство.
+ent-PushHorn-name = push horn
+ent-PushHorn-desc = This powerful bikehorn is sure to blast frowns away.
 

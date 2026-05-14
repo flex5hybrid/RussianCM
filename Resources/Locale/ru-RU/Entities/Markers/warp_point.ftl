@@ -1,8 +1,8 @@
-ent-WarpPoint-name = точка деформации
+ent-WarpPoint-name = warp point
 
-ent-WarpPointBeacon-name = точка варпа (маяк)
+ent-WarpPointBeacon-name = warp point (beacon)
 
-ent-GhostWarpPoint-name = только призрачная точка варпа
+ent-GhostWarpPoint-name = ghost only warp point
 
-ent-WarpPointBombing-name = точка деформации
+ent-WarpPointBombing-name = warp point
 

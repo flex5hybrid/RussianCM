@@ -1,6 +1,6 @@
-ent-JawsOfLife-name = челюсти жизни
-ent-JawsOfLife-desc = Челюсти жизни, сжатые магией науки.
+ent-JawsOfLife-name = jaws of life
+ent-JawsOfLife-desc = A set of jaws of life, compressed through the magic of science.
 
-ent-SyndicateJawsOfLife-name = синдикат челюсти жизни
-ent-SyndicateJawsOfLife-desc = Полезно для входа на станцию или в ее отделы.
+ent-SyndicateJawsOfLife-name = syndicate jaws of life
+ent-SyndicateJawsOfLife-desc = Useful for entering the station or its departments.
 

@@ -1,62 +1,62 @@
-ent-DrinkBaseCup-name = базовая чашка
+ent-DrinkBaseCup-name = base cup
 
-ent-DrinkGoldenCup-name = золотой кубок
-ent-DrinkGoldenCup-desc = Золотой кубок.
+ent-DrinkGoldenCup-name = golden cup
+ent-DrinkGoldenCup-desc = A golden cup.
 
-ent-DrinkBaseMug-name = кружка
-ent-DrinkBaseMug-desc = Кружка.
+ent-DrinkBaseMug-name = mug
+ent-DrinkBaseMug-desc = A mug.
 
-ent-DrinkMug-name = кружка
-ent-DrinkMug-desc = Обычная белая кружка.
+ent-DrinkMug-name = mug
+ent-DrinkMug-desc = A plain white mug.
 
-ent-DrinkMugBlack-name = черная кружка
-ent-DrinkMugBlack-desc = Изящная черная кружка.
+ent-DrinkMugBlack-name = black mug
+ent-DrinkMugBlack-desc = A sleek black mug.
 
-ent-DrinkMugBlue-name = синяя кружка
-ent-DrinkMugBlue-desc = Синяя и черная кружка.
+ent-DrinkMugBlue-name = blue mug
+ent-DrinkMugBlue-desc = A blue and black mug.
 
-ent-DrinkMugGreen-name = зеленая кружка
-ent-DrinkMugGreen-desc = Бледно-зелено-розовая кружка.
+ent-DrinkMugGreen-name = green mug
+ent-DrinkMugGreen-desc = A pale green and pink mug.
 
-ent-DrinkMugDog-name = забавная кружка для собаки
-ent-DrinkMugDog-desc = Он похож на мультяшного бигля.
+ent-DrinkMugDog-name = funny dog mug
+ent-DrinkMugDog-desc = It looks like a cartoon beagle.
 
-ent-DrinkMugHeart-name = кружка с сердцем
-ent-DrinkMugHeart-desc = Белая кружка с заметным красным сердцем.
+ent-DrinkMugHeart-name = heart mug
+ent-DrinkMugHeart-desc = A white mug, it prominently features a red heart.
 
-ent-DrinkMugMetal-name = металлическая кружка
-ent-DrinkMugMetal-desc = Металлическая кружка. Вы не уверены, какой металл.
+ent-DrinkMugMetal-name = metal mug
+ent-DrinkMugMetal-desc = A metal mug. You're not sure which metal.
 
-ent-DrinkMugMoebius-name = кружка Мебиуса
-ent-DrinkMugMoebius-desc = Кружка с логотипом Moebius Laboratories. Даже ваш утренний кофе не застрахован от корпоративной рекламы.
+ent-DrinkMugMoebius-name = moebius mug
+ent-DrinkMugMoebius-desc = A mug with a Moebius Laboratories logo on it. Not even your morning coffee is safe from corporate advertising.
 
-ent-DrinkMugOne-name = #1 кружка
-ent-DrinkMugOne-desc = Белая кружка с заметной цифрой №1.
+ent-DrinkMugOne-name = #1 mug
+ent-DrinkMugOne-desc = A white mug, it prominently features a #1.
 
-ent-DrinkMugRainbow-name = радужная кружка
-ent-DrinkMugRainbow-desc = Радужная кружка. Цвета почти так же ослепляют, как сварщик.
+ent-DrinkMugRainbow-name = rainbow mug
+ent-DrinkMugRainbow-desc = A rainbow mug. The colors are almost as blinding as a welder.
 
-ent-DrinkMugRed-name = красная кружка
-ent-DrinkMugRed-desc = Красно-черная кружка.
+ent-DrinkMugRed-name = red mug
+ent-DrinkMugRed-desc = A red and black mug.
 
-ent-DrinkHotCoco-name = горячий шоколад
-ent-DrinkHotCoco-desc = Горячий напиток, состоящий из растопленного шоколада и подогретого молока.
+ent-DrinkHotCoco-name = hot chocolate
+ent-DrinkHotCoco-desc = A heated drink consisting melted chocolate and heated milk.
 
-ent-DrinkHotCoffee-name = кофе
-ent-DrinkHotCoffee-desc = Кофе — это сваренный напиток, приготовленный из жареных семян, обычно называемых кофейными зернами, кофейного растения.
+ent-DrinkHotCoffee-name = coffee
+ent-DrinkHotCoffee-desc = Coffee is a brewed drink prepared from roasted seeds, commonly called coffee beans, of the coffee plant.
 
-ent-DrinkCafeLatte-name = кафе латте
-ent-DrinkCafeLatte-desc = Хороший, крепкий и вкусный напиток, пока вы читаете.
+ent-DrinkCafeLatte-name = cafe latte
+ent-DrinkCafeLatte-desc = A nice, strong and tasty beverage while you are reading.
 
-ent-DrinkTeacup-name = чашка
-ent-DrinkTeacup-desc = Обычная белая фарфоровая чашка.
+ent-DrinkTeacup-name = teacup
+ent-DrinkTeacup-desc = A plain white porcelain teacup.
 
-ent-DrinkGreenTea-name = зеленый чай
-ent-DrinkGreenTea-desc = Обычная белая фарфоровая чашка.
+ent-DrinkGreenTea-name = green tea
+ent-DrinkGreenTea-desc = A plain white porcelain teacup.
 
-ent-DrinkLean-name = виноградный сок
-ent-DrinkLean-desc = Блин, веселиться нельзя.
+ent-DrinkLean-name = grape juice
+ent-DrinkLean-desc = Damn, no fun allowed.
 
-ent-DrinkWaterCup-name = чашка с водой
-ent-DrinkWaterCup-desc = Бумажный стаканчик для воды.
+ent-DrinkWaterCup-name = water cup
+ent-DrinkWaterCup-desc = A paper water cup.
 

@@ -1,3 +1,3 @@
-ent-Error-name = ошибка
-ent-Error-desc = Хмммм. Что-то пошло не так.
+ent-Error-name = error
+ent-Error-desc = Hmmmm. Something went wrong.
 

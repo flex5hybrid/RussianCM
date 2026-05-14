@@ -1,22 +1,22 @@
-ent-PartHuman-name = часть человеческого тела
+ent-PartHuman-name = human body part
 
-ent-TorsoHuman-name = человеческий торс
+ent-TorsoHuman-name = human torso
 
-ent-HeadHuman-name = человеческая голова
+ent-HeadHuman-name = human head
 
-ent-LeftArmHuman-name = левая рука человека
+ent-LeftArmHuman-name = left human arm
 
-ent-RightArmHuman-name = правая человеческая рука
+ent-RightArmHuman-name = right human arm
 
-ent-LeftHandHuman-name = левая человеческая рука
+ent-LeftHandHuman-name = left human hand
 
-ent-RightHandHuman-name = правая человеческая рука
+ent-RightHandHuman-name = right human hand
 
-ent-LeftLegHuman-name = левая нога человека
+ent-LeftLegHuman-name = left human leg
 
-ent-RightLegHuman-name = правая человеческая нога
+ent-RightLegHuman-name = right human leg
 
-ent-LeftFootHuman-name = левая нога человека
+ent-LeftFootHuman-name = left human foot
 
-ent-RightFootHuman-name = правая человеческая нога
+ent-RightFootHuman-name = right human foot
 

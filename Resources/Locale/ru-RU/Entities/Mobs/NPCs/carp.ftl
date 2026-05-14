@@ -1,30 +1,30 @@
-ent-BaseMobCarp-name = космический карп
-ent-BaseMobCarp-desc = Это космический карп.
+ent-BaseMobCarp-name = space carp
+ent-BaseMobCarp-desc = It's a space carp.
 
-ent-MobCarpMagic-name = волшебник
-ent-MobCarpMagic-desc = Похоже на какую-то рыбу. Может быть, волшебный.
+ent-MobCarpMagic-name = magicarp
+ent-MobCarpMagic-desc = Looks like some kind of fish. Might be magical.
 
-ent-MobCarpHolo-name = голокарпий
-ent-MobCarpHolo-desc = Карп, созданный из голографической энергии. К сожалению для вас, это вполне реально.
+ent-MobCarpHolo-name = holocarp
+ent-MobCarpHolo-desc = Carp made out of holographic energies. Sadly for you, it is very much real.
 
-ent-MobCarpRainbow-name = Радужный карп
-ent-MobCarpRainbow-desc = Ух ты, какая блестящая рыбка!
+ent-MobCarpRainbow-name = rainbow carp
+ent-MobCarpRainbow-desc = Wow such a shiny fishie!
 
-ent-MobCarpDragon-name = космический карп
-ent-MobCarpDragon-desc = Это космический карп.
+ent-MobCarpDragon-name = space carp
+ent-MobCarpDragon-desc = It's a space carp.
 
-ent-MobShark-name = акула-голин
-ent-MobShark-desc = Опасная акула из черноты бескрайнего космоса, любящая пить кровь.
+ent-MobShark-name = sharkminnow
+ent-MobShark-desc = A dangerous shark from the blackness of endless space, who loves to drink blood.
 
-ent-MobCarp-name = космический карп
-ent-MobCarp-desc = Это космический карп.
+ent-MobCarp-name = space carp
+ent-MobCarp-desc = It's a space carp.
 
-ent-MobCarpSalvage-name = космический карп
-ent-MobCarpSalvage-desc = Это космический карп.
+ent-MobCarpSalvage-name = space carp
+ent-MobCarpSalvage-desc = It's a space carp.
 
-ent-MobCarpDungeon-name = космический карп
-ent-MobCarpDungeon-desc = Это космический карп.
+ent-MobCarpDungeon-name = space carp
+ent-MobCarpDungeon-desc = It's a space carp.
 
-ent-MobSharkSalvage-name = акула-голин
-ent-MobSharkSalvage-desc = Опасная акула из черноты бескрайнего космоса, любящая пить кровь.
+ent-MobSharkSalvage-name = sharkminnow
+ent-MobSharkSalvage-desc = A dangerous shark from the blackness of endless space, who loves to drink blood.
 

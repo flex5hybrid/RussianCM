@@ -1,18 +1,18 @@
-ent-Spear-name = копье
-ent-Spear-desc = Определение классики. Сохранение доступности убийств с 200 000 г. до н.э.
+ent-Spear-name = spear
+ent-Spear-desc = Definition of a Classic. Keeping murder affordable since 200,000 BCE.
 
-ent-SpearReinforced-name = усиленное копье
-ent-SpearReinforced-desc = Копье с укрепленным осколком стекла на наконечнике.
+ent-SpearReinforced-name = reinforced spear
+ent-SpearReinforced-desc = A spear with a reinforced glass shard as a tip.
 
-ent-SpearPlasma-name = плазменное копье
-ent-SpearPlasma-desc = Копье с плазменным осколком на наконечнике.
+ent-SpearPlasma-name = plasma spear
+ent-SpearPlasma-desc = A spear with a plasma shard as a tip.
 
-ent-SpearUranium-name = урановое копье
-ent-SpearUranium-desc = Копье с урановым осколком на наконечнике.
+ent-SpearUranium-name = uranium spear
+ent-SpearUranium-desc = A spear with a uranium shard as a tip.
 
-ent-SpearBone-name = костяное копье
-ent-SpearBone-desc = Копье из костей.
+ent-SpearBone-name = bone spear
+ent-SpearBone-desc = A spear made of bones.
 
-ent-SpearSharkMinnow-name = копье из зубов акулы
-ent-SpearSharkMinnow-desc = Копье с зубом акульего гольяна на наконечнике.
+ent-SpearSharkMinnow-name = sharkminnow tooth spear
+ent-SpearSharkMinnow-desc = A spear with a sharkminnow tooth as a tip.
 

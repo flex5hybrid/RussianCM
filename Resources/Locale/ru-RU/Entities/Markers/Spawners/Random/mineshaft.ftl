@@ -1,10 +1,10 @@
-ent-RandomWoodenSupport-name = деревянная опора
+ent-RandomWoodenSupport-name = wooden support spawner
 
-ent-RandomWoodenWall-name = деревянная стенка спавнер
+ent-RandomWoodenWall-name = wooden wall spawner
 
-ent-RandomStalagmiteOrCrystal-name = генератор сталагмитов или кристаллов
+ent-RandomStalagmiteOrCrystal-name = stalagmite or crystal spawner
 
-ent-RandomBrownStalagmite-name = генератор коричневых сталагмитов
+ent-RandomBrownStalagmite-name = brown stalagmite spawner
 
-ent-RandomGreyStalagmite-name = генератор серых сталагмитов
+ent-RandomGreyStalagmite-name = grey stalagmite spawner
 

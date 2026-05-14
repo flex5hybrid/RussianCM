@@ -1,20 +1,20 @@
-ent-SalvageMaterialCrateSpawner-name = Создатель ящиков с утилизированными материалами
+ent-SalvageMaterialCrateSpawner-name = Salvage Material Crate Spawner
 
-ent-SalvageLootSpawner-name = спаунер добычи трофеев
+ent-SalvageLootSpawner-name = salvage loot spawner
 
-ent-SalvageMobSpawner-name = Создатель утильных мобов
+ent-SalvageMobSpawner-name = Salvage Mob Spawner
 
-ent-SpaceTickSpawner-name = Спаунер космических клещей
+ent-SpaceTickSpawner-name = Salvage Space Tick Spawner
 
-ent-SpawnMobBearSalvage-name = Спасатель космических медведей
+ent-SpawnMobBearSalvage-name = Salvage Space Bear Spawner
 
-ent-SpawnMobKangarooSalvage-name = Спасатель космических кенгуру
+ent-SpawnMobKangarooSalvage-name = Salvage Space Kangaroo Spawner
 
-ent-SpawnMobSpiderSalvage-name = Спасатель космических пауков
+ent-SpawnMobSpiderSalvage-name = Salvage Space Spider Spawner
 
-ent-SpawnMobCobraSalvage-name = Создатель спасательной космической кобры
+ent-SpawnMobCobraSalvage-name = Salvage Space Cobra Spawner
 
-ent-SalvageFleshSpawner-name = Производитель вторичной плоти
+ent-SalvageFleshSpawner-name = Salvage Flesh Spawner
 
-ent-SalvageMobSpawner75-name = Создатель утильных мобов
+ent-SalvageMobSpawner75-name = Salvage Mob Spawner
 

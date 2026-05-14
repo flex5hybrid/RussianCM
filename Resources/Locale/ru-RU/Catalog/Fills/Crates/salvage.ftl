@@ -1,42 +1,42 @@
-ent-CrateSalvageEquipment-name = ящик для аварийного оборудования
-ent-CrateSalvageEquipment-desc = Для смелых.
+ent-CrateSalvageEquipment-name = salvage equipment crate
+ent-CrateSalvageEquipment-desc = For the daring.
 
-ent-CrateCrusherDagger-name = ящик с кинжалом дробилки
-ent-CrateCrusherDagger-desc = Содержит 4 кинжала-дробилки для использования в качестве утилизации.
+ent-CrateCrusherDagger-name = crusher dagger crate
+ent-CrateCrusherDagger-desc = Contains 4 crusher daggers for use by salvage.
 
-ent-CrateSeismicCharge-name = ящик с сейсмическим зарядом
-ent-CrateSeismicCharge-desc = Содержит 6 сейсмических зарядов для использования при утилизации.
+ent-CrateSeismicCharge-name = seismic charge crate
+ent-CrateSeismicCharge-desc = Contains 6 seismic charges for use by salvage.
 
-ent-CrateDoubleEmergencyTank-name = двойной ящик для аварийного бака
-ent-CrateDoubleEmergencyTank-desc = Содержит 2 двойных аварийных баллона с кислородом и 2 двойных аварийных баллона с азотом.
+ent-CrateDoubleEmergencyTank-name = double emergency tank crate
+ent-CrateDoubleEmergencyTank-desc = Contains 2 double emergency oxygen tanks and 2 double emergency nitrogen tanks
 
-ent-CrateCrusher-name = ящик дробилки
-ent-CrateCrusher-desc = Содержит 2 дробилки для использования в качестве утилизации.
+ent-CrateCrusher-name = crusher crate
+ent-CrateCrusher-desc = Contains 2 crushers for use by salvage.
 
-ent-CrateFulton-name = Фултонский ящик
-ent-CrateFulton-desc = Содержит Фултонный маяк и 8 Фултонов.
+ent-CrateFulton-name = fulton crate
+ent-CrateFulton-desc = Contains a fulton beacon and 8 fultons.
 
-ent-CrateVoidJetpack-name = пустотный ящик с реактивным ранцем
-ent-CrateVoidJetpack-desc = Содержит один пустотный реактивный ранец.
+ent-CrateVoidJetpack-name = void jetpack crate
+ent-CrateVoidJetpack-desc = Contains a single void jetpack.
 
-ent-CrateSalvageHardsuit-name = ящик для аварийного костюма
-ent-CrateSalvageHardsuit-desc = В комплект входит спасательный костюм, дыхательная маска и кислородный баллон.
+ent-CrateSalvageHardsuit-name = salvage hardsuit crate
+ent-CrateSalvageHardsuit-desc = Contains a salvage hardsuit, breath mask, and oxygen tank.
 
-ent-CrateCrusherGlaive-name = ящик с дробилкой
-ent-CrateCrusherGlaive-desc = Содержит дробящую глефу для использования при разборке.
+ent-CrateCrusherGlaive-name = crusher glaive crate
+ent-CrateCrusherGlaive-desc = Contains a crusher glaive for use by salvage.
 
-ent-CrateSupremeSalvagerCloak-name = Ящик с плащом высшего спасателя
-ent-CrateSupremeSalvagerCloak-desc = Содержит плащ, который могут носить только лучшие спасатели. Ношение его незаслуженно приведет к вашей гибели.
+ent-CrateSupremeSalvagerCloak-name = supreme salvager cloak crate
+ent-CrateSupremeSalvagerCloak-desc = Contains a cloak only to be worn by supreme salvagers. Wearing it undeservedly will result in your doom.
 
-ent-CratePartsT3-name = ящик с деталями 3-го уровня
-ent-CratePartsT3-desc = Содержит 5 случайных деталей 3-го уровня для улучшения машин.
+ent-CratePartsT3-name = tier 3 parts crate
+ent-CratePartsT3-desc = Contains 5 random tier 3 parts for upgrading machines.
 
-ent-CratePartsT3T4-name = Ящик с деталями 3/4 уровня
-ent-CratePartsT3T4-desc = Содержит 5 случайных деталей 3 или 4 уровня для улучшения машин.
+ent-CratePartsT3T4-name = tier 3/4 parts crate
+ent-CratePartsT3T4-desc = Contains 5 random tier 3 or 4 parts for upgrading machines.
 
-ent-CratePartsT4-name = Ящик с деталями 4-го уровня
-ent-CratePartsT4-desc = Содержит 5 случайных деталей 4-го уровня для улучшения машин.
+ent-CratePartsT4-name = tier 4 parts crate
+ent-CratePartsT4-desc = Contains 5 random tier 4 parts for upgrading machines.
 
-ent-CrateSalvageAssortedGoodies-name = ящик
-ent-CrateSalvageAssortedGoodies-desc = Большой контейнер для вещей.
+ent-CrateSalvageAssortedGoodies-name = crate
+ent-CrateSalvageAssortedGoodies-desc = A large container for items.
 

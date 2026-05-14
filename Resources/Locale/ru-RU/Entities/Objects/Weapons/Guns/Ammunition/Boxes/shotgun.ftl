@@ -1,20 +1,20 @@
-ent-BoxBeanbag-name = ящик для боеприпасов (погремушка .50)
+ent-BoxBeanbag-name = ammunition box (.50 beanbag)
 
-ent-BoxLethalshot-name = ящик для боеприпасов (пульса .50)
+ent-BoxLethalshot-name = ammunition box (.50 pellet)
 
-ent-BoxShotgunSlug-name = ящик для боеприпасов (пуля .50)
+ent-BoxShotgunSlug-name = ammunition box (.50 slug)
 
-ent-BoxShotgunFlare-name = ящик для боеприпасов (сигнальная ракета .50)
+ent-BoxShotgunFlare-name = ammunition box (.50 flare)
 
-ent-BoxShotgunIncendiary-name = ящик для боеприпасов (зажигательный .50)
+ent-BoxShotgunIncendiary-name = ammunition box (.50 incendiary)
 
-ent-BoxShotgunUranium-name = ящик для боеприпасов (уран .50)
+ent-BoxShotgunUranium-name = ammunition box (.50 uranium)
 
-ent-BoxShotgunPractice-name = ящик для боеприпасов (практика .50)
+ent-BoxShotgunPractice-name = ammunition box (.50 practice)
 
-ent-BoxShellTranquilizer-name = ящик для боеприпасов (транквилизатор .50)
+ent-BoxShellTranquilizer-name = ammunition box (.50 tranquilizer)
 
-ent-BaseAmmoProvider-name = элемент
+ent-BaseAmmoProvider-name = item
 
-ent-AmmoProviderShotgunShell-name = элемент
+ent-AmmoProviderShotgunShell-name = item
 

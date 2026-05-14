@@ -1,4 +1,4 @@
-﻿cm-ui-rmc14 = РМЦ14
+﻿cm-ui-rmc14 = RMC14
 
 rmc-ui-options-cassettes-volume = Громкость кассет:
 rmc-ui-options-hijack-song-volume = Громкость песни захвата:
@@ -84,8 +84,9 @@ rmc-ui-ghost-color-save = Сохранить
 rmc-ui-shoutout-marine = [bold]Операция профинансирована [color=green]{$name}[/color]![/bold]
 rmc-ui-shoutout-xeno = [bold]Улей основан [color=purple]{$name}[/color]![/bold]
 
-rmc-ui-discord = Раздор
-rmc-ui-patreon = Патреон
+rmc-ui-discord = Discord
+rmc-ui-patreon = Patreon
+
 rmc-other-credits-tab = Прочее
 
 rmc-ui-auto-punctuate = Автоматически расставлять знаки препинания в IC-сообщениях
@@ -103,7 +104,7 @@ rmc-tacmap-alert-ceiling-level-0 = [color=green]✓[/color] Все действ�
 rmc-tacmap-alert-ceiling-level-1 = [color=red]✗[/color] Миномёт, Лазерное наведение, Медэвак
 rmc-tacmap-alert-ceiling-level-2 = [color=red]✗[/color] Сброс припасов, Огонь миномёта
 rmc-tacmap-alert-ceiling-level-3 = [color=red]✗[/color] CAS
-rmc-tacmap-alert-ceiling-level-4 = [color=red]✗[/color] ОБ
+rmc-tacmap-alert-ceiling-level-4 = [color=red]✗[/color] OB
 rmc-tacmap-alert-allowed-actions = [color=green]✓[/color] {$actions}
 rmc-tacmap-alert-restricted-actions = [color=red]✗[/color] {$actions}
 rmc-tacmap-alert-no-area = Неизвестная область
@@ -115,21 +116,3 @@ rmc-ui-options-chat-squad-color-mode = Окрашивать имена гово�
 # Dialog input
 rmc-dialog-input-placeholder-default = Введите текст
 rmc-dialog-input-placeholder-smart-check = Более 3 подряд идущих пробелов будут обрезаны
-
-# Missing entries synced from en-US
-
-rmc-ui-options-announcements-style = Визуальные объявления
-
-rmc-ui-options-announcements-style-stylized = Стилизованный
-
-rmc-ui-options-announcements-style-default = По умолчанию
-
-rmc-ui-options-announcements-style-simplified = Простой
-
-rmc-ui-options-announcements-style-disabled = Отключено
-
-rmc-ui-options-announcements-style-per-announcement = Визуальные объявления по источникам
-
-rmc-ui-options-announcements-style-inherit = Использовать глобальные настройки
-
-# Dialog input

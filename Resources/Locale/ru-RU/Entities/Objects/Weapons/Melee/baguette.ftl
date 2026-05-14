@@ -1,3 +1,3 @@
-ent-WeaponBaguette-name = багет
-ent-WeaponBaguette-desc = Приятного аппетита!
+ent-WeaponBaguette-name = baguette
+ent-WeaponBaguette-desc = Bon appétit!
 

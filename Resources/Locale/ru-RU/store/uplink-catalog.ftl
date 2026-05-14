@@ -41,7 +41,7 @@ uplink-c20r-desc = Старый добрый, классический пист�
 uplink-bulldog-name = Бульдог
 uplink-bulldog-desc = Компактный и мощный, содержит популярный дробовик Бульдог.
 
-uplink-grenade-launcher-name = Китай-Озеро
+uplink-grenade-launcher-name = China-Lake
 uplink-grenade-launcher-desc = Старый гранатомёт China-Lake снабжённый 5 осколочными снарядами.
 
 # Explosives
@@ -447,7 +447,7 @@ uplink-syndicate-stamp-name = Печать Синдиката
 uplink-syndicate-stamp-desc = Печать из резины, для проставления печатей на важных документах.
 
 uplink-cat-ears-name = Кошачьи ушки
-uplink-cat-ears-desc = УуУ
+uplink-cat-ears-desc = UwU
 
 uplink-outlaw-hat-name = Шляпа негодяя
 uplink-outlaw-hat-desc = Шляпа, в которой вы выглядите словно носите пистолет с одной и ещё девятнадцатью зарубками.
@@ -520,13 +520,3 @@ uplink-briefcase-gun-desc = Незаметный чемодан с очень к
 
 uplink-energycrossbow-name = мини-энергоарбалет
 uplink-energycrossbow-desc = Незаменимое личное оружие каждого оперативника, предпочитающего, чтобы его цели не двигались. Стреляет возобновляющимися ядовитыми зарядами, которые мгновенно сбивают жертву с ног.
-
-# Missing entries synced from en-US
-
-uplink-voice-mask-name = Голосовая маска
-
-uplink-voice-mask-desc = Противогаз, который позволяет вам подстраивать свой голос под любого, о ком вы только можете подумать. Также используется передовая технология-хамелеон.
-
-uplink-buldog-bundle-name = Бульдог
-
-uplink-buldog-bundle-desc = Экономичный и скупой: содержит популярный дробовик Bulldog, барабан с пулями весом 12 г и четыре барабана с картечью весом 12 г.

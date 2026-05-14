@@ -1,6 +1,6 @@
-ent-ComputerFrame-name = компьютерная рама
-ent-ComputerFrame-desc = Компьютер в стадии сборки.
+ent-ComputerFrame-name = computer frame
+ent-ComputerFrame-desc = A computer under construction.
 
-ent-ComputerBroken-name = сломанный компьютер
-ent-ComputerBroken-desc = Этот компьютер видал лучшие дни.
+ent-ComputerBroken-name = broken computer
+ent-ComputerBroken-desc = This computer has seen better days.
 

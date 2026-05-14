@@ -24,7 +24,3 @@ rmc-storage-hand-eject-last-item = Нажатие на {THE($storage)} пуст�
 rmc-storage-hand-eject-first-item = Нажатие на {THE($storage)} пустой рукой теперь достает первый положенный предмет.
 rmc-storage-hand-eject-unequips = Нажатие на {THE($storage)} теперь снимает его.
 rmc-storage-hand-eject-open = Нажатие на {THE($storage)} теперь открывает его.
-
-# Missing entries synced from en-US
-
-rmc-storage-limit-generic = Хранилище не может вместить больше этого предмета!

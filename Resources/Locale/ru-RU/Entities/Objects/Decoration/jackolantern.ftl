@@ -1,18 +1,18 @@
-ent-CarvedPumpkin-name = резная тыква
-ent-CarvedPumpkin-desc = Традиционное жуткое украшение.
+ent-CarvedPumpkin-name = carved pumpkin
+ent-CarvedPumpkin-desc = A traditional spooky decoration.
 
-ent-PumpkinLantern-name = фонарь Джека
-ent-PumpkinLantern-desc = Резная тыква, излучающая жуткое свечение.
+ent-PumpkinLantern-name = jack o' lantern
+ent-PumpkinLantern-desc = A carved pumpkin, emitting an eerie glow.
 
-ent-CarvedPumpkinSmall-name = резная тыква
-ent-CarvedPumpkinSmall-desc = Традиционное жуткое украшение.
+ent-CarvedPumpkinSmall-name = carved pumpkin
+ent-CarvedPumpkinSmall-desc = A traditional spooky decoration.
 
-ent-CarvedPumpkinLarge-name = резная тыква
-ent-CarvedPumpkinLarge-desc = Традиционное жуткое украшение.
+ent-CarvedPumpkinLarge-name = carved pumpkin
+ent-CarvedPumpkinLarge-desc = A traditional spooky decoration.
 
-ent-PumpkinLanternSmall-name = фонарь Джека
-ent-PumpkinLanternSmall-desc = Резная тыква, излучающая жуткое свечение.
+ent-PumpkinLanternSmall-name = jack o' lantern
+ent-PumpkinLanternSmall-desc = A carved pumpkin, emitting an eerie glow.
 
-ent-PumpkinLanternLarge-name = фонарь Джека
-ent-PumpkinLanternLarge-desc = Резная тыква, излучающая жуткое свечение.
+ent-PumpkinLanternLarge-name = jack o' lantern
+ent-PumpkinLanternLarge-desc = A carved pumpkin, emitting an eerie glow.
 

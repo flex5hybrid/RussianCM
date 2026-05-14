@@ -1,2 +1,2 @@
-ent-ShuttleWindow-name = челночное окно
+ent-ShuttleWindow-name = shuttle window
 

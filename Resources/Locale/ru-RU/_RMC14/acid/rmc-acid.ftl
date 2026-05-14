@@ -3,9 +3,3 @@ rmc-glob-start-others = {$user} напрягается, готовясь вып�
 rmc-glob-shoot-self = Мы выплёвываем сгусток кислотного газа на пол!
 rmc-glob-shoot-others = {$user} выплёвывает что-то на пол!
 rmc-glob-land = Сгусток кислоты с шлепком ударяется о пол, распыляя едкий дым!
-
-# Missing entries synced from en-US
-
-rmc-acid-resist-partial = Вы останавливаетесь, падаете и катитесь, избавляясь от кислоты... но она все равно вас плавит!
-
-rmc-glob-start-self = Мы начинаем плеваться кислым газом!

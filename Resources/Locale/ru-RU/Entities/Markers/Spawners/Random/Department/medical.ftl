@@ -1,4 +1,4 @@
-ent-LootSpawnerMedicalMinor-name = Производитель лечебных припасов
+ent-LootSpawnerMedicalMinor-name = healing supplies spawner
 
-ent-LootSpawnerMedicalClassy-name = спаунер медицинской добычи
+ent-LootSpawnerMedicalClassy-name = medical loot spawner
 

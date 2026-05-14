@@ -1,3 +1,3 @@
-ent-BulletFoam-name = пенопластовый дротик
-ent-BulletFoam-desc = Надеюсь, ты носишь защитные очки.
+ent-BulletFoam-name = foam dart
+ent-BulletFoam-desc = I hope you're wearing eye protection.
 

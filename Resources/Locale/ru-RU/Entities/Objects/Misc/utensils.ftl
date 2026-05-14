@@ -1,22 +1,22 @@
-ent-Fork-name = вилка
-ent-Fork-desc = Столовая посуда, идеально подходящая для нанесения ударов.
+ent-Fork-name = fork
+ent-Fork-desc = An eating utensil, perfect for stabbing.
 
-ent-ForkPlastic-name = пластиковая вилка
-ent-ForkPlastic-desc = Столовая посуда, идеально подходящая для нанесения ударов.
+ent-ForkPlastic-name = plastic fork
+ent-ForkPlastic-desc = An eating utensil, perfect for stabbing.
 
-ent-Spoon-name = ложка
-ent-Spoon-desc = Ложки нет.
+ent-Spoon-name = spoon
+ent-Spoon-desc = There is no spoon.
 
-ent-SpoonPlastic-name = пластиковая ложка
-ent-SpoonPlastic-desc = Ложки нет.
+ent-SpoonPlastic-name = plastic spoon
+ent-SpoonPlastic-desc = There is no spoon.
 
-ent-KnifePlastic-name = пластиковый нож
-ent-KnifePlastic-desc = Это не нож. Это нож.
+ent-KnifePlastic-name = plastic knife
+ent-KnifePlastic-desc = That's not a knife. This is a knife.
 
-ent-BarSpoon-name = барная ложка
-ent-BarSpoon-desc = Ваш личный помощник смешивать напитки и менять жизнь.
+ent-BarSpoon-name = bar spoon
+ent-BarSpoon-desc = Your personal helper to mix drinks and changes lives.
 
-ent-UtensilBase-name = элемент
+ent-UtensilBase-name = item
 
-ent-UtensilBasePlastic-name = элемент
+ent-UtensilBasePlastic-name = item
 

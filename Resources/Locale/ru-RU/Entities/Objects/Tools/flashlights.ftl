@@ -1,6 +1,6 @@
-ent-FlashlightLantern-name = фонарик
-ent-FlashlightLantern-desc = Оно освещает путь к свободе.
+ent-FlashlightLantern-name = flashlight
+ent-FlashlightLantern-desc = It lights the way to freedom.
 
-ent-FlashlightSeclite-name = секретный
-ent-FlashlightSeclite-desc = Прочный фонарик, используемый службой безопасности.
+ent-FlashlightSeclite-name = seclite
+ent-FlashlightSeclite-desc = A robust flashlight used by security.
 

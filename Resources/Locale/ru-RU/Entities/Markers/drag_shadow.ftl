@@ -1,2 +1,2 @@
-ent-dragshadow-name = перетаскивание тени
+ent-dragshadow-name = drag shadow
 

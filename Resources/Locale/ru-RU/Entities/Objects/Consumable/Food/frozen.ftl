@@ -1,53 +1,53 @@
-ent-FoodFrozenSandwich-name = сэндвич с мороженым
-ent-FoodFrozenSandwich-desc = Портативное мороженое в собственной упаковке.
+ent-FoodFrozenSandwich-name = ice-cream sandwich
+ent-FoodFrozenSandwich-desc = Portable ice-cream in its own packaging.
 
-ent-FoodFrozenSandwichStrawberry-name = сэндвич с клубничным мороженым
-ent-FoodFrozenSandwichStrawberry-desc = Портативное мороженое в собственной упаковке сорта клубника.
+ent-FoodFrozenSandwichStrawberry-name = strawberry ice-cream sandwich
+ent-FoodFrozenSandwichStrawberry-desc = Portable ice-cream in its own packaging of the strawberry variety.
 
-ent-FoodFrozenFreezy-name = космическое замораживание
-ent-FoodFrozenFreezy-desc = Лучшее мороженое в космосе.
+ent-FoodFrozenFreezy-name = space freezy
+ent-FoodFrozenFreezy-desc = The best ice-cream in space.
 
-ent-FoodFrozenSundae-name = мороженое с фруктами
-ent-FoodFrozenSundae-desc = Классический десерт.
+ent-FoodFrozenSundae-name = ice-cream sundae
+ent-FoodFrozenSundae-desc = A classic dessert.
 
-ent-FoodFrozenCornuto-name = корнуто
-ent-FoodFrozenCornuto-desc = Неаполитанское ванильно-шоколадное мороженое. Он грозит посыпкой карамелизированных орехов.
+ent-FoodFrozenCornuto-name = cornuto
+ent-FoodFrozenCornuto-desc = A Neapolitan vanilla and chocolate ice-cream cone. It menaces with a sprinkling of caramelized nuts.
 
-ent-FoodFrozenPopsicleOrange-name = апельсиновый кремик
-ent-FoodFrozenPopsicleOrange-desc = Классический апельсиновый крем-крем. Солнечное замороженное лакомство.
+ent-FoodFrozenPopsicleOrange-name = orange creamsicle
+ent-FoodFrozenPopsicleOrange-desc = A classic orange creamsicle. A sunny frozen treat.
 
-ent-FoodFrozenPopsicleBerry-name = ягодный кремик
-ent-FoodFrozenPopsicleBerry-desc = Яркий ягодный кремсик. Ягодное хорошее замороженное лакомство.
+ent-FoodFrozenPopsicleBerry-name = berry creamsicle
+ent-FoodFrozenPopsicleBerry-desc = A vibrant berry creamsicle. A berry good frozen treat.
 
-ent-FoodFrozenPopsicleJumbo-name = гигантское мороженое
-ent-FoodFrozenPopsicleJumbo-desc = Роскошное мороженое, покрытое насыщенным шоколадом. Он меньше, чем вы помните.
+ent-FoodFrozenPopsicleJumbo-name = jumbo ice-cream
+ent-FoodFrozenPopsicleJumbo-desc = A luxurious ice-cream covered in rich chocolate. It's smaller than you remember.
 
-ent-FoodFrozenSnowconeBase-name = сладкий снежник
-ent-FoodFrozenSnowconeBase-desc = Это просто стружка льда и простой сироп, минимум усилий.
+ent-FoodFrozenSnowconeBase-name = sweet snowcone
+ent-FoodFrozenSnowconeBase-desc = It's just shaved ice and simple syrup, minimum effort.
 
-ent-FoodFrozenSnowcone-name = безвкусный снежник
-ent-FoodFrozenSnowcone-desc = Это просто стружка льда. Все равно интересно жевать.
+ent-FoodFrozenSnowcone-name = flavorless snowcone
+ent-FoodFrozenSnowcone-desc = It's just shaved ice. Still fun to chew on.
 
-ent-FoodFrozenSnowconeBerry-name = ягодный снежник
-ent-FoodFrozenSnowconeBerry-desc = Ягодный сироп сбрызнул снежок в бумажном стаканчике.
+ent-FoodFrozenSnowconeBerry-name = berry snowcone
+ent-FoodFrozenSnowconeBerry-desc = Berry syrup drizzled over a snowball in a paper cup.
 
-ent-FoodFrozenSnowconeFruit-name = фруктовый салат снежная шишка
-ent-FoodFrozenSnowconeFruit-desc = Восхитительная смесь цитрусовых сиропов, сбрызнутая снежком в бумажном стаканчике.
+ent-FoodFrozenSnowconeFruit-name = fruit salad snowcone
+ent-FoodFrozenSnowconeFruit-desc = A delightful mix of citrus syrups drizzled over a snowball in a paper cup.
 
-ent-FoodFrozenSnowconeClown-name = клоунский конус
-ent-FoodFrozenSnowconeClown-desc = Смех лился над снежком в бумажном стаканчике.
+ent-FoodFrozenSnowconeClown-name = clowncone
+ent-FoodFrozenSnowconeClown-desc = Laughter drizzled over a snowball in a paper cup.
 
-ent-FoodFrozenSnowconeMime-name = мимический снежный конус
+ent-FoodFrozenSnowconeMime-name = mime snowcone
 ent-FoodFrozenSnowconeMime-desc = ...
 
-ent-FoodFrozenSnowconeRainbow-name = Радужный снежный конус
-ent-FoodFrozenSnowconeRainbow-desc = Очень красочный снежок в бумажном стаканчике.
+ent-FoodFrozenSnowconeRainbow-name = rainbow snowcone
+ent-FoodFrozenSnowconeRainbow-desc = A very colorful snowball in a paper cup.
 
-ent-FoodFrozenSnowconeTrash-name = бумажный конус
-ent-FoodFrozenSnowconeTrash-desc = Мятый бумажный рожок, используемый для ледяного лакомства. Бесполезно.
+ent-FoodFrozenSnowconeTrash-name = paper cone
+ent-FoodFrozenSnowconeTrash-desc = A crumpled paper cone used for an icy treat. Worthless.
 
-ent-FoodFrozenPopsicleTrash-name = палочка для мороженого
-ent-FoodFrozenPopsicleTrash-desc = Однажды провели вкусное угощение. Теперь здесь бесплодно.
+ent-FoodFrozenPopsicleTrash-name = popsicle stick
+ent-FoodFrozenPopsicleTrash-desc = Once held a delicious treat. Now, 'tis barren.
 
-ent-FoodFrozenBase-name = элемент
+ent-FoodFrozenBase-name = item
 

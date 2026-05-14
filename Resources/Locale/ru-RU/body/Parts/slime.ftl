@@ -1,22 +1,22 @@
-ent-PartSlime-name = часть тела слизи
+ent-PartSlime-name = slime body part
 
-ent-TorsoSlime-name = слизь туловища
+ent-TorsoSlime-name = slime torso
 
-ent-HeadSlime-name = голова слизи
+ent-HeadSlime-name = slime head
 
-ent-LeftArmSlime-name = левая рука слизи
+ent-LeftArmSlime-name = left slime arm
 
-ent-RightArmSlime-name = правая рука слизи
+ent-RightArmSlime-name = right slime arm
 
-ent-LeftHandSlime-name = левая рука слизи
+ent-LeftHandSlime-name = left slime hand
 
-ent-RightHandSlime-name = правая рука слизи
+ent-RightHandSlime-name = right slime hand
 
-ent-LeftLegSlime-name = левая нога слизи
+ent-LeftLegSlime-name = left slime leg
 
-ent-RightLegSlime-name = правая нога слизи
+ent-RightLegSlime-name = right slime leg
 
-ent-LeftFootSlime-name = левая нога слизи
+ent-LeftFootSlime-name = left slime foot
 
-ent-RightFootSlime-name = правая скользкая нога
+ent-RightFootSlime-name = right slime foot
 

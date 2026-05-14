@@ -1,8 +1,8 @@
-ent-MobSkeletonPirate-name = скелет пирата
+ent-MobSkeletonPirate-name = skeleton pirate
 
-ent-MobSkeletonBiker-name = скелет байкера
+ent-MobSkeletonBiker-name = skeleton biker
 
-ent-MobSkeletonCloset-name = скелет шкафа
+ent-MobSkeletonCloset-name = closet skeleton
 
-ent-MobSkeletonPerson-name = Урист МакСкелли
+ent-MobSkeletonPerson-name = Urist McSkelly
 

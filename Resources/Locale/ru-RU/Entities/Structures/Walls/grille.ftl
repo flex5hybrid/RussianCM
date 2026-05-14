@@ -1,17 +1,17 @@
-ent-Grille-name = решетка
-ent-Grille-desc = Хлипкий каркас из железных прутьев.
+ent-Grille-name = grille
+ent-Grille-desc = A flimsy framework of iron rods.
 
-ent-ClockworkGrille-name = заводная решетка
-ent-ClockworkGrille-desc = Хлипкий каркас из железных прутьев, собранный в традиционном ратварском стиле.
+ent-ClockworkGrille-name = clockwork grille
+ent-ClockworkGrille-desc = A flimsy framework of iron rods assembled in traditional Ratvarian fashion.
 
-ent-GrilleBroken-name = решетка
-ent-GrilleBroken-desc = Хлипкий каркас из железных прутьев. Он видал лучшие дни.
+ent-GrilleBroken-name = grille
+ent-GrilleBroken-desc = A flimsy framework of iron rods. It has seen better days.
 
-ent-ClockworkGrilleBroken-name = заводная решетка
-ent-ClockworkGrilleBroken-desc = Хлипкий каркас из железных прутьев, собранный в традиционном ратварском стиле. Он видал лучшие дни.
+ent-ClockworkGrilleBroken-name = clockwork grille
+ent-ClockworkGrilleBroken-desc = A flimsy framework of iron rods assembled in traditional Ratvarian fashion. It has seen better days.
 
-ent-GrilleDiagonal-name = диагональная решетка
+ent-GrilleDiagonal-name = diagonal grille
 
-ent-ClockworkGrilleDiagonal-name = диагональная заводная решетка
-ent-ClockworkGrilleDiagonal-desc = Хлипкий каркас из железных прутьев, собранный в традиционном ратварском стиле.
+ent-ClockworkGrilleDiagonal-name = diagonal clockwork grille
+ent-ClockworkGrilleDiagonal-desc = A flimsy framework of iron rods assembled in traditional Ratvarian fashion.
 

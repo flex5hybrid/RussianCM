@@ -1,7 +1,7 @@
-ent-BaseBoardEntity-name = доска
-ent-BaseBoardEntity-desc = Пустая доска.
+ent-BaseBoardEntity-name = board
+ent-BaseBoardEntity-desc = A blank board.
 
-ent-BaseBoardTabletop-name = плинтус
+ent-BaseBoardTabletop-name = baseboard
 
-ent-BaseTabletopPiece-name = элемент
+ent-BaseTabletopPiece-name = item
 

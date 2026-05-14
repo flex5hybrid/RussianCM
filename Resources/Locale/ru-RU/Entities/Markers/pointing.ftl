@@ -1,2 +1,2 @@
-ent-PointingArrow-name = указывающая стрелка
+ent-PointingArrow-name = pointing arrow
 

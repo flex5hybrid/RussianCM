@@ -1,21 +1,21 @@
-ent-BasePortal-name = синий космический портал
-ent-BasePortal-desc = Перенесет вас в связанный пункт назначения!
+ent-BasePortal-name = bluespace portal
+ent-BasePortal-desc = Transports you to a linked destination!
 
-ent-PortalRed-name = синий космический портал
-ent-PortalRed-desc = Этот больше похож на портал в красном пространстве.
+ent-PortalRed-name = bluespace portal
+ent-PortalRed-desc = This one looks more like a redspace portal.
 
-ent-ShadowPortal-name = теневой разлом
-ent-ShadowPortal-desc = Выглядит нестабильно.
+ent-ShadowPortal-name = shadow rift
+ent-ShadowPortal-desc = Looks unstable.
 
-ent-PortalBlue-name = синий космический портал
-ent-PortalBlue-desc = Перенесет вас в связанный пункт назначения!
+ent-PortalBlue-name = bluespace portal
+ent-PortalBlue-desc = Transports you to a linked destination!
 
-ent-PortalArtifact-name = синий космический портал
-ent-PortalArtifact-desc = Перенесет вас в связанный пункт назначения!
+ent-PortalArtifact-name = bluespace portal
+ent-PortalArtifact-desc = Transports you to a linked destination!
 
-ent-PortalGatewayBlue-name = синий космический портал
-ent-PortalGatewayBlue-desc = Перенесет вас в связанный пункт назначения!
+ent-PortalGatewayBlue-name = bluespace portal
+ent-PortalGatewayBlue-desc = Transports you to a linked destination!
 
-ent-PortalGatewayOrange-name = синий космический портал
-ent-PortalGatewayOrange-desc = Перенесет вас в связанный пункт назначения!
+ent-PortalGatewayOrange-name = bluespace portal
+ent-PortalGatewayOrange-desc = Transports you to a linked destination!
 

@@ -1,24 +1,24 @@
-ent-MechRipley-name = Рипли APLU
-ent-MechRipley-desc = Универсальный и легкобронированный, «Рипли» полезен практически для любых тяжелых работ. «APLU» означает «Автономное силовое загрузочное устройство».
+ent-MechRipley-name = Ripley APLU
+ent-MechRipley-desc = Versatile and lightly armored, the Ripley is useful for almost any heavy work scenario. The "APLU" stands for Autonomous Power Loading Unit.
 
 ent-MechHonker-name = H.O.N.K.
-ent-MechHonker-desc = Этот экзокостюм, произведенный компанией «Tyranny of Honk, INC», представляет собой тяжелую клоунскую опору. Используется для распространения веселья и радости жизни. ГУДОК!
+ent-MechHonker-desc = Produced by "Tyranny of Honk, INC", this exosuit is designed as heavy clown-support. Used to spread the fun and joy of life. HONK!
 
-ent-MechHamtr-name = ХАМТР
-ent-MechHamtr-desc = Экспериментальный механизм, использующий интерфейс мозг-компьютер для прямого подключения к мозгу хомяка.
+ent-MechHamtr-name = HAMTR
+ent-MechHamtr-desc = An experimental mech which uses a brain–computer interface to connect directly to a hamsters brain.
 
-ent-MechVim-name = Вим
-ent-MechVim-desc = Миниатюрный экзокостюм от Nanotrasen, разработанный, чтобы позволить незаменимым питомцам станции прожить немного дольше.
+ent-MechVim-name = Vim
+ent-MechVim-desc = A miniature exosuit from Nanotrasen, developed to let the irreplaceable station pets live a little longer.
 
-ent-MechRipleyBattery-name = Рипли APLU
-ent-MechRipleyBattery-desc = Универсальный и легкобронированный, «Рипли» полезен практически для любых тяжелых работ. «APLU» означает «Автономное силовое загрузочное устройство».
+ent-MechRipleyBattery-name = Ripley APLU
+ent-MechRipleyBattery-desc = Versatile and lightly armored, the Ripley is useful for almost any heavy work scenario. The "APLU" stands for Autonomous Power Loading Unit.
 
 ent-MechHonkerBattery-name = H.O.N.K.
-ent-MechHonkerBattery-desc = Этот экзокостюм, произведенный компанией «Tyranny of Honk, INC», представляет собой тяжелую клоунскую опору. Используется для распространения веселья и радости жизни. ГУДОК!
+ent-MechHonkerBattery-desc = Produced by "Tyranny of Honk, INC", this exosuit is designed as heavy clown-support. Used to spread the fun and joy of life. HONK!
 
-ent-MechHamtrBattery-name = ХАМТР
-ent-MechHamtrBattery-desc = Экспериментальный механизм, использующий интерфейс мозг-компьютер для прямого подключения к мозгу хомяка.
+ent-MechHamtrBattery-name = HAMTR
+ent-MechHamtrBattery-desc = An experimental mech which uses a brain–computer interface to connect directly to a hamsters brain.
 
-ent-MechVimBattery-name = Вим
-ent-MechVimBattery-desc = Миниатюрный экзокостюм от Nanotrasen, разработанный, чтобы позволить незаменимым питомцам станции прожить немного дольше.
+ent-MechVimBattery-name = Vim
+ent-MechVimBattery-desc = A miniature exosuit from Nanotrasen, developed to let the irreplaceable station pets live a little longer.
 

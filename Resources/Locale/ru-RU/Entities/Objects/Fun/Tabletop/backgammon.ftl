@@ -1,5 +1,5 @@
-ent-BackgammonBoard-name = доска для игры в нарды
-ent-BackgammonBoard-desc = Старомодная игра в кости и фишки.
+ent-BackgammonBoard-name = backgammon board
+ent-BackgammonBoard-desc = Old fashioned game of dice and pieces.
 
-ent-BackgammonBoardTabletop-name = нарды
+ent-BackgammonBoardTabletop-name = backgammon
 

@@ -1,2 +1,2 @@
-ent-RandomDrinkGlass-name = генератор случайных напитков
+ent-RandomDrinkGlass-name = random drink spawner
 

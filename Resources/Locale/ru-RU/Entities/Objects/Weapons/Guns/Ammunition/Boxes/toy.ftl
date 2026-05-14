@@ -1,6 +1,6 @@
-ent-BoxDonkSoftBase-name = коробка для пенопласта
+ent-BoxDonkSoftBase-name = foamdart box
 
-ent-BoxDonkSoftBox-name = коробка с дротиками из пенопласта
+ent-BoxDonkSoftBox-name = box of foam darts
 
-ent-BoxCartridgeCap-name = патронная коробка для пистолета
+ent-BoxCartridgeCap-name = cap gun cartridge box
 

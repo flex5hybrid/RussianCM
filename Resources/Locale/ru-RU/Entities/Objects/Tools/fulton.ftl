@@ -1,9 +1,9 @@
-ent-FultonBeacon-name = Фултонский маяк
-ent-FultonBeacon-desc = Маяк для получения экстрактов Фултона.
+ent-FultonBeacon-name = fulton beacon
+ent-FultonBeacon-desc = Beacon to receive fulton extractions.
 
-ent-Fulton1-name = Фултон
+ent-Fulton1-name = fulton
 
-ent-FultonEffect-name = эффект Фултона
+ent-FultonEffect-name = fulton effect
 
-ent-Fulton-name = элемент
+ent-Fulton-name = item
 

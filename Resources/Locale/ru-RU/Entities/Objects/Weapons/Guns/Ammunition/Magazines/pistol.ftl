@@ -1,48 +1,48 @@
-ent-BaseMagazinePistol-name = пистолетный магазин (.35 авто)
+ent-BaseMagazinePistol-name = pistol magazine (.35 auto)
 
-ent-BaseMagazinePistolHighCapacity-name = магазин пистолета-пулемета (автомат .35)
+ent-BaseMagazinePistolHighCapacity-name = machine pistol magazine (.35 auto)
 
-ent-BaseMagazinePistolSubMachineGun-name = Магазин SMG (автомат .35)
+ent-BaseMagazinePistolSubMachineGun-name = SMG magazine (.35 auto)
 
-ent-MagazinePistolSubMachineGunTopMounted-name = Магазин WT550 (автоматическая установка .35 сверху)
-ent-MagazinePistolSubMachineGunTopMounted-desc = Нетрадиционный магазин с верхней подачей на 30 патронов для пистолета-пулемета WT550. Предназначен для хранения кинетических боеприпасов общего назначения.
+ent-MagazinePistolSubMachineGunTopMounted-name = WT550 magazine (.35 auto top-mounted)
+ent-MagazinePistolSubMachineGunTopMounted-desc = Unconventional 30-round top feeding magazine for the WT550 SMG. Intended to hold general-purpose kinetic ammunition.
 
-ent-MagazinePistolSubMachineGunTopMountedEmpty-name = Магазин WT550 (автоматический .35 с верхним креплением любой)
-ent-MagazinePistolSubMachineGunTopMountedEmpty-desc = Нетрадиционный магазин с верхней подачей на 30 патронов для пистолета-пулемета WT550.
+ent-MagazinePistolSubMachineGunTopMountedEmpty-name = WT550 magazine (.35 auto top-mounted any)
+ent-MagazinePistolSubMachineGunTopMountedEmpty-desc = Unconventional 30-round top feeding magazine for the WT550 SMG.
 
-ent-MagazinePistol-name = пистолетный магазин (.35 авто)
-ent-MagazinePistol-desc = Магазин для пистолетов однорядный на 10 патронов. Предназначен для хранения кинетических боеприпасов общего назначения.
+ent-MagazinePistol-name = pistol magazine (.35 auto)
+ent-MagazinePistol-desc = 10-round single-stack magazine for pistols. Intended to hold general-purpose kinetic ammunition.
 
-ent-MagazinePistolEmpty-name = пистолетный магазин (.35 авто любой)
-ent-MagazinePistolEmpty-desc = Магазин для пистолетов однорядный на 10 патронов.
+ent-MagazinePistolEmpty-name = pistol magazine (.35 auto any)
+ent-MagazinePistolEmpty-desc = 10-round single-stack magazine for pistols.
 
-ent-MagazinePistolIncendiary-name = пистолетный магазин (автозажигательный .35)
-ent-MagazinePistolIncendiary-desc = Магазин для пистолетов однорядный на 10 патронов. Предназначен для хранения самовоспламеняющихся боеприпасов.
+ent-MagazinePistolIncendiary-name = pistol magazine (.35 auto incendiary)
+ent-MagazinePistolIncendiary-desc = 10-round single-stack magazine for pistols. Intended to hold self-igniting incendiary ammunition.
 
-ent-MagazinePistolPractice-name = пистолетный магазин (автоматическая практика .35)
-ent-MagazinePistolPractice-desc = Магазин для пистолетов однорядный на 10 патронов. Предназначен для хранения неопасных меловых боеприпасов.
+ent-MagazinePistolPractice-name = pistol magazine (.35 auto practice)
+ent-MagazinePistolPractice-desc = 10-round single-stack magazine for pistols. Intended to hold non-harmful chalk ammunition.
 
-ent-MagazinePistolUranium-name = пистолетный магазин (.35 авто уран)
-ent-MagazinePistolUranium-desc = Магазин для пистолетов однорядный на 10 патронов. Предназначен для хранения экзотических боеприпасов с урановым сердечником.
+ent-MagazinePistolUranium-name = pistol magazine (.35 auto uranium)
+ent-MagazinePistolUranium-desc = 10-round single-stack magazine for pistols. Intended to hold exotic uranium-core ammunition.
 
-ent-MagazinePistolHighCapacityEmpty-name = магазин пистолета-пулемета (.35 авто любой)
+ent-MagazinePistolHighCapacityEmpty-name = machine pistol magazine (.35 auto any)
 
-ent-MagazinePistolHighCapacity-name = магазин пистолета-пулемета (автомат .35)
+ent-MagazinePistolHighCapacity-name = machine pistol magazine (.35 auto)
 
-ent-MagazinePistolHighCapacityPractice-name = магазин пистолета-пулемета (автоматическая практика .35)
+ent-MagazinePistolHighCapacityPractice-name = machine pistol magazine (.35 auto practice)
 
-ent-MagazinePistolSubMachineGun-name = Магазин SMG (автомат .35)
-ent-MagazinePistolSubMachineGun-desc = Двухрядный магазин на 30 патронов для пистолетов-пулеметов. Предназначен для хранения кинетических боеприпасов общего назначения.
+ent-MagazinePistolSubMachineGun-name = SMG magazine (.35 auto)
+ent-MagazinePistolSubMachineGun-desc = 30-round double-stack magazine for submachine guns. Intended to hold general-purpose kinetic ammunition.
 
-ent-MagazinePistolSubMachineGunEmpty-name = Магазин SMG (.35 авто любой)
-ent-MagazinePistolSubMachineGunEmpty-desc = Двухрядный магазин на 30 патронов для пистолетов-пулеметов.
+ent-MagazinePistolSubMachineGunEmpty-name = SMG magazine (.35 auto any)
+ent-MagazinePistolSubMachineGunEmpty-desc = 30-round double-stack magazine for submachine guns.
 
-ent-MagazinePistolSubMachineGunPractice-name = Журнал SMG (автопрактика .35)
-ent-MagazinePistolSubMachineGunPractice-desc = Двухрядный магазин на 30 патронов для пистолетов-пулеметов. Предназначен для хранения неопасных меловых боеприпасов.
+ent-MagazinePistolSubMachineGunPractice-name = SMG magazine (.35 auto practice)
+ent-MagazinePistolSubMachineGunPractice-desc = 30-round double-stack magazine for submachine guns. Intended to hold non-harmful chalk ammunition.
 
-ent-MagazinePistolSubMachineGunUranium-name = Магазин SMG (авто уран .35)
-ent-MagazinePistolSubMachineGunUranium-desc = Двухрядный магазин на 30 патронов для пистолетов-пулеметов. Предназначен для хранения экзотических боеприпасов с урановым сердечником.
+ent-MagazinePistolSubMachineGunUranium-name = SMG magazine (.35 auto uranium)
+ent-MagazinePistolSubMachineGunUranium-desc = 30-round double-stack magazine for submachine guns. Intended to hold exotic uranium-core ammunition.
 
-ent-MagazinePistolSubMachineGunIncendiary-name = Магазин SMG (автозажигательный .35)
-ent-MagazinePistolSubMachineGunIncendiary-desc = Двухрядный магазин на 30 патронов для пистолетов-пулеметов. Предназначен для хранения самовоспламеняющихся боеприпасов.
+ent-MagazinePistolSubMachineGunIncendiary-name = SMG magazine (.35 auto incendiary)
+ent-MagazinePistolSubMachineGunIncendiary-desc = 30-round double-stack magazine for submachine guns. Intended to hold self-igniting incendiary ammunition.
 

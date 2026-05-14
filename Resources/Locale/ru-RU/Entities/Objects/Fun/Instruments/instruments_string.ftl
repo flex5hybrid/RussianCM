@@ -1,33 +1,33 @@
-ent-ElectricGuitarInstrument-name = электрогитара
-ent-ElectricGuitarInstrument-desc = Теперь вы почувствуете себя рок-звездой!
+ent-ElectricGuitarInstrument-name = electric guitar
+ent-ElectricGuitarInstrument-desc = Now this makes you feel like a rock star!
 
-ent-BassGuitarInstrument-name = бас-гитара
-ent-BassGuitarInstrument-desc = Ты чувствуешь себя действительно круто, держа это. Жаль, что ты единственный, кто так думает.
+ent-BassGuitarInstrument-name = bass guitar
+ent-BassGuitarInstrument-desc = You feel really cool holding this. Shame you're the only one that thinks that.
 
-ent-RockGuitarInstrument-name = рок-гитара
-ent-RockGuitarInstrument-desc = Какой топор!
+ent-RockGuitarInstrument-name = rock guitar
+ent-RockGuitarInstrument-desc = What an axe!
 
-ent-AcousticGuitarInstrument-name = акустическая гитара
-ent-AcousticGuitarInstrument-desc = В любом случае, вот Wonderwall.
+ent-AcousticGuitarInstrument-name = acoustic guitar
+ent-AcousticGuitarInstrument-desc = Anyway, here's Wonderwall.
 
-ent-GuitarlessFretsInstrument-name = безгитарные лады
-ent-GuitarlessFretsInstrument-desc = Кому вообще нужно тело?
+ent-GuitarlessFretsInstrument-name = guitarless frets
+ent-GuitarlessFretsInstrument-desc = Who even needs a body?
 
-ent-BanjoInstrument-name = банджо
-ent-BanjoInstrument-desc = Это инструмент.
+ent-BanjoInstrument-name = banjo
+ent-BanjoInstrument-desc = That's an instrument.
 
-ent-ViolinInstrument-name = скрипка
-ent-ViolinInstrument-desc = Любимец музыкальных виртуозов и блюграсс-групп.
+ent-ViolinInstrument-name = violin
+ent-ViolinInstrument-desc = The favorite of musical virtuosos and bluegrass bands.
 
-ent-ViolaInstrument-name = альт
-ent-ViolaInstrument-desc = Как скрипка, только хуже.
+ent-ViolaInstrument-name = viola
+ent-ViolaInstrument-desc = Like a violin, but worse.
 
-ent-CelloInstrument-name = виолончель
-ent-CelloInstrument-desc = Ботаники называют эти виолончели.
+ent-CelloInstrument-name = cello
+ent-CelloInstrument-desc = The nerds call these violoncellos.
 
-ent-BaseStringInstrument-name = элемент
-ent-BaseStringInstrument-desc = Это инструмент.
+ent-BaseStringInstrument-name = item
+ent-BaseStringInstrument-desc = That's an instrument.
 
-ent-BaseStringInstrumentClothing-name = элемент
-ent-BaseStringInstrumentClothing-desc = Это инструмент.
+ent-BaseStringInstrumentClothing-name = item
+ent-BaseStringInstrumentClothing-desc = That's an instrument.
 

@@ -1,10 +1,10 @@
-ent-CrateEmptySpawner-name = Создатель пустых ящиков
+ent-CrateEmptySpawner-name = Empty Crate Spawner
 
-ent-CrateFilledSpawner-name = Создатель заполненных ящиков
+ent-CrateFilledSpawner-name = Filled Crate Spawner
 
-ent-LootSpawnerRandomCrateEngineering-name = Случайный генератор инженерных ящиков
+ent-LootSpawnerRandomCrateEngineering-name = random engineering crate spawner
 
-ent-LootSpawnerRandomCrateSecurity-name = генератор случайных ящиков с ценными бумагами
+ent-LootSpawnerRandomCrateSecurity-name = random security crate spawner
 
-ent-LootSpawnerRandomLockbox-name = случайный спаунер сундуков
+ent-LootSpawnerRandomLockbox-name = random lockbox spawner
 

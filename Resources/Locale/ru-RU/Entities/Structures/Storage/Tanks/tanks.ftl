@@ -1,24 +1,24 @@
-ent-WeldingFuelTank-name = топливный бак
-ent-WeldingFuelTank-desc = Топливный бак. Он используется для хранения большого количества топлива.
+ent-WeldingFuelTank-name = fuel tank
+ent-WeldingFuelTank-desc = A fuel tank. It's used to store high amounts of fuel.
 
-ent-WeldingFuelTankHighCapacity-name = топливный бак большой емкости
-ent-WeldingFuelTankHighCapacity-desc = Топливный бак под высоким давлением, вмещающий огромное количество сварочного топлива.
+ent-WeldingFuelTankHighCapacity-name = high-capacity fuel tank
+ent-WeldingFuelTankHighCapacity-desc = A highly pressurized fuel tank made to hold gargantuan amounts of welding fuel.
 
-ent-WaterTank-name = резервуар для воды
-ent-WaterTank-desc = Резервуар для воды. Он используется для хранения большого количества воды.
+ent-WaterTank-name = water tank
+ent-WaterTank-desc = A water tank. It's used to store high amounts of water.
 
-ent-WaterCooler-name = кулер для воды
-ent-WaterCooler-desc = Кажется, хорошее место, чтобы постоять и провести время. Сбоку есть запас бумажных стаканчиков.
+ent-WaterCooler-name = water cooler
+ent-WaterCooler-desc = Seems like a good place to stand and waste time. It has a stock of paper cups on the side.
 
-ent-WaterTankHighCapacity-name = резервуар для воды большой емкости
-ent-WaterTankHighCapacity-desc = Резервуар для воды под высоким давлением, предназначенный для хранения гигантского количества воды.
+ent-WaterTankHighCapacity-name = high-capacity water tank
+ent-WaterTankHighCapacity-desc = A highly pressurized water tank made to hold gargantuan amounts of water.
 
-ent-WeldingFuelTankFull-name = топливный бак
-ent-WeldingFuelTankFull-desc = Топливный бак. Он используется для хранения большого количества топлива.
+ent-WeldingFuelTankFull-name = fuel tank
+ent-WeldingFuelTankFull-desc = A fuel tank. It's used to store high amounts of fuel.
 
-ent-WaterTankFull-name = резервуар для воды
-ent-WaterTankFull-desc = Резервуар для воды. Он используется для хранения большого количества воды.
+ent-WaterTankFull-name = water tank
+ent-WaterTankFull-desc = A water tank. It's used to store high amounts of water.
 
-ent-GenericTank-name = резервуар для хранения
-ent-GenericTank-desc = Резервуар для хранения жидкости.
+ent-GenericTank-name = storage tank
+ent-GenericTank-desc = A liquids storage tank.
 

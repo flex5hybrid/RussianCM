@@ -1,22 +1,22 @@
-ent-BasePart-name = часть тела
+ent-BasePart-name = body part
 
-ent-BaseTorso-name = туловище
+ent-BaseTorso-name = torso
 
-ent-BaseHead-name = голова
+ent-BaseHead-name = head
 
-ent-BaseLeftArm-name = левая рука
+ent-BaseLeftArm-name = left arm
 
-ent-BaseRightArm-name = правая рука
+ent-BaseRightArm-name = right arm
 
-ent-BaseLeftHand-name = левая рука
+ent-BaseLeftHand-name = left hand
 
-ent-BaseRightHand-name = правая рука
+ent-BaseRightHand-name = right hand
 
-ent-BaseLeftLeg-name = левая нога
+ent-BaseLeftLeg-name = left leg
 
-ent-BaseRightLeg-name = правая нога
+ent-BaseRightLeg-name = right leg
 
-ent-BaseLeftFoot-name = левая нога
+ent-BaseLeftFoot-name = left foot
 
-ent-BaseRightFoot-name = правая нога
+ent-BaseRightFoot-name = right foot
 

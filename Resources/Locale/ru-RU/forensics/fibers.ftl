@@ -28,9 +28,3 @@ fibers-regal-blue = королевские синие
 fibers-olive = оливковые
 fibers-silver = серебряные
 fibers-gold = золотые
-
-# Missing entries synced from en-US
-
-fibers-maroon = темно-бордовый
-
-fibers-pink = розовый

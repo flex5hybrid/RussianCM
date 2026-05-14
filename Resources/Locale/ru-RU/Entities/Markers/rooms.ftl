@@ -1,2 +1,2 @@
-ent-BaseRoomMarker-name = спаунер комнаты
+ent-BaseRoomMarker-name = room spawner
 

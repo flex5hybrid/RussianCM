@@ -1,6 +1,6 @@
-ent-AirlockMaint-name = доступ для обслуживания
+ent-AirlockMaint-name = maintenance access
 
-ent-AirlockHatch-name = герметичный люк
+ent-AirlockHatch-name = airtight hatch
 
-ent-AirlockHatchMaintenance-name = люк для обслуживания
+ent-AirlockHatchMaintenance-name = maintenance hatch
 

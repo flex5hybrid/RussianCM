@@ -1,30 +1,30 @@
-ent-MeteorRock-name = метеоритная скала
-ent-MeteorRock-desc = То, что осталось от метеорита.
+ent-MeteorRock-name = meteorite rock
+ent-MeteorRock-desc = What remains of a meteorite.
 
-ent-MeteorRockCoal-name = метеоритная скала
-ent-MeteorRockCoal-desc = Рудная жила, богатая углем.
+ent-MeteorRockCoal-name = meteorite rock
+ent-MeteorRockCoal-desc = An ore vein rich with coal.
 
-ent-MeteorRockGold-name = метеоритная скала
-ent-MeteorRockGold-desc = Рудная жила, богатая золотом.
+ent-MeteorRockGold-name = meteorite rock
+ent-MeteorRockGold-desc = An ore vein rich with gold.
 
-ent-MeteorRockDiamond-name = метеоритная скала
-ent-MeteorRockDiamond-desc = Рудная жила, богатая алмазами.
+ent-MeteorRockDiamond-name = meteorite rock
+ent-MeteorRockDiamond-desc = An ore vein rich with diamonds.
 
-ent-MeteorRockPlasma-name = метеоритная скала
-ent-MeteorRockPlasma-desc = Рудная жила, богатая плазмой.
+ent-MeteorRockPlasma-name = meteorite rock
+ent-MeteorRockPlasma-desc = An ore vein rich with plasma.
 
-ent-MeteorRockQuartz-name = метеоритная скала
-ent-MeteorRockQuartz-desc = Рудная жила, богатая кварцем.
+ent-MeteorRockQuartz-name = meteorite rock
+ent-MeteorRockQuartz-desc = An ore vein rich with quartz.
 
-ent-MeteorRockSilver-name = метеоритная скала
-ent-MeteorRockSilver-desc = Рудная жила, богатая серебром.
+ent-MeteorRockSilver-name = meteorite rock
+ent-MeteorRockSilver-desc = An ore vein rich with silver.
 
-ent-MeteorRockTin-name = метеоритная скала
-ent-MeteorRockTin-desc = Рудная жила, богатая железом.
+ent-MeteorRockTin-name = meteorite rock
+ent-MeteorRockTin-desc = An ore vein rich with iron.
 
-ent-MeteorRockUranium-name = метеоритная скала
-ent-MeteorRockUranium-desc = Рудная жила, богатая ураном.
+ent-MeteorRockUranium-name = meteorite rock
+ent-MeteorRockUranium-desc = An ore vein rich with uranium.
 
-ent-MeteorRockBananium-name = метеоритная скала
-ent-MeteorRockBananium-desc = Рудная жила, богатая бананом.
+ent-MeteorRockBananium-name = meteorite rock
+ent-MeteorRockBananium-desc = An ore vein rich with bananium.
 

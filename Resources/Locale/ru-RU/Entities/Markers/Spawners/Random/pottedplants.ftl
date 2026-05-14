@@ -1,4 +1,4 @@
-ent-PottedPlantRandom-name = генератор случайных горшечных растений
+ent-PottedPlantRandom-name = random potted plant spawner
 
-ent-PottedPlantRandomPlastic-name = Случайный генератор растений в пластиковых горшках
+ent-PottedPlantRandomPlastic-name = random plastic potted plant spawner
 

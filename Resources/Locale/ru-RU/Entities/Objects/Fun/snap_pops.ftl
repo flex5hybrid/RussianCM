@@ -1,6 +1,6 @@
-ent-SnapPop-name = оснастка поп
-ent-SnapPop-desc = Брось его на пол и слушай ПОП!
+ent-SnapPop-name = snap pop
+ent-SnapPop-desc = Throw it at the floor and listen to it POP!
 
-ent-SnapPopBox-name = оснастка поп-бокс
-ent-SnapPopBox-desc = Содержит всплывающие кнопки для нескольких минут веселья!
+ent-SnapPopBox-name = snap pop box
+ent-SnapPopBox-desc = Contains snap pops for a few minutes of popping fun!
 

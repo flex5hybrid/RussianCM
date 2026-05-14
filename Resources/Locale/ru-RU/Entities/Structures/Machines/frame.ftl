@@ -1,7 +1,7 @@
-ent-UnfinishedMachineFrame-name = рама машины
-ent-UnfinishedMachineFrame-desc = Машина в стадии строительства. Нужно больше запчастей.
+ent-UnfinishedMachineFrame-name = machine frame
+ent-UnfinishedMachineFrame-desc = A machine under construction. Needs more parts.
 
-ent-MachineFrame-name = рама машины
+ent-MachineFrame-name = machine frame
 
-ent-MachineFrameDestroyed-name = разрушенный корпус машины
+ent-MachineFrameDestroyed-name = destroyed machine frame
 

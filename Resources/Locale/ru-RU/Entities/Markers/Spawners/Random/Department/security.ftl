@@ -1,10 +1,10 @@
-ent-LootSpawnerSecurityBasic-name = генератор охранной добычи
+ent-LootSpawnerSecurityBasic-name = security loot spawner
 
-ent-LootSpawnerSecurity-name = генератор охранной добычи
+ent-LootSpawnerSecurity-name = security loot spawner
 
-ent-LootSpawnerArmory-name = генератор лута из арсенала
+ent-LootSpawnerArmory-name = armory loot spawner
 
-ent-LootSpawnerArmoryGunsOnly-name = генератор лута из арсенала
+ent-LootSpawnerArmoryGunsOnly-name = armory loot spawner
 
-ent-LootSpawnerArmoryArmorOnly-name = генератор лута из арсенала
+ent-LootSpawnerArmoryArmorOnly-name = armory loot spawner
 

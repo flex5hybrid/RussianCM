@@ -1,42 +1,42 @@
-ent-CrateEngineeringAMEShielding-name = упакованный ящик реактора на антивеществе
-ent-CrateEngineeringAMEShielding-desc = 9 деталей для основного корпуса реактора на антивеществе или для расширения существующего.
+ent-CrateEngineeringAMEShielding-name = packaged antimatter reactor crate
+ent-CrateEngineeringAMEShielding-desc = 9 parts for the main body of an antimatter reactor, or for expanding an existing one.
 
-ent-CrateEngineeringAMEJar-name = ящик для хранения антиматерии
-ent-CrateEngineeringAMEJar-desc = 3 банки с антиматерией для заправки реактора на антиматерии.
+ent-CrateEngineeringAMEJar-name = antimatter containment jar crate
+ent-CrateEngineeringAMEJar-desc = 3 antimatter jars, for fuelling an antimatter reactor.
 
-ent-CrateEngineeringAMEControl-name = ящик блока управления антивеществом
-ent-CrateEngineeringAMEControl-desc = Блок управления реактором антивещества.
+ent-CrateEngineeringAMEControl-name = antimatter control unit crate
+ent-CrateEngineeringAMEControl-desc = The control unit of an antimatter reactor.
 
-ent-CrateEngineeringSingularityEmitter-name = ящик излучателя
-ent-CrateEngineeringSingularityEmitter-desc = Эмиттер, лучше всего используемый для сингулярных двигателей.
+ent-CrateEngineeringSingularityEmitter-name = emitter crate
+ent-CrateEngineeringSingularityEmitter-desc = An emitter, best used for singularity engines.
 
-ent-CrateEngineeringSingularityCollector-name = ящик для сбора радиации
-ent-CrateEngineeringSingularityCollector-desc = Сборщик радиации, лучше всего используемый для сингулярных двигателей. Плазма включена в стоимость.
+ent-CrateEngineeringSingularityCollector-name = radiation collector crate
+ent-CrateEngineeringSingularityCollector-desc = A radiation collector, best used for singularity engines. Plasma is included.
 
-ent-CrateEngineeringSingularityContainment-name = ящик с генератором поля сдерживания
-ent-CrateEngineeringSingularityContainment-desc = Генератор сдерживающего поля удерживает сингуло в подчинении.
+ent-CrateEngineeringSingularityContainment-name = containment field generator crate
+ent-CrateEngineeringSingularityContainment-desc = A containment field generator, keeps the singulo in submission.
 
-ent-CrateEngineeringSingularityGenerator-name = ящик с генератором сингулярности
-ent-CrateEngineeringSingularityGenerator-desc = Генератор сингулярности, мать зверя.
+ent-CrateEngineeringSingularityGenerator-name = singularity generator crate
+ent-CrateEngineeringSingularityGenerator-desc = A singularity generator, the mother of the beast.
 
-ent-CrateEngineeringParticleAccelerator-name = Ящик для досок PA
-ent-CrateEngineeringParticleAccelerator-desc = Сложная в настройке, но чертовски полезная. Содержит платы для всех компонентов ускорителя частиц.
+ent-CrateEngineeringParticleAccelerator-name = PA board crate
+ent-CrateEngineeringParticleAccelerator-desc = Complex to setup, but rewarding as fuck. Contains boards for all particle accelerator components.
 
-ent-CrateEngineeringGenerator-name = ящик для генератора
-ent-CrateEngineeringGenerator-desc = Большой контейнер для вещей.
+ent-CrateEngineeringGenerator-name = generator crate
+ent-CrateEngineeringGenerator-desc = A large container for items.
 
-ent-CrateEngineeringSolar-name = ящик для солнечной сборки
-ent-CrateEngineeringSolar-desc = Комплект из солнечных панелей и стекла для сборки десяти солнечных панелей.
+ent-CrateEngineeringSolar-name = solar assembly crate
+ent-CrateEngineeringSolar-desc = A kit with solar flatpacks and glass to construct ten solar panels.
 
-ent-CrateEngineeringShuttle-name = ящик для питания шаттла
-ent-CrateEngineeringShuttle-desc = Ящик, содержащий все необходимое для питания шаттла.
+ent-CrateEngineeringShuttle-name = shuttle powering crate
+ent-CrateEngineeringShuttle-desc = A crate containing all needs for shuttle powering.
 
-ent-CrateEngineeringTeslaGenerator-name = ящик для генератора тесла
-ent-CrateEngineeringTeslaGenerator-desc = Генератор Тесла. Спаси тебя Бог.
+ent-CrateEngineeringTeslaGenerator-name = tesla generator crate
+ent-CrateEngineeringTeslaGenerator-desc = A tesla generator. God save you.
 
-ent-CrateEngineeringTeslaCoil-name = ящик для катушек тесла
-ent-CrateEngineeringTeslaCoil-desc = Катушка Теслы. Притягивает молнию и генерирует из нее энергию.
+ent-CrateEngineeringTeslaCoil-name = tesla coil crate
+ent-CrateEngineeringTeslaCoil-desc = Tesla coil. Attracts lightning and generates energy from it.
 
-ent-CrateEngineeringTeslaGroundingRod-name = ящик для заземляющего стержня Tesla
-ent-CrateEngineeringTeslaGroundingRod-desc = Заземляющий стержень, лучший для молниезащиты.
+ent-CrateEngineeringTeslaGroundingRod-name = tesla grounding rod crate
+ent-CrateEngineeringTeslaGroundingRod-desc = Grounding rod, best for lightning protection.
 

@@ -1,10 +1,10 @@
-ent-PartRodMetal-name = металлический стержень
+ent-PartRodMetal-name = metal rod
 
-ent-PartRodMetal10-name = металлический стержень
+ent-PartRodMetal10-name = metal rod
 
-ent-PartRodMetal1-name = металлический стержень
+ent-PartRodMetal1-name = metal rod
 
-ent-PartBase-name = элемент
+ent-PartBase-name = item
 
-ent-PartRodMetalLingering0-name = металлический стержень
+ent-PartRodMetalLingering0-name = metal rod
 

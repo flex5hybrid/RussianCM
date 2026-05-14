@@ -1,11 +1,11 @@
-ent-MechEquipmentGrabber-name = гидравлический зажим
-ent-MechEquipmentGrabber-desc = Дает меху возможность хватать предметы и перетаскивать их.
+ent-MechEquipmentGrabber-name = hydraulic clamp
+ent-MechEquipmentGrabber-desc = Gives the mech the ability to grab things and drag them around.
 
-ent-MechEquipmentGrabberSmall-name = небольшой гидравлический зажим
-ent-MechEquipmentGrabberSmall-desc = Дает меху возможность хватать предметы и перетаскивать их.
+ent-MechEquipmentGrabberSmall-name = small hydraulic clamp
+ent-MechEquipmentGrabberSmall-desc = Gives the mech the ability to grab things and drag them around.
 
-ent-MechEquipmentHorn-name = механический гудок
-ent-MechEquipmentHorn-desc = Усовершенствованный велосипедный сигнал, который воспроизводит множество веселых звуков для удовольствия экипажа. ГУДОК!
+ent-MechEquipmentHorn-name = mech horn
+ent-MechEquipmentHorn-desc = An enhanced bike horn that plays a hilarious array of sounds for the enjoyment of the crew. HONK!
 
-ent-BaseMechEquipment-name = элемент
+ent-BaseMechEquipment-name = item
 

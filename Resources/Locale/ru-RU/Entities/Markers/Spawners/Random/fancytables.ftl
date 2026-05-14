@@ -1,2 +1,2 @@
-ent-FancyTableSpawner-name = случайный необычный спаунер стола
+ent-FancyTableSpawner-name = random fancy table spawner
 

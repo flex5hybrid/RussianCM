@@ -1,3 +1,3 @@
-ent-PosterMapMetaRight-name = Карта Мета-станции
-ent-PosterMapMetaRight-desc = Карта Метастанции. Это выглядит очень старым.
+ent-PosterMapMetaRight-name = Meta Station map
+ent-PosterMapMetaRight-desc = A map of Meta Station. This looks really old.
 

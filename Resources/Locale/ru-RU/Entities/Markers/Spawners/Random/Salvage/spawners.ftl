@@ -1,30 +1,30 @@
-ent-SalvageSpawnerScrapCommon-name = Производитель металлолома
+ent-SalvageSpawnerScrapCommon-name = Salvage Scrap Spawner
 
-ent-SalvageSpawnerScrapValuable-name = Производитель металлолома
+ent-SalvageSpawnerScrapValuable-name = Salvage Scrap Spawner
 
-ent-SalvageSpawnerTreasure-name = Создатель сокровищ
+ent-SalvageSpawnerTreasure-name = Salvage Treasure Spawner
 
-ent-SalvageSpawnerTreasureValuable-name = Создатель сокровищ
+ent-SalvageSpawnerTreasureValuable-name = Salvage Treasure Spawner
 
-ent-SalvageSpawnerEquipment-name = Производитель аварийного оборудования
+ent-SalvageSpawnerEquipment-name = Salvage Equipment Spawner
 
-ent-SalvageSpawnerEquipmentValuable-name = Производитель аварийного оборудования
+ent-SalvageSpawnerEquipmentValuable-name = Salvage Equipment Spawner
 
-ent-SalvageCanisterSpawner-name = Создатель мусорных канистр
+ent-SalvageCanisterSpawner-name = Salvage Canister Spawner
 
-ent-SalvageSpawnerMobMagnet-name = Спасательный магнит, создатель мобов
+ent-SalvageSpawnerMobMagnet-name = Salvage Magnet Mob Spawner
 
-ent-SalvageSpawnerStructuresVarious-name = Создатель структуры космического мусора
+ent-SalvageSpawnerStructuresVarious-name = Space Debris Structure Spawner
 
-ent-SalvageSpawnerMobShark-name = Спасенный генератор акул-минноу
+ent-SalvageSpawnerMobShark-name = Salvage Sharkminnow Spawner
 
-ent-SalvageSpawnerMobMiningAsteroid-name = Создатель мобов на астероидах
+ent-SalvageSpawnerMobMiningAsteroid-name = Mining Asteroid Mob Spawner
 
-ent-SalvageSpawnerScrapCommon75-name = Производитель металлолома
+ent-SalvageSpawnerScrapCommon75-name = Salvage Scrap Spawner
 
-ent-SalvageSpawnerScrapValuable75-name = Производитель металлолома
+ent-SalvageSpawnerScrapValuable75-name = Salvage Scrap Spawner
 
-ent-SalvageSpawnerMobMagnet75-name = Спасательный магнит, создатель мобов
+ent-SalvageSpawnerMobMagnet75-name = Salvage Magnet Mob Spawner
 
-ent-SalvageSpawnerMobMagnet100-name = Спасательный магнит, создатель мобов
+ent-SalvageSpawnerMobMagnet100-name = Salvage Magnet Mob Spawner
 

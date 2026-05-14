@@ -1,33 +1,33 @@
-ent-OrganHumanBrain-name = мозг
-ent-OrganHumanBrain-desc = Источник невероятного, бесконечного интеллекта. Посигнальте.
+ent-OrganHumanBrain-name = brain
+ent-OrganHumanBrain-desc = The source of incredible, unending intelligence. Honk.
 
-ent-OrganHumanEyes-name = глаза
-ent-OrganHumanEyes-desc = Я вижу тебя!
+ent-OrganHumanEyes-name = eyes
+ent-OrganHumanEyes-desc = I see you!
 
-ent-OrganHumanTongue-name = язык
-ent-OrganHumanTongue-desc = Мясистая мышца, используемая в основном для лжи.
+ent-OrganHumanTongue-name = tongue
+ent-OrganHumanTongue-desc = A fleshy muscle mostly used for lying.
 
-ent-OrganHumanAppendix-name = приложение
+ent-OrganHumanAppendix-name = appendix
 
-ent-OrganHumanEars-name = уши
-ent-OrganHumanEars-desc = Ухо состоит из трех частей. Внутренний, средний и внешний. Обычно должна быть видна только одна из этих частей.
+ent-OrganHumanEars-name = ears
+ent-OrganHumanEars-desc = There are three parts to the ear. Inner, middle and outer. Only one of these parts should normally be visible.
 
-ent-OrganHumanLungs-name = легкие
-ent-OrganHumanLungs-desc = Фильтрует кислород из атмосферы, который затем направляется в кровоток и используется в качестве переносчика электронов.
+ent-OrganHumanLungs-name = lungs
+ent-OrganHumanLungs-desc = Filters oxygen from an atmosphere, which is then sent into the bloodstream to be used as an electron carrier.
 
-ent-OrganHumanHeart-name = сердце
-ent-OrganHumanHeart-desc = Мне жаль бессердечного ублюдка, который проиграл это.
+ent-OrganHumanHeart-name = heart
+ent-OrganHumanHeart-desc = I feel bad for the heartless bastard who lost this.
 
-ent-OrganHumanStomach-name = желудок
-ent-OrganHumanStomach-desc = Валовой. Это тяжело переварить.
+ent-OrganHumanStomach-name = stomach
+ent-OrganHumanStomach-desc = Gross. This is hard to stomach.
 
-ent-OrganHumanLiver-name = печень
-ent-OrganHumanLiver-desc = Рекомендуемое сочетание: кьянти и фасоль.
+ent-OrganHumanLiver-name = liver
+ent-OrganHumanLiver-desc = Pairing suggestion: chianti and fava beans.
 
-ent-OrganHumanKidneys-name = почки
-ent-OrganHumanKidneys-desc = Фильтрует токсины из кровотока.
+ent-OrganHumanKidneys-name = kidneys
+ent-OrganHumanKidneys-desc = Filters toxins from the bloodstream.
 
-ent-BaseHumanOrganUnGibbable-name = элемент
+ent-BaseHumanOrganUnGibbable-name = item
 
-ent-BaseHumanOrgan-name = элемент
+ent-BaseHumanOrgan-name = item
 

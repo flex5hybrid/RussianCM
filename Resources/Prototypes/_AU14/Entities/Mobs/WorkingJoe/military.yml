@@ -3,6 +3,15 @@
   id: AU14MobWorkingJoeGOVFOR
   suffix: AU14, GOVFOR
   components:
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - AI
+    - GovforCommand
+    - GovforJTAC
+    - GovforAlpha
+    - GovforCharlie
+    - GovforBravo
+    - GovforIntel
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
   - type: GhostRole
@@ -10,7 +19,7 @@
     allowSpeech: true
     allowMovement: true
     reregister: false
-    name: Working Joe (GOVFOR)
+    name: au14-job-name-workingjoe
     description: au14-job-description-workingjoe
     job: AU14JobGOVFORWorkingJoe
     raffle:
@@ -21,6 +30,15 @@
   id: AU14MobWorkingJoeOPFOR
   suffix: AU14, OPFOR
   components:
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - AI
+    - opfor
+    - opforcommand
+    - OpforCharlie
+    - OpforBravo
+    - OpforIntel
+    - opforjtac
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
   - type: GhostRole
@@ -28,7 +46,7 @@
     allowSpeech: true
     allowMovement: true
     reregister: false
-    name: Working Joe (OPFOR)
+    name: au14-job-name-workingjoe
     description: au14-job-description-workingjoe
     job: AU14JobOPFORWorkingJoe
     raffle:

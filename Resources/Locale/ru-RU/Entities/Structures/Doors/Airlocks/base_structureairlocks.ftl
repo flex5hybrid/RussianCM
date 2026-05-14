@@ -1,5 +1,5 @@
-ent-Airlock-name = шлюзовая камера
-ent-Airlock-desc = Он открывается, закрывается и, возможно, раздавит вас.
+ent-Airlock-name = airlock
+ent-Airlock-desc = It opens, it closes, and maybe crushes you.
 
-ent-AirlockGlass-name = стеклянный шлюзовой шлюз
+ent-AirlockGlass-name = glass airlock
 

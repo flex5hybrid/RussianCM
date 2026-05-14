@@ -1,23 +1,23 @@
-ent-PartSkeleton-name = часть тела скелета
+ent-PartSkeleton-name = skeleton body part
 
-ent-TorsoSkeleton-name = скелет туловища
+ent-TorsoSkeleton-name = skeleton torso
 
-ent-HeadSkeleton-name = череп
-ent-HeadSkeleton-desc = Увы, бедный Йорик...
+ent-HeadSkeleton-name = skull
+ent-HeadSkeleton-desc = Alas poor Yorick...
 
-ent-LeftArmSkeleton-name = левая скелетная рука
+ent-LeftArmSkeleton-name = left skeleton arm
 
-ent-RightArmSkeleton-name = правая скелетная рука
+ent-RightArmSkeleton-name = right skeleton arm
 
-ent-LeftHandSkeleton-name = левая скелетная рука
+ent-LeftHandSkeleton-name = left skeleton hand
 
-ent-RightHandSkeleton-name = правая скелетная рука
+ent-RightHandSkeleton-name = right skeleton hand
 
-ent-LeftLegSkeleton-name = левая скелетная нога
+ent-LeftLegSkeleton-name = left skeleton leg
 
-ent-RightLegSkeleton-name = правая скелетная нога
+ent-RightLegSkeleton-name = right skeleton leg
 
-ent-LeftFootSkeleton-name = скелет левой стопы
+ent-LeftFootSkeleton-name = left skeleton foot
 
-ent-RightFootSkeleton-name = скелет правой стопы
+ent-RightFootSkeleton-name = right skeleton foot
 

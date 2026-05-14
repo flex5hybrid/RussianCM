@@ -1,21 +1,21 @@
-ent-BaseMobDragon-name = космический дракон
-ent-BaseMobDragon-desc = Летающий левиафан, отдаленно связанный с космическими карпами.
+ent-BaseMobDragon-name = space dragon
+ent-BaseMobDragon-desc = A flying leviathan, loosely related to space carps.
 
-ent-DragonsBreathGun-name = легкие дракона
-ent-DragonsBreathGun-desc = Для дыхания дракона.
+ent-DragonsBreathGun-name = dragon's lung
+ent-DragonsBreathGun-desc = For dragon's breathing.
 
-ent-ActionSpawnRift-name = Призвать Карповый Разлом
-ent-ActionSpawnRift-desc = Вызывает карповый разлом, в котором периодически появляются карпы.
+ent-ActionSpawnRift-name = Summon Carp Rift
+ent-ActionSpawnRift-desc = Summons a carp rift that will periodically spawns carps.
 
-ent-ActionDevour-name = [color=red]Пожирать[/color]
-ent-ActionDevour-desc = Попытайтесь сломать конструкцию челюстями или проглотить существо.
+ent-ActionDevour-name = [color=red]Devour[/color]
+ent-ActionDevour-desc = Attempt to break a structure with your jaws or swallow a creature.
 
-ent-ActionDragonsBreath-name = [color=orange]Дыхание Дракона[/color]
-ent-ActionDragonsBreath-desc = Выплесните пламя в любого, кто достаточно глуп, чтобы напасть на вас!
+ent-ActionDragonsBreath-name = [color=orange]Dragon's Breath[/color]
+ent-ActionDragonsBreath-desc = Spew out flames at anyone foolish enough to attack you!
 
-ent-MobDragon-name = космический дракон
-ent-MobDragon-desc = Летающий левиафан, отдаленно связанный с космическими карпами.
+ent-MobDragon-name = space dragon
+ent-MobDragon-desc = A flying leviathan, loosely related to space carps.
 
-ent-MobDragonDungeon-name = космический дракон
-ent-MobDragonDungeon-desc = Летающий левиафан, отдаленно связанный с космическими карпами.
+ent-MobDragonDungeon-name = space dragon
+ent-MobDragonDungeon-desc = A flying leviathan, loosely related to space carps.
 

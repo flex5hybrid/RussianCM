@@ -1,3 +1,3 @@
-ent-FirelockFrame-name = противопожарная рама
-ent-FirelockFrame-desc = Это рама огневого замка.
+ent-FirelockFrame-name = firelock frame
+ent-FirelockFrame-desc = That is a firelock frame.
 

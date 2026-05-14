@@ -1,35 +1,35 @@
-ent-RehydratableAnimalCube-name = элемент
-ent-RehydratableAnimalCube-desc = Просто добавьте воды!
+ent-RehydratableAnimalCube-name = item
+ent-RehydratableAnimalCube-desc = Just add water!
 
-ent-MonkeyCube-name = обезьяний куб
+ent-MonkeyCube-name = monkey cube
 
-ent-KoboldCube-name = кобольд куб
+ent-KoboldCube-name = kobold cube
 
-ent-CowCube-name = коровий куб
+ent-CowCube-name = cow cube
 
-ent-GoatCube-name = козий куб
+ent-GoatCube-name = goat cube
 
-ent-MothroachCube-name = кубик от моли
+ent-MothroachCube-name = mothroach cube
 
-ent-MouseCube-name = мышиный кубик
+ent-MouseCube-name = mouse cube
 
-ent-CockroachCube-name = кубик таракана
-ent-CockroachCube-desc = Просто добавьте ва- О БОЖЕ!
+ent-CockroachCube-name = cockroach cube
+ent-CockroachCube-desc = Just add wa- OH GOD!
 
-ent-SpaceCarpCube-name = кубик карпа
-ent-SpaceCarpCube-desc = Просто добавьте воды! На свой страх и риск.
+ent-SpaceCarpCube-name = carp cube
+ent-SpaceCarpCube-desc = Just add water! At your own risk.
 
-ent-SpaceTickCube-name = клещевой кубик
-ent-SpaceTickCube-desc = Просто добавьте воды! На свой страх и риск.
+ent-SpaceTickCube-name = tick cube
+ent-SpaceTickCube-desc = Just add water! At your own risk.
 
-ent-AbominationCube-name = куб мерзости
-ent-AbominationCube-desc = Просто добавь крови!
+ent-AbominationCube-name = abomination cube
+ent-AbominationCube-desc = Just add blood!
 
-ent-DehydratedSpaceCarp-name = обезвоженный космический карп
-ent-DehydratedSpaceCarp-desc = Выглядит как плюшевый игрушечный карп, но просто добавьте воды, и он станет настоящим космическим карпом!
+ent-DehydratedSpaceCarp-name = dehydrated space carp
+ent-DehydratedSpaceCarp-desc = Looks like a plush toy carp, but just add water and it becomes a real-life space carp!
 
-ent-MopBucketCube-name = кубик ведра для швабры
-ent-MopBucketCube-desc = Просто добавьте воды! А потом еще воды!
+ent-MopBucketCube-name = mop bucket cube
+ent-MopBucketCube-desc = Just add water! And then more water!
 
-ent-RehydratableItem-name = элемент
+ent-RehydratableItem-name = item
 

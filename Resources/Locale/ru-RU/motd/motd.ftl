@@ -1,5 +1,5 @@
 cmd-motd-desc = Позывает или устанавливает Сообщение дня.
-cmd-motd-help = мотд [ message... ]
+cmd-motd-help = motd [ message... ]
 cmd-get-motd-desc = Показывает Сообщение дня.
 cmd-get-motd-help = get-motd
 cmd-set-motd-desc = Устанавливает или очищает Сообщение дня.

@@ -1,6 +1,6 @@
-ent-ConveyorBelt-name = конвейерная лента
-ent-ConveyorBelt-desc = Конвейерная лента, обычно используемая для довольно быстрой транспортировки большого количества предметов в другое место.
+ent-ConveyorBelt-name = conveyor belt
+ent-ConveyorBelt-desc = A conveyor belt, commonly used to transport large numbers of items elsewhere quite quickly.
 
-ent-ConveyorBeltAssembly-name = конвейерная лента
-ent-ConveyorBeltAssembly-desc = Ленточный конвейер в сборе. Используется для изготовления конвейерной ленты.
+ent-ConveyorBeltAssembly-name = conveyor belt
+ent-ConveyorBeltAssembly-desc = A conveyor belt assembly. Used to construct a conveyor belt.
 

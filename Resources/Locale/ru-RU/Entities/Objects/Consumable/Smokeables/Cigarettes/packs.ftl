@@ -1,22 +1,22 @@
-ent-CigPackBase-name = пачка сигарет
+ent-CigPackBase-name = cigarette pack
 
-ent-CigPackMixedBase-name = промокшая пачка сигарет
+ent-CigPackMixedBase-name = soaked cigarette pack
 
-ent-CigPackGreen-name = Пакетик Spessman's Smokes
-ent-CigPackGreen-desc = Надпись на упаковке гласит: «Разве медленная смерть не изменит ситуацию?»
+ent-CigPackGreen-name = Spessman's Smokes packet
+ent-CigPackGreen-desc = A label on the packaging reads, Wouldn't a slow death make a change?
 
-ent-CigPackRed-name = Пакет ДромедарКо
-ent-CigPackRed-desc = Самый популярный бренд космических сигарет, спонсор космической олимпиады.
+ent-CigPackRed-name = DromedaryCo packet
+ent-CigPackRed-desc = The most popular brand of Space Cigarettes, sponsors of the Space Olympics.
 
-ent-CigPackBlue-name = Пакет AcmeCo
-ent-CigPackBlue-desc = Для тех, кто каким-то образом хочет получить рекорд по наибольшему количеству раковых опухолей.
+ent-CigPackBlue-name = AcmeCo packet
+ent-CigPackBlue-desc = For those who somehow want to obtain the record for the most amount of cancerous tumors.
 
-ent-CigPackBlack-name = Пакет кочевников
-ent-CigPackBlack-desc = Кочевники очень сильны, если ваша жизнь особенно тяжела.
+ent-CigPackBlack-name = Nomads packet
+ent-CigPackBlack-desc = Nomads's extra strong, for when your life is more extra hard.
 
-ent-CigPackSyndicate-name = Пакет трав Interdyne
-ent-CigPackSyndicate-desc = Элитные сигареты для элитных агентов синдиката. Насыщен лекарством, когда вам нужно сделать больше, чем просто успокоить нервы.
+ent-CigPackSyndicate-name = Interdyne herbals packet
+ent-CigPackSyndicate-desc = Elite cigarettes for elite syndicate agents. Infused with medicine for when you need to do more than calm your nerves.
 
-ent-CigPackMixed-name = Пропитанный дым Дэна
-ent-CigPackMixed-desc = Дэн работал с NT Chemical над избавлением от излишков химикатов, НАСЛАЖДАЙТЕСЬ.
+ent-CigPackMixed-name = Dan's soaked smokes
+ent-CigPackMixed-desc = Dan worked with NT chemistry to dispose of excess chemicals, ENJOY.
 

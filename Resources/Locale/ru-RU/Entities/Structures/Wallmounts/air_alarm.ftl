@@ -1,11 +1,11 @@
-ent-AirAlarm-name = воздушная сигнализация
-ent-AirAlarm-desc = Воздушная сигнализация. Сигнализация... воздух?
+ent-AirAlarm-name = air alarm
+ent-AirAlarm-desc = An air alarm. Alarms... air?
 
-ent-AirAlarmAssembly-name = воздушная сигнализация в сборе
-ent-AirAlarmAssembly-desc = Воздушная сигнализация. Не похоже, что в ближайшее время в эфире появится тревожный сигнал.
+ent-AirAlarmAssembly-name = air alarm assembly
+ent-AirAlarmAssembly-desc = An air alarm. Doesn't look like it'll be alarming air any time soon.
 
-ent-AirAlarmXeno-desc = Чужая воздушная сигнализация. Надеюсь, они не вдохнули яд.
+ent-AirAlarmXeno-desc = An alien air alarm. Hopefully they didn't breathe poison.
 
-ent-AirAlarmAssemblyXeno-name = воздушная сигнализация в сборе
-ent-AirAlarmAssemblyXeno-desc = Чужая воздушная сигнализация. Почему провода пульсируют?...
+ent-AirAlarmAssemblyXeno-name = air alarm assembly
+ent-AirAlarmAssemblyXeno-desc = An alien air alarm. Why are the wires pulsating?...
 

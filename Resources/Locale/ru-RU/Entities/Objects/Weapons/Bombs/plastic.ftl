@@ -1,8 +1,8 @@
-ent-C4-name = состав С-4
-ent-C4-desc = Используется для проделывания отверстий в определенных областях без слишком большого количества дополнительных отверстий. Любимец диверсанта.
+ent-C4-name = composition C-4
+ent-C4-desc = Used to put holes in specific areas without too much extra hole. A saboteur's favorite.
 
-ent-SeismicCharge-name = сейсмический заряд
-ent-SeismicCharge-desc = Взрывчатое вещество сотрясающего действия, предназначенное для разрушения больших объемов горных пород.
+ent-SeismicCharge-name = seismic charge
+ent-SeismicCharge-desc = Concussion based explosive designed to destroy large amounts of rock.
 
-ent-BasePlasticExplosive-name = элемент
+ent-BasePlasticExplosive-name = item
 

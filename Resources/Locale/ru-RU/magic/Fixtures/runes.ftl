@@ -1,22 +1,22 @@
-ent-BaseRune-name = руна
+ent-BaseRune-name = rune
 
-ent-CollideRune-name = руна столкновения
+ent-CollideRune-name = collision rune
 
-ent-ActivateRune-name = руна активации
+ent-ActivateRune-name = activation rune
 
-ent-CollideTimerRune-name = руна на время столкновения
+ent-CollideTimerRune-name = collision timed rune
 
-ent-ExplosionRune-name = руна взрыва
+ent-ExplosionRune-name = explosion rune
 
-ent-StunRune-name = оглушающая руна
+ent-StunRune-name = stun rune
 
-ent-IgniteRune-name = зажечь руну
+ent-IgniteRune-name = ignite rune
 
-ent-ExplosionTimedRune-name = руна с таймером взрыва
+ent-ExplosionTimedRune-name = explosion timed rune
 
-ent-ExplosionActivateRune-name = руна, активирующая взрыв
+ent-ExplosionActivateRune-name = explosion activated rune
 
-ent-FlashRune-name = вспышка руны
+ent-FlashRune-name = flash rune
 
-ent-FlashRuneTimer-name = флэш-руна с таймером
+ent-FlashRuneTimer-name = flash timed rune
 

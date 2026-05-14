@@ -1,6 +1,6 @@
 ### Connecting dialog when you start up the game
 
-connecting-title = Космическая станция 14
+connecting-title = Space Station 14
 connecting-exit = Выйти
 connecting-retry = Повторить
 connecting-reconnect = Переподключиться
@@ -17,5 +17,5 @@ connecting-fail-reason = Не удалось подключиться к сер�
 connecting-state-NotConnecting = Не подключён
 connecting-state-ResolvingHost = Определение хоста
 connecting-state-EstablishingConnection = Установка соединения
-connecting-state-Handshake = Рукопожатие
+connecting-state-Handshake = Handshake
 connecting-state-Connected = Подключён

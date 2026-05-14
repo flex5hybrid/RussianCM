@@ -1,3 +1,3 @@
-ent-AirlockAssembly-name = шлюзовая сборка
-ent-AirlockAssembly-desc = Он открывается, закрывается и, возможно, раздавит вас.
+ent-AirlockAssembly-name = airlock assembly
+ent-AirlockAssembly-desc = It opens, it closes, and maybe crushes you.
 

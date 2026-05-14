@@ -1,2 +1,2 @@
-ent-CurtainSpawner-name = случайный спаунер штор
+ent-CurtainSpawner-name = random curtain spawner
 

@@ -318,7 +318,7 @@ CMSurvivorFiorinaResearcher = Исследователь Фиорины
 
 cm-job-name-survivor-riot-officer = Офицер по борьбе с беспорядками CMB
 CMSurvivorFiorinaRiotOfficer = Офицер по борьбе с беспорядками CMB
-cm-job-prefix-survivor-riot-officer = ЦМБ РКО
+cm-job-prefix-survivor-riot-officer = CMB RCO
 
 CMSurvivorFiorinaPrisonGuard = Корпоративная охрана We-Ya
 
@@ -496,7 +496,3 @@ rmc-job-greeting-shivas-panic-room-engineer = Вы — инженер в кол�
   Вы — инженер, работающий на «Ифрита» на Weston-Yamada. Эта вспышка оказалась огромным хаосом, вы и весь остальной персонал компании побежали в операционную комнату паники, пока не услышали стрельбу снаружи и не закрыли ставни. У вас заканчиваются еда, вода и боеприпасы для оружия. Вы помните, что ксеноморфы, похоже, могут видеть в темноте, так как вы видели, как один схватил коллегу, пытавшегося починить генераторы после того, как погас свет. В своих попытках прорваться эти так называемые «ксеноморфы» пытались атаковать ставни, но безуспешно. Они скоро попробуют снова. Вы должны выжить и найти способ связаться с Weston-Yamada.
 
   Вы [bold][color=#51A16C][font size=16]НЕ ВРАЖДЕБНЫ к UNMC![/font][/color][/bold]
-
-# Missing entries synced from en-US
-
-rmc-job-name-survivor-cec-researcher = Исследователь Корпуса Космической Эксплорации

@@ -1,2 +1,2 @@
-ent-AirlockExternal-desc = Он открывается, закрывается, может раздавить тебя, а за ним может быть только пространство.
+ent-AirlockExternal-desc = It opens, it closes, it might crush you, and there might be only space behind it.
 

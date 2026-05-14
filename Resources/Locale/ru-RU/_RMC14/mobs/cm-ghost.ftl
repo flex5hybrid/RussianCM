@@ -4,7 +4,3 @@ cm-ghost-window-text = Вы точно -уверены-, что хотите с�
   Вы не сможете изменить своё решение, выбирайте с умом!
 cm-ghost-window-stay = Остаться в теле
 cm-ghost-ghost = Стать призраком
-
-# Missing entries synced from en-US
-
-rmc-ghost-gui-toggle-lighting-manager-popup-halfbright = Полуяркий режим.

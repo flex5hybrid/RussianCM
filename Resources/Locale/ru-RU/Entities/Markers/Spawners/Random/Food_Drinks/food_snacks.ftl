@@ -1,2 +1,2 @@
-ent-RandomSnacks-name = генератор случайных закусок
+ent-RandomSnacks-name = random snack spawner
 

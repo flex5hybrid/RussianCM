@@ -1,2 +1,2 @@
-ent-BaseMobDiona-name = Урист МакПлэнтс
+ent-BaseMobDiona-name = Urist McPlants
 

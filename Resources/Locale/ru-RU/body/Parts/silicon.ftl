@@ -1,14 +1,14 @@
-ent-LeftArmBorg-name = левая рука киборга
+ent-LeftArmBorg-name = cyborg left arm
 
-ent-RightArmBorg-name = правая рука киборга
+ent-RightArmBorg-name = cyborg right arm
 
-ent-LeftLegBorg-name = киборг левая нога
+ent-LeftLegBorg-name = cyborg left leg
 
-ent-RightLegBorg-name = правая нога киборга
+ent-RightLegBorg-name = cyborg right leg
 
-ent-LightHeadBorg-name = голова киборга
+ent-LightHeadBorg-name = cyborg head
 
-ent-TorsoBorg-name = киборг туловище
+ent-TorsoBorg-name = cyborg torso
 
-ent-PartSilicon-name = элемент
+ent-PartSilicon-name = item
 

@@ -1,4 +1,4 @@
-ent-BaseFoldable-name = складной
+ent-BaseFoldable-name = foldable
 
-ent-BaseDeployFoldable-name = развернуть складной
+ent-BaseDeployFoldable-name = deploy foldable
 

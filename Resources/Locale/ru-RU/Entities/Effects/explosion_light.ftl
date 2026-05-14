@@ -1,2 +1,2 @@
-ent-ExplosionLight-name = свет взрыва
+ent-ExplosionLight-name = explosion light
 

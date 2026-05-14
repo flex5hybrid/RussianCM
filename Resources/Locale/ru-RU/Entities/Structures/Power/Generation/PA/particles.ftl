@@ -1,6 +1,6 @@
-ent-ParticlesProjectile-name = частицы
-ent-ParticlesProjectile-desc = Ускоренные частицы.
+ent-ParticlesProjectile-name = particles
+ent-ParticlesProjectile-desc = Accelerated particles.
 
-ent-AntiParticlesProjectile-name = античастицы
-ent-AntiParticlesProjectile-desc = Ускоренные отрицательные частицы.
+ent-AntiParticlesProjectile-name = anti particles
+ent-AntiParticlesProjectile-desc = Accelerated negative particles.
 

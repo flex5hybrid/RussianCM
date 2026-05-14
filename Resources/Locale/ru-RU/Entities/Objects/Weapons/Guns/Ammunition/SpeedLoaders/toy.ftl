@@ -1,4 +1,4 @@
-ent-BaseSpeedLoaderCap-name = заряжающий пистолет с крышкой
+ent-BaseSpeedLoaderCap-name = cap gun loader
 
-ent-SpeedLoaderCap-name = заряжающий пистолет с крышкой
+ent-SpeedLoaderCap-name = cap gun loader
 

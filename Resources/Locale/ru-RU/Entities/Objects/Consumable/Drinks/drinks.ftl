@@ -1,30 +1,30 @@
-ent-DrinkGlass-name = метаморфическое стекло
-ent-DrinkGlass-desc = Метаморфический стакан, который автоматически превращается в стакан, подходящий для напитка внутри. Внизу отшлифованный номер патента.
+ent-DrinkGlass-name = metamorphic glass
+ent-DrinkGlass-desc = A metamorphic glass that automagically turns into a glass appropriate for the drink within. There's a sanded off patent number on the bottom.
 
-ent-DrinkGlassCoupeShaped-name = купе стекло
-ent-DrinkGlassCoupeShaped-desc = Классическое стекло-купе с тонким горлышком, символ хрупких этикеток на ящиках по всей галактике.
+ent-DrinkGlassCoupeShaped-name = coupe glass
+ent-DrinkGlassCoupeShaped-desc = A classic thin neck coupe glass, the icon of fragile labels on crates around the galaxy.
 
-ent-DrinkHoochGlass-desc = Вы действительно достигли дна... ваша печень собрала свои вещи и ушла вчера вечером.
+ent-DrinkHoochGlass-desc = You've really hit rock bottom now... your liver packed its bags and left last night.
 
-ent-DrinkTeapot-name = чайник
-ent-DrinkTeapot-desc = Элегантный чайник. Это просто источает класс.
+ent-DrinkTeapot-name = teapot
+ent-DrinkTeapot-desc = An elegant teapot. It simply oozes class.
 
-ent-DrinkWaterJug-name = кувшин с водой
-ent-DrinkWaterJug-desc = Оставайтесь увлажненными.
+ent-DrinkWaterJug-name = water jug
+ent-DrinkWaterJug-desc = Stay hydrated.
 
-ent-DrinkShakeBlue-name = синий молочный коктейль
+ent-DrinkShakeBlue-name = blue milkshake
 
-ent-DrinkShakeEmpty-name = встряхнуть
+ent-DrinkShakeEmpty-name = shakeempty
 
-ent-DrinkShakeMeat-name = мясной коктейль
+ent-DrinkShakeMeat-name = meat shake
 
-ent-DrinkShakeRobo-name = робот-тряска
+ent-DrinkShakeRobo-name = robo shake
 
-ent-DrinkShakeWhite-name = белый коктейль
+ent-DrinkShakeWhite-name = white shake
 
-ent-DrinkBacchusBlessing-desc = Вы не думали, что жидкость может быть настолько отвратительной. Вы уверены в этом...?
+ent-DrinkBacchusBlessing-desc = You didn't think it was possible for a liquid to be so utterly revolting. Are you sure about this...?
 
-ent-DrinkBase-name = элемент
+ent-DrinkBase-name = item
 
-ent-DrinkGlassBase-name = элемент
+ent-DrinkGlassBase-name = item
 

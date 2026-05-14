@@ -1,23 +1,23 @@
-ent-Incorporeal-desc = Мобы без физических тел
+ent-Incorporeal-desc = Mobs without physical bodies
 
-ent-MobObserverBase-name = наблюдатель
-ent-MobObserverBase-desc = Бу!
+ent-MobObserverBase-name = observer
+ent-MobObserverBase-desc = Boo!
 
-ent-ActionGhostBoo-name = Бу!
-ent-ActionGhostBoo-desc = Напугайте членов своей команды от скуки!
+ent-ActionGhostBoo-name = Boo!
+ent-ActionGhostBoo-desc = Scare your crew members because of boredom!
 
-ent-ActionToggleLighting-name = Переключить освещение
-ent-ActionToggleLighting-desc = Переключите рендеринг света, чтобы лучше рассмотреть темные области.
+ent-ActionToggleLighting-name = Toggle Lighting
+ent-ActionToggleLighting-desc = Toggle light rendering to better observe dark areas.
 
-ent-ActionToggleFov-name = Переключить поле зрения
-ent-ActionToggleFov-desc = Переключает поле обзора, чтобы видеть то, что видят игроки.
+ent-ActionToggleFov-name = Toggle FoV
+ent-ActionToggleFov-desc = Toggles field-of-view in order to see what players see.
 
-ent-ActionToggleGhosts-name = Переключить призраков
-ent-ActionToggleGhosts-desc = Переключить видимость других призраков.
+ent-ActionToggleGhosts-name = Toggle Ghosts
+ent-ActionToggleGhosts-desc = Toggle the visibility of other ghosts.
 
-ent-ActionToggleGhostHearing-name = Переключить слух призрака
-ent-ActionToggleGhostHearing-desc = Переключение между прослушиванием всех сообщений и прослушиванием только радио и сообщений поблизости.
+ent-ActionToggleGhostHearing-name = Toggle Ghost Hearing
+ent-ActionToggleGhostHearing-desc = Toggle between hearing all messages and hearing only radio & nearby messages.
 
-ent-MobObserver-name = наблюдатель
-ent-MobObserver-desc = Бу!
+ent-MobObserver-name = observer
+ent-MobObserver-desc = Boo!
 

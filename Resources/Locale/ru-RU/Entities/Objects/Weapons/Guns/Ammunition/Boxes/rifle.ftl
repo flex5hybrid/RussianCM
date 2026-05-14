@@ -1,12 +1,12 @@
-ent-MagazineBoxRifleBig-name = ящик для боеприпасов (винтовка .20)
+ent-MagazineBoxRifleBig-name = ammunition box (.20 rifle)
 
-ent-MagazineBoxRifle-name = ящик для боеприпасов (винтовка .20)
+ent-MagazineBoxRifle-name = ammunition box (.20 rifle)
 
-ent-MagazineBoxRiflePractice-name = ящик для боеприпасов (тренировочная винтовка .20)
+ent-MagazineBoxRiflePractice-name = ammunition box (.20 rifle practice)
 
-ent-MagazineBoxRifleIncendiary-name = ящик для боеприпасов (зажигательная винтовка .20)
+ent-MagazineBoxRifleIncendiary-name = ammunition box (.20 rifle incendiary)
 
-ent-MagazineBoxRifleUranium-name = Ящик для боеприпасов (винтовочный уран .20)
+ent-MagazineBoxRifleUranium-name = ammunition box (.20 rifle uranium)
 
-ent-BaseMagazineBoxRifle-name = элемент
+ent-BaseMagazineBoxRifle-name = item
 

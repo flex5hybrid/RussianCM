@@ -1,69 +1,69 @@
-ent-ClothingEyesHudDiagnostic-name = диагностический интерфейс
-ent-ClothingEyesHudDiagnostic-desc = Проекционный дисплей, способный анализировать целостность и состояние робототехники и экзокостюмов. Изготовлен из зеборгия.
+ent-ClothingEyesHudDiagnostic-name = diagnostic hud
+ent-ClothingEyesHudDiagnostic-desc = A heads-up display capable of analyzing the integrity and status of robotics and exosuits. Made out of see-borg-ium.
 
-ent-ClothingEyesHudMedical-name = медицинский хад
-ent-ClothingEyesHudMedical-desc = Проекционный дисплей, который сканирует гуманоидов в поле зрения и предоставляет точные данные о состоянии их здоровья.
+ent-ClothingEyesHudMedical-name = medical hud
+ent-ClothingEyesHudMedical-desc = A heads-up display that scans the humanoids in view and provides accurate data about their health status.
 
-ent-ClothingEyesHudSecurity-name = интерфейс безопасности
-ent-ClothingEyesHudSecurity-desc = Проекционный дисплей, который сканирует гуманоидов в поле зрения и предоставляет точные данные об их идентификационном статусе и записях безопасности.
+ent-ClothingEyesHudSecurity-name = security hud
+ent-ClothingEyesHudSecurity-desc = A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records.
 
-ent-ClothingEyesHudCommand-name = администрация хад
-ent-ClothingEyesHudCommand-desc = Проекционный дисплей, который сканирует гуманоидов в поле зрения и предоставляет точные данные об их идентификационном статусе.
+ent-ClothingEyesHudCommand-name = administration hud
+ent-ClothingEyesHudCommand-desc = A heads-up display that scans the humanoids in view and provides accurate data about their ID status.
 
-ent-ClothingEyesHudBeer-name = пивные очки
-ent-ClothingEyesHudBeer-desc = Пара санхудов, оснащенных аппаратурой для сканирования реагентов, а также обеспечивающей врожденное понимание вязкости жидкости во время движения.
+ent-ClothingEyesHudBeer-name = beer goggles
+ent-ClothingEyesHudBeer-desc = A pair of sunHud outfitted with apparatus to scan reagents, as well as providing an innate understanding of liquid viscosity while in motion.
 
-ent-ClothingEyesHudFriedOnion-name = жареный лук
-ent-ClothingEyesHudFriedOnion-desc = Наполнитель
+ent-ClothingEyesHudFriedOnion-name = fried onion goggles
+ent-ClothingEyesHudFriedOnion-desc = Filler
 
-ent-ClothingEyesHudOnionBeer-name = грозовые очки
-ent-ClothingEyesHudOnionBeer-desc = Наполнитель
+ent-ClothingEyesHudOnionBeer-name = thungerst goggles
+ent-ClothingEyesHudOnionBeer-desc = Filler
 
-ent-ClothingEyesHudMedOnion-name = Медонион Худ
-ent-ClothingEyesHudMedOnion-desc = Наполнитель
+ent-ClothingEyesHudMedOnion-name = medonion hud
+ent-ClothingEyesHudMedOnion-desc = Filler
 
 ent-ClothingEyesHudMedOnionBeer-name = medthungerst hud
-ent-ClothingEyesHudMedOnionBeer-desc = Наполнитель
+ent-ClothingEyesHudMedOnionBeer-desc = Filler
 
-ent-ClothingEyesHudMedSec-name = Медицинский центр
-ent-ClothingEyesHudMedSec-desc = Глазной дисплей, похожий на смесь медицинских и охранных интерфейсов.
+ent-ClothingEyesHudMedSec-name = medsec hud
+ent-ClothingEyesHudMedSec-desc = An eye display that looks like a mixture of medical and security huds.
 
-ent-ClothingEyesHudMultiversal-name = мультиверсальный интерфейс
-ent-ClothingEyesHudMultiversal-desc = Наполнитель
+ent-ClothingEyesHudMultiversal-name = multiversal hud
+ent-ClothingEyesHudMultiversal-desc = Filler
 
-ent-ClothingEyesHudOmni-name = омни худ
-ent-ClothingEyesHudOmni-desc = Наполнитель
+ent-ClothingEyesHudOmni-name = omni hud
+ent-ClothingEyesHudOmni-desc = Filler
 
-ent-ClothingEyesHudSyndicate-name = козырек синдиката
-ent-ClothingEyesHudSyndicate-desc = Профессиональный проекционный дисплей синдиката, предназначенный для лучшего обнаружения гуманоидов и их последующей ликвидации.
+ent-ClothingEyesHudSyndicate-name = syndicate visor
+ent-ClothingEyesHudSyndicate-desc = The syndicate's professional head-up display, designed for better detection of humanoids and their subsequent elimination.
 
-ent-ClothingEyesHudSyndicateAgent-name = медицинский щиток синдиката
-ent-ClothingEyesHudSyndicateAgent-desc = Профессиональный проекционный дисплей санитара Синдиката, предназначенный для быстрой диагностики статуса команды.
+ent-ClothingEyesHudSyndicateAgent-name = syndicate medical visor
+ent-ClothingEyesHudSyndicateAgent-desc = The Syndicate Corpsman's professional heads-up display, designed for quick diagnosis of their team's status.
 
-ent-ClothingEyesEyepatchHudMedical-name = медицинская повязка на глаз
-ent-ClothingEyesEyepatchHudMedical-desc = Проекционный дисплей, который сканирует гуманоидов в поле зрения и предоставляет точные данные о состоянии их здоровья. Для настоящих патриотов.
+ent-ClothingEyesEyepatchHudMedical-name = medical hud eyepatch
+ent-ClothingEyesEyepatchHudMedical-desc = A heads-up display that scans the humanoids in view and provides accurate data about their health status. For true patriots.
 
-ent-ClothingEyesEyepatchHudMedicalFlipped-name = медицинская повязка на глаз
-ent-ClothingEyesEyepatchHudMedicalFlipped-desc = Проекционный дисплей, который сканирует гуманоидов в поле зрения и предоставляет точные данные о состоянии их здоровья. Для настоящих патриотов.
+ent-ClothingEyesEyepatchHudMedicalFlipped-name = medical hud eyepatch
+ent-ClothingEyesEyepatchHudMedicalFlipped-desc = A heads-up display that scans the humanoids in view and provides accurate data about their health status. For true patriots.
 
-ent-ClothingEyesEyepatchHudSecurity-name = безопасность hud повязка на глазу
-ent-ClothingEyesEyepatchHudSecurity-desc = Проекционный дисплей, который сканирует гуманоидов в поле зрения и предоставляет точные данные об их идентификационном статусе и записях безопасности. Для настоящих патриотов.
+ent-ClothingEyesEyepatchHudSecurity-name = security hud eyepatch
+ent-ClothingEyesEyepatchHudSecurity-desc = A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records. For true patriots.
 
-ent-ClothingEyesEyepatchHudSecurityFlipped-name = безопасность hud повязка на глазу
-ent-ClothingEyesEyepatchHudSecurityFlipped-desc = Проекционный дисплей, который сканирует гуманоидов в поле зрения и предоставляет точные данные об их идентификационном статусе и записях безопасности. Для настоящих патриотов.
+ent-ClothingEyesEyepatchHudSecurityFlipped-name = security hud eyepatch
+ent-ClothingEyesEyepatchHudSecurityFlipped-desc = A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records. For true patriots.
 
-ent-ClothingEyesEyepatchHudBeer-name = повязка на глаз для пива
-ent-ClothingEyesEyepatchHudBeer-desc = Пара санхудов, оснащенных аппаратурой для сканирования реагентов, а также обеспечивающей врожденное понимание вязкости жидкости во время движения. Для настоящих патриотов.
+ent-ClothingEyesEyepatchHudBeer-name = beer hud eyepatch
+ent-ClothingEyesEyepatchHudBeer-desc = A pair of sunHud outfitted with apparatus to scan reagents, as well as providing an innate understanding of liquid viscosity while in motion. For true patriots.
 
-ent-ClothingEyesEyepatchHudBeerFlipped-name = повязка на глаз для пива
-ent-ClothingEyesEyepatchHudBeerFlipped-desc = Пара санхудов, оснащенных аппаратурой для сканирования реагентов, а также обеспечивающей врожденное понимание вязкости жидкости во время движения. Для настоящих патриотов.
+ent-ClothingEyesEyepatchHudBeerFlipped-name = beer hud eyepatch
+ent-ClothingEyesEyepatchHudBeerFlipped-desc = A pair of sunHud outfitted with apparatus to scan reagents, as well as providing an innate understanding of liquid viscosity while in motion. For true patriots.
 
-ent-ClothingEyesEyepatchHudDiag-name = диагностическая повязка hud
-ent-ClothingEyesEyepatchHudDiag-desc = Проекционный дисплей, способный анализировать целостность и состояние робототехники и экзокостюмов. Изготовлен из зеборгия.
+ent-ClothingEyesEyepatchHudDiag-name = diagnostic hud eyepatch
+ent-ClothingEyesEyepatchHudDiag-desc = A heads-up display capable of analyzing the integrity and status of robotics and exosuits. Made out of see-borg-ium.
 
-ent-ClothingEyesEyepatchHudDiagFlipped-name = диагностическая повязка hud
-ent-ClothingEyesEyepatchHudDiagFlipped-desc = Проекционный дисплей, способный анализировать целостность и состояние робототехники и экзокостюмов. Изготовлен из зеборгия.
+ent-ClothingEyesEyepatchHudDiagFlipped-name = diagnostic hud eyepatch
+ent-ClothingEyesEyepatchHudDiagFlipped-desc = A heads-up display capable of analyzing the integrity and status of robotics and exosuits. Made out of see-borg-ium.
 
-ent-ClothingEyesGlassesHiddenSecurity-name = солнцезащитные очки
-ent-ClothingEyesGlassesHiddenSecurity-desc = Пара черных солнцезащитных очков.
+ent-ClothingEyesGlassesHiddenSecurity-name = sun glasses
+ent-ClothingEyesGlassesHiddenSecurity-desc = A pair of black sunglasses.
 

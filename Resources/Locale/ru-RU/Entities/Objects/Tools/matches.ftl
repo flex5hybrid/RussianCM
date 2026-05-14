@@ -1,17 +1,17 @@
-ent-Matchstick-name = спичка
-ent-Matchstick-desc = Простая спичка, используемая для зажигания хороших курительных сигарет.
+ent-Matchstick-name = match stick
+ent-Matchstick-desc = A simple match stick, used for lighting fine smokables.
 
-ent-Matchbox-name = спичечный коробок
-ent-Matchbox-desc = Небольшая коробка почти, но не совсем плазменных премиум-спичек.
+ent-Matchbox-name = match box
+ent-Matchbox-desc = A small box of Almost But Not Quite Plasma Premium Matches.
 
-ent-GorlexMatchbox-name = Горлекс спичечный коробок
-ent-GorlexMatchbox-desc = Пневматический спичечный коробок, стилизованный под снаряжение Мародеров Горлекса. Содержит 24 матча.
+ent-GorlexMatchbox-name = Gorlex match box
+ent-GorlexMatchbox-desc = A pneumatic match box styled after the Gorlex Marauders' equipment. Contains 24 matches.
 
-ent-GorlexMatchstick-name = спичка
-ent-GorlexMatchstick-desc = Спичка военного образца, используемая для прикуривания как качественных сигарет, так и мирных жителей.
+ent-GorlexMatchstick-name = match stick
+ent-GorlexMatchstick-desc = A military grade match stick, used for lighting fine smokables and noncombatants alike.
 
-ent-SmallboxItem-name = предмет хранения
+ent-SmallboxItem-name = storage item
 
-ent-MatchstickSpent-name = спичка
-ent-MatchstickSpent-desc = Простая спичка, используемая для зажигания хороших курительных сигарет.
+ent-MatchstickSpent-name = match stick
+ent-MatchstickSpent-desc = A simple match stick, used for lighting fine smokables.
 

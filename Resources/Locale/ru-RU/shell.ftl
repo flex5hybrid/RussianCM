@@ -34,7 +34,8 @@ shell-need-exactly-zero-arguments = Эта команда принимает н�
 
 shell-argument-uid = EntityUid
 
-    ## Охранники
+## Guards
+
 shell-missing-required-permission = Вам нужен { $perm } для этой команды!
 shell-entity-is-not-mob = Целевая сущность не является мобом!
 shell-invalid-entity-id = Недопустимый ID сущности.

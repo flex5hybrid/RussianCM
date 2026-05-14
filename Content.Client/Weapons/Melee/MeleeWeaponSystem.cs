@@ -176,10 +176,7 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
     protected override void DoDamageEffect(List<EntityUid> targets, EntityUid? user, TransformComponent targetXform)
     {
         // Server never sends the event to us for predictiveeevent.
-        foreach (var grouping in targets.GroupBy(GetDamageEffectColor))
-        {
-            _color.RaiseEffect(grouping.Key, grouping.ToList(), Filter.Local());
-        }
+        _color.RaiseEffect(Color.Red, targets, Filter.Local());
     }
 
     /// <summary>

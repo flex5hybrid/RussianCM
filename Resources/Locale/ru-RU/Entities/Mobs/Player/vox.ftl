@@ -1,2 +1,2 @@
-ent-MobVox-name = Уриститити МакВокс
+ent-MobVox-name = Uristititi McVox
 

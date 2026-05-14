@@ -1,59 +1,59 @@
-ent-CrateServiceJanitorialSupplies-name = ящик для хозяйственных принадлежностей
-ent-CrateServiceJanitorialSupplies-desc = Боритесь с грязью и сажей с помощью средств для уборки Nanotrasen(tm)! Содержит три ведра, предупреждающие знаки и гранаты-чистильщики. Также имеется швабра, метла, аэрозольный очиститель, проволочная щетка, тряпка и мешок для мусора.
+ent-CrateServiceJanitorialSupplies-name = janitorial supplies crate
+ent-CrateServiceJanitorialSupplies-desc = Fight back against dirt and grime with Nanotrasen's Janitorial Essentials(tm)! Contains three buckets, caution signs, and cleaner grenades. Also has a single mop, broom, spray cleaner, wire brush, rag, and trash bag.
 
-ent-CrateServiceCleanerGrenades-name = ящик для оптовой очистки
-ent-CrateServiceCleanerGrenades-desc = Содержит две коробки чистящих гранат для удаления глубоко укоренившихся пятен.
+ent-CrateServiceCleanerGrenades-name = bulk cleanades crate
+ent-CrateServiceCleanerGrenades-desc = Contains two boxes of cleaner grenades, for those deeply-entrenched stains.
 
-ent-CrateServiceReplacementLights-name = замена фары в ящике
-ent-CrateServiceReplacementLights-desc = Пусть свет Эфира осветит эту станцию! Или хотя бы свет сорока двух лампочек и двадцати одной лампочки.
+ent-CrateServiceReplacementLights-name = replacement lights crate
+ent-CrateServiceReplacementLights-desc = May the light of Aether shine upon this station! Or at least, the light of forty two light tubes and twenty one light bulbs.
 
-ent-CrateServiceHolidayLights-name = ящик с праздничными гирляндами
-ent-CrateServiceHolidayLights-desc = Украсьте залы этими праздничными огнями!
+ent-CrateServiceHolidayLights-name = holiday lights crate
+ent-CrateServiceHolidayLights-desc = Deck the halls with these festive holiday lights!
 
-ent-CrateMousetrapBoxes-name = ящик для мышеловок
-ent-CrateMousetrapBoxes-desc = Мышеловки, для тех случаев, когда весь сервис преследует целая стая крыс. Используйте экономно... или нет.
+ent-CrateMousetrapBoxes-name = mousetraps crate
+ent-CrateMousetrapBoxes-desc = Mousetraps, for when all of service is being haunted by an entire horde of rats. Use sparingly... or not.
 
-ent-CrateServiceSmokeables-name = ящик для курительных сигарет
-ent-CrateServiceSmokeables-desc = Устали от быстрой смерти на вокзале? Закажите этот ящик и курите, пока не умрете от кашля!
+ent-CrateServiceSmokeables-name = smokeables crate
+ent-CrateServiceSmokeables-desc = Tired of a quick death on the station? Order this crate and chain-smoke your way to a coughy demise!
 
-ent-CrateServiceTheatre-name = ящик для театральных представлений
-ent-CrateServiceTheatre-desc = Содержит плащ из мотылька, парикмахерские ножницы, униформу горничной, атрибуты клоуна и мима, а также другие амулеты.
+ent-CrateServiceTheatre-name = theatrical performances crate
+ent-CrateServiceTheatre-desc = Contains a moth cloak, barber scissors, maid uniform, clown and mime attributes, and other performance charms.
 
-ent-CrateServiceCustomSmokable-name = Ящик для копчения своими руками
-ent-CrateServiceCustomSmokable-desc = Хотите немного творчески подойти к вопросу о том, что вы используете для разрушения легких? Тогда этот ящик для вас! Есть все необходимое для скручивания сигарет.
+ent-CrateServiceCustomSmokable-name = DIY smokeables crate
+ent-CrateServiceCustomSmokable-desc = Want to get a little creative with what you use to destroy your lungs? Then this crate is for you! Has everything you need to roll your own cigarettes.
 
-ent-CrateServiceBureaucracy-name = бюрократический ящик
-ent-CrateServiceBureaucracy-desc = Несколько стопок бумаги, несколько ручек и офисная игрушка. Чего еще можно желать?
+ent-CrateServiceBureaucracy-name = bureaucracy crate
+ent-CrateServiceBureaucracy-desc = Several stacks of paper, a few pens and an office toy. What more could you ask for?
 
-ent-CrateServiceFaxMachine-name = ящик для факса
-ent-CrateServiceFaxMachine-desc = Факс и отвертка, чтобы установить имя.
+ent-CrateServiceFaxMachine-name = fax machine crate
+ent-CrateServiceFaxMachine-desc = A fax machine and a screwdriver to set the name with.
 
-ent-CrateServicePersonnel-name = ящик для персонала
-ent-CrateServicePersonnel-desc = Содержит коробку с пустыми удостоверениями личности и КПК.
+ent-CrateServicePersonnel-name = personnel crate
+ent-CrateServicePersonnel-desc = Contains a box of blank ID cards and PDAs.
 
-ent-CrateServiceBooks-name = ящик для книг
-ent-CrateServiceBooks-desc = Содержит 10 пустых книг случайного появления.
+ent-CrateServiceBooks-name = books crate
+ent-CrateServiceBooks-desc = Contains 10 empty books of random appearance.
 
-ent-CrateServiceGuidebooks-name = ящик для путеводителей
-ent-CrateServiceGuidebooks-desc = Содержит путеводители.
+ent-CrateServiceGuidebooks-name = guidebooks crate
+ent-CrateServiceGuidebooks-desc = Contains guidebooks.
 
-ent-CrateServiceSodaDispenser-name = ящик для заправки дозатора газировки
-ent-CrateServiceSodaDispenser-desc = Содержит сменные блоки для дозаторов газировки.
+ent-CrateServiceSodaDispenser-name = soda dispenser refill crate
+ent-CrateServiceSodaDispenser-desc = Contains refills for soda dispensers.
 
-ent-CrateServiceBoozeDispenser-name = ящик для заправки дозатора выпивки
-ent-CrateServiceBoozeDispenser-desc = Содержит сменные блоки для дозаторов выпивки.
+ent-CrateServiceBoozeDispenser-name = booze dispenser refill crate
+ent-CrateServiceBoozeDispenser-desc = Contains refills for booze dispensers.
 
-ent-CrateServiceBox-name = коробки ящик
-ent-CrateServiceBox-desc = Содержит 6 пустых универсальных коробок.
+ent-CrateServiceBox-name = boxes crate
+ent-CrateServiceBox-desc = Contains 6 empty multipurpose boxes.
 
-ent-CrateJanitorBiosuit-name = ящик биокостюма дворника
-ent-CrateJanitorBiosuit-desc = В комплект входят 2 костюма биологической защиты, чтобы никакая болезнь не отвлекала вас от уборки.
+ent-CrateJanitorBiosuit-name = janitor bio suit crate
+ent-CrateJanitorBiosuit-desc = Contains 2 biohazard suits to ensure that no disease will distract you from cleaning.
 
-ent-CrateCandles-name = ящик для свечей
-ent-CrateCandles-desc = В наборе 4 коробки свечей: 2 большие и 2 маленькие. Для атмосферы что ли.
+ent-CrateCandles-name = candles crate
+ent-CrateCandles-desc = Contains 4 boxes of candles, 2 large and 2 small. For atmosphere or something.
 
-ent-CrateServiceColorfulLights-name = ящик с разноцветными огнями
-ent-CrateServiceColorfulLights-desc = Это не вечеринка до тех пор, пока это не станет плохо видно, немного дезориентирует и не заболит уши.
+ent-CrateServiceColorfulLights-name = colorful lights crate
+ent-CrateServiceColorfulLights-desc = It's not a party until it's hard to see, a little disorienting, and your ears hurt.
 
-ent-CrateTrashCartFilled-name = мусорная тележка
+ent-CrateTrashCartFilled-name = trash cart
 

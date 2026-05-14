@@ -1,4 +1,4 @@
-ent-BaseMobReptilian-name = Уриссь Мжанд
+ent-BaseMobReptilian-name = Urisst' Mzhand
 
-ent-MobReptilianDummy-desc = Манекен рептилии, предназначенный для использования при настройке персонажа.
+ent-MobReptilianDummy-desc = A dummy reptilian meant to be used in character setup.
 

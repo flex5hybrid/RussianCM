@@ -1,2 +1,2 @@
-ent-RandomCloneSpawner-name = Случайный клон
+ent-RandomCloneSpawner-name = Random Clone
 

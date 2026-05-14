@@ -21,7 +21,3 @@ chatsan-tearfully-salutes = отдаёт честь со слезами на г�
 chatsan-shrugs = пожимает плечами
 chatsan-tearfully-smiles = улыбается со слезами на глазах
 chatsan-winks = подмигивает
-
-# Missing entries synced from en-US
-
-rmc-chatsan-emote-sobs = рыдает

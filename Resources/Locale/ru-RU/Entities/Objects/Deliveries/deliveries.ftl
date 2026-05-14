@@ -1,12 +1,12 @@
-ent-PackageDelivery-name = пакет
+ent-PackageDelivery-name = package
 
-ent-LetterDelivery-name = письмо
+ent-LetterDelivery-name = letter
 
-ent-DeliveryModifierPriority-desc = Компоненты, которые нужно добавить, когда доставка становится приоритетной.
+ent-DeliveryModifierPriority-desc = Components to add when a delivery is rolled as priority.
 
-ent-DeliveryModifierFragile-desc = Компоненты, которые следует добавить, если поставка считается хрупкой.
+ent-DeliveryModifierFragile-desc = Components to add when a delivery is rolled as fragile.
 
-ent-DeliveryModifierBomb-desc = Компоненты, которые нужно добавить, когда доставка превращается в бомбу.
+ent-DeliveryModifierBomb-desc = Components to add when a delivery is rolled as a bomb.
 
-ent-BaseDelivery-name = элемент
+ent-BaseDelivery-name = item
 

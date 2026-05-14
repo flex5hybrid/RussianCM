@@ -1,226 +1,226 @@
-ent-AutolatheMachineCircuitboard-name = доска токарного станка
-ent-AutolatheMachineCircuitboard-desc = Машинная печатная плата для токарного станка.
+ent-AutolatheMachineCircuitboard-name = autolathe machine board
+ent-AutolatheMachineCircuitboard-desc = A machine printed circuit board for an autolathe.
 
-ent-AutolatheHyperConvectionMachineCircuitboard-name = Доска токарного станка с гиперконвекцией
-ent-AutolatheHyperConvectionMachineCircuitboard-desc = Машинная печатная плата для гиперконвекционного токарного станка.
+ent-AutolatheHyperConvectionMachineCircuitboard-name = hyper convection autolathe machine board
+ent-AutolatheHyperConvectionMachineCircuitboard-desc = A machine printed circuit board for a hyper convection autolathe.
 
-ent-ProtolatheMachineCircuitboard-name = плата протолата
-ent-ProtolatheMachineCircuitboard-desc = Машинная печатная плата для протолата.
+ent-ProtolatheMachineCircuitboard-name = protolathe machine board
+ent-ProtolatheMachineCircuitboard-desc = A machine printed circuit board for a protolathe.
 
-ent-ProtolatheHyperConvectionMachineCircuitboard-name = Плата машины с гиперконвекцией протолата
-ent-ProtolatheHyperConvectionMachineCircuitboard-desc = Машинная печатная плата для гиперконвекционного протолатина.
+ent-ProtolatheHyperConvectionMachineCircuitboard-name = hyper convection protolathe machine board
+ent-ProtolatheHyperConvectionMachineCircuitboard-desc = A machine printed circuit board for a hyper convection protolathe.
 
-ent-BiofabricatorMachineCircuitboard-name = Машинная доска для изготовления биокубов
-ent-BiofabricatorMachineCircuitboard-desc = Машинная печатная плата для производителя биокубов.
+ent-BiofabricatorMachineCircuitboard-name = biocube fabricator machine board
+ent-BiofabricatorMachineCircuitboard-desc = A machine printed circuit board for a biocube fabricator.
 
-ent-SecurityTechFabCircuitboard-name = Машинная плата techfab безопасности
-ent-SecurityTechFabCircuitboard-desc = Машинная печатная плата для охранного предприятия.
+ent-SecurityTechFabCircuitboard-name = security techfab machine board
+ent-SecurityTechFabCircuitboard-desc = A machine printed circuit board for a security techfab.
 
-ent-AmmoTechFabCircuitboard-name = печатная плата боеприпасов techfab
-ent-AmmoTechFabCircuitboard-desc = Машинная печатная плата для завода по производству боеприпасов.
+ent-AmmoTechFabCircuitboard-name = ammo techfab circuit board
+ent-AmmoTechFabCircuitboard-desc = A machine printed circuit board for an ammo techfab.
 
-ent-MedicalTechFabCircuitboard-name = медицинская машинная доска techfab
-ent-MedicalTechFabCircuitboard-desc = Машинная печатная плата для медицинского завода.
+ent-MedicalTechFabCircuitboard-name = medical techfab machine board
+ent-MedicalTechFabCircuitboard-desc = A machine printed circuit board for a medical techfab.
 
-ent-CircuitImprinterMachineCircuitboard-name = плата впечатывающего устройства
+ent-CircuitImprinterMachineCircuitboard-name = circuit imprinter machine board
 
-ent-CircuitImprinterHyperConvectionMachineCircuitboard-name = Плата впечатывающего устройства с гиперконвекционной схемой
-ent-CircuitImprinterHyperConvectionMachineCircuitboard-desc = Машинная печатная плата для впечатывающего устройства гиперконвекционной схемы.
+ent-CircuitImprinterHyperConvectionMachineCircuitboard-name = hyper convection circuit imprinter machine board
+ent-CircuitImprinterHyperConvectionMachineCircuitboard-desc = A machine printed circuit board for a hyper convection circuit imprinter.
 
-ent-ExosuitFabricatorMachineCircuitboard-name = Машинная доска для изготовления экзокостюмов
+ent-ExosuitFabricatorMachineCircuitboard-name = exosuit fabricator machine board
 
-ent-ResearchAndDevelopmentServerMachineCircuitboard-name = Плата сервера исследований и разработок
-ent-ResearchAndDevelopmentServerMachineCircuitboard-desc = Машинная печатная плата для R&D-сервера.
+ent-ResearchAndDevelopmentServerMachineCircuitboard-name = R&D server machine board
+ent-ResearchAndDevelopmentServerMachineCircuitboard-desc = A machine printed circuit board for the R&D server.
 
-ent-BiogeneratorMachineCircuitboard-name = плата биогенератора
-ent-BiogeneratorMachineCircuitboard-desc = Машинная печатная плата для биогенератора.
+ent-BiogeneratorMachineCircuitboard-name = biogenerator machine board
+ent-BiogeneratorMachineCircuitboard-desc = A machine printed circuit board for a biogenerator.
 
-ent-UniformPrinterMachineCircuitboard-name = единая плата принтера
+ent-UniformPrinterMachineCircuitboard-name = uniform printer machine board
 
-ent-VaccinatorMachineCircuitboard-name = плата машины для вакцинации
+ent-VaccinatorMachineCircuitboard-name = vaccinator machine board
 
-ent-DiagnoserMachineCircuitboard-name = плата диагностической машины
+ent-DiagnoserMachineCircuitboard-name = diagnoser machine board
 
-ent-ArtifactAnalyzerMachineCircuitboard-name = плата анализатора артефактов
-ent-ArtifactAnalyzerMachineCircuitboard-desc = Машинная печатная плата для анализатора артефактов.
+ent-ArtifactAnalyzerMachineCircuitboard-name = artifact analyzer machine board
+ent-ArtifactAnalyzerMachineCircuitboard-desc = A machine printed circuit board for an artifact analyzer.
 
-ent-ArtifactCrusherMachineCircuitboard-name = Доска дробилки артефактов
-ent-ArtifactCrusherMachineCircuitboard-desc = Машинная печатная плата для дробилки артефактов.
+ent-ArtifactCrusherMachineCircuitboard-name = artifact crusher machine board
+ent-ArtifactCrusherMachineCircuitboard-desc = A machine printed circuit board for an artifact crusher.
 
-ent-AnomalyVesselCircuitboard-name = Машинная доска аномального судна
-ent-AnomalyVesselCircuitboard-desc = Машинная печатная плата аномального судна.
+ent-AnomalyVesselCircuitboard-name = anomaly vessel machine board
+ent-AnomalyVesselCircuitboard-desc = A machine printed circuit board for an anomaly vessel.
 
-ent-AnomalyVesselExperimentalCircuitboard-name = Машинная доска экспериментального аномального судна
-ent-AnomalyVesselExperimentalCircuitboard-desc = Машинная печатная плата для экспериментального аномального судна.
+ent-AnomalyVesselExperimentalCircuitboard-name = experimental anomaly vessel machine board
+ent-AnomalyVesselExperimentalCircuitboard-desc = A machine printed circuit board for an experimental anomaly vessel.
 
-ent-AnomalySynchronizerCircuitboard-name = аномалия, плата синхронизатора
-ent-AnomalySynchronizerCircuitboard-desc = Машинная печатная плата аномального синхронизатора.
+ent-AnomalySynchronizerCircuitboard-name = anomaly synchronizer machine board
+ent-AnomalySynchronizerCircuitboard-desc = A machine printed circuit board for an anomaly synchronizer.
 
-ent-APECircuitboard-name = А.П.Е. машинная доска
-ent-APECircuitboard-desc = Машинная печатная плата для A.P.E.
+ent-APECircuitboard-name = A.P.E. machine board
+ent-APECircuitboard-desc = A machine printed circuit board for an A.P.E.
 
-ent-ThermomachineFreezerMachineCircuitBoard-name = Доска термомашины с морозильной камерой
-ent-ThermomachineFreezerMachineCircuitBoard-desc = Похоже, вы можете использовать отвертку, чтобы изменить тип платы.
+ent-ThermomachineFreezerMachineCircuitBoard-name = freezer thermomachine machine board
+ent-ThermomachineFreezerMachineCircuitBoard-desc = Looks like you could use a screwdriver to change the board type.
 
-ent-ThermomachineHeaterMachineCircuitBoard-name = плата термомашины нагревателя
-ent-ThermomachineHeaterMachineCircuitBoard-desc = Похоже, вы можете использовать отвертку, чтобы изменить тип платы.
+ent-ThermomachineHeaterMachineCircuitBoard-name = heater thermomachine machine board
+ent-ThermomachineHeaterMachineCircuitBoard-desc = Looks like you could use a screwdriver to change the board type.
 
-ent-HellfireFreezerMachineCircuitBoard-name = плата морозильной камеры Hellfire
-ent-HellfireFreezerMachineCircuitBoard-desc = Похоже, вы можете использовать отвертку, чтобы изменить тип платы.
+ent-HellfireFreezerMachineCircuitBoard-name = hellfire freezer machine board
+ent-HellfireFreezerMachineCircuitBoard-desc = Looks like you could use a screwdriver to change the board type.
 
-ent-HellfireHeaterMachineCircuitBoard-name = Плата нагревателя адского огня
-ent-HellfireHeaterMachineCircuitBoard-desc = Похоже, вы можете использовать отвертку, чтобы изменить тип платы.
+ent-HellfireHeaterMachineCircuitBoard-name = hellfire heater machine board
+ent-HellfireHeaterMachineCircuitBoard-desc = Looks like you could use a screwdriver to change the board type.
 
-ent-CondenserMachineCircuitBoard-name = плата конденсаторной машины
-ent-CondenserMachineCircuitBoard-desc = Машинная печатная плата для конденсатора.
+ent-CondenserMachineCircuitBoard-name = condenser machine board
+ent-CondenserMachineCircuitBoard-desc = A machine printed circuit board for a condenser.
 
-ent-PortableScrubberMachineCircuitBoard-name = портативная доска для скруббера
-ent-PortableScrubberMachineCircuitBoard-desc = Печатная плата портативного скруббера.
+ent-PortableScrubberMachineCircuitBoard-name = portable scrubber machine board
+ent-PortableScrubberMachineCircuitBoard-desc = A machine printed circuit board for a portable scrubber.
 
-ent-SpaceHeaterMachineCircuitBoard-name = Плата машины для обогревателя
-ent-SpaceHeaterMachineCircuitBoard-desc = Машинная печатная плата для обогревателя.
+ent-SpaceHeaterMachineCircuitBoard-name = space heater machine board
+ent-SpaceHeaterMachineCircuitBoard-desc = A machine printed circuit board for a space heater.
 
-ent-CloningPodMachineCircuitboard-name = плата машины для клонирования
-ent-CloningPodMachineCircuitboard-desc = Машинная печатная плата для модуля клонирования.
+ent-CloningPodMachineCircuitboard-name = cloning pod machine board
+ent-CloningPodMachineCircuitboard-desc = A machine printed circuit board for a cloning pod.
 
-ent-MedicalScannerMachineCircuitboard-name = плата медицинского сканера
-ent-MedicalScannerMachineCircuitboard-desc = Машинная печатная плата для медицинского сканера.
+ent-MedicalScannerMachineCircuitboard-name = medical scanner machine board
+ent-MedicalScannerMachineCircuitboard-desc = A machine printed circuit board for a medical scanner.
 
-ent-CrewMonitoringServerMachineCircuitboard-name = Плата сервера мониторинга экипажа
-ent-CrewMonitoringServerMachineCircuitboard-desc = Машинная печатная плата сервера мониторинга экипажа.
+ent-CrewMonitoringServerMachineCircuitboard-name = crew monitoring server machine board
+ent-CrewMonitoringServerMachineCircuitboard-desc = A machine printed circuit board for a crew monitoring server.
 
-ent-CryoPodMachineCircuitboard-name = плата машины криопод
-ent-CryoPodMachineCircuitboard-desc = Машинная печатная плата для крио-капсулы.
+ent-CryoPodMachineCircuitboard-name = cryo pod machine board
+ent-CryoPodMachineCircuitboard-desc = A machine printed circuit board for a cryo pod.
 
-ent-ChemMasterMachineCircuitboard-name = Плата машины ChemMaster 4000
-ent-ChemMasterMachineCircuitboard-desc = Машинная печатная плата для ChemMaster 4000.
+ent-ChemMasterMachineCircuitboard-name = ChemMaster 4000 machine board
+ent-ChemMasterMachineCircuitboard-desc = A machine printed circuit board for a ChemMaster 4000.
 
-ent-ChemDispenserMachineCircuitboard-name = Доска дозатора химикатов
-ent-ChemDispenserMachineCircuitboard-desc = Машинная печатная плата для дозатора химикатов.
+ent-ChemDispenserMachineCircuitboard-name = chem dispenser machine board
+ent-ChemDispenserMachineCircuitboard-desc = A machine printed circuit board for a chem dispenser.
 
-ent-BiomassReclaimerMachineCircuitboard-name = Доска машины для регенерации биомассы
-ent-BiomassReclaimerMachineCircuitboard-desc = Машинная печатная плата для утилизатора биомассы.
+ent-BiomassReclaimerMachineCircuitboard-name = biomass reclaimer machine board
+ent-BiomassReclaimerMachineCircuitboard-desc = A machine printed circuit board for a biomass reclaimer.
 
-ent-HydroponicsTrayMachineCircuitboard-name = машинная доска для лотка для гидропоники
-ent-HydroponicsTrayMachineCircuitboard-desc = Машинная печатная плата лотка для гидропоники.
+ent-HydroponicsTrayMachineCircuitboard-name = hydroponics tray machine board
+ent-HydroponicsTrayMachineCircuitboard-desc = A machine printed circuit board for a hydroponics tray.
 
-ent-SeedExtractorMachineCircuitboard-name = доска для семяотделителя
-ent-SeedExtractorMachineCircuitboard-desc = Машинная печатная плата семяотделителя.
+ent-SeedExtractorMachineCircuitboard-name = seed extractor machine board
+ent-SeedExtractorMachineCircuitboard-desc = A machine printed circuit board for a seed extractor.
 
-ent-SMESMachineCircuitboard-name = Машинная доска SMES
-ent-SMESMachineCircuitboard-desc = Машинная печатная плата для СМС.
+ent-SMESMachineCircuitboard-name = SMES machine board
+ent-SMESMachineCircuitboard-desc = A machine printed circuit board for a SMES.
 
-ent-SMESAdvancedMachineCircuitboard-name = усовершенствованная машинная плата SMES
-ent-SMESAdvancedMachineCircuitboard-desc = Машинная печатная плата для Advanced SMES.
+ent-SMESAdvancedMachineCircuitboard-name = advanced SMES machine board
+ent-SMESAdvancedMachineCircuitboard-desc = A machine printed circuit board for an Advanced SMES.
 
-ent-CellRechargerCircuitboard-name = плата устройства для подзарядки ячеек
-ent-CellRechargerCircuitboard-desc = Машинная печатная плата для зарядного устройства аккумулятора.
+ent-CellRechargerCircuitboard-name = cell recharger machine board
+ent-CellRechargerCircuitboard-desc = A machine printed circuit board for a cell recharger.
 
-ent-PowerCageRechargerCircuitboard-name = доска для перезарядки клетки
-ent-PowerCageRechargerCircuitboard-desc = Машинная печатная плата для зарядного устройства энергоемкости.
+ent-PowerCageRechargerCircuitboard-name = cage recharger machine board
+ent-PowerCageRechargerCircuitboard-desc = A machine printed circuit board for a energy cage recharger.
 
-ent-BorgChargerCircuitboard-name = Доска машины подзарядки киборга
-ent-BorgChargerCircuitboard-desc = Машинная печатная плата для станции подзарядки робота.
+ent-BorgChargerCircuitboard-name = cyborg recharging station machine board
+ent-BorgChargerCircuitboard-desc = A machine printed circuit board for a robot recharging station.
 
-ent-WeaponCapacitorRechargerCircuitboard-name = плата зарядного устройства
-ent-WeaponCapacitorRechargerCircuitboard-desc = Машинная печатная плата для зарядного устройства.
+ent-WeaponCapacitorRechargerCircuitboard-name = recharger machine board
+ent-WeaponCapacitorRechargerCircuitboard-desc = A machine printed circuit board for a recharger.
 
-ent-TurboItemRechargerCircuitboard-name = плата турбоперезарядки
-ent-TurboItemRechargerCircuitboard-desc = Машинная печатная плата турбозарядного устройства.
+ent-TurboItemRechargerCircuitboard-name = turbo recharger machine board
+ent-TurboItemRechargerCircuitboard-desc = A machine printed circuit board for a turbo recharger.
 
-ent-SubstationMachineCircuitboard-name = машинный щит подстанции
-ent-SubstationMachineCircuitboard-desc = Машинная печатная плата для подстанции.
+ent-SubstationMachineCircuitboard-name = substation machine board
+ent-SubstationMachineCircuitboard-desc = A machine printed circuit board for a substation.
 
-ent-DawInstrumentMachineCircuitboard-name = плата цифровой аудио рабочей станции
+ent-DawInstrumentMachineCircuitboard-name = digital audio workstation machine board
 
-ent-PortableGeneratorPacmanMachineCircuitboard-name = Плата портативного генератора типа P.A.C.M.A.N.
+ent-PortableGeneratorPacmanMachineCircuitboard-name = P.A.C.M.A.N.-type portable generator machine board
 
-ent-ThrusterMachineCircuitboard-name = плата подруливающего устройства
+ent-ThrusterMachineCircuitboard-name = thruster machine board
 
-ent-GyroscopeMachineCircuitboard-name = плата гироскопа
+ent-GyroscopeMachineCircuitboard-name = gyroscope machine board
 
-ent-PortableGeneratorSuperPacmanMachineCircuitboard-name = Плата портативного генератора типа S.U.P.E.R.P.A.C.M.A.N.
+ent-PortableGeneratorSuperPacmanMachineCircuitboard-name = S.U.P.E.R.P.A.C.M.A.N.-type portable generator machine board
 
-ent-PortableGeneratorJrPacmanMachineCircuitboard-name = Плата портативного генератора типа J.R.P.A.C.M.A.N.
+ent-PortableGeneratorJrPacmanMachineCircuitboard-name = J.R.P.A.C.M.A.N.-type portable generator machine board
 
-ent-ReagentGrinderMachineCircuitboard-name = доска для реагентной мельницы
-ent-ReagentGrinderMachineCircuitboard-desc = Машинная печатная плата для измельчителя реагентов.
+ent-ReagentGrinderMachineCircuitboard-name = reagent grinder machine board
+ent-ReagentGrinderMachineCircuitboard-desc = A machine printed circuit board for a reagent grinder.
 
-ent-HotplateMachineCircuitboard-name = плита машины
-ent-HotplateMachineCircuitboard-desc = Машинная печатная плата для конфорки.
+ent-HotplateMachineCircuitboard-name = hotplate machine board
+ent-HotplateMachineCircuitboard-desc = A machine printed circuit board for a hotplate.
 
-ent-ElectricGrillMachineCircuitboard-name = доска для электрического гриля
-ent-ElectricGrillMachineCircuitboard-desc = Машинная печатная плата для электрогриля.
+ent-ElectricGrillMachineCircuitboard-name = electric grill machine board
+ent-ElectricGrillMachineCircuitboard-desc = A machine printed circuit board for an electric grill.
 
-ent-StasisBedMachineCircuitboard-name = машинная плата стазисной кровати
+ent-StasisBedMachineCircuitboard-name = stasis bed machine board
 
-ent-ElectrolysisUnitMachineCircuitboard-name = плата электролизной установки
-ent-ElectrolysisUnitMachineCircuitboard-desc = Машинная печатная плата электролизной установки.
+ent-ElectrolysisUnitMachineCircuitboard-name = electrolysis unit machine board
+ent-ElectrolysisUnitMachineCircuitboard-desc = A machine printed circuit board for an electrolysis unit.
 
-ent-CentrifugeMachineCircuitboard-name = плата центрифуги
-ent-CentrifugeMachineCircuitboard-desc = Машинная печатная плата для центрифуги.
+ent-CentrifugeMachineCircuitboard-name = centrifuge machine board
+ent-CentrifugeMachineCircuitboard-desc = A machine printed circuit board for a centrifuge.
 
-ent-MaterialSiloMachineCircuitboard-name = доска силоса для материалов
+ent-MaterialSiloMachineCircuitboard-name = material silo machine board
 
-ent-OreProcessorMachineCircuitboard-name = плата машины для обработки руды
+ent-OreProcessorMachineCircuitboard-name = ore processor machine board
 
-ent-OreProcessorIndustrialMachineCircuitboard-name = Плата промышленной машины для переработки руды
+ent-OreProcessorIndustrialMachineCircuitboard-name = industrial ore processor machine board
 
-ent-SheetifierMachineCircuitboard-name = доска станка Sheet-Meister 2000
+ent-SheetifierMachineCircuitboard-name = sheet-meister 2000 machine board
 
-ent-MicrowaveMachineCircuitboard-name = плата микроволновой машины
+ent-MicrowaveMachineCircuitboard-name = microwave machine board
 
-ent-SyndicateMicrowaveMachineCircuitboard-name = Донк Ко. плата микроволновой машины
+ent-SyndicateMicrowaveMachineCircuitboard-name = donk co. microwave machine board
 
-ent-FatExtractorMachineCircuitboard-name = доска для экстрактора липидов
+ent-FatExtractorMachineCircuitboard-name = lipid extractor machine board
 
-ent-FlatpackerMachineCircuitboard-name = Машинная доска Flatpacker 1001
+ent-FlatpackerMachineCircuitboard-name = Flatpacker 1001 machine board
 
-ent-EmitterCircuitboard-name = плата эмиттера
+ent-EmitterCircuitboard-name = emitter machine board
 
-ent-SurveillanceCameraRouterCircuitboard-name = плата маршрутизатора камеры наблюдения
-ent-SurveillanceCameraRouterCircuitboard-desc = Машинная печатная плата для роутера камеры наблюдения.
+ent-SurveillanceCameraRouterCircuitboard-name = surveillance camera router board
+ent-SurveillanceCameraRouterCircuitboard-desc = A machine printed circuit board for a surveillance camera router.
 
-ent-SurveillanceCameraWirelessRouterCircuitboard-name = плата беспроводного маршрутизатора камеры наблюдения
-ent-SurveillanceCameraWirelessRouterCircuitboard-desc = Машинная печатная плата для беспроводного маршрутизатора камеры наблюдения.
+ent-SurveillanceCameraWirelessRouterCircuitboard-name = surveillance camera wireless router board
+ent-SurveillanceCameraWirelessRouterCircuitboard-desc = A machine printed circuit board for a surveillance camera wireless router.
 
-ent-SurveillanceWirelessCameraMovableCircuitboard-name = подвижная плата беспроводной камеры
-ent-SurveillanceWirelessCameraMovableCircuitboard-desc = Машинная печатная плата для передвижной беспроводной камеры.
+ent-SurveillanceWirelessCameraMovableCircuitboard-name = movable wireless camera board
+ent-SurveillanceWirelessCameraMovableCircuitboard-desc = A machine printed circuit board for a movable wireless camera.
 
-ent-SurveillanceWirelessCameraAnchoredCircuitboard-name = плата беспроводной камеры
-ent-SurveillanceWirelessCameraAnchoredCircuitboard-desc = Машинная печатная плата для беспроводной камеры.
+ent-SurveillanceWirelessCameraAnchoredCircuitboard-name = wireless camera board
+ent-SurveillanceWirelessCameraAnchoredCircuitboard-desc = A machine printed circuit board for a wireless camera.
 
-ent-GasRecyclerMachineCircuitboard-name = плата по переработке газа
-ent-GasRecyclerMachineCircuitboard-desc = Печатная плата газорециркулятора.
+ent-GasRecyclerMachineCircuitboard-name = gas recycler board
+ent-GasRecyclerMachineCircuitboard-desc = A printed circuit board for a gas recycler.
 
-ent-BoozeDispenserMachineCircuitboard-name = Доска для раздачи выпивки
-ent-BoozeDispenserMachineCircuitboard-desc = Машинная печатная плата для дозатора спиртных напитков.
+ent-BoozeDispenserMachineCircuitboard-name = booze dispenser machine board
+ent-BoozeDispenserMachineCircuitboard-desc = A machine printed circuit board for a booze dispenser.
 
-ent-CargoTelepadMachineCircuitboard-name = грузовая телепадная машина
-ent-CargoTelepadMachineCircuitboard-desc = Машинная печатная плата грузового телепада.
+ent-CargoTelepadMachineCircuitboard-name = cargo telepad machine board
+ent-CargoTelepadMachineCircuitboard-desc = A machine printed circuit board for a cargo telepad.
 
-ent-MailTeleporterMachineCircuitboard-name = плата почтового телепортатора
-ent-MailTeleporterMachineCircuitboard-desc = Машинная печатная плата почтового телепорта.
+ent-MailTeleporterMachineCircuitboard-name = mail teleporter machine board
+ent-MailTeleporterMachineCircuitboard-desc = A machine printed circuit board for a mail teleporter.
 
-ent-SodaDispenserMachineCircuitboard-name = Доска для дозатора газировки
-ent-SodaDispenserMachineCircuitboard-desc = Машинная печатная плата для автомата для газировки.
+ent-SodaDispenserMachineCircuitboard-name = soda dispenser machine board
+ent-SodaDispenserMachineCircuitboard-desc = A machine printed circuit board for a soda dispenser.
 
-ent-TelecomServerCircuitboard-name = плата телекоммуникационного сервера
-ent-TelecomServerCircuitboard-desc = Машинная печатная плата для телекоммуникационного сервера.
+ent-TelecomServerCircuitboard-name = telecommunication server machine board
+ent-TelecomServerCircuitboard-desc = A machine printed circuit board for an telecommunication server.
 
-ent-SalvageMagnetMachineCircuitboard-name = доска машины со спасательным магнитом
-ent-SalvageMagnetMachineCircuitboard-desc = Машинная печатная плата для аварийного магнита.
+ent-SalvageMagnetMachineCircuitboard-name = salvage magnet machine board
+ent-SalvageMagnetMachineCircuitboard-desc = A machine printed circuit board for a salvage magnet.
 
-ent-MiniGravityGeneratorCircuitboard-name = мини-доска гравитационного генератора
-ent-MiniGravityGeneratorCircuitboard-desc = Машинная печатная плата для мини гравитационного генератора.
+ent-MiniGravityGeneratorCircuitboard-name = mini gravity generator machine board
+ent-MiniGravityGeneratorCircuitboard-desc = A machine printed circuit board for a mini gravity generator.
 
-ent-StationAnchorCircuitboard-name = доска якорной машины станции
-ent-StationAnchorCircuitboard-desc = Машинная печатная плата якоря станции.
+ent-StationAnchorCircuitboard-name = station anchor machine board
+ent-StationAnchorCircuitboard-desc = A machine printed circuit board for a station anchor.
 
-ent-ReagentGrinderIndustrialMachineCircuitboard-name = промышленная доска для измельчения реагентов
+ent-ReagentGrinderIndustrialMachineCircuitboard-name = industrial reagent grinder machine board
 
-ent-JukeboxCircuitBoard-name = плата музыкального автомата
-ent-JukeboxCircuitBoard-desc = Машинная печатная плата для музыкального автомата.
+ent-JukeboxCircuitBoard-name = jukebox machine board
+ent-JukeboxCircuitBoard-desc = A machine printed circuit board for a jukebox.
 
-ent-CutterMachineCircuitboard-name = доска для резки машины
+ent-CutterMachineCircuitboard-name = cutter machine board
 

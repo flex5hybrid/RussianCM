@@ -1,4 +1,4 @@
-ent-SpawnMobXenoEasy-name = Ксено-производитель
+ent-SpawnMobXenoEasy-name = Xeno Spawner
 
-ent-SpawnMobXenoHard-name = Ксено-производитель
+ent-SpawnMobXenoHard-name = Xeno Spawner
 

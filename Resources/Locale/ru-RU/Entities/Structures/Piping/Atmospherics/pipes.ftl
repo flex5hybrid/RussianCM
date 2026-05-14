@@ -1,27 +1,27 @@
-ent-GasPipeSansLayers-name = газовая труба
-ent-GasPipeSansLayers-desc = Держит газ.
+ent-GasPipeSansLayers-name = gas pipe
+ent-GasPipeSansLayers-desc = Holds gas.
 
-ent-GasPipeBroken-name = сломанная труба
-ent-GasPipeBroken-desc = Раньше в нем хранился газ.
+ent-GasPipeBroken-name = broken pipe
+ent-GasPipeBroken-desc = It used to hold gas.
 
-ent-GasPipeManifold-name = коллектор газовой трубы
-ent-GasPipeManifold-desc = Позволяет соединять между собой газовые трубы различной конфигурации.
+ent-GasPipeManifold-name = gas pipe manifold
+ent-GasPipeManifold-desc = Allows gas pipes of different configurations to be connected together.
 
-ent-GasPipeBase-name = газовая труба
-ent-GasPipeBase-desc = Держит газ.
+ent-GasPipeBase-name = gas pipe
+ent-GasPipeBase-desc = Holds gas.
 
 ent-GasPipeHalf-name = construction-recipe-gas-pipe-half
-ent-GasPipeHalf-desc = Держит газ.
+ent-GasPipeHalf-desc = Holds gas.
 
-ent-GasPipeStraight-name = газовая труба
-ent-GasPipeStraight-desc = Держит газ.
+ent-GasPipeStraight-name = gas pipe
+ent-GasPipeStraight-desc = Holds gas.
 
 ent-GasPipeBend-name = construction-recipe-gas-pipe-bend
-ent-GasPipeBend-desc = Держит газ.
+ent-GasPipeBend-desc = Holds gas.
 
 ent-GasPipeTJunction-name = construction-recipe-gas-pipe-t-junction
-ent-GasPipeTJunction-desc = Держит газ.
+ent-GasPipeTJunction-desc = Holds gas.
 
 ent-GasPipeFourway-name = construction-recipe-gas-pipe-fourway
-ent-GasPipeFourway-desc = Держит газ.
+ent-GasPipeFourway-desc = Holds gas.
 

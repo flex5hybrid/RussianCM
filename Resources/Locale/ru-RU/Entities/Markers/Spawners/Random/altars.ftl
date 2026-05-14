@@ -1,6 +1,6 @@
-ent-AltarSpawner-name = случайный генератор алтаря
+ent-AltarSpawner-name = random altar spawner
 
-ent-ConvertAltarSpawner-name = случайный генератор алтаря конвертации
+ent-ConvertAltarSpawner-name = random convert-altar spawner
 
-ent-CultAltarSpawner-name = случайный спаунер культового алтаря
+ent-CultAltarSpawner-name = random cult-altar spawner
 

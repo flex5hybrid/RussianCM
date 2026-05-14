@@ -1,8 +1,8 @@
-ent-StatusEffectForcedSleeping-name = принудительный сон
+ent-StatusEffectForcedSleeping-name = forced sleep
 
-ent-StatusEffectSSDSleeping-name = принудительный сон
+ent-StatusEffectSSDSleeping-name = forced sleep
 
-ent-StatusEffectDrowsiness-name = сонливость
+ent-StatusEffectDrowsiness-name = drowsiness
 
-ent-StatusEffectSeeingRainbow-name = галлюцинации
+ent-StatusEffectSeeingRainbow-name = hallucinations
 

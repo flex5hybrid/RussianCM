@@ -1,2 +1,2 @@
-ent-BedsheetSpawner-name = Случайный генератор листов
+ent-BedsheetSpawner-name = Random Sheet Spawner
 

@@ -1,39 +1,39 @@
-ent-ProjectileFireball-name = огненный шар
-ent-ProjectileFireball-desc = Тебе лучше ГИТТА ВЗВЕСИТЬ.
+ent-ProjectileFireball-name = fireball
+ent-ProjectileFireball-desc = You better GITTAH WEIGH.
 
-ent-ProjectileDragonsBreath-name = дыхание дракона
-ent-ProjectileDragonsBreath-desc = Постарайтесь не поджариться.
+ent-ProjectileDragonsBreath-name = dragon's breath
+ent-ProjectileDragonsBreath-desc = Try not to get toasted.
 
-ent-ProjectileAnomalyFireball-name = огненный шар
-ent-ProjectileAnomalyFireball-desc = Парящий сгусток пламени.
+ent-ProjectileAnomalyFireball-name = fireball
+ent-ProjectileAnomalyFireball-desc = Hovering blob of flame.
 
-ent-ProjectileLocker-name = проклятый шкафчик
-ent-ProjectileLocker-desc = Проклятый волшебный шкафчик! Сможешь ли ты сопротивляться?
+ent-ProjectileLocker-name = cursed locker
+ent-ProjectileLocker-desc = A cursed magical locker! Can you resist?
 
-ent-ProjectilePolyboltCarp-name = карп полиболт
-ent-ProjectilePolyboltCarp-desc = Нееет, я не хочу быть рыбой!
+ent-ProjectilePolyboltCarp-name = carp polybolt
+ent-ProjectilePolyboltCarp-desc = Nooo, I don't wanna be fish!
 
-ent-ProjectilePolyboltMonkey-name = обезьяна полиболт
-ent-ProjectilePolyboltMonkey-desc = Нееет, я не хочу быть обезьяной!
+ent-ProjectilePolyboltMonkey-name = monkey polybolt
+ent-ProjectilePolyboltMonkey-desc = Nooo, I don't wanna be monkey!
 
-ent-ProjectilePolyboltDoor-name = дверной полиболт
-ent-ProjectilePolyboltDoor-desc = Нееет, я не хочу быть дверью!
+ent-ProjectilePolyboltDoor-name = door polybolt
+ent-ProjectilePolyboltDoor-desc = Nooo, I don't wanna be door!
 
-ent-ProjectileHealingBolt-name = исцеляющий болт
-ent-ProjectileHealingBolt-desc = Я ПРИКАЗЫВАЮ ВАС ЖИТЬ!
+ent-ProjectileHealingBolt-name = healing bolt
+ent-ProjectileHealingBolt-desc = I COMMAND YOU TO LIVE!
 
-ent-BulletInstakillMagic-name = магический свинцовый цилиндр
-ent-BulletInstakillMagic-desc = Это выглядит знакомо.
+ent-BulletInstakillMagic-name = magical lead cylinder
+ent-BulletInstakillMagic-desc = This looks familiar.
 
-ent-ProjectilePolyboltCluwne-name = Клювный полиболт
-ent-ProjectilePolyboltCluwne-desc = НоХ НоХ!
+ent-ProjectilePolyboltCluwne-name = cluwne polybolt
+ent-ProjectilePolyboltCluwne-desc = KnoH KnoH!
 
-ent-ProjectileIcicle-name = сосулька
-ent-ProjectileIcicle-desc = Брррр.
+ent-ProjectileIcicle-name = icicle
+ent-ProjectileIcicle-desc = Brrrrr.
 
-ent-ProjectilePolyboltBread-name = хлеб полиболт
-ent-ProjectilePolyboltBread-desc = Нееет, я не хочу быть хлебом!
+ent-ProjectilePolyboltBread-name = bread polybolt
+ent-ProjectilePolyboltBread-desc = Nooo, I don't wanna be bread!
 
-ent-ProjectilePolyboltBase-name = БазаBullet
-ent-ProjectilePolyboltBase-desc = Если ты это видишь, ты, вероятно, мертв!
+ent-ProjectilePolyboltBase-name = BaseBullet
+ent-ProjectilePolyboltBase-desc = If you can see this you're probably dead!
 

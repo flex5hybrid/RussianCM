@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 AI Changelog Generator — генерирует публичные релизные заметки из GitHub PR
-с помощью Mistral AI и отправляет в Discord.
+с помощью Gemini 2.0 Flash и отправляет в Discord.
 
 Запускается после существующего шага с YAML-ченджлогом.
 """
@@ -529,54 +529,56 @@ def build_pr_data(pr: PRInfo) -> str:
     )
 
 
-# ─── Mistral Client ──────────────────────────────────────────────────────────────
+# ─── Gemini Client ─────────────────────────────────────────────────────────────
 
-class MistralClient:
-    """Обёртка над Mistral API."""
+class GeminiClient:
+    """Обёртка над Gemini API."""
 
     def __init__(self, api_key: str):
         self.api_key = api_key
-        self.url = cfg.MISTRAL_API_URL
+        self.url = cfg.GEMINI_API_URL
 
     def generate_changelog(self, pr_list: list[PRInfo]) -> ChangelogResult:
-        """Отправляет PR в Mistral и получает структурированный changelog."""
+        """Отправляет PR в Gemini и получает структурированный changelog."""
         pr_blocks = "\n".join(build_pr_data(pr) for pr in pr_list)
-        user_prompt = cfg.MISTRAL_USER_PROMPT_TEMPLATE.format(pr_data=pr_blocks)
+        user_prompt = cfg.GEMINI_USER_PROMPT_TEMPLATE.format(pr_data=pr_blocks)
 
         payload = {
-            "model": cfg.MISTRAL_MODEL,
-            "messages": [
-                {"role": "system", "content": cfg.MISTRAL_SYSTEM_PROMPT},
-                {"role": "user", "content": user_prompt},
-            ],
-            "temperature": 0.3,
-            "max_tokens": 8192,
-            "response_format": {"type": "json_object"},
+            "contents": [{"parts": [{"text": user_prompt}]}],
+            "generationConfig": {
+                "temperature": 0.3,
+                "maxOutputTokens": 8192,
+                "topP": 0.8,
+                "topK": 40,
+            },
+            "systemInstruction": {
+                "parts": [{"text": cfg.GEMINI_SYSTEM_PROMPT}]
+            },
         }
 
         headers = {
-            "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
+            "x-goog-api-key": self.api_key,
         }
 
-        print(f"  [MISTRAL] Отправляю {len(pr_list)} PR в Mistral...")
+        print(f"  [GEMINI] Отправляю {len(pr_list)} PR в Gemini...")
         start = time.time()
 
         resp = requests.post(
             self.url, json=payload, headers=headers, timeout=120
         )
         elapsed = time.time() - start
-        print(f"  [MISTRAL] Ответ за {elapsed:.1f}с (status={resp.status_code})")
+        print(f"  [GEMINI] Ответ за {elapsed:.1f}с (status={resp.status_code})")
 
         if resp.status_code != 200:
-            print(f"  [MISTRAL] Ошибка: {resp.text[:500]}")
+            print(f"  [GEMINI] Ошибка: {resp.text[:500]}")
             resp.raise_for_status()
 
-        raw_text = resp.json()["choices"][0]["message"]["content"]
+        raw_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
         return self._parse_response(raw_text, pr_list)
 
     def _parse_response(self, raw_text: str, pr_list: list[PRInfo]) -> ChangelogResult:
-        """Парсит ответ Mistral и валидирует данные."""
+        """Парсит ответ Gemini и валидирует данные."""
         text = raw_text.strip()
 
         # Убрать markdown-обёртку ```json ... ```
@@ -596,8 +598,8 @@ class MistralClient:
         try:
             parsed = json.loads(text)
         except json.JSONDecodeError as e:
-            print(f"  [MISTRAL] JSON parse error: {e}")
-            print(f"  [MISTRAL] Raw:\n{raw_text[:800]}")
+            print(f"  [GEMINI] JSON parse error: {e}")
+            print(f"  [GEMINI] Raw:\n{raw_text[:800]}")
             return ChangelogResult(features=[], fixes=[], improvements=[], videos={})
 
         features = parsed.get("features", []) or []
@@ -638,6 +640,12 @@ class MistralClient:
 
     def _format_video_url(self, url: str) -> str:
         """Форматирует URL для отображения в Discord."""
+        if url.lower().endswith((".gif", ".gifv", ".mp4", ".webm", ".mov")):
+            return url
+        if "youtube" in url.lower() or "youtu.be" in url.lower():
+            return url
+        if "vimeo" in url.lower():
+            return url
         return url
 
 
@@ -801,9 +809,9 @@ def main():
         print("[ERROR] DISCORD_WEBHOOK_URL не задан, пропуск")
         return
 
-    api_key = cfg.MISTRAL_API_KEY
+    api_key = cfg.GEMINI_API_KEY
     if not api_key:
-        print("[ERROR] MISTRAL_API_KEY не задан, пропуск")
+        print("[ERROR] GEMINI_API_KEY не задан, пропуск")
         return
 
     repo = cfg.GITHUB_REPOSITORY or os.environ.get("GITHUB_REPOSITORY", "")
@@ -911,12 +919,12 @@ def main():
         print("[STEP] Нет PR после фильтра, пропуск")
         return
 
-    # ── Mistral ─────────────────────────────────────────────────────────────────
-    mistral = MistralClient(api_key)
-    result = mistral.generate_changelog(filtered)
+    # ── Gemini ─────────────────────────────────────────────────────────────────
+    gemini = GeminiClient(api_key)
+    result = gemini.generate_changelog(filtered)
 
     total = len(result.features) + len(result.fixes) + len(result.improvements)
-    print(f"[MISTRAL] Сгенерировано {total} пунктов:")
+    print(f"[GEMINI] Сгенерировано {total} пунктов:")
     print(f"  Новые функции: {len(result.features)}")
     print(f"  Исправления:   {len(result.fixes)}")
     print(f"  Изменения:     {len(result.improvements)}")

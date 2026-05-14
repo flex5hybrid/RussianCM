@@ -1,17 +1,17 @@
-ent-ArrowRegular-name = стрелка
-ent-ArrowRegular-desc = Вы можете почувствовать силу степи внутри себя.
+ent-ArrowRegular-name = arrow
+ent-ArrowRegular-desc = You can feel the power of the steppe within you.
 
-ent-ArrowImprovised-name = стрела осколок стекла
-ent-ArrowImprovised-desc = Предпочитаемый снаряд серых рубашек.
+ent-ArrowImprovised-name = glass shard arrow
+ent-ArrowImprovised-desc = The greyshirt's preferred projectile.
 
-ent-ArrowImprovisedPlasma-name = плазменная стрела осколка стекла
-ent-ArrowImprovisedPlasma-desc = Предпочитаемый снаряд серых рубашек. Теперь с дополнительной летальностью!
+ent-ArrowImprovisedPlasma-name = plasma glass shard arrow
+ent-ArrowImprovisedPlasma-desc = The greyshirt's preferred projectile. Now with extra lethality!
 
-ent-ArrowImprovisedUranium-name = стрела из осколка уранового стекла
-ent-ArrowImprovisedUranium-desc = Предпочитаемый снаряд серых рубашек. Теперь с добавленной радиацией!
+ent-ArrowImprovisedUranium-name = uranium glass shard arrow
+ent-ArrowImprovisedUranium-desc = The greyshirt's preferred projectile. Now with added radiation!
 
-ent-ArrowImprovisedCarp-name = зуб карпа стрелка
-ent-ArrowImprovisedCarp-desc = Любимая стрела спасателя. Убивайте своих врагов зубами их семей.
+ent-ArrowImprovisedCarp-name = carp tooth arrow
+ent-ArrowImprovisedCarp-desc = The salvager's preferred arrow. Kill your enemies with the teeth of their families.
 
-ent-BaseArrow-name = элемент
+ent-BaseArrow-name = item
 

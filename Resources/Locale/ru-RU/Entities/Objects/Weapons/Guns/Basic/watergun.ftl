@@ -1,11 +1,11 @@
-ent-WeaponWaterPistol-name = водяной пистолет
-ent-WeaponWaterPistol-desc = Самое изящное оружие водного базирования. Вы клянетесь, что триггер ничего не делает.
+ent-WeaponWaterPistol-name = water pistol
+ent-WeaponWaterPistol-desc = The dinkiest of water-based weaponry. You swear the trigger doesn't do anything.
 
-ent-WeaponWaterBlaster-name = водяной бластер
-ent-WeaponWaterBlaster-desc = С этим плохим парнем ты будешь самым крутым парнем на летнем барбекю.
+ent-WeaponWaterBlaster-name = water blaster
+ent-WeaponWaterBlaster-desc = With this bad boy, you'll be the coolest kid at the summer barbecue.
 
-ent-WeaponWaterBlasterSuper-name = супер водный бластер
-ent-WeaponWaterBlasterSuper-desc = Нет! Нет! Не в глаза!
+ent-WeaponWaterBlasterSuper-name = super water blaster
+ent-WeaponWaterBlasterSuper-desc = No! No! Not in the eyes!
 
-ent-WeaponWaterGunBase-name = элемент
+ent-WeaponWaterGunBase-name = item
 

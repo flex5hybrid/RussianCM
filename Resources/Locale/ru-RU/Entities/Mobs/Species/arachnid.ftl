@@ -1,2 +1,2 @@
-ent-BaseMobArachnid-name = Урист МакВебс
+ent-BaseMobArachnid-name = Urist McWebs
 

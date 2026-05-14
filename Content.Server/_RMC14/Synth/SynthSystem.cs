@@ -59,10 +59,10 @@ public sealed class SynthSystem : SharedSynthSystem
             };
         }
 
-        if (!TryComp<BodyComponent>(ent.Owner, out var body))
+        if (!HasComp<BodyComponent>(ent.Owner))
             return;
 
-        var organComps = _body.GetBodyOrganEntityComps<OrganComponent>((ent.Owner, body));
+        var organComps = _body.GetBodyOrganEntityComps<OrganComponent>(ent.Owner);
 
         foreach (var organ in organComps)
         {
@@ -77,7 +77,6 @@ public sealed class SynthSystem : SharedSynthSystem
                 return;
             var newBrain = SpawnNextToOrDrop(ent.Comp.NewBrain, ent);
             _body.AddOrganToFirstValidSlot(part.Id, newBrain);
-            break;
         }
     }
 }

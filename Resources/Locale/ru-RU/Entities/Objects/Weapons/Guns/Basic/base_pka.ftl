@@ -1,2 +1,2 @@
-ent-WeaponProtoKineticAcceleratorBase-name = элемент
+ent-WeaponProtoKineticAcceleratorBase-name = item
 

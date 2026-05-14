@@ -1,44 +1,44 @@
-ent-SpawnMobAlexander-name = Александр Спаунер
+ent-SpawnMobAlexander-name = Alexander Spawner
 
-ent-SpawnMobBandito-name = Бандито Спаунер
+ent-SpawnMobBandito-name = Bandito Spawner
 
-ent-SpawnMobCat-name = Случайный спаунер кошек
+ent-SpawnMobCat-name = Random Cat Spawner
 
-ent-SpawnMobCatBingus-name = Создатель Бингуса
+ent-SpawnMobCatBingus-name = Bingus Spawner
 
-ent-SpawnMobCatException-name = Генератор исключений
+ent-SpawnMobCatException-name = Exception Spawner
 
-ent-SpawnMobCatFloppa-name = Создатель флоппы
+ent-SpawnMobCatFloppa-name = Floppa Spawner
 
-ent-SpawnMobCatRuntime-name = Создатель среды выполнения
+ent-SpawnMobCatRuntime-name = Runtime Spawner
 
-ent-SpawnMobCorgi-name = Производитель корги
+ent-SpawnMobCorgi-name = Corgi Spawner
 
-ent-SpawnMobCorgiMouse-name = Создатель мыши для разработчиков
+ent-SpawnMobCorgiMouse-name = Dev Mouse Spawner
 
-ent-SpawnMobCrabAtmos-name = Тропико Спаунер
+ent-SpawnMobCrabAtmos-name = Tropico Spawner
 
-ent-SpawnMobFoxRenault-name = Фокс Рено Спаунер
+ent-SpawnMobFoxRenault-name = Fox Renault Spawner
 
-ent-SpawnMobMcGriff-name = МакГрифф Спаунер
+ent-SpawnMobMcGriff-name = McGriff Spawner
 
-ent-SpawnMobHamsterHamlet-name = Хомяк Гамлет Спаунер
+ent-SpawnMobHamsterHamlet-name = Hamster Hamlet Spawner
 
-ent-SpawnMobKangarooWillow-name = Производитель ивы
+ent-SpawnMobKangarooWillow-name = Willow Spawner
 
-ent-SpawnMobMonkeyPunpun-name = Создатель каламбура
+ent-SpawnMobMonkeyPunpun-name = Pun Pun Spawner
 
-ent-SpawnMobPollyParrot-name = Производитель попугаев Полли
+ent-SpawnMobPollyParrot-name = Polly the parrot Spawner
 
-ent-SpawnMobPossumMorty-name = Создатель опоссума Морти
+ent-SpawnMobPossumMorty-name = Possum Morty Spawner
 
-ent-SpawnMobRaccoonMorticia-name = Производитель енота Мортишиа
+ent-SpawnMobRaccoonMorticia-name = Raccoon Morticia Spawner
 
-ent-SpawnMobShiva-name = Шива Спаунер
+ent-SpawnMobShiva-name = Shiva Spawner
 
-ent-SpawnMobSlothPaperwork-name = Создатель документов ленивца
+ent-SpawnMobSlothPaperwork-name = Sloth Paperwork Spawner
 
-ent-SpawnMobSmile-name = Создатель улыбки
+ent-SpawnMobSmile-name = Smile Spawner
 
-ent-SpawnMobWalter-name = Уолтер Спаунер
+ent-SpawnMobWalter-name = Walter Spawner
 

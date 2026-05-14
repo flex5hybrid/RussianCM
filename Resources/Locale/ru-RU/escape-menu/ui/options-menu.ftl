@@ -19,7 +19,7 @@ ui-options-value-percent = { TOSTRING($value, "P0") }
 
 ui-options-discordrich = Включить Discord Rich Presence
 ui-options-general-ui-style = Стиль UI
-ui-options-general-discord = Раздор
+ui-options-general-discord = Discord
 ui-options-general-cursor = Курсор
 ui-options-general-speech = Речь
 ui-options-general-storage = Инвентарь
@@ -162,7 +162,7 @@ ui-options-function-alt-activate-item-in-world = Альтернативно ис
 ui-options-function-drop = Положить предмет
 ui-options-function-examine-entity = Осмотреть
 ui-options-function-swap-hands = Поменять руки
-ui-options-function-swap-hands-reverse = Поменяйтесь руками (в другом направлении)
+ui-options-function-swap-hands-reverse = Swap hands (other direction)
 ui-options-function-move-stored-item = Переместить хранящийся объект
 ui-options-function-rotate-stored-item = Повернуть хранящийся объект
 ui-options-function-save-item-location = Сохранить расположение объекта
@@ -316,11 +316,11 @@ ui-options-function-text-cut = Вырезать
 ui-options-function-text-paste = Вставить
 ui-options-function-text-history-prev = Предыдущее с истории
 ui-options-function-text-history-next = Следующее с истории
-ui-options-function-text-release-focus = Фокус релиза
+ui-options-function-text-release-focus = Release focus
 ui-options-function-text-scroll-to-bottom = Пролистать вниз
-ui-options-function-text-tab-complete = Завершение вкладки
-ui-options-function-text-complete-next = Завершить следующее
-ui-options-function-text-complete-prev = Завершить предыдущее
+ui-options-function-text-tab-complete = Tab completion
+ui-options-function-text-complete-next = Complete next
+ui-options-function-text-complete-prev = Complete previous
 
 ## Network menu
 
@@ -379,37 +379,37 @@ ui-options-censor-nudity = Цензура обнажённых персонаж�
 
 ui-options-admin-player-panel = Список персонажей в админ меню
 
-ui-options-admin-player-tab-symbol-setting = Символы антагов столбца символов
-ui-options-admin-player-tab-symbol-setting-off = Нет символа антага
-ui-options-admin-player-tab-symbol-setting-basic = Показать стандартный символ антага
-ui-options-admin-player-tab-symbol-setting-specific = Показать конкретный символ антага
+ui-options-admin-player-tab-symbol-setting = Character column antag symbols
+ui-options-admin-player-tab-symbol-setting-off = No antag symbol
+ui-options-admin-player-tab-symbol-setting-basic = Show standard antag symbol
+ui-options-admin-player-tab-symbol-setting-specific = Show specific antag symbol
 
-ui-options-admin-player-tab-role-setting = Настройки отображения ролей
-ui-options-admin-player-tab-role-setting-roletype = Показать тип роли
-ui-options-admin-player-tab-role-setting-subtype = Показать подтип
-ui-options-admin-player-tab-role-setting-roletypesubtype = Показать тип и подтип роли
-ui-options-admin-player-tab-role-setting-subtyperoletype = Показать подтип и тип роли
+ui-options-admin-player-tab-role-setting = Role display settings
+ui-options-admin-player-tab-role-setting-roletype = Show role type
+ui-options-admin-player-tab-role-setting-subtype = Show subtype
+ui-options-admin-player-tab-role-setting-roletypesubtype = Show role type and subtype
+ui-options-admin-player-tab-role-setting-subtyperoletype = Show subtype and role type
 
-ui-options-admin-player-tab-color-setting = Настройки цвета
-ui-options-admin-player-tab-color-setting-off = Я ненавижу цвета
-ui-options-admin-player-tab-color-setting-character = Раскрасить имена персонажей-антагов
-ui-options-admin-player-tab-color-setting-roletype = Раскрасить все типы ролей
-ui-options-admin-player-tab-color-setting-both = Раскрасьте оба
+ui-options-admin-player-tab-color-setting = Color settings
+ui-options-admin-player-tab-color-setting-off = I hate colors
+ui-options-admin-player-tab-color-setting-character = Colorize antag character names
+ui-options-admin-player-tab-color-setting-roletype = Colorize all role types
+ui-options-admin-player-tab-color-setting-both = Colorize both
 
 ui-options-admin-overlay-title = Админ оверлей
 
-ui-options-admin-overlay-antag-format = Стиль метки Антаг
-ui-options-admin-overlay-antag-format-binary = Показать статус антага
-ui-options-admin-overlay-antag-format-roletype = Показать тип роли
-ui-options-admin-overlay-antag-format-subtype = Показать подтип
+ui-options-admin-overlay-antag-format = Antag label style
+ui-options-admin-overlay-antag-format-binary = Show antag status
+ui-options-admin-overlay-antag-format-roletype = Show role type
+ui-options-admin-overlay-antag-format-subtype = Show subtype
 
-ui-options-admin-overlay-antag-symbol = Стиль символа Антаг
-ui-options-admin-overlay-antag-symbol-off = Нет символа антага
-ui-options-admin-overlay-antag-symbol-basic = Показать стандартный символ антага
-ui-options-admin-overlay-antag-symbol-specific = Показать конкретный символ антага
+ui-options-admin-overlay-antag-symbol = Antag symbol style
+ui-options-admin-overlay-antag-symbol-off = No antag symbol
+ui-options-admin-overlay-antag-symbol-basic = Show standard antag symbol
+ui-options-admin-overlay-antag-symbol-specific = Show specific antag symbol
 
-ui-options-admin-enable-overlay-playtime = Показать время игры
-ui-options-admin-enable-overlay-starting-job = Показать начальную работу
-ui-options-admin-overlay-merge-distance = Расстояние слияния стека
-ui-options-admin-overlay-ghost-fade-distance = Диапазон исчезновения наложения призрака от мыши
-ui-options-admin-overlay-ghost-hide-distance = Наложение призрака скрывает диапазон от мыши
+ui-options-admin-enable-overlay-playtime = Show playtime
+ui-options-admin-enable-overlay-starting-job = Show starting job
+ui-options-admin-overlay-merge-distance = Stack merge distance
+ui-options-admin-overlay-ghost-fade-distance = Ghost overlay fade range from mouse
+ui-options-admin-overlay-ghost-hide-distance = Ghost overlay hide range from mouse

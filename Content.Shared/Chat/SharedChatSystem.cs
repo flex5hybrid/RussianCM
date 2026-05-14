@@ -1,6 +1,5 @@
 using System.Collections.Frozen;
 using System.Text.RegularExpressions;
-using Content.Shared._CMU14.Yautja;
 using Content.Shared._RMC14.Chat;
 using Content.Shared.AU14;
 using Content.Shared._RMC14.Xenonids;
@@ -150,7 +149,7 @@ public abstract class SharedChatSystem : EntitySystem
         if (input.StartsWith(RadioCommonPrefix))
         {
             output = SanitizeMessageCapital(input[1..].TrimStart());
-            channel = ((HasComp<XenoComponent>(source) && !IsHivebrokenXeno(source)) || HasComp<CultistComponent>(source))
+            channel = (HasComp<XenoComponent>(source) || HasComp<CultistComponent>(source))
                 ? _prototypeManager.Index<RadioChannelPrototype>(HivemindChannel)
                 : _prototypeManager.Index<RadioChannelPrototype>(CommonChannel);
 
@@ -173,7 +172,7 @@ public abstract class SharedChatSystem : EntitySystem
         if (input.Length < 2 || char.IsWhiteSpace(input[1]))
         {
             output = SanitizeMessageCapital(input[1..].TrimStart());
-            if (HasComp<XenoComponent>(source) && !IsHivebrokenXeno(source))
+            if (HasComp<XenoComponent>(source))
                 return false;
 
             if (!quiet)
@@ -215,15 +214,10 @@ public abstract class SharedChatSystem : EntitySystem
         RaiseLocalEvent(source, ref prefixEv);
         channel = prefixEv.Channel;
 
-        if (HasComp<XenoComponent>(source) && !IsHivebrokenXeno(source) && channel == null)
+        if (HasComp<XenoComponent>(source) && channel == null)
             return false;
 
         return true;
-    }
-
-    private bool IsHivebrokenXeno(EntityUid uid)
-    {
-        return TryComp(uid, out YautjaThrallComponent? thrall) && thrall.Hivebroken;
     }
 
     public string SanitizeMessageCapital(string message)

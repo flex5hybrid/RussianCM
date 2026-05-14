@@ -1,4 +1,4 @@
-﻿rmc-host = хозяин
-rmc-rouny = Руни
-rmc-wehny = Вени
-rmc-lesser-carrier = Меньший авианосец
+﻿rmc-host = host
+rmc-rouny = Rouny
+rmc-wehny = Wehny
+rmc-lesser-carrier = Lesser Carrier

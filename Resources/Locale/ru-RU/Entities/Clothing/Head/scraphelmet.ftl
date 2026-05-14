@@ -1,12 +1,12 @@
-ent-WiredBucketBase-name = проводное ведро
-ent-WiredBucketBase-desc = Ведро с прикрепленной проводкой, которая лучше служит подбородочным ремнем.
+ent-WiredBucketBase-name = wired bucket
+ent-WiredBucketBase-desc = A bucket with attached wiring to better serve as a chinstrap.
 
-ent-SlicedBucketBase-name = нарезанное ведро
-ent-SlicedBucketBase-desc = Ведро со смотровой щелью, прорезанной сбоку.
+ent-SlicedBucketBase-name = sliced bucket
+ent-SlicedBucketBase-desc = A bucket with a vision slit cut into the side.
 
-ent-SteelBucketBase-name = стальное ведро
-ent-SteelBucketBase-desc = Ведро, к которому снаружи приварена сталь. Прежде чем его можно будет носить с комфортом, требуется лучшая форма.
+ent-SteelBucketBase-name = steel bucket
+ent-SteelBucketBase-desc = A bucket that's had steel welded onto it's exterior. It requires better shaping before it can be worn comfortably.
 
-ent-ClothingHeadHelmetScrap-name = металлолом шлем
-ent-ClothingHeadHelmetScrap-desc = Слепленный шлем из тросов, стали и ведра.
+ent-ClothingHeadHelmetScrap-name = scrap helmet
+ent-ClothingHeadHelmetScrap-desc = A cobbled-together helmet made from cabling, steel, and a bucket.
 

@@ -107,9 +107,6 @@ public abstract class SharedNightVisionSystem : EntitySystem
         if (ent.Comp.SlotFlags != args.SlotFlags)
             return;
 
-        if (!ent.Comp.EnableOnEquip)
-            return;
-
         EnableNightVisionItem(ent, args.Equipee);
     }
 
@@ -267,7 +264,7 @@ public abstract class SharedNightVisionSystem : EntitySystem
         _audio.PlayLocal(item.Comp.SoundOn, item.Owner, user);
     }
 
-    public void EnableNightVisionItem(Entity<NightVisionItemComponent> item, EntityUid user)
+    private void EnableNightVisionItem(Entity<NightVisionItemComponent> item, EntityUid user)
     {
         DisableNightVisionItem(item, item.Comp.User);
 

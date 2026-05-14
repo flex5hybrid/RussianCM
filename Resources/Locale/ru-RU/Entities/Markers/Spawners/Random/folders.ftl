@@ -1,2 +1,2 @@
-ent-FolderSpawner-name = Создатель случайных папок
+ent-FolderSpawner-name = Random Folder Spawner
 

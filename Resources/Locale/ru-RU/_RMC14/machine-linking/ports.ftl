@@ -1,1 +1,1 @@
-port-sentry-control = Сторожевой контроль
+port-sentry-control = Sentry Control

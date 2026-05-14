@@ -1,134 +1,134 @@
-ent-FoodCakeSliceBase-name = элемент
-ent-FoodCakeSliceBase-desc = Всего лишь кусочек торта, его хватит всем.
+ent-FoodCakeSliceBase-name = item
+ent-FoodCakeSliceBase-desc = Just a slice of cake, it is enough for everyone.
 
-ent-FoodCakeBlueberry-name = черничный торт
-ent-FoodCakeBlueberry-desc = Красит зубы.
+ent-FoodCakeBlueberry-name = blueberry cake
+ent-FoodCakeBlueberry-desc = Stains your teeth.
 
-ent-FoodCakeBlueberrySlice-name = кусочек черники
-ent-FoodCakeBlueberrySlice-desc = Красит зубы.
+ent-FoodCakeBlueberrySlice-name = blueberry slice
+ent-FoodCakeBlueberrySlice-desc = Stains your teeth.
 
-ent-FoodCakePlain-name = торт
-ent-FoodCakePlain-desc = Обычный торт, а не ложь.
+ent-FoodCakePlain-name = cake
+ent-FoodCakePlain-desc = A plain cake, not a lie.
 
-ent-FoodCakePlainSlice-name = кусок торта
-ent-FoodCakePlainSlice-desc = Всего лишь кусочек торта, его хватит всем.
+ent-FoodCakePlainSlice-name = slice of cake
+ent-FoodCakePlainSlice-desc = Just a slice of cake, it is enough for everyone.
 
-ent-FoodCakeCarrot-name = морковный пирог
-ent-FoodCakeCarrot-desc = Любимая пустыня одного болвана-ваббита.
+ent-FoodCakeCarrot-name = carrot cake
+ent-FoodCakeCarrot-desc = A favorite desert of a certain wascally wabbit.
 
-ent-FoodCakeCarrotSlice-name = кусочек морковного пирога
-ent-FoodCakeCarrotSlice-desc = Морковный кусочек морковного пирога. Морковь полезна для глаз!
+ent-FoodCakeCarrotSlice-name = slice of carrot cake
+ent-FoodCakeCarrotSlice-desc = Carrotty slice of carrot cake. Carrots are good for your eyes!
 
-ent-FoodCakeBrain-name = мозговой торт
-ent-FoodCakeBrain-desc = Мягкая штука для торта.
+ent-FoodCakeBrain-name = brain cake
+ent-FoodCakeBrain-desc = A squishy cake-thing.
 
-ent-FoodCakeBrainSlice-name = кусок пирога с мозгами
-ent-FoodCakeBrainSlice-desc = Позвольте мне рассказать вам кое-что о прионах. ОНИ ВКУСНЫЕ.
+ent-FoodCakeBrainSlice-name = slice of brain cake
+ent-FoodCakeBrainSlice-desc = Lemme tell you something about prions. THEY'RE DELICIOUS.
 
-ent-FoodCakeCheese-name = чизкейк
-ent-FoodCakeCheese-desc = ОПАСНО дрянной.
+ent-FoodCakeCheese-name = cheese cake
+ent-FoodCakeCheese-desc = DANGEROUSLY cheesy.
 
-ent-FoodCakeCheeseSlice-name = кусочек чизкейка
-ent-FoodCakeCheeseSlice-desc = Кусочек чистого веселья.
+ent-FoodCakeCheeseSlice-name = slice of cheese cake
+ent-FoodCakeCheeseSlice-desc = Slice of pure cheestisfaction.
 
-ent-FoodCakeOrange-name = апельсиновый торт
-ent-FoodCakeOrange-desc = Торт с добавлением апельсина.
+ent-FoodCakeOrange-name = orange cake
+ent-FoodCakeOrange-desc = A cake with added orange.
 
-ent-FoodCakeOrangeSlice-name = кусочек апельсинового пирога
-ent-FoodCakeOrangeSlice-desc = Всего лишь кусочек торта, его хватит всем.
+ent-FoodCakeOrangeSlice-name = slice of orange cake
+ent-FoodCakeOrangeSlice-desc = Just a slice of cake, it is enough for everyone.
 
-ent-FoodCakeLime-name = лаймовый пирог
-ent-FoodCakeLime-desc = Торт с добавлением лайма.
+ent-FoodCakeLime-name = lime cake
+ent-FoodCakeLime-desc = A cake with added lime.
 
-ent-FoodCakeLimeSlice-name = кусочек лаймового пирога
-ent-FoodCakeLimeSlice-desc = Всего лишь кусочек торта, его хватит всем.
+ent-FoodCakeLimeSlice-name = slice of lime cake
+ent-FoodCakeLimeSlice-desc = Just a slice of cake, it is enough for everyone.
 
-ent-FoodCakeLemon-name = лимонный пирог
-ent-FoodCakeLemon-desc = Торт с добавлением лимона.
+ent-FoodCakeLemon-name = lemon cake
+ent-FoodCakeLemon-desc = A cake with added lemon.
 
-ent-FoodCakeLemonSlice-name = кусочек лимонного пирога
-ent-FoodCakeLemonSlice-desc = Всего лишь кусочек торта, его хватит всем.
+ent-FoodCakeLemonSlice-name = slice of lemon cake
+ent-FoodCakeLemonSlice-desc = Just a slice of cake, it is enough for everyone.
 
-ent-FoodCakeLemoon-name = лимонный торт
-ent-FoodCakeLemoon-desc = Торт, изображающий луну земли.
+ent-FoodCakeLemoon-name = lemoon cake
+ent-FoodCakeLemoon-desc = A cake that represents the moon of earth.
 
-ent-FoodCakeLemoonSlice-name = осколок лимонного пирога
-ent-FoodCakeLemoonSlice-desc = Осколок луны, пахнет молоком.
+ent-FoodCakeLemoonSlice-name = shard of lemoon cake
+ent-FoodCakeLemoonSlice-desc = A shard of moon, has the smell of milk.
 
-ent-FoodCakeChocolate-name = шоколадный торт
-ent-FoodCakeChocolate-desc = Торт с добавлением шоколада.
+ent-FoodCakeChocolate-name = chocolate cake
+ent-FoodCakeChocolate-desc = A cake with added chocolate.
 
-ent-FoodCakeChocolateSlice-name = кусочек шоколадного торта
-ent-FoodCakeChocolateSlice-desc = Всего лишь кусочек торта, его хватит всем.
+ent-FoodCakeChocolateSlice-name = slice of chocolate cake
+ent-FoodCakeChocolateSlice-desc = Just a slice of cake, it is enough for everyone.
 
-ent-FoodCakeApple-name = яблочный пирог
-ent-FoodCakeApple-desc = Торт с яблоком в центре.
+ent-FoodCakeApple-name = apple cake
+ent-FoodCakeApple-desc = A cake centred with apple.
 
-ent-FoodCakeAppleSlice-name = кусочек яблочного пирога
-ent-FoodCakeAppleSlice-desc = Кусочек райского торта.
+ent-FoodCakeAppleSlice-name = slice of apple cake
+ent-FoodCakeAppleSlice-desc = A slice of heavenly cake.
 
-ent-FoodCakeSlime-name = слизь торт
-ent-FoodCakeSlime-desc = Торт из слаймов. Наверное, не электрифицирован.
+ent-FoodCakeSlime-name = slime cake
+ent-FoodCakeSlime-desc = A cake made of slimes. Probably not electrified.
 
-ent-FoodCakeSlimeSlice-name = кусочек торта-слизняка
-ent-FoodCakeSlimeSlice-desc = Кусочек торта-слизи.
+ent-FoodCakeSlimeSlice-name = slice of slime cake
+ent-FoodCakeSlimeSlice-desc = A slice of slime cake.
 
-ent-FoodCakePumpkin-name = тыквенно-пряный пирог
-ent-FoodCakePumpkin-desc = Полый торт с настоящей тыквой.
+ent-FoodCakePumpkin-name = pumpkin-spice cake
+ent-FoodCakePumpkin-desc = A hollow cake with real pumpkin.
 
-ent-FoodCakePumpkinSlice-name = кусочек тыквенно-пряного пирога
-ent-FoodCakePumpkinSlice-desc = Пикантный кусочек тыквенного вкуса.
+ent-FoodCakePumpkinSlice-name = slice of pumpkin-spice cake
+ent-FoodCakePumpkinSlice-desc = A spicy slice of pumpkin goodness.
 
-ent-FoodCakeChristmas-name = рождественский торт
-ent-FoodCakeChristmas-desc = Торт из Рождества.
+ent-FoodCakeChristmas-name = christmas cake
+ent-FoodCakeChristmas-desc = A cake made of christmas.
 
-ent-FoodCakeChristmasSlice-name = кусок рождественского торта
-ent-FoodCakeChristmasSlice-desc = Всего лишь кусочек торта, его хватит всем.
+ent-FoodCakeChristmasSlice-name = slice of christmas cake
+ent-FoodCakeChristmasSlice-desc = Just a slice of cake, it is enough for everyone.
 
-ent-FoodCakeBirthday-name = праздничный торт
-ent-FoodCakeBirthday-desc = С днем рождения, маленький клоун...
+ent-FoodCakeBirthday-name = birthday cake
+ent-FoodCakeBirthday-desc = Happy Birthday little clown...
 
-ent-FoodCakeBirthdaySlice-name = кусок праздничного торта
-ent-FoodCakeBirthdaySlice-desc = Кусочек твоего дня рождения.
+ent-FoodCakeBirthdaySlice-name = slice of birthday cake
+ent-FoodCakeBirthdaySlice-desc = A slice of your birthday.
 
-ent-FoodCakeVanilla-name = ванильный торт
-ent-FoodCakeVanilla-desc = Ванильный торт с глазурью.
+ent-FoodCakeVanilla-name = vanilla cake
+ent-FoodCakeVanilla-desc = A vanilla frosted cake.
 
-ent-FoodCakeVanillaSlice-name = кусочек ванильного торта
-ent-FoodCakeVanillaSlice-desc = Кусочек ванильного торта.
+ent-FoodCakeVanillaSlice-name = slice of vanilla cake
+ent-FoodCakeVanillaSlice-desc = A slice of vanilla frosted cake.
 
-ent-FoodCakeClown-name = клоунский торт
-ent-FoodCakeClown-desc = Забавный торт с лицом клоуна.
+ent-FoodCakeClown-name = clown cake
+ent-FoodCakeClown-desc = A funny cake with a clown face on it.
 
-ent-FoodCakeClownSlice-name = кусок клоунского торта
-ent-FoodCakeClownSlice-desc = Кусочек плохих шуток и глупого реквизита.
+ent-FoodCakeClownSlice-name = slice of clown cake
+ent-FoodCakeClownSlice-desc = A slice of bad jokes, and silly props.
 
-ent-FoodCakeSpaceman-name = торт космонавта
-ent-FoodCakeSpaceman-desc = Матовый торт «Труба космонавта».
+ent-FoodCakeSpaceman-name = spaceman's cake
+ent-FoodCakeSpaceman-desc = A spaceman's trumpet frosted cake.
 
-ent-FoodCakeSpacemanSlice-name = кусок торта космонавта
-ent-FoodCakeSpacemanSlice-desc = Матовый торт «Труба космонавта».
+ent-FoodCakeSpacemanSlice-name = slice of spaceman's cake
+ent-FoodCakeSpacemanSlice-desc = A spaceman's trumpet frosted cake.
 
-ent-MobCatCake-name = как
-ent-MobCatCake-desc = Это торт. Это кот. Это торт.
+ent-MobCatCake-name = cak
+ent-MobCatCake-desc = It's a cake. It's a cat. It's a cak.
 
-ent-FoodCakeSuppermatter-name = сверхматерия
-ent-FoodCakeSuppermatter-desc = Чрезвычайно плотная и мощная еда.
+ent-FoodCakeSuppermatter-name = suppermatter
+ent-FoodCakeSuppermatter-desc = Extremely dense and powerful food.
 
-ent-FoodCakeSuppermatterSlice-name = осколок сверхматерии
-ent-FoodCakeSuppermatterSlice-desc = Одна порция власти.
+ent-FoodCakeSuppermatterSlice-name = suppermatter shard
+ent-FoodCakeSuppermatterSlice-desc = A single portion of power.
 
-ent-FoodCakeCotton-name = хлопковый пирог
-ent-FoodCakeCotton-desc = Торт с волокнистой глазурью и ватным тампоном сверху.
+ent-FoodCakeCotton-name = cotton cake
+ent-FoodCakeCotton-desc = A cake with a fiber frosting and a wad of cotton on top.
 
-ent-FoodCakeCottonSlice-name = кусок хлопкового пирога
-ent-FoodCakeCottonSlice-desc = Кусочек хлопкового пирога. Вы можете просто лизнуть глазурь, это нормально.
+ent-FoodCakeCottonSlice-name = slice of cotton cake
+ent-FoodCakeCottonSlice-desc = A slice of cotton cake. You can just lick the frosting, it's fine.
 
-ent-FoodCakeBerryDelight-name = ягодное наслаждение
-ent-FoodCakeBerryDelight-desc = Это торт, который приближается.
+ent-FoodCakeBerryDelight-name = berry delight
+ent-FoodCakeBerryDelight-desc = This is a cake that is approaching.
 
-ent-FoodCakeBerryDelightSlice-name = кусочек ягодного наслаждения
-ent-FoodCakeBerryDelightSlice-desc = Положите вилку, ваш голод в изоляции.
+ent-FoodCakeBerryDelightSlice-name = berry delight slice
+ent-FoodCakeBerryDelightSlice-desc = Put a fork in, your hunger in isolation.
 
-ent-FoodCakeBase-name = элемент
+ent-FoodCakeBase-name = item
 

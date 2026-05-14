@@ -1,12 +1,12 @@
-ent-SpawnMobAdultSlimesBlue-name = Спаунер слаймов синий
+ent-SpawnMobAdultSlimesBlue-name = Slimes Spawner Blue
 
-ent-SpawnMobAdultSlimesBlueAngry-name = Создатель слаймов Синий Злой
+ent-SpawnMobAdultSlimesBlueAngry-name = Slimes Spawner Blue Angry
 
-ent-SpawnMobAdultSlimesGreen-name = Зеленый спаунер слаймов
+ent-SpawnMobAdultSlimesGreen-name = Slimes Spawner Green
 
-ent-SpawnMobAdultSlimesGreenAngry-name = Создатель слаймов Зеленый Злой
+ent-SpawnMobAdultSlimesGreenAngry-name = Slimes Spawner Green Angry
 
-ent-SpawnMobAdultSlimesYellow-name = Производитель слаймов Желтый
+ent-SpawnMobAdultSlimesYellow-name = Slimes Spawner Yellow
 
-ent-SpawnMobAdultSlimesYellowAngry-name = Создатель слаймов Желтый Злой
+ent-SpawnMobAdultSlimesYellowAngry-name = Slimes Spawner Yellow Angry
 

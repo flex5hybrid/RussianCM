@@ -1,4 +1,4 @@
-ent-DecalSpawnerBloodSplatters-name = Создатель декалей
+ent-DecalSpawnerBloodSplatters-name = Decal Spawner
 
-ent-DecalSpawnerGraffiti-name = Создатель декалей
+ent-DecalSpawnerGraffiti-name = Decal Spawner
 

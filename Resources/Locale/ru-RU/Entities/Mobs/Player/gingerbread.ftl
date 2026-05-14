@@ -1,4 +1,4 @@
-ent-MobGingerbread-name = Урист МакКуки
+ent-MobGingerbread-name = Urist McCookie
 
-ent-MobGingerbreadAI-name = пряничный человечек
+ent-MobGingerbreadAI-name = gingerbread man
 

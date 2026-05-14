@@ -1,71 +1,71 @@
-ent-BaseFoodCondimentPacket-name = пакет приправ
-ent-BaseFoodCondimentPacket-desc = Небольшая пластиковая упаковка с приправами, которую можно добавлять в еду.
+ent-BaseFoodCondimentPacket-name = condiment packet
+ent-BaseFoodCondimentPacket-desc = A small plastic pack with condiments to put on your food.
 
-ent-FoodCondimentPacketAstrotame-name = Астротам
-ent-FoodCondimentPacketAstrotame-desc = Сладость тысячи сахаров, но нет калорий.
+ent-FoodCondimentPacketAstrotame-name = Astrotame
+ent-FoodCondimentPacketAstrotame-desc = The sweetness of a thousand sugars but none of the calories.
 
-ent-FoodCondimentPacketBbq-name = соус барбекю
-ent-FoodCondimentPacketBbq-desc = Салфетки для рук в комплект не входят.
+ent-FoodCondimentPacketBbq-name = BBQ sauce
+ent-FoodCondimentPacketBbq-desc = Hand wipes not included.
 
-ent-FoodCondimentPacketCornoil-name = кукурузное масло
-ent-FoodCondimentPacketCornoil-desc = Кукурузное масло. Вкусное масло, используемое в кулинарии. Изготовлен из кукурузы.
+ent-FoodCondimentPacketCornoil-name = corn oil
+ent-FoodCondimentPacketCornoil-desc = Corn oil. A delicious oil used in cooking. Made from corn.
 
-ent-FoodCondimentPacketColdsauce-name = холодный соус
-ent-FoodCondimentPacketColdsauce-desc = Колдсоус. Язык немеет при прохождении.
+ent-FoodCondimentPacketColdsauce-name = coldsauce
+ent-FoodCondimentPacketColdsauce-desc = Coldsauce. Leaves the tongue numb in its passage.
 
-ent-FoodCondimentPacketHorseradish-name = соус из хрена
-ent-FoodCondimentPacketHorseradish-desc = Пакетик вонючего соуса из хрена.
+ent-FoodCondimentPacketHorseradish-name = horseradish sauce
+ent-FoodCondimentPacketHorseradish-desc = A packet of smelly horseradish sauce.
 
-ent-FoodCondimentPacketHotsauce-name = острый соус
-ent-FoodCondimentPacketHotsauce-desc = Теперь вы почти можете ПОПРОБОВАТЬ вкус язвы желудка!
+ent-FoodCondimentPacketHotsauce-name = hotsauce
+ent-FoodCondimentPacketHotsauce-desc = You can almost TASTE the stomach ulcers now!
 
-ent-FoodCondimentPacketKetchup-name = кетчуп
-ent-FoodCondimentPacketKetchup-desc = Ты уже чувствуешь себя более американцем.
+ent-FoodCondimentPacketKetchup-name = ketchup
+ent-FoodCondimentPacketKetchup-desc = You feel more American already.
 
-ent-FoodCondimentPacketMustard-name = горчица
-ent-FoodCondimentPacketMustard-desc = Приправа, приготовленная из измельченных семян горчицы.
+ent-FoodCondimentPacketMustard-name = mustard
+ent-FoodCondimentPacketMustard-desc = A condiment made from the ground-up seeds of the Mustard plant.
 
-ent-FoodCondimentPacketPepper-name = черный перец
-ent-FoodCondimentPacketPepper-desc = Часто используется для придания вкуса еде или для того, чтобы заставить людей чихать.
+ent-FoodCondimentPacketPepper-name = black pepper
+ent-FoodCondimentPacketPepper-desc = Often used to flavor food or make people sneeze.
 
-ent-FoodCondimentPacketSalt-name = соль
-ent-FoodCondimentPacketSalt-desc = Соль. Вероятно, из космических океанов.
+ent-FoodCondimentPacketSalt-name = salt
+ent-FoodCondimentPacketSalt-desc = Salt. From space oceans, presumably.
 
-ent-FoodCondimentPacketSoy-name = соевый соус
-ent-FoodCondimentPacketSoy-desc = Соленый ароматизатор на основе сои.
+ent-FoodCondimentPacketSoy-name = soy sauce
+ent-FoodCondimentPacketSoy-desc = A salty soy-based flavoring.
 
-ent-FoodCondimentPacketSugar-name = сахар
-ent-FoodCondimentPacketSugar-desc = Вкусный космический сахар!
+ent-FoodCondimentPacketSugar-name = sugar
+ent-FoodCondimentPacketSugar-desc = Tasty spacey sugar!
 
-ent-BaseFoodCondimentBottle-name = бутылка приправы
-ent-BaseFoodCondimentBottle-desc = Тонкая стеклянная бутылка, используемая для хранения приправ.
+ent-BaseFoodCondimentBottle-name = condiment bottle
+ent-BaseFoodCondimentBottle-desc = A thin glass bottle used to store condiments.
 
-ent-FoodCondimentBottleColdsauce-name = бутылка холодного соуса
-ent-FoodCondimentBottleColdsauce-desc = Язык немеет при прохождении.
+ent-FoodCondimentBottleColdsauce-name = coldsauce bottle
+ent-FoodCondimentBottleColdsauce-desc = Leaves the tongue numb in its passage.
 
-ent-FoodCondimentBottleEnzyme-name = универсальный фермент
-ent-FoodCondimentBottleEnzyme-desc = Используется при приготовлении различных блюд.
+ent-FoodCondimentBottleEnzyme-name = universal enzyme
+ent-FoodCondimentBottleEnzyme-desc = Used in cooking various dishes.
 
-ent-FoodCondimentBottleVinegar-name = бутылка уксуса
-ent-FoodCondimentBottleVinegar-desc = Используется в кулинарии для улучшения вкуса.
+ent-FoodCondimentBottleVinegar-name = vinegar bottle
+ent-FoodCondimentBottleVinegar-desc = Used in cooking to enhance flavor.
 
-ent-FoodCondimentBottleHotsauce-name = бутылка горячего соуса
-ent-FoodCondimentBottleHotsauce-desc = Теперь вы почти можете ПОПРОБОВАТЬ вкус язвы желудка!
+ent-FoodCondimentBottleHotsauce-name = hotsauce bottle
+ent-FoodCondimentBottleHotsauce-desc = You can almost TASTE the stomach ulcers now!
 
-ent-FoodCondimentBottleKetchup-name = бутылка кетчупа
-ent-FoodCondimentBottleKetchup-desc = Ты уже чувствуешь себя более американцем.
+ent-FoodCondimentBottleKetchup-name = ketchup bottle
+ent-FoodCondimentBottleKetchup-desc = You feel more American already.
 
-ent-FoodCondimentBottleBBQ-name = Бутылка соуса барбекю
-ent-FoodCondimentBottleBBQ-desc = Салфетки для рук в комплект не входят.
+ent-FoodCondimentBottleBBQ-name = BBQ sauce bottle
+ent-FoodCondimentBottleBBQ-desc = Hand wipes not included.
 
-ent-BaseFoodShaker-name = пустой шейкер
-ent-BaseFoodShaker-desc = Шейкер, используемый для хранения и дозирования специй.
+ent-BaseFoodShaker-name = empty shaker
+ent-BaseFoodShaker-desc = A shaker used to store and dispense spices.
 
-ent-FoodShakerSalt-name = солонка
-ent-FoodShakerSalt-desc = Соль. Вероятно, из космических океанов.
+ent-FoodShakerSalt-name = salt shaker
+ent-FoodShakerSalt-desc = Salt. From space oceans, presumably.
 
-ent-FoodShakerPepper-name = перечница
-ent-FoodShakerPepper-desc = Часто используется для придания вкуса еде или для того, чтобы заставить людей чихать.
+ent-FoodShakerPepper-name = pepper shaker
+ent-FoodShakerPepper-desc = Often used to flavor food or make people sneeze.
 
-ent-BaseFoodCondiment-name = элемент
+ent-BaseFoodCondiment-name = item
 

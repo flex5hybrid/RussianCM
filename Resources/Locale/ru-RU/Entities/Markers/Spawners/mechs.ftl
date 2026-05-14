@@ -1,4 +1,4 @@
-ent-SpawnMechRipley-name = Производитель Рипли APLU
+ent-SpawnMechRipley-name = Ripley APLU Spawner
 
-ent-SpawnMechHonker-name = Х.О.Н.К. Создатель
+ent-SpawnMechHonker-name = H.O.N.K. Spawner
 

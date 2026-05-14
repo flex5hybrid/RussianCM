@@ -1,2 +1,2 @@
-ent-BaseMagazineHeavyRifle-name = магазин (винтовка .20)
+ent-BaseMagazineHeavyRifle-name = magazine (.20 rifle)
 

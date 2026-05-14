@@ -23,9 +23,3 @@ rmc-job-description-unmc-brigadier-general = "Высшее командован�
 rmc-job-name-unmc-adjutant = Адьютант высшего командования
 rmc-job-description-unmc-adjutant = "Вы адьютант высокопоставленного офицера. Должно быть, он очень важен!"
 rmc-job-prefix-unmc-adjutant = АДЪ
-
-# Missing entries synced from en-US
-
-rmc-job-prefix-forecon-marksman = МКСМН
-
-rmc-job-prefix-forecon-support-tech = ППП

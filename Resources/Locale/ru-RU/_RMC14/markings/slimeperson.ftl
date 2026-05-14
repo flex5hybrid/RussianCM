@@ -1,60 +1,60 @@
 # Chest
 
-marking-SlimeBonechest = Плавающая грудная клетка
-marking-SlimeBonechest-bone = Плавающая грудная клетка
+marking-SlimeBonechest = Floating Ribcage
+marking-SlimeBonechest-bone = Floating Ribcage
 
-marking-SlimeCore = Ядро
-marking-SlimeCore-core = Ядро
+marking-SlimeCore = Core
+marking-SlimeCore-core = Core
 
-marking-SlimeLungs = Легкие
-marking-SlimeLungs-lungs = Легкие
+marking-SlimeLungs = Lungs
+marking-SlimeLungs-lungs = Lungs
 
 # Head
 
-marking-SlimeBonehead = Плавающий череп
-marking-SlimeBonehead-bone = Плавающий череп
+marking-SlimeBonehead = Floating Skull
+marking-SlimeBonehead-bone = Floating Skull
 
-marking-SlimeNose = Нос (Профиль)
-marking-SlimeNose-nose = Нос (Профиль)
+marking-SlimeNose = Nose (Profile)
+marking-SlimeNose-nose = Nose (Profile)
 
-marking-SlimeMouth = Рот
-marking-SlimeMouth-mouth = Рот
+marking-SlimeMouth = Mouth
+marking-SlimeMouth-mouth = Mouth
 
-marking-SlimeBrain = Мозг
-marking-SlimeBrain-brain = Мозг
+marking-SlimeBrain = Brain
+marking-SlimeBrain-brain = Brain
 
 # Snout
 
 # Eyes
 
-marking-SlimeEyesDefault = Глаза
-marking-SlimeEyesDefault-eyes = Глаза (по умолчанию)
+marking-SlimeEyesDefault = Eyes
+marking-SlimeEyesDefault-eyes = Eyes (Default)
 
-marking-SlimeEyesDroopy = Зависшие глаза
-marking-SlimeEyesDroopy-droopy = Зависшие глаза
+marking-SlimeEyesDroopy = Droopy Eyes
+marking-SlimeEyesDroopy-droopy = Droopy Eyes
 
-marking-SlimeEyesCyclops = Циклоп Глаз
-marking-SlimeEyesCyclops-cyclops = Циклоп Глаз
+marking-SlimeEyesCyclops = Cyclops Eye
+marking-SlimeEyesCyclops-cyclops = Cyclops Eye
 
 # RArm
 
-marking-SlimeBonearmright = Плавающие кости (правая рука)
-marking-SlimeBonearmright-bone = Плавающие кости (правая рука)
+marking-SlimeBonearmright = Floating Bones (Right Arm)
+marking-SlimeBonearmright-bone = Floating Bones (Right Arm)
 
 # LArm
 
-marking-SlimeBonearmleft = Плавающие кости (левая рука)
-marking-SlimeBonearmleft-bone = Плавающие кости (левая рука)
+marking-SlimeBonearmleft = Floating Bones (Left Arm)
+marking-SlimeBonearmleft-bone = Floating Bones (Left Arm)
 
 # RLeg
 
-marking-SlimeBonelegright = Плавающие кости (правая нога)
-marking-SlimeBonelegright-bone = Плавающие кости (правая нога)
+marking-SlimeBonelegright = Floating Bones (Right Leg)
+marking-SlimeBonelegright-bone = Floating Bones (Right Leg)
 
 # LLeg
 
-marking-SlimeBonelegleft = Плавающие кости (левая нога)
-marking-SlimeBonelegleft-bone = Плавающие кости (левая нога)
+marking-SlimeBonelegleft = Floating Bones (Left Leg)
+marking-SlimeBonelegleft-bone = Floating Bones (Left Leg)
 
 # UndergarmentBottom
 
@@ -62,23 +62,23 @@ marking-SlimeBonelegleft-bone = Плавающие кости (левая ног
 
 # LFoot
 
-marking-SlimeBonefootleft = Плавающие кости (левая нога)
-marking-SlimeBonefootleft-bone = Плавающие кости (левая нога)
+marking-SlimeBonefootleft = Floating Bones (Left Foot)
+marking-SlimeBonefootleft-bone = Floating Bones (Left Foot)
 
 # RFoot
 
-marking-SlimeBonefootright = Плавающие кости (правая нога)
-marking-SlimeBonefootright-bone = Плавающие кости (правая нога)
+marking-SlimeBonefootright = Floating Bones (Right Foot)
+marking-SlimeBonefootright-bone = Floating Bones (Right Foot)
 
 # LHand
 
-marking-SlimeBonehandleft = Плавающие кости (левая рука)
-marking-SlimeBonehandleft-bone = Плавающие кости (левая рука)
+marking-SlimeBonehandleft = Floating Bones (Left Hand)
+marking-SlimeBonehandleft-bone = Floating Bones (Left Hand)
 
 # RHand
 
-marking-SlimeBonehandright = Плавающие кости (Правая рука)
-marking-SlimeBonehandright-bone = Плавающие кости (Правая рука)
+marking-SlimeBonehandright = Floating Bones (Right Hand)
+marking-SlimeBonehandright-bone = Floating Bones (Right Hand)
 
 # FacialHair
 

@@ -123,10 +123,8 @@ public abstract class SharedSynthSystem : EntitySystem
         }
 
         if (TryComp<MobThresholdsComponent>(ent.Owner, out var thresholds))
-        {
             _mobThreshold.SetMobStateThreshold(ent.Owner, ent.Comp.CritThreshold, MobState.Critical, thresholds);
-            _mobThreshold.SetMobStateThreshold(ent.Owner, ent.Comp.DeadThreshold, MobState.Dead, thresholds);
-        }
+
         if (TryComp<RMCHealthIconsComponent>(ent.Owner, out var healthIcons))
         {
             if (ent.Comp.UseHumanHealthIcons)

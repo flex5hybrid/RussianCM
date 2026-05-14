@@ -1,23 +1,23 @@
-ent-ToolboxEmergency-name = аварийный ящик для инструментов
-ent-ToolboxEmergency-desc = Ярко-красный ящик для инструментов, наполненный аварийными инструментами.
+ent-ToolboxEmergency-name = emergency toolbox
+ent-ToolboxEmergency-desc = A bright red toolbox, stocked with emergency tools.
 
-ent-ToolboxMechanical-name = механический ящик для инструментов
-ent-ToolboxMechanical-desc = Синяя коробка, наполненная механическими инструментами.
+ent-ToolboxMechanical-name = mechanical toolbox
+ent-ToolboxMechanical-desc = A blue box, stocked with mechanical tools.
 
-ent-ToolboxElectrical-name = электрический ящик для инструментов
-ent-ToolboxElectrical-desc = Ящик для инструментов обычно снабжен электрооборудованием.
+ent-ToolboxElectrical-name = electrical toolbox
+ent-ToolboxElectrical-desc = A toolbox typically stocked with electrical gear.
 
-ent-ToolboxElectricalTurret-name = электрический ящик для инструментов
-ent-ToolboxElectricalTurret-desc = Ящик для инструментов обычно снабжен электрооборудованием.
+ent-ToolboxElectricalTurret-name = electrical toolbox
+ent-ToolboxElectricalTurret-desc = A toolbox typically stocked with electrical gear.
 
-ent-ToolboxArtistic-name = художественный ящик для инструментов
-ent-ToolboxArtistic-desc = Ящик для инструментов обычно наполнен художественными принадлежностями.
+ent-ToolboxArtistic-name = artistic toolbox
+ent-ToolboxArtistic-desc = A toolbox typically stocked with artistic supplies.
 
-ent-ToolboxSyndicate-name = подозрительный ящик для инструментов
-ent-ToolboxSyndicate-desc = Зловещий на вид ящик с инструментами элитного синдиката.
+ent-ToolboxSyndicate-name = suspicious toolbox
+ent-ToolboxSyndicate-desc = A sinister looking toolbox filled with elite syndicate tools.
 
-ent-ToolboxGolden-name = золотой ящик для инструментов
-ent-ToolboxGolden-desc = Ящик для инструментов из цельного золота. Рэпер убил бы за это.
+ent-ToolboxGolden-name = golden toolbox
+ent-ToolboxGolden-desc = A solid gold toolbox. A rapper would kill for this.
 
-ent-ToolboxBase-name = предмет хранения
+ent-ToolboxBase-name = storage item
 

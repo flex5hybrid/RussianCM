@@ -1,3 +1,3 @@
-ent-DiskCase-name = футляр для диска
-ent-DiskCase-desc = Чехол для хранения диска с координатами.
+ent-DiskCase-name = diskcase
+ent-DiskCase-desc = Case for storing a coordinates disk.
 

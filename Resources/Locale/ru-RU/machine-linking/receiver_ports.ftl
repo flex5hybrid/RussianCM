@@ -89,13 +89,3 @@ signal-port-description-logic-enable = Входной сигнал загруж�
 
 signal-port-name-logic-random-input = Входной сигнал
 signal-port-description-logic-random-input = Получает любой сигнал для события случайного вывода.
-
-# Missing entries synced from en-US
-
-signal-port-name-trigger = Триггер
-
-signal-port-description-trigger = Запускает какой-либо механизм на устройстве.
-
-signal-port-name-timer = Таймер
-
-signal-port-description-timer = Запускает обратный отсчет таймера устройства.

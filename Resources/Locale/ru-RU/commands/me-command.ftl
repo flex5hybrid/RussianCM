@@ -1,2 +1,2 @@
-cmd-me-desc = Выполнить действие.
-cmd-me-help = Использование: я <text>
+cmd-me-desc = Perform an action.
+cmd-me-help = Usage: me <text>

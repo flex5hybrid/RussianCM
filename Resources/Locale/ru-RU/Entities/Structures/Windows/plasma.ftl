@@ -1,7 +1,7 @@
-ent-PlasmaWindow-name = плазменное окно
+ent-PlasmaWindow-name = plasma window
 
-ent-PlasmaWindowDirectional-name = направленное плазменное окно
-ent-PlasmaWindowDirectional-desc = Не испачкай там стекло.
+ent-PlasmaWindowDirectional-name = directional plasma window
+ent-PlasmaWindowDirectional-desc = Don't smudge up the glass down there.
 
 ent-PlasmaWindowDiagonal-name = construction-recipe-plasma-window-diagonal
 

@@ -1,3 +1,3 @@
-ent-ActionToggleInternals-name = Переключить внутреннее устройство
-ent-ActionToggleInternals-desc = Дышите из оборудованного бензобака. Также требуется наличие дыхательной маски.
+ent-ActionToggleInternals-name = Toggle Internals
+ent-ActionToggleInternals-desc = Breathe from the equipped gas tank. Also requires equipped breath mask.
 

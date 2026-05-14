@@ -1,3 +1,3 @@
-ent-SeedExtractor-name = экстрактор семян
-ent-SeedExtractor-desc = Извлекает семена из продуктов.
+ent-SeedExtractor-name = seed extractor
+ent-SeedExtractor-desc = Extracts seeds from produce.
 

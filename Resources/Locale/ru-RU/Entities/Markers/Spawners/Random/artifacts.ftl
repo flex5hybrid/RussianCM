@@ -1,4 +1,4 @@
-ent-RandomArtifactSpawner-name = генератор случайных артефактов
+ent-RandomArtifactSpawner-name = random artifact spawner
 
-ent-RandomArtifactSpawner20-name = генератор случайных артефактов [20]
+ent-RandomArtifactSpawner20-name = random artifact spawner [20]
 

@@ -1,21 +1,21 @@
-ent-AdminObserver-name = администратор-наблюдатель
-ent-AdminObserver-desc = Бу!
+ent-AdminObserver-name = admin observer
+ent-AdminObserver-desc = Boo!
 
-ent-ActionAGhostShowSolar-name = Интерфейс управления солнечной энергией
-ent-ActionAGhostShowSolar-desc = Просмотрите интерфейс управления солнечной энергией.
+ent-ActionAGhostShowSolar-name = Solar Control Interface
+ent-ActionAGhostShowSolar-desc = View a Solar Control Interface.
 
-ent-ActionAGhostShowCommunications-name = Коммуникационный интерфейс
-ent-ActionAGhostShowCommunications-desc = Просмотрите коммуникационный интерфейс.
+ent-ActionAGhostShowCommunications-name = Communications Interface
+ent-ActionAGhostShowCommunications-desc = View a Communications Interface.
 
-ent-ActionAGhostShowRadar-name = Интерфейс массового сканера
-ent-ActionAGhostShowRadar-desc = Просмотрите интерфейс массового сканера.
+ent-ActionAGhostShowRadar-name = Mass Scanner Interface
+ent-ActionAGhostShowRadar-desc = View a Mass Scanner Interface.
 
-ent-ActionAGhostShowCargo-name = Интерфейс заказа грузов
-ent-ActionAGhostShowCargo-desc = Просмотрите интерфейс заказа грузов.
+ent-ActionAGhostShowCargo-name = Cargo Ordering Interface
+ent-ActionAGhostShowCargo-desc = View a Cargo Ordering Interface.
 
-ent-ActionAGhostShowCrewMonitoring-name = Интерфейс мониторинга экипажа
-ent-ActionAGhostShowCrewMonitoring-desc = Просмотрите интерфейс мониторинга экипажа.
+ent-ActionAGhostShowCrewMonitoring-name = Crew Monitoring Interface
+ent-ActionAGhostShowCrewMonitoring-desc = View a Crew Monitoring Interface.
 
-ent-ActionAGhostShowStationRecords-name = Интерфейс записей станций
-ent-ActionAGhostShowStationRecords-desc = Просмотрите интерфейс записей станции.
+ent-ActionAGhostShowStationRecords-name = Station Records Interface
+ent-ActionAGhostShowStationRecords-desc = View a Station Records Interface.
 

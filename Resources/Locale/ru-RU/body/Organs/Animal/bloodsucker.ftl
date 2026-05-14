@@ -1,6 +1,6 @@
-ent-OrganBloodsuckerStomach-name = желудок
+ent-OrganBloodsuckerStomach-name = stomach
 
-ent-OrganBloodsuckerLiver-name = печень
+ent-OrganBloodsuckerLiver-name = liver
 
-ent-OrganBloodsuckerHeart-name = сердце
+ent-OrganBloodsuckerHeart-name = heart
 

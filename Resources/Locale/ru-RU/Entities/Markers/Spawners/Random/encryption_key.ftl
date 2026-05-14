@@ -1,2 +1,2 @@
-ent-LootSpawnerEncryptionKey-name = генератор случайных ключей шифрования
+ent-LootSpawnerEncryptionKey-name = random encryption key spawner
 

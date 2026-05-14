@@ -1,6 +1,6 @@
-ent-AirSensor-name = датчик воздуха
-ent-AirSensor-desc = Датчик воздуха. Он чувствует воздух.
+ent-AirSensor-name = air sensor
+ent-AirSensor-desc = Air sensor. It senses air.
 
-ent-AirSensorAssembly-name = датчик воздуха в сборе
-ent-AirSensorAssembly-desc = Датчик воздуха в сборе. Сборка датчиков воздуха?
+ent-AirSensorAssembly-name = air sensor assembly
+ent-AirSensorAssembly-desc = Air sensor assembly. An assembly of air sensors?
 

@@ -1,275 +1,275 @@
-ent-FloorTileItemBase-name = элемент
-ent-FloorTileItemBase-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemBase-name = item
+ent-FloorTileItemBase-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemSteelCheckerDark-name = стальная темная клетчатая плитка
+ent-FloorTileItemSteelCheckerDark-name = steel dark checker tile
 
-ent-FloorTileItemSteelCheckerLight-name = стальная легкая клетчатая плитка
+ent-FloorTileItemSteelCheckerLight-name = steel light checker tile
 
-ent-FloorTileItemDark-name = темная плитка
+ent-FloorTileItemDark-name = dark tile
 
-ent-FloorTileItemDarkDiagonalMini-name = Диагональная мини-плитка темного цвета
+ent-FloorTileItemDarkDiagonalMini-name = dark steel diagonal mini tile
 
-ent-FloorTileItemDarkDiagonal-name = Диагональная плитка темного цвета
+ent-FloorTileItemDarkDiagonal-name = dark steel diagonal tile
 
-ent-FloorTileItemDarkHerringbone-name = елочка из темной стали
+ent-FloorTileItemDarkHerringbone-name = dark steel herringbone
 
-ent-FloorTileItemDarkMini-name = мини-плитка темного цвета
+ent-FloorTileItemDarkMini-name = dark steel mini tile
 
-ent-FloorTileItemDarkMono-name = моноплитка темного цвета
+ent-FloorTileItemDarkMono-name = dark steel mono tile
 
-ent-FloorTileItemDarkPavement-name = темный стальной тротуар
+ent-FloorTileItemDarkPavement-name = dark steel pavement
 
-ent-FloorTileItemDarkPavementVertical-name = Вертикальный тротуар из темной стали
+ent-FloorTileItemDarkPavementVertical-name = dark steel vertical pavement
 
-ent-FloorTileItemDarkOffset-name = офсетная плитка из темной стали
+ent-FloorTileItemDarkOffset-name = offset dark steel tile
 
-ent-FloorTileItemSteel-name = стальная черепица
+ent-FloorTileItemSteel-name = steel tile
 
-ent-FloorTileItemSteelOffset-name = офсетная стальная плитка
+ent-FloorTileItemSteelOffset-name = offset steel tile
 
-ent-FloorTileItemSteelDiagonalMini-name = стальная диагональная мини-плитка
+ent-FloorTileItemSteelDiagonalMini-name = steel diagonal mini tile
 
-ent-FloorTileItemSteelDiagonal-name = стальная диагональная плитка
+ent-FloorTileItemSteelDiagonal-name = steel diagonal tile
 
-ent-FloorTileItemSteelHerringbone-name = стальная елочка
+ent-FloorTileItemSteelHerringbone-name = steel herringbone
 
-ent-FloorTileItemSteelMini-name = стальная мини-плитка
+ent-FloorTileItemSteelMini-name = steel mini tile
 
-ent-FloorTileItemSteelMono-name = стальная моно плитка
+ent-FloorTileItemSteelMono-name = steel mono tile
 
-ent-FloorTileItemSteelPavement-name = стальной тротуар
+ent-FloorTileItemSteelPavement-name = steel pavement
 
-ent-FloorTileItemSteelPavementVertical-name = стальной вертикальный тротуар
+ent-FloorTileItemSteelPavementVertical-name = steel vertical pavement
 
-ent-FloorTileItemWhite-name = белая плитка
+ent-FloorTileItemWhite-name = white tile
 
-ent-FloorTileItemWhiteOffset-name = офсетная белая стальная плитка
+ent-FloorTileItemWhiteOffset-name = offset white steel tile
 
-ent-FloorTileItemWhiteDiagonalMini-name = Диагональная мини-плитка из белой стали
+ent-FloorTileItemWhiteDiagonalMini-name = white steel diagonal mini tile
 
-ent-FloorTileItemWhiteDiagonal-name = Диагональная плитка из белой стали
+ent-FloorTileItemWhiteDiagonal-name = white steel diagonal tile
 
-ent-FloorTileItemWhiteHerringbone-name = белая стальная елочка
+ent-FloorTileItemWhiteHerringbone-name = white steel herringbone
 
-ent-FloorTileItemWhiteMini-name = белая стальная мини-плитка
+ent-FloorTileItemWhiteMini-name = white steel mini tile
 
-ent-FloorTileItemWhiteMono-name = моноплитка из белой стали
+ent-FloorTileItemWhiteMono-name = white steel mono tile
 
-ent-FloorTileItemWhitePavement-name = Белый стальной тротуар
+ent-FloorTileItemWhitePavement-name = white steel pavement
 
-ent-FloorTileItemWhitePavementVertical-name = Вертикальный тротуар из белой стали
+ent-FloorTileItemWhitePavementVertical-name = white steel vertical pavement
 
-ent-FloorTileItemMetalDiamond-name = стальная черепица
-ent-FloorTileItemMetalDiamond-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemMetalDiamond-name = steel tile
+ent-FloorTileItemMetalDiamond-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemWood-name = деревянный пол
+ent-FloorTileItemWood-name = wood floor
 
-ent-FloorTileItemTechmaint-name = пол техобслуживания
+ent-FloorTileItemTechmaint-name = techmaint floor
 
-ent-FloorTileItemTechmaintDark-name = темный пол
+ent-FloorTileItemTechmaintDark-name = dark techmaint floor
 
-ent-FloorTileItemMono-name = моно плитка
-ent-FloorTileItemMono-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemMono-name = mono tile
+ent-FloorTileItemMono-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemLino-name = линолеум пол
-ent-FloorTileItemLino-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemLino-name = linoleum floor
+ent-FloorTileItemLino-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemBrassFilled-name = заполненная латунная пластина
-ent-FloorTileItemBrassFilled-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemBrassFilled-name = filled brass plate
+ent-FloorTileItemBrassFilled-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemBrassReebe-name = гладкая латунная пластина
-ent-FloorTileItemBrassReebe-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemBrassReebe-name = smooth brass plate
+ent-FloorTileItemBrassReebe-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemDirty-name = грязная плитка
-ent-FloorTileItemDirty-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemDirty-name = dirty tile
+ent-FloorTileItemDirty-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemElevatorShaft-name = плитка шахты лифта
-ent-FloorTileItemElevatorShaft-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemElevatorShaft-name = elevator shaft tile
+ent-FloorTileItemElevatorShaft-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemRockVault-name = плитка каменного свода
-ent-FloorTileItemRockVault-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemRockVault-name = rock vault tile
+ent-FloorTileItemRockVault-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemBlue-name = синяя плитка
-ent-FloorTileItemBlue-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemBlue-name = blue tile
+ent-FloorTileItemBlue-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemLime-name = известковая плитка
-ent-FloorTileItemLime-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemLime-name = lime tile
+ent-FloorTileItemLime-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemMining-name = плитка для добычи полезных ископаемых
-ent-FloorTileItemMining-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemMining-name = mining tile
+ent-FloorTileItemMining-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemMiningDark-name = темная шахтерская плитка
-ent-FloorTileItemMiningDark-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemMiningDark-name = dark mining tile
+ent-FloorTileItemMiningDark-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemMiningLight-name = легкая горнодобывающая плитка
-ent-FloorTileItemMiningLight-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemMiningLight-name = light mining tile
+ent-FloorTileItemMiningLight-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemFreezer-name = морозильная плитка
-ent-FloorTileItemFreezer-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemFreezer-name = freezer tile
+ent-FloorTileItemFreezer-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemShowroom-name = плитка для выставочного зала
-ent-FloorTileItemShowroom-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemShowroom-name = showroom tile
+ent-FloorTileItemShowroom-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemHydro-name = гидроплитка
-ent-FloorTileItemHydro-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemHydro-name = hydro tile
+ent-FloorTileItemHydro-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemBar-name = барная плитка
-ent-FloorTileItemBar-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemBar-name = bar tile
+ent-FloorTileItemBar-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemClown-name = клоунская плитка
-ent-FloorTileItemClown-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemClown-name = clown tile
+ent-FloorTileItemClown-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemMime-name = мимическая плитка
-ent-FloorTileItemMime-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemMime-name = mime tile
+ent-FloorTileItemMime-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemKitchen-name = кухонная плитка
-ent-FloorTileItemKitchen-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemKitchen-name = kitchen tile
+ent-FloorTileItemKitchen-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemLaundry-name = плитка для стирки
-ent-FloorTileItemLaundry-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemLaundry-name = laundry tile
+ent-FloorTileItemLaundry-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemConcrete-name = бетонная плитка
+ent-FloorTileItemConcrete-name = concrete tile
 
-ent-FloorTileItemConcreteMono-name = бетонная моноплитка
+ent-FloorTileItemConcreteMono-name = concrete mono tile
 
-ent-FloorTileItemConcreteSmooth-name = бетон гладкий
+ent-FloorTileItemConcreteSmooth-name = concrete smooth
 
-ent-FloorTileItemGrayConcrete-name = серая бетонная плитка
+ent-FloorTileItemGrayConcrete-name = gray concrete tile
 
-ent-FloorTileItemGrayConcreteMono-name = серая бетонная моноплитка
+ent-FloorTileItemGrayConcreteMono-name = gray concrete mono tile
 
-ent-FloorTileItemGrayConcreteSmooth-name = серый бетон гладкий
+ent-FloorTileItemGrayConcreteSmooth-name = gray concrete smooth
 
-ent-FloorTileItemOldConcrete-name = старая бетонная плитка
+ent-FloorTileItemOldConcrete-name = old concrete tile
 
-ent-FloorTileItemOldConcreteMono-name = старая бетонная моноплитка
+ent-FloorTileItemOldConcreteMono-name = old concrete mono tile
 
-ent-FloorTileItemOldConcreteSmooth-name = старый бетон гладкий
+ent-FloorTileItemOldConcreteSmooth-name = old concrete smooth
 
-ent-FloorTileItemArcadeBlue-name = синий аркадный пол
-ent-FloorTileItemArcadeBlue-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemArcadeBlue-name = blue arcade floor
+ent-FloorTileItemArcadeBlue-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemArcadeBlue2-name = синий аркадный пол
-ent-FloorTileItemArcadeBlue2-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemArcadeBlue2-name = blue arcade floor
+ent-FloorTileItemArcadeBlue2-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemArcadeRed-name = красный аркадный пол
-ent-FloorTileItemArcadeRed-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemArcadeRed-name = red arcade floor
+ent-FloorTileItemArcadeRed-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemEighties-name = этаж восьмидесятых
-ent-FloorTileItemEighties-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemEighties-name = eighties floor
+ent-FloorTileItemEighties-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemCarpetClown-name = клоунский ковер на полу
-ent-FloorTileItemCarpetClown-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemCarpetClown-name = clown carpet floor
+ent-FloorTileItemCarpetClown-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemCarpetOffice-name = офисный ковер на полу
-ent-FloorTileItemCarpetOffice-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemCarpetOffice-name = office carpet floor
+ent-FloorTileItemCarpetOffice-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemBoxing-name = пол боксерского ринга
-ent-FloorTileItemBoxing-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemBoxing-name = boxing ring floor
+ent-FloorTileItemBoxing-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemGym-name = пол спортзала
-ent-FloorTileItemGym-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemGym-name = gym floor
+ent-FloorTileItemGym-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemShuttleWhite-name = белый пол шаттла
-ent-FloorTileItemShuttleWhite-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemShuttleWhite-name = white shuttle floor
+ent-FloorTileItemShuttleWhite-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemShuttleBlue-name = синий этаж шаттла
-ent-FloorTileItemShuttleBlue-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemShuttleBlue-name = blue shuttle floor
+ent-FloorTileItemShuttleBlue-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemShuttleOrange-name = оранжевый пол шаттла
-ent-FloorTileItemShuttleOrange-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemShuttleOrange-name = orange shuttle floor
+ent-FloorTileItemShuttleOrange-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemShuttlePurple-name = фиолетовый пол шаттла
-ent-FloorTileItemShuttlePurple-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemShuttlePurple-name = purple shuttle floor
+ent-FloorTileItemShuttlePurple-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemShuttleRed-name = красный этаж шаттла
-ent-FloorTileItemShuttleRed-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemShuttleRed-name = red shuttle floor
+ent-FloorTileItemShuttleRed-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemShuttleGrey-name = серый пол шаттла
-ent-FloorTileItemShuttleGrey-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemShuttleGrey-name = grey shuttle floor
+ent-FloorTileItemShuttleGrey-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemShuttleBlack-name = черный пол шаттла
-ent-FloorTileItemShuttleBlack-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemShuttleBlack-name = black shuttle floor
+ent-FloorTileItemShuttleBlack-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemGold-name = золотой пол
-ent-FloorTileItemGold-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemGold-name = gold floor
+ent-FloorTileItemGold-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemSilver-name = серебряная плитка
-ent-FloorTileItemSilver-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemSilver-name = silver tile
+ent-FloorTileItemSilver-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemGCircuit-name = зеленый этаж
-ent-FloorTileItemGCircuit-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemGCircuit-name = green circuit floor
+ent-FloorTileItemGCircuit-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemBCircuit-name = Пол синего контура
-ent-FloorTileItemBCircuit-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemBCircuit-name = blue circuit floor
+ent-FloorTileItemBCircuit-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemRCircuit-name = Красный этаж
-ent-FloorTileItemRCircuit-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemRCircuit-name = red circuit floor
+ent-FloorTileItemRCircuit-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemGrass-name = травяная плитка
-ent-FloorTileItemGrass-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemGrass-name = grass tile
+ent-FloorTileItemGrass-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemGrassJungle-name = плитка из травы джунглей
-ent-FloorTileItemGrassJungle-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemGrassJungle-name = jungle grass tile
+ent-FloorTileItemGrassJungle-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemSnow-name = снежная плитка
-ent-FloorTileItemSnow-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemSnow-name = snow tile
+ent-FloorTileItemSnow-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemWoodPattern-name = пол с деревянным узором
+ent-FloorTileItemWoodPattern-name = wood pattern floor
 
-ent-FloorTileItemFlesh-name = пол из плоти
-ent-FloorTileItemFlesh-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemFlesh-name = flesh floor
+ent-FloorTileItemFlesh-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemSteelMaint-name = стальной основной пол
+ent-FloorTileItemSteelMaint-name = steel maint floor
 
-ent-FloorTileItemGratingMaint-name = решетка первого этажа
+ent-FloorTileItemGratingMaint-name = grating maint floor
 
-ent-FloorTileItemWeb-name = веб-плитка
-ent-FloorTileItemWeb-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemWeb-name = web tile
+ent-FloorTileItemWeb-desc = These could work as a pretty decent throwing weapon.
 
 ent-FloorTileItemAstroGrass-name = astro-grass
-ent-FloorTileItemAstroGrass-desc = Искусственная трава, которая закрывает провода, и даже поставляется с реалистичными нанообрезками!
+ent-FloorTileItemAstroGrass-desc = Fake grass that covers up wires and even comes with realistic NanoTrimmings!
 
-ent-FloorTileItemMowedAstroGrass-name = скошенная астротрава
-ent-FloorTileItemMowedAstroGrass-desc = Искусственная трава, которая закрывает провода, и даже поставляется с реалистичными нанообрезками!
+ent-FloorTileItemMowedAstroGrass-name = mowed astro-grass
+ent-FloorTileItemMowedAstroGrass-desc = Fake grass that covers up wires and even comes with realistic NanoTrimmings!
 
-ent-FloorTileItemJungleAstroGrass-name = джунгли
-ent-FloorTileItemJungleAstroGrass-desc = Искусственная трава, которая закрывает провода, и даже поставляется с реалистичными нанообрезками!
+ent-FloorTileItemJungleAstroGrass-name = jungle astro-grass
+ent-FloorTileItemJungleAstroGrass-desc = Fake grass that covers up wires and even comes with realistic NanoTrimmings!
 
 ent-FloorTileItemAstroIce-name = astro-ice
-ent-FloorTileItemAstroIce-desc = Искусственный лед такой же скользкий, как настоящий, но при этом его легко снять!
+ent-FloorTileItemAstroIce-desc = Fake ice that's as slippery as the real thing, while being easily removable!
 
 ent-FloorTileItemAstroSnow-name = astro-snow
-ent-FloorTileItemAstroSnow-desc = Искусственный снег такой же пушистый, как настоящий, но при этом его легко убрать!
+ent-FloorTileItemAstroSnow-desc = Fake snow that's as fluffy as the real thing, while being easily removable!
 
-ent-FloorTileItemAstroAsteroidSand-name = астероид астропесок
-ent-FloorTileItemAstroAsteroidSand-desc = Искусственный песок. К счастью, он не такой грубый, как настоящий.
+ent-FloorTileItemAstroAsteroidSand-name = asteroid astro-sand
+ent-FloorTileItemAstroAsteroidSand-desc = Fake sand. Luckily, it's not as coarse as the real thing.
 
-ent-FloorTileItemAstroAsteroidSandBorderless-name = безграничный астероид астропесок
-ent-FloorTileItemAstroAsteroidSandBorderless-desc = Искусственный песок. К счастью, он не такой грубый, как настоящий.
+ent-FloorTileItemAstroAsteroidSandBorderless-name = borderless asteroid astro-sand
+ent-FloorTileItemAstroAsteroidSandBorderless-desc = Fake sand. Luckily, it's not as coarse as the real thing.
 
-ent-FloorTileItemWoodLarge-name = большой деревянный пол
+ent-FloorTileItemWoodLarge-name = large wood floor
 
-ent-FloorTileItemXeno-name = ксено пол
-ent-FloorTileItemXeno-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemXeno-name = xeno floor
+ent-FloorTileItemXeno-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemXenoSteel-name = ксено стальной пол
-ent-FloorTileItemXenoSteel-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemXenoSteel-name = xeno steel floor
+ent-FloorTileItemXenoSteel-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemXenoSteelCorner-name = ксено стальной угловой пол
-ent-FloorTileItemXenoSteelCorner-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemXenoSteelCorner-name = xeno steel corner floor
+ent-FloorTileItemXenoSteelCorner-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemXenoMaint-name = ксено техобслуживание этаж
-ent-FloorTileItemXenoMaint-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemXenoMaint-name = xeno techmaint floor
+ent-FloorTileItemXenoMaint-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemDarkSquiggly-name = темная стальная волнистая плитка
+ent-FloorTileItemDarkSquiggly-name = dark steel squiggly tile
 
-ent-FloorTileItemGCircuit4-name = зеленый этаж
-ent-FloorTileItemGCircuit4-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemGCircuit4-name = green circuit floor
+ent-FloorTileItemGCircuit4-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemBCircuit4-name = Пол синего контура
-ent-FloorTileItemBCircuit4-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemBCircuit4-name = blue circuit floor
+ent-FloorTileItemBCircuit4-desc = These could work as a pretty decent throwing weapon.
 
-ent-FloorTileItemRCircuit4-name = Красный этаж
-ent-FloorTileItemRCircuit4-desc = Они могут работать как довольно приличное метательное оружие.
+ent-FloorTileItemRCircuit4-name = red circuit floor
+ent-FloorTileItemRCircuit4-desc = These could work as a pretty decent throwing weapon.
 

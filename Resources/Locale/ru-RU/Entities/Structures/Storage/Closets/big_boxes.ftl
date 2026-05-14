@@ -1,10 +1,10 @@
-ent-BaseBigBox-name = картонная коробка
-ent-BaseBigBox-desc = Хм? Просто коробка...
+ent-BaseBigBox-name = cardboard box
+ent-BaseBigBox-desc = Huh? Just a box...
 
-ent-StealthBox-desc = Заставил тебя ждать, да?
+ent-StealthBox-desc = Kept ya waiting, huh?
 
-ent-GhostBox-name = призрачный ящик
-ent-GhostBox-desc = Осторожно!
+ent-GhostBox-name = ghost box
+ent-GhostBox-desc = Beware!
 
 ent-BigBox-name = construction-recipe-big-box
 

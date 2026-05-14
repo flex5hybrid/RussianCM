@@ -1,6 +1,6 @@
-ent-SpiderWeb-name = паутина
-ent-SpiderWeb-desc = Он вязкий и липкий.
+ent-SpiderWeb-name = spider web
+ent-SpiderWeb-desc = It's stringy and sticky.
 
-ent-SpiderWebClown-name = паутина клоуна
-ent-SpiderWebClown-desc = Он вязкий и скользкий.
+ent-SpiderWebClown-name = clown spider web
+ent-SpiderWebClown-desc = It's stringy and slippy.
 

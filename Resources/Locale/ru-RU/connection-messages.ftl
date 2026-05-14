@@ -4,12 +4,15 @@ cmd-whitelistadd-existing = { $username } уже находится в бело�
 cmd-whitelistadd-added = { $username } добавлен в белый список
 cmd-whitelistadd-not-found = Не удалось найти игрока '{ $username }'
 cmd-whitelistadd-arg-player = [player]
+
 cmd-whitelistremove-desc = Удалить игрока с белого списка сервера.
 cmd-whitelistremove-help = Использование: whitelistremove <username или  User ID>
 cmd-whitelistremove-existing = { $username } не находится в белом списке!
 cmd-whitelistremove-removed = { $username } удалён из белого списка
 cmd-whitelistremove-not-found = Не удалось найти игрока '{ $username }'
 cmd-whitelistremove-arg-player = [player]
+
+cmd-kicknonwhitelisted-desc = Кикнуть всех игроков не в белом списке с сервера.
 cmd-kicknonwhitelisted-help = Использование: kicknonwhitelisted
 
 ban-banned-permanent = Этот бан можно только обжаловать. Для этого посетите { $link }.
@@ -42,11 +45,17 @@ cmd-blacklistadd-existing = { $username } уже находится в чёрн�
 cmd-blacklistadd-added = { $username } добавлен в чёрный список
 cmd-blacklistadd-not-found = Не удалось найти игрока '{ $username }'
 cmd-blacklistadd-arg-player = [player]
+
+cmd-blacklistremove-desc = Удалить игрока из чёрного списка сервера.
+cmd-blacklistremove-help = Использование: blacklistremove <username>
 cmd-blacklistremove-existing = { $username } не находится в чёрном списке!
 cmd-blacklistremove-removed = { $username } удалён из чёрного списка
 cmd-blacklistremove-not-found = Не удалось найти игрока '{ $username }'
-baby-jail-account-denied = Этот сервер — сервер для новичков, предназначенный для новых игроков и тех, кто хочет им помочь. Новые подключения слишком старых или не внесённых в белый список аккаунтов не принимаются. Загляните на другие серверы и посмотрите все, что может предложить Space Station 14. Веселитесь!
 cmd-blacklistremove-arg-player = [player]
+
+baby-jail-account-denied = Этот сервер — сервер для новичков, предназначенный для новых игроков и тех, кто хочет им помочь. Новые подключения слишком старых или не внесённых в белый список аккаунтов не принимаются. Загляните на другие серверы и посмотрите все, что может предложить Space Station 14. Веселитесь!
+baby-jail-account-denied-reason = Этот сервер — сервер для новичков, предназначенный для новых игроков и тех, кто хочет им помочь. Новые подключения слишком старых или не внесённых в белый список аккаунтов не принимаются. Загляните на другие серверы и посмотрите все, что может предложить Space Station 14. Веселитесь! Причина: "{ $reason }"
+baby-jail-account-reason-account = Ваш аккаунт Space Station 14 слишком старый. Он должен быть моложе { $minutes } минут
 baby-jail-account-reason-overall = Наигранное Вами время на сервере должно быть больше { $minutes } { $minutes ->
     [one] минуты
     *[other] минут
@@ -59,15 +68,3 @@ ipintel-unknown = Этот сервер использует систему ау
 ipintel-suspicious = Похоже, вы пытаетесь подключиться через датацентр, прокси, VPN или другое подозрительное соединение. По административным причинам такие подключения не допускаются. Если у вас включён VPN или аналогичный сервис, выключите его и попробуйте снова, либо свяжитесь с администрацией сервера, если считаете, что это ошибка или вам необходимо использовать такие сервисы для игры.
 
 hwid-required = Ваш клиент отказался отправлять идентификатор оборудования (HWID). Пожалуйста, свяжитесь с администрацией для получения дальнейшей помощи.
-
-# Missing entries synced from en-US
-
-cmd-kicknonwhitelisted-desc = Удаляет с сервера всех игроков, не внесенных в белый список.
-
-cmd-blacklistremove-desc = Удаляет игрока с указанным именем пользователя из черного списка сервера.
-
-cmd-blacklistremove-help = Использование: черный списокудалить <username>
-
-baby-jail-account-denied-reason = Этот сервер предназначен для новичков, предназначен для новых игроков и тех, кто хочет им помочь. Новые подключения со стороны учетных записей, которые слишком старые или не находятся в белом списке, не принимаются. Посетите некоторые другие серверы и узнайте все, что может предложить Space Station 14. Веселиться! Причина: "{$reason}"
-
-baby-jail-account-reason-account = Ваша учетная запись Space Station 14 устарела. Оно должно быть моложе {$minutes} минут.

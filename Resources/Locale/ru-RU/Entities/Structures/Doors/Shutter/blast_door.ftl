@@ -1,18 +1,18 @@
-ent-BlastDoor-name = взрывная дверь
-ent-BlastDoor-desc = На этом написано «ВЗРЫВ ДОНГЕР».
+ent-BlastDoor-name = blast door
+ent-BlastDoor-desc = This one says 'BLAST DONGER'.
 
-ent-BlastDoorFrame-name = взрывобезопасная дверная рама
-ent-BlastDoorFrame-desc = На этом написано «ВЗРЫВ ДОНГЕР».
+ent-BlastDoorFrame-name = blast door frame
+ent-BlastDoorFrame-desc = This one says 'BLAST DONGER'.
 
-ent-BlastDoorXeno-name = ксеновзрывная дверь
-ent-BlastDoorXeno-desc = Не потеряйте руку!
+ent-BlastDoorXeno-name = xeno blast door
+ent-BlastDoorXeno-desc = Don't lose an arm!
 
-ent-BlastDoorXenoFrame-name = дверной косяк ксено-взрыва
-ent-BlastDoorXenoFrame-desc = На этом написано «ВЗРЫВ ДОНГЕР».
+ent-BlastDoorXenoFrame-name = xeno blast door frame
+ent-BlastDoorXenoFrame-desc = This one says 'BLAST DONGER'.
 
-ent-BlastDoorOpen-name = затвор
-ent-BlastDoorOpen-desc = Страшно подумать о том, что может скрываться за этой ставеню.
+ent-BlastDoorOpen-name = shutter
+ent-BlastDoorOpen-desc = One shudders to think about what might be behind this shutter.
 
-ent-BlastDoorXenoOpen-name = ксеновзрывная дверь
-ent-BlastDoorXenoOpen-desc = Не потеряйте руку!
+ent-BlastDoorXenoOpen-name = xeno blast door
+ent-BlastDoorXenoOpen-desc = Don't lose an arm!
 

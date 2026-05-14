@@ -1,42 +1,42 @@
-ent-ImmovableRod-name = неподвижный стержень
-ent-ImmovableRod-desc = Вы можете почувствовать, что он голоден. Обычно это плохой знак.
+ent-ImmovableRod-name = immovable rod
+ent-ImmovableRod-desc = You can sense that it's hungry. That's usually a bad sign.
 
-ent-ImmovableRodMop-name = неподвижная швабра
-ent-ImmovableRodMop-desc = Брошенный, как копье, с силой тысячи разъяренных дворников.
+ent-ImmovableRodMop-name = immovable mop
+ent-ImmovableRodMop-desc = Hurled like a javelin, with the power of a thousand furious janitors.
 
-ent-ImmovableRodShark-name = неподвижная акула
-ent-ImmovableRodShark-desc = АКУЛА ТОРНАДО!
+ent-ImmovableRodShark-name = immovable shark
+ent-ImmovableRodShark-desc = SHARK TORNADO!
 
-ent-ImmovableRodClown-name = неподвижный клоун
-ent-ImmovableRodClown-desc = Выброшен с соседней станции на одну солнечную систему. ГУДОК!
+ent-ImmovableRodClown-name = immovable clown
+ent-ImmovableRodClown-desc = Ejected from the neighbouring station one solar system over. HONK!
 
-ent-ImmovableRodBanana-name = неподвижный банан
-ent-ImmovableRodBanana-desc = По крайней мере, вы не поскользнетесь на нем.
+ent-ImmovableRodBanana-name = immovable banana
+ent-ImmovableRodBanana-desc = At least you won't slip on it.
 
-ent-ImmovableRodHammer-name = неподвижный молоток
-ent-ImmovableRodHammer-desc = Бвоинк.
+ent-ImmovableRodHammer-name = immovable hammer
+ent-ImmovableRodHammer-desc = Bwoink.
 
-ent-ImmovableRodThrongler-name = неподвижный душитель
-ent-ImmovableRodThrongler-desc = Если поймаешь, то сможешь сохранить.
+ent-ImmovableRodThrongler-name = immovable throngler
+ent-ImmovableRodThrongler-desc = If you catch it, you can keep it.
 
-ent-ImmovableRodGibstick-name = неподвижная палочка
-ent-ImmovableRodGibstick-desc = Чего ты ожидал?
+ent-ImmovableRodGibstick-name = immovable gibstick
+ent-ImmovableRodGibstick-desc = What did you expect?
 
-ent-ImmovableRodWeh-name = неподвижный
-ent-ImmovableRodWeh-desc = ЭХ!
+ent-ImmovableRodWeh-name = immovable weh
+ent-ImmovableRodWeh-desc = WEH!
 
-ent-ImmovableRodDespawn-name = неподвижный стержень
-ent-ImmovableRodDespawn-desc = Вы можете почувствовать, что он голоден. Обычно это плохой знак.
+ent-ImmovableRodDespawn-name = immovable rod
+ent-ImmovableRodDespawn-desc = You can sense that it's hungry. That's usually a bad sign.
 
-ent-ImmovableRodSlow-name = неподвижный стержень
-ent-ImmovableRodSlow-desc = Вы можете почувствовать, что он голоден. Обычно это плохой знак.
+ent-ImmovableRodSlow-name = immovable rod
+ent-ImmovableRodSlow-desc = You can sense that it's hungry. That's usually a bad sign.
 
-ent-ImmovableRodKeepTiles-name = неподвижный стержень
-ent-ImmovableRodKeepTiles-desc = Вы можете почувствовать, что он голоден. Обычно это плохой знак.
+ent-ImmovableRodKeepTiles-name = immovable rod
+ent-ImmovableRodKeepTiles-desc = You can sense that it's hungry. That's usually a bad sign.
 
-ent-ImmovableRodWizard-name = неподвижный стержень
-ent-ImmovableRodWizard-desc = Вы можете почувствовать, что он голоден. Обычно это плохой знак.
+ent-ImmovableRodWizard-name = immovable rod
+ent-ImmovableRodWizard-desc = You can sense that it's hungry. That's usually a bad sign.
 
-ent-ImmovableRodKeepTilesStill-name = неподвижный стержень
-ent-ImmovableRodKeepTilesStill-desc = Вы можете почувствовать, что он голоден. Обычно это плохой знак.
+ent-ImmovableRodKeepTilesStill-name = immovable rod
+ent-ImmovableRodKeepTilesStill-desc = You can sense that it's hungry. That's usually a bad sign.
 

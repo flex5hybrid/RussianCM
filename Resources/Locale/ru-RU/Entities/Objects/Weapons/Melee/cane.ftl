@@ -1,12 +1,12 @@
-ent-Cane-name = трость
-ent-Cane-desc = Деревянная трость.
+ent-Cane-name = cane
+ent-Cane-desc = A wooden cane.
 
-ent-CaneBlade-name = трость лезвие
-ent-CaneBlade-desc = Острый клинок с рукоятью в форме трости.
+ent-CaneBlade-name = cane blade
+ent-CaneBlade-desc = A sharp blade with a cane shaped hilt.
 
-ent-CaneSheath-name = трость
-ent-CaneSheath-desc = Деревянная трость.
+ent-CaneSheath-name = cane
+ent-CaneSheath-desc = A wooden cane.
 
-ent-CaneSheathFilled-name = трость
-ent-CaneSheathFilled-desc = Деревянная трость.
+ent-CaneSheathFilled-name = cane
+ent-CaneSheathFilled-desc = A wooden cane.
 

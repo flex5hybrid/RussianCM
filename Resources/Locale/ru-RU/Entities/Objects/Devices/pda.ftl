@@ -1,216 +1,216 @@
-ent-BasePDA-name = КПК
-ent-BasePDA-desc = Помощник по персональным данным.
+ent-BasePDA-name = PDA
+ent-BasePDA-desc = Personal Data Assistant.
 
-ent-PassengerPDA-name = пассажирский КПК
-ent-PassengerPDA-desc = Почему он не серый?
+ent-PassengerPDA-name = passenger PDA
+ent-PassengerPDA-desc = Why isn't it gray?
 
-ent-TechnicalAssistantPDA-name = технический помощник КПК
-ent-TechnicalAssistantPDA-desc = Почему он не желтый?
+ent-TechnicalAssistantPDA-name = technical assistant PDA
+ent-TechnicalAssistantPDA-desc = Why isn't it yellow?
 
-ent-MedicalInternPDA-name = интерн-медик КПК
-ent-MedicalInternPDA-desc = Почему он не белый?
+ent-MedicalInternPDA-name = medical intern PDA
+ent-MedicalInternPDA-desc = Why isn't it white?
 
-ent-SecurityCadetPDA-name = курсант службы безопасности КПК
-ent-SecurityCadetPDA-desc = Почему он не красный?
+ent-SecurityCadetPDA-name = security cadet PDA
+ent-SecurityCadetPDA-desc = Why isn't it red?
 
-ent-ResearchAssistantPDA-name = научный сотрудник КПК
-ent-ResearchAssistantPDA-desc = Почему он не фиолетовый?
+ent-ResearchAssistantPDA-name = research assistant PDA
+ent-ResearchAssistantPDA-desc = Why isn't it purple?
 
-ent-ServiceWorkerPDA-name = КПК сервисного работника
-ent-ServiceWorkerPDA-desc = Почему он не серый?
+ent-ServiceWorkerPDA-name = service worker PDA
+ent-ServiceWorkerPDA-desc = Why isn't it gray?
 
-ent-ChefPDA-name = шеф-повар КПК
-ent-ChefPDA-desc = Покрыт жиром и мукой.
+ent-ChefPDA-name = chef PDA
+ent-ChefPDA-desc = Covered in grease and flour.
 
-ent-BotanistPDA-name = КПК ботаника
-ent-BotanistPDA-desc = Имеет землистый аромат.
+ent-BotanistPDA-name = botanist PDA
+ent-BotanistPDA-desc = Has an earthy scent.
 
-ent-ClownPDA-name = клоун КПК
-ent-ClownPDA-desc = Внешний вид может быть обманчивым.
+ent-ClownPDA-name = clown PDA
+ent-ClownPDA-desc = Looks can be deceiving.
 
-ent-MimePDA-name = мим КПК
-ent-MimePDA-desc = Удивительно, но не без звука.
+ent-MimePDA-name = mime PDA
+ent-MimePDA-desc = Suprisingly not on mute.
 
-ent-ChaplainPDA-name = капеллан КПК
-ent-ChaplainPDA-desc = Богоизбранный КПК.
+ent-ChaplainPDA-name = chaplain PDA
+ent-ChaplainPDA-desc = God's chosen PDA.
 
-ent-QuartermasterPDA-name = КПК квартирмейстера
-ent-QuartermasterPDA-desc = КПК для парня, который заказывает оружие.
+ent-QuartermasterPDA-name = quartermaster PDA
+ent-QuartermasterPDA-desc = PDA for the guy that orders the guns.
 
-ent-CargoPDA-name = грузовой КПК
-ent-CargoPDA-desc = КПК для парней, которые заказывают пиццу.
+ent-CargoPDA-name = cargo PDA
+ent-CargoPDA-desc = PDA for the guys that order the pizzas.
 
-ent-SalvagePDA-name = КПК для спасения
-ent-SalvagePDA-desc = Пахнет золой.
+ent-SalvagePDA-name = salvage PDA
+ent-SalvagePDA-desc = Smells like ash.
 
-ent-BartenderPDA-name = бармен КПК
-ent-BartenderPDA-desc = Пахнет пивом.
+ent-BartenderPDA-name = bartender PDA
+ent-BartenderPDA-desc = Smells like beer.
 
-ent-LibrarianPDA-name = КПК библиотекаря
-ent-LibrarianPDA-desc = Пахнет книгами.
+ent-LibrarianPDA-name = librarian PDA
+ent-LibrarianPDA-desc = Smells like books.
 
-ent-LawyerPDA-name = юрист КПК
-ent-LawyerPDA-desc = Чтобы адвокаты переманивали сомнительных клиентов.
+ent-LawyerPDA-name = lawyer PDA
+ent-LawyerPDA-desc = For lawyers to poach dubious clients.
 
-ent-JanitorPDA-name = дворник КПК
-ent-JanitorPDA-desc = Пахнет отбеливателем.
+ent-JanitorPDA-name = janitor PDA
+ent-JanitorPDA-desc = Smells like bleach.
 
-ent-CaptainPDA-name = капитан КПК
-ent-CaptainPDA-desc = На удивление ничем не отличается от вашего КПК.
+ent-CaptainPDA-name = captain PDA
+ent-CaptainPDA-desc = Surprisingly no different from your PDA.
 
-ent-HoPPDA-name = руководитель отдела кадров КПК
-ent-HoPPDA-desc = Похоже, его пережевали.
+ent-HoPPDA-name = head of personnel PDA
+ent-HoPPDA-desc = Looks like it's been chewed on.
 
-ent-CEPDA-name = главный инженер ПДА
-ent-CEPDA-desc = Похоже, им почти не пользовались.
+ent-CEPDA-name = chief engineer PDA
+ent-CEPDA-desc = Looks like it's barely been used.
 
-ent-EngineerPDA-name = инженер КПК
-ent-EngineerPDA-desc = Прочный и поношенный.
+ent-EngineerPDA-name = engineer PDA
+ent-EngineerPDA-desc = Rugged and well-worn.
 
-ent-CMOPDA-name = главный врач КПК
-ent-CMOPDA-desc = Необычайно блестящие и стерильные.
+ent-CMOPDA-name = chief medical officer PDA
+ent-CMOPDA-desc = Extraordinarily shiny and sterile.
 
-ent-MedicalPDA-name = медицинский КПК
-ent-MedicalPDA-desc = Блестящий и стерильный.
+ent-MedicalPDA-name = medical PDA
+ent-MedicalPDA-desc = Shiny and sterile.
 
-ent-ParamedicPDA-name = фельдшер КПК
-ent-ParamedicPDA-desc = Блестящий и стерильный.
+ent-ParamedicPDA-name = paramedic PDA
+ent-ParamedicPDA-desc = Shiny and sterile.
 
-ent-ChemistryPDA-name = химия КПК
-ent-ChemistryPDA-desc = Здесь и там есть несколько обесцвеченных пятен.
+ent-ChemistryPDA-name = chemistry PDA
+ent-ChemistryPDA-desc = It has a few discolored blotches here and there.
 
-ent-RnDPDA-name = директор по исследованиям PDA
-ent-RnDPDA-desc = Выглядит на удивление обыденно.
+ent-RnDPDA-name = research director PDA
+ent-RnDPDA-desc = It appears surprisingly ordinary.
 
-ent-SciencePDA-name = научный КПК
-ent-SciencePDA-desc = Он покрыт неизвестным липким веществом.
+ent-SciencePDA-name = science PDA
+ent-SciencePDA-desc = It's covered with an unknown gooey substance.
 
-ent-HoSPDA-name = начальник службы безопасности КПК
-ent-HoSPDA-desc = Тот, кто носит этот КПК, является законом.
+ent-HoSPDA-name = head of security PDA
+ent-HoSPDA-desc = Whosoever bears this PDA is the law.
 
-ent-WardenPDA-name = КПК надзирателя
-ent-WardenPDA-desc = Судя по всему, ОС была взломана.
+ent-WardenPDA-name = warden PDA
+ent-WardenPDA-desc = The OS appears to have been jailbroken.
 
-ent-SecurityPDA-name = КПК безопасности
-ent-SecurityPDA-desc = Красный, чтобы скрыть пятна крови пассажиров.
+ent-SecurityPDA-name = security PDA
+ent-SecurityPDA-desc = Red to hide the stains of passenger blood.
 
-ent-CentcomPDA-name = КПК ЦентКомм
-ent-CentcomPDA-desc = Светло-зеленый знак ходячей бюрократии.
+ent-CentcomPDA-name = CentComm PDA
+ent-CentcomPDA-desc = Light green sign of walking bureaucracy.
 
-ent-AdminPDA-name = КПК администратора
-ent-AdminPDA-desc = Если вы не администратор, верните этот КПК ближайшему администратору.
+ent-AdminPDA-name = Admin PDA
+ent-AdminPDA-desc = If you are not an admin please return this PDA to the nearest admin.
 
-ent-MusicianPDA-name = музыкант КПК
-ent-MusicianPDA-desc = Это наполняет вас вдохновением.
+ent-MusicianPDA-name = musician PDA
+ent-MusicianPDA-desc = It fills you with inspiration.
 
-ent-AtmosPDA-name = атмос КПК
-ent-AtmosPDA-desc = Еще пахнет плазмой.
+ent-AtmosPDA-name = atmos PDA
+ent-AtmosPDA-desc = Still smells like plasma.
 
-ent-ClearPDA-name = очистить КПК
-ent-ClearPDA-desc = 99 и 44/100 процентов чистого пластика.
+ent-ClearPDA-name = clear PDA
+ent-ClearPDA-desc = 99 and 44/100ths percent pure plastic.
 
-ent-SyndiPDA-name = синдикат КПК
-ent-SyndiPDA-desc = Хорошо, пора стать продуктивным участником… о, круто, я плохой парень, пора убивать людей!
+ent-SyndiPDA-name = syndicate PDA
+ent-SyndiPDA-desc = Ok, time to be a productive member of- oh cool I'm a bad guy time to kill people!
 
-ent-ERTLeaderPDA-name = КПК лидера ERT
-ent-ERTLeaderPDA-desc = Красный для огневой мощи.
+ent-ERTLeaderPDA-name = ERT Leader PDA
+ent-ERTLeaderPDA-desc = Red for firepower.
 
-ent-ERTChaplainPDA-name = ERT Капеллан КПК
-ent-ERTChaplainPDA-desc = Красный означает огневую мощь, это благословенно.
+ent-ERTChaplainPDA-name = ERT Chaplain PDA
+ent-ERTChaplainPDA-desc = Red for firepower, it's blessed.
 
-ent-ERTEngineerPDA-name = Инженер ERT КПК
-ent-ERTEngineerPDA-desc = Красный, обозначающий огневую мощь, он уже поношен.
+ent-ERTEngineerPDA-name = ERT Engineer PDA
+ent-ERTEngineerPDA-desc = Red for firepower, it's well-worn.
 
-ent-ERTJanitorPDA-name = КПК дворника ERT
-ent-ERTJanitorPDA-desc = Красный означает огневую мощь, он безупречно чистый.
+ent-ERTJanitorPDA-name = ERT Janitor PDA
+ent-ERTJanitorPDA-desc = Red for firepower, it's squeaky clean.
 
-ent-ERTMedicPDA-name = ЭРТ Медик КПК
-ent-ERTMedicPDA-desc = Красный — огневая мощь, он блестящий и стерильный.
+ent-ERTMedicPDA-name = ERT Medic PDA
+ent-ERTMedicPDA-desc = Red for firepower, it's shiny and sterile.
 
-ent-ERTSecurityPDA-name = КПК безопасности ERT
-ent-ERTSecurityPDA-desc = Красный, обозначающий огневую мощь, на боку выгравированы метки.
+ent-ERTSecurityPDA-name = ERT Security PDA
+ent-ERTSecurityPDA-desc = Red for firepower, it has tally marks etched on the side.
 
-ent-CBURNPDA-name = CBURN КПК
-ent-CBURNPDA-desc = Пахнет гнилым мясом.
+ent-CBURNPDA-name = CBURN PDA
+ent-CBURNPDA-desc = Smells like rotten flesh.
 
-ent-PsychologistPDA-name = психолог КПК
-ent-PsychologistPDA-desc = Выглядит безупречно чистым.
+ent-PsychologistPDA-name = psychologist PDA
+ent-PsychologistPDA-desc = Looks immaculately cleaned.
 
-ent-ReporterPDA-name = репортер КПК
-ent-ReporterPDA-desc = Пахнет свеженапечатанной прессой.
+ent-ReporterPDA-name = reporter PDA
+ent-ReporterPDA-desc = Smells like freshly printed press.
 
-ent-ZookeeperPDA-name = смотритель зоопарка КПК
-ent-ZookeeperPDA-desc = Изготовлен из натуральной синтетической кожи. Черт возьми!
+ent-ZookeeperPDA-name = zookeeper PDA
+ent-ZookeeperPDA-desc = Made with genuine synthetic leather. Crikey!
 
-ent-BoxerPDA-name = боксер КПК
-ent-BoxerPDA-desc = Порхай, как бабочка, мелодия звонка, как пчела.
+ent-BoxerPDA-name = boxer PDA
+ent-BoxerPDA-desc = Float like a butterfly, ringtone like a bee.
 
-ent-DetectivePDA-name = детектив КПК
-ent-DetectivePDA-desc = Пахнет дождем... льющимся по крышам...
+ent-DetectivePDA-name = detective PDA
+ent-DetectivePDA-desc = Smells like rain... pouring down the rooftops...
 
-ent-BrigmedicPDA-name = Бригмедик КПК
-ent-BrigmedicPDA-desc = Интересно, чей пульс на экране? надеюсь это не прекратится...
+ent-BrigmedicPDA-name = brigmedic PDA
+ent-BrigmedicPDA-desc = I wonder whose pulse is on the screen? I hope it doesn't stop...
 
-ent-CluwnePDA-name = Клувн КПК
-ent-CluwnePDA-desc = Проклятый Клувн КПК.
+ent-CluwnePDA-name = cluwne PDA
+ent-CluwnePDA-desc = Cursed cluwne PDA.
 
-ent-SeniorEngineerPDA-name = старший инженер КПК
-ent-SeniorEngineerPDA-desc = Такое ощущение, что его несколько раз разбирали и собирали обратно.
+ent-SeniorEngineerPDA-name = senior engineer PDA
+ent-SeniorEngineerPDA-desc = Seems to have been taken apart and put back together several times.
 
-ent-SeniorResearcherPDA-name = старший научный сотрудник КПК
-ent-SeniorResearcherPDA-desc = Похоже, он пережил годы химических ожогов и взрывов.
+ent-SeniorResearcherPDA-name = senior researcher PDA
+ent-SeniorResearcherPDA-desc = Looks like it's been through years of chemical burns and explosions.
 
-ent-SeniorPhysicianPDA-name = старший врач ПДА
-ent-SeniorPhysicianPDA-desc = Слабый запах железа и химикатов.
+ent-SeniorPhysicianPDA-name = senior physician PDA
+ent-SeniorPhysicianPDA-desc = Smells faintly like iron and chemicals.
 
-ent-SeniorOfficerPDA-name = старший офицер КПК
-ent-SeniorOfficerPDA-desc = Побитый, побитый и сломанный, но едва пригодный для использования.
+ent-SeniorOfficerPDA-name = senior officer PDA
+ent-SeniorOfficerPDA-desc = Beaten, battered and broken, but just barely useable.
 
-ent-PiratePDA-name = пиратский КПК
-ent-PiratePDA-desc = Угу!
+ent-PiratePDA-name = pirate PDA
+ent-PiratePDA-desc = Yargh!
 
-ent-SyndiAgentPDA-name = санитар синдиката КПК
-ent-SyndiAgentPDA-desc = В те дни, когда лечения обычных синдикатов недостаточно, попробуйте вместо этого исцелить ядерных оперативников!
+ent-SyndiAgentPDA-name = syndicate corpsman PDA
+ent-SyndiAgentPDA-desc = For those days when healing normal syndicates aren't enough, try healing nuclear operatives instead!
 
-ent-ChameleonPDA-name = пассажирский КПК
-ent-ChameleonPDA-desc = Почему он не серый?
+ent-ChameleonPDA-name = passenger PDA
+ent-ChameleonPDA-desc = Why isn't it gray?
 
-ent-WizardPDA-name = мастер КПК
-ent-WizardPDA-desc = Вы слышите доносящийся оттуда слабый шепот.
+ent-WizardPDA-name = wizard PDA
+ent-WizardPDA-desc = You hear faint whispers coming from it.
 
-ent-ScurretPDA-name = очистить КПК
-ent-ScurretPDA-desc = Временный КПК, предоставляемый временным пользователям. Мало что делает. Вава!
+ent-ScurretPDA-name = clear PDA
+ent-ScurretPDA-desc = A temporary PDA granted to scurret temps. Doesn't do much. Wawa!
 
-ent-BaseWidePDA-name = КПК
-ent-BaseWidePDA-desc = Помощник по персональным данным.
+ent-BaseWidePDA-name = PDA
+ent-BaseWidePDA-desc = Personal Data Assistant.
 
-ent-BaseSecurityPDA-name = КПК
-ent-BaseSecurityPDA-desc = Помощник по персональным данным.
+ent-BaseSecurityPDA-name = PDA
+ent-BaseSecurityPDA-desc = Personal Data Assistant.
 
-ent-BaseMedicalPDA-name = КПК
-ent-BaseMedicalPDA-desc = Помощник по персональным данным.
+ent-BaseMedicalPDA-name = PDA
+ent-BaseMedicalPDA-desc = Personal Data Assistant.
 
-ent-VisitorClownPDA-name = клоун КПК
-ent-VisitorClownPDA-desc = Внешний вид может быть обманчивым.
+ent-VisitorClownPDA-name = clown PDA
+ent-VisitorClownPDA-desc = Looks can be deceiving.
 
-ent-VisitorChaplainPDA-name = капеллан КПК
-ent-VisitorChaplainPDA-desc = Богоизбранный КПК.
+ent-VisitorChaplainPDA-name = chaplain PDA
+ent-VisitorChaplainPDA-desc = God's chosen PDA.
 
-ent-VisitorLibrarianPDA-name = КПК библиотекаря
-ent-VisitorLibrarianPDA-desc = Пахнет книгами.
+ent-VisitorLibrarianPDA-name = librarian PDA
+ent-VisitorLibrarianPDA-desc = Smells like books.
 
-ent-VisitorLawyerPDA-name = юрист КПК
-ent-VisitorLawyerPDA-desc = Чтобы адвокаты переманивали сомнительных клиентов.
+ent-VisitorLawyerPDA-name = lawyer PDA
+ent-VisitorLawyerPDA-desc = For lawyers to poach dubious clients.
 
-ent-VisitorMedicalPDA-name = медицинский КПК
-ent-VisitorMedicalPDA-desc = Блестящий и стерильный.
+ent-VisitorMedicalPDA-name = medical PDA
+ent-VisitorMedicalPDA-desc = Shiny and sterile.
 
-ent-DeathsquadPDA-name = КПК ЦентКомм
-ent-DeathsquadPDA-desc = Светло-зеленый знак ходячей бюрократии.
+ent-DeathsquadPDA-name = CentComm PDA
+ent-DeathsquadPDA-desc = Light green sign of walking bureaucracy.
 
-ent-VisitorMusicianPDA-name = музыкант КПК
-ent-VisitorMusicianPDA-desc = Это наполняет вас вдохновением.
+ent-VisitorMusicianPDA-name = musician PDA
+ent-VisitorMusicianPDA-desc = It fills you with inspiration.
 
-ent-VisitorPDA-name = очистить КПК
-ent-VisitorPDA-desc = 99 и 44/100 процентов чистого пластика.
+ent-VisitorPDA-name = clear PDA
+ent-VisitorPDA-desc = 99 and 44/100ths percent pure plastic.
 

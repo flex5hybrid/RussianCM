@@ -1,2 +1,2 @@
-ent-BoxBase-name = предмет хранения
+ent-BoxBase-name = storage item
 

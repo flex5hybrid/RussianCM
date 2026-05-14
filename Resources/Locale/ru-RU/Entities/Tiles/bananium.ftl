@@ -1,2 +1,2 @@
-ent-FloorBananiumEntity-name = банановый пол
+ent-FloorBananiumEntity-name = bananium floor
 

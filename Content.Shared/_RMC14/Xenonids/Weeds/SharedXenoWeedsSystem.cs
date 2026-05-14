@@ -79,7 +79,6 @@ public abstract class SharedXenoWeedsSystem : EntitySystem
     private EntityQuery<XenoComponent> _xenoQuery;
     private EntityQuery<BlockWeedsComponent> _blockWeedsQuery;
     private EntityQuery<HiveMemberComponent> _hiveMemberQuery;
-    private EntityQuery<IgnoreXenoWeedsSlowdownComponent> _ignoreWeedSlowdownQuery;
 
 
     public override void Initialize()
@@ -91,7 +90,6 @@ public abstract class SharedXenoWeedsSystem : EntitySystem
         _xenoQuery = GetEntityQuery<XenoComponent>();
         _blockWeedsQuery = GetEntityQuery<BlockWeedsComponent>();
         _hiveMemberQuery = GetEntityQuery<HiveMemberComponent>();
-        _ignoreWeedSlowdownQuery = GetEntityQuery<IgnoreXenoWeedsSlowdownComponent>();
 
         SubscribeLocalEvent<XenoWeedsComponent, AnchorStateChangedEvent>(OnWeedsAnchorChanged);
         SubscribeLocalEvent<XenoWeedsComponent, ComponentShutdown>(OnModifierShutdown);
@@ -273,7 +271,6 @@ public abstract class SharedXenoWeedsSystem : EntitySystem
         var speedWeeds = 0.0f;
         var speedResin = 0.0f;
         var isXeno = _xenoQuery.HasComp(ent);
-        var ignoreWeedSlowdown = _ignoreWeedSlowdownQuery.HasComp(ent);
         //Checks hive for applying slows now
         //Weed speedup only effects xenos, but slowdown does not hurt hive mems
         //Fast resin speedup only effect xenos, but sticky also doesn't hurt hive mems
@@ -303,7 +300,7 @@ public abstract class SharedXenoWeedsSystem : EntitySystem
         {
             if (_slowResinQuery.TryComp(contacting, out var slowResin))
             {
-                if (!ignoreWeedSlowdown && (hive == null || !_hive.IsMember(contacting, hive.Hive)))
+                if (hive == null || !_hive.IsMember(contacting, hive.Hive))
                 {
                     if (HasComp<RMCArmorSpeedTierUserComponent>(contacting))
                         speedResin += slowResin.OutsiderSpeedModifierArmor;
@@ -340,15 +337,12 @@ public abstract class SharedXenoWeedsSystem : EntitySystem
             }
             else if (hive == null || !_hive.IsMember(contacting, hive.Hive))
             {
-                if (!ignoreWeedSlowdown)
-                {
-                    if (HasComp<RMCArmorSpeedTierUserComponent>(contacting))
-                        speedWeeds += weeds.SpeedMultiplierOutsiderArmor;
-                    else
-                        speedWeeds += weeds.SpeedMultiplierOutsider;
+                if (HasComp<RMCArmorSpeedTierUserComponent>(contacting))
+                    speedWeeds += weeds.SpeedMultiplierOutsiderArmor;
+                else
+                    speedWeeds += weeds.SpeedMultiplierOutsider;
 
-                    entriesWeeds++;
-                }
+                entriesWeeds++;
             }
         }
 

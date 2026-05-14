@@ -1,2 +1,2 @@
-ent-RandomFloraTree-name = генератор случайных деревьев
+ent-RandomFloraTree-name = random tree spawner
 

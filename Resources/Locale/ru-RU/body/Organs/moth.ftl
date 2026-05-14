@@ -1,2 +1,2 @@
-ent-OrganMothStomach-name = желудок
+ent-OrganMothStomach-name = stomach
 

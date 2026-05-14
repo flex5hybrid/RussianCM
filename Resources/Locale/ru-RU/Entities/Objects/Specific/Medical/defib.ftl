@@ -1,18 +1,18 @@
-ent-BaseDefibrillator-name = дефибриллятор
-ent-BaseDefibrillator-desc = ЯСНО! Зззат!
+ent-BaseDefibrillator-name = defibrillator
+ent-BaseDefibrillator-desc = CLEAR! Zzzzat!
 
-ent-DefibrillatorCompact-name = компактный дефибриллятор
-ent-DefibrillatorCompact-desc = Теперь в забавном размере!
+ent-DefibrillatorCompact-name = compact defibrillator
+ent-DefibrillatorCompact-desc = Now in fun size!
 
-ent-DefibrillatorSyndicate-name = интердинный дефибриллятор
-ent-DefibrillatorSyndicate-desc = Используется как оружие самообороны против приливов, склонных к военным преступлениям.
+ent-DefibrillatorSyndicate-name = interdyne defibrillator
+ent-DefibrillatorSyndicate-desc = Doubles as a self-defense weapon against war-crime inclined tiders.
 
-ent-Defibrillator-name = дефибриллятор
-ent-Defibrillator-desc = ЯСНО! Зззат!
+ent-Defibrillator-name = defibrillator
+ent-Defibrillator-desc = CLEAR! Zzzzat!
 
-ent-DefibrillatorEmpty-name = дефибриллятор
-ent-DefibrillatorEmpty-desc = ЯСНО! Зззат!
+ent-DefibrillatorEmpty-name = defibrillator
+ent-DefibrillatorEmpty-desc = CLEAR! Zzzzat!
 
-ent-DefibrillatorOneHandedUnpowered-name = дефибриллятор
-ent-DefibrillatorOneHandedUnpowered-desc = ЯСНО! Зззат!
+ent-DefibrillatorOneHandedUnpowered-name = defibrillator
+ent-DefibrillatorOneHandedUnpowered-desc = CLEAR! Zzzzat!
 

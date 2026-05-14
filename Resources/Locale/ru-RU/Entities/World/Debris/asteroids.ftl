@@ -1,18 +1,18 @@
-ent-BaseAsteroidDebris-name = обломки астероида
+ent-BaseAsteroidDebris-name = asteroid debris
 
-ent-AsteroidDebrisSmall-name = обломки астероида маленькие
+ent-AsteroidDebrisSmall-name = asteroid debris small
 
-ent-AsteroidDebrisMedium-name = среда обломков астероида
+ent-AsteroidDebrisMedium-name = asteroid debris medium
 
-ent-AsteroidDebrisLarge-name = обломки астероида большие
+ent-AsteroidDebrisLarge-name = asteroid debris large
 
-ent-AsteroidDebrisLarger-name = обломки астероида крупнее
+ent-AsteroidDebrisLarger-name = asteroid debris larger
 
-ent-AsteroidSalvageSmall-name = Спасательный астероид маленький
+ent-AsteroidSalvageSmall-name = salvage asteroid small
 
-ent-AsteroidSalvageMedium-name = Спасательная среда астероида
+ent-AsteroidSalvageMedium-name = salvage asteroid medium
 
-ent-AsteroidSalvageLarge-name = Спасательный большой астероид
+ent-AsteroidSalvageLarge-name = salvage asteroid large
 
-ent-AsteroidSalvageHuge-name = Спасенный огромный астероид
+ent-AsteroidSalvageHuge-name = salvage asteroid huge
 
