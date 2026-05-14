@@ -19,3 +19,15 @@ paper-ui-fill-level = { $currentLength }/{ $maxLength }
 paper-ui-save-button = Сохранить ({ $keybind })
 
 paper-tamper-proof-modified-message = Текст на странице был написан с использованием нефальсицицируемых чернил.
+
+# Missing entries synced from en-US
+
+paper-form-fill-button = Заполнить
+
+paper-signature-sign-button = Знак
+
+paper-form-dialog-ok = OK
+
+paper-form-dialog-cancel = Отмена
+
+paper-signature-unknown = Неизвестно

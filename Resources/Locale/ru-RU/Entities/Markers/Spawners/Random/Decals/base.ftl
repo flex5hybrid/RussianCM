@@ -1,2 +1,2 @@
-ent-DecalSpawnerBase-name = Decal Spawner
+ent-DecalSpawnerBase-name = Создатель декалей
 

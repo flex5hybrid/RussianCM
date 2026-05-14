@@ -1,33 +1,33 @@
-ent-BorgChassisGeneric-name = generic cyborg
-ent-BorgChassisGeneric-desc = A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
+ent-BorgChassisGeneric-name = обычный киборг
+ent-BorgChassisGeneric-desc = Гибрид человека и машины, помогающий в работе станции. Им нравится, когда их просят излагать свои законы снова и снова.
 
-ent-BorgChassisMining-name = salvage cyborg
-ent-BorgChassisMining-desc = A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
+ent-BorgChassisMining-name = спасательный киборг
+ent-BorgChassisMining-desc = Гибрид человека и машины, помогающий в работе станции. Им нравится, когда их просят излагать свои законы снова и снова.
 
-ent-BorgChassisEngineer-name = engineer cyborg
-ent-BorgChassisEngineer-desc = A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
+ent-BorgChassisEngineer-name = инженер-киборг
+ent-BorgChassisEngineer-desc = Гибрид человека и машины, помогающий в работе станции. Им нравится, когда их просят излагать свои законы снова и снова.
 
-ent-BorgChassisJanitor-name = janitor cyborg
-ent-BorgChassisJanitor-desc = A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
+ent-BorgChassisJanitor-name = дворник-киборг
+ent-BorgChassisJanitor-desc = Гибрид человека и машины, помогающий в работе станции. Им нравится, когда их просят излагать свои законы снова и снова.
 
-ent-BorgChassisMedical-name = medical cyborg
-ent-BorgChassisMedical-desc = A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
+ent-BorgChassisMedical-name = медицинский киборг
+ent-BorgChassisMedical-desc = Гибрид человека и машины, помогающий в работе станции. Им нравится, когда их просят излагать свои законы снова и снова.
 
-ent-BorgChassisService-name = service cyborg
-ent-BorgChassisService-desc = A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
+ent-BorgChassisService-name = сервисный киборг
+ent-BorgChassisService-desc = Гибрид человека и машины, помогающий в работе станции. Им нравится, когда их просят излагать свои законы снова и снова.
 
-ent-BorgChassisSyndicateAssault-name = syndicate assault cyborg
-ent-BorgChassisSyndicateAssault-desc = A lean, mean killing machine with access to a variety of deadly modules.
+ent-BorgChassisSyndicateAssault-name = штурмовой киборг синдиката
+ent-BorgChassisSyndicateAssault-desc = Простая и жестокая машина для убийств с доступом к множеству смертоносных модулей.
 
-ent-BorgChassisSyndicateMedical-name = syndicate medical cyborg
-ent-BorgChassisSyndicateMedical-desc = A combat medical cyborg. Has limited offensive potential, but makes more than up for it with its support capabilities.
+ent-BorgChassisSyndicateMedical-name = медицинский киборг синдиката
+ent-BorgChassisSyndicateMedical-desc = Боевой медицинский киборг. Имеет ограниченный наступательный потенциал, но с лихвой компенсирует его возможностями поддержки.
 
-ent-BorgChassisSyndicateSaboteur-name = syndicate saboteur cyborg
-ent-BorgChassisSyndicateSaboteur-desc = A streamlined engineering cyborg, equipped with covert modules. Its chameleon projector lets it disguise itself as a Nanotrasen cyborg.
+ent-BorgChassisSyndicateSaboteur-name = диверсант синдиката киборг
+ent-BorgChassisSyndicateSaboteur-desc = Обтекаемый инженерный киборг, оснащенный скрытными модулями. Его проектор-хамелеон позволяет ему маскироваться под киборга Nanotrasen.
 
-ent-BorgChassisDerelict-name = derelict cyborg
-ent-BorgChassisDerelict-desc = A man-machine hybrid that assists in station activity. This one is in a state of great disrepair.
+ent-BorgChassisDerelict-name = заброшенный киборг
+ent-BorgChassisDerelict-desc = Гибрид человека и машины, помогающий в работе станции. Этот находится в очень плачевном состоянии.
 
-ent-BorgChassisSelectable-name = cyborg
-ent-BorgChassisSelectable-desc = A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
+ent-BorgChassisSelectable-name = киборг
+ent-BorgChassisSelectable-desc = Гибрид человека и машины, помогающий в работе станции. Им нравится, когда их просят излагать свои законы снова и снова.
 

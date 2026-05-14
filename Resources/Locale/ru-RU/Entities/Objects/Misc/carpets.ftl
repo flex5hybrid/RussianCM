@@ -1,30 +1,30 @@
-ent-FloorCarpetItemRed-name = carpet
-ent-FloorCarpetItemRed-desc = These could work as a pretty decent throwing weapon.
+ent-FloorCarpetItemRed-name = ковер
+ent-FloorCarpetItemRed-desc = Они могут работать как довольно приличное метательное оружие.
 
-ent-FloorCarpetItemBlack-name = carpet
-ent-FloorCarpetItemBlack-desc = These could work as a pretty decent throwing weapon.
+ent-FloorCarpetItemBlack-name = ковер
+ent-FloorCarpetItemBlack-desc = Они могут работать как довольно приличное метательное оружие.
 
-ent-FloorCarpetItemBlue-name = carpet
-ent-FloorCarpetItemBlue-desc = These could work as a pretty decent throwing weapon.
+ent-FloorCarpetItemBlue-name = ковер
+ent-FloorCarpetItemBlue-desc = Они могут работать как довольно приличное метательное оружие.
 
-ent-FloorCarpetItemGreen-name = carpet
-ent-FloorCarpetItemGreen-desc = These could work as a pretty decent throwing weapon.
+ent-FloorCarpetItemGreen-name = ковер
+ent-FloorCarpetItemGreen-desc = Они могут работать как довольно приличное метательное оружие.
 
-ent-FloorCarpetItemOrange-name = carpet
-ent-FloorCarpetItemOrange-desc = These could work as a pretty decent throwing weapon.
+ent-FloorCarpetItemOrange-name = ковер
+ent-FloorCarpetItemOrange-desc = Они могут работать как довольно приличное метательное оружие.
 
-ent-FloorCarpetItemSkyBlue-name = carpet
-ent-FloorCarpetItemSkyBlue-desc = These could work as a pretty decent throwing weapon.
+ent-FloorCarpetItemSkyBlue-name = ковер
+ent-FloorCarpetItemSkyBlue-desc = Они могут работать как довольно приличное метательное оружие.
 
-ent-FloorCarpetItemPurple-name = carpet
-ent-FloorCarpetItemPurple-desc = These could work as a pretty decent throwing weapon.
+ent-FloorCarpetItemPurple-name = ковер
+ent-FloorCarpetItemPurple-desc = Они могут работать как довольно приличное метательное оружие.
 
-ent-FloorCarpetItemPink-name = carpet
-ent-FloorCarpetItemPink-desc = These could work as a pretty decent throwing weapon.
+ent-FloorCarpetItemPink-name = ковер
+ent-FloorCarpetItemPink-desc = Они могут работать как довольно приличное метательное оружие.
 
-ent-FloorCarpetItemCyan-name = carpet
-ent-FloorCarpetItemCyan-desc = These could work as a pretty decent throwing weapon.
+ent-FloorCarpetItemCyan-name = ковер
+ent-FloorCarpetItemCyan-desc = Они могут работать как довольно приличное метательное оружие.
 
-ent-FloorCarpetItemWhite-name = carpet
-ent-FloorCarpetItemWhite-desc = These could work as a pretty decent throwing weapon.
+ent-FloorCarpetItemWhite-name = ковер
+ent-FloorCarpetItemWhite-desc = Они могут работать как довольно приличное метательное оружие.
 

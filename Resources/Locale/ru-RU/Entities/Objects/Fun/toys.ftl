@@ -1,94 +1,94 @@
-ent-ToyRubberDuck-name = rubber ducky
-ent-ToyRubberDuck-desc = Not carried here by ocean currents.
+ent-ToyRubberDuck-name = резиновая уточка
+ent-ToyRubberDuck-desc = Сюда не переносятся океанскими течениями.
 
-ent-RubberChicken-name = rubber chicken
-ent-RubberChicken-desc = A stress inducing parody of nature's most delectable avian.
+ent-RubberChicken-name = резиновая курица
+ent-RubberChicken-desc = Вызывающая стресс пародия на самую восхитительную птицу природы.
 
-ent-BaseFigurineCheapo-name = figurine
-ent-BaseFigurineCheapo-desc = A small miniature.
+ent-BaseFigurineCheapo-name = фигурка
+ent-BaseFigurineCheapo-desc = Небольшая миниатюра.
 
-ent-ToyAi-name = AI toy
-ent-ToyAi-desc = A scaled-down toy AI core.
+ent-ToyAi-name = ИИ игрушка
+ent-ToyAi-desc = Уменьшенное игрушечное ядро искусственного интеллекта.
 
-ent-ToyNuke-name = nuke toy
-ent-ToyNuke-desc = A plastic model of a Nuclear Fission Explosive. No uranium included... probably.
+ent-ToyNuke-name = ядерная игрушка
+ent-ToyNuke-desc = Пластиковая модель взрывчатки ядерного деления. Без урана... наверное.
 
-ent-ToyIan-name = ian toy
-ent-ToyIan-desc = Unable to eat, but just as fluffy as the real guy!
+ent-ToyIan-name = ян игрушка
+ent-ToyIan-desc = Неспособный есть, но такой же пушистый, как настоящий парень!
 
-ent-FoamCrossbow-name = foam crossbow
-ent-FoamCrossbow-desc = Aiming this at Security may get you filled with lead.
+ent-FoamCrossbow-name = пенопластовый арбалет
+ent-FoamCrossbow-desc = Нацелившись на службу безопасности, вы можете наполниться свинцом.
 
-ent-ToyGunBase-name = ToyGunBase
-ent-ToyGunBase-desc = A rooty tooty point and shooty.
+ent-ToyGunBase-name = ИгрушкаПистолетБаза
+ent-ToyGunBase-desc = Коренной зубастый и стрелковый.
 
-ent-RevolverCapGun-name = cap gun
-ent-RevolverCapGun-desc = Looks almost like the real thing! Ages 8 and up.
+ent-RevolverCapGun-name = Кепочный пистолет
+ent-RevolverCapGun-desc = Выглядит почти как настоящий! Возраст от 8 лет и старше.
 
-ent-RevolverCapGunFake-name = cap gun
-ent-RevolverCapGunFake-desc = Looks almost like the real thing! Ages 8 and up.
+ent-RevolverCapGunFake-name = Кепочный пистолет
+ent-RevolverCapGunFake-desc = Выглядит почти как настоящий! Возраст от 8 лет и старше.
 
-ent-FoamBlade-name = foamblade
-ent-FoamBlade-desc = It says "Sternside Changs number 1 fan" on it.
+ent-FoamBlade-name = пенопласт
+ent-FoamBlade-desc = На нем написано: «Фанат Стернсайда Чанга номер 1».
 
-ent-Basketball-name = basketball
-ent-Basketball-desc = Where dah courts at?
+ent-Basketball-name = баскетбол
+ent-Basketball-desc = Где находятся суды?
 
-ent-Football-name = football
-ent-Football-desc = Otherwise known as a handegg.
+ent-Football-name = футбол
+ent-Football-desc = Иначе известно как ручное яйцо.
 
-ent-BeachBall-name = beach ball
-ent-BeachBall-desc = The simple beach ball is one of Nanotrasen's most popular products. 'Why do we make beach balls? Because we can! (TM)' - Nanotrasen
+ent-BeachBall-name = пляжный мяч
+ent-BeachBall-desc = Простой пляжный мяч — один из самых популярных продуктов Nanotrasen. «Почему мы делаем пляжные мячи? Потому что мы можем! (ТМ)' - Нанотрасен
 
-ent-BalloonSyn-name = syndie balloon
-ent-BalloonSyn-desc = Handed out to the bravest souls who survived the "atomic twister" ride at Syndieland.
+ent-BalloonSyn-name = Синди воздушный шар
+ent-BalloonSyn-desc = Вручается самым смелым душам, пережившим поездку на «атомном смерче» в Синдиленде.
 
-ent-BalloonNT-name = nanotrasen balloon
-ent-BalloonNT-desc = Specially designed to inflict maximum psychological damage to Syndicate operatives.
+ent-BalloonNT-name = нанотрасен воздушный шар
+ent-BalloonNT-desc = Специально разработан для нанесения максимального психологического ущерба оперативникам Синдиката.
 
-ent-BalloonCorgi-name = corgi balloon
-ent-BalloonCorgi-desc = Just like owning a real dog - but a lot floatier.
+ent-BalloonCorgi-name = корги воздушный шар
+ent-BalloonCorgi-desc = Точно так же, как настоящая собака, только гораздо более плавная.
 
-ent-SingularityToy-name = singuloth-brand toy
-ent-SingularityToy-desc = Mass-produced by a sadistic corporate conglomerate!
+ent-SingularityToy-name = игрушка марки Singuloth
+ent-SingularityToy-desc = Массовое производство садистского корпоративного конгломерата!
 
-ent-TeslaToy-name = Teddy Tesla
-ent-TeslaToy-desc = The favorite toy of the great engineer Nikola Tesla.
+ent-TeslaToy-name = Тедди Тесла
+ent-TeslaToy-desc = Любимая игрушка великого инженера Николы Теслы.
 
-ent-PonderingOrb-name = pondering orb
-ent-PonderingOrb-desc = Ponderous, man... Really ponderous.
+ent-PonderingOrb-name = размышляющий шар
+ent-PonderingOrb-desc = Тяжеловесно, чувак... Действительно тяжеловесно.
 
-ent-PonderingOrbWizard-name = pondering orb
-ent-PonderingOrbWizard-desc = Ponderous, man... Really ponderous. Magically shows the station's camera network.
+ent-PonderingOrbWizard-name = размышляющий шар
+ent-PonderingOrbWizard-desc = Тяжеловесно, чувак... Действительно тяжеловесно. Волшебным образом показывает сеть камер станции.
 
-ent-ToySword-name = toy sword
-ent-ToySword-desc = New Sandy-Cat plastic sword! Comes with realistic sound and full color! Looks almost like the real thing!
+ent-ToySword-name = игрушечный меч
+ent-ToySword-desc = Новый пластиковый меч Sandy-Cat! Поставляется с реалистичным звуком и полным цветом! Выглядит почти как настоящий!
 
-ent-ToyAmongPequeno-name = among pequeño
-ent-ToyAmongPequeno-desc = Sus!
+ent-ToyAmongPequeno-name = среди пекеньо
+ent-ToyAmongPequeno-desc = Сус!
 
-ent-FoamCutlass-name = foam cutlass
-ent-FoamCutlass-desc = Cosplay as a pirate and force your friends to walk the plank.
+ent-FoamCutlass-name = пенопластовая абордажная сабля
+ent-FoamCutlass-desc = Перевоплотитесь в пирата и заставьте своих друзей пройтись по доске.
 
-ent-ClownRecorder-name = clown recorder
-ent-ClownRecorder-desc = When you just can't get those laughs coming the natural way!
+ent-ClownRecorder-name = клоун-диктофон
+ent-ClownRecorder-desc = Когда ты просто не можешь заставить себя смеяться естественным путем!
 
-ent-ToyHammer-name = rubber hammer
-ent-ToyHammer-desc = A brightly colored hammer made of rubber.
+ent-ToyHammer-name = резиновый молоток
+ent-ToyHammer-desc = Яркий молоток из резины.
 
-ent-WhoopieCushion-name = whoopie cushion
-ent-WhoopieCushion-desc = A practical joke device involving flatulence humour.
+ent-WhoopieCushion-name = подушка-вупи
+ent-WhoopieCushion-desc = Розыгрыш с использованием юмора, вызывающего метеоризм.
 
-ent-PlasticBanana-name = banana
-ent-PlasticBanana-desc = A plastic banana.
+ent-PlasticBanana-name = банан
+ent-PlasticBanana-desc = Пластиковый банан.
 
-ent-CrazyGlue-name = crazy glue
-ent-CrazyGlue-desc = A bottle of crazy glue manufactured by Honk! Co.
+ent-CrazyGlue-name = сумасшедший клей
+ent-CrazyGlue-desc = Бутылка безумного клея производства Honk! Ко.
 
-ent-NewtonCradle-name = newton cradle
-ent-NewtonCradle-desc = A device bored paper pushers use to remind themselves that time did not stop yet. Contains gravity.
+ent-NewtonCradle-name = колыбель Ньютона
+ent-NewtonCradle-desc = Устройство, которое толкатели бумаги используют, чтобы напомнить себе, что время еще не остановилось. Содержит гравитацию.
 
-ent-BaseRubberToy-name = item
+ent-BaseRubberToy-name = элемент
 
-ent-FoamWeaponBase-name = item
+ent-FoamWeaponBase-name = элемент
 

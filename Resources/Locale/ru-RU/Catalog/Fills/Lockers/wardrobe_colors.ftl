@@ -1,24 +1,24 @@
-ent-WardrobeGreyFilled-name = grey wardrobe
-ent-WardrobeGreyFilled-desc = A wardrobe packed with a tide of grey clothing.
+ent-WardrobeGreyFilled-name = серый шкаф
+ent-WardrobeGreyFilled-desc = Шкаф, битком набитый серой одеждой.
 
-ent-WardrobeMixedFilled-name = mixed wardrobe
-ent-WardrobeMixedFilled-desc = A wardrobe packed with a mix of colorful clothing.
+ent-WardrobeMixedFilled-name = смешанный гардероб
+ent-WardrobeMixedFilled-desc = Гардероб, наполненный разноцветной одеждой.
 
-ent-WardrobeYellowFilled-name = yellow wardrobe
-ent-WardrobeYellowFilled-desc = A wardrobe packed with stylish yellow clothing.
+ent-WardrobeYellowFilled-name = желтый шкаф
+ent-WardrobeYellowFilled-desc = Шкаф, наполненный стильной желтой одеждой.
 
-ent-WardrobeWhiteFilled-name = white wardrobe
-ent-WardrobeWhiteFilled-desc = A wardrobe packed with stylish white clothing.
+ent-WardrobeWhiteFilled-name = белый шкаф
+ent-WardrobeWhiteFilled-desc = Шкаф, наполненный стильной белой одеждой.
 
-ent-WardrobeBlueFilled-name = blue wardrobe
-ent-WardrobeBlueFilled-desc = A wardrobe packed with stylish blue clothing.
+ent-WardrobeBlueFilled-name = синий шкаф
+ent-WardrobeBlueFilled-desc = Гардероб, наполненный стильной синей одеждой.
 
-ent-WardrobePinkFilled-name = pink wardrobe
-ent-WardrobePinkFilled-desc = A wardrobe packed with fabulous pink clothing.
+ent-WardrobePinkFilled-name = розовый шкаф
+ent-WardrobePinkFilled-desc = Гардероб, наполненный сказочной розовой одеждой.
 
-ent-WardrobeBlackFilled-name = black wardrobe
-ent-WardrobeBlackFilled-desc = A wardrobe packed with stylish black clothing.
+ent-WardrobeBlackFilled-name = черный шкаф
+ent-WardrobeBlackFilled-desc = Шкаф, наполненный стильной черной одеждой.
 
-ent-WardrobeGreenFilled-name = green wardrobe
-ent-WardrobeGreenFilled-desc = A wardrobe packed with stylish green clothing.
+ent-WardrobeGreenFilled-name = зеленый шкаф
+ent-WardrobeGreenFilled-desc = Гардероб, наполненный стильной зеленой одеждой.
 

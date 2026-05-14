@@ -1,8 +1,8 @@
-ent-BaseCartridgeCaselessRifle-name = cartridge (.25 caseless)
+ent-BaseCartridgeCaselessRifle-name = патрон (.25 безгильзовый)
 
-ent-CartridgeCaselessRifle-name = cartridge (.25 caseless)
-ent-CartridgeCaselessRifle-desc = A small caliber utilizing caseless technology, omitting conventional brass casing in favor of hardened propellant. Standard kinetic ammunition is common and useful in most situations.
+ent-CartridgeCaselessRifle-name = патрон (.25 безгильзовый)
+ent-CartridgeCaselessRifle-desc = Небольшой калибр, созданный по безгильзовой технологии, без обычного латунного кожуха в пользу закаленного пороха. Стандартные кинетические боеприпасы распространены и полезны в большинстве ситуаций.
 
-ent-CartridgeCaselessRiflePractice-name = cartridge (.25 caseless practice)
-ent-CartridgeCaselessRiflePractice-desc = A small caliber utilizing caseless technology, omitting conventional brass casing in favor of hardened propellant. Chalk ammunition is generally non-harmful, used for practice.
+ent-CartridgeCaselessRiflePractice-name = патрон (безгильзовый практический .25)
+ent-CartridgeCaselessRiflePractice-desc = Небольшой калибр, созданный по безгильзовой технологии, без обычного латунного кожуха в пользу закаленного пороха. Меловые боеприпасы в целом безвредны, используются для практики.
 

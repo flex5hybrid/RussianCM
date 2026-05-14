@@ -1,6 +1,6 @@
-ent-DiceBag-name = bag of dice
-ent-DiceBag-desc = Contains all the luck you'll ever need.
+ent-DiceBag-name = мешок с игральными костями
+ent-DiceBag-desc = Содержит всю удачу, которая вам когда-либо понадобится.
 
-ent-MagicDiceBag-name = bag of dice
-ent-MagicDiceBag-desc = Contains all the luck you'll ever need.
+ent-MagicDiceBag-name = мешок с игральными костями
+ent-MagicDiceBag-desc = Содержит всю удачу, которая вам когда-либо понадобится.
 

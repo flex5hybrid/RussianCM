@@ -1,5 +1,5 @@
-ent-ActionViewLaws-name = View Laws
-ent-ActionViewLaws-desc = View the laws that you must follow.
+ent-ActionViewLaws-name = Посмотреть законы
+ent-ActionViewLaws-desc = Ознакомьтесь с законами, которым вы должны следовать.
 
-ent-ActionSelectBorgType-name = Select Cyborg Type
+ent-ActionSelectBorgType-name = Выберите тип киборга
 

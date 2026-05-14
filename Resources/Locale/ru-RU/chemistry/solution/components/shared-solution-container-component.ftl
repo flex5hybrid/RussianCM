@@ -35,3 +35,17 @@ examinable-solution-on-examine-volume-puddle = Лужа { $fillLevel ->
         [mostlyempty] [color=#A4A4A4]почти пустая[/color]
         *[empty] [color=gray]пустая[/color]
     }
+
+# Missing entries synced from en-US
+
+shared-solution-container-component-on-examine-empty-container = Не содержит химикатов.
+
+shared-solution-container-component-on-examine-worded-amount-one-reagent = chemical.
+
+shared-solution-container-component-on-examine-worded-amount-multiple-reagents = смесь химических веществ.
+
+examinable-solution-recognized-first = [color={$color}]{$chemical}[/color]
+
+examinable-solution-recognized-next = , [color={$color}]{$chemical}[/color]
+
+examinable-solution-recognized-last = и [color={$color}]{$chemical}[/color]

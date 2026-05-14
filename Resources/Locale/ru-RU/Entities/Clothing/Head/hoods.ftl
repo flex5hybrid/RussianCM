@@ -1,156 +1,156 @@
-ent-ClothingHeadHatHoodBioGeneral-name = bio hood
-ent-ClothingHeadHatHoodBioGeneral-desc = A hood that protects the head and face from biological contaminants.
+ent-ClothingHeadHatHoodBioGeneral-name = био капюшон
+ent-ClothingHeadHatHoodBioGeneral-desc = Капюшон, защищающий голову и лицо от биологических загрязнений.
 
-ent-ClothingHeadHatHoodBioCmo-name = bio hood
-ent-ClothingHeadHatHoodBioCmo-desc = An advanced hood for chief medical officers that protects the head and face from biological contaminants.
+ent-ClothingHeadHatHoodBioCmo-name = био капюшон
+ent-ClothingHeadHatHoodBioCmo-desc = Усовершенствованный капюшон для главного врача, защищающий голову и лицо от биологических загрязнений.
 
-ent-ClothingHeadHatHoodBioJanitor-name = bio hood
-ent-ClothingHeadHatHoodBioJanitor-desc = A hood that protects the head and face from biological contaminants.
+ent-ClothingHeadHatHoodBioJanitor-name = био капюшон
+ent-ClothingHeadHatHoodBioJanitor-desc = Капюшон, защищающий голову и лицо от биологических загрязнений.
 
-ent-ClothingHeadHatHoodBioScientist-name = bio hood
-ent-ClothingHeadHatHoodBioScientist-desc = A hood that protects the head and face from biological contaminants.
+ent-ClothingHeadHatHoodBioScientist-name = био капюшон
+ent-ClothingHeadHatHoodBioScientist-desc = Капюшон, защищающий голову и лицо от биологических загрязнений.
 
-ent-ClothingHeadHatHoodBioSecurity-name = bio hood
-ent-ClothingHeadHatHoodBioSecurity-desc = A hood that protects the head and face from biological contaminants.
+ent-ClothingHeadHatHoodBioSecurity-name = био капюшон
+ent-ClothingHeadHatHoodBioSecurity-desc = Капюшон, защищающий голову и лицо от биологических загрязнений.
 
-ent-ClothingHeadHatHoodBioVirology-name = bio hood
-ent-ClothingHeadHatHoodBioVirology-desc = A hood that strongly protects the head and face from biological contaminants.
+ent-ClothingHeadHatHoodBioVirology-name = био капюшон
+ent-ClothingHeadHatHoodBioVirology-desc = Капюшон, надежно защищающий голову и лицо от биологических загрязнений.
 
-ent-ClothingHeadHatHoodChaplainHood-name = chaplain's hood
-ent-ClothingHeadHatHoodChaplainHood-desc = Maximum piety in this star system.
+ent-ClothingHeadHatHoodChaplainHood-name = капюшон капеллана
+ent-ClothingHeadHatHoodChaplainHood-desc = Максимальное благочестие в этой звездной системе.
 
-ent-ClothingHeadHatHoodCulthood-name = cult hood
-ent-ClothingHeadHatHoodCulthood-desc = There's no cult without cult hoods.
+ent-ClothingHeadHatHoodCulthood-name = культовый капюшон
+ent-ClothingHeadHatHoodCulthood-desc = Нет культа без культовых капюшонов.
 
-ent-ClothingHeadHatHoodNunHood-name = nun hood
-ent-ClothingHeadHatHoodNunHood-desc = Maximum piety in this star system.
+ent-ClothingHeadHatHoodNunHood-name = монахиня капюшон
+ent-ClothingHeadHatHoodNunHood-desc = Максимальное благочестие в этой звездной системе.
 
-ent-ClothingHeadHatHoodRad-name = radiation hood
-ent-ClothingHeadHatHoodRad-desc = A hood of the hazmat suit, designed for protection from high radioactivity.
+ent-ClothingHeadHatHoodRad-name = радиационный капюшон
+ent-ClothingHeadHatHoodRad-desc = Капюшон защитного костюма, предназначенный для защиты от повышенной радиоактивности.
 
-ent-ClothingHeadHatHoodGoliathCloak-name = goliath cloak hood
-ent-ClothingHeadHatHoodGoliathCloak-desc = A hood of a goliath cloak, it is made from the hide of resilient fauna from a distant planet.
+ent-ClothingHeadHatHoodGoliathCloak-name = плащ голиафа с капюшоном
+ent-ClothingHeadHatHoodGoliathCloak-desc = Капюшон плаща-голиафа сделан из шкуры выносливой фауны с далекой планеты.
 
-ent-ClothingHeadHatHoodIan-name = ian hood
-ent-ClothingHeadHatHoodIan-desc = A hood to complete the 'Good boy' look.
+ent-ClothingHeadHatHoodIan-name = Йен Худ
+ent-ClothingHeadHatHoodIan-desc = Капюшон, дополняющий образ «хорошего мальчика».
 
-ent-ClothingHeadHatHoodCarp-name = carp hood
-ent-ClothingHeadHatHoodCarp-desc = A gnarly hood adorned with plastic space carp teeth.
+ent-ClothingHeadHatHoodCarp-name = карповый капюшон
+ent-ClothingHeadHatHoodCarp-desc = Корявый капюшон, украшенный пластиковыми зубами космического карпа.
 
-ent-ClothingHeadHatHoodMoth-name = moth mask
-ent-ClothingHeadHatHoodMoth-desc = A mask in the form of a moths head is usually made of lightweight materials. It mimics the shape of a moths head with large eyes and long antennae. Such masks are often used in cosplay, or when shooting movies and videos.
+ent-ClothingHeadHatHoodMoth-name = маска от моли
+ent-ClothingHeadHatHoodMoth-desc = Маска в виде головы мотылька обычно изготавливается из легких материалов. Он имитирует форму головы мотылька с большими глазами и длинными усиками. Такие маски часто используются в косплее, при съемках фильмов и видеороликов.
 
-ent-ClothingHeadHatHoodWinterDefault-name = default winter coat hood
-ent-ClothingHeadHatHoodWinterDefault-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterDefault-name = капюшон зимнего пальто по умолчанию
+ent-ClothingHeadHatHoodWinterDefault-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterBartender-name = bartender winter coat hood
-ent-ClothingHeadHatHoodWinterBartender-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterBartender-name = зимнее пальто бармена с капюшоном
+ent-ClothingHeadHatHoodWinterBartender-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterCaptain-name = captain's winter coat hood
-ent-ClothingHeadHatHoodWinterCaptain-desc = An expensive hood, to keep the captain's head warm.
+ent-ClothingHeadHatHoodWinterCaptain-name = капитанская зимняя куртка с капюшоном
+ent-ClothingHeadHatHoodWinterCaptain-desc = Дорогой капюшон, чтобы держать голову капитана в тепле.
 
-ent-ClothingHeadHatHoodWinterCargo-name = cargo winter coat hood
-ent-ClothingHeadHatHoodWinterCargo-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterCargo-name = капюшон зимнего пальто-карго
+ent-ClothingHeadHatHoodWinterCargo-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterCE-name = chief engineer's winter coat hood
-ent-ClothingHeadHatHoodWinterCE-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterCE-name = капюшон зимнего пальто главного инженера
+ent-ClothingHeadHatHoodWinterCE-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterCentcom-name = CentComm winter coat hood
-ent-ClothingHeadHatHoodWinterCentcom-desc = A hood for keeping the central comander's head warm.
+ent-ClothingHeadHatHoodWinterCentcom-name = Капюшон зимнего пальто CentComm
+ent-ClothingHeadHatHoodWinterCentcom-desc = Капюшон для согрева головы центрального командира.
 
-ent-ClothingHeadHatHoodWinterChem-name = chemist winter coat hood
-ent-ClothingHeadHatHoodWinterChem-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterChem-name = зимнее пальто химика с капюшоном
+ent-ClothingHeadHatHoodWinterChem-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterCMO-name = chief medical officer's winter coat hood
-ent-ClothingHeadHatHoodWinterCMO-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterCMO-name = капюшон зимнего пальто главного врача
+ent-ClothingHeadHatHoodWinterCMO-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterEngineer-name = engineer winter coat hood
-ent-ClothingHeadHatHoodWinterEngineer-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterEngineer-name = зимнее пальто инженера с капюшоном
+ent-ClothingHeadHatHoodWinterEngineer-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterHOP-name = head of personnel's winter coat hood
-ent-ClothingHeadHatHoodWinterHOP-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterHOP-name = капюшон зимней куртки начальника отдела кадров
+ent-ClothingHeadHatHoodWinterHOP-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterHOS-name = head of security's winter coat hood
-ent-ClothingHeadHatHoodWinterHOS-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterHOS-name = капюшон зимнего пальто начальника охраны
+ent-ClothingHeadHatHoodWinterHOS-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterHydro-name = hydroponics coat hood
-ent-ClothingHeadHatHoodWinterHydro-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterHydro-name = капюшон для гидропоники
+ent-ClothingHeadHatHoodWinterHydro-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterJani-name = janitor coat hood
-ent-ClothingHeadHatHoodWinterJani-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterJani-name = капюшон пальто дворника
+ent-ClothingHeadHatHoodWinterJani-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterMed-name = medic coat hood
-ent-ClothingHeadHatHoodWinterMed-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterMed-name = медицинский халат с капюшоном
+ent-ClothingHeadHatHoodWinterMed-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterMime-name = mime coat hood
-ent-ClothingHeadHatHoodWinterMime-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterMime-name = мим пальто с капюшоном
+ent-ClothingHeadHatHoodWinterMime-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterMiner-name = miner coat hood
-ent-ClothingHeadHatHoodWinterMiner-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterMiner-name = капюшон шахтерского пальто
+ent-ClothingHeadHatHoodWinterMiner-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterPara-name = paramedic coat hood
-ent-ClothingHeadHatHoodWinterPara-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterPara-name = капюшон фельдшера
+ent-ClothingHeadHatHoodWinterPara-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterQM-name = quartermaster's coat hood
-ent-ClothingHeadHatHoodWinterQM-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterQM-name = капюшон интендантского пальто
+ent-ClothingHeadHatHoodWinterQM-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterRD-name = research director's coat hood
-ent-ClothingHeadHatHoodWinterRD-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterRD-name = капюшон пальто директора по исследованиям
+ent-ClothingHeadHatHoodWinterRD-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterRobo-name = robotics coat hood
-ent-ClothingHeadHatHoodWinterRobo-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterRobo-name = капюшон для робототехники
+ent-ClothingHeadHatHoodWinterRobo-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterSci-name = scientist coat hood
-ent-ClothingHeadHatHoodWinterSci-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterSci-name = капюшон пальто ученого
+ent-ClothingHeadHatHoodWinterSci-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterSec-name = security coat hood
-ent-ClothingHeadHatHoodWinterSec-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterSec-name = капюшон пальто безопасности
+ent-ClothingHeadHatHoodWinterSec-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterSyndie-name = syndicate coat hood
-ent-ClothingHeadHatHoodWinterSyndie-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterSyndie-name = капюшон синдиката
+ent-ClothingHeadHatHoodWinterSyndie-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterWarden-name = warden's coat hood
-ent-ClothingHeadHatHoodWinterWarden-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterWarden-name = Капюшон пальто начальника
+ent-ClothingHeadHatHoodWinterWarden-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterWeb-name = web coat hood
-ent-ClothingHeadHatHoodWinterWeb-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterWeb-name = веб-капюшон пальто
+ent-ClothingHeadHatHoodWinterWeb-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterColorBlack-name = black winter coat hood
-ent-ClothingHeadHatHoodWinterColorBlack-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterColorBlack-name = черный капюшон зимнего пальто
+ent-ClothingHeadHatHoodWinterColorBlack-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterColorPurple-name = purple winter coat hood
-ent-ClothingHeadHatHoodWinterColorPurple-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterColorPurple-name = фиолетовый капюшон зимнего пальто
+ent-ClothingHeadHatHoodWinterColorPurple-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterColorRed-name = red winter coat hood
-ent-ClothingHeadHatHoodWinterColorRed-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterColorRed-name = красный капюшон зимнего пальто
+ent-ClothingHeadHatHoodWinterColorRed-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterColorBlue-name = blue winter coat hood
-ent-ClothingHeadHatHoodWinterColorBlue-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterColorBlue-name = синий капюшон зимнего пальто
+ent-ClothingHeadHatHoodWinterColorBlue-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterColorBrown-name = brown winter coat hood
-ent-ClothingHeadHatHoodWinterColorBrown-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterColorBrown-name = коричневый капюшон зимнего пальто
+ent-ClothingHeadHatHoodWinterColorBrown-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterColorGray-name = gray winter coat hood
-ent-ClothingHeadHatHoodWinterColorGray-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterColorGray-name = серый капюшон зимнего пальто
+ent-ClothingHeadHatHoodWinterColorGray-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterColorGreen-name = green winter coat hood
-ent-ClothingHeadHatHoodWinterColorGreen-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterColorGreen-name = зеленый капюшон зимнего пальто
+ent-ClothingHeadHatHoodWinterColorGreen-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterColorLightBrown-name = light brown winter coat hood
-ent-ClothingHeadHatHoodWinterColorLightBrown-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterColorLightBrown-name = светло-коричневый капюшон зимнего пальто
+ent-ClothingHeadHatHoodWinterColorLightBrown-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterColorOrange-name = orange winter coat hood
-ent-ClothingHeadHatHoodWinterColorOrange-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterColorOrange-name = оранжевый капюшон зимнего пальто
+ent-ClothingHeadHatHoodWinterColorOrange-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterColorWhite-name = white winter coat hood
-ent-ClothingHeadHatHoodWinterColorWhite-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterColorWhite-name = белое зимнее пальто с капюшоном
+ent-ClothingHeadHatHoodWinterColorWhite-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodWinterColorYellow-name = yellow winter coat hood
-ent-ClothingHeadHatHoodWinterColorYellow-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterColorYellow-name = желтый капюшон зимнего пальто
+ent-ClothingHeadHatHoodWinterColorYellow-desc = Капюшон, предназначенный для согрева головы.
 
-ent-ClothingHeadHatHoodVoidCloak-name = void cloak hood
-ent-ClothingHeadHatHoodVoidCloak-desc = The hood of a void cloak. For those who have gone to the dark side of the force.
+ent-ClothingHeadHatHoodVoidCloak-name = капюшон плаща пустоты
+ent-ClothingHeadHatHoodVoidCloak-desc = Капюшон плаща пустоты. Для тех, кто перешел на темную сторону силы.
 
-ent-ClothingHeadHelmetHardsuitCarp-name = carp hood
-ent-ClothingHeadHelmetHardsuitCarp-desc = A gnarly hood adorned with plastic space carp teeth.
+ent-ClothingHeadHelmetHardsuitCarp-name = карповый капюшон
+ent-ClothingHeadHelmetHardsuitCarp-desc = Корявый капюшон, украшенный пластиковыми зубами космического карпа.
 

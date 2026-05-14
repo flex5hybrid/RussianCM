@@ -1,33 +1,33 @@
-ent-LogicEmptyCircuit-name = empty circuit
-ent-LogicEmptyCircuit-desc = Something seems to be missing.
+ent-LogicEmptyCircuit-name = пустая цепь
+ent-LogicEmptyCircuit-desc = Кажется, чего-то не хватает.
 
-ent-LogicGateOr-name = logic gate
-ent-LogicGateOr-desc = A logic gate with two inputs and one output. Technicians can change its mode of operation using a screwdriver.
+ent-LogicGateOr-name = логический вентиль
+ent-LogicGateOr-desc = Логический вентиль с двумя входами и одним выходом. Техники могут изменить его режим работы с помощью отвертки.
 
-ent-EdgeDetector-name = edge detector
-ent-EdgeDetector-desc = Splits rising and falling edges into unique pulses and detects how edgy you are.
+ent-EdgeDetector-name = детектор края
+ent-EdgeDetector-desc = Разделяет нарастающие и спадающие фронты на уникальные импульсы и определяет, насколько вы раздражительны.
 
-ent-PowerSensor-name = power sensor
-ent-PowerSensor-desc = Generates signals in response to powernet changes. Can be cycled between cable voltages.
+ent-PowerSensor-name = датчик мощности
+ent-PowerSensor-desc = Генерирует сигналы в ответ на изменения в сети питания. Может переключаться между напряжениями кабеля.
 
-ent-MemoryCell-name = memory cell
-ent-MemoryCell-desc = A D-Latch circuit that stores a signal which can be changed depending on input and enable ports.
+ent-MemoryCell-name = ячейка памяти
+ent-MemoryCell-desc = Схема D-Latch, хранящая сигнал, который можно изменять в зависимости от входных и разрешающих портов.
 
-ent-BaseLogicItem-name = empty circuit
-ent-BaseLogicItem-desc = Something seems to be missing.
+ent-BaseLogicItem-name = пустая цепь
+ent-BaseLogicItem-desc = Кажется, чего-то не хватает.
 
-ent-LogicGateAnd-name = logic gate
-ent-LogicGateAnd-desc = A logic gate with two inputs and one output. Technicians can change its mode of operation using a screwdriver.
+ent-LogicGateAnd-name = логический вентиль
+ent-LogicGateAnd-desc = Логический вентиль с двумя входами и одним выходом. Техники могут изменить его режим работы с помощью отвертки.
 
-ent-LogicGateXor-name = logic gate
-ent-LogicGateXor-desc = A logic gate with two inputs and one output. Technicians can change its mode of operation using a screwdriver.
+ent-LogicGateXor-name = логический вентиль
+ent-LogicGateXor-desc = Логический вентиль с двумя входами и одним выходом. Техники могут изменить его режим работы с помощью отвертки.
 
-ent-LogicGateNor-name = logic gate
-ent-LogicGateNor-desc = A logic gate with two inputs and one output. Technicians can change its mode of operation using a screwdriver.
+ent-LogicGateNor-name = логический вентиль
+ent-LogicGateNor-desc = Логический вентиль с двумя входами и одним выходом. Техники могут изменить его режим работы с помощью отвертки.
 
-ent-LogicGateNand-name = logic gate
-ent-LogicGateNand-desc = A logic gate with two inputs and one output. Technicians can change its mode of operation using a screwdriver.
+ent-LogicGateNand-name = логический вентиль
+ent-LogicGateNand-desc = Логический вентиль с двумя входами и одним выходом. Техники могут изменить его режим работы с помощью отвертки.
 
-ent-LogicGateXnor-name = logic gate
-ent-LogicGateXnor-desc = A logic gate with two inputs and one output. Technicians can change its mode of operation using a screwdriver.
+ent-LogicGateXnor-name = логический вентиль
+ent-LogicGateXnor-desc = Логический вентиль с двумя входами и одним выходом. Техники могут изменить его режим работы с помощью отвертки.
 

@@ -1,3 +1,3 @@
-ent-Singularity-name = gravitational singularity
-ent-Singularity-desc = A mesmerizing swirl of darkness that sucks in everything. If it's moving towards you, run.
+ent-Singularity-name = гравитационная сингулярность
+ent-Singularity-desc = Завораживающий водоворот тьмы, поглощающий все. Если он движется к вам, бегите.
 

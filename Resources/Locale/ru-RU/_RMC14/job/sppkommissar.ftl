@@ -1,30 +1,30 @@
-﻿rmc-ghost-role-information-spp-kommissar-rules = You are a [color=red][bold]political officer of the SPP[/bold][/color]. You may or may not be hostile to the marines, depending on admin instructions.
-                                             You don't remember any of your previous life, and you don't remember anything you learned as a ghost.
-                                             You are allowed to remember knowledge about the game in general, such as how to cook, how to use objects, etc.
-                                             You are absolutely [color=red]NOT[/color] allowed to remember, say, the name, appearance, etc. of your previous character.
+rmc-ghost-role-information-spp-kommissar-rules = Вы [color=red][bold]политический офицер СПН[/bold][/color]. Вы можете быть враждебны морпехам или нет, в зависимости от указаний администрации.
+                                             Вы не помните свою прошлую жизнь и не помните ничего, что узнали как призрак.
+                                             Вы можете помнить общие знания об игре: как готовить, как пользоваться предметами и тому подобное.
+                                             Вам категорически [color=red]ЗАПРЕЩЕНО[/color] помнить, например, имя, внешность и другие сведения о вашем предыдущем персонаже.
 
-rmc-ghost-role-information-spp-kommissar-description = You are a political officer. Follow party order and serve as the authority on political matters. For the party!
+rmc-ghost-role-information-spp-kommissar-description = Вы политический офицер. Выполняйте партийные приказы и будьте главным авторитетом в политических вопросах. За партию!
 
-rmc-job-name-spp-kommissar = Political Kommissar
-rmc-job-description-spp-kommissar = You are a direct agent of the party. Ensure the party line is towed, and that the party's interests are maintained.
-rmc-job-prefix-spp-kommissar = Kom.
+rmc-job-name-spp-kommissar = Политический комиссар
+rmc-job-description-spp-kommissar = Вы прямой представитель партии. Следите за соблюдением партийной линии и защитой интересов партии.
+rmc-job-prefix-spp-kommissar = Ком.
 
-rmc-job-name-spp-battalion-kommissar = Battalion Kommissar
-rmc-job-description-spp-battalion-kommissar = You are a battalion-level political officer. Follow party orders, and serve as the authority on political matters for the unit. For the party!
-rmc-job-prefix-spp-battalion-kommissar = Batt. Kom.
+rmc-job-name-spp-battalion-kommissar = Батальонный комиссар
+rmc-job-description-spp-battalion-kommissar = Вы политический офицер батальонного уровня. Выполняйте партийные приказы и будьте главным авторитетом по политическим вопросам в подразделении. За партию!
+rmc-job-prefix-spp-battalion-kommissar = Бат. ком.
 
-rmc-job-name-spp-sr-battalion-kommissar = Senior Battalion Kommissar
-rmc-job-description-spp-sr-battalion-kommissar = You are a senior battalion-level political officer. Follow party orders, and serve as the authority on political matters for the unit. For the party!
-rmc-job-prefix-spp-sr-battalion-kommissar = Sr. Batt. Kom.
+rmc-job-name-spp-sr-battalion-kommissar = Старший батальонный комиссар
+rmc-job-description-spp-sr-battalion-kommissar = Вы старший политический офицер батальонного уровня. Выполняйте партийные приказы и будьте главным авторитетом по политическим вопросам в подразделении. За партию!
+rmc-job-prefix-spp-sr-battalion-kommissar = Ст. бат. ком.
 
-rmc-job-name-spp-regimental-kommissar = Regimental Kommissar
-rmc-job-description-spp-regimental-kommissar = You are a Regimental-level political officer. Follow party orders or give them, and serve as the authority on political matters for the unit. For the party!
-rmc-job-prefix-spp-regimental-kommissar = Reg. Kom.
+rmc-job-name-spp-regimental-kommissar = Полковой комиссар
+rmc-job-description-spp-regimental-kommissar = Вы политический офицер полкового уровня. Выполняйте партийные приказы или отдавайте их сами, и будьте главным авторитетом по политическим вопросам в подразделении. За партию!
+rmc-job-prefix-spp-regimental-kommissar = Полк. ком.
 
-rmc-job-name-spp-brigade-kommissar = Brigade Kommissar
-rmc-job-description-spp-brigade-kommissar = You are a Brigade-level political officer. Follow party orders or give them, and serve as the authority on political matters for the unit. For the party!
-rmc-job-prefix-spp-brigade-kommissar = Brig. Kom.
+rmc-job-name-spp-brigade-kommissar = Бригадный комиссар
+rmc-job-description-spp-brigade-kommissar = Вы политический офицер бригадного уровня. Выполняйте партийные приказы или отдавайте их сами, и будьте главным авторитетом по политическим вопросам в подразделении. За партию!
+rmc-job-prefix-spp-brigade-kommissar = Бриг. ком.
 
-rmc-job-name-spp-division-kommissar = Division Kommissar
-rmc-job-description-spp-division-kommissar = You are a Division-level political officer. Your word is considered the word of the party unless stated otherwise. You serve as chief political advisor to Polpovniks and General Mayors. For the party!
-rmc-job-prefix-spp-division-kommissar = Div. Kom.
+rmc-job-name-spp-division-kommissar = Дивизионный комиссар
+rmc-job-description-spp-division-kommissar = Вы политический офицер дивизионного уровня. Если не указано иное, ваше слово считается словом партии. Вы служите главным политическим советником полповников и генерал-майоров. За партию!
+rmc-job-prefix-spp-division-kommissar = Див. ком.

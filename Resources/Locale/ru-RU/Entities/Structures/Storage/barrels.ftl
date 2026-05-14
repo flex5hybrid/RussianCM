@@ -1,42 +1,42 @@
-ent-BaseBarrelChem-name = chemical barrel
-ent-BaseBarrelChem-desc = A small metal drum. How tropical.
+ent-BaseBarrelChem-name = химическая бочка
+ent-BaseBarrelChem-desc = Небольшой металлический барабан. Какой тропический.
 
-ent-BaseBarrelChemRadioactive-name = radioactive barrel
-ent-BaseBarrelChemRadioactive-desc = It seems to be leaking a bit. I don't think you'd want to be around this for long.
+ent-BaseBarrelChemRadioactive-name = радиоактивная бочка
+ent-BaseBarrelChemRadioactive-desc = Кажется, немного подтекает. Я не думаю, что ты захочешь оставаться здесь надолго.
 
-ent-BarrelChemFilledLube-name = chemical barrel
-ent-BarrelChemFilledLube-desc = Slippery...
+ent-BarrelChemFilledLube-name = химическая бочка
+ent-BarrelChemFilledLube-desc = Скользкий...
 
-ent-BarrelChemEmpty-name = chemical barrel
-ent-BarrelChemEmpty-desc = A small metal drum. How tropical.
+ent-BarrelChemEmpty-name = химическая бочка
+ent-BarrelChemEmpty-desc = Небольшой металлический барабан. Какой тропический.
 
-ent-BarrelChemFilledIodine-name = chemical barrel
-ent-BarrelChemFilledIodine-desc = A small metal drum. How tropical.
+ent-BarrelChemFilledIodine-name = химическая бочка
+ent-BarrelChemFilledIodine-desc = Небольшой металлический барабан. Какой тропический.
 
-ent-BarrelChemFilledFluorine-name = chemical barrel
-ent-BarrelChemFilledFluorine-desc = A small metal drum. How tropical.
+ent-BarrelChemFilledFluorine-name = химическая бочка
+ent-BarrelChemFilledFluorine-desc = Небольшой металлический барабан. Какой тропический.
 
-ent-BarrelChemFilledChlorine-name = chemical barrel
-ent-BarrelChemFilledChlorine-desc = A small metal drum. How tropical.
+ent-BarrelChemFilledChlorine-name = химическая бочка
+ent-BarrelChemFilledChlorine-desc = Небольшой металлический барабан. Какой тропический.
 
-ent-BarrelChemFilledEthanol-name = chemical barrel
-ent-BarrelChemFilledEthanol-desc = A small metal drum. How tropical.
+ent-BarrelChemFilledEthanol-name = химическая бочка
+ent-BarrelChemFilledEthanol-desc = Небольшой металлический барабан. Какой тропический.
 
-ent-BarrelChemFilledPhosphorus-name = chemical barrel
-ent-BarrelChemFilledPhosphorus-desc = A small metal drum. How tropical.
+ent-BarrelChemFilledPhosphorus-name = химическая бочка
+ent-BarrelChemFilledPhosphorus-desc = Небольшой металлический барабан. Какой тропический.
 
-ent-BarrelChemFilledMercury-name = chemical barrel
-ent-BarrelChemFilledMercury-desc = A small metal drum. How tropical.
+ent-BarrelChemFilledMercury-name = химическая бочка
+ent-BarrelChemFilledMercury-desc = Небольшой металлический барабан. Какой тропический.
 
-ent-BarrelChemFilledSilicon-name = chemical barrel
-ent-BarrelChemFilledSilicon-desc = A small metal drum. How tropical.
+ent-BarrelChemFilledSilicon-name = химическая бочка
+ent-BarrelChemFilledSilicon-desc = Небольшой металлический барабан. Какой тропический.
 
-ent-BaseBarrelChemRadioactiveEmpty-name = radioactive barrel
-ent-BaseBarrelChemRadioactiveEmpty-desc = It seems to be leaking a bit. I don't think you'd want to be around this for long.
+ent-BaseBarrelChemRadioactiveEmpty-name = радиоактивная бочка
+ent-BaseBarrelChemRadioactiveEmpty-desc = Кажется, немного подтекает. Я не думаю, что ты захочешь оставаться здесь надолго.
 
-ent-BaseBarrelChemRadioactiveFilledRadium-name = radioactive barrel
-ent-BaseBarrelChemRadioactiveFilledRadium-desc = It seems to be leaking a bit. I don't think you'd want to be around this for long.
+ent-BaseBarrelChemRadioactiveFilledRadium-name = радиоактивная бочка
+ent-BaseBarrelChemRadioactiveFilledRadium-desc = Кажется, немного подтекает. Я не думаю, что ты захочешь оставаться здесь надолго.
 
-ent-BaseBarrelChemRadioactiveFilledUranium-name = radioactive barrel
-ent-BaseBarrelChemRadioactiveFilledUranium-desc = It seems to be leaking a bit. I don't think you'd want to be around this for long.
+ent-BaseBarrelChemRadioactiveFilledUranium-name = радиоактивная бочка
+ent-BaseBarrelChemRadioactiveFilledUranium-desc = Кажется, немного подтекает. Я не думаю, что ты захочешь оставаться здесь надолго.
 

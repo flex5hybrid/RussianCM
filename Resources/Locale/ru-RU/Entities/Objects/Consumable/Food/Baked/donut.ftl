@@ -1,84 +1,84 @@
-ent-FoodDonutBase-name = item
-ent-FoodDonutBase-desc = Goes great with robust coffee.
+ent-FoodDonutBase-name = элемент
+ent-FoodDonutBase-desc = Прекрасно сочетается с крепким кофе.
 
-ent-FoodDonutPlain-name = plain donut
-ent-FoodDonutPlain-desc = Goes great with robust coffee.
+ent-FoodDonutPlain-name = простой пончик
+ent-FoodDonutPlain-desc = Прекрасно сочетается с крепким кофе.
 
-ent-FoodDonutJellyPlain-name = plain jelly-donut
-ent-FoodDonutJellyPlain-desc = Goes great with robust coffee.
+ent-FoodDonutJellyPlain-name = обычный пончик с желе
+ent-FoodDonutJellyPlain-desc = Прекрасно сочетается с крепким кофе.
 
-ent-FoodDonutHomer-name = donut
-ent-FoodDonutHomer-desc = Goes great with robust coffee.
+ent-FoodDonutHomer-name = пончик
+ent-FoodDonutHomer-desc = Прекрасно сочетается с крепким кофе.
 
-ent-FoodDonutChaos-name = chaos donut
-ent-FoodDonutChaos-desc = Like life, it never quite tastes the same.
+ent-FoodDonutChaos-name = пончик хаоса
+ent-FoodDonutChaos-desc = Как и жизнь, она никогда не бывает одинаковой на вкус.
 
-ent-FoodDonutMeat-name = meat donut
-ent-FoodDonutMeat-desc = Tastes as gross as it looks.
+ent-FoodDonutMeat-name = мясной пончик
+ent-FoodDonutMeat-desc = На вкус так же отвратительно, как и выглядит.
 
-ent-FoodDonutPink-name = pink donut
-ent-FoodDonutPink-desc = Goes great with a soy latte.
+ent-FoodDonutPink-name = розовый пончик
+ent-FoodDonutPink-desc = Прекрасно сочетается с соевым латте.
 
-ent-FoodDonutSpaceman-name = spaceman's donut
-ent-FoodDonutSpaceman-desc = Goes great with a cold beaker of malk.
+ent-FoodDonutSpaceman-name = пончик космонавта
+ent-FoodDonutSpaceman-desc = Прекрасно сочетается с холодным стаканом малка.
 
-ent-FoodDonutApple-name = apple donut
-ent-FoodDonutApple-desc = Goes great with a shot of cinnamon schnapps.
+ent-FoodDonutApple-name = яблочный пончик
+ent-FoodDonutApple-desc = Прекрасно сочетается с шнапсом с корицей.
 
-ent-FoodDonutCaramel-name = caramel donut
-ent-FoodDonutCaramel-desc = Goes great with a mug of hot coco.
+ent-FoodDonutCaramel-name = карамельный пончик
+ent-FoodDonutCaramel-desc = Прекрасно сочетается с кружкой горячего кокоса.
 
-ent-FoodDonutChocolate-name = chocolate donut
-ent-FoodDonutChocolate-desc = Goes great with a glass of warm milk.
+ent-FoodDonutChocolate-name = шоколадный пончик
+ent-FoodDonutChocolate-desc = Прекрасно сочетается со стаканом теплого молока.
 
-ent-FoodDonutBluePumpkin-name = blue pumpkin donut
-ent-FoodDonutBluePumpkin-desc = Goes great with a mug of soothing drunken blue pumpkin.
+ent-FoodDonutBluePumpkin-name = пончик с синей тыквой
+ent-FoodDonutBluePumpkin-desc = Прекрасно сочетается с кружкой успокаивающей пьянящей синей тыквы.
 
-ent-FoodDonutBungo-name = bungo donut
-ent-FoodDonutBungo-desc = Goes great with a mason jar of hippie's delight.
+ent-FoodDonutBungo-name = пончик Бунго
+ent-FoodDonutBungo-desc = Отлично сочетается с каменной банкой восторга хиппи.
 
-ent-FoodDonut-name = matcha donut
-ent-FoodDonut-desc = The L-theanine in this donut is relaxing, yet not euphoric. Goes great with a cup of tea.
+ent-FoodDonut-name = пончик матча
+ent-FoodDonut-desc = L-теанин в этом пончике расслабляет, но не вызывает эйфории. Прекрасно сочетается с чашкой чая.
 
-ent-FoodDonutSweetpea-name = sweet pea donut
-ent-FoodDonutSweetpea-desc = Goes great with a bottle of Bastion Burbon!
+ent-FoodDonutSweetpea-name = пончик со сладким горошком
+ent-FoodDonutSweetpea-desc = Отлично сочетается с бутылкой Бастион Бурбон!
 
 ent-FoodDonutJellyHomer-name = jelly-donut
-ent-FoodDonutJellyHomer-desc = You jelly?
+ent-FoodDonutJellyHomer-desc = Ты желе?
 
-ent-FoodDonutJellyPink-name = pink jelly-donut
-ent-FoodDonutJellyPink-desc = Goes great with a soy latte.
+ent-FoodDonutJellyPink-name = розовый желейный пончик
+ent-FoodDonutJellyPink-desc = Прекрасно сочетается с соевым латте.
 
-ent-FoodDonutJellySpaceman-name = spaceman's jelly-donut
-ent-FoodDonutJellySpaceman-desc = Goes great with a cold beaker of malk.
+ent-FoodDonutJellySpaceman-name = желейный пончик космонавта
+ent-FoodDonutJellySpaceman-desc = Прекрасно сочетается с холодным стаканом малка.
 
-ent-FoodDonutJellyApple-name = apple jelly-donut
-ent-FoodDonutJellyApple-desc = Goes great with a shot of cinnamon schnapps.
+ent-FoodDonutJellyApple-name = яблочный желе-пончик
+ent-FoodDonutJellyApple-desc = Прекрасно сочетается с шнапсом с корицей.
 
-ent-FoodDonutJellyCaramel-name = caramel jelly-donut
-ent-FoodDonutJellyCaramel-desc = Goes great with a mug of hot coco.
+ent-FoodDonutJellyCaramel-name = карамельный желе-пончик
+ent-FoodDonutJellyCaramel-desc = Прекрасно сочетается с кружкой горячего кокоса.
 
-ent-FoodDonutJellyChocolate-name = chocolate jelly-donut
-ent-FoodDonutJellyChocolate-desc = Goes great with a glass of warm milk.
+ent-FoodDonutJellyChocolate-name = шоколадный желе-пончик
+ent-FoodDonutJellyChocolate-desc = Прекрасно сочетается со стаканом теплого молока.
 
-ent-FoodDonutJellyBluePumpkin-name = blue pumpkin jelly-donut
-ent-FoodDonutJellyBluePumpkin-desc = Goes great with a mug of soothing drunken blue pumpkin.
+ent-FoodDonutJellyBluePumpkin-name = пончик с желе из синей тыквы
+ent-FoodDonutJellyBluePumpkin-desc = Прекрасно сочетается с кружкой успокаивающей пьянящей синей тыквы.
 
-ent-FoodDonutJellyBungo-name = bungo jelly-donut
-ent-FoodDonutJellyBungo-desc = Goes great with a mason jar of hippie's delight.
+ent-FoodDonutJellyBungo-name = пончик с желе-банго
+ent-FoodDonutJellyBungo-desc = Отлично сочетается с каменной банкой восторга хиппи.
 
-ent-FoodDonutJelly-name = matcha jelly-donut
-ent-FoodDonutJelly-desc = The L-theanine in this jelly-donut is relaxing, yet not euphoric. Goes great with a cup of tea.
+ent-FoodDonutJelly-name = пончик с желе матча
+ent-FoodDonutJelly-desc = L-теанин в этом желе-пончике расслабляет, но не вызывает эйфории. Прекрасно сочетается с чашкой чая.
 
-ent-FoodDonutJellySweetpea-name = sweet pea jelly-donut
-ent-FoodDonutJellySweetpea-desc = Goes great with a bottle of Bastion Burbon!
+ent-FoodDonutJellySweetpea-name = пончик с желе из сладкого горошка
+ent-FoodDonutJellySweetpea-desc = Отлично сочетается с бутылкой Бастион Бурбон!
 
-ent-FoodDonutJellySlugcat-name = slugcat jelly-donut
-ent-FoodDonutJellySlugcat-desc = No holes in this donut in case a suspicious looking pole shows up.
+ent-FoodDonutJellySlugcat-name = слизняк-желе-пончик
+ent-FoodDonutJellySlugcat-desc = В этом бублике нет дырок на случай, если появится подозрительно выглядящий столб.
 
-ent-FoodDonutFruitBase-name = item
-ent-FoodDonutFruitBase-desc = Goes great with robust coffee.
+ent-FoodDonutFruitBase-name = элемент
+ent-FoodDonutFruitBase-desc = Прекрасно сочетается с крепким кофе.
 
-ent-FoodDonutPoison-name = pink donut
-ent-FoodDonutPoison-desc = Goes great with a soy latte.
+ent-FoodDonutPoison-name = розовый пончик
+ent-FoodDonutPoison-desc = Прекрасно сочетается с соевым латте.
 

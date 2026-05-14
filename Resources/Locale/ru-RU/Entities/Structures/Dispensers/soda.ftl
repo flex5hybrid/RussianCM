@@ -1,6 +1,6 @@
-ent-SodaDispenser-name = soda dispenser
-ent-SodaDispenser-desc = A beverage dispenser with a selection of soda and several other common beverages. Has a single fill slot for containers.
+ent-SodaDispenser-name = дозатор газировки
+ent-SodaDispenser-desc = Диспенсер для напитков с выбором газированных напитков и некоторых других распространенных напитков. Имеет один слот для заполнения контейнеров.
 
-ent-SodaDispenserEmpty-name = soda dispenser
-ent-SodaDispenserEmpty-desc = A beverage dispenser with a selection of soda and several other common beverages. Has a single fill slot for containers.
+ent-SodaDispenserEmpty-name = дозатор газировки
+ent-SodaDispenserEmpty-desc = Диспенсер для напитков с выбором газированных напитков и некоторых других распространенных напитков. Имеет один слот для заполнения контейнеров.
 

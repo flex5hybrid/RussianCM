@@ -1,12 +1,12 @@
-ent-MachineAnomalyVessel-name = anomaly vessel
-ent-MachineAnomalyVessel-desc = A container able to harness a scan of an anomaly and turn it into research data.
+ent-MachineAnomalyVessel-name = аномальное судно
+ent-MachineAnomalyVessel-desc = Контейнер, способный использовать сканирование аномалии и превращать его в исследовательские данные.
 
-ent-MachineAnomalyVesselExperimental-name = experimental anomaly vessel
-ent-MachineAnomalyVesselExperimental-desc = An advanced anomaly vessel capable of greater research potential at the cost of increased volatility and low-level radioactive decay into the environment.
+ent-MachineAnomalyVesselExperimental-name = экспериментальное аномальное судно
+ent-MachineAnomalyVesselExperimental-desc = Усовершенствованное аномальное судно, обладающее большим исследовательским потенциалом за счет повышенной летучести и низкоуровневого радиоактивного распада в окружающую среду.
 
 ent-MachineAPE-name = A.P.E.
-ent-MachineAPE-desc = An Anomalous Particle Emitter, capable of shooting out unstable particles which can interface with anomalies.
+ent-MachineAPE-desc = Излучатель аномальных частиц, способный стрелять нестабильными частицами, которые могут взаимодействовать с аномалиями.
 
-ent-MachineAnomalyGenerator-name = anomaly generator
-ent-MachineAnomalyGenerator-desc = The peak of pseudoscientific technology.
+ent-MachineAnomalyGenerator-name = генератор аномалий
+ent-MachineAnomalyGenerator-desc = Пик псевдонаучных технологий.
 

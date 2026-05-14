@@ -1,10 +1,10 @@
-ent-SpawnMobMedibot-name = medibot spawner
+ent-SpawnMobMedibot-name = спаунер медиботов
 
-ent-SpawnMobCleanBot-name = cleanbot spawner
+ent-SpawnMobCleanBot-name = генератор чистых ботов
 
-ent-SpawnMobFireBot-name = firebot spawner
+ent-SpawnMobFireBot-name = спаунер огнеботов
 
-ent-SpawnMobSupplyBot-name = supplybot spawner
+ent-SpawnMobSupplyBot-name = спаунер снабженческих ботов
 
-ent-SpawnMobHonkBot-name = honkbot spawner
+ent-SpawnMobHonkBot-name = генератор хонкботов
 

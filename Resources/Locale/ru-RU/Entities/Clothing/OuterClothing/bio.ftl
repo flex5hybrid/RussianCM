@@ -1,18 +1,18 @@
-ent-ClothingOuterBioGeneral-name = bio suit
-ent-ClothingOuterBioGeneral-desc = A suit that protects against biological contamination.
+ent-ClothingOuterBioGeneral-name = биокостюм
+ent-ClothingOuterBioGeneral-desc = Костюм, защищающий от биологического заражения.
 
-ent-ClothingOuterBioCmo-name = bio suit
-ent-ClothingOuterBioCmo-desc = An advanced suit that protects against biological contamination, in CMO colors.
+ent-ClothingOuterBioCmo-name = биокостюм
+ent-ClothingOuterBioCmo-desc = Усовершенствованный костюм, защищающий от биологического заражения, в цветах CMO.
 
-ent-ClothingOuterBioJanitor-name = bio suit
-ent-ClothingOuterBioJanitor-desc = A suit that protects against biological contamination and caustic spills.
+ent-ClothingOuterBioJanitor-name = биокостюм
+ent-ClothingOuterBioJanitor-desc = Костюм, защищающий от биологического заражения и разливов едких веществ.
 
-ent-ClothingOuterBioScientist-name = bio suit
-ent-ClothingOuterBioScientist-desc = A suit that protects against biological contamination, in Scientist colors.
+ent-ClothingOuterBioScientist-name = биокостюм
+ent-ClothingOuterBioScientist-desc = Костюм, защищающий от биологического загрязнения, в цветах Scientist.
 
-ent-ClothingOuterBioSecurity-name = bio suit
-ent-ClothingOuterBioSecurity-desc = A suit that protects against biological contamination, kitted out with additional armor.
+ent-ClothingOuterBioSecurity-name = биокостюм
+ent-ClothingOuterBioSecurity-desc = Костюм, защищающий от биологического заражения, оснащенный дополнительной броней.
 
-ent-ClothingOuterBioVirology-name = bio suit
-ent-ClothingOuterBioVirology-desc = A suit that strongly protects against biological contamination.
+ent-ClothingOuterBioVirology-name = биокостюм
+ent-ClothingOuterBioVirology-desc = Костюм, надежно защищающий от биологического загрязнения.
 

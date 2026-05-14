@@ -1,2 +1,2 @@
-ent-SpawnMobHuman-name = Urist Spawner
+ent-SpawnMobHuman-name = Создатель уристов
 

@@ -1,2 +1,2 @@
-ent-OrganReptilianStomach-name = stomach
+ent-OrganReptilianStomach-name = желудок
 

@@ -1,14 +1,14 @@
-ent-PartAnimal-name = animal body part
+ent-PartAnimal-name = часть тела животного
 
-ent-HandsAnimal-name = animal hands
+ent-HandsAnimal-name = руки животных
 
-ent-LegsAnimal-name = animal legs
+ent-LegsAnimal-name = ноги животных
 
-ent-FeetAnimal-name = animal feet
+ent-FeetAnimal-name = ноги животных
 
-ent-TorsoAnimal-name = animal torso
+ent-TorsoAnimal-name = туловище животного
 
-ent-LeftHandSmartCorgi-name = corgi hand
+ent-LeftHandSmartCorgi-name = рука корги
 
-ent-RightHandSmartCorgi-name = corgi hand
+ent-RightHandSmartCorgi-name = рука корги
 

@@ -1,3 +1,3 @@
-ent-MedalCase-name = medal case
-ent-MedalCase-desc = Case with medals.
+ent-MedalCase-name = футляр для медалей
+ent-MedalCase-desc = Кейс с медалями.
 

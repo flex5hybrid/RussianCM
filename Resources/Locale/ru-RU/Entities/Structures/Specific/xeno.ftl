@@ -1,11 +1,11 @@
-ent-XenoWardingTower-name = xeno warding tower
+ent-XenoWardingTower-name = охранная башня ксеносов
 
-ent-CarpStatue-name = carp statue
-ent-CarpStatue-desc = A statue of one of the brave carp that got us where we are today. Made with real teeth!
+ent-CarpStatue-name = статуя карпа
+ent-CarpStatue-desc = Статуя одного из отважных карпов, которые привели нас туда, где мы находимся сегодня. Сделано из настоящих зубов!
 
-ent-CarpStatueEmpty-name = xeno warding tower
-ent-CarpStatueEmpty-desc = A lump of precious metals, soon to be a brilliant carp statue.
+ent-CarpStatueEmpty-name = охранная башня ксеносов
+ent-CarpStatueEmpty-desc = Кусок драгоценного металла, который вскоре превратится в блестящую статую карпа.
 
-ent-CarpStatueEyes-name = xeno warding tower
-ent-CarpStatueEyes-desc = A statue of one of the brave carp that got us where we are today. This one needs a dentist...
+ent-CarpStatueEyes-name = охранная башня ксеносов
+ent-CarpStatueEyes-desc = Статуя одного из отважных карпов, которые привели нас туда, где мы находимся сегодня. Здесь нужен стоматолог...
 

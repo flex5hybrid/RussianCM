@@ -1,17 +1,17 @@
-ent-ResearchDisk-name = research point disk (1000)
-ent-ResearchDisk-desc = A disk for the R&D server containing 1000 points.
+ent-ResearchDisk-name = диск с точками исследования (1000)
+ent-ResearchDisk-desc = Диск для R&D-сервера, содержащий 1000 очков.
 
-ent-ResearchDisk5000-name = research point disk (5000)
-ent-ResearchDisk5000-desc = A disk for the R&D server containing 5000 points.
+ent-ResearchDisk5000-name = диск с точками исследования (5000)
+ent-ResearchDisk5000-desc = Диск для R&D-сервера, содержащий 5000 очков.
 
-ent-ResearchDisk10000-name = research point disk (10000)
-ent-ResearchDisk10000-desc = A disk for the R&D server containing 10000 points.
+ent-ResearchDisk10000-name = диск с очками исследования (10000)
+ent-ResearchDisk10000-desc = Диск для R&D-сервера, содержащий 10000 точек.
 
-ent-ResearchDiskDebug-name = research point disk
-ent-ResearchDiskDebug-desc = A disk for the R&D server containing all the points you could ever need.
+ent-ResearchDiskDebug-name = диск с точками исследования
+ent-ResearchDiskDebug-desc = Диск для R&D-сервера, содержащий все необходимые вам очки.
 
-ent-TechnologyDisk-name = technology disk
-ent-TechnologyDisk-desc = A disk for the R&D server containing research technology.
+ent-TechnologyDisk-name = технологический диск
+ent-TechnologyDisk-desc = Диск для сервера исследований и разработок, содержащий исследовательские технологии.
 
 ent-TechnologyDiskRare-name = steal-target-groups-technology-disks
 

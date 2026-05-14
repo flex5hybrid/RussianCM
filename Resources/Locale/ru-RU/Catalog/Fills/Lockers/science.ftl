@@ -1,3 +1,3 @@
-ent-LockerScienceFilled-name = scientist's locker
-ent-LockerScienceFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerScienceFilled-name = шкафчик ученого
+ent-LockerScienceFilled-desc = Стандартное хранилище Nanotrasen.
 

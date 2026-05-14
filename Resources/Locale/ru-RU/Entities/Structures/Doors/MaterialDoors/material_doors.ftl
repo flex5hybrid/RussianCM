@@ -1,30 +1,30 @@
-ent-BaseMaterialDoor-name = door
-ent-BaseMaterialDoor-desc = A door, where will it lead?
+ent-BaseMaterialDoor-name = дверь
+ent-BaseMaterialDoor-desc = Дверь, куда она приведет?
 
-ent-MetalDoor-name = metal door
-ent-MetalDoor-desc = A door, where will it lead?
+ent-MetalDoor-name = металлическая дверь
+ent-MetalDoor-desc = Дверь, куда она приведет?
 
-ent-WoodDoor-name = wooden door
-ent-WoodDoor-desc = A door, where will it lead?
+ent-WoodDoor-name = деревянная дверь
+ent-WoodDoor-desc = Дверь, куда она приведет?
 
-ent-PaperDoor-name = paper door
-ent-PaperDoor-desc = A door, where will it lead?
+ent-PaperDoor-name = бумажная дверь
+ent-PaperDoor-desc = Дверь, куда она приведет?
 
-ent-PlasmaDoor-name = plasma door
-ent-PlasmaDoor-desc = A door, where will it lead?
+ent-PlasmaDoor-name = плазменная дверь
+ent-PlasmaDoor-desc = Дверь, куда она приведет?
 
-ent-GoldDoor-name = gold door
-ent-GoldDoor-desc = A door, where will it lead?
+ent-GoldDoor-name = золотая дверь
+ent-GoldDoor-desc = Дверь, куда она приведет?
 
-ent-SilverDoor-name = silver door
-ent-SilverDoor-desc = A door, where will it lead?
+ent-SilverDoor-name = серебряная дверь
+ent-SilverDoor-desc = Дверь, куда она приведет?
 
-ent-BananiumDoor-name = bananium door
-ent-BananiumDoor-desc = A door, where will it lead?
+ent-BananiumDoor-name = банановая дверь
+ent-BananiumDoor-desc = Дверь, куда она приведет?
 
-ent-WebDoor-name = web door
-ent-WebDoor-desc = A door, leading to the lands of the spiders... or a spaced room.
+ent-WebDoor-name = веб-дверь
+ent-WebDoor-desc = Дверь, ведущая в страны пауков... или в отдельную комнату.
 
-ent-BaseMaterialDoorNavMap-name = door
-ent-BaseMaterialDoorNavMap-desc = A door, where will it lead?
+ent-BaseMaterialDoorNavMap-name = дверь
+ent-BaseMaterialDoorNavMap-desc = Дверь, куда она приведет?
 

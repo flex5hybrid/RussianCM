@@ -1,12 +1,12 @@
-ent-OrganVoxLungs-name = lungs
-ent-OrganVoxLungs-desc = The blue, anaerobic lungs of a vox, they intake nitrogen to breathe. Any form of gaseous oxygen is lethally toxic if breathed in.
+ent-OrganVoxLungs-name = легкие
+ent-OrganVoxLungs-desc = Синие анаэробные легкие воксов, они потребляют азот для дыхания. Любая форма газообразного кислорода смертельно токсична при вдыхании.
 
-ent-OrganVoxStomach-name = stomach
-ent-OrganVoxStomach-desc = A stomach that smells of ammonia.
+ent-OrganVoxStomach-name = желудок
+ent-OrganVoxStomach-desc = Желудок, который пахнет аммиаком.
 
-ent-OrganVoxLiver-name = liver
-ent-OrganVoxLiver-desc = Smells flammable.
+ent-OrganVoxLiver-name = печень
+ent-OrganVoxLiver-desc = Пахнет горючим.
 
-ent-OrganVoxHeart-name = heart
-ent-OrganVoxHeart-desc = The strange heart of a vox.
+ent-OrganVoxHeart-name = сердце
+ent-OrganVoxHeart-desc = Странное сердце вокс.
 

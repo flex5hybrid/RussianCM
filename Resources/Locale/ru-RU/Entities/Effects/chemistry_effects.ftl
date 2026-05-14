@@ -1,24 +1,24 @@
-ent-Smoke-name = smoke
+ent-Smoke-name = курить
 
-ent-TearGasSmoke-name = tear gas
+ent-TearGasSmoke-name = слезоточивый газ
 
-ent-WizardSmoke-name = smoke
+ent-WizardSmoke-name = курить
 
-ent-Foam-name = foam
+ent-Foam-name = пена
 
-ent-MetalFoam-name = metal foam
+ent-MetalFoam-name = металлическая пена
 
-ent-IronMetalFoam-name = iron metal foam
+ent-IronMetalFoam-name = железо металл пена
 
-ent-AluminiumMetalFoam-name = aluminium metal foam
+ent-AluminiumMetalFoam-name = алюминиевая металлическая пена
 
-ent-BaseFoamedMetal-name = base foamed metal
+ent-BaseFoamedMetal-name = основание из вспененного металла
 
-ent-FoamedIronMetal-name = foamed iron metal
-ent-FoamedIronMetal-desc = For sealing hull breaches.
+ent-FoamedIronMetal-name = вспененное железо металл
+ent-FoamedIronMetal-desc = Для герметизации пробоин в корпусе.
 
-ent-FoamedAluminiumMetal-name = foamed aluminium metal
-ent-FoamedAluminiumMetal-desc = Leftover sparse foam from an aluminum foam grenade. Easily destroyed.
+ent-FoamedAluminiumMetal-name = вспененный алюминий из металла
+ent-FoamedAluminiumMetal-desc = Остатки редкой пены от алюминиевой пенной гранаты. Легко разрушается.
 
-ent-TearGasSmokeWhite-name = tear gas
+ent-TearGasSmokeWhite-name = слезоточивый газ
 

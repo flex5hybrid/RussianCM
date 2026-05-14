@@ -1,27 +1,27 @@
-ent-BaseWeaponRevolver-name = BaseWeaponRevolver
-ent-BaseWeaponRevolver-desc = A rooty tooty point and shooty.
+ent-BaseWeaponRevolver-name = БазовоеОружиеРевольвер
+ent-BaseWeaponRevolver-desc = Коренной зубастый и стрелковый.
 
-ent-WeaponRevolverDeckard-name = Deckard
-ent-WeaponRevolverDeckard-desc = A beautifully machined, custom-built revolver. Used when there is no time for the Voight-Kampff test. Loads 5 rounds of .45 magnum.
+ent-WeaponRevolverDeckard-name = Декард
+ent-WeaponRevolverDeckard-desc = Прекрасно изготовленный, изготовленный по индивидуальному заказу револьвер. Используется, когда нет времени на тест Войта-Кампфа. Заряжает 5 патронов .45 магнум.
 
-ent-WeaponRevolverInspector-name = Inspector
-ent-WeaponRevolverInspector-desc = A single-action revolver manufactured by various companies. It is readily available on the civilian market, making it a popular choice among private investigators. You feel lucky just holding it. Loads 6 rounds of .45 magnum.
+ent-WeaponRevolverInspector-name = инспектор
+ent-WeaponRevolverInspector-desc = Револьвер одинарного действия, выпускаемый различными компаниями. Он легко доступен на гражданском рынке, что делает его популярным выбором среди частных детективов. Вы чувствуете себя счастливым, просто держа его в руках. Заряжает 6 патронов .45 магнум.
 
-ent-WeaponRevolverMateba-name = Mateba
-ent-WeaponRevolverMateba-desc = A modern revolver used by Nanotrasen’s elite, near mythical ‘Death Squad’ task force. Its unique trigger action and barrel placement enable a high fire rate with minimal muzzle flip. Many have looked down this barrel, but few have lived to tell of it. Loads 6 rounds of .45 magnum.
+ent-WeaponRevolverMateba-name = Матеба
+ent-WeaponRevolverMateba-desc = Современный револьвер, используемый элитой Нанотрасена, рядом с мифической оперативной группой «Отряд Смерти». Его уникальное действие спускового крючка и расположение ствола обеспечивают высокую скорострельность с минимальным переворотом дульного среза. Многие заглядывали в эту бочку, но немногие дожили до того, чтобы рассказать о ней. Заряжает 6 патронов .45 магнум.
 
-ent-WeaponRevolverPython-name = Python
-ent-WeaponRevolverPython-desc = A powerful double-action revolver manufactured by the Syndicate. Loud and flashy, perfect for any agent looking to make a statement. Loads 6 rounds of .45 magnum.
+ent-WeaponRevolverPython-name = Питон
+ent-WeaponRevolverPython-desc = Мощный револьвер двойного действия производства Синдиката. Громкий и яркий, идеально подходит для любого агента, желающего заявить о себе. Заряжает 6 патронов .45 магнум.
 
-ent-WeaponRevolverPirate-name = pirate revolver
-ent-WeaponRevolverPirate-desc = A crude single-action revolver handmade by a space pirate. Old and covered in rust, it somehow still works. Loads 5 rounds of .45 magnum.
+ent-WeaponRevolverPirate-name = пиратский револьвер
+ent-WeaponRevolverPirate-desc = Грубый револьвер одинарного действия, изготовленный вручную космическим пиратом. Старый и весь в ржавчине, он каким-то образом еще работает. Заряжает 5 патронов .45 магнум.
 
-ent-WeaponRevolverMatebaAP-name = Mateba
-ent-WeaponRevolverMatebaAP-desc = A modern revolver used by Nanotrasen’s elite, near mythical ‘Death Squad’ task force. Its unique trigger action and barrel placement enable a high fire rate with minimal muzzle flip. Many have looked down this barrel, but few have lived to tell of it. Loads 6 rounds of .45 magnum.
+ent-WeaponRevolverMatebaAP-name = Матеба
+ent-WeaponRevolverMatebaAP-desc = Современный револьвер, используемый элитой Нанотрасена, рядом с мифической оперативной группой «Отряд Смерти». Его уникальное действие спускового крючка и расположение ствола обеспечивают высокую скорострельность с минимальным переворотом дульного среза. Многие заглядывали в эту бочку, но немногие дожили до того, чтобы рассказать о ней. Заряжает 6 патронов .45 магнум.
 
-ent-WeaponRevolverPythonAP-name = Python
-ent-WeaponRevolverPythonAP-desc = A powerful double-action revolver manufactured by the Syndicate. Loud and flashy, perfect for any agent looking to make a statement. Loads 6 rounds of .45 magnum.
+ent-WeaponRevolverPythonAP-name = Питон
+ent-WeaponRevolverPythonAP-desc = Мощный револьвер двойного действия производства Синдиката. Громкий и яркий, идеально подходит для любого агента, желающего заявить о себе. Заряжает 6 патронов .45 магнум.
 
-ent-WeaponRevolverPirateEmpty-name = pirate revolver
-ent-WeaponRevolverPirateEmpty-desc = A crude single-action revolver handmade by a space pirate. Old and covered in rust, it somehow still works. Loads 5 rounds of .45 magnum.
+ent-WeaponRevolverPirateEmpty-name = пиратский револьвер
+ent-WeaponRevolverPirateEmpty-desc = Грубый револьвер одинарного действия, изготовленный вручную космическим пиратом. Старый и весь в ржавчине, он каким-то образом еще работает. Заряжает 5 патронов .45 магнум.
 

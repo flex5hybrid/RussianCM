@@ -1,2 +1,2 @@
-ent-BaseCartridge-name = item
+ent-BaseCartridge-name = элемент
 

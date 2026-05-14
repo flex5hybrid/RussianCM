@@ -1,22 +1,22 @@
-ent-PartDiona-name = diona body part
+ent-PartDiona-name = часть тела дионы
 
-ent-TorsoDiona-name = diona torso
+ent-TorsoDiona-name = туловище дионы
 
-ent-HeadDiona-name = diona head
+ent-HeadDiona-name = голова дионы
 
-ent-LeftArmDiona-name = left diona arm
+ent-LeftArmDiona-name = левая рука Дионы
 
-ent-RightArmDiona-name = right diona arm
+ent-RightArmDiona-name = правая рука Дионы
 
-ent-LeftHandDiona-name = left diona hand
+ent-LeftHandDiona-name = левая рука Дионы
 
-ent-RightHandDiona-name = right diona hand
+ent-RightHandDiona-name = правая рука Дионы
 
-ent-LeftLegDiona-name = left diona leg
+ent-LeftLegDiona-name = левая нога Дионы
 
-ent-RightLegDiona-name = right diona leg
+ent-RightLegDiona-name = правая нога Дионы
 
-ent-LeftFootDiona-name = left diona foot
+ent-LeftFootDiona-name = левая нога Дионы
 
-ent-RightFootDiona-name = right diona foot
+ent-RightFootDiona-name = правая нога Дионы
 

@@ -1,63 +1,63 @@
-ent-BaseAnomaly-name = anomaly
-ent-BaseAnomaly-desc = An impossible object. Should you be standing this close to it?
+ent-BaseAnomaly-name = аномалия
+ent-BaseAnomaly-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyFloraBulb-name = strange glowing berry
-ent-AnomalyFloraBulb-desc = It's a beautiful strange glowing berry. It seems to have something growing inside it...
+ent-AnomalyFloraBulb-name = странная светящаяся ягода
+ent-AnomalyFloraBulb-desc = Это красивая странная светящаяся ягода. Кажется, внутри него что-то растёт...
 
-ent-AnomalyPyroclastic-name = anomaly
-ent-AnomalyPyroclastic-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyPyroclastic-name = аномалия
+ent-AnomalyPyroclastic-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyGravity-name = anomaly
-ent-AnomalyGravity-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyGravity-name = аномалия
+ent-AnomalyGravity-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyElectricity-name = anomaly
-ent-AnomalyElectricity-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyElectricity-name = аномалия
+ent-AnomalyElectricity-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyFlesh-name = anomaly
-ent-AnomalyFlesh-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyFlesh-name = аномалия
+ent-AnomalyFlesh-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyBluespace-name = anomaly
-ent-AnomalyBluespace-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyBluespace-name = аномалия
+ent-AnomalyBluespace-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyIce-name = anomaly
-ent-AnomalyIce-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyIce-name = аномалия
+ent-AnomalyIce-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyRockBase-name = anomaly
-ent-AnomalyRockBase-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyRockBase-name = аномалия
+ent-AnomalyRockBase-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyRockUranium-name = anomaly
-ent-AnomalyRockUranium-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyRockUranium-name = аномалия
+ent-AnomalyRockUranium-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyRockBananium-name = anomaly
-ent-AnomalyRockBananium-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyRockBananium-name = аномалия
+ent-AnomalyRockBananium-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyRockQuartz-name = anomaly
-ent-AnomalyRockQuartz-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyRockQuartz-name = аномалия
+ent-AnomalyRockQuartz-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyRockSilver-name = anomaly
-ent-AnomalyRockSilver-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyRockSilver-name = аномалия
+ent-AnomalyRockSilver-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyRockGold-name = anomaly
-ent-AnomalyRockGold-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyRockGold-name = аномалия
+ent-AnomalyRockGold-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyRockIron-name = anomaly
-ent-AnomalyRockIron-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyRockIron-name = аномалия
+ent-AnomalyRockIron-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyRockCoal-name = anomaly
-ent-AnomalyRockCoal-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyRockCoal-name = аномалия
+ent-AnomalyRockCoal-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyFlora-name = anomaly
-ent-AnomalyFlora-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyFlora-name = аномалия
+ent-AnomalyFlora-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyLiquid-name = anomaly
-ent-AnomalyLiquid-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyLiquid-name = аномалия
+ent-AnomalyLiquid-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyShadow-name = anomaly
-ent-AnomalyShadow-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyShadow-name = аномалия
+ent-AnomalyShadow-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalyTech-name = anomaly
-ent-AnomalyTech-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalyTech-name = аномалия
+ent-AnomalyTech-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 
-ent-AnomalySanta-name = anomaly
-ent-AnomalySanta-desc = An impossible object. Should you be standing this close to it?
+ent-AnomalySanta-name = аномалия
+ent-AnomalySanta-desc = Невозможный объект. Стоит ли тебе стоять так близко к нему?
 

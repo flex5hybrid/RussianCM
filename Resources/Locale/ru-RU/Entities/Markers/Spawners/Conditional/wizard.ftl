@@ -1,2 +1,2 @@
-ent-SpawnPointWizard-name = wizard
+ent-SpawnPointWizard-name = волшебник
 

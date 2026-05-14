@@ -191,3 +191,143 @@ rmc-name-feroxi-last-46 = Лиорис
 rmc-name-feroxi-last-47 = Солмарет
 rmc-name-feroxi-last-48 = Волькарит
 rmc-name-feroxi-last-49 = Мирентис
+
+# Missing entries synced from en-US
+
+marking-FeroxiHeadStripesTiger = Тигровые полосы
+
+marking-FeroxiHeadStripesTiger-feroxi-head-stripes-tiger = Полосы
+
+marking-FeroxiTailBlitzNoDorsal = Полосатый хвост с кончиками плавников
+
+marking-FeroxiTailBlitzNoDorsal-feroxi-tail = Базовый хвост
+
+marking-FeroxiTailBlitzNoDorsal-feroxi-tail-stripes = Полосы на хвосте
+
+marking-FeroxiTailBlitzNoDorsal-feroxi-tail-top-tip = Верхний кончик хвостового плавника
+
+marking-FeroxiTailBlitzNoDorsal-feroxi-tail-bottom-tip = Нижний кончик хвостового плавника
+
+marking-FeroxiTailBlitzNoDorsal-feroxi-tail-under = Под хвостом
+
+marking-FeroxiStripedTail = Полосатый хвост
+
+marking-FeroxiStripedTail-feroxi-tail = Базовый хвост
+
+marking-FeroxiStripedTail-feroxi-tail-stripes = Полосы на хвосте
+
+marking-FeroxiStripedTailAndDorsal = Полосатый хвост с дорсом
+
+marking-FeroxiStripedTailAndDorsal-feroxi-tail = Базовый хвост
+
+marking-FeroxiStripedTailAndDorsal-feroxi-tail-stripes = Полосы на хвосте
+
+marking-FeroxiStripedTailAndDorsal-feroxi-dorsal = Базовый спинной
+
+marking-FeroxiStripedTailAndDorsal-feroxi-dorsal-stripes = Спинные полосы
+
+marking-FeroxiTail = Хвост
+
+marking-FeroxiTail-feroxi-tail = Базовый хвост
+
+marking-FeroxiTipTail = Хвост с кончиками
+
+marking-FeroxiTipTail-feroxi-tail = Базовый хвост
+
+marking-FeroxiTipTail-feroxi-tail-top-tip = Верхний кончик хвостового плавника
+
+marking-FeroxiTipTail-feroxi-tail-bottom-tip = Нижний кончик хвостового плавника
+
+marking-FeroxiTipTail-feroxi-second-dorsal-tip = Вторичный кончик спинного плавника
+
+marking-FeroxiTipTail-feroxi-dorsal = Базовый спинной
+
+marking-FeroxiTipTailAndDorsal = Хвост с кончиками и спинкой
+
+marking-FeroxiTipTailAndDorsal-feroxi-tail = Базовый хвост
+
+marking-FeroxiTipTailAndDorsal-feroxi-tail-top-tip = Верхний кончик хвостового плавника
+
+marking-FeroxiTipTailAndDorsal-feroxi-tail-bottom-tip = Нижний кончик хвостового плавника
+
+marking-FeroxiTipTailAndDorsal-feroxi-second-dorsal-tip = Вторичный кончик спинного плавника
+
+marking-FeroxiTipTailAndDorsal-feroxi-dorsal = Базовый спинной
+
+marking-FeroxiTipTailAndDorsal-feroxi-dorsal-tip = Дорсальный кончик
+
+marking-FeroxiTwoToneTail = Двухцветный хвост
+
+marking-FeroxiTwoToneTail-feroxi-tail = Базовый хвост
+
+marking-FeroxiTwoToneTail-feroxi-tail-under = Под хвостом
+
+marking-FeroxiTwoToneTailAndDorsal = Двухцветный хвост и спина
+
+marking-FeroxiTwoToneTailAndDorsal-feroxi-tail = Базовый хвост
+
+marking-FeroxiTwoToneTailAndDorsal-feroxi-tail-under = Под хвостом
+
+marking-FeroxiTwoToneTailAndDorsal-feroxi-dorsal = Базовый спинной
+
+marking-FeroxiStripeTwoToneTail = Двухцветный хвост с полосками
+
+marking-FeroxiStripeTwoToneTail-feroxi-tail = Базовый хвост
+
+marking-FeroxiStripeTwoToneTail-feroxi-tail-stripes = Полосы на хвосте
+
+marking-FeroxiStripeTwoToneTail-feroxi-tail-under = Под хвостом
+
+marking-FeroxiStripeTwoToneTailAndDorsal = Двухцветный хвост с полосками и спиной
+
+marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-tail = Базовый хвост
+
+marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-tail-stripes = Полосы на хвосте
+
+marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-tail-under = Под хвостом
+
+marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-dorsal = Базовый спинной
+
+marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-dorsal-stripes = Спинные полосы
+
+marking-FeroxiTipTwoToneTail = Двухцветный хвост с кончиками
+
+marking-FeroxiTipTwoToneTail-feroxi-tail = Базовый хвост
+
+marking-FeroxiTipTwoToneTail-feroxi-tail-top-tip = Верхний кончик хвостового плавника
+
+marking-FeroxiTipTwoToneTail-feroxi-tail-bottom-tip = Нижний кончик хвостового плавника
+
+marking-FeroxiTipTwoToneTail-feroxi-tail-under = Под хвостом
+
+marking-FeroxiTipTwoToneTailAndDorsal = Двухцветный хвост с кончиками и спинкой
+
+marking-FeroxiTipTwoToneTailAndDorsal-feroxi-tail = Базовый хвост
+
+marking-FeroxiTipTwoToneTailAndDorsal-feroxi-tail-top-tip = Верхний кончик хвостового плавника
+
+marking-FeroxiTipTwoToneTailAndDorsal-feroxi-tail-bottom-tip = Нижний кончик хвостового плавника
+
+marking-FeroxiTipTwoToneTailAndDorsal-feroxi-tail-under = Под хвостом
+
+marking-FeroxiTipTwoToneTailAndDorsal-feroxi-dorsal = Базовый спинной
+
+marking-FeroxiTipTwoToneTailAndDorsal-feroxi-dorsal-tip = Дорсальный кончик
+
+marking-FeroxiLegStripesBlitz = Полосы на теленках
+
+marking-FeroxiLegStripesBlitz-feroxi-leg-stripes-blitz = Полосы
+
+marking-FeroxiLegStripesTiger = Полные полосы
+
+marking-FeroxiLegStripesTiger-feroxi-leg-stripes-tiger = Полосы
+
+marking-FeroxiArmStripesBlitz = Полосы на плечах
+
+marking-FeroxiArmStripesBlitz-feroxi-arm-stripes-blitz = Полосы
+
+marking-FeroxiArmStripesTiger = Полные полосы
+
+marking-FeroxiArmStripesTiger-feroxi-arm-stripes-tiger = Полосы
+
+# female first names

@@ -1,11 +1,11 @@
-sec-apartment-ui-sec-apartment = SecApartment
+sec-apartment-ui-sec-apartment = СекКвартира
 sec-apartment-ui-station = СТАНЦИЯ
 sec-apartment-ui-mark = {$time} | {$station}
 sec-apartment-ui-no-squads-crew = Неназначенный персонал
 sec-apartment-ui-squads-create = Создать
 sec-apartment-ui-squads-placeholder = Введите название отряда...
 sec-apartment-ui-squads = Отряды
-sec-apartment-ui-os = SecApartment#OS ™ v1.12
+sec-apartment-ui-os = SecApartment#OS™ v1.12
 sec-apartment-ui-footer = NanoTrasen™ все права защищены
 
 sec-apartment-ui-squads-nameedit-placeholder = Название отряда...

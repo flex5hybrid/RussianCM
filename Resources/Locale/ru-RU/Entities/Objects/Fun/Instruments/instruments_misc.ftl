@@ -1,30 +1,30 @@
-ent-MusicalLungInstrument-name = musical lung
-ent-MusicalLungInstrument-desc = The spiritual and magical lung of a former opera singer. Though, to be honest, the vocal chords make the performance.
+ent-MusicalLungInstrument-name = музыкальное легкое
+ent-MusicalLungInstrument-desc = Духовные и волшебные легкие бывшего оперного певца. Хотя, если честно, голосовые связки делают свое дело.
 
-ent-SeashellInstrument-name = seashell
-ent-SeashellInstrument-desc = For laying down the shoreline beat.
+ent-SeashellInstrument-name = ракушка
+ent-SeashellInstrument-desc = Для прокладки береговой линии.
 
-ent-BirdToyInstrument-name = bird whistle
-ent-BirdToyInstrument-desc = A delightful little whistle in the shape of a bird. It sings beautifully.
+ent-BirdToyInstrument-name = птичий свисток
+ent-BirdToyInstrument-desc = Очаровательная свистулька в виде птички. Оно прекрасно поет.
 
-ent-PhoneInstrument-name = red phone
-ent-PhoneInstrument-desc = Should anything ever go wrong...
+ent-PhoneInstrument-name = красный телефон
+ent-PhoneInstrument-desc = Если что-то пойдет не так...
 
-ent-PhoneInstrumentSyndicate-name = blood-red phone
-ent-PhoneInstrumentSyndicate-desc = For evil people to call their friends.
+ent-PhoneInstrumentSyndicate-name = кроваво-красный телефон
+ent-PhoneInstrumentSyndicate-desc = Чтобы злые люди звонили своим друзьям.
 
-ent-HelicopterInstrument-name = toy helicopter
+ent-HelicopterInstrument-name = игрушечный вертолет
 ent-HelicopterInstrument-desc = Ch-ka-ch-ka-ch-ka-ch-ka-ch-ka-ch-ka...
 
-ent-CannedApplauseInstrument-name = canned applause
-ent-CannedApplauseInstrument-desc = Seems like someone already used it all up...
+ent-CannedApplauseInstrument-name = консервированные аплодисменты
+ent-CannedApplauseInstrument-desc = Кажется, кто-то уже все это израсходовал...
 
-ent-GunpetInstrument-name = gunpet
-ent-GunpetInstrument-desc = Why do you need to examine this? Is it not self-explanatory?
+ent-GunpetInstrument-name = пушка
+ent-GunpetInstrument-desc = Почему вам нужно это изучить? Разве это не говорит само за себя?
 
-ent-BikeHornInstrument-name = gilded bike horn
-ent-BikeHornInstrument-desc = An exquisitely decorated bike horn, capable of honking in a variety of notes.
+ent-BikeHornInstrument-name = позолоченный велосипедный гудок
+ent-BikeHornInstrument-desc = Изящно украшенный велосипедный сигнал, способный издавать самые разные ноты.
 
-ent-BananaPhoneInstrument-name = banana phone
-ent-BananaPhoneInstrument-desc = A direct line to the Honkmother. Seems to always go to voicemail.
+ent-BananaPhoneInstrument-name = банановый телефон
+ent-BananaPhoneInstrument-desc = Прямая линия до Хонкматери. Кажется, всегда идет на голосовую почту.
 

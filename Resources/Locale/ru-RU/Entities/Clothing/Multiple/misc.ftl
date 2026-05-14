@@ -1,3 +1,3 @@
-ent-ClothingMultipleHeadphones-name = headphones
-ent-ClothingMultipleHeadphones-desc = Quality headphones from Drunk Masters, with good sound insulation.
+ent-ClothingMultipleHeadphones-name = наушники
+ent-ClothingMultipleHeadphones-desc = Качественные наушники от Drunk Masters, с хорошей шумоизоляцией.
 

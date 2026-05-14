@@ -1,24 +1,24 @@
-ent-XenoborgEngi-name = engi xenoborg
-ent-XenoborgEngi-desc = A man-machine hybrid that aims to replicate itself. They love extracting brains to insert into fresh xenoborg chassis to grow their army. This one seems to be an engineering type, as it has more tools for supporting the other xenoborgs.
+ent-XenoborgEngi-name = Энги Ксеноборг
+ent-XenoborgEngi-desc = Гибрид человека и машины, стремящийся воспроизвести себя. Они любят извлекать мозги и вставлять их в новые шасси ксеноборгов, чтобы увеличить свою армию. Похоже, это инженерный тип, так как у него больше инструментов для поддержки других ксеноборгов.
 
-ent-XenoborgHeavy-name = heavy xenoborg
-ent-XenoborgHeavy-desc = A man-machine hybrid that aims to replicate itself. They love extracting brains to insert into fresh xenoborg chassis to grow their army. This type is has heavy lasers and is covered in thick armor plates. It may be tougher, but its speed matches its brawn.
+ent-XenoborgHeavy-name = тяжелый ксеноборг
+ent-XenoborgHeavy-desc = Гибрид человека и машины, стремящийся воспроизвести себя. Они любят извлекать мозги и вставлять их в новые шасси ксеноборгов, чтобы увеличить свою армию. Этот тип оснащен тяжелыми лазерами и покрыт толстыми броневыми листами. Возможно, он и сложнее, но его скорость соответствует его силе.
 
-ent-XenoborgScout-name = scout xenoborg
-ent-XenoborgScout-desc = A man-machine hybrid that aims to replicate itself. They love extracting brains to insert into fresh xenoborg chassis to grow their army. This is a scout type, its nimble thrusters allow it to move quickly through space.
+ent-XenoborgScout-name = разведчик ксеноборг
+ent-XenoborgScout-desc = Гибрид человека и машины, стремящийся воспроизвести себя. Они любят извлекать мозги и вставлять их в новые шасси ксеноборгов, чтобы увеличить свою армию. Это разведчик, его маневренные двигатели позволяют ему быстро перемещаться в пространстве.
 
-ent-XenoborgStealth-name = stealth xenoborg
-ent-XenoborgStealth-desc = A man-machine hybrid that aims to replicate itself. They love extracting brains to insert into fresh xenoborg chassis to grow their army. This one is a stealth type. Its armor shimmers in the light like no other material you've seen.
+ent-XenoborgStealth-name = стелс ксеноборг
+ent-XenoborgStealth-desc = Гибрид человека и машины, стремящийся воспроизвести себя. Они любят извлекать мозги и вставлять их в новые шасси ксеноборгов, чтобы увеличить свою армию. Это стелс-тип. Его броня переливается на свету так, как ни один другой материал, который вы когда-либо видели.
 
-ent-XenoborgEngiPrinted-name = engi xenoborg
-ent-XenoborgEngiPrinted-desc = A man-machine hybrid that aims to replicate itself. They love extracting brains to insert into fresh xenoborg chassis to grow their army. This one seems to be an engineering type, as it has more tools for supporting the other xenoborgs.
+ent-XenoborgEngiPrinted-name = Энги Ксеноборг
+ent-XenoborgEngiPrinted-desc = Гибрид человека и машины, стремящийся воспроизвести себя. Они любят извлекать мозги и вставлять их в новые шасси ксеноборгов, чтобы увеличить свою армию. Похоже, это инженерный тип, так как у него больше инструментов для поддержки других ксеноборгов.
 
-ent-XenoborgHeavyPrinted-name = heavy xenoborg
-ent-XenoborgHeavyPrinted-desc = A man-machine hybrid that aims to replicate itself. They love extracting brains to insert into fresh xenoborg chassis to grow their army. This type is has heavy lasers and is covered in thick armor plates. It may be tougher, but its speed matches its brawn.
+ent-XenoborgHeavyPrinted-name = тяжелый ксеноборг
+ent-XenoborgHeavyPrinted-desc = Гибрид человека и машины, стремящийся воспроизвести себя. Они любят извлекать мозги и вставлять их в новые шасси ксеноборгов, чтобы увеличить свою армию. Этот тип оснащен тяжелыми лазерами и покрыт толстыми броневыми листами. Возможно, он и сложнее, но его скорость соответствует его силе.
 
-ent-XenoborgScoutPrinted-name = scout xenoborg
-ent-XenoborgScoutPrinted-desc = A man-machine hybrid that aims to replicate itself. They love extracting brains to insert into fresh xenoborg chassis to grow their army. This is a scout type, its nimble thrusters allow it to move quickly through space.
+ent-XenoborgScoutPrinted-name = разведчик ксеноборг
+ent-XenoborgScoutPrinted-desc = Гибрид человека и машины, стремящийся воспроизвести себя. Они любят извлекать мозги и вставлять их в новые шасси ксеноборгов, чтобы увеличить свою армию. Это разведчик, его маневренные двигатели позволяют ему быстро перемещаться в пространстве.
 
-ent-XenoborgStealthPrinted-name = stealth xenoborg
-ent-XenoborgStealthPrinted-desc = A man-machine hybrid that aims to replicate itself. They love extracting brains to insert into fresh xenoborg chassis to grow their army. This one is a stealth type. Its armor shimmers in the light like no other material you've seen.
+ent-XenoborgStealthPrinted-name = стелс ксеноборг
+ent-XenoborgStealthPrinted-desc = Гибрид человека и машины, стремящийся воспроизвести себя. Они любят извлекать мозги и вставлять их в новые шасси ксеноборгов, чтобы увеличить свою армию. Это стелс-тип. Его броня переливается на свету так, как ни один другой материал, который вы когда-либо видели.
 

@@ -1,72 +1,72 @@
-ent-FoodBoxDonut-name = donut box
-ent-FoodBoxDonut-desc = Mmm, Donuts.
+ent-FoodBoxDonut-name = коробка для пончиков
+ent-FoodBoxDonut-desc = Ммм, пончики.
 
-ent-FoodContainerEgg-name = egg carton
-ent-FoodContainerEgg-desc = Don't drop 'em!
+ent-FoodContainerEgg-name = коробка для яиц
+ent-FoodContainerEgg-desc = Не бросайте их!
 
-ent-FoodBoxPizza-name = pizza box
+ent-FoodBoxPizza-name = коробка для пиццы
 
-ent-FoodBoxPizzaFilled-name = pizza box
+ent-FoodBoxPizzaFilled-name = коробка для пиццы
 
-ent-FoodBoxPizzaCotton-name = pizza box
+ent-FoodBoxPizzaCotton-name = коробка для пиццы
 
-ent-FoodBoxNugget-name = chicken nuggets
-ent-FoodBoxNugget-desc = You suddenly have an urge to trade on the intergalactic stock market.
+ent-FoodBoxNugget-name = куриные наггетсы
+ent-FoodBoxNugget-desc = У вас внезапно возникает желание торговать на межгалактическом фондовом рынке.
 
-ent-FoodBoxDonkpocket-name = box of donk-pockets
-ent-FoodBoxDonkpocket-desc = Instructions: Heat in microwave. Product will cool if not eaten within seven minutes.
+ent-FoodBoxDonkpocket-name = коробка с карманами для донка
+ent-FoodBoxDonkpocket-desc = Инструкции: Разогрейте в микроволновой печи. Продукт остынет, если его не съесть в течение семи минут.
 
-ent-FoodBoxDonkpocketSpicy-name = box of spicy-flavoured donk-pockets
-ent-FoodBoxDonkpocketSpicy-desc = Instructions: Heat in microwave. Product will cool if not eaten within seven minutes.
+ent-FoodBoxDonkpocketSpicy-name = коробка донк-карманов с пряным вкусом
+ent-FoodBoxDonkpocketSpicy-desc = Инструкции: Разогрейте в микроволновой печи. Продукт остынет, если его не съесть в течение семи минут.
 
-ent-FoodBoxDonkpocketTeriyaki-name = box of teriyaki-flavoured donk-pockets
-ent-FoodBoxDonkpocketTeriyaki-desc = Instructions: Heat in microwave. Product will cool if not eaten within seven minutes.
+ent-FoodBoxDonkpocketTeriyaki-name = коробка донк-карманов со вкусом терияки
+ent-FoodBoxDonkpocketTeriyaki-desc = Инструкции: Разогрейте в микроволновой печи. Продукт остынет, если его не съесть в течение семи минут.
 
-ent-FoodBoxDonkpocketPizza-name = box of pizza-flavoured donk-pockets
-ent-FoodBoxDonkpocketPizza-desc = Instructions: Heat in microwave. Product will cool if not eaten within seven minutes.
+ent-FoodBoxDonkpocketPizza-name = коробка донк-карманов со вкусом пиццы
+ent-FoodBoxDonkpocketPizza-desc = Инструкции: Разогрейте в микроволновой печи. Продукт остынет, если его не съесть в течение семи минут.
 
-ent-FoodBoxDonkpocketStonk-name = box of limited edition stonk-pockets
-ent-FoodBoxDonkpocketStonk-desc = Instructions: Heat in microwave. Product will cool if not eaten within seven minutes.
+ent-FoodBoxDonkpocketStonk-name = коробка с ограниченным тиражом Stonk-Pockets
+ent-FoodBoxDonkpocketStonk-desc = Инструкции: Разогрейте в микроволновой печи. Продукт остынет, если его не съесть в течение семи минут.
 
-ent-FoodBoxDonkpocketCarp-name = box of carp-pockets
-ent-FoodBoxDonkpocketCarp-desc = Instructions: Heat in microwave. Product will cool if not eaten within seven minutes.
+ent-FoodBoxDonkpocketCarp-name = коробка с карповыми карманами
+ent-FoodBoxDonkpocketCarp-desc = Инструкции: Разогрейте в микроволновой печи. Продукт остынет, если его не съесть в течение семи минут.
 
-ent-FoodBoxDonkpocketBerry-name = box of berry-flavoured donk-pockets
-ent-FoodBoxDonkpocketBerry-desc = Instructions: Heat in microwave. Product will cool if not eaten within seven minutes.
+ent-FoodBoxDonkpocketBerry-name = коробка донк-карманов со вкусом ягод
+ent-FoodBoxDonkpocketBerry-desc = Инструкции: Разогрейте в микроволновой печи. Продукт остынет, если его не съесть в течение семи минут.
 
-ent-FoodBoxDonkpocketHonk-name = box of banana-flavoured donk-pockets
-ent-FoodBoxDonkpocketHonk-desc = Instructions: Heat in microwave. Product will cool if not eaten within seven minutes.
+ent-FoodBoxDonkpocketHonk-name = коробка донк-карманов со вкусом банана
+ent-FoodBoxDonkpocketHonk-desc = Инструкции: Разогрейте в микроволновой печи. Продукт остынет, если его не съесть в течение семи минут.
 
-ent-FoodBoxDonkpocketDink-name = box of dink-pockets
-ent-FoodBoxDonkpocketDink-desc = Net Zero carbohydrates! No need for heating!
+ent-FoodBoxDonkpocketDink-name = коробка с карманами
+ent-FoodBoxDonkpocketDink-desc = Чистый ноль углеводов! Нет необходимости в обогреве!
 
-ent-FoodBoxDonkpocketMoth-name = box of moth-pockets
-ent-FoodBoxDonkpocketMoth-desc = Instructions: Heat in microwave. Product will cool if not eaten within seven minutes.
+ent-FoodBoxDonkpocketMoth-name = коробка с карманами от моли
+ent-FoodBoxDonkpocketMoth-desc = Инструкции: Разогрейте в микроволновой печи. Продукт остынет, если его не съесть в течение семи минут.
 
-ent-HappyHonk-name = happy honk meal
-ent-HappyHonk-desc = The toy is more edible than the food.
+ent-HappyHonk-name = счастливая еда
+ent-HappyHonk-desc = Игрушка съедобнее еды.
 
-ent-HappyHonkMime-name = happy honk meal
-ent-HappyHonkMime-desc = A limited mime edition of the happy honk meal.
+ent-HappyHonkMime-name = счастливая еда
+ent-HappyHonkMime-desc = Ограниченное мимическое издание счастливой еды.
 
-ent-HappyHonkNukie-name = robust nukie meal
-ent-HappyHonkNukie-desc = A sus meal with a potentially explosive surprise.
+ent-HappyHonkNukie-name = крепкая ядерная еда
+ent-HappyHonkNukie-desc = Суп-обед с потенциально взрывным сюрпризом.
 
-ent-HappyHonkNukieSnacks-name = syndicate snack box
-ent-HappyHonkNukieSnacks-desc = A sus meal with a potentially explosive surprise.
+ent-HappyHonkNukieSnacks-name = коробка с закусками синдиката
+ent-HappyHonkNukieSnacks-desc = Суп-обед с потенциально взрывным сюрпризом.
 
-ent-HappyHonkCluwne-name = woeful cluwne meal
-ent-HappyHonkCluwne-desc = Nothing good can come of this.
+ent-HappyHonkCluwne-name = ужасная клувнская еда
+ent-HappyHonkCluwne-desc = Ничего хорошего из этого не выйдет.
 
-ent-FoodMealHappyHonkBigBite-name = Happy Honk Big Bite Meal
-ent-FoodMealHappyHonkBigBite-desc = Someone paid good money to get this fast food meal shipped out this way. It smells fresh, somehow.
+ent-FoodMealHappyHonkBigBite-name = Счастливый сигнал, большой перекус
+ent-FoodMealHappyHonkBigBite-desc = Кто-то заплатил хорошие деньги, чтобы доставить этот фаст-фуд таким способом. Почему-то пахнет свежестью.
 
-ent-FoodBoxCloth-name = box of FlutterSoft-brand cloth
-ent-FoodBoxCloth-desc = Fiber is the most important moth meal of the day! Don't skip it or use bottom-of-the-locker junk, buy high-quality FlutterSoft-brand cloth instead.
+ent-FoodBoxCloth-name = коробка салфетки марки FlutterSoft
+ent-FoodBoxCloth-desc = Клетчатка — самая важная еда дня! Не пропускайте это и не используйте мусор, лежащий на дне шкафчика, вместо этого купите высококачественную ткань марки FlutterSoft.
 
-ent-EggBoxBroken-name = egg carton
-ent-EggBoxBroken-desc = Don't drop 'em!
+ent-EggBoxBroken-name = коробка для яиц
+ent-EggBoxBroken-desc = Не бросайте их!
 
-ent-FoodMealHappyHonkClown-name = happy honk meal
-ent-FoodMealHappyHonkClown-desc = The toy is more edible than the food.
+ent-FoodMealHappyHonkClown-name = счастливая еда
+ent-FoodMealHappyHonkClown-desc = Игрушка съедобнее еды.
 

@@ -221,3 +221,58 @@ au14-ipie-greeting =
     Прибыль компании — твоя цель.
     
     Weyland-Yutani — строим лучшие миры.
+
+# Missing entries synced from en-US
+
+au14-lacncommando-description = LACN отдал вас в аренду Командованию союзных сил Соединенных Штатов для выполнения специальной миссии на этой планете, подробности которой вам не были раскрыты. Вам было приказано исследовать местность и доложить местному командованию GOVFOR.
+
+au14-job-name-vai-mercenary = Подрядчик
+
+au14-vai-mercenary-description = Вы — наемник компании Vanguard's Arrow Incorporated. Следуйте своему контракту. Подробную информацию можно найти в учебнике.
+
+au14-job-prefix-vai-mercenary = ВАИК
+
+au14-job-name-vai-teamleader = Руководитель группы
+
+au14-job-prefix-vai-teamleader = ВАЙТЛ
+
+au14-job-name-vai-medic = Медицинский специалист
+
+au14-job-prefix-vai-medic = ВАИМ
+
+au14-job-name-vai-engi = Инженер-специалист
+
+au14-job-prefix-vai-engi = ВАИЭ
+
+au14-job-name-vai-machinegunner = Пулеметчик
+
+au14-job-prefix-vai-machinegunner = ВАИМГ
+
+au14-vaipo-greeting = Вы являетесь частью основного подразделения Vanguard's Arrow Incorporated.
+
+    You received a call from local UA Ambassador and to investigate it.
+    Ensure safety of Ambassador for all cost.
+
+    You are FRIENDLY to all UA units.
+
+au14-vaiso-greeting = Вы являетесь частью специальных операций Vanguard's Arrow Incorporated.
+
+    You are tasked unsavory operations, black ops, and the anti-WY work.
+
+    You received intel from local CLF insurgents on Weyland-Yutani research facility.
+
+    You are to raid it and retrieve any valuable intel.
+
+    Do it quickly, and dont draw unnecessery attention.
+
+    Remember, you are not here, never was and never will.
+
+    You are FRIENDLY to all UA units.
+
+au14-vaisp-greeting = Вы являетесь частью Vanguard's Arrow Incorporated.
+
+    You are a part of Medical team called by UA Ambassador.
+
+    Ensure their safety at all cost.
+
+    You are FRIENDLY to all UA units.

@@ -1,169 +1,169 @@
-ent-WheatSeeds-name = packet of wheat seeds
+ent-WheatSeeds-name = пакетик семян пшеницы
 
-ent-MeatwheatSeeds-name = packet of meatwheat seeds
-ent-MeatwheatSeeds-desc = If you ever wanted to drive a vegetarian to insanity, here's how.
+ent-MeatwheatSeeds-name = пакетик семян мясной пшеницы
+ent-MeatwheatSeeds-desc = Если вы когда-нибудь хотели довести вегетарианца до безумия, вот как.
 
-ent-OatSeeds-name = packet of oat seeds
+ent-OatSeeds-name = пакетик семян овса
 
-ent-BananaSeeds-name = packet of banana seeds
+ent-BananaSeeds-name = пакетик банановых семян
 
-ent-MimanaSeeds-name = packet of mimana seeds
+ent-MimanaSeeds-name = пакетик семян мимана
 
-ent-CarrotSeeds-name = packet of carrot seeds
+ent-CarrotSeeds-name = пакетик семян моркови
 
-ent-CabbageSeeds-name = packet of cabbage seeds
+ent-CabbageSeeds-name = пакетик семян капусты
 
-ent-GarlicSeeds-name = packet of garlic seeds
+ent-GarlicSeeds-name = пакетик семян чеснока
 
-ent-LaughinPeaSeeds-name = packet of laughin' pea pods
-ent-LaughinPeaSeeds-desc = These seeds give off a very soft purple glow.. they should grow into Laughin' Peas.
+ent-LaughinPeaSeeds-name = пакетик стручков смеющегося горошка
+ent-LaughinPeaSeeds-desc = Эти семена излучают очень мягкий фиолетовый свет. Из них должен вырасти Laughin' Peas.
 
-ent-LemonSeeds-name = packet of lemon seeds
+ent-LemonSeeds-name = пакетик семян лимона
 
-ent-LemoonSeeds-name = packet of lemoon seeds
+ent-LemoonSeeds-name = пакетик семян лимона
 
-ent-LimeSeeds-name = packet of lime seeds
+ent-LimeSeeds-name = пакетик семян лайма
 
-ent-OrangeSeeds-name = packet of orange seeds
+ent-OrangeSeeds-name = пакетик семян апельсина
 
-ent-ExtradimensionalOrangeSeeds-name = packet of extradimensional orange seeds
-ent-ExtradimensionalOrangeSeeds-desc = Polygonal seeds.
+ent-ExtradimensionalOrangeSeeds-name = пакетик экстрамерных семян апельсина
+ent-ExtradimensionalOrangeSeeds-desc = Полигональные семена.
 
-ent-PineappleSeeds-name = packet of pineapple seeds
+ent-PineappleSeeds-name = пакетик семян ананаса
 
-ent-PotatoSeeds-name = packet of potato seeds
+ent-PotatoSeeds-name = пакетик семян картофеля
 
-ent-SugarcaneSeeds-name = packet of sugarcane seeds
+ent-SugarcaneSeeds-name = пакетик семян сахарного тростника
 
-ent-TeaPlantSeeds-name = packet of tea plant seeds
+ent-TeaPlantSeeds-name = пакетик семян чайного растения
 
-ent-PapercaneSeeds-name = packet of papercane seeds
+ent-PapercaneSeeds-name = пакетик семян бумажного тростника
 
-ent-TowercapSeeds-name = packet of tower cap spores
+ent-TowercapSeeds-name = пакет со спорами башенного колпака
 
-ent-SteelcapSeeds-name = packet of steel cap spores
+ent-SteelcapSeeds-name = пакет со спорами стальной шляпки
 
-ent-TomatoSeeds-name = packet of tomato seeds
+ent-TomatoSeeds-name = пакетик семян томатов
 
-ent-BlueTomatoSeeds-name = packet of blue tomato seeds
+ent-BlueTomatoSeeds-name = пакетик семян синих томатов
 
-ent-BloodTomatoSeeds-name = packet of blood tomato seeds
+ent-BloodTomatoSeeds-name = пакетик семян кровавых томатов
 
-ent-KillerTomatoSeeds-name = packet of killer tomato seeds
+ent-KillerTomatoSeeds-name = пакетик семян томатов-убийц
 
-ent-EggplantSeeds-name = packet of eggplant seeds
+ent-EggplantSeeds-name = пакетик семян баклажанов
 
-ent-AppleSeeds-name = packet of apple seeds
+ent-AppleSeeds-name = пакетик яблочных семечек
 
-ent-GoldenAppleSeeds-name = packet of golden apple seeds
+ent-GoldenAppleSeeds-name = пакетик семян золотого яблока
 
-ent-CornSeeds-name = packet of corn seeds
+ent-CornSeeds-name = пакетик семян кукурузы
 
-ent-ChanterelleSeeds-name = packet of chanterelle spores
+ent-ChanterelleSeeds-name = пакетик спор лисички
 
-ent-EggySeeds-name = packet of egg-plant seeds
+ent-EggySeeds-name = пакетик семян баклажанов
 
-ent-TobaccoSeeds-name = packet of tobacco seeds
-ent-TobaccoSeeds-desc = These seeds grow into tobacco plants.
+ent-TobaccoSeeds-name = пакетик семян табака
+ent-TobaccoSeeds-desc = Из этих семян вырастают табачные растения.
 
-ent-CannabisSeeds-name = packet of cannabis seeds
-ent-CannabisSeeds-desc = Taxable.
+ent-CannabisSeeds-name = пакетик семян конопли
+ent-CannabisSeeds-desc = Облагается налогом.
 
-ent-RainbowCannabisSeeds-name = packet of rainbow cannabis seeds
-ent-RainbowCannabisSeeds-desc = These seeds grow into rainbow weed. Groovy... and also highly addictive.
+ent-RainbowCannabisSeeds-name = пакетик семян конопли Rainbow
+ent-RainbowCannabisSeeds-desc = Эти семена вырастают в радужную травку. Захватывающе... и к тому же очень затягивает.
 
-ent-NettleSeeds-name = packet of nettle seeds
-ent-NettleSeeds-desc = Handle with gloves.
+ent-NettleSeeds-name = пакетик семян крапивы
+ent-NettleSeeds-desc = Работайте в перчатках.
 
-ent-DeathNettleSeeds-name = packet of death nettle seeds
-ent-DeathNettleSeeds-desc = Handle with very thick gloves.
+ent-DeathNettleSeeds-name = пакетик семян смертоносной крапивы
+ent-DeathNettleSeeds-desc = Работайте в очень толстых перчатках.
 
-ent-ChiliSeeds-name = packet of chili seeds
-ent-ChiliSeeds-desc = Spicy.
+ent-ChiliSeeds-name = пакетик семян чили
+ent-ChiliSeeds-desc = Пряный.
 
-ent-ChillySeeds-name = packet of chilly seeds
-ent-ChillySeeds-desc = Frostburn.
+ent-ChillySeeds-name = пакетик холодных семян
+ent-ChillySeeds-desc = Обморожение.
 
-ent-AloeSeeds-name = packet of aloe seeds
-ent-AloeSeeds-desc = Soothing.
+ent-AloeSeeds-name = пакетик семян алоэ
+ent-AloeSeeds-desc = Успокаивающий.
 
-ent-PoppySeeds-name = packet of poppy seeds
-ent-PoppySeeds-desc = Do not eat within 72 hours of a drug test.
+ent-PoppySeeds-name = пакетик семян мака
+ent-PoppySeeds-desc = Не ешьте в течение 72 часов после теста на наркотики.
 
-ent-LilySeeds-name = packet of lily seeds
-ent-LilySeeds-desc = These seeds grow into lilies.
+ent-LilySeeds-name = пакетик семян лилии
+ent-LilySeeds-desc = Из этих семян вырастают лилии.
 
-ent-LingzhiSeeds-name = packet of lingzhi spores
-ent-LingzhiSeeds-desc = Also known as reishi.
+ent-LingzhiSeeds-name = пакетик спор линчжи
+ent-LingzhiSeeds-desc = Также известен как рейши.
 
-ent-AmbrosiaVulgarisSeeds-name = packet of ambrosia vulgaris seeds
-ent-AmbrosiaVulgarisSeeds-desc = A medicinal plant for the common folk.
+ent-AmbrosiaVulgarisSeeds-name = пакетик семян амброзии обыкновенной
+ent-AmbrosiaVulgarisSeeds-desc = Лекарственное растение для простого народа.
 
-ent-AmbrosiaDeusSeeds-name = packet of ambrosia deus seeds
-ent-AmbrosiaDeusSeeds-desc = A medicinal plant for the gods themselves.
+ent-AmbrosiaDeusSeeds-name = пакетик семян амброзии деус
+ent-AmbrosiaDeusSeeds-desc = Лекарственное растение для самих богов.
 
-ent-GalaxythistleSeeds-name = packet of galaxythistle seeds
-ent-GalaxythistleSeeds-desc = Brushes of starry nights.
+ent-GalaxythistleSeeds-name = пакетик семян галактического чертополоха
+ent-GalaxythistleSeeds-desc = Кисти звездных ночей.
 
-ent-GlasstleSeeds-name = packet of glasstle seeds
-ent-GlasstleSeeds-desc = Scars of gloomy nights.
+ent-GlasstleSeeds-name = пакетик семян стеклянника
+ent-GlasstleSeeds-desc = Шрамы хмурых ночей.
 
-ent-FlyAmanitaSeeds-name = packet of fly amanita spores
-ent-FlyAmanitaSeeds-desc = The iconic, extremely deadly mushroom to be used for purely ornamental purposes.
+ent-FlyAmanitaSeeds-name = пакетик спор мухомора
+ent-FlyAmanitaSeeds-desc = Знаменитый, чрезвычайно смертоносный гриб, который можно использовать исключительно в декоративных целях.
 
-ent-GatfruitSeeds-name = packet of gatfruit seeds
-ent-GatfruitSeeds-desc = These are no peashooters.
+ent-GatfruitSeeds-name = пакетик семян гаптфрута
+ent-GatfruitSeeds-desc = Это не шутники.
 
-ent-OnionSeeds-name = packet of onion seeds
-ent-OnionSeeds-desc = Not a shallot.
+ent-OnionSeeds-name = пакетик семян лука
+ent-OnionSeeds-desc = Не лук-шалот.
 
-ent-RiceSeeds-name = packet of rice seeds
+ent-RiceSeeds-name = пакетик семян риса
 
-ent-SoybeanSeeds-name = packet of soybean seeds
+ent-SoybeanSeeds-name = пакетик семян сои
 
-ent-SpacemansTrumpetSeeds-name = packet of spaceman's trumpet seeds
+ent-SpacemansTrumpetSeeds-name = пакетик семян трубы космонавта
 
-ent-KoibeanSeeds-name = packet of koibean seeds
+ent-KoibeanSeeds-name = пакетик семян коибе
 
-ent-OnionRedSeeds-name = packet of red onion seeds
-ent-OnionRedSeeds-desc = Purple despite the name.
+ent-OnionRedSeeds-name = пакетик семян красного лука
+ent-OnionRedSeeds-desc = Фиолетовый, несмотря на название.
 
-ent-WatermelonSeeds-name = packet of watermelon seeds
+ent-WatermelonSeeds-name = пакетик семян арбуза
 
-ent-HolymelonSeeds-name = packet of holymelon seeds
+ent-HolymelonSeeds-name = пакетик семян дыни
 
-ent-GrapeSeeds-name = packet of grape seeds
+ent-GrapeSeeds-name = пакетик виноградных косточек
 
-ent-CocoaSeeds-name = packet of cocoa seeds
+ent-CocoaSeeds-name = пакетик семян какао
 
-ent-BerrySeeds-name = packet of berry seeds
+ent-BerrySeeds-name = пакетик семян ягод
 
-ent-BungoSeeds-name = packet of bungo seeds
-ent-BungoSeeds-desc = Don't eat the pits.
+ent-BungoSeeds-name = пакетик семян бунго
+ent-BungoSeeds-desc = Не ешьте косточки.
 
-ent-PeaSeeds-name = packet of pea pods
-ent-PeaSeeds-desc = These humble plants were once a vital part in the study of genetics.
+ent-PeaSeeds-name = пакет стручков гороха
+ent-PeaSeeds-desc = Эти скромные растения когда-то играли важную роль в изучении генетики.
 
-ent-WorldPeaSeeds-name = packet of world pea seeds
-ent-WorldPeaSeeds-desc = These rather large seeds give off a soothing blue glow.
+ent-WorldPeaSeeds-name = пакетик семян мирового гороха
+ent-WorldPeaSeeds-desc = Эти довольно крупные семена излучают успокаивающее голубое свечение.
 
-ent-PumpkinSeeds-name = packet of pumpkin seeds
+ent-PumpkinSeeds-name = пакетик тыквенных семечек
 
-ent-BluePumpkinSeeds-name = packet of blue pumpkin seeds
+ent-BluePumpkinSeeds-name = пакетик синих тыквенных семечек
 
-ent-CottonSeeds-name = packet of cotton seeds
+ent-CottonSeeds-name = пакетик семян хлопка
 
-ent-PyrottonSeeds-name = packet of pyrotton seeds
+ent-PyrottonSeeds-name = пакетик семян пироттона
 
-ent-RealCapfruitSeeds-name = packet of capfruit seeds
-ent-RealCapfruitSeeds-desc = Is it real, or is it fake?
+ent-RealCapfruitSeeds-name = пакетик семян капфрута
+ent-RealCapfruitSeeds-desc = Это правда или это подделка?
 
-ent-CherrySeeds-name = packet of cherry seeds
+ent-CherrySeeds-name = пакетик семян вишни
 
-ent-AnomalyBerrySeeds-name = packet of anomaly berry seeds
+ent-AnomalyBerrySeeds-name = пакетик семян аномальной ягоды
 
-ent-SeedBase-name = item
+ent-SeedBase-name = элемент
 
-ent-FakeCapfruitSeeds-name = packet of capfruit seeds
-ent-FakeCapfruitSeeds-desc = Is it real, or is it fake?
+ent-FakeCapfruitSeeds-name = пакетик семян капфрута
+ent-FakeCapfruitSeeds-desc = Это правда или это подделка?
 

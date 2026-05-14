@@ -1,17 +1,17 @@
-ent-BalloonOperative-name = operative balloon
-ent-BalloonOperative-desc = Upon closer inspection, this Syndicate operative is actually a balloon.
+ent-BalloonOperative-name = оперативный баллон
+ent-BalloonOperative-desc = При ближайшем рассмотрении этот оперативник Синдиката на самом деле представляет собой воздушный шар.
 
-ent-BalloonAgent-name = corpsman balloon
-ent-BalloonAgent-desc = Upon closer inspection, this Syndicate corpsman is actually a balloon.
+ent-BalloonAgent-name = санитар воздушный шар
+ent-BalloonAgent-desc = При ближайшем рассмотрении этот санитар Синдиката на самом деле представляет собой воздушный шар.
 
-ent-BalloonElite-name = elite operative balloon
-ent-BalloonElite-desc = Upon closer inspection, this Syndicate elite operative is actually a balloon.
+ent-BalloonElite-name = элитный оперативный аэростат
+ent-BalloonElite-desc = При ближайшем рассмотрении этот элитный оперативник Синдиката на самом деле представляет собой воздушный шар.
 
-ent-BalloonJuggernaut-name = juggernaut balloon
-ent-BalloonJuggernaut-desc = Upon closer inspection, this Syndicate juggernaut is actually a balloon.
+ent-BalloonJuggernaut-name = Джаггернаут воздушный шар
+ent-BalloonJuggernaut-desc = При ближайшем рассмотрении эта мощная сила Синдиката на самом деле представляет собой воздушный шар.
 
-ent-BalloonCommander-name = commander balloon
-ent-BalloonCommander-desc = Upon closer inspection, this Syndicate commander is actually a balloon.
+ent-BalloonCommander-name = командирский воздушный шар
+ent-BalloonCommander-desc = При ближайшем рассмотрении этот командир Синдиката на самом деле представляет собой воздушный шар.
 
-ent-BaseDecoy-name = item
+ent-BaseDecoy-name = элемент
 

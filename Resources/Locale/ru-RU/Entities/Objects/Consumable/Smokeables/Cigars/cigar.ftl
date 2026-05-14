@@ -1,12 +1,12 @@
-ent-CigarGold-name = premium Havanian cigar
-ent-CigarGold-desc = A cigar fit for only the best of the best.
+ent-CigarGold-name = премиальная гаванская сигара
+ent-CigarGold-desc = Сигара, подходящая только лучшим из лучших.
 
-ent-Cigar-name = cigar
-ent-Cigar-desc = A brown roll of tobacco and... well, you're not quite sure.
+ent-Cigar-name = сигара
+ent-Cigar-desc = Коричневый сверток табака и... ну, ты не совсем уверен.
 
-ent-CigarSpent-name = cigar
-ent-CigarSpent-desc = A brown roll of tobacco and... well, you're not quite sure.
+ent-CigarSpent-name = сигара
+ent-CigarSpent-desc = Коричневый сверток табака и... ну, ты не совсем уверен.
 
-ent-CigarGoldSpent-name = cigar
-ent-CigarGoldSpent-desc = A brown roll of tobacco and... well, you're not quite sure.
+ent-CigarGoldSpent-name = сигара
+ent-CigarGoldSpent-desc = Коричневый сверток табака и... ну, ты не совсем уверен.
 

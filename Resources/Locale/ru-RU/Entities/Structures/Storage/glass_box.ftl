@@ -1,9 +1,9 @@
-ent-GlassBox-name = glass box
-ent-GlassBox-desc = A sturdy showcase for an expensive exhibit.
+ent-GlassBox-name = стеклянная коробка
+ent-GlassBox-desc = Прочная витрина для дорогого экспоната.
 
-ent-GlassBoxFrame-name = glass box frame
-ent-GlassBoxFrame-desc = A glassless sturdy showcase for an expensive exhibit.
+ent-GlassBoxFrame-name = рамка стеклянной коробки
+ent-GlassBoxFrame-desc = Прочная безстекленная витрина для дорогого экспоната.
 
-ent-GlassBoxBroken-name = broken glass box
-ent-GlassBoxBroken-desc = A broken showcase for a stolen expensive exhibit.
+ent-GlassBoxBroken-name = разбитая стеклянная коробка
+ent-GlassBoxBroken-desc = Разбитая витрина для украденного дорогого экспоната.
 

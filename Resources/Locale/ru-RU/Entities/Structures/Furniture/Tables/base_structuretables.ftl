@@ -1,6 +1,6 @@
-ent-TableBase-name = table
-ent-TableBase-desc = A square piece of metal standing on four metal legs.
+ent-TableBase-name = стол
+ent-TableBase-desc = Квадратный кусок металла, стоящий на четырех металлических ножках.
 
-ent-CounterBase-name = counter
-ent-CounterBase-desc = A square piece of metal standing on four metal legs.
+ent-CounterBase-name = счетчик
+ent-CounterBase-desc = Квадратный кусок металла, стоящий на четырех металлических ножках.
 

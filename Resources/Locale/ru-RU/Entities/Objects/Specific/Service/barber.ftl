@@ -1,3 +1,3 @@
-ent-BarberScissors-name = barber scissors
-ent-BarberScissors-desc = Is able to reshape the hairstyle of any crew cut to your liking.
+ent-BarberScissors-name = парикмахерские ножницы
+ent-BarberScissors-desc = Способен изменить прическу любой стрижки «ежик» по своему вкусу.
 

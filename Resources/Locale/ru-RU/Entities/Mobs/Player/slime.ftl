@@ -1,2 +1,2 @@
-ent-MobSlimePerson-name = Urist McSlime
+ent-MobSlimePerson-name = Урист МакСлайм
 

@@ -1,21 +1,21 @@
-ent-MobRandomServiceCorpse-name = unidentified corpse
-ent-MobRandomServiceCorpse-desc = I think they're dead.
+ent-MobRandomServiceCorpse-name = неопознанный труп
+ent-MobRandomServiceCorpse-desc = Я думаю, они мертвы.
 
-ent-MobRandomEngineerCorpse-name = unidentified corpse
-ent-MobRandomEngineerCorpse-desc = I think they're dead.
+ent-MobRandomEngineerCorpse-name = неопознанный труп
+ent-MobRandomEngineerCorpse-desc = Я думаю, они мертвы.
 
-ent-MobRandomCargoCorpse-name = unidentified corpse
-ent-MobRandomCargoCorpse-desc = I think they're dead.
+ent-MobRandomCargoCorpse-name = неопознанный труп
+ent-MobRandomCargoCorpse-desc = Я думаю, они мертвы.
 
-ent-MobRandomMedicCorpse-name = unidentified corpse
-ent-MobRandomMedicCorpse-desc = I think they're dead.
+ent-MobRandomMedicCorpse-name = неопознанный труп
+ent-MobRandomMedicCorpse-desc = Я думаю, они мертвы.
 
-ent-MobRandomScienceCorpse-name = unidentified corpse
-ent-MobRandomScienceCorpse-desc = I think they're dead.
+ent-MobRandomScienceCorpse-name = неопознанный труп
+ent-MobRandomScienceCorpse-desc = Я думаю, они мертвы.
 
-ent-MobRandomSecurityCorpse-name = unidentified corpse
-ent-MobRandomSecurityCorpse-desc = I think they're dead.
+ent-MobRandomSecurityCorpse-name = неопознанный труп
+ent-MobRandomSecurityCorpse-desc = Я думаю, они мертвы.
 
-ent-MobRandomCommandCorpse-name = unidentified corpse
-ent-MobRandomCommandCorpse-desc = I think they're dead.
+ent-MobRandomCommandCorpse-name = неопознанный труп
+ent-MobRandomCommandCorpse-desc = Я думаю, они мертвы.
 

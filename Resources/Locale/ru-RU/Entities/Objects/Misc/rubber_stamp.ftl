@@ -1,69 +1,69 @@
-ent-RubberStampBase-name = generic rubber stamp
-ent-RubberStampBase-desc = A rubber stamp for stamping important documents.
+ent-RubberStampBase-name = универсальный резиновый штамп
+ent-RubberStampBase-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampBaseAlt-name = alternate rubber stamp
-ent-RubberStampBaseAlt-desc = A rubber stamp for stamping important documents.
+ent-RubberStampBaseAlt-name = альтернативный резиновый штамп
+ent-RubberStampBaseAlt-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampCaptain-name = captain's rubber stamp
-ent-RubberStampCaptain-desc = A rubber stamp for stamping important documents.
+ent-RubberStampCaptain-name = капитанский штамп
+ent-RubberStampCaptain-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampCentcom-name = CentComm rubber stamp
-ent-RubberStampCentcom-desc = A rubber stamp for stamping important documents.
+ent-RubberStampCentcom-name = Штамп CentComm
+ent-RubberStampCentcom-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampChaplain-name = chaplain's rubber stamp
-ent-RubberStampChaplain-desc = A rubber stamp for stamping important documents.
+ent-RubberStampChaplain-name = штамп капеллана
+ent-RubberStampChaplain-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampLawyer-name = lawyer's rubber stamp
-ent-RubberStampLawyer-desc = A rubber stamp for stamping important documents.
+ent-RubberStampLawyer-name = штамп адвоката
+ent-RubberStampLawyer-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampClown-name = clown's rubber stamp
-ent-RubberStampClown-desc = A rubber stamp for stamping important documents.
+ent-RubberStampClown-name = штамп клоуна
+ent-RubberStampClown-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampCE-name = chief engineer's rubber stamp
-ent-RubberStampCE-desc = A rubber stamp for stamping important documents.
+ent-RubberStampCE-name = штамп главного инженера
+ent-RubberStampCE-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampCMO-name = chief medical officer's rubber stamp
-ent-RubberStampCMO-desc = A rubber stamp for stamping important documents.
+ent-RubberStampCMO-name = штамп главного врача
+ent-RubberStampCMO-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampHop-name = head of personnel's rubber stamp
-ent-RubberStampHop-desc = A rubber stamp for stamping important documents.
+ent-RubberStampHop-name = штамп начальника отдела кадров
+ent-RubberStampHop-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampHos-name = head of security's rubber stamp
-ent-RubberStampHos-desc = A rubber stamp for stamping important documents.
+ent-RubberStampHos-name = штамп начальника службы безопасности
+ent-RubberStampHos-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampMime-name = mime's rubber stamp
-ent-RubberStampMime-desc = A rubber stamp for stamping important documents.
+ent-RubberStampMime-name = штамп мима
+ent-RubberStampMime-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampQm-name = quartermaster's rubber stamp
-ent-RubberStampQm-desc = A rubber stamp for stamping important documents.
+ent-RubberStampQm-name = штамп интенданта
+ent-RubberStampQm-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampRd-name = research director's rubber stamp
-ent-RubberStampRd-desc = A rubber stamp for stamping important documents.
+ent-RubberStampRd-name = штамп директора по исследованиям
+ent-RubberStampRd-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampTrader-name = trader's rubber stamp
-ent-RubberStampTrader-desc = A rubber stamp for stamping important documents.
+ent-RubberStampTrader-name = штамп трейдера
+ent-RubberStampTrader-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampSyndicate-name = syndicate rubber stamp
-ent-RubberStampSyndicate-desc = A rubber stamp for stamping important documents.
+ent-RubberStampSyndicate-name = резиновый штамп синдиката
+ent-RubberStampSyndicate-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampWarden-name = warden's rubber stamp
-ent-RubberStampWarden-desc = A rubber stamp for stamping important documents.
+ent-RubberStampWarden-name = штамп начальника тюрьмы
+ent-RubberStampWarden-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampApproved-name = APPROVED rubber stamp
-ent-RubberStampApproved-desc = A rubber stamp for stamping important documents.
+ent-RubberStampApproved-name = УТВЕРЖДЕНО резиновый штамп
+ent-RubberStampApproved-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampDenied-name = DENIED rubber stamp
-ent-RubberStampDenied-desc = A rubber stamp for stamping important documents.
+ent-RubberStampDenied-name = ОТКАЗАН резиновый штамп
+ent-RubberStampDenied-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampDetective-name = detective's rubber stamp
-ent-RubberStampDetective-desc = A rubber stamp for stamping important documents.
+ent-RubberStampDetective-name = штамп детектива
+ent-RubberStampDetective-desc = Штамп для штамповки важных документов.
 
-ent-RubberStampGreytide-name = greytide's rubber stamp
-ent-RubberStampGreytide-desc = A rubber stamp for stamping important documents. The tide washes over you, just looking at it...
+ent-RubberStampGreytide-name = резиновый штамп Greytide
+ent-RubberStampGreytide-desc = Штамп для штамповки важных документов. Прилив омывает тебя, просто смотри на него...
 
-ent-RubberStampPsychologist-name = psychologist's rubber stamp
-ent-RubberStampPsychologist-desc = A rubber stamp for stamping important documents. Prescribe those treatments!
+ent-RubberStampPsychologist-name = штамп психолога
+ent-RubberStampPsychologist-desc = Штамп для штамповки важных документов. Назначьте эти методы лечения!
 
-ent-RubberStampWizard-name = wizard's rubber stamp
-ent-RubberStampWizard-desc = A chaotic wizard stamp for serving unchaotic paperwork, how ironic.
+ent-RubberStampWizard-name = штамп волшебника
+ent-RubberStampWizard-desc = Хаотичный штамп волшебника для вручения хаотичных документов, какая ирония.
 

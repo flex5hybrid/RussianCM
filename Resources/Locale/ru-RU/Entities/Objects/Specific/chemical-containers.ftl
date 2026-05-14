@@ -1,51 +1,51 @@
-ent-Jug-name = jug
-ent-Jug-desc = Used to contain a very large amount of chemicals or solutions. Chugging is extremely ill-advised.
+ent-Jug-name = кувшин
+ent-Jug-desc = Используется для содержания очень большого количества химикатов или растворов. Пыхтить крайне неразумно.
 
-ent-JugCarbon-name = item
+ent-JugCarbon-name = элемент
 
-ent-JugIodine-name = item
+ent-JugIodine-name = элемент
 
-ent-JugFluorine-name = item
+ent-JugFluorine-name = элемент
 
-ent-JugChlorine-name = item
+ent-JugChlorine-name = элемент
 
-ent-JugAluminium-name = item
+ent-JugAluminium-name = элемент
 
-ent-JugPhosphorus-name = item
+ent-JugPhosphorus-name = элемент
 
-ent-JugSulfur-name = item
+ent-JugSulfur-name = элемент
 
-ent-JugSilicon-name = item
+ent-JugSilicon-name = элемент
 
-ent-JugHydrogen-name = item
+ent-JugHydrogen-name = элемент
 
-ent-JugLithium-name = item
+ent-JugLithium-name = элемент
 
-ent-JugSodium-name = item
+ent-JugSodium-name = элемент
 
-ent-JugPotassium-name = item
+ent-JugPotassium-name = элемент
 
-ent-JugRadium-name = item
+ent-JugRadium-name = элемент
 
-ent-JugIron-name = item
+ent-JugIron-name = элемент
 
-ent-JugCopper-name = item
+ent-JugCopper-name = элемент
 
-ent-JugGold-name = item
+ent-JugGold-name = элемент
 
-ent-JugMercury-name = item
+ent-JugMercury-name = элемент
 
-ent-JugSilver-name = item
+ent-JugSilver-name = элемент
 
-ent-JugEthanol-name = item
+ent-JugEthanol-name = элемент
 
-ent-JugSugar-name = item
+ent-JugSugar-name = элемент
 
-ent-JugNitrogen-name = item
+ent-JugNitrogen-name = элемент
 
-ent-JugOxygen-name = item
+ent-JugOxygen-name = элемент
 
-ent-JugPlantBGone-name = item
+ent-JugPlantBGone-name = элемент
 
-ent-JugWeldingFuel-name = item
+ent-JugWeldingFuel-name = элемент
 

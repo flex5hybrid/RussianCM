@@ -1,3 +1,3 @@
-ent-MachineAnomalySynchronizer-name = anomaly synchronizer
-ent-MachineAnomalySynchronizer-desc = A sophisticated device that reads changes in anomalous waves, and converts them into energy signals.
+ent-MachineAnomalySynchronizer-name = аномалия синхронизатор
+ent-MachineAnomalySynchronizer-desc = Сложное устройство, которое считывает изменения аномальных волн и преобразует их в энергетические сигналы.
 

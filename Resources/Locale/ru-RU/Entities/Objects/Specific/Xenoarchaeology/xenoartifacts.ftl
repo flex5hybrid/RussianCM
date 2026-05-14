@@ -1,6 +1,6 @@
-ent-BaseXenoArtifact-name = artifact
-ent-BaseXenoArtifact-desc = A strange artifact from time unknown. Looks like a good time.
+ent-BaseXenoArtifact-name = артефакт
+ent-BaseXenoArtifact-desc = Странный артефакт неизвестного времени. Похоже, хорошо провести время.
 
-ent-ActionArtifactActivate-name = Activate Artifact
-ent-ActionArtifactActivate-desc = Activate yourself, causing chaos to those near you.
+ent-ActionArtifactActivate-name = Активировать Артефакт
+ent-ActionArtifactActivate-desc = Активируйте себя, вызывая хаос среди тех, кто рядом с вами.
 

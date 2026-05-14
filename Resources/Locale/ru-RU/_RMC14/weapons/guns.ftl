@@ -44,3 +44,32 @@ rmc-assisted-reload-start-target = {$reloader} начинает перезаря
 rmc-gun-stacks-hit-single = В яблочко!
 rmc-gun-stacks-hit-multiple = В яблочко! {$hits} попадания подряд!
 rmc-gun-stacks-reset = {$weapon} издаёт сигнал, сбрасывая данные прицеливания и возвращаясь к стандартному режиму стрельбы.
+
+# Missing entries synced from en-US
+
+rmc-breech-loaded-toggle-attempt-cooldown = Вы должны подождать, прежде чем {$action} снова попадет в камеру!
+
+rmc-breech-loaded-open = открытие
+
+rmc-breech-loaded-close = закрытие
+
+rmc-gun-arc-blocked = Вы не можете стрелять за пределами дуги стрельбы оружия.
+
+rmc-examine-text-execute = [color=red]Этот пистолет можно использовать для казни людей с нужными навыками![/color]
+
+rmc-gun-shoot-air-self = ВЫ ВЫПУСКАЕТЕ СВОИМ { CAPITALIZE($weapon) } В ВОЗДУХ!
+
+rmc-gun-shoot-air-other = { CAPITALIZE(THE($user)) } СТРЕЛЯЕТ { CAPITALIZE(THE($weapon)) } В ВОЗДУХ!
+
+rmc-gun-shoot-air-blocked = Крыша над вами слишком плотная.
+
+rmc-gun-shoot-air-examine = [bold]Press your [color=cyan]unique action[/color] keybind (Spacebar by default){$harm ->
+    [true] {" while in harm mode"}
+    *[false] {""}
+    } to fire into the air.[/bold]
+
+rmc-flare-gun-examine = Последняя выпущенная сигнальная ракета имеет обозначение: [color=#ad3b98][bold]{$id}[/bold][/color].
+
+expendable-light-starshell-ash-empty-name = пепел потухшей звезды
+
+expendable-light-starshell-ash-empty-desc = Сгоревшие остатки звездной оболочки

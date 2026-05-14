@@ -1,5 +1,5 @@
-ent-BoozeDispenser-name = booze dispenser
-ent-BoozeDispenser-desc = A booze dispenser with a single slot for a container to be filled.
+ent-BoozeDispenser-name = дозатор выпивки
+ent-BoozeDispenser-desc = Диспенсер для выпивки с одной прорезью для наполнения контейнера.
 
 ent-BoozeDispenserEmpty-name = steal-target-groups-booze-dispenser
 

@@ -1,6 +1,6 @@
-ent-ActionSpiderWeb-name = Spider Web
-ent-ActionSpiderWeb-desc = Spawns a web that slows your prey down.
+ent-ActionSpiderWeb-name = Паутина
+ent-ActionSpiderWeb-desc = Создает паутину, которая замедляет вашу добычу.
 
-ent-ActionSericulture-name = Weave silk
-ent-ActionSericulture-desc = Weave a bit of silk for use in arts and crafts.
+ent-ActionSericulture-name = Плетение шелка
+ent-ActionSericulture-desc = Сплетите кусочек шелка для использования в декоративно-прикладном искусстве.
 

@@ -1,6 +1,6 @@
-ent-Bonfire-name = bonfire
-ent-Bonfire-desc = What can be better than a late evening under the sky with guitar and friends?
+ent-Bonfire-name = костер
+ent-Bonfire-desc = Что может быть лучше позднего вечера под небом с гитарой и друзьями?
 
-ent-LegionnaireBonfire-name = legionnaire bonfire
-ent-LegionnaireBonfire-desc = There, in the land of lava and ash, place to to cook marshmallow and potato.
+ent-LegionnaireBonfire-name = легионер костер
+ent-LegionnaireBonfire-desc = Там, в стране лавы и пепла, есть место, где готовят зефир и картофель.
 

@@ -1,3 +1,3 @@
-ent-Gohei-name = gohei
-ent-Gohei-desc = A wooden stick with white streamers at the end. Originally used by shrine maidens to purify things. Now used by the station's weeaboos.
+ent-Gohei-name = гохей
+ent-Gohei-desc = Деревянная палка с белыми лентами на конце. Первоначально использовался жрицами для очищения вещей. Сейчас используется жуликами станции.
 

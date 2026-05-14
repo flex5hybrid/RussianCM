@@ -1,12 +1,12 @@
-ent-BaseCargoPallet-name = cargo pallet
-ent-BaseCargoPallet-desc = Common fixture of logistics and cargo. Subtle reminder where crates go during transport to avoid bruised shins.
+ent-BaseCargoPallet-name = грузовой поддон
+ent-BaseCargoPallet-desc = Общее приспособление логистики и грузов. Тонкое напоминание о том, куда следует помещать ящики во время транспортировки, чтобы не повредить голени.
 
-ent-CargoPalletSell-name = cargo selling pallet
-ent-CargoPalletSell-desc = Designates valid items to sell. Made of plastitanium to discourage pesky vandals.
+ent-CargoPalletSell-name = поддон для продажи грузов
+ent-CargoPalletSell-desc = Обозначает действительные предметы для продажи. Изготовлен из пластитана, чтобы отпугнуть назойливых вандалов.
 
-ent-CargoPalletBuy-name = cargo buying pallet
-ent-CargoPalletBuy-desc = Designates where orders will appear when purchased. Made of plastitanium to discourage pesky vandals.
+ent-CargoPalletBuy-name = поддон для покупки груза
+ent-CargoPalletBuy-desc = Определяет, где будут появляться заказы после покупки. Изготовлен из пластитана, чтобы отпугнуть назойливых вандалов.
 
-ent-CargoPallet-name = cargo pallet
-ent-CargoPallet-desc = Common fixture of logistics and cargo. Subtle reminder where crates go during transport to avoid bruised shins.
+ent-CargoPallet-name = грузовой поддон
+ent-CargoPallet-desc = Общее приспособление логистики и грузов. Тонкое напоминание о том, куда следует помещать ящики во время транспортировки, чтобы не повредить голени.
 

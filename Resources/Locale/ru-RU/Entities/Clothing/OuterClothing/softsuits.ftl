@@ -1,18 +1,18 @@
-ent-ClothingOuterHardsuitEVA-name = EVA suit
-ent-ClothingOuterHardsuitEVA-desc = A lightweight space suit with the basic ability to protect the wearer from the vacuum of space during emergencies.
+ent-ClothingOuterHardsuitEVA-name = костюм ЕВА
+ent-ClothingOuterHardsuitEVA-desc = Легкий скафандр с базовой способностью защищать владельца от космического вакуума во время чрезвычайных ситуаций.
 
-ent-ClothingOuterEVASuitSyndicate-name = syndicate EVA suit
-ent-ClothingOuterEVASuitSyndicate-desc = Has a tag on the back that reads: 'Totally not property of an enemy corporation, honest!'
+ent-ClothingOuterEVASuitSyndicate-name = синдикатный костюм EVA
+ent-ClothingOuterEVASuitSyndicate-desc = На спине имеется бирка с надписью: «Совершенно не собственность вражеской корпорации, честное слово!»
 
-ent-ClothingOuterSuitEmergency-name = emergency EVA suit
-ent-ClothingOuterSuitEmergency-desc = An emergency EVA suit with a built-in helmet. It's horribly slow and lacking in temperature protection, but enough to buy you time from the harsh vacuum of space.
+ent-ClothingOuterSuitEmergency-name = аварийный костюм для выхода в открытый космос
+ent-ClothingOuterSuitEmergency-desc = Костюм аварийного выхода в открытый космос со встроенным шлемом. Он ужасно медленный и лишен температурной защиты, но достаточен, чтобы выиграть время в суровом космическом вакууме.
 
-ent-ClothingOuterHardsuitEVAPrisoner-name = prisoner EVA suit
-ent-ClothingOuterHardsuitEVAPrisoner-desc = A lightweight space suit for prisoners to protect them from the vacuum of space during emergencies.
+ent-ClothingOuterHardsuitEVAPrisoner-name = костюм заключенного из Евы
+ent-ClothingOuterHardsuitEVAPrisoner-desc = Легкий скафандр для заключенных, защищающий их от космического вакуума во время чрезвычайных ситуаций.
 
-ent-ClothingOuterHardsuitAncientEVA-name = NTSRA voidsuit
-ent-ClothingOuterHardsuitAncientEVA-desc = An ancient space suit, designed by the NTSRA branch of CentComm. It is very finely crafted, allowing for greater mobility than most modern space suits.
+ent-ClothingOuterHardsuitAncientEVA-name = Пустокостюм НТСРА
+ent-ClothingOuterHardsuitAncientEVA-desc = Древний скафандр, разработанный отделением NTSRA CentComm. Он очень хорошо сконструирован и обеспечивает большую мобильность, чем большинство современных скафандров.
 
-ent-ClothingOuterHardsuitVoidParamed-name = paramedic void suit
-ent-ClothingOuterHardsuitVoidParamed-desc = A void suit made for paramedics.
+ent-ClothingOuterHardsuitVoidParamed-name = парамедик пустотный костюм
+ent-ClothingOuterHardsuitVoidParamed-desc = Пустотный костюм, созданный для парамедиков.
 

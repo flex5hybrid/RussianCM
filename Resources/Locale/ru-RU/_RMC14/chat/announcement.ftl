@@ -30,3 +30,11 @@ rmc-announcement-ares-command = [color=#CECECE][font size=16][bold]ARES v3.2[/bo
     {$message}[/font][/color]
 rmc-announcement-unidentified-lifesigns = [color=#CECECE][font size=16][bold]Неопознанные биосигнатуры[/bold][/font][/color][color=red][font size=16][bold]
     На борту десантного корабля {$name} обнаружены неопознанные биосигнатуры ({$count}). Рекомендация: заблокировать внешние шлюзы, включая вентиляционные каналы.[/bold][/font][/color]
+
+# Missing entries synced from en-US
+
+rmc-announcement-author-shipside = Командный корабль
+
+rmc-announcement-author-queen-mother = Королева-мать
+
+rmc-announcement-shipside-header = Пожалуйста, напишите сообщение, чтобы сообщить команде

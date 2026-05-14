@@ -1,12 +1,12 @@
-ent-DefibrillatorCabinet-name = defibrillator cabinet
-ent-DefibrillatorCabinet-desc = A small wall mounted cabinet designed to hold a defibrillator.
+ent-DefibrillatorCabinet-name = шкаф дефибриллятора
+ent-DefibrillatorCabinet-desc = Небольшой настенный шкаф, предназначенный для размещения дефибриллятора.
 
-ent-DefibrillatorCabinetOpen-name = defibrillator cabinet
-ent-DefibrillatorCabinetOpen-desc = A small wall mounted cabinet designed to hold a defibrillator.
+ent-DefibrillatorCabinetOpen-name = шкаф дефибриллятора
+ent-DefibrillatorCabinetOpen-desc = Небольшой настенный шкаф, предназначенный для размещения дефибриллятора.
 
-ent-DefibrillatorCabinetFilled-name = defibrillator cabinet
-ent-DefibrillatorCabinetFilled-desc = A small wall mounted cabinet designed to hold a defibrillator.
+ent-DefibrillatorCabinetFilled-name = шкаф дефибриллятора
+ent-DefibrillatorCabinetFilled-desc = Небольшой настенный шкаф, предназначенный для размещения дефибриллятора.
 
-ent-DefibrillatorCabinetFilledOpen-name = defibrillator cabinet
-ent-DefibrillatorCabinetFilledOpen-desc = A small wall mounted cabinet designed to hold a defibrillator.
+ent-DefibrillatorCabinetFilledOpen-name = шкаф дефибриллятора
+ent-DefibrillatorCabinetFilledOpen-desc = Небольшой настенный шкаф, предназначенный для размещения дефибриллятора.
 

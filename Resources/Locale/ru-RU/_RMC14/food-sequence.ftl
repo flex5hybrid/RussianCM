@@ -1,6 +1,5 @@
 # GENERAL
-rmc-food-sequence-content-mango = mango
+rmc-food-sequence-content-mango = манго
 
-# BURGERS
-
-rmc-food-sequence-burger-content-mango = mango
+    # БУРГЕРЫ
+rmc-food-sequence-burger-content-mango = манго

@@ -1,21 +1,21 @@
-ent-PlastitaniumWindowBase-name = plastitanium window
-ent-PlastitaniumWindowBase-desc = Don't smudge up the glass down there.
+ent-PlastitaniumWindowBase-name = пластитановое окно
+ent-PlastitaniumWindowBase-desc = Не испачкай там стекло.
 
-ent-PlastitaniumWindowSquareBase-name = plastitanium window
-ent-PlastitaniumWindowSquareBase-desc = Don't smudge up the glass down there.
+ent-PlastitaniumWindowSquareBase-name = пластитановое окно
+ent-PlastitaniumWindowSquareBase-desc = Не испачкай там стекло.
 
-ent-PlastitaniumWindowIndestructible-name = plastitanium window
-ent-PlastitaniumWindowIndestructible-desc = Don't smudge up the glass down there.
+ent-PlastitaniumWindowIndestructible-name = пластитановое окно
+ent-PlastitaniumWindowIndestructible-desc = Не испачкай там стекло.
 
-ent-PlastitaniumWindow-name = plastitanium window
-ent-PlastitaniumWindow-desc = Don't smudge up the glass down there.
+ent-PlastitaniumWindow-name = пластитановое окно
+ent-PlastitaniumWindow-desc = Не испачкай там стекло.
 
-ent-PlastitaniumWindowDiagonalBase-name = plastitanium window
-ent-PlastitaniumWindowDiagonalBase-desc = Don't smudge up the glass down there.
+ent-PlastitaniumWindowDiagonalBase-name = пластитановое окно
+ent-PlastitaniumWindowDiagonalBase-desc = Не испачкай там стекло.
 
-ent-PlastitaniumWindowDiagonalIndestructible-name = plastitanium window
-ent-PlastitaniumWindowDiagonalIndestructible-desc = Don't smudge up the glass down there.
+ent-PlastitaniumWindowDiagonalIndestructible-name = пластитановое окно
+ent-PlastitaniumWindowDiagonalIndestructible-desc = Не испачкай там стекло.
 
-ent-PlastitaniumWindowDiagonal-name = plastitanium window
-ent-PlastitaniumWindowDiagonal-desc = Don't smudge up the glass down there.
+ent-PlastitaniumWindowDiagonal-name = пластитановое окно
+ent-PlastitaniumWindowDiagonal-desc = Не испачкай там стекло.
 

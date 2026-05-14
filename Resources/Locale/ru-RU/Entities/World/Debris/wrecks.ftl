@@ -1,8 +1,8 @@
-ent-BaseScrapDebris-name = scrap debris
+ent-BaseScrapDebris-name = лом мусора
 
-ent-ScrapDebrisSmall-name = scrap debris small
+ent-ScrapDebrisSmall-name = лом мусора мелкий
 
-ent-ScrapDebrisMedium-name = scrap debris medium
+ent-ScrapDebrisMedium-name = лом мусора средний
 
-ent-ScrapDebrisLarge-name = scrap debris large
+ent-ScrapDebrisLarge-name = лом мусор большой
 

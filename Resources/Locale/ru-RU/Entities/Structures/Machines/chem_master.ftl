@@ -1,3 +1,3 @@
-ent-ChemMaster-name = ChemMaster 4000
-ent-ChemMaster-desc = An industrial grade chemical manipulator with pill and bottle production included.
+ent-ChemMaster-name = ХимМастер 4000
+ent-ChemMaster-desc = Химический манипулятор промышленного класса, включающий производство таблеток и бутылочек.
 

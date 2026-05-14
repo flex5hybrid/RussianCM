@@ -1,1 +1,1 @@
-markings-category-Eyes = Eyes
+markings-category-Eyes = Глаза

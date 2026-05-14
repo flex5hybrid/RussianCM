@@ -1,9 +1,9 @@
-ent-CryogenicSleepUnit-name = cryogenic sleep unit
-ent-CryogenicSleepUnit-desc = A super-cooled container that keeps crewmates safe during space travel.
+ent-CryogenicSleepUnit-name = криогенный блок сна
+ent-CryogenicSleepUnit-desc = Суперохлаждаемый контейнер, обеспечивающий безопасность членов экипажа во время космических путешествий.
 
-ent-CryogenicSleepUnitSpawner-name = cryogenic sleep unit
-ent-CryogenicSleepUnitSpawner-desc = A super-cooled container that keeps crewmates safe during space travel.
+ent-CryogenicSleepUnitSpawner-name = криогенный блок сна
+ent-CryogenicSleepUnitSpawner-desc = Суперохлаждаемый контейнер, обеспечивающий безопасность членов экипажа во время космических путешествий.
 
-ent-CryogenicSleepUnitSpawnerLateJoin-name = cryogenic sleep unit
-ent-CryogenicSleepUnitSpawnerLateJoin-desc = A super-cooled container that keeps crewmates safe during space travel.
+ent-CryogenicSleepUnitSpawnerLateJoin-name = криогенный блок сна
+ent-CryogenicSleepUnitSpawnerLateJoin-desc = Суперохлаждаемый контейнер, обеспечивающий безопасность членов экипажа во время космических путешествий.
 

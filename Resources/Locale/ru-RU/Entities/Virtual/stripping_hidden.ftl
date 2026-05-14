@@ -1,3 +1,3 @@
-ent-StrippingHiddenEntity-name = hidden entity
-ent-StrippingHiddenEntity-desc = There is something in this pocket.
+ent-StrippingHiddenEntity-name = скрытый объект
+ent-StrippingHiddenEntity-desc = В этом кармане что-то есть.
 

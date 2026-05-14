@@ -261,3 +261,121 @@ rmc-xeno-eviscerate-windup-self = Мы готовимся к мощному уд
 rmc-xeno-eviscerate-windup = {$xeno} готовится к мощному удару!
 rmc-xeno-eviscerate-windup-small-self = Мы готовимся к удару!
 rmc-xeno-eviscerate-windup-small = {$xeno} готовится к удару!
+
+# Missing entries synced from en-US
+
+rmc-xeno-not-enough-shards = Нам не хватает осколков!
+
+rmc-xeno-shards-increase-user = Мы выращиваем больше осколков!
+
+# Construction
+
+rmc-xeno-insight-empower = Мы получили достаточно информации о нашей добыче, чтобы расширить возможности нашей следующей установки ловушек!
+
+# Deploy Traps
+
+rmc-xeno-deploy-traps-self = Мы создаем внезапную волну ловушек!
+
+rmc-xeno-deploy-traps-others = {$xeno} создает внезапную волну ловушек!
+
+rmc-xeno-deploy-traps-empower = Мы задействовали наши резервы, чтобы подготовить более мощную кислотную шахту!
+
+rmc-xeno-deploy-traps-see-fail = Что-то мешает!
+
+# Acid Mine
+
+rmc-xeno-acid-mine-self = Мы уговариваем спрятанную мину взорваться!
+
+rmc-xeno-acid-mine-others = {$xeno} уговаривает взорвать скрытую мину!
+
+rmc-xeno-acid-mine-see-fail = Что-то мешает!
+
+# Adrenaline Surge
+
+rmc-xeno-adrenaline-surge-ready = Вы чувствуете, как ваши адреналиновые железы наполняются! Ваше ускорение снова активируется.
+
+rmc-xeno-adrenaline-surge-start = Ваш адреналин увеличивается, увеличивая вашу скорость!
+
+# Fortify
+
+cm-xeno-leap-blocked = Мы не можем этого сделать, сжимая и убегая!
+
+rmc-xeno-weeds-blocked = Мы не можем сделать это здесь.
+
+# Corrosive acid
+
+rmc-xeno-acid-too-weak = {CAPITALIZE(THE($target))} слишком прочен, чтобы его расплавила наша слабая кислота.
+
+# Paralyzing Slash
+
+cm-xeno-paralyzing-slash-immune = {$target} избавляется от нейротоксина!
+
+# Crippling Strike
+
+rmc-xeno-apply-salve-target-not-xeno-failure = Цель не может быть исцелена!
+
+rmc-xeno-apply-salve-target-self-failure = Мы не можем вылечить себя собственной смоляной мазью!
+
+rmc-xeno-apply-salve-target-hostile-failure = {$target_xeno} враждебен нашему улью!
+
+rmc-xeno-apply-salve-target-too-far-away-failure = Отсюда мы не сможем нанести смоляную мазь!
+
+rmc-xeno-apply-salve-target-dead-failure = {$target_xeno} мертв!
+
+rmc-xeno-apply-salve-target-on-fire-failure = Сначала потушите {$target_xeno}, иначе пламя сожжет нашу смоляную мазь!
+
+rmc-xeno-apply-salve-target-full-health-failure = {$target_xeno} уже полностью здоров!
+
+rmc-xeno-sacrifice-heal-target-not-xeno-failure = Цель не может быть исцелена!
+
+rmc-xeno-sacrifice-heal-target-self-failure = Мы не можем исцелить себя!
+
+rmc-xeno-sacrifice-heal-target-hostile-failure = {$target_xeno} враждебен нашему улью!
+
+rmc-xeno-sacrifice-heal-target-low-level-failure = Это было бы пустой тратой...
+
+rmc-xeno-sacrifice-heal-target-too-far-away-failure = Нам нужно быть ближе к {$target_xeno}.
+
+rmc-xeno-sacrifice-heal-target-dead-failure = {$target_xeno} мертв!
+
+rmc-xeno-sacrifice-heal-target-full-health-failure = {$target_xeno} уже полностью здоров!
+
+rmc-xeno-fling-too-big = {CAPITALIZE(THE($target))} слишком велик, чтобы его можно было бросить!
+
+# Gut
+
+rmc-gut-start-self = Вонзаем когти в тело этого несчастного хозяина, начиная рвать его пополам!
+
+rmc-gut-start-xenos = {$user} вонзает когти в тело этого несчастного носителя, начиная разрывать его пополам!
+
+rmc-gut-start-marines = Королева вонзает когти в тело {$target}, начиная разрывать его пополам!
+
+rmc-gut-finish-self = Разорвем этого жалкого хозяина пополам!!
+
+rmc-gut-finish-xenos = {$user} разрывает жалкого хоста пополам!!
+
+rmc-gut-finish-marines = Королева разрывает {$target} пополам!!
+
+# Shed Spikes
+
+rmc-shed-spikes = Мы потеряли свои осколки и не можем больше получить в течение 30 секунд!
+
+rmc-shed-spikes-back = Мы снова можем получить осколки!
+
+# Spike Shield
+
+rmc-spike-shield-self = Мы взъерошиваем наши иглы из костяных осколков, образуя защитный панцирь!
+
+rmc-spike-shield-others = {$user} взъерошивает свои иглы из костяных осколков, образуя защитный панцирь!
+
+rmc-spike-shield-hit = {$user} повсюду распыляет костяные иглы!
+
+# Doomed
+
+rmc-doomed-fail = Это не работает...
+
+# Destroy
+
+rmc-destroy-cant-reach = У нас нет четкого пути к этому месту!
+
+rmc-destroy-cant-area = Мы не можем прыгнуть в эту область!

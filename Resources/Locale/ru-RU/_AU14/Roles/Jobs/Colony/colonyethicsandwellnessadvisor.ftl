@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianEthicsAndWellnessAdvisor-name = Spawn Point Civilian Ethics And Wellness Advisor
-ent-AU14SpawnPointCivilianEthicsAndWellnessAdvisor-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianEthicsAndWellnessAdvisor-name = Советник по гражданской этике и здоровью Spawn Point
+ent-AU14SpawnPointCivilianEthicsAndWellnessAdvisor-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

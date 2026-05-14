@@ -1,3 +1,3 @@
-ent-OperatingTable-name = operating table
-ent-OperatingTable-desc = Special medical table for surgery. This one just seems to be a useless prop, though.
+ent-OperatingTable-name = операционный стол
+ent-OperatingTable-desc = Специальный медицинский стол для хирургии. Хотя этот реквизит кажется бесполезным.
 

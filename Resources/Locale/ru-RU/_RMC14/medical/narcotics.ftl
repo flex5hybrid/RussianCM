@@ -1,5 +1,5 @@
-reagent-name-rmcspacedrugs = Space drugs
-reagent-desc-rmcspacedrugs = An illegal compound that causes hallucinations, visual artefacts and loss of balance.
+reagent-name-rmcspacedrugs = Космические наркотики
+reagent-desc-rmcspacedrugs = Запрещенное соединение, вызывающее галлюцинации, зрительные артефакты и потерю равновесия.
 
-reagent-name-rmcpsilocybin = Psilocybin
-reagent-desc-rmcpsilocybin = Psilocybin is a naturally occurring psychedelic prodrug compound produced by more than 200 species of mushrooms, collectively known as psilocybin mushrooms or Magic Mushrooms.
+reagent-name-rmcpsilocybin = Псилоцибин
+reagent-desc-rmcpsilocybin = Псилоцибин – это встречающееся в природе психоделическое пролекарство, вырабатываемое более чем 200 видами грибов, известных под общим названием псилоцибиновые грибы или волшебные грибы.

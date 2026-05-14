@@ -1,10 +1,10 @@
-ent-MaintenanceFluffSpawner-name = Maint Loot Spawner
+ent-MaintenanceFluffSpawner-name = Создатель трофеев
 
-ent-MaintenanceToolSpawner-name = Maint Loot Spawner
+ent-MaintenanceToolSpawner-name = Создатель трофеев
 
-ent-MaintenanceWeaponSpawner-name = Maint Loot Spawner
+ent-MaintenanceWeaponSpawner-name = Создатель трофеев
 
-ent-MaintenancePlantSpawner-name = Maint Loot Spawner
+ent-MaintenancePlantSpawner-name = Создатель трофеев
 
-ent-MaintenanceInsulsSpawner-name = Maint Loot Spawner
+ent-MaintenanceInsulsSpawner-name = Создатель трофеев
 

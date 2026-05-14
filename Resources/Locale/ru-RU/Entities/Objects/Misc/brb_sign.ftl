@@ -1,3 +1,3 @@
-ent-BrbSign-name = brb sign
-ent-BrbSign-desc = Lets others know you are away.
+ent-BrbSign-name = знак brb
+ent-BrbSign-desc = Сообщает другим, что вас нет.
 

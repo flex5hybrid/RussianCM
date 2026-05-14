@@ -1,51 +1,51 @@
-ent-BorgBeaker-name = integrated beaker
-ent-BorgBeaker-desc = An internal compartment installed into a cyborg. Rated for 50 units of any liquid.
+ent-BorgBeaker-name = встроенный стакан
+ent-BorgBeaker-desc = Внутренний отсек, установленный в киборге. Рассчитан на 50 единиц любой жидкости.
 
-ent-Beaker-name = beaker
-ent-Beaker-desc = Used to contain a moderate amount of chemicals and solutions.
+ent-Beaker-name = стакан
+ent-Beaker-desc = Используется для содержания умеренного количества химикатов и растворов.
 
-ent-LargeBeaker-name = large beaker
-ent-LargeBeaker-desc = Used to contain a large amount of chemicals or solutions.
+ent-LargeBeaker-name = большой стакан
+ent-LargeBeaker-desc = Используется для содержания большого количества химикатов или растворов.
 
-ent-CryostasisBeaker-name = cryostasis beaker
-ent-CryostasisBeaker-desc = Used to contain chemicals or solutions without reactions.
+ent-CryostasisBeaker-name = стакан для криостаза
+ent-CryostasisBeaker-desc = Используется для содержания химикатов или растворов без реакций.
 
-ent-BluespaceBeaker-name = bluespace beaker
-ent-BluespaceBeaker-desc = Powered by experimental bluespace technology.
+ent-BluespaceBeaker-name = стакан синего пространства
+ent-BluespaceBeaker-desc = Работает на экспериментальной технологии bluespace.
 
-ent-Dropper-name = dropper
-ent-Dropper-desc = Used to transfer small amounts of chemical solution between containers.
+ent-Dropper-name = капельница
+ent-Dropper-desc = Используется для перекачивания небольших количеств химического раствора между контейнерами.
 
-ent-BorgDropper-name = hydraulic pipette
-ent-BorgDropper-desc = State-of-the-art hydraulic dropper built for cyborgs. It features a higher capacity than hand-powered droppers, able to hold 15 units of liquid.
+ent-BorgDropper-name = гидравлическая пипетка
+ent-BorgDropper-desc = Ультрасовременная гидравлическая капельница, созданная для киборгов. Он имеет более высокую вместимость, чем капельницы с ручным приводом, и способен вместить 15 единиц жидкости.
 
-ent-BaseSyringe-name = syringe
-ent-BaseSyringe-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-BaseSyringe-name = шприц
+ent-BaseSyringe-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-MiniSyringe-name = mini syringe
-ent-MiniSyringe-desc = A regular syringe, reshaped to fit inside of a gun.
+ent-MiniSyringe-name = мини-шприц
+ent-MiniSyringe-desc = Обычный шприц, форма которого изменена для размещения внутри пистолета.
 
-ent-SyringeBluespace-name = bluespace syringe
-ent-SyringeBluespace-desc = Injecting with advanced bluespace technology.
+ent-SyringeBluespace-name = синий шприц
+ent-SyringeBluespace-desc = Внедрение передовой технологии bluespace.
 
-ent-SyringeCryostasis-name = cryostasis syringe
-ent-SyringeCryostasis-desc = A syringe used to contain chemicals or solutions without reactions.
+ent-SyringeCryostasis-name = шприц для криостаза
+ent-SyringeCryostasis-desc = Шприц, используемый для содержания химикатов или растворов без реакций.
 
-ent-Pill-name = pill
-ent-Pill-desc = It's not a suppository.
+ent-Pill-name = таблетка
+ent-Pill-desc = Это не свечи.
 
-ent-PillCanister-name = pill canister
-ent-PillCanister-desc = Holds up to 10 pills.
+ent-PillCanister-name = канистра для таблеток
+ent-PillCanister-desc = Вмещает до 10 таблеток.
 
-ent-BaseBeaker-name = item
+ent-BaseBeaker-name = элемент
 
-ent-BaseBeakerMetallic-name = item
+ent-BaseBeakerMetallic-name = элемент
 
-ent-CryoxadoneBeakerSmall-name = item
+ent-CryoxadoneBeakerSmall-name = элемент
 
-ent-Syringe-name = syringe
-ent-Syringe-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-Syringe-name = шприц
+ent-Syringe-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-PrefilledSyringe-name = syringe
-ent-PrefilledSyringe-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-PrefilledSyringe-name = шприц
+ent-PrefilledSyringe-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 

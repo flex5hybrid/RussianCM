@@ -1,6 +1,6 @@
-ent-FireAxe-name = fireaxe
-ent-FireAxe-desc = Truly, the weapon of a madman. Who would think to fight fire with an axe?
+ent-FireAxe-name = пожарный топор
+ent-FireAxe-desc = Воистину, оружие безумца. Кому придет в голову тушить огонь топором?
 
-ent-FireAxeFlaming-name = fire axe
-ent-FireAxeFlaming-desc = Why fight fire with an axe when you can fight with fire and axe? Now featuring rugged rubberized handle!
+ent-FireAxeFlaming-name = пожарный топор
+ent-FireAxeFlaming-desc = Зачем тушить огонь топором, если можно бороться огнем и топором? Теперь с прочной прорезиненной ручкой!
 

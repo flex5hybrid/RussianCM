@@ -1,6 +1,6 @@
-ent-BulletCaselessRifle-name = bullet (.25 caseless)
-ent-BulletCaselessRifle-desc = If you can see this you're probably dead!
+ent-BulletCaselessRifle-name = пуля (.25 безгильзовая)
+ent-BulletCaselessRifle-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletCaselessRiflePractice-name = bullet (.25 caseless practice)
-ent-BulletCaselessRiflePractice-desc = If you can see this you're probably dead!
+ent-BulletCaselessRiflePractice-name = пуля (безгильзовая практика .25)
+ent-BulletCaselessRiflePractice-desc = Если ты это видишь, ты, вероятно, мертв!
 

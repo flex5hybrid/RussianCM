@@ -1,3 +1,3 @@
-ent-CarpRift-name = carp rift
-ent-CarpRift-desc = A rift akin to the ones space carp use to travel long distances.
+ent-CarpRift-name = карповый перекат
+ent-CarpRift-desc = Разлом, похожий на тот, который используют космические карпы для путешествий на большие расстояния.
 

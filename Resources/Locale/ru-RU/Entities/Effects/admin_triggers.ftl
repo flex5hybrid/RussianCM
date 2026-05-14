@@ -1,18 +1,18 @@
-ent-AdminInstantEffectBase-name = instant effect
+ent-AdminInstantEffectBase-name = мгновенный эффект
 
-ent-AdminInstantEffectEMP-name = instant effect
+ent-AdminInstantEffectEMP-name = мгновенный эффект
 
-ent-AdminInstantEffectBluespace-name = instant effect
+ent-AdminInstantEffectBluespace-name = мгновенный эффект
 
-ent-AdminInstantEffectFlash-name = instant effect
+ent-AdminInstantEffectFlash-name = мгновенный эффект
 
-ent-AdminInstantEffectSmoke3-name = instant effect
+ent-AdminInstantEffectSmoke3-name = мгновенный эффект
 
-ent-AdminInstantEffectSmoke10-name = instant effect
+ent-AdminInstantEffectSmoke10-name = мгновенный эффект
 
-ent-AdminInstantEffectSmoke30-name = instant effect
+ent-AdminInstantEffectSmoke30-name = мгновенный эффект
 
-ent-AdminInstantEffectTearGas-name = instant effect
+ent-AdminInstantEffectTearGas-name = мгновенный эффект
 
-ent-AdminInstantEffectGravityWell-name = instant effect
+ent-AdminInstantEffectGravityWell-name = мгновенный эффект
 

@@ -1,3 +1,3 @@
-ent-ClothingUniformJumpsuitChameleon-name = black jumpsuit
-ent-ClothingUniformJumpsuitChameleon-desc = A generic black jumpsuit with no rank markings.
+ent-ClothingUniformJumpsuitChameleon-name = черный комбинезон
+ent-ClothingUniformJumpsuitChameleon-desc = Обычный черный комбинезон без знаков ранга.
 

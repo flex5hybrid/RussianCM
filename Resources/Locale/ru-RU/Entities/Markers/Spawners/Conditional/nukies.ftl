@@ -1,2 +1,2 @@
-ent-SpawnPointNukies-name = nukies
+ent-SpawnPointNukies-name = ядерное оружие
 

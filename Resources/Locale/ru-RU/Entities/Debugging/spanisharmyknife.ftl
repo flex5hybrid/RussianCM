@@ -1,3 +1,3 @@
-ent-ToolDebug-name = spanish army knife
-ent-ToolDebug-desc = The pain of using this is almost too great to bear.
+ent-ToolDebug-name = испанский армейский нож
+ent-ToolDebug-desc = Боль от использования этого слишком велика, чтобы ее вынести.
 

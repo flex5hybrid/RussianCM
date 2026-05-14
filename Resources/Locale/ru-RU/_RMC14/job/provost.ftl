@@ -26,3 +26,8 @@ rmc-job-prefix-provost-marshal = ПРМ
 rmc-ghost-name-corp-provost-team-leader = Лидер группы Провоста (Дружественный)
 rmc-job-name-corp-provost-team-leader = Лидер группы
 rmc-job-prefix-provost-team-leader = ПРЛГ
+
+# Missing entries synced from en-US
+
+rmc-job-description-inspector = Наставляйте новых членов парламента, а также консультируйте и расследуйте вопросы морского права и разрешения конфликтов на борту корабля, гарантируя, что военная полиция действует в поддержку намерений провоста.
+    Inspectors are a direct line to Provost, and are the final word on Marine Law, even above the Commanding Officer.

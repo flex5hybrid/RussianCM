@@ -1,9 +1,9 @@
-ent-Girder-name = girder
-ent-Girder-desc = A large structural assembly made out of metal; It requires a layer of metal before it can be considered a wall.
+ent-Girder-name = балка
+ent-Girder-desc = Большая металлическая конструкция; Прежде чем ее можно будет считать стеной, требуется слой металла.
 
-ent-ReinforcedGirder-name = reinforced girder
-ent-ReinforcedGirder-desc = A large structural assembly made out of metal and plasteel; It requires a layer of plasteel before it can be considered a reinforced wall.
+ent-ReinforcedGirder-name = усиленная балка
+ent-ReinforcedGirder-desc = Большой структурный узел, сделанный из металла и пластали; Прежде чем ее можно будет считать армированной стеной, требуется слой пластали.
 
-ent-ClockworkGirder-name = wall gear
-ent-ClockworkGirder-desc = A large gear with mounting brackets for additional plating; This could be made into a wall with more brass plating.
+ent-ClockworkGirder-name = настенное снаряжение
+ent-ClockworkGirder-desc = Большой редуктор с кронштейнами для крепления дополнительной обшивки; Это можно было бы превратить в стену с большим количеством латунных пластин.
 

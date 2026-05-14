@@ -1,12 +1,12 @@
-ent-BasePKAUpgrade-name = PKA modkit
-ent-BasePKAUpgrade-desc = A modkit for a proto-kinetic accelerator.
+ent-BasePKAUpgrade-name = Модкит ПКА
+ent-BasePKAUpgrade-desc = Модкит для протокинетического ускорителя.
 
-ent-PKAUpgradeDamage-name = PKA modkit (damage)
-ent-PKAUpgradeDamage-desc = A modkit for a proto-kinetic accelerator.
+ent-PKAUpgradeDamage-name = Модкит ПКА (повреждения)
+ent-PKAUpgradeDamage-desc = Модкит для протокинетического ускорителя.
 
-ent-PKAUpgradeRange-name = PKA modkit (range)
-ent-PKAUpgradeRange-desc = A modkit for a proto-kinetic accelerator.
+ent-PKAUpgradeRange-name = Модкит ПКА (диапазон)
+ent-PKAUpgradeRange-desc = Модкит для протокинетического ускорителя.
 
-ent-PKAUpgradeFireRate-name = PKA modkit (fire rate)
-ent-PKAUpgradeFireRate-desc = A modkit for a proto-kinetic accelerator.
+ent-PKAUpgradeFireRate-name = Модкит ПКА (скорострельность)
+ent-PKAUpgradeFireRate-desc = Модкит для протокинетического ускорителя.
 

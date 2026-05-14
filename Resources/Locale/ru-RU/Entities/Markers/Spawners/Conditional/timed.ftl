@@ -1,8 +1,8 @@
-ent-AITimedSpawner-name = AI Timed Spawner
+ent-AITimedSpawner-name = Создатель с таймером для ИИ
 
-ent-XenoAITimedSpawner-name = Xeno AI Timed Spawner
+ent-XenoAITimedSpawner-name = Создатель Xeno AI с таймером
 
-ent-MouseTimedSpawner-name = Mouse Timed Spawner
+ent-MouseTimedSpawner-name = Создатель мыши по времени
 
-ent-CockroachTimedSpawner-name = Cockroach Timed Spawner
+ent-CockroachTimedSpawner-name = Создатель тараканов по времени
 

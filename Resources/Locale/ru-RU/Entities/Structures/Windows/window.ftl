@@ -1,11 +1,11 @@
-ent-Window-name = window
-ent-Window-desc = Don't smudge up the glass down there.
+ent-Window-name = окно
+ent-Window-desc = Не испачкай там стекло.
 
-ent-TintedWindow-name = tinted window
+ent-TintedWindow-name = тонированное окно
 
-ent-WindowDirectional-name = directional window
-ent-WindowDirectional-desc = Don't smudge up the glass down there.
+ent-WindowDirectional-name = окно направления
+ent-WindowDirectional-desc = Не испачкай там стекло.
 
-ent-WindowFrostedDirectional-name = directional frosted window
-ent-WindowFrostedDirectional-desc = Don't smudge up the glass down there.
+ent-WindowFrostedDirectional-name = направленное матовое окно
+ent-WindowFrostedDirectional-desc = Не испачкай там стекло.
 

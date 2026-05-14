@@ -1,29 +1,29 @@
-ent-EnergySword-name = energy sword
-ent-EnergySword-desc = A very loud & dangerous sword with a beam made of pure, concentrated plasma. Cuts through unarmored targets like butter.
+ent-EnergySword-name = энергетический меч
+ent-EnergySword-desc = Очень громкий и опасный меч с лучом из чистой, концентрированной плазмы. Прорезает небронированные цели как масло.
 
-ent-EnergyDaggerLoud-name = energy dagger
-ent-EnergyDaggerLoud-desc = A not as loud and dangerous dagger with a beam made of pure, concentrated plasma. This one is completely undisguised.
+ent-EnergyDaggerLoud-name = энергетический кинжал
+ent-EnergyDaggerLoud-desc = Не такой громкий и опасный кинжал с лучом из чистой, концентрированной плазмы. Этот совершенно ничем не замаскирован.
 
-ent-EnergyDagger-name = pen
-ent-EnergyDagger-desc = A dark ink pen.
+ent-EnergyDagger-name = ручка
+ent-EnergyDagger-desc = Ручка с темными чернилами.
 
-ent-EnergyDaggerBox-name = e-dagger box
-ent-EnergyDaggerBox-desc = A small box containing an e-dagger. Packaging disintegrates when opened, leaving no evidence behind.
+ent-EnergyDaggerBox-name = коробка электронного кинжала
+ent-EnergyDaggerBox-desc = Небольшая коробочка с электронным кинжалом. Упаковка разваливается при открытии, не оставляя после себя никаких следов.
 
-ent-EnergyCutlass-name = energy cutlass
-ent-EnergyCutlass-desc = An exotic energy weapon.
+ent-EnergyCutlass-name = энергетическая абордажная сабля
+ent-EnergyCutlass-desc = Экзотическое энергетическое оружие.
 
-ent-EnergySwordDouble-name = double-bladed energy sword
-ent-EnergySwordDouble-desc = Syndicate Command Interns thought that having one blade on the energy sword was not enough. This can be stored in pockets.
+ent-EnergySwordDouble-name = двойной энергетический меч
+ent-EnergySwordDouble-desc = Стажеры командования Синдиката считали, что одного лезвия на энергетическом мече недостаточно. Это можно хранить в карманах.
 
 ent-HyperEutacticBlade-name = hypereutactic-blade
-ent-HyperEutacticBlade-desc = A supermassive weapon envisioned to cleave the very fabric of space and time itself in twain, the hypereutactic blade dynamically flash-forges a hypereutactic crystaline nanostructure capable of passing through most known forms of matter like a hot knife through butter.
+ent-HyperEutacticBlade-desc = Сверхмассивное оружие, призванное расколоть саму ткань пространства и времени пополам, заэвтаксическое лезвие динамически выковывает заэвтактическую кристаллическую наноструктуру, способную проходить сквозь большинство известных форм материи, как горячий нож сквозь масло.
 
-ent-CyborgEnergySwordDouble-name = double-bladed energy sword
-ent-CyborgEnergySwordDouble-desc = Syndicate Command Interns thought that having one blade on the energy sword was not enough. Specially designed for syndicate cyborgs.
+ent-CyborgEnergySwordDouble-name = двойной энергетический меч
+ent-CyborgEnergySwordDouble-desc = Стажеры командования Синдиката считали, что одного лезвия на энергетическом мече недостаточно. Специально разработан для синдикатных киборгов.
 
-ent-BaseMeleeWeaponEnergy-name = item
+ent-BaseMeleeWeaponEnergy-name = элемент
 
-ent-EnergyDaggerLoudBlue-name = energy dagger
-ent-EnergyDaggerLoudBlue-desc = A not as loud and dangerous dagger with a beam made of pure, concentrated plasma. This one is completely undisguised.
+ent-EnergyDaggerLoudBlue-name = энергетический кинжал
+ent-EnergyDaggerLoudBlue-desc = Не такой громкий и опасный кинжал с лучом из чистой, концентрированной плазмы. Этот совершенно ничем не замаскирован.
 

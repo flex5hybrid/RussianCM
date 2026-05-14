@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianColonist-name = Spawn Point Civilian Colonist
-ent-AU14SpawnPointCivilianColonist-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianColonist-name = Гражданский колонист точки возрождения
+ent-AU14SpawnPointCivilianColonist-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

@@ -24,3 +24,9 @@ microwave-menu-eject-all-tooltip = Это испарит все жидкости
 microwave-menu-instant-button = МГНОВЕННО
 microwave-menu-footer-flavor-left = Не помещайте сюда электронные, металлические или живые объекты.
 microwave-menu-footer-flavor-right = v1.5
+
+# Missing entries synced from en-US
+
+microwave-component-suicide-multi-head-others-message = {$victim} пытается приготовить им головы!
+
+microwave-component-suicide-multi-head-message = Вы готовите свои головы!

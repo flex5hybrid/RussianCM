@@ -1,136 +1,136 @@
-ent-BaseComputerCircuitboard-name = computer board
+ent-BaseComputerCircuitboard-name = компьютерная плата
 
-ent-AlertsComputerCircuitboard-name = atmospheric alerts computer board
-ent-AlertsComputerCircuitboard-desc = A computer printed circuit board for an atmospheric alerts computer.
+ent-AlertsComputerCircuitboard-name = Компьютерная плата атмосферных предупреждений
+ent-AlertsComputerCircuitboard-desc = Компьютерная печатная плата для компьютера атмосферных оповещений.
 
-ent-AtmosMonitoringComputerCircuitboard-name = atmospheric network monitor board
-ent-AtmosMonitoringComputerCircuitboard-desc = A computer printed circuit board for an atmospheric network monitor.
+ent-AtmosMonitoringComputerCircuitboard-name = плата мониторинга атмосферной сети
+ent-AtmosMonitoringComputerCircuitboard-desc = Компьютерная печатная плата монитора атмосферной сети.
 
-ent-PowerComputerCircuitboard-name = power monitoring computer board
-ent-PowerComputerCircuitboard-desc = A computer printed circuit board for a power monitoring computer.
+ent-PowerComputerCircuitboard-name = компьютерная плата мониторинга мощности
+ent-PowerComputerCircuitboard-desc = Компьютерная печатная плата для компьютера контроля энергопотребления.
 
-ent-MedicalRecordsComputerCircuitboard-name = medical records computer board
-ent-MedicalRecordsComputerCircuitboard-desc = A computer printed circuit board for a medical records computer.
+ent-MedicalRecordsComputerCircuitboard-name = Компьютерная плата для медицинских записей
+ent-MedicalRecordsComputerCircuitboard-desc = Компьютерная печатная плата для компьютера медицинских записей.
 
-ent-CriminalRecordsComputerCircuitboard-name = criminal records computer board
-ent-CriminalRecordsComputerCircuitboard-desc = A computer printed circuit board for a criminal records computer.
+ent-CriminalRecordsComputerCircuitboard-name = компьютерная плата с уголовными делами
+ent-CriminalRecordsComputerCircuitboard-desc = Печатная плата компьютера для учета судимостей.
 
-ent-StationRecordsComputerCircuitboard-name = station records computer board
-ent-StationRecordsComputerCircuitboard-desc = A computer printed circuit board for a station records computer.
+ent-StationRecordsComputerCircuitboard-name = компьютерная плата станции записи
+ent-StationRecordsComputerCircuitboard-desc = Компьютерная печатная плата для станции записи компьютера.
 
-ent-CargoRequestComputerCircuitboard-name = cargo request computer board
-ent-CargoRequestComputerCircuitboard-desc = A computer printed circuit board for a cargo request computer.
+ent-CargoRequestComputerCircuitboard-name = Компьютерная плата запроса груза
+ent-CargoRequestComputerCircuitboard-desc = Компьютерная печатная плата для компьютера запроса груза.
 
-ent-CargoRequestEngineeringComputerCircuitboard-name = engineering request computer board
-ent-CargoRequestEngineeringComputerCircuitboard-desc = A computer printed circuit board for an engineering request computer.
+ent-CargoRequestEngineeringComputerCircuitboard-name = Компьютерная плата инженерного запроса
+ent-CargoRequestEngineeringComputerCircuitboard-desc = Компьютерная печатная плата для компьютера инженерного запроса.
 
-ent-CargoRequestMedicalComputerCircuitboard-name = medical request computer board
-ent-CargoRequestMedicalComputerCircuitboard-desc = A computer printed circuit board for a medical request computer.
+ent-CargoRequestMedicalComputerCircuitboard-name = Компьютерная плата медицинского запроса
+ent-CargoRequestMedicalComputerCircuitboard-desc = Компьютерная печатная плата для компьютера медицинского назначения.
 
-ent-CargoRequestScienceComputerCircuitboard-name = science request computer board
-ent-CargoRequestScienceComputerCircuitboard-desc = A computer printed circuit board for a science request computer.
+ent-CargoRequestScienceComputerCircuitboard-name = компьютерная доска запроса науки
+ent-CargoRequestScienceComputerCircuitboard-desc = Компьютерная печатная плата для научного компьютера.
 
-ent-CargoRequestSecurityComputerCircuitboard-name = security request computer board
-ent-CargoRequestSecurityComputerCircuitboard-desc = A computer printed circuit board for a security request computer.
+ent-CargoRequestSecurityComputerCircuitboard-name = компьютерная плата запроса безопасности
+ent-CargoRequestSecurityComputerCircuitboard-desc = Компьютерная печатная плата для компьютера запроса безопасности.
 
-ent-CargoRequestServiceComputerCircuitboard-name = service request computer board
-ent-CargoRequestServiceComputerCircuitboard-desc = A computer printed circuit board for a service request computer.
+ent-CargoRequestServiceComputerCircuitboard-name = компьютерная плата запроса на обслуживание
+ent-CargoRequestServiceComputerCircuitboard-desc = Компьютерная печатная плата для компьютера запроса на обслуживание.
 
-ent-FundingAllocationComputerCircuitboard-name = funding allocation computer board
-ent-FundingAllocationComputerCircuitboard-desc = A computer printed circuit board for a funding allocation card console.
+ent-FundingAllocationComputerCircuitboard-name = компьютерная плата распределения финансирования
+ent-FundingAllocationComputerCircuitboard-desc = Компьютерная печатная плата для консоли карты распределения средств.
 
-ent-CargoSaleComputerCircuitboard-name = cargo sale computer board
-ent-CargoSaleComputerCircuitboard-desc = A computer printed circuit board for a cargo sale computer.
+ent-CargoSaleComputerCircuitboard-name = Компьютерная плата для продажи грузов
+ent-CargoSaleComputerCircuitboard-desc = Компьютерная печатная плата для компьютера продажи грузов.
 
-ent-CargoBountyComputerCircuitboard-name = cargo bounty computer board
-ent-CargoBountyComputerCircuitboard-desc = A computer printed circuit board for a cargo bounty computer.
+ent-CargoBountyComputerCircuitboard-name = Компьютерная плата по доставке груза
+ent-CargoBountyComputerCircuitboard-desc = Компьютерная печатная плата для компьютера по добыче груза.
 
-ent-SalvageJobBoardComputerCircuitboard-name = salvage job board computer board
-ent-SalvageJobBoardComputerCircuitboard-desc = A computer printed circuit board for a salvage job board computer.
+ent-SalvageJobBoardComputerCircuitboard-name = компьютерная доска по доске вакансий
+ent-SalvageJobBoardComputerCircuitboard-desc = Компьютерная печатная плата для бортового компьютера по разбору работ.
 
-ent-SalvageExpeditionsComputerCircuitboard-name = salvage expeditions computer board
-ent-SalvageExpeditionsComputerCircuitboard-desc = A computer printed circuit board for a salvage expeditions computer.
+ent-SalvageExpeditionsComputerCircuitboard-name = Компьютерная плата спасательных экспедиций
+ent-SalvageExpeditionsComputerCircuitboard-desc = Компьютерная печатная плата для компьютера спасательных экспедиций.
 
-ent-CargoShuttleConsoleCircuitboard-name = cargo shuttle console board
-ent-CargoShuttleConsoleCircuitboard-desc = A computer printed circuit board for a cargo shuttle console.
+ent-CargoShuttleConsoleCircuitboard-name = консоль грузового шаттла
+ent-CargoShuttleConsoleCircuitboard-desc = Компьютерная печатная плата консоли грузового шаттла.
 
-ent-SurveillanceCameraMonitorCircuitboard-name = surveillance camera monitor board
-ent-SurveillanceCameraMonitorCircuitboard-desc = A computer printed circuit board for a surveillance camera monitor.
+ent-SurveillanceCameraMonitorCircuitboard-name = плата монитора камеры наблюдения
+ent-SurveillanceCameraMonitorCircuitboard-desc = Компьютерная печатная плата для монитора камеры наблюдения.
 
-ent-SurveillanceWirelessCameraMonitorCircuitboard-name = surveillance wireless camera monitor board
-ent-SurveillanceWirelessCameraMonitorCircuitboard-desc = A computer printed circuit board for a surveillance wireless camera monitor.
+ent-SurveillanceWirelessCameraMonitorCircuitboard-name = Плата монитора беспроводной камеры наблюдения
+ent-SurveillanceWirelessCameraMonitorCircuitboard-desc = Компьютерная печатная плата для монитора беспроводной камеры наблюдения.
 
-ent-ComputerTelevisionCircuitboard-name = television board
-ent-ComputerTelevisionCircuitboard-desc = A computer printed circuit board for a television.
+ent-ComputerTelevisionCircuitboard-name = телевизионная доска
+ent-ComputerTelevisionCircuitboard-desc = Компьютерная печатная плата для телевизора.
 
-ent-ResearchComputerCircuitboard-name = R&D computer board
-ent-ResearchComputerCircuitboard-desc = A computer printed circuit board for a R&D console.
+ent-ResearchComputerCircuitboard-name = Компьютерная плата для исследований и разработок
+ent-ResearchComputerCircuitboard-desc = Компьютерная печатная плата для пульта исследований и разработок.
 
-ent-AnalysisComputerCircuitboard-name = analysis computer board
-ent-AnalysisComputerCircuitboard-desc = A computer printed circuit board for an analysis console.
+ent-AnalysisComputerCircuitboard-name = компьютерная плата для анализа
+ent-AnalysisComputerCircuitboard-desc = Компьютерная печатная плата для аналитической консоли.
 
-ent-TechDiskComputerCircuitboard-name = tech disk terminal board
-ent-TechDiskComputerCircuitboard-desc = A computer printed circuit board for a technology disk terminal.
+ent-TechDiskComputerCircuitboard-name = клеммная колодка технического диска
+ent-TechDiskComputerCircuitboard-desc = Компьютерная печатная плата для технологического дискового терминала.
 
-ent-CrewMonitoringComputerCircuitboard-name = crew monitoring computer board
-ent-CrewMonitoringComputerCircuitboard-desc = A computer printed circuit board for a crew monitoring console.
+ent-CrewMonitoringComputerCircuitboard-name = компьютерная плата наблюдения за экипажем
+ent-CrewMonitoringComputerCircuitboard-desc = Компьютерная печатная плата пульта наблюдения экипажа.
 
-ent-IDComputerCircuitboard-name = ID card computer board
-ent-IDComputerCircuitboard-desc = A computer printed circuit board for an ID card console.
+ent-IDComputerCircuitboard-name = Компьютерная плата удостоверения личности
+ent-IDComputerCircuitboard-desc = Компьютерная печатная плата для консоли ID-карты.
 
-ent-BodyScannerComputerCircuitboard-name = body scanner computer board
-ent-BodyScannerComputerCircuitboard-desc = A computer printed circuit board for a body scanner console.
+ent-BodyScannerComputerCircuitboard-name = компьютерная плата сканера тела
+ent-BodyScannerComputerCircuitboard-desc = Компьютерная печатная плата для консоли сканера тела.
 
-ent-CommsComputerCircuitboard-name = communications computer board
-ent-CommsComputerCircuitboard-desc = A computer printed circuit board for a communications console.
+ent-CommsComputerCircuitboard-name = компьютерная плата связи
+ent-CommsComputerCircuitboard-desc = Компьютерная печатная плата для пульта связи.
 
-ent-SyndicateCommsComputerCircuitboard-name = syndicate communications computer board
-ent-SyndicateCommsComputerCircuitboard-desc = A computer printed circuit board for a syndicate communications console.
+ent-SyndicateCommsComputerCircuitboard-name = компьютерная плата связи синдиката
+ent-SyndicateCommsComputerCircuitboard-desc = Компьютерная печатная плата для пульта связи синдиката.
 
-ent-WizardCommsComputerCircuitboard-name = wizard communications computer board
-ent-WizardCommsComputerCircuitboard-desc = A computer printed circuit board for a wizard communications console.
+ent-WizardCommsComputerCircuitboard-name = компьютерная плата мастера связи
+ent-WizardCommsComputerCircuitboard-desc = Компьютерная печатная плата для коммуникационной консоли мастера.
 
-ent-CentcommCommsComputerCircuitboard-name = central command communications computer board
-ent-CentcommCommsComputerCircuitboard-desc = A computer printed circuit board for a central command communications console.
+ent-CentcommCommsComputerCircuitboard-name = компьютерная плата центральной командной связи
+ent-CentcommCommsComputerCircuitboard-desc = Компьютерная печатная плата для центрального командного пульта связи.
 
-ent-RadarConsoleCircuitboard-name = radar console computer board
+ent-RadarConsoleCircuitboard-name = компьютерная плата радиолокационной консоли
 
-ent-SolarControlComputerCircuitboard-name = solar control computer board
-ent-SolarControlComputerCircuitboard-desc = A computer printed circuit board for a solar control console.
+ent-SolarControlComputerCircuitboard-name = компьютерная плата управления солнечной энергией
+ent-SolarControlComputerCircuitboard-desc = Компьютерная печатная плата для пульта управления солнечной батареей.
 
-ent-SpaceVillainArcadeComputerCircuitboard-name = space villain arcade board
-ent-SpaceVillainArcadeComputerCircuitboard-desc = A computer printed circuit board for a space villain arcade cabinet.
+ent-SpaceVillainArcadeComputerCircuitboard-name = космический злодей аркада
+ent-SpaceVillainArcadeComputerCircuitboard-desc = Компьютерная печатная плата для аркадного кабинета космического злодея.
 
-ent-BlockGameArcadeComputerCircuitboard-name = block game arcade board
-ent-BlockGameArcadeComputerCircuitboard-desc = A computer printed circuit board for a block game arcade cabinet.
+ent-BlockGameArcadeComputerCircuitboard-name = аркадная доска для блочной игры
+ent-BlockGameArcadeComputerCircuitboard-desc = Компьютерная печатная плата для игрового автомата.
 
-ent-ParticleAcceleratorComputerCircuitboard-name = PA control box computer board
-ent-ParticleAcceleratorComputerCircuitboard-desc = A computer printed circuit board for a particle accelerator control box.
+ent-ParticleAcceleratorComputerCircuitboard-name = Компьютерная плата блока управления PA
+ent-ParticleAcceleratorComputerCircuitboard-desc = Компьютерная печатная плата блока управления ускорителем частиц.
 
-ent-ShuttleConsoleCircuitboard-name = shuttle console board
-ent-ShuttleConsoleCircuitboard-desc = A computer printed circuit board for a shuttle console.
+ent-ShuttleConsoleCircuitboard-name = консольная доска шаттла
+ent-ShuttleConsoleCircuitboard-desc = Компьютерная печатная плата для пульта шаттла.
 
-ent-SyndicateShuttleConsoleCircuitboard-name = syndicate shuttle console board
-ent-SyndicateShuttleConsoleCircuitboard-desc = A computer printed circuit board for a syndicate shuttle console.
+ent-SyndicateShuttleConsoleCircuitboard-name = Консольная панель шаттла синдиката
+ent-SyndicateShuttleConsoleCircuitboard-desc = Компьютерная печатная плата для консоли шаттла синдиката.
 
-ent-CloningConsoleComputerCircuitboard-name = cloning console computer board
-ent-CloningConsoleComputerCircuitboard-desc = A computer printed circuit board for a cloning console.
+ent-CloningConsoleComputerCircuitboard-name = клонирование консольной компьютерной платы
+ent-CloningConsoleComputerCircuitboard-desc = Компьютерная печатная плата для консоли клонирования.
 
-ent-ComputerIFFCircuitboard-name = IFF console board
-ent-ComputerIFFCircuitboard-desc = Allows you to control the IFF characteristics of this vessel.
+ent-ComputerIFFCircuitboard-name = Консольная плата IFF
+ent-ComputerIFFCircuitboard-desc = Позволяет управлять характеристиками IFF данного судна.
 
-ent-ComputerIFFSyndicateCircuitboard-name = syndicate IFF console board
-ent-ComputerIFFSyndicateCircuitboard-desc = Allows you to control the IFF and stealth characteristics of this vessel.
+ent-ComputerIFFSyndicateCircuitboard-name = консольная плата синдиката IFF
+ent-ComputerIFFSyndicateCircuitboard-desc = Позволяет управлять характеристиками IFF и скрытности этого судна.
 
-ent-ComputerMassMediaCircuitboard-name = news manager console board
-ent-ComputerMassMediaCircuitboard-desc = Write your message to the world!
+ent-ComputerMassMediaCircuitboard-name = консоль менеджера новостей
+ent-ComputerMassMediaCircuitboard-desc = Напишите свое послание миру!
 
-ent-SensorConsoleCircuitboard-name = sensor monitoring console board
-ent-SensorConsoleCircuitboard-desc = A computer printed circuit board for a sensor monitoring console.
+ent-SensorConsoleCircuitboard-name = Плата консоли мониторинга датчиков
+ent-SensorConsoleCircuitboard-desc = Компьютерная печатная плата для пульта мониторинга датчиков.
 
-ent-RoboticsConsoleCircuitboard-name = robotics control console board
-ent-RoboticsConsoleCircuitboard-desc = A computer printed circuit board for a robotics control console.
+ent-RoboticsConsoleCircuitboard-name = плата консоли управления робототехникой
+ent-RoboticsConsoleCircuitboard-desc = Компьютерная печатная плата для пульта управления робототехникой.
 
-ent-StationAiUploadCircuitboard-name = AI upload console board
-ent-StationAiUploadCircuitboard-desc = A computer printed circuit board for a AI upload console.
+ent-StationAiUploadCircuitboard-name = Консольная плата загрузки AI
+ent-StationAiUploadCircuitboard-desc = Компьютерная печатная плата для консоли загрузки AI.
 

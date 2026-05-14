@@ -1,15 +1,15 @@
-ent-AlwaysPoweredStrobeLight-name = strobe
-ent-AlwaysPoweredStrobeLight-desc = UH?! Sorry, all I can hear is WEE-OOO-WEE-OOO!
+ent-AlwaysPoweredStrobeLight-name = стробоскоп
+ent-AlwaysPoweredStrobeLight-desc = ЭМ?! Извините, я слышу только УИ-У-У-У-У!
 
-ent-PoweredStrobeLightEmpty-name = strobe
-ent-PoweredStrobeLightEmpty-desc = UH?! Sorry, all I can hear is WEE-OOO-WEE-OOO!
+ent-PoweredStrobeLightEmpty-name = стробоскоп
+ent-PoweredStrobeLightEmpty-desc = ЭМ?! Извините, я слышу только УИ-У-У-У-У!
 
-ent-PoweredStrobeLightPolice-name = strobe
-ent-PoweredStrobeLightPolice-desc = UH?! Sorry, all I can hear is WEE-OOO-WEE-OOO!
+ent-PoweredStrobeLightPolice-name = стробоскоп
+ent-PoweredStrobeLightPolice-desc = ЭМ?! Извините, я слышу только УИ-У-У-У-У!
 
-ent-PoweredStrobeLightSiren-name = strobe
-ent-PoweredStrobeLightSiren-desc = UH?! Sorry, all I can hear is WEE-OOO-WEE-OOO!
+ent-PoweredStrobeLightSiren-name = стробоскоп
+ent-PoweredStrobeLightSiren-desc = ЭМ?! Извините, я слышу только УИ-У-У-У-У!
 
-ent-PoweredStrobeLightEpsilon-name = strobe
-ent-PoweredStrobeLightEpsilon-desc = UH?! Sorry, all I can hear is WEE-OOO-WEE-OOO!
+ent-PoweredStrobeLightEpsilon-name = стробоскоп
+ent-PoweredStrobeLightEpsilon-desc = ЭМ?! Извините, я слышу только УИ-У-У-У-У!
 

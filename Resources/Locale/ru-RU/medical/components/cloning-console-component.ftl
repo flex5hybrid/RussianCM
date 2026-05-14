@@ -1,8 +1,8 @@
 ## UI
 cloning-console-window-title = Консоль клонирования
 cloning-console-window-clone-button-text = Клонировать
-cloning-console-window-scanner-id = ID: [color=white]{ $scannerOccupantName }[/color]
-cloning-console-window-pod-id = ID: [color=white]{ $podOccupantName }[/color]
+cloning-console-window-scanner-id = Идентификатор: [color=white]{ $scannerOccupantName }[/color]
+cloning-console-window-pod-id = Идентификатор: [color=white]{ $podOccupantName }[/color]
 cloning-console-window-no-patient-data-text = Нет данных о пациенте.
 cloning-console-window-id-blank = ID:
 cloning-console-window-scanner-details-label = Статус генетического сканера

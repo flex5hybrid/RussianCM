@@ -1,4 +1,4 @@
-ent-BaseCartridgeCap-name = cartridge (cap)
+ent-BaseCartridgeCap-name = картридж (колпачок)
 
-ent-CartridgeCap-name = cap gun cartridge
+ent-CartridgeCap-name = патрон для капсюля
 

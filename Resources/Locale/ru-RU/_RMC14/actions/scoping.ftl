@@ -6,3 +6,7 @@ cm-action-popup-scoping-user-must-not-contained = Вам Нельзя испол
 cm-action-popup-scoping-user-must-wield = Вам Требуется двуручный хват {THE($scope)} для прицеливания.
 cm-action-popup-scoping-must-attach = {CAPITALIZE(THE($scope))} должен быть установлен на оружие!
 rcm-action-popup-scope-cycle-zoom = Увеличение изменено: {$zoom}x.
+
+# Missing entries synced from en-US
+
+rmc-action-popup-scoping-user-cannot-view-cameras = Использовать оптику {$scope} во время просмотра камер нельзя!

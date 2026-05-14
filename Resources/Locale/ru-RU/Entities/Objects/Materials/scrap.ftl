@@ -1,87 +1,87 @@
-ent-BaseScrap-name = scrap
-ent-BaseScrap-desc = Worthless junk. You could probably get some materials out of it though.
+ent-BaseScrap-name = металлолом
+ent-BaseScrap-desc = Бесполезный хлам. Хотя, возможно, вы могли бы получить некоторые материалы из этого.
 
-ent-BaseScrapLarge-name = scrap
-ent-BaseScrapLarge-desc = Worthless junk. You could probably get some materials out of it though.
+ent-BaseScrapLarge-name = металлолом
+ent-BaseScrapLarge-desc = Бесполезный хлам. Хотя, возможно, вы могли бы получить некоторые материалы из этого.
 
-ent-ScrapSteel-name = blasted steel pile
-ent-ScrapSteel-desc = An pile of steel welded together in extreme heat. It's of a decent size overall; you could probably get a fair amount of sheets out of it.
+ent-ScrapSteel-name = взорванная стальная свая
+ent-ScrapSteel-desc = Груда стали, сваренная вместе при сильной жаре. В целом он приличного размера; из него, вероятно, можно было бы получить изрядное количество листов.
 
-ent-ScrapGlass-name = scrap circuitry
-ent-ScrapGlass-desc = A huge lump of various circuits, strangely fused together. You could likely extract some materials out of this.
+ent-ScrapGlass-name = металлолом
+ent-ScrapGlass-desc = Огромная глыба различных цепей, причудливым образом слитых воедино. Вероятно, вы могли бы извлечь из этого некоторые материалы.
 
-ent-ScrapAirlock1-name = airlock door
-ent-ScrapAirlock1-desc = This used to keep air in. Now it doesn't seem to be doing anything at all.
+ent-ScrapAirlock1-name = дверь шлюза
+ent-ScrapAirlock1-desc = Раньше он удерживал воздух. Теперь, похоже, он вообще ничего не делает.
 
-ent-ScrapAirlock2-name = airlock light
-ent-ScrapAirlock2-desc = Serves it right for flashing red all those times.
+ent-ScrapAirlock2-name = свет шлюза
+ent-ScrapAirlock2-desc = Правильно, все время мигает красным.
 
-ent-ScrapBucket-name = busted bucket
-ent-ScrapBucket-desc = Dear god...
+ent-ScrapBucket-name = разбитое ведро
+ent-ScrapBucket-desc = Дорогой бог...
 
-ent-ScrapCamera-name = broken camera
-ent-ScrapCamera-desc = It might still be watching.
+ent-ScrapCamera-name = сломанная камера
+ent-ScrapCamera-desc = Возможно, он все еще смотрит.
 
-ent-ScrapCanister1-name = canister handle
-ent-ScrapCanister1-desc = Helpful for holding a canister. Now you just need the actual canister part.
+ent-ScrapCanister1-name = ручка канистры
+ent-ScrapCanister1-desc = Полезно держать канистру. Теперь вам просто нужна фактическая часть канистры.
 
-ent-ScrapCanister2-name = canister valve
-ent-ScrapCanister2-desc = A valve from a gas canister.
+ent-ScrapCanister2-name = клапан канистры
+ent-ScrapCanister2-desc = Клапан от газового баллона.
 
-ent-ScrapCloset-name = closet door
-ent-ScrapCloset-desc = A blown off door from a maintenance closet. Looks like a nice piece of wall decor.
+ent-ScrapCloset-name = дверь шкафа
+ent-ScrapCloset-desc = Вырванная дверь из сервисного чулана. Выглядит как красивый предмет декора стены.
 
-ent-ScrapFaxMachine-name = fax machine
-ent-ScrapFaxMachine-desc = The unfortunate result of one too many ASCII arts being sent to Central Command.
+ent-ScrapFaxMachine-name = факс
+ent-ScrapFaxMachine-desc = Неудачный результат отправки слишком большого количества изображений ASCII в Центральное командование.
 
-ent-ScrapFireExtinguisher-name = split fire extinguisher
-ent-ScrapFireExtinguisher-desc = The large gash down the center makes you worry for the previous user.
+ent-ScrapFireExtinguisher-name = разделенный огнетушитель
+ent-ScrapFireExtinguisher-desc = Большая рана в центре заставляет волноваться за предыдущего пользователя.
 
-ent-ScrapFirelock1-name = firelock door
-ent-ScrapFirelock1-desc = At least you still know what it's meant for.
+ent-ScrapFirelock1-name = противопожарная дверь
+ent-ScrapFirelock1-desc = По крайней мере, вы все еще знаете, для чего это предназначено.
 
-ent-ScrapFirelock2-name = firelock door
-ent-ScrapFirelock2-desc = OH! That's where the other half went!
+ent-ScrapFirelock2-name = противопожарная дверь
+ent-ScrapFirelock2-desc = ОХ! Вот куда пошла вторая половина!
 
-ent-ScrapFirelock3-name = firelock frame
-ent-ScrapFirelock3-desc = Worthless junk. You could probably get some materials out of it though.
+ent-ScrapFirelock3-name = противопожарная рама
+ent-ScrapFirelock3-desc = Бесполезный хлам. Хотя, возможно, вы могли бы получить некоторые материалы из этого.
 
-ent-ScrapIntercom-name = intercom scrap
-ent-ScrapIntercom-desc = You wish it at least came with some encryption keys.
+ent-ScrapIntercom-name = лом домофона
+ent-ScrapIntercom-desc = Вы бы хотели, чтобы у него были хотя бы несколько ключей шифрования.
 
-ent-ScrapJetpack-name = busted jetpack
-ent-ScrapJetpack-desc = Looks like it won't be flying any more.
+ent-ScrapJetpack-name = сломанный реактивный ранец
+ent-ScrapJetpack-desc = Похоже, он больше не полетит.
 
-ent-ScrapMedkit-name = snapped medkit
-ent-ScrapMedkit-desc = Hopefully they got some use out of it.
+ent-ScrapMedkit-name = сломанная аптечка
+ent-ScrapMedkit-desc = Надеюсь, они извлекли из этого какую-то пользу.
 
-ent-ScrapMopBucket-name = half a mop bucket
-ent-ScrapMopBucket-desc = Tiders die. Janitors survive.
+ent-ScrapMopBucket-name = половина ведра швабры
+ent-ScrapMopBucket-desc = Тайдеры умирают. Дворники выживают.
 
-ent-ScrapPAI-name = personal ai device
-ent-ScrapPAI-desc = A buddy! You still in there? Hello? Buddy???
+ent-ScrapPAI-name = персональное устройство искусственного интеллекта
+ent-ScrapPAI-desc = Дружище! Ты все еще там? Привет? Приятель???
 
-ent-ScrapPAIGold-name = gilded personal ai device
-ent-ScrapPAIGold-desc = Wow! What a one-in-a-million find! This would be worth a fortune... if it was in good condition.
+ent-ScrapPAIGold-name = позолоченное личное устройство искусственного интеллекта
+ent-ScrapPAIGold-desc = Вау! Какая находка одна на миллион! Это стоило бы целое состояние... если бы оно было в хорошем состоянии.
 
-ent-ScrapTube-name = shattered sample tube
-ent-ScrapTube-desc = A glass tube containing some kind of rare sample. Or at least, it used to contain it. Not much left in there now.
+ent-ScrapTube-name = разбитая пробирка для проб
+ent-ScrapTube-desc = Стеклянная трубка, содержащая какой-то редкий образец. Или, по крайней мере, раньше оно его содержало. Сейчас там мало что осталось.
 
-ent-ScrapGeneratorPlasmaLeaking-name = leaking P.A.C.M.A.N. generator
-ent-ScrapGeneratorPlasmaLeaking-desc = An old looking P.A.C.M.A.N. generator whos plasma tanks started leaking.
+ent-ScrapGeneratorPlasmaLeaking-name = утечка P.A.C.M.A.N. генератор
+ent-ScrapGeneratorPlasmaLeaking-desc = Старенький P.A.C.M.A.N. генератор, плазменные баки которого начали течь.
 
-ent-ScrapGeneratorPlasma-name = old P.A.C.M.A.N. generator
-ent-ScrapGeneratorPlasma-desc = An old looking P.A.C.M.A.N. generator. It's in very poor condition and non functional.
+ent-ScrapGeneratorPlasma-name = старый П.А.К.М.А.Н. генератор
+ent-ScrapGeneratorPlasma-desc = Старенький P.A.C.M.A.N. генератор. Он в очень плохом состоянии и не функционален.
 
-ent-ScrapGeneratorUraniumLeaking-name = leaking S.U.P.E.R.P.A.C.M.A.N. generator
-ent-ScrapGeneratorUraniumLeaking-desc = A S.U.P.E.R.P.A.C.M.A.N. generator that appears to have had some kind of catastrophic failure. Its leaking uranium.
+ent-ScrapGeneratorUraniumLeaking-name = утечка S.U.P.E.R.P.A.C.M.A.N. генератор
+ent-ScrapGeneratorUraniumLeaking-desc = СУПЕРПАКМАН. Генератор, у которого, судя по всему, произошел какой-то катастрофический отказ. Это утечка урана.
 
-ent-ScrapGeneratorUranium-name = destroyed S.U.P.E.R.P.A.C.M.A.N. generator
-ent-ScrapGeneratorUranium-desc = A S.U.P.E.R.P.A.C.M.A.N. generator that appears to have had some kind of catastrophic failure.
+ent-ScrapGeneratorUranium-name = уничтожен S.U.P.E.R.P.A.C.M.A.N. генератор
+ent-ScrapGeneratorUranium-desc = СУПЕРПАКМАН. Генератор, у которого, судя по всему, произошел какой-то катастрофический отказ.
 
-ent-ScrapGeneratorFrame-name = generator frame
-ent-ScrapGeneratorFrame-desc = A frame of a P.A.C.M.A.N. or S.U.P.E.R.P.A.C.M.A.N. type generator. Where is the rest of it?
+ent-ScrapGeneratorFrame-name = рама генератора
+ent-ScrapGeneratorFrame-desc = Кадр из P.A.C.M.A.N. или СУПЕРПАКМАН. типа генератор. Где все остальное?
 
-ent-ScrapGeneratorFuelTank-name = fuel tank
-ent-ScrapGeneratorFuelTank-desc = A fuel tank from a S.U.P.E.R.P.A.C.M.A.N. type generator. The gauge indicates its got a little fuel left.
+ent-ScrapGeneratorFuelTank-name = топливный бак
+ent-ScrapGeneratorFuelTank-desc = Топливный бак от S.U.P.E.R.P.A.C.M.A.N. типа генератор. Датчик показывает, что осталось немного топлива.
 

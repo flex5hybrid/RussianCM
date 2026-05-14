@@ -1,30 +1,30 @@
-ent-CrateFoodPizza-name = emergency pizza delivery
-ent-CrateFoodPizza-desc = Help do your part to end station hunger by distributing pizza to underfunded departments! Includes 4 pizzas.
+ent-CrateFoodPizza-name = срочная доставка пиццы
+ent-CrateFoodPizza-desc = Помогите внести свой вклад в борьбу с голодом на станциях, раздавая пиццу недостаточно финансируемым отделам! Включает 4 пиццы.
 
-ent-CrateFoodMRE-name = MRE crate
-ent-CrateFoodMRE-desc = A military style meal fit to feed a whole department.
+ent-CrateFoodMRE-name = Ящик MRE
+ent-CrateFoodMRE-desc = Обед в стиле милитари, которым можно накормить целый отдел.
 
-ent-CrateFoodCooking-name = kitchen supplies crate
-ent-CrateFoodCooking-desc = Extra kitchen supplies, in case the botanists are absent.
+ent-CrateFoodCooking-name = ящик для кухонных принадлежностей
+ent-CrateFoodCooking-desc = Дополнительные кухонные принадлежности на случай отсутствия ботаников.
 
-ent-CrateFoodDinnerware-name = kitchen dinnerware crate
-ent-CrateFoodDinnerware-desc = Extra kitchen supplies, in case the clown was allowed in the cafeteria unsupervised.
+ent-CrateFoodDinnerware-name = ящик для кухонной посуды
+ent-CrateFoodDinnerware-desc = Дополнительные кухонные принадлежности на случай, если клоуна пустят в столовую без присмотра.
 
-ent-CrateFoodBarSupply-name = bartending supplies crate
-ent-CrateFoodBarSupply-desc = Extra Bar supplies, in case the clown was allowed in the bar unsupervised.
+ent-CrateFoodBarSupply-name = ящик с принадлежностями для бармена
+ent-CrateFoodBarSupply-desc = Дополнительные барные принадлежности на случай, если клоун будет допущен в бар без присмотра.
 
-ent-CrateFoodSoftdrinks-name = softdrinks crate
-ent-CrateFoodSoftdrinks-desc = A variety of sodas to complement a small party, without having to empty the soda machines. Includes 14 sodas.
+ent-CrateFoodSoftdrinks-name = ящик для безалкогольных напитков
+ent-CrateFoodSoftdrinks-desc = Разнообразие газированных напитков для небольшой вечеринки без необходимости опустошать автоматы с газировкой. Включает 14 газированных напитков.
 
-ent-CrateFoodGetMore-name = Getmore Bakemore crate
-ent-CrateFoodGetMore-desc = Getmore branded snacks and baking supplies for the creative chef, all without the need of emptying your station's Getmore machines!
+ent-CrateFoodGetMore-name = Ящик Гетмора Бейкмора
+ent-CrateFoodGetMore-desc = Получите больше фирменных закусок и принадлежностей для выпечки для креативного шеф-повара, и все это без необходимости опустошать автоматы Getmore на вашей станции!
 
-ent-CrateFoodIceCream-name = ice cream delivery
-ent-CrateFoodIceCream-desc = An assortment of ice cream delights for any occasion! Includes 16 frozen treats.
+ent-CrateFoodIceCream-name = доставка мороженого
+ent-CrateFoodIceCream-desc = Ассортимент мороженого на любой случай! В наборе 16 замороженных лакомств.
 
-ent-CrateFoodSnowcone-name = snowcone delivery
-ent-CrateFoodSnowcone-desc = A freezer packed with refreshing snowcones for a hard working crew, or even a lazy one! Includes 16 snowcones.
+ent-CrateFoodSnowcone-name = доставка снежного конуса
+ent-CrateFoodSnowcone-desc = Морозильник, наполненный освежающими снежными шишками, для трудолюбивой команды или даже для ленивой! В комплекте 16 снежинок.
 
-ent-CrateFoodHappyHonkBigBite-name = Happy Honk meal delivery
-ent-CrateFoodHappyHonkBigBite-desc = Two fully loaded Happy Honk Big Bite burger meals, complete with cheesy fries, a bottle of Space Cola, a slice of apple pie and a toy!
+ent-CrateFoodHappyHonkBigBite-name = Доставка еды Happy Honk
+ent-CrateFoodHappyHonkBigBite-desc = Два полноценных гамбургера Happy Honk Big Bite с сырным картофелем фри, бутылкой космической колы, куском яблочного пирога и игрушкой!
 

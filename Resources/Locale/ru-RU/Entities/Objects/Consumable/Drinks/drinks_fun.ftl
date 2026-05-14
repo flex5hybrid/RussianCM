@@ -1,9 +1,9 @@
-ent-DrinkSpaceGlue-name = space glue tube
-ent-DrinkSpaceGlue-desc = High performance glue intended for maintenance of extremely complex mechanical equipment. DON'T DRINK!
+ent-DrinkSpaceGlue-name = тюбик космического клея
+ent-DrinkSpaceGlue-desc = Высокоэффективный клей, предназначенный для обслуживания чрезвычайно сложного механического оборудования. НЕ ПИТЬ!
 
-ent-DrinkSpaceLube-name = space lube tube
-ent-DrinkSpaceLube-desc = High performance lubricant intended for maintenance of extremely complex mechanical equipment.
+ent-DrinkSpaceLube-name = космическая смазочная трубка
+ent-DrinkSpaceLube-desc = Высокоэффективная смазка, предназначенная для обслуживания чрезвычайно сложного механического оборудования.
 
-ent-DrinkMopwataBottleRandom-name = delicious mopwata
-ent-DrinkMopwataBottleRandom-desc = A foggy brown bottle with a faded label depicting a mop. It comes full of murky... vintage.
+ent-DrinkMopwataBottleRandom-name = вкусная мопвата
+ent-DrinkMopwataBottleRandom-desc = Туманно-коричневая бутылка с выцветшей этикеткой, изображающей швабру. В нем полно мутного... винтажа.
 

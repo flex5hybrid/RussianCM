@@ -1,3 +1,3 @@
-ent-BrokenBottle-name = broken bottle
-ent-BrokenBottle-desc = In Space Glasgow this is called a conversation starter.
+ent-BrokenBottle-name = разбитая бутылка
+ent-BrokenBottle-desc = В Космическом Глазго это называется началом разговора.
 

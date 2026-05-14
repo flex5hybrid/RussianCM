@@ -1,21 +1,21 @@
-ent-WindoorAssembly-name = windoor assembly
-ent-WindoorAssembly-desc = It opens, it closes, and you can see through it!
+ent-WindoorAssembly-name = оконная сборка
+ent-WindoorAssembly-desc = Он открывается, закрывается, и вы можете видеть сквозь него!
 
-ent-WindoorAssemblySecure-name = secure windoor assembly
-ent-WindoorAssemblySecure-desc = It opens, it closes, and you can see through it! This one looks tough.
+ent-WindoorAssemblySecure-name = надежный монтаж оконной двери
+ent-WindoorAssemblySecure-desc = Он открывается, закрывается, и вы можете видеть сквозь него! Этот выглядит жестко.
 
-ent-WindoorAssemblyClockwork-name = clockwork windoor assembly
-ent-WindoorAssemblyClockwork-desc = It opens, it closes, and you can see through it! This one looks tough.
+ent-WindoorAssemblyClockwork-name = сборка заводной оконной двери
+ent-WindoorAssemblyClockwork-desc = Он открывается, закрывается, и вы можете видеть сквозь него! Этот выглядит жестко.
 
-ent-WindoorAssemblyPlasma-name = plasma windoor assembly
-ent-WindoorAssemblyPlasma-desc = It opens, it closes, and you can see through it! This one looks purp-, no, pink. Wait...
+ent-WindoorAssemblyPlasma-name = плазменная оконная сборка
+ent-WindoorAssemblyPlasma-desc = Он открывается, закрывается, и вы можете видеть сквозь него! Этот выглядит пурпурным, нет, розовым. Подожди...
 
-ent-WindoorAssemblySecurePlasma-name = secure plasma windoor assembly
-ent-WindoorAssemblySecurePlasma-desc = It opens, it closes, and you can see through it! This one looks strong and pin-, no, purple. Hold on...
+ent-WindoorAssemblySecurePlasma-name = безопасный плазменный оконный монтаж
+ent-WindoorAssemblySecurePlasma-desc = Он открывается, закрывается, и вы можете видеть сквозь него! Этот выглядит сильным и булавочным, нет, фиолетовым. Подожди...
 
-ent-WindoorAssemblyUranium-name = uranium windoor assembly
-ent-WindoorAssemblyUranium-desc = It opens, it closes, and you can see through it! This one looks sickly green...
+ent-WindoorAssemblyUranium-name = урановая оконная конструкция
+ent-WindoorAssemblyUranium-desc = Он открывается, закрывается, и вы можете видеть сквозь него! Этот выглядит болезненно-зеленым...
 
-ent-WindoorAssemblySecureUranium-name = secure uranium windoor assembly
-ent-WindoorAssemblySecureUranium-desc = It opens, it closes, and you can see through it! This one looks strong and radioactive-lime-green!
+ent-WindoorAssemblySecureUranium-name = безопасная сборка урановой оконной двери
+ent-WindoorAssemblySecureUranium-desc = Он открывается, закрывается, и вы можете видеть сквозь него! Этот выглядит сильным и радиоактивно-лаймово-зеленым!
 

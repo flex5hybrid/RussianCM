@@ -1,2 +1,2 @@
-ent-MobDwarf-name = Urist McHands The Dwarf
+ent-MobDwarf-name = Урист МакХандс Карлик
 

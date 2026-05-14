@@ -418,7 +418,7 @@ namespace Content.Client.Lobby.UI
 
             foreach (var value in Enum.GetValues<ArmorPreference>())
             {
-                ArmorPreferenceButton.AddItem(value.ToString(), (int) value);
+                ArmorPreferenceButton.AddItem(Loc.GetString($"humanoid-profile-editor-preference-armor-{value.ToString().ToLower()}"), (int) value); // RuMC edit - localization for armor preferences
             }
 
             ArmorPreferenceButton.OnItemSelected += args =>

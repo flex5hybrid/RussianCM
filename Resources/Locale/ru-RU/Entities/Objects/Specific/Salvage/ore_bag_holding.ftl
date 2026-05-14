@@ -1,3 +1,3 @@
-ent-OreBagOfHolding-name = ore bag of holding
-ent-OreBagOfHolding-desc = A robust bag of holding for salvage billionaires and rich miners alike to carry large amounts of ore. Magnetises any nearby ores when attached to a belt.
+ent-OreBagOfHolding-name = мешок с рудой
+ent-OreBagOfHolding-desc = Прочная сумка для перевозки больших объемов руды как миллиардерами, так и богатыми шахтерами. Прикрепляя к поясу, намагничивает любые близлежащие руды.
 

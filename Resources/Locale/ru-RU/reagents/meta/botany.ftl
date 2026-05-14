@@ -7,7 +7,7 @@ reagent-desc-left4-zed = Коктейль из различных мутаген
 reagent-name-pest-killer = пестициды
 reagent-desc-pest-killer = Смесь, предназначенная для борьбы с вредителями. Несмотря на свою полезность, они медленно отравляют растения токсинами, поэтому будьте осторожны при использовании.
 
-reagent-name-plant-b-gone = plant-B-gone
+reagent-name-plant-b-gone = растение-Б-ушло
 reagent-desc-plant-b-gone = Вредная токсичная смесь для уничтожения растительной жизни. Очень эффективно против кудзу.
 
 reagent-name-robust-harvest = робаст харвест

@@ -1,15 +1,15 @@
-ent-BulletMagnum-name = bullet (.45 magnum)
-ent-BulletMagnum-desc = If you can see this you're probably dead!
+ent-BulletMagnum-name = пуля (.45 магнум)
+ent-BulletMagnum-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletMagnumPractice-name = bullet (.45 magnum practice)
-ent-BulletMagnumPractice-desc = If you can see this you're probably dead!
+ent-BulletMagnumPractice-name = пуля (тренировочная .45 магнум)
+ent-BulletMagnumPractice-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletMagnumIncendiary-name = bullet (.45 magnum incendiary)
-ent-BulletMagnumIncendiary-desc = If you can see this you're probably dead!
+ent-BulletMagnumIncendiary-name = пуля (зажигательная .45 магнум)
+ent-BulletMagnumIncendiary-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletMagnumAP-name = bullet (.45 magnum armor-piercing)
-ent-BulletMagnumAP-desc = If you can see this you're probably dead!
+ent-BulletMagnumAP-name = пуля (бронебойная .45 магнум)
+ent-BulletMagnumAP-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletMagnumUranium-name = bullet (.45 magnum uranium)
-ent-BulletMagnumUranium-desc = If you can see this you're probably dead!
+ent-BulletMagnumUranium-name = пуля (уран .45 магнум)
+ent-BulletMagnumUranium-desc = Если ты это видишь, ты, вероятно, мертв!
 

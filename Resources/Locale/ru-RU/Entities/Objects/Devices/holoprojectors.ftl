@@ -1,20 +1,20 @@
-ent-Holoprojector-name = holographic sign projector
-ent-Holoprojector-desc = A handy-dandy holographic projector that displays a janitorial sign.
+ent-Holoprojector-name = голографический проектор знаков
+ent-Holoprojector-desc = Удобный голографический проектор, отображающий табличку с надписью «Уборка».
 
-ent-HoloprojectorBorg-name = holosign projector
-ent-HoloprojectorBorg-desc = A modified holographic sign projector for use in custodial cyborgs. Automatically self-charges.
+ent-HoloprojectorBorg-name = голографический проектор
+ent-HoloprojectorBorg-desc = Модифицированный проектор голографических знаков для использования в киборгах-опекунах. Автоматически заряжается самостоятельно.
 
-ent-HolofanProjector-name = holofan projector
-ent-HolofanProjector-desc = Stop suicidal passengers from killing everyone during atmos emergencies.
+ent-HolofanProjector-name = холофан-проектор
+ent-HolofanProjector-desc = Не позволяйте пассажирам-самоубийцам убивать всех во время чрезвычайных ситуаций в атмосфере.
 
-ent-HolofanProjectorBorg-name = integrated holofan
-ent-HolofanProjectorBorg-desc = Stops idiots from causing more crew harm during atmospheric emergencies. Installed directly into an engineering cyborg, it recharges over time.
+ent-HolofanProjectorBorg-name = интегрированный холофан
+ent-HolofanProjectorBorg-desc = Не позволяет идиотам причинять больший вред экипажу во время атмосферных аварий. Установленный непосредственно в инженерного киборга, он со временем перезаряжается.
 
-ent-HoloprojectorField-name = force field projector
-ent-HoloprojectorField-desc = Creates an impassable forcefield that won't let anything through. Close proximity may or may not cause cancer.
+ent-HoloprojectorField-name = проектор силового поля
+ent-HoloprojectorField-desc = Создает непроходимое силовое поле, которое ничего не пропускает. Непосредственная близость может вызвать или не вызвать рак.
 
-ent-HoloprojectorSecurity-name = holobarrier projector
-ent-HoloprojectorSecurity-desc = Creates a solid but fragile holographic barrier.
+ent-HoloprojectorSecurity-name = голобарьерный проектор
+ent-HoloprojectorSecurity-desc = Создает прочный, но хрупкий голографический барьер.
 
-ent-HoloprojectorEmpty-name = item
+ent-HoloprojectorEmpty-name = элемент
 

@@ -1,2 +1,2 @@
-ent-RandomProduce-name = random produce spawner
+ent-RandomProduce-name = генератор случайных продуктов
 

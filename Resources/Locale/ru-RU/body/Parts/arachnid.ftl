@@ -1,22 +1,22 @@
-ent-PartArachnid-name = arachnid body part
+ent-PartArachnid-name = часть тела паукообразного
 
-ent-TorsoArachnid-name = arachnid torso
+ent-TorsoArachnid-name = туловище паукообразного
 
-ent-HeadArachnid-name = arachnid head
+ent-HeadArachnid-name = паукообразная голова
 
-ent-LeftArmArachnid-name = left arachnid arm
+ent-LeftArmArachnid-name = левая паукообразная рука
 
-ent-RightArmArachnid-name = right arachnid arm
+ent-RightArmArachnid-name = правая паукообразная рука
 
-ent-LeftHandArachnid-name = left arachnid hand
+ent-LeftHandArachnid-name = левая паукообразная рука
 
-ent-RightHandArachnid-name = right arachnid hand
+ent-RightHandArachnid-name = правая паукообразная рука
 
-ent-LeftLegArachnid-name = left arachnid leg
+ent-LeftLegArachnid-name = левая паукообразная нога
 
-ent-RightLegArachnid-name = right arachnid leg
+ent-RightLegArachnid-name = правая паукообразная нога
 
-ent-LeftFootArachnid-name = left arachnid foot
+ent-LeftFootArachnid-name = левая паукообразная нога
 
-ent-RightFootArachnid-name = right arachnid foot
+ent-RightFootArachnid-name = правая паукообразная нога
 

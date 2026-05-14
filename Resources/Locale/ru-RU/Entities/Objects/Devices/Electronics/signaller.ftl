@@ -1,6 +1,6 @@
-ent-RemoteSignaller-name = remote signaller
-ent-RemoteSignaller-desc = A handheld device used for remotely sending signals to objects within a small radius of about 15 meters.
+ent-RemoteSignaller-name = удаленный связист
+ent-RemoteSignaller-desc = Портативное устройство, используемое для удаленной передачи сигналов объектам в небольшом радиусе около 15 метров.
 
-ent-RemoteSignallerAdvanced-name = advanced remote signaller
-ent-RemoteSignallerAdvanced-desc = A handheld device used for remotely sending signals to objects within a small radius of about 50 meters.
+ent-RemoteSignallerAdvanced-name = усовершенствованный дистанционный сигнальщик
+ent-RemoteSignallerAdvanced-desc = Портативное устройство, используемое для удаленной передачи сигналов объектам в небольшом радиусе около 50 метров.
 

@@ -1,6 +1,6 @@
-ent-Bucket-name = bucket
-ent-Bucket-desc = It's a boring old bucket.
+ent-Bucket-name = ведро
+ent-Bucket-desc = Это скучное старое ведро.
 
-ent-BorgBucket-name = internal tank
-ent-BorgBucket-desc = The internal reservoir of a custodial cyborg, capable of holding a entire mop bucket worth of water.
+ent-BorgBucket-name = внутренний резервуар
+ent-BorgBucket-desc = Внутренний резервуар киборга-заключенного, способный вместить целое ведро воды для швабры.
 

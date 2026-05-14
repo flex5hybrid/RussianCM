@@ -1,60 +1,60 @@
-ent-Hypospray-name = hypospray
-ent-Hypospray-desc = A sterile injector for rapid administration of drugs to patients.
+ent-Hypospray-name = гипоспрей
+ent-Hypospray-desc = Стерильный инжектор для быстрого введения лекарств пациентам.
 
-ent-SyndiHypo-name = gorlex hypospray
-ent-SyndiHypo-desc = Using reverse engineered designs from NT, Cybersun produced these in limited quantities for Gorlex Marauder operatives.
+ent-SyndiHypo-name = горлекс гипоспрей
+ent-SyndiHypo-desc = Используя реверс-инжиниринг от NT, Cybersun произвела их в ограниченных количествах для оперативников Горлекса Мародера.
 
-ent-BorgHypo-name = borghypo
-ent-BorgHypo-desc = A sterile injector for rapid administration of drugs to patients. A cheaper and more specialised version for medical borgs.
+ent-BorgHypo-name = боргипо
+ent-BorgHypo-desc = Стерильный инжектор для быстрого введения лекарств пациентам. Более дешевый и специализированный вариант для медицинских боргов.
 
-ent-AdminHypo-name = experimental hypospray
-ent-AdminHypo-desc = The ultimate application of bluespace technology and rapid chemical administration.
+ent-AdminHypo-name = экспериментальный гипоспрей
+ent-AdminHypo-desc = Максимальное применение технологии bluespace и быстрого применения химикатов.
 
-ent-ChemicalMedipen-name = chemical medipen
-ent-ChemicalMedipen-desc = A sterile injector for rapid administration of drugs to patients. This one can't be refilled.
+ent-ChemicalMedipen-name = химический медипен
+ent-ChemicalMedipen-desc = Стерильный инжектор для быстрого введения лекарств пациентам. Этот нельзя пополнить.
 
-ent-EmergencyMedipen-name = emergency medipen
-ent-EmergencyMedipen-desc = A rapid and safe way to stabilize patients in critical condition for personnel without advanced medical knowledge. Beware, as it's easy to overdose on epinephrine and tranexamic acid.
+ent-EmergencyMedipen-name = неотложная медицинская помощь
+ent-EmergencyMedipen-desc = Быстрый и безопасный способ стабилизации пациентов в критическом состоянии для персонала без передовых медицинских знаний. Будьте осторожны, так как адреналин и транексамовая кислота могут легко привести к передозировке.
 
-ent-AntiPoisonMedipen-name = poison auto-injector
-ent-AntiPoisonMedipen-desc = A rapid dose of anti-poison. Contains ultravasculine and epinephrine.
+ent-AntiPoisonMedipen-name = автоинжектор яда
+ent-AntiPoisonMedipen-desc = Быстрая доза противоядия. Содержит ультраваскулин и адреналин.
 
-ent-BruteAutoInjector-name = brute auto-injector
-ent-BruteAutoInjector-desc = A rapid dose of bicaridine and tranexamic acid, intended for combat applications.
+ent-BruteAutoInjector-name = грубый автоинжектор
+ent-BruteAutoInjector-desc = Быстрая доза бикаридина и транексамовой кислоты, предназначенная для боевого применения.
 
-ent-BurnAutoInjector-name = burn auto-injector
-ent-BurnAutoInjector-desc = A rapid dose of dermaline and leporazine, intended for combat applications.
+ent-BurnAutoInjector-name = сжечь автоинжектор
+ent-BurnAutoInjector-desc = Быстрая доза дермалина и лепоразина, предназначенная для боевого применения.
 
-ent-RadAutoInjector-name = rad auto-injector
-ent-RadAutoInjector-desc = A rapid dose of anti-radiation. Contains arithrazine and bicaridine.
+ent-RadAutoInjector-name = рад-автоинжектор
+ent-RadAutoInjector-desc = Быстрая доза антирадиации. Содержит аритразин и бикаридин.
 
-ent-PunctAutoInjector-name = puncturase auto-injector
-ent-PunctAutoInjector-desc = A rapid dose of puncturase and tranexamic acid, intended for combat applications.
+ent-PunctAutoInjector-name = автоинъектор пунктуразы
+ent-PunctAutoInjector-desc = Быстрая доза пунктуразы и транексамовой кислоты, предназначенная для боевого применения.
 
-ent-PyraAutoInjector-name = pyrazine auto-injector
-ent-PyraAutoInjector-desc = A rapid dose of pyrazine and dermaline, intended for combat applications.
+ent-PyraAutoInjector-name = пиразиновый автоинжектор
+ent-PyraAutoInjector-desc = Быстрая доза пиразина и дермалина, предназначенная для боевого применения.
 
-ent-AirlossAutoInjector-name = airloss auto-injector
-ent-AirlossAutoInjector-desc = A rapid dose of saline and dexalin plus, intended to get someone up quickly.
+ent-AirlossAutoInjector-name = автоинжектор с потерей воздуха
+ent-AirlossAutoInjector-desc = Быстрая доза физиологического раствора и плюс дексалин, предназначенная для быстрого подъема человека.
 
-ent-SpaceMedipen-name = space medipen
-ent-SpaceMedipen-desc = Contains a mix of chemicals that protect you from the deadly effects of space.
+ent-SpaceMedipen-name = космический медипен
+ent-SpaceMedipen-desc = Содержит смесь химических веществ, которые защищают вас от смертоносного воздействия космоса.
 
-ent-Stimpack-name = hyperzine injector
-ent-Stimpack-desc = Contains enough hyperzine for you to have the chemical's effect for 30 seconds. Use it when you're sure you're ready to throw down.
+ent-Stimpack-name = гиперзиновый инжектор
+ent-Stimpack-desc = Содержит достаточно гиперзина, чтобы эффект химиката сохранялся в течение 30 секунд. Используйте его, когда уверены, что готовы бросить мяч.
 
-ent-StimpackMini-name = hyperzine microinjector
-ent-StimpackMini-desc = A microinjector of hyperzine that give you about 15 seconds of the chemical's effects.
+ent-StimpackMini-name = микроинжектор гиперзина
+ent-StimpackMini-desc = Микроинъектор гиперзина, обеспечивающий около 15 секунд действия химического вещества.
 
-ent-CombatMedipen-name = combat medipen
-ent-CombatMedipen-desc = A single-use medipen containing chemicals that regenerate most types of damage.
+ent-CombatMedipen-name = боевой медицинский препарат
+ent-CombatMedipen-desc = Одноразовая аптечка, содержащая химические вещества, которые восстанавливают большинство типов повреждений.
 
-ent-Hypopen-name = pen
-ent-Hypopen-desc = A dark ink pen.
+ent-Hypopen-name = ручка
+ent-Hypopen-desc = Ручка с темными чернилами.
 
-ent-HypopenBox-name = hypopen box
-ent-HypopenBox-desc = A small box containing a hypopen. Packaging disintegrates when opened, leaving no evidence behind.
+ent-HypopenBox-name = гипооткрытая коробка
+ent-HypopenBox-desc = Небольшая коробочка с гипопеном. Упаковка разваливается при открытии, не оставляя после себя никаких следов.
 
-ent-WehMedipen-name = weh auto-injector
-ent-WehMedipen-desc = A rapid dose of Weh. Contains juice that makes you Weh.
+ent-WehMedipen-name = Weh автоинжектор
+ent-WehMedipen-desc = Быстрая доза Weh. Содержит сок, который делает вас Weh.
 

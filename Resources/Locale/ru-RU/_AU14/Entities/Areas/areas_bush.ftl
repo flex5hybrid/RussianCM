@@ -1,1 +1,1 @@
-ent-AU14AreaUSSGeorgeBush-name = USS George W. Bush
+ent-AU14AreaUSSGeorgeBush-name = Военный корабль США Джордж Буш

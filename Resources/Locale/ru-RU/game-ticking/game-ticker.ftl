@@ -52,3 +52,7 @@ preset-no-one-ready = Не удалось запустить режим { $prese
 game-run-level-PreRoundLobby = Предраундовое лобби
 game-run-level-InRound = В раунде
 game-run-level-PostRound = После раунда
+
+# Missing entries synced from en-US
+
+game-ticker-no-map-selected-plain = Карта еще не выбрана!

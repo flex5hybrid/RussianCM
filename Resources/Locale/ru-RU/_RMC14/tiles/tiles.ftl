@@ -56,3 +56,7 @@ tiles-rmc-outer-hull = Плитка внешнего корпуса
 tiles-rmc-escape-pod = Плитка спасательной капсулы
 tiles-rmc-grate = Решетчатая плитка
 tiles-rmc-supply-pad = Плитка грузовой площадки
+
+# Missing entries synced from en-US
+
+tiles-rmc-planet-auto-sand = песчаная плитка

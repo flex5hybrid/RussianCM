@@ -1,72 +1,72 @@
-ent-BaseTowel-name = base towel
-ent-BaseTowel-desc = If you want to survive out here, you gotta know where your towel is.
+ent-BaseTowel-name = базовое полотенце
+ent-BaseTowel-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorWhite-name = white towel
-ent-TowelColorWhite-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorWhite-name = белое полотенце
+ent-TowelColorWhite-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorPurple-name = purple towel
-ent-TowelColorPurple-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorPurple-name = фиолетовое полотенце
+ent-TowelColorPurple-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorRed-name = red towel
-ent-TowelColorRed-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorRed-name = красное полотенце
+ent-TowelColorRed-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorBlue-name = blue towel
-ent-TowelColorBlue-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorBlue-name = синее полотенце
+ent-TowelColorBlue-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorDarkBlue-name = dark blue towel
-ent-TowelColorDarkBlue-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorDarkBlue-name = темно-синее полотенце
+ent-TowelColorDarkBlue-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorLightBlue-name = light blue towel
-ent-TowelColorLightBlue-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorLightBlue-name = светло-голубое полотенце
+ent-TowelColorLightBlue-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorTeal-name = teal towel
-ent-TowelColorTeal-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorTeal-name = бирюзовое полотенце
+ent-TowelColorTeal-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorBrown-name = brown towel
-ent-TowelColorBrown-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorBrown-name = коричневое полотенце
+ent-TowelColorBrown-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorLightBrown-name = light brown towel
-ent-TowelColorLightBrown-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorLightBrown-name = светло-коричневое полотенце
+ent-TowelColorLightBrown-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorGray-name = gray towel
-ent-TowelColorGray-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorGray-name = серое полотенце
+ent-TowelColorGray-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorGreen-name = green towel
-ent-TowelColorGreen-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorGreen-name = зеленое полотенце
+ent-TowelColorGreen-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorDarkGreen-name = dark green towel
-ent-TowelColorDarkGreen-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorDarkGreen-name = темно-зеленое полотенце
+ent-TowelColorDarkGreen-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorGold-name = gold towel
-ent-TowelColorGold-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorGold-name = золотое полотенце
+ent-TowelColorGold-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorOrange-name = orange towel
-ent-TowelColorOrange-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorOrange-name = оранжевое полотенце
+ent-TowelColorOrange-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorBlack-name = black towel
-ent-TowelColorBlack-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorBlack-name = черное полотенце
+ent-TowelColorBlack-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorPink-name = pink towel
-ent-TowelColorPink-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorPink-name = розовое полотенце
+ent-TowelColorPink-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorYellow-name = yellow towel
-ent-TowelColorYellow-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorYellow-name = желтое полотенце
+ent-TowelColorYellow-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorMaroon-name = maroon towel
-ent-TowelColorMaroon-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorMaroon-name = бордовое полотенце
+ent-TowelColorMaroon-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorSilver-name = silver towel
-ent-TowelColorSilver-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorSilver-name = серебряное полотенце
+ent-TowelColorSilver-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorMime-name = silent towel
-ent-TowelColorMime-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorMime-name = бесшумное полотенце
+ent-TowelColorMime-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorNT-name = NanoTrasen brand towel
-ent-TowelColorNT-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorNT-name = Фирменное полотенце NanoTrasen
+ent-TowelColorNT-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorCentcom-name = centcom towel
-ent-TowelColorCentcom-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorCentcom-name = полотенце CENTCOM
+ent-TowelColorCentcom-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 
-ent-TowelColorSyndicate-name = syndicate towel
-ent-TowelColorSyndicate-desc = If you want to survive out here, you gotta know where your towel is.
+ent-TowelColorSyndicate-name = полотенце синдиката
+ent-TowelColorSyndicate-desc = Если ты хочешь выжить здесь, ты должен знать, где твое полотенце.
 

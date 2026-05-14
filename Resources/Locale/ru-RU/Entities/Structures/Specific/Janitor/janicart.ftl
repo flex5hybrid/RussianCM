@@ -1,11 +1,11 @@
-ent-MopBucket-name = mop bucket
-ent-MopBucket-desc = Holds water and the tears of the janitor.
+ent-MopBucket-name = ведро для швабры
+ent-MopBucket-desc = Держит воду и слезы дворника.
 
-ent-MopBucketFull-name = mop bucket
+ent-MopBucketFull-name = ведро для швабры
 
-ent-MopBucketCubeWrapped-name = mop bucket cube
-ent-MopBucketCubeWrapped-desc = Unwrap this to get a mop bucket cube.
+ent-MopBucketCubeWrapped-name = кубик ведра для швабры
+ent-MopBucketCubeWrapped-desc = Разверните это, чтобы получить куб ведра для швабры.
 
-ent-JanitorialTrolley-name = janitorial trolley
-ent-JanitorialTrolley-desc = This is the alpha and omega of sanitation.
+ent-JanitorialTrolley-name = уборочная тележка
+ent-JanitorialTrolley-desc = Это альфа и омега санитарии.
 

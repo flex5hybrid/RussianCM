@@ -1,2 +1,2 @@
-ent-AU14SpawnPointOPFORAuxSupportSynth-name = Spawn Point OPFOR Support Synth
-ent-AU14SpawnPointOPFORAuxSupportSynth-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointOPFORAuxSupportSynth-name = Синтезатор поддержки OPFOR для точки возрождения
+ent-AU14SpawnPointOPFORAuxSupportSynth-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

@@ -1,2 +1,2 @@
-ent-AU14SpawnPointGOVFORadvisor-name = Spawn Point GOVFOR Advisor
-ent-AU14SpawnPointGOVFORadvisor-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointGOVFORadvisor-name = Точка появления советника GOVFOR
+ent-AU14SpawnPointGOVFORadvisor-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

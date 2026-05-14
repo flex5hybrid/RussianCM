@@ -1,6 +1,6 @@
-ent-WeaponStaffHealing-name = staff of healing
-ent-WeaponStaffHealing-desc = You don't foresee having to use this in your quest for carnage too often.
+ent-WeaponStaffHealing-name = посох исцеления
+ent-WeaponStaffHealing-desc = Вы не предвидите, что вам придется слишком часто использовать это в своих поисках кровавой бойни.
 
-ent-WeaponStaffPolymorphDoor-name = staff of entrance
-ent-WeaponStaffPolymorphDoor-desc = For when you need a get-away route.
+ent-WeaponStaffPolymorphDoor-name = персонал входа
+ent-WeaponStaffPolymorphDoor-desc = На случай, если вам нужен маршрут для отступления.
 

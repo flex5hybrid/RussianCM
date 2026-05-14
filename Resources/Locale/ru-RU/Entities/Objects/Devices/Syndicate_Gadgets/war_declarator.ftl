@@ -1,3 +1,3 @@
-ent-NukeOpsDeclarationOfWar-name = war declarator
-ent-NukeOpsDeclarationOfWar-desc = Use to send a declaration of hostilities to the target, delaying your shuttle departure while they prepare for your assault. Such a brazen move will attract the attention of powerful benefactors within the Syndicate, who will supply your team with a massive amount of bonus telecrystals. Must be used at start of mission, or your benefactors will lose interest.
+ent-NukeOpsDeclarationOfWar-name = объявляющий войну
+ent-NukeOpsDeclarationOfWar-desc = Используйте, чтобы отправить объекту объявление военных действий, задерживая вылет вашего шаттла, пока они готовятся к вашей атаке. Такой наглый шаг привлечет внимание влиятельных благотворителей внутри Синдиката, которые снабдят вашу команду огромным количеством бонусных телекристаллов. Необходимо использовать в начале миссии, иначе ваши благотворители потеряют интерес.
 

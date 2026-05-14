@@ -1,3 +1,3 @@
-ent-BoxingBell-name = boxing bell
-ent-BoxingBell-desc = Ding ding!
+ent-BoxingBell-name = боксерский колокол
+ent-BoxingBell-desc = Динь-динь!
 

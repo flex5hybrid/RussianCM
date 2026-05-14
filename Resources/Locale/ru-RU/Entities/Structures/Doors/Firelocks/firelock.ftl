@@ -1,12 +1,12 @@
-ent-BaseFirelock-name = firelock
-ent-BaseFirelock-desc = Apply crowbar.
+ent-BaseFirelock-name = огневой шлюз
+ent-BaseFirelock-desc = Примените лом.
 
-ent-FirelockGlass-name = glass firelock
-ent-FirelockGlass-desc = Apply crowbar.
+ent-FirelockGlass-name = стеклянный противопожарный замок
+ent-FirelockGlass-desc = Примените лом.
 
-ent-FirelockEdge-name = firelock
-ent-FirelockEdge-desc = Apply crowbar.
+ent-FirelockEdge-name = огневой шлюз
+ent-FirelockEdge-desc = Примените лом.
 
-ent-Firelock-name = firelock
-ent-Firelock-desc = Apply crowbar.
+ent-Firelock-name = огневой шлюз
+ent-Firelock-desc = Примените лом.
 

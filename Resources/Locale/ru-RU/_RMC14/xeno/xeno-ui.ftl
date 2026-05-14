@@ -1,5 +1,3 @@
-﻿rmc-xeno-words-of-the-queen-header = Слова Королевы отдаются эхом в нашем разуме...
-
 xeno-ui-reserve-parasites-title = Резервные лицехваты
 xeno-ui-reserve-parasites-apply-button-text = Применить
 xeno-reserve-parasites-verb = Резервировать лицехватов
@@ -28,3 +26,7 @@ rmc-xeno-ui-ovi-needed-label = [bold][color=red]Королева должна н
 
 rmc-xeno-ui-evolution-points = Очки эволюции: { $points } / { $maxPoints }
 rmc-ui-xeno-strain-confirm = Подтвердить
+
+# Missing entries synced from en-US
+
+rmc-xeno-words-of-the-queen-header = Слова Королевы звучат в нашей голове...

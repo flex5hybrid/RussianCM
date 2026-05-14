@@ -1,2 +1,2 @@
-cmd-nukecodes-desc = Send nuke codes to a station's communication consoles.
-cmd-nukecodes-help = Usage: nukecodes <entityUid>
+cmd-nukecodes-desc = Отправьте ядерные коды на коммуникационные консоли станции.
+cmd-nukecodes-help = Использование: ядерные коды <entityUid>.

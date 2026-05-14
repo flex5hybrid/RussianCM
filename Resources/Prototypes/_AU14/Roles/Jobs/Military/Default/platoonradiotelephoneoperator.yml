@@ -2,7 +2,7 @@
   parent: AU14JobRadioTelephoneOperatorBase
   id: AU14JobGOVFORRadioTelephoneOperator
   name: au14-job-name-radiotelephoneoperator
-  description: au14-job-description-radiotelephoneooerator
+  description: au14-job-description-radiotelephoneoperator
   setPreference: true
   requirements:
   - !type:TraitsRequirement

@@ -1,8 +1,8 @@
-ent-DisposalUnitBase-desc = A pneumatic waste disposal unit.
+ent-DisposalUnitBase-desc = Пневматическая установка для утилизации отходов.
 
-ent-DisposalUnit-name = disposal unit
-ent-DisposalUnit-desc = A pneumatic waste disposal unit.
+ent-DisposalUnit-name = установка утилизации
+ent-DisposalUnit-desc = Пневматическая установка для утилизации отходов.
 
-ent-MailingUnit-name = mailing unit
-ent-MailingUnit-desc = A pneumatic mail delivery unit.
+ent-MailingUnit-name = почтовая единица
+ent-MailingUnit-desc = Пневматическое устройство доставки почты.
 

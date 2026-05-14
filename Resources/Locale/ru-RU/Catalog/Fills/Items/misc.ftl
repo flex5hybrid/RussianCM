@@ -1,30 +1,30 @@
-ent-ClothingShoesBootsCombatFilled-name = combat boots
-ent-ClothingShoesBootsCombatFilled-desc = Robust combat boots for combat scenarios or combat situations. All combat, all the time.
+ent-ClothingShoesBootsCombatFilled-name = боевые ботинки
+ent-ClothingShoesBootsCombatFilled-desc = Прочные боевые ботинки для боевых сценариев или боевых ситуаций. Все боевые действия, все время.
 
-ent-ClothingShoesBootsJackFilled-name = jackboots
-ent-ClothingShoesBootsJackFilled-desc = Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time.
+ent-ClothingShoesBootsJackFilled-name = сапоги
+ent-ClothingShoesBootsJackFilled-desc = Боевые ботинки безопасности нанотрасена для боевых сценариев или боевых ситуаций. Все боевые действия, все время.
 
-ent-ClothingShoesBootsWinterSecFilled-name = security winter boots
-ent-ClothingShoesBootsWinterSecFilled-desc = Fluffy boots to help survive even the coldest of winters.
+ent-ClothingShoesBootsWinterSecFilled-name = защитные зимние ботинки
+ent-ClothingShoesBootsWinterSecFilled-desc = Пушистые сапожки помогут пережить даже самую холодную зиму.
 
-ent-ClothingShoesBootsCowboyBlackFilled-name = black cowboy boots
-ent-ClothingShoesBootsCowboyBlackFilled-desc = They got spurs that jingle and/or jangle.
+ent-ClothingShoesBootsCowboyBlackFilled-name = черные ковбойские сапоги
+ent-ClothingShoesBootsCowboyBlackFilled-desc = У них есть шпоры, которые звенят и/или звенят.
 
-ent-ClothingShoesBootsCowboyBrownFilled-name = brown cowboy boots
-ent-ClothingShoesBootsCowboyBrownFilled-desc = They got spurs that jingle and/or jangle.
+ent-ClothingShoesBootsCowboyBrownFilled-name = коричневые ковбойские сапоги
+ent-ClothingShoesBootsCowboyBrownFilled-desc = У них есть шпоры, которые звенят и/или звенят.
 
-ent-ClothingShoesBootsCowboyWhiteFilled-name = white cowboy boots
-ent-ClothingShoesBootsCowboyWhiteFilled-desc = They got spurs that jingle and/or jangle.
+ent-ClothingShoesBootsCowboyWhiteFilled-name = белые ковбойские сапоги
+ent-ClothingShoesBootsCowboyWhiteFilled-desc = У них есть шпоры, которые звенят и/или звенят.
 
-ent-ClothingShoesBootsCowboyFancyFilled-name = fancy cowboy boots
-ent-ClothingShoesBootsCowboyFancyFilled-desc = They got spurs that jingle and/or jangle.
+ent-ClothingShoesBootsCowboyFancyFilled-name = модные ковбойские сапоги
+ent-ClothingShoesBootsCowboyFancyFilled-desc = У них есть шпоры, которые звенят и/или звенят.
 
-ent-ClothingShoesHighheelBootsFilled-name = high-heeled boots
-ent-ClothingShoesHighheelBootsFilled-desc = Snazy boots for when you want to be stylish, yet prepared.
+ent-ClothingShoesHighheelBootsFilled-name = сапоги на высоком каблуке
+ent-ClothingShoesHighheelBootsFilled-desc = Эффектные ботинки для тех, кто хочет выглядеть стильно и в то же время подготовленно.
 
-ent-ClothingShoesBootsMercFilled-name = mercenary boots
-ent-ClothingShoesBootsMercFilled-desc = Boots that have gone through many conflicts and that have proven their combat reliability.
+ent-ClothingShoesBootsMercFilled-name = наемные сапоги
+ent-ClothingShoesBootsMercFilled-desc = Ботинки, прошедшие множество конфликтов и доказавшие свою боевую надежность.
 
-ent-ClothingShoesBootsSyndieFilled-name = combat boots
-ent-ClothingShoesBootsSyndieFilled-desc = Robust combat boots for combat scenarios or combat situations. All combat, all the time.
+ent-ClothingShoesBootsSyndieFilled-name = боевые ботинки
+ent-ClothingShoesBootsSyndieFilled-desc = Прочные боевые ботинки для боевых сценариев или боевых ситуаций. Все боевые действия, все время.
 

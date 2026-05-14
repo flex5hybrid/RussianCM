@@ -1,2 +1,2 @@
-ent-OrganAnimalRuminantStomach-name = ruminant stomach
+ent-OrganAnimalRuminantStomach-name = желудок жвачных животных
 

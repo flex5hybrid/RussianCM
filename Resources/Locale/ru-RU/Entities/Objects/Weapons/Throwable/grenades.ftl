@@ -1,53 +1,53 @@
-ent-ExGrenade-name = explosive grenade
-ent-ExGrenade-desc = Grenade that creates a small but devastating explosion.
+ent-ExGrenade-name = взрывная граната
+ent-ExGrenade-desc = Граната, создающая небольшой, но разрушительный взрыв.
 
-ent-GrenadeFlashBang-name = flashbang
-ent-GrenadeFlashBang-desc = Eeeeeeeeeeeeeeeeeeeeee.
+ent-GrenadeFlashBang-name = светошумовая граната
+ent-GrenadeFlashBang-desc = Ээээээээээээээ.
 
-ent-SyndieMiniBomb-name = syndicate minibomb
-ent-SyndieMiniBomb-desc = A syndicate-manufactured explosive used to stow destruction and cause chaos.
+ent-SyndieMiniBomb-name = мини-бомба синдиката
+ent-SyndieMiniBomb-desc = Взрывчатка, изготовленная синдикатом и используемая для сдерживания разрушений и создания хаоса.
 
-ent-SelfDestructSeq-name = self destruct
-ent-SelfDestructSeq-desc = Go out on your own terms!
+ent-SelfDestructSeq-name = самоуничтожение
+ent-SelfDestructSeq-desc = Уходите на своих условиях!
 
-ent-SingularityGrenade-name = singularity grenade
-ent-SingularityGrenade-desc = Grenade that simulates the power of a singularity, pulling things in a heap.
+ent-SingularityGrenade-name = сингулярная граната
+ent-SingularityGrenade-desc = Граната, имитирующая силу сингулярности, стягивающая вещи в кучу.
 
-ent-WhiteholeGrenade-name = whitehole grenade
-ent-WhiteholeGrenade-desc = Grenade that repulses everything around for some time.
+ent-WhiteholeGrenade-name = граната с белой дырой
+ent-WhiteholeGrenade-desc = Граната, которая на некоторое время отталкивает все вокруг.
 
-ent-NuclearGrenade-name = the nuclear option
-ent-NuclearGrenade-desc = Please don't throw it, think of the children.
+ent-NuclearGrenade-name = ядерный вариант
+ent-NuclearGrenade-desc = Пожалуйста, не бросайте его, подумайте о детях.
 
-ent-ModularGrenade-name = modular grenade
-ent-ModularGrenade-desc = A grenade casing. Requires a trigger and a payload.
+ent-ModularGrenade-name = модульная граната
+ent-ModularGrenade-desc = Корпус гранаты. Требуется триггер и полезная нагрузка.
 
-ent-EmpGrenade-name = EMP grenade
-ent-EmpGrenade-desc = A grenade designed to wreak havoc on electronic systems.
+ent-EmpGrenade-name = ЭМИ-граната
+ent-EmpGrenade-desc = Граната, предназначенная для разрушения электронных систем.
 
-ent-HolyHandGrenade-name = holy hand grenade
-ent-HolyHandGrenade-desc = O Lord, bless this thy hand grenade, that with it thou mayst blow thine enemies to tiny bits, in thy mercy.
+ent-HolyHandGrenade-name = святая ручная граната
+ent-HolyHandGrenade-desc = О Господь, благослови эту Твою ручную гранату, чтобы с ее помощью Ты мог разнести своих врагов на мелкие кусочки по Твоей милости.
 
-ent-SmokeGrenade-name = smoke grenade
-ent-SmokeGrenade-desc = A tactical grenade that releases a large, long-lasting cloud of smoke when used.
+ent-SmokeGrenade-name = дымовая граната
+ent-SmokeGrenade-desc = Тактическая граната, при использовании выпускающая большое и продолжительное облако дыма.
 
-ent-CleanerGrenade-name = cleanade
-ent-CleanerGrenade-desc = Special grenade for janitors, releasing large cloud of space cleaner foam.
+ent-CleanerGrenade-name = очистка
+ent-CleanerGrenade-desc = Специальная граната для дворников, выпускающая большое облако пены для очистки помещений.
 
-ent-TearGasGrenade-name = tear gas grenade
-ent-TearGasGrenade-desc = A riot control tear gas grenade. Causes irritation, pain and makes you cry your eyes out.
+ent-TearGasGrenade-name = граната со слезоточивым газом
+ent-TearGasGrenade-desc = Граната со слезоточивым газом для борьбы с массовыми беспорядками. Вызывает раздражение, боль и заставляет плакать до слез.
 
-ent-MetalFoamGrenade-name = metal foam grenade
-ent-MetalFoamGrenade-desc = An emergency tool used for patching hull breaches with special quick-set metal foam. Almost as good as real floors!
+ent-MetalFoamGrenade-name = металлическая пенная граната
+ent-MetalFoamGrenade-desc = Аварийный инструмент, используемый для заделки пробоин корпуса специальной быстросхватывающейся металлической пеной. Почти так же хороши, как настоящие полы!
 
-ent-AirGrenade-name = air grenade
-ent-AirGrenade-desc = A special solid state chemical grenade used for quickly releasing standard air into a spaced area. Fills up to 30 tiles!
+ent-AirGrenade-name = воздушная граната
+ent-AirGrenade-desc = Специальная твердотельная химическая граната, используемая для быстрого выпуска стандартного воздуха в определенную область. Заполняет до 30 плиток!
 
-ent-GrenadeDummy-name = trick grenade
-ent-GrenadeDummy-desc = All the grenade without any of the boom.
+ent-GrenadeDummy-name = трюковая граната
+ent-GrenadeDummy-desc = Вся граната без всякой стрелы.
 
-ent-SyndieTrickyBomb-name = syndicate trickybomb
-ent-SyndieTrickyBomb-desc = A syndicate-manufactured explosive used to make an excellent distraction.
+ent-SyndieTrickyBomb-name = синдикат хитрая бомба
+ent-SyndieTrickyBomb-desc = Взрывчатка, изготовленная синдикатом и используемая для отличного отвлечения внимания.
 
-ent-GrenadeBase-name = item
+ent-GrenadeBase-name = элемент
 

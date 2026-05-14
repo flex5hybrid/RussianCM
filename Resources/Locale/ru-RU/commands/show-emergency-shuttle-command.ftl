@@ -1,2 +1,2 @@
-cmd-showemergencyshuttle-desc = Shows the expected position of the emergency shuttle.
-cmd-showemergencyshuttle-status = Set emergency shuttle debug to { $status }.
+cmd-showemergencyshuttle-desc = Показывает ожидаемое положение аварийного шаттла.
+cmd-showemergencyshuttle-status = Установите отладку аварийного шаттла на { $status }.

@@ -1,2 +1,2 @@
-ent-AU14SpawnPointopforSquadRifleman-name = Spawn Point opfor Squad Rifleman
-ent-AU14SpawnPointopforSquadRifleman-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointopforSquadRifleman-name = Точка появления для отряда стрелков
+ent-AU14SpawnPointopforSquadRifleman-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

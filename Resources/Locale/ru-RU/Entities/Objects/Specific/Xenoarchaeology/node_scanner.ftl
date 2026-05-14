@@ -1,3 +1,3 @@
-ent-NodeScanner-name = node scanner
-ent-NodeScanner-desc = The archeologist's friend, able to identify the node of an artifact with only a single scan.
+ent-NodeScanner-name = сканер узла
+ent-NodeScanner-desc = Друг археолога, способный определить местонахождение артефакта с помощью всего лишь одного сканирования.
 

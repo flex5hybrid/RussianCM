@@ -1,3 +1,3 @@
-ent-MailingUnitElectronics-name = mailing unit electronics
-ent-MailingUnitElectronics-desc = An electronics board used in mailing units.
+ent-MailingUnitElectronics-name = электроника почтового отделения
+ent-MailingUnitElectronics-desc = Электронная плата, используемая в почтовых отправлениях.
 

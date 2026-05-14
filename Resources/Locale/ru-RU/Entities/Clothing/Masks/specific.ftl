@@ -1,9 +1,9 @@
-ent-ClothingMaskGasChameleon-name = gas mask
-ent-ClothingMaskGasChameleon-desc = A face-covering mask that can be connected to an air supply.
+ent-ClothingMaskGasChameleon-name = противогаз
+ent-ClothingMaskGasChameleon-desc = Маска, закрывающая лицо, которую можно подключить к источнику воздуха.
 
-ent-ClothingMaskGoldenCursed-name = golden mask
-ent-ClothingMaskGoldenCursed-desc = Previously used in strange pantomimes, after one of the actors went mad on stage these masks have avoided use. You swear its face contorts when you're not looking.
+ent-ClothingMaskGoldenCursed-name = золотая маска
+ent-ClothingMaskGoldenCursed-desc = Раньше эти маски использовались в странных пантомимах, после того как один из актеров сошел с ума на сцене. Клянусь, его лицо искажается, когда ты не смотришь.
 
-ent-ClothingMaskGasVoiceChameleon-name = gas mask
-ent-ClothingMaskGasVoiceChameleon-desc = A face-covering mask that can be connected to an air supply.
+ent-ClothingMaskGasVoiceChameleon-name = противогаз
+ent-ClothingMaskGasVoiceChameleon-desc = Маска, закрывающая лицо, которую можно подключить к источнику воздуха.
 

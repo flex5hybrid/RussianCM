@@ -1,3 +1,3 @@
-ent-ActionChargeSpell-name = Charge
-ent-ActionChargeSpell-desc = Adds a charge back to your wand
+ent-ActionChargeSpell-name = Зарядка
+ent-ActionChargeSpell-desc = Возвращает заряд вашей палочке
 

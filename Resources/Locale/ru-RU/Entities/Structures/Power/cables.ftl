@@ -1,16 +1,16 @@
-ent-CableHV-name = HV power cable
-ent-CableHV-desc = An orange high voltage power cable.
+ent-CableHV-name = Силовой кабель высокого напряжения
+ent-CableHV-desc = Оранжевый силовой кабель высокого напряжения.
 
-ent-CableMV-name = MV power cable
-ent-CableMV-desc = A medium voltage power cable.
+ent-CableMV-name = Силовой кабель среднего напряжения
+ent-CableMV-desc = Силовой кабель среднего напряжения.
 
-ent-CableApcExtension-name = LV power cable
-ent-CableApcExtension-desc = A cable used to connect machines to an APC.
+ent-CableApcExtension-name = Силовой кабель низкого напряжения
+ent-CableApcExtension-desc = Кабель, используемый для подключения машин к APC.
 
 ent-CableHVUncuttable-name = stack-hv-cable
 
 ent-CableMVUncuttable-name = stack-mv-cable
 
-ent-CableApcExtensionUncuttable-name = LV power cable
-ent-CableApcExtensionUncuttable-desc = A cable used to connect machines to an APC.
+ent-CableApcExtensionUncuttable-name = Силовой кабель низкого напряжения
+ent-CableApcExtensionUncuttable-desc = Кабель, используемый для подключения машин к APC.
 

@@ -1,6 +1,6 @@
-ent-RGBStaff-name = RGB staff
-ent-RGBStaff-desc = Helps fix the underabundance of RGB gear on the station.
+ent-RGBStaff-name = сотрудники RGB
+ent-RGBStaff-desc = Помогает исправить недостаток RGB-аппаратуры на станции.
 
-ent-AnimationStaff-name = staff of animation
-ent-AnimationStaff-desc = Brings inanimate objects to life!
+ent-AnimationStaff-name = персонал анимации
+ent-AnimationStaff-desc = Оживляет неодушевленные предметы!
 

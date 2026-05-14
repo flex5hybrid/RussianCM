@@ -1,263 +1,263 @@
-ent-ClothingHeadHatBeaverHat-name = beaver hat
-ent-ClothingHeadHatBeaverHat-desc = "Gentlemen?"
+ent-ClothingHeadHatBeaverHat-name = бобровая шапка
+ent-ClothingHeadHatBeaverHat-desc = «Джентльмены?»
 
-ent-ClothingHeadHatBeret-name = beret
-ent-ClothingHeadHatBeret-desc = An artist's favorite headwear.
+ent-ClothingHeadHatBeret-name = берет
+ent-ClothingHeadHatBeret-desc = Любимый головной убор художника.
 
-ent-ClothingHeadHatBeretFrench-name = french beret
-ent-ClothingHeadHatBeretFrench-desc = A French beret. "Vive la France!"
+ent-ClothingHeadHatBeretFrench-name = французский берет
+ent-ClothingHeadHatBeretFrench-desc = Французский берет. «Да здравствует Франция!»
 
-ent-ClothingHeadHatBeretSecurity-name = security beret
-ent-ClothingHeadHatBeretSecurity-desc = A beret with the security department's insignia. For officers that are more inclined towards style than safety.
+ent-ClothingHeadHatBeretSecurity-name = охранный берет
+ent-ClothingHeadHatBeretSecurity-desc = Берет со знаком охраны. Для офицеров, которые больше ценят стиль, чем безопасность.
 
-ent-ClothingHeadHatSecurityTrooper-name = trooper hat
-ent-ClothingHeadHatSecurityTrooper-desc = A campaign hat for the Nanotrasen Troopers. It's supposed to come with a case, too...
+ent-ClothingHeadHatSecurityTrooper-name = солдатская шляпа
+ent-ClothingHeadHatSecurityTrooper-desc = Кепка кампании солдат-нанотрасенов. В комплекте тоже должен быть футляр...
 
-ent-ClothingHeadHatCasa-name = casa
-ent-ClothingHeadHatCasa-desc = Cone-shaped hat.
+ent-ClothingHeadHatCasa-name = дом
+ent-ClothingHeadHatCasa-desc = Конусообразная шляпа.
 
-ent-ClothingHeadHatBeretRND-name = scientific beret
-ent-ClothingHeadHatBeretRND-desc = A beret for real scientists.
+ent-ClothingHeadHatBeretRND-name = научный берет
+ent-ClothingHeadHatBeretRND-desc = Берет для настоящих ученых.
 
-ent-ClothingHeadHatBeretEngineering-name = engineering beret
-ent-ClothingHeadHatBeretEngineering-desc = A beret with the engineering department's insignia. For engineers that are more inclined towards style than safety.
+ent-ClothingHeadHatBeretEngineering-name = инженерный берет
+ent-ClothingHeadHatBeretEngineering-desc = Берет со знаком инженерного ведомства. Для инженеров, которые больше ценят стиль, чем безопасность.
 
-ent-ClothingHeadHatBeretQM-name = quartermaster's beret
-ent-ClothingHeadHatBeretQM-desc = A beret with the cargo department's insignia.
+ent-ClothingHeadHatBeretQM-name = интендантский берет
+ent-ClothingHeadHatBeretQM-desc = Берет со знаком грузового отдела.
 
-ent-ClothingHeadHatBeretHoS-name = head of security's beret
-ent-ClothingHeadHatBeretHoS-desc = A black beret with a commander's rank emblem. For officers that are more inclined towards style than safety.
+ent-ClothingHeadHatBeretHoS-name = берет начальника службы безопасности
+ent-ClothingHeadHatBeretHoS-desc = Черный берет с эмблемой командирского звания. Для офицеров, которые больше ценят стиль, чем безопасность.
 
-ent-ClothingHeadHatBeretWarden-name = warden's beret
-ent-ClothingHeadHatBeretWarden-desc = A corporate-blue beret with a warden's rank emblem. For officers that are more inclined towards style than safety.
+ent-ClothingHeadHatBeretWarden-name = берет начальника
+ent-ClothingHeadHatBeretWarden-desc = Берет фирменного синего цвета с эмблемой начальника звания. Для офицеров, которые больше ценят стиль, чем безопасность.
 
-ent-ClothingHeadHatBeretSeniorPhysician-name = physician beret
-ent-ClothingHeadHatBeretSeniorPhysician-desc = Donning the colours of medical and chemistry, physicians are the pride of this department!
+ent-ClothingHeadHatBeretSeniorPhysician-name = врач берет
+ent-ClothingHeadHatBeretSeniorPhysician-desc = Одев цвета медицины и химии, врачи – гордость отделения!
 
-ent-ClothingHeadHatBeretBrigmedic-name = brigmedical beret
-ent-ClothingHeadHatBeretBrigmedic-desc = A white beret for brigmedics.
+ent-ClothingHeadHatBeretBrigmedic-name = бригмедицинский берет
+ent-ClothingHeadHatBeretBrigmedic-desc = Белый берет для бригадных медиков.
 
-ent-ClothingHeadHatBeretMerc-name = mercenary beret
-ent-ClothingHeadHatBeretMerc-desc = An olive beret with a badge depicting a jackal on a rock.
+ent-ClothingHeadHatBeretMerc-name = наемник берет
+ent-ClothingHeadHatBeretMerc-desc = Берет оливкового цвета со значком, изображающим шакала на скале.
 
-ent-ClothingHeadHatBeretCommand-name = command beret
-ent-ClothingHeadHatBeretCommand-desc = A beret with the Nanotrasen logo. It has an aura of authority.
+ent-ClothingHeadHatBeretCommand-name = командный берет
+ent-ClothingHeadHatBeretCommand-desc = Берет с логотипом Nanotrasen. У него есть аура власти.
 
-ent-ClothingHeadHatBowlerHat-name = bowler hat
-ent-ClothingHeadHatBowlerHat-desc = A stylish bowler hat.
+ent-ClothingHeadHatBowlerHat-name = котелок
+ent-ClothingHeadHatBowlerHat-desc = Стильный котелок.
 
-ent-ClothingHeadHatCaptain-name = captain's hardhat
-ent-ClothingHeadHatCaptain-desc = Feels good being the king.
+ent-ClothingHeadHatCaptain-name = капитанская каска
+ent-ClothingHeadHatCaptain-desc = Приятно быть королём.
 
-ent-ClothingHeadHatCardborg-name = cardborg helmet
-ent-ClothingHeadHatCardborg-desc = A hat made out of a box.
+ent-ClothingHeadHatCardborg-name = Кардборг шлем
+ent-ClothingHeadHatCardborg-desc = Шапка сделанная из коробки.
 
-ent-ClothingHeadHatCentcom-name = CentComm brand hat
-ent-ClothingHeadHatCentcom-desc = Feels good being the king's boss.
+ent-ClothingHeadHatCentcom-name = Фирменная шляпа CentComm
+ent-ClothingHeadHatCentcom-desc = Приятно быть боссом короля.
 
-ent-ClothingHeadHatChef-name = chef's hat
-ent-ClothingHeadHatChef-desc = A hat used by chefs to keep their hair out of your food. Judging by the food in the mess, they don't work.
+ent-ClothingHeadHatChef-name = поварской колпак
+ent-ClothingHeadHatChef-desc = Шляпа, которую повара используют, чтобы не допустить попадания волос на еду. Судя по еде в столовой, они не работают.
 
-ent-ClothingHeadHatFedoraBrown-name = brown fedora
-ent-ClothingHeadHatFedoraBrown-desc = A brown fedora.
+ent-ClothingHeadHatFedoraBrown-name = коричневая шляпа-федора
+ent-ClothingHeadHatFedoraBrown-desc = Коричневая федора.
 
-ent-ClothingHeadHatFedoraGrey-name = grey fedora
-ent-ClothingHeadHatFedoraGrey-desc = A grey fedora.
+ent-ClothingHeadHatFedoraGrey-name = серая шляпа-федора
+ent-ClothingHeadHatFedoraGrey-desc = Серая федора.
 
-ent-ClothingHeadHatFez-name = fez
-ent-ClothingHeadHatFez-desc = A red fez.
+ent-ClothingHeadHatFez-name = феска
+ent-ClothingHeadHatFez-desc = Красная феска.
 
-ent-ClothingHeadHatHopcap-name = head of personnel's cap
-ent-ClothingHeadHatHopcap-desc = A stylish cap worn by the Head of Personnel. Shows paperwork who's in charge.
+ent-ClothingHeadHatHopcap-name = фуражка начальника отдела кадров
+ent-ClothingHeadHatHopcap-desc = Стильная кепка начальника отдела кадров. Показывает документы, кто главный.
 
-ent-ClothingHeadHatHoshat-name = head of security cap
-ent-ClothingHeadHatHoshat-desc = A stylish cap worn by the Head of Security. Shows the officers who's in charge.
+ent-ClothingHeadHatHoshat-name = руководитель службы безопасности
+ent-ClothingHeadHatHoshat-desc = Стильная кепка начальника службы безопасности. Показывает офицерам, кто главный.
 
-ent-ClothingHeadHatOutlawHat-name = outlaw's hat
-ent-ClothingHeadHatOutlawHat-desc = A hat that makes you look like you carry a notched pistol, numbered one and nineteen more.
+ent-ClothingHeadHatOutlawHat-name = шляпа преступника
+ent-ClothingHeadHatOutlawHat-desc = Шляпа, в которой вы будете выглядеть так, словно носите с собой пистолет с насечками, номер один и еще девятнадцать.
 
-ent-ClothingHeadHatWitch1-name = witch hat
-ent-ClothingHeadHatWitch1-desc = A witch hat.
+ent-ClothingHeadHatWitch1-name = шляпа ведьмы
+ent-ClothingHeadHatWitch1-desc = Шляпа ведьмы.
 
-ent-ClothingHeadHatPaper-name = paper hat
-ent-ClothingHeadHatPaper-desc = A hat made of paper.
+ent-ClothingHeadHatPaper-name = бумажная шляпа
+ent-ClothingHeadHatPaper-desc = Шляпа из бумаги.
 
-ent-ClothingHeadHatPirate-name = pirate hat
-ent-ClothingHeadHatPirate-desc = "Yo ho ho and a bottle of rum!"
+ent-ClothingHeadHatPirate-name = пиратская шляпа
+ent-ClothingHeadHatPirate-desc = «Йо-хо-хо и бутылка рома!»
 
-ent-ClothingHeadHatPlaguedoctor-name = plague doctor hat
-ent-ClothingHeadHatPlaguedoctor-desc = These were once used by plague doctors.
+ent-ClothingHeadHatPlaguedoctor-name = шляпа чумного доктора
+ent-ClothingHeadHatPlaguedoctor-desc = Когда-то их использовали чумные врачи.
 
-ent-ClothingHeadHatRedwizard-name = red wizard hat
-ent-ClothingHeadHatRedwizard-desc = A strange-looking red hat that most certainly belongs to a powerful magic-user.
+ent-ClothingHeadHatRedwizard-name = красная шляпа волшебника
+ent-ClothingHeadHatRedwizard-desc = Странно выглядящая красная шляпа, наверняка принадлежащая могущественному магу.
 
-ent-ClothingHeadHatSantahat-name = santa hat
-ent-ClothingHeadHatSantahat-desc = A festive hat worn by Santa Claus. Now with a foldable beard.
+ent-ClothingHeadHatSantahat-name = шляпа санты
+ent-ClothingHeadHatSantahat-desc = Праздничный колпак Деда Мороза. Теперь со складной бородой.
 
-ent-ClothingHeadHatSombrero-name = sombrero
-ent-ClothingHeadHatSombrero-desc = "Perfect for Space Mexico, si?"
+ent-ClothingHeadHatSombrero-name = сомбреро
+ent-ClothingHeadHatSombrero-desc = «Идеально для Космической Мексики, да?»
 
-ent-ClothingHeadHatSurgcapBlue-name = surgical cap
-ent-ClothingHeadHatSurgcapBlue-desc = A blue cap surgeons wear during operations. Keeps their hair from tickling your internal organs.
+ent-ClothingHeadHatSurgcapBlue-name = хирургический колпачок
+ent-ClothingHeadHatSurgcapBlue-desc = Хирурги носят синюю кепку во время операций. Не дает их волосам щекотать внутренние органы.
 
-ent-ClothingHeadHatSurgcapGreen-name = surgical cap
-ent-ClothingHeadHatSurgcapGreen-desc = A green cap surgeons wear during operations. Keeps their hair from tickling your internal organs.
+ent-ClothingHeadHatSurgcapGreen-name = хирургический колпачок
+ent-ClothingHeadHatSurgcapGreen-desc = Хирурги носят зеленую шапочку во время операций. Не дает их волосам щекотать внутренние органы.
 
-ent-ClothingHeadHatSurgcapPurple-name = surgical cap
-ent-ClothingHeadHatSurgcapPurple-desc = A purple cap surgeons wear during operations. Keeps their hair from tickling your internal organs.
+ent-ClothingHeadHatSurgcapPurple-name = хирургический колпачок
+ent-ClothingHeadHatSurgcapPurple-desc = Хирурги носят фиолетовую кепку во время операций. Не дает их волосам щекотать внутренние органы.
 
-ent-ClothingHeadHatTophat-name = tophat
-ent-ClothingHeadHatTophat-desc = A stylish black tophat.
+ent-ClothingHeadHatTophat-name = цилиндр
+ent-ClothingHeadHatTophat-desc = Стильный черный цилиндр.
 
-ent-ClothingHeadHatUshanka-name = ushanka
-ent-ClothingHeadHatUshanka-desc = "Perfect for winter in Siberia, da?"
+ent-ClothingHeadHatUshanka-name = ушанка
+ent-ClothingHeadHatUshanka-desc = «Идеально подходит для зимы в Сибири, да?»
 
-ent-ClothingHeadHatCanadaBeanie-name = beanie
-ent-ClothingHeadHatCanadaBeanie-desc = Red, white and snug. It radiates a homely feeling, if your home happens to be chilly and filled with coffeehouses.
+ent-ClothingHeadHatCanadaBeanie-name = шапочка
+ent-ClothingHeadHatCanadaBeanie-desc = Красный, белый и уютный. Он излучает ощущение домашнего уюта, если в вашем доме прохладно и полно кофеен.
 
-ent-ClothingHeadHatVioletwizard-name = violet wizard hat
-ent-ClothingHeadHatVioletwizard-desc = A strange-looking violet hat that most certainly belongs to a powerful magic-user.
+ent-ClothingHeadHatVioletwizard-name = фиолетовая шляпа волшебника
+ent-ClothingHeadHatVioletwizard-desc = Странно выглядящая фиолетовая шляпа, наверняка принадлежащая могущественному магу.
 
-ent-ClothingHeadHatWarden-name = warden's cap
-ent-ClothingHeadHatWarden-desc = This hat emphasizes that you are THE LAW.
+ent-ClothingHeadHatWarden-name = фуражка надзирателя
+ent-ClothingHeadHatWarden-desc = Эта шляпа подчеркивает, что вы – ЗАКОН.
 
-ent-ClothingHeadHatWitch-name = witch hat
-ent-ClothingHeadHatWitch-desc = A witch hat.
+ent-ClothingHeadHatWitch-name = шляпа ведьмы
+ent-ClothingHeadHatWitch-desc = Шляпа ведьмы.
 
-ent-ClothingHeadHatWizardFake-name = fake wizard hat
-ent-ClothingHeadHatWizardFake-desc = It has "WIZZARD" written across it in garish sequins. Comes with a cool beard.
+ent-ClothingHeadHatWizardFake-name = поддельная шляпа волшебника
+ent-ClothingHeadHatWizardFake-desc = На нем яркими блестками написано «ВОЛШЕБНИК». В комплекте крутая борода.
 
-ent-ClothingHeadHatWizard-name = wizard hat
-ent-ClothingHeadHatWizard-desc = A strange-looking blue hat that most certainly belongs to a powerful magic-user.
+ent-ClothingHeadHatWizard-name = шляпа волшебника
+ent-ClothingHeadHatWizard-desc = Странно выглядящая синяя шляпа, наверняка принадлежащая могущественному магу.
 
-ent-ClothingHeadHatXmasCrown-name = xmas crown
-ent-ClothingHeadHatXmasCrown-desc = "Happy Christmas!"
+ent-ClothingHeadHatXmasCrown-name = рождественская корона
+ent-ClothingHeadHatXmasCrown-desc = «Счастливого Рождества!»
 
-ent-ClothingHeadHatTrucker-name = trucker hat
-ent-ClothingHeadHatTrucker-desc = Formerly Chuck's, this hat is yours now.
+ent-ClothingHeadHatTrucker-name = шляпа дальнобойщика
+ent-ClothingHeadHatTrucker-desc = Раньше эта шляпа принадлежала Чаку, теперь она твоя.
 
-ent-ClothingHeadPyjamaSyndicateBlack-name = syndicate black pyjama hat
-ent-ClothingHeadPyjamaSyndicateBlack-desc = For keeping that traitor head of yours warm.
+ent-ClothingHeadPyjamaSyndicateBlack-name = черная пижамная шляпа Syndicate
+ent-ClothingHeadPyjamaSyndicateBlack-desc = За то, что согрел твою предательскую голову.
 
-ent-ClothingHeadPyjamaSyndicatePink-name = syndicate pink pyjama hat
-ent-ClothingHeadPyjamaSyndicatePink-desc = For keeping that traitor head of yours warm.
+ent-ClothingHeadPyjamaSyndicatePink-name = розовая пижамная шляпа Syndicate
+ent-ClothingHeadPyjamaSyndicatePink-desc = За то, что согрел твою предательскую голову.
 
-ent-ClothingHeadPyjamaSyndicateRed-name = syndicate red pyjama hat
-ent-ClothingHeadPyjamaSyndicateRed-desc = For keeping that traitor head of yours warm.
+ent-ClothingHeadPyjamaSyndicateRed-name = красная пижамная шляпа синдиката
+ent-ClothingHeadPyjamaSyndicateRed-desc = За то, что согрел твою предательскую голову.
 
-ent-ClothingHeadPaperSack-name = papersack hat
-ent-ClothingHeadPaperSack-desc = A paper sack with crude holes cut out for eyes. Useful for hiding one's identity and/or ugliness.
+ent-ClothingHeadPaperSack-name = шляпа из бумажного мешка
+ent-ClothingHeadPaperSack-desc = Бумажный пакет с грубыми дырочками для глаз. Полезно для сокрытия своей личности и/или уродства.
 
-ent-ClothingHeadPaperSackSmile-name = smiling papersack hat
-ent-ClothingHeadPaperSackSmile-desc = A paper sack with crude holes cut out for eyes and a sketchy smile drawn on the front. Not creepy at all.
+ent-ClothingHeadPaperSackSmile-name = улыбающаяся шляпа из бумажного мешка
+ent-ClothingHeadPaperSackSmile-desc = Бумажный пакет с грубыми отверстиями для глаз и схематичной улыбкой, нарисованной спереди. Совсем не жутко.
 
-ent-ClothingHeadFishCap-name = fishing cap
-ent-ClothingHeadFishCap-desc = "Women fear me. Fish fear me. Men turn their eyes away from me. As I walk no beast dares make a sound in my presence. I am alone on this barren Earth."
+ent-ClothingHeadFishCap-name = рыбацкая шапка
+ent-ClothingHeadFishCap-desc = «Женщины боятся меня. Рыбы боятся меня. Мужчины отворачиваются от меня. Пока я иду, ни один зверь не смеет издать ни звука в моем присутствии. Я один на этой бесплодной Земле».
 
-ent-ClothingHeadWehcellentCap-name = wehcellent cap
-ent-ClothingHeadWehcellentCap-desc = "It was a net hat! Tiders wear them all the time! It's got airholes in the back to keep a cross-breeze going and everything!"
+ent-ClothingHeadWehcellentCap-name = отличная кепка
+ent-ClothingHeadWehcellentCap-desc = «Это была сетчатая шляпа! Тайдеры носят ее постоянно! У нее сзади есть отверстия для воздуха, чтобы поддерживать встречный ветерок и все такое!»
 
-ent-ClothingHeadNurseHat-name = nurse hat
-ent-ClothingHeadNurseHat-desc = Somehow I feel I'm not supposed to leave this place.
+ent-ClothingHeadNurseHat-name = шляпа медсестры
+ent-ClothingHeadNurseHat-desc = Почему-то я чувствую, что не должен покидать это место.
 
-ent-ClothingHeadRastaHat-name = rasta hat
-ent-ClothingHeadRastaHat-desc = Right near da beach, boyee.
+ent-ClothingHeadRastaHat-name = раста шляпа
+ent-ClothingHeadRastaHat-desc = Прямо возле пляжа, чувак.
 
-ent-ClothingHeadSafari-name = safari hat
-ent-ClothingHeadSafari-desc = Keeps the sun out of your eyes. Makes you a target for the locals.
+ent-ClothingHeadSafari-name = сафари шляпа
+ent-ClothingHeadSafari-desc = Защищает глаза от солнца. Делает вас мишенью для местных жителей.
 
-ent-ClothingHeadHatJester-name = jester hat
-ent-ClothingHeadHatJester-desc = A hat with bells, to add some merriness to your head.
+ent-ClothingHeadHatJester-name = шутовская шляпа
+ent-ClothingHeadHatJester-desc = Шапка с колокольчиками, чтобы добавить веселья в голову.
 
-ent-ClothingHeadHatBeretCmo-name = chief medical officer's beret
-ent-ClothingHeadHatBeretCmo-desc = A turquoise beret with a cross on the front. The sight of it calms you down and makes it clear that you will be cured.
+ent-ClothingHeadHatBeretCmo-name = берет главного врача
+ent-ClothingHeadHatBeretCmo-desc = Бирюзовый берет с крестом спереди. Его вид успокаивает и дает понять, что вы вылечитесь.
 
-ent-ClothingHeadHatPirateTricord-name = pirate hat
-ent-ClothingHeadHatPirateTricord-desc = "Yo ho ho and a bottle of rum!"
+ent-ClothingHeadHatPirateTricord-name = пиратская шляпа
+ent-ClothingHeadHatPirateTricord-desc = «Йо-хо-хо и бутылка рома!»
 
-ent-ClothingHeadHatWatermelon-name = watermelon helmet
-ent-ClothingHeadHatWatermelon-desc = A carelessly cut half of a watermelon, gutted from the inside, to be worn as a helmet. It can soften the blow to the head.
+ent-ClothingHeadHatWatermelon-name = арбузный шлем
+ent-ClothingHeadHatWatermelon-desc = Небрежно разрезанная половинка арбуза, выпотрошенная изнутри, для ношения в качестве шлема. Это может смягчить удар по голове.
 
-ent-ClothingHeadHatHolyWatermelon-name = watermelon halo
-ent-ClothingHeadHatHolyWatermelon-desc = Holy moly.
+ent-ClothingHeadHatHolyWatermelon-name = арбузный ореол
+ent-ClothingHeadHatHolyWatermelon-desc = Святая моли.
 
-ent-ClothingHeadHatSyndie-name = syndicate hat
-ent-ClothingHeadHatSyndie-desc = A souvenir hat from "Syndieland", their production has already been closed.
+ent-ClothingHeadHatSyndie-name = шляпа синдиката
+ent-ClothingHeadHatSyndie-desc = Сувенирная шапка от "Синдиленда", их производство уже закрыто.
 
-ent-ClothingHeadHatSyndieMAA-name = master at arms hat
-ent-ClothingHeadHatSyndieMAA-desc = Master at arms hat, looks intimidating, I doubt that you will like to communicate with its owner...
+ent-ClothingHeadHatSyndieMAA-name = мастер по оружию шляпа
+ent-ClothingHeadHatSyndieMAA-desc = Шляпа мастера по оружию, выглядит устрашающе, сомневаюсь, что вам понравится общаться с ее обладателем...
 
-ent-ClothingHeadHatTacticalMaidHeadband-name = tactical maid headband
-ent-ClothingHeadHatTacticalMaidHeadband-desc = A red headband - don't imagine yourself a Rambo and don't pick up a few machine guns.
+ent-ClothingHeadHatTacticalMaidHeadband-name = тактическая повязка на голову для горничной
+ent-ClothingHeadHatTacticalMaidHeadband-desc = Красная повязка – не воображай себя Рэмбо и не бери в руки несколько автоматов.
 
-ent-ClothingHeadHatHetmanHat-name = hetman hat
-ent-ClothingHeadHatHetmanHat-desc = From the Zaporozhian Sich with love.
+ent-ClothingHeadHatHetmanHat-name = гетманская шапка
+ent-ClothingHeadHatHetmanHat-desc = Из Запорожской Сечи с любовью.
 
-ent-ClothingHeadHatMagician-name = magician's tophat
-ent-ClothingHeadHatMagician-desc = A magician's top hat.
+ent-ClothingHeadHatMagician-name = цилиндр фокусника
+ent-ClothingHeadHatMagician-desc = Цилиндр фокусника.
 
-ent-ClothingHeadHatCapcap-name = cap cap
-ent-ClothingHeadHatCapcap-desc = A grand, stylish cap worn by the Captain. Shows the station who's in charge.
+ent-ClothingHeadHatCapcap-name = кепка кепка
+ent-ClothingHeadHatCapcap-desc = Большая стильная кепка капитана. Показывает станцию, кто главный.
 
-ent-ClothingHeadHatCentcomcap-name = CentComm cap
-ent-ClothingHeadHatCentcomcap-desc = An extravagant, stylish cap worn by CentComm officials. Shows the Captain who's in charge.
+ent-ClothingHeadHatCentcomcap-name = Кепка CentComm
+ent-ClothingHeadHatCentcomcap-desc = Экстравагантная и стильная кепка, которую носят чиновники ЦентКомма. Показывает капитану, кто главный.
 
-ent-ClothingHeadHatGladiator-name = gladiator helmet
-ent-ClothingHeadHatGladiator-desc = Protects the head from harsh ash winds and toy spears.
+ent-ClothingHeadHatGladiator-name = гладиаторский шлем
+ent-ClothingHeadHatGladiator-desc = Защищает голову от суровых пепельных ветров и игрушечных копий.
 
-ent-ClothingHeadHatPartyRed-name = red party hat
-ent-ClothingHeadHatPartyRed-desc = Spread a joy!
+ent-ClothingHeadHatPartyRed-name = красная шляпа для вечеринки
+ent-ClothingHeadHatPartyRed-desc = Распространяйте радость!
 
-ent-ClothingHeadHatPartyYellow-name = yellow party hat
-ent-ClothingHeadHatPartyYellow-desc = Spread a joy!
+ent-ClothingHeadHatPartyYellow-name = желтая шляпа для вечеринки
+ent-ClothingHeadHatPartyYellow-desc = Распространяйте радость!
 
-ent-ClothingHeadHatPartyGreen-name = green party hat
-ent-ClothingHeadHatPartyGreen-desc = Spread a joy!
+ent-ClothingHeadHatPartyGreen-name = зеленая шляпа для вечеринки
+ent-ClothingHeadHatPartyGreen-desc = Распространяйте радость!
 
-ent-ClothingHeadHatPartyBlue-name = blue party hat
-ent-ClothingHeadHatPartyBlue-desc = Spread a joy!
+ent-ClothingHeadHatPartyBlue-name = синяя праздничная шляпа
+ent-ClothingHeadHatPartyBlue-desc = Распространяйте радость!
 
-ent-ClothingHeadHatPartyWaterCup-name = water cup party hat
-ent-ClothingHeadHatPartyWaterCup-desc = Not as fulfilling as you had hoped...
+ent-ClothingHeadHatPartyWaterCup-name = шляпа для вечеринки с чашкой воды
+ent-ClothingHeadHatPartyWaterCup-desc = Не так успешно, как вы надеялись...
 
-ent-ClothingHeadHatGreyFlatcap-name = grey flatcap
-ent-ClothingHeadHatGreyFlatcap-desc = Fashionable for both the working class and old man Jenkins.
+ent-ClothingHeadHatGreyFlatcap-name = серая кепка
+ent-ClothingHeadHatGreyFlatcap-desc = Модно как для рабочего класса, так и для старика Дженкинса.
 
-ent-ClothingHeadHatBrownFlatcap-name = brown flatcap
-ent-ClothingHeadHatBrownFlatcap-desc = "Stupid clown! You made me look bad!"
+ent-ClothingHeadHatBrownFlatcap-name = коричневая кепка
+ent-ClothingHeadHatBrownFlatcap-desc = «Глупый клоун! Ты выставил меня в плохом свете!»
 
-ent-ClothingHeadHatCowboyBrown-name = brown cowboy hat
-ent-ClothingHeadHatCowboyBrown-desc = "This hat ain't big enough for the two of us."
+ent-ClothingHeadHatCowboyBrown-name = коричневая ковбойская шляпа
+ent-ClothingHeadHatCowboyBrown-desc = «Эта шляпа недостаточно велика для нас двоих».
 
-ent-ClothingHeadHatCowboyBlack-name = black cowboy hat
-ent-ClothingHeadHatCowboyBlack-desc = "This hat ain't big enough for the two of us."
+ent-ClothingHeadHatCowboyBlack-name = черная ковбойская шляпа
+ent-ClothingHeadHatCowboyBlack-desc = «Эта шляпа недостаточно велика для нас двоих».
 
-ent-ClothingHeadHatCowboyGrey-name = grey cowboy hat
-ent-ClothingHeadHatCowboyGrey-desc = "This hat ain't big enough for the two of us."
+ent-ClothingHeadHatCowboyGrey-name = серая ковбойская шляпа
+ent-ClothingHeadHatCowboyGrey-desc = «Эта шляпа недостаточно велика для нас двоих».
 
-ent-ClothingHeadHatCowboyRed-name = red cowboy hat
-ent-ClothingHeadHatCowboyRed-desc = "This hat ain't big enough for the two of us."
+ent-ClothingHeadHatCowboyRed-name = красная ковбойская шляпа
+ent-ClothingHeadHatCowboyRed-desc = «Эта шляпа недостаточно велика для нас двоих».
 
-ent-ClothingHeadHatCowboyWhite-name = white cowboy hat
-ent-ClothingHeadHatCowboyWhite-desc = "This hat ain't big enough for the two of us."
+ent-ClothingHeadHatCowboyWhite-name = белая ковбойская шляпа
+ent-ClothingHeadHatCowboyWhite-desc = «Эта шляпа недостаточно велика для нас двоих».
 
-ent-ClothingHeadHatCowboyBountyHunter-name = bounty hunter cowboy hat
-ent-ClothingHeadHatCowboyBountyHunter-desc = "This hat ain't big enough for the two of us."
+ent-ClothingHeadHatCowboyBountyHunter-name = ковбойская шляпа охотника за головами
+ent-ClothingHeadHatCowboyBountyHunter-desc = «Эта шляпа недостаточно велика для нас двоих».
 
-ent-ClothingHeadHatStrawHat-name = straw hat
-ent-ClothingHeadHatStrawHat-desc = A fancy hat for hot days! Not recommended to wear near fires.
+ent-ClothingHeadHatStrawHat-name = соломенная шляпа
+ent-ClothingHeadHatStrawHat-desc = Шикарная шапка для жарких дней! Не рекомендуется носить вблизи огня.
 
-ent-ClothingHeadHatBeretMedic-name = medical beret
-ent-ClothingHeadHatBeretMedic-desc = A sterile white beret.
+ent-ClothingHeadHatBeretMedic-name = медицинский берет
+ent-ClothingHeadHatBeretMedic-desc = Стерильный белый берет.
 
-ent-ClothingHeadHatSolidHeadband-name = solid headband
-ent-ClothingHeadHatSolidHeadband-desc = "You'll feel like you're Invisible while wearing this! (DISCLAIMER: DOES NOT ACTUALLY MAKE THE WEARER INVISIBLE)"
+ent-ClothingHeadHatSolidHeadband-name = твердая повязка на голову
+ent-ClothingHeadHatSolidHeadband-desc = «Надев это, вы почувствуете себя невидимым! (ОТКАЗ ОТ ОТВЕТСТВЕННОСТИ: НА САМОМ ДЕЛЕ НЕ ДЕЛАЕТ НОСИТЕЛЯ НЕВИДИМЫМ)»
 
-ent-ClothingHeadPropellerHat-name = propeller hat
-ent-ClothingHeadPropellerHat-desc = You're the bestest boy.
+ent-ClothingHeadPropellerHat-name = шляпа пропеллера
+ent-ClothingHeadPropellerHat-desc = Ты самый лучший мальчик.
 
 ent-ClothingHeadHatWizardBase-name = lathe-category-clothing
 
-ent-ClothingHeadHatJesterAlt-name = jester hat
-ent-ClothingHeadHatJesterAlt-desc = A hat with bells, to add some merriness to your head.
+ent-ClothingHeadHatJesterAlt-name = шутовская шляпа
+ent-ClothingHeadHatJesterAlt-desc = Шапка с колокольчиками, чтобы добавить веселья в голову.
 

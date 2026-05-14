@@ -9,7 +9,7 @@ atmos-alerts-window-tab-fire-alarms = Пож. сигн.
 
 atmos-alerts-window-alarm-label = { CAPITALIZE($name) } ({ $address })
 atmos-alerts-window-temperature-label = Температура
-atmos-alerts-window-temperature-value = { $valueInC } °C ({ $valueInK } K)
+atmos-alerts-window-temperature-value = { $valueInC } °C ({ $valueInK } К)
 atmos-alerts-window-invalid-value = Н/Д
 atmos-alerts-window-total-mol-label = Всего молей
 atmos-alerts-window-total-mol-value = { $value } моль

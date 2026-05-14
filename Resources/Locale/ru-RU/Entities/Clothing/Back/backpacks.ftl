@@ -1,102 +1,102 @@
-ent-ClothingBackpack-name = backpack
-ent-ClothingBackpack-desc = You wear this on your back and put items into it.
+ent-ClothingBackpack-name = рюкзак
+ent-ClothingBackpack-desc = Вы носите это на спине и кладете в него предметы.
 
-ent-ClothingBackpackClown-name = giggles von honkerton
-ent-ClothingBackpackClown-desc = It's a backpack made by Honk! Co.
+ent-ClothingBackpackClown-name = хихикает фон Хонкертон
+ent-ClothingBackpackClown-desc = Это рюкзак от Honk! Ко.
 
-ent-ClothingBackpackIan-name = Ian's backpack
-ent-ClothingBackpackIan-desc = Sometimes he wears it.
+ent-ClothingBackpackIan-name = рюкзак Йена
+ent-ClothingBackpackIan-desc = Иногда он его носит.
 
-ent-ClothingBackpackSecurity-name = security backpack
-ent-ClothingBackpackSecurity-desc = It's a very robust backpack.
+ent-ClothingBackpackSecurity-name = рюкзак безопасности
+ent-ClothingBackpackSecurity-desc = Это очень прочный рюкзак.
 
-ent-ClothingBackpackBrigmedic-name = brigmedic backpack
-ent-ClothingBackpackBrigmedic-desc = It's a very sterile backpack.
+ent-ClothingBackpackBrigmedic-name = Бригмедик рюкзак
+ent-ClothingBackpackBrigmedic-desc = Это очень стерильный рюкзак.
 
-ent-ClothingBackpackEngineering-name = engineering backpack
-ent-ClothingBackpackEngineering-desc = It's a tough backpack for the daily grind of station life.
+ent-ClothingBackpackEngineering-name = инженерный рюкзак
+ent-ClothingBackpackEngineering-desc = Это прочный рюкзак для повседневной рутины станционной жизни.
 
-ent-ClothingBackpackAtmospherics-name = atmospherics backpack
-ent-ClothingBackpackAtmospherics-desc = It's a backpack made of fire resistant fibers. Smells like plasma.
+ent-ClothingBackpackAtmospherics-name = атмосферный рюкзак
+ent-ClothingBackpackAtmospherics-desc = Это рюкзак из огнестойких волокон. Пахнет плазмой.
 
-ent-ClothingBackpackMedical-name = medical backpack
-ent-ClothingBackpackMedical-desc = It's a backpack especially designed for use in a sterile environment.
+ent-ClothingBackpackMedical-name = медицинский рюкзак
+ent-ClothingBackpackMedical-desc = Этот рюкзак специально разработан для использования в стерильной среде.
 
-ent-ClothingBackpackCaptain-name = captain's backpack
-ent-ClothingBackpackCaptain-desc = It's a special backpack made exclusively for Nanotrasen officers.
+ent-ClothingBackpackCaptain-name = капитанский рюкзак
+ent-ClothingBackpackCaptain-desc = Это специальный рюкзак, созданный специально для офицеров Нанотрасена.
 
-ent-ClothingBackpackMime-name = mime backpack
-ent-ClothingBackpackMime-desc = A silent backpack made for those silent workers. Silence Co.
+ent-ClothingBackpackMime-name = мим рюкзак
+ent-ClothingBackpackMime-desc = Бесшумный рюкзак, созданный для молчаливых работников. Компания Тишина.
 
-ent-ClothingBackpackChemistry-name = chemistry backpack
-ent-ClothingBackpackChemistry-desc = A backpack specially designed to repel stains and hazardous liquids.
+ent-ClothingBackpackChemistry-name = химический рюкзак
+ent-ClothingBackpackChemistry-desc = Рюкзак, специально разработанный для защиты от пятен и опасных жидкостей.
 
-ent-ClothingBackpackHydroponics-name = hydroponics backpack
-ent-ClothingBackpackHydroponics-desc = It's a backpack made of all-natural fibers.
+ent-ClothingBackpackHydroponics-name = гидропоника рюкзак
+ent-ClothingBackpackHydroponics-desc = Это рюкзак из натуральных волокон.
 
-ent-ClothingBackpackScience-name = science backpack
-ent-ClothingBackpackScience-desc = A backpack specially designed to repel stains and hazardous liquids.
+ent-ClothingBackpackScience-name = научный рюкзак
+ent-ClothingBackpackScience-desc = Рюкзак, специально разработанный для защиты от пятен и опасных жидкостей.
 
-ent-ClothingBackpackVirology-name = virology backpack
-ent-ClothingBackpackVirology-desc = A backpack made of hypo-allergenic fibers. It's designed to help prevent the spread of disease. Smells like monkey.
+ent-ClothingBackpackVirology-name = вирусологический рюкзак
+ent-ClothingBackpackVirology-desc = Рюкзак из гипоаллергенного волокна. Он создан, чтобы помочь предотвратить распространение болезней. Пахнет обезьяной.
 
-ent-ClothingBackpackGenetics-name = genetics backpack
-ent-ClothingBackpackGenetics-desc = A backpack designed to be super tough, just in case someone hulks out on you.
+ent-ClothingBackpackGenetics-name = генетика рюкзак
+ent-ClothingBackpackGenetics-desc = Рюкзак спроектирован так, чтобы быть очень прочным, на случай, если кто-нибудь нападет на вас.
 
-ent-ClothingBackpackCargo-name = cargo backpack
-ent-ClothingBackpackCargo-desc = A robust backpack for stealing cargo's loot.
+ent-ClothingBackpackCargo-name = грузовой рюкзак
+ent-ClothingBackpackCargo-desc = Прочный рюкзак для кражи добычи с груза.
 
-ent-ClothingBackpackSalvage-name = salvage bag
-ent-ClothingBackpackSalvage-desc = A robust backpack for stashing your loot.
+ent-ClothingBackpackSalvage-name = сумка для мусора
+ent-ClothingBackpackSalvage-desc = Прочный рюкзак для хранения добычи.
 
-ent-ClothingBackpackMerc-name = mercenary bag
-ent-ClothingBackpackMerc-desc = A backpack that has been in many dangerous places, a reliable combat backpack.
+ent-ClothingBackpackMerc-name = сумка наемника
+ent-ClothingBackpackMerc-desc = Рюкзак, побывавший во многих опасных местах, надежный боевой рюкзак.
 
-ent-ClothingBackpackERTLeader-name = ERT leader backpack
-ent-ClothingBackpackERTLeader-desc = A spacious backpack with lots of pockets, worn by the Commander of an Emergency Response Team.
+ent-ClothingBackpackERTLeader-name = рюкзак лидера ERT
+ent-ClothingBackpackERTLeader-desc = Просторный рюкзак с множеством карманов, который носит командир бригады экстренного реагирования.
 
-ent-ClothingBackpackERTSecurity-name = ERT security backpack
-ent-ClothingBackpackERTSecurity-desc = A spacious backpack with lots of pockets, worn by Security Officers of an Emergency Response Team.
+ent-ClothingBackpackERTSecurity-name = Рюкзак безопасности ERT
+ent-ClothingBackpackERTSecurity-desc = Просторный рюкзак с множеством карманов, который носят сотрудники службы безопасности бригады экстренного реагирования.
 
-ent-ClothingBackpackERTMedical-name = ERT medical backpack
-ent-ClothingBackpackERTMedical-desc = A spacious backpack with lots of pockets, worn by Medical Officers of an Emergency Response Team.
+ent-ClothingBackpackERTMedical-name = медицинский рюкзак ERT
+ent-ClothingBackpackERTMedical-desc = Просторный рюкзак с множеством карманов, который носят медицинские работники бригад экстренного реагирования.
 
-ent-ClothingBackpackERTEngineer-name = ERT engineer backpack
-ent-ClothingBackpackERTEngineer-desc = A spacious backpack with lots of pockets, worn by Engineers of an Emergency Response Team.
+ent-ClothingBackpackERTEngineer-name = рюкзак инженера ERT
+ent-ClothingBackpackERTEngineer-desc = Просторный рюкзак с множеством карманов, который носят инженеры аварийно-спасательной службы.
 
-ent-ClothingBackpackERTJanitor-name = ERT janitor backpack
-ent-ClothingBackpackERTJanitor-desc = A spacious backpack with lots of pockets, worn by Janitors of an Emergency Response Team.
+ent-ClothingBackpackERTJanitor-name = рюкзак дворника ERT
+ent-ClothingBackpackERTJanitor-desc = Просторный рюкзак с множеством карманов, который носят дворники бригады экстренного реагирования.
 
-ent-ClothingBackpackERTClown-name = ERT clown backpack
-ent-ClothingBackpackERTClown-desc = A spacious backpack with lots of pockets, worn by Clowns of an Emergency Response Team.
+ent-ClothingBackpackERTClown-name = рюкзак ERT клоун
+ent-ClothingBackpackERTClown-desc = Просторный рюкзак с множеством карманов, который носят клоуны из бригады экстренного реагирования.
 
-ent-ClothingBackpackERTChaplain-name = ERT chaplain backpack
-ent-ClothingBackpackERTChaplain-desc = A spacious backpack with lots of pockets, worn by Chaplains of an Emergency Response Team.
+ent-ClothingBackpackERTChaplain-name = рюкзак ERT капеллан
+ent-ClothingBackpackERTChaplain-desc = Просторный рюкзак с множеством карманов, который носят капелланы бригады экстренного реагирования.
 
-ent-ClothingBackpackDeathSquad-name = death squad backpack
-ent-ClothingBackpackDeathSquad-desc = Holds the kit of CentComm's most feared agents.
+ent-ClothingBackpackDeathSquad-name = рюкзак отряда смерти
+ent-ClothingBackpackDeathSquad-desc = Содержит набор самых устрашающих агентов ЦентКомма.
 
-ent-ClothingBackpackSyndicate-name = syndicate backpack
-ent-ClothingBackpackSyndicate-desc = You wear this on your back and put items into it.
+ent-ClothingBackpackSyndicate-name = рюкзак синдиката
+ent-ClothingBackpackSyndicate-desc = Вы носите это на спине и кладете в него предметы.
 
-ent-ClothingBackpackHolding-name = bag of holding
-ent-ClothingBackpackHolding-desc = A backpack that opens into a localized pocket of bluespace.
+ent-ClothingBackpackHolding-name = сумка для хранения
+ent-ClothingBackpackHolding-desc = Рюкзак, который открывается в локализованный карман синего пространства.
 
-ent-ClothingBackpackCluwne-name = jiggles von jonkerton
-ent-ClothingBackpackCluwne-desc = It's a backpack made by Jonk! Co.
+ent-ClothingBackpackCluwne-name = Джигглес фон Йонкертон
+ent-ClothingBackpackCluwne-desc = Это рюкзак, сделанный Джонком! Ко.
 
-ent-ClothingBackpackElectropack-name = electropack
-ent-ClothingBackpackElectropack-desc = Shocks on the signal. It is used to keep a particularly dangerous criminal under control.
+ent-ClothingBackpackElectropack-name = электропакет
+ent-ClothingBackpackElectropack-desc = Потрясения по сигналу. Его используют для удержания под контролем особо опасного преступника.
 
-ent-ClothingBackpackDebug-name = wackpack
-ent-ClothingBackpackDebug-desc = What the fuck is this?
+ent-ClothingBackpackDebug-name = рюкзак
+ent-ClothingBackpackDebug-desc = Что это за хрень?
 
-ent-ClothingBackpackDebug2-name = big wackpack
-ent-ClothingBackpackDebug2-desc = What the fuck is this?
+ent-ClothingBackpackDebug2-name = большой рюкзак
+ent-ClothingBackpackDebug2-desc = Что это за хрень?
 
-ent-ClothingBackpackDebug3-name = gay wackpack
-ent-ClothingBackpackDebug3-desc = What the fuck is this?
+ent-ClothingBackpackDebug3-name = гейский рюкзак
+ent-ClothingBackpackDebug3-desc = Что это за хрень?
 
-ent-ClothingBackpackDebug4-name = offset wackpack
-ent-ClothingBackpackDebug4-desc = What the fuck is this?
+ent-ClothingBackpackDebug4-name = офсетный рюкзак
+ent-ClothingBackpackDebug4-desc = Что это за хрень?
 

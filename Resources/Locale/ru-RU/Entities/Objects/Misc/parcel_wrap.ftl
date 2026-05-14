@@ -1,9 +1,9 @@
-ent-ParcelWrap-name = parcel wrap
-ent-ParcelWrap-desc = Paper used contain items for transport.
+ent-ParcelWrap-name = упаковка посылки
+ent-ParcelWrap-desc = Используемая бумага содержит предметы для транспортировки.
 
-ent-WrappedParcel-name = wrapped parcel
-ent-WrappedParcel-desc = Something wrapped up in paper. I wonder what's inside...
+ent-WrappedParcel-name = завернутая посылка
+ent-WrappedParcel-desc = Что-то завернутое в бумагу. Интересно, что внутри...
 
-ent-ParcelWrapTrash-name = parcel wrap
-ent-ParcelWrapTrash-desc = The disappointing remnants of an unwrapped parcel.
+ent-ParcelWrapTrash-name = упаковка посылки
+ent-ParcelWrapTrash-desc = Разочаровывающие остатки развернутой посылки.
 

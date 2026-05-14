@@ -1,24 +1,24 @@
-ent-ClothingUniformJumpsuitRecruitNT-name = recruit jumpsuit
-ent-ClothingUniformJumpsuitRecruitNT-desc = A classy grey jumpsuit with blue trims. Perfect for the dignified helper.
+ent-ClothingUniformJumpsuitRecruitNT-name = набрать комбинезон
+ent-ClothingUniformJumpsuitRecruitNT-desc = Стильный серый комбинезон с синей отделкой. Идеально подходит для достойного помощника.
 
-ent-ClothingUniformJumpsuitRecruitSyndie-name = syndicate recruit jumpsuit
-ent-ClothingUniformJumpsuitRecruitSyndie-desc = A dubious, dark-grey jumpsuit. As if passengers weren't dubious enough already.
+ent-ClothingUniformJumpsuitRecruitSyndie-name = комбинезон рекрута синдиката
+ent-ClothingUniformJumpsuitRecruitSyndie-desc = Сомнительный темно-серый комбинезон. Как будто пассажиры уже недостаточно сомневались.
 
-ent-ClothingUniformJumpsuitRepairmanNT-name = repairman jumpsuit
-ent-ClothingUniformJumpsuitRepairmanNT-desc = A jumpsuit that reminds you of a certain crew-sector work position. Hopefully, you won't have to do the same job as THOSE freaks.
+ent-ClothingUniformJumpsuitRepairmanNT-name = комбинезон ремонтника
+ent-ClothingUniformJumpsuitRepairmanNT-desc = Комбинезон, напоминающий об определенной рабочей позиции в экипаже. Надеюсь, вам не придется выполнять ту же работу, что и ЭТИ уроды.
 
-ent-ClothingUniformJumpsuitRepairmanSyndie-name = syndicate repairman jumpsuit
-ent-ClothingUniformJumpsuitRepairmanSyndie-desc = Functional, fashionable, and badass. Nanotrasen's engineers wish they could look as good as this.
+ent-ClothingUniformJumpsuitRepairmanSyndie-name = комбинезон ремонтника синдиката
+ent-ClothingUniformJumpsuitRepairmanSyndie-desc = Функциональный, модный и крутой. Инженеры Nanotrasen хотели бы, чтобы они выглядели так же хорошо.
 
-ent-ClothingUniformJumpsuitParamedicNT-name = paramedic jumpsuit
-ent-ClothingUniformJumpsuitParamedicNT-desc = A basic white & blue jumpsuit made for Nanotrasen paramedics stationed in combat sectors.
+ent-ClothingUniformJumpsuitParamedicNT-name = фельдшерский комбинезон
+ent-ClothingUniformJumpsuitParamedicNT-desc = Базовый бело-синий комбинезон, созданный для парамедиков Nanotrasen, дислоцированных на боевых участках.
 
-ent-ClothingUniformJumpsuitParamedicSyndie-name = syndicate paramedic jumpsuit
-ent-ClothingUniformJumpsuitParamedicSyndie-desc = For some reason, wearing this makes you feel like you're awfully close to violating the Geneva Convention.
+ent-ClothingUniformJumpsuitParamedicSyndie-name = комбинезон фельдшера синдиката
+ent-ClothingUniformJumpsuitParamedicSyndie-desc = По какой-то причине, надевая это, вы чувствуете, что очень близки к нарушению Женевской конвенции.
 
-ent-ClothingUniformJumpsuitChiefEngineerNT-name = chief engineer jumpsuit
-ent-ClothingUniformJumpsuitChiefEngineerNT-desc = It is often joked that the role of the combat-sector Chief Engineer is where the actual, logistically-minded engineers are promoted to. Good luck.
+ent-ClothingUniformJumpsuitChiefEngineerNT-name = комбинезон главного инженера
+ent-ClothingUniformJumpsuitChiefEngineerNT-desc = Часто шутят, что на должность главного инженера боевого сектора выдвигают настоящих инженеров с логистическим складом ума. Удачи.
 
-ent-ClothingUniformJumpsuitChiefEngineerSyndie-name = syndicate chief engineer jumpsuit
-ent-ClothingUniformJumpsuitChiefEngineerSyndie-desc = An evil-looking jumpsuit with a reflective vest & red undershirt.
+ent-ClothingUniformJumpsuitChiefEngineerSyndie-name = комбинезон главного инженера синдиката
+ent-ClothingUniformJumpsuitChiefEngineerSyndie-desc = Зловещий комбинезон со светоотражающим жилетом и красной майкой.
 

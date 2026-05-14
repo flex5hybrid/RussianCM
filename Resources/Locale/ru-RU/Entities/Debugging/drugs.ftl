@@ -1,3 +1,3 @@
-ent-DrinkMeth-name = meth
-ent-DrinkMeth-desc = Just a whole glass of meth.
+ent-DrinkMeth-name = мет
+ent-DrinkMeth-desc = Просто целый стакан метамфетамина.
 

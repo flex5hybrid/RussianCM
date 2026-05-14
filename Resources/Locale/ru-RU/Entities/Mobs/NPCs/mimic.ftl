@@ -1,3 +1,3 @@
-ent-MobMimic-name = mimic
-ent-MobMimic-desc = Surprise.
+ent-MobMimic-name = имитировать
+ent-MobMimic-desc = Сюрприз.
 

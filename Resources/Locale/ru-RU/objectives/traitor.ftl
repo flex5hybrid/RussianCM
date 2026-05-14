@@ -1,14 +1,14 @@
-ent-EscapeShuttleObjective-name = Escape to centcomm alive and unrestrained.
-ent-EscapeShuttleObjective-desc = One of our undercover agents will debrief you when you arrive. Don't show up in cuffs.
+ent-EscapeShuttleObjective-name = Сбегите в Центкомм живым и безудержным.
+ent-EscapeShuttleObjective-desc = Когда вы приедете, один из наших агентов под прикрытием допросит вас. Не появляйтесь в наручниках.
 
-ent-DieObjective-name = Die a glorious death
-ent-DieObjective-desc = Die.
+ent-DieObjective-name = Умереть славной смертью
+ent-DieObjective-desc = Умереть.
 
-ent-KillRandomPersonObjective-desc = Do it however you like, just make sure they don't get off the station.
+ent-KillRandomPersonObjective-desc = Делайте это как хотите, только следите, чтобы они не ушли со станции.
 
-ent-KillRandomHeadObjective-desc = We need this head gone and you probably know why. Make sure they don't make it to CentComm, even if they're dead. Good luck, agent.
+ent-KillRandomHeadObjective-desc = Нам нужно, чтобы эта голова исчезла, и вы, наверное, знаете, почему. Убедитесь, что они не доберутся до ЦентКомма, даже если они мертвы. Удачи, агент.
 
-ent-RandomTraitorAliveObjective-desc = Identify yourself at your own risk. We just need them alive.
+ent-RandomTraitorAliveObjective-desc = Идентифицируйте себя на свой страх и риск. Они нам просто нужны живыми.
 
-ent-RandomTraitorProgressObjective-desc = Identify yourself at your own risk. We just need them to succeed.
+ent-RandomTraitorProgressObjective-desc = Идентифицируйте себя на свой страх и риск. Нам просто нужно, чтобы они добились успеха.
 

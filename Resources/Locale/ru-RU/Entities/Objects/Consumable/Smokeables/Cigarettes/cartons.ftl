@@ -1,15 +1,15 @@
-ent-CigCartonGreen-name = Spessman's Smokes carton
-ent-CigCartonGreen-desc = A carton containing 6 packets of Spessman's Smokes.
+ent-CigCartonGreen-name = Картонная коробка для сигарет Spessman's Smokes
+ent-CigCartonGreen-desc = Коробка, содержащая 6 пачек сигарет Spessman's Smoke.
 
-ent-CigCartonRed-name = DromedaryCo carton
-ent-CigCartonRed-desc = A carton containing 6 packets of Dromedarycos.
+ent-CigCartonRed-name = Картонная коробка DromedaryCo
+ent-CigCartonRed-desc = Коробка, содержащая 6 пакетов Дромедарикоса.
 
-ent-CigCartonBlue-name = AcmeCo carton
-ent-CigCartonBlue-desc = A carton containing 6 packets of AcmeCo.
+ent-CigCartonBlue-name = Картонная коробка AcmeCo
+ent-CigCartonBlue-desc = Коробка, содержащая 6 пакетов AcmeCo.
 
-ent-CigCartonBlack-name = Nomads carton
-ent-CigCartonBlack-desc = A carton containing 6 packets of Nomads.
+ent-CigCartonBlack-name = Картонная коробка кочевников
+ent-CigCartonBlack-desc = Коробка, содержащая 6 упаковок Nomads.
 
-ent-CigCartonMixed-name = Dan's soaked smokes
-ent-CigCartonMixed-desc = A carton containg 3 packets of Dan's soaked smokes.
+ent-CigCartonMixed-name = Пропитанный дым Дэна
+ent-CigCartonMixed-desc = Коробка с тремя пачками пропитанного Дэном дыма.
 

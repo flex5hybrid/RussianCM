@@ -1,12 +1,12 @@
-ent-FloorChasmEntity-name = chasm
-ent-FloorChasmEntity-desc = You can't even see the bottom.
+ent-FloorChasmEntity-name = пропасть
+ent-FloorChasmEntity-desc = Даже дна не видно.
 
-ent-FloorChromiteChasm-name = chasm
-ent-FloorChromiteChasm-desc = You can't even see the bottom.
+ent-FloorChromiteChasm-name = пропасть
+ent-FloorChromiteChasm-desc = Даже дна не видно.
 
-ent-FloorDesertChasm-name = chasm
-ent-FloorDesertChasm-desc = You can't even see the bottom.
+ent-FloorDesertChasm-name = пропасть
+ent-FloorDesertChasm-desc = Даже дна не видно.
 
-ent-FloorSnowChasm-name = chasm
-ent-FloorSnowChasm-desc = You can't even see the bottom.
+ent-FloorSnowChasm-name = пропасть
+ent-FloorSnowChasm-desc = Даже дна не видно.
 

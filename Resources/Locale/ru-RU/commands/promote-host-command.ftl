@@ -1,2 +1,2 @@
-cmd-promotehost-desc = Grants client temporary full host admin privileges. Use this to bootstrap admins.
-cmd-promotehost-help = Usage promotehost <player>
+cmd-promotehost-desc = Предоставляет клиенту временные права администратора хоста. Используйте это для загрузки администраторов.
+cmd-promotehost-help = Использование Промохост <player>

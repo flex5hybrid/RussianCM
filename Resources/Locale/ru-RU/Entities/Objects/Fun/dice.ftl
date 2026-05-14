@@ -1,23 +1,23 @@
-ent-PercentileDie-name = percentile die
-ent-PercentileDie-desc = A die with ten sides. Works better for d100 rolls than a golf ball.
+ent-PercentileDie-name = процентиль умереть
+ent-PercentileDie-desc = Игральная кость с десятью гранями. Лучше подходит для бросков d100, чем для мяча для гольфа.
 
 ent-d20Dice-name = d20
-ent-d20Dice-desc = A die with twenty sides. The preferred die to throw at the GM.
+ent-d20Dice-desc = Игральная кость с двадцатью гранями. Предпочтительный кубик для броска Мастеру.
 
 ent-d12Dice-name = d12
-ent-d12Dice-desc = A die with twelve sides. There's an air of neglect about it.
+ent-d12Dice-desc = Игральная кость с двенадцатью гранями. В этом чувствуется пренебрежение.
 
 ent-d10Dice-name = d10
-ent-d10Dice-desc = A die with ten sides. Useful for percentages.
+ent-d10Dice-desc = Игральная кость с десятью гранями. Полезно для процентов.
 
 ent-d8Dice-name = d8
-ent-d8Dice-desc = A die with eight sides. It feels... lucky.
+ent-d8Dice-desc = Игральная кость с восемью гранями. Кажется... повезло.
 
 ent-d6Dice-name = d6
-ent-d6Dice-desc = A die with six sides. Basic and serviceable.
+ent-d6Dice-desc = Игральная кость с шестью гранями. Базовый и исправный.
 
 ent-d4Dice-name = d4
-ent-d4Dice-desc = A die with four sides. The nerd's caltrop.
+ent-d4Dice-desc = Игральная кость с четырьмя гранями. Кальтроп ботаника.
 
-ent-BaseDice-name = item
+ent-BaseDice-name = элемент
 

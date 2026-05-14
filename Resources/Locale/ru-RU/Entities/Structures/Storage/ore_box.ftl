@@ -1,3 +1,3 @@
-ent-OreBox-name = ore box
-ent-OreBox-desc = A large storage container for holding unprocessed ores.
+ent-OreBox-name = ящик с рудой
+ent-OreBox-desc = Большой контейнер для хранения необработанной руды.
 

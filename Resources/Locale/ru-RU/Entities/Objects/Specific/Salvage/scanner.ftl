@@ -1,18 +1,18 @@
-ent-MineralScannerUnpowered-name = mineral scanner
-ent-MineralScannerUnpowered-desc = A scanner that checks surrounding rock for useful minerals. It must be in your hand or pocket to work.
+ent-MineralScannerUnpowered-name = минеральный сканер
+ent-MineralScannerUnpowered-desc = Сканер, который проверяет окружающую породу на наличие полезных минералов. Чтобы работать, он должен быть у вас в руке или в кармане.
 
-ent-AdvancedMineralScannerUnpowered-name = advanced mineral scanner
-ent-AdvancedMineralScannerUnpowered-desc = A scanner that checks surrounding rock for useful minerals. It must be in your hand or pocket to work. This one has an extended range.
+ent-AdvancedMineralScannerUnpowered-name = усовершенствованный сканер минералов
+ent-AdvancedMineralScannerUnpowered-desc = Сканер, который проверяет окружающую породу на наличие полезных минералов. Чтобы работать, он должен быть у вас в руке или в кармане. У этого расширенный диапазон.
 
-ent-MineralScanner-name = mineral scanner
-ent-MineralScanner-desc = A scanner that checks surrounding rock for useful minerals. It must be in your hand or pocket to work.
+ent-MineralScanner-name = минеральный сканер
+ent-MineralScanner-desc = Сканер, который проверяет окружающую породу на наличие полезных минералов. Чтобы работать, он должен быть у вас в руке или в кармане.
 
-ent-MineralScannerEmpty-name = mineral scanner
-ent-MineralScannerEmpty-desc = A scanner that checks surrounding rock for useful minerals. It must be in your hand or pocket to work.
+ent-MineralScannerEmpty-name = минеральный сканер
+ent-MineralScannerEmpty-desc = Сканер, который проверяет окружающую породу на наличие полезных минералов. Чтобы работать, он должен быть у вас в руке или в кармане.
 
-ent-AdvancedMineralScanner-name = advanced mineral scanner
-ent-AdvancedMineralScanner-desc = A scanner that checks surrounding rock for useful minerals. It must be in your hand or pocket to work. This one has an extended range.
+ent-AdvancedMineralScanner-name = усовершенствованный сканер минералов
+ent-AdvancedMineralScanner-desc = Сканер, который проверяет окружающую породу на наличие полезных минералов. Чтобы работать, он должен быть у вас в руке или в кармане. У этого расширенный диапазон.
 
-ent-AdvancedMineralScannerEmpty-name = advanced mineral scanner
-ent-AdvancedMineralScannerEmpty-desc = A scanner that checks surrounding rock for useful minerals. It must be in your hand or pocket to work. This one has an extended range.
+ent-AdvancedMineralScannerEmpty-name = усовершенствованный сканер минералов
+ent-AdvancedMineralScannerEmpty-desc = Сканер, который проверяет окружающую породу на наличие полезных минералов. Чтобы работать, он должен быть у вас в руке или в кармане. У этого расширенный диапазон.
 

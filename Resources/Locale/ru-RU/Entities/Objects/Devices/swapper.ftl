@@ -1,3 +1,3 @@
-ent-DeviceQuantumSpinInverter-name = quantum spin inverter
-ent-DeviceQuantumSpinInverter-desc = An experimental device that is able to swap the locations of two entities by switching their particles' spin values. Must be linked to another device to function.
+ent-DeviceQuantumSpinInverter-name = квантовый инвертор спина
+ent-DeviceQuantumSpinInverter-desc = Экспериментальное устройство, способное менять местами два объекта, меняя значения спина их частиц. Для работы необходимо подключить другое устройство.
 

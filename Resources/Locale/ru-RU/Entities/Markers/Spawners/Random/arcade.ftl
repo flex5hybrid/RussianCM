@@ -1,2 +1,2 @@
-ent-RandomArcade-name = random arcade spawner
+ent-RandomArcade-name = случайный спаунер аркад
 

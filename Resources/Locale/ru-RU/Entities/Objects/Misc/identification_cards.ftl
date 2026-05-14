@@ -1,189 +1,189 @@
-ent-IDCardStandard-name = identification card
-ent-IDCardStandard-desc = A card necessary to access various areas aboard the station.
+ent-IDCardStandard-name = удостоверение личности
+ent-IDCardStandard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-PassengerIDCard-name = passenger ID card
-ent-PassengerIDCard-desc = A card necessary to access various areas aboard the station.
+ent-PassengerIDCard-name = удостоверение личности пассажира
+ent-PassengerIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-TechnicalAssistantIDCard-name = technical assistant ID card
-ent-TechnicalAssistantIDCard-desc = A card necessary to access various areas aboard the station.
+ent-TechnicalAssistantIDCard-name = удостоверение технического помощника
+ent-TechnicalAssistantIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-MedicalInternIDCard-name = medical intern ID card
-ent-MedicalInternIDCard-desc = A card necessary to access various areas aboard the station.
+ent-MedicalInternIDCard-name = удостоверение личности медицинского интерна
+ent-MedicalInternIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ResearchAssistantIDCard-name = research assistant ID card
-ent-ResearchAssistantIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ResearchAssistantIDCard-name = удостоверение личности научного сотрудника
+ent-ResearchAssistantIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-SecurityCadetIDCard-name = security cadet ID card
-ent-SecurityCadetIDCard-desc = A card necessary to access various areas aboard the station.
+ent-SecurityCadetIDCard-name = удостоверение курсанта охраны
+ent-SecurityCadetIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ServiceWorkerIDCard-name = service worker ID card
-ent-ServiceWorkerIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ServiceWorkerIDCard-name = удостоверение личности работника сферы услуг
+ent-ServiceWorkerIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-CaptainIDCard-name = captain ID card
-ent-CaptainIDCard-desc = A card necessary to access various areas aboard the station.
+ent-CaptainIDCard-name = удостоверение капитана
+ent-CaptainIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-SecurityIDCard-name = security ID card
-ent-SecurityIDCard-desc = A card necessary to access various areas aboard the station.
+ent-SecurityIDCard-name = удостоверение личности безопасности
+ent-SecurityIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-WardenIDCard-name = warden ID card
-ent-WardenIDCard-desc = A card necessary to access various areas aboard the station.
+ent-WardenIDCard-name = удостоверение начальника тюрьмы
+ent-WardenIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-EngineeringIDCard-name = engineer ID card
-ent-EngineeringIDCard-desc = A card necessary to access various areas aboard the station.
+ent-EngineeringIDCard-name = удостоверение инженера
+ent-EngineeringIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-MedicalIDCard-name = medical ID card
-ent-MedicalIDCard-desc = A card necessary to access various areas aboard the station.
+ent-MedicalIDCard-name = медицинское удостоверение личности
+ent-MedicalIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ParamedicIDCard-name = paramedic ID card
-ent-ParamedicIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ParamedicIDCard-name = удостоверение фельдшера
+ent-ParamedicIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ChemistIDCard-name = chemist ID card
-ent-ChemistIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ChemistIDCard-name = удостоверение личности химика
+ent-ChemistIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-CargoIDCard-name = cargo ID card
-ent-CargoIDCard-desc = A card necessary to access various areas aboard the station.
+ent-CargoIDCard-name = удостоверение личности груза
+ent-CargoIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-SalvageIDCard-name = salvage ID card
-ent-SalvageIDCard-desc = A card necessary to access various areas aboard the station.
+ent-SalvageIDCard-name = удостоверение личности для спасения
+ent-SalvageIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-QuartermasterIDCard-name = quartermaster ID card
-ent-QuartermasterIDCard-desc = A card necessary to access various areas aboard the station.
+ent-QuartermasterIDCard-name = удостоверение квартирмейстера
+ent-QuartermasterIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ResearchIDCard-name = research ID card
-ent-ResearchIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ResearchIDCard-name = удостоверение личности исследования
+ent-ResearchIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ClownIDCard-name = clown ID card
-ent-ClownIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ClownIDCard-name = удостоверение личности клоуна
+ent-ClownIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-MimeIDCard-name = mime ID card
-ent-MimeIDCard-desc = A card necessary to access various areas aboard the station.
+ent-MimeIDCard-name = удостоверение личности мима
+ent-MimeIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ChaplainIDCard-name = chaplain ID card
-ent-ChaplainIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ChaplainIDCard-name = удостоверение личности капеллана
+ent-ChaplainIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-JanitorIDCard-name = janitor ID card
-ent-JanitorIDCard-desc = A card necessary to access various areas aboard the station.
+ent-JanitorIDCard-name = удостоверение дворника
+ent-JanitorIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-BartenderIDCard-name = bartender ID card
-ent-BartenderIDCard-desc = A card necessary to access various areas aboard the station.
+ent-BartenderIDCard-name = удостоверение личности бармена
+ent-BartenderIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-PunPunIDCard-name = pun pun ID card
-ent-PunPunIDCard-desc = A card necessary to access various areas aboard the station.
+ent-PunPunIDCard-name = удостоверение личности каламбур-каламбур
+ent-PunPunIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ChefIDCard-name = chef ID card
-ent-ChefIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ChefIDCard-name = удостоверение личности шеф-повара
+ent-ChefIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-BotanistIDCard-name = botanist ID card
-ent-BotanistIDCard-desc = A card necessary to access various areas aboard the station.
+ent-BotanistIDCard-name = удостоверение личности ботаника
+ent-BotanistIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-LibrarianIDCard-name = librarian ID card
-ent-LibrarianIDCard-desc = A card necessary to access various areas aboard the station.
+ent-LibrarianIDCard-name = удостоверение библиотекаря
+ent-LibrarianIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-LawyerIDCard-name = lawyer ID card
-ent-LawyerIDCard-desc = A card necessary to access various areas aboard the station.
+ent-LawyerIDCard-name = удостоверение личности адвоката
+ent-LawyerIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-HoPIDCard-name = head of personnel ID card
-ent-HoPIDCard-desc = A card necessary to access various areas aboard the station.
+ent-HoPIDCard-name = удостоверение личности руководителя отдела кадров
+ent-HoPIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-CEIDCard-name = chief engineer ID card
-ent-CEIDCard-desc = A card necessary to access various areas aboard the station.
+ent-CEIDCard-name = удостоверение главного инженера
+ent-CEIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-CMOIDCard-name = chief medical officer ID card
-ent-CMOIDCard-desc = A card necessary to access various areas aboard the station.
+ent-CMOIDCard-name = удостоверение личности главного врача
+ent-CMOIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-RDIDCard-name = research director ID card
-ent-RDIDCard-desc = A card necessary to access various areas aboard the station.
+ent-RDIDCard-name = удостоверение личности директора по исследованиям
+ent-RDIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-HoSIDCard-name = head of security ID card
-ent-HoSIDCard-desc = A card necessary to access various areas aboard the station.
+ent-HoSIDCard-name = удостоверение личности начальника службы безопасности
+ent-HoSIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-VisitorIDCard-name = visitor ID card
-ent-VisitorIDCard-desc = A card necessary to access various areas aboard the station.
+ent-VisitorIDCard-name = удостоверение личности посетителя
+ent-VisitorIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-BrigmedicIDCard-name = brigmedic ID card
-ent-BrigmedicIDCard-desc = A card necessary to access various areas aboard the station.
+ent-BrigmedicIDCard-name = удостоверение личности Бригмедика
+ent-BrigmedicIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-CentcomIDCard-name = command officer ID card
-ent-CentcomIDCard-desc = A card necessary to access various areas aboard the station.
+ent-CentcomIDCard-name = удостоверение личности командира
+ent-CentcomIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ERTLeaderIDCard-name = ERT leader ID card
-ent-ERTLeaderIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ERTLeaderIDCard-name = Удостоверение руководителя ERT
+ent-ERTLeaderIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ERTChaplainIDCard-name = ERT chaplain ID card
-ent-ERTChaplainIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ERTChaplainIDCard-name = Удостоверение капеллана ERT
+ent-ERTChaplainIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ERTEngineerIDCard-name = ERT engineer ID card
-ent-ERTEngineerIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ERTEngineerIDCard-name = Удостоверение личности инженера ERT
+ent-ERTEngineerIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ERTJanitorIDCard-name = ERT janitor ID card
-ent-ERTJanitorIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ERTJanitorIDCard-name = Удостоверение дворника ERT
+ent-ERTJanitorIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ERTMedicIDCard-name = ERT medic ID card
-ent-ERTMedicIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ERTMedicIDCard-name = Удостоверение врача скорой медицинской помощи
+ent-ERTMedicIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ERTSecurityIDCard-name = ERT security ID card
-ent-ERTSecurityIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ERTSecurityIDCard-name = Идентификационная карта безопасности ERT
+ent-ERTSecurityIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-MusicianIDCard-name = musician ID card
-ent-MusicianIDCard-desc = A card necessary to access various areas aboard the station.
+ent-MusicianIDCard-name = удостоверение личности музыканта
+ent-MusicianIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-CentcomIDCardDeathsquad-name = death squad ID card
-ent-CentcomIDCardDeathsquad-desc = A card necessary to access various areas aboard the station.
+ent-CentcomIDCardDeathsquad-name = удостоверение личности отряда смерти
+ent-CentcomIDCardDeathsquad-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-AgentIDCard-name = passenger ID card
-ent-AgentIDCard-desc = A card necessary to access various areas aboard the station.
+ent-AgentIDCard-name = удостоверение личности пассажира
+ent-AgentIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-NukieAgentIDCard-name = passenger ID card
-ent-NukieAgentIDCard-desc = A card necessary to access various areas aboard the station.
+ent-NukieAgentIDCard-name = удостоверение личности пассажира
+ent-NukieAgentIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-AtmosIDCard-name = atmospheric technician ID card
-ent-AtmosIDCard-desc = A card necessary to access various areas aboard the station.
+ent-AtmosIDCard-name = удостоверение специалиста по атмосферной атмосфере
+ent-AtmosIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-SyndicateIDCard-name = syndicate ID card
-ent-SyndicateIDCard-desc = A card necessary to access various areas aboard the station.
+ent-SyndicateIDCard-name = удостоверение личности синдиката
+ent-SyndicateIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-PirateIDCard-name = pirate ID card
-ent-PirateIDCard-desc = A card necessary to access various areas aboard the station.
+ent-PirateIDCard-name = пиратское удостоверение личности
+ent-PirateIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-PsychologistIDCard-name = psychologist ID card
-ent-PsychologistIDCard-desc = A card necessary to access various areas aboard the station.
+ent-PsychologistIDCard-name = ID-карта психолога
+ent-PsychologistIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ReporterIDCard-name = reporter ID card
-ent-ReporterIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ReporterIDCard-name = удостоверение личности репортера
+ent-ReporterIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-BoxerIDCard-name = boxer ID card
-ent-BoxerIDCard-desc = A card necessary to access various areas aboard the station.
+ent-BoxerIDCard-name = удостоверение личности боксера
+ent-BoxerIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-ZookeeperIDCard-name = zookeeper ID card
-ent-ZookeeperIDCard-desc = A card necessary to access various areas aboard the station.
+ent-ZookeeperIDCard-name = удостоверение личности смотрителя зоопарка
+ent-ZookeeperIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-DetectiveIDCard-name = detective ID card
-ent-DetectiveIDCard-desc = A card necessary to access various areas aboard the station.
+ent-DetectiveIDCard-name = удостоверение личности детектива
+ent-DetectiveIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-PrisonerIDCard-name = prisoner ID card
-ent-PrisonerIDCard-desc = A generically printed ID card for scummy prisoners.
+ent-PrisonerIDCard-name = удостоверение личности заключенного
+ent-PrisonerIDCard-desc = Обычное печатное удостоверение личности для подлых заключенных.
 
-ent-CBURNIDcard-name = CBURN ID card
-ent-CBURNIDcard-desc = A card necessary to access various areas aboard the station.
+ent-CBURNIDcard-name = Идентификационная карта CBURN
+ent-CBURNIDcard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-CluwneIDCard-name = cluwne ID card
-ent-CluwneIDCard-desc = A card necessary to access various areas aboard the station.
+ent-CluwneIDCard-name = Клувнское удостоверение личности
+ent-CluwneIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-SeniorEngineerIDCard-name = senior engineer ID card
-ent-SeniorEngineerIDCard-desc = A card necessary to access various areas aboard the station.
+ent-SeniorEngineerIDCard-name = удостоверение личности старшего инженера
+ent-SeniorEngineerIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-SeniorResearcherIDCard-name = senior researcher ID card
-ent-SeniorResearcherIDCard-desc = A card necessary to access various areas aboard the station.
+ent-SeniorResearcherIDCard-name = удостоверение личности старшего научного сотрудника
+ent-SeniorResearcherIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-SeniorPhysicianIDCard-name = senior physician ID card
-ent-SeniorPhysicianIDCard-desc = A card necessary to access various areas aboard the station.
+ent-SeniorPhysicianIDCard-name = удостоверение личности старшего врача
+ent-SeniorPhysicianIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-SeniorOfficerIDCard-name = senior officer ID card
-ent-SeniorOfficerIDCard-desc = A card necessary to access various areas aboard the station.
+ent-SeniorOfficerIDCard-name = удостоверение личности старшего офицера
+ent-SeniorOfficerIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-WizardIDCard-name = wizard ID card
-ent-WizardIDCard-desc = A card necessary to access various areas aboard the station.
+ent-WizardIDCard-name = удостоверение личности мастера
+ent-WizardIDCard-desc = Карта, необходимая для доступа в различные зоны на борту станции.
 
-ent-UniversalIDCard-name = universal ID card
-ent-UniversalIDCard-desc = An ID card that gives you access beyond your wildest dreams.
+ent-UniversalIDCard-name = универсальное удостоверение личности
+ent-UniversalIDCard-desc = Удостоверение личности, которое дает вам доступ, превосходящий ваши самые смелые мечты.
 

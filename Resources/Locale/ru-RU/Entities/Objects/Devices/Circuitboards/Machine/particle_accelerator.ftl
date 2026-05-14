@@ -1,18 +1,18 @@
-ent-MachineParticleAcceleratorEndCapCircuitboard-name = PA end cap board
-ent-MachineParticleAcceleratorEndCapCircuitboard-desc = A machine board for a particle accelerator end cap.
+ent-MachineParticleAcceleratorEndCapCircuitboard-name = Торцевая заглушка PA
+ent-MachineParticleAcceleratorEndCapCircuitboard-desc = Машинная доска для торцевой крышки ускорителя частиц.
 
-ent-MachineParticleAcceleratorFuelChamberCircuitboard-name = PA fuel chamber board
-ent-MachineParticleAcceleratorFuelChamberCircuitboard-desc = A machine board for a particle accelerator fuel chamber.
+ent-MachineParticleAcceleratorFuelChamberCircuitboard-name = Плата топливной камеры PA
+ent-MachineParticleAcceleratorFuelChamberCircuitboard-desc = Машинная плата топливной камеры ускорителя частиц.
 
-ent-MachineParticleAcceleratorPowerBoxCircuitboard-name = PA power box board
-ent-MachineParticleAcceleratorPowerBoxCircuitboard-desc = A machine board for a particle accelerator power box.
+ent-MachineParticleAcceleratorPowerBoxCircuitboard-name = Плата блока питания PA
+ent-MachineParticleAcceleratorPowerBoxCircuitboard-desc = Машинная плата для силового блока ускорителя частиц.
 
-ent-MachineParticleAcceleratorEmitterStarboardCircuitboard-name = PA starboard emitter board
-ent-MachineParticleAcceleratorEmitterStarboardCircuitboard-desc = A machine board for a particle accelerator left emitter.
+ent-MachineParticleAcceleratorEmitterStarboardCircuitboard-name = Плата излучателя правого борта PA
+ent-MachineParticleAcceleratorEmitterStarboardCircuitboard-desc = Машинная плата левого эмиттера ускорителя частиц.
 
-ent-MachineParticleAcceleratorEmitterForeCircuitboard-name = PA fore emitter board
-ent-MachineParticleAcceleratorEmitterForeCircuitboard-desc = A machine board for a particle accelerator center emitter.
+ent-MachineParticleAcceleratorEmitterForeCircuitboard-name = Плата переднего излучателя PA
+ent-MachineParticleAcceleratorEmitterForeCircuitboard-desc = Машинная плата центрального эмиттера ускорителя частиц.
 
-ent-MachineParticleAcceleratorEmitterPortCircuitboard-name = PA port emitter board
-ent-MachineParticleAcceleratorEmitterPortCircuitboard-desc = A machine board for a particle accelerator right emitter.
+ent-MachineParticleAcceleratorEmitterPortCircuitboard-name = Плата излучателя порта PA
+ent-MachineParticleAcceleratorEmitterPortCircuitboard-desc = Машинная плата правого эмиттера ускорителя частиц.
 

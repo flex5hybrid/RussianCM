@@ -1,2 +1,2 @@
-ent-BaseElectronics-name = base electronics
+ent-BaseElectronics-name = базовая электроника
 

@@ -1,24 +1,24 @@
-ent-PresentBase-name = present
-ent-PresentBase-desc = A little box with incredible surprises inside.
+ent-PresentBase-name = настоящий
+ent-PresentBase-desc = Маленькая коробочка с невероятными сюрпризами внутри.
 
-ent-PresentTrash-name = wrapping paper
-ent-PresentTrash-desc = Carefully folded, taped, and tied with a bow. Then ceremoniously ripped apart and tossed on the floor.
+ent-PresentTrash-name = оберточная бумага
+ent-PresentTrash-desc = Аккуратно сложили, заклеили скотчем и завязали бантиком. Затем торжественно разорвали на части и бросили на пол.
 
-ent-Present-name = present
-ent-Present-desc = A little box with incredible surprises inside.
+ent-Present-name = настоящий
+ent-Present-desc = Маленькая коробочка с невероятными сюрпризами внутри.
 
-ent-PresentRandomUnsafe-name = present
-ent-PresentRandomUnsafe-desc = A little box with incredible surprises inside.
+ent-PresentRandomUnsafe-name = настоящий
+ent-PresentRandomUnsafe-desc = Маленькая коробочка с невероятными сюрпризами внутри.
 
-ent-PresentRandomInsane-name = present
-ent-PresentRandomInsane-desc = A little box with incredible surprises inside.
+ent-PresentRandomInsane-name = настоящий
+ent-PresentRandomInsane-desc = Маленькая коробочка с невероятными сюрпризами внутри.
 
-ent-PresentRandom-name = present
-ent-PresentRandom-desc = A little box with incredible surprises inside.
+ent-PresentRandom-name = настоящий
+ent-PresentRandom-desc = Маленькая коробочка с невероятными сюрпризами внутри.
 
-ent-PresentRandomCoal-name = present
-ent-PresentRandomCoal-desc = A little box with incredible surprises inside.
+ent-PresentRandomCoal-name = настоящий
+ent-PresentRandomCoal-desc = Маленькая коробочка с невероятными сюрпризами внутри.
 
-ent-PresentRandomCash-name = present
-ent-PresentRandomCash-desc = A little box with incredible surprises inside.
+ent-PresentRandomCash-name = настоящий
+ent-PresentRandomCash-desc = Маленькая коробочка с невероятными сюрпризами внутри.
 

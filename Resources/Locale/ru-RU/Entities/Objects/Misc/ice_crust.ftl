@@ -1,3 +1,3 @@
-ent-IceCrust-name = ice crust
-ent-IceCrust-desc = It's cold and slippery.
+ent-IceCrust-name = ледяная корка
+ent-IceCrust-desc = Холодно и скользко.
 

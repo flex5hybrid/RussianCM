@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianOrbitalManager-name = Spawn Point Orbital Manager
-ent-AU14SpawnPointCivilianOrbitalManager-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianOrbitalManager-name = Орбитальный менеджер точки возрождения
+ent-AU14SpawnPointCivilianOrbitalManager-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

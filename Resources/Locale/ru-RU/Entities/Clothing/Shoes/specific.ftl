@@ -1,47 +1,47 @@
-ent-ClothingShoesChef-name = chef shoes
-ent-ClothingShoesChef-desc = Sturdy shoes that minimize injury from falling objects or knives.
+ent-ClothingShoesChef-name = обувь шеф-повара
+ent-ClothingShoesChef-desc = Прочная обувь, которая сводит к минимуму травмы от падающих предметов или ножей.
 
-ent-ClothingShoesClown-name = clown shoes
-ent-ClothingShoesClown-desc = The prankster's standard-issue clowning shoes. Damn they're huge!
+ent-ClothingShoesClown-name = клоунские туфли
+ent-ClothingShoesClown-desc = Стандартные клоунские туфли шутника. Черт, они огромные!
 
-ent-ClothingShoesClownBanana-name = banana clown shoes
-ent-ClothingShoesClownBanana-desc = When humor and footwear combine into new levels of absurdity.
+ent-ClothingShoesClownBanana-name = банановые туфли клоуна
+ent-ClothingShoesClownBanana-desc = Когда юмор и обувь объединяются в новый уровень абсурда.
 
-ent-ClothingShoesBling-name = bling clown shoes
-ent-ClothingShoesBling-desc = Made of refined bananium and shined with the pulp of a fresh banana peel. These make a flashy statement.
+ent-ClothingShoesBling-name = блестящие туфли клоуна
+ent-ClothingShoesBling-desc = Изготовлен из изысканного банана и сияет мякотью свежей банановой кожуры. Они делают яркое заявление.
 
-ent-ClothingShoesCult-name = cult shoes
-ent-ClothingShoesCult-desc = A pair of boots worn by the followers of Nar'Sie.
+ent-ClothingShoesCult-name = культовая обувь
+ent-ClothingShoesCult-desc = Пара ботинок, которые носят последователи Нар'Си.
 
-ent-ClothingShoesGaloshes-name = galoshes
-ent-ClothingShoesGaloshes-desc = Rubber boots.
+ent-ClothingShoesGaloshes-name = галоши
+ent-ClothingShoesGaloshes-desc = Резиновые сапоги.
 
-ent-ClothingShoesSpaceNinja-name = space ninja shoes
-ent-ClothingShoesSpaceNinja-desc = A pair of nano-enhanced boots with built-in magnetic suction cups.
+ent-ClothingShoesSpaceNinja-name = обувь космического ниндзя
+ent-ClothingShoesSpaceNinja-desc = Пара нано-усиленных ботинок со встроенными магнитными присосками.
 
-ent-ClothingShoesSwat-name = swat shoes
-ent-ClothingShoesSwat-desc = When you want to turn up the heat.
+ent-ClothingShoesSwat-name = обувь для шлепанцев
+ent-ClothingShoesSwat-desc = Когда хочешь прибавить тепла.
 
-ent-ClothingShoesWizard-name = wizard shoes
-ent-ClothingShoesWizard-desc = A pair of magic shoes.
+ent-ClothingShoesWizard-name = волшебная обувь
+ent-ClothingShoesWizard-desc = Пара волшебных туфель.
 
-ent-ClothingShoesChameleon-name = black shoes
-ent-ClothingShoesChameleon-desc = Stylish black shoes.
+ent-ClothingShoesChameleon-name = черные туфли
+ent-ClothingShoesChameleon-desc = Стильные черные туфли.
 
-ent-ClothingShoesChameleonNoSlips-name = black shoes
-ent-ClothingShoesChameleonNoSlips-desc = Stylish black shoes.
+ent-ClothingShoesChameleonNoSlips-name = черные туфли
+ent-ClothingShoesChameleonNoSlips-desc = Стильные черные туфли.
 
-ent-ClothingShoesJester-name = jester shoes
-ent-ClothingShoesJester-desc = A court jester's shoes, updated with modern squeaking technology.
+ent-ClothingShoesJester-name = шутовские туфли
+ent-ClothingShoesJester-desc = Туфли придворного шута, обновленные с использованием современной технологии скрипа.
 
-ent-ClothingShoesCluwne-name = cluwne shoes
-ent-ClothingShoesCluwne-desc = Cursed pair of cluwne shoes.
+ent-ClothingShoesCluwne-name = туфли-лодочки
+ent-ClothingShoesCluwne-desc = Проклятая пара клунов.
 
-ent-ClothingShoesClownLarge-name = large clown shoes
-ent-ClothingShoesClownLarge-desc = When you need to stand out in a room full of clowns!
+ent-ClothingShoesClownLarge-name = большие клоунские туфли
+ent-ClothingShoesClownLarge-desc = Когда нужно выделиться в комнате полной клоунов!
 
-ent-ClothingShoesSkates-name = roller skates
-ent-ClothingShoesSkates-desc = Get your skates on!
+ent-ClothingShoesSkates-name = роликовые коньки
+ent-ClothingShoesSkates-desc = Надевайте коньки!
 
 ent-ClothingShoesClownBase-name = lathe-category-clothing
 

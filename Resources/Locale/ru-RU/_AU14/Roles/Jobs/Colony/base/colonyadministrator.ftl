@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianColonyAdministrator-name = Spawn Point Colony Administrator
-ent-AU14SpawnPointCivilianColonyAdministrator-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianColonyAdministrator-name = Администратор колонии точки возрождения
+ent-AU14SpawnPointCivilianColonyAdministrator-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

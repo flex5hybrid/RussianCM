@@ -1,15 +1,15 @@
-ent-MobGuardianBase-name = GuardianBase
-ent-MobGuardianBase-desc = guardian
+ent-MobGuardianBase-name = База Стражей
+ent-MobGuardianBase-desc = опекун
 
-ent-MobHoloparasiteGuardian-name = Holoparasite
-ent-MobHoloparasiteGuardian-desc = A mesmerising whirl of hard-light patterns weaves a marvelous, yet oddly familiar visage. It stands proud, tuning into its owner's life to sustain itself.
+ent-MobHoloparasiteGuardian-name = Голопаразит
+ent-MobHoloparasiteGuardian-desc = Завораживающий вихрь узоров яркого света создает чудесный, но до странности знакомый образ. Он стоит гордо, настраиваясь на жизнь своего владельца, чтобы поддерживать себя.
 
-ent-MobIfritGuardian-name = Ifrit
-ent-MobIfritGuardian-desc = A corrupted jinn, ripped from fitra to serve the wizard's petty needs. It stands wicked, tuning into its owner's life to sustain itself.
+ent-MobIfritGuardian-name = Ифрит
+ent-MobIfritGuardian-desc = Порочный джинн, вырванный из фитры для удовлетворения мелких нужд волшебника. Он стоит зло, настраиваясь на жизнь своего владельца, чтобы поддерживать себя.
 
-ent-MobHoloClownGuardian-name = HoloClown
-ent-MobHoloClownGuardian-desc = A mesmerising whirl of hard-light patterns weaves a blue colored clown of dubious origin.
+ent-MobHoloClownGuardian-name = Голоклоун
+ent-MobHoloClownGuardian-desc = Завораживающий вихрь узоров жесткого света плетет синего клоуна сомнительного происхождения.
 
-ent-ActionToggleGuardian-name = Toggle Guardian
-ent-ActionToggleGuardian-desc = Either manifests the guardian or recalls it back into your body
+ent-ActionToggleGuardian-name = Переключить стража
+ent-ActionToggleGuardian-desc = Либо проявляет стража, либо возвращает его обратно в ваше тело.
 

@@ -1,62 +1,62 @@
-ent-PaintingEmpty-name = empty frame
-ent-PaintingEmpty-desc = An empty frame, waiting to be filled with art.
+ent-PaintingEmpty-name = пустая рамка
+ent-PaintingEmpty-desc = Пустая рамка, ожидающая наполнения искусством.
 
-ent-PaintingMoony-name = Abstract No.1
-ent-PaintingMoony-desc = An imposing abstract painting. It feels like it's pressuring you to do good.
+ent-PaintingMoony-name = Аннотация №1
+ent-PaintingMoony-desc = Впечатляющая абстрактная картина. Такое ощущение, что оно заставляет вас делать добро.
 
-ent-PaintingPersistenceOfMemory-name = The Persistence of Memory
-ent-PaintingPersistenceOfMemory-desc = This painting depicts a barren landscape. It's filled with various surreal objects.
+ent-PaintingPersistenceOfMemory-name = Постоянство памяти
+ent-PaintingPersistenceOfMemory-desc = На этой картине изображен бесплодный пейзаж. Он наполнен различными сюрреалистическими объектами.
 
-ent-PaintingTheSonOfMan-name = The Son of Man
-ent-PaintingTheSonOfMan-desc = This painting depicts a formal-looking man. His face is obscured by an apple.
+ent-PaintingTheSonOfMan-name = Сын Человеческий
+ent-PaintingTheSonOfMan-desc = На этой картине изображен мужчина формального вида. Его лицо закрыто яблоком.
 
-ent-PaintingTheKiss-name = The Kiss
-ent-PaintingTheKiss-desc = This painting depicts a couple in tender embrace. It's covered in glittery gold ornamentation.
+ent-PaintingTheKiss-name = Поцелуй
+ent-PaintingTheKiss-desc = На этой картине изображена пара в нежных объятиях. Он покрыт блестящим золотым орнаментом.
 
-ent-PaintingTheScream-name = The Scream
-ent-PaintingTheScream-desc = This painting depicts a distressed man standing on a bridge.
+ent-PaintingTheScream-name = Крик
+ent-PaintingTheScream-desc = На этой картине изображен расстроенный мужчина, стоящий на мосту.
 
-ent-PaintingTheGreatWave-name = The Great Wave off Kanagawa
-ent-PaintingTheGreatWave-desc = This painting depicts a majestic wave. It's throwing around several small fishing boats.
+ent-PaintingTheGreatWave-name = Большая волна у Канагавы
+ent-PaintingTheGreatWave-desc = На этой картине изображена величественная волна. Он разбрасывает несколько небольших рыбацких лодок.
 
-ent-PaintingCafeTerraceAtNight-name = Cafe Terrace at Night
-ent-PaintingCafeTerraceAtNight-desc = This painting depicts lively night scene at a cafe.
+ent-PaintingCafeTerraceAtNight-name = Кафе Терраса ночью
+ent-PaintingCafeTerraceAtNight-desc = На этой картине изображена оживленная ночная сцена в кафе.
 
-ent-PaintingNightHawks-name = Nighthawks
-ent-PaintingNightHawks-desc = This painting depicts a lonely-looking diner. The patrons are sitting glumly at the counter.
+ent-PaintingNightHawks-name = Ночные ястребы
+ent-PaintingNightHawks-desc = На этой картине изображен одинокий посетитель. Посетители угрюмо сидят за стойкой.
 
-ent-PaintingSkeletonCigarette-name = Skull of a Skeleton with Burning Cigarette
-ent-PaintingSkeletonCigarette-desc = This painting depicts an impressionist portrait of a skeleton. A lit cigarette is wedged between its teeth.
+ent-PaintingSkeletonCigarette-name = Череп скелета с горящей сигаретой
+ent-PaintingSkeletonCigarette-desc = На этой картине изображен импрессионистический портрет скелета. Зажженная сигарета зажата между зубами.
 
-ent-PaintingSkeletonBoof-name = Skull of MLG Skeleton with Fat Boof
-ent-PaintingSkeletonBoof-desc = Painting goes hard. Feel free to screenshot.
+ent-PaintingSkeletonBoof-name = Череп скелета MLG с толстым задом
+ent-PaintingSkeletonBoof-desc = Рисование идет тяжело. Смело делайте скриншот.
 
-ent-PaintingPrayerHands-name = Study of the Hands of an Apostle
-ent-PaintingPrayerHands-desc = This painting depicts a pair of hands clasped in prayer.
+ent-PaintingPrayerHands-name = Этюд рук апостола
+ent-PaintingPrayerHands-desc = На этой картине изображена пара рук, сложенных в молитве.
 
-ent-PaintingOldGuitarist-name = The Old Guitarist
-ent-PaintingOldGuitarist-desc = This painting depicts an old, thin man clutching a guitar. His face looks shallow and sickly.
+ent-PaintingOldGuitarist-name = Старый гитарист
+ent-PaintingOldGuitarist-desc = На этой картине изображен старый худощавый мужчина, сжимающий в руках гитару. Его лицо выглядит поверхностным и болезненным.
 
-ent-PaintingOlympia-name = Olympia
-ent-PaintingOlympia-desc = This painting depicts a nude woman lying on a bed. A servant is tending to her.
+ent-PaintingOlympia-name = Олимпия
+ent-PaintingOlympia-desc = На этой картине изображена обнаженная женщина, лежащая на кровати. За ней ухаживает служанка.
 
-ent-PaintingSaturn-name = Saturn Devouring His Son
-ent-PaintingSaturn-desc = This painting depicts giant devouring a human corpse. He has a frightening look in his eyes.
+ent-PaintingSaturn-name = Сатурн, пожирающий своего сына
+ent-PaintingSaturn-desc = На этой картине изображен великан, пожирающий человеческий труп. У него пугающий взгляд в глазах.
 
-ent-PaintingSleepingGypsy-name = The Sleeping Gypsy
-ent-PaintingSleepingGypsy-desc = This painting depicts a gypsy sleeping among their belongings in the desert. A lion stands behind them.
+ent-PaintingSleepingGypsy-name = Спящий цыган
+ent-PaintingSleepingGypsy-desc = На этой картине изображена цыганка, спящая среди своих вещей в пустыне. За ними стоит лев.
 
-ent-PaintingRedBlueYellow-name = Composition with Red Blue and Yellow
-ent-PaintingRedBlueYellow-desc = This painting is made up of several boxes. They are filled with flat shades of color.
+ent-PaintingRedBlueYellow-name = Композиция с красным синим и желтым
+ent-PaintingRedBlueYellow-desc = Эта картина состоит из нескольких коробок. Они наполнены плоскими оттенками цвета.
 
-ent-PaintingAmogusTriptych-name = Amogus Triptych (Untitled.)
-ent-PaintingAmogusTriptych-desc = This painting is made up of 3 individual sections. Each depicts a religious figure.
+ent-PaintingAmogusTriptych-name = Амога Триптих (Без названия.)
+ent-PaintingAmogusTriptych-desc = Эта картина состоит из 3 отдельных частей. На каждом изображен религиозный деятель.
 
-ent-PaintingHelloWorld-name = Hello World
-ent-PaintingHelloWorld-desc = This painting is made up of lots of multicolored squares arranged in a peculiar pattern. Perhaps it means something?
+ent-PaintingHelloWorld-name = Привет, мир
+ent-PaintingHelloWorld-desc = Эта картина состоит из множества разноцветных квадратов, расположенных своеобразным узором. Возможно, это что-то значит?
 
-ent-PaintingSadClown-name = Sad Clown
-ent-PaintingSadClown-desc = This painting is a sad clown! It sparks joy.
+ent-PaintingSadClown-name = Грустный клоун
+ent-PaintingSadClown-desc = Эта картина - грустный клоун! Это вызывает радость.
 
-ent-PaintingBase-name = base sign
+ent-PaintingBase-name = базовый знак
 

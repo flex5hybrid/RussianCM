@@ -1,2 +1,2 @@
-ent-DonkpocketBoxSpawner-name = Donkpocket Box Spawner
+ent-DonkpocketBoxSpawner-name = Создатель коробок Donkpocket
 

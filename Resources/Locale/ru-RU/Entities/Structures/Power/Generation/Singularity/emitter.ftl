@@ -1,3 +1,3 @@
-ent-Emitter-name = emitter
-ent-Emitter-desc = A heavy duty industrial laser. Shoots non-stop when turned on.
+ent-Emitter-name = излучатель
+ent-Emitter-desc = Мощный промышленный лазер. При включении стреляет без остановки.
 

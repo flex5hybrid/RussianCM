@@ -1,60 +1,60 @@
-ent-AltarBase-name = altar
-ent-AltarBase-desc = Altar of the Gods.
+ent-AltarBase-name = алтарь
+ent-AltarBase-desc = Алтарь Богов.
 
-ent-AltarNanotrasen-name = nanotrasen altar
-ent-AltarNanotrasen-desc = Altar of the Gods.
+ent-AltarNanotrasen-name = нанотрасен алтарь
+ent-AltarNanotrasen-desc = Алтарь Богов.
 
-ent-AltarChaos-name = chaos altar
-ent-AltarChaos-desc = Altar of the Gods.
+ent-AltarChaos-name = алтарь хаоса
+ent-AltarChaos-desc = Алтарь Богов.
 
-ent-AltarDruid-name = druid altar
-ent-AltarDruid-desc = Altar of the Gods.
+ent-AltarDruid-name = алтарь друида
+ent-AltarDruid-desc = Алтарь Богов.
 
-ent-AltarToolbox-name = toolbox altar
-ent-AltarToolbox-desc = Altar of the Gods.
+ent-AltarToolbox-name = алтарь ящика для инструментов
+ent-AltarToolbox-desc = Алтарь Богов.
 
-ent-AltarSpaceChristian-name = space-Christian altar
-ent-AltarSpaceChristian-desc = Altar of the Gods.
+ent-AltarSpaceChristian-name = Космически-христианский алтарь
+ent-AltarSpaceChristian-desc = Алтарь Богов.
 
-ent-AltarSatana-name = satanic altar
-ent-AltarSatana-desc = Altar of the Gods.
+ent-AltarSatana-name = сатанинский алтарь
+ent-AltarSatana-desc = Алтарь Богов.
 
-ent-AltarTechnology-name = technology altar
-ent-AltarTechnology-desc = Altar of the Gods.
+ent-AltarTechnology-name = технологический алтарь
+ent-AltarTechnology-desc = Алтарь Богов.
 
-ent-AltarConvertFestival-name = festival altar
-ent-AltarConvertFestival-desc = Altar of the Gods.
+ent-AltarConvertFestival-name = фестивальный алтарь
+ent-AltarConvertFestival-desc = Алтарь Богов.
 
-ent-AltarConvertMaint-name = maint altar
-ent-AltarConvertMaint-desc = Altar of the Gods.
+ent-AltarConvertMaint-name = главный алтарь
+ent-AltarConvertMaint-desc = Алтарь Богов.
 
-ent-AltarConvertBlue-name = blue altar
-ent-AltarConvertBlue-desc = Altar of the Gods.
+ent-AltarConvertBlue-name = синий алтарь
+ent-AltarConvertBlue-desc = Алтарь Богов.
 
-ent-AltarConvertBurden-name = burden altar
-ent-AltarConvertBurden-desc = Altar of the Gods.
+ent-AltarConvertBurden-name = алтарь бремени
+ent-AltarConvertBurden-desc = Алтарь Богов.
 
-ent-AltarConvert-name = convert altar
-ent-AltarConvert-desc = Altar of the Gods.
+ent-AltarConvert-name = преобразовать алтарь
+ent-AltarConvert-desc = Алтарь Богов.
 
-ent-AltarConvertOrange-name = orange altar
-ent-AltarConvertOrange-desc = Altar of the Gods.
+ent-AltarConvertOrange-name = оранжевый алтарь
+ent-AltarConvertOrange-desc = Алтарь Богов.
 
-ent-AltarConvertRed-name = red altar
-ent-AltarConvertRed-desc = Altar of the Gods.
+ent-AltarConvertRed-name = красный алтарь
+ent-AltarConvertRed-desc = Алтарь Богов.
 
-ent-AltarConvertWhite-name = white altar
-ent-AltarConvertWhite-desc = Altar of the Gods.
+ent-AltarConvertWhite-name = Белый алтарь
+ent-AltarConvertWhite-desc = Алтарь Богов.
 
-ent-AltarConvertYellow-name = yellow altar
-ent-AltarConvertYellow-desc = Altar of the Gods.
+ent-AltarConvertYellow-name = желтый алтарь
+ent-AltarConvertYellow-desc = Алтарь Богов.
 
-ent-AltarHeaven-name = heaven altar
-ent-AltarHeaven-desc = Altar of the Gods.
+ent-AltarHeaven-name = небесный алтарь
+ent-AltarHeaven-desc = Алтарь Богов.
 
-ent-AltarFangs-name = fanged altar
-ent-AltarFangs-desc = Altar of the Gods.
+ent-AltarFangs-name = клыкастый алтарь
+ent-AltarFangs-desc = Алтарь Богов.
 
-ent-AltarBananium-name = honkmother altar
-ent-AltarBananium-desc = A bananium altar dedicated to the honkmother.
+ent-AltarBananium-name = материнский алтарь
+ent-AltarBananium-desc = Банановый алтарь, посвященный почтенной матери.
 

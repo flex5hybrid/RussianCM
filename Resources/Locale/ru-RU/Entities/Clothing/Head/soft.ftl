@@ -1,82 +1,82 @@
-ent-ClothingHeadHatBluesoft-name = blue cap
-ent-ClothingHeadHatBluesoft-desc = A blue baseball cap.
+ent-ClothingHeadHatBluesoft-name = синяя кепка
+ent-ClothingHeadHatBluesoft-desc = Синяя бейсболка.
 
-ent-ClothingHeadHatBluesoftFlipped-name = blue cap
+ent-ClothingHeadHatBluesoftFlipped-name = синяя кепка
 
-ent-ClothingHeadHatCargosoft-name = cargo cap
-ent-ClothingHeadHatCargosoft-desc = A baseball cap colored to match cargo's uniforms.
+ent-ClothingHeadHatCargosoft-name = грузовая крышка
+ent-ClothingHeadHatCargosoft-desc = Бейсболка, окрашенная в тон униформы груза.
 
-ent-ClothingHeadHatCargosoftFlipped-name = cargo cap
+ent-ClothingHeadHatCargosoftFlipped-name = грузовая крышка
 
-ent-ClothingHeadHatQMsoft-name = quartermaster's cap
-ent-ClothingHeadHatQMsoft-desc = A baseball cap colored to match the Quartermaster's uniform.
+ent-ClothingHeadHatQMsoft-name = фуражка интенданта
+ent-ClothingHeadHatQMsoft-desc = Бейсболка цвета интендантской формы.
 
-ent-ClothingHeadHatQMsoftFlipped-name = quartermaster's cap
+ent-ClothingHeadHatQMsoftFlipped-name = фуражка интенданта
 
-ent-ClothingHeadHatCommandSoft-name = command cap
-ent-ClothingHeadHatCommandSoft-desc = A baseball cap in command's distinctive shade of blue.
+ent-ClothingHeadHatCommandSoft-name = командирская кепка
+ent-ClothingHeadHatCommandSoft-desc = Бейсболка характерного командного синего цвета.
 
-ent-ClothingHeadHatCommandSoftFlipped-name = command cap
+ent-ClothingHeadHatCommandSoftFlipped-name = командирская кепка
 
-ent-ClothingHeadHatCorpsoft-name = corporate cap
-ent-ClothingHeadHatCorpsoft-desc = A baseball cap in corporation colors.
+ent-ClothingHeadHatCorpsoft-name = корпоративная кепка
+ent-ClothingHeadHatCorpsoft-desc = Бейсболка корпоративных цветов.
 
-ent-ClothingHeadHatCorpsoftFlipped-name = corporate cap
+ent-ClothingHeadHatCorpsoftFlipped-name = корпоративная кепка
 
-ent-ClothingHeadHatGreensoft-name = green cap
-ent-ClothingHeadHatGreensoft-desc = A green baseball cap.
+ent-ClothingHeadHatGreensoft-name = зеленая кепка
+ent-ClothingHeadHatGreensoft-desc = Зеленая бейсболка.
 
-ent-ClothingHeadHatGreensoftFlipped-name = green cap
+ent-ClothingHeadHatGreensoftFlipped-name = зеленая кепка
 
-ent-ClothingHeadHatBlacksoft-name = black cap
-ent-ClothingHeadHatBlacksoft-desc = A black baseball cap.
+ent-ClothingHeadHatBlacksoft-name = черная кепка
+ent-ClothingHeadHatBlacksoft-desc = Черная бейсболка.
 
-ent-ClothingHeadHatBlacksoftFlipped-name = black cap
+ent-ClothingHeadHatBlacksoftFlipped-name = черная кепка
 
-ent-ClothingHeadHatGreysoft-name = grey cap
-ent-ClothingHeadHatGreysoft-desc = A grey baseball cap.
+ent-ClothingHeadHatGreysoft-name = серая кепка
+ent-ClothingHeadHatGreysoft-desc = Серая бейсболка.
 
-ent-ClothingHeadHatGreysoftFlipped-name = grey cap
+ent-ClothingHeadHatGreysoftFlipped-name = серая кепка
 
-ent-ClothingHeadHatMimesoft-name = white cap
-ent-ClothingHeadHatMimesoft-desc = A white baseball cap.
+ent-ClothingHeadHatMimesoft-name = белая кепка
+ent-ClothingHeadHatMimesoft-desc = Белая бейсболка.
 
-ent-ClothingHeadHatMimesoftFlipped-name = white cap
+ent-ClothingHeadHatMimesoftFlipped-name = белая кепка
 
-ent-ClothingHeadHatOrangesoft-name = orange cap
-ent-ClothingHeadHatOrangesoft-desc = An orange baseball cap.
+ent-ClothingHeadHatOrangesoft-name = оранжевая кепка
+ent-ClothingHeadHatOrangesoft-desc = Оранжевая бейсболка.
 
-ent-ClothingHeadHatOrangesoftFlipped-name = orange cap
+ent-ClothingHeadHatOrangesoftFlipped-name = оранжевая кепка
 
-ent-ClothingHeadHatPurplesoft-name = purple cap
-ent-ClothingHeadHatPurplesoft-desc = A purple baseball cap.
+ent-ClothingHeadHatPurplesoft-name = фиолетовая кепка
+ent-ClothingHeadHatPurplesoft-desc = Фиолетовая бейсболка.
 
-ent-ClothingHeadHatPurplesoftFlipped-name = purple cap
+ent-ClothingHeadHatPurplesoftFlipped-name = фиолетовая кепка
 
-ent-ClothingHeadHatRedsoft-name = red cap
-ent-ClothingHeadHatRedsoft-desc = A red baseball cap.
+ent-ClothingHeadHatRedsoft-name = красная шапка
+ent-ClothingHeadHatRedsoft-desc = Красная бейсболка.
 
-ent-ClothingHeadHatRedsoftFlipped-name = red cap
+ent-ClothingHeadHatRedsoftFlipped-name = красная шапка
 
-ent-ClothingHeadHatSecsoft-name = security cap
-ent-ClothingHeadHatSecsoft-desc = A baseball cap colored to match security's uniforms.
+ent-ClothingHeadHatSecsoft-name = защитный колпачок
+ent-ClothingHeadHatSecsoft-desc = Бейсболка, окрашенная в тон униформы сотрудников службы безопасности.
 
-ent-ClothingHeadHatSecsoftFlipped-name = security cap
+ent-ClothingHeadHatSecsoftFlipped-name = защитный колпачок
 
-ent-ClothingHeadHatYellowsoft-name = yellow cap
-ent-ClothingHeadHatYellowsoft-desc = A yellow baseball cap.
+ent-ClothingHeadHatYellowsoft-name = желтая кепка
+ent-ClothingHeadHatYellowsoft-desc = Желтая бейсболка.
 
-ent-ClothingHeadHatYellowsoftFlipped-name = yellow cap
+ent-ClothingHeadHatYellowsoftFlipped-name = желтая кепка
 
-ent-ClothingHeadHatBizarreSoft-name = troublemaker's cap
-ent-ClothingHeadHatBizarreSoft-desc = A truly.. bizarre accessory.
+ent-ClothingHeadHatBizarreSoft-name = кепка нарушителя спокойствия
+ent-ClothingHeadHatBizarreSoft-desc = Действительно... странный аксессуар.
 
-ent-ClothingHeadHatBizarreSoftFlipped-name = troublemaker's cap
+ent-ClothingHeadHatBizarreSoftFlipped-name = кепка нарушителя спокойствия
 
-ent-ClothingHeadHatParamedicsoft-name = paramedic cap
-ent-ClothingHeadHatParamedicsoft-desc = A blue baseball cap with a cross on the front.
+ent-ClothingHeadHatParamedicsoft-name = кепка фельдшера
+ent-ClothingHeadHatParamedicsoft-desc = Синяя бейсболка с крестом спереди.
 
-ent-ClothingHeadHatParamedicsoftFlipped-name = paramedic cap
+ent-ClothingHeadHatParamedicsoftFlipped-name = кепка фельдшера
 
 ent-ClothingHeadHeadHatBaseFlippable-name = lathe-category-clothing
 

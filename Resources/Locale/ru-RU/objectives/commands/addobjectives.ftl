@@ -1,6 +1,6 @@
 # addobjectives
 cmd-addobjective-desc = Добавляет цель в разум игрока.
-cmd-addobjective-help = addobjective <username> <objectiveID>
+cmd-addobjective-help = добавить цель <username> <objectiveID>
 
 cmd-addobjective-invalid-args = Ожидается 2 аргумента.
 cmd-addobjective-player-not-found = Не удалось найти игрока.

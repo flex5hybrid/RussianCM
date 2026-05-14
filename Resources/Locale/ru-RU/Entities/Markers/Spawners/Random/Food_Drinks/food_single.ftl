@@ -1,2 +1,2 @@
-ent-RandomFoodSingle-name = random food spawner
+ent-RandomFoodSingle-name = случайный спаунер еды
 

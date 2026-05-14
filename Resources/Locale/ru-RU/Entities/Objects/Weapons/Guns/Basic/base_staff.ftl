@@ -1,2 +1,2 @@
-ent-WeaponStaffBase-name = item
+ent-WeaponStaffBase-name = элемент
 

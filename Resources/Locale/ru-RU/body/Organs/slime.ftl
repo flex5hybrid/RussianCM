@@ -1,6 +1,6 @@
-ent-SentientSlimeCore-name = sentient slime core
-ent-SentientSlimeCore-desc = The source of incredible, unending gooeyness.
+ent-SentientSlimeCore-name = разумное ядро слизи
+ent-SentientSlimeCore-desc = Источник невероятной, бесконечной липкости.
 
-ent-OrganSlimeLungs-name = slime gas sacs
-ent-OrganSlimeLungs-desc = Collects nitrogen, which slime cells use for maintenance.
+ent-OrganSlimeLungs-name = мешочки со слизевым газом
+ent-OrganSlimeLungs-desc = Собирает азот, который клетки слизи используют для поддержания жизнедеятельности.
 

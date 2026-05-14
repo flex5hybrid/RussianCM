@@ -1,12 +1,12 @@
-ent-ShotGunCabinet-name = shotgun cabinet
-ent-ShotGunCabinet-desc = There is a small label that reads "For Emergency use only" along with details for safe use of the shotgun. As if.
+ent-ShotGunCabinet-name = шкаф для дробовика
+ent-ShotGunCabinet-desc = Имеется небольшая этикетка с надписью «Только для экстренного использования» и инструкциями по безопасному использованию ружья. Как будто.
 
-ent-ShotGunCabinetOpen-name = shotgun cabinet
-ent-ShotGunCabinetOpen-desc = There is a small label that reads "For Emergency use only" along with details for safe use of the shotgun. As if.
+ent-ShotGunCabinetOpen-name = шкаф для дробовика
+ent-ShotGunCabinetOpen-desc = Имеется небольшая этикетка с надписью «Только для экстренного использования» и инструкциями по безопасному использованию ружья. Как будто.
 
-ent-ShotGunCabinetFilled-name = shotgun cabinet
-ent-ShotGunCabinetFilled-desc = There is a small label that reads "For Emergency use only" along with details for safe use of the shotgun. As if.
+ent-ShotGunCabinetFilled-name = шкаф для дробовика
+ent-ShotGunCabinetFilled-desc = Имеется небольшая этикетка с надписью «Только для экстренного использования» и инструкциями по безопасному использованию ружья. Как будто.
 
-ent-ShotGunCabinetFilledOpen-name = shotgun cabinet
-ent-ShotGunCabinetFilledOpen-desc = There is a small label that reads "For Emergency use only" along with details for safe use of the shotgun. As if.
+ent-ShotGunCabinetFilledOpen-name = шкаф для дробовика
+ent-ShotGunCabinetFilledOpen-desc = Имеется небольшая этикетка с надписью «Только для экстренного использования» и инструкциями по безопасному использованию ружья. Как будто.
 

@@ -1,6 +1,6 @@
-ent-BaseBow-name = bow
-ent-BaseBow-desc = The original rooty tooty point and shooty.
+ent-BaseBow-name = лук
+ent-BaseBow-desc = Оригинальный рути-пойнт и шути.
 
-ent-BowImprovised-name = bow
-ent-BowImprovised-desc = The original rooty tooty point and shooty.
+ent-BowImprovised-name = лук
+ent-BowImprovised-desc = Оригинальный рути-пойнт и шути.
 

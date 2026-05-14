@@ -80,7 +80,7 @@ ban-panel-erase = Стереть сообщения в чате и игрока 
 ban-panel-expiry-error = ошибка
 
 # Ban string
-server-ban-string = { $admin } created a { $severity } severity server ban that expires { $expires } for [{ $name }, { $ip }, { $hwid }], with reason: { $reason }
+server-ban-string = { $admin } создал бан сервера { $severity }, срок действия которого истекает { $expires } для [{ $name }, { $ip }, { $hwid }], с причиной: { $reason }.
 server-ban-string-no-pii = { $admin } установил серверный бан { $severity } тяжести, который истечёт { $expires } у { $name } с причиной: { $reason }
 server-ban-string-never = никогда
 

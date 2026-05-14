@@ -73,3 +73,7 @@ rmc-squad-info-RCMLieutenant = Лейтенант
 
 rmc-squad-info-ParaTeamLeader = Командир группы
 rmc-squad-info-ParaCommander = Командир
+
+# Missing entries synced from en-US
+
+rmc-squad-info-BattleBuddy = Боевой приятель

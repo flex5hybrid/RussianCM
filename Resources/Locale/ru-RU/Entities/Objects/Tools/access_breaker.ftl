@@ -1,6 +1,6 @@
-ent-AccessBreakerUnlimited-name = authentication disruptor
-ent-AccessBreakerUnlimited-desc = A hacked access configurator, specialized to unlock and erase access from digital locks.
+ent-AccessBreakerUnlimited-name = нарушитель аутентификации
+ent-AccessBreakerUnlimited-desc = Взломанный конфигуратор доступа, специализирующийся на разблокировке и удалении доступа к цифровым замкам.
 
-ent-AccessBreaker-name = authentication disruptor
-ent-AccessBreaker-desc = A hacked access configurator, specialized to unlock and erase access from digital locks.
+ent-AccessBreaker-name = нарушитель аутентификации
+ent-AccessBreaker-desc = Взломанный конфигуратор доступа, специализирующийся на разблокировке и удалении доступа к цифровым замкам.
 

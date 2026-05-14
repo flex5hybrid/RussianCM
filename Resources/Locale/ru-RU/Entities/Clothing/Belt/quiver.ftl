@@ -1,3 +1,3 @@
-ent-ClothingBeltQuiver-name = quiver
-ent-ClothingBeltQuiver-desc = Can hold up to 15 arrows, and fits snug around your waist.
+ent-ClothingBeltQuiver-name = колчан
+ent-ClothingBeltQuiver-desc = Вмещает до 15 стрел и плотно прилегает к талии.
 

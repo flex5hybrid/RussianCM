@@ -1,42 +1,42 @@
-ent-BlastDoorExterior1-name = shutter
-ent-BlastDoorExterior1-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorExterior1-name = затвор
+ent-BlastDoorExterior1-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-BlastDoorExterior1Open-name = shutter
-ent-BlastDoorExterior1Open-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorExterior1Open-name = затвор
+ent-BlastDoorExterior1Open-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-BlastDoorExterior2-name = shutter
-ent-BlastDoorExterior2-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorExterior2-name = затвор
+ent-BlastDoorExterior2-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-BlastDoorExterior2Open-name = shutter
-ent-BlastDoorExterior2Open-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorExterior2Open-name = затвор
+ent-BlastDoorExterior2Open-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-BlastDoorExterior3-name = shutter
-ent-BlastDoorExterior3-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorExterior3-name = затвор
+ent-BlastDoorExterior3-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-BlastDoorExterior3Open-name = shutter
-ent-BlastDoorExterior3Open-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorExterior3Open-name = затвор
+ent-BlastDoorExterior3Open-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-BlastDoorBridge-name = shutter
-ent-BlastDoorBridge-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorBridge-name = затвор
+ent-BlastDoorBridge-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-BlastDoorBridgeOpen-name = shutter
-ent-BlastDoorBridgeOpen-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorBridgeOpen-name = затвор
+ent-BlastDoorBridgeOpen-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-BlastDoorEngineering-name = shutter
-ent-BlastDoorEngineering-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorEngineering-name = затвор
+ent-BlastDoorEngineering-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-BlastDoorEngineeringOpen-name = shutter
-ent-BlastDoorEngineeringOpen-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorEngineeringOpen-name = затвор
+ent-BlastDoorEngineeringOpen-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-BlastDoorScience-name = shutter
-ent-BlastDoorScience-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorScience-name = затвор
+ent-BlastDoorScience-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-BlastDoorScienceOpen-name = shutter
-ent-BlastDoorScienceOpen-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorScienceOpen-name = затвор
+ent-BlastDoorScienceOpen-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-BlastDoorWindows-name = shutter
-ent-BlastDoorWindows-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorWindows-name = затвор
+ent-BlastDoorWindows-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-BlastDoorWindowsOpen-name = shutter
-ent-BlastDoorWindowsOpen-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorWindowsOpen-name = затвор
+ent-BlastDoorWindowsOpen-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 

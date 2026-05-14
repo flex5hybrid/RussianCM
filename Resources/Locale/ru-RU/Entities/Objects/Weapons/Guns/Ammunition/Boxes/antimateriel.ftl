@@ -1,4 +1,4 @@
-ent-BaseMagazineBoxAntiMateriel-name = ammunition box (.60 anti-materiel)
+ent-BaseMagazineBoxAntiMateriel-name = ящик для боеприпасов (противоматериальные средства .60)
 
-ent-MagazineBoxAntiMateriel-name = ammunition box (.60 anti-materiel)
+ent-MagazineBoxAntiMateriel-name = ящик для боеприпасов (противоматериальные средства .60)
 

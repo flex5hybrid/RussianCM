@@ -1,6 +1,6 @@
-ent-AccessConfigurator-name = access configurator
-ent-AccessConfigurator-desc = Used to modify the access level requirements for airlocks and other lockable devices.
+ent-AccessConfigurator-name = конфигуратор доступа
+ent-AccessConfigurator-desc = Используется для изменения требований к уровню доступа для шлюзов и других запираемых устройств.
 
-ent-AccessConfiguratorUniversal-name = universal access configurator
-ent-AccessConfiguratorUniversal-desc = A modified access configurator used only by the mythical Administrator.
+ent-AccessConfiguratorUniversal-name = универсальный конфигуратор доступа
+ent-AccessConfiguratorUniversal-desc = Модифицированный конфигуратор доступа, используемый только мифическим Администратором.
 

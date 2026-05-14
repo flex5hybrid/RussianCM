@@ -1,51 +1,51 @@
-ent-EncryptionKey-name = encryption key
-ent-EncryptionKey-desc = A small cypher chip for headsets.
+ent-EncryptionKey-name = ключ шифрования
+ent-EncryptionKey-desc = Небольшой шифровальный чип для гарнитур.
 
-ent-EncryptionKeyCommon-name = common encryption key
-ent-EncryptionKeyCommon-desc = An encryption key used by anyone.
+ent-EncryptionKeyCommon-name = общий ключ шифрования
+ent-EncryptionKeyCommon-desc = Ключ шифрования, используемый кем угодно.
 
-ent-EncryptionKeyCargo-name = cargo encryption key
-ent-EncryptionKeyCargo-desc = An encryption key used by supply employees.
+ent-EncryptionKeyCargo-name = ключ шифрования груза
+ent-EncryptionKeyCargo-desc = Ключ шифрования, используемый сотрудниками снабжения.
 
-ent-EncryptionKeyCentCom-name = central command encryption key
-ent-EncryptionKeyCentCom-desc = An encryption key used by captain's bosses.
+ent-EncryptionKeyCentCom-name = ключ шифрования центрального командования
+ent-EncryptionKeyCentCom-desc = Ключ шифрования, используемый капитанским начальством.
 
-ent-EncryptionKeyStationMaster-name = station master encryption key
-ent-EncryptionKeyStationMaster-desc = An encryption key used by station's bosses.
+ent-EncryptionKeyStationMaster-name = главный ключ шифрования станции
+ent-EncryptionKeyStationMaster-desc = Ключ шифрования, используемый боссами станции.
 
-ent-EncryptionKeyCommand-name = command encryption key
-ent-EncryptionKeyCommand-desc = An encryption key used by crew's bosses.
+ent-EncryptionKeyCommand-name = ключ шифрования команды
+ent-EncryptionKeyCommand-desc = Ключ шифрования, используемый начальниками экипажа.
 
-ent-EncryptionKeyEngineering-name = engineering encryption key
-ent-EncryptionKeyEngineering-desc = An encryption key used by the engineers.
+ent-EncryptionKeyEngineering-name = инженерный ключ шифрования
+ent-EncryptionKeyEngineering-desc = Ключ шифрования, используемый инженерами.
 
-ent-EncryptionKeyMedical-name = medical encryption key
-ent-EncryptionKeyMedical-desc = An encryption key used by those who save lives.
+ent-EncryptionKeyMedical-name = медицинский ключ шифрования
+ent-EncryptionKeyMedical-desc = Ключ шифрования, используемый теми, кто спасает жизни.
 
-ent-EncryptionKeyMedicalScience-name = med-sci encryption key
-ent-EncryptionKeyMedicalScience-desc = An encryption key used by someone who hasn't decided which side to take.
+ent-EncryptionKeyMedicalScience-name = ключ шифрования для медицинских наук
+ent-EncryptionKeyMedicalScience-desc = Ключ шифрования, используемый кем-то, кто еще не решил, на чьей стороне встать.
 
-ent-EncryptionKeyScience-name = science encryption key
-ent-EncryptionKeyScience-desc = An encryption key used by scientists. Maybe it is plasmaproof?
+ent-EncryptionKeyScience-name = научный ключ шифрования
+ent-EncryptionKeyScience-desc = Ключ шифрования, используемый учёными. Может быть, он плазмобезопасен?
 
-ent-EncryptionKeyRobo-name = robotech encryption key
-ent-EncryptionKeyRobo-desc = An encryption key used by robototech engineers. Maybe it has a LAH-6000 on it?
+ent-EncryptionKeyRobo-name = ключ шифрования робототехники
+ent-EncryptionKeyRobo-desc = Ключ шифрования, используемый инженерами-робототехниками. Может быть, на нем стоит LAH-6000?
 
-ent-EncryptionKeySecurity-name = security encryption key
-ent-EncryptionKeySecurity-desc = An encryption key used by security.
+ent-EncryptionKeySecurity-name = ключ шифрования безопасности
+ent-EncryptionKeySecurity-desc = Ключ шифрования, используемый службой безопасности.
 
-ent-EncryptionKeyService-name = service encryption key
-ent-EncryptionKeyService-desc = An encryption key used by the service staff, tasked with keeping the station full, happy and clean.
+ent-EncryptionKeyService-name = ключ шифрования службы
+ent-EncryptionKeyService-desc = Ключ шифрования, используемый обслуживающим персоналом, которому поручено поддерживать станцию заполненной, счастливой и чистой.
 
-ent-EncryptionKeySyndie-name = blood-red encryption key
-ent-EncryptionKeySyndie-desc = An encryption key used by... wait... Who is the owner of this chip?
+ent-EncryptionKeySyndie-name = кроваво-красный ключ шифрования
+ent-EncryptionKeySyndie-desc = Ключ шифрования, используемый... подожди... Кто владелец этого чипа?
 
-ent-EncryptionKeyBinary-name = binary translator key
-ent-EncryptionKeyBinary-desc = An encryption key that translates binary signals used by silicons.
+ent-EncryptionKeyBinary-name = бинарный ключ транслятора
+ent-EncryptionKeyBinary-desc = Ключ шифрования, который преобразует двоичные сигналы, используемые кремниями.
 
-ent-EncryptionKeyBinarySyndicate-name = binary translator key
-ent-EncryptionKeyBinarySyndicate-desc = A syndicate encryption key that translates binary signals used by silicons.
+ent-EncryptionKeyBinarySyndicate-name = бинарный ключ транслятора
+ent-EncryptionKeyBinarySyndicate-desc = Ключ шифрования синдиката, который преобразует двоичные сигналы, используемые кремниями.
 
-ent-EncryptionKeyFreelance-name = freelancer encryption key
-ent-EncryptionKeyFreelance-desc = An encryption key used by freelancers, who may or may not have an affiliation. It looks like it's worn out.
+ent-EncryptionKeyFreelance-name = ключ шифрования фрилансера
+ent-EncryptionKeyFreelance-desc = Ключ шифрования, используемый фрилансерами, которые могут иметь или не иметь аффилированность. Похоже, он изношен.
 

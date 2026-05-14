@@ -1,6 +1,6 @@
-ent-RadioJammer-name = radio jammer
-ent-RadioJammer-desc = This device will disrupt any nearby outgoing radio communication as well as suit sensors when activated.
+ent-RadioJammer-name = радиоглушитель
+ent-RadioJammer-desc = Это устройство нарушит любую исходящую радиосвязь поблизости, а также сработает датчики костюма при активации.
 
-ent-XenoborgRadioJammer-name = xenoborg radio jammer
-ent-XenoborgRadioJammer-desc = This device will disrupt any nearby outgoing radio communication as well as suit sensors when activated.
+ent-XenoborgRadioJammer-name = радиоглушитель ксеноборга
+ent-XenoborgRadioJammer-desc = Это устройство нарушит любую исходящую радиосвязь поблизости, а также сработает датчики костюма при активации.
 

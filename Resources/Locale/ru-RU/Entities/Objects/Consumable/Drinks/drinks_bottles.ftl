@@ -1,146 +1,146 @@
-ent-DrinkAbsintheBottleFull-name = Jailbreaker Verte
-ent-DrinkAbsintheBottleFull-desc = One sip of this and you just know you're gonna have a good time.
+ent-DrinkAbsintheBottleFull-name = Джейлбрейкер Верте
+ent-DrinkAbsintheBottleFull-desc = Один глоток этого, и ты знаешь, что хорошо проведешь время.
 
-ent-DrinkBlueCuracaoBottleFull-name = Miss Blue Curaçao
-ent-DrinkBlueCuracaoBottleFull-desc = A fruity, exceptionally azure drink. Does not allow the imbiber to use the fifth magic.
+ent-DrinkBlueCuracaoBottleFull-name = Мисс Блю Кюрасао
+ent-DrinkBlueCuracaoBottleFull-desc = Фруктовый, исключительно лазурного напитка. Не позволяет выпившему использовать пятую магию.
 
-ent-DrinkBottleOfNothingFull-name = bottle of nothing
-ent-DrinkBottleOfNothingFull-desc = A bottle filled with nothing.
+ent-DrinkBottleOfNothingFull-name = бутылка ни с чем
+ent-DrinkBottleOfNothingFull-desc = Бутылка, наполненная ничем.
 
-ent-DrinkChampagneBottleFull-name = champagne bottle
-ent-DrinkChampagneBottleFull-desc = Only people devoid of imagination can't find an excuse for champagne.
+ent-DrinkChampagneBottleFull-name = бутылка шампанского
+ent-DrinkChampagneBottleFull-desc = Только люди, лишенные воображения, не могут найти оправдания шампанскому.
 
-ent-DrinkCognacBottleFull-name = cognac bottle
-ent-DrinkCognacBottleFull-desc = A sweet and strongly alcoholic drink, made after numerous distillations and years of maturing. You might as well not scream 'SHITCURITY' this time.
+ent-DrinkCognacBottleFull-name = бутылка коньяка
+ent-DrinkCognacBottleFull-desc = Сладкий и сильноалкогольный напиток, изготовленный после многочисленных дистилляций и многолетних выдержек. На этот раз ты мог бы не кричать «ДЕРЬМО».
 
-ent-DrinkGrenadineBottleFull-name = Briar Rose grenadine syrup bottle
-ent-DrinkGrenadineBottleFull-desc = Sweet and tangy, a bar syrup used to add color or flavor to drinks.
+ent-DrinkGrenadineBottleFull-name = Бутылка сиропа Гренадин Briar Rose
+ent-DrinkGrenadineBottleFull-desc = Сладкий и острый сироп, используемый для придания цвета или аромата напиткам.
 
-ent-DrinkGinBottleFull-name = Griffeater gin
-ent-DrinkGinBottleFull-desc = A bottle of high quality gin, produced in the New London Space Station.
+ent-DrinkGinBottleFull-name = Джин Гриффитер
+ent-DrinkGinBottleFull-desc = Бутылка высококачественного джина, произведенного на космической станции Нью-Лондон.
 
-ent-DrinkGildlagerBottleFull-name = Gildlager bottle
-ent-DrinkGildlagerBottleFull-desc = 100 proof cinnamon schnapps, made for alcoholic teen girls on spring break.
+ent-DrinkGildlagerBottleFull-name = Бутылка Гилдлагера
+ent-DrinkGildlagerBottleFull-desc = 100 крепких шнапсов с корицей, приготовленных для девочек-алкоголичек на весенних каникулах.
 
-ent-DrinkCoffeeLiqueurBottleFull-name = coffee liqueur bottle
-ent-DrinkCoffeeLiqueurBottleFull-desc = The great taste of coffee with none of the benifits.
+ent-DrinkCoffeeLiqueurBottleFull-name = бутылка кофейного ликера
+ent-DrinkCoffeeLiqueurBottleFull-desc = Великолепный вкус кофе без каких-либо преимуществ.
 
-ent-DrinkMelonLiquorBottleFull-name = Emeraldine melon liquor
-ent-DrinkMelonLiquorBottleFull-desc = A bottle of 46 proof Emeraldine melon liquor. Sweet and light.
+ent-DrinkMelonLiquorBottleFull-name = Изумрудно-дынный ликер
+ent-DrinkMelonLiquorBottleFull-desc = Бутылка дынного ликера Emeraldine крепостью 46 градусов. Сладкий и легкий.
 
-ent-DrinkPatronBottleFull-name = Wrapp Artiste Patrón bottle
-ent-DrinkPatronBottleFull-desc = Silver laced tequila, served in space night clubs across the galaxy.
+ent-DrinkPatronBottleFull-name = Бутылка Wrapp Artiste Patrón
+ent-DrinkPatronBottleFull-desc = Текила с серебряными нотками, которую подают в космических ночных клубах по всей галактике.
 
-ent-DrinkPoisonWinebottleFull-name = Warlock's Velvet bottle
-ent-DrinkPoisonWinebottleFull-desc = What a delightful packaging for a surely high quality wine! The vintage must be amazing!
+ent-DrinkPoisonWinebottleFull-name = Бархатная бутылка Чернокнижника
+ent-DrinkPoisonWinebottleFull-desc = Какая восхитительная упаковка для вина высочайшего качества! Винтаж, должно быть, потрясающий!
 
-ent-DrinkRumBottleFull-name = Captain Pete's Cuban spiced rum
-ent-DrinkRumBottleFull-desc = This isn't just rum, oh no. It's practically GRIFF in a bottle.
+ent-DrinkRumBottleFull-name = Кубинский пряный ром Капитана Пита
+ent-DrinkRumBottleFull-desc = Это не просто ром, о нет. Это практически ГРИФФ во флаконе.
 
-ent-DrinkTequilaBottleFull-name = Caccavo Guaranteed Quality tequila bottle
-ent-DrinkTequilaBottleFull-desc = Made from premium petroleum distillates, pure thalidomide and other fine quality ingredients!
+ent-DrinkTequilaBottleFull-name = Бутылка текилы гарантированного качества Caccavo
+ent-DrinkTequilaBottleFull-desc = Изготовлен из нефтяных дистиллятов премиум-класса, чистого талидомида и других ингредиентов высочайшего качества!
 
-ent-DrinkVermouthBottleFull-name = Goldeneye vermouth bottle
-ent-DrinkVermouthBottleFull-desc = Sweet, sweet dryness!
+ent-DrinkVermouthBottleFull-name = Бутылка вермута Goldeneye
+ent-DrinkVermouthBottleFull-desc = Сладкая, сладкая сухость!
 
-ent-DrinkVodkaBottleFull-name = vodka bottle
-ent-DrinkVodkaBottleFull-desc = Aah, vodka. Prime choice of drink AND fuel by Russians worldwide.
+ent-DrinkVodkaBottleFull-name = бутылка водки
+ent-DrinkVodkaBottleFull-desc = Ааа, водка. Лучший выбор напитков и топлива россиянами по всему миру.
 
-ent-DrinkWhiskeyBottleFull-name = Uncle Git's Special Reserve
-ent-DrinkWhiskeyBottleFull-desc = A premium single-malt whiskey, gently matured inside the tunnels of a nuclear shelter. TUNNEL WHISKEY RULES.
+ent-DrinkWhiskeyBottleFull-name = Особый резерв дяди Гита
+ent-DrinkWhiskeyBottleFull-desc = Односолодовый виски премиум-класса, бережно выдержанный в туннелях ядерного убежища. ПРАВИЛА ТУННЕЛЬНОГО ВИСКИ.
 
-ent-DrinkWineBottleFull-name = Doublebearded Bearded Special wine bottle
-ent-DrinkWineBottleFull-desc = A faint aura of unease and asspainery surrounds the bottle.
+ent-DrinkWineBottleFull-name = Бутылка вина Doublebearded Bearded Special
+ent-DrinkWineBottleFull-desc = Бутылку окружает слабая аура беспокойства и беспокойства.
 
-ent-DrinkBeerGrowler-name = beer growler
-ent-DrinkBeerGrowler-desc = An alcoholic beverage made from malted grains, hops, yeast, and water. XL growler bottle.
+ent-DrinkBeerGrowler-name = пивовар
+ent-DrinkBeerGrowler-desc = Алкогольный напиток, приготовленный из солодового зерна, хмеля, дрожжей и воды. Бутылка для гроулера XL.
 
-ent-DrinkAleBottleFullGrowler-name = Magm-Ale growler
-ent-DrinkAleBottleFullGrowler-desc = A true dorf's drink of choice. XL growler bottle.
+ent-DrinkAleBottleFullGrowler-name = Гроулер Магм-Эля
+ent-DrinkAleBottleFullGrowler-desc = Настоящий напиток Дорфа. Бутылка для гроулера XL.
 
-ent-DrinkColaBottleFull-name = Space Cola bottle
-ent-DrinkColaBottleFull-desc = Cola. In spaaace!
+ent-DrinkColaBottleFull-name = Бутылка космической колы
+ent-DrinkColaBottleFull-desc = Кола. В космосе!
 
-ent-DrinkSpaceMountainWindBottleFull-name = Space Solar Wind bottle
-ent-DrinkSpaceMountainWindBottleFull-desc = Blows right through you like a solar wind.
+ent-DrinkSpaceMountainWindBottleFull-name = Бутылка космического солнечного ветра
+ent-DrinkSpaceMountainWindBottleFull-desc = Дует сквозь тебя, как солнечный ветер.
 
-ent-DrinkSpaceUpBottleFull-name = Space-Up bottle
-ent-DrinkSpaceUpBottleFull-desc = Tastes like a hull breach in your mouth.
+ent-DrinkSpaceUpBottleFull-name = Космическая бутылка
+ent-DrinkSpaceUpBottleFull-desc = Во рту вкус пробоины корпуса.
 
-ent-DrinkSodaWaterBottleFull-name = soda water bottle
-ent-DrinkSodaWaterBottleFull-desc = Like water, but angry!
+ent-DrinkSodaWaterBottleFull-name = бутылка газированной воды
+ent-DrinkSodaWaterBottleFull-desc = Как вода, но злая!
 
-ent-DrinkTonicWaterBottleFull-name = tonic water bottle
-ent-DrinkTonicWaterBottleFull-desc = Like soda water, but angrier maybe? Often sweeter.
+ent-DrinkTonicWaterBottleFull-name = бутылка тоника
+ent-DrinkTonicWaterBottleFull-desc = Как газированная вода, но, может быть, злее? Часто слаще.
 
-ent-DrinkWaterBottleFull-name = water bottle
-ent-DrinkWaterBottleFull-desc = Simple clean water of unknown origin. You think that maybe you dont want to know it.
+ent-DrinkWaterBottleFull-name = бутылка с водой
+ent-DrinkWaterBottleFull-desc = Простая чистая вода неизвестного происхождения. Вы думаете, что, возможно, вы не хотите этого знать.
 
-ent-DrinkBeerBottleFull-name = beer bottle
-ent-DrinkBeerBottleFull-desc = An alcoholic beverage made from malted grains, hops, yeast, and water.
+ent-DrinkBeerBottleFull-name = бутылка пива
+ent-DrinkBeerBottleFull-desc = Алкогольный напиток, приготовленный из солодового зерна, хмеля, дрожжей и воды.
 
-ent-DrinkAleBottleFull-name = Magm-Ale bottle
-ent-DrinkAleBottleFull-desc = A true dorf's drink of choice.
+ent-DrinkAleBottleFull-name = Бутылка Магм-Эля
+ent-DrinkAleBottleFull-desc = Настоящий напиток Дорфа.
 
-ent-DrinkSakeBottleFull-name = small sake bottle
-ent-DrinkSakeBottleFull-desc = The regret of the next morning seems to be nipping on the bottle too.
+ent-DrinkSakeBottleFull-name = маленькая бутылка саке
+ent-DrinkSakeBottleFull-desc = Сожаление о следующем утре, кажется, тоже притягивает бутылку.
 
-ent-DrinkJuiceLimeCartonXL-name = lime juice XL
-ent-DrinkJuiceLimeCartonXL-desc = Sweet-sour goodness.
+ent-DrinkJuiceLimeCartonXL-name = сок лайма XL
+ent-DrinkJuiceLimeCartonXL-desc = Кисло-сладкое совершенство.
 
-ent-DrinkJuiceOrangeCartonXL-name = orange juice XL
-ent-DrinkJuiceOrangeCartonXL-desc = Full of vitamins and deliciousness!
+ent-DrinkJuiceOrangeCartonXL-name = апельсиновый сок XL
+ent-DrinkJuiceOrangeCartonXL-desc = Полно витаминов и вкуса!
 
-ent-DrinkCreamCartonXL-name = milk cream XL
-ent-DrinkCreamCartonXL-desc = It's cream. Made from milk. What else did you think you'd find in there?
+ent-DrinkCreamCartonXL-name = молочный крем XL
+ent-DrinkCreamCartonXL-desc = Это крем. Изготовлено из молока. Что еще, по вашему мнению, вы там найдете?
 
-ent-DrinkSugarJug-name = sugar jug
-ent-DrinkSugarJug-desc = Some people put this in their coffee...
+ent-DrinkSugarJug-name = сахарница
+ent-DrinkSugarJug-desc = Некоторые люди добавляют это в кофе...
 
-ent-DrinkLemonLimeJug-name = Smite jug
-ent-DrinkLemonLimeJug-desc = A dual citrus sensation.
+ent-DrinkLemonLimeJug-name = Поразить кувшин
+ent-DrinkLemonLimeJug-desc = Двойное цитрусовое ощущение.
 
-ent-DrinkMeadJug-name = mead jug
-ent-DrinkMeadJug-desc = Storing mead in a plastic jug should be a crime.
+ent-DrinkMeadJug-name = кувшин для медовухи
+ent-DrinkMeadJug-desc = Хранение медовухи в пластиковой кувшине должно быть преступлением.
 
-ent-DrinkIceJug-name = ice jug
-ent-DrinkIceJug-desc = Stubborn water. Pretty cool.
+ent-DrinkIceJug-name = кувшин для льда
+ent-DrinkIceJug-desc = Упрямая вода. Довольно круто.
 
-ent-DrinkCoconutWaterJug-name = coconut water jug
-ent-DrinkCoconutWaterJug-desc = It's on the inside of the coconut that counts.
+ent-DrinkCoconutWaterJug-name = кувшин для кокосовой воды
+ent-DrinkCoconutWaterJug-desc = Важно то, что находится внутри кокоса.
 
-ent-DrinkCoffeeJug-name = coffee jug
-ent-DrinkCoffeeJug-desc = Wake up juice, of the heated kind.
+ent-DrinkCoffeeJug-name = кувшин для кофе
+ent-DrinkCoffeeJug-desc = Сок для пробуждения, подогретый.
 
-ent-DrinkTeaJug-name = tea jug
-ent-DrinkTeaJug-desc = The drink of choice for the Bri'ish and hipsters.
+ent-DrinkTeaJug-name = кувшин для чая
+ent-DrinkTeaJug-desc = Напиток, который предпочитают британцы и хипстеры.
 
-ent-DrinkGreenTeaJug-name = green tea jug
-ent-DrinkGreenTeaJug-desc = It's like tea... but green! great for settling the stomach.
+ent-DrinkGreenTeaJug-name = кувшин зеленого чая
+ent-DrinkGreenTeaJug-desc = Это как чай... но зеленый! отлично успокаивает желудок.
 
-ent-DrinkIcedTeaJug-name = iced tea jug
-ent-DrinkIcedTeaJug-desc = For when the regular tea is too hot for you. Boohoo.
+ent-DrinkIcedTeaJug-name = кувшин для холодного чая
+ent-DrinkIcedTeaJug-desc = На случай, если обычный чай вам покажется слишком горячим. Фууу.
 
-ent-DrinkDrGibbJug-name = Dr. Gibb jug
-ent-DrinkDrGibbJug-desc = 42 different flavours... in a jug!
+ent-DrinkDrGibbJug-name = Доктор Гибб кувшин
+ent-DrinkDrGibbJug-desc = 42 разных вкуса... в кувшине!
 
-ent-DrinkRootBeerJug-name = root beer jug
-ent-DrinkRootBeerJug-desc = This drink makes Australians giggle.
+ent-DrinkRootBeerJug-name = кувшин для корневого пива
+ent-DrinkRootBeerJug-desc = Этот напиток заставляет австралийцев хихикать.
 
-ent-DrinkWaterMelonJuiceJug-name = watermelon juice jug
-ent-DrinkWaterMelonJuiceJug-desc = May include leftover seeds.
+ent-DrinkWaterMelonJuiceJug-name = кувшин для арбузного сока
+ent-DrinkWaterMelonJuiceJug-desc = Могут включать остатки семян.
 
-ent-DrinkEnergyDrinkJug-name = Red Bool jug
-ent-DrinkEnergyDrinkJug-desc = A jug of Red Bool, with enough caffeine to kill a whole station.
+ent-DrinkEnergyDrinkJug-name = Красный кувшин Bool
+ent-DrinkEnergyDrinkJug-desc = Кувшин Red Bool, в котором столько кофеина, что можно убить целую станцию.
 
-ent-CustomDrinkJug-name = beverage jug
-ent-CustomDrinkJug-desc = A jug for storing custom made drinks.
+ent-CustomDrinkJug-name = кувшин для напитков
+ent-CustomDrinkJug-desc = Кувшин для хранения напитков, приготовленных на заказ.
 
-ent-DrinkBottlePlasticBaseFull-name = item
+ent-DrinkBottlePlasticBaseFull-name = элемент
 
-ent-DrinkBottlePlasticSmallBaseFull-name = item
+ent-DrinkBottlePlasticSmallBaseFull-name = элемент
 
-ent-DrinkBottleGlassSmallBaseFull-name = item
+ent-DrinkBottleGlassSmallBaseFull-name = элемент
 
-ent-DrinkBottleGlassBaseFull-name = item
+ent-DrinkBottleGlassBaseFull-name = элемент
 

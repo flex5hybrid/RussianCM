@@ -1,42 +1,42 @@
-ent-GasMinerBase-name = gas miner
-ent-GasMinerBase-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerBase-name = газовый шахтер
+ent-GasMinerBase-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 
-ent-GasMinerOxygen-name = O2 gas miner
-ent-GasMinerOxygen-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerOxygen-name = добытчик газа O2
+ent-GasMinerOxygen-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 
-ent-GasMinerOxygenStation-name = O2 gas miner
-ent-GasMinerOxygenStation-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerOxygenStation-name = добытчик газа O2
+ent-GasMinerOxygenStation-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 
-ent-GasMinerOxygenStationLarge-name = O2 gas miner
-ent-GasMinerOxygenStationLarge-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerOxygenStationLarge-name = добытчик газа O2
+ent-GasMinerOxygenStationLarge-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 
-ent-GasMinerNitrogen-name = N2 gas miner
-ent-GasMinerNitrogen-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerNitrogen-name = Газовый шахтер N2
+ent-GasMinerNitrogen-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 
-ent-GasMinerNitrogenStation-name = N2 gas miner
-ent-GasMinerNitrogenStation-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerNitrogenStation-name = Газовый шахтер N2
+ent-GasMinerNitrogenStation-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 
-ent-GasMinerNitrogenStationLarge-name = N2 gas miner
-ent-GasMinerNitrogenStationLarge-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerNitrogenStationLarge-name = Газовый шахтер N2
+ent-GasMinerNitrogenStationLarge-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 
-ent-GasMinerCarbonDioxide-name = CO2 gas miner
-ent-GasMinerCarbonDioxide-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerCarbonDioxide-name = Добыча газа CO2
+ent-GasMinerCarbonDioxide-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 
-ent-GasMinerPlasma-name = plasma gas miner
-ent-GasMinerPlasma-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerPlasma-name = шахтер плазменного газа
+ent-GasMinerPlasma-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 
-ent-GasMinerTritium-name = tritium gas miner
-ent-GasMinerTritium-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerTritium-name = добытчик трития
+ent-GasMinerTritium-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 
-ent-GasMinerFrezon-name = frezon gas miner
-ent-GasMinerFrezon-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerFrezon-name = добытчик фрезонового газа
+ent-GasMinerFrezon-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 
-ent-GasMinerWaterVapor-name = water vapor gas miner
-ent-GasMinerWaterVapor-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerWaterVapor-name = добытчик газа водяного пара
+ent-GasMinerWaterVapor-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 
-ent-GasMinerAmmonia-name = ammonia gas miner
-ent-GasMinerAmmonia-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerAmmonia-name = добытчик газа аммиака
+ent-GasMinerAmmonia-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 
-ent-GasMinerNitrousOxide-name = nitrous oxide gas miner
-ent-GasMinerNitrousOxide-desc = Gases mined from the gas giant below (above?) flow out through this massive vent.
+ent-GasMinerNitrousOxide-name = добытчик закиси азота
+ent-GasMinerNitrousOxide-desc = Газы, добываемые на газовом гиганте внизу (наверху?), вытекают через это массивное отверстие.
 

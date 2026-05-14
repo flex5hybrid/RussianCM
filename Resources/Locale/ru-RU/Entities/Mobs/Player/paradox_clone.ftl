@@ -1,8 +1,8 @@
-ent-MobParadox-name = space-time paradox
-ent-MobParadox-desc = A big ball of wibbly wobbly, timey wimey stuff.
+ent-MobParadox-name = пространственно-временной парадокс
+ent-MobParadox-desc = Большой комок шаткой, шаткой, своевременной ерунды.
 
-ent-ParadoxCloneDummy-name = Paradox Clone
+ent-ParadoxCloneDummy-name = Парадоксальный клон
 
-ent-MobParadoxTimed-name = space-time paradox
-ent-MobParadoxTimed-desc = A big ball of wibbly wobbly, timey wimey stuff.
+ent-MobParadoxTimed-name = пространственно-временной парадокс
+ent-MobParadoxTimed-desc = Большой комок шаткой, шаткой, своевременной ерунды.
 

@@ -1,14 +1,14 @@
-ent-BaseLightning-name = lightning
+ent-BaseLightning-name = молния
 
-ent-Lightning-name = lightning
+ent-Lightning-name = молния
 
-ent-LightningRevenant-name = spooky lightning
+ent-LightningRevenant-name = жуткая молния
 
-ent-ChargedLightning-name = charged lightning
+ent-ChargedLightning-name = заряженная молния
 
-ent-Spark-name = lightning
+ent-Spark-name = молния
 
-ent-SuperchargedLightning-name = supercharged lightning
+ent-SuperchargedLightning-name = сверхзаряженная молния
 
-ent-HyperchargedLightning-name = hypercharged lightning
+ent-HyperchargedLightning-name = сверхзаряженная молния
 

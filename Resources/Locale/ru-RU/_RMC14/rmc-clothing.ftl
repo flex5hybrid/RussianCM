@@ -10,7 +10,7 @@ rmc-dogtags-info-read-start = { $tags ->
     [one] Найден 1 жетон:
     *[other] Найдено {$tags} жетона:
 }
-rmc-dogtags-info-read = {$number}. "{$name} - {$assignment} - {$bloodtype}"
+rmc-dogtags-info-read = {$number}. «{$name} — {$assignment} — {$bloodtype}»
 rmc-dogtags-join = Вы соединяете жетоны.
 rmc-dogtags-single-join = Вы соединяете два жетона.
 rmc-dogtags-unknown = неизвестно
@@ -19,3 +19,9 @@ rmc-dogtags-info-joined = солдатские жетоны
 rmc-unstrippable = Вы не можете снять {THE($item)} с {$owner}!
 rmc-no-visors-to-swap = Нет доступных визоров для замены!
 rmc-visor-down = {CAPITALIZE(THE($visor))} опущен.
+
+# Missing entries synced from en-US
+
+rmc-dogtags-info-joined-name = информационные жетоны для собак
+
+rmc-dogtags-info-joined-desc = Информационные жетоны павших морских пехотинцев.

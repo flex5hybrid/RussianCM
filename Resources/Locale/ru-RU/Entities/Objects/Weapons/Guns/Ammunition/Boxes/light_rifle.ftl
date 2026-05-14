@@ -1,16 +1,16 @@
-ent-BaseMagazineBoxLightRifle-name = ammunition box (.30 rifle)
+ent-BaseMagazineBoxLightRifle-name = ящик для боеприпасов (винтовка .30)
 
-ent-MagazineBoxLightRifleBig-name = ammunition box (.30 rifle)
+ent-MagazineBoxLightRifleBig-name = ящик для боеприпасов (винтовка .30)
 
-ent-MagazineBoxLightRifle-name = ammunition box (.30 rifle)
-ent-MagazineBoxLightRifle-desc = A cardboard box of .30 rifle rounds. Intended to hold general-purpose kinetic ammunition.
+ent-MagazineBoxLightRifle-name = ящик для боеприпасов (винтовка .30)
+ent-MagazineBoxLightRifle-desc = Картонная коробка с винтовочными патронами .30. Предназначен для хранения кинетических боеприпасов общего назначения.
 
-ent-MagazineBoxLightRiflePractice-name = ammunition box (.30 rifle practice)
-ent-MagazineBoxLightRiflePractice-desc = A cardboard box of .30 rifle rounds. Intended to hold non-harmful chalk ammunition.
+ent-MagazineBoxLightRiflePractice-name = ящик для боеприпасов (тренировочная винтовка .30)
+ent-MagazineBoxLightRiflePractice-desc = Картонная коробка с винтовочными патронами .30. Предназначен для хранения неопасных меловых боеприпасов.
 
-ent-MagazineBoxLightRifleIncendiary-name = ammunition box (.30 rifle incendiary)
-ent-MagazineBoxLightRifleIncendiary-desc = A cardboard box of .30 rifle rounds. Intended to hold self-igniting incendiary ammunition.
+ent-MagazineBoxLightRifleIncendiary-name = ящик для боеприпасов (зажигательная винтовка .30)
+ent-MagazineBoxLightRifleIncendiary-desc = Картонная коробка с винтовочными патронами .30. Предназначен для хранения самовоспламеняющихся боеприпасов.
 
-ent-MagazineBoxLightRifleUranium-name = ammunition box (.30 rifle uranium)
-ent-MagazineBoxLightRifleUranium-desc = A cardboard box of .30 rifle rounds. Intended to hold exotic uranium-core ammunition.
+ent-MagazineBoxLightRifleUranium-name = Ящик для боеприпасов (винтовочный уран .30)
+ent-MagazineBoxLightRifleUranium-desc = Картонная коробка с винтовочными патронами .30. Предназначен для хранения экзотических боеприпасов с урановым сердечником.
 

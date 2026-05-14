@@ -1,5 +1,5 @@
 set-game-preset-command-description = Установить игровой пресет для указанного количества предстоящих раундов. Может отображать имя и описание другого пресета, чтобы обмануть игроков.
-set-game-preset-command-help-text = setgamepreset <id> [количество раундов, по умолчанию 1]
+set-game-preset-command-help-text = установить пресет игры <id> [количество раундов, по умолчанию 1]
 set-game-preset-command-hint-1 = <id>
 set-game-preset-command-hint-2 = [количество раундов]
 set-game-preset-command-hint-3 = [пресет для обмана]

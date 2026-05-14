@@ -1,53 +1,53 @@
-ent-BaseRock-name = boulder
-ent-BaseRock-desc = Heavy as a really heavy thing.
+ent-BaseRock-name = валун
+ent-BaseRock-desc = Тяжелая, как очень тяжелая вещь.
 
-ent-BaseTree-desc = Yep, it's a tree.
+ent-BaseTree-desc = Да, это дерево.
 
-ent-FloraStalagmite-name = stalagmite
-ent-FloraStalagmite-desc = Natural stone spikes.
+ent-FloraStalagmite-name = сталагмит
+ent-FloraStalagmite-desc = Шипы из натурального камня.
 
-ent-FloraTree-name = tree
-ent-FloraTree-desc = Yep, it's a tree.
+ent-FloraTree-name = дерево
+ent-FloraTree-desc = Да, это дерево.
 
-ent-FloraTreeSnow-name = snowy tree
-ent-FloraTreeSnow-desc = Yep, it's a tree.
+ent-FloraTreeSnow-name = заснеженное дерево
+ent-FloraTreeSnow-desc = Да, это дерево.
 
-ent-FloraTreeStump-name = tree stump
-ent-FloraTreeStump-desc = Yep, it's a tree.
+ent-FloraTreeStump-name = пень
+ent-FloraTreeStump-desc = Да, это дерево.
 
-ent-FloraTreeLarge-name = large tree
-ent-FloraTreeLarge-desc = Yep, it's a tree.
+ent-FloraTreeLarge-name = большое дерево
+ent-FloraTreeLarge-desc = Да, это дерево.
 
-ent-FloraTreeConifer-name = snowy conifer
-ent-FloraTreeConifer-desc = Yep, it's a tree.
+ent-FloraTreeConifer-name = заснеженное хвойное дерево
+ent-FloraTreeConifer-desc = Да, это дерево.
 
-ent-FloraTreeChristmas01-name = christmas tree
-ent-FloraTreeChristmas01-desc = Yep, it's a tree.
+ent-FloraTreeChristmas01-name = Рождественская елка
+ent-FloraTreeChristmas01-desc = Да, это дерево.
 
-ent-FloraTreeChristmas02-name = christmas tree
-ent-FloraTreeChristmas02-desc = Yep, it's a tree.
+ent-FloraTreeChristmas02-name = Рождественская елка
+ent-FloraTreeChristmas02-desc = Да, это дерево.
 
-ent-FloraTreeChristmas03-name = christmas tree
-ent-FloraTreeChristmas03-desc = Yep, it's a tree.
+ent-FloraTreeChristmas03-name = Рождественская елка
+ent-FloraTreeChristmas03-desc = Да, это дерево.
 
-ent-FloraTreeStumpConifer-name = tree stump
-ent-FloraTreeStumpConifer-desc = Yep, it's a tree.
+ent-FloraTreeStumpConifer-name = пень
+ent-FloraTreeStumpConifer-desc = Да, это дерево.
 
-ent-ShadowTree-name = dark wood
-ent-ShadowTree-desc = The leaves are whispering about you.
+ent-ShadowTree-name = темное дерево
+ent-ShadowTree-desc = Листья шепчут о тебе.
 
-ent-LightTree-name = glowing tree
-ent-LightTree-desc = A marvelous tree filled with strange energy.
+ent-LightTree-name = светящееся дерево
+ent-LightTree-desc = Чудесное дерево, наполненное странной энергией.
 
-ent-BaseTreeSnow-desc = Yep, it's a tree.
+ent-BaseTreeSnow-desc = Да, это дерево.
 
-ent-BaseTreeLarge-desc = Yep, it's a tree.
+ent-BaseTreeLarge-desc = Да, это дерево.
 
-ent-BaseTreeConifer-desc = Yep, it's a tree.
+ent-BaseTreeConifer-desc = Да, это дерево.
 
-ent-FloraRockSolid-name = boulder
-ent-FloraRockSolid-desc = Heavy as a really heavy thing.
+ent-FloraRockSolid-name = валун
+ent-FloraRockSolid-desc = Тяжелая, как очень тяжелая вещь.
 
-ent-FloraGreyStalagmite-name = stalagmite
-ent-FloraGreyStalagmite-desc = Natural stone spikes.
+ent-FloraGreyStalagmite-name = сталагмит
+ent-FloraGreyStalagmite-desc = Шипы из натурального камня.
 

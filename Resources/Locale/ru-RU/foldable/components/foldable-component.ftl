@@ -14,3 +14,9 @@ fold-unzip-verb = Расстегнуть
 
 fold-verb-clothing-jacket = Снять куртку
 unfold-verb-clothing-jacket = Надеть куртку
+
+# Missing entries synced from en-US
+
+fold-strap-verb = Страпон на
+
+fold-unstrap-verb = Отстегните ремень

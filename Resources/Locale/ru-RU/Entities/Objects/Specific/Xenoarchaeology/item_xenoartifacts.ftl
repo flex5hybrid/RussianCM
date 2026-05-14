@@ -1,11 +1,11 @@
-ent-BaseXenoArtifactItem-name = artifact
-ent-BaseXenoArtifactItem-desc = A strange artifact from time unknown. Looks like a good time. Fits in hand perfectly.
+ent-BaseXenoArtifactItem-name = артефакт
+ent-BaseXenoArtifactItem-desc = Странный артефакт неизвестного времени. Похоже, хорошо провести время. Идеально лежит в руке.
 
-ent-ArtifactFragment-name = artifact fragment
-ent-ArtifactFragment-desc = A broken piece of an artifact. You could probably repair it if you had more.
+ent-ArtifactFragment-name = фрагмент артефакта
+ent-ArtifactFragment-desc = Обломок артефакта. Вероятно, вы могли бы его починить, если бы у вас было больше.
 
-ent-ComplexXenoArtifactItem-name = artifact
-ent-ComplexXenoArtifactItem-desc = A strange artifact from time unknown. Looks like a good time. Fits in hand perfectly.
+ent-ComplexXenoArtifactItem-name = артефакт
+ent-ComplexXenoArtifactItem-desc = Странный артефакт неизвестного времени. Похоже, хорошо провести время. Идеально лежит в руке.
 
 ent-ArtifactFragment1-name = stack-artifact-fragment
 

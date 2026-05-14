@@ -1,17 +1,17 @@
-ent-MagazineBoxMagnum-name = ammunition box (.45 magnum)
-ent-MagazineBoxMagnum-desc = A cardboard box of .45 magnum rounds. Intended to hold general-purpose kinetic ammunition.
+ent-MagazineBoxMagnum-name = ящик для боеприпасов (.45 магнум)
+ent-MagazineBoxMagnum-desc = Картонная коробка с патронами .45 Magnum. Предназначен для хранения кинетических боеприпасов общего назначения.
 
-ent-MagazineBoxMagnumPractice-name = ammunition box (.45 magnum practice)
-ent-MagazineBoxMagnumPractice-desc = A cardboard box of .45 magnum rounds. Intended to hold non-harmful chalk ammunition.
+ent-MagazineBoxMagnumPractice-name = ящик для боеприпасов (практика .45 магнум)
+ent-MagazineBoxMagnumPractice-desc = Картонная коробка с патронами .45 Magnum. Предназначен для хранения неопасных меловых боеприпасов.
 
-ent-MagazineBoxMagnumIncendiary-name = ammunition box (.45 magnum incendiary)
-ent-MagazineBoxMagnumIncendiary-desc = A cardboard box of .45 magnum rounds. Intended to hold self-igniting incendiary ammunition.
+ent-MagazineBoxMagnumIncendiary-name = ящик для боеприпасов (зажигательный .45 магнум)
+ent-MagazineBoxMagnumIncendiary-desc = Картонная коробка с патронами .45 Magnum. Предназначен для хранения самовоспламеняющихся боеприпасов.
 
-ent-MagazineBoxMagnumUranium-name = ammunition box (.45 magnum uranium)
-ent-MagazineBoxMagnumUranium-desc = A cardboard box of .45 magnum rounds. Intended to hold exotic uranium-core ammunition.
+ent-MagazineBoxMagnumUranium-name = ящик для боеприпасов (.45 магнум уран)
+ent-MagazineBoxMagnumUranium-desc = Картонная коробка с патронами .45 Magnum. Предназначен для хранения экзотических боеприпасов с урановым сердечником.
 
-ent-MagazineBoxMagnumAP-name = ammunition box (.45 magnum armor-piercing)
-ent-MagazineBoxMagnumAP-desc = A cardboard box of .45 magnum rounds. Intended to hold rare armor-piercing ammunition.
+ent-MagazineBoxMagnumAP-name = Ящик для боеприпасов (бронебойный .45 магнум)
+ent-MagazineBoxMagnumAP-desc = Картонная коробка с патронами .45 Magnum. Предназначен для хранения редких бронебойных боеприпасов.
 
-ent-BaseMagazineBoxMagnum-name = item
+ent-BaseMagazineBoxMagnum-name = элемент
 

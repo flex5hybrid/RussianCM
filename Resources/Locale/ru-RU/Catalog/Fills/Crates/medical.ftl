@@ -1,42 +1,42 @@
-ent-CrateMedicalSupplies-name = medical supplies crate
-ent-CrateMedicalSupplies-desc = Basic medical supplies.
+ent-CrateMedicalSupplies-name = ящик для медицинских принадлежностей
+ent-CrateMedicalSupplies-desc = Основные медицинские принадлежности.
 
-ent-CrateChemistrySupplies-name = chemistry supplies crate
-ent-CrateChemistrySupplies-desc = Basic chemistry supplies.
+ent-CrateChemistrySupplies-name = ящик с химией
+ent-CrateChemistrySupplies-desc = Базовые химические материалы.
 
-ent-CrateChemistryVials-name = vial supply crate
-ent-CrateChemistryVials-desc = Crate filled with a box of vials.
+ent-CrateChemistryVials-name = ящик для хранения флаконов
+ent-CrateChemistryVials-desc = Ящик с коробкой флаконов.
 
-ent-CrateMindShieldImplants-name = MindShield implant crate
-ent-CrateMindShieldImplants-desc = Crate filled with 3 MindShield implants.
+ent-CrateMindShieldImplants-name = Ящик для имплантатов MindShield
+ent-CrateMindShieldImplants-desc = Ящик с тремя имплантами MindShield.
 
-ent-CrateMedicalSurgery-name = surgical supplies crate
-ent-CrateMedicalSurgery-desc = Surgical instruments.
+ent-CrateMedicalSurgery-name = ящик для хирургических принадлежностей
+ent-CrateMedicalSurgery-desc = Хирургические инструменты.
 
-ent-CrateMedicalScrubs-name = medical scrubs crate
-ent-CrateMedicalScrubs-desc = Medical clothings.
+ent-CrateMedicalScrubs-name = ящик для медицинских скрабов
+ent-CrateMedicalScrubs-desc = Медицинская одежда.
 
-ent-CrateEmergencyBurnKit-name = emergency burn kit
-ent-CrateEmergencyBurnKit-desc = Crate filled with a burn treatment kit.
+ent-CrateEmergencyBurnKit-name = аварийный ожоговый комплект
+ent-CrateEmergencyBurnKit-desc = Ящик с набором для лечения ожогов.
 
-ent-CrateEmergencyToxinKit-name = emergency toxin kit
-ent-CrateEmergencyToxinKit-desc = Crate filled with a toxin treatment kit.
+ent-CrateEmergencyToxinKit-name = аварийный набор токсинов
+ent-CrateEmergencyToxinKit-desc = Ящик с набором для лечения токсинов.
 
-ent-CrateEmergencyO2Kit-name = emergency O2 kit
-ent-CrateEmergencyO2Kit-desc = Crate filled with an O2 treatment kit.
+ent-CrateEmergencyO2Kit-name = аварийный комплект O2
+ent-CrateEmergencyO2Kit-desc = Ящик с набором для лечения O2.
 
-ent-CrateEmergencyBruteKit-name = emergency brute kit
-ent-CrateEmergencyBruteKit-desc = Crate filled with a brute treatment kit.
+ent-CrateEmergencyBruteKit-name = аварийный набор для грубой помощи
+ent-CrateEmergencyBruteKit-desc = Ящик, наполненный набором для лечения животных.
 
-ent-CrateEmergencyAdvancedKit-name = emergency advanced kit
-ent-CrateEmergencyAdvancedKit-desc = Crate filled with an advanced treatment kit.
+ent-CrateEmergencyAdvancedKit-name = расширенный аварийный комплект
+ent-CrateEmergencyAdvancedKit-desc = Ящик с передовым набором для лечения.
 
-ent-CrateEmergencyRadiationKit-name = emergency radiation kit
-ent-CrateEmergencyRadiationKit-desc = Crate filled with a radiation treatment kit.
+ent-CrateEmergencyRadiationKit-name = аварийный радиационный комплект
+ent-CrateEmergencyRadiationKit-desc = Ящик с набором для лучевой терапии.
 
-ent-CrateBodyBags-name = body bags crate
-ent-CrateBodyBags-desc = Contains ten body bags.
+ent-CrateBodyBags-name = ящик для мешков для трупов
+ent-CrateBodyBags-desc = Содержит десять мешков для трупов.
 
-ent-CrateVirologyBiosuit-name = virology bio suit crate
-ent-CrateVirologyBiosuit-desc = Contains 2 biohazard suits to ensure that no disease will distract you from treating the crew. Requires Medical access to open.
+ent-CrateVirologyBiosuit-name = ящик для вирусологического биологического костюма
+ent-CrateVirologyBiosuit-desc = Содержит 2 костюма биологической защиты, чтобы никакая болезнь не отвлекла вас от лечения экипажа. Для открытия требуется медицинский доступ.
 

@@ -1,37 +1,37 @@
-ent-PowerCellPotato-name = potato battery
-ent-PowerCellPotato-desc = Someone's stuck two nails and some wire in a large potato. Somehow it provides a little charge.
+ent-PowerCellPotato-name = картофельная батарея
+ent-PowerCellPotato-desc = Кто-то воткнул два гвоздя и проволоку в большую картофелину. Каким-то образом это дает небольшой заряд.
 
-ent-PowerCellSmall-name = small-capacity power cell
-ent-PowerCellSmall-desc = A rechargeable power cell. This is the cheapest kind you can find.
+ent-PowerCellSmall-name = силовой элемент малой мощности
+ent-PowerCellSmall-desc = Перезаряжаемый аккумулятор. Это самый дешевый вид, который вы можете найти.
 
-ent-PowerCellSmallNuclear-name = small-capacity nuclear power cell
-ent-PowerCellSmallNuclear-desc = A self rechargeable power cell, designed for fast recharge rate at the expense of capacity.
+ent-PowerCellSmallNuclear-name = Ядерный энергетический элемент малой мощности
+ent-PowerCellSmallNuclear-desc = Самоперезаряжаемый аккумулятор, предназначенный для быстрой перезарядки за счет емкости.
 
-ent-PowerCellMedium-name = medium-capacity power cell
-ent-PowerCellMedium-desc = A rechargeable power cell. This is the popular and reliable version.
+ent-PowerCellMedium-name = силовая ячейка средней мощности
+ent-PowerCellMedium-desc = Перезаряжаемый аккумулятор. Это популярная и надежная версия.
 
-ent-PowerCellHigh-name = high-capacity power cell
-ent-PowerCellHigh-desc = A rechargeable standardized power cell. This premium brand stores up to 50% more energy than the competition.
+ent-PowerCellHigh-name = мощный силовой элемент
+ent-PowerCellHigh-desc = Перезаряжаемый стандартизированный аккумулятор. Этот премиальный бренд хранит на 50 % больше энергии, чем конкуренты.
 
-ent-PowerCellHyper-name = hyper-capacity power cell
-ent-PowerCellHyper-desc = A rechargeable standardized power cell. This iteration pushes the upper limits of portable power storage, boasting 66% more capacity than its predecessor.
+ent-PowerCellHyper-name = силовой элемент сверхмощности
+ent-PowerCellHyper-desc = Перезаряжаемый стандартизированный аккумулятор. Эта итерация расширяет границы портативных накопителей энергии, обладая на 66% большей емкостью, чем у ее предшественницы.
 
-ent-PowerCellMicroreactor-name = microreactor power cell
-ent-PowerCellMicroreactor-desc = A rechargeable standardized microreactor cell. Has lower capacity but slowly recharges by itself.
+ent-PowerCellMicroreactor-name = силовая ячейка микрореактора
+ent-PowerCellMicroreactor-desc = Перезаряжаемая стандартизированная микрореакторная ячейка. Имеет меньшую емкость, но медленно перезаряжается сам по себе.
 
-ent-PowerCellAntiqueProto-name = antique power cell prototype
-ent-PowerCellAntiqueProto-desc = A small cell that self recharges. Used in old laser arms research.
+ent-PowerCellAntiqueProto-name = Прототип старинной энергоячейки
+ent-PowerCellAntiqueProto-desc = Небольшой аккумулятор, который самостоятельно перезаряжается. Используется в исследованиях старого лазерного оружия.
 
-ent-PowerCageSmall-name = small-capacity power cage
-ent-PowerCageSmall-desc = A rechargeable power cage for big devices. This is the cheapest kind you can find.
+ent-PowerCageSmall-name = силовая клетка малой мощности
+ent-PowerCageSmall-desc = Перезаряжаемый блок питания для больших устройств. Это самый дешевый вид, который вы можете найти.
 
-ent-PowerCageMedium-name = medium-capacity power cage
-ent-PowerCageMedium-desc = A rechargeable power cage for big devices. The gold standard of capacity and cost.
+ent-PowerCageMedium-name = силовая клетка средней мощности
+ent-PowerCageMedium-desc = Перезаряжаемый блок питания для больших устройств. Золотой стандарт мощности и стоимости.
 
-ent-PowerCageHigh-name = high-capacity power cage
-ent-PowerCageHigh-desc = A rechargeable power cage for big devices. Increased capacity for increased power levels.
+ent-PowerCageHigh-name = силовая клетка высокой мощности
+ent-PowerCageHigh-desc = Перезаряжаемый блок питания для больших устройств. Увеличенная емкость для увеличения уровня мощности.
 
-ent-BasePowerCell-name = item
+ent-BasePowerCell-name = элемент
 
-ent-BasePowerCage-name = item
+ent-BasePowerCage-name = элемент
 

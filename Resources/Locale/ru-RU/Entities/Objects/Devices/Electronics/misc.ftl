@@ -1,3 +1,3 @@
-ent-FreezerElectronics-name = freezer electronics
-ent-FreezerElectronics-desc = An electronics board used in kitchen freezers.
+ent-FreezerElectronics-name = электроника для морозильной камеры
+ent-FreezerElectronics-desc = Электронная плата, используемая в кухонных морозильниках.
 

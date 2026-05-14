@@ -1,6 +1,6 @@
-ent-RandomPosterAny-name = random poster spawner
+ent-RandomPosterAny-name = случайный спаунер постеров
 
-ent-RandomPosterContraband-name = random contraband poster spawner
+ent-RandomPosterContraband-name = Случайный спаунер контрабандных плакатов
 
-ent-RandomPosterLegit-name = random legit poster spawner
+ent-RandomPosterLegit-name = Случайный легальный спаунер плакатов
 

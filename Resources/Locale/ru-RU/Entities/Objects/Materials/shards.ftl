@@ -1,18 +1,18 @@
-ent-ShardBase-name = item
-ent-ShardBase-desc = It's a shard of some unknown material.
+ent-ShardBase-name = элемент
+ent-ShardBase-desc = Это осколок какого-то неизвестного материала.
 
-ent-ShardGlass-name = glass shard
-ent-ShardGlass-desc = A small piece of glass.
+ent-ShardGlass-name = осколок стекла
+ent-ShardGlass-desc = Небольшой кусок стекла.
 
-ent-ShardGlassReinforced-name = reinforced glass shard
-ent-ShardGlassReinforced-desc = A small piece of reinforced glass.
+ent-ShardGlassReinforced-name = усиленный осколок стекла
+ent-ShardGlassReinforced-desc = Небольшой кусок армированного стекла.
 
-ent-ShardGlassPlasma-name = plasma glass shard
-ent-ShardGlassPlasma-desc = A small piece of plasma glass.
+ent-ShardGlassPlasma-name = плазменный осколок стекла
+ent-ShardGlassPlasma-desc = Небольшой кусок плазменного стекла.
 
-ent-ShardGlassUranium-name = uranium glass shard
-ent-ShardGlassUranium-desc = A small piece of uranium glass.
+ent-ShardGlassUranium-name = осколок уранового стекла
+ent-ShardGlassUranium-desc = Небольшой кусок уранового стекла.
 
-ent-ShardGlassClockwork-name = clockwork glass shard
-ent-ShardGlassClockwork-desc = A small piece of brass-infused glass.
+ent-ShardGlassClockwork-name = осколок заводного стекла
+ent-ShardGlassClockwork-desc = Небольшой кусок стекла, инкрустированного латунью.
 

@@ -1,20 +1,20 @@
-ent-BaseSpeedLoaderMagnum-name = speed loader (.45 magnum)
+ent-BaseSpeedLoaderMagnum-name = скоростной погрузчик (.45 магнум)
 
-ent-SpeedLoaderMagnum-name = speed loader (.45 magnum)
-ent-SpeedLoaderMagnum-desc = Designed to quickly refill an empty revolver, it fits up to six rounds. Intended to hold general-purpose kinetic ammunition.
+ent-SpeedLoaderMagnum-name = скоростной погрузчик (.45 магнум)
+ent-SpeedLoaderMagnum-desc = Предназначен для быстрой заправки пустого револьвера и вмещает до шести патронов. Предназначен для хранения кинетических боеприпасов общего назначения.
 
-ent-SpeedLoaderMagnumEmpty-name = speed loader (.45 magnum any)
-ent-SpeedLoaderMagnumEmpty-desc = Designed to quickly refill an empty revolver, it fits up to six rounds for the big iron on your hip.
+ent-SpeedLoaderMagnumEmpty-name = скоростной погрузчик (.45 магнум любой)
+ent-SpeedLoaderMagnumEmpty-desc = Созданный для быстрой заправки пустого револьвера, он вмещает до шести патронов для большого утюга на бедре.
 
-ent-SpeedLoaderMagnumIncendiary-name = speed loader (.45 magnum incendiary)
-ent-SpeedLoaderMagnumIncendiary-desc = Designed to quickly refill an empty revolver, it fits up to six rounds. Intended to hold self-igniting incendiary ammunition.
+ent-SpeedLoaderMagnumIncendiary-name = скоростной погрузчик (зажигательный .45 магнум)
+ent-SpeedLoaderMagnumIncendiary-desc = Предназначен для быстрой заправки пустого револьвера и вмещает до шести патронов. Предназначен для хранения самовоспламеняющихся боеприпасов.
 
-ent-SpeedLoaderMagnumPractice-name = speed loader (.45 magnum practice)
-ent-SpeedLoaderMagnumPractice-desc = Designed to quickly refill an empty revolver, it fits up to six rounds. Intended to hold non-harmful chalk ammunition, perfect for practicing your quick draw.
+ent-SpeedLoaderMagnumPractice-name = скоростной погрузчик (практика .45 Magnum)
+ent-SpeedLoaderMagnumPractice-desc = Предназначен для быстрой заправки пустого револьвера и вмещает до шести патронов. Предназначен для хранения безвредных меловых боеприпасов и идеально подходит для тренировки быстрого рисования.
 
-ent-SpeedLoaderMagnumAP-name = speed loader (.45 magnum armor-piercing)
-ent-SpeedLoaderMagnumAP-desc = Designed to quickly refill an empty revolver, it fits up to six rounds. Intended to hold rare armor-piercing ammunition.
+ent-SpeedLoaderMagnumAP-name = скоростной заряжающий (бронебойный .45 магнум)
+ent-SpeedLoaderMagnumAP-desc = Предназначен для быстрой заправки пустого револьвера и вмещает до шести патронов. Предназначен для хранения редких бронебойных боеприпасов.
 
-ent-SpeedLoaderMagnumUranium-name = speed loader (.45 magnum uranium)
-ent-SpeedLoaderMagnumUranium-desc = Designed to quickly refill an empty revolver, it fits up to six rounds. Intended to hold exotic uranium-core ammunition.
+ent-SpeedLoaderMagnumUranium-name = скоростной погрузчик (уран .45 магнум)
+ent-SpeedLoaderMagnumUranium-desc = Предназначен для быстрой заправки пустого револьвера и вмещает до шести патронов. Предназначен для хранения экзотических боеприпасов с урановым сердечником.
 

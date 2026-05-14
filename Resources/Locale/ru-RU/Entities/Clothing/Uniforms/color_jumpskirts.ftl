@@ -1,51 +1,51 @@
-ent-ClothingUniformJumpskirtColorWhite-name = white jumpskirt
-ent-ClothingUniformJumpskirtColorWhite-desc = A generic white jumpskirt with no rank markings.
+ent-ClothingUniformJumpskirtColorWhite-name = белая юбка
+ent-ClothingUniformJumpskirtColorWhite-desc = Обычная белая юбка без знаков ранга.
 
-ent-ClothingUniformJumpskirtColorGrey-name = grey jumpskirt
-ent-ClothingUniformJumpskirtColorGrey-desc = A tasteful grey jumpskirt that reminds you of the good old days.
+ent-ClothingUniformJumpskirtColorGrey-name = серая юбка
+ent-ClothingUniformJumpskirtColorGrey-desc = Изящная серая юбка-комбинезон, напоминающая старые добрые времена.
 
-ent-ClothingUniformJumpskirtColorBlack-name = black jumpskirt
-ent-ClothingUniformJumpskirtColorBlack-desc = A generic black jumpskirt with no rank markings.
+ent-ClothingUniformJumpskirtColorBlack-name = черная юбка
+ent-ClothingUniformJumpskirtColorBlack-desc = Обычная черная юбка без знаков ранга.
 
-ent-ClothingUniformJumpskirtColorBlue-name = blue jumpskirt
-ent-ClothingUniformJumpskirtColorBlue-desc = A generic blue jumpskirt with no rank markings.
+ent-ClothingUniformJumpskirtColorBlue-name = синяя юбка
+ent-ClothingUniformJumpskirtColorBlue-desc = Обычная синяя юбка без знаков ранга.
 
-ent-ClothingUniformJumpskirtColorDarkBlue-name = dark blue jumpskirt
-ent-ClothingUniformJumpskirtColorDarkBlue-desc = A generic dark blue jumpskirt with no rank markings.
+ent-ClothingUniformJumpskirtColorDarkBlue-name = темно-синяя юбка
+ent-ClothingUniformJumpskirtColorDarkBlue-desc = Обычная темно-синяя юбка без знаков ранга.
 
-ent-ClothingUniformJumpskirtColorTeal-name = teal jumpskirt
-ent-ClothingUniformJumpskirtColorTeal-desc = A generic teal jumpskirt with no rank markings.
+ent-ClothingUniformJumpskirtColorTeal-name = бирюзовая юбка
+ent-ClothingUniformJumpskirtColorTeal-desc = Обычная бирюзовая юбка без знаков ранга.
 
-ent-ClothingUniformJumpskirtColorGreen-name = green jumpskirt
-ent-ClothingUniformJumpskirtColorGreen-desc = A generic green jumpskirt with no rank markings.
+ent-ClothingUniformJumpskirtColorGreen-name = зеленая юбка
+ent-ClothingUniformJumpskirtColorGreen-desc = Обычная зеленая юбка без знаков ранга.
 
-ent-ClothingUniformJumpskirtColorDarkGreen-name = dark green jumpskirt
-ent-ClothingUniformJumpskirtColorDarkGreen-desc = A generic dark green jumpskirt with no rank markings.
+ent-ClothingUniformJumpskirtColorDarkGreen-name = темно-зеленая юбка
+ent-ClothingUniformJumpskirtColorDarkGreen-desc = Обычная темно-зеленая юбка без знаков ранга.
 
-ent-ClothingUniformJumpskirtColorOrange-name = orange jumpskirt
-ent-ClothingUniformJumpskirtColorOrange-desc = Don't wear this near paranoid security officers.
+ent-ClothingUniformJumpskirtColorOrange-name = оранжевая юбка
+ent-ClothingUniformJumpskirtColorOrange-desc = Не носите это рядом с параноидальными офицерами безопасности.
 
-ent-ClothingUniformJumpskirtColorPink-name = pink jumpskirt
-ent-ClothingUniformJumpskirtColorPink-desc = Just looking at this makes you feel <i>fabulous</i>.
+ent-ClothingUniformJumpskirtColorPink-name = розовая юбка
+ent-ClothingUniformJumpskirtColorPink-desc = Просто глядя на это, вы чувствуете себя <i>потрясающе</i>.
 
-ent-ClothingUniformJumpskirtColorRed-name = red jumpskirt
-ent-ClothingUniformJumpskirtColorRed-desc = A generic red jumpskirt with no rank markings.
+ent-ClothingUniformJumpskirtColorRed-name = красная юбка
+ent-ClothingUniformJumpskirtColorRed-desc = Обычная красная юбка без знаков ранга.
 
-ent-ClothingUniformJumpskirtColorYellow-name = yellow jumpskirt
-ent-ClothingUniformJumpskirtColorYellow-desc = A generic yellow jumpskirt with no rank markings.
+ent-ClothingUniformJumpskirtColorYellow-name = желтая юбка
+ent-ClothingUniformJumpskirtColorYellow-desc = Обычная желтая юбка без знаков ранга.
 
-ent-ClothingUniformJumpskirtColorPurple-name = purple jumpskirt
-ent-ClothingUniformJumpskirtColorPurple-desc = A generic light purple jumpskirt with no rank markings.
+ent-ClothingUniformJumpskirtColorPurple-name = фиолетовая юбка
+ent-ClothingUniformJumpskirtColorPurple-desc = Обычная светло-фиолетовая юбка без знаков ранга.
 
-ent-ClothingUniformJumpskirtColorLightBrown-name = light brown jumpskirt
-ent-ClothingUniformJumpskirtColorLightBrown-desc = A generic light brown jumpskirt with no rank markings.
+ent-ClothingUniformJumpskirtColorLightBrown-name = светло-коричневая юбка
+ent-ClothingUniformJumpskirtColorLightBrown-desc = Обычная светло-коричневая юбка без знаков ранга.
 
-ent-ClothingUniformJumpskirtColorBrown-name = brown jumpskirt
-ent-ClothingUniformJumpskirtColorBrown-desc = A generic brown jumpskirt with no rank markings.
+ent-ClothingUniformJumpskirtColorBrown-name = коричневая юбка
+ent-ClothingUniformJumpskirtColorBrown-desc = Обычная коричневая юбка без знаков ранга.
 
-ent-ClothingUniformJumpskirtColorMaroon-name = maroon jumpskirt
-ent-ClothingUniformJumpskirtColorMaroon-desc = A generic maroon jumpskirt with no rank markings.
+ent-ClothingUniformJumpskirtColorMaroon-name = темно-бордовая юбка
+ent-ClothingUniformJumpskirtColorMaroon-desc = Обычная темно-бордовая юбка без знаков ранга.
 
-ent-ClothingUniformJumpskirtColorRainbow-name = rainbow jumpskirt
-ent-ClothingUniformJumpskirtColorRainbow-desc = A multi-colored jumpskirt!
+ent-ClothingUniformJumpskirtColorRainbow-name = радужная юбка
+ent-ClothingUniformJumpskirtColorRainbow-desc = Разноцветная юбка!
 

@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianFoodServiceWorker-name = Spawn Point Food Service Worker
-ent-AU14SpawnPointCivilianFoodServiceWorker-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianFoodServiceWorker-name = Работник общественного питания точки возрождения
+ent-AU14SpawnPointCivilianFoodServiceWorker-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

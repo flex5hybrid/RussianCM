@@ -1,3 +1,3 @@
-ent-HolopadMachineCircuitboard-name = holopad machine board
-ent-HolopadMachineCircuitboard-desc = A machine printed circuit board for a holopad.
+ent-HolopadMachineCircuitboard-name = плата голопада
+ent-HolopadMachineCircuitboard-desc = Машинная печатная плата для голопада.
 

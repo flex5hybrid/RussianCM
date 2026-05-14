@@ -1,15 +1,15 @@
-ent-TrumpetInstrument-name = trumpet
-ent-TrumpetInstrument-desc = The favorite instrument of jazz musicians and egotistical middle schoolers.
+ent-TrumpetInstrument-name = труба
+ent-TrumpetInstrument-desc = Любимый инструмент джазовых музыкантов и эгоистичных школьников.
 
-ent-TromboneInstrument-name = trombone
-ent-TromboneInstrument-desc = Everyone's favorite sliding brass instrument.
+ent-TromboneInstrument-name = тромбон
+ent-TromboneInstrument-desc = Всеми любимый скользящий духовой инструмент.
 
-ent-FrenchHornInstrument-name = french horn
-ent-FrenchHornInstrument-desc = The fact that holding it involves using your hand to muffle it may suggest something about its sound.
+ent-FrenchHornInstrument-name = валторна
+ent-FrenchHornInstrument-desc = Тот факт, что, удерживая его, приходится приглушать его рукой, может что-то указывать на его звук.
 
-ent-EuphoniumInstrument-name = euphonium
-ent-EuphoniumInstrument-desc = A baby tuba? A Baritone? Whatever it is, it's a pretty cool mess of pipes.
+ent-EuphoniumInstrument-name = эуфониум
+ent-EuphoniumInstrument-desc = Детская туба? Баритон? Что бы это ни было, это довольно крутая мешанина труб.
 
-ent-BaseBrassInstrument-name = item
-ent-BaseBrassInstrument-desc = That's an instrument.
+ent-BaseBrassInstrument-name = элемент
+ent-BaseBrassInstrument-desc = Это инструмент.
 

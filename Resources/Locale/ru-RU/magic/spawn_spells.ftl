@@ -1,3 +1,3 @@
-ent-ActionSpawnMagicarpSpell-name = Summon Magicarp
-ent-ActionSpawnMagicarpSpell-desc = This spell summons three Magi-Carp to your aid! May or may not turn on user.
+ent-ActionSpawnMagicarpSpell-name = Призвать Магикарпа
+ent-ActionSpawnMagicarpSpell-desc = Это заклинание призывает на помощь трех Маги-Карпов! Может или не может включить пользователя.
 

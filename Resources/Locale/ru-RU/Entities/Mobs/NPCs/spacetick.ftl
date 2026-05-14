@@ -1,6 +1,6 @@
-ent-MobTick-name = space tick
-ent-MobTick-desc = It's a space tick, watch out for its nasty bite. CentComm reports that 90 percent of cargo leg amputations are due to space tick bites.
+ent-MobTick-name = пробел
+ent-MobTick-desc = Это космический клещ, остерегайтесь его ужасных укусов. CentComm сообщает, что 90 процентов ампутаций ног грузовых автомобилей происходят из-за укусов космических клещей.
 
-ent-MobTickSalvage-name = space tick
-ent-MobTickSalvage-desc = It's a space tick, watch out for its nasty bite. CentComm reports that 90 percent of cargo leg amputations are due to space tick bites.
+ent-MobTickSalvage-name = пробел
+ent-MobTickSalvage-desc = Это космический клещ, остерегайтесь его ужасных укусов. CentComm сообщает, что 90 процентов ампутаций ног грузовых автомобилей происходят из-за укусов космических клещей.
 

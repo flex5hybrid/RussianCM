@@ -15,3 +15,21 @@ rmc-hands-emotes-fistbump-perform = Кумпол
 rmc-hands-emotes-highfive-perform = Пятюня
 rmc-hands-emotes-tailswipe-perform = Удар хвостом
 rmc-hands-emotes-get-closer = Подойдите ближе.
+
+# Missing entries synced from en-US
+
+rmc-hands-emotes-hug-self = Вы обнимаете {$target}!
+
+rmc-hands-emotes-hug = {$ent} обнимает {$target}!
+
+rmc-hands-emotes-hug-attempt-self = Ты поднимаешь руки, чтобы обнять {$target}.
+
+rmc-hands-emotes-hug-attempt = {$ent} поднимает руки {POSS-ADJ($ent)}, чтобы обнять {$target}.
+
+rmc-hands-emotes-hug-perform = Обними
+
+rmc-patting-success-generic = Вы похлопываете {$target} по спине.
+
+rmc-patting-success-generic-others = {$user} похлопывает {$target} по спине.
+
+rmc-patting-success-generic-target = {$user} похлопывает тебя по спине.

@@ -1,2 +1,2 @@
-ent-AU14SpawnPointOPFORK9Handler-name = (DO NOT MAP) Spawn Point OPFOR K9 Handler
-ent-AU14SpawnPointOPFORK9Handler-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointOPFORK9Handler-name = (НЕ НАносить на карту) Точка появления Обработчик OPFOR K9
+ent-AU14SpawnPointOPFORK9Handler-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

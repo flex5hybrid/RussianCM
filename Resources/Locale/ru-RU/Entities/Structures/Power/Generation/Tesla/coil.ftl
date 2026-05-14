@@ -1,6 +1,6 @@
-ent-TeslaCoil-name = tesla coil
-ent-TeslaCoil-desc = A machine that converts lightning strikes into an electric current.
+ent-TeslaCoil-name = катушка тесла
+ent-TeslaCoil-desc = Машина, преобразующая удары молнии в электрический ток.
 
-ent-TeslaGroundingRod-name = grounding rod
-ent-TeslaGroundingRod-desc = A machine that keeps lightning from striking too far away.
+ent-TeslaGroundingRod-name = заземляющий стержень
+ent-TeslaGroundingRod-desc = Машина, которая не дает молнии ударить слишком далеко.
 

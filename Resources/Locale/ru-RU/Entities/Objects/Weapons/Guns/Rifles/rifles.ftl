@@ -1,18 +1,18 @@
-ent-BaseWeaponRifle-name = BaseWeaponRifle
-ent-BaseWeaponRifle-desc = A rooty tooty point and shooty.
+ent-BaseWeaponRifle-name = БазаОружиеВинтовка
+ent-BaseWeaponRifle-desc = Коренной зубастый и стрелковый.
 
-ent-WeaponRifleAk-name = AKMS
-ent-WeaponRifleAk-desc = A somewhat battered combat rifle of a design originating from old Earth. Favored by criminals, militias, and terrorists due to its famed reliability and easy-to-manufacture design. Feeds from .30 rifle magazines.
+ent-WeaponRifleAk-name = АКМС
+ent-WeaponRifleAk-desc = Несколько потрепанная боевая винтовка конструкции, пришедшей со старой Земли. Его предпочитают преступники, ополченцы и террористы из-за его знаменитой надежности и простоты в изготовлении конструкции. Питание осуществляется из винтовочных магазинов калибра .30.
 
 ent-WeaponRifleM90GrenadeLauncher-name = M-90gl
-ent-WeaponRifleM90GrenadeLauncher-desc = An older bullpup carbine model, with an attached underbarrel grenade launcher. Uses .20 rifle ammo.
+ent-WeaponRifleM90GrenadeLauncher-desc = Старая модель карабина буллпап с подствольным гранатометом. Использует винтовочные патроны .20.
 
-ent-WeaponRifleLecter-name = Lecter
-ent-WeaponRifleLecter-desc = A high end military grade assault rifle. Uses .20 rifle ammo.
+ent-WeaponRifleLecter-name = Лектер
+ent-WeaponRifleLecter-desc = Высококлассная штурмовая винтовка военного уровня. Использует винтовочные патроны .20.
 
-ent-WeaponRifleEstoc-name = Estoc DMR
-ent-WeaponRifleEstoc-desc = A designated marksman rifle, favored for medium-to-long range engagements. Uses .20 rifle ammo.
+ent-WeaponRifleEstoc-name = Эсток ДМР
+ent-WeaponRifleEstoc-desc = Специальная стрелковая винтовка, предназначенная для боя на средних и дальних дистанциях. Использует винтовочные патроны .20.
 
-ent-WeaponRifleFoam-name = Foam Force Astro Ace
-ent-WeaponRifleFoam-desc = A premium foam rifle of the highest quality. Its plastic feels rugged, and its mechanisms sturdy.
+ent-WeaponRifleFoam-name = Пена Форс Астро Эйс
+ent-WeaponRifleFoam-desc = Премиальная пенная винтовка высочайшего качества. Его пластик кажется прочным, а механизмы прочными.
 

@@ -1,2 +1,2 @@
-ent-CrystalSpawner-name = Crystal Spawner
+ent-CrystalSpawner-name = Создатель кристаллов
 

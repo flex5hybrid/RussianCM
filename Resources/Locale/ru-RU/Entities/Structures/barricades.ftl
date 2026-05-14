@@ -1,12 +1,12 @@
-ent-BaseBarricade-name = wooden barricade
-ent-BaseBarricade-desc = A barricade made out of wood planks. It looks like it can take a few solid hits.
+ent-BaseBarricade-name = деревянная баррикада
+ent-BaseBarricade-desc = Баррикада из деревянных досок. Похоже, он может выдержать несколько серьезных ударов.
 
-ent-Barricade-name = wooden barricade
-ent-Barricade-desc = A barricade made out of wood planks. It looks like it can take a few solid hits.
+ent-Barricade-name = деревянная баррикада
+ent-Barricade-desc = Баррикада из деревянных досок. Похоже, он может выдержать несколько серьезных ударов.
 
-ent-BarricadeBlock-name = wooden barricade
-ent-BarricadeBlock-desc = A barricade made out of wood planks. It looks like it can take a few solid hits.
+ent-BarricadeBlock-name = деревянная баррикада
+ent-BarricadeBlock-desc = Баррикада из деревянных досок. Похоже, он может выдержать несколько серьезных ударов.
 
-ent-BarricadeDirectional-name = wooden barricade
-ent-BarricadeDirectional-desc = A barricade made out of wood planks. It looks like it can take a few solid hits.
+ent-BarricadeDirectional-name = деревянная баррикада
+ent-BarricadeDirectional-desc = Баррикада из деревянных досок. Похоже, он может выдержать несколько серьезных ударов.
 

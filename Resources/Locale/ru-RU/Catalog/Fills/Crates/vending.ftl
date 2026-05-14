@@ -1,78 +1,78 @@
-ent-CrateVendingMachineRestockBoozeFilled-name = Booze-O-Mat restock crate
-ent-CrateVendingMachineRestockBoozeFilled-desc = Contains a restock box for the Booze-O-Mat.
+ent-CrateVendingMachineRestockBoozeFilled-name = Ящик для пополнения запасов Booze-O-Mat
+ent-CrateVendingMachineRestockBoozeFilled-desc = Содержит коробку для пополнения запасов Booze-O-Mat.
 
-ent-CrateVendingMachineRestockChefvendFilled-name = ChefVend restock crate
-ent-CrateVendingMachineRestockChefvendFilled-desc = Contains a restock box for the ChefVend.
+ent-CrateVendingMachineRestockChefvendFilled-name = Ящик для пополнения запасов ChefVend
+ent-CrateVendingMachineRestockChefvendFilled-desc = Содержит коробку для пополнения запасов ChefVend.
 
-ent-CrateVendingMachineRestockClothesFilled-name = clothing restock crate
-ent-CrateVendingMachineRestockClothesFilled-desc = Contains a restock box for the clothes vending machines.
+ent-CrateVendingMachineRestockClothesFilled-name = ящик для пополнения запасов одежды
+ent-CrateVendingMachineRestockClothesFilled-desc = Содержит ящик для пополнения запасов для торговых автоматов по продаже одежды.
 
-ent-CrateVendingMachineRestockAutoDrobeFilled-name = AutoDrobe restock crate
-ent-CrateVendingMachineRestockAutoDrobeFilled-desc = Contains a restock box for the AutoDrobe.
+ent-CrateVendingMachineRestockAutoDrobeFilled-name = Ящик для пополнения запасов AutoDrobe
+ent-CrateVendingMachineRestockAutoDrobeFilled-desc = Содержит ящик для пополнения запасов AutoDrobe.
 
-ent-CrateVendingMachineRestockCondimentStationFilled-name = condiment station restock crate
-ent-CrateVendingMachineRestockCondimentStationFilled-desc = Contains a restock box for the condiment station.
+ent-CrateVendingMachineRestockCondimentStationFilled-name = ящик для пополнения запасов станции приправ
+ent-CrateVendingMachineRestockCondimentStationFilled-desc = Содержит ящик для пополнения запасов для станции приправ.
 
-ent-CrateVendingMachineRestockDinnerwareFilled-name = Plasteel Chef restock crate
-ent-CrateVendingMachineRestockDinnerwareFilled-desc = Contains a restock box for the Plasteel Chef vending machine.
+ent-CrateVendingMachineRestockDinnerwareFilled-name = Ящик для пополнения запасов Plasteel Chef
+ent-CrateVendingMachineRestockDinnerwareFilled-desc = Содержит коробку для пополнения запасов торгового автомата Plasteel Chef.
 
-ent-CrateVendingMachineRestockEngineeringFilled-name = EngiVend restock crate
-ent-CrateVendingMachineRestockEngineeringFilled-desc = Contains a restock box for the EngiVend. Also supports the YouTool.
+ent-CrateVendingMachineRestockEngineeringFilled-name = Ящик для пополнения запасов EngiVend
+ent-CrateVendingMachineRestockEngineeringFilled-desc = Содержит коробку для пополнения запасов EngiVend. Также поддерживает YouTool.
 
-ent-CrateVendingMachineRestockGamesFilled-name = Good Clean Fun restock crate
-ent-CrateVendingMachineRestockGamesFilled-desc = Contains a restock box for the Good Clean Fun vending machine.
+ent-CrateVendingMachineRestockGamesFilled-name = Ящик для пополнения запасов Good Clean Fun
+ent-CrateVendingMachineRestockGamesFilled-desc = Содержит коробку для пополнения запасов торгового автомата Good Clean Fun.
 
-ent-CrateVendingMachineRestockHotDrinksFilled-name = Solar's Best restock crate
-ent-CrateVendingMachineRestockHotDrinksFilled-desc = Contains two restock boxes for Solar's Best Hot Drinks vending machine.
+ent-CrateVendingMachineRestockHotDrinksFilled-name = Лучший ящик для пополнения запасов Solar
+ent-CrateVendingMachineRestockHotDrinksFilled-desc = Содержит две коробки пополнения запасов для торгового автомата Solar's Best Hot Drinks.
 
-ent-CrateVendingMachineRestockMedicalFilled-name = NanoMed restock crate
-ent-CrateVendingMachineRestockMedicalFilled-desc = Contains a restock box, compatible with the NanoMed and NanoMedPlus.
+ent-CrateVendingMachineRestockMedicalFilled-name = Ящик для пополнения запасов NanoMed
+ent-CrateVendingMachineRestockMedicalFilled-desc = Содержит коробку для пополнения запасов, совместимую с NanoMed и NanoMedPlus.
 
-ent-CrateVendingMachineRestockChemVendFilled-name = ChemVend restock crate
-ent-CrateVendingMachineRestockChemVendFilled-desc = Contains a restock box for the ChemVend.
+ent-CrateVendingMachineRestockChemVendFilled-name = Ящик для пополнения запасов ChemVend
+ent-CrateVendingMachineRestockChemVendFilled-desc = Содержит коробку для пополнения запасов ChemVend.
 
-ent-CrateVendingMachineRestockNutriMaxFilled-name = NutriMax restock crate
-ent-CrateVendingMachineRestockNutriMaxFilled-desc = Contains a restock box for the NutriMax vending machine.
+ent-CrateVendingMachineRestockNutriMaxFilled-name = Ящик для пополнения запасов NutriMax
+ent-CrateVendingMachineRestockNutriMaxFilled-desc = Содержит коробку для пополнения запасов торгового автомата NutriMax.
 
-ent-CrateVendingMachineRestockPTechFilled-name = PTech restock crate
-ent-CrateVendingMachineRestockPTechFilled-desc = Contains a restock box for the PTech bureaucracy dispenser.
+ent-CrateVendingMachineRestockPTechFilled-name = Ящик для пополнения запасов PTech
+ent-CrateVendingMachineRestockPTechFilled-desc = Содержит коробку для пополнения запасов бюрократического дозатора PTech.
 
-ent-CrateVendingMachineRestockRobustSoftdrinksFilled-name = beverage vendor restock crate
-ent-CrateVendingMachineRestockRobustSoftdrinksFilled-desc = Contains restock boxes for beverage vending machines.
+ent-CrateVendingMachineRestockRobustSoftdrinksFilled-name = ящик для пополнения запасов продавца напитков
+ent-CrateVendingMachineRestockRobustSoftdrinksFilled-desc = Содержит ящики для пополнения запасов для торговых автоматов по продаже напитков.
 
-ent-CrateVendingMachineRestockSalvageEquipmentFilled-name = Salvage restock crate
-ent-CrateVendingMachineRestockSalvageEquipmentFilled-desc = Contains a restock box for the salvage vendor.
+ent-CrateVendingMachineRestockSalvageEquipmentFilled-name = Ящик для пополнения запасов
+ent-CrateVendingMachineRestockSalvageEquipmentFilled-desc = Содержит ящик для пополнения запасов для продавца.
 
-ent-CrateVendingMachineRestockSecTechFilled-name = SecTech restock crate
-ent-CrateVendingMachineRestockSecTechFilled-desc = Contains a restock box for the SecTech vending machine.
+ent-CrateVendingMachineRestockSecTechFilled-name = Ящик для пополнения запасов SecTech
+ent-CrateVendingMachineRestockSecTechFilled-desc = Содержит ящик для пополнения запасов торгового автомата SecTech.
 
-ent-CrateVendingMachineRestockSeedsFilled-name = MegaSeed restock crate
-ent-CrateVendingMachineRestockSeedsFilled-desc = Contains a restock box for the MegaSeed vending machine.
+ent-CrateVendingMachineRestockSeedsFilled-name = Ящик для пополнения запасов MegaSeed
+ent-CrateVendingMachineRestockSeedsFilled-desc = Содержит коробку для пополнения запасов торгового автомата MegaSeed.
 
-ent-CrateVendingMachineRestockSmokesFilled-name = ShadyCigs restock crate
-ent-CrateVendingMachineRestockSmokesFilled-desc = Contains two restock boxes for the ShadyCigs vending machine.
+ent-CrateVendingMachineRestockSmokesFilled-name = Ящик для пополнения запасов ShadyCigs
+ent-CrateVendingMachineRestockSmokesFilled-desc = Содержит две коробки пополнения запасов для торгового автомата ShadyCigs.
 
-ent-CrateVendingMachineRestockVendomatFilled-name = Vendomat restock crate
-ent-CrateVendingMachineRestockVendomatFilled-desc = Contains a restock box for a Vendomat vending machine.
+ent-CrateVendingMachineRestockVendomatFilled-name = Ящик для пополнения запасов Vendomat
+ent-CrateVendingMachineRestockVendomatFilled-desc = Содержит коробку для пополнения запасов торгового автомата Vendomat.
 
-ent-CrateVendingMachineRestockRoboticsFilled-name = Robotech Deluxe restock crate
-ent-CrateVendingMachineRestockRoboticsFilled-desc = Contains a restock box for a Robotech Deluxe vending machine.
+ent-CrateVendingMachineRestockRoboticsFilled-name = Ящик для пополнения запасов Robotech Deluxe
+ent-CrateVendingMachineRestockRoboticsFilled-desc = Содержит коробку для пополнения запасов торгового автомата Robotech Deluxe.
 
-ent-CrateVendingMachineRestockTankDispenserFilled-name = tank dispenser restock crate
-ent-CrateVendingMachineRestockTankDispenserFilled-desc = Contains a restock box for an Engineering or Atmospherics tank dispenser.
+ent-CrateVendingMachineRestockTankDispenserFilled-name = ящик для пополнения запасов бака-дозатора
+ent-CrateVendingMachineRestockTankDispenserFilled-desc = Содержит коробку для пополнения запасов инженерного или атмосферного резервуара.
 
-ent-CrateVendingMachineRestockHappyHonkFilled-name = Happy Honk restock crate
-ent-CrateVendingMachineRestockHappyHonkFilled-desc = Contains a restock box for a happy honk dispenser.
+ent-CrateVendingMachineRestockHappyHonkFilled-name = Ящик с пополнением запасов Happy Honk
+ent-CrateVendingMachineRestockHappyHonkFilled-desc = Содержит коробку для пополнения запаса дозатора с радостным сигналом.
 
-ent-CrateVendingMachineRestockGetmoreChocolateCorpFilled-name = Getmore Chocolate Corp restock crate
-ent-CrateVendingMachineRestockGetmoreChocolateCorpFilled-desc = Contains a restock box for a Getmore Chocolate Corp dispenser.
+ent-CrateVendingMachineRestockGetmoreChocolateCorpFilled-name = Ящик для пополнения запасов Getmore Chocolate Corp.
+ent-CrateVendingMachineRestockGetmoreChocolateCorpFilled-desc = Содержит коробку для пополнения запасов дозатора Getmore Chocolate Corp.
 
-ent-CrateVendingMachineRestockChangFilled-name = Chang restock crate
-ent-CrateVendingMachineRestockChangFilled-desc = Contains a restock box for a Mr. Chang dispenser.
+ent-CrateVendingMachineRestockChangFilled-name = Ящик для пополнения запасов Чанга
+ent-CrateVendingMachineRestockChangFilled-desc = Содержит коробку для пополнения запасов дозатора Mr. Chang.
 
-ent-CrateVendingMachineRestockDiscountDansFilled-name = Discount Dans restock crate
-ent-CrateVendingMachineRestockDiscountDansFilled-desc = Contains a restock box for a Discount Dan's dispenser.
+ent-CrateVendingMachineRestockDiscountDansFilled-name = Ящик для пополнения запасов Dans со скидкой
+ent-CrateVendingMachineRestockDiscountDansFilled-desc = Содержит коробку для пополнения запаса диспенсера Discount Dan's.
 
-ent-CrateVendingMachineRestockDonutFilled-name = Donut restock crate
-ent-CrateVendingMachineRestockDonutFilled-desc = Contains a restock box for a Monkin' Donuts dispenser.
+ent-CrateVendingMachineRestockDonutFilled-name = Ящик для пополнения запасов пончиков
+ent-CrateVendingMachineRestockDonutFilled-desc = Содержит коробку для пополнения запасов диспенсера Monkin' Donuts.
 

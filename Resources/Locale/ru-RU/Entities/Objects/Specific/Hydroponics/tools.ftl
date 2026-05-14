@@ -1,18 +1,18 @@
-ent-HydroponicsToolMiniHoe-name = mini hoe
-ent-HydroponicsToolMiniHoe-desc = It's used for removing weeds or scratching your back.
+ent-HydroponicsToolMiniHoe-name = мини мотыга
+ent-HydroponicsToolMiniHoe-desc = Его используют для удаления сорняков или почесывания спины.
 
-ent-HydroponicsToolClippers-name = plant clippers
-ent-HydroponicsToolClippers-desc = A tool used to take samples from plants.
+ent-HydroponicsToolClippers-name = машинки для стрижки растений
+ent-HydroponicsToolClippers-desc = Инструмент, используемый для отбора проб у растений.
 
-ent-HydroponicsToolScythe-name = scythe
-ent-HydroponicsToolScythe-desc = A sharp and curved blade on a long fibremetal handle, this tool makes it easy to reap what you sow.
+ent-HydroponicsToolScythe-name = коса
+ent-HydroponicsToolScythe-desc = Острое изогнутое лезвие на длинной волокнисто-металлической ручке позволяет с легкостью пожать то, что посеяли.
 
-ent-HydroponicsToolHatchet-name = hatchet
-ent-HydroponicsToolHatchet-desc = A very sharp axe blade upon a short fibremetal handle. It has a long history of chopping things, but now it is used for chopping wood.
+ent-HydroponicsToolHatchet-name = топор
+ent-HydroponicsToolHatchet-desc = Очень острое лезвие топора на короткой рукоятке из волокнистого металла. Он имеет долгую историю рубки вещей, но теперь его используют для колки дров.
 
-ent-HydroponicsToolSpade-name = spade
-ent-HydroponicsToolSpade-desc = A small tool for digging and moving dirt.
+ent-HydroponicsToolSpade-name = лопата
+ent-HydroponicsToolSpade-desc = Небольшой инструмент для копания и перемещения грязи.
 
-ent-PlantBag-name = plant bag
-ent-PlantBag-desc = A bag for botanists to easily move their huge harvests.
+ent-PlantBag-name = мешок для растений
+ent-PlantBag-desc = Сумка для ботаников, позволяющая легко перемещать свои огромные урожаи.
 

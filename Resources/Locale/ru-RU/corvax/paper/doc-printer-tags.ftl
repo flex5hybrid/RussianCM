@@ -1,4 +1,4 @@
-doc-text-printer-default-station = Station XX-000
+doc-text-printer-default-station = Станция ХХ-000
 doc-text-printer-default-name = (ФИО)
 doc-text-printer-default-job = (полное наименование должности)
 doc-var-station = :СТАНЦИЯ:

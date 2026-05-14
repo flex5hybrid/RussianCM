@@ -1,2 +1,2 @@
-ent-AU14SpawnPointGOVFORSquadAutomaticRifleman-name = Spawn Point GOVFOR Squad Rifleman
-ent-AU14SpawnPointGOVFORSquadAutomaticRifleman-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointGOVFORSquadAutomaticRifleman-name = Точка появления Стрелок отряда ГОВФОР
+ent-AU14SpawnPointGOVFORSquadAutomaticRifleman-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

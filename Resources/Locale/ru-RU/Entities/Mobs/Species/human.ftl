@@ -1,2 +1,2 @@
-ent-BaseMobHuman-name = Urist McHands
+ent-BaseMobHuman-name = Урист МакХэндс
 

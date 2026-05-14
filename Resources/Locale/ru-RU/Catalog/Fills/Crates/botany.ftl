@@ -1,15 +1,15 @@
-ent-CrateHydroponicsSeedsExotic-name = exotic seeds crate
-ent-CrateHydroponicsSeedsExotic-desc = Any entrepreneuring botanist's dream. Contains many different exotic seeds. Requires Hydroponics access to open.
+ent-CrateHydroponicsSeedsExotic-name = ящик для экзотических семян
+ent-CrateHydroponicsSeedsExotic-desc = Мечта любого предпринимателя-ботаника. Содержит множество различных экзотических семян. Для открытия требуется доступ к гидропонике.
 
-ent-CrateHydroponicsSeedsMedicinal-name = medicinal seeds crate
-ent-CrateHydroponicsSeedsMedicinal-desc = The wannabe chemist's dream. The power of medicine is at your fingertips! Requires Hydroponics access to open.
+ent-CrateHydroponicsSeedsMedicinal-name = ящик с лекарственными семенами
+ent-CrateHydroponicsSeedsMedicinal-desc = Мечта начинающего химика. Сила медицины у вас под рукой! Для открытия требуется доступ к гидропонике.
 
-ent-CrateHydroponicsTools-name = hydroponics equipment crate
-ent-CrateHydroponicsTools-desc = Supplies for growing a great garden! Contains some spray bottles of plant chemicals, a hatchet, a mini-hoe, scythe, as well as a pair of leather gloves and a botanist's apron.
+ent-CrateHydroponicsTools-name = ящик для оборудования для гидропоники
+ent-CrateHydroponicsTools-desc = Товары для выращивания великолепного сада! Содержит несколько распылителей с химикатами для растений, топор, мини-мотыгу, косу, а также пару кожаных перчаток и фартук ботаника.
 
-ent-CrateHydroponicsSeeds-name = seeds crate
-ent-CrateHydroponicsSeeds-desc = Big things have small beginnings. Contains twelve different seeds.
+ent-CrateHydroponicsSeeds-name = ящик для семян
+ent-CrateHydroponicsSeeds-desc = Большие дела имеют маленькое начало. Содержит двенадцать различных семян.
 
-ent-CrateHydroponicsTray-name = hydroponics tray crate
-ent-CrateHydroponicsTray-desc = Contains a hydroponics tray flatpack.
+ent-CrateHydroponicsTray-name = ящик для лотков для гидропоники
+ent-CrateHydroponicsTray-desc = Содержит плоскую упаковку лотка для гидропоники.
 

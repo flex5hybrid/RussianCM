@@ -1,2 +1,2 @@
-ent-RandomVendingDrinks-name = random vending machine spawner
+ent-RandomVendingDrinks-name = Случайный спаунер торговых автоматов
 

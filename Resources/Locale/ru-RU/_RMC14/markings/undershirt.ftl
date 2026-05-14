@@ -46,3 +46,13 @@ marking-RMCUndershirtStraplesUrban = Бюстгальтер (городской,
 marking-RMCUndershirtStraplesUrban-u_strapless = Бюстгальтер
 marking-RMCUndershirtNone = Нет
 marking-RMCUndershirtNone-blank = Нет
+
+# Missing entries synced from en-US
+
+marking-AU14UndershirtWY = Майка (Вайоминг, стандарт)
+
+marking-AU14UndershirtWY-blank = Майка (Вайоминг, стандарт)
+
+marking-AU14UndershirtUSCM = Майка (USCM, Стандарт)
+
+marking-AU14UndershirtUSCM-blank = Майка (USCM, Стандарт)

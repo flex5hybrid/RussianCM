@@ -1,3 +1,3 @@
-ent-ArabianLamp-name = lamp
-ent-ArabianLamp-desc = Why the heck won't this piece of junk open!?
+ent-ArabianLamp-name = лампа
+ent-ArabianLamp-desc = Какого черта этот кусок барахла не открывается!?
 

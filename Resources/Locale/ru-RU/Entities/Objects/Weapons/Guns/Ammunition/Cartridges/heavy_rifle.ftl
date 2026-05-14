@@ -1,4 +1,4 @@
-ent-BaseCartridgeHeavyRifle-name = cartridge (.20 rifle)
+ent-BaseCartridgeHeavyRifle-name = патрон (винтовка .20)
 
-ent-CartridgeMinigun-name = cartridge (.10 rifle)
+ent-CartridgeMinigun-name = патрон (винтовка .10)
 

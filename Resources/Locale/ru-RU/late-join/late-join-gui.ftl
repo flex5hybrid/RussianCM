@@ -8,3 +8,7 @@ late-join-gui-job-slot-capped = { $jobName } ({ $amount } { $amount ->
     *[other] доступно
 })
 late-join-gui-job-slot-uncapped = { $jobName } (Без ограничений)
+
+# Missing entries synced from en-US
+
+late-join-gui-no-departments-available = Эта фракция не активна на этой карте.

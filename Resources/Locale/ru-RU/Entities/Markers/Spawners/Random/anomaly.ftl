@@ -1,6 +1,6 @@
-ent-RandomAnomalySpawner-name = random anomaly spawner
+ent-RandomAnomalySpawner-name = генератор случайных аномалий
 
-ent-RandomRockAnomalySpawner-name = random rock anomaly spawner
+ent-RandomRockAnomalySpawner-name = генератор случайных каменных аномалий
 
-ent-RandomAnomalyInjectorSpawner-name = random anomaly injector spawner
+ent-RandomAnomalyInjectorSpawner-name = генератор случайных аномалий
 

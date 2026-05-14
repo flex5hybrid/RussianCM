@@ -1,9 +1,9 @@
-ent-ActionCritSuccumb-name = Succumb
-ent-ActionCritSuccumb-desc = Accept your fate.
+ent-ActionCritSuccumb-name = Поддаться
+ent-ActionCritSuccumb-desc = Примите свою судьбу.
 
-ent-ActionCritFakeDeath-name = Fake Death
-ent-ActionCritFakeDeath-desc = Pretend to take your final breath while staying alive.
+ent-ActionCritFakeDeath-name = Фальшивая смерть
+ent-ActionCritFakeDeath-desc = Притворитесь, что делаете последний вздох, оставаясь в живых.
 
-ent-ActionCritLastWords-name = Say Last Words
-ent-ActionCritLastWords-desc = Whisper your last words to anyone nearby, and then succumb to your fate. You only have 30 characters to work with.
+ent-ActionCritLastWords-name = Скажи последние слова
+ent-ActionCritLastWords-desc = Шепните свои последние слова всем, кто рядом, а затем поддайтесь своей судьбе. У вас есть только 30 персонажей для работы.
 

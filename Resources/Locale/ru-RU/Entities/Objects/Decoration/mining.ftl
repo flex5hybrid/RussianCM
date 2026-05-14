@@ -1,18 +1,18 @@
-ent-WoodenSign-name = wooden sign
-ent-WoodenSign-desc = He's pointing somewhere.
+ent-WoodenSign-name = деревянный знак
+ent-WoodenSign-desc = Он куда-то указывает.
 
-ent-WoodenSupport-name = wooden support
-ent-WoodenSupport-desc = Increases your confidence that a rock won't fall on your head.
+ent-WoodenSupport-name = деревянная опора
+ent-WoodenSupport-desc = Повышает вашу уверенность в том, что камень не упадет вам на голову.
 
-ent-WoodenSupportBeam-name = wooden support beam
-ent-WoodenSupportBeam-desc = Increases your confidence that a rock won't fall on your head.
+ent-WoodenSupportBeam-name = деревянная опорная балка
+ent-WoodenSupportBeam-desc = Повышает вашу уверенность в том, что камень не упадет вам на голову.
 
-ent-WoodenSupportWall-name = wooden support wall
-ent-WoodenSupportWall-desc = An old, rotten wall.
+ent-WoodenSupportWall-name = деревянная опорная стена
+ent-WoodenSupportWall-desc = Старая, гнилая стена.
 
-ent-WoodenSignRight-name = wooden sign
-ent-WoodenSignRight-desc = He's pointing somewhere.
+ent-WoodenSignRight-name = деревянный знак
+ent-WoodenSignRight-desc = Он куда-то указывает.
 
-ent-WoodenSupportWallBroken-name = wooden support wall
-ent-WoodenSupportWallBroken-desc = An old, rotten wall.
+ent-WoodenSupportWallBroken-name = деревянная опорная стена
+ent-WoodenSupportWallBroken-desc = Старая, гнилая стена.
 

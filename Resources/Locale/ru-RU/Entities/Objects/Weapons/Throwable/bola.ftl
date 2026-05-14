@@ -1,3 +1,3 @@
-ent-Bola-name = bola
-ent-Bola-desc = Linked together with some spare cuffs and metal.
+ent-Bola-name = бола
+ent-Bola-desc = Соединены между собой запасными манжетами и металлом.
 

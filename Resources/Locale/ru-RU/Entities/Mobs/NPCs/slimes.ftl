@@ -1,24 +1,24 @@
-ent-BaseMobAdultSlimes-name = basic slime
-ent-BaseMobAdultSlimes-desc = It looks so much like jelly. I wonder what it tastes like?
+ent-BaseMobAdultSlimes-name = базовый слизь
+ent-BaseMobAdultSlimes-desc = Это так похоже на желе. Интересно, какой он на вкус?
 
-ent-MobAdultSlimes-name = basic slime
-ent-MobAdultSlimes-desc = It looks so much like jelly. I wonder what it tastes like?
+ent-MobAdultSlimes-name = базовый слизь
+ent-MobAdultSlimes-desc = Это так похоже на желе. Интересно, какой он на вкус?
 
-ent-MobAdultSlimesBlue-name = blue slime
-ent-MobAdultSlimesBlue-desc = It looks so much like jelly. I wonder what it tastes like?
+ent-MobAdultSlimesBlue-name = синяя слизь
+ent-MobAdultSlimesBlue-desc = Это так похоже на желе. Интересно, какой он на вкус?
 
-ent-MobAdultSlimesBlueAngry-name = blue slime
-ent-MobAdultSlimesBlueAngry-desc = It looks so much like jelly. I wonder what it tastes like?
+ent-MobAdultSlimesBlueAngry-name = синяя слизь
+ent-MobAdultSlimesBlueAngry-desc = Это так похоже на желе. Интересно, какой он на вкус?
 
-ent-MobAdultSlimesGreen-name = green slime
-ent-MobAdultSlimesGreen-desc = It looks so much like jelly. I wonder what it tastes like?
+ent-MobAdultSlimesGreen-name = зеленая слизь
+ent-MobAdultSlimesGreen-desc = Это так похоже на желе. Интересно, какой он на вкус?
 
-ent-MobAdultSlimesGreenAngry-name = green slime
-ent-MobAdultSlimesGreenAngry-desc = It looks so much like jelly. I wonder what it tastes like?
+ent-MobAdultSlimesGreenAngry-name = зеленая слизь
+ent-MobAdultSlimesGreenAngry-desc = Это так похоже на желе. Интересно, какой он на вкус?
 
-ent-MobAdultSlimesYellow-name = yellow slime
-ent-MobAdultSlimesYellow-desc = It looks so much like jelly. I wonder what it tastes like?
+ent-MobAdultSlimesYellow-name = желтая слизь
+ent-MobAdultSlimesYellow-desc = Это так похоже на желе. Интересно, какой он на вкус?
 
-ent-MobAdultSlimesYellowAngry-name = yellow slime
-ent-MobAdultSlimesYellowAngry-desc = It looks so much like jelly. I wonder what it tastes like?
+ent-MobAdultSlimesYellowAngry-name = желтая слизь
+ent-MobAdultSlimesYellowAngry-desc = Это так похоже на желе. Интересно, какой он на вкус?
 

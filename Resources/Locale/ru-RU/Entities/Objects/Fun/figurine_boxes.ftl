@@ -1,12 +1,12 @@
-ent-MysteryFigureBoxTrash-name = unfolded cardboard box
-ent-MysteryFigureBoxTrash-desc = A small, unfolded cardboard toy box.
+ent-MysteryFigureBoxTrash-name = развернутая картонная коробка
+ent-MysteryFigureBoxTrash-desc = Небольшая картонная коробка для игрушек в развернутом виде.
 
-ent-MysteryFigureBox-name = mystery spacemen minifigure box
-ent-MysteryFigureBox-desc = A box containing a mystery minifigure. The side of the box depicts a few blacked-out 'rare' figures, including one with a large, non-humanoid shilouette.
+ent-MysteryFigureBox-name = Коробка с минифигурками загадочных космонавтов
+ent-MysteryFigureBox-desc = Коробка с загадочной минифигуркой. На боковой стороне коробки изображено несколько затемненных «редких» фигур, в том числе фигура с большим негуманоидным шилуэтом.
 
-ent-MysteryLighterBox-name = Novelty lighter mystery box
-ent-MysteryLighterBox-desc = A box of discontinued promotional lighters, many of which have since been declared "contraband".
+ent-MysteryLighterBox-name = Новинка, загадочная коробочка для зажигалки.
+ent-MysteryLighterBox-desc = Коробка снятых с производства рекламных зажигалок, многие из которых с тех пор были объявлены «контрабандой».
 
-ent-UplinkLighterBox-name = Novelty lighter mystery box
-ent-UplinkLighterBox-desc = A box of discontinued promotional lighters, many of which have since been declared "contraband".
+ent-UplinkLighterBox-name = Новинка, загадочная коробочка для зажигалки.
+ent-UplinkLighterBox-desc = Коробка снятых с производства рекламных зажигалок, многие из которых с тех пор были объявлены «контрабандой».
 

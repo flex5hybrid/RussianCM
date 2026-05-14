@@ -1,2 +1,2 @@
-ent-VirtualBeamEntityController-name = BEAM ENTITY YOU SHOULD NOT SEE THIS
+ent-VirtualBeamEntityController-name = ЛУЧНАЯ СУЩНОСТЬ, ВЫ НЕ ДОЛЖНЫ ВИДИТЬ ЭТО
 

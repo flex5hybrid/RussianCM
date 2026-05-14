@@ -1,7 +1,7 @@
-ent-ReinforcedUraniumWindow-name = reinforced uranium window
+ent-ReinforcedUraniumWindow-name = усиленное урановое окно
 
-ent-UraniumReinforcedWindowDirectional-name = directional reinforced uranium window
-ent-UraniumReinforcedWindowDirectional-desc = Don't smudge up the glass down there.
+ent-UraniumReinforcedWindowDirectional-name = усиленное урановое окно направленного действия
+ent-UraniumReinforcedWindowDirectional-desc = Не испачкай там стекло.
 
 ent-ReinforcedUraniumWindowDiagonal-name = construction-recipe-reinforced-uranium-window-diagonal
 

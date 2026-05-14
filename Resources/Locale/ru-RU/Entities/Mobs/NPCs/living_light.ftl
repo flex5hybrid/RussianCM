@@ -1,12 +1,12 @@
-ent-MobLivingLight-name = luminous person
-ent-MobLivingLight-desc = A blinding figure of pure light, seemingly intangible.
+ent-MobLivingLight-name = светящийся человек
+ent-MobLivingLight-desc = Ослепительная фигура чистого света, казалось бы, неосязаемая.
 
-ent-MobLuminousObject-name = luminous object
-ent-MobLuminousObject-desc = A small glowing object that causes burns on the skin with its glow.
+ent-MobLuminousObject-name = светящийся объект
+ent-MobLuminousObject-desc = Небольшой светящийся предмет, вызывающий ожоги кожи своим свечением.
 
-ent-MobLuminousEntity-name = luminous entity
-ent-MobLuminousEntity-desc = A blinding translucent entity, the bright eye seems dangerous and scalding.
+ent-MobLuminousEntity-name = светящаяся сущность
+ent-MobLuminousEntity-desc = Ослепляющее полупрозрачное существо, яркий глаз кажется опасным и обжигающим.
 
-ent-MobLuminousPerson-name = luminous person
-ent-MobLuminousPerson-desc = A blinding figure of pure light, seemingly intangible.
+ent-MobLuminousPerson-name = светящийся человек
+ent-MobLuminousPerson-desc = Ослепительная фигура чистого света, казалось бы, неосязаемая.
 

@@ -85,8 +85,7 @@ rmc-xeno-maid-name = Кошкодевочка-горничная
 rmc-xeno-maid-description = Вы жертвуете своим достоинством.
     Вы получаете:
     - Причинение психологического урона всем вокруг
-rmc-xeno-maid-popup = Rawr :3
-
+rmc-xeno-maid-popup = Рорр :3
 rmc-xeno-vampire-name = Вампир
 rmc-xeno-vampire-description = Вы становитесь убийцей-ассасином.
   Вы получаете:
@@ -140,3 +139,20 @@ rmc-xeno-designer-description = Вы становитесь строителем
     - Улучшенное зрение
     - Улучшения смолы
 rmc-xeno-designer-popup = Ты архитектор улья. Расширь его.
+
+# Missing entries synced from en-US
+
+rmc-xeno-trapper-name = Сапер
+
+rmc-xeno-trapper-description = Вы обмениваете свою бомбарду, нейротоксин, кислотный покров, кислотные брызги, немного скорости и немного здоровья, чтобы получить возможность создавать кислотные взрывы и сдерживать врагов внутри них.
+   You gain the ability to:
+   - Fire a close ranged shotgun of acid that deals high damage, further increased against trapped targets.
+   - - Gain stacks of Insight when you strike enemies with your shotgun, at 10 stacks you empower your next trap deployment.
+   - - - Hitting a trapped enemy will instantly give you max stacks of Insight.
+   - Place a line of restraining traps at a distance to set up ambushes or disrupt enemies.
+   - - When empowered, the traps restrain for longer and empower your next Acid Mine explosion.
+   - Remotely detonate hidden Acid Mines, causing a delayed explosion of acid that will burn enemies and corrode through structures.
+   - - When empowered, deals greatly increased damage to structures and slightly increased damage against enemies but also applying a lingering acid to them.
+   - Gain a temporary speed boost when hurt, allowing a swifter escape.
+
+rmc-xeno-trapper-popup = Поле битвы — мой холст, этот — мой художник. Растопите их там, где они стоят.

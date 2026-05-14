@@ -48,3 +48,43 @@ command-description-withxenotier = Фильтрует ксеносов по ур
 command-description-spawnallmapinserts = Принудительно спавнит все карточные объекты.
 command-description-rmcresetahelptracking = Сбрасывает статистику AHelp для Discord.
 command-description-hijack-trigger = Активирует сценарий угона на текущей карте.
+
+# Missing entries synced from en-US
+
+command-description-rmcresetahelprelay = Перезапускает реле AHelp и MHelp.
+
+command-description-forceplanetmap = Заставляет следующий раунд начаться с указанной планеты.
+
+command-description-setoperationname = Изменяет название операции для предстоящего раунда.
+
+command-description-animationtest-setlayerstate = Устанавливает слой объекта в определенное состояние на 3 секунды.
+
+command-description-animationtest-flick = Один раз воспроизводит анимацию из RSI для объекта.
+
+command-description-nearbytile = Получает TileRefs для указанного диапазона вокруг объектов.
+
+command-description-tiletype-FromProtoId = Возвращает список TileRefs, соответствующих указанному ProtoId. (Необратимый)
+
+command-description-tiletype-FromTileId = Возвращает список TileRefs, соответствующих идентификатору определения плитки. (Необратимый)
+
+command-description-replacetile-FromProtoId = Заменяет плитки на указанный ProtoId.
+
+command-description-replacetile-FromTileId = Заменяет плитки на указанный идентификатор определения плитки.
+
+command-description-gridtile = Получает TileRefs для сетки, частью которой является указанный объект.
+
+command-description-movespeed = Изменяет максимальную скорость движения для данных объектов.
+
+command-description-rename = изменяет поле Имя объекта MetaData.
+
+command-description-stairwell = Устанавливает смещение телепортации для данных объектов Teleporter.
+
+command-description-stairwellprojector = Устанавливает идентификатор проекции для данных объектов TeleporterView.
+
+command-description-getusername = Получает имя пользователя, прикрепленное к сущности.
+
+command-description-mobstate = Фильтруйте объекты по их MobState.
+
+command-description-vehiclesupply-addstorage = Добавляет прототип транспортного средства на ближайший склад транспортных средств.
+
+command-description-vehiclesupply-addstoragelift = Добавляет прототип транспортного средства в определенное хранилище грузовых автомобилей.

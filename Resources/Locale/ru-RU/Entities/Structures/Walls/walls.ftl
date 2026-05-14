@@ -1,145 +1,145 @@
-ent-BaseStructureWall-name = basewall
-ent-BaseStructureWall-desc = Keeps the air in and the greytide out.
+ent-BaseStructureWall-name = базовая стена
+ent-BaseStructureWall-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallBrick-name = brick wall
-ent-WallBrick-desc = Keeps the air in and the greytide out.
+ent-WallBrick-name = кирпичная стена
+ent-WallBrick-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallClock-name = clock wall
-ent-WallClock-desc = Keeps the air in and the greytide out.
+ent-WallClock-name = настенные часы
+ent-WallClock-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallClown-name = bananium wall
-ent-WallClown-desc = Keeps the air in and the greytide out.
+ent-WallClown-name = банановая стена
+ent-WallClown-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallMeat-name = meat wall
-ent-WallMeat-desc = Sticky.
+ent-WallMeat-name = мясная стена
+ent-WallMeat-desc = Липкий.
 
-ent-WallCult-name = cult wall
-ent-WallCult-desc = Keeps the air in and the greytide out.
+ent-WallCult-name = культовая стена
+ent-WallCult-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallDebug-name = debug wall
-ent-WallDebug-desc = Keeps the air in and the greytide out.
+ent-WallDebug-name = стена отладки
+ent-WallDebug-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallDiamond-name = diamond wall
-ent-WallDiamond-desc = Keeps the air in and the greytide out.
+ent-WallDiamond-name = алмазная стена
+ent-WallDiamond-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallGold-name = gold wall
-ent-WallGold-desc = Keeps the air in and the greytide out.
+ent-WallGold-name = золотая стена
+ent-WallGold-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallIce-name = ice wall
-ent-WallIce-desc = Keeps the air in and the greytide out.
+ent-WallIce-name = ледяная стена
+ent-WallIce-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallPlasma-name = plasma wall
-ent-WallPlasma-desc = Keeps the air in and the greytide out.
+ent-WallPlasma-name = плазменная стена
+ent-WallPlasma-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallPlastic-name = plastic wall
-ent-WallPlastic-desc = Keeps the air in and the greytide out.
+ent-WallPlastic-name = пластиковая стена
+ent-WallPlastic-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallPlastitaniumIndestructible-name = plastitanium wall
-ent-WallPlastitaniumIndestructible-desc = Keeps the air in and the greytide out.
+ent-WallPlastitaniumIndestructible-name = пластитановая стена
+ent-WallPlastitaniumIndestructible-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallPlastitanium-name = plastitanium wall
-ent-WallPlastitanium-desc = Keeps the air in and the greytide out.
+ent-WallPlastitanium-name = пластитановая стена
+ent-WallPlastitanium-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallPlastitaniumDiagonalIndestructible-name = plastitanium wall
-ent-WallPlastitaniumDiagonalIndestructible-desc = Keeps the air in and the greytide out.
+ent-WallPlastitaniumDiagonalIndestructible-name = пластитановая стена
+ent-WallPlastitaniumDiagonalIndestructible-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallPlastitaniumDiagonal-name = plastitanium wall
-ent-WallPlastitaniumDiagonal-desc = Keeps the air in and the greytide out.
+ent-WallPlastitaniumDiagonal-name = пластитановая стена
+ent-WallPlastitaniumDiagonal-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallReinforced-name = reinforced wall
-ent-WallReinforced-desc = Keeps the air in and the greytide out.
+ent-WallReinforced-name = усиленная стена
+ent-WallReinforced-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallReinforcedDiagonal-name = reinforced wall
-ent-WallReinforcedDiagonal-desc = Keeps the air in and the greytide out.
+ent-WallReinforcedDiagonal-name = усиленная стена
+ent-WallReinforcedDiagonal-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallRiveted-name = riveted wall
-ent-WallRiveted-desc = Keeps the air in and the greytide out.
+ent-WallRiveted-name = клепаная стена
+ent-WallRiveted-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallSandstone-name = sandstone wall
-ent-WallSandstone-desc = Keeps the air in and the greytide out.
+ent-WallSandstone-name = стена из песчаника
+ent-WallSandstone-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallSilver-name = silver wall
-ent-WallSilver-desc = Keeps the air in and the greytide out.
+ent-WallSilver-name = серебряная стена
+ent-WallSilver-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallShuttleDiagonal-name = shuttle wall
-ent-WallShuttleDiagonal-desc = Keeps the air in and the greytide out.
+ent-WallShuttleDiagonal-name = челночная стена
+ent-WallShuttleDiagonal-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallShuttle-name = shuttle wall
-ent-WallShuttle-desc = Keeps the air in and the greytide out.
+ent-WallShuttle-name = челночная стена
+ent-WallShuttle-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallSolid-name = solid wall
-ent-WallSolid-desc = Keeps the air in and the greytide out.
+ent-WallSolid-name = сплошная стена
+ent-WallSolid-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallSolidDiagonal-name = solid wall
-ent-WallSolidDiagonal-desc = Keeps the air in and the greytide out.
+ent-WallSolidDiagonal-name = сплошная стена
+ent-WallSolidDiagonal-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallSolidChitin-name = solid chitin
-ent-WallSolidChitin-desc = Keeps the air in and the greytide out.
+ent-WallSolidChitin-name = твердый хитин
+ent-WallSolidChitin-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallReinforcedChitin-name = reinforced chitin
-ent-WallReinforcedChitin-desc = Keeps the air in and the greytide out.
+ent-WallReinforcedChitin-name = усиленный хитин
+ent-WallReinforcedChitin-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallUranium-name = uranium wall
-ent-WallUranium-desc = Keeps the air in and the greytide out.
+ent-WallUranium-name = урановая стена
+ent-WallUranium-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallWood-name = wood wall
-ent-WallWood-desc = The traditional greytide defense.
+ent-WallWood-name = деревянная стена
+ent-WallWood-desc = Традиционная защита серого прилива.
 
-ent-WallWeb-name = web wall
-ent-WallWeb-desc = Keeps the spiders in and the greytide out.
+ent-WallWeb-name = веб-стена
+ent-WallWeb-desc = Удерживает пауков внутри и снаружи.
 
-ent-WallNecropolis-name = stone wall
-ent-WallNecropolis-desc = Keeps the air in and the greytide out.
+ent-WallNecropolis-name = каменная стена
+ent-WallNecropolis-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallMining-name = mining wall
-ent-WallMining-desc = Keeps the air in and the greytide out.
+ent-WallMining-name = горнодобывающая стена
+ent-WallMining-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallMiningDiagonal-name = mining wall
-ent-WallMiningDiagonal-desc = Keeps the air in and the greytide out.
+ent-WallMiningDiagonal-name = горнодобывающая стена
+ent-WallMiningDiagonal-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallVaultAlien-name = alien vault wall
-ent-WallVaultAlien-desc = A mysterious ornate looking wall. There may be ancient dangers inside.
+ent-WallVaultAlien-name = Стена хранилища инопланетян
+ent-WallVaultAlien-desc = Таинственная богато выглядящая стена. Внутри могут таиться древние опасности.
 
-ent-WallVaultRock-name = rock vault wall
-ent-WallVaultRock-desc = A mysterious ornate looking wall. There may be ancient dangers inside.
+ent-WallVaultRock-name = стена каменного свода
+ent-WallVaultRock-desc = Таинственная богато выглядящая стена. Внутри могут таиться древние опасности.
 
-ent-WallVaultSandstone-name = sandstone vault wall
-ent-WallVaultSandstone-desc = A mysterious ornate looking wall. There may be ancient dangers inside.
+ent-WallVaultSandstone-name = стена свода из песчаника
+ent-WallVaultSandstone-desc = Таинственная богато выглядящая стена. Внутри могут таиться древние опасности.
 
-ent-WallInvisible-name = invisible wall
+ent-WallInvisible-name = невидимая стена
 
-ent-WallForce-name = force wall
+ent-WallForce-name = силовая стена
 
-ent-WallCobblebrick-name = cobblestone brick wall
-ent-WallCobblebrick-desc = Stone by stone, perfectly fitted together to form a wall.
+ent-WallCobblebrick-name = кирпичная стена из булыжника
+ent-WallCobblebrick-desc = Камень за камнем, идеально сложенные вместе, образуя стену.
 
-ent-WallBasaltCobblebrick-name = basalt brick wall
-ent-WallBasaltCobblebrick-desc = Stone by stone, perfectly fitted together to form a wall.
+ent-WallBasaltCobblebrick-name = базальтовая кирпичная стена
+ent-WallBasaltCobblebrick-desc = Камень за камнем, идеально сложенные вместе, образуя стену.
 
-ent-WallSnowCobblebrick-name = snow brick wall
-ent-WallSnowCobblebrick-desc = A cold, not-so-impenetrable wall.
+ent-WallSnowCobblebrick-name = снежная кирпичная стена
+ent-WallSnowCobblebrick-desc = Холодная, не такая уж и непроницаемая стена.
 
-ent-WallAsteroidCobblebrick-name = asteroid stone brick wall
-ent-WallAsteroidCobblebrick-desc = Stone by stone, perfectly fitted together to form a wall.
+ent-WallAsteroidCobblebrick-name = астероид каменная кирпичная стена
+ent-WallAsteroidCobblebrick-desc = Камень за камнем, идеально сложенные вместе, образуя стену.
 
-ent-WallSandCobblebrick-name = sandstone brick wall
-ent-WallSandCobblebrick-desc = Stone by stone, perfectly fitted together to form a wall.
+ent-WallSandCobblebrick-name = кирпичная стена из песчаника
+ent-WallSandCobblebrick-desc = Камень за камнем, идеально сложенные вместе, образуя стену.
 
-ent-WallChromiteCobblebrick-name = chromite brick wall
-ent-WallChromiteCobblebrick-desc = Stone by stone, perfectly fitted together to form a wall.
+ent-WallChromiteCobblebrick-name = Хромитовая кирпичная стена
+ent-WallChromiteCobblebrick-desc = Камень за камнем, идеально сложенные вместе, образуя стену.
 
-ent-WallAndesiteCobblebrick-name = andesite brick wall
-ent-WallAndesiteCobblebrick-desc = Stone by stone, perfectly fitted together to form a wall.
+ent-WallAndesiteCobblebrick-name = андезитовая кирпичная стена
+ent-WallAndesiteCobblebrick-desc = Камень за камнем, идеально сложенные вместе, образуя стену.
 
-ent-BaseWall-name = basewall
-ent-BaseWall-desc = Keeps the air in and the greytide out.
+ent-BaseWall-name = базовая стена
+ent-BaseWall-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallDiagonalBase-name = basewall
-ent-WallDiagonalBase-desc = Keeps the air in and the greytide out.
+ent-WallDiagonalBase-name = базовая стена
+ent-WallDiagonalBase-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallReinforcedRust-name = reinforced wall
-ent-WallReinforcedRust-desc = Keeps the air in and the greytide out.
+ent-WallReinforcedRust-name = усиленная стена
+ent-WallReinforcedRust-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallSolidRust-name = basewall
-ent-WallSolidRust-desc = Keeps the air in and the greytide out.
+ent-WallSolidRust-name = базовая стена
+ent-WallSolidRust-desc = Задерживает воздух и серую волну снаружи.
 

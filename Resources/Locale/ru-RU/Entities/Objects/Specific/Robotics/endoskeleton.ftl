@@ -1,3 +1,3 @@
-ent-CyborgEndoskeleton-name = cyborg endoskeleton
-ent-CyborgEndoskeleton-desc = A frame that cyborgs are built on. Significantly less spooky than expected.
+ent-CyborgEndoskeleton-name = эндоскелет киборга
+ent-CyborgEndoskeleton-desc = Каркас, на котором построены киборги. Значительно менее жутко, чем ожидалось.
 

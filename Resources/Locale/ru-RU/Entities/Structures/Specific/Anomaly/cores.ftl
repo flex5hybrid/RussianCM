@@ -1,78 +1,78 @@
-ent-BaseAnomalyCore-name = anomaly core
-ent-BaseAnomalyCore-desc = The core of a destroyed incomprehensible object.
+ent-BaseAnomalyCore-name = ядро аномалии
+ent-BaseAnomalyCore-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreFlesh-name = anomaly core
-ent-AnomalyCoreFlesh-desc = The core of a destroyed flesh anomaly. Pulsates sickeningly, but might be a hearty meal if cooked.
+ent-AnomalyCoreFlesh-name = ядро аномалии
+ent-AnomalyCoreFlesh-desc = Ядро разрушенной аномалии плоти. Пульсирует тошнотворно, но, если приготовить, может стать сытной едой.
 
-ent-AnomalyCoreFleshInert-name = anomaly core
-ent-AnomalyCoreFleshInert-desc = The inert core of a destroyed flesh anomaly. Pulsates sickeningly, but might be good food in the right hands?
+ent-AnomalyCoreFleshInert-name = ядро аномалии
+ent-AnomalyCoreFleshInert-desc = Инертное ядро разрушенной аномалии плоти. Пульсирует тошнотворно, но может ли это быть хорошая еда в умелых руках?
 
-ent-AnomalyCorePyroclastic-name = anomaly core
-ent-AnomalyCorePyroclastic-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCorePyroclastic-name = ядро аномалии
+ent-AnomalyCorePyroclastic-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreGravity-name = anomaly core
-ent-AnomalyCoreGravity-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreGravity-name = ядро аномалии
+ent-AnomalyCoreGravity-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreIce-name = anomaly core
-ent-AnomalyCoreIce-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreIce-name = ядро аномалии
+ent-AnomalyCoreIce-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreRock-name = anomaly core
-ent-AnomalyCoreRock-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreRock-name = ядро аномалии
+ent-AnomalyCoreRock-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreLiquid-name = anomaly core
-ent-AnomalyCoreLiquid-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreLiquid-name = ядро аномалии
+ent-AnomalyCoreLiquid-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreBluespace-name = anomaly core
-ent-AnomalyCoreBluespace-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreBluespace-name = ядро аномалии
+ent-AnomalyCoreBluespace-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreElectricity-name = anomaly core
-ent-AnomalyCoreElectricity-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreElectricity-name = ядро аномалии
+ent-AnomalyCoreElectricity-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreFlora-name = anomaly core
-ent-AnomalyCoreFlora-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreFlora-name = ядро аномалии
+ent-AnomalyCoreFlora-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreShadow-name = anomaly core
-ent-AnomalyCoreShadow-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreShadow-name = ядро аномалии
+ent-AnomalyCoreShadow-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreTech-name = anomaly core
-ent-AnomalyCoreTech-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreTech-name = ядро аномалии
+ent-AnomalyCoreTech-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreSanta-name = anomaly core
-ent-AnomalyCoreSanta-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreSanta-name = ядро аномалии
+ent-AnomalyCoreSanta-desc = Ядро разрушенного непонятного объекта.
 
-ent-BaseAnomalyInertCore-name = anomaly core
-ent-BaseAnomalyInertCore-desc = The core of a destroyed incomprehensible object.
+ent-BaseAnomalyInertCore-name = ядро аномалии
+ent-BaseAnomalyInertCore-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCorePyroclasticInert-name = anomaly core
-ent-AnomalyCorePyroclasticInert-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCorePyroclasticInert-name = ядро аномалии
+ent-AnomalyCorePyroclasticInert-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreGravityInert-name = anomaly core
-ent-AnomalyCoreGravityInert-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreGravityInert-name = ядро аномалии
+ent-AnomalyCoreGravityInert-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreIceInert-name = anomaly core
-ent-AnomalyCoreIceInert-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreIceInert-name = ядро аномалии
+ent-AnomalyCoreIceInert-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreRockInert-name = anomaly core
-ent-AnomalyCoreRockInert-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreRockInert-name = ядро аномалии
+ent-AnomalyCoreRockInert-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreLiquidInert-name = anomaly core
-ent-AnomalyCoreLiquidInert-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreLiquidInert-name = ядро аномалии
+ent-AnomalyCoreLiquidInert-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreBluespaceInert-name = anomaly core
-ent-AnomalyCoreBluespaceInert-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreBluespaceInert-name = ядро аномалии
+ent-AnomalyCoreBluespaceInert-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreElectricityInert-name = anomaly core
-ent-AnomalyCoreElectricityInert-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreElectricityInert-name = ядро аномалии
+ent-AnomalyCoreElectricityInert-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreFloraInert-name = anomaly core
-ent-AnomalyCoreFloraInert-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreFloraInert-name = ядро аномалии
+ent-AnomalyCoreFloraInert-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreShadowInert-name = anomaly core
-ent-AnomalyCoreShadowInert-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreShadowInert-name = ядро аномалии
+ent-AnomalyCoreShadowInert-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreTechInert-name = anomaly core
-ent-AnomalyCoreTechInert-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreTechInert-name = ядро аномалии
+ent-AnomalyCoreTechInert-desc = Ядро разрушенного непонятного объекта.
 
-ent-AnomalyCoreSantaInert-name = anomaly core
-ent-AnomalyCoreSantaInert-desc = The core of a destroyed incomprehensible object.
+ent-AnomalyCoreSantaInert-name = ядро аномалии
+ent-AnomalyCoreSantaInert-desc = Ядро разрушенного непонятного объекта.
 

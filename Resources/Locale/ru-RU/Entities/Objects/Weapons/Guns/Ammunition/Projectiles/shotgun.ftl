@@ -1,53 +1,53 @@
-ent-PelletShotgunSlug-name = pellet (.50 slug)
-ent-PelletShotgunSlug-desc = If you can see this you're probably dead!
+ent-PelletShotgunSlug-name = пулька (пуля 0,50)
+ent-PelletShotgunSlug-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletShotgunBeanbag-name = beanbag (.50)
-ent-PelletShotgunBeanbag-desc = If you can see this you're probably dead!
+ent-PelletShotgunBeanbag-name = погремушка (0,50)
+ent-PelletShotgunBeanbag-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletShotgun-name = pellet (.50)
-ent-PelletShotgun-desc = If you can see this you're probably dead!
+ent-PelletShotgun-name = пеллета (.50)
+ent-PelletShotgun-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletShotgunIncendiary-name = pellet (.50 incendiary)
-ent-PelletShotgunIncendiary-desc = If you can see this you're probably dead!
+ent-PelletShotgunIncendiary-name = пулька (.50 зажигательная)
+ent-PelletShotgunIncendiary-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletShotgunPractice-name = pellet (.50 practice)
-ent-PelletShotgunPractice-desc = If you can see this you're probably dead!
+ent-PelletShotgunPractice-name = пулька (0,50 практики)
+ent-PelletShotgunPractice-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletShotgunImprovised-name = improvised pellet
-ent-PelletShotgunImprovised-desc = If you can see this you're probably dead!
+ent-PelletShotgunImprovised-name = импровизированная пуля
+ent-PelletShotgunImprovised-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletShotgunTranquilizer-name = pellet (.50 tranquilizer)
-ent-PelletShotgunTranquilizer-desc = If you can see this you're probably dead!
+ent-PelletShotgunTranquilizer-name = гранула (транквилизатор .50)
+ent-PelletShotgunTranquilizer-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletShotgunFlare-name = pellet (.50 flare)
+ent-PelletShotgunFlare-name = пулька (вспышка 0,50)
 
-ent-PelletShotgunUranium-name = pellet (.50 uranium)
-ent-PelletShotgunUranium-desc = If you can see this you're probably dead!
+ent-PelletShotgunUranium-name = пулька (0,50 урана)
+ent-PelletShotgunUranium-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletGrapeshot-name = grapeshot pellet
-ent-PelletGrapeshot-desc = If you can see this you're probably dead!
+ent-PelletGrapeshot-name = дробовая дробь
+ent-PelletGrapeshot-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletGlass-name = glass shard
-ent-PelletGlass-desc = If you can see this you're probably dead!
+ent-PelletGlass-name = осколок стекла
+ent-PelletGlass-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletShotgunSpread-name = pellet (.50)
-ent-PelletShotgunSpread-desc = If you can see this you're probably dead!
+ent-PelletShotgunSpread-name = пеллета (.50)
+ent-PelletShotgunSpread-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletShotgunIncendiarySpread-name = pellet (.50 incendiary)
-ent-PelletShotgunIncendiarySpread-desc = If you can see this you're probably dead!
+ent-PelletShotgunIncendiarySpread-name = пулька (.50 зажигательная)
+ent-PelletShotgunIncendiarySpread-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletShotgunPracticeSpread-name = pellet (.50 practice)
-ent-PelletShotgunPracticeSpread-desc = If you can see this you're probably dead!
+ent-PelletShotgunPracticeSpread-name = пулька (0,50 практики)
+ent-PelletShotgunPracticeSpread-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletShotgunImprovisedSpread-name = improvised pellet
-ent-PelletShotgunImprovisedSpread-desc = If you can see this you're probably dead!
+ent-PelletShotgunImprovisedSpread-name = импровизированная пуля
+ent-PelletShotgunImprovisedSpread-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletShotgunUraniumSpread-name = pellet (.50 uranium)
-ent-PelletShotgunUraniumSpread-desc = If you can see this you're probably dead!
+ent-PelletShotgunUraniumSpread-name = пулька (0,50 урана)
+ent-PelletShotgunUraniumSpread-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletGrapeshotSpread-name = grapeshot pellet
-ent-PelletGrapeshotSpread-desc = If you can see this you're probably dead!
+ent-PelletGrapeshotSpread-name = дробовая дробь
+ent-PelletGrapeshotSpread-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-PelletGlassSpread-name = glass shard
-ent-PelletGlassSpread-desc = If you can see this you're probably dead!
+ent-PelletGlassSpread-name = осколок стекла
+ent-PelletGlassSpread-desc = Если ты это видишь, ты, вероятно, мертв!
 
