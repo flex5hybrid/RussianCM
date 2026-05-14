@@ -1,18 +1,18 @@
-ent-ActionToggleNinjaGloves-name = Toggle ninja gloves
-ent-ActionToggleNinjaGloves-desc = Toggles all glove actions on left click. Includes your doorjack, draining power, stunning enemies and hacking certain computers.
+ent-ActionToggleNinjaGloves-name = Переключить перчатки ниндзя
+ent-ActionToggleNinjaGloves-desc = Переключает все действия в перчатках при левом щелчке мыши. Включает в себя дверной домкрат, истощение энергии, оглушение врагов и взлом определенных компьютеров.
 
-ent-ActionCreateThrowingStar-name = Create throwing star
-ent-ActionCreateThrowingStar-desc = Channels suit power into creating a throwing star that deals extra stamina damage.
+ent-ActionCreateThrowingStar-name = Создать метательную звезду
+ent-ActionCreateThrowingStar-desc = Каналы преобразуют силу в создание метательной звезды, наносящей дополнительный урон выносливости.
 
-ent-ActionRecallKatana-name = Recall katana
-ent-ActionRecallKatana-desc = Teleports the Energy Katana linked to this suit to its wearer, cost based on distance.
+ent-ActionRecallKatana-name = Вспомнить катану
+ent-ActionRecallKatana-desc = Телепортирует энергетическую катану, связанную с этим костюмом, к владельцу, стоимость зависит от расстояния.
 
-ent-ActionNinjaEmp-name = EM Burst
-ent-ActionNinjaEmp-desc = Disable any nearby technology with an electro-magnetic pulse.
+ent-ActionNinjaEmp-name = ЭМ взрыв
+ent-ActionNinjaEmp-desc = Отключите любую близлежащую технику с помощью электромагнитного импульса.
 
-ent-ActionTogglePhaseCloak-name = Phase cloak
-ent-ActionTogglePhaseCloak-desc = Toggles your suit's phase cloak. Beware that if you are hit, all abilities are disabled for 5 seconds, including your cloak!
+ent-ActionTogglePhaseCloak-name = Фазовый плащ
+ent-ActionTogglePhaseCloak-desc = Включает фазовый плащ вашего костюма. Будьте осторожны: если вас ударили, все способности отключаются на 5 секунд, включая плащ!
 
-ent-ActionEnergyKatanaDash-name = Katana dash
-ent-ActionEnergyKatanaDash-desc = Teleport to anywhere you can see, if your Energy Katana is in your hand.
+ent-ActionEnergyKatanaDash-name = Катана тире
+ent-ActionEnergyKatanaDash-desc = Телепортируйтесь в любое место, которое вы видите, если у вас в руке Энергетическая Катана.
 

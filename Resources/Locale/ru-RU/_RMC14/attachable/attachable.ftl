@@ -49,3 +49,13 @@ rmc-attachable-examine-size = Размер предмета: [color={$colour}]{$
 rmc-attachable-examine-speed-walk = Множитель скорости ходьбы: [color={$colour}]{$sign}{TOSTRING($speed, "F2")}[/color]
 rmc-attachable-examine-speed-sprint = Множитель скорости бега: [color={$colour}]{$sign}{TOSTRING($speed, "F2")}[/color]
 rmc-attachable-examine-wield-delay = Задержка перехвата: [color={$colour}]{$sign}{$delay}с[/color]
+
+# Missing entries synced from en-US
+
+rmc-bslot-barrel = Матеба Бочка
+
+rmc-aslot-harness = упряжь
+
+rmc-attachable-examine-ranged-range = Дальность снаряда [color={$colour}]{$sign}{$falloff}[/color].
+
+rmc-attachable-examine-ranged-projectile-stun-duration = [color={$colour}]{$sign}{$stunDurationMult}[/color] Множитель длительности оглушения.

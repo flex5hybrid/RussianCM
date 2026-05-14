@@ -15,3 +15,9 @@ comp-space-heater-ui-High-power-consumption = Высокий
 
 comp-space-heater-device-name = Термостат
 comp-space-heater-unanchored = { CAPITALIZE($device) } не закреплён.
+
+# Missing entries synced from en-US
+
+comp-space-heater-ui-status-disabled = Выкл.
+
+comp-space-heater-ui-status-enabled = On

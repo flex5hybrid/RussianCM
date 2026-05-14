@@ -1,6 +1,6 @@
-ent-SalvageMagnet-name = salvage magnet
-ent-SalvageMagnet-desc = Pulls in salvage.
+ent-SalvageMagnet-name = спасательный магнит
+ent-SalvageMagnet-desc = Тянет в утиль.
 
-ent-SalvageLocator-name = salvage locator
-ent-SalvageLocator-desc = Locates salvage.
+ent-SalvageLocator-name = локатор спасения
+ent-SalvageLocator-desc = Находит спасение.
 

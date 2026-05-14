@@ -8,7 +8,7 @@ analysis-console-info-no-artifact = Артефакт не найден!
 analysis-console-info-ready = Все системы запущены. Сканирование готово.
 
 analysis-console-no-node = Выберите узел для просмотра
-analysis-console-info-id = [font="Monospace" size=11]ID:[/font]
+analysis-console-info-id = ID_УЗЛА: { $id }
 analysis-console-info-id-value = [font="Monospace" size=11][color=yellow]{ $id }[/color][/font]
 analysis-console-info-class = [font="Monospace" size=11]Класс:[/font]
 analysis-console-info-class-value = [font="Monospace" size=11]{ $class }[/font]

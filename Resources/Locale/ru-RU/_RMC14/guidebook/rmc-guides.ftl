@@ -28,3 +28,7 @@ rumc-guide-entry-rules = Правила
 rumc-guide-entry-rules-core = Основные правила
 rumc-guide-entry-rules-command-chain = Цепь командования
 rumc-guide-entry-rules-marine-law = Устав морской пехоты
+
+# Missing entries synced from en-US
+
+rmc-guide-entry-rules-community = Правила сообщества

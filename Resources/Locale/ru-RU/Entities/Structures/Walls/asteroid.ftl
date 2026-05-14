@@ -1,315 +1,315 @@
-ent-AsteroidRock-name = asteroid rock
-ent-AsteroidRock-desc = A rocky asteroid.
+ent-AsteroidRock-name = астероидная скала
+ent-AsteroidRock-desc = Каменистый астероид.
 
-ent-AsteroidRockCoal-name = asteroid rock
-ent-AsteroidRockCoal-desc = An ore vein rich with coal.
+ent-AsteroidRockCoal-name = астероидная скала
+ent-AsteroidRockCoal-desc = Рудная жила, богатая углем.
 
-ent-AsteroidRockGold-name = asteroid rock
-ent-AsteroidRockGold-desc = An ore vein rich with gold.
+ent-AsteroidRockGold-name = астероидная скала
+ent-AsteroidRockGold-desc = Рудная жила, богатая золотом.
 
-ent-AsteroidRockDiamond-name = asteroid rock
-ent-AsteroidRockDiamond-desc = An ore vein rich with diamonds.
+ent-AsteroidRockDiamond-name = астероидная скала
+ent-AsteroidRockDiamond-desc = Рудная жила, богатая алмазами.
 
-ent-AsteroidRockPlasma-name = asteroid rock
-ent-AsteroidRockPlasma-desc = An ore vein rich with plasma.
+ent-AsteroidRockPlasma-name = астероидная скала
+ent-AsteroidRockPlasma-desc = Рудная жила, богатая плазмой.
 
-ent-AsteroidRockQuartz-name = asteroid rock
-ent-AsteroidRockQuartz-desc = An ore vein rich with quartz.
+ent-AsteroidRockQuartz-name = астероидная скала
+ent-AsteroidRockQuartz-desc = Рудная жила, богатая кварцем.
 
-ent-AsteroidRockSilver-name = asteroid rock
-ent-AsteroidRockSilver-desc = An ore vein rich with silver.
+ent-AsteroidRockSilver-name = астероидная скала
+ent-AsteroidRockSilver-desc = Рудная жила, богатая серебром.
 
-ent-AsteroidRockTin-name = asteroid rock
-ent-AsteroidRockTin-desc = An ore vein rich with iron.
+ent-AsteroidRockTin-name = астероидная скала
+ent-AsteroidRockTin-desc = Рудная жила, богатая железом.
 
-ent-AsteroidRockUranium-name = asteroid rock
-ent-AsteroidRockUranium-desc = An ore vein rich with uranium.
+ent-AsteroidRockUranium-name = астероидная скала
+ent-AsteroidRockUranium-desc = Рудная жила, богатая ураном.
 
-ent-AsteroidRockBananium-name = asteroid rock
-ent-AsteroidRockBananium-desc = An ore vein rich with bananium.
+ent-AsteroidRockBananium-name = астероидная скала
+ent-AsteroidRockBananium-desc = Рудная жила, богатая бананом.
 
-ent-AsteroidRockSalt-name = asteroid rock
-ent-AsteroidRockSalt-desc = An ore vein rich with salt.
+ent-AsteroidRockSalt-name = астероидная скала
+ent-AsteroidRockSalt-desc = Рудная жила, богатая солью.
 
-ent-AsteroidRockArtifactFragment-name = asteroid rock
-ent-AsteroidRockArtifactFragment-desc = A rock wall. What's that sticking out of it?
+ent-AsteroidRockArtifactFragment-name = астероидная скала
+ent-AsteroidRockArtifactFragment-desc = Каменная стена. Что из этого торчит?
 
-ent-AsteroidRockMining-name = asteroid rock
-ent-AsteroidRockMining-desc = An asteroid.
+ent-AsteroidRockMining-name = астероидная скала
+ent-AsteroidRockMining-desc = Астероид.
 
-ent-IronRock-name = ironrock
-ent-IronRock-desc = A rocky asteroid.
+ent-IronRock-name = железная скала
+ent-IronRock-desc = Каменистый астероид.
 
-ent-IronRockMining-name = ironrock
-ent-IronRockMining-desc = An asteroid.
+ent-IronRockMining-name = железная скала
+ent-IronRockMining-desc = Астероид.
 
-ent-IronRockCoal-name = ironrock
-ent-IronRockCoal-desc = An ore vein rich with coal.
+ent-IronRockCoal-name = железная скала
+ent-IronRockCoal-desc = Рудная жила, богатая углем.
 
-ent-IronRockGold-name = ironrock
-ent-IronRockGold-desc = An ore vein rich with gold.
+ent-IronRockGold-name = железная скала
+ent-IronRockGold-desc = Рудная жила, богатая золотом.
 
-ent-IronRockPlasma-name = ironrock
-ent-IronRockPlasma-desc = An ore vein rich with plasma.
+ent-IronRockPlasma-name = железная скала
+ent-IronRockPlasma-desc = Рудная жила, богатая плазмой.
 
-ent-IronRockQuartz-name = ironrock
-ent-IronRockQuartz-desc = An ore vein rich with quartz.
+ent-IronRockQuartz-name = железная скала
+ent-IronRockQuartz-desc = Рудная жила, богатая кварцем.
 
-ent-IronRockSilver-name = ironrock
-ent-IronRockSilver-desc = An ore vein rich with silver.
+ent-IronRockSilver-name = железная скала
+ent-IronRockSilver-desc = Рудная жила, богатая серебром.
 
-ent-IronRockIron-name = ironrock
-ent-IronRockIron-desc = An ore vein rich with iron.
+ent-IronRockIron-name = железная скала
+ent-IronRockIron-desc = Рудная жила, богатая железом.
 
-ent-IronRockUranium-name = ironrock
-ent-IronRockUranium-desc = An ore vein rich with uranium.
+ent-IronRockUranium-name = железная скала
+ent-IronRockUranium-desc = Рудная жила, богатая ураном.
 
-ent-IronRockBananium-name = ironrock
-ent-IronRockBananium-desc = An ore vein rich with bananium.
+ent-IronRockBananium-name = железная скала
+ent-IronRockBananium-desc = Рудная жила, богатая бананом.
 
-ent-IronRockSalt-name = ironrock
-ent-IronRockSalt-desc = An ore vein rich with salt.
+ent-IronRockSalt-name = железная скала
+ent-IronRockSalt-desc = Рудная жила, богатая солью.
 
-ent-IronRockArtifactFragment-name = ironrock
-ent-IronRockArtifactFragment-desc = A rock wall. What's that sticking out of it?
+ent-IronRockArtifactFragment-name = железная скала
+ent-IronRockArtifactFragment-desc = Каменная стена. Что из этого торчит?
 
-ent-IronRockDiamond-name = ironrock
-ent-IronRockDiamond-desc = An ore vein rich with diamonds.
+ent-IronRockDiamond-name = железная скала
+ent-IronRockDiamond-desc = Рудная жила, богатая алмазами.
 
-ent-WallRock-name = rock
-ent-WallRock-desc = Keeps the air in and the greytide out.
+ent-WallRock-name = рок
+ent-WallRock-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallRockCoal-name = rock
-ent-WallRockCoal-desc = An ore vein rich with coal.
+ent-WallRockCoal-name = рок
+ent-WallRockCoal-desc = Рудная жила, богатая углем.
 
-ent-WallRockGold-name = rock
-ent-WallRockGold-desc = An ore vein rich with gold.
+ent-WallRockGold-name = рок
+ent-WallRockGold-desc = Рудная жила, богатая золотом.
 
-ent-WallRockDiamond-name = rock
-ent-WallRockDiamond-desc = An ore vein rich with diamonds.
+ent-WallRockDiamond-name = рок
+ent-WallRockDiamond-desc = Рудная жила, богатая алмазами.
 
-ent-WallRockPlasma-name = rock
-ent-WallRockPlasma-desc = An ore vein rich with plasma.
+ent-WallRockPlasma-name = рок
+ent-WallRockPlasma-desc = Рудная жила, богатая плазмой.
 
-ent-WallRockQuartz-name = rock
-ent-WallRockQuartz-desc = An ore vein rich with quartz.
+ent-WallRockQuartz-name = рок
+ent-WallRockQuartz-desc = Рудная жила, богатая кварцем.
 
-ent-WallRockSilver-name = rock
-ent-WallRockSilver-desc = An ore vein rich with silver.
+ent-WallRockSilver-name = рок
+ent-WallRockSilver-desc = Рудная жила, богатая серебром.
 
-ent-WallRockTin-name = rock
-ent-WallRockTin-desc = An ore vein rich with iron.
+ent-WallRockTin-name = рок
+ent-WallRockTin-desc = Рудная жила, богатая железом.
 
-ent-WallRockUranium-name = rock
-ent-WallRockUranium-desc = An ore vein rich with uranium.
+ent-WallRockUranium-name = рок
+ent-WallRockUranium-desc = Рудная жила, богатая ураном.
 
-ent-WallRockBananium-name = rock
-ent-WallRockBananium-desc = An ore vein rich with bananium.
+ent-WallRockBananium-name = рок
+ent-WallRockBananium-desc = Рудная жила, богатая бананом.
 
-ent-WallRockArtifactFragment-name = rock
-ent-WallRockArtifactFragment-desc = A rock wall. What's that sticking out of it?
+ent-WallRockArtifactFragment-name = рок
+ent-WallRockArtifactFragment-desc = Каменная стена. Что из этого торчит?
 
-ent-WallRockSalt-name = rock
-ent-WallRockSalt-desc = An ore vein rich with salt.
+ent-WallRockSalt-name = рок
+ent-WallRockSalt-desc = Рудная жила, богатая солью.
 
-ent-WallRockBasalt-name = basalt
-ent-WallRockBasalt-desc = Keeps the air in and the greytide out.
+ent-WallRockBasalt-name = базальт
+ent-WallRockBasalt-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallRockBasaltCoal-name = basalt
-ent-WallRockBasaltCoal-desc = An ore vein rich with coal.
+ent-WallRockBasaltCoal-name = базальт
+ent-WallRockBasaltCoal-desc = Рудная жила, богатая углем.
 
-ent-WallRockBasaltGold-name = basalt
-ent-WallRockBasaltGold-desc = An ore vein rich with gold.
+ent-WallRockBasaltGold-name = базальт
+ent-WallRockBasaltGold-desc = Рудная жила, богатая золотом.
 
-ent-WallRockBasaltDiamond-name = basalt
-ent-WallRockBasaltDiamond-desc = An ore vein rich with diamonds.
+ent-WallRockBasaltDiamond-name = базальт
+ent-WallRockBasaltDiamond-desc = Рудная жила, богатая алмазами.
 
-ent-WallRockBasaltPlasma-name = basalt
-ent-WallRockBasaltPlasma-desc = An ore vein rich with plasma.
+ent-WallRockBasaltPlasma-name = базальт
+ent-WallRockBasaltPlasma-desc = Рудная жила, богатая плазмой.
 
-ent-WallRockBasaltQuartz-name = basalt
-ent-WallRockBasaltQuartz-desc = An ore vein rich with quartz.
+ent-WallRockBasaltQuartz-name = базальт
+ent-WallRockBasaltQuartz-desc = Рудная жила, богатая кварцем.
 
-ent-WallRockBasaltSilver-name = basalt
-ent-WallRockBasaltSilver-desc = An ore vein rich with silver.
+ent-WallRockBasaltSilver-name = базальт
+ent-WallRockBasaltSilver-desc = Рудная жила, богатая серебром.
 
-ent-WallRockBasaltTin-name = basalt
-ent-WallRockBasaltTin-desc = An ore vein rich with iron.
+ent-WallRockBasaltTin-name = базальт
+ent-WallRockBasaltTin-desc = Рудная жила, богатая железом.
 
-ent-WallRockBasaltUranium-name = basalt
-ent-WallRockBasaltUranium-desc = An ore vein rich with uranium.
+ent-WallRockBasaltUranium-name = базальт
+ent-WallRockBasaltUranium-desc = Рудная жила, богатая ураном.
 
-ent-WallRockBasaltBananium-name = basalt
-ent-WallRockBasaltBananium-desc = An ore vein rich with bananium.
+ent-WallRockBasaltBananium-name = базальт
+ent-WallRockBasaltBananium-desc = Рудная жила, богатая бананом.
 
-ent-WallRockBasaltArtifactFragment-name = basalt
-ent-WallRockBasaltArtifactFragment-desc = A rock wall. What's that sticking out of it?
+ent-WallRockBasaltArtifactFragment-name = базальт
+ent-WallRockBasaltArtifactFragment-desc = Каменная стена. Что из этого торчит?
 
-ent-WallRockBasaltSalt-name = basalt
-ent-WallRockBasaltSalt-desc = An ore vein rich with salt.
+ent-WallRockBasaltSalt-name = базальт
+ent-WallRockBasaltSalt-desc = Рудная жила, богатая солью.
 
-ent-WallRockSnow-name = snowdrift
-ent-WallRockSnow-desc = Keeps the air in and the greytide out.
+ent-WallRockSnow-name = сугроб
+ent-WallRockSnow-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallRockSnowCoal-name = snowdrift
-ent-WallRockSnowCoal-desc = An ore vein rich with coal.
+ent-WallRockSnowCoal-name = сугроб
+ent-WallRockSnowCoal-desc = Рудная жила, богатая углем.
 
-ent-WallRockSnowGold-name = snowdrift
-ent-WallRockSnowGold-desc = An ore vein rich with gold.
+ent-WallRockSnowGold-name = сугроб
+ent-WallRockSnowGold-desc = Рудная жила, богатая золотом.
 
-ent-WallRockSnowDiamond-name = snowdrift
-ent-WallRockSnowDiamond-desc = An ore vein rich with diamonds.
+ent-WallRockSnowDiamond-name = сугроб
+ent-WallRockSnowDiamond-desc = Рудная жила, богатая алмазами.
 
-ent-WallRockSnowPlasma-name = snowdrift
-ent-WallRockSnowPlasma-desc = An ore vein rich with plasma.
+ent-WallRockSnowPlasma-name = сугроб
+ent-WallRockSnowPlasma-desc = Рудная жила, богатая плазмой.
 
-ent-WallRockSnowQuartz-name = snowdrift
-ent-WallRockSnowQuartz-desc = An ore vein rich with quartz.
+ent-WallRockSnowQuartz-name = сугроб
+ent-WallRockSnowQuartz-desc = Рудная жила, богатая кварцем.
 
-ent-WallRockSnowSilver-name = snowdrift
-ent-WallRockSnowSilver-desc = An ore vein rich with silver.
+ent-WallRockSnowSilver-name = сугроб
+ent-WallRockSnowSilver-desc = Рудная жила, богатая серебром.
 
-ent-WallRockSnowTin-name = snowdrift
-ent-WallRockSnowTin-desc = An ore vein rich with iron.
+ent-WallRockSnowTin-name = сугроб
+ent-WallRockSnowTin-desc = Рудная жила, богатая железом.
 
-ent-WallRockSnowUranium-name = snowdrift
-ent-WallRockSnowUranium-desc = An ore vein rich with uranium.
+ent-WallRockSnowUranium-name = сугроб
+ent-WallRockSnowUranium-desc = Рудная жила, богатая ураном.
 
-ent-WallRockSnowBananium-name = snowdrift
-ent-WallRockSnowBananium-desc = An ore vein rich with bananium.
+ent-WallRockSnowBananium-name = сугроб
+ent-WallRockSnowBananium-desc = Рудная жила, богатая бананом.
 
-ent-WallRockSnowArtifactFragment-name = snowdrift
-ent-WallRockSnowArtifactFragment-desc = A rock wall. What's that sticking out of it?
+ent-WallRockSnowArtifactFragment-name = сугроб
+ent-WallRockSnowArtifactFragment-desc = Каменная стена. Что из этого торчит?
 
-ent-WallRockSnowSalt-name = snowdrift
-ent-WallRockSnowSalt-desc = An ore vein rich with salt.
+ent-WallRockSnowSalt-name = сугроб
+ent-WallRockSnowSalt-desc = Рудная жила, богатая солью.
 
-ent-WallRockSand-name = sandstone
-ent-WallRockSand-desc = Keeps the air in and the greytide out.
+ent-WallRockSand-name = песчаник
+ent-WallRockSand-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallRockSandCoal-name = sandstone
-ent-WallRockSandCoal-desc = An ore vein rich with coal.
+ent-WallRockSandCoal-name = песчаник
+ent-WallRockSandCoal-desc = Рудная жила, богатая углем.
 
-ent-WallRockSandGold-name = sandstone
-ent-WallRockSandGold-desc = An ore vein rich with gold.
+ent-WallRockSandGold-name = песчаник
+ent-WallRockSandGold-desc = Рудная жила, богатая золотом.
 
-ent-WallRockSandDiamond-name = sandstone
-ent-WallRockSandDiamond-desc = An ore vein rich with diamonds.
+ent-WallRockSandDiamond-name = песчаник
+ent-WallRockSandDiamond-desc = Рудная жила, богатая алмазами.
 
-ent-WallRockSandPlasma-name = sandstone
-ent-WallRockSandPlasma-desc = An ore vein rich with plasma.
+ent-WallRockSandPlasma-name = песчаник
+ent-WallRockSandPlasma-desc = Рудная жила, богатая плазмой.
 
-ent-WallRockSandQuartz-name = sandstone
-ent-WallRockSandQuartz-desc = An ore vein rich with quartz.
+ent-WallRockSandQuartz-name = песчаник
+ent-WallRockSandQuartz-desc = Рудная жила, богатая кварцем.
 
-ent-WallRockSandSilver-name = sandstone
-ent-WallRockSandSilver-desc = An ore vein rich with silver.
+ent-WallRockSandSilver-name = песчаник
+ent-WallRockSandSilver-desc = Рудная жила, богатая серебром.
 
-ent-WallRockSandTin-name = sandstone
-ent-WallRockSandTin-desc = An ore vein rich with iron.
+ent-WallRockSandTin-name = песчаник
+ent-WallRockSandTin-desc = Рудная жила, богатая железом.
 
-ent-WallRockSandUranium-name = sandstone
-ent-WallRockSandUranium-desc = An ore vein rich with uranium.
+ent-WallRockSandUranium-name = песчаник
+ent-WallRockSandUranium-desc = Рудная жила, богатая ураном.
 
-ent-WallRockSandBananium-name = sandstone
-ent-WallRockSandBananium-desc = An ore vein rich with bananium.
+ent-WallRockSandBananium-name = песчаник
+ent-WallRockSandBananium-desc = Рудная жила, богатая бананом.
 
-ent-WallRockSandArtifactFragment-name = sandstone
-ent-WallRockSandArtifactFragment-desc = A rock wall. What's that sticking out of it?
+ent-WallRockSandArtifactFragment-name = песчаник
+ent-WallRockSandArtifactFragment-desc = Каменная стена. Что из этого торчит?
 
-ent-WallRockSandSalt-name = sandstone
-ent-WallRockSandSalt-desc = An ore vein rich with salt.
+ent-WallRockSandSalt-name = песчаник
+ent-WallRockSandSalt-desc = Рудная жила, богатая солью.
 
-ent-WallRockChromite-name = chromite
-ent-WallRockChromite-desc = Keeps the air in and the greytide out.
+ent-WallRockChromite-name = хромит
+ent-WallRockChromite-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallRockChromiteCoal-name = chromite
-ent-WallRockChromiteCoal-desc = An ore vein rich with coal.
+ent-WallRockChromiteCoal-name = хромит
+ent-WallRockChromiteCoal-desc = Рудная жила, богатая углем.
 
-ent-WallRockChromiteGold-name = chromite
-ent-WallRockChromiteGold-desc = An ore vein rich with gold.
+ent-WallRockChromiteGold-name = хромит
+ent-WallRockChromiteGold-desc = Рудная жила, богатая золотом.
 
-ent-WallRockChromiteDiamond-name = chromite
-ent-WallRockChromiteDiamond-desc = An ore vein rich with diamonds.
+ent-WallRockChromiteDiamond-name = хромит
+ent-WallRockChromiteDiamond-desc = Рудная жила, богатая алмазами.
 
-ent-WallRockChromitePlasma-name = chromite
-ent-WallRockChromitePlasma-desc = An ore vein rich with plasma.
+ent-WallRockChromitePlasma-name = хромит
+ent-WallRockChromitePlasma-desc = Рудная жила, богатая плазмой.
 
-ent-WallRockChromiteQuartz-name = chromite
-ent-WallRockChromiteQuartz-desc = An ore vein rich with quartz.
+ent-WallRockChromiteQuartz-name = хромит
+ent-WallRockChromiteQuartz-desc = Рудная жила, богатая кварцем.
 
-ent-WallRockChromiteSilver-name = chromite
-ent-WallRockChromiteSilver-desc = An ore vein rich with silver.
+ent-WallRockChromiteSilver-name = хромит
+ent-WallRockChromiteSilver-desc = Рудная жила, богатая серебром.
 
-ent-WallRockChromiteTin-name = chromite
-ent-WallRockChromiteTin-desc = An ore vein rich with iron.
+ent-WallRockChromiteTin-name = хромит
+ent-WallRockChromiteTin-desc = Рудная жила, богатая железом.
 
-ent-WallRockChromiteUranium-name = chromite
-ent-WallRockChromiteUranium-desc = An ore vein rich with uranium.
+ent-WallRockChromiteUranium-name = хромит
+ent-WallRockChromiteUranium-desc = Рудная жила, богатая ураном.
 
-ent-WallRockChromiteBananium-name = chromite
-ent-WallRockChromiteBananium-desc = An ore vein rich with bananium.
+ent-WallRockChromiteBananium-name = хромит
+ent-WallRockChromiteBananium-desc = Рудная жила, богатая бананом.
 
-ent-WallRockChromiteArtifactFragment-name = chromite
-ent-WallRockChromiteArtifactFragment-desc = A rock wall. What's that sticking out of it?
+ent-WallRockChromiteArtifactFragment-name = хромит
+ent-WallRockChromiteArtifactFragment-desc = Каменная стена. Что из этого торчит?
 
-ent-WallRockChromiteSalt-name = chromite
-ent-WallRockChromiteSalt-desc = An ore vein rich with salt.
+ent-WallRockChromiteSalt-name = хромит
+ent-WallRockChromiteSalt-desc = Рудная жила, богатая солью.
 
-ent-WallRockAndesite-name = andesite
-ent-WallRockAndesite-desc = Keeps the air in and the greytide out.
+ent-WallRockAndesite-name = андезит
+ent-WallRockAndesite-desc = Задерживает воздух и серую волну снаружи.
 
-ent-WallRockAndesiteCoal-name = andesite
-ent-WallRockAndesiteCoal-desc = An ore vein rich with coal.
+ent-WallRockAndesiteCoal-name = андезит
+ent-WallRockAndesiteCoal-desc = Рудная жила, богатая углем.
 
-ent-WallRockAndesiteGold-name = andesite
-ent-WallRockAndesiteGold-desc = An ore vein rich with gold.
+ent-WallRockAndesiteGold-name = андезит
+ent-WallRockAndesiteGold-desc = Рудная жила, богатая золотом.
 
-ent-WallRockAndesiteDiamond-name = andesite
-ent-WallRockAndesiteDiamond-desc = An ore vein rich with diamonds.
+ent-WallRockAndesiteDiamond-name = андезит
+ent-WallRockAndesiteDiamond-desc = Рудная жила, богатая алмазами.
 
-ent-WallRockAndesitePlasma-name = andesite
-ent-WallRockAndesitePlasma-desc = An ore vein rich with plasma.
+ent-WallRockAndesitePlasma-name = андезит
+ent-WallRockAndesitePlasma-desc = Рудная жила, богатая плазмой.
 
-ent-WallRockAndesiteQuartz-name = andesite
-ent-WallRockAndesiteQuartz-desc = An ore vein rich with quartz.
+ent-WallRockAndesiteQuartz-name = андезит
+ent-WallRockAndesiteQuartz-desc = Рудная жила, богатая кварцем.
 
-ent-WallRockAndesiteSilver-name = andesite
-ent-WallRockAndesiteSilver-desc = An ore vein rich with silver.
+ent-WallRockAndesiteSilver-name = андезит
+ent-WallRockAndesiteSilver-desc = Рудная жила, богатая серебром.
 
-ent-WallRockAndesiteTin-name = andesite
-ent-WallRockAndesiteTin-desc = An ore vein rich with iron.
+ent-WallRockAndesiteTin-name = андезит
+ent-WallRockAndesiteTin-desc = Рудная жила, богатая железом.
 
-ent-WallRockAndesiteUranium-name = andesite
-ent-WallRockAndesiteUranium-desc = An ore vein rich with uranium.
+ent-WallRockAndesiteUranium-name = андезит
+ent-WallRockAndesiteUranium-desc = Рудная жила, богатая ураном.
 
-ent-WallRockAndesiteBananium-name = andesite
-ent-WallRockAndesiteBananium-desc = An ore vein rich with bananium.
+ent-WallRockAndesiteBananium-name = андезит
+ent-WallRockAndesiteBananium-desc = Рудная жила, богатая бананом.
 
-ent-WallRockAndesiteArtifactFragment-name = andesite
-ent-WallRockAndesiteArtifactFragment-desc = A rock wall. What's that sticking out of it?
+ent-WallRockAndesiteArtifactFragment-name = андезит
+ent-WallRockAndesiteArtifactFragment-desc = Каменная стена. Что из этого торчит?
 
-ent-WallRockAndesiteSalt-name = andesite
-ent-WallRockAndesiteSalt-desc = An ore vein rich with salt.
+ent-WallRockAndesiteSalt-name = андезит
+ent-WallRockAndesiteSalt-desc = Рудная жила, богатая солью.
 
-ent-AsteroidRockCoalCrab-name = asteroid rock
-ent-AsteroidRockCoalCrab-desc = An ore vein rich with coal.
+ent-AsteroidRockCoalCrab-name = астероидная скала
+ent-AsteroidRockCoalCrab-desc = Рудная жила, богатая углем.
 
-ent-AsteroidRockGoldCrab-name = asteroid rock
-ent-AsteroidRockGoldCrab-desc = An ore vein rich with gold.
+ent-AsteroidRockGoldCrab-name = астероидная скала
+ent-AsteroidRockGoldCrab-desc = Рудная жила, богатая золотом.
 
-ent-AsteroidRockQuartzCrab-name = asteroid rock
-ent-AsteroidRockQuartzCrab-desc = An ore vein rich with quartz.
+ent-AsteroidRockQuartzCrab-name = астероидная скала
+ent-AsteroidRockQuartzCrab-desc = Рудная жила, богатая кварцем.
 
-ent-AsteroidRockSilverCrab-name = asteroid rock
-ent-AsteroidRockSilverCrab-desc = An ore vein rich with silver.
+ent-AsteroidRockSilverCrab-name = астероидная скала
+ent-AsteroidRockSilverCrab-desc = Рудная жила, богатая серебром.
 
-ent-AsteroidRockTinCrab-name = asteroid rock
-ent-AsteroidRockTinCrab-desc = An ore vein rich with iron.
+ent-AsteroidRockTinCrab-name = астероидная скала
+ent-AsteroidRockTinCrab-desc = Рудная жила, богатая железом.
 
-ent-AsteroidRockUraniumCrab-name = asteroid rock
-ent-AsteroidRockUraniumCrab-desc = An ore vein rich with uranium.
+ent-AsteroidRockUraniumCrab-name = астероидная скала
+ent-AsteroidRockUraniumCrab-desc = Рудная жила, богатая ураном.
 
-ent-AsteroidRockBananiumCrab-name = asteroid rock
-ent-AsteroidRockBananiumCrab-desc = An ore vein rich with bananium.
+ent-AsteroidRockBananiumCrab-name = астероидная скала
+ent-AsteroidRockBananiumCrab-desc = Рудная жила, богатая бананом.
 

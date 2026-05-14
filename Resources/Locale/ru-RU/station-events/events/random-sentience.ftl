@@ -35,3 +35,9 @@ station-event-random-sentience-flavor-organic = органики
 station-event-random-sentience-flavor-primate = приматы
 station-event-random-sentience-flavor-kobold = кобольды
 station-event-random-sentience-flavor-inanimate = неодушевлённые предметы
+
+# Missing entries synced from en-US
+
+station-event-random-sentience-flavor-corgi = корги
+
+station-event-random-sentience-flavor-slime = слизь

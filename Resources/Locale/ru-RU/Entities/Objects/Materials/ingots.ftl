@@ -1,15 +1,15 @@
-ent-IngotBase-name = item
-ent-IngotBase-desc = A heavy metal ingot stamped with the Nanotrasen logo.
+ent-IngotBase-name = элемент
+ent-IngotBase-desc = Слиток тяжелого металла с логотипом Nanotrasen.
 
-ent-IngotGold-name = gold bar
-ent-IngotGold-desc = A heavy metal ingot stamped with the Nanotrasen logo.
+ent-IngotGold-name = золотой слиток
+ent-IngotGold-desc = Слиток тяжелого металла с логотипом Nanotrasen.
 
-ent-IngotGold1-name = gold bar
-ent-IngotGold1-desc = A heavy metal ingot stamped with the Nanotrasen logo.
+ent-IngotGold1-name = золотой слиток
+ent-IngotGold1-desc = Слиток тяжелого металла с логотипом Nanotrasen.
 
-ent-IngotSilver-name = silver bar
-ent-IngotSilver-desc = A heavy metal ingot stamped with the Nanotrasen logo.
+ent-IngotSilver-name = серебряный слиток
+ent-IngotSilver-desc = Слиток тяжелого металла с логотипом Nanotrasen.
 
-ent-IngotSilver1-name = silver bar
-ent-IngotSilver1-desc = A heavy metal ingot stamped with the Nanotrasen logo.
+ent-IngotSilver1-name = серебряный слиток
+ent-IngotSilver1-desc = Слиток тяжелого металла с логотипом Nanotrasen.
 

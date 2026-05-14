@@ -1,3 +1,3 @@
-ent-Bookshelf-name = bookshelf
-ent-Bookshelf-desc = Mostly filled with books.
+ent-Bookshelf-name = книжная полка
+ent-Bookshelf-desc = В основном заполнен книгами.
 

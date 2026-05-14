@@ -1,6 +1,6 @@
-ent-BaseGateway-name = gateway
-ent-BaseGateway-desc = A mysterious gateway built by unknown hands, it allows for faster than light travel to far-flung locations.
+ent-BaseGateway-name = шлюз
+ent-BaseGateway-desc = Таинственные врата, построенные неизвестными руками, позволяют путешествовать быстрее скорости света в отдаленные места.
 
-ent-Gateway-name = gateway
-ent-Gateway-desc = A mysterious gateway built by unknown hands, it allows for faster than light travel to far-flung locations.
+ent-Gateway-name = шлюз
+ent-Gateway-desc = Таинственные врата, построенные неизвестными руками, позволяют путешествовать быстрее скорости света в отдаленные места.
 

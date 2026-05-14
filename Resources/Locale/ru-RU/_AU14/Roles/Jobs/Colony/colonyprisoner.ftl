@@ -1,3 +1,3 @@
-ent-AU14SpawnPointCivilianPrisoner-name = Spawn Point Civilian Prisoner
-ent-AU14SpawnPointCivilianPrisoner-desc = A RMC14 job spawner. Used for roundstart and late joins.
-ent-auprisonerghost-name = Prisoner colonist ghost role
+ent-AU14SpawnPointCivilianPrisoner-name = Гражданский заключенный на точке возрождения
+ent-AU14SpawnPointCivilianPrisoner-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.
+ent-auprisonerghost-name = Роль призрака-заключенного-колониста

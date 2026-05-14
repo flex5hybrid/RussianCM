@@ -61,3 +61,147 @@ rmc-name-avali-1 = Ко
 rmc-name-avali-2 = Номи
 rmc-name-avali-3 = Джасё
 rmc-name-avali-78 = Джесали
+
+# Missing entries synced from en-US
+
+marking-AvaliEarsStripeOne-ears_avalibase_primary = Верхние уши
+
+marking-AvaliEarsStripeOne-ears_top_primary = Верхняя полоса (основная)
+
+marking-AvaliEarsStripeOne-ears_top_secondary = Верхняя полоса (вторичная)
+
+marking-AvaliEarsStripeOne-ears_avalibase_secondary = Нижние уши
+
+marking-AvaliEarsStripeOne-ears_bottom_primary = Нижняя полоса (основная)
+
+marking-AvaliEarsStripeOne-ears_bottom_secondary = Нижняя полоса (вторичная)
+
+marking-AvaliHeadStripeOne-head_primary = Первичный
+
+marking-AvaliHeadStripeOne-head_secondary = вторичный
+
+marking-AvaliTorsoStripeOne-torso_primary = Первичный
+
+marking-AvaliTorsoStripeOne-torso_secondary = вторичный
+
+marking-AvaliLArmStripeOne-larm_primary = Первичный
+
+marking-AvaliLArmStripeOne-larm_secondary = вторичный
+
+marking-AvaliLHandStripeOne-lhand_primary = Первичный
+
+marking-AvaliLHandStripeOne-lhand_secondary = вторичный
+
+marking-AvaliRArmStripeOne-rarm_primary = Первичный
+
+marking-AvaliRArmStripeOne-rarm_secondary = вторичный
+
+marking-AvaliRHandStripeOne-rhand_primary = Первичный
+
+marking-AvaliRHandStripeOne-rhand_secondary = вторичный
+
+marking-AvaliLLegStripeOne-lleg = Первичный
+
+marking-AvaliRLegStripeOne-rleg = Первичный
+
+marking-AvaliTailStripeOne-tail_avalibase = Базовый хвост
+
+marking-AvaliTailStripeOne-tail_avali_primary = Первичный
+
+marking-AvaliTailStripeOne-tail_avali_secondary = вторичный
+
+marking-AvaliEarsTrimOne-ears_avalibase_primary = Верхние уши
+
+marking-AvaliEarsTrimOne-ears_top_primary = Верхняя отделка (основная)
+
+marking-AvaliEarsTrimOne-ears_top_secondary = Верхняя отделка (вторичная)
+
+marking-AvaliEarsTrimOne-ears_avalibase_secondary = Нижние уши
+
+marking-AvaliEarsTrimOne-ears_bottom_primary = Нижняя обшивка (основная)
+
+marking-AvaliEarsTrimOne-ears_bottom_secondary = Нижняя обшивка (вторичная)
+
+marking-AvaliHeadTrimOne-head_primary = Первичный
+
+marking-AvaliHeadTrimOne-head_secondary = вторичный
+
+marking-AvaliTorsoTrimOne-torso_primary = Первичный
+
+marking-AvaliTorsoTrimOne-torso_secondary = вторичный
+
+marking-AvaliLArmTrimOne-larm_primary = Первичный
+
+marking-AvaliLArmTrimOne-larm_secondary = вторичный
+
+marking-AvaliRArmTrimOne-rarm_primary = Первичный
+
+marking-AvaliRArmTrimOne-rarm_secondary = вторичный
+
+marking-AvaliLHandTrimOne-lhand_primary = Первичный
+
+marking-AvaliLHandTrimOne-lhand_secondary = вторичный
+
+marking-AvaliRHandTrimOne-rhand_primary = Первичный
+
+marking-AvaliRHandTrimOne-rhand_secondary = вторичный
+
+marking-AvaliLLegTrimOne-lleg_primary = Первичный
+
+marking-AvaliLLegTrimOne-lleg_secondary = вторичный
+
+marking-AvaliRLegTrimOne-rleg_primary = Первичный
+
+marking-AvaliRLegTrimOne-rleg_secondary = вторичный
+
+marking-AvaliTailTrimOne-tail_avalibase = Базовый хвост
+
+marking-AvaliTailTrimOne-tail_avali_primary = Первичный
+
+marking-AvaliTailTrimOne-tail_avali_secondary = вторичный
+
+marking-AvaliEarsTrimTwo-ears_avalibase_primary = Верхние уши
+
+marking-AvaliEarsTrimTwo-ears_top_primary = Верхняя отделка (основная)
+
+marking-AvaliEarsTrimTwo-ears_top_secondary = Верхняя отделка (вторичная)
+
+marking-AvaliEarsTrimTwo-ears_avalibase_secondary = Нижние уши
+
+marking-AvaliEarsTrimTwo-ears_bottom_primary = Нижняя обшивка (основная)
+
+marking-AvaliEarsTrimTwo-ears_bottom_secondary = Нижняя обшивка (вторичная)
+
+marking-AvaliHeadTrimTwo-head_primary = Первичный
+
+marking-AvaliHeadTrimTwo-head_secondary = вторичный
+
+marking-AvaliTorsoTrimTwo-torso_primary = Первичный
+
+marking-AvaliTorsoTrimTwo-torso_secondary = вторичный
+
+marking-AvaliLArmTrimTwo-larm_primary = Первичный
+
+marking-AvaliLArmTrimTwo-larm_secondary = вторичный
+
+marking-AvaliRArmTrimTwo-rarm_primary = Первичный
+
+marking-AvaliRArmTrimTwo-rarm_secondary = вторичный
+
+marking-AvaliLHandTrimTwo-lhand_primary = Первичный
+
+marking-AvaliLHandTrimTwo-lhand_secondary = вторичный
+
+marking-AvaliRHandTrimTwo-rhand_primary = Первичный
+
+marking-AvaliRHandTrimTwo-rhand_secondary = вторичный
+
+marking-AvaliTailTrimTwo-tail_avalibase = Хвостовое основание
+
+marking-AvaliTailTrimTwo-tail_avali_primary = Первичный
+
+marking-AvaliTailTrimTwo-tail_avali_secondary = вторичный
+
+marking-AvaliTailAnimated = (База, виляние) Хвост Авали
+
+rmc-namepreset-firstlastcombined = {$first}{$last}

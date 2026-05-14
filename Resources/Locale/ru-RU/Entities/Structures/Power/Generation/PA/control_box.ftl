@@ -1,6 +1,6 @@
-ent-ParticleAcceleratorControlBox-name = PA control computer
-ent-ParticleAcceleratorControlBox-desc = This controls the density of the particles.
+ent-ParticleAcceleratorControlBox-name = Управляющий компьютер PA
+ent-ParticleAcceleratorControlBox-desc = Это контролирует плотность частиц.
 
-ent-ParticleAcceleratorControlBoxUnfinished-name = PA control computer
-ent-ParticleAcceleratorControlBoxUnfinished-desc = This controls the density of the particles. It looks unfinished.
+ent-ParticleAcceleratorControlBoxUnfinished-name = Управляющий компьютер PA
+ent-ParticleAcceleratorControlBoxUnfinished-desc = Это контролирует плотность частиц. Выглядит незавершенным.
 

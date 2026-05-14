@@ -1,150 +1,150 @@
-ent-BaseFigurine-name = figurine
-ent-BaseFigurine-desc = A small miniature.
+ent-BaseFigurine-name = фигурка
+ent-BaseFigurine-desc = Небольшая миниатюра.
 
-ent-ToyFigurineHeadOfPersonnel-name = head of personnel figure
-ent-ToyFigurineHeadOfPersonnel-desc = A figurine depicting the glorious head of all personnel, away from their office as usual.
+ent-ToyFigurineHeadOfPersonnel-name = руководитель отдела кадров
+ent-ToyFigurineHeadOfPersonnel-desc = Статуэтка, изображающая славного руководителя всего личного состава, как обычно, вдали от своего кабинета.
 
-ent-ToyFigurinePassenger-name = passenger figure
-ent-ToyFigurinePassenger-desc = A figurine depicting an every day, run-of-the-mill passenger. No funny business here.
+ent-ToyFigurinePassenger-name = фигурка пассажира
+ent-ToyFigurinePassenger-desc = Фигурка, изображающая обычного пассажира. Никаких смешных дел здесь нет.
 
-ent-ToyFigurineGreytider-name = greytider figure
-ent-ToyFigurineGreytider-desc = A figurine depicting a dubious-looking passenger. Greytide worldwide!
+ent-ToyFigurineGreytider-name = фигура грейтидера
+ent-ToyFigurineGreytider-desc = Фигурка, изображающая пассажира сомнительного вида. Грейтайд по всему миру!
 
-ent-ToyFigurineClown-name = clown figure
-ent-ToyFigurineClown-desc = A figurine depicting a clown. You shudder to think of what people have probably done to this figurine before.
+ent-ToyFigurineClown-name = фигура клоуна
+ent-ToyFigurineClown-desc = Фигурка, изображающая клоуна. Содрогаешься при мысли о том, что люди, вероятно, делали с этой статуэткой раньше.
 
-ent-ToyFigurineHoloClown-name = holoclown figure
-ent-ToyFigurineHoloClown-desc = A figurine depicting a holoclown. Even more annoying than a clown and no less real.
+ent-ToyFigurineHoloClown-name = фигура голоклоуна
+ent-ToyFigurineHoloClown-desc = Фигурка, изображающая голоклоуна. Даже более раздражающее, чем клоун, и не менее настоящее.
 
-ent-ToyFigurineMime-name = mime figure
-ent-ToyFigurineMime-desc = A figurine depicting that silent bastard you are all too familiar with.
+ent-ToyFigurineMime-name = мимическая фигура
+ent-ToyFigurineMime-desc = Фигурка, изображающая того молчаливого ублюдка, с которым вы так хорошо знакомы.
 
-ent-ToyFigurineMusician-name = musician figure
-ent-ToyFigurineMusician-desc = A figurine depicting a Musician, his music was electrifying.
+ent-ToyFigurineMusician-name = фигура музыканта
+ent-ToyFigurineMusician-desc = Фигурка, изображающая Музыканта, его музыка зажигала.
 
-ent-ToyFigurineBoxer-name = boxer figure
-ent-ToyFigurineBoxer-desc = A figurine depicting a Boxer holding their red gloves.
+ent-ToyFigurineBoxer-name = фигура боксера
+ent-ToyFigurineBoxer-desc = Фигурка, изображающая боксера с красными перчатками.
 
-ent-ToyFigurineCaptain-name = captain figure
-ent-ToyFigurineCaptain-desc = A figurine depicting the standard outfit of a captain belonging to a civilian-sector Nanotrasen vessel.
+ent-ToyFigurineCaptain-name = фигурка капитана
+ent-ToyFigurineCaptain-desc = Фигурка, изображающая стандартную экипировку капитана судна Нанотрасен гражданского сектора.
 
-ent-ToyFigurineHeadOfSecurity-name = head of security figure
-ent-ToyFigurineHeadOfSecurity-desc = A figurine depicting the glorious head of the Security department.
+ent-ToyFigurineHeadOfSecurity-name = руководитель службы безопасности
+ent-ToyFigurineHeadOfSecurity-desc = Статуэтка, изображающая славного начальника Управления безопасности.
 
-ent-ToyFigurineWarden-name = warden figure
-ent-ToyFigurineWarden-desc = A figurine depicting a Warden, ready to jail someone at any moment.
+ent-ToyFigurineWarden-name = фигурка надзирателя
+ent-ToyFigurineWarden-desc = Фигурка, изображающая Надзирателя, готового в любой момент посадить кого-то в тюрьму.
 
-ent-ToyFigurineDetective-name = detective figure
-ent-ToyFigurineDetective-desc = A figurine depicting a Detective wearing their iconic trench coat.
+ent-ToyFigurineDetective-name = детектив фигура
+ent-ToyFigurineDetective-desc = Статуэтка, изображающая детектива в культовом плаще.
 
-ent-ToyFigurineSecurity-name = security officer figure
-ent-ToyFigurineSecurity-desc = A figurine depicting a Security Officer holding a stunbaton, ready to defend the station.
+ent-ToyFigurineSecurity-name = фигурка офицера безопасности
+ent-ToyFigurineSecurity-desc = Фигурка, изображающая офицера службы безопасности с электрошокером, готового защищать станцию.
 
-ent-ToyFigurineLawyer-name = lawyer figure
-ent-ToyFigurineLawyer-desc = A figurine depicting a Lawyer sporting a freshly tailored suit.
+ent-ToyFigurineLawyer-name = фигура юриста
+ent-ToyFigurineLawyer-desc = Статуэтка, изображающая адвоката в свежесшитом костюме.
 
-ent-ToyFigurineCargoTech-name = cargo technican figure
-ent-ToyFigurineCargoTech-desc = A figurine depicting a reptillian Cargo Technican.
+ent-ToyFigurineCargoTech-name = Фигурка грузового техника
+ent-ToyFigurineCargoTech-desc = Фигурка, изображающая грузового техника-рептилию.
 
-ent-ToyFigurineSalvage-name = salvage specialist figure
-ent-ToyFigurineSalvage-desc = A figurine depicting a Salvage Specialist holding a survival knife.
+ent-ToyFigurineSalvage-name = Фигурка специалиста по спасению
+ent-ToyFigurineSalvage-desc = Фигурка, изображающая спасателя с ножом для выживания.
 
-ent-ToyFigurineQuartermaster-name = quartermaster figure
-ent-ToyFigurineQuartermaster-desc = A figurine depicting the glorious head of the Cargo department.
+ent-ToyFigurineQuartermaster-name = фигурка интенданта
+ent-ToyFigurineQuartermaster-desc = Статуэтка, изображающая славного начальника Грузового отдела.
 
-ent-ToyFigurineChiefEngineer-name = chief engineer figure
-ent-ToyFigurineChiefEngineer-desc = A figurine depicting the glorious head of the Engineering department.
+ent-ToyFigurineChiefEngineer-name = фигура главного инженера
+ent-ToyFigurineChiefEngineer-desc = Фигурка, изображающая славного начальника Инженерного ведомства.
 
-ent-ToyFigurineEngineer-name = station engineer figure
-ent-ToyFigurineEngineer-desc = A figurine depicting a Station Engineer holding a crowbar at-ready.
+ent-ToyFigurineEngineer-name = фигурка инженера станции
+ent-ToyFigurineEngineer-desc = Фигурка, изображающая инженера станции, держащего наготове лом.
 
-ent-ToyFigurineAtmosTech-name = atmospheric technician figure
-ent-ToyFigurineAtmosTech-desc = A figurine depicting an Atmos Tech holding an unlit welder.
+ent-ToyFigurineAtmosTech-name = Фигурка атмосферного техника
+ent-ToyFigurineAtmosTech-desc = Фигурка, изображающая специалиста Atmos Tech с неосвещенным сварочным аппаратом.
 
-ent-ToyFigurineResearchDirector-name = research director figure
-ent-ToyFigurineResearchDirector-desc = A figurine depicting the glorious head of the Science department.
+ent-ToyFigurineResearchDirector-name = фигура директора по исследованиям
+ent-ToyFigurineResearchDirector-desc = Фигурка, изображающая славного руководителя отдела науки.
 
-ent-ToyFigurineScientist-name = scientist figurine
-ent-ToyFigurineScientist-desc = A figurine depicting a Scientist donning a labcoat.
+ent-ToyFigurineScientist-name = фигурка ученого
+ent-ToyFigurineScientist-desc = Фигурка, изображающая ученого в лабораторном халате.
 
-ent-ToyFigurineChiefMedicalOfficer-name = chief medical officer figure
-ent-ToyFigurineChiefMedicalOfficer-desc = A figurine depicting the glorious head of the Medical department.
+ent-ToyFigurineChiefMedicalOfficer-name = фигура главного врача
+ent-ToyFigurineChiefMedicalOfficer-desc = Статуэтка, изображающая славного начальника Медицинского ведомства.
 
-ent-ToyFigurineChemist-name = chemist figure
-ent-ToyFigurineChemist-desc = A figurine depicting a Chemist probably planning to make meth.
+ent-ToyFigurineChemist-name = химик фигура
+ent-ToyFigurineChemist-desc = Фигурка, изображающая химика, вероятно, планирующего производить метамфетамин.
 
-ent-ToyFigurineParamedic-name = paramedic figure
-ent-ToyFigurineParamedic-desc = A figurine depicting a Paramedic wearing their void suit.
+ent-ToyFigurineParamedic-name = фигура фельдшера
+ent-ToyFigurineParamedic-desc = Фигурка, изображающая фельдшера в скафандре пустоты.
 
-ent-ToyFigurineMedicalDoctor-name = medical doctor figure
-ent-ToyFigurineMedicalDoctor-desc = A figurine depicting a Medical Doctor, donning a labcoat & syringe.
+ent-ToyFigurineMedicalDoctor-name = фигура врача
+ent-ToyFigurineMedicalDoctor-desc = Фигурка, изображающая врача в лабораторном халате и шприце.
 
-ent-ToyFigurineLibrarian-name = librarian figure
-ent-ToyFigurineLibrarian-desc = A figurine depicting the one-and-only librarian.
+ent-ToyFigurineLibrarian-name = фигура библиотекаря
+ent-ToyFigurineLibrarian-desc = Фигурка, изображающая единственного библиотекаря.
 
-ent-ToyFigurineChaplain-name = chaplain figure
-ent-ToyFigurineChaplain-desc = A figurine depicting a Chaplain hopefully praying for good things.
+ent-ToyFigurineChaplain-name = фигура капеллана
+ent-ToyFigurineChaplain-desc = Статуэтка, изображающая капеллана, с надеждой молящегося о добре.
 
-ent-ToyFigurineChef-name = chef figure
-ent-ToyFigurineChef-desc = A figurine depicting a chef, master of the culinary arts!.. most of the time.
+ent-ToyFigurineChef-name = фигурка шеф-повара
+ent-ToyFigurineChef-desc = Фигурка, изображающая повара, мастера кулинарного искусства!.. в большинстве случаев.
 
-ent-ToyFigurineBartender-name = bartender figure
-ent-ToyFigurineBartender-desc = A figurine depicting a Bartender looking stylish with their rockin shades and tophat.
+ent-ToyFigurineBartender-name = фигура бармена
+ent-ToyFigurineBartender-desc = Статуэтка, изображающая стильного бармена в ярких солнцезащитных очках и цилиндре.
 
-ent-ToyFigurineBotanist-name = botanist figure
-ent-ToyFigurineBotanist-desc = A figurine depicting a Botanist that surely won't let kudzu get out of control.
+ent-ToyFigurineBotanist-name = фигура ботаника
+ent-ToyFigurineBotanist-desc = Фигурка с изображением ботаника, которая точно не даст кудзу выйти из-под контроля.
 
-ent-ToyFigurineJanitor-name = janitor figure
-ent-ToyFigurineJanitor-desc = A figurine depicting a Janitor with their galoshes.
+ent-ToyFigurineJanitor-name = фигура дворника
+ent-ToyFigurineJanitor-desc = Фигурка, изображающая дворника в калошах.
 
-ent-ToyFigurineNukie-name = syndicate operative figure
-ent-ToyFigurineNukie-desc = A figurine depicting someone in a blood-red hardsuit, similar to what someone on a nuclear operative team might wear.
+ent-ToyFigurineNukie-name = оперативный деятель синдиката
+ent-ToyFigurineNukie-desc = Фигурка, изображающая кого-то в кроваво-красном костюме, похожем на тот, который носят сотрудники ядерной оперативной группы.
 
-ent-ToyFigurineNukieElite-name = elite syndicate operative figure
-ent-ToyFigurineNukieElite-desc = A figurine depicting someone in an elite blood-red hardsuit, similar to what someone on a nuclear operative team might wear.
+ent-ToyFigurineNukieElite-name = оперативник элитного синдиката
+ent-ToyFigurineNukieElite-desc = Фигурка, изображающая кого-то в элитном кроваво-красном костюме, похожем на тот, который носят сотрудники ядерной оперативной группы.
 
-ent-ToyFigurineNukieCommander-name = syndicate operative commander figure
-ent-ToyFigurineNukieCommander-desc = A figurine depicting someone in a beefed-up blood-red hardsuit, similar to what the commander of a nuclear operative team might wear.
+ent-ToyFigurineNukieCommander-name = Фигурка оперативного командира синдиката
+ent-ToyFigurineNukieCommander-desc = Статуэтка, изображающая кого-то в усиленном кроваво-красном костюме, похожем на тот, который мог бы носить командир ядерной оперативной группы.
 
-ent-ToyFigurineFootsoldier-name = syndicate footsoldier figure
-ent-ToyFigurineFootsoldier-desc = A figurine depicting the outfit of a syndicate footsoldier.
+ent-ToyFigurineFootsoldier-name = фигурка пехотинца синдиката
+ent-ToyFigurineFootsoldier-desc = Фигурка, изображающая экипировку пехотинца синдиката.
 
-ent-ToyFigurineWizard-name = wizard figure
-ent-ToyFigurineWizard-desc = A figurine depicting someone with a long, silky beard wearing a wizard outfit. Warlocks wish they had anything on this.
+ent-ToyFigurineWizard-name = фигурка волшебника
+ent-ToyFigurineWizard-desc = Фигурка, изображающая человека с длинной шелковистой бородой в костюме волшебника. Колдунам хотелось бы, чтобы у них было что-нибудь по этому поводу.
 
-ent-ToyFigurineWizardFake-name = fake wizard figure
-ent-ToyFigurineWizardFake-desc = A figurine depicting someone in a fake-ass wizard costume. What a ripoff!
+ent-ToyFigurineWizardFake-name = поддельная фигурка волшебника
+ent-ToyFigurineWizardFake-desc = Фигурка, изображающая кого-то в костюме фальшивого волшебника. Какой грабеж!
 
-ent-ToyFigurineSpaceDragon-name = space dragon figure
-ent-ToyFigurineSpaceDragon-desc = A large figurine depicting a space dragon, its red eyes on gazing on its prey.
+ent-ToyFigurineSpaceDragon-name = фигурка космического дракона
+ent-ToyFigurineSpaceDragon-desc = Большая фигурка, изображающая космического дракона, чьи красные глаза смотрят на добычу.
 
-ent-ToyFigurineQueen-name = xeno queen figure
-ent-ToyFigurineQueen-desc = A large figurine depicting a xeno queen, ready to attack.
+ent-ToyFigurineQueen-name = фигурка королевы ксеносов
+ent-ToyFigurineQueen-desc = Большая фигурка, изображающая королеву ксеносов, готовую к атаке.
 
-ent-ToyFigurineRatKing-name = rat king figure
-ent-ToyFigurineRatKing-desc = A large figurine depicting a rat king, prepared to make its nest.
+ent-ToyFigurineRatKing-name = фигурка крысиного короля
+ent-ToyFigurineRatKing-desc = Большая статуэтка, изображающая крысиного короля, готовящегося свить себе гнездо.
 
-ent-ToyFigurineRatServant-name = rat servant figure
-ent-ToyFigurineRatServant-desc = A figurine depicting a rat serving the king of rats!
+ent-ToyFigurineRatServant-name = фигурка крысы-слуги
+ent-ToyFigurineRatServant-desc = Фигурка с изображением крысы, служащей крысиному королю!
 
-ent-ToyFigurineMouse-name = mouse figure
-ent-ToyFigurineMouse-desc = A figurine depicting a mouse scuttling away to the nearest piece of food.
+ent-ToyFigurineMouse-name = фигурка мыши
+ent-ToyFigurineMouse-desc = Фигурка, изображающая мышь, убегающую к ближайшему куску еды.
 
-ent-ToyFigurineSlime-name = slime figure
-ent-ToyFigurineSlime-desc = A figurine depicting a translucent blue slime.
+ent-ToyFigurineSlime-name = фигурка слизи
+ent-ToyFigurineSlime-desc = Фигурка, изображающая полупрозрачную слизь голубого цвета.
 
-ent-ToyFigurineHamlet-name = hamlet figure
-ent-ToyFigurineHamlet-desc = A figurine depicting Hamlet, microwave not included.
+ent-ToyFigurineHamlet-name = фигура Гамлета
+ent-ToyFigurineHamlet-desc = Фигурка с изображением Гамлета, микроволновая печь в комплект не входит.
 
-ent-ToyGriffin-name = griffin figure
-ent-ToyGriffin-desc = An action figure modeled after 'The Griffin', criminal mastermind.
+ent-ToyGriffin-name = фигура грифона
+ent-ToyGriffin-desc = Фигурка, созданная по образцу «Грифона», криминального вдохновителя.
 
-ent-ToyOwlman-name = owl figure
-ent-ToyOwlman-desc = An action figure modeled after 'The Owl', defender of justice.
+ent-ToyOwlman-name = фигурка совы
+ent-ToyOwlman-desc = Фигурка, созданная по образцу Совы, защитника справедливости.
 
-ent-ToySkeleton-name = skeleton figure
-ent-ToySkeleton-desc = Spooked ya!
+ent-ToySkeleton-name = фигура скелета
+ent-ToySkeleton-desc = Напугал тебя!
 
-ent-ToyFigurineThief-name = thief character figure
-ent-ToyFigurineThief-desc = Hiding in the shadows...
+ent-ToyFigurineThief-name = фигурка персонажа вора
+ent-ToyFigurineThief-desc = Скрываясь в тени...
 

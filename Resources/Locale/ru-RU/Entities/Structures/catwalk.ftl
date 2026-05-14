@@ -1,3 +1,3 @@
-ent-Catwalk-name = catwalk
-ent-Catwalk-desc = A catwalk for easier EVA maneuvering and cable placement.
+ent-Catwalk-name = подиум
+ent-Catwalk-desc = Подиум для облегчения маневрирования в открытом космосе и прокладки кабеля.
 

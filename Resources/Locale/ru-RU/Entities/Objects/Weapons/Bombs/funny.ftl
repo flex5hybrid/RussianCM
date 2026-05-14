@@ -1,8 +1,8 @@
-ent-HotPotato-name = hot potato
-ent-HotPotato-desc = Once activated, you can't drop this time bomb - hit someone else with it to save yourself! Don't burn your hands!
+ent-HotPotato-name = горячая картошка
+ent-HotPotato-desc = После активации вы не сможете бросить эту бомбу замедленного действия — ударьте ею кого-нибудь другого, чтобы спасти себя! Не обожгите руки!
 
-ent-TrashBananaPeelExplosive-name = banana peel
+ent-TrashBananaPeelExplosive-name = банановая кожура
 
-ent-TrashBananaPeelExplosiveUnarmed-name = banana
-ent-TrashBananaPeelExplosiveUnarmed-desc = There's something unusual about this banana.
+ent-TrashBananaPeelExplosiveUnarmed-name = банан
+ent-TrashBananaPeelExplosiveUnarmed-desc = Есть что-то необычное в этом банане.
 

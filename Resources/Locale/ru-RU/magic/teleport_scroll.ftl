@@ -1,2 +1,2 @@
-ent-WizardTeleportScroll-name = teleport scroll
+ent-WizardTeleportScroll-name = телепортационный свиток
 

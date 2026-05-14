@@ -1,22 +1,22 @@
-ent-PartGingerbread-name = gingerbread body part
+ent-PartGingerbread-name = часть тела имбирного пряника
 
-ent-TorsoGingerbread-name = gingerbread torso
+ent-TorsoGingerbread-name = пряничный туловище
 
-ent-HeadGingerbread-name = gingerbread head
+ent-HeadGingerbread-name = пряничная голова
 
-ent-LeftArmGingerbread-name = left gingerbread arm
+ent-LeftArmGingerbread-name = левая имбирная рука
 
-ent-RightArmGingerbread-name = right gingerbread arm
+ent-RightArmGingerbread-name = правая пряничная рука
 
-ent-LeftHandGingerbread-name = left gingerbread hand
+ent-LeftHandGingerbread-name = левая рука с пряником
 
-ent-RightHandGingerbread-name = right gingerbread hand
+ent-RightHandGingerbread-name = правая рука с пряником
 
-ent-LeftLegGingerbread-name = left gingerbread leg
+ent-LeftLegGingerbread-name = левая пряничная ножка
 
-ent-RightLegGingerbread-name = right gingerbread leg
+ent-RightLegGingerbread-name = правая ножка пряника
 
-ent-LeftFootGingerbread-name = left gingerbread foot
+ent-LeftFootGingerbread-name = левая имбирная ножка
 
-ent-RightFootGingerbread-name = right gingerbread foot
+ent-RightFootGingerbread-name = правая имбирная ножка
 

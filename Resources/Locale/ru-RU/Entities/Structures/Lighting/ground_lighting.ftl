@@ -1,12 +1,12 @@
-ent-LightPostSmall-name = post light
-ent-LightPostSmall-desc = An always powered light.
+ent-LightPostSmall-name = столб свет
+ent-LightPostSmall-desc = Всегда включенный свет.
 
-ent-PoweredLightPostSmallEmpty-name = post light
-ent-PoweredLightPostSmallEmpty-desc = A small light post.
+ent-PoweredLightPostSmallEmpty-name = столб свет
+ent-PoweredLightPostSmallEmpty-desc = Небольшой светлый пост.
 
-ent-PoweredLightPostSmall-name = post light
-ent-PoweredLightPostSmall-desc = A light fixture. Draws power and produces light when equipped with a light tube.
+ent-PoweredLightPostSmall-name = столб свет
+ent-PoweredLightPostSmall-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
 
-ent-PoweredLEDLightPostSmall-name = post light
-ent-PoweredLEDLightPostSmall-desc = A light fixture. Draws power and produces light when equipped with a light tube.
+ent-PoweredLEDLightPostSmall-name = столб свет
+ent-PoweredLEDLightPostSmall-desc = Светильник. Потребляет энергию и излучает свет, если оснащен световой трубкой.
 

@@ -1,17 +1,17 @@
-ent-BaseCartridgeMagnum-name = cartridge (.45 magnum)
+ent-BaseCartridgeMagnum-name = патрон (.45 магнум)
 
-ent-CartridgeMagnum-name = cartridge (.45 magnum)
-ent-CartridgeMagnum-desc = Heavy magnum cartridge mostly used by revolvers. Standard kinetic ammunition is common and useful in most situations.
+ent-CartridgeMagnum-name = патрон (.45 магнум)
+ent-CartridgeMagnum-desc = Тяжелый патрон Magnum, чаще всего используемый в револьверах. Стандартные кинетические боеприпасы распространены и полезны в большинстве ситуаций.
 
-ent-CartridgeMagnumPractice-name = cartridge (.45 magnum practice)
-ent-CartridgeMagnumPractice-desc = Heavy magnum cartridge mostly used by revolvers. Chalk ammunition is generally non-harmful, used for practice.
+ent-CartridgeMagnumPractice-name = патрон (практика .45 магнум)
+ent-CartridgeMagnumPractice-desc = Тяжелый патрон Magnum, чаще всего используемый в револьверах. Меловые боеприпасы в целом безвредны, используются для практики.
 
-ent-CartridgeMagnumIncendiary-name = cartridge (.45 magnum incendiary)
-ent-CartridgeMagnumIncendiary-desc = Heavy magnum cartridge mostly used by revolvers. Incendiary ammunition contains a self-igniting compound that sets the target ablaze.
+ent-CartridgeMagnumIncendiary-name = патрон (зажигательный .45 магнум)
+ent-CartridgeMagnumIncendiary-desc = Тяжелый патрон Magnum, чаще всего используемый в револьверах. Зажигательные боеприпасы содержат самовоспламеняющееся соединение, которое поджигает цель.
 
-ent-CartridgeMagnumAP-name = cartridge (.45 magnum armor-piercing)
-ent-CartridgeMagnumAP-desc = Heavy magnum cartridge mostly used by revolvers. Armor piercing ammunition is renowned for its ability to cut straight through body armor.
+ent-CartridgeMagnumAP-name = патрон (бронебойный .45 магнум)
+ent-CartridgeMagnumAP-desc = Тяжелый патрон Magnum, чаще всего используемый в револьверах. Бронебойные боеприпасы известны своей способностью прорезать бронежилет.
 
-ent-CartridgeMagnumUranium-name = cartridge (.45 magnum uranium)
-ent-CartridgeMagnumUranium-desc = Heavy magnum cartridge mostly used by revolvers. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating the target from the inside.
+ent-CartridgeMagnumUranium-name = патрон (.45 магнум уран)
+ent-CartridgeMagnumUranium-desc = Тяжелый патрон Magnum, чаще всего используемый в револьверах. Урановый боеприпас заменяет свинцовый сердечник пули делящимся материалом, облучая цель изнутри.
 

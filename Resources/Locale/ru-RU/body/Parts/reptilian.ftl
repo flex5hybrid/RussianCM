@@ -1,22 +1,22 @@
-ent-PartReptilian-name = reptilian body part
+ent-PartReptilian-name = часть тела рептилии
 
-ent-TorsoReptilian-name = reptilian torso
+ent-TorsoReptilian-name = туловище рептилии
 
-ent-HeadReptilian-name = reptilian head
+ent-HeadReptilian-name = голова рептилии
 
-ent-LeftArmReptilian-name = left reptilian arm
+ent-LeftArmReptilian-name = левая рука рептилии
 
-ent-RightArmReptilian-name = right reptilian arm
+ent-RightArmReptilian-name = правая рука рептилии
 
-ent-LeftHandReptilian-name = left reptilian hand
+ent-LeftHandReptilian-name = левая рука рептилии
 
-ent-RightHandReptilian-name = right reptilian hand
+ent-RightHandReptilian-name = правая рука рептилии
 
-ent-LeftLegReptilian-name = left reptilian leg
+ent-LeftLegReptilian-name = левая нога рептилии
 
-ent-RightLegReptilian-name = right reptilian leg
+ent-RightLegReptilian-name = правая нога рептилии
 
-ent-LeftFootReptilian-name = left reptilian foot
+ent-LeftFootReptilian-name = левая нога рептилии
 
-ent-RightFootReptilian-name = right reptilian foot
+ent-RightFootReptilian-name = правая нога рептилии
 

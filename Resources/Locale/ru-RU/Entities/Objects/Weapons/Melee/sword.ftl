@@ -1,23 +1,23 @@
-ent-Cutlass-name = cutlass
-ent-Cutlass-desc = A wickedly curved blade, often seen in the hands of space pirates.
+ent-Cutlass-name = абордажная сабля
+ent-Cutlass-desc = Зловеще изогнутый клинок, часто встречающийся в руках космических пиратов.
 
-ent-Machete-name = machete
-ent-Machete-desc = A large, vicious looking blade.
+ent-Machete-name = мачете
+ent-Machete-desc = Большой, зловещего вида клинок.
 
-ent-CaptainSabre-name = captain's sabre
-ent-CaptainSabre-desc = A ceremonial weapon belonging to the captain of the station.
+ent-CaptainSabre-name = капитанская сабля
+ent-CaptainSabre-desc = Парадное оружие, принадлежавшее капитану станции.
 
-ent-Katana-name = katana
-ent-Katana-desc = Ancient craftwork made with not so ancient plasteel.
+ent-Katana-name = катана
+ent-Katana-desc = Древние изделия ручной работы, выполненные из не столь древней пластали.
 
-ent-EnergyKatana-name = energy katana
-ent-EnergyKatana-desc = A katana infused with strong energy.
+ent-EnergyKatana-name = энергия катана
+ent-EnergyKatana-desc = Катана, наделенная сильной энергией.
 
-ent-Claymore-name = claymore
-ent-Claymore-desc = An ancient war blade.
+ent-Claymore-name = клеймор
+ent-Claymore-desc = Древний боевой клинок.
 
-ent-Throngler-name = throngler
-ent-Throngler-desc = If Security dares take it from you, just remind them that they are indeed mortal.
+ent-Throngler-name = душитель
+ent-Throngler-desc = Если служба безопасности посмеет отобрать это у вас, просто напомните им, что они действительно смертны.
 
-ent-BaseSword-name = item
+ent-BaseSword-name = элемент
 

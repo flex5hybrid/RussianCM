@@ -1,3 +1,3 @@
-ent-PetCarrier-name = pet carrier
-ent-PetCarrier-desc = Allows large animals to be carried comfortably. It smells vaguely of toilet water and explosives.
+ent-PetCarrier-name = переноска для домашних животных
+ent-PetCarrier-desc = Позволяет комфортно перевозить крупных животных. От него слабо пахнет туалетной водой и взрывчаткой.
 

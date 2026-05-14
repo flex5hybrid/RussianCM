@@ -1,2 +1,2 @@
-ent-SpawnMobGingerbreadAI-name = gingerbread man Spawner
+ent-SpawnMobGingerbreadAI-name = Спаунер пряничного человечка
 

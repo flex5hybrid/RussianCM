@@ -1,2 +1,2 @@
-ent-AU14AreaStableGarrisonIndoors-name = Stable Garrison - Indoors
-ent-AU14AreaStableGarrisonOutdoors-name = Stable Garrison - Outdoors
+ent-AU14AreaStableGarrisonIndoors-name = Конюшня гарнизона — в помещении
+ent-AU14AreaStableGarrisonOutdoors-name = Конюшня гарнизона — на открытом воздухе

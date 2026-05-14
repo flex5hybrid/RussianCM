@@ -1,3 +1,3 @@
-ent-CandyBowl-name = candy bowl
-ent-CandyBowl-desc = Grab as much as you can fit in your pockets!
+ent-CandyBowl-name = конфетница
+ent-CandyBowl-desc = Берите столько, сколько сможете поместиться в карманах!
 

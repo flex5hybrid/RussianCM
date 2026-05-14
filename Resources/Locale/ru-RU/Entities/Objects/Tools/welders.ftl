@@ -1,18 +1,18 @@
-ent-Welder-name = welding tool
-ent-Welder-desc = Melts anything as long as it's fueled, don't forget your eye protection!
+ent-Welder-name = сварочный инструмент
+ent-Welder-desc = Плавит все, что угодно, пока оно заправлено, не забудьте защиту для глаз!
 
-ent-WelderIndustrial-name = industrial welding tool
-ent-WelderIndustrial-desc = An industrial welder with over double the fuel capacity.
+ent-WelderIndustrial-name = промышленный сварочный инструмент
+ent-WelderIndustrial-desc = Промышленный сварщик с запасом топлива более чем в два раза.
 
-ent-WelderIndustrialAdvanced-name = advanced industrial welding tool
-ent-WelderIndustrialAdvanced-desc = An advanced industrial welder with over double the fuel capacity and hotter flame.
+ent-WelderIndustrialAdvanced-name = усовершенствованный промышленный сварочный инструмент
+ent-WelderIndustrialAdvanced-desc = Усовершенствованный промышленный сварочный аппарат с более чем вдвое увеличенным запасом топлива и более горячим пламенем.
 
-ent-WelderExperimental-name = experimental welding tool
-ent-WelderExperimental-desc = An experimental welder capable of self-fuel generation and less harmful to the eyes.
+ent-WelderExperimental-name = экспериментальный сварочный инструмент
+ent-WelderExperimental-desc = Экспериментальный сварщик, способный самостоятельно генерировать топливо и менее вредный для глаз.
 
-ent-WelderMini-name = emergency welding tool
-ent-WelderMini-desc = A miniature welder used during emergencies.
+ent-WelderMini-name = аварийный сварочный инструмент
+ent-WelderMini-desc = Миниатюрный сварочный аппарат, используемый в чрезвычайных ситуациях.
 
-ent-RefuelingWelder-name = refuling welding tool
-ent-RefuelingWelder-desc = An slow welder that can refuel itself over time.
+ent-RefuelingWelder-name = заправка сварочного инструмента
+ent-RefuelingWelder-desc = Медленный сварщик, который может со временем дозаправиться.
 

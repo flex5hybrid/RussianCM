@@ -1,15 +1,15 @@
-ent-WeaponEnergyTurretControlPanelFrame-name = sentry turret control panel assembly
-ent-WeaponEnergyTurretControlPanelFrame-desc = An incomplete wall-mounted assembly for a sentry turret control panel.
+ent-WeaponEnergyTurretControlPanelFrame-name = Панель управления сторожевой турелью в сборе
+ent-WeaponEnergyTurretControlPanelFrame-desc = Неполный настенный узел пульта управления сторожевой турелью.
 
-ent-WeaponEnergyTurretStationControlPanelBase-name = sentry turret control panel
-ent-WeaponEnergyTurretStationControlPanelBase-desc = A wall-mounted interface for remotely configuring the operational parameters of linked sentry turrets.
+ent-WeaponEnergyTurretStationControlPanelBase-name = пульт управления сторожевой турелью
+ent-WeaponEnergyTurretStationControlPanelBase-desc = Настенный интерфейс для удаленной настройки рабочих параметров связанных сторожевых турелей.
 
-ent-WeaponEnergyTurretAIControlPanel-name = sentry turret control panel
-ent-WeaponEnergyTurretAIControlPanel-desc = A wall-mounted interface for remotely configuring the operational parameters of linked sentry turrets.
+ent-WeaponEnergyTurretAIControlPanel-name = пульт управления сторожевой турелью
+ent-WeaponEnergyTurretAIControlPanel-desc = Настенный интерфейс для удаленной настройки рабочих параметров связанных сторожевых турелей.
 
-ent-WeaponEnergyTurretSecurityControlPanel-name = sentry turret control panel
-ent-WeaponEnergyTurretSecurityControlPanel-desc = A wall-mounted interface for remotely configuring the operational parameters of linked sentry turrets.
+ent-WeaponEnergyTurretSecurityControlPanel-name = пульт управления сторожевой турелью
+ent-WeaponEnergyTurretSecurityControlPanel-desc = Настенный интерфейс для удаленной настройки рабочих параметров связанных сторожевых турелей.
 
-ent-WeaponEnergyTurretCommandControlPanel-name = sentry turret control panel
-ent-WeaponEnergyTurretCommandControlPanel-desc = A wall-mounted interface for remotely configuring the operational parameters of linked sentry turrets.
+ent-WeaponEnergyTurretCommandControlPanel-name = пульт управления сторожевой турелью
+ent-WeaponEnergyTurretCommandControlPanel-desc = Настенный интерфейс для удаленной настройки рабочих параметров связанных сторожевых турелей.
 

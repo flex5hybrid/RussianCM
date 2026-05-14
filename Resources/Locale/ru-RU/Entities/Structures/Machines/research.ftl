@@ -1,5 +1,5 @@
-ent-ResearchAndDevelopmentServer-name = R&D server
-ent-ResearchAndDevelopmentServer-desc = Contains the collective knowledge of the station's scientists. Destroying it would send them back to the stone age. You don't want that do you?
+ent-ResearchAndDevelopmentServer-name = сервер исследований и разработок
+ent-ResearchAndDevelopmentServer-desc = Содержит коллективные знания ученых станции. Уничтожение его отправит их обратно в каменный век. Ты же не хочешь этого?
 
-ent-BaseResearchAndDevelopmentPointSource-name = base R&D point source
+ent-BaseResearchAndDevelopmentPointSource-name = базовый точечный источник исследований и разработок
 

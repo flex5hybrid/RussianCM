@@ -1,3 +1,3 @@
-ent-WeaponCroissant-name = croissant
-ent-WeaponCroissant-desc = Buttery, flaky goodness.
+ent-WeaponCroissant-name = круассан
+ent-WeaponCroissant-desc = Маслянистое, слоеное совершенство.
 

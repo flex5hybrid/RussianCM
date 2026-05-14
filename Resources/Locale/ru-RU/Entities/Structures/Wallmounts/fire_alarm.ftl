@@ -1,11 +1,11 @@
-ent-FireAlarm-name = fire alarm
-ent-FireAlarm-desc = A fire alarm. Spicy!
+ent-FireAlarm-name = пожарная сигнализация
+ent-FireAlarm-desc = Пожарная сигнализация. Пряный!
 
-ent-FireAlarmAssembly-name = fire alarm assembly
-ent-FireAlarmAssembly-desc = A fire alarm assembly. Very mild.
+ent-FireAlarmAssembly-name = монтаж пожарной сигнализации
+ent-FireAlarmAssembly-desc = Монтаж пожарной сигнализации. Очень мягкий.
 
-ent-FireAlarmXeno-desc = An alien fire alarm. Works just the same!
+ent-FireAlarmXeno-desc = Инопланетная пожарная сигнализация. Работает точно так же!
 
-ent-FireAlarmAssemblyXeno-name = fire alarm assembly
-ent-FireAlarmAssemblyXeno-desc = An alien fire alarm assembly. Good luck with the wires.
+ent-FireAlarmAssemblyXeno-name = монтаж пожарной сигнализации
+ent-FireAlarmAssemblyXeno-desc = Инопланетная пожарная сигнализация. Удачи с проводами.
 

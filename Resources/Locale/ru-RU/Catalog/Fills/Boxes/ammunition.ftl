@@ -1,60 +1,60 @@
-ent-BoxMagazine-name = box of magazines
-ent-BoxMagazine-desc = A box full of magazines.
+ent-BoxMagazine-name = коробка журналов
+ent-BoxMagazine-desc = Коробка, полная журналов.
 
-ent-BoxMagazinePistolCaselessRifle-name = box of .25 caseless magazines
-ent-BoxMagazinePistolCaselessRifle-desc = A box full of .25 caseless magazines.
+ent-BoxMagazinePistolCaselessRifle-name = коробка безгильзовых магазинов .25
+ent-BoxMagazinePistolCaselessRifle-desc = Коробка, полная безгильзовых магазинов 25-го калибра.
 
-ent-BoxMagazinePistolCaselessRiflePractice-name = box of .25 caseless (practice) magazines
-ent-BoxMagazinePistolCaselessRiflePractice-desc = A box full of .25 caseless practice magazines.
+ent-BoxMagazinePistolCaselessRiflePractice-name = коробка безгильзовых (тренировочных) магазинов .25
+ent-BoxMagazinePistolCaselessRiflePractice-desc = Коробка, полная безгильзовых тренировочных магазинов 25-го калибра.
 
-ent-BoxMagazineLightRifle-name = box of .30 rifle magazines
-ent-BoxMagazineLightRifle-desc = A box full of .30 rifle magazines.
+ent-BoxMagazineLightRifle-name = коробка с магазинами для винтовки .30
+ent-BoxMagazineLightRifle-desc = Коробка с магазинами для винтовок 30-го калибра.
 
-ent-BoxMagazineLightRiflePractice-name = box of .30 rifle (practice) magazines
-ent-BoxMagazineLightRiflePractice-desc = A box full of .30 rifle (practice) magazines.
+ent-BoxMagazineLightRiflePractice-name = коробка с винтовочными (тренировочными) магазинами .30
+ent-BoxMagazineLightRiflePractice-desc = Коробка, полная винтовочных (тренировочных) магазинов калибра .30.
 
-ent-BoxMagazineMagnumSubMachineGun-name = box of SMG .45 magnum magazines
-ent-BoxMagazineMagnumSubMachineGun-desc = A box full of SMG .45 magnum magazines.
+ent-BoxMagazineMagnumSubMachineGun-name = коробка магазинов SMG .45 Magnum
+ent-BoxMagazineMagnumSubMachineGun-desc = Коробка, полная магазинов SMG .45 Magnum.
 
-ent-BoxMagazineMagnumSubMachineGunPractice-name = box of SMG .45 magnum (practice) magazines
-ent-BoxMagazineMagnumSubMachineGunPractice-desc = A box full of SMG .45 magnum (practice) magazines.
+ent-BoxMagazineMagnumSubMachineGunPractice-name = коробка с магазинами SMG .45 Magnum (тренировочные)
+ent-BoxMagazineMagnumSubMachineGunPractice-desc = Коробка с магазинами SMG .45 Magnum (тренировочные).
 
-ent-BoxMagazinePistolSubMachineGunTopMounted-name = box of WT550 .35 auto magazines
-ent-BoxMagazinePistolSubMachineGunTopMounted-desc = A box full of WT550 .35 auto magazines.
+ent-BoxMagazinePistolSubMachineGunTopMounted-name = коробка автомагазинов WT550 .35
+ent-BoxMagazinePistolSubMachineGunTopMounted-desc = Коробка, полная автомагазинов WT550 .35.
 
-ent-BoxMagazinePistol-name = box of pistol .35 auto magazines
-ent-BoxMagazinePistol-desc = A box full of pistol .35 auto magazines.
+ent-BoxMagazinePistol-name = коробка с автомагазинами для пистолета .35
+ent-BoxMagazinePistol-desc = Коробка, полная автомагазинов для пистолета 35-го калибра.
 
-ent-BoxMagazinePistolPractice-name = box of pistol .35 auto (practice) magazines
-ent-BoxMagazinePistolPractice-desc = A box full of magazines.
+ent-BoxMagazinePistolPractice-name = коробка с магазинами для пистолета .35 авто (тренировочные)
+ent-BoxMagazinePistolPractice-desc = Коробка, полная журналов.
 
-ent-BoxMagazinePistolHighCapacity-name = box of machine pistol .35 auto magazines
-ent-BoxMagazinePistolHighCapacity-desc = A box full of machine pistol .35 auto magazines.
+ent-BoxMagazinePistolHighCapacity-name = коробка от автомагазинов для пистолета-пулемета .35
+ent-BoxMagazinePistolHighCapacity-desc = Коробка, полная автоматических магазинов для пистолета-пулемета 35-го калибра.
 
-ent-BoxMagazinePistolHighCapacityPractice-name = box of machine pistol .35 auto (practice) magazines
-ent-BoxMagazinePistolHighCapacityPractice-desc = A box full of machine pistol .35 auto (practice) magazines.
+ent-BoxMagazinePistolHighCapacityPractice-name = коробка от автоматических (тренировочных) магазинов для пистолета-пулемета .35
+ent-BoxMagazinePistolHighCapacityPractice-desc = Коробка, полная автоматических (тренировочных) магазинов для пистолета-пулемета .35.
 
-ent-BoxMagazinePistolSubMachineGun-name = box of SMG .35 auto magazines
-ent-BoxMagazinePistolSubMachineGun-desc = A box full of SMG .35 auto magazines.
+ent-BoxMagazinePistolSubMachineGun-name = коробка автомагазинов SMG .35
+ent-BoxMagazinePistolSubMachineGun-desc = Коробка с автомагазинами SMG .35.
 
-ent-BoxMagazinePistolSubMachineGunPractice-name = box of SMG .35 auto (practice) magazines
-ent-BoxMagazinePistolSubMachineGunPractice-desc = A box full of SMG .35 auto (practice) magazines.
+ent-BoxMagazinePistolSubMachineGunPractice-name = коробка авто (тренировочных) магазинов SMG .35
+ent-BoxMagazinePistolSubMachineGunPractice-desc = Коробка с автоматическими (тренировочными) магазинами SMG .35.
 
-ent-BoxMagazineShotgun-name = box of (.50 pellet) ammo drums
-ent-BoxMagazineShotgun-desc = A box full of (.50 pellet) ammo drums.
+ent-BoxMagazineShotgun-name = коробка с барабанами для боеприпасов (пульса .50)
+ent-BoxMagazineShotgun-desc = Коробка с бочонками (пульса .50).
 
-ent-BoxMagazineShotgunBeanbag-name = box of (.50 beanbag) ammo drums
-ent-BoxMagazineShotgunBeanbag-desc = A box full of (.50 beanbag) ammo drums.
+ent-BoxMagazineShotgunBeanbag-name = коробка с бочками с боеприпасами (.50 погремушка)
+ent-BoxMagazineShotgunBeanbag-desc = Коробка с бочонками (мешок 0,50 мм).
 
-ent-BoxMagazineShotgunSlug-name = box of (.50 slug) ammo drums
-ent-BoxMagazineShotgunSlug-desc = A box full of (.50 slug) ammo drums.
+ent-BoxMagazineShotgunSlug-name = коробка с боекомплектами (пули .50)
+ent-BoxMagazineShotgunSlug-desc = Коробка, полная барабанов с патронами калибра .50.
 
-ent-BoxMagazineShotgunIncendiary-name = box of (.50 incendiary) ammo drums
-ent-BoxMagazineShotgunIncendiary-desc = A box full of (.50 incendiary) ammo drums.
+ent-BoxMagazineShotgunIncendiary-name = ящик с зажигательными боеголовками (.50)
+ent-BoxMagazineShotgunIncendiary-desc = Ящик, полный бочек с зажигательными боеприпасами (.50).
 
-ent-BoxMagazineRifle-name = box of .20 rifle magazines
-ent-BoxMagazineRifle-desc = A box full of .20 rifle magazines.
+ent-BoxMagazineRifle-name = коробка с магазинами для винтовки .20
+ent-BoxMagazineRifle-desc = Коробка с винтовочными магазинами калибра .20.
 
-ent-BoxMagazineRiflePractice-name = box of .20 rifle (practice) magazines
-ent-BoxMagazineRiflePractice-desc = A box full of .20 rifle (practice) magazines.
+ent-BoxMagazineRiflePractice-name = коробка с винтовочными (тренировочными) магазинами калибра .20
+ent-BoxMagazineRiflePractice-desc = Коробка с винтовочными (тренировочными) магазинами калибра .20.
 

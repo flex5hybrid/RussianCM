@@ -1,29 +1,29 @@
-ent-ChessBoard-name = chessboard
-ent-ChessBoard-desc = A chessboard. Pieces included!
+ent-ChessBoard-name = шахматная доска
+ent-ChessBoard-desc = Шахматная доска. Детали включены!
 
-ent-ChessBoardTabletop-name = chessboard
+ent-ChessBoardTabletop-name = шахматная доска
 
-ent-WhiteKing-name = white king
+ent-WhiteKing-name = белый король
 
-ent-WhiteQueen-name = white queen
+ent-WhiteQueen-name = белая королева
 
-ent-WhiteRook-name = white rook
+ent-WhiteRook-name = белая ладья
 
-ent-WhiteBishop-name = white bishop
+ent-WhiteBishop-name = белый слон
 
-ent-WhiteKnight-name = white knight
+ent-WhiteKnight-name = белый рыцарь
 
-ent-WhitePawn-name = white pawn
+ent-WhitePawn-name = белая пешка
 
-ent-BlackKing-name = black king
+ent-BlackKing-name = черный король
 
-ent-BlackQueen-name = black queen
+ent-BlackQueen-name = черная королева
 
-ent-BlackRook-name = black rook
+ent-BlackRook-name = черная ладья
 
-ent-BlackBishop-name = black bishop
+ent-BlackBishop-name = черный слон
 
-ent-BlackKnight-name = black knight
+ent-BlackKnight-name = черный рыцарь
 
-ent-BlackPawn-name = black pawn
+ent-BlackPawn-name = черная пешка
 

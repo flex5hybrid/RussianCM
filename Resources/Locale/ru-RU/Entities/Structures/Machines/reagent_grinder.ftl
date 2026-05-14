@@ -1,6 +1,6 @@
-ent-KitchenReagentGrinder-name = reagent grinder
-ent-KitchenReagentGrinder-desc = From BlenderTech. Will It Blend? Let's find out!
+ent-KitchenReagentGrinder-name = реагентная мельница
+ent-KitchenReagentGrinder-desc = Из БлендерТех. Будет ли это смешиваться? Давайте узнаем!
 
-ent-ReagentGrinderIndustrial-name = industrial reagent grinder
-ent-ReagentGrinderIndustrial-desc = An industrial reagent grinder.
+ent-ReagentGrinderIndustrial-name = промышленный измельчитель реагентов
+ent-ReagentGrinderIndustrial-desc = Промышленная мельница для реагентов.
 

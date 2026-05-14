@@ -65,3 +65,12 @@ salvage-dungeon-mod-snowy-labs = Снежная лаборатория
 salvage-dungeon-mod-experiment = Эксперимент
 salvage-dungeon-mod-haunted = Призраки
 salvage-dungeon-mod-mineshaft = Шахта
+
+# Missing entries synced from en-US
+
+salvage-expedition-structure-examine = Это цель [color=#B02E26]destruction[/color].
+
+salvage-expedition-structure-remaining = {$count ->
+    [one] {$count} structure remaining.
+    *[other] {$count} structures remaining.
+}

@@ -1,7 +1,7 @@
-ent-ReinforcedPlasmaWindow-name = reinforced plasma window
+ent-ReinforcedPlasmaWindow-name = усиленное плазменное окно
 
-ent-PlasmaReinforcedWindowDirectional-name = directional reinforced plasma window
-ent-PlasmaReinforcedWindowDirectional-desc = Don't smudge up the glass down there.
+ent-PlasmaReinforcedWindowDirectional-name = плазменное окно с направленной армировкой
+ent-PlasmaReinforcedWindowDirectional-desc = Не испачкай там стекло.
 
 ent-ReinforcedPlasmaWindowDiagonal-name = construction-recipe-reinforced-plasma-window-diagonal
 

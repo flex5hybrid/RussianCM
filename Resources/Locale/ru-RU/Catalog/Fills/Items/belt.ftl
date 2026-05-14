@@ -1,45 +1,45 @@
-ent-ClothingBeltMilitaryWebbingGrenadeFilled-name = grenadier chest rig
-ent-ClothingBeltMilitaryWebbingGrenadeFilled-desc = A set of tactical webbing worn by Syndicate boarding parties.
+ent-ClothingBeltMilitaryWebbingGrenadeFilled-name = гренадерский сундук
+ent-ClothingBeltMilitaryWebbingGrenadeFilled-desc = Комплект тактических лямок, которые носят абордажные отряды Синдиката.
 
-ent-ClothingBeltUtilityFilled-name = utility belt
-ent-ClothingBeltUtilityFilled-desc = Can hold various things.
+ent-ClothingBeltUtilityFilled-name = ремень безопасности
+ent-ClothingBeltUtilityFilled-desc = Может хранить разные вещи.
 
-ent-ClothingBeltUtilityEngineering-name = utility belt
-ent-ClothingBeltUtilityEngineering-desc = Can hold various things.
+ent-ClothingBeltUtilityEngineering-name = ремень безопасности
+ent-ClothingBeltUtilityEngineering-desc = Может хранить разные вещи.
 
-ent-ClothingBeltChiefEngineerFilled-name = chief engineer's toolbelt
-ent-ClothingBeltChiefEngineerFilled-desc = Holds tools, looks snazzy.
+ent-ClothingBeltChiefEngineerFilled-name = пояс с инструментами главного инженера
+ent-ClothingBeltChiefEngineerFilled-desc = Держит инструменты, выглядит шикарно.
 
-ent-ClothingBeltSecurityFilled-name = security belt
-ent-ClothingBeltSecurityFilled-desc = Can hold security gear like handcuffs and flashes.
+ent-ClothingBeltSecurityFilled-name = ремень безопасности
+ent-ClothingBeltSecurityFilled-desc = Может держать защитное снаряжение, такое как наручники и вспышки.
 
-ent-ClothingBeltSecurityWebbingFilled-name = security carrier
-ent-ClothingBeltSecurityWebbingFilled-desc = Unique and versatile chest rig, can hold security gear.
+ent-ClothingBeltSecurityWebbingFilled-name = перевозчик безопасности
+ent-ClothingBeltSecurityWebbingFilled-desc = Уникальное и универсальное нагрудное приспособление, в котором можно хранить защитное снаряжение.
 
-ent-ClothingBeltJanitorFilled-name = janibelt
-ent-ClothingBeltJanitorFilled-desc = A belt used to hold most janitorial supplies.
+ent-ClothingBeltJanitorFilled-name = Джанибелт
+ent-ClothingBeltJanitorFilled-desc = Ремень, используемый для хранения большинства предметов домашнего обихода.
 
-ent-ClothingBeltMedicalFilled-name = medical belt
-ent-ClothingBeltMedicalFilled-desc = Can hold various medical equipment.
+ent-ClothingBeltMedicalFilled-name = медицинский пояс
+ent-ClothingBeltMedicalFilled-desc = Может хранить различное медицинское оборудование.
 
-ent-ClothingBeltMedicalEMTFilled-name = EMT belt
-ent-ClothingBeltMedicalEMTFilled-desc = Perfect for holding various equipment for medical emergencies.
+ent-ClothingBeltMedicalEMTFilled-name = ремень ЕМТ
+ent-ClothingBeltMedicalEMTFilled-desc = Идеально подходит для хранения различного оборудования для оказания неотложной медицинской помощи.
 
-ent-ClothingBeltPlantFilled-name = botanical belt
-ent-ClothingBeltPlantFilled-desc = A belt used to hold most hydroponics supplies. Suprisingly, not green.
+ent-ClothingBeltPlantFilled-name = ботанический пояс
+ent-ClothingBeltPlantFilled-desc = Ремень, используемый для хранения большинства принадлежностей для гидропоники. На удивление, не зеленый.
 
-ent-ClothingBeltSheathFilled-name = sabre sheath
-ent-ClothingBeltSheathFilled-desc = An ornate sheath designed to hold an officer's blade.
+ent-ClothingBeltSheathFilled-name = ножны для сабли
+ent-ClothingBeltSheathFilled-desc = Изысканные ножны, предназначенные для хранения офицерского клинка.
 
-ent-ClothingBeltMilitaryWebbingMedFilled-name = medical chest rig
-ent-ClothingBeltMilitaryWebbingMedFilled-desc = A set of tactical webbing worn by Gorlex Marauder medic operatives.
+ent-ClothingBeltMilitaryWebbingMedFilled-name = медицинская грудная установка
+ent-ClothingBeltMilitaryWebbingMedFilled-desc = Комплект тактических ремней, которые носят медики «Горлекс Мародер».
 
-ent-ClothingBeltWandFilled-name = wand belt
-ent-ClothingBeltWandFilled-desc = A belt designed to hold various rods of power. A veritable fanny pack of exotic magic.
+ent-ClothingBeltWandFilled-name = палочка пояс
+ent-ClothingBeltWandFilled-desc = Пояс, предназначенный для хранения различных силовых жезлов. Настоящая поясная сумка, наполненная экзотическим волшебством.
 
-ent-ClothingBeltHolsterFilled-name = shoulder holster
-ent-ClothingBeltHolsterFilled-desc = A holster to carry a handgun and ammo. WARNING: Badasses only.
+ent-ClothingBeltHolsterFilled-name = плечевая кобура
+ent-ClothingBeltHolsterFilled-desc = Кобура для ношения пистолета и патронов. ВНИМАНИЕ: только задиры.
 
-ent-ClothingBeltChefFilled-name = chef belt
-ent-ClothingBeltChefFilled-desc = A belt used to hold kitchen knives and condiments for quick access.
+ent-ClothingBeltChefFilled-name = пояс шеф-повара
+ent-ClothingBeltChefFilled-desc = Ремень для хранения кухонных ножей и приправ для быстрого доступа.
 

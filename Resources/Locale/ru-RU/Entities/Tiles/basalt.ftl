@@ -1,18 +1,18 @@
-ent-BasaltOne-name = basalt
-ent-BasaltOne-desc = Rock.
+ent-BasaltOne-name = базальт
+ent-BasaltOne-desc = Рок.
 
-ent-BasaltTwo-name = basalt
-ent-BasaltTwo-desc = Rock.
+ent-BasaltTwo-name = базальт
+ent-BasaltTwo-desc = Рок.
 
-ent-BasaltThree-name = basalt
-ent-BasaltThree-desc = Rock.
+ent-BasaltThree-name = базальт
+ent-BasaltThree-desc = Рок.
 
-ent-BasaltFour-name = basalt
-ent-BasaltFour-desc = Rock.
+ent-BasaltFour-name = базальт
+ent-BasaltFour-desc = Рок.
 
-ent-BasaltFive-name = basalt
-ent-BasaltFive-desc = Rock.
+ent-BasaltFive-name = базальт
+ent-BasaltFive-desc = Рок.
 
-ent-BasaltRandom-name = basalt
-ent-BasaltRandom-desc = Rock.
+ent-BasaltRandom-name = базальт
+ent-BasaltRandom-desc = Рок.
 

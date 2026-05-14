@@ -1,12 +1,12 @@
-ent-FoodBagelBase-name = item
-ent-FoodBagelBase-desc = A delicious bagel.
+ent-FoodBagelBase-name = элемент
+ent-FoodBagelBase-desc = Вкусный бублик.
 
-ent-FoodBagel-name = bagel
-ent-FoodBagel-desc = A delicious bagel.
+ent-FoodBagel-name = бублик
+ent-FoodBagel-desc = Вкусный бублик.
 
-ent-FoodBagelPoppy-name = poppy seed bagel
-ent-FoodBagelPoppy-desc = A delicious bagel topped with bicaridine-infused poppy seeds.
+ent-FoodBagelPoppy-name = бублик с маком
+ent-FoodBagelPoppy-desc = Вкусный бублик с маком, наполненным бикаридином.
 
-ent-FoodBagelCotton-name = cotton bagel
-ent-FoodBagelCotton-desc = A delicious bagel made with cotton dough.
+ent-FoodBagelCotton-name = хлопковый бублик
+ent-FoodBagelCotton-desc = Вкусный бублик из хлопкового теста.
 

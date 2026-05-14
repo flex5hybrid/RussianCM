@@ -1,6 +1,6 @@
-ent-Lantern-name = lantern
-ent-Lantern-desc = The holy light guides the way.
+ent-Lantern-name = фонарь
+ent-Lantern-desc = Святой свет указывает путь.
 
-ent-LanternFlash-name = lantern
-ent-LanternFlash-desc = The holy light guides the way.
+ent-LanternFlash-name = фонарь
+ent-LanternFlash-desc = Святой свет указывает путь.
 

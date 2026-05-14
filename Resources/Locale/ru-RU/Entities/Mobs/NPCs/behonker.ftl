@@ -1,15 +1,15 @@
-ent-BaseMobBehonker-name = behonker
-ent-BaseMobBehonker-desc = A floating demon aspect of the honkmother.
+ent-BaseMobBehonker-name = маяк
+ent-BaseMobBehonker-desc = Плавающий демонический аспект матери-гудока.
 
-ent-MobBehonkerElectrical-name = behonker
-ent-MobBehonkerElectrical-desc = A floating demon aspect of the honkmother.
+ent-MobBehonkerElectrical-name = маяк
+ent-MobBehonkerElectrical-desc = Плавающий демонический аспект матери-гудока.
 
-ent-MobBehonkerPyro-name = behonker
-ent-MobBehonkerPyro-desc = A floating demon aspect of the honkmother.
+ent-MobBehonkerPyro-name = маяк
+ent-MobBehonkerPyro-desc = Плавающий демонический аспект матери-гудока.
 
-ent-MobBehonkerGrav-name = behonker
-ent-MobBehonkerGrav-desc = A floating demon aspect of the honkmother.
+ent-MobBehonkerGrav-name = маяк
+ent-MobBehonkerGrav-desc = Плавающий демонический аспект матери-гудока.
 
-ent-MobBehonkerIce-name = behonker
-ent-MobBehonkerIce-desc = A floating demon aspect of the honkmother.
+ent-MobBehonkerIce-name = маяк
+ent-MobBehonkerIce-desc = Плавающий демонический аспект матери-гудока.
 

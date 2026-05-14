@@ -1,5 +1,5 @@
-cmd-rmcdeletecommendations-desc = Deletes commendations by round, giver, receiver, or id.
-cmd-rmcdeletecommendations-help = Usage:
+cmd-rmcdeletecommendations-desc = Удаляет похвалы по раунду, дарителю, получателю или идентификатору.
+cmd-rmcdeletecommendations-help = Использование:
   rmcdeletecommendations id <commendationId>
     - Deletes a single commendation by id
 
@@ -21,27 +21,27 @@ cmd-rmcdeletecommendations-help = Usage:
     rmcdeletecommendations round 42 jelly giver PlayerName
     rmcdeletecommendations round 42 medal receiver PlayerName
 
-cmd-rmcdeletecommendations-invalid-arguments = Incorrect arguments!
-cmd-rmcdeletecommendations-invalid-round-id = Invalid round ID!
-cmd-rmcdeletecommendations-invalid-id = Invalid commendation ID!
-cmd-rmcdeletecommendations-invalid-type = Invalid type '{ $type }'!
-cmd-rmcdeletecommendations-invalid-player-mode = Invalid player mode! Must be 'giver' or 'receiver'.
-cmd-rmcdeletecommendations-player-not-found = Player '{ $player }' not found.
-cmd-rmcdeletecommendations-no-results = No commendations found.
+cmd-rmcdeletecommendations-invalid-arguments = Неверные аргументы!
+cmd-rmcdeletecommendations-invalid-round-id = Неверный идентификатор раунда!
+cmd-rmcdeletecommendations-invalid-id = Неверный идентификатор благодарности!
+cmd-rmcdeletecommendations-invalid-type = Неверный тип «{ $type }»!
+cmd-rmcdeletecommendations-invalid-player-mode = Неверный режим игрока! Должно быть «дающий» или «получатель».
+cmd-rmcdeletecommendations-player-not-found = Игрок «{ $player }» не найден.
+cmd-rmcdeletecommendations-no-results = Похвалы не найдены.
 
-cmd-rmcdeletecommendations-id-header = Deleted commendation { $id }:
-cmd-rmcdeletecommendations-round-header = Deleted commendations for Round { $round } ({ $count } total):
-cmd-rmcdeletecommendations-format = id [{ $id }] { $type }: { $name } - { $giverUserName } ({ $giver }) → { $receiverUserName } ({ $receiver }) Round { $round }: { $text }
-cmd-rmcdeletecommendations-admin-announcement = { $admin } deleted commendations with ID: { $ids }
-cmd-rmcdeletecommendations-admin-announcement-round = { $admin } deleted commendations for Round { $round } with ID: { $ids }
+cmd-rmcdeletecommendations-id-header = Удалена похвала { $id }:
+cmd-rmcdeletecommendations-round-header = Удалены похвалы за Раунд { $round } (всего { $count }):
+cmd-rmcdeletecommendations-format = id [{ $id }] { $type }: { $name } - { $giverUserName } ({ $giver }) → { $receiverUserName } ({ $receiver }) Раунд { $round }: { $text }
+cmd-rmcdeletecommendations-admin-announcement = { $admin } удалил рекомендации с идентификатором: { $ids }
+cmd-rmcdeletecommendations-admin-announcement-round = { $admin } удалил рекомендации за Раунд { $round } с ID: { $ids }
 
-cmd-rmcdeletecommendations-hint-mode = Mode (id or round)
-cmd-rmcdeletecommendations-hint-mode-id = Delete a commendation by id
-cmd-rmcdeletecommendations-hint-mode-round = Delete commendations by round
-cmd-rmcdeletecommendations-hint-round-id = Round ID
-cmd-rmcdeletecommendations-hint-commendation-id = Commendation ID
-cmd-rmcdeletecommendations-hint-type = Commendation type
-cmd-rmcdeletecommendations-hint-player-mode = Player mode (giver or receiver)
-cmd-rmcdeletecommendations-hint-player-giver = Commendations given by player
-cmd-rmcdeletecommendations-hint-player-receiver = Commendations received by player
-cmd-rmcdeletecommendations-hint-player = Player username or UserId
+cmd-rmcdeletecommendations-hint-mode = Режим (id или раунд)
+cmd-rmcdeletecommendations-hint-mode-id = Удалить похвалу по id
+cmd-rmcdeletecommendations-hint-mode-round = Удаление похвал по раундам
+cmd-rmcdeletecommendations-hint-round-id = Идентификатор раунда
+cmd-rmcdeletecommendations-hint-commendation-id = Идентификатор рекомендации
+cmd-rmcdeletecommendations-hint-type = Тип рекомендации
+cmd-rmcdeletecommendations-hint-player-mode = Режим игрока (дающий или получающий)
+cmd-rmcdeletecommendations-hint-player-giver = Благодарности от игрока
+cmd-rmcdeletecommendations-hint-player-receiver = Благодарности, полученные игроком
+cmd-rmcdeletecommendations-hint-player = Имя пользователя или UserId игрока

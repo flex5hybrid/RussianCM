@@ -1,3 +1,3 @@
-ent-SmartFridge-name = SmartFridge
-ent-SmartFridge-desc = A refrigerated storage unit for keeping items cold and fresh.
+ent-SmartFridge-name = Умный Холодильник
+ent-SmartFridge-desc = Холодильное отделение для хранения продуктов холодными и свежими.
 

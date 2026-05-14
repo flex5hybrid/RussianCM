@@ -62,3 +62,96 @@ rmc-dropship-fabricator-equipment = [bold]Снаряжение[/bold]
 rmc-dropship-fabricator-ammo = [bold]Боеприпасы[/bold]
 rmc-dropship-fabricator-fabricate = Изготовить ({$cost})
 rmc-dropship-fabricator-busy = Фабрикатор занят. Дождитесь завершения текущей операции.
+
+# Missing entries synced from en-US
+
+rmc-dropship-invalid-hijack = На терминале мигают огни, но вы не можете понять их значения.
+
+rmc-dropship-hijack-human-hacking = Вы начинаете взламывать навигационную консоль, чтобы обойти управление полетом...
+
+rmc-dropship-hijack-no-intel = У вашей фракции недостаточно очков разведки, чтобы захватить десантный корабль.
+
+rmc-dropship-hijack-no-enemy-lz = Никакие основные зоны высадки противника не доступны для захвата.
+
+rmc-dropship-hijack-thirdparty = Навигационные системы этого шаттла несовместимы с вашим устройством блокировки.
+
+rmc-dropship-terminal-wrong-faction = Этот терминал не распознает ваши учетные данные.
+
+rmc-dropship-weapons-lock = ЗАМОК
+
+rmc-dropship-weapons-clear = ЧИСТО
+
+rmc-dropship-weapons-enable = ВКЛЮЧИТЬ
+
+rmc-dropship-weapons-disable = ОТКЛЮЧИТЬ
+
+rmc-dropship-weapons-deploy = РАЗВЕРТЫВАНИЕ
+
+rmc-dropship-weapons-retract = ВТЯНУТЬ
+
+rmc-dropship-weapons-auto-deploy = АВТОМАТИЧЕСКОЕ РАЗВЕРТЫВАНИЕ
+
+rmc-dropship-firemission-warning = ДЕЙСТВИТЕЛЬНЫЙ КОРАБЛЬ СТРЕЛЯЕТ ПО {$direction}
+
+rmc-dropship-firemission-warning-above = ДРОПШАБЛЬ СТРЕЛЯЕТ ПРЯМО НА ВАС!
+
+rmc-dropship-paradrop-target-screen-text = Система парашютного развертывания HPU-1
+    {$hasTarget}
+
+rmc-dropship-paradrop-target-screen-target-none = Зафиксированная цель не найдена.
+    Paradropping not available.
+
+rmc-dropship-paradrop-target-screen-target-targeting = Заблокировано на {$dropTarget}.
+    Paradropping available.
+
+rmc-dropship-paradrop-lock-no-target = Цель не выбрана.
+
+rmc-dropship-paradrop-lock-target-not-flying = Включить парашютный модуль можно только во время полета.
+
+rmc-dropship-paradrop-failed = Ваши ремни безопасности застряли и мешают вам прыгать.
+
+rmc-dropship-medevac-system-screen-text = Система медицинской эвакуации РМУ-4М
+
+rmc-dropship-fulton-system-screen-text = Система восстановления RMU-19 Фултон
+
+rmc-dropship-locked= Эта птица теперь наша на следующие {$minutes} минут.
+
+rmc-dropship-locked-out = Шаттл не отвечает. Повторите попытку через {$minutes} минут.
+
+rmc-dropship-locked-out-bypass = Вы частично обошли блокировку, попробуйте еще раз!
+
+rmc-dropship-locked-out-bypass-complete = Вы успешно сняли блокировку!
+
+rmc-dropship-equipment-deployer-text = {$deployName}
+
+rmc-dropship-equipment-deployer-health = Состояние: {$status}
+
+rmc-dropship-equipment-deployer-ammo = Боеприпасы: {$ammoCount} / {$totalAmmoCount}
+
+rmc-dropship-equipment-deployer-status = Статус развертывания: {$deployed}
+
+rmc-dropship-equipment-deployer-auto-deploy = Автоматическое развертывание: {$autoDeploy}
+
+rmc-dropship-equipment-enabled = ВКЛЮЧЕНО
+
+rmc-dropship-equipment-disabled = ОТКЛЮЧЕН
+
+rmc-dropship-equipment-deployed = РАЗВЕРТЫВАН
+
+rmc-dropship-equipment-undeployed = НЕРАЗВЕРТЫВАН
+
+rmc-dropship-equipment-operational = РАБОТАЮЩИЙ
+
+rmc-dropship-equipment-damaged = ПОВРЕЖДЕН
+
+rmc-dropship-equipment-destroyed = УНИЧТОЖЕН
+
+rmc-dropship-launch-bay-screen-text = Внутренняя сторожевая установка ЛАГ-14
+
+rmc-dropship-launch-bay-screen-text-loaded = Внутренняя сторожевая установка ЛАГ-14
+
+    Loaded: {$loaded}
+
+    Ammo: {$current} / {$max}
+
+rmc-dropship-launch-alarm-xeno-shutdown = Мы рубим {$console}, заставляя его замолчать!

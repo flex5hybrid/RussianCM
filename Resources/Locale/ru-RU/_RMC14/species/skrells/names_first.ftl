@@ -107,3 +107,99 @@ rmc-name-skrell-first-106 = Ксумтэк
 rmc-name-skrell-first-107 = Ксумсксэк
 rmc-name-skrell-first-108 = Ксумсксум
 rmc-name-skrell-first-109 = Ксумсксук
+
+# Missing entries synced from en-US
+
+rmc-name-skrell-first-110 = Ксертак
+
+rmc-name-skrell-first-111 = Шетак
+
+rmc-name-skrell-first-112 = Шетек
+
+rmc-name-skrell-first-113 = Ксетер
+
+rmc-name-skrell-first-114 = Шексаек
+
+rmc-name-skrell-first-115 = Ксексерр
+
+rmc-name-skrell-first-116 = Шексуэр
+
+rmc-name-skrell-first-117 = Ксексум
+
+rmc-name-skrell-first-118 = Xrim
+
+rmc-name-skrell-first-119 = Кримксум
+
+rmc-name-skrell-first-120 = Кримксерр
+
+rmc-name-skrell-first-121 = Xrimxuer
+
+rmc-name-skrell-first-122 = Кримксрим
+
+rmc-name-skrell-first-123 = Сюэкер
+
+rmc-name-skrell-first-124 = Сюэцюс
+
+rmc-name-skrell-first-125 = Сюэтак
+
+rmc-name-skrell-first-126 = Сюэтер
+
+rmc-name-skrell-first-127 = Сюэсаек
+
+rmc-name-skrell-first-128 = Сюэксум
+
+rmc-name-skrell-first-129 = Сюэксук
+
+rmc-name-skrell-first-130 = Ксумкекс
+
+rmc-name-skrell-first-131 = Ксумкукс
+
+rmc-name-skrell-first-132 = Шумтак
+
+rmc-name-skrell-first-133 = Хумтек
+
+rmc-name-skrell-first-134 = Шумшаэк
+
+rmc-name-skrell-first-135 = кумксум
+
+rmc-name-skrell-first-136 = Шумшук
+
+rmc-name-skrell-first-137 = Заоо
+
+rmc-name-skrell-first-138 = Заукер
+
+rmc-name-skrell-first-139 = Заоотек
+
+rmc-name-skrell-first-140 = Заоотер
+
+rmc-name-skrell-first-141 = Заооксэк
+
+rmc-name-skrell-first-142 = Заооксум
+
+rmc-name-skrell-first-143 = Заосук
+
+rmc-name-skrell-first-144 = Заоксрим
+
+rmc-name-skrell-first-145 = Заокекс
+
+rmc-name-skrell-first-146 = Заоокум
+
+rmc-name-skrell-first-147 = Заоосуэр
+
+rmc-name-skrell-first-148 = Заоволку
+
+rmc-name-skrell-first-149 = Зиксволку
+
+rmc-name-skrell-first-150 = Зикскуум
+
+rmc-name-skrell-first-151 = Зиксрим
+
+rmc-name-skrell-first-152 = Зиксюэр
+
+rmc-name-skrell-first-153 = Зиксук
+
+rmc-name-skrell-first-154 = Зикссум
+
+rmc-name-skrell-first-155 = Зиксаэк
+
+rmc-name-skrell-first-156 = Зикстек

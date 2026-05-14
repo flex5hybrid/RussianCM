@@ -1,39 +1,39 @@
-ent-SurveillanceCameraRouterBase-name = camera router
-ent-SurveillanceCameraRouterBase-desc = A surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraRouterBase-name = маршрутизатор камеры
+ent-SurveillanceCameraRouterBase-desc = Маршрутизатор камеры наблюдения. Это маршруты. Возможно.
 
-ent-SurveillanceCameraRouterEngineering-name = engineering camera router
-ent-SurveillanceCameraRouterEngineering-desc = A surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraRouterEngineering-name = инженерный маршрутизатор камеры
+ent-SurveillanceCameraRouterEngineering-desc = Маршрутизатор камеры наблюдения. Это маршруты. Возможно.
 
-ent-SurveillanceCameraRouterSecurity-name = security camera router
-ent-SurveillanceCameraRouterSecurity-desc = A surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraRouterSecurity-name = Маршрутизатор камеры безопасности
+ent-SurveillanceCameraRouterSecurity-desc = Маршрутизатор камеры наблюдения. Это маршруты. Возможно.
 
-ent-SurveillanceCameraRouterScience-name = science camera router
-ent-SurveillanceCameraRouterScience-desc = A surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraRouterScience-name = Маршрутизатор научной камеры
+ent-SurveillanceCameraRouterScience-desc = Маршрутизатор камеры наблюдения. Это маршруты. Возможно.
 
-ent-SurveillanceCameraRouterSupply-name = supply camera router
-ent-SurveillanceCameraRouterSupply-desc = A surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraRouterSupply-name = питание маршрутизатора камеры
+ent-SurveillanceCameraRouterSupply-desc = Маршрутизатор камеры наблюдения. Это маршруты. Возможно.
 
-ent-SurveillanceCameraRouterCommand-name = command camera router
-ent-SurveillanceCameraRouterCommand-desc = A surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraRouterCommand-name = командный маршрутизатор камеры
+ent-SurveillanceCameraRouterCommand-desc = Маршрутизатор камеры наблюдения. Это маршруты. Возможно.
 
-ent-SurveillanceCameraRouterService-name = service camera router
-ent-SurveillanceCameraRouterService-desc = A surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraRouterService-name = сервисный маршрутизатор камеры
+ent-SurveillanceCameraRouterService-desc = Маршрутизатор камеры наблюдения. Это маршруты. Возможно.
 
-ent-SurveillanceCameraRouterMedical-name = medical camera router
-ent-SurveillanceCameraRouterMedical-desc = A surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraRouterMedical-name = Маршрутизатор медицинской камеры
+ent-SurveillanceCameraRouterMedical-desc = Маршрутизатор камеры наблюдения. Это маршруты. Возможно.
 
-ent-SurveillanceCameraRouterGeneral-name = general camera router
-ent-SurveillanceCameraRouterGeneral-desc = A surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraRouterGeneral-name = общий маршрутизатор камеры
+ent-SurveillanceCameraRouterGeneral-desc = Маршрутизатор камеры наблюдения. Это маршруты. Возможно.
 
-ent-SurveillanceCameraWirelessRouterBase-name = wireless camera router
-ent-SurveillanceCameraWirelessRouterBase-desc = A wireless surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraWirelessRouterBase-name = беспроводной маршрутизатор камеры
+ent-SurveillanceCameraWirelessRouterBase-desc = Беспроводной маршрутизатор для камеры наблюдения. Это маршруты. Возможно.
 
-ent-SurveillanceCameraWirelessRouterEntertainment-name = entertainment camera router
-ent-SurveillanceCameraWirelessRouterEntertainment-desc = A wireless surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraWirelessRouterEntertainment-name = маршрутизатор для развлекательной камеры
+ent-SurveillanceCameraWirelessRouterEntertainment-desc = Беспроводной маршрутизатор для камеры наблюдения. Это маршруты. Возможно.
 
-ent-SurveillanceCameraRouterConstructed-name = camera router
-ent-SurveillanceCameraRouterConstructed-desc = A surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraRouterConstructed-name = маршрутизатор камеры
+ent-SurveillanceCameraRouterConstructed-desc = Маршрутизатор камеры наблюдения. Это маршруты. Возможно.
 
-ent-SurveillanceCameraWirelessRouterConstructed-name = wireless camera router
-ent-SurveillanceCameraWirelessRouterConstructed-desc = A wireless surveillance camera router. It routes. Perhaps.
+ent-SurveillanceCameraWirelessRouterConstructed-name = беспроводной маршрутизатор камеры
+ent-SurveillanceCameraWirelessRouterConstructed-desc = Беспроводной маршрутизатор для камеры наблюдения. Это маршруты. Возможно.
 

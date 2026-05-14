@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianOrbitalSecurity-name = Spawn Point Orbital Security
-ent-AU14SpawnPointCivilianOrbitalSecurity-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianOrbitalSecurity-name = Орбитальная безопасность точки возрождения
+ent-AU14SpawnPointCivilianOrbitalSecurity-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

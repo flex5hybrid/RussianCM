@@ -1,32 +1,32 @@
-ent-CratePermaEscapeSpawner-name = Perma Escape Crate Spawner
+ent-CratePermaEscapeSpawner-name = Создатель ящиков для побега Perma
 
-ent-CratePermaEscapeDigging-name = crate
-ent-CratePermaEscapeDigging-desc = A large container for items.
+ent-CratePermaEscapeDigging-name = ящик
+ent-CratePermaEscapeDigging-desc = Большой контейнер для вещей.
 
-ent-CratePermaEscapeEVA-name = crate
-ent-CratePermaEscapeEVA-desc = A large container for items.
+ent-CratePermaEscapeEVA-name = ящик
+ent-CratePermaEscapeEVA-desc = Большой контейнер для вещей.
 
-ent-CratePermaEscapeGun-name = crate
-ent-CratePermaEscapeGun-desc = A large container for items.
+ent-CratePermaEscapeGun-name = ящик
+ent-CratePermaEscapeGun-desc = Большой контейнер для вещей.
 
-ent-CratePermaEscapeBureaucracy-name = crate
-ent-CratePermaEscapeBureaucracy-desc = A large container for items.
+ent-CratePermaEscapeBureaucracy-name = ящик
+ent-CratePermaEscapeBureaucracy-desc = Большой контейнер для вещей.
 
-ent-CratePermaEscapeLights-name = crate
-ent-CratePermaEscapeLights-desc = A large container for items.
+ent-CratePermaEscapeLights-name = ящик
+ent-CratePermaEscapeLights-desc = Большой контейнер для вещей.
 
-ent-CratePermaEscapeMats-name = crate
-ent-CratePermaEscapeMats-desc = A large container for items.
+ent-CratePermaEscapeMats-name = ящик
+ent-CratePermaEscapeMats-desc = Большой контейнер для вещей.
 
-ent-CratePermaEscapeGiftsFromSyndicate-name = crate
-ent-CratePermaEscapeGiftsFromSyndicate-desc = A large container for items.
+ent-CratePermaEscapeGiftsFromSyndicate-name = ящик
+ent-CratePermaEscapeGiftsFromSyndicate-desc = Большой контейнер для вещей.
 
-ent-CratePermaEscapeMerc-name = crate
-ent-CratePermaEscapeMerc-desc = A large container for items.
+ent-CratePermaEscapeMerc-name = ящик
+ent-CratePermaEscapeMerc-desc = Большой контейнер для вещей.
 
-ent-CratePermaEscapeComs-name = crate
-ent-CratePermaEscapeComs-desc = A large container for items.
+ent-CratePermaEscapeComs-name = ящик
+ent-CratePermaEscapeComs-desc = Большой контейнер для вещей.
 
-ent-CratePermaEscapeTowercap-name = crate
-ent-CratePermaEscapeTowercap-desc = A large container for items.
+ent-CratePermaEscapeTowercap-name = ящик
+ent-CratePermaEscapeTowercap-desc = Большой контейнер для вещей.
 

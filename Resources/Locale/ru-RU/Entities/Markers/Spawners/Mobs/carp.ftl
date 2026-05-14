@@ -1,8 +1,8 @@
-ent-SpawnMobCarp-name = Space Carp Spawner
+ent-SpawnMobCarp-name = Спаунер космического карпа
 
-ent-SpawnMobCarpHolo-name = Holocarp Spawner
+ent-SpawnMobCarpHolo-name = Производитель голокарпа
 
-ent-SpawnMobCarpMagic-name = Magicarp Spawner
+ent-SpawnMobCarpMagic-name = Создатель магических карпов
 
-ent-SpawnMobShark-name = Space Sharkminnow Spawner
+ent-SpawnMobShark-name = Создатель космических акул
 

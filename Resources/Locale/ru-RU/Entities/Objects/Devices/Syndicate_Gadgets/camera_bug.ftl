@@ -1,3 +1,3 @@
-ent-CameraBug-name = camera bug
-ent-CameraBug-desc = An illegal syndicate device that allows you to hack into the station's camera network.
+ent-CameraBug-name = ошибка камеры
+ent-CameraBug-desc = Нелегальное синдикатное устройство, позволяющее взломать сеть камер станции.
 

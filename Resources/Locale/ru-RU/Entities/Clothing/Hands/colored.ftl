@@ -1,42 +1,42 @@
-ent-ClothingHandsGlovesColorPurple-name = purple gloves
-ent-ClothingHandsGlovesColorPurple-desc = Regular purple gloves that do not keep you from frying.
+ent-ClothingHandsGlovesColorPurple-name = фиолетовые перчатки
+ent-ClothingHandsGlovesColorPurple-desc = Обычные фиолетовые перчатки, которые не дадут вам поджариться.
 
-ent-ClothingHandsGlovesColorRed-name = red gloves
-ent-ClothingHandsGlovesColorRed-desc = Regular red gloves that do not keep you from frying.
+ent-ClothingHandsGlovesColorRed-name = красные перчатки
+ent-ClothingHandsGlovesColorRed-desc = Обычные красные перчатки, которые не дадут вам поджариться.
 
-ent-ClothingHandsGlovesColorBlue-name = blue gloves
-ent-ClothingHandsGlovesColorBlue-desc = Regular blue gloves that do not keep you from frying.
+ent-ClothingHandsGlovesColorBlue-name = синие перчатки
+ent-ClothingHandsGlovesColorBlue-desc = Обычные синие перчатки, которые не дадут вам поджариться.
 
-ent-ClothingHandsGlovesColorTeal-name = teal gloves
-ent-ClothingHandsGlovesColorTeal-desc = Regular teal gloves that do not keep you from frying.
+ent-ClothingHandsGlovesColorTeal-name = бирюзовые перчатки
+ent-ClothingHandsGlovesColorTeal-desc = Обычные бирюзовые перчатки, которые не защитят вас от жарки.
 
-ent-ClothingHandsGlovesColorBrown-name = brown gloves
-ent-ClothingHandsGlovesColorBrown-desc = Regular brown gloves that do not keep you from frying.
+ent-ClothingHandsGlovesColorBrown-name = коричневые перчатки
+ent-ClothingHandsGlovesColorBrown-desc = Обычные коричневые перчатки, которые не защитят вас от жарки.
 
-ent-ClothingHandsGlovesColorGray-name = grey gloves
-ent-ClothingHandsGlovesColorGray-desc = Regular grey gloves that do not keep you from frying.
+ent-ClothingHandsGlovesColorGray-name = серые перчатки
+ent-ClothingHandsGlovesColorGray-desc = Обычные серые перчатки, которые не дадут вам поджариться.
 
-ent-ClothingHandsGlovesColorGreen-name = green gloves
-ent-ClothingHandsGlovesColorGreen-desc = Regular green gloves that do not keep you from frying.
+ent-ClothingHandsGlovesColorGreen-name = зеленые перчатки
+ent-ClothingHandsGlovesColorGreen-desc = Обычные зеленые перчатки, которые не дадут вам поджариться.
 
-ent-ClothingHandsGlovesColorLightBrown-name = light brown gloves
-ent-ClothingHandsGlovesColorLightBrown-desc = Regular light brown gloves that do not keep you from frying.
+ent-ClothingHandsGlovesColorLightBrown-name = светло-коричневые перчатки
+ent-ClothingHandsGlovesColorLightBrown-desc = Обычные светло-коричневые перчатки, которые не защитят от пожара.
 
-ent-ClothingHandsGlovesColorOrange-name = orange gloves
-ent-ClothingHandsGlovesColorOrange-desc = Regular orange gloves that do not keep you from frying.
+ent-ClothingHandsGlovesColorOrange-name = оранжевые перчатки
+ent-ClothingHandsGlovesColorOrange-desc = Обычные оранжевые перчатки, которые не дадут вам поджариться.
 
-ent-ClothingHandsGlovesColorWhite-name = white gloves
-ent-ClothingHandsGlovesColorWhite-desc = Regular white gloves that do not keep you from frying.
+ent-ClothingHandsGlovesColorWhite-name = белые перчатки
+ent-ClothingHandsGlovesColorWhite-desc = Обычные белые перчатки, которые не защитят вас от жарки.
 
-ent-ClothingHandsGlovesColorBlack-name = black gloves
-ent-ClothingHandsGlovesColorBlack-desc = Regular black gloves that do not keep you from frying.
+ent-ClothingHandsGlovesColorBlack-name = черные перчатки
+ent-ClothingHandsGlovesColorBlack-desc = Обычные черные перчатки, которые не защитят вас от жарки.
 
-ent-ClothingHandsGlovesColorYellow-name = insulated gloves
-ent-ClothingHandsGlovesColorYellow-desc = These gloves will protect the wearer from electric shocks.
+ent-ClothingHandsGlovesColorYellow-name = изолированные перчатки
+ent-ClothingHandsGlovesColorYellow-desc = Эти перчатки защитят пользователя от поражения электрическим током.
 
-ent-ClothingHandsGlovesColorYellowBudget-name = budget insulated gloves
-ent-ClothingHandsGlovesColorYellowBudget-desc = These gloves are cheap knockoffs of the coveted ones - no way this can end badly.
+ent-ClothingHandsGlovesColorYellowBudget-name = бюджетные утепленные перчатки
+ent-ClothingHandsGlovesColorYellowBudget-desc = Эти перчатки — дешевая подделка заветных перчаток, и это никак не может закончиться плохо.
 
-ent-ClothingHandsGlovesConducting-name = insulated gloves
-ent-ClothingHandsGlovesConducting-desc = These gloves will protect the wearer from electric shocks.
+ent-ClothingHandsGlovesConducting-name = изолированные перчатки
+ent-ClothingHandsGlovesConducting-desc = Эти перчатки защитят пользователя от поражения электрическим током.
 

@@ -1,2 +1,2 @@
-ent-AU14SpawnPointOPFORMilitaryDoctor-name = Spawn Point OPFOR Doctor
-ent-AU14SpawnPointOPFORMilitaryDoctor-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointOPFORMilitaryDoctor-name = Точка появления ОПФОР Доктор
+ent-AU14SpawnPointOPFORMilitaryDoctor-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

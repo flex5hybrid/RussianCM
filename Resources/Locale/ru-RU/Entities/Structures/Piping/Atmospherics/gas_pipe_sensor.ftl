@@ -1,3 +1,3 @@
-ent-GasPipeSensor-name = gas pipe sensor
-ent-GasPipeSensor-desc = Reports on the status of the gas in the attached pipe network.
+ent-GasPipeSensor-name = датчик газовой трубы
+ent-GasPipeSensor-desc = Отчеты о состоянии газа в присоединенной трубопроводной сети.
 

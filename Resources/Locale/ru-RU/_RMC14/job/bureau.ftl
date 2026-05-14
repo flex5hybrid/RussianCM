@@ -17,3 +17,9 @@ rmc-job-prefix-bureau-observer = НБР
 rmc-ghost-name-icb = Представитель Межзвёздного Торгового Бюро (Дружественный)
 rmc-job-name-icb = Представитель Межзвёздного Торгового Бюро
 rmc-job-prefix-icb = МТБ
+
+# Missing entries synced from en-US
+
+rmc-job-name-bureau-riot-control-team-leader = Руководитель группы CMB по борьбе с беспорядками
+
+rmc-job-prefix-bureau-riot-control-team-leader = ЦМБ РЦТЛ

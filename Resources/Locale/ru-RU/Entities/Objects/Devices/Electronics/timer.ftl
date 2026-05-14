@@ -1,7 +1,7 @@
-ent-SignalTimerElectronics-name = signal timer electronics
-ent-SignalTimerElectronics-desc = An electronics board used in timer circuitry. Looks like you could use a screwdriver to change the board type.
+ent-SignalTimerElectronics-name = электроника таймера сигнала
+ent-SignalTimerElectronics-desc = Электронная плата, используемая в схеме таймера. Похоже, вы можете использовать отвертку, чтобы изменить тип платы.
 
-ent-ScreenTimerElectronics-name = screen timer electronics
+ent-ScreenTimerElectronics-name = экранный таймер электроника
 
-ent-BrigTimerElectronics-name = brig timer electronics
+ent-BrigTimerElectronics-name = электроника бригового таймера
 

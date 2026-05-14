@@ -1,93 +1,93 @@
-ent-BaseMindRole-name = Mind Role
-ent-BaseMindRole-desc = Mind Role entity
+ent-BaseMindRole-name = Роль разума
+ent-BaseMindRole-desc = Ролевая сущность разума
 
-ent-MindRoleObserver-name = Observer Role
-ent-MindRoleObserver-desc = Mind Role entity
+ent-MindRoleObserver-name = Роль наблюдателя
+ent-MindRoleObserver-desc = Ролевая сущность разума
 
-ent-MindRoleGhostRoleNeutral-name = Ghost Role
-ent-MindRoleGhostRoleNeutral-desc = Mind Role entity
+ent-MindRoleGhostRoleNeutral-name = Роль призрака
+ent-MindRoleGhostRoleNeutral-desc = Ролевая сущность разума
 
-ent-MindRoleGhostRoleFamiliar-name = Ghost Role (Familiar)
-ent-MindRoleGhostRoleFamiliar-desc = Mind Role entity
+ent-MindRoleGhostRoleFamiliar-name = Роль призрака (фамильяр)
+ent-MindRoleGhostRoleFamiliar-desc = Ролевая сущность разума
 
-ent-MindRoleGhostRoleFreeAgent-name = Ghost Role (Free Agent)
-ent-MindRoleGhostRoleFreeAgent-desc = Mind Role entity
+ent-MindRoleGhostRoleFreeAgent-name = Роль призрака (свободный агент)
+ent-MindRoleGhostRoleFreeAgent-desc = Ролевая сущность разума
 
-ent-MindRoleGhostRoleFreeAgentHarmless-name = Ghost Role (Free Agent)
-ent-MindRoleGhostRoleFreeAgentHarmless-desc = Mind Role entity
+ent-MindRoleGhostRoleFreeAgentHarmless-name = Роль призрака (свободный агент)
+ent-MindRoleGhostRoleFreeAgentHarmless-desc = Ролевая сущность разума
 
-ent-MindRoleGhostRoleSilicon-name = Ghost Role (Silicon)
-ent-MindRoleGhostRoleSilicon-desc = Mind Role entity
+ent-MindRoleGhostRoleSilicon-name = Роль призрака (кремний)
+ent-MindRoleGhostRoleSilicon-desc = Ролевая сущность разума
 
-ent-MindRoleGhostRoleSiliconAntagonist-name = Ghost Role (Silicon Antagonist)
-ent-MindRoleGhostRoleSiliconAntagonist-desc = Mind Role entity
+ent-MindRoleGhostRoleSiliconAntagonist-name = Роль призрака (кремниевый антагонист)
+ent-MindRoleGhostRoleSiliconAntagonist-desc = Ролевая сущность разума
 
-ent-MindRoleGhostRoleSoloAntagonist-name = Ghost Role (Solo Antagonist)
-ent-MindRoleGhostRoleSoloAntagonist-desc = Mind Role entity
+ent-MindRoleGhostRoleSoloAntagonist-name = Роль призрака (одиночный антагонист)
+ent-MindRoleGhostRoleSoloAntagonist-desc = Ролевая сущность разума
 
-ent-MindRoleGhostRoleTeamAntagonist-name = Ghost Role (Team Antagonist)
-ent-MindRoleGhostRoleTeamAntagonist-desc = Mind Role entity
+ent-MindRoleGhostRoleTeamAntagonist-name = Роль призрака (антагонист команды)
+ent-MindRoleGhostRoleTeamAntagonist-desc = Ролевая сущность разума
 
-ent-MindRoleGhostRoleTeamAntagonistFlock-name = Ghost Role (Team Antagonist)
-ent-MindRoleGhostRoleTeamAntagonistFlock-desc = Mind Role entity
+ent-MindRoleGhostRoleTeamAntagonistFlock-name = Роль призрака (антагонист команды)
+ent-MindRoleGhostRoleTeamAntagonistFlock-desc = Ролевая сущность разума
 
-ent-MindRoleJob-name = Job Role
-ent-MindRoleJob-desc = Mind Role entity
+ent-MindRoleJob-name = Должность Роль
+ent-MindRoleJob-desc = Ролевая сущность разума
 
-ent-MindRoleSiliconBrain-name = Borg Brain Role
-ent-MindRoleSiliconBrain-desc = Mind Role entity
+ent-MindRoleSiliconBrain-name = Роль мозга борга
+ent-MindRoleSiliconBrain-desc = Ролевая сущность разума
 
-ent-MindRoleSubvertedSilicon-name = Subverted Silicon Role
-ent-MindRoleSubvertedSilicon-desc = Mind Role entity
+ent-MindRoleSubvertedSilicon-name = Извращенная роль кремния
+ent-MindRoleSubvertedSilicon-desc = Ролевая сущность разума
 
-ent-MindRoleDragon-name = Dragon Role
-ent-MindRoleDragon-desc = Mind Role entity
+ent-MindRoleDragon-name = Роль Дракона
+ent-MindRoleDragon-desc = Ролевая сущность разума
 
-ent-MindRoleNinja-name = Space Ninja Role
-ent-MindRoleNinja-desc = Mind Role entity
+ent-MindRoleNinja-name = Роль космического ниндзя
+ent-MindRoleNinja-desc = Ролевая сущность разума
 
-ent-MindRoleParadoxClone-name = Paradox Clone Role
-ent-MindRoleParadoxClone-desc = Mind Role entity
+ent-MindRoleParadoxClone-name = Парадоксальная роль клона
+ent-MindRoleParadoxClone-desc = Ролевая сущность разума
 
-ent-MindRoleNukeops-name = Nukeops Operative Role
-ent-MindRoleNukeops-desc = Mind Role entity
+ent-MindRoleNukeops-name = Оперативная роль Nukeops
+ent-MindRoleNukeops-desc = Ролевая сущность разума
 
-ent-MindRoleNukeopsMedic-name = Nukeops Medic Role
-ent-MindRoleNukeopsMedic-desc = Mind Role entity
+ent-MindRoleNukeopsMedic-name = Роль медика Nukeops
+ent-MindRoleNukeopsMedic-desc = Ролевая сущность разума
 
-ent-MindRoleNukeopsCommander-name = Nukeops Commander Role
-ent-MindRoleNukeopsCommander-desc = Mind Role entity
+ent-MindRoleNukeopsCommander-name = Роль командира Nukeops
+ent-MindRoleNukeopsCommander-desc = Ролевая сущность разума
 
-ent-MindRoleHeadRevolutionary-name = Head Revolutionary Role
-ent-MindRoleHeadRevolutionary-desc = Mind Role entity
+ent-MindRoleHeadRevolutionary-name = Глава революционной роли
+ent-MindRoleHeadRevolutionary-desc = Ролевая сущность разума
 
-ent-MindRoleRevolutionary-name = Revolutionary Role
-ent-MindRoleRevolutionary-desc = Mind Role entity
+ent-MindRoleRevolutionary-name = Революционная роль
+ent-MindRoleRevolutionary-desc = Ролевая сущность разума
 
-ent-MindRoleSurvivor-name = Survivor Role
-ent-MindRoleSurvivor-desc = Mind Role entity
+ent-MindRoleSurvivor-name = Роль выжившего
+ent-MindRoleSurvivor-desc = Ролевая сущность разума
 
-ent-MindRoleThief-name = Thief Role
-ent-MindRoleThief-desc = Mind Role entity
+ent-MindRoleThief-name = Роль вора
+ent-MindRoleThief-desc = Ролевая сущность разума
 
-ent-MindRoleTraitor-name = Traitor Role
-ent-MindRoleTraitor-desc = Mind Role entity
+ent-MindRoleTraitor-name = Роль предателя
+ent-MindRoleTraitor-desc = Ролевая сущность разума
 
-ent-MindRoleTraitorSleeper-name = Sleeper Agent Role
-ent-MindRoleTraitorSleeper-desc = Mind Role entity
+ent-MindRoleTraitorSleeper-name = Роль спящего агента
+ent-MindRoleTraitorSleeper-desc = Ролевая сущность разума
 
-ent-MindRoleTraitorReinforcement-name = Syndicate Reinforcement Role
-ent-MindRoleTraitorReinforcement-desc = Mind Role entity
+ent-MindRoleTraitorReinforcement-name = Роль подкрепления Синдиката
+ent-MindRoleTraitorReinforcement-desc = Ролевая сущность разума
 
-ent-MindRoleWizard-name = Wizard Role
-ent-MindRoleWizard-desc = Mind Role entity
+ent-MindRoleWizard-name = Роль Волшебника
+ent-MindRoleWizard-desc = Ролевая сущность разума
 
-ent-MindRoleInitialInfected-name = Initial Infected Role
-ent-MindRoleInitialInfected-desc = Mind Role entity
+ent-MindRoleInitialInfected-name = Начальная роль зараженного
+ent-MindRoleInitialInfected-desc = Ролевая сущность разума
 
-ent-MindRoleZombie-name = Zombie Role
-ent-MindRoleZombie-desc = Mind Role entity
+ent-MindRoleZombie-name = Роль Зомби
+ent-MindRoleZombie-desc = Ролевая сущность разума
 
-ent-BaseMindRoleAntag-name = Mind Role
-ent-BaseMindRoleAntag-desc = Mind Role entity
+ent-BaseMindRoleAntag-name = Роль разума
+ent-BaseMindRoleAntag-desc = Ролевая сущность разума
 

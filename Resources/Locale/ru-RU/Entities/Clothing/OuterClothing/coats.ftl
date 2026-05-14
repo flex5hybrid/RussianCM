@@ -1,109 +1,109 @@
-ent-ClothingOuterCoatBomber-name = bomber jacket
-ent-ClothingOuterCoatBomber-desc = A thick, well-worn WW2 leather bomber jacket.
+ent-ClothingOuterCoatBomber-name = куртка-бомбер
+ent-ClothingOuterCoatBomber-desc = Толстая, поношенная кожаная куртка-бомбер времен Второй мировой войны.
 
-ent-ClothingOuterCoatDetective-name = detective trenchcoat
-ent-ClothingOuterCoatDetective-desc = An 18th-century multi-purpose trenchcoat. Someone who wears this means serious business.
+ent-ClothingOuterCoatDetective-name = детектив плащ
+ent-ClothingOuterCoatDetective-desc = Универсальный плащ XVIII века. Тот, кто носит это, означает серьезное дело.
 
-ent-ClothingOuterCoatDetectiveLoadoutGrey-name = noir trenchcoat
-ent-ClothingOuterCoatDetectiveLoadoutGrey-desc = Ah, your trusty coat. There's a few tears here and there, giving it a more timely look. Or at least, that's what you told yourself when you found out gettin' it repaired would set you back 200 spesos.
+ent-ClothingOuterCoatDetectiveLoadoutGrey-name = нуар плащ
+ent-ClothingOuterCoatDetectiveLoadoutGrey-desc = Ах, твое верное пальто. Здесь и там есть несколько надрывов, что придает фильму более своевременный вид. По крайней мере, так вы сказали себе, когда узнали, что его ремонт обойдется вам в 200 песо.
 
-ent-ClothingOuterCoatGentle-name = gentle coat
-ent-ClothingOuterCoatGentle-desc = A gentle coat for a gentle man, or woman.
+ent-ClothingOuterCoatGentle-name = нежное пальто
+ent-ClothingOuterCoatGentle-desc = Нежное пальто для нежного мужчины или женщины.
 
-ent-ClothingOuterCoatHoSTrench-name = head of security's armored trenchcoat
-ent-ClothingOuterCoatHoSTrench-desc = A greatcoat enhanced with a special alloy for some extra protection and style for those with a commanding presence.
+ent-ClothingOuterCoatHoSTrench-name = Бронированный плащ начальника службы безопасности
+ent-ClothingOuterCoatHoSTrench-desc = Шинель, усиленная специальным сплавом для дополнительной защиты и стиля для тех, кто обладает властным внешним видом.
 
-ent-ClothingOuterCoatJensen-name = jensen coat
-ent-ClothingOuterCoatJensen-desc = A jensen coat.
+ent-ClothingOuterCoatJensen-name = Дженсен пальто
+ent-ClothingOuterCoatJensen-desc = Дженсеновое пальто.
 
-ent-ClothingOuterCoatTrench-name = trench coat
-ent-ClothingOuterCoatTrench-desc = A comfy trench coat.
+ent-ClothingOuterCoatTrench-name = плащ
+ent-ClothingOuterCoatTrench-desc = Удобный тренч.
 
-ent-ClothingOuterCoatLab-name = lab coat
-ent-ClothingOuterCoatLab-desc = A suit that protects against minor chemical spills.
+ent-ClothingOuterCoatLab-name = лабораторный халат
+ent-ClothingOuterCoatLab-desc = Костюм, защищающий от небольших разливов химических веществ.
 
-ent-ClothingOuterCoatLabOpened-name = lab coat
+ent-ClothingOuterCoatLabOpened-name = лабораторный халат
 
-ent-ClothingOuterCoatLabChem-name = chemist lab coat
-ent-ClothingOuterCoatLabChem-desc = A suit that protects against minor chemical spills. Has an orange stripe on the shoulder.
+ent-ClothingOuterCoatLabChem-name = химик лабораторный халат
+ent-ClothingOuterCoatLabChem-desc = Костюм, защищающий от небольших разливов химических веществ. Имеет оранжевую полосу на плече.
 
-ent-ClothingOuterCoatLabChemOpened-name = chemist lab coat
+ent-ClothingOuterCoatLabChemOpened-name = химик лабораторный халат
 
-ent-ClothingOuterCoatLabViro-name = virologist lab coat
-ent-ClothingOuterCoatLabViro-desc = A suit that protects against bacteria and viruses. Has an green stripe on the shoulder.
+ent-ClothingOuterCoatLabViro-name = лабораторный халат вирусолога
+ent-ClothingOuterCoatLabViro-desc = Костюм, защищающий от бактерий и вирусов. Имеет зеленую полосу на плече.
 
-ent-ClothingOuterCoatLabViroOpened-name = virologist lab coat
+ent-ClothingOuterCoatLabViroOpened-name = лабораторный халат вирусолога
 
-ent-ClothingOuterCoatLabGene-name = geneticist lab coat
-ent-ClothingOuterCoatLabGene-desc = A suit that protects against minor chemical spills. Has an blue stripe on the shoulder.
+ent-ClothingOuterCoatLabGene-name = лабораторный халат генетика
+ent-ClothingOuterCoatLabGene-desc = Костюм, защищающий от небольших разливов химических веществ. Имеет синюю полосу на плече.
 
-ent-ClothingOuterCoatLabGeneOpened-name = geneticist lab coat
+ent-ClothingOuterCoatLabGeneOpened-name = лабораторный халат генетика
 
-ent-ClothingOuterCoatLabCmo-name = chief medical officer's lab coat
-ent-ClothingOuterCoatLabCmo-desc = Custom made blue lab coat for the Chief Medical Officer, offers improved protection against chemical spills and minor cuts.
+ent-ClothingOuterCoatLabCmo-name = лабораторный халат главного врача
+ent-ClothingOuterCoatLabCmo-desc = Синий лабораторный халат, изготовленный по индивидуальному заказу для главного врача, обеспечивает улучшенную защиту от разливов химикатов и мелких порезов.
 
-ent-ClothingOuterCoatLabCmoOpened-name = chief medical officer's lab coat
+ent-ClothingOuterCoatLabCmoOpened-name = лабораторный халат главного врача
 
-ent-ClothingOuterCoatRnd-name = scientist lab coat
-ent-ClothingOuterCoatRnd-desc = A suit that protects against minor chemical spills. Has a purple stripe on the shoulder.
+ent-ClothingOuterCoatRnd-name = ученый лабораторный халат
+ent-ClothingOuterCoatRnd-desc = Костюм, защищающий от небольших разливов химических веществ. Имеет фиолетовую полосу на плече.
 
-ent-ClothingOuterCoatRndOpened-name = scientist lab coat
+ent-ClothingOuterCoatRndOpened-name = ученый лабораторный халат
 
-ent-ClothingOuterCoatRobo-name = roboticist lab coat
-ent-ClothingOuterCoatRobo-desc = More like an eccentric coat than a labcoat. Helps pass off bloodstains as part of the aesthetic. Comes with red shoulder pads.
+ent-ClothingOuterCoatRobo-name = лабораторный халат робототехники
+ent-ClothingOuterCoatRobo-desc = Больше похоже на эксцентричный халат, чем на лабораторный халат. Помогает выдать пятна крови за часть эстетики. В комплекте красные наплечники.
 
-ent-ClothingOuterCoatRoboOpened-name = roboticist lab coat
+ent-ClothingOuterCoatRoboOpened-name = лабораторный халат робототехники
 
-ent-ClothingOuterCoatRD-name = research director lab coat
-ent-ClothingOuterCoatRD-desc = Woven with top of the line technology, this labcoat helps protect against radiation in similar way to the experimental hardsuit.
+ent-ClothingOuterCoatRD-name = лабораторный халат директора по исследованиям
+ent-ClothingOuterCoatRD-desc = Этот лабораторный халат, сотканный по новейшим технологиям, защищает от радиации так же, как экспериментальный костюм.
 
-ent-ClothingOuterCoatRDOpened-name = research director lab coat
+ent-ClothingOuterCoatRDOpened-name = лабораторный халат директора по исследованиям
 
-ent-ClothingOuterCoatPirate-name = pirate garb
-ent-ClothingOuterCoatPirate-desc = Yarr.
+ent-ClothingOuterCoatPirate-name = пиратская одежда
+ent-ClothingOuterCoatPirate-desc = Ярр.
 
-ent-ClothingOuterCoatWarden-name = warden's armored jacket
-ent-ClothingOuterCoatWarden-desc = A sturdy, utilitarian jacket designed to protect a warden from any brig-bound threats.
+ent-ClothingOuterCoatWarden-name = бронекуртка надзирателя
+ent-ClothingOuterCoatWarden-desc = Прочная практичная куртка, предназначенная для защиты надзирателя от любых угроз на бриге.
 
-ent-ClothingOuterDameDane-name = yakuza coat
-ent-ClothingOuterDameDane-desc = Friday...
+ent-ClothingOuterDameDane-name = якудза пальто
+ent-ClothingOuterDameDane-desc = Пятница...
 
-ent-ClothingOuterClownPriest-name = robes of the honkmother
-ent-ClothingOuterClownPriest-desc = Meant for a clown of the cloth.
+ent-ClothingOuterClownPriest-name = мантия почетной матери
+ent-ClothingOuterClownPriest-desc = Предназначен для клоуна из ткани.
 
-ent-ClothingOuterDogi-name = samurai dogi
-ent-ClothingOuterDogi-desc = Dogi is a type of traditional Japanese clothing. The dogi is made of heavy, durable fabric, it is practical in combat and stylish in appearance. It is decorated with intricate patterns and embroidery on the back.
+ent-ClothingOuterDogi-name = самурай доги
+ent-ClothingOuterDogi-desc = Доги — это вид традиционной японской одежды. Доги изготовлен из тяжелой, прочной ткани, практичен в бою и стильно выглядит. Он украшен замысловатым узором и вышивкой на спине.
 
-ent-ClothingOuterCoatParamedicWB-name = paramedic windbreaker
-ent-ClothingOuterCoatParamedicWB-desc = A paramedic's trusty windbreaker, for all the space wind.
+ent-ClothingOuterCoatParamedicWB-name = фельдшер ветровка
+ent-ClothingOuterCoatParamedicWB-desc = Надежная ветровка фельдшера для защиты от космического ветра.
 
-ent-ClothingOuterCoatSyndieCap-name = syndicate's coat
-ent-ClothingOuterCoatSyndieCap-desc = The syndicate's coat is made of durable fabric, with gilded patterns.
+ent-ClothingOuterCoatSyndieCap-name = пальто синдиката
+ent-ClothingOuterCoatSyndieCap-desc = Пальто синдиката изготовлено из прочной ткани, с позолоченными узорами.
 
-ent-ClothingOuterCoatSyndieCapArmored-name = syndicate's armored coat
-ent-ClothingOuterCoatSyndieCapArmored-desc = The syndicate's armored coat is made of durable fabric, with gilded patterns.
+ent-ClothingOuterCoatSyndieCapArmored-name = Бронированный плащ синдиката
+ent-ClothingOuterCoatSyndieCapArmored-desc = Бронекостюм синдиката изготовлен из прочной ткани с позолоченными узорами.
 
-ent-ClothingOuterCoatAMG-name = armored medical gown
-ent-ClothingOuterCoatAMG-desc = The version of the medical gown, with elements of a bulletproof vest, looks strange, but your heart is protected.
+ent-ClothingOuterCoatAMG-name = бронированный медицинский халат
+ent-ClothingOuterCoatAMG-desc = Вариант медицинского халата с элементами бронежилета выглядит странно, но ваше сердце защищено.
 
-ent-ClothingOuterCoatLabSeniorResearcher-name = senior researcher lab coat
-ent-ClothingOuterCoatLabSeniorResearcher-desc = A suit that protects against minor chemical spills. Has a purple collar and wrist trims.
+ent-ClothingOuterCoatLabSeniorResearcher-name = лабораторный халат старшего научного сотрудника
+ent-ClothingOuterCoatLabSeniorResearcher-desc = Костюм, защищающий от небольших разливов химических веществ. Имеет фиолетовый воротник и отделку на запястьях.
 
-ent-ClothingOuterCoatLabSeniorResearcherOpened-name = senior researcher lab coat
+ent-ClothingOuterCoatLabSeniorResearcherOpened-name = лабораторный халат старшего научного сотрудника
 
-ent-ClothingOuterCoatLabSeniorPhysician-name = senior physician lab coat
-ent-ClothingOuterCoatLabSeniorPhysician-desc = A suit that protects against minor chemical spills. Has light blue sleeves and an orange waist trim.
+ent-ClothingOuterCoatLabSeniorPhysician-name = лабораторный халат старшего врача
+ent-ClothingOuterCoatLabSeniorPhysician-desc = Костюм, защищающий от небольших разливов химических веществ. Имеет голубые рукава и оранжевую окантовку на талии.
 
-ent-ClothingOuterCoatLabSeniorPhysicianOpened-name = senior physician lab coat
+ent-ClothingOuterCoatLabSeniorPhysicianOpened-name = лабораторный халат старшего врача
 
-ent-ClothingOuterCoatSpaceAsshole-name = the coat of space asshole
-ent-ClothingOuterCoatSpaceAsshole-desc = And there he was...
+ent-ClothingOuterCoatSpaceAsshole-name = пальто космического придурка
+ent-ClothingOuterCoatSpaceAsshole-desc = И вот он был...
 
-ent-ClothingOuterCoatExpensive-name = expensive coat
-ent-ClothingOuterCoatExpensive-desc = Very fluffy pink coat, made out of very expensive fur (clearly).
+ent-ClothingOuterCoatExpensive-name = дорогое пальто
+ent-ClothingOuterCoatExpensive-desc = Очень пушистая розовая шубка, сделанная из очень дорогого меха (это понятно).
 
-ent-ClothingOuterCoatExpensiveOpened-name = expensive coat
+ent-ClothingOuterCoatExpensiveOpened-name = дорогое пальто
 
-ent-ClothingOuterCoatDetectiveLoadout-name = detective trenchcoat
-ent-ClothingOuterCoatDetectiveLoadout-desc = An 18th-century multi-purpose trenchcoat. Someone who wears this means serious business.
+ent-ClothingOuterCoatDetectiveLoadout-name = детектив плащ
+ent-ClothingOuterCoatDetectiveLoadout-desc = Универсальный плащ XVIII века. Тот, кто носит это, означает серьезное дело.
 

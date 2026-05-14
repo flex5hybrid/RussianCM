@@ -11,3 +11,9 @@ cm-job-name-militarypolice = Военная полиция
 cm-job-description-militarypolice = Обеспечивайте соблюдение Устава морской пехоты. Задерживайте нарушителей. Охраняйте экипаж корабля.
 cm-job-prefix-militarypolice = ВП
 CMJobMilitaryPolice = Военная полиция
+
+# Missing entries synced from en-US
+
+rmc-job-name-honor-guard = Почетный караул
+
+rmc-job-prefix-honor-guard = HG

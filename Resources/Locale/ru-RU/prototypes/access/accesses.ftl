@@ -53,3 +53,7 @@ id-card-access-level-borg = Киборг
 id-card-access-level-basic-silicon = Робот
 
 id-card-access-level-basic-xenoborg = Ксеноборг
+
+# Missing entries synced from en-US
+
+id-card-access-level-morgue = Морг

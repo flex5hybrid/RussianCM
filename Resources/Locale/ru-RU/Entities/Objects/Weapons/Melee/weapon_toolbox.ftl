@@ -1,3 +1,3 @@
-ent-WeaponMeleeToolboxRobust-name = robust toolbox
-ent-WeaponMeleeToolboxRobust-desc = A tider's weapon.
+ent-WeaponMeleeToolboxRobust-name = прочный ящик для инструментов
+ent-WeaponMeleeToolboxRobust-desc = Оружие прилива.
 

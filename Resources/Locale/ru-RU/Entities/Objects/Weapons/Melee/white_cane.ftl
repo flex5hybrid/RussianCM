@@ -1,3 +1,3 @@
-ent-WhiteCane-name = white cane
-ent-WhiteCane-desc = This isn't for you. It's for the people who can't figure out you're blind when you ask if cargo is the bar.
+ent-WhiteCane-name = белая трость
+ent-WhiteCane-desc = Это не для тебя. Это для людей, которые не могут понять, что вы слепы, когда вы спрашиваете, является ли груз баром.
 

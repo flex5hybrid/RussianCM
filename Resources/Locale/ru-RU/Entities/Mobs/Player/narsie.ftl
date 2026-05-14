@@ -1,9 +1,9 @@
-ent-MobNarsieBase-name = Nar'Sie
-ent-MobNarsieBase-desc = Your mind begins to bubble and ooze as it tries to comprehend what it sees.
+ent-MobNarsieBase-name = Нар'Си
+ent-MobNarsieBase-desc = Ваш разум начинает пузыриться и сочиться, пытаясь понять то, что он видит.
 
-ent-MobNarsieSpawn-name = Nar'Sie
-ent-MobNarsieSpawn-desc = Your mind begins to bubble and ooze as it tries to comprehend what it sees.
+ent-MobNarsieSpawn-name = Нар'Си
+ent-MobNarsieSpawn-desc = Ваш разум начинает пузыриться и сочиться, пытаясь понять то, что он видит.
 
-ent-MobNarsie-name = Nar'Sie
-ent-MobNarsie-desc = Your mind begins to bubble and ooze as it tries to comprehend what it sees.
+ent-MobNarsie-name = Нар'Си
+ent-MobNarsie-desc = Ваш разум начинает пузыриться и сочиться, пытаясь понять то, что он видит.
 

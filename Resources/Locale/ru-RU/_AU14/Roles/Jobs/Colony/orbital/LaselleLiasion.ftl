@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianLaselleLiaison-name = Spawn Point Civilian Laselle Liaison
-ent-AU14SpawnPointCivilianLaselleLiaison-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianLaselleLiaison-name = Гражданский представитель Ласелла на точке возрождения
+ent-AU14SpawnPointCivilianLaselleLiaison-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

@@ -1,6 +1,6 @@
-ent-BaseSpeedLoaderPistol-name = speed loader (.35 auto)
+ent-BaseSpeedLoaderPistol-name = скоростной погрузчик (.35 авто)
 
-ent-SpeedLoaderPistol-name = speed loader (.35 auto)
+ent-SpeedLoaderPistol-name = скоростной погрузчик (.35 авто)
 
-ent-SpeedLoaderPistolPractice-name = speed loader (.35 auto practice)
+ent-SpeedLoaderPistolPractice-name = скоростной погрузчик (автоматическая практика .35)
 

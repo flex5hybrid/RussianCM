@@ -1,66 +1,66 @@
-ent-ClothingBeltUtility-name = utility belt
-ent-ClothingBeltUtility-desc = Can hold various things.
+ent-ClothingBeltUtility-name = ремень безопасности
+ent-ClothingBeltUtility-desc = Может хранить разные вещи.
 
-ent-ClothingBeltChiefEngineer-name = chief engineer's toolbelt
-ent-ClothingBeltChiefEngineer-desc = Holds tools, looks snazzy.
+ent-ClothingBeltChiefEngineer-name = пояс с инструментами главного инженера
+ent-ClothingBeltChiefEngineer-desc = Держит инструменты, выглядит шикарно.
 
-ent-ClothingBeltAssault-name = assault belt
-ent-ClothingBeltAssault-desc = A tactical assault belt.
+ent-ClothingBeltAssault-name = штурмовой ремень
+ent-ClothingBeltAssault-desc = Тактический штурмовой пояс.
 
-ent-ClothingBeltJanitor-name = janibelt
-ent-ClothingBeltJanitor-desc = A belt used to hold most janitorial supplies.
+ent-ClothingBeltJanitor-name = Джанибелт
+ent-ClothingBeltJanitor-desc = Ремень, используемый для хранения большинства предметов домашнего обихода.
 
-ent-ClothingBeltMedical-name = medical belt
-ent-ClothingBeltMedical-desc = Can hold various medical equipment.
+ent-ClothingBeltMedical-name = медицинский пояс
+ent-ClothingBeltMedical-desc = Может хранить различное медицинское оборудование.
 
-ent-ClothingBeltMedicalEMT-name = EMT belt
-ent-ClothingBeltMedicalEMT-desc = Perfect for holding various equipment for medical emergencies.
+ent-ClothingBeltMedicalEMT-name = ремень ЕМТ
+ent-ClothingBeltMedicalEMT-desc = Идеально подходит для хранения различного оборудования для оказания неотложной медицинской помощи.
 
-ent-ClothingBeltPlant-name = botanical belt
-ent-ClothingBeltPlant-desc = A belt used to hold most hydroponics supplies. Suprisingly, not green.
+ent-ClothingBeltPlant-name = ботанический пояс
+ent-ClothingBeltPlant-desc = Ремень, используемый для хранения большинства принадлежностей для гидропоники. На удивление, не зеленый.
 
-ent-ClothingBeltChef-name = chef belt
-ent-ClothingBeltChef-desc = A belt used to hold kitchen knives and condiments for quick access.
+ent-ClothingBeltChef-name = пояс шеф-повара
+ent-ClothingBeltChef-desc = Ремень для хранения кухонных ножей и приправ для быстрого доступа.
 
-ent-ClothingBeltSecurity-name = security belt
-ent-ClothingBeltSecurity-desc = Can hold security gear like handcuffs and flashes.
+ent-ClothingBeltSecurity-name = ремень безопасности
+ent-ClothingBeltSecurity-desc = Может держать защитное снаряжение, такое как наручники и вспышки.
 
-ent-ClothingBeltSheath-name = sabre sheath
-ent-ClothingBeltSheath-desc = An ornate sheath designed to hold an officer's blade.
+ent-ClothingBeltSheath-name = ножны для сабли
+ent-ClothingBeltSheath-desc = Изысканные ножны, предназначенные для хранения офицерского клинка.
 
-ent-ClothingBeltBandolier-name = bandolier
-ent-ClothingBeltBandolier-desc = A bandolier for holding shotgun ammunition.
+ent-ClothingBeltBandolier-name = патронташ
+ent-ClothingBeltBandolier-desc = Патронташ для хранения боеприпасов к дробовику.
 
-ent-ClothingBeltChampion-name = championship belt
-ent-ClothingBeltChampion-desc = Proves to the world that you are the strongest!
+ent-ClothingBeltChampion-name = чемпионский пояс
+ent-ClothingBeltChampion-desc = Докажите всему миру, что вы сильнейший!
 
-ent-ClothingBeltHolster-name = shoulder holster
-ent-ClothingBeltHolster-desc = A holster to carry a handgun and ammo. WARNING: Badasses only.
+ent-ClothingBeltHolster-name = плечевая кобура
+ent-ClothingBeltHolster-desc = Кобура для ношения пистолета и патронов. ВНИМАНИЕ: только задиры.
 
-ent-ClothingBeltSyndieHolster-name = syndicate shoulder holster
-ent-ClothingBeltSyndieHolster-desc = A deep shoulder holster capable of holding many types of ballistics.
+ent-ClothingBeltSyndieHolster-name = наплечная кобура Syndicate
+ent-ClothingBeltSyndieHolster-desc = Глубокая наплечная кобура, способная вместить множество типов баллистических снарядов.
 
-ent-ClothingBeltSecurityWebbing-name = security carrier
-ent-ClothingBeltSecurityWebbing-desc = Unique and versatile chest rig, can hold security gear.
+ent-ClothingBeltSecurityWebbing-name = перевозчик безопасности
+ent-ClothingBeltSecurityWebbing-desc = Уникальное и универсальное нагрудное приспособление, в котором можно хранить защитное снаряжение.
 
-ent-ClothingBeltMercWebbing-name = mercenary webbing
-ent-ClothingBeltMercWebbing-desc = Ideal for storing everything from ammo to weapons and combat essentials.
+ent-ClothingBeltMercWebbing-name = паутина наемников
+ent-ClothingBeltMercWebbing-desc = Идеально подходит для хранения всего: от боеприпасов до оружия и боевых предметов.
 
-ent-ClothingBeltSalvageWebbing-name = salvage rig
-ent-ClothingBeltSalvageWebbing-desc = Universal unloading system for work in space.
+ent-ClothingBeltSalvageWebbing-name = спасательная установка
+ent-ClothingBeltSalvageWebbing-desc = Универсальная система разгрузки для работы в космосе.
 
-ent-ClothingBeltMilitaryWebbing-name = chest rig
-ent-ClothingBeltMilitaryWebbing-desc = A set of tactical webbing worn by Syndicate boarding parties.
+ent-ClothingBeltMilitaryWebbing-name = грудная установка
+ent-ClothingBeltMilitaryWebbing-desc = Комплект тактических лямок, которые носят абордажные отряды Синдиката.
 
-ent-ClothingBeltMilitaryWebbingMed-name = medical chest rig
-ent-ClothingBeltMilitaryWebbingMed-desc = A set of tactical webbing worn by Gorlex Marauder medic operatives.
+ent-ClothingBeltMilitaryWebbingMed-name = медицинская грудная установка
+ent-ClothingBeltMilitaryWebbingMed-desc = Комплект тактических ремней, которые носят медики «Горлекс Мародер».
 
-ent-ClothingBeltSuspendersRed-name = red suspenders
-ent-ClothingBeltSuspendersRed-desc = For holding your pants up.
+ent-ClothingBeltSuspendersRed-name = красные подтяжки
+ent-ClothingBeltSuspendersRed-desc = За то, что держал штаны.
 
-ent-ClothingBeltSuspendersBlack-name = black suspenders
-ent-ClothingBeltSuspendersBlack-desc = For holding your pants up.
+ent-ClothingBeltSuspendersBlack-name = черные подтяжки
+ent-ClothingBeltSuspendersBlack-desc = За то, что держал штаны.
 
-ent-ClothingBeltWand-name = wand belt
-ent-ClothingBeltWand-desc = A belt designed to hold various rods of power. A veritable fanny pack of exotic magic.
+ent-ClothingBeltWand-name = палочка пояс
+ent-ClothingBeltWand-desc = Пояс, предназначенный для хранения различных силовых жезлов. Настоящая поясная сумка, наполненная экзотическим волшебством.
 

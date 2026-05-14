@@ -1,79 +1,79 @@
-ent-FoodPizzaMargherita-name = margherita pizza
-ent-FoodPizzaMargherita-desc = The flavor of Italy.
+ent-FoodPizzaMargherita-name = пицца Маргарита
+ent-FoodPizzaMargherita-desc = Аромат Италии.
 
-ent-FoodPizzaMargheritaSlice-name = slice of margherita pizza
-ent-FoodPizzaMargheritaSlice-desc = A slice of Italy.
+ent-FoodPizzaMargheritaSlice-name = кусок пиццы Маргарита
+ent-FoodPizzaMargheritaSlice-desc = Кусочек Италии.
 
-ent-FoodPizzaMeat-name = meat pizza
-ent-FoodPizzaMeat-desc = Greasy pizza with delicious meat.
+ent-FoodPizzaMeat-name = мясная пицца
+ent-FoodPizzaMeat-desc = Жирная пицца с вкусным мясом.
 
-ent-FoodPizzaMeatSlice-name = slice of meat pizza
-ent-FoodPizzaMeatSlice-desc = A nutritious slice of meatpizza.
+ent-FoodPizzaMeatSlice-name = кусок мясной пиццы
+ent-FoodPizzaMeatSlice-desc = Питательный кусочек мясной пиццы.
 
-ent-FoodPizzaMushroom-name = mushroom pizza
-ent-FoodPizzaMushroom-desc = Very special pizza.
+ent-FoodPizzaMushroom-name = пицца с грибами
+ent-FoodPizzaMushroom-desc = Очень особенная пицца.
 
-ent-FoodPizzaMushroomSlice-name = slice of mushroom pizza
-ent-FoodPizzaMushroomSlice-desc = Maybe it is the last slice of pizza in your life.
+ent-FoodPizzaMushroomSlice-name = кусок пиццы с грибами
+ent-FoodPizzaMushroomSlice-desc = Возможно, это последний кусок пиццы в вашей жизни.
 
-ent-FoodPizzaVegetable-name = vegetable pizza
-ent-FoodPizzaVegetable-desc = The station's vegetarians will thank you for making this.
+ent-FoodPizzaVegetable-name = овощная пицца
+ent-FoodPizzaVegetable-desc = Вегетарианцы станции будут вам благодарны за это.
 
-ent-FoodPizzaVegetableSlice-name = slice of vegetable pizza
-ent-FoodPizzaVegetableSlice-desc = A slice of this is enough to satisfy even the pickiest station personnel.
+ent-FoodPizzaVegetableSlice-name = кусочек овощной пиццы
+ent-FoodPizzaVegetableSlice-desc = Частички этого достаточно, чтобы удовлетворить даже самого привередливого персонала станции.
 
-ent-FoodPizzaDonkpocket-name = donk-pocket pizza
-ent-FoodPizzaDonkpocket-desc = Who thought this would be a good idea?
+ent-FoodPizzaDonkpocket-name = пицца в кармане
+ent-FoodPizzaDonkpocket-desc = Кто подумал, что это будет хорошей идеей?
 
-ent-FoodPizzaDonkpocketSlice-name = slice of donk-pocket pizza
-ent-FoodPizzaDonkpocketSlice-desc = Smells like donk-pocket.
+ent-FoodPizzaDonkpocketSlice-name = кусок пиццы «донк-карман»
+ent-FoodPizzaDonkpocketSlice-desc = Пахнет донк-карманом.
 
-ent-FoodPizzaDank-name = dank pizza
-ent-FoodPizzaDank-desc = The hippie's pizza of choice.
+ent-FoodPizzaDank-name = сырая пицца
+ent-FoodPizzaDank-desc = Любимая пицца хиппи.
 
-ent-FoodPizzaDankSlice-name = slice of dank pizza
-ent-FoodPizzaDankSlice-desc = So good, man...
+ent-FoodPizzaDankSlice-name = кусок сырой пиццы
+ent-FoodPizzaDankSlice-desc = Так хорошо, чувак...
 
-ent-FoodPizzaSassysage-name = sassysage pizza
-ent-FoodPizzaSassysage-desc = You can really smell the sassiness.
+ent-FoodPizzaSassysage-name = нахальная пицца
+ent-FoodPizzaSassysage-desc = Вы действительно можете почувствовать запах дерзости.
 
-ent-FoodPizzaSassysageSlice-name = slice of sassysage pizza
-ent-FoodPizzaSassysageSlice-desc = Deliciously sassy.
+ent-FoodPizzaSassysageSlice-name = кусок пиццы сасисаж
+ent-FoodPizzaSassysageSlice-desc = Восхитительно дерзко.
 
-ent-FoodPizzaPineapple-name = Hawaiian pizza
-ent-FoodPizzaPineapple-desc = Makes people burst into tears. Tears of joy or sadness depends on the person's fondness for pineapple.
+ent-FoodPizzaPineapple-name = Гавайская пицца
+ent-FoodPizzaPineapple-desc = Заставляет людей плакать. Слезы радости или печали зависят от любви человека к ананасу.
 
-ent-FoodPizzaPineappleSlice-name = slice of Hawaiian pizza
-ent-FoodPizzaPineappleSlice-desc = A slice of joy/sin.
+ent-FoodPizzaPineappleSlice-name = кусок гавайской пиццы
+ent-FoodPizzaPineappleSlice-desc = Кусочек радости/греха.
 
-ent-FoodPizzaArnold-name = Arnold's pizza
-ent-FoodPizzaArnold-desc = Hello, you've reached Arnold's pizza shop. I'm not here now, I'm out killing pepperoni.
+ent-FoodPizzaArnold-name = пицца Арнольда
+ent-FoodPizzaArnold-desc = Здравствуйте, вы попали в пиццерию Арнольда. Меня сейчас здесь нет, я убиваю пепперони.
 
-ent-FoodPizzaArnoldSlice-name = slice of Arnold's pizza
-ent-FoodPizzaArnoldSlice-desc = I come over, maybe I give you a pizza, maybe I break off your arm.
+ent-FoodPizzaArnoldSlice-name = кусок пиццы Арнольда
+ent-FoodPizzaArnoldSlice-desc = Я приду, может, дам тебе пиццу, может, сломаю тебе руку.
 
-ent-FoodPizzaMoldySlice-name = slice of moldy pizza
-ent-FoodPizzaMoldySlice-desc = Once a perfectly good slice of pizza pie, but now it lies here, rancid and bursting with spores.
+ent-FoodPizzaMoldySlice-name = кусок заплесневелой пиццы
+ent-FoodPizzaMoldySlice-desc = Когда-то это был отличный кусок пирога-пиццы, но теперь он лежит здесь, прогорклый и лопнувший спорами.
 
-ent-FoodPizzaUranium-name = spicy rock pizza
-ent-FoodPizzaUranium-desc = Spicy pizza covered in peppers and uranium.
+ent-FoodPizzaUranium-name = острая рок-пицца
+ent-FoodPizzaUranium-desc = Острая пицца, покрытая перцем и ураном.
 
-ent-FoodPizzaUraniumSlice-name = slice of spicy rock pizza
-ent-FoodPizzaUraniumSlice-desc = A glowing slice of spicy rock pizza.
+ent-FoodPizzaUraniumSlice-name = кусочек острой рок-пиццы
+ent-FoodPizzaUraniumSlice-desc = Сияющий кусочек пряной рок-пиццы.
 
-ent-FoodPizzaCotton-name = cotton pizza
-ent-FoodPizzaCotton-desc = Flat fabric cotton dough with cotton topping. Incredible.
+ent-FoodPizzaCotton-name = хлопковая пицца
+ent-FoodPizzaCotton-desc = Плоское тканевое хлопковое тесто с хлопковой начинкой. Невероятный.
 
-ent-FoodPizzaCottonSlice-name = slice of cotton pizza
-ent-FoodPizzaCottonSlice-desc = A slice of cotton pizza. Cotton included.
+ent-FoodPizzaCottonSlice-name = кусок хлопковой пиццы
+ent-FoodPizzaCottonSlice-desc = Кусок хлопковой пиццы. Хлопок в комплекте.
 
-ent-FoodPizzaWorldpeas-name = world peazza
-ent-FoodPizzaWorldpeas-desc = Modern diplomacy in the shape of a disc.
+ent-FoodPizzaWorldpeas-name = Мировая площадь
+ent-FoodPizzaWorldpeas-desc = Современная дипломатия в форме диска.
 
-ent-FoodPizzaWorldpeasSlice-name = slice of world peazza
-ent-FoodPizzaWorldpeasSlice-desc = Dividing the world up is a small price to pay for harmony.
+ent-FoodPizzaWorldpeasSlice-name = кусочек мировой пиццы
+ent-FoodPizzaWorldpeasSlice-desc = Разделение мира — небольшая цена за гармонию.
 
-ent-FoodPizzaBase-name = item
+ent-FoodPizzaBase-name = элемент
 
-ent-FoodPizzaSliceBase-name = item
+ent-FoodPizzaSliceBase-name = элемент
 

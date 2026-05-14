@@ -1,5 +1,5 @@
 marking-UndergarmentTopTanktop = Майка
-marking-UndergarmentTopTanktop-tanktop = Tanktop
+marking-UndergarmentTopTanktop-tanktop = Майка
 marking-UndergarmentTopBinder = Бандаж
 marking-UndergarmentTopBinder-binder = Бандаж
 marking-UndergarmentTopBra = Классический бюстгальтер

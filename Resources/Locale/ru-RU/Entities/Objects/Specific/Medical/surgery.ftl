@@ -1,38 +1,38 @@
-ent-Cautery-name = cautery
-ent-Cautery-desc = A surgical tool used to cauterize open wounds.
+ent-Cautery-name = прижигание
+ent-Cautery-desc = Хирургический инструмент, используемый для прижигания открытых ран.
 
-ent-Drill-name = drill
-ent-Drill-desc = A surgical drill for making holes into hard material.
+ent-Drill-name = дрель
+ent-Drill-desc = Хирургическая дрель для проделывания отверстий в твердых материалах.
 
-ent-Scalpel-name = scalpel
-ent-Scalpel-desc = A surgical tool used to make incisions into flesh.
+ent-Scalpel-name = скальпель
+ent-Scalpel-desc = Хирургический инструмент, используемый для разрезов плоти.
 
-ent-ScalpelShiv-name = shiv
-ent-ScalpelShiv-desc = A pointy piece of glass, abraded to an edge and wrapped in tape for a handle.
+ent-ScalpelShiv-name = заточка
+ent-ScalpelShiv-desc = Заостренный кусок стекла, отшлифованный по краю и обернутый скотчем вместо ручки.
 
-ent-ScalpelAdvanced-name = advanced scalpel
-ent-ScalpelAdvanced-desc = Made of more expensive materials, sharper and generally more reliable.
+ent-ScalpelAdvanced-name = усовершенствованный скальпель
+ent-ScalpelAdvanced-desc = Сделан из более дорогих материалов, острее и в целом надежнее.
 
-ent-ScalpelLaser-name = laser scalpel
-ent-ScalpelLaser-desc = A scalpel which uses a directed laser to slice instead of a blade, for more precise surgery while also cauterizing as it cuts.
+ent-ScalpelLaser-name = лазерный скальпель
+ent-ScalpelLaser-desc = Скальпель, в котором для разрезания используется направленный лазер вместо лезвия, для более точной операции, а также прижигание во время разреза.
 
-ent-Retractor-name = retractor
-ent-Retractor-desc = A surgical tool used to hold open incisions.
+ent-Retractor-name = ретрактор
+ent-Retractor-desc = Хирургический инструмент, используемый для удержания открытых разрезов.
 
-ent-Hemostat-name = hemostat
-ent-Hemostat-desc = A surgical tool used to compress blood vessels to prevent bleeding.
+ent-Hemostat-name = кровоостанавливающее средство
+ent-Hemostat-desc = Хирургический инструмент, используемый для сжатия кровеносных сосудов с целью предотвращения кровотечения.
 
-ent-Saw-name = metal saw
-ent-Saw-desc = For cutting wood and other objects to pieces. Or sawing bones, in case of emergency.
+ent-Saw-name = пила по металлу
+ent-Saw-desc = Для резки дерева и других предметов на куски. Или перепиливание костей, в случае крайней необходимости.
 
-ent-SawImprov-name = choppa
-ent-SawImprov-desc = A wicked serrated blade made of whatever nasty sharp things you could find.
+ent-SawImprov-name = чоппа
+ent-SawImprov-desc = Зловещее зазубренное лезвие, сделанное из любых острых предметов, которые только можно найти.
 
-ent-SawElectric-name = circular saw
-ent-SawElectric-desc = For heavy duty cutting.
+ent-SawElectric-name = циркулярная пила
+ent-SawElectric-desc = Для резки в тяжелых условиях.
 
-ent-SawAdvanced-name = advanced circular saw
-ent-SawAdvanced-desc = Interdyne's state-of-the-art surgical saw. Guaranteed to stay spotless and sterile, no matter how messy the job.
+ent-SawAdvanced-name = усовершенствованная циркулярная пила
+ent-SawAdvanced-desc = Современная хирургическая пила Interdyne. Гарантия чистоты и стерильности, какой бы грязной ни была работа.
 
-ent-BaseToolSurgery-name = item
+ent-BaseToolSurgery-name = элемент
 

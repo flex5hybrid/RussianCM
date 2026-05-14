@@ -1,6 +1,6 @@
-ent-ParadoxCloneLivingObjective-name = Escape to centcomm alive and unrestrained.
-ent-ParadoxCloneLivingObjective-desc = Return to your old life.
+ent-ParadoxCloneLivingObjective-name = Сбегите в Центкомм живым и безудержным.
+ent-ParadoxCloneLivingObjective-desc = Вернитесь к своей старой жизни.
 
-ent-ParadoxCloneKillObjective-name = Fix the space-time paradox.
-ent-ParadoxCloneKillObjective-desc = Replace your original to fix the paradox. Remember, your mission is to blend in, do not kill anyone else unless you have to!
+ent-ParadoxCloneKillObjective-name = Исправьте парадокс пространства-времени.
+ent-ParadoxCloneKillObjective-desc = Замените оригинал, чтобы исправить парадокс. Помните, ваша миссия — сливаться с толпой, не убивайте никого, кроме случаев крайней необходимости!
 

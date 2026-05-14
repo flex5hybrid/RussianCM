@@ -1,130 +1,130 @@
-ent-CommandVisitorSpawner-name = command visitor spawner
+ent-CommandVisitorSpawner-name = спаунер командных посетителей
 
-ent-VisitorCaptainSpawner-name = visiting captain spawner
+ent-VisitorCaptainSpawner-name = посещение капитана-спаунера
 
-ent-VisitorCESpawner-name = visiting chief engineer spawner
+ent-VisitorCESpawner-name = посещение главного инженера-спаунера
 
-ent-VisitorCMOSpawner-name = visiting chief medical officer spawner
+ent-VisitorCMOSpawner-name = посещение главного врача, создателя
 
-ent-VisitorHOPSpawner-name = visiting head of personnel spawner
+ent-VisitorHOPSpawner-name = посещение руководителя спавнера кадров
 
-ent-VisitorHOSSpawner-name = visiting head of security spawner
+ent-VisitorHOSSpawner-name = посещение главы службы безопасности
 
-ent-VisitorRDSpawner-name = visiting research director spawner
+ent-VisitorRDSpawner-name = визит директора по исследованиям, создателя
 
-ent-VisitorQMSpawner-name = visiting quartermaster spawner
+ent-VisitorQMSpawner-name = посещение интендантского спавнера
 
-ent-SecurityVisitorSpawner-name = security visitor spawner
+ent-SecurityVisitorSpawner-name = генератор посетителей службы безопасности
 
-ent-VisitorSecurityCadetSpawner-name = visiting security cadet spawner
+ent-VisitorSecurityCadetSpawner-name = посещение спавнера курсантов службы безопасности
 
-ent-VisitorSecurityOfficerSpawner-name = visiting security officer spawner
+ent-VisitorSecurityOfficerSpawner-name = спавнер посещения офицера безопасности
 
-ent-VisitorDetective-name = visiting detective spawner
+ent-VisitorDetective-name = посещающий спавнер детективов
 
-ent-VisitorWarden-name = visiting warden spawner
+ent-VisitorWarden-name = посещение спавнера стражей
 
-ent-VisitingCargonianSpawner-name = cargonian visitor spawner
+ent-VisitingCargonianSpawner-name = спавнер каргонийских посетителей
 
-ent-VisitorCargoTechnicianSpawner-name = visiting cargo technician spawner
+ent-VisitorCargoTechnicianSpawner-name = посещение спавнера грузовых техников
 
-ent-VisitorSalvageSpecialistSpawner-name = visiting salvage specialist spawner
+ent-VisitorSalvageSpecialistSpawner-name = посещение спавнера специалиста по спасению
 
-ent-EngineeringVisitorSpawner-name = engineering visitor spawner
+ent-EngineeringVisitorSpawner-name = инженерный спаунер посетителей
 
-ent-VisitorAtmosTechSpawner-name = visiting atmospheric technician spawner
+ent-VisitorAtmosTechSpawner-name = посещение спавнера атмосферных техников
 
-ent-VisitorTechnicalAssistantSpawner-name = visiting technical assistant spawner
+ent-VisitorTechnicalAssistantSpawner-name = посещение технического помощника спавнера
 
-ent-VisitorEngineerSpawner-name = visiting engineer spawner
+ent-VisitorEngineerSpawner-name = посещение инженера-спаунера
 
-ent-VisitingMedicalSpawner-name = medical visitor spawner
+ent-VisitingMedicalSpawner-name = спаунер медицинских посетителей
 
-ent-VisitorChemistSpawner-name = visiting chemist spawner
+ent-VisitorChemistSpawner-name = посещение химика-спауна
 
-ent-VisitorMedicalInternSpawner-name = visiting medical intern spawner
+ent-VisitorMedicalInternSpawner-name = посещение врача-интерна, создателя
 
-ent-VisitorMedicalDoctorSpawner-name = visiting medical doctor spawner
+ent-VisitorMedicalDoctorSpawner-name = спавнер посещения врача
 
-ent-VisitorParamedicSpawner-name = visiting paramedic spawner
+ent-VisitorParamedicSpawner-name = посещение спавнера фельдшера
 
-ent-VisitorVirologistSpawner-name = visiting virologist spawner
+ent-VisitorVirologistSpawner-name = визит к спавнеру вирусолога
 
-ent-VisitorGeneticistSpawner-name = visiting geneticist spawner
+ent-VisitorGeneticistSpawner-name = визит к генетику-производителю
 
-ent-VisitorPsychologistSpawner-name = visiting psychologist spawner
+ent-VisitorPsychologistSpawner-name = приглашенный психолог, создатель
 
-ent-VisitorDentistSpawner-name = visiting dentist spawner
+ent-VisitorDentistSpawner-name = посещение стоматолога, создателя
 
-ent-VisitingScientistSpawner-name = scientific visitor spawner
+ent-VisitingScientistSpawner-name = создатель научных посетителей
 
-ent-VisitorScientistSpawner-name = visiting scientist spawner
+ent-VisitorScientistSpawner-name = спаунер посещающего учёного
 
-ent-VisitorResearchAssistantSpawner-name = visiting research assistant spawner
+ent-VisitorResearchAssistantSpawner-name = приглашенный научный сотрудник-производитель
 
-ent-VisitingCivilianSpawner-name = civilian visitor spawner
+ent-VisitingCivilianSpawner-name = генератор гражданских посетителей
 
-ent-VisitorBartenderSpawner-name = visiting bartender spawner
+ent-VisitorBartenderSpawner-name = посещение бармена-спауна
 
-ent-VisitorBotanistSpawner-name = visiting botanist spawner
+ent-VisitorBotanistSpawner-name = посещение спавнера-ботаника
 
-ent-VisitorBoxerSpawner-name = visiting boxer spawner
+ent-VisitorBoxerSpawner-name = посещение спавнера боксеров
 
-ent-VisitorChaplainSpawner-name = visiting chaplain spawner
+ent-VisitorChaplainSpawner-name = посещение спавнера капелланов
 
-ent-VisitorChefSpawner-name = visiting chef spawner
+ent-VisitorChefSpawner-name = посещение спавнера шеф-повара
 
-ent-VisitorClownSpawner-name = visiting clown spawner
+ent-VisitorClownSpawner-name = посещение спавнера клоунов
 
-ent-VisitorJanitorSpawner-name = visiting janitor spawner
+ent-VisitorJanitorSpawner-name = посещение спавнера дворников
 
-ent-VisitorLawyerSpawner-name = visiting lawyer spawner
+ent-VisitorLawyerSpawner-name = посещение спавнера юристов
 
-ent-VisitorLawyerCentcomSpawner-name = visiting centcom lawyer spawner
+ent-VisitorLawyerCentcomSpawner-name = посещение спавнера юристов Centcom
 
-ent-VisitorLibrarianSpawner-name = visiting librarian spawner
+ent-VisitorLibrarianSpawner-name = посещение спавнера библиотекаря
 
-ent-VisitorMusicianSpawner-name = visiting musician spawner
+ent-VisitorMusicianSpawner-name = посещение спавнера музыкантов
 
-ent-VisitorMusicianFancySpawner-name = visiting fancy musician spawner
+ent-VisitorMusicianFancySpawner-name = посещение модного спавнера музыкантов
 
-ent-VisitorMusicianRelaxedSpawner-name = visiting relaxed musician spawner
+ent-VisitorMusicianRelaxedSpawner-name = посещение спавнера расслабленных музыкантов
 
-ent-VisitorMimeSpawner-name = visiting mime spawner
+ent-VisitorMimeSpawner-name = посещение спавнера мимов
 
-ent-VisitorReporterSpawner-name = visiting reporter spawner
+ent-VisitorReporterSpawner-name = спавнер приглашенного репортера
 
-ent-VisitorServiceWorkerSpawner-name = visiting service worker spawner
+ent-VisitorServiceWorkerSpawner-name = спавнер выездного сервисного работника
 
-ent-VisitorZookeeperSpawner-name = visiting zookeeper spawner
+ent-VisitorZookeeperSpawner-name = посещение спавнера Zookeeper
 
-ent-ChallengeVictimSpawner-name = disaster victim spawner
+ent-ChallengeVictimSpawner-name = генератор жертв катастрофы
 
-ent-ChallengeCargoTechnicianSpawner-name = challenge cargo technician spawner
+ent-ChallengeCargoTechnicianSpawner-name = вызов специалиста по грузоперевозкам
 
-ent-NTVisitorSpawner-name = NanoTrasen visitor spawner
+ent-NTVisitorSpawner-name = Создатель посетителей NanoTrasen
 
-ent-NTVisitorSpawner50-name = NanoTrasen visitor spawner
+ent-NTVisitorSpawner50-name = Создатель посетителей NanoTrasen
 
-ent-NTVisitorSpawner33-name = NanoTrasen visitor spawner
+ent-NTVisitorSpawner33-name = Создатель посетителей NanoTrasen
 
-ent-NTVisitorSpawner25-name = NanoTrasen visitor spawner
+ent-NTVisitorSpawner25-name = Создатель посетителей NanoTrasen
 
-ent-NTVisitorSpawner20-name = NanoTrasen visitor spawner
+ent-NTVisitorSpawner20-name = Создатель посетителей NanoTrasen
 
-ent-NTVisitorSpawner10-name = NanoTrasen visitor spawner
+ent-NTVisitorSpawner10-name = Создатель посетителей NanoTrasen
 
-ent-SyndieSoldierTeamLeaderSpawner-name = syndicate team leader spawner
+ent-SyndieSoldierTeamLeaderSpawner-name = создатель лидера команды синдиката
 
-ent-SyndieSoldierSpawner-name = syndicate soldier spawner
+ent-SyndieSoldierSpawner-name = спаунер солдат синдиката
 
-ent-SyndieVisitorSpawner-name = syndie disaster victim spawner
+ent-SyndieVisitorSpawner-name = Синди, создатель жертв катастрофы
 
-ent-PirateScoonerSpawner-name = pirate crewman spawner
+ent-PirateScoonerSpawner-name = спаунер пиратского экипажа
 
-ent-PirateCaptainScoonerSpawner-name = pirate captain spawner
+ent-PirateCaptainScoonerSpawner-name = спаунер капитана пиратов
 
-ent-VisitorBlackmarketeerSpawner-name = Blackmarketeer spawner
+ent-VisitorBlackmarketeerSpawner-name = Создатель черного рынка
 
-ent-CossackSpawner-name = cossack spawner
+ent-CossackSpawner-name = казачий спаунер
 

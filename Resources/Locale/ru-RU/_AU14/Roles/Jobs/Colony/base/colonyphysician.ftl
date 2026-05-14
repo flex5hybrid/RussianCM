@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianPhysician-name = Spawn Point Civilian Physician
-ent-AU14SpawnPointCivilianPhysician-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianPhysician-name = Гражданский врач точки возрождения
+ent-AU14SpawnPointCivilianPhysician-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

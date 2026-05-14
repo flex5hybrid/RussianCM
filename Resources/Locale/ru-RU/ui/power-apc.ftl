@@ -16,3 +16,7 @@ apc-menu-power-state-label-tripped = ПЕРЕГРУЗКА
 
 apc-menu-flavor-left = Обратитесь к инженеру за помощью.
 apc-menu-flavor-right = v1.2
+
+# Missing entries synced from en-US
+
+apc-menu-breaker-button = Переключать

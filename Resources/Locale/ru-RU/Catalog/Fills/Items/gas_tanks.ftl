@@ -1,35 +1,35 @@
-ent-NitrogenTankFilled-name = nitrogen tank
-ent-NitrogenTankFilled-desc = A standard cylindrical gas tank for nitrogen. It can hold 5 L of gas.
+ent-NitrogenTankFilled-name = азотный бак
+ent-NitrogenTankFilled-desc = Стандартный цилиндрический бензобак для азота. Он может вместить 5 л газа.
 
-ent-NitrousOxideTankFilled-name = nitrous oxide tank
-ent-NitrousOxideTankFilled-desc = Contains a mixture of air and nitrous oxide. Make sure you don't refill it with pure N2O. It can hold 5 L of gas.
+ent-NitrousOxideTankFilled-name = бак закиси азота
+ent-NitrousOxideTankFilled-desc = Содержит смесь воздуха и закиси азота. Убедитесь, что вы не заливаете в него чистый N2O. Он может вместить 5 л газа.
 
-ent-PlasmaTankFilled-name = plasma tank
-ent-PlasmaTankFilled-desc = Contains dangerous plasma. Do not inhale. Extremely flammable. It can hold 5 L of gas.
+ent-PlasmaTankFilled-name = плазменный танк
+ent-PlasmaTankFilled-desc = Содержит опасную плазму. Не вдыхайте. Чрезвычайно легковоспламеняющийся. Он может вместить 5 л газа.
 
-ent-OxygenTankFilled-name = oxygen tank
-ent-OxygenTankFilled-desc = A standard cylindrical gas tank for oxygen. It can hold 5 L of gas.
+ent-OxygenTankFilled-name = кислородный баллон
+ent-OxygenTankFilled-desc = Стандартный цилиндрический бензобак для кислорода. Он может вместить 5 л газа.
 
-ent-EmergencyOxygenTankFilled-name = emergency oxygen tank
-ent-EmergencyOxygenTankFilled-desc = An easily portable tank for emergencies. Contains very little oxygen, rated for survival use only. It can hold 0.66 L of gas.
+ent-EmergencyOxygenTankFilled-name = аварийный кислородный баллон
+ent-EmergencyOxygenTankFilled-desc = Легко переносимый резервуар на случай чрезвычайных ситуаций. Содержит очень мало кислорода и предназначен только для выживания. Он вмещает 0,66 л газа.
 
-ent-EmergencyNitrogenTankFilled-name = emergency nitrogen tank
-ent-EmergencyNitrogenTankFilled-desc = An easily portable tank for emergencies. Contains very little nitrogen, rated for survival use only. It can hold 0.66 L of gas.
+ent-EmergencyNitrogenTankFilled-name = аварийный резервуар с азотом
+ent-EmergencyNitrogenTankFilled-desc = Легко переносимый резервуар на случай чрезвычайных ситуаций. Содержит очень мало азота и предназначен только для выживания. Он вмещает 0,66 л газа.
 
-ent-ExtendedEmergencyOxygenTankFilled-name = extended-capacity emergency oxygen tank
-ent-ExtendedEmergencyOxygenTankFilled-desc = An emergency tank with extended capacity. Technically rated for prolonged use. It can hold 1.5 L of gas.
+ent-ExtendedEmergencyOxygenTankFilled-name = аварийный кислородный баллон увеличенной вместимости
+ent-ExtendedEmergencyOxygenTankFilled-desc = Аварийный бак увеличенной вместимости. Технически рассчитан на длительное использование. Он вмещает 1,5 л газа.
 
-ent-ExtendedEmergencyNitrogenTankFilled-name = extended-capacity emergency nitrogen tank
-ent-ExtendedEmergencyNitrogenTankFilled-desc = An emergency tank with extended capacity. Technically rated for prolonged use. It can hold 1.5 L of gas.
+ent-ExtendedEmergencyNitrogenTankFilled-name = аварийный азотный бак увеличенной вместимости
+ent-ExtendedEmergencyNitrogenTankFilled-desc = Аварийный бак увеличенной вместимости. Технически рассчитан на длительное использование. Он вмещает 1,5 л газа.
 
-ent-DoubleEmergencyOxygenTankFilled-name = extended-capacity emergency oxygen tank
-ent-DoubleEmergencyOxygenTankFilled-desc = An emergency tank with extended capacity. Technically rated for prolonged use. It can hold 1.5 L of gas.
+ent-DoubleEmergencyOxygenTankFilled-name = аварийный кислородный баллон увеличенной вместимости
+ent-DoubleEmergencyOxygenTankFilled-desc = Аварийный бак увеличенной вместимости. Технически рассчитан на длительное использование. Он вмещает 1,5 л газа.
 
-ent-DoubleEmergencyNitrogenTankFilled-name = extended-capacity emergency oxygen tank
-ent-DoubleEmergencyNitrogenTankFilled-desc = An emergency tank with extended capacity. Technically rated for prolonged use. It can hold 1.5 L of gas.
+ent-DoubleEmergencyNitrogenTankFilled-name = аварийный кислородный баллон увеличенной вместимости
+ent-DoubleEmergencyNitrogenTankFilled-desc = Аварийный бак увеличенной вместимости. Технически рассчитан на длительное использование. Он вмещает 1,5 л газа.
 
-ent-EmergencyFunnyOxygenTankFilled-name = funny emergency oxygen tank
-ent-EmergencyFunnyOxygenTankFilled-desc = An easily portable tank for emergencies. Contains very little oxygen with an extra of funny gas, rated for survival use only. It can hold 0.66 L of gas.
+ent-EmergencyFunnyOxygenTankFilled-name = забавный аварийный кислородный баллон
+ent-EmergencyFunnyOxygenTankFilled-desc = Легко переносимый резервуар на случай чрезвычайных ситуаций. Содержит очень мало кислорода и еще немного странного газа, предназначенного только для выживания. Он вмещает 0,66 л газа.
 
-ent-AirTankFilled-name = item
+ent-AirTankFilled-name = элемент
 

@@ -429,6 +429,6 @@ command-description-cmd-info =
 command-description-comp-rm =
     Removes the given component from the entity.
 
-command-description-overlay-toggle = Toggle an overlay on or off
-command-description-overlay-add = Add an overlay (if it does not already exist)
-command-description-overlay-remove = Remove an overlay
+command-description-overlay-toggle = Включить или выключить наложение
+command-description-overlay-add = Добавьте наложение (если оно еще не существует)
+command-description-overlay-remove = Удаление наложения

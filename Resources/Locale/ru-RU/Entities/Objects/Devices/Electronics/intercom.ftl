@@ -1,3 +1,3 @@
-ent-IntercomElectronics-name = intercom electronics
-ent-IntercomElectronics-desc = An electronics board used in intercoms.
+ent-IntercomElectronics-name = домофонная электроника
+ent-IntercomElectronics-desc = Плата электроники, используемая в домофонах.
 

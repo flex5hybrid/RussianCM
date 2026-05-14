@@ -1,3 +1,3 @@
-ent-WeaponMeleeNeedle-name = official security anti-inflatable armament
-ent-WeaponMeleeNeedle-desc = A specialty weapon used in the destruction of unique syndicate morale-boosting equipment.
+ent-WeaponMeleeNeedle-name = Противонадувное вооружение официальной безопасности
+ent-WeaponMeleeNeedle-desc = Особое оружие, используемое для уничтожения уникального оборудования синдиката, повышающего боевой дух.
 

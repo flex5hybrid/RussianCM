@@ -1,3 +1,3 @@
-ent-GeigerCounter-name = Geiger counter
-ent-GeigerCounter-desc = A handheld device used for detecting and measuring radiation pulses.
+ent-GeigerCounter-name = счетчик Гейгера
+ent-GeigerCounter-desc = Портативное устройство, используемое для обнаружения и измерения импульсов излучения.
 

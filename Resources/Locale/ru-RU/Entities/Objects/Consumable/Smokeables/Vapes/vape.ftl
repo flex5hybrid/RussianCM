@@ -1,3 +1,3 @@
-ent-Vape-name = vape
-ent-Vape-desc = Like a cigar, but for tough teens. (WARNING:Pour only water into the vape)
+ent-Vape-name = вейп
+ent-Vape-desc = Как сигара, но для крутых подростков. (ВНИМАНИЕ: Наливайте в вейп только воду)
 

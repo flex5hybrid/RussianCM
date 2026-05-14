@@ -1,18 +1,18 @@
-ent-GasFilter-name = gas filter
-ent-GasFilter-desc = Very useful for filtering gases.
+ent-GasFilter-name = газовый фильтр
+ent-GasFilter-desc = Очень полезен для фильтрации газов.
 
-ent-GasFilterFlipped-name = gas filter
-ent-GasFilterFlipped-desc = Holds gas.
+ent-GasFilterFlipped-name = газовый фильтр
+ent-GasFilterFlipped-desc = Держит газ.
 
-ent-GasMixer-name = gas mixer
-ent-GasMixer-desc = Very useful for mixing gases.
+ent-GasMixer-name = газовый смеситель
+ent-GasMixer-desc = Очень полезен для смешивания газов.
 
-ent-GasMixerFlipped-name = gas mixer
-ent-GasMixerFlipped-desc = Holds gas.
+ent-GasMixerFlipped-name = газовый смеситель
+ent-GasMixerFlipped-desc = Держит газ.
 
-ent-PressureControlledValve-name = pneumatic valve
-ent-PressureControlledValve-desc = A bidirectional valve controlled by pressure. Opens if the output pipe is lower than the pressure of the control pipe by 101.325 kPa.
+ent-PressureControlledValve-name = пневматический клапан
+ent-PressureControlledValve-desc = Двунаправленный клапан, управляемый давлением. Открывается, если давление в выходной трубе ниже давления в контрольной трубе на 101,325 кПа.
 
-ent-GasTrinaryBase-name = gas pipe
-ent-GasTrinaryBase-desc = Holds gas.
+ent-GasTrinaryBase-name = газовая труба
+ent-GasTrinaryBase-desc = Держит газ.
 

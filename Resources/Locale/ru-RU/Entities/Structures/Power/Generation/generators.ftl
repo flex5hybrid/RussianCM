@@ -1,27 +1,27 @@
-ent-BaseGenerator-name = generator
-ent-BaseGenerator-desc = A high efficiency thermoelectric generator.
+ent-BaseGenerator-name = генератор
+ent-BaseGenerator-desc = Высокоэффективный термоэлектрический генератор.
 
-ent-BaseGeneratorWallmount-name = wallmount generator
-ent-BaseGeneratorWallmount-desc = A high efficiency thermoelectric generator stuffed in a wall cabinet.
+ent-BaseGeneratorWallmount-name = настенный генератор
+ent-BaseGeneratorWallmount-desc = Высокоэффективный термоэлектрический генератор, помещенный в настенный шкаф.
 
-ent-BaseGeneratorWallmountFrame-name = wallmount generator frame
-ent-BaseGeneratorWallmountFrame-desc = A construction frame for a wallmount generator.
+ent-BaseGeneratorWallmountFrame-name = рамка генератора настенного монтажа
+ent-BaseGeneratorWallmountFrame-desc = Конструкционная рама для настенного генератора.
 
-ent-GeneratorWallmountAPU-name = shuttle APU
-ent-GeneratorWallmountAPU-desc = An auxiliary power unit for a shuttle - 6kW.
+ent-GeneratorWallmountAPU-name = шаттл ВСУ
+ent-GeneratorWallmountAPU-desc = Вспомогательная силовая установка для шаттла – 6кВт.
 
-ent-GeneratorRTG-name = RTG
-ent-GeneratorRTG-desc = A Radioisotope Thermoelectric Generator for long term power.
+ent-GeneratorRTG-name = РТГ
+ent-GeneratorRTG-desc = Радиоизотопный термоэлектрический генератор для длительного энергоснабжения.
 
-ent-GeneratorRTGDamaged-name = damaged RTG
-ent-GeneratorRTGDamaged-desc = A Radioisotope Thermoelectric Generator for long term power. This one has damaged shielding.
+ent-GeneratorRTGDamaged-name = поврежденный РИТЭГ
+ent-GeneratorRTGDamaged-desc = Радиоизотопный термоэлектрический генератор для длительного энергоснабжения. У этого повреждена защита.
 
-ent-GeneratorBasic-name = generator
-ent-GeneratorBasic-desc = A high efficiency thermoelectric generator.
+ent-GeneratorBasic-name = генератор
+ent-GeneratorBasic-desc = Высокоэффективный термоэлектрический генератор.
 
-ent-GeneratorBasic15kW-name = generator
-ent-GeneratorBasic15kW-desc = A high efficiency thermoelectric generator.
+ent-GeneratorBasic15kW-name = генератор
+ent-GeneratorBasic15kW-desc = Высокоэффективный термоэлектрический генератор.
 
-ent-GeneratorWallmountBasic-name = wallmount generator
-ent-GeneratorWallmountBasic-desc = A high efficiency thermoelectric generator stuffed in a wall cabinet.
+ent-GeneratorWallmountBasic-name = настенный генератор
+ent-GeneratorWallmountBasic-desc = Высокоэффективный термоэлектрический генератор, помещенный в настенный шкаф.
 

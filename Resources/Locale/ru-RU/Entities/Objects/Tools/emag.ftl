@@ -1,6 +1,6 @@
-ent-EmagUnlimited-name = cryptographic sequencer
-ent-EmagUnlimited-desc = The all-in-one hacking solution. Friend of any syndicate. The iconic EMAG.
+ent-EmagUnlimited-name = криптографический секвенсор
+ent-EmagUnlimited-desc = Универсальное решение для взлома. Друг любого синдиката. Легендарный EMAG.
 
-ent-Emag-name = cryptographic sequencer
-ent-Emag-desc = The all-in-one hacking solution. Friend of any syndicate. The iconic EMAG.
+ent-Emag-name = криптографический секвенсор
+ent-Emag-desc = Универсальное решение для взлома. Друг любого синдиката. Легендарный EMAG.
 

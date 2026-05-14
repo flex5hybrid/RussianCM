@@ -1,2 +1,2 @@
-ent-RandomInstruments-name = random instruments spawner
+ent-RandomInstruments-name = генератор случайных инструментов
 

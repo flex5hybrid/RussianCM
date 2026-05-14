@@ -1,151 +1,151 @@
-ent-BaseBullet-name = BaseBullet
-ent-BaseBullet-desc = If you can see this you're probably dead!
+ent-BaseBullet-name = БазаBullet
+ent-BaseBullet-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BaseBulletPractice-name = base bullet practice
-ent-BaseBulletPractice-desc = If you can see this you're probably dead!
+ent-BaseBulletPractice-name = базовая тренировка по пуле
+ent-BaseBulletPractice-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BaseBulletIncendiary-name = base bullet incendiary
-ent-BaseBulletIncendiary-desc = If you can see this you're probably dead!
+ent-BaseBulletIncendiary-name = базовая пуля зажигательная
+ent-BaseBulletIncendiary-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BaseBulletAP-name = base bullet AP
-ent-BaseBulletAP-desc = If you can see this you're probably dead!
+ent-BaseBulletAP-name = базовая пуля AP
+ent-BaseBulletAP-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BaseBulletUranium-name = base bullet uranium
-ent-BaseBulletUranium-desc = If you can see this you're probably dead!
+ent-BaseBulletUranium-name = базовая пуля уран
+ent-BaseBulletUranium-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletTaser-name = taser bolt
-ent-BulletTaser-desc = If you can see this you're probably dead!
+ent-BulletTaser-name = электрошокер
+ent-BulletTaser-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletDisabler-name = disabler bolt
-ent-BulletDisabler-desc = If you can see this you're probably dead!
+ent-BulletDisabler-name = блокирующий болт
+ent-BulletDisabler-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletDisablerPractice-name = disabler bolt practice
-ent-BulletDisablerPractice-desc = If you can see this you're probably dead!
+ent-BulletDisablerPractice-name = практика с болтом-дизайзером
+ent-BulletDisablerPractice-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-EmitterBolt-name = emitter bolt
-ent-EmitterBolt-desc = If you can see this you're probably dead!
+ent-EmitterBolt-name = эмиттерный болт
+ent-EmitterBolt-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-WatcherBolt-name = watcher bolt
-ent-WatcherBolt-desc = If you can see this you're probably dead!
+ent-WatcherBolt-name = болт наблюдателя
+ent-WatcherBolt-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BoltTempgunCold-name = freezing bolt
-ent-BoltTempgunCold-desc = If you can see this you're probably dead!
+ent-BoltTempgunCold-name = замораживающий болт
+ent-BoltTempgunCold-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-WatcherBoltMagmawing-name = magmawing watcher bolt
-ent-WatcherBoltMagmawing-desc = If you can see this you're probably dead!
+ent-WatcherBoltMagmawing-name = болт наблюдателя магмы
+ent-WatcherBoltMagmawing-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BoltTempgunHot-name = scorching bolt
-ent-BoltTempgunHot-desc = If you can see this you're probably dead!
+ent-BoltTempgunHot-name = палящая стрела
+ent-BoltTempgunHot-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BasiliskRay-name = basilisk ray
-ent-BasiliskRay-desc = If you can see this you're probably dead!
+ent-BasiliskRay-name = василиск луч
+ent-BasiliskRay-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletKinetic-name = kinetic bolt
-ent-BulletKinetic-desc = Not too bad, but you still don't want to get hit by it.
+ent-BulletKinetic-name = кинетический болт
+ent-BulletKinetic-desc = Не так уж и плохо, но вы все равно не хотите, чтобы вас ударило.
 
-ent-BulletCharge-name = charge bolt
-ent-BulletCharge-desc = Marks a target for additional damage.
+ent-BulletCharge-name = зарядный болт
+ent-BulletCharge-desc = Отмечает цель для нанесения дополнительного урона.
 
-ent-BulletChargeGlaive-name = leech bolt
-ent-BulletChargeGlaive-desc = Marks a target for additional damage.
+ent-BulletChargeGlaive-name = пиявка
+ent-BulletChargeGlaive-desc = Отмечает цель для нанесения дополнительного урона.
 
-ent-AnomalousParticleDelta-name = delta particles
-ent-AnomalousParticleDelta-desc = If you can see this you're probably dead!
+ent-AnomalousParticleDelta-name = дельта-частицы
+ent-AnomalousParticleDelta-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-AnomalousParticleEpsilon-name = epsilon particles
-ent-AnomalousParticleEpsilon-desc = If you can see this you're probably dead!
+ent-AnomalousParticleEpsilon-name = эпсилон-частицы
+ent-AnomalousParticleEpsilon-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-AnomalousParticleZeta-name = zeta particles
-ent-AnomalousParticleZeta-desc = If you can see this you're probably dead!
+ent-AnomalousParticleZeta-name = дзета-частицы
+ent-AnomalousParticleZeta-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-AnomalousParticleOmegaStrong-name = omega particles
-ent-AnomalousParticleOmegaStrong-desc = If you can see this you're probably dead!
+ent-AnomalousParticleOmegaStrong-name = омега-частицы
+ent-AnomalousParticleOmegaStrong-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-AnomalousParticleSigma-name = sigma particles
-ent-AnomalousParticleSigma-desc = If you can see this you're probably dead!
+ent-AnomalousParticleSigma-name = сигма-частицы
+ent-AnomalousParticleSigma-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-AnomalousParticleSigmaStrong-name = sigma particles
-ent-AnomalousParticleSigmaStrong-desc = If you can see this you're probably dead!
+ent-AnomalousParticleSigmaStrong-name = сигма-частицы
+ent-AnomalousParticleSigmaStrong-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletRocket-name = rocket
-ent-BulletRocket-desc = If you can see this you're probably dead!
+ent-BulletRocket-name = ракета
+ent-BulletRocket-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletWeakRocket-name = weak rocket
-ent-BulletWeakRocket-desc = If you can see this you're probably dead!
+ent-BulletWeakRocket-name = слабая ракета
+ent-BulletWeakRocket-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletGrenadeBaton-name = baton grenade
-ent-BulletGrenadeBaton-desc = If you can see this you're probably dead!
+ent-BulletGrenadeBaton-name = дубинка граната
+ent-BulletGrenadeBaton-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletGrenadeBlast-name = blast grenade
-ent-BulletGrenadeBlast-desc = If you can see this you're probably dead!
+ent-BulletGrenadeBlast-name = взрывная граната
+ent-BulletGrenadeBlast-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletGrenadeFlash-name = flash grenade
-ent-BulletGrenadeFlash-desc = If you can see this you're probably dead!
+ent-BulletGrenadeFlash-name = светошумовая граната
+ent-BulletGrenadeFlash-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletGrenadeFrag-name = frag grenade
-ent-BulletGrenadeFrag-desc = If you can see this you're probably dead!
+ent-BulletGrenadeFrag-name = осколочная граната
+ent-BulletGrenadeFrag-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletGrenadeCleanade-name = cleanade grenade round
-ent-BulletGrenadeCleanade-desc = If you can see this you're probably dead!
+ent-BulletGrenadeCleanade-name = круглая граната Cleanade
+ent-BulletGrenadeCleanade-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletGrenadeEMP-name = EMP rocket
-ent-BulletGrenadeEMP-desc = If you can see this you're probably dead!
+ent-BulletGrenadeEMP-name = ЭМИ-ракета
+ent-BulletGrenadeEMP-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletCap-name = cap bullet
-ent-BulletCap-desc = If you can see this you're probably dead!
+ent-BulletCap-name = колпачковая пуля
+ent-BulletCap-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletAcid-name = acid spit
-ent-BulletAcid-desc = If you can see this you're probably dead!
+ent-BulletAcid-name = кислотный плевок
+ent-BulletAcid-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletWaterShot-name = water
+ent-BulletWaterShot-name = вода
 
-ent-BulletHivebot-name = hivebot bullet
-ent-BulletHivebot-desc = If you can see this you're probably dead!
+ent-BulletHivebot-name = улейбот пуля
+ent-BulletHivebot-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletCannonBall-name = cannonball
-ent-BulletCannonBall-desc = If you can see this you're probably dead!
+ent-BulletCannonBall-name = пушечное ядро
+ent-BulletCannonBall-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-GrapplingHook-name = grappling hook
+ent-GrapplingHook-name = крюк
 
-ent-BulletDisablerSmg-name = disabler bolt smg
-ent-BulletDisablerSmg-desc = If you can see this you're probably dead!
+ent-BulletDisablerSmg-name = блокирующий болт СМГ
+ent-BulletDisablerSmg-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletEnergyTurretBase-name = energy bolt
-ent-BulletEnergyTurretBase-desc = If you can see this you're probably dead!
+ent-BulletEnergyTurretBase-name = энергетический болт
+ent-BulletEnergyTurretBase-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletEnergyTurretLaser-name = laser bolt
-ent-BulletEnergyTurretLaser-desc = If you can see this you're probably dead!
+ent-BulletEnergyTurretLaser-name = лазерный болт
+ent-BulletEnergyTurretLaser-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletEnergyTurretDisabler-name = disabler bolt
-ent-BulletEnergyTurretDisabler-desc = If you can see this you're probably dead!
+ent-BulletEnergyTurretDisabler-name = блокирующий болт
+ent-BulletEnergyTurretDisabler-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-TeslaGunBullet-name = tesla gun lightning
-ent-TeslaGunBullet-desc = If you can see this you're probably dead!
+ent-TeslaGunBullet-name = Тесла пистолет молния
+ent-TeslaGunBullet-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletLaser-name = laser bolt
-ent-BulletLaser-desc = If you can see this you're probably dead!
+ent-BulletLaser-name = лазерный болт
+ent-BulletLaser-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletLaserSpread-name = wide laser barrage
-ent-BulletLaserSpread-desc = If you can see this you're probably dead!
+ent-BulletLaserSpread-name = широкий лазерный залп
+ent-BulletLaserSpread-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletLaserSpreadNarrow-name = narrow laser barrage
-ent-BulletLaserSpreadNarrow-desc = If you can see this you're probably dead!
+ent-BulletLaserSpreadNarrow-name = узкий лазерный заграждение
+ent-BulletLaserSpreadNarrow-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletDisablerSmgSpread-name = disabling laser barrage
-ent-BulletDisablerSmgSpread-desc = If you can see this you're probably dead!
+ent-BulletDisablerSmgSpread-name = отключение лазерного заграждения
+ent-BulletDisablerSmgSpread-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BaseBulletTrigger-name = BaseBullet
-ent-BaseBulletTrigger-desc = If you can see this you're probably dead!
+ent-BaseBulletTrigger-name = БазаBullet
+ent-BaseBulletTrigger-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-BulletKineticShuttle-name = BaseBullet
-ent-BulletKineticShuttle-desc = If you can see this you're probably dead!
+ent-BulletKineticShuttle-name = БазаBullet
+ent-BulletKineticShuttle-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-AnomalousParticleDeltaStrong-name = delta particles
-ent-AnomalousParticleDeltaStrong-desc = If you can see this you're probably dead!
+ent-AnomalousParticleDeltaStrong-name = дельта-частицы
+ent-AnomalousParticleDeltaStrong-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-AnomalousParticleEpsilonStrong-name = epsilon particles
-ent-AnomalousParticleEpsilonStrong-desc = If you can see this you're probably dead!
+ent-AnomalousParticleEpsilonStrong-name = эпсилон-частицы
+ent-AnomalousParticleEpsilonStrong-desc = Если ты это видишь, ты, вероятно, мертв!
 
-ent-AnomalousParticleZetaStrong-name = zeta particles
-ent-AnomalousParticleZetaStrong-desc = If you can see this you're probably dead!
+ent-AnomalousParticleZetaStrong-name = дзета-частицы
+ent-AnomalousParticleZetaStrong-desc = Если ты это видишь, ты, вероятно, мертв!
 

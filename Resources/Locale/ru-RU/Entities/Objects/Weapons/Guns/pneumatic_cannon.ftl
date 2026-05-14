@@ -1,15 +1,15 @@
-ent-WeaponImprovisedPneumaticCannon-name = improvised pneumatic cannon
-ent-WeaponImprovisedPneumaticCannon-desc = Improvised using nothing but a pipe, some zipties, and a pneumatic cannon. Doesn't accept tanks without enough gas.
+ent-WeaponImprovisedPneumaticCannon-name = импровизированная пневматическая пушка
+ent-WeaponImprovisedPneumaticCannon-desc = Импровизировал, используя только трубу, несколько молний и пневматическую пушку. Не принимает баллоны без достаточного количества бензина.
 
-ent-LauncherCreamPie-name = pie cannon
-ent-LauncherCreamPie-desc = Load cream pie for optimal results.
+ent-LauncherCreamPie-name = пирог-пушка
+ent-LauncherCreamPie-desc = Загрузите кремовый пирог для достижения оптимальных результатов.
 
-ent-LauncherSyringe-name = syringe gun
-ent-LauncherSyringe-desc = Load full of poisoned syringes for optimal fun.
+ent-LauncherSyringe-name = шприц-пистолет
+ent-LauncherSyringe-desc = Загрузите отравленные шприцы для максимального удовольствия.
 
-ent-WeaponImprovisedPneumaticCannonGun-name = improvised pneumatic cannon
-ent-WeaponImprovisedPneumaticCannonGun-desc = Improvised using nothing but a pipe, some zipties, and a pneumatic cannon. Doesn't accept tanks without enough gas.
+ent-WeaponImprovisedPneumaticCannonGun-name = импровизированная пневматическая пушка
+ent-WeaponImprovisedPneumaticCannonGun-desc = Импровизировал, используя только трубу, несколько молний и пневматическую пушку. Не принимает баллоны без достаточного количества бензина.
 
-ent-WeaponImprovisedPneumaticCannonAdmeme-name = improvised pneumatic cannon
-ent-WeaponImprovisedPneumaticCannonAdmeme-desc = Improvised using nothing but a pipe, some zipties, and a pneumatic cannon. Doesn't accept tanks without enough gas.
+ent-WeaponImprovisedPneumaticCannonAdmeme-name = импровизированная пневматическая пушка
+ent-WeaponImprovisedPneumaticCannonAdmeme-desc = Импровизировал, используя только трубу, несколько молний и пневматическую пушку. Не принимает баллоны без достаточного количества бензина.
 

@@ -1,122 +1,122 @@
-ent-RMCAreaCorsat-name = Corsat Orbital Research Station
+ent-RMCAreaCorsat-name = Орбитальная исследовательская станция Корсат
 
-ent-RMCAreaCorsatLz-name = Corsat - LZ
+ent-RMCAreaCorsatLz-name = Корсат - ЛЗ
 
-ent-RMCAreaShuttleDrop1Corsat-name = Corsat Station - Dropship Alamo Landing Zone
+ent-RMCAreaShuttleDrop1Corsat-name = Станция «Корсат» — зона приземления десантного корабля «Аламо»
 
-ent-RMCAreaCorsatLzNearLzI-name = Corsat - LZ1 Gamma Port
+ent-RMCAreaCorsatLzNearLzI-name = Корсат - LZ1 Гамма-порт
 
-ent-RMCAreaCorsatStationArrivalsNearLzI-name = Corsat - Station Arrivals Gamma
+ent-RMCAreaCorsatStationArrivalsNearLzI-name = Корсат — Станция прибытия Гамма
 
-ent-RMCAreaCorsatStationFoyer-name = Corsat - Foyer
+ent-RMCAreaCorsatStationFoyer-name = Корсат - Фойе
 
-ent-RMCAreaCorsatLzNearLzII-name = Corsat - LZ2 Sigma Port
+ent-RMCAreaCorsatLzNearLzII-name = Corsat — порт LZ2 Sigma
 
-ent-RMCAreaCorsatStationArrivalsNearLzII-name = Corsat - Station Arrivals Sigma
+ent-RMCAreaCorsatStationArrivalsNearLzII-name = Корсат — станция прибытия Сигма
 
-ent-RMCAreaShuttleDrop2Corsat-name = Corsat Station - Dropship Normandy Landing Zone
+ent-RMCAreaShuttleDrop2Corsat-name = Станция «Корсат» — зона высадки десантного корабля «Нормандия»
 
-ent-RMCAreaCorsatMaintenance-name = Corsat - Maintenance
+ent-RMCAreaCorsatMaintenance-name = Корсат - Техническое обслуживание
 
-ent-RMCAreaCorsatStation-name = Corsat - Station Interior
+ent-RMCAreaCorsatStation-name = Корсат — Интерьер станции
 
-ent-RMCAreaCorsatStationCargoGamma-name = Corsat - Cargo Gamma
+ent-RMCAreaCorsatStationCargoGamma-name = Корсат - Грузовая Гамма
 
-ent-RMCAreaCorsatStationCargoSigma-name = Corsat - Cargo Sigma
+ent-RMCAreaCorsatStationCargoSigma-name = Корсат - Грузовая Сигма
 
-ent-RMCAreaCorsatStationEngineeringGamma-name = Corsat - Engineering Gamma
+ent-RMCAreaCorsatStationEngineeringGamma-name = Корсат - Инжиниринг Гамма
 
-ent-RMCAreaCorsatStationEngineeringSigma-name = Corsat - Engineering Sigma
+ent-RMCAreaCorsatStationEngineeringSigma-name = Корсат - Инжиниринг Сигма
 
-ent-RMCAreaCorsatStationRobotics-name = Corsat - Robotics
+ent-RMCAreaCorsatStationRobotics-name = Корсат - Робототехника
 
-ent-RMCAreaCorsatStationSigmaRemote-name = Corsat - Sigma Remote
+ent-RMCAreaCorsatStationSigmaRemote-name = Корсат — Сигма Пульт дистанционного управления
 
-ent-RMCAreaCorsatStationMainCore-name = Corsat - Main Core
+ent-RMCAreaCorsatStationMainCore-name = Корсат — главное ядро
 
-ent-RMCAreaCorsatStationSecurityGamma-name = Corsat - Security Gamma
+ent-RMCAreaCorsatStationSecurityGamma-name = Корсат - Гамма безопасности
 
-ent-RMCAreaCorsatStationSecuritySigma-name = Corsat - Security Sigma
+ent-RMCAreaCorsatStationSecuritySigma-name = Корсат - Сигма безопасности
 
-ent-RMCAreaCorsatStationResearchComplexSigma-name = Corsat - Research Complex Sigma
+ent-RMCAreaCorsatStationResearchComplexSigma-name = Корсат - Научно-исследовательский комплекс Сигма
 
-ent-RMCAreaCorsatStationCafe-name = Corsat - Cafe
+ent-RMCAreaCorsatStationCafe-name = Корсат - Кафе
 
-ent-RMCAreaCorsatStationSigmaBackupCore-name = Corsat - Sigma Backup Core
+ent-RMCAreaCorsatStationSigmaBackupCore-name = Corsat — резервное ядро Sigma
 
-ent-RMCAreaCorsatStationDataCenter-name = Corsat - Data Center
+ent-RMCAreaCorsatStationDataCenter-name = Корсат — Дата-центр
 
-ent-RMCAreaCorsatStationSigmaLounge-name = Corsat - Sigma Lounge
+ent-RMCAreaCorsatStationSigmaLounge-name = Корсат - Салон Сигма
 
-ent-RMCAreaCorsatFlightControlCenter-name = Corsat - Flight Control Center
+ent-RMCAreaCorsatFlightControlCenter-name = Корсат - Центр управления полетом
 
-ent-RMCAreaCorsatMonorailStationGamma-name = Corsat - Monorail Station Gamma
+ent-RMCAreaCorsatMonorailStationGamma-name = Корсат - Станция монорельсовой дороги Гамма
 
-ent-RMCAreaCorsatMedbay-name = Corsat - Medbay
+ent-RMCAreaCorsatMedbay-name = Корсат - Медбей
 
-ent-RMCAreaCorsatBar-name = Corsat - Bar
+ent-RMCAreaCorsatBar-name = Корсат - Бар
 
-ent-RMCAreaCorsatFoodModule-name = Corsat - Food Module
+ent-RMCAreaCorsatFoodModule-name = Корсат - Пищевой модуль
 
-ent-RMCAreaCorsatCanteen-name = Corsat - Canteen
+ent-RMCAreaCorsatCanteen-name = Корсат - Столовая
 
-ent-RMCAreaCorsatBaths-name = Corsat - Baths
+ent-RMCAreaCorsatBaths-name = Корсат - Ванны
 
-ent-RMCAreaCorsatResidentialModulesNorth-name = Corsat - Residential Modules North
+ent-RMCAreaCorsatResidentialModulesNorth-name = Корсат - Жилые Модули Север
 
-ent-RMCAreaCorsatResidentialModulesSouth-name = Corsat - Residential Modules South
+ent-RMCAreaCorsatResidentialModulesSouth-name = Корсат - Жилые модули Юг
 
-ent-RMCAreaCorsatSigmaResidentialModulesWest-name = Corsat - Sigma Residential Modules West
+ent-RMCAreaCorsatSigmaResidentialModulesWest-name = Corsat - Жилые модули Sigma West
 
-ent-RMCAreaCorsatSigmaResidentialModulesEast-name = Corsat - Sigma Residential Modules East
+ent-RMCAreaCorsatSigmaResidentialModulesEast-name = Corsat - Жилые модули Sigma Восток
 
-ent-RMCAreaCorsatStationAcademy-name = Corsat - Corsat Academy
+ent-RMCAreaCorsatStationAcademy-name = Корсат - Академия Корсат
 
-ent-RMCAreaCorsatStationLounge-name = Corsat - Lounge
+ent-RMCAreaCorsatStationLounge-name = Корсат - Салон
 
-ent-RMCAreaCorsatStationResearchQuarters-name = Corsat - Research Quarters
+ent-RMCAreaCorsatStationResearchQuarters-name = Корсат — исследовательские кварталы
 
-ent-RMCAreaCorsatStationAdministration-name = Corsat - Administration
+ent-RMCAreaCorsatStationAdministration-name = Корсат - Администрация
 
-ent-RMCAreaCorsatMonorailStationSigma-name = Corsat - Monorail Station Sigma
+ent-RMCAreaCorsatMonorailStationSigma-name = Корсат - станция монорельсовой дороги Сигма
 
-ent-RMCAreaCorsatStationExterior-name = Corsat - Station Exterior
+ent-RMCAreaCorsatStationExterior-name = Корсат — Внешний вид станции
 
-ent-RMCAreaCorsatMonorailWest-name = Corsat - Monorail West
+ent-RMCAreaCorsatMonorailWest-name = Корсат - Монорельс Запад
 
-ent-RMCAreaCorsatMonorailEast-name = Corsat - Monorail East
+ent-RMCAreaCorsatMonorailEast-name = Корсат - Монорельс Восток
 
-ent-RMCAreaCorsatBiodomeGamma-name = Corsat - Biodome Gamma
+ent-RMCAreaCorsatBiodomeGamma-name = Корсат - Биодом Гамма
 
-ent-RMCAreaCorsatResearchComplexGamma-name = Corsat - Research Complex Gamma
+ent-RMCAreaCorsatResearchComplexGamma-name = Корсат - Исследовательский Комплекс Гамма
 
-ent-RMCAreaCorsatControlModuleGamma-name = Corsat - Control Module Gamma
+ent-RMCAreaCorsatControlModuleGamma-name = Корсат - Модуль управления Гамма
 
-ent-RMCAreaCorsatBiodomeSigma-name = Corsat - Biodome Sigma
+ent-RMCAreaCorsatBiodomeSigma-name = Корсат - Биодом Сигма
 
-ent-RMCAreaCorsatGunRangeSigma-name = Corsat - Gun Range Sigma
+ent-RMCAreaCorsatGunRangeSigma-name = Корсат - полигон Сигма
 
-ent-RMCAreaCorsatBlastZoneSigma-name = Corsat - Blast Zone Sigma
+ent-RMCAreaCorsatBlastZoneSigma-name = Корсат - Взрывная зона Сигма
 
-ent-RMCAreaCorsatScrapyardSigma-name = Corsat - Scrapyard Sigma
+ent-RMCAreaCorsatScrapyardSigma-name = Корсат - Свалка Сигма
 
-ent-RMCAreaCorsatControlModuleSigma-name = Corsat - Control Module Sigma
+ent-RMCAreaCorsatControlModuleSigma-name = Корсат - Модуль управления Сигма
 
-ent-RMCAreaCorsatBiodomeTheta-name = Corsat - Biodome Theta
+ent-RMCAreaCorsatBiodomeTheta-name = Корсат - Биодом Тета
 
-ent-RMCAreaCorsatResearchComplexTheta-name = Corsat - Research Complex Theta
+ent-RMCAreaCorsatResearchComplexTheta-name = Корсат - Исследовательский комплекс Тета
 
-ent-RMCAreaCorsatControlModuleTheta-name = Corsat - Control Module Theta
+ent-RMCAreaCorsatControlModuleTheta-name = Корсат — Модуль управления Тета
 
-ent-RMCAreaCorsatBiodomeOmega1-name = Corsat - Biodome Omega
+ent-RMCAreaCorsatBiodomeOmega1-name = Корсат - Биодом Омега
 
-ent-RMCAreaCorsatOfficesOmega-name = Corsat - Offices Omega
+ent-RMCAreaCorsatOfficesOmega-name = Корсат - Офисы Омега
 
-ent-RMCAreaCorsatSecurityOmega-name = Corsat - Security Omega
+ent-RMCAreaCorsatSecurityOmega-name = Корсат - Омега безопасности
 
-ent-RMCAreaCorsatCheckpointOmega-name = Corsat - Checkpoint Omega
+ent-RMCAreaCorsatCheckpointOmega-name = Корсат - КПП Омега
 
-ent-RMCAreaCorsatEastHallwaysOmega-name = Corsat - East Hallways Omega
+ent-RMCAreaCorsatEastHallwaysOmega-name = Корсат - Восточные коридоры Омега
 
-ent-RMCAreaCorsatLandingBayOmega-name = Corsat - Landing Bay Omega
+ent-RMCAreaCorsatLandingBayOmega-name = Корсат - Посадочная бухта Омега
 

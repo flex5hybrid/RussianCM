@@ -1,21 +1,21 @@
-ent-LockerBoozeFilled-name = booze storage
-ent-LockerBoozeFilled-desc = This is where the bartender keeps the booze.
+ent-LockerBoozeFilled-name = хранилище для выпивки
+ent-LockerBoozeFilled-desc = Здесь бармен хранит выпивку.
 
-ent-ClosetChefFilled-name = chef's closet
-ent-ClosetChefFilled-desc = It's a storage unit for foodservice garments and mouse traps.
+ent-ClosetChefFilled-name = шкаф повара
+ent-ClosetChefFilled-desc = Это склад одежды для предприятий общественного питания и мышеловок.
 
-ent-ClosetJanitorFilled-name = custodial closet
-ent-ClosetJanitorFilled-desc = It's a storage unit for janitorial clothes and gear.
+ent-ClosetJanitorFilled-name = чулан для содержания под стражей
+ent-ClosetJanitorFilled-desc = Это хранилище для уборочной одежды и инвентаря.
 
-ent-ClosetLegalFilled-name = legal closet
-ent-ClosetLegalFilled-desc = It's a storage unit for courtroom apparel and items.
+ent-ClosetLegalFilled-name = юридический шкаф
+ent-ClosetLegalFilled-desc = Это хранилище для судебной одежды и предметов.
 
-ent-LockerBotanistFilled-name = botanist's locker
-ent-LockerBotanistFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerBotanistFilled-name = шкафчик ботаника
+ent-LockerBotanistFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerBotanistLoot-name = botanist's locker
-ent-LockerBotanistLoot-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerBotanistLoot-name = шкафчик ботаника
+ent-LockerBotanistLoot-desc = Стандартное хранилище Nanotrasen.
 
-ent-ClosetJanitorBombFilled-name = janitorial bomb suit closet
-ent-ClosetJanitorBombFilled-desc = It's a storage unit for janitorial explosion-protective suits.
+ent-ClosetJanitorBombFilled-name = шкаф для уборки бомбового костюма
+ent-ClosetJanitorBombFilled-desc = Это склад служебных взрывозащитных костюмов.
 

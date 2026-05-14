@@ -6,3 +6,11 @@ comp-gas-thermomachine-ui-temperature = Температура (К):
 gas-thermo-component-upgrade-heating = максимальная температура
 gas-thermo-component-upgrade-cooling = минимальная температура
 gas-thermo-component-upgrade-heat-capacity = теплоёмкость
+
+# Missing entries synced from en-US
+
+comp-gas-thermomachine-ui-toggle =  Переключать
+
+comp-gas-thermomachine-ui-status-disabled = Выкл.
+
+comp-gas-thermomachine-ui-status-enabled = On

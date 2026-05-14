@@ -11,7 +11,6 @@ from typing import Final
 # ─── Discord ──────────────────────────────────────────────────────────────────
 
 DISCORD_WEBHOOK_URL: Final[str] = os.environ.get("DISCORD_WEBHOOK_URL", "")
-GEMINI_API_KEY: Final[str] = os.environ.get("GEMINI_API_KEY", "")
 
 # ─── GitHub ───────────────────────────────────────────────────────────────────
 
@@ -52,20 +51,19 @@ SKIP_KEYWORDS: Final[list[str]] = [
     "[internal]",
 ]
 
-# ─── Gemini ────────────────────────────────────────────────────────────────────
+# ─── Mistral ────────────────────────────────────────────────────────────────────
 
-GEMINI_MODEL: Final[str] = "gemini-2.0-flash"
-GEMINI_API_URL: Final[str] = (
-    f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
-)
+MISTRAL_API_KEY: Final[str] = os.environ.get("MISTRAL_API_KEY", "")
+MISTRAL_MODEL: Final[str] = "mistral-small-latest"
+MISTRAL_API_URL: Final[str] = "https://api.mistral.ai/v1/chat/completions"
 
 # ─── Discord ────────────────────────────────────────────────────────────────────
 
 DISCORD_SPLIT_LIMIT: Final[int] = 2000
 
-# ─── Промпт для Gemini ─────────────────────────────────────────────────────────
+# ─── Промпт для Mistral ───────────────────────────────────────────────────────
 
-GEMINI_SYSTEM_PROMPT: Final[str] = """Ты — профессиональный редактор релизных заметок для игрового проекта.
+MISTRAL_SYSTEM_PROMPT: Final[str] = """Ты — профессиональный редактор релизных заметок для игрового проекта.
 Твоя задача — превращать технические описания PR и коммитов в понятные, человечные релизные заметки.
 
 ПРАВИЛА (строго соблюдать):
@@ -121,7 +119,7 @@ GEMINI_SYSTEM_PROMPT: Final[str] = """Ты — профессиональный 
    Если нет ни одного изменения в категории — пустой массив.
 """
 
-GEMINI_USER_PROMPT_TEMPLATE: Final[str] = """Проанализируй следующие Pull Request-ы и сгенерируй публичные релизные заметки.
+MISTRAL_USER_PROMPT_TEMPLATE: Final[str] = """Проанализируй следующие Pull Request-ы и сгенерируй публичные релизные заметки.
 
 ТРЕБОВАНИЯ К ОПИСАНИЮ:
 - Описывай ТОЛЬКО то, что видит пользователь

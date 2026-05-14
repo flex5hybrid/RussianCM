@@ -1,9 +1,9 @@
-ent-MobDebugCounter-name = debug counter
-ent-MobDebugCounter-desc = He can count
+ent-MobDebugCounter-name = счетчик отладки
+ent-MobDebugCounter-desc = Он умеет считать
 
-ent-MobDebugRandomCounter-name = debug random counter
-ent-MobDebugRandomCounter-desc = He can randomize
+ent-MobDebugRandomCounter-name = отладка случайного счетчика
+ent-MobDebugRandomCounter-desc = Он может рандомизировать
 
-ent-MobDebugRandomLess-name = debug random less
-ent-MobDebugRandomLess-desc = He can lessing
+ent-MobDebugRandomLess-name = отлаживать случайную меньше
+ent-MobDebugRandomLess-desc = Он может уменьшить
 

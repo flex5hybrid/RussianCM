@@ -1,13 +1,13 @@
-ent-ClothingHeadLightBase-name = base helmet with light
+ent-ClothingHeadLightBase-name = базовый шлем с подсветкой
 
-ent-ClothingHeadEVAHelmetBase-name = base space helmet
+ent-ClothingHeadEVAHelmetBase-name = базовый космический шлем
 
-ent-ClothingHeadHardsuitBase-name = base hardsuit helmet
+ent-ClothingHeadHardsuitBase-name = базовый шлем жесткого костюма
 
-ent-ClothingHeadSuitWithLightBase-name = base hardsuit helmet with light
+ent-ClothingHeadSuitWithLightBase-name = базовый шлем жесткого костюма с подсветкой
 
-ent-ClothingHeadHatHoodWinterBase-name = base winter coat hood
-ent-ClothingHeadHatHoodWinterBase-desc = A hood, made to keep your head warm.
+ent-ClothingHeadHatHoodWinterBase-name = базовый капюшон зимнего пальто
+ent-ClothingHeadHatHoodWinterBase-desc = Капюшон, предназначенный для согрева головы.
 
 ent-ClothingHeadBase-name = lathe-category-clothing
 

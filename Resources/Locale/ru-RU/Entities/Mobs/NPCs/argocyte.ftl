@@ -1,38 +1,38 @@
-ent-BaseMobArgocyte-desc = A dangerous alien found on the wrong side of planets, known for their propensity for munching on ruins.
+ent-BaseMobArgocyte-desc = Опасный инопланетянин, найденный на другой стороне планет, известный своей склонностью грызть руины.
 
-ent-MobArgocyteSlurva-name = slurva
-ent-MobArgocyteSlurva-desc = A pathetic creature, incapable of doing much.
+ent-MobArgocyteSlurva-name = слюна
+ent-MobArgocyteSlurva-desc = Жалкое существо, не способное на многое.
 
-ent-MobArgocyteBarrier-name = barrier
-ent-MobArgocyteBarrier-desc = A dangerous alien found on the wrong side of planets, known for their propensity for munching on ruins.
+ent-MobArgocyteBarrier-name = барьер
+ent-MobArgocyteBarrier-desc = Опасный инопланетянин, найденный на другой стороне планет, известный своей склонностью грызть руины.
 
-ent-MobArgocyteSkitter-name = skitter
-ent-MobArgocyteSkitter-desc = A devious little alien... Make sure they don't run off with your rations!
+ent-MobArgocyteSkitter-name = носиться
+ent-MobArgocyteSkitter-desc = Коварный маленький инопланетянин... Следите, чтобы они не сбежали с вашим пайком!
 
-ent-MobArgocyteSwiper-name = swiper
-ent-MobArgocyteSwiper-desc = Where did that stack of steel go?
+ent-MobArgocyteSwiper-name = свипер
+ent-MobArgocyteSwiper-desc = Куда делась эта стопка стали?
 
-ent-MobArgocyteMolder-name = molder
-ent-MobArgocyteMolder-desc = A dangerous alien found on the wrong side of planets, known for their propensity for munching on ruins.
+ent-MobArgocyteMolder-name = формовщик
+ent-MobArgocyteMolder-desc = Опасный инопланетянин, найденный на другой стороне планет, известный своей склонностью грызть руины.
 
-ent-MobArgocytePouncer-name = pouncer
-ent-MobArgocytePouncer-desc = A dangerous alien found on the wrong side of planets, known for their propensity for munching on ruins.
+ent-MobArgocytePouncer-name = нападающий
+ent-MobArgocytePouncer-desc = Опасный инопланетянин, найденный на другой стороне планет, известный своей склонностью грызть руины.
 
-ent-MobArgocyteGlider-name = glider
-ent-MobArgocyteGlider-desc = A dangerous alien found on the wrong side of planets, known for their propensity for munching on ruins.
+ent-MobArgocyteGlider-name = планер
+ent-MobArgocyteGlider-desc = Опасный инопланетянин, найденный на другой стороне планет, известный своей склонностью грызть руины.
 
-ent-MobArgocyteHarvester-name = harvester
-ent-MobArgocyteHarvester-desc = A dangerous alien found on the wrong side of planets, known for their propensity for munching on ruins.
+ent-MobArgocyteHarvester-name = комбайн
+ent-MobArgocyteHarvester-desc = Опасный инопланетянин, найденный на другой стороне планет, известный своей склонностью грызть руины.
 
-ent-MobArgocyteCrawler-name = crawler
-ent-MobArgocyteCrawler-desc = Deadly, pack-animals that maul unsuspecting travelers.
+ent-MobArgocyteCrawler-name = гусеничный робот
+ent-MobArgocyteCrawler-desc = Смертоносные вьючные животные, терзающие ничего не подозревающих путешественников.
 
-ent-MobArgocyteEnforcer-name = enforcer
-ent-MobArgocyteEnforcer-desc = A dangerous alien found on the wrong side of planets, known for their propensity for munching on ruins.
+ent-MobArgocyteEnforcer-name = исполнитель
+ent-MobArgocyteEnforcer-desc = Опасный инопланетянин, найденный на другой стороне планет, известный своей склонностью грызть руины.
 
-ent-MobArgocyteFounder-name = founder
-ent-MobArgocyteFounder-desc = A dangerous alien found on the wrong side of planets, known for their propensity for munching on ruins.
+ent-MobArgocyteFounder-name = основатель
+ent-MobArgocyteFounder-desc = Опасный инопланетянин, найденный на другой стороне планет, известный своей склонностью грызть руины.
 
-ent-MobArgocyteLeviathing-name = leviathing
-ent-MobArgocyteLeviathing-desc = A dangerous alien found on the wrong side of planets, known for their propensity for munching on ruins.
+ent-MobArgocyteLeviathing-name = левиатинг
+ent-MobArgocyteLeviathing-desc = Опасный инопланетянин, найденный на другой стороне планет, известный своей склонностью грызть руины.
 

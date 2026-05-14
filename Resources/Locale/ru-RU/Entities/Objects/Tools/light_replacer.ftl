@@ -1,5 +1,5 @@
-ent-LightReplacer-name = light replacer
-ent-LightReplacer-desc = An item which uses magnets to easily replace broken lights. Refill by adding more lights into the replacer.
+ent-LightReplacer-name = заменитель света
+ent-LightReplacer-desc = Изделие, в котором используются магниты для легкой замены сломанных лампочек. Пополните запас, добавив больше фонарей в заменитель.
 
-ent-LightReplacerEmpty-name = item
+ent-LightReplacerEmpty-name = элемент
 

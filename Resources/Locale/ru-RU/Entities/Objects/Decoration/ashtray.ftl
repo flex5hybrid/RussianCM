@@ -1,3 +1,3 @@
-ent-Ashtray-name = ashtray
-ent-Ashtray-desc = Proven by scientists to improve the smoking experience by 37%!
+ent-Ashtray-name = пепельница
+ent-Ashtray-desc = Доказано учеными: улучшение удовольствия от курения на 37%!
 

@@ -1,28 +1,28 @@
-ent-BaseBattlemap-name = battlemap
-ent-BaseBattlemap-desc = A battlemap for your epic dungeon exploring to begin, pieces not included!
+ent-BaseBattlemap-name = карта боя
+ent-BaseBattlemap-desc = Карта битвы для начала эпического исследования подземелий, детали в комплект не входят!
 
-ent-GrassBattlemap-name = grass battlemap
-ent-GrassBattlemap-desc = A battlemap for your epic dungeon exploring to begin, pieces not included!
+ent-GrassBattlemap-name = карта боя травы
+ent-GrassBattlemap-desc = Карта битвы для начала эпического исследования подземелий, детали в комплект не входят!
 
-ent-MoonBattlemap-name = moon battlemap
-ent-MoonBattlemap-desc = A battlemap for your epic moon exploring to begin, pieces not included!
+ent-MoonBattlemap-name = карта лунного боя
+ent-MoonBattlemap-desc = Карта битвы для начала вашего эпического исследования Луны, детали в комплект не входят!
 
-ent-SandBattlemap-name = sand battlemap
-ent-SandBattlemap-desc = A battlemap for your epic beach episodes to begin, pieces not included!
+ent-SandBattlemap-name = карта песчаной битвы
+ent-SandBattlemap-desc = Карта битвы для ваших эпических пляжных эпизодов, детали в комплект не входят!
 
-ent-SnowBattlemap-name = snow battlemap
-ent-SnowBattlemap-desc = A battlemap for your frigid exploring to begin, pieces not included!
+ent-SnowBattlemap-name = карта снежной битвы
+ent-SnowBattlemap-desc = Карта битвы для начала вашего холодного исследования, детали в комплект не входят!
 
-ent-ShipBattlemap-name = ship battlemap
-ent-ShipBattlemap-desc = A battlemap for your epic space exploring to begin, pieces not included!
+ent-ShipBattlemap-name = карта боя корабля
+ent-ShipBattlemap-desc = Карта битвы для начала вашего эпического исследования космоса, детали в комплект не входят!
 
-ent-GrassBoardTabletop-name = grass battlemap
+ent-GrassBoardTabletop-name = карта боя травы
 
-ent-MoonBoardTabletop-name = grass battlemap
+ent-MoonBoardTabletop-name = карта боя травы
 
-ent-SandBoardTabletop-name = sand battlemap
+ent-SandBoardTabletop-name = карта песчаной битвы
 
-ent-SnowBoardTabletop-name = snow battlemap
+ent-SnowBoardTabletop-name = карта снежной битвы
 
-ent-ShipBoardTabletop-name = ship battlemap
+ent-ShipBoardTabletop-name = карта боя корабля
 

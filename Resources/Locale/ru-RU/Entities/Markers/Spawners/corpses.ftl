@@ -1,16 +1,16 @@
-ent-SalvageHumanCorpseSpawner-name = Human Corpse Spawner
+ent-SalvageHumanCorpseSpawner-name = Создатель человеческих трупов
 
-ent-RandomServiceCorpseSpawner-name = Random Service Corpse Spawner
+ent-RandomServiceCorpseSpawner-name = Случайный сервисный генератор трупов
 
-ent-RandomEngineerCorpseSpawner-name = Random Engineer Corpse Spawner
+ent-RandomEngineerCorpseSpawner-name = Случайный генератор трупов инженера
 
-ent-RandomCargoCorpseSpawner-name = Random Cargo Corpse Spawner
+ent-RandomCargoCorpseSpawner-name = Случайный генератор трупов
 
-ent-RandomMedicCorpseSpawner-name = Random Medic Corpse Spawner
+ent-RandomMedicCorpseSpawner-name = Случайный генератор трупов медиков
 
-ent-RandomScienceCorpseSpawner-name = Random Science Corpse Spawner
+ent-RandomScienceCorpseSpawner-name = Случайный научный генератор трупов
 
-ent-RandomSecurityCorpseSpawner-name = Random Security Corpse Spawner
+ent-RandomSecurityCorpseSpawner-name = Случайный генератор трупов охранников
 
-ent-RandomCommandCorpseSpawner-name = Random Command Corpse Spawner
+ent-RandomCommandCorpseSpawner-name = Случайный командный генератор трупов
 

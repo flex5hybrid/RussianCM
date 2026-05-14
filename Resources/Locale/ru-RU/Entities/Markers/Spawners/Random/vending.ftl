@@ -1,4 +1,4 @@
-ent-RandomVending-name = random vending machine spawner
+ent-RandomVending-name = Случайный спаунер торговых автоматов
 
-ent-RandomVendingClothing-name = random vending machine spawner
+ent-RandomVendingClothing-name = Случайный спаунер торговых автоматов
 

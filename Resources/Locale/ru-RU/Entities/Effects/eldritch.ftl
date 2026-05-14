@@ -1,2 +1,2 @@
-ent-EffectVoidBlink-name = void blink
+ent-EffectVoidBlink-name = пустота моргает
 

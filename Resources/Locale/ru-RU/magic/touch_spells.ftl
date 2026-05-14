@@ -1,12 +1,12 @@
-ent-ActionSmite-name = Smite
-ent-ActionSmite-desc = Instantly gibs a target.
+ent-ActionSmite-name = поразить
+ent-ActionSmite-desc = Мгновенно уничтожает цель.
 
-ent-ActionCluwne-name = Cluwne's Curse
-ent-ActionCluwne-desc = Turns someone into a Cluwne!
+ent-ActionCluwne-name = Проклятие Клюна
+ent-ActionCluwne-desc = Превращает кого-то в Клууна!
 
-ent-ActionSlippery-name = Slippery Slope
-ent-ActionSlippery-desc = Make someone slippery.
+ent-ActionSlippery-name = Скользкий склон
+ent-ActionSlippery-desc = Сделать кого-то скользким.
 
-ent-ActionSmiteNoReq-name = Smite
-ent-ActionSmiteNoReq-desc = Instantly gibs a target.
+ent-ActionSmiteNoReq-name = поразить
+ent-ActionSmiteNoReq-desc = Мгновенно уничтожает цель.
 

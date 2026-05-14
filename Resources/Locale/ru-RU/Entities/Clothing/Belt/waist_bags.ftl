@@ -1,3 +1,3 @@
-ent-ClothingBeltStorageWaistbag-name = leather waist bag
-ent-ClothingBeltStorageWaistbag-desc = A leather waist bag meant for carrying small items.
+ent-ClothingBeltStorageWaistbag-name = кожаная поясная сумка
+ent-ClothingBeltStorageWaistbag-desc = Кожаная поясная сумка, предназначенная для переноски мелких вещей.
 

@@ -1,4 +1,4 @@
-ent-SpawnMobSyndicateFootSoldier-name = syndicate footsoldier spawner
+ent-SpawnMobSyndicateFootSoldier-name = спаунер синдикатных пехотинцев
 
-ent-SpawnMobSyndicateFootsoldierPilot-name = syndicate shuttle pilot spawner
+ent-SpawnMobSyndicateFootsoldierPilot-name = создатель пилотов шаттла синдиката
 

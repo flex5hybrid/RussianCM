@@ -118,7 +118,7 @@ ent-RMCCrateBoxMagazineSentry-desc = Ящик с боеприпасами.
 ent-RMCCrateMagazineNapthalUT-name = напалм
 ent-RMCCrateMagazineNapthalUT-desc = Ящик с боеприпасами.
 
-ent-RMCCrateMagazineBGel-name = B-Gel
+ent-RMCCrateMagazineBGel-name = B-гель
 ent-RMCCrateMagazineBGel-desc = Ящик с боеприпасами.
 
 ent-RMCCrateMagazineFlamerMixed-name = топливо огнемёта
@@ -314,7 +314,7 @@ ent-RMCCrateGrenadesBoxHEFA-desc = Ящик с взрывчаткой.
 ent-RMCCrateGrenadesAirburstFragBox-name = airburst (осколочные)
 ent-RMCCrateGrenadesAirburstFragBox-desc = Ящик с взрывчаткой.
 
-ent-RMCCrateBoxAGMI-name = AGMI
+ent-RMCCrateBoxAGMI-name = МИГА
 ent-RMCCrateBoxAGMI-desc = Ящик с взрывчаткой.
 
 ent-RMCCrateGrenadesAirburstFrag-name = airburst осколочные
@@ -326,13 +326,13 @@ ent-RMCCrateGrenadesAirburstIncendiary-desc = Ящик с взрывчаткой
 ent-RMCCrateGrenadesAirburstSmoke-name = airburst дым
 ent-RMCCrateGrenadesAirburstSmoke-desc = Ящик с взрывчаткой.
 
-ent-RMCCrateGrenadesAirburstHornet-name = airburst hornet
+ent-RMCCrateGrenadesAirburstHornet-name = воздушный взрыв шершня
 ent-RMCCrateGrenadesAirburstHornet-desc = Ящик с взрывчаткой.
 
 ent-RMCCrateGrenadesAirburstStarShell-name = сигнальные
 ent-RMCCrateGrenadesAirburstStarShell-desc = Ящик с взрывчаткой.
 
-ent-RMCCrateGrenadesBatonSlug-name = baton slug
+ent-RMCCrateGrenadesBatonSlug-name = дубинка пуля
 ent-RMCCrateGrenadesBatonSlug-desc = Ящик с взрывчаткой.
 
 ent-RMCCrateExplosiveClaymoreMine-name = клейморы
@@ -461,7 +461,7 @@ ent-RMCCrateSU6-desc = Ящик с оружием.
 ent-RMCCrateM34-name = M34
 ent-RMCCrateM34-desc = Ящик с оружием.
 
-ent-RMCCrateMOU53-name = MOU53
+ent-RMCCrateMOU53-name = Меморандум о взаимопонимании53
 ent-RMCCrateMOU53-desc = Ящик с оружием.
 
 ent-RMCCrateXM51-name = XM51

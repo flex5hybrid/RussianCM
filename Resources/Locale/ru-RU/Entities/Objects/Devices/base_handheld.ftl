@@ -1,2 +1,2 @@
-ent-BaseHandheldComputer-name = item
+ent-BaseHandheldComputer-name = элемент
 

@@ -1,3 +1,3 @@
-ent-ProximitySensor-name = proximity sensor
-ent-ProximitySensor-desc = Senses things in close proximity.
+ent-ProximitySensor-name = датчик приближения
+ent-ProximitySensor-desc = Чувствует предметы, находящиеся в непосредственной близости.
 

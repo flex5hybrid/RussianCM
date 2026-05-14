@@ -1,7 +1,3 @@
-﻿rmc-ghost-role-information-pmc-rules = Вы — [color=orange][bold]ЧВК We-Yu[/bold][/color]. Ваша враждебность к морпехам зависит от указаний администрации.
-                                             Вы не помните свою прошлую жизнь и ничего из того, что узнали как призрак.
-                                             Вам разрешено помнить общие игровые знания (приготовление еды, использование предметов и т.д.).
-                                             Категорически [color=red]ЗАПРЕЩЕНО[/color] вспоминать имя, внешность и другие данные прошлого персонажа.
 rmc-ghost-role-information-pmc-description = Защищайте интересы Weston-Yamada. Обеспечьте безопасность корпоративного представителя. Отрицайте причастность We-Yu и не доверяйте силам UNMC. Открывайте огонь только в ответ или по приказу.
 # Стандартные роли
 rmc-ghost-name-pmc-standard = Оперативник We-Yu (Нейтральный)
@@ -55,3 +51,89 @@ rmc-job-name-pmc-bodyguard = Телохранитель
 rmc-ghost-name-pmc-bodyguard = Охранник Weston-Yamada (личная охрана)
 rmc-job-name-pmc-bodyguard-lead = Глава охраны
 rmc-ghost-name-pmc-bodyguard-lead = Старший охранник Weston-Yamada (личная охрана)
+
+# Missing entries synced from en-US
+
+rmc-ghost-role-information-pmc-rules = Вы являетесь участником [color=orange][bold]PMC[/bold][/color]. Вы можете или не можете быть враждебны морским пехотинцам, в зависимости от инструкций администратора.
+                                             You don't remember any of your previous life, and you don't remember anything you learned as a ghost.
+                                             You are allowed to remember knowledge about the game in general, such as how to cook, how to use objects, etc.
+                                             You are absolutely [color=red]NOT[/color] allowed to remember, say, the name, appearance, etc. of your previous character.
+
+rmc-ghost-role-information-pmc-whiteout-rules = Вы — оперативник [color=orange][bold]PMC «Белая мгла» [/bold][/color]. Следуйте инструкциям администратора.
+                                             You don't remember any of your previous life, and you don't remember anything you learned as a ghost.
+                                             You are allowed to remember knowledge about the game in general, such as how to cook, how to use objects, etc.
+                                             You are absolutely [color=red]NOT[/color] allowed to remember, say, the name, appearance, etc. of your previous character.
+
+rmc-job-description-pmc-pve-standard = Служите рядовыми членами сил ЧВК.
+
+rmc-job-description-pmc-pve-medic = Обеспечить, чтобы все члены команды ЧВК вернулись домой в целости и сохранности.
+
+rmc-job-description-pmc-pve-gunner = Используйте свою систему тяжелого вооружения, чтобы вести огонь и поддерживать остальную часть команды.
+
+rmc-job-name-pmc-field-operations-leader = Руководитель полевых операций
+
+rmc-job-prefix-pmc-field-operations-leader = ВОЛС
+
+rmc-job-name-pmc-corporate-goon = Корпоративная безопасность We-Yu
+
+rmc-job-name-pmc-corporate-goon-engi = Ве-Ю Специалист по корпоративной безопасности
+
+rmc-job-name-pmc-corporate-goon-medic = Ве-Ю Медик корпоративной безопасности
+
+rmc-job-name-pmc-corporate-goon-leader = We-Y Руководитель отдела корпоративной безопасности
+
+rmc-job-name-pmc-corporate-goon-secguard = Ве-Ю охранник
+
+rmc-job-name-pmc-pve-team-leader = Руководитель группы
+
+rmc-job-prefix-pmc-pve-team-leader = TL
+
+rmc-job-description-pmc-pve-team-leader = Облегчите бремя командира отряда. Убедитесь, что ваша команда эффективно выполняет заказы.
+
+rmc-job-name-pmc-pve-force-leader = Лидер отряда
+
+rmc-job-prefix-pmc-pve-force-leader = FL
+
+rmc-job-description-pmc-pve-force-leader = Командуйте наземными силами. Представлять волю и потребности командования сил.
+
+rmc-job-name-pmc-pve-force-command = Командование Силами
+
+rmc-job-prefix-pmc-pve-force-command = МИД
+
+rmc-job-description-pmc-pve-force-command = Координируйте свои действия как с руководителем группы, так и с руководителями групп, чтобы гарантировать, что ваши инструкции выполняются и ваша команда получает зарплату.
+
+rmc-ghost-name-pmc-whiteout = Боевой отряд ЧВК Ви-Ю «Белая мгла» (!ОТДЕЛ СМЕРТИ!)
+
+rmc-job-name-pmc-whiteout = Боевое подразделение команды «Белая мгла»
+
+rmc-ghost-name-pmc-whiteout-gunner = Боевой стрелковый отряд ЧВК Ви-Ю «Белая тьма» (!ОТДЕЛ СМЕРТИ!)
+
+rmc-job-name-pmc-whiteout-gunner = Отряд боевых стрелков команды «Белая мгла»
+
+rmc-job-prefix-pmc-whiteout = WO
+
+# Executives
+
+rmc-ghost-name-corp-exec-ass-man = Корпоративный помощник менеджера (нейтральный)
+
+rmc-job-name-corp-exec-ass-man = Корпоративный помощник менеджера
+
+rmc-ghost-name-corp-exec-div-man = Менеджер корпоративного подразделения (нейтральный)
+
+rmc-job-name-corp-exec-div-man = Менеджер корпоративного отдела
+
+rmc-ghost-name-corp-exec-chief = Корпоративный генеральный директор (нейтральный)
+
+rmc-job-name-corp-exec-chief = Корпоративный генеральный директор
+
+rmc-ghost-name-corp-dep-director = ВЕ-Я Заместитель директора (Нейтральный)
+
+rmc-job-name-corp-dep-director = ВЕ-Я заместитель директора
+
+rmc-ghost-name-corp-director = WE-YA Директор (Нейтральный)
+
+rmc-job-name-corp-director = МЫ-Я Директор
+
+# Corpses
+
+rmc-job-name-pmc-operator-corpse = Оператор ЧВК

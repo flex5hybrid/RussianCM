@@ -1,3 +1,3 @@
-ent-StrangePill-name = strange pill
-ent-StrangePill-desc = This unusual pill bears no markings. There's no telling what it contains.
+ent-StrangePill-name = странная таблетка
+ent-StrangePill-desc = Эта необычная таблетка не имеет никаких опознавательных знаков. Неизвестно, что в нем содержится.
 

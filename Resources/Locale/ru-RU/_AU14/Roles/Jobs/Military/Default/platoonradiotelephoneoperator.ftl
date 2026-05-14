@@ -1,2 +1,2 @@
-ent-AU14SpawnPointGOVFORRadioTelephoneOperator-name = Spawn Point GOVFOR Radio Telephone Operator
-ent-AU14SpawnPointGOVFORRadioTelephoneOperator-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointGOVFORRadioTelephoneOperator-name = Точка появления ГОВФОР Радиотелефонист
+ent-AU14SpawnPointGOVFORRadioTelephoneOperator-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

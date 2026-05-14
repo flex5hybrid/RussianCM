@@ -1,24 +1,24 @@
-ent-BaseAnomalyInjector-name = anomaly injector
+ent-BaseAnomalyInjector-name = аномальный инжектор
 
-ent-AnomalyTrapPyroclastic-name = anomaly injector
+ent-AnomalyTrapPyroclastic-name = аномальный инжектор
 
-ent-AnomalyTrapElectricity-name = anomaly injector
+ent-AnomalyTrapElectricity-name = аномальный инжектор
 
-ent-AnomalyTrapShadow-name = anomaly injector
+ent-AnomalyTrapShadow-name = аномальный инжектор
 
-ent-AnomalyTrapIce-name = anomaly injector
+ent-AnomalyTrapIce-name = аномальный инжектор
 
-ent-AnomalyTrapFlora-name = anomaly injector
+ent-AnomalyTrapFlora-name = аномальный инжектор
 
-ent-AnomalyTrapBluespace-name = anomaly injector
+ent-AnomalyTrapBluespace-name = аномальный инжектор
 
-ent-AnomalyTrapFlesh-name = anomaly injector
+ent-AnomalyTrapFlesh-name = аномальный инжектор
 
-ent-AnomalyTrapGravity-name = anomaly injector
+ent-AnomalyTrapGravity-name = аномальный инжектор
 
-ent-AnomalyTrapTech-name = anomaly injector
+ent-AnomalyTrapTech-name = аномальный инжектор
 
-ent-AnomalyTrapRock-name = anomaly injector
+ent-AnomalyTrapRock-name = аномальный инжектор
 
-ent-AnomalyTrapSanta-name = anomaly injector
+ent-AnomalyTrapSanta-name = аномальный инжектор
 

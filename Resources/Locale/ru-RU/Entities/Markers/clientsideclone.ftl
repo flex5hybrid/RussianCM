@@ -1,2 +1,2 @@
-ent-clientsideclone-name = clientsideclone
+ent-clientsideclone-name = клиентский клон
 

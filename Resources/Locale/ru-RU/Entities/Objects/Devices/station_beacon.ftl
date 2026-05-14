@@ -1,294 +1,294 @@
-ent-DefaultStationBeacon-name = station beacon
-ent-DefaultStationBeacon-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeacon-name = маяк станции
+ent-DefaultStationBeacon-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-StationBeaconPart-name = station beacon flatpack
-ent-StationBeaconPart-desc = A flatpack used for constructing a station beacon.
+ent-StationBeaconPart-name = плоский пакет радиомаяка станции
+ent-StationBeaconPart-desc = Плоская упаковка, используемая для сборки радиомаяка станции.
 
-ent-DefaultStationBeaconUnanchored-name = station beacon
-ent-DefaultStationBeaconUnanchored-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconUnanchored-name = маяк станции
+ent-DefaultStationBeaconUnanchored-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconCommand-name = station beacon
-ent-DefaultStationBeaconCommand-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconCommand-name = маяк станции
+ent-DefaultStationBeaconCommand-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconBridge-name = station beacon
-ent-DefaultStationBeaconBridge-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconBridge-name = маяк станции
+ent-DefaultStationBeaconBridge-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconVault-name = station beacon
-ent-DefaultStationBeaconVault-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconVault-name = маяк станции
+ent-DefaultStationBeaconVault-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconGateway-name = station beacon
-ent-DefaultStationBeaconGateway-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconGateway-name = маяк станции
+ent-DefaultStationBeaconGateway-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconCaptainsQuarters-name = station beacon
-ent-DefaultStationBeaconCaptainsQuarters-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconCaptainsQuarters-name = маяк станции
+ent-DefaultStationBeaconCaptainsQuarters-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconHOPOffice-name = station beacon
-ent-DefaultStationBeaconHOPOffice-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconHOPOffice-name = маяк станции
+ent-DefaultStationBeaconHOPOffice-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSecurity-name = station beacon
-ent-DefaultStationBeaconSecurity-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSecurity-name = маяк станции
+ent-DefaultStationBeaconSecurity-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconBrig-name = station beacon
-ent-DefaultStationBeaconBrig-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconBrig-name = маяк станции
+ent-DefaultStationBeaconBrig-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconBrigMed-name = station beacon
-ent-DefaultStationBeaconBrigMed-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconBrigMed-name = маяк станции
+ent-DefaultStationBeaconBrigMed-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconWardensOffice-name = station beacon
-ent-DefaultStationBeaconWardensOffice-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconWardensOffice-name = маяк станции
+ent-DefaultStationBeaconWardensOffice-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconHOSRoom-name = station beacon
-ent-DefaultStationBeaconHOSRoom-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconHOSRoom-name = маяк станции
+ent-DefaultStationBeaconHOSRoom-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconArmory-name = station beacon
-ent-DefaultStationBeaconArmory-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconArmory-name = маяк станции
+ent-DefaultStationBeaconArmory-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconPermaBrig-name = station beacon
-ent-DefaultStationBeaconPermaBrig-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconPermaBrig-name = маяк станции
+ent-DefaultStationBeaconPermaBrig-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconDetectiveRoom-name = station beacon
-ent-DefaultStationBeaconDetectiveRoom-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconDetectiveRoom-name = маяк станции
+ent-DefaultStationBeaconDetectiveRoom-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconCourtroom-name = station beacon
-ent-DefaultStationBeaconCourtroom-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconCourtroom-name = маяк станции
+ent-DefaultStationBeaconCourtroom-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconLawOffice-name = station beacon
-ent-DefaultStationBeaconLawOffice-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconLawOffice-name = маяк станции
+ent-DefaultStationBeaconLawOffice-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSecurityCheckpoint-name = station beacon
-ent-DefaultStationBeaconSecurityCheckpoint-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSecurityCheckpoint-name = маяк станции
+ent-DefaultStationBeaconSecurityCheckpoint-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconMedical-name = station beacon
-ent-DefaultStationBeaconMedical-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconMedical-name = маяк станции
+ent-DefaultStationBeaconMedical-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconMedbay-name = station beacon
-ent-DefaultStationBeaconMedbay-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconMedbay-name = маяк станции
+ent-DefaultStationBeaconMedbay-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconChemistry-name = station beacon
-ent-DefaultStationBeaconChemistry-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconChemistry-name = маяк станции
+ent-DefaultStationBeaconChemistry-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconCryonics-name = station beacon
-ent-DefaultStationBeaconCryonics-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconCryonics-name = маяк станции
+ent-DefaultStationBeaconCryonics-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconCMORoom-name = station beacon
-ent-DefaultStationBeaconCMORoom-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconCMORoom-name = маяк станции
+ent-DefaultStationBeaconCMORoom-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconMorgue-name = station beacon
-ent-DefaultStationBeaconMorgue-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconMorgue-name = маяк станции
+ent-DefaultStationBeaconMorgue-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSurgery-name = station beacon
-ent-DefaultStationBeaconSurgery-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSurgery-name = маяк станции
+ent-DefaultStationBeaconSurgery-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconPsychology-name = station beacon
-ent-DefaultStationBeaconPsychology-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconPsychology-name = маяк станции
+ent-DefaultStationBeaconPsychology-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconClinic-name = station beacon
-ent-DefaultStationBeaconClinic-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconClinic-name = маяк станции
+ent-DefaultStationBeaconClinic-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconScience-name = station beacon
-ent-DefaultStationBeaconScience-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconScience-name = маяк станции
+ent-DefaultStationBeaconScience-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconRND-name = station beacon
-ent-DefaultStationBeaconRND-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconRND-name = маяк станции
+ent-DefaultStationBeaconRND-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconServerRoom-name = station beacon
-ent-DefaultStationBeaconServerRoom-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconServerRoom-name = маяк станции
+ent-DefaultStationBeaconServerRoom-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconRDRoom-name = station beacon
-ent-DefaultStationBeaconRDRoom-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconRDRoom-name = маяк станции
+ent-DefaultStationBeaconRDRoom-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconRobotics-name = station beacon
-ent-DefaultStationBeaconRobotics-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconRobotics-name = маяк станции
+ent-DefaultStationBeaconRobotics-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconArtifactLab-name = station beacon
-ent-DefaultStationBeaconArtifactLab-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconArtifactLab-name = маяк станции
+ent-DefaultStationBeaconArtifactLab-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconAnomalyGenerator-name = station beacon
-ent-DefaultStationBeaconAnomalyGenerator-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconAnomalyGenerator-name = маяк станции
+ent-DefaultStationBeaconAnomalyGenerator-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSupply-name = station beacon
-ent-DefaultStationBeaconSupply-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSupply-name = маяк станции
+ent-DefaultStationBeaconSupply-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconCargoReception-name = station beacon
-ent-DefaultStationBeaconCargoReception-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconCargoReception-name = маяк станции
+ent-DefaultStationBeaconCargoReception-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconCargoBay-name = station beacon
-ent-DefaultStationBeaconCargoBay-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconCargoBay-name = маяк станции
+ent-DefaultStationBeaconCargoBay-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconQMRoom-name = station beacon
-ent-DefaultStationBeaconQMRoom-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconQMRoom-name = маяк станции
+ent-DefaultStationBeaconQMRoom-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSalvage-name = station beacon
-ent-DefaultStationBeaconSalvage-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSalvage-name = маяк станции
+ent-DefaultStationBeaconSalvage-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconEngineering-name = station beacon
-ent-DefaultStationBeaconEngineering-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconEngineering-name = маяк станции
+ent-DefaultStationBeaconEngineering-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconCERoom-name = station beacon
-ent-DefaultStationBeaconCERoom-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconCERoom-name = маяк станции
+ent-DefaultStationBeaconCERoom-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconAME-name = station beacon
-ent-DefaultStationBeaconAME-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconAME-name = маяк станции
+ent-DefaultStationBeaconAME-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSolars-name = station beacon
-ent-DefaultStationBeaconSolars-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSolars-name = маяк станции
+ent-DefaultStationBeaconSolars-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSolarsN-name = station beacon
-ent-DefaultStationBeaconSolarsN-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSolarsN-name = маяк станции
+ent-DefaultStationBeaconSolarsN-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSolarsNE-name = station beacon
-ent-DefaultStationBeaconSolarsNE-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSolarsNE-name = маяк станции
+ent-DefaultStationBeaconSolarsNE-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSolarsE-name = station beacon
-ent-DefaultStationBeaconSolarsE-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSolarsE-name = маяк станции
+ent-DefaultStationBeaconSolarsE-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSolarsSE-name = station beacon
-ent-DefaultStationBeaconSolarsSE-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSolarsSE-name = маяк станции
+ent-DefaultStationBeaconSolarsSE-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSolarsS-name = station beacon
-ent-DefaultStationBeaconSolarsS-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSolarsS-name = маяк станции
+ent-DefaultStationBeaconSolarsS-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSolarsSW-name = station beacon
-ent-DefaultStationBeaconSolarsSW-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSolarsSW-name = маяк станции
+ent-DefaultStationBeaconSolarsSW-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSolarsW-name = station beacon
-ent-DefaultStationBeaconSolarsW-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSolarsW-name = маяк станции
+ent-DefaultStationBeaconSolarsW-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSolarsNW-name = station beacon
-ent-DefaultStationBeaconSolarsNW-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSolarsNW-name = маяк станции
+ent-DefaultStationBeaconSolarsNW-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconGravGen-name = station beacon
-ent-DefaultStationBeaconGravGen-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconGravGen-name = маяк станции
+ent-DefaultStationBeaconGravGen-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconAnchor-name = station beacon
-ent-DefaultStationBeaconAnchor-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconAnchor-name = маяк станции
+ent-DefaultStationBeaconAnchor-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconSingularity-name = station beacon
-ent-DefaultStationBeaconSingularity-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconSingularity-name = маяк станции
+ent-DefaultStationBeaconSingularity-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconPowerBank-name = station beacon
-ent-DefaultStationBeaconPowerBank-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconPowerBank-name = маяк станции
+ent-DefaultStationBeaconPowerBank-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconTelecoms-name = station beacon
-ent-DefaultStationBeaconTelecoms-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconTelecoms-name = маяк станции
+ent-DefaultStationBeaconTelecoms-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconAtmospherics-name = station beacon
-ent-DefaultStationBeaconAtmospherics-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconAtmospherics-name = маяк станции
+ent-DefaultStationBeaconAtmospherics-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconTEG-name = station beacon
-ent-DefaultStationBeaconTEG-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconTEG-name = маяк станции
+ent-DefaultStationBeaconTEG-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconTechVault-name = station beacon
-ent-DefaultStationBeaconTechVault-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconTechVault-name = маяк станции
+ent-DefaultStationBeaconTechVault-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconService-name = station beacon
-ent-DefaultStationBeaconService-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconService-name = маяк станции
+ent-DefaultStationBeaconService-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconKitchen-name = station beacon
-ent-DefaultStationBeaconKitchen-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconKitchen-name = маяк станции
+ent-DefaultStationBeaconKitchen-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconBar-name = station beacon
-ent-DefaultStationBeaconBar-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconBar-name = маяк станции
+ent-DefaultStationBeaconBar-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconBotany-name = station beacon
-ent-DefaultStationBeaconBotany-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconBotany-name = маяк станции
+ent-DefaultStationBeaconBotany-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconJanitorsCloset-name = station beacon
-ent-DefaultStationBeaconJanitorsCloset-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconJanitorsCloset-name = маяк станции
+ent-DefaultStationBeaconJanitorsCloset-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconAI-name = station beacon
-ent-DefaultStationBeaconAI-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconAI-name = маяк станции
+ent-DefaultStationBeaconAI-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconAISatellite-name = station beacon
-ent-DefaultStationBeaconAISatellite-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconAISatellite-name = маяк станции
+ent-DefaultStationBeaconAISatellite-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconAICore-name = station beacon
-ent-DefaultStationBeaconAICore-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconAICore-name = маяк станции
+ent-DefaultStationBeaconAICore-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconAIUpload-name = station beacon
-ent-DefaultStationBeaconAIUpload-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconAIUpload-name = маяк станции
+ent-DefaultStationBeaconAIUpload-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconAIPower-name = station beacon
-ent-DefaultStationBeaconAIPower-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconAIPower-name = маяк станции
+ent-DefaultStationBeaconAIPower-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconArrivals-name = station beacon
-ent-DefaultStationBeaconArrivals-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconArrivals-name = маяк станции
+ent-DefaultStationBeaconArrivals-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconEvac-name = station beacon
-ent-DefaultStationBeaconEvac-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconEvac-name = маяк станции
+ent-DefaultStationBeaconEvac-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconDockingArm-name = station beacon
-ent-DefaultStationBeaconDockingArm-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconDockingArm-name = маяк станции
+ent-DefaultStationBeaconDockingArm-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconEVAStorage-name = station beacon
-ent-DefaultStationBeaconEVAStorage-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconEVAStorage-name = маяк станции
+ent-DefaultStationBeaconEVAStorage-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconChapel-name = station beacon
-ent-DefaultStationBeaconChapel-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconChapel-name = маяк станции
+ent-DefaultStationBeaconChapel-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconLibrary-name = station beacon
-ent-DefaultStationBeaconLibrary-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconLibrary-name = маяк станции
+ent-DefaultStationBeaconLibrary-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconReporter-name = station beacon
-ent-DefaultStationBeaconReporter-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconReporter-name = маяк станции
+ent-DefaultStationBeaconReporter-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconTheater-name = station beacon
-ent-DefaultStationBeaconTheater-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconTheater-name = маяк станции
+ent-DefaultStationBeaconTheater-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconDorms-name = station beacon
-ent-DefaultStationBeaconDorms-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconDorms-name = маяк станции
+ent-DefaultStationBeaconDorms-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconToolRoom-name = station beacon
-ent-DefaultStationBeaconToolRoom-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconToolRoom-name = маяк станции
+ent-DefaultStationBeaconToolRoom-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconDisposals-name = station beacon
-ent-DefaultStationBeaconDisposals-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconDisposals-name = маяк станции
+ent-DefaultStationBeaconDisposals-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconCryosleep-name = station beacon
-ent-DefaultStationBeaconCryosleep-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconCryosleep-name = маяк станции
+ent-DefaultStationBeaconCryosleep-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconEscapePod-name = station beacon
-ent-DefaultStationBeaconEscapePod-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconEscapePod-name = маяк станции
+ent-DefaultStationBeaconEscapePod-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconEscapePodN-name = station beacon
-ent-DefaultStationBeaconEscapePodN-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconEscapePodN-name = маяк станции
+ent-DefaultStationBeaconEscapePodN-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconEscapePodNE-name = station beacon
-ent-DefaultStationBeaconEscapePodNE-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconEscapePodNE-name = маяк станции
+ent-DefaultStationBeaconEscapePodNE-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconEscapePodE-name = station beacon
-ent-DefaultStationBeaconEscapePodE-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconEscapePodE-name = маяк станции
+ent-DefaultStationBeaconEscapePodE-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconEscapePodSE-name = station beacon
-ent-DefaultStationBeaconEscapePodSE-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconEscapePodSE-name = маяк станции
+ent-DefaultStationBeaconEscapePodSE-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconEscapePodS-name = station beacon
-ent-DefaultStationBeaconEscapePodS-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconEscapePodS-name = маяк станции
+ent-DefaultStationBeaconEscapePodS-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconEscapePodSW-name = station beacon
-ent-DefaultStationBeaconEscapePodSW-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconEscapePodSW-name = маяк станции
+ent-DefaultStationBeaconEscapePodSW-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconEscapePodW-name = station beacon
-ent-DefaultStationBeaconEscapePodW-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconEscapePodW-name = маяк станции
+ent-DefaultStationBeaconEscapePodW-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconEscapePodNW-name = station beacon
-ent-DefaultStationBeaconEscapePodNW-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconEscapePodNW-name = маяк станции
+ent-DefaultStationBeaconEscapePodNW-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconVox-name = station beacon
-ent-DefaultStationBeaconVox-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconVox-name = маяк станции
+ent-DefaultStationBeaconVox-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconGhost-name = station beacon
-ent-DefaultStationBeaconGhost-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconGhost-name = маяк станции
+ent-DefaultStationBeaconGhost-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconCentComm-name = station beacon
-ent-DefaultStationBeaconCentComm-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconCentComm-name = маяк станции
+ent-DefaultStationBeaconCentComm-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconCentCommAfterhours-name = station beacon
-ent-DefaultStationBeaconCentCommAfterhours-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconCentCommAfterhours-name = маяк станции
+ent-DefaultStationBeaconCentCommAfterhours-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconCentCommThunderdome-name = station beacon
-ent-DefaultStationBeaconCentCommThunderdome-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconCentCommThunderdome-name = маяк станции
+ent-DefaultStationBeaconCentCommThunderdome-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 
-ent-DefaultStationBeaconCentCommERT-name = station beacon
-ent-DefaultStationBeaconCentCommERT-desc = A small device that transmits information to station maps. Can be configured.
+ent-DefaultStationBeaconCentCommERT-name = маяк станции
+ent-DefaultStationBeaconCentCommERT-desc = Небольшое устройство, передающее информацию на карты станций. Можно настроить.
 

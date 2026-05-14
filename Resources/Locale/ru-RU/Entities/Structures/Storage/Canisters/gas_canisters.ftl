@@ -1,81 +1,81 @@
-ent-GasCanister-name = gas canister
-ent-GasCanister-desc = A canister that can contain any type of gas. It can be attached to connector ports using a wrench.
+ent-GasCanister-name = газовый баллон
+ent-GasCanister-desc = Канистра, в которой может содержаться любой тип газа. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-StorageCanister-name = storage canister
-ent-StorageCanister-desc = A canister that can contain any type of gas. It can be attached to connector ports using a wrench.
+ent-StorageCanister-name = канистра для хранения
+ent-StorageCanister-desc = Канистра, в которой может содержаться любой тип газа. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-AirCanister-name = air canister
-ent-AirCanister-desc = A canister that can contain any type of gas. This one is supposed to contain air mixture. It can be attached to connector ports using a wrench.
+ent-AirCanister-name = воздушный баллон
+ent-AirCanister-desc = Канистра, в которой может содержаться любой тип газа. Предполагается, что в нем находится воздушная смесь. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-OxygenCanister-name = oxygen canister
-ent-OxygenCanister-desc = A canister that can contain any type of gas. This one is supposed to contain oxygen. It can be attached to connector ports using a wrench.
+ent-OxygenCanister-name = кислородный баллон
+ent-OxygenCanister-desc = Канистра, в которой может содержаться любой тип газа. Предполагается, что он содержит кислород. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-LiquidOxygenCanister-name = liquid oxygen canister
-ent-LiquidOxygenCanister-desc = A canister that can contain any type of gas. This one is supposed to contain liquid oxygen. It can be attached to connector ports using a wrench.
+ent-LiquidOxygenCanister-name = баллон с жидким кислородом
+ent-LiquidOxygenCanister-desc = Канистра, в которой может содержаться любой тип газа. Предполагается, что он содержит жидкий кислород. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-NitrogenCanister-name = nitrogen canister
-ent-NitrogenCanister-desc = A canister that can contain any type of gas. This one is supposed to contain nitrogen. It can be attached to connector ports using a wrench.
+ent-NitrogenCanister-name = канистра с азотом
+ent-NitrogenCanister-desc = Канистра, в которой может содержаться любой тип газа. Предполагается, что он содержит азот. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-LiquidNitrogenCanister-name = liquid nitrogen canister
-ent-LiquidNitrogenCanister-desc = A canister that can contain any type of gas. This one is supposed to contain liquid nitrogen. It can be attached to connector ports using a wrench.
+ent-LiquidNitrogenCanister-name = канистра с жидким азотом
+ent-LiquidNitrogenCanister-desc = Канистра, в которой может содержаться любой тип газа. Предполагается, что он содержит жидкий азот. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-CarbonDioxideCanister-name = carbon dioxide canister
-ent-CarbonDioxideCanister-desc = A canister that can contain any type of gas. This one is supposed to contain carbon dioxide. It can be attached to connector ports using a wrench.
+ent-CarbonDioxideCanister-name = канистра с углекислым газом
+ent-CarbonDioxideCanister-desc = Канистра, в которой может содержаться любой тип газа. Предполагается, что он содержит углекислый газ. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-LiquidCarbonDioxideCanister-name = liquid carbon dioxide canister
-ent-LiquidCarbonDioxideCanister-desc = A canister that can contain any type of gas. This one is supposed to contain liquid carbon dioxide. It can be attached to connector ports using a wrench.
+ent-LiquidCarbonDioxideCanister-name = канистра с жидким углекислым газом
+ent-LiquidCarbonDioxideCanister-desc = Канистра, в которой может содержаться любой тип газа. Предполагается, что он содержит жидкий углекислый газ. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-PlasmaCanister-name = plasma canister
-ent-PlasmaCanister-desc = A canister that can contain any type of gas. This one is supposed to contain plasma. It can be attached to connector ports using a wrench.
+ent-PlasmaCanister-name = плазменный баллон
+ent-PlasmaCanister-desc = Канистра, в которой может содержаться любой тип газа. Предполагается, что он содержит плазму. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-TritiumCanister-name = tritium canister
-ent-TritiumCanister-desc = A canister that can contain any type of gas. This one is supposed to contain tritium. It can be attached to connector ports using a wrench.
+ent-TritiumCanister-name = канистра с тритием
+ent-TritiumCanister-desc = Канистра, в которой может содержаться любой тип газа. Предполагается, что он содержит тритий. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-WaterVaporCanister-name = water vapor canister
-ent-WaterVaporCanister-desc = A canister that can contain any type of gas. This one is supposed to contain water vapor. It can be attached to connector ports using a wrench.
+ent-WaterVaporCanister-name = канистра с водяным паром
+ent-WaterVaporCanister-desc = Канистра, в которой может содержаться любой тип газа. Предполагается, что он содержит водяной пар. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-AmmoniaCanister-name = ammonia canister
-ent-AmmoniaCanister-desc = A canister that can contain any type of gas. This one is supposed to contain ammonia. It can be attached to connector ports using a wrench.
+ent-AmmoniaCanister-name = канистра с аммиаком
+ent-AmmoniaCanister-desc = Канистра, в которой может содержаться любой тип газа. Предполагается, что он содержит аммиак. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-NitrousOxideCanister-name = nitrous oxide canister
-ent-NitrousOxideCanister-desc = A canister that can contain any type of gas. This one is supposed to contain nitrous oxide. It can be attached to connector ports using a wrench.
+ent-NitrousOxideCanister-name = канистра закиси азота
+ent-NitrousOxideCanister-desc = Канистра, в которой может содержаться любой тип газа. Предполагается, что он содержит закись азота. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-FrezonCanister-name = frezon canister
-ent-FrezonCanister-desc = A canister that can contain any type of gas. This one is supposed to contain frezon. It can be attached to connector ports using a wrench.
+ent-FrezonCanister-name = канистра с фрезоном
+ent-FrezonCanister-desc = Канистра, в которой может содержаться любой тип газа. Предполагается, что он содержит фрезон. Его можно прикрепить к портам разъема с помощью гаечного ключа.
 
-ent-GasCanisterBrokenBase-name = broken gas canister
-ent-GasCanisterBrokenBase-desc = A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
+ent-GasCanisterBrokenBase-name = сломанный газовый баллон
+ent-GasCanisterBrokenBase-desc = Сломанный газовый баллон. Это еще не бесполезно, так как его можно спасти, используя высококачественные материалы.
 
-ent-WaterVaporCanisterBroken-name = broken water vapor canister
-ent-WaterVaporCanisterBroken-desc = A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
+ent-WaterVaporCanisterBroken-name = сломанный баллон с водяным паром
+ent-WaterVaporCanisterBroken-desc = Сломанный газовый баллон. Это еще не бесполезно, так как его можно спасти, используя высококачественные материалы.
 
-ent-StorageCanisterBroken-name = broken gas canister
-ent-StorageCanisterBroken-desc = A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
+ent-StorageCanisterBroken-name = сломанный газовый баллон
+ent-StorageCanisterBroken-desc = Сломанный газовый баллон. Это еще не бесполезно, так как его можно спасти, используя высококачественные материалы.
 
-ent-AirCanisterBroken-name = broken gas canister
-ent-AirCanisterBroken-desc = A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
+ent-AirCanisterBroken-name = сломанный газовый баллон
+ent-AirCanisterBroken-desc = Сломанный газовый баллон. Это еще не бесполезно, так как его можно спасти, используя высококачественные материалы.
 
-ent-OxygenCanisterBroken-name = broken gas canister
-ent-OxygenCanisterBroken-desc = A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
+ent-OxygenCanisterBroken-name = сломанный газовый баллон
+ent-OxygenCanisterBroken-desc = Сломанный газовый баллон. Это еще не бесполезно, так как его можно спасти, используя высококачественные материалы.
 
-ent-NitrogenCanisterBroken-name = broken gas canister
-ent-NitrogenCanisterBroken-desc = A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
+ent-NitrogenCanisterBroken-name = сломанный газовый баллон
+ent-NitrogenCanisterBroken-desc = Сломанный газовый баллон. Это еще не бесполезно, так как его можно спасти, используя высококачественные материалы.
 
-ent-CarbonDioxideCanisterBroken-name = broken gas canister
-ent-CarbonDioxideCanisterBroken-desc = A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
+ent-CarbonDioxideCanisterBroken-name = сломанный газовый баллон
+ent-CarbonDioxideCanisterBroken-desc = Сломанный газовый баллон. Это еще не бесполезно, так как его можно спасти, используя высококачественные материалы.
 
-ent-PlasmaCanisterBroken-name = broken gas canister
-ent-PlasmaCanisterBroken-desc = A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
+ent-PlasmaCanisterBroken-name = сломанный газовый баллон
+ent-PlasmaCanisterBroken-desc = Сломанный газовый баллон. Это еще не бесполезно, так как его можно спасти, используя высококачественные материалы.
 
-ent-TritiumCanisterBroken-name = broken gas canister
-ent-TritiumCanisterBroken-desc = A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
+ent-TritiumCanisterBroken-name = сломанный газовый баллон
+ent-TritiumCanisterBroken-desc = Сломанный газовый баллон. Это еще не бесполезно, так как его можно спасти, используя высококачественные материалы.
 
-ent-AmmoniaCanisterBroken-name = broken gas canister
-ent-AmmoniaCanisterBroken-desc = A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
+ent-AmmoniaCanisterBroken-name = сломанный газовый баллон
+ent-AmmoniaCanisterBroken-desc = Сломанный газовый баллон. Это еще не бесполезно, так как его можно спасти, используя высококачественные материалы.
 
-ent-NitrousOxideCanisterBroken-name = broken gas canister
-ent-NitrousOxideCanisterBroken-desc = A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
+ent-NitrousOxideCanisterBroken-name = сломанный газовый баллон
+ent-NitrousOxideCanisterBroken-desc = Сломанный газовый баллон. Это еще не бесполезно, так как его можно спасти, используя высококачественные материалы.
 
-ent-FrezonCanisterBroken-name = broken gas canister
-ent-FrezonCanisterBroken-desc = A broken gas canister. Not useless yet, as it can be salvaged for high quality materials.
+ent-FrezonCanisterBroken-name = сломанный газовый баллон
+ent-FrezonCanisterBroken-desc = Сломанный газовый баллон. Это еще не бесполезно, так как его можно спасти, используя высококачественные материалы.
 

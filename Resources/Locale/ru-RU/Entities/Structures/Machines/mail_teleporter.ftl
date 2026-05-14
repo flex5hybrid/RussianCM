@@ -1,3 +1,3 @@
-ent-CargoMailTeleporter-name = mail teleporter
-ent-CargoMailTeleporter-desc = Periodically teleports in mail to deliver across the station.
+ent-CargoMailTeleporter-name = почтовый телепорт
+ent-CargoMailTeleporter-desc = Периодически телепортирует почту для доставки по станции.
 

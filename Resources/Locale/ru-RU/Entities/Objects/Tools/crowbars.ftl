@@ -1,16 +1,16 @@
-ent-BaseCrowbar-name = crowbar
+ent-BaseCrowbar-name = лом
 
-ent-Crowbar-name = crowbar
-ent-Crowbar-desc = A multipurpose tool to pry open doors and fight interdimensional invaders.
+ent-Crowbar-name = лом
+ent-Crowbar-desc = Многоцелевой инструмент для взлома дверей и борьбы с межпространственными захватчиками.
 
-ent-CrowbarRed-name = emergency crowbar
-ent-CrowbarRed-desc = An emergency crowbar designed to pry open doors and firelocks during power outages.
+ent-CrowbarRed-name = аварийный лом
+ent-CrowbarRed-desc = Аварийный лом, предназначенный для взлома дверей и противопожарных замков во время отключения электроэнергии.
 
-ent-CrowbarGreen-desc = A multipurpose tool to pry open doors and fight interdimensional invaders, printed from an autolathe.
+ent-CrowbarGreen-desc = Многоцелевой инструмент для взлома дверей и борьбы с межпространственными захватчиками, напечатанный на токарном станке.
 
-ent-CrowbarOrange-name = crowbar
-ent-CrowbarOrange-desc = A multipurpose tool to pry open doors and fight interdimensional invaders, found in toolboxes.
+ent-CrowbarOrange-name = лом
+ent-CrowbarOrange-desc = Многоцелевой инструмент для взлома дверей и борьбы с межпространственными захватчиками. Его можно найти в ящиках с инструментами.
 
-ent-CrowbarYellow-name = crowbar
-ent-CrowbarYellow-desc = A multipurpose tool to pry open doors and fight interdimensional invaders, dispensed from Engineering.
+ent-CrowbarYellow-name = лом
+ent-CrowbarYellow-desc = Многоцелевой инструмент для взлома дверей и борьбы с межпространственными захватчиками, выданный Инженерным отделом.
 

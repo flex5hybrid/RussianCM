@@ -1,6 +1,6 @@
-ent-CryoPod-name = cryo pod
-ent-CryoPod-desc = A special machine intended to create a safe environment for the use of chemicals that react in cold environments.
+ent-CryoPod-name = крио-капсула
+ent-CryoPod-desc = Специальная машина, предназначенная для создания безопасной среды для использования химикатов, вступающих в реакцию в холодных условиях.
 
-ent-CryoPodDestroyed-name = destroyed cryo pod
-ent-CryoPodDestroyed-desc = A cryo pod that has seen better days. It's entirely inoperable; not good for anything but scrap.
+ent-CryoPodDestroyed-name = разрушенная криокапсула
+ent-CryoPodDestroyed-desc = Криокапсула, знавшая лучшие дни. Это совершенно неработоспособно; не годится ни на что, кроме лома.
 

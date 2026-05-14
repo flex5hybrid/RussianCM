@@ -1,3 +1,3 @@
-ent-MagazineFoamBox-name = ammunition box (foam)
-ent-MagazineFoamBox-desc = Box containing a 100-round belt of linked .30 rifle rounds, used by light machine guns such as the L6. Intended to hold general-purpose kinetic ammunition.
+ent-MagazineFoamBox-name = ящик для боеприпасов (пенопласт)
+ent-MagazineFoamBox-desc = Коробка с лентой на 100 патронов, состоящей из связанных винтовочных патронов .30, используемых в ручных пулеметах, таких как L6. Предназначен для хранения кинетических боеприпасов общего назначения.
 

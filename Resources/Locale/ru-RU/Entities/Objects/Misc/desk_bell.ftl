@@ -1,3 +1,3 @@
-ent-DeskBell-name = desk bell
-ent-DeskBell-desc = The cornerstone of any customer service job. You feel an unending urge to ring it.
+ent-DeskBell-name = настольный звонок
+ent-DeskBell-desc = Краеугольный камень любой работы по обслуживанию клиентов. Вы чувствуете непрекращающееся желание позвонить.
 

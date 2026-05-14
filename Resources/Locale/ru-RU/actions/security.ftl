@@ -1,3 +1,3 @@
-ent-ActionToggleKnuckleDustersStun-name = Toggle stun knuckle dusters
-ent-ActionToggleKnuckleDustersStun-desc = Toggles the duster's built in stun baton.
+ent-ActionToggleKnuckleDustersStun-name = Toggle оглушающие кастеты
+ent-ActionToggleKnuckleDustersStun-desc = Включает встроенную в дастер электрошоковую дубинку.
 

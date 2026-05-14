@@ -1,18 +1,18 @@
-ent-AirlockMaintLocked-name = maintenance access
+ent-AirlockMaintLocked-name = доступ для обслуживания
 
-ent-AirlockExternalShuttleSyndicateLocked-name = external airlock
-ent-AirlockExternalShuttleSyndicateLocked-desc = Necessary for connecting two space craft together.
+ent-AirlockExternalShuttleSyndicateLocked-name = внешний шлюзовой шлюз
+ent-AirlockExternalShuttleSyndicateLocked-desc = Необходим для соединения двух космических кораблей вместе.
 
-ent-AirlockExternalShuttleNukeopLocked-name = external airlock
-ent-AirlockExternalShuttleNukeopLocked-desc = Necessary for connecting two space craft together.
+ent-AirlockExternalShuttleNukeopLocked-name = внешний шлюзовой шлюз
+ent-AirlockExternalShuttleNukeopLocked-desc = Необходим для соединения двух космических кораблей вместе.
 
 ent-AirlockExternalGlassShuttleLocked-name = construction-recipe-airlock-glass-shuttle
 
-ent-AirlockExternalGlassShuttleSyndicateLocked-name = external airlock
-ent-AirlockExternalGlassShuttleSyndicateLocked-desc = Necessary for connecting two space craft together.
+ent-AirlockExternalGlassShuttleSyndicateLocked-name = внешний шлюзовой шлюз
+ent-AirlockExternalGlassShuttleSyndicateLocked-desc = Необходим для соединения двух космических кораблей вместе.
 
-ent-AirlockExternalGlassShuttleNukeopLocked-name = external airlock
-ent-AirlockExternalGlassShuttleNukeopLocked-desc = Necessary for connecting two space craft together.
+ent-AirlockExternalGlassShuttleNukeopLocked-name = внешний шлюзовой шлюз
+ent-AirlockExternalGlassShuttleNukeopLocked-desc = Необходим для соединения двух космических кораблей вместе.
 
 ent-AirlockExternalGlassShuttleEmergencyLocked-name = construction-recipe-airlock-glass-shuttle
 
@@ -20,17 +20,17 @@ ent-AirlockExternalGlassShuttleArrivals-name = construction-recipe-airlock-glass
 
 ent-AirlockExternalGlassShuttleEscape-name = construction-recipe-airlock-glass-shuttle
 
-ent-HighSecCentralCommandLocked-name = high security door
-ent-HighSecCentralCommandLocked-desc = Keeps the bad out and keeps the good in.
+ent-HighSecCentralCommandLocked-name = дверь повышенной безопасности
+ent-HighSecCentralCommandLocked-desc = Удерживает плохое и сохраняет хорошее.
 
-ent-HighSecCommandLocked-name = high security door
-ent-HighSecCommandLocked-desc = Keeps the bad out and keeps the good in.
+ent-HighSecCommandLocked-name = дверь повышенной безопасности
+ent-HighSecCommandLocked-desc = Удерживает плохое и сохраняет хорошее.
 
-ent-HighSecCaptainLocked-name = high security door
-ent-HighSecCaptainLocked-desc = Keeps the bad out and keeps the good in.
+ent-HighSecCaptainLocked-name = дверь повышенной безопасности
+ent-HighSecCaptainLocked-desc = Удерживает плохое и сохраняет хорошее.
 
-ent-HighSecArmoryLocked-name = high security door
-ent-HighSecArmoryLocked-desc = Keeps the bad out and keeps the good in.
+ent-HighSecArmoryLocked-name = дверь повышенной безопасности
+ent-HighSecArmoryLocked-desc = Удерживает плохое и сохраняет хорошее.
 
-ent-AirlockHatchSyndicate-name = airtight hatch
+ent-AirlockHatchSyndicate-name = герметичный люк
 

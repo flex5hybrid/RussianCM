@@ -1,10 +1,10 @@
-ent-ExplosivePayload-name = explosive payload
+ent-ExplosivePayload-name = взрывная полезная нагрузка
 
-ent-ChemicalPayload-name = chemical payload
-ent-ChemicalPayload-desc = A chemical payload. Has space to store two beakers. In combination with a trigger and a case, this can be used to initiate chemical reactions.
+ent-ChemicalPayload-name = химическая полезная нагрузка
+ent-ChemicalPayload-desc = Химическая полезная нагрузка. Есть место для хранения двух стаканов. В сочетании со спусковым крючком и футляром его можно использовать для инициирования химических реакций.
 
-ent-FlashPayload-name = flash payload
-ent-FlashPayload-desc = A single-use flash payload.
+ent-FlashPayload-name = флэш-полезная нагрузка
+ent-FlashPayload-desc = Одноразовая флэш-полезная нагрузка.
 
-ent-BasePayload-name = item
+ent-BasePayload-name = элемент
 

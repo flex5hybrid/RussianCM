@@ -1,39 +1,39 @@
-ent-DisposalHolder-name = disposal holder
+ent-DisposalHolder-name = держатель для утилизации
 
-ent-DisposalPipeBroken-name = broken disposal pipe
-ent-DisposalPipeBroken-desc = A BBP (big broken pipe).
+ent-DisposalPipeBroken-name = сломанная сливная труба
+ent-DisposalPipeBroken-desc = ББП (большая сломанная труба).
 
-ent-DisposalPipe-name = disposal pipe segment
-ent-DisposalPipe-desc = A huge pipe segment used for constructing disposal systems.
+ent-DisposalPipe-name = сегмент канализационной трубы
+ent-DisposalPipe-desc = Огромный сегмент трубы, используемый для строительства систем утилизации.
 
-ent-DisposalTagger-name = disposal pipe tagger
-ent-DisposalTagger-desc = A pipe that tags entities for routing.
+ent-DisposalTagger-name = устройство для маркировки труб для утилизации
+ent-DisposalTagger-desc = Канал, который помечает объекты для маршрутизации.
 
-ent-DisposalSignaller-name = disposal signaller
-ent-DisposalSignaller-desc = A pipe that emits a signal when in item goes through it.
+ent-DisposalSignaller-name = сигнализатор утилизации
+ent-DisposalSignaller-desc = Канал, который излучает сигнал, когда элемент проходит через него.
 
-ent-DisposalTrunk-name = disposal trunk
-ent-DisposalTrunk-desc = A pipe trunk used as an entry point for disposal systems.
+ent-DisposalTrunk-name = багажник для утилизации
+ent-DisposalTrunk-desc = Ствол трубы, используемый в качестве точки входа в системы утилизации.
 
-ent-DisposalRouter-name = disposal router
-ent-DisposalRouter-desc = A three-way router. Entities with matching tags get routed to the side via configurable filters.
+ent-DisposalRouter-name = маршрутизатор утилизации
+ent-DisposalRouter-desc = Трехсторонний маршрутизатор. Сущности с совпадающими тегами направляются в сторону с помощью настраиваемых фильтров.
 
-ent-DisposalRouterFlipped-desc = A three-way router. Entities with matching tags get routed to the side.
+ent-DisposalRouterFlipped-desc = Трехсторонний маршрутизатор. Сущности с совпадающими тегами перенаправляются в сторону.
 
-ent-DisposalJunction-name = disposal junction
-ent-DisposalJunction-desc = A three-way junction. The arrow indicates where items exit.
+ent-DisposalJunction-name = узел утилизации
+ent-DisposalJunction-desc = Трехсторонний перекресток. Стрелка указывает, где выходят предметы.
 
-ent-DisposalJunctionFlipped-desc = A three-way junction. The arrow indicates where items exit.
+ent-DisposalJunctionFlipped-desc = Трехсторонний перекресток. Стрелка указывает, где выходят предметы.
 
-ent-DisposalYJunction-name = disposal y-junction
-ent-DisposalYJunction-desc = A three-way junction with another exit point.
+ent-DisposalYJunction-name = утилизация Y-образного соединения
+ent-DisposalYJunction-desc = Трехсторонний перекресток с еще одним выходом.
 
-ent-DisposalXJunction-name = disposal x-junction
-ent-DisposalXJunction-desc = A four-way junction. The arrow indicates where items exit.
+ent-DisposalXJunction-name = утилизация
+ent-DisposalXJunction-desc = Четырехсторонний перекресток. Стрелка указывает, где выходят предметы.
 
-ent-DisposalBend-name = disposal bend
-ent-DisposalBend-desc = A tube bent at a 90 degree angle.
+ent-DisposalBend-name = отвод для утилизации
+ent-DisposalBend-desc = Трубка, согнутая под углом 90 градусов.
 
-ent-DisposalSignalRouter-name = disposal signal router
-ent-DisposalSignalRouter-desc = A signal-controlled three-way router.
+ent-DisposalSignalRouter-name = маршрутизатор сигнала утилизации
+ent-DisposalSignalRouter-desc = Трехсторонний маршрутизатор, управляемый сигналом.
 

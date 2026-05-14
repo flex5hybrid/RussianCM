@@ -1,3 +1,3 @@
-ent-Binoculars-name = binoculars
-ent-Binoculars-desc = Used for long-distance surveillance.
+ent-Binoculars-name = бинокль
+ent-Binoculars-desc = Используется для наблюдения на больших расстояниях.
 

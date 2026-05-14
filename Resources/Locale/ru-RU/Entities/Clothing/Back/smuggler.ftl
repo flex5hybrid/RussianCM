@@ -1,15 +1,15 @@
-ent-ClothingBackpackSatchelSmuggler-name = smuggler's satchel
-ent-ClothingBackpackSatchelSmuggler-desc = A handy, suspicious looking satchel. Just flat enough to fit underneath floor tiles.
+ent-ClothingBackpackSatchelSmuggler-name = сумка контрабандиста
+ent-ClothingBackpackSatchelSmuggler-desc = Удобная, подозрительного вида сумка. Достаточно плоский, чтобы поместиться под напольную плитку.
 
-ent-ClothingBackpackSatchelSmugglerUnanchored-name = smuggler's satchel
-ent-ClothingBackpackSatchelSmugglerUnanchored-desc = A handy, suspicious looking satchel. Just flat enough to fit underneath floor tiles.
+ent-ClothingBackpackSatchelSmugglerUnanchored-name = сумка контрабандиста
+ent-ClothingBackpackSatchelSmugglerUnanchored-desc = Удобная, подозрительного вида сумка. Достаточно плоский, чтобы поместиться под напольную плитку.
 
-ent-BriefcaseSmugglerCash-name = smuggler's briefcase
+ent-BriefcaseSmugglerCash-name = портфель контрабандиста
 
-ent-ClothingBackpackDuffelClownSmuggler-name = smuggler's clown duffel bag
+ent-ClothingBackpackDuffelClownSmuggler-name = спортивная сумка клоуна-контрабандиста
 
-ent-RandomSatchelSpawner-name = random smuggler's satchel spawner
+ent-RandomSatchelSpawner-name = Создатель случайной сумки контрабандиста
 
-ent-ClothingBackpackSatchelSmugglerFilled-name = smuggler's satchel
-ent-ClothingBackpackSatchelSmugglerFilled-desc = A handy, suspicious looking satchel. Just flat enough to fit underneath floor tiles.
+ent-ClothingBackpackSatchelSmugglerFilled-name = сумка контрабандиста
+ent-ClothingBackpackSatchelSmugglerFilled-desc = Удобная, подозрительного вида сумка. Достаточно плоский, чтобы поместиться под напольную плитку.
 

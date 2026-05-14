@@ -1,3 +1,3 @@
-ent-Urn-name = urn
-ent-Urn-desc = Store the Dead smart and Compact since 2300.
+ent-Urn-name = урна
+ent-Urn-desc = Храните Dead умно и компактно с 2300 года.
 

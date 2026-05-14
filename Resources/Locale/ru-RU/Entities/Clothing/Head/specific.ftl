@@ -1,6 +1,6 @@
-ent-ClothingHeadHatChameleon-name = beret
-ent-ClothingHeadHatChameleon-desc = A beret, an artists favorite headwear.
+ent-ClothingHeadHatChameleon-name = берет
+ent-ClothingHeadHatChameleon-desc = Берет – любимый головной убор художников.
 
-ent-ClothingHeadHatDetGadget-name = go go hat
-ent-ClothingHeadHatDetGadget-desc = A novel hat with a built in toolkit. Automatically stores and retrieves items at the say of a phrase!
+ent-ClothingHeadHatDetGadget-name = иди иди шляпа
+ent-ClothingHeadHatDetGadget-desc = Новая шляпа со встроенным набором инструментов. Автоматически сохраняет и извлекает элементы по одной фразе!
 

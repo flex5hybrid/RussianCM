@@ -1,3 +1,3 @@
-ent-AU14SpawnPointCivilianCMBMarshal-name = Spawn Point Civilian CMB Marshal
-ent-AU14SpawnPointCivilianCMBMarshal-desc = A RMC14 job spawner. Used for roundstart and late joins.
-ent-aumarshallghost-name = Marshall colonist ghost role
+ent-AU14SpawnPointCivilianCMBMarshal-name = Гражданский маршал CMB точки возрождения
+ent-AU14SpawnPointCivilianCMBMarshal-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.
+ent-aumarshallghost-name = Роль призрака колониста Маршалла

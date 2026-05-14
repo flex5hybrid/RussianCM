@@ -1,42 +1,42 @@
-ent-GunSafeDisabler-name = disabler safe
-ent-GunSafeDisabler-desc = A standard-issue Nanotrasen storage unit.
+ent-GunSafeDisabler-name = безопасный для инвалидов
+ent-GunSafeDisabler-desc = Стандартное хранилище Nanotrasen.
 
-ent-GunSafePistolMk58-name = mk58 safe
-ent-GunSafePistolMk58-desc = A standard-issue Nanotrasen storage unit.
+ent-GunSafePistolMk58-name = МК58 сейф
+ent-GunSafePistolMk58-desc = Стандартное хранилище Nanotrasen.
 
-ent-GunSafeRifleLecter-name = lecter safe
-ent-GunSafeRifleLecter-desc = A standard-issue Nanotrasen storage unit.
+ent-GunSafeRifleLecter-name = Лектер в безопасности
+ent-GunSafeRifleLecter-desc = Стандартное хранилище Nanotrasen.
 
-ent-GunSafeSubMachineGunDrozd-name = drozd safe
-ent-GunSafeSubMachineGunDrozd-desc = A standard-issue Nanotrasen storage unit.
+ent-GunSafeSubMachineGunDrozd-name = дрозд безопасный
+ent-GunSafeSubMachineGunDrozd-desc = Стандартное хранилище Nanotrasen.
 
-ent-GunSafeShotgunEnforcer-name = enforcer safe
-ent-GunSafeShotgunEnforcer-desc = A standard-issue Nanotrasen storage unit.
+ent-GunSafeShotgunEnforcer-name = Инфорсер в безопасности
+ent-GunSafeShotgunEnforcer-desc = Стандартное хранилище Nanotrasen.
 
-ent-GunSafeShotgunKammerer-name = kammerer safe
-ent-GunSafeShotgunKammerer-desc = A standard-issue Nanotrasen storage unit.
+ent-GunSafeShotgunKammerer-name = камера хранения сейф
+ent-GunSafeShotgunKammerer-desc = Стандартное хранилище Nanotrasen.
 
-ent-GunSafeSubMachineGunWt550-name = wt550 safe
-ent-GunSafeSubMachineGunWt550-desc = A standard-issue Nanotrasen storage unit.
+ent-GunSafeSubMachineGunWt550-name = wt550 сейф
+ent-GunSafeSubMachineGunWt550-desc = Стандартное хранилище Nanotrasen.
 
-ent-GunSafeLaserCarbine-name = laser safe
-ent-GunSafeLaserCarbine-desc = A standard-issue Nanotrasen storage unit.
+ent-GunSafeLaserCarbine-name = лазерный сейф
+ent-GunSafeLaserCarbine-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerWardenFilledHardsuit-name = warden's locker
-ent-LockerWardenFilledHardsuit-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerWardenFilledHardsuit-name = шкафчик начальника
+ent-LockerWardenFilledHardsuit-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerWardenFilled-name = warden's locker
-ent-LockerWardenFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerWardenFilled-name = шкафчик начальника
+ent-LockerWardenFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerSecurityFilled-name = security officer's locker
-ent-LockerSecurityFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerSecurityFilled-name = шкафчик офицера безопасности
+ent-LockerSecurityFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerBrigmedicFilled-name = brigmedic locker
-ent-LockerBrigmedicFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerBrigmedicFilled-name = Бригмедик шкафчик
+ent-LockerBrigmedicFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerDetectiveFilled-name = detective's cabinet
-ent-LockerDetectiveFilled-desc = Usually cold and empty... like your heart.
+ent-LockerDetectiveFilled-name = кабинет детектива
+ent-LockerDetectiveFilled-desc = Обычно холодно и пусто... как и твое сердце.
 
-ent-ClosetBombFilled-name = EOD closet
-ent-ClosetBombFilled-desc = It's a storage unit for explosion-protective suits.
+ent-ClosetBombFilled-name = шкаф EOD
+ent-ClosetBombFilled-desc = Это хранилище взрывозащитных костюмов.
 

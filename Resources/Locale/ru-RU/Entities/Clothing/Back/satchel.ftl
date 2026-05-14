@@ -1,54 +1,54 @@
-ent-ClothingBackpackSatchel-name = satchel
-ent-ClothingBackpackSatchel-desc = A trendy looking satchel.
+ent-ClothingBackpackSatchel-name = ранец
+ent-ClothingBackpackSatchel-desc = Модно выглядящая сумка.
 
-ent-ClothingBackpackSatchelLeather-name = leather satchel
-ent-ClothingBackpackSatchelLeather-desc = A trend-setting satchel from a bygone era.
+ent-ClothingBackpackSatchelLeather-name = кожаная сумка
+ent-ClothingBackpackSatchelLeather-desc = Модная сумка из ушедшей эпохи.
 
-ent-ClothingBackpackSatchelEngineering-name = engineering satchel
-ent-ClothingBackpackSatchelEngineering-desc = A tough satchel with extra pockets.
+ent-ClothingBackpackSatchelEngineering-name = инженерный ранец
+ent-ClothingBackpackSatchelEngineering-desc = Прочная сумка с дополнительными карманами.
 
-ent-ClothingBackpackSatchelAtmospherics-name = atmospherics satchel
-ent-ClothingBackpackSatchelAtmospherics-desc = A tough satchel made of fire resistant fibers. Smells like plasma.
+ent-ClothingBackpackSatchelAtmospherics-name = атмосферная сумка
+ent-ClothingBackpackSatchelAtmospherics-desc = Прочная сумка из огнестойких волокон. Пахнет плазмой.
 
-ent-ClothingBackpackSatchelClown-name = clown satchel
-ent-ClothingBackpackSatchelClown-desc = For fast running from security.
+ent-ClothingBackpackSatchelClown-name = клоун ранец
+ent-ClothingBackpackSatchelClown-desc = Для быстрого бегства от охраны.
 
-ent-ClothingBackpackSatchelMime-name = mime satchel
-ent-ClothingBackpackSatchelMime-desc = A satchel designed for the silent and expressive art of miming.
+ent-ClothingBackpackSatchelMime-name = мим-ранец
+ent-ClothingBackpackSatchelMime-desc = Сумка, созданная для бесшумного и выразительного искусства мимики.
 
-ent-ClothingBackpackSatchelMedical-name = medical satchel
-ent-ClothingBackpackSatchelMedical-desc = A sterile satchel used in medical departments.
+ent-ClothingBackpackSatchelMedical-name = медицинская сумка
+ent-ClothingBackpackSatchelMedical-desc = Стерильный ранец, используемый в медицинских учреждениях.
 
-ent-ClothingBackpackSatchelChemistry-name = chemistry satchel
-ent-ClothingBackpackSatchelChemistry-desc = A sterile satchel with chemist colours.
+ent-ClothingBackpackSatchelChemistry-name = химия ранец
+ent-ClothingBackpackSatchelChemistry-desc = Стерильный ранец в аптечных цветах.
 
-ent-ClothingBackpackSatchelVirology-name = virology satchel
-ent-ClothingBackpackSatchelVirology-desc = A satchel made of hypo-allergenic fibers. It's designed to help prevent the spread of disease. Smells like monkey.
+ent-ClothingBackpackSatchelVirology-name = сумка для вирусологии
+ent-ClothingBackpackSatchelVirology-desc = Сумка из гипоаллергенного волокна. Он создан, чтобы помочь предотвратить распространение болезней. Пахнет обезьяной.
 
-ent-ClothingBackpackSatchelGenetics-name = genetics satchel
-ent-ClothingBackpackSatchelGenetics-desc = A sterile satchel with geneticist colours.
+ent-ClothingBackpackSatchelGenetics-name = генетика ранец
+ent-ClothingBackpackSatchelGenetics-desc = Стерильный ранец генетической расцветки.
 
-ent-ClothingBackpackSatchelScience-name = science satchel
-ent-ClothingBackpackSatchelScience-desc = Useful for holding research materials.
+ent-ClothingBackpackSatchelScience-name = научная сумка
+ent-ClothingBackpackSatchelScience-desc = Полезно для хранения исследовательских материалов.
 
-ent-ClothingBackpackSatchelSecurity-name = security satchel
-ent-ClothingBackpackSatchelSecurity-desc = A robust satchel for security related needs.
+ent-ClothingBackpackSatchelSecurity-name = сумка безопасности
+ent-ClothingBackpackSatchelSecurity-desc = Прочная сумка для нужд, связанных с безопасностью.
 
-ent-ClothingBackpackSatchelBrigmedic-name = brigmedic satchel
-ent-ClothingBackpackSatchelBrigmedic-desc = A sterile satchel for medical related needs.
+ent-ClothingBackpackSatchelBrigmedic-name = Бригмедик ранец
+ent-ClothingBackpackSatchelBrigmedic-desc = Стерильный ранец для медицинских нужд.
 
-ent-ClothingBackpackSatchelCaptain-name = captain's satchel
-ent-ClothingBackpackSatchelCaptain-desc = An exclusive satchel for Nanotrasen officers.
+ent-ClothingBackpackSatchelCaptain-name = капитанский ранец
+ent-ClothingBackpackSatchelCaptain-desc = Эксклюзивный ранец для офицеров Нанотрасена.
 
-ent-ClothingBackpackSatchelHydroponics-name = hydroponics satchel
-ent-ClothingBackpackSatchelHydroponics-desc = A satchel made of all natural fibers.
+ent-ClothingBackpackSatchelHydroponics-name = гидропоника ранец
+ent-ClothingBackpackSatchelHydroponics-desc = Сумка из натуральных волокон.
 
-ent-ClothingBackpackSatchelCargo-name = cargo satchel
-ent-ClothingBackpackSatchelCargo-desc = A robust satchel for stealing cargo's loot.
+ent-ClothingBackpackSatchelCargo-name = грузовая сумка
+ent-ClothingBackpackSatchelCargo-desc = Прочная сумка для кражи добычи.
 
-ent-ClothingBackpackSatchelSalvage-name = salvage satchel
-ent-ClothingBackpackSatchelSalvage-desc = A robust satchel for stashing your loot.
+ent-ClothingBackpackSatchelSalvage-name = аварийная сумка
+ent-ClothingBackpackSatchelSalvage-desc = Прочная сумка для хранения добычи.
 
-ent-ClothingBackpackSatchelHolding-name = satchel of holding
-ent-ClothingBackpackSatchelHolding-desc = A satchel that opens into a localized pocket of bluespace.
+ent-ClothingBackpackSatchelHolding-name = сумка для хранения
+ent-ClothingBackpackSatchelHolding-desc = Сумка, открывающаяся в локализованный карман синего пространства.
 

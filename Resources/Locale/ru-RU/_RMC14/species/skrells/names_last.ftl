@@ -363,3 +363,103 @@ rmc-name-skrell-last-362 = Ксумсксуэр'ксум
 rmc-name-skrell-last-363 = Ксумсксум
 rmc-name-skrell-last-364 = Ксумсксум'кверр
 rmc-name-skrell-last-365 = Ксумсксюк
+
+# Missing entries synced from en-US
+
+rmc-name-skrell-last-366 = Сюм'сюэр
+
+rmc-name-skrell-last-367 = Ксум'ксум
+
+rmc-name-skrell-last-368 = Ксумсук
+
+rmc-name-skrell-last-369 = Шумахеу
+
+rmc-name-skrell-last-370 = Ксумкеакс'кукс
+
+rmc-name-skrell-last-371 = Ксумкер'ксе
+
+rmc-name-skrell-last-372 = Шумкекс'кер
+
+rmc-name-skrell-last-373 = Xumqux'qux
+
+rmc-name-skrell-last-374 = Шумтак
+
+rmc-name-skrell-last-375 = Хумтек
+
+rmc-name-skrell-last-376 = Сюмсаэ'кеа
+
+rmc-name-skrell-last-377 = Ксумксае'ксум
+
+rmc-name-skrell-last-378 = Шумшаэк
+
+rmc-name-skrell-last-379 = Шумхер
+
+rmc-name-skrell-last-380 = Шумсерр
+
+rmc-name-skrell-last-381 = Сюмшуэр
+
+rmc-name-skrell-last-382 = Шумшуэр'кер
+
+rmc-name-skrell-last-383 = Xumxuer'xum
+
+rmc-name-skrell-last-384 = кумксум
+
+rmc-name-skrell-last-385 = Сумксум'керр
+
+rmc-name-skrell-last-386 = Шумшук
+
+rmc-name-skrell-last-387 = Заокэк
+
+rmc-name-skrell-last-388 = Заокеакс'кукс
+
+rmc-name-skrell-last-389 = Заокеакс'ксеу
+
+rmc-name-skrell-last-390 = Заоок'ксеу
+
+rmc-name-skrell-last-391 = Заооко'керр
+
+rmc-name-skrell-last-392 = Заокекс
+
+rmc-name-skrell-last-393 = Заокукс'керр
+
+rmc-name-skrell-last-394 = Заоотек
+
+rmc-name-skrell-last-395 = Заотек'кеа
+
+rmc-name-skrell-last-396 = Заооксе
+
+rmc-name-skrell-last-397 = Заоокса'ксе
+
+rmc-name-skrell-last-398 = Заоосуэр
+
+rmc-name-skrell-last-399 = Заооксрим'ксе
+
+rmc-name-skrell-last-400 = Заоосук'ксеу
+
+rmc-name-skrell-last-401 = Зишкаек
+
+rmc-name-skrell-last-402 = Зикскеакс'кукс
+
+rmc-name-skrell-last-403 = Зикскеакс'ксеу
+
+rmc-name-skrell-last-404 = Зишко'ксеу
+
+rmc-name-skrell-last-405 = Зикско'керр
+
+rmc-name-skrell-last-406 = Зикскекс
+
+rmc-name-skrell-last-407 = Зикскукс'керр
+
+rmc-name-skrell-last-408 = Зикстек
+
+rmc-name-skrell-last-409 = Зиктек'кеа
+
+rmc-name-skrell-last-410 = Зиксае
+
+rmc-name-skrell-last-411 = Зиксае'ксе
+
+rmc-name-skrell-last-412 = Зиксюэр
+
+rmc-name-skrell-last-413 = Зиксрим'ксе
+
+rmc-name-skrell-last-414 = Зиксюк'ксеу

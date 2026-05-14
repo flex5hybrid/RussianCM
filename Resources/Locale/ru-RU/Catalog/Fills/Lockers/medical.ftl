@@ -1,18 +1,18 @@
-ent-LockerWallMedicalFilled-name = medicine wall locker
-ent-LockerWallMedicalFilled-desc = A standard-issue Nanotrasen storage unit, now on walls.
+ent-LockerWallMedicalFilled-name = медицинский настенный шкафчик
+ent-LockerWallMedicalFilled-desc = Стандартное хранилище Nanotrasen, теперь на стене.
 
-ent-LockerWallMedicalDoctorFilled-name = medical doctor's wall locker
-ent-LockerWallMedicalDoctorFilled-desc = A standard-issue Nanotrasen storage unit, now on walls.
+ent-LockerWallMedicalDoctorFilled-name = настенный шкафчик для врача
+ent-LockerWallMedicalDoctorFilled-desc = Стандартное хранилище Nanotrasen, теперь на стене.
 
-ent-LockerMedicineFilled-name = medicine locker
-ent-LockerMedicineFilled-desc = Filled to the brim with medical junk.
+ent-LockerMedicineFilled-name = шкафчик для лекарств
+ent-LockerMedicineFilled-desc = Забит до краёв медицинским хламом.
 
-ent-LockerMedicalFilled-name = medical doctor's locker
-ent-LockerMedicalFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerMedicalFilled-name = шкафчик врача
+ent-LockerMedicalFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerChemistryFilled-name = chemical locker
-ent-LockerChemistryFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerChemistryFilled-name = химический шкафчик
+ent-LockerChemistryFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerParamedicFilled-name = paramedic's locker
-ent-LockerParamedicFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerParamedicFilled-name = шкафчик фельдшера
+ent-LockerParamedicFilled-desc = Стандартное хранилище Nanotrasen.
 

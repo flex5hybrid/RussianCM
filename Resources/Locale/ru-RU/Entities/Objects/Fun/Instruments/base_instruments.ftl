@@ -1,7 +1,7 @@
-ent-BaseHandheldInstrument-name = item
-ent-BaseHandheldInstrument-desc = That's an instrument.
+ent-BaseHandheldInstrument-name = элемент
+ent-BaseHandheldInstrument-desc = Это инструмент.
 
-ent-BasePlaceableInstrument-name = baseinstrument
+ent-BasePlaceableInstrument-name = базовый инструмент
 
-ent-BasePlaceableInstrumentRotatable-name = baseinstrumentrotatable
+ent-BasePlaceableInstrumentRotatable-name = базовыйинструментвращающийся
 

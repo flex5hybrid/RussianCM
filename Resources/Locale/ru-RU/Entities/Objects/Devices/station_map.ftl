@@ -1,12 +1,12 @@
-ent-BaseHandheldStationMap-name = station map
-ent-BaseHandheldStationMap-desc = Displays a readout of the current station.
+ent-BaseHandheldStationMap-name = карта станции
+ent-BaseHandheldStationMap-desc = Отображает показания текущей станции.
 
-ent-HandheldStationMap-name = station map
-ent-HandheldStationMap-desc = Displays a readout of the current station.
+ent-HandheldStationMap-name = карта станции
+ent-HandheldStationMap-desc = Отображает показания текущей станции.
 
-ent-HandheldStationMapEmpty-name = station map
-ent-HandheldStationMapEmpty-desc = Displays a readout of the current station.
+ent-HandheldStationMapEmpty-name = карта станции
+ent-HandheldStationMapEmpty-desc = Отображает показания текущей станции.
 
-ent-HandheldStationMapUnpowered-name = station map
-ent-HandheldStationMapUnpowered-desc = Displays a readout of the current station.
+ent-HandheldStationMapUnpowered-name = карта станции
+ent-HandheldStationMapUnpowered-desc = Отображает показания текущей станции.
 

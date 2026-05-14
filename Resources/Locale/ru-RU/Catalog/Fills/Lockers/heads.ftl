@@ -1,42 +1,42 @@
-ent-LockerQuarterMasterFilled-name = quartermaster's locker
-ent-LockerQuarterMasterFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerQuarterMasterFilled-name = шкафчик интенданта
+ent-LockerQuarterMasterFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerCaptainFilledNoLaser-name = captain's locker
-ent-LockerCaptainFilledNoLaser-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerCaptainFilledNoLaser-name = капитанский рундук
+ent-LockerCaptainFilledNoLaser-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerCaptainFilled-name = captain's locker
-ent-LockerCaptainFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerCaptainFilled-name = капитанский рундук
+ent-LockerCaptainFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerCaptainFilledHardsuit-name = captain's locker
-ent-LockerCaptainFilledHardsuit-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerCaptainFilledHardsuit-name = капитанский рундук
+ent-LockerCaptainFilledHardsuit-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerHeadOfPersonnelFilled-name = head of personnel's locker
-ent-LockerHeadOfPersonnelFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerHeadOfPersonnelFilled-name = шкафчик начальника отдела кадров
+ent-LockerHeadOfPersonnelFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerChiefEngineerFilled-name = chief engineer's locker
-ent-LockerChiefEngineerFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerChiefEngineerFilled-name = шкафчик главного инженера
+ent-LockerChiefEngineerFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerChiefEngineerFilledHardsuit-name = chief engineer's locker
-ent-LockerChiefEngineerFilledHardsuit-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerChiefEngineerFilledHardsuit-name = шкафчик главного инженера
+ent-LockerChiefEngineerFilledHardsuit-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerChiefMedicalOfficerFilled-name = chief medical officer's locker
-ent-LockerChiefMedicalOfficerFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerChiefMedicalOfficerFilled-name = шкафчик главного врача
+ent-LockerChiefMedicalOfficerFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerChiefMedicalOfficerFilledHardsuit-name = chief medical officer's locker
-ent-LockerChiefMedicalOfficerFilledHardsuit-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerChiefMedicalOfficerFilledHardsuit-name = шкафчик главного врача
+ent-LockerChiefMedicalOfficerFilledHardsuit-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerResearchDirectorFilled-name = research director's locker
-ent-LockerResearchDirectorFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerResearchDirectorFilled-name = шкафчик директора по исследованиям
+ent-LockerResearchDirectorFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerResearchDirectorFilledHardsuit-name = research director's locker
-ent-LockerResearchDirectorFilledHardsuit-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerResearchDirectorFilledHardsuit-name = шкафчик директора по исследованиям
+ent-LockerResearchDirectorFilledHardsuit-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerHeadOfSecurityFilled-name = head of security's locker
-ent-LockerHeadOfSecurityFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerHeadOfSecurityFilled-name = шкафчик начальника службы безопасности
+ent-LockerHeadOfSecurityFilled-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerHeadOfSecurityFilledHardsuit-name = head of security's locker
-ent-LockerHeadOfSecurityFilledHardsuit-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerHeadOfSecurityFilledHardsuit-name = шкафчик начальника службы безопасности
+ent-LockerHeadOfSecurityFilledHardsuit-desc = Стандартное хранилище Nanotrasen.
 
-ent-LockerFreezerVaultFilled-name = freezer
-ent-LockerFreezerVaultFilled-desc = A standard-issue Nanotrasen storage unit.
+ent-LockerFreezerVaultFilled-name = морозильник
+ent-LockerFreezerVaultFilled-desc = Стандартное хранилище Nanotrasen.
 

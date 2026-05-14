@@ -1,21 +1,21 @@
-ent-SurveillanceWirelessCameraBase-name = wireless camera
-ent-SurveillanceWirelessCameraBase-desc = A camera. It's watching you. Kinda.
+ent-SurveillanceWirelessCameraBase-name = беспроводная камера
+ent-SurveillanceWirelessCameraBase-desc = Камера. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceWirelessCameraAnchoredBase-name = wireless camera
-ent-SurveillanceWirelessCameraAnchoredBase-desc = A camera. It's watching you. Kinda.
+ent-SurveillanceWirelessCameraAnchoredBase-name = беспроводная камера
+ent-SurveillanceWirelessCameraAnchoredBase-desc = Камера. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceWirelessCameraMovableBase-name = wireless camera
-ent-SurveillanceWirelessCameraMovableBase-desc = A camera. It's watching you. Kinda.
+ent-SurveillanceWirelessCameraMovableBase-name = беспроводная камера
+ent-SurveillanceWirelessCameraMovableBase-desc = Камера. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceWirelessCameraAnchoredConstructed-name = wireless camera
-ent-SurveillanceWirelessCameraAnchoredConstructed-desc = A camera. It's watching you. Kinda.
+ent-SurveillanceWirelessCameraAnchoredConstructed-name = беспроводная камера
+ent-SurveillanceWirelessCameraAnchoredConstructed-desc = Камера. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceWirelessCameraMovableConstructed-name = wireless camera
-ent-SurveillanceWirelessCameraMovableConstructed-desc = A camera. It's watching you. Kinda.
+ent-SurveillanceWirelessCameraMovableConstructed-name = беспроводная камера
+ent-SurveillanceWirelessCameraMovableConstructed-desc = Камера. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceWirelessCameraAnchoredEntertainment-name = wireless camera
-ent-SurveillanceWirelessCameraAnchoredEntertainment-desc = A camera. It's watching you. Kinda.
+ent-SurveillanceWirelessCameraAnchoredEntertainment-name = беспроводная камера
+ent-SurveillanceWirelessCameraAnchoredEntertainment-desc = Камера. Оно наблюдает за тобой. Как бы.
 
-ent-SurveillanceWirelessCameraMovableEntertainment-name = wireless camera
-ent-SurveillanceWirelessCameraMovableEntertainment-desc = A camera. It's watching you. Kinda.
+ent-SurveillanceWirelessCameraMovableEntertainment-name = беспроводная камера
+ent-SurveillanceWirelessCameraMovableEntertainment-desc = Камера. Оно наблюдает за тобой. Как бы.
 

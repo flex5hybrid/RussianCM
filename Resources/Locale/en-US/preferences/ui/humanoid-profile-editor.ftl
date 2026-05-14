@@ -77,3 +77,12 @@ humanoid-profile-editor-trait-count-hint = Points available: [{$current}/{$max}]
 trait-category-disabilities = Disabilities
 trait-category-speech = Speech traits
 trait-category-quirks = Quirks
+
+# Armor
+humanoid-profile-editor-preference-armor-random = Random
+humanoid-profile-editor-preference-armor-padded = Padded
+humanoid-profile-editor-preference-armor-padless = Padless
+humanoid-profile-editor-preference-armor-ridged = Ridged
+humanoid-profile-editor-preference-armor-carrier = Carrier
+humanoid-profile-editor-preference-armor-skull = Skull
+humanoid-profile-editor-preference-armor-smooth = Smooth

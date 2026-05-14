@@ -1,42 +1,42 @@
-ent-WardrobePrisonFilled-name = prison wardrobe
-ent-WardrobePrisonFilled-desc = Contains a selection of nice orange clothes for people enjoying their stay in the brig.
+ent-WardrobePrisonFilled-name = тюремный гардероб
+ent-WardrobePrisonFilled-desc = Содержит подборку красивой оранжевой одежды для людей, которым нравится пребывание на гауптвахте.
 
-ent-WardrobeRoboticsFilled-name = robotics wardrobe
-ent-WardrobeRoboticsFilled-desc = You can build a robot out of this locker.
+ent-WardrobeRoboticsFilled-name = робототехника гардероб
+ent-WardrobeRoboticsFilled-desc = Из этого шкафчика можно построить робота.
 
-ent-WardrobeChemistryFilled-name = chemistry wardrobe
-ent-WardrobeChemistryFilled-desc = The sleek orange threads contained within make you much less likely to be thrown out of the chemistry lab.
+ent-WardrobeChemistryFilled-name = химический гардероб
+ent-WardrobeChemistryFilled-desc = Гладкие оранжевые нити, содержащиеся внутри, значительно снижают вероятность того, что вас выгонят из химической лаборатории.
 
-ent-WardrobeGeneticsFilled-name = genetics wardrobe
-ent-WardrobeGeneticsFilled-desc = The sleek blue threads contained within make you much less likely to be thrown out of the genetics lab.
+ent-WardrobeGeneticsFilled-name = генетика гардероб
+ent-WardrobeGeneticsFilled-desc = Гладкие синие нити, содержащиеся внутри, значительно снижают вероятность того, что вас выгонят из генетической лаборатории.
 
-ent-WardrobeVirologyFilled-name = virology wardrobe
-ent-WardrobeVirologyFilled-desc = The sleek green threads contained within make you much less likely to be thrown out of the virology lab.
+ent-WardrobeVirologyFilled-name = вирусологический шкаф
+ent-WardrobeVirologyFilled-desc = Гладкие зеленые нити, содержащиеся внутри, значительно снижают вероятность того, что вас выгонят из вирусологической лаборатории.
 
-ent-WardrobeScienceFilled-name = science wardrobe
-ent-WardrobeScienceFilled-desc = You've read a couple pop science articles, now it's time for the real deal.
+ent-WardrobeScienceFilled-name = научный гардероб
+ent-WardrobeScienceFilled-desc = Вы прочитали пару научно-популярных статей, теперь пришло время по-настоящему.
 
-ent-WardrobeBotanistFilled-name = botanist wardrobe
-ent-WardrobeBotanistFilled-desc = Plant yourself among the plant men with these 100% natural plant-derived clothes.
+ent-WardrobeBotanistFilled-name = ботаник гардероб
+ent-WardrobeBotanistFilled-desc = Почувствуйте себя среди людей-растений с помощью этой 100% натуральной одежды растительного происхождения.
 
-ent-WardrobeMedicalDoctorFilled-name = medical doctor's wardrobe
-ent-WardrobeMedicalDoctorFilled-desc = We've all played doctor before, now practice medicine.
+ent-WardrobeMedicalDoctorFilled-name = гардероб врача
+ent-WardrobeMedicalDoctorFilled-desc = Раньше мы все играли в доктора, а теперь занимаемся медициной.
 
-ent-WardrobeChapelFilled-name = chaplain's wardrobe
-ent-WardrobeChapelFilled-desc = You have to look presentable for your flock.
+ent-WardrobeChapelFilled-name = гардероб капеллана
+ent-WardrobeChapelFilled-desc = Вы должны выглядеть презентабельно для своей паствы.
 
-ent-WardrobeSecurityFilled-name = security wardrobe
-ent-WardrobeSecurityFilled-desc = Cross the thin red line.
+ent-WardrobeSecurityFilled-name = шкаф безопасности
+ent-WardrobeSecurityFilled-desc = Пересеките тонкую красную линию.
 
-ent-WardrobeCargoFilled-name = cargo wardrobe
-ent-WardrobeCargoFilled-desc = This locker? Maybe 500 spesos. Brotherhood? Priceless.
+ent-WardrobeCargoFilled-name = грузовой шкаф
+ent-WardrobeCargoFilled-desc = Этот шкафчик? Возможно, 500 песо. Братство? Бесценно.
 
-ent-WardrobeAtmosphericsFilled-name = atmospherics wardrobe
-ent-WardrobeAtmosphericsFilled-desc = This locker contains a uniform for atmospheric technicians.
+ent-WardrobeAtmosphericsFilled-name = атмосферный гардероб
+ent-WardrobeAtmosphericsFilled-desc = В этом шкафчике находится униформа атмосферников.
 
-ent-WardrobeEngineeringFilled-name = engineering wardrobe
-ent-WardrobeEngineeringFilled-desc = This locker contains a uniform for engineering or social engineering.
+ent-WardrobeEngineeringFilled-name = инженерный шкаф
+ent-WardrobeEngineeringFilled-desc = В этом шкафчике находится униформа для инженерной или социальной инженерии.
 
-ent-WardrobeSalvageFilled-name = salvage wardrobe
-ent-WardrobeSalvageFilled-desc = Notably not salvaged.
+ent-WardrobeSalvageFilled-name = аварийный гардероб
+ent-WardrobeSalvageFilled-desc = Примечательно, что не удалось спасти.
 

@@ -1,2 +1,2 @@
-cmd-dirty-desc = Marks all components on an entity as dirty. If not specified, dirties everything.
-cmd-dirty-help = Usage: dirty [entityUid]
+cmd-dirty-desc = Помечает все компоненты объекта как грязные. Если не указано, портит всё.
+cmd-dirty-help = Использование: грязный [entityUid]

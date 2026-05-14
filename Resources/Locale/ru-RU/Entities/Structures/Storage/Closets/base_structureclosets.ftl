@@ -1,15 +1,15 @@
-ent-ClosetBase-name = closet
-ent-ClosetBase-desc = A standard-issue Nanotrasen storage unit.
+ent-ClosetBase-name = шкаф
+ent-ClosetBase-desc = Стандартное хранилище Nanotrasen.
 
-ent-BaseWallCloset-name = wall closet
-ent-BaseWallCloset-desc = A standard-issue Nanotrasen storage unit, now on walls.
+ent-BaseWallCloset-name = стенной шкаф
+ent-BaseWallCloset-desc = Стандартное хранилище Nanotrasen, теперь на стене.
 
-ent-SuitStorageBase-name = suit storage unit
-ent-SuitStorageBase-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageBase-name = блок хранения костюма
+ent-SuitStorageBase-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-ClosetSteelBase-name = closet
-ent-ClosetSteelBase-desc = A standard-issue Nanotrasen storage unit.
+ent-ClosetSteelBase-name = шкаф
+ent-ClosetSteelBase-desc = Стандартное хранилище Nanotrasen.
 
-ent-BaseWallLocker-name = wall closet
-ent-BaseWallLocker-desc = A standard-issue Nanotrasen storage unit, now on walls.
+ent-BaseWallLocker-name = стенной шкаф
+ent-BaseWallLocker-desc = Стандартное хранилище Nanotrasen, теперь на стене.
 

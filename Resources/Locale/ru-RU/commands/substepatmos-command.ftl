@@ -1,15 +1,15 @@
-cmd-substepatmos-desc = Substeps the atmosphere simulation by a single atmostick for the provided grid entity. Implicitly pauses atmospherics simulation.
-cmd-substepatmos-help = Usage: { $command } <EntityUid>
+cmd-substepatmos-desc = Ускоряет моделирование атмосферы с помощью одной атмосферы для предоставленного объекта сетки. Неявно приостанавливает симуляцию атмосферы.
+cmd-substepatmos-help = Использование: { $command } <EntityUid>
 
-cmd-error-no-grid-provided-or-invalid-grid = You must either provide a grid entity or be standing on a grid to substep.
-cmd-error-couldnt-parse-entity = Entity provided could not be parsed or does not exist. Try standing on a grid you want to substep.
-cmd-error-no-gridatmosphere = Entity provided doesn't have a GridAtmosphereComponent.
-cmd-error-no-gastileoverlay = Entity provided doesn't have a GasTileOverlayComponent.
-cmd-error-no-mapgrid = Entity provided doesn't have a MapGridComponent.
-cmd-error-no-xform = Entity provided doesn't have a TransformComponent?
-cmd-error-no-valid-map = The grid provided is not on a valid map?
+cmd-error-no-grid-provided-or-invalid-grid = Вы должны либо предоставить объект сетки, либо стоять на сетке, чтобы выполнить подшаг.
+cmd-error-couldnt-parse-entity = Предоставленный объект не может быть проанализирован или не существует. Попробуйте встать на сетку, которую хотите обойти.
+cmd-error-no-gridatmosphere = Предоставленная сущность не имеет GridAtmSphereComponent.
+cmd-error-no-gastileoverlay = Предоставленный объект не имеет GasTileOverlayComponent.
+cmd-error-no-mapgrid = Предоставленная сущность не имеет MapGridComponent.
+cmd-error-no-xform = Предоставленная сущность не имеет TransformComponent?
+cmd-error-no-valid-map = Предоставленная сетка не находится на действительной карте?
 
-cmd-substepatmos-info-implicitly-paused-simulation = Implicitly paused atmospherics simulation on { $grid }.
-cmd-substepatmos-info-substepped-grid = Substepped atmospherics simulation by one atmostick on { $grid }.
+cmd-substepatmos-info-implicitly-paused-simulation = Неявно приостановлено моделирование атмосферы на { $grid }.
+cmd-substepatmos-info-substepped-grid = Субступенчатая симуляция атмосферы одним атмосфериком на { $grid }.
 
-cmd-substepatmos-completion-grid-substep = EntityUid of the grid you want to substep. Automatically uses the grid you're standing on if empty.
+cmd-substepatmos-completion-grid-substep = EntityUid сетки, для которой вы хотите перейти. Автоматически использует сетку, на которой вы стоите, если она пуста.

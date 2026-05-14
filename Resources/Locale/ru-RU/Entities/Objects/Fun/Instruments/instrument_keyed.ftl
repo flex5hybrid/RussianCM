@@ -1,15 +1,15 @@
-ent-SynthesizerInstrument-name = synthesizer
-ent-SynthesizerInstrument-desc = That's an instrument.
+ent-SynthesizerInstrument-name = синтезатор
+ent-SynthesizerInstrument-desc = Это инструмент.
 
-ent-SuperSynthesizerInstrument-name = super synthesizer
-ent-SuperSynthesizerInstrument-desc = Blasting the ghetto with Touhou MIDIs since 2020.
+ent-SuperSynthesizerInstrument-name = супер синтезатор
+ent-SuperSynthesizerInstrument-desc = Взрываем гетто с помощью Touhou MIDI с 2020 года.
 
-ent-AccordionInstrument-name = accordion
-ent-AccordionInstrument-desc = That's an instrument.
+ent-AccordionInstrument-name = аккордеон
+ent-AccordionInstrument-desc = Это инструмент.
 
-ent-KalimbaInstrument-name = kalimba
-ent-KalimbaInstrument-desc = The power of a piano right at your thumbs.
+ent-KalimbaInstrument-name = Калимба
+ent-KalimbaInstrument-desc = Мощь фортепиано прямо у вас под рукой.
 
-ent-BaseKeyedInstrument-name = item
-ent-BaseKeyedInstrument-desc = That's an instrument.
+ent-BaseKeyedInstrument-name = элемент
+ent-BaseKeyedInstrument-desc = Это инструмент.
 

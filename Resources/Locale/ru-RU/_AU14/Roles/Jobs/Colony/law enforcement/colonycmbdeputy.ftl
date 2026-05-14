@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCivilianCMBDeputy-name = Spawn Point Civilian CMB Deputy
-ent-AU14SpawnPointCivilianCMBDeputy-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCivilianCMBDeputy-name = Гражданский заместитель CMB точки возрождения
+ent-AU14SpawnPointCivilianCMBDeputy-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

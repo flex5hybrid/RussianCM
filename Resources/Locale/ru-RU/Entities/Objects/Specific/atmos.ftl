@@ -1,3 +1,3 @@
-ent-GasAnalyzer-name = gas analyzer
-ent-GasAnalyzer-desc = A hand-held environmental scanner which reports current gas levels.
+ent-GasAnalyzer-name = газоанализатор
+ent-GasAnalyzer-desc = Ручной сканер окружающей среды, который сообщает текущий уровень газа.
 

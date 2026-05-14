@@ -1,22 +1,22 @@
-ent-ClothingHeadBandBlack-name = black bandana
+ent-ClothingHeadBandBlack-name = черная бандана
 
-ent-ClothingHeadBandBlue-name = blue bandana
+ent-ClothingHeadBandBlue-name = синяя бандана
 
-ent-ClothingHeadBandBotany-name = botany bandana
+ent-ClothingHeadBandBotany-name = ботаническая бандана
 
-ent-ClothingHeadBandGold-name = gold bandana
+ent-ClothingHeadBandGold-name = золотая бандана
 
-ent-ClothingHeadBandGreen-name = green bandana
+ent-ClothingHeadBandGreen-name = зеленая бандана
 
-ent-ClothingHeadBandGrey-name = grey bandana
+ent-ClothingHeadBandGrey-name = серая бандана
 
-ent-ClothingHeadBandRed-name = red bandana
+ent-ClothingHeadBandRed-name = красная бандана
 
-ent-ClothingHeadBandSkull-name = skull bandana
+ent-ClothingHeadBandSkull-name = череп бандана
 
-ent-ClothingHeadBandMerc-name = mercenary bandana
+ent-ClothingHeadBandMerc-name = бандана наемника
 
-ent-ClothingHeadBandBrown-name = brown bandana
+ent-ClothingHeadBandBrown-name = коричневая бандана
 
 ent-ClothingHeadBandBase-name = lathe-category-clothing
 

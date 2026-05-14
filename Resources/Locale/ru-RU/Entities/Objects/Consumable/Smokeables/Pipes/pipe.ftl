@@ -1,12 +1,12 @@
-ent-SmokingPipe-name = pipe
-ent-SmokingPipe-desc = Just like grandpappy used to smoke.
+ent-SmokingPipe-name = труба
+ent-SmokingPipe-desc = Точно так же, как дедушка курил.
 
-ent-SmokingPipeFilledTobacco-name = pipe
-ent-SmokingPipeFilledTobacco-desc = Just like grandpappy used to smoke.
+ent-SmokingPipeFilledTobacco-name = труба
+ent-SmokingPipeFilledTobacco-desc = Точно так же, как дедушка курил.
 
-ent-SmokingPipeFilledCannabis-name = pipe
-ent-SmokingPipeFilledCannabis-desc = Just like grandpappy used to smoke.
+ent-SmokingPipeFilledCannabis-name = труба
+ent-SmokingPipeFilledCannabis-desc = Точно так же, как дедушка курил.
 
-ent-SmokingPipeFilledCannabisRainbow-name = pipe
-ent-SmokingPipeFilledCannabisRainbow-desc = Just like grandpappy used to smoke.
+ent-SmokingPipeFilledCannabisRainbow-name = труба
+ent-SmokingPipeFilledCannabisRainbow-desc = Точно так же, как дедушка курил.
 

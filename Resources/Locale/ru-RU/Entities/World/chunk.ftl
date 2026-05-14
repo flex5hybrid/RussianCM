@@ -1,3 +1,3 @@
-ent-WorldChunk-name = world chunk
-ent-WorldChunk-desc = It's rude to stare. It's also a bit odd you're looking at the abstract representation of the grid of reality.
+ent-WorldChunk-name = мировой кусок
+ent-WorldChunk-desc = Невежливо смотреть. Также немного странно, что вы смотрите на абстрактное представление сетки реальности.
 

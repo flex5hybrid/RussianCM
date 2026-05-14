@@ -1,24 +1,24 @@
-ent-CrateSecurityArmor-name = armor crate
-ent-CrateSecurityArmor-desc = Contains three bulletproof vests. Requires Security access to open.
+ent-CrateSecurityArmor-name = ящик для брони
+ent-CrateSecurityArmor-desc = Содержит три бронежилета. Для открытия требуется доступ безопасности.
 
-ent-CrateSecurityHelmet-name = helmet crate
-ent-CrateSecurityHelmet-desc = Contains three standard-issue brain buckets. Requires Security access to open.
+ent-CrateSecurityHelmet-name = ящик для шлема
+ent-CrateSecurityHelmet-desc = Содержит три стандартных мозговых ведра. Для открытия требуется доступ безопасности.
 
-ent-CrateSecurityNonlethal-name = nonlethals crate
-ent-CrateSecurityNonlethal-desc = Contains a mix of disablers, stun batons, and flashes. Requires Security access to open.
+ent-CrateSecurityNonlethal-name = несмертельный ящик
+ent-CrateSecurityNonlethal-desc = Содержит смесь дизейблеров, электрошокеров и светошумов. Для открытия требуется доступ безопасности.
 
-ent-CrateSecuritySupplies-name = security supplies crate
-ent-CrateSecuritySupplies-desc = Contains various supplies for the station's Security team. Requires Security access to open.
+ent-CrateSecuritySupplies-name = ящик с охранными принадлежностями
+ent-CrateSecuritySupplies-desc = Содержит различные принадлежности для службы безопасности станции. Для открытия требуется доступ безопасности.
 
-ent-CrateRestraints-name = restraints crate
-ent-CrateRestraints-desc = Contains two boxes each of handcuffs and zipties. Requires Security access to open.
+ent-CrateRestraints-name = ящик для ограничений
+ent-CrateRestraints-desc = Содержит по две коробки с наручниками и молниями. Для открытия требуется доступ безопасности.
 
-ent-CrateSecurityBiosuit-name = security bio suit crate
-ent-CrateSecurityBiosuit-desc = Contains 2 biohazard suits to ensure that no disease will distract you from your duties. Requires Security access to open.
+ent-CrateSecurityBiosuit-name = ящик для биологического костюма безопасности
+ent-CrateSecurityBiosuit-desc = Содержит 2 костюма биологической защиты, которые гарантируют, что никакая болезнь не отвлечет вас от ваших обязанностей. Для открытия требуется доступ безопасности.
 
-ent-CrateSecurityTrackingMindshieldImplants-name = implanter crate
-ent-CrateSecurityTrackingMindshieldImplants-desc = Contains 4 MindShield implants and 4 tracking implant. Requires Security access to open.
+ent-CrateSecurityTrackingMindshieldImplants-name = ящик для имплантатора
+ent-CrateSecurityTrackingMindshieldImplants-desc = Содержит 4 имплантата MindShield и 4 имплантата слежения. Для открытия требуется доступ безопасности.
 
-ent-CrateSecNonlethalThrowables-name = nonlethal throwables crate
-ent-CrateSecNonlethalThrowables-desc = Contains one box each of flashbangs, stingers, tear gas grenades, and four bolas. Requires Security access to open.
+ent-CrateSecNonlethalThrowables-name = ящик для несмертельных метательных снарядов
+ent-CrateSecNonlethalThrowables-desc = Содержит по одной коробке со светошумовыми гранатами, жалами, гранатами со слезоточивым газом и четырьмя бола. Для открытия требуется доступ безопасности.
 

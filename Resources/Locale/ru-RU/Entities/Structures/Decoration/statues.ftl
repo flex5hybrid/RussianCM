@@ -1,9 +1,9 @@
-ent-StatueVenusRed-name = statue of a pure maiden
-ent-StatueVenusRed-desc = An ancient marble statue. The subject is depicted with a floor-length braid and is wielding a red toolbox.
+ent-StatueVenusRed-name = статуя чистой девы
+ent-StatueVenusRed-desc = Древняя мраморная статуя. Субъект изображен с косой до пола и вооружен красным ящиком для инструментов.
 
-ent-StatueVenusBlue-name = statue of a pure maiden
-ent-StatueVenusBlue-desc = An ancient marble statue. The subject is depicted with a floor-length braid and is wielding a blue toolbox.
+ent-StatueVenusBlue-name = статуя чистой девы
+ent-StatueVenusBlue-desc = Древняя мраморная статуя. Субъект изображен с косой до пола и вооружен синим ящиком для инструментов.
 
-ent-StatueBananiumClown-name = bananium savior statue
-ent-StatueBananiumClown-desc = A bananium statue. It portrays the return of the savior who will rise up and lead the clowns to the great honk.
+ent-StatueBananiumClown-name = Статуя спасителя из банана
+ent-StatueBananiumClown-desc = Статуя банана. На нем изображено возвращение спасителя, который восстанет и приведет клоунов к великому сигналу.
 

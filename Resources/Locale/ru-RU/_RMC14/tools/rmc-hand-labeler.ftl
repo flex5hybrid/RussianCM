@@ -1,1 +1,1 @@
-rmc-hand-labeler-pill-bottle-color = Choose Pill Bottle Color
+rmc-hand-labeler-pill-bottle-color = Выберите цвет бутылки с таблетками

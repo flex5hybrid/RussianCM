@@ -1,18 +1,18 @@
-ent-RollerBed-name = rollerbed
-ent-RollerBed-desc = Used to carry patients around without damaging them.
+ent-RollerBed-name = роликовая кровать
+ent-RollerBed-desc = Используется для перевозки пациентов, не причиняя им вреда.
 
-ent-CheapRollerBed-name = rollerbed
-ent-CheapRollerBed-desc = A run-down rollerbed. Used to carry patients around.
+ent-CheapRollerBed-name = роликовая кровать
+ent-CheapRollerBed-desc = Ветхая роликовая кровать. Используется для перевозки пациентов.
 
-ent-EmergencyRollerBed-name = rollerbed
-ent-EmergencyRollerBed-desc = A robust looking rollerbed used for emergencies.
+ent-EmergencyRollerBed-name = роликовая кровать
+ent-EmergencyRollerBed-desc = Прочная роликовая кровать, используемая в чрезвычайных ситуациях.
 
-ent-RollerBedSpawnFolded-name = rollerbed
-ent-RollerBedSpawnFolded-desc = Used to carry patients around without damaging them.
+ent-RollerBedSpawnFolded-name = роликовая кровать
+ent-RollerBedSpawnFolded-desc = Используется для перевозки пациентов, не причиняя им вреда.
 
-ent-CheapRollerBedSpawnFolded-name = rollerbed
-ent-CheapRollerBedSpawnFolded-desc = Used to carry patients around without damaging them.
+ent-CheapRollerBedSpawnFolded-name = роликовая кровать
+ent-CheapRollerBedSpawnFolded-desc = Используется для перевозки пациентов, не причиняя им вреда.
 
-ent-EmergencyRollerBedSpawnFolded-name = rollerbed
-ent-EmergencyRollerBedSpawnFolded-desc = Used to carry patients around without damaging them.
+ent-EmergencyRollerBedSpawnFolded-name = роликовая кровать
+ent-EmergencyRollerBedSpawnFolded-desc = Используется для перевозки пациентов, не причиняя им вреда.
 

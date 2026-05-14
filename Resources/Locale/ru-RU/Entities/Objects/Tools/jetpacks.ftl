@@ -1,45 +1,45 @@
-ent-BaseJetpack-name = jetpack
-ent-BaseJetpack-desc = It's a jetpack. It can hold 5 L of gas.
+ent-BaseJetpack-name = реактивный ранец
+ent-BaseJetpack-desc = Это реактивный ранец. Он может вместить 5 л газа.
 
-ent-ActionToggleJetpack-name = Toggle jetpack
-ent-ActionToggleJetpack-desc = Toggles the jetpack, giving you movement outside the station.
+ent-ActionToggleJetpack-name = Переключить реактивный ранец
+ent-ActionToggleJetpack-desc = Включает реактивный ранец, позволяя вам перемещаться за пределы станции.
 
-ent-JetpackBlue-name = jetpack
-ent-JetpackBlue-desc = It's a jetpack. It can hold 5 L of gas.
+ent-JetpackBlue-name = реактивный ранец
+ent-JetpackBlue-desc = Это реактивный ранец. Он может вместить 5 л газа.
 
-ent-JetpackBlueFilled-name = jetpack
-ent-JetpackBlueFilled-desc = It's a jetpack. It can hold 5 L of gas.
+ent-JetpackBlueFilled-name = реактивный ранец
+ent-JetpackBlueFilled-desc = Это реактивный ранец. Он может вместить 5 л газа.
 
-ent-JetpackBlack-name = jetpack
-ent-JetpackBlack-desc = It's a jetpack. It can hold 5 L of gas.
+ent-JetpackBlack-name = реактивный ранец
+ent-JetpackBlack-desc = Это реактивный ранец. Он может вместить 5 л газа.
 
-ent-JetpackBlackFilled-name = jetpack
-ent-JetpackBlackFilled-desc = It's a jetpack. It can hold 5 L of gas.
+ent-JetpackBlackFilled-name = реактивный ранец
+ent-JetpackBlackFilled-desc = Это реактивный ранец. Он может вместить 5 л газа.
 
-ent-JetpackCaptain-name = captain's jetpack
-ent-JetpackCaptain-desc = It's a jetpack. It can hold 5 L of gas.
+ent-JetpackCaptain-name = капитанский реактивный ранец
+ent-JetpackCaptain-desc = Это реактивный ранец. Он может вместить 5 л газа.
 
-ent-JetpackCaptainFilled-name = captain's jetpack
-ent-JetpackCaptainFilled-desc = It's a jetpack. It can hold 5 L of gas.
+ent-JetpackCaptainFilled-name = капитанский реактивный ранец
+ent-JetpackCaptainFilled-desc = Это реактивный ранец. Он может вместить 5 л газа.
 
-ent-JetpackMini-name = mini jetpack
-ent-JetpackMini-desc = It's a jetpack. It can hold 1.5 L of gas.
+ent-JetpackMini-name = мини реактивный ранец
+ent-JetpackMini-desc = Это реактивный ранец. Он вмещает 1,5 л газа.
 
-ent-JetpackMiniFilled-name = mini jetpack
-ent-JetpackMiniFilled-desc = It's a jetpack. It can hold 1.5 L of gas.
+ent-JetpackMiniFilled-name = мини реактивный ранец
+ent-JetpackMiniFilled-desc = Это реактивный ранец. Он вмещает 1,5 л газа.
 
-ent-JetpackSecurity-name = security jetpack
-ent-JetpackSecurity-desc = It's a jetpack. It can hold 5 L of gas.
+ent-JetpackSecurity-name = безопасность реактивный ранец
+ent-JetpackSecurity-desc = Это реактивный ранец. Он может вместить 5 л газа.
 
-ent-JetpackSecurityFilled-name = security jetpack
-ent-JetpackSecurityFilled-desc = It's a jetpack. It can hold 5 L of gas.
+ent-JetpackSecurityFilled-name = безопасность реактивный ранец
+ent-JetpackSecurityFilled-desc = Это реактивный ранец. Он может вместить 5 л газа.
 
-ent-JetpackVoid-name = void jetpack
-ent-JetpackVoid-desc = It's a jetpack. It can hold 5 L of gas.
+ent-JetpackVoid-name = пустотный реактивный ранец
+ent-JetpackVoid-desc = Это реактивный ранец. Он может вместить 5 л газа.
 
-ent-JetpackVoidFilled-name = void jetpack
-ent-JetpackVoidFilled-desc = It's a jetpack. It can hold 5 L of gas.
+ent-JetpackVoidFilled-name = пустотный реактивный ранец
+ent-JetpackVoidFilled-desc = Это реактивный ранец. Он может вместить 5 л газа.
 
-ent-JetpackXenoborg-name = xenoborg jetpack
-ent-JetpackXenoborg-desc = It's a jetpack. It can hold 5 L of gas.
+ent-JetpackXenoborg-name = реактивный ранец ксеноборга
+ent-JetpackXenoborg-desc = Это реактивный ранец. Он может вместить 5 л газа.
 

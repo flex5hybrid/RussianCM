@@ -1,29 +1,29 @@
-ent-DrinkShinyFlask-name = shiny flask
-ent-DrinkShinyFlask-desc = A shiny metal flask. It appears to have a Greek symbol inscribed on it.
+ent-DrinkShinyFlask-name = блестящая колба
+ent-DrinkShinyFlask-desc = Блестящая металлическая колба. Судя по всему, на нем написан греческий символ.
 
-ent-DrinkMREFlask-name = MRE flask
-ent-DrinkMREFlask-desc = An old military flask, filled with the finest contents for soldiers.
+ent-DrinkMREFlask-name = колба MRE
+ent-DrinkMREFlask-desc = Старая военная фляга, наполненная лучшим содержимым для солдат.
 
-ent-DrinkDetFlask-name = inspector's flask
-ent-DrinkDetFlask-desc = A metal flask with a leather band and golden badge belonging to the inspector.
+ent-DrinkDetFlask-name = инспекторская колба
+ent-DrinkDetFlask-desc = Металлическая фляжка с кожаным ремешком и золотым значком, принадлежащая инспектору.
 
-ent-DrinkHosFlask-name = hos's flask
-ent-DrinkHosFlask-desc = A metal flask, fit for a hard working HoS.
+ent-DrinkHosFlask-name = колба Хоса
+ent-DrinkHosFlask-desc = Металлическая фляга, подходящая для трудолюбивого ХоСа.
 
-ent-DrinkFlask-name = captain's flask
-ent-DrinkFlask-desc = A metal flask belonging to the captain.
+ent-DrinkFlask-name = капитанская фляжка
+ent-DrinkFlask-desc = Металлическая фляжка, принадлежавшая капитану.
 
-ent-DrinkFlaskBar-name = bar flask
-ent-DrinkFlaskBar-desc = A metal flask often given out by the bartender on loan. Don't forget to return it!
+ent-DrinkFlaskBar-name = барная фляжка
+ent-DrinkFlaskBar-desc = Металлическая фляга, которую бармен часто дает взаймы. Не забудьте вернуть его!
 
-ent-DrinkFlaskOld-name = old flask
-ent-DrinkFlaskOld-desc = A decrepit old flask, its lid seems to be missing.
+ent-DrinkFlaskOld-name = старая фляга
+ent-DrinkFlaskOld-desc = Ветхая старая фляга, у которой, кажется, отсутствует крышка.
 
-ent-DrinkLithiumFlask-name = lithium flask
-ent-DrinkLithiumFlask-desc = A flask with a Lithium Atom symbol on it.
+ent-DrinkLithiumFlask-name = литиевая колба
+ent-DrinkLithiumFlask-desc = Колба с символом атома лития.
 
-ent-DrinkVacuumFlask-name = vacuum flask
-ent-DrinkVacuumFlask-desc = Keeping your drinks at the perfect temperature since 1892.
+ent-DrinkVacuumFlask-name = термос
+ent-DrinkVacuumFlask-desc = Сохраняет ваши напитки идеальной температуры с 1892 года.
 
-ent-FlaskBase-name = item
+ent-FlaskBase-name = элемент
 

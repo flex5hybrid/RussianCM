@@ -1,12 +1,12 @@
-ent-ActionRevenantShop-name = Shop
-ent-ActionRevenantShop-desc = Opens the ability shop.
+ent-ActionRevenantShop-name = Магазин
+ent-ActionRevenantShop-desc = Открывает магазин способностей.
 
-ent-ActionRevenantDefile-name = Defile
-ent-ActionRevenantDefile-desc = Costs 30 Essence.
+ent-ActionRevenantDefile-name = Осквернить
+ent-ActionRevenantDefile-desc = Стоит 30 эссенций.
 
-ent-ActionRevenantOverloadLights-name = Overload Lights
-ent-ActionRevenantOverloadLights-desc = Costs 40 Essence.
+ent-ActionRevenantOverloadLights-name = Индикаторы перегрузки
+ent-ActionRevenantOverloadLights-desc = Стоит 40 эссенции.
 
-ent-ActionRevenantMalfunction-name = Malfunction
-ent-ActionRevenantMalfunction-desc = Costs 60 Essence.
+ent-ActionRevenantMalfunction-name = Неисправность
+ent-ActionRevenantMalfunction-desc = Стоит 60 эссенций.
 

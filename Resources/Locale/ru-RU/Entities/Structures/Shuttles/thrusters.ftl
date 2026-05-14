@@ -1,24 +1,24 @@
-ent-BaseThruster-name = thruster
-ent-BaseThruster-desc = A thruster that allows a shuttle to move.
+ent-BaseThruster-name = двигатель
+ent-BaseThruster-desc = Двигатель, позволяющий шаттлу двигаться.
 
-ent-Thruster-name = thruster
-ent-Thruster-desc = A thruster that allows a shuttle to move.
+ent-Thruster-name = двигатель
+ent-Thruster-desc = Двигатель, позволяющий шаттлу двигаться.
 
-ent-Gyroscope-name = gyroscope
-ent-Gyroscope-desc = Increases the shuttle's potential angular rotation.
+ent-Gyroscope-name = гироскоп
+ent-Gyroscope-desc = Увеличивает потенциальный угловой поворот шаттла.
 
-ent-RustedThruster-name = rusted thruster
-ent-RustedThruster-desc = An unrepairable thruster, broken down from wear and tear. Only useful for scrapping.
+ent-RustedThruster-name = ржавое подруливающее устройство
+ent-RustedThruster-desc = Неремонтопригодное подруливающее устройство, вышедшее из строя из-за износа. Полезно только для списания.
 
-ent-ThrusterUnanchored-name = thruster
-ent-ThrusterUnanchored-desc = A thruster that allows a shuttle to move.
+ent-ThrusterUnanchored-name = двигатель
+ent-ThrusterUnanchored-desc = Двигатель, позволяющий шаттлу двигаться.
 
-ent-DebugThruster-name = thruster
-ent-DebugThruster-desc = A thruster that allows a shuttle to move.
+ent-DebugThruster-name = двигатель
+ent-DebugThruster-desc = Двигатель, позволяющий шаттлу двигаться.
 
-ent-GyroscopeUnanchored-name = gyroscope
-ent-GyroscopeUnanchored-desc = Increases the shuttle's potential angular rotation.
+ent-GyroscopeUnanchored-name = гироскоп
+ent-GyroscopeUnanchored-desc = Увеличивает потенциальный угловой поворот шаттла.
 
-ent-DebugGyroscope-name = thruster
-ent-DebugGyroscope-desc = A thruster that allows a shuttle to move.
+ent-DebugGyroscope-name = двигатель
+ent-DebugGyroscope-desc = Двигатель, позволяющий шаттлу двигаться.
 

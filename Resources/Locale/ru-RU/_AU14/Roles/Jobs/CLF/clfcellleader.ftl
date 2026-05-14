@@ -1,2 +1,2 @@
-ent-AU14SpawnPointCLFCellLeader-name = Spawn Point CLF Cell Leader
-ent-AU14SpawnPointCLFCellLeader-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointCLFCellLeader-name = Точка возрождения Лидер ячейки CLF
+ent-AU14SpawnPointCLFCellLeader-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

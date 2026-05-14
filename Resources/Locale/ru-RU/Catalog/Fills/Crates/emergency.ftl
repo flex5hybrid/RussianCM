@@ -1,24 +1,24 @@
-ent-CrateEmergencyExplosive-name = bomb suit crate
-ent-CrateEmergencyExplosive-desc = Science gone bonkers? Beeping behind the airlock? Buy now and be the hero the station des... I mean needs! (time not included)
+ent-CrateEmergencyExplosive-name = ящик бомбового костюма
+ent-CrateEmergencyExplosive-desc = Наука сошла с ума? Звуковой сигнал за шлюзом? Купите сейчас и станьте героем станции... Я имею в виду потребности! (время не включено)
 
-ent-CrateEmergencyFire-name = firefighting crate
-ent-CrateEmergencyFire-desc = Only you can prevent station fires. Partner up with two firefighter suits, gas masks, flashlights, large oxygen tanks, extinguishers, and hardhats!
+ent-CrateEmergencyFire-name = пожарный ящик
+ent-CrateEmergencyFire-desc = Только вы можете предотвратить пожары на станции. Возьмите с собой два костюма пожарного, противогазы, фонарики, большие кислородные баллоны, огнетушители и каски!
 
-ent-CrateEmergencyInternals-name = internals crate
-ent-CrateEmergencyInternals-desc = Master your life energy and control your breathing with 3 breath masks, emergency suits and large air tanks.
+ent-CrateEmergencyInternals-name = ящик с внутренними устройствами
+ent-CrateEmergencyInternals-desc = Управляйте своей жизненной энергией и контролируйте свое дыхание с помощью трех дыхательных масок, спасательных костюмов и больших баллонов с воздухом.
 
-ent-CrateEmergencyInternalsLarge-name = internals crate (large)
-ent-CrateEmergencyInternalsLarge-desc = Master your life energy and control your breathing with 6 breath masks, emergency suits and large air tanks.
+ent-CrateEmergencyInternalsLarge-name = ящик для внутренних вещей (большой)
+ent-CrateEmergencyInternalsLarge-desc = Управляйте своей жизненной энергией и контролируйте свое дыхание с помощью 6 дыхательных масок, спасательных костюмов и больших баллонов с воздухом.
 
-ent-CrateNitrogenInternals-name = internals crate (nitrogen)
-ent-CrateNitrogenInternals-desc = Contains four breath masks and four large nitrogen tanks. Intended for Slimepeople and Vox.
+ent-CrateNitrogenInternals-name = ящик для внутренних устройств (азот)
+ent-CrateNitrogenInternals-desc = Содержит четыре дыхательные маски и четыре больших резервуара с азотом. Предназначен для слизней и воксов.
 
-ent-CrateEmergencyRadiation-name = radiation protection crate
-ent-CrateEmergencyRadiation-desc = Survive the Nuclear Apocalypse and Supermatter Engine alike with two sets of Radiation suits. Each set contains a helmet, suit, and Geiger counter. We'll even throw in a bottle of vodka and some glasses too, considering the life-expectancy of people who order this.
+ent-CrateEmergencyRadiation-name = ящик радиационной защиты
+ent-CrateEmergencyRadiation-desc = Переживите ядерный апокалипсис и двигатель сверхматерии, используя два комплекта радиационных костюмов. В каждом наборе есть шлем, костюм и счетчик Гейгера. Мы даже добавим бутылку водки и несколько стаканов, учитывая продолжительность жизни людей, которые это заказывают.
 
-ent-CrateEmergencyInflatablewall-name = inflatable wall crate
-ent-CrateEmergencyInflatablewall-desc = Three stacks of inflatable walls for when the stations metal walls don't want to hold atmosphere anymore.
+ent-CrateEmergencyInflatablewall-name = надувной настенный ящик
+ent-CrateEmergencyInflatablewall-desc = Три стопки надувных стен на случай, если металлические стены станции больше не хотят удерживать атмосферу.
 
-ent-CrateGenericBiosuit-name = emergency bio suit crate
-ent-CrateGenericBiosuit-desc = Contains 2 biohazard suits to ensure that no disease will distract you from what you're doing there.
+ent-CrateGenericBiosuit-name = ящик для экстренного биокостюма
+ent-CrateGenericBiosuit-desc = Содержит 2 костюма биологической защиты, которые гарантируют, что никакая болезнь не отвлечет вас от того, что вы там делаете.
 

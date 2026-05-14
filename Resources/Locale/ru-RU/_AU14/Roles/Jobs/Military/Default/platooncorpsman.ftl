@@ -1,2 +1,2 @@
-ent-AU14SpawnPointGOVFORPlatoonCorpsman-name = Spawn Point GOVFOR Squad Sergeant
-ent-AU14SpawnPointGOVFORPlatoonCorpsman-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointGOVFORPlatoonCorpsman-name = Точка возрождения Сержант отделения ГОВФОР
+ent-AU14SpawnPointGOVFORPlatoonCorpsman-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

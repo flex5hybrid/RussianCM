@@ -1,24 +1,24 @@
-ent-BaseShutter-name = shutter
-ent-BaseShutter-desc = One shudders to think about what might be behind this shutter.
+ent-BaseShutter-name = затвор
+ent-BaseShutter-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-ShuttersRadiation-name = radiation shutters
-ent-ShuttersRadiation-desc = Why did they make these shutters radioactive?
+ent-ShuttersRadiation-name = радиационные жалюзи
+ent-ShuttersRadiation-desc = Почему они сделали эти ставни радиоактивными?
 
-ent-ShuttersWindow-name = window shutters
-ent-ShuttersWindow-desc = The Best (TM) place to see your friends explode!
+ent-ShuttersWindow-name = оконные ставни
+ent-ShuttersWindow-desc = Лучшее (TM) место, где можно увидеть, как взрываются твои друзья!
 
-ent-ShuttersFrame-name = shutter frame
-ent-ShuttersFrame-desc = A frame for constructing a shutter.
+ent-ShuttersFrame-name = рама затвора
+ent-ShuttersFrame-desc = Каркас для изготовления ставен.
 
-ent-ShuttersNormal-name = shutter
-ent-ShuttersNormal-desc = One shudders to think about what might be behind this shutter.
+ent-ShuttersNormal-name = затвор
+ent-ShuttersNormal-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-ShuttersNormalOpen-name = shutter
-ent-ShuttersNormalOpen-desc = One shudders to think about what might be behind this shutter.
+ent-ShuttersNormalOpen-name = затвор
+ent-ShuttersNormalOpen-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-ShuttersRadiationOpen-name = shutter
-ent-ShuttersRadiationOpen-desc = One shudders to think about what might be behind this shutter.
+ent-ShuttersRadiationOpen-name = затвор
+ent-ShuttersRadiationOpen-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-ShuttersWindowOpen-name = shutter
-ent-ShuttersWindowOpen-desc = One shudders to think about what might be behind this shutter.
+ent-ShuttersWindowOpen-name = затвор
+ent-ShuttersWindowOpen-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 

@@ -56,3 +56,8 @@ rmc-commendation-examine-title = Inscription
 rmc-commendation-examine-1 = The inscription on this award reads:
 rmc-commendation-examine-2 = [italic]Issued to [bolditalic]{$receiver}[/bolditalic] by [bolditalic]{$giver}[/bolditalic] for: {$text}[/italic]
 rmc-commendation-examine-hover = Read the full inscription on this award
+
+
+
+rmc-commendations-received-button = Medals and Jellies Received
+rmc-commendations-given-button = Medals and Jellies Given

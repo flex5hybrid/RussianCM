@@ -167,3 +167,9 @@ food-sequence-taco-gen = тако с { $content }
 # SKEWER
 
 food-sequence-skewer-gen = шашлык с { $content }
+
+# Missing entries synced from en-US
+
+food-sequence-content-friedegg = жареное яйцо
+
+# BURGERS

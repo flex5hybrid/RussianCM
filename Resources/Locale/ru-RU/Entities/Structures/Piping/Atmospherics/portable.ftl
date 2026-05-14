@@ -1,12 +1,12 @@
-ent-PortableScrubber-name = portable scrubber
-ent-PortableScrubber-desc = It scrubs, portably!
+ent-PortableScrubber-name = портативный скребок
+ent-PortableScrubber-desc = Он очищает, портативно!
 
-ent-SpaceHeater-name = space heater
-ent-SpaceHeater-desc = A bluespace technology device that alters local temperature. Commonly referred to as a "Space Heater".
+ent-SpaceHeater-name = обогреватель
+ent-SpaceHeater-desc = Устройство с технологией bluespace, которое изменяет местную температуру. Обычно его называют «космическим обогревателем».
 
-ent-SpaceHeaterAnchored-name = space heater
-ent-SpaceHeaterAnchored-desc = A bluespace technology device that alters local temperature. Commonly referred to as a "Space Heater".
+ent-SpaceHeaterAnchored-name = обогреватель
+ent-SpaceHeaterAnchored-desc = Устройство с технологией bluespace, которое изменяет местную температуру. Обычно его называют «космическим обогревателем».
 
-ent-SpaceHeaterEnabled-name = space heater
-ent-SpaceHeaterEnabled-desc = A bluespace technology device that alters local temperature. Commonly referred to as a "Space Heater".
+ent-SpaceHeaterEnabled-name = обогреватель
+ent-SpaceHeaterEnabled-desc = Устройство с технологией bluespace, которое изменяет местную температуру. Обычно его называют «космическим обогревателем».
 

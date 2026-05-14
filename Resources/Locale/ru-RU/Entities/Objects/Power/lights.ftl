@@ -1,97 +1,97 @@
-ent-LightBulb-name = incandescent light bulb
-ent-LightBulb-desc = A light bulb.
+ent-LightBulb-name = лампа накаливания
+ent-LightBulb-desc = Лампочка.
 
-ent-LedLightBulb-name = led light bulb
-ent-LedLightBulb-desc = A power efficient light bulb.
+ent-LedLightBulb-name = светодиодная лампочка
+ent-LedLightBulb-desc = Энергоэффективная лампочка.
 
-ent-DimLightBulb-name = dim light bulb
-ent-DimLightBulb-desc = A dim light bulb for populating the darkness of maintenance.
+ent-DimLightBulb-name = тусклая лампочка
+ent-DimLightBulb-desc = Тусклая лампочка, заполняющая темноту технического обслуживания.
 
-ent-WarmLightBulb-name = warm light bulb
-ent-WarmLightBulb-desc = A warm light bulb for a more cozy atmosphere.
+ent-WarmLightBulb-name = теплая лампочка
+ent-WarmLightBulb-desc = Теплая лампочка для более уютной атмосферы.
 
-ent-LightBulbOld-name = old incandescent light bulb
-ent-LightBulbOld-desc = An aging light bulb.
+ent-LightBulbOld-name = старая лампа накаливания
+ent-LightBulbOld-desc = Стареющая лампочка.
 
-ent-LightBulbBroken-name = incandescent light bulb
-ent-LightBulbBroken-desc = A light bulb.
+ent-LightBulbBroken-name = лампа накаливания
+ent-LightBulbBroken-desc = Лампочка.
 
-ent-ServiceLightBulb-name = service light bulb
-ent-ServiceLightBulb-desc = A low-brightness green lightbulb used in janitorial service lights.
+ent-ServiceLightBulb-name = сервисная лампочка
+ent-ServiceLightBulb-desc = Зеленая лампочка малой яркости, используемая в светильниках для уборки.
 
-ent-LightTube-name = fluorescent light tube
-ent-LightTube-desc = A light fixture.
+ent-LightTube-name = люминесцентная лампочка
+ent-LightTube-desc = Светильник.
 
-ent-LightTubeOld-name = old fluorescent light tube
-ent-LightTubeOld-desc = An aging light fixture.
+ent-LightTubeOld-name = старая люминесцентная лампа
+ent-LightTubeOld-desc = Устаревший светильник.
 
-ent-LightTubeBroken-name = fluorescent light tube
-ent-LightTubeBroken-desc = A light fixture.
+ent-LightTubeBroken-name = люминесцентная лампочка
+ent-LightTubeBroken-desc = Светильник.
 
-ent-LedLightTube-name = led light tube
-ent-LedLightTube-desc = A high power high energy bulb.
+ent-LedLightTube-name = светодиодная трубка
+ent-LedLightTube-desc = Лампа большой мощности.
 
-ent-ExteriorLightTube-name = exterior light tube
-ent-ExteriorLightTube-desc = A high power high energy bulb for the depths of space. May contain mercury.
+ent-ExteriorLightTube-name = внешняя световая трубка
+ent-ExteriorLightTube-desc = Мощная лампочка большой мощности для глубин космоса. Может содержать ртуть.
 
-ent-SodiumLightTube-name = sodium light tube
-ent-SodiumLightTube-desc = A high power high energy bulb for the depths of space. Salty.
+ent-SodiumLightTube-name = натриевая световая трубка
+ent-SodiumLightTube-desc = Мощная лампочка большой мощности для глубин космоса. Соленый.
 
-ent-BaseLightTubeCrystal-name = crystal light tube
-ent-BaseLightTubeCrystal-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-BaseLightTubeCrystal-name = хрустальная световая трубка
+ent-BaseLightTubeCrystal-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightTubeCrystalCyan-name = cyan crystal light tube
-ent-LightTubeCrystalCyan-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightTubeCrystalCyan-name = голубая хрустальная световая трубка
+ent-LightTubeCrystalCyan-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightTubeCrystalBlue-name = blue crystal light tube
-ent-LightTubeCrystalBlue-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightTubeCrystalBlue-name = Синяя хрустальная световая трубка
+ent-LightTubeCrystalBlue-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightTubeCrystalYellow-name = yellow crystal light tube
-ent-LightTubeCrystalYellow-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightTubeCrystalYellow-name = желтая хрустальная световая трубка
+ent-LightTubeCrystalYellow-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightTubeCrystalPink-name = pink crystal light tube
-ent-LightTubeCrystalPink-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightTubeCrystalPink-name = розовая хрустальная световая трубка
+ent-LightTubeCrystalPink-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightTubeCrystalOrange-name = orange crystal light tube
-ent-LightTubeCrystalOrange-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightTubeCrystalOrange-name = оранжевая хрустальная световая трубка
+ent-LightTubeCrystalOrange-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightTubeCrystalBlack-name = black crystal light tube
-ent-LightTubeCrystalBlack-desc = A high power high energy bulb which has a small colored crystal inside. It isn't very bright.
+ent-LightTubeCrystalBlack-name = черная хрустальная световая трубка
+ent-LightTubeCrystalBlack-desc = Лампа большой мощности с небольшим цветным кристаллом внутри. Это не очень ярко.
 
-ent-LightTubeCrystalRed-name = red crystal light tube
-ent-LightTubeCrystalRed-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightTubeCrystalRed-name = красная хрустальная световая трубка
+ent-LightTubeCrystalRed-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightTubeCrystalGreen-name = green crystal light tube
-ent-LightTubeCrystalGreen-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightTubeCrystalGreen-name = зеленая хрустальная световая трубка
+ent-LightTubeCrystalGreen-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-BaseLightbulbCrystal-name = crystal light bulb
-ent-BaseLightbulbCrystal-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-BaseLightbulbCrystal-name = хрустальная лампочка
+ent-BaseLightbulbCrystal-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightBulbCrystalCyan-name = cyan crystal light bulb
-ent-LightBulbCrystalCyan-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightBulbCrystalCyan-name = голубая хрустальная лампочка
+ent-LightBulbCrystalCyan-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightBulbCrystalBlue-name = blue crystal light bulb
-ent-LightBulbCrystalBlue-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightBulbCrystalBlue-name = Синяя хрустальная лампочка
+ent-LightBulbCrystalBlue-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightBulbCrystalYellow-name = yellow crystal light bulb
-ent-LightBulbCrystalYellow-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightBulbCrystalYellow-name = желтая хрустальная лампочка
+ent-LightBulbCrystalYellow-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightBulbCrystalPink-name = pink crystal light bulb
-ent-LightBulbCrystalPink-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightBulbCrystalPink-name = розовая хрустальная лампочка
+ent-LightBulbCrystalPink-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightBulbCrystalOrange-name = orange crystal light bulb
-ent-LightBulbCrystalOrange-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightBulbCrystalOrange-name = оранжевая хрустальная лампочка
+ent-LightBulbCrystalOrange-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightBulbCrystalBlack-name = black crystal light bulb
-ent-LightBulbCrystalBlack-desc = A high power high energy bulb which has a small colored crystal inside. It isn't very bright.
+ent-LightBulbCrystalBlack-name = черная хрустальная лампочка
+ent-LightBulbCrystalBlack-desc = Лампа большой мощности с небольшим цветным кристаллом внутри. Это не очень ярко.
 
-ent-LightBulbCrystalRed-name = red crystal light bulb
-ent-LightBulbCrystalRed-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightBulbCrystalRed-name = красная хрустальная лампочка
+ent-LightBulbCrystalRed-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-LightBulbCrystalGreen-name = green crystal light bulb
-ent-LightBulbCrystalGreen-desc = A high power high energy bulb which has a small colored crystal inside.
+ent-LightBulbCrystalGreen-name = зеленая хрустальная лампочка
+ent-LightBulbCrystalGreen-desc = Лампа большой мощности с небольшим цветным кристаллом внутри.
 
-ent-BaseLightbulb-name = item
+ent-BaseLightbulb-name = элемент
 
-ent-BaseLightTube-name = item
+ent-BaseLightTube-name = элемент
 

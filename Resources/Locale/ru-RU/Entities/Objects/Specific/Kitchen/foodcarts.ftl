@@ -1,9 +1,9 @@
-ent-FoodCartBase-name = food cart
-ent-FoodCartBase-desc = A cart for food.
+ent-FoodCartBase-name = тележка с едой
+ent-FoodCartBase-desc = Тележка для еды.
 
-ent-FoodCartHot-name = hot food cart
-ent-FoodCartHot-desc = Get out there and slang some dogs.
+ent-FoodCartHot-name = тележка с горячей едой
+ent-FoodCartHot-desc = Выйди и обругай собак.
 
-ent-FoodCartCold-name = cold food cart
-ent-FoodCartCold-desc = It's the Ice Cream Man! It's the Ice Cream Man!
+ent-FoodCartCold-name = тележка для холодных продуктов
+ent-FoodCartCold-desc = Это Человек-мороженое! Это Человек-мороженое!
 

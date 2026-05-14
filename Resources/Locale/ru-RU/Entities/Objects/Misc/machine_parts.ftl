@@ -1,6 +1,6 @@
-ent-BaseStockPart-name = stock part
-ent-BaseStockPart-desc = What?
+ent-BaseStockPart-name = запасная часть
+ent-BaseStockPart-desc = Что?
 
-ent-MicroManipulatorStockPart-name = modular machine part
-ent-MicroManipulatorStockPart-desc = A basic machine part used in the construction of a variety of devices.
+ent-MicroManipulatorStockPart-name = модульная часть машины
+ent-MicroManipulatorStockPart-desc = Основная деталь машины, используемая в конструкции различных устройств.
 

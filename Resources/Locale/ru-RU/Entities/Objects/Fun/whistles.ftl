@@ -1,11 +1,11 @@
-ent-BaseWhistle-name = whistle
-ent-BaseWhistle-desc = Someone forgot to turn off kettle?
+ent-BaseWhistle-name = свистеть
+ent-BaseWhistle-desc = Кто-то забыл выключить чайник?
 
-ent-SecurityWhistle-name = item
-ent-SecurityWhistle-desc = Sound of it make you feel fear.
+ent-SecurityWhistle-name = элемент
+ent-SecurityWhistle-desc = Звук этого заставляет вас чувствовать страх.
 
-ent-SyndicateWhistle-name = trench whistle
-ent-SyndicateWhistle-desc = A whistle used by Syndicate commanders to draw attention. Avanti!
+ent-SyndicateWhistle-name = окопный свисток
+ent-SyndicateWhistle-desc = Свисток, используемый командирами Синдиката для привлечения внимания. Аванти!
 
 ent-Whistle-name = chat-emote-name-whistle
 

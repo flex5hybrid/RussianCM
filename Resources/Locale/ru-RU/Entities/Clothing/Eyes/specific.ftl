@@ -1,3 +1,3 @@
-ent-ClothingEyesChameleon-name = sun glasses
-ent-ClothingEyesChameleon-desc = Useful both for security and cargonia.
+ent-ClothingEyesChameleon-name = солнцезащитные очки
+ent-ClothingEyesChameleon-desc = Полезно как для охраны, так и для грузов.
 

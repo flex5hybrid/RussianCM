@@ -1,23 +1,23 @@
-ent-MopItem-name = mop
-ent-MopItem-desc = A mop that can't be stopped, viscera cleanup detail awaits.
+ent-MopItem-name = швабра
+ent-MopItem-desc = Швабра, которую невозможно остановить, ждут детали очистки внутренностей.
 
-ent-AdvMopItem-name = advanced mop
-ent-AdvMopItem-desc = Motorized mop that has a bigger reservoir and quickly replaces reagents inside with water. Automatic Clown Countermeasure not included.
+ent-AdvMopItem-name = продвинутая швабра
+ent-AdvMopItem-desc = Моторизованная швабра с большим резервуаром позволяет быстро заменять реагенты внутри водой. Автоматическая система противодействия клоунам не входит в комплект.
 
-ent-WetFloorSign-name = wet floor sign
-ent-WetFloorSign-desc = Caution! Wet Floor!
+ent-WetFloorSign-name = знак мокрого пола
+ent-WetFloorSign-desc = Осторожно! Мокрый пол!
 
-ent-Plunger-name = plunger
-ent-Plunger-desc = A plunger with a red plastic suction-cup and a wooden handle. Used to unclog drains.
+ent-Plunger-name = поршень
+ent-Plunger-desc = Плунжер с красной пластиковой присоской и деревянной ручкой. Используется для прочистки канализации.
 
-ent-GoldenPlunger-name = golden plunger
-ent-GoldenPlunger-desc = A plunger with a plastic suction cup coated in a thin layer of gold given as a token of appreciation for years of service. Still used to unclog drains.
+ent-GoldenPlunger-name = золотой поршень
+ent-GoldenPlunger-desc = Плунжер с пластиковой присоской, покрытой тонким слоем золота, вручается в знак признательности за многолетнюю службу. До сих пор используется для прочистки канализации.
 
-ent-RagItem-name = damp rag
-ent-RagItem-desc = For cleaning up messes, you suppose.
+ent-RagItem-name = влажная тряпка
+ent-RagItem-desc = Вы думаете, для того, чтобы навести порядок.
 
-ent-WireBrush-name = wire brush
-ent-WireBrush-desc = A bristly steel wire brush, perfect for scraping away even the toughest patches of rust.
+ent-WireBrush-name = проволочная щетка
+ent-WireBrush-desc = Щетка из стальной проволоки идеально подходит для соскабливания даже самых сложных участков ржавчины.
 
 ent-WetFloorSignMineExplosive-name = lathe-category-clothing
 

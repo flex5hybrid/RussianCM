@@ -11,7 +11,7 @@ liar-word-4 = неа
 liar-word-replacement-4 = ага
 
 liar-word-5 = угу
-liar-word-5-2 = yeap
+liar-word-5-2 = да
 liar-word-replacement-5 = не угу
 
 liar-word-6 = не угу
@@ -19,7 +19,7 @@ liar-word-replacement-6 = угу
 
 liar-word-7 = конечно
 liar-word-7-2 = ya
-liar-word-7-3 = yis
+liar-word-7-3 = да
 liar-word-replacement-7 = ни за что
 
 liar-word-8 = ни за что
@@ -41,35 +41,35 @@ liar-word-13 = хочу
 liar-word-replacement-13 = не хочу
 
 liar-word-14 = не хочу
-liar-word-14-2 = wasn't
+liar-word-14-2 = не было
 liar-word-replacement-14 = хочу
 
 liar-word-15 = никто
 liar-word-replacement-15 = кто-то
 
 liar-word-16 = кто-то
-liar-word-16-2 = isn't
+liar-word-16-2 = не
 liar-word-replacement-16 = никто
 
 liar-word-17 = что-то
 liar-word-replacement-17 = ничто
 
 liar-word-18 = ничто
-liar-word-18-2 = won't
+liar-word-18-2 = не будет
 liar-word-replacement-18 = что-то
 
 liar-word-19 = тут
 liar-word-replacement-19 = ""
 
 liar-word-20 = не тут
-liar-word-20-2 = can't
+liar-word-20-2 = не могу
 liar-word-replacement-20 = тут
 
 liar-word-21 = здесь
 liar-word-replacement-21 = ""
 
 liar-word-22 = не здесь
-liar-word-22-2 = shouldn't
+liar-word-22-2 = не должен
 liar-word-replacement-22 = здесь
 
 liar-word-23 = жив
@@ -91,19 +91,19 @@ liar-word-28 = здорова
 liar-word-replacement-28 = ранена
 
 liar-word-29 = do
-liar-word-replacement-29 = "don't"
+liar-word-replacement-29 = "не делай"
 
-liar-word-30 = "don't"
+liar-word-30 = "не делай"
 liar-word-replacement-30 = ""
 
-liar-word-31 = does
-liar-word-replacement-31 = "doesn't"
+liar-word-31 = делает
+liar-word-replacement-31 = "не"
 
-liar-word-32 = did
-liar-word-replacement-32 = "didn't"
+liar-word-32 = сделал
+liar-word-replacement-32 = "не"
 
-liar-word-33 = "didn't"
-liar-word-replacement-33 = did
+liar-word-33 = "не"
+liar-word-replacement-33 = сделал
 
 liar-word-34 = ye
 liar-word-replacement-34 = na
@@ -111,15 +111,39 @@ liar-word-replacement-34 = na
 liar-word-35 = na
 liar-word-replacement-35 = ye
 
-liar-word-36 = yuh
-liar-word-replacement-36 = nuh
+liar-word-36 = да
+liar-word-replacement-36 = неа
 
-liar-word-37 = nuh
-liar-word-37-2 = aren't
-liar-word-replacement-37 = yuh
+liar-word-37 = неа
+liar-word-37-2 = нет
+liar-word-replacement-37 = да
 
-liar-word-38 = love
-liar-word-replacement-38 = hate
+liar-word-38 = любовь
+liar-word-replacement-38 = ненавижу
 
-liar-word-39 = hate
-liar-word-replacement-39 = love
+liar-word-39 = ненавижу
+liar-word-replacement-39 = любовь
+
+# Missing entries synced from en-US
+
+liar-word-34-2 = ya
+
+liar-word-40 = нравится
+
+liar-word-replacement-40 = не нравится
+
+liar-word-41 = хорошо
+
+liar-word-replacement-41 = плохой
+
+liar-word-42 = плохой
+
+liar-word-replacement-42 = хорошо
+
+liar-word-43 = хочу
+
+liar-word-replacement-43 = "не хочу"
+
+liar-word-44 = нет
+
+liar-word-replacement-44 = ""

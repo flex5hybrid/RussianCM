@@ -1,2 +1,2 @@
-ent-GrilleSpawner-name = Random Grille Spawner
+ent-GrilleSpawner-name = Случайный генератор решеток
 

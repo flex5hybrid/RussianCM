@@ -1,72 +1,72 @@
-ent-ClosetWall-name = maintenance wall closet
-ent-ClosetWall-desc = It's a storage unit.
+ent-ClosetWall-name = стенной шкаф для обслуживания
+ent-ClosetWall-desc = Это складское помещение.
 
-ent-ClosetWallEmergency-name = emergency wall closet
-ent-ClosetWallEmergency-desc = It's a storage unit for emergency breath masks and O2 tanks.
+ent-ClosetWallEmergency-name = аварийный настенный шкаф
+ent-ClosetWallEmergency-desc = Это хранилище для аварийных дыхательных масок и баллонов с кислородом.
 
-ent-ClosetWallEmergencyN2-name = emergency nitrogen wall closet
-ent-ClosetWallEmergencyN2-desc = It's full of life-saving equipment. Assuming, that is, that you breathe nitrogen.
+ent-ClosetWallEmergencyN2-name = аварийный азотный настенный шкаф
+ent-ClosetWallEmergencyN2-desc = Там полно спасательного оборудования. Предположим, что вы дышите азотом.
 
-ent-ClosetWallFire-name = fire-safety wall closet
-ent-ClosetWallFire-desc = It's a storage unit for fire-fighting supplies.
+ent-ClosetWallFire-name = противопожарный стенной шкаф
+ent-ClosetWallFire-desc = Это склад противопожарных принадлежностей.
 
-ent-ClosetWallBlue-name = blue wall closet
-ent-ClosetWallBlue-desc = A wardrobe packed with stylish blue clothing.
+ent-ClosetWallBlue-name = синий стенной шкаф
+ent-ClosetWallBlue-desc = Гардероб, наполненный стильной синей одеждой.
 
-ent-ClosetWallPink-name = pink wall closet
-ent-ClosetWallPink-desc = A wardrobe packed with fabulous pink clothing.
+ent-ClosetWallPink-name = розовый стенной шкаф
+ent-ClosetWallPink-desc = Гардероб, наполненный сказочной розовой одеждой.
 
-ent-ClosetWallBlack-name = black wall closet
-ent-ClosetWallBlack-desc = A wardrobe packed with stylish black clothing.
+ent-ClosetWallBlack-name = черный стенной шкаф
+ent-ClosetWallBlack-desc = Шкаф, наполненный стильной черной одеждой.
 
-ent-ClosetWallGreen-name = green wall closet
-ent-ClosetWallGreen-desc = A wardrobe packed with stylish green clothing.
+ent-ClosetWallGreen-name = шкаф в зеленой стене
+ent-ClosetWallGreen-desc = Гардероб, наполненный стильной зеленой одеждой.
 
-ent-ClosetWallOrange-name = prison wall closet
-ent-ClosetWallOrange-desc = A standard-issue Nanotrasen storage unit, now on walls.
+ent-ClosetWallOrange-name = тюремный стенной шкаф
+ent-ClosetWallOrange-desc = Стандартное хранилище Nanotrasen, теперь на стене.
 
-ent-ClosetWallYellow-name = yellow wall closet
-ent-ClosetWallYellow-desc = A wardrobe packed with stylish yellow clothing.
+ent-ClosetWallYellow-name = желтый стенной шкаф
+ent-ClosetWallYellow-desc = Шкаф, наполненный стильной желтой одеждой.
 
-ent-ClosetWallWhite-name = white wall closet
-ent-ClosetWallWhite-desc = A wardrobe packed with stylish white clothing.
+ent-ClosetWallWhite-name = белый стенной шкаф
+ent-ClosetWallWhite-desc = Шкаф, наполненный стильной белой одеждой.
 
-ent-ClosetWallGrey-name = grey wall closet
-ent-ClosetWallGrey-desc = A wardrobe packed with a tide of grey clothing.
+ent-ClosetWallGrey-name = серая стенка шкафа
+ent-ClosetWallGrey-desc = Шкаф, битком набитый серой одеждой.
 
-ent-ClosetWallMixed-name = mixed wall closet
-ent-ClosetWallMixed-desc = A wardrobe packed with a mix of colorful clothing.
+ent-ClosetWallMixed-name = смешанный стенной шкаф
+ent-ClosetWallMixed-desc = Гардероб, наполненный разноцветной одеждой.
 
-ent-ClosetWallAtmospherics-name = atmospherics wall closet
-ent-ClosetWallAtmospherics-desc = A standard-issue Nanotrasen storage unit, now on walls.
+ent-ClosetWallAtmospherics-name = атмосферный настенный шкаф
+ent-ClosetWallAtmospherics-desc = Стандартное хранилище Nanotrasen, теперь на стене.
 
-ent-LockerWallMedical-name = medical wall locker
-ent-LockerWallMedical-desc = A standard-issue Nanotrasen storage unit, now on walls.
+ent-LockerWallMedical-name = медицинский настенный шкафчик
+ent-LockerWallMedical-desc = Стандартное хранилище Nanotrasen, теперь на стене.
 
-ent-LockerWallEvacRepair-name = emergency shuttle emergency wall locker
-ent-LockerWallEvacRepair-desc = It's emergencies all the way down.
+ent-LockerWallEvacRepair-name = аварийный шаттл, аварийный настенный шкафчик
+ent-LockerWallEvacRepair-desc = Это чрезвычайные ситуации полностью.
 
-ent-LockerWallBasePrisoner-name = prisoner wall closet
-ent-LockerWallBasePrisoner-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerWallBasePrisoner-name = стенной шкаф для заключенных
+ent-LockerWallBasePrisoner-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerWallPrisoner2-name = prisoner wall closet
-ent-LockerWallPrisoner2-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerWallPrisoner2-name = стенной шкаф для заключенных
+ent-LockerWallPrisoner2-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerWallPrisoner3-name = prisoner wall closet
-ent-LockerWallPrisoner3-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerWallPrisoner3-name = стенной шкаф для заключенных
+ent-LockerWallPrisoner3-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerWallPrisoner4-name = prisoner wall closet
-ent-LockerWallPrisoner4-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerWallPrisoner4-name = стенной шкаф для заключенных
+ent-LockerWallPrisoner4-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerWallPrisoner5-name = prisoner wall closet
-ent-LockerWallPrisoner5-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerWallPrisoner5-name = стенной шкаф для заключенных
+ent-LockerWallPrisoner5-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerWallPrisoner6-name = prisoner wall closet
-ent-LockerWallPrisoner6-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerWallPrisoner6-name = стенной шкаф для заключенных
+ent-LockerWallPrisoner6-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerWallPrisoner7-name = prisoner wall closet
-ent-LockerWallPrisoner7-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerWallPrisoner7-name = стенной шкаф для заключенных
+ent-LockerWallPrisoner7-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 
-ent-LockerWallPrisoner8-name = prisoner wall closet
-ent-LockerWallPrisoner8-desc = It's a secure locker for an inmate's personal belongings during their time in prison.
+ent-LockerWallPrisoner8-name = стенной шкаф для заключенных
+ent-LockerWallPrisoner8-desc = Это безопасный шкафчик для личных вещей заключенного во время его пребывания в тюрьме.
 

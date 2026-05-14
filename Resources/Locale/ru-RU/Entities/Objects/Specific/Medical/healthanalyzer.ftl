@@ -1,9 +1,9 @@
-ent-HandheldHealthAnalyzerUnpowered-name = health analyzer
-ent-HandheldHealthAnalyzerUnpowered-desc = A hand-held body scanner capable of distinguishing vital signs of the subject.
+ent-HandheldHealthAnalyzerUnpowered-name = анализатор здоровья
+ent-HandheldHealthAnalyzerUnpowered-desc = Ручной сканер тела, способный распознавать жизненно важные признаки субъекта.
 
-ent-HandheldHealthAnalyzer-name = health analyzer
-ent-HandheldHealthAnalyzer-desc = A hand-held body scanner capable of distinguishing vital signs of the subject.
+ent-HandheldHealthAnalyzer-name = анализатор здоровья
+ent-HandheldHealthAnalyzer-desc = Ручной сканер тела, способный распознавать жизненно важные признаки субъекта.
 
-ent-HandheldHealthAnalyzerEmpty-name = health analyzer
-ent-HandheldHealthAnalyzerEmpty-desc = A hand-held body scanner capable of distinguishing vital signs of the subject.
+ent-HandheldHealthAnalyzerEmpty-name = анализатор здоровья
+ent-HandheldHealthAnalyzerEmpty-desc = Ручной сканер тела, способный распознавать жизненно важные признаки субъекта.
 

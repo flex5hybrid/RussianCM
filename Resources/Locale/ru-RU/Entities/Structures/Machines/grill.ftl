@@ -1,3 +1,3 @@
-ent-KitchenElectricGrill-name = electric grill
-ent-KitchenElectricGrill-desc = A microwave? No, a real man cooks steaks on a grill!
+ent-KitchenElectricGrill-name = электрический гриль
+ent-KitchenElectricGrill-desc = Микроволновая печь? Нет, настоящий мужчина готовит стейки на гриле!
 

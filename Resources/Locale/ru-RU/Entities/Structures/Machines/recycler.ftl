@@ -1,3 +1,3 @@
-ent-Recycler-name = recycler
-ent-Recycler-desc = A large crushing machine used to recycle small items inefficiently. There are lights on the side.
+ent-Recycler-name = переработчик
+ent-Recycler-desc = Большая дробильная машина, используемая для неэффективной переработки мелких предметов. По бокам есть фонари.
 

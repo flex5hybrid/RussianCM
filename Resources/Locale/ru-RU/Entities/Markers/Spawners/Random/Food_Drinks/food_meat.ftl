@@ -1,2 +1,2 @@
-ent-RandomMeat-name = random meat spawner
+ent-RandomMeat-name = случайный генератор мяса
 

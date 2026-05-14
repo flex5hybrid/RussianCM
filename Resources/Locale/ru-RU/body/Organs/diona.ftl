@@ -1,32 +1,32 @@
-ent-OrganDionaBrain-name = brain
-ent-OrganDionaBrain-desc = The central hub of a diona's pseudo-neurological activity, its root-like tendrils search for its former body.
+ent-OrganDionaBrain-name = мозг
+ent-OrganDionaBrain-desc = Центральный центр псевдоневрологической активности дионы, ее корнеподобные усики ищут свое прежнее тело.
 
-ent-OrganDionaEyes-name = eyes
-ent-OrganDionaEyes-desc = I see you!
+ent-OrganDionaEyes-name = глаза
+ent-OrganDionaEyes-desc = Я вижу тебя!
 
-ent-OrganDionaStomach-name = stomach
-ent-OrganDionaStomach-desc = The diona's equivalent of a stomach, it reeks of asparagus and vinegar.
+ent-OrganDionaStomach-name = желудок
+ent-OrganDionaStomach-desc = Эквивалент желудка дионы, он пахнет спаржей и уксусом.
 
-ent-OrganDionaLungs-name = lungs
-ent-OrganDionaLungs-desc = A spongy mess of slimy, leaf-like structures. Capable of breathing both carbon dioxide and oxygen.
+ent-OrganDionaLungs-name = легкие
+ent-OrganDionaLungs-desc = Губчатая мешанина склизких листообразных структур. Способен дышать как углекислым газом, так и кислородом.
 
-ent-OrganDionaBrainNymph-name = brain
-ent-OrganDionaBrainNymph-desc = The source of incredible, unending intelligence. Honk.
+ent-OrganDionaBrainNymph-name = мозг
+ent-OrganDionaBrainNymph-desc = Источник невероятного, бесконечного интеллекта. Посигнальте.
 
-ent-OrganDionaStomachNymph-name = stomach
-ent-OrganDionaStomachNymph-desc = Gross. This is hard to stomach.
+ent-OrganDionaStomachNymph-name = желудок
+ent-OrganDionaStomachNymph-desc = Валовой. Это тяжело переварить.
 
-ent-OrganDionaLungsNymph-name = lungs
-ent-OrganDionaLungsNymph-desc = Filters oxygen from an atmosphere, which is then sent into the bloodstream to be used as an electron carrier.
+ent-OrganDionaLungsNymph-name = легкие
+ent-OrganDionaLungsNymph-desc = Фильтрует кислород из атмосферы, который затем направляется в кровоток и используется в качестве переносчика электронов.
 
-ent-OrganDionaNymphBrain-name = diona nymph
-ent-OrganDionaNymphBrain-desc = Contains the brain of a formerly fully-formed Diona. Killing this would kill the Diona forever. You monster.
+ent-OrganDionaNymphBrain-name = Диона, нимфа
+ent-OrganDionaNymphBrain-desc = Содержит мозг ранее полностью сформировавшейся Дионы. Убийство этого убьет Диону навсегда. Ты монстр.
 
-ent-OrganDionaNymphStomach-name = diona nymph
-ent-OrganDionaNymphStomach-desc = Contains the stomach of a formerly fully-formed Diona. It doesn't taste any better for it.
+ent-OrganDionaNymphStomach-name = Диона, нимфа
+ent-OrganDionaNymphStomach-desc = Содержит желудок ранее полностью сформировавшейся Дионы. От этого вкуснее не становится.
 
-ent-OrganDionaNymphLungs-name = diona nymph
-ent-OrganDionaNymphLungs-desc = Contains the lungs of a formerly fully-formed Diona. Breathtaking.
+ent-OrganDionaNymphLungs-name = Диона, нимфа
+ent-OrganDionaNymphLungs-desc = Содержит легкие ранее полностью сформировавшейся Дионы. Потрясающе.
 
-ent-BaseDionaOrgan-name = item
+ent-BaseDionaOrgan-name = элемент
 

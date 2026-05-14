@@ -356,7 +356,13 @@ reagent-name-whiskey-sour = виски сауэр
 reagent-desc-whiskey-sour = Что за секретный ингредиент? Яйца. Это яйца.
 
 reagent-name-zombiecocktail = Зомби
-reagent-desc-zombiecocktail = It gets in your head. Your he-eyeh-ead.
+reagent-desc-zombiecocktail = Это проникает вам в голову. Твоя головастая.
 
 reagent-name-bacchus-blessing = благословение бахуса
 reagent-desc-bacchus-blessing = Вы не думали, что жидкость может быть настолько отвратительной. Вы уверены в этом?...
+
+# Missing entries synced from en-US
+
+reagent-name-kira-special = Кира особенная
+
+reagent-desc-kira-special = Да здравствует парень, которого все приняли за девушку. Бака!

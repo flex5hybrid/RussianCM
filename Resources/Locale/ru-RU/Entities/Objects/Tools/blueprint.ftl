@@ -1,12 +1,12 @@
-ent-BaseBlueprint-name = blueprint
-ent-BaseBlueprint-desc = A blueprint for some machine. It can be inserted into an autolathe.
+ent-BaseBlueprint-name = проект
+ent-BaseBlueprint-desc = Чертеж какой-то машины. Его можно вставить в токарный станок.
 
-ent-BlueprintFulton-name = fulton blueprint
-ent-BlueprintFulton-desc = A blueprint with a schematic of a fulton. It can be inserted into an autolathe.
+ent-BlueprintFulton-name = Фултон план
+ent-BlueprintFulton-desc = Чертеж со схемой фултона. Его можно вставить в токарный станок.
 
-ent-BlueprintSeismicCharge-name = seismic charge blueprint
-ent-BlueprintSeismicCharge-desc = A blueprint with a schematic of a seismic charge. It can be inserted into an autolathe.
+ent-BlueprintSeismicCharge-name = схема сейсмического заряда
+ent-BlueprintSeismicCharge-desc = Чертеж со схемой сейсмического заряда. Его можно вставить в токарный станок.
 
-ent-BlueprintDoubleEmergencyTank-name = double emergency tank blueprint
-ent-BlueprintDoubleEmergencyTank-desc = A blueprint with a schematic of a double emergency tank. It can be inserted into an autolathe.
+ent-BlueprintDoubleEmergencyTank-name = Чертеж двойного аварийного бака
+ent-BlueprintDoubleEmergencyTank-desc = Чертеж со схемой двойного аварийного бака. Его можно вставить в токарный станок.
 

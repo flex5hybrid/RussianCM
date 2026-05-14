@@ -18,3 +18,7 @@ rmc-medical-examine-alive = [color=green]{CAPITALIZE(SUBJECT($victim))} {CONJUGA
 rmc-medical-examine-bleeding = [color=#d10a0a]{CAPITALIZE(SUBJECT($victim))} {CONJUGATE-HAVE($victim)} кровоточащие раны на {POSS-ADJ($victim)} теле.[/color]
 
 rmc-medical-examine-verb = Показать медицинские действия
+
+# Missing entries synced from en-US
+
+rmc-medical-examine-bleeding-from = [color=#d10a0a]{CAPITALIZE(SUBJECT($victim))} {CONJUGATE-BE($victim)} кровотечение из {POSS-ADJ($victim)} {$parts}.[/color]

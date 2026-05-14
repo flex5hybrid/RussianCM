@@ -1,6 +1,6 @@
-ent-GravityGenerator-name = gravity generator
-ent-GravityGenerator-desc = It's what keeps you to the floor.
+ent-GravityGenerator-name = гравитационный генератор
+ent-GravityGenerator-desc = Это то, что удерживает вас на полу.
 
-ent-GravityGeneratorMini-name = mini gravity generator
-ent-GravityGeneratorMini-desc = It's what keeps you to the floor, now in fun size.
+ent-GravityGeneratorMini-name = мини-генератор гравитации
+ent-GravityGeneratorMini-desc = Это то, что удерживает вас на полу, теперь в забавном размере.
 

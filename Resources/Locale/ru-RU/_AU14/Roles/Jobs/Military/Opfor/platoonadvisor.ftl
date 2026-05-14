@@ -1,2 +1,2 @@
-ent-AU14SpawnPointOPFORadvisor-name = Spawn Point OPFOR Advisor
-ent-AU14SpawnPointOPFORadvisor-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointOPFORadvisor-name = Точка появления советника ОПФОР
+ent-AU14SpawnPointOPFORadvisor-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

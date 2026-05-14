@@ -1,30 +1,30 @@
-ent-ShardCrystalBase-name = crystal shard
-ent-ShardCrystalBase-desc = A small piece of crystal.
+ent-ShardCrystalBase-name = осколок кристалла
+ent-ShardCrystalBase-desc = Маленький кусочек хрусталя.
 
-ent-ShardCrystalCyan-name = cyan crystal shard
-ent-ShardCrystalCyan-desc = A small piece of crystal.
+ent-ShardCrystalCyan-name = осколок голубого кристалла
+ent-ShardCrystalCyan-desc = Маленький кусочек хрусталя.
 
-ent-ShardCrystalBlue-name = blue crystal shard
-ent-ShardCrystalBlue-desc = A small piece of crystal.
+ent-ShardCrystalBlue-name = осколок синего кристалла
+ent-ShardCrystalBlue-desc = Маленький кусочек хрусталя.
 
-ent-ShardCrystalYellow-name = yellow crystal shard
-ent-ShardCrystalYellow-desc = A small piece of crystal.
+ent-ShardCrystalYellow-name = осколок желтого кристалла
+ent-ShardCrystalYellow-desc = Маленький кусочек хрусталя.
 
-ent-ShardCrystalOrange-name = orange crystal shard
-ent-ShardCrystalOrange-desc = A small piece of crystal.
+ent-ShardCrystalOrange-name = осколок оранжевого кристалла
+ent-ShardCrystalOrange-desc = Маленький кусочек хрусталя.
 
-ent-ShardCrystalBlack-name = black crystal shard
-ent-ShardCrystalBlack-desc = A small piece of crystal.
+ent-ShardCrystalBlack-name = осколок черного кристалла
+ent-ShardCrystalBlack-desc = Маленький кусочек хрусталя.
 
-ent-ShardCrystalPink-name = pink crystal shard
-ent-ShardCrystalPink-desc = A small piece of crystal.
+ent-ShardCrystalPink-name = осколок розового кристалла
+ent-ShardCrystalPink-desc = Маленький кусочек хрусталя.
 
-ent-ShardCrystalGreen-name = green crystal shard
-ent-ShardCrystalGreen-desc = A small piece of crystal.
+ent-ShardCrystalGreen-name = осколок зеленого кристалла
+ent-ShardCrystalGreen-desc = Маленький кусочек хрусталя.
 
-ent-ShardCrystalRed-name = red crystal shard
-ent-ShardCrystalRed-desc = A small piece of crystal.
+ent-ShardCrystalRed-name = осколок красного кристалла
+ent-ShardCrystalRed-desc = Маленький кусочек хрусталя.
 
-ent-ShardCrystalRandom-name = random crystal shard
-ent-ShardCrystalRandom-desc = A small piece of crystal.
+ent-ShardCrystalRandom-name = случайный осколок кристалла
+ent-ShardCrystalRandom-desc = Маленький кусочек хрусталя.
 

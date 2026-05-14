@@ -1,3 +1,3 @@
-ent-MobRevenant-name = revenant
-ent-MobRevenant-desc = A spooky ghostie.
+ent-MobRevenant-name = призрак
+ent-MobRevenant-desc = Жуткое привидение.
 

@@ -12,3 +12,15 @@ chat-radio-alert = Оповещение Колонии
 chat-radio-uppsof = ССО СПН
 chat-radio-uasof = ССО США
 chat-radio-ai = ИИ
+
+# Missing entries synced from en-US
+
+chat-radio-twe = ДВА МЯГКИХ
+
+chat-radio-icsc = КМГС ССО
+
+chat-radio-vai = ВАИ
+
+chat-radio-colony-softwave = Софтвейв
+
+chat-radio-clf = КЛФ

@@ -1,16 +1,16 @@
-ent-SpawnMobXenoBurrower-name = Xeno Spawner
+ent-SpawnMobXenoBurrower-name = Ксено-производитель
 
-ent-SpawnMobXenoDrone-name = Xeno Spawner
+ent-SpawnMobXenoDrone-name = Ксено-производитель
 
-ent-SpawnMobXenoPraetorian-name = Xeno Spawner
+ent-SpawnMobXenoPraetorian-name = Ксено-производитель
 
-ent-SpawnMobXenoQueen-name = Xeno Spawner
+ent-SpawnMobXenoQueen-name = Ксено-производитель
 
-ent-SpawnMobXenoRavager-name = Xeno Spawner
+ent-SpawnMobXenoRavager-name = Ксено-производитель
 
-ent-SpawnMobXenoRunner-name = Xeno Spawner
+ent-SpawnMobXenoRunner-name = Ксено-производитель
 
-ent-SpawnMobXenoSpitter-name = Xeno Spawner
+ent-SpawnMobXenoSpitter-name = Ксено-производитель
 
-ent-SpawnMobXenoLonePraetorian-name = Xeno Spawner
+ent-SpawnMobXenoLonePraetorian-name = Ксено-производитель
 

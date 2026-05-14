@@ -1,105 +1,105 @@
-ent-ClothingOuterWinterCoat-name = winter coat
-ent-ClothingOuterWinterCoat-desc = A heavy jacket made from 'synthetic' animal furs.
+ent-ClothingOuterWinterCoat-name = зимнее пальто
+ent-ClothingOuterWinterCoat-desc = Тяжелая куртка из «синтетического» меха животных.
 
-ent-ClothingOuterWinterCoatToggleable-name = winter coat with hood
+ent-ClothingOuterWinterCoatToggleable-name = зимнее пальто с капюшоном
 
-ent-ClothingOuterWinterAtmos-name = atmospherics winter coat
+ent-ClothingOuterWinterAtmos-name = атмосферное зимнее пальто
 
-ent-ClothingOuterWinterBar-name = bartender winter coat
+ent-ClothingOuterWinterBar-name = зимнее пальто бармена
 
-ent-ClothingOuterWinterCap-name = captain's winter coat
+ent-ClothingOuterWinterCap-name = капитанское зимнее пальто
 
-ent-ClothingOuterWinterCargo-name = cargo winter coat
+ent-ClothingOuterWinterCargo-name = зимнее пальто-карго
 
-ent-ClothingOuterWinterCE-name = chief engineer's winter coat
+ent-ClothingOuterWinterCE-name = зимнее пальто главного инженера
 
-ent-ClothingOuterWinterCentcom-name = CentComm winter coat
+ent-ClothingOuterWinterCentcom-name = CentComm зимнее пальто
 
-ent-ClothingOuterWinterChef-name = chef's freezer coat
-ent-ClothingOuterWinterChef-desc = A coat specifically designed for work inside cold storage, sorely needed by cold-blooded lizard chefs.
+ent-ClothingOuterWinterChef-name = морозильная куртка шеф-повара
+ent-ClothingOuterWinterChef-desc = Пальто, специально созданное для работы в холодильных камерах, крайне необходимое хладнокровным поварам-ящерицам.
 
-ent-ClothingOuterWinterChem-name = chemistry winter coat
+ent-ClothingOuterWinterChem-name = химическое зимнее пальто
 
-ent-ClothingOuterWinterCMO-name = chief medical officer's winter coat
+ent-ClothingOuterWinterCMO-name = зимнее пальто главного врача
 
-ent-ClothingOuterWinterClown-name = clown winter coat
+ent-ClothingOuterWinterClown-name = клоун зимнее пальто
 
-ent-ClothingOuterWinterEngi-name = engineering winter coat
+ent-ClothingOuterWinterEngi-name = инженерное зимнее пальто
 
-ent-ClothingOuterWinterGen-name = genetics winter coat
+ent-ClothingOuterWinterGen-name = зимнее пальто генетики
 
-ent-ClothingOuterWinterHoP-name = head of personnel's winter coat
+ent-ClothingOuterWinterHoP-name = зимнее пальто начальника отдела кадров
 
-ent-ClothingOuterWinterHoS-name = head of security's armored winter coat
-ent-ClothingOuterWinterHoS-desc = A sturdy, utilitarian winter coat designed to protect a head of security from any brig-bound threats and hypothermic events.
+ent-ClothingOuterWinterHoS-name = Бронированное зимнее пальто начальника службы безопасности
+ent-ClothingOuterWinterHoS-desc = Прочное практичное зимнее пальто, предназначенное для защиты главы службы безопасности от любых угроз, связанных с бригом, и переохлаждения.
 
-ent-ClothingOuterWinterHoSUnarmored-name = head of security's winter coat
-ent-ClothingOuterWinterHoSUnarmored-desc = A sturdy coat, a warm coat, but not an armored coat.
+ent-ClothingOuterWinterHoSUnarmored-name = зимнее пальто начальника охраны
+ent-ClothingOuterWinterHoSUnarmored-desc = Крепкое пальто, теплое пальто, но не бронепальто.
 
-ent-ClothingOuterWinterHydro-name = hydroponics winter coat
+ent-ClothingOuterWinterHydro-name = гидропоника зимнее пальто
 
-ent-ClothingOuterWinterJani-name = janitorial winter coat
+ent-ClothingOuterWinterJani-name = зимнее пальто для уборки
 
-ent-ClothingOuterWinterMed-name = medical winter coat
+ent-ClothingOuterWinterMed-name = медицинское зимнее пальто
 
-ent-ClothingOuterWinterMime-name = mime winter coat
+ent-ClothingOuterWinterMime-name = мимическое зимнее пальто
 
-ent-ClothingOuterWinterMiner-name = mining winter coat
+ent-ClothingOuterWinterMiner-name = шахтерское зимнее пальто
 
-ent-ClothingOuterWinterPara-name = paramedic winter coat
+ent-ClothingOuterWinterPara-name = зимнее пальто фельдшера
 
-ent-ClothingOuterWinterQM-name = quartermaster's winter coat
+ent-ClothingOuterWinterQM-name = зимнее пальто интенданта
 
-ent-ClothingOuterWinterRD-name = research director's winter coat
+ent-ClothingOuterWinterRD-name = зимнее пальто директора по исследованиям
 
-ent-ClothingOuterWinterRobo-name = robotics winter coat
+ent-ClothingOuterWinterRobo-name = зимнее пальто для робототехники
 
-ent-ClothingOuterWinterSci-name = science winter coat
+ent-ClothingOuterWinterSci-name = научное зимнее пальто
 
-ent-ClothingOuterWinterSec-name = security winter coat
+ent-ClothingOuterWinterSec-name = зимнее пальто безопасности
 
-ent-ClothingOuterWinterViro-name = virology winter coat
+ent-ClothingOuterWinterViro-name = вирусологическое зимнее пальто
 
-ent-ClothingOuterWinterWarden-name = warden's armored winter coat
-ent-ClothingOuterWinterWarden-desc = A sturdy, utilitarian winter coat designed to protect a warden from any brig-bound threats and hypothermic events.
+ent-ClothingOuterWinterWarden-name = Бронированная зимняя куртка надзирателя
+ent-ClothingOuterWinterWarden-desc = Прочное практичное зимнее пальто, предназначенное для защиты надзирателя от любых угроз, связанных с бригом, и переохлаждения.
 
-ent-ClothingOuterWinterWardenUnarmored-name = warden's winter coat
-ent-ClothingOuterWinterWardenUnarmored-desc = A sturdy coat, a warm coat, but not an armored coat.
+ent-ClothingOuterWinterWardenUnarmored-name = зимнее пальто начальника
+ent-ClothingOuterWinterWardenUnarmored-desc = Крепкое пальто, теплое пальто, но не бронепальто.
 
-ent-ClothingOuterWinterSyndieCap-name = syndicate's winter coat
-ent-ClothingOuterWinterSyndieCap-desc = The syndicate's winter coat is made of durable fabric, with gilded patterns, and coarse wool.
+ent-ClothingOuterWinterSyndieCap-name = зимнее пальто синдиката
+ent-ClothingOuterWinterSyndieCap-desc = Зимнее пальто синдиката изготовлено из прочной ткани с позолоченными узорами и грубой шерсти.
 
-ent-ClothingOuterWinterSyndieCapArmored-name = syndicate's armored winter coat
-ent-ClothingOuterWinterSyndieCapArmored-desc = The syndicate's armored winter coat is made of durable fabric, with gilded patterns, and coarse wool.
+ent-ClothingOuterWinterSyndieCapArmored-name = Бронированное зимнее пальто синдиката
+ent-ClothingOuterWinterSyndieCapArmored-desc = Бронированное зимнее пальто синдиката изготовлено из прочной ткани с позолоченными узорами и грубой шерсти.
 
-ent-ClothingOuterWinterSyndie-name = syndicate's winter coat
-ent-ClothingOuterWinterSyndie-desc = Insulated winter coat, looks like a merch from "Syndieland".
+ent-ClothingOuterWinterSyndie-name = зимнее пальто синдиката
+ent-ClothingOuterWinterSyndie-desc = Утепленное зимнее пальто, похоже на мерч из "Синдиленда".
 
-ent-ClothingOuterWinterMusician-name = musician's winter coat
-ent-ClothingOuterWinterMusician-desc = An oversized, plasticine space tuxedo that'll have people asking "do you know me?"
+ent-ClothingOuterWinterMusician-name = зимнее пальто музыканта
+ent-ClothingOuterWinterMusician-desc = Огромный пластилиновый космический смокинг, у которого люди будут спрашивать: «Вы меня знаете?»
 
-ent-ClothingOuterWinterWeb-name = web winter coat
-ent-ClothingOuterWinterWeb-desc = Feels like the inside of a cocoon, not that this would make you less afraid of being in one.
+ent-ClothingOuterWinterWeb-name = веб-зимнее пальто
+ent-ClothingOuterWinterWeb-desc = Ощущение, будто ты находишься внутри кокона, но это не значит, что ты меньше боишься оказаться в нем.
 
-ent-ClothingOuterWinterColorBlack-name = black winter coat
+ent-ClothingOuterWinterColorBlack-name = черное зимнее пальто
 
-ent-ClothingOuterWinterColorPurple-name = purple winter coat
+ent-ClothingOuterWinterColorPurple-name = фиолетовое зимнее пальто
 
-ent-ClothingOuterWinterColorRed-name = red winter coat
+ent-ClothingOuterWinterColorRed-name = красное зимнее пальто
 
-ent-ClothingOuterWinterColorBlue-name = blue winter coat
+ent-ClothingOuterWinterColorBlue-name = синее зимнее пальто
 
-ent-ClothingOuterWinterColorBrown-name = brown winter coat
+ent-ClothingOuterWinterColorBrown-name = коричневое зимнее пальто
 
-ent-ClothingOuterWinterColorGray-name = gray winter coat
+ent-ClothingOuterWinterColorGray-name = серое зимнее пальто
 
-ent-ClothingOuterWinterColorGreen-name = green winter coat
+ent-ClothingOuterWinterColorGreen-name = зеленое зимнее пальто
 
-ent-ClothingOuterWinterColorLightBrown-name = light brown winter coat
+ent-ClothingOuterWinterColorLightBrown-name = светло-коричневое зимнее пальто
 
-ent-ClothingOuterWinterColorOrange-name = orange winter coat
+ent-ClothingOuterWinterColorOrange-name = оранжевое зимнее пальто
 
-ent-ClothingOuterWinterColorWhite-name = white winter coat
+ent-ClothingOuterWinterColorWhite-name = белое зимнее пальто
 
-ent-ClothingOuterWinterColorYellow-name = yellow winter coat
+ent-ClothingOuterWinterColorYellow-name = желтое зимнее пальто
 

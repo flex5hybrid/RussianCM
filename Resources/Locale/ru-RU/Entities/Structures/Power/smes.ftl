@@ -1,15 +1,15 @@
-ent-BaseSMES-name = SMES
-ent-BaseSMES-desc = A high-capacity superconducting magnetic energy storage (SMES) unit.
+ent-BaseSMES-name = МСП
+ent-BaseSMES-desc = Сверхпроводящий магнитный накопитель энергии (СМЕС) большой емкости.
 
-ent-SMESAdvanced-name = advanced SMES
-ent-SMESAdvanced-desc = An even-higher-capacity superconducting magnetic energy storage (SMES) unit.
+ent-SMESAdvanced-name = продвинутый МСП
+ent-SMESAdvanced-desc = Сверхпроводящий магнитный накопитель энергии (SMES) еще большей мощности.
 
-ent-SMESBasic-name = SMES
-ent-SMESBasic-desc = A high-capacity superconducting magnetic energy storage (SMES) unit.
+ent-SMESBasic-name = МСП
+ent-SMESBasic-desc = Сверхпроводящий магнитный накопитель энергии (СМЕС) большой емкости.
 
-ent-SMESBasicEmpty-name = SMES
-ent-SMESBasicEmpty-desc = A high-capacity superconducting magnetic energy storage (SMES) unit.
+ent-SMESBasicEmpty-name = МСП
+ent-SMESBasicEmpty-desc = Сверхпроводящий магнитный накопитель энергии (СМЕС) большой емкости.
 
-ent-SMESAdvancedEmpty-name = advanced SMES
-ent-SMESAdvancedEmpty-desc = An even-higher-capacity superconducting magnetic energy storage (SMES) unit.
+ent-SMESAdvancedEmpty-name = продвинутый МСП
+ent-SMESAdvancedEmpty-desc = Сверхпроводящий магнитный накопитель энергии (SMES) еще большей мощности.
 

@@ -1,60 +1,60 @@
-ent-RipleyHarness-name = ripley harness
-ent-RipleyHarness-desc = The core of the Ripley APLU.
+ent-RipleyHarness-name = Рипли ремень безопасности
+ent-RipleyHarness-desc = Ядро Ripley APLU.
 
-ent-RipleyLArm-name = ripley left arm
-ent-RipleyLArm-desc = The left arm of the Ripley APLU. It belongs on the chassis of the mech.
+ent-RipleyLArm-name = левая рука Рипли
+ent-RipleyLArm-desc = Левая рука Ripley APLU. Он принадлежит шасси меха.
 
-ent-RipleyLLeg-name = ripley left leg
-ent-RipleyLLeg-desc = The left leg of the Ripley APLU. It belongs on the chassis of the mech.
+ent-RipleyLLeg-name = Рипли левая нога
+ent-RipleyLLeg-desc = Левая нога Ripley APLU. Он принадлежит шасси меха.
 
-ent-RipleyRLeg-name = ripley right leg
-ent-RipleyRLeg-desc = The right leg of the Ripley APLU. It belongs on the chassis of the mech.
+ent-RipleyRLeg-name = Рипли правая нога
+ent-RipleyRLeg-desc = Правая нога Ripley APLU. Он принадлежит шасси меха.
 
-ent-RipleyRArm-name = ripley right arm
-ent-RipleyRArm-desc = The right arm of the Ripley APLU. It belongs on the chassis of the mech.
+ent-RipleyRArm-name = Рипли правая рука
+ent-RipleyRArm-desc = Правая рука Ripley APLU. Он принадлежит шасси меха.
 
-ent-RipleyChassis-name = ripley chassis
-ent-RipleyChassis-desc = An in-progress construction of the Ripley APLU mech.
+ent-RipleyChassis-name = Рипли шасси
+ent-RipleyChassis-desc = Незавершенное строительство меха Ripley APLU.
 
-ent-HonkerHarness-name = H.O.N.K. harness
-ent-HonkerHarness-desc = The core of the H.O.N.K. mech
+ent-HonkerHarness-name = Х.О.Н.К. упряжь
+ent-HonkerHarness-desc = Ядро H.O.N.K. мех
 
-ent-HonkerLArm-name = H.O.N.K. left arm
-ent-HonkerLArm-desc = A H.O.N.K. left arm, with unique sockets that accept odd weaponry designed by clown scientists.
+ent-HonkerLArm-name = Х.О.Н.К. левая рука
+ent-HonkerLArm-desc = Х.О.Н.К. левая рука с уникальными гнездами, в которые можно установить странное оружие, разработанное учеными-клоунами.
 
-ent-HonkerLLeg-name = H.O.N.K. left leg
-ent-HonkerLLeg-desc = A H.O.N.K. left leg. The foot appears just large enough to fully accommodate a clown shoe.
+ent-HonkerLLeg-name = Х.О.Н.К. левая нога
+ent-HonkerLLeg-desc = Х.О.Н.К. левая нога. Нога кажется достаточно большой, чтобы полностью вместить клоунский ботинок.
 
-ent-HonkerRLeg-name = H.O.N.K. right leg
-ent-HonkerRLeg-desc = A H.O.N.K. right leg. The foot appears just large enough to fully accommodate a clown shoe.
+ent-HonkerRLeg-name = Х.О.Н.К. правая нога
+ent-HonkerRLeg-desc = Х.О.Н.К. правая нога. Нога кажется достаточно большой, чтобы полностью вместить клоунский ботинок.
 
-ent-HonkerRArm-name = H.O.N.K. right arm
-ent-HonkerRArm-desc = A H.O.N.K. right arm, with unique sockets that accept odd weaponry designed by clown scientists.
+ent-HonkerRArm-name = Х.О.Н.К. правая рука
+ent-HonkerRArm-desc = Х.О.Н.К. правая рука с уникальными гнездами, в которые можно установить странное оружие, разработанное учеными-клоунами.
 
-ent-HonkerChassis-name = H.O.N.K. chassis
-ent-HonkerChassis-desc = An in-progress construction of a H.O.N.K. mech. Contains chuckle unit, bananium core and honk support systems.
+ent-HonkerChassis-name = Х.О.Н.К. шасси
+ent-HonkerChassis-desc = Незавершенное строительство H.O.N.K. мех. Содержит блок смеха, банановое ядро ​​и системы поддержки гудков.
 
-ent-HamtrHarness-name = HAMTR harness
-ent-HamtrHarness-desc = The core of the HAMTR.
+ent-HamtrHarness-name = подвеска ХАМТР
+ent-HamtrHarness-desc = Ядро HAMTR.
 
-ent-HamtrLArm-name = HAMTR left arm
-ent-HamtrLArm-desc = The left arm of the HAMTR. It belongs on the chassis of the mech.
+ent-HamtrLArm-name = ХАМТР левая рука
+ent-HamtrLArm-desc = Левая рука HAMTR. Он принадлежит шасси меха.
 
-ent-HamtrLLeg-name = HAMTR left leg
-ent-HamtrLLeg-desc = The left leg of the HAMTR. It belongs on the chassis of the mech.
+ent-HamtrLLeg-name = ХАМТР левая нога
+ent-HamtrLLeg-desc = Левая нога HAMTR. Он принадлежит шасси меха.
 
-ent-HamtrRLeg-name = HAMTR right leg
-ent-HamtrRLeg-desc = The right leg of the HAMTR. It belongs on the chassis of the mech.
+ent-HamtrRLeg-name = ХАМТР правой ноги
+ent-HamtrRLeg-desc = Правая нога ХАМТР. Он принадлежит шасси меха.
 
-ent-HamtrRArm-name = HAMTR right arm
-ent-HamtrRArm-desc = The right arm of the HAMTR. It belongs on the chassis of the mech.
+ent-HamtrRArm-name = ХАМТР правая рука
+ent-HamtrRArm-desc = Правая рука ХАМТР. Он принадлежит шасси меха.
 
-ent-HamtrChassis-name = HAMTR chassis
-ent-HamtrChassis-desc = An in-progress construction of the HAMTR mech.
+ent-HamtrChassis-name = ХАМТР шасси
+ent-HamtrChassis-desc = Продолжается строительство меха HAMTR.
 
-ent-VimHarness-name = vim harness
-ent-VimHarness-desc = A small mounting bracket for vim parts.
+ent-VimHarness-name = Vim жгут
+ent-VimHarness-desc = Небольшой монтажный кронштейн для деталей vim.
 
-ent-VimChassis-name = vim chassis
-ent-VimChassis-desc = An in-progress construction of the Vim exosuit.
+ent-VimChassis-name = ВИМ шасси
+ent-VimChassis-desc = Продолжается строительство экзокостюма Вим.
 

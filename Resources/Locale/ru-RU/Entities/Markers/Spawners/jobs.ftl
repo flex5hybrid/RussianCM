@@ -1,96 +1,96 @@
-ent-SpawnPointObserver-name = observer spawn point
+ent-SpawnPointObserver-name = точка появления наблюдателя
 
-ent-SpawnPointLatejoin-name = latejoin spawn point
+ent-SpawnPointLatejoin-name = точка появления позднего присоединения
 
-ent-SpawnPointQuartermaster-name = quartermaster
+ent-SpawnPointQuartermaster-name = интендант
 
-ent-SpawnPointCargoTechnician-name = cargotechnician
+ent-SpawnPointCargoTechnician-name = грузотехник
 
-ent-SpawnPointSalvageSpecialist-name = salvagespecialist
+ent-SpawnPointSalvageSpecialist-name = специалист по спасению
 
-ent-SpawnPointPassenger-name = passenger
+ent-SpawnPointPassenger-name = пассажир
 
-ent-SpawnPointTechnicalAssistant-name = technical assistant
+ent-SpawnPointTechnicalAssistant-name = технический помощник
 
-ent-SpawnPointMedicalIntern-name = medical intern
+ent-SpawnPointMedicalIntern-name = медицинский стажер
 
-ent-SpawnPointSecurityCadet-name = security cadet
+ent-SpawnPointSecurityCadet-name = курсант службы безопасности
 
-ent-SpawnPointResearchAssistant-name = research assistant
+ent-SpawnPointResearchAssistant-name = научный сотрудник
 
-ent-SpawnPointServiceWorker-name = service worker
+ent-SpawnPointServiceWorker-name = обслуживающий работник
 
-ent-SpawnPointBartender-name = bartender
+ent-SpawnPointBartender-name = бармен
 
-ent-SpawnPointChef-name = chef
+ent-SpawnPointChef-name = повар
 
-ent-SpawnPointBotanist-name = botanist
+ent-SpawnPointBotanist-name = ботаник
 
-ent-SpawnPointClown-name = clown
+ent-SpawnPointClown-name = клоун
 
-ent-SpawnPointMime-name = mime
+ent-SpawnPointMime-name = мим
 
-ent-SpawnPointChaplain-name = chaplain
+ent-SpawnPointChaplain-name = капеллан
 
-ent-SpawnPointLibrarian-name = librarian
+ent-SpawnPointLibrarian-name = библиотекарь
 
-ent-SpawnPointLawyer-name = lawyer
+ent-SpawnPointLawyer-name = адвокат
 
-ent-SpawnPointJanitor-name = janitor
+ent-SpawnPointJanitor-name = дворник
 
-ent-SpawnPointMusician-name = musician
+ent-SpawnPointMusician-name = музыкант
 
-ent-SpawnPointBoxer-name = boxer
+ent-SpawnPointBoxer-name = боксер
 
-ent-SpawnPointBorg-name = cyborg
+ent-SpawnPointBorg-name = киборг
 
-ent-SpawnPointCaptain-name = captain
+ent-SpawnPointCaptain-name = капитан
 
-ent-SpawnPointHeadOfPersonnel-name = headofpersonnel
+ent-SpawnPointHeadOfPersonnel-name = руководитель персонала
 
-ent-SpawnPointChiefEngineer-name = chiefengineer
+ent-SpawnPointChiefEngineer-name = главный инженер
 
-ent-SpawnPointStationEngineer-name = stationengineer
+ent-SpawnPointStationEngineer-name = инженер станции
 
-ent-SpawnPointAtmos-name = atmospherics
+ent-SpawnPointAtmos-name = атмосферика
 
-ent-SpawnPointChiefMedicalOfficer-name = chiefmedicalofficer
+ent-SpawnPointChiefMedicalOfficer-name = главный врач
 
-ent-SpawnPointMedicalDoctor-name = medicaldoctor
+ent-SpawnPointMedicalDoctor-name = врач
 
-ent-SpawnPointParamedic-name = paramedic
+ent-SpawnPointParamedic-name = фельдшер
 
-ent-SpawnPointChemist-name = chemist
+ent-SpawnPointChemist-name = химик
 
-ent-SpawnPointResearchDirector-name = researchdirector
+ent-SpawnPointResearchDirector-name = директор по исследованиям
 
-ent-SpawnPointScientist-name = scientist
+ent-SpawnPointScientist-name = учёный
 
-ent-SpawnPointHeadOfSecurity-name = headofsecurity
+ent-SpawnPointHeadOfSecurity-name = руководитель службы безопасности
 
-ent-SpawnPointWarden-name = warden
+ent-SpawnPointWarden-name = надзиратель
 
-ent-SpawnPointSecurityOfficer-name = securityofficer
+ent-SpawnPointSecurityOfficer-name = офицер безопасности
 
-ent-SpawnPointDetective-name = detective
+ent-SpawnPointDetective-name = детектив
 
-ent-SpawnPointBrigmedic-name = brigmedic
+ent-SpawnPointBrigmedic-name = Бригмедик
 
-ent-SpawnPointERTLeader-name = ERTleader
+ent-SpawnPointERTLeader-name = ERTлидер
 
-ent-SpawnPointERTChaplain-name = ERTchaplain
+ent-SpawnPointERTChaplain-name = ERTкапеллан
 
-ent-SpawnPointERTEngineer-name = ERTengineer
+ent-SpawnPointERTEngineer-name = Инженер-технолог
 
-ent-SpawnPointERTMedical-name = ERTmedical
+ent-SpawnPointERTMedical-name = ERTмедицинский
 
 ent-SpawnPointERTSecurity-name = ERTsecurity
 
 ent-SpawnPointERTJanitor-name = ERTjanitor
 
-ent-SpawnPointReporter-name = reporter
+ent-SpawnPointReporter-name = репортер
 
-ent-SpawnPointPsychologist-name = psychologist
+ent-SpawnPointPsychologist-name = психолог
 
-ent-SpawnPointZookeeper-name = zookeeper
+ent-SpawnPointZookeeper-name = смотритель зоопарка
 

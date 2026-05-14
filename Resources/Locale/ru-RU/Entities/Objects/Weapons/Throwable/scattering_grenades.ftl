@@ -1,20 +1,20 @@
-ent-ClusterBang-name = clusterbang
-ent-ClusterBang-desc = Can be used only with flashbangs. Explodes several times.
+ent-ClusterBang-name = кластерный взрыв
+ent-ClusterBang-desc = Можно использовать только со светошумовыми гранатами. Взрывается несколько раз.
 
-ent-ClusterBangFull-name = ClusterBang
-ent-ClusterBangFull-desc = Launches three flashbangs after the timer runs out.
+ent-ClusterBangFull-name = КластерБанг
+ent-ClusterBangFull-desc = Запускает три светошумовые гранаты после истечения таймера.
 
-ent-ClusterGrenade-name = clustergrenade
-ent-ClusterGrenade-desc = Why use one grenade when you can use three at once!
+ent-ClusterGrenade-name = кассетная граната
+ent-ClusterGrenade-desc = Зачем использовать одну гранату, если можно использовать сразу три!
 
-ent-ClusterBananaPeel-name = cluster banana peel
-ent-ClusterBananaPeel-desc = Splits into 6 explosive banana peels after throwing, guaranteed fun!
+ent-ClusterBananaPeel-name = кластерная банановая кожура
+ent-ClusterBananaPeel-desc = После броска распадается на 6 взрывных банановых кожур, гарантированное удовольствие!
 
-ent-SlipocalypseClusterSoap-name = slipocalypse clustersoap
-ent-SlipocalypseClusterSoap-desc = Spreads small pieces of syndicate soap over an area upon landing on the floor.
+ent-SlipocalypseClusterSoap-name = кластер скольжениямыло
+ent-SlipocalypseClusterSoap-desc = При приземлении на пол разбрасывает небольшие кусочки синдикатного мыла по площади.
 
-ent-GrenadeFoamDart-name = foam dart grenade
-ent-GrenadeFoamDart-desc = Releases a bothersome spray of foam darts that cause severe welching.
+ent-GrenadeFoamDart-name = пенная граната
+ent-GrenadeFoamDart-desc = Выпускает надоедливые брызги пены, вызывающие сильное рвоту.
 
-ent-ScatteringGrenadeBase-name = item
+ent-ScatteringGrenadeBase-name = элемент
 

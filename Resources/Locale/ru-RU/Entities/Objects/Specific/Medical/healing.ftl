@@ -1,98 +1,98 @@
-ent-Ointment-name = ointment
-ent-Ointment-desc = Used to treat those nasty burns. Less effective on caustic burns.
+ent-Ointment-name = мазь
+ent-Ointment-desc = Используется для лечения неприятных ожогов. Менее эффективен при ожогах едкими веществами.
 
-ent-RegenerativeMesh-name = regenerative mesh
-ent-RegenerativeMesh-desc = Used to treat even the nastiest burns. Also effective against caustic burns.
+ent-RegenerativeMesh-name = регенеративная сетка
+ent-RegenerativeMesh-desc = Используется для лечения даже самых тяжелых ожогов. Также эффективен против едких ожогов.
 
-ent-Brutepack-name = bruise pack
-ent-Brutepack-desc = A therapeutic gel pack and bandages designed to treat blunt-force trauma.
+ent-Brutepack-name = пакет от синяков
+ent-Brutepack-desc = Терапевтический гель и бинты, предназначенные для лечения тупых травм.
 
-ent-MedicatedSuture-name = medicated suture
-ent-MedicatedSuture-desc = A suture soaked in medicine, treats blunt-force trauma effectively and closes wounds.
+ent-MedicatedSuture-name = лечебный шовный материал
+ent-MedicatedSuture-desc = Нить, пропитанная лекарством, эффективно лечит тупую травму и закрывает раны.
 
-ent-Bloodpack-name = blood pack
-ent-Bloodpack-desc = Contains a groundbreaking universal blood replacement created by Nanotrasen's advanced medical science.
+ent-Bloodpack-name = пакет крови
+ent-Bloodpack-desc = Содержит революционный универсальный заменитель крови, созданный на основе передовых медицинских достижений Nanotrasen.
 
-ent-Tourniquet-name = tourniquet
-ent-Tourniquet-desc = Stops bleeding! Hopefully.
+ent-Tourniquet-name = жгут
+ent-Tourniquet-desc = Останавливает кровотечение! С надеждой.
 
-ent-Gauze-name = roll of gauze
-ent-Gauze-desc = Some sterile gauze to wrap around bloody stumps.
+ent-Gauze-name = рулон марли
+ent-Gauze-desc = Немного стерильной марли, чтобы обернуть окровавленные культи.
 
-ent-AloeCream-name = aloe cream
-ent-AloeCream-desc = A topical cream for burns.
+ent-AloeCream-name = крем с алоэ
+ent-AloeCream-desc = Крем местного действия от ожогов.
 
-ent-HealingToolbox-name = healing toolbox
-ent-HealingToolbox-desc = A powerful toolbox imbued with robust energy. It can heal your wounds and fill you with murderous intent.
+ent-HealingToolbox-name = набор инструментов для исцеления
+ent-HealingToolbox-desc = Мощный набор инструментов, наполненный мощной энергией. Он может залечить ваши раны и наполнить вас убийственным намерением.
 
-ent-PillDexalin-name = pill
-ent-PillDexalin-desc = It's not a suppository.
+ent-PillDexalin-name = таблетка
+ent-PillDexalin-desc = Это не свечи.
 
-ent-PillCanisterDexalin-name = pill canister
+ent-PillCanisterDexalin-name = канистра для таблеток
 
-ent-PillDylovene-name = pill
-ent-PillDylovene-desc = It's not a suppository.
+ent-PillDylovene-name = таблетка
+ent-PillDylovene-desc = Это не свечи.
 
-ent-PillCanisterDylovene-name = pill canister
+ent-PillCanisterDylovene-name = канистра для таблеток
 
-ent-PillHyronalin-name = pill
-ent-PillHyronalin-desc = It's not a suppository.
+ent-PillHyronalin-name = таблетка
+ent-PillHyronalin-desc = Это не свечи.
 
-ent-PillCanisterHyronalin-name = pill canister
+ent-PillCanisterHyronalin-name = канистра для таблеток
 
-ent-PillPotassiumIodide-name = pill
-ent-PillPotassiumIodide-desc = It's not a suppository.
+ent-PillPotassiumIodide-name = таблетка
+ent-PillPotassiumIodide-desc = Это не свечи.
 
-ent-PillCanisterPotassiumIodide-name = pill canister
+ent-PillCanisterPotassiumIodide-name = канистра для таблеток
 
-ent-PillIron-name = pill
-ent-PillIron-desc = It's not a suppository.
+ent-PillIron-name = таблетка
+ent-PillIron-desc = Это не свечи.
 
-ent-PillCopper-name = pill
-ent-PillCopper-desc = It's not a suppository.
+ent-PillCopper-name = таблетка
+ent-PillCopper-desc = Это не свечи.
 
-ent-PillCanisterIron-name = pill canister
+ent-PillCanisterIron-name = канистра для таблеток
 
-ent-PillCanisterCopper-name = pill canister
+ent-PillCanisterCopper-name = канистра для таблеток
 
-ent-PillKelotane-name = pill
-ent-PillKelotane-desc = It's not a suppository.
+ent-PillKelotane-name = таблетка
+ent-PillKelotane-desc = Это не свечи.
 
-ent-PillCanisterKelotane-name = pill canister
+ent-PillCanisterKelotane-name = канистра для таблеток
 
-ent-PillDermaline-name = pill
-ent-PillDermaline-desc = It's not a suppository.
+ent-PillDermaline-name = таблетка
+ent-PillDermaline-desc = Это не свечи.
 
-ent-PillCanisterDermaline-name = pill canister
+ent-PillCanisterDermaline-name = канистра для таблеток
 
-ent-PillSpaceDrugs-name = space mirage
-ent-PillSpaceDrugs-desc = It's not a suppository.
+ent-PillSpaceDrugs-name = космический мираж
+ent-PillSpaceDrugs-desc = Это не свечи.
 
-ent-PillTricordrazine-name = pill
-ent-PillTricordrazine-desc = It's not a suppository.
+ent-PillTricordrazine-name = таблетка
+ent-PillTricordrazine-desc = Это не свечи.
 
-ent-PillCanisterTricordrazine-name = pill canister
+ent-PillCanisterTricordrazine-name = канистра для таблеток
 
-ent-PillBicaridine-name = pill
-ent-PillBicaridine-desc = It's not a suppository.
+ent-PillBicaridine-name = таблетка
+ent-PillBicaridine-desc = Это не свечи.
 
-ent-PillCanisterBicaridine-name = pill canister
+ent-PillCanisterBicaridine-name = канистра для таблеток
 
-ent-PillCharcoal-name = pill
-ent-PillCharcoal-desc = It's not a suppository.
+ent-PillCharcoal-name = таблетка
+ent-PillCharcoal-desc = Это не свечи.
 
-ent-PillCanisterCharcoal-name = pill canister
+ent-PillCanisterCharcoal-name = канистра для таблеток
 
-ent-PillRomerol-name = romerol pill
-ent-PillRomerol-desc = It's not a suppository.
+ent-PillRomerol-name = таблетка ромерола
+ent-PillRomerol-desc = Это не свечи.
 
-ent-PillAmbuzol-name = ambuzol pill
-ent-PillAmbuzol-desc = It's not a suppository.
+ent-PillAmbuzol-name = таблетка амбузола
+ent-PillAmbuzol-desc = Это не свечи.
 
-ent-PillAmbuzolPlus-name = ambuzol plus pill
-ent-PillAmbuzolPlus-desc = It's not a suppository.
+ent-PillAmbuzolPlus-name = амбузол плюс таблетка
+ent-PillAmbuzolPlus-desc = Это не свечи.
 
-ent-BaseHealingItem-name = item
+ent-BaseHealingItem-name = элемент
 
 ent-Ointment1-name = stack-ointment
 
@@ -118,47 +118,47 @@ ent-Gauze1-name = stack-gauze
 
 ent-Gauze10Lingering-name = stack-gauze
 
-ent-PillCanisterRandom-name = storage item
+ent-PillCanisterRandom-name = предмет хранения
 
-ent-SyringeEphedrine-name = syringe
-ent-SyringeEphedrine-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringeEphedrine-name = шприц
+ent-SyringeEphedrine-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-SyringeInaprovaline-name = syringe
-ent-SyringeInaprovaline-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringeInaprovaline-name = шприц
+ent-SyringeInaprovaline-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-SyringeTranexamicAcid-name = syringe
-ent-SyringeTranexamicAcid-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringeTranexamicAcid-name = шприц
+ent-SyringeTranexamicAcid-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-SyringeBicaridine-name = syringe
-ent-SyringeBicaridine-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringeBicaridine-name = шприц
+ent-SyringeBicaridine-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-SyringeDermaline-name = syringe
-ent-SyringeDermaline-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringeDermaline-name = шприц
+ent-SyringeDermaline-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-SyringeHyronalin-name = syringe
-ent-SyringeHyronalin-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringeHyronalin-name = шприц
+ent-SyringeHyronalin-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-SyringeIpecac-name = syringe
-ent-SyringeIpecac-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringeIpecac-name = шприц
+ent-SyringeIpecac-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-SyringeAmbuzol-name = syringe
-ent-SyringeAmbuzol-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringeAmbuzol-name = шприц
+ent-SyringeAmbuzol-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-SyringeSigynate-name = syringe
-ent-SyringeSigynate-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringeSigynate-name = шприц
+ent-SyringeSigynate-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-SyringeEthylredoxrazine-name = syringe
-ent-SyringeEthylredoxrazine-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringeEthylredoxrazine-name = шприц
+ent-SyringeEthylredoxrazine-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-SyringePhalanximine-name = syringe
-ent-SyringePhalanximine-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringePhalanximine-name = шприц
+ent-SyringePhalanximine-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-SyringeSaline-name = syringe
-ent-SyringeSaline-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringeSaline-name = шприц
+ent-SyringeSaline-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-SyringeRomerol-name = syringe
-ent-SyringeRomerol-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringeRomerol-name = шприц
+ent-SyringeRomerol-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 
-ent-SyringeStimulants-name = syringe
-ent-SyringeStimulants-desc = Used to draw blood samples from mobs, or to inject them with reagents.
+ent-SyringeStimulants-name = шприц
+ent-SyringeStimulants-desc = Используется для взятия образцов крови у мобов или для введения им реагентов.
 

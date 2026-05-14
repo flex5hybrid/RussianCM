@@ -1,6 +1,6 @@
-ent-ChopSticks-name = chopsticks
-ent-ChopSticks-desc = A very traditional utensil.
+ent-ChopSticks-name = палочки для еды
+ent-ChopSticks-desc = Очень традиционная посуда.
 
-ent-PairedChopsticks-name = paired chopsticks
-ent-PairedChopsticks-desc = You should probably separate them.
+ent-PairedChopsticks-name = парные палочки для еды
+ent-PairedChopsticks-desc = Вероятно, вам следует их разделить.
 

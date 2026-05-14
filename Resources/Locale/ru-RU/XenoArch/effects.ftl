@@ -1,210 +1,210 @@
-ent-BaseXenoArtifactEffect-name = effect
-ent-BaseXenoArtifactEffect-desc = Unknown
+ent-BaseXenoArtifactEffect-name = эффект
+ent-BaseXenoArtifactEffect-desc = Неизвестно
 
 ent-BaseOneTimeXenoArtifactEffect-name = one-time-effect
-ent-BaseOneTimeXenoArtifactEffect-desc = Unknown
+ent-BaseOneTimeXenoArtifactEffect-desc = Неизвестно
 
 ent-XenoArtifactEffectUniversalIntercom-name = one-time-effect
-ent-XenoArtifactEffectUniversalIntercom-desc = Obtains ability of long-distance communication device
+ent-XenoArtifactEffectUniversalIntercom-desc = Получает способность устройства дальней связи.
 
 ent-XenoArtifactBecomeRandomInstrument-name = one-time-effect
-ent-XenoArtifactBecomeRandomInstrument-desc = Obtains ability of musical instrument
+ent-XenoArtifactBecomeRandomInstrument-desc = Получает умение играть на музыкальном инструменте
 
 ent-XenoArtifactStorage-name = one-time-effect
-ent-XenoArtifactStorage-desc = Obtains ability of hidden storage
+ent-XenoArtifactStorage-desc = Получает возможность скрытого хранения.
 
 ent-XenoArtifactPhasing-name = one-time-effect
-ent-XenoArtifactPhasing-desc = Becomes phased
+ent-XenoArtifactPhasing-desc = Становится поэтапным
 
 ent-XenoArtifactWandering-name = one-time-effect
-ent-XenoArtifactWandering-desc = Starts to move sporadically
+ent-XenoArtifactWandering-desc = Начинает спорадически двигаться
 
 ent-XenoArtifactSolutionStorage-name = one-time-effect
-ent-XenoArtifactSolutionStorage-desc = Obtains ability of container for chemical solutions
+ent-XenoArtifactSolutionStorage-desc = Получает способность контейнера для химических растворов
 
 ent-XenoArtifactSpeedUp-name = one-time-effect
-ent-XenoArtifactSpeedUp-desc = Improves holder movement speed
+ent-XenoArtifactSpeedUp-desc = Улучшает скорость перемещения держателя
 
 ent-XenoArtifactDrill-name = one-time-effect
-ent-XenoArtifactDrill-desc = Obtains ability of drill
+ent-XenoArtifactDrill-desc = Получает способность сверлить
 
 ent-XenoArtifactGenerateEnergy-name = one-time-effect
-ent-XenoArtifactGenerateEnergy-desc = Produces power
+ent-XenoArtifactGenerateEnergy-desc = Производит мощность
 
 ent-XenoArtifactGun-name = one-time-effect
-ent-XenoArtifactGun-desc = Obtains ability of firearm
+ent-XenoArtifactGun-desc = Получает способность огнестрельного оружия
 
 ent-XenoArtifactGhost-name = one-time-effect
-ent-XenoArtifactGhost-desc = Becomes sentient
+ent-XenoArtifactGhost-desc = Становится разумным
 
 ent-XenoArtifactOmnitool-name = one-time-effect
-ent-XenoArtifactOmnitool-desc = Obtains ability of omnitool
+ent-XenoArtifactOmnitool-desc = Получает способность омни-инструмента.
 
-ent-XenoArtifactEffectBadFeeling-name = effect
-ent-XenoArtifactEffectBadFeeling-desc = Broadcasts sublime message
+ent-XenoArtifactEffectBadFeeling-name = эффект
+ent-XenoArtifactEffectBadFeeling-desc = Передает возвышенное послание
 
-ent-XenoArtifactEffectGoodFeeling-name = effect
-ent-XenoArtifactEffectGoodFeeling-desc = Broadcasts sublime message
+ent-XenoArtifactEffectGoodFeeling-name = эффект
+ent-XenoArtifactEffectGoodFeeling-desc = Передает возвышенное послание
 
-ent-XenoArtifactEffectJunkSpawn-name = effect
-ent-XenoArtifactEffectJunkSpawn-desc = Create recyclable junk
+ent-XenoArtifactEffectJunkSpawn-name = эффект
+ent-XenoArtifactEffectJunkSpawn-desc = Создавайте перерабатываемый мусор
 
-ent-XenoArtifactEffectLightFlicker-name = effect
-ent-XenoArtifactEffectLightFlicker-desc = Minor electromagnetic interference
+ent-XenoArtifactEffectLightFlicker-name = эффект
+ent-XenoArtifactEffectLightFlicker-desc = Незначительные электромагнитные помехи
 
-ent-XenoArtifactPotassiumWave-name = effect
-ent-XenoArtifactPotassiumWave-desc = Produces potassium
+ent-XenoArtifactPotassiumWave-name = эффект
+ent-XenoArtifactPotassiumWave-desc = Производит калий
 
-ent-XenoArtifactFloraSpawn-name = effect
-ent-XenoArtifactFloraSpawn-desc = Produces flora
+ent-XenoArtifactFloraSpawn-name = эффект
+ent-XenoArtifactFloraSpawn-desc = Производит флору
 
-ent-XenoArtifactChemicalPuddle-name = effect
-ent-XenoArtifactChemicalPuddle-desc = Produces puddle of chemical mixture
+ent-XenoArtifactChemicalPuddle-name = эффект
+ent-XenoArtifactChemicalPuddle-desc = Производит лужу химической смеси
 
-ent-XenoArtifactThrowThingsAround-name = effect
-ent-XenoArtifactThrowThingsAround-desc = Minor implosion
+ent-XenoArtifactThrowThingsAround-name = эффект
+ent-XenoArtifactThrowThingsAround-desc = Незначительная имплозия
 
-ent-XenoArtifactColdWave-name = effect
-ent-XenoArtifactColdWave-desc = Cools down surrounding gas
+ent-XenoArtifactColdWave-name = эффект
+ent-XenoArtifactColdWave-desc = Охлаждает окружающий газ
 
-ent-XenoArtifactHeatWave-name = effect
-ent-XenoArtifactHeatWave-desc = Heats up surrounding gas greatly
+ent-XenoArtifactHeatWave-name = эффект
+ent-XenoArtifactHeatWave-desc = Сильно нагревает окружающий газ
 
-ent-XenoArtifactFoamMild-name = effect
-ent-XenoArtifactFoamMild-desc = Produces chemical foam
+ent-XenoArtifactFoamMild-name = эффект
+ent-XenoArtifactFoamMild-desc = Производит химическую пену
 
-ent-XenoArtifactRandomInstrumentSpawn-name = effect
-ent-XenoArtifactRandomInstrumentSpawn-desc = Creates musical instrument
+ent-XenoArtifactRandomInstrumentSpawn-name = эффект
+ent-XenoArtifactRandomInstrumentSpawn-desc = Создает музыкальный инструмент
 
-ent-XenoArtifactMonkeySpawn-name = effect
-ent-XenoArtifactMonkeySpawn-desc = Creates primate
+ent-XenoArtifactMonkeySpawn-name = эффект
+ent-XenoArtifactMonkeySpawn-desc = Создает примата
 
 ent-XenoArtifactRadioactive-name = one-time-effect
-ent-XenoArtifactRadioactive-desc = Becomes mildly radioactive
+ent-XenoArtifactRadioactive-desc = Становится умеренно радиоактивным
 
-ent-XenoArtifactChargeBattery-name = effect
-ent-XenoArtifactChargeBattery-desc = Charges up batteries
+ent-XenoArtifactChargeBattery-name = эффект
+ent-XenoArtifactChargeBattery-desc = Заряжает аккумуляторы
 
-ent-XenoArtifactKnock-name = effect
-ent-XenoArtifactKnock-desc = Mild electromagnetic interference
+ent-XenoArtifactKnock-name = эффект
+ent-XenoArtifactKnock-desc = Слабые электромагнитные помехи
 
 ent-XenoArtifactMagnet-name = one-time-effect
-ent-XenoArtifactMagnet-desc = Create small gravity well
+ent-XenoArtifactMagnet-desc = Создайте небольшой гравитационный колодец
 
 ent-XenoArtifactMagnetNegative-name = one-time-effect
-ent-XenoArtifactMagnetNegative-desc = Create small gravity well
+ent-XenoArtifactMagnetNegative-desc = Создайте небольшой гравитационный колодец
 
 ent-XenoArtifactStealth-name = one-time-effect
-ent-XenoArtifactStealth-desc = Create light interference
+ent-XenoArtifactStealth-desc = Создайте световую интерференцию
 
-ent-XenoArtifactRareMaterialSpawn-name = effect
-ent-XenoArtifactRareMaterialSpawn-desc = Create rare materials
+ent-XenoArtifactRareMaterialSpawn-name = эффект
+ent-XenoArtifactRareMaterialSpawn-desc = Создавайте редкие материалы
 
-ent-XenoArtifactRareMaterialSpawnSilver-name = effect
-ent-XenoArtifactRareMaterialSpawnSilver-desc = Create rare materials
+ent-XenoArtifactRareMaterialSpawnSilver-name = эффект
+ent-XenoArtifactRareMaterialSpawnSilver-desc = Создавайте редкие материалы
 
-ent-XenoArtifactRareMaterialSpawnPlasma-name = effect
-ent-XenoArtifactRareMaterialSpawnPlasma-desc = Create plasma
+ent-XenoArtifactRareMaterialSpawnPlasma-name = эффект
+ent-XenoArtifactRareMaterialSpawnPlasma-desc = Создать плазму
 
-ent-XenoArtifactRareMaterialSpawnGold-name = effect
-ent-XenoArtifactRareMaterialSpawnGold-desc = Create gold
+ent-XenoArtifactRareMaterialSpawnGold-name = эффект
+ent-XenoArtifactRareMaterialSpawnGold-desc = Создать золото
 
-ent-XenoArtifactRareMaterialSpawnUranium-name = effect
-ent-XenoArtifactRareMaterialSpawnUranium-desc = Create uranium
+ent-XenoArtifactRareMaterialSpawnUranium-name = эффект
+ent-XenoArtifactRareMaterialSpawnUranium-desc = Создать уран
 
-ent-XenoArtifactAngryCarpSpawn-name = effect
-ent-XenoArtifactAngryCarpSpawn-desc = Create hostile fish
+ent-XenoArtifactAngryCarpSpawn-name = эффект
+ent-XenoArtifactAngryCarpSpawn-desc = Создать враждебную рыбу
 
-ent-XenoArtifactFaunaSpawn-name = effect
-ent-XenoArtifactFaunaSpawn-desc = Create friendly fauna
+ent-XenoArtifactFaunaSpawn-name = эффект
+ent-XenoArtifactFaunaSpawn-desc = Создайте дружелюбную фауну
 
-ent-XenoArtifactCashSpawn-name = effect
-ent-XenoArtifactCashSpawn-desc = Create money
+ent-XenoArtifactCashSpawn-name = эффект
+ent-XenoArtifactCashSpawn-desc = Создавать деньги
 
-ent-XenoArtifactShatterWindows-name = effect
-ent-XenoArtifactShatterWindows-desc = Break windows
+ent-XenoArtifactShatterWindows-name = эффект
+ent-XenoArtifactShatterWindows-desc = Разбить окна
 
-ent-XenoArtifactFoamGood-name = effect
-ent-XenoArtifactFoamGood-desc = Creates wave of helpful foam
+ent-XenoArtifactFoamGood-name = эффект
+ent-XenoArtifactFoamGood-desc = Создает волну полезной пены
 
-ent-XenoArtifactFoamDangerous-name = effect
-ent-XenoArtifactFoamDangerous-desc = Creates wave of harmful foam
+ent-XenoArtifactFoamDangerous-name = эффект
+ent-XenoArtifactFoamDangerous-desc = Создает волну вредной пены
 
-ent-XenoArtifactPuddleRare-name = effect
-ent-XenoArtifactPuddleRare-desc = Creates puddle of helpful chemicals
+ent-XenoArtifactPuddleRare-name = эффект
+ent-XenoArtifactPuddleRare-desc = Создает лужу полезных химикатов
 
 ent-XenoArtifactAnomalySpawn-name = one-time-effect
-ent-XenoArtifactAnomalySpawn-desc = Creates anomaly
+ent-XenoArtifactAnomalySpawn-desc = Создает аномалию
 
-ent-XenoArtifactIgnite-name = effect
-ent-XenoArtifactIgnite-desc = Pyrokinesis
+ent-XenoArtifactIgnite-name = эффект
+ent-XenoArtifactIgnite-desc = Пирокинез
 
-ent-XenoArtifactTeleport-name = effect
-ent-XenoArtifactTeleport-desc = Teleportation
+ent-XenoArtifactTeleport-name = эффект
+ent-XenoArtifactTeleport-desc = Телепортация
 
-ent-XenoArtifactEmp-name = effect
-ent-XenoArtifactEmp-desc = Dangerous electromagnetic interference
+ent-XenoArtifactEmp-name = эффект
+ent-XenoArtifactEmp-desc = Опасные электромагнитные помехи
 
-ent-XenoArtifactPolyMonkey-name = effect
-ent-XenoArtifactPolyMonkey-desc = Temporarily reshape flesh to fur
+ent-XenoArtifactPolyMonkey-name = эффект
+ent-XenoArtifactPolyMonkey-desc = Временно превратить плоть в мех
 
-ent-XenoArtifactPolyLizard-name = effect
-ent-XenoArtifactPolyLizard-desc = Temporarily reshape flesh to scale
+ent-XenoArtifactPolyLizard-name = эффект
+ent-XenoArtifactPolyLizard-desc = Временно изменить форму плоти в масштабе
 
-ent-XenoArtifactPolyLuminous-name = effect
-ent-XenoArtifactPolyLuminous-desc = Temporarily reshape flesh to light
+ent-XenoArtifactPolyLuminous-name = эффект
+ent-XenoArtifactPolyLuminous-desc = Временно изменить форму плоти на свет
 
 ent-XenoArtifactRadioactiveStrong-name = one-time-effect
-ent-XenoArtifactRadioactiveStrong-desc = Becomes highly radioactive
+ent-XenoArtifactRadioactiveStrong-desc = Становится очень радиоактивным
 
-ent-XenoArtifactMaterialSpawnGlass-name = effect
-ent-XenoArtifactMaterialSpawnGlass-desc = Create glass
+ent-XenoArtifactMaterialSpawnGlass-name = эффект
+ent-XenoArtifactMaterialSpawnGlass-desc = Создать стакан
 
-ent-XenoArtifactMaterialSpawnSteel-name = effect
-ent-XenoArtifactMaterialSpawnSteel-desc = Create steel
+ent-XenoArtifactMaterialSpawnSteel-name = эффект
+ent-XenoArtifactMaterialSpawnSteel-desc = Создать сталь
 
-ent-XenoArtifactMaterialSpawnPlastic-name = effect
-ent-XenoArtifactMaterialSpawnPlastic-desc = Create plastic
+ent-XenoArtifactMaterialSpawnPlastic-name = эффект
+ent-XenoArtifactMaterialSpawnPlastic-desc = Создать пластик
 
-ent-XenoArtifactPortal-name = effect
-ent-XenoArtifactPortal-desc = Create short-living bluespace portal
+ent-XenoArtifactPortal-name = эффект
+ent-XenoArtifactPortal-desc = Создать недолговечный портал bluespace
 
-ent-XenoArtifactArtifactSpawn-name = effect
-ent-XenoArtifactArtifactSpawn-desc = Create artifact
+ent-XenoArtifactArtifactSpawn-name = эффект
+ent-XenoArtifactArtifactSpawn-desc = Создать артефакт
 
-ent-XenoArtifactShuffle-name = effect
-ent-XenoArtifactShuffle-desc = Switch places of sentient beings
+ent-XenoArtifactShuffle-name = эффект
+ent-XenoArtifactShuffle-desc = Поменяйте местами разумные существа
 
-ent-XenoArtifactHealAll-name = effect
-ent-XenoArtifactHealAll-desc = Miraclous healing
+ent-XenoArtifactHealAll-name = эффект
+ent-XenoArtifactHealAll-desc = Чудесное исцеление
 
 ent-XenoArtifactTesla-name = one-time-effect
-ent-XenoArtifactTesla-desc = Mass destruction
+ent-XenoArtifactTesla-desc = Массовое уничтожение
 
 ent-XenoArtifactSingularity-name = one-time-effect
-ent-XenoArtifactSingularity-desc = Imminent doom
+ent-XenoArtifactSingularity-desc = Неизбежная гибель
 
 ent-XenoArtifactExplosionScary-name = one-time-effect
-ent-XenoArtifactExplosionScary-desc = Small scale high-speed nuclear reaction
+ent-XenoArtifactExplosionScary-desc = Маломасштабная высокоскоростная ядерная реакция
 
 ent-XenoArtifactBoom-name = one-time-effect
-ent-XenoArtifactBoom-desc = Explosion
+ent-XenoArtifactBoom-desc = Взрыв
 
-ent-XenoArtifactEffectCreationGasPlasma-name = effect
-ent-XenoArtifactEffectCreationGasPlasma-desc = Expels plasma
+ent-XenoArtifactEffectCreationGasPlasma-name = эффект
+ent-XenoArtifactEffectCreationGasPlasma-desc = Вытесняет плазму
 
-ent-XenoArtifactEffectCreationGasTritium-name = effect
-ent-XenoArtifactEffectCreationGasTritium-desc = Expels tritium
+ent-XenoArtifactEffectCreationGasTritium-name = эффект
+ent-XenoArtifactEffectCreationGasTritium-desc = Вытесняет тритий
 
-ent-XenoArtifactEffectCreationGasAmmonia-name = effect
-ent-XenoArtifactEffectCreationGasAmmonia-desc = Expels ammonia
+ent-XenoArtifactEffectCreationGasAmmonia-name = эффект
+ent-XenoArtifactEffectCreationGasAmmonia-desc = Вытесняет аммиак
 
-ent-XenoArtifactEffectCreationGasFrezon-name = effect
-ent-XenoArtifactEffectCreationGasFrezon-desc = Expels frezon
+ent-XenoArtifactEffectCreationGasFrezon-name = эффект
+ent-XenoArtifactEffectCreationGasFrezon-desc = Вытесняет фрезон
 
-ent-XenoArtifactEffectCreationGasNitrousOxide-name = effect
-ent-XenoArtifactEffectCreationGasNitrousOxide-desc = Expels nitrous oxide
+ent-XenoArtifactEffectCreationGasNitrousOxide-name = эффект
+ent-XenoArtifactEffectCreationGasNitrousOxide-desc = Вытесняет закись азота
 
-ent-XenoArtifactEffectCreationGasCarbonDioxide-name = effect
-ent-XenoArtifactEffectCreationGasCarbonDioxide-desc = Expels carbon dioxide
+ent-XenoArtifactEffectCreationGasCarbonDioxide-name = эффект
+ent-XenoArtifactEffectCreationGasCarbonDioxide-desc = Вытесняет углекислый газ
 

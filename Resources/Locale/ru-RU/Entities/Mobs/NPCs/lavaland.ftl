@@ -1,15 +1,15 @@
-ent-MobWatcherBase-name = watcher
-ent-MobWatcherBase-desc = It's like it's staring right through you.
+ent-MobWatcherBase-name = наблюдатель
+ent-MobWatcherBase-desc = Как будто оно смотрит сквозь тебя.
 
-ent-MobWatcherIcewing-name = icewing watcher
-ent-MobWatcherIcewing-desc = It's like it's staring right through you.
+ent-MobWatcherIcewing-name = наблюдатель ледяного крыла
+ent-MobWatcherIcewing-desc = Как будто оно смотрит сквозь тебя.
 
-ent-MobWatcherMagmawing-name = magmawing watcher
-ent-MobWatcherMagmawing-desc = It's like it's staring right through you.
+ent-MobWatcherMagmawing-name = наблюдатель магмы
+ent-MobWatcherMagmawing-desc = Как будто оно смотрит сквозь тебя.
 
-ent-MobWatcherPride-name = pride watcher
-ent-MobWatcherPride-desc = This rare subspecies only appears in June.
+ent-MobWatcherPride-name = наблюдатель за гордостью
+ent-MobWatcherPride-desc = Этот редкий подвид появляется только в июне.
 
-ent-MobWatcherLavaland-name = watcher
-ent-MobWatcherLavaland-desc = It's like it's staring right through you.
+ent-MobWatcherLavaland-name = наблюдатель
+ent-MobWatcherLavaland-desc = Как будто оно смотрит сквозь тебя.
 

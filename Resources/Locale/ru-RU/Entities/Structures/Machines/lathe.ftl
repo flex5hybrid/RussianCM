@@ -1,55 +1,55 @@
-ent-BaseLathe-name = lathe
+ent-BaseLathe-name = токарный станок
 
-ent-Autolathe-name = autolathe
-ent-Autolathe-desc = It produces basic items using metal and glass. Has the ability to process blueprints to print new recipes.
+ent-Autolathe-name = токарный станок
+ent-Autolathe-desc = Он производит основные предметы из металла и стекла. Имеет возможность обрабатывать чертежи для печати новых рецептов.
 
-ent-AutolatheHyperConvection-name = hyper convection autolathe
-ent-AutolatheHyperConvection-desc = A highly-experimental autolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
+ent-AutolatheHyperConvection-name = гиперконвекционный токарный станок
+ent-AutolatheHyperConvection-desc = Высокоэкспериментальный токарный станок, который использует силу сильного тепла для медленного создания объектов с меньшими затратами.
 
-ent-Protolathe-name = protolathe
-ent-Protolathe-desc = Converts raw materials into advanced items.
+ent-Protolathe-name = протолат
+ent-Protolathe-desc = Преобразует сырье в продвинутые предметы.
 
-ent-ProtolatheHyperConvection-name = hyper convection protolathe
-ent-ProtolatheHyperConvection-desc = A highly-experimental protolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
+ent-ProtolatheHyperConvection-name = протолат с гиперконвекцией
+ent-ProtolatheHyperConvection-desc = Высокоэкспериментальный протолат, который использует силу сильного тепла для медленного создания объектов с меньшими затратами.
 
-ent-CircuitImprinter-name = circuit imprinter
-ent-CircuitImprinter-desc = Prints circuit boards for machines.
+ent-CircuitImprinter-name = впечатывающее устройство для схем
+ent-CircuitImprinter-desc = Печатает платы для машин.
 
-ent-CircuitImprinterHyperConvection-name = hyper convection circuit imprinter
-ent-CircuitImprinterHyperConvection-desc = A highly-experimental circuit imprinter that harnesses the power of extreme heat to slowly create objects more cost-effectively.
+ent-CircuitImprinterHyperConvection-name = Импринтер гиперконвекционных схем
+ent-CircuitImprinterHyperConvection-desc = Экспериментальный импринтер схем, который использует силу сильного тепла для медленного создания объектов с меньшими затратами.
 
-ent-ExosuitFabricator-name = exosuit fabricator
-ent-ExosuitFabricator-desc = Creates parts for robotics and other mechanical needs.
+ent-ExosuitFabricator-name = производитель экзокостюмов
+ent-ExosuitFabricator-desc = Создает детали для робототехники и других механических нужд.
 
-ent-Biofabricator-name = biocube fabricator
-ent-Biofabricator-desc = Produces animal cubes using biomass.
+ent-Biofabricator-name = производитель биокубов
+ent-Biofabricator-desc = Производит кубики животных, используя биомассу.
 
-ent-SecurityTechFab-name = security techfab
-ent-SecurityTechFab-desc = Prints equipment for use by security crew.
+ent-SecurityTechFab-name = техническая фабрика безопасности
+ent-SecurityTechFab-desc = Печатает оборудование для использования службой безопасности.
 
-ent-AmmoTechFab-name = ammo techfab
-ent-AmmoTechFab-desc = Prints the bare minimum of bullets that any budget military or armory could need. Nothing fancy.
+ent-AmmoTechFab-name = техническая фабрика боеприпасов
+ent-AmmoTechFab-desc = Печатает минимум пуль, который может понадобиться любой бюджетной армии или оружейной. Ничего особенного.
 
-ent-MedicalTechFab-name = medical techfab
-ent-MedicalTechFab-desc = Prints equipment for use by the medbay.
+ent-MedicalTechFab-name = медицинская техническая фабрика
+ent-MedicalTechFab-desc = Распечатывает оборудование для использования в медотсеке.
 
-ent-UniformPrinter-name = uniform printer
-ent-UniformPrinter-desc = Prints new or replacement uniforms.
+ent-UniformPrinter-name = униформа принтер
+ent-UniformPrinter-desc = Печатает новую или сменную униформу.
 
-ent-Biogenerator-name = biogenerator
-ent-Biogenerator-desc = Converts plants into biomass, which can be used to construct useful items.
+ent-Biogenerator-name = биогенератор
+ent-Biogenerator-desc = Преобразует растения в биомассу, которую можно использовать для создания полезных предметов.
 
-ent-OreProcessor-name = ore processor
-ent-OreProcessor-desc = It produces sheets and ingots using ores.
+ent-OreProcessor-name = переработчик руды
+ent-OreProcessor-desc = Он производит листы и слитки из руд.
 
-ent-OreProcessorIndustrial-name = industrial ore processor
-ent-OreProcessorIndustrial-desc = An ore processor specifically designed for mass-producing metals in industrial applications.
+ent-OreProcessorIndustrial-name = промышленный переработчик руды
+ent-OreProcessorIndustrial-desc = Переработчик руды, специально разработанный для массового производства металлов в промышленности.
 
-ent-Sheetifier-name = sheet-meister 2000
-ent-Sheetifier-desc = A very sheety machine.
+ent-Sheetifier-name = лист-мейстер 2000
+ent-Sheetifier-desc = Очень крутая машина.
 
-ent-CutterMachine-name = cutter machine
-ent-CutterMachine-desc = This is a cutter. It cuts. Add variety to your station floor with eye-pleasing patterns! Don't stick your fingers in.
+ent-CutterMachine-name = резак машина
+ent-CutterMachine-desc = Это резак. Это режет. Добавьте разнообразия на этаж своей станции с помощью приятных глаз узоров! Не суйте пальцы.
 
-ent-BaseLatheLube-name = lathe
+ent-BaseLatheLube-name = токарный станок
 

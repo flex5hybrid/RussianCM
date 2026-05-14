@@ -1,3 +1,3 @@
-ent-Mannequin-name = mannequin
-ent-Mannequin-desc = It can wear any clothing with style.
+ent-Mannequin-name = манекен
+ent-Mannequin-desc = Он может носить любую одежду со стилем.
 

@@ -1,16 +1,16 @@
-ent-BaseCartridgePistol-name = cartridge (.35 auto)
+ent-BaseCartridgePistol-name = патрон (.35 авто)
 
-ent-CartridgePistol-name = cartridge (.35 auto)
-ent-CartridgePistol-desc = Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Standard kinetic ammunition is common and useful in most situations.
+ent-CartridgePistol-name = патрон (.35 авто)
+ent-CartridgePistol-desc = Вероятно, самый популярный калибр на рынке, используемый во всех видах пистолетов и пистолетов-пулеметов. Стандартные кинетические боеприпасы распространены и полезны в большинстве ситуаций.
 
-ent-CartridgePistolPractice-name = cartridge (.35 auto practice)
-ent-CartridgePistolPractice-desc = Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Chalk ammunition is generally non-harmful, used for practice.
+ent-CartridgePistolPractice-name = патрон (.35 автопрактика)
+ent-CartridgePistolPractice-desc = Вероятно, самый популярный калибр на рынке, используемый во всех видах пистолетов и пистолетов-пулеметов. Меловые боеприпасы в целом безвредны, используются для практики.
 
-ent-CartridgePistolIncendiary-name = cartridge (.35 auto incendiary)
-ent-CartridgePistolIncendiary-desc = Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Incendiary ammunition contains a self-igniting compound that sets the target ablaze.
+ent-CartridgePistolIncendiary-name = патрон (автозажигательный .35)
+ent-CartridgePistolIncendiary-desc = Вероятно, самый популярный калибр на рынке, используемый во всех видах пистолетов и пистолетов-пулеметов. Зажигательные боеприпасы содержат самовоспламеняющееся соединение, которое поджигает цель.
 
-ent-CartridgePistolUranium-name = cartridge (.35 auto uranium)
-ent-CartridgePistolUranium-desc = Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Uranium core ammunition features a load of fissile material, irradiating the target from the inside.
+ent-CartridgePistolUranium-name = патрон (.35 авто уран)
+ent-CartridgePistolUranium-desc = Вероятно, самый популярный калибр на рынке, используемый во всех видах пистолетов и пистолетов-пулеметов. Боеприпасы с урановым сердечником содержат делящийся материал, облучающий цель изнутри.
 
-ent-CartridgePistolSpent-name = cartridge (.35 auto)
+ent-CartridgePistolSpent-name = патрон (.35 авто)
 

@@ -1,3 +1,3 @@
-ent-AU14JobFORECONRifleman-name = Urist C.M. McHands
-ent-AU14IDCardFORECONRifleman-name = FORECON Rifleman ID card
-ent-AU14IDCardFORECONRifleman-desc = A slice of encoded compressed fiber glass. Used for identification and access control.
+ent-AU14JobFORECONRifleman-name = Урист С.М. Макхэндс
+ent-AU14IDCardFORECONRifleman-name = Удостоверение стрелка FORECON
+ent-AU14IDCardFORECONRifleman-desc = Кусок закодированного сжатого стекловолокна. Используется для идентификации и контроля доступа.

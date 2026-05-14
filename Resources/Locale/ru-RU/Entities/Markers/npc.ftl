@@ -1,2 +1,2 @@
-ent-PathfindPoint-name = pathfind point
+ent-PathfindPoint-name = точка поиска пути
 

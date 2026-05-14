@@ -1,24 +1,24 @@
-ent-Medkit-name = first aid kit
-ent-Medkit-desc = It's an emergency medical kit for those serious boo-boos.
+ent-Medkit-name = аптечка первой помощи
+ent-Medkit-desc = Это аптечка для тех серьезных недоумков.
 
-ent-MedkitBurn-name = burn treatment kit
-ent-MedkitBurn-desc = A specialized medical kit for when the toxins lab spontaneously burns down.
+ent-MedkitBurn-name = комплект для лечения ожогов
+ent-MedkitBurn-desc = Специализированная аптечка на случай, если лаборатория токсинов самопроизвольно сгорит.
 
-ent-MedkitToxin-name = toxin treatment kit
-ent-MedkitToxin-desc = Used to treat toxic blood content.
+ent-MedkitToxin-name = набор для лечения токсинов
+ent-MedkitToxin-desc = Используется для лечения токсичного содержимого крови.
 
-ent-MedkitO2-name = oxygen deprivation treatment kit
-ent-MedkitO2-desc = A box full of oxygen goodies.
+ent-MedkitO2-name = комплект для лечения кислородного голодания
+ent-MedkitO2-desc = Коробка, полная кислородных вкусностей.
 
-ent-MedkitBrute-name = brute trauma treatment kit
-ent-MedkitBrute-desc = A first aid kit for when you get toolboxed.
+ent-MedkitBrute-name = набор для лечения жестоких травм
+ent-MedkitBrute-desc = Аптечка на случай, если у вас окажется ящик с инструментами.
 
-ent-MedkitAdvanced-name = advanced first aid kit
-ent-MedkitAdvanced-desc = An advanced kit to help deal with advanced wounds.
+ent-MedkitAdvanced-name = усовершенствованная аптечка первой помощи
+ent-MedkitAdvanced-desc = Усовершенствованный комплект, помогающий справиться с запущенными ранами.
 
-ent-MedkitRadiation-name = radiation treatment kit
-ent-MedkitRadiation-desc = If you took your Rad-X you wouldn't need this.
+ent-MedkitRadiation-name = комплект для лучевой терапии
+ent-MedkitRadiation-desc = Если бы вы приняли Рад-Х, вам бы это не понадобилось.
 
-ent-MedkitCombat-name = combat medical kit
-ent-MedkitCombat-desc = For the big weapons among us.
+ent-MedkitCombat-name = боевая аптечка
+ent-MedkitCombat-desc = Для большого оружия среди нас.
 

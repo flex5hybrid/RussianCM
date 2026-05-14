@@ -1,36 +1,36 @@
-ent-SheetMetalBase-name = item
-ent-SheetMetalBase-desc = A sheet of metal, used often on the station in various applications.
+ent-SheetMetalBase-name = элемент
+ent-SheetMetalBase-desc = Лист металла, часто используемый на станции в различных целях.
 
-ent-SheetSteel-name = steel
-ent-SheetSteel-desc = A sheet of metal, used often on the station in various applications.
+ent-SheetSteel-name = сталь
+ent-SheetSteel-desc = Лист металла, часто используемый на станции в различных целях.
 
-ent-SheetSteel10-name = steel
-ent-SheetSteel10-desc = A sheet of metal, used often on the station in various applications.
+ent-SheetSteel10-name = сталь
+ent-SheetSteel10-desc = Лист металла, часто используемый на станции в различных целях.
 
-ent-SheetSteel1-name = steel
-ent-SheetSteel1-desc = A sheet of metal, used often on the station in various applications.
+ent-SheetSteel1-name = сталь
+ent-SheetSteel1-desc = Лист металла, часто используемый на станции в различных целях.
 
-ent-SheetBrass-name = brass
-ent-SheetBrass-desc = A sheet of brass, primarily used by clockwork enthusiasts and the remnants of Ratvarian cults.
+ent-SheetBrass-name = латунь
+ent-SheetBrass-desc = Лист латуни, в основном используемый энтузиастами часового дела и остатками ратварианских культов.
 
-ent-SheetBrass10-name = brass
-ent-SheetBrass10-desc = A sheet of brass, primarily used by clockwork enthusiasts and the remnants of Ratvarian cults.
+ent-SheetBrass10-name = латунь
+ent-SheetBrass10-desc = Лист латуни, в основном используемый энтузиастами часового дела и остатками ратварианских культов.
 
-ent-SheetBrass1-name = brass
-ent-SheetBrass1-desc = A sheet of brass, primarily used by clockwork enthusiasts and the remnants of Ratvarian cults.
+ent-SheetBrass1-name = латунь
+ent-SheetBrass1-desc = Лист латуни, в основном используемый энтузиастами часового дела и остатками ратварианских культов.
 
-ent-SheetPlasteel-name = plasteel
-ent-SheetPlasteel-desc = A sheet of metal, used often on the station in various applications.
+ent-SheetPlasteel-name = пласталь
+ent-SheetPlasteel-desc = Лист металла, часто используемый на станции в различных целях.
 
-ent-SheetPlasteel10-name = plasteel
-ent-SheetPlasteel10-desc = A sheet of metal, used often on the station in various applications.
+ent-SheetPlasteel10-name = пласталь
+ent-SheetPlasteel10-desc = Лист металла, часто используемый на станции в различных целях.
 
-ent-SheetPlasteel1-name = plasteel
-ent-SheetPlasteel1-desc = A sheet of metal, used often on the station in various applications.
+ent-SheetPlasteel1-name = пласталь
+ent-SheetPlasteel1-desc = Лист металла, часто используемый на станции в различных целях.
 
-ent-SheetSteelLingering0-name = item
-ent-SheetSteelLingering0-desc = A sheet of metal, used often on the station in various applications.
+ent-SheetSteelLingering0-name = элемент
+ent-SheetSteelLingering0-desc = Лист металла, часто используемый на станции в различных целях.
 
-ent-SheetPlasteelLingering0-name = plasteel
-ent-SheetPlasteelLingering0-desc = A sheet of metal, used often on the station in various applications.
+ent-SheetPlasteelLingering0-name = пласталь
+ent-SheetPlasteelLingering0-desc = Лист металла, часто используемый на станции в различных целях.
 

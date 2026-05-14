@@ -1,2 +1,2 @@
-ent-AU14SpawnPointGOVFORK9Handler-name = (DO NOT MAP) Spawn Point GOVFOR K9 Handler
-ent-AU14SpawnPointGOVFORK9Handler-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointGOVFORK9Handler-name = (НЕ НАКАРТИРОВАТЬ) Точка появления Обработчик GOVFOR K9
+ent-AU14SpawnPointGOVFORK9Handler-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

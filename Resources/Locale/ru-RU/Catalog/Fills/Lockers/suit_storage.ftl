@@ -1,60 +1,60 @@
-ent-SuitStorageEVA-name = suit storage unit
-ent-SuitStorageEVA-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageEVA-name = блок хранения костюма
+ent-SuitStorageEVA-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageEVAAlternate-name = suit storage unit
-ent-SuitStorageEVAAlternate-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageEVAAlternate-name = блок хранения костюма
+ent-SuitStorageEVAAlternate-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageEVAEmergency-name = suit storage unit
-ent-SuitStorageEVAEmergency-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageEVAEmergency-name = блок хранения костюма
+ent-SuitStorageEVAEmergency-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageEVAPrisoner-name = suit storage unit
-ent-SuitStorageEVAPrisoner-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageEVAPrisoner-name = блок хранения костюма
+ent-SuitStorageEVAPrisoner-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageEVASyndicate-name = suit storage unit
-ent-SuitStorageEVASyndicate-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageEVASyndicate-name = блок хранения костюма
+ent-SuitStorageEVASyndicate-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageEVAPirate-name = suit storage unit
-ent-SuitStorageEVAPirate-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageEVAPirate-name = блок хранения костюма
+ent-SuitStorageEVAPirate-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageNTSRA-name = suit storage unit
-ent-SuitStorageNTSRA-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageNTSRA-name = блок хранения костюма
+ent-SuitStorageNTSRA-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageEngi-name = suit storage unit
-ent-SuitStorageEngi-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageEngi-name = блок хранения костюма
+ent-SuitStorageEngi-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageAtmos-name = suit storage unit
-ent-SuitStorageAtmos-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageAtmos-name = блок хранения костюма
+ent-SuitStorageAtmos-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageSec-name = suit storage unit
-ent-SuitStorageSec-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageSec-name = блок хранения костюма
+ent-SuitStorageSec-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageCE-name = suit storage unit
-ent-SuitStorageCE-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageCE-name = блок хранения костюма
+ent-SuitStorageCE-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageCMO-name = suit storage unit
-ent-SuitStorageCMO-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageCMO-name = блок хранения костюма
+ent-SuitStorageCMO-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageRD-name = suit storage unit
-ent-SuitStorageRD-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageRD-name = блок хранения костюма
+ent-SuitStorageRD-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageHOS-name = suit storage unit
-ent-SuitStorageHOS-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageHOS-name = блок хранения костюма
+ent-SuitStorageHOS-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageWarden-name = suit storage unit
-ent-SuitStorageWarden-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageWarden-name = блок хранения костюма
+ent-SuitStorageWarden-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageCaptain-name = suit storage unit
-ent-SuitStorageCaptain-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageCaptain-name = блок хранения костюма
+ent-SuitStorageCaptain-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageSalv-name = suit storage unit
-ent-SuitStorageSalv-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageSalv-name = блок хранения костюма
+ent-SuitStorageSalv-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageSyndie-name = suit storage unit
-ent-SuitStorageSyndie-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageSyndie-name = блок хранения костюма
+ent-SuitStorageSyndie-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStoragePirateCap-name = suit storage unit
-ent-SuitStoragePirateCap-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStoragePirateCap-name = блок хранения костюма
+ent-SuitStoragePirateCap-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 
-ent-SuitStorageWizard-name = suit storage unit
-ent-SuitStorageWizard-desc = A fancy hi-tech storage unit made for storing space suits.
+ent-SuitStorageWizard-name = блок хранения костюма
+ent-SuitStorageWizard-desc = Модное высокотехнологичное хранилище, предназначенное для хранения скафандров.
 

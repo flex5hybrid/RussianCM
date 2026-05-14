@@ -1,11 +1,11 @@
-ent-HoloparasiteInfo-name = holoparasite terms and conditions
-ent-HoloparasiteInfo-desc = A tiny volumetric display for documents, makes one wonder if Cybersun's legal budget is way too high.
+ent-HoloparasiteInfo-name = условия использования голопаразита
+ent-HoloparasiteInfo-desc = Крохотный объемный дисплей для документов заставляет задуматься, не слишком ли велик юридический бюджет Cybersun.
 
-ent-PaperAgrichemManual-name = NT "AgriChem Is Fun" manual
-ent-PaperAgrichemManual-desc = The single sheet of instructions that came in the kit.
+ent-PaperAgrichemManual-name = Руководство НТ «АгриХим – это весело»
+ent-PaperAgrichemManual-desc = Единственный листок инструкции, который шел в комплекте.
 
-ent-PaperWrittenCombatBakeryKit-name = combat bakery kit instructions
-ent-PaperWrittenCombatBakeryKit-desc = Eat note after reading.
+ent-PaperWrittenCombatBakeryKit-name = инструкция к боевому хлебобулочному набору
+ent-PaperWrittenCombatBakeryKit-desc = Съешьте записку после прочтения.
 
 ent-PaperWrittenAMEScribbles-name = stack-paper
 

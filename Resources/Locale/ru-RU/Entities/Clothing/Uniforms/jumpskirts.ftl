@@ -1,200 +1,200 @@
-ent-ClothingUniformJumpskirtBartender-name = bartender's uniform
-ent-ClothingUniformJumpskirtBartender-desc = A nice and tidy uniform. Shame about the bar though.
+ent-ClothingUniformJumpskirtBartender-name = униформа бармена
+ent-ClothingUniformJumpskirtBartender-desc = Красивая и опрятная униформа. Хотя жаль бара.
 
-ent-ClothingUniformJumpskirtCaptain-name = captain's jumpskirt
-ent-ClothingUniformJumpskirtCaptain-desc = It's a blue jumpskirt with some gold markings denoting the rank of "Captain".
+ent-ClothingUniformJumpskirtCaptain-name = капитанская юбка
+ent-ClothingUniformJumpskirtCaptain-desc = Это синяя юбка с золотыми отметинами, обозначающими звание «Капитана».
 
-ent-ClothingUniformJumpskirtCargo-name = cargo tech jumpskirt
-ent-ClothingUniformJumpskirtCargo-desc = A sturdy jumpskirt, issued to members of the Cargo department.
+ent-ClothingUniformJumpskirtCargo-name = спортивная юбка в стиле карго
+ent-ClothingUniformJumpskirtCargo-desc = Прочная юбка, выдаваемая сотрудникам грузового отдела.
 
-ent-ClothingUniformJumpskirtChiefEngineer-name = chief engineer's jumpskirt
-ent-ClothingUniformJumpskirtChiefEngineer-desc = It's a high visibility jumpskirt given to those engineers insane enough to achieve the rank of Chief Engineer.
+ent-ClothingUniformJumpskirtChiefEngineer-name = комбинезон главного инженера
+ent-ClothingUniformJumpskirtChiefEngineer-desc = Это эффектная комбинезон, который вручается инженерам, достаточно безумным, чтобы получить звание главного инженера.
 
-ent-ClothingUniformJumpskirtChiefEngineerTurtle-name = chief engineer's turtleneck
-ent-ClothingUniformJumpskirtChiefEngineerTurtle-desc = A yellow turtleneck designed specifically for work in conditions of the engineering department.
+ent-ClothingUniformJumpskirtChiefEngineerTurtle-name = водолазка главного инженера
+ent-ClothingUniformJumpskirtChiefEngineerTurtle-desc = Желтая водолазка создана специально для работы в условиях инженерного цеха.
 
-ent-ClothingUniformJumpskirtChaplain-name = chaplain's jumpskirt
-ent-ClothingUniformJumpskirtChaplain-desc = It's a black jumpskirt, often worn by religious folk.
+ent-ClothingUniformJumpskirtChaplain-name = юбка капеллана
+ent-ClothingUniformJumpskirtChaplain-desc = Это черная юбка, которую часто носят религиозные люди.
 
-ent-ClothingUniformJumpskirtChef-name = chef uniform
-ent-ClothingUniformJumpskirtChef-desc = Can't cook without this.
+ent-ClothingUniformJumpskirtChef-name = униформа шеф-повара
+ent-ClothingUniformJumpskirtChef-desc = Без этого невозможно готовить.
 
-ent-ClothingUniformJumpskirtChemistry-name = chemistry jumpskirt
-ent-ClothingUniformJumpskirtChemistry-desc = There's some odd stains on this jumpskirt. Hm.
+ent-ClothingUniformJumpskirtChemistry-name = химия комбинезон
+ent-ClothingUniformJumpskirtChemistry-desc = На этой юбке какие-то странные пятна. Хм.
 
-ent-ClothingUniformJumpskirtVirology-name = virology jumpskirt
-ent-ClothingUniformJumpskirtVirology-desc = It's made of a special fiber that gives special protection against biohazards. It has a virologist rank stripe on it.
+ent-ClothingUniformJumpskirtVirology-name = вирусология
+ent-ClothingUniformJumpskirtVirology-desc = Он изготовлен из специального волокна, обеспечивающего особую защиту от биологических опасностей. На нем есть нашивка со званием вирусолога.
 
-ent-ClothingUniformJumpskirtGenetics-name = genetics jumpskirt
-ent-ClothingUniformJumpskirtGenetics-desc = It's made of a special fiber that gives special protection against biohazards. It has a geneticist rank stripe on it.
+ent-ClothingUniformJumpskirtGenetics-name = генетика комбинезон
+ent-ClothingUniformJumpskirtGenetics-desc = Он изготовлен из специального волокна, обеспечивающего особую защиту от биологических опасностей. На нем есть нашивка звания генетика.
 
-ent-ClothingUniformJumpskirtCMO-name = chief medical officer's jumpskirt
-ent-ClothingUniformJumpskirtCMO-desc = It's a jumpskirt worn by those with the experience to be Chief Medical Officer. It provides minor biological protection.
+ent-ClothingUniformJumpskirtCMO-name = комбинезон главного врача
+ent-ClothingUniformJumpskirtCMO-desc = Эту юбку носят те, у кого есть опыт работы на должности главного врача. Обеспечивает незначительную биологическую защиту.
 
-ent-ClothingUniformJumpskirtCMOTurtle-name = chief medical officer's turtleneck jumpskirt
-ent-ClothingUniformJumpskirtCMOTurtle-desc = It's a turtleneck worn by those with the experience to be Chief Medical Officer. It provides minor biological protection.
+ent-ClothingUniformJumpskirtCMOTurtle-name = комбинезон главного врача с высоким воротником
+ent-ClothingUniformJumpskirtCMOTurtle-desc = Эту водолазку носят те, у кого есть опыт работы на должности главного врача. Обеспечивает незначительную биологическую защиту.
 
-ent-ClothingUniformJumpskirtDetective-name = hard-worn suitskirt
-ent-ClothingUniformJumpskirtDetective-desc = Someone who wears this means business.
+ent-ClothingUniformJumpskirtDetective-name = поношенная костюмная юбка
+ent-ClothingUniformJumpskirtDetective-desc = Тот, кто носит это, означает бизнес.
 
-ent-ClothingUniformJumpskirtDetectiveGrey-name = noir suitskirt
-ent-ClothingUniformJumpskirtDetectiveGrey-desc = A hard-boiled private investigator's grey suit, complete with tie clip.
+ent-ClothingUniformJumpskirtDetectiveGrey-name = нуар-костюмюбка
+ent-ClothingUniformJumpskirtDetectiveGrey-desc = Серый костюм крутого частного детектива с зажимом для галстука.
 
-ent-ClothingUniformJumpskirtEngineering-name = engineering jumpskirt
-ent-ClothingUniformJumpskirtEngineering-desc = If this suit was non-conductive, maybe engineers would actually do their damn job.
+ent-ClothingUniformJumpskirtEngineering-name = Инженерная юбка
+ent-ClothingUniformJumpskirtEngineering-desc = Если бы этот костюм был непроводящим, возможно, инженеры действительно сделали бы свою чертову работу.
 
-ent-ClothingUniformJumpskirtHoP-name = head of personnel's jumpskirt
-ent-ClothingUniformJumpskirtHoP-desc = Rather bland and inoffensive. Perfect for vanishing off the face of the universe.
+ent-ClothingUniformJumpskirtHoP-name = комбинезон начальника отдела кадров
+ent-ClothingUniformJumpskirtHoP-desc = Скорее пресный и безобидный. Идеально подходит для исчезновения с лица Вселенной.
 
-ent-ClothingUniformJumpskirtHoS-name = head of security's jumpskirt
-ent-ClothingUniformJumpskirtHoS-desc = It's bright red and rather crisp, much like security's victims tend to be.
+ent-ClothingUniformJumpskirtHoS-name = комбинезон начальника службы безопасности
+ent-ClothingUniformJumpskirtHoS-desc = Он ярко-красный и довольно четкий, как обычно бывает у жертв службы безопасности.
 
-ent-ClothingUniformJumpskirtHoSAlt-name = head of security's turtleneck
-ent-ClothingUniformJumpskirtHoSAlt-desc = It's a turtleneck worn by those strong and disciplined enough to achieve the position of Head of Security.
+ent-ClothingUniformJumpskirtHoSAlt-name = водолазка начальника службы безопасности
+ent-ClothingUniformJumpskirtHoSAlt-desc = Эту водолазку носят те, кто достаточно силен и дисциплинирован, чтобы достичь должности главы службы безопасности.
 
-ent-ClothingUniformJumpskirtHoSParadeMale-name = head of security's parade uniform
-ent-ClothingUniformJumpskirtHoSParadeMale-desc = A head of security's luxury-wear, for special occasions.
+ent-ClothingUniformJumpskirtHoSParadeMale-name = парадная форма начальника службы безопасности
+ent-ClothingUniformJumpskirtHoSParadeMale-desc = Роскошная одежда начальника службы безопасности для особых случаев.
 
-ent-ClothingUniformJumpskirtCommandGeneric-name = command jumpskirt
-ent-ClothingUniformJumpskirtCommandGeneric-desc = A generic Command-colored jumpsuit not associated with any particular department.
+ent-ClothingUniformJumpskirtCommandGeneric-name = командная юбка
+ent-ClothingUniformJumpskirtCommandGeneric-desc = Обычный комбинезон командного цвета, не связанный с каким-либо конкретным отделом.
 
-ent-ClothingUniformJumpskirtHydroponics-name = hydroponics jumpskirt
-ent-ClothingUniformJumpskirtHydroponics-desc = Has a strong earthy smell to it. Hopefully it's merely dirty as opposed to soiled.
+ent-ClothingUniformJumpskirtHydroponics-name = гидропоника комбинезон
+ent-ClothingUniformJumpskirtHydroponics-desc = Имеет сильный землистый запах. Надеюсь, он просто грязный, а не испачканный.
 
-ent-ClothingUniformJumpskirtJanitor-name = janitor jumpskirt
-ent-ClothingUniformJumpskirtJanitor-desc = The jumpskirt for the poor sop with a mop.
+ent-ClothingUniformJumpskirtJanitor-name = уборщик в комбинезоне
+ent-ClothingUniformJumpskirtJanitor-desc = Юбка для бедняги со шваброй.
 
-ent-ClothingUniformJumpskirtMedicalDoctor-name = medical doctor jumpskirt
-ent-ClothingUniformJumpskirtMedicalDoctor-desc = It's made of a special fiber that provides minor protection against biohazards. It has a cross on the chest denoting that the wearer is trained medical personnel.
+ent-ClothingUniformJumpskirtMedicalDoctor-name = врач в комбинезоне
+ent-ClothingUniformJumpskirtMedicalDoctor-desc = Он изготовлен из специального волокна, обеспечивающего незначительную защиту от биологических опасностей. На груди имеется крест, обозначающий, что владелец является обученным медицинским персоналом.
 
-ent-ClothingUniformJumpskirtMime-name = mime jumpskirt
+ent-ClothingUniformJumpskirtMime-name = мим в юбке
 
-ent-ClothingUniformJumpskirtParamedic-name = paramedic jumpskirt
-ent-ClothingUniformJumpskirtParamedic-desc = It's got a plus on it, that's a good thing right?
+ent-ClothingUniformJumpskirtParamedic-name = парамедик комбинезон
+ent-ClothingUniformJumpskirtParamedic-desc = В этом есть плюс, это хорошо, правда?
 
-ent-ClothingUniformJumpskirtBrigmedic-name = brigmedic jumpskirt
-ent-ClothingUniformJumpskirtBrigmedic-desc = This uniform is issued to qualified personnel who have been trained. No one cares that the training took half a day.
+ent-ClothingUniformJumpskirtBrigmedic-name = Бригмедик комбинезон
+ent-ClothingUniformJumpskirtBrigmedic-desc = Данная униформа выдается квалифицированному персоналу, прошедшему обучение. Никого не волнует, что обучение заняло полдня.
 
-ent-ClothingUniformJumpskirtPrisoner-name = prisoner jumpskirt
-ent-ClothingUniformJumpskirtPrisoner-desc = A jumpskirt used for prisoners. It has suit sensors automatically enabled at all times.
+ent-ClothingUniformJumpskirtPrisoner-name = заключенный комбинезон
+ent-ClothingUniformJumpskirtPrisoner-desc = Юбка, используемая для заключенных. Датчики костюма всегда автоматически включаются.
 
-ent-ClothingUniformJumpskirtQM-name = quartermaster's jumpskirt
-ent-ClothingUniformJumpskirtQM-desc = What can brown do for you?
+ent-ClothingUniformJumpskirtQM-name = интендантская юбка
+ent-ClothingUniformJumpskirtQM-desc = Что коричневый может сделать для вас?
 
-ent-ClothingUniformJumpskirtQMTurtleneck-name = quartermasters's turtleneck
-ent-ClothingUniformJumpskirtQMTurtleneck-desc = A sharp turtleneck made for the hardy work environment of supply.
+ent-ClothingUniformJumpskirtQMTurtleneck-name = интендантская водолазка
+ent-ClothingUniformJumpskirtQMTurtleneck-desc = Острая водолазка создана для суровых условий работы.
 
-ent-ClothingUniformJumpskirtResearchDirector-name = research director's turtleneck
-ent-ClothingUniformJumpskirtResearchDirector-desc = It's a turtleneck worn by those with the know-how to achieve the position of Research Director. Its fabric provides minor protection from biological contaminants.
+ent-ClothingUniformJumpskirtResearchDirector-name = водолазка директора по исследованиям
+ent-ClothingUniformJumpskirtResearchDirector-desc = Эту водолазку носят те, кто умеет добиться должности директора по исследованиям. Его ткань обеспечивает незначительную защиту от биологических загрязнений.
 
-ent-ClothingUniformJumpskirtScientist-name = scientist jumpskirt
-ent-ClothingUniformJumpskirtScientist-desc = It's made of a special fiber that increases perceived intelligence and decreases personal ethics. It has markings that denote the wearer as a scientist.
+ent-ClothingUniformJumpskirtScientist-name = учёный в юбке
+ent-ClothingUniformJumpskirtScientist-desc = Он сделан из специального волокна, которое повышает воспринимаемый интеллект и снижает личную этику. На нем есть маркировка, обозначающая владельца как ученого.
 
-ent-ClothingUniformJumpskirtRoboticist-name = roboticist jumpskirt
-ent-ClothingUniformJumpskirtRoboticist-desc = It's a slimming black with reinforced seams; great for industrial work.
+ent-ClothingUniformJumpskirtRoboticist-name = робототехника в комбинезоне
+ent-ClothingUniformJumpskirtRoboticist-desc = Это утягивающее черное платье с усиленными швами; отлично подходит для промышленных работ.
 
-ent-ClothingUniformJumpskirtSec-name = security jumpskirt
-ent-ClothingUniformJumpskirtSec-desc = A jumpskirt made of strong material, providing robust protection.
+ent-ClothingUniformJumpskirtSec-name = защитная юбка
+ent-ClothingUniformJumpskirtSec-desc = Юбка из прочного материала, обеспечивающая надежную защиту.
 
-ent-ClothingUniformJumpskirtWarden-name = warden's uniform
-ent-ClothingUniformJumpskirtWarden-desc = A formal security suit for officers complete with Nanotrasen belt buckle.
+ent-ClothingUniformJumpskirtWarden-name = униформа начальника
+ent-ClothingUniformJumpskirtWarden-desc = Официальный костюм службы безопасности для офицеров с пряжкой ремня Nanotrasen.
 
-ent-ClothingUniformJumpskirtLibrarian-name = librarian jumpskirt
-ent-ClothingUniformJumpskirtLibrarian-desc = A cosy green jumper fit for a curator of books.
+ent-ClothingUniformJumpskirtLibrarian-name = библиотекарь в юбке
+ent-ClothingUniformJumpskirtLibrarian-desc = Уютный зеленый джемпер подойдет хранителю книг.
 
-ent-ClothingUniformJumpskirtCurator-name = sensible skirt
-ent-ClothingUniformJumpskirtCurator-desc = It's sensible. Too sensible...
+ent-ClothingUniformJumpskirtCurator-name = разумная юбка
+ent-ClothingUniformJumpskirtCurator-desc = Это разумно. Слишком разумно...
 
-ent-ClothingUniformJumpskirtPerformer-name = performer's jumpskirt
-ent-ClothingUniformJumpskirtPerformer-desc = Hi, I'm Scott, president of Donk Pizza. Have you heard of [FAMOUS VIRTUAL PERFORMER]?
+ent-ClothingUniformJumpskirtPerformer-name = комбинезон артистки
+ent-ClothingUniformJumpskirtPerformer-desc = Привет, я Скотт, президент Donk Pizza. Вы слышали о [FAMOUS VIRTUAL PERFORMER]?
 
-ent-ClothingUniformJumpskirtCapFormalDress-name = captain's formal dress
-ent-ClothingUniformJumpskirtCapFormalDress-desc = A dress for special occasions.
+ent-ClothingUniformJumpskirtCapFormalDress-name = формальный костюм капитана
+ent-ClothingUniformJumpskirtCapFormalDress-desc = Платье для особых случаев.
 
-ent-ClothingUniformJumpskirtCentcomFormalDress-name = central command formal dress
-ent-ClothingUniformJumpskirtCentcomFormalDress-desc = A dress for special occasions.
+ent-ClothingUniformJumpskirtCentcomFormalDress-name = официальное платье центрального командования
+ent-ClothingUniformJumpskirtCentcomFormalDress-desc = Платье для особых случаев.
 
-ent-ClothingUniformJumpskirtHosFormal-name = hos's formal dress
-ent-ClothingUniformJumpskirtHosFormal-desc = A dress for special occasions.
+ent-ClothingUniformJumpskirtHosFormal-name = официальное платье Хоса
+ent-ClothingUniformJumpskirtHosFormal-desc = Платье для особых случаев.
 
-ent-ClothingUniformJumpskirtOperative-name = operative jumpskirt
-ent-ClothingUniformJumpskirtOperative-desc = Uniform for elite syndicate operatives performing tactical operations in deep space.
+ent-ClothingUniformJumpskirtOperative-name = оперативная юбка
+ent-ClothingUniformJumpskirtOperative-desc = Униформа для элитных оперативников синдиката, выполняющих тактические операции в глубоком космосе.
 
-ent-ClothingUniformJumpskirtTacticool-name = tacticool jumpskirt
-ent-ClothingUniformJumpskirtTacticool-desc = Uniform for subpar operative LARPers performing tactical insulated glove theft in deep space.
+ent-ClothingUniformJumpskirtTacticool-name = тактическая комбинезон
+ent-ClothingUniformJumpskirtTacticool-desc = Униформа для некачественных оперативников ролевых игр, выполняющих кражу тактических изолированных перчаток в глубоком космосе.
 
-ent-ClothingUniformJumpskirtAtmos-name = atmospheric technician jumpskirt
-ent-ClothingUniformJumpskirtAtmos-desc = I am at work. I can't leave work. Work is breathing. I am testing air quality.
+ent-ClothingUniformJumpskirtAtmos-name = комбинезон «атмосферный техник»
+ent-ClothingUniformJumpskirtAtmos-desc = Я на работе. Я не могу уйти с работы. Работа дышит. Я проверяю качество воздуха.
 
-ent-ClothingUniformJumpskirtJanimaid-name = janitorial maid uniform
-ent-ClothingUniformJumpskirtJanimaid-desc = For professionals, not the posers.
+ent-ClothingUniformJumpskirtJanimaid-name = униформа горничной
+ent-ClothingUniformJumpskirtJanimaid-desc = Для профессионалов, а не позеров.
 
-ent-ClothingUniformJumpskirtJanimaidmini-name = janitorial maid uniform with miniskirt
-ent-ClothingUniformJumpskirtJanimaidmini-desc = Elite service, not some candy wrappers.
+ent-ClothingUniformJumpskirtJanimaidmini-name = униформа горничной с мини-юбкой
+ent-ClothingUniformJumpskirtJanimaidmini-desc = Элитный сервис, а не какие-то фантики.
 
-ent-ClothingUniformJumpskirtLawyerRed-name = red lawyer suitskirt
-ent-ClothingUniformJumpskirtLawyerRed-desc = A flashy red suitskirt worn by lawyers and show-offs.
+ent-ClothingUniformJumpskirtLawyerRed-name = красная юбка в костюме адвоката
+ent-ClothingUniformJumpskirtLawyerRed-desc = Яркая красная костюмная юбка, которую носят адвокаты и хвастаются.
 
-ent-ClothingUniformJumpskirtLawyerBlue-name = blue lawyer suitskirt
-ent-ClothingUniformJumpskirtLawyerBlue-desc = A flashy blue suitskirt worn by lawyers and show-offs.
+ent-ClothingUniformJumpskirtLawyerBlue-name = синий костюм-юбка адвоката
+ent-ClothingUniformJumpskirtLawyerBlue-desc = Яркая синяя костюмная юбка, которую носят адвокаты и хвастаются.
 
-ent-ClothingUniformJumpskirtLawyerBlack-name = black lawyer suitskirt
-ent-ClothingUniformJumpskirtLawyerBlack-desc = A subtle black suitskirt worn by lawyers and gangsters.
+ent-ClothingUniformJumpskirtLawyerBlack-name = черный костюм юриста в юбке
+ent-ClothingUniformJumpskirtLawyerBlack-desc = Тонкая черная костюмная юбка, которую носят адвокаты и гангстеры.
 
-ent-ClothingUniformJumpskirtLawyerPurple-name = purple lawyer suitskirt
-ent-ClothingUniformJumpskirtLawyerPurple-desc = A stylish purple piece worn by lawyers and show people.
+ent-ClothingUniformJumpskirtLawyerPurple-name = фиолетовый костюм-юбка адвоката
+ent-ClothingUniformJumpskirtLawyerPurple-desc = Стильная фиолетовая вещь, которую носят юристы и представители шоу-бизнеса.
 
-ent-ClothingUniformJumpskirtLawyerGood-name = good lawyer's suitskirt
-ent-ClothingUniformJumpskirtLawyerGood-desc = A tacky suitskirt perfect for a CRIMINAL lawyer!
+ent-ClothingUniformJumpskirtLawyerGood-name = юбка хорошего адвоката
+ent-ClothingUniformJumpskirtLawyerGood-desc = Безвкусная костюмная юбка идеально подойдет адвокату по уголовным делам!
 
-ent-ClothingUniformJumpskirtSyndieFormalDress-name = syndicate formal dress
-ent-ClothingUniformJumpskirtSyndieFormalDress-desc = The syndicate's uniform is made in an elegant style, it's even a pity to do dirty tricks in this.
+ent-ClothingUniformJumpskirtSyndieFormalDress-name = торжественное платье синдиката
+ent-ClothingUniformJumpskirtSyndieFormalDress-desc = Униформа синдиката выполнена в элегантном стиле, пакостить в этом даже жалко.
 
-ent-ClothingUniformJumpskirtTacticalMaid-name = tactical maid suitskirt
-ent-ClothingUniformJumpskirtTacticalMaid-desc = It is assumed that the best maids should have designer suits.
+ent-ClothingUniformJumpskirtTacticalMaid-name = тактический костюм горничной
+ent-ClothingUniformJumpskirtTacticalMaid-desc = Предполагается, что лучшие горничные должны иметь дизайнерские костюмы.
 
-ent-ClothingUniformJumpskirtOfLife-name = skirt of life
-ent-ClothingUniformJumpskirtOfLife-desc = A skirt that symbolizes the joy and positivity of our life.
+ent-ClothingUniformJumpskirtOfLife-name = юбка жизни
+ent-ClothingUniformJumpskirtOfLife-desc = Юбка, которая символизирует радость и позитив нашей жизни.
 
-ent-ClothingUniformJumpskirtSeniorEngineer-name = senior engineer jumpskirt
-ent-ClothingUniformJumpskirtSeniorEngineer-desc = A sign of skill and prestige within the engineering department.
+ent-ClothingUniformJumpskirtSeniorEngineer-name = комбинезон старшего инженера
+ent-ClothingUniformJumpskirtSeniorEngineer-desc = Знак мастерства и престижа инженерного отдела.
 
-ent-ClothingUniformJumpskirtSeniorResearcher-name = senior researcher jumpskirt
-ent-ClothingUniformJumpskirtSeniorResearcher-desc = A sign of skill and prestige within the science department.
+ent-ClothingUniformJumpskirtSeniorResearcher-name = комбинезон старшего исследователя
+ent-ClothingUniformJumpskirtSeniorResearcher-desc = Знак мастерства и престижа в научном отделе.
 
-ent-ClothingUniformJumpskirtSeniorPhysician-name = senior physician jumpskirt
-ent-ClothingUniformJumpskirtSeniorPhysician-desc = A sign of skill and prestige within the medical department.
+ent-ClothingUniformJumpskirtSeniorPhysician-name = старший врач в комбинезоне
+ent-ClothingUniformJumpskirtSeniorPhysician-desc = Знак мастерства и престижа в медицинском ведомстве.
 
-ent-ClothingUniformJumpskirtSeniorOfficer-name = senior officer jumpskirt
-ent-ClothingUniformJumpskirtSeniorOfficer-desc = A sign of skill and prestige within the security department.
+ent-ClothingUniformJumpskirtSeniorOfficer-name = комбинезон старшего офицера
+ent-ClothingUniformJumpskirtSeniorOfficer-desc = Знак мастерства и престижа в отделе безопасности.
 
-ent-ClothingUniformJumpskirtSecGrey-name = grey security jumpskirt
-ent-ClothingUniformJumpskirtSecGrey-desc = A tactical relic of years past before Nanotrasen decided it was cheaper to dye the suits red instead of washing out the blood.
+ent-ClothingUniformJumpskirtSecGrey-name = серая юбка службы безопасности
+ent-ClothingUniformJumpskirtSecGrey-desc = Тактический пережиток прошлых лет, когда Нанотрасен не решил, что дешевле покрасить костюмы в красный цвет, чем смывать кровь.
 
-ent-ClothingUniformJumpskirtWeb-name = web jumpskirt
-ent-ClothingUniformJumpskirtWeb-desc = Makes it clear that you are one with the webs.
+ent-ClothingUniformJumpskirtWeb-name = веб-комбинезон
+ent-ClothingUniformJumpskirtWeb-desc = Дает понять, что вы едины с паутиной.
 
-ent-ClothingUniformJumpskirtCasualBlue-name = casual blue jumpskirt
-ent-ClothingUniformJumpskirtCasualBlue-desc = A loose worn blue shirt with a grey skirt, perfect for someone looking to relax.
+ent-ClothingUniformJumpskirtCasualBlue-name = повседневная синяя юбка
+ent-ClothingUniformJumpskirtCasualBlue-desc = Свободная поношенная синяя рубашка с серой юбкой идеально подойдет для тех, кто хочет расслабиться.
 
-ent-ClothingUniformJumpskirtCasualPurple-name = casual purple jumpskirt
-ent-ClothingUniformJumpskirtCasualPurple-desc = A loose worn purple shirt with a grey skirt, perfect for someone looking to relax.
+ent-ClothingUniformJumpskirtCasualPurple-name = повседневная фиолетовая комбинезон
+ent-ClothingUniformJumpskirtCasualPurple-desc = Свободная поношенная фиолетовая рубашка с серой юбкой идеально подойдет для тех, кто хочет расслабиться.
 
-ent-ClothingUniformJumpskirtCasualRed-name = casual red jumpskirt
-ent-ClothingUniformJumpskirtCasualRed-desc = A loose worn red shirt with a grey skirt, perfect for someone looking to relax.
+ent-ClothingUniformJumpskirtCasualRed-name = повседневная красная юбка
+ent-ClothingUniformJumpskirtCasualRed-desc = Свободная поношенная красная рубашка с серой юбкой идеально подойдет для тех, кто хочет расслабиться.
 
-ent-ClothingUniformJumpskirtCasualGreen-name = casual green jumpskirt
-ent-ClothingUniformJumpskirtCasualGreen-desc = A loose worn green shirt with a grey skirt, perfect for someone looking to relax.
+ent-ClothingUniformJumpskirtCasualGreen-name = повседневная зеленая комбинезон
+ent-ClothingUniformJumpskirtCasualGreen-desc = Свободная поношенная зеленая рубашка с серой юбкой идеально подойдет для тех, кто хочет расслабиться.
 
-ent-ClothingUniformJumpskirtOldDress-name = old dress
-ent-ClothingUniformJumpskirtOldDress-desc = A worn-looking dress from a very long time ago.
+ent-ClothingUniformJumpskirtOldDress-name = старое платье
+ent-ClothingUniformJumpskirtOldDress-desc = Потертое платье, снятое очень давно.
 
-ent-ClothingUniformJumpskirtMusician-name = musician's skirt
-ent-ClothingUniformJumpskirtMusician-desc = A fancy skirt for the musically inclined. Perfect for any lounge act!
+ent-ClothingUniformJumpskirtMusician-name = юбка музыканта
+ent-ClothingUniformJumpskirtMusician-desc = Модная юбка для любителей музыки. Идеально подходит для любого лаунж-выступления!
 
-ent-ClothingUniformJumpskirtPsychologist-name = psychologist suitskirt
-ent-ClothingUniformJumpskirtPsychologist-desc = I don't lose things. I place things in locations which later elude me.
+ent-ClothingUniformJumpskirtPsychologist-name = психолог
+ent-ClothingUniformJumpskirtPsychologist-desc = Я не теряю вещи. Я размещаю вещи в местах, которые позже ускользают от меня.
 
-ent-ClothingUniformJumpskirtClown-name = clown skirt
-ent-ClothingUniformJumpskirtClown-desc = HONK!
+ent-ClothingUniformJumpskirtClown-name = клоунская юбка
+ent-ClothingUniformJumpskirtClown-desc = ГУДОК!
 

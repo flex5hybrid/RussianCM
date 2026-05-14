@@ -1,2 +1,2 @@
-ent-RandomBoard-name = random board spawner
+ent-RandomBoard-name = случайный спаунер доски
 

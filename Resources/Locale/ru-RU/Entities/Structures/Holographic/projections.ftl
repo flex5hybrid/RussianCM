@@ -1,12 +1,12 @@
-ent-HolosignWetFloor-name = wet floor sign
-ent-HolosignWetFloor-desc = The words flicker as if they mean nothing.
+ent-HolosignWetFloor-name = знак мокрого пола
+ent-HolosignWetFloor-desc = Слова мерцают, как будто ничего не значат.
 
-ent-HoloFan-name = holofan
-ent-HoloFan-desc = A barrier of hard light that blocks air, but nothing else.
+ent-HoloFan-name = холофан
+ent-HoloFan-desc = Барьер жесткого света, блокирующий воздух, но не более того.
 
-ent-HolosignSecurity-name = holographic barrier
-ent-HolosignSecurity-desc = A barrier of hard light that blocks movement, but pretty weak.
+ent-HolosignSecurity-name = голографический барьер
+ent-HolosignSecurity-desc = Барьер жесткого света, блокирующий движение, но довольно слабый.
 
-ent-HolosignForcefield-name = holographic force field
-ent-HolosignForcefield-desc = A powerful temporal containment field that doesn't let anything through, not even a tesla or singularity.
+ent-HolosignForcefield-name = голографическое силовое поле
+ent-HolosignForcefield-desc = Мощное временное сдерживающее поле, не пропускающее ничего, даже Теслу или сингулярности.
 

@@ -1,4 +1,4 @@
-ent-RandomSpawner-name = Trash Spawner
+ent-RandomSpawner-name = Создатель мусора
 
-ent-RandomSpawner100-name = Trash Spawner
+ent-RandomSpawner100-name = Создатель мусора
 

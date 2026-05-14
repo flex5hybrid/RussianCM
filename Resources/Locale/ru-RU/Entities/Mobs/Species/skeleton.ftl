@@ -1,2 +1,2 @@
-ent-BaseMobSkeletonPerson-name = Urist McSkelly
+ent-BaseMobSkeletonPerson-name = Урист МакСкелли
 

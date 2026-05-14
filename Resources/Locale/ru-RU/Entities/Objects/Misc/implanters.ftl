@@ -1,73 +1,73 @@
-ent-BaseImplanter-name = implanter
+ent-BaseImplanter-name = имплантатор
 
-ent-Implanter-name = implanter
-ent-Implanter-desc = A disposable syringe exclusively designed for the injection and extraction of subdermal implants.
+ent-Implanter-name = имплантатор
+ent-Implanter-desc = Одноразовый шприц, предназначенный исключительно для введения и извлечения подкожных имплантатов.
 
-ent-BaseImplantOnlyImplanter-name = implanter
-ent-BaseImplantOnlyImplanter-desc = A disposable syringe exclusively designed for the injection of subdermal implants.
+ent-BaseImplantOnlyImplanter-name = имплантатор
+ent-BaseImplantOnlyImplanter-desc = Одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов.
 
-ent-BaseImplantOnlyImplanterSyndi-name = syndicate implanter
-ent-BaseImplantOnlyImplanterSyndi-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-BaseImplantOnlyImplanterSyndi-name = имплантатор синдиката
+ent-BaseImplantOnlyImplanterSyndi-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-SadTromboneImplanter-name = sad trombone implanter
-ent-SadTromboneImplanter-desc = A disposable syringe exclusively designed for the injection of subdermal implants.
+ent-SadTromboneImplanter-name = грустный имплантант тромбона
+ent-SadTromboneImplanter-desc = Одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов.
 
-ent-LightImplanter-name = light implanter
-ent-LightImplanter-desc = A disposable syringe exclusively designed for the injection of subdermal implants.
+ent-LightImplanter-name = легкий имплантатор
+ent-LightImplanter-desc = Одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов.
 
-ent-BikeHornImplanter-name = bike horn implanter
-ent-BikeHornImplanter-desc = A disposable syringe exclusively designed for the injection of subdermal implants.
+ent-BikeHornImplanter-name = имплантатор для велосипедного рожка
+ent-BikeHornImplanter-desc = Одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов.
 
-ent-TrackingImplanter-name = tracking implanter
-ent-TrackingImplanter-desc = A disposable syringe exclusively designed for the injection of subdermal implants.
+ent-TrackingImplanter-name = отслеживание имплантатора
+ent-TrackingImplanter-desc = Одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов.
 
-ent-StorageImplanter-name = storage implanter
-ent-StorageImplanter-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-StorageImplanter-name = имплантатор для хранения данных
+ent-StorageImplanter-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-FreedomImplanter-name = freedom implanter
-ent-FreedomImplanter-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-FreedomImplanter-name = имплантатор свободы
+ent-FreedomImplanter-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-RadioImplanter-name = syndicate radio implanter
-ent-RadioImplanter-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-RadioImplanter-name = радиоимплантер синдиката
+ent-RadioImplanter-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-UplinkImplanter-name = uplink implanter
-ent-UplinkImplanter-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-UplinkImplanter-name = имплантатор восходящей линии связи
+ent-UplinkImplanter-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-EmpImplanter-name = EMP implanter
-ent-EmpImplanter-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-EmpImplanter-name = ЭМИ-имплантер
+ent-EmpImplanter-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-ScramImplanter-name = scram implanter
-ent-ScramImplanter-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-ScramImplanter-name = скрам-имплантер
+ent-ScramImplanter-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-DnaScramblerImplanter-name = DNA scrambler implanter
-ent-DnaScramblerImplanter-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-DnaScramblerImplanter-name = Имплантер скремблера ДНК
+ent-DnaScramblerImplanter-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-ChameleonControllerImplanter-name = chameleon controller implanter
-ent-ChameleonControllerImplanter-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-ChameleonControllerImplanter-name = имплантатор контроллера-хамелеона
+ent-ChameleonControllerImplanter-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-MicroBombImplanter-name = micro-bomb implanter
-ent-MicroBombImplanter-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-MicroBombImplanter-name = имплантатор микробомбы
+ent-MicroBombImplanter-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-MacroBombImplanter-name = macro-bomb implanter
-ent-MacroBombImplanter-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-MacroBombImplanter-name = имплантатор макробомбы
+ent-MacroBombImplanter-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-DeathRattleImplanter-name = death rattle implanter
-ent-DeathRattleImplanter-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-DeathRattleImplanter-name = Имплантер предсмертного хрипа
+ent-DeathRattleImplanter-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-DeathAcidifierImplanter-name = death acidifier implanter
-ent-DeathAcidifierImplanter-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-DeathAcidifierImplanter-name = имплантатор подкислителя смерти
+ent-DeathAcidifierImplanter-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-FakeMindShieldImplanter-name = fake mindshield implanter
-ent-FakeMindShieldImplanter-desc = A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap or a rag to remove residual DNA after use!
+ent-FakeMindShieldImplanter-name = Имплантатор фальшивого ментального щита
+ent-FakeMindShieldImplanter-desc = Компактный одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов. Обязательно протирайте его мылом или тряпкой, чтобы удалить остатки ДНК после использования!
 
-ent-MindShieldImplanter-name = mindshield implanter
-ent-MindShieldImplanter-desc = A disposable syringe exclusively designed for the injection of subdermal implants.
+ent-MindShieldImplanter-name = имплантатор ментального щита
+ent-MindShieldImplanter-desc = Одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов.
 
-ent-RadioImplanterCentcomm-name = centcomm radio implanter
-ent-RadioImplanterCentcomm-desc = A disposable syringe exclusively designed for the injection of subdermal implants.
+ent-RadioImplanterCentcomm-name = радиоимплантер Centcomm
+ent-RadioImplanterCentcomm-desc = Одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов.
 
-ent-DeathRattleImplanterCentcomm-name = centcomm death rattle implanter
-ent-DeathRattleImplanterCentcomm-desc = A disposable syringe exclusively designed for the injection of subdermal implants.
+ent-DeathRattleImplanterCentcomm-name = Имплантер предсмертного хрипа Centcomm
+ent-DeathRattleImplanterCentcomm-desc = Одноразовый шприц, предназначенный исключительно для введения подкожных имплантатов.
 
-ent-ImplanterAdmeme-name = implanter
+ent-ImplanterAdmeme-name = имплантатор
 

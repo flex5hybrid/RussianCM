@@ -1,21 +1,21 @@
-ent-RipleyCentralElectronics-name = ripley central control module
-ent-RipleyCentralElectronics-desc = The electrical control center for the ripley mech.
+ent-RipleyCentralElectronics-name = центральный модуль управления рипли
+ent-RipleyCentralElectronics-desc = Электрический центр управления мехом Рипли.
 
-ent-RipleyPeripheralsElectronics-name = ripley peripherals control module
-ent-RipleyPeripheralsElectronics-desc = The electrical peripherals control for the ripley mech.
+ent-RipleyPeripheralsElectronics-name = модуль управления периферийными устройствами Ripley
+ent-RipleyPeripheralsElectronics-desc = Управление электрическими периферийными устройствами механизма Рипли.
 
-ent-HonkerCentralElectronics-name = H.O.N.K. central control module
-ent-HonkerCentralElectronics-desc = The electrical control center for the H.O.N.K. mech.
+ent-HonkerCentralElectronics-name = Х.О.Н.К. центральный модуль управления
+ent-HonkerCentralElectronics-desc = Центр электрического управления H.O.N.K. мех.
 
-ent-HonkerPeripheralsElectronics-name = H.O.N.K. peripherals control module
-ent-HonkerPeripheralsElectronics-desc = The electrical peripherals control for the H.O.N.K. mech.
+ent-HonkerPeripheralsElectronics-name = Х.О.Н.К. модуль управления периферийными устройствами
+ent-HonkerPeripheralsElectronics-desc = Управление электрической периферией H.O.N.K. мех.
 
-ent-HonkerTargetingElectronics-name = H.O.N.K. weapon control and targeting module
-ent-HonkerTargetingElectronics-desc = The electrical targeting control for the H.O.N.K. mech.
+ent-HonkerTargetingElectronics-name = Х.О.Н.К. модуль управления оружием и прицеливания
+ent-HonkerTargetingElectronics-desc = Электрическое управление наведением для H.O.N.K. мех.
 
-ent-HamtrCentralElectronics-name = HAMTR central control module
-ent-HamtrCentralElectronics-desc = The electrical control center for the HAMTR mech.
+ent-HamtrCentralElectronics-name = Центральный модуль управления HAMTR
+ent-HamtrCentralElectronics-desc = Электрический центр управления мех. HAMTR.
 
-ent-HamtrPeripheralsElectronics-name = HAMTR peripherals control module
-ent-HamtrPeripheralsElectronics-desc = The electrical peripherals control for the HAMTR mech.
+ent-HamtrPeripheralsElectronics-name = Модуль управления периферийными устройствами HAMTR
+ent-HamtrPeripheralsElectronics-desc = Управление электрическими периферийными устройствами для мех. HAMTR.
 

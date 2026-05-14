@@ -1,26 +1,26 @@
-ent-SolarPanelBasePhysSprite-name = solar panel
+ent-SolarPanelBasePhysSprite-name = солнечная панель
 
-ent-SolarPanelPlasma-name = solar panel plasma
-ent-SolarPanelPlasma-desc = A few sheets of plasma glass that generate electricity when hit by photons.
+ent-SolarPanelPlasma-name = плазма на солнечной панели
+ent-SolarPanelPlasma-desc = Несколько листов плазменного стекла, генерирующих электричество при попадании фотонов.
 
-ent-SolarPanelUranium-name = solar panel uranium
-ent-SolarPanelUranium-desc = A few sheets of uranium glass that generate electricity when hit by photons.
+ent-SolarPanelUranium-name = солнечная панель из урана
+ent-SolarPanelUranium-desc = Несколько листов уранового стекла, генерирующих электричество при попадании фотонов.
 
-ent-SolarPanel-name = solar panel
-ent-SolarPanel-desc = A few sheets of glass that generate electricity when hit by photons.
+ent-SolarPanel-name = солнечная панель
+ent-SolarPanel-desc = Несколько листов стекла, которые генерируют электричество при попадании фотонов.
 
-ent-SolarPanelBroken-name = solar panel
-ent-SolarPanelBroken-desc = A broken solar panel.
+ent-SolarPanelBroken-name = солнечная панель
+ent-SolarPanelBroken-desc = Сломанная солнечная панель.
 
-ent-SolarPanelPlasmaBroken-name = plasma solar panel
-ent-SolarPanelPlasmaBroken-desc = A broken plasma solar panel.
+ent-SolarPanelPlasmaBroken-name = плазменная солнечная панель
+ent-SolarPanelPlasmaBroken-desc = Сломанная плазменная солнечная панель.
 
-ent-SolarPanelUraniumBroken-name = uranium solar panel
-ent-SolarPanelUraniumBroken-desc = A broken uranium solar panel.
+ent-SolarPanelUraniumBroken-name = урановая солнечная панель
+ent-SolarPanelUraniumBroken-desc = Сломанная урановая солнечная панель.
 
-ent-SolarAssembly-name = solar assembly
-ent-SolarAssembly-desc = A solar assembly. Anchor to a wire to start building a solar panel.
+ent-SolarAssembly-name = солнечная сборка
+ent-SolarAssembly-desc = Солнечная сборка. Прикрепите якорь к проводу, чтобы начать сборку солнечной панели.
 
-ent-SolarTracker-name = solar tracker
-ent-SolarTracker-desc = A solar tracker. Tracks the nearest star.
+ent-SolarTracker-name = солнечный трекер
+ent-SolarTracker-desc = Солнечный трекер. Отслеживает ближайшую звезду.
 

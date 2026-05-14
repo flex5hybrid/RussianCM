@@ -2,3 +2,9 @@ roles-lesser-drone = Младший дрон
 roles-lesser-drone-description = Поддерживай улей, заполняя бреши в обороне, перемещая носителей, спасая старшие касты или бросаясь на врага, чтобы замедлить его продвижение.
 roles-lesser-carrier = Младший носитель
 roles-lesser-carrier-description = Поддерживай улей, откладывая яйца, перемещая носителей, спасая старшие касты или заражая врага на передовой, чтобы замедлить его атаку.
+
+# Missing entries synced from en-US
+
+roles-lesser-drone-name = Малый дрон
+
+roles-lesser-carrier-name = Меньший авианосец

@@ -1,9 +1,9 @@
-ent-LockerOldAISat-name = closet
-ent-LockerOldAISat-desc = It's a storage unit.
+ent-LockerOldAISat-name = шкаф
+ent-LockerOldAISat-desc = Это складское помещение.
 
-ent-LockerSyndicateShipGearBasic-name = armory closet
-ent-LockerSyndicateShipGearBasic-desc = It's a storage unit.
+ent-LockerSyndicateShipGearBasic-name = оружейный шкаф
+ent-LockerSyndicateShipGearBasic-desc = Это складское помещение.
 
-ent-LockerSyndicateShipGearBasicChameleonKit-name = armory closet
-ent-LockerSyndicateShipGearBasicChameleonKit-desc = It's a storage unit.
+ent-LockerSyndicateShipGearBasicChameleonKit-name = оружейный шкаф
+ent-LockerSyndicateShipGearBasicChameleonKit-desc = Это складское помещение.
 

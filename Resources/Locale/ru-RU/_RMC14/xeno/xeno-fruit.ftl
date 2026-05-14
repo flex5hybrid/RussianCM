@@ -77,3 +77,27 @@ rmc-xeno-fruit-ui-count = Посажено плодов: {$count}/{$max}
 # Чужой улей
 rmc-xeno-fruit-wrong-hive = Это не из нашего улья!
 rmc-xeno-fruit-feed-wrong-hive = {THE($target)} не из нашего улья!
+
+# Missing entries synced from en-US
+
+rmc-xeno-fruit-picked = Собран один из наших смоляных плодов.
+
+# Fruit effect pop-ups
+
+rmc-xeno-fruit-weed-boost = Мы чувствуем, что эти сорняки увеличивают время роста смолистых плодов на [bold]{$percent}%[/bold].
+
+# Effects
+
+rmc-xeno-fruit-consume-examine = Этот фрукт дает следующие эффекты при употреблении:
+
+rmc-xeno-fruit-instant-heal = Мгновенно восстанавливает здоровье [bold]{$amount}[/bold].
+
+rmc-xeno-fruit-regen-heal = Восстанавливает здоровье [bold]{$amount}[/bold] в секунду в течение {$time} секунд.
+
+rmc-xeno-fruit-shield = Предоставляет верхний щит, равный [bold]{$percent}%[/bold] от нашего максимального здоровья, вплоть до макс. [bold]{$max}[/bold]. Он затухает через {$duration} секунд, теряя {$decay} в секунду.
+
+rmc-xeno-fruit-cooldown = Уменьшает время восстановления способностей при следующем применении на [bold]{$amount}%[/bold] при ударе, максимум до [bold]{$max}%[/bold]. Этот эффект длится {$time} секунд.
+
+rmc-xeno-fruit-speed = Увеличивает нашу скорость на [bold]{$amount}[/bold] на {$time} секунд.
+
+rmc-xeno-fruit-regen-plasma = Регенерирует плазму [bold]{$amount}[/bold] в секунду в течение {$time} секунд.

@@ -1,23 +1,23 @@
-ent-ShuttleGunBase-name = shittle gun
+ent-ShuttleGunBase-name = дерьмовый пистолет
 
-ent-ShuttleGunSvalinnMachineGun-name = LSE-400c "Svalinn machine gun"
-ent-ShuttleGunSvalinnMachineGun-desc = Basic stationary laser unit. Effective against live targets and electronics. Uses regular power cells to fire, and has an extremely high rate of fire.
+ent-ShuttleGunSvalinnMachineGun-name = ЛСЭ-400с «Пулемет Свалинна»
+ent-ShuttleGunSvalinnMachineGun-desc = Базовая стационарная лазерная установка. Эффективен против живых целей и электроники. Для стрельбы использует обычные силовые элементы и имеет чрезвычайно высокую скорострельность.
 
-ent-ShuttleGunPerforator-name = LSE-1200c "Perforator"
-ent-ShuttleGunPerforator-desc = Advanced stationary laser unit. Annihilates electronics and is extremely dangerous to health! Uses the power cage to fire.
+ent-ShuttleGunPerforator-name = ЛСЭ-1200с «Перфоратор»
+ent-ShuttleGunPerforator-desc = Усовершенствованная стационарная лазерная установка. Уничтожает электронику и крайне опасен для здоровья! Использует силовую клетку для стрельбы.
 
-ent-ShuttleGunFriendship-name = EXP-320g "Friendship"
-ent-ShuttleGunFriendship-desc = A small stationary grenade launcher that holds 2 grenades.
+ent-ShuttleGunFriendship-name = ЭКСП-320г «Дружба»
+ent-ShuttleGunFriendship-desc = Небольшой стационарный гранатомет на 2 гранаты.
 
-ent-ShuttleGunDuster-name = EXP-2100g "Duster"
-ent-ShuttleGunDuster-desc = A powerful stationary grenade launcher. A cartridge is required for use.
+ent-ShuttleGunDuster-name = ЭКСП-2100г «Дастер»
+ent-ShuttleGunDuster-desc = Мощный стационарный гранатомет. Для использования необходим картридж.
 
-ent-ShuttleGunPirateCannon-name = pirate ship cannon
-ent-ShuttleGunPirateCannon-desc = Kaboom!
+ent-ShuttleGunPirateCannon-name = пушка пиратского корабля
+ent-ShuttleGunPirateCannon-desc = Бум!
 
-ent-ShuttleGunKinetic-name = PTK-800 "Matter Dematerializer"
-ent-ShuttleGunKinetic-desc = Salvage stationary mining turret. Gradually accumulates charges on its own, extremely effective for asteroid excavation.
+ent-ShuttleGunKinetic-name = ПТК-800 «Дематериализатор материи»
+ent-ShuttleGunKinetic-desc = Спасенная стационарная шахтная турель. Постепенно накапливает заряды самостоятельно, чрезвычайно эффективен при раскопках астероидов.
 
-ent-ShuttleGunKineticOld-name = exomorphic dematerializer
-ent-ShuttleGunKineticOld-desc = An ancient ship gun, utilizing biomechanical systems to store and release energy. While unique in its design, it has been rendered obsolete due to its inferior charging and firing speed compared to mechanical constructions.
+ent-ShuttleGunKineticOld-name = экзоморфный дематериализатор
+ent-ShuttleGunKineticOld-desc = Древняя корабельная пушка, использующая биомеханические системы для хранения и высвобождения энергии. Несмотря на уникальность своей конструкции, он устарел из-за меньшей скорости зарядки и стрельбы по сравнению с механическими конструкциями.
 

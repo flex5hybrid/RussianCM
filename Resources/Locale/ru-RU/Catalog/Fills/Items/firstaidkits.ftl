@@ -1,18 +1,18 @@
-ent-MedkitFilled-name = lathe-recipe-Medkit-name
+ent-MedkitFilled-name = название-рецепта-токарного аптечки
 
-ent-MedkitBurnFilled-name = lathe-recipe-MedkitBurn-name
+ent-MedkitBurnFilled-name = токарный рецепт-аптечкаBurn-имя
 
-ent-MedkitBruteFilled-name = lathe-recipe-MedkitBrute-name
+ent-MedkitBruteFilled-name = токарный рецепт-аптечкаИмя-грубия
 
-ent-MedkitToxinFilled-name = lathe-recipe-MedkitToxin-name
+ent-MedkitToxinFilled-name = токарный-рецепт-АптечкаНазвание-токсина
 
-ent-MedkitOxygenFilled-name = lathe-recipe-MedkitO2-name
+ent-MedkitOxygenFilled-name = токарный рецепт-название аптечкиO2
 
-ent-MedkitRadiationFilled-name = lathe-recipe-MedkitRadiation-name
+ent-MedkitRadiationFilled-name = токарный рецепт-аптечкаимя-радиации
 
-ent-MedkitAdvancedFilled-name = lathe-recipe-MedkitAdvanced-name
+ent-MedkitAdvancedFilled-name = токарный рецепт-аптечкаРасширенное-имя
 
-ent-MedkitCombatFilled-name = lathe-recipe-MedkitCombat-name
+ent-MedkitCombatFilled-name = токарный-рецепт-АптечкаБоевое-имя
 
-ent-StimkitFilled-name = lathe-recipe-Medkit-name
+ent-StimkitFilled-name = название-рецепта-токарного аптечки
 

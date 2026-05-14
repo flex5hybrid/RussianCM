@@ -1,4 +1,4 @@
-ent-FTLPoint-name = FTL point
+ent-FTLPoint-name = сверхсветовая точка
 
-ent-FTLExclusion-name = FTL exclusion point
+ent-FTLExclusion-name = Точка исключения сверхсветовой скорости
 

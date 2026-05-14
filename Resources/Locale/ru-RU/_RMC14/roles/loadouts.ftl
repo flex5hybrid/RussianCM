@@ -31,3 +31,7 @@ rmc-loadout-group-synthetic-headwear = Синтетические головны
 rmc-loadout-group-synthetic-suits = Синтетическая верхняя одежда
 
 loadout-group-points-insufficient = У вас недостаточно очков!
+
+# Missing entries synced from en-US
+
+rmc-loadout-group-govfordoctor-uniform = Скрабы

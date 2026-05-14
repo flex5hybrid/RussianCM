@@ -70,3 +70,11 @@ steal-target-groups-animal-morty = Морти
 steal-target-groups-animal-renault = Алиса
 steal-target-groups-animal-shiva = Шива
 steal-target-groups-animal-tropico = Тропико
+
+# Missing entries synced from en-US
+
+steal-target-groups-weapon-energy-shot-gun = энергетический дробовик
+
+# Thief Collection
+
+steal-target-groups-clothing-eyes-hud-beer = пивные очки

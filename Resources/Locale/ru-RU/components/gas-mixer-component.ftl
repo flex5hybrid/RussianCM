@@ -7,3 +7,11 @@ comp-gas-mixer-ui-mixer-set = Установить
 comp-gas-mixer-ui-mixer-max = Максимум
 
 comp-gas-mixer-ui-needs-anchor = Сначала закрепите его!
+
+# Missing entries synced from en-US
+
+comp-gas-mixer-ui-mixer-status = Статус:
+
+comp-gas-mixer-ui-status-enabled = On
+
+comp-gas-mixer-ui-status-disabled = Выкл.

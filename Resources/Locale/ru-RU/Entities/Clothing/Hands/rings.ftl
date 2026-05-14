@@ -1,18 +1,18 @@
-ent-GoldRing-name = gold ring
-ent-GoldRing-desc = A precious ring.
+ent-GoldRing-name = золотое кольцо
+ent-GoldRing-desc = Драгоценное кольцо.
 
-ent-SilverRing-name = silver ring
-ent-SilverRing-desc = Looks slightly less valuable than a gold one.
+ent-SilverRing-name = серебряное кольцо
+ent-SilverRing-desc = Выглядит немного менее ценно, чем золотой.
 
-ent-GoldRingDiamond-name = gold diamond ring
-ent-GoldRingDiamond-desc = Made from ethically mined space diamonds.
+ent-GoldRingDiamond-name = золотое кольцо с бриллиантом
+ent-GoldRingDiamond-desc = Изготовлен из космических алмазов, добытых этическим путем.
 
-ent-SilverRingDiamond-name = silver diamond ring
-ent-SilverRingDiamond-desc = Made from ethically mined space diamonds.
+ent-SilverRingDiamond-name = серебряное кольцо с бриллиантом
+ent-SilverRingDiamond-desc = Изготовлен из космических алмазов, добытых этическим путем.
 
-ent-GoldRingGem-name = gold gem ring
-ent-GoldRingGem-desc = Shiny and valuable!
+ent-GoldRingGem-name = золотое кольцо с драгоценным камнем
+ent-GoldRingGem-desc = Блестящий и ценный!
 
-ent-SilverRingGem-name = silver gem ring
-ent-SilverRingGem-desc = Shiny and not quite as valuable!
+ent-SilverRingGem-name = серебряное кольцо с драгоценным камнем
+ent-SilverRingGem-desc = Блестящий и не такой ценный!
 

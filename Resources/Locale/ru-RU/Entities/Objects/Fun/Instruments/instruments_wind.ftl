@@ -1,27 +1,27 @@
-ent-SaxophoneInstrument-name = saxophone
-ent-SaxophoneInstrument-desc = An instrument. You could probably grind this into raw jazz.
+ent-SaxophoneInstrument-name = саксофон
+ent-SaxophoneInstrument-desc = Инструмент. Вероятно, вы могли бы превратить это в сырой джаз.
 
-ent-HarmonicaInstrument-name = harmonica
-ent-HarmonicaInstrument-desc = That's an instrument.
+ent-HarmonicaInstrument-name = губная гармошка
+ent-HarmonicaInstrument-desc = Это инструмент.
 
-ent-ClarinetInstrument-name = clarinet
-ent-ClarinetInstrument-desc = Skweedward tintacklays.
+ent-ClarinetInstrument-name = кларнет
+ent-ClarinetInstrument-desc = Сквидвард тинтаклей.
 
-ent-FluteInstrument-name = flute
-ent-FluteInstrument-desc = Reaching new heights of being horrifyingly shrill.
+ent-FluteInstrument-name = флейта
+ent-FluteInstrument-desc = Достижение новых высот ужасающе пронзительного поведения.
 
-ent-RecorderInstrument-name = recorder
-ent-RecorderInstrument-desc = Comes in various colors of fashionable plastic!
+ent-RecorderInstrument-name = диктофон
+ent-RecorderInstrument-desc = Выпускается в различных цветах из модного пластика!
 
-ent-PanFluteInstrument-name = pan flute
-ent-PanFluteInstrument-desc = Perfect for luring ancient mythical beings to dance with you.
+ent-PanFluteInstrument-name = пан-флейта
+ent-PanFluteInstrument-desc = Идеально подходит для того, чтобы заманить древних мифических существ танцевать с вами.
 
-ent-OcarinaInstrument-name = ocarina
-ent-OcarinaInstrument-desc = Good for playing lullabies.
+ent-OcarinaInstrument-name = окарина
+ent-OcarinaInstrument-desc = Хорошо подходит для воспроизведения колыбельных.
 
-ent-BagpipeInstrument-name = bagpipe
-ent-BagpipeInstrument-desc = Pairs nicely with a kilt.
+ent-BagpipeInstrument-name = волынка
+ent-BagpipeInstrument-desc = Прекрасно сочетается с килтом.
 
-ent-BaseWoodwindInstrument-name = item
-ent-BaseWoodwindInstrument-desc = That's an instrument.
+ent-BaseWoodwindInstrument-name = элемент
+ent-BaseWoodwindInstrument-desc = Это инструмент.
 

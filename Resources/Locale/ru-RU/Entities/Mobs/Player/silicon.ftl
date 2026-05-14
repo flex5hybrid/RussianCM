@@ -1,44 +1,44 @@
-ent-AiHeld-desc = Components added / removed from an entity that gets inserted into an AI core.
+ent-AiHeld-desc = Компоненты, добавленные/удаленные из объекта, который вставляется в ядро ​​ИИ.
 
-ent-AiHeldIntellicard-desc = Components added / removed from an entity that gets inserted into an Intellicard.
+ent-AiHeldIntellicard-desc = Компоненты, добавленные или удаленные из объекта, который вставляется в Intellicard.
 
-ent-AiHolder-desc = Handles AI interactions across holocards + AI cores
+ent-AiHolder-desc = Обрабатывает взаимодействие ИИ между голокартами и ядрами ИИ.
 
-ent-Intellicard-name = intellicard
-ent-Intellicard-desc = A storage device for AIs.
+ent-Intellicard-name = интеллектуальная карта
+ent-Intellicard-desc = Устройство хранения данных для ИИ.
 
-ent-PlayerStationAiEmpty-name = AI Core
-ent-PlayerStationAiEmpty-desc = The latest in Artificial Intelligences.
+ent-PlayerStationAiEmpty-name = Ядро ИИ
+ent-PlayerStationAiEmpty-desc = Новинки в области искусственного интеллекта.
 
-ent-StationAiHolo-name = AI eye
-ent-StationAiHolo-desc = The AI's viewer.
+ent-StationAiHolo-name = ИИ глаз
+ent-StationAiHolo-desc = Зритель ИИ.
 
-ent-StationAiHoloLocal-name = AI hologram
-ent-StationAiHoloLocal-desc = A holographic representation of an AI.
+ent-StationAiHoloLocal-name = ИИ-голограмма
+ent-StationAiHoloLocal-desc = Голографическое представление ИИ.
 
-ent-PlayerBorgSyndicateInvasionGhostRoleSpawner-name = syndicate invasion borg spawner
+ent-PlayerBorgSyndicateInvasionGhostRoleSpawner-name = спаунер боргов вторжения синдиката
 
-ent-PlayerStationAi-name = AI Core
-ent-PlayerStationAi-desc = The latest in Artificial Intelligences.
+ent-PlayerStationAi-name = Ядро ИИ
+ent-PlayerStationAi-desc = Новинки в области искусственного интеллекта.
 
-ent-PlayerBorgBattery-name = cyborg
-ent-PlayerBorgBattery-desc = A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
+ent-PlayerBorgBattery-name = киборг
+ent-PlayerBorgBattery-desc = Гибрид человека и машины, помогающий в работе станции. Им нравится, когда их просят излагать свои законы снова и снова.
 
-ent-PlayerBorgSyndicateAssaultBattery-name = syndicate assault cyborg
-ent-PlayerBorgSyndicateAssaultBattery-desc = A lean, mean killing machine with access to a variety of deadly modules.
+ent-PlayerBorgSyndicateAssaultBattery-name = штурмовой киборг синдиката
+ent-PlayerBorgSyndicateAssaultBattery-desc = Простая и жестокая машина для убийств с доступом к множеству смертоносных модулей.
 
-ent-PlayerBorgSyndicateAssaultGhostRole-name = syndicate assault cyborg
-ent-PlayerBorgSyndicateAssaultGhostRole-desc = A lean, mean killing machine with access to a variety of deadly modules.
+ent-PlayerBorgSyndicateAssaultGhostRole-name = штурмовой киборг синдиката
+ent-PlayerBorgSyndicateAssaultGhostRole-desc = Простая и жестокая машина для убийств с доступом к множеству смертоносных модулей.
 
-ent-PlayerBorgSyndicateSaboteurBattery-name = syndicate saboteur cyborg
-ent-PlayerBorgSyndicateSaboteurBattery-desc = A streamlined engineering cyborg, equipped with covert modules. Its chameleon projector lets it disguise itself as a Nanotrasen cyborg.
+ent-PlayerBorgSyndicateSaboteurBattery-name = диверсант синдиката киборг
+ent-PlayerBorgSyndicateSaboteurBattery-desc = Обтекаемый инженерный киборг, оснащенный скрытными модулями. Его проектор-хамелеон позволяет ему маскироваться под киборга Nanotrasen.
 
-ent-PlayerBorgSyndicateSaboteurGhostRole-name = syndicate saboteur cyborg
-ent-PlayerBorgSyndicateSaboteurGhostRole-desc = A streamlined engineering cyborg, equipped with covert modules. Its chameleon projector lets it disguise itself as a Nanotrasen cyborg.
+ent-PlayerBorgSyndicateSaboteurGhostRole-name = диверсант синдиката киборг
+ent-PlayerBorgSyndicateSaboteurGhostRole-desc = Обтекаемый инженерный киборг, оснащенный скрытными модулями. Его проектор-хамелеон позволяет ему маскироваться под киборга Nanotrasen.
 
-ent-PlayerBorgDerelict-name = derelict cyborg
-ent-PlayerBorgDerelict-desc = A man-machine hybrid that assists in station activity. This one is in a state of great disrepair.
+ent-PlayerBorgDerelict-name = заброшенный киборг
+ent-PlayerBorgDerelict-desc = Гибрид человека и машины, помогающий в работе станции. Этот находится в очень плачевном состоянии.
 
-ent-PlayerBorgDerelictGhostRole-name = derelict cyborg
-ent-PlayerBorgDerelictGhostRole-desc = A man-machine hybrid that assists in station activity. This one is in a state of great disrepair.
+ent-PlayerBorgDerelictGhostRole-name = заброшенный киборг
+ent-PlayerBorgDerelictGhostRole-desc = Гибрид человека и машины, помогающий в работе станции. Этот находится в очень плачевном состоянии.
 

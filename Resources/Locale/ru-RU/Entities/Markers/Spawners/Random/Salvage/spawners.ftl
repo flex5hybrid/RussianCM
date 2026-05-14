@@ -1,30 +1,30 @@
-ent-SalvageSpawnerScrapCommon-name = Salvage Scrap Spawner
+ent-SalvageSpawnerScrapCommon-name = Производитель металлолома
 
-ent-SalvageSpawnerScrapValuable-name = Salvage Scrap Spawner
+ent-SalvageSpawnerScrapValuable-name = Производитель металлолома
 
-ent-SalvageSpawnerTreasure-name = Salvage Treasure Spawner
+ent-SalvageSpawnerTreasure-name = Создатель сокровищ
 
-ent-SalvageSpawnerTreasureValuable-name = Salvage Treasure Spawner
+ent-SalvageSpawnerTreasureValuable-name = Создатель сокровищ
 
-ent-SalvageSpawnerEquipment-name = Salvage Equipment Spawner
+ent-SalvageSpawnerEquipment-name = Производитель аварийного оборудования
 
-ent-SalvageSpawnerEquipmentValuable-name = Salvage Equipment Spawner
+ent-SalvageSpawnerEquipmentValuable-name = Производитель аварийного оборудования
 
-ent-SalvageCanisterSpawner-name = Salvage Canister Spawner
+ent-SalvageCanisterSpawner-name = Создатель мусорных канистр
 
-ent-SalvageSpawnerMobMagnet-name = Salvage Magnet Mob Spawner
+ent-SalvageSpawnerMobMagnet-name = Спасательный магнит, создатель мобов
 
-ent-SalvageSpawnerStructuresVarious-name = Space Debris Structure Spawner
+ent-SalvageSpawnerStructuresVarious-name = Создатель структуры космического мусора
 
-ent-SalvageSpawnerMobShark-name = Salvage Sharkminnow Spawner
+ent-SalvageSpawnerMobShark-name = Спасенный генератор акул-минноу
 
-ent-SalvageSpawnerMobMiningAsteroid-name = Mining Asteroid Mob Spawner
+ent-SalvageSpawnerMobMiningAsteroid-name = Создатель мобов на астероидах
 
-ent-SalvageSpawnerScrapCommon75-name = Salvage Scrap Spawner
+ent-SalvageSpawnerScrapCommon75-name = Производитель металлолома
 
-ent-SalvageSpawnerScrapValuable75-name = Salvage Scrap Spawner
+ent-SalvageSpawnerScrapValuable75-name = Производитель металлолома
 
-ent-SalvageSpawnerMobMagnet75-name = Salvage Magnet Mob Spawner
+ent-SalvageSpawnerMobMagnet75-name = Спасательный магнит, создатель мобов
 
-ent-SalvageSpawnerMobMagnet100-name = Salvage Magnet Mob Spawner
+ent-SalvageSpawnerMobMagnet100-name = Спасательный магнит, создатель мобов
 

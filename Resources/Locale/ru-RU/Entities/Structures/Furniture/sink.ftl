@@ -1,15 +1,15 @@
-ent-SinkEmpty-name = sink
-ent-SinkEmpty-desc = The faucets have been tightened to the maximum possible torque but are still known to drip.
+ent-SinkEmpty-name = тонуть
+ent-SinkEmpty-desc = Краны были затянуты с максимально возможным моментом, но известно, что они все еще капают.
 
-ent-Sink-name = sink
-ent-Sink-desc = The faucets have been tightened to the maximum possible torque but are still known to drip.
+ent-Sink-name = тонуть
+ent-Sink-desc = Краны были затянуты с максимально возможным моментом, но известно, что они все еще капают.
 
-ent-SinkWide-name = wide sink
-ent-SinkWide-desc = The faucets have been tightened to the maximum possible torque but are still known to drip.
+ent-SinkWide-name = широкая раковина
+ent-SinkWide-desc = Краны были затянуты с максимально возможным моментом, но известно, что они все еще капают.
 
-ent-SinkStemless-name = sink
-ent-SinkStemless-desc = The faucets have been tightened to the maximum possible torque but are still known to drip.
+ent-SinkStemless-name = тонуть
+ent-SinkStemless-desc = Краны были затянуты с максимально возможным моментом, но известно, что они все еще капают.
 
-ent-SinkStemlessWater-name = sink
-ent-SinkStemlessWater-desc = The faucets have been tightened to the maximum possible torque but are still known to drip.
+ent-SinkStemlessWater-name = тонуть
+ent-SinkStemlessWater-desc = Краны были затянуты с максимально возможным моментом, но известно, что они все еще капают.
 

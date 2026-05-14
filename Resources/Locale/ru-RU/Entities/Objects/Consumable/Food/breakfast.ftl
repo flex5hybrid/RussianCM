@@ -1,9 +1,9 @@
-ent-FoodBreakfastBase-name = item
-ent-FoodBreakfastBase-desc = A full breakfast, rise and shine!
+ent-FoodBreakfastBase-name = элемент
+ent-FoodBreakfastBase-desc = Полноценный завтрак, встаньте и сияйте!
 
-ent-FoodBreakfastAmerican-name = full american breakfast
-ent-FoodBreakfastAmerican-desc = A huge plate of protein and carbs, more likely to put you back in bed than get you out of it. Oh, what fresh hell is this?
+ent-FoodBreakfastAmerican-name = полный американский завтрак
+ent-FoodBreakfastAmerican-desc = Огромная тарелка белков и углеводов скорее вернет вас в постель, чем вытащит из нее. Ох, что это за свежий ад?
 
-ent-FoodBreakfastEnglish-name = full english breakfast
-ent-FoodBreakfastEnglish-desc = A huge plate of protein and carbs, more likely to put you back in bed than get you out of it. Don't mention the war!
+ent-FoodBreakfastEnglish-name = полный английский завтрак
+ent-FoodBreakfastEnglish-desc = Огромная тарелка белков и углеводов скорее вернет вас в постель, чем вытащит из нее. Не упоминайте войну!
 

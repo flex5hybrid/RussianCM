@@ -1,35 +1,35 @@
-﻿reagent-name-rmc-cherry-jelly = cherry jelly
-reagent-desc-rmc-cherry-jelly = Sweet jelly made from the cherry fruit.
+﻿reagent-name-rmc-cherry-jelly = вишневое желе
+reagent-desc-rmc-cherry-jelly = Сладкое желе из плодов вишни.
 
-reagent-name-rmc-peanut-butter = peanut butter
-reagent-desc-rmc-peanut-butter = Creamy butter made from peanuts.
+reagent-name-rmc-peanut-butter = арахисовое масло
+reagent-desc-rmc-peanut-butter = Сливочное масло из арахиса.
 
-reagent-name-rmc-batter = Batter
-reagent-desc-rmc-batter = A mixture of flour and other elements, such as salt, egg, and milk.
+reagent-name-rmc-batter = тесто
+reagent-desc-rmc-batter = Смесь муки и других элементов, таких как соль, яйцо и молоко.
 
-reagent-name-rmc-sprinkles = Sprinkles
-reagent-desc-rmc-sprinkles = Multi-colored little bits of sugar, commonly found on donuts. Loved by cops.
+reagent-name-rmc-sprinkles = окропляет
+reagent-desc-rmc-sprinkles = Разноцветные кусочки сахара, которые обычно можно найти в пончиках. Любимый полицейскими.
 
-reagent-name-rmc-milkshake = milkshake
-reagent-desc-rmc-milkshake = Just milk and ice cream. So simple.
+reagent-name-rmc-milkshake = молочный коктейль
+reagent-desc-rmc-milkshake = Только молоко и мороженое. Так просто.
 
-reagent-name-mango-agua-fresca = mango agua fresca
-reagent-desc-mango-agua-fresca = Perfect for any summer afternoon.
+reagent-name-mango-agua-fresca = манго агуа фреска
+reagent-desc-mango-agua-fresca = Идеально подходит для любого летнего дня.
 
-reagent-name-mango-cooler = mango cooler
-reagent-desc-mango-cooler = A midsummer night's drink.
+reagent-name-mango-cooler = холодильник для манго
+reagent-desc-mango-cooler = Напиток в летнюю ночь.
 
-reagent-name-gunfire = gunfire
-reagent-desc-gunfire = Raise a glass to the brave!
+reagent-name-gunfire = стрельба
+reagent-desc-gunfire = Поднимите бокал за смелых!
 
-reagent-name-sidecar = sidecar
-reagent-desc-sidecar = A drink fit for an army captain.
+reagent-name-sidecar = коляска
+reagent-desc-sidecar = Напиток, достойный армейского капитана.
 
-reagent-name-grapesoda = grape soda
-reagent-desc-grapesoda = Grapes made into a fine drank.
+reagent-name-grapesoda = виноградная сода
+reagent-desc-grapesoda = Из винограда делают прекрасный напиток.
 
-reagent-name-ice-cafe = ice café
-reagent-desc-ice-cafe = A coffee slushy with a wonderful aroma.
+reagent-name-ice-cafe = ледяное кафе
+reagent-desc-ice-cafe = Кофейный напиток с чудесным ароматом.
 
-reagent-name-swiss-lemonade = swiss lemonade
-reagent-desc-swiss-lemonade = Funny enough, it's not actually swiss, or have any lemons!
+reagent-name-swiss-lemonade = швейцарский лимонад
+reagent-desc-swiss-lemonade = Забавно, но на самом деле это не швейцарское блюдо и в нем нет лимонов!

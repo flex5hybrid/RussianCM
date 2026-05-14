@@ -1,2 +1,2 @@
-ent-AU14SpawnPointopforSectionSergeant-name = Spawn Point opfor Section Sergeant
-ent-AU14SpawnPointopforSectionSergeant-desc = A RMC14 job spawner. Used for roundstart and late joins.
+ent-AU14SpawnPointopforSectionSergeant-name = Точка появления для сержанта отделения
+ent-AU14SpawnPointopforSectionSergeant-desc = Создатель заданий RMC14. Используется для начала раунда и позднего соединения.

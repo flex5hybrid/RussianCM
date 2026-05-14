@@ -1,28 +1,28 @@
-ent-BaseAntagSpawner-name = ghost role spawn point
+ent-BaseAntagSpawner-name = точка появления роли призрака
 
-ent-SpawnPointGhostRatKing-name = ghost role spawn point
+ent-SpawnPointGhostRatKing-name = точка появления роли призрака
 
-ent-SpawnPointGhostRemilia-name = ghost role spawn point
+ent-SpawnPointGhostRemilia-name = точка появления роли призрака
 
-ent-SpawnPointGhostCerberus-name = ghost role spawn point
+ent-SpawnPointGhostCerberus-name = точка появления роли призрака
 
-ent-SpawnPointGhostNukeOperative-name = ghost role spawn point
+ent-SpawnPointGhostNukeOperative-name = точка появления роли призрака
 
-ent-SpawnPointGhostWizard-name = ghost role spawn point
+ent-SpawnPointGhostWizard-name = точка появления роли призрака
 
-ent-SpawnPointLoneNukeOperative-name = ghost role spawn point
+ent-SpawnPointLoneNukeOperative-name = точка появления роли призрака
 
-ent-SpawnPointNukeopsCommander-name = ghost role spawn point
+ent-SpawnPointNukeopsCommander-name = точка появления роли призрака
 
-ent-SpawnPointNukeopsMedic-name = ghost role spawn point
+ent-SpawnPointNukeopsMedic-name = точка появления роли призрака
 
-ent-SpawnPointNukeopsOperative-name = ghost role spawn point
+ent-SpawnPointNukeopsOperative-name = точка появления роли призрака
 
-ent-SpawnPointGhostDragon-name = ghost role spawn point
+ent-SpawnPointGhostDragon-name = точка появления роли призрака
 
-ent-SpawnPointGhostSpaceNinja-name = ghost role spawn point
+ent-SpawnPointGhostSpaceNinja-name = точка появления роли призрака
 
-ent-SpawnPointGhostParadoxClone-name = ghost role spawn point
+ent-SpawnPointGhostParadoxClone-name = точка появления роли призрака
 
-ent-SpawnPointGhostDerelictCyborg-name = ghost role spawn point
+ent-SpawnPointGhostDerelictCyborg-name = точка появления роли призрака
 

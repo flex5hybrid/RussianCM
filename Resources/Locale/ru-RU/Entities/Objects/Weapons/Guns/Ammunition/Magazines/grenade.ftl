@@ -1,14 +1,14 @@
-ent-BaseMagazineGrenade-name = grenade cartridge
+ent-BaseMagazineGrenade-name = гранатный патрон
 
-ent-MagazineGrenadeEmpty-name = grenade cartridge
+ent-MagazineGrenadeEmpty-name = гранатный патрон
 
-ent-MagazineGrenadeFrag-name = frag grenade cartridge
+ent-MagazineGrenadeFrag-name = осколочный гранатный патрон
 
-ent-MagazineGrenadeEMP-name = EMP grenade cartridge
+ent-MagazineGrenadeEMP-name = патрон для ЭМИ-гранаты
 
-ent-MagazineGrenadeFlash-name = flash grenade cartridge
+ent-MagazineGrenadeFlash-name = патрон для светошумовой гранаты
 
-ent-MagazineGrenadeBlast-name = blast grenade cartridge
+ent-MagazineGrenadeBlast-name = патрон для взрывной гранаты
 
-ent-MagazineGrenadeBaton-name = baton grenade cartridge
+ent-MagazineGrenadeBaton-name = дубинка граната патрон
 

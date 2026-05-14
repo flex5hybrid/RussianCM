@@ -1,39 +1,39 @@
-ent-MobSpaceBasic-name = basic
-ent-MobSpaceBasic-desc = It looks friendly. Why don't you give it a hug?
+ent-MobSpaceBasic-name = базовый
+ent-MobSpaceBasic-desc = Выглядит дружелюбно. Почему бы тебе не обнять его?
 
-ent-MobBearSpace-name = space bear
-ent-MobBearSpace-desc = It looks friendly. Why don't you give it a hug?
+ent-MobBearSpace-name = космический медведь
+ent-MobBearSpace-desc = Выглядит дружелюбно. Почему бы тебе не обнять его?
 
-ent-MobKangarooSpace-name = space kangaroo
-ent-MobKangarooSpace-desc = It looks friendly. Why don't you give it a hug?
+ent-MobKangarooSpace-name = космический кенгуру
+ent-MobKangarooSpace-desc = Выглядит дружелюбно. Почему бы тебе не обнять его?
 
-ent-MobSpiderSpace-name = space spider
-ent-MobSpiderSpace-desc = It's so glowing, it looks dangerous.
+ent-MobSpiderSpace-name = космический паук
+ent-MobSpiderSpace-desc = Он настолько светится, что выглядит опасным.
 
-ent-MobCobraSpace-name = space cobra
-ent-MobCobraSpace-desc = Long fangs and a glowing hood, and the alluring look begs to come closer.
+ent-MobCobraSpace-name = космическая кобра
+ent-MobCobraSpace-desc = Длинные клыки и светящийся капюшон, а манящий взгляд так и просит подойти поближе.
 
-ent-MobSnail-name = snail
-ent-MobSnail-desc = Revolting unless you're french.
+ent-MobSnail-name = улитка
+ent-MobSnail-desc = Отвратительно, если ты не француз.
 
-ent-MobSnailMoth-name = Snoth
-ent-MobSnailMoth-desc = Revolting unless you're french.
+ent-MobSnailMoth-name = Снот
+ent-MobSnailMoth-desc = Отвратительно, если ты не француз.
 
-ent-MobBearSpaceSalvage-name = space bear
-ent-MobBearSpaceSalvage-desc = It looks friendly. Why don't you give it a hug?
+ent-MobBearSpaceSalvage-name = космический медведь
+ent-MobBearSpaceSalvage-desc = Выглядит дружелюбно. Почему бы тебе не обнять его?
 
-ent-MobKangarooSpaceSalvage-name = space kangaroo
-ent-MobKangarooSpaceSalvage-desc = It looks friendly. Why don't you give it a hug?
+ent-MobKangarooSpaceSalvage-name = космический кенгуру
+ent-MobKangarooSpaceSalvage-desc = Выглядит дружелюбно. Почему бы тебе не обнять его?
 
-ent-MobSpiderSpaceSalvage-name = space spider
-ent-MobSpiderSpaceSalvage-desc = It's so glowing, it looks dangerous.
+ent-MobSpiderSpaceSalvage-name = космический паук
+ent-MobSpiderSpaceSalvage-desc = Он настолько светится, что выглядит опасным.
 
-ent-MobCobraSpaceSalvage-name = space cobra
-ent-MobCobraSpaceSalvage-desc = Long fangs and a glowing hood, and the alluring look begs to come closer.
+ent-MobCobraSpaceSalvage-name = космическая кобра
+ent-MobCobraSpaceSalvage-desc = Длинные клыки и светящийся капюшон, а манящий взгляд так и просит подойти поближе.
 
-ent-MobSnailInstantDeath-name = snail
-ent-MobSnailInstantDeath-desc = Revolting unless you're french.
+ent-MobSnailInstantDeath-name = улитка
+ent-MobSnailInstantDeath-desc = Отвратительно, если ты не француз.
 
-ent-MobSnailSpeed-name = snail
-ent-MobSnailSpeed-desc = Revolting unless you're french.
+ent-MobSnailSpeed-name = улитка
+ent-MobSnailSpeed-desc = Отвратительно, если ты не француз.
 

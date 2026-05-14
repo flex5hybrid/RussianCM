@@ -1,6 +1,6 @@
-ent-BlastDoorCentralCommand-name = shutter
-ent-BlastDoorCentralCommand-desc = One shudders to think about what might be behind this shutter.
+ent-BlastDoorCentralCommand-name = затвор
+ent-BlastDoorCentralCommand-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 
-ent-ShuttersWindowCentralCommand-name = shutter
-ent-ShuttersWindowCentralCommand-desc = One shudders to think about what might be behind this shutter.
+ent-ShuttersWindowCentralCommand-name = затвор
+ent-ShuttersWindowCentralCommand-desc = Страшно подумать о том, что может скрываться за этой ставеню.
 

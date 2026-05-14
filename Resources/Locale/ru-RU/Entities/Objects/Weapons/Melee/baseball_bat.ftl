@@ -1,9 +1,9 @@
-ent-BaseBallBat-name = baseball bat
-ent-BaseBallBat-desc = A robust baseball bat.
+ent-BaseBallBat-name = бейсбольная бита
+ent-BaseBallBat-desc = Прочная бейсбольная бита.
 
-ent-IncompleteBaseBallBat-name = incomplete baseball bat
-ent-IncompleteBaseBallBat-desc = A few planks of wood stuck together.
+ent-IncompleteBaseBallBat-name = неполная бейсбольная бита
+ent-IncompleteBaseBallBat-desc = Несколько деревянных досок склеились.
 
-ent-WeaponMeleeKnockbackStick-name = knockback stick
-ent-WeaponMeleeKnockbackStick-desc = And then he spleefed all over.
+ent-WeaponMeleeKnockbackStick-name = отбрасывающая палка
+ent-WeaponMeleeKnockbackStick-desc = А потом он весь разозлился.
 

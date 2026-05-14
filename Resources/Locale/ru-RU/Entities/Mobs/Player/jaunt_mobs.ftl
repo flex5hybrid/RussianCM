@@ -1,9 +1,9 @@
-ent-BaseMobJaunt-name = jaunt
-ent-BaseMobJaunt-desc = Faint traces of a humanoid figure linger here
+ent-BaseMobJaunt-name = прогулка
+ent-BaseMobJaunt-desc = Здесь сохранились слабые следы гуманоидной фигуры.
 
-ent-EtherealJaunt-name = jaunt
-ent-EtherealJaunt-desc = Faint traces of a humanoid figure linger here
+ent-EtherealJaunt-name = прогулка
+ent-EtherealJaunt-desc = Здесь сохранились слабые следы гуманоидной фигуры.
 
-ent-DesynchronizedPocket-name = desynchronized pocket
-ent-DesynchronizedPocket-desc = A pocket in spacetime, keeping the user a fraction of a second in the future.
+ent-DesynchronizedPocket-name = десинхронизированный карман
+ent-DesynchronizedPocket-desc = Карман в пространстве-времени, удерживающий пользователя на долю секунды в будущем.
 

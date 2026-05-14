@@ -1,109 +1,109 @@
-ent-FoodBreadVolcanic-name = volcanic loaf
-ent-FoodBreadVolcanic-desc = A dark loaf. Resembles pumice.
+ent-FoodBreadVolcanic-name = вулканический хлеб
+ent-FoodBreadVolcanic-desc = Темный хлеб. Напоминает пемзу.
 
-ent-FoodBreadVolcanicSlice-name = volcanic slice
-ent-FoodBreadVolcanicSlice-desc = A slice of dark loaf. Resembles pumice.
+ent-FoodBreadVolcanicSlice-name = вулканический срез
+ent-FoodBreadVolcanicSlice-desc = Кусок темного хлеба. Напоминает пемзу.
 
-ent-FoodBreadBanana-name = banana bread
-ent-FoodBreadBanana-desc = A heavenly and filling treat.
+ent-FoodBreadBanana-name = банановый хлеб
+ent-FoodBreadBanana-desc = Небесное и сытное удовольствие.
 
-ent-FoodBreadBananaSlice-name = banana bread slice
-ent-FoodBreadBananaSlice-desc = A slice of delicious banana bread.
+ent-FoodBreadBananaSlice-name = кусочек бананового хлеба
+ent-FoodBreadBananaSlice-desc = Кусочек вкусного бананового хлеба.
 
-ent-FoodBreadCotton-name = cotton bread
-ent-FoodBreadCotton-desc = Bread, but for moff.
+ent-FoodBreadCotton-name = хлопковый хлеб
+ent-FoodBreadCotton-desc = Хлеб, но для моффа.
 
-ent-FoodBreadCottonSlice-name = cotton bread slice
-ent-FoodBreadCottonSlice-desc = A slice of (maybe) delicious cotton bread.
+ent-FoodBreadCottonSlice-name = ломтик хлопкового хлеба
+ent-FoodBreadCottonSlice-desc = Кусочек (возможно) вкусного хлопкового хлеба.
 
-ent-FoodBreadCorn-name = cornbread
-ent-FoodBreadCorn-desc = Some good down-home country-style, rootin'-tootin', revolver-shootin', dad-gum yeehaw cornbread.
+ent-FoodBreadCorn-name = кукурузный хлеб
+ent-FoodBreadCorn-desc = Немного хорошего деревенского деревенского стиля, ругающегося, стреляющего из револьвера, кукурузного хлеба с папиной жвачкой.
 
-ent-FoodBreadCornSlice-name = cornbread slice
-ent-FoodBreadCornSlice-desc = A slice of cornbread.
+ent-FoodBreadCornSlice-name = кусочек кукурузного хлеба
+ent-FoodBreadCornSlice-desc = Кусочек кукурузного хлеба.
 
-ent-FoodBreadCreamcheese-name = cream cheese bread
-ent-FoodBreadCreamcheese-desc = Yum yum yum!
+ent-FoodBreadCreamcheese-name = хлеб со сливочным сыром
+ent-FoodBreadCreamcheese-desc = Ням-ням-ням!
 
-ent-FoodBreadCreamcheeseSlice-name = cream cheese bread slice
-ent-FoodBreadCreamcheeseSlice-desc = A slice of yum!
+ent-FoodBreadCreamcheeseSlice-name = кусочек хлеба со сливочным сыром
+ent-FoodBreadCreamcheeseSlice-desc = Кусочек ням!
 
-ent-FoodBreadMeat-name = meat bread
-ent-FoodBreadMeat-desc = The culinary base of every self-respecting eloquen/tg/entleman.
+ent-FoodBreadMeat-name = мясной хлеб
+ent-FoodBreadMeat-desc = Кулинарная база каждого уважающего себя красноречия/тг/энтльмена.
 
-ent-FoodBreadMeatSlice-name = meat bread slice
-ent-FoodBreadMeatSlice-desc = A slice of delicious meatbread.
+ent-FoodBreadMeatSlice-name = кусок мяса, хлеба
+ent-FoodBreadMeatSlice-desc = Кусочек вкусного мясного хлеба.
 
-ent-FoodBreadMimana-name = mimana bread
-ent-FoodBreadMimana-desc = Best eaten in silence.
+ent-FoodBreadMimana-name = миманский хлеб
+ent-FoodBreadMimana-desc = Лучше всего есть в тишине.
 
-ent-FoodBreadMimanaSlice-name = mimana bread slice
-ent-FoodBreadMimanaSlice-desc = A slice of silence!
+ent-FoodBreadMimanaSlice-name = кусочек хлеба мимана
+ent-FoodBreadMimanaSlice-desc = Кусочек тишины!
 
-ent-FoodBreadPlain-name = bread
-ent-FoodBreadPlain-desc = Some plain old earthen bread.
+ent-FoodBreadPlain-name = хлеб
+ent-FoodBreadPlain-desc = Немного простого земляного хлеба.
 
-ent-FoodBreadPlainSlice-name = bread slice
-ent-FoodBreadPlainSlice-desc = A slice of home.
+ent-FoodBreadPlainSlice-name = кусок хлеба
+ent-FoodBreadPlainSlice-desc = Кусочек дома.
 
-ent-FoodBreadSausage-name = sausage bread
-ent-FoodBreadSausage-desc = Dont think too much about it.
+ent-FoodBreadSausage-name = колбасный хлеб
+ent-FoodBreadSausage-desc = Не думайте об этом слишком много.
 
-ent-FoodBreadSausageSlice-name = sausage bread slice
-ent-FoodBreadSausageSlice-desc = Dont think too much about it.
+ent-FoodBreadSausageSlice-name = кусок колбасного хлеба
+ent-FoodBreadSausageSlice-desc = Не думайте об этом слишком много.
 
-ent-FoodBreadMeatSpider-name = spider meat bread
-ent-FoodBreadMeatSpider-desc = Reassuringly green meatloaf made from spider meat.
+ent-FoodBreadMeatSpider-name = хлеб из мяса паука
+ent-FoodBreadMeatSpider-desc = Умиротворяюще-зеленый мясной рулет из паучьего мяса.
 
-ent-FoodBreadMeatSpiderSlice-name = spider meat bread slice
-ent-FoodBreadMeatSpiderSlice-desc = A slice of meatloaf made from an animal that most likely still wants you dead.
+ent-FoodBreadMeatSpiderSlice-name = кусок хлеба из мяса паука
+ent-FoodBreadMeatSpiderSlice-desc = Кусок мясного рулета, сделанный из животного, которое, скорее всего, все еще желает вашей смерти.
 
-ent-FoodBreadTofu-name = tofu bread
-ent-FoodBreadTofu-desc = Like meatbread but for vegetarians. Brag to your crewmates about how much better it is.
+ent-FoodBreadTofu-name = тофу хлеб
+ent-FoodBreadTofu-desc = Как мясной хлеб, но для вегетарианцев. Похвастайтесь своим товарищам по команде, насколько он стал лучше.
 
-ent-FoodBreadTofuSlice-name = tofu bread slice
-ent-FoodBreadTofuSlice-desc = A slice of delicious tofu bread.
+ent-FoodBreadTofuSlice-name = ломтик хлеба тофу
+ent-FoodBreadTofuSlice-desc = Кусочек вкусного хлеба тофу.
 
-ent-FoodBreadMeatXeno-name = xeno meat bread
-ent-FoodBreadMeatXeno-desc = A fitting, and filling, end to xeno scum.
+ent-FoodBreadMeatXeno-name = ксено-мясной хлеб
+ent-FoodBreadMeatXeno-desc = Достойный и наполняющий конец ксеносам.
 
-ent-FoodBreadMeatXenoSlice-name = xeno meat bread slice
-ent-FoodBreadMeatXenoSlice-desc = A slice of xeno scum.
+ent-FoodBreadMeatXenoSlice-name = ксено мясо кусок хлеба
+ent-FoodBreadMeatXenoSlice-desc = Кусочек ксеноотбросов.
 
-ent-FoodBreadBaguette-name = baguette
-ent-FoodBreadBaguette-desc = Bon appétit!
+ent-FoodBreadBaguette-name = багет
+ent-FoodBreadBaguette-desc = Приятного аппетита!
 
-ent-FoodBreadBaguetteCotton-name = cotton baguette
-ent-FoodBreadBaguetteCotton-desc = Bon azzétit!
+ent-FoodBreadBaguetteCotton-name = хлопковый багет
+ent-FoodBreadBaguetteCotton-desc = Приятного отдыха!
 
-ent-FoodBreadBaguetteSlice-name = crostini
-ent-FoodBreadBaguetteSlice-desc = Bon ap-petite!
+ent-FoodBreadBaguetteSlice-name = кростини
+ent-FoodBreadBaguetteSlice-desc = Приятного аппетита!
 
-ent-FoodBreadBaguetteCottonSlice-name = cotton crostini
-ent-FoodBreadBaguetteCottonSlice-desc = Bon az-zetite!
+ent-FoodBreadBaguetteCottonSlice-name = хлопок кростини
+ent-FoodBreadBaguetteCottonSlice-desc = Бон аз-зетит!
 
-ent-FoodBreadButteredToast-name = buttered toast
-ent-FoodBreadButteredToast-desc = Crunchy.
+ent-FoodBreadButteredToast-name = тост с маслом
+ent-FoodBreadButteredToast-desc = Хрустящий.
 
-ent-FoodBreadFrenchToast-name = french toast
-ent-FoodBreadFrenchToast-desc = A slice of bread soaked in a beaten egg mixture.
+ent-FoodBreadFrenchToast-name = французский тост
+ent-FoodBreadFrenchToast-desc = Кусочек хлеба, пропитанный взбитой яичной смесью.
 
-ent-FoodBreadGarlicSlice-name = garlic bread
-ent-FoodBreadGarlicSlice-desc = Alas, it is limited.
+ent-FoodBreadGarlicSlice-name = чесночный хлеб
+ent-FoodBreadGarlicSlice-desc = Увы, оно ограничено.
 
-ent-FoodBreadJellySlice-name = jelly toast
-ent-FoodBreadJellySlice-desc = As if science are gonna give up their slimes for toast!
+ent-FoodBreadJellySlice-name = тост с желе
+ent-FoodBreadJellySlice-desc = Как будто наука собирается отказаться от своих слаймов ради тоста!
 
-ent-FoodBreadMoldySlice-name = moldy bread slice
-ent-FoodBreadMoldySlice-desc = Entire stations have been ripped apart over arguing whether this is still good to eat.
+ent-FoodBreadMoldySlice-name = кусок хлеба с плесенью
+ent-FoodBreadMoldySlice-desc = Целые станции были разорваны на части из-за споров о том, полезно ли это еще есть.
 
-ent-FoodBreadTwoSlice-name = two slice
-ent-FoodBreadTwoSlice-desc = Classy.
+ent-FoodBreadTwoSlice-name = два ломтика
+ent-FoodBreadTwoSlice-desc = Классный.
 
-ent-MobBreadDog-name = bread dog
-ent-MobBreadDog-desc = It's a bread. It's a dog. It's a... breaddog?
+ent-MobBreadDog-name = хлебная собака
+ent-MobBreadDog-desc = Это хлеб. Это собака. Это... хлебная собака?
 
-ent-FoodBreadBase-name = item
+ent-FoodBreadBase-name = элемент
 
-ent-FoodBreadSliceBase-name = item
+ent-FoodBreadSliceBase-name = элемент
 

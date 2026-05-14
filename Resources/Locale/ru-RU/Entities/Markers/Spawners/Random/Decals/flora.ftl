@@ -1,16 +1,16 @@
-ent-DecalSpawnerFloraBase-name = Decal Spawner
+ent-DecalSpawnerFloraBase-name = Создатель декалей
 
-ent-DecalSpawnerGrassyRock-name = Decal Spawner
+ent-DecalSpawnerGrassyRock-name = Создатель декалей
 
-ent-DecalSpawnerBasaltRock-name = Decal Spawner
+ent-DecalSpawnerBasaltRock-name = Создатель декалей
 
-ent-DecalSpawnerBushesAC-name = Decal Spawner
+ent-DecalSpawnerBushesAC-name = Создатель декалей
 
-ent-DecalSpawnerFlowers-name = Decal Spawner
+ent-DecalSpawnerFlowers-name = Создатель декалей
 
-ent-DecalSpawnerGrassAB-name = Decal Spawner
+ent-DecalSpawnerGrassAB-name = Создатель декалей
 
-ent-DecalSpawnerGrassC-name = Decal Spawner
+ent-DecalSpawnerGrassC-name = Создатель декалей
 
-ent-DecalSpawnerGrassDE-name = Decal Spawner
+ent-DecalSpawnerGrassDE-name = Создатель декалей
 

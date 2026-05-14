@@ -1,0 +1,6 @@
+<DefaultWindow SetSize="360 120" MinSize="320 100" xmlns="https://spacestation14.io">
+    <BoxContainer Orientation="Vertical" Margin="6">
+        <LineEdit Name="MessageEdit" PlaceHolder="{Loc 'cmu-yautja-thrall-message-placeholder'}" Margin="0 0 0 6" />
+        <Button Name="SendButton" Text="{Loc 'cmu-yautja-thrall-message-send'}" HorizontalExpand="True" />
+    </BoxContainer>
+</DefaultWindow>

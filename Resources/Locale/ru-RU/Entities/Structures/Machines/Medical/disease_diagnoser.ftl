@@ -1,6 +1,6 @@
-ent-DiseaseDiagnoser-name = Disease Diagnoser Delta Extreme
-ent-DiseaseDiagnoser-desc = A machine that analyzes disease samples.
+ent-DiseaseDiagnoser-name = Диагностика заболеваний Delta Extreme
+ent-DiseaseDiagnoser-desc = Машина, которая анализирует образцы заболеваний.
 
-ent-DiagnosisReportPaper-name = disease diagnoser report
-ent-DiagnosisReportPaper-desc = A chilling medical receipt.
+ent-DiagnosisReportPaper-name = отчет диагноста заболеваний
+ent-DiagnosisReportPaper-desc = Страшная медицинская квитанция.
 

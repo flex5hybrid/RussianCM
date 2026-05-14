@@ -1,18 +1,18 @@
-ent-BaseSubstation-name = substation
-ent-BaseSubstation-desc = Reduces the voltage of electricity put into it.
+ent-BaseSubstation-name = подстанция
+ent-BaseSubstation-desc = Уменьшает напряжение подаваемой в него электроэнергии.
 
-ent-BaseSubstationWall-name = wallmount substation
-ent-BaseSubstationWall-desc = A substation designed for compact shuttles and spaces.
+ent-BaseSubstationWall-name = настенная подстанция
+ent-BaseSubstationWall-desc = Подстанция, предназначенная для компактных шаттлов и помещений.
 
-ent-BaseSubstationWallFrame-name = wallmount substation frame
-ent-BaseSubstationWallFrame-desc = A substation frame for construction.
+ent-BaseSubstationWallFrame-name = каркас подстанции настенного монтажа
+ent-BaseSubstationWallFrame-desc = Каркас подстанции для строительства.
 
-ent-SubstationBasic-name = substation
-ent-SubstationBasic-desc = Reduces the voltage of electricity put into it.
+ent-SubstationBasic-name = подстанция
+ent-SubstationBasic-desc = Уменьшает напряжение подаваемой в него электроэнергии.
 
-ent-SubstationBasicEmpty-name = substation
-ent-SubstationBasicEmpty-desc = Reduces the voltage of electricity put into it.
+ent-SubstationBasicEmpty-name = подстанция
+ent-SubstationBasicEmpty-desc = Уменьшает напряжение подаваемой в него электроэнергии.
 
-ent-SubstationWallBasic-name = wallmount substation
-ent-SubstationWallBasic-desc = A substation designed for compact shuttles and spaces.
+ent-SubstationWallBasic-name = настенная подстанция
+ent-SubstationWallBasic-desc = Подстанция, предназначенная для компактных шаттлов и помещений.
 

@@ -1,5 +1,5 @@
-rmc-body-scanner-no-scanner-connected = This console is not connected to a functioning body scanner.
-rmc-body-scanner-no-lifeform = No lifeform detected.
-rmc-body-scanner-incompatible-lifeform = This device can only scan compatible lifeforms.
-rmc-body-scanner-ejected = {$entity} pops out of the body scanner!
-rmc-body-scanner-scan-stored = The body scanner console pings as it stores the scan report of {$entity}.
+rmc-body-scanner-no-scanner-connected = Эта консоль не подключена к работающему сканеру тела.
+rmc-body-scanner-no-lifeform = Ни одна форма жизни не обнаружена.
+rmc-body-scanner-incompatible-lifeform = Это устройство может сканировать только совместимые формы жизни.
+rmc-body-scanner-ejected = {$entity} выскакивает из сканера тела!
+rmc-body-scanner-scan-stored = Консоль сканера тела подает сигнал, сохраняя отчет о сканировании {$entity}.

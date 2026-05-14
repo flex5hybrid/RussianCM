@@ -13,3 +13,9 @@ cm-xeno-devour-failed-stomach-full = Желудок уже полон, это н
 cm-xeno-devour-failed-target-roting = Фу, {$target} уже разлагается.
 cm-xeno-devour-failed-target-buckled = {$target} пристёгнут к {$strap}.
 cm-xeno-devour-failed-target-resisting = {$target} сопротивляется, прижмите его!
+
+# Missing entries synced from en-US
+
+cm-xeno-devour-fake-host = Это бесполезно.
+
+cm-xeno-devour-failed-target-not-grabbed = Нам нужно лучше захватить {$target}, хватайте их!

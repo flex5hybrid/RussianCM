@@ -1,4 +1,4 @@
-ent-RoofMarker-name = Roof
+ent-RoofMarker-name = Крыша
 
-ent-NoRoofMarker-name = Roof
+ent-NoRoofMarker-name = Крыша
 

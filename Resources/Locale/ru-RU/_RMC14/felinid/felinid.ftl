@@ -55,3 +55,27 @@ marking-FelinidFurMale = Шерсть (муж.)
 marking-FelinidFurMale-fur_mas = Цвет
 marking-FelinidFurFemale = Шерсть (жен.)
 marking-FelinidFurMale-fur_fem = Цвет
+
+# Missing entries synced from en-US
+
+marking-FelinidLeopard = Леопардовый хвост
+
+marking-FelinidLeopard-m_tail_leopard_primary = Первичный
+
+marking-FelinidLeopard-m_tail_leopard_tertiary = Пятна
+
+marking-FelinidCatBig = Большой кошачий хвост
+
+marking-FelinidCatBig-m_tail_catbig_primary = Первичный
+
+marking-FelinidTigerDouble = Двойной тигровый хвост
+
+marking-FelinidTigerDouble-m_tail_tiger2_ = Первичный
+
+marking-FelinidTigerDouble-m_tail_tiger2_secondary = Совет
+
+marking-FelinidTigerDouble-m_tail_tiger2_tertiary = Полосы
+
+marking-FelinidDouble = Двойной кошачий хвост
+
+marking-FelinidDouble-m_tail_twocat = Первичный

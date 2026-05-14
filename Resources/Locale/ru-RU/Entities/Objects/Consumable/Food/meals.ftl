@@ -1,81 +1,81 @@
-ent-FoodMealBase-name = item
-ent-FoodMealBase-desc = A delicious meal, cooked with love.
+ent-FoodMealBase-name = элемент
+ent-FoodMealBase-desc = Вкусное блюдо, приготовленное с любовью.
 
-ent-FoodMealPotatoLoaded-name = loaded baked potato
-ent-FoodMealPotatoLoaded-desc = Totally baked.
+ent-FoodMealPotatoLoaded-name = загруженный печеный картофель
+ent-FoodMealPotatoLoaded-desc = Полностью запеченный.
 
-ent-FoodMealFries-name = space fries
-ent-FoodMealFries-desc = AKA, French Fries, Freedom Fries, etc.
+ent-FoodMealFries-name = космическая картошка фри
+ent-FoodMealFries-desc = АКА, картофель фри, картофель фридом и т. д.
 
-ent-FoodMealFriesCheesy-name = cheesy fries
-ent-FoodMealFriesCheesy-desc = Fries. Covered in cheese. Duh.
+ent-FoodMealFriesCheesy-name = сырный картофель фри
+ent-FoodMealFriesCheesy-desc = Картошка фри. Покрытый сыром. Да.
 
-ent-FoodMealFriesCarrot-name = carrot fries
-ent-FoodMealFriesCarrot-desc = Tasty fries from fresh carrots.
+ent-FoodMealFriesCarrot-name = морковь фри
+ent-FoodMealFriesCarrot-desc = Вкусная картошка фри из свежей моркови.
 
-ent-FoodMealNachos-name = nachos
-ent-FoodMealNachos-desc = Chips from Space Mexico.
+ent-FoodMealNachos-name = начос
+ent-FoodMealNachos-desc = Чипсы из Космической Мексики.
 
-ent-FoodMealNachosCheesy-name = cheesy nachos
-ent-FoodMealNachosCheesy-desc = The delicious combination of nachos and melting cheese.
+ent-FoodMealNachosCheesy-name = сырные начос
+ent-FoodMealNachosCheesy-desc = Восхитительное сочетание начос и плавящегося сыра.
 
-ent-FoodMealNachosCuban-name = Cuban nachos
-ent-FoodMealNachosCuban-desc = That's some dangerously spicy nachos.
+ent-FoodMealNachosCuban-name = Кубинские начос
+ent-FoodMealNachosCuban-desc = Это опасно острые начос.
 
-ent-FoodMealMint-name = mint
-ent-FoodMealMint-desc = It's wafer thin.
+ent-FoodMealMint-name = мята
+ent-FoodMealMint-desc = Это очень тонко.
 
-ent-FoodMealEggplantParm-name = eggplant parmigiana
-ent-FoodMealEggplantParm-desc = The only good recipe for eggplant.
+ent-FoodMealEggplantParm-name = баклажаны под пармезаном
+ent-FoodMealEggplantParm-desc = Единственный хороший рецепт баклажанов.
 
-ent-FoodMealPotatoYaki-name = yaki imo
-ent-FoodMealPotatoYaki-desc = Made with roasted sweet potatoes!
+ent-FoodMealPotatoYaki-name = яки, имхо
+ent-FoodMealPotatoYaki-desc = Сделано из жареного сладкого картофеля!
 
-ent-FoodMealCubancarp-name = Cuban carp
-ent-FoodMealCubancarp-desc = A grifftastic sandwich that burns your tongue and then leaves it numb!
+ent-FoodMealCubancarp-name = Кубинский карп
+ent-FoodMealCubancarp-desc = Грязный бутерброд, который обжигает язык, а затем онемеет!
 
-ent-FoodMealCornedbeef-name = corned beef and cabbage
-ent-FoodMealCornedbeef-desc = Now you can feel like a real tourist vacationing in Ireland.
+ent-FoodMealCornedbeef-name = солонина и капуста
+ent-FoodMealCornedbeef-desc = Теперь вы сможете почувствовать себя настоящим туристом, отдыхающим в Ирландии.
 
-ent-FoodMealBearsteak-name = filet migrawr
-ent-FoodMealBearsteak-desc = Because eating bear wasn't manly enough.
+ent-FoodMealBearsteak-name = филе мигравр
+ent-FoodMealBearsteak-desc = Потому что есть медведя было недостаточно по-мужски.
 
-ent-FoodMealPigblanket-name = pig in a blanket
-ent-FoodMealPigblanket-desc = A tiny sausage wrapped in a flakey, buttery roll. Free this pig from its blanket prison by eating it.
+ent-FoodMealPigblanket-name = свинья в одеяле
+ent-FoodMealPigblanket-desc = Крошечная колбаска, завернутая в слоеный маслянистый рулет. Освободите эту свинью из тюрьмы, съев ее.
 
-ent-FoodMealRibs-name = bbq ribs
-ent-FoodMealRibs-desc = BBQ ribs, slathered in a healthy coating of BBQ sauce. The least vegan thing to ever exist.
+ent-FoodMealRibs-name = ребрышки барбекю
+ent-FoodMealRibs-desc = Ребрышки барбекю, покрытые полезным соусом барбекю. Наименее веганская вещь, которая когда-либо существовала.
 
-ent-FoodMealEggsbenedict-name = eggs benedict
-ent-FoodMealEggsbenedict-desc = There is only one egg on this, how rude.
+ent-FoodMealEggsbenedict-name = яйца бенедикт
+ent-FoodMealEggsbenedict-desc = Здесь только одно яйцо, как грубо.
 
-ent-FoodMealOmelette-name = cheese omelette
-ent-FoodMealOmelette-desc = Cheesy.
+ent-FoodMealOmelette-name = сырный омлет
+ent-FoodMealOmelette-desc = Сырно.
 
-ent-FoodMealFriedegg-name = fried egg
-ent-FoodMealFriedegg-desc = A fried egg, with a touch of salt and pepper.
+ent-FoodMealFriedegg-name = жареное яйцо
+ent-FoodMealFriedegg-desc = Жареное яйцо с добавлением соли и перца.
 
-ent-FoodMealMilkape-name = milk ape
-ent-FoodMealMilkape-desc = The king of Jungle Thick.
+ent-FoodMealMilkape-name = молочная обезьяна
+ent-FoodMealMilkape-desc = Король Джунглей Толстых.
 
-ent-FoodMealMemoryleek-name = memory leek
-ent-FoodMealMemoryleek-desc = This should refresh your memory.
+ent-FoodMealMemoryleek-name = Память-порей
+ent-FoodMealMemoryleek-desc = Это должно освежить вашу память.
 
-ent-DisgustingSweptSoup-name = salty sweet miso cola soup
-ent-DisgustingSweptSoup-desc = Jesus christ.
+ent-DisgustingSweptSoup-name = солено-сладкий суп мисо-кола
+ent-DisgustingSweptSoup-desc = Иисус Христос.
 
-ent-FoodMealQueso-name = queso
-ent-FoodMealQueso-desc = A classic dipping sauce that you can't go wrong with.
+ent-FoodMealQueso-name = кесо
+ent-FoodMealQueso-desc = Классический соус для макания, с которым вы не ошибетесь.
 
-ent-FoodMealSashimi-name = sashimi
-ent-FoodMealSashimi-desc = Its taste can only be described as "Exotic". The poisoning though? That's pretty common.
+ent-FoodMealSashimi-name = сашими
+ent-FoodMealSashimi-desc = Его вкус можно охарактеризовать только как «Экзотический». Хотя отравление? Это довольно распространенное явление.
 
-ent-FoodMealEnchiladas-name = enchiladas
-ent-FoodMealEnchiladas-desc = Viva La Mexico!
+ent-FoodMealEnchiladas-name = энчиладас
+ent-FoodMealEnchiladas-desc = Вива Ла Мексика!
 
-ent-FoodSaladWatermelonFruitBowl-name = melon fruit bowl
-ent-FoodSaladWatermelonFruitBowl-desc = The only salad where you can eat the bowl.
+ent-FoodSaladWatermelonFruitBowl-name = ваза с фруктами из дыни
+ent-FoodSaladWatermelonFruitBowl-desc = Единственный салат, где можно съесть миску.
 
-ent-FoodMealCornInButter-name = corn in butter
-ent-FoodMealCornInButter-desc = Buttery.
+ent-FoodMealCornInButter-name = кукуруза в масле
+ent-FoodMealCornInButter-desc = Масло сливочное.
 
