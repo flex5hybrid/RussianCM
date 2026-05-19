@@ -200,6 +200,9 @@
       - id: RMCRocketHJRA12HE
         amount: 2
         points: 10
+      - id: RuMCBoxButterflyMineFilled # RuMC edit
+        amount: 3
+        points: 5
     - name: Improvised Explosive Devices
       entries:
       - id: AU14IEDGuide

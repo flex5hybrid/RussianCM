@@ -6,6 +6,7 @@ using Content.Shared.Damage;
 using Content.Shared.DoAfter;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Coordinates.Helpers;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Mobs.Components;
@@ -170,9 +171,8 @@ public abstract partial class SharedRuMCButterflyMineSystem : EntitySystem
         out EntityCoordinates coordinates,
         out Angle rotation)
     {
-        var moverCoordinates = _transform.GetMoverCoordinateRotation(user, Transform(user));
-        coordinates = moverCoordinates.Coords;
-        rotation = moverCoordinates.worldRot.GetCardinalDir().ToAngle();
+        coordinates = _transform.GetMoverCoordinates(user, Transform(user)).SnapToGrid();
+        rotation = Angle.Zero;
 
         if (_container.IsEntityInContainer(user))
         {
@@ -181,7 +181,7 @@ public abstract partial class SharedRuMCButterflyMineSystem : EntitySystem
             return false;
         }
 
-        var query = _rmcMap.GetAnchoredEntitiesEnumerator(moverCoordinates.Coords);
+        var query = _rmcMap.GetAnchoredEntitiesEnumerator(coordinates);
         while (query.MoveNext(out var anchoredUid))
         {
             if (!HasComp<RuMCButterflyMineComponent>(anchoredUid)
