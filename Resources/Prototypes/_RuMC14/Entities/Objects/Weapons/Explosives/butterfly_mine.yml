@@ -1,0 +1,105 @@
+- type: entity
+  parent: BaseItem
+  id: RuMCExplosiveButterflyMine
+  name: PFM-1 butterfly mine
+  description: The PFM-1 is a Soviet-era mine.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Explosives/Mines/m20_mine.rsi
+    drawdepth: BelowMobs
+    layers:
+    - state: icon
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Fixtures
+    fixtures:
+      trigger:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        hard: false
+        layer:
+        - Opaque
+        mask:
+        - MobLayer
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 20
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: { state: active }
+          False: { state: icon }
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:TriggerBehavior
+  - type: RuMCButterflyMine
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: RMC
+    totalIntensity: 1
+    intensitySlope: 10
+    maxIntensity: 1
+    canCreateVacuum: false
+  - type: ProjectileGrenade
+    evenSpread: true
+    minVelocity: 0.3
+    maxVelocity: 1.0
+    fillPrototype: RMCShrapnel
+    capacity: 6
+    spreadAngle: 360
+  - type: RMCMesonsNonviewable
+  - type: Flammable
+    fireSpread: false
+    damage:
+      types:
+        Heat: 1
+  - type: Tag
+    tags:
+    - RuMCExplosiveButterflyMine
+
+- type: entity
+  parent: CMPacketBase
+  id: RuMCBoxButterflyMineFilled
+  name: PFM-1 butterfly mine box
+  suffix: Filled
+  description: A small cardboard box containing five PFM-1 butterfly mines.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Storage/packets.rsi
+    layers:
+    - state: minebox
+      map: [ "closedLayer" ]
+    - state: minebox_e
+      map: [ "openLayer", "emptyLayer" ]
+  - type: Item
+    size: Normal
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,9,1
+    whitelist:
+      tags:
+      - RuMCExplosiveButterflyMine
+  - type: StorageFill
+    contents:
+    - id: RuMCExplosiveButterflyMine
+      amount: 5
+  - type: Tag
+    tags:
+    - RMCPacketGrenade
