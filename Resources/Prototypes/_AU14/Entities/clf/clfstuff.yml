@@ -38,7 +38,7 @@
         amount: 2
         points: 10
       - id: RMCWeaponRifleType71C
-        amount: 1
+        amount: 2
         points: 7
     - name: Shotguns
       entries:
@@ -71,16 +71,16 @@
     - name: Special Weapons
       entries:
       - id: RMCWeaponLauncherHJRA12
-        amount: 1
-        points: 10
+        amount: 3
+        points: 20
       - id: RMCWeaponLauncherDisposableFolded
-        amount: 1
+        amount: 2
         points: 8
       - id: RMCWeaponMar50LMG
-        amount: 1
+        amount: 3
         points: 11
       - id: RMCM2CMount
-        amount: 1
+        amount: 2
         points: 19
     - name: Rifle Ammunition
       entries:
@@ -94,7 +94,7 @@
         amount: 35
         points: 1
       - id: RMCMagazineMar50LMG
-        amount: 2
+        amount: 5
         points: 3
       - id: RMCMagazineLMGM60
         amount: 5
@@ -148,7 +148,7 @@
         amount: 5
         points: 2
       - id: AU14GrenadeNeuroRMC
-        amount: 2
+        amount: 4
         points: 9
       - id: RMCGrenadeIED
         amount: 4
@@ -168,13 +168,13 @@
         amount: 10
         points: 1
       - id: AU14RemoteSignallerAdvanced
-        amount: 10
+        amount: 12
         points: 1
       - id: AU14IED
         amount: 6
         points: 6
       - id: AU14IEDVest
-        amount: 2
+        amount: 10
         points: 10
       - id: AU14IEDLarge
         amount: 3
@@ -202,15 +202,15 @@
         amount: 1
         points: 20
       - id: AU14TattooInkCartridge
-        amount: 10
+        amount: 30
         points: 6
       - id: AU14TattooGun
-        amount: 3
+        amount: 5
         points: 8
     - name: Mortar
       entries:
       - id: RMCRangefinder
-        amount: 5
+        amount: 10
         points: 3
       - id: RMCMortarKit
         amount: 1
