@@ -800,6 +800,10 @@ public sealed partial class ChatUIController : UIController
         else
             chatChannel = PrefixToChannel.GetValueOrDefault(text[0]);
 
+        // Dont switch to LOOC if input only "(". For RuMC correct frowns emote.
+        if (chatChannel == ChatSelectChannel.LOOC && text.Length <= 1)
+            chatChannel = ChatSelectChannel.None;
+
         if ((CanSendChannels & chatChannel) == 0)
             return (ChatSelectChannel.None, text, null);
 
