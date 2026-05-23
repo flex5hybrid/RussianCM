@@ -107,6 +107,13 @@ namespace Content.Server.AU14.Round
             _selectedPlanet = null;
             _selectedthreat = null!;
             _selectedThirdParties.Clear();
+
+            // RuCM edit start
+            var platoonSys = _entityManager.EntitySysManager.GetEntitySystem<PlatoonSpawnRuleSystem>();
+            platoonSys.SelectedGovforPlatoon = null;
+            platoonSys.SelectedOpforPlatoon = null;
+            // RuCM edit end
+
             StartPresetVote(() =>
             {
                 // After preset vote timer, get selected preset and start planet vote
@@ -439,6 +446,9 @@ namespace Content.Server.AU14.Round
                                 args.ResolveWinner(winnerId);
                                 platoonSpawnRuleSystem.SelectedGovforPlatoon = winnerId;
 
+                                var ticker = _entityManager.EntitySysManager.GetEntitySystem<GameTicker>(); // RuCM edit
+                                ticker.UpdateInfoText(); // RuCM edit
+
                                 // If this platoon declares a tech-tree, apply it immediately to the IntelSystem as a runtime override.
                                 var intelSys = _entityManager.EntitySysManager.GetEntitySystem<Content.Shared._RMC14.Intel.IntelSystem>();
                                 if (!string.IsNullOrEmpty(winnerId.TechTree))
@@ -538,6 +548,12 @@ namespace Content.Server.AU14.Round
             SelectedPlanetMap = null;
             _selectedGovforShip = null;
             _selectedOpforShip = null;
+
+            // RuCM edit start
+            var platoonSys = _entityManager.EntitySysManager.GetEntitySystem<PlatoonSpawnRuleSystem>();
+            platoonSys.SelectedGovforPlatoon = null;
+            platoonSys.SelectedOpforPlatoon = null;
+            // RuCM edit end
 
             StartFullVoteSequence();
             onFinished?.Invoke();
