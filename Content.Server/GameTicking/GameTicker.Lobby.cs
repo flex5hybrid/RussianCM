@@ -121,8 +121,8 @@ namespace Content.Server.GameTicking
             var desc = LocalizeOrRaw(preset.Description);
             var govforPlatoon = _platoonSpawnRuleSystem.SelectedGovforPlatoon?.Name;
             var opforPlatoon = _platoonSpawnRuleSystem.SelectedOpforPlatoon?.Name;
-            var govforPlatoonDisplay = !string.IsNullOrWhiteSpace(govforPlatoon) ? govforPlatoon : "None";
-            var opforPlatoonDisplay = !string.IsNullOrWhiteSpace(opforPlatoon) ? opforPlatoon : "None";
+            var govforPlatoonDisplay = !string.IsNullOrWhiteSpace(govforPlatoon) ? govforPlatoon : Loc.GetString("game-ticker-platoon-not-selected"); // RuCM edit
+            var opforPlatoonDisplay = !string.IsNullOrWhiteSpace(opforPlatoon) ? opforPlatoon : Loc.GetString("game-ticker-platoon-not-selected"); // RuCM edit
             return Loc.GetString(
                 RunLevel == GameRunLevel.PreRoundLobby
                     ? "game-ticker-get-info-preround-text"
@@ -137,7 +137,9 @@ namespace Content.Server.GameTicking
                 ("opforPlatoon", opforPlatoonDisplay),
                 ("mapName", GetPlanetMapName()),
                 ("gmTitle", gmTitle),
-                ("desc", desc));
+                ("desc", desc),
+                ("requiresGovfor", preset.RequiresGovforVote),  // RuCM edit
+                ("requiresOpfor", preset.RequiresOpforVote));   // RuCM edit
         }
 
         private TickerConnectionStatusEvent GetConnectionStatusMsg()

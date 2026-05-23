@@ -14,6 +14,14 @@ game-ticker-get-info-text = Привет и добро пожаловать в [
                             Текущая карта: [color=white]{ $mapName }[/color]
                             Текущий режим игры: [color=white]{ $gmTitle }[/color]
                             >[color=yellow]{ $desc }[/color]
+                            { $requiresGovfor ->
+                                [true] Пр. силы: [color=#007EE7]{ $govforPlatoon }[/color]
+                               *[other] {""}
+                            }
+                            { $requiresOpfor ->
+                                [true] Оп. силы: [color=#FF2000]{ $opforPlatoon }[/color]
+                               *[other] {""}
+                            }
 game-ticker-get-info-preround-text = Привет и добро пожаловать в [color=white]Space Station 14![/color]
     Текущий раунд: [color=white]#{ $roundId }[/color]
     Текущее количество игроков: [color=white]{ $playerCount }[/color] ([color=white]{ $readyCount }[/color] { $readyCount ->
@@ -23,6 +31,14 @@ game-ticker-get-info-preround-text = Привет и добро пожалова
     Текущая карта: [color=white]{ $mapName }[/color]
     Текущий режим игры: [color=white]{ $gmTitle }[/color]
     >[color=yellow]{ $desc }[/color]
+    { $requiresGovfor ->
+        [true] Пр. силы: [color=#007EE7]{ $govforPlatoon }[/color]
+       *[other] {""}
+    }
+    { $requiresOpfor ->
+        [true] Оп. силы: [color=#FF2000]{ $opforPlatoon }[/color]
+       *[other] {""}
+    }
 game-ticker-no-map-selected = [color=red]Карта ещё не выбрана![/color]
 game-ticker-player-no-jobs-available-when-joining = При попытке присоединиться к игре ни одной роли не было доступно.
 
@@ -53,6 +69,6 @@ game-run-level-PreRoundLobby = Предраундовое лобби
 game-run-level-InRound = В раунде
 game-run-level-PostRound = После раунда
 
-# Missing entries synced from en-US
 
 game-ticker-no-map-selected-plain = Карта еще не выбрана!
+game-ticker-platoon-not-selected = Ещё не выбраны.
