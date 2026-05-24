@@ -20,13 +20,13 @@
         - AU14SquadVAISO
     - type: Skills
       skills:
-        RMCSkillCqc: 5
-        RMCSkillEngineer: 4
-        RMCSkillConstruction: 3
-        RMCSkillFirearms: 2
+        RMCSkillCqc: 4
+        RMCSkillEngineer: 2
+        RMCSkillConstruction: 2
+        RMCSkillFirearms: 3
         RMCSkillOverwatch: 1
         RMCSkillMedical: 1
-        RMCSkillMeleeWeapons: 1
+        RMCSkillMeleeWeapons: 3
         RMCSkillPilot: 1
         RMCSkillPolice: 2
         RMCSkillFireman: 5

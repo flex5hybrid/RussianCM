@@ -255,10 +255,10 @@
   - type: SkillPreset
     skills:
         RMCSkillCqc: 5
-        RMCSkillEndurance: 1
+        RMCSkillEndurance: 3
         RMCSkillEngineer: 4
         RMCSkillConstruction: 3
-        RMCSkillFirearms: 2
+        RMCSkillFirearms: 1
         RMCSkillOverwatch: 1
         RMCSkillMedical: 4
         RMCSkillSurgery: 3
@@ -271,7 +271,7 @@
         RMCSkillVehicles: 2
         RMCSkillJtac: 3
         RMCSkillIntel: 2
-        RMCSkillDomestics: 2
+        RMCSkillDomestics: 1
         RMCSkillNavigations: 1
 
 - type: entity
@@ -299,11 +299,11 @@
   - type: SkillPreset
     skills:
         RMCSkillCqc: 5
-        RMCSkillEndurance: 1
+        RMCSkillEndurance: 3
         RMCSkillEngineer: 4
         RMCSkillConstruction: 4
-        RMCSkillFirearms: 1
-        RMCSkillMeleeWeapons: 2
+        RMCSkillFirearms: 0
+        RMCSkillMeleeWeapons: 3
         RMCSkillPolice: 2
         RMCSkillFireman: 5
         RMCSkillPowerLoader: 2
