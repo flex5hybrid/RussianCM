@@ -1,5 +1,5 @@
 - type: entity
-  parent: RMCHeadsetMarine
+  parent: AU14HeadsetGovforMarine
   id: AU14HeadsetUSArmy
   name: US Army headset
   description: Issued to US Army units.
@@ -48,7 +48,7 @@
     - TWESOF
 
 - type: entity
-  parent: RMCHeadsetMarine
+  parent: AU14HeadsetGovforMarine
   id: AU14HeadsetVAI
   name: vanguard's arrow headset
   description: A special headset used by Vanguard's Arrow Incorporated mercenaries, features a non-standard brace.
@@ -89,7 +89,7 @@
     - VAI
 
 - type: entity
-  parent: RMCHeadsetMarine
+  parent: AU14HeadsetGovforMarine
   id: AU14HeadsetPART
   name: Prodigy Armed Repair Team headset
   description: A special headset used by Prodigy Armed Repair Team, features a unique brace.

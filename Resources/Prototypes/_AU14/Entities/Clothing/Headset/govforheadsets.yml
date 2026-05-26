@@ -4,13 +4,6 @@
   id: AU14EncryptionKeyGovfor # blank key, channel set by SquadSystem.cs
   name: GOVFOR encryption key
   description: An encryption key used to communicate on the GOVFOR channel, it is automatically assigned the right channel.
-  components:
-  - type: GrantSquadLeaderTracker # only keys give tracker (not headsets)
-    defaultMode: SquadLeader
-    trackerModes:
-    - SquadLeader
-    - FireteamLeader
-    - BattleBuddy
 
 - type: entity
   parent: AU14EncryptionKeyGovfor
@@ -106,6 +99,14 @@
     containers:
       key_slots:
       - AU14EncryptionKeyGovfor
+  - type: GrantSquadLeaderTracker
+    defaultMode: SquadLeader
+    trackerModes:
+    - SquadLeader
+    - FireteamLeader
+    - BattleBuddy
+    - SeniorEnlistedAdvisor
+    - PrimaryLandingZone
 
 - type: entity
   parent: AU14HeadsetGovforMarine
@@ -116,6 +117,7 @@
   - type: ContainerFill
     containers:
       key_slots: # give all usable keys for emergencies/promotions
+      - AU14EncryptionKeyGovfor # empty key when taken out
       - AU14EncryptionKeyGovforCommand
       - AU14EncryptionKeyGovforBravo
       - AU14EncryptionKeyGovforCharlie

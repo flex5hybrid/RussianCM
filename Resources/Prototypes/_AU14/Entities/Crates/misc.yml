@@ -64,6 +64,15 @@
     spawn: AU14VendorBlood
 
 - type: entity
+  parent: RMCSecureCase #Crate
+  id: AU14CrateAutolathe
+  name: Autolathe crate
+  description: A crate containing one autolathe.
+  components:
+  - type: SpawnOnTerminate
+    spawn: CMAutolathe
+
+- type: entity
   parent: RMCCrateWeapons
   id: AU14CrateM5A1SLAW
   name: M5A1 SLAW anti-tank launcher crate (x4 M5A1 SLAW)
@@ -261,7 +270,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: RMCIweaponLauncherDisposableFolded
+    - id: RMCWeaponLauncherDisposableFolded
       amount: 2
 
 - type: entity
@@ -277,6 +286,18 @@
     - id: CMMagazineSMGM63
       amount: 4
 
+- type: entity
+  parent: RMCCrateWeapons
+  id: AU14CratePK7
+  name: PK7 pistol crate (2x PK7 pistol, 4 PK7 magazines)
+  description: A crate containing two PK7 pistols and four magazines.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponPistolPK7
+      amount: 2
+    - id: RMCMagazinePistolPK7
+      amount: 4
 
 # We-Yu Ammo Crates
 - type: entity
@@ -320,7 +341,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: RMCMagazineRiflessG45
+    - id: RMCMagazineRifleSSG45
       amount: 4
 
 - type: entity
@@ -333,4 +354,170 @@
     contents:
     - id: CMMagazineSMGM63
       amount: 5
-  # RuCM change end
+
+- type: entity
+  parent: RMCCrateAmmo
+  id: AU14CratePK7Ammo
+  name: PK7 magazine crate (x4)
+  description: A crate containing four PK7 magazines.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCMagazinePistolPK7
+      amount: 4
+
+# We-Yu Armor & Additions Crates
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateM4PMCCorporateArmorSet
+  name: M4 PMC Corporate armor & Helmet crate (x2)
+  description: A crate containing two sets of M4 PMC Corporate armor.
+  components:
+  - type: StorageFill
+    contents:
+    - id: CMUArmorM4PMCCorporate
+      amount: 2
+    - id: ArmorHelmetPMCCorporate
+      amount: 2
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateM4PMCCorporateLeadArmorSet
+  name: M4 PMC Corporate Lead armor & Helmet crate (x2)
+  description: A crate containing two sets of M4 PMC Corporate Lead armor.
+  components:
+  - type: StorageFill
+    contents:
+    - id: CMUArmorM4PMCCorporateLead
+      amount: 2
+    - id: ArmorHelmetPMCCorporateLead
+      amount: 2
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateBioSuitGeneralSet
+  name: Bio Suit General crate (x2)
+  description: A crate containing two sets of Bio Suit General armor.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCSuitBioGeneral
+      amount: 2
+    - id: RMCHoodBioGeneral
+      amount: 2
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateBioSuitWeYuAltSet
+  name: We-Yu Alt Bio Suit crate (x2)
+  description: A crate containing two sets of We-Yu Alt Bio Suit armor.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCSuitBioWeYa
+      amount: 2
+    - id: RMCHoodBioWeYaAlt
+      amount: 2
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateBioSuitWeYuSet
+  name: We-Yu Bio Suit crate (x2)
+  description: A crate containing two sets of We-Yu Bio Suit armor.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCSuitBioWeYa
+      amount: 2
+    - id: RMCHoodBioWeYa
+      amount: 2
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateHandsVeteranPMC
+  name: Veteran PMC gloves crate (x2)
+  description: A crate containing two sets of Veteran PMC gloves.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCHandsVeteranPMC
+      amount: 2
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateRMCBootsPMCFilled
+  name: PMC Boots crate (x2)
+  description: A crate containing two sets of PMC boots.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCBootsPMCFilled
+      amount: 2
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateRMCPouchMagazineLargePMC
+  name: Large Magazine Pouch crate (x2)
+  description: A crate containing two Large Magazine Pouches.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCPouchMagazineLargePMC
+      amount: 2
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateRMCPouchMedkitPMC
+  name: Pouch Medkit PMC crate (x2)
+  description: A crate containing two Medkit PMC pouches.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCPouchMedkitPMC
+      amount: 2
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateRMCPouchFirstAidPMC
+  name: Pouch First Aid PMC crate (x2)
+  description: A crate containing two First Aid PMC pouches.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCPouchFirstAidPMC
+      amount: 2
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateRMCBeltPMC
+  name: Ammo Belt PMC crate (x2)
+  description: A crate containing two PMC Ammo belts.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCBeltPMC
+      amount: 2
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateRMCBeltHolsterPistolPMC
+  name: Belt Holster Pistol PMC crate (x2)
+  description: A crate containing two PMC M301 Holster Pistol belts.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCBeltHolsterPistolPMC
+      amount: 2
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateRMCBeltHolsterPistolWeYa
+  name: Belt Holster Pistol We-Yu crate (x2)
+  description: A crate containing two We-Yu WY-TM892 Holster Pistol belts.
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCBeltHolsterPistolWeYa
+      amount: 2
+# RuCM change end

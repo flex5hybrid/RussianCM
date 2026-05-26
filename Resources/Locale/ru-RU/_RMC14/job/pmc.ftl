@@ -137,3 +137,11 @@ rmc-job-name-corp-director = МЫ-Я Директор
 # Corpses
 
 rmc-job-name-pmc-operator-corpse = Оператор ЧВК
+
+# Missing entries synced from en-US
+
+rmc-ghost-role-information-corp-exec-description = Вы сотрудник корпорации «Вейланд-Ютани». Вы должны поддерживать и защищать интересы Вейланд-Ютани.
+
+rmc-ghost-name-corp-exec-supervisor = Корпоративный исполнительный директор (нейтральный)
+
+rmc-job-name-corp-exec-supervisor = Корпоративный исполнительный супервайзер

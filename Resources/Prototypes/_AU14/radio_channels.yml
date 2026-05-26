@@ -190,7 +190,7 @@
   id: radioMobFamily
   name: chat-radio-mob
   keycode: "р"
-  frequency: 1431
+  frequency: 1467
   color: "#318779"
   longRange: true
   # tower: true

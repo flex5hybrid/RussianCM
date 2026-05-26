@@ -40,7 +40,7 @@
   - CMCargoTech
   overwatchSortPriority: -6
   overwatchShowName: true
-  overwatchRoleName: Auxiliary Technician
+  overwatchRoleName: au14-job-name-govforAuxTech
   roleWeight: 0.25
   special:
   - !type:AddComponentSpecial

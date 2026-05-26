@@ -19,7 +19,7 @@ ui-options-value-percent = { TOSTRING($value, "P0") }
 
 ui-options-discordrich = Включить Discord Rich Presence
 ui-options-general-ui-style = Стиль интерфейса
-ui-options-general-discord = Discord
+ui-options-general-discord = Раздор
 ui-options-general-cursor = Курсор
 ui-options-general-speech = Речь
 ui-options-general-storage = Инвентарь
@@ -190,7 +190,7 @@ ui-options-function-focus-emote = Чат эмоций
 ui-options-function-focus-whisper-chat-window = Шёпот
 ui-options-function-focus-radio-window = Радио
 ui-options-function-focus-looc-window = LOOC
-ui-options-function-focus-ooc-window = OOC
+ui-options-function-focus-ooc-window = ООС
 ui-options-function-focus-admin-chat-window = Админ-чат
 ui-options-function-focus-dead-chat-window = Чат мёртвых
 ui-options-function-focus-console-chat-window = Консоль
@@ -421,3 +421,23 @@ ui-options-admin-enable-overlay-starting-job = Показывать старто
 ui-options-admin-overlay-merge-distance = Дистанция объединения стеков
 ui-options-admin-overlay-ghost-fade-distance = Дистанция затухания оверлея призрака от курсора
 ui-options-admin-overlay-ghost-hide-distance = Дистанция скрытия оверлея призрака от курсора
+
+# Missing entries synced from en-US
+
+ui-options-zlevel-blur = Размытие на уровне Z:
+
+ui-options-crt-ui-enabled = Использовать тему пользовательского интерфейса CRT
+
+ui-options-crt-ui-color = цвет пользовательского интерфейса
+
+ui-options-crt-ui-color-green = Зеленый (по умолчанию)
+
+ui-options-crt-ui-color-blue = Синий
+
+ui-options-crt-ui-color-orange = Оранжевый
+
+ui-options-crt-ui-color-red = Красный
+
+ui-options-crt-ui-color-purple = Фиолетовый
+
+ui-options-crt-ui-color-example = Предварительный просмотр текста

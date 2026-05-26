@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: AU14JobCLFGuerillaReinforcement
   name: au14-job-name-clfguerilla
-  description: au14-job-description-clfguerilla
+  description: au14-job-description-clfguerilla-alt
   setPreference: true
   ignoreAllegiance: true
   playTimeTracker: AU14JobCLFGuerilla

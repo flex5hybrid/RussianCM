@@ -287,6 +287,10 @@
     maxItemSize: Large
     grid:
     - 0,0,15,5
+  - type: IgnoreContentsSize
+    items:
+      tags:
+      - CMUYautjaToolbelt
 
 - type: entity
   parent: BaseItem
@@ -840,7 +844,11 @@
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,11,3
+    - 0,0,15,3
+  - type: IgnoreContentsSize
+    items:
+      tags:
+      - CMSurgicalCase
   - type: FixedItemSizeStorage
   - type: GenericVisualizer
     visuals:

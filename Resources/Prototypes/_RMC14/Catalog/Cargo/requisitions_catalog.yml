@@ -7,48 +7,49 @@
   - type: RequisitionsComputer
     categories:
     - name: Engineering
+    # the desired minimum price for something is $400, otherwise people will make a profit when they hand in a box with a stamped document attached to it
       entries:
-      - cost: 370
+      - cost: 490
         crate: RMCCrateSandbagsConstructionKit
       - cost: 900
         crate: RMCCrateElectricalMaintenance
-      - cost: 350
+      - cost: 470
         crate: RMCCrateMechanicalMaintenance
-      - cost: 350
+      - cost: 490
         crate: RMCCrateReplacementLights
-      - cost: 350
+      - cost: 510
         crate: PortableGeneratorPacman
-      - cost: 350
+      - cost: 520
         crate: RMCCratePacmanParts
-      - cost: 375
+      - cost: 540
         crate: RMCCrateSuperPacmanParts
-      - cost: 350
+      - cost: 550
         crate: RMCCrateHighCapacityPowerCell
-      - cost: 350
+      - cost: 650
         crate: AU14CrateBoxToolbelt
       - cost: 3000
         crate: AU14CrateBoxFieldSupplyEngin
-      - cost: 350
+      - cost: 600
         crate: AU14CrateBoxFloorTiles
-      - cost: 350
+      - cost: 500
         crate: AU14CrateBoxFloorTilesWood
     - name: Materials
       entries:
-      - cost: 350
+      - cost: 650
         crate: RMCCrateResearchPhoron
-      - cost: 350
+      - cost: 540
         crate: RMCCrateResearchPlastic
       - cost: 900
         crate: RMCCrateEmptySandbags
-      - cost: 1200
+      - cost: 1000
         crate: RMCCrateMetalSheets
-      - cost: 1400
+      - cost: 1200
         crate: RMCCratePlasteelSheets
-      - cost: 350
+      - cost: 550
         crate: RMCCrateGlassSheets
-      - cost: 350
+      - cost: 500
         crate: RMCCrateWoodenPlanks
-      - cost: 350
+      - cost: 520
         crate: RMCCrateSuppliesBoxes
     - name: Explosives
       entries:
@@ -97,67 +98,67 @@
         crate: RMCCrateM6HBruteRockets
     - name: Food and Drinks
       entries:
-      - cost: 380
+      - cost: 450
         crate: AU14CrateBoxboxofingredients
-      - cost: 390
+      - cost: 620
         crate: AU14CrateBoxMeat
-      - cost: 330
+      - cost: 540
         crate: RMCCrateFoodDonuts
-      - cost: 345
+      - cost: 550
         crate: AU14CrateBoxPizza
-      - cost: 350
+      - cost: 670
         crate: AU14Cratealcoholicdrinks
     - name: Gear
       entries:
-      - cost: 350
+      - cost: 550
         crate: AU14CrateBoxCivBinocs
-      - cost: 385
+      - cost: 515
         crate: RMCCrateGearPackFlare
-      - cost: 340
+      - cost: 470
         crate: RMCCrateFlashlights
-      - cost: 340
+      - cost: 510
         crate: AU14CrateBoxBackpacks
-      - cost: 320
+      - cost: 495
         crate: AU14CrateBoxHandhelds
-      - cost: 390
+      - cost: 510
         crate: RMCCrateClothingLargePouches
-      - cost: 320
+      - cost: 490
         crate: RMCCrateClothingMedicalPouches
-      - cost: 350
+      - cost: 470
         crate: AU14CrateBoxFirefighting
     - name: Medical
       entries:
-      - cost: 350
+      - cost: 500
         crate: RMCCrateMedicalSurgery
-      - cost: 335
+      - cost: 485
         crate: RMCCrateMedicalBodyBag
-      - cost: 350
+      - cost: 410
         crate: RMCCrateMedicalFirstAid
-      - cost: 310
+      - cost: 510
         crate: RMCCrateMedicalFilled
-      - cost: 370
+      - cost: 495
         crate: RMCCrateMedicalPill
-      - cost: 320
+      - cost: 470
         crate: AU14CrateBoxHospitalBeds
       - cost: 475
         crate: AU14CrateBoxDefibrillator
     - name: Supplies
       entries:
-      - cost: 350
+      - cost: 470
         crate: RMCCrateSupplyInternals
-      - cost: 370
+      - cost: 440
         crate: RMCCrateSupplyEvacuation
-      - cost: 390
+      - cost: 465
         crate: RMCCrateSupplyJanitor
-      - cost: 350
+      - cost: 510
         crate: RMCCrateHydro
-      - cost: 340
-        crate: hydroponicsTray
-      - cost: 330
+      - cost: 500
+        crate: CMHydroponicsTray
+      - cost: 520
         crate: AU14CrateWorkTools
-      - cost: 380
+      - cost: 490
         crate: AU14CrateCivilianClothingRandom
-      - cost: 2000
+      - cost: 1000
         crate: RMCCrateSuppliesCrayons
     - name: Vehicle Ammo
       entries:
@@ -189,55 +190,55 @@
         crate: RMCCrateVehicleAmmoRotaryCannon
     - name: Weapons
       entries:
-      - cost: 2000
+      - cost: 1850
         crate: AU14CrateBoxAR10
-      - cost: 1300
+      - cost: 1050
         crate: AU14CrateBoxMod88
-      - cost: 1250
+      - cost: 1100
         crate: AU14CrateBoxRevolverM2019
-      - cost: 1400
+      - cost: 1250
         crate: AU14CrateBoxRSH9
-      - cost: 1200
+      - cost: 1150
         crate: AU14CrateBoxHuntingRifleCrate
       - cost: 950
         crate: AU14CrateBoxTPR23B
       - cost: 950
         crate: AU14CrateBoxM4A3
-      - cost: 1000
+      - cost: 1110
         crate: AU14CrateBoxSkeetShootingCrate
       - cost: 800
         crate: AU14CrateBoxM44
-      - cost: 1300
+      - cost: 1400
         crate: AU14CrateBoxHuntingRifleABRCrate
-      - cost: 353
+      - cost: 550
         crate: AU14CrateBoxD18
-      - cost: 330
+      - cost: 500
         crate: AU14CrateAssortedKnives
     - name: Ammunition
       entries:
-      - cost: 533
+      - cost: 530
         crate: AU14CrateBoxAR10Magazines
-      - cost: 483
+      - cost: 480
         crate: AU14CrateBox357HP
-      - cost: 400
+      - cost: 460
         crate: AU14CrateBox357
-      - cost: 400
+      - cost: 490
         crate: AU14CrateBoxMod88Mags
-      - cost: 400
+      - cost: 510
         crate: AU14CrateBoxRSH9SL
-      - cost: 400
+      - cost: 550
         crate: AU14CrateBoxBasiraMagazines
-      - cost: 433
+      - cost: 460
         crate: AU14CrateBoxShotgunShells
-      - cost: 333
+      - cost: 470
         crate: AU14CrateBoxTPR23BMag
-      - cost: 350
+      - cost: 450
         crate: AU14CrateBoxM44SL
-      - cost: 350
+      - cost: 450
         crate: AU14CrateBoxM44SLM
-      - cost: 350
+      - cost: 410
         crate: AU14CrateBoxD18Magazines
-      - cost: 355
+      - cost: 570
         crate: AU14CrateBoxABR40Magazines
       - cost: 4000
         crate: RMCCrateMagazineM96SMixed
@@ -275,13 +276,13 @@
         crate: RMCCratePyroTankTypeX
     - name: Furniture
       entries:
-      - cost: 320
+      - cost: 600
         crate: AU14CrateBoxReinforcedTableParts
-      - cost: 320
+      - cost: 570
         crate: AU14CrateBoxGamblingTableParts
-      - cost: 390
+      - cost: 540
         crate: AU14CrateBoxGrayTableParts
-      - cost: 390
+      - cost: 560
         crate: AU14CrateBoxtanTableParts
     - name: "Machines and Vendors (Wrench Required)"
       entries:
@@ -289,19 +290,19 @@
         crate: CMVendorSodaSoviet
       - cost: 750
         crate: CMVendorBooze
-      - cost: 350
+      - cost: 500
         crate: CMVendorChess
-      - cost: 350
+      - cost: 435
         crate: CMVendorCigs
       - cost: 800
         crate: CMVendorIngredients
-      - cost: 350
+      - cost: 440
         crate: CMVendorSnack
-      - cost: 350
+      - cost: 460
         crate: CMVendorCoffee
-      - cost: 350
+      - cost: 470
         crate: CMVendorCassettes
-      - cost: 350
+      - cost: 430
         crate: CMVendorCola
       - cost: 1000
         crate: CMVendorTool
@@ -309,9 +310,25 @@
         crate: CMVendorComponent
       - cost: 670
         crate: CMVendorElectronics
-      - cost: 350
+      - cost: 540
         crate: RMCTelevision
-      - cost: 450
+      - cost: 520
         crate: CMDispenserBooze
-      - cost: 320
+      - cost: 490
         crate: CMMicrowave
+      - cost: 800
+        crate: RMCRecharger
+      - cost: 490
+        crate: RMCKitchenReagentGrinder
+      - cost: 480
+        crate: RMCSmallFloodlight
+      - cost: 520
+        crate: CMVendorSeeds
+      - cost: 530
+        crate: CMVendorNutri
+      - cost: 3750
+        crate: AU14CrateMedicalVendor
+      - cost: 3700
+        crate: AU14CrateMedicalBloodVendor
+      - cost: 1650
+        crate: AU14CrateAutolathe

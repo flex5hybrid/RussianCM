@@ -69,6 +69,12 @@
     speedModifier: 0.8
     useSound:
       path: /Audio/Items/wirecutter.ogg
+  # RuMC edit
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    offset: -0.15,0.0
+  - type: ThrowingAngle
+    angle: 225
 
 - type: entity
   parent: RMCM5Bayonet
@@ -235,6 +241,12 @@
     tags:
     - ThrowingKnife
   - type: DeleteOnExplosion
+  # RuMC edit
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    offset: -0.15,0.0
+  - type: ThrowingAngle
+    angle: 225
 
 - type: entity
   parent: [ RMCBaseMeleeWeapon, BaseKnife ]
@@ -285,6 +297,10 @@
       retractor: 2
       bone_saw: 1
   - type: DeleteOnExplosion
+  # RuMC edit
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    offset: -0.15,0.0
 
 - type: entity
   parent: CMM2132Machete

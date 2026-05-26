@@ -27,3 +27,7 @@ au14-job-name-clfcellleader = Лидер ячейки КОФ
 au14-job-description-clfcellleader = Возглавьте своих людей и захватите колонию. Вытесните, захватите в заложники и/или уничтожьте любые правительственные силы, которые не сдадутся. Убедите местных гражданских присоединиться к вашему делу.
 au14-job-prefix-clfcellleader = ЛИД
 AU14JobCLFCellLeader = Лидер ячейки КОФ
+
+# Missing entries synced from en-US
+
+au14-job-name-clfguerilla-alt = CLF Fighter (сторонний)

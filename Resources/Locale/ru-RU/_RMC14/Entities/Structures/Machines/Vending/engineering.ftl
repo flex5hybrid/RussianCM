@@ -1,7 +1,7 @@
 ent-CMVendorRobotics = Роботех Делюкс
   .desc = Все инструменты, необходимые для создания собственной армии роботов.
 
-ent-CMVendorScience = We-Ya SciVend
+ent-CMVendorScience = Мы-Я SciVend
   .desc = Продавец базового оборудования для ваших экспериментов.
 
 ent-CMVendorComponent = машина для хранения компонентов

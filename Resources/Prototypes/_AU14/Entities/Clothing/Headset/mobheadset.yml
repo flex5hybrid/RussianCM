@@ -10,7 +10,7 @@
     defaultChannel: radioMobFamily
 
 - type: entity
-  parent: RMCHeadsetMarine
+  parent: AU14HeadsetColonist
   id: AU14HeadsetMob
   name: Mob Family headset
   description: A common colony headset that has been modified to work on a custom frequency.

@@ -9,9 +9,10 @@
   requirements:
   - !type:RoleTimeRequirement
     role: AU14JobCLFGuerilla
-    time: 7200 # 2 hours
-  - !type:OverallPlaytimeRequirement
-    time: 14400 # 4 hours
+    time: 18000 # 5 hours
+  - !type:DepartmentTimeRequirement
+    department: AU14DepartmentColonyMedical
+    time: 5400 # 1.5 hours
   - !type:TraitsRequirement
     inverted: true
     traits:

@@ -24,12 +24,18 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          submodules: recursive
+          persist-credentials: true
+          submodules: false
+
+      - name: Checkout submodules
+        run: |
+          git config --global url."https://x-access-token:${{ github.token }}@github.com/".insteadOf "https://github.com/"
+          git submodule update --init --recursive --depth=1
 
       # - name: Pull engine updates # mark a submodule PR dependency in description
       #   uses: space-wizards/submodule-dependency@v0.1.5 # not updated in ~5 years (uses node12!)
-      - name: Update engine submodules
-        run: cd RobustToolbox && git submodule update --init --recursive
+      # - name: Update engine submodules
+      #   run: cd RobustToolbox && git submodule update --init --recursive
 
       - uses: actions/setup-dotnet@v5 # cache lock files
         with:

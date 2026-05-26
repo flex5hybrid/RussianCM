@@ -402,3 +402,121 @@ cmu-yautja-abomination-action-frenzy = Дикое неистовство
 cmu-yautja-abomination-action-frenzy-desc = Растерзать цель или задеть ближайшие цели, если неистовство в режиме области.
 cmu-yautja-abomination-action-toggle-frenzy = Переключить режим неистовства
 cmu-yautja-abomination-action-toggle-frenzy-desc = Переключить дикое неистовство между ударами по одной цели и по области.
+
+# Missing entries synced from en-US
+
+cmu-yautja-bracer-hunting-trap-created = Наруч печатает {$item}.
+
+cmu-yautja-bracer-menu-hunting-trap = Охотничья ловушка
+
+cmu-yautja-bracer-menu-hunting-trap-detail = Распечатайте охотничью ловушку.
+
+cmu-yautja-self-destruct-critical = Наруч не отвечает умирающему охотнику.
+
+ent-CMUActionYautjaToggleVisor = Переключить козырек
+    .desc = Переключите HUD маски и отображение охотничьих меток.
+
+ent-CMUActionYautjaToggleMaskZoom = Переключить масштаб маски
+    .desc = Включите зум-оптику дальнего действия вашей биомаски.
+
+ent-CMUActionYautjaToggleCloak = Переключить плащ
+    .desc = Огибайте себя светом с помощью охотничьего браслета.
+
+ent-CMUActionYautjaOpenBracerMenu = Меню наручей
+    .desc = Откройте командный интерфейс охотничьего браслета.
+
+ent-CMUActionYautjaToggleBracerLock = Переключить блокировку наручей
+    .desc = Заблокируйте или разблокируйте полоску наруча и снимите защитные приспособления.
+
+ent-CMUActionYautjaToggleBracerIdChip = Переключить идентификационный чип
+    .desc = Разверните или уберите встроенный идентификационный чип наруча.
+
+ent-CMUActionYautjaTranslator = Переводчик
+    .desc = Передайте переведенное сообщение о наручах ближайшим существам.
+
+ent-CMUActionYautjaCreateStabilisingCrystal = Создать стабилизирующий кристалл
+    .desc = Потратьте силу наручей, чтобы вырастить стабилизирующий кристалл.
+
+ent-CMUActionYautjaCreateHumanStabilisingCrystal = Создать человеческий кристалл
+    .desc = Потратьте силу наручей, чтобы вырастить кристалл, предназначенный для людей и рабов.
+
+ent-CMUActionYautjaCreateHealingCapsule = Создать лечебную капсулу
+    .desc = Потратьте силу наручей, чтобы напечатать одноразовую целебную капсулу.
+
+ent-CMUActionYautjaCreateHuntingTrap = Создать охотничью ловушку
+    .desc = Потратьте силу наручей, чтобы распечатать охотничью ловушку.
+
+ent-CMUActionYautjaOpenMarkPanel = Охотничьи знаки
+    .desc = Отметьте ближайшую добычу, почетные цели и другие обозначения Яутджа.
+
+ent-CMUActionYautjaLinkThrallBracer = Link Тралл Наручи
+    .desc = Соедините свои охотничьи наручи с наручами отмеченного раба.
+
+ent-CMUActionYautjaTransmitThrallMessage = Тралловая передача
+    .desc = Отправьте личное сообщение между охотником и рабом.
+
+ent-CMUActionYautjaToggleThrallBracerLock = Переключить блокировку наручей Тралла
+    .desc = Заблокируйте или разблокируйте связанный наруч раба.
+
+ent-CMUActionYautjaStunThrall = Оглушить Тралла
+    .desc = Накажите своего связанного раба дистанционным шоком наручей.
+
+ent-CMUActionYautjaSelfDestructThrall = Тралл Самоуничтожение
+    .desc = Активируйте или отмените самоуничтожение связанного с вами наруча раба.
+
+ent-CMUActionYautjaRecall = Вызов диска
+    .desc = Вспомните ближайший смарт-диск под рукой.
+
+ent-CMUActionYautjaSelfDestruct = Наруч самоуничтожения
+    .desc = Активируйте или отмените отложенный заряд самоуничтожения наручей.
+
+ent-CMUActionYautjaToggleCaster = Развернуть Кастер
+    .desc = Разверните или уберите хранящийся на плече плазменный заклинатель.
+
+ent-CMUActionYautjaToggleWristBlades = Разверните запястья-лезвия
+    .desc = Разверните или уберите хранящиеся на запястьях лезвия.
+
+ent-CMUActionYautjaToggleScimitar = Развернуть Скимитар
+    .desc = Разверните или уберите сохраненный комбинированный ятаган.
+
+ent-CMUActionYautjaToggleShield = Развернуть Щит
+    .desc = Разверните или уберите сохраненный наручный щит.
+
+ent-CMUActionYautjaToggleChainGauntlet = Развернуть Перчатку
+    .desc = Разверните или уберите хранимую цепную перчатку.
+
+ent-CMUActionYautjaVoiceClick = Голос: Щелчки
+    .desc = Издайте серию щелчков Яутжа.
+
+ent-CMUActionYautjaVoiceRoar = Голос: Рев
+    .desc = Издайте охотничий рев.
+
+ent-CMUActionYautjaVoiceLaugh = Голос: Смейся
+    .desc = Сыграйте смех Яутжа.
+
+ent-CMUActionYautjaVoiceGrowl = Голос: Рычание
+    .desc = Издайте низкое рычание Яутжа.
+
+ent-CMUActionYautjaVoicePain = Голос: Боль
+    .desc = Сыграйте крик боли Яутжа.
+
+ent-CMUActionYautjaVoiceDeathCry = Голос: Крик смерти
+    .desc = Сыграйте предсмертный крик яутжа.
+
+ent-CMUActionYautjaVoiceDeathLaugh = Голос: Смех смерти
+    .desc = Сыграйте смертельный смех Яутжа.
+
+ent-CMUActionYautjaAbominationRush = Дикий рывок
+    .desc = Кратковременно бросьтесь вперед с предалианской скоростью.
+
+ent-CMUActionYautjaAbominationRoar = Предалиенский рев
+    .desc = Вынуждайте ближайших охотников снять плащ и усиливайте ближайших ксеносов в зависимости от ваших убийств.
+
+ent-CMUActionYautjaAbominationSmash = Дикий удар
+    .desc = Ударьте ближайшую цель, нанеся урон, равный убийству, и сбив ее с ног.
+
+ent-CMUActionYautjaAbominationFrenzy = Дикое безумие
+    .desc = Растерзайте цель или сметайте ближайшие цели, когда для режима Безумия установлен режим области.
+
+ent-CMUActionYautjaAbominationToggleFrenzy = Переключить режим безумия
+    .desc = Переключайте Feral Frenzy между ударами по одной цели и по области.

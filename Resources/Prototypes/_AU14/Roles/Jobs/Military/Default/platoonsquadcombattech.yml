@@ -5,7 +5,7 @@
   description: au14-job-description-govforsquadcombattech
   setPreference: true
   overwatchSortPriority: -5
-  overwatchRoleName: Combat Technician
+  overwatchRoleName: au14-job-name-govforsquadcombattech
   requirements:
   - !type:TraitsRequirement
     inverted: true

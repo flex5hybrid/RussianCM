@@ -4,6 +4,7 @@
   name: au14-job-name-govforMilitaryDoctor
   description: au14-job-description-govforMilitaryDoctor
   setPreference: true
+  hasSquad: false
   requirements:
   - !type:AgeRequirement
     requiredAge: 25
@@ -37,7 +38,7 @@
   - CMAccessChemistry
   overwatchSortPriority: -6
   overwatchShowName: true
-  overwatchRoleName: Doctor
+  overwatchRoleName: au14-job-name-govforMilitaryDoctor
   roleWeight: 0.25
   special:
   - !type:AddComponentSpecial

@@ -140,9 +140,9 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
         }
         // --- Platoon job override logic end ---
 
-        _prototypeManager.TryIndex(job ?? string.Empty, out var prototype, false);
+        _prototypeManager.Resolve(job, out var prototype);
         // Get the original job prototype for access/faction/ID
-        _prototypeManager.TryIndex(originalJob ?? string.Empty, out var originalPrototype, false);
+        _prototypeManager.Resolve(originalJob, out var originalPrototype);
         RoleLoadout? loadout = null;
 
         // Need to get the loadout up-front to handle names if we use an entity spawn override.
@@ -161,7 +161,7 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
         }
 
         // RMC14 UseLoadoutOfJob
-        if (prototype?.UseLoadoutOfJob != null && _prototypeManager.TryIndex(prototype.UseLoadoutOfJob, out var usedPrototype, false))
+        if (prototype?.UseLoadoutOfJob != null && _prototypeManager.Resolve(prototype.UseLoadoutOfJob, out var usedPrototype))
         {
             var newJobLoadout = LoadoutSystem.GetJobPrototype(usedPrototype.ID);
 
@@ -520,6 +520,8 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
                 {
                     _npcFaction.AddFaction((entity.Value, CompOrNull<NpcFactionMemberComponent>(entity.Value)), addFaction);
                 }
+                if (selectedPlatoon.NpcFaction is { } platoonNpcFaction)
+                    _npcFaction.AddFaction((entity.Value, CompOrNull<NpcFactionMemberComponent>(entity.Value)), platoonNpcFaction);
             }
         }
         return entity.Value;
@@ -527,7 +529,7 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
 
     private void DoJobSpecials(ProtoId<JobPrototype>? job, EntityUid entity)
     {
-        if (!_prototypeManager.TryIndex(job ?? string.Empty, out JobPrototype? prototype, false))
+        if (!_prototypeManager.Resolve(job, out JobPrototype? prototype))
             return;
 
         foreach (var jobSpecial in prototype.Special)

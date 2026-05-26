@@ -63,6 +63,10 @@
     - TWESOF
     - UPPSOF
     - VAI
+    - PART
+    - CMUYautja
+    - CMUYautjaOverseer
+    - CMUYautjaBadBlood
 
 # ├──[ GOVFOR COMMS ]────────────────────────────────────────────────┤
 - type: entity
@@ -112,6 +116,10 @@
     - TWESOF
     - UPPSOF
     - VAI
+    - PART
+    - CMUYautja
+    - CMUYautjaOverseer
+    - CMUYautjaBadBlood
 
 # ├──[ COLONY COMMS ]────────────────────────────────────────────────┤
 - type: entity

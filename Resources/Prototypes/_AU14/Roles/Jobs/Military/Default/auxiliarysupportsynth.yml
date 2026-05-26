@@ -33,7 +33,7 @@
     RMCRankChiefWarrantOfficer:
     - !type:RoleTimeRequirement
       role: AU14JobGOVFORAuxSupportSynth
-      time: 32000 #10 hours
+      time: 36000 #10 hours
     RMCRankWarrantOfficer: []
   startingGear: AU14GearGOVFORAuxSupportSynth
   dummyStartingGear: AU14GearGOVFORAuxSupportSynthDummy
@@ -83,8 +83,8 @@
 - type: startingGear
   id: AU14GearGOVFORAuxSupportSynth
   equipment:
-    ears: RMCM5CameraGear
-    ears2: AU14HeadsetGovforCommand
+    ears: AU14HeadsetGovforCommand
+    ears2: RMCM5CameraGear
 
 - type: entity
   parent: CMSpawnPointJobBase

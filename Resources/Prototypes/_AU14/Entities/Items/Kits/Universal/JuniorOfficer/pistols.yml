@@ -151,3 +151,7 @@
         amount: 1
       - id: RMCMagazineSMGNailgun
         amount: 2
+      - id: RMCPamphletAdminEngineer3 # RuMC edit
+        amount: 1
+      - id: RMCPamphletAdminConstruction3 # RuMC edit
+        mount: 1

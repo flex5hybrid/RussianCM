@@ -92,6 +92,14 @@
     max: 5
 
 - type: entity
+  parent: XenoChargedSpitProjectile
+  id: XenoQueenSpitProjectile
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ProjectileMaxRange
+    max: 10
+
+- type: entity
   id: XenoSlowingSpitProjectile
   parent: XenoBaseProjectile
   name: slowing spit
@@ -415,6 +423,7 @@
     bodyType: Dynamic
     linearDamping: 0
     angularDamping: 0
+  - type: CMUZPhysics
   - type: Fixtures
     fixtures:
       projectile:
@@ -493,4 +502,3 @@
         - BulletImpassable
         - XenoProjectileImpassable
         - BarricadeImpassable
-

@@ -6,6 +6,8 @@ concurrency:
 
 on:
   workflow_dispatch: # Ручной запуск
+  # schedule:
+  # - cron: '0 10 * * *'
 
 jobs:
   build:
@@ -14,62 +16,66 @@ jobs:
       contents: write    # для git tag и git push
 
     steps:
-    - name: Install dependencies
-      run: sudo apt-get install -y python3-paramiko python3-lxml
+      - name: Install dependencies
+        run: sudo apt-get install -y python3-paramiko python3-lxml
 
-    - uses: actions/checkout@v4.2.2
-      with:
-        submodules: 'recursive'
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v4.1.0
-      with:
-        dotnet-version: 10.0.x
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: true
+          submodules: false
 
-    - name: Get Engine Tag
-      run: |
-        cd RobustToolbox
-        git fetch --depth=1
+      - name: Checkout submodules
+        run: |
+          git config --global url."https://x-access-token:${{ github.token }}@github.com/".insteadOf "https://github.com/"
+          git submodule update --init --recursive --depth=1
 
-    - name: Install dependencies
-      run: dotnet restore
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
 
-    - name: Build Packaging
-      run: dotnet build Content.Packaging --configuration Release --no-restore /m
+      - name: Get Engine Tag
+        run: cd RobustToolbox && git fetch --depth=1
 
-    - name: Package server
-      run: dotnet run --project Content.Packaging server --platform win-x64 --platform linux-x64
+      - name: Restore dependencies
+        run: dotnet restore
 
-    - name: Package client
-      run: dotnet run --project Content.Packaging client --no-wipe-release
+      - name: Build Packaging
+        run: dotnet build Content.Packaging --configuration Release --no-restore /m
 
-    - name: Publish version
-      run: Tools/publish_multi_request.py
-      env:
-        PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
-        GITHUB_REPOSITORY: ${{ github.repository }}
+      - name: Package server
+        run: dotnet run --project Content.Packaging server --platform win-x64 --platform linux-x64
 
-    - name: Create release tag
-      if: success()
-      run: |
-        TAG="v$(date +%Y.%m.%d-%H%M%S)"
-        git config user.name "github-actions"
-        git config user.email "github-actions@github.com"
-        git tag "$TAG" -m "Release $TAG"
-        git push origin "$TAG"
+      - name: Package client
+        run: dotnet run --project Content.Packaging client --no-wipe-release
 
-    - name: Publish changelog (Discord — YAML)
-      continue-on-error: true
-      run: Tools/actions_changelogs_since_last_run.py
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-        DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
+      - name: Publish version
+        run: Tools/publish_multi_request.py
+        env:
+          PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
 
-    - name: Publish AI changelog (Discord — Mistral)
-      continue-on-error: true
-      run: python3 Tools/ai_changelog.py
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-        GITHUB_REPOSITORY: ${{ github.repository }}
-        GITHUB_RUN_ID: ${{ github.run_id }}
-        MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
-        DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
+      - name: Create release tag
+        if: success()
+        run: |
+          TAG="v$(date +%Y.%m.%d-%H%M%S)"
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git tag "$TAG" -m "Release $TAG"
+          git push origin "$TAG"
+
+      - name: Publish changelog (Discord — YAML)
+        continue-on-error: true
+        run: Tools/actions_changelogs_since_last_run.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
+
+      - name: Publish AI changelog (Discord — Mistral)
+        continue-on-error: true
+        run: python3 Tools/ai_changelog.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}

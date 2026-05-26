@@ -69,6 +69,7 @@
   - type: ContainerContainer
     containers:
       submission: !type:Container
+      disposals: !type:Container
   - type: DisposalUnit
     whitelist:
       tags:

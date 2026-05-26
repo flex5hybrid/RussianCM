@@ -95,7 +95,7 @@ public sealed partial class CMSurgerySystem : SharedCMSurgerySystem
         if (!HasMissingSynthLimbSlot(ent.Owner))
             return;
 
-        if (!IsSynthSurgeryOpenTool(args.Used))
+        if (!IsSynthSurgeryOpenTool(args.Used) && !IsSynthReattachStepTool(args.Used))
             return;
 
         if (!_cmuDispatch.TryDispatch(args.User, ent.Owner, args.Used))

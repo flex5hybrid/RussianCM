@@ -1,4 +1,4 @@
-﻿cm-ui-rmc14 = RMC14
+﻿cm-ui-rmc14 = РМЦ14
 
 rmc-ui-options-cassettes-volume = Громкость кассет
 rmc-ui-options-hijack-song-volume = Громкость музыки захвата
@@ -84,8 +84,8 @@ rmc-ui-ghost-color-save = Сохранить
 rmc-ui-shoutout-marine = [bold]Операция спонсируется [color=green]{$name}[/color]![/bold]
 rmc-ui-shoutout-xeno = [bold]Улей основан [color=purple]{$name}[/color]![/bold]
 
-rmc-ui-discord = Discord
-rmc-ui-patreon = Patreon
+rmc-ui-discord = Раздор
+rmc-ui-patreon = Патреон
 rmc-other-credits-tab = Прочее
 
 rmc-ui-auto-punctuate = Автоматически расставлять знаки препинания в IC-сообщениях

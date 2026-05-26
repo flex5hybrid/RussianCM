@@ -743,7 +743,7 @@ cm-chatsan-replacement-weya = Вэйю
 
 cm-chatsan-word-unmc = unmc
 
-cm-chatsan-replacement-unmc = USCM
+cm-chatsan-replacement-unmc = УСММ
 
 cm-chatsan-word-spp = виды
 

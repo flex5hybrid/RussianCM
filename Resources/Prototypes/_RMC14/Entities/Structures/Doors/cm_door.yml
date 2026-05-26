@@ -145,7 +145,7 @@
   - type: AirlockReceiverXenoClaws
   - type: Damageable
     damageContainer: StructuralMarine
-    damageModifierSet: StructuralMarine
+    damageModifierSet: StructuralMarineDoor # RuMC edit. Doors cant be broken by bare hands
   - type: Destructible
     thresholds:
     - trigger:

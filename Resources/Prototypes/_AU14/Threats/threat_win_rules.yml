@@ -79,8 +79,6 @@
     percent: 85
     arrest: true
     winMessage: The CLF have won by eliminating Government Forces!
-
   - type: KillAllClfRule
-    arrest: true
     percent: 80
-
+    winMessage: CLF combatants neutralized! The insurgency has been wiped out.

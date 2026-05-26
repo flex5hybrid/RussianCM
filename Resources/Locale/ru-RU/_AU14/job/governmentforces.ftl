@@ -176,3 +176,13 @@ au14-job-prefix-juniorofficer-adj = АДЪЮ
 
 au14-job-name-specialist-pyro = Пиротехник
 au14-job-prefix-specialist-pyro = ПИРО
+
+# Missing entries synced from en-US
+
+au14-job-name-govforsquadautomaticrifleman-plural = Автоматические стрелки
+
+au14-job-name-govforplatooncorpsman-plural = Больничные санитары
+
+au14-job-name-radiotelephoneoperator-alt = Радиотелефонист
+
+au14-job-name-govfork9handler = Обработчик К9

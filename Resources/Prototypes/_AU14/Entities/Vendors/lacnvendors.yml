@@ -1030,3 +1030,7 @@
         amount: 1
       - id: RMCTentUNMCExtendedMessFolded
         amount: 1
+    - name: Flag
+      entries:
+      - id: AU14FlagCarriableUA
+        amount: 1

@@ -6,6 +6,7 @@ using Content.Shared._RMC14.Projectiles;
 using Content.Shared._RMC14.Random;
 using Content.Shared._RMC14.Weapons.Ranged;
 using Content.Shared._RMC14.Weapons.Ranged.Prediction;
+using Content.Shared._CMU14.ZLevels.Core.EntitySystems;
 using Content.Shared._RMC14.Xenonids.Construction;
 using Content.Shared._RMC14.Xenonids.Hive;
 using Content.Shared._RMC14.Xenonids.Plasma;
@@ -48,6 +49,7 @@ public sealed partial class XenoProjectileSystem : EntitySystem
     [Dependency] private SharedTransformSystem _transform = default!;
     [Dependency] private XenoSystem _xeno = default!;
     [Dependency] private XenoPlasmaSystem _xenoPlasma = default!;
+    [Dependency] private CMUZLevelShootingSystem _zLevelShooting = default!;
 
     private EntityQuery<ProjectileComponent> _projectileQuery;
     private EntityQuery<PreventAttackLightOffComponent> _preventAttackLightOffQuery;
@@ -226,13 +228,17 @@ public sealed partial class XenoProjectileSystem : EntitySystem
         float? stopAtDistance = null,
         EntityUid? target = null,
         bool predicted = true,
-        int? projectileHitLimit = null)
+        int? projectileHitLimit = null,
+        bool uniformSpread = false)
     {
         if (!predicted && _net.IsClient)
             return false;
 
         var origin = _transform.GetMapCoordinates(xeno);
         var targetMap = _transform.ToMapCoordinates(targetCoords);
+        if (!_zLevelShooting.TryAdjustShotMapCoordinates(xeno, origin, targetMap, out origin, out targetMap))
+            return false;
+
         if (origin.MapId != targetMap.MapId ||
             origin.Position == targetMap.Position)
         {
@@ -262,10 +268,14 @@ public sealed partial class XenoProjectileSystem : EntitySystem
 
         for (var i = 0; i < shots; i++)
         {
-            // center projectile has no deviation; others are randomly offset within deviation
             var angleOffset = Angle.Zero;
-            if (i > 0 && deviation != Angle.Zero)
-                angleOffset = _rmcPseudoRandom.NextAngle(ref xoroshiro, -halfDeviation, halfDeviation);
+            if (deviation != Angle.Zero)
+            {
+                if (uniformSpread && shots > 1)
+                    angleOffset = -halfDeviation + deviation * ((double) i / (shots - 1));
+                else if (i > 0)
+                    angleOffset = _rmcPseudoRandom.NextAngle(ref xoroshiro, -halfDeviation, halfDeviation);
+            }
 
             var projTarget = new MapCoordinates(origin.Position + angleOffset.RotateVec(originalDiff), targetMap.MapId);
 

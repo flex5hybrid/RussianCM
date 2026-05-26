@@ -46,3 +46,9 @@ cmd-votemenu-help = Использование: votemenu
 ui-vote-type-platoon = Взвод
 
 # Votekick reasons
+
+# Missing entries synced from en-US
+
+ui-vote-call-disabled = Голосование по вызову в настоящее время отключено.
+
+# Submit button in the vote create button

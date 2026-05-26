@@ -700,6 +700,9 @@
   - HardHatWhiteRMC
   - HardHatBlueRMC
   - HeadCapOfficerRMC
+  - BeretIOAU14
+  - BeretSOAU14
+  - BeretADJAU14
 
 - type: loadoutGroup
   id: SynthBackpackAU14

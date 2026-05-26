@@ -9,6 +9,9 @@ using Content.Shared.Verbs;
 
 namespace Content.Server.Explosion.EntitySystems;
 
+[ByRefEvent]
+public record struct BeforeUseTimerTriggerEvent(EntityUid Timer, EntityUid User, bool Cancelled = false);
+
 public sealed partial class TriggerSystem
 {
     [Dependency] private SharedPopupSystem _popupSystem = default!;
@@ -158,6 +161,14 @@ public sealed partial class TriggerSystem
     {
         if (args.Handled || HasComp<AutomatedTimerComponent>(uid) || component.UseVerbInstead)
             return;
+
+        var attempt = new BeforeUseTimerTriggerEvent(uid, args.User);
+        RaiseLocalEvent(ref attempt);
+        if (attempt.Cancelled)
+        {
+            args.Handled = true;
+            return;
+        }
 
         if (!CanStartTimer(uid, component))
         {

@@ -57,6 +57,13 @@
 
 # ├─[ HEADSETS ]────────────────────────────────────────────────────┤
 - type: entity
+  parent: CMHeadset
+  id: AU14HeadsetColonist
+  abstract: true
+  components:
+  - type: GrantAreaInfo
+
+- type: entity
   parent: RMCHeadsetLiaison
   id: AU14ColonyAdminHeadset
   name: colony administration headset
@@ -81,7 +88,7 @@
       - AU14EncryptionKeyWEYU
 
 - type: entity
-  parent: RMCHeadsetMarine
+  parent: AU14HeadsetGovforMarine
   id: AU14CMBHeadset
   name: CMB headset
   description: A headset used by the CMB to communicate.
@@ -93,7 +100,7 @@
       - AU14EncryptionKeyCMB
 
 - type: entity
-  parent: RMCHeadsetMarine
+  parent: AU14HeadsetGovforMarine
   id: AU14CMBHeadsetOnlyCMB
   name: CMB Earpiece
   description: A headset used by the CMB to communicate.
@@ -108,7 +115,7 @@
     state: cmb_headset
 
 - type: entity
-  parent: RMCHeadsetMarine
+  parent: AU14HeadsetColonist
   id: AU14HeadsetWorkingJoe
   name: Working Joe headset
   description: A common headset used by Working Joes.

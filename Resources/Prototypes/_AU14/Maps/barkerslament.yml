@@ -2,6 +2,10 @@
   id: CMULV376BarkersLament
   mapName: LV-376 Ulixes
   mapPath: /Maps/_CMU14/lament.yml
+  mapsBelow:
+  - /Maps/_CMU14/lament_below.yml
+  mapsAbove:
+  - /Maps/_CMU14/lament_above.yml
   minPlayers: 0
   maxPlayers: 75
   maxRandomOffset: 0

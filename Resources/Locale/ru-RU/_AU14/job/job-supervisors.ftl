@@ -10,3 +10,7 @@ au14-job-supervisors-workingjoe-military = Командир взвода, ядр
 au14-job-supervisors-workingjoe-colony = Администратор колонии, ядро ИИ колонии
 au14-job-supervisors-orbital = Орбитальный менеджер
 au14-job-supervisors-orbitalmanager = Менеджер солнечной системы
+
+# Missing entries synced from en-US
+
+au14-job-supervisors-tribal = старейшина племени

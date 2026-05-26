@@ -34,7 +34,7 @@
   accessGroups:
   - AU14OpforGunner
   overwatchSortPriority: -6
-  overwatchRoleName: Automatic Riflemen
+  overwatchRoleName: au14-job-name-govforsquadautomaticrifleman-plural
   overwatchShowName: true
   roleWeight: 0.25
   special:

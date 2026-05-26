@@ -47,6 +47,7 @@ cmu-medical-examine-part-leg-left = Left leg
 cmu-medical-examine-part-leg-right = Right leg
 cmu-medical-examine-part-foot-left = Left foot
 cmu-medical-examine-part-foot-right = Right foot
+cmu-medical-examine-part-severed = SEVERED
 
 cmu-medical-examine-list-and =  and
 cmu-medical-examine-list-comma-and = { $list }, and { $last }

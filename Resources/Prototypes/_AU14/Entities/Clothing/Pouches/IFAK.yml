@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: [RMCPouchOpenClosed, RMCPouchStorage]
   id: AU14PouchIFAK
   name: infantry first aid kit pouch

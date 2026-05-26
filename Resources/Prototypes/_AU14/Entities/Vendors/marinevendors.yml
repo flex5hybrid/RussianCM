@@ -870,6 +870,8 @@
         amount: 40
       - id: AU14Tourniquet
         amount: 40
+      - id: CMUSplintItem
+        amount: 40
       - id: CMOintment10
         amount: 40
       - id: CMPacketPillsTricordrazine
@@ -1440,4 +1442,8 @@
       - id: AU14TentBigFoldedSurgical
         amount: 1
       - id: RMCTentUNMCExtendedMessFolded
+        amount: 1
+    - name: Flag
+      entries:
+      - id: AU14FlagCarriableUA
         amount: 1

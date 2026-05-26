@@ -18,6 +18,7 @@
   - AUColonist
   - CLF
   - CMUAPE
+  - Abomination
 
 - type: npcFaction
   id: CMUProdigy
@@ -26,7 +27,7 @@
   - RMCXeno
   - AUGoo
   - CMUAPE
-
+  - Abomination
 - type: npcFaction
   id: CMUVAI
   name: Vanguard's Arrow Incorporated
@@ -42,6 +43,7 @@
   - RMCXeno
   - AUGoo
   - CMUAPE
+  - Abomination
 
 - type: npcFaction
   id: CLF
@@ -57,6 +59,7 @@
   - RMCXeno
   - AUGoo
   - CMUAPE
+  - Abomination
 
 - type: npcFaction
   id: ColonySynth
@@ -69,6 +72,7 @@
   - RMCXeno
   - AUGoo
   - CMUAPE
+  - Abomination
 
 - type: npcFaction
   id: CMUTWE
@@ -77,6 +81,7 @@
   - RMCXeno
   - AUGoo
   - CMUAPE
+  - Abomination
 
 - type: npcFaction
   id: CMUUSCMC
@@ -85,6 +90,7 @@
   - RMCXeno
   - AUGoo
   - CMUAPE
+  - Abomination
 
 - type: npcFaction
   id: CMUCorruptedHive
@@ -115,6 +121,7 @@
   - RMCXeno
   - CLF
   - AUGoo
+  - Abomination
 
 - type: npcFaction
   id: USAF
@@ -123,6 +130,16 @@
   - RMCXeno
   - CLF
   - AUGoo
+  - Abomination
+
+- type: npcFaction
+  id: AUUnitedAmericas
+  name: United Americas
+  hostile:
+  - RMCXeno
+  - CLF
+  - AUGoo
+  - Abomination
 
 - type: npcFaction
   id: THREAT

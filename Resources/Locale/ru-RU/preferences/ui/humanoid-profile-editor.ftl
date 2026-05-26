@@ -90,3 +90,19 @@ humanoid-profile-editor-preference-armor-ridged = Ребристая
 humanoid-profile-editor-preference-armor-carrier = Разгрузочная
 humanoid-profile-editor-preference-armor-skull = С черепом
 humanoid-profile-editor-preference-armor-smooth = Гладкая
+
+# Missing entries synced from en-US
+
+humanoid-profile-editor-job-fallback-label = Резервное задание
+
+humanoid-profile-editor-insurgency-tab = Повстанческое движение
+
+humanoid-profile-editor-colony-fall-tab = Колония Фолл
+
+humanoid-profile-editor-distress-signal-tab = Сигнал бедствия
+
+humanoid-profile-editor-government-jobs-tab = Государственные вакансии
+
+humanoid-profile-editor-insurgency-jobs-tab = Вакансии повстанцев
+
+humanoid-profile-editor-threat-roles-tab = Угрозы

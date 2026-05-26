@@ -14,3 +14,9 @@ species-name-gingerbread = вкуснейшая выпечка
 ## Misc species things
 
 snail-hurt-by-salt-popup = Солевой раствор жжёт как кислота!
+
+# Missing entries synced from en-US
+
+species-name-tribal = племенной
+
+## Misc species things

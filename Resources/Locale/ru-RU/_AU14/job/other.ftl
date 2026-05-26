@@ -276,3 +276,17 @@ au14-vaisp-greeting = Вы являетесь частью Vanguard's Arrow Inco
     Ensure their safety at all cost.
 
     You are FRIENDLY to all UA units.
+
+# Missing entries synced from en-US
+
+au14-prodigyparty-description = Вы являетесь частью «Prodigy Armed Repair Team» (ЧАСТЬ)! Вас призвали на специальную миссию в этом районе, выполняйте приказы.
+
+au14-prodigyparty-greeting = Вы — участник вечеринки «Prodigy Armed Repair Team» (PART)!
+
+    You were called for a special mission in the area, follow your orders.
+
+    Protecting your hiring member is a top priority along with your mission.
+
+    Prodigy Security - Repairing Our World
+
+    You are HOSTILE to all WeYu units

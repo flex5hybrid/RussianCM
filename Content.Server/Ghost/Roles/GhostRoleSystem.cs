@@ -141,6 +141,13 @@ public sealed partial class GhostRoleSystem : EntitySystem
 
     public void OpenEui(ICommonSession session)
     {
+        if (!CanUseGhostRoleUi(session))
+        {
+            LeaveAllRaffles(session);
+            CloseEui(session);
+            return;
+        }
+
         if (_openUis.ContainsKey(session))
             CloseEui(session);
 
@@ -285,6 +292,11 @@ public sealed partial class GhostRoleSystem : EntitySystem
 
 
 
+    private bool CanUseGhostRoleUi(ICommonSession player)
+    {
+        return CanRequestGhostRole(player);
+    }
+
     private bool CanRequestGhostRole(ICommonSession player)
     {
         if (player.Status is SessionStatus.Disconnected or SessionStatus.Zombie)
@@ -412,7 +424,7 @@ public sealed partial class GhostRoleSystem : EntitySystem
 
         var raffle = ent.Comp;
         raffle.Identifier = ghostRole.Identifier;
-        var countdown = _cfg.GetCVar(CCVars.GhostQuickLottery)? 1 : settings.InitialDuration;
+        var countdown = _cfg.GetCVar(CCVars.GhostQuickLottery) ? 1 : settings.InitialDuration;
         raffle.Countdown = TimeSpan.FromSeconds(countdown);
         raffle.CumulativeTime = TimeSpan.FromSeconds(settings.InitialDuration);
         // we copy these settings into the component because they would be cumbersome to access otherwise
@@ -464,8 +476,8 @@ public sealed partial class GhostRoleSystem : EntitySystem
         if (raffle.AllMembers.Add(player) && raffle.AllMembers.Count > 1
             && raffle.CumulativeTime.Add(raffle.JoinExtendsDurationBy) <= raffle.MaxDuration)
         {
-                raffle.Countdown += raffle.JoinExtendsDurationBy;
-                raffle.CumulativeTime += raffle.JoinExtendsDurationBy;
+            raffle.Countdown += raffle.JoinExtendsDurationBy;
+            raffle.CumulativeTime += raffle.JoinExtendsDurationBy;
         }
 
         UpdateAllEui();
@@ -552,56 +564,42 @@ public sealed partial class GhostRoleSystem : EntitySystem
         if (!CanRequestGhostRole(player, role.Comp))
             return false;
 
+        var playerNotInGame = _gameTicker.PlayerGameStatuses.TryGetValue(player.UserId, out var status)
+            && status != PlayerGameStatus.JoinedGame;
+
         var ev = new TakeGhostRoleEvent(player);
         RaiseLocalEvent(role, ref ev);
-
         if (!ev.TookRole)
             return false;
 
         if (player.AttachedEntity != null)
             _adminLogger.Add(LogType.GhostRoleTaken, LogImpact.Low, $"{player:player} took the {role.Comp.RoleName:roleName} ghost role {ToPrettyString(player.AttachedEntity.Value):entity}");
 
-        // Try to get the mind we just created/transferred and attach the session directly to its entity.
-        // This forces the client out of the lobby UI into the game view if takeover succeeded while in preview.
-        // Try to get the mind we just created/transferred and attach the session directly to its entity.
-        if (_mindSystem.TryGetMind(player.UserId, out var mid, out var mindComp) && mindComp?.CurrentEntity != null)
+        if (playerNotInGame)
         {
-            var entity = mindComp.CurrentEntity.Value;
-
-            // First ensure the session is marked InGame so GameTicker/client expect gameplay state.
-            if (player.Status != SessionStatus.InGame && player.Status != SessionStatus.Disconnected && player.Status != SessionStatus.Zombie)
+            if (_mindSystem.TryGetMind(player.UserId, out _, out var mindComp)
+                && mindComp?.CurrentEntity != null)
             {
+                var entity = mindComp.CurrentEntity.Value;
+                if (player.Status != SessionStatus.Disconnected && player.Status != SessionStatus.Zombie)
+                {
+                    try { _playerManager.SetStatus(player, SessionStatus.InGame); }
+                    catch (Exception e) { Log.Error($"[GHOST] Failed to SetStatus as InGame for {player.Name}: {e}"); }
+                }
                 try
                 {
-                    _playerManager.SetStatus(player, SessionStatus.InGame);
-                    Log.Debug($"Takeover: SetStatus(InGame) called for {player.Name}");
-                }
-                catch (Exception e)
-                {
-                    Log.Error($"Failed to set player session to InGame after ghost role takeover for {player.Name}: {e}");
-                }
-            }
-
-            try
-            {
-                var attached = _playerManager.SetAttachedEntity(player, entity, true);
-                Log.Debug($"Takeover: SetAttachedEntity result for {player.Name} -> {entity}: {attached}");
-                if (attached)
-                {
-                    // Inform GameTicker to run its join logic which will send the client JoinGame event and update server state
-                    try
+                    if (_playerManager.SetAttachedEntity(player, entity, true))
                     {
-                        _gameTicker.PlayerJoinGame(player);
-                    }
-                    catch (Exception e)
-                    {
-                        Log.Warning($"Failed to call GameTicker.PlayerJoinGame for takeover winner {player.Name}: {e}");
+                        try { _gameTicker.PlayerJoinGame(player); }
+                        catch (Exception e) { Log.Warning($"[GHOST] Failed PlayerJoinGame for {player.Name}: {e}"); }
                     }
                 }
+                catch (Exception e) { Log.Warning($"[GHOST] Failed SetAttachedEntity for {player.Name}: {e}"); }
             }
-            catch (Exception e)
+            else
             {
-                Log.Warning($"Failed to SetAttachedEntity for takeover winner {player.Name}: {e}");
+                try { _gameTicker.PlayerJoinGame(player); }
+                catch (Exception e) { Log.Warning($"[GHOST] Failed PlayerJoinGame for {player.Name}: {e}"); }
             }
         }
 
@@ -611,6 +609,13 @@ public sealed partial class GhostRoleSystem : EntitySystem
 
     public void Follow(ICommonSession player, uint identifier)
     {
+        if (!CanUseGhostRoleUi(player))
+        {
+            LeaveAllRaffles(player);
+            CloseEui(player);
+            return;
+        }
+
         if (!_ghostRoles.TryGetValue(identifier, out var role))
             return;
 
@@ -697,6 +702,13 @@ public sealed partial class GhostRoleSystem : EntitySystem
     /// </param>
     public GhostRoleInfo[] GetGhostRolesInfo(ICommonSession? player)
     {
+        if (player != null && !CanUseGhostRoleUi(player))
+        {
+            LeaveAllRaffles(player);
+            CloseEui(player);
+            return [];
+        }
+
         var roles = new List<GhostRoleInfo>();
         var metaQuery = GetEntityQuery<MetaDataComponent>();
 
@@ -729,7 +741,7 @@ public sealed partial class GhostRoleSystem : EntitySystem
                 }
             }
 
-            var rafflePlayerCount = (uint?) raffle?.CurrentMembers.Count ?? 0;
+            var rafflePlayerCount = (uint?)raffle?.CurrentMembers.Count ?? 0;
             var raffleEndTime = raffle is not null
                 ? _timing.CurTime.Add(raffle.Countdown)
                 : TimeSpan.MinValue;
@@ -793,7 +805,7 @@ public sealed partial class GhostRoleSystem : EntitySystem
 
         if (ghostRole.JobProto != null)
         {
-            _roleSystem.MindAddJobRole(args.Mind, args.Mind, silent:false,ghostRole.JobProto);
+            _roleSystem.MindAddJobRole(args.Mind, args.Mind, silent: false, ghostRole.JobProto);
         }
 
         ghostRole.Taken = true;

@@ -88,3 +88,7 @@ command-description-mobstate = Фильтруйте объекты по их Mob
 command-description-vehiclesupply-addstorage = Добавляет прототип транспортного средства на ближайший склад транспортных средств.
 
 command-description-vehiclesupply-addstoragelift = Добавляет прототип транспортного средства в определенное хранилище грузовых автомобилей.
+
+# Missing entries synced from en-US
+
+command-description-alertlevel-get = Выводит текущий уровень тревоги на корабле на консоль.
