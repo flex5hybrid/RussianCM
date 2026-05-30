@@ -119,3 +119,46 @@
     replenishAmount: 25
     replenishInterval: 60
 
+# Admin ERT consol
+- type: entity
+  id: AU14AmbassadorConsoleAdmin
+  parent: AU14AmbassadorConsoleBase
+  name: Админ консоль для вызова ОБР.
+  description: Консоль исключительно для вызова ОБР во-время ивентов.
+  suffix: AdminOnly
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/computer.rsi
+    state: terminal1_old
+  - type: AmbassadorConsole
+    factionName: None
+    budget: 999999
+    replenishAmount: 25
+    replenishInterval: 60
+    callableParties:
+      VAISP: 1
+      VAIPO: 1
+      UPPGROM: 1
+      UPPGROMAlt: 1
+      UPPGROMAlt2: 1
+      RMCRRT: 1
+      NSPAInvestigationParty: 1
+      CMBInvestigationPartyAlt: 1
+      ICRCReliefParty: 1
+      NSPAInvestigationPartyArmored: 1
+      PAPInvestigationParty: 1
+      WYPMCParty: 1
+      WYHT: 1
+      IPIESynth: 1
+      VAISO: 1
+      USArmyArmored: 1
+      UPPTDLostTeam: 1
+      LACNSniperteam: 1
+      FORECONKillTeam: 1
+      FORECONFirstRecon: 1
+      CLFCellReinforcementsIntelMachineGunner: 1
+      CLFCellReinforcementsIntel: 1
+      PizzaDeliveryBoyThirdParty: 1
+      AU14IntelThirdPartyK9: 1
+      TimeSharesSalesman: 1
+      UACGLostTeam: 1
