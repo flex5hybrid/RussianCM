@@ -35,6 +35,7 @@
     - FootstepSound
   - type: Physics
     bodyType: KinematicController
+  - type: CMUZPhysics # RuMC edit
   - type: Clickable
   - type: Fixtures
     fixtures:
