@@ -3,6 +3,8 @@ using Content.Server.Chat.Systems;
 using Content.Shared._AU14.WorkingJoe;
 using Content.Shared.Actions;
 using Content.Shared.Chat.Prototypes;
+using Content.Shared._RuMC14.WorkingJoe;  // RuMC edit
+using Content.Shared.Tag; // RuMC edit
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
@@ -20,6 +22,7 @@ public sealed partial class WorkingJoeVoiceSystem : EntitySystem
     [Dependency] private ChatSystem _chat = default!;
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private readonly TagSystem _tag = default!; // RuMC edit
 
     public override void Initialize()
     {
@@ -43,7 +46,12 @@ public sealed partial class WorkingJoeVoiceSystem : EntitySystem
 
     private void OnAction(Entity<WorkingJoeVoiceComponent> ent, ref WorkingJoeVoiceActionEvent args)
     {
-        _ui.TryToggleUi(ent.Owner, WorkingJoeVoiceUiKey.Key, args.Performer);
+        // RuMC edit start
+        if (_tag.HasTag(ent.Owner, "WorkingJoeUPP"))
+            _ui.TryToggleUi(ent.Owner, WorkingJoeUPPVoiceUiKey.Key, args.Performer);
+        else
+            _ui.TryToggleUi(ent.Owner, WorkingJoeVoiceUiKey.Key, args.Performer);
+        // RuMC edit end
         args.Handled = true;
     }
 
@@ -177,7 +185,131 @@ public sealed partial class WorkingJoeVoiceSystem : EntitySystem
         { "WorkingJoeYouWillTakeResponsibility", "AU14WorkingJoeYouWillTakeResponsibility"},
         { "WorkingJoePresenceLogged", "AU14WorkingJoePresenceLogged"},
         { "WorkingJoeYoureNotAllowedThere", "AU14WorkingJoeYoureNotAllowedThere"},
-
+        // RuMC edit start UPP working Joe
+        { "WorkingJoeUPPay-ya-yay", "RuMC14WorkingJoeUPPay-ya-yay" },
+        { "WorkingJoeUPPbudetenakazani", "RuMC14WorkingJoeUPPbudetenakazani" },
+        { "WorkingJoeUPPchemdelo", "RuMC14WorkingJoeUPPchemdelo" },
+        { "WorkingJoeUPPchesti", "RuMC14WorkingJoeUPPchesti" },
+        { "WorkingJoeUPPchtoeto", "RuMC14WorkingJoeUPPchtoeto" },
+        { "WorkingJoeUPPchtoproishodit", "RuMC14WorkingJoeUPPchtoproishodit" },
+        { "WorkingJoeUPPchtotakoe", "RuMC14WorkingJoeUPPchtotakoe" },
+        { "WorkingJoeUPPchtovizdesdelaete", "RuMC14WorkingJoeUPPchtovizdesdelaete" },
+        { "WorkingJoeUPPcic", "RuMC14WorkingJoeUPPcic" },
+        { "WorkingJoeUPPdelaete", "RuMC14WorkingJoeUPPdelaete" },
+        { "WorkingJoeUPPdelapovazhnee", "RuMC14WorkingJoeUPPdelapovazhnee" },
+        { "WorkingJoeUPPdobivaetes", "RuMC14WorkingJoeUPPdobivaetes" },
+        { "WorkingJoeUPPdobriyden", "RuMC14WorkingJoeUPPdobriyden" },
+        { "WorkingJoeUPPdorogo_stoit", "RuMC14WorkingJoeUPPdorogo_stoit" },
+        { "WorkingJoeUPPdosadno", "RuMC14WorkingJoeUPPdosadno" },
+        { "WorkingJoeUPPdostatochno", "RuMC14WorkingJoeUPPdostatochno" },
+        { "WorkingJoeUPPdrugihdel", "RuMC14WorkingJoeUPPdrugihdel" },
+        { "WorkingJoeUPPdumayu", "RuMC14WorkingJoeUPPdumayu" },
+        { "WorkingJoeUPPetovashe", "RuMC14WorkingJoeUPPetovashe" },
+        { "WorkingJoeUPPetovi-yahochupomoch", "RuMC14WorkingJoeUPPetovi-yahochupomoch" },
+        { "WorkingJoeUPPgde_vi", "RuMC14WorkingJoeUPPgde_vi" },
+        { "WorkingJoeUPPgotoviy_pomoch", "RuMC14WorkingJoeUPPgotoviy_pomoch" },
+        { "WorkingJoeUPPhitroumnoe", "RuMC14WorkingJoeUPPhitroumnoe" },
+        { "WorkingJoeUPPhotel_pomoch", "RuMC14WorkingJoeUPPhotel_pomoch" },
+        { "WorkingJoeUPPhvatit", "RuMC14WorkingJoeUPPhvatit" },
+        { "WorkingJoeUPPjoinus", "RuMC14WorkingJoeUPPjoinus" },
+        { "WorkingJoeUPPkto_to_byl", "RuMC14WorkingJoeUPPkto_to_byl" },
+        { "WorkingJoeUPPkto_vi", "RuMC14WorkingJoeUPPkto_vi" },
+        { "WorkingJoeUPPktoetosdelal", "RuMC14WorkingJoeUPPktoetosdelal" },
+        { "WorkingJoeUPPkudasobralis", "RuMC14WorkingJoeUPPkudasobralis" },
+        { "WorkingJoeUPPlybopitno", "RuMC14WorkingJoeUPPlybopitno" },
+        { "WorkingJoeUPPmalihdetalah", "RuMC14WorkingJoeUPPmalihdetalah" },
+        { "WorkingJoeUPPmne", "RuMC14WorkingJoeUPPmne" },
+        { "WorkingJoeUPPmogu_pomoch", "RuMC14WorkingJoeUPPmogu_pomoch" },
+        { "WorkingJoeUPPna_chem_ya", "RuMC14WorkingJoeUPPna_chem_ya" },
+        { "WorkingJoeUPPnadeusuvasestrazre", "RuMC14WorkingJoeUPPnadeusuvasestrazre" },
+        { "WorkingJoeUPPnado_viesnit", "RuMC14WorkingJoeUPPnado_viesnit" },
+        { "WorkingJoeUPPnadoelo", "RuMC14WorkingJoeUPPnadoelo" },
+        { "WorkingJoeUPPnado-posmotret", "RuMC14WorkingJoeUPPnado-posmotret" },
+        { "WorkingJoeUPPnarusheniekarantina", "RuMC14WorkingJoeUPPnarusheniekarantina" },
+        { "WorkingJoeUPPne_begite", "RuMC14WorkingJoeUPPne_begite" },
+        { "WorkingJoeUPPne_bivaet", "RuMC14WorkingJoeUPPne_bivaet" },
+        { "WorkingJoeUPPne_horosho", "RuMC14WorkingJoeUPPne_horosho" },
+        { "WorkingJoeUPPne_igrushka", "RuMC14WorkingJoeUPPne_igrushka" },
+        { "WorkingJoeUPPne_nado", "RuMC14WorkingJoeUPPne_nado" },
+        { "WorkingJoeUPPne_otvet", "RuMC14WorkingJoeUPPne_otvet" },
+        { "WorkingJoeUPPne_polezu", "RuMC14WorkingJoeUPPne_polezu" },
+        { "WorkingJoeUPPne_recomenduyu", "RuMC14WorkingJoeUPPne_recomenduyu" },
+        { "WorkingJoeUPPne_tak", "RuMC14WorkingJoeUPPne_tak" },
+        { "WorkingJoeUPPne_ustraivaet", "RuMC14WorkingJoeUPPne_ustraivaet" },
+        { "WorkingJoeUPPnedergaytes", "RuMC14WorkingJoeUPPnedergaytes" },
+        { "WorkingJoeUPPneizvestnoesuchestvo", "RuMC14WorkingJoeUPPneizvestnoesuchestvo" },
+        { "WorkingJoeUPPneostorojni", "RuMC14WorkingJoeUPPneostorojni" },
+        { "WorkingJoeUPPnepriyatno", "RuMC14WorkingJoeUPPnepriyatno" },
+        { "WorkingJoeUPPnesmogpomoch", "RuMC14WorkingJoeUPPnesmogpomoch" },
+        { "WorkingJoeUPPnetsmislapryatatsa", "RuMC14WorkingJoeUPPnetsmislapryatatsa" },
+        { "WorkingJoeUPPnikogo", "RuMC14WorkingJoeUPPnikogo" },
+        { "WorkingJoeUPPnujna_pomotch", "RuMC14WorkingJoeUPPnujna_pomotch" },
+        { "WorkingJoeUPPnu-nu", "RuMC14WorkingJoeUPPnu-nu" },
+        { "WorkingJoeUPPochen_opasno", "RuMC14WorkingJoeUPPochen_opasno" },
+        { "WorkingJoeUPPochered", "RuMC14WorkingJoeUPPochered" },
+        { "WorkingJoeUPPognestrelnoeoruzie", "RuMC14WorkingJoeUPPognestrelnoeoruzie" },
+        { "WorkingJoeUPPopasniepredmeti", "RuMC14WorkingJoeUPPopasniepredmeti" },
+        { "WorkingJoeUPPopyatproblema", "RuMC14WorkingJoeUPPopyatproblema" },
+        { "WorkingJoeUPPoshibka", "RuMC14WorkingJoeUPPoshibka" },
+        { "WorkingJoeUPPostorozhnee", "RuMC14WorkingJoeUPPostorozhnee" },
+        { "WorkingJoeUPPosvetitelnogo", "RuMC14WorkingJoeUPPosvetitelnogo" },
+        { "WorkingJoeUPPotkritogog", "RuMC14WorkingJoeUPPotkritogog" },
+        { "WorkingJoeUPPpo_horoshemu", "RuMC14WorkingJoeUPPpo_horoshemu" },
+        { "WorkingJoeUPPpodoyducherez1", "RuMC14WorkingJoeUPPpodoyducherez1" },
+        { "WorkingJoeUPPpogovorim", "RuMC14WorkingJoeUPPpogovorim" },
+        { "WorkingJoeUPPpoiski", "RuMC14WorkingJoeUPPpoiski" },
+        { "WorkingJoeUPPpolezen", "RuMC14WorkingJoeUPPpolezen" },
+        { "WorkingJoeUPPpolno_raboti", "RuMC14WorkingJoeUPPpolno_raboti" },
+        { "WorkingJoeUPPpomoch", "RuMC14WorkingJoeUPPpomoch" },
+        { "WorkingJoeUPPponesyote", "RuMC14WorkingJoeUPPponesyote" },
+        { "WorkingJoeUPPpostradat", "RuMC14WorkingJoeUPPpostradat" },
+        { "WorkingJoeUPPpoydurabotat", "RuMC14WorkingJoeUPPpoydurabotat" },
+        { "WorkingJoeUPPprekratite", "RuMC14WorkingJoeUPPprekratite" },
+        { "WorkingJoeUPPprekratiteisteriku", "RuMC14WorkingJoeUPPprekratiteisteriku" },
+        { "WorkingJoeUPPpri_gorenii", "RuMC14WorkingJoeUPPpri_gorenii" },
+        { "WorkingJoeUPPprichina", "RuMC14WorkingJoeUPPprichina" },
+        { "WorkingJoeUPPproydemte", "RuMC14WorkingJoeUPPproydemte" },
+        { "WorkingJoeUPPradchtomiuladili", "RuMC14WorkingJoeUPPradchtomiuladili" },
+        { "WorkingJoeUPPrazberus", "RuMC14WorkingJoeUPPrazberus" },
+        { "WorkingJoeUPPrazigrivaete", "RuMC14WorkingJoeUPPrazigrivaete" },
+        { "WorkingJoeUPPraznoglasiya", "RuMC14WorkingJoeUPPraznoglasiya" },
+        { "WorkingJoeUPPremontu", "RuMC14WorkingJoeUPPremontu" },
+        { "WorkingJoeUPPseryozno", "RuMC14WorkingJoeUPPseryozno" },
+        { "WorkingJoeUPPskachok", "RuMC14WorkingJoeUPPskachok" },
+        { "WorkingJoeUPPsluchilos", "RuMC14WorkingJoeUPPsluchilos" },
+        { "WorkingJoeUPPsmert1", "RuMC14WorkingJoeUPPsmert1" },
+        { "WorkingJoeUPPstesnyaytes", "RuMC14WorkingJoeUPPstesnyaytes" },
+        { "WorkingJoeUPPstranno", "RuMC14WorkingJoeUPPstranno" },
+        { "WorkingJoeUPPtak_nelza", "RuMC14WorkingJoeUPPtak_nelza" },
+        { "WorkingJoeUPPtemp", "RuMC14WorkingJoeUPPtemp" },
+        { "WorkingJoeUPPterp", "RuMC14WorkingJoeUPPterp" },
+        { "WorkingJoeUPPterpeliviy", "RuMC14WorkingJoeUPPterpeliviy" },
+        { "WorkingJoeUPPtolko_zveri", "RuMC14WorkingJoeUPPtolko_zveri" },
+        { "WorkingJoeUPPtut_kto", "RuMC14WorkingJoeUPPtut_kto" },
+        { "WorkingJoeUPPuborka", "RuMC14WorkingJoeUPPuborka" },
+        { "WorkingJoeUPPugroza", "RuMC14WorkingJoeUPPugroza" },
+        { "WorkingJoeUPPushibitsa", "RuMC14WorkingJoeUPPushibitsa" },
+        { "WorkingJoeUPPusilitmeri", "RuMC14WorkingJoeUPPusilitmeri" },
+        { "WorkingJoeUPPuspokoytes", "RuMC14WorkingJoeUPPuspokoytes" },
+        { "WorkingJoeUPPuznatlegko", "RuMC14WorkingJoeUPPuznatlegko" },
+        { "WorkingJoeUPPvamsyduanelza", "RuMC14WorkingJoeUPPvamsyduanelza" },
+        { "WorkingJoeUPPvcluchat", "RuMC14WorkingJoeUPPvcluchat" },
+        { "WorkingJoeUPPventilyacii", "RuMC14WorkingJoeUPPventilyacii" },
+        { "WorkingJoeUPPvinarushaete", "RuMC14WorkingJoeUPPvinarushaete" },
+        { "WorkingJoeUPPyavamobyasnyu", "RuMC14WorkingJoeUPPyavamobyasnyu" },
+        { "WorkingJoeUPPyavasiskal", "RuMC14WorkingJoeUPPyavasiskal" },
+        { "WorkingJoeUPPyavaspoymau", "RuMC14WorkingJoeUPPyavaspoymau" },
+        { "WorkingJoeUPPza_zvuk", "RuMC14WorkingJoeUPPza_zvuk" },
+        { "WorkingJoeUPPzachem", "RuMC14WorkingJoeUPPzachem" },
+        { "WorkingJoeUPPzadacham", "RuMC14WorkingJoeUPPzadacham" },
+        { "WorkingJoeUPPzadachi", "RuMC14WorkingJoeUPPzadachi" },
+        { "WorkingJoeUPPzagorelos", "RuMC14WorkingJoeUPPzagorelos" },
+        { "WorkingJoeUPPzapros", "RuMC14WorkingJoeUPPzapros" },
+        { "WorkingJoeUPPzdes", "RuMC14WorkingJoeUPPzdes" },
+        { "WorkingJoeUPPzdravstvuyte", "RuMC14WorkingJoeUPPzdravstvuyte" },
+        { "WorkingJoeUPPzrya_potratil", "RuMC14WorkingJoeUPPzrya_potratil" },
+        { "WorkingJoeUPPzurnal", "RuMC14WorkingJoeUPPzurnal" },
+        // RuMC edit end UPP working Joe
     };
 
     private void OnPlayLine(Entity<WorkingJoeVoiceComponent> ent, ref WorkingJoePlayLineMessage args)
