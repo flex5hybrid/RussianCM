@@ -1,5 +1,5 @@
 - type: emoteSounds
-  id: AU14WorkingJoeUPPSounds
+  id: RuMC14WorkingJoeUPPSounds
   parent: RMCBaseHumanoidSounds
   sounds:
     WorkingJoeUPPay-ya-yay:

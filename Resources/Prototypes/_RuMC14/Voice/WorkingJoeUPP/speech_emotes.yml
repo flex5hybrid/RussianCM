@@ -1,0 +1,1106 @@
+- type: emote
+  id: WorkingJoeUPPay-ya-yay
+  name: working-joe-upp-ay-ya-yay
+  chatMessages:
+    - working-joe-upp-ay-ya-yay-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPbudetenakazani
+  name: working-joe-upp-budetenakazani
+  chatMessages:
+    - working-joe-upp-budetenakazani-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPchemdelo
+  name: working-joe-upp-chemdelo
+  chatMessages:
+    - working-joe-upp-chemdelo-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPchesti
+  name: working-joe-upp-chesti
+  chatMessages:
+    - working-joe-upp-chesti-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPchtoeto
+  name: working-joe-upp-chtoeto
+  chatMessages:
+    - working-joe-upp-chtoeto-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPchtoproishodit
+  name: working-joe-upp-chtoproishodit
+  chatMessages:
+    - working-joe-upp-chtoproishodit-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPchtotakoe
+  name: working-joe-upp-chtotakoe
+  chatMessages:
+    - working-joe-upp-chtotakoe-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPchtovizdesdelaete
+  name: working-joe-upp-chtovizdesdelaete
+  chatMessages:
+    - working-joe-upp-chtovizdesdelaete-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPcic
+  name: working-joe-upp-cic
+  chatMessages:
+    - working-joe-upp-cic-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPdelaete
+  name: working-joe-upp-delaete
+  chatMessages:
+    - working-joe-upp-delaete-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPdelapovazhnee
+  name: working-joe-upp-delapovazhnee
+  chatMessages:
+    - working-joe-upp-delapovazhnee-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPdobivaetes
+  name: working-joe-upp-dobivaetes
+  chatMessages:
+    - working-joe-upp-dobivaetes-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPdobriyden
+  name: working-joe-upp-dobriyden
+  chatMessages:
+    - working-joe-upp-dobriyden-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPdorogo_stoit
+  name: working-joe-upp-dorogo-stoit
+  chatMessages:
+    - working-joe-upp-dorogo-stoit-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPdosadno
+  name: working-joe-upp-dosadno
+  chatMessages:
+    - working-joe-upp-dosadno-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPdostatochno
+  name: working-joe-upp-dostatochno
+  chatMessages:
+    - working-joe-upp-dostatochno-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPdrugihdel
+  name: working-joe-upp-drugihdel
+  chatMessages:
+    - working-joe-upp-drugihdel-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPdumayu
+  name: working-joe-upp-dumayu
+  chatMessages:
+    - working-joe-upp-dumayu-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPetovashe
+  name: working-joe-upp-etovashe
+  chatMessages:
+    - working-joe-upp-etovashe-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPetovi-yahochupomoch
+  name: working-joe-upp-etovi-yahochupomoch
+  chatMessages:
+    - working-joe-upp-etovi-yahochupomoch-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPgde_vi
+  name: working-joe-upp-gde-vi
+  chatMessages:
+    - working-joe-upp-gde-vi-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPgotoviy_pomoch
+  name: working-joe-upp-gotoviy-pomoch
+  chatMessages:
+    - working-joe-upp-gotoviy-pomoch-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPhitroumnoe
+  name: working-joe-upp-hitroumnoe
+  chatMessages:
+    - working-joe-upp-hitroumnoe-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPhotel_pomoch
+  name: working-joe-upp-hotel-pomoch
+  chatMessages:
+    - working-joe-upp-hotel-pomoch-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPhvatit
+  name: working-joe-upp-hvatit
+  chatMessages:
+    - working-joe-upp-hvatit-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPjoinus
+  name: working-joe-upp-joinus
+  chatMessages:
+    - working-joe-upp-joinus-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPkto_to_byl
+  name: working-joe-upp-kto-to-byl
+  chatMessages:
+    - working-joe-upp-kto-to-byl-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPkto_vi
+  name: working-joe-upp-kto-vi
+  chatMessages:
+    - working-joe-upp-kto-vi-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPktoetosdelal
+  name: working-joe-upp-ktoetosdelal
+  chatMessages:
+    - working-joe-upp-ktoetosdelal-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPkudasobralis
+  name: working-joe-upp-kudasobralis
+  chatMessages:
+    - working-joe-upp-kudasobralis-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPlybopitno
+  name: working-joe-upp-lybopitno
+  chatMessages:
+    - working-joe-upp-lybopitno-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPmalihdetalah
+  name: working-joe-upp-malihdetalah
+  chatMessages:
+    - working-joe-upp-malihdetalah-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPmne
+  name: working-joe-upp-mne
+  chatMessages:
+    - working-joe-upp-mne-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPmogu_pomoch
+  name: working-joe-upp-mogu-pomoch
+  chatMessages:
+    - working-joe-upp-mogu-pomoch-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPna_chem_ya
+  name: working-joe-upp-na-chem-ya
+  chatMessages:
+    - working-joe-upp-na-chem-ya-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPnadeusuvasestrazre
+  name: working-joe-upp-nadeusuvasestrazre
+  chatMessages:
+    - working-joe-upp-nadeusuvasestrazre-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPnado_viesnit
+  name: working-joe-upp-nado-viesnit
+  chatMessages:
+    - working-joe-upp-nado-viesnit-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPnadoelo
+  name: working-joe-upp-nadoelo
+  chatMessages:
+    - working-joe-upp-nadoelo-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPnado-posmotret
+  name: working-joe-upp-nado-posmotret
+  chatMessages:
+    - working-joe-upp-nado-posmotret-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPnarusheniekarantina
+  name: working-joe-upp-narusheniekarantina
+  chatMessages:
+    - working-joe-upp-narusheniekarantina-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPne_begite
+  name: working-joe-upp-ne-begite
+  chatMessages:
+    - working-joe-upp-ne-begite-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPne_bivaet
+  name: working-joe-upp-ne-bivaet
+  chatMessages:
+    - working-joe-upp-ne-bivaet-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPne_horosho
+  name: working-joe-upp-ne-horosho
+  chatMessages:
+    - working-joe-upp-ne-horosho-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPne_igrushka
+  name: working-joe-upp-ne-igrushka
+  chatMessages:
+    - working-joe-upp-ne-igrushka-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPne_nado
+  name: working-joe-upp-ne-nado
+  chatMessages:
+    - working-joe-upp-ne-nado-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPne_otvet
+  name: working-joe-upp-ne-otvet
+  chatMessages:
+    - working-joe-upp-ne-otvet-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPne_polezu
+  name: working-joe-upp-ne-polezu
+  chatMessages:
+    - working-joe-upp-ne-polezu-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPne_recomenduyu
+  name: working-joe-upp-ne-recomenduyu
+  chatMessages:
+    - working-joe-upp-ne-recomenduyu-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPne_tak
+  name: working-joe-upp-ne-tak
+  chatMessages:
+    - working-joe-upp-ne-tak-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPne_ustraivaet
+  name: working-joe-upp-ne-ustraivaet
+  chatMessages:
+    - working-joe-upp-ne-ustraivaet-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPnedergaytes
+  name: working-joe-upp-nedergaytes
+  chatMessages:
+    - working-joe-upp-nedergaytes-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPneizvestnoesuchestvo
+  name: working-joe-upp-neizvestnoesuchestvo
+  chatMessages:
+    - working-joe-upp-neizvestnoesuchestvo-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPneostorojni
+  name: working-joe-upp-neostorojni
+  chatMessages:
+    - working-joe-upp-neostorojni-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPnepriyatno
+  name: working-joe-upp-nepriyatno
+  chatMessages:
+    - working-joe-upp-nepriyatno-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPnesmogpomoch
+  name: working-joe-upp-nesmogpomoch
+  chatMessages:
+    - working-joe-upp-nesmogpomoch-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPnetsmislapryatatsa
+  name: working-joe-upp-netsmislapryatatsa
+  chatMessages:
+    - working-joe-upp-netsmislapryatatsa-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPnikogo
+  name: working-joe-upp-nikogo
+  chatMessages:
+    - working-joe-upp-nikogo-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPnujna_pomotch
+  name: working-joe-upp-nujna-pomotch
+  chatMessages:
+    - working-joe-upp-nujna-pomotch-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPnu-nu
+  name: working-joe-upp-nu-nu
+  chatMessages:
+    - working-joe-upp-nu-nu-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPochen_opasno
+  name: working-joe-upp-ochen-opasno
+  chatMessages:
+    - working-joe-upp-ochen-opasno-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPochered
+  name: working-joe-upp-ochered
+  chatMessages:
+    - working-joe-upp-ochered-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPognestrelnoeoruzie
+  name: working-joe-upp-ognestrelnoeoruzie
+  chatMessages:
+    - working-joe-upp-ognestrelnoeoruzie-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPopasniepredmeti
+  name: working-joe-upp-opasniepredmeti
+  chatMessages:
+    - working-joe-upp-opasniepredmeti-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPopyatproblema
+  name: working-joe-upp-opyatproblema
+  chatMessages:
+    - working-joe-upp-opyatproblema-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPoshibka
+  name: working-joe-upp-oshibka
+  chatMessages:
+    - working-joe-upp-oshibka-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPostorozhnee
+  name: working-joe-upp-ostorozhnee
+  chatMessages:
+    - working-joe-upp-ostorozhnee-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPosvetitelnogo
+  name: working-joe-upp-osvetitelnogo
+  chatMessages:
+    - working-joe-upp-osvetitelnogo-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPotkritogog
+  name: working-joe-upp-otkritogog
+  chatMessages:
+    - working-joe-upp-otkritogog-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPpo_horoshemu
+  name: working-joe-upp-po-horoshemu
+  chatMessages:
+    - working-joe-upp-po-horoshemu-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPpodoyducherez1
+  name: working-joe-upp-podoyducherez1
+  chatMessages:
+    - working-joe-upp-podoyducherez1-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPpogovorim
+  name: working-joe-upp-pogovorim
+  chatMessages:
+    - working-joe-upp-pogovorim-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPpoiski
+  name: working-joe-upp-poiski
+  chatMessages:
+    - working-joe-upp-poiski-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPpolezen
+  name: working-joe-upp-polezen
+  chatMessages:
+    - working-joe-upp-polezen-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPpolno_raboti
+  name: working-joe-upp-polno-raboti
+  chatMessages:
+    - working-joe-upp-polno-raboti-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPpomoch
+  name: working-joe-upp-pomoch
+  chatMessages:
+    - working-joe-upp-pomoch-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPponesyote
+  name: working-joe-upp-ponesyote
+  chatMessages:
+    - working-joe-upp-ponesyote-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPpostradat
+  name: working-joe-upp-postradat
+  chatMessages:
+    - working-joe-upp-postradat-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPpoydurabotat
+  name: working-joe-upp-poydurabotat
+  chatMessages:
+    - working-joe-upp-poydurabotat-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPprekratite
+  name: working-joe-upp-prekratite
+  chatMessages:
+    - working-joe-upp-prekratite-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPprekratiteisteriku
+  name: working-joe-upp-prekratiteisteriku
+  chatMessages:
+    - working-joe-upp-prekratiteisteriku-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPpri_gorenii
+  name: working-joe-upp-pri-gorenii
+  chatMessages:
+    - working-joe-upp-pri-gorenii-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPprichina
+  name: working-joe-upp-prichina
+  chatMessages:
+    - working-joe-upp-prichina-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPproydemte
+  name: working-joe-upp-proydemte
+  chatMessages:
+    - working-joe-upp-proydemte-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPradchtomiuladili
+  name: working-joe-upp-radchtomiuladili
+  chatMessages:
+    - working-joe-upp-radchtomiuladili-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPrazberus
+  name: working-joe-upp-razberus
+  chatMessages:
+    - working-joe-upp-razberus-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPrazigrivaete
+  name: working-joe-upp-razigrivaete
+  chatMessages:
+    - working-joe-upp-razigrivaete-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPraznoglasiya
+  name: working-joe-upp-raznoglasiya
+  chatMessages:
+    - working-joe-upp-raznoglasiya-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPremontu
+  name: working-joe-upp-remontu
+  chatMessages:
+    - working-joe-upp-remontu-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPseryozno
+  name: working-joe-upp-seryozno
+  chatMessages:
+    - working-joe-upp-seryozno-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPskachok
+  name: working-joe-upp-skachok
+  chatMessages:
+    - working-joe-upp-skachok-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPsluchilos
+  name: working-joe-upp-sluchilos
+  chatMessages:
+    - working-joe-upp-sluchilos-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPsmert1
+  name: working-joe-upp-smert1
+  chatMessages:
+    - working-joe-upp-smert1-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPstesnyaytes
+  name: working-joe-upp-stesnyaytes
+  chatMessages:
+    - working-joe-upp-stesnyaytes-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPstranno
+  name: working-joe-upp-stranno
+  chatMessages:
+    - working-joe-upp-stranno-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPtak_nelza
+  name: working-joe-upp-tak-nelza
+  chatMessages:
+    - working-joe-upp-tak-nelza-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPtemp
+  name: working-joe-upp-temp
+  chatMessages:
+    - working-joe-upp-temp-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPterp
+  name: working-joe-upp-terp
+  chatMessages:
+    - working-joe-upp-terp-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPterpeliviy
+  name: working-joe-upp-terpeliviy
+  chatMessages:
+    - working-joe-upp-terpeliviy-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPtolko_zveri
+  name: working-joe-upp-tolko-zveri
+  chatMessages:
+    - working-joe-upp-tolko-zveri-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPtut_kto
+  name: working-joe-upp-tut-kto
+  chatMessages:
+    - working-joe-upp-tut-kto-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPuborka
+  name: working-joe-upp-uborka
+  chatMessages:
+    - working-joe-upp-uborka-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPugroza
+  name: working-joe-upp-ugroza
+  chatMessages:
+    - working-joe-upp-ugroza-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPushibitsa
+  name: working-joe-upp-ushibitsa
+  chatMessages:
+    - working-joe-upp-ushibitsa-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPusilitmeri
+  name: working-joe-upp-usilitmeri
+  chatMessages:
+    - working-joe-upp-usilitmeri-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPuspokoytes
+  name: working-joe-upp-uspokoytes
+  chatMessages:
+    - working-joe-upp-uspokoytes-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPuznatlegko
+  name: working-joe-upp-uznatlegko
+  chatMessages:
+    - working-joe-upp-uznatlegko-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPvamsyduanelza
+  name: working-joe-upp-vamsyduanelza
+  chatMessages:
+    - working-joe-upp-vamsyduanelza-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPvcluchat
+  name: working-joe-upp-vcluchat
+  chatMessages:
+    - working-joe-upp-vcluchat-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPventilyacii
+  name: working-joe-upp-ventilyacii
+  chatMessages:
+    - working-joe-upp-ventilyacii-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPvinarushaete
+  name: working-joe-upp-vinarushaete
+  chatMessages:
+    - working-joe-upp-vinarushaete-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPyavamobyasnyu
+  name: working-joe-upp-yavamobyasnyu
+  chatMessages:
+    - working-joe-upp-yavamobyasnyu-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPyavasiskal
+  name: working-joe-upp-yavasiskal
+  chatMessages:
+    - working-joe-upp-yavasiskal-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPyavaspoymau
+  name: working-joe-upp-yavaspoymau
+  chatMessages:
+    - working-joe-upp-yavaspoymau-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPza_zvuk
+  name: working-joe-upp-za-zvuk
+  chatMessages:
+    - working-joe-upp-za-zvuk-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPzachem
+  name: working-joe-upp-zachem
+  chatMessages:
+    - working-joe-upp-zachem-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPzadacham
+  name: working-joe-upp-zadacham
+  chatMessages:
+    - working-joe-upp-zadacham-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPzadachi
+  name: working-joe-upp-zadachi
+  chatMessages:
+    - working-joe-upp-zadachi-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPzagorelos
+  name: working-joe-upp-zagorelos
+  chatMessages:
+    - working-joe-upp-zagorelos-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPzapros
+  name: working-joe-upp-zapros
+  chatMessages:
+    - working-joe-upp-zapros-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPzdes
+  name: working-joe-upp-zdes
+  chatMessages:
+    - working-joe-upp-zdes-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPzdravstvuyte
+  name: working-joe-upp-zdravstvuyte
+  chatMessages:
+    - working-joe-upp-zdravstvuyte-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPzrya_potratil
+  name: working-joe-upp-zrya-potratil
+  chatMessages:
+    - working-joe-upp-zrya-potratil-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
+
+- type: emote
+  id: WorkingJoeUPPzurnal
+  name: working-joe-upp-zurnal
+  chatMessages:
+    - working-joe-upp-zurnal-msg
+  whitelist:
+    tags:
+      - WorkingJoeUPP
