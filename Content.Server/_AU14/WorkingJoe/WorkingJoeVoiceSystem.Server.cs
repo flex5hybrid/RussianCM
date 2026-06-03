@@ -22,7 +22,7 @@ public sealed partial class WorkingJoeVoiceSystem : EntitySystem
     [Dependency] private ChatSystem _chat = default!;
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private IRobustRandom _random = default!;
-    [Dependency] private readonly TagSystem _tag = default!; // RuMC edit
+    [Dependency] private TagSystem _tag = default!; // RuMC edit
 
     public override void Initialize()
     {
