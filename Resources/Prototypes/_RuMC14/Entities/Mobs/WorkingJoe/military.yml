@@ -1,0 +1,26 @@
+- type: entity
+  parent: AU14MobWorkingJoe
+  id: AU14MobWorkingJoeUPP
+  suffix: AU14, UPP
+  components:
+  - type: Vocal
+    sounds:
+      Male: RuMC14WorkingJoeUPPSounds
+      Female: RuMC14WorkingJoeUPPSounds
+      Unsexed: RuMC14WorkingJoeUPPSounds
+  - type: UserInterface
+    interfaces:
+      enum.WorkingJoeUPPVoiceUiKey.Key:
+        type: WorkingJoeUPPVoiceBui
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    reregister: false
+    name: Working Joe (UPP)
+    description: au14-job-description-workingjoe
+    job: AU14JobUPPWorkingJoe
+    raffle:
+      settings: short

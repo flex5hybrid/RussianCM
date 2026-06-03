@@ -1,0 +1,84 @@
+- type: job
+  parent: AU14JobWorkingJoeBase
+  id: AU14JobUPPWorkingJoe
+  whitelisted: true
+  whitelistParent: RMCWhitelistMedium
+  requirements:
+  - !type:RoleTimeRequirement
+    role: AU14JobGOVFORAuxSupportSynth
+    time: 9000
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - SocialAnxietyHeavy
+    - FrontalLisp
+    - NonResuscitable
+    - Epilepsy
+  icon: "AU14JobIconGovWorkingJoe"
+  spawnMenuRoleName: Working Joe (UPP)
+  supervisors: au14-job-supervisors-workingjoe-military
+  usePlayerProfile: false
+  accessGroups:
+  - AU14GovforCommand
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - AUUpp
+    - type: UserIFF
+      factions:
+      - GOVFOR
+    - type: IntrinsicRadioTransmitter
+      channels:
+      - radioAI
+      - radioGovforCommand
+      - radioGovforJTAC
+      - radioGovforAlpha
+      - radioGovforCharlie
+      - radioGovforBravo
+      - radioGovforIntel
+    - type: ActiveRadio
+      channels:
+      - radioAI
+      - radioGovforCommand
+      - radioGovforJTAC
+      - radioGovforAlpha
+      - radioGovforCharlie
+      - radioGovforBravo
+      - radioGovforIntel
+    - type: Access
+      groups:
+      - AU14GovforCommand
+      - AUPrisonStaff
+      - auwy
+    - type: Tag
+      tags:
+      - WorkingJoe
+      - WorkingJoeUPP
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+    - type: Loadout
+      prototypes: [ AU14GearUPPWorkingJoe ]
+  dummyStartingGear: AU14GearUPPWorkingJoe
+  hidden: false
+
+- type: startingGear
+  parent: AU14GearWorkingJoeBase
+  id: AU14GearUPPWorkingJoe
+  equipment:
+    id: AU14IDCardGOVFORWorkingJoe
+    ears: AU14HeadsetWorkingJoe
+    ears2: RMCM5CameraGear
+    back: AU14IMPBackpackMarine
+
+- type: entity
+  parent: CMSpawnPointJobBase
+  id: AU14SpawnPointUPPWorkingJoe
+  name: Spawn Point Working Joe (UPP)
+  components:
+  - type: SpawnPoint
+    job_id: AU14JobUPPWorkingJoe
+  - type: Sprite
+    state: syn_spawn
