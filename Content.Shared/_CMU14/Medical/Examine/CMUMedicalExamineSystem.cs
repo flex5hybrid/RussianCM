@@ -276,7 +276,7 @@ public sealed partial class CMUMedicalExamineSystem : EntitySystem
         return false;
     }
 
-    private static string DescribeVisibleWound(BodyPartWoundComponent wounds, int index)
+    private string DescribeVisibleWound(BodyPartWoundComponent wounds, int index) // RuMC edit
     {
         var wound = wounds.Wounds[index];
         var size = index < wounds.Sizes.Count ? wounds.Sizes[index] : WoundSize.Deep;
@@ -303,7 +303,7 @@ public sealed partial class CMUMedicalExamineSystem : EntitySystem
             ("type", kind));
     }
 
-    private static string GetVisibleWoundKind(BodyPartWoundComponent wounds, int index)
+    private string GetVisibleWoundKind(BodyPartWoundComponent wounds, int index) // RuMC edit
     {
         if (index < wounds.Mechanisms.Count && wounds.Mechanisms[index] == WoundMechanism.Burn)
             return Loc.GetString("cmu-medical-examine-wound-type-burn");
@@ -311,7 +311,7 @@ public sealed partial class CMUMedicalExamineSystem : EntitySystem
         return Loc.GetString("cmu-medical-examine-wound-type-wound");
     }
 
-    private static string DescribeVisibleFracture(FractureSeverity severity, bool stabilized)
+    private string DescribeVisibleFracture(FractureSeverity severity, bool stabilized) // RuMC edit
     {
         var prefix = stabilized ? "stabilized " : string.Empty;
         var key = severity switch
@@ -498,7 +498,7 @@ public sealed partial class CMUMedicalExamineSystem : EntitySystem
         _ => WoundMechanism.Generic,
     };
 
-    private static string FormatPartName(BodyPartType type, BodyPartSymmetry symmetry)
+    private string FormatPartName(BodyPartType type, BodyPartSymmetry symmetry) // RuMC edit
     {
         var key = (type, symmetry) switch
         {
@@ -547,7 +547,7 @@ public sealed partial class CMUMedicalExamineSystem : EntitySystem
         };
     }
 
-    private static string ToSentence(List<string> parts)
+    private string ToSentence(List<string> parts) // RuMC edit
     {
         return parts.Count switch
         {
