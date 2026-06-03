@@ -1,0 +1,252 @@
+- type: emoteSounds
+  id: AU14WorkingJoeUPPSounds
+  parent: RMCBaseHumanoidSounds
+  sounds:
+    WorkingJoeUPPay-ya-yay:
+      collection: RuMC14WorkingJoeUPPay-ya-yay
+    WorkingJoeUPPbudetenakazani:
+      collection: RuMC14WorkingJoeUPPbudetenakazani
+    WorkingJoeUPPchemdelo:
+      collection: RuMC14WorkingJoeUPPchemdelo
+    WorkingJoeUPPchesti:
+      collection: RuMC14WorkingJoeUPPchesti
+    WorkingJoeUPPchtoeto:
+      collection: RuMC14WorkingJoeUPPchtoeto
+    WorkingJoeUPPchtoproishodit:
+      collection: RuMC14WorkingJoeUPPchtoproishodit
+    WorkingJoeUPPchtotakoe:
+      collection: RuMC14WorkingJoeUPPchtotakoe
+    WorkingJoeUPPchtovizdesdelaete:
+      collection: RuMC14WorkingJoeUPPchtovizdesdelaete
+    WorkingJoeUPPcic:
+      collection: RuMC14WorkingJoeUPPcic
+    WorkingJoeUPPdelaete:
+      collection: RuMC14WorkingJoeUPPdelaete
+    WorkingJoeUPPdelapovazhnee:
+      collection: RuMC14WorkingJoeUPPdelapovazhnee
+    WorkingJoeUPPdobivaetes:
+      collection: RuMC14WorkingJoeUPPdobivaetes
+    WorkingJoeUPPdobriyden:
+      collection: RuMC14WorkingJoeUPPdobriyden
+    WorkingJoeUPPdorogo_stoit:
+      collection: RuMC14WorkingJoeUPPdorogo_stoit
+    WorkingJoeUPPdosadno:
+      collection: RuMC14WorkingJoeUPPdosadno
+    WorkingJoeUPPdostatochno:
+      collection: RuMC14WorkingJoeUPPdostatochno
+    WorkingJoeUPPdrugihdel:
+      collection: RuMC14WorkingJoeUPPdrugihdel
+    WorkingJoeUPPdumayu:
+      collection: RuMC14WorkingJoeUPPdumayu
+    WorkingJoeUPPetovashe:
+      collection: RuMC14WorkingJoeUPPetovashe
+    WorkingJoeUPPetovi-yahochupomoch:
+      collection: RuMC14WorkingJoeUPPetovi-yahochupomoch
+    WorkingJoeUPPgde_vi:
+      collection: RuMC14WorkingJoeUPPgde_vi
+    WorkingJoeUPPgotoviy_pomoch:
+      collection: RuMC14WorkingJoeUPPgotoviy_pomoch
+    WorkingJoeUPPhitroumnoe:
+      collection: RuMC14WorkingJoeUPPhitroumnoe
+    WorkingJoeUPPhotel_pomoch:
+      collection: RuMC14WorkingJoeUPPhotel_pomoch
+    WorkingJoeUPPhvatit:
+      collection: RuMC14WorkingJoeUPPhvatit
+    WorkingJoeUPPjoinus:
+      collection: RuMC14WorkingJoeUPPjoinus
+    WorkingJoeUPPkto_to_byl:
+      collection: RuMC14WorkingJoeUPPkto_to_byl
+    WorkingJoeUPPkto_vi:
+      collection: RuMC14WorkingJoeUPPkto_vi
+    WorkingJoeUPPktoetosdelal:
+      collection: RuMC14WorkingJoeUPPktoetosdelal
+    WorkingJoeUPPkudasobralis:
+      collection: RuMC14WorkingJoeUPPkudasobralis
+    WorkingJoeUPPlybopitno:
+      collection: RuMC14WorkingJoeUPPlybopitno
+    WorkingJoeUPPmalihdetalah:
+      collection: RuMC14WorkingJoeUPPmalihdetalah
+    WorkingJoeUPPmne:
+      collection: RuMC14WorkingJoeUPPmne
+    WorkingJoeUPPmogu_pomoch:
+      collection: RuMC14WorkingJoeUPPmogu_pomoch
+    WorkingJoeUPPna_chem_ya:
+      collection: RuMC14WorkingJoeUPPna_chem_ya
+    WorkingJoeUPPnadeusuvasestrazre:
+      collection: RuMC14WorkingJoeUPPnadeusuvasestrazre
+    WorkingJoeUPPnado_viesnit:
+      collection: RuMC14WorkingJoeUPPnado_viesnit
+    WorkingJoeUPPnadoelo:
+      collection: RuMC14WorkingJoeUPPnadoelo
+    WorkingJoeUPPnado-posmotret:
+      collection: RuMC14WorkingJoeUPPnado-posmotret
+    WorkingJoeUPPnarusheniekarantina:
+      collection: RuMC14WorkingJoeUPPnarusheniekarantina
+    WorkingJoeUPPne_begite:
+      collection: RuMC14WorkingJoeUPPne_begite
+    WorkingJoeUPPne_bivaet:
+      collection: RuMC14WorkingJoeUPPne_bivaet
+    WorkingJoeUPPne_horosho:
+      collection: RuMC14WorkingJoeUPPne_horosho
+    WorkingJoeUPPne_igrushka:
+      collection: RuMC14WorkingJoeUPPne_igrushka
+    WorkingJoeUPPne_nado:
+      collection: RuMC14WorkingJoeUPPne_nado
+    WorkingJoeUPPne_otvet:
+      collection: RuMC14WorkingJoeUPPne_otvet
+    WorkingJoeUPPne_polezu:
+      collection: RuMC14WorkingJoeUPPne_polezu
+    WorkingJoeUPPne_recomenduyu:
+      collection: RuMC14WorkingJoeUPPne_recomenduyu
+    WorkingJoeUPPne_tak:
+      collection: RuMC14WorkingJoeUPPne_tak
+    WorkingJoeUPPne_ustraivaet:
+      collection: RuMC14WorkingJoeUPPne_ustraivaet
+    WorkingJoeUPPnedergaytes:
+      collection: RuMC14WorkingJoeUPPnedergaytes
+    WorkingJoeUPPneizvestnoesuchestvo:
+      collection: RuMC14WorkingJoeUPPneizvestnoesuchestvo
+    WorkingJoeUPPneostorojni:
+      collection: RuMC14WorkingJoeUPPneostorojni
+    WorkingJoeUPPnepriyatno:
+      collection: RuMC14WorkingJoeUPPnepriyatno
+    WorkingJoeUPPnesmogpomoch:
+      collection: RuMC14WorkingJoeUPPnesmogpomoch
+    WorkingJoeUPPnetsmislapryatatsa:
+      collection: RuMC14WorkingJoeUPPnetsmislapryatatsa
+    WorkingJoeUPPnikogo:
+      collection: RuMC14WorkingJoeUPPnikogo
+    WorkingJoeUPPnujna_pomotch:
+      collection: RuMC14WorkingJoeUPPnujna_pomotch
+    WorkingJoeUPPnu-nu:
+      collection: RuMC14WorkingJoeUPPnu-nu
+    WorkingJoeUPPochen_opasno:
+      collection: RuMC14WorkingJoeUPPochen_opasno
+    WorkingJoeUPPochered:
+      collection: RuMC14WorkingJoeUPPochered
+    WorkingJoeUPPognestrelnoeoruzie:
+      collection: RuMC14WorkingJoeUPPognestrelnoeoruzie
+    WorkingJoeUPPopasniepredmeti:
+      collection: RuMC14WorkingJoeUPPopasniepredmeti
+    WorkingJoeUPPopyatproblema:
+      collection: RuMC14WorkingJoeUPPopyatproblema
+    WorkingJoeUPPoshibka:
+      collection: RuMC14WorkingJoeUPPoshibka
+    WorkingJoeUPPostorozhnee:
+      collection: RuMC14WorkingJoeUPPostorozhnee
+    WorkingJoeUPPosvetitelnogo:
+      collection: RuMC14WorkingJoeUPPosvetitelnogo
+    WorkingJoeUPPotkritogog:
+      collection: RuMC14WorkingJoeUPPotkritogog
+    WorkingJoeUPPpo_horoshemu:
+      collection: RuMC14WorkingJoeUPPpo_horoshemu
+    WorkingJoeUPPpodoyducherez1:
+      collection: RuMC14WorkingJoeUPPpodoyducherez1
+    WorkingJoeUPPpogovorim:
+      collection: RuMC14WorkingJoeUPPpogovorim
+    WorkingJoeUPPpoiski:
+      collection: RuMC14WorkingJoeUPPpoiski
+    WorkingJoeUPPpolezen:
+      collection: RuMC14WorkingJoeUPPpolezen
+    WorkingJoeUPPpolno_raboti:
+      collection: RuMC14WorkingJoeUPPpolno_raboti
+    WorkingJoeUPPpomoch:
+      collection: RuMC14WorkingJoeUPPpomoch
+    WorkingJoeUPPponesyote:
+      collection: RuMC14WorkingJoeUPPponesyote
+    WorkingJoeUPPpostradat:
+      collection: RuMC14WorkingJoeUPPpostradat
+    WorkingJoeUPPpoydurabotat:
+      collection: RuMC14WorkingJoeUPPpoydurabotat
+    WorkingJoeUPPprekratite:
+      collection: RuMC14WorkingJoeUPPprekratite
+    WorkingJoeUPPprekratiteisteriku:
+      collection: RuMC14WorkingJoeUPPprekratiteisteriku
+    WorkingJoeUPPpri_gorenii:
+      collection: RuMC14WorkingJoeUPPpri_gorenii
+    WorkingJoeUPPprichina:
+      collection: RuMC14WorkingJoeUPPprichina
+    WorkingJoeUPPproydemte:
+      collection: RuMC14WorkingJoeUPPproydemte
+    WorkingJoeUPPradchtomiuladili:
+      collection: RuMC14WorkingJoeUPPradchtomiuladili
+    WorkingJoeUPPrazberus:
+      collection: RuMC14WorkingJoeUPPrazberus
+    WorkingJoeUPPrazigrivaete:
+      collection: RuMC14WorkingJoeUPPrazigrivaete
+    WorkingJoeUPPraznoglasiya:
+      collection: RuMC14WorkingJoeUPPraznoglasiya
+    WorkingJoeUPPremontu:
+      collection: RuMC14WorkingJoeUPPremontu
+    WorkingJoeUPPseryozno:
+      collection: RuMC14WorkingJoeUPPseryozno
+    WorkingJoeUPPskachok:
+      collection: RuMC14WorkingJoeUPPskachok
+    WorkingJoeUPPsluchilos:
+      collection: RuMC14WorkingJoeUPPsluchilos
+    WorkingJoeUPPsmert1:
+      collection: RuMC14WorkingJoeUPPsmert1
+    WorkingJoeUPPstesnyaytes:
+      collection: RuMC14WorkingJoeUPPstesnyaytes
+    WorkingJoeUPPstranno:
+      collection: RuMC14WorkingJoeUPPstranno
+    WorkingJoeUPPtak_nelza:
+      collection: RuMC14WorkingJoeUPPtak_nelza
+    WorkingJoeUPPtemp:
+      collection: RuMC14WorkingJoeUPPtemp
+    WorkingJoeUPPterp:
+      collection: RuMC14WorkingJoeUPPterp
+    WorkingJoeUPPterpeliviy:
+      collection: RuMC14WorkingJoeUPPterpeliviy
+    WorkingJoeUPPtolko_zveri:
+      collection: RuMC14WorkingJoeUPPtolko_zveri
+    WorkingJoeUPPtut_kto:
+      collection: RuMC14WorkingJoeUPPtut_kto
+    WorkingJoeUPPuborka:
+      collection: RuMC14WorkingJoeUPPuborka
+    WorkingJoeUPPugroza:
+      collection: RuMC14WorkingJoeUPPugroza
+    WorkingJoeUPPushibitsa:
+      collection: RuMC14WorkingJoeUPPushibitsa
+    WorkingJoeUPPusilitmeri:
+      collection: RuMC14WorkingJoeUPPusilitmeri
+    WorkingJoeUPPuspokoytes:
+      collection: RuMC14WorkingJoeUPPuspokoytes
+    WorkingJoeUPPuznatlegko:
+      collection: RuMC14WorkingJoeUPPuznatlegko
+    WorkingJoeUPPvamsyduanelza:
+      collection: RuMC14WorkingJoeUPPvamsyduanelza
+    WorkingJoeUPPvcluchat:
+      collection: RuMC14WorkingJoeUPPvcluchat
+    WorkingJoeUPPventilyacii:
+      collection: RuMC14WorkingJoeUPPventilyacii
+    WorkingJoeUPPvinarushaete:
+      collection: RuMC14WorkingJoeUPPvinarushaete
+    WorkingJoeUPPyavamobyasnyu:
+      collection: RuMC14WorkingJoeUPPyavamobyasnyu
+    WorkingJoeUPPyavasiskal:
+      collection: RuMC14WorkingJoeUPPyavasiskal
+    WorkingJoeUPPyavaspoymau:
+      collection: RuMC14WorkingJoeUPPyavaspoymau
+    WorkingJoeUPPza_zvuk:
+      collection: RuMC14WorkingJoeUPPza_zvuk
+    WorkingJoeUPPzachem:
+      collection: RuMC14WorkingJoeUPPzachem
+    WorkingJoeUPPzadacham:
+      collection: RuMC14WorkingJoeUPPzadacham
+    WorkingJoeUPPzadachi:
+      collection: RuMC14WorkingJoeUPPzadachi
+    WorkingJoeUPPzagorelos:
+      collection: RuMC14WorkingJoeUPPzagorelos
+    WorkingJoeUPPzapros:
+      collection: RuMC14WorkingJoeUPPzapros
+    WorkingJoeUPPzdes:
+      collection: RuMC14WorkingJoeUPPzdes
+    WorkingJoeUPPzdravstvuyte:
+      collection: RuMC14WorkingJoeUPPzdravstvuyte
+    WorkingJoeUPPzrya_potratil:
+      collection: RuMC14WorkingJoeUPPzrya_potratil
+    WorkingJoeUPPzurnal:
+      collection: RuMC14WorkingJoeUPPzurnal
+    DefaultDeathgasp:
+      collection: RuMC14WorkingJoeUPPsmert1

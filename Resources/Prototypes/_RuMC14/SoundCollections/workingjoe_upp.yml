@@ -499,17 +499,17 @@
   - /Audio/_RuMC14/WorkingJoeUPP/tut_kto.ogg
 
 - type: soundCollection
-  id: RuMC14WorkingJoeUPP
+  id: RuMC14WorkingJoeUPPuborka
   files:
   - /Audio/_RuMC14/WorkingJoeUPP/uborka.ogg
 
 - type: soundCollection
-  id: RuMC14WorkingJoeUPP
+  id: RuMC14WorkingJoeUPPugroza
   files:
   - /Audio/_RuMC14/WorkingJoeUPP/ugroza.ogg
 
 - type: soundCollection
-  id: RuMC14WorkingJoeUPP
+  id: RuMC14WorkingJoeUPPushibitsa
   files:
   - /Audio/_RuMC14/WorkingJoeUPP/ushibitsa.ogg
 
