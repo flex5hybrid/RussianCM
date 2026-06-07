@@ -4,6 +4,7 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Content.Server._RuMC14.DeviceKey;
 using Content.Server.Chat.Managers;
 using Content.Server.Database;
 using Content.Server.GameTicking;
@@ -209,12 +210,23 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
 
     private bool BanMatchesPlayer(ICommonSession player, ServerBanDef ban)
     {
+        var hwId = player.Channel.UserData.HWId.Length == 0
+            ? (ImmutableArray<byte>?) null
+            : player.Channel.UserData.HWId;
+        var modernHwIds = player.Channel.UserData.ModernHWIds;
+
+        if (_systems.TryGetEntitySystem<DeviceKeyVerificationSystem>(out var deviceKey) &&
+            deviceKey.TryGetDeviceId(player, out var deviceId))
+        {
+            modernHwIds = [deviceId];
+        }
+
         var playerInfo = new BanMatcher.PlayerInfo
         {
             UserId = player.UserId,
             Address = player.Channel.RemoteEndPoint.Address,
-            HWId = player.Channel.UserData.HWId,
-            ModernHWIds = player.Channel.UserData.ModernHWIds,
+            HWId = hwId,
+            ModernHWIds = modernHwIds,
             // It's possible for the player to not have cached data loading yet due to coincidental timing.
             // If this is the case, we assume they have all flags to avoid false-positives.
             ExemptFlags = _cachedBanExemptions.GetValueOrDefault(player, ServerBanExemptFlags.All),

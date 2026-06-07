@@ -112,6 +112,7 @@ namespace Content.Server.Database
             var exempt = await GetBanExemptionCore(db, userId);
 
             var newPlayer = !await db.SqliteDbContext.Player.AnyAsync(p => p.UserId == userId);
+            var knownHwids = await GetKnownHardwareIdsAsync(db, userId, hwId, modernHWIds);
 
             // SQLite can't do the net masking stuff we need to match IP address ranges.
             // So just pull down the whole list into memory.
@@ -122,8 +123,8 @@ namespace Content.Server.Database
                 Address = address,
                 UserId = userId,
                 ExemptFlags = exempt ?? default,
-                HWId = hwId,
-                ModernHWIds = modernHWIds,
+                HWId = knownHwids.legacy,
+                ModernHWIds = knownHwids.modern,
                 IsNewPlayer = newPlayer,
             };
 
@@ -214,13 +215,14 @@ namespace Content.Server.Database
             bool includeUnbanned)
         {
             await using var db = await GetDbImpl();
+            var knownHwids = await GetKnownHardwareIdsAsync(db, userId, hwId, modernHWIds);
 
             // SQLite can't do the net masking stuff we need to match IP address ranges.
             // So just pull down the whole list into memory.
             var queryBans = await GetAllRoleBans(db.SqliteDbContext, includeUnbanned);
 
             return queryBans
-                .Where(b => RoleBanMatches(b, address, userId, hwId, modernHWIds))
+                .Where(b => RoleBanMatches(b, address, userId, knownHwids.legacy, knownHwids.modern))
                 .Select(ConvertRoleBan)
                 .ToList()!;
         }

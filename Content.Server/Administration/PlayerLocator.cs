@@ -5,6 +5,7 @@ using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Threading;
 using System.Threading.Tasks;
+using Content.Server._RuMC14.DeviceKey;
 using Content.Server.Connection;
 using Content.Server.Database;
 using Content.Shared.Database;
@@ -76,9 +77,11 @@ namespace Content.Server.Administration
         [Dependency] private IConfigurationManager _configurationManager = default!;
         [Dependency] private IServerDbManager _db = default!;
         [Dependency] private ILogManager _logManager = default!;
+        [Dependency] private IEntitySystemManager _entitySystem = default!;
 
         private readonly HttpClient _httpClient = new();
         private ISawmill _sawmill = default!;
+        private DeviceKeyVerificationSystem? _deviceKey;
 
         public PlayerLocator()
         {
@@ -148,18 +151,27 @@ namespace Content.Server.Administration
             return new LocatedPlayerData(new NetUserId(responseData.UserId), null, null, responseData.UserName, null, []);
         }
 
-        private static LocatedPlayerData ReturnForSession(ICommonSession session)
+        private LocatedPlayerData ReturnForSession(ICommonSession session)
         {
             var userId = session.UserId;
             var address = session.Channel.RemoteEndPoint.Address;
+            var legacyHwId = session.Channel.UserData.HWId;
+            var modernHwIds = session.Channel.UserData.ModernHWIds;
             var hwId = session.Channel.UserData.GetModernHwid();
+
+            if (_deviceKey != null && _deviceKey.TryGetDeviceId(session, out var deviceId))
+            {
+                hwId = new ImmutableTypedHwid(deviceId, HwidType.Modern);
+                modernHwIds = [deviceId];
+            }
+
             return new LocatedPlayerData(
                 userId,
                 address,
                 hwId,
                 session.Name,
-                session.Channel.UserData.HWId,
-                session.Channel.UserData.ModernHWIds);
+                legacyHwId,
+                modernHwIds);
         }
 
         private static LocatedPlayerData ReturnForPlayerRecord(PlayerRecord record)
@@ -200,6 +212,7 @@ namespace Content.Server.Administration
         void IPostInjectInit.PostInject()
         {
             _sawmill = _logManager.GetSawmill("PlayerLocate");
+            _entitySystem.TryGetEntitySystem(out _deviceKey);
         }
     }
 }

@@ -77,16 +77,17 @@ namespace Content.Server.Database
             ImmutableArray<byte>? hwId,
             ImmutableArray<ImmutableArray<byte>>? modernHWIds)
         {
-            if (address == null && userId == null && hwId == null)
+            if (address == null && userId == null && hwId == null && modernHWIds is not { Length: > 0 })
             {
-                throw new ArgumentException("Address, userId, and hwId cannot all be null");
+                throw new ArgumentException("Address, userId, hwId, and modernHWIds cannot all be null or empty");
             }
 
             await using var db = await GetDbImpl();
 
             var exempt = await GetBanExemptionCore(db, userId);
             var newPlayer = userId == null || !await PlayerRecordExists(db, userId.Value);
-            var query = MakeBanLookupQuery(address, userId, hwId, modernHWIds, db, includeUnbanned: false, exempt, newPlayer)
+            var knownHwids = await GetKnownHardwareIdsAsync(db, userId, hwId, modernHWIds);
+            var query = MakeBanLookupQuery(address, userId, knownHwids.legacy, knownHwids.modern, db, includeUnbanned: false, exempt, newPlayer)
                 .OrderByDescending(b => b.BanTime);
 
             var ban = await query.FirstOrDefaultAsync();
@@ -100,16 +101,17 @@ namespace Content.Server.Database
             ImmutableArray<ImmutableArray<byte>>? modernHWIds,
             bool includeUnbanned)
         {
-            if (address == null && userId == null && hwId == null)
+            if (address == null && userId == null && hwId == null && modernHWIds is not { Length: > 0 })
             {
-                throw new ArgumentException("Address, userId, and hwId cannot all be null");
+                throw new ArgumentException("Address, userId, hwId, and modernHWIds cannot all be null or empty");
             }
 
             await using var db = await GetDbImpl();
 
             var exempt = await GetBanExemptionCore(db, userId);
             var newPlayer = !await db.PgDbContext.Player.AnyAsync(p => p.UserId == userId);
-            var query = MakeBanLookupQuery(address, userId, hwId, modernHWIds, db, includeUnbanned, exempt, newPlayer);
+            var knownHwids = await GetKnownHardwareIdsAsync(db, userId, hwId, modernHWIds);
+            var query = MakeBanLookupQuery(address, userId, knownHwids.legacy, knownHwids.modern, db, includeUnbanned, exempt, newPlayer);
 
             var queryBans = await query.ToArrayAsync();
             var bans = new List<ServerBanDef>(queryBans.Length);
@@ -137,7 +139,7 @@ namespace Content.Server.Database
             ServerBanExemptFlags? exemptFlags,
             bool newPlayer)
         {
-            DebugTools.Assert(!(address == null && userId == null && hwId == null));
+            DebugTools.Assert(!(address == null && userId == null && hwId == null && modernHWIds is not { Length: > 0 }));
 
             var query = MakeBanLookupQualityShared<ServerBan, ServerUnban>(
                 userId,
@@ -334,14 +336,15 @@ namespace Content.Server.Database
             ImmutableArray<ImmutableArray<byte>>? modernHWIds,
             bool includeUnbanned)
         {
-            if (address == null && userId == null && hwId == null)
+            if (address == null && userId == null && hwId == null && modernHWIds is not { Length: > 0 })
             {
-                throw new ArgumentException("Address, userId, and hwId cannot all be null");
+                throw new ArgumentException("Address, userId, hwId, and modernHWIds cannot all be null or empty");
             }
 
             await using var db = await GetDbImpl();
 
-            var query = MakeRoleBanLookupQuery(address, userId, hwId, modernHWIds, db, includeUnbanned)
+            var knownHwids = await GetKnownHardwareIdsAsync(db, userId, hwId, modernHWIds);
+            var query = MakeRoleBanLookupQuery(address, userId, knownHwids.legacy, knownHwids.modern, db, includeUnbanned)
                 .OrderByDescending(b => b.BanTime);
 
             return await QueryRoleBans(query);

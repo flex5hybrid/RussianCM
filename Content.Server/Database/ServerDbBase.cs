@@ -750,6 +750,82 @@ namespace Content.Server.Database
             return flags ?? ServerBanExemptFlags.None;
         }
 
+        protected static async Task<(ImmutableArray<byte>? legacy, ImmutableArray<ImmutableArray<byte>> modern)> GetKnownHardwareIdsAsync(
+            DbGuard db,
+            NetUserId? userId,
+            ImmutableArray<byte>? currentLegacy,
+            ImmutableArray<ImmutableArray<byte>>? currentModern,
+            CancellationToken cancel = default)
+        {
+            var legacyIds = new List<ImmutableArray<byte>>();
+            var modernIds = new List<ImmutableArray<byte>>();
+
+            AddLegacyHwid(legacyIds, currentLegacy);
+            AddModernHwids(modernIds, currentModern);
+
+            if (userId != null)
+            {
+                var loggedHwids = await db.DbContext.ConnectionLog
+                    .AsNoTracking()
+                    .Where(log => log.UserId == userId.Value.UserId && log.HWId != null)
+                    .Select(log => log.HWId!)
+                    .ToListAsync(cancel);
+
+                foreach (var hwid in loggedHwids)
+                {
+                    switch (hwid.Type)
+                    {
+                        case HwidType.Legacy:
+                            AddLegacyHwid(legacyIds, hwid.Hwid.ToImmutableArray());
+                            break;
+                        case HwidType.Modern:
+                            AddModernHwid(modernIds, hwid.Hwid.ToImmutableArray());
+                            break;
+                    }
+                }
+            }
+
+            return (legacyIds.FirstOrDefault().IsDefaultOrEmpty ? null : legacyIds[0], modernIds.ToImmutableArray());
+        }
+
+        private static void AddLegacyHwid(List<ImmutableArray<byte>> hwids, ImmutableArray<byte>? hwid)
+        {
+            if (hwid is not { Length: > 0 } value)
+                return;
+
+            AddHwid(hwids, value);
+        }
+
+        private static void AddModernHwids(List<ImmutableArray<byte>> hwids, ImmutableArray<ImmutableArray<byte>>? modernHwids)
+        {
+            if (modernHwids == null)
+                return;
+
+            foreach (var hwid in modernHwids)
+            {
+                AddModernHwid(hwids, hwid);
+            }
+        }
+
+        private static void AddModernHwid(List<ImmutableArray<byte>> hwids, ImmutableArray<byte> hwid)
+        {
+            if (hwid.IsDefaultOrEmpty)
+                return;
+
+            AddHwid(hwids, hwid);
+        }
+
+        private static void AddHwid(List<ImmutableArray<byte>> hwids, ImmutableArray<byte> hwid)
+        {
+            foreach (var existing in hwids)
+            {
+                if (existing.AsSpan().SequenceEqual(hwid.AsSpan()))
+                    return;
+            }
+
+            hwids.Add(hwid);
+        }
+
         #endregion
 
         #region Role Bans
