@@ -4,8 +4,8 @@
     - forceonforce
   name: au14-preset-forceonforce-title
   showInVote: true
-  description: au14-preset-forceonforce-description
-  minPlayers: 550
+  description: Two units face each other in combat.
+  minPlayers: 125
   requiresOpforVote: true
   requiresGovforVote: true
   supportedPlanets:
@@ -37,12 +37,12 @@
   requiresGovforVote: true
   supportedPlanets:
     - AUPlanetShepherdsPride
-    #- AUPlanetLV624
+   # - AUPlanetLV327
     - CMUPlanetLament
     - AUPlanetStableGarrison
     #- AUPlanetLV747
-    #- AUPlanetSorokyne
-    #- AUPlanetLV759
+    - AUPlanetSorokyne
+    - AuPlanetChances
   rules:
   - AuVoteRule
   - PlatoonSpawn
@@ -62,9 +62,13 @@
   - AUPlanetSorokyne
   - AUPlanetCorsatStation
   - AUPlanetTrijent
-#  - AuPlanetFiorina -removed due to load errors
+  - AuPlanetFiorina
   - AuPlanetKutjevo
   - AuPlanetShivasSnowball
+  - AUPlanetShepherdsPride
+  - AUPlanetLV327
+  - AUPlanetStableGarrison
+  - AuPlanetChances
   rules:
   - AuVoteRule
   - PlatoonSpawn
@@ -84,9 +88,12 @@
     - ColonyAntags
   supportedPlanets:
     - AUPlanetShepherdsPride
-   # - AUPlanetLV624
+    - AUPlanetLV327
     - AUPlanetStableGarrison
     - CMUPlanetLament
+    - AUPlanetSorokyne
+    - AuPlanetChances
+
 
 - type: gamePreset
   id: Jailbreak

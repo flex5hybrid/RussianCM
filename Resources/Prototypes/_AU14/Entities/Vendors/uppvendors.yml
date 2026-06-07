@@ -297,11 +297,11 @@
       entries:
       - id: CMSandbagEmpty25
         recommended: true
-        amount: 60
+        amount: 2
       - id: BarbedWire15
         amount: 6
       - id: CMSheetMetal50
-        amount: 3
+        amount: 2
       - id: CMSheetPlasteel50
         amount: 1
       - id: RMCBoxMagazinePowerCellsHighFilled

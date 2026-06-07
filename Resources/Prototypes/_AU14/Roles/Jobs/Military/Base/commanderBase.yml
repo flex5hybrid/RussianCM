@@ -89,6 +89,7 @@
     ears: AU14HeadsetGovforCommand
   inhand:
     -  AU14TabletGovfor
+    -  AU14StampCO
 
 - type: startingGear
   id: AU14GearGOVFORPlatCoDummy

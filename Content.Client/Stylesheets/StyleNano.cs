@@ -533,27 +533,27 @@ namespace Content.Client.Stylesheets
             var uavOsd13 = resCache.GetFont
             (
                 uavOsdStack,
-                size: 8
+                size: 10
             );
             var uavOsd14 = resCache.GetFont
             (
                 uavOsdStack,
-                size: 8
+                size: 11
             );
             var uavOsdBold14 = resCache.GetFont
             (
                 uavOsdStack,
-                size: 8
+                size: 11
             );
             var uavOsdBold16 = resCache.GetFont
             (
                 uavOsdStack,
-                size: 10
+                size: 13
             );
             var uavOsdBold18 = resCache.GetFont
             (
                 uavOsdStack,
-                size: 12
+                size: 15
             );
             var robotoMonoBold11 = resCache.GetFont(robotoMonoBoldStack, size: 11);
             var robotoMonoBold12 = resCache.GetFont(robotoMonoBoldStack, size: 12);

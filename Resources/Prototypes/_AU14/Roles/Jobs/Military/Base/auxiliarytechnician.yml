@@ -92,6 +92,7 @@
   storage:
     back:
     - CMStampApproved
+    - AU14StampAUX
 
 - type: startingGear
   id: AU14GearGOVFORAuxTechDummy
