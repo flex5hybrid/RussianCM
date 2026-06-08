@@ -81,6 +81,8 @@
     id: AU14IDCardSquadAdvisor
     ears: AU14HeadsetGovforCommand
     back: AU14SatchelMarineAdvisorMilitary
+  inhand:
+    -  AU14StampSEA
 
 - type: entity
   parent: CMSpawnPointJobBase

@@ -333,11 +333,11 @@
       entries:
       - id: CMSandbagEmpty50
         recommended: true
-        amount: 5
+        amount: 2
       - id: BarbedWire15
         amount: 4
       - id: CMSheetMetal50
-        amount: 1
+        amount: 2
       - id: CMSheetPlasteel50
         amount: 1
       - id: RMCBoxMagazinePowerCellsHighFilled

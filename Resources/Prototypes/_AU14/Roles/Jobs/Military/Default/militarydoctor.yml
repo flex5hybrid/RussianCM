@@ -79,6 +79,8 @@
     shoes: CMBootsBlackFilled
     ears: AU14HeadsetGovforAuxiliary
     ears2: RMCM5CameraGear
+  inhand:
+    - AU14StampMO
 
 - type: entity
   parent: CMSpawnPointJobBase

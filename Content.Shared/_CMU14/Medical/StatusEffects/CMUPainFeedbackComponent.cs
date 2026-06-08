@@ -25,6 +25,9 @@ public sealed partial class CMUPainFeedbackComponent : Component
     public float SevereBlurStartAmount = 0.1f;
 
     [DataField]
+    public float SevereBlurAmount = 0.45f;
+
+    [DataField]
     public float ShockBlurStartAmount = 2.25f;
 
     [DataField]

@@ -76,6 +76,8 @@
     id: AU14IDCardGOVFORMilitaryPoliceMan
     ears: AU14HeadsetGovforMarineMP
     ears2: RMCM5CameraGear
+  inhand:
+    - AU14StampCMP
 
 - type: startingGear
   id: AU14GearGOVFORMilitaryPoliceManDummy
@@ -87,6 +89,7 @@
     ears: AU14HeadsetGovforMarineMP
     ears2: RMCM5CameraGear
     outerClothing: AU14ArmorM3JungleThree
+
 
 - type: entity
   parent: CMSpawnPointJobBase

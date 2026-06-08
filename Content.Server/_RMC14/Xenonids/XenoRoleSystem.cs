@@ -35,6 +35,8 @@ public sealed partial class XenoRoleSystem : EntitySystem
     [Dependency] private RoleSystem _role = default!;
     [Dependency] private IGameTiming _timing = default!;
 
+    private static readonly ProtoId<JobPrototype> LesserDroneRole = "CMXenoLesserDrone";
+
     private TimeSpan _disconnectedXenoGhostRoleTime;
 
     private TimeSpan _rankTwoTime;
@@ -247,6 +249,12 @@ public sealed partial class XenoRoleSystem : EntitySystem
 
     private void MarkAbandonedForQueue(EntityUid uid)
     {
+        if (TryComp(uid, out XenoComponent? xeno) &&
+            xeno.Role == LesserDroneRole)
+        {
+            return;
+        }
+
         EnsureComp<AbandonedXenoQueueableComponent>(uid);
     }
 }

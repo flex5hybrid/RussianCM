@@ -2430,44 +2430,142 @@
   id: 209
   time: '2026-06-06T10:00:06.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1213
-- author: flex5hybrid
+- author: HotdogMan52
   changes:
-  - message: "\u0418\u043D\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044F \u0438\u0433\
-      \u0440\u044B \u0441 \u0434\u0438\u0441\u043A\u043E\u0440\u0434\u043E\u043C"
+  - message: Added teargas_airburst_packet_e and teargas_airburst_packet
     type: Add
-  - message: "\u041F\u043B\u044E\u0448\u043A\u0438 \u0441\u043F\u043E\u043D\u0441\u043E\
-      \u0440\u0430\u043C"
+  - message: Increased the AGM-PDC packet to include five rounds instead of three
+    type: Tweak
+  - message: Replaced teargas_packet and teargas_packet_e with new versions
+    type: Tweak
+  - message: fixed updatePerSecond in teargassmoke.yml because the wrong value was
+      saved when I commit the last PR
+    type: Fix
+  id: 207
+  time: '2026-06-06T15:28:53.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1215
+- author: maertayn
+  changes:
+  - message: IdCards are blacklisted from Shopkeep vendor stoc
+    type: Fix
+  - message: WeYu Security has +1 CQC/Endurance/Fireman/Engi/Firearms
+    type: Tweak
+  - message: Vending machines (cash vendors) sprites
+    type: Fix
+  - message: Stereo .ogg audio files converted to mono (1-channel) - affected audio
+      should now be dimensional
+    type: Fix
+  - message: Wooden/metal crates used as cades against Xeno - charge can destroy &
+      sharp claws can destroy metal
+    type: Fix
+  - message: Cultists can use resin doors (any hive - they're xeno non-hostiles)
+    type: Fix
+  id: 208
+  time: '2026-06-06T16:09:50.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1229
+- author: maertayn
+  changes:
+  - message: Squad tracker breaking when assigning/reassigning SLs
+    type: Fix
+  - message: Squad tracker reverting back to FTL tracking when someone joins the fireteam
+    type: Fix
+  - message: Squad tracker could previously only be set/changed by the squad leader
+    type: Fix
+  - message: Fireteam management hidden if you can't interact with it (only SL/OW
+      can use it)
+    type: Fix
+  - message: Battle Buddy system would track stale state if your partner found a new
+      buddy
+    type: Fix
+  - message: Marine Orders (move/hold/focus) only if you have leadership>=1 or assigned
+      SL (duration is based on leadership)
+    type: Tweak
+  - message: Additional localization support (overwatch.ftl) for the OW consoles
+    type: Code
+  id: 209
+  time: '2026-06-06T16:10:11.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1233
+- author: toot521
+  changes:
+  - message: Added Imperial Armed Space Forces (IASF) Survivors
+    type: Add
+  - message: Added IASF Surv spawns to Hybrisa Metropolitan and Raijin Hydroelectric
     type: Add
   id: 210
-  time: '2026-06-06T19:16:15.0000000+00:00'
-  url: https://github.com/flex5hybrid/RussianCM/pull/211
-- author: flex5hybrid
+  time: '2026-06-06T16:13:00.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1214
+- author: Piticzu
   changes:
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\u0441\
-      \u0435\u043B\u044C\u0435!"
+  - message: Crusher charge now plays a windup sound during the 0.6s delay before
+      charging.
     type: Add
-  - message: "\u0423\u0434\u0430\u043B\u0435\u043D\u043E \u0432\u0435\u0441\u0435\u043B\
-      \u044C\u0435!"
-    type: Remove
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u0432\u0435\u0441\u0435\
-      \u043B\u044C\u0435!"
-    type: Tweak
-  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\
-      \u0441\u0435\u043B\u044C\u0435!"
+  - message: Fixed crusher charge phasing through walls when aimed at the seam between
+      two tiles.
     type: Fix
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0430 \u043A\u0430\u0440\u0442\
-      \u0430!"
-    type: Map
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u0434\u043B\u044F\
-      \ \u0430\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\
-      \u043E\u0432!"
-    type: Admin
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u0432 \u043A\
-      \u043E\u0434\u0435 \u0434\u043B\u044F \u043A\u043E\u043D\u0442\u0440\u0438\u0431\
-      \u044C\u044E\u0442\u043E\u0440\u043E\u0432!"
+  - message: Fixed crusher charge not hitting or flinging marines at range.
+    type: Fix
+  - message: Fixed crusher charge not damaging doors on impact.
+    type: Fix
+  - message: Crusher charge now plows through props (closets, lockers, racks, barrels,
+      filing cabinets, floodlights, disposal units, generators, platforms, hospital
+      dividers).
+    type: Tweak
+  - message: Doors, shutters, and non-loadout vendors now take structural damage from
+      crusher charge.
+    type: Tweak
+  - message: Crusher charge rewritten to use direct physics impulse instead of ThrownItemSystem,
+      matching the xeno leap pattern.
     type: Code
   id: 211
-  time: '2026-06-06T19:54:30.0000000+00:00'
-  url: https://github.com/flex5hybrid/RussianCM/pull/213
+  time: '2026-06-06T18:34:24.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1223
+- author: RomiGur
+  changes:
+  - message: Added localization key lookup (rank-{ID}) for rank names in examine text
+    type: Code
+  id: 212
+  time: '2026-06-06T22:16:17.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1238
+- author: KriegersMustDie
+  changes:
+  - message: Stamps.
+    type: Add
+  id: 213
+  time: '2026-06-06T22:55:40.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1239
+- author: TheHellFireo
+  changes:
+  - message: Simple fractures show on examine.
+    type: Add
+  - message: Hairline fractures stay hidden on examine.
+    type: Fix
+  - message: Ghosted Lesser Drones are not added to larva queue.
+    type: Fix
+  - message: Ghosted Lesser Drones are not offered by larva queue.
+    type: Fix
+  - message: Pain shock blur starts minimally at severe pain.
+    type: Tweak
+  - message: Pain shock blur is stronger at shock.
+    type: Tweak
+  - message: Looking up no longer stops pain shock visuals.
+    type: Fix
+  - message: Z starts shrapnel removal when you have shrapnel.
+    type: Add
+  - message: Alt-click with knife starts shrapnel removal.
+    type: Add
+  - message: Shrapnel removal continues until all shrapnel is gone.
+    type: Tweak
+  - message: Shrapnel removal damage cannot break bones or cause internal bleeding.
+    type: Fix
+  id: 214
+  time: '2026-06-07T00:09:50.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1240
+- author: toot521
+  changes:
+  - message: CLF Survs can now actually only spawn on distress signal
+    type: Fix
+  id: 215
+  time: '2026-06-07T09:21:53.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1243
 Name: CMU
 Order: -1
