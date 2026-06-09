@@ -1,0 +1,39 @@
+- type: entity
+  parent: BaseItem
+  id: RUCMResinBaton
+  name: resin baton
+  description: A worn resin baton.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Weapons/resin_baton.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Melee/stun_baton.rsi
+    slots:
+    - Belt
+    - Suitstorage
+  - type: Item
+    size: Normal
+  - type: Appearance
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    angle: 60
+    animation: WeaponArcThrust
+    damage:
+      types:
+        Blunt: 3.5
+    bluntStaminaDamageFactor: 4.0
+  - type: RMCStaminaDamageOnHit
+    damage: 15
+  - type: DamageImpactProfile
+    melee:
+      contact: Crush
+      penetration: None
+    thrown:
+      contact: Crush
+      penetration: None
+  - type: RMCStaminaDamageOnCollide
+    damage: 25
+  - type: LandAtCursor
+  - type: UseDelay
