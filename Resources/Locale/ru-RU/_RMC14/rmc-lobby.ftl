@@ -18,3 +18,4 @@ au-lobby-join-Colony = Присоединяйтесь к гражданским 
 rmc-lobby-gamemode-label-insurgency = ВОС
 rmc-lobby-gamemode-label-colony-fall = ПК
 rmc-lobby-gamemode-label-distress-signal = СБ
+rmc-lobby-gamemode-label-jailbreak = JB

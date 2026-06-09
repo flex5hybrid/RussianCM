@@ -97,11 +97,16 @@
   id: Jailbreak
   alias:
   - jailbreak
-  name: Jailbreak
-  showInVote: false
-  description: Jailbreak mode
+  name: au14-preset-jailbreak-title
+  showInVote: true
+  minPlayers: 0
+  description: au14-preset-jailbreak-description
   rules:
   - AuVoteRule
+  - ColonyAntags
+  supportedPlanets:
+    - AUPlanetLV747
+    - CMUPlanetLament
 
 - type: gamePreset
   id: Prometheus

@@ -280,6 +280,7 @@ namespace Content.Shared.Preferences
                 "insurgency" => "Insurgency",
                 "colonyfall" => "ColonyFall",
                 "distresssignal" => "DistressSignal",
+                "jailbreak" => "Jailbreak",
                 _ => gamemode.Trim()
             };
         }

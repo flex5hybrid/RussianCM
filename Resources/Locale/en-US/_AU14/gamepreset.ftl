@@ -22,3 +22,6 @@ au14-preset-distresssignal-description = Investigate a mysterious distress signa
 
 au14-preset-colonyfall-title = Colony Fall
 au14-preset-colonyfall-description = Live in an offworld colony as it falls into chaos.
+
+au14-preset-jailbreak-title = Jailbreak
+au14-preset-jailbreak-description = Become a prisoner or a prison guard while something strange and clearly unfriendly prowls through the vents.

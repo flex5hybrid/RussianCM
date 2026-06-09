@@ -23,3 +23,6 @@ au14-preset-distresssignal-description = Расследуйте таинстве
 
 au14-preset-colonyfall-title = Падение колонии
 au14-preset-colonyfall-description = Выживите в колонии, которая погружается в хаос.
+
+au14-preset-jailbreak-title = Jailbreak
+au14-preset-jailbreak-description = Станьте заключённым или охранником тюрьмы, пока в вентиляции бродит нечто странное и явно недружелюбное.

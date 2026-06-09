@@ -9,6 +9,7 @@
   thirdpartyinterval: 9100
   whitelistedgamemodes:
   - ColonyFall
+  - Jailbreak
   blacklistedgamemodes:
   - DistressSignal
   winconditions:

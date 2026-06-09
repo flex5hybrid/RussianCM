@@ -122,6 +122,13 @@ namespace Content.Client.Lobby.UI
         private const string GamemodeInsurgency = "Insurgency";
         private const string GamemodeColonyFall = "ColonyFall";
         private const string GamemodeDistressSignal = "DistressSignal";
+        private const string GamemodeJailbreak = "Jailbreak";
+        private static readonly string[] JailbreakCivilianJobs =
+        {
+            "AU14JobCivilianPrisoner",
+            "AU14JobCivilianKellandWarden",
+            "AU14JobWYGuard",
+        };
 
         private Direction _previewRotation = Direction.North;
         private int _previewJobIndex;
@@ -526,6 +533,7 @@ namespace Content.Client.Lobby.UI
             TabContainer.SetTabTitle(1, Loc.GetString("humanoid-profile-editor-insurgency-tab"));
             TabContainer.SetTabTitle(2, Loc.GetString("humanoid-profile-editor-colony-fall-tab"));
             TabContainer.SetTabTitle(3, Loc.GetString("humanoid-profile-editor-distress-signal-tab"));
+            TabContainer.SetTabTitle(4, Loc.GetString("humanoid-profile-editor-jailbreak-tab"));
             SetupGamemodeTabTitles();
 
             PreferenceUnavailableButton.AddItem(
@@ -555,7 +563,7 @@ namespace Content.Client.Lobby.UI
 
             #region Markings
 
-            TabContainer.SetTabTitle(5, Loc.GetString("humanoid-profile-editor-markings-tab"));
+            TabContainer.SetTabTitle(6, Loc.GetString("humanoid-profile-editor-markings-tab"));
 
             Markings.OnMarkingAdded += OnMarkingChange;
             Markings.OnMarkingRemoved += OnMarkingChange;
@@ -606,8 +614,8 @@ namespace Content.Client.Lobby.UI
             }
 
             var namedItems = UserInterfaceManager.GetUIController<NamedItemsUIController>();
-            TabContainer.SetTabTitle(6, Loc.GetString("rmc-ui-named-items"));
-            TabContainer.SetTabVisible(6, namedItems.Available);
+            TabContainer.SetTabTitle(7, Loc.GetString("rmc-ui-named-items"));
+            TabContainer.SetTabVisible(7, namedItems.Available);
             NamedItems.PrimaryGun.OnTextChanged += args => SetItemName(RMCNamedItemType.PrimaryGun, args.Text);
             NamedItems.Sidearm.OnTextChanged += args => SetItemName(RMCNamedItemType.Sidearm, args.Text);
             NamedItems.Helmet.OnTextChanged += args => SetItemName(RMCNamedItemType.Helmet, args.Text);
@@ -700,6 +708,10 @@ namespace Content.Client.Lobby.UI
             DistressSignalTabs.SetTabTitle(0, Loc.GetString("humanoid-profile-editor-government-jobs-tab"));
             DistressSignalTabs.SetTabTitle(1, Loc.GetString("humanoid-profile-editor-threat-roles-tab"));
             DistressSignalTabs.SetTabTitle(2, Loc.GetString("humanoid-profile-editor-antags-tab"));
+
+            JailbreakTabs.SetTabTitle(0, Loc.GetString("humanoid-profile-editor-civilian-jobs-tab"));
+            JailbreakTabs.SetTabTitle(1, Loc.GetString("humanoid-profile-editor-threat-roles-tab"));
+            JailbreakTabs.SetTabTitle(2, Loc.GetString("humanoid-profile-editor-antags-tab"));
         }
 
         /// <summary>
@@ -710,7 +722,7 @@ namespace Content.Client.Lobby.UI
             TraitsList.DisposeAllChildren();
 
             var traits = _prototypeManager.EnumeratePrototypes<TraitPrototype>().OrderBy(t => Loc.GetString(t.Name)).ToList();
-            TabContainer.SetTabTitle(4, Loc.GetString("humanoid-profile-editor-traits-tab"));
+            TabContainer.SetTabTitle(5, Loc.GetString("humanoid-profile-editor-traits-tab"));
 
             if (traits.Count < 1)
             {
@@ -851,11 +863,13 @@ namespace Content.Client.Lobby.UI
             InsurgencyAntagList.DisposeAllChildren();
             ColonyAntagList.DisposeAllChildren();
             DistressAntagList.DisposeAllChildren();
+            JailbreakAntagList.DisposeAllChildren();
             _antagPreferences.Clear();
 
             PopulateAntagList(InsurgencyAntagList, GamemodeInsurgency);
             PopulateAntagList(ColonyAntagList, GamemodeColonyFall);
             PopulateAntagList(DistressAntagList, GamemodeDistressSignal);
+            PopulateAntagList(JailbreakAntagList, GamemodeJailbreak);
         }
 
         private void PopulateAntagList(BoxContainer targetList, string gamemode)
@@ -1238,6 +1252,8 @@ namespace Content.Client.Lobby.UI
             ColonyThreatJobList.DisposeAllChildren();
             DistressGovernmentJobList.DisposeAllChildren();
             DistressThreatJobList.DisposeAllChildren();
+            JailbreakCivilianJobList.DisposeAllChildren();
+            JailbreakThreatJobList.DisposeAllChildren();
             _jobCategories.Clear();
             _jobPriorities.Clear();
 
@@ -1436,6 +1452,8 @@ namespace Content.Client.Lobby.UI
             yield return ColonyThreatJobList;
             yield return DistressGovernmentJobList;
             yield return DistressThreatJobList;
+            yield return JailbreakCivilianJobList;
+            yield return JailbreakThreatJobList;
         }
 
         private BoxContainer GetOrCreateJobCategory(
@@ -1535,6 +1553,16 @@ namespace Content.Client.Lobby.UI
                     GamemodeColonyFall,
                     $"colony-civilian-{department.ID}",
                     title);
+
+                if (IsJailbreakCivilianJob(job))
+                {
+                    var (jailbreakKey, jailbreakTitle) = GetJailbreakJobSegment(job);
+                    yield return (JailbreakCivilianJobList,
+                        GamemodeJailbreak,
+                        $"jailbreak-civilian-{jailbreakKey}",
+                        jailbreakTitle);
+                }
+
                 yield break;
             }
 
@@ -1548,6 +1576,10 @@ namespace Content.Client.Lobby.UI
             yield return (DistressThreatJobList,
                 GamemodeDistressSignal,
                 "distress-threat",
+                Loc.GetString("humanoid-profile-editor-threat-roles-tab"));
+            yield return (JailbreakThreatJobList,
+                GamemodeJailbreak,
+                "jailbreak-threat",
                 Loc.GetString("humanoid-profile-editor-threat-roles-tab"));
         }
 
@@ -1585,6 +1617,20 @@ namespace Content.Client.Lobby.UI
         private static bool IsInsurgencyDepartment(DepartmentPrototype department)
         {
             return department.ID == InsurgencyDepartmentId;
+        }
+
+        private static bool IsJailbreakCivilianJob(JobPrototype job)
+        {
+            return JailbreakCivilianJobs.Contains(job.ID);
+        }
+
+        private static (string Key, string Title) GetJailbreakJobSegment(JobPrototype job)
+        {
+            return job.ID switch
+            {
+                "AU14JobCivilianPrisoner" => ("prisoners", Loc.GetString("humanoid-profile-editor-jailbreak-prisoners-label")),
+                _ => ("staff", Loc.GetString("humanoid-profile-editor-jailbreak-staff-label")),
+            };
         }
 
         private static bool IsRoundStartThreatAssignmentJob(JobPrototype job)
@@ -2043,13 +2089,16 @@ namespace Content.Client.Lobby.UI
         {
             ColonyThreatPreferenceList.DisposeAllChildren();
             DistressThreatPreferenceList.DisposeAllChildren();
+            JailbreakThreatPreferenceList.DisposeAllChildren();
             _threatPreferenceButtons.Clear();
 
             PopulateThreatPreferenceList(ColonyThreatPreferenceList, GamemodeColonyFall);
             PopulateThreatPreferenceList(DistressThreatPreferenceList, GamemodeDistressSignal);
+            PopulateThreatPreferenceList(JailbreakThreatPreferenceList, GamemodeJailbreak);
             SyncThreatPreferenceButtons();
             CrtLobbyTheme.Apply(ColonyThreatPreferenceList);
             CrtLobbyTheme.Apply(DistressThreatPreferenceList);
+            CrtLobbyTheme.Apply(JailbreakThreatPreferenceList);
         }
 
         private void PopulateThreatPreferenceList(BoxContainer targetList, string gamemode)

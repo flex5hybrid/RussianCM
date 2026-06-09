@@ -5,6 +5,7 @@
   thirdpartyinterval: 9100
   whitelistedgamemodes:
   - ColonyFall
+  - Jailbreak
   blacklistedgamemodes:
   - DistressSignal
   winconditions:
@@ -24,4 +25,3 @@
   KnowledgeLevelsGovforThreat:
     "Threat Unknown": 1
     "Threat is biological in nature.": 2
-
