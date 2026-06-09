@@ -116,10 +116,6 @@ ent-CMBeltUtilityFilled = { ent-CMBeltUtility }
     .desc = { ent-CMBeltUtility.desc }
     .suffix = Заполнен
 
-ent-RMCBeltPMCFilledCommando = {ent-RMCBeltPMC}
-    .desc = {ent-RMCBeltPMC.desc}
-    .suffix = Заполнен, M54C
-
 ent-RMCM276ShotgunShellLoadingRigFill = {ent-RMCM276ShotgunShellLoadingRig}
     .desc = {ent-RMCM276ShotgunShellLoadingRig.desc}
     .suffix = Заполнена

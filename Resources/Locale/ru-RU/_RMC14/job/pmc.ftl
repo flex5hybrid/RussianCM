@@ -126,22 +126,14 @@ rmc-ghost-name-corp-exec-chief = Корпоративный генеральны
 
 rmc-job-name-corp-exec-chief = Корпоративный генеральный директор
 
-rmc-ghost-name-corp-dep-director = ВЕ-Я Заместитель директора (Нейтральный)
+rmc-ghost-name-corp-dep-director = Ве-Ю Заместитель директора (Нейтральный)
 
-rmc-job-name-corp-dep-director = ВЕ-Я заместитель директора
+rmc-job-name-corp-dep-director = Ве-Ю заместитель директора
 
-rmc-ghost-name-corp-director = WE-YA Директор (Нейтральный)
+rmc-ghost-name-corp-director = Ве-Ю Директор (Нейтральный)
 
-rmc-job-name-corp-director = МЫ-Я Директор
+rmc-job-name-corp-director = Ве-Ю Директор
 
 # Corpses
 
 rmc-job-name-pmc-operator-corpse = Оператор ЧВК
-
-# Missing entries synced from en-US
-
-rmc-ghost-role-information-corp-exec-description = Вы сотрудник корпорации «Вейланд-Ютани». Вы должны поддерживать и защищать интересы Вейланд-Ютани.
-
-rmc-ghost-name-corp-exec-supervisor = Корпоративный исполнительный директор (нейтральный)
-
-rmc-job-name-corp-exec-supervisor = Корпоративный исполнительный супервайзер
