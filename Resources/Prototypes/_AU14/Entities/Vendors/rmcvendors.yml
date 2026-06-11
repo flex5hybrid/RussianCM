@@ -71,13 +71,8 @@
         amount: 15
       - id: AU14DesertFlapCap
         amount: 15
-    - name: Headsets
-      entries:
       - id: RMCM5CameraGear
         amount: 30
-      - id: AU14HeadsetGovforMarine
-        name: empty headset
-        amount: 20
     - name: Heads Up Display
       entries:
       - id: AU14VisorSquadRMC
@@ -752,12 +747,6 @@
         amount: 5
       - id: AU14DesertPatrolCap
         amount: 5
-    - name: Headsets
-      entries:
-      - id: AU14HeadsetGovforCommand
-        amount: 2
-      - id: AU14HeadsetGovforAuxiliary
-        amount: 2
     - name: Backpack
       entries:
       - id: RMCBackpackRTO
@@ -791,6 +780,12 @@
         amount: 1
       - id: RMCPackFlareCAS
         amount: 6
+    - name: Chevrons
+      entries:
+      - id: AU14ChevronRMCRecruit
+        amount: 2
+      - id: AU14PortableVendorRMCRanks
+        amount: 1
 
 - type: entity
   parent: ColMarTechBase

@@ -2,7 +2,7 @@
   parent: AU14JobPlatCoBase
   id: AU14JobGOVFORPlatCoWYPMC
   requirements: []
-  name: PMC Operations Director
+  name: au14-job-name-wypmc-platco
   spawnMenuRoleName: Platoon Commander (WYPMC)
   ranks:
     AU14RankWeYuCommanderSenior:

@@ -1,7 +1,7 @@
 - type: job
   parent: AU14JobDSPilotBase
   id: AU14JobGOVFORDSPilotWYPMC
-  name: PMC Pilot Officer
+  name: au14-job-name-wypmc-dspilot
   spawnMenuRoleName: Pilot Officer (WYPMC)
   ranks:
     AU14RankWeYuSeniorCrewChief:

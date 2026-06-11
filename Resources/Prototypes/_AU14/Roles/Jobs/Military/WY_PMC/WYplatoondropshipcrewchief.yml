@@ -1,7 +1,7 @@
 - type: job
   parent: AU14JobDCCBase
   id: AU14JobGOVFORDCCWYPMC
-  name: PMC Crew Chief
+  name: au14-job-name-wypmc-dcc
   spawnMenuRoleName: Dropship Crew Chief (WYPMC)
   ranks:
     AU14RankWeYuSeniorCrewChief:

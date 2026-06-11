@@ -1,7 +1,7 @@
 - type: job
   parent: AU14JobSectionSergeantBase
   id: AU14JobGOVFORSectionSergeantWYPMC
-  name: PMC Platoon Leader
+  name: au14-job-name-wypmc-ssg
   spawnMenuRoleName: Platoon Sergeant (WYPMC)
   ranks:
     AU14RankWeYuEnforcerLead: []

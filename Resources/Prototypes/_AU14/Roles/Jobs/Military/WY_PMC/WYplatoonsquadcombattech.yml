@@ -1,7 +1,7 @@
 - type: job
   parent: AU14JobSquadCombatTechBase
   id: AU14JobGOVFORSquadCombatTechWYPMC
-  name: PMC Combat Technician
+  name: au14-job-name-wypmc-combattech
   spawnMenuRoleName: Combat Tech (WYPMC)
   ranks:
     AU14RankWeYuSeniorOperator:

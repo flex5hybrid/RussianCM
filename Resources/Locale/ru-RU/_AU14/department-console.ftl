@@ -29,6 +29,8 @@ department-console-no-items = В этой категории нет товаро
 
 department-console-salary = ${ $amount }
 department-console-salary-custom = ${ $amount } (индивидуальная)
+department-console-salary-display = ${ $amount } (индивидуальная)
+department-console-salary-display-default = ${ $amount }
 department-console-salary-placeholder = Зарплата
 department-console-btn-set = Задать
 department-console-btn-reset = Сбросить

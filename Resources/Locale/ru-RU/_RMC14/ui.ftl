@@ -84,7 +84,7 @@ rmc-ui-ghost-color-save = Сохранить
 rmc-ui-shoutout-marine = [bold]Операция спонсируется [color=green]{$name}[/color]![/bold]
 rmc-ui-shoutout-xeno = [bold]Улей основан [color=purple]{$name}[/color]![/bold]
 
-rmc-ui-discord = Раздор
+rmc-ui-discord = Discord
 rmc-ui-boosty = Boosty
 rmc-other-credits-tab = Прочее
 

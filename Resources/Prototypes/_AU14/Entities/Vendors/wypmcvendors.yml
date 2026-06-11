@@ -54,13 +54,8 @@
         amount: 20
       - id: AU14HeadCommandoBeanie
         amount: 10
-    - name: Headsets
-      entries:
       - id: RMCM5CameraGear
         amount: 30
-      - id: AU14HeadsetGovforMarine
-        name: empty headset
-        amount: 20
     - name: Heads Up Display
       entries:
       - id: RMCVisorSquad
@@ -627,12 +622,6 @@
       entries:
       - id: CMArmorM4PMCLeader
         amount: 5
-    - name: Headsets
-      entries:
-      - id: AU14HeadsetGovforCommand
-        amount: 2
-      - id: AU14HeadsetGovforAuxiliary
-        amount: 2
     - name: Backpack
       entries:
       - id: RMCBackpackRTOPMC
@@ -665,6 +654,12 @@
         amount: 1
       - id: RMCPackFlareCAS
         amount: 6
+    - name: Chevrons
+      entries:
+      - id: AU14ChevronWeYuAssociateOperator
+        amount: 2
+      - id: AU14PortableVendorWeYuRanks
+        amount: 1
 
 - type: entity
   parent: ColMarTechBase

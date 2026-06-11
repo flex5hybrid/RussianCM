@@ -1,7 +1,7 @@
 - type: job
   parent: AU14JobRadioTelephoneOperatorBase
   id: AU14JobGOVFORRadioTelephoneOperatorWYPMC
-  name: PMC Communications Specialist
+  name: au14-job-name-wypmc-rto
   spawnMenuRoleName: Fireteam Leader (WYPMC)
   overwatchRoleName: au14-job-name-radiotelephoneoperator-alt
   ranks:

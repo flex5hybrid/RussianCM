@@ -455,7 +455,7 @@
       choices: { CMBag: 1 }
       entries:
       - id: CMBackpackCommand
-      #- id: CMSatchelCommandSecure # TODO RMC14 Secure Satchel (ID LOCK)
+      - id: CMSatchelCommandSecure
       - id: RMCBackpackRTO
       - id: CMSatchelMarineIntel
       - id: RMCSatchelMarineIntelChestrig
@@ -1189,7 +1189,7 @@
       - id: RMCM54CMK2Case
         name: M54C assault rifle MK2
       - id: RMCCaseFlamer
-        name: M34 incinerator unit
+        name: M240 incinerator unit #cmu14
     - name: Spare Equipment
       jobs:
       - CMChiefEngineer

@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCWeaponFlamer
   id: RMCWeaponFlamerSpec
-  name: M34-T incinerator unit
-  description: An improved version of the M34 incinerator unit, the M34-T model is capable of dispersing a larger variety of fuel types.
+  name: M240-T incinerator unit #cmu14
+  description: An improved version of the M240 incinerator unit, the M240-T model is capable of dispersing a larger variety of fuel types. #cmu14
   components:
   - type: Corrodible
     isCorrodible: true
@@ -50,8 +50,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerLarge
-  name: M34 large incinerator tank
-  description: A large fuel tank for use in the M34-T incinerator unit. Handle with extreme caution.
+  name: M240 large incinerator tank
+  description: A large fuel tank for use in the M240-T incinerator unit. Handle with extreme caution.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/flamethrower.rsi
@@ -79,7 +79,7 @@
 - type: entity
   parent: RMCTankFlamerLarge
   id: RMCTankFlamerLargeB
-  name: M34 large incinerator tank (B)
+  name: M240 large incinerator tank (B)
   description: A large fuel tank of Ultra Thick Napthal Fuel type B, a special variant of napalm that is easily extinguished, but disperses over a wide area while burning slowly.
   components:
   - type: RMCFlamerTank
@@ -95,8 +95,8 @@
 - type: entity
   parent: RMCTankFlamerLarge
   id: RMCTankFlamerLargeX
-  name: M34 large incinerator tank (X)
-  description: A large fuel tank of Ultra Thick Napthal Fuel type X, a sticky combustible liquid chemical that burns extremely hot, for use in the M34-T incinerator unit. Handle with extreme caution.
+  name: M240 large incinerator tank (X)
+  description: A large fuel tank of Ultra Thick Napthal Fuel type X, a sticky combustible liquid chemical that burns extremely hot, for use in the M240-T incinerator unit. Handle with extreme caution.
   components:
   - type: RMCFlamerTank
     maxRange: 6
@@ -111,8 +111,8 @@
 - type: entity
   parent: RMCTankFlamerLarge
   id: RMCTankFlamerLargeEX
-  name: M34 large incinerator tank (EX)
-  description: A large fuel tank of Ultra Thick Napthal Fuel type EX, a sticky combustible liquid chemical that burns so hot it melts straight through most flame-resistant materials, for use in the M34-T incinerator unit. Handle with extreme caution.
+  name: M240 large incinerator tank (EX)
+  description: A large fuel tank of Ultra Thick Napthal Fuel type EX, a sticky combustible liquid chemical that burns so hot it melts straight through most flame-resistant materials, for use in the M240-T incinerator unit. Handle with extreme caution.
   components:
   - type: RMCFlamerTank
     maxRange: 7
@@ -127,8 +127,8 @@
 - type: entity
   parent: RMCTankFlamerLarge
   id: RMCTankFlamerLargeCustom
-  name: M34 large custom incinerator tank
-  description: A large fuel tank for use in the M34-T incinerator unit.
+  name: M240 large custom incinerator tank
+  description: A large fuel tank for use in the M240-T incinerator unit.
   # description: A large fuel tank for use in the M34-T incinerator unit. This one has been modified with a pressure regulator and a large internal propellant tank. Must be manually attached.
   components:
   - type: RMCFlamerTank

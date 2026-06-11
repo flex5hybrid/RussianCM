@@ -1,64 +1,92 @@
-ent-CMAirlockPrepDelta = подготовка отряда дельта
-  .desc = Он открывается, закрывается и, возможно, раздавит вас.
+ent-CMAirlock = шлюз
+    .desc = Он открывается, закрывается и, возможно, раздавит вас.
 
-ent-CMAirlockPrepCharlie = подготовка отряда Чарли
-  .desc = Он открывается, закрывается и, возможно, раздавит вас.
+ent-CMAirlockPrepDelta = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Раздевалка
 
-ent-CMAirlockPrepBravo = подготовка отряда браво
-  .desc = Он открывается, закрывается и, возможно, раздавит вас.
+ent-CMAirlockPrepCharlie = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Раздевалка
 
-ent-CMAirlockPrepAlpha = подготовка отряда альфа
-  .desc = Он открывается, закрывается и, возможно, раздавит вас.
+ent-CMAirlockPrepBravo = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Раздевалка
 
-ent-CMAirlockPrep = приготовления шлюзовой шлюз
-  .desc = Он открывается, закрывается и, возможно, раздавит вас.
+ent-CMAirlockPrepAlpha = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Раздевалка
 
-ent-CMAirlockGlassSecurity = шлюз безопасности
-  .desc = Он открывается, закрывается и, возможно, раздавит вас.
+ent-CMAirlockPrep = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Раздевалка
 
-ent-CMAirlockGlassMedical = медицинский шлюз
-  .desc = Он открывается, закрывается и, возможно, раздавит вас.
+ent-CMAirlockGlassSecurity = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Охрана
+ent-CMAirlockSecurity = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Охрана
 
-ent-CMAirlockGlassEngineer = инженерный шлюз
-  .desc = Он открывается, закрывается и, возможно, раздавит вас.
+ent-CMAirlockGlassMedical = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Медицинский
+ent-CMAirlockMedical = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Медицинский
 
-ent-CMAirlockGlass = стеклянный шлюзовой шлюз
-  .desc = Он открывается, закрывается и, возможно, раздавит вас.
+ent-CMAirlockGlassEngineer = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Инженерный
+ent-CMAirlockEngineer = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Инженерный
 
-ent-RMCAirlockRustedWhite = шлюзовая камера
+ent-CMAirlockGlass = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный
 
-ent-RMCAirlockRusted = шлюзовая камера
+ent-RMCAirlockRustedWhite = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
 
-ent-RMCAirlockHybrisaPersonal = шлюзовая камера
+ent-RMCAirlockRusted = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
 
-ent-RMCAirlockHybrisa = шлюзовая камера
+ent-RMCAirlockHybrisaPersonal = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Жилой, Гибриса
+ent-CMAirlockGlassHybrisaPersonal = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Жилой
 
-ent-CMAirlockPrison = люк для обслуживания
+ent-RMCAirlockHybrisa = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Гибриса
+ent-CMAirlockGlassHybrisa = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Гибриса
 
-ent-CMAirlockCell = дверь камеры
+ent-CMAirlockPrison = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Тюрьма
 
-ent-CMAirlockSecure = безопасный шлюз
+ent-CMAirlockCell = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Камера
 
-ent-CMAirlockMaintReinforced = усиленный люк для обслуживания
+ent-CMAirlockSecure = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Безопасный
 
-ent-CMAirlockMaint = люк для обслуживания
+ent-CMAirlockMaintReinforced = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Усиленный, Техобслуживание
 
-ent-CMAirlockSecurity = шлюз безопасности
+ent-CMAirlockMaint = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Техобслуживание
 
-ent-CMAirlockMedical = медицинский шлюз
-
-ent-CMAirlockEngineer = инженерный шлюз
-
-ent-CMAirlockCommand = командный шлюз
-
-ent-CMAirlock = шлюзовая камера
-
-ent-CMAirlockGlassHybrisa = стеклянный шлюзовой шлюз
-  .desc = Он открывается, закрывается и, возможно, раздавит вас.
-
-ent-CMAirlockGlassHybrisaPersonal = стеклянный шлюзовой шлюз
-  .desc = Он открывается, закрывается и, возможно, раздавит вас.
-
-ent-RMCAirlockSPPGreyGlass = стеклянный шлюзовой шлюз
-  .desc = Он открывается, закрывается и, возможно, раздавит вас.
+ent-CMAirlockCommand = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Командование
 

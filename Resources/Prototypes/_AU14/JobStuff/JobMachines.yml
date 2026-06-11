@@ -60,12 +60,13 @@
     probability: 100
   - type: SubmissionStorage
     rewards:
-      SteelOre: 30
+      # RuCM price-upd
+      SteelOre: 100
       AUwood: 25
       Vegetable: 10
-      Fruit: 2
-      CottonBoll: 4
-      CMUGrain: 2
+      Fruit: 20
+      CottonBoll: 15
+      CMUGrain: 15
   - type: ContainerContainer
     containers:
       submission: !type:Container
@@ -89,7 +90,7 @@
   components:
   - type: SubmissionStorage
     rewards:
-      SteelOre: 10
+      SteelOre: 100 # RuCM price-upd
   - type: DisposalUnit
     whitelist:
       tags:
@@ -107,7 +108,8 @@
   components:
   - type: SubmissionStorage
     rewards:
-      AUwood: 20
+      # RuCM price-upd
+      AUwood: 25
   - type: DisposalUnit
     whitelist:
       tags:
@@ -125,7 +127,8 @@
   components:
   - type: SubmissionStorage
     rewards:
-      Vegetable: 2
+      # RuCM price-upd
+      Vegetable: 10
   - type: DisposalUnit
     whitelist:
       tags:
@@ -139,7 +142,8 @@
   components:
   - type: SubmissionStorage
     rewards:
-      Fruit: 2
+      # RuCM price-upd
+      Fruit: 20
   - type: DisposalUnit
     whitelist:
       tags:

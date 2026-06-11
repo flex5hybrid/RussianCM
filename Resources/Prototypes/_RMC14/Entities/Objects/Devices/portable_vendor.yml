@@ -76,7 +76,7 @@
         points: 5
       - id: CMDrinkCanBeerLite
         points: 5
-      - id: DrinkGlass
+      - id: RMCDrinkGlass
         points: 1
     - name: Stationary
       entries:

@@ -1,48 +1,82 @@
-ent-CMDoubleDoorBase = дверь
+ent-CMDoubleDoorBase = двойной шлюз
+    .desc = {ent-CMAirlock.desc}
 
-ent-CMDoubleDoorAlmayerGlass = дверь
+ent-CMDoubleDoorAlmayerGlass = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Алмайер
+ent-CMDoubleDoorAlmayerSolid = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Алмайер
 
-ent-CMDoubleDoorAlmayerSolid = дверь
+ent-CMDoubleDoorCommandGlass = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Командование
+ent-CMDoubleDoorCommandSolid = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Командование
 
-ent-CMDoubleDoorCommandGlass = дверь
+ent-CMDoubleDoorEngineerGlass = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Инженерный
+ent-CMDoubleDoorEngineerSolid = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Инженерный
 
-ent-CMDoubleDoorCommandSolid = дверь
+ent-CMDoubleDoorGenericGlass = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Стандартный
+ent-CMDoubleDoorGenericSolid = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стандартный
 
-ent-CMDoubleDoorEngineerGlass = дверь
+ent-RMCDoubleDoorGlassHybrisa = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Гибриса
+ent-RMCDoubleDoorSolidHybrisa = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Гибриса
 
-ent-CMDoubleDoorEngineerSolid = дверь
+ent-RMCDoubleDoorHybrisaMecical = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Медицинский, Гибриса
+ent-RMCDoubleDoorHybrisaGlassMecical = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Медицинский, Гибриса
 
-ent-CMDoubleDoorGenericGlass = дверь
+ent-CMDoubleDoorMedicalGlass = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Медицинский
+ent-CMDoubleDoorMedicalSolid = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Медицинский
 
-ent-RMCDoubleDoorGlassHybrisa = дверь
+ent-CMDoubleDoorPersonalGlass = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Жилой
+ent-CMDoubleDoorPersonalSolid = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Жилой
 
-ent-RMCDoubleDoorSolidHybrisa = дверь
+ent-CMDoubleDoorPreparations = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Раздевалка
+ent-CMDoubleDoorPreparationsAlpha = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Раздевалка, Альфа
+ent-CMDoubleDoorPreparationsBravo = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Раздевалка, Браво
+ent-CMDoubleDoorPreparationsCharlie = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Раздевалка, Чарли
+ent-CMDoubleDoorPreparationsDelta = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Раздевалка, Дельта
 
-ent-RMCDoubleDoorHybrisaMecical = дверь
-
-ent-RMCDoubleDoorHybrisaGlassMecical = дверь
-
-ent-CMDoubleDoorGenericSolid = дверь
-
-ent-CMDoubleDoorMedicalGlass = дверь
-
-ent-CMDoubleDoorMedicalSolid = дверь
-
-ent-CMDoubleDoorPersonalGlass = дверь
-
-ent-CMDoubleDoorPersonalSolid = дверь
-
-ent-CMDoubleDoorPreparations = дверь
-
-ent-CMDoubleDoorPreparationsAlpha = дверь
-
-ent-CMDoubleDoorPreparationsBravo = дверь
-
-ent-CMDoubleDoorPreparationsCharlie = дверь
-
-ent-CMDoubleDoorPreparationsDelta = дверь
-
-ent-CMDoubleDoorSecurityGlass = дверь
-
-ent-CMDoubleDoorSecuritySolid = дверь
+ent-CMDoubleDoorSecurityGlass = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Охрана
+ent-CMDoubleDoorSecuritySolid = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Охрана
 

@@ -166,7 +166,7 @@
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateMagazineNapthalUT
-  name: M34 UT-Napthal fuel (4x)
+  name: M240 UT-Napthal fuel (4x)
   components:
   - type: StorageFill
     contents:
@@ -176,7 +176,7 @@
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateMagazineBGel
-  name: M34 B-Gel fuel (4x)
+  name: M240 B-Gel fuel (4x)
   components:
   - type: StorageFill
     contents:
@@ -186,7 +186,7 @@
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateMagazineFlamerMixed
-  name: M34 Mixed fuel (2x UT-Napthal, 2x B-Gel)
+  name: M240 Mixed fuel (2x UT-Napthal, 2x B-Gel)
   components:
   - type: StorageFill
     contents:

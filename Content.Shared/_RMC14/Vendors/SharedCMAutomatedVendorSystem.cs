@@ -587,29 +587,27 @@ public abstract partial class SharedCMAutomatedVendorSystem : EntitySystem
             {
                 // Get every AU14VendorJO
                 var joVendors = EntityQueryEnumerator<AU14VendorJOComponent>();
-                var allVendorsTotal = 0;
+                var totalSectionVends = 0;
 
                 // Goes through each AU14VendorJO and gets the value for this kit type.
-                while (joVendors.MoveNext(out _, out var joVendorComponent))
+                while (joVendors.MoveNext(out _, out var joVendor))
                 {
-                    foreach (var linkedEntry in args.LinkedEntries)
+                    for (int i = 0; i < section.Entries.Count; i++)
                     {
-                        joVendorComponent.GlobalSharedVends.TryGetValue(linkedEntry, out var linkedCount);
-                        allVendorsTotal += linkedCount;
+                        if (joVendor.GlobalSharedVends.TryGetValue(i, out var count))
+                            totalSectionVends += count;
                     }
-                    if (joVendorComponent.GlobalSharedVends.TryGetValue(args.Entry, out var vendCount))
-                        allVendorsTotal += vendCount;
                 }
 
-                if (allVendorsTotal >= joLimit)
+                if (totalSectionVends >= joLimit)
                 {
                     ResetChoices();
                     _popup.PopupEntity(Loc.GetString("au14-vending-machine-jo-max"), vendor.Owner, actor);
                     return;
                 }
 
-                var old = thisJOVendor.GlobalSharedVends.GetValueOrDefault(args.Entry, 0);
-                thisJOVendor.GlobalSharedVends[args.Entry] = old + 1;
+                var current = thisJOVendor.GlobalSharedVends.GetValueOrDefault(args.Entry);
+                thisJOVendor.GlobalSharedVends[args.Entry] = current + 1;
                 Dirty(vendor, thisJOVendor);
             }
         }

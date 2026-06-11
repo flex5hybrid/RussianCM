@@ -121,8 +121,8 @@
       CMSteel: 15000
 
 - type: entity
-  name: Custom M34 smoke tank
-  description: An incomplete fuel tank used to store smoke for use in the M34 incinerator unit.
+  name: Custom M240 smoke tank
+  description: An incomplete fuel tank used to store smoke for use in the M240 incinerator unit.
   parent: RMCCasingBase
   id: RMCCustomM34A1SmokeTankCase
   components:

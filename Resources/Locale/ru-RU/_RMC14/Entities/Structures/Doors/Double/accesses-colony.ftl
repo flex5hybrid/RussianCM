@@ -1,12 +1,20 @@
-ent-CMDoubleDoorColonyCommandGlassLocked = дверь
+ent-CMDoubleDoorColonyCommandGlassLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Закрыт, Командование колонии
+ent-CMDoubleDoorColonyCommandSolidLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Закрыт, Командование колонии
 
-ent-CMDoubleDoorColonyCommandSolidLocked = дверь
+ent-CMDoubleDoorColonyEngineerGlassLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Закрыт,  Инженерный колонии
+ent-CMDoubleDoorColonyEngineerSolidLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Закрыт, Инженерный колонии
 
-ent-CMDoubleDoorColonyEngineerGlassLocked = дверь
-
-ent-CMDoubleDoorColonyEngineerSolidLocked = дверь
-
-ent-CMDoubleDoorColonySecurityGlassLocked = дверь
-
-ent-CMDoubleDoorColonySecuritySolidLocked = дверь
-
+ent-CMDoubleDoorColonySecurityGlassLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Стеклянный, Закрыт, Охрана колонии
+ent-CMDoubleDoorColonySecuritySolidLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = Закрыт, Охрана колонии

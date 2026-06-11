@@ -107,11 +107,14 @@ public abstract partial class SharedRankSystem : EntitySystem
 
             return genderPrefix;
         }
+        // RuCM edit start
+        var localizedName = Loc.TryGetString($"rank-{rank.ID}", out var ln) ? ln : rank.Name;
 
         if (hasPaygrade && rank.Paygrade != null)
-            return $"({Loc.GetString(rank.Paygrade)}) {Loc.GetString(rank.Name)}";
+            return $"({rank.Paygrade}) {localizedName}";
 
-        return Loc.TryGetString($"rank-{rank.ID}", out var localizedName) ? localizedName : rank.Name;
+        return localizedName;
+        // RuCM edit end
     }
 
     /// <summary>
@@ -216,4 +219,10 @@ public abstract partial class SharedRankSystem : EntitySystem
         return false;
     }
 
+    public void ClearRank(EntityUid uid)
+    {
+        var comp = EnsureComp<RankComponent>(uid);
+        comp.Rank = null;
+        Dirty(uid, comp);
+    }
 }

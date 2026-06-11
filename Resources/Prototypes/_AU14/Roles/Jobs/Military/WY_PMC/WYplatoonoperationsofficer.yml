@@ -2,7 +2,7 @@
   parent: AU14JobPlatOpBase
   id: AU14JobGOVFORPlatOpWYPMC
   requirements: []
-  name: PMC Operations Adjutant
+  name: au14-job-name-wypmc-platop
   description: au14-job-description-govforplatop
   spawnMenuRoleName: Junior Officer (WYPMC)
   ranks:

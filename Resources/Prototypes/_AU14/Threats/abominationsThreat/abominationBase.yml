@@ -90,6 +90,7 @@
     proto: alien
   - type: MobCollision
   - type: RMCMobCollision
+  - type: MotionDetectorTracked
   - type: StatusEffects
     allowed:
     - Stun

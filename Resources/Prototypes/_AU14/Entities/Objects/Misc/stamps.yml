@@ -156,7 +156,7 @@
   - type: Sprite
     state: stamp-marine
   - type: Stamp
-    stampedName: stamp-component-stamped-name-au14-cl
+    stampedName: stamp-component-stamped-name-au14-uaa
     stampedColor: "#3681bb"
     stampState: "paper_stamp-cmb"
 
@@ -168,7 +168,7 @@
   - type: Sprite
     state: stamp-spp
   - type: Stamp
-    stampedName: stamp-component-stamped-name-au14-cl
+    stampedName: stamp-component-stamped-name-au14-uppa
     stampedColor: "#A70707"
     stampState: "paper_stamp-spp"
 
@@ -180,7 +180,7 @@
   - type: Sprite
     state: stamp-tse
   - type: Stamp
-    stampedName: stamp-component-stamped-name-au14-cl
+    stampedName: stamp-component-stamped-name-au14-twea
     stampedColor: "#BE601B"
     stampState: "paper_stamp-tse"
 
@@ -192,7 +192,7 @@
   - type: Sprite
     state: stamp-rd
   - type: Stamp
-    stampedName: stamp-component-stamped-name-au14-cl
+    stampedName: stamp-component-stamped-name-au14-icsca
     stampedColor: "#808080"
     stampState: "paper_stamp-circle"
 
@@ -204,7 +204,7 @@
   - type: Sprite
     state: stamp-cap
   - type: Stamp
-    stampedName: stamp-component-stamped-name-au14-cl
+    stampedName: stamp-component-stamped-name-au14-ccaa
     stampedColor: "#ffae00"
     stampState: "paper_stamp-cca"
 

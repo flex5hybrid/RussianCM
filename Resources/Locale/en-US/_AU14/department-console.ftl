@@ -29,6 +29,8 @@ department-console-no-items = No items in this category.
 
 department-console-salary = ${ $amount }
 department-console-salary-custom = ${ $amount } (custom)
+department-console-salary-display = ${ $amount } (custom)
+department-console-salary-display-default = ${ $amount }
 department-console-salary-placeholder = Salary
 department-console-btn-set = Set
 department-console-btn-reset = Reset

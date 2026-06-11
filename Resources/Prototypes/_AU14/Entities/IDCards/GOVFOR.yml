@@ -125,22 +125,22 @@
 
 - type: entity
   parent: CMIDCardBase
-  id: AU14IDCardGOVFORAuxSupportSynth
-  name: support synthetic ID card
+  id: AU14JobIDCardGOVFORAuxTech
+  name: auxiliary technician ID card
   components:
   - type: PresetIdCard
-    job: AU14JobGOVFORAuxSupportSynth
+    job: AU14JobGOVFORAuxTech
   - type: ItemIFF
     factions:
     - GOVFOR
 
 - type: entity
   parent: CMIDCardBase
-  id: AU14JobIDCardGOVFORAuxTech
-  name: auxiliary technician ID card
+  id: AU14IDCardGOVFORAuxSupportSynth
+  name: support synthetic ID card
   components:
   - type: PresetIdCard
-    job: AU14JobGOVFORAuxTech
+    job: AU14JobGOVFORAuxSupportSynth
   - type: ItemIFF
     factions:
     - GOVFOR

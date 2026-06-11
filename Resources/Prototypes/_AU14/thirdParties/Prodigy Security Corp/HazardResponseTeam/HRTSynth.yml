@@ -90,7 +90,6 @@
   id: AU14JobHRTPartySynthetic
   name: Синтетик поддержки HRT Prodigy (AU14, третья сторона)
   components:
-  - type: Threat
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
     squad: SquadPARTS

@@ -1,20 +1,76 @@
-ent-CMAirlockOpforGlassLocked-name = стеклянный шлюз
-ent-CMAirlockOpforGlassLocked-desc = Он открывается, он закрывается и, возможно, раздавит вас.
-ent-CMDoubleDoorOpforLocked-name = дверь
-ent-CMDoubleDoorOpforGlassLocked-name = дверь
-ent-CMAirlockCommandOpforGlassLocked-name = стеклянный шлюз
-ent-CMAirlockCommandOpforGlassLocked-desc = Он открывается, он закрывается и, возможно, раздавит вас.
-ent-CMDoubleDoorCommandOpforLocked-name = дверь
-ent-CMDoubleDoorCommandOpforGlassLocked-name = дверь
-ent-CMAirlockSecurityOpforGlassLocked-name = стеклянный шлюз
-ent-CMAirlockSecurityOpforGlassLocked-desc = Он открывается, он закрывается и, возможно, раздавит вас.
-ent-CMDoubleDoorSecurityOpforLocked-name = дверь
-ent-CMDoubleDoorSecurityOpforGlassLocked-name = дверь
-ent-CMAirlockMedicalOpforGlassLocked-name = стеклянный шлюз
-ent-CMAirlockMedicalOpforGlassLocked-desc = Он открывается, он закрывается и, возможно, раздавит вас.
-ent-CMDoubleDoorMedicalOpforLocked-name = дверь
-ent-CMDoubleDoorMedicalOpforGlassLocked-name = дверь
-ent-CMAirlockEngineerOpforGlassLocked-name = стеклянный шлюз
-ent-CMAirlockEngineerOpforGlassLocked-desc = Он открывается, он закрывается и, возможно, раздавит вас.
-ent-CMDoubleDoorEngineerOpforLocked-name = дверь
-ent-CMDoubleDoorEngineerOpforGlassLocked-name = дверь
+ent-CMAirlockOpforLocked = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Закрыт
+ent-CMAirlockOpforGlassLocked = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Стеклянный, Закрыт
+
+ent-CMDoubleDoorOpforLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Закрыт
+ent-CMDoubleDoorOpforGlassLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Стеклянный, Закрыт
+
+ent-CMAirlockOpforLockedFTL = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Закрыт, Двигатель
+ent-CMAirlockOpforGlassLockedFTL = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Стеклянный, Закрыт, Двигатель
+
+ent-CMAirlockCommandOpforLocked = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Закрыт, Командование
+ent-CMAirlockCommandOpforGlassLocked = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Стеклянный, Закрыт, Командование
+
+ent-CMDoubleDoorCommandOpforLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Закрыт, Командование
+ent-CMDoubleDoorCommandOpforGlassLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Стеклянный, Закрыт, Командование
+
+ent-CMAirlockSecurityOpforLocked = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Закрыт, Охрана
+ent-CMAirlockSecurityOpforGlassLocked = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Стеклянный, Закрыт, Охрана
+
+ent-CMDoubleDoorSecurityOpforLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Закрыт, Охрана
+ent-CMDoubleDoorSecurityOpforGlassLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Стеклянный, Закрыт, Охрана
+
+ent-CMAirlockMedicalOpforLocked = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Закрыт, Медицинский
+ent-CMAirlockMedicalOpforGlassLocked = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Стеклянный, Закрыт, Медицинский
+
+ent-CMDoubleDoorMedicalOpforLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Закрыт, Медицинский
+ent-CMDoubleDoorMedicalOpforGlassLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Стеклянный, Закрыт, Медицинский
+
+ent-CMAirlockEngineerOpforLocked = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Закрыт, Инженерный
+ent-CMAirlockEngineerOpforGlassLocked = {ent-CMAirlock}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Стеклянный, Закрыт, Инженерный
+
+ent-CMDoubleDoorEngineerOpforLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Закрыт, Инженерный
+ent-CMDoubleDoorEngineerOpforGlassLocked = {ent-CMDoubleDoorBase}
+    .desc = {ent-CMAirlock.desc}
+    .suffix = ОпФор, Стеклянный, Закрыт, Инженерный

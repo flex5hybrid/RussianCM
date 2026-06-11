@@ -4,9 +4,6 @@
   whitelisted: true
   whitelistParent: RMCWhitelistMedium
   requirements:
-  - !type:RoleTimeRequirement
-    role: AU14JobCivilianColonySynthetic
-    time: 9000 # 2.5 hours
   - !type:TraitsRequirement
     inverted: true
     traits:

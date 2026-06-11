@@ -27,7 +27,7 @@
     - Back
   - type: Gun
     cameraRecoilScalar: 0
-    fireRate: 1.9
+    fireRate: 0.7 #cmu14
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -192,8 +192,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerCustom
-  name: M34 custom incinerator tank
-  description: A fuel tank for use in the M34 incinerator unit.
+  name: M240 custom incinerator tank
+  description: A fuel tank for use in the M240 incinerator unit.
   # description: A fuel tank for use in the M34 incinerator unit. This one has been modified with a pressure regulator and an internal propellant tank.
   components:
   - type: RMCFlamerTank
@@ -210,7 +210,7 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerBGel
-  name: M34 incinerator tank (B-Gel)
+  name: M240 incinerator tank (B-Gel)
   description: A fuel tank full of specialized Ultra Thick Napthal Fuel type B-Gel, a gelled variant of napalm that is easily extinguished, but shoots further and lingers for longer. Handle with exceptional care.
   components:
   - type: RMCFlamerTank
@@ -227,8 +227,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerUpgraded
-  name: M34 upgraded incinerator tank
-  description: A fuel tank for use in the M34 incinerator unit. This one has been modified with a larger and more sophisticated internal propellant tank, allowing for larger capacity and stronger fuels.
+  name: M240 upgraded incinerator tank
+  description: A fuel tank for use in the M240 incinerator unit. This one has been modified with a larger and more sophisticated internal propellant tank, allowing for larger capacity and stronger fuels.
   components:
   - type: RMCFlamerTank
     maxIntensity: 60
@@ -246,7 +246,7 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCCaseFlamer
-  name: M34 incinerator case
+  name: M240 incinerator case
   description: A gun case containing the M240 incinerator unit. It does come loaded, but you'll still have to find extra tanks as you go.
   components:
   - type: Storage

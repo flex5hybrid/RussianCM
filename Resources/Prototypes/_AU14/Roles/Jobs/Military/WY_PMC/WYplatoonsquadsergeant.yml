@@ -2,7 +2,7 @@
   parent: AU14JobSquadSergeantBase
   id: AU14JobGOVFORSquadSergeantWYPMC
   requirements: []
-  name: PMC Squad Leader
+  name: au14-job-name-wypmc-squadsergeant
   ranks:
     AU14RankWeYuEnforcerSenior:
     - !type:RoleTimeRequirement

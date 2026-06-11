@@ -324,10 +324,11 @@ namespace Content.Client.Construction
                         state.StateId.Name is null)
                         continue;
 
-                    _sprite.AddBlankLayer((ghost.Value, sprite), i);
-                    _sprite.LayerSetSprite((ghost.Value, sprite), i, new SpriteSpecifier.Rsi(rsi.Path, state.StateId.Name));
-                    sprite.LayerSetShader(i, "unshaded");
-                    _sprite.LayerSetVisible((ghost.Value, sprite), i, true);
+                    var ghostLayerIndex = sprite.AllLayers.Count();
+                    _sprite.AddBlankLayer((ghost.Value, sprite));
+                    _sprite.LayerSetSprite((ghost.Value, sprite), ghostLayerIndex, new SpriteSpecifier.Rsi(rsi.Path, state.StateId.Name));
+                    sprite.LayerSetShader(ghostLayerIndex, "unshaded");
+                    _sprite.LayerSetVisible((ghost.Value, sprite), ghostLayerIndex, true);
                 }
 
                 Del(dummy);

@@ -12,3 +12,19 @@
       amount: 16
   products:
     CMUBlackSludge: 64
+
+- type: reaction
+  id: AU14SpaceCleaner
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    Water:
+      amount: 2
+    Vodka:
+      amount: 1
+    LemonLime:
+      amount: 1
+    TableSalt:
+      amount: 1
+  products:
+    SpaceCleaner: 4

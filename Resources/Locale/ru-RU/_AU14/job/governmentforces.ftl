@@ -84,17 +84,6 @@ au14-job-name-govforAuxTech = Техник
 au14-job-description-govforAuxTech = Управляй снабжением, поддерживай корабль в рабочем состоянии и чистоте. Обеспечивай свою фракцию корабельной логистикой и инженерной поддержкой.
 au14-job-prefix-govforAuxTech = ТПОД
 
-au14-job-prefix-AU14JobGOVFORPlatCoWYPMC = ОПДИР
-au14-job-prefix-AU14JobGOVFORPlatoonCorpsmanWYPMC = КЛС
-au14-job-prefix-AU14JobGOVFORDCCWYPMC = БМХ
-au14-job-prefix-AU14JobGOVFORPlatOpWYPMC = ОПАДЖ
-au14-job-prefix-AU14JobGOVFORDSPilotWYPMC = ПДР
-au14-job-prefix-AU14JobGOVFORRadioTelephoneOperatorWYPMC = СВЯЗ
-au14-job-prefix-AU14JobGOVFORSectionSergeantWYPMC = КМДВЗ
-au14-job-prefix-AU14JobGOVFORSquadAutomaticRiflemanWYPMC = ПУЛ
-au14-job-prefix-AU14JobGOVFORSquadRiflemanWYPMC = СТР
-au14-job-prefix-AU14JobGOVFORSquadSergeantWYPMC = КО
-
 au14-job-prefix-AU14JobGOVFORPlatCoUPP = КМВЗ
 au14-job-prefix-AU14JobGOVFORPlatoonCorpsmanUPP = САН
 au14-job-prefix-AU14JobGOVFORDCCUPP = БМХ
@@ -177,8 +166,6 @@ au14-job-prefix-juniorofficer-adj = АДЪЮ
 au14-job-name-specialist-pyro = Пиротехник
 au14-job-prefix-specialist-pyro = ПИРО
 
-# Missing entries synced from en-US
-
 au14-job-name-govforsquadautomaticrifleman-plural = Автоматические стрелки
 
 au14-job-name-govforplatooncorpsman-plural = Больничные санитары
@@ -186,3 +173,26 @@ au14-job-name-govforplatooncorpsman-plural = Больничные санитар
 au14-job-name-radiotelephoneoperator-alt = Радиотелефонист
 
 au14-job-name-govfork9handler = Обработчик К9
+
+au14-job-name-wypmc-platco = Директор операций ЧВК
+au14-job-name-wypmc-platop = Адъютант операций ЧВК
+au14-job-name-wypmc-dspilot = Офицер-пилот ЧВК
+au14-job-name-wypmc-dcc = Командир экипажа ЧВК
+au14-job-name-wypmc-ssg = Командир взвода ЧВК
+au14-job-name-wypmc-squadsergeant = Командир отряда ЧВК
+au14-job-name-wypmc-rifleman = Контрактник ЧВК
+au14-job-name-wypmc-sar = Оператор умного оружия ЧВК
+au14-job-name-wypmc-combattech = Боевой техник ЧВК
+au14-job-name-wypmc-corpsman = Санитар ЧВК
+au14-job-name-wypmc-rto = Специалист связи ЧВК
+
+au14-job-prefix-AU14JobGOVFORPlatCoWYPMC = ДИРОП
+au14-job-prefix-AU14JobGOVFORPlatoonCorpsmanWYPMC = САН
+au14-job-prefix-AU14JobGOVFORDCCWYPMC = КЭ
+au14-job-prefix-AU14JobGOVFORPlatOpWYPMC = АДОП
+au14-job-prefix-AU14JobGOVFORDSPilotWYPMC = ОФП
+au14-job-prefix-AU14JobGOVFORRadioTelephoneOperatorWYPMC = СВЯЗ
+au14-job-prefix-AU14JobGOVFORSectionSergeantWYPMC = КМДВЗ
+au14-job-prefix-AU14JobGOVFORSquadAutomaticRiflemanWYPMC = ПУЛ
+au14-job-prefix-AU14JobGOVFORSquadRiflemanWYPMC = СТР
+au14-job-prefix-AU14JobGOVFORSquadSergeantWYPMC = КО

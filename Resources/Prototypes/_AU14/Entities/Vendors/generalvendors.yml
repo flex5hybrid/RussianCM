@@ -265,7 +265,7 @@
         isAppendSquadRoleName: false
     - name: Specialized Officers
       choices: { CMUJOLoadoutVendorKit: 1 }
-      sharedJOLimit: 1
+      sharedJOLimit: 2
       entries:
       - id: AU14KitJOIntelligenceOfficer
         giveSquadRoleName: au14-job-name-juniorofficer-io

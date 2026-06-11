@@ -1,4 +1,6 @@
-﻿- type: entity
+﻿# continuted in /_CMU14/Entities/Areas/areas_cmu_portnereid.yml
+
+- type: entity
   parent: RMCAreaShuttleDrop1
   id: RMCAreaShuttleDrop1PortNereid
   name: Port Nereid Cargo Depot AC-170 - LZ1
@@ -43,6 +45,7 @@
     sprite: _RMC14/Areas/areas_varadero.rsi
     state: req0
   - type: Area
+    linkedLz: dropship_lz1 #cmu14
     minimapColor: '#a16027'
     weatherEnabled: false
     lasing: false
@@ -62,9 +65,9 @@
   components:
   - type: Sprite
     state: tunnels0
-    weatherEnabled: false
   - type: Area
     minimapColor: '#a16027'
+    weatherEnabled: false
 
 - type: entity
   parent: RMCAreaProtectionFour
@@ -129,18 +132,20 @@
     sprite: _RMC14/Areas/hybrisareas.rsi
     state: wyspaceport
   - type: Area
+    linkedLz: dropship_lz2 #cmu14
     minimapColor: '#0b7545'
     weatherEnabled: false
 
 - type: entity
   parent: RMCAreaPortNereidCargo
   id: RMCAreaPortNereidHeavyHaulter
-  name: Port Nereid - WEYA Hauler
+  name: Port Nereid - WEYU Hauler #cmu14
   components:
   - type: Sprite
     sprite: _RMC14/Areas/hybrisareas.rsi
     state: wyspaceport
   - type: Area
+    linkedLz: dropship_lz1 #cmu14
     minimapColor: '#19666b'
     weatherEnabled: false
 
@@ -206,6 +211,7 @@
     sprite: _RMC14/Areas/areas_varadero.rsi
     state: varadero1
   - type: Area
+    linkedLz: dropship_lz1 #cmu14
     weatherEnabled: true
 
 - type: entity
@@ -217,6 +223,7 @@
     sprite: _RMC14/Areas/areas_varadero.rsi
     state: varadero2
   - type: Area
+    linkedLz: dropship_lz2 #cmu14
     weatherEnabled: true
 
 - type: entity

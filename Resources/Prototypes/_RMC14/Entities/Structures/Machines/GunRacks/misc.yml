@@ -3,9 +3,9 @@
 - type: entity
   parent: RMCGunRackBase
   id: RMCGunRackM34IncineratorEmpty
-  name: M34 Incinerator rack
-  suffix: M34 Incinerator, Empty
-  description: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, UNMC commissioned racks with fixed slots which only fit M34 Incinerator Units. Some say they were cheaper, and some say the main reason was marine's ability to easily break anything more complex than a tungsten ball.
+  name: M240 Incinerator rack
+  suffix: M240 Incinerator, Empty
+  description: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, USMC commissioned racks with fixed slots which only fit M240 Incinerator Units. Some say they were cheaper, and some say the main reason was marine's ability to easily break anything more complex than a tungsten ball.
   components:
   - type: ContainerContainer
     containers:
@@ -22,12 +22,12 @@
   - type: ItemSlots
     slots:
       item_1:
-        name: M34 Incinerator
+        name: M240 Incinerator
         whitelist:
           tags:
           - RMCWeaponIncineratorM34
       item_2:
-        name: M34 Incinerator
+        name: M240 Incinerator
         whitelist:
           tags:
           - RMCWeaponIncineratorM34
@@ -47,7 +47,7 @@
 - type: entity
   parent: RMCGunRackM34IncineratorEmpty
   id: RMCGunRackM34IncineratorFilled
-  suffix: M34 Incinerator, Filled
+  suffix: M240 Incinerator, Filled
   components:
   - type: ContainerFill
     containers:

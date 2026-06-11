@@ -15,6 +15,7 @@ using Content.Shared.Mind;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Popups;
+using Content.Shared.Roles;
 using Content.Shared.Roles.Jobs;
 using Content.Shared.Verbs;
 using Robust.Shared.Network;
@@ -376,17 +377,25 @@ public sealed partial class CPRSystem : EntitySystem
 
     private void TryResetDummyCounter(Entity<CPRDummyComponent> ent, EntityUid user)
     {
+        bool hasAccess = false;
         _mind.TryGetMind(user, out var mindId, out _);
-        if (!_job.MindTryGetJobId(mindId, out var jobId) || !ent.Comp.ResetCPRCounterJobs.Contains(jobId!.Value))
+        if (_job.MindTryGetJobId(mindId, out var jobId))
         {
-            if (_net.IsClient)
-                return;
+            hasAccess = ent.Comp.ResetCPRCounterJobs.Contains(jobId!.Value);
+            if (!hasAccess
+                && _prototypes.TryIndex(jobId.Value, out JobPrototype? jobProto)
+                && jobProto != null)
+            {
+                var firstParent = jobProto.Parents?.FirstOrDefault();
+                if (firstParent != null)
+                    hasAccess = ent.Comp.ResetCPRCounterJobs.Contains(firstParent);
+            }
+        }
 
-            var jobNames = ent.Comp.ResetCPRCounterJobs
-                .Select(job => _prototypes.Index(job).LocalizedName)
-                .ToList();
-            var jobsString = string.Join("; ", jobNames);
-            _popups.PopupEntity(Loc.GetString("rmc-cpr-dummy-reset-denied", ("jobs", jobsString)), ent, user, PopupType.MediumCaution);
+        if (!hasAccess)
+        {
+            if (!_net.IsClient)
+                ShowResetDeniedPopup(ent, user);
             return;
         }
 
@@ -394,9 +403,14 @@ public sealed partial class CPRSystem : EntitySystem
         ent.Comp.CPRFailed = 0;
         Dirty(ent);
 
-        if (_net.IsClient)
-            return;
+        if (!_net.IsClient)
+            _popups.PopupEntity(Loc.GetString("rmc-cpr-dummy-reset-success"), ent, user, PopupType.Medium);
+    }
 
-        _popups.PopupEntity(Loc.GetString("rmc-cpr-dummy-reset-success"), ent, user, PopupType.Medium);
+    private void ShowResetDeniedPopup(Entity<CPRDummyComponent> ent, EntityUid user)
+    {
+        var jobNames = ent.Comp.ResetCPRCounterJobs.Select(job => _prototypes.Index(job).LocalizedName).ToList();
+        var jobsString = string.Join("; ", jobNames);
+        _popups.PopupEntity(Loc.GetString("rmc-cpr-dummy-reset-denied", ("jobs", jobsString)), ent, user, PopupType.MediumCaution);
     }
 }

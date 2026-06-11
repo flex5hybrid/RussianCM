@@ -1,7 +1,7 @@
 - type: job
   parent: AU14JobSquadAutomaticRiflemanBase
   id: AU14JobGOVFORSquadAutomaticRiflemanWYPMC
-  name: PMC Smartgun Operator
+  name: au14-job-name-wypmc-sar
   spawnMenuRoleName: Automatic Rifleman (WYPMC)
   ranks:
     AU14RankWeYuSeniorOperator:

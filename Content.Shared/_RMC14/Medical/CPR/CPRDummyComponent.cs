@@ -19,6 +19,8 @@ public sealed partial class CPRDummyComponent : Component
     {
         "CMSeniorEnlistedAdvisor",
         "CMCMO",
+        "AU14JobadvisorBase",
+        // TODO: AU14 CMO
     };
 }
 

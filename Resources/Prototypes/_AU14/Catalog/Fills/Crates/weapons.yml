@@ -15,7 +15,7 @@
 - type: entity
   id: AU14CrateFlamerSpec
   parent: RMCCrateWeapons
-  name: M34-T Incinerator Crate (1x M34-t Incinerator, 1x Broiler-T, 1x Fuel Tank Pouch, 1x Large Incinerator Tank, 1x Large Custom Incinerator Tanks)
+  name: M240-T Incinerator Crate (1x M240-T Incinerator, 1x Broiler-T, 1x Fuel Tank Pouch, 1x Large Incinerator Tank, 1x Large Custom Incinerator Tanks)
   components:
   - type: StorageFill
     contents:

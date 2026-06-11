@@ -28,6 +28,8 @@ public sealed partial class WendigoHeadbiteAudioSystem : EntitySystem
         SubscribeLocalEvent<WendigoHeadbiteAudioComponent, XenoHeadbiteDoAfterEvent>(
             OnHeadbiteDoAfter,
             after: [typeof(XenoHeadbiteSystem)]);
+
+        SubscribeNetworkEvent<WendigoScreechEvent>(OnScreechEvent);
     }
 
     private void OnHeadbiteDoAfter(Entity<WendigoHeadbiteAudioComponent> ent, ref XenoHeadbiteDoAfterEvent args)
@@ -40,40 +42,29 @@ public sealed partial class WendigoHeadbiteAudioSystem : EntitySystem
 
         var globalReady = IsGlobalReady(ent);
 
-        // Play global directional screech if off cooldown; otherwise play close sound.
         if (globalReady && ent.Comp.GlobalSound != null)
         {
-            var wendigoCoords = _transform.GetMoverCoordinates(ent);
+            var coords = _transform.GetMoverCoordinates(ent);
+            var netCoords = GetNetCoordinates(coords);
 
             var outdoorParams = AudioParams.Default
-                .WithMaxDistance(float.MaxValue)
+                .WithMaxDistance(5000f)
                 .WithRolloffFactor(0)
                 .WithVolume(ent.Comp.GlobalVolume);
 
             var indoorParams = AudioParams.Default
-                .WithMaxDistance(float.MaxValue)
+                .WithMaxDistance(5000f)
                 .WithRolloffFactor(0)
                 .WithVolume(ent.Comp.GlobalIndoorVolume);
-
-            var outdoorFilter = Filter.Empty();
-            var indoorFilter = Filter.Empty();
 
             foreach (var session in Filter.Broadcast().Recipients)
             {
                 if (session.AttachedEntity is not { } player)
                     continue;
 
-                if (IsEntityRoofed(player))
-                    indoorFilter.AddPlayer(session);
-                else
-                    outdoorFilter.AddPlayer(session);
+                var audioParams = IsEntityRoofed(player) ? indoorParams : outdoorParams;
+                RaiseNetworkEvent(new WendigoScreechEvent(ent.Comp.GlobalSound, audioParams, netCoords), session);
             }
-
-            if (outdoorFilter.Count > 0)
-                _audio.PlayStatic(ent.Comp.GlobalSound, outdoorFilter, wendigoCoords, true, outdoorParams);
-
-            if (indoorFilter.Count > 0)
-                _audio.PlayStatic(ent.Comp.GlobalSound, indoorFilter, wendigoCoords, true, indoorParams);
 
             ent.Comp.LastGlobalPlayed = _timing.CurTime;
             ent.Comp.ScreechReady = false;
@@ -83,6 +74,14 @@ public sealed partial class WendigoHeadbiteAudioSystem : EntitySystem
         {
             _audio.PlayPvs(ent.Comp.CloseSound, ent);
         }
+    }
+
+    private void OnScreechEvent(WendigoScreechEvent ev)
+    {
+        if (_net.IsServer)
+            return;
+
+        _audio.PlayStatic(ev.Sound, Filter.Local(), GetCoordinates(ev.Coordinates), true, ev.AudioParams);
     }
 
     private bool IsGlobalReady(Entity<WendigoHeadbiteAudioComponent> ent)

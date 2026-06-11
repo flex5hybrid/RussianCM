@@ -22,8 +22,6 @@ au14-loadout-group-military-jumpsuit = Военная полевая форма
 au14-loadout-group-military-patches = Военные нашивки
 au14-loadout-group-role-clf-id = Поддельные удостоверения
 
-# Missing entries synced from en-US
-
 au14-loadout-group-commander-sidearm-belt = Ремень для пистолета
 
 au14-loadout-group-doctor-equipment = Специализация
@@ -31,3 +29,5 @@ au14-loadout-group-doctor-equipment = Специализация
 au14-loadout-group-militarylabcoat = Лабораторные халаты
 
 au14-loadout-group-auxtech = Усталость
+
+au14-vending-machine-jo-max = Достингут лимит офицеров с этим набором!
