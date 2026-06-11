@@ -1,0 +1,111 @@
+- type: job
+  abstract: true
+  parent: AU14JobSecurityAndroidBase
+  id: AU14JobWYSecurityAndroidBase
+  icon: "AU14JobIconWYAndroid"
+  spawnMenuRoleName: Security Android
+  supervisors: au14-job-supervisors-workingjoe-military
+  dummyStartingGear: AU14GearSecurityAndroid
+  usePlayerProfile: false
+  jobEntity: AU14MobSecurityAndroid
+  accessGroups:
+  - AU14GovforCommand
+  - AUPrisonStaff
+  - auwy
+
+- type: job
+  parent: AU14JobWYSecurityAndroidBase
+  id: AU14JobWYSecurityAndroid
+  requirements:
+  - !type:RoleTimeRequirement
+    role: AU14JobGOVFORSquadCombatTech
+    time: 3600 # 1 hour
+  - !type:RoleTimeRequirement
+    role: AU14JobCivilianWasteManagementSpecialist
+    time: 3600 # 1 hour
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - SocialAnxietyHeavy
+    - FrontalLisp
+    - NonResuscitable
+    - Epilepsy
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: UserIFF
+      factions:
+      - GOVFOR
+    - type: IntrinsicRadioTransmitter
+      channels:
+      - radioAI
+      - radioGovforCommand
+      - radioGovforJTAC
+      - radioGovforAlpha
+      - radioGovforCharlie
+      - radioGovforBravo
+      - radioGovforIntel
+      - radioGovforMILP
+    - type: ActiveRadio
+      channels:
+      - radioAI
+      - radioGovforCommand
+      - radioGovforJTAC
+      - radioGovforAlpha
+      - radioGovforCharlie
+      - radioGovforBravo
+      - radioGovforIntel
+      - radioGovforMILP
+    - type: Tag
+      tags:
+      - WorkingJoe
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+    - type: Loadout
+      prototypes: [ AU14GearSecurityAndroid ]
+
+- type: startingGear
+  parent: AU14GearSecurityAndroidBase
+  id: AU14GearWYSecurityAndroid
+  equipment:
+    shoes: RMCBootsPMCFilled
+    outerClothing: AU14WYPMCArmorMin
+    head: ArmorHelmetPMC
+    gloves: AU14PVEHandsInsulatedBlackMarine
+    jumpsuit: AU14WYPMCFatigues
+    belt: RMCMK80BeltPMCFilled
+    back: RMCSatchelLightpackWeYa
+    pocket1: RMCPouchMagazineLargePMC
+    pocket2: RMCPouchMagazineLargePMC
+    suitstorage: RMCWeaponRifleM54C2
+  storage:
+      back:
+      - RMCGrenadeBlastM12
+      - RMCGrenadeBlastM12
+      - RMCWelderIndustrial
+      - RMCWelderIndustrial
+      - RMCCableCoil
+      - RMCCableCoil
+      - CMStunbaton
+      - RMCZipties
+      pocket1:
+      - CMMagazineRifleM54CAP
+      - CMMagazineRifleM54CAP
+      - CMMagazineRifleM54CAP
+      - CMMagazineRifleM54CAP
+      pocket2:
+      - CMMagazineRifleM54CAP
+      - CMMagazineRifleM54CAP
+      - CMMagazineRifleM54CAP
+      - CMMagazineRifleM54CAP
+
+- type: entity
+  parent: CMSpawnPointJobBase
+  id: AU14SpawnPointWYAndroid
+  name: Spawn Point wy android
+  components:
+  - type: SpawnPoint
+    job_id: AU14JobWYSecurityAndroid
+  - type: Sprite
+    state: syn_spawn
