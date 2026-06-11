@@ -32,10 +32,20 @@ internal sealed class PlaytimeApi : IPostInjectInit
         _log = Logger.GetSawmill("playtimeApi");
         _statusHost.AddHandler(PlaytimeHandler);
 
-        _cfg.OnValueChanged(CCCVars.PlaytimeApiToken, v => _secret = v, true);
-        _cfg.OnValueChanged(CCCVars.PlaytimeApiAllowedIP, v => _allowedIP = v, true);
-
-        _log.Info("Playtime API initialized");
+        try
+        {
+            _cfg.OnValueChanged(CCCVars.PlaytimeApiToken, v => _secret = v, true);
+            _cfg.OnValueChanged(CCCVars.PlaytimeApiAllowedIP, v => _allowedIP = v, true);
+            _log.Info("Playtime API initialized");
+        }
+        catch (KeyNotFoundException ex)
+        {
+            _log.Warning($"PlaytimeApi config variables not found: {ex.Message}. PlaytimeApi will not be functional.");
+        }
+        catch (Exception ex)
+        {
+            _log.Error($"Failed to initialize PlaytimeApi: {ex.Message}");
+        }
     }
 
     // FIX #1: нормальное сравнение IP через IPAddress, поддержка нескольких адресов через запятую
