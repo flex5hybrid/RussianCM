@@ -69,11 +69,13 @@
   parent: AU14GearSecurityAndroidBase
   id: AU14GearWYSecurityAndroid
   equipment:
+    id: AU14IDCardColonyCorporateLiaison
     shoes: RMCBootsPMCFilled
     outerClothing: AU14WYPMCArmorMin
     head: ArmorHelmetPMC
     gloves: AU14PVEHandsInsulatedBlackMarine
     jumpsuit: AU14WYPMCFatigues
+    ears: RMCHeadsetDistressWeYa
     belt: RMCMK80BeltPMCFilled
     back: RMCSatchelLightpackWeYa
     pocket1: RMCPouchMagazineLargePMC
