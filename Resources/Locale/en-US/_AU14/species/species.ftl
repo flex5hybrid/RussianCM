@@ -1,4 +1,5 @@
 au14-species-name-working-joe = Working Joe
+au14-species-name-security-android = Security Android
 au14-species-name-working-joe-1 = Working Joe
 au14-species-name-working-joe-postfix = #
 

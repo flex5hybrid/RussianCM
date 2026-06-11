@@ -4,6 +4,8 @@ species-name-workingjoe = Рабочий Джо
 
 au14-species-name-working-joe = Рабочий Джо
 
+au14-species-name-security-android = Охранный андроид
+
 au14-species-name-working-joe-1 = Рабочий Джо
 
 au14-species-name-working-joe-postfix = #

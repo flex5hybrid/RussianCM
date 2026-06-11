@@ -10,6 +10,8 @@ au14-department-prison-description = Roles limited to use on the prison gamemode
 au14-department-isolation = Isolation
 au14-department-isolation-description = Roles limited to use on the Isolation gamemode
 
+au14-job-name-securityandroid = Security Android
+au14-job-description-securityandroid = You are a modified, illegal combat synthetic created by the Sigson conglomerate to guard corporate facilities. Perform your security duties and, in extreme cases, use firearms. (Requires advanced role-playing skills.)
 
 au14-department-weyu = We-Yu
 au14-department-wyu-description = Jobs part of Weyland Yutani

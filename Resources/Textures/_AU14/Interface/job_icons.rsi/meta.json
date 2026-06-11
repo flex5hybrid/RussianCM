@@ -48,6 +48,9 @@
         },
         {
             "name": "synth"
+        },
+        {
+            "name": "sec_android"
         }
     ]
 }
