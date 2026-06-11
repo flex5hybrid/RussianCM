@@ -3,7 +3,7 @@
   parent: CMJobBase
   id: AU14JobSecurityAndroidBase
   name: au14-job-name-securityandroid
-  description: au14-job-description-workingjoe
+  description: au14-job-description-securityandroid
   playTimeTracker: AU14JobAndroid
   basePlaytimeTracker: true
   setPreference: true
