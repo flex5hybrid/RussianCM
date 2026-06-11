@@ -5,7 +5,7 @@
   icon: "AU14JobIconWYAndroid"
   spawnMenuRoleName: Security Android
   supervisors: au14-job-supervisors-workingjoe-military
-  dummyStartingGear: AU14GearSecurityAndroid
+  dummyStartingGear: AU14GearWYSecurityAndroid
   usePlayerProfile: false
   jobEntity: AU14MobSecurityAndroid
   accessGroups:
