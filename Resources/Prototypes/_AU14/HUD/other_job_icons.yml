@@ -25,7 +25,7 @@
   icon:
     sprite: _AU14/Interface/job_icons.rsi
     state: third_party_member
-    - type: jobIcon
+- type: jobIcon
   
   parent: CMJobIconBase
   id: AU14JobIconWYAndroid
