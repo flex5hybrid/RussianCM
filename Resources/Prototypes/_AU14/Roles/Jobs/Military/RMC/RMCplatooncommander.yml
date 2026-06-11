@@ -4,3 +4,23 @@
   name: au14-job-name-govforplatcoRMC
   description: au14-job-description-govforplatco
   spawnMenuRoleName: Platoon Commander (TWE RMC)
+  special: # RuMC edit
+  - !type:AddComponentSpecial
+    components:
+    - type: Marine
+      Faction: govfor
+    - type: UserIFF
+      factions:
+      - GOVFOR
+    - type: CommendationGiver
+    - type: InnateCommandSpeech
+    - type: Skills
+      preset: AU14SkillPresetPlatoonCommander
+    - type: JobPrefix
+      prefix: au14-job-prefix-govforplatco
+    - type: RMCSpeechBubbleSpecificStyle
+      speechStyleClass: commanderSpeech
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_AU14/Interface/au14govforhud.rsi
+        state: govfor_platco

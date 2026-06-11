@@ -16,5 +16,16 @@
   special:
   - !type:AddComponentSpecial
     components:
+    - type: Marine #RuMC edit
+      Faction: govfor
+    - type: UserIFF
+      factions:
+      - GOVFOR
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_AU14/Interface/au14govforhud.rsi
+        state: govfor_ct
     - type: JobPrefix
       prefix: au14-job-prefix-govforsquadcombattechRMC
+    - type: Skills # RuMC edit
+      preset: AU14SkillPresetPlatoonCombatTechnician

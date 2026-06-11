@@ -5,3 +5,21 @@
   spawnMenuRoleName: Junior Officer (TWE RMC)
   ranks:
     RMC_2Lieutenant: []
+  special: # RuMC edit
+  - !type:AddComponentSpecial
+    components:
+    - type: Marine
+      Faction: govfor
+    - type: UserIFF
+      factions:
+      - GOVFOR
+    - type: Skills
+      preset: AU14SkillPresetPlatoonJuniorOfficer
+    - type: RMCSpeechBubbleSpecificStyle
+      speechStyleClass: commanderSpeech
+    - type: JobPrefix
+      prefix: au14-job-prefix-govforplatop
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_AU14/Interface/au14govforhud.rsi
+        state: govfor_po

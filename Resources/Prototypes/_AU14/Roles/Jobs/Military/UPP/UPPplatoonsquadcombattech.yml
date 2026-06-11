@@ -16,3 +16,22 @@
       role: AU14JobGOVFORSquadCombatTech
       time: 54000 # 15 hours
     UPP_Private: []
+  special: # RuMC edit
+  - !type:AddComponentSpecial
+    components:
+    - type: Marine
+      Faction: govfor
+    - type: UserIFF
+      factions:
+      - GOVFOR
+    - type: Skills
+      preset: AU14SkillPresetPlatoonCombatTechnician
+    - type: JobPrefix
+      prefix: au14-job-prefix-govforsquadcombattech
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_AU14/Interface/au14govforhud.rsi
+        state: govfor_ct
+    - type: CMVendorUser
+      id: AU14JobGOVFORSquadCombatTech
+      points: 50

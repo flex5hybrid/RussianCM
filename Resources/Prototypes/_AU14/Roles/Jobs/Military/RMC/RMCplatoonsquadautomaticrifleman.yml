@@ -13,3 +13,21 @@
       role: AU14JobGOVFORSquadAutomaticRifleman
       time: 54000 # 15 hours
     RMC_Marine: []
+  special: #RuMC edit
+  - !type:AddComponentSpecial
+    components:
+    - type: Marine
+      Faction: govfor
+    - type: UserIFF
+      factions:
+      - GOVFOR
+    - type: SquadArmorWearer
+    - type: Skills
+      preset: AU14SkillPresetPlatoonAutomaticRifleman
+    - type: JobPrefix
+      prefix: au14-job-prefix-govforsquadautomaticrifleman
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_AU14/Interface/au14govforhud.rsi
+        state: govfor_afn
+

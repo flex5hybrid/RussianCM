@@ -6,6 +6,7 @@
   description: au14-job-description-govforsquadrifleman
   icon: "AU14JobIconGovRifleman"
   spawnMenuRoleName: Rifleman (GOVFOR)
+  inheritAddComponentSpecials: true # RuMC edit
   startingGear: AU14GearGOVFORSquadRifleman
   dummyStartingGear: AU14GearGOVFORRiflemanDummy
   playTimeTracker: AU14JobGOVFORSquadRifleman

@@ -8,3 +8,22 @@
       role: AU14JobGOVFORadvisor
       time: 360000 # 100 hours
     UPP_Chotar: []
+  special: # RuMC edit
+  - !type:AddComponentSpecial
+    components:
+    - type: Marine
+      Faction: govfor
+    - type: UserIFF
+      factions:
+      - GOVFOR
+    - type: SeeNewPlayers
+    - type: Skills
+      preset: AU14SkillPresetPlatoonAdvisor
+    - type: RMCSpeechBubbleSpecificStyle
+      speechStyleClass: commanderSpeech
+    - type: JobPrefix
+      prefix: au14-job-prefix-govforadvisor
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_AU14/Interface/au14govforhud.rsi
+        state: govfor_advisor

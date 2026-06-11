@@ -12,6 +12,15 @@
   special:
   - !type:AddComponentSpecial
     components:
+    - type: Marine #RuMC edit
+      Faction: govfor
+    - type: UserIFF
+      factions:
+      - GOVFOR
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_AU14/Interface/au14govforhud.rsi
+        state: govfor_afn
     - type: Skills
       skills:
         RMCSkillFirearms: 2

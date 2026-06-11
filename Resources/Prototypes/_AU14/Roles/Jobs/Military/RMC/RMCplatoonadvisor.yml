@@ -8,3 +8,15 @@
       role: AU14JobGOVFORadvisor
       time: 360000 # 100 hours
     RMC_WarrantOfficer2: []
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Marine #RuMC edit
+      Faction: govfor
+    - type: UserIFF
+      factions:
+      - GOVFOR
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_AU14/Interface/au14govforhud.rsi
+        state: govfor_advisor
