@@ -21,11 +21,13 @@ using Content.Server.Verbs;
 using Content.Shared._CMU14.Medical.Shrapnel;
 using Content.Shared.Projectiles;
 using Robust.Shared.GameObjects;
+using Robust.Shared.Localization; // RuMC edit
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using System.Collections.Generic;
 using System.Reflection;
+
 
 namespace Content.IntegrationTests._CMU14.Medical;
 
@@ -511,6 +513,17 @@ public sealed class MechanismWoundsFoundationTest
         await using var pair = await PoolManager.GetServerClient();
         var server = pair.Server;
 
+        // RuCM edit start
+        var locMan = server.ResolveDependency<ILocalizationManager>();
+        var woundName = locMan.GetString("cmu-medical-detailed-wound-full",
+            ("mechanism", "slash"), ("size", "deep"));
+        var untreatedName = locMan.GetString("cmu-medical-detailed-treatment-untreated");
+        var bleedModerateName = locMan.GetString("cmu-medical-detailed-bleed-moderate");
+        var externalBleedingName = locMan.GetString("cmu-medical-detailed-external-bleeding",
+            ("tier", bleedModerateName));
+        // RuCM edit end
+
+
         await server.WaitAssertion(() =>
         {
             var entMan = server.EntMan;
@@ -535,12 +548,14 @@ public sealed class MechanismWoundsFoundationTest
 
                 Assert.Multiple(() =>
                 {
-                    Assert.That(text, Does.Contain("slash wound"));
-                    Assert.That(text, Does.Contain("slash wound[/color]\n  [color=#ffd166]untreated[/color]\n  [color=#ff5f5f]external bleeding: moderate[/color]"));
+                    // RuMC edit start
+                    Assert.That(text, Does.Contain(woundName));
+                    Assert.That(text, Does.Contain($"{woundName}[/color]\n  [color=#ffd166]{untreatedName}[/color]\n  [color=#ff5f5f]{externalBleedingName}[/color]"));
                     Assert.That(text, Does.Not.Contain("optimal:"));
                     Assert.That(text, Does.Not.Contain("adequate treatment"));
                     Assert.That(text, Does.Not.Contain("cleanup needed"));
-                    Assert.That(text, Does.Contain("external bleeding: moderate"));
+                    Assert.That(text, Does.Contain(externalBleedingName));
+                    // RuMC edit end
                     Assert.That(text, Does.Not.Contain("bone:"));
                     Assert.That(text, Does.Not.Contain("organ"));
                     Assert.That(text, Does.Not.Contain("internal bleeding"));
@@ -560,6 +575,11 @@ public sealed class MechanismWoundsFoundationTest
     {
         await using var pair = await PoolManager.GetServerClient();
         var server = pair.Server;
+
+        // RuMC edit start
+        var locMan = server.ResolveDependency<ILocalizationManager>();
+        var treatedName = locMan.GetString("cmu-medical-detailed-treatment-treated");
+        // RuMC edit end
 
         await server.WaitAssertion(() =>
         {
@@ -585,7 +605,7 @@ public sealed class MechanismWoundsFoundationTest
 
                 Assert.Multiple(() =>
                 {
-                    Assert.That(text, Does.Contain("slash wound[/color]\n  [color=#7bd88f]treated[/color]"));
+                    Assert.That(text, Does.Contain($"[color=#7bd88f]{treatedName}[/color]")); // RuMC edit
                     Assert.That(text, Does.Not.Contain("adequate treatment"));
                     Assert.That(text, Does.Not.Contain("cleanup needed"));
                     Assert.That(text, Does.Not.Contain("dirty dressing"));
@@ -607,6 +627,11 @@ public sealed class MechanismWoundsFoundationTest
     {
         await using var pair = await PoolManager.GetServerClient();
         var server = pair.Server;
+
+        // RuMC edit start
+        var locMan = server.ResolveDependency<ILocalizationManager>();
+        var treatedName = locMan.GetString("cmu-medical-detailed-treatment-treated");
+        // RuMC edit end
 
         await server.WaitAssertion(() =>
         {
@@ -632,7 +657,10 @@ public sealed class MechanismWoundsFoundationTest
 
                 Assert.Multiple(() =>
                 {
-                    Assert.That(text, Does.Contain("slash wound[/color]\n  [color=#7bd88f]treated[/color]"));
+                    // RuMC edit start
+                    Assert.That(text, Does.Contain("slash wound"));
+                    Assert.That(text, Does.Contain($"[color=#7bd88f]{treatedName}[/color]"));
+                    // RuMC edit end
                     Assert.That(text, Does.Not.Contain("optimal treatment"));
                 });
             }
@@ -695,6 +723,13 @@ public sealed class MechanismWoundsFoundationTest
         await using var pair = await PoolManager.GetServerClient();
         var server = pair.Server;
 
+        //RuMC edit start
+        var locMan = server.ResolveDependency<ILocalizationManager>();
+        var leftArmName = locMan.GetString("cmu-medical-examine-part-arm-left");
+        var simpleFractureName = locMan.GetString("cmu-medical-examine-fracture-simple",
+            ("stabilized", false));
+        //RuMC edit end
+
         await server.WaitAssertion(() =>
         {
             var entMan = server.EntMan;
@@ -718,8 +753,8 @@ public sealed class MechanismWoundsFoundationTest
 
                 Assert.Multiple(() =>
                 {
-                    Assert.That(text, Does.Contain("Left arm"));
-                    Assert.That(text, Does.Contain("simple fracture"));
+                    Assert.That(text, Does.Contain(leftArmName));
+                    Assert.That(text, Does.Contain(simpleFractureName));
                     Assert.That(text, Does.Not.Contain("Right arm"));
                     Assert.That(text, Does.Not.Contain("hairline fracture"));
                 });
@@ -739,6 +774,13 @@ public sealed class MechanismWoundsFoundationTest
         await using var pair = await PoolManager.GetServerClient();
         var server = pair.Server;
 
+        // RuMC edit start
+        var locMan = server.ResolveDependency<ILocalizationManager>();
+        var headName = locMan.GetString("cmu-medical-examine-part-head");
+        var torsoName = locMan.GetString("cmu-medical-examine-part-torso");
+        var leftArmName = locMan.GetString("cmu-medical-examine-part-arm-left");
+        // RuMC edit end
+
         await server.WaitAssertion(() =>
         {
             var entMan = server.EntMan;
@@ -756,14 +798,16 @@ public sealed class MechanismWoundsFoundationTest
                 Assert.That(partHealth.TryApplyPartDamage(human, torso, Damage("Slash", 10), impact: DamageImpact.MeleeSlash), Is.True);
                 Assert.That(partHealth.TryApplyPartDamage(human, head, Damage("Slash", 10), impact: DamageImpact.MeleeSlash), Is.True);
 
-                var text = examine.GetDetailedExamineText(human);
-                var headIndex = text.IndexOf("Head", StringComparison.Ordinal);
-                var torsoIndex = text.IndexOf("Torso", StringComparison.Ordinal);
-                var armIndex = text.IndexOf("Left arm", StringComparison.Ordinal);
+                // RuMC edit start
+                var text       = examine.GetDetailedExamineText(human);
+                var headIndex  = text.IndexOf(headName,    StringComparison.Ordinal);
+                var torsoIndex = text.IndexOf(torsoName,  StringComparison.Ordinal);
+                var armIndex   = text.IndexOf(leftArmName, StringComparison.Ordinal);
+                // RuMC edit end
 
                 Assert.Multiple(() =>
                 {
-                    Assert.That(text, Does.Contain("[bold][color=#9fc7ff]Head[/color][/bold]"));
+                    Assert.That(text, Does.Contain($"[bold][color=#9fc7ff]{headName}[/color][/bold]")); // RuMC edit
                     Assert.That(text, Does.Contain("[color=#ffb86c]small slash wound[/color]"));
                     Assert.That(headIndex, Is.GreaterThanOrEqualTo(0));
                     Assert.That(torsoIndex, Is.GreaterThan(headIndex));
@@ -788,6 +832,7 @@ public sealed class MechanismWoundsFoundationTest
         await server.WaitAssertion(() =>
         {
             var entMan = server.EntMan;
+            var locMan = server.ResolveDependency<ILocalizationManager>(); // RuMC edit
             var examine = entMan.System<CMUDetailedMedicalExamineSystem>();
             var patient = entMan.SpawnEntity("CMMobHuman", MapCoordinates.Nullspace);
             var user = entMan.SpawnEntity("CMMobHuman", MapCoordinates.Nullspace);
@@ -844,16 +889,22 @@ public sealed class MechanismWoundsFoundationTest
         await using var pair = await PoolManager.GetServerClient();
         var server = pair.Server;
 
+        // RuMC edit start
+        var locMan = server.ResolveDependency<ILocalizationManager>();
+        var torsoName = locMan.GetString("cmu-medical-examine-part-torso");
+        var rightArmName = locMan.GetString("cmu-medical-examine-part-arm-right");
+        // RuMC edit end
+
         await server.WaitAssertion(() =>
         {
-            var entMan = server.EntMan;
+            var entMan     = server.EntMan;
             var partHealth = entMan.System<SharedBodyPartHealthSystem>();
-            var examine = entMan.System<CMUMedicalExamineSystem>();
-            var human = entMan.SpawnEntity("CMMobHuman", MapCoordinates.Nullspace);
+            var examine    = entMan.System<CMUMedicalExamineSystem>();
+            var human      = entMan.SpawnEntity("CMMobHuman", MapCoordinates.Nullspace);
 
             try
             {
-                var torso = GetBodyPart(entMan, human, BodyPartType.Torso);
+                var torso    = GetBodyPart(entMan, human, BodyPartType.Torso);
                 var rightArm = GetBodyPart(entMan, human, BodyPartType.Arm, BodyPartSymmetry.Right);
 
                 Assert.That(partHealth.TryApplyPartDamage(human, torso, Damage("Slash", 80), impact: DamageImpact.MeleeSlash), Is.True);
@@ -863,10 +914,10 @@ public sealed class MechanismWoundsFoundationTest
 
                 Assert.Multiple(() =>
                 {
-                    Assert.That(text, Does.Contain("[color=#ff9f43]Massive Torso, Moderate Right arm[/color]"));
+                    Assert.That(text, Does.Contain($"[color=#ff9f43]Massive {torsoName}, Moderate {rightArmName}[/color]")); // RuMC edit
                     Assert.That(text, Does.Not.Contain("Optimal Treatment"));
                     Assert.That(text, Does.Not.Contain("optimal:"));
-                    Assert.That(text, Does.Not.Contain("[color=#83c9ff]Massive Torso, Moderate Right arm[/color]"));
+                    Assert.That(text, Does.Not.Contain($"[color=#83c9ff]Massive {torsoName}, Moderate {rightArmName}[/color]")); // RuMC edit
                 });
             }
             finally
@@ -884,12 +935,17 @@ public sealed class MechanismWoundsFoundationTest
         await using var pair = await PoolManager.GetServerClient();
         var server = pair.Server;
 
+        // RuMC edit start
+        var locMan = server.ResolveDependency<ILocalizationManager>();
+        var rightArmName = locMan.GetString("cmu-medical-examine-part-arm-right");
+        // RuMC edit end
+
         await server.WaitAssertion(() =>
         {
-            var entMan = server.EntMan;
+            var entMan     = server.EntMan;
             var partHealth = entMan.System<SharedBodyPartHealthSystem>();
-            var examine = entMan.System<CMUMedicalExamineSystem>();
-            var human = entMan.SpawnEntity("CMMobHuman", MapCoordinates.Nullspace);
+            var examine    = entMan.System<CMUMedicalExamineSystem>();
+            var human      = entMan.SpawnEntity("CMMobHuman", MapCoordinates.Nullspace);
 
             try
             {
@@ -899,7 +955,7 @@ public sealed class MechanismWoundsFoundationTest
 
                 var text = examine.GetInspectInjuriesText(human);
 
-                Assert.That(text, Does.Contain("[bold][color=#ff5f5f]Arterial Bleeding[/color][/bold]\n  [color=#ff5f5f]Right arm[/color]"));
+                Assert.That(text, Does.Contain($"[bold][color=#ff5f5f]Arterial Bleeding[/color][/bold]\n  [color=#ff5f5f]{rightArmName}[/color]")); // RuMC edit
             }
             finally
             {
