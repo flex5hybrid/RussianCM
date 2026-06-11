@@ -16,8 +16,8 @@
 - type: job
   parent: AU14JobOPFORWorkingJoeBase
   id: AU14JobOPFORWorkingJoe
-  whitelisted: true
-  whitelistParent: RMCWhitelistMedium
+  # whitelisted: true
+  # whitelistParent: RMCWhitelistMedium
   requirements:
   - !type:RoleTimeRequirement
     role: AU14JobGOVFORAuxSupportSynth

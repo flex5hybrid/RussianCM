@@ -10,7 +10,7 @@
   dummyStartingGear: AU14GearGOVFORadvisorDummy
   playTimeTracker: AU14JobGOVFORadvisor
   requireAdminNotify: true
-  whitelisted: true
+  # whitelisted: true
   canBeAntag: false
   accessGroups:
   - AU14GovforCommand

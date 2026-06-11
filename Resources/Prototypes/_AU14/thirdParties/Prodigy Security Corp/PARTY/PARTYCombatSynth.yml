@@ -4,8 +4,8 @@
   name: Prodigy Yankee Combat Synthetic
   description: au14-prodigyparty-description
   playTimeTracker: AU14JobProdigyPARTCombatSynth
-  whitelisted: true
-  whitelistParent: RMCWhitelistMedium
+  # whitelisted: true
+  # whitelistParent: RMCWhitelistMedium
   ranks:
     AU14RankPrDSynth5:
     - !type:RoleTimeRequirement

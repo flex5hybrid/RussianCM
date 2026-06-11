@@ -1,8 +1,8 @@
 - type: job
   parent: AU14JobWorkingJoeBase
   id: AU14JobColonyWorkingJoe
-  whitelisted: true
-  whitelistParent: RMCWhitelistMedium
+  # whitelisted: true
+  # whitelistParent: RMCWhitelistMedium
   requirements:
   - !type:TraitsRequirement
     inverted: true

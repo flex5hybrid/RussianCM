@@ -1,8 +1,8 @@
 - type: job
   parent: RMCJobSyntheticColony
   id: RMCSyntheticColonyHybrisaEMT
-  whitelisted: true
-  whitelistParent: RMCWhitelistMedium
+  # whitelisted: true
+  # whitelistParent: RMCWhitelistMedium
   startingGear: RMCGearSyntheticColonistHybrisaEMT
   spawnMenuRoleName: EMT Synthetic (Hybrisa Survivor)
   special:

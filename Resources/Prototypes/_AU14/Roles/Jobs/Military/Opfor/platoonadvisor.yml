@@ -8,8 +8,8 @@
   startingGear: AU14GearOPFORadvisor
   dummyStartingGear: AU14GearOPFORadvisorDummy
   supervisors: au14-job-supervisors-opfor
-  whitelisted: true
-  whitelistParent: RMCWhitelistMedium
+  # whitelisted: true
+  # whitelistParent: RMCWhitelistMedium
   accessGroups:
   - AU14OpforCommand
   special:

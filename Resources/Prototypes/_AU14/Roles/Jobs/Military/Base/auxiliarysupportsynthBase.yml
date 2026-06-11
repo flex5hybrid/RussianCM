@@ -11,8 +11,8 @@
   supervisors: au14-job-supervisors-govforplatco
   playTimeTracker: AU14JobGOVFORAuxSupportSynth
   canBeAntag: false
-  whitelisted: true
-  whitelistParent: RMCWhitelistMedium
+  # whitelisted: true
+  # whitelistParent: RMCWhitelistMedium
   hidden: true
   inheritAddComponentSpecials: true
   accessGroups:

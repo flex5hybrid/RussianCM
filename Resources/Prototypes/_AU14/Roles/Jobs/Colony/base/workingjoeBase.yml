@@ -8,8 +8,8 @@
   basePlaytimeTracker: true
   setPreference: true
   canBeAntag: false
-  whitelisted: true
-  whitelistParent: RMCWhitelistMedium
+  # whitelisted: true
+  # whitelistParent: RMCWhitelistMedium
   jobEntity: AU14MobWorkingJoe
   jobPreviewEntity: AU14MobWorkingJoeDummy
 

@@ -2,8 +2,8 @@
 - type: job
   parent: CMJobBase
   id: RMCJobTSEPASynthetic
-  whitelisted: true
-  whitelistParent: RMCWhitelistMedium
+  # whitelisted: true
+  # whitelistParent: RMCWhitelistMedium
   name: rmc-job-name-tsepa-synth
   description: rmc-job-description-tsepa-synth
   playTimeTracker: RMCJobTSEPASynthetic

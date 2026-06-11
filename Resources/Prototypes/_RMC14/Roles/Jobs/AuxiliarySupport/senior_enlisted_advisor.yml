@@ -41,8 +41,8 @@
     path: /Audio/_RMC14/Announcements/ARES/attention_jingle.ogg
   marineAuthorityLevel: 5
   supervisors: rmc-job-supervisors-commander
-  whitelisted: true
-  whitelistParent: RMCWhitelistHard
+  # whitelisted: true
+  # whitelistParent: RMCWhitelistHard
   accessGroups:
   - MarineMain
   roleWeight: 0.25

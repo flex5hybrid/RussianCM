@@ -4,8 +4,8 @@
   name: Prodigy Sierra Support Synthetic
   description: au14-prodigyparty-description
   playTimeTracker: AU14JobPARTSPartySyntheticTracker
-  whitelisted: true
-  whitelistParent: RMCWhitelistMedium
+  # whitelisted: true
+  # whitelistParent: RMCWhitelistMedium
   ranks:
     AU14RankPrDSynth5:
     - !type:RoleTimeRequirement

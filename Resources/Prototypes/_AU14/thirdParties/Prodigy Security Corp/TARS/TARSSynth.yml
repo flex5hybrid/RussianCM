@@ -4,8 +4,8 @@
   name: Синтетик поддержки TARS Prodigy
   description: au14-prodigyrescue-description
   playTimeTracker: AU14JobProdigyTARSPartySynthTracker
-  whitelisted: true
-  whitelistParent: RMCWhitelistMedium
+  # whitelisted: true
+  # whitelistParent: RMCWhitelistMedium
   ranks:
     AU14RankPrDSynth5:
     - !type:RoleTimeRequirement
