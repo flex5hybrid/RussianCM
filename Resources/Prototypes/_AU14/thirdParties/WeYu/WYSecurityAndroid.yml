@@ -63,7 +63,7 @@
       - FootstepSound
       - DoorBumpOpener
     - type: Loadout
-      prototypes: [ AU14GearSecurityAndroid ]
+      prototypes: [ AU14GearWYSecurityAndroid ]
 
 - type: startingGear
   parent: AU14GearSecurityAndroidBase
