@@ -89,6 +89,3 @@ command-description-vehiclesupply-addstorage = Добавляет прототи
 
 command-description-vehiclesupply-addstoragelift = Добавляет прототип транспортного средства в определенное хранилище грузовых автомобилей.
 
-# Missing entries synced from en-US
-
-command-description-alertlevel-get = Выводит текущий уровень тревоги на корабле на консоль.

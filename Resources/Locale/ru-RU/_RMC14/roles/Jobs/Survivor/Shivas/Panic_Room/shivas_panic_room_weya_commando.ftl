@@ -20,10 +20,6 @@ ent-CMMedicalUpgradeKitFilledCommando = {ent-CMMedicalUpgradeKit}
     .desc = {ent-CMMedicalUpgradeKit.desc}
     .suffix = Заполнен, Коммандос
 
-ent-RMCBeltPMCFilledCommando = {ent-RMCBeltPMC}
-    .desc = {ent-RMCBeltPMC.desc}
-    .suffix = Заполнен, Коммандос
-
 ent-RMCSatchelPMCCommandoFilled = боевой рюкзак коммандос Ве-Ю
     .desc = Эргономичный, защищенный, большой рюкзак, разработанный для коммандос Ве-Ю.
     .suffix = Заполнен

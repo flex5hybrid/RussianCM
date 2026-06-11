@@ -12,6 +12,3 @@ rmc-job-name-marine-raider-leader = Руководитель группы мор
 
 rmc-job-prefix-marine-raider-leader = TL.
 
-# Missing entries synced from en-US
-
-rmc-ghost-name-marine-raider = Морской Рейдер (Дружелюбный)
