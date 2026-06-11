@@ -1,0 +1,23 @@
+- type: job
+  abstract: true
+  parent: CMJobBase
+  id: AU14JobSecurityAndroidBase
+  name: Security Android
+  description: au14-job-description-workingjoe
+  playTimeTracker: AU14JobAndroid
+  basePlaytimeTracker: true
+  setPreference: true
+  canBeAntag: false
+  whitelisted: true
+  whitelistParent: AU14JobGeneralWhitelist
+  jobEntity: AU14MobSecurityAndroid
+  jobPreviewEntity: AU14MobSecurityAndroidDummy
+
+- type: playTimeTracker
+  id: AU14JobAndroid
+  isHumanoid: true
+
+- type: startingGear
+  id: AU14GearSecurityAndroidBase
+  equipment:
+    shoes: RMCBootsPMCFilled
