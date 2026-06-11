@@ -27,15 +27,11 @@ internal sealed class PlaytimeApi : IPostInjectInit
     private string _secret = string.Empty;
     private string _allowedIP = string.Empty;
 
-    void IPostInjectInit.PostInject() // RuMC edit
+    void IPostInjectInit.PostInject()
     {
         _log = Logger.GetSawmill("playtimeApi");
-
         _statusHost.AddHandler(PlaytimeHandler);
-    }
 
-    public void Initialize() // RuMC edit
-    {
         _cfg.OnValueChanged(CCCVars.PlaytimeApiToken, v => _secret = v, true);
         _cfg.OnValueChanged(CCCVars.PlaytimeApiAllowedIP, v => _allowedIP = v, true);
 

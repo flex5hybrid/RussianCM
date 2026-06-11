@@ -54,4 +54,4 @@ jobs:
         run: dotnet build Content.MapRenderer/Content.MapRenderer.csproj --configuration Release --no-restore /m
 
       - name: Run Map Renderer
-        run: dotnet run --project Content.MapRenderer/Content.MapRenderer.csproj --configuration Release --no-build --no-restore -- Dev
+        run: dotnet run --project Content.MapRenderer/Content.MapRenderer.csproj --configuration Release --no-build --no-restore # RuMC edit
