@@ -2,7 +2,7 @@
   abstract: true
   parent: CMJobBase
   id: AU14JobSecurityAndroidBase
-  name: Security Android
+  name: au14-job-name-securityandroid
   description: au14-job-description-workingjoe
   playTimeTracker: AU14JobAndroid
   basePlaytimeTracker: true
