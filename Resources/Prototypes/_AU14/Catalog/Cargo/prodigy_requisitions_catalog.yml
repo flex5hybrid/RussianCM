@@ -162,6 +162,8 @@
         crate: AU14CrateHJRA12
       - cost: 9500
         crate: AU14CrateOG60
+      - cost: 9500
+        crate: RuMCCrateUTES-C
     - name: Ammo
       entries:
       - cost: 1000

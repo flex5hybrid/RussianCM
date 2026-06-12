@@ -1,0 +1,26 @@
+- type: entity
+  parent: RMCGunCaseBase
+  id: RuMCUTES-CCase
+  name: UTES-C heavy machine gun case
+  description: Case for the UTES-C HMG. Contains the gun and 4 magazines.
+  components:
+  - type: Storage
+    maxItemSize: Ginormous
+    grid:
+    - 0,0,13,1
+    whitelist:
+      tags:
+      - RuMCUTES-CMount
+      - RuMCMagazineUTES-C
+      - RuMCMagazineUTES-CTracter
+      - RMCSkillPamphlet
+      - RMCMachineGunnerRig
+  - type: StorageFill
+    contents:
+    - id: RMCPamphletHeavyMachineGunner
+    - id: RuMCUTES-CMount
+    - id: RuMCMagazineUTES-C
+    - id: RuMCMagazineUTES-C
+    - id: RuMCMagazineUTES-C
+    - id: RuMCMagazineUTES-CTracter
+    - id: RMCBeltMachineGunner
