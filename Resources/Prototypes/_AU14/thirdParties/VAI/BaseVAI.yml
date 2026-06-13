@@ -4,6 +4,9 @@
   abstract: true
   suffix: AU14, UA, VAI
   components:
+  - type: NpcFactionMember
+    factions:
+    - CMUVAI
   - type: GhostTakeoverAvailable
   - type: RandomHumanoidAppearance
   - type: RandomHumanoidAppearanceWhitelisted

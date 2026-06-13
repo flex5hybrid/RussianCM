@@ -65,3 +65,9 @@ public record struct DragDropTargetEvent(EntityUid User, EntityUid Dragged)
     public readonly EntityUid Dragged = Dragged;
     public bool Handled = false;
 }
+
+/// <summary>
+/// Raised on the entity attempting to start a drag.
+/// </summary>
+[ByRefEvent]
+public record struct CanStartDragEvent(EntityUid User, EntityUid Target, bool Cancelled = false);

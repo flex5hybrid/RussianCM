@@ -1,0 +1,6 @@
+- type: job
+  parent: AU14JobWeaponsSpecialistBase
+  id: AU14JobGOVFORWeaponsSpecialist
+  hidden: false
+  setPreference: true
+  basePlaytimeTracker: true

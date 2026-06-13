@@ -58,15 +58,15 @@
     - radioOpforIntel
     - radioOpforJTAC
     - radioOpforMILP
+    - CMUYautja
+    - CMUYautjaOverseer
+    - CMUYautjaBadBlood
+    - radioVAI
     - ICSCSOF
     - UASOF
     - TWESOF
     - UPPSOF
-    - VAI
     - PART
-    - CMUYautja
-    - CMUYautjaOverseer
-    - CMUYautjaBadBlood
 
 # ├──[ GOVFOR COMMS ]────────────────────────────────────────────────┤
 - type: entity
@@ -111,11 +111,11 @@
   - type: CommunicationsTower
     state: Off
     channels:
+    - radioVAI
     - ICSCSOF
     - UASOF
     - TWESOF
     - UPPSOF
-    - VAI
     - PART
     - CMUYautja
     - CMUYautjaOverseer

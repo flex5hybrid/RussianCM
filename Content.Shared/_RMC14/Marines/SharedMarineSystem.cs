@@ -22,12 +22,10 @@ public abstract partial class SharedMarineSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<MarineComponent, GetMarineIconEvent>(OnMarineGetIcon);
-
         SubscribeLocalEvent<GrantMarineIconsComponent, GotEquippedEvent>(OnGotEquipped);
         SubscribeLocalEvent<GrantMarineIconsComponent, GotUnequippedEvent>(OnGotUnequipped);
-
         SubscribeLocalEvent<MarineComponent, RMCGetFixedIdentityEvent>(OnIdentificationAttempt);
+        SubscribeLocalEvent<MarineComponent, GetMarineIconEvent>(OnMarineGetIcon);
     }
 
     private void OnIdentificationAttempt(Entity<MarineComponent> ent, ref RMCGetFixedIdentityEvent args)
@@ -95,10 +93,10 @@ public abstract partial class SharedMarineSystem : EntitySystem
         }
     }
 
-    public void MakeMarine(EntityUid uid, SpriteSpecifier? icon)
+    public void MakeMarine(EntityUid uid, SpriteSpecifier? icon, bool hideIcon = false)
     {
         var marine = EnsureComp<MarineComponent>(uid);
-        marine.Icon = _serialization.CreateCopy(icon);
+        marine.Icon = hideIcon ? null : _serialization.CreateCopy(icon);
         Dirty(uid, marine);
     }
 

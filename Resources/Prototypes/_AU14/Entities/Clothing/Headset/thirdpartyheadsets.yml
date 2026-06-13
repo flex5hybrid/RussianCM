@@ -62,7 +62,7 @@
       - CMEncryptionKeyColony
   - type: RMCHeadset
     channels:
-    - VAI
+    - radioVAI
   - type: GrantSquadLeaderTracker
     defaultMode: SquadLeader
     trackerModes:
@@ -79,7 +79,7 @@
   components:
   - type: RMCHeadset
     channels:
-    - VAI
+    - radioVAI
 
 - type: entity
   parent: AU14ColonyAdminHeadset
@@ -90,7 +90,7 @@
   components:
   - type: RMCHeadset
     channels:
-    - VAI
+    - radioVAI
 
 - type: entity
   parent: AU14HeadsetGovforMarine

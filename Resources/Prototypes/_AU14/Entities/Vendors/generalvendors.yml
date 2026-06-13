@@ -322,6 +322,10 @@
       - id: AU14PouchIFAKFill
       - id: RMCPouchMagazinePistol
       - id: RMCPouchPistol
+    - name: Inmate Restraining Gear
+      entries:
+      - id: AU14ClothingOuterStraitjacket
+        amount: 5 # TODO: bandaid - remove after mappers have placed this
 
 - type: entity
   parent: ColMarTechBase
@@ -407,3 +411,66 @@
     - CMRollerBedSpawnFolded
     - CMPortableSurgicalBedSpawnFolded
     - AU14IVFoldableFolded
+
+#generic specvend
+- type: entity
+  abstract: true
+  id: AU14VendorWeaponsSpecialistGearBase
+  components:
+  - type: CMAutomatedVendor
+    jobs:
+    - AU14JobGOVFORWeaponsSpecialist
+    pointsType: Specialist
+    sections:
+    - name: Weapons Specialist Sets
+      takeOne: SquadSpecKit
+      sharedSpecLimit: 1
+      entries:
+      - id: RMCGrenadeSpecEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-grenadier
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-grenadier
+        isAppendPrefix: true
+      - id: RMCSharpSpecEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sharp
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sharp
+        isAppendPrefix: true
+      - id: RMCScoutSpecEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-scout
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-scout
+        isAppendPrefix: true
+      - id: CMSniperEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sniper
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sniper
+        isAppendPrefix: true
+      - id: RMCAntiMaterielEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-anti-materiel-sniper
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-anti-materiel-sniper
+        isAppendPrefix: true
+      - id: RMCM707VultureCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sniper
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sniper
+        isAppendPrefix: true
+      - id: RMCMK481ShotgunCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-shotgunner
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-shotgunner
+        isAppendPrefix: true
+
+- type: entity
+  parent: [ColMarTechBase, AU14VendorWeaponsSpecialistGearBase]
+  id: AU14SpecVend
+  name: weapons specialist gear rack
+  description: An automated gear rack for Weapons Specialists.
+  components:
+  - type: RMCVendorSpecialist
+  - type: AccessReader
+    access:
+    - [ "AU14AccessGovforSquadWeaponsSpecialist" ]
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/specialist_gear.rsi

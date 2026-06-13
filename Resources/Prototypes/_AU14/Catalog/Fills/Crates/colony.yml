@@ -359,6 +359,18 @@
     - id: CMMagazinePistolM77AP
       amount: 7
 
+#Power
+
+- type: entity
+  parent: RMCCrateBase
+  id: AU14CrateBoxFusionCells
+  name: Fusion Cell Crate (4x WL-6 fuel cells)
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCGeneratorFusionCell
+      amount: 2
+
 #Tools
 
 - type: entity

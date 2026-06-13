@@ -164,6 +164,7 @@
     - On
     - Off
     - Toggle
+  - type: AURandomLightBreak
 
 - type: entity
   parent: [RMCLightFixtureEmpty, RMCLightFixtureAlwaysPoweredOffset]
@@ -523,6 +524,7 @@
     - On
     - Off
     - Toggle
+  - type: AURandomLightBreak
 
 - type: entity
   parent: [RMCLightFixtureSmallEmpty, RMCLightFixtureSmallAlwaysPoweredOffset]

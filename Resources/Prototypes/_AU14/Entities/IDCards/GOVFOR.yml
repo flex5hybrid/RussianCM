@@ -92,6 +92,17 @@
 
 - type: entity
   parent: CMIDCardBase
+  id: AU14IDCardWeaponsSpecialist
+  name: weapons specialist ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobGOVFORWeaponsSpecialist
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
   id: AU14IDCardSquadAutomaticRifleman
   name: squad sergeant ID card
   components:

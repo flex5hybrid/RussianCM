@@ -35,7 +35,17 @@
         tags:
         - AU14SquadMSG
     - type: Skills
-      preset: AU14SkillPresetPlatoonRifleman
+      skills:
+        RMCSkillConstruction: 1
+        RMCSkillCqc: 1
+        RMCSkillEndurance: 1
+        RMCSkillEngineer: 1
+        RMCSkillFirearms: 1
+        RMCSkillFireman: 2
+        RMCSkillVehicles: 1
+        RMCSkillJtac: 1
+        RMCSkillPolice: 1
+
     - type: JobPrefix
       prefix: au14-job-prefix-msg-watchstander
   hidden: true

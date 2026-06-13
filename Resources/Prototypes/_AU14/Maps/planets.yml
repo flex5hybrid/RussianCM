@@ -33,6 +33,7 @@
     - XenoThreatCF
     - wendigoThreat
     - abominationsThreatDistress
+    - badBloodClanThreat
     thirdparties:
     - WEYUSurvLarge
     - WEYUSurvMedium
@@ -392,6 +393,7 @@
     - XenoThreatCF
     - wendigoThreat
     - abominationsThreatDistress
+
     thirdparties:
     - IASFSurvLarge
     - IASFSurvMedium
@@ -421,7 +423,7 @@
     - abominationThirdParty
     joboverrides:
       AU14JobLEOLeaderBase: AU14JobCivilianNSPAInspector
-      AU14JobLEOBase: AU14JobCiviliannspaConstable
+      AU14JobLEOBase: AU14JobCivilianNSPAConstable
     jobScalingFof: DefaultGovforOpforScale
     jobScalingIns: DefaultInsurgencyScale
 
@@ -458,6 +460,8 @@
     - XenoThreatCF
     - wendigoThreat
     - abominationsThreatDistress
+    - badBloodClanThreat
+
     thirdparties:
     - WEYUSurvLarge
     - WEYUSurvMedium
@@ -485,7 +489,7 @@
     - abominationThirdParty
     joboverrides:
       AU14JobLEOLeaderBase: AU14JobCivilianNSPAInspector
-      AU14JobLEOBase: AU14JobCiviliannspaConstable
+      AU14JobLEOBase: AU14JobCivilianNSPAConstable
     jobScalingFof: DefaultGovforOpforScale
     jobScalingIns: DefaultInsurgencyScale
 
@@ -521,7 +525,8 @@
     - cultistThreat
     - XenoThreat
     - XenoThreatCF
-    - TribalsThreat
+    - badBloodClanThreat
+
     thirdparties:
     - WEYUSurvLarge
     - WEYUSurvMedium
@@ -599,6 +604,8 @@
     - wendigoThreat
     - abominationsThreat
     - abominationsThreatDistress
+    - badBloodClanThreat
+
     joboverrides:
       AU14JobLEOBase: AU14JobCivilianCMBDeputy
       AU14JobLEOLeaderBase: AU14JobCivilianCMBMarshal
@@ -658,8 +665,10 @@
     - cultistThreat
     - XenoThreat
     - wendigoThreat
-    - TribalsThreat
+ #   - TribalsThreat
     - abominationsThreatDistress
+    - badBloodClanThreat
+
     jobScalingFof: DefaultGovforOpforScale
     jobScalingIns: DefaultInsurgencyScale
 
@@ -718,7 +727,9 @@
     - abominationThirdParty
     threats:
     - XenoThreat
-    - TribalsThreat
+    #- TribalsThreat
+    - badBloodClanThreat
+
     jobScalingFof: DefaultGovforOpforScale
     jobScalingIns: DefaultInsurgencyScale
 
@@ -774,7 +785,9 @@
     - abominationThirdParty
     threats:
     - XenoThreat
-    - TribalsThreat
+ #   - TribalsThreat
+    - badBloodClanThreat
+
     jobScalingFof: DefaultGovforOpforScale
     jobScalingIns: DefaultInsurgencyScale
 
@@ -831,6 +844,8 @@
     threats:
     - XenoThreat
     - TribalsThreat
+    - badBloodClanThreat
+
     jobScalingFof: DefaultGovforOpforScale
     jobScalingIns: DefaultInsurgencyScale
 
@@ -887,6 +902,7 @@
     - abominationThirdParty
     threats:
     - abominationsThreatDistress
+    -  badBloodClanThreat
     jobScalingFof: DefaultGovforOpforScale
     jobScalingIns: DefaultInsurgencyScale
 
@@ -941,6 +957,8 @@
     - abominationThirdParty
     threats:
     - abominationsThreatDistress
+    - badBloodClanThreat
+
     jobScalingFof: DefaultGovforOpforScale
     jobScalingIns: DefaultInsurgencyScale
     joboverrides:
@@ -1010,3 +1028,72 @@
 - type: lorePrimer
   id: AU14PrimerPlanetFiorina
   planetText: "Date 2181 - Fiorina Prison. Privately owned  and operated by the Weyland-Yutani corporation, Fiorina 161 is a maximum security prison for the most dangerous criminals in the system."
+
+
+- type: entity
+  id: CMUPlanetHopesRetreat
+  name: JE-1758 "Ascanius"
+  components:
+  - type: RMCPlanetMapPrototype
+    votename: "Hope's Retreat"
+    mapId: hopesretreat
+    lorePrimer: CMUPrimerHopesRetreat
+    Allegiance: TWE
+    camouflage: Desert
+    announcement: "The Octanis Research Complex and attached colony of Hope's Retreat on charted exoplanet JE-1758 have gone silent, investigate the cause of this communications blackout."
+    platoonsGovfor:
+    - WEYU
+    - USCM
+    - RMC
+    - CMBCIU
+    - LACN
+    - UPP
+    platoonsOpfor:
+    - HAZOPS
+    - ProdigySF
+    - VAIPO
+    defaultgovfor: WEYU
+    defaultopfor: ProdigySF
+    govforinship: false
+    opforinship: true
+    daycycleenabled: false
+    faction: ua
+    thirdparties:
+    - USArmy
+    - USArmyAlt
+    - USArmyAlt2
+    - USArmyTank
+    - USArmyArmored
+    - ICRCReliefParty
+    - TimeSharesSalesman
+    - UACGLostTeam
+    - NSPAInvestigationParty
+    - LACNSniperteam
+    - RMCRRT
+    - UPPGROM
+    - UPPGROMAlt
+    - cultistThirdParty
+    - CMBInvestigationParty
+    - CMBInvestigationPartyAlt
+    - XenoParasiteRunnerParty
+    - IPIE
+    - IPIESynth
+    - WYHT
+    - WYPMCParty
+    - WYPMCPartyAlt
+    - abominationThirdParty
+    threats:
+    - XenoThreat
+    - cultistThreatOnMarker
+    - abominationsThreat
+    - abominationsThreatDistress
+    joboverrides:
+      AU14JobLEOLeaderBase: AU14JobCivilianNSPAInspector
+      AU14JobLEOBase: AU14JobCivilianNSPAConstable
+    jobScalingFof: DefaultGovforOpforScale
+    jobScalingIns: DefaultInsurgencyScale
+
+
+- type: lorePrimer
+  id: CMUPrimerHopesRetreat
+  planetText: "Date: 2181. Tidally-locked planet JE-1758 Ascanius, locally referred to as Hope's Retreat by colonists. Nominally under an ICSC charter but host to various facilities of various allegiances, including the United Americas, Union of Progressive Peoples and Three-World Empire."

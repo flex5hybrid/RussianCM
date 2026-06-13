@@ -94,6 +94,7 @@
     - Recyclable
     - SalvageScrap
     - SalvageTier3
+    - AUMetalScrap
   - type: PhysicalComposition
     materialComposition:
       Steel: 3000 # 30 sheets

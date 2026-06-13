@@ -80,8 +80,8 @@
     AU14JobGOVFORAuxTech:
       scale: 0.03
       whenToBeginScaling: 60
-      benchmark: 2
-      maximum: 5
+      benchmark: 3
+      maximum: 6
     AU14JobGOVFORWorkingJoe:
       scale: 0.034
       whenToBeginScaling: 50
@@ -106,15 +106,15 @@
       scale: 0.02
       whenToBeginScaling: 40
     AU14JobGOVFORSquadRifleman:
-      scale: 0.02
+      scale: 0.018
       whenToBeginScaling: 40
       benchmark: 6
     AU14JobGOVFORPlatoonCorpsman:
-      scale: 0.02
+      scale: 0.014
       whenToBeginScaling: 40
       benchmark: 3
     AU14JobGOVFORSquadCombatTech:
-      scale: 0.02
+      scale: 0.013
       whenToBeginScaling: 40
       benchmark: 3
     AU14JobGOVFORSquadAutomaticRifleman:
@@ -133,8 +133,8 @@
     AU14JobGOVFORAuxTech:
         scale: 0.025
         whenToBeginScaling: 50
-        benchmark: 2
-        maximum: 4
+        benchmark: 3
+        maximum: 6
     AU14JobGOVFORWorkingJoe:
       scale: 0.034
       whenToBeginScaling: 50

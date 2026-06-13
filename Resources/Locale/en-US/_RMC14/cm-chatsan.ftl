@@ -274,7 +274,6 @@ rmc-chatsan-replacement-lt-general = tall queen mother
 rmc-chatsan-word-commandant = commandant
 rmc-chatsan-replacement-commandant = tall queen mother
 
-rmc-chatsan-word-high-command = high command
 rmc-chatsan-replacement-high-command = tall queen mother
 
 cm-chatsan-word-lz = lz
@@ -933,8 +932,7 @@ cm-chatsan-replacement-pb = point blank
 cm-chatsan-word-slopcade = slopcade
 cm-chatsan-replacement-slopcade = bad cades
 
-cm-chatsan-word-clanker = clanker
-cm-chatsan-replacement-clanker = synthetic
+
 
 cm-chatsan-word-rwall = rwall
 cm-chatsan-replacement-rwall = reinforced wall

@@ -98,7 +98,7 @@ public sealed partial class LoadoutSystem : EntitySystem
             return GetName(gear);
         }
 
-        return GetName((IEquipmentLoadout) loadout);
+        return GetName((IEquipmentLoadout)loadout);
     }
 
     /// <summary>
@@ -183,5 +183,32 @@ public sealed partial class LoadoutSystem : EntitySystem
         }
 
         return HumanoidCharacterProfile.Random();
+    }
+
+    /// <summary>
+    /// Returns the profile key and RoleLoadoutPrototype for a job, example key: JobAU14JobGOVFORPlatCo
+    /// The prototype is the concrete job's own loadout, falls back to immediate parent
+    /// </summary>
+    public static (string ProfileKey, RoleLoadoutPrototype? Prototype) GetJobLoadoutInfo(ProtoId<JobPrototype> jobId, IPrototypeManager protoMan)
+    {
+        string key = GetJobPrototype(jobId);
+        var proto = GetRoleLoadout(jobId, protoMan);
+        return (key, proto);
+    }
+
+    /// <summary>
+    /// Returns the RoleLoadoutPrototype for a job, or null if not found, falls back to immediate parent job
+    /// </summary>
+    private static RoleLoadoutPrototype? GetRoleLoadout(ProtoId<JobPrototype> jobId, IPrototypeManager protoMan)
+    {
+        if (protoMan.TryIndex(GetJobPrototype(jobId), out RoleLoadoutPrototype? loadout))
+            return loadout;
+
+        // Immediate parent fallback
+        if (protoMan.TryIndex(jobId, out JobPrototype? jobProto)
+            && jobProto.Parents?.FirstOrDefault() is { } parentId)
+            return protoMan.TryIndex(GetJobPrototype(parentId), out loadout) ? loadout : null;
+
+        return null;
     }
 }

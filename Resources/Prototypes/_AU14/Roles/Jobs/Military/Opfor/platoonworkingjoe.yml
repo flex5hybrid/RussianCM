@@ -5,6 +5,7 @@
   icon: "AU14JobIconOPFORWorkingJoe"
   spawnMenuRoleName: Working Joe (OPFOR)
   supervisors: au14-job-supervisors-workingjoe-military
+  startingGear: AU14GearOPFORWorkingJoe
   dummyStartingGear: AU14GearOPFORWorkingJoe
   usePlayerProfile: false
   jobEntity: AU14MobWorkingJoeOPFOR
@@ -59,8 +60,6 @@
       - CanPilot
       - FootstepSound
       - DoorBumpOpener
-    - type: Loadout
-      prototypes: [ AU14GearOPFORWorkingJoe ]
 
 - type: startingGear
   parent: AU14GearWorkingJoeBase

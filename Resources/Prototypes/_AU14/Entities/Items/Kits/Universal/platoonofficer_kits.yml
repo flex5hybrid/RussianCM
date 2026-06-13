@@ -84,6 +84,8 @@
         amount: 1
       - id: AU14StampIO
         amount: 1
+      - id: AU14InfiltratorApparelBundle
+        amount: 1
 
 - type: entity
   parent: AU14KitPlatoonOfficer

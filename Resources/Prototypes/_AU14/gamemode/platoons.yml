@@ -115,19 +115,19 @@
     ReqVend: AU14UPPRequisitionVendor
   possibleships:
       - USSBushRedux
-  jobClassOverride:
-    SquadRifleman: AU14JobGOVFORSquadRiflemanUPP
-    PlatCo: AU14JobGOVFORPlatCoUPP
-    PlatOp: AU14JobGOVFORPlatOpUPP
-    # SectionSergeant: AU14JobGOVFORSectionSergeantUPP
-    SquadSergeant: AU14JobGOVFORSquadSergeantUPP
-    RadioTelephoneOperator: AU14JobGOVFORRadioTelephoneOperatorUPP
-    SquadCombatTech: AU14JobGOVFORSquadCombatTechUPP
-    SquadAutomaticRifleman: AU14JobGOVFORSquadAutomaticRiflemanUPP
-    PlatoonCorpsman: AU14JobGOVFORPlatoonCorpsmanUPP
-    DSPilot: AU14JobGOVFORDSPilotUPP
-    DCC: AU14JobGOVFORDCCUPP
-    SupportSynth: AU14JobGOVFORAuxSupportSynthUPP
+  # jobClassOverride:
+  #   SquadRifleman: AU14JobGOVFORSquadRiflemanUPP
+  #   PlatCo: AU14JobGOVFORPlatCoUPP
+  #   PlatOp: AU14JobGOVFORPlatOpUPP
+  #   # SectionSergeant: AU14JobGOVFORSectionSergeantUPP # unused
+  #   SquadSergeant: AU14JobGOVFORSquadSergeantUPP
+  #   RadioTelephoneOperator: AU14JobGOVFORRadioTelephoneOperatorUPP
+  #   SquadCombatTech: AU14JobGOVFORSquadCombatTechUPP
+  #   SquadAutomaticRifleman: AU14JobGOVFORSquadAutomaticRiflemanUPP
+  #   PlatoonCorpsman: AU14JobGOVFORPlatoonCorpsmanUPP
+  #   DSPilot: AU14JobGOVFORDSPilotUPP
+  #   DCC: AU14JobGOVFORDCCUPP
+  #   SupportSynth: AU14JobGOVFORAuxSupportSynthUPP
   CompatibleDropships:
   - /Maps/_CMU14/Shuttles/alamo.yml
   - /Maps/_CMU14/Shuttles/lexingtonsmall.yml
@@ -155,18 +155,18 @@
     MilitaryPolice: AU14MilitaryPolicemanGenericVendor
     MilitaryDoctor: AU14MilitaryDoctorGenericVendor
     ReqVend: AU14WYPMCRequisitionVendor
-  jobClassOverride:
-    SquadRifleman: AU14JobGOVFORSquadRiflemanWYPMC
-    PlatCo: AU14JobGOVFORPlatCoWYPMC
-    PlatOp: AU14JobGOVFORPlatOpWYPMC
-    # SectionSergeant: AU14JobGOVFORSectionSergeantWYPMC
-    SquadSergeant: AU14JobGOVFORSquadSergeantWYPMC
-    RadioTelephoneOperator: AU14JobGOVFORRadioTelephoneOperatorWYPMC
-    SquadCombatTech: AU14JobGOVFORSquadCombatTechWYPMC
-    SquadAutomaticRifleman: AU14JobGOVFORSquadAutomaticRiflemanWYPMC
-    PlatoonCorpsman: AU14JobGOVFORPlatoonCorpsmanWYPMC
-    DSPilot: AU14JobGOVFORDSPilotWYPMC
-    DCC: AU14JobGOVFORDCCWYPMC
+  # jobClassOverride:
+  #   SquadRifleman: AU14JobGOVFORSquadRiflemanWYPMC
+  #   PlatCo: AU14JobGOVFORPlatCoWYPMC
+  #   PlatOp: AU14JobGOVFORPlatOpWYPMC
+  #   # SectionSergeant: AU14JobGOVFORSectionSergeantWYPMC # unused
+  #   SquadSergeant: AU14JobGOVFORSquadSergeantWYPMC
+  #   RadioTelephoneOperator: AU14JobGOVFORRadioTelephoneOperatorWYPMC
+  #   SquadCombatTech: AU14JobGOVFORSquadCombatTechWYPMC
+  #   SquadAutomaticRifleman: AU14JobGOVFORSquadAutomaticRiflemanWYPMC
+  #   PlatoonCorpsman: AU14JobGOVFORPlatoonCorpsmanWYPMC
+  #   DSPilot: AU14JobGOVFORDSPilotWYPMC
+  #   DCC: AU14JobGOVFORDCCWYPMC
     # Synth
   CompatibleDropships:
   - /Maps/_CMU14/Shuttles/alamo.yml
@@ -188,7 +188,7 @@
     Rifleman: AU14USCMequipmentvendor
     Clothing: AU14CMBCIUapparelvendor
     Weapons: AU14CMBCIUWeaponsVendor
-    SWeapons: AU14CMBCIUSpecialWeaponsVendor
+    SWeapons: AU14SpecVend
     Corpsman: AU14CMBCIUTacticalMedicVendor
     Arifleman: AU14CMBCIUGunnerVendor
     Dcc: AU14CMBCIUWeaponsVendor
@@ -201,12 +201,12 @@
     MilitaryPolice: AU14MilitaryPolicemanGenericVendorCIU
     MilitaryDoctor: AU14MilitaryDoctorGenericVendor
     ReqVend: AU14CMBCIURequisitionVendor
-  jobClassOverride:
-    SquadRifleman: AU14JobGOVFORSquadRiflemanCMBCIU
-    PlatCo: AU14JobGOVFORPlatCoCMBCIU
-    # SectionSergeant: AU14JobGOVFORSectionSergeantCMBCIU
-    SquadSergeant: AU14JobGOVFORSectionSergeantCMBCIU
-    PlatoonCorpsman: AU14JobGOVFORPlatoonCorpsmanCMBCIU
+  # jobClassOverride:
+  #   SquadRifleman: AU14JobGOVFORSquadRiflemanCMBCIU
+  #   PlatCo: AU14JobGOVFORPlatCoCMBCIU
+  #   # SectionSergeant: AU14JobGOVFORSectionSergeantCMBCIU # unused
+  #   SquadSergeant: AU14JobGOVFORSectionSergeantCMBCIU
+  #   PlatoonCorpsman: AU14JobGOVFORPlatoonCorpsmanCMBCIU
 #  jobSlotOverride:
 #    SquadRifleman: 14
 #    PlatoonCorpsman: 2
@@ -265,7 +265,7 @@
     Rifleman: AU14USCMequipmentvendor
     Clothing: AU14prodigyclothingequipmentvendor
     Weapons: AU14prodigyWeaponsVendor
-    SWeapons: AU14prodigySpecialWeaponsVendor
+    SWeapons: AU14SpecVend
     Corpsman: AU14prodigycorpsmanvendor
     Arifleman: AU14prodigySGequipmentvendor
     Dcc: AU14prodigyaircrewvendor
@@ -300,7 +300,7 @@
     Rifleman: AU14USCMequipmentvendor
     Clothing: AU14VAIPOclothingequipmentvendor
     Weapons: AU14VAIPOWeaponsVendor
-    SWeapons: AU14VAIPOSpecialWeaponsVendor
+    SWeapons: AU14SpecVend
     Corpsman: AU14VAIPOcorpsmanvendor
     Arifleman: AU14VAIPOSGequipmentvendor
     Dcc: AU14VAIPOaircrewvendor
@@ -350,19 +350,19 @@
     MilitaryPolice: AU14MilitaryPolicemanGenericVendor
     MilitaryDoctor: AU14MilitaryDoctorGenericVendor
     ReqVend: AU14RMCRequisitionVendor
-  jobClassOverride:
-    SquadRifleman: AU14JobGOVFORSquadRiflemanRMC
-    PlatCo: AU14JobGOVFORPlatCoRMC
-    PlatOp: AU14JobGOVFORPlatOpRMC
-    SectionSergeant: AU14JobGOVFORSectionSergeantRMC
-    SquadSergeant: AU14JobGOVFORSquadSergeantRMC
-    RadioTelephoneOperator: AU14JobGOVFORRadioTelephoneOperatorRMC
-    SquadCombatTech: AU14JobGOVFORSquadCombatTechRMC
-    SquadAutomaticRifleman: AU14JobGOVFORSquadAutomaticRiflemanRMC
-    PlatoonCorpsman: AU14JobGOVFORPlatoonCorpsmanRMC
-    DSPilot: AU14JobGOVFORDSPilotRMC
-    DCC: AU14JobGOVFORDCCRMC
-    SupportSynth: AU14JobGOVFORAuxSupportSynthRMC
+  # jobClassOverride:
+  #   SquadRifleman: AU14JobGOVFORSquadRiflemanRMC
+  #   PlatCo: AU14JobGOVFORPlatCoRMC
+  #   PlatOp: AU14JobGOVFORPlatOpRMC
+  #   SectionSergeant: AU14JobGOVFORSectionSergeantRMC
+  #   SquadSergeant: AU14JobGOVFORSquadSergeantRMC
+  #   RadioTelephoneOperator: AU14JobGOVFORRadioTelephoneOperatorRMC
+  #   SquadCombatTech: AU14JobGOVFORSquadCombatTechRMC
+  #   SquadAutomaticRifleman: AU14JobGOVFORSquadAutomaticRiflemanRMC
+  #   PlatoonCorpsman: AU14JobGOVFORPlatoonCorpsmanRMC
+  #   DSPilot: AU14JobGOVFORDSPilotRMC
+  #   DCC: AU14JobGOVFORDCCRMC
+  #   SupportSynth: AU14JobGOVFORAuxSupportSynthRMC
   CompatibleDropships:
   - /Maps/_CMU14/Shuttles/alamo.yml
   - /Maps/_CMU14/Shuttles/lexingtonsmall.yml

@@ -3112,5 +3112,140 @@
   id: 249
   time: '2026-06-10T21:18:05.0000000+00:00'
   url: https://github.com/flex5hybrid/RussianCM/pull/233
+- author: Squagg
+  changes:
+  - message: Fixed constructed wall APCs disappearing when construction is completed.
+    type: Fix
+  - message: Fixed a client crash when placing wall APCs from the construction menu.
+    type: Fix
+  id: 239
+  time: '2026-06-10T16:32:34.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1283
+- author: johnnny34y
+  changes:
+  - message: Colony Working Joes no longer require engineer or janitor playtime.
+    type: Remove
+  id: 240
+  time: '2026-06-10T16:40:02.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1277
+- author: johnnny34y
+  changes:
+  - message: GOVFOR Working Joes no longer have CT and janitor playtime requirements.
+    type: Remove
+  id: 241
+  time: '2026-06-10T16:40:16.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1278
+- author: maertayn
+  changes:
+  - message: 'Added faction and IFF to VAI: comms tower can be tuned - VAI ambassador
+      also govfor+opfor factions'
+    type: Add
+  id: 242
+  time: '2026-06-10T23:52:50.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1287
+- author: maertayn
+  changes:
+  - message: Five straitjackets are temporarily available to MPs from their vendor
+    type: Add
+  id: 243
+  time: '2026-06-11T01:36:49.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1288
+- author: Evergreendev12
+  changes:
+  - message: New Factory job loop
+    type: Add
+  - message: Fixes chatsans
+    type: Add
+  - message: 'new map: hopes retreat by sunzu'
+    type: Add
+  - message: New Factory job loop
+    type: Add
+  id: 244
+  time: '2026-06-11T12:02:06.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1289
+- author: troytroy400
+  changes:
+  - message: CMU logo replaced with pride version for pride month.
+    type: Tweak
+  id: 245
+  time: '2026-06-11T17:10:13.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1293
+- author: troytroy400
+  changes:
+  - message: The USS George W. Bush now has solid fuel so the OB can be used.
+    type: Add
+  id: 246
+  time: '2026-06-11T17:38:05.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1294
+- author: UnicornOnLSD
+  changes:
+  - message: Monocular and it's advanced counterpart have proper inhands.
+    type: Add
+  id: 247
+  time: '2026-06-11T20:08:57.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1292
+- author: troytroy400
+  changes:
+  - message: Added Weapon Specialist.
+    type: Add
+  - message: Changed content of various special weapons kits to contain more ammunition
+      and a variety of other special items.
+    type: Tweak
+  id: 248
+  time: '2026-06-11T20:14:01.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1295
+- author: troytroy400
+  changes:
+  - message: Weapon Specialists icon now shows.
+    type: Fix
+  - message: Weapon Specialists now have access to govfor doors.
+    type: Fix
+  id: 249
+  time: '2026-06-11T21:14:45.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1296
+- author: UnicornOnLSD
+  changes:
+  - message: '? and ! no longer emote into "looks surprised" or "looks confused"'
+    type: Remove
+  id: 250
+  time: '2026-06-11T23:58:36.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1291
+- author: maertayn
+  changes:
+  - message: Fixed binocular delay regression from Vulture
+    type: Fix
+  - message: Missing jobs added to & job ordering/cleanup of CMU planets
+    type: Code
+  - message: Fixed loadouts for real this time
+    type: Fix
+  - message: Supply drop unusable by AuxTech - advisor/CO/SO receive legacy AA
+    type: Fix
+  - message: Chevron icon not hiding when unequipping uniform -
+    type: Fix
+  - message: Loreprimer not updating throughout rounds - showing xeno for aboms etc.
+    type: Fix
+  id: 251
+  time: '2026-06-12T01:53:54.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1297
+- author: maertayn
+  changes:
+  - message: Cultists can no longer move dead mobs unless they are either cultist
+      or xeno
+    type: Add
+  id: 252
+  time: '2026-06-12T02:59:05.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1298
+- author: maertayn
+  changes:
+  - message: Medical belt/bags are able to hold surgery tools (like the cautery)
+    type: Fix
+  - message: Used Hemo Gauze is tagged as Trash
+    type: Tweak
+  - message: Lights/airlocks no longer randomly break (part of colony engineering
+      loop) on Distress Signal
+    type: Fix
+  id: 253
+  time: '2026-06-12T04:23:44.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1299
 Name: CMU
 Order: -1

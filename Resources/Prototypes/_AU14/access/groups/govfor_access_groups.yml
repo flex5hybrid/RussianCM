@@ -11,8 +11,6 @@
   - AU14AccessGovforGunner
   - AU14AccessGovforPilot
   - AU14AccessGovforReq
-  - CMAccessBrig
-  - CMAccessArmory
 
 - type: accessGroup
   parent: AU14GovforCommand # NOTE: AA inheritance for MPs
@@ -27,6 +25,13 @@
 - type: accessGroup
   parent: AU14Govfor
   id: AU14GovforSquad
+
+- type: accessGroup
+  id: AU14GovforWeaponsSpecialist
+  tags:
+  - AU14AccessGovforSquadWeaponsSpecialist
+  - AU14AccessGovforSquad
+  - AU14AccessGovfor
 
 - type: accessGroup
   id: AU14GovforFTL

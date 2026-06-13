@@ -113,6 +113,9 @@
     soundHit:
       path: /Audio/Effects/lightburn.ogg
   - type: CMCautery
+  - type: Tag
+    tags:
+    - CMCautery
   - type: PhysicalComposition
     materialComposition:
       CMSteel: 5000
@@ -250,6 +253,7 @@
   - type: Tag
     tags:
     - CMCautery
+    - RMCScalpel
   - type: UseDelay
   - type: ItemToggleMeleeWeapon
     activatedDamage:

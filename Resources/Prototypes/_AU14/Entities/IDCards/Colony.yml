@@ -30,34 +30,6 @@
   - type: Corrodible
     isCorrodible: false
 
-# ├──[ COMMS TOWER FREQS ]───────────────────────────────────────────┤
-- type: entity
-  id: FactionCLF
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: IFFFaction
-  - type: FactionFrequencies
-    channels:
-    - radioCLF
-
-- type: entity
-  id: FactionCMB
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: IFFFaction
-  - type: FactionFrequencies
-    channels:
-    - radioCMB
-
-- type: entity
-  id: FactionWeYa
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: IFFFaction
-  - type: FactionFrequencies
-    channels:
-    - radioWEYU
-
 # ├──[ CLF & MOB ]───────────────────────────────────────────────────┤
 - type: entity
   parent: CMIDCardBase
@@ -181,7 +153,7 @@
     job: AU14JobCivilianScientist
   - type: ItemIFF
     factions:
-    - FactionWeYa
+    - FactionWEYU
 
 # ├──[ SYNTHS ]──────────────────────────────────────────────────────┤
 - type: entity
@@ -195,7 +167,7 @@
     factions:
     - FactionSurvivor
     - FactionCMB
-    - FactionWeYa
+    - FactionWEYU
 
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
@@ -255,7 +227,7 @@
     job: AU14JobCivilianCorporateLiaison
   - type: ItemIFF
     factions:
-    - FactionWeYa
+    - FactionWEYU
 
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
@@ -557,7 +529,7 @@
   name: NSPA constable ID card
   components:
   - type: PresetIdCard
-    job: AU14JobCiviliannspaConstable
+    job: AU14JobCivilianNSPAConstable
 
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF

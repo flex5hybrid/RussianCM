@@ -52,7 +52,12 @@
   name: tactical monocular
   description: A military-issued monocular.
   components:
+  # Start _CMU14
+  - type: Item 
+    heldPrefix: monocular
+  # End _CMU14
   - type: Sprite
+    sprite: _CMU14/Objects/Devices/monocular.rsi # _CMU14
     state: monocular
   - type: Scope
     zoomLevels:
@@ -146,7 +151,12 @@
   name: tactical monocular designator
   description: Two-mode tactical monocular, developed for use alongside CAS elements and orbital support. Click a tile to target something.
   components:
+  # Start _CMU14
+  - type: Item
+    heldPrefix: advanced_monocular
+  # End _CMU14
   - type: Sprite
+    sprite: _CMU14/Objects/Devices/advanced_monocular.rsi # _CMU14
     layers:
     - state: advanced_monocular
     - state: laser_cas_mono

@@ -1,0 +1,39 @@
+# ├──[ COLONY ]──────────────────────────────────────────────────────┤
+- type: entity
+  id: FactionCLF
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: IFFFaction
+  - type: FactionFrequencies
+    channels:
+    - radioCLF
+
+- type: entity
+  id: FactionCMB
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: IFFFaction
+  - type: FactionFrequencies
+    channels:
+    - radioCMB
+
+- type: entity
+  id: FactionWEYU
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: IFFFaction
+  - type: FactionFrequencies
+    channels:
+    - radioWEYU
+
+# ├──[ THIRD PARTIES ]───────────────────────────────────────────────┤
+- type: entity
+  id: FactionVAI
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: IFFFaction
+  - type: FactionFrequencies
+    channels:
+    - radioVAI
+
+# TODO: ICSCSOF, UASOF, TWESOF, UPPSOF, radioVAI, PART, Ambassadors/ThirdParty-callins

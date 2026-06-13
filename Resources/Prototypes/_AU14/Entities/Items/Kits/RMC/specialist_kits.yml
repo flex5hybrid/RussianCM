@@ -104,7 +104,7 @@
       - id: AU14L64A3SniperRifle
         amount: 1
       - id: AU14MagazineSniperL64A3
-        amount: 15
+        amount: 18
 
 - type: entity
   parent: RMCKitBase
@@ -128,15 +128,15 @@
       - id: AU14BeltMortarGrenadierRMC
         amount: 1
       - id: AU14Packet20MMGrenadeHERMCFilled
-        amount: 2
+        amount: 5
       - id: AU14Packet20MMGrenadeFragRMCFilled
-        amount: 2
+        amount: 5
       - id: AU14Packet20MMGrenadeIncendiaryRMCFilled
-        amount: 1
+        amount: 4
       - id: AU14Packet20MMGrenadeHoloRMCFilled
-        amount: 2
+        amount: 4
       - id: AU14Packet20MMGrenadeHESHRMCFilled
-        amount: 1
+        amount: 4
 
 - type: entity
   parent: BaseItem

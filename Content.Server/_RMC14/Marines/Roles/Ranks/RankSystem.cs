@@ -43,6 +43,8 @@ public sealed partial class RankSystem : SharedRankSystem
         ApplyJobRank(ev.Mob);
     }
 
+    public ProtoId<JobPrototype>? GetJobId(EntityUid mob) => _spawnData.TryGetValue(mob, out var ev) ? ev.JobId : null;
+
     public void ReapplyJobRank(EntityUid mob)
     {
         if (_spawnData.TryGetValue(mob, out var ev))

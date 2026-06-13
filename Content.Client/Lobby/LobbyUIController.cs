@@ -210,7 +210,7 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
         var (characterGui, profileEditor) = EnsureGui();
         characterGui.ReloadCharacterPickers();
         profileEditor.SetProfile(
-            (HumanoidCharacterProfile?) _preferencesManager.Preferences?.SelectedCharacter,
+            (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter,
             _preferencesManager.Preferences?.SelectedCharacterIndex);
     }
 
@@ -457,9 +457,10 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
         var job = jobProto ?? GetPreferredJob(profile);
         GiveDummyJobClothes(dummy, profile, job);
 
-        if (_prototypeManager.HasIndex<RoleLoadoutPrototype>(LoadoutSystem.GetJobPrototype(job.ID)))
+        var (key, proto) = LoadoutSystem.GetJobLoadoutInfo(job.ID, _prototypeManager);
+        if (proto != null)
         {
-            var loadout = profile.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, profile.Species, EntityManager, _prototypeManager);
+            var loadout = profile.GetLoadoutOrDefault(key, _playerManager.LocalSession, profile.Species, EntityManager, _prototypeManager);
             GiveDummyLoadout(dummy, loadout);
         }
     }
@@ -534,7 +535,8 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
             return;
 
         // Apply loadout
-        if (profile.Loadouts.TryGetValue(job.ID, out var jobLoadout))
+        var (key, _) = LoadoutSystem.GetJobLoadoutInfo(job.ID, _prototypeManager);
+        if (profile.Loadouts.TryGetValue(key, out var jobLoadout))
         {
             foreach (var loadouts in jobLoadout.SelectedLoadouts.Values)
             {
@@ -549,7 +551,7 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
                         // Try startinggear first
                         if (_prototypeManager.TryIndex(loadoutProto.StartingGear, out var loadoutGear))
                         {
-                            var itemType = ((IEquipmentLoadout) loadoutGear).GetGear(slot.Name);
+                            var itemType = ((IEquipmentLoadout)loadoutGear).GetGear(slot.Name);
 
                             if (_inventory.TryUnequip(dummy, slot.Name, out var unequippedItem, silent: true, force: true, reparent: false))
                             {
@@ -565,7 +567,7 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
                         }
                         else
                         {
-                            var itemType = ((IEquipmentLoadout) loadoutProto).GetGear(slot.Name);
+                            var itemType = ((IEquipmentLoadout)loadoutProto).GetGear(slot.Name);
 
                             if (_inventory.TryUnequip(dummy, slot.Name, out var unequippedItem, silent: true, force: true, reparent: false))
                             {
@@ -591,10 +593,10 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
 
         foreach (var slot in slots)
         {
-            var itemType = ((IEquipmentLoadout) gear).GetGear(slot.Name);
+            var itemType = ((IEquipmentLoadout)gear).GetGear(slot.Name);
 
             if (itemType == string.Empty && dummyGear != null)
-                itemType = ((IEquipmentLoadout) dummyGear).GetGear(slot.Name);
+                itemType = ((IEquipmentLoadout)dummyGear).GetGear(slot.Name);
 
             if (_inventory.TryUnequip(dummy, slot.Name, out var unequippedItem, silent: true, force: true, reparent: false))
             {
@@ -664,9 +666,10 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
 
             GiveDummyJobClothes(dummyEnt, humanoid, job);
 
-            if (_prototypeManager.HasIndex<RoleLoadoutPrototype>(LoadoutSystem.GetJobPrototype(job.ID)))
+            var (key, proto) = LoadoutSystem.GetJobLoadoutInfo(job.ID, _prototypeManager);
+            if (proto != null)
             {
-                var loadout = humanoid.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, humanoid.Species, EntityManager, _prototypeManager);
+                var loadout = humanoid.GetLoadoutOrDefault(key, _playerManager.LocalSession, humanoid.Species, EntityManager, _prototypeManager);
                 GiveDummyLoadout(dummyEnt, loadout);
             }
         }

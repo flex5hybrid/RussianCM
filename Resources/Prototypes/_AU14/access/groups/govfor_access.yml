@@ -7,6 +7,10 @@
   name: Govfor Squad
 
 - type: accessLevel
+  id: AU14AccessGovforSquadWeaponsSpecialist
+  name: Govfor Squad WS
+
+- type: accessLevel
   id: AU14AccessGovforCommand
   name: Govfor Command
 

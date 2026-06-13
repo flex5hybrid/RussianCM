@@ -14,6 +14,7 @@
   canBeAntag: false
   accessGroups:
   - AU14GovforSecurity
+  - aulegacygroupmilp # NOTE: should remove & hard migrate
 
 - type: job
   abstract: true
@@ -28,7 +29,7 @@
     - NonResuscitable
     - Epilepsy
   ranks:
-  RMCRankCivilian: []
+    RMCRankCivilian: []
   chevrons:
     RMCRankGunnerySergeant:
       entity: AU14ChevronUSCMGunnerySergeant

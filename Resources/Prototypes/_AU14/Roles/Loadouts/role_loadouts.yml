@@ -1,4 +1,4 @@
-# colony
+# ├──[ colony ]──────────────────────────────────────────────────────┤
 - type: roleLoadout
   id: JobAU14JobCivilianColonist
   points: 7
@@ -215,20 +215,6 @@
   - SmokablesRMC
 
 - type: roleLoadout
-  id: JobAU14JobCivilianScientist
-  points: 7
-  groups:
-  - MedGlovesAU14
-  - MedMaskAU14
-  - ScientistPouchAU14
-  - ScientistPouchRightAU14
-  - MedBackpackAU14
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-
-- type: roleLoadout
   id: JobAU14JobCivilianUSASFRecruiter
   points: 7
   groups:
@@ -242,23 +228,7 @@
   - CannedDrinksAU14
   - SmokablesRMC
 
-# sec off
-
-- type: roleLoadout
-  id: JobAU14JobWYGuard
-  points: 7
-  groups:
-  - PaperworkRMC
-  - WYGuardJumpsuitAU14
-  - WYGuardLeftPouchAU14
-  - WYGuardRightPouchAU14
-  - WYGuardHeadwearAU14
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-
-# liaison
-
+# ├──[ corporate ]───────────────────────────────────────────────────┤
 - type: roleLoadout
   id: JobAU14JobCivilianCorporateLiaison
   points: 7
@@ -274,6 +244,16 @@
   - SmokablesRMC
 
 - type: roleLoadout
+  id: JobAU14JobCivilianLaselleLiaison
+  points: 7
+  groups:
+  - CivSatchelAU14
+  - PaperworkRMC
+  - RecreationalRMC
+  - CannedDrinksAU14
+  - SmokablesRMC
+
+- type: roleLoadout
   id: JobAU14JobCivilianCorporateAssistant
   points: 7
   groups:
@@ -284,16 +264,33 @@
   - SmokablesRMC
 
 - type: roleLoadout
-  id: JobAU14JobCivilianLaselleLiaison
+  id: JobAU14JobWYGuard
   points: 7
   groups:
-  - CivSatchelAU14
+  - PaperworkRMC
+  - WYGuardJumpsuitAU14
+  - WYGuardLeftPouchAU14
+  - WYGuardRightPouchAU14
+  - WYGuardHeadwearAU14
+  - RecreationalRMC
+  - CannedDrinksAU14
+  - SmokablesRMC
+
+- type: roleLoadout
+  id: JobAU14JobCivilianScientist
+  points: 7
+  groups:
+  - MedGlovesAU14
+  - MedMaskAU14
+  - ScientistPouchAU14
+  - ScientistPouchRightAU14
+  - MedBackpackAU14
   - PaperworkRMC
   - RecreationalRMC
   - CannedDrinksAU14
   - SmokablesRMC
 
-# COS
+# ├──[ COS ]─────────────────────────────────────────────────────────┤
 - type: roleLoadout
   id: JobAU14JobCivilianColonySynthetic
   points: 7
@@ -314,8 +311,7 @@
   - CannedDrinksAU14
   - SmokablesRMC
 
-# orbital
-
+# ├──[ orbital ]─────────────────────────────────────────────────────┤
 - type: roleLoadout
   id: JobAU14JobColonyPilot
   points: 7
@@ -325,7 +321,6 @@
   - RecreationalRMC
   - CannedDrinksAU14
   - SmokablesRMC
-
 
 - type: roleLoadout
   id: JobAU14JobCivilianOrbitalManager
@@ -347,8 +342,7 @@
   - CannedDrinksAU14
   - SmokablesRMC
 
-# ambassadors
-
+# ├──[ ambassadors ]─────────────────────────────────────────────────┤
 - type: roleLoadout
   id: JobAU14JobCivilianAmbassadorICSC
   points: 7
@@ -399,8 +393,7 @@
   - CannedDrinksAU14
   - SmokablesRMC
 
-# CLF
-
+# ├──[ CLF ]─────────────────────────────────────────────────────────┤
 - type: roleLoadout
   id: JobAU14JobCLFCellLeader
   points: 7
@@ -461,241 +454,6 @@
   - MedPouchAU14
   - MedPouchRightAU14
   - ForceMedEssentialAU14
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-
-# military
-# govfor
-- type: roleLoadout
-  id: JobAU14JobGOVFORMilitaryDoctor
-  points: 7
-  groups:
-  - GOVFORDoctorEquipmentAU14
-  - GOVFORDoctorUniformAU14
-  - MedJacketMilitaryAU14
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-
-- type: roleLoadout
-  id: JobAU14JobGOVFORadvisor
-  points: 7
-  groups:
-  - MarineBackpack
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-  - WeaponsRMC
-
-- type: roleLoadout
-  id: JobAU14JobGOVFORPlatCo
-  points: 7
-  groups:
-  - MarineBackpack
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-  - GOVFORPlatCOSidearmBeltAU14
-
-- type: roleLoadout
-  id: JobAU14JobGOVFORPlatoonCorpsman
-  points: 7
-  groups:
-  - MarineBackpack
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-
-- type: roleLoadout
-  id: JobAU14JobGOVFORDCC
-  points: 7
-  groups:
-  - MarineBackpack
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-
-- type: roleLoadout
-  id: JobAU14JobGOVFORPlatOp
-  points: 7
-  groups:
-  - MarineBackpack
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-  - WeaponsRMC
-
-- type: roleLoadout
-  id: JobAU14JobGOVFORDSPilot
-  points: 7
-  groups:
-  - MarineBackpack
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-  - WeaponsRMC
-
-- type: roleLoadout
-  id: JobAU14JobGOVFORRadioTelephoneOperator
-  points: 7
-  groups:
-  - MarineBackpack
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-
-- type: roleLoadout
-  id: JobAU14JobGOVFORSectionSergeant
-  points: 7
-  groups:
-  - MarineBackpack
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-
-- type: roleLoadout
-  id: JobAU14JobGOVFORSquadAutomaticRifleman
-  points: 7
-  groups:
-  - MarineBackpack
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-
-- type: roleLoadout
-  id: JobAU14JobGOVFORSquadCombatTech
-  points: 7
-  groups:
-  - MarineBackpack
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-
-- type: roleLoadout
-  id: JobAU14JobGOVFORSquadRifleman
-  points: 7
-  groups:
-  - MarineBackpack
-  - EyewearRMC
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-
-- type: roleLoadout
-  id: JobAU14JobGOVFORSquadSergeant
-  points: 7
-  groups:
-  - MarineBackpack
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
-  - PaperworkRMC
-  - RecreationalRMC
-  - CannedDrinksAU14
-  - SmokablesRMC
-  - WeaponsRMC
-
-# synthetic
-# govfor/opfor
-- type: roleLoadout
-  id: JobAU14JobGOVFORAuxSupportSynth
-  points: 7
-  groups:
-  - GOVFORSynthSpecializationAU14
-  - SynthBackpackAU14
-  - SynthBeltAU14
-  - SynthPouchesLeftAU14
-  - SynthPouchesRightAU14
-  - SynthGlovesAU14
-  - SynthHeadwearAU14
-  - SynthGlassesAU14
-  - SynthUniformAU14
-  - SynthUniformAccessoriesRMC
-  - SynthSuitAU14
-  - SynthSuitSpecialAU14
-  - SynthEquipmentAU14
-  - SynthShoesRMC
-  - SynthMasksAU14
-  - PaperworkRMC
-  - RecreationalRMC
-  - HelmetGarbsRMC
-  - SmokablesRMC
-  - ForceStampApprovedAU14
-  - ForceSynthResetKeyAU14
-  - SynthAccesoriesSpecialAU14
-
-- type: roleLoadout
-  id: JobAU14JobGOVFORAuxTech
-  points: 7
-  groups:
-  - GOVFORAuxTechClothingAU14
-  - MarineBackpack
-  - EyewearRMCPVE
-  - MasksRMCPVE
-  - HeadwearRMCPVE
-  - HelmetGarbsRMCPVE
   - PaperworkRMC
   - RecreationalRMC
   - CannedDrinksAU14

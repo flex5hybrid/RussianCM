@@ -697,60 +697,122 @@
       orGroup: ShellThree
 
 - type: entity
-  parent: RMCGunCaseBase
+  parent: RMCBaseEquipmentCase
   id: RMCMK481ShotgunCase
-  name: MK481 heavy shotgun case
+  name: heavy shotgunner equipment case
   description: A gun case containing an MK481 heavy shotgun, a box of high-dispersive shock grenades, and a box of buckshot shells.
   components:
   - type: Storage
     maxItemSize: Huge
     grid:
-    - 0,0,5,1 # 6 slots
-    whitelist:
-      tags:
-      - RMCWeaponShotgunMK481
-      - RMCBoxShotgunHDSG
-      - RMCBoxShotgunShells
+    - 0,0,21,3
   - type: StorageFill
     contents:
     - id: RMCWeaponShotgunMK481
     - id: RMCBoxShotgunHDSG
+      amount: 6
+    - id: RMCBoxShotgunSlugs
+      amount: 4
     - id: RMCBoxShotgunBuckshot
+      amount: 4
+    - id: RMCBoxShotgunFlechette
+      amount: 4
 
 - type: entity
-  parent: RMCGunCaseBase
+  parent: RMCBaseEquipmentCase
+  id: AU14HAZOPSShotgunCase
+  name: heavy shotgunner equipment case
+  description: A gun case containing an spas-12 shotgun.
+  components:
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,21,3
+  - type: StorageFill
+    contents:
+    - id: AU14WeaponShotgunSPAS12HAZOPS
+    - id: RMCBoxShotgunSlugs
+      amount: 6
+    - id: RMCBoxShotgunBuckshot
+      amount: 6
+    - id: RMCBoxShotgunFlechette
+      amount: 6
+
+- type: entity
+  parent: RMCBaseEquipmentCase
   id: RMCM707VultureCase
-  name: M707 anti-materiel rifle case
+  name: M707 vulture rifle equipment case
   description: A gun case containing the M707 "Vulture" anti-materiel rifle, a spotter kit, and two instructional pamphlets.
   components:
   - type: Storage
     maxItemSize: Huge
     grid:
-    - 0,0,10,1 # 11 slots
-    whitelist:
-      tags:
-      - RMCWeaponSniperM707Vulture
-      - RMCMagazineSniperM707Vulture
-      - RMCVultureBarrel
-      - RMCVultureScope
-      - RMCVultureBipod
-      - RMCVultureStock
-      - RMCVultureSpotter
-      - Screwdriver
-      - RMCSkillPamphlet
+    - 0,0,21,3
   - type: StorageFill
     contents:
     - id: RMCWeaponSniperM707VultureCase
-    - id: RMCMagazineSniperM707Vulture
     - id: RMCVultureBarrel
     - id: RMCVultureScope
     - id: RMCVultureBipod
     - id: RMCVultureStock
-    - id: RMCVultureSpotterTripod
-    - id: RMCVultureSpotterScope
-    - id: CMScrewdriver
+    - id: RMCMagazineSniperM707Vulture
+      amount: 12
+    - id: CMGlassesM42ScoutSight
+    - id: CMBackpackSniper
+    - id: RMCScoutShoes
     - id: RMCPamphletVulture
-      amount: 2
+    - id: AU14KitSpotterM707
+  - type: IgnoreContentsSize
+    items:
+      tags:
+      - AU14KitSpotterM707
+
+- type: entity
+  parent: RMCKitSpotter
+  id: AU14KitSpotterM707
+  name: M707 spotter kit
+  components:
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,11,1
+  - type: StorageFill
+    contents:
+    - id: RMCVultureSpotterScope
+    - id: RMCVultureSpotterTripod
+    - id: CMScrewdriver
+    - id: RMCScoutShoes
+    - id: CMBackpackSniper
+    - id: CMGlassesM42ScoutSight
+    - id: RMCPamphletVulture
+  - type: Tag
+    tags:
+    - AU14KitSpotterM707
+
+- type: entity
+  parent: RMCKitSpotter
+  id: AU14KitSpotter
+  name: spotter kit
+  components:
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,11,1
+  - type: StorageFill
+    contents:
+    - id: RMCLaserDesignatorSpotter
+    - id: RMCScoutShoes
+    - id: CMBackpackSniper
+    - id: CMGlassesM42ScoutSight
+  - type: Tag
+    tags:
+    - AU14KitSpotter
+
+- type: Tag
+  id: AU14KitSpotter
+
+- type: Tag
+  id: AU14KitSpotterM707
 
 # Launchers
 # M85A1

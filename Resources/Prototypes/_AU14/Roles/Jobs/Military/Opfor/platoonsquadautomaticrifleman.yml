@@ -20,7 +20,7 @@
       - OPFOR
     - type: NpcFactionMember
       factions:
-       - OPFOR
+      - OPFOR
     - type: TacticalMapIcon
       icon:
         sprite: /Textures/_AU14/Interface/au14opforhud.rsi

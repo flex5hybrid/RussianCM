@@ -288,12 +288,6 @@
     {
       "name": "u_rangefinder_eyes-inhand-left",
       "directions": 4
-    },
-    {
-      "name": "monocular"
-    },
-    {
-      "name": "advanced_monocular"
     }
   ]
 }

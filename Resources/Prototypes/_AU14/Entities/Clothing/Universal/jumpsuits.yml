@@ -6,3 +6,16 @@
   components:
   - type: Sprite
     sprite: _AU14/Clothing/blackfatigues.rsi
+
+- type: entity
+  parent: ClothingOuterStraightjacket
+  id: AU14ClothingOuterStraitjacket
+  name: straitjacket
+  suffix: AU14
+  components:
+  - type: Handcuff
+    cuffedRSI: Clothing/OuterClothing/Misc/straight_jacket.rsi
+    breakoutTime: 100
+    cuffTime: 7
+    uncuffTime: 7
+    stunBonus: 3

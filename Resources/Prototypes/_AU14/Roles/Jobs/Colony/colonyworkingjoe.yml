@@ -14,6 +14,8 @@
   icon: "AU14JobIconColonyWorkingJoe"
   spawnMenuRoleName: Working Joe (Colony)
   supervisors: au14-job-supervisors-workingjoe-colony
+  startingGear: AU14GearColonyWorkingJoe
+  dummyStartingGear: AU14GearColonyWorkingJoe
   usePlayerProfile: false
   hasIcon: false
   accessGroups:
@@ -42,10 +44,6 @@
       - Colonist
       - AUPrisonStaff
       - auwy
-    - type: Loadout
-      prototypes: [ AU14GearColonyWorkingJoe ]
-  dummyStartingGear: AU14GearColonyWorkingJoe
-  hidden: false
 
 - type: startingGear
   parent: AU14GearWorkingJoeBase

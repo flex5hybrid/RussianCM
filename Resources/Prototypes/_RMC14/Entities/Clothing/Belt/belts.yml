@@ -412,19 +412,20 @@
       - Flare
       - RMCMiniTank
       # New Med
-      - CMBoneSaw
-      - CMSurgicalDrill
-      - CMCautery
-      - RMCScalpel
-      - CMBoneSetter
-      - CMRetractor
+      # - CMRetractor
+      # - CMHemostat
+      # - CMBoneSaw
+      # - CMCautery
+      # - CMSurgicalDrill
+      # - RMCScalpel
+      # - CMBoneSetter
+      # - CMBoneGel
+      - CMUBoneGraft
       - CMUCastItem
       - CMUOrganClamp
-      - CMHemostat
       - CMUSplintItem
-      - CMUBoneGraft
-      - CMBoneGel
       components:
+      - CMSurgeryTool # catch-all for above commented out NewMed tags
       - Hypospray
       - Defibrillator
       - Pill

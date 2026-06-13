@@ -978,6 +978,9 @@
   - type: Sprite
     sprite: _AU14/Items/quickclot.rsi
     state: qc_ripped
+  - type: Tag
+    tags:
+    - Trash
   - type: Item
     sprite: _AU14/Items/quickclot.rsi
     inhandVisuals:

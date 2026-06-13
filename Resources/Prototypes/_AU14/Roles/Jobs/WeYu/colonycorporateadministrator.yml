@@ -98,6 +98,9 @@
   - auwy
   - Colonist
   - AUPrisonStaff
+  - auadmin
+  - CMCargoTech
+  - auheadsofcolony
   access:
   - AU14AccessCorporateWEYULiaison
   roleWeight: 0.25

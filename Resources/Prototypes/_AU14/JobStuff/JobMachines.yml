@@ -60,13 +60,12 @@
     probability: 100
   - type: SubmissionStorage
     rewards:
-      # RuCM price-upd
-      SteelOre: 100
-      AUwood: 25
-      Vegetable: 10
-      Fruit: 20
-      CottonBoll: 15
-      CMUGrain: 15
+      SteelOre: 5
+      AUwood: 20
+      Vegetable: 1
+      Fruit: 2
+      CottonBoll: 2
+      CMUGrain: 2
   - type: ContainerContainer
     containers:
       submission: !type:Container

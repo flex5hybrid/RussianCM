@@ -951,9 +951,9 @@
         amount: 1
 
 - type: entity
-  parent: ColMarTechBase
+  parent: AU14SpecVend
   id: AU14RMCSpecialWeaponsVendor
-  name: Royal Marines special weapons rack
+  name: Royal Marines weapons specialist rack
   description: >-
     An automated special weapons rack, hooked up to a restricted armory of Royal Marine Commandos heavy and breaching ordnance.
     Standard issue only for qualified operators.
@@ -961,73 +961,37 @@
 
     Special weapons protocol: one weapon system of choice with a full ammunition loadout and explosives.
   components:
-  - type: AccessReader
-    access: [ [ "AU14AccessGovforSquad" ], [ "AU14AccessOpforSquad" ] ]
-  - type: Sprite
-    sprite: _AU14/Structures/Vendors/genericweaponrack.rsi
   - type: CMAutomatedVendor
     sections:
-    - name: M240 Incinerator
-      entries:
-      - id: RMCWeaponFlamer
-        amount: 1
-      - id: RMCAttachmentUnderbarrelExtinguisher
-        amount: 1
-      - id: RMCPVECaseFlamerFuel
-        amount: 2
-      - id: RMCBackpackFlamer
-        name: G4-1 fueltank
-        amount: 1
-    - name: Marksman kit
+    - name: Weapons Specialist Sets
+      takeOne: SquadSpecKit
+      sharedSpecLimit: 1
       entries:
       - id: AU14KitRMCMarksmanL64A3
-        amount: 1
         giveSquadRoleName: au14-job-name-govforspecialist-marksmanRMC
         givePrefix: au14-job-prefix-govforspecialist-marksmanRMC
+        isAppendSquadRoleName: false
         isAppendPrefix: true
-        isAppendSquadRoleName: true
-      - id: AU14MagazineSniperL64A3
-        amount: 18
-    - name: Pointman kit
-      entries:
       - id: AU14KitRMCPointmanL23B
-        amount: 1
         giveSquadRoleName: au14-job-name-govforspecialist-pointmanRMC
         givePrefix: au14-job-prefix-govforspecialist-pointmanRMC
+        isAppendSquadRoleName: false
         isAppendPrefix: true
-        isAppendSquadRoleName: true
-      - id: RMCMagazineRifleL24
-        amount: 14
-      - id: RMCBoxShotgunBuckshot
-        amount: 8
-    - name: Sapper kit
-      entries:
       - id: AU14KitRMCMarksmanL164A3
-        amount: 1
         giveSquadRoleName: au14-job-name-govforspecialist-grenadierRMC
         givePrefix: au14-job-prefix-govforspecialist-grenadierRMC
+        isAppendSquadRoleName: false
         isAppendPrefix: true
-        isAppendSquadRoleName: true
-      - id: AU14Packet20MMGrenadeFragRMCFilled
-        amount: 3
-      - id: AU14Packet20MMGrenadeHERMCFilled
-        amount: 4
-      - id: AU14Packet20MMGrenadeHoloRMCFilled
-        amount: 2
-      - id: AU14Packet20MMGrenadeIncendiaryRMCFilled
-        amount: 1
-      - id: AU14Packet20MMGrenadeHESHRMCFilled
-        amount: 1
-    - name: Shoulder-Launched Multipurpose Assault Weapon
-      entries:
-      - id: RMCWeaponLauncherM5ATL
-        amount: 1
-      - id: RMCRocket84mmAntiArmor
-        amount: 15
-      - id: RMCRocket84mm
-        amount: 7
-      - id: AU14BackpackRockets
-        amount: 2
+      - id: RMCSharpSpecEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sharp
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sharp
+        isAppendPrefix: true
+      - id: RMCM707VultureCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sniper
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sniper
+        isAppendPrefix: true
 
 # AirCrew Weapons
 - type: entity

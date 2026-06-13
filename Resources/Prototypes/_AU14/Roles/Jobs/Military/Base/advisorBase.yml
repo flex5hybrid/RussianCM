@@ -14,6 +14,7 @@
   canBeAntag: false
   accessGroups:
   - AU14GovforCommand
+  - aulegacygroupcommand
 
 - type: job
   abstract: true
@@ -70,9 +71,8 @@
   equipment:
     id: AU14IDCardSquadAdvisor
     ears: AU14HeadsetGovforCommand
-    back: AU14SatchelMarineAdvisorMilitary
-  inhand:
-    -  AU14StampSEA
+    back: AU14SatchelMarineAdvisorMilitary # removed by ImaginaryFriend
+    pocket1: AU14StampSEA # removed by ImaginaryFriend
 
 - type: startingGear
   id: AU14GearGOVFORadvisorDummy

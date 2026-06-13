@@ -166,6 +166,7 @@
       - Dropper
       - GlassBeaker
       - Bottle
+      - PillPacket
       - PillCanister
       - Syringe
       - CMSurgicalLine
@@ -186,22 +187,17 @@
       - CigPack
       - RMCPenlight
       - Flare
-      - CMBoneSaw
-      - CMSurgicalDrill
-      - CMCautery
-      - RMCScalpel
-      - CMBoneSetter
-      - CMRetractor
+      - CMUBoneGraft
       - CMUCastItem
       - CMUOrganClamp
-      - CMHemostat
       - CMUSplintItem
-      - CMUBoneGraft
-      - CMBoneGel
       components:
+      - CMSurgeryTool
       - Hypospray
       - Defibrillator
       - Pill
+      - RMCHandLabeler
+      - RMCStethoscope
       - RMCLighter
   - type: FixedItemSizeStorage
   - type: IgnoreContentsSize

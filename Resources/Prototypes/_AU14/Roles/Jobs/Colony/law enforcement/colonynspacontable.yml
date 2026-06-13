@@ -1,6 +1,6 @@
 - type: job
   parent: AU14JobLEOBase
-  id: AU14JobCiviliannspaConstable
+  id: AU14JobCivilianNSPAConstable
   name: au14-job-name-civiliannspaConstable
   description: au14-job-description-civiliannspaConstable
   setPreference: true
@@ -82,6 +82,6 @@
   name: Spawn Point Civilian nspa Constable
   components:
   - type: SpawnPoint
-    job_id: AU14JobCiviliannspaConstable
+    job_id: AU14JobCivilianNSPAConstable
   - type: Sprite
     state: syn_spawn

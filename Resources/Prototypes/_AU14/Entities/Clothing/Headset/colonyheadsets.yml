@@ -157,7 +157,7 @@
   - type: RMCHeadset
     channels:
     - UASOF
-    - VAI
+    - radioVAI
 
 - type: entity
   parent: AU14ColonyAdminHeadset

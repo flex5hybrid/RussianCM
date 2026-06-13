@@ -771,9 +771,9 @@
       - id: RMCAttachmentRailFlashlight
 
 - type: entity
-  parent: ColMarTechBase
+  parent: AU14SpecVend
   id: AU14WYSpecialWeaponsVendor
-  name: We-Yu PMC special weapons rack
+  name: We-Yu PMC weapons specialist rack
   description: >-
     An automated special weapons rack, hooked up to a restricted armory of Weyland-Yutani PMC heavy and breaching ordnance.
     Standard issue only for qualified operators.
@@ -781,42 +781,47 @@
 
     Special weapons protocol: one weapon system of choice with a full ammunition loadout and explosives.
   components:
-  - type: AccessReader
-    access: [ [ "AU14AccessGovforSquad" ], [ "AU14AccessOpforSquad" ] ]
-  - type: Sprite
-    sprite: _AU14/Structures/Vendors/genericweaponrack.rsi
   - type: CMAutomatedVendor
     sections:
-    - name: M890 Shotgun
+    - name: Weapons Specialist Sets
+      takeOne: SquadSpecKit
+      sharedSpecLimit: 1
       entries:
-      - id: WeaponShotgunM890
-        amount: 1
-      - id: RMCBoxShotgunBuckshot8g
-        amount: 12
-      - id: RMCBoxShotgunSlugs
-        amount: 12
-    - name: NSG 23 Assault Rifle
-      entries:
-      - id: RMCWeaponRifleSSG45NoLock
-        amount: 1
-      - id: RMCMagazineRifleSSG45
-        amount: 26
-      - id: RMCMagazineRifleSSG45Extended
-        amount: 2
-      - id: RMCMagazineRifleSSG45AP
-        amount: 2
-    - name: M5RA/2 battle rifle
-      entries:
-      - id: RMCPVECaseM5SPR2
-        amount: 2
-      - id: RMCAttachmentS5RedDotSight
-        amount: 2
-      - id: RMCAttachmentFlashlightGrip
-        amount: 2
-      - id: RMCAttachmentExtendedBarrel
-        amount: 2
-      - id: CMMagazineRifleM4SPR
-        amount: 36
+      - id: RMCGrenadeSpecEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-grenadier
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-grenadier
+        isAppendPrefix: true
+      - id: RMCSharpSpecEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sharp
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sharp
+        isAppendPrefix: true
+      - id: AU14ScoutSpecEquipmentCaseWeYu
+        giveSquadRoleName: rmc-job-name-weapons-specialist-scout
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-scout
+        isAppendPrefix: true
+      - id: CMSniperEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sniper
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sniper
+        isAppendPrefix: true
+      - id: RMCAntiMaterielEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-anti-materiel-sniper
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-anti-materiel-sniper
+        isAppendPrefix: true
+      - id: RMCM707VultureCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sniper
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sniper
+        isAppendPrefix: true
+      - id: RMCMK481ShotgunCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-shotgunner
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-shotgunner
+        isAppendPrefix: true
 
 - type: entity
   parent: ColMarTechCargo

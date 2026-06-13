@@ -11,8 +11,6 @@
   - AU14AccessOpforGunner
   - AU14AccessOpforPilot
   - AU14AccessOpforReq
-  - CMAccessBrig
-  - CMAccessArmory
 
 - type: accessGroup
   parent: AU14OpforCommand

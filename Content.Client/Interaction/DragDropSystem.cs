@@ -203,10 +203,13 @@ public sealed partial class DragDropSystem : SharedDragDropSystem
         }
 
         var ev = new CanDragEvent();
-
         RaiseLocalEvent(entity, ref ev);
-
         if (ev.Handled != true)
+            return false;
+
+        var startEv = new CanStartDragEvent(dragger, entity);
+        RaiseLocalEvent(dragger, ref startEv);
+        if (startEv.Cancelled)
             return false;
 
         _draggedEntity = entity;

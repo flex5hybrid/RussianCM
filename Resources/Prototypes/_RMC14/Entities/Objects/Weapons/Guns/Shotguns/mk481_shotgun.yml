@@ -2,7 +2,7 @@
   parent: [ RMCBaseWeaponShotgun, RMCBaseAttachableHolder ]
   id: RMCWeaponShotgunMK481
   name: MK481 heavy shotgun
-  description: The bulky MK481, known to many as "the broomstick", is an aging relic within the UNMC arsenal. The pump-action system can chamber standard 12 gauge shotgun shells or 18.5mm high-dispersive shock grenades.
+  description: The bulky MK481, known to many as "the broomstick", is an aging relic within the USCMC arsenal. The pump-action system can chamber standard 12 gauge shotgun shells or 18.5mm high-dispersive shock grenades.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/mk481/mk481_inhands.rsi

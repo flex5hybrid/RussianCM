@@ -7,11 +7,11 @@
   components:
   - type: SubmissionStorage
     rewards:
-      SalvageTier1: 2
-      SalvageTier2: 4
-      SalvageTier3: 6
-      SalvageTier4: 8
-      SalvageTier5: 10
+      SalvageTier1: 6
+      SalvageTier2: 12
+      SalvageTier3: 18
+      SalvageTier4: 24
+      SalvageTier5: 30
   - type: DisposalUnit
     whitelist:
       tags:

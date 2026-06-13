@@ -85,7 +85,7 @@
     state: corporate_liaison
   - type: ItemIFF
     factions:
-    - FactionWeYa
+    - FactionWEYU
     - FactionMarine
   - type: PresetIdCard
     job: CMLiaison
@@ -101,7 +101,7 @@
     state: pmc
   - type: ItemIFF
     factions:
-    - FactionWeYa
+    - FactionWEYU
 
 - type: entity
   parent: CMIDCardPMC
@@ -123,7 +123,7 @@
     state: pmc
   - type: ItemIFF
     factions:
-    - FactionWeYa
+    - FactionWEYU
   - type: PresetIdCard
     job: CMLiaison
 
@@ -134,7 +134,7 @@
   components:
   - type: ItemIFF
     factions:
-    - FactionWeYa
+    - FactionWEYU
     - FactionSurvivor
   - type: PresetIdCard
     job: CMSurvivorCorporate
@@ -227,7 +227,7 @@
   components:
   - type: ItemIFF
     factions:
-    - FactionWeYa
+    - FactionWEYU
   - type: Access
     groups:
     - Colony

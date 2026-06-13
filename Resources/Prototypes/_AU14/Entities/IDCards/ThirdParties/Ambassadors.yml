@@ -1,0 +1,11 @@
+# ├──[ THIRD PARTY AMBASSADORS ]─────────────────────────────────────┤
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardUAAmbassador
+  name: UA ambassador ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobCivilianAmbassadorUA
+  - type: ItemIFF
+    factions:
+    - FactionVAI

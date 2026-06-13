@@ -203,6 +203,15 @@
   color: "#d39d22"
   longRange: true
 
+# ├──[ MISCELLANEOUS ]───────────────────────────────────────────────┤
+- type: radioChannel
+  id: ColonyHandheld
+  name: chat-radio-colony-softwave
+  keycode: 'ñ' # unused - handhelds broadcast without key
+  frequency: 1461
+  color: "#a6cf40"
+  longRange: true
+
 # ├──[ THIRD PARTY ]─────────────────────────────────────────────────┤
 - type: radioChannel
   id: Hivemind
@@ -249,7 +258,7 @@
   tower: true
 
 - type: radioChannel
-  id: VAI
+  id: radioVAI
   name: chat-radio-vai
   keycode: "с"
   frequency: 1559

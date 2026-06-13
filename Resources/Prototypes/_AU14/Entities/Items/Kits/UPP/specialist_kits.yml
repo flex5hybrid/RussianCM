@@ -20,11 +20,11 @@
       - id: AU14SatchelDemoSpecUPP
         amount: 1
       - id: RMCRocketHJRA12AT
-        amount: 2
+        amount: 5
       - id: RMCRocketHJRA12HE
-        amount: 1
+        amount: 9
       - id: RMCRocketHJRA12Incen
-        amount: 1
+        amount: 5
 
 - type: entity
   parent: RMCKitBase
@@ -46,7 +46,7 @@
       - id: RMCType88SniperRifle
         amount: 1
       - id: RMCMagazineSniperType88
-        amount: 8
+        amount: 15
 
 - type: entity
   parent: RMCKitBase
@@ -68,11 +68,11 @@
       - id: RMCWeaponShotgunType23
       - id: RMCAttachmentType23Stock
       - id: RMCBoxShotgunHeavyBuckshot
-        amount: 2
+        amount: 8
       - id: RMCBoxShotgunHeavyFlechette
-        amount: 2
+        amount: 8
       - id: RMCBoxShotgunHeavySlugs
-        amount: 2
+        amount: 8
 
 - type: entity
   parent: RMCKitBase
@@ -99,3 +99,33 @@
       - id: RMCTankFlamerSPP
       - id: RMCTankFlamerSPP
       - id: RMCBackpackFlamer
+      - id: RMCAttachmentUnderbarrelExtinguisherSpec
+      - id: RMCPouchFuelTankFilledExtinguisher
+
+- type: entity
+  parent: RMCKitBase
+  id: AU14KitHAZOPSPyroM240A2
+  name: Heavy Pyrotechnician M240A2 Kit
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Storage
+    maxItemSize: Ginormous
+    grid:
+    - 0,0,13,1
+  - type: Sprite
+    sprite: _RMC14/Objects/Storage/procase_mini.rsi
+  - type: Icon
+    sprite: _RMC14/Objects/Storage/procase_mini.rsi
+  - type: StorageFill
+    contents:
+    - id: AU14WeaponFlamerM240A2HAZOPS
+    - id: AU14TankFlamerM240A2HAZOPS
+    - id: AU14TankFlamerM240A2HAZOPS
+    - id: AU14TankFlamerM240A2HAZOPS
+    - id: AU14TankFlamerM240A2HAZOPS
+    - id: AU14TankFlamerM240A2HAZOPS
+    - id: AU14TankFlamerM240A2HAZOPS
+    - id: AU14TankFlamerM240A2HAZOPS
+    - id: RMCBackpackFlamer
+    - id: RMCPouchFuelTankFilledExtinguisher

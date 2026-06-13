@@ -277,9 +277,9 @@
       - id: RMCAttachmentTwoPointSling
 
 - type: entity
-  parent: ColMarTechBase
+  parent: AU14SpecVend
   id: AU14HAZOPSSpecialWeaponsVendor
-  name: HAZOPS special weapons rack
+  name: HAZOPS weapons specialist rack
   description: >-
     An automated special weapons rack, hooked up to a restricted armory of Hazardous Operations heavy and breaching ordnance of the Marine Special Operations Command.
     Standard issue only for qualified operators.
@@ -287,39 +287,47 @@
 
     Special weapons protocol: one weapon system of choice with a full ammunition loadout and explosives.
   components:
-  - type: Sprite
-    sprite: _AU14/Structures/Vendors/genericweaponrack.rsi
   - type: CMAutomatedVendor
     sections:
-    - name: M240A2 Heavy Incinerator
+    - name: Weapons Specialist Sets
+      takeOne: SquadSpecKit
+      sharedSpecLimit: 1
       entries:
-      - id: AU14WeaponFlamerM240A2HAZOPS
-        amount: 1
-#     - id: RMCAttachmentUnderbarrelExtinguisherSpec
-#       amount: 1
-      - id: AU14TankFlamerM240A2HAZOPS
-        amount: 8
-      - id: RMCBackpackFlamer
-        name: G4-1 fueltank
-        amount: 1
-      - id: RMCPouchFuelTankFilledExtinguisher
-        amount: 2
-    - name: SPAS-12-HAZ Specialized Shotgun
-      entries:
-      - id: AU14WeaponShotgunSPAS12HAZOPS
-        amount: 1
-      - id: RMCBoxShotgunBuckshot
-        amount: 12
-      - id: RMCBoxShotgunSlugs
-        amount: 12
-      - id: RMCBoxShotgunBreaching
-        amount: 1
-    - name: M50 'Bald Eagle' Handcannon
-      entries:
-      - id: AU14WeaponPistolM50HAZOPS
-        amount: 8
-      - id: AU14MagazinePistolM50
-        amount: 80
+      - id: RMCGrenadeSpecEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-grenadier
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-grenadier
+        isAppendPrefix: true
+      - id: RMCSharpSpecEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sharp
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sharp
+        isAppendPrefix: true
+      - id: RMCScoutSpecEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-scout
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-scout
+        isAppendPrefix: true
+      - id: CMSniperEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sniper
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sniper
+        isAppendPrefix: true
+      - id: RMCM707VultureCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sniper
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sniper
+        isAppendPrefix: true
+      - id: AU14HAZOPSShotgunCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-shotgunner
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-shotgunner
+        isAppendPrefix: true
+      - id: AU14KitHAZOPSPyroM240A2
+        giveSquadRoleName: au14-job-name-specialist-pyro
+        givePrefix: au14-job-prefix-specialist-pyro
+        isAppendSquadRoleName: false
+        isAppendPrefix: true
 
 - type: entity
   parent: ColMarTechBase
@@ -462,6 +470,8 @@
       - id: WeaponRifleM4SPR
         amount: 3
       - id: AU14WeaponPistolM4A4Empty
+        amount: 8
+      - id: AU14WeaponPistolM50HAZOPS
         amount: 5
       - id: RMCWeaponRevolverM44Empty
         amount: 5
@@ -501,6 +511,8 @@
         amount: 15
       - id: RMCMagazinePistolM1984HP
         amount: 5
+      - id: AU14MagazinePistolM50
+        amount: 50
       - id: RMCSpeedLoaderM44
         amount: 100
       - id: RMCSpeedLoader44Marksman

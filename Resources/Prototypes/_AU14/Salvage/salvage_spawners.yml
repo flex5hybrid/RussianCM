@@ -5,6 +5,8 @@
   id: SalvageSpawnerBase
   abstract: true
   components:
+  - type: Destructible
+    thresholds: []
   - type: SalvageSpawner
     doAfterTime: 10
     loot:

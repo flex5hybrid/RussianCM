@@ -1,4 +1,4 @@
-﻿- type: npcFaction
+- type: npcFaction
   id: GOVFOR
   name: Government Forces
   hostile:
@@ -28,6 +28,7 @@
   - AUGoo
   - CMUAPE
   - Abomination
+
 - type: npcFaction
   id: CMUVAI
   name: Vanguard's Arrow Incorporated

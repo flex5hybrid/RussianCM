@@ -147,6 +147,7 @@
       AU14JobGOVFORSquadAutomaticRifleman: 3
       AU14JobGOVFORSquadCombatTech: 6
       AU14JobGOVFORSquadRifleman: 75
+      AU14JobGOVFORWeaponsSpecialist: 3
       AU14JobGOVFORAuxSupportSynth: 2
       AU14JobGOVFORadvisor: 1
       AU14JobGOVFORMilitaryDoctor: 3
@@ -170,6 +171,7 @@
       AU14JobOpforRadioTelephoneOperator: 4
       AU14JobOpforSquadSergeant: 3
       AU14JobOpforSquadAutomaticRifleman: 3
+#     AU14JobOPFORWeaponsSpecialist: 3 # TODO
       AU14JobOPFORSquadCombatTech: 6
       AU14JobOpforSquadRifleman: 75
       AU14JobOPFORAuxSupportSynth: 2

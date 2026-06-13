@@ -32,7 +32,7 @@ public sealed partial class CharacterInfoSystem : EntitySystem
     [Dependency] private IPrototypeManager _prototypes = default!;
     [Dependency] private IRobustRandom _random = default!;
 
-    private int _knowledgeRoundId = -1;
+    private (int roundId, string? threatId) _knowledgeKey = (-1, null);
     private string? _roundKnowledgeLine;
 
     public override void Initialize()
@@ -175,10 +175,14 @@ public sealed partial class CharacterInfoSystem : EntitySystem
 
     private void EnsureRoundKnowledgeLine(ThreatPrototype? selectedThreat)
     {
-        if (_knowledgeRoundId == _ticker.RoundId)
+        if (selectedThreat == null)
             return;
 
-        _knowledgeRoundId = _ticker.RoundId;
+        var key = (_ticker.RoundId, selectedThreat.ID);
+        if (_knowledgeKey == key)
+            return;
+
+        _knowledgeKey = key;
         _roundKnowledgeLine = null;
 
         if (selectedThreat == null || selectedThreat.LorePrimer is not { } primerId)

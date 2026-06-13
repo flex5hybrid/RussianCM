@@ -47,7 +47,7 @@ public sealed partial class OutfitSystem : EntitySystem
             foreach (var slot in slots)
             {
                 _invSystem.TryUnequip(target, slot.Name, true, true, false, inventoryComponent);
-                var gearStr = ((IEquipmentLoadout) startingGear).GetGear(slot.Name);
+                var gearStr = ((IEquipmentLoadout)startingGear).GetGear(slot.Name);
                 if (gearStr == string.Empty)
                     continue;
 
@@ -82,26 +82,26 @@ public sealed partial class OutfitSystem : EntitySystem
             if (job.StartingGear != gear)
                 continue;
 
-            var jobProtoId = LoadoutSystem.GetJobPrototype(job.ID);
-            if (!_prototypeManager.TryIndex<RoleLoadoutPrototype>(jobProtoId, out var jobProto))
-                break;
-
             // Don't require a player, so this works on Urists
             profile ??= TryComp<HumanoidAppearanceComponent>(target, out var comp)
                 ? HumanoidCharacterProfile.DefaultWithSpecies(comp.Species)
                 : new HumanoidCharacterProfile();
-            // Try to get the user's existing loadout for the role
-            profile.Loadouts.TryGetValue(jobProtoId, out var roleLoadout);
 
+            var (key, proto) = LoadoutSystem.GetJobLoadoutInfo(job.ID, _prototypeManager);
+            if (proto == null)
+                break;
+
+            // Try to get the user's existing loadout for the role
+            profile.Loadouts.TryGetValue(key, out var roleLoadout);
             if (roleLoadout == null)
             {
                 // If they don't have a loadout for the role, make a default one
-                roleLoadout = new RoleLoadout(jobProtoId);
+                roleLoadout = new RoleLoadout(proto.ID);
                 roleLoadout.SetDefault(profile, session, _prototypeManager);
             }
 
             // Equip the target with the job loadout
-            _spawningSystem.EquipRoleLoadout(target, roleLoadout, jobProto);
+            _spawningSystem.EquipRoleLoadout(target, roleLoadout, proto);
         }
 
         return true;

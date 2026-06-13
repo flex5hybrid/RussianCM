@@ -42,8 +42,6 @@
       map: [ "icon" ]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/m42_scoutsight.rsi
-  - type: NightVisionItem
-    mesons: true
   - type: Appearance
 
 - type: entity

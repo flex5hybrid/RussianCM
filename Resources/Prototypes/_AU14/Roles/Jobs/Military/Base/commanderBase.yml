@@ -17,6 +17,7 @@
   canBeAntag: false
   accessGroups:
   - AU14GovforCommand
+  - aulegacygroupcommand # NOTE: should remove & hard migrate
 
 - type: job
   abstract: true
@@ -36,7 +37,7 @@
     - NonResuscitable
     - Epilepsy
   ranks:
-  RMCRankCivilian: []
+    RMCRankCivilian: []
   chevrons:
     RMCRankMajor:
       entity: AU14ChevronMajor
@@ -72,9 +73,9 @@
   equipment:
     id: AU14IDCardGOVFORPlatCo
     ears: AU14HeadsetGovforCommand
+    pocket1: AU14StampCO
   inhand:
     -  AU14TabletGovfor
-    -  AU14StampCO
 
 - type: startingGear
   id: AU14GearGOVFORPlatCoDummy

@@ -1085,7 +1085,7 @@
   - RMCLoadoutGroupPins
 
 - type: roleLoadout
-  id: AU14JobCiviliannspaConstable
+  id: AU14JobCivilianNSPAConstable
   points: 7
   groups:
   - EyewearRMC

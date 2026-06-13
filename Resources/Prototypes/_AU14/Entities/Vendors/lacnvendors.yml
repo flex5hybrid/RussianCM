@@ -771,9 +771,9 @@
       - id: AU14AttachmentTwoPointSling
 
 - type: entity
-  parent: ColMarTechBase
+  parent: AU14SpecVend
   id: AU14LACNSpecialWeaponsVendor
-  name: LACN Landing Forces special weapons rack
+  name: LACN weapons specialist rack
   description: >-
     An automated special weapons rack, hooked up to a restricted armory of Latin American Colonial Navy heavy and breaching ordnance for the Landing Forces.
     Standard issue only for qualified operators.
@@ -781,54 +781,47 @@
 
     Special weapons protocol: one weapon system of choice with a full ammunition loadout and explosives.
   components:
-  - type: AccessReader
-    access: [ [ "AU14AccessGovforSquad" ], [ "AU14AccessOpforSquad" ] ]
-  - type: Sprite
-    sprite: _AU14/Structures/Vendors/genericweaponrack.rsi
   - type: CMAutomatedVendor
     sections:
-    - name: M85A1 grenade launcher
+    - name: Weapons Specialist Sets
+      takeOne: SquadSpecKit
+      sharedSpecLimit: 1
       entries:
-      - id: RMCWeaponLauncherM85A1
-        amount: 1
-      - id: RMCPacketGrenadeBatonSlugHIRRFilled
-        amount: 2
-      - id: RMCPacketGrenadeM74AGMSHornetFilled
-        amount: 4
-      - id: RMCPacketGrenadeM74AGMFFilled
-        amount: 3
-      - id: RMCPacketGrenadeM74AGMSFilled
-        amount: 2
-      - id: RMCPacketGrenadeM74AGMIFilled
-        amount: 1
-      - id: RMCPacketGrenadeM74AGMSStarShellFilled
-        amount: 1
-      - id: CMPacketGrenadeFragFilled
-        amount: 1
-      - id: CMPacketGrenadeHighExplosiveFilled
-        amount: 1
-      - id: RMCPouchExplosive
-        amount: 2
-    - name: M42A2 designated marksman rifle
-      entries:
-      - id: AU14WeaponSniperRifleM42A2
-        amount: 1
-      - id: CMMagazineSniperM96S
-        amount: 15
-      - id: CMMagazineSniperM96SFlak
-        amount: 4
-      - id: RMCScoutShoes
-        amount: 1
-    - name: MOU53 break action shotgun
-      entries:
-      - id: WeaponShotgunMOU53
-        amount: 1
-      - id: RMCAttachmentMOU53Stock
-        amount: 1
-      - id: RMCBoxShotgunFlechette
-        amount: 12
-      - id: RMCBoxShotgunSlugs
-        amount: 12
+      - id: RMCGrenadeSpecEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-grenadier
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-grenadier
+        isAppendPrefix: true
+      - id: RMCSharpSpecEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sharp
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sharp
+        isAppendPrefix: true
+      - id: AU14ScoutSpecEquipmentCaseLACN
+        giveSquadRoleName: rmc-job-name-weapons-specialist-scout
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-scout
+        isAppendPrefix: true
+      - id: CMSniperEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sniper
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sniper
+        isAppendPrefix: true
+      - id: RMCAntiMaterielEquipmentCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-anti-materiel-sniper
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-anti-materiel-sniper
+        isAppendPrefix: true
+      - id: RMCM707VultureCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-sniper
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-sniper
+        isAppendPrefix: true
+      - id: RMCMK481ShotgunCase
+        giveSquadRoleName: rmc-job-name-weapons-specialist-shotgunner
+        isAppendSquadRoleName: false
+        givePrefix: rmc-job-prefix-weapons-specialist-shotgunner
+        isAppendPrefix: true
 
 - type: entity
   parent: ColMarTechBase

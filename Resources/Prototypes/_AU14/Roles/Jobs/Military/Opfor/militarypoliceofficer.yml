@@ -7,6 +7,7 @@
   dummyStartingGear: AU14GearOPFORMilitaryPoliceManDummy
   accessGroups:
   - AU14OpforSecurity
+  - aulegacygroupmilp
   special:
   - !type:AddComponentSpecial
     components:
