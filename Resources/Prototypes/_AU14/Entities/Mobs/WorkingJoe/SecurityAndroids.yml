@@ -23,7 +23,7 @@
   id: AU14GearWYSecurityAndroid
   equipment:
     id: AU14IDCardColonyCorporateLiaison
-    outerClothing: AU14WYPMCArmorMin
+    outerClothing: CMArmorM4PMCSynth
     head: ArmorHelmetPMC
     gloves: AU14PVEHandsInsulatedBlackMarine
     jumpsuit: AU14WYPMCFatigues
