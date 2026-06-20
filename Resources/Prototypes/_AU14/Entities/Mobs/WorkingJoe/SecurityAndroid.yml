@@ -106,8 +106,8 @@
         Blunt: 30
   - type: Synth
     generation: "rmc-species-synth-generation-first"
-    critThreshold: 249
-    deadThreshold: 250
+    critThreshold: 199
+    deadThreshold: 200
     newDamageModifier: AU14WorkingJoe
     canUseGuns: true
   - type: Skills
