@@ -1,0 +1,71 @@
+- type: job
+  abstract: true
+  parent: AU14JobSecurityAndroidBase
+  id: AU14JobWYSecurityAndroidBase
+  icon: "AU14JobIconWYAndroid"
+  spawnMenuRoleName: Security Android (WY, M41A/2)
+  supervisors: au14-job-supervisors-wy
+  usePlayerProfile: false
+  jobEntity: AU14MobWYSecurityAndroid
+  accessGroups:
+  - AU14GovforCommand
+  - AUPrisonStaff
+  - auwy
+
+- type: job
+  parent: AU14JobWYSecurityAndroidBase
+  id: AU14JobWYSecurityAndroid
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - SocialAnxietyHeavy
+    - FrontalLisp
+    - NonResuscitable
+    - Epilepsy
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: UserIFF
+      factions:
+      - GOVFOR
+    - type: IntrinsicRadioTransmitter
+      channels:
+      - radioAI
+      - radioGovforCommand
+      - radioGovforJTAC
+      - radioGovforAlpha
+      - radioGovforCharlie
+      - radioGovforBravo
+      - radioGovforIntel
+      - radioGovforMILP
+    - type: ActiveRadio
+      channels:
+      - radioAI
+      - radioGovforCommand
+      - radioGovforJTAC
+      - radioGovforAlpha
+      - radioGovforCharlie
+      - radioGovforBravo
+      - radioGovforIntel
+      - radioGovforMILP
+    - type: Tag
+      tags:
+      - WorkingJoe
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_AU14/Interface/au14govforjobicons.rsi
+        state: working_joe
+
+- type: entity
+  parent: CMSpawnPointJobBase
+  id: AU14SpawnPointWYAndroid
+  name: Spawn Point wy android
+  components:
+  - type: SpawnPoint
+    job_id: AU14JobWYSecurityAndroid
+  - type: Sprite
+    state: syn_spawn
