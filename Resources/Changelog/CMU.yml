@@ -4564,7 +4564,7 @@
     type: Tweak
   - message: Chemical irritant gases respect nested and devoured peeople now
     type: Fix
-  id: 309
+  id: 327
   time: '2026-06-19T18:07:53.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1371
 - author: sunzu432
@@ -4599,7 +4599,7 @@
   - message: 'Hope''s Retreat: Experimental Sensor Tower is now the correct entity
       and not from upstream.'
     type: Fix
-  id: 310
+  id: 328
   time: '2026-06-19T18:10:09.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1387
 - author: wray-git
@@ -4633,7 +4633,7 @@
   - message: Added spikedboots.rsi to _AU14/Clothing/Shoes with the full icon/equipped/filled
       state set
     type: Code
-  id: 311
+  id: 329
   time: '2026-06-19T18:10:35.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1360
 - author: JaSeNeSaJ
@@ -4648,7 +4648,7 @@
     type: Tweak
   - message: 'Sheperds'': Various stairwell improvements'
     type: Tweak
-  id: 312
+  id: 330
   time: '2026-06-19T19:03:32.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1362
 - author: HotdogMan52
@@ -4657,7 +4657,7 @@
     type: Add
   - message: added four gas mask and eight filters
     type: Add
-  id: 313
+  id: 331
   time: '2026-06-20T01:24:20.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1388
 - author: wray-git
@@ -4666,7 +4666,7 @@
     type: Fix
   - message: M-19 Treadnailers are only active when the wearer is standing
     type: Fix
-  id: 314
+  id: 332
   time: '2026-06-20T01:31:30.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1389
 - author: maertayn
@@ -4679,7 +4679,7 @@
     type: Fix
   - message: Fixes Bush not loading platoons & vendors
     type: Fix
-  id: 315
+  id: 333
   time: '2026-06-20T04:35:54.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1391
 - author: Arcticular1
@@ -4716,8 +4716,26 @@
     type: Tweak
   - message: Roundstart rangefinders replaced with civilian binos
     type: Tweak
-  id: 316
+  id: 334
   time: '2026-06-20T11:19:31.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/1394
+- author: RomiGur
+  changes:
+  - message: "\u0423\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043E \u0432\u0440\u0435\
+      \u043C\u044F \u0434\u044B\u043C\u0430 \u0434\u043B\u044F \u0434\u044B\u043C\u043E\
+      \u0432\u044B\u0445 \u0433\u0440\u0430\u043D\u0430\u0442"
+    type: Tweak
+  id: 335
+  time: '2026-06-20T17:04:56.0000000+00:00'
+  url: https://github.com/flex5hybrid/RussianCM/pull/263
+- author: jok989372-lgtm
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D \u0441\u0442\u0430\
+      \u0440\u0442\u0435\u0440\u0433\u0438\u0440 \u0443 \u0431\u043E\u0435\u0432\u043E\
+      \u0433\u043E \u0434\u0440\u043E\u043D\u0430 \u0432\u044E."
+    type: Fix
+  id: 336
+  time: '2026-06-20T17:05:06.0000000+00:00'
+  url: https://github.com/flex5hybrid/RussianCM/pull/264
 Name: CMU
 Order: -1
