@@ -80,7 +80,7 @@
   parent: AU14GearSecurityAndroidBase
   id: AU14GearUSCMSecurityAndroid
   equipment:
-    id: AU14IDCardColonyCorporateLiaison
+    id: AU14IDCardColonyWorkingJoe
     outerClothing: AU14ArmorM3JungleOne
     head: AU14JungleM10Helmet
     jumpsuit: AU14JungleFatigues
