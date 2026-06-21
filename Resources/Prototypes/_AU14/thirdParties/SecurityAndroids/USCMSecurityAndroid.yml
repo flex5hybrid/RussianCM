@@ -2,7 +2,7 @@
   abstract: true
   parent: AU14JobSecurityAndroidBase
   id: AU14JobUSCMSecurityAndroidBase
-  icon: "AU14JobIconWYAndroid"
+  icon: "AU14JobIconGovSynth"
   spawnMenuRoleName: Security Android (USCM, M41A)
   supervisors: au14-job-supervisors-workingjoe-military
   usePlayerProfile: false
