@@ -1,0 +1,18 @@
+- type: partySpawn
+  id: WYAndroidsPartySpawn
+  leadersToSpawn:
+    AU14MobWYSecurityAndroid: 1
+  gruntsToSpawn:
+    AU14MobWYSecurityAndroid: 2
+  scalewithpop: false
+  spawnTogether: true
+
+- type: auThirdParty
+  id: WYAndroidsParty
+  partyspawn: WYAndroidsPartySpawn
+  entrymethod: shuttle
+  weight: 20
+  minplayers: 400 # admin spawn only
+  maxplayers: 400
+  GhostsNeeded: 8
+  roundstart: false
