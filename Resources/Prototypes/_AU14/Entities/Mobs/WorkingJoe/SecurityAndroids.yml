@@ -53,3 +53,52 @@
       - CMMagazineRifleM54CAP
       - CMMagazineRifleM54CAP
       - CMMagazineRifleM54CAP
+      
+#############################################
+
+- type: entity
+  parent: AU14MobSecurityAndroid
+  id: AU14MobUSCMSecurityAndroid
+  suffix: AU14, USCM, M41A
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    reregister: false
+    name: Security Android (USCM, M41A)
+    description: au14-job-description-uscmandroid
+    job: AU14JobUSCMSecurityAndroid
+    raffle:
+      settings: short
+  - type: Loadout
+    prototypes: [AU14GearUSCMSecurityAndroid]
+
+- type: startingGear
+  parent: AU14GearSecurityAndroidBase
+  id: AU14GearUSCMSecurityAndroid
+  equipment:
+    id: AU14IDCardColonyCorporateLiaison
+    outerClothing: AU14ArmorM3JungleOne
+    head: AU14JungleM10Helmet
+    jumpsuit: AU14JungleFatigues
+    ears: AU14HeadsetGovforCommand
+    belt: CMBeltMarine
+    back: CMSatchelMarine
+    pocket1: RMCPouchFlareFilled
+    pocket2: RMCPouchToolsFill
+    suitstorage: RMCWeaponRifleM54CMK1
+  storage:
+      back:
+      - CMWelder
+      - CMGrenadeFragOld
+      - RMCCableCoil
+      - CMEntrenchingTool
+      belt:
+      - CMMagazineRifleM54CMK1
+      - CMMagazineRifleM54CMK1
+      - CMMagazineRifleM54CMK1
+      - CMMagazineRifleM54CMK1
+      - CMMagazineRifleM54CMK1
