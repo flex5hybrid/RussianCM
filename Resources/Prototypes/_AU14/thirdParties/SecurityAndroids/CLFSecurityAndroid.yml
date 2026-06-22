@@ -1,0 +1,65 @@
+- type: job
+  abstract: true
+  parent: AU14JobSecurityAndroidBase
+  id: AU14JobCLFSecurityAndroidBase
+  icon: "CMJobIconEmpty"
+  spawnMenuRoleName: Security Android (CLF, MAR30)
+  supervisors: au14-job-supervisors-clflrs
+  usePlayerProfile: false
+  jobEntity: AU14MobCLFSecurityAndroid
+  accessGroups:
+  - Colonist
+
+- type: job
+  parent: AU14JobCLFSecurityAndroidBase
+  id: AU14JobCLFSecurityAndroid
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - SocialAnxietyHeavy
+    - FrontalLisp
+    - NonResuscitable
+    - Epilepsy
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: UserIFF
+      factions:
+      - CLF
+    - type: NpcFactionMember
+      factions:
+      - CLF
+    - type: CLFMember
+    - type: IntrinsicRadioTransmitter
+      channels:
+      - radioCLF
+      - Colony
+    - type: ActiveRadio
+      channels:
+      - radioCLF
+      - Colony
+    - type: Tag
+      tags:
+      - WorkingJoe
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_AU14/Interface/au14govforjobicons.rsi
+        state: working_joe
+    - type: ShowMarineIcons
+      factions:
+      - CLF
+  hidden: false
+
+- type: entity
+  parent: CMSpawnPointJobBase
+  id: AU14SpawnPointCLFAndroid
+  name: Spawn Point clf android
+  components:
+  - type: SpawnPoint
+    job_id: AU14JobCLFSecurityAndroid
+  - type: Sprite
+    state: syn_spawn
