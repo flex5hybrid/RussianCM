@@ -102,3 +102,44 @@
       - CMMagazineRifleM54CMK1
       - CMMagazineRifleM54CMK1
       - CMMagazineRifleM54CMK1
+      
+#################################################
+
+- type: entity
+  parent: AU14MobSecurityAndroid
+  id: AU14MobCLFSecurityAndroid
+  suffix: AU14, CLF, MAR30
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    reregister: false
+    name: Security Android (CLF, MAR30)
+    description: au14-job-description-clfandroid
+    job: AU14JobCLFSecurityAndroid
+    raffle:
+      settings: short
+  - type: Loadout
+    prototypes: [AU14GearCLFSecurityAndroid]
+
+- type: startingGear
+  parent: AU14GearSecurityAndroidBase
+  id: AU14GearCLFSecurityAndroid
+  equipment:
+    id: AU14IDCardColonyColonist
+    outerClothing: AU14ExternalWebbing
+    head: AU14JungleM10Helmet
+    jumpsuit: RMCJumpsuitLiaisonGreyWorkwear
+    belt: RMCBeltMarineMAR
+    back: CMSatchelMarine
+    pocket2: RMCPouchGeneralMedium
+    suitstorage: RMCWeaponRifleMAR30
+  storage:
+      back:
+      - RMCMagazineRifleMAR40Ext
+      - CMWelder
+      - CMEntrenchingTool
+      - CMWirecutter
