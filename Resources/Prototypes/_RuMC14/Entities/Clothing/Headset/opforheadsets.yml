@@ -1,0 +1,22 @@
+- type: entity
+  parent: AU14EncryptionKeyOpfor
+  id: RUMCEncryptionKeyOpforMedical
+  name: OPFOR medical encryption key
+  description: An encryption key used to communicate on the OPFOR Medical channel.
+  components:
+  - type: EncryptionKey
+    channels:
+    - radioOpforMedical
+    defaultChannel: radioOpforMedical
+
+- type: entity
+  parent: AU14HeadsetOpforMarine
+  id: RUMCHeadsetOpforMarineMedical
+  name: OPFOR medical radio headset
+  description: This is used by OPFOR corpsmen to communicate on the radio.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - AU14EncryptionKeyOpfor
+      - RUMCEncryptionKeyOpforMedical

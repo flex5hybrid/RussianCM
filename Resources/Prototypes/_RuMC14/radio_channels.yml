@@ -1,0 +1,19 @@
+- type: radioChannel
+  id: radioGovforMedical
+  name: chat-radio-govformed
+  keycode: "ь"
+  frequency: 4654
+  color: "#009771"
+  longRange: true
+  tower: true
+  faction: "govfor"
+
+- type: radioChannel
+  id: radioOpforMedical
+  name: chat-radio-opformed
+  keycode: "ю"
+  frequency: 6565
+  color: "#009771"
+  longRange: true
+  tower: true
+  faction: "opfor"

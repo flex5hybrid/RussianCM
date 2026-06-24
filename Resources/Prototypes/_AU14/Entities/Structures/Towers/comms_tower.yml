@@ -67,6 +67,8 @@
     - TWESOF
     - UPPSOF
     - PART
+    - radioGovforMedical # RUMC
+    - radioOpforMedical # RUMC
 
 # ├──[ GOVFOR COMMS ]────────────────────────────────────────────────┤
 - type: entity
@@ -84,6 +86,7 @@
     - radioGovforIntel
     - radioGovforJTAC
     - radioGovforMILP
+    - radioGovforMedical # RUMC
 
 # ├──[ OPFOR COMMS ]─────────────────────────────────────────────────┤
 - type: entity
@@ -101,6 +104,7 @@
     - radioOpforIntel
     - radioOpforJTAC
     - radioOpforMILP
+    - radioOpforMedical # RUMC
 
 # ├──[ THIRD PARTY COMMS ]───────────────────────────────────────────┤
 - type: entity

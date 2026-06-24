@@ -42,6 +42,7 @@
     - radioOpforIntel
     - radioOpforJTAC
     - radioOpforMILP
+    - radioOpforMedical # RUCM
     defaultChannel: radioOpforCommand
 
 - type: entity
@@ -164,6 +165,7 @@
       - AU14EncryptionKeyOpfor
       - AU14EncryptionKeyOpforCommandOnly
       - AU14EncryptionKeyOpforIntel
+      - RUMCEncryptionKeyOpforMedical # RUMC
   - type: RMCStaticDefaultChannel
   - type: EncryptionKeyHolder
     defaultChannel: radioOpforCommand
