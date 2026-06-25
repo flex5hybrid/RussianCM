@@ -249,3 +249,22 @@ rmc-hardpoint-repair-electrical-short-3 = Закройте панель дост
 rmc-hardpoint-repair-fuel-leak-1 = Откройте сервисную панель топливной системы и изолируйте разорванный топливный шланг.
 rmc-hardpoint-repair-fuel-leak-2 = Залатайте протекающий топливный шланг.
 rmc-hardpoint-repair-fuel-leak-3 = Затяните муфту топливного шланга.
+
+# Интерфейс консоли снабжения техникой
+rmc-vehicle-supply-ui-stored-vehicles = Хранящиеся ТС
+rmc-vehicle-supply-ui-loadout = Снаряжение ТС
+rmc-vehicle-supply-ui-preview-title = Транспорт
+rmc-vehicle-supply-ui-preview-empty = Предпросмотр ТС
+
+rmc-vehicle-supply-ui-raise = Поднять
+rmc-vehicle-supply-ui-lower = Опустить
+
+rmc-vehicle-supply-ui-status = Подъёмник: {$mode} | Статус: {$status} | Активно: {$active}
+rmc-vehicle-supply-ui-no-lift = нет подъёмника
+
+rmc-vehicle-supply-ui-none = нет
+rmc-vehicle-supply-ui-busy = занят
+rmc-vehicle-supply-ui-idle = ожидание
+
+rmc-vehicle-supply-ui-copies-expanded = Копии v
+rmc-vehicle-supply-ui-copies-collapsed = Копии >

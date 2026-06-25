@@ -37,6 +37,8 @@ public sealed class VehicleSupplyBui : BoundUserInterface
             return;
 
         _window.Title = string.Empty;
+        _window.RaiseButton.LabelText = Loc.GetString("rmc-vehicle-supply-ui-raise"); // RuMC edit
+        _window.LowerButton.LabelText = Loc.GetString("rmc-vehicle-supply-ui-lower"); // RuMC edit
         _window.RaiseButton.OnPressed += _ => SendMessage(new VehicleSupplyLiftMsg(true));
         _window.LowerButton.OnPressed += _ => SendMessage(new VehicleSupplyLiftMsg(false));
     }
@@ -61,11 +63,17 @@ public sealed class VehicleSupplyBui : BoundUserInterface
         if (_window == null)
             return;
 
-        var modeText = state.LiftMode?.ToString() ?? "No lift";
-        var activeText = string.IsNullOrWhiteSpace(state.ActiveVehicleId) ? "none" : state.ActiveVehicleId;
-        var busyText = state.Busy ? "busy" : "idle";
-
-        _window.StatusLabel.Text = $"Lift: {modeText} | Status: {busyText} | Active: {activeText}";
+        // RuMC edit start
+        var modeText = state.LiftMode?.ToString() ?? Loc.GetString("rmc-vehicle-supply-ui-no-lift");
+        var activeText = string.IsNullOrWhiteSpace(state.ActiveVehicleId)
+            ? Loc.GetString("rmc-vehicle-supply-ui-none")
+            : state.ActiveVehicleId;
+        var busyText = state.Busy
+            ? Loc.GetString("rmc-vehicle-supply-ui-busy")
+            : Loc.GetString("rmc-vehicle-supply-ui-idle");
+        _window.StatusLabel.Text = Loc.GetString("rmc-vehicle-supply-ui-status",
+            ("mode", modeText), ("status", busyText), ("active", activeText));
+        // RuMC edit end
 
         var raising = state.LiftMode == VehicleSupplyLiftMode.Raising;
         var lowering = state.LiftMode == VehicleSupplyLiftMode.Lowering;
@@ -147,7 +155,11 @@ public sealed class VehicleSupplyBui : BoundUserInterface
             {
                 var copyToggle = new HardpointButton
                 {
-                    LabelText = _copyExpanded.Contains(vehicleId) ? "Copies v" : "Copies >",
+                    // RuMC edit start
+                    LabelText = _copyExpanded.Contains(vehicleId)
+                        ? Loc.GetString("rmc-vehicle-supply-ui-copies-expanded")
+                        : Loc.GetString("rmc-vehicle-supply-ui-copies-collapsed"),
+                    // RuMC edit end
                     MinSize = new Vector2(110, 0)
                 };
 
@@ -336,7 +348,11 @@ public sealed class VehicleSupplyBui : BoundUserInterface
 
         var expanded = _copyExpanded.Contains(vehicleId);
         container.Visible = expanded;
-        toggle.LabelText = expanded ? "Copies v" : "Copies >";
+        // RuMC edit start
+        toggle.LabelText = expanded
+            ? Loc.GetString("rmc-vehicle-supply-ui-copies-expanded")
+            : Loc.GetString("rmc-vehicle-supply-ui-copies-collapsed");
+        // RuMC edit
     }
 
     private static void ApplySelectionStyle(HardpointButton button, bool selected)
