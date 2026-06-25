@@ -261,7 +261,7 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
         {
             using (args.PushGroup(nameof(EvacuationComputerComponent)))
             {
-                args.PushMarkup($"[color=red]This pod is only rated for a maximum of {maxMobs} occupants! Any more may cause it to crash and burn.[/color]");
+                args.PushMarkup(Loc.GetString("rmc-evacuation-pod-overcrowded", ("maxMobs", maxMobs))); // RuMC edit
             }
         }
     }
@@ -275,10 +275,10 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
 
         var msg = ent.Comp.Mode switch
         {
-            EvacuationComputerMode.Disabled => "Evacuation has not started.",
+            EvacuationComputerMode.Disabled => Loc.GetString("rmc-evacuation-computer-disabled"), // RuMC edit
             EvacuationComputerMode.Ready => "",
-            EvacuationComputerMode.Travelling => "The escape pod has already been launched!",
-            EvacuationComputerMode.Crashed => "This escape pod has crashed!",
+            EvacuationComputerMode.Travelling => Loc.GetString("rmc-evacuation-computer-travelling"), // RuMC edit
+            EvacuationComputerMode.Crashed => Loc.GetString("rmc-evacuation-computer-crashed"), // RuMC edit
             _ => throw new ArgumentOutOfRangeException(),
         };
 
@@ -293,15 +293,15 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
         {
             var progress = GetEvacuationProgress();
             if (progress < 25)
-                args.PushMarkup("It looks like it barely has any fuel yet.");
+                args.PushMarkup(Loc.GetString("rmc-evacuation-pump-fuel-empty")); // RuMC edit
             else if (progress < 50)
-                args.PushMarkup("It looks like it has accumulated some fuel.");
+                args.PushMarkup(Loc.GetString("rmc-evacuation-pump-fuel-some")); // RuMC edit
             else if (progress < 75)
-                args.PushMarkup("It looks like the fuel tank is a little over half full.");
+                args.PushMarkup(Loc.GetString("rmc-evacuation-pump-fuel-half")); // RuMC edit
             else if (progress < 100)
-                args.PushMarkup("It looks like the fuel tank is almost full.");
+                args.PushMarkup(Loc.GetString("rmc-evacuation-pump-fuel-almost")); // RuMC edit
             else
-                args.PushMarkup("It looks like the fuel tank is full.");
+                args.PushMarkup(Loc.GetString("rmc-evacuation-pump-fuel-full")); // RuMC edit
         }
     }
 
@@ -311,7 +311,7 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
             return;
 
         args.Cancel();
-        _popup.PopupClient("Evacuation has not been authorized.", ent, args.User, PopupType.SmallCaution);
+        _popup.PopupClient(Loc.GetString("rmc-evacuation-not-authorized"), ent, args.User, PopupType.SmallCaution); // RuMC edit
     }
 
     private void OnEvacuationComputerLaunch(Entity<EvacuationComputerComponent> ent, ref EvacuationComputerLaunchBuiMsg args)
@@ -362,7 +362,7 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
 
             if (mobs.Count > maxMobs)
             {
-                _popup.PopupPredicted("The evacuation pod is overloaded with this many people inside!", ent, null, PopupType.LargeCaution);
+                _popup.PopupPredicted(Loc.GetString("rmc-evacuation-pod-overloaded"), ent, null, PopupType.LargeCaution); // RuMC edit
                 ent.Comp.Mode = EvacuationComputerMode.Crashed;
                 Dirty(ent);
 
@@ -519,7 +519,7 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
         {
             _marineAnnounce.AnnounceARESStaging(
                 null,
-                "ALL STATIONS. Emergency. Lifeboat fuel lines pressurized. Pumps at full capacity. Muster stations. Evacuation protocol engaged.",
+                Loc.GetString("rmc-evacuation-ares-start"), // RuMC edit
                 startSound,
                 faction: progress.VictimFaction
             );
@@ -530,7 +530,7 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
                 if (!progress.Enabled || !TryComp<EvacuationProgressComponent>(map.Value, out var curProgress)) return;
 
                 _marineAnnounce.AnnounceARESStaging(null,
-                    "ALL STATIONS. Scuttling failure. Self‑destruct sequence unresponsive. All personnel abandon ship immediately.",
+                    Loc.GetString("rmc-evacuation-ares-scuttle-fail"), // RuMC edit
                     startSound,
                     faction: curProgress.VictimFaction);
             });
@@ -539,7 +539,7 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
         }
         else
         {
-            _marineAnnounce.AnnounceARESStaging(null, "ALL STATIONS. Evacuation protocol aborted. Lifeboat launch suspended. Emergency stand-down.", cancelSound, faction: progress.VictimFaction);
+            _marineAnnounce.AnnounceARESStaging(null, Loc.GetString("rmc-evacuation-ares-abort"), cancelSound, faction: progress.VictimFaction); // RuMC edit
             var ev = new EvacuationDisabledEvent(map.Value);
             RaiseLocalEvent(map.Value, ref ev, true);
         }
@@ -609,11 +609,12 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
                 foreach (var areaId in GetEvacuationAreas(uid.ToCoordinates()))
                 {
                     var powered = IsAreaPumpPowered(areaId);
-                    var line = $"[{Name(areaId)}] - [{(powered ? "MAX CAPACITY" : "NO FUEL FLOW")}]";
+                    var areaStatus = powered ? Loc.GetString("rmc-evacuation-area-max-capacity") : Loc.GetString("rmc-evacuation-area-no-fuel-flow"); // RuMC edit
+                    var line = $"[{Name(areaId)}] - [{areaStatus}]"; // RuMC edit
                     areas.AppendLine(line);
                 }
 
-                areas.Append("Low orbit decay detected. Additional fuel reserves for optimal launch conditions required.\nSustained power to fueling stations required to meet new threshold. Early launch results in atmospheric entry.");
+                areas.Append(Loc.GetString("rmc-evacuation-ares-start-detail")); // RuMC edit
                 _marineAnnounce.AnnounceARESStaging(null, areas.ToString(), faction: faction);
             }
 
@@ -637,7 +638,8 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
                 if (progress.LastPower.TryGetValue(areaId, out var lastPower) &&
                     lastPower != powered)
                 {
-                    _marineAnnounce.AnnounceARESStaging(null, $"{Name(areaId)} - [{(powered ? "MAX CAPACITY" : "NO FUEL FLOW")}]", faction: faction);
+                    var changedStatus = powered ? Loc.GetString("rmc-evacuation-area-max-capacity") : Loc.GetString("rmc-evacuation-area-no-fuel-flow"); // RuMC edit
+                    _marineAnnounce.AnnounceARESStaging(null, $"{Name(areaId)} - [{changedStatus}]", faction: faction); // RuMC edit
                 }
 
                 progress.LastPower[areaId] = powered;
@@ -671,21 +673,21 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
 
                 string MarinePercentageString(int percentage)
                 {
-                    var marineAnnounce = $"LIFEBOAT FUEL RESERVES: AT {percentage} PERCENT.";
+                    var marineAnnounce = Loc.GetString("rmc-evacuation-ares-fuel-percent", ("percentage", percentage)); // RuMC edit
                     if (offAreas.Length == 0)
-                        marineAnnounce += " All fueling stations diverting to lifeboats at full capacity. Volumetric flow maximums.";
+                        marineAnnounce += " " + Loc.GetString("rmc-evacuation-ares-fuel-all-on"); // RuMC edit
                     else
-                        marineAnnounce += $" Fuel flow interrupted in: {offAreas}. Remedial action mandatory. Replenishment rate critically low.";
+                        marineAnnounce += " " + Loc.GetString("rmc-evacuation-ares-fuel-interrupted", ("offAreas", offAreas)); // RuMC edit
 
                     return marineAnnounce;
                 }
 
                 if (progress.Progress >= progress.Required)
                 {
-                    _marineAnnounce.AnnounceARESStaging(null, "LIFEBOAT FUEL RESERVES: AT 100 PERCENT. Lifeboats launch at command discretion. Escape pods available for immediate use.", faction: faction);
+                    _marineAnnounce.AnnounceARESStaging(null, Loc.GetString("rmc-evacuation-ares-100-percent"), faction: faction); // RuMC edit
 
                     if (!progress.IsHumanHijack)
-                        _xenoAnnounce.AnnounceAll(default, "The talls have completed their goals!");
+                        _xenoAnnounce.AnnounceAll(default, Loc.GetString("rmc-evacuation-xeno-100-percent")); // RuMC edit
 
                     SetPumpAppearance(uid, EvacuationPumpVisuals.Full);
                     var ev = new EvacuationProgressEvent(100, uid);
@@ -697,10 +699,9 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
 
                     if (!progress.IsHumanHijack)
                     {
-                        var xenoAnnounce = "The talls are three quarters of the way towards their goals.";
+                        var xenoAnnounce = Loc.GetString("rmc-evacuation-xeno-75-percent"); // RuMC edit
                         if (onAreas.Length > 0)
-                            xenoAnnounce += $" Disable the following areas: {onAreas}";
-
+                            xenoAnnounce += " " + Loc.GetString("rmc-evacuation-xeno-disable-areas", ("areas", onAreas)); // RuMC edit
                         _xenoAnnounce.AnnounceAll(default, xenoAnnounce);
                     }
 
@@ -715,10 +716,9 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
 
                     if (!progress.IsHumanHijack)
                     {
-                        var xenoAnnounce = "The talls are half way towards their goals.";
+                        var xenoAnnounce = Loc.GetString("rmc-evacuation-xeno-50-percent"); // RuMC edit
                         if (onAreas.Length > 0)
-                            xenoAnnounce += $" Disable the following areas: {onAreas}";
-
+                            xenoAnnounce += " " + Loc.GetString("rmc-evacuation-xeno-disable-areas", ("areas", onAreas)); // RuMC edit
                         _xenoAnnounce.AnnounceAll(default, xenoAnnounce);
                     }
 
@@ -728,20 +728,18 @@ public abstract partial class SharedEvacuationSystem : EntitySystem
                 }
                 else if (progress.Progress >= progress.Required * 0.25)
                 {
-                    var marineAnnounce = "LIFEBOAT FUEL RESERVES: AT 25 PERCENT. Early-launch override available. Command order required.";
+                    var marineAnnounce = Loc.GetString("rmc-evacuation-ares-25-percent"); // RuMC edit
                     if (offAreas.Length == 0)
-                        marineAnnounce += " All fueling stations operating at full capacity. Volumetric flow maximums.";
+                        marineAnnounce += " " + Loc.GetString("rmc-evacuation-ares-fuel-all-on-alt"); // RuMC edit
                     else
-                        marineAnnounce += $" Fuel flow interrupted in: {offAreas}. Remedial action mandatory to increase replenishment rate.";
-
+                        marineAnnounce += " " + Loc.GetString("rmc-evacuation-ares-fuel-interrupted-alt", ("offAreas", offAreas)); // RuMC edit
                     _marineAnnounce.AnnounceARESStaging(null, marineAnnounce, faction: faction);
 
                     if (!progress.IsHumanHijack)
                     {
-                        var xenoAnnounce = "The talls are a quarter of the way towards their goals.";
+                        var xenoAnnounce = Loc.GetString("rmc-evacuation-xeno-25-percent"); // RuMC edit
                         if (onAreas.Length > 0)
-                            xenoAnnounce += $" Disable the following areas: {onAreas}";
-
+                            xenoAnnounce += " " + Loc.GetString("rmc-evacuation-xeno-disable-areas", ("areas", onAreas)); // RuMC edit
                         _xenoAnnounce.AnnounceAll(default, xenoAnnounce);
                     }
 
