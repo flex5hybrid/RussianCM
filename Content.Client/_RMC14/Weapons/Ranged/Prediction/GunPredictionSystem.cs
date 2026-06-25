@@ -152,6 +152,9 @@ public sealed partial class GunPredictionSystem : SharedGunPredictionSystem
         if (!GunPrediction)
             return;
 
+        if (_timing.ApplyingState) // RuMC edit
+            return;
+
         var localProjectile = ent.Comp.ClientEnt == _player.LocalEntity;
         if (!localProjectile)
             return;
