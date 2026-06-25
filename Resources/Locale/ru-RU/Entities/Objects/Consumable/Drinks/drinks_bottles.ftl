@@ -1,146 +1,194 @@
-ent-DrinkAbsintheBottleFull-name = Джейлбрейкер Верте
-ent-DrinkAbsintheBottleFull-desc = Один глоток этого, и ты знаешь, что хорошо проведешь время.
+ent-DrinkAbsintheBottleFull = бутылка абсента "Верте"
+    .desc = Один глоток этого, и ты знаешь, что хорошо проведешь время.
+    .suffix = Полная
 
-ent-DrinkBlueCuracaoBottleFull-name = Мисс Блю Кюрасао
-ent-DrinkBlueCuracaoBottleFull-desc = Фруктовый, исключительно лазурного напитка. Не позволяет выпившему использовать пятую магию.
+ent-DrinkBlueCuracaoBottleFull = бутылка Мисс Блю Кюрасао
+    .desc = Фруктовый, исключительно лазурного напитка.
+    .suffix = Полная
 
-ent-DrinkBottleOfNothingFull-name = бутылка ни с чем
-ent-DrinkBottleOfNothingFull-desc = Бутылка, наполненная ничем.
+ent-DrinkBottleOfNothingFull = бутылка ничего
+    .desc = Бутылка, наполненная ничем.
+    .suffix = Полная
 
-ent-DrinkChampagneBottleFull-name = бутылка шампанского
-ent-DrinkChampagneBottleFull-desc = Только люди, лишенные воображения, не могут найти оправдания шампанскому.
+ent-DrinkChampagneBottleFull = бутылка шампанского
+    .desc = Только люди, лишенные воображения, не могут найти оправдания шампанскому.
+    .suffix = Полная
 
-ent-DrinkCognacBottleFull-name = бутылка коньяка
-ent-DrinkCognacBottleFull-desc = Сладкий и сильноалкогольный напиток, изготовленный после многочисленных дистилляций и многолетних выдержек. На этот раз ты мог бы не кричать «ДЕРЬМО».
+ent-DrinkCognacBottleFull = бутылка коньяка
+    .desc = Сладкий и сильноалкогольный напиток, изготовленный после многочисленных дистилляций и многолетних выдержек.
+    .suffix = Полная
 
-ent-DrinkGrenadineBottleFull-name = Бутылка сиропа Гренадин Briar Rose
-ent-DrinkGrenadineBottleFull-desc = Сладкий и острый сироп, используемый для придания цвета или аромата напиткам.
+ent-DrinkGrenadineBottleFull = бутылка сиропа "Гренадин"
+    .desc = Сладкий и острый сироп, используемый для придания цвета или аромата напиткам.
+    .suffix = Полная
 
-ent-DrinkGinBottleFull-name = Джин Гриффитер
-ent-DrinkGinBottleFull-desc = Бутылка высококачественного джина, произведенного на космической станции Нью-Лондон.
+ent-DrinkGinBottleFull = бутылка джина "Гриффитер"
+    .desc = Бутылка высококачественного джина, произведенного на космической станции Нью-Лондон.
+    .suffix = Полная
 
-ent-DrinkGildlagerBottleFull-name = Бутылка Гилдлагера
-ent-DrinkGildlagerBottleFull-desc = 100 крепких шнапсов с корицей, приготовленных для девочек-алкоголичек на весенних каникулах.
+ent-DrinkGildlagerBottleFull = бутылка шнапса "Гилдлагера"
+    .desc = 100 крепких шнапсов с корицей, приготовленных для девочек-алкоголичек на весенних каникулах.
+    .suffix = Полная
 
-ent-DrinkCoffeeLiqueurBottleFull-name = бутылка кофейного ликера
-ent-DrinkCoffeeLiqueurBottleFull-desc = Великолепный вкус кофе без каких-либо преимуществ.
+ent-DrinkCoffeeLiqueurBottleFull = бутылка кофейного ликера
+    .desc = Великолепный вкус кофе с алкоголем.
+    .suffix = Полная
 
-ent-DrinkMelonLiquorBottleFull-name = Изумрудно-дынный ликер
-ent-DrinkMelonLiquorBottleFull-desc = Бутылка дынного ликера Emeraldine крепостью 46 градусов. Сладкий и легкий.
+ent-DrinkMelonLiquorBottleFull = бутылко дынного ликера
+    .desc = Бутылка дынного ликера крепостью 46 градусов. Сладкий и лёгкий.
+    .suffix = Полная
 
-ent-DrinkPatronBottleFull-name = Бутылка Wrapp Artiste Patrón
-ent-DrinkPatronBottleFull-desc = Текила с серебряными нотками, которую подают в космических ночных клубах по всей галактике.
+ent-DrinkPatronBottleFull = бутылка текилы
+    .desc = Текила с серебряными нотками, которую подают в космических ночных клубах по всей галактике.
+    .suffix = Полная
 
-ent-DrinkPoisonWinebottleFull-name = Бархатная бутылка Чернокнижника
-ent-DrinkPoisonWinebottleFull-desc = Какая восхитительная упаковка для вина высочайшего качества! Винтаж, должно быть, потрясающий!
+ent-DrinkPoisonWinebottleFull = бутылка вина "Чернокнижник"
+    .desc = Какая восхитительная упаковка для вина высочайшего качества! Винтаж, должно быть!
+    .suffix = Полная
 
-ent-DrinkRumBottleFull-name = Кубинский пряный ром Капитана Пита
-ent-DrinkRumBottleFull-desc = Это не просто ром, о нет. Это практически ГРИФФ во флаконе.
+ent-DrinkRumBottleFull = бутылка рома "Капитан Пит"
+    .desc = О нет, это не просто ром.
+    .suffix = Полная
 
-ent-DrinkTequilaBottleFull-name = Бутылка текилы гарантированного качества Caccavo
-ent-DrinkTequilaBottleFull-desc = Изготовлен из нефтяных дистиллятов премиум-класса, чистого талидомида и других ингредиентов высочайшего качества!
+ent-DrinkTequilaBottleFull = бутылка премиум текилы
+    .desc = Изготовлен из нефтяных дистиллятов премиум-класса, чистого талидомида и других ингредиентов высочайшего качества!
+    .suffix = Полная
 
-ent-DrinkVermouthBottleFull-name = Бутылка вермута Goldeneye
-ent-DrinkVermouthBottleFull-desc = Сладкая, сладкая сухость!
+ent-DrinkVermouthBottleFull = бутылка вермута "Голденай"
+    .desc = Сладкая, сладкая сухость!
+    .suffix = Полная
 
-ent-DrinkVodkaBottleFull-name = бутылка водки
-ent-DrinkVodkaBottleFull-desc = Ааа, водка. Лучший выбор напитков и топлива россиянами по всему миру.
+ent-DrinkVodkaBottleFull = бутылка водки
+    .desc = Ааа, водка. Лучший выбор напитков и топлива русскими по всему миру.
+    .suffix = Полная
 
-ent-DrinkWhiskeyBottleFull-name = Особый резерв дяди Гита
-ent-DrinkWhiskeyBottleFull-desc = Односолодовый виски премиум-класса, бережно выдержанный в туннелях ядерного убежища. ПРАВИЛА ТУННЕЛЬНОГО ВИСКИ.
+ent-DrinkWhiskeyBottleFull = бутылка виски
+    .desc = Односолодовый виски премиум-класса, бережно выдержанный в туннелях ядерного убежища.
+    .suffix = Полная
 
-ent-DrinkWineBottleFull-name = Бутылка вина Doublebearded Bearded Special
-ent-DrinkWineBottleFull-desc = Бутылку окружает слабая аура беспокойства и беспокойства.
+ent-DrinkWineBottleFull = бутылка вина
+    .desc = Бутылку окружает слабая аура беспокойства.
+    .suffix = Полная
 
-ent-DrinkBeerGrowler-name = пивовар
-ent-DrinkBeerGrowler-desc = Алкогольный напиток, приготовленный из солодового зерна, хмеля, дрожжей и воды. Бутылка для гроулера XL.
+ent-DrinkBeerGrowler = бутылка пива
+    .desc = Алкогольный напиток, приготовленный из солодового зерна, хмеля, дрожжей и воды. Размер XL.
+    .suffix = Полная
 
-ent-DrinkAleBottleFullGrowler-name = Гроулер Магм-Эля
-ent-DrinkAleBottleFullGrowler-desc = Настоящий напиток Дорфа. Бутылка для гроулера XL.
+ent-DrinkAleBottleFullGrowler = бутылка эля "Магма"
+    .desc = Настоящий напиток дворфа. Размер XL.
+    .suffix = Полная
 
-ent-DrinkColaBottleFull-name = Бутылка космической колы
-ent-DrinkColaBottleFull-desc = Кола. В космосе!
+ent-DrinkColaBottleFull = бутылка космической колы
+    .desc = Праздник к нам приходит!
+    .suffix = Полная
 
-ent-DrinkSpaceMountainWindBottleFull-name = Бутылка космического солнечного ветра
-ent-DrinkSpaceMountainWindBottleFull-desc = Дует сквозь тебя, как солнечный ветер.
+ent-DrinkSpaceMountainWindBottleFull = бутылка газировки "Маунтин Пью"
+    .desc = Дует сквозь тебя, как солнечный ветер.
+    .suffix = Полная
 
-ent-DrinkSpaceUpBottleFull-name = Космическая бутылка
-ent-DrinkSpaceUpBottleFull-desc = Во рту вкус пробоины корпуса.
+ent-DrinkSpaceUpBottleFull = бутылка газировки "Спейс Ап"
+    .desc = Во рту вкус пробоины корпуса.
+    .suffix = Полная
 
-ent-DrinkSodaWaterBottleFull-name = бутылка газированной воды
-ent-DrinkSodaWaterBottleFull-desc = Как вода, но злая!
+ent-DrinkSodaWaterBottleFull = бутылка газированной воды
+    .desc = Как вода, но злая!
+    .suffix = Полная
 
-ent-DrinkTonicWaterBottleFull-name = бутылка тоника
-ent-DrinkTonicWaterBottleFull-desc = Как газированная вода, но, может быть, злее? Часто слаще.
+ent-DrinkTonicWaterBottleFull = бутылка тоника
+    .desc = Как газированная вода, но, может быть, злее? Часто слаще.
+    .suffix = Полная
 
-ent-DrinkWaterBottleFull-name = бутылка с водой
-ent-DrinkWaterBottleFull-desc = Простая чистая вода неизвестного происхождения. Вы думаете, что, возможно, вы не хотите этого знать.
+ent-DrinkWaterBottleFull = бутылка с водой
+    .desc = Простая чистая вода неизвестного происхождения. Вы не хотите этого знать.
+    .suffix = Полная
 
-ent-DrinkBeerBottleFull-name = бутылка пива
-ent-DrinkBeerBottleFull-desc = Алкогольный напиток, приготовленный из солодового зерна, хмеля, дрожжей и воды.
+ent-DrinkBeerBottleFull = бутылка пива
+    .desc = Алкогольный напиток, приготовленный из солодового зерна, хмеля, дрожжей и воды.
+    .suffix = Полная
 
-ent-DrinkAleBottleFull-name = Бутылка Магм-Эля
-ent-DrinkAleBottleFull-desc = Настоящий напиток Дорфа.
+ent-DrinkAleBottleFull = бутылка эля "Магма"
+    .desc = Настоящий напиток дворфа.
+    .suffix = Полная
 
-ent-DrinkSakeBottleFull-name = маленькая бутылка саке
-ent-DrinkSakeBottleFull-desc = Сожаление о следующем утре, кажется, тоже притягивает бутылку.
+ent-DrinkSakeBottleFull = маленькая бутылка саке
+    .desc = Сожаление о следующем утре, кажется, тоже притягивает бутылку.
+    .suffix = Полная
 
-ent-DrinkJuiceLimeCartonXL-name = сок лайма XL
-ent-DrinkJuiceLimeCartonXL-desc = Кисло-сладкое совершенство.
+ent-DrinkJuiceLimeCartonXL = упаковка лаймового сока
+    .desc = Кисло-сладкое совершенство.
+    .suffix = Полная
 
-ent-DrinkJuiceOrangeCartonXL-name = апельсиновый сок XL
-ent-DrinkJuiceOrangeCartonXL-desc = Полно витаминов и вкуса!
+ent-DrinkJuiceOrangeCartonXL = упаковка апельсинового сока
+    .desc = Полно витаминов и вкуса!
+    .suffix = Полная
 
-ent-DrinkCreamCartonXL-name = молочный крем XL
-ent-DrinkCreamCartonXL-desc = Это крем. Изготовлено из молока. Что еще, по вашему мнению, вы там найдете?
+ent-DrinkCreamCartonXL = упаковка молочного крема
+    .desc = Это крем. Изготовлено из молока.
 
-ent-DrinkSugarJug-name = сахарница
-ent-DrinkSugarJug-desc = Некоторые люди добавляют это в кофе...
+ent-DrinkSugarJug = сахарница
+    .desc = Некоторые люди добавляют это в кофе...
 
-ent-DrinkLemonLimeJug-name = Поразить кувшин
-ent-DrinkLemonLimeJug-desc = Двойное цитрусовое ощущение.
+ent-DrinkLemonLimeJug = кувшин лимонно-лаймового сока
+    .desc = Двойное цитрусовое ощущение.
+    .suffix = Полный
 
-ent-DrinkMeadJug-name = кувшин для медовухи
-ent-DrinkMeadJug-desc = Хранение медовухи в пластиковой кувшине должно быть преступлением.
+ent-DrinkMeadJug = кувшин медовухи
+    .desc = Хранение медовухи в пластиковом кувшине должно быть преступлением.
+    .suffix = Полный
 
-ent-DrinkIceJug-name = кувшин для льда
-ent-DrinkIceJug-desc = Упрямая вода. Довольно круто.
+ent-DrinkIceJug = кувшин льда
+    .desc = Жёсткая вода. Довольно круто.
+    .suffix = Полный
 
-ent-DrinkCoconutWaterJug-name = кувшин для кокосовой воды
-ent-DrinkCoconutWaterJug-desc = Важно то, что находится внутри кокоса.
+ent-DrinkCoconutWaterJug = кувшин кокосовой воды
+    .desc = Важно то, что находится внутри кокоса.
+    .suffix = Полный
 
-ent-DrinkCoffeeJug-name = кувшин для кофе
-ent-DrinkCoffeeJug-desc = Сок для пробуждения, подогретый.
+ent-DrinkCoffeeJug = кувшин кофе
+    .desc = Для пробуждения.
+    .suffix = Полный
 
-ent-DrinkTeaJug-name = кувшин для чая
-ent-DrinkTeaJug-desc = Напиток, который предпочитают британцы и хипстеры.
+ent-DrinkTeaJug = кувшин чая
+    .desc = Напиток, который предпочитают британцы и хипстеры.
+    .suffix = Полный
 
-ent-DrinkGreenTeaJug-name = кувшин зеленого чая
-ent-DrinkGreenTeaJug-desc = Это как чай... но зеленый! отлично успокаивает желудок.
+ent-DrinkGreenTeaJug = кувшин зеленого чая
+    .desc = Это как чай... но зеленый! Отлично успокаивает желудок.
+    .suffix = Полный
 
-ent-DrinkIcedTeaJug-name = кувшин для холодного чая
-ent-DrinkIcedTeaJug-desc = На случай, если обычный чай вам покажется слишком горячим. Фууу.
+ent-DrinkIcedTeaJug = кувшин холодного чая
+    .desc = На случай, если обычный чай вам покажется слишком горячим.
+    .suffix = Полный
 
-ent-DrinkDrGibbJug-name = Доктор Гибб кувшин
-ent-DrinkDrGibbJug-desc = 42 разных вкуса... в кувшине!
+ent-DrinkDrGibbJug = кувшин газировки "Доктор Гиб"
+    .desc = 42 разных вкуса... в кувшине!
+    .suffix = Полный
 
-ent-DrinkRootBeerJug-name = кувшин для корневого пива
-ent-DrinkRootBeerJug-desc = Этот напиток заставляет австралийцев хихикать.
+ent-DrinkRootBeerJug = кувшин пива из корней
+    .desc = Этот напиток заставляет австралийцев хихикать.
+    .suffix = Полный
 
-ent-DrinkWaterMelonJuiceJug-name = кувшин для арбузного сока
-ent-DrinkWaterMelonJuiceJug-desc = Могут включать остатки семян.
+ent-DrinkWaterMelonJuiceJug = кувшин арбузного сока
+    .desc = Могут включать остатки семян.
+    .suffix = Полный
 
-ent-DrinkEnergyDrinkJug-name = Красный кувшин Bool
-ent-DrinkEnergyDrinkJug-desc = Кувшин Red Bool, в котором столько кофеина, что можно убить целую станцию.
+ent-DrinkEnergyDrinkJug = кувшин с энергетиком "Красный бык"
+    .desc = Кувшин Красного Быка, в котором столько кофеина, что можно убить целую станцию.
+    .suffix = Полный
 
-ent-CustomDrinkJug-name = кувшин для напитков
-ent-CustomDrinkJug-desc = Кувшин для хранения напитков, приготовленных на заказ.
+ent-CustomDrinkJug = кувшин для напитков
+    .desc = Кувшин для хранения напитков.
+    .suffix = Пустой
 
-ent-DrinkBottlePlasticBaseFull-name = элемент
+ent-DrinkBottlePlasticBaseFull = пластиковая бутылка
+    .desc = Бутылка из пластика.
 
-ent-DrinkBottlePlasticSmallBaseFull-name = элемент
+ent-DrinkBottlePlasticSmallBaseFull = маленькая пластиковая бутылка
+    .desc = Маленькая бутылка из пластика.
 
-ent-DrinkBottleGlassSmallBaseFull-name = элемент
+ent-DrinkBottleGlassSmallBaseFull = маленькая стеклянная бутылка
+    .desc = Маленькая бутылка из стекла.
 
-ent-DrinkBottleGlassBaseFull-name = элемент
+ent-DrinkBottleGlassBaseFull = стеклянная бутылка
+    .desc = Бутылка из стекла.
 
