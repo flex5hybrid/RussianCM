@@ -50,6 +50,7 @@
     allowMovement: true
     name: au14-ghost-name-rmcrrt-corpsman # RuMC edit
     description: au14-rmcert-rules # RuMC edit
+    job: AU14RMCRRTCorpsman
     raffle:
       settings: short
     rules: au14-rmcert-rules
