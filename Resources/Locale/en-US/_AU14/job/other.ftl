@@ -399,3 +399,10 @@ au14-job-greeting-IASFsurv = You have been stranded in this colony, dropship out
 
 au14-job-rules-IASFsurv = You are a member of the TWEs IASF, you are NEUTRAL to civilians and other countries and HOSTILE to the CLF.
     You are fully aware of the threat after having witnessed it for several days.
+
+au14-ghost-name-rmcrrt-rifleman = RMC reaction troop rifleman
+au14-ghost-name-rmcrrt-corpsman = RMC reaction troop corpsman
+au14-ghost-name-rmcrrt-breacher = RMC reaction troop breacher
+au14-ghost-name-rmcrrt-commander = RMC reaction troop commander
+au14-ghost-name-rmcrrt-marksman = RMC reaction troop marksman
+au14-ghost-name-rmcrrt-smartgunner = RMC reaction troop smartgunner
