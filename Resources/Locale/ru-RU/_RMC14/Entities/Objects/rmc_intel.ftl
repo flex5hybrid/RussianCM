@@ -14,11 +14,19 @@ ent-RMCIntelPaperScrap = клочок бумаги
 
 ent-RMCIntelBase = разведданные
 
+
 ent-RMCComputerIntel = консоль разведки
-    .desc = Компьютер разведки КМП для хранения данных.
+    .desc = Компьютер для хранения данных.
 
 ent-RMCComputerIntelCLF = консоль разведки КОФ
-    .desc = Компьютер разведки КОФ для хранения данных.
+    .desc = {ent-RMCComputerIntel.desc}
+
+ent-RMCComputerIntelGovfor = консоль разведки ГОВФОР
+    .desc = {ent-RMCComputerIntel.desc}
+
+ent-RMCComputerIntelOpfor = консоль разведки ОПФОР
+    .desc = {ent-RMCComputerIntel.desc}
+
 
 ent-RMCTechTreeConsole = консоль технологий
     .desc = Консоль для приобретения технологий.

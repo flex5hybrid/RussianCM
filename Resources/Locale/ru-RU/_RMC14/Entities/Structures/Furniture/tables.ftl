@@ -1,14 +1,21 @@
+
+ent-CMTable = стол
+    .desc = Квадратная металлическая поверхность, опирающаяся на четыре ножки.
+
+ent-RMCLargeTable = {ent-CMTable}
+  .desc = {ent-CMTable.desc}
+
 ent-RMCLargeTableBar = барный стол
   .desc = Деревянный стол, знавший лучшие времена.
 
-ent-RMCTableHunter = стол
-  .desc = Квадратная металлическая поверхность, опирающаяся на четыре ножки.
+ent-RMCTableHunter = {ent-CMTable}
+  .desc = {ent-CMTable.desc}
 
-ent-RMCTablePrison = стол
-  .desc = Квадратная металлическая поверхность, опирающаяся на четыре ножки.
+ent-RMCTablePrison = {ent-CMTable}
+  .desc = {ent-CMTable.desc}
 
-ent-CMTableAlmayer = стол
-  .desc = Квадратная металлическая поверхность, опирающаяся на четыре ножки.
+ent-CMTableAlmayer = {ent-CMTable}
+  .desc = {ent-CMTable.desc}
 
 ent-CMTableWoodenGambling = игральный стол
   .desc = Изогнутая поверхность из дерева и ковра, опирающаяся на четыре ножки.
@@ -22,14 +29,11 @@ ent-CMTableWoodenPoor = дёшевый деревянный стол
 ent-CMTableWooden = деревянный стол
   .desc = Квадратная деревянная поверхность, опирающаяся на четыре ножки.
 
-ent-CMTableReinforcedBlack = черный стол
-  .desc = Элегантный черный металлический стол.
+ent-CMTableReinforcedBlack = чёрный стол
+  .desc = Элегантный чёрный металлический стол.
 
 ent-CMTableReinforced = усиленный стол
-  .desc = Квадратная металлическая поверхность, опирающаяся на четыре ножки.
+    .desc = Квадратная металлическая поверхность, опирающаяся на широкое металлическое основание.
 
-ent-RMCLargeTable = стол
-  .desc = Квадратная металлическая поверхность, опирающаяся на четыре ножки.
-
-ent-CMTable = стол
-  .desc = Квадратная металлическая поверхность, опирающаяся на четыре ножки.
+ent-CMTableReinforcedRequisition = {ent-CMTableReinforced}
+    .desc = {ent-CMTableReinforced.desc}
