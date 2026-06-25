@@ -78,7 +78,7 @@ public sealed partial class SensorTowerSystem : EntitySystem
         args.Handled = true;
         ent.Comp.Faction = string.Empty;
         Dirty(ent);
-        var msg = $"You wipe the faction settings from the {Name(ent)}.";
+        var msg = Loc.GetString("rmc-sensor-tower-wipe", ("name", Name(ent))); // RuMC edit
         _popup.PopupClient(msg, ent, args.User, PopupType.Medium);
         // Notify tactical map system that sensor ownership changed so the canvas updates immediately
         RaiseLocalEvent(ent.Owner, new SensorTowerStateChangedEvent(ent.Owner));
@@ -98,7 +98,7 @@ public sealed partial class SensorTowerSystem : EntitySystem
             ent.Comp.Faction = faction.ToString();
             Dirty(ent);
             args.Handled = true;
-            var msg = $"You set the {Name(ent)} to faction {faction}.";
+            var msg = Loc.GetString("rmc-sensor-tower-configure", ("name", Name(ent)), ("faction", faction)); // RuMC edit
             _popup.PopupClient(msg, ent, args.User, PopupType.Medium);
             // Notify tactical map system that sensor ownership changed so the canvas updates immediately
             RaiseLocalEvent(ent.Owner, new SensorTowerStateChangedEvent(ent.Owner));
@@ -141,7 +141,7 @@ public sealed partial class SensorTowerSystem : EntitySystem
             // Do not allow claiming if the tower is destroyed/welded
             if (ent.Comp.State == SensorTowerState.Weld)
             {
-                var msg = "This sensor tower is too damaged to reconfigure.";
+                var msg = Loc.GetString("rmc-sensor-tower-too-damaged"); // RuMC edit
                 _popup.PopupClient(msg, ent, args.User, PopupType.SmallCaution);
                 args.Handled = true;
                 return;
@@ -152,7 +152,7 @@ public sealed partial class SensorTowerSystem : EntitySystem
             {
                 ent.Comp.Faction = faction.ToString();
                 Dirty(ent);
-                var msg = $"You configure the {Name(ent)} to faction {faction}.";
+                var msg = Loc.GetString("rmc-sensor-tower-configure", ("name", Name(ent)), ("faction", faction)); // RuMC edit
                 _popup.PopupClient(msg, ent, args.User, PopupType.Medium);
                 _adminLog.Add(LogType.RMCCommunicationsTower, $"{ToPrettyString(args.User)} set {ToPrettyString(ent)} to faction {faction}.");
             }
@@ -161,7 +161,7 @@ public sealed partial class SensorTowerSystem : EntitySystem
                 // No faction found on user - wipe the tower
                 ent.Comp.Faction = string.Empty;
                 Dirty(ent);
-                var msg = $"You wipe the faction settings from the {Name(ent)}.";
+                var msg = Loc.GetString("rmc-sensor-tower-wipe", ("name", Name(ent))); // RuMC edit
                 _popup.PopupClient(msg, ent, args.User, PopupType.Medium);
                 _adminLog.Add(LogType.RMCCommunicationsTower, $"{ToPrettyString(args.User)} wiped faction settings from {ToPrettyString(ent)}.");
             }
@@ -217,18 +217,20 @@ public sealed partial class SensorTowerSystem : EntitySystem
 
         if (!_skills.HasSkill(user, ent.Comp.Skill, ent.Comp.SkillLevel))
         {
-            _popup.PopupClient("You have no clue how this thing works...", ent, user, PopupType.SmallCaution);
+            _popup.PopupClient(Loc.GetString("rmc-sensor-tower-no-skill"), ent, user, PopupType.SmallCaution); // RuMC edit
             return;
         }
 
         ref var state = ref ent.Comp.State;
         var popup = state switch
         {
-            SensorTowerState.Weld => "Use a blowtorch, then wirecutters, then wrench to repair it.",
-            SensorTowerState.Wire => "Use some wirecutters, then wrench to repair it.",
-            SensorTowerState.Wrench => "Use a wrench to repair it.",
-            SensorTowerState.Off => $"The {Name(ent)} lights up.",
-            SensorTowerState.On => $"The {Name(ent)} goes dark.",
+            // RuMC edit start
+            SensorTowerState.Weld => Loc.GetString("rmc-sensor-tower-interact-weld"),
+            SensorTowerState.Wire => Loc.GetString("rmc-sensor-tower-interact-wire"),
+            SensorTowerState.Wrench => Loc.GetString("rmc-sensor-tower-interact-wrench"),
+            SensorTowerState.Off => Loc.GetString("rmc-sensor-tower-interact-off", ("name", Name(ent))),
+            SensorTowerState.On => Loc.GetString("rmc-sensor-tower-interact-on", ("name", Name(ent))),
+            // RuMC edit end
             _ => throw new ArgumentOutOfRangeException(),
         };
         _popup.PopupClient(popup, ent, user, PopupType.Medium);
@@ -252,29 +254,31 @@ public sealed partial class SensorTowerSystem : EntitySystem
 
         using (args.PushGroup(nameof(SensorTowerComponent)))
         {
-            // TODO: localize
             var text = ent.Comp.State switch
             {
-                SensorTowerState.Weld => "This one is heavily damaged. Use a blowtorch, wirecutters, then a wrench to repair it.",
-                SensorTowerState.Wire => "This one is heavily damaged. Use wirecutters, then a wrench to repair it.",
-                SensorTowerState.Wrench => "This one is heavily damaged. Use a wrench to repair it.",
-                SensorTowerState.Off => "It looks like it is offline.",
-                SensorTowerState.On => "It looks like it is online.",
+                // RuMC edit start
+                SensorTowerState.Weld => Loc.GetString("rmc-sensor-tower-examine-weld"),
+                SensorTowerState.Wire => Loc.GetString("rmc-sensor-tower-examine-wire"),
+                SensorTowerState.Wrench => Loc.GetString("rmc-sensor-tower-examine-wrench"),
+                SensorTowerState.Off => Loc.GetString("rmc-sensor-tower-examine-offline"),
+                SensorTowerState.On => Loc.GetString("rmc-sensor-tower-examine-online"),
+                // RuMC edit end
                 _ => throw new ArgumentOutOfRangeException(),
             };
-            args.PushText(text);
+            args.PushMarkup(text); // RuMC edit
 
             if (ent.Comp.State < SensorTowerState.Off)
             {
-                var tool = ent.Comp.State switch
+                // RuMC edit start
+                var repairMsg = ent.Comp.State switch
                 {
-                    SensorTowerState.Wrench => "a [color=cyan]Wrench[/color]",
-                    SensorTowerState.Wire => "[color=cyan]Wirecutters[/color]",
-                    SensorTowerState.Weld => "a [color=cyan]Welder[/color]",
+                    SensorTowerState.Wrench => Loc.GetString("rmc-sensor-tower-repair-wrench"),
+                    SensorTowerState.Wire => Loc.GetString("rmc-sensor-tower-repair-wirecutters"),
+                    SensorTowerState.Weld => Loc.GetString("rmc-sensor-tower-repair-welder"),
+                    // RuMC edit end
                     _ => throw new ArgumentOutOfRangeException(),
                 };
-
-                args.PushMarkup($"Use {tool} to repair it!");
+                args.PushMarkup(repairMsg);
             }
         }
     }
@@ -370,7 +374,7 @@ public sealed partial class SensorTowerSystem : EntitySystem
     {
         if (tower.Comp.State == SensorTowerState.Weld)
         {
-            _popup.PopupClient("We stare at the experimental sensor tower cluelessly.", user, user, PopupType.SmallCaution);
+            _popup.PopupClient(Loc.GetString("rmc-sensor-tower-destroy-clueless"), user, user, PopupType.SmallCaution); // RuMC edit
             return;
         }
 
@@ -382,7 +386,7 @@ public sealed partial class SensorTowerSystem : EntitySystem
 
         if (_doAfter.TryStartDoAfter(doAfter))
         {
-            _popup.PopupClient($"You start wrenching apart the {Name(tower)}'s panels and reaching inside it!", tower, user, PopupType.Medium);
+            _popup.PopupClient(Loc.GetString("rmc-sensor-tower-destroy-start", ("name", Name(tower))), tower, user, PopupType.Medium); // RuMC edit
         }
     }
 
@@ -410,13 +414,13 @@ public sealed partial class SensorTowerSystem : EntitySystem
 
             if (_random.Prob(0.75f))
             {
-                _popup.PopupEntity($"The {Name(uid)} beeps wildly and sprays random pieces everywhere! Use a wrench to repair it.", uid, uid, PopupType.LargeCaution);
+                _popup.PopupEntity(Loc.GetString("rmc-sensor-tower-break-wrench", ("name", Name(uid))), uid, uid, PopupType.LargeCaution); // RuMC edit
                 tower.State = SensorTowerState.Wrench;
                 ChangeState((uid, tower), SensorTowerState.Wrench);
             }
             else
             {
-                _popup.PopupEntity($"The {Name(uid)} beeps wildly and a fuse blows! Use wirecutters, then a wrench to repair it.", uid, uid, PopupType.LargeCaution);
+                _popup.PopupEntity(Loc.GetString("rmc-sensor-tower-break-wire", ("name", Name(uid))), uid, uid, PopupType.LargeCaution); // RuMC edit
                 ChangeState((uid, tower), SensorTowerState.Wire);
             }
 
