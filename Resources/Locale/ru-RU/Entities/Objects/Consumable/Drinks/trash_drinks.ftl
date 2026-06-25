@@ -1,84 +1,108 @@
-ent-DrinkBottleBaseEmpty-name = базовая пустая бутылка
-ent-DrinkBottleBaseEmpty-desc = Пустая бутылка.
+ent-DrinkBottleBaseEmpty = пустая бутылка
+    .desc = Внутри ничего нету.
 
-ent-DrinkBottleBaseSmallEmpty-name = базовая пустая бутылка
-ent-DrinkBottleBaseSmallEmpty-desc = Пустая бутылка.
+ent-DrinkBottleBaseSmallEmpty = маленькая пустая бутылка
+    .desc = Внутри ничего нету.
 
-ent-DrinkCartonBaseEmpty-name = базовая пустая коробка
-ent-DrinkCartonBaseEmpty-desc = Пустая коробка.
+ent-DrinkCartonBaseEmpty = пустая упаковка
+ent-DrinkCartonBaseEmpty-desc = Внутри ничего нету.
 
-ent-DrinkCartonBaseLargeEmpty-name = базовая пустая бутылка
-ent-DrinkCartonBaseLargeEmpty-desc = Пустая коробка.
+ent-DrinkCartonBaseLargeEmpty = большая пустая упаковка
+    .desc = Внутри ничего нету.
 
-ent-DrinkBottleAbsinthe-name = Бутылка Jailbreaker Verte
-ent-DrinkBottleAbsinthe-desc = Пустая бутылка.
+ent-DrinkBottleAbsinthe = {ent-DrinkAbsintheBottleFull}
+    .desc = {ent-DrinkAbsintheBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottleAlcoClear-name = бутылка алкоголя
-ent-DrinkBottleAlcoClear-desc = Пустая бутылка.
+ent-DrinkBottleAlcoClear = бутылка алкоголя
+    .desc = Пустая бутылка.
+    .suffix = Пустая
 
-ent-DrinkBottleAle-name = бутылка эля
-ent-DrinkBottleAle-desc = Пустая бутылка.
+ent-DrinkBottleAle = {ent-DrinkAleBottleFull}
+    .desc = {ent-DrinkAleBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottleBeer-name = бутылка пива
-ent-DrinkBottleBeer-desc = Пустая бутылка.
+ent-DrinkBottleBeer = {ent-DrinkBeerBottleFull}
+    .desc = {ent-DrinkBeerBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottleCognac-name = бутылка коньяка
-ent-DrinkBottleCognac-desc = Пустая бутылка.
+ent-DrinkBottleCognac = {ent-DrinkCognacBottleFull}
+    .desc = {ent-DrinkCognacBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottleGin-name = Бутылка джина Griffeater
-ent-DrinkBottleGin-desc = Пустая бутылка.
+ent-DrinkBottleGin = {ent-DrinkGinBottleFull}
+    .desc = {ent-DrinkGinBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottleGildlager-name = бутылка гилдлагера
-ent-DrinkBottleGildlager-desc = Пустая бутылка.
+ent-DrinkBottleGildlager = {ent-DrinkGildlagerBottleFull}
+    .desc = {ent-DrinkGildlagerBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottleCoffeeLiqueur-name = бутылка кофейного ликера
-ent-DrinkBottleCoffeeLiqueur-desc = Пустая бутылка.
+ent-DrinkBottleCoffeeLiqueur = {ent-DrinkCoffeeLiqueurBottleFull}
+    .desc = {ent-DrinkCoffeeLiqueurBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottleNTCahors-name = бутылка кагора без запаха
-ent-DrinkBottleNTCahors-desc = Пустая бутылка.
+ent-DrinkBottleNTCahors = бутылка кагора
+    .desc = Пустая бутылка.
+    .suffix = Пустая
 
-ent-DrinkBottlePatron-name = бутылка патрона
-ent-DrinkBottlePatron-desc = Пустая бутылка.
+ent-DrinkBottlePatron = {ent-DrinkPatronBottleFull}
+    .desc = {ent-DrinkPatronBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottlePoisonWine-name = ядовитая бутылка вина
-ent-DrinkBottlePoisonWine-desc = Пустая бутылка.
+ent-DrinkBottlePoisonWine = {ent-DrinkPoisonWinebottleFull}
+    .desc = {ent-DrinkPoisonWinebottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottleRum-name = бутылка рома
-ent-DrinkBottleRum-desc = Пустая бутылка.
+ent-DrinkBottleRum = {ent-DrinkRumBottleFull}
+    .desc = {ent-DrinkRumBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottleTequila-name = бутылка текилы
-ent-DrinkBottleTequila-desc = Пустая бутылка.
+ent-DrinkBottleTequila = {ent-DrinkTequilaBottleFull}
+    .desc = {ent-DrinkTequilaBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottleVermouth-name = бутылка вермута
-ent-DrinkBottleVermouth-desc = Пустая бутылка.
+ent-DrinkBottleVermouth = {ent-DrinkVermouthBottleFull}
+    .desc = {ent-DrinkVermouthBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottleVodka-name = бутылка водки
-ent-DrinkBottleVodka-desc = Пустая бутылка.
+ent-DrinkBottleVodka = {ent-DrinkVodkaBottleFull}
+    .desc = {ent-DrinkVodkaBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottleWhiskey-name = бутылка виски
-ent-DrinkBottleWhiskey-desc = Пустая бутылка.
+ent-DrinkBottleWhiskey = {ent-DrinkWhiskeyBottleFull}
+    .desc = {ent-DrinkWhiskeyBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkBottleWine-name = бутылка вина
-ent-DrinkBottleWine-desc = Пустая бутылка.
+ent-DrinkBottleWine = {ent-DrinkWineBottleFull}
+    .desc = {ent-DrinkWineBottleFull.desc}
+    .suffix = Пустая
 
-ent-DrinkCartonLime-name = пакет сока лайма
-ent-DrinkCartonLime-desc = Пустая коробка.
+ent-DrinkCartonLime = {ent-DrinkJuiceLimeCartonXL}
+    .desc = {ent-DrinkJuiceLimeCartonXL.desc}
+    .suffix = Пустая
 
-ent-DrinkCartonOrange-name = коробка апельсинового сока
-ent-DrinkCartonOrange-desc = Пустая коробка.
+ent-DrinkCartonOrange = {ent-DrinkJuiceOrangeCartonXL}
+    .desc = {ent-DrinkJuiceOrangeCartonXL.desc}
+    .suffix = Пустая
 
-ent-DrinkCartonTomato-name = коробка томатного сока
-ent-DrinkCartonTomato-desc = Пустая коробка.
+ent-DrinkCartonTomato = упаковка томатного сока
+    .desc = Пустая упаковка.
+    .suffix = Пустая
 
-ent-DrinkCartonCream-name = картонная коробка для молочных сливок
-ent-DrinkCartonCream-desc = Пустая коробка.
+ent-DrinkCartonCream = упаковка молочных сливок
+    .desc = Пустая упаковка.
+    .suffix = Пустая
 
-ent-DrinkCartonMilk-name = пакет молока
-ent-DrinkCartonMilk-desc = Пустая коробка.
+ent-DrinkCartonMilk = пакет молока
+    .desc = Пустая упаковка.
+    .suffix = Пустая
 
-ent-DrinkCartonSoyMilk-name = картонная упаковка соевого молока
-ent-DrinkCartonSoyMilk-desc = Пустая коробка.
+ent-DrinkCartonSoyMilk = упаковка соевого молока
+    .desc = Пустая упаковка.
+    .suffix = Пустая
 
-ent-DrinkCartonOatMilk-name = пакет овсяного молока
-ent-DrinkCartonOatMilk-desc = Пустая коробка.
+ent-DrinkCartonOatMilk = упаковка овсяного молока
+    .desc = Пустая упаковка.
+    .suffix = Пустая
 
