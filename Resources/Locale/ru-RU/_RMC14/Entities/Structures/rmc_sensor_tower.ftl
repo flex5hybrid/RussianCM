@@ -1,9 +1,10 @@
 ent-RMCSensorTower = экспериментальная сенсорная башня
-  .desc = Башня с множеством тонких датчиков, предназначенных для отслеживания погодных условий. 
+    .desc = Башня с множеством тонких датчиков. Эта была настроена для отслеживания биосигнатур.
 
-ent-RMCSensorTowerOn = экспериментальная сенсорная башня
-  .desc = Башня с множеством тонких датчиков, предназначенных для отслеживания погодных условий. 
+ent-RMCSensorTowerOn = { ent-RMCSensorTower}
+    .desc = {ent-RMCSensorTower.desc}
+    .suffix = ВКЛ
 
-ent-RMCSensorTowerOffset = экспериментальная сенсорная башня
-  .desc = Башня с множеством тонких датчиков, предназначенных для отслеживания погодных условий. 
-
+ent-RMCSensorTowerOffset = { ent-RMCSensorTower}
+    .desc = {ent-RMCSensorTower.desc}
+    .suffix = Оффсет
