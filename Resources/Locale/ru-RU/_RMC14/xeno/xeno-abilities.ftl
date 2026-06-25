@@ -381,3 +381,10 @@ rmc-doomed-fail = Это не работает...
 rmc-destroy-cant-reach = У нас нет четкого пути к этому месту!
 
 rmc-destroy-cant-area = Мы не можем прыгнуть в эту область!
+
+
+rmc-xeno-psychic-message-alien = [color=#921992][font size=14][bold]Вы слышите странный, чужеродный голос в своей голове:[/bold] "{$message}"[/font][/color]
+
+rmc-xeno-psychic-message-order = [color=#921992][font size=14][bold]{$queen} приказывает вам:[/bold] "{$message}"[/font][/color]
+
+rmc-xeno-psychic-message-xeno = [color=#921992][font size=14][bold]Голос {$queen} резонирует в вашей голове:[/bold] "{$message}"[/font][/color]

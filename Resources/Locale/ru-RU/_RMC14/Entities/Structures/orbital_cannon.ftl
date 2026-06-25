@@ -1,48 +1,57 @@
 ent-RMCOrbitalCannonCable = пушечные кабели
-  .desc = Несколько больших кабелей.
+    .desc = Несколько больших кабелей.
 
-ent-RMCOrbitalCannonCableConnector = разъем кабеля пушки
-  .desc = Разъем для больших пушечных кабелей.
+ent-RMCOrbitalCannonCableConnector = разъём кабеля пушки
+    .desc = Разъем для больших пушечных кабелей.
 
 ent-RMCOrbitalCannonChair = сиденье
-  .desc = Удобное сиденье.
+    .desc = Удобное сиденье.
 
 ent-RMCOrbitalCannonComputer = консоль орбитальной пушки
-  .desc = Пульт управления системами заряжания орбитальных пушек.
+    .desc = Пульт управления системами заряжания орбитальных пушек.
 
-ent-RMCOrbitalCannonExplosionCluster = кластер OB взрыв
+ent-RMCOrbitalCannonExplosionCluster = кластерный взрыв ОБ
 
 ent-RMCOrbitalCannonExplosionIncendiary = зажигательный взрыв ОБ
 
-ent-RMCOrbitalCannonExplosionAegis = взрывчатка Иджис ОБ взрыв
+ent-RMCOrbitalCannonExplosionAegis = плазменный взрыв ОБ
 
 ent-RMCOrbitalCannonExplosionExplosive = взрывной взрыв ОБ
 
-ent-RMCOrbitalCannonWarheadSpawner = случайная орбитальная боеголовка
-  .desc = Это случайная орбитальная боеголовка.
+ent-RMCOrbitalCannonWarheadSpawner = спавнер случайной орбитальной боеголовки
+    .desc = Это случайная орбитальная боеголовка.
 
-ent-RMCOrbitalCannonWarheadAegis = АЭГ-328-КРА
-  .desc = AEG-328-KRA, или KRAKEN, экспериментальная орбитальная боеголовка на основе форонов, разработанная научно-исследовательским отделом AEGIS. 
+ent-RMCOrbitalCannonWarheadAegis = АЕГ-328-КРА
+    .desc = АЕГ-328-КРА, или КРАКЕН, экспериментальная орбитальная боеголовка на основе плазмы.
 
 ent-RMCOrbitalCannonWarheadCluster = кассетная орбитальная боеголовка
-  .desc = Орбитальная боеголовка, предназначенная для запуска из системы орбитальных пушек UNMC после загрузки достаточного количества твердого топлива. 
+    .desc = Орбитальная боеголовка.
 
 ent-RMCOrbitalCannonWarheadIncendiary = зажигательная орбитальная боеголовка
-  .desc = Орбитальная боеголовка, предназначенная для запуска из системы орбитальных пушек UNMC после загрузки достаточного количества твердого топлива. 
+    .desc = Орбитальная боеголовка.
 
 ent-RMCOrbitalCannonWarheadExplosive = ОФ орбитальная боеголовка
-  .desc = Орбитальная боеголовка, предназначенная для запуска из системы орбитальных пушек UNMC после загрузки достаточного количества твердого топлива. 
+    .desc = Орбитальная боеголовка.
 
 ent-RMCOrbitalCannonWarheadBase = орбитальная боеголовка
+    .desc = Орбитальная боеголовка.
 
-ent-RMCOrbitalCannonFuel = твердое топливо
+ent-RMCOrbitalCannonFuel = топливный блок
+    .desc = Необходим для стрельбы с орбитальной пушки.
 
 ent-RMCOrbitalCannon = орбитальная пушка
-  .desc = Орбитальная пушечная система UNMC. 
+    .desc = Пушка для орбитальных ударов.
 
 ent-RMCOrbitalCannonDerelict = заброшенная орбитальная пушка
-  .desc = Орбитальная пушечная система UNMC. 
+    .desc = Пушка для орбитальных ударов. Заброшена.
 
 ent-RMCOrbitalCannonTray = загрузочный лоток
-  .desc = Загрузочный лоток орбитальной пушки.
+    .desc = Загрузочный лоток для снарядов орбитальной пушки.
 
+ent-AU14OrbitalCannonGovfor = { ent-RMCOrbitalCannon }
+    .desc = { ent-RMCOrbitalCannon.desc }
+    .suffix = ГОВФОР
+
+ent-AU14OrbitalCannonOpfor = { ent-RMCOrbitalCannon }
+    .desc = { ent-RMCOrbitalCannon.desc }
+    .suffix = ОПФОР

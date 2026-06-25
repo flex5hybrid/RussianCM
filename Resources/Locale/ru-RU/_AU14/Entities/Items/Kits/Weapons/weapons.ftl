@@ -87,3 +87,6 @@ ent-AU14KitWeaponABR40 = кейс для тактической охотничь
 
 ent-AU14KitWeaponABR40Civ = кейс для охотничьей винтовки ABR-40
     .desc = Оружейный кейс.
+
+ent-AU14KitWeaponM48A4 = кейс для пистолета M48A4
+    .desc = Оружейный кейс.
