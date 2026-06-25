@@ -249,3 +249,22 @@ rmc-hardpoint-repair-electrical-short-3 = Close the access panel and secure the 
 rmc-hardpoint-repair-fuel-leak-1 = Open the fuel service panel and isolate the ruptured line.
 rmc-hardpoint-repair-fuel-leak-2 = Patch the leaking fuel line.
 rmc-hardpoint-repair-fuel-leak-3 = Tighten the fuel line coupling.
+
+# Vehicle supply console UI
+rmc-vehicle-supply-ui-stored-vehicles = Stored Vehicles
+rmc-vehicle-supply-ui-loadout = Vehicle Loadout
+rmc-vehicle-supply-ui-preview-title = Vehicle
+rmc-vehicle-supply-ui-preview-empty = Vehicle Preview
+
+rmc-vehicle-supply-ui-raise = Raise
+rmc-vehicle-supply-ui-lower = Lower
+
+rmc-vehicle-supply-ui-status = Lift: {$mode} | Status: {$status} | Active: {$active}
+rmc-vehicle-supply-ui-no-lift = No lift
+
+rmc-vehicle-supply-ui-none = none
+rmc-vehicle-supply-ui-busy = busy
+rmc-vehicle-supply-ui-idle = idle
+
+rmc-vehicle-supply-ui-copies-expanded = Copies v
+rmc-vehicle-supply-ui-copies-collapsed = Copies >

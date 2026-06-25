@@ -69,7 +69,7 @@ public sealed partial class VehicleSupplyWindow : FancyWindow
     {
         if (preview == null || string.IsNullOrWhiteSpace(preview.VehicleId))
         {
-            PreviewTitle.Text = "Vehicle Preview";
+            PreviewTitle.Text = Loc.GetString("rmc-vehicle-supply-ui-preview-empty"); // RuMC edit
             VehiclePreview.SetPrototype(null);
             _previewLayers.Clear();
             _previewDirty = false;
