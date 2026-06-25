@@ -37,8 +37,8 @@
     makeSentient: true
     allowSpeech: true
     allowMovement: true
-    name: RMC reaction troop machinegunner
-    description: You have been dispatched as a Royal Marines Commando Rapid Reaction Troop member. The details of the mission have not been disclosed to you, however your main objective is to assist GOVFOR forces in the area of operation. You are friendly to GOVFOR command and neutral to civilians.
+    name: au14-ghost-name-rmcrrt-smartgunner # RuMC edit
+    description: au14-rmcert-rules # RuMC edit
     job: AU14RMCRRTSmartgunner
     raffle:
       settings: short

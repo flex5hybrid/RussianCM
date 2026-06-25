@@ -325,3 +325,10 @@ au14-prodigyrescue-greeting = Вы — часть тактической пои�
     СБ Продиджи — восстанавливаем наш мир
 
     Вы нейтральны ко всем подразделениям Ве-Ю.
+
+au14-ghost-name-rmcrrt-rifleman = Стрелок отряда быстрого реагирования КМП
+au14-ghost-name-rmcrrt-corpsman = Санитар отряда быстрого реагирования КМП
+au14-ghost-name-rmcrrt-breacher = Штурмовик отряда быстрого реагирования КМП
+au14-ghost-name-rmcrrt-commander = Командир отряда быстрого реагирования КМП
+au14-ghost-name-rmcrrt-marksman = Снайпер отряда быстрого реагирования КМП
+au14-ghost-name-rmcrrt-smartgunner = Пулемётчик отряда быстрого реагирования КМП
