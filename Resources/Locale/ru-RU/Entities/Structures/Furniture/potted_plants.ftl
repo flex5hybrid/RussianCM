@@ -1,95 +1,95 @@
-ent-PottedPlantBase-name = растение в горшке
-ent-PottedPlantBase-desc = Немного природы в горшке.
+ent-PottedPlantBase = растение в горшке
+    .desc = Немного природы в горшке.
 
-ent-PottedPlantBioluminscent-name = биолюминесцентное растение в горшке
-ent-PottedPlantBioluminscent-desc = Оно светится!
+ent-PottedPlantBioluminscent = люминесцентное растение в горшке
+    .desc = Оно светится!
 
-ent-PottedPlant10-name = растение в горшке
-ent-PottedPlant10-desc = Красивый кусочек природы в горшке.
+ent-PottedPlantRD = растение НРа
+    .desc = Подарок от ботанического отдела после перевода НРа. На бирке написано: «Возвращайтесь, как будет время».
 
-ent-PottedPlantRD-name = растение в горшке научного директора
-ent-PottedPlantRD-desc = Подарок от ботанического отдела после перевода НД. На бирке написано: «Возвращайтесь, как будет время». Выглядит не очень здоровым...
+ent-PottedPlant27 = пластиковое растение в горшке
+    .desc = Дешёвое пластиковое дерево. Идеально для тех, кто убивает всё, к чему прикасается.
 
-ent-PottedPlant26-name = растение в горшке
-ent-PottedPlant26-desc = Или мне кажется, или оно моргает?
+ent-PottedPlant28 = {ent-PottedPlant27}
+    .desc = {ent-PottedPlant27.desc}
 
-ent-PottedPlant27-name = пластиковое растение в горшке
-ent-PottedPlant27-desc = Дешёвое пластиковое дерево. Идеально для тех, кто убивает всё, к чему прикасается.
+ent-PottedPlant29 = {ent-PottedPlant27}
+    .desc = {ent-PottedPlant27.desc}
 
-ent-PottedPlant0-name = растение в горшке
-ent-PottedPlant0-desc = Немного природы в горшке.
+ent-PottedPlant30 = {ent-PottedPlant27}
+    .desc = {ent-PottedPlant27.desc}
 
-ent-PottedPlant1-name = растение в горшке
-ent-PottedPlant1-desc = Немного природы в горшке.
+ent-PottedPlant10 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant2-name = растение в горшке
-ent-PottedPlant2-desc = Немного природы в горшке.
+ent-PottedPlant26 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant3-name = растение в горшке
-ent-PottedPlant3-desc = Немного природы в горшке.
+ent-PottedPlant0 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant4-name = растение в горшке
-ent-PottedPlant4-desc = Немного природы в горшке.
+ent-PottedPlant1 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant5-name = растение в горшке
-ent-PottedPlant5-desc = Немного природы в горшке.
+ent-PottedPlant2 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant6-name = растение в горшке
-ent-PottedPlant6-desc = Немного природы в горшке.
+ent-PottedPlant3 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant7-name = растение в горшке
-ent-PottedPlant7-desc = Немного природы в горшке.
+ent-PottedPlant4 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant8-name = растение в горшке
-ent-PottedPlant8-desc = Немного природы в горшке.
+ent-PottedPlant5 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant11-name = растение в горшке
-ent-PottedPlant11-desc = Немного природы в горшке.
+ent-PottedPlant6 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant12-name = растение в горшке
-ent-PottedPlant12-desc = Немного природы в горшке.
+ent-PottedPlant7 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant13-name = растение в горшке
-ent-PottedPlant13-desc = Немного природы в горшке.
+ent-PottedPlant8 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant14-name = растение в горшке
-ent-PottedPlant14-desc = Немного природы в горшке.
+ent-PottedPlant11 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant15-name = растение в горшке
-ent-PottedPlant15-desc = Немного природы в горшке.
+ent-PottedPlant12 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant16-name = растение в горшке
-ent-PottedPlant16-desc = Немного природы в горшке.
+ent-PottedPlant13 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant17-name = растение в горшке
-ent-PottedPlant17-desc = Немного природы в горшке.
+ent-PottedPlant14 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant18-name = растение в горшке
-ent-PottedPlant18-desc = Немного природы в горшке.
+ent-PottedPlant15 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant19-name = растение в горшке
-ent-PottedPlant19-desc = Немного природы в горшке.
+ent-PottedPlant16 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant20-name = растение в горшке
-ent-PottedPlant20-desc = Немного природы в горшке.
+ent-PottedPlant17 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant21-name = растение в горшке
-ent-PottedPlant21-desc = Немного природы в горшке.
+ent-PottedPlant18 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant22-name = растение в горшке
-ent-PottedPlant22-desc = Немного природы в горшке.
+ent-PottedPlant19 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant23-name = растение в горшке
-ent-PottedPlant23-desc = Немного природы в горшке.
+ent-PottedPlant20 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant24-name = растение в горшке
-ent-PottedPlant24-desc = Немного природы в горшке.
+ent-PottedPlant21 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant28-name = пластиковое растение в горшке
-ent-PottedPlant28-desc = Дешёвое пластиковое дерево. Идеально для тех, кто убивает всё, к чему прикасается.
+ent-PottedPlant22 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant29-name = пластиковое растение в горшке
-ent-PottedPlant29-desc = Дешёвое пластиковое дерево. Идеально для тех, кто убивает всё, к чему прикасается.
+ent-PottedPlant23 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
 
-ent-PottedPlant30-name = пластиковое растение в горшке
-ent-PottedPlant30-desc = Дешёвое пластиковое дерево. Идеально для тех, кто убивает всё, к чему прикасается.
+ent-PottedPlant24 = {ent-PottedPlantBase}
+    .desc = {ent-PottedPlantBase.desc}
