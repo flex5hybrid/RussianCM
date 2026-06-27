@@ -558,7 +558,11 @@ public sealed partial class HardpointSystem : EntitySystem
         UpdateFrameDamageAppearance(vehicle, frameIntegrity);
 
         if ((previous > 0f) != (frameIntegrity.Integrity > 0f))
+        {
             RefreshCanRun(vehicle);
+            if (frameIntegrity.Integrity <= 0f) // RuMC14
+                RaiseLocalEvent(vehicle, new Content.Shared._RuMC14.Vehicle.VehicleFrameDestroyedEvent(vehicle)); // RuMC14
+        }
 
         _lock.RefreshForcedOpen(vehicle);
         return true;
@@ -1587,6 +1591,16 @@ public sealed partial class HardpointSystem : EntitySystem
         }
 
         RefreshVehicleFrameIntegrityFromHardpoints(ent.Owner, ent.Comp, itemSlots);
+
+        // RuMC edit start
+        if (anyTopLevelIntact)
+        {
+            var afterDamageHardpoints = new List<(EntityUid Item, HardpointIntegrityComponent Integrity)>();
+            CollectIntactTopLevelHardpoints(ent.Owner, ent.Comp, itemSlots, afterDamageHardpoints);
+            if (afterDamageHardpoints.Count == 0)
+                RaiseLocalEvent(ent.Owner, new Content.Shared._RuMC14.Vehicle.VehicleFrameDestroyedEvent(ent.Owner));
+        }
+        // RuMC edit end
 
         args.Damage = ScaleDamage(args.Damage, hullFraction);
     }
