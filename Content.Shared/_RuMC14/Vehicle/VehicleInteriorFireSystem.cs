@@ -1,7 +1,6 @@
 using Content.Shared._RMC14.Vehicle;
 using Content.Shared._RuMC14.Vehicle;
 using Content.Shared.Maps;
-using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;

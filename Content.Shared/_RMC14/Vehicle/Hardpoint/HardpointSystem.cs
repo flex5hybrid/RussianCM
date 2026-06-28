@@ -1595,9 +1595,9 @@ public sealed partial class HardpointSystem : EntitySystem
         // RuMC edit start
         if (anyTopLevelIntact)
         {
-            var afterDamageHardpoints = new List<(EntityUid Item, HardpointIntegrityComponent Integrity)>();
-            CollectIntactTopLevelHardpoints(ent.Owner, ent.Comp, itemSlots, afterDamageHardpoints);
-            if (afterDamageHardpoints.Count == 0)
+            var newTopLevel = new List<(EntityUid, HardpointIntegrityComponent)>();
+            CollectIntactTopLevelHardpoints(ent.Owner, ent.Comp, itemSlots, newTopLevel);
+            if (newTopLevel.Count == 0)
                 RaiseLocalEvent(ent.Owner, new Content.Shared._RuMC14.Vehicle.VehicleFrameDestroyedEvent(ent.Owner));
         }
         // RuMC edit end
