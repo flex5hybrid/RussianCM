@@ -34,7 +34,7 @@
           unwieldedScatterMultiplier: 2
           shotsToMaxScatter: 6
         FullAuto:
-          fireDelay: 0
+          fireDelay: 0.1 # RuMC edit
           maxScatterModifier: 26
           useBurstScatterMult: true
           unwieldedScatterMultiplier: 2
