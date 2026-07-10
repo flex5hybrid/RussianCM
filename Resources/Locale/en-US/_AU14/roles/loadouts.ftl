@@ -8,7 +8,6 @@ au14-loadout-group-synth-equipment = Synthetic Equipment
 au14-loadout-group-synth-webbing = Synthetic Webbing
 au14-loadout-group-synth-backpack = Synthetic Backpack
 AU14JobGOVFORAuxSupportSynth-loadout = GOVFOR Support Synth loadout
-rucm-loadout-group-synth-reset-keys = Synthetic Reset Keys
 
 au14-loadout-group-commander-sidearm-belt = Sidearm Belt
 

@@ -1,9 +1,0 @@
-- type: loadoutGroup
-  id: SynthResetKeysRuMC
-  name: rucm-loadout-group-synth-reset-keys
-  minLimit: 1
-  maxLimit: 1
-  loadouts:
-  - SynthResetKeyRMC
-  - SynthResetKeyProdigyRMC
-  - SynthResetKeyHyperdyneRMC
