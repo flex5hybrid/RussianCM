@@ -68,12 +68,12 @@ public sealed partial class SapperWorkbenchSystem : EntitySystem
         { "RMCPlastic", 2000 },
     };
 
-    private static readonly Dictionary<string, string> MaterialDisplayNameKeys = new()
+    private static readonly Dictionary<string, string> MaterialDisplayNames = new()
     {
-        { "CMSteel", "insfor-sapper-workbench-material-steel" },
-        { "CMPlasteel", "insfor-sapper-workbench-material-plasteel" },
-        { "RMCWood", "insfor-sapper-workbench-material-wood" },
-        { "RMCPlastic", "insfor-sapper-workbench-material-plastic" },
+        { "CMSteel", "Metal Sheets" },
+        { "CMPlasteel", "Plasteel Sheets" },
+        { "RMCWood", "Wooden Planks" },
+        { "RMCPlastic", "Plastic Sheets" },
     };
 
     public override void Initialize()
@@ -354,7 +354,7 @@ public sealed partial class SapperWorkbenchSystem : EntitySystem
         ConsumeItems(recipe, nearby);
 
         Spawn(recipe.Prototype, Transform(ent).Coordinates);
-        _popup.PopupEntity(Loc.GetString("insfor-sapper-workbench-crafted", ("item", LocalizeName(recipe.Name))), ent, args.User);
+        _popup.PopupEntity(Loc.GetString("insfor-sapper-workbench-crafted", ("item", recipe.Name)), ent, args.User);
         PushState(ent);
     }
 
@@ -557,9 +557,7 @@ public sealed partial class SapperWorkbenchSystem : EntitySystem
                 continue; // Attachments cancelled each other out; nothing to show.
 
             var buff = goodWhenPositive ? value > 0 : value < 0;
-            stats.Add(new SapperWorkbenchStatLine(
-                Loc.GetString("insfor-sapper-workbench-stat-line", ("name", Loc.GetString(name)), ("value", value.ToString("+0.##;-0.##"))),
-                buff));
+            stats.Add(new SapperWorkbenchStatLine($"{name}: {value:+0.##;-0.##}", buff));
         }
 
         var materials = TryComp(ent, out MaterialStorageComponent? materialStorage)
@@ -579,10 +577,10 @@ public sealed partial class SapperWorkbenchSystem : EntitySystem
             var recipe = ent.Comp.Recipes[i];
             recipes.Add(new SapperWorkbenchRecipeState(
                 i,
-                LocalizeName(recipe.Name),
+                recipe.Name,
                 recipe.Prototype.Id,
                 recipe.Materials.ToDictionary(kvp => MaterialDisplay(kvp.Key), kvp => kvp.Value),
-                recipe.Items.Select(req => new SapperWorkbenchIngredientState(LocalizeName(req.Name), req.Count, req.IconPrototype)).ToList(),
+                recipe.Items.Select(req => new SapperWorkbenchIngredientState(req.Name, req.Count, req.IconPrototype)).ToList(),
                 CanBuildRecipe(ent, recipe, nearby)));
         }
 
@@ -601,16 +599,16 @@ public sealed partial class SapperWorkbenchSystem : EntitySystem
         {
             foreach (var mod in ranged.Modifiers)
             {
-                AddStat(stats, "insfor-sapper-workbench-stat-accuracy", (float) mod.AccuracyAddMult.Double());
-                AddStat(stats, "insfor-sapper-workbench-stat-damage-falloff", (float) mod.DamageFalloffAddMult.Double(), goodWhenPositive: false);
-                AddStat(stats, "insfor-sapper-workbench-stat-burst-scatter", (float) mod.BurstScatterAddMult, goodWhenPositive: false);
-                AddStat(stats, "insfor-sapper-workbench-stat-shots-per-burst", mod.ShotsPerBurstFlat);
-                AddStat(stats, "insfor-sapper-workbench-stat-damage", (float) mod.DamageAddMult.Double());
-                AddStat(stats, "insfor-sapper-workbench-stat-recoil", mod.RecoilFlat, goodWhenPositive: false);
-                AddStat(stats, "insfor-sapper-workbench-stat-scatter", (float) mod.ScatterFlat, goodWhenPositive: false);
-                AddStat(stats, "insfor-sapper-workbench-stat-fire-delay", mod.FireDelayFlat, goodWhenPositive: false);
-                AddStat(stats, "insfor-sapper-workbench-stat-projectile-speed", mod.ProjectileSpeedFlat);
-                AddStat(stats, "insfor-sapper-workbench-stat-range", mod.RangeFlat);
+                AddStat(stats, "Accuracy", (float) mod.AccuracyAddMult.Double());
+                AddStat(stats, "Damage falloff", (float) mod.DamageFalloffAddMult.Double(), goodWhenPositive: false);
+                AddStat(stats, "Burst scatter", (float) mod.BurstScatterAddMult, goodWhenPositive: false);
+                AddStat(stats, "Shots per burst", mod.ShotsPerBurstFlat);
+                AddStat(stats, "Damage", (float) mod.DamageAddMult.Double());
+                AddStat(stats, "Recoil", mod.RecoilFlat, goodWhenPositive: false);
+                AddStat(stats, "Scatter", (float) mod.ScatterFlat, goodWhenPositive: false);
+                AddStat(stats, "Fire delay", mod.FireDelayFlat, goodWhenPositive: false);
+                AddStat(stats, "Projectile speed", mod.ProjectileSpeedFlat);
+                AddStat(stats, "Range", mod.RangeFlat);
             }
         }
 
@@ -618,21 +616,21 @@ public sealed partial class SapperWorkbenchSystem : EntitySystem
         {
             foreach (var mod in speed.Modifiers)
             {
-                AddStat(stats, "insfor-sapper-workbench-stat-walk-speed", mod.Walk);
-                AddStat(stats, "insfor-sapper-workbench-stat-sprint-speed", mod.Sprint);
+                AddStat(stats, "Walk speed", mod.Walk);
+                AddStat(stats, "Sprint speed", mod.Sprint);
             }
         }
 
         if (TryComp(attachment, out AttachableSizeModsComponent? size))
         {
             foreach (var mod in size.Modifiers)
-                AddStat(stats, "insfor-sapper-workbench-stat-item-size", mod.Size, goodWhenPositive: false);
+                AddStat(stats, "Item size", mod.Size, goodWhenPositive: false);
         }
 
         if (TryComp(attachment, out AttachableWieldDelayModsComponent? wield))
         {
             foreach (var mod in wield.Modifiers)
-                AddStat(stats, "insfor-sapper-workbench-stat-wield-delay", (float) mod.Delay.TotalSeconds, goodWhenPositive: false);
+                AddStat(stats, "Wield delay", (float) mod.Delay.TotalSeconds, goodWhenPositive: false);
         }
     }
 
@@ -645,12 +643,12 @@ public sealed partial class SapperWorkbenchSystem : EntitySystem
         stats[name] = (total, goodWhenPositive);
     }
 
-    private string SlotDisplay(string slotId) => slotId switch
+    private static string SlotDisplay(string slotId) => slotId switch
     {
-        "rmc-aslot-rail" => Loc.GetString("rmc-aslot-rail"),
-        "rmc-aslot-barrel" => Loc.GetString("rmc-aslot-barrel"),
-        "rmc-aslot-underbarrel" => Loc.GetString("rmc-aslot-underbarrel"),
-        "rmc-aslot-stock" => Loc.GetString("rmc-aslot-stock"),
+        "rmc-aslot-rail" => "Rail",
+        "rmc-aslot-barrel" => "Barrel",
+        "rmc-aslot-underbarrel" => "Underbarrel",
+        "rmc-aslot-stock" => "Stock",
         _ => slotId,
     };
 
@@ -670,13 +668,8 @@ public sealed partial class SapperWorkbenchSystem : EntitySystem
         return rawAmount / unit;
     }
 
-    private string MaterialDisplay(string material)
+    private static string MaterialDisplay(string material)
     {
-        return MaterialDisplayNameKeys.TryGetValue(material, out var key) ? Loc.GetString(key) : material;
-    }
-
-    private string LocalizeName(string nameOrKey)
-    {
-        return Loc.TryGetString(nameOrKey, out var localized) ? localized : nameOrKey;
+        return MaterialDisplayNames.GetValueOrDefault(material, material);
     }
 }

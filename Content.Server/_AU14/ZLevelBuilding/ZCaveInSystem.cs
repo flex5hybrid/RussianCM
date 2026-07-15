@@ -103,6 +103,12 @@ public sealed class ZCaveInSystem : EntitySystem
 
         // Attribution entries are keyed by map uid; drop them with the round so stale maps don't accumulate.
         SubscribeLocalEvent<Content.Shared.GameTicking.RoundRestartCleanupEvent>(_ => _lastDigger.Clear());
+        SubscribeLocalEvent<MapRemovedEvent>(OnMapRemoved);
+    }
+
+    private void OnMapRemoved(MapRemovedEvent ev)
+    {
+        _lastDigger.Remove(ev.Uid);
     }
 
     /// <summary>Records the last player to deal damage on an underground level (the likely over-miner), for attribution.</summary>
@@ -501,41 +507,6 @@ public sealed class ZCaveInSystem : EntitySystem
         }
     }
 
-    // 🔧 TUNABLE: how far (in tiles) collapse screenshake and the vignette blink reach from the collapsing
-    // region. Players further away feel nothing.
-    private const int CollapseEffectRange = 33;
-
-    /// <summary>Minimum Chebyshev tile distance from <paramref name="tile"/> to any tile in the region
-    /// (0 = standing in it). Returns int.MaxValue for an empty region.</summary>
-    private static int DistanceToRegion(Vector2i tile, HashSet<Vector2i> region)
-    {
-        if (region.Contains(tile))
-            return 0;
-
-        var best = int.MaxValue;
-        foreach (var t in region)
-        {
-            var d = Math.Max(Math.Abs(t.X - tile.X), Math.Abs(t.Y - tile.Y));
-            if (d < best)
-                best = d;
-        }
-        return best;
-    }
-
-    /// <summary>World-space AABB of the collapsed region's tiles (used to range-limit surface effects).</summary>
-    private (Vector2 Min, Vector2 Max) RegionWorldBounds(EntityUid gridUid, MapGridComponent grid, List<Vector2i> region)
-    {
-        var min = new Vector2(float.MaxValue, float.MaxValue);
-        var max = new Vector2(float.MinValue, float.MinValue);
-        foreach (var tile in region)
-        {
-            var world = _transform.ToMapCoordinates(_map.GridTileToLocal(gridUid, grid, tile)).Position;
-            min = Vector2.Min(min, world);
-            max = Vector2.Max(max, world);
-        }
-        return (min, max);
-    }
-
     /// <summary>An indestructible map-border wall: tagged as a wall but with no Damageable at all (the
     /// CMBaseWallInvincible family). These are map boundaries and must never fall or be moved.</summary>
     private bool IsIndestructibleWall(EntityUid uid)
@@ -543,22 +514,17 @@ public sealed class ZCaveInSystem : EntitySystem
         return _tag.HasTag(uid, "Wall") && !HasComp<DamageableComponent>(uid);
     }
 
-    /// <summary>Turns a structure that has fallen through a collapsed floor into inert rubble: every fixture's
-    /// collision layer/mask is zeroed (non-hard alone still raises contact events, so bullets would still "hit"
-    /// the fallen wall - with no collision bits projectiles pass straight through and cave rocks never grind
-    /// contacts against it). The networked ZFallenDebris marker makes the client draw it battered.</summary>
+    /// <summary>Strips fixture hardness from a structure that has fallen through a collapsed floor, so it can
+    /// overlap cave rocks without generating endless physics contacts. It keeps its sprite, damage state and
+    /// interactions - it just no longer blocks or pushes.</summary>
     private void MakeFallenDebrisNonHard(EntityUid uid)
     {
-        EnsureComp<ZFallenDebrisComponent>(uid);
-
         if (!TryComp<FixturesComponent>(uid, out var fixtures))
             return;
 
-        foreach (var (id, fixture) in fixtures.Fixtures)
+        foreach (var fixture in fixtures.Fixtures.Values)
         {
             _physics.SetHard(uid, fixture, false, manager: fixtures);
-            _physics.SetCollisionLayer(uid, id, fixture, 0, manager: fixtures);
-            _physics.SetCollisionMask(uid, id, fixture, 0, manager: fixtures);
         }
     }
 
@@ -672,30 +638,15 @@ public sealed class ZCaveInSystem : EntitySystem
         if (playRumble)
             stoneMap.Comp.CollapseNextRumble = now + RumbleInterval;
 
-        // Effects are local: only players near the collapsing region feel anything (previously the whole
-        // map shook, which read as server-wide shaking). Engulfed players (their own tile is in the doomed
-        // region) additionally get the rapid black vignette, re-sent each rumble so it lasts the collapse.
-        _gridQuery.TryComp(stoneMap.Comp.StoneGrid, out var stoneGridComp);
-        var regionTiles = new HashSet<Vector2i>(stoneMap.Comp.LastCollapseRegion);
-
         var query = EntityQueryEnumerator<ActorComponent, TransformComponent>();
         var played = false;
-        while (query.MoveNext(out var uid, out var actor, out var xform))
+        while (query.MoveNext(out var uid, out _, out var xform))
         {
-            if (xform.MapUid != stoneMap.Owner || stoneGridComp == null)
-                continue;
-
-            var actorCoords = _transform.GetMapCoordinates(uid, xform);
-            var actorTile = _map.TileIndicesFor(stoneMap.Comp.StoneGrid, stoneGridComp, actorCoords);
-            var dist = DistanceToRegion(actorTile, regionTiles);
-            if (dist > CollapseEffectRange)
+            if (xform.MapUid != stoneMap.Owner)
                 continue;
 
             // 8 shakes @ 0.1s = 0.8s, longer than the 0.15s step, so the shake never lapses mid-collapse.
             _shake.ShakeCamera(uid, 8, 3);
-
-            if (playRumble)
-                RaiseNetworkEvent(new ZCollapseVignetteEvent { Engulfed = dist <= 1 }, actor.PlayerSession);
 
             if (playRumble && !played)
             {
@@ -765,23 +716,12 @@ public sealed class ZCaveInSystem : EntitySystem
                 Spawn(settings.RockDebris, _map.GridTileToLocal(surfaceGridUid, surfaceGridComp, surfaceTile));
         }
 
-        // Brief shake (+ grey vignette blink) for players on the surface NEAR the cave-in - not map-wide.
-        // Region tiles map 1:1 to surface world positions, so distance is measured against the region's
-        // world bounds.
-        var (boundsMin, boundsMax) = RegionWorldBounds(stoneMap.Comp.StoneGrid, stoneGrid, region);
+        // Brief shake for players on the surface above the cave-in.
         var actorQuery = EntityQueryEnumerator<ActorComponent, TransformComponent>();
-        while (actorQuery.MoveNext(out var uid, out var actor, out var xform))
+        while (actorQuery.MoveNext(out var uid, out _, out var xform))
         {
-            if (xform.MapUid != aboveMap)
-                continue;
-
-            var pos = _transform.GetWorldPosition(uid);
-            var clamped = Vector2.Clamp(pos, boundsMin, boundsMax);
-            if ((pos - clamped).Length() > CollapseEffectRange)
-                continue;
-
-            _shake.ShakeCamera(uid, 5, 2);
-            RaiseNetworkEvent(new ZCollapseVignetteEvent(), actor.PlayerSession);
+            if (xform.MapUid == aboveMap)
+                _shake.ShakeCamera(uid, 5, 2);
         }
 
         stoneMap.Comp.LastCollapseRegion.Clear();

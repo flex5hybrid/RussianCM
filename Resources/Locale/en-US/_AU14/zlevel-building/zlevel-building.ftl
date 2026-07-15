@@ -16,6 +16,26 @@ au-scanner-off = You switch the structural scanner off.
 # Building overhaul (z-level) - mapper opt-out condition
 construction-step-condition-au14-zbuild-allowed = Vertical building must be allowed on this map.
 
+# Building overhaul (z-level) - construction menu entries
+au14-construction-tile-plating = plating
+au14-construction-tile-plating-desc = Lay down metal plating. Can be placed over open space to build floors in the air.
+au14-construction-tile-steel = steel floor
+au14-construction-tile-steel-desc = Lay down a steel floor tile. Can be placed over open space to build floors in the air.
+au14-construction-tile-dirt = dirt
+au14-construction-tile-dirt-desc = Lay down a patch of dirt. Can be placed over open space to build floors in the air.
+
+au14-construction-z-stairs-up = z-level stairs (up)
+au14-construction-z-stairs-up-desc = A staircase leading up one z-level, with a standing platform laid on the level above and a support beam here.
+au14-construction-z-stairs-down = z-level stairs (down)
+au14-construction-z-stairs-down-desc = A staircase leading down one z-level, with a support beam reflected on the level below.
+
+au14-construction-support-beam-wood = wooden support beam
+au14-construction-support-beam-wood-desc = A wooden support beam. Place it below an upper-level floor to hold it up - cheap, but only spans a short distance.
+au14-construction-support-beam-metal = metal support beam
+au14-construction-support-beam-metal-desc = A steel support beam. Place it below an upper-level floor to hold it up - a solid, all-round span.
+au14-construction-support-beam-plasteel = plasteel support beam
+au14-construction-support-beam-plasteel-desc = A plasteel support beam. Place it below an upper-level floor to hold it up - expensive, but spans the widest platform.
+
 ## Z-Level Toggles admin tool (construction menu > Tools)
 au-zlevel-toggles-title = Z-Level Toggles
 au-zlevel-toggles-search = Search maps...
@@ -25,39 +45,3 @@ au-zlevel-toggles-no = No
 au-zlevel-toggles-map-loaded = {$map} (loaded)
 au-zlevel-toggle-enabled = Z-level building ALLOWED on {$map}.
 au-zlevel-toggle-disabled = Z-level building DENIED on {$map}.
-
-## Debug and admin commands
-cmd-au-zsupport-desc = Recompute the z-level structural support graph and report supported/unsupported counts.
-cmd-au-zsupport-help = Usage: au_zsupport [all]
-cmd-au-zsupport-recomputed-all = Recomputed { $grids } grid(s).
-cmd-au-zsupport-player-only = Run this as an in-game player, or use 'au_zsupport all'.
-cmd-au-zsupport-not-on-grid = You are not standing on a grid. Try 'au_zsupport all'.
-cmd-au-zsupport-recomputed-grid = Recomputed your grid { $grid }.
-cmd-au-zsupport-report = { $prefix } Supports: { $supported } supported, { $unsupported } unsupported.
-
-cmd-au-dig-player-only = This command must be run by an in-game player.
-cmd-au-digup-desc = Dig straight up one z-level, surfacing at your current horizontal position.
-cmd-au-digup-help = Usage: au_digup
-cmd-au-digup-success = Dug up a level.
-cmd-au-digup-failed = Could not dig up here (nothing above, a wall blocks the spot above, or the feature is disabled).
-cmd-au-digdown-desc = Dig straight down, creating/descending into a stone z-level beneath you.
-cmd-au-digdown-help = Usage: au_digdown
-cmd-au-digdown-success = Dug down a level.
-cmd-au-digdown-failed = Could not dig down here (map opted out, feature disabled, or a hand-authored level is already below).
-
-cmd-au-multiz-desc = List maps with their AU14 Multi Z-Level (vertical building) status, or toggle it per map / globally.
-cmd-au-multiz-help = au_multiz (list) | au_multiz <mapId> <on|off> | au_multiz global <on|off>
-cmd-au-multiz-enabled = ENABLED
-cmd-au-multiz-disabled = DISABLED
-cmd-au-multiz-yes = Yes
-cmd-au-multiz-no = No
-cmd-au-multiz-global-status = Global AU14 z-building: { $state } (toggle: au_multiz global on|off)
-cmd-au-multiz-map-status = MapId { $id } { $map } - Multi Z-Level: { $state }
-cmd-au-multiz-usage = Usage: au_multiz <mapId|global> <on|off>
-cmd-au-multiz-invalid-state = Second argument must be 'on' or 'off'.
-cmd-au-multiz-global-changed = Global AU14 z-building is now { $state }.
-cmd-au-multiz-invalid-map = Map argument must be a numeric MapId (run 'au_multiz' to list them) or 'global'.
-cmd-au-multiz-map-not-found = No map with MapId { $id }.
-cmd-au-multiz-can-build = can now
-cmd-au-multiz-cannot-build = can no longer
-cmd-au-multiz-map-changed = Map { $id } Multi Z-Level set to { $state }. Players { $permission } build AU14 z-level stairs/floors here.

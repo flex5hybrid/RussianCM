@@ -182,8 +182,9 @@ public sealed partial class CustomConstructionMenuSystem
             sb.AppendLine("  conditions:");
             sb.AppendLine("  - !type:ZBuildAllowed");
         }
-        // NOTE: no "icon:" block - this fork's ConstructionPrototype has no icon field (the YAML Linter CI
-        // rejects it as an unknown field). The menu derives the recipe icon from the applier entity's sprite.
+        sb.AppendLine("  icon:");
+        sb.AppendLine("    sprite: Objects/Tiles/tile.rsi");
+        sb.AppendLine("    state: steel");
 
         return sb.ToString();
     }

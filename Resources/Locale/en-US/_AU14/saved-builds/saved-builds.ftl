@@ -74,17 +74,8 @@ gmod-construction-menu-delete-build-confirm = Confirm Delete?
 saved-build-controls-mode-admin = Mode: Admin (instant, free)
 saved-build-controls-mode-player = Mode: Build (ghosts + materials)
 saved-build-controls-gridalign = Alt (toggle): Grid-aligned ({ $state })
+saved-build-controls-state-on = ON
+saved-build-controls-state-off = off
 saved-build-controls-rotate = { $key }: Rotate
 saved-build-controls-place = Left Click: Place
 saved-build-controls-cancel = Right Click: Cancel
-
-# Multi-z placement
-saved-build-z-skipped = {$count} entities could not be placed - their z-level could not be created here.
-saved-build-rename-confirm = OK
-saved-build-unknown-source = Unknown
-cmd-buildsave-desc = Open the build-save selection panel.
-cmd-buildsave-help = Usage: buildsave
-cmd-savebuild-desc = Save the player-built entities in a box around you to a shareable file.
-cmd-savebuild-help = Usage: savebuild <name> [radius 0-5]
-cmd-savebuild-player-only = This command can only be run by a player.
-cmd-savebuild-invalid-radius = Radius must be a number.

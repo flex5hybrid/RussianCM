@@ -1,16 +1,6 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 # Copyright (c) 2026 wray-git
 # SPDX-License-Identifier: AGPL-3.0-only
-
-saved-build-z-skipped = Не удалось разместить сущности ({$count}): здесь невозможно создать необходимые Z-уровни.
-saved-build-rename-confirm = Готово
-saved-build-unknown-source = Неизвестный источник
-cmd-buildsave-desc = Открывает панель выбора области для сохранения постройки.
-cmd-buildsave-help = Использование: buildsave
-cmd-savebuild-desc = Сохраняет построенные игроком сущности в области вокруг него в файл для обмена.
-cmd-savebuild-help = Использование: savebuild <название> [радиус 0–5]
-cmd-savebuild-player-only = Эту команду может выполнить только игрок.
-cmd-savebuild-invalid-radius = Радиус должен быть числом.
 # Examine line shown on any entity a player constructed.
 construction-player-built-examine = Построил: [color=cyan]{ $name }[/color].
 

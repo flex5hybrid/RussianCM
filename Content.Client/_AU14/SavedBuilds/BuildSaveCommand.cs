@@ -11,8 +11,8 @@ namespace Content.Client._AU14.SavedBuilds;
 public sealed class BuildSaveCommand : IConsoleCommand
 {
     public string Command => "buildsave";
-    public string Description => Loc.GetString("cmd-buildsave-desc");
-    public string Help => Loc.GetString("cmd-buildsave-help");
+    public string Description => "Open the build-save selection panel.";
+    public string Help => "buildsave";
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {

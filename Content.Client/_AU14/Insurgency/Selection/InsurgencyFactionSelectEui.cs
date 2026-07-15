@@ -17,6 +17,7 @@ public sealed class InsurgencyFactionSelectEui : BaseEui
     {
         _window = new InsurgencyFactionSelectWindow();
         _window.OnSelectDefault += id => SendMessage(new InsurgencyFactionSelectDefaultMessage(id));
+        _window.OnSelectCustom += def => SendMessage(new InsurgencyFactionSelectCustomMessage(def));
         _window.OnClose += () => SendMessage(new CloseEuiMessage());
     }
 

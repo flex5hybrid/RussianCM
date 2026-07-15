@@ -76,7 +76,7 @@ SPDX-License-Identifier: AGPL-3.0-only
                         <Button Name="SavedBuildRenameButton" Visible="False" Margin="0 0 0 2"/>
                         <BoxContainer Name="SavedBuildRenameRow" Orientation="Horizontal" Visible="False" Margin="0 0 0 2">
                             <LineEdit Name="SavedBuildRenameEdit" HorizontalExpand="True" Margin="0 0 2 0"/>
-                    <Button Name="SavedBuildRenameConfirm" Text="{Loc 'saved-build-rename-confirm'}" MinWidth="40"/>
+                            <Button Name="SavedBuildRenameConfirm" Text="OK" MinWidth="40"/>
                         </BoxContainer>
                         <Button Name="SavedBuildDeleteButton" Visible="False" Margin="0 0 0 2"/>
                         <Button Name="SavedBuildFolderButton" Visible="False" Margin="0 0 0 4"/>
@@ -111,9 +111,6 @@ SPDX-License-Identifier: AGPL-3.0-only
                                 <Button Name="ConstructionItemsEditorButton"
                                         Text="{Loc 'gmod-construction-menu-items-editor'}"
                                         HorizontalExpand="True" Margin="0 0 0 2"/>
-                                <Button Name="MassEntityEditorButton"
-                                        Text="{Loc 'gmod-construction-menu-mass-editor'}"
-                                        HorizontalExpand="True" Margin="0 0 0 2"/>
                                 <Button Name="TilesEditorButton"
                                         Text="{Loc 'gmod-construction-menu-tiles-editor'}"
                                         HorizontalExpand="True" Margin="0 0 0 2"/>
@@ -122,9 +119,6 @@ SPDX-License-Identifier: AGPL-3.0-only
                                         HorizontalExpand="True" Margin="0 0 0 2"/>
                                 <Button Name="ZLevelTogglesButton"
                                         Text="{Loc 'gmod-construction-menu-zlevel-toggles'}"
-                                        HorizontalExpand="True" Margin="0 0 0 2"/>
-                                <Button Name="ZSyncListsButton"
-                                        Text="{Loc 'gmod-construction-menu-zsync-lists'}"
                                         HorizontalExpand="True" Margin="0 0 0 2"/>
 
                                 <!-- INSFOR category: insfor-update intentionally layers this button onto

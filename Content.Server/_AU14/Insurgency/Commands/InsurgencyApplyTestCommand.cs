@@ -20,15 +20,15 @@ public sealed class InsurgencyApplyTestCommand : IConsoleCommand
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        var title = args.Length >= 1 ? string.Join(' ', args) : Loc.GetString("cmd-insforapplytest-default-title");
+        var title = args.Length >= 1 ? string.Join(' ', args) : "Test Liberation Cell";
 
         var definition = new FactionDefinition
         {
             Metadata =
             {
                 Title = title,
-                Description = Loc.GetString("cmd-insforapplytest-default-description"),
-                RoleplayText = Loc.GetString("cmd-insforapplytest-default-roleplay"),
+                Description = "A ragtag cell testing the INSFOR apply pipeline.",
+                RoleplayText = "Play it scrappy and improvised. You are locals, not soldiers.",
             },
         };
 

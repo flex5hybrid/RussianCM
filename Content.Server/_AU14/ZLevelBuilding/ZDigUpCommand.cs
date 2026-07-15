@@ -19,21 +19,21 @@ namespace Content.Server._AU14.ZLevelBuilding;
 public sealed class ZDigUpCommand : IConsoleCommand
 {
     public string Command => "au_digup";
-    public string Description => Loc.GetString("cmd-au-digup-desc");
-    public string Help => Loc.GetString("cmd-au-digup-help");
+    public string Description => "Dig straight up one z-level, surfacing at your current horizontal position.";
+    public string Help => "au_digup";
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
         if (shell.Player?.AttachedEntity is not { } player)
         {
-            shell.WriteError(Loc.GetString("cmd-au-dig-player-only"));
+            shell.WriteError("This command must be run by an in-game player.");
             return;
         }
 
         var system = IoCManager.Resolve<IEntitySystemManager>().GetEntitySystem<ZLevelBuildingSystem>();
         if (system.DigUp(player))
-            shell.WriteLine(Loc.GetString("cmd-au-digup-success"));
+            shell.WriteLine("Dug up a level.");
         else
-            shell.WriteError(Loc.GetString("cmd-au-digup-failed"));
+            shell.WriteError("Could not dig up here (nothing above, a wall blocks the spot above, or the feature is disabled).");
     }
 }

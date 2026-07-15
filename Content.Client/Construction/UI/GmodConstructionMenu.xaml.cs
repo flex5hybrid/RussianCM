@@ -222,11 +222,9 @@ public sealed partial class GmodConstructionMenu : DefaultWindow, IConstructionM
         Modernize(AdvancedDuplicatorButton);
         Modernize(PartnersButton);
         Modernize(ConstructionItemsEditorButton);
-        Modernize(MassEntityEditorButton); // AU14: batch add-to-menu tool
         Modernize(TilesEditorButton);
         Modernize(LatheEditorButton);
         Modernize(ZLevelTogglesButton);
-        Modernize(ZSyncListsButton); // AU14: z-level border reflection black/whitelist
         Modernize(InsforEditorButton);
         Modernize(BuildButton, toggle: true);
         Modernize(FavoriteButton);
@@ -445,12 +443,6 @@ public sealed partial class GmodConstructionMenu : DefaultWindow, IConstructionM
                 .OpenItemsEditor();
 
         // Admin Tools → Tiles Editor (add a tile to the menu) and Lathe Editor (add a lathe print recipe).
-        // AU14: Admin Tools -> Mass Entity Editor (multi-select entities, one recipe fanned out to all).
-        MassEntityEditorButton.OnPressed += _ =>
-            IoCManager.Resolve<IEntitySystemManager>()
-                .GetEntitySystem<_AU14.Construction.CustomConstruction.CustomConstructionEditorClientSystem>()
-                .OpenMassEditor();
-
         TilesEditorButton.OnPressed += _ =>
             IoCManager.Resolve<IEntitySystemManager>()
                 .GetEntitySystem<_AU14.Construction.CustomConstruction.CustomConstructionEditorClientSystem>()
@@ -466,13 +458,7 @@ public sealed partial class GmodConstructionMenu : DefaultWindow, IConstructionM
                 .GetEntitySystem<_AU14.Construction.CustomConstruction.CustomConstructionEditorClientSystem>()
                 .OpenZLevelToggles();
 
-        // AU14: Admin Tools -> Z-Sync Lists (which walls mirror across z-levels as map borders).
-        ZSyncListsButton.OnPressed += _ =>
-            IoCManager.Resolve<IEntitySystemManager>()
-                .GetEntitySystem<_AU14.Construction.CustomConstruction.CustomConstructionEditorClientSystem>()
-                .OpenZSyncLists();
-
-        // INSFOR -> the faction editor. A server console command, so the server does all
+        // INSFOR → the faction editor. A server console command, so the server does all
         // authorization (host flag) and a server without the INSFOR feature simply reports an
         // unknown command.
         InsforEditorButton.OnPressed += _ =>
@@ -766,7 +752,7 @@ public sealed partial class GmodConstructionMenu : DefaultWindow, IConstructionM
 
         var anyShown = false;
         foreach (var group in builds
-                     .GroupBy(b => string.IsNullOrEmpty(b.Source) ? Loc.GetString("saved-build-unknown-source") : b.Source)
+                     .GroupBy(b => string.IsNullOrEmpty(b.Source) ? "Unknown" : b.Source)
                      .OrderBy(g => g.Key, StringComparer.InvariantCultureIgnoreCase))
         {
             GroupedRecipesContainer.AddChild(new Label
@@ -837,7 +823,7 @@ public sealed partial class GmodConstructionMenu : DefaultWindow, IConstructionM
         TargetDesc.SetMessage(Loc.GetString("saved-build-detail-desc",
             ("author", info.Author),
             ("count", info.EntityCount),
-            ("source", string.IsNullOrEmpty(info.Source) ? Loc.GetString("saved-build-unknown-source") : info.Source)));
+            ("source", string.IsNullOrEmpty(info.Source) ? "Unknown" : info.Source)));
         RecipeStepList.Clear();
         FavoriteButton.Visible = true;
         FavoriteButton.Text = Loc.GetString("saved-build-place-original-button");

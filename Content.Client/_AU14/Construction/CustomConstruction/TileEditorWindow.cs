@@ -25,14 +25,16 @@ namespace Content.Client._AU14.Construction.CustomConstruction;
 /// </summary>
 public sealed class TileEditorWindow : DefaultWindow
 {
+    private const int MaxRows = 200;
+
     // Friendly label -> material stack id. The CM material stacks the lathe/construction sheets provide.
-    private static readonly (string LabelKey, string Stack)[] Materials =
+    private static readonly (string Label, string Stack)[] Materials =
     {
-        ("construction-editor-common-material-metal", "CMSteel"),
-        ("construction-editor-common-material-plasteel", "CMPlasteel"),
-        ("construction-editor-common-material-glass", "CMGlass"),
-        ("construction-editor-common-material-wood", "RMCWood"),
-        ("construction-editor-common-material-plastic", "RMCPlastic"),
+        ("Metal", "CMSteel"),
+        ("Plasteel", "CMPlasteel"),
+        ("Glass", "CMGlass"),
+        ("Wood", "RMCWood"),
+        ("Plastic", "RMCPlastic"),
     };
 
     public event Action<SubmitCustomTileEditorEvent>? OnSubmit;
@@ -74,7 +76,7 @@ public sealed class TileEditorWindow : DefaultWindow
         _mainCategory.SelectId(0);
 
         _spawnlist = new OptionButton { HorizontalExpand = true, Disabled = true };
-        _category = new LineEdit { HorizontalExpand = true, Text = Loc.GetString("construction-tile-editor-default-category") };
+        _category = new LineEdit { HorizontalExpand = true, Text = "Flooring" };
 
         // Z-Level page is fixed to the Tiles spawnlist, so the spawnlist picker is only enabled on the Spawnlists page.
         _mainCategory.OnItemSelected += a =>
@@ -85,7 +87,7 @@ public sealed class TileEditorWindow : DefaultWindow
 
         _material = new OptionButton { HorizontalExpand = true };
         for (var i = 0; i < Materials.Length; i++)
-            _material.AddItem(Loc.GetString(Materials[i].LabelKey), i);
+            _material.AddItem(Materials[i].Label, i);
         _material.SelectId(0);
         _material.OnItemSelected += a => _material.SelectId(a.Id);
 
@@ -161,13 +163,16 @@ public sealed class TileEditorWindow : DefaultWindow
         _rows.RemoveAllChildren();
 
         var needle = filter.Trim().ToLowerInvariant();
-        // Uncapped: the list must be scrollable through every tile (see EntitySelectorWindow).
+        var count = 0;
         foreach (var tile in _tiles)
         {
             if (needle.Length > 0 && !tile.ToLowerInvariant().Contains(needle))
                 continue;
 
             _rows.AddChild(MakeTileRow(tile));
+
+            if (++count >= MaxRows)
+                break;
         }
     }
 
@@ -224,7 +229,7 @@ public sealed class TileEditorWindow : DefaultWindow
             TileId = _selectedTile,
             Material = mat,
             Amount = amount,
-            Category = string.IsNullOrWhiteSpace(_category.Text) ? Loc.GetString("construction-tile-editor-default-category") : _category.Text.Trim(),
+            Category = string.IsNullOrWhiteSpace(_category.Text) ? "Flooring" : _category.Text.Trim(),
             Spawnlist = spawnlist,
             ZLevelPage = zLevelPage,
         });

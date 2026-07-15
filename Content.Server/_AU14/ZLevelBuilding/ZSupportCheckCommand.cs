@@ -18,8 +18,8 @@ namespace Content.Server._AU14.ZLevelBuilding;
 public sealed class ZSupportCheckCommand : IConsoleCommand
 {
     public string Command => "au_zsupport";
-    public string Description => Loc.GetString("cmd-au-zsupport-desc");
-    public string Help => Loc.GetString("cmd-au-zsupport-help");
+    public string Description => "Recompute the z-level structural support graph and report supported/unsupported counts.";
+    public string Help => "au_zsupport [all]";
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
@@ -39,25 +39,25 @@ public sealed class ZSupportCheckCommand : IConsoleCommand
                 grids++;
             }
 
-            Report(shell, entMan, Loc.GetString("cmd-au-zsupport-recomputed-all", ("grids", grids)));
+            Report(shell, entMan, $"Recomputed {grids} grid(s).");
             return;
         }
 
         if (shell.Player?.AttachedEntity is not { } attached)
         {
-            shell.WriteError(Loc.GetString("cmd-au-zsupport-player-only"));
+            shell.WriteError("Run this as an in-game player, or use 'au_zsupport all'.");
             return;
         }
 
         var gridUid = entMan.GetComponent<TransformComponent>(attached).GridUid;
         if (gridUid == null || !entMan.TryGetComponent<MapGridComponent>(gridUid, out var gridComp))
         {
-            shell.WriteError(Loc.GetString("cmd-au-zsupport-not-on-grid"));
+            shell.WriteError("You are not standing on a grid. Try 'au_zsupport all'.");
             return;
         }
 
         support.RecomputeGrid((gridUid.Value, gridComp));
-        Report(shell, entMan, Loc.GetString("cmd-au-zsupport-recomputed-grid", ("grid", gridUid)));
+        Report(shell, entMan, $"Recomputed your grid {gridUid}.");
     }
 
     private static void Report(IConsoleShell shell, IEntityManager entMan, string prefix)
@@ -73,9 +73,6 @@ public sealed class ZSupportCheckCommand : IConsoleCommand
                 unsupported++;
         }
 
-        shell.WriteLine(Loc.GetString("cmd-au-zsupport-report",
-            ("prefix", prefix),
-            ("supported", supported),
-            ("unsupported", unsupported)));
+        shell.WriteLine($"{prefix} Supports: {supported} supported, {unsupported} unsupported.");
     }
 }

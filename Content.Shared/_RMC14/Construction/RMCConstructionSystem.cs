@@ -269,8 +269,6 @@ public sealed partial class RMCConstructionSystem : EntitySystem
         var totalAmount = args.Amount / entry.Amount; // So a stack of 20 with an amount of 4 and a cost of 1 is correctly 5 cost
         var cost = (args.Amount == entry.Amount) ? entry.MaterialCost : totalAmount * entry.MaterialCost;
 
-        var au14Shortfall = 0;
-        var au14StackType = string.Empty;
         if (TryComp<StackComponent>(ent.Owner, out var stack))
         {
             // AU14: the same skill discount that was quoted at the start of the build.
@@ -281,11 +279,6 @@ public sealed partial class RMCConstructionSystem : EntitySystem
                 _popup.PopupEntity(message, args.User, args.User, PopupType.SmallCaution);
                 return;
             }
-
-            // AU14 anti-dupe: remember what the discount saved, so deconstructing this structure can never
-            // refund more material than was actually invested (Input = Output).
-            au14Shortfall = Math.Max(0, (cost ?? 1) - au14Cost);
-            au14StackType = stack.StackTypeId;
         }
         else if (_net.IsServer)
         {
@@ -302,14 +295,6 @@ public sealed partial class RMCConstructionSystem : EntitySystem
         else
         {
             var built = SpawnAtPosition(entry.Prototype, coordinates);
-
-            // AU14 anti-dupe: stamp the discount shortfall onto the built structure (see AU14MaterialShortfallSystem).
-            if (au14Shortfall > 0)
-            {
-                var shortfall = EnsureComp<Content.Shared._AU14.Construction.AU14MaterialShortfallComponent>(built);
-                shortfall.StackTypeId = au14StackType;
-                shortfall.Missing = au14Shortfall;
-            }
 
             if (!entry.NoRotate)
                 _transform.SetLocalRotation(built, args.Direction.ToAngle());

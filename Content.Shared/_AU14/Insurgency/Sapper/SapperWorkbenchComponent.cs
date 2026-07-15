@@ -28,51 +28,51 @@ public sealed partial class SapperWorkbenchComponent : Component
     [DataField]
     public List<SapperWorkbenchRecipe> Recipes = new()
     {
-        new("AU14SapperTripwireTrap", "insfor-sapper-recipe-tripwire", 3f, new() { { "CMSteel", 6 }, { "RMCWood", 3 } },
+        new("AU14SapperTripwireTrap", "Tripwire trap", 3f, new() { { "CMSteel", 6 }, { "RMCWood", 3 } },
             new() { Cable(10), AnyElectronics() }),
-        new("AU14SapperShotgunTrap", "insfor-sapper-recipe-shotgun", 4f, new() { { "CMSteel", 9 }, { "RMCWood", 6 } },
+        new("AU14SapperShotgunTrap", "Shotgun trap", 4f, new() { { "CMSteel", 9 }, { "RMCWood", 6 } },
             new() { Buckshot(), AnyElectronics() }),
-        new("AU14SapperIED", "insfor-sapper-recipe-ied", 6f, new() { { "CMSteel", 12 }, { "CMPlasteel", 6 }, { "RMCPlastic", 3 } },
+        new("AU14SapperIED", "Buried IED", 6f, new() { { "CMSteel", 12 }, { "CMPlasteel", 6 }, { "RMCPlastic", 3 } },
             new() { Ied(), AnyElectronics() }),
-        new("AU14SapperSnareTrap", "insfor-sapper-recipe-snare", 3f, new() { { "RMCWood", 9 }, { "RMCPlastic", 3 } },
+        new("AU14SapperSnareTrap", "Snare trap", 3f, new() { { "RMCWood", 9 }, { "RMCPlastic", 3 } },
             new() { Cable(10), AnyElectronics(), Handcuffs() }),
-        new("AU14SapperAudioTrap", "insfor-sapper-recipe-audio", 3f, new() { { "CMSteel", 6 }, { "RMCWood", 3 }, { "RMCPlastic", 3 } },
+        new("AU14SapperAudioTrap", "Audio trap", 3f, new() { { "CMSteel", 6 }, { "RMCWood", 3 }, { "RMCPlastic", 3 } },
             new() { Cable(10), AnyElectronics() }),
-        new("AU14CLFSpyCamera", "insfor-sapper-recipe-spy-camera", 4f, new() { { "CMSteel", 6 }, { "RMCPlastic", 6 } },
+        new("AU14CLFSpyCamera", "CLF spy camera", 4f, new() { { "CMSteel", 6 }, { "RMCPlastic", 6 } },
             new() { AnyElectronics(), PowerCell() }),
-        new("AU14CLFCameraMonitor", "insfor-sapper-recipe-camera-monitor", 5f, new() { { "CMSteel", 9 }, { "RMCPlastic", 9 } },
+        new("AU14CLFCameraMonitor", "CLF camera monitor", 5f, new() { { "CMSteel", 9 }, { "RMCPlastic", 9 } },
             new() { AnyElectronics(), PowerCell() }),
-        new("AU14CLFCameraRelay", "insfor-sapper-recipe-camera-relay", 5f, new() { { "CMSteel", 9 }, { "RMCPlastic", 6 } },
+        new("AU14CLFCameraRelay", "CLF camera relay", 5f, new() { { "CMSteel", 9 }, { "RMCPlastic", 6 } },
             new() { AnyElectronics(), PowerCell() }),
         // The siphon rig moved into the recipe list (was: apply a cable coil to the bench).
-        new("AU14SapperSiphonRig", "insfor-sapper-recipe-siphon-rig", 6f, new() { { "CMSteel", 9 }, { "RMCPlastic", 6 } },
+        new("AU14SapperSiphonRig", "Siphon rig", 6f, new() { { "CMSteel", 9 }, { "RMCPlastic", 6 } },
             new() { Cable(30), AnyElectronics(), PowerCell() }),
         // The "Switch" illegal fire-selector chip. Deliberately plasteel-hungry: it turns any rifle
         // into a bullet hose, so the cost is the whole balance lever.
-        new("AU14AttachmentSwitch", "insfor-sapper-recipe-switch", 8f, new() { { "CMPlasteel", 40 } },
+        new("AU14AttachmentSwitch", "Switch (auto-sear chip)", 8f, new() { { "CMPlasteel", 40 } },
             new() { AnyElectronics() }),
     };
 
     // Ingredient shorthands so the recipe table above stays readable. IconPrototype is a
     // representative entity drawn in the recipe rows and the Loose Ingredients Help panel.
     private static SapperWorkbenchItemRequirement Cable(int count) =>
-        new() { AnyCable = true, Count = count, Name = "insfor-sapper-ingredient-cable", IconPrototype = "RMCCableCoil" };
+        new() { AnyCable = true, Count = count, Name = "any cable coil", IconPrototype = "RMCCableCoil" };
 
     private static SapperWorkbenchItemRequirement AnyElectronics() =>
-        new() { AnyElectronics = true, Name = "insfor-sapper-ingredient-electronics", IconPrototype = "DoorElectronics" };
+        new() { AnyElectronics = true, Name = "any electronics", IconPrototype = "DoorElectronics" };
 
     private static SapperWorkbenchItemRequirement PowerCell() =>
-        new() { AnyPowerCell = true, Name = "insfor-sapper-ingredient-power-cell", IconPrototype = "PowerCellMedium" };
+        new() { AnyPowerCell = true, Name = "power cell", IconPrototype = "PowerCellMedium" };
 
     private static SapperWorkbenchItemRequirement Buckshot() =>
-        new() { Prototype = "CMShellShotgunBuckshot", Count = 5, Name = "insfor-sapper-ingredient-buckshot", IconPrototype = "CMShellShotgunBuckshot" };
+        new() { Prototype = "CMShellShotgunBuckshot", Count = 5, Name = "buckshot shells", IconPrototype = "CMShellShotgunBuckshot" };
 
     private static SapperWorkbenchItemRequirement Ied() =>
-        new() { Prototype = "AU14IED", Name = "insfor-sapper-ingredient-ied", IconPrototype = "AU14IED" };
+        new() { Prototype = "AU14IED", Name = "IED", IconPrototype = "AU14IED" };
 
     // Any cuffs at all: the Handcuffs tag covers handcuffs, zipties, cablecuffs, and the like.
     private static SapperWorkbenchItemRequirement Handcuffs() =>
-        new() { Tag = "Handcuffs", Name = "insfor-sapper-ingredient-handcuffs", IconPrototype = "Handcuffs" };
+        new() { Tag = "Handcuffs", Name = "any handcuffs", IconPrototype = "Handcuffs" };
 }
 
 /// <summary>

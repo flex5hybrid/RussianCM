@@ -1,43 +1,6 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 # Copyright (c) 2026 wray-git
 # SPDX-License-Identifier: AGPL-3.0-only
-
-# Массовый редактор сущностей
-gmod-construction-menu-mass-editor = Массовый редактор сущностей
-construction-mass-selector-title = Массовый редактор сущностей — выбор сущностей
-construction-mass-selector-parent-search = Поиск родительских прототипов...
-construction-mass-selector-parent-all = Все родители
-construction-mass-selector-select-all = Выбрать всё показанное
-construction-mass-selector-clear = Очистить
-construction-mass-selector-confirm = Продолжить
-construction-mass-selector-count = Выбрано: {$count}
-construction-menu-mass-item-name = Выбрано сущностей: {$count}
-construction-menu-mass-none = Ни одна из выбранных сущностей не подходит.
-construction-menu-mass-added = Добавлено предметов: {$added}; категория: {$category}; рецепт: {$recipe}.
-construction-menu-mass-partial = Добавлено предметов: {$added}; не удалось: {$failed} ({$reason}).
-
-# Массовый редактор тайлов
-construction-mass-selector-tiles = Тайлы
-construction-mass-tiles-title = Массовый рецепт тайлов (выбрано: {$count})
-construction-menu-mass-tiles-added = Добавлено тайлов: {$added}; категория: {$category}.
-
-# Списки Z-синхронизации
-gmod-construction-menu-zsync-lists = Списки Z-синхронизации
-au-zsync-title = Списки Z-синхронизации — отражение границ между уровнями
-au-zsync-browser-header = Все сущности (выберите сущность и добавьте её в список)
-au-zsync-lists-header = Текущие списки
-au-zsync-whitelist = Белый список (отражаются между Z-уровнями)
-au-zsync-blacklist = Чёрный список (никогда не отражаются; важнее белого списка)
-au-zsync-add-whitelist = Добавить в белый список
-au-zsync-add-blacklist = Добавить в чёрный список
-au-zsync-pick-whitelist = Выбрать сущность → белый список
-au-zsync-pick-blacklist = Выбрать сущность → чёрный список
-au-zsync-remove-selected = Удалить выбранное
-au-zsync-changed = Список Z-синхронизации {$list} обновлён (изменено: {$count}).
-au-zsync-picked = Прототип {$proto} добавлен в список Z-синхронизации {$list}.
-au-zsync-pick-instruction = Щёлкните по сущности в раунде, чтобы добавить её прототип в выбранный список Z-синхронизации. Щёлкните правой кнопкой мыши для отмены.
-au-zsync-pick-no-entity = Под курсором нет сущности.
-au-zsync-pick-cancelled = Выбор сущности для Z-синхронизации отменён.
 ## In-game construction menu editor (world right-click > Construction)
 
 verb-categories-construction = Строительство
@@ -81,21 +44,6 @@ construction-editor-new-category = Название новой категори�
 construction-editor-add-new = Добавить новый...
 construction-editor-confirm = Подтвердить
 construction-editor-material-custom = Другое...
-construction-editor-common-material-metal = Металл
-construction-editor-common-material-plasteel = Пласталь
-construction-editor-common-material-glass = Стекло
-construction-editor-common-material-reinforced-glass = Армированное стекло
-construction-editor-common-material-phoron-glass = Фороновое стекло
-construction-editor-common-material-phoron = Форон
-construction-editor-common-material-wood = Дерево
-construction-editor-common-material-aluminum = Алюминий
-construction-editor-common-material-plastic = Пластик
-construction-editor-common-material-cardboard = Картон
-construction-editor-tool-wrench = Гаечный ключ
-construction-editor-tool-welder = Сварочный аппарат
-construction-editor-tool-screwdriver = Отвёртка
-construction-editor-tool-crowbar = Лом
-construction-editor-tool-wirecutter = Кусачки
 construction-editor-material-notfound = Материал "{ $material }" не найден - выберите существующий.
 construction-editor-steps = Шаги рецепта
 construction-editor-material = ID пользовательского стака (например Steel)
@@ -192,8 +140,6 @@ construction-tile-editor-page-zlevel = Z-уровень (эксперимент�
 construction-tile-editor-page-spawnlists = Списки появления
 construction-tile-editor-spawnlist = Список появления (только страница списков)
 construction-tile-editor-category = Категория
-construction-tile-editor-default-category = Покрытия
-construction-menu-mass-invalid-tiles = недопустимые тайлы
 construction-tile-editor-material = Материал
 construction-tile-editor-amount = Стоимость (листы)
 construction-tile-editor-selected = Выбранный тайл: { $tile }

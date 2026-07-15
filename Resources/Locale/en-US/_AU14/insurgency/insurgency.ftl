@@ -7,26 +7,6 @@ insfor-faction-applied-popup = Your cell has been organized under { $title }.
 cmd-insforapplytest-desc = Applies a minimal test INSFOR faction so the apply pipeline can be checked in-game.
 cmd-insforapplytest-help = Usage: insforapplytest [title]
 cmd-insforapplytest-applied = Applied test INSFOR faction "{ $title }" to { $count } member(s).
-cmd-insforapplytest-default-title = Test Liberation Cell
-cmd-insforapplytest-default-description = A ragtag cell testing the INSFOR apply pipeline.
-cmd-insforapplytest-default-roleplay = Play it scrappy and improvised. You are locals, not soldiers.
-
-cmd-insforeditor-desc = Opens the INSFOR Default-faction editor.
-cmd-insforeditor-help = Usage: insforeditor
-cmd-insforeditor-player-only = This command can only be run by a player.
-cmd-insforeditor-not-whitelisted = You are not whitelisted for the INSFOR editor.
-
-cmd-insforfactiondbtest-desc = Saves, reads back, and deletes a test faction to verify the DB round-trip.
-cmd-insforfactiondbtest-help = Usage: insforfactiondbtest
-cmd-insforfactiondbtest-title = DB Round-Trip Test
-cmd-insforfactiondbtest-description = Written by insforfactiondbtest.
-cmd-insforfactiondbtest-roleplay = Delete me if I linger.
-cmd-insforfactiondbtest-saved = Saved test faction with id { $id }.
-cmd-insforfactiondbtest-read-error = ERROR: could not read the faction back.
-cmd-insforfactiondbtest-read = Read back: "{ $title }" (schema v{ $version }).
-cmd-insforfactiondbtest-deleted = Deleted the test faction. Round-trip OK.
-cmd-insforfactiondbtest-delete-error = ERROR: delete reported no row.
-cmd-insforfactiondbtest-failed = DB round-trip failed: { $message }
 
 # A Package loadout delivery.
 insfor-a-package-received = You have received a package. Use it in hand when you are ready.
@@ -40,17 +20,16 @@ insfor-cell-kit-deployed = You set out a piece of the cell's equipment. { $remai
 
 # Leader faction selection popup.
 insfor-select-title = Choose Your Cell's Faction
-insfor-select-default-header = Factions (click a name to see details)
+insfor-select-default-header = Default Factions
+insfor-select-custom-header = Custom Factions
+insfor-select-custom-refresh = Refresh
 insfor-select-govfor = Opposing GOVFOR faction: { $name }
 insfor-select-govfor-unknown = Opposing GOVFOR faction: not chosen yet
-insfor-select-empty = No factions are available.
+insfor-select-empty = No Default factions are available.
 insfor-select-not-opposed = Does not oppose this round's GOVFOR faction.
-insfor-select-choose = Choose this faction
-insfor-select-untitled = (untitled faction)
-insfor-select-unavailable-tag = [ unavailable this round ]
-insfor-select-playstyle-header = Playstyle
-insfor-select-cellkit-header = Cell kit contents
-insfor-select-cellkit-empty = Nothing listed.
+insfor-select-custom-locked = You are not authorized to use Custom factions.
+insfor-select-custom-empty = You have no custom factions saved on this machine.
+insfor-select-choose = Choose
 
 # In-viewport button to reopen the selection popup after it was closed.
 insfor-reopen-faction-select-button = Choose Faction
@@ -73,20 +52,67 @@ insfor-picker-flag-title = Select a flag
 # Marker job used only as an INSFOR editor whitelist key.
 au14-job-name-insfor-editor = INSFOR Editor Access
 
-# Built-in vanilla CLF faction.
-insfor-builtin-clf-title = Colonial Liberation Front
-insfor-builtin-clf-description = The standard CLF cell. No special doctrine, no custom arsenal.
-insfor-builtin-clf-roleplay = Play as a classic CLF insurgent cell.
-insfor-builtin-clf-vendor-requisitions = CLF Requisitions Rack
-insfor-builtin-clf-vendor-medical = CLF medical cache
-insfor-builtin-clf-vendor-tools = CLF tool cache
-insfor-builtin-clf-vendor-recruitment = CLF recruitment cache
-insfor-builtin-clf-vendor-clothing = CLF civilian clothing rack
-insfor-builtin-clf-section-first-aid = First Aid
-insfor-builtin-clf-section-field-tools = Field Tools
-insfor-builtin-clf-section-recruitment = Recruitment
-insfor-builtin-clf-section-footwear = Footwear
-insfor-builtin-clf-section-jumpsuits = Jumpsuits
-insfor-builtin-clf-section-jackets = Jackets and Coats
-insfor-builtin-clf-section-headwear = Headwear and Eyewear
-insfor-builtin-clf-section-bags = Bags and Gloves
+# INSFOR faction editor help window.
+insfor-editor-help-title = INSFOR Faction Editor - Help
+insfor-editor-help-intro = An INSFOR faction is one insurgent cell the CLF leader can pick after spawning. You fill in who they are, what money buys them points, what their leader's Heavy Cell Kit can drop, and what each role gets in their "A Package". Nothing here needs a prototype id typed by hand: every entity, job, and icon is chosen from a searchable picker. The server re-checks and clamps everything you save, so you cannot break the round with a bad value.
+
+insfor-editor-help-list-heading = The faction list (left) and the  *  mark
+insfor-editor-help-list-body = The left column lists every saved faction plus the built-in vanilla CLF at the top. A faction shows a  *  next to its name when it is set to oppose the GOVFOR side the current round rolled, i.e. it is a valid pick this round. No star just means it does not target this round's GOVFOR; it is still fine to edit. Click a faction to edit it, or New faction to start blank.
+
+insfor-editor-help-identity-heading = Identity
+insfor-editor-help-identity-body = Title: the faction's name, shown in the pick list and the reveal popup.
+    Recruited message: the briefing a freshly recruited member reads (for example via the tattoo gun). Blank uses the default CLF line.
+    Description / Roleplay style: shown in the antag briefing and the reveal popup so members know who they are and how they are meant to play.
+    Flag entity: an in-world flag prop, picked from the catalog (optional).
+    Status icon: the faction membership icon members show to each other, picked from the icon list.
+
+insfor-editor-help-default-heading = Default faction (checkbox)
+insfor-editor-help-default-body = On: this faction is host-authored and saved in the server database; it is offered to leaders whose GOVFOR matches the Opposed list below. Off: it is a personal/Custom faction. The Save buttons at the bottom control where it is written.
+
+insfor-editor-help-opposed-heading = Opposed GOVFOR factions
+insfor-editor-help-opposed-body = The GOVFOR platoons (USMC, TWE RMC, UPP, and so on) this faction is allowed to oppose. If the round's GOVFOR is in this list, the faction is offered to the leader and gets the  *  in the list. Add as many as you like.
+
+insfor-editor-help-economy-heading = Economy - dollars to points
+insfor-editor-help-economy-body = Dollars to points rate: how intel dollars convert to the cell's vendor points.
+    Also accept plain dollars: when ticked, cash still converts at the analyzer even if you add custom submittables below. Untick it for a faction whose economy should ignore money entirely.
+
+insfor-editor-help-analyzer-heading = Analyzer - submittable for points
+insfor-editor-help-analyzer-body = What the analyzer machine accepts and turns into cell points, beyond plain cash. Each row is an item (picked, never typed) and a ratio with two modes:
+      - items per point: it takes that many of the item to make one point (good for cheap goods).
+      - points per item: one item is worth that many points (good for valuable goods).
+    Leave the list empty to keep the plain-dollars behavior. The value is always at least 1 so a submission can never mint free points.
+
+insfor-editor-help-machines-heading = Default cell-kit machines
+insfor-editor-help-machines-body = Tick the well-known CLF machines (analyzer, intel computer, objectives console, tech tree console, fax) you want the leader's Heavy Cell Kit to be able to place. Their money-to-points wiring is the normal CLF behavior; no extra setup is needed.
+
+insfor-editor-help-placeables-heading = Cell kit - other placeable entities
+insfor-editor-help-placeables-body = Any additional single entities the leader can free-place from the Heavy Cell Kit (lamps, barricades, props, and so on). Each is picked from the entity picker.
+
+insfor-editor-help-vendors-heading = Cell kit - vendors
+insfor-editor-help-vendors-body = Each vendor the leader can deploy from the kit. Per vendor:
+      - Vendor name: the name shown on the deployed vendor and in the kit list.
+      - Base model: an existing vendor entity used only for its sprite/collision; its arsenal is replaced by your sections.
+      - Wrenchable: can be wrenched down and moved after placing.
+      - Invulnerable: the placed vendor will not break or change on damage.
+      - Uses cell intel points: items are paid from the cell's shared intel points (money at the intel computer stocks it) instead of the buyer's own points.
+      - Use base model's own arsenal: ignore the sections below and keep the base entity's built-in stock. Only for reusing a fully-made vendor (like the CLF requisitions rack); leave off for a normal custom vendor.
+
+insfor-editor-help-vendor-items-heading = Vendor sections and items
+insfor-editor-help-vendor-items-body = A vendor is split into sections (categories). Per section:
+      - Section name.
+      - Category limit: two optional caps - how many one player may take from this category, and how many all players together may.
+    Inside a section, each item row is:
+      - the entity (picked),
+      - points: its cost (0 = free),
+      - amount: how many are in stock,
+      - max: the ceiling it restocks to.
+    Leave points blank to make an item free-by-stock only.
+
+insfor-editor-help-loadouts-heading = Role loadouts - A Package
+insfor-editor-help-loadouts-body = Because the faction is chosen after players spawn, each role's kit is delivered afterwards as an "A Package" box. Add a row per role: pick the Role (job) and the Contents (entities) it hands out.
+
+insfor-editor-help-saving-heading = Saving and applying
+insfor-editor-help-saving-body = Save (server / Default): writes it to the server database as a host faction.
+    Save as local Custom: writes it to your machine only, so it shows up in the leader's Custom list.
+    Apply for round: immediately applies this faction to the current round's cell.
+    Delete: removes a saved faction (the built-in vanilla CLF cannot be deleted).

@@ -19,21 +19,21 @@ namespace Content.Server._AU14.ZLevelBuilding;
 public sealed class ZDigDownCommand : IConsoleCommand
 {
     public string Command => "au_digdown";
-    public string Description => Loc.GetString("cmd-au-digdown-desc");
-    public string Help => Loc.GetString("cmd-au-digdown-help");
+    public string Description => "Dig straight down, creating/descending into a stone z-level beneath you.";
+    public string Help => "au_digdown";
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
         if (shell.Player?.AttachedEntity is not { } player)
         {
-            shell.WriteError(Loc.GetString("cmd-au-dig-player-only"));
+            shell.WriteError("This command must be run by an in-game player.");
             return;
         }
 
         var system = IoCManager.Resolve<IEntitySystemManager>().GetEntitySystem<ZLevelBuildingSystem>();
         if (system.DigDown(player))
-            shell.WriteLine(Loc.GetString("cmd-au-digdown-success"));
+            shell.WriteLine("Dug down a level.");
         else
-            shell.WriteError(Loc.GetString("cmd-au-digdown-failed"));
+            shell.WriteError("Could not dig down here (map opted out, feature disabled, or a hand-authored level is already below).");
     }
 }

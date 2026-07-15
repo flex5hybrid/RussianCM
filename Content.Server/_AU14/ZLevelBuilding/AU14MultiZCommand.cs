@@ -24,8 +24,8 @@ namespace Content.Server._AU14.ZLevelBuilding;
 public sealed class AU14MultiZCommand : IConsoleCommand
 {
     public string Command => "au_multiz";
-    public string Description => Loc.GetString("cmd-au-multiz-desc");
-    public string Help => Loc.GetString("cmd-au-multiz-help");
+    public string Description => "List maps with their AU14 Multi Z-Level (vertical building) status, or toggle it per map / globally.";
+    public string Help => "au_multiz  (list)  |  au_multiz <mapId> <on|off>  |  au_multiz global <on|off>";
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
@@ -35,30 +35,26 @@ public sealed class AU14MultiZCommand : IConsoleCommand
         // No args: list every map.
         if (args.Length == 0)
         {
-            shell.WriteLine(Loc.GetString("cmd-au-multiz-global-status",
-                ("state", Loc.GetString(building.GloballyEnabled ? "cmd-au-multiz-enabled" : "cmd-au-multiz-disabled"))));
+            shell.WriteLine($"Global AU14 z-building: {(building.GloballyEnabled ? "ENABLED" : "DISABLED")}  (toggle: au_multiz global on|off)");
             var query = entMan.AllEntityQueryEnumerator<MapComponent>();
             while (query.MoveNext(out var uid, out var map))
             {
                 var yes = building.IsEnabledOn(uid);
-                shell.WriteLine(Loc.GetString("cmd-au-multiz-map-status",
-                    ("id", map.MapId),
-                    ("map", entMan.ToPrettyString(uid)),
-                    ("state", Loc.GetString(yes ? "cmd-au-multiz-yes" : "cmd-au-multiz-no"))));
+                shell.WriteLine($"  MapId {map.MapId,-4} {entMan.ToPrettyString(uid),-28} - Multi Z-Level: {(yes ? "Yes" : "No")}");
             }
             return;
         }
 
         if (args.Length != 2)
         {
-            shell.WriteError(Loc.GetString("cmd-au-multiz-usage"));
+            shell.WriteError("Usage: au_multiz <mapId|global> <on|off>");
             return;
         }
 
         var on = args[1].Equals("on", StringComparison.OrdinalIgnoreCase);
         if (!on && !args[1].Equals("off", StringComparison.OrdinalIgnoreCase))
         {
-            shell.WriteError(Loc.GetString("cmd-au-multiz-invalid-state"));
+            shell.WriteError("Second argument must be 'on' or 'off'.");
             return;
         }
 
@@ -66,14 +62,13 @@ public sealed class AU14MultiZCommand : IConsoleCommand
         if (args[0].Equals("global", StringComparison.OrdinalIgnoreCase))
         {
             building.GloballyEnabled = on;
-            shell.WriteLine(Loc.GetString("cmd-au-multiz-global-changed",
-                ("state", Loc.GetString(on ? "cmd-au-multiz-enabled" : "cmd-au-multiz-disabled"))));
+            shell.WriteLine($"Global AU14 z-building is now {(on ? "ENABLED" : "DISABLED")}.");
             return;
         }
 
         if (!int.TryParse(args[0], out var mapIdInt))
         {
-            shell.WriteError(Loc.GetString("cmd-au-multiz-invalid-map"));
+            shell.WriteError("Map argument must be a numeric MapId (run 'au_multiz' to list them) or 'global'.");
             return;
         }
 
@@ -81,7 +76,7 @@ public sealed class AU14MultiZCommand : IConsoleCommand
         var mapId = new MapId(mapIdInt);
         if (!mapManager.MapExists(mapId))
         {
-            shell.WriteError(Loc.GetString("cmd-au-multiz-map-not-found", ("id", mapIdInt)));
+            shell.WriteError($"No map with MapId {mapIdInt}.");
             return;
         }
 
@@ -90,9 +85,6 @@ public sealed class AU14MultiZCommand : IConsoleCommand
         comp.Enabled = on;
         entMan.Dirty(mapUid, comp);
 
-        shell.WriteLine(Loc.GetString("cmd-au-multiz-map-changed",
-            ("id", mapIdInt),
-            ("state", Loc.GetString(on ? "cmd-au-multiz-yes" : "cmd-au-multiz-no")),
-            ("permission", Loc.GetString(on ? "cmd-au-multiz-can-build" : "cmd-au-multiz-cannot-build"))));
+        shell.WriteLine($"Map {mapIdInt} Multi Z-Level set to {(on ? "Yes" : "No")}. Players {(on ? "can now" : "can no longer")} build AU14 z-level stairs/floors here.");
     }
 }

@@ -117,9 +117,6 @@ public sealed partial class CustomConstructionMenuSystem : EntitySystem
         SubscribeNetworkEvent<RemoveCustomConstructionGroupEvent>(OnRemoveGroup);
         SubscribeNetworkEvent<HideConstructionRecipeEvent>(OnHideRecipe);
 
-        // The "Mass Entity Editor" batch tool (see the .Mass.cs partial).
-        InitializeMass();
-
         // The "Tiles" and "Lathe" sibling editors (see the .Tiles.cs / .Lathe.cs partials).
         SubscribeNetworkEvent<RequestOpenCustomTileEditorEvent>(OnRequestOpenTile);
         SubscribeNetworkEvent<SubmitCustomTileEditorEvent>(OnSubmitTile);

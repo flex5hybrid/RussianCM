@@ -1,9 +1,7 @@
 # CLF Sapper role.
 au14-job-name-clfsapper = CLF Sapper
 au14-job-description-clfsapper = A guerilla trained in fieldcraft and demolitions. You lay traps, conceal them, and turn the colony's own ground against GOVFOR.
-# Radio prefix must NOT out the sapper: undercover CLF roles all read as ordinary civilians on comms
-# (same "CIV" prefix as au14-job-prefix-civiliancolonist / the CLF guerilla).
-au14-job-prefix-clfsapper = CIV
+au14-job-prefix-clfsapper = CLF Sapper
 
 # Sapper trap deploy / disarm feedback.
 insfor-sapper-trap-deployed = You plant the charge and it settles out of sight.
@@ -54,41 +52,6 @@ insfor-sapper-workbench-loose-help = Loose Ingredients Help
 insfor-sapper-workbench-loose-help-desc = These must lie loose on or next to the bench to be consumed:
 insfor-sapper-workbench-craft = Craft
 insfor-sapper-workbench-no-materials = No materials
-insfor-sapper-workbench-material-steel = Metal Sheets
-insfor-sapper-workbench-material-plasteel = Plasteel Sheets
-insfor-sapper-workbench-material-wood = Wooden Planks
-insfor-sapper-workbench-material-plastic = Plastic Sheets
-insfor-sapper-workbench-stat-line = { $name }: { $value }
-insfor-sapper-workbench-stat-accuracy = Accuracy
-insfor-sapper-workbench-stat-damage-falloff = Damage falloff
-insfor-sapper-workbench-stat-burst-scatter = Burst scatter
-insfor-sapper-workbench-stat-shots-per-burst = Shots per burst
-insfor-sapper-workbench-stat-damage = Damage
-insfor-sapper-workbench-stat-recoil = Recoil
-insfor-sapper-workbench-stat-scatter = Scatter
-insfor-sapper-workbench-stat-fire-delay = Fire delay
-insfor-sapper-workbench-stat-projectile-speed = Projectile speed
-insfor-sapper-workbench-stat-range = Range
-insfor-sapper-workbench-stat-walk-speed = Walk speed
-insfor-sapper-workbench-stat-sprint-speed = Sprint speed
-insfor-sapper-workbench-stat-item-size = Item size
-insfor-sapper-workbench-stat-wield-delay = Wield delay
-insfor-sapper-recipe-tripwire = Tripwire trap
-insfor-sapper-recipe-shotgun = Shotgun trap
-insfor-sapper-recipe-ied = Buried IED
-insfor-sapper-recipe-snare = Snare trap
-insfor-sapper-recipe-audio = Audio trap
-insfor-sapper-recipe-spy-camera = CLF spy camera
-insfor-sapper-recipe-camera-monitor = CLF camera monitor
-insfor-sapper-recipe-camera-relay = CLF camera relay
-insfor-sapper-recipe-siphon-rig = Siphon rig
-insfor-sapper-recipe-switch = Switch (auto-sear chip)
-insfor-sapper-ingredient-cable = any cable coil
-insfor-sapper-ingredient-electronics = any electronics
-insfor-sapper-ingredient-power-cell = power cell
-insfor-sapper-ingredient-buckshot = buckshot shells
-insfor-sapper-ingredient-ied = IED
-insfor-sapper-ingredient-handcuffs = any handcuffs
 insfor-sapper-workbench-deployed = You unfold the workbench and lock its legs down.
 insfor-sapper-workbench-need-materials = The bench is missing materials or loose ingredients (place ingredient items on or next to it).
 insfor-sapper-workbench-crafted = You build {$item}.

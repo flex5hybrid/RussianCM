@@ -1,11 +1,5 @@
 # INSFOR faction featureset
 
-insfor-select-untitled = (фракция без названия)
-insfor-select-unavailable-tag = [ недоступно в этом раунде ]
-insfor-select-playstyle-header = Стиль игры
-insfor-select-cellkit-header = Содержимое набора ячейки
-insfor-select-cellkit-empty = Ничего не указано.
-
 # Shown to each member when their faction definition is applied for the round.
 insfor-faction-applied-popup = Ваша ячейка организована как { $title }.
 
@@ -13,26 +7,6 @@ insfor-faction-applied-popup = Ваша ячейка организована к
 cmd-insforapplytest-desc = Применяет минимальную тестовую фракцию INSFOR, чтобы проверить pipeline применения в игре.
 cmd-insforapplytest-help = Использование: insforapplytest [название]
 cmd-insforapplytest-applied = Тестовая фракция INSFOR "{ $title }" применена к участникам: { $count }.
-cmd-insforapplytest-default-title = Тестовая освободительная ячейка
-cmd-insforapplytest-default-description = Разношёрстная ячейка для проверки применения фракций INSFOR.
-cmd-insforapplytest-default-roleplay = Действуйте дерзко и импровизируйте. Вы местные жители, а не солдаты.
-
-cmd-insforeditor-desc = Открывает редактор стандартных фракций INSFOR.
-cmd-insforeditor-help = Использование: insforeditor
-cmd-insforeditor-player-only = Эту команду может выполнить только игрок.
-cmd-insforeditor-not-whitelisted = У вас нет доступа к редактору INSFOR.
-
-cmd-insforfactiondbtest-desc = Сохраняет, читает и удаляет тестовую фракцию для проверки обмена с БД.
-cmd-insforfactiondbtest-help = Использование: insforfactiondbtest
-cmd-insforfactiondbtest-title = Тест обмена с БД
-cmd-insforfactiondbtest-description = Создано командой insforfactiondbtest.
-cmd-insforfactiondbtest-roleplay = Удалите меня, если я останусь.
-cmd-insforfactiondbtest-saved = Тестовая фракция сохранена с ID { $id }.
-cmd-insforfactiondbtest-read-error = ОШИБКА: не удалось прочитать фракцию из БД.
-cmd-insforfactiondbtest-read = Прочитано: «{ $title }» (версия схемы { $version }).
-cmd-insforfactiondbtest-deleted = Тестовая фракция удалена. Обмен с БД работает.
-cmd-insforfactiondbtest-delete-error = ОШИБКА: при удалении не найдена строка.
-cmd-insforfactiondbtest-failed = Ошибка обмена с БД: { $message }
 
 # A Package loadout delivery.
 insfor-a-package-received = Вы получили пакет. Используйте его в руке, когда будете готовы.
@@ -46,16 +20,16 @@ insfor-cell-kit-deployed = Вы размещаете часть снаряжен
 
 # Leader faction selection popup.
 insfor-select-title = Выберите фракцию вашей ячейки
-insfor-select-default-header = Фракции (нажмите на название, чтобы посмотреть подробности)
+insfor-select-default-header = Фракции по умолчанию
 insfor-select-custom-header = Пользовательские фракции
 insfor-select-custom-refresh = Обновить
 insfor-select-govfor = Противостоящая фракция GOVFOR: { $name }
 insfor-select-govfor-unknown = Противостоящая фракция GOVFOR: еще не выбрана
-insfor-select-empty = Нет доступных фракций.
+insfor-select-empty = Нет доступных фракций по умолчанию.
 insfor-select-not-opposed = Не противостоит фракции GOVFOR этого раунда.
 insfor-select-custom-locked = У вас нет доступа к пользовательским фракциям.
 insfor-select-custom-empty = На этом компьютере нет сохраненных пользовательских фракций.
-insfor-select-choose = Выбрать эту фракцию
+insfor-select-choose = Выбрать
 
 # In-viewport button to reopen the selection popup after it was closed.
 insfor-reopen-faction-select-button = Выбрать фракцию
@@ -77,24 +51,6 @@ insfor-picker-flag-title = Выбор флага
 
 # Marker job used only as an INSFOR editor whitelist key.
 au14-job-name-insfor-editor = Доступ к редактору INSFOR
-
-# Встроенная стандартная фракция CLF.
-insfor-builtin-clf-title = Фронт колониального освобождения
-insfor-builtin-clf-description = Стандартная ячейка CLF без особой доктрины и пользовательского арсенала.
-insfor-builtin-clf-roleplay = Играйте за классическую повстанческую ячейку CLF.
-insfor-builtin-clf-vendor-requisitions = Стойка снабжения CLF
-insfor-builtin-clf-vendor-medical = Медицинский тайник CLF
-insfor-builtin-clf-vendor-tools = Инструментальный тайник CLF
-insfor-builtin-clf-vendor-recruitment = Вербовочный тайник CLF
-insfor-builtin-clf-vendor-clothing = Стойка гражданской одежды CLF
-insfor-builtin-clf-section-first-aid = Первая помощь
-insfor-builtin-clf-section-field-tools = Полевые инструменты
-insfor-builtin-clf-section-recruitment = Вербовка
-insfor-builtin-clf-section-footwear = Обувь
-insfor-builtin-clf-section-jumpsuits = Комбинезоны
-insfor-builtin-clf-section-jackets = Куртки и пальто
-insfor-builtin-clf-section-headwear = Головные уборы и очки
-insfor-builtin-clf-section-bags = Сумки и перчатки
 
 # INSFOR faction editor help window.
 insfor-editor-help-title = Редактор фракций INSFOR - справка

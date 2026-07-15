@@ -1,9 +1,0 @@
-au14-analyzer-scan-verb = Scan
-au14-analyzer-scan-empty = No items of interest detected nearby.
-au14-analyzer-credited-items = Analyzer credited { $points } point(s) to CLF for { $amount } { $name }.
-au14-analyzer-credited-progress = Analyzer credited { $points } point(s) to CLF. ({ $banked }/{ $required } until next point)
-au14-analyzer-banked-items = Analyzer banked { $amount } { $name }. ({ $banked }/{ $required } until next point)
-au14-analyzer-credited-cash-progress = Analyzer credited { $points } point(s) to CLF. ({ $banked }/{ $required } cr. banked)
-au14-analyzer-credited-cash = Analyzer credited { $points } point(s) to CLF.
-au14-analyzer-banked-cash = Analyzer banked { $credits } cr. ({ $banked }/{ $required } cr. until next point).
-clf-admin-make-recruit = Make CLF Recruit

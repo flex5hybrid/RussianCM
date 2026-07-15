@@ -37,28 +37,28 @@ public sealed partial class ConstructionEditorWindow : DefaultWindow
     // Material dropdown: friendly label → CM material stack id. These are the stacks the construction
     // menu's held sheets actually provide (see _RMC14/Entities/Objects/Materials/Sheets). Vanilla ids
     // like "Steel"/"Glass" index fine but can never be satisfied by the menu's sheets, so we don't use them.
-    private static readonly (string LabelKey, string Stack)[] CommonMaterials =
+    private static readonly (string Label, string Stack)[] CommonMaterials =
     {
-        ("construction-editor-common-material-metal", "CMSteel"),
-        ("construction-editor-common-material-plasteel", "CMPlasteel"),
-        ("construction-editor-common-material-glass", "CMGlass"),
-        ("construction-editor-common-material-reinforced-glass", "CMGlassReinforced"),
-        ("construction-editor-common-material-phoron-glass", "CMGlassPhoron"),
-        ("construction-editor-common-material-phoron", "CMPhoron"),
-        ("construction-editor-common-material-wood", "RMCWood"),
-        ("construction-editor-common-material-aluminum", "RMCAluminum"),
-        ("construction-editor-common-material-plastic", "RMCPlastic"),
-        ("construction-editor-common-material-cardboard", "RMCSheetCardboard"),
+        ("Metal", "CMSteel"),
+        ("Plasteel", "CMPlasteel"),
+        ("Glass", "CMGlass"),
+        ("Reinforced Glass", "CMGlassReinforced"),
+        ("Phoron Glass", "CMGlassPhoron"),
+        ("Phoron", "CMPhoron"),
+        ("Wood", "RMCWood"),
+        ("Aluminum", "RMCAluminum"),
+        ("Plastic", "RMCPlastic"),
+        ("Cardboard", "RMCSheetCardboard"),
     };
 
     // Tool dropdown: display label → construction tool quality id.
-    private static readonly (string LabelKey, string Quality)[] Tools =
+    private static readonly (string Label, string Quality)[] Tools =
     {
-        ("construction-editor-tool-wrench", "Anchoring"),
-        ("construction-editor-tool-welder", "Welding"),
-        ("construction-editor-tool-screwdriver", "Screwing"),
-        ("construction-editor-tool-crowbar", "Prying"),
-        ("construction-editor-tool-wirecutter", "Cutting"),
+        ("Wrench", "Anchoring"),
+        ("Welder", "Welding"),
+        ("Screwdriver", "Screwing"),
+        ("Crowbar", "Prying"),
+        ("Wirecutter", "Cutting"),
     };
 
     public event Action<SubmitCustomConstructionEditorEvent>? OnSubmit;
@@ -105,7 +105,7 @@ public sealed partial class ConstructionEditorWindow : DefaultWindow
         };
 
         for (var i = 0; i < CommonMaterials.Length; i++)
-            MaterialDropdown.AddItem(Loc.GetString(CommonMaterials[i].LabelKey), i);
+            MaterialDropdown.AddItem(CommonMaterials[i].Label, i);
         // Custom materials are added via the "+Custom Material" entity picker below, not a dropdown entry.
         MaterialDropdown.OnItemSelected += args => MaterialDropdown.SelectId(args.Id);
 
@@ -116,13 +116,13 @@ public sealed partial class ConstructionEditorWindow : DefaultWindow
         };
 
         for (var i = 0; i < Tools.Length; i++)
-            ToolDropdown.AddItem(Loc.GetString(Tools[i].LabelKey), i);
+            ToolDropdown.AddItem(Tools[i].Label, i);
         ToolDropdown.OnItemSelected += args => ToolDropdown.SelectId(args.Id);
 
         // Deconstruction tool dropdown reuses the same tool list; default to the crowbar (the classic
         // deconstruct tool) so the common case is one click.
         for (var i = 0; i < Tools.Length; i++)
-            DeconstructToolDropdown.AddItem(Loc.GetString(Tools[i].LabelKey), i);
+            DeconstructToolDropdown.AddItem(Tools[i].Label, i);
         DeconstructToolDropdown.OnItemSelected += args => DeconstructToolDropdown.SelectId(args.Id);
         var crowbarIndex = Array.FindIndex(Tools, t => t.Quality == "Prying");
         DeconstructToolDropdown.SelectId(crowbarIndex >= 0 ? crowbarIndex : 0);

@@ -44,7 +44,7 @@ public sealed partial class AnalyzerSystem : EntitySystem
         var verb = new InteractionVerb
         {
             Act = () => PerformScan(uid, args.User),
-            Text = Loc.GetString("au14-analyzer-scan-verb"),
+            Text = Loc.GetString("au14-analyzer-verb-scan"), // RuMC edit
             Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/examine.svg.192dpi.png"))
         };
         args.Verbs.Add(verb);
@@ -54,8 +54,8 @@ public sealed partial class AnalyzerSystem : EntitySystem
     {
         var count = _fetchSystem.ScanForFetchItems(analyzerUid);
         var message = count > 0
-            ? Loc.GetString("au14-analyzer-scan-found", ("count", count))
-            : Loc.GetString("au14-analyzer-scan-empty");
+            ? Loc.GetString("au14-analyzer-scan-found", ("count", count)) // RuMC edit
+            : Loc.GetString("au14-analyzer-scan-none"); // RuMC edit
         _popupSystem.PopupEntity(message, analyzerUid, user);
     }
 
@@ -112,10 +112,7 @@ public sealed partial class AnalyzerSystem : EntitySystem
 
             QueueDel(inserted);
             _objectiveSystem.AwardRawPointsToFaction(ClfFaction, points);
-            msg = Loc.GetString("au14-analyzer-credited-items",
-                ("points", points),
-                ("amount", amount),
-                ("name", name));
+            msg = $"Analyzer credited {points} point(s) to CLF for {amount} {name}.";
         }
         else
         {
@@ -133,8 +130,8 @@ public sealed partial class AnalyzerSystem : EntitySystem
                 _objectiveSystem.AwardRawPointsToFaction(ClfFaction, points);
 
             msg = points > 0
-                ? Loc.GetString("au14-analyzer-credited-progress", ("points", points), ("banked", banked), ("required", perPoint))
-                : Loc.GetString("au14-analyzer-banked-items", ("amount", amount), ("name", name), ("banked", banked), ("required", perPoint));
+                ? $"Analyzer credited {points} point(s) to CLF. ({banked}/{perPoint} until next point)"
+                : $"Analyzer banked {amount} {name}. ({banked}/{perPoint} until next point)";
         }
 
         _popupSystem.PopupEntity(msg, uid);
@@ -157,11 +154,13 @@ public sealed partial class AnalyzerSystem : EntitySystem
         if (points > 0)
             _objectiveSystem.AwardRawPointsToFaction(ClfFaction, points);
 
+        var banked = component.CashStored > 0
+            ? Loc.GetString("au14-analyzer-cash-banked-suffix", ("stored", component.CashStored), ("perPoint", CashPerPoint)) // RuMC edit // RuMC edit
+            : string.Empty;
+
         var msg = points > 0
-            ? component.CashStored > 0
-                ? Loc.GetString("au14-analyzer-credited-cash-progress", ("points", points), ("banked", component.CashStored), ("required", CashPerPoint))
-                : Loc.GetString("au14-analyzer-credited-cash", ("points", points))
-            : Loc.GetString("au14-analyzer-banked-cash", ("credits", credits), ("banked", component.CashStored), ("required", CashPerPoint));
+            ? Loc.GetString("au14-analyzer-cash-credited", ("points", points), ("banked", banked)) // RuMC edit
+            : Loc.GetString("au14-analyzer-cash-banked", ("credits", credits), ("stored", component.CashStored), ("perPoint", CashPerPoint)); // RuMC edit
 
         _popupSystem.PopupEntity(msg, uid);
     }

@@ -15,14 +15,14 @@ namespace Content.Server._AU14.SavedBuilds;
 public sealed class SaveBuildCommand : IConsoleCommand
 {
     public string Command => "savebuild";
-    public string Description => Loc.GetString("cmd-savebuild-desc");
-    public string Help => Loc.GetString("cmd-savebuild-help");
+    public string Description => "Save the player-built entities in a box around you to a shareable file.";
+    public string Help => "savebuild <name> [radius 0-5]";
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
         if (shell.Player is not { } player)
         {
-            shell.WriteError(Loc.GetString("cmd-savebuild-player-only"));
+            shell.WriteError("This command can only be run by a player.");
             return;
         }
 
@@ -35,7 +35,7 @@ public sealed class SaveBuildCommand : IConsoleCommand
         var radius = 2;
         if (args.Length >= 2 && !int.TryParse(args[1], out radius))
         {
-            shell.WriteError(Loc.GetString("cmd-savebuild-invalid-radius"));
+            shell.WriteError("Radius must be a number.");
             return;
         }
 

@@ -84,9 +84,6 @@
   - RecreationalRMC
   - CannedDrinksAU14
   - SmokablesRMC
-  - EyewearRMC
-  - MasksRMC
-  - HeadwearCLFAU14
 
 # ├──[ CLF ]─────────────────────────────────────────────────────────┤
 
@@ -178,9 +175,6 @@
   - RecreationalRMC
   - CannedDrinksAU14
   - SmokablesRMC
-  - EyewearRMC
-  - MasksRMC
-  - HeadwearCLFAU14
 
 - type: job
   parent: CMJobBase
@@ -268,9 +262,6 @@
   - RecreationalRMC
   - CannedDrinksAU14
   - SmokablesRMC
-  - EyewearRMC
-  - MasksRMC
-  - HeadwearCLFAU14
 
 - type: job
   parent: CMJobBase
@@ -359,9 +350,6 @@
   - RecreationalRMC
   - CannedDrinksAU14
   - SmokablesRMC
-  - EyewearRMC
-  - MasksRMC
-  - HeadwearCLFAU14
 
 - type: job
   parent: CMJobBase
@@ -449,6 +437,3 @@
   - RecreationalRMC
   - CannedDrinksAU14
   - SmokablesRMC
-  - EyewearRMC
-  - MasksRMC
-  - HeadwearCLFAU14

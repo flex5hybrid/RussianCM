@@ -1,7 +1,7 @@
 # CLF Sapper role.
 au14-job-name-clfsapper = Сапер CLF
 au14-job-description-clfsapper = Партизан, обученный полевому делу и взрывчатке. Вы ставите ловушки, маскируете их и обращаете землю колонии против GOVFOR.
-au14-job-prefix-clfsapper = CIV
+au14-job-prefix-clfsapper = Сапер CLF
 
 # Sapper trap deploy / disarm feedback.
 insfor-sapper-trap-deployed = Вы устанавливаете заряд, и он скрывается из виду.
@@ -52,41 +52,6 @@ insfor-sapper-workbench-loose-help = Справка по свободным ин
 insfor-sapper-workbench-loose-help-desc = Эти предметы должны лежать свободно на верстаке или рядом с ним, чтобы быть израсходованными:
 insfor-sapper-workbench-craft = Собрать
 insfor-sapper-workbench-no-materials = Нет материалов
-insfor-sapper-workbench-material-steel = Стальные листы
-insfor-sapper-workbench-material-plasteel = Пласталевые листы
-insfor-sapper-workbench-material-wood = Деревянные доски
-insfor-sapper-workbench-material-plastic = Пластиковые листы
-insfor-sapper-workbench-stat-line = { $name }: { $value }
-insfor-sapper-workbench-stat-accuracy = Точность
-insfor-sapper-workbench-stat-damage-falloff = Падение урона
-insfor-sapper-workbench-stat-burst-scatter = Разброс очереди
-insfor-sapper-workbench-stat-shots-per-burst = Выстрелов в очереди
-insfor-sapper-workbench-stat-damage = Урон
-insfor-sapper-workbench-stat-recoil = Отдача
-insfor-sapper-workbench-stat-scatter = Разброс
-insfor-sapper-workbench-stat-fire-delay = Задержка выстрела
-insfor-sapper-workbench-stat-projectile-speed = Скорость снаряда
-insfor-sapper-workbench-stat-range = Дальность
-insfor-sapper-workbench-stat-walk-speed = Скорость ходьбы
-insfor-sapper-workbench-stat-sprint-speed = Скорость бега
-insfor-sapper-workbench-stat-item-size = Размер предмета
-insfor-sapper-workbench-stat-wield-delay = Задержка хвата
-insfor-sapper-recipe-tripwire = Растяжка
-insfor-sapper-recipe-shotgun = Дробовиковая ловушка
-insfor-sapper-recipe-ied = Закопанное СВУ
-insfor-sapper-recipe-snare = Петля-ловушка
-insfor-sapper-recipe-audio = Звуковая ловушка
-insfor-sapper-recipe-spy-camera = Шпионская камера CLF
-insfor-sapper-recipe-camera-monitor = Монитор камер CLF
-insfor-sapper-recipe-camera-relay = Ретранслятор камер CLF
-insfor-sapper-recipe-siphon-rig = Установка для откачки средств
-insfor-sapper-recipe-switch = Переключатель (чип автоспуска)
-insfor-sapper-ingredient-cable = любая катушка кабеля
-insfor-sapper-ingredient-electronics = любая электроника
-insfor-sapper-ingredient-power-cell = батарея
-insfor-sapper-ingredient-buckshot = патроны с картечью
-insfor-sapper-ingredient-ied = СВУ
-insfor-sapper-ingredient-handcuffs = любые наручники
 insfor-sapper-workbench-deployed = Вы раскладываете верстак и фиксируете его ножки.
 insfor-sapper-workbench-need-materials = На верстаке не хватает материалов или свободных ингредиентов (положите ингредиенты на верстак или рядом с ним).
 insfor-sapper-workbench-crafted = Вы собираете {$item}.
@@ -128,5 +93,3 @@ insfor-sapper-snare-caught = Петля резко затягивается во
 insfor-sapper-snare-struggled-free = Вы с усилием освобождаетесь от петли.
 insfor-sapper-snare-cutting = Вы начинаете вырезать их из петли.
 insfor-sapper-snare-cut-free = Петля разрезана, и вы падаете свободно.
-
-# Названия слотов модулей, отсутствующие в основной русской локали RMC.
