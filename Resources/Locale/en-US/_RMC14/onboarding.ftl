@@ -275,7 +275,11 @@ rmc-onboarding-step-military-uniform-complete = You look like a monkey before a 
 
 rmc-onboarding-step-military-vendors-title = Military vendors
 rmc-onboarding-step-military-vendors-1 = You did not expect that to be everything, did you?
-rmc-onboarding-step-military-vendors-2 = These are the three main vendors used by military personnel. Take what you want, but make sure you have a weapon, clothing, body armor, a helmet, and matching magazines. Say something in chat when you are done looking around.
+rmc-onboarding-step-military-vendors-2 = These are the three main vendors used by military personnel.
+rmc-onboarding-step-military-vendors-3 = Later, you will learn how to select the right equipment for each mission.
+rmc-onboarding-step-military-vendors-4 = For now, take anything you want.
+rmc-onboarding-step-military-vendors-5 = Make sure you have a weapon, clothing, body armor, a helmet, and matching magazines.
+rmc-onboarding-step-military-vendors-6 = Say something in chat when you are done looking around.
 rmc-onboarding-step-military-vendors-complete = Body armor is an essential part of a fighter's protection. Different models cover different body parts, but even the smallest protects at least the chest.
 
 rmc-onboarding-step-military-magazine-title = Weapons and magazines

@@ -45,6 +45,7 @@ using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Events;
 using Content.Shared.Nutrition;
 using Content.Shared.Nutrition.Components;
+using Content.Shared.Radio.Components;
 using Content.Shared.Rejuvenate;
 using Content.Shared.Roles;
 using Content.Shared.Standing;
@@ -198,7 +199,7 @@ public sealed partial class RMCOnboardingSystem : EntitySystem
     private static readonly RMCOnboardingStep[] MilitaryEquipmentSteps =
     [
         Step(RMCOnboardingStepKind.SayNearby, "military-uniform", 2),
-        Step(RMCOnboardingStepKind.SayNearby, "military-vendors", 2),
+        Step(RMCOnboardingStepKind.SayNearby, "military-vendors", 6),
         Step(RMCOnboardingStepKind.InsertMagazine, "military-magazine", 5),
         Step(RMCOnboardingStepKind.KillDrone, "military-drone", 1),
         Step(RMCOnboardingStepKind.AttachSling, "military-sling", 3),
@@ -251,6 +252,7 @@ public sealed partial class RMCOnboardingSystem : EntitySystem
         SubscribeLocalEvent<InputMoverComponent, ActiveHandChangedEvent>(OnActiveHandChanged);
         SubscribeLocalEvent<FoodComponent, AfterFoodEatenEvent>(OnFoodEaten);
         SubscribeLocalEvent<FoodComponent, AfterFullyEatenEvent>(OnFoodFullyEaten);
+        SubscribeLocalEvent<HeadsetComponent, MapInitEvent>(OnTrainingHeadsetMapInit);
         SubscribeLocalEvent<MobStateComponent, ExaminedEvent>(OnMedicalPatientExamined);
         SubscribeLocalEvent<WoundTreatedEvent>(OnMedicalWoundTreated);
         SubscribeLocalEvent<CPRAttemptFinishedEvent>(OnMedicalCprFinished);
@@ -1221,6 +1223,7 @@ public sealed partial class RMCOnboardingSystem : EntitySystem
 
             mind = _mind.CreateMind(session.UserId, profile.Name);
             _mind.TransferTo(mind, mob);
+            RemoveTrainingHeadsets(mapId);
 
             return true;
         }
@@ -1247,6 +1250,32 @@ public sealed partial class RMCOnboardingSystem : EntitySystem
             throw new InvalidOperationException($"Could not resolve rifleman skill preset {RiflemanSkillPreset}.");
 
         _skills.SetSkills(mob, new Dictionary<EntProtoId<SkillDefinitionComponent>, int>(preset.Skills));
+    }
+
+    private void OnTrainingHeadsetMapInit(Entity<HeadsetComponent> ent, ref MapInitEvent args)
+    {
+        var mapId = Transform(ent).MapID;
+        if (mapId == MapId.Nullspace)
+            return;
+
+        foreach (var (_, active) in _activeSessions.Snapshot())
+        {
+            if (active.Map != mapId)
+                continue;
+
+            QueueDel(ent);
+            return;
+        }
+    }
+
+    private void RemoveTrainingHeadsets(MapId mapId)
+    {
+        var query = EntityQueryEnumerator<HeadsetComponent, TransformComponent>();
+        while (query.MoveNext(out var uid, out _, out var xform))
+        {
+            if (xform.MapID == mapId)
+                QueueDel(uid);
+        }
     }
 
     private void ApplyMedicalMercenarySkills(EntityUid mob)

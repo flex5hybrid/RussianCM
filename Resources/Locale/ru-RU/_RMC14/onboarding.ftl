@@ -275,7 +275,11 @@ rmc-onboarding-step-military-uniform-complete = Выглядишь как обе
 
 rmc-onboarding-step-military-vendors-title = Основные военные вендоры
 rmc-onboarding-step-military-vendors-1 = Ты же не надеялся, что на этом всё закончится?
-rmc-onboarding-step-military-vendors-2 = Это три основных вендора, в которых военные получают снаряжение. Позже ты научишься правильно подбирать обмундирование под задачу. Сейчас можешь взять всё, что захочешь. Главное — возьми оружие, одежду, бронежилет, шлем и магазины к твоему оружию. Как только закончишь осматриваться — скажи что-нибудь в чат.
+rmc-onboarding-step-military-vendors-2 = Это три основных вендора, в которых военные получают снаряжение.
+rmc-onboarding-step-military-vendors-3 = Позже ты научишься правильно подбирать обмундирование под задачу.
+rmc-onboarding-step-military-vendors-4 = Сейчас можешь взять всё, что захочешь.
+rmc-onboarding-step-military-vendors-5 = Главное — возьми оружие, одежду, бронежилет, шлем и магазины к твоему оружию.
+rmc-onboarding-step-military-vendors-6 = Как только закончишь осматриваться — скажи что-нибудь в чат.
 rmc-onboarding-step-military-vendors-complete = Бронежилет — неотъемлемая часть защиты бойца. В зависимости от модификации он может защищать разные зоны тела, но даже самый миниатюрный бронежилет защищает хотя бы грудь.
 
 rmc-onboarding-step-military-magazine-title = Оружие и магазины
