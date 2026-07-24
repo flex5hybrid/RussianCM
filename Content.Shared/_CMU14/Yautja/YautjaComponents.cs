@@ -612,10 +612,10 @@ public sealed partial class YautjaBracerComponent : Component, IClothingSlots
     public SoundSpecifier EquipSound = new SoundPathSpecifier("/Audio/_CMU14/Yautja/Equipment/pred_bracer.wav");
 
     [DataField]
-    public SoundSpecifier CloakOnSound = new SoundPathSpecifier("/Audio/_CMU14/Yautja/pred_cloakon_modern.ogg");
+    public SoundSpecifier CloakOnSound = new SoundPathSpecifier("/Audio/_CMU14/Yautja/pred_cloakon_modern.wav");
 
     [DataField]
-    public SoundSpecifier CloakOffSound = new SoundPathSpecifier("/Audio/_CMU14/Yautja/pred_cloakoff_modern.ogg");
+    public SoundSpecifier CloakOffSound = new SoundPathSpecifier("/Audio/_CMU14/Yautja/pred_cloakoff_modern.wav");
 
     [DataField]
     public YautjaInvisibilitySound InvisibilitySound = YautjaInvisibilitySound.Modern;

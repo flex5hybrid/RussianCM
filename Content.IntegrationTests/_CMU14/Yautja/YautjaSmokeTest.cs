@@ -846,8 +846,8 @@ public sealed class YautjaSmokeTest
                 Assert.Multiple(() =>
                 {
                     Assert.That(bracerComp.InvisibilitySound, Is.EqualTo(YautjaInvisibilitySound.Modern));
-                    AssertSoundPath(bracerComp.CloakOnSound, "/Audio/_CMU14/Yautja/pred_cloakon_modern.ogg");
-                    AssertSoundPath(bracerComp.CloakOffSound, "/Audio/_CMU14/Yautja/pred_cloakoff_modern.ogg");
+                    AssertSoundPath(bracerComp.CloakOnSound, "/Audio/_CMU14/Yautja/pred_cloakon_modern.wav");
+                    AssertSoundPath(bracerComp.CloakOffSound, "/Audio/_CMU14/Yautja/pred_cloakoff_modern.wav");
                 });
             }
             finally

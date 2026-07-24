@@ -272,8 +272,8 @@ public sealed partial class YautjaProfileApplySystem : EntitySystem
             }
             else
             {
-                bracerComp.CloakOnSound = new SoundPathSpecifier("/Audio/_CMU14/Yautja/pred_cloakon_modern.ogg");
-                bracerComp.CloakOffSound = new SoundPathSpecifier("/Audio/_CMU14/Yautja/pred_cloakoff_modern.ogg");
+                bracerComp.CloakOnSound = new SoundPathSpecifier("/Audio/_CMU14/Yautja/pred_cloakon_modern.wav");
+                bracerComp.CloakOffSound = new SoundPathSpecifier("/Audio/_CMU14/Yautja/pred_cloakoff_modern.wav");
             }
 
             Dirty(bracer, bracerComp);

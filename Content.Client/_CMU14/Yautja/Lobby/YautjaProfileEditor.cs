@@ -31,7 +31,7 @@ public sealed partial class YautjaProfileEditor : ScrollContainer
     private const int LabeledVisualButtonSize = VisualButtonSize;
     private const int LabeledVisualSpriteSize = 86;
     private static readonly ProtoId<SpeciesPrototype> YautjaSpecies = "Yautja";
-    private static readonly SoundPathSpecifier ModernCloakPreviewSound = new("/Audio/_CMU14/Yautja/pred_cloakon_modern.ogg");
+    private static readonly SoundPathSpecifier ModernCloakPreviewSound = new("/Audio/_CMU14/Yautja/pred_cloakon_modern.wav");
     private static readonly SoundPathSpecifier RetroCloakPreviewSound = new("/Audio/_CMU14/Yautja/Equipment/pred_cloakon.wav");
     private static readonly ResPath BracerRsi = new("/Textures/_CMU14/Yautja/bracer.rsi");
 
