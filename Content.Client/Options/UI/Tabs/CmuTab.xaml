@@ -32,7 +32,6 @@
 
                 <Label Text="{Loc 'ui-options-cmu-zlevels'}" StyleClasses="LabelKeyText" />
                 <ui:OptionSlider Name="ZLevelBlurSlider" Title="{Loc 'ui-options-zlevel-blur'}" />
-                <ui:OptionSlider Name="FaintLookUpOpacitySlider" Title="{Loc 'ui-options-faint-look-up-opacity'}" />
             </BoxContainer>
         </ScrollContainer>
         <ui:OptionsTabControlRow Name="Control" Access="Public" />

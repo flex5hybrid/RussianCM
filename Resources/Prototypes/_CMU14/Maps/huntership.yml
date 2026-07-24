@@ -6,6 +6,9 @@
   - /Maps/_CMU14/huntership_lower.yml
   mapsAbove:
   - /Maps/_CMU14/huntership_upper.yml
+  zLevelsComponentOverrides:
+  - type: ZBuildableMap
+    enabled: false
   minPlayers: 0
   maxPlayers: 50
   maxRandomOffset: 0

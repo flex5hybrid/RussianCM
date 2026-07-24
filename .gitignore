@@ -23,6 +23,9 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
+# Hunter Ship visual-port assets intentionally live under an `obj` directory.
+!Resources/Textures/_CMU14/HunterShip/obj/
+!Resources/Textures/_CMU14/HunterShip/obj/**
 [Ll]og/
 
 # Local Discord bot secrets

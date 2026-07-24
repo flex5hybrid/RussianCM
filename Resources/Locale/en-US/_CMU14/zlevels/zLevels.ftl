@@ -45,5 +45,3 @@ ent-CMUActionZLevelDown = Move down
 
 ent-CMUActionToggleLookUp = Look up
     .desc = You lift your head and look up at the sky.
-# AU14 (building overhaul): stage 1 of the look-up cycle (faint upper ghost).
-cmu-zlevel-faint-up-enabled = You glance upward, faintly making out the level above.

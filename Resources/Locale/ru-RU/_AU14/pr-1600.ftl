@@ -1,7 +1,5 @@
 # Дополнительные строки, добавленные объединённым PR #1600.
 
-cmu-zlevel-faint-up-enabled = Вы бросаете взгляд наверх и смутно различаете верхний уровень.
-
 construction-step-insert-entity = Вставьте {$name}.
 construction-step-use-entity = Используйте {$name}.
 
