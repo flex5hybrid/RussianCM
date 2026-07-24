@@ -6,6 +6,7 @@
     "x": 64,
     "y": 32
   },
+  "rsic": false,
   "states": [
     {
       "name": ""
