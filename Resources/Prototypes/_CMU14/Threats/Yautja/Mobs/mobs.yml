@@ -17,8 +17,16 @@
   - type: IgnoreXenoWeedsSlowdown
   - type: Skills
     skills:
-      RMCSkillMedical: 3
-      RMCSkillSurgery: 2
+      RMCSkillCqc: 5
+      RMCSkillFirearms: 1
+      RMCSkillPolice: 2
+      RMCSkillFireman: 5
+      RMCSkillConstruction: 2
+      RMCSkillEngineer: 2
+      RMCSkillEndurance: 3
+      RMCSkillMeleeWeapons: 2
+      RMCSkillSurgery: 3
+      RMCSkillMedical: 2
   - type: Loadout
     prototypes:
     - CMUYautjaHunterGear
@@ -208,8 +216,16 @@
   - type: IgnoreXenoWeedsSlowdown
   - type: Skills
     skills:
-      RMCSkillMedical: 3
-      RMCSkillSurgery: 2
+      RMCSkillCqc: 5
+      RMCSkillFirearms: 1
+      RMCSkillPolice: 2
+      RMCSkillFireman: 5
+      RMCSkillConstruction: 2
+      RMCSkillEngineer: 2
+      RMCSkillEndurance: 3
+      RMCSkillMeleeWeapons: 2
+      RMCSkillSurgery: 3
+      RMCSkillMedical: 2
   - type: HumanoidAppearance
     species: Yautja
     hideLayersOnEquip:
