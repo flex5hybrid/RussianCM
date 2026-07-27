@@ -327,6 +327,8 @@ public sealed partial class FoodSystem : EntitySystem
             _utensil.TryBreak(utensil, args.User);
         }
 
+        args.Repeat = !forceFeed; // RuMC edit
+
         if (TryComp<StackComponent>(entity, out var stack))
         {
             //Not deleting whole stack piece will make troubles with grinding object

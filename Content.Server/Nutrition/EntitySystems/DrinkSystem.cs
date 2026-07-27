@@ -249,5 +249,10 @@ public sealed partial class DrinkSystem : SharedDrinkSystem
         _stomach.TryTransferSolution(firstStomach.Value.Owner, drained, firstStomach.Value.Comp1);
 
         _forensics.TransferDna(entity, args.Target.Value);
+
+        // RuMC edit start
+        if (!forceDrink && solution.Volume > 0)
+            args.Repeat = true;
+        // RuMC edit end
     }
 }
