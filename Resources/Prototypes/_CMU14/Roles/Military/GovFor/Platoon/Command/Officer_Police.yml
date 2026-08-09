@@ -4,8 +4,6 @@
   id: AU14JobOfficerMPBaseAbstract
   name: au14-job-name-govforpolicechief
   description: au14-job-description-govforpolicechief
-  whitelisted: true
-  whitelistParent: RMCWhitelistEasy
   icon: "AU14JobIconGovCMP"
   spawnMenuRoleName: Chief Military Police (GOVFOR)
   supervisors: au14-job-supervisors-govforplatco
