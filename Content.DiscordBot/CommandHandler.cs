@@ -17,6 +17,7 @@ public sealed class CommandHandler(
     InteractionService interaction,
     Func<ServerDbContext> databaseFactory,
     GovernanceIdentityService identities,
+    DiscordGuildMemberCache guildMembers,
     IServiceProvider services,
     ulong guild)
 {
@@ -237,7 +238,8 @@ public sealed class CommandHandler(
                     createdLink = true;
                 }
 
-                var roles = (await client.Rest.GetGuildUserAsync(guildId, authorId))?.RoleIds.ToArray() ?? [];
+                var memberLookup = await guildMembers.LookupAsync(authorId);
+                var roles = memberLookup.User?.RoleIds.ToArray() ?? [];
                 var tiers = await db.RMCPatronTiers
                     .Where(t => roles.Contains(t.DiscordRole))
                     .ToListAsync();
@@ -308,7 +310,11 @@ public sealed class CommandHandler(
                 {
                     try
                     {
-                        var user = await client.Rest.GetGuildUserAsync(guild, linked.DiscordId);
+                        var lookup = await guildMembers.LookupAsync(linked.DiscordId);
+                        if (!lookup.IsDefinitive)
+                            continue;
+
+                        var user = lookup.User;
                         if (user == null)
                         {
                             if (linked.Player.Patron != null)
