@@ -7,11 +7,9 @@ public sealed class ModerationTrustCoordinator(
     DiscordSocketClient client,
     ModerationTrustService trust,
     CommunityCourtService court,
-    Config config)
+    Config config,
+    DiscordGuildMemberCache guildMembers)
 {
-    private HashSet<ulong>? _guildMembers;
-    private DateTime _guildMembersRefreshedAt;
-
     public async Task RunSchedulerAsync(CancellationToken cancellationToken)
     {
         var delay = TimeSpan.FromSeconds(Math.Clamp(config.ModerationReviewSchedulerSeconds, 10, 3600));
@@ -43,29 +41,7 @@ public sealed class ModerationTrustCoordinator(
 
     private async Task<IReadOnlySet<ulong>> GuildMembersAsync()
     {
-        if (_guildMembers != null && DateTime.UtcNow - _guildMembersRefreshedAt < TimeSpan.FromMinutes(10))
-            return _guildMembers;
-
-        var members = new HashSet<ulong>();
-        foreach (var discordId in await court.LinkedDiscordIdsAsync())
-        {
-            if (discordId == 0 || discordId > long.MaxValue)
-                continue;
-
-            try
-            {
-                if (await client.Rest.GetGuildUserAsync(config.Guild, discordId) != null)
-                    members.Add(discordId);
-            }
-            catch (Discord.Net.HttpException exception) when (exception.HttpCode == System.Net.HttpStatusCode.NotFound)
-            {
-                // Linked account is no longer present in the configured guild.
-            }
-        }
-
-        _guildMembers = members;
-        _guildMembersRefreshedAt = DateTime.UtcNow;
-        return members;
+        return await guildMembers.ExistingMembersAsync(await court.LinkedDiscordIdsAsync());
     }
 
     private async Task NotifyReviewersAsync()
