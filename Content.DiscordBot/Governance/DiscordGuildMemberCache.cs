@@ -24,26 +24,27 @@ public sealed class DiscordGuildMemberCache(DiscordSocketClient client, ulong gu
 
     public async Task<DiscordGuildMemberLookup> LookupAsync(
         ulong discordId,
+        bool forceRefresh = false,
         CancellationToken cancellationToken = default)
     {
         if (discordId == 0)
             return new DiscordGuildMemberLookup(null, true);
 
-        if (client.GetGuild(guildId)?.GetUser(discordId) is { } socketUser)
+        if (!forceRefresh && client.GetGuild(guildId)?.GetUser(discordId) is { } socketUser)
         {
             _entries[discordId] = new CacheEntry(socketUser, DateTime.UtcNow, true);
             return new DiscordGuildMemberLookup(socketUser, true);
         }
 
         var now = DateTime.UtcNow;
-        if (_entries.TryGetValue(discordId, out var cached) && now - cached.RefreshedAt < FreshFor)
+        if (!forceRefresh && _entries.TryGetValue(discordId, out var cached) && now - cached.RefreshedAt < FreshFor)
             return new DiscordGuildMemberLookup(cached.User, cached.IsDefinitive);
 
         await _restGate.WaitAsync(cancellationToken);
         try
         {
             now = DateTime.UtcNow;
-            if (_entries.TryGetValue(discordId, out cached) && now - cached.RefreshedAt < FreshFor)
+            if (!forceRefresh && _entries.TryGetValue(discordId, out cached) && now - cached.RefreshedAt < FreshFor)
                 return new DiscordGuildMemberLookup(cached.User, cached.IsDefinitive);
 
             try
@@ -79,6 +80,7 @@ public sealed class DiscordGuildMemberCache(DiscordSocketClient client, ulong gu
 
     public async Task<IReadOnlySet<ulong>> ExistingMembersAsync(
         IEnumerable<ulong> discordIds,
+        bool forceRefresh = false,
         CancellationToken cancellationToken = default)
     {
         var members = new HashSet<ulong>();
@@ -87,7 +89,7 @@ public sealed class DiscordGuildMemberCache(DiscordSocketClient client, ulong gu
             if (discordId == 0 || discordId > long.MaxValue)
                 continue;
 
-            var lookup = await LookupAsync(discordId, cancellationToken);
+            var lookup = await LookupAsync(discordId, forceRefresh, cancellationToken);
             if (lookup.User != null)
                 members.Add(discordId);
         }
