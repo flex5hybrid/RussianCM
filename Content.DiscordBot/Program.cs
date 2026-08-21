@@ -211,7 +211,7 @@ if (governanceDoctor)
     if (activeAHelpIndex != 1)
         throw new InvalidOperationException("The active AHelp uniqueness index does not include court-escalated tickets.");
 
-    var immutableTriggers = await governance.Database.SqlQueryRaw<string>("""
+    var immutableTriggers = (await governance.Database.SqlQueryRaw<string>("""
         SELECT tgname AS "Value"
         FROM pg_trigger
         WHERE tgenabled <> 'D' AND tgname IN (
@@ -285,12 +285,14 @@ var moderation = new ModerationGovernanceService(CreateGovernanceDatabase, Creat
 var moderationTrust = new ModerationTrustService(CreateGovernanceDatabase, community, selection, config);
 var events = new EventGovernanceService(CreateGovernanceDatabase, community, selection, config);
 var eventStatus = new EventGovernanceStatusService(CreateGovernanceDatabase);
-var coordinator = new CourtDiscordCoordinator(client, court, courtMaterials, punishments, events, moderation, config);
-var moderationTrustCoordinator = new ModerationTrustCoordinator(client, moderationTrust, court, config);
+var guildMembers = new DiscordGuildMemberCache(client, config.Guild);
+var coordinator = new CourtDiscordCoordinator(client, court, courtMaterials, punishments, events, moderation, config, guildMembers);
+var moderationTrustCoordinator = new ModerationTrustCoordinator(client, moderationTrust, court, config, guildMembers);
 var reputationCoordinator = new ReputationCoordinator(identities, reputation, config);
 var services = new ServiceCollection()
     .AddSingleton(client)
     .AddSingleton(config)
+    .AddSingleton(guildMembers)
     .AddSingleton(identities)
     .AddSingleton(reputation)
     .AddSingleton(reputationHistory)
@@ -320,6 +322,7 @@ var handler = new CommandHandler(
     interaction,
     CreateConfiguredDatabase,
     identities,
+    guildMembers,
     services,
     guild);
 
