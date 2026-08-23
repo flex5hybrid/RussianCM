@@ -1,59 +1,58 @@
-﻿<Document>
+<Document>
 
-  #So you've just been born into the hive!
-  #Now what?
+Итак, вы только что родились в улье!
 
-  - Rejoice! We've just joined our hive as a larva. We can't do very much right now, but our potential is limitless!
+Что теперь?
+
+· Радуйтесь! Вы только что присоединились к улью в качестве личинки. Сейчас вы мало что можете, но ваш потенциал безграничен!
   <Box>
-    <GuideEntityEmbed Entity="CMXenoLarva"/>
-  </Box>\n
-  - It's time to get to work! As soon as we can, we should try to evolve. This will require us to gain some age by waiting however.
-  - For beginners, becoming a drone is recommended. Drones are responsible for building the hive defenses.
+  <GuideEntityEmbed Entity="CMXenoLarva"/>
+  </Box>
+· Пора приниматься за работу! Как можно скорее нам нужно эволюционировать. Для этого потребуется набрать возраст, просто подождав.
+· Новичкам рекомендуется становиться дронами. Дроны отвечают за строительство обороны улья.
 
-  <Box>
+<Box>
     <GuideEntityEmbed Entity="RMCGuidebookActionXenoEvolve"/>
     <GuideEntityEmbed Entity="CMXenoDrone"/>
-  </Box>\n
+</Box>
 
-  - Here are a few of the things we can construct!
+· Вот несколько вещей, которые мы можем построить!
 
-  <Box>
+<Box>
     <GuideEntityEmbed Entity="WallXenoResin"/>
     <GuideEntityEmbed Entity="WallXenoMembrane"/>
     <GuideEntityEmbed Entity="DoorXenoResin"/>
-  </Box>\n
+</Box>
 
-  - Another important job of the Drone is to plant weeds.
-  - Weeds allow us to rest to regain our health and energy!
-  - We can also only construct the hive on weeds.
+· Ещё одна важная задача дрона — сажать узлы сорняков.
+· Сорняки позволяют нам отдыхать, восстанавливая здоровье и энергию!
+· Кроме того, строить элементы улья можно только на сорняках.
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoRest"/>
   <Box>
-    <GuideEntityEmbed Entity="XenoWeeds"/>
-    <GuideEntityEmbed Entity="XenoWeedsSource"/>
-    <GuideEntityEmbed Entity="XenoWeeds"/>
-  </Box>\n
+  <GuideEntityEmbed Entity="XenoWeeds"/>
+  <GuideEntityEmbed Entity="XenoWeedsSource"/>
+  <GuideEntityEmbed Entity="XenoWeeds"/>
+  </Box>
+· Наша конечная цель — защищать Королеву и откладывать её яйца, чтобы наш улей рос!
+· Яйца можно размещать на сорняках улья, и они содержат паразитов.
+· Паразитов можно извлекать из яиц, но помните, что вдали от сорняков они живут недолго!
 
-  - Our final goal is to protect the Queen and plant her eggs so our hive may grow!
-  - Eggs can be placed on hive weeds, and contain parasites.
-  - Parasites can be extracted from the eggs, but be wary that parasites have short lifespans away from the weeds!
-
-  <Box>
+<Box>
     <GuideEntityEmbed Entity="RMCGuidebookXenoQueen"/>
     <GuideEntityEmbed Entity="XenoEgg"/>
     <GuideEntityEmbed Entity="XenoHiveWeeds"/>
     <GuideEntityEmbed Entity="CMXenoParasite"/>
-  </Box>\n
+</Box>
 
-  - We can also devour captures and transport them to the hive for nesting!
-  - Find a tall and tackle them by right clicking on them with harm mode enabled.
-  - Once they are restrained, click and drag their sprite into yours to start devouring them, remember to keep tackling after!
-  - After devouring, walk to the closest hive to infect them on a egg, then to nest them do the same motion onto a wall.
-
-  - When a parasite is placed on a living host, a new larva will be born! Rejoice!
-  - Hosts that hold the growing larva are very precious, and should be secured to a resin wall supported by hive weeds as soon as possible.
+· Мы также можем пожирать пойманных жертв и транспортировать их в улей для закрепления на смоле!
+· Найдите цель и схватите её, щелкнув правой кнопкой мыши с включенным режимом атаки.
+· Когда жертва обездвижена, перетащите её спрайт на свой, чтобы начать пожирание. Не забывайте продолжать толкать жертву после этого!
+· После пожирания идите к ближайшему улью, чтобы заразить жертву с помощью яйца, а затем, чтобы закрепить в гнезде её, проделайте то же самое, но перетащите на стену.
+· Когда паразит помещается на живого носителя, рождается новая личинка! Радуйтесь!
+· Носители с растущей личинкой очень ценны, и их следует как можно скорее прикрепить к смоляной стене, поддерживаемой сорняками улья.
   <Box>
-    <GuideEntityEmbed Entity="RMCGuidebookCorpseColonistBurst"/>
-    <GuideEntityEmbed Entity="CMXenoLarva"/>
-  </Box>\n
+  <GuideEntityEmbed Entity="RMCGuidebookCorpseColonistBurst"/>
+  <GuideEntityEmbed Entity="CMXenoLarva"/>
+  </Box>
 
 </Document>
