@@ -1499,6 +1499,56 @@ public sealed class CameraNetworkSystemTest
     }
 
     [Test]
+    public async Task ColonyCameraGridGetsGeneratedNavMapGeometry()
+    {
+        var (server, _) = await PoolManager.GenerateServer(new PoolSettings(), TestContext.Out);
+        try
+        {
+            await LoadPrototypes(server);
+            await server.WaitAssertion(() =>
+            {
+                var entMan = server.EntMan;
+                var mapSystem = entMan.System<SharedMapSystem>();
+                var networks = entMan.System<CameraNetworkSystem>();
+                mapSystem.CreateMap(out var mapId);
+                var grid = mapSystem.CreateGridEntity(mapId);
+                mapSystem.SetTile(grid.Owner, grid.Comp, Vector2i.Zero, new Tile(1));
+                var receiver = entMan.SpawnEntity("CMUTestCameraReceiver",
+                    new EntityCoordinates(grid.Owner, Vector2.Zero));
+                var camera = entMan.SpawnEntity("CMUTestCameraStandardA",
+                    new EntityCoordinates(grid.Owner, Vector2.Zero));
+
+                try
+                {
+                    entMan.AddComponent<CameraMapMarkerComponent>(camera);
+                    Assert.That(entMan.HasComponent<NavMapComponent>(grid.Owner), Is.False);
+
+                    var state = networks.BuildMapState(receiver);
+                    var navMap = entMan.GetComponent<NavMapComponent>(grid.Owner);
+
+                    Assert.Multiple(() =>
+                    {
+                        Assert.That(state.Grids.Single().Grid, Is.EqualTo(entMan.GetNetEntity(grid.Owner)));
+                        Assert.That(navMap.Chunks, Contains.Key(Vector2i.Zero));
+                        Assert.That(navMap.Chunks[Vector2i.Zero].TileData[0],
+                            Is.EqualTo(SharedNavMapSystem.FloorMask));
+                    });
+                }
+                finally
+                {
+                    entMan.DeleteEntity(camera);
+                    entMan.DeleteEntity(receiver);
+                    entMan.DeleteEntity(grid);
+                }
+            });
+        }
+        finally
+        {
+            server.Dispose();
+        }
+    }
+
+    [Test]
     public async Task RmcMonitorSubscribesViewerToEveryVisibleCameraGrid()
     {
         var pair = await PoolManager.GetServerClient(new PoolSettings { Connected = true });

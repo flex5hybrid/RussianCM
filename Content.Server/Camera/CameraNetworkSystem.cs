@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Server.Pinpointer;
 using Content.Server.Power.Components;
 using Content.Server.SurveillanceCamera;
 using Content.Shared.Camera;
@@ -6,6 +7,7 @@ using Content.Shared._RMC14.Camera;
 using Content.Shared.Power;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map;
+using Robust.Shared.Map.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
@@ -18,6 +20,7 @@ public sealed class CameraNetworkSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    [Dependency] private readonly NavMapSystem _navMap = default!;
     [Dependency] private readonly ViewSubscriberSystem _viewSubscriber = default!;
 
     private readonly Dictionary<ProtoId<CameraNetworkPrototype>, HashSet<EntityUid>> _members = [];
@@ -263,6 +266,12 @@ public sealed class CameraNetworkSystem : EntitySystem
 
             if (!grouped.TryGetValue(grid.Value, out var markers))
             {
+                // Colony and standalone maps are not necessarily registered as station grids,
+                // so NavMapSystem never sees StationGridAddedEvent for them. Generate the
+                // geometry lazily when an accessible camera exposes such a grid in the UI.
+                if (TryComp<MapGridComponent>(grid.Value, out var mapGrid))
+                    _navMap.EnsureNavMapIfMissing((grid.Value, mapGrid));
+
                 markers = [];
                 grouped.Add(grid.Value, markers);
             }
