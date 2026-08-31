@@ -14,20 +14,25 @@ The first migration phase is deliberately additive: introduce engine-level 3D tr
 
 1. `0001-add-transform3d-component.patch`
    - adds an engine-owned `Transform3DComponent` to `Robust.Shared`;
-   - stores local XYZ position and quaternion rotation;
+   - stores local XYZ position, quaternion rotation, scale and interpolation targets;
    - does not replace `TransformComponent` yet;
    - does not alter current 2D gameplay.
+2. `0002-add-shared-transform3d-system.patch`
+   - adds `SharedTransform3DSystem`;
+   - calculates local/world `Matrix4x4` transforms;
+   - supports local-to-world and world-to-local XYZ conversion;
+   - reuses the existing `TransformComponent` parent hierarchy;
+   - projects unchanged 2D parents into XY/Z=0 for mixed 2D/3D migration.
 
 Next patches should implement, in this order:
 
-1. `SharedTransform3DSystem` and hierarchy/world transforms;
-2. network component state and interpolation;
-3. 3D spatial queries and broadphase abstraction;
-4. 3D physics backend;
-5. 3D PVS bounds;
-6. client camera and mesh renderer;
-7. map/tile extrusion bridge;
-8. migration of aiming/projectiles/movement from 2D queries.
+1. network component state and interpolation;
+2. 3D spatial queries and broadphase abstraction;
+3. 3D physics backend;
+4. 3D PVS bounds;
+5. client camera and mesh renderer;
+6. map/tile extrusion bridge;
+7. migration of aiming/projectiles/movement from 2D queries.
 
 ## Applying the patches locally
 
