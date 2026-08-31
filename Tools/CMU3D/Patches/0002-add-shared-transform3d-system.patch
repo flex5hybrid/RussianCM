@@ -1,0 +1,114 @@
+diff --git a/Robust.Shared/GameObjects/Systems/SharedTransform3DSystem.cs b/Robust.Shared/GameObjects/Systems/SharedTransform3DSystem.cs
+new file mode 100644
+index 000000000..2cdd319fa
+--- /dev/null
++++ b/Robust.Shared/GameObjects/Systems/SharedTransform3DSystem.cs
+@@ -0,0 +1,104 @@
++using System.Numerics;
++
++namespace Robust.Shared.GameObjects
++{
++    /// <summary>
++    ///     Experimental hierarchy calculations for CMU3D transforms.
++    /// </summary>
++    /// <remarks>
++    ///     Parent ownership is intentionally borrowed from the existing
++    ///     <see cref="TransformComponent"/> during the migration. A parent which has no
++    ///     <see cref="Transform3DComponent"/> is projected from its current XY position
++    ///     and Z-axis rotation. This lets 3D-enabled entities coexist with unchanged
++    ///     grids/maps while the rest of the engine is migrated.
++    /// </remarks>
++    public sealed class SharedTransform3DSystem : EntitySystem
++    {
++        private EntityQuery<TransformComponent> _transformQuery;
++        private EntityQuery<Transform3DComponent> _transform3DQuery;
++
++        public override void Initialize()
++        {
++            base.Initialize();
++
++            _transformQuery = GetEntityQuery<TransformComponent>();
++            _transform3DQuery = GetEntityQuery<Transform3DComponent>();
++        }
++
++        /// <summary>
++        ///     Builds the local 4x4 transform matrix for a 3D transform.
++        /// </summary>
++        public static Matrix4x4 GetLocalMatrix(Transform3DComponent transform)
++        {
++            return Matrix4x4.CreateScale(transform.LocalScale)
++                   * Matrix4x4.CreateFromQuaternion(Quaternion.Normalize(transform.LocalRotation))
++                   * Matrix4x4.CreateTranslation(transform.LocalPosition);
++        }
++
++        /// <summary>
++        ///     Gets an entity's world matrix using the existing Robust transform hierarchy.
++        /// </summary>
++        public Matrix4x4 GetWorldMatrix(EntityUid uid, Transform3DComponent? transform3D = null)
++        {
++            transform3D ??= _transform3DQuery.GetComponent(uid);
++
++            var matrix = GetLocalMatrix(transform3D);
++
++            if (!_transformQuery.TryGetComponent(uid, out var transform))
++                return matrix;
++
++            var parent = transform.ParentUid;
++            while (parent.IsValid())
++            {
++                matrix *= GetParentLocalMatrix(parent);
++
++                if (!_transformQuery.TryGetComponent(parent, out var parentTransform))
++                    break;
++
++                parent = parentTransform.ParentUid;
++            }
++
++            return matrix;
++        }
++
++        /// <summary>
++        ///     Gets the entity origin in world-space XYZ coordinates.
++        /// </summary>
++        public Vector3 GetWorldPosition(EntityUid uid, Transform3DComponent? transform3D = null)
++        {
++            return Vector3.Transform(Vector3.Zero, GetWorldMatrix(uid, transform3D));
++        }
++
++        /// <summary>
++        ///     Converts a point from local entity space to world space.
++        /// </summary>
++        public Vector3 LocalToWorld(EntityUid uid, Vector3 point, Transform3DComponent? transform3D = null)
++        {
++            return Vector3.Transform(point, GetWorldMatrix(uid, transform3D));
++        }
++
++        /// <summary>
++        ///     Converts a point from world space to local entity space.
++        /// </summary>
++        public Vector3 WorldToLocal(EntityUid uid, Vector3 point, Transform3DComponent? transform3D = null)
++        {
++            var world = GetWorldMatrix(uid, transform3D);
++            if (!Matrix4x4.Invert(world, out var inverse))
++                return point;
++
++            return Vector3.Transform(point, inverse);
++        }
++
++        private Matrix4x4 GetParentLocalMatrix(EntityUid parent)
++        {
++            if (_transform3DQuery.TryGetComponent(parent, out var transform3D))
++                return GetLocalMatrix(transform3D);
++
++            if (!_transformQuery.TryGetComponent(parent, out var transform2D))
++                return Matrix4x4.Identity;
++
++            // Compatibility projection for unchanged 2D parents during migration.
++            var position = transform2D._localPosition;
++            var rotation = (float) transform2D._localRotation.Theta;
++
++            return Matrix4x4.CreateRotationZ(rotation)
++                   * Matrix4x4.CreateTranslation(position.X, position.Y, 0f);
++        }
++    }
++}
