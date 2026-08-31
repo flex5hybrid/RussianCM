@@ -2,6 +2,24 @@
 
 This directory bootstraps the real 3D migration of CMU without pretending that Content-side components can replace engine changes.
 
+## See the 3D world now
+
+On Windows, from the RussianCM repository root:
+
+```powershell
+./Tools/CMU3D/open-preview.ps1
+```
+
+Or open `Tools/CMU3D/Preview/index.html` directly in a modern browser.
+
+Controls:
+- click the viewport to capture the mouse;
+- `WASD` to move;
+- mouse to look around;
+- hold `Shift` to sprint.
+
+The preview is deliberately standalone WebGL2. It is a fast visual test bed for the same XYZ coordinate convention, perspective camera, world scale and primitive geometry that are being moved into Robust/Clyde. It is not a substitute for the engine migration and does not alter normal CMU gameplay.
+
 ## Current engine baseline
 
 RussianCM pins the `RobustToolbox` submodule to:
