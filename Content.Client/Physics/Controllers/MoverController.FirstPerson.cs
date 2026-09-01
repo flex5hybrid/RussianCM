@@ -16,6 +16,7 @@ public sealed partial class MoverController
     [Dependency] private IInputManager _firstPersonInput = default!;
     [Dependency] private World3DGridRenderingSystem _world3D = default!;
     [Dependency] private FirstPersonLookClientSystem _firstPersonLookNet = default!;
+    [Dependency] private SharedTransformSystem _firstPersonTransform = default!;
 
     private bool _mouseLookCaptured;
     private bool _lookYawDirty;
@@ -44,7 +45,7 @@ public sealed partial class MoverController
     {
         _lookYaw = (entity.Comp.FirstPersonMode
             ? entity.Comp.FirstPersonYaw
-            : entity.Comp.RelativeRotation).Reduced();
+            : GetWorldYawFromLegacyMover(entity.Comp)).Reduced();
         _lookPitch = World3DGridRenderingSystem.DefaultFirstPersonPitch;
         _lookYawDirty = false;
         _lookSendAccumulator = 0f;
@@ -98,11 +99,30 @@ public sealed partial class MoverController
         mover.FirstPersonMode = true;
         mover.FirstPersonYaw = yaw;
 
-        // Temporary 2D-physics adapter only. Both values are kept identical so the old
-        // LerpRotation/ShortestDistance camera path never participates in first-person input.
-        mover.RelativeRotation = yaw;
-        mover.TargetRelativeRotation = yaw;
+        // Temporary 2D-physics adapter only. The legacy mover adds the parent grid's world
+        // rotation, so store yaw relative to that parent. This keeps W aligned with the 3D
+        // camera even on rotated grids while still bypassing LerpRotation entirely.
+        var adapterYaw = yaw - GetMoverParentWorldRotation(mover);
+        adapterYaw = adapterYaw.Reduced();
+        mover.RelativeRotation = adapterYaw;
+        mover.TargetRelativeRotation = adapterYaw;
         mover.LerpTarget = TimeSpan.Zero;
+    }
+
+    private Angle GetWorldYawFromLegacyMover(InputMoverComponent mover)
+    {
+        return (GetMoverParentWorldRotation(mover) + mover.RelativeRotation).Reduced();
+    }
+
+    private Angle GetMoverParentWorldRotation(InputMoverComponent mover)
+    {
+        if (mover.RelativeEntity is { } relative &&
+            TryComp(relative, out TransformComponent? relativeXform))
+        {
+            return _firstPersonTransform.GetWorldRotation(relativeXform);
+        }
+
+        return Angle.Zero;
     }
 
     public override void FrameUpdate(float frameTime)
@@ -155,7 +175,9 @@ public sealed partial class MoverController
             _playerManager.LocalEntity is { Valid: true } player &&
             TryComp(player, out InputMoverComponent? mover))
         {
-            _lookYaw = (mover.FirstPersonMode ? mover.FirstPersonYaw : mover.RelativeRotation).Reduced();
+            _lookYaw = (mover.FirstPersonMode
+                ? mover.FirstPersonYaw
+                : GetWorldYawFromLegacyMover(mover)).Reduced();
             ApplyFirstPersonYaw(player);
         }
 
