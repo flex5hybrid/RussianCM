@@ -145,7 +145,7 @@ public sealed partial class EyeLerpingSystem : EntitySystem
     /// </summary>
     private bool NeedsLerp(InputMoverComponent? mover)
     {
-        if (mover == null)
+        if (mover == null || mover.FirstPersonMode)
             return false;
 
         if (mover.RelativeRotation.Equals(mover.TargetRelativeRotation))
@@ -159,9 +159,13 @@ public sealed partial class EyeLerpingSystem : EntitySystem
         if (!Resolve(uid, ref xform))
             return Angle.Zero;
 
-        // If we can move then tie our eye to our inputs (these also get lerped so it should be fine).
+        // First-person yaw is independent from the legacy 2D camera rotation. The eye is only
+        // used as a presentation adapter for the current 3D overlay until it owns its own camera.
         if (Resolve(uid, ref mover, false))
         {
+            if (mover.FirstPersonMode)
+                return new Angle(-mover.FirstPersonYaw.Theta);
+
             return -_mover.GetParentGridAngle(mover);
         }
 
@@ -199,10 +203,21 @@ public sealed partial class EyeLerpingSystem : EntitySystem
             // Handle Rotation
             TryComp<InputMoverComponent>(entity, out var mover);
 
+#pragma warning disable RA0002
+            if (mover is { FirstPersonMode: true })
+            {
+                // Mouse yaw must be exact every frame. Never feed it through the old 2D
+                // Angle.ShortestDistance/tick interpolation path.
+                var rotation = new Angle(-mover.FirstPersonYaw.Theta);
+                lerpInfo.LastRotation = rotation;
+                lerpInfo.TargetRotation = rotation;
+                contentEye.BaseRotation = rotation;
+                continue;
+            }
+
             // This needs to be recomputed every frame, as if this is simply the grid rotation, then we need to account for grid angle lerping.
             lerpInfo.TargetRotation = GetRotation(entity, xform, mover);
 
-#pragma warning disable RA0002
             if (!NeedsLerp(mover))
             {
                 contentEye.BaseRotation = lerpInfo.TargetRotation;
