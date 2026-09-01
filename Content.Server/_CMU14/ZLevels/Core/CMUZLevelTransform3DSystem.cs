@@ -1,6 +1,7 @@
 using Content.Shared._CMU14.ZLevels.Core;
 using Content.Shared._CMU14.ZLevels.Core.Components;
 using Robust.Shared.GameObjects;
+using Robust.Shared.IoC;
 
 namespace Content.Server._CMU14.ZLevels.Core;
 
