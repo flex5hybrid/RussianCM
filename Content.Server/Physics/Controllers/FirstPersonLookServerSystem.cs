@@ -14,6 +14,7 @@ public sealed class FirstPersonLookServerSystem : EntitySystem
 {
     [Dependency] private IServerNetManager _net = default!;
     [Dependency] private IPlayerManager _players = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
 
     public override void Initialize()
     {
@@ -35,10 +36,19 @@ public sealed class FirstPersonLookServerSystem : EntitySystem
         mover.FirstPersonMode = true;
         mover.FirstPersonYaw = yaw;
 
-        // Temporary bridge into the authoritative 2D movement solver. Keeping both values equal
-        // bypasses the old camera lerp/ShortestDistance path completely.
-        mover.RelativeRotation = yaw;
-        mover.TargetRelativeRotation = yaw;
+        // Temporary bridge into the authoritative 2D movement solver. GetParentGridAngle adds
+        // the parent grid rotation, so store an angle relative to that parent to keep movement
+        // aligned with the world-space first-person camera on rotated grids too.
+        var parentRotation = Angle.Zero;
+        if (mover.RelativeEntity is { } relative &&
+            TryComp(relative, out TransformComponent? relativeXform))
+        {
+            parentRotation = _transform.GetWorldRotation(relativeXform);
+        }
+
+        var adapterYaw = (yaw - parentRotation).Reduced();
+        mover.RelativeRotation = adapterYaw;
+        mover.TargetRelativeRotation = adapterYaw;
         mover.LerpTarget = TimeSpan.Zero;
         Dirty(uid, mover);
     }
