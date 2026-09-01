@@ -59,7 +59,9 @@ public sealed partial class MoverController
         if (!_mouseLookCaptured || _playerManager.LocalEntity is not { Valid: true } player)
             return;
 
-        var yawDelta = new Angle(-args.Relative.X * MouseLookSensitivity);
+        // SDL reports positive X to the right and positive Y down. Keep both axes in the
+        // conventional FPS orientation: right turns right, up looks up.
+        var yawDelta = new Angle(args.Relative.X * MouseLookSensitivity);
         RotateCamera(player, yawDelta);
 
         _lookPitch = Math.Clamp(
