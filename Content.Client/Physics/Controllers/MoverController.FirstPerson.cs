@@ -11,7 +11,7 @@ namespace Content.Client.PhysicsSystem.Controllers;
 public sealed partial class MoverController
 {
     private const float MouseLookSensitivity = 0.0025f;
-    private const float LookSendInterval = 1f / 60f;
+    private const float LookSendInterval = 1f / 30f;
 
     [Dependency] private IClyde _firstPersonClyde = default!;
     [Dependency] private IInputManager _firstPersonInput = default!;
@@ -20,6 +20,7 @@ public sealed partial class MoverController
     private bool _mouseLookCaptured;
     private bool _lookYawDirty;
     private float _lookSendAccumulator;
+    private Angle _lookYaw;
     private float _lookPitch = World3DGridRenderingSystem.DefaultFirstPersonPitch;
 
     private void InitializeFirstPersonMouseLook()
@@ -41,6 +42,11 @@ public sealed partial class MoverController
         Entity<InputMoverComponent> entity,
         ref LocalPlayerAttachedEvent args)
     {
+        _lookYaw = entity.Comp.RelativeRotation.Reduced();
+        _lookYawDirty = false;
+        _lookSendAccumulator = 0f;
+        SetFirstPersonCameraRotation(entity.Owner, _lookYaw);
+
         _lookPitch = World3DGridRenderingSystem.DefaultFirstPersonPitch;
         _world3D.SetFirstPersonPitch(_lookPitch);
         SetMouseLookCaptured(true);
@@ -52,6 +58,7 @@ public sealed partial class MoverController
     {
         SetMouseLookCaptured(false);
         _lookYawDirty = false;
+        _lookSendAccumulator = 0f;
     }
 
     private void OnFirstPersonMouseMove(MouseMoveEventArgs args)
@@ -59,10 +66,11 @@ public sealed partial class MoverController
         if (!_mouseLookCaptured || _playerManager.LocalEntity is not { Valid: true } player)
             return;
 
-        // SDL reports positive X to the right and positive Y down. Keep both axes in the
-        // conventional FPS orientation: right turns right, up looks up.
-        var yawDelta = new Angle(args.Relative.X * MouseLookSensitivity);
-        RotateCamera(player, yawDelta);
+        // SDL reports positive X to the right and positive Y down. Convert both axes to the
+        // conventional FPS orientation and apply yaw immediately rather than through the
+        // legacy 2D camera interpolation path.
+        _lookYaw = (_lookYaw + new Angle(args.Relative.X * MouseLookSensitivity)).Reduced();
+        SetFirstPersonCameraRotation(player, _lookYaw);
 
         _lookPitch = Math.Clamp(
             _lookPitch - args.Relative.Y * MouseLookSensitivity,
@@ -72,22 +80,36 @@ public sealed partial class MoverController
         _lookYawDirty = true;
     }
 
+    private void ApplyFirstPersonYaw()
+    {
+        if (!_mouseLookCaptured || _playerManager.LocalEntity is not { Valid: true } player)
+            return;
+
+        // Authoritative snapshots can briefly contain an older yaw. Re-apply the local camera
+        // yaw before movement/rendering so WASD and the 3D camera always use the same angle.
+        SetFirstPersonCameraRotation(player, _lookYaw);
+    }
+
     public override void FrameUpdate(float frameTime)
     {
         base.FrameUpdate(frameTime);
+        ApplyFirstPersonYaw();
 
-        if (!_lookYawDirty || _playerManager.LocalEntity is not { Valid: true } player)
+        if (!_lookYawDirty || _playerManager.LocalEntity is not { Valid: true })
             return;
 
         _lookSendAccumulator += frameTime;
-        if (_lookSendAccumulator < LookSendInterval || !TryComp(player, out InputMoverComponent? mover))
+        if (_lookSendAccumulator < LookSendInterval)
             return;
 
         _lookSendAccumulator = 0f;
         _lookYawDirty = false;
-        RaisePredictiveEvent(new RequestFirstPersonLookEvent
+
+        // Mouse motion is a frame/input event, not a predicted simulation command. Coalesce it
+        // to 30 Hz and send the latest yaw as a normal network event to avoid late predicted ticks.
+        RaiseNetworkEvent(new FirstPersonLookSyncEvent
         {
-            Yaw = mover.TargetRelativeRotation,
+            Yaw = _lookYaw,
         });
     }
 
@@ -119,6 +141,14 @@ public sealed partial class MoverController
     {
         if (_mouseLookCaptured == captured)
             return;
+
+        if (captured &&
+            _playerManager.LocalEntity is { Valid: true } player &&
+            TryComp(player, out InputMoverComponent? mover))
+        {
+            _lookYaw = mover.RelativeRotation.Reduced();
+            SetFirstPersonCameraRotation(player, _lookYaw);
+        }
 
         _mouseLookCaptured = captured;
         _firstPersonClyde.MainWindow.SetRelativeMouseMode(captured);
