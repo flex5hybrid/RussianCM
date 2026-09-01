@@ -60,6 +60,20 @@ namespace Content.Shared.Movement.Components
         public EntityUid? RelativeEntity;
 
         /// <summary>
+        /// Canonical horizontal orientation of the experimental first-person camera.
+        /// This is deliberately separate from the legacy 2D eye/grid rotation fields below.
+        /// </summary>
+        [ViewVariables]
+        public Angle FirstPersonYaw = Angle.Zero;
+
+        /// <summary>
+        /// Whether this mover is currently driven by the first-person camera bridge.
+        /// The legacy rotation fields remain only as a temporary movement adapter while physics is 2D.
+        /// </summary>
+        [ViewVariables]
+        public bool FirstPersonMode;
+
+        /// <summary>
         /// Although our movement might be relative to a particular entity we may have an additional relative rotation
         /// e.g. if we've snapped to a different cardinal direction
         /// </summary>
