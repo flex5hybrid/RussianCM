@@ -1,10 +1,17 @@
 using Content.Shared.Input;
 using Content.Shared.Interaction;
+using Content.Shared.Interaction.Components;
+using Content.Shared.Item;
+using Content.Shared.Movement.Components;
+using Content.Shared.UserInterface;
+using Content.Shared.Wall;
 using Robust.Client.GameObjects;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Input;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.IoC;
+using Robust.Shared.Map;
+using Robust.Shared.Player;
 
 namespace Content.Client.Interactable;
 
@@ -70,20 +77,82 @@ public sealed class InteractionSystem : SharedInteractionSystem
         if (_reinjectingFirstPersonInput ||
             args.State != BoundKeyState.Down ||
             args.OriginalMessage is not ClientFullInputCmdMessage original ||
-            !_world3D.TryRaycastFirstPerson(FirstPersonInteractionRayRange, out var hit) ||
-            !TryComp(hit.Entity, out TransformComponent? targetTransform))
+            !IsFirstPersonSession(args.Session))
         {
             return false;
         }
 
+        if (_world3D.TryRaycastFirstPerson(
+                FirstPersonInteractionRayRange,
+                IsSpriteBackedInteractionCandidate,
+                out var hit) &&
+            TryComp(hit.Entity, out TransformComponent? targetTransform))
+        {
+            ReinjectFirstPersonInput(
+                args.Session,
+                function,
+                original,
+                targetTransform.Coordinates,
+                hit.Entity);
+            return true;
+        }
+
+        // Pulling requires an entity. A first-person miss must therefore stop here instead of falling through
+        // to the entity that happens to be under the now-hidden 2D cursor.
+        if (function == ContentKeyFunctions.TryPullObject)
+            return true;
+
+        // World-use actions are still allowed to target empty space. Feed the existing interaction pipeline
+        // an XY compatibility coordinate sampled from the actual 3D centre-screen ray, never the hidden cursor.
+        if (_world3D.TryGetFirstPersonAimCoordinates(FirstPersonInteractionRayRange, out var aimCoordinates))
+        {
+            ReinjectFirstPersonInput(
+                args.Session,
+                function,
+                original,
+                aimCoordinates,
+                EntityUid.Invalid);
+        }
+
+        // Even if the 3D camera cannot currently produce a ray, consume first-person pointer input. Falling
+        // through would silently restore legacy cursor targeting, which is explicitly forbidden in FPS mode.
+        return true;
+    }
+
+    private bool IsFirstPersonSession(ICommonSession? session)
+    {
+        return session?.AttachedEntity is { } player &&
+               TryComp(player, out InputMoverComponent? mover) &&
+               mover.FirstPersonMode;
+    }
+
+    /// <summary>
+    /// Hard physical entities are always considered by the Robust 3D ray as blockers/targets. This predicate
+    /// only decides which entities without hard fixtures should receive a sprite-derived interaction volume.
+    /// </summary>
+    private bool IsSpriteBackedInteractionCandidate(EntityUid uid)
+    {
+        return HasComp<ItemComponent>(uid) ||
+               HasComp<ActivatableUIComponent>(uid) ||
+               HasComp<InteractionRelayComponent>(uid) ||
+               HasComp<WallMountComponent>(uid);
+    }
+
+    private void ReinjectFirstPersonInput(
+        ICommonSession? session,
+        BoundKeyFunction function,
+        ClientFullInputCmdMessage original,
+        EntityCoordinates coordinates,
+        EntityUid target)
+    {
         var replacement = new ClientFullInputCmdMessage(
             original.Tick,
             original.SubTick,
             original.InputFunctionId,
-            targetTransform.Coordinates,
+            coordinates,
             original.ScreenCoordinates,
             original.State,
-            hit.Entity)
+            target)
         {
             InputSequence = original.InputSequence,
         };
@@ -93,14 +162,11 @@ public sealed class InteractionSystem : SharedInteractionSystem
         {
             // replay=true skips the already-applied key-state transition while still running the normal
             // content handlers and dispatching the replacement target to the server exactly once.
-            _input.HandleInputCommand(args.Session, function, replacement, replay: true);
+            _input.HandleInputCommand(session, function, replacement, replay: true);
         }
         finally
         {
             _reinjectingFirstPersonInput = false;
         }
-
-        // Consume the original 2D pointer command so it cannot also interact with whatever is under the hidden cursor.
-        return true;
     }
 }
