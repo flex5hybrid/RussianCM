@@ -59,6 +59,7 @@ namespace Content.Shared.Movement.Systems
             SubscribeLocalEvent<InputMoverComponent, EntParentChangedMessage>(OnInputParentChange);
 
             SubscribeLocalEvent<FollowedComponent, EntParentChangedMessage>(OnFollowedParentChange);
+            SubscribeAllEvent<RequestFirstPersonLookEvent>(OnRequestFirstPersonLook);
 
             Subs.CVar(_configManager, CCVars.CameraRotationLocked, obj => CameraRotationLocked = obj, true);
             Subs.CVar(_configManager, CCVars.GameDiagonalMovement, value => DiagonalMovementEnabled = value, true);
@@ -158,6 +159,29 @@ namespace Content.Shared.Movement.Systems
 
             mover.TargetRelativeRotation += angle;
             Dirty(uid, mover);
+        }
+
+        public void SetCameraRotation(EntityUid uid, Angle angle)
+        {
+            if (CameraRotationLocked ||
+                !double.IsFinite(angle.Theta) ||
+                !MoverQuery.TryGetComponent(uid, out var mover))
+            {
+                return;
+            }
+
+            var reduced = angle.Reduced();
+            if (mover.TargetRelativeRotation.Equals(reduced))
+                return;
+
+            mover.TargetRelativeRotation = reduced;
+            Dirty(uid, mover);
+        }
+
+        private void OnRequestFirstPersonLook(RequestFirstPersonLookEvent msg, EntitySessionEventArgs args)
+        {
+            if (args.SenderSession.AttachedEntity is { } uid)
+                SetCameraRotation(uid, msg.Yaw);
         }
 
         public void ResetCamera(EntityUid uid)
@@ -614,6 +638,12 @@ namespace Content.Shared.Movement.Systems
                 return false;
             }
         }
+    }
+
+    [Serializable, NetSerializable]
+    public sealed class RequestFirstPersonLookEvent : EntityEventArgs
+    {
+        public Angle Yaw;
     }
 
     [Flags]
