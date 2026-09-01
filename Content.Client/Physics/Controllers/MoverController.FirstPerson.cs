@@ -45,7 +45,7 @@ public sealed partial class MoverController
     {
         _lookYaw = (entity.Comp.FirstPersonMode
             ? entity.Comp.FirstPersonYaw
-            : GetWorldYawFromLegacyMover(entity.Comp)).Reduced();
+            : GetCameraYawFromLegacyMover(entity.Comp)).Reduced();
         _lookPitch = World3DGridRenderingSystem.DefaultFirstPersonPitch;
         _lookYawDirty = false;
         _lookSendAccumulator = 0f;
@@ -99,19 +99,26 @@ public sealed partial class MoverController
         mover.FirstPersonMode = true;
         mover.FirstPersonYaw = yaw;
 
-        // Temporary 2D-physics adapter only. The legacy mover adds the parent grid's world
-        // rotation, so store yaw relative to that parent. This keeps W aligned with the 3D
-        // camera even on rotated grids while still bypassing LerpRotation entirely.
-        var adapterYaw = yaw - GetMoverParentWorldRotation(mover);
-        adapterYaw = adapterYaw.Reduced();
+        // Camera yaw and legacy mover rotation use opposite signs. The 3D camera's forward
+        // vector is (sin(yaw), cos(yaw)), while rotating the legacy MoveUp vector by angle A
+        // produces (-sin(A), cos(A)). Therefore A must be -yaw.
+        //
+        // The legacy mover also adds the parent grid's world rotation, so store the movement
+        // angle relative to that parent. This keeps W/A/S/D exactly camera-relative on every
+        // quadrant and on rotated grids, while still bypassing LerpRotation entirely.
+        var movementWorldYaw = new Angle(-yaw.Theta);
+        var adapterYaw = (movementWorldYaw - GetMoverParentWorldRotation(mover)).Reduced();
         mover.RelativeRotation = adapterYaw;
         mover.TargetRelativeRotation = adapterYaw;
         mover.LerpTarget = TimeSpan.Zero;
     }
 
-    private Angle GetWorldYawFromLegacyMover(InputMoverComponent mover)
+    private Angle GetCameraYawFromLegacyMover(InputMoverComponent mover)
     {
-        return (GetMoverParentWorldRotation(mover) + mover.RelativeRotation).Reduced();
+        // Inverse of the adapter above: legacy world movement angle A corresponds to
+        // camera yaw -A.
+        var movementWorldYaw = GetMoverParentWorldRotation(mover) + mover.RelativeRotation;
+        return new Angle(-movementWorldYaw.Theta).Reduced();
     }
 
     private Angle GetMoverParentWorldRotation(InputMoverComponent mover)
@@ -177,7 +184,7 @@ public sealed partial class MoverController
         {
             _lookYaw = (mover.FirstPersonMode
                 ? mover.FirstPersonYaw
-                : GetWorldYawFromLegacyMover(mover)).Reduced();
+                : GetCameraYawFromLegacyMover(mover)).Reduced();
             ApplyFirstPersonYaw(player);
         }
 
