@@ -36,9 +36,13 @@ public sealed class FirstPersonLookServerSystem : EntitySystem
         mover.FirstPersonMode = true;
         mover.FirstPersonYaw = yaw;
 
-        // Temporary bridge into the authoritative 2D movement solver. GetParentGridAngle adds
-        // the parent grid rotation, so store an angle relative to that parent to keep movement
-        // aligned with the world-space first-person camera on rotated grids too.
+        // The 3D camera and legacy 2D mover use opposite angular handedness for their
+        // forward vectors. Camera yaw theta looks along (sin(theta), cos(theta)), while
+        // legacy MoveUp rotated by A points (-sin(A), cos(A)), so A must be -theta.
+        //
+        // GetParentGridAngle later adds the parent grid rotation, therefore keep the
+        // adapter relative to the parent grid so authoritative movement matches the
+        // first-person camera on every quadrant and on rotated grids.
         var parentRotation = Angle.Zero;
         if (mover.RelativeEntity is { } relative &&
             TryComp(relative, out TransformComponent? relativeXform))
@@ -46,7 +50,8 @@ public sealed class FirstPersonLookServerSystem : EntitySystem
             parentRotation = _transform.GetWorldRotation(relativeXform);
         }
 
-        var adapterYaw = (yaw - parentRotation).Reduced();
+        var movementWorldYaw = new Angle(-yaw.Theta);
+        var adapterYaw = (movementWorldYaw - parentRotation).Reduced();
         mover.RelativeRotation = adapterYaw;
         mover.TargetRelativeRotation = adapterYaw;
         mover.LerpTarget = TimeSpan.Zero;
