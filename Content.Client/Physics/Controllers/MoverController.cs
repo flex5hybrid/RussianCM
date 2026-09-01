@@ -85,11 +85,13 @@ public sealed partial class MoverController : SharedMoverController
     private void OnPlayerAttached(Entity<InputMoverComponent> entity, ref LocalPlayerAttachedEvent args)
     {
         SetMoveInput(entity, MoveButtons.None);
+        OnFirstPersonPlayerAttached(entity, ref args);
     }
 
     private void OnPlayerDetached(Entity<InputMoverComponent> entity, ref LocalPlayerDetachedEvent args)
     {
         SetMoveInput(entity, MoveButtons.None);
+        OnFirstPersonPlayerDetached(entity, ref args);
     }
 
     public override void UpdateBeforeSolve(bool prediction, float frameTime)
