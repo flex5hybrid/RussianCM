@@ -27,9 +27,6 @@ public sealed partial class MoverController
         _firstPersonClyde.MouseMove += OnFirstPersonMouseMove;
         _firstPersonClyde.OnWindowFocused += OnFirstPersonWindowFocused;
         _firstPersonInput.FirstChanceOnKeyEvent += OnFirstPersonKeyEvent;
-
-        SubscribeLocalEvent<InputMoverComponent, LocalPlayerAttachedEvent>(OnFirstPersonPlayerAttached);
-        SubscribeLocalEvent<InputMoverComponent, LocalPlayerDetachedEvent>(OnFirstPersonPlayerDetached);
     }
 
     private void ShutdownFirstPersonMouseLook()
