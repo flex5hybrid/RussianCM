@@ -16,6 +16,11 @@ public sealed class MsgFirstPersonLook : NetMessage
 
     public override NetDeliveryMethod DeliveryMethod => NetDeliveryMethod.UnreliableSequenced;
 
+    // Content-owned sequence channel. Robust reserves channels 16 and higher internally.
+    public override int SequenceChannel => 15;
+
+    public override int EstimateBufferSize() => sizeof(float);
+
     public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
     {
         Yaw = buffer.ReadFloat();
