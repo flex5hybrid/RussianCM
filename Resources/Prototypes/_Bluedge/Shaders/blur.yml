@@ -1,4 +1,0 @@
-- type: shader
-  id: BlurryLighting
-  kind: source
-  path: "/Textures/_Bluedge/Shaders/lighting_blur.swsl"
