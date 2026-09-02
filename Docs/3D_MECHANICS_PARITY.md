@@ -5,7 +5,7 @@ Status values: `reference`, `foundation`, `partial`, `parity`, `blocked`.
 | Domain | Required scenarios | Status |
 |---|---|---|
 | Spatial hierarchy | parent movement/rotation/scale, grid transfer, anchoring, map serialization | foundation |
-| Networking | snapshots, interpolation, prediction, correction, PVS, reconnect, replay | foundation |
+| Networking | snapshots, interpolation, prediction, correction, PVS, reconnect, replay | partial: native XYZ PVS chunks, Z-aware view distance and grid roots; prediction/reconciliation and replay validation remain |
 | Character movement | walk, run, diagonal speed, crouch, crawl, jump, fall, slopes, stairs | foundation: native mouse yaw/pitch, dynamic capsule, grounding, jump, WASD |
 | Collision | static/dynamic/kinematic, sensors, layers, CCD, joints, contacts | partial: primitives, convex hulls, compounds, static/kinematic meshes, filtering, contact events, ray/sweep/AABB queries, fixed server step, ball/distance/hinge/weld joints |
 | Gravity and zero-G | gravity zones, drifting, push-off, magboots, knockback | reference |
@@ -20,7 +20,7 @@ Status values: `reference`, `foundation`, `partial`, `parity`, `blocked`.
 | Lighting and vision | lights, shadows, occlusion, darkness, blindness, scopes | reference |
 | Audio | 3D attenuation, occlusion, ambience, UI audio | reference |
 | AI | navigation, multi-floor routes, perception, combat behavior | reference |
-| Station grids | sparse chunks, decks, shuttles, docking, rotation, splitting | reference |
+| Station grids | sparse chunks, decks, shuttles, docking, rotation, splitting | partial: versioned sparse XYZ chunks, delta replication, six-sided topology and greedy server collision |
 | Roles and round flow | lobby, spawn, jobs, objectives, respawn, round end | reference |
 | Human abilities | actions, medicine, surgery, status effects, emotes | reference |
 | Xeno and special mobs | movement modes, abilities, structures, targeting, large bodies | reference |

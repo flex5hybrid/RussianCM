@@ -102,3 +102,15 @@ damping, sleeping and CCD settings; exposes ray, convex-sweep and AABB-overlap q
 start/touch/end contact events, including sensors. Ball-socket, distance-limit, hinge and weld joints are
 backend-independent networked constraints and can suppress collision between linked bodies. The remaining
 Gate 2 work is client prediction, snapshots and reconciliation.
+
+## Implemented volumetric world foundation
+
+`MapGrid3DComponent` is a versioned sparse XYZ voxel grid with negative-coordinate-safe chunk addressing,
+full/delta replication, exact local bounds and six cardinal neighbours. Non-empty structural cells generate
+server-authoritative Bepu collision through a per-chunk greedy box decomposition; editing one voxel rebuilds
+only the affected chunk cache before refreshing the compound collider.
+
+Server PVS now partitions maps and grids by XYZ chunks. Eye range, distance priority, root transforms and
+entity relocation all preserve Z; native 3D grids are valid PVS roots, while legacy chunk entities are treated
+as an explicit Z=0 compatibility layer. This completes the spatial storage and visibility foundation of Gate 3,
+but station content serialization, meshing and gameplay networks still need migration onto it.
