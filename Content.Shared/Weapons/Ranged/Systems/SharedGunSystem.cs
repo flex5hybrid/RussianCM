@@ -49,6 +49,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
@@ -81,6 +82,7 @@ public abstract partial class SharedGunSystem : EntitySystem
     [Dependency] protected SharedPointLightSystem Lights = default!;
     [Dependency] protected SharedPopupSystem PopupSystem = default!;
     [Dependency] protected SharedPhysicsSystem Physics = default!;
+    [Dependency] private SharedPhysics3DSystem _physics3D = default!;
     [Dependency] protected SharedProjectileSystem Projectiles = default!;
     [Dependency] protected SharedTransformSystem TransformSystem = default!;
     [Dependency] protected TagSystem TagSystem = default!;
@@ -257,12 +259,14 @@ public abstract partial class SharedGunSystem : EntitySystem
 
     private void StopShooting(EntityUid uid, GunComponent gun)
     {
-        if (gun.ShotCounter == 0)
+        if (gun.ShotCounter == 0 && gun.ShootOrigin3D == null && gun.ShootDirection3D == null)
             return;
 
         gun.ShotCounter = 0;
         gun.ShootCoordinates = null;
         gun.Target = null;
+        gun.ShootOrigin3D = null;
+        gun.ShootDirection3D = null;
         DirtyField(uid, gun, nameof(GunComponent.ShotCounter));
     }
 
@@ -701,7 +705,59 @@ public abstract partial class SharedGunSystem : EntitySystem
                     //in the situation when user == null, means that the cannon fires on its own (via signals). And we need the gun to not fire by itself in this case
                     var lastUser = user ?? gunUid;
 
-                    if (hitscan.Reflective != ReflectType.None)
+                    if (gun.ShootOrigin3D is { } origin3D && gun.ShootDirection3D is { } direction3D)
+                    {
+                        var rayOrigin = origin3D;
+                        var rayDirection = Vector3.Normalize(direction3D);
+                        var effectDirection = new Vector2(rayDirection.X, rayDirection.Y);
+                        if (effectDirection.LengthSquared() < 1e-6f)
+                            effectDirection = Vector2.UnitY;
+                        else
+                            effectDirection = Vector2.Normalize(effectDirection);
+
+                        var attempts = hitscan.Reflective == ReflectType.None ? 1 : 3;
+                        for (var reflectAttempt = 0; reflectAttempt < attempts; reflectAttempt++)
+                        {
+                            if (!_physics3D.TryRayCast(
+                                    from.MapId,
+                                    new Ray3D(rayOrigin, rayDirection),
+                                    hitscan.MaxLength,
+                                    (int) hitscan.CollisionMask,
+                                    lastUser,
+                                    false,
+                                    out var result3D))
+                            {
+                                break;
+                            }
+
+                            lastHit = result3D.Entity;
+                            FireEffects(fromEffect, result3D.Distance, effectDirection.ToAngle(), hitscan, result3D.Entity);
+
+                            if (hitscan.Reflective == ReflectType.None)
+                                break;
+
+                            var reflectEvent = new HitScanReflectAttemptEvent(
+                                user,
+                                gunUid,
+                                hitscan.Reflective,
+                                effectDirection,
+                                false);
+                            RaiseLocalEvent(result3D.Entity, ref reflectEvent);
+                            if (!reflectEvent.Reflected)
+                                break;
+
+                            rayOrigin = result3D.Position + result3D.Normal * 0.01f;
+                            rayDirection = Vector3.Normalize(Vector3.Reflect(rayDirection, result3D.Normal));
+                            effectDirection = new Vector2(rayDirection.X, rayDirection.Y);
+                            if (effectDirection.LengthSquared() < 1e-6f)
+                                effectDirection = Vector2.UnitY;
+                            else
+                                effectDirection = Vector2.Normalize(effectDirection);
+                            lastUser = result3D.Entity;
+                        }
+                    }
+
+                    else if (hitscan.Reflective != ReflectType.None)
                     {
                         for (var reflectAttempt = 0; reflectAttempt < 3; reflectAttempt++)
                         {

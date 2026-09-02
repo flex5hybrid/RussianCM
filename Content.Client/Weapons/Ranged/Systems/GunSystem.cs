@@ -12,6 +12,7 @@ using Content.Shared._RMC14.Weapons.Ranged;
 using Content.Shared._RMC14.Weapons.Ranged.Prediction;
 using Content.Shared.CCVar;
 using Content.Shared.CombatMode;
+using Content.Shared.Movement.Components;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Weapons.Ranged.Systems;
@@ -214,7 +215,10 @@ public sealed partial class GunSystem : SharedGunSystem
         if (fireInputDown)
             _fireInputHandled = true;
 
-        var mousePos = _eyeManager.PixelToMap(_inputManager.MouseScreenPosition);
+        var firstPerson3D = TryComp(entity, out InputMoverComponent? mover) && mover.FirstPersonMode;
+        var mousePos = firstPerson3D
+            ? new MapCoordinates(TransformSystem.GetWorldPosition(entity), Transform(entity).MapID)
+            : _eyeManager.PixelToMap(_inputManager.MouseScreenPosition);
 
         if (mousePos.MapId == MapId.Nullspace)
         {
@@ -229,7 +233,7 @@ public sealed partial class GunSystem : SharedGunSystem
         var coordinates = TransformSystem.ToCoordinates(coordinateEntity, mousePos);
 
         NetEntity? target = null;
-        if (_state.CurrentState is GameplayStateBase screen)
+        if (!firstPerson3D && _state.CurrentState is GameplayStateBase screen)
             target = GetNetEntity(screen.GetClickedEntity(mousePos));
 
         if (_player.LocalSession is not { } session)

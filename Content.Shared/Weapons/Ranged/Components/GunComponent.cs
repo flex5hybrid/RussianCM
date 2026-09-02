@@ -146,6 +146,16 @@ public sealed partial class GunComponent : Component
     public EntityUid? Target = null;
 
     /// <summary>
+    /// Authoritative muzzle ray reconstructed from first-person input. These values are deliberately transient and
+    /// never supplied by the client; the server derives them from the shooter's replicated 3D pose and sequenced look.
+    /// </summary>
+    [ViewVariables]
+    public Vector3? ShootOrigin3D;
+
+    [ViewVariables]
+    public Vector3? ShootDirection3D;
+
+    /// <summary>
     ///     The base value for how many shots to fire per burst.
     /// </summary>
     [DataField, AutoNetworkedField]
