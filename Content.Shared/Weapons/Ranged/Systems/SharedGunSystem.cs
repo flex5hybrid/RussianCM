@@ -83,6 +83,7 @@ public abstract partial class SharedGunSystem : EntitySystem
     [Dependency] protected SharedPopupSystem PopupSystem = default!;
     [Dependency] protected SharedPhysicsSystem Physics = default!;
     [Dependency] private SharedPhysics3DSystem _physics3D = default!;
+    [Dependency] private SharedTransform3DSystem _transform3D = default!;
     [Dependency] protected SharedProjectileSystem Projectiles = default!;
     [Dependency] protected SharedTransformSystem TransformSystem = default!;
     [Dependency] protected TagSystem TagSystem = default!;
@@ -947,6 +948,70 @@ public abstract partial class SharedGunSystem : EntitySystem
             return;
         }
         ShootProjectile(uid, mapDirection, gunVelocity, gunUid, user, gun.ProjectileSpeedModified);
+
+        if (gun.ShootOrigin3D is { } origin3D && gun.ShootDirection3D is { } aim3D)
+            ConfigureProjectile3D(uid, mapDirection, gunVelocity, origin3D, aim3D, gun.ProjectileSpeedModified);
+    }
+
+    private void ConfigureProjectile3D(
+        EntityUid uid,
+        Vector2 spreadDirection,
+        Vector2 inheritedVelocity,
+        Vector3 origin,
+        Vector3 aimDirection,
+        float speed)
+    {
+        var horizontal = new Vector2(aimDirection.X, aimDirection.Y);
+        var horizontalLength = horizontal.Length();
+        var direction2D = spreadDirection.LengthSquared() > 1e-6f
+            ? Vector2.Normalize(spreadDirection)
+            : horizontalLength > 1e-6f
+                ? horizontal / horizontalLength
+                : Vector2.UnitY;
+        var direction3D = Vector3.Normalize(new Vector3(
+            direction2D.X * horizontalLength,
+            direction2D.Y * horizontalLength,
+            aimDirection.Z));
+
+        _transform3D.SetAuthoritative(uid, true);
+        _transform3D.SetWorldPosition3D(uid, origin + direction3D * 0.12f);
+
+        var body3D = EnsureComp<PhysicsBody3DComponent>(uid);
+        body3D.BodyType = PhysicsBodyType3D.Dynamic;
+        body3D.LinearVelocity = direction3D * speed + new Vector3(inheritedVelocity, 0f);
+        body3D.AngularVelocity = Vector3.Zero;
+        body3D.GravityScale = 0f;
+        body3D.LinearDamping = 0f;
+        body3D.AngularDamping = 0f;
+        body3D.CanCollide = true;
+        body3D.SleepingAllowed = false;
+        body3D.ContinuousDetection = ContinuousDetectionMode3D.Continuous;
+
+        var collider3D = EnsureComp<Collider3DComponent>(uid);
+        if (collider3D.Shapes.Count == 0)
+        {
+            collider3D.Shapes.Add(new SphereShape3D
+            {
+                Radius = 0.08f,
+                Sensor = true,
+                CollisionLayer = int.MaxValue,
+                CollisionMask = int.MaxValue,
+                Friction = 0f,
+            });
+        }
+
+        if (_netManager.IsClient && IsClientSide(uid))
+            EnsureComp<PredictedPhysics3DComponent>(uid);
+
+        if (_netManager.IsServer && TryComp(uid, out PhysicsComponent? legacyBody))
+        {
+            Physics.SetLinearVelocity(uid, Vector2.Zero, body: legacyBody);
+            Physics.SetCanCollide(uid, false, body: legacyBody);
+        }
+
+        Dirty(uid, body3D);
+        Dirty(uid, collider3D);
+        _physics3D.RefreshBody(uid);
     }
 
     #region Hitscan effects

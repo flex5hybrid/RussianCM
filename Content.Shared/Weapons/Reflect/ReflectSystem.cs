@@ -14,6 +14,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Random;
 using Content.Shared.Examine;
 using Content.Shared.Localizations;
@@ -31,6 +32,7 @@ public sealed partial class ReflectSystem : EntitySystem
     [Dependency] private ItemToggleSystem _toggle = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
     [Dependency] private SharedPhysicsSystem _physics = default!;
+    [Dependency] private SharedPhysics3DSystem _physics3D = default!;
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedTransformSystem _transform = default!;
 
@@ -118,6 +120,17 @@ public sealed partial class ReflectSystem : EntitySystem
         var difference = newVelocity - existingVelocity;
 
         _physics.SetLinearVelocity(projectile, physics.LinearVelocity + difference, body: physics);
+
+        if (_physics3D.TryGetVelocity(projectile, out var existingVelocity3D, out var angularVelocity3D))
+        {
+            var userVelocity3D = _physics3D.TryGetVelocity(user, out var velocity3D, out _)
+                ? velocity3D
+                : Vector3.Zero;
+            var relative3D = existingVelocity3D - userVelocity3D;
+            var reflectedHorizontal = rotation.RotateVec(new Vector2(relative3D.X, relative3D.Y));
+            var reflected3D = userVelocity3D + new Vector3(reflectedHorizontal, -relative3D.Z);
+            _physics3D.SetVelocity(projectile, reflected3D, angularVelocity3D);
+        }
 
         var locRot = Transform(projectile).LocalRotation;
         var newRot = rotation.RotateVec(locRot.ToVec());

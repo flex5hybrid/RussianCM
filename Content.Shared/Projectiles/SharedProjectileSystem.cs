@@ -30,6 +30,7 @@ using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -89,6 +90,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<ProjectileComponent, StartCollideEvent>(OnStartCollide);
+        SubscribeLocalEvent<ProjectileComponent, StartCollide3DEvent>(OnStartCollide3D);
         SubscribeLocalEvent<ProjectileComponent, PreventCollideEvent>(PreventCollision);
         SubscribeLocalEvent<EmbeddableProjectileComponent, ProjectileHitEvent>(OnEmbedProjectileHit);
         SubscribeLocalEvent<EmbeddableProjectileComponent, ThrowDoHitEvent>(OnEmbedThrowDoHit);
@@ -116,6 +118,21 @@ public abstract partial class SharedProjectileSystem : EntitySystem
             return;
 
         ProjectileCollide((uid, component, args.OurBody), args.OtherEntity);
+    }
+
+    private void OnStartCollide3D(EntityUid uid, ProjectileComponent component, ref StartCollide3DEvent args)
+    {
+        // Native 3D projectile contacts are server authoritative. Client bodies exist only to predict visuals.
+        if (!_net.IsServer ||
+            component.ProjectileSpent ||
+            component is { Weapon: null, OnlyCollideWhenShot: true } ||
+            component.IgnoreShooter && component.Shooter == args.OtherEntity ||
+            !TryComp(uid, out PhysicsComponent? legacyBody))
+        {
+            return;
+        }
+
+        ProjectileCollide((uid, component, legacyBody), args.OtherEntity);
     }
 
     public void ProjectileCollide(Entity<ProjectileComponent, PhysicsComponent> projectile, EntityUid target, bool predicted = false)
