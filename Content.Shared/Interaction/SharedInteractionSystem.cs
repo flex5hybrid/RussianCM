@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Numerics;
 using Content.Shared._RMC14.CombatMode;
 using Content.Shared._RMC14.Ghost;
 using Content.Shared._RMC14.Movement;
@@ -43,6 +44,7 @@ using Robust.Shared.Physics;
 using Robust.Shared.Physics.Collision.Shapes;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -77,6 +79,8 @@ namespace Content.Shared.Interaction
         [Dependency] private SharedPlayerRateLimitManager _rateLimit = default!;
         [Dependency] private TagSystem _tagSystem = default!;
         [Dependency] private UseDelaySystem _useDelay = default!;
+        [Dependency] private SharedPhysics3DSystem _physics3D = default!;
+        [Dependency] private SharedTransform3DSystem _transform3D = default!;
 
         private EntityQuery<IgnoreUIRangeComponent> _ignoreUiRangeQuery;
         private EntityQuery<FixturesComponent> _fixtureQuery;
@@ -122,6 +126,7 @@ namespace Content.Shared.Interaction
             SubscribeLocalEvent<UserInterfaceComponent, BoundUserInterfaceMessageAttempt>(OnBoundInterfaceInteractAttempt);
 
             SubscribeAllEvent<InteractInventorySlotEvent>(HandleInteractInventorySlotEvent);
+            SubscribeAllEvent<Interaction3DRequestEvent>(HandleInteraction3DRequest);
 
             SubscribeLocalEvent<UnremoveableComponent, ContainerGettingRemovedAttemptEvent>(OnRemoveAttempt);
             SubscribeLocalEvent<UnremoveableComponent, GotUnequippedEvent>(OnUnequip);
@@ -153,6 +158,62 @@ namespace Content.Shared.Interaction
         private void RateLimitAlertAdmins(ICommonSession session)
         {
             _chat.SendAdminAlert(Loc.GetString("interaction-rate-limit-admin-announcement", ("player", session.Name)));
+        }
+
+        private void HandleInteraction3DRequest(Interaction3DRequestEvent message, EntitySessionEventArgs args)
+        {
+            if (!_gameTiming.IsFirstTimePredicted ||
+                args.SenderSession.AttachedEntity is not { Valid: true } user ||
+                !TryComp(user, out TransformComponent? userTransform) ||
+                !TryComp(user, out InputMoverComponent? mover) ||
+                !mover.FirstPersonMode ||
+                _rateLimit.CountAction(args.SenderSession, RateLimitKey) != RateLimitStatus.Allowed)
+            {
+                return;
+            }
+
+            const float range = InteractionRange + 0.5f;
+            var origin = _transform3D.GetWorldPosition3D(user, userTransform) + Vector3.UnitZ * 1.58f;
+            var horizontal = MathF.Cos(mover.FirstPersonPitch);
+            var yaw = (float) mover.FirstPersonYaw.Theta;
+            var direction = Vector3.Normalize(new Vector3(
+                MathF.Sin(yaw) * horizontal,
+                MathF.Cos(yaw) * horizontal,
+                MathF.Sin(mover.FirstPersonPitch)));
+
+            EntityUid? target = null;
+            var hitPosition = origin + direction * range;
+            if (_physics3D.TryRayCast(
+                    userTransform.MapID,
+                    new Ray3D(origin, direction),
+                    range,
+                    int.MaxValue,
+                    user,
+                    false,
+                    out var hit))
+            {
+                target = hit.Entity;
+                hitPosition = hit.Position;
+            }
+
+            var legacyPoint = new MapCoordinates(new Vector2(hitPosition.X, hitPosition.Y), userTransform.MapID);
+            var coordinates = _transform.ToCoordinates(userTransform.ParentUid, legacyPoint);
+
+            switch (message.Action)
+            {
+                case InteractionAction3D.Use:
+                    UserInteraction(user, coordinates, target, checkAccess: false);
+                    break;
+                case InteractionAction3D.Activate when target is { } activateTarget:
+                    InteractionActivate(user, activateTarget, checkAccess: false);
+                    break;
+                case InteractionAction3D.AltActivate when target is { } altTarget:
+                    UserInteraction(user, coordinates, altTarget, altInteract: true, checkAccess: false);
+                    break;
+                case InteractionAction3D.Pull when target is { } pullTarget && pullTarget != user:
+                    _pullSystem.TogglePull(pullTarget, user);
+                    break;
+            }
         }
 
         public override void Shutdown()
