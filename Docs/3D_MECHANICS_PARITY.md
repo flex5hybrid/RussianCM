@@ -6,8 +6,8 @@ Status values: `reference`, `foundation`, `partial`, `parity`, `blocked`.
 |---|---|---|
 | Spatial hierarchy | parent movement/rotation/scale, grid transfer, anchoring, map serialization | foundation |
 | Networking | snapshots, interpolation, prediction, correction, PVS, reconnect, replay | foundation |
-| Character movement | walk, run, diagonal speed, crouch, crawl, jump, fall, slopes, stairs | partial |
-| Collision | static/dynamic/kinematic, sensors, layers, CCD, joints, contacts | reference |
+| Character movement | walk, run, diagonal speed, crouch, crawl, jump, fall, slopes, stairs | foundation: native mouse yaw/pitch, dynamic capsule, grounding, jump, WASD |
+| Collision | static/dynamic/kinematic, sensors, layers, CCD, joints, contacts | foundation: rigid bodies, primitive colliders, filtering, sensors, raycast, fixed server step |
 | Gravity and zero-G | gravity zones, drifting, push-off, magboots, knockback | reference |
 | Interaction | use, alternate use, examine, context menu, reach, LOS, pull | partial |
 | Inventory and hands | pickup, drop, wield, storage, equipping, dragging | reference |
@@ -33,3 +33,7 @@ Status values: `reference`, `foundation`, `partial`, `parity`, `blocked`.
 
 An entry reaches `parity` only when its reference scenarios pass in single-player simulation, multiplayer,
 prediction/correction and replay where applicable.
+
+The native validation slice is entered with the server command `3droom`. Compilation and runtime validation are
+intentionally still unrecorded because the current task explicitly forbids compilation attempts; these rows only
+claim source implementation.

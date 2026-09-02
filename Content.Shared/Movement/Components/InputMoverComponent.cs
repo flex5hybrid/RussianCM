@@ -66,9 +66,11 @@ namespace Content.Shared.Movement.Components
         [ViewVariables]
         public Angle FirstPersonYaw = Angle.Zero;
 
+        [ViewVariables]
+        public float FirstPersonPitch = -0.075f;
+
         /// <summary>
-        /// Whether this mover is currently driven by the first-person camera bridge.
-        /// The legacy rotation fields remain only as a temporary movement adapter while physics is 2D.
+        /// Whether this mover is driven by the native 3D camera and character controller.
         /// </summary>
         [ViewVariables]
         public bool FirstPersonMode;

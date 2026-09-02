@@ -16,7 +16,6 @@ public sealed partial class MoverController
     [Dependency] private IInputManager _firstPersonInput = default!;
     [Dependency] private World3DGridRenderingSystem _world3D = default!;
     [Dependency] private FirstPersonLookClientSystem _firstPersonLookNet = default!;
-    [Dependency] private SharedTransformSystem _firstPersonTransform = default!;
 
     private bool _mouseLookCaptured;
     private bool _lookYawDirty;
@@ -45,14 +44,16 @@ public sealed partial class MoverController
     {
         _lookYaw = (entity.Comp.FirstPersonMode
             ? entity.Comp.FirstPersonYaw
-            : GetCameraYawFromLegacyMover(entity.Comp)).Reduced();
-        _lookPitch = World3DGridRenderingSystem.DefaultFirstPersonPitch;
+            : Angle.Zero).Reduced();
+        _lookPitch = entity.Comp.FirstPersonMode
+            ? entity.Comp.FirstPersonPitch
+            : World3DGridRenderingSystem.DefaultFirstPersonPitch;
         _lookYawDirty = false;
         _lookSendAccumulator = 0f;
 
         ApplyFirstPersonYaw(entity.Owner);
-        _world3D.SetFirstPersonPitch(_lookPitch);
-        _firstPersonLookNet.Send((float) _lookYaw.Theta);
+        _world3D.SetFirstPersonView((float) _lookYaw.Theta, _lookPitch);
+        _firstPersonLookNet.Send((float) _lookYaw.Theta, _lookPitch);
         SetMouseLookCaptured(true);
     }
 
@@ -80,7 +81,7 @@ public sealed partial class MoverController
             _lookPitch - args.Relative.Y * MouseLookSensitivity,
             -1.35f,
             1.35f);
-        _world3D.SetFirstPersonPitch(_lookPitch);
+        _world3D.SetFirstPersonView((float) _lookYaw.Theta, _lookPitch);
         _lookYawDirty = true;
     }
 
@@ -98,38 +99,8 @@ public sealed partial class MoverController
         var yaw = _lookYaw.Reduced();
         mover.FirstPersonMode = true;
         mover.FirstPersonYaw = yaw;
-
-        // Camera yaw and legacy mover rotation use opposite signs. The 3D camera's forward
-        // vector is (sin(yaw), cos(yaw)), while rotating the legacy MoveUp vector by angle A
-        // produces (-sin(A), cos(A)). Therefore A must be -yaw.
-        //
-        // The legacy mover also adds the parent grid's world rotation, so store the movement
-        // angle relative to that parent. This keeps W/A/S/D exactly camera-relative on every
-        // quadrant and on rotated grids, while still bypassing LerpRotation entirely.
-        var movementWorldYaw = new Angle(-yaw.Theta);
-        var adapterYaw = (movementWorldYaw - GetMoverParentWorldRotation(mover)).Reduced();
-        mover.RelativeRotation = adapterYaw;
-        mover.TargetRelativeRotation = adapterYaw;
-        mover.LerpTarget = TimeSpan.Zero;
-    }
-
-    private Angle GetCameraYawFromLegacyMover(InputMoverComponent mover)
-    {
-        // Inverse of the adapter above: legacy world movement angle A corresponds to
-        // camera yaw -A.
-        var movementWorldYaw = GetMoverParentWorldRotation(mover) + mover.RelativeRotation;
-        return new Angle(-movementWorldYaw.Theta).Reduced();
-    }
-
-    private Angle GetMoverParentWorldRotation(InputMoverComponent mover)
-    {
-        if (mover.RelativeEntity is { } relative &&
-            TryComp(relative, out TransformComponent? relativeXform))
-        {
-            return _firstPersonTransform.GetWorldRotation(relativeXform);
-        }
-
-        return Angle.Zero;
+        mover.FirstPersonPitch = _lookPitch;
+        _world3D.SetFirstPersonView((float) yaw.Theta, _lookPitch);
     }
 
     public override void FrameUpdate(float frameTime)
@@ -146,13 +117,20 @@ public sealed partial class MoverController
 
         _lookSendAccumulator = 0f;
         _lookYawDirty = false;
-        _firstPersonLookNet.Send((float) _lookYaw.Theta);
+        _firstPersonLookNet.Send((float) _lookYaw.Theta, _lookPitch);
     }
 
     private void OnFirstPersonKeyEvent(KeyEventArgs args, KeyEventType type)
     {
         if (type != KeyEventType.Down)
             return;
+
+        if (args.Key == Keyboard.Key.Space && _mouseLookCaptured)
+        {
+            _firstPersonLookNet.SendJump();
+            args.Handle();
+            return;
+        }
 
         if (args.Key == Keyboard.Key.Escape && _mouseLookCaptured)
         {
@@ -184,7 +162,10 @@ public sealed partial class MoverController
         {
             _lookYaw = (mover.FirstPersonMode
                 ? mover.FirstPersonYaw
-                : GetCameraYawFromLegacyMover(mover)).Reduced();
+                : Angle.Zero).Reduced();
+            _lookPitch = mover.FirstPersonMode
+                ? mover.FirstPersonPitch
+                : World3DGridRenderingSystem.DefaultFirstPersonPitch;
             ApplyFirstPersonYaw(player);
         }
 

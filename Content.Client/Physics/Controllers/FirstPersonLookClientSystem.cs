@@ -15,16 +15,23 @@ public sealed class FirstPersonLookClientSystem : EntitySystem
     {
         base.Initialize();
         _net.RegisterNetMessage<MsgFirstPersonLook>();
+        _net.RegisterNetMessage<MsgFirstPersonJump>();
     }
 
-    public void Send(float yaw)
+    public void Send(float yaw, float pitch)
     {
-        if (!float.IsFinite(yaw))
+        if (!float.IsFinite(yaw) || !float.IsFinite(pitch))
             return;
 
         _net.ClientSendMessage(new MsgFirstPersonLook
         {
             Yaw = yaw,
+            Pitch = pitch,
         });
+    }
+
+    public void SendJump()
+    {
+        _net.ClientSendMessage(new MsgFirstPersonJump());
     }
 }

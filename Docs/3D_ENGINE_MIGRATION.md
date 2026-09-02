@@ -84,3 +84,18 @@ is not assumed to be bit-identical across machines.
 - Replace client sprite-extruded raycasts with server Physics3D queries at Gate 2.
 - Replace map-per-floor composition with `MapGrid3D` at Gate 3.
 - Keep billboard rendering only as an explicit missing-model fallback until Gate 5.
+
+## Implemented vertical slice
+
+The `3droom` host command creates an isolated map whose floor, ceiling, walls and obstacles are native
+`Transform3D` + `PhysicsBody3D` + `Collider3D` + `Primitive3D` entities. It promotes the invoking player to
+an upright dynamic capsule and moves them into that map. This slice deliberately contains no tile or 2D fixture
+geometry.
+
+Current controls are mouse look, WASD movement and Space jump. F8 releases or recaptures relative mouse mode.
+The server runs 3D physics at a fixed 60 Hz and replicates authoritative XYZ transforms and velocity; the old
+planar mover exits immediately for entities carrying `CharacterController3DComponent`.
+
+This is a migration validation environment, not the final content path. The remaining physics work is compound
+and mesh shapes, sweep/overlap queries, contact events, per-body gravity/damping/CCD, client prediction and
+reconciliation.

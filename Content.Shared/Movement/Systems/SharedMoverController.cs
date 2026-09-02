@@ -20,6 +20,7 @@ using Robust.Shared.Map.Components;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Controllers;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
@@ -131,6 +132,14 @@ public abstract partial class SharedMoverController : VirtualController
     {
         var uid = entity.Owner;
         var mover = entity.Comp;
+
+        // Native 3D characters are driven by the server-authoritative 3D controller. Running the legacy
+        // planar solver as well would create two competing sources of truth.
+        if (HasComp<CharacterController3DComponent>(uid))
+        {
+            UsedMobMovement[uid] = false;
+            return;
+        }
 
         // If we're a relay then apply all of our data to the parent instead and go next.
         if (RelayQuery.TryComp(uid, out var relay))
