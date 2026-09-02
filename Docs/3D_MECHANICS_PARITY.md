@@ -7,7 +7,7 @@ Status values: `reference`, `foundation`, `partial`, `parity`, `blocked`.
 | Spatial hierarchy | parent movement/rotation/scale, grid transfer, anchoring, map serialization | foundation |
 | Networking | snapshots, interpolation, prediction, correction, PVS, reconnect, replay | foundation |
 | Character movement | walk, run, diagonal speed, crouch, crawl, jump, fall, slopes, stairs | foundation: native mouse yaw/pitch, dynamic capsule, grounding, jump, WASD |
-| Collision | static/dynamic/kinematic, sensors, layers, CCD, joints, contacts | partial: primitives, convex hulls, compounds, static/kinematic meshes, filtering, contact events, ray/sweep/AABB queries, fixed server step; joints pending |
+| Collision | static/dynamic/kinematic, sensors, layers, CCD, joints, contacts | partial: primitives, convex hulls, compounds, static/kinematic meshes, filtering, contact events, ray/sweep/AABB queries, fixed server step, ball/distance/hinge/weld joints |
 | Gravity and zero-G | gravity zones, drifting, push-off, magboots, knockback | reference |
 | Interaction | use, alternate use, examine, context menu, reach, LOS, pull | partial |
 | Inventory and hands | pickup, drop, wield, storage, equipping, dragging | reference |

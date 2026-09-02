@@ -99,5 +99,6 @@ planar mover exits immediately for entities carrying `CharacterController3DCompo
 This is a migration validation environment, not the final content path. The physics backend now accepts
 primitive, convex-hull, compound and static/kinematic triangle-mesh colliders; applies per-body gravity,
 damping, sleeping and CCD settings; exposes ray, convex-sweep and AABB-overlap queries; and emits directed
-start/touch/end contact events, including sensors. The remaining Gate 2 work is joint constraints plus client
-prediction, snapshots and reconciliation.
+start/touch/end contact events, including sensors. Ball-socket, distance-limit, hinge and weld joints are
+backend-independent networked constraints and can suppress collision between linked bodies. The remaining
+Gate 2 work is client prediction, snapshots and reconciliation.
