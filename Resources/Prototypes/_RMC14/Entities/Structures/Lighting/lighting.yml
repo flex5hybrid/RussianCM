@@ -421,6 +421,13 @@
   description: A small lighting fixture that is fitted with a bright fluorescent light bulb. Looking at it for too long makes your eyes go watery.
   suffix: Always powered, DO NOT MAP
   components:
+  - type: BloomLightMask # Bluedge
+    lightMasks:
+    - sprite: "_Bluedge/BloomLight/Masks/lightmask_lamp.png"
+      modulate: "#FFFFFF90"
+    - sprite: "_Bluedge/BloomLight/Masks/bulb_short.png"
+      modulate: "#FFFFFF80"
+      useShader: false
   - type: Sprite
     sprite: _RMC14/Structures/Wallmounts/Lighting/light_bulb.rsi
     state: bulb1
