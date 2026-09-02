@@ -4,9 +4,12 @@ using Content.Shared.Database;
 using Content.Shared.Hands.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory.VirtualItem;
+using Content.Shared.Movement.Components;
 using Content.Shared.Tag;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
+using Robust.Shared.Physics.Components;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
@@ -151,14 +154,67 @@ public abstract partial class SharedHandsSystem
 
         // if there's no drop location stop here
         if (targetDropLocation == null)
+        {
+            ConfigureDroppedItem3D(ent, entity.Value);
             return true;
+        }
 
         // otherwise, also move dropped item and rotate it properly according to grid/map
         var (itemPos, itemRot) = TransformSystem.GetWorldPositionRotation(entity.Value);
         var origin = new MapCoordinates(itemPos, itemXform.MapID);
         var target = TransformSystem.ToMapCoordinates(targetDropLocation.Value);
         TransformSystem.SetWorldPositionRotation(entity.Value, GetFinalDropCoordinates(ent, origin, target, entity.Value), itemRot);
+        ConfigureDroppedItem3D(ent, entity.Value);
         return true;
+    }
+
+    private void ConfigureDroppedItem3D(EntityUid user, EntityUid item)
+    {
+        if (!_net.IsServer ||
+            !TryComp(user, out InputMoverComponent? mover) ||
+            !mover.FirstPersonMode)
+        {
+            return;
+        }
+
+        var yaw = (float) mover.FirstPersonYaw.Theta;
+        var forward = new Vector3(MathF.Sin(yaw), MathF.Cos(yaw), 0f);
+        var position = _handsTransform3D.GetWorldPosition3D(user) + forward * 0.65f + Vector3.UnitZ * 0.25f;
+        _handsTransform3D.SetAuthoritative(item, true);
+        _handsTransform3D.SetWorldPosition3D(item, position);
+
+        var body3D = EnsureComp<PhysicsBody3DComponent>(item);
+        body3D.BodyType = PhysicsBodyType3D.Dynamic;
+        body3D.Mass = TryComp(item, out PhysicsComponent? legacyBody)
+            ? MathF.Max(0.05f, legacyBody.Mass)
+            : 1f;
+        body3D.LinearVelocity = Vector3.Zero;
+        body3D.AngularVelocity = Vector3.Zero;
+        body3D.GravityScale = 1f;
+        body3D.CanCollide = true;
+        body3D.SleepingAllowed = true;
+
+        var collider3D = EnsureComp<Collider3DComponent>(item);
+        if (collider3D.Shapes.Count == 0)
+        {
+            collider3D.Shapes.Add(new BoxShape3D
+            {
+                Size = new Vector3(0.35f, 0.2f, 0.2f),
+                CollisionLayer = int.MaxValue,
+                CollisionMask = int.MaxValue,
+                Friction = 0.65f,
+            });
+        }
+
+        if (legacyBody != null)
+        {
+            _handsPhysics.SetLinearVelocity(item, Vector2.Zero, body: legacyBody);
+            _handsPhysics.SetCanCollide(item, false, body: legacyBody);
+        }
+
+        Dirty(item, body3D);
+        Dirty(item, collider3D);
+        _handsPhysics3D.RefreshBody(item);
     }
 
     /// <summary>

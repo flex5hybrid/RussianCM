@@ -6,9 +6,13 @@ using Content.Shared.Hands.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.VirtualItem;
+using Content.Shared.Movement.Components;
 using Content.Shared.Storage.EntitySystems;
 using Robust.Shared.Containers;
 using Robust.Shared.Input.Binding;
+using Robust.Shared.Physics.Components;
+using Robust.Shared.Physics.Systems;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Utility;
 
 namespace Content.Shared.Hands.EntitySystems;
@@ -22,6 +26,9 @@ public abstract partial class SharedHandsSystem
     [Dependency] private InventorySystem _inventory = default!;
     [Dependency] private SharedStorageSystem _storage = default!;
     [Dependency] protected SharedTransformSystem TransformSystem = default!;
+    [Dependency] private SharedTransform3DSystem _handsTransform3D = default!;
+    [Dependency] private SharedPhysics3DSystem _handsPhysics3D = default!;
+    [Dependency] private SharedPhysicsSystem _handsPhysics = default!;
     [Dependency] private SharedVirtualItemSystem _virtualSystem = default!;
 
     public event Action<Entity<HandsComponent>, string, HandLocation>? OnPlayerAddHand;

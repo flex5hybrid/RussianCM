@@ -1,3 +1,4 @@
+using System.Numerics;
 using System.Linq;
 using Content.Shared._RMC14.Hands;
 using Content.Shared.Examine;
@@ -7,6 +8,7 @@ using Content.Shared.Input;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory.VirtualItem;
 using Content.Shared.Localizations;
+using Content.Shared.Movement.Components;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
@@ -125,7 +127,21 @@ public abstract partial class SharedHandsSystem : EntitySystem
     private bool DropPressed(ICommonSession? session, EntityCoordinates coords, EntityUid netEntity)
     {
         if (TryComp(session?.AttachedEntity, out HandsComponent? hands) && hands.ActiveHandId != null)
-            TryDrop((session.AttachedEntity.Value, hands), hands.ActiveHandId, coords);
+        {
+            var user = session!.AttachedEntity!.Value;
+            if (TryComp(user, out InputMoverComponent? mover) && mover.FirstPersonMode)
+            {
+                var yaw = (float) mover.FirstPersonYaw.Theta;
+                var forward = new Vector2(MathF.Sin(yaw), MathF.Cos(yaw));
+                var transform = Transform(user);
+                var target = new MapCoordinates(
+                    TransformSystem.GetWorldPosition(user) + forward * 0.75f,
+                    transform.MapID);
+                coords = TransformSystem.ToCoordinates(transform.ParentUid, target);
+            }
+
+            TryDrop((user, hands), hands.ActiveHandId, coords);
+        }
 
         // always send to server.
         return false;
