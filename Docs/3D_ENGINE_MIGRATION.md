@@ -96,6 +96,8 @@ Current controls are mouse look, WASD movement and Space jump. F8 releases or re
 The server runs 3D physics at a fixed 60 Hz and replicates authoritative XYZ transforms and velocity; the old
 planar mover exits immediately for entities carrying `CharacterController3DComponent`.
 
-This is a migration validation environment, not the final content path. The remaining physics work is compound
-and mesh shapes, sweep/overlap queries, contact events, per-body gravity/damping/CCD, client prediction and
-reconciliation.
+This is a migration validation environment, not the final content path. The physics backend now accepts
+primitive, convex-hull, compound and static/kinematic triangle-mesh colliders; applies per-body gravity,
+damping, sleeping and CCD settings; exposes ray, convex-sweep and AABB-overlap queries; and emits directed
+start/touch/end contact events, including sensors. The remaining Gate 2 work is joint constraints plus client
+prediction, snapshots and reconciliation.
