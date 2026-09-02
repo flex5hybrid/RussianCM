@@ -12,6 +12,7 @@ using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Input;
 using Content.Shared.Movement.Pulling.Components;
 using Content.Shared.Movement.Pulling.Systems;
+using Content.Shared.Movement.Components;
 using Content.Shared.Stacks;
 using Content.Shared.Standing;
 using Content.Shared.Throwing;
@@ -207,8 +208,23 @@ namespace Content.Server.Hands.Systems
 
         private bool HandleThrowItem(ICommonSession? playerSession, EntityCoordinates coordinates, EntityUid entity)
         {
-            if (playerSession?.AttachedEntity is not {Valid: true} player || !Exists(player) || !coordinates.IsValid(EntityManager))
+            if (playerSession?.AttachedEntity is not {Valid: true} player || !Exists(player))
                 return false;
+
+            if (TryComp(player, out InputMoverComponent? mover) && mover.FirstPersonMode)
+            {
+                var yaw = (float) mover.FirstPersonYaw.Theta;
+                var forward = new Vector2(MathF.Sin(yaw), MathF.Cos(yaw));
+                var transform = Transform(player);
+                var target = new MapCoordinates(
+                    _transformSystem.GetWorldPosition(player) + forward * 100f,
+                    transform.MapID);
+                coordinates = _transformSystem.ToCoordinates(transform.ParentUid, target);
+            }
+            else if (!coordinates.IsValid(EntityManager))
+            {
+                return false;
+            }
 
             return ThrowHeldItem(player, coordinates);
         }

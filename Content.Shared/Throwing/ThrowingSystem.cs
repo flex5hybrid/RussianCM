@@ -8,6 +8,7 @@ using Content.Shared.Friction;
 using Content.Shared.Gravity;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
+using Content.Shared.Movement.Components;
 using Content.Shared.Popups;
 using Content.Shared.Projectiles;
 using Content.Shared.Weapons.Melee;
@@ -19,6 +20,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 
@@ -40,7 +42,9 @@ public sealed partial class ThrowingSystem : EntitySystem
     [Dependency] private IGameTiming _gameTiming = default!;
     [Dependency] private SharedGravitySystem _gravity = default!;
     [Dependency] private SharedPhysicsSystem _physics = default!;
+    [Dependency] private SharedPhysics3DSystem _physics3D = default!;
     [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private SharedTransform3DSystem _transform3D = default!;
     [Dependency] private ThrownItemSystem _thrownSystem = default!;
     [Dependency] private SharedCameraRecoilSystem _recoil = default!;
     [Dependency] private ISharedAdminLogManager _adminLogger = default!;
@@ -230,6 +234,12 @@ public sealed partial class ThrowingSystem : EntitySystem
         var impulseVector = direction.Normalized() * throwSpeed * physics.Mass;
         _physics.ApplyLinearImpulse(uid, impulseVector, body: physics);
 
+        if (_net.IsServer && user is { } thrower &&
+            TryComp(thrower, out InputMoverComponent? mover) && mover.FirstPersonMode)
+        {
+            ConfigureThrow3D(uid, thrower, mover, physics, throwSpeed, doSpin);
+        }
+
         if (comp.LandTime == null || comp.LandTime <= TimeSpan.Zero)
         {
             _thrownSystem.LandComponent(uid, comp, physics, playSound);
@@ -284,5 +294,57 @@ public sealed partial class ThrowingSystem : EntitySystem
                 ("thrown", Identity.Name(uid, EntityManager, otherEnt)));
             _popup.PopupEntity(popup, user.Value, otherEnt, PopupType.SmallCaution);
         }
+    }
+
+    private void ConfigureThrow3D(
+        EntityUid uid,
+        EntityUid user,
+        InputMoverComponent mover,
+        PhysicsComponent legacyBody,
+        float speed,
+        bool spin)
+    {
+        var horizontal = MathF.Cos(mover.FirstPersonPitch);
+        var yaw = (float) mover.FirstPersonYaw.Theta;
+        var direction = Vector3.Normalize(new Vector3(
+            MathF.Sin(yaw) * horizontal,
+            MathF.Cos(yaw) * horizontal,
+            MathF.Sin(mover.FirstPersonPitch)));
+        var inheritedVelocity = _physics3D.TryGetVelocity(user, out var velocity3D, out _)
+            ? velocity3D
+            : new Vector3(_physics.GetMapLinearVelocity(user), 0f);
+        var origin = _transform3D.GetWorldPosition3D(user) + Vector3.UnitZ * 1.25f;
+
+        _transform3D.SetAuthoritative(uid, true);
+        _transform3D.SetWorldPosition3D(uid, origin + direction * 0.4f);
+
+        var body3D = EnsureComp<PhysicsBody3DComponent>(uid);
+        body3D.BodyType = PhysicsBodyType3D.Dynamic;
+        body3D.Mass = MathF.Max(0.05f, legacyBody.Mass);
+        body3D.LinearVelocity = inheritedVelocity + direction * speed;
+        body3D.AngularVelocity = spin ? new Vector3(2f, 3f, ThrowAngularImpulse) : Vector3.Zero;
+        body3D.GravityScale = 1f;
+        body3D.CanCollide = true;
+        body3D.SleepingAllowed = true;
+        body3D.ContinuousDetection = ContinuousDetectionMode3D.Continuous;
+
+        var collider3D = EnsureComp<Collider3DComponent>(uid);
+        if (collider3D.Shapes.Count == 0)
+        {
+            collider3D.Shapes.Add(new SphereShape3D
+            {
+                Radius = 0.2f,
+                CollisionLayer = int.MaxValue,
+                CollisionMask = int.MaxValue,
+                Friction = 0.55f,
+                Restitution = 0.08f,
+            });
+        }
+
+        _physics.SetLinearVelocity(uid, Vector2.Zero, body: legacyBody);
+        _physics.SetCanCollide(uid, false, body: legacyBody);
+        Dirty(uid, body3D);
+        Dirty(uid, collider3D);
+        _physics3D.RefreshBody(uid);
     }
 }

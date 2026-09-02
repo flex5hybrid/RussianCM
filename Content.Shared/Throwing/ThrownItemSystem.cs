@@ -11,6 +11,7 @@ using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Timing;
 using Content.Shared.BarricadeBlock;
 using Robust.Shared.Random;
@@ -28,6 +29,7 @@ namespace Content.Shared.Throwing
         [Dependency] private FixtureSystem _fixtures = default!;
         [Dependency] private SharedBroadphaseSystem _broadphase = default!;
         [Dependency] private SharedPhysicsSystem _physics = default!;
+        [Dependency] private SharedPhysics3DSystem _physics3D = default!;
         [Dependency] private SharedGravitySystem _gravity = default!;
         [Dependency] private IRobustRandom _random = default!;
         [Dependency] private CMUSharedZLevelsSystem _zLevels = default!; //CMU
@@ -40,6 +42,7 @@ namespace Content.Shared.Throwing
             SubscribeLocalEvent<ThrownItemComponent, MapInitEvent>(OnMapInit);
             SubscribeLocalEvent<ThrownItemComponent, PhysicsSleepEvent>(OnSleep);
             SubscribeLocalEvent<ThrownItemComponent, StartCollideEvent>(HandleCollision);
+            SubscribeLocalEvent<ThrownItemComponent, StartCollide3DEvent>(HandleCollision3D);
             SubscribeLocalEvent<ThrownItemComponent, PreventCollideEvent>(PreventCollision);
             SubscribeLocalEvent<ThrownItemComponent, ThrownEvent>(ThrowItem);
 
@@ -156,6 +159,14 @@ namespace Content.Shared.Throwing
             ThrowCollideInteraction(component, args.OurEntity, args.OtherEntity);
         }
 
+        private void HandleCollision3D(EntityUid uid, ThrownItemComponent component, ref StartCollide3DEvent args)
+        {
+            if (!_netMan.IsServer || args.OtherEntity == component.Thrower)
+                return;
+
+            ThrowCollideInteraction(component, uid, args.OtherEntity);
+        }
+
 
 
         private void OnSleep(EntityUid uid, ThrownItemComponent thrownItem, ref PhysicsSleepEvent @event)
@@ -191,6 +202,12 @@ namespace Content.Shared.Throwing
 
                 if (physics.Awake)
                     _broadphase.RegenerateContacts((uid, physics));
+            }
+
+
+            if (TryComp(uid, out PhysicsBody3DComponent? body3D))
+            {
+                _physics3D.SetVelocity(uid, Vector3.Zero, body3D.AngularVelocity * 0.15f);
             }
 
             var ev = new StopThrowEvent(thrownItemComponent.Thrower);
