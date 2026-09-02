@@ -23,6 +23,12 @@ public sealed partial class PullableComponent : Component
     [AutoNetworkedField, DataField]
     public string? PullJointId;
 
+    /// <summary>
+    /// Entity carrying the native 3D distance constraint. Kept alongside the legacy id only during migration.
+    /// </summary>
+    [AutoNetworkedField, DataField]
+    public EntityUid? PullJoint3D;
+
     public bool BeingPulled => Puller != null;
 
     /// <summary>

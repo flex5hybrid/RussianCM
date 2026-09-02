@@ -1,3 +1,4 @@
+using System.Numerics;
 using Content.Shared._RMC14.Fireman;
 using Content.Shared._RMC14.Pulling;
 using Content.Shared.ActionBlocker;
@@ -31,6 +32,7 @@ using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
@@ -52,6 +54,8 @@ public sealed partial class PullingSystem : EntitySystem
     [Dependency] private SharedHandsSystem _handsSystem = default!;
     [Dependency] private SharedInteractionSystem _interaction = default!;
     [Dependency] private SharedPhysicsSystem _physics = default!;
+    [Dependency] private SharedPhysics3DSystem _physics3D = default!;
+    [Dependency] private SharedTransform3DSystem _transform3D = default!;
     [Dependency] private HeldSpeedModifierSystem _clothingMoveSpeed = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
     [Dependency] private SharedVirtualItemSystem _virtual = default!;
@@ -73,6 +77,7 @@ public sealed partial class PullingSystem : EntitySystem
         SubscribeLocalEvent<PullableComponent, EntGotInsertedIntoContainerMessage>(OnPullableContainerInsert);
         SubscribeLocalEvent<PullableComponent, ModifyUncuffDurationEvent>(OnModifyUncuffDuration);
         SubscribeLocalEvent<PullableComponent, StopBeingPulledAlertEvent>(OnStopBeingPulledAlert);
+        SubscribeLocalEvent<PhysicsJoint3DComponent, ComponentShutdown>(OnPullJoint3DShutdown);
 
         SubscribeLocalEvent<PullerComponent, UpdateMobStateEvent>(OnStateChanged, after: [typeof(MobThresholdSystem)]);
         SubscribeLocalEvent<PullerComponent, AfterAutoHandleStateEvent>(OnAfterState);
@@ -352,6 +357,8 @@ public sealed partial class PullingSystem : EntitySystem
                 pullableComp.PullJointId = null;
             }
 
+            RemovePullJoint3D(pullableComp);
+
             if (TryComp<PhysicsComponent>(pullableUid, out var pullablePhysics))
             {
                 _physics.SetFixedRotation(pullableUid, pullableComp.PrevFixedRotation, body: pullablePhysics);
@@ -362,6 +369,7 @@ public sealed partial class PullingSystem : EntitySystem
             RemComp<ActivePullerComponent>(oldPuller.Value);
 
         pullableComp.PullJointId = null;
+        pullableComp.PullJoint3D = null;
         pullableComp.Puller = null;
         Dirty(pullableUid, pullableComp);
 
@@ -440,12 +448,16 @@ public sealed partial class PullingSystem : EntitySystem
             return false;
         }
 
-        if (!TryComp<PhysicsComponent>(pullableUid, out var physics))
+        var hasLegacyPhysics = TryComp<PhysicsComponent>(pullableUid, out var physics);
+        var hasPhysics3D = TryComp<PhysicsBody3DComponent>(pullableUid, out var physics3D);
+        if (!hasLegacyPhysics && !hasPhysics3D)
         {
             return false;
         }
 
-        if (physics.BodyType == BodyType.Static)
+        if (hasPhysics3D
+                ? physics3D!.BodyType == PhysicsBodyType3D.Static
+                : physics!.BodyType == BodyType.Static)
         {
             return false;
         }
@@ -505,8 +517,20 @@ public sealed partial class PullingSystem : EntitySystem
         if (_timing.ApplyingState)
             return true;
 
+        var removed3D = false;
+        if (resolvedPullable.PullJoint3D is { } joint3D)
+        {
+            resolvedPullable.PullJoint3D = null;
+            QueueDel(joint3D);
+            removed3D = true;
+        }
+
         if (resolvedPullable.PullJointId is not { } pullJointId)
+        {
+            if (removed3D)
+                Dirty(pullableUid, resolvedPullable);
             return true;
+        }
 
         resolvedPullable.PullJointId = null;
         RemovePullJoint(pullableUid, pullerUid, pullJointId);
@@ -535,6 +559,7 @@ public sealed partial class PullingSystem : EntitySystem
 
         if (!_timing.ApplyingState)
         {
+            RemovePullJoint3D(resolvedPullable);
             if (resolvedPullable.PullJointId is { } oldJointId)
             {
                 resolvedPullable.PullJointId = null;
@@ -543,23 +568,32 @@ public sealed partial class PullingSystem : EntitySystem
 
             RemovePullJoint(pullableUid, pullerUid, pullJointId);
 
-            if (!TryComp(pullerUid, out PhysicsComponent? pullerPhysics) ||
-                !TryComp(pullableUid, out PhysicsComponent? pullablePhysics))
+            var native3D = TryComp(pullerUid, out PhysicsBody3DComponent? _) &&
+                           TryComp(pullableUid, out PhysicsBody3DComponent? _);
+            if (native3D)
+            {
+                resolvedPullable.PullJoint3D = CreatePullJoint3D(pullerUid, pullableUid);
+                EnsureComp<ActivePullerComponent>(pullerUid);
+            }
+            else if (!TryComp(pullerUid, out PhysicsComponent? pullerPhysics) ||
+                     !TryComp(pullableUid, out PhysicsComponent? pullablePhysics))
             {
                 return false;
             }
+            else
+            {
+                resolvedPullable.PullJointId = pullJointId;
+                var joint = _joints.CreateDistanceJoint(pullableUid, pullerUid,
+                    pullablePhysics.LocalCenter, pullerPhysics.LocalCenter,
+                    id: pullJointId, minimumDistance: 1);
+                joint.CollideConnected = false;
+                joint.MaxLength = joint.Length + 0.15f;
+                joint.MinLength = 0f;
+                joint.Stiffness = 0f;
 
-            resolvedPullable.PullJointId = pullJointId;
-            var joint = _joints.CreateDistanceJoint(pullableUid, pullerUid,
-                pullablePhysics.LocalCenter, pullerPhysics.LocalCenter,
-                id: pullJointId, minimumDistance: 1);
-            joint.CollideConnected = false;
-            joint.MaxLength = joint.Length + 0.15f;
-            joint.MinLength = 0f;
-            joint.Stiffness = 0f;
-
-            _physics.SetFixedRotation(pullableUid, resolvedPullable.FixedRotationOnPull, body: pullablePhysics);
-            EnsureComp<ActivePullerComponent>(pullerUid);
+                _physics.SetFixedRotation(pullableUid, resolvedPullable.FixedRotationOnPull, body: pullablePhysics);
+                EnsureComp<ActivePullerComponent>(pullerUid);
+            }
         }
         else
         {
@@ -603,6 +637,50 @@ public sealed partial class PullingSystem : EntitySystem
         }
     }
 
+    private void RemovePullJoint3D(PullableComponent pullable)
+    {
+        if (pullable.PullJoint3D is not { } joint)
+            return;
+
+        pullable.PullJoint3D = null;
+        if (Exists(joint) && !TerminatingOrDeleted(joint))
+            QueueDel(joint);
+    }
+
+    private void OnPullJoint3DShutdown(Entity<PhysicsJoint3DComponent> joint, ref ComponentShutdown args)
+    {
+        if (!TryComp(joint.Comp.BodyA, out PullableComponent? pullable) ||
+            pullable.PullJoint3D != joint.Owner)
+        {
+            return;
+        }
+
+        pullable.PullJoint3D = null;
+        StopPulling(joint.Comp.BodyA, pullable);
+    }
+
+    private EntityUid CreatePullJoint3D(EntityUid puller, EntityUid pullable)
+    {
+        var jointUid = Spawn(null, new EntityCoordinates(pullable, Vector2.Zero));
+        var pullerPosition = _transform3D.GetWorldPosition3D(puller);
+        var pullablePosition = _transform3D.GetWorldPosition3D(pullable);
+        var distance = MathF.Max(0.25f, Vector3.Distance(pullerPosition, pullablePosition));
+        var joint = EnsureComp<PhysicsJoint3DComponent>(jointUid);
+        joint.BodyA = pullable;
+        joint.BodyB = puller;
+        joint.JointType = PhysicsJointType3D.DistanceLimit;
+        joint.LocalAnchorA = Vector3.Zero;
+        joint.LocalAnchorB = Vector3.Zero;
+        joint.MinimumDistance = 0f;
+        joint.MaximumDistance = distance + 0.15f;
+        joint.SpringFrequency = 30f;
+        joint.DampingRatio = 1f;
+        joint.CollideConnected = false;
+        Dirty(jointUid, joint);
+        _physics3D.RefreshJoint(jointUid);
+        return jointUid;
+    }
+
     public bool TryStartPull(EntityUid pullerUid, EntityUid pullableUid,
         PullerComponent? pullerComp = null, PullableComponent? pullableComp = null)
     {
@@ -627,7 +705,10 @@ public sealed partial class PullingSystem : EntitySystem
         if (!CanPull(pullerUid, pullableUid))
             return false;
 
-        if (!TryComp(pullerUid, out PhysicsComponent? pullerPhysics) || !TryComp(pullableUid, out PhysicsComponent? pullablePhysics))
+        var native3D = TryComp(pullerUid, out PhysicsBody3DComponent? _) &&
+                       TryComp(pullableUid, out PhysicsBody3DComponent? _);
+        if (!native3D &&
+            (!TryComp(pullerUid, out PhysicsComponent? _) || !TryComp(pullableUid, out PhysicsComponent? _)))
             return false;
 
         // Ensure that the puller is not currently pulling anything.
@@ -670,7 +751,8 @@ public sealed partial class PullingSystem : EntitySystem
         pullableComp.Puller = pullerUid;
 
         // store the pulled entity's physics FixedRotation setting in case we change it
-        pullableComp.PrevFixedRotation = pullablePhysics.FixedRotation;
+        if (TryComp(pullableUid, out PhysicsComponent? pullablePhysics))
+            pullableComp.PrevFixedRotation = pullablePhysics.FixedRotation;
 
         // joint state handling will manage its own state
         if (!_timing.ApplyingState)
@@ -679,21 +761,31 @@ public sealed partial class PullingSystem : EntitySystem
             // survived a previous pull, clear it before creating the replacement.
             RemovePullJoint(pullableUid, pullerUid, pullJointId);
 
-            var joint = _joints.CreateDistanceJoint(pullableUid, pullerUid,
-                    pullablePhysics.LocalCenter, pullerPhysics.LocalCenter,
-                    id: pullJointId, minimumDistance: 1);
-            joint.CollideConnected = false;
-            // This maximum has to be there because if the object is constrained too closely, the clamping goes backwards and asserts.
-            // Internally, the joint length has been set to the distance between the pivots.
-            // Add an additional 15cm (pretty arbitrary) to the maximum length for the hard limit.
-            joint.MaxLength = joint.Length + 0.15f;
-            joint.MinLength = 0f;
-            // Set the spring stiffness to zero. The joint won't have any effect provided
-            // the current length is beteen MinLength and MaxLength. At those limits, the
-            // joint will have infinite stiffness.
-            joint.Stiffness = 0f;
+            if (native3D)
+            {
+                pullableComp.PullJoint3D = CreatePullJoint3D(pullerUid, pullableUid);
+                pullableComp.PullJointId = null;
+            }
+            else
+            {
+                var pullerPhysics = Comp<PhysicsComponent>(pullerUid);
+                pullablePhysics = Comp<PhysicsComponent>(pullableUid);
+                var joint = _joints.CreateDistanceJoint(pullableUid, pullerUid,
+                        pullablePhysics.LocalCenter, pullerPhysics.LocalCenter,
+                        id: pullJointId, minimumDistance: 1);
+                joint.CollideConnected = false;
+                // This maximum has to be there because if the object is constrained too closely, the clamping goes backwards and asserts.
+                // Internally, the joint length has been set to the distance between the pivots.
+                // Add an additional 15cm (pretty arbitrary) to the maximum length for the hard limit.
+                joint.MaxLength = joint.Length + 0.15f;
+                joint.MinLength = 0f;
+                // Set the spring stiffness to zero. The joint won't have any effect provided
+                // the current length is beteen MinLength and MaxLength. At those limits, the
+                // joint will have infinite stiffness.
+                joint.Stiffness = 0f;
 
-            _physics.SetFixedRotation(pullableUid, pullableComp.FixedRotationOnPull, body: pullablePhysics);
+                _physics.SetFixedRotation(pullableUid, pullableComp.FixedRotationOnPull, body: pullablePhysics);
+            }
         }
 
         // Messaging
