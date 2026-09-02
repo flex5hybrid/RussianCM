@@ -59,7 +59,7 @@ namespace Content.Shared.Movement.Systems
             SubscribeLocalEvent<InputMoverComponent, EntParentChangedMessage>(OnInputParentChange);
 
             SubscribeLocalEvent<FollowedComponent, EntParentChangedMessage>(OnFollowedParentChange);
-            SubscribeAllEvent<RequestFirstPersonLookEvent>(OnRequestFirstPersonLook);
+            SubscribeAllEvent<FirstPersonInput3DEvent>(OnFirstPersonInput3D);
 
             Subs.CVar(_configManager, CCVars.CameraRotationLocked, obj => CameraRotationLocked = obj, true);
             Subs.CVar(_configManager, CCVars.GameDiagonalMovement, value => DiagonalMovementEnabled = value, true);
@@ -178,10 +178,24 @@ namespace Content.Shared.Movement.Systems
             Dirty(uid, mover);
         }
 
-        private void OnRequestFirstPersonLook(RequestFirstPersonLookEvent msg, EntitySessionEventArgs args)
+        private void OnFirstPersonInput3D(FirstPersonInput3DEvent msg, EntitySessionEventArgs args)
         {
-            if (args.SenderSession.AttachedEntity is { } uid)
-                SetCameraRotation(uid, msg.Yaw);
+            if (!float.IsFinite(msg.Yaw) ||
+                !float.IsFinite(msg.Pitch) ||
+                args.SenderSession.AttachedEntity is not { } uid ||
+                !MoverQuery.TryGetComponent(uid, out var mover) ||
+                !HasComp<CharacterController3DComponent>(uid))
+            {
+                return;
+            }
+
+            mover.FirstPersonMode = true;
+            mover.FirstPersonYaw = new Angle(msg.Yaw).Reduced();
+            mover.FirstPersonPitch = Math.Clamp(msg.Pitch, -1.35f, 1.35f);
+            Dirty(uid, mover);
+
+            if (msg.Jump)
+                Physics3DSystem.RequestCharacterJump(uid);
         }
 
         public void ResetCamera(EntityUid uid)
@@ -638,12 +652,6 @@ namespace Content.Shared.Movement.Systems
                 return false;
             }
         }
-    }
-
-    [Serializable, NetSerializable]
-    public sealed class RequestFirstPersonLookEvent : EntityEventArgs
-    {
-        public Angle Yaw;
     }
 
     [Flags]

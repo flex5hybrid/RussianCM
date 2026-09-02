@@ -46,6 +46,7 @@ public abstract partial class SharedMoverController : VirtualController
     [Dependency] private   SharedMapSystem _mapSystem = default!;
     [Dependency] private   SharedGravitySystem _gravity = default!;
     [Dependency] private   SharedTransformSystem _transform = default!;
+    [Dependency] protected SharedPhysics3DSystem Physics3DSystem = default!;
     [Dependency] private   TagSystem _tags = default!;
 
     protected EntityQuery<CanMoveInAirComponent> CanMoveInAirQuery;

@@ -98,6 +98,7 @@ public sealed partial class MoverController : SharedMoverController
     {
         base.UpdateBeforeSolve(prediction, frameTime);
         ApplyFirstPersonYaw();
+        FlushFirstPersonInput();
 
         if (_playerManager.LocalEntity is not {Valid: true} player)
             return;

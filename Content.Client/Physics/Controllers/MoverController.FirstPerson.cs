@@ -15,10 +15,11 @@ public sealed partial class MoverController
     [Dependency] private IClyde _firstPersonClyde = default!;
     [Dependency] private IInputManager _firstPersonInput = default!;
     [Dependency] private World3DGridRenderingSystem _world3D = default!;
-    [Dependency] private FirstPersonLookClientSystem _firstPersonLookNet = default!;
 
     private bool _mouseLookCaptured;
     private bool _lookYawDirty;
+    private bool _lookSendPending;
+    private bool _jumpPending;
     private float _lookSendAccumulator;
     private Angle _lookYaw;
     private float _lookPitch = World3DGridRenderingSystem.DefaultFirstPersonPitch;
@@ -53,7 +54,7 @@ public sealed partial class MoverController
 
         ApplyFirstPersonYaw(entity.Owner);
         _world3D.SetFirstPersonView((float) _lookYaw.Theta, _lookPitch);
-        _firstPersonLookNet.Send((float) _lookYaw.Theta, _lookPitch);
+        _lookSendPending = true;
         SetMouseLookCaptured(true);
     }
 
@@ -64,6 +65,8 @@ public sealed partial class MoverController
         entity.Comp.FirstPersonMode = false;
         SetMouseLookCaptured(false);
         _lookYawDirty = false;
+        _lookSendPending = false;
+        _jumpPending = false;
         _lookSendAccumulator = 0f;
     }
 
@@ -117,7 +120,7 @@ public sealed partial class MoverController
 
         _lookSendAccumulator = 0f;
         _lookYawDirty = false;
-        _firstPersonLookNet.Send((float) _lookYaw.Theta, _lookPitch);
+        _lookSendPending = true;
     }
 
     private void OnFirstPersonKeyEvent(KeyEventArgs args, KeyEventType type)
@@ -127,7 +130,8 @@ public sealed partial class MoverController
 
         if (args.Key == Keyboard.Key.Space && _mouseLookCaptured)
         {
-            _firstPersonLookNet.SendJump();
+            _lookSendPending = true;
+            _jumpPending = true;
             args.Handle();
             return;
         }
@@ -171,5 +175,28 @@ public sealed partial class MoverController
 
         _mouseLookCaptured = captured;
         _firstPersonClyde.MainWindow.SetRelativeMouseMode(captured);
+    }
+
+    private void SendFirstPersonInput(bool jump)
+    {
+        if (_playerManager.LocalEntity is not { Valid: true })
+            return;
+
+        RaisePredictiveEvent(new FirstPersonInput3DEvent
+        {
+            Yaw = (float) _lookYaw.Theta,
+            Pitch = _lookPitch,
+            Jump = jump,
+        });
+    }
+
+    private void FlushFirstPersonInput()
+    {
+        if ((!_lookSendPending && !_jumpPending) || !Timing.IsFirstTimePredicted)
+            return;
+
+        SendFirstPersonInput(_jumpPending);
+        _lookSendPending = false;
+        _jumpPending = false;
     }
 }
