@@ -58,7 +58,7 @@ public sealed class Native3DTestRoomCommand : IConsoleCommand
             new Vector3(2.2f, 1.8f, 0.6f),
             new Vector3(1.2f, 1.2f, 1.2f),
             new Color(0.76f, 0.34f, 0.16f),
-            "/Models/Native3D/validation_barrel.obj");
+            "/Models/Native3D/validation_crate.gltf");
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(-2.4f, 2.3f, 0.35f), new Vector3(2.4f, 0.8f, 0.7f), new Color(0.24f, 0.62f, 0.56f));
         SpawnLight(entities, transforms3D, lights, mapId, new Vector3(-3.6f, -1.5f, 2.75f), new Color(0.72f, 0.86f, 1f));
         SpawnLight(entities, transforms3D, lights, mapId, new Vector3(3.4f, 2.1f, 2.75f), new Color(1f, 0.72f, 0.42f));
