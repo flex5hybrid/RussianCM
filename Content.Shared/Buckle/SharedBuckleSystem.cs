@@ -1,6 +1,7 @@
 using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Alert;
+using Content.Shared.Buckle.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
 using Content.Shared.Mobs.Systems;
@@ -13,6 +14,7 @@ using Robust.Shared.Physics.Systems;
 using Robust.Shared.Physics3D;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
+using Content.Shared.Buckle.Components;
 
 namespace Content.Shared.Buckle;
 

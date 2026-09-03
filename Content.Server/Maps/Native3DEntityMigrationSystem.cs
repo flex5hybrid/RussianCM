@@ -101,6 +101,7 @@ public sealed class Native3DEntityMigrationSystem : EntitySystem
         body3D.LinearDamping = body2D.LinearDamping;
         body3D.AngularDamping = body2D.AngularDamping;
         body3D.SleepingAllowed = body2D.SleepingAllowed;
+        body3D.LockRotation = body2D.FixedRotation;
 
         collider3D.Shapes.Clear();
         bridge.ShapeFixtureIds.Clear();
@@ -142,6 +143,7 @@ public sealed class Native3DEntityMigrationSystem : EntitySystem
         body3D.LinearDamping = entity.Comp1.LinearDamping;
         body3D.AngularDamping = entity.Comp1.AngularDamping;
         body3D.SleepingAllowed = entity.Comp1.SleepingAllowed;
+        body3D.LockRotation = entity.Comp1.FixedRotation;
         body3D.CanCollide = true;
 
         var collider3D = EnsureComp<Collider3DComponent>(entity.Owner);

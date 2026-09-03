@@ -29,6 +29,7 @@ using Robust.Shared.Physics.Events;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Content.Shared.Movement.Components;
+using Robust.Shared.Physics3D;
 
 namespace Content.Shared.Buckle;
 

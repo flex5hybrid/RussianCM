@@ -15,6 +15,7 @@ using Robust.Shared.Physics3D;
 using Robust.Shared.Timing;
 using Content.Shared.BarricadeBlock;
 using Robust.Shared.Random;
+using System.Numerics;
 
 namespace Content.Shared.Throwing
 {

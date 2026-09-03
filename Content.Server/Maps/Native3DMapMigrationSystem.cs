@@ -6,6 +6,7 @@ using Robust.Shared.IoC;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Maths;
+using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Physics3D;
@@ -23,6 +24,7 @@ public sealed class Native3DMapMigrationSystem : EntitySystem
     [Dependency] private SharedMapGrid3DSystem _grids3D = default!;
     [Dependency] private SharedTransform3DSystem _transforms3D = default!;
     [Dependency] private SharedPhysicsSystem _physics2D = default!;
+    [Dependency] private SharedPhysics3DSystem _physics3D = default!;
     [Dependency] private Native3DEntityMigrationSystem _entities3D = default!;
 
     public override void Initialize()
@@ -34,17 +36,28 @@ public sealed class Native3DMapMigrationSystem : EntitySystem
 
     private void OnGridMapInit(Entity<MapGridComponent> entity, ref MapInitEvent args)
     {
+        PhysicsBodyType3D bodyType3D = PhysicsBodyType3D.Static;
         if (TryComp(entity.Owner, out PhysicsComponent? legacyBody))
+        {
+            bodyType3D = ConvertBodyType(legacyBody.BodyType);
             _physics2D.SetCanCollide(entity.Owner, false, body: legacyBody);
+        }
         _transforms3D.SetAuthoritative(entity.Owner, true);
         EnsureComp<LegacyPhysics3DBridgeComponent>(entity.Owner);
 
         if (TryComp(entity.Owner, out Native3DMigratedGridComponent? marker) &&
             marker.Version == Native3DMigratedGridComponent.CurrentVersion &&
             HasComp<MapGrid3DComponent>(entity.Owner))
+        {
+            if (TryComp(entity.Owner, out MapGrid3DPhysicsComponent? existingPhysics3D))
+                existingPhysics3D.BodyType = bodyType3D;
+            _physics3D.SetBodyType(entity.Owner, bodyType3D);
             return;
+        }
 
         var grid3D = EnsureComp<MapGrid3DComponent>(entity.Owner);
+        var gridPhysics3D = EnsureComp<MapGrid3DPhysicsComponent>(entity.Owner);
+        gridPhysics3D.BodyType = bodyType3D;
         grid3D.CellSize = entity.Comp.TileSize;
         var edits = new List<(Vector3i Indices, Voxel3D Voxel)>();
         var tiles = _maps.GetAllTilesEnumerator(entity.Owner, entity.Comp, ignoreEmpty: true);
@@ -58,6 +71,7 @@ public sealed class Native3DMapMigrationSystem : EntitySystem
         _grids3D.SetVoxels((entity.Owner, grid3D), edits);
         marker = EnsureComp<Native3DMigratedGridComponent>(entity.Owner);
         marker.Version = Native3DMigratedGridComponent.CurrentVersion;
+        _physics3D.SetBodyType(entity.Owner, bodyType3D);
         _entities3D.PromoteGrid(entity.Owner);
     }
 
@@ -85,5 +99,14 @@ public sealed class Native3DMapMigrationSystem : EntitySystem
                 VoxelFlags3D.DefaultStructure,
                 tile.Variant,
                 tile.RotationMirroring);
+    }
+
+    private static PhysicsBodyType3D ConvertBodyType(BodyType bodyType)
+    {
+        if ((bodyType & BodyType.Dynamic) != 0)
+            return PhysicsBodyType3D.Dynamic;
+        if ((bodyType & BodyType.Static) != 0)
+            return PhysicsBodyType3D.Static;
+        return PhysicsBodyType3D.Kinematic;
     }
 }
