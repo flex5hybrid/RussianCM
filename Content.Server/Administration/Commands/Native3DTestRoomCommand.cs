@@ -129,6 +129,7 @@ public sealed class Native3DTestRoomCommand : IConsoleCommand
         {
             var mesh = entities.EnsureComponent<Mesh3DComponent>(uid);
             mesh.Mesh = meshPath;
+            mesh.AlbedoTexture = "/Textures/Tiles/steel.png";
             mesh.Tint = color;
             mesh.Roughness = 0.62f;
             mesh.Metallic = 0.18f;
