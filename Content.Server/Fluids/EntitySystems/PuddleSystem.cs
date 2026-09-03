@@ -33,6 +33,7 @@ using Robust.Shared.Collections;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Player;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
@@ -66,6 +67,9 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
     [Dependency] private TileFrictionController _tile = default!;
     [Dependency] private IGameTiming _timing = default!;
     [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private SharedTransform3DSystem _transform3D = default!;
+    [Dependency] private SharedMapGrid3DSystem _mapGrid3D = default!;
+    [Dependency] private SharedPhysics3DSystem _physics3D = default!;
     [Dependency] private TurfSystem _turf = default!;
 
     // Using local deletion queue instead of the standard queue so that we can easily "undelete" if a puddle
@@ -95,6 +99,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         SubscribeLocalEvent<EvaporationComponent, MapInitEvent>(OnEvaporationMapInit);
 
         InitializeTransfers();
+        InitializeFluids3D();
     }
 
     private void OnPuddleDecalShutdown(Entity<PuddleDecalVisualsComponent> entity, ref ComponentShutdown args)
@@ -108,6 +113,12 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
 
     private void OnPuddleSpread(Entity<PuddleComponent> entity, ref SpreadNeighborsEvent args)
     {
+        if (HasComp<FluidCell3DComponent>(entity))
+        {
+            RemCompDeferred<ActiveEdgeSpreaderComponent>(entity);
+            return;
+        }
+
         // Overflow is the source of the overflowing liquid. This contains the excess fluid above overflow limit (20u)
         var overflow = GetOverflowSolution(entity.Owner, entity.Comp);
 
@@ -328,6 +339,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         _deletionQueue.Clear();
 
         TickEvaporation();
+        UpdateFluids3D(frameTime);
     }
 
     protected override void OnSolutionUpdate(Entity<PuddleComponent> entity, ref SolutionContainerChangedEvent args)
@@ -347,6 +359,10 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         UpdateSlip((entity, entity.Comp), args.Solution);
         UpdateSlow(entity, args.Solution);
         UpdateEvaporation(entity, args.Solution);
+
+        if (TryComp(entity.Owner, out FluidCell3DComponent? fluid) &&
+            TryComp(fluid.Root, out MapGrid3DComponent? grid))
+            UpdateFluidVisual3D((entity.Owner, fluid), entity.Comp, args.Solution, grid);
     }
 
     private void UpdateSlip(Entity<PuddleComponent> entity, Solution solution)
@@ -651,6 +667,9 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
             puddleUid = EntityUid.Invalid;
             return false;
         }
+
+        if (TrySpillAt3D(uid, transformComponent, solution, out puddleUid, sound))
+            return true;
 
         return TrySpillAt(transformComponent.Coordinates, solution, out puddleUid, sound: sound);
     }
