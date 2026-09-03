@@ -10,6 +10,7 @@ using Content.Shared.Standing;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 
@@ -34,6 +35,8 @@ public abstract partial class SharedBuckleSystem : EntitySystem
     [Dependency] private SharedTransformSystem _transform = default!;
     [Dependency] private StandingStateSystem _standing = default!;
     [Dependency] private SharedPhysicsSystem _physics = default!;
+    [Dependency] private SharedPhysics3DSystem _physics3D = default!;
+    [Dependency] private SharedTransform3DSystem _transform3D = default!;
     [Dependency] private SharedRotationVisualsSystem _rotationVisuals = default!;
     [Dependency] private SharedDoAfterSystem _doAfter = default!;
 
@@ -48,5 +51,23 @@ public abstract partial class SharedBuckleSystem : EntitySystem
         InitializeBuckle();
         InitializeStrap();
         InitializeInteraction();
+    }
+
+    public override void Update(float frameTime)
+    {
+        base.Update(frameTime);
+
+        var query = EntityQueryEnumerator<BuckleComponent, Transform3DComponent>();
+        while (query.MoveNext(out var uid, out var buckle, out _))
+        {
+            if (buckle.BuckledTo is not { } strap || !HasComp<PhysicsBody3DComponent>(uid))
+                continue;
+
+            var position = _transform3D.GetWorldPosition3D(uid);
+            var rotation = _transform3D.GetWorldRotation3D(uid);
+            _physics3D.TeleportBody(uid, position, rotation);
+            if (_physics3D.TryGetVelocity(strap, out var linear, out var angular))
+                _physics3D.SetVelocity(uid, linear, angular);
+        }
     }
 }

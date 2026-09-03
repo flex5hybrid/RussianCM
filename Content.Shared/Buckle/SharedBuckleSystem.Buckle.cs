@@ -295,6 +295,14 @@ public abstract partial class SharedBuckleSystem
             return false;
         }
 
+        if (HasComp<Transform3DComponent>(buckleUid) && HasComp<Transform3DComponent>(strapUid) &&
+            Vector3.DistanceSquared(
+                _transform3D.GetWorldPosition3D(buckleUid),
+                _transform3D.GetWorldPosition3D(strapUid)) > buckleComp.Range * buckleComp.Range)
+        {
+            return false;
+        }
+
         if (!_container.IsInSameOrNoContainer((buckleUid, null, null), (strapUid, null, null)))
             return false;
 
@@ -416,6 +424,36 @@ public abstract partial class SharedBuckleSystem
         var coords = new EntityCoordinates(strap, strap.Comp.BuckleOffset + _rmcBuckle.GetOffset(buckle.Owner));
         _transform.SetCoordinates(buckle, xform, coords, rotation: Angle.Zero);
 
+        if (HasComp<Transform3DComponent>(buckle) || HasComp<Transform3DComponent>(strap))
+        {
+            var rmcOffset = _rmcBuckle.GetOffset(buckle.Owner);
+            var offset3D = strap.Comp.BuckleOffset3D;
+            if (offset3D == Vector3.Zero)
+                offset3D = new Vector3(strap.Comp.BuckleOffset, 0.5f);
+            offset3D += new Vector3(rmcOffset, 0f);
+
+            _transform3D.SetAuthoritative(buckle, true, xform);
+            _transform3D.SetLocalPosition3D(buckle, offset3D, xform);
+            _transform3D.SetRotation3D(
+                buckle,
+                Quaternion.CreateFromAxisAngle(Vector3.UnitZ, (float) strap.Comp.Rotation.Theta));
+
+            if (TryComp(buckle, out PhysicsBody3DComponent? body3D))
+            {
+                buckle.Comp.HadPhysicsBody3D = true;
+                buckle.Comp.PreviousBodyType3D = body3D.BodyType;
+                buckle.Comp.PreviousCanCollide3D = body3D.CanCollide;
+                body3D.BodyType = PhysicsBodyType3D.Kinematic;
+                body3D.CanCollide = false;
+                body3D.LinearVelocity = Vector3.Zero;
+                body3D.AngularVelocity = Vector3.Zero;
+                Dirty(buckle, body3D);
+                _physics3D.RefreshBody(buckle);
+            }
+
+            Dirty(buckle);
+        }
+
         _joints.SetRelay(buckle, strap);
 
         switch (strap.Comp.Position)
@@ -498,6 +536,8 @@ public abstract partial class SharedBuckleSystem
         _audio.PlayPredicted(strap.Comp.UnbuckleSound, strap, user);
 
         var buckledLocation = _transform.GetMoverCoordinates(buckle); //RMC14
+        var hadTransform3D = HasComp<Transform3DComponent>(buckle);
+        var strapHeight3D = hadTransform3D ? _transform3D.GetWorldPosition3D(strap).Z : 0f;
 
         SetBuckledTo(buckle, null);
 
@@ -518,6 +558,27 @@ public abstract partial class SharedBuckleSystem
             {
                 _transform.SetCoordinates(buckle, buckleXform, buckledLocation); //RMC14
             }
+        }
+
+        if (hadTransform3D)
+        {
+            var world2D = _transform.GetWorldPosition(buckle);
+            _transform3D.SetAuthoritative(buckle, true, buckleXform);
+            _transform3D.SetWorldPosition3D(buckle, new Vector3(world2D, strapHeight3D + 0.05f));
+            _transform3D.SetWorldRotation3D(buckle, _transform3D.GetWorldRotation3D(strap));
+
+            if (buckle.Comp.HadPhysicsBody3D && TryComp(buckle, out PhysicsBody3DComponent? body3D))
+            {
+                body3D.BodyType = buckle.Comp.PreviousBodyType3D;
+                body3D.CanCollide = buckle.Comp.PreviousCanCollide3D;
+                body3D.LinearVelocity = Vector3.Zero;
+                body3D.AngularVelocity = Vector3.Zero;
+                Dirty(buckle, body3D);
+                _physics3D.RefreshBody(buckle);
+            }
+
+            buckle.Comp.HadPhysicsBody3D = false;
+            Dirty(buckle);
         }
 
         _rotationVisuals.ResetHorizontalAngle(buckle.Owner);

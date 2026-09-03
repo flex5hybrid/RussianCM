@@ -44,6 +44,13 @@ public sealed partial class StrapComponent : Component
     public Vector2 BuckleOffset = Vector2.Zero;
 
     /// <summary>
+    /// Native local-space seat offset. X/Y fall back to <see cref="BuckleOffset"/> while unmigrated prototypes leave
+    /// this at zero; Z allows seats, beds and vehicle stations to place occupants volumetrically.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public Vector3 BuckleOffset3D = Vector3.Zero;
+
+    /// <summary>
     /// The angle to rotate the player by when they get strapped
     /// </summary>
     [DataField]

@@ -4,6 +4,7 @@ using Content.Shared.Interaction;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
+using Robust.Shared.Physics3D;
 
 namespace Content.Shared.Buckle.Components;
 
@@ -76,6 +77,15 @@ public sealed partial class BuckleComponent : Component
 
     [DataField, AutoNetworkedField]
     public bool ClickUnbuckle = true;
+
+    [AutoNetworkedField]
+    public bool HadPhysicsBody3D;
+
+    [AutoNetworkedField]
+    public PhysicsBodyType3D PreviousBodyType3D;
+
+    [AutoNetworkedField]
+    public bool PreviousCanCollide3D;
 }
 
 public sealed partial class UnbuckleAlertEvent : BaseAlertEvent;
