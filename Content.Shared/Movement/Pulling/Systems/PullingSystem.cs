@@ -77,7 +77,7 @@ public sealed partial class PullingSystem : EntitySystem
         SubscribeLocalEvent<PullableComponent, EntGotInsertedIntoContainerMessage>(OnPullableContainerInsert);
         SubscribeLocalEvent<PullableComponent, ModifyUncuffDurationEvent>(OnModifyUncuffDuration);
         SubscribeLocalEvent<PullableComponent, StopBeingPulledAlertEvent>(OnStopBeingPulledAlert);
-        SubscribeLocalEvent<PhysicsJoint3DComponent, ComponentShutdown>(OnPullJoint3DShutdown);
+        SubscribeLocalEvent<PhysicsJoint3DComponent, EntityTerminatingEvent>(OnPullJoint3DShutdown);
 
         SubscribeLocalEvent<PullerComponent, UpdateMobStateEvent>(OnStateChanged, after: [typeof(MobThresholdSystem)]);
         SubscribeLocalEvent<PullerComponent, AfterAutoHandleStateEvent>(OnAfterState);
@@ -647,7 +647,7 @@ public sealed partial class PullingSystem : EntitySystem
             QueueDel(joint);
     }
 
-    private void OnPullJoint3DShutdown(Entity<PhysicsJoint3DComponent> joint, ref ComponentShutdown args)
+    private void OnPullJoint3DShutdown(Entity<PhysicsJoint3DComponent> joint, ref EntityTerminatingEvent args)
     {
         if (!TryComp(joint.Comp.BodyA, out PullableComponent? pullable) ||
             pullable.PullJoint3D != joint.Owner)
