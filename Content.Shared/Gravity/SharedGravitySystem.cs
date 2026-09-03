@@ -105,6 +105,8 @@ namespace Content.Shared.Gravity
 
         private void OnGravityChange(ref GravityChangedEvent ev)
         {
+            OnGravityChanged(ev.ChangedGridIndex, ev.HasGravity);
+
             var alerts = AllEntityQuery<AlertsComponent, TransformComponent>();
             while(alerts.MoveNext(out var uid, out _, out var xform))
             {
@@ -120,6 +122,10 @@ namespace Content.Shared.Gravity
                     _alerts.ClearAlert(uid, WeightlessAlert);
                 }
             }
+        }
+
+        protected virtual void OnGravityChanged(EntityUid uid, bool enabled)
+        {
         }
 
         private void OnAlertsSync(AlertSyncEvent ev)
