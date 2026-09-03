@@ -35,6 +35,7 @@ public sealed class Native3DTestRoomCommand : IConsoleCommand
         var transforms3D = systems.GetEntitySystem<SharedTransform3DSystem>();
         var physics3D = systems.GetEntitySystem<SharedPhysics3DSystem>();
         var atmosphere3D = systems.GetEntitySystem<AtmosphereSystem>();
+        var lights = systems.GetEntitySystem<SharedPointLightSystem>();
 
         var mapUid = maps.CreateMap(out var mapId);
         entities.EnsureComponent<MapGrid3DComponent>(mapUid);
@@ -51,10 +52,38 @@ public sealed class Native3DTestRoomCommand : IConsoleCommand
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(0f, 7.1f, 1.5f), new Vector3(14f, 0.2f, 3f), new Color(0.21f, 0.29f, 0.39f));
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(2.2f, 1.8f, 0.6f), new Vector3(1.2f, 1.2f, 1.2f), new Color(0.76f, 0.34f, 0.16f));
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(-2.4f, 2.3f, 0.35f), new Vector3(2.4f, 0.8f, 0.7f), new Color(0.24f, 0.62f, 0.56f));
+        SpawnLight(entities, transforms3D, lights, mapId, new Vector3(-3.6f, -1.5f, 2.75f), new Color(0.72f, 0.86f, 1f));
+        SpawnLight(entities, transforms3D, lights, mapId, new Vector3(3.4f, 2.1f, 2.75f), new Color(1f, 0.72f, 0.42f));
 
         transforms.SetCoordinates(player, new EntityCoordinates(mapUid, Vector2.Zero));
         ConfigureCharacter(entities, transforms3D, physics3D, player, new Vector3(0f, -3f, 0.03f));
         shell.WriteLine($"Native 3D room created on map {mapId}. WASD moves, mouse looks, Space jumps, F8 releases/captures the mouse.");
+    }
+
+    private static void SpawnLight(
+        IEntityManager entities,
+        SharedTransform3DSystem transforms3D,
+        SharedPointLightSystem lights,
+        MapId mapId,
+        Vector3 position,
+        Color color)
+    {
+        var uid = entities.SpawnEntity(null, new MapCoordinates(new Vector2(position.X, position.Y), mapId));
+        transforms3D.SetAuthoritative(uid, true);
+        transforms3D.SetWorldPosition3D(uid, position);
+
+        var light = lights.EnsureLight(uid);
+        lights.SetEnabled(uid, true, light);
+        lights.SetColor(uid, color, light);
+        lights.SetRadius(uid, 8f, light);
+        lights.SetEnergy(uid, 1.35f, light);
+        lights.SetCastShadows(uid, true, light);
+        entities.EnsureComponent<PointLight3DComponent>(uid);
+
+        var primitive = entities.EnsureComponent<Primitive3DComponent>(uid);
+        primitive.Size = new Vector3(0.28f, 0.28f, 0.12f);
+        primitive.Color = color;
+        primitive.Dirty(entities);
     }
 
     private static void SpawnBox(
