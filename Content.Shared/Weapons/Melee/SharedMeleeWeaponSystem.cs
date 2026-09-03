@@ -45,10 +45,12 @@ using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
 using Robust.Shared.Map;
+using Robust.Shared.Maths;
 using Robust.Shared.Network;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
@@ -76,6 +78,8 @@ public abstract partial class SharedMeleeWeaponSystem : EntitySystem
     [Dependency] protected SharedCombatModeSystem CombatMode = default!;
     [Dependency] protected SharedInteractionSystem Interaction = default!;
     [Dependency] private   SharedPhysicsSystem _physics = default!;
+    [Dependency] private   SharedPhysics3DSystem _physics3D = default!;
+    [Dependency] private   SharedTransform3DSystem _transform3D = default!;
     [Dependency] protected SharedPopupSystem PopupSystem = default!;
     [Dependency] protected SharedTransformSystem TransformSystem = default!;
     [Dependency] private   SharedStaminaSystem _stamina = default!;
@@ -462,6 +466,9 @@ public abstract partial class SharedMeleeWeaponSystem : EntitySystem
         if (requireCombatMode && !CombatMode.IsInCombatMode(user)) // RMC14
             return false;
 
+        if (TryComp(user, out View3DComponent? view3D) && view3D.Enabled)
+            attack = ReconstructMeleeAttack3D(user, weaponUid, weapon, attack, view3D);
+
         EntityUid? target = null;
         switch (attack)
         {
@@ -575,6 +582,119 @@ public abstract partial class SharedMeleeWeaponSystem : EntitySystem
         weapon.Attacking = true;
         DirtyField(weaponUid, weapon, nameof(MeleeWeaponComponent.Attacking));
         return true;
+    }
+
+    private AttackEvent ReconstructMeleeAttack3D(
+        EntityUid user,
+        EntityUid weaponUid,
+        MeleeWeaponComponent weapon,
+        AttackEvent attack,
+        View3DComponent view)
+    {
+        var transform = Transform(user);
+        var origin = _transform3D.GetWorldPosition3D(user, transform) + Vector3.UnitZ * MathF.Min(view.EyeHeight, 1.2f);
+        var horizontal = MathF.Cos(view.Pitch);
+        var direction = Vector3.Normalize(new Vector3(
+            MathF.Sin(view.Yaw) * horizontal,
+            MathF.Cos(view.Yaw) * horizontal,
+            MathF.Sin(view.Pitch)));
+        var range = weapon.Range;
+        var targetPoint = origin + direction * range;
+        var coordinates = ToLegacyMeleeCoordinates(transform, targetPoint);
+
+        switch (attack)
+        {
+            case LightAttackEvent:
+            {
+                EntityUid? target = null;
+                if (_physics3D.SweepSphere(
+                        transform.MapID,
+                        0.22f,
+                        origin,
+                        direction * range,
+                        AttackMask,
+                        user,
+                        false,
+                        out var hit))
+                {
+                    target = hit.Entity;
+                    coordinates = ToLegacyMeleeCoordinates(transform, hit.Position);
+                }
+
+                return new LightAttackEvent(GetNetEntity(target), GetNetEntity(weaponUid), GetNetCoordinates(coordinates));
+            }
+            case DisarmAttackEvent:
+            {
+                EntityUid? target = null;
+                if (_physics3D.SweepSphere(
+                        transform.MapID,
+                        0.22f,
+                        origin,
+                        direction * range,
+                        AttackMask,
+                        user,
+                        false,
+                        out var hit))
+                {
+                    target = hit.Entity;
+                    coordinates = ToLegacyMeleeCoordinates(transform, hit.Position);
+                }
+
+                return new DisarmAttackEvent(GetNetEntity(target), GetNetCoordinates(coordinates));
+            }
+            case HeavyAttackEvent:
+            {
+                var candidates = new List<PhysicsOverlap3D>();
+                var center = origin + direction * (range * 0.5f);
+                _physics3D.GetAabbOverlaps(
+                    transform.MapID,
+                    Box3.CenteredAround(center, new Vector3(range * 2f)),
+                    AttackMask,
+                    user,
+                    false,
+                    candidates);
+
+                var targets = new List<NetEntity>();
+                var cosine = MathF.Cos((float) weapon.Angle.Theta * 0.5f);
+                foreach (var candidate in candidates)
+                {
+                    var toTarget = candidate.Bounds.Center - origin;
+                    var distance = toTarget.Length();
+                    if (distance < 1e-4f || distance > range + 0.35f ||
+                        Vector3.Dot(toTarget / distance, direction) < cosine)
+                    {
+                        continue;
+                    }
+
+                    if (!_physics3D.TryRayCast(
+                            transform.MapID,
+                            new Ray3D(origin, toTarget),
+                            distance + 0.05f,
+                            AttackMask,
+                            user,
+                            false,
+                            out var hit) ||
+                        hit.Entity != candidate.Entity)
+                    {
+                        continue;
+                    }
+
+                    var netEntity = GetNetEntity(candidate.Entity);
+                    if (!targets.Contains(netEntity))
+                        targets.Add(netEntity);
+                }
+
+                return new HeavyAttackEvent(GetNetEntity(weaponUid), targets, GetNetCoordinates(coordinates));
+            }
+            default:
+                return attack;
+        }
+    }
+
+    private EntityCoordinates ToLegacyMeleeCoordinates(TransformComponent userTransform, Vector3 position)
+    {
+        var mapPoint = new MapCoordinates(new Vector2(position.X, position.Y), userTransform.MapID);
+        return TransformSystem.ToCoordinates(userTransform.ParentUid, mapPoint);
     }
 
     private void SyncUserMeleeCooldown(EntityUid user, EntityUid weaponUid, TimeSpan nextAttack)
