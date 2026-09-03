@@ -34,17 +34,25 @@ public sealed class Native3DTestRoomCommand : IConsoleCommand
         var transforms = systems.GetEntitySystem<SharedTransformSystem>();
         var transforms3D = systems.GetEntitySystem<SharedTransform3DSystem>();
         var physics3D = systems.GetEntitySystem<SharedPhysics3DSystem>();
+        var mapGrid3D = systems.GetEntitySystem<SharedMapGrid3DSystem>();
         var atmosphere3D = systems.GetEntitySystem<AtmosphereSystem>();
         var lights = systems.GetEntitySystem<SharedPointLightSystem>();
 
         var mapUid = maps.CreateMap(out var mapId);
-        entities.EnsureComponent<MapGrid3DComponent>(mapUid);
+        var nativeGrid = entities.EnsureComponent<MapGrid3DComponent>(mapUid);
+        transforms3D.SetAuthoritative(mapUid, true);
+        var tileDefinitions = IoCManager.Resolve<ITileDefinitionManager>();
+        var floorVoxel = new Voxel3D(tileDefinitions["FloorSteel"].TileId, VoxelFlags3D.DefaultStructure);
+        var floorEdits = new List<(Vector3i Indices, Voxel3D Voxel)>();
+        for (var y = -7; y < 7; y++)
+        for (var x = -7; x < 7; x++)
+            floorEdits.Add((new Vector3i(x, y, -1), floorVoxel));
+        mapGrid3D.SetVoxels((mapUid, nativeGrid), floorEdits);
         atmosphere3D.AddAtmosphereRegion3D(
             mapUid,
             new Vector3i(-7, -7, 0),
             new Vector3i(6, 6, 2),
             sealedBoundary: true);
-        SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(0f, 0f, -0.1f), new Vector3(14f, 14f, 0.2f), new Color(0.18f, 0.24f, 0.31f));
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(0f, 0f, 3.1f), new Vector3(14f, 14f, 0.2f), new Color(0.10f, 0.14f, 0.19f));
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(-7.1f, 0f, 1.5f), new Vector3(0.2f, 14f, 3f), new Color(0.24f, 0.32f, 0.42f));
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(7.1f, 0f, 1.5f), new Vector3(0.2f, 14f, 3f), new Color(0.24f, 0.32f, 0.42f));
