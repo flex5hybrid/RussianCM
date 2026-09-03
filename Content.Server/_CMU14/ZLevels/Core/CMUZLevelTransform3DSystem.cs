@@ -39,7 +39,10 @@ public sealed class CMUZLevelTransform3DSystem : EntitySystem
 
     private void ApplyDepth(EntityUid mapUid, int depth)
     {
-        _transform3D.SetWorldZ(
+        // CMU z-levels are separate map roots. A map root has no parent, so attempting to
+        // set a legacy world position asserts in SharedTransformSystem. In the 3D hierarchy
+        // world Z and local Z are identical for a root entity.
+        _transform3D.SetLocalZ(
             mapUid,
             depth * CMUWorld3DSpatialConstants.ZLevelSpacing);
     }
