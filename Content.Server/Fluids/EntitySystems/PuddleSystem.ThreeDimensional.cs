@@ -1,5 +1,7 @@
+using System.Linq;
 using System.Numerics;
 using Content.Server.Fluids.Components;
+using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.Reaction;
@@ -255,7 +257,7 @@ public sealed partial class PuddleSystem
 
     private bool IsFluidCellBlocked3D(Entity<MapGrid3DComponent> grid, Vector3i cell)
     {
-        var voxel = _mapGrid3D.GetVoxel(grid, cell);
+        var voxel = _mapGrid3D.GetVoxel(grid.AsNullable(), cell);
         return (voxel.Flags & VoxelFlags3D.Solid) != 0;
     }
 

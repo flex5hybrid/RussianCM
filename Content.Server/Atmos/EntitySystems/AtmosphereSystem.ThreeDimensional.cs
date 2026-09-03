@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Numerics;
 using Content.Server.Atmos.Components;
 using Content.Shared.Atmos;
@@ -150,7 +151,7 @@ public sealed partial class AtmosphereSystem
 
     private bool IsAtmosphereBlocked3D(Entity<MapGrid3DComponent> grid, Vector3i indices)
     {
-        var voxel = _mapGrid3D.GetVoxel(grid, indices);
+        var voxel = _mapGrid3D.GetVoxel(grid.AsNullable(), indices);
         return (voxel.Flags & (VoxelFlags3D.Solid | VoxelFlags3D.Airtight)) != 0;
     }
 

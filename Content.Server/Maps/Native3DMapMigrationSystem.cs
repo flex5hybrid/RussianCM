@@ -63,9 +63,12 @@ public sealed class Native3DMapMigrationSystem : EntitySystem
         var tiles = _maps.GetAllTilesEnumerator(entity.Owner, entity.Comp, ignoreEmpty: true);
         while (tiles.MoveNext(out var tile))
         {
+            if (tile is not { } tileRef)
+                continue;
+
             edits.Add((
-                new Vector3i(tile.GridIndices.X, tile.GridIndices.Y, -1),
-                ConvertTile(tile.Tile)));
+                new Vector3i(tileRef.GridIndices.X, tileRef.GridIndices.Y, -1),
+                ConvertTile(tileRef.Tile)));
         }
 
         _grids3D.SetVoxels((entity.Owner, grid3D), edits);
