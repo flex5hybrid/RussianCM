@@ -3,6 +3,7 @@ using System.Linq;
 using Content.Server.Administration.Managers;
 using Content.Server.NodeContainer.NodeGroups;
 using Content.Server.NodeContainer.Nodes;
+using Content.Server.Power.Nodes;
 using Content.Shared.Administration;
 using Content.Shared.NodeContainer;
 using Content.Shared.NodeContainer.NodeGroups;
@@ -26,6 +27,7 @@ namespace Content.Server.NodeContainer.EntitySystems
         [Dependency] private IAdminManager _adminManager = default!;
         [Dependency] private INodeGroupFactory _nodeGroupFactory = default!;
         [Dependency] private ILogManager _logManager = default!;
+        [Dependency] private SharedTransform3DSystem _transform3D = default!;
 
         private readonly List<int> _visDeletes = new();
         private readonly List<BaseNodeGroup> _visSends = new();
@@ -357,6 +359,18 @@ namespace Content.Server.NodeContainer.EntitySystems
             if (!node.Connectable(EntityManager, xform))
                 yield break;
 
+            if (_transform3D.IsAuthoritative(node.Owner))
+            {
+                foreach (var reachable in GetReachableNodes3D(node, xform))
+                {
+                    if (reachable.NodeGroupID == node.NodeGroupID &&
+                        reachable.Connectable(EntityManager, xformQuery.GetComponent(reachable.Owner)))
+                        yield return reachable;
+                }
+
+                yield break;
+            }
+
             foreach (var reachable in node.GetReachableNodes(xform, nodeQuery, xformQuery, grid, EntityManager))
             {
                 DebugTools.Assert(reachable != node, "GetReachableNodes() should not include self.");
@@ -367,6 +381,76 @@ namespace Content.Server.NodeContainer.EntitySystems
                     yield return reachable;
                 }
             }
+        }
+
+        private List<Node> GetReachableNodes3D(
+            Node node,
+            TransformComponent transform)
+        {
+            var reachable = new List<Node>();
+            var root = transform.GridUid ?? transform.MapUid;
+            if (root is null)
+                return reachable;
+
+            var sourcePort = GetNodePort3D(node);
+            var sourcePose = GetNodePortWorldPose3D(node.Owner, sourcePort);
+            var query = EntityQueryEnumerator<NodeContainerComponent, TransformComponent, Transform3DComponent>();
+            while (query.MoveNext(out var candidateUid, out var container, out var candidateTransform, out var candidateTransform3D))
+            {
+                if (!candidateTransform3D.IsAuthoritative ||
+                    (candidateTransform.GridUid ?? candidateTransform.MapUid) != root)
+                    continue;
+
+                foreach (var candidate in container.Nodes.Values)
+                {
+                    if (candidate == node || candidate.NodeGroupID != node.NodeGroupID)
+                        continue;
+
+                    var candidatePort = GetNodePort3D(candidate);
+                    var candidatePose = GetNodePortWorldPose3D(candidateUid, candidatePort);
+                    var maximumGap = MathF.Max(0f, sourcePort.Reach) + MathF.Max(0f, candidatePort.Reach) + 0.01f;
+                    if (Vector3.DistanceSquared(sourcePose.Position, candidatePose.Position) > maximumGap * maximumGap)
+                        continue;
+
+                    if (sourcePose.Direction != Vector3.Zero && candidatePose.Direction != Vector3.Zero &&
+                        Vector3.Dot(sourcePose.Direction, candidatePose.Direction) > -0.5f)
+                        continue;
+
+                    reachable.Add(candidate);
+                }
+            }
+
+            return reachable;
+        }
+
+        private NodePort3D GetNodePort3D(Node node)
+        {
+            if (TryComp(node.Owner, out NodePort3DComponent? ports) &&
+                ports.Ports.TryGetValue(node.Name, out var port))
+                return port;
+
+            // Migration defaults preserve same-cell device attachment and allow cables/pipes to span all six axes.
+            var reach = node switch
+            {
+                CableNode => 0.51f,
+                CableTerminalNode => 0.51f,
+                PipeNode => 0.51f,
+                _ => 0.05f,
+            };
+            return new NodePort3D { Reach = reach };
+        }
+
+        private (Vector3 Position, Vector3 Direction) GetNodePortWorldPose3D(EntityUid owner, NodePort3D port)
+        {
+            var rotation = _transform3D.GetWorldRotation3D(owner);
+            var position = _transform3D.GetWorldPosition3D(owner) + Vector3.Transform(port.Offset, rotation);
+            var direction = Vector3.Transform(port.Direction, rotation);
+            if (direction.LengthSquared() > 1e-6f)
+                direction = Vector3.Normalize(direction);
+            else
+                direction = Vector3.Zero;
+
+            return (position, direction);
         }
 
         private void VisDoUpdate(float frametime)

@@ -28,6 +28,8 @@ namespace Content.Server.NodeContainer.EntitySystems
             SubscribeLocalEvent<NodeContainerComponent, AnchorStateChangedEvent>(OnAnchorStateChanged);
             SubscribeLocalEvent<NodeContainerComponent, ReAnchorEvent>(OnReAnchor);
             SubscribeLocalEvent<NodeContainerComponent, MoveEvent>(OnMoveEvent);
+            SubscribeLocalEvent<NodeContainerComponent, Transform3DPositionChangedEvent>(OnMove3D);
+            SubscribeLocalEvent<NodeContainerComponent, Transform3DRotationChangedEvent>(OnRotate3D);
             SubscribeLocalEvent<NodeContainerComponent, ExaminedEvent>(OnExamine);
 
             _query = GetEntityQuery<NodeContainerComponent>();
@@ -196,6 +198,25 @@ namespace Content.Server.NodeContainer.EntitySystems
 
                 if (rotatableNode.RotateNode(in ev))
                     _nodeGroupSystem.QueueReflood(node);
+            }
+        }
+
+        private void OnMove3D(EntityUid uid, NodeContainerComponent container, ref Transform3DPositionChangedEvent args)
+        {
+            QueueTopologyRefresh3D(container);
+        }
+
+        private void OnRotate3D(EntityUid uid, NodeContainerComponent container, ref Transform3DRotationChangedEvent args)
+        {
+            QueueTopologyRefresh3D(container);
+        }
+
+        private void QueueTopologyRefresh3D(NodeContainerComponent container)
+        {
+            foreach (var node in container.Nodes.Values)
+            {
+                _nodeGroupSystem.QueueNodeRemove(node);
+                _nodeGroupSystem.QueueReflood(node);
             }
         }
 
