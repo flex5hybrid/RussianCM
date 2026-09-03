@@ -1,6 +1,9 @@
 using System;
 using System.Numerics;
+using Content.Server.Fluids.Components;
 using Content.Server.Maps.Components;
+using Content.Shared.Projectiles;
+using Content.Shared.Throwing;
 using Robust.Shared.GameObjects;
 using Robust.Shared.IoC;
 using Robust.Shared.Map.Components;
@@ -28,6 +31,24 @@ public sealed class Native3DEntityMigrationSystem : EntitySystem
         SubscribeLocalEvent<MapGrid3DComponent, MapInitEvent>(OnGridMapInit);
         SubscribeLocalEvent<PhysicsComponent, MapInitEvent>(OnPhysicsMapInit);
         SubscribeLocalEvent<PhysicsComponent, EntParentChangedMessage>(OnPhysicsParentChanged);
+        SubscribeLocalEvent<ProjectileComponent, ComponentStartup>(OnProjectile3DHandlerAdded);
+        SubscribeLocalEvent<ThrownItemComponent, ComponentStartup>(OnThrown3DHandlerAdded);
+        SubscribeLocalEvent<FluidCell3DComponent, ComponentStartup>(OnFluid3DHandlerAdded);
+    }
+
+    private void OnProjectile3DHandlerAdded(Entity<ProjectileComponent> entity, ref ComponentStartup args) =>
+        DisableLegacyCollisionEvents(entity.Owner);
+
+    private void OnThrown3DHandlerAdded(Entity<ThrownItemComponent> entity, ref ComponentStartup args) =>
+        DisableLegacyCollisionEvents(entity.Owner);
+
+    private void OnFluid3DHandlerAdded(Entity<FluidCell3DComponent> entity, ref ComponentStartup args) =>
+        DisableLegacyCollisionEvents(entity.Owner);
+
+    private void DisableLegacyCollisionEvents(EntityUid uid)
+    {
+        if (TryComp(uid, out LegacyPhysics3DBridgeComponent? bridge))
+            bridge.RaiseLegacyEvents = false;
     }
 
     private void OnGridMapInit(Entity<MapGrid3DComponent> grid, ref MapInitEvent args)
@@ -87,15 +108,21 @@ public sealed class Native3DEntityMigrationSystem : EntitySystem
 
         var collider3D = EnsureComp<Collider3DComponent>(entity.Owner);
         collider3D.Shapes.Clear();
+        var bridge = EnsureComp<LegacyPhysics3DBridgeComponent>(entity.Owner);
+        bridge.ShapeFixtureIds.Clear();
+        bridge.RaiseLegacyEvents = !HasComp<ProjectileComponent>(entity.Owner) &&
+                                   !HasComp<ThrownItemComponent>(entity.Owner) &&
+                                   !HasComp<FluidCell3DComponent>(entity.Owner);
         if (isCharacter)
-            AddCharacterShape(collider3D, entity.Comp2, height);
+            AddCharacterShape(collider3D, bridge, entity.Comp2, height);
         else
-            AddExtrudedFixtureShapes(collider3D, entity.Comp2, height);
+            AddExtrudedFixtureShapes(collider3D, bridge, entity.Comp2, height);
 
         if (collider3D.Shapes.Count == 0)
         {
             RemCompDeferred<PhysicsBody3DComponent>(entity.Owner);
             RemCompDeferred<Collider3DComponent>(entity.Owner);
+            RemCompDeferred<LegacyPhysics3DBridgeComponent>(entity.Owner);
             return;
         }
 
@@ -109,7 +136,11 @@ public sealed class Native3DEntityMigrationSystem : EntitySystem
         _physics3D.RefreshBody(entity.Owner);
     }
 
-    private static void AddCharacterShape(Collider3DComponent collider, FixturesComponent fixtures, float height)
+    private static void AddCharacterShape(
+        Collider3DComponent collider,
+        LegacyPhysics3DBridgeComponent bridge,
+        FixturesComponent fixtures,
+        float height)
     {
         var bounds = GetFixtureBounds(fixtures);
         var radius = Math.Clamp(MathF.Max(bounds.Width, bounds.Height) * 0.45f, 0.22f, 0.42f);
@@ -123,11 +154,20 @@ public sealed class Native3DEntityMigrationSystem : EntitySystem
             CollisionMask = GetCollisionMask(fixtures),
             Friction = 0f,
         });
+        foreach (var fixture in fixtures.Fixtures)
+        {
+            bridge.ShapeFixtureIds.Add(fixture.Key);
+            break;
+        }
     }
 
-    private static void AddExtrudedFixtureShapes(Collider3DComponent collider, FixturesComponent fixtures, float height)
+    private static void AddExtrudedFixtureShapes(
+        Collider3DComponent collider,
+        LegacyPhysics3DBridgeComponent bridge,
+        FixturesComponent fixtures,
+        float height)
     {
-        foreach (var fixture in fixtures.Fixtures.Values)
+        foreach (var (fixtureId, fixture) in fixtures.Fixtures)
         {
             for (var child = 0; child < fixture.Shape.ChildCount; child++)
             {
@@ -144,6 +184,7 @@ public sealed class Native3DEntityMigrationSystem : EntitySystem
                     Friction = fixture.Friction,
                     Restitution = fixture.Restitution,
                 });
+                bridge.ShapeFixtureIds.Add(fixtureId);
             }
         }
     }

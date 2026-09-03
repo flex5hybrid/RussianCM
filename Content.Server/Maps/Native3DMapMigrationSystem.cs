@@ -6,6 +6,9 @@ using Robust.Shared.IoC;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Maths;
+using Robust.Shared.Physics.Components;
+using Robust.Shared.Physics.Systems;
+using Robust.Shared.Physics3D;
 
 namespace Content.Server.Maps;
 
@@ -19,6 +22,7 @@ public sealed class Native3DMapMigrationSystem : EntitySystem
     [Dependency] private SharedMapSystem _maps = default!;
     [Dependency] private SharedMapGrid3DSystem _grids3D = default!;
     [Dependency] private SharedTransform3DSystem _transforms3D = default!;
+    [Dependency] private SharedPhysicsSystem _physics2D = default!;
     [Dependency] private Native3DEntityMigrationSystem _entities3D = default!;
 
     public override void Initialize()
@@ -30,12 +34,16 @@ public sealed class Native3DMapMigrationSystem : EntitySystem
 
     private void OnGridMapInit(Entity<MapGridComponent> entity, ref MapInitEvent args)
     {
+        _transforms3D.SetAuthoritative(entity.Owner, true);
+        EnsureComp<LegacyPhysics3DBridgeComponent>(entity.Owner);
+        if (TryComp(entity.Owner, out PhysicsComponent? legacyBody))
+            _physics2D.SetCanCollide(entity.Owner, false, body: legacyBody);
+
         if (TryComp(entity.Owner, out Native3DMigratedGridComponent? marker) &&
             marker.Version == Native3DMigratedGridComponent.CurrentVersion &&
             HasComp<MapGrid3DComponent>(entity.Owner))
             return;
 
-        _transforms3D.SetAuthoritative(entity.Owner, true);
         var grid3D = EnsureComp<MapGrid3DComponent>(entity.Owner);
         grid3D.CellSize = entity.Comp.TileSize;
         var edits = new List<(Vector3i Indices, Voxel3D Voxel)>();
