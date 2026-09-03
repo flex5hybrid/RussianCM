@@ -45,9 +45,10 @@ public sealed partial class PuddleSystem
             return false;
 
         var world = _transform3D.GetWorldPosition3D(source, transform);
+        GetGravityDirections3D(rootUid, source, out _, out var worldDown);
         if (_physics3D.TryRayCast(
                 transform.MapID,
-                new Ray3D(world + Vector3.UnitZ * 0.05f, -Vector3.UnitZ),
+                new Ray3D(world - worldDown * 0.05f, worldDown),
                 64f,
                 int.MaxValue,
                 source,
@@ -148,7 +149,8 @@ public sealed partial class PuddleSystem
             return;
 
         var mapId = Transform(uid).MapID;
-        var below = fluid.Cell + Vector3i.Down;
+        GetGravityDirections3D(fluid.Root, uid, out var cellDown, out _);
+        var below = fluid.Cell + cellDown;
         if (!HasImmediateSupport3D(fluid.Root, grid, fluid.Cell, mapId, uid))
         {
             if (!HasGroundBelow3D(fluid.Root, grid, fluid.Cell, mapId, uid))
@@ -217,13 +219,14 @@ public sealed partial class PuddleSystem
         MapId mapId,
         EntityUid ignored)
     {
-        if (IsFluidCellBlocked3D((root, grid), cell + Vector3i.Down))
+        GetGravityDirections3D(root, ignored, out var cellDown, out var worldDown);
+        if (IsFluidCellBlocked3D((root, grid), cell + cellDown))
             return true;
 
         var center = _mapGrid3D.CellToWorld((root, grid), cell);
         return _physics3D.TryRayCast(
             mapId,
-            new Ray3D(center, -Vector3.UnitZ),
+            new Ray3D(center, worldDown),
             MathF.Max(grid.CellSize * 0.6f, 0.1f),
             int.MaxValue,
             ignored,
@@ -239,9 +242,10 @@ public sealed partial class PuddleSystem
         EntityUid ignored)
     {
         var center = _mapGrid3D.CellToWorld((root, grid), cell);
+        GetGravityDirections3D(root, ignored, out _, out var worldDown);
         return _physics3D.TryRayCast(
             mapId,
-            new Ray3D(center, -Vector3.UnitZ),
+            new Ray3D(center, worldDown),
             64f,
             int.MaxValue,
             ignored,
@@ -264,7 +268,8 @@ public sealed partial class PuddleSystem
         var fill = Math.Clamp(solution.Volume.Float() / MathF.Max(puddle.OverflowVolume.Float(), 0.01f), 0.02f, 1f);
         var height = MathF.Max(grid.CellSize * fill, 0.02f);
         var cellCenter = _mapGrid3D.CellToWorld((entity.Comp.Root, grid), entity.Comp.Cell);
-        var belowCenter = _mapGrid3D.CellToWorld((entity.Comp.Root, grid), entity.Comp.Cell + Vector3i.Down);
+        GetGravityDirections3D(entity.Comp.Root, entity.Owner, out var cellDown, out _);
+        var belowCenter = _mapGrid3D.CellToWorld((entity.Comp.Root, grid), entity.Comp.Cell + cellDown);
         var up = cellCenter - belowCenter;
         up = up.LengthSquared() > 1e-6f ? Vector3.Normalize(up) : Vector3.UnitZ;
         var bottom = cellCenter - up * grid.CellSize * 0.5f;
@@ -307,5 +312,23 @@ public sealed partial class PuddleSystem
                 FixedPoint2.Min(solution.Volume, FixedPoint2.New(1)));
             _reactive.DoEntityReaction(args.OtherEntity, touch, ReactionMethod.Touch);
         }
+    }
+
+    private void GetGravityDirections3D(
+        EntityUid root,
+        EntityUid subject,
+        out Vector3i cellDown,
+        out Vector3 worldDown)
+    {
+        var gravity = _physics3D.GetGravity(subject);
+        worldDown = gravity.LengthSquared() > 1e-8f ? Vector3.Normalize(gravity) : -Vector3.UnitZ;
+        var localDown = Vector3.Transform(worldDown, Quaternion.Inverse(_transform3D.GetWorldRotation3D(root)));
+        var absolute = Vector3.Abs(localDown);
+        if (absolute.X >= absolute.Y && absolute.X >= absolute.Z)
+            cellDown = localDown.X >= 0f ? Vector3i.East : Vector3i.West;
+        else if (absolute.Y >= absolute.Z)
+            cellDown = localDown.Y >= 0f ? Vector3i.North : Vector3i.South;
+        else
+            cellDown = localDown.Z >= 0f ? Vector3i.Up : Vector3i.Down;
     }
 }

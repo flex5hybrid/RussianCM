@@ -1,6 +1,7 @@
 using Content.Shared.Gravity;
 using JetBrains.Annotations;
 using Robust.Shared.Map.Components;
+using Robust.Shared.Physics3D;
 
 namespace Content.Server.Gravity
 {
@@ -11,6 +12,7 @@ namespace Content.Server.Gravity
         {
             base.Initialize();
             SubscribeLocalEvent<GravityComponent, ComponentInit>(OnGravityInit);
+            SubscribeLocalEvent<GravityChangedEvent>(OnGravityChanged3D);
         }
 
         /// <summary>
@@ -52,6 +54,22 @@ namespace Content.Server.Gravity
         private void OnGravityInit(EntityUid uid, GravityComponent component, ComponentInit args)
         {
             RefreshGravity(uid);
+            SynchronizeGravity3D(uid, component.Enabled);
+        }
+
+        private void OnGravityChanged3D(ref GravityChangedEvent args)
+        {
+            SynchronizeGravity3D(args.ChangedGridIndex, args.HasGravity);
+        }
+
+        private void SynchronizeGravity3D(EntityUid uid, bool enabled)
+        {
+            var field = EnsureComp<GravityField3DComponent>(uid);
+            if (field.Enabled == enabled)
+                return;
+
+            field.Enabled = enabled;
+            Dirty(uid, field);
         }
 
         /// <summary>
