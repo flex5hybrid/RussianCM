@@ -50,7 +50,15 @@ public sealed class Native3DTestRoomCommand : IConsoleCommand
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(7.1f, 0f, 1.5f), new Vector3(0.2f, 14f, 3f), new Color(0.24f, 0.32f, 0.42f));
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(0f, -7.1f, 1.5f), new Vector3(14f, 0.2f, 3f), new Color(0.21f, 0.29f, 0.39f));
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(0f, 7.1f, 1.5f), new Vector3(14f, 0.2f, 3f), new Color(0.21f, 0.29f, 0.39f));
-        SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(2.2f, 1.8f, 0.6f), new Vector3(1.2f, 1.2f, 1.2f), new Color(0.76f, 0.34f, 0.16f));
+        SpawnBox(
+            entities,
+            transforms3D,
+            physics3D,
+            mapId,
+            new Vector3(2.2f, 1.8f, 0.6f),
+            new Vector3(1.2f, 1.2f, 1.2f),
+            new Color(0.76f, 0.34f, 0.16f),
+            "/Models/Native3D/validation_barrel.obj");
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(-2.4f, 2.3f, 0.35f), new Vector3(2.4f, 0.8f, 0.7f), new Color(0.24f, 0.62f, 0.56f));
         SpawnLight(entities, transforms3D, lights, mapId, new Vector3(-3.6f, -1.5f, 2.75f), new Color(0.72f, 0.86f, 1f));
         SpawnLight(entities, transforms3D, lights, mapId, new Vector3(3.4f, 2.1f, 2.75f), new Color(1f, 0.72f, 0.42f));
@@ -93,7 +101,8 @@ public sealed class Native3DTestRoomCommand : IConsoleCommand
         MapId mapId,
         Vector3 position,
         Vector3 size,
-        Color color)
+        Color color,
+        string? meshPath = null)
     {
         var uid = entities.SpawnEntity(null, new MapCoordinates(new Vector2(position.X, position.Y), mapId));
         transforms3D.SetAuthoritative(uid, true);
@@ -116,6 +125,15 @@ public sealed class Native3DTestRoomCommand : IConsoleCommand
         var primitive = entities.EnsureComponent<Primitive3DComponent>(uid);
         primitive.Size = size;
         primitive.Color = color;
+        if (meshPath is not null)
+        {
+            var mesh = entities.EnsureComponent<Mesh3DComponent>(uid);
+            mesh.Mesh = meshPath;
+            mesh.Tint = color;
+            mesh.Roughness = 0.62f;
+            mesh.Metallic = 0.18f;
+            mesh.Dirty(entities);
+        }
         body.Dirty(entities);
         collider.Dirty(entities);
         primitive.Dirty(entities);
