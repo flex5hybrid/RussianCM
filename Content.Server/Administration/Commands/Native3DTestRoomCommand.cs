@@ -1,7 +1,9 @@
 using System.Numerics;
 using Content.Shared.Administration;
+using Content.Server.Atmos.EntitySystems;
 using Robust.Shared.Console;
 using Robust.Shared.Map;
+using Robust.Shared.Map.Components;
 using Robust.Shared.Maths;
 using Robust.Shared.Physics3D;
 
@@ -32,8 +34,15 @@ public sealed class Native3DTestRoomCommand : IConsoleCommand
         var transforms = systems.GetEntitySystem<SharedTransformSystem>();
         var transforms3D = systems.GetEntitySystem<SharedTransform3DSystem>();
         var physics3D = systems.GetEntitySystem<SharedPhysics3DSystem>();
+        var atmosphere3D = systems.GetEntitySystem<AtmosphereSystem>();
 
         var mapUid = maps.CreateMap(out var mapId);
+        entities.EnsureComponent<MapGrid3DComponent>(mapUid);
+        atmosphere3D.AddAtmosphereRegion3D(
+            mapUid,
+            new Vector3i(-7, -7, 0),
+            new Vector3i(6, 6, 2),
+            sealedBoundary: true);
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(0f, 0f, -0.1f), new Vector3(14f, 14f, 0.2f), new Color(0.18f, 0.24f, 0.31f));
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(0f, 0f, 3.1f), new Vector3(14f, 14f, 0.2f), new Color(0.10f, 0.14f, 0.19f));
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(-7.1f, 0f, 1.5f), new Vector3(0.2f, 14f, 3f), new Color(0.24f, 0.32f, 0.42f));

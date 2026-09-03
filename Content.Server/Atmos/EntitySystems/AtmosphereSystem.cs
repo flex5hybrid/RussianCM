@@ -33,6 +33,9 @@ public sealed partial class AtmosphereSystem : SharedAtmosphereSystem
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedMapSystem _mapSystem = default!;
     [Dependency] private SharedTransformSystem _transformSystem = default!;
+    [Dependency] private SharedTransform3DSystem _transform3D = default!;
+    [Dependency] private SharedMapGrid3DSystem _mapGrid3D = default!;
+    [Dependency] private SharedPhysics3DSystem _physics3D = default!;
     [Dependency] private TileSystem _tile = default!;
     [Dependency] private MapSystem _map = default!;
     [Dependency] public PuddleSystem Puddle = default!;
@@ -58,6 +61,7 @@ public sealed partial class AtmosphereSystem : SharedAtmosphereSystem
         InitializeCommands();
         InitializeCVars();
         InitializeGridAtmosphere();
+        InitializeAtmosphere3D();
         InitializeMap();
 
         _mapAtmosQuery = GetEntityQuery<MapAtmosphereComponent>();
@@ -97,6 +101,7 @@ public sealed partial class AtmosphereSystem : SharedAtmosphereSystem
         base.Update(frameTime);
 
         UpdateProcessing(frameTime);
+        UpdateAtmosphere3D(frameTime);
         UpdateHighPressure(frameTime);
 
         _exposedTimer += frameTime;

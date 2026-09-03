@@ -18,6 +18,9 @@ public sealed partial class IgnitionSourceSystem : SharedIgnitionSourceSystem
             if (!comp.Ignited)
                 continue;
 
+            if (_atmosphere.HotspotExpose3D(uid, comp.Temperature, 50f))
+                continue;
+
             if (xform.GridUid is { } gridUid)
             {
                 var position = _transform.GetGridOrMapTilePosition(uid, xform);
