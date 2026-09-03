@@ -62,10 +62,37 @@ public sealed class Native3DTestRoomCommand : IConsoleCommand
         SpawnBox(entities, transforms3D, physics3D, mapId, new Vector3(-2.4f, 2.3f, 0.35f), new Vector3(2.4f, 0.8f, 0.7f), new Color(0.24f, 0.62f, 0.56f));
         SpawnLight(entities, transforms3D, lights, mapId, new Vector3(-3.6f, -1.5f, 2.75f), new Color(0.72f, 0.86f, 1f));
         SpawnLight(entities, transforms3D, lights, mapId, new Vector3(3.4f, 2.1f, 2.75f), new Color(1f, 0.72f, 0.42f));
+        SpawnVisualEffects(entities, transforms3D, mapId);
 
         transforms.SetCoordinates(player, new EntityCoordinates(mapUid, Vector2.Zero));
         ConfigureCharacter(entities, transforms3D, physics3D, player, new Vector3(0f, -3f, 0.03f));
         shell.WriteLine($"Native 3D room created on map {mapId}. WASD moves, mouse looks, Space jumps, F8 releases/captures the mouse.");
+    }
+
+    private static void SpawnVisualEffects(IEntityManager entities, SharedTransform3DSystem transforms3D, MapId mapId)
+    {
+        var decalUid = entities.SpawnEntity(null, new MapCoordinates(new Vector2(-0.4f, 1.1f), mapId));
+        transforms3D.SetAuthoritative(decalUid, true);
+        transforms3D.SetWorldPosition3D(decalUid, new Vector3(-0.4f, 1.1f, 0.005f));
+        var decal = entities.EnsureComponent<Decal3DComponent>(decalUid);
+        decal.Texture = "/Textures/Decals/syndlogo.rsi/syndlogo1.png";
+        decal.Size = new Vector2(1.6f, 1.6f);
+        decal.Color = new Color(0.72f, 0.78f, 0.88f, 0.72f);
+        decal.Dirty(entities);
+
+        var emitterUid = entities.SpawnEntity(null, new MapCoordinates(new Vector2(2.2f, 1.8f), mapId));
+        transforms3D.SetAuthoritative(emitterUid, true);
+        transforms3D.SetWorldPosition3D(emitterUid, new Vector3(2.2f, 1.8f, 1.28f));
+        var emitter = entities.EnsureComponent<ParticleEmitter3DComponent>(emitterUid);
+        emitter.Texture = "/Textures/Effects/spookysmoke.rsi/spookysmoke_static.png";
+        emitter.Rate = 7f;
+        emitter.Lifetime = 2.4f;
+        emitter.InitialVelocity = new Vector3(0f, 0f, 0.42f);
+        emitter.VelocityRandomness = new Vector3(0.13f, 0.13f, 0.08f);
+        emitter.Acceleration = new Vector3(0f, 0f, 0.12f);
+        emitter.StartColor = new Color(0.65f, 0.72f, 0.78f, 0.34f);
+        emitter.EndColor = new Color(0.30f, 0.36f, 0.43f, 0f);
+        emitter.Dirty(entities);
     }
 
     private static void SpawnLight(
