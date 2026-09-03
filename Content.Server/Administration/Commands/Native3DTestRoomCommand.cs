@@ -161,6 +161,11 @@ public sealed class Native3DTestRoomCommand : IConsoleCommand
             mesh.Roughness = 0.62f;
             mesh.Metallic = 0.18f;
             mesh.Dirty(entities);
+            var animation = entities.EnsureComponent<AnimationPlayer3DComponent>(uid);
+            animation.Clip = "turn";
+            animation.PlaybackRate = 0.35f;
+            animation.Loop = true;
+            animation.Dirty(entities);
         }
         body.Dirty(entities);
         collider.Dirty(entities);

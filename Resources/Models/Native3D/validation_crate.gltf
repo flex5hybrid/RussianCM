@@ -3,6 +3,11 @@
   "scene": 0,
   "scenes": [{ "nodes": [0] }],
   "nodes": [{ "mesh": 0, "rotation": [0.0, 0.0, 0.1305262, 0.9914449] }],
+  "animations": [{
+    "name": "turn",
+    "samplers": [{ "input": 3, "output": 4, "interpolation": "LINEAR" }],
+    "channels": [{ "sampler": 0, "target": { "node": 0, "path": "rotation" } }]
+  }],
   "meshes": [{
     "primitives": [{
       "attributes": { "POSITION": 0, "TEXCOORD_0": 1 },
@@ -18,13 +23,15 @@
     }
   }],
   "buffers": [{
-    "byteLength": 232,
-    "uri": "data:application/octet-stream;base64,mpkZv5qZGb+amRm/mpkZP5qZGb+amRm/mpkZP5qZGT+amRm/mpkZv5qZGT+amRm/mpkZv5qZGb+amRk/mpkZP5qZGb+amRk/mpkZP5qZGT+amRk/mpkZv5qZGT+amRk/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAIA/AAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAACAPwAAgD8AAAAAAACAPwAAAgABAAAAAwACAAQABQAGAAQABgAHAAAAAQAFAAAABQAEAAEAAgAGAAEABgAFAAIAAwAHAAIABwAGAAMAAAAEAAMABAAHAA=="
+    "byteLength": 272,
+    "uri": "data:application/octet-stream;base64,mpkZv5qZGb+amRm/mpkZP5qZGb+amRm/mpkZP5qZGT+amRm/mpkZv5qZGT+amRm/mpkZv5qZGb+amRk/mpkZP5qZGb+amRk/mpkZP5qZGT+amRk/mpkZv5qZGT+amRk/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAIA/AAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAACAPwAAgD8AAAAAAACAPwAAAgABAAAAAwACAAQABQAGAAQABgAHAAAAAQAFAAAABQAEAAEAAgAGAAEABgAFAAIAAwAHAAIABwAGAAMAAAAEAAMABAAHAAAAAAAAAEBAAAAAAAAAAAAAAAAAAACAPwAAAAD0BDU/AAAAAPQENT8="
   }],
   "bufferViews": [
     { "buffer": 0, "byteOffset": 0, "byteLength": 96 },
     { "buffer": 0, "byteOffset": 96, "byteLength": 64 },
-    { "buffer": 0, "byteOffset": 160, "byteLength": 72 }
+    { "buffer": 0, "byteOffset": 160, "byteLength": 72 },
+    { "buffer": 0, "byteOffset": 232, "byteLength": 8 },
+    { "buffer": 0, "byteOffset": 240, "byteLength": 32 }
   ],
   "accessors": [
     {
@@ -46,6 +53,18 @@
       "componentType": 5123,
       "count": 36,
       "type": "SCALAR"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 2,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 2,
+      "type": "VEC4"
     }
   ]
 }
