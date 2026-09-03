@@ -12,7 +12,6 @@ namespace Content.Server.Gravity
         {
             base.Initialize();
             SubscribeLocalEvent<GravityComponent, ComponentInit>(OnGravityInit);
-            SubscribeLocalEvent<GravityChangedEvent>(OnGravityChanged3D);
         }
 
         /// <summary>
@@ -57,9 +56,9 @@ namespace Content.Server.Gravity
             SynchronizeGravity3D(uid, component.Enabled);
         }
 
-        private void OnGravityChanged3D(ref GravityChangedEvent args)
+        protected override void OnGravityChanged(EntityUid uid, bool enabled)
         {
-            SynchronizeGravity3D(args.ChangedGridIndex, args.HasGravity);
+            SynchronizeGravity3D(uid, enabled);
         }
 
         private void SynchronizeGravity3D(EntityUid uid, bool enabled)
