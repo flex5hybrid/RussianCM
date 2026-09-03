@@ -1,5 +1,6 @@
 using System.IO;
 using System.Linq;
+using System.Numerics;
 using System.Threading.Tasks;
 using Content.Server.Construction.Components;
 using Content.Shared._RMC14.Construction;
@@ -20,7 +21,9 @@ using Content.Shared.Storage;
 using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
+using Robust.Shared.Maths;
 using Robust.Shared.Player;
+using Robust.Shared.Physics3D;
 using Robust.Shared.Timing;
 
 namespace Content.Server.Construction
@@ -33,6 +36,8 @@ namespace Content.Server.Construction
         [Dependency] private SharedHandsSystem _handsSystem = default!;
         [Dependency] private EntityLookupSystem _lookupSystem = default!;
         [Dependency] private SharedTransformSystem _transformSystem = default!;
+        [Dependency] private SharedTransform3DSystem _transform3D = default!;
+        [Dependency] private SharedPhysics3DSystem _physics3D = default!;
         [Dependency] private EntityWhitelistSystem _whitelistSystem = default!;
         [Dependency] private RMCConstructionSystem _rmcConstruction = default!;
 
@@ -528,7 +533,27 @@ namespace Content.Server.Construction
                 return;
             }
 
+            if (args.SenderSession.AttachedEntity is not {Valid: true} user)
+            {
+                Log.Error($"Client sent {nameof(TryStartStructureConstructionMessage)} with no attached entity!");
+                return;
+            }
+
             var coordinates = GetCoordinates(ev.Location);
+            Vector3? placement3D = null;
+            var placementAngle = ev.Angle;
+            if (TryComp(user, out View3DComponent? view3D) && view3D.Enabled)
+            {
+                if (!TryReconstructConstructionPlacement3D(user, view3D, out coordinates, out var point3D))
+                {
+                    RaiseNetworkEvent(new AckStructureConstructionMessage(ev.Ack));
+                    return;
+                }
+
+                placement3D = point3D;
+                placementAngle = new Angle(view3D.Yaw).Reduced();
+            }
+
             var attempt = new RMCConstructionAttemptEvent(coordinates, constructionPrototype);
             RaiseLocalEvent(ref attempt);
 
@@ -547,12 +572,6 @@ namespace Content.Server.Construction
             {
                 Log.Error($"Invalid construction graph '{constructionPrototype.Graph}' in recipe '{ev.PrototypeName}'!");
                 RaiseNetworkEvent(new AckStructureConstructionMessage(ev.Ack));
-                return;
-            }
-
-            if (args.SenderSession.AttachedEntity is not {Valid: true} user)
-            {
-                Log.Error($"Client sent {nameof(TryStartStructureConstructionMessage)} with no attached entity!");
                 return;
             }
 
@@ -587,11 +606,11 @@ namespace Content.Server.Construction
                 _beingBuilt[args.SenderSession] = newSet;
             }
 
-            var location = GetCoordinates(ev.Location);
+            var location = coordinates;
 
             foreach (var condition in constructionPrototype.Conditions)
             {
-                if (!condition.Condition(user, location, ev.Angle.GetCardinalDir()))
+                if (!condition.Condition(user, location, placementAngle.GetCardinalDir()))
                 {
                     Cleanup();
                     return;
@@ -674,16 +693,86 @@ namespace Content.Server.Construction
                     constructionGraph,
                     edge,
                     targetNode,
-                    GetCoordinates(ev.Location),
-                    constructionPrototype.CanRotate ? ev.Angle : Angle.Zero) is not {Valid: true} structure)
+                    coordinates,
+                    constructionPrototype.CanRotate ? placementAngle : Angle.Zero) is not {Valid: true} structure)
             {
                 Cleanup();
                 return;
             }
 
+
+            if (placement3D is { } point)
+                PromoteConstructedEntity3D(structure, point, constructionPrototype.CanRotate ? placementAngle : Angle.Zero);
+
             RaiseNetworkEvent(new AckStructureConstructionMessage(ev.Ack, GetNetEntity(structure)));
             _adminLogger.Add(LogType.Construction, LogImpact.Low, $"{ToPrettyString(user):player} has turned a {ev.PrototypeName} construction ghost into {ToPrettyString(structure)} at {Transform(structure).Coordinates}");
             Cleanup();
+        }
+
+        private bool TryReconstructConstructionPlacement3D(
+            EntityUid user,
+            View3DComponent view,
+            out EntityCoordinates coordinates,
+            out Vector3 position)
+        {
+            coordinates = EntityCoordinates.Invalid;
+            position = default;
+            var transform = Transform(user);
+            const float range = SharedInteractionSystem.InteractionRange + 0.5f;
+            var origin = _transform3D.GetWorldPosition3D(user, transform) + Vector3.UnitZ * view.EyeHeight;
+            var horizontal = MathF.Cos(view.Pitch);
+            var direction = Vector3.Normalize(new Vector3(
+                MathF.Sin(view.Yaw) * horizontal,
+                MathF.Cos(view.Yaw) * horizontal,
+                MathF.Sin(view.Pitch)));
+            if (!_physics3D.TryRayCast(
+                    transform.MapID,
+                    new Ray3D(origin, direction),
+                    range,
+                    int.MaxValue,
+                    user,
+                    false,
+                    out var hit))
+            {
+                return false;
+            }
+
+            position = hit.Position + hit.Normal * 0.46f;
+            var mapPoint = new MapCoordinates(new Vector2(position.X, position.Y), transform.MapID);
+            coordinates = _transformSystem.ToCoordinates(transform.ParentUid, mapPoint);
+            return coordinates.IsValid(EntityManager);
+        }
+
+        private void PromoteConstructedEntity3D(EntityUid entity, Vector3 position, Angle angle)
+        {
+            _transform3D.SetAuthoritative(entity, true);
+            _transform3D.SetWorldPosition3D(entity, position);
+            _transform3D.SetWorldRotation3D(entity, Quaternion.CreateFromAxisAngle(Vector3.UnitZ, (float) angle.Theta));
+
+            var body = EnsureComp<PhysicsBody3DComponent>(entity);
+            body.BodyType = PhysicsBodyType3D.Static;
+            body.GravityScale = 0f;
+            body.CanCollide = true;
+
+            var collider = EnsureComp<Collider3DComponent>(entity);
+            if (collider.Shapes.Count == 0)
+            {
+                collider.Shapes.Add(new BoxShape3D
+                {
+                    Size = new Vector3(0.9f),
+                    CollisionLayer = int.MaxValue,
+                    CollisionMask = int.MaxValue,
+                    Friction = 0.75f,
+                });
+            }
+
+            var primitive = EnsureComp<Primitive3DComponent>(entity);
+            primitive.Size = new Vector3(0.9f);
+            primitive.Color = new Color(0.48f, 0.55f, 0.62f);
+            Dirty(entity, body);
+            Dirty(entity, collider);
+            Dirty(entity, primitive);
+            _physics3D.RefreshBody(entity);
         }
     }
 }

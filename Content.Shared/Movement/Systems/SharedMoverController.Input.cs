@@ -194,6 +194,12 @@ namespace Content.Shared.Movement.Systems
             mover.FirstPersonPitch = Math.Clamp(msg.Pitch, -1.35f, 1.35f);
             Dirty(uid, mover);
 
+            var view3D = EnsureComp<View3DComponent>(uid);
+            view3D.Enabled = true;
+            view3D.Yaw = (float) mover.FirstPersonYaw.Theta;
+            view3D.Pitch = mover.FirstPersonPitch;
+            Dirty(uid, view3D);
+
             if (msg.Jump)
                 Physics3DSystem.RequestCharacterJump(uid);
         }
