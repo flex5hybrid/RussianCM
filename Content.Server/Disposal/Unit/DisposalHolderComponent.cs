@@ -1,6 +1,7 @@
 using Content.Server.Atmos;
 using Content.Shared.Atmos;
 using Robust.Shared.Containers;
+using Robust.Shared.Maths;
 
 namespace Content.Server.Disposal.Unit
 {
@@ -37,6 +38,12 @@ namespace Content.Server.Disposal.Unit
         // CurrentDirection is not null when CurrentTube isn't null.
         [ViewVariables]
         public Direction CurrentDirection { get; set; } = Direction.Invalid;
+
+        [ViewVariables]
+        public Vector3i PreviousDirection3D { get; set; }
+
+        [ViewVariables]
+        public Vector3i CurrentDirection3D { get; set; }
 
         /// <summary>Mistake prevention</summary>
         [ViewVariables]

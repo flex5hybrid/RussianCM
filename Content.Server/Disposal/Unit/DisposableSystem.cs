@@ -1,3 +1,4 @@
+using System.Numerics;
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Disposal.Tube;
 using Content.Shared.Body.Components;
@@ -10,6 +11,8 @@ using Robust.Shared.Containers;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Physics3D;
+using Robust.Shared.Maths;
 
 namespace Content.Server.Disposal.Unit
 {
@@ -25,6 +28,8 @@ namespace Content.Server.Disposal.Unit
         [Dependency] private SharedMapSystem _maps = default!;
         [Dependency] private SharedPhysicsSystem _physicsSystem = default!;
         [Dependency] private SharedTransformSystem _xformSystem = default!;
+        [Dependency] private SharedTransform3DSystem _xform3D = default!;
+        [Dependency] private SharedPhysics3DSystem _physics3D = default!;
 
         private EntityQuery<DisposalTubeComponent> _disposalTubeQuery;
         private EntityQuery<DisposalUnitComponent> _disposalUnitQuery;
@@ -62,6 +67,13 @@ namespace Content.Server.Disposal.Unit
         {
             if (_physicsQuery.TryGetComponent(args.Entity, out var physBody))
                 _physicsSystem.SetCanCollide(args.Entity, false, body: physBody);
+
+            if (TryComp(args.Entity, out PhysicsBody3DComponent? body3D))
+            {
+                body3D.CanCollide = false;
+                body3D.Dirty(EntityManager);
+                _physics3D.RefreshBody(args.Entity);
+            }
         }
 
         public void ExitDisposals(EntityUid uid, DisposalHolderComponent? holder = null, TransformComponent? holderTransform = null)
@@ -85,6 +97,23 @@ namespace Content.Server.Disposal.Unit
             EntityUid? disposalId = null;
             DisposalUnitComponent? duc = null;
             var gridUid = holderTransform.GridUid;
+            if (_xform3D.IsAuthoritative(uid))
+            {
+                var holderPosition = _xform3D.GetWorldPosition3D(uid, holderTransform);
+                var units3D = EntityQueryEnumerator<DisposalUnitComponent, TransformComponent, Transform3DComponent>();
+                while (units3D.MoveNext(out var unitUid, out var unit, out var unitTransform, out var unitTransform3D))
+                {
+                    if (!unitTransform3D.IsAuthoritative ||
+                        unitTransform.MapID != holderTransform.MapID ||
+                        Vector3.DistanceSquared(holderPosition, _xform3D.GetWorldPosition3D(unitUid, unitTransform)) > 0.36f)
+                        continue;
+
+                    disposalId = unitUid;
+                    duc = unit;
+                    break;
+                }
+            }
+
             if (TryComp<MapGridComponent>(gridUid, out var grid))
             {
                 foreach (var contentUid in _maps.GetLocal(gridUid.Value, grid, holderTransform.Coordinates))
@@ -118,6 +147,40 @@ namespace Content.Server.Disposal.Unit
                 else
                 {
                     _xformSystem.AttachToGridOrMap(entity, xform);
+                    if (_xform3D.IsAuthoritative(uid))
+                    {
+                        var position3D = _xform3D.GetWorldPosition3D(uid, holderTransform);
+                        _xform3D.SetAuthoritative(entity, true, xform);
+                        _xform3D.SetWorldPosition3D(entity, position3D, xform);
+                        var body3D = EnsureComp<PhysicsBody3DComponent>(entity);
+                        body3D.BodyType = PhysicsBodyType3D.Dynamic;
+                        body3D.CanCollide = true;
+                        body3D.ContinuousDetection = ContinuousDetectionMode3D.Continuous;
+                        var collider3D = EnsureComp<Collider3DComponent>(entity);
+                        if (collider3D.Shapes.Count == 0)
+                        {
+                            collider3D.Shapes.Add(new SphereShape3D
+                            {
+                                Radius = 0.24f,
+                                CollisionLayer = 1,
+                                CollisionMask = int.MaxValue,
+                            });
+                        }
+
+                        body3D.Dirty(EntityManager);
+                        collider3D.Dirty(EntityManager);
+                        _physics3D.RefreshBody(entity);
+                        var direction3D = holder.CurrentDirection3D != Vector3i.Zero
+                            ? holder.CurrentDirection3D
+                            : holder.PreviousDirection3D;
+                        var velocity = _disposalTubeSystem.GetDisposalDirectionWorld3D(
+                            holder.CurrentTube ?? holder.PreviousTube ?? uid,
+                            direction3D);
+                        body3D.LinearVelocity = velocity * 10f;
+                        body3D.Dirty(EntityManager);
+                        continue;
+                    }
+
                     var direction = holder.CurrentDirection == Direction.Invalid ? holder.PreviousDirection : holder.CurrentDirection;
 
                     if (direction != Direction.Invalid && _xformQuery.TryGetComponent(gridUid, out var gridXform))
@@ -176,8 +239,34 @@ namespace Content.Server.Disposal.Unit
             {
                 holder.PreviousTube = holder.CurrentTube;
                 holder.PreviousDirection = holder.CurrentDirection;
+                holder.PreviousDirection3D = holder.CurrentDirection3D;
             }
             holder.CurrentTube = toUid;
+            if (_disposalTubeSystem.TryGetNextDirection3D(toUid, holder, out var direction3D))
+            {
+                _xform3D.SetAuthoritative(holderUid, true, holderTransform);
+                _xform3D.SetWorldPosition3D(holderUid, _xform3D.GetWorldPosition3D(toUid, toTransform), holderTransform);
+                holder.CurrentDirection = Direction.Invalid;
+                holder.CurrentDirection3D = direction3D;
+                holder.StartingTime = 0.1f;
+                holder.TimeLeft = 0.1f;
+                if (direction3D == Vector3i.Zero)
+                {
+                    ExitDisposals(holderUid, holder, holderTransform);
+                    return false;
+                }
+
+                if (holder.CurrentDirection3D != holder.PreviousDirection3D)
+                {
+                    foreach (var ent in holder.Container.ContainedEntities)
+                        _damageable.TryChangeDamage(ent, to.DamageOnTurn);
+                    _audio.PlayPvs(to.ClangSound, toUid);
+                }
+
+                return true;
+            }
+
+            holder.CurrentDirection3D = Vector3i.Zero;
             var ev = new GetDisposalsNextDirectionEvent(holder);
             RaiseLocalEvent(toUid, ref ev);
             holder.CurrentDirection = ev.Next;
@@ -237,6 +326,14 @@ namespace Content.Server.Disposal.Unit
                 if (holder.TimeLeft > 0)
                 {
                     var progress = 1 - holder.TimeLeft / holder.StartingTime;
+                    if (holder.CurrentDirection3D != Vector3i.Zero && _xform3D.IsAuthoritative(currentTube))
+                    {
+                        var origin3D = _xform3D.GetWorldPosition3D(currentTube);
+                        var direction3D = _disposalTubeSystem.GetDisposalDirectionWorld3D(currentTube, holder.CurrentDirection3D);
+                        _xform3D.SetWorldPosition3D(uid, origin3D + direction3D * progress);
+                        continue;
+                    }
+
                     var origin = _xformQuery.GetComponent(currentTube).Coordinates;
                     var destination = holder.CurrentDirection.ToVec();
                     var newPosition = destination * progress;
@@ -251,7 +348,9 @@ namespace Content.Server.Disposal.Unit
                 _containerSystem.Remove(uid, _disposalTubeQuery.GetComponent(currentTube).Contents, reparent: false, force: true);
 
                 // Find next tube
-                var nextTube = _disposalTubeSystem.NextTubeFor(currentTube, holder.CurrentDirection);
+                var nextTube = holder.CurrentDirection3D != Vector3i.Zero
+                    ? _disposalTubeSystem.NextTubeFor3D(currentTube, holder.CurrentDirection3D)
+                    : _disposalTubeSystem.NextTubeFor(currentTube, holder.CurrentDirection);
                 if (!Exists(nextTube))
                 {
                     ExitDisposals(uid, holder);
