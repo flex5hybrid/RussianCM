@@ -19,6 +19,7 @@ public sealed class Native3DMapMigrationSystem : EntitySystem
     [Dependency] private SharedMapSystem _maps = default!;
     [Dependency] private SharedMapGrid3DSystem _grids3D = default!;
     [Dependency] private SharedTransform3DSystem _transforms3D = default!;
+    [Dependency] private Native3DEntityMigrationSystem _entities3D = default!;
 
     public override void Initialize()
     {
@@ -49,6 +50,7 @@ public sealed class Native3DMapMigrationSystem : EntitySystem
         _grids3D.SetVoxels((entity.Owner, grid3D), edits);
         marker = EnsureComp<Native3DMigratedGridComponent>(entity.Owner);
         marker.Version = Native3DMigratedGridComponent.CurrentVersion;
+        _entities3D.PromoteGrid(entity.Owner);
     }
 
     private void OnTileChanged(ref TileChangedEvent args)
