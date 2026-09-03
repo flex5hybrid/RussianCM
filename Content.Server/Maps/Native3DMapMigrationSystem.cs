@@ -34,10 +34,10 @@ public sealed class Native3DMapMigrationSystem : EntitySystem
 
     private void OnGridMapInit(Entity<MapGridComponent> entity, ref MapInitEvent args)
     {
-        _transforms3D.SetAuthoritative(entity.Owner, true);
-        EnsureComp<LegacyPhysics3DBridgeComponent>(entity.Owner);
         if (TryComp(entity.Owner, out PhysicsComponent? legacyBody))
             _physics2D.SetCanCollide(entity.Owner, false, body: legacyBody);
+        _transforms3D.SetAuthoritative(entity.Owner, true);
+        EnsureComp<LegacyPhysics3DBridgeComponent>(entity.Owner);
 
         if (TryComp(entity.Owner, out Native3DMigratedGridComponent? marker) &&
             marker.Version == Native3DMigratedGridComponent.CurrentVersion &&

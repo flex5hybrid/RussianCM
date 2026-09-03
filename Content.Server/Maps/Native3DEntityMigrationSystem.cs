@@ -9,6 +9,7 @@ using Robust.Shared.IoC;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
+using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Physics3D;
 
@@ -31,6 +32,7 @@ public sealed class Native3DEntityMigrationSystem : EntitySystem
         SubscribeLocalEvent<MapGrid3DComponent, MapInitEvent>(OnGridMapInit);
         SubscribeLocalEvent<PhysicsComponent, MapInitEvent>(OnPhysicsMapInit);
         SubscribeLocalEvent<PhysicsComponent, EntParentChangedMessage>(OnPhysicsParentChanged);
+        SubscribeLocalEvent<Native3DMigratedEntityComponent, FixturesChangedEvent>(OnFixturesChanged);
         SubscribeLocalEvent<ProjectileComponent, ComponentStartup>(OnProjectile3DHandlerAdded);
         SubscribeLocalEvent<ThrownItemComponent, ComponentStartup>(OnThrown3DHandlerAdded);
         SubscribeLocalEvent<FluidCell3DComponent, ComponentStartup>(OnFluid3DHandlerAdded);
@@ -79,6 +81,41 @@ public sealed class Native3DEntityMigrationSystem : EntitySystem
             TryPromote((entity.Owner, entity.Comp, fixtures, args.Transform));
     }
 
+    private void OnFixturesChanged(
+        Entity<Native3DMigratedEntityComponent> entity,
+        ref FixturesChangedEvent args)
+    {
+        if (!TryComp(entity.Owner, out Collider3DComponent? collider3D) ||
+            !TryComp(entity.Owner, out PhysicsBody3DComponent? body3D) ||
+            !TryComp(entity.Owner, out LegacyPhysics3DBridgeComponent? bridge))
+            return;
+
+        var body2D = args.Entity.Comp1;
+        var fixtures = args.Entity.Comp2;
+        var isCharacter = (body2D.BodyType & BodyType.KinematicController) != 0;
+        var height = InferHeight(entity.Owner, fixtures, isCharacter);
+        entity.Comp.Height = height;
+        body3D.BodyType = ConvertBodyType(body2D.BodyType, isCharacter);
+        body3D.Mass = MathF.Max(body2D.Mass, 1f);
+        body3D.GravityScale = body2D.IgnoreGravity ? 0f : 1f;
+        body3D.LinearDamping = body2D.LinearDamping;
+        body3D.AngularDamping = body2D.AngularDamping;
+        body3D.SleepingAllowed = body2D.SleepingAllowed;
+
+        collider3D.Shapes.Clear();
+        bridge.ShapeFixtureIds.Clear();
+        if (isCharacter)
+            AddCharacterShape(collider3D, bridge, fixtures, height);
+        else
+            AddExtrudedFixtureShapes(collider3D, bridge, fixtures, height);
+
+        body3D.CanCollide = bridge.RequestedCanCollide && collider3D.Shapes.Count > 0;
+
+        Dirty(entity.Owner, body3D);
+        Dirty(entity.Owner, collider3D);
+        _physics3D.RefreshBody(entity.Owner);
+    }
+
     private void TryPromote(Entity<PhysicsComponent, FixturesComponent, TransformComponent> entity)
     {
         if (HasComp<Native3DMigratedEntityComponent>(entity.Owner) ||
@@ -94,6 +131,7 @@ public sealed class Native3DEntityMigrationSystem : EntitySystem
         if (height <= 0f)
             return;
 
+        _physics2D.SetCanCollide(entity.Owner, false, body: entity.Comp1);
         _transforms3D.SetAuthoritative(entity.Owner, true, entity.Comp3);
         var body3D = EnsureComp<PhysicsBody3DComponent>(entity.Owner);
         body3D.BodyType = ConvertBodyType(entity.Comp1.BodyType, isCharacter);
@@ -110,6 +148,7 @@ public sealed class Native3DEntityMigrationSystem : EntitySystem
         collider3D.Shapes.Clear();
         var bridge = EnsureComp<LegacyPhysics3DBridgeComponent>(entity.Owner);
         bridge.ShapeFixtureIds.Clear();
+        bridge.RequestedCanCollide = true;
         bridge.RaiseLegacyEvents = !HasComp<ProjectileComponent>(entity.Owner) &&
                                    !HasComp<ThrownItemComponent>(entity.Owner) &&
                                    !HasComp<FluidCell3DComponent>(entity.Owner);
@@ -132,7 +171,6 @@ public sealed class Native3DEntityMigrationSystem : EntitySystem
         marker.Height = height;
         Dirty(entity.Owner, body3D);
         Dirty(entity.Owner, collider3D);
-        _physics2D.SetCanCollide(entity.Owner, false, body: entity.Comp1);
         _physics3D.RefreshBody(entity.Owner);
     }
 
