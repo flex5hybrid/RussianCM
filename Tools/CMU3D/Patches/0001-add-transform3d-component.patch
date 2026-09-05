@@ -1,0 +1,65 @@
+diff --git a/Robust.Shared/GameObjects/Components/Transform/Transform3DComponent.cs b/Robust.Shared/GameObjects/Components/Transform/Transform3DComponent.cs
+new file mode 100644
+index 000000000..8f04df418
+--- /dev/null
++++ b/Robust.Shared/GameObjects/Components/Transform/Transform3DComponent.cs
+@@ -0,0 +1,59 @@
++using System.Numerics;
++using Robust.Shared.ViewVariables;
++
++namespace Robust.Shared.GameObjects
++{
++    /// <summary>
++    ///     Experimental 3D spatial state for the CMU3D migration.
++    /// </summary>
++    /// <remarks>
++    ///     This component is intentionally additive during phase one. The existing
++    ///     <see cref="TransformComponent"/> remains authoritative for normal 2D gameplay
++    ///     until hierarchy updates, replication, broadphase, physics and rendering all
++    ///     understand three-dimensional transforms.
++    ///
++    ///     Do not mirror this state into TransformComponent every frame. Systems that
++    ///     opt into CMU3D should explicitly read/write this component so accidental
++    ///     projection back to XY remains visible during the migration.
++    /// </remarks>
++    [RegisterComponent]
++    public sealed partial class Transform3DComponent : Component
++    {
++        /// <summary>
++        ///     Position relative to the parent transform, in metres/world units.
++        /// </summary>
++        [ViewVariables(VVAccess.ReadWrite)]
++        public Vector3 LocalPosition = Vector3.Zero;
++
++        /// <summary>
++        ///     Orientation relative to the parent transform.
++        /// </summary>
++        [ViewVariables(VVAccess.ReadWrite)]
++        public Quaternion LocalRotation = Quaternion.Identity;
++
++        /// <summary>
++        ///     Local non-uniform scale. Physics code must not assume this is supported
++        ///     until the 3D fixture backend is introduced.
++        /// </summary>
++        [ViewVariables(VVAccess.ReadWrite)]
++        public Vector3 LocalScale = Vector3.One;
++
++        /// <summary>
++        ///     Interpolation target used by the future client-side 3D transform system.
++        /// </summary>
++        [ViewVariables]
++        public Vector3? NextPosition;
++
++        /// <summary>
++        ///     Interpolation target used by the future client-side 3D transform system.
++        /// </summary>
++        [ViewVariables]
++        public Quaternion? NextRotation;
++
++        [ViewVariables]
++        public Vector3 PreviousPosition;
++
++        [ViewVariables]
++        public Quaternion PreviousRotation = Quaternion.Identity;
++    }
++}
