@@ -44,4 +44,7 @@
   components:
   - type: Sprite
     state: soil_grid
-  - type: SpriteFade
+  # RuMC edit start
+  - type: RMCSpriteFade
+    fadeNearCursor: true
+  # RuMC edit end

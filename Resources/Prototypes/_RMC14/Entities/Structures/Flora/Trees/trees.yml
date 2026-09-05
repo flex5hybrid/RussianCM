@@ -3,7 +3,10 @@
   description: Yep, it's a tree.
   abstract: true
   components:
-  - type: SpriteFade
+  # RuMC edit start
+  - type: RMCSpriteFade
+    fadeNearCursor: true
+  # RuMC edit end
   - type: Clickable
   - type: OreVein
     currentOre: OreWood

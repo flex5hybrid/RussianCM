@@ -9,7 +9,6 @@
     offset: 0.1, 0.35
     drawdepth: Overdoors
     state: bush1
-  - type: SpriteFade
 
 - type: entity
   parent: RMCBushJungle1

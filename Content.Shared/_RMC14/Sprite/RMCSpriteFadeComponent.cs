@@ -37,4 +37,13 @@ public sealed partial class RMCSpriteFadeComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public bool FadeOnSharedGrid;
+
+    // RuMC edit start
+    /// <summary>
+    /// If true, also fade this entity whenever it is within
+    /// tiles of the mouse cursor, regardless of whether the cursor is directly over its sprite (trees and bushes).
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool FadeNearCursor;
+    // RuMC edit end
 }

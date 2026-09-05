@@ -4,7 +4,10 @@
   abstract: true
   name: bush
   components:
-  - type: SpriteFade
+  # RuMC edit start
+  - type: RMCSpriteFade
+    fadeNearCursor: true
+  # RuMC edit end
   - type: Clickable
   - type: Sprite
     noRot: true

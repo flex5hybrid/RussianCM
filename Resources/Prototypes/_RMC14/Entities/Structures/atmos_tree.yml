@@ -20,4 +20,7 @@
     sprite: _RMC14/Structures/atmos_tree.rsi
     state: tree
     offset: -0.2, 1.2
-  - type: SpriteFade
+  # RuMC edit start
+  - type: RMCSpriteFade
+    fadeNearCursor: true
+  # RuMC edit end

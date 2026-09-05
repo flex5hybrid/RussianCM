@@ -1,4 +1,5 @@
 using Content.Client.Gameplay;
+using Content.Shared._RMC14.CCVar; // RuMC edit
 using Content.Shared._RMC14.Sprite;
 using Content.Shared._RMC14.Item;
 using Robust.Client.GameObjects;
@@ -7,6 +8,7 @@ using Robust.Client.Player;
 using Robust.Client.State;
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Client.UserInterface;
+using Robust.Shared.Configuration; // RuMC edit
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics.Systems;
@@ -34,6 +36,10 @@ public sealed partial class RMCSpriteFadeSystem : EntitySystem
     [Dependency] private SharedPhysicsSystem _physics = default!;
     [Dependency] private SpriteSystem _sprite = default!;
     [Dependency] private IEyeManager _eyeManager = default!;
+    // RuMC edit start
+    [Dependency] private IConfigurationManager _cfg = default!;
+    [Dependency] private EntityLookupSystem _lookup = default!;
+    // RuMC edit end
 
     private List<(MapCoordinates Point, bool ExcludeBoundingBox)> _points = new();
     private readonly HashSet<RMCFadingSpriteComponent> _comps = new();
@@ -41,6 +47,12 @@ public sealed partial class RMCSpriteFadeSystem : EntitySystem
     private EntityQuery<RMCSpriteFadeComponent> _fadeQuery;
     private EntityQuery<RMCFadingSpriteComponent> _fadingQuery;
     private EntityQuery<FixturesComponent> _fixturesQuery;
+
+    // RuMC edit start
+    private float _fadeRadius;
+    private readonly HashSet<Entity<RMCSpriteFadeComponent>> _nearCursor = new();
+    private readonly HashSet<EntityUid> _processedThisFrame = new();
+    // RuMC edit end
 
     public override void Initialize()
     {
@@ -52,6 +64,8 @@ public sealed partial class RMCSpriteFadeSystem : EntitySystem
         _fixturesQuery = GetEntityQuery<FixturesComponent>();
 
         SubscribeLocalEvent<RMCFadingSpriteComponent, ComponentRemove>(OnFadingRemove);
+
+        Subs.CVar(_cfg, RMCCVars.RMCSpriteFadeRadius, v => _fadeRadius = v, true); // RuMC edit
     }
 
     private void OnFadingRemove(Entity<RMCFadingSpriteComponent> entity, ref ComponentRemove args)
@@ -81,6 +95,7 @@ public sealed partial class RMCSpriteFadeSystem : EntitySystem
         var player = _playerManager.LocalEntity;
         // ExcludeBoundingBox is set if we don't want to fade this sprite within the collision bounding boxes for the given POI
         _points.Clear();
+        _processedThisFrame.Clear(); // RuMC edit
 
         TransformComponent? playerXform = null;
         if (TryComp(player, out playerXform))
@@ -88,9 +103,14 @@ public sealed partial class RMCSpriteFadeSystem : EntitySystem
             _points.Add((_transform.GetMapCoordinates(_playerManager.LocalEntity!.Value, xform: playerXform), false));
         }
 
+        MapCoordinates? cursorMapPos = null; // RuMC edit
         if (_uiManager.CurrentlyHovered is IViewportControl vp && _inputManager.MouseScreenPosition.IsValid)
         {
-            _points.Add((vp.PixelToMap(_inputManager.MouseScreenPosition.Position), true));
+            // RuMC edit start
+            var cursorPos = vp.PixelToMap(_inputManager.MouseScreenPosition.Position);
+            _points.Add((cursorPos, true));
+            cursorMapPos = cursorPos;
+            // RuMC edit end
         }
 
         if (_stateManager.CurrentState is GameplayState state && _spriteQuery.TryGetComponent(player, out var playerSprite))
@@ -148,6 +168,28 @@ public sealed partial class RMCSpriteFadeSystem : EntitySystem
                     TryApplyFade(uid, sprite, fade, frameTime);
                 }
             }
+
+            // RuMC edit start
+            // Fade entities opted into cursor-proximity fading (trees, bushes) within the shared
+            // radius of the mouse cursor.
+            if (cursorMapPos is { } cursor && _fadeRadius > 0f)
+            {
+                _nearCursor.Clear();
+                _lookup.GetEntitiesInRange(cursor, _fadeRadius, _nearCursor);
+
+                foreach (var ent in _nearCursor)
+                {
+                    var fade = ent.Comp;
+                    if (!fade.FadeNearCursor || !fade.ReactToMouse)
+                        continue;
+
+                    if (!_spriteQuery.TryGetComponent(ent.Owner, out var sprite))
+                        continue;
+
+                    TryApplyFade(ent.Owner, sprite, fade, frameTime);
+                }
+            }
+            // RuMC edit end
         }
     }
 
@@ -191,6 +233,11 @@ public sealed partial class RMCSpriteFadeSystem : EntitySystem
 
     private void TryApplyFade(EntityUid ent, SpriteComponent sprite, RMCSpriteFadeComponent fadeComponent, float frameTime)
     {
+        // RuMC edit start
+        if (!_processedThisFrame.Add(ent))
+            return;
+        // RuMC edit end
+
         if (!_fadingQuery.TryComp(ent, out var fading))
         {
             fading = AddComp<RMCFadingSpriteComponent>(ent);

@@ -38,6 +38,15 @@ public sealed partial class RMCCVars : CVars
     public static readonly CVarDef<bool> RMCMarineOverlayEnabled =
         CVarDef.Create("rmc.marine_overlay_enabled", true, CVar.CLIENT | CVar.ARCHIVE);
 
+    // RuMC edit start
+    /// <summary>
+    /// Radius(tiles) within which entities opted into cursor-proximity sprite fading
+    /// (trees, bushes) become transparent when the cursor is nearby.
+    /// </summary>
+    public static readonly CVarDef<float> RMCSpriteFadeRadius =
+        CVarDef.Create("rmc.sprite_fade_radius", 3f, CVar.CLIENT | CVar.ARCHIVE);
+    // RuMC edit end
+
     public static readonly CVarDef<string> CMOocWebhook =
         CVarDef.Create("rmc.ooc_webhook", "", CVar.SERVERONLY | CVar.CONFIDENTIAL);
 
