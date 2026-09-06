@@ -27,6 +27,8 @@
     - id: AU14UPPCBRNHood
     - id: AU14SuitCBRNUPP
     - id: RMCMaskGasSPP
+    - id: CMUGasMaskFilterUPP
+      amount: 3
     - id: AU14GlovesCBRNUPP
     - id: AU14BootsCBRNUPP
     - id: AU14NaloxoneAutoInjector

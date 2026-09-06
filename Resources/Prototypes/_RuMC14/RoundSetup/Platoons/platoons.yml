@@ -1,11 +1,14 @@
 - type: platoon
   id: BEAR
   name: "PMC 'BEAR'"
-  nameLocKey: lore-primer-platoon-upp # RuMC edit
+  nameLocKey: lore-primer-platoon-bear
   lorePrimer: RuMCPrimerPlatoonBEAR
   Allegiance: UPP
   languages:
     - Russian
+    - German
+    - Mandarin
+    - Spanish
     - English
     - TacticalSignLanguage
   reqlist: BEARCargoCatalog

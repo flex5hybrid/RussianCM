@@ -111,6 +111,7 @@
     whitelist:
       tags:
       - RMCCartridgeLMGQYJ72
+      - RuMCCartridge762x54R
     proto: RMCCartridgeLMGQYJ72
     capacity: 47
     deleteWhenEmpty: false
@@ -141,6 +142,7 @@
       tags:
       - RuMCCartridge762x54RTracer
       - RMCCartridgeLMGQYJ72
+      - RuMCCartridge762x54R
     proto: RuMCCartridge762x54RTracer
     capacity: 47
     deleteWhenEmpty: false
@@ -171,6 +173,7 @@
     whitelist:
       tags:
       - RMCCartridgeLMGQYJ72
+      - RuMCCartridge762x54R
     proto: RMCCartridgeLMGQYJ72
     capacity: 75
     deleteWhenEmpty: false
@@ -197,6 +200,7 @@
       tags:
       - RuMCCartridge762x54RTracer
       - RMCCartridgeLMGQYJ72
+      - RuMCCartridge762x54R
     proto: RuMCCartridge762x54RTracer
     capacity: 75
     deleteWhenEmpty: false
@@ -211,7 +215,7 @@
 # Cartridges
 
 - type: entity
-  parent: RMCCartridgeLMGQYJ72
+  parent: RuMCCartridge762x54R
   id: RuMCCartridge762x54RTracer
   name: 7.62x54R Tracer
   components:
@@ -253,7 +257,7 @@
 #      falloff: 8
 
 - type: entity
-  parent: RMCBulletLMGQYJ72 #RuMCBullet762x54R
+  parent: RuMCBullet762x54R
   id: RuMCBullet762x54RTracer
   name: bullet (762x54R Tracer)
   categories: [ HideSpawnMenu ]

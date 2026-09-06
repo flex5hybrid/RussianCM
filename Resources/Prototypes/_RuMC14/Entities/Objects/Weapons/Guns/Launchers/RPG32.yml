@@ -146,7 +146,7 @@
   - type: DeleteOnExplosion
   - type: RMCIgniteOnCollide
     maxStacks: 1
-    intensity: 150
+    intensity: 75
     burnColor: "#b55e28"
   - type: EdgeSpreader
     id: Smoke

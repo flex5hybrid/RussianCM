@@ -5,18 +5,30 @@
   description: The UPP assault rifle was developed for advanced assault units. Many U.S. Marines dislike it because it is superior to the M41A models.
   components:
   - type: Sprite
-    sprite: _RuMC14/Objects/Weapons/Guns/Rifles/AK13/AK13_inhands.rsi
+    sprite: _RuMC14/Objects/Weapons/Guns/Rifles/AK13.rsi
     layers:
     - state: base
-      sprite: _RuMC14/Objects/Weapons/Guns/Rifles/AK13/AK13.rsi
-    - state: bolt-open
-      sprite: _RuMC14/Objects/Weapons/Guns/Rifles/AK13/AK13.rsi
       map: [ "enum.GunVisualLayers.Base" ]
-    - state: mag-0
-      sprite: _RuMC14/Objects/Weapons/Guns/Rifles/AK13/AK13.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: ItemMapper
+    mapLayers:
+      mag-0:
+        whitelist:
+          tags:
+          - RMCMagazineRifleAK4047
+          - RMCMagazineRifleAK4047AP
+          - RMCMagazineRifleAK4047Incendiary
+          - RMCMagazineRifleAK4047HEAP
+      mag-1:
+        whitelist:
+          tags:
+          - RuMCMagazineRifleAK4047bakelite
+          - RuMCMagazineRifleAK4047APbakelite
+      mag-2:
+        whitelist:
+          tags:
+          - RuMCMagazineRifleAK4047buben
   - type: Clothing
-    sprite: _RuMC14/Objects/Weapons/Guns/Rifles/AK13/AK13_inhands.rsi
+    sprite: _RuMC14/Objects/Weapons/Guns/Rifles/AK13.rsi
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -32,25 +44,23 @@
     - SemiAuto
     - Burst
     - FullAuto
-    recoilUnwielded: 2
-    scatterWielded: 3.8
-    scatterUnwielded: 10
-    baseFireRate: 4.05
+    recoilUnwielded: 4
+    scatterWielded: 6
+    scatterUnwielded: 20
+    baseFireRate: 3.75
     burstScatterMult: 1
     modifiers:
       Burst:
         fireDelay: 0.065
-        maxScatterModifier: 6
+        maxScatterModifier: 17
         useBurstScatterMult: true
-        unwieldedScatterMultiplier: 2
-        shotsToMaxScatter: 6
+        shotsToMaxScatter: 3
       FullAuto:
-        maxScatterModifier: 9
+        maxScatterModifier: 15
         useBurstScatterMult: true
-        unwieldedScatterMultiplier: 2
         shotsToMaxScatter: 4
   - type: RMCWeaponAccuracy
-    accuracyMultiplier: 1.6
+    accuracyMultiplier: 1.3
     accuracyMultiplierUnwielded: 0.6
   - type: ItemSlots
     slots:
@@ -66,9 +76,11 @@
           - RMCMagazineRifleAK4047AP
           - RMCMagazineRifleAK4047Incendiary
           - RMCMagazineRifleAK4047HEAP
-          - RuMCMagazineAK13
+          - RuMCMagazineRifleAK4047bakelite
+          - RuMCMagazineRifleAK4047APbakelite
+          - RuMCMagazineRifleAK4047buben
   - type: GunDamageModifier
-    multiplier: 1.25
+    multiplier: 1.1
   - type: AttachableHolder
     slots:
       rmc-aslot-barrel:
@@ -120,8 +132,10 @@
     - RMCWeaponRifleAK4047
     - RuMCWeaponRifleAK13
   - type: WieldDelay
-    baseDelay: 0.22
+    baseDelay: 0.35
 
+
+#Tactical
 - type: entity
   parent: RuMCWeaponRifleAK13
   id: RuMCWeaponRifleAK13Tactical
@@ -266,8 +280,6 @@
           - RMCAttachmentExtinguisher
           - RMCAttachmentFlamer
 
+#Tags
 - type: Tag
   id: RuMCWeaponRifleAK13
-
-- type: Tag
-  id: RuMCMagazineAK13

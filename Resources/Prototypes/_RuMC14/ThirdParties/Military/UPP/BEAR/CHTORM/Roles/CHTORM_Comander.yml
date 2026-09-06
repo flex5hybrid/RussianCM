@@ -56,7 +56,7 @@
     - TacticalSignLanguage
     currentLanguage: Russian
     defaultLanguage: Russian
-
+    
   name: rumc-job-name-bear-commander
   description: rumc-job-callsign-bear-commander
   playTimeTracker: RuMCJobUPPBEARCommander

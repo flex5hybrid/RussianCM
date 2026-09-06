@@ -1006,7 +1006,7 @@
         givePrefix: au14-job-prefix-govforspecialist-pointmanUPP
         isAppendSquadRoleName: false
         isAppendPrefix: true
-      - id: CMUType23ShotgunCase
+      - id: RuMCShotgunType23Case
         giveSquadRoleName: au14-job-name-govforspecialist-pointmanUPP
         givePrefix: au14-job-prefix-govforspecialist-pointmanUPP
         isAppendSquadRoleName: false
@@ -1292,7 +1292,7 @@
       - id: RMCWeaponRifleType71C
         amount: 3
       - id: RMCWeaponRifleAK4047
-        amount: 2
+        amount: 10
       - id: RuMCRifleVAL
         amount: 2
       - id: RMCWeaponPistolNP92Empty
@@ -1314,29 +1314,33 @@
       - id: AU14MagazineRifleAG80
         amount: 200
       - id: AU14MagazineRifleAG80AP
-        amount: 15
+        amount: 10
       - id: AU14MagazineRifleAG80Ext
         amount: 10
       - id: RuMCMagazineRifleAG80Tracer
         amount: 10
       - id: RMCMagazineRifleAK4047
-        amount: 60
+        amount: 30
+      - id: RuMCMagazineRifleAK4047bakelite
+        amount: 30
+      - id: RuMCMagazineRifleAK4047bakeliteLarge
+        amount: 5
       - id: RMCMagazineRifleAK4047AP
-        amount: 15
+        amount: 3
+      - id: RuMCMagazineRifleAK4047APbakelite
+        amount: 3
       - id: RuMCMagazineRifleAK4047Tracer
         amount: 15
+      - id: RuMCMagazineRifleAK4047buben
+        amount: 1
       - id: RuMCMagazineVAL
         amount: 60
       - id: RuMCMagazineVALAP
-        amount: 15
-      - id: RuMCMagazineAH12
-        amount: 10
-      - id: RuMCMagazineAH12Tracer
         amount: 5
       - id: RMCMagazineRifleType71
         amount: 150
       - id: RMCMagazineRifleType71AP
-        amount: 15
+        amount: 10
       - id: RuMCMagazineRifleType71Tracer
         amount: 15
       - id: RMCBoxShotgunHeavyBuckshot

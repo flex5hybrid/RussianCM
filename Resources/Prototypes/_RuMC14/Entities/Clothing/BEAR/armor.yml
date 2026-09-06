@@ -20,7 +20,7 @@
   description: It significantly reduces mobility, but makes the fighter almost invulnerable to standard weapons.
   components:
   - type: CMArmor
-    melee: 35
+    melee: 30
     bullet: 30
     bio: 20
     explosionArmor: 20
@@ -34,8 +34,8 @@
   description: It does not overload the fighter, allowing him to maneuver in urban conditions.
   components:
   - type: CMArmor
-    melee: 30
-    bullet: 30
+    melee: 25
+    bullet: 25
     bio: 15
     explosionArmor: 15
   - type: Sprite
@@ -48,8 +48,8 @@
   description: Ideal for reconnaissance, snipers, and operators on missions.
   components:
   - type: CMArmor
-    melee: 30
-    bullet: 30
+    melee: 20
+    bullet: 20
     bio: 5
     explosionArmor: 10
   - type: Sprite

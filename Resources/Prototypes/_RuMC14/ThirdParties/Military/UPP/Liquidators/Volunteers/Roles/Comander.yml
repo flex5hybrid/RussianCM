@@ -130,7 +130,8 @@
     suitstorage: RMCWeaponFlamerSpecUPP
   inhand:
     - AU14CBRNKitUPP
-    - RMCTankFlamerSPP
+    - RuMCTankFlamerRLargeUPP
+    - RuMCTankFlamerRLargeUPP
 
 - type: jobIcon
   parent: CMJobIconBase

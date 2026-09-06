@@ -9,7 +9,7 @@
   - type: Sprite
     sprite: _RuMC14/Objects/Weapons/Grenades/RG35F.rsi
   - type: OnUseTimerTrigger
-    delay: 2
+    delay: 4
     initialBeepDelay: 0
     beepInterval: 10
     doPopup: false

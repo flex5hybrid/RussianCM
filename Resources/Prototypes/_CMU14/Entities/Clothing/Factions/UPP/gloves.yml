@@ -13,3 +13,7 @@
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/cbrn.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/cbrn.rsi
+  - type: CMArmor #RuMC edit start
+    melee: 15
+    bio: 90
+    explosionArmor: 5 #RuMC edit end

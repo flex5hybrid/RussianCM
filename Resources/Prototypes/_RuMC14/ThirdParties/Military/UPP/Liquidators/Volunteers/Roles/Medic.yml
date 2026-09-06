@@ -109,17 +109,11 @@
     belt: AU14BeltMedicBagProdigyFilled
     pocket1: AU14PouchIFAKFill
     pocket2: AU14PouchIFAKFill
-    back: RMCBackpackFlamer
+    back: RMCSatchelSPPFullMarksman
     ears: RuMCHeadsetLiquidator
-    suitstorage: RMCWeaponFlamerSPP
-  storage:
-    back:
-    - RMCTankFlamerSPP
-    - RMCTankFlamerSPP
-    - RMCTankFlamerSPP
+    suitstorage: RMCWeaponRifleAK4047
   inhand:
     - AU14CBRNKitUPP
-    - RMCTankFlamerSPP
 
 - type: jobIcon
   parent: CMJobIconBase

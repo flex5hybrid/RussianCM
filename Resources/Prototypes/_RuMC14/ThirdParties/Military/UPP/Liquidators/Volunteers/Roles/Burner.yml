@@ -112,12 +112,12 @@
     suitstorage: RMCWeaponFlamerSPP
   storage:
     back:
-    - RMCTankFlamerSPP
-    - RMCTankFlamerSPP
-    - RMCTankFlamerSPP
+    - RuMCTankFlamerUPP
+    - RuMCTankFlamerUPP
+    - RuMCTankFlamerUPP
   inhand:
     - AU14CBRNKitUPP
-    - RMCTankFlamerSPP
+    - RuMCTankFlamerUPP
 
 - type: jobIcon
   parent: CMJobIconBase

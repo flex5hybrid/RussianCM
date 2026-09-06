@@ -45,7 +45,7 @@
 - type: entity
   parent: RuMCDrinkUPPwaterBottle
   id: RuMCDrinkUPPBugJuice
-  name:
+  name: UPP packaging of pineapple juice
   description:
   components:
   - type: SolutionContainerManager

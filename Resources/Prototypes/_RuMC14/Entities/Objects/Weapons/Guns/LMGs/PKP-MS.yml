@@ -238,8 +238,8 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-      - RMCCartridgeLMGQYJ72
-    proto: RMCCartridgeLMGQYJ72
+      - RuMCCartridge762x54R
+    proto: RuMCCartridge762x54R
     capacity: 200
     deleteWhenEmpty: false
   - type: Sprite
@@ -259,7 +259,7 @@
 
 - type: entity
   parent: RuMCMagazinePKP_MS
-  id: RuMCMachineMagazineTracerPKP_MS
+  id: RuMCMagazinePKP_MSTracer
   name: PKP-MS box magazine (7.62x54R Tracer)
   description: A 150-round belt-fed tracer box magazine for the PKP-MS general-purpose machine gun.
   components:
@@ -271,7 +271,7 @@
     whitelist:
       tags:
       - RuMCCartridge762x54RTracer
-      - RMCCartridgeLMGQYJ72
+      - RuMCCartridge762x54R
     proto: RuMCCartridge762x54RTracer
     capacity: 200
     deleteWhenEmpty: false
@@ -290,7 +290,46 @@
   - type: Item
     size: Large
 
+#ammo
+- type: entity
+  parent: RMCCartridgeRifleAR10
+  id: RuMCCartridge762x54R
+  name: cartridge (7.62x54mmR)
+  description: A 7.62x54mmR cartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - RuMCCartridge762x54R
+  - type: CartridgeAmmo
+    proto: RMCBulletLMGQYJ72
+
+- type: entity
+  parent: RMCBaseBullet
+  id: RuMCBullet762x54R
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 40
+  - type: RMCProjectileDamageFalloff
+    thresholds:
+    - range: 22
+      falloff: 9999
+      ignoreModifiers: true
+  - type: CMArmorPiercing
+    amount: 15
+  - type: RMCProjectileAccuracy
+    accuracy: 95
+    thresholds:
+    - range: 14
+      falloff: 10
+
 #Tags
+
+- type: Tag
+  id: RuMCCartridge762x54R
 
 - type: Tag
   id: RuMCWeaponLMGPKP_MS

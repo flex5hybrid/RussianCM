@@ -53,6 +53,7 @@
     currentLanguage: Russian
     defaultLanguage: Russian
 
+
   name: rumc-job-name-bear-rifleman
   description: rumc-job-callsign-bear-rifleman
   playTimeTracker: RuMCJobUPPBEARRifleman

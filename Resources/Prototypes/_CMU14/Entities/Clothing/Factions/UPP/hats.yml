@@ -43,6 +43,10 @@
     sprite: _AU14/Clothing/UPP/hats/cbrn.rsi
   - type: Clothing
     sprite: _AU14/Clothing/UPP/hats/cbrn.rsi
+  - type: CMArmor #RuMC edit start
+    melee: 5
+    bio: 90
+    explosionArmor: 1 #RuMC edit end
   - type: HideLayerClothing
     slots:
     - HeadTop

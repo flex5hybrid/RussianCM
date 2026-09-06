@@ -26,7 +26,6 @@
   - type: Gun
     selectedMode: FullAuto
     availableModes:
-    - SemiAuto
     - FullAuto
     soundGunshot:
       path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_type88.ogg
@@ -37,23 +36,21 @@
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: RMCSelectiveFire
     baseFireModes:
-    - SemiAuto
     - FullAuto
-    recoilUnwielded: 3
-    scatterWielded: 3.5
+    recoilUnwielded: 2
+    scatterWielded: 3
     scatterUnwielded: 10
-    baseFireRate: 5
+    baseFireRate: 5.5
     modifiers:
       FullAuto:
         maxScatterModifier: 8
-        unwieldedScatterMultiplier: 2
-        shotsToMaxScatter: 5
+        shotsToMaxScatter: 8
   - type: MeleeWeapon
     damage:
       types:
         Blunt: 15
   - type: RMCWeaponAccuracy
-    accuracyMultiplier: 1.5
+    accuracyMultiplier: 1.3
     accuracyMultiplierUnwielded: 0.65
   - type: ItemSlots
     slots:
@@ -67,7 +64,7 @@
           tags:
           - RuMCMagazineVAL
   - type: GunDamageModifier
-    multiplier: 1.01
+    multiplier: 1.1
   - type: AttachableHolder
     slots:
       rmc-aslot-barrel:
@@ -111,7 +108,6 @@
     heavy: 0.77
   - type: WieldDelay
     baseDelay: 0.22
-  - type: GunRequiresWield
 
 - type: entity
   parent: RuMCRifleVAL

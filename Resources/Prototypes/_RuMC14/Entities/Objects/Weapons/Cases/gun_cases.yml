@@ -169,7 +169,7 @@
   id: RuMCGunAH12Case_alt
   name: AH12 gun case
   description: Case for the AH12 rifle.
-  suffix: (mini)
+  suffix: mini
   components:
   - type: Storage
     grid:
@@ -185,13 +185,9 @@
     - id: RuMCRifleAH12
     - id: RuMCUPPPouchDrum
     - id: RuMCMagazineAH12
-    - id: RuMCMagazineAH12
-    - id: RuMCMagazineAH12
-    - id: RuMCMagazineAH12
-    - id: RuMCMagazineAH12
+      amount: 10
     - id: RuMCMagazineAH12Tracer
-    - id: RuMCMagazineAH12Tracer
-    - id: RuMCMagazineAH12Tracer
+      amount: 5
 
 - type: entity
   parent: RMCGunCaseBase
@@ -210,25 +206,11 @@
     contents:
     - id: RuMCRifleVAL
     - id: RuMCMagazineVAL
-    - id: RuMCMagazineVAL
-    - id: RuMCMagazineVAL
-    - id: RuMCMagazineVAL
-    - id: RuMCMagazineVAL
-    - id: RuMCMagazineVAL
-    - id: RuMCMagazineVAL
+      amount: 7
     - id: RuMCMagazineVALTracer
-    - id: RuMCMagazineVALTracer
-    - id: RuMCMagazineVALTracer
+      amount: 3
     - id: RuMCMagazineVALAP
-    - id: RuMCMagazineVALAP
-    - id: RuMCMagazineVALAP
-    - id: RuMCMagazineVALAP
-    - id: RuMCMagazineVALAP
-    - id: RuMCMagazineVALAP
-    - id: RuMCMagazineVALAP
-    - id: RuMCMagazineVALAP
-    - id: RuMCMagazineVALAP
-    - id: RuMCMagazineVALAP
+      amount: 10
 
 - type: entity
   parent: RMCGunCaseBase
@@ -272,6 +254,7 @@
       - RuMCMagazineAK13
       - RMCMagazineRifleAK4047
       - RMCMagazineRifleAK4047AP
+      - RuMCMagazineRifleAK4047bakelite
   - type: StorageFill
     contents:
     - id: RuMCWeaponRifleAK13
@@ -279,10 +262,37 @@
     - id: RMCMagazineRifleAK4047
     - id: RMCMagazineRifleAK4047
     - id: RMCMagazineRifleAK4047
+    - id: RuMCMagazineRifleAK4047bakelite
+    - id: RuMCMagazineRifleAK4047bakelite
+    - id: RuMCMagazineRifleAK4047bakeliteLarge
+    - id: RuMCMagazineRifleAK4047APbakelite
+
+- type: entity
+  parent: RMCGunCaseBase
+  id: RuMCGunAK4047Case
+  name: AK4047 gun case
+  description: Case for the AK4047 rifle.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,13,1
+    whitelist:
+      tags:
+      - RMCWeaponRifleAK4047
+      - RMCMagazineRifleAK4047
+      - RMCMagazineRifleAK4047AP
+      - RuMCMagazineRifleAK4047bakelite
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponRifleAK4047
     - id: RMCMagazineRifleAK4047
     - id: RMCMagazineRifleAK4047
-    - id: RMCMagazineRifleAK4047
-    - id: RMCMagazineRifleAK4047AP
+    - id: RuMCMagazineRifleAK4047bakelite
+    - id: RuMCMagazineRifleAK4047bakelite
+    - id: RuMCMagazineRifleAK4047bakelite
+    - id: RuMCMagazineRifleAK4047bakelite
+    - id: RuMCMagazineRifleAK4047bakeliteLarge
+    - id: RuMCMagazineRifleAK4047APbakelite
 
 - type: entity
   parent: RMCGunCaseBase
@@ -338,6 +348,35 @@
         amount: 4
       - id: RuMCRocketRPG_Termobaric
         amount: 3
+
+
+- type: entity
+  parent: RMCGunCaseBase
+  id: RuMCShotgunType23Case
+  name: Type23 case
+  description: Case for the Type23
+  components:
+  - type: Storage
+    maxItemSize: Ginormous
+    grid:
+    - 0,0,13,7
+  - type: StorageFill
+    contents:
+    - id: CMUWeaponShotgunType23Tactical
+    - id: RuMCUPPNavalInfantryHeavyHelmet2
+    - id: RMCBoxShotgunHeavyDragonbreath
+      amount: 5
+    - id: RMCBoxShotgunHDSG
+      amount: 2
+    - id: RMCBoxShotgunHeavyBuckshot
+      amount: 4
+    - id: RMCBoxShotgunHeavySlugs
+      amount: 4
+    - id: RMCBoxShotgunHeavyFlechette
+      amount: 4
+    - id: RuMCUPPPouchShotgunLarge
+      amount: 2
+    - id: AU14PacketGrenadeHighExplosiveUPPFilled
 
 #- type: entity
 #  parent: RMCGunCaseBase

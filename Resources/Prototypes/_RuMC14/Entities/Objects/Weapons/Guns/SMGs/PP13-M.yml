@@ -5,18 +5,23 @@
   description: The UPP assault SMG was designed for advanced assault units. The M in the name stands for "many," as there were many of them produced.
   components:
   - type: Sprite
-    sprite: _RuMC14/Objects/Weapons/Guns/SMGs/PP13M/PP13M_inhands.rsi
+    sprite: _RuMC14/Objects/Weapons/Guns/SMGs/PP13M.rsi
     layers:
     - state: base
-      sprite: _RuMC14/Objects/Weapons/Guns/SMGs/PP13M/PP13M.rsi
-    - state: bolt-open
-      sprite: _RuMC14/Objects/Weapons/Guns/SMGs/PP13M/PP13M.rsi
       map: [ "enum.GunVisualLayers.Base" ]
-    - state: mag-0
-      sprite: _RuMC14/Objects/Weapons/Guns/SMGs/PP13M/PP13M.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: ItemMapper
+    mapLayers:
+      mag-0:
+        whitelist:
+          tags:
+          - RuMCMagazinePP13M
+      #mag-1:
+      #  whitelist:
+      #    tags:
+      #    - RuMCMagazineRifleAK4047bakelite
+      #    - RuMCMagazineRifleAK4047APbakelite
   - type: Clothing
-    sprite: _RuMC14/Objects/Weapons/Guns/SMGs/PP13M/PP13M_inhands.rsi
+    sprite: _RuMC14/Objects/Weapons/Guns/SMGs/PP13M.rsi
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -32,19 +37,19 @@
     - FullAuto
     recoilWielded: 1
     recoilUnwielded: 1
-    scatterWielded: 14
+    scatterWielded: 10
     scatterUnwielded: 14
-    baseFireRate: 7.2
+    baseFireRate: 6.7
     burstScatterMult: 4
     modifiers:
       Burst:
         fireDelay: 0.0999
-        maxScatterModifier: 10
+        maxScatterModifier: 2.5
         useBurstScatterMult: true
         unwieldedScatterMultiplier: 2
         shotsToMaxScatter: 6
       FullAuto:
-        maxScatterModifier: 3
+        maxScatterModifier: 3.5
         useBurstScatterMult: true
         unwieldedScatterMultiplier: 2
         shotsToMaxScatter: 4
@@ -63,7 +68,7 @@
           tags:
           - RuMCMagazinePP13M
   - type: GunDamageModifier
-    multiplier: 1.15
+    multiplier: 1.2
   - type: AttachableHolder
     slots:
       rmc-aslot-barrel:
@@ -116,7 +121,6 @@
     - RuMCWeaponSMGPP13M
   - type: WieldDelay
     baseDelay: 0.22
-  - type: GunRequiresWield
 
 - type: entity
   parent: RuMCWeaponSMGsPP13M
@@ -185,7 +189,7 @@
     capacity: 54
     deleteWhenEmpty: false
   - type: Sprite
-    sprite: _RuMC14/Objects/Weapons/Guns/SMGs/PP13M/mag.rsi
+    sprite: _RuMC14/Objects/Weapons/Guns/Ammunition/Magazines/SMGs/PP13M.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -215,7 +219,7 @@
     capacity: 54
     deleteWhenEmpty: false
   - type: Sprite
-    sprite: _RuMC14/Objects/Weapons/Guns/SMGs/PP13M/mag.rsi
+    sprite: _RuMC14/Objects/Weapons/Guns/Ammunition/Magazines/SMGs/PP13M.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -245,7 +249,7 @@
     capacity: 54
     deleteWhenEmpty: false
   - type: Sprite
-    sprite: _RuMC14/Objects/Weapons/Guns/SMGs/PP13M/mag.rsi
+    sprite: _RuMC14/Objects/Weapons/Guns/Ammunition/Magazines/SMGs/PP13M.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
