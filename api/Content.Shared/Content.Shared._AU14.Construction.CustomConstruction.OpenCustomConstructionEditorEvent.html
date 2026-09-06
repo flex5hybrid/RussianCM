@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OpenCustomConstructionEditorEvent
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OpenCustomConstructionEditorEvent
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent">
+  
+  
+  <h1 id="Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent" data-uid="Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent" class="text-break">Class OpenCustomConstructionEditorEvent
+  </h1>
+  <div class="markdown level0 summary"><p>Server → client: open the construction-menu editor window for an entity. Sent when a permitted
+admin uses the world &quot;Add to / Change Recipe&quot; verbs, or in response to the in-menu admin button.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">OpenCustomConstructionEditorEvent</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Content.Shared._AU14.Construction.CustomConstruction.html">Content.Shared._AU14.Construction.CustomConstruction</a></h6>
+  <h6><strong>Assembly</strong>: Content.Shared.dll</h6>
+  <h5 id="Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class OpenCustomConstructionEditorEvent : EntityEventArgs</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_AvailableCategoriesBySpawnlist.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.AvailableCategoriesBySpawnlist%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Construction/CustomConstruction/CustomConstructionEditorEvents.cs/#L86">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_AvailableCategoriesBySpawnlist" data-uid="Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.AvailableCategoriesBySpawnlist">AvailableCategoriesBySpawnlist</h4>
+  <div class="markdown level1 summary"><p>Categories that exist per spawnlist, read from the generated entry files on the server. Lets the
+editor show categories for a spawnlist that was just created in-game (its entries aren't loaded as
+prototypes until the next restart, so the client can't derive them from prototypes alone).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, List&lt;string&gt;&gt; AvailableCategoriesBySpawnlist</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_AvailableSpawnlists.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.AvailableSpawnlists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Construction/CustomConstruction/CustomConstructionEditorEvents.cs/#L79">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_AvailableSpawnlists" data-uid="Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.AvailableSpawnlists">AvailableSpawnlists</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; AvailableSpawnlists</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_Category.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.Category%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Construction/CustomConstruction/CustomConstructionEditorEvents.cs/#L66">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_Category" data-uid="Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.Category">Category</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Category</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_DeconstructSteps.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.DeconstructSteps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Construction/CustomConstruction/CustomConstructionEditorEvents.cs/#L74">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_DeconstructSteps" data-uid="Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.DeconstructSteps">DeconstructSteps</h4>
+  <div class="markdown level1 summary"><p>The tool steps required to take the built structure back down (e.g. crowbar, then welder). Empty means
+the default single crowbar (Prying) step. Only tool / entity-tool steps are meaningful here - the
+material refund is always derived from the build steps. Unused for in-hand item recipes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CustomConstructionStepData&gt; DeconstructSteps</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Content.Shared._AU14.Construction.CustomConstruction.CustomConstructionStepData.html">CustomConstructionStepData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_EntryKey.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.EntryKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Construction/CustomConstruction/CustomConstructionEditorEvents.cs/#L63">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_EntryKey" data-uid="Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.EntryKey">EntryKey</h4>
+  <div class="markdown level1 summary"><p>Identifies which existing entry is being edited (one entity can have several entries with different
+spawnlist/category/recipe). Empty when adding a brand-new entry. Round-trips back in the submit event
+so the server edits the right file (and renames it if the spawnlist/category changed).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EntryKey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_Health.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.Health%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Construction/CustomConstruction/CustomConstructionEditorEvents.cs/#L77">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_Health" data-uid="Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.Health">Health</h4>
+  <div class="markdown level1 summary"><p>Optional override for the built structure's health (destruction threshold). 0 = inherit from parent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Health</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_IsEdit.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.IsEdit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Construction/CustomConstruction/CustomConstructionEditorEvents.cs/#L56">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_IsEdit" data-uid="Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.IsEdit">IsEdit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEdit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_ItemName.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.ItemName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Construction/CustomConstruction/CustomConstructionEditorEvents.cs/#L55">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_ItemName" data-uid="Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.ItemName">ItemName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ItemName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_ProtoId.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.ProtoId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Construction/CustomConstruction/CustomConstructionEditorEvents.cs/#L54">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_ProtoId" data-uid="Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.ProtoId">ProtoId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ProtoId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_Spawnlist.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.Spawnlist%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Construction/CustomConstruction/CustomConstructionEditorEvents.cs/#L65">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_Spawnlist" data-uid="Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.Spawnlist">Spawnlist</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Spawnlist</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_Steps.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.Steps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Construction/CustomConstruction/CustomConstructionEditorEvents.cs/#L67">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent_Steps" data-uid="Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent.Steps">Steps</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CustomConstructionStepData&gt; Steps</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Content.Shared._AU14.Construction.CustomConstruction.CustomConstructionStepData.html">CustomConstructionStepData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Construction_CustomConstruction_OpenCustomConstructionEditorEvent.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Construction.CustomConstruction.OpenCustomConstructionEditorEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Construction/CustomConstruction/CustomConstructionEditorEvents.cs/#L51" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

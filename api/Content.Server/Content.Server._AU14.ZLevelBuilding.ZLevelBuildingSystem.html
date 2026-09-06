@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ZLevelBuildingSystem
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ZLevelBuildingSystem
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem">
+  
+  
+  <h1 id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem" class="text-break">Class ZLevelBuildingSystem
+  </h1>
+  <div class="markdown level0 summary"><p>Building overhaul (z-level), Phase 2: dig-down on ANY map.</p>
+<p>Lazily bootstraps a CMU z-network and a stone level beneath a map the first time someone digs there, so
+vertical building works even on maps authored as single-z. Stone is generated per-chunk on demand (on dig
+and as players approach), using the existing minable <code>AsteroidRock</code> so no new art is required.</p>
+<p>Opt a map out via <a class="xref" href="../Content.Shared/Content.Shared._AU14.ZLevelBuilding.ZBuildableMapComponent.html">ZBuildableMapComponent</a> (<code>enabled: false</code>) or globally via
+<a class="xref" href="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.html#Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_GloballyEnabled">GloballyEnabled</a> in code.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ZLevelBuildingSystem</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Content.Server._AU14.ZLevelBuilding.html">Content.Server._AU14.ZLevelBuilding</a></h6>
+  <h6><strong>Assembly</strong>: Content.Server.dll</h6>
+  <h5 id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ZLevelBuildingSystem : EntitySystem</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_GloballyEnabled.md&amp;value=---%0Auid%3A%20Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.GloballyEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_AU14/ZLevelBuilding/ZLevelBuildingSystem.cs/#L53">View Source</a>
+  </span>
+  <h4 id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_GloballyEnabled" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.GloballyEnabled">GloballyEnabled</h4>
+  <div class="markdown level1 summary"><p>Global code switch for the whole building overhaul. Set to <code>false</code> to disable dig-down / lazy
+z-level generation on every map at once (per-map opt-out lives on <a class="xref" href="../Content.Shared/Content.Shared._AU14.ZLevelBuilding.ZBuildableMapComponent.html">ZBuildableMapComponent</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GloballyEnabled</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_DigDown_EntityUid_.md&amp;value=---%0Auid%3A%20Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.DigDown(EntityUid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_AU14/ZLevelBuilding/ZLevelBuildingSystem.cs/#L434">View Source</a>
+  </span>
+  <a id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_DigDown_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.DigDown*"></a>
+  <h4 id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_DigDown_EntityUid_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.DigDown(EntityUid)">DigDown(EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Digs straight down at <code data-dev-comment-type="paramref" class="paramref">digger</code>'s position.</p>
+<p>Decision order:</p>
+<ul>
+<li>A real walkable floor directly below (an upper floor of a multi-floor building) -&gt; step down onto it.</li>
+<li>Otherwise (the ground z-level, an existing stone level, or an empty/void level on a multi-z map) -&gt; dig
+into stone: ensure/generate it, clear a landing pocket, and drop the digger onto solid generated ground.</li>
+</ul>
+<p>The &quot;dig into stone even when a void level already exists below&quot; path is what stops players falling into
+space on multi-z maps such as Shepherd's Pride that have z-levels but no authored underground.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DigDown(EntityUid digger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">digger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_DigUp_EntityUid_.md&amp;value=---%0Auid%3A%20Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.DigUp(EntityUid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_AU14/ZLevelBuilding/ZLevelBuildingSystem.cs/#L546">View Source</a>
+  </span>
+  <a id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_DigUp_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.DigUp*"></a>
+  <h4 id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_DigUp_EntityUid_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.DigUp(EntityUid)">DigUp(EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Digs straight up to the level above at the SAME world x/y, so where you surface reflects how far you
+travelled underground. Blocked only if a solid wall sits directly above the spot (the &quot;wall above&quot;
+rule); open space above is fine. Fails if there is no level above (you are already at the top).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DigUp(EntityUid digger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">digger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_EnsureChunkAt_Entity_Content_Shared__AU14_ZLevelBuilding_ZGeneratedStoneComponent__EntityUid_Vector2i_.md&amp;value=---%0Auid%3A%20Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.EnsureChunkAt(Entity%7BContent.Shared._AU14.ZLevelBuilding.ZGeneratedStoneComponent%7D%2CEntityUid%2CVector2i)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_AU14/ZLevelBuilding/ZLevelBuildingSystem.cs/#L366">View Source</a>
+  </span>
+  <a id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_EnsureChunkAt_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.EnsureChunkAt*"></a>
+  <h4 id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_EnsureChunkAt_Entity_Content_Shared__AU14_ZLevelBuilding_ZGeneratedStoneComponent__EntityUid_Vector2i_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.EnsureChunkAt(Entity{Content.Shared._AU14.ZLevelBuilding.ZGeneratedStoneComponent},EntityUid,Vector2i)">EnsureChunkAt(Entity&lt;ZGeneratedStoneComponent&gt;, EntityUid, Vector2i)</h4>
+  <div class="markdown level1 summary"><p>Generates (once) the dirt/stone chunk that contains <code data-dev-comment-type="paramref" class="paramref">tile</code> on the stone level: fills
+every tile with the stone floor and plants a minable rock on each, so the player has solid ground to
+mine through. The landing pocket is cleared separately by the caller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnsureChunkAt(Entity&lt;ZGeneratedStoneComponent&gt; below, EntityUid mapUid, Vector2i tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Entity</span>&lt;<a class="xref" href="../Content.Shared/Content.Shared._AU14.ZLevelBuilding.ZGeneratedStoneComponent.html">ZGeneratedStoneComponent</a>&gt;</td>
+        <td><span class="parametername">below</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">mapUid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2i</span></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_EnsureNeighborLevel_EntityUid_System_Int32_EntityUid_Vector2_EntityUid__EntityUid__.md&amp;value=---%0Auid%3A%20Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.EnsureNeighborLevel(EntityUid%2CSystem.Int32%2CEntityUid%2CVector2%2CEntityUid%40%2CEntityUid%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_AU14/ZLevelBuilding/ZLevelBuildingSystem.cs/#L255">View Source</a>
+  </span>
+  <a id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_EnsureNeighborLevel_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.EnsureNeighborLevel*"></a>
+  <h4 id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_EnsureNeighborLevel_EntityUid_System_Int32_EntityUid_Vector2_EntityUid__EntityUid__" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.EnsureNeighborLevel(EntityUid,System.Int32,EntityUid,Vector2,EntityUid@,EntityUid@)">EnsureNeighborLevel(EntityUid, Int32, EntityUid, Vector2, out EntityUid, out EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Ensures the z-level one step in <code data-dev-comment-type="paramref" class="paramref">direction</code> from <code data-dev-comment-type="paramref" class="paramref">mapUid</code> exists (creating
+an empty linked level + grid if needed), and returns a grid on it under <code data-dev-comment-type="paramref" class="paramref">worldPos</code>. Used by
+the z-stairs to reflect a support onto the adjacent level. Does NOT generate stone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnsureNeighborLevel(EntityUid mapUid, int direction, EntityUid sourceGrid, Vector2 worldPos, out EntityUid targetMap, out EntityUid targetGrid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">mapUid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">sourceGrid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">worldPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">targetMap</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">targetGrid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_Initialize.md&amp;value=---%0Auid%3A%20Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_AU14/ZLevelBuilding/ZLevelBuildingSystem.cs/#L70">View Source</a>
+  </span>
+  <a id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_Initialize_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.Initialize*"></a>
+  <h4 id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_Initialize" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_IsEnabledOn_EntityUid_.md&amp;value=---%0Auid%3A%20Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.IsEnabledOn(EntityUid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_AU14/ZLevelBuilding/ZLevelBuildingSystem.cs/#L88">View Source</a>
+  </span>
+  <a id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_IsEnabledOn_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.IsEnabledOn*"></a>
+  <h4 id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_IsEnabledOn_EntityUid_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.IsEnabledOn(EntityUid)">IsEnabledOn(EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Whether the building overhaul is allowed to operate on the given map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnabledOn(EntityUid mapUid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">mapUid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_PrepareStoneForStair_EntityUid_EntityUid_Vector2_EntityUid__.md&amp;value=---%0Auid%3A%20Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.PrepareStoneForStair(EntityUid%2CEntityUid%2CVector2%2CEntityUid%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_AU14/ZLevelBuilding/ZLevelBuildingSystem.cs/#L201">View Source</a>
+  </span>
+  <a id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_PrepareStoneForStair_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.PrepareStoneForStair*"></a>
+  <h4 id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_PrepareStoneForStair_EntityUid_EntityUid_Vector2_EntityUid__" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.PrepareStoneForStair(EntityUid,EntityUid,Vector2,EntityUid@)">PrepareStoneForStair(EntityUid, EntityUid, Vector2, out EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Called by <a class="xref" href="Content.Server._AU14.ZLevelBuilding.ZStairSystem.html">ZStairSystem</a> when a DOWN stair is constructed: ensures a stone underground level
+exists below <code data-dev-comment-type="paramref" class="paramref">mapUid</code>, generates the landing chunk, clears a pocket at
+<code data-dev-comment-type="paramref" class="paramref">worldPos</code>, and returns the stone GRID for companion stair placement.</p>
+<p>Mirrors <span class="xref">Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.DigIntoStone(EntityUid,EntityUid,Robust.Shared.Map.EntityCoordinates,Entity{Content.Shared._AU14.ZLevelBuilding.ZGeneratedStoneComponent})</span> but does NOT teleport any entity - only prepares the underground.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PrepareStoneForStair(EntityUid mapUid, EntityUid sourceGrid, Vector2 worldPos, out EntityUid stoneGrid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">mapUid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">sourceGrid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">worldPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">stoneGrid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_Shutdown.md&amp;value=---%0Auid%3A%20Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.Shutdown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_AU14/ZLevelBuilding/ZLevelBuildingSystem.cs/#L81">View Source</a>
+  </span>
+  <a id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_Shutdown_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.Shutdown*"></a>
+  <h4 id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_Shutdown" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.Shutdown">Shutdown()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Shutdown()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_Update_System_Single_.md&amp;value=---%0Auid%3A%20Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.Update(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_AU14/ZLevelBuilding/ZLevelBuildingSystem.cs/#L773">View Source</a>
+  </span>
+  <a id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_Update_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.Update*"></a>
+  <h4 id="Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem_Update_System_Single_" data-uid="Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem.Update(System.Single)">Update(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(float frameTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">frameTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__AU14_ZLevelBuilding_ZLevelBuildingSystem.md&amp;value=---%0Auid%3A%20Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_AU14/ZLevelBuilding/ZLevelBuildingSystem.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

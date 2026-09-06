@@ -1,0 +1,740 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FlamabilityComponent
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FlamabilityComponent
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent">
+  
+  
+  <h1 id="Content_Shared__AU14_Fire_FlamabilityComponent" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent" class="text-break">Class FlamabilityComponent
+  </h1>
+  <div class="markdown level0 summary"><p>Marks an entity as participating in the AU14 fire spread system.
+This is independent of the existing RMC FlammableComponent and
+handles entity-to-entity fire propagation with per-entity tuning.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FlamabilityComponent</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Content.Shared._AU14.Fire.html">Content.Shared._AU14.Fire</a></h6>
+  <h6><strong>Assembly</strong>: Content.Shared.dll</h6>
+  <h5 id="Content_Shared__AU14_Fire_FlamabilityComponent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FlamabilityComponent : Component</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_BurnDurationMax.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.BurnDurationMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L48">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_BurnDurationMax" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.BurnDurationMax">BurnDurationMax</h4>
+  <div class="markdown level1 summary"><p>Maximum time before fire burns out if the entity survives.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan BurnDurationMax</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_BurnDurationMin.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.BurnDurationMin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L44">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_BurnDurationMin" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.BurnDurationMin">BurnDurationMin</h4>
+  <div class="markdown level1 summary"><p>Minimum time before fire burns out if the entity survives.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan BurnDurationMin</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_BurnEndTime.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.BurnEndTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L94">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_BurnEndTime" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.BurnEndTime">BurnEndTime</h4>
+  <div class="markdown level1 summary"><p>Runtime: when this fire should burn out (set at ignition).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan BurnEndTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_Burnt.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.Burnt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L91">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_Burnt" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.Burnt">Burnt</h4>
+  <div class="markdown level1 summary"><p>Runtime: once burnt out, entity can no longer be ignited.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Burnt</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_Chance.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.Chance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L18">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_Chance" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.Chance">Chance</h4>
+  <div class="markdown level1 summary"><p>Probability (0–1) that this entity catches fire when a burning neighbour
+is within spread range. Acted on each spread tick per neighbour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Chance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_CurrentPats.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.CurrentPats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L85">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_CurrentPats" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.CurrentPats">CurrentPats</h4>
+  <div class="markdown level1 summary"><p>Runtime: how many pats have been applied to the current fire.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentPats</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_DestroyAnyway.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.DestroyAnyway%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L74">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_DestroyAnyway" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.DestroyAnyway">DestroyAnyway</h4>
+  <div class="markdown level1 summary"><p>When true, the entity is deleted when the fire burns out by natural duration expiry.
+Manual extinguishing (pats, ExtinguishEvent) does not trigger deletion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DestroyAnyway</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_FireVisualEntity.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.FireVisualEntity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L88">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_FireVisualEntity" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.FireVisualEntity">FireVisualEntity</h4>
+  <div class="markdown level1 summary"><p>Runtime: child entity used for the fire visual overlay (server-side only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityUid? FireVisualEntity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">EntityUid</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_NextDamageTime.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.NextDamageTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L100">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_NextDamageTime" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.NextDamageTime">NextDamageTime</h4>
+  <div class="markdown level1 summary"><p>Runtime: game time of the next damage tick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan NextDamageTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_NextSpreadTime.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.NextSpreadTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L97">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_NextSpreadTime" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.NextSpreadTime">NextSpreadTime</h4>
+  <div class="markdown level1 summary"><p>Runtime: game time of the next spread attempt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan NextSpreadTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_OnFire.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.OnFire%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L82">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_OnFire" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.OnFire">OnFire</h4>
+  <div class="markdown level1 summary"><p>Runtime: whether this entity is currently on fire.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnFire</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_PatsToExtinguish.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.PatsToExtinguish%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L78">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_PatsToExtinguish" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.PatsToExtinguish">PatsToExtinguish</h4>
+  <div class="markdown level1 summary"><p>Number of melee pats required to extinguish this entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PatsToExtinguish</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_Range.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.Range%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L32">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_Range" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.Range">Range</h4>
+  <div class="markdown level1 summary"><p>Multiplier on the base spread radius (default 3 tiles).
+A value of 2 means fire from this entity can reach 6 tiles away.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Range</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_Rate.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.Rate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L25">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_Rate" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.Rate">Rate</h4>
+  <div class="markdown level1 summary"><p>Damage (in HP) dealt to this entity per second while it is on fire.
+Damage type is Heat.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Rate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_ScatterFireChance.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.ScatterFireChance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L55">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_ScatterFireChance" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.ScatterFireChance">ScatterFireChance</h4>
+  <div class="markdown level1 summary"><p>Probability (0–1) that when this entity successfully ignites another entity, scattered
+tile fires are spawned in a radius around this entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ScatterFireChance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_ScatterFireMaxCount.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.ScatterFireMaxCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L67">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_ScatterFireMaxCount" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.ScatterFireMaxCount">ScatterFireMaxCount</h4>
+  <div class="markdown level1 summary"><p>Maximum number of tile fires to scatter when a scatter roll succeeds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ScatterFireMaxCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_ScatterFireMinCount.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.ScatterFireMinCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L63">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_ScatterFireMinCount" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.ScatterFireMinCount">ScatterFireMinCount</h4>
+  <div class="markdown level1 summary"><p>Minimum number of tile fires to scatter when a scatter roll succeeds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ScatterFireMinCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_ScatterFireRadius.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.ScatterFireRadius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L59">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_ScatterFireRadius" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.ScatterFireRadius">ScatterFireRadius</h4>
+  <div class="markdown level1 summary"><p>Radius in tiles within which scattered tile fires can be spawned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ScatterFireRadius</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent_Spread.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent.Spread%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L40">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Fire_FlamabilityComponent_Spread" data-uid="Content.Shared._AU14.Fire.FlamabilityComponent.Spread">Spread</h4>
+  <div class="markdown level1 summary"><p>Multiplier on how quickly this entity tries to spread fire.
+Higher values cause more frequent spread attempts.
+A value of 2 means spread ticks twice as often.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Spread</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Fire_FlamabilityComponent.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Fire.FlamabilityComponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Fire/FlamabilityComponent.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

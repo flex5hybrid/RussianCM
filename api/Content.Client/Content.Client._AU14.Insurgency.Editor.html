@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Content.Client._AU14.Insurgency.Editor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Content.Client._AU14.Insurgency.Editor
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Client._AU14.Insurgency.Editor">
+  
+  <h1 id="Content_Client__AU14_Insurgency_Editor" data-uid="Content.Client._AU14.Insurgency.Editor" class="text-break">Namespace Content.Client._AU14.Insurgency.Editor
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Content.Client._AU14.Insurgency.Editor.InsurgencyEditorHelpWindow.html">InsurgencyEditorHelpWindow</a></h4>
+      <section><p>A plain, scrollable explanation of every field in the INSFOR faction editor, so a host can build a
+faction without reading code. Opened by the Help button at the top of the editor. Kept as simple
+bold-heading + paragraph pairs; no markup tricks, so it stays readable in the terminal-style UI.</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Insurgency.Editor.InsurgencyEntityPickerWindow.html">InsurgencyEntityPickerWindow</a></h4>
+      <section><p>Searchable &quot;select an entity&quot; picker: a search box over every spawnable entity prototype and
+a scrollable list of rows, each showing the entity's sprite next to its name and id. Clicking
+a row selects it and closes. Same shape as the construction menu's entity selector so the
+editor never asks anyone to type a prototype id.</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Insurgency.Editor.InsurgencyFactionEditorEui.html">InsurgencyFactionEditorEui</a></h4>
+      <section><p>Client side of the Default-faction editor. Shares its type name with the server EUI so the
+EUI manager pairs them. Turns window actions into bound messages and pushes server state into
+the window.</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Insurgency.Editor.InsurgencyFactionEditorWindow.html">InsurgencyFactionEditorWindow</a></h4>
+      <section><p>Programmatic editor window for INSFOR Default factions. Built in code rather than XAML to
+avoid the XAML codegen traps and to keep the many list editors in one readable place.</p>
+<p>Quality-of-life first: nobody types a prototype id. Entities are chosen from a searchable
+sprite picker, and jobs / ships / faction icons from searchable option lists. Free text is
+only for genuine free text (titles, descriptions) and numbers (costs, amounts).</p>
+<p>The window edits a working copy of a <a class="xref" href="../Content.Shared/Content.Shared._AU14.Insurgency.FactionDefinition.html">FactionDefinition</a> and sends the whole
+thing to the server on Save. The server clamps and revalidates before storing, so this UI is
+only a convenience; it never has the final say on any value.</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Insurgency.Editor.InsurgencyProtoPickerWindow.html">InsurgencyProtoPickerWindow</a></h4>
+      <section><p>Searchable list picker for plain (id, label) options: jobs, ships, faction icons, and the
+like. Same search-and-click shape as the entity picker but without sprites. Keeps the editor
+free of typed prototype ids for these fields too.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

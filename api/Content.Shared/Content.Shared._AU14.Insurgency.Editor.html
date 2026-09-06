@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Content.Shared._AU14.Insurgency.Editor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Content.Shared._AU14.Insurgency.Editor
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Shared._AU14.Insurgency.Editor">
+  
+  <h1 id="Content_Shared__AU14_Insurgency_Editor" data-uid="Content.Shared._AU14.Insurgency.Editor" class="text-break">Namespace Content.Shared._AU14.Insurgency.Editor
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.Editor.EditorFactionEntry.html">EditorFactionEntry</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.Editor.InsurgencyExportSheetMessage.html">InsurgencyExportSheetMessage</a></h4>
+      <section><p>Client asks the server to build a ready-to-fill faction spreadsheet (.xlsx bytes). The server
+bakes every valid entity/icon/job/flag/platoon (by localized name) into the workbook's dropdowns
+and embeds the field help, then replies with <a class="xref" href="Content.Shared._AU14.Insurgency.Editor.InsurgencyExportSheetResultMessage.html">InsurgencyExportSheetResultMessage</a>.
+When <a class="xref" href="Content.Shared._AU14.Insurgency.Editor.InsurgencyExportSheetMessage.html#Content_Shared__AU14_Insurgency_Editor_InsurgencyExportSheetMessage_FactionId">FactionId</a> is set, the sheet is pre-filled with that stored faction's data so a
+host can round-trip an existing faction; when null it is a blank template to hand to a player.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.Editor.InsurgencyExportSheetResultMessage.html">InsurgencyExportSheetResultMessage</a></h4>
+      <section><p>Server's reply carrying the generated workbook as raw .xlsx bytes plus a suggested file name.
+The client writes it to disk via a save dialog. No macros, so the player who receives it just
+fills the dropdowns and sends it back - nothing to enable or install.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.Editor.InsurgencyFactionDeleteMessage.html">InsurgencyFactionDeleteMessage</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.Editor.InsurgencyFactionEditorEuiState.html">InsurgencyFactionEditorEuiState</a></h4>
+      <section><p>State pushed to the faction editor client. Carries every stored faction as a full
+<a class="xref" href="Content.Shared._AU14.Insurgency.FactionDefinition.html">FactionDefinition</a> (already NetSerializable) plus the round's current GOVFOR
+platoon id so the editor can hint which factions currently match.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.Editor.InsurgencyFactionRefreshMessage.html">InsurgencyFactionRefreshMessage</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.Editor.InsurgencyFactionSaveMessage.html">InsurgencyFactionSaveMessage</a></h4>
+      <section><p>Create (Id null) or update (Id set) a faction. The server revalidates and clamps the
+definition before storing; client-sent values are never trusted as-is.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.Editor.InsurgencyFactionSelectMessage.html">InsurgencyFactionSelectMessage</a></h4>
+      <section><p>Apply a stored faction for the current round. Server revalidates GOVFOR matching.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.Editor.InsurgencyImportSheetMessage.html">InsurgencyImportSheetMessage</a></h4>
+      <section><p>Client uploads a filled-in faction spreadsheet (.xlsx bytes) to be imported. The server reads the
+known sheets into a <a class="xref" href="Content.Shared._AU14.Insurgency.FactionDefinition.html">FactionDefinition</a> and runs it through the same validator every
+untrusted payload passes (caps + unknown-prototype stripping), so nothing in the file is trusted
+as-is. Only the cell values are ever read; no formulas or macros are executed.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.Editor.InsurgencyEditorScope.html">InsurgencyEditorScope</a></h4>
+      <section><p>The two faction-editor entry points. Default is the host-flag INSFOR editor over host-authored
+factions; Custom is the separate editor (own console command, own authorization gate) over
+player-authored Custom factions only.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

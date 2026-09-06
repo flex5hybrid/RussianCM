@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Content.Shared._AU14.SavedBuilds
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Content.Shared._AU14.SavedBuilds
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Shared._AU14.SavedBuilds">
+  
+  <h1 id="Content_Shared__AU14_SavedBuilds" data-uid="Content.Shared._AU14.SavedBuilds" class="text-break">Namespace Content.Shared._AU14.SavedBuilds
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.BuildPartnerListEvent.html">BuildPartnerListEvent</a></h4>
+      <section><p>Server -&gt; client: the online players (minus the viewer) with their partner status.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.BuildSelectionResultEvent.html">BuildSelectionResultEvent</a></h4>
+      <section><p>Server -&gt; client: the resolved, whitelisted entities to highlight.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.ClearBuildPartnersEvent.html">ClearBuildPartnersEvent</a></h4>
+      <section><p>Client -&gt; server: revoke ALL of my build partners at once. Replies with a fresh list.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.PlayerBuiltComponent.html">PlayerBuiltComponent</a></h4>
+      <section><p>Stamped on any entity a player constructs. Doubles as:</p>
+<ul>
+<li>an accountability/logging mark (the builder's hidden user id),</li>
+<li>an examine line showing the builder's character name, and</li>
+<li>the &quot;soft-whitelist&quot; used by the saved-builds feature: only entities carrying this
+component (built by the saver, or by someone who added the saver as a build partner)
+may be captured into a saved build.</li>
+</ul>
+<p>Server-authoritative: this component is never networked, so <a class="xref" href="Content.Shared._AU14.SavedBuilds.PlayerBuiltComponent.html#Content_Shared__AU14_SavedBuilds_PlayerBuiltComponent_BuilderUserId">BuilderUserId</a>
+stays hidden from clients. The examine line is pushed by the server.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.RequestBuildPartnerListEvent.html">RequestBuildPartnerListEvent</a></h4>
+      <section><p>Client -&gt; server: send me the list of online players and whether each is currently my partner.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.RequestBuildSelectionEvent.html">RequestBuildSelectionEvent</a></h4>
+      <section><p>Client -&gt; server: resolve this selection and send back the highlight set.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.RequestPlaceBuildEvent.html">RequestPlaceBuildEvent</a></h4>
+      <section><p>Client -&gt; server: place a saved build at <a class="xref" href="Content.Shared._AU14.SavedBuilds.RequestPlaceBuildEvent.html#Content_Shared__AU14_SavedBuilds_RequestPlaceBuildEvent_Target">Target</a>, rotated by <a class="xref" href="Content.Shared._AU14.SavedBuilds.RequestPlaceBuildEvent.html#Content_Shared__AU14_SavedBuilds_RequestPlaceBuildEvent_Rotation">Rotation</a> radians.
+The build file lives on the CLIENT, so the client uploads its YAML here; the server re-validates the
+caller's admin flags (Spawn/Mapping) and size caps before loading anything from it.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.RequestSaveBuildEvent.html">RequestSaveBuildEvent</a></h4>
+      <section><p>Client -&gt; server: save the resolved selection under <a class="xref" href="Content.Shared._AU14.SavedBuilds.RequestSaveBuildEvent.html#Content_Shared__AU14_SavedBuilds_RequestSaveBuildEvent_Name">Name</a>.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.SavedBuildDataEvent.html">SavedBuildDataEvent</a></h4>
+      <section><p>Server -&gt; client (requester ONLY): the serialized build produced by a save request. The CLIENT writes
+this to its own local user-data folder - saved builds are private local files, never stored on or
+listed by the server, and shared by players copying files between their folders themselves.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.SetBuildPartnerEvent.html">SetBuildPartnerEvent</a></h4>
+      <section><p>Client -&gt; server: grant (<a class="xref" href="Content.Shared._AU14.SavedBuilds.SetBuildPartnerEvent.html#Content_Shared__AU14_SavedBuilds_SetBuildPartnerEvent_Add">Add</a> true) or revoke a player's access to my builds.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.BuildPartnerInfo.html">BuildPartnerInfo</a></h4>
+      <section><p>One online player in the partner-management window.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.BuildPreviewEntity.html">BuildPreviewEntity</a></h4>
+      <section><p>One entity in a build's placement preview: prototype + position relative to the anchor.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.BuildPreviewTile.html">BuildPreviewTile</a></h4>
+      <section><p>One tile in a saved build's placement preview: tile id + position relative to the anchor.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.BuildSelectionBox.html">BuildSelectionBox</a></h4>
+      <section><p>A square tile-range box used to select build entities. <a class="xref" href="Content.Shared._AU14.SavedBuilds.BuildSelectionBox.html#Content_Shared__AU14_SavedBuilds_BuildSelectionBox_Radius">Radius</a> is the half-extent in
+tiles, so a radius of 2 selects a 5x5 area centred on <a class="xref" href="Content.Shared._AU14.SavedBuilds.BuildSelectionBox.html#Content_Shared__AU14_SavedBuilds_BuildSelectionBox_Center">Center</a> (max 5 =&gt; 11x11).</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.BuildSelectionData.html">BuildSelectionData</a></h4>
+      <section><p>Describes a build selection: the union of any number of range boxes, plus entities the player
+manually clicked to include or exclude. The server is authoritative — it resolves this descriptor
+against the soft-whitelist (<a class="xref" href="Content.Shared._AU14.SavedBuilds.PlayerBuiltComponent.html">PlayerBuiltComponent</a> + build-partner grants) to produce
+the actual entity set, both for highlighting and for saving.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.BuildSelectionTile.html">BuildSelectionTile</a></h4>
+      <section><p>One selected grid tile, used by mapper-mode tile saving.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.SavedBuildInfo.html">SavedBuildInfo</a></h4>
+      <section><p>Metadata for one saved build, shown in the &quot;Saved Builds&quot; construction-menu spawnlist.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Content.Shared._AU14.SavedBuilds.BuildSaveMode.html">BuildSaveMode</a></h4>
+      <section><p>Which selection/placement ruleset a saved-build action runs under. The server re-validates the caller's
+admin flags for any privileged mode, so a client asking for a mode it isn't authorized for is rejected.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

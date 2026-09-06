@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GeneralAnnounceSystem
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GeneralAnnounceSystem
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem">
+  
+  
+  <h1 id="Content_Server__RMC14_Announce_GeneralAnnounceSystem" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem" class="text-break">Class GeneralAnnounceSystem
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Robust.Shared.GameObjects.EntitySystem</span></div>
+    <div class="level2"><span class="xref">GeneralAnnounceSystem</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Robust.Shared.GameObjects.IEntitySystem</span></div>
+    <div><span class="xref">Robust.Shared.GameObjects.IEntityEventSubscriber</span></div>
+    <div><span class="xref">Robust.Shared.IoC.IPostInjectInit</span></div>
+  </div>
+  <div class="inheritedMembers">
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Content.Server._RMC14.Announce.html">Content.Server._RMC14.Announce</a></h6>
+  <h6><strong>Assembly</strong>: Content.Server.dll</h6>
+  <h5 id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class GeneralAnnounceSystem : EntitySystem, IEntitySystem, IEntityEventSubscriber, IPostInjectInit</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnouncementStyle.md&amp;value=---%0Auid%3A%20Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnouncementStyle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_RMC14/Announce/Systems/GeneralAnnounceSystem.Helpers.cs/#L168">View Source</a>
+  </span>
+  <h4 id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnouncementStyle" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnouncementStyle">AnnouncementStyle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required AnnouncementStyle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">required</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__RMC14_Announce_GeneralAnnounceSystem_Announce_System_String_System_String_System_Nullable_Content_Shared__RMC14_Announce_AnnouncementTarget__.md&amp;value=---%0Auid%3A%20Content.Server._RMC14.Announce.GeneralAnnounceSystem.Announce(System.String%2CSystem.String%2CSystem.Nullable%7BContent.Shared._RMC14.Announce.AnnouncementTarget%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_RMC14/Announce/Systems/GeneralAnnounceSystem.cs/#L51">View Source</a>
+  </span>
+  <a id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_Announce_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.Announce*"></a>
+  <h4 id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_Announce_System_String_System_String_System_Nullable_Content_Shared__RMC14_Announce_AnnouncementTarget__" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.Announce(System.String,System.String,System.Nullable{Content.Shared._RMC14.Announce.AnnouncementTarget})">Announce(String, String, Nullable&lt;AnnouncementTarget&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Announce(string preset, string message, AnnouncementTarget? target = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">preset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Content.Shared/Content.Shared._RMC14.Announce.AnnouncementTarget.html">AnnouncementTarget</a>&gt;</td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceAdvanced_Content_Shared__RMC14_Announce_AnnouncementRequest_.md&amp;value=---%0Auid%3A%20Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceAdvanced(Content.Shared._RMC14.Announce.AnnouncementRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_RMC14/Announce/Systems/GeneralAnnounceSystem.cs/#L63">View Source</a>
+  </span>
+  <a id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceAdvanced_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceAdvanced*"></a>
+  <h4 id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceAdvanced_Content_Shared__RMC14_Announce_AnnouncementRequest_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceAdvanced(Content.Shared._RMC14.Announce.AnnouncementRequest)">AnnounceAdvanced(AnnouncementRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnnounceAdvanced(AnnouncementRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Content.Shared/Content.Shared._RMC14.Announce.AnnouncementRequest.html">AnnouncementRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceAdvanced_Content_Shared__RMC14_Announce_AnnouncementRequest_Robust_Shared_Player_Filter_.md&amp;value=---%0Auid%3A%20Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceAdvanced(Content.Shared._RMC14.Announce.AnnouncementRequest%2CRobust.Shared.Player.Filter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_RMC14/Announce/Systems/GeneralAnnounceSystem.cs/#L72">View Source</a>
+  </span>
+  <a id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceAdvanced_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceAdvanced*"></a>
+  <h4 id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceAdvanced_Content_Shared__RMC14_Announce_AnnouncementRequest_Robust_Shared_Player_Filter_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceAdvanced(Content.Shared._RMC14.Announce.AnnouncementRequest,Robust.Shared.Player.Filter)">AnnounceAdvanced(AnnouncementRequest, Filter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnnounceAdvanced(AnnouncementRequest request, Filter filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Content.Shared/Content.Shared._RMC14.Announce.AnnouncementRequest.html">AnnouncementRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Robust.Shared.Player.Filter</span></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceARES_System_Nullable_Robust_Shared_GameObjects_EntityUid__System_String_Robust_Shared_Audio_SoundSpecifier_.md&amp;value=---%0Auid%3A%20Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceARES(System.Nullable%7BRobust.Shared.GameObjects.EntityUid%7D%2CSystem.String%2CRobust.Shared.Audio.SoundSpecifier)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_RMC14/Announce/Systems/GeneralAnnounceSystem.Api.cs/#L50">View Source</a>
+  </span>
+  <a id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceARES_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceARES*"></a>
+  <h4 id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceARES_System_Nullable_Robust_Shared_GameObjects_EntityUid__System_String_Robust_Shared_Audio_SoundSpecifier_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceARES(System.Nullable{Robust.Shared.GameObjects.EntityUid},System.String,Robust.Shared.Audio.SoundSpecifier)">AnnounceARES(Nullable&lt;EntityUid&gt;, String, SoundSpecifier)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnnounceARES(EntityUid? source, string message, SoundSpecifier sound = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Robust.Shared.GameObjects.EntityUid</span>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Robust.Shared.Audio.SoundSpecifier</span></td>
+        <td><span class="parametername">sound</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceAsPlayer_Robust_Shared_GameObjects_EntityUid_System_String_System_Nullable_System_String__Content_Shared__RMC14_Announce_AnnouncementTarget_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceAsPlayer(Robust.Shared.GameObjects.EntityUid%2CSystem.String%2CSystem.Nullable%7BSystem.String%7D%2CContent.Shared._RMC14.Announce.AnnouncementTarget%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_RMC14/Announce/Systems/GeneralAnnounceSystem.Api.cs/#L14">View Source</a>
+  </span>
+  <a id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceAsPlayer_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceAsPlayer*"></a>
+  <h4 id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceAsPlayer_Robust_Shared_GameObjects_EntityUid_System_String_System_Nullable_System_String__Content_Shared__RMC14_Announce_AnnouncementTarget_System_Nullable_System_String__" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceAsPlayer(Robust.Shared.GameObjects.EntityUid,System.String,System.Nullable{System.String},Content.Shared._RMC14.Announce.AnnouncementTarget,System.Nullable{System.String})">AnnounceAsPlayer(EntityUid, String, Nullable&lt;String&gt;, AnnouncementTarget, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnnounceAsPlayer(EntityUid playerEntity, string message, string? presetId = null, AnnouncementTarget target = AnnouncementTarget.All, string? roleOverride = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Robust.Shared.GameObjects.EntityUid</span></td>
+        <td><span class="parametername">playerEntity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">presetId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Content.Shared/Content.Shared._RMC14.Announce.AnnouncementTarget.html">AnnouncementTarget</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">roleOverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceCLF_System_Nullable_Robust_Shared_GameObjects_EntityUid__System_String_Robust_Shared_Audio_SoundSpecifier_.md&amp;value=---%0Auid%3A%20Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceCLF(System.Nullable%7BRobust.Shared.GameObjects.EntityUid%7D%2CSystem.String%2CRobust.Shared.Audio.SoundSpecifier)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_RMC14/Announce/Systems/GeneralAnnounceSystem.Api.cs/#L77">View Source</a>
+  </span>
+  <a id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceCLF_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceCLF*"></a>
+  <h4 id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceCLF_System_Nullable_Robust_Shared_GameObjects_EntityUid__System_String_Robust_Shared_Audio_SoundSpecifier_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceCLF(System.Nullable{Robust.Shared.GameObjects.EntityUid},System.String,Robust.Shared.Audio.SoundSpecifier)">AnnounceCLF(Nullable&lt;EntityUid&gt;, String, SoundSpecifier)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnnounceCLF(EntityUid? source, string message, SoundSpecifier sound = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Robust.Shared.GameObjects.EntityUid</span>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Robust.Shared.Audio.SoundSpecifier</span></td>
+        <td><span class="parametername">sound</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceCritical_System_String_.md&amp;value=---%0Auid%3A%20Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceCritical(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_RMC14/Announce/Systems/GeneralAnnounceSystem.Api.cs/#L65">View Source</a>
+  </span>
+  <a id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceCritical_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceCritical*"></a>
+  <h4 id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceCritical_System_String_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceCritical(System.String)">AnnounceCritical(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnnounceCritical(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceHighCommand_System_String_System_Nullable_System_String__Robust_Shared_Audio_SoundSpecifier_.md&amp;value=---%0Auid%3A%20Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceHighCommand(System.String%2CSystem.Nullable%7BSystem.String%7D%2CRobust.Shared.Audio.SoundSpecifier)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_RMC14/Announce/Systems/GeneralAnnounceSystem.Api.cs/#L33">View Source</a>
+  </span>
+  <a id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceHighCommand_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceHighCommand*"></a>
+  <h4 id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_AnnounceHighCommand_System_String_System_Nullable_System_String__Robust_Shared_Audio_SoundSpecifier_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.AnnounceHighCommand(System.String,System.Nullable{System.String},Robust.Shared.Audio.SoundSpecifier)">AnnounceHighCommand(String, Nullable&lt;String&gt;, SoundSpecifier)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnnounceHighCommand(string message, string? author = null, SoundSpecifier sound = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">author</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Robust.Shared.Audio.SoundSpecifier</span></td>
+        <td><span class="parametername">sound</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__RMC14_Announce_GeneralAnnounceSystem_Initialize.md&amp;value=---%0Auid%3A%20Content.Server._RMC14.Announce.GeneralAnnounceSystem.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_RMC14/Announce/Systems/GeneralAnnounceSystem.cs/#L34">View Source</a>
+  </span>
+  <a id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_Initialize_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.Initialize*"></a>
+  <h4 id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_Initialize" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Robust.Shared.GameObjects.EntitySystem.Initialize()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__RMC14_Announce_GeneralAnnounceSystem_Shutdown.md&amp;value=---%0Auid%3A%20Content.Server._RMC14.Announce.GeneralAnnounceSystem.Shutdown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_RMC14/Announce/Systems/GeneralAnnounceSystem.cs/#L45">View Source</a>
+  </span>
+  <a id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_Shutdown_" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.Shutdown*"></a>
+  <h4 id="Content_Server__RMC14_Announce_GeneralAnnounceSystem_Shutdown" data-uid="Content.Server._RMC14.Announce.GeneralAnnounceSystem.Shutdown">Shutdown()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Shutdown()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Robust.Shared.GameObjects.EntitySystem.Shutdown()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Robust.Shared.GameObjects.IEntitySystem</span>
+  </div>
+  <div>
+      <span class="xref">Robust.Shared.GameObjects.IEntityEventSubscriber</span>
+  </div>
+  <div>
+      <span class="xref">Robust.Shared.IoC.IPostInjectInit</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Server__RMC14_Announce_GeneralAnnounceSystem.md&amp;value=---%0Auid%3A%20Content.Server._RMC14.Announce.GeneralAnnounceSystem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Server/_RMC14/Announce/Systems/GeneralAnnounceSystem.Preferences.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

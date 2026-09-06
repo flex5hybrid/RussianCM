@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Content.Client._AU14.Construction.CustomConstruction
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Content.Client._AU14.Construction.CustomConstruction
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Client._AU14.Construction.CustomConstruction">
+  
+  <h1 id="Content_Client__AU14_Construction_CustomConstruction" data-uid="Content.Client._AU14.Construction.CustomConstruction" class="text-break">Namespace Content.Client._AU14.Construction.CustomConstruction
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.ConstructionEditorWindow.html">ConstructionEditorWindow</a></h4>
+      <section><p>The &quot;drastically improved&quot; add/change-recipe editor: spawnlist + category dropdowns (each with an
+&quot;Add new…&quot; option; a new spawnlist is confirmed with a button, then the category list updates to
+that spawnlist), plus a step builder. Materials are chosen from a dropdown of common materials with
+a &quot;Custom&quot; stack-id field that is validated. Submitting fires <a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.ConstructionEditorWindow.html#Content_Client__AU14_Construction_CustomConstruction_ConstructionEditorWindow_OnSubmit">OnSubmit</a>.</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.CustomConstructionEditorClientSystem.html">CustomConstructionEditorClientSystem</a></h4>
+      <section><p>Client side of the construction-menu editor. Opens <a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.ConstructionEditorWindow.html">ConstructionEditorWindow</a> when the
+server requests it (after a permitted admin uses a world verb) and relays the confirmed result back
+to the server. Also drives the in-menu &quot;Construction Items Editor&quot; utility: opens the entity selector,
+then asks the server to open the editor for the chosen entity (with a client-side admin pre-check).</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.DbSavePreviewWindow.html">DbSavePreviewWindow</a></h4>
+      <section><p>Human-in-the-loop save confirmation: before a Save is committed, the server sends back the exact list
+of file writes and database rows the save would produce (from the same validation pass the real save
+runs), and this window shows it as a scrollable list with one final Confirm. Cancel drops the save
+entirely - nothing has been written at that point.</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.EntityParentIndex.html">EntityParentIndex</a></h4>
+      <section><p>Search/ancestry index over every selectable entity prototype, shared by the multi-select pickers
+(Mass Entity Editor, Z-Sync Lists): display names, lowercase haystacks, and full ancestor chains
+with ABSTRACT parents included (EnumerateAllParents; falls back to walking raw &quot;parent:&quot; YAML
+mappings if the enumeration yields nothing client-side).</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.EntitySelectorWindow.html">EntitySelectorWindow</a></h4>
+      <section><p>Entity-Spawn-Panel-style picker reshaped for SELECTION: a search box over every spawnable entity
+prototype and a scrollable list of rows showing each entity's SPRITE next to its name + id. Clicking a
+row picks it. The list is virtualized (<a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.VirtualEntityList.html">VirtualEntityList</a>) so it scrolls through the entire
+prototype set without lag. Reused by the construction editor (choose a custom material/tool entity) and
+by the in-menu &quot;Construction Items Editor&quot; utility. Fires <a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.EntitySelectorWindow.html#Content_Client__AU14_Construction_CustomConstruction_EntitySelectorWindow_OnEntitySelected">OnEntitySelected</a>.</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.LatheEditorWindow.html">LatheEditorWindow</a></h4>
+      <section><p>The &quot;Lathe Editor&quot; (Admin Tools): add a print recipe to the CM autolathe or armylathe. Pick which lathe,
+pick the item to print (via the shared entity selector), set its steel/glass/plastic cost and print time,
+and save. Fires <a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.LatheEditorWindow.html#Content_Client__AU14_Construction_CustomConstruction_LatheEditorWindow_OnSubmit">OnSubmit</a>; the server writes the recipe and rebuilds the lathe's pack.</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.MassEntitySelectorWindow.html">MassEntitySelectorWindow</a></h4>
+      <section><p>Multi-select entity picker for the &quot;Mass Entity Editor&quot;: rows toggle-select, a searchable parent DROPDOWN
+narrows by ancestor prototype (abstract parents like BaseWall included), and &quot;Select All Shown&quot; grabs the
+entire filtered set. The list itself is virtualized (<a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.VirtualEntityList.html">VirtualEntityList</a>) so it scrolls through
+every entity in the game without building tens of thousands of sprite rows up front. Confirm fires
+<a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.MassEntitySelectorWindow.html#Content_Client__AU14_Construction_CustomConstruction_MassEntitySelectorWindow_OnEntitiesSelected">OnEntitiesSelected</a> with every selected id.</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.MassTileConfigWindow.html">MassTileConfigWindow</a></h4>
+      <section><p>The one shared cost/placement form for the Mass Entity Editor's TILES mode: pick the top-bar page
+(Z-Level or a spawnlist), category, material and amount, and the server applies it to every selected
+tile as its own independent recipe. Fires <a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.MassTileConfigWindow.html#Content_Client__AU14_Construction_CustomConstruction_MassTileConfigWindow_OnSubmit">OnSubmit</a> (tile ids are filled in by the caller).</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.RecipeChooserWindow.html">RecipeChooserWindow</a></h4>
+      <section><p>Shown when an admin opens the Construction Items Editor for an entity that ALREADY has recipe entries:
+lists each existing recipe with Change / Remove buttons, plus an &quot;Add new recipe&quot; button. Picking Change or
+Add opens the full editor; Remove deletes that entry. Fires the corresponding events.</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.SpawnlistDeleteWindow.html">SpawnlistDeleteWindow</a></h4>
+      <section><p>The Spawnlist Delete tool window (Admin Tools &gt; Delete Spawnlist): pick a spawnlist from a dropdown
+(never typed by hand - see the editor UI QoL rules) showing how many generated recipes it holds, then
+confirm through an armed two-step delete with a delay, since this wipes every recipe in the spawnlist.</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.TileEditorWindow.html">TileEditorWindow</a></h4>
+      <section><p>The &quot;Tiles Editor&quot; (Admin Tools): pick a tile from a searchable list, choose which MAIN CATEGORY (the
+Z-Level page or the normal Spawnlists page) it lands on, set its material cost, and save. The server turns
+the chosen tile into a buildable tile-applier entity + recipe. Fires <a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.TileEditorWindow.html#Content_Client__AU14_Construction_CustomConstruction_TileEditorWindow_OnSubmit">OnSubmit</a>.</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.VirtualEntityList.html">VirtualEntityList</a></h4>
+      <section><p>Virtualized entity list for the construction-menu pickers: the scrollbar spans EVERY item, but only the
+rows actually on screen exist as controls (each row carries a live EntityPrototypeView, and spinning up
+tens of thousands of those froze the client). Same technique as the F5 entity spawn panel - it reuses the
+engine's <span class="xref">Robust.Client.UserInterface.CustomControls.PrototypeListContainer</span> to fake the full list height and offset the visible slice.</p>
+</section>
+      <h4><a class="xref" href="Content.Client._AU14.Construction.CustomConstruction.ZLevelTogglesWindow.html">ZLevelTogglesWindow</a></h4>
+      <section><p>The &quot;Z-Level Toggles&quot; admin tool (construction menu &gt; Tools): one row per game-map prototype with a Yes/No
+toggle for whether z-level building (stairs, support beams, digging) is allowed there. Choices persist on
+the server across rounds; flipping a toggle for a map loaded THIS round applies immediately.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

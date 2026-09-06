@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Content.Shared._AU14.Insurgency
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Content.Shared._AU14.Insurgency
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Shared._AU14.Insurgency">
+  
+  <h1 id="Content_Shared__AU14_Insurgency" data-uid="Content.Shared._AU14.Insurgency" class="text-break">Namespace Content.Shared._AU14.Insurgency
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.APackageComponent.html">APackageComponent</a></h4>
+      <section><p>&quot;A Package&quot;: the after-spawn loadout delivery. Because the faction is chosen after everyone
+has spawned, each member is handed one of these; using it unpacks that member's designated
+role loadout. The contents are resolved and stored at grant time so the package is
+self-contained once handed out.</p>
+<p>Lives in Shared only so the client also registers it and can load the item prototype without
+an unknown-component error. The behavior is server-side (APackageSystem).</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.CellKitDeployable.html">CellKitDeployable</a></h4>
+      <section><p>One thing the cell kit can put down: a plain placeable entity, or a vendor that also needs its
+faction sections injected after it spawns.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.CellKitManifest.html">CellKitManifest</a></h4>
+      <section><p>What the Heavy Cell Kit / &quot;A Package&quot; can deploy for this faction.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.FactionDefinition.html">FactionDefinition</a></h4>
+      <section><p>The single serializable shape that drives the whole INSFOR faction featureset.
+Editors produce one of these, and the round-start apply pipeline consumes one.
+Contains only data, never executable content, so it is safe to send over the wire
+from a client-authored Custom faction file. The server always revalidates and
+recomputes balance values from its own tables before trusting anything here.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.FactionEconomy.html">FactionEconomy</a></h4>
+      <section><p>Economy tuning for a faction.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.FactionJobIcon.html">FactionJobIcon</a></h4>
+      <section><p>One per-job status-icon override: the job whose members should show <a class="xref" href="Content.Shared._AU14.Insurgency.FactionJobIcon.html#Content_Shared__AU14_Insurgency_FactionJobIcon_Icon">Icon</a> instead of
+the faction-wide status icon.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.FactionMetadata.html">FactionMetadata</a></h4>
+      <section><p>Display and identity fields for a faction. Shown in antag info, spawn popup,
+and recruit chat.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.FactionRoleLoadout.html">FactionRoleLoadout</a></h4>
+      <section><p>Contents of one role's &quot;A Package&quot;. Delivered in-hand after the faction is chosen.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.FactionVendorDefinition.html">FactionVendorDefinition</a></h4>
+      <section><p>A deployable vendor: an existing vendor entity used as the sprite and collision
+base, plus the sections that get injected into it at apply time. Reuses the
+existing <a class="xref" href="Content.Shared._RMC14.Vendors.CMVendorSection.html">CMVendorSection</a> type so editing an arsenal is just editing
+these sections.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.InsurgencyBuiltinFactions.html">InsurgencyBuiltinFactions</a></h4>
+      <section><p>Built-in factions that ship with the game rather than being authored in the editor or the DB.
+Right now that is just the vanilla CLF: the plain Colonial Liberation Front, compatible with
+every GOVFOR faction and stocked with exactly the equipment the original CLF cell kit deployed.</p>
+<p>Kept in code (not the DB) so it is always present and never needs seeding. The selection popup
+offers it above the DB Default factions, and picking it applies this definition directly. The
+editor also lists it: because its vendor arsenals are real <a class="xref" href="Content.Shared._RMC14.Vendors.CMVendorSection.html">CMVendorSection</a> data
+(not baked into a prototype), a host can open it, tweak any item, and save the result as a new
+Default faction.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.InsurgencyCellKitComponent.html">InsurgencyCellKitComponent</a></h4>
+      <section><p>The Heavy Cell Kit. Using it opens a small UI listing the active faction's deployables with
+their sprites; picking one runs a short do-after and then spawns it where the leader stands, so
+the leader controls what goes down, in what order, and where.</p>
+<p>Lives in Shared only so the client also registers it and can load the item prototype without
+an unknown-component error. The behavior is server-side (InsurgencyCellKitSystem).</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.Insurgency.PointsSubmissionEntry.html">PointsSubmissionEntry</a></h4>
+      <section><p>One submittable-for-points item. Two ratio styles are supported and the creator picks per entry:
+&quot;<a class="xref" href="Content.Shared._AU14.Insurgency.PointsSubmissionEntry.html#Content_Shared__AU14_Insurgency_PointsSubmissionEntry_AmountPerPoint">AmountPerPoint</a> of the entity make one point&quot; (good for cheap goods), or &quot;one entity
+is worth <a class="xref" href="Content.Shared._AU14.Insurgency.PointsSubmissionEntry.html#Content_Shared__AU14_Insurgency_PointsSubmissionEntry_PointsPerItem">PointsPerItem</a> points&quot; (good for valuable goods). <a class="xref" href="Content.Shared._AU14.Insurgency.PointsSubmissionEntry.html#Content_Shared__AU14_Insurgency_PointsSubmissionEntry_PointsPerItemMode">PointsPerItemMode</a>
+selects which one is used.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

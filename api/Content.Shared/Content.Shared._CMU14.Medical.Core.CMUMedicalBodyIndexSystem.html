@@ -1,0 +1,942 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CMUMedicalBodyIndexSystem
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CMUMedicalBodyIndexSystem
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem">
+  
+  
+  <h1 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem" class="text-break">Class CMUMedicalBodyIndexSystem
+  </h1>
+  <div class="markdown level0 summary"><p>Maintains a structural medical index and exposes cached snapshots to callers.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CMUMedicalBodyIndexSystem</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Content.Shared._CMU14.Medical.Core.html">Content.Shared._CMU14.Medical.Core</a></h6>
+  <h6><strong>Assembly</strong>: Content.Shared.dll</h6>
+  <h5 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class CMUMedicalBodyIndexSystem : EntitySystem</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetBodyParts_EntityUid_.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetBodyParts(EntityUid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L262">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetBodyParts_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetBodyParts*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetBodyParts_EntityUid_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetBodyParts(EntityUid)">GetBodyParts(EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Enumerates body parts in the same deterministic order as <a class="xref" href="Content.Shared.Body.Systems.SharedBodySystem.html#Content_Shared_Body_Systems_SharedBodySystem_GetBodyChildren_System_Nullable_EntityUid__Content_Shared_Body_Components_BodyComponent_Content_Shared_Body_Part_BodyPartComponent_">GetBodyChildren(Nullable&lt;EntityUid&gt;, BodyComponent, BodyPartComponent)</a>.
+The server reads the structural index; clients fall back to the networked body hierarchy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Entity&lt;BodyPartComponent&gt;&gt; GetBodyParts(EntityUid body)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Entity</span>&lt;<a class="xref" href="Content.Shared.Body.Part.BodyPartComponent.html">BodyPartComponent</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetBodyPartSlots_EntityUid_.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetBodyPartSlots(EntityUid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L86">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetBodyPartSlots_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetBodyPartSlots*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetBodyPartSlots_EntityUid_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetBodyPartSlots(EntityUid)">GetBodyPartSlots(EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Enumerates every configured child-part slot and its optional occupant in prototype order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;CMUMedicalBodyPartSlotEntry&gt; GetBodyPartSlots(EntityUid part)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">part</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Content.Shared._CMU14.Medical.Core.CMUMedicalBodyPartSlotEntry</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetOrgans_EntityUid_.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetOrgans(EntityUid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L282">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetOrgans_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetOrgans*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetOrgans_EntityUid_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetOrgans(EntityUid)">GetOrgans(EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Enumerates organs in body traversal order using the server index or the client body hierarchy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Entity&lt;OrganComponent&gt;&gt; GetOrgans(EntityUid body)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Entity</span>&lt;<a class="xref" href="Content.Shared.Body.Organ.OrganComponent.html">OrganComponent</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetOrgans__1_EntityUid_.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetOrgans%60%601(EntityUid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L248">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetOrgans_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetOrgans*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetOrgans__1_EntityUid_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetOrgans``1(EntityUid)">GetOrgans&lt;T&gt;(EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Enumerates organs with a requested component in deterministic body order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Entity&lt;T, OrganComponent&gt;&gt; GetOrgans&lt;T&gt;(EntityUid body)
+    where T : IComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Entity</span>&lt;T, <a class="xref" href="Content.Shared.Body.Organ.OrganComponent.html">OrganComponent</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetOrganSlots_EntityUid_.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetOrganSlots(EntityUid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L169">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetOrganSlots_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetOrganSlots*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetOrganSlots_EntityUid_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetOrganSlots(EntityUid)">GetOrganSlots(EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Enumerates every configured organ slot and its optional occupant in prototype order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;CMUMedicalOrganSlotEntry&gt; GetOrganSlots(EntityUid part)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">part</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Content.Shared._CMU14.Medical.Core.CMUMedicalOrganSlotEntry</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetPartOrgans_EntityUid_.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetPartOrgans(EntityUid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L146">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetPartOrgans_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetPartOrgans*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_GetPartOrgans_EntityUid_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.GetPartOrgans(EntityUid)">GetPartOrgans(EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Enumerates organs attached to a part without scanning the body's other parts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Entity&lt;OrganComponent&gt;&gt; GetPartOrgans(EntityUid part)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">part</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Entity</span>&lt;<a class="xref" href="Content.Shared.Body.Organ.OrganComponent.html">OrganComponent</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_Initialize.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L23">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_Initialize_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.Initialize*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_Initialize" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetBodyPart_EntityUid_Content_Shared__CMU14_Medical_Core_CMUMedicalBodyPartKey_EntityUid__.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetBodyPart(EntityUid%2CContent.Shared._CMU14.Medical.Core.CMUMedicalBodyPartKey%2CEntityUid%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L37">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetBodyPart_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetBodyPart*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetBodyPart_EntityUid_Content_Shared__CMU14_Medical_Core_CMUMedicalBodyPartKey_EntityUid__" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetBodyPart(EntityUid,Content.Shared._CMU14.Medical.Core.CMUMedicalBodyPartKey,EntityUid@)">TryGetBodyPart(EntityUid, CMUMedicalBodyPartKey, out EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Resolves a body part without traversing the body's part hierarchy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetBodyPart(EntityUid body, CMUMedicalBodyPartKey key, out EntityUid part)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Content.Shared._CMU14.Medical.Core.CMUMedicalBodyPartKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">part</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetBodyPartInSlot_EntityUid_System_String_EntityUid__.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetBodyPartInSlot(EntityUid%2CSystem.String%2CEntityUid%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L109">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetBodyPartInSlot_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetBodyPartInSlot*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetBodyPartInSlot_EntityUid_System_String_EntityUid__" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetBodyPartInSlot(EntityUid,System.String,EntityUid@)">TryGetBodyPartInSlot(EntityUid, String, out EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Resolves the current occupant of a configured child-part slot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetBodyPartInSlot(EntityUid part, string slotId, out EntityUid child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">part</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">slotId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetOrgan__1_EntityUid_EntityUid__.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetOrgan%60%601(EntityUid%2CEntityUid%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L127">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetOrgan_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetOrgan*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetOrgan__1_EntityUid_EntityUid__" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetOrgan``1(EntityUid,EntityUid@)">TryGetOrgan&lt;T&gt;(EntityUid, out EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Resolves an organ carrying <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> without traversing the body.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetOrgan&lt;T&gt;(EntityUid body, out EntityUid organ)
+    where T : IComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">organ</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetOrganInSlot_EntityUid_System_String_EntityUid__.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetOrganInSlot(EntityUid%2CSystem.String%2CEntityUid%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L192">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetOrganInSlot_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetOrganInSlot*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetOrganInSlot_EntityUid_System_String_EntityUid__" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetOrganInSlot(EntityUid,System.String,EntityUid@)">TryGetOrganInSlot(EntityUid, String, out EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Resolves the current occupant of a configured organ slot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetOrganInSlot(EntityUid part, string slotId, out EntityUid organ)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">part</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">slotId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">organ</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetOrganOwner_EntityUid_EntityUid__EntityUid__.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetOrganOwner(EntityUid%2CEntityUid%40%2CEntityUid%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L230">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetOrganOwner_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetOrganOwner*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetOrganOwner_EntityUid_EntityUid__EntityUid__" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetOrganOwner(EntityUid,EntityUid@,EntityUid@)">TryGetOrganOwner(EntityUid, out EntityUid, out EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Resolves both the owning body and parent part of an attached organ.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetOrganOwner(EntityUid organ, out EntityUid body, out EntityUid part)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">organ</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">part</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetOrganPart_EntityUid_EntityUid__.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetOrganPart(EntityUid%2CEntityUid%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L210">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetOrganPart_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetOrganPart*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetOrganPart_EntityUid_EntityUid__" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetOrganPart(EntityUid,EntityUid@)">TryGetOrganPart(EntityUid, out EntityUid)</h4>
+  <div class="markdown level1 summary"><p>Resolves an organ's parent part in constant time on indexed bodies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetOrganPart(EntityUid organ, out EntityUid part)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">organ</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">part</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetRootPart_EntityUid_Entity_Content_Shared_Body_Part_BodyPartComponent___.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetRootPart(EntityUid%2CEntity%7BContent.Shared.Body.Part.BodyPartComponent%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L61">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetRootPart_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetRootPart*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetRootPart_EntityUid_Entity_Content_Shared_Body_Part_BodyPartComponent___" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetRootPart(EntityUid,Entity{Content.Shared.Body.Part.BodyPartComponent}@)">TryGetRootPart(EntityUid, out Entity&lt;BodyPartComponent&gt;)</h4>
+  <div class="markdown level1 summary"><p>Resolves the body's root part without looking through its root container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetRootPart(EntityUid body, out Entity&lt;BodyPartComponent&gt; root)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Entity</span>&lt;<a class="xref" href="Content.Shared.Body.Part.BodyPartComponent.html">BodyPartComponent</a>&gt;</td>
+        <td><span class="parametername">root</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetSnapshot_EntityUid_Content_Shared__CMU14_Medical_Core_CMUMedicalSnapshot__.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetSnapshot(EntityUid%2CContent.Shared._CMU14.Medical.Core.CMUMedicalSnapshot%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L303">View Source</a>
+  </span>
+  <a id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetSnapshot_" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetSnapshot*"></a>
+  <h4 id="Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem_TryGetSnapshot_EntityUid_Content_Shared__CMU14_Medical_Core_CMUMedicalSnapshot__" data-uid="Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem.TryGetSnapshot(EntityUid,Content.Shared._CMU14.Medical.Core.CMUMedicalSnapshot@)">TryGetSnapshot(EntityUid, out CMUMedicalSnapshot)</h4>
+  <div class="markdown level1 summary"><p>Returns the cached snapshot for the current structural revision.
+Repeated calls at the same revision return the same instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetSnapshot(EntityUid body, out CMUMedicalSnapshot snapshot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Content.Shared._CMU14.Medical.Core.CMUMedicalSnapshot.html">CMUMedicalSnapshot</a></td>
+        <td><span class="parametername">snapshot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__CMU14_Medical_Core_CMUMedicalBodyIndexSystem.md&amp;value=---%0Auid%3A%20Content.Shared._CMU14.Medical.Core.CMUMedicalBodyIndexSystem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_CMU14/Medical/Core/CMUMedicalBodyIndexSystem.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

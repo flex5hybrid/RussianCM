@@ -1,0 +1,469 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SharedDeliverySystem
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SharedDeliverySystem
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Shared.Delivery.SharedDeliverySystem">
+  
+  
+  <h1 id="Content_Shared_Delivery_SharedDeliverySystem" data-uid="Content.Shared.Delivery.SharedDeliverySystem" class="text-break">Class SharedDeliverySystem
+  </h1>
+  <div class="markdown level0 summary"><p>Shared side of the DeliverySystem.
+This covers for letters/packages, as well as spawning a reward for the player upon opening.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SharedDeliverySystem</span></div>
+      <div class="level2"><a class="xref" href="../Content.Client/Content.Client.Delivery.DeliverySystem.html">DeliverySystem</a></div>
+      <div class="level2"><a class="xref" href="../Content.Server/Content.Server.Delivery.DeliverySystem.html">DeliverySystem</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Content.Shared.Delivery.html">Content.Shared.Delivery</a></h6>
+  <h6><strong>Assembly</strong>: Content.Shared.dll</h6>
+  <h5 id="Content_Shared_Delivery_SharedDeliverySystem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SharedDeliverySystem : EntitySystem</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared_Delivery_SharedDeliverySystem_GetDeliveryMultiplier_Entity_Content_Shared_Delivery_DeliveryComponent__.md&amp;value=---%0Auid%3A%20Content.Shared.Delivery.SharedDeliverySystem.GetDeliveryMultiplier(Entity%7BContent.Shared.Delivery.DeliveryComponent%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/Delivery/SharedDeliverySystem.cs/#L281">View Source</a>
+  </span>
+  <a id="Content_Shared_Delivery_SharedDeliverySystem_GetDeliveryMultiplier_" data-uid="Content.Shared.Delivery.SharedDeliverySystem.GetDeliveryMultiplier*"></a>
+  <h4 id="Content_Shared_Delivery_SharedDeliverySystem_GetDeliveryMultiplier_Entity_Content_Shared_Delivery_DeliveryComponent__" data-uid="Content.Shared.Delivery.SharedDeliverySystem.GetDeliveryMultiplier(Entity{Content.Shared.Delivery.DeliveryComponent})">GetDeliveryMultiplier(Entity&lt;DeliveryComponent&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gathers the total multiplier for a delivery.
+This is done by components having subscribed to GetDeliveryMultiplierEvent and having added onto it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float GetDeliveryMultiplier(Entity&lt;DeliveryComponent&gt; ent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Entity</span>&lt;<a class="xref" href="Content.Shared.Delivery.DeliveryComponent.html">DeliveryComponent</a>&gt;</td>
+        <td><span class="parametername">ent</span></td>
+        <td><p>The delivery for which to get the multiplier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Total multiplier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared_Delivery_SharedDeliverySystem_GrantSpesoReward_Entity_Content_Shared_Delivery_DeliveryComponent__.md&amp;value=---%0Auid%3A%20Content.Shared.Delivery.SharedDeliverySystem.GrantSpesoReward(Entity%7BContent.Shared.Delivery.DeliveryComponent%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/Delivery/SharedDeliverySystem.cs/#L292">View Source</a>
+  </span>
+  <a id="Content_Shared_Delivery_SharedDeliverySystem_GrantSpesoReward_" data-uid="Content.Shared.Delivery.SharedDeliverySystem.GrantSpesoReward*"></a>
+  <h4 id="Content_Shared_Delivery_SharedDeliverySystem_GrantSpesoReward_Entity_Content_Shared_Delivery_DeliveryComponent__" data-uid="Content.Shared.Delivery.SharedDeliverySystem.GrantSpesoReward(Entity{Content.Shared.Delivery.DeliveryComponent})">GrantSpesoReward(Entity&lt;DeliveryComponent&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GrantSpesoReward(Entity&lt;DeliveryComponent&gt; ent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Entity</span>&lt;<a class="xref" href="Content.Shared.Delivery.DeliveryComponent.html">DeliveryComponent</a>&gt;</td>
+        <td><span class="parametername">ent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared_Delivery_SharedDeliverySystem_HandlePenalty_Entity_Content_Shared_Delivery_DeliveryComponent__System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Content.Shared.Delivery.SharedDeliverySystem.HandlePenalty(Entity%7BContent.Shared.Delivery.DeliveryComponent%7D%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/Delivery/SharedDeliverySystem.cs/#L294">View Source</a>
+  </span>
+  <a id="Content_Shared_Delivery_SharedDeliverySystem_HandlePenalty_" data-uid="Content.Shared.Delivery.SharedDeliverySystem.HandlePenalty*"></a>
+  <h4 id="Content_Shared_Delivery_SharedDeliverySystem_HandlePenalty_Entity_Content_Shared_Delivery_DeliveryComponent__System_Nullable_System_String__" data-uid="Content.Shared.Delivery.SharedDeliverySystem.HandlePenalty(Entity{Content.Shared.Delivery.DeliveryComponent},System.Nullable{System.String})">HandlePenalty(Entity&lt;DeliveryComponent&gt;, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void HandlePenalty(Entity&lt;DeliveryComponent&gt; ent, string? reason = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Entity</span>&lt;<a class="xref" href="Content.Shared.Delivery.DeliveryComponent.html">DeliveryComponent</a>&gt;</td>
+        <td><span class="parametername">ent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared_Delivery_SharedDeliverySystem_Initialize.md&amp;value=---%0Auid%3A%20Content.Shared.Delivery.SharedDeliverySystem.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/Delivery/SharedDeliverySystem.cs/#L38">View Source</a>
+  </span>
+  <a id="Content_Shared_Delivery_SharedDeliverySystem_Initialize_" data-uid="Content.Shared.Delivery.SharedDeliverySystem.Initialize*"></a>
+  <h4 id="Content_Shared_Delivery_SharedDeliverySystem_Initialize" data-uid="Content.Shared.Delivery.SharedDeliverySystem.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared_Delivery_SharedDeliverySystem_SpawnDeliveries_Entity_Content_Shared_Delivery_DeliverySpawnerComponent__.md&amp;value=---%0Auid%3A%20Content.Shared.Delivery.SharedDeliverySystem.SpawnDeliveries(Entity%7BContent.Shared.Delivery.DeliverySpawnerComponent%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/Delivery/SharedDeliverySystem.cs/#L296">View Source</a>
+  </span>
+  <a id="Content_Shared_Delivery_SharedDeliverySystem_SpawnDeliveries_" data-uid="Content.Shared.Delivery.SharedDeliverySystem.SpawnDeliveries*"></a>
+  <h4 id="Content_Shared_Delivery_SharedDeliverySystem_SpawnDeliveries_Entity_Content_Shared_Delivery_DeliverySpawnerComponent__" data-uid="Content.Shared.Delivery.SharedDeliverySystem.SpawnDeliveries(Entity{Content.Shared.Delivery.DeliverySpawnerComponent})">SpawnDeliveries(Entity&lt;DeliverySpawnerComponent&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SpawnDeliveries(Entity&lt;DeliverySpawnerComponent&gt; ent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Entity</span>&lt;<a class="xref" href="Content.Shared.Delivery.DeliverySpawnerComponent.html">DeliverySpawnerComponent</a>&gt;</td>
+        <td><span class="parametername">ent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared_Delivery_SharedDeliverySystem_UpdateBombVisuals_Entity_Content_Shared_Delivery_DeliveryBombComponent__.md&amp;value=---%0Auid%3A%20Content.Shared.Delivery.SharedDeliverySystem.UpdateBombVisuals(Entity%7BContent.Shared.Delivery.DeliveryBombComponent%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/Delivery/SharedDeliverySystem.cs/#L262">View Source</a>
+  </span>
+  <a id="Content_Shared_Delivery_SharedDeliverySystem_UpdateBombVisuals_" data-uid="Content.Shared.Delivery.SharedDeliverySystem.UpdateBombVisuals*"></a>
+  <h4 id="Content_Shared_Delivery_SharedDeliverySystem_UpdateBombVisuals_Entity_Content_Shared_Delivery_DeliveryBombComponent__" data-uid="Content.Shared.Delivery.SharedDeliverySystem.UpdateBombVisuals(Entity{Content.Shared.Delivery.DeliveryBombComponent})">UpdateBombVisuals(Entity&lt;DeliveryBombComponent&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBombVisuals(Entity&lt;DeliveryBombComponent&gt; ent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Entity</span>&lt;<a class="xref" href="Content.Shared.Delivery.DeliveryBombComponent.html">DeliveryBombComponent</a>&gt;</td>
+        <td><span class="parametername">ent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared_Delivery_SharedDeliverySystem_UpdateBrokenVisuals_Entity_Content_Shared_Delivery_DeliveryFragileComponent__System_Boolean_.md&amp;value=---%0Auid%3A%20Content.Shared.Delivery.SharedDeliverySystem.UpdateBrokenVisuals(Entity%7BContent.Shared.Delivery.DeliveryFragileComponent%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/Delivery/SharedDeliverySystem.cs/#L256">View Source</a>
+  </span>
+  <a id="Content_Shared_Delivery_SharedDeliverySystem_UpdateBrokenVisuals_" data-uid="Content.Shared.Delivery.SharedDeliverySystem.UpdateBrokenVisuals*"></a>
+  <h4 id="Content_Shared_Delivery_SharedDeliverySystem_UpdateBrokenVisuals_Entity_Content_Shared_Delivery_DeliveryFragileComponent__System_Boolean_" data-uid="Content.Shared.Delivery.SharedDeliverySystem.UpdateBrokenVisuals(Entity{Content.Shared.Delivery.DeliveryFragileComponent},System.Boolean)">UpdateBrokenVisuals(Entity&lt;DeliveryFragileComponent&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBrokenVisuals(Entity&lt;DeliveryFragileComponent&gt; ent, bool isFragile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Entity</span>&lt;<a class="xref" href="Content.Shared.Delivery.DeliveryFragileComponent.html">DeliveryFragileComponent</a>&gt;</td>
+        <td><span class="parametername">ent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isFragile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared_Delivery_SharedDeliverySystem_UpdateDeliverySpawnerVisuals_EntityUid_System_Int32_.md&amp;value=---%0Auid%3A%20Content.Shared.Delivery.SharedDeliverySystem.UpdateDeliverySpawnerVisuals(EntityUid%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/Delivery/SharedDeliverySystem.cs/#L269">View Source</a>
+  </span>
+  <a id="Content_Shared_Delivery_SharedDeliverySystem_UpdateDeliverySpawnerVisuals_" data-uid="Content.Shared.Delivery.SharedDeliverySystem.UpdateDeliverySpawnerVisuals*"></a>
+  <h4 id="Content_Shared_Delivery_SharedDeliverySystem_UpdateDeliverySpawnerVisuals_EntityUid_System_Int32_" data-uid="Content.Shared.Delivery.SharedDeliverySystem.UpdateDeliverySpawnerVisuals(EntityUid,System.Int32)">UpdateDeliverySpawnerVisuals(EntityUid, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateDeliverySpawnerVisuals(EntityUid uid, int contents)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EntityUid</span></td>
+        <td><span class="parametername">uid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">contents</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared_Delivery_SharedDeliverySystem_UpdatePriorityVisuals_Entity_Content_Shared_Delivery_DeliveryPriorityComponent__.md&amp;value=---%0Auid%3A%20Content.Shared.Delivery.SharedDeliverySystem.UpdatePriorityVisuals(Entity%7BContent.Shared.Delivery.DeliveryPriorityComponent%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/Delivery/SharedDeliverySystem.cs/#L245">View Source</a>
+  </span>
+  <a id="Content_Shared_Delivery_SharedDeliverySystem_UpdatePriorityVisuals_" data-uid="Content.Shared.Delivery.SharedDeliverySystem.UpdatePriorityVisuals*"></a>
+  <h4 id="Content_Shared_Delivery_SharedDeliverySystem_UpdatePriorityVisuals_Entity_Content_Shared_Delivery_DeliveryPriorityComponent__" data-uid="Content.Shared.Delivery.SharedDeliverySystem.UpdatePriorityVisuals(Entity{Content.Shared.Delivery.DeliveryPriorityComponent})">UpdatePriorityVisuals(Entity&lt;DeliveryPriorityComponent&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePriorityVisuals(Entity&lt;DeliveryPriorityComponent&gt; ent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Entity</span>&lt;<a class="xref" href="Content.Shared.Delivery.DeliveryPriorityComponent.html">DeliveryPriorityComponent</a>&gt;</td>
+        <td><span class="parametername">ent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared_Delivery_SharedDeliverySystem.md&amp;value=---%0Auid%3A%20Content.Shared.Delivery.SharedDeliverySystem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/Delivery/SharedDeliverySystem.cs/#L24" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

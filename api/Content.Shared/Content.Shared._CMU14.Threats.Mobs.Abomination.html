@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Content.Shared._CMU14.Threats.Mobs.Abomination
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Content.Shared._CMU14.Threats.Mobs.Abomination
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Shared._CMU14.Threats.Mobs.Abomination">
+  
+  <h1 id="Content_Shared__CMU14_Threats_Mobs_Abomination" data-uid="Content.Shared._CMU14.Threats.Mobs.Abomination" class="text-break">Namespace Content.Shared._CMU14.Threats.Mobs.Abomination
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationAppearanceSnapshot.html">AbominationAppearanceSnapshot</a></h4>
+      <section><p>Snapshot of every HumanoidAppearanceComponent field the mimic disguise system
+touches when applying / restoring a form. Built at assimilation time so the
+disguise survives the source entity being deleted.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationAssimilateActionEvent.html">AbominationAssimilateActionEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationAssimilateComponent.html">AbominationAssimilateComponent</a></h4>
+      <section><p>Grants a mimic the ability to assimilate an incapacitated humanoid via doafter.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationAssimilatedComponent.html">AbominationAssimilatedComponent</a></h4>
+      <section><p>Applied to a humanoid after a mimic finishes the assimilation doafter on them.
+Stores the identity snapshot mimics will use to impersonate this victim later.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationAssimilateDoAfterEvent.html">AbominationAssimilateDoAfterEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationAssimilationProfile.html">AbominationAssimilationProfile</a></h4>
+      <section><p>Snapshot of the data a mimic inherits when transforming into this assimilated form.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationComponent.html">AbominationComponent</a></h4>
+      <section><p>Marker on every abomination mob. Also carries the infection chance that
+every melee hit on a humanoid rolls against, plus the trickle of passive
+regeneration every abomination gets even when not standing on tendons.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationFleshKudzuComponent.html">AbominationFleshKudzuComponent</a></h4>
+      <section><p>Behaviour for the flesh kudzu tile. Heals abominations standing on it
+and periodically vents emotes (crying / gasping) for ambience.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationFleshNestComponent.html">AbominationFleshNestComponent</a></h4>
+      <section><p>Marker on every flesh nest. Spawning is driven globally by
+AbominationNestSpawnSystem on the server — each placed nest contributes
+to the global spawn rate, but only one nest spawns per tick.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationInfectableComponent.html">AbominationInfectableComponent</a></h4>
+      <section><p>Marker — entity can be infected and assimilated by abominations even
+though it isn't a humanoid. Tagging an animal mob (rat, monkey, cow…)
+with this lets mimics melee-infect or assimilate it; the resulting
+profile keys off the entity prototype id so all rats group as &quot;rat&quot;,
+all monkeys as &quot;monkey&quot;, etc.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationInfectionComponent.html">AbominationInfectionComponent</a></h4>
+      <section><p>Applied to a humanoid hit by an abomination. Symptoms ramp progressively
+from coughs and slight drunkenness up to constant seizures + vomiting as
+the infection runs its course. Any death while infected polymorphs the
+victim into an AU14AbominationMimic and seeds flesh kudzu at the corpse.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationMimicBuiState.html">AbominationMimicBuiState</a></h4>
+      <section><p>State pushed to clients so the picker can render the current pool of forms.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationMimicComponent.html">AbominationMimicComponent</a></h4>
+      <section><p>Lives on every mimic abomination. Holds the pool of assimilated identities it can
+transform into and the parameters for the transform.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationMimicRevertActionEvent.html">AbominationMimicRevertActionEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationMimicRevertingComponent.html">AbominationMimicRevertingComponent</a></h4>
+      <section><p>Applied to a disguised mimic while it's actively reverting back to its
+combat form. During this phase it shakes and screams; once the timer
+elapses AbominationMimicSystem polymorphs it back into the mimic entity.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationMimicSelectFormMessage.html">AbominationMimicSelectFormMessage</a></h4>
+      <section><p>Sent from the mimic's profile-picker BUI to the server when the player selects a form.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationMimicTransformActionEvent.html">AbominationMimicTransformActionEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationMimicTransformedComponent.html">AbominationMimicTransformedComponent</a></h4>
+      <section><p>Applied to the <em>polymorphed</em> humanoid entity while a mimic is currently
+wearing this profile. The Polymorph system handles all the original-form
+bookkeeping (PolymorphedEntityComponent restores entity on revert); this
+component just records which profile is active and when the disguise
+expires.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationPlantKudzuActionEvent.html">AbominationPlantKudzuActionEvent</a></h4>
+      <section></section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Content.Shared._CMU14.Threats.Mobs.Abomination.AbominationMimicUiKey.html">AbominationMimicUiKey</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,563 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SmeltingPotComponent
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SmeltingPotComponent
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent">
+  
+  
+  <h1 id="Content_Shared__AU14_Smelting_SmeltingPotComponent" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent" class="text-break">Class SmeltingPotComponent
+  </h1>
+  <div class="markdown level0 summary"><p>A crucible that renders ore into sheets over a lit fire.</p>
+<p>Design notes, because they explain most of the shape of this component:</p>
+<ul>
+<li>The pot holds ONE material at a time. That is what removes the need for any recipe picker: what you put
+in decides what it is smelting, so there is no mode to set and no mode to set wrongly.</li>
+<li>Finished sheets land in a separate OUTPUT buffer and are never fed back in, so an ore load cannot run
+away into plasteel on its own. Refining a second step is a deliberate act: take the sheets out, put
+them back in.</li>
+<li>Capacity is counted in MATERIAL UNITS, not entities - ore is a stack type, so one entity can be thirty
+ore and an entity cap would mean nothing.</li>
+</ul>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SmeltingPotComponent</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Content.Shared._AU14.Smelting.html">Content.Shared._AU14.Smelting</a></h6>
+  <h6><strong>Assembly</strong>: Content.Shared.dll</h6>
+  <h5 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SmeltingPotComponent : Component</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent_Active.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent.Active%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L65">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_Active" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent.Active">Active</h4>
+  <div class="markdown level1 summary"><p>True while sitting on a lit fire with a batch in progress. Drives sprite, steam and sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Active</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent_Amount.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent.Amount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L50">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_Amount" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent.Amount">Amount</h4>
+  <div class="markdown level1 summary"><p>Input units currently loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Amount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent_BatchEndsAt.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent.BatchEndsAt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L74">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_BatchEndsAt" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent.BatchEndsAt">BatchEndsAt</h4>
+  <div class="markdown level1 summary"><p>When the batch in progress completes. Cleared when the fire goes out, preserving progress via
+<a class="xref" href="Content.Shared._AU14.Smelting.SmeltingPotComponent.html#Content_Shared__AU14_Smelting_SmeltingPotComponent_BatchRemaining">BatchRemaining</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan? BatchEndsAt</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent_BatchRemaining.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent.BatchRemaining%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L78">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_BatchRemaining" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent.BatchRemaining">BatchRemaining</h4>
+  <div class="markdown level1 summary"><p>Time left on the interrupted batch, so a fire going out pauses rather than discards progress.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan? BatchRemaining</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent_Capacity.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent.Capacity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L28">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_Capacity" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent.Capacity">Capacity</h4>
+  <div class="markdown level1 summary"><p>🔧 TUNABLE: total input units the pot can hold.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Capacity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent_Electronics.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent.Electronics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L42">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_Electronics" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent.Electronics">Electronics</h4>
+  <div class="markdown level1 summary"><p>True when the load is scrap electronics rather than a stack material. Circuit boards are
+discrete entities with no stack type, so they need their own flag rather than a <a class="xref" href="Content.Shared._AU14.Smelting.SmeltingPotComponent.html#Content_Shared__AU14_Smelting_SmeltingPotComponent_Material">Material</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Electronics</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent_ElectronicsIcon.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent.ElectronicsIcon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L46">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_ElectronicsIcon" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent.ElectronicsIcon">ElectronicsIcon</h4>
+  <div class="markdown level1 summary"><p>Pip sprite used while the pot holds electronics, since there is no stack icon to borrow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpriteSpecifier ElectronicsIcon</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Robust.Shared.Utility.SpriteSpecifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent_Fire.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent.Fire%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L69">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_Fire" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent.Fire">Fire</h4>
+  <div class="markdown level1 summary"><p>The fire this pot is sitting on, if any. Server-side: the client only needs <a class="xref" href="Content.Shared._AU14.Smelting.SmeltingPotComponent.html#Content_Shared__AU14_Smelting_SmeltingPotComponent_Active">Active</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityUid? Fire</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">EntityUid</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent_Material.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent.Material%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L37">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_Material" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent.Material">Material</h4>
+  <div class="markdown level1 summary"><p>Stack type currently loaded, or null when empty (or when holding electronics, which are not a
+stack). Also decides what further inserts are allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProtoId&lt;StackPrototype&gt;? Material</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Robust.Shared.Prototypes.ProtoId</span>&lt;<a class="xref" href="Content.Shared.Stacks.StackPrototype.html">StackPrototype</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent_OutputAmount.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent.OutputAmount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L57">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_OutputAmount" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent.OutputAmount">OutputAmount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OutputAmount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent_OutputCapacity.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent.OutputCapacity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L61">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_OutputCapacity" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent.OutputCapacity">OutputCapacity</h4>
+  <div class="markdown level1 summary"><p>🔧 TUNABLE: how many finished sheets may pile up before smelting stalls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OutputCapacity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent_OutputMaterial.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent.OutputMaterial%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L54">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_OutputMaterial" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent.OutputMaterial">OutputMaterial</h4>
+  <div class="markdown level1 summary"><p>Finished sheets waiting to be collected, and what they are.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProtoId&lt;StackPrototype&gt;? OutputMaterial</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Robust.Shared.Prototypes.ProtoId</span>&lt;<a class="xref" href="Content.Shared.Stacks.StackPrototype.html">StackPrototype</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent_Recipes.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent.Recipes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L32">View Source</a>
+  </span>
+  <h4 id="Content_Shared__AU14_Smelting_SmeltingPotComponent_Recipes" data-uid="Content.Shared._AU14.Smelting.SmeltingPotComponent.Recipes">Recipes</h4>
+  <div class="markdown level1 summary"><p>What this pot knows how to smelt. First match on the inserted stack type wins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SmeltingRecipe&gt; Recipes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Content.Shared._AU14.Smelting.SmeltingRecipe.html">SmeltingRecipe</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Shared__AU14_Smelting_SmeltingPotComponent.md&amp;value=---%0Auid%3A%20Content.Shared._AU14.Smelting.SmeltingPotComponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Shared/_AU14/Smelting/SmeltingPotComponent.cs/#L23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

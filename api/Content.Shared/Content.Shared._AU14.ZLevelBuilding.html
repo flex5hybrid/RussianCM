@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Content.Shared._AU14.ZLevelBuilding
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Content.Shared._AU14.ZLevelBuilding
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Shared._AU14.ZLevelBuilding">
+  
+  <h1 id="Content_Shared__AU14_ZLevelBuilding" data-uid="Content.Shared._AU14.ZLevelBuilding" class="text-break">Namespace Content.Shared._AU14.ZLevelBuilding
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ModifyZBorderSyncEvent.html">ModifyZBorderSyncEvent</a></h4>
+      <section><p>Client → server: add or remove a batch of prototype ids on one of the sync lists.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.OpenZBorderSyncEvent.html">OpenZBorderSyncEvent</a></h4>
+      <section><p>Server → client: the current z-level border-sync lists, per scope. WHITELISTED prototypes are mirrored
+across z-levels as map borders; the BLACKLIST overrides the whitelist (for walls that share the
+invincible border parent but are really just structures, e.g. dropship walls). Lists are keyed by map
+scope: the empty string is the GLOBAL scope (applies on every map), any other key is a planet map
+prototype id and applies only when that map is the round's planet. Pre-existing saved lists load into
+the global scope, so nothing saved before scoping existed is lost.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.OpenZLevelTogglesEvent.html">OpenZLevelTogglesEvent</a></h4>
+      <section><p>Server -&gt; requesting admin only: open the Z-Level Toggles window listing every game-map prototype with its
+current allow/deny state.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.PickZBorderSyncEntityEvent.html">PickZBorderSyncEntityEvent</a></h4>
+      <section><p>Client -&gt; server: add the prototype of a clicked in-round entity to a z-sync list (global scope).</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.RequestOpenZBorderSyncEvent.html">RequestOpenZBorderSyncEvent</a></h4>
+      <section><p>Client → server: open the &quot;Z-Sync Lists&quot; tool (admin-gated, re-validated server-side).</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.RequestOpenZLevelTogglesEvent.html">RequestOpenZLevelTogglesEvent</a></h4>
+      <section><p>Client -&gt; server: the admin pressed the construction menu's &quot;Z-Level Toggles&quot; tool. The server re-checks
+permission and answers with <a class="xref" href="Content.Shared._AU14.ZLevelBuilding.OpenZLevelTogglesEvent.html">OpenZLevelTogglesEvent</a>.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.SetZLevelToggleEvent.html">SetZLevelToggleEvent</a></h4>
+      <section><p>Client -&gt; server: the admin flipped one map's z-building toggle. The server re-checks permission, persists
+the choice across rounds/restarts, and applies it live to the map if it is loaded this round.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.SharedStructuralScannerSystem.html">SharedStructuralScannerSystem</a></h4>
+      <section><p>Building overhaul (z-level): toggles the <a class="xref" href="Content.Shared._AU14.ZLevelBuilding.StructuralScannerComponent.html">StructuralScannerComponent</a> heat-map on use-in-hand.
+The actual overlay rendering is client-side and holder-only (see the client scanner system).</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.StructuralScannerComponent.html">StructuralScannerComponent</a></h4>
+      <section><p>Building overhaul (z-level): handheld structural scanner. Using it in hand toggles a CLIENT-SIDE roof-stability
+heat-map overlay that is only drawn for the player actually holding an enabled scanner. The overlay shades
+dug-out (open) tiles by how close they are to caving in, so a miner can see where a cavern needs a pillar
+before it collapses.</p>
+<p>Art note: this currently borrows an existing in-game item's sprite as a placeholder (no bespoke RSI yet).</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.StructuralSupportComponent.html">StructuralSupportComponent</a></h4>
+      <section><p>First building block of the z-level structural-stability feature. Marks a structure that participates
+in the support graph: a tile is &quot;supported&quot; if it can trace a path back to an anchor (ground/bedrock) -
+either directly, or by cantilevering out from a vertical support within <a class="xref" href="Content.Shared._AU14.ZLevelBuilding.StructuralSupportComponent.html#Content_Shared__AU14_ZLevelBuilding_StructuralSupportComponent_CantileverSpan">CantileverSpan</a>
+tiles. The upcoming <code>ZLevelSupportSystem</code> recomputes <a class="xref" href="Content.Shared._AU14.ZLevelBuilding.StructuralSupportComponent.html#Content_Shared__AU14_ZLevelBuilding_StructuralSupportComponent_Supported">Supported</a> on build/destroy and
+schedules a collapse (with an 8s warning) for anything that loses its path to an anchor.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.TileApplierComponent.html">TileApplierComponent</a></h4>
+      <section><p>Building overhaul (z-level): the result of &quot;constructing a tile&quot; from the construction menu's Tiles section.
+Tiles are not entities, so the construction recipe builds this tiny applier entity instead; on spawn it sets
+the underlying grid tile to <a class="xref" href="Content.Shared._AU14.ZLevelBuilding.TileApplierComponent.html#Content_Shared__AU14_ZLevelBuilding_TileApplierComponent_Tile">Tile</a> and then deletes itself, leaving just the tile. This lets tiles
+be placed through the normal construction-ghost flow (handy for building floors in open air).</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.TileFloorSupportComponent.html">TileFloorSupportComponent</a></h4>
+      <section><p>Building overhaul (z-level): an invisible marker dropped on a laid floor tile (by <code>TileApplierSystem</code>)
+so that the tile can participate in the structural-support graph. Tiles are not entities and cannot carry
+<a class="xref" href="Content.Shared._AU14.ZLevelBuilding.StructuralSupportComponent.html">StructuralSupportComponent</a> themselves, so this tiny entity stands in for the tile: it sits on
+the tile, carries the support component, and removes its underlying floor tile when it terminates (i.e. when
+the support graph collapses it for lacking support on an upper z-level).</p>
+<p>Only laid on UPPER z-levels - floors on the ground / underground rest on the ground and are inherently
+stable, so there is no need to track them (and no per-tile entity cost there).</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZBuildableMapComponent.html">ZBuildableMapComponent</a></h4>
+      <section><p>Building overhaul (z-level): per-map opt-out switch for vertical building.</p>
+<p>By DEFAULT the building overhaul treats <strong>every</strong> map as z-buildable - digging down lazily creates a
+stone level below and links it into a CMU z-network on demand, so the feature works even on maps that
+were authored as single-z (not multi-z). This component does not need to be added for the feature to work.</p>
+<p>HOW TO MAKE A MAP &quot;NOT MULTI-Z&quot; (opt a map out of vertical building):
+Add this component to the map prototype with <code>enabled: false</code>, e.g.</p>
+<ul>
+<li>type: entity
+id: MyMapThatShouldStaySingleZ
+...
+components:
+<ul>
+<li>type: ZBuildableMap
+enabled: false</li>
+</ul>
+</li>
+</ul>
+<p>With <code>enabled: false</code>, <see cref="!:Content.Server._AU14.ZLevelBuilding.ZLevelBuildingSystem"></see> will
+refuse to bootstrap a level below or generate stone for that map, leaving it strictly single-z.</p>
+<p>To disable the feature globally in code (all maps), set
+<code>ZLevelBuildingSystem.GloballyEnabled = false</code> instead.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZBuildAllowed.html">ZBuildAllowed</a></h4>
+      <section><p>Building overhaul (z-level): a construction condition that blocks placement of the overhaul's vertical-building
+recipes (stairs, support beams, in-air tiles) on a map a mapper has opted out of z-building.</p>
+<p>Add it to those recipes' <code>conditions:</code> list. A map opts out with <code>ZBuildableMap { enabled: false }</code>
+(see <a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZBuildableMapComponent.html">ZBuildableMapComponent</a>), so mappers can stop players from building stairs / digging under
+maps like the UNS Almayer. Maps with no component (the default) allow it. The component's <code>Enabled</code> field
+is networked so this client-side ghost check matches the server.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZCollapseCompromisedComponent.html">ZCollapseCompromisedComponent</a></h4>
+      <section><p>Marks a dropship GRID whose structure was hit by a cave-in below it. A compromised dropship refuses
+to launch (its flight systems report structural damage and its controls spark) because launching a
+grid that a collapse has tangled into the planet's map grid drags the entire map along with the FTL,
+destroying the round. Applied by ZCaveInSystem when cave-in surface effects touch a dropship grid;
+checked in DropshipSystem.FlyTo. Permanent for the round (admins can remove the component to clear it).</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZCollapseVignetteEvent.html">ZCollapseVignetteEvent</a></h4>
+      <section><p>Server → client: a floor/cave collapse is happening near the player. Drives the client-side vignette:
+a single dark-grey blink for a nearby collapse, or (while <a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZCollapseVignetteEvent.html#Content_Shared__AU14_ZLevelBuilding_ZCollapseVignetteEvent_Engulfed">Engulfed</a>) a rapid near-black
+&quot;eyes blinking&quot; vignette that lasts as long as the cave keeps collapsing on the player - the server
+re-sends this on its rumble cadence and the client extends the effect each time.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZFallenDebrisComponent.html">ZFallenDebrisComponent</a></h4>
+      <section><p>Marks a structure that fell through a collapsed z-level floor and is now rubble. The server strips its
+collision entirely (so it can't block movement or bullets, and can't grind contacts against cave rocks)
+and the client renders it battered: shrunken and darkened (see ZFallenDebrisVisualsSystem).</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZGeneratedStoneComponent.html">ZGeneratedStoneComponent</a></h4>
+      <section><p>Building overhaul (z-level): runtime marker placed on a lazily-created stone level (the map BELOW a
+dug map). Tracks which chunks have already had their dirt/stone generated so generation is per-chunk
+and idempotent - each chunk is filled exactly once, on demand, as a digger or nearby player reaches it.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZLevelToggleEntry.html">ZLevelToggleEntry</a></h4>
+      <section><p>One map's row in the Z-Level Toggles window.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZLevelWallSupportComponent.html">ZLevelWallSupportComponent</a></h4>
+      <section><p>Marks a wall as vertical support for the z-level directly above it without enrolling the wall itself in the
+collapsible structural graph. Player-built walls additionally carry <a class="xref" href="Content.Shared._AU14.ZLevelBuilding.StructuralSupportComponent.html">StructuralSupportComponent</a>
+so they can lose support and collapse like other constructed structures.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZLoadBearingTerrainComponent.html">ZLoadBearingTerrainComponent</a></h4>
+      <section><p>Building overhaul (z-level): marks a piece of mapper-authored TERRAIN as holding up a cave roof, exactly
+like natural rock and walls do for the cave-in system (<code>ZCaveInSystem</code>).</p>
+<p>Needed because some terrain is deliberately NOT anchored. Shepherd's underground river is built from
+thousands of <code>CMUEntityShepDesertWaterDeep</code> entities saved with <code>anchored: False</code> (water must not
+occupy the snap grid or block movement), so the cave-in system's anchored-entity scan saw nothing on those
+tiles and read the entire riverbed as one enormous open cavern. Every tile beyond the roof span then went
+unstable, caved in, and pulled the floor - and any bridge built on it - down from the level above.</p>
+<p>This marker is therefore read from a position index maintained on component start, NOT from the anchored
+lookup, so unanchored terrain still counts. It only affects cave-in roof stability; it does not make the
+entity solid, walkable, or part of the above-ground support graph.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZStairBeamLinkComponent.html">ZStairBeamLinkComponent</a></h4>
+      <section><p>Building overhaul (z-level): placed on the support beam that a staircase spawns with, linking it back to the
+staircase it holds up. When the beam is destroyed, <code>ZStairSystem</code> brings down the whole staircase: it
+deletes the stair (and its companion on the connected level) and clears the standing platform tiles, so
+knocking out the support actually collapses the structure it was holding up.</p>
+</section>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZStairComponent.html">ZStairComponent</a></h4>
+      <section><p>Building overhaul (z-level): setup marker for a buildable staircase.</p>
+<p>Walk-through traversal is handled by the inherited <code>CMUZLevelHighGround</code> component; this component
+carries only the setup parameters used by <code>ZStairSystem</code> on <code>MapInitEvent</code>.</p>
+<p>UP stair (direction +1): ensures level above, lays a standing platform there, and places a companion stair
+so the player can walk back down.
+DOWN stair (direction -1): generates a stone underground level (like au_digdown), clears a landing pocket
+at the stair position, and places a companion stair at the landing spot.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Content.Shared._AU14.ZLevelBuilding.ZSyncMapOption.html">ZSyncMapOption</a></h4>
+      <section><p>One selectable map scope for the Z-Sync tool (a planet map prototype).</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

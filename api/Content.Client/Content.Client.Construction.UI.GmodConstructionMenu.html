@@ -1,0 +1,954 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GmodConstructionMenu
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GmodConstructionMenu
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Client.Construction.UI.GmodConstructionMenu">
+  
+  
+  <h1 id="Content_Client_Construction_UI_GmodConstructionMenu" data-uid="Content.Client.Construction.UI.GmodConstructionMenu" class="text-break">Class GmodConstructionMenu
+  </h1>
+  <div class="markdown level0 summary"><p>Improved Gmod-style construction menu. Implements <a class="xref" href="Content.Client.Construction.UI.IConstructionMenuView.html">IConstructionMenuView</a> as a drop-in
+replacement for <a class="xref" href="Content.Client.Construction.UI.ConstructionMenu.html">ConstructionMenu</a> - the presenter sees the same interface and drives it
+through the grouped grid-population path.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Robust.Client.UserInterface.Control</span></div>
+    <div class="level2"><span class="xref">Robust.Client.UserInterface.CustomControls.BaseWindow</span></div>
+    <div class="level3"><span class="xref">Robust.Client.UserInterface.CustomControls.DefaultWindow</span></div>
+    <div class="level4"><span class="xref">GmodConstructionMenu</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Content.Client.Construction.UI.IConstructionMenuView.html">IConstructionMenuView</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Content.Client.Construction.UI.html">Content.Client.Construction.UI</a></h6>
+  <h6><strong>Assembly</strong>: Content.Client.dll</h6>
+  <h5 id="Content_Client_Construction_UI_GmodConstructionMenu_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class GmodConstructionMenu : DefaultWindow, IConstructionMenuView, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu__ctor.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L183">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu__ctor_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.#ctor*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu__ctor" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.#ctor">GmodConstructionMenu()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GmodConstructionMenu()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_BuildButtonPressed.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.BuildButtonPressed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1230">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_BuildButtonPressed_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.BuildButtonPressed*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_BuildButtonPressed" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.BuildButtonPressed">BuildButtonPressed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BuildButtonPressed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_Categories.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.Categories%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1172">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_Categories_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.Categories*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_Categories" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.Categories">Categories</h4>
+  <div class="markdown level1 summary"><p>When the presenter rebuilds categories, show/hide the Favorites tree entry
+depending on whether any favorites exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] Categories { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_CloseOnConstruct.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.CloseOnConstruct%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1218">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_CloseOnConstruct_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.CloseOnConstruct*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_CloseOnConstruct" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.CloseOnConstruct">CloseOnConstruct</h4>
+  <div class="markdown level1 summary"><p>The menu closes as soon as a build/placement begins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CloseOnConstruct { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_EraseButtonPressed.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.EraseButtonPressed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1224">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_EraseButtonPressed_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.EraseButtonPressed*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_EraseButtonPressed" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.EraseButtonPressed">EraseButtonPressed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EraseButtonPressed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_GridViewButtonPressed.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.GridViewButtonPressed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1208">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_GridViewButtonPressed_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.GridViewButtonPressed*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_GridViewButtonPressed" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.GridViewButtonPressed">GridViewButtonPressed</h4>
+  <div class="markdown level1 summary"><p>Always true - the gmod menu only uses the grid layout, so the presenter always
+routes through the grid population path rather than the list view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GridViewButtonPressed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_OptionCategories.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.OptionCategories%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1198">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_OptionCategories_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.OptionCategories*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_OptionCategories" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.OptionCategories">OptionCategories</h4>
+  <div class="markdown level1 summary"><p>Adapter: the presenter populates this hidden OptionButton to track categories.
+It is never shown; the tree buttons drive navigation instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionButton OptionCategories { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Robust.Client.UserInterface.Controls.OptionButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_Recipes.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.Recipes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1243">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_Recipes_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.Recipes*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_Recipes" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.Recipes">Recipes</h4>
+  <div class="markdown level1 summary"><p>Stub list container. The presenter calls PopulateList([]) on it in grid mode - harmless.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListContainer Recipes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Content.Client.UserInterface.Controls.ListContainer.html">ListContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_RecipesGrid.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.RecipesGrid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1249">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_RecipesGrid_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.RecipesGrid*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_RecipesGrid" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.RecipesGrid">RecipesGrid</h4>
+  <div class="markdown level1 summary"><p>Stub flat grid. The grouped view uses <see cref="!:GroupedRecipesContainer"></see> instead, but the
+interface requires a GridContainer; the presenter only clears this stub when grouped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GridContainer RecipesGrid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Robust.Client.UserInterface.Controls.GridContainer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_SelectedSpawnlist.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.SelectedSpawnlist%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L534">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_SelectedSpawnlist_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.SelectedSpawnlist*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_SelectedSpawnlist" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.SelectedSpawnlist">SelectedSpawnlist</h4>
+  <div class="markdown level1 summary"><p>The spawnlist currently selected in the left tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SelectedSpawnlist { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_UseGroupedView.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.UseGroupedView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1215">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_UseGroupedView_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.UseGroupedView*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_UseGroupedView" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.UseGroupedView">UseGroupedView</h4>
+  <div class="markdown level1 summary"><p>Always grouped - items are sub-categorized under per-category headers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseGroupedView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_ClearRecipeInfo.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.ClearRecipeInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1270">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_ClearRecipeInfo_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.ClearRecipeInfo*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_ClearRecipeInfo" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.ClearRecipeInfo">ClearRecipeInfo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearRecipeInfo()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1104">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_Dispose_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.Dispose*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_Dispose_System_Boolean_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Robust.Client.UserInterface.Control.Dispose(System.Boolean)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_FrameUpdate_Robust_Shared_Timing_FrameEventArgs_.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.FrameUpdate(Robust.Shared.Timing.FrameEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1124">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_FrameUpdate_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.FrameUpdate*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_FrameUpdate_Robust_Shared_Timing_FrameEventArgs_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.FrameUpdate(Robust.Shared.Timing.FrameEventArgs)">FrameUpdate(FrameEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void FrameUpdate(FrameEventArgs args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Robust.Shared.Timing.FrameEventArgs</span></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Robust.Client.UserInterface.CustomControls.DefaultWindow.FrameUpdate(Robust.Shared.Timing.FrameEventArgs)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_ResetPlacement.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.ResetPlacement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1342">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_ResetPlacement_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.ResetPlacement*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_ResetPlacement" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.ResetPlacement">ResetPlacement()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetPlacement()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_SetConstructionSkillInfo_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.SetConstructionSkillInfo(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1294">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_SetConstructionSkillInfo_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.SetConstructionSkillInfo*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_SetConstructionSkillInfo_System_Int32_System_Int32_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.SetConstructionSkillInfo(System.Int32,System.Int32)">SetConstructionSkillInfo(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConstructionSkillInfo(int skillLevel, int discountPercent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skillLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">discountPercent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_SetRecipeInfo_System_String_System_String_Robust_Shared_Prototypes_EntityPrototype_Color_System_Boolean_System_Boolean_Content_Shared_Construction_Prototypes_ConstructionPrototype_.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.SetRecipeInfo(System.String%2CSystem.String%2CRobust.Shared.Prototypes.EntityPrototype%2CColor%2CSystem.Boolean%2CSystem.Boolean%2CContent.Shared.Construction.Prototypes.ConstructionPrototype)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1303">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_SetRecipeInfo_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.SetRecipeInfo*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_SetRecipeInfo_System_String_System_String_Robust_Shared_Prototypes_EntityPrototype_Color_System_Boolean_System_Boolean_Content_Shared_Construction_Prototypes_ConstructionPrototype_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.SetRecipeInfo(System.String,System.String,Robust.Shared.Prototypes.EntityPrototype,Color,System.Boolean,System.Boolean,Content.Shared.Construction.Prototypes.ConstructionPrototype)">SetRecipeInfo(String, String, EntityPrototype, Color, Boolean, Boolean, ConstructionPrototype)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRecipeInfo(string name, string description, EntityPrototype targetPrototype, Color iconColor, bool isItem, bool isFavorite, ConstructionPrototype prototype)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Robust.Shared.Prototypes.EntityPrototype</span></td>
+        <td><span class="parametername">targetPrototype</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">iconColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isFavorite</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Content.Shared/Content.Shared.Construction.Prototypes.ConstructionPrototype.html">ConstructionPrototype</a></td>
+        <td><span class="parametername">prototype</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_SetSpawnlists_IReadOnlyList_System_String__.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.SetSpawnlists(IReadOnlyList%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L537">View Source</a>
+  </span>
+  <a id="Content_Client_Construction_UI_GmodConstructionMenu_SetSpawnlists_" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.SetSpawnlists*"></a>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_SetSpawnlists_IReadOnlyList_System_String__" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.SetSpawnlists(IReadOnlyList{System.String})">SetSpawnlists(IReadOnlyList&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Rebuilds the left-tree spawnlist buttons from the presenter's discovered spawnlists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSpawnlists(IReadOnlyList&lt;string&gt; spawnlists)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">spawnlists</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_BuildButtonToggled.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.BuildButtonToggled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1262">View Source</a>
+  </span>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_BuildButtonToggled" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.BuildButtonToggled">BuildButtonToggled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;bool&gt;? BuildButtonToggled</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">EventHandler</span>&lt;<span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_ClearAllGhosts.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.ClearAllGhosts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1264">View Source</a>
+  </span>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_ClearAllGhosts" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.ClearAllGhosts">ClearAllGhosts</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler? ClearAllGhosts</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">EventHandler</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_EraseButtonToggled.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.EraseButtonToggled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1263">View Source</a>
+  </span>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_EraseButtonToggled" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.EraseButtonToggled">EraseButtonToggled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;bool&gt;? EraseButtonToggled</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">EventHandler</span>&lt;<span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_PopulateRecipes.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.PopulateRecipes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1258">View Source</a>
+  </span>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_PopulateRecipes" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.PopulateRecipes">PopulateRecipes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;(string search, string catagory)&gt;? PopulateRecipes</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">EventHandler</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_RecipeFavorited.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.RecipeFavorited%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1261">View Source</a>
+  </span>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_RecipeFavorited" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.RecipeFavorited">RecipeFavorited</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler? RecipeFavorited</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">EventHandler</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu_RecipeSelected.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu.RecipeSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L1260">View Source</a>
+  </span>
+  <h4 id="Content_Client_Construction_UI_GmodConstructionMenu_RecipeSelected" data-uid="Content.Client.Construction.UI.GmodConstructionMenu.RecipeSelected">RecipeSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ConstructionMenu.ConstructionMenuListData?&gt;? RecipeSelected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">EventHandler</span>&lt;<span class="xref">System.Nullable</span>&lt;<span class="xref">Content.Client.Construction.UI.ConstructionMenu.ConstructionMenuListData</span>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Content.Client.Construction.UI.IConstructionMenuView.html">IConstructionMenuView</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Content.Client.UserInterface.ControlExtensions.ControlExtension.html#Content_Client_UserInterface_ControlExtensions_ControlExtension_GetControlOfType__1_Robust_Client_UserInterface_Control_">ControlExtension.GetControlOfType&lt;T&gt;(Control)</a>
+  </div>
+  <div>
+      <a class="xref" href="Content.Client.UserInterface.ControlExtensions.ControlExtension.html#Content_Client_UserInterface_ControlExtensions_ControlExtension_GetControlOfType__1_Robust_Client_UserInterface_Control_System_String_">ControlExtension.GetControlOfType&lt;T&gt;(Control, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Content.Client.UserInterface.ControlExtensions.ControlExtension.html#Content_Client_UserInterface_ControlExtensions_ControlExtension_GetControlOfType__1_Robust_Client_UserInterface_Control_System_Boolean_">ControlExtension.GetControlOfType&lt;T&gt;(Control, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Content.Client.UserInterface.ControlExtensions.ControlExtension.html#Content_Client_UserInterface_ControlExtensions_ControlExtension_GetControlOfType__1_Robust_Client_UserInterface_Control_System_String_System_Boolean_">ControlExtension.GetControlOfType&lt;T&gt;(Control, String, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Content.Client.UserInterface.ControlExtensions.ControlExtension.html#Content_Client_UserInterface_ControlExtensions_ControlExtension_GetSearchableControls_Robust_Client_UserInterface_Control_System_Boolean_">ControlExtension.GetSearchableControls(Control, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Content.Client.UserInterface.ControlExtensions.ControlExtension.html#Content_Client_UserInterface_ControlExtensions_ControlExtension_TryGetParentHandler__1_Robust_Client_UserInterface_Control___0__">ControlExtension.TryGetParentHandler&lt;T&gt;(Control, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Content.Client.UserInterface.ControlExtensions.ControlExtension.html#Content_Client_UserInterface_ControlExtensions_ControlExtension_GetControlScrollPosition_Robust_Client_UserInterface_Control_">ControlExtension.GetControlScrollPosition(Control)</a>
+  </div>
+  <div>
+      <a class="xref" href="Content.Client.UserInterface.ControlExtensions.ControlExtension.html#Content_Client_UserInterface_ControlExtensions_ControlExtension_ChildrenContainText_Robust_Client_UserInterface_Control_System_String_">ControlExtension.ChildrenContainText(Control, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Content.Client._RMC14.UserInterface.UIExtensions.html#Content_Client__RMC14_UserInterface_UIExtensions_RemoveChildExcept_Robust_Client_UserInterface_Control_Robust_Client_UserInterface_Control_">UIExtensions.RemoveChildExcept(Control, Control)</a>
+  </div>
+  <div>
+      <a class="xref" href="Content.Client._RMC14.UserInterface.UIExtensions.html#Content_Client__RMC14_UserInterface_UIExtensions_RemoveChildrenAfter_Robust_Client_UserInterface_Control_System_Int32_">UIExtensions.RemoveChildrenAfter(Control, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Content.Client._RMC14.UserInterface.UIExtensions.html#Content_Client__RMC14_UserInterface_UIExtensions_SetTabVisibleAfter_Robust_Client_UserInterface_Control_System_Int32_System_Boolean_">UIExtensions.SetTabVisibleAfter(Control, Int32, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Content.Client._RMC14.UserInterface.UIExtensions.html#Content_Client__RMC14_UserInterface_UIExtensions_SetVisibleAfter_Robust_Client_UserInterface_Control_System_Int32_System_Boolean_">UIExtensions.SetVisibleAfter(Control, Int32, Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/new/master/apiSpec/new?filename=Content_Client_Construction_UI_GmodConstructionMenu.md&amp;value=---%0Auid%3A%20Content.Client.Construction.UI.GmodConstructionMenu%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/flex5hybrid/RussianCM/blob/master/Content.Client/Construction/UI/GmodConstructionMenu.xaml.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

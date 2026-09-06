@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Content.Server._AU14.Insurgency.Sapper
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Content.Server._AU14.Insurgency.Sapper
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Content.Server._AU14.Insurgency.Sapper">
+  
+  <h1 id="Content_Server__AU14_Insurgency_Sapper" data-uid="Content.Server._AU14.Insurgency.Sapper" class="text-break">Namespace Content.Server._AU14.Insurgency.Sapper
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Content.Server._AU14.Insurgency.Sapper.SapperAtmHackingSystem.html">SapperAtmHackingSystem</a></h4>
+      <section><p>Runs the financial siphon rig. Clamping it onto a colony finance device (ATM, budget console, or
+ASRS terminal) runs a long, loud do-after; on completion it drains the appropriate fictional funds
+into cash and, for ATMs, leaves the machine temporarily disrupted (sparking, refusing to open) until
+it self-repairs after five minutes.</p>
+<p>ATM payout: an equal slice of the whole managed pool - the colony budget plus every department's
+budget - divided across the ATMs, plus a 5% skim from every player account. Budget console and ASRS
+terminal instead drain their own held funds in full, with heavier feedback for the bigger event.</p>
+</section>
+      <h4><a class="xref" href="Content.Server._AU14.Insurgency.Sapper.SapperAudioTrapSystem.html">SapperAudioTrapSystem</a></h4>
+      <section><p>The audio (early-warning) trap's payload. The wire lifecycle is entirely the tripwire system's;
+this system only:</p>
+<ul>
+<li>asks the sapper to name the trap the moment it is planted (a small dialog box), and</li>
+<li>when the wire is crossed, blows the whistle at the wire and reports the trap's name and area
+over the CLF radio channel, then re-arms after a cooldown.</li>
+</ul>
+</section>
+      <h4><a class="xref" href="Content.Server._AU14.Insurgency.Sapper.SapperSnareSystem.html">SapperSnareSystem</a></h4>
+      <section><p>Runs the snare trap's non-lethal payload. When a snare goes off it binds the tripper: they are
+rooted in place (cannot walk) and cuffed (dropping whatever they held and unable to use items,
+attack, or fire), and their view and sprite are flipped upside down. They break out on their own
+after a long struggle, or a friend cuts them loose fast with a knife.</p>
+<p>Hand-binding is done with real cuffs (see <a class="xref" href="../Content.Shared/Content.Shared.Cuffs.SharedCuffableSystem.html">SharedCuffableSystem</a>) rather than by
+server-only interaction/attack blocks: the cuffable state is networked and shared, so the client
+predicts the victim's helplessness instead of mispredicting and rubber-banding. The root is also
+driven by the networked <a class="xref" href="../Content.Shared/Content.Shared._RMC14.Slow.RMCRootedComponent.html">RMCRootedComponent</a> (predicted the same way).</p>
+<p>The upside-down view and sprite are done entirely client-side from the networked
+<a class="xref" href="../Content.Shared/Content.Shared._AU14.Insurgency.Sapper.SapperSnaredComponent.html">SapperSnaredComponent</a> (see the client SapperSnareVisualsSystem); the eye flip cannot
+be set once server-side because the client's eye-lerping resets it every frame.</p>
+</section>
+      <h4><a class="xref" href="Content.Server._AU14.Insurgency.Sapper.SapperTrapSystem.html">SapperTrapSystem</a></h4>
+      <section><p>Server-side timing for sapper traps:</p>
+<ul>
+<li>flips a planted trap to armed once its arming delay elapses,</li>
+<li>and, for snare traps, ensnares whoever trips them (handled by <a class="xref" href="Content.Server._AU14.Insurgency.Sapper.SapperSnareSystem.html">SapperSnareSystem</a>).
+Proximity reveal is NO LONGER server-side: it used to flip a global Revealed flag that showed
+the trap to everyone once any enemy walked near. It is now a per-viewer decision made entirely
+client-side in SapperTrapVisualsSystem (only the approaching player sees it).</li>
+</ul>
+</section>
+      <h4><a class="xref" href="Content.Server._AU14.Insurgency.Sapper.SapperTripwireSystem.html">SapperTripwireSystem</a></h4>
+      <section><p>The two-part tripwire. Planting the charge hands the sapper the wire's &quot;other end&quot;; they carry it to
+where they want the line to run and use it there. If that spot is in a straight line, in range, and in
+line of sight, a near-invisible wire is strung between the two points with a trip trigger on every tile
+between them. Anything that isn't a friendly crossing any part of the wire detonates the charge and
+every explosive lashed to it.</p>
+<p>Planting, arming, hiding, and disarming are the ordinary <a class="xref" href="../Content.Shared/Content.Shared._AU14.Insurgency.Sapper.SapperTrapComponent.html">SapperTrapComponent</a> lifecycle
+handled by the shared sapper system; this system runs out the wire, cleans it up, attaches explosive
+payloads, and fires everything when the wire is crossed.</p>
+</section>
+      <h4><a class="xref" href="Content.Server._AU14.Insurgency.Sapper.SapperWorkbenchSystem.html">SapperWorkbenchSystem</a></h4>
+      <section><p>Custom Sapper's Workbench UI and server actions. The bench has two faces:
+gunsmithing, which force-fits attachments by broad slot category, and trap crafting, which consumes
+stored materials from the bench instead of using the stock lathe window.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
