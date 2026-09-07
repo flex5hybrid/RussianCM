@@ -1,334 +1,327 @@
 <Document>
-  # Voice Procedure
+  # Регламент радиообмена
 
-  Voice procedure is a standard way to pass information over a shared radio net.
+  Регламент ведения радиообмена (голосовая процедура) — это стандартный способ передачи информации по общей радиосети.
 
-  Using consistent callsigns and prowords makes transmissions shorter, clearer, and easier to acknowledge.
+  Использование постоянных позывных и кодовых слов (провордов) делает передачу сообщений более короткой, чёткой и упрощает их подтверждение.
 
-  ## Basic Rules
+  ## Основные правила
 
-  - [bold]Listen before transmitting.[/bold] Do not interrupt traffic already in progress unless the message is urgent.
-  - [bold]Plan the message first.[/bold] Know what you need to say before opening the channel.
-  - [bold]Use callsigns.[/bold] Do not identify personnel by character name or rank over the radio.
-  - [bold]Keep transmissions brief.[/bold] Split long messages into clear sections.
-  - [bold]Acknowledge orders and requests.[/bold] Confirm that important traffic was received and understood.
-  - [bold]Use plain language.[/bold] Use prowords where they apply, but avoid unnecessary jargon.
+  - [bold]Перед передачей прослушайте эфир.[/bold] Не прерывайте уже идущие переговоры, если только сообщение не является срочным.
+  - [bold]Заранее продумайте сообщение.[/bold] Знайте, что вы хотите сказать, прежде чем открывать канал.
+  - [bold]Используйте позывные.[/bold] Не называйте личный состав по имени или званию в радиоэфире.
+  - [bold]Передачи должны быть краткими.[/bold] Разбивайте длинные сообщения на чёткие части.
+  - [bold]Подтверждайте приказы и запросы.[/bold] Убедитесь, что важная информация была принята и понята.
+  - [bold]Используйте простой язык.[/bold] Применяйте кодовые слова (проворды) там, где это уместно, но избегайте излишнего жаргона.
 
-  ## Basic Call Format
+  ## Основной формат вызова
 
-  Address the receiving station first, then identify the transmitting station.
+  Сначала назовите принимающую станцию, затем укажите передающую станцию.
 
-  [color=#a4885c]HAVOC 6, this is SABRE ROMEO, message, over.[/color]
+  [color=#a4885c]Хавок 6, это Сэйбр Ромео, передаю сообщение, приём.[/color]
 
-  A complete call normally contains:
+  Полное обращение обычно содержит:
 
-  - The callsign being addressed.
-  - [bold]THIS IS[/bold].
-  - The transmitting callsign.
-  - The message.
-  - [bold]OVER[/bold] or [bold]OUT[/bold].
+  - Позывной вызываемой станции.
+  - [bold]ЭТО[/bold].
+  - Позывной передающей станции.
+  - Сообщение.
+  - [bold]Приём[/bold] или [bold]Конец связи[/bold].
 
-  The receiving station answers using the same order:
+  Принимающая станция отвечает в том же порядке:
 
-  [color=#a4885c]SABRE ROMEO, this is HAVOC 6, send it, over.[/color]
+  [color=#a4885c]Сэйбр Ромео, это Хавок 6, передавайте, прием.[/color]
 
-  After both stations have established contact, [bold]THIS IS[/bold] may be omitted:
+  После того как обе станции установили связь, слово [bold]ЭТО[/bold] может быть опущено:
 
-  [color=#a4885c]SABRE ROMEO, HAVOC 6, send it, over.[/color]
+  [color=#a4885c]Сэйбр Ромео, Хавок 6, передаю, прием.[/color]
 
-  ## Prowords
+  ## Кодовые слова
 
-  Prowords are standardized words with specific meanings.
+  Кодовые слова — это стандартизированные слова, имеющие конкретные значения.
 
   <Table Columns="2" MinForcedColumnWidth="110">
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Proword[/bold]</Box>
+      <Box Margin="4">[bold]Кодовые слова[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Meaning[/bold]</Box>
+      <Box Margin="4">[bold]Значения[/bold]</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">THIS IS</Box>
+      <Box Margin="4">ЭТО</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">The callsign that follows identifies the transmitting station.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">OVER</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">The transmission is complete and a reply is expected.</Box>
+      <Box Margin="4">Указывает, что следующий за ним позывной идентифицирует передающую станцию.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">OUT</Box>
+      <Box Margin="4">ПРИЁМ</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">The exchange is complete and no reply is expected. Do not use “over and out.”</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">ROGER</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">The previous transmission was received and understood. It does not mean the instruction will be carried out.</Box>
+      <Box Margin="4">Передача завершена, ожидается ответ.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">WILCO</Box>
+      <Box Margin="4">КОНЕЦ СВЯЗИ</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">The instruction was understood and will be carried out. WILCO already includes the meaning of ROGER.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">SAY AGAIN</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Repeat the previous transmission, or a specified part of it.</Box>
+      <Box Margin="4">Обмен завершён, ответ не ожидается. Не используйте сочетание «приём-конец»</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">CORRECTION</Box>
+      <Box Margin="4">ПРИНЯЛ</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">An error was made. The corrected information follows.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">DISREGARD</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Ignore the previous transmission.</Box>
+      <Box Margin="4">Предыдущее сообщение принято и понято. Не означает, что указание будет выполнено.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">BREAK</Box>
+      <Box Margin="4">ВЫПОЛНЮ</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Separates sections of a message or traffic addressed to different stations.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">WAIT</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Pause briefly. The transmitting station will continue shortly.</Box>
+      <Box Margin="4">Указание понято и будет выполнено. ВЫПОЛНЮ уже включает в себя значение ПРИНЯЛ.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">WAIT OUT</Box>
+      <Box Margin="4">ПОВТОРИТЕ</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">A longer pause is required. The transmitting station will call again later.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">HOW COPY</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Confirm whether the preceding message was received clearly.</Box>
+      <Box Margin="4">Повторите предыдущее сообщение или указанную его часть.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">RADIO CHECK</Box>
+      <Box Margin="4">ПОПРАВКА</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Report signal strength and readability.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">LIMA CHARLIE</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Loud and clear.</Box>
+      <Box Margin="4">Была допущена ошибка. Далее следует исправленная информация.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">ACTUAL</Box>
+      <Box Margin="4">ОТМЕНА</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Identifies the person assigned to a command station rather than someone transmitting on their behalf.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">INTERROGATIVE</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">The following traffic is a question.</Box>
+      <Box Margin="4">Проигнорируйте предыдущее сообщение.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">BE ADVISED</Box>
+      <Box Margin="4">ЖДИТЕ</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">The following traffic is information that may affect the receiving station.</Box>
+      <Box Margin="4">Разделяет части сообщения или информацию, адресованную разным станциям.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">ALL STATIONS</Box>
+      <Box Margin="4">ОЖИДАЙТЕ</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">The message is addressed to every station on the net.</Box>
+      <Box Margin="4">Требуется более длительная пауза. Передающая станция свяжется позже.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">КАК ПРИНЯЛИ?</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Подтвердите, что предыдущее сообщение было принято чётко.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">ПРОВЕРКА СВЯЗИ</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Доложите об уровне сигнала и разборчивости.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">ГРОМКО И ЧЕТКО</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Слышно громко и чётко.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">ПЕРВЫЙ</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Указывает на лицо, занимающее командную должность, а не на того, кто передаёт сообщение от его имени.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">ВОПРОС</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Последующая информация является вопросом.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">ИМЕЙТЕ В ВИДУ</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Последующая информация может повлиять на принимающую станцию.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">ВСЕМ СТАНЦИЯМ</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Сообщение адресовано всем станциям в сети.</Box>
     </ColorBox>
   </Table>
 
-  Use [bold]SAY AGAIN[/bold] instead of “repeat” when requesting a repeated radio message. On a fire-support net, [bold]REPEAT[/bold] may be interpreted as an instruction to fire the previous mission again.
+  Используйте [bold]УТОЧНИТЕ[/bold] вместо "ПОВТОРИТЕ", когда запрашиваете повторение радиосообщения. При запросе повторного радиосообщения используйте [bold]ПОВТОРИТЕ[/bold]. На сети поддержки огня слово [bold]ПОВТОРИТЕ[/bold] может быть истолковано как команда повторить предыдущий огневой налёт.
 
-  ## Radio Check
+  ## Контроль связи
 
-  A radio check confirms that two stations can hear each other.
+  Контроль связи подтверждает, что две станции слышат друг друга.
 
-  [color=#a4885c]HAVOC ROMEO, this is SABRE ROMEO, radio check, over.[/color]
+  [color=#a4885c]ХАВОК РОМЕО, ЭТО СЕЙБР РОМЕО, проверка связи, приём.[/color]
 
-  [color=#a4885c]SABRE ROMEO, this is HAVOC ROMEO, Lima Charlie. How me? Over.[/color]
+  [color=#a4885c]СЕЙБР РОМЕО, ЭТО ХАВОК РОМЕО, громко и четко. Как меня слышите? Приём.[/color]
 
-  [color=#a4885c]Lima Charlie, out.[/color]
+  [color=#a4885c]Громко и четко, конец связи.[/color]
 
-  When the signal is not clear, describe the problem instead:
+  Когда сигнал нечёткий, опишите проблему вместо этого:
 
-  - Weak but readable.
-  - Broken.
-  - Distorted.
-  - Unreadable.
+  - Слабо, но разборчиво.
+  - С перебоями.
+  - Искажённо.
+  - Неразборчиво.
 
-  ## Contact Report
+  ## Доклад о контакте
 
-  A contact report should state:
+  Доклад о контакте должен содержать:
 
-  - What was seen.
-  - Where it was seen.
-  - Approximate strength.
-  - What the reporting element is doing.
+  - Что было замечено.
+  - Где это было замечено.
+  - Примерную численность.
+  - Что делает докладывающее подразделение.
 
-  [color=#a4885c]HAVOC 6, this is SABRE ACTUAL, contact. Infantry, squad strength, east treeline near grid two-four-five. Engaging, over.[/color]
+  [color=#a4885c]ХАВОК 6, ЭТО ЭТО СЕЙБР ПЕРВЫЙ, контакт. Пехота, численностью до отделения, восточная опушка леса у квадрата два-четыре-пять. Вступаю в бой, приём.[/color]
 
-  [color=#a4885c]SABRE ACTUAL, HAVOC 6, roger. DAGGER is moving to your flank. Hold your position, over.[/color]
+  [color=#a4885c]СЕЙБР ПЕРВЫЙ, ХАВОК 6, принял. ДАГГЕР выдвигается на ваш фланг. Удерживайте позицию, приём.[/color]
 
-  [color=#a4885c]HAVOC 6, SABRE ACTUAL, wilco, out.[/color]
+  [color=#a4885c]ХАВОК 6, СЕЙБР ПЕРВЫЙ, выполню, конец связи.[/color]
 
-  ## Fire-Support Request
+  ## Запрос огневой поддержки
 
-  Establish contact before sending the full request.
+  Установите связь перед передачей полного запроса.
 
-  [color=#a4885c]HAVOC OPS, this is SABRE ROMEO, fire mission, over.[/color]
+  [color=#a4885c]ХАВОК ОПС, это СЕЙБР РОМЕО, огневая задача, приём.[/color]
 
-  [color=#a4885c]SABRE ROMEO, HAVOC OPS, send it, over.[/color]
+  [color=#a4885c]СЕЙБР РОМЕО, ХАВОК ОПС, передавайте, приём.[/color]
 
-  The request should identify:
+  Запрос должен содержать:
 
-  - The target.
-  - The target location.
-  - The position of friendly forces.
-  - The requested effect.
+  - Цель.
+  - Местоположение цели.
+  - Позицию своих войск.
+  - Требуемый эффект.
 
-  [color=#a4885c]Enemy machine-gun position on the north ridge beside the communications tower. Friendlies are two-five-zero meters east, marked by smoke. Request suppression, over.[/color]
+  [color=#a4885c]Пулемётная позиция противника на северном хребте рядом с вышкой связи. Свои находятся в двухстах пятидесяти метрах к востоку, отмечены дымом. Запрашиваю подавление, приём.[/color]
 
-  [color=#a4885c]SABRE ROMEO, HAVOC OPS, roger. Rounds out, impact in three-zero seconds, over.[/color]
+  [color=#a4885c]СЭЙБР РОМЕО, ХАВОК ОПС, принял. Снаряды в воздухе, попадание через тридцать секунд, приём.[/color]
 
-  [color=#a4885c]HAVOC OPS, SABRE ROMEO, impact observed. Target suppressed. End of mission, out.[/color]
+  [color=#a4885c]ХАВОК ОПС, СЭЙБР РОМЕО, попадание наблюдаю. Цель подавлена. Задача выполнена, конец связи.[/color]
 
-  ## Casualty Evacuation Request
+  ## Запрос на эвакуацию раненых
 
-  Establish contact before sending casualty details.
+  Установите связь перед передачей сведений о раненых.
 
-  [color=#a4885c]HAVOC ROMEO, this is DAGGER ROMEO, casualty evacuation request, over.[/color]
+  [color=#a4885c]ХАВОК РОМЕО, это ДАГГЕР РОМЕО, запрос на эвакуацию раненых, приём.[/color]
 
-  [color=#a4885c]DAGGER ROMEO, HAVOC ROMEO, send it, over.[/color]
+  [color=#a4885c]ДАГГЕР РОМЕО, ХАВОК РОМЕО, передавайте, приём.[/color]
 
-  Include:
+  Укажите:
 
-  - Number of casualties.
-  - Medical priority.
-  - Pickup location.
-  - Condition of the pickup area.
-  - Identification or marking.
+  - Количество раненых.
+  - Срочность медицинской помощи.
+  - Место эвакуации (посадки).
+  - Состояние зоны посадки.
+  - Опознавательные знаки или маркировку.
 
-  [color=#a4885c]Two casualties. One urgent surgical, one walking wounded. Pickup at the landing zone south of the bridge. Area is secure and marked with green smoke, over.[/color]
+  [color=#a4885c]Двое раненых. Один в крайне тяжёлом состоянии, требует операции, один легкораненый. Посадка на посадочной площадке южнее моста. Район безопасен, отмечен зелёным дымом, приём.[/color]
 
-  [color=#a4885c]DAGGER ROMEO, HAVOC ROMEO, good copy. Evacuation craft inbound in five minutes, out.[/color]
+  [color=#a4885c]ДАГГЕР РОМЕО, ХАВОК РОМЕО, принято. Борт для эвакуации через пять минут, конец связи.[/color]
 
-  ## Using ACTUAL
+  ## Использование "ПЕРВЫЙ"
 
-  [bold]ACTUAL[/bold] identifies the person in charge speaking personally rather than an RTO or other person speaking on their behalf.
+  [bold]ПЕРВЫЙ[/bold] указывает на то, что командир говорит лично, а не радиотелефонист или другое лицо, передающее от его имени.
 
-  Squad leaders carry it as their assigned station: [bold]SABRE ACTUAL[/bold] is the Sabre (Alpha) squad leader. Command stations append it when the officer takes the handset personally.
+  Командиры отделений используют это как позывной своей станции: [bold]СЕЙБР ПЕРВЫЙ[/bold] это командир отряда Альфа. Командные станции добавляют это слово, когда офицер лично берёт трубку.
 
-  [color=#a4885c]SABRE ACTUAL, this is HAVOC 6 ACTUAL. Move past phase line DODGE, over.[/color]
+  [color=#a4885c]СЕЙБР ПЕРВЫЙ, ЭТО ХАВОК 6 ПЕРВЫЙ. Продвинуться за рубеж ДОДЖ, приём.[/color]
 
-  Without [bold]ACTUAL[/bold], [bold]HAVOC 6[/bold] traffic may be the RTO relaying for the commander. With it, the commander is speaking personally.
+  Без [bold]ПЕРВЫЙ[/bold], [bold]ХАВОК 6[/bold] может означать, что радиотелефонист ретранслирует сообщение командира. С этим кодовым словом можно понять, что командир говорит лично.
 
-  ## Corrections
+  ## Исправления
 
-  Use [bold]CORRECTION[/bold] when an error is noticed during the transmission.
+  Используйте [bold]ПОПРАВКА[/bold] когда ошибка была замечена во время передачи.
 
-  [color=#a4885c]Enemy infantry west of the bridge, CORRECTION, east of the bridge, squad strength, over.[/color]
+  [color=#a4885c]Пехота противника западнее моста, ПОПРАВКА, восточнее моста, численностью до отделения, приём.[/color]
 
-  Use [bold]DISREGARD[/bold] when the entire previous message should be ignored.
+  Используйте [bold]ОТМЕНА[/bold] когда всё предыдущее сообщение должно быть проигнорировано.
 
-  [color=#a4885c]DISREGARD my last, out.[/color]
+  [color=#a4885c]ОТМЕНА моё последнее, конец.[/color]
 
-  ## Common Mistakes
+  ## Часто встречающиеся ошибки
 
   <Table Columns="2" MinForcedColumnWidth="120">
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Avoid[/bold]</Box>
+      <Box Margin="4">[bold]Избегайте[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Reason[/bold]</Box>
+      <Box Margin="4">[bold]Причина[/bold]</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">Using names or ranks</Box>
+      <Box Margin="4">Использование имён или званий</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Radio traffic should identify stations by callsign.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">Calling “command” without a callsign</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">The intended receiving station may be unclear.</Box>
+      <Box Margin="4">Радиообмен должен идентифицировать станции по позывным.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">Long unbroken transmissions</Box>
+      <Box Margin="4">Вызов «командования» без позывного</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Other stations cannot acknowledge or pass urgent traffic.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">“Over and out”</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">OVER requests a reply, while OUT ends the exchange.</Box>
+      <Box Margin="4">Предполагаемая принимающая станция может быть неясна.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">“Roger wilco”</Box>
+      <Box Margin="4">Длинные неразбитые передачи</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">WILCO already confirms receipt and compliance.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">“Can you repeat that?”</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Use SAY AGAIN to avoid confusion on fire-support nets.</Box>
+      <Box Margin="4">Другие станции не могут подтвердить приём или передать срочную информацию.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">Vague reports</Box>
+      <Box Margin="4">"Приём и конец связи"</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">State the event, location, strength, and required action clearly.</Box>
+      <Box Margin="4">ПРИЁМ требует ответа, а КОНЕЦ СВЯЗИ завершает обмен.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">"Принял-выполню"</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">ВЫПОЛНЮ уже подтверждает и получение, и выполнение.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">"Можете повторить?"</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Используйте УТОЧНИТЕ, чтобы избежать путаницы на сетях огневой поддержки.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Нечёткие доклады</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Чётко указывайте событие, местоположение, численность и требуемые действия.</Box>
     </ColorBox>
   </Table>
 
-  Brief, structured transmissions leave the net available for acknowledgements and urgent traffic.
+  Краткие, структурированные передачи оставляют сеть свободной для подтверждений и срочных сообщений.
 </Document>
