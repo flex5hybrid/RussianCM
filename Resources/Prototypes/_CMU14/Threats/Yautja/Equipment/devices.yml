@@ -165,7 +165,7 @@
     keySlots: 1
   - type: YautjaGearContainer
     gearPrototypes:
-      Caster: CMUYautjaPlasmaCasterCrimson
+      Caster: CMUYautjaBadBloodPlasmaCaster
       WristBlades: CMUYautjaWristBlades
       Scimitar: CMUYautjaScimitar
       ChainGauntlet: CMUYautjaChainGauntlet
@@ -685,6 +685,42 @@
 
 - type: entity
   parent: BaseItem
+  id: CMUYautjaHealthShard
+  name: health shard
+  description: A crystalline shard pulsing with restorative energy. Split it with both hands free to activate, then plunge both halves into yourself for a burst of healing and a sustained chemical treatment.
+  components:
+  - type: Sprite
+    sprite: _CMU14/Yautja/health_shard.rsi
+    state: shard_icon
+  - type: Item
+    sprite: _CMU14/Yautja/health_shard.rsi
+    heldPrefix: shard_inhand
+    size: Small
+  - type: YautjaHealthShard
+  - type: YautjaTechItem
+    blockPickup: false
+    blockUse: false
+    blockMelee: false
+    blockThrow: false
+
+- type: entity
+  parent: BaseItem
+  id: CMUYautjaHealthShardHalf
+  name: health shard half
+  description: One half of a split health shard. Use on yourself to plunge it in for immediate healing and a chemical boost.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _CMU14/Yautja/health_shard.rsi
+    state: shard_icon_twohand
+  - type: Item
+    sprite: _CMU14/Yautja/health_shard.rsi
+    heldPrefix: shard_inhand
+    size: Tiny
+  - type: YautjaHealthShardHalf
+
+- type: entity
+  parent: BaseItem
   id: CMUYautjaStabilisingCrystal
   name: yautja autoinjector
   description: An alien autoinjector loaded with a strong trauma and burn treatment cocktail.
@@ -1119,6 +1155,43 @@
       fireSound:
         path: /Audio/_CMU14/Yautja/Weapons/Plasma/pulse.wav
   - type: Appearance
+
+- type: entity
+  parent: CMUYautjaPlasmaCaster
+  id: CMUYautjaBadBloodPlasmaCaster
+  name: damaged plasma caster
+  description: A battered shoulder plasma caster. Its capacitors are failing, requiring time to recharge between shots.
+  components:
+  - type: YautjaCaster
+    powerCost: 30
+    cooldownSound:
+      path: /Audio/_CMU14/Yautja/Weapons/Plasma/plasma_caster_no_energy_01.wav
+    modes:
+    - name: cmu-yautja-caster-mode-stun
+      projectile: CMUYautjaCasterStunBolt
+      powerCost: 30
+      cooldown: 10
+      fireSound:
+        path: /Audio/_CMU14/Yautja/Weapons/Plasma/pred_plasmacaster_fire.wav
+    - name: cmu-yautja-caster-mode-lethal
+      projectile: CMUYautjaBadBloodCasterLethalBolt
+      powerCost: 100
+      cooldown: 20
+      fireSound:
+        path: /Audio/_CMU14/Yautja/Weapons/Plasma/pred_lasercannon.wav
+    #- name: cmu-yautja-caster-mode-immobilizer # disabled pending retune
+    #  projectile: CMUYautjaCasterImmobilizerBolt
+    #  powerCost: 150
+    #  cooldown: 15
+    #  fireSound:
+    #    path: /Audio/_CMU14/Yautja/Weapons/Plasma/pulse.wav
+    #- name: cmu-yautja-caster-mode-eradicator # disabled pending retune
+    #  projectile: CMUYautjaCasterEradicatorBolt
+    #  powerCost: 1000
+    #  cooldown: 30
+    #  fireSound:
+    #    path: /Audio/_CMU14/Yautja/Weapons/Plasma/pulse.wav
+
 
 - type: entity
   parent: CMUYautjaPlasmaCaster
