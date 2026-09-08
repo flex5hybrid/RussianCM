@@ -1920,6 +1920,10 @@
       amount: 3
     - id: CMUYautjaHealingCapsule
       amount: 3
+    - id: CMUYautjaAdvancedBruisePack
+      amount: 2
+    - id: CMUYautjaAdvancedOintment
+      amount: 2
 
 - type: entity
   parent: CMUYautjaMedicompFull
