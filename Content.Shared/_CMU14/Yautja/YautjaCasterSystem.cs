@@ -168,7 +168,8 @@ public sealed partial class YautjaCasterSystem : EntitySystem
 
     private void PopupCooldown(Entity<YautjaCasterComponent> ent, EntityUid user, TimeSpan cooldownUntil)
     {
-        var remaining = (int) Math.Ceiling((cooldownUntil - _timing.CurTime).TotalSeconds);
+        var now = _timing.CurTime;
+        var remaining = (int) Math.Ceiling((ent.Comp.CooldownUntil - now).TotalSeconds);
         _popup.PopupClient(Loc.GetString("cmu-yautja-caster-cooldown", ("seconds", remaining)), ent.Owner, user, PopupType.SmallCaution);
 
         if (ent.Comp.CooldownSound != null)
@@ -219,6 +220,18 @@ public sealed partial class YautjaCasterSystem : EntitySystem
     private void OnGunShot(Entity<YautjaCasterComponent> ent, ref GunShotEvent args)
     {
         _audio.PlayPredicted(GetFireSound(ent.Comp), ent.Owner, args.User);
+
+        if (!_net.IsClient)
+        {
+            _power.TryRemovePower(args.User, GetPowerCost(ent.Comp));
+
+            var mode = GetMode(ent.Comp);
+            if (mode != null && mode.Cooldown > TimeSpan.Zero)
+            {
+                ent.Comp.CooldownUntil = _timing.CurTime + mode.Cooldown;
+                Dirty(ent);
+            }
+        }
     }
 
     private void OnProjectileTerminating(Entity<YautjaCasterProjectileRefundComponent> ent, ref EntityTerminatingEvent args)

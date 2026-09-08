@@ -1376,6 +1376,9 @@ public sealed partial class YautjaCasterMode
 
     [DataField]
     public SoundSpecifier FireSound = new SoundPathSpecifier("/Audio/_CMU14/Yautja/Weapons/Plasma/pred_plasmacaster_fire.wav");
+
+    [DataField]
+    public TimeSpan Cooldown = TimeSpan.Zero;
 }
 
 [RegisterComponent]
