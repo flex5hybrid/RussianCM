@@ -1,112 +1,117 @@
-<Document>
-# Research Hydroponics
-This section details all parts of hydroponics that are important for research purposes.
+<Document> 
+# Гидропоника для исследований
+В этом разделе описаны все аспекты гидропоники, важные для исследовательских целей.
 
-## Tools of the trade
-<Box>
-<GuideEntityEmbed Entity="CMWirecutter" Caption="Wirecutters"/>
-<GuideEntityEmbed Entity="RMCToolSpade" Caption="Spade"/>
-<GuideEntityEmbed Entity="RMCToolHatchet" Caption="Hatchet"/>
-<GuideEntityEmbed Entity="RMCToolMiniHoe" Caption="Mini Hoe"/>
-<GuideEntityEmbed Entity="CMHandLabeler" Caption="Hand Labeler"/>
-</Box>
-<Box>
-<GuideEntityEmbed Entity="SeedExtractor" Caption="Seed Extractor"/>
-<GuideEntityEmbed Entity="RMCKitchenReagentGrinder" Caption="Reagent Grinder"/>
-</Box>
-<Box>
-<GuideEntityEmbed Entity="CMHydroponicsTray" Caption="Hydroponics Tray"/>
-</Box>
+## Инструменты профессии
+<Box> 
+<GuideEntityEmbed Entity="CMWirecutter" Caption="Кусачки"/> 
+<GuideEntityEmbed Entity="RMCToolSpade" Caption="Лопатка"/> 
+<GuideEntityEmbed Entity="RMCToolHatchet" Caption="Топорик"/> 
+<GuideEntityEmbed Entity="RMCToolMiniHoe" Caption="Маленькая тяпка"/> 
+<GuideEntityEmbed Entity="CMHandLabeler" Caption="Ручной маркиратор"/> 
+</Box> 
+<Box> 
+<GuideEntityEmbed Entity="SeedExtractor" Caption="Экстрактор семян"/> 
+<GuideEntityEmbed Entity="RMCKitchenReagentGrinder" Caption="Измельчитель реагентов"/> 
+</Box> 
+<Box> 
+<GuideEntityEmbed Entity="CMHydroponicsTray" Caption="Гидропонный лоток"/> 
+</Box> 
 
-	<Table Columns="3" MinForcedColumnWidth="64">
-		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Tool[/bold]</Box>
-		</ColorBox>
-		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Use[/bold]</Box>
-		</ColorBox>
-		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Source[/bold]</Box>
-		</ColorBox>
-		<ColorBox><Box>Wirecutters</Box></ColorBox><ColorBox><Box>Sampling seeds from living plants.</Box></ColorBox><ColorBox><Box>Autolathe, Toolboxes</Box></ColorBox>
-		<ColorBox><Box>Spade</Box></ColorBox><ColorBox><Box>Clearing plants from Hydroponics Trays.</Box></ColorBox><ColorBox><Box>Hydroponics Equipment Crate, NutriMax</Box></ColorBox>
-		<ColorBox><Box>Hatchet</Box></ColorBox><ColorBox><Box>Harvesting "Woody" plants.</Box></ColorBox><ColorBox><Box>Hydroponics Equipment Crate, NutriMax</Box></ColorBox>
-		<ColorBox><Box>Mini Hoe</Box></ColorBox><ColorBox><Box>Killing weeds.</Box></ColorBox><ColorBox><Box>Hydroponics Equipment Crate, NutriMax</Box></ColorBox>
-		<ColorBox><Box>Hand Labeler</Box></ColorBox><ColorBox><Box>Labeling important seeds, maintaining your sanity.</Box></ColorBox><ColorBox><Box>Autolathe</Box></ColorBox>
-		<ColorBox><Box>Seed Extractor</Box></ColorBox><ColorBox><Box>Getting seeds from plant yields.</Box></ColorBox><ColorBox><Box>Mapped, Admins</Box></ColorBox>
-		<ColorBox><Box>Reagent Grinder</Box></ColorBox><ColorBox><Box>Getting the chemicals out of the plant yields.</Box></ColorBox><ColorBox><Box>Mapped, Admins</Box></ColorBox>
-		<ColorBox><Box>Hydroponics Tray</Box></ColorBox><ColorBox><Box>Holding and growing plants.</Box></ColorBox><ColorBox><Box>ASRS</Box></ColorBox>
-	</Table>
-	
-## Mutations
-Mutating plants is necessary to obtain the chemicals required for hard level contracts in the [textlink="Research Data Terminal" link="CMURDT"].
-It may seem daunting at first, but it really only boils down to luck!
-
-### Applying Mutations
-In order to mutate plants, you will need to apply Unstable Mutagen to them and then cross your fingers.
-Each mutation has a 15% chance of mutating the plant's species and a 20% chance to mutate new chemicals.
-This is more common than you may expect.
-Species mutations and regular mutations are not exclusive, both can happen and often do at the same time.
-
-When a new chemical is added to a plant, there is a 40% chance that an additional "special" chemical is added to the plant.
-Only some plants have "special" chemicals, and some plants require mutation into a subspecies as that subspecies has the "Special Chemicals".
-An example of obtaining a "special" chemical would be:
-Apples -> Mutate Species -> Poison Apples -> Mutate -> Cyanide
-
-
-### Important Plant Subspecies
-<Table Columns="2" MinForcedColumnWidth="64">
-		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Plant[/bold]</Box>
-		</ColorBox>
-		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Subspecies[/bold]</Box>
-		</ColorBox>
-		<ColorBox><Box>Apples</Box></ColorBox><ColorBox><Box>Golden Apples, Poison Apples</Box></ColorBox>
-		<ColorBox><Box>Berries</Box></ColorBox><ColorBox><Box>Death Berries, Poison Berries</Box></ColorBox>
-		<ColorBox><Box>Nettles</Box></ColorBox><ColorBox><Box>Death Nettles</Box></ColorBox>
+	<Table Columns="3" MinForcedColumnWidth="64"> 
+		<ColorBox Color="#202028"> 
+			<Box Margin="4">[bold]Инструмент[/bold]</Box> 
+		</ColorBox> 
+		<ColorBox Color="#202028"> 
+			<Box Margin="4">[bold]Применение[/bold]</Box> 
+		</ColorBox> 
+		<ColorBox Color="#202028"> 
+			<Box Margin="4">[bold]Источник[/bold]</Box> 
+		</ColorBox> 
+		<ColorBox><Box>Кусачки</Box></ColorBox>
+		<ColorBox><Box>Отбор семян у живых растений.</Box></ColorBox>
+		<ColorBox><Box>Автолат, Инструментальные ящики</Box></ColorBox> 
+		<ColorBox><Box>Лопатка</Box></ColorBox><ColorBox><Box>Удаление растений из гидропонных лотков.</Box></ColorBox>
+		<ColorBox><Box>Ящик с гидропонным оборудованием, NutriMax</Box></ColorBox> <ColorBox><Box>Топорик</Box></ColorBox>
+		<ColorBox><Box>Сбор «древесных» растений.</Box></ColorBox><ColorBox><Box>Ящик с гидропонным оборудованием, NutriMax</Box></ColorBox>
+		 <ColorBox><Box>Маленькая тяпка</Box></ColorBox><ColorBox><Box>Уничтожение сорняков.</Box></ColorBox>
+		 <ColorBox><Box>Ящик с гидропонным оборудованием, NutriMax</Box></ColorBox> 
+		 <ColorBox><Box>Ручной маркиратор</Box></ColorBox>
+		 <ColorBox><Box>Маркировка важных семян, сохранение рассудка.</Box></ColorBox>
+		 <ColorBox><Box>Автолат</Box></ColorBox> <ColorBox><Box>Экстрактор семян</Box></ColorBox>
+		 <ColorBox><Box>Получение семян из урожая растений.</Box></ColorBox>
+		 <ColorBox><Box>На карте, Администраторы</Box></ColorBox> 
+		 <ColorBox><Box>Измельчитель реагентов</Box></ColorBox><ColorBox><Box>Извлечение химикатов из урожая растений.</Box></ColorBox>
+		 <ColorBox><Box>На карте, Администраторы</Box></ColorBox> <ColorBox><Box>Гидропонный лоток</Box></ColorBox>
+		 <ColorBox><Box>Содержание и выращивание растений.</Box></ColorBox><ColorBox><Box>АСРС (ASRS)</Box></ColorBox> 
 	</Table>
 
-[italic]Golden apples are useless.[/italic]
+## Мутации
+Мутирование растений необходимо для получения химикатов, требуемых для контрактов сложного уровня в [textlink="Терминале исследовательских данных" link="CMURDT"].
+Поначалу это может показаться пугающим, но на самом деле всё сводится к удаче!
 
-### Special chemicals and their sources
-The chemicals needed for hard contracts can be obtained from these plants.
-"Mutated" means that the plants need to be mutated to yield the chemical.
-<Table Columns="2" MinForcedColumnWidth="64">
-		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Chemical[/bold]</Box>
-		</ColorBox>
-		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Source[/bold]</Box>
-		</ColorBox>
-		<ColorBox><Box>Amatoxin</Box></ColorBox><ColorBox><Box>Lingzhi/Reishi, Fly Amanita</Box></ColorBox>
-		<ColorBox><Box>Atropine</Box></ColorBox><ColorBox><Box>Mutated Poppies</Box></ColorBox>
-		<ColorBox><Box>Coniine</Box></ColorBox><ColorBox><Box>Mutated Carrots</Box></ColorBox>
-		<ColorBox><Box>Cyanide</Box></ColorBox><ColorBox><Box>Mutated Poison Apples</Box></ColorBox>
-		<ColorBox><Box>Digoxin</Box></ColorBox><ColorBox><Box>Mutated Messa's Tears</Box></ColorBox>
-		<ColorBox><Box>Phenol</Box></ColorBox><ColorBox><Box>Mutated Carrots</Box></ColorBox>
-		<ColorBox><Box>Psoralen</Box></ColorBox><ColorBox><Box>Mutated Cabbages</Box></ColorBox>
-		<ColorBox><Box>Thymol</Box></ColorBox><ColorBox><Box>Mutated Death Berries, Mutated Poison Berries</Box></ColorBox>
-		<ColorBox><Box>Urishiol</Box></ColorBox><ColorBox><Box>Mutated Death Nettles</Box></ColorBox>
-		<ColorBox><Box>Zygacine</Box></ColorBox><ColorBox><Box>Mutated Lingzhi/Reishi</Box></ColorBox>
+## Применение мутаций
+Чтобы мутировать растения, нужно применить к ним Нестабильный мутаген и скрестить пальцы.
+Каждая мутация имеет 15% шанс изменить вид растения и 20% шанс добавить новые химикаты.
+Это случается чаще, чем можно ожидать.
+Мутации вида и обычные мутации не исключают друг друга — они могут происходить одновременно, и так бывает часто.
+
+Когда к растению добавляется новый химикат, существует 40% шанс, что дополнительно добавится «особый» химикат.
+Только некоторые растения имеют «особые» химикаты, а некоторые требуют мутации в подвид, так как этот подвид уже содержит «особые химикаты».
+Пример получения «особого» химиката:
+Яблоки -> Мутация вида -> Ядовитые яблоки -> Мутация -> Цианид
+
+## Важные подвиды растений
+	<Table Columns="2" MinForcedColumnWidth="64">
+ 		<ColorBox Color="#202028"> 
+			<Box Margin="4">[bold]Растение[/bold]</Box> 
+		</ColorBox> 
+		<ColorBox Color="#202028"> 
+			<Box Margin="4">[bold]Подвид[/bold]</Box> 
+		</ColorBox> 
+		<ColorBox><Box>Яблоки</Box></ColorBox>
+		<ColorBox><Box>Золотые яблоки, Ядовитые яблоки</Box></ColorBox> 
+		<ColorBox><Box>Ягоды</Box></ColorBox>
+		<ColorBox><Box>Смертельные ягоды, Ядовитые ягоды</Box></ColorBox> 
+		<ColorBox><Box>Крапива</Box></ColorBox>
+		<ColorBox><Box>Смертельная крапива</Box></ColorBox> 
 	</Table>
 
+[italic]Золотые яблоки бесполезны.[/italic]
 
-### Chemicals that affect plants
-These are the only chemicals that you should be concerned with when mutating plants
-<Table Columns="3" MinForcedColumnWidth="64">
-<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Chemical[/bold]</Box>
-		</ColorBox>
-		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Effects[/bold]</Box>
-		</ColorBox>
-		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Recipe[/bold]</Box>
-		</ColorBox>
-		<ColorBox><Box>Unstable Mutagen</Box></ColorBox><ColorBox><Box>Mutates and damages plants.</Box></ColorBox><ColorBox><Box>Radium + Chlorine + Phosphorus</Box></ColorBox>
-		<ColorBox><Box>Dylovene</Box></ColorBox><ColorBox><Box>Heals plants.</Box></ColorBox><ColorBox><Box>Silicon + Potassium + Nitrogen</Box></ColorBox>
-		<ColorBox><Box>Diethylamine</Box></ColorBox><ColorBox><Box>Feeds plants.</Box></ColorBox><ColorBox><Box>Ammonia + Ethanol</Box></ColorBox>
-		<ColorBox><Box>Ammonia</Box></ColorBox><ColorBox><Box>Feeds and damages plants.</Box></ColorBox><ColorBox><Box>Nitrogen + 3 Hydrogen</Box></ColorBox>
-</Table>
-</Document>
+## Особые химикаты и их источники
+Химикаты, необходимые для сложных контрактов, можно получить из этих растений.
+«Мутировавший» означает, что растение нужно мутировать, чтобы получить данный химикат.
+
+	<Table Columns="2" MinForcedColumnWidth="64"> 
+		<ColorBox Color="#202028"> 
+			<Box Margin="4">[bold]Химикат[/bold]</Box> 
+		</ColorBox> <ColorBox Color="#202028"> 
+			<Box Margin="4">[bold]Источник[/bold]</Box> 
+		</ColorBox> 
+		<ColorBox><Box>Amatoxin</Box></ColorBox>
+		<ColorBox><Box>Lingzhi/Reishi, Fly Amanita</Box></ColorBox>
+		<ColorBox><Box>Atropine</Box></ColorBox>
+		<ColorBox><Box>Мутировавший мак</Box></ColorBox> 
+		<ColorBox><Box>Coniine</Box></ColorBox>
+		<ColorBox><Box>Мутировавшая морковь</Box></ColorBox> 
+		<ColorBox><Box>Cyanide</Box></ColorBox>
+		<ColorBox><Box>Мутировавшие ядовитые яблоки</Box></ColorBox>
+		<ColorBox><Box>Digoxin</Box></ColorBox>
+		<ColorBox><Box>Мутировавшие Слёзы Мессы</Box></ColorBox>
+		 <ColorBox><Box>Phenol</Box></ColorBox>
+		 <ColorBox><Box>Мутировавшая морковь</Box></ColorBox>
+		  <ColorBox><Box>Psoralen</Box></ColorBox>
+		  <ColorBox><Box>Мутировавшая капуста</Box></ColorBox> 
+		  <ColorBox><Box>Thymol</Box></ColorBox>
+		  <ColorBox><Box>Мутировавшие смертельные ягоды, Мутировавшие ядовитые ягоды</Box></ColorBox> 
+		  <ColorBox><Box>Urishiol</Box></ColorBox>
+		  <ColorBox><Box>Мутировавшая смертельная крапива</Box></ColorBox> 
+		  <ColorBox><Box>Zygacine</Box></ColorBox>
+		  <ColorBox><Box>Мутировавший Lingzhi/Reishi</Box></ColorBox>
+	</Table>
+
+## Химикаты, влияющие на растения
+Это единственные химикаты, которые должны вас интересовать при мутировании растений.
+
+<Table Columns="3" MinForcedColumnWidth="64"> <ColorBox Color="#202028"> <Box Margin="4">[bold]Химикат[/bold]</Box> </ColorBox> <ColorBox Color="#202028"> <Box Margin="4">[bold]Эффекты[/bold]</Box> </ColorBox> <ColorBox Color="#202028"> <Box Margin="4">[bold]Рецепт[/bold]</Box> </ColorBox> <ColorBox><Box>Unstable Mutagen</Box></ColorBox><ColorBox><Box>Мутирует и повреждает растения.</Box></ColorBox><ColorBox><Box>Radium + Chlorine + Phosphorus</Box></ColorBox> <ColorBox><Box>Dylovene</Box></ColorBox><ColorBox><Box>Лечит растения.</Box></ColorBox><ColorBox><Box>Silicon + Potassium + Nitrogen</Box></ColorBox> <ColorBox><Box>Diethylamine</Box></ColorBox><ColorBox><Box>Питает растения.</Box></ColorBox><ColorBox><Box>Ammonia + Ethanol</Box></ColorBox> <ColorBox><Box>Ammonia</Box></ColorBox><ColorBox><Box>Питает и повреждает растения.</Box></ColorBox><ColorBox><Box>Nitrogen + 3 Hydrogen</Box></ColorBox> </Table></Document>

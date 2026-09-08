@@ -74,15 +74,17 @@
     heldPrefix: paper_slip
   - type: Paper
     contentSize: 600
-    content: |
-      [color=#1a1a1a][bold]MEDICATION AUTHORIZATION[/bold]
-      [bold]Patient Name:[/bold] [form]
-      [bold]Medication:[/bold] [form]
-      [bold]Dosage/Amount:[/bold] [form]
-      [bold]Notes / Instructions:[/bold]
+    # RuMC edit start 
+    content: | 
+      [color=#1a1a1a][bold]Разрешение на прием лекарственных препаратов[/bold]
+      [bold]Имя пациента:[/bold] [form]
+      [bold]Препарат:[/bold] [form]
+      [bold]Дозировка/Количество:[/bold] [form]
+      [bold]Заметки/Инструкции:[/bold]
       [form]
-      [bold]Attending Physician:[/bold]
+      [bold]Лечащий врач:[/bold]
       [signature][/color]
+    # RuMC edit end
   - type: PaperVisuals
     backgroundImagePath: "/Textures/_CMU14/Interface/Paper/MedicalSlip.png" #"/Textures/Interface/CMUPaper/MedicalSlip.png"
     backgroundModulate: "#dbbce3"
@@ -197,18 +199,18 @@
     backgroundPatchMargin: 0, 0, 0, 0
     backgroundScale: 1.0, 1.0
   - type: Paper
-    content: |
-     [bold]Reason for Violation[/bold]
-     [check] No Valid Parking Permit         [check] Blocking Driveway / Access
-     [check] No Parking Area / Space        [check] Blocking Other Vehicle
-     [check] Fire Lane                                     [check] Parked in 2 Spaces
-     [check] Reserved / Assigned Space   [check] Other: [mono][color=DarkBlue][form][/color][/mono]
+    content: | # RuMC edit start
+     [bold]Причина нарушения[/bold]
+     [check] Отсутствие действующего разрешения на парковку         [check] Блокировка въезда/выезда или проезда
+     [check] Парковка в запрещенной зоне / не на парковочном месте        [check] Блокировка другого транспортного средства
+     [check] Зона для пожарной техники                                     [check] Занято два парковочных места
+     [check] Зарезервированное / закрепленное место   [check] Иное: [mono][color=DarkBlue][form][/color][/mono]
      ===============================================================
-     Date/Time: [mono][color=DarkBlue][form][/color][/mono] [bold]/[/bold] License Plate: [mono][color=DarkBlue][form][/color][/mono]
-     Location: [mono][color=DarkBlue][form][/color][/mono] [bold]/[/bold] Permit No: [mono][color=DarkBlue][form][/color][/mono] [bold]/[/bold] Driver: [mono][color=DarkBlue][form][/color][/mono]
-     Vehicle Type & Model & Color: [mono][color=DarkBlue][form][/color][/mono]
-     Issued By: [mono][color=DarkBlue][signature][/color][/mono]
-
+     Дата/время: [mono][color=DarkBlue][form][/color][/mono] [bold]/[/bold] Номерной знак: [mono][color=DarkBlue][form][/color][/mono]
+     Место: [mono][color=DarkBlue][form][/color][/mono] [bold]/[/bold] № разрешения: [mono][color=DarkBlue][form][/color][/mono] [bold]/[/bold] Водитель: [mono][color=DarkBlue][form][/color][/mono]
+     Тип, модель и цвет транспортного средства: [mono][color=DarkBlue][form][/color][/mono]
+     Выдано: [mono][color=DarkBlue][signature][/color][/mono]
+# RuMC edit end
 - type: entity
   parent: CMUPaperPhoto
   id: CMUPaperPhotoPotato

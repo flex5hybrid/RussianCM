@@ -1,31 +1,32 @@
-<Document>
-# The Research Data Terminal
-This section of the guide details the research data terminal.
-<GuideEntityEmbed Entity="CMUResearchDataTerminal" Caption="Research Data Terminal"/>
+<Document> 
+    # Терминал исследовательских данных
 
-This is one half of obtaining credits.
-Here you can see how many credits you have available, alongside the ability to upgrade your clearance level.
-Your clearance level dictates whether or not you are able to see what a chem you've scanned does.
-Clearance level 3 is enough to be able to see every property on hard chemicals.
+    В этом разделе руководства подробно описан терминал исследовательских данных.
 
-There are two tabs, "Manage Research" and "View Chemicals".
+    <GuideEntityEmbed Entity="CMUResearchDataTerminal" Caption="Терминал исследовательских данных"/>
 
-## Manage Research
-This tab shows you a list of chemicals you could potentially make, alongside their difficulty.
+    Это одна из двух частей получения кредитов.
+    Здесь вы можете увидеть, сколько у вас есть кредитов, а также возможность повысить свой уровень доступа.
+    Ваш уровень доступа определяет, можете ли вы видеть, что делает отсканированное вещество.
+    Уровня доступа 3 достаточно, чтобы видеть все свойства сложных веществ.
 
-[bold]Easy[/bold] chemicals are relatively fast to make, but they only give you 3 credits.
+    Здесь есть две вкладки: «Управление исследованиями» и «Просмотр веществ».
 
-[bold]Intermediate[/bold] chemicals may take some time, and involve rarer ingredients, and give you 5 credits.
+    ## Управление исследованиями
+    На этой вкладке отображается список веществ, которые вы потенциально можете синтезировать, а также их сложность.
 
-[bold]Hard chemicals[/bold] require special ingredients only obtained through [textlink="Hydroponics" link="CMUBotany"], and give you 7 credits.
+    [bold]Лёгкие[/bold] вещества синтезируются относительно быстро, но дают только 3 кредита.
 
-You can only pick one chemical every six minutes.
+    [bold]Средние[/bold] вещества могут занять некоторое время, требуют более редких ингредиентов и дают 5 кредитов.
 
-## View Chemicals
-This tab shows you every chemical you have scanned in the [textlink="XRF Scanner" link="CMUXRF"], ordered from earliest scan to latest scan.
-You can print any of the chemicals and use them in the [textlink="Synthesis Simulator" link="CMUSIM"]
-However, if you scan a chemical twice, it will show up twice in this list.
-If you re-scan a chemical at a higher clearance, you will likely be able to get new information out of it. It is best to print the latest scan of a chemical, as it
-contains up to date information.
+    [bold]Сложные вещества[/bold] требуют особых ингредиентов, которые можно получить только через [textlink="Гидропонику" link="CMUBotany"], и дают 7 кредитов.
+
+    Вы можете выбрать только одно вещество каждые шесть минут.
+
+    ##Просмотр веществ
+    На этой вкладке показаны все вещества, которые вы отсканировали в [textlink="Сканере РФА" link="CMUXRF"], в порядке от самого раннего сканирования к самому позднему.
+    Вы можете распечатать информацию о любом веществе и использовать его в [textlink="Синтезаторе" link="CMUSIM"].
+    Однако если вы сканируете вещество дважды, оно появится в этом списке дважды.
+    Если вы повторно сканируете вещество при более высоком уровне доступа, вы, скорее всего, сможете получить новую информацию о нём. Лучше всего распечатывать последнее сканирование вещества, так как оно содержит самую актуальную информацию.
 
 </Document>

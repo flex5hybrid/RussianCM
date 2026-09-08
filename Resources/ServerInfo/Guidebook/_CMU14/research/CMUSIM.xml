@@ -1,42 +1,37 @@
-<Document>
-# The Synthesis Simulator
+<Document> 
+    # Синтезатор
 
-<GuideEntityEmbed Entity="CMUChemSimulator" Caption="Synthesis Simulator"/>
+    <GuideEntityEmbed Entity="CMUChemSimulator" Caption="Синтезатор"/>
 
-This machine is necessary for making your own custom chemicals.
+    Этот прибор необходим для создания собственных химических веществ.
 
-To use this machine, you insert papers dispensed by the [textlink="XRF Scanner" link="CMUXRF"] and [textlink="Research Data Terminal" link="CMURDT"] into it.
-Any paper deemed "incomplete" will not be accepted. Incomplete papers include any chemical paper that does not have a recipe on it.
-This means that special [textlink="Hydroponics" link="CMUBotany"] chemicals cannot be used in the synthesis simulator.
+    Чтобы использовать его, вы вставляете в него бумаги, выданные [textlink="Сканером РФА" link="CMUXRF"] и [textlink="Терминалом исследовательских данных" link="CMURDT"].
+    Любая бумага, признанная «неполной», не будет принята. К неполным бумагам относятся все химические бумаги, на которых нет рецепта.
+    Это означает, что особые вещества из [textlink="Гидропоники" link="CMUBotany"] нельзя использовать в синтезаторе.
 
-Making your own chemicals is not cheap, however. You will need to discover the properties of the chemicals and obtain credits using the [textlink="XRF Scanner" link="CMUXRF"].
+    Однако создание собственных веществ обходится недешево. Вам потребуется изучить свойства веществ и получить кредиты с помощью [textlink="Сканера РФА" link="CMUXRF"].
 
-There are four modes on the synthesis simulator.
+    На синтезаторе есть четыре режима.
 
-## Amplify
+    ## Усиление
+    Этот режим принимает целевую бумагу и позволяет увеличить потенцию выбранного свойства на единицу, но при этом порог передозировки нового вещества снижается на 5 единиц.
 
-This mode takes in a target paper, and allows you to increase a targeted property's potency by one, at the cost of lowering the overdose threshold of the new chemical by 5 units.
+    ## Подавление
+    Этот режим является обратным усилению: он принимает целевую бумагу и уменьшает потенцию выбранного свойства на единицу.
+    Если потенция свойства снижается до нуля, это свойство удаляется.
+    Цена такая же, как и при усилении — порог передозировки нового вещества снижается на 5 единиц.
 
-## Suppress
+    ## Добавление
+    Этот режим прост. Он принимает целевую бумагу и эталонную бумагу и переносит свойство эталона и его потенцию в новое вещество.
+    Плата за это — исходное эталонное вещество и [bold]все[/bold] вещества, полученные из него, становятся полностью непригодными для любых будущих операций синтеза.
 
-This mode is the inverse of Amplify, taking in a target paper and decreasing a targeted property's potency by one.
-If a targeted property's potency is reduced to zero, it is removed.
-The cost of this is the same as Amplify, lowering the overdose threshold of the new chemical by 5 units.
+    ## Связывание
 
-## Add
+    Этот режим принимает целевую бумагу и эталонную бумагу. Вам нужно выбрать целевое свойство и эталонное свойство.
+    Оба свойства должны иметь одинаковую потенцию. В результате создаётся новое вещество, являющееся копией целевого, но с заменой целевого свойства на эталонное.
+    Это стоит снижения порога передозировки нового вещества на 5 единиц.
 
-This mode is simple. It takes in a target paper and a reference paper, and puts the reference property and its potency onto the new chemical.
-The cost of this is making the original reference chemical and [bold]every[/bold] chemical derived from it completely unusable in any future simulation operations.
-
-## Relate
-
-This mode takes in a target paper and a reference paper. You will need to pick a target property and a reference property.
-Both of the properties have to be of equal potency. This will create a new chemical that is a duplicate of the target chemical but with the target property
-swapped out for the reference property. This comes at the cost of lowering the overdose threshold of the new chemical by 5.
-
-
-## Override
-
-This allows you to perform Addition and Relation using properties that conflict. Conflicting properties will be subtracted. For example,
-Anticarcinogenic with a potency of 3 and Carcinogenic with a potency of 4 will conflict and the new chemical will have Carcinogenic with a potency of 1.
+    Переопределение
+    Это позволяет выполнять Добавление и Связывание с использованием конфликтующих свойств. Конфликтующие свойства будут вычитаться. Например,
+    Антиканцерогенное с потенцией 3 и Канцерогенное с потенцией 4 вступят в конфликт, и новое вещество будет иметь Канцерогенное с потенцией 1.
 </Document>

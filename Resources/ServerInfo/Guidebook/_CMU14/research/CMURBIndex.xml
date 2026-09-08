@@ -1,37 +1,44 @@
-<Document>
-	# Research
-	
-	This section covers everything involving research.
-	
-	## Guides
-	- [textlink="Chemistry" link="CMUResearch"]
-	- [textlink="Research Data Terminal" link="CMURDT"]
-	- [textlink="XRF Scanner" link="CMUXRF"]
-	- [textlink="Synthesis Simulator" link="CMUSIM"]
-	- [textlink="Hydroponics" link="CMUBotany"]
-	
-	## Quick Reference
-	- [textlink="Chemicals" link="RMCChemicals"]
-	
-	### Hydroponics Chemical Sources
-	
-	<Table Columns="2" MinForcedColumnWidth="64">
-		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Chemical[/bold]</Box>
-		</ColorBox>
-		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Source(s)[/bold]</Box>
-		</ColorBox>
-		<ColorBox><Box>Amatoxin</Box></ColorBox><ColorBox><Box>Lingzhi/Reishi, Fly Amanita</Box></ColorBox>
-		<ColorBox><Box>Atropine</Box></ColorBox><ColorBox><Box>Mutated Poppies; Poppy Seeds, Potato Seeds</Box></ColorBox>
-		<ColorBox><Box>Coniine</Box></ColorBox><ColorBox><Box>Mutated Carrots; Carrot seeds</Box></ColorBox>
-		<ColorBox><Box>Cyanide</Box></ColorBox><ColorBox><Box>Mutated Poison Apples; Apple Seeds, Cherry Seeds</Box></ColorBox>
-		<ColorBox><Box>Digoxin</Box></ColorBox><ColorBox><Box>Mutated Messa's Tears; Sunflower Seeds</Box></ColorBox>
-		<ColorBox><Box>Phenol</Box></ColorBox><ColorBox><Box>Mutated Carrots; Carrot Seeds</Box></ColorBox>
-		<ColorBox><Box>Psoralen</Box></ColorBox><ColorBox><Box>Mutated Cabbages; Cabbage Seeds, Citrus Seeds</Box></ColorBox>
-		<ColorBox><Box>Thymol</Box></ColorBox><ColorBox><Box>Mutated Death Berries, Mutated Poison Berries; Berry Seeds</Box></ColorBox>
-		<ColorBox><Box>Urishiol</Box></ColorBox><ColorBox><Box>Mutated Death Nettles; Mango Seeds</Box></ColorBox>
-		<ColorBox><Box>Zygacine</Box></ColorBox><ColorBox><Box>Mutated Lingzhi/Reishi; Lingzhi/Reishi Spores</Box></ColorBox>
-	</Table>
+<Document> 
+	# Исследования
 
+	В этом разделе описано всё, что касается исследований.
+
+	## Руководства
+	- [textlink="Химия" link="CMUResearch"]
+
+	- [textlink="Терминал исследовательских данных" link="CMURDT"]
+
+	- [textlink="Сканер РФА" link="CMUXRF"]
+
+	- [textlink="Синтезатор" link="CMUSIM"]
+
+	- [textlink="Гидропоника" link="CMUBotany"]
+
+	## Краткая справка
+	- [textlink="Химикаты" link="RMCChemicals"]
+
+	### Источники химикатов в гидропонике
+
+	<Table Columns="2" MinForcedColumnWidth="64"> 
+		<ColorBox Color="#202028"> 
+			<Box Margin="4">[bold]Химикат[/bold]</Box> 
+			</ColorBox>
+			<ColorBox Color="#202028"> 
+			 	<Box Margin="4">[bold]Источник(и)[/bold]</Box>
+			</ColorBox>
+			<ColorBox><Box>Amatoxin</Box></ColorBox>
+			<ColorBox><Box>Lingzhi/Reishi, Fly Amanita</Box></ColorBox> 
+			<ColorBox><Box>Atropine</Box></ColorBox><ColorBox><Box>Мутировавший мак; Семена мака, Семена картофеля</Box></ColorBox> 
+			<ColorBox><Box>Coniine</Box></ColorBox><ColorBox><Box>Мутировавшая морковь; Семена моркови</Box></ColorBox> 
+			<ColorBox><Box>Cyanide</Box></ColorBox><ColorBox><Box>Мутировавшие ядовитые яблоки; Семена яблок, Семена вишни</Box></ColorBox> 
+			<ColorBox><Box>Digoxin</Box></ColorBox><ColorBox><Box>Мутировавшие Слёзы Мессы; Семена подсолнечника</Box></ColorBox> 
+			<ColorBox><Box>Phenol</Box></ColorBox><ColorBox><Box>Мутировавшая морковь; Семена моркови</Box></ColorBox> 
+			<ColorBox><Box>Psoralen</Box></ColorBox><ColorBox><Box>Мутировавшая капуста; Семена капусты, Семена цитрусовых</Box></ColorBox> 
+			<ColorBox><Box>Thymol</Box></ColorBox><ColorBox><Box>Мутировавшие смертельные ягоды, Мутировавшие ядовитые ягоды; Семена ягод</Box></ColorBox> 
+			<ColorBox><Box>Urishiol</Box></ColorBox><ColorBox><Box>Мутировавшая смертельная крапива; Семена манго</Box></ColorBox> <ColorBox><Box>Zygacine</Box></ColorBox>
+			<ColorBox><Box>Мутировавший Lingzhi/Reishi; Споры Lingzhi/Reishi</Box></ColorBox> 
+			
+	</Table>
+	
+	
 </Document>

@@ -1,20 +1,20 @@
-<Document>
-# Chemistry
-This section of the guide describes the machines you will have to work with during research.
+<Document> 
+    # Химия
+    В этом разделе руководства описаны приборы, с которыми вам предстоит работать во время исследований.
 
-From here on, it is assumed that you are already familiar with the basic chemistry machines (Chemical Dispenser, Chem-Master)
+    Далее предполагается, что вы уже знакомы с базовым химическим оборудованием (химический дозатор, хим-мастер).
 
-## Overview
+    ## Содержание
 
-There are three machines involved in research.
+    В исследованиях задействованы три прибора.
 
-<GuideEntityEmbed Entity="CMUResearchDataTerminal" Caption="Research Data Terminal"/>
-<Box>[textlink="Guide" link="CMURDT"]</Box>
-<GuideEntityEmbed Entity="CMUXRFScanner" Caption="XRF Scanner"/>
-<Box>[textlink="Guide" link="CMUXRF"]</Box>
-<GuideEntityEmbed Entity="CMUChemSimulator" Caption="Synthesis Simulator"/>
-<Box>[textlink="Guide" link="CMUSIM"]</Box>
+    <GuideEntityEmbed Entity="CMUResearchDataTerminal" Caption="Терминал исследовательских данных"/>
+    <Box>[textlink="Руководство" link="CMURDT"]</Box> 
+    <GuideEntityEmbed Entity="CMUXRFScanner" Caption="Сканер РФА"/> 
+    <Box>[textlink="Руководство" link="CMUXRF"]</Box>
+    <GuideEntityEmbed Entity="CMUChemSimulator" Caption="Синтезатор"/> 
+    <Box>[textlink="Руководство" link="CMUSIM"]</Box>
 
-All three of them can be obtained at any ASRS elevator.
+    Все три можно получить на любом элеваторе ASRS.
 
 </Document>

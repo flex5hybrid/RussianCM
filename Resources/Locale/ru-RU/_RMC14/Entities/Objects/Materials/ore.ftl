@@ -4,6 +4,6 @@ ent-RMCSilverOre = самородная серебряная руда
 ent-RMCPlatinumOre = сырая платина
 ent-RMCPlasmaOre = кристаллы форона
 ent-RMCIronOre = гематит
-ent-RMCGoldOre = самородная золотая руда
+ent-RMCGoldOre1 = самородная золотая руда
 ent-RMCDiamondOre = алмазы
 ent-RMCCoal = углистый сланец
