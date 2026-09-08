@@ -17,8 +17,8 @@
     charge: 3000
     maxCharge: 3000
     regen: 60
-    stabilisingCrystalPrototype: CMUYautjaStabilisingCrystal
-    humanStabilisingCrystalPrototype: CMUYautjaHumanStabilisingCrystal
+    stabilisingCrystalPrototype: CMUYautjaHealthShard # RuMC edit
+    humanStabilisingCrystalPrototype: CMUYautjaStabilisingCrystalNew # RuMC edit
     healingCapsulePrototype: CMUYautjaHealingCapsule
     stabilisingCrystalCost: 400
     humanStabilisingCrystalCost: 400
@@ -806,6 +806,35 @@
     tags:
     - CMAutoInjector
     - CMUYautjaMedicompItem
+
+- type: entity
+  parent: ShardCrystalGreen
+  id: CMUYautjaStabilisingCrystalNew
+  name: stabilising crystal
+  description: A bracer-grown crystal that rapidly stabilises alien biology.
+  suffix: Yautja
+  components:
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      groups:
+        Airloss: -45
+      types:
+        Bloodloss: -55
+        Asphyxiation: -30
+    bloodlossModifier: -35
+    delay: 0.75
+    selfHealPenaltyMultiplier: 1.25
+    healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+  - type: YautjaTechItem
+    blockPickup: false
+    blockUse: false
+    blockMelee: false
+    blockThrow: false
 
 - type: entity
   parent: CMUYautjaHealingGel
