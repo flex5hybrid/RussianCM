@@ -239,7 +239,7 @@
     mask: CMUYautjaMask
     belt: CMUYautjaTrophyBelt
     pocket1: CMUYautjaHealthShard
-    pocket2: CMUYautjaMedicomp
+    pocket2: CMUYautjaMedicompFull # RuMC edit
   storage:
     back:
     - CMUYautjaHuntingTrap
