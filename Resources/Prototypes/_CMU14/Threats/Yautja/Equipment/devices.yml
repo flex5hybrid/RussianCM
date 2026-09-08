@@ -152,6 +152,14 @@
     cloakWarningBefore: 3
     cloakWarningSound:
       collection: CMUYautjaCloakWarning
+    charge: 3000
+    maxCharge: 3000
+    regen: 2
+    stabilisingCrystalCost: 250
+    humanStabilisingCrystalCost: 250
+    stabilisingCrystalCooldown: 60
+    huntingTrapCost: 200
+    huntingTrapCooldown: 60
   - type: ContainerContainer
     containers:
       key_slots: !type:Container
