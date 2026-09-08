@@ -66,8 +66,8 @@
   components:
   - type: Action
     icon:
-      sprite: _CMU14/Yautja/bracer.rsi
-      state: icon
+      sprite: _CMU14/Yautja/actions.rsi # RuMC edit
+      state: bracer_framed # RuMC edit
     useDelay: 120
   - type: TargetAction
     range: 2
