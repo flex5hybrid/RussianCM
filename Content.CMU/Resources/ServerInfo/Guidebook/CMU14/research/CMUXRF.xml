@@ -1,18 +1,17 @@
 <Document>
-# The XRF Scanner
+# XRF-сканер
 
-<GuideEntityEmbed Entity="CMUXRFScanner" Caption="Also called an 'X-Ray Fluorescence Spectrometer'"/>
+<GuideEntityEmbed Entity="CMUXRFScanner" Caption="Также называется рентгенофлуоресцентным спектрометром"/>
 
-This is your source of credits.
+Это основной источник исследовательских кредитов.
 
-To use this machine, you will [bold]need[/bold] to fill a vial all the way with a single uncontaminated chemical, and then insert the vial into the scanner.
-After 10 seconds, it will spit out a piece of paper detailing what the chemical does and what it is made of.
+Чтобы воспользоваться устройством, [bold]необходимо[/bold] полностью заполнить пробирку одним чистым, незагрязнённым химическим веществом и вставить её в сканер.
+Через 10 секунд устройство выдаст лист бумаги с описанием свойств вещества и его состава.
 
-Without this machine, you will be unable to upgrade your clearance in the [textlink="Research Data Terminal" link="CMURDT"] or perform any
-operation with the [textlink="Synthesis Simulator" link="CMUSIM"].
+Без этого устройства вы не сможете повышать уровень допуска в [textlink="Терминале исследовательских данных" link="CMURDT"] или выполнять операции в [textlink="Симуляторе синтеза" link="CMUSIM"].
 
-Some chemicals may require a higher clearance level to see their effects, don't worry, you still get the credits from scanning them!
+Для просмотра эффектов некоторых веществ может требоваться более высокий уровень допуска. Не беспокойтесь: кредиты за их сканирование вы всё равно получите.
 
-You can scan any of the special [textlink="Hydroponics" link="CMUBotany"] chemicals for 2 credits each.
+Каждое специальное вещество из [textlink="Гидропоники" link="CMUBotany"] можно отсканировать за 2 кредита.
 
 </Document>

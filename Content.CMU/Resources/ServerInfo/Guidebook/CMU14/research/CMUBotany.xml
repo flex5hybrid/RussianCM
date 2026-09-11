@@ -1,112 +1,112 @@
 <Document>
-# Research Hydroponics
-This section details all parts of hydroponics that are important for research purposes.
+# Исследовательская гидропоника
+В этом разделе описаны элементы гидропоники, важные для исследовательской работы.
 
-## Tools of the trade
+## Рабочие инструменты
 <Box>
-<GuideEntityEmbed Entity="CMWirecutter" Caption="Wirecutters"/>
-<GuideEntityEmbed Entity="RMCToolSpade" Caption="Spade"/>
-<GuideEntityEmbed Entity="RMCToolHatchet" Caption="Hatchet"/>
-<GuideEntityEmbed Entity="RMCToolMiniHoe" Caption="Mini Hoe"/>
-<GuideEntityEmbed Entity="CMHandLabeler" Caption="Hand Labeler"/>
+<GuideEntityEmbed Entity="CMWirecutter" Caption="Кусачки"/>
+<GuideEntityEmbed Entity="RMCToolSpade" Caption="Лопатка"/>
+<GuideEntityEmbed Entity="RMCToolHatchet" Caption="Топорик"/>
+<GuideEntityEmbed Entity="RMCToolMiniHoe" Caption="Мотыжка"/>
+<GuideEntityEmbed Entity="CMHandLabeler" Caption="Ручной этикетировщик"/>
 </Box>
 <Box>
-<GuideEntityEmbed Entity="SeedExtractor" Caption="Seed Extractor"/>
-<GuideEntityEmbed Entity="RMCKitchenReagentGrinder" Caption="Reagent Grinder"/>
+<GuideEntityEmbed Entity="SeedExtractor" Caption="Экстрактор семян"/>
+<GuideEntityEmbed Entity="RMCKitchenReagentGrinder" Caption="Измельчитель реагентов"/>
 </Box>
 <Box>
-<GuideEntityEmbed Entity="CMHydroponicsTray" Caption="Hydroponics Tray"/>
+<GuideEntityEmbed Entity="CMHydroponicsTray" Caption="Гидропонный лоток"/>
 </Box>
 
 	<Table Columns="3" MinForcedColumnWidth="64">
 		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Tool[/bold]</Box>
+			<Box Margin="4">[bold]Инструмент[/bold]</Box>
 		</ColorBox>
 		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Use[/bold]</Box>
+			<Box Margin="4">[bold]Назначение[/bold]</Box>
 		</ColorBox>
 		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Source[/bold]</Box>
+			<Box Margin="4">[bold]Источник[/bold]</Box>
 		</ColorBox>
-		<ColorBox><Box>Wirecutters</Box></ColorBox><ColorBox><Box>Sampling seeds from living plants.</Box></ColorBox><ColorBox><Box>Autolathe, Toolboxes</Box></ColorBox>
-		<ColorBox><Box>Spade</Box></ColorBox><ColorBox><Box>Clearing plants from Hydroponics Trays.</Box></ColorBox><ColorBox><Box>Hydroponics Equipment Crate, NutriMax</Box></ColorBox>
-		<ColorBox><Box>Hatchet</Box></ColorBox><ColorBox><Box>Harvesting "Woody" plants.</Box></ColorBox><ColorBox><Box>Hydroponics Equipment Crate, NutriMax</Box></ColorBox>
-		<ColorBox><Box>Mini Hoe</Box></ColorBox><ColorBox><Box>Killing weeds.</Box></ColorBox><ColorBox><Box>Hydroponics Equipment Crate, NutriMax</Box></ColorBox>
-		<ColorBox><Box>Hand Labeler</Box></ColorBox><ColorBox><Box>Labeling important seeds, maintaining your sanity.</Box></ColorBox><ColorBox><Box>Autolathe</Box></ColorBox>
-		<ColorBox><Box>Seed Extractor</Box></ColorBox><ColorBox><Box>Getting seeds from plant yields.</Box></ColorBox><ColorBox><Box>Mapped, Admins</Box></ColorBox>
-		<ColorBox><Box>Reagent Grinder</Box></ColorBox><ColorBox><Box>Getting the chemicals out of the plant yields.</Box></ColorBox><ColorBox><Box>Mapped, Admins</Box></ColorBox>
-		<ColorBox><Box>Hydroponics Tray</Box></ColorBox><ColorBox><Box>Holding and growing plants.</Box></ColorBox><ColorBox><Box>ASRS</Box></ColorBox>
+		<ColorBox><Box>Кусачки</Box></ColorBox><ColorBox><Box>Получение образцов семян с живых растений.</Box></ColorBox><ColorBox><Box>Автолат, ящики с инструментами</Box></ColorBox>
+		<ColorBox><Box>Лопатка</Box></ColorBox><ColorBox><Box>Удаление растений из гидропонных лотков.</Box></ColorBox><ColorBox><Box>Ящик гидропонного оборудования, NutriMax</Box></ColorBox>
+		<ColorBox><Box>Топорик</Box></ColorBox><ColorBox><Box>Сбор урожая «древесных» растений.</Box></ColorBox><ColorBox><Box>Ящик гидропонного оборудования, NutriMax</Box></ColorBox>
+		<ColorBox><Box>Мотыжка</Box></ColorBox><ColorBox><Box>Удаление сорняков.</Box></ColorBox><ColorBox><Box>Ящик гидропонного оборудования, NutriMax</Box></ColorBox>
+		<ColorBox><Box>Ручной этикетировщик</Box></ColorBox><ColorBox><Box>Маркировка важных семян и сохранение собственного рассудка.</Box></ColorBox><ColorBox><Box>Автолат</Box></ColorBox>
+		<ColorBox><Box>Экстрактор семян</Box></ColorBox><ColorBox><Box>Получение семян из собранного урожая.</Box></ColorBox><ColorBox><Box>Размещается на карте, администрация</Box></ColorBox>
+		<ColorBox><Box>Измельчитель реагентов</Box></ColorBox><ColorBox><Box>Извлечение химических веществ из урожая.</Box></ColorBox><ColorBox><Box>Размещается на карте, администрация</Box></ColorBox>
+		<ColorBox><Box>Гидропонный лоток</Box></ColorBox><ColorBox><Box>Посадка и выращивание растений.</Box></ColorBox><ColorBox><Box>ASRS</Box></ColorBox>
 	</Table>
 	
-## Mutations
-Mutating plants is necessary to obtain the chemicals required for hard level contracts in the [textlink="Research Data Terminal" link="CMURDT"].
-It may seem daunting at first, but it really only boils down to luck!
+## Мутации
+Мутации растений необходимы для получения веществ, требуемых сложными контрактами в [textlink="Терминале исследовательских данных" link="CMURDT"].
+Сначала это может казаться сложным, но на практике всё во многом сводится к удаче.
 
-### Applying Mutations
-In order to mutate plants, you will need to apply Unstable Mutagen to them and then cross your fingers.
-Each mutation has a 15% chance of mutating the plant's species and a 20% chance to mutate new chemicals.
-This is more common than you may expect.
-Species mutations and regular mutations are not exclusive, both can happen and often do at the same time.
+### Проведение мутаций
+Чтобы вызвать мутацию растения, внесите нестабильный мутаген и надейтесь на удачу.
+Каждая попытка мутации имеет 15% шанс изменить вид растения и 20% шанс добавить новые химические вещества.
+Это происходит чаще, чем может показаться.
+Видовые и обычные мутации не исключают друг друга: обе могут произойти одновременно и часто именно так и происходит.
 
-When a new chemical is added to a plant, there is a 40% chance that an additional "special" chemical is added to the plant.
-Only some plants have "special" chemicals, and some plants require mutation into a subspecies as that subspecies has the "Special Chemicals".
-An example of obtaining a "special" chemical would be:
-Apples -> Mutate Species -> Poison Apples -> Mutate -> Cyanide
+При добавлении нового вещества к растению существует 40% шанс, что дополнительно появится особое вещество.
+«Особые» вещества есть только у некоторых растений; иногда сначала требуется получить подвид, у которого такое вещество вообще присутствует.
+Пример получения особого вещества:
+Яблоки -> мутация вида -> ядовитые яблоки -> мутация -> цианид
 
 
-### Important Plant Subspecies
+### Важные подвиды растений
 <Table Columns="2" MinForcedColumnWidth="64">
 		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Plant[/bold]</Box>
+			<Box Margin="4">[bold]Растение[/bold]</Box>
 		</ColorBox>
 		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Subspecies[/bold]</Box>
+			<Box Margin="4">[bold]Подвид[/bold]</Box>
 		</ColorBox>
-		<ColorBox><Box>Apples</Box></ColorBox><ColorBox><Box>Golden Apples, Poison Apples</Box></ColorBox>
-		<ColorBox><Box>Berries</Box></ColorBox><ColorBox><Box>Death Berries, Poison Berries</Box></ColorBox>
-		<ColorBox><Box>Nettles</Box></ColorBox><ColorBox><Box>Death Nettles</Box></ColorBox>
+		<ColorBox><Box>Яблоки</Box></ColorBox><ColorBox><Box>Золотые яблоки, ядовитые яблоки</Box></ColorBox>
+		<ColorBox><Box>Ягоды</Box></ColorBox><ColorBox><Box>Ягоды смерти, ядовитые ягоды</Box></ColorBox>
+		<ColorBox><Box>Крапива</Box></ColorBox><ColorBox><Box>Смертельная крапива</Box></ColorBox>
 	</Table>
 
-[italic]Golden apples are useless.[/italic]
+[italic]Золотые яблоки бесполезны.[/italic]
 
-### Special chemicals and their sources
-The chemicals needed for hard contracts can be obtained from these plants.
-"Mutated" means that the plants need to be mutated to yield the chemical.
+### Особые вещества и их источники
+Вещества для сложных контрактов можно получить из следующих растений.
+«Мутировавший» означает, что растение необходимо подвергнуть мутации, чтобы оно начало вырабатывать это вещество.
 <Table Columns="2" MinForcedColumnWidth="64">
 		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Chemical[/bold]</Box>
+			<Box Margin="4">[bold]Вещество[/bold]</Box>
 		</ColorBox>
 		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Source[/bold]</Box>
+			<Box Margin="4">[bold]Источник[/bold]</Box>
 		</ColorBox>
-		<ColorBox><Box>Amatoxin</Box></ColorBox><ColorBox><Box>Lingzhi/Reishi, Fly Amanita</Box></ColorBox>
-		<ColorBox><Box>Atropine</Box></ColorBox><ColorBox><Box>Mutated Poppies</Box></ColorBox>
-		<ColorBox><Box>Coniine</Box></ColorBox><ColorBox><Box>Mutated Carrots</Box></ColorBox>
-		<ColorBox><Box>Cyanide</Box></ColorBox><ColorBox><Box>Mutated Poison Apples</Box></ColorBox>
-		<ColorBox><Box>Digoxin</Box></ColorBox><ColorBox><Box>Mutated Messa's Tears</Box></ColorBox>
-		<ColorBox><Box>Phenol</Box></ColorBox><ColorBox><Box>Mutated Carrots</Box></ColorBox>
-		<ColorBox><Box>Psoralen</Box></ColorBox><ColorBox><Box>Mutated Cabbages</Box></ColorBox>
-		<ColorBox><Box>Thymol</Box></ColorBox><ColorBox><Box>Mutated Death Berries, Mutated Poison Berries</Box></ColorBox>
-		<ColorBox><Box>Urishiol</Box></ColorBox><ColorBox><Box>Mutated Death Nettles</Box></ColorBox>
-		<ColorBox><Box>Zygacine</Box></ColorBox><ColorBox><Box>Mutated Lingzhi/Reishi</Box></ColorBox>
+		<ColorBox><Box>Аматоксин</Box></ColorBox><ColorBox><Box>Линчжи/рейши, мухомор</Box></ColorBox>
+		<ColorBox><Box>Атропин</Box></ColorBox><ColorBox><Box>Мутировавший мак</Box></ColorBox>
+		<ColorBox><Box>Кониин</Box></ColorBox><ColorBox><Box>Мутировавшая морковь</Box></ColorBox>
+		<ColorBox><Box>Цианид</Box></ColorBox><ColorBox><Box>Мутировавшие ядовитые яблоки</Box></ColorBox>
+		<ColorBox><Box>Дигоксин</Box></ColorBox><ColorBox><Box>Мутировавшие «Слёзы Мессы»</Box></ColorBox>
+		<ColorBox><Box>Фенол</Box></ColorBox><ColorBox><Box>Мутировавшая морковь</Box></ColorBox>
+		<ColorBox><Box>Псорален</Box></ColorBox><ColorBox><Box>Мутировавшая капуста</Box></ColorBox>
+		<ColorBox><Box>Тимол</Box></ColorBox><ColorBox><Box>Мутировавшие ягоды смерти, мутировавшие ядовитые ягоды</Box></ColorBox>
+		<ColorBox><Box>Урушиол</Box></ColorBox><ColorBox><Box>Мутировавшая смертельная крапива</Box></ColorBox>
+		<ColorBox><Box>Зигацин</Box></ColorBox><ColorBox><Box>Мутировавший линчжи/рейши</Box></ColorBox>
 	</Table>
 
 
-### Chemicals that affect plants
-These are the only chemicals that you should be concerned with when mutating plants
+### Вещества, воздействующие на растения
+При работе с мутациями растений в первую очередь важны следующие вещества.
 <Table Columns="3" MinForcedColumnWidth="64">
 <ColorBox Color="#202028">
-			<Box Margin="4">[bold]Chemical[/bold]</Box>
+			<Box Margin="4">[bold]Вещество[/bold]</Box>
 		</ColorBox>
 		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Effects[/bold]</Box>
+			<Box Margin="4">[bold]Эффект[/bold]</Box>
 		</ColorBox>
 		<ColorBox Color="#202028">
-			<Box Margin="4">[bold]Recipe[/bold]</Box>
+			<Box Margin="4">[bold]Рецепт[/bold]</Box>
 		</ColorBox>
-		<ColorBox><Box>Unstable Mutagen</Box></ColorBox><ColorBox><Box>Mutates and damages plants.</Box></ColorBox><ColorBox><Box>Radium + Chlorine + Phosphorus</Box></ColorBox>
-		<ColorBox><Box>Dylovene</Box></ColorBox><ColorBox><Box>Heals plants.</Box></ColorBox><ColorBox><Box>Silicon + Potassium + Nitrogen</Box></ColorBox>
-		<ColorBox><Box>Diethylamine</Box></ColorBox><ColorBox><Box>Feeds plants.</Box></ColorBox><ColorBox><Box>Ammonia + Ethanol</Box></ColorBox>
-		<ColorBox><Box>Ammonia</Box></ColorBox><ColorBox><Box>Feeds and damages plants.</Box></ColorBox><ColorBox><Box>Nitrogen + 3 Hydrogen</Box></ColorBox>
+		<ColorBox><Box>Нестабильный мутаген</Box></ColorBox><ColorBox><Box>Вызывает мутации и повреждает растения.</Box></ColorBox><ColorBox><Box>Радий + хлор + фосфор</Box></ColorBox>
+		<ColorBox><Box>Диловен</Box></ColorBox><ColorBox><Box>Лечит растения.</Box></ColorBox><ColorBox><Box>Кремний + калий + азот</Box></ColorBox>
+		<ColorBox><Box>Диэтиламин</Box></ColorBox><ColorBox><Box>Питает растения.</Box></ColorBox><ColorBox><Box>Аммиак + этанол</Box></ColorBox>
+		<ColorBox><Box>Аммиак</Box></ColorBox><ColorBox><Box>Питает и повреждает растения.</Box></ColorBox><ColorBox><Box>Азот + 3 водорода</Box></ColorBox>
 </Table>
 </Document>

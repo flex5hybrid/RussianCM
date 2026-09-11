@@ -1,357 +1,357 @@
 <Document>
-  # Getting On The Net
+  # Первый выход в радиосеть
 
-  This page takes you from spawning in to holding a working conversation on a radio net. It assumes you have never touched the comms system before and explains every step as you take it.
+  Эта страница проведёт вас от появления в раунде до полноценного разговора в радиосети. Предполагается, что вы никогда раньше не пользовались системой связи, поэтому каждый шаг объясняется последовательно.
 
-  If something does not work, the last section of this page lists what usually causes it.
+  Если что-то не работает, в последнем разделе перечислены наиболее частые причины.
 
   <Box>
-    <GuideEntityEmbed Entity="AU14HeadsetGovforMarineFTL" Caption="Field Headset"/>
+    <GuideEntityEmbed Entity="AU14HeadsetGovforMarineFTL" Caption="Полевая гарнитура"/>
     <GuideEntityEmbed Entity="ANPRC117GRadio" Caption="AN/PRC-117G"/>
   </Box>
 
-  ## Step 1: Work out what you are carrying
+  ## Шаг 1: Определите, какое средство связи у вас есть
 
-  Almost everybody spawns with a [bold]field headset[/bold] in their ears slot. This is your personal radio and it is all most roles ever need. The CLF are the exception: they wear a concealable earpiece clipped into their clothing instead, which works the same way but has no slot to examine. See [textlink="Field Headsets" link="AU14CommsHeadsets"] for the differences.
+  Почти каждый появляется с [bold]полевой гарнитурой[/bold] в слоте ушей. Это ваша личная радиостанция, и большинству ролей больше ничего не требуется. Исключение — CLF: вместо гарнитуры они используют скрытый наушник, закреплённый на одежде. Он работает так же, но отдельного слота для осмотра у него нет. Различия описаны в разделе [textlink="Полевые гарнитуры" link="AU14CommsHeadsets"].
 
-  A small number of roles also spawn with an [bold]AN/PRC-117G[/bold] manpack radio in their back slot. It is large, it is obvious in your inventory, and it is the thing that makes everyone else's headset work.
+  Небольшое число ролей также появляется с ранцевой радиостанцией [bold]AN/PRC-117G[/bold] в слоте спины. Она крупная, хорошо заметна в инвентаре и именно благодаря ей работают гарнитуры остальных бойцов.
 
-  Open your inventory and check both slots before you do anything else.
+  Перед дальнейшими действиями откройте инвентарь и проверьте оба слота.
 
-  - [bold]Headset only[/bold] - read step 2, then step 3, then skip to the handset section.
-  - [bold]Headset and manpack[/bold] - read the whole page. You are the reason your squad has comms.
+  - [bold]Только гарнитура[/bold] — прочитайте шаг 2, затем шаг 3 и переходите к разделу о телефонной трубке.
+  - [bold]Гарнитура и ранцевая радиостанция[/bold] — прочитайте всю страницу. Именно от вас зависит связь вашего отряда.
 
-  ## Step 2: Understand why radios go dead
+  ## Шаг 2: Поймите, почему радиосвязь пропадает
 
-  This is the single thing that confuses new players most, so read it before you try to transmit.
+  Это чаще всего сбивает с толку новых игроков, поэтому прочитайте раздел до первой попытки передачи.
 
-  Your headset is not a phone. It does not reach across the map on its own. Combat nets are [bold]relay-gated[/bold]: your headset only works if it is standing near something that anchors the net.
+  Гарнитура — не телефон. Сама по себе она не работает через всю карту. Боевые сети [bold]зависят от ретрансляторов[/bold]: гарнитура работает только рядом с объектом, который обеспечивает работу сети.
 
-  Anything on this list will anchor a net:
+  Радиосеть может поддерживать любой из следующих объектов:
 
-  - A powered AN/PRC worn by a trained operator.
-  - A deployed retransmission station.
-  - A command-post antenna mast.
-  - A powered shipboard communications array.
-  - A vehicle radio aboard a dropship or vehicle, covering little more than the hull.
-  - A field antenna mast raised from ten metal sheets by engineering-trained personnel.
-  - A clandestine base station or a staked-down relay set, if you are with the CLF.
-  - Any mast or array the CLF have spliced a tap into.
+  - Включённая AN/PRC, которую носит обученный оператор.
+  - Развёрнутая ретрансляционная станция.
+  - Антенная мачта командного пункта.
+  - Включённый корабельный комплекс связи.
+  - Бортовая радиостанция десантного корабля или другой техники, покрывающая в основном лишь сам корпус.
+  - Полевая антенная мачта, развёрнутая обученным инженерному делу персоналом из десяти листов металла.
+  - Подпольная базовая станция или закреплённый ретранслятор, если вы играете за CLF.
+  - Любая мачта или антенная система, к которой CLF подключили врезку.
 
-  If none of those are within range of you, your squad net is dead. Not degraded. Dead. You will speak and nothing will happen.
+  Если рядом нет ни одного из этих объектов, ваша отрядная сеть не работает. Не «работает хуже», а полностью отключена. Вы сможете говорить, но сообщение никуда не уйдёт.
 
-  This is why the radio operator matters, and it is why walking away from the person carrying the pack cuts you off. In a squad that is usually your [bold]Fireteam Leader[/bold].
+  Поэтому радист так важен и поэтому, если уйти слишком далеко от человека с ранцевой радиостанцией, связь пропадает. В отряде таким человеком обычно является [bold]командир боевой группы[/bold].
 
-  Colony and civilian channels are the exception. They are not gated and work anywhere, which is also why anyone can listen to them.
+  Исключение — колониальные и гражданские каналы. Они не зависят от ретрансляторов и работают везде, поэтому их также может слушать кто угодно.
 
-  ### How far is "near"
+  ### Что значит «рядом»
 
   <Table Columns="2" MinForcedColumnWidth="120">
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Distance from the anchor[/bold]</Box>
+      <Box Margin="4">[bold]Расстояние до ретранслятора[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]What you get[/bold]</Box>
+      <Box Margin="4">[bold]Качество связи[/bold]</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">0-30 tiles</Box>
+      <Box Margin="4">0–30 тайлов</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Clear traffic both ways.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">30-45 tiles</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Readable but degraded. Words go missing.</Box>
+      <Box Margin="4">Чистая двусторонняя связь.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">Beyond 45 tiles</Box>
+      <Box Margin="4">30–45 тайлов</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Nothing at all.</Box>
+      <Box Margin="4">Связь разборчива, но ухудшается. Часть слов теряется.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Более 45 тайлов</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Связи нет.</Box>
     </ColorBox>
   </Table>
 
-  Coverage reaches one level above or below the anchor, so a tunnel or a lower deck usually needs its own relay. Only a shipboard array covers a whole site vertically.
+  Покрытие распространяется на один уровень выше и ниже ретранслятора, поэтому тоннелю или нижней палубе обычно требуется собственный ретранслятор. Только корабельная антенная система обеспечивает вертикальное покрытие всего объекта.
 
-  ### If you are with the CLF
+  ### Если вы играете за CLF
 
-  The CLF has no communications array and never gets one. Your coverage is either something you build, or something the enemy already built that you tap.
+  У CLF нет собственной стационарной системы связи и она не появляется автоматически. Связь обеспечивается либо тем, что вы построили сами, либо врезкой в уже существующую инфраструктуру противника.
 
-  The cell starts with a manpack, a base station, a splice kit and two relay sets, drawn by the Cell Leader or the Radio Operator - whoever is actually there. The issued manpack comes up already tuned to the cell net and cell command, so it works the moment somebody puts it on. Everything past that is built at the sapper's workbench or paid for out of Special Equipment.
+  Ячейка начинает с ранцевой радиостанцией, базовой станцией, комплектом для врезки и двумя ретрансляторами. Их получает Лидер ячейки или Радист — тот, кто присутствует в раунде. Выданная ранцевая радиостанция уже настроена на сеть ячейки и командную сеть ячейки, поэтому начинает работать сразу после того, как кто-нибудь её наденет. Всё остальное создаётся на верстаке сапёра или покупается за очки специального снаряжения.
 
   <Box>
-    <GuideEntityEmbed Entity="AU14CLFNetSpliceKit" Caption="Splice Kit"/>
-    <GuideEntityEmbed Entity="AU14CommsMastField" Caption="Field Mast"/>
-    <GuideEntityEmbed Entity="AU14CLFBaseStation" Caption="Base Station"/>
-    <GuideEntityEmbed Entity="AU14CLFClandestineRelay" Caption="Relay Set"/>
+    <GuideEntityEmbed Entity="AU14CLFNetSpliceKit" Caption="Комплект для врезки"/>
+    <GuideEntityEmbed Entity="AU14CommsMastField" Caption="Полевая мачта"/>
+    <GuideEntityEmbed Entity="AU14CLFBaseStation" Caption="Базовая станция"/>
+    <GuideEntityEmbed Entity="AU14CLFClandestineRelay" Caption="Ретранслятор"/>
   </Box>
 
-  #### Tapping somebody else's mast
+  #### Подключение к чужой мачте
 
-  Every fixed mast and array has a feeder junction, and a junction can be spliced. Do it and your cell nets run on that mast at that mast's range. A command-post mast is worth 75 tiles to you. A site array is worth 200.
+  У каждой стационарной мачты и антенной системы есть соединительная коробка фидера, в которую можно выполнить врезку. После этого ваши сети ячейки используют эту мачту и её радиус покрытия. Мачта командного пункта даст вам 75 тайлов покрытия, а стационарная антенная система — 200.
 
-  A tap [bold]adds[/bold] your nets and takes nothing away. The mast keeps carrying whatever it carried before, for whoever built it. Splicing one does not knock it down, jam it, or cut the garrison off it. If you want a mast gone, break it.
+  Врезка [bold]добавляет[/bold] ваши сети и ничего не отключает. Мачта продолжает обслуживать исходные сети того, кто её установил. Врезка не выводит мачту из строя, не глушит её и не лишает гарнизон связи. Если хотите избавиться от мачты — уничтожьте её.
 
-  You need a [bold]net splice kit[/bold], built at the sapper's workbench, and you need to be the [bold]Radio Operator[/bold]. Nobody else is trained for it.
+  Вам понадобится [bold]комплект для врезки в сеть[/bold], создаваемый на верстаке сапёра, и роль [bold]Радиста[/bold]. Другие роли не имеют необходимой подготовки.
 
-  Use the kit on the mast. Getting the cover off takes several seconds, then the splice panel opens. The trunk carriers are hidden somewhere in the band and you have to find each one:
+  Используйте комплект на мачте. Снятие крышки занимает несколько секунд, после чего откроется панель врезки. Несущие частоты скрыты где-то внутри диапазона, и каждую из них необходимо обнаружить:
 
-  - [bold]PROBE[/bold] a position and the panel reports what came back. A strong reading means you are close. A zero means there is no carrier within thirty of where you looked.
-  - [bold]LOCK[/bold] when you think you have it. Within three positions and the carrier is yours. Miss it and you lose two probes and take a large hit to the detection meter.
-  - Probes are shared across the whole job rather than given per carrier. Each one nudges detection a little. A missed lock costs twenty times as much, so probe again rather than guess.
+  - Используйте [bold]PROBE[/bold] в выбранной позиции — панель покажет результат. Сильный сигнал означает, что несущая рядом. Нулевой сигнал означает, что в пределах тридцати позиций от проверенной точки несущей нет.
+  - Используйте [bold]LOCK[/bold], когда считаете, что нашли её. Если ошиблись не более чем на три позиции, несущая будет захвачена. Если промахнулись, вы потеряете две попытки PROBE и значительно заполните шкалу обнаружения.
+  - Число попыток PROBE общее для всей операции, а не отдельное для каждой несущей. Каждая попытка немного повышает обнаружение. Ошибка LOCK увеличивает обнаружение примерно в двадцать раз сильнее, поэтому лучше проверить ещё раз, чем угадывать.
 
-  Sweep coarsely before you do anything else. Three probes spread evenly across the band will always touch a carrier, and from there you walk in on whichever came back strongest.
+  Сначала сделайте грубое сканирование. Три равномерно распределённые проверки по диапазону гарантированно заденут одну из несущих; затем постепенно приближайтесь к точке с самым сильным ответом.
 
-  Run out of probes, or fill the detection meter, and the job fails. The kit is gone and the junction drops into fault for ninety seconds, during which nobody can splice it again. Bring a second kit if you want a second try, and expect to wait.
+  Если попытки PROBE закончатся или шкала обнаружения заполнится, операция провалится. Комплект будет потерян, а соединительная коробка перейдёт в аварийное состояние на девяносто секунд, в течение которых повторная врезка невозможна. Для второй попытки понадобится второй комплект и придётся дождаться окончания блокировки.
 
-  The mast throws sparks the whole time you are working on it, and keeps sparking through the fault. Neither is subtle. Put someone on the approach before you start.
+  Во время работы мачта постоянно искрит и продолжает искрить во время аварийного состояния. Это хорошо заметно. Перед началом поставьте кого-нибудь следить за подходами.
 
-  #### Building your own
+  #### Собственная инфраструктура
 
-  - A [bold]field antenna mast[/bold] is ten metal sheets and eight seconds, and gives 75 tiles clear and 100 degraded. Your Cell Leader, Radio Operator, Guerillas and Machine Gunners all have the engineering skill for it. It is also tall, outdoors only, and anyone can tap it or break it, marines included.
-  - A [bold]clandestine base station[/bold] reaches 55 clear and 80 degraded and can be worked on its handset, which no relay can. It is too heavy to conceal on a person, so the place you hide it is a place worth defending.
-  - A [bold]relay set[/bold] reaches 35 clear and 50 degraded and has no controls on it at all. It is the weakest thing on this list. Use it where there is no mast to tap and no room to raise one, such as inside a building or down a tunnel.
+  - [bold]Полевая антенная мачта[/bold] строится из десяти листов металла за восемь секунд и обеспечивает 75 тайлов чистого и 100 тайлов ухудшенного сигнала. Лидер ячейки, Радист, Партизаны и Пулемётчики имеют достаточный инженерный навык. Мачта высокая, устанавливается только снаружи, и любой человек — включая морпехов — может подключиться к ней или уничтожить её.
+  - [bold]Подпольная базовая станция[/bold] обеспечивает 55 тайлов чистого и 80 тайлов ухудшенного сигнала и поддерживает работу телефонной трубки, чего обычный ретранслятор не умеет. Она слишком тяжёлая, чтобы спрятать её на персонаже, поэтому место установки стоит защищать.
+  - [bold]Ретранслятор[/bold] обеспечивает 35 тайлов чистого и 50 тайлов ухудшенного сигнала и не имеет собственных органов управления. Это самый слабый вариант из перечисленных. Используйте его там, где нет подходящей мачты и нельзя установить новую, например внутри здания или в тоннеле.
 
-  Only your Cell Leader and Radio Operator can stake down a relay or a base station.
+  Только Лидер ячейки и Радист могут закреплять ретранслятор или базовую станцию.
 
-  #### What it costs you
+  #### Чем вы рискуете
 
-  None of this is hidden from the enemy.
+  Ни один из этих способов не скрыт от противника.
 
-  A [bold]tap[/bold] sits at the foot of the mast where anyone walking past can see it. It can be shot, and anyone can pull it off in eight seconds. Whoever does gets its keying module, which reads your cell's traffic until your leadership orders a recrypto.
+  [bold]Врезка[/bold] находится у основания мачты и видна любому проходящему мимо. В неё можно выстрелить, а любой персонаж может снять её за восемь секунд. Снявший получает модуль ключей, который позволяет читать трафик вашей ячейки до тех пор, пока руководство не прикажет выполнить повторное шифрование.
 
-  A [bold]relay[/bold] is staked down, not locked down. Anyone can pack one up in three seconds and walk off with that piece of your coverage.
+  [bold]Ретранслятор[/bold] лишь закреплён в земле, а не заперт. Любой может упаковать его за три секунды и унести часть вашей зоны покрытия.
 
-  Put both somewhere nobody has a reason to walk past.
+  Размещайте оба устройства там, где у случайных прохожих не будет причин их обнаружить.
 
-  ## Step 3: Say something on your headset
+  ## Шаг 3: Передайте сообщение через гарнитуру
 
-  With the headset worn in your ears slot, type a colon, the letter h, a space, and your message:
+  Надев гарнитуру в слот ушей, введите двоеточие, букву h, пробел и текст сообщения:
 
-  [color=#a4885c]:h Radio check, over.[/color]
+  [color=#a4885c]:h Проверка связи, приём.[/color]
 
-  If the net is anchored and somebody is listening, they will see your message with your callsign in front of it.
+  Если сеть обеспечена ретранслятором и кто-то слушает, он увидит сообщение с вашим позывным перед ним.
 
-  Your headset may carry more than one net. Examine the headset to see which prefixes it holds. Common ones:
+  Гарнитура может иметь доступ более чем к одной сети. Осмотрите её, чтобы увидеть доступные префиксы. Частые варианты:
 
-  - [color=#a4885c]:v[/color] for command, if your headset has the command key.
-  - [color=#a4885c]:a[/color] for Alpha, if your headset has the Alpha key.
+  - [color=#a4885c]:v[/color] — командная сеть, если в гарнитуре есть соответствующий ключ.
+  - [color=#a4885c]:a[/color] — сеть Альфа, если в гарнитуре есть ключ Альфы.
 
-  A headset cannot use a net it does not have the key for. There is no way to add one in the field.
+  Гарнитура не может использовать сеть, для которой у неё нет ключа. Добавить новый ключ в полевых условиях невозможно.
 
-  Note that your [bold]name is never transmitted[/bold]. Everyone on the net sees your callsign instead, friendly or hostile. Face to face speech is unaffected, so people standing next to you still hear you normally.
+  Обратите внимание: [bold]ваше имя не передаётся[/bold]. Все слушатели — союзники и противники — видят вместо него ваш позывной. Обычная речь лицом к лицу не меняется: находящиеся рядом люди всё равно слышат вас как обычно.
 
-  ## Step 4: Open the radio panel
+  ## Шаг 4: Откройте панель радиостанции
 
-  Everything from here needs an AN/PRC on your back and the training to use it.
+  Всё дальнейшее требует AN/PRC в слоте спины и соответствующей подготовки.
 
-  Only these roles can open the panel and transmit through the radio:
+  Только следующие роли могут открыть панель и передавать сообщения через радиостанцию:
 
   <Table Columns="2" MinForcedColumnWidth="110">
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Faction[/bold]</Box>
+      <Box Margin="4">[bold]Фракция[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Trained roles[/bold]</Box>
+      <Box Margin="4">[bold]Обученные роли[/bold]</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">[bold]GOVFOR and OPFOR[/bold]</Box>
+      <Box Margin="4">[bold]GOVFOR и OPFOR[/bold]</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Commander, Adjutant, staff officers, engineering officers, intelligence officers, synthetics, squad leaders, Fireteam Leaders, and Radio Traffic Operators.</Box>
+      <Box Margin="4">Командир, Адъютант, штабные офицеры, инженерные офицеры, офицеры разведки, синтетики, командиры отрядов, командиры боевых групп и операторы радиосвязи.</Box>
     </ColorBox>
 
     <ColorBox>
       <Box Margin="4">[bold]CLF[/bold]</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Cell Leader and Radio Operator.</Box>
+      <Box Margin="4">Лидер ячейки и Радист.</Box>
     </ColorBox>
   </Table>
 
-  Both regular factions field the same set of trained roles, so a captured enemy pack is useful to the same people on your side.
+  Обе регулярные фракции используют одинаковый набор подготовленных ролей, поэтому захваченная вражеская ранцевая радиостанция пригодится тем же специальностям на вашей стороне.
 
-  If you are not on that list the panel will not open for you. You have two ways round it: use somebody else's handset, covered further down, or read a [bold]field radio operator's pamphlet[/bold] if one is available, which trains you permanently.
+  Если вашей роли нет в списке, панель не откроется. Есть два обходных варианта: воспользоваться чужой телефонной трубкой, описанной ниже, либо прочитать [bold]памятку полевого радиста[/bold], если она доступна. Памятка навсегда обучает персонажа работе с радиостанцией.
 
-  To open it:
+  Чтобы открыть панель:
 
-  - Wear the radio in your [bold]back slot[/bold]. It does nothing in a bag or on the floor.
-  - Alt-click the radio, or open its verb menu.
-  - Select [bold]Open Radio Panel[/bold].
+  - Наденьте радиостанцию в [bold]слот спины[/bold]. В сумке или на полу она не работает.
+  - Нажмите Alt+ЛКМ по радиостанции либо откройте меню действий.
+  - Выберите [bold]Open Radio Panel[/bold].
 
-  The panel opens with a status line across the top. Read it now, because it tells you what is wrong before you waste time hunting.
+  Сверху панели отображается строка состояния. Сразу прочитайте её: она подсказывает, что именно не так, прежде чем вы начнёте искать проблему вслепую.
 
-  - [bold]READY[/bold] means the radio is worn and has an active net. This is what you want.
-  - [bold]NOT WORN[/bold] means it is not in your back slot.
-  - [bold]NO NET[/bold] means you have not set up a slot yet. That is normal on a fresh radio.
-  - [bold]STBY[/bold] means part of the setup is still incomplete.
+  - [bold]READY[/bold] означает, что радиостанция надета и имеет активную сеть. Это нормальное рабочее состояние.
+  - [bold]NOT WORN[/bold] означает, что радиостанция находится не в слоте спины.
+  - [bold]NO NET[/bold] означает, что ни один слот сети ещё не настроен. Для новой радиостанции это нормально.
+  - [bold]STBY[/bold] означает, что настройка ещё не завершена.
 
-  ## Step 5: Add your first net
+  ## Шаг 5: Добавьте первую сеть
 
-  A fresh radio has no nets loaded. You build them yourself, into what the panel calls slots. The radio holds up to [bold]four[/bold].
+  Новая радиостанция не имеет загруженных сетей. Вы создаёте их самостоятельно в так называемых слотах. Радиостанция поддерживает до [bold]четырёх[/bold] сетей.
 
-  Work through this in order:
+  Выполняйте действия по порядку:
 
-  - Select [bold]+ ADD NET[/bold]. An empty slot appears.
-  - Give it a short label, something like [bold]CMD[/bold] or [bold]ALPHA[/bold]. The label is cosmetic. It is only shown on your own radio and it does not pick the net for you.
-  - Select [bold]TUNE[/bold] on that slot.
-  - Open the [bold]NET[/bold] tab and pick a named faction net from the list.
-  - Select the slot row itself so it becomes the [bold]active[/bold] slot.
+  - Нажмите [bold]+ ADD NET[/bold]. Появится пустой слот.
+  - Задайте короткую метку, например [bold]CMD[/bold] или [bold]ALPHA[/bold]. Метка декоративная: она отображается только на вашей радиостанции и сама по себе не выбирает сеть.
+  - Нажмите [bold]TUNE[/bold] для этого слота.
+  - Откройте вкладку [bold]NET[/bold] и выберите именованную сеть вашей фракции.
+  - Нажмите на строку слота, чтобы сделать её [bold]активной[/bold].
 
-  That last step catches people out constantly. Adding a net does not select it. The active slot is the one you actually transmit on, and it is the row that is highlighted.
+  Последний шаг забывают особенно часто. Добавление сети не делает её активной автоматически. Передача идёт через активный слот — его строка подсвечена.
 
-  Instead of a named net you can enter a raw frequency in the [bold]FREQ[/bold] tab. Frequencies work with or without the decimal point, so [color=#a4885c]1606[/color] and [color=#a4885c]1.606[/color] are the same thing. Use this for tuning to somebody else's net, which is covered in the AN/PRC guide.
+  Вместо именованной сети можно ввести частоту вручную во вкладке [bold]FREQ[/bold]. Частота принимается как с десятичной точкой, так и без неё: [color=#a4885c]1606[/color] и [color=#a4885c]1.606[/color] означают одно и то же. Это используется для настройки на чужую сеть; подробнее см. руководство AN/PRC.
 
-  Two more buttons on each slot:
+  Ещё две кнопки каждого слота:
 
-  - [bold]CLEAR[/bold] empties the slot but keeps it and its label.
-  - [bold]DEL[/bold] removes the slot entirely.
+  - [bold]CLEAR[/bold] очищает слот, сохраняя сам слот и его метку.
+  - [bold]DEL[/bold] полностью удаляет слот.
 
-  ## Step 6: Load your COMSEC fill
+  ## Шаг 6: Загрузите ключи COMSEC
 
-  Most faction nets are meant to be encrypted, and the AN/PRC does not carry its own keys. It reads them off a physical card.
+  Большинство фракционных сетей должны быть зашифрованы, а AN/PRC не хранит собственные ключи. Она считывает их с физической карты.
 
-  - Find your issued [bold]fill card[/bold] in your kit.
-  - Insert it into the radio's fill card slot.
-  - Check the COMSEC panel. It should read [bold]SECURED[/bold].
+  - Найдите выданную вам [bold]карту ключей[/bold] в снаряжении.
+  - Вставьте её в слот карты ключей радиостанции.
+  - Проверьте панель COMSEC. Она должна показывать [bold]SECURED[/bold].
 
-  If you transmit on a secured faction net with no matching fill, the radio warns you and [bold]sends the message anyway, in the clear[/bold]. It does not stop you. Anyone listening on that frequency reads it, and you light up enemy direction finding while you do it.
+  Если вы передаёте сообщение в защищённой фракционной сети без подходящих ключей, радиостанция предупредит вас, но [bold]всё равно передаст сообщение открытым текстом[/bold]. Передача не блокируется. Любой слушатель на этой частоте сможет прочитать сообщение, а ваша передача одновременно будет заметна вражеским средствам радиопеленгации.
 
-  Treat a fill warning as a mistake to fix, not a message to click past.
+  Предупреждение о ключах нужно исправить, а не просто проигнорировать.
 
-  ## Step 7: Transmit
+  ## Шаг 7: Передайте сообщение
 
-  With a slot active, transmit through the radio the same way you use a headset, but with [color=#a4885c]:r[/color]:
+  При активном слоте используйте радиостанцию так же, как гарнитуру, но с префиксом [color=#a4885c]:r[/color]:
 
-  [color=#a4885c]:r HAVOC 6, this is ALPHA ROMEO, radio check, over.[/color]
+  [color=#a4885c]:r ХАВОК 6, это АЛЬФА РОМЕО, проверка связи, приём.[/color]
 
-  [color=#a4885c]:r[/color] always goes out on whichever slot is currently active. If you have four nets loaded and speak on the wrong one, that is almost always because you forgot to change the active slot first.
+  [color=#a4885c]:r[/color] всегда передаёт в текущий активный слот. Если у вас загружено четыре сети, а сообщение ушло не туда, почти всегда причина в том, что вы забыли переключить активный слот.
 
-  Your transmission goes out under your callsign. A worn radio follows the wearer's assigned callsign automatically, shown on the panel as [bold]AUTO[/bold]. If you have no callsign assigned you will transmit as [bold]UNKNOWN STATION[/bold], which is worth fixing before anyone needs you.
+  Передача идёт под вашим позывным. Надетая радиостанция автоматически использует назначенный владельцу позывной; на панели это обозначено как [bold]AUTO[/bold]. Если позывной не назначен, вы будете передавать как [bold]UNKNOWN STATION[/bold]. Лучше исправить это до того, как связь понадобится срочно.
 
-  ## Step 8: Confirm it actually works
+  ## Шаг 8: Убедитесь, что связь действительно работает
 
-  Do not assume. Select [bold]RADIO CHECK[/bold] on the panel.
+  Не полагайтесь на предположения. Нажмите [bold]RADIO CHECK[/bold] на панели.
 
-  The radio sends [bold]RADIO CHECK, HOW COPY, OVER[/bold] on the active net, then gives you a private report listing which stations hear you clearly and which hear you degraded. That includes everyone on a headset or a clipped earpiece, not only other pack operators, so a CLF cell of earpieces and one manpack still comes back as a full list.
+  Радиостанция передаст [bold]RADIO CHECK, HOW COPY, OVER[/bold] в активной сети, а затем покажет вам личный отчёт: какие станции слышат вас чисто, а какие — с ухудшением. В список попадают все пользователи гарнитур и скрытых наушников, а не только операторы ранцевых радиостанций. Поэтому ячейка CLF с несколькими наушниками и одной AN/PRC всё равно вернётся полным списком.
 
-  This is the fastest way to answer "is my net working" without bothering anyone, and you should run it before you move somewhere new and after you set up.
+  Это самый быстрый способ проверить сеть, никого не отвлекая. Выполняйте проверку перед перемещением в новую зону и после настройки оборудования.
 
-  If you run it while sitting inside enemy jamming, the report also gives you a bearing to the strongest jammer, which is useful intelligence on its own.
+  Если проверка выполняется внутри зоны вражеского глушения, отчёт также покажет направление на самый мощный источник помех — само по себе полезная разведывательная информация.
 
-  ## The handset: how everyone else uses your radio
+  ## Телефонная трубка: как остальные используют вашу радиостанцию
 
-  The handset is how someone without radio training talks on a net they do not otherwise have. A squad leader reaching the command net through their Fireteam Leader is the standard case.
+  Телефонная трубка позволяет человеку без подготовки радиста говорить в сети, к которой у него иначе нет доступа. Типичный пример — командир отряда, выходящий в командную сеть через радиостанцию своего командира боевой группы.
 
-  To take it:
+  Чтобы взять трубку:
 
-  - Stand within about [bold]two and a half tiles[/bold] of the radio or the person wearing it.
-  - Make sure you have a [bold]free hand[/bold]. You cannot take it with both hands full.
-  - Alt-click the wearer, or the deployed radio.
-  - Select [bold]Take Handset[/bold].
+  - Встаньте не дальше примерно [bold]двух с половиной тайлов[/bold] от радиостанции или носящего её человека.
+  - Освободите [bold]одну руку[/bold]. С занятыми руками взять трубку нельзя.
+  - Нажмите Alt+ЛКМ по владельцу или развёрнутой радиостанции.
+  - Выберите [bold]Take Handset[/bold].
 
-  Now read this part carefully, because it surprises people and it has consequences.
+  Внимательно прочитайте следующий пункт: он часто становится неожиданностью и имеет последствия.
 
-  [bold]While you are holding the handset, anything you say out loud goes out on the net.[/bold] You do not need a prefix. Talking normally to the person next to you transmits it to every station on that net.
+  [bold]Пока вы держите трубку, всё сказанное обычной речью передаётся в радиосеть.[/bold] Префикс не нужен. Даже обычная фраза человеку рядом будет передана каждой станции в сети.
 
-  To speak without transmitting, [bold]whisper[/bold]. Whispered speech stays off the air.
+  Чтобы говорить без передачи, используйте [bold]шёпот[/bold]. Шёпот в эфир не попадает.
 
-  The rest of the handset's behaviour:
+  Остальные особенности трубки:
 
-  - It transmits on the radio's [bold]active slot[/bold], whatever the operator last selected.
-  - It uses [bold]your[/bold] callsign, not the radio operator's.
-  - Only one person can hold it at a time.
-  - Walk out of range and the cord yanks out of your hand and disconnects you.
-  - Select [bold]Hang Up Handset[/bold] to return it.
+  - Она передаёт через [bold]активный слот[/bold] радиостанции — тот, который последним выбрал оператор.
+  - Используется [bold]ваш[/bold] позывной, а не позывной оператора радиостанции.
+  - Одновременно трубку может держать только один человек.
+  - Если уйти слишком далеко, провод натянется, трубка вырвется из руки и соединение прекратится.
+  - Выберите [bold]Hang Up Handset[/bold], чтобы вернуть трубку.
 
-  One exception: if you are wearing your own AN/PRC, holding someone else's handset does not open your mic. Your own pack takes priority and normal [color=#a4885c]:r[/color] discipline applies.
+  Есть одно исключение: если вы сами носите AN/PRC, чужая трубка в руке не включает ваш микрофон. Приоритет получает ваша собственная радиостанция, и действует обычная дисциплина передачи через [color=#a4885c]:r[/color].
 
-  ## When it does not work
+  ## Если ничего не работает
 
-  Work down this list in order. It is roughly ordered by how often each one is the real problem.
+  Проверяйте пункты сверху вниз. Они примерно отсортированы по тому, насколько часто именно это оказывается причиной проблемы.
 
   <Table Columns="2" MinForcedColumnWidth="120">
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Symptom[/bold]</Box>
+      <Box Margin="4">[bold]Симптом[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Check[/bold]</Box>
+      <Box Margin="4">[bold]Что проверить[/bold]</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">Nobody answers on a squad or command net</Box>
+      <Box Margin="4">Никто не отвечает в отрядной или командной сети</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">There is no anchor in range. Find your Fireteam Leader, a mast, or an array. This is the answer most of the time.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">[color=#a4885c]:r[/color] goes out on the wrong net</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">The wrong slot is active. Select the row you want first.</Box>
+      <Box Margin="4">В радиусе нет ретранслятора. Найдите своего командира боевой группы, мачту или антенную систему. Это самая частая причина.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">The panel will not open</Box>
+      <Box Margin="4">[color=#a4885c]:r[/color] передаёт не в ту сеть</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Your role is not radio trained, or the radio is not in your back slot.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">Traffic arrives broken or full of static</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">You are at the edge of coverage, or you are being jammed. Move closer to the anchor.</Box>
+      <Box Margin="4">Активен не тот слот. Сначала выберите нужную строку.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">AN/PRC traffic arrives as pure static</Box>
+      <Box Margin="4">Панель не открывается</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">One of the two radios does not have matching COMSEC fill.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">A net key is missing from your headset</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Examine it to confirm. You cannot add keys in the field. Use a handset instead.</Box>
+      <Box Margin="4">Ваша роль не обучена работе с радиостанцией либо радиостанция находится не в слоте спины.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">You transmit as UNKNOWN STATION</Box>
+      <Box Margin="4">Сообщения приходят обрывками или с сильными помехами</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">You have no callsign assigned. Command can assign one from the net directory.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">You said something private and it went out on the net</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">You are holding a handset. Hang it up, or whisper.</Box>
+      <Box Margin="4">Вы находитесь у границы зоны покрытия либо вас глушат. Подойдите ближе к ретранслятору.</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">The radio has gone completely dead</Box>
+      <Box Margin="4">Трафик AN/PRC приходит сплошным шумом</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Check the battery in its internal slot. Searching and high transmit power drain it quickly.</Box>
+      <Box Margin="4">У одной из двух радиостанций отсутствуют подходящие ключи COMSEC.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">В гарнитуре отсутствует ключ нужной сети</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Осмотрите гарнитуру и убедитесь в этом. Добавить ключ в полевых условиях нельзя. Воспользуйтесь телефонной трубкой.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Вы передаёте как UNKNOWN STATION</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Вам не назначен позывной. Командование может назначить его через каталог сети.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Вы сказали что-то личное, и это ушло в эфир</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Вы держите телефонную трубку. Верните её или говорите шёпотом.</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">Радиостанция полностью перестала работать</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">Проверьте аккумулятор во внутреннем слоте. Сканирование и высокая мощность передачи быстро расходуют заряд.</Box>
     </ColorBox>
   </Table>
 
-  ## Where to go next
+  ## Что читать дальше
 
-  - [textlink="AN/PRC-117G Radio" link="AU14CommsANPRC"] - everything else the manpack does: operating modes, transmit power, retransmission stations, band searching, and intercepting enemy traffic.
-  - [textlink="Field Headsets" link="AU14CommsHeadsets"] - direct frequencies, tuning, and headset-specific behaviour.
-  - [textlink="Voice Procedure" link="AU14CommsVoiceProcedure"] - how to actually word a transmission so it is understood the first time.
-  - [textlink="Comms Quick Reference" link="AU14CommsQuickRef"] - the tables on one page, for when you know what you are doing and just need a number.
+  - [textlink="Радиостанция AN/PRC-117G" link="AU14CommsANPRC"] — остальные возможности ранцевой радиостанции: режимы работы, мощность передачи, ретрансляционные станции, сканирование диапазона и перехват вражеского трафика.
+  - [textlink="Полевые гарнитуры" link="AU14CommsHeadsets"] — прямые частоты, настройка и особенности гарнитур.
+  - [textlink="Регламент радиообмена" link="AU14CommsVoiceProcedure"] — как формулировать сообщения, чтобы вас поняли с первого раза.
+  - [textlink="Краткий справочник по связи" link="AU14CommsQuickRef"] — все основные таблицы на одной странице, когда вы уже знаете систему и вам нужна только конкретная цифра.
 </Document>
