@@ -1,25 +1,25 @@
 <Document>
-  # OPTIONAL ADD-ON CHARGES
+  # ДОПОЛНИТЕЛЬНЫЕ ОБВИНЕНИЯ
 
-  These charges may be added to an existing crime and are served in addition to the base sentence.
+  Эти обвинения могут добавляться к основному преступлению и отбываются сверх основного срока наказания.
 
-  ## Resisting Arrest
-  Refusing or fleeing a lawful arrest or search.
-  - 5 min (refusing orders) | 10 min (fleeing or using force)
+  ## Сопротивление аресту
+  Отказ подчиниться законному аресту или обыску либо попытка скрыться от них.
+  - 5 мин (отказ выполнять распоряжения) | 10 мин (побег или применение силы)
 
-  ## Aiding and Abetting
-  Materially assisting another person in committing a crime.
-  - Same punishment as the crime assisted.
+  ## Пособничество
+  Существенная помощь другому лицу в совершении преступления.
+  - То же наказание, что и за преступление, которому оказывалось содействие.
 
-  ## Disorderly Conduct in Holding
-  Significant disruption while legally detained.
-  - 5 min
+  ## Нарушение порядка при содержании под стражей
+  Существенное нарушение порядка во время законного задержания.
+  - 5 мин
 
-  ## Possession During a Crime
-  Carrying illegal weapons, contraband, or unauthorized equipment while committing another offense.
-  - +5 min + confiscation
+  ## Владение запрещёнными предметами во время преступления
+  Ношение незаконного оружия, контрабанды или неразрешённого оборудования при совершении другого правонарушения.
+  - +5 мин + конфискация
 
-  ## Abuse of Emergency Conditions
-  Using an emergency as cover to commit another crime (e.g. looting during evacuation, stealing weapons during lockdown, impersonating emergency personnel).
-  - +5 min | May escalate the underlying charge if colony safety is endangered.
+  ## Злоупотребление чрезвычайной обстановкой
+  Использование чрезвычайной ситуации как прикрытия для другого преступления (например, мародёрство во время эвакуации, кража оружия во время блокировки, выдача себя за сотрудника экстренной службы).
+  - +5 мин | Основное обвинение может быть ужесточено, если создана угроза безопасности колонии.
 </Document>

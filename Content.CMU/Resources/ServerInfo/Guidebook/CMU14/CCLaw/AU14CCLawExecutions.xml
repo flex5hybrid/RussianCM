@@ -1,19 +1,19 @@
 <Document>
-	# Executions
+	# Казни
 
-    Only role allowed to be a Judge during Execution trials are Arbiters; If none are available, the execution trial may not proceeed.
-    Executions may only be allowed for Capital Crimes.
-	Executions may be sanctioned only by the joint approval of the Acting Administrator, Marshal and Judge together; Or arternatively, the Colony Administrator and Arbiter.
-	Criminals to be executed must be permitted a final meal of choice within reason and given chance to pray if they are religious, after which they must be given the option of lethal injection or firing squad.
+    Единственная роль, которой разрешено выступать судьёй на процессе о назначении казни, — Арбитр. Если Арбитр недоступен, такой процесс не может состояться.
+    Казнь может быть назначена только за капитальные преступления.
+	Казнь может быть санкционирована только совместным одобрением исполняющего обязанности администратора, Маршала и Судьи; либо, в качестве альтернативы, Администратора колонии и Арбитра.
+	Осуждённому на казнь необходимо предоставить разумный выбор последней трапезы и возможность помолиться, если он религиозен. После этого ему должен быть предоставлен выбор между смертельной инъекцией и расстрелом.
 
-	Firing squads consist of atleast two members at minimum, they must all be part of Law Enforcement.
-	Lethal Injection consists of one trained medical professional such as a Doctor or Nurse, administering a fatal overdose of chemicals.
+	Расстрельная команда должна состоять как минимум из двух сотрудников правоохранительных органов.
+	Смертельная инъекция проводится одним обученным медицинским специалистом, например врачом или медсестрой, путём введения смертельной дозы препаратов.
 
-	After a execution has been performed it is required to have a report sent to the Law Enforcement Command offices, the report should list:
-		- Personnel executed
-		- Crime
-		- Last meal
-		- Execution methods
-		- Name and rank of the personnel who permitted the execution
-		- any relevant information
+	После исполнения казни необходимо отправить отчёт командованию правоохранительных органов. В отчёте следует указать:
+		- Казнённого
+		- Преступление
+		- Последнюю трапезу
+		- Способ казни
+		- Имя и звание лица, разрешившего казнь
+		- Любую относящуюся к делу информацию
 </Document>

@@ -1,36 +1,36 @@
 <Document>
-  # GENERAL PROVISIONS
+  # ОБЩИЕ ПОЛОЖЕНИЯ
 
-  ## BASICS
-  - All persons within colony jurisdiction must obey colonial law and follow lawful safety orders during emergencies, evacuations, quarantines, and security events.
-  - Colony Marshals and Administration may use discretion on minor offenses unless ordered otherwise by higher authority. Law Enforcement may not have their own offenses ignored.
-  - Proportional self-defense is legal. Force should be reasonable for the threat faced.
-  - No person may serve more than 25 minutes in holding unless placed under permanent confinement.
-  - Executions is only legal for Capital crimes, and require a full trial with a judge authorizing it for the execution to be carried out.
-  - Permanent confinement is reserved for extreme threats to colony safety or persons who cannot be safely released.
-  - Colonial law is civilian law. Military procedure does not apply unless martial law is lawfully declared.
-  - Colonial law enforcement may not be used to enforce corporate policy unless it is a lawful safety order or emergency directive.
-  - Spirit of the Law: The laws are meant as intended by their spirit, not their exact wording.
-  - On Threats to breaking Civilian Law: Threatening to commit a Major or Capital Crime such as Unauthorized Deployment or Muder may be charged as breaking the Law as long as it's credible that the law will be broken. In cases of threats to murder, charges are to be treated as Attempted Murder.
-  - Vicarious Prosecution: With the exclusion of capital crimes, actions resulting in Neglect of Duty or crimes resulting in major bodily harm, the Victim of the crime retains the right to drop charges and request Law Enforcement or other prosecuting parties to release the defendant. If the prosecuting party continues with the arrest, they may detain the defendant for up to ten minutes, and must write to Law Enforcement Command for approval on continuing the arrest. If the ten minute mark passes or LE Command doesnt respond in time or rejects for the arrest to continue, they must release the suspect.
-  - When referring to 'Acting Administrator', this can both mean the Deputy Admin, or a Democratically elected Administrator (In the case of there being no Deputy or Colony Admin).
+  ## ОСНОВЫ
+  - Все лица в пределах юрисдикции колонии обязаны соблюдать колониальное законодательство и законные распоряжения по безопасности во время чрезвычайных ситуаций, эвакуаций, карантина и событий, связанных с безопасностью.
+  - Маршалы колонии и Администрация могут по своему усмотрению решать вопросы по мелким правонарушениям, если вышестоящие власти не распорядились иначе. Правоохранительные органы не вправе игнорировать правонарушения, совершённые их сотрудниками.
+  - Соразмерная самооборона законна. Применяемая сила должна соответствовать характеру угрозы.
+  - Никто не может содержаться под временным арестом более 25 минут, если только не назначено постоянное заключение.
+  - Казнь законна только за капитальные преступления и требует полноценного судебного разбирательства с судьёй, санкционировавшим её проведение.
+  - Постоянное заключение применяется только к лицам, представляющим крайнюю угрозу безопасности колонии, либо к тем, кого невозможно безопасно освободить.
+  - Колониальное право является гражданским. Военные процедуры не применяются, если военное положение не было объявлено законным образом.
+  - Колониальные правоохранительные органы не могут использоваться для принудительного исполнения корпоративной политики, если речь не идёт о законном распоряжении по безопасности или чрезвычайной директиве.
+  - Дух закона: законы должны применяться в соответствии с их смыслом и назначением, а не только с буквальной формулировкой.
+  - Угрозы нарушить гражданское законодательство: угроза совершить тяжкое или капитальное преступление, например несанкционированное развёртывание или убийство, может рассматриваться как нарушение закона, если существует реальная вероятность исполнения угрозы. Угроза убийством в таком случае рассматривается как покушение на убийство.
+  - Отказ потерпевшего от преследования: за исключением капитальных преступлений, деяний, повлекших халатность при исполнении обязанностей, и преступлений, повлекших тяжкий вред здоровью, потерпевший вправе отказаться от обвинений и потребовать от правоохранительных органов или иной стороны обвинения освободить обвиняемого. Если сторона обвинения продолжает арест, она может задерживать обвиняемого не более десяти минут и обязана обратиться к командованию правоохранительных органов за разрешением продолжить арест. Если десять минут истекли, командование не ответило вовремя либо отказало в продолжении ареста, подозреваемого необходимо освободить.
+  - Под «исполняющим обязанности администратора» понимается как Заместитель администратора, так и демократически избранный Администратор (если Заместитель и Администратор колонии отсутствуют).
 
-  ## CIVILIAN LEGAL AUTHORITY
-  Civilian Court / Arbiter > Colony Administrator > Chief Marshal > Deputy/Acting Administrator > Colony Marshals > Deputized Security
+  ## ГРАЖДАНСКАЯ ПРАВОВАЯ ИЕРАРХИЯ
+  Гражданский суд / Арбитр > Администратор колонии > Главный маршал > Заместитель / исполняющий обязанности администратора > Маршалы колонии > Уполномоченная охрана
 
-  - If a civilian court is active, it has final authority over criminal cases.
-  - If no court is active, the Marshal's Office handles arrests, charges, and sentencing.
-  - Colonial and corporate administrators may issue lawful civil, safety, and emergency directives. Corporate policy does not override colonial criminal law.
-  - Law Enforcement may refuse unlawful orders.
+  - Если действует гражданский суд, он имеет окончательную власть по уголовным делам.
+  - Если суд не действует, Офис Маршала отвечает за аресты, предъявление обвинений и назначение наказаний.
+  - Колониальные и корпоративные администраторы могут издавать законные гражданские, чрезвычайные и связанные с безопасностью распоряжения. Корпоративная политика не имеет приоритета над колониальным уголовным правом.
+  - Правоохранительные органы вправе отказаться выполнять незаконные приказы.
 
-  ## COURTS AND LEGAL REVIEW
-  Most offenses are processed directly by the Marshal's Office. A formal court may be convened for major/capital crimes, disputed arrests, abuse of authority, corporate misconduct, or matters of public concern.
+  ## СУДЫ И ПРАВОВОЙ ПЕРЕСМОТР
+  Большинство правонарушений рассматривается непосредственно Офисом Маршала. Формальный суд может быть созван по тяжким и капитальным преступлениям, спорным арестам, злоупотреблению полномочиями, корпоративным нарушениям или вопросам, имеющим общественную значимость.
 
-  Court proceedings may involve a judge (e.g. Arbiter, Administator or Marshal), prosecutor, legal counsel, witnesses, and evidence review. Outcomes may include charges upheld, reduced, or dismissed; sentences adjusted; property returned; or licenses suspended/restored.
+  В судебном разбирательстве могут участвовать судья (например, Арбитр, Администратор или Маршал), обвинитель, защитник, свидетели; также может проводиться исследование доказательств. По итогам обвинения могут быть подтверждены, смягчены или сняты; наказание может быть изменено; имущество возвращено; лицензии приостановлены либо восстановлены.
 
-  The Judge may not have been involved in the case beforehand. The Judge may not be a direct superior of the accused. The Judge may not have a personal relationship with the accused or victim.
+  Судья не должен ранее участвовать в данном деле. Судья не может быть непосредственным начальником обвиняемого. Судья не может состоять в личных отношениях с обвиняемым или потерпевшим.
 
-  Legal counsel is not guaranteed but may be appointed for major or disputed cases. Court rulings are final unless overruled by Colonial High Authority.
+  Право на юридического защитника не гарантируется, однако защитник может быть назначен по тяжким или спорным делам. Решения суда окончательны, если только они не отменены высшей колониальной властью.
 
-  OOC NOTE: If it says 'Colony Administartor', it means the WL role.
+  OOC-ПРИМЕЧАНИЕ: если указано «Администратор колонии», имеется в виду WL-роль.
 </Document>

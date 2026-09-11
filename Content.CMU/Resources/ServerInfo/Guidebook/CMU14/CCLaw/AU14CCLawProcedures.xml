@@ -1,16 +1,16 @@
 <Document>
-  # CIVIL CITATIONS
-  Minor legal alternatives to full arrest. May be issued by Marshals, Colonial Administration, or authorized department heads.
+  # ГРАЖДАНСКИЕ ВЗЫСКАНИЯ
+  Мягкие правовые меры, применяемые вместо полноценного ареста. Могут назначаться Маршалами, Колониальной администрацией или уполномоченными руководителями отделов.
 
-  Types include: warnings, fines, restitution, temporary confiscation, access or license suspension, community service, or short holding.
-  This may not replace arrest for major or capital crimes.
-  If refused, the offender serves the listed holding sentence instead.
+  Возможные меры: предупреждение, штраф, возмещение ущерба, временная конфискация, приостановление доступа или лицензии, общественные работы либо кратковременное содержание под стражей.
+  Эти меры не могут заменять арест за тяжкие или капитальные преступления.
+  При отказе выполнить взыскание нарушитель вместо него отбывает указанный срок содержания под стражей.
 
-  # ARRESTING PROCEDURES
-  [bold]Standard arrest:[/bold] Inform the suspect of the charge, order compliance, use non-lethal force unless a lethal threat is present, restrain, move to holding, process charges promptly.
-  Lethal force is only authorized if the suspect poses an immediate lethal threat to officers, civilians, or critical colony systems.
+  # ПОРЯДОК АРЕСТА
+  [bold]Стандартный арест:[/bold] сообщите подозреваемому обвинение, потребуйте подчиниться, применяйте нелетальную силу, если только отсутствует непосредственная смертельная угроза, зафиксируйте подозреваемого, доставьте его в камеру и без промедления оформите обвинения.
+  Летальная сила разрешена только в том случае, если подозреваемый создаёт непосредственную смертельную угрозу сотрудникам, гражданским лицам или критически важным системам колонии.
 
-  [bold]Civilian detainment:[/bold] Any civilian may detain another only if they witness a major or capital crime and Law Enforcement is unavailable. Must be handed to Law Enforcement as soon as practical. May not be used for minor offenses.
+  [bold]Гражданское задержание:[/bold] гражданское лицо может задержать другое лицо только если лично стало свидетелем тяжкого или капитального преступления, а правоохранительные органы недоступны. Задержанного необходимо передать правоохранительным органам при первой практической возможности. Эта мера не применяется к мелким правонарушениям.
 
-  [bold]Field detainment:[/bold] During emergencies or off-colony operations, authorized personnel may detain persons who endanger the group, interfere with evacuation, violate quarantine, sabotage equipment, or interfere with emergency operations. Must be transferred to proper authority as soon as practical.
+  [bold]Полевое задержание:[/bold] во время чрезвычайных ситуаций или операций за пределами колонии уполномоченный персонал может задерживать лиц, которые подвергают группу опасности, мешают эвакуации, нарушают карантин, саботируют оборудование либо препятствуют чрезвычайным операциям. Задержанного необходимо передать компетентным властям при первой практической возможности.
 </Document>

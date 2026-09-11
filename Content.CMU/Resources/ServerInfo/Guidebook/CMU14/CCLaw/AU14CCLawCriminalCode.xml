@@ -1,10 +1,10 @@
 <Document>
-  # CRIMINAL CODE
-  Offenses are divided by category. The following sections detail each class of crime.
+  # УГОЛОВНЫЙ КОДЕКС
+  Правонарушения разделены по категориям. В следующих разделах подробно описан каждый класс преступлений.
 
-  - [textlink="Optional Add-On Charges" link="AU14CCLawOptionalCharges"]
-  - [textlink="Minor Crimes" link="AU14CCLawMinorCrimes"]
-  - [textlink="Arms Control & Weapons Statutes" link="AU14CCLawArmsControl"]
-  - [textlink="Major Crimes" link="AU14CCLawMajorCrimes"]
-  - [textlink="Capital Crimes" link="AU14CCLawCapitalCrimes"]
+  - [textlink="Дополнительные обвинения" link="AU14CCLawOptionalCharges"]
+  - [textlink="Мелкие преступления" link="AU14CCLawMinorCrimes"]
+  - [textlink="Контроль оружия и оружейное законодательство" link="AU14CCLawArmsControl"]
+  - [textlink="Тяжкие преступления" link="AU14CCLawMajorCrimes"]
+  - [textlink="Капитальные преступления" link="AU14CCLawCapitalCrimes"]
 </Document>

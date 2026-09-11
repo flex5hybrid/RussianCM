@@ -1,37 +1,37 @@
 <Document>
-  # CAPITAL CRIMES
-  All capital crimes are punished by:
-  - Permanent confinement
-  - Revocation of weapon licenses
-  - Removal from public office or security authority
-  - Possible off-world transfer or exile (if approved by the proper authority)
-  - Execution if following procedure as stated in the Executions Section
+  # КАПИТАЛЬНЫЕ ПРЕСТУПЛЕНИЯ
+  Все капитальные преступления наказываются:
+  - Постоянным заключением
+  - Аннулированием лицензий на оружие
+  - Отстранением от государственной должности или полномочий в сфере безопасности
+  - Возможной отправкой за пределы колонии или изгнанием (при одобрении компетентных властей)
+  - Казнью при соблюдении процедуры, установленной в разделе о казнях
 
-  ## Murder
-  Killing another person with malicious intent.
+  ## Убийство
+  Умышленное лишение жизни другого лица со злым умыслом.
 
-  ## Attempted Murder
-  Attempting to kill another person with malicious intent.
+  ## Покушение на убийство
+  Попытка умышленно лишить жизни другого лица со злым умыслом.
 
-  ## Mass Casualty Sabotage
-  Damaging colony systems in a way that could cause mass death or colony collapse (reactor/atmospheric/water system sabotage, disabling evacuation systems, disabling quarantine controls, opening colony defenses during hostile contact).
+  ## Саботаж с массовыми жертвами
+  Повреждение систем колонии таким образом, который способен привести к массовой гибели людей или краху колонии (саботаж реактора, атмосферных или водных систем, отключение систем эвакуации или карантинного контроля, открытие обороны колонии во время контакта с противником).
 
-  ## Terrorism
-  Using violence, sabotage, hostage-taking, threats, or mass panic to coerce the colony, government, or civilian population.
+  ## Терроризм
+  Использование насилия, саботажа, захвата заложников, угроз или массовой паники с целью принудить колонию, правительство или гражданское население к определённым действиям.
 
-  ## Sedition
-  Attempting to violently overthrow or replace the lawful colonial government or civil administration. Includes armed revolt against lawful colony authority during an emergency.
+  ## Мятеж
+  Попытка насильственно свергнуть или заменить законное колониальное правительство либо гражданскую администрацию. Включает вооружённое восстание против законной власти колонии во время чрезвычайной ситуации.
 
-  ## Crimes Against Humanity
-  Heinous acts against human life or dignity (torture, forced infection, unlawful human experimentation, intentional exposure to dangerous organisms, biological weapon deployment, sacrificing civilians to preserve corporate or scientific assets, knowingly allowing a preventable outbreak for profit or concealment).
+  ## Преступления против человечности
+  Чудовищные деяния против человеческой жизни или достоинства (пытки, принудительное заражение, незаконные эксперименты над людьми, преднамеренное воздействие опасных организмов, применение биологического оружия, принесение гражданских лиц в жертву ради сохранения корпоративных или научных активов, сознательное допущение предотвратимой вспышки заражения ради прибыли или сокрытия информации).
 
-  ## Jailbreak / Escape
-  Escaping, attempting escape, or assisting escape from lawful confinement.
-  - Permanent confinement (major/capital offenders) | 20 min + original sentence (minor offenders)
+  ## Побег из-под стражи / освобождение заключённого
+  Побег, попытка побега либо содействие побегу из законного заключения.
+  - Постоянное заключение (для тяжких/капитальных преступников) | 20 мин + исходный срок (для мелких нарушителей)
 
-  ## Use of Prohibited Weapons
-  Using explosives, chemical/biological/radiological weapons, or engineered pathogens against people or colony assets.
+  ## Применение запрещённого оружия
+  Использование взрывчатки, химического, биологического или радиологического оружия либо искусственно созданных патогенов против людей или объектов колонии.
 
-  ## Specimen Trafficking
-  Selling, concealing, or attempting to export restricted biological material without lawful authorization.
+  ## Незаконный оборот образцов
+  Продажа, сокрытие или попытка вывоза ограниченных биологических материалов без законного разрешения.
 </Document>
