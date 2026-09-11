@@ -1,5 +1,5 @@
 <Document>
-  # Field Headsets
+  # Полевые гарнитуры
 
   Your headset is the radio you were issued, the one in your ears slot, and for most roles it is the only radio you will ever touch. This page covers what it does, what it will not do, and the one thing about it that gets people killed.
 
@@ -90,7 +90,7 @@
 
   Otherwise it behaves as a headset does. [color=#a4885c]:h[/color] transmits on the cell net, the colony channel is there as well, and both are subject to everything above about anchors and range. An earpiece answers a radio check like any other station, so an operator running one will see the whole cell come back even when nobody in it carries a pack.
 
-  ## Jamming
+## Радиоэлектронное подавление
 
   Enemy jammers cut into headset traffic. Inside a jammer field:
 
@@ -136,7 +136,7 @@
       <Box Margin="4">[bold]Symptom[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Check[/bold]</Box>
+      <Box Margin="4">[bold]Что проверить[/bold]</Box>
     </ColorBox>
 
     <ColorBox>

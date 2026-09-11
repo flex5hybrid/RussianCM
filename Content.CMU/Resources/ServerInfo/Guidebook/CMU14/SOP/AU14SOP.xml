@@ -1,18 +1,18 @@
 ﻿<Document>
-  # Standard Operating Procedure
+# Стандартные операционные процедуры
 
-  These are sets of regulations and polices used by GOVFOR/OPFOR and all relevant military factions.
+Это свод правил и положений, используемых GOVFOR, OPFOR и всеми соответствующими военными фракциями.
 
-  \nFailure to follow the Standard Operating Procedure may result in [bold]Failure to Follow Procedure[/bold] charges under the [textlink="UCMJ" link="AU14UCMJ"].
+\nНесоблюдение Стандартных операционных процедур может повлечь обвинение в [bold]нарушении установленных процедур[/bold] согласно [textlink="Единому кодексу военной юстиции" link="AU14UCMJ"].
 
-  ## Categories
-  - [textlink="Command" link="AU14SOPCommand"]
-  - [textlink="Rank Structure" link="AU14SOPRankStructure"]
-  - [textlink="Rules of Engagement" link="AU14SOPRulesofEngagement"]
-  - [textlink="Equipment and Personnel" link="AU14SOPEquipmentAndPersonnel"]
-  - [textlink="Deployment" link="AU14SOPDeployment"]
-  - [textlink="Dropships and Aircraft" link="AU14SOPDropshipsandAircraft"]
-  - [textlink="Third-Party Regulations" link="AU14SOPThirdParty"]
-  - [textlink="Definitions and Glossary" link="AU14UCMJDefinitionsandGlossary"]
-  - [textlink="Vehicles" link="AU14SOPVehicles"]
+## Разделы
+- [textlink="Командование" link="AU14SOPCommand"]
+- [textlink="Структура званий" link="AU14SOPRankStructure"]
+- [textlink="Правила применения силы" link="AU14SOPRulesofEngagement"]
+- [textlink="Снаряжение и личный состав" link="AU14SOPEquipmentAndPersonnel"]
+- [textlink="Высадка" link="AU14SOPDeployment"]
+- [textlink="Десантные корабли и авиация" link="AU14SOPDropshipsandAircraft"]
+- [textlink="Правила взаимодействия с третьими сторонами" link="AU14SOPThirdParty"]
+- [textlink="Определения и глоссарий" link="AU14UCMJDefinitionsandGlossary"]
+- [textlink="Транспортные средства" link="AU14SOPVehicles"]
 </Document>

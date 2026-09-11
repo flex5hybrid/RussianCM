@@ -1,34 +1,31 @@
 ﻿<Document>
-  # Dropships and Aircraft
+  # Десантные корабли и авиация
 
-    These regulations govern the authority, modification and operational use of all aircraft and dropships.
+    Эти правила регулируют полномочия лётного состава, модификацию и эксплуатацию всех летательных аппаратов и десантных кораблей.
 
-  ## Flight Crew Authority
-    - Flight Crew may modify their aircraft with permission from a member of the command, as long as the modifications provide a benefit in mind, not solely for decorative purposes. 
-    - Commander or Adjutant may deny any modifications made to the aircraft.
-    - Flight crew may deny access to personnel onboard their ship unless said personnel are deploying to the area of operations or returning from them.
-    - Flight Crew may remove any personnel, except Command Staff, for any reason unless doing so would breach the previous ruling.
+  ## Полномочия лётного состава
+    - Лётный состав может модифицировать свой летательный аппарат с разрешения представителя командования при условии, что изменения приносят практическую пользу, а не служат исключительно украшением.
+    - Командир или Адъютант могут запретить любые модификации летательного аппарата.
+    - Лётный состав может отказать персоналу в доступе на борт своего корабля, если тот не направляется в район проведения операции и не возвращается оттуда.
+    - Лётный состав может удалить с борта любого человека, кроме представителей командного состава, по любой причине, если это не противоречит предыдущему положению.
 
-  ## Aircraft Integrity
-    - Dismantling aircraft components to obtain materials for other purposes is strictly forbidden.
-    - Ship doors must remain intact at all times.
-    - Ship doors may not be tampered with in a way that causes them to remain INOP in flight (i.e. bolting them open then taking off.)
+  ## Целостность летательного аппарата
+    - Разбирать компоненты летательного аппарата ради получения материалов для иных целей строго запрещено.
+    - Двери корабля должны всегда оставаться целыми и исправными.
+    - Запрещено изменять двери корабля таким образом, чтобы во время полёта они оставались неработоспособными. Например, нельзя заблокировать их в открытом положении, а затем взлететь.
 
-  ## Seating and Cargo
-    - Seating capacity may be reduced to accommodate additional ammunition or cargo.
-    - Seating may not be completely removed on the primary dropship; seating may be completely removed on the Gunship if it is NOT the only operable ship.
+  ## Посадочные места и груз
+    - Количество посадочных мест может быть уменьшено для размещения дополнительных боеприпасов или груза.
+    - На основном десантном корабле запрещено полностью демонтировать все посадочные места. На боевом корабле допускается полностью убрать посадочные места, если он не является единственным исправным летательным аппаратом.
 
-  ## Primary Transport Role
-    - If a dropship becomes inaccessible or inoperable, another aircraft must assume the transport role.
-    - The replacement aircraft must be configured with appropriate troop seating whenever possible.
+  ## Основная транспортная роль
+    - Если десантный корабль становится недоступным или неработоспособным, другой летательный аппарат должен принять на себя транспортную роль.
+    - По возможности заменяющий его летательный аппарат должен быть оборудован достаточным количеством посадочных мест для перевозки личного состава.
 
-  ## Parachute Operations
-    - When conducting parachute drops, the Flight Crew are responsible for:
-      - Ensuring the drop zone is safe.
-      - Notifying personnel when to deploy.
-
-  ## Blind Drops
-    - Blind drops may only be authorized by the Commander, XO or acting commander.
-    - Infantry are not required to participate in blind drops, all must be volunteers.
-    - Command Staff and Shipside Staff must never participate in a blind drop.
+  ## Парашютные операции
+    - При проведении парашютного десантирования лётный состав обязан:
+      - Убедиться в безопасности зоны десантирования.
+      - Сообщить личному составу, когда следует совершить прыжок.
+      - Высадка вслепую разрешена для групп численностью не более четырёх человек и требует разрешения представителя командного состава.
+      - При высадке вслепую группы из пяти и более человек сначала должен десантироваться разведчик. После этого остальной личный состав высаживается в обозначенной им точке по сигнальной ракете или лазерной метке. Такая операция также требует разрешения представителя командного состава.
 </Document>

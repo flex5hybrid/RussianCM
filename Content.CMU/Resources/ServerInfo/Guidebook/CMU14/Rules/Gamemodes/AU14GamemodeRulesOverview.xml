@@ -1,15 +1,14 @@
-<Document>
-  # Gamemode Rules
+﻿<Document>
+  # Правила игровых режимов
 
-  The Alien universe is one of many different stories. Each gamemode represents a different narrative and is governed by its own expectations and rule set.
+  Вселенная «Чужого» включает множество различных историй. Каждый игровой режим представляет отдельный сюжет и регулируется собственными требованиями и набором правил.
 
-  [italic]Players are expected to follow the rules specific to the gamemode currently being played.[/italic]
+  [italic]Игроки обязаны соблюдать правила того игрового режима, который проводится в данный момент.[/italic]
 
-  ###Universal Rules
-  - [textlink="Insurgency Rules." link="AU14GamemodeRulesInsurgency"/]
-  - Distress Signal Rules: exercise common sense.
-  <!-- - [textlink="Force on Force Rules." link="AU14GamemodeRulesForceOnForce"/] -->
-  <!-- - [textlink="Distress Signal Rules." link="AU14GamemodeRulesDistressSignal"/] -->
-  <!-- - [textlink="Colony Fall Rules." link="AU14GamemodeRulesColonyFall"/] -->
-  <!-- - [textlink="Prometheus Rules." link="AU14GamemodeRulesPrometheus"/] -->
+  ### Правила игровых режимов
+  - [textlink="Правила режима «Восстание»." link="AU14GamemodeRulesInsurgency"/]
+  - [textlink="Правила режима «Силы против сил»." link="AU14GamemodeRulesForceOnForce"/]
+  - [textlink="Правила режима «Сигнал бедствия»." link="AU14GamemodeRulesDistressSignal"/]
+  - [textlink="Правила режима «Падение колонии»." link="AU14GamemodeRulesColonyFall"/]
+  - [textlink="Правила режима «Прометей»." link="AU14GamemodeRulesPrometheus"/]
 </Document>

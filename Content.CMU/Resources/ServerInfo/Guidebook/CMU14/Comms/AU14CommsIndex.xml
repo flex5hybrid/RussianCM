@@ -1,56 +1,59 @@
 <Document>
-  # Communications Reference
+  # Справочник по связи
 
-  This section covers the radio systems used by ground forces.
+В этом разделе описаны системы радиосвязи, используемые наземными подразделениями.
 
   <Box>
     <GuideEntityEmbed Entity="ANPRC117GRadio" Caption="AN/PRC-117G"/>
-    <GuideEntityEmbed Entity="AU14HeadsetGovforMarineFTL" Caption="Field Headset"/>
+    <GuideEntityEmbed Entity="AU14HeadsetGovforMarineFTL" Caption="Полевая гарнитура"/>
   </Box>
 
-  ## Guides
+## Руководства
 
-  - [textlink="AN/PRC-117G Radio" link="AU14CommsANPRC"] - operating instructions for the manpack radio: net setup, operating modes, COMSEC fill, retransmission stations, interception, and the net log.
-  - [textlink="Field Headsets" link="AU14CommsHeadsets"] - issued headsets: named nets, relay coverage, jamming, and direct-frequency tuning.
-  - [textlink="Voice Procedure" link="AU14CommsVoiceProcedure"] - standard radio message format, prowords, and worked examples for contact reports, fire missions, and casualty evacuation requests.
-  - [textlink="Comms Quick Reference" link="AU14CommsQuickRef"] - chat prefixes, signal ranges, antennas, operating modes, transmit power, squelch, and COMSEC controls.
+- [textlink="Радиостанция AN/PRC-117G" link="AU14CommsANPRC"] — инструкция по эксплуатации ранцевой радиостанции: настройка радиосетей, режимы работы, загрузка ключей COMSEC, развёртывание ретрансляционных станций, перехват сообщений и журнал радиосети.
+- [textlink="Полевые гарнитуры" link="AU14CommsHeadsets"] — штатные гарнитуры: именованные радиосети, зона покрытия ретрансляторов, радиоэлектронное подавление и настройка прямой частоты.
+- [textlink="Правила радиообмена" link="AU14CommsVoiceProcedure"] — стандартный формат радиосообщений, процедурные слова и примеры передачи докладов о контакте, вызова огневой поддержки и запросов на эвакуацию раненых.
+- [textlink="Краткий справочник по связи" link="AU14CommsQuickRef"] — префиксы чата, дальность сигнала, типы антенн, режимы работы, мощность передатчика, шумоподавление и элементы управления COMSEC.
 
-  ## Find a Topic
+## Поиск по теме
 
   <Table Columns="2" MinForcedColumnWidth="120">
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Topic[/bold]</Box>
+      <Box Margin="4">[bold]Тема[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Guide[/bold]</Box>
+      <Box Margin="4">[bold]Руководство[/bold]</Box>
     </ColorBox>
 
-    <ColorBox>
-      <Box Margin="4">Set up or operate an AN/PRC</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">[textlink="AN/PRC-117G Radio" link="AU14CommsANPRC"]</Box>
-    </ColorBox>
 
-    <ColorBox>
-      <Box Margin="4">Use an issued headset</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">[textlink="Field Headsets" link="AU14CommsHeadsets"]</Box>
-    </ColorBox>
+<ColorBox>
+  <Box Margin="4">Настройка или эксплуатация AN/PRC</Box>
+</ColorBox>
+<ColorBox>
+  <Box Margin="4">[textlink="Радиостанция AN/PRC-117G" link="AU14CommsANPRC"]</Box>
+</ColorBox>
 
-    <ColorBox>
-      <Box Margin="4">Learn radio calls and prowords</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">[textlink="Voice Procedure" link="AU14CommsVoiceProcedure"]</Box>
-    </ColorBox>
+<ColorBox>
+  <Box Margin="4">Использование штатной гарнитуры</Box>
+</ColorBox>
+<ColorBox>
+  <Box Margin="4">[textlink="Полевые гарнитуры" link="AU14CommsHeadsets"]</Box>
+</ColorBox>
 
-    <ColorBox>
-      <Box Margin="4">Check a control, range, or prefix</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">[textlink="Comms Quick Reference" link="AU14CommsQuickRef"]</Box>
-    </ColorBox>
+<ColorBox>
+  <Box Margin="4">Изучение правил радиообмена и процедурных слов</Box>
+</ColorBox>
+<ColorBox>
+  <Box Margin="4">[textlink="Правила радиообмена" link="AU14CommsVoiceProcedure"]</Box>
+</ColorBox>
+
+<ColorBox>
+  <Box Margin="4">Проверка элемента управления, дальности или префикса</Box>
+</ColorBox>
+<ColorBox>
+  <Box Margin="4">[textlink="Краткий справочник по связи" link="AU14CommsQuickRef"]</Box>
+</ColorBox>
+
+
   </Table>
 </Document>

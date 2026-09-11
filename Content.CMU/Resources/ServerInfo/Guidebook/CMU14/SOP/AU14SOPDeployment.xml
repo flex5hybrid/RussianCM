@@ -1,40 +1,38 @@
 <Document>
-  # Deployment Regulations
+  # Правила высадки
 
-    - Medical, Requisitions, Brig, Ordnance Workshop and CIC must have at least one member of their department on the ship/installation for any other members of their department to deploy.
-    - The CMO, CMP and LO may never deploy to the FOB and never to the frontline unless the ship/installation is overrun.
-    - For deployment of staff, the FOB must be declared secure. If it is breached or comes under significant hostile threat, all deployed personnel are to immediately return to the ship or primary installation.
-    - The EO and IO may deploy before the FOB has been declared secure to perform their duties.
-    - Department Heads (CMP, CMO, LO) may deploy the FOB in the event they are the only staff in their department and have duties to perform at the FOB. They may not leave the FOB and must follow deployment regulations.
+    - Для высадки сотрудников медицинского отдела, отдела снабжения, брига, оружейной мастерской или центра боевого управления на корабле либо объекте должен оставаться как минимум один сотрудник соответствующего отдела.
+    - Главный врач, начальник военной полиции и офицер снабжения не могут высаживаться на передовую оперативную базу и тем более на линию фронта, кроме случаев, когда корабль или объект захвачен противником.
+    - Перед высадкой персонала передовая оперативная база должна быть объявлена безопасной. Если её оборона прорвана или она оказывается под серьёзной угрозой нападения, весь высадившийся персонал обязан немедленно вернуться на корабль или основной объект.
 
-  ### Medical Staff
-    - Doctors, nurses, and any other medical staff who are not the CMO may deploy to the FOB with the permission of the CMO or Commander and only to the frontline if they are within a vehicle.
-    - They are not to operate the vehicle in any capacity and are to remain inside the vehicle at all times; only in the event of danger may they flee from within it.
+  ### Медицинский персонал
+    - Врачи, медсёстры и другие медицинские сотрудники, кроме главного врача, могут высаживаться на передовую оперативную базу с разрешения главного врача или Командира. На линию фронта они могут направляться только внутри транспортного средства.
+    - Медицинскому персоналу запрещено управлять транспортным средством в каком-либо качестве. Он обязан постоянно оставаться внутри него и может покинуть транспорт только для спасения при непосредственной угрозе.
 
-  ### Requisitions Staff
-    - Auxiliary technicians and other requisition staff who are not the LO may deploy to the FOB with the permission of the LO or Commander and only to the frontline if they are within a vehicle.
-    - They may operate the vehicle and leave the vehicle, but should only do so in the delivery of supplies and remain within view of their vehicle at all times.
+  ### Персонал снабжения
+    - Вспомогательные техники и другие сотрудники снабжения, кроме офицера снабжения, могут высаживаться на передовую оперативную базу с разрешения офицера снабжения или Командира. На линию фронта они могут направляться только внутри транспортного средства.
+    - Они могут управлять транспортным средством и покидать его, однако должны делать это только для доставки припасов и постоянно оставаться в пределах видимости своего транспорта.
 
-  ### Flight Crew
-    - Flight crew may deploy freely to the FOB, but are never to deploy to the frontline
+  ### Лётный состав
+    - Лётный состав может свободно высаживаться на передовую оперативную базу, однако не может направляться на линию фронта.
 
-  ### Ordnance Technicians
-    - Ordnance technicians may deploy to the FOB with the permission of the EO or Commander.
+  ### Техники-оружейники
+    - Техники-оружейники могут высаживаться на передовую оперативную базу с разрешения инженерного офицера или Командира.
 
-  ### Synthetic Units
-    - Auxiliary Synthetics may deploy freely to the FOB and to the frontline
-    - Working Joes are never to be deployed as they will lose connection to APOLLO and cease to function.
+  ### Синтетические юниты
+    - Вспомогательные синтетики могут свободно высаживаться на передовую оперативную базу и направляться на линию фронта.
+    - Рабочих Джо запрещено высаживать, поскольку они потеряют связь с APOLLO и прекратят функционировать.
 
-  ### Military Police
-    - Military Police and any other Police Staff who are not the CMP may deploy to the FOB with the permission of the CMP or Commander and only to the frontline if they are performing a field arrest.
+  ### Военная полиция
+    - Сотрудники военной полиции и другой полицейский персонал, кроме начальника военной полиции, могут высаживаться на передовую оперативную базу с разрешения начальника военной полиции или Командира. На линию фронта они могут направляться только для проведения полевого задержания.
 
-  ### Advisors
-    - Advisors may deploy freely to the FOB and never to the frontline.
+  ### Советники
+    - Советники могут свободно высаживаться на передовую оперативную базу, однако не могут направляться на линию фронта.
 
-  ### Command Staff
-    - The Commander may never deploy unless the ship/installation has been overrun. 
-    - The Adjutant may deploy to the FOB and to the frontline with permission from the Commander
-    - The Engineering Officer may deploy freely to the FOB and never to the frontline.
-    - The Intelligence Officer may deploy freely and to the frontline, but not for combat purposes, only for gathering intelligence, communication to CIC, or to act as a squad leader.
-    - Staff Officers may only deploy to the FOB with permission from the Commander and if the FOB has, at a minimum, a working Phone and an Overwatch console.
+  ### Командный состав
+    - Командир не может высаживаться, кроме случаев, когда корабль или объект захвачен противником.
+    - Адъютант может высаживаться на передовую оперативную базу и направляться на линию фронта с разрешения Командира.
+    - Инженерный офицер может свободно высаживаться на передовую оперативную базу, однако не может направляться на линию фронта.
+    - Офицер разведки может свободно высаживаться, в том числе на линию фронта, но не для непосредственного участия в бою. Его задачами должны быть сбор разведывательной информации, поддержание связи с центром боевого управления или выполнение обязанностей командира отделения.
+    - Младшие офицеры могут высаживаться только на передовую оперативную базу, с разрешения Командира и при условии, что на базе как минимум работают телефон и консоль наблюдения.
 </Document>
