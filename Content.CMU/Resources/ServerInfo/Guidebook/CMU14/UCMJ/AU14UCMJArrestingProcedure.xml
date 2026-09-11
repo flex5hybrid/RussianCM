@@ -1,33 +1,33 @@
-﻿<Document>
-  # Arresting Procedures
+<Document>
+  # Порядок ареста
 
-  Should an Officer order an arrest for a crime, MPs/Law Enforcement must carry out the arrest; however, the alleged offence must still be properly investigated. If the arrest is determined to be false or a severe misuse of authority, the Officer who ordered it is to be charged with Prevarication.
+  Если офицер отдаёт приказ об аресте за преступление, ВП/правоохранительные органы обязаны выполнить арест; при этом предполагаемое правонарушение всё равно должно быть надлежащим образом расследовано. Если арест признаётся ложным или грубым злоупотреблением полномочиями, офицеру, приказавшему произвести арест, предъявляется обвинение в злоупотреблении правосудием.
 
-  ## Arresting a Suspect
-    - Take down the Suspect if they resist and securely restrain them.
-    - Non-lethal force must be used unless the suspect is armed with a lethal weapon and has shown intent to use it.
-    - Move the Suspect to a holding cell.
+  ## Арест подозреваемого
+    - Если подозреваемый сопротивляется, подавите сопротивление и надёжно зафиксируйте его.
+    - Следует применять нелетальную силу, если только подозреваемый не вооружён смертельно опасным оружием и не продемонстрировал намерение его применить.
+    - Доставьте подозреваемого в камеру временного содержания.
 
-  ## Command Arrests
-    When arresting a member of command (CO, XO, JOs, etc.), a facsimile must be sent to the Marshal Office as soon as the individual is charged, including a detailed report outlining the reasoning. The CMP must be present for the arrest if available. The command member must be read their appeal rights in full and, if they are the acting commander of the operation, are to be given 10 minutes to properly hand over command. This may be extended in emergency situations (EX. shipside emergencies).
+  ## Арест командного состава
+    При аресте члена командования (CO, XO, младшего офицера и т. п.) после предъявления обвинений необходимо как можно скорее отправить факс в Офис Маршала с подробным отчётом и обоснованием. CMP, если доступен, должен присутствовать при аресте. Члену командования необходимо полностью зачитать его права на апелляцию; если он является действующим командиром операции, ему предоставляется 10 минут на надлежащую передачу командования. В чрезвычайных обстоятельствах (например, при авариях на корабле) этот срок может быть увеличен.
 
-  ## Detainment Authority
-    The follow regulations apply in the regards of Command ordering detainment or being detained.
-      - All orders from the detained command personnel are null and void, and shall not be followed by anyone.
-      - Command may not order the arrest of someone on grounds of suspicion
-      - Command may not pardon anyone of a crime, unless for the sakes of an emergency, this does not apply to Capital crimes, or violent crimes (i.e. Murder)
-      - The CMO may order arrests on the grounds of Insanity if done so after a proper examination with documentation. Under no other circumstances shall a person be ordered to be arrested for Insanity.
+  ## Полномочия при задержании
+    Следующие правила применяются к приказам командования о задержании и к задержанию членов командования.
+      - Все приказы задержанного представителя командования становятся недействительными и не должны исполняться кем-либо.
+      - Командование не может приказывать арестовать лицо только на основании подозрения.
+      - Командование не может помиловать лицо за преступление, кроме случаев чрезвычайной необходимости. Это исключение не распространяется на капитальные или насильственные преступления (например, убийство).
+      - CMO может распорядиться об аресте по основанию невменяемости только после надлежащего обследования с документированием результатов. Ни при каких иных обстоятельствах арест по основанию невменяемости не допускается.
 
-  ## Do Not Revive Orders
-    The follow regulations apply for DNR orders issued by MPs or Command
-      - DNRs may not be issued by the XO or CO without proper documentation received from HighComm.
-      - CO or XO may request for a DNR through HighComm.
-      - If a person requests a DNR from the CMO for themselves and it is approved, it must be followed by law, chargeable by VoL (major crimes).
+  ## Приказы DNR («не реанимировать»)
+    Следующие правила применяются к приказам DNR, выданным ВП или командованием.
+      - XO или CO не могут выдавать DNR без надлежащих документов, полученных от Высшего командования.
+      - CO или XO могут запросить DNR через Высшее командование.
+      - Если лицо просит CMO выдать DNR самому себе и CMO одобряет его, приказ обязателен к исполнению по закону; нарушение может квалифицироваться как VoL (тяжкое преступление).
 
-  ## Field Arrests
-    These refer to arrests performed in the area of operations.
-      - Anyone may detain personnel of their faction that commit a major or capital crime, but must detain personnel of their faction by orders of the MP/Law Enforcement, commander, or any officer.
-      - Anyone may detain personnel deploying unauthorized, even without orders to do so.
-      - Personnel detained should be passed onto the MP/Law Enforcement or an Officer in a secure area when possible.
-      - MPs/Law Enforcement MAY leave the FOB to detain or arrest members of their faction who have committed any offense, but must disengage and return to the FOB if attacked by anyone other than the suspect they are pursuing.
+  ## Полевые аресты
+    Это аресты, проводимые в районе операций.
+      - Любое лицо может задержать представителя своей фракции, совершившего тяжкое или капитальное преступление, однако по приказу ВП/правоохранительных органов, командира или любого офицера оно обязано задержать представителя своей фракции.
+      - Любое лицо может задержать персонал, осуществляющий несанкционированное развёртывание, даже без отдельного приказа.
+      - Задержанного при возможности следует передать ВП/правоохранительным органам либо офицеру в безопасной зоне.
+      - ВП/правоохранительные органы МОГУТ покидать FOB, чтобы задержать или арестовать члена своей фракции за любое правонарушение, но обязаны прекратить преследование и вернуться на FOB, если подверглись нападению со стороны кого-либо, кроме преследуемого подозреваемого.
 </Document>

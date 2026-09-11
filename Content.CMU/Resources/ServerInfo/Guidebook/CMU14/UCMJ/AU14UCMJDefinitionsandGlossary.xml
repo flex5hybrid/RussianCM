@@ -1,68 +1,68 @@
-﻿<Document>
-  # Definitions and Glossary
+<Document>
+  # Определения и глоссарий
 
 
-  ## Prisoner of War (POW)
-    POWs are defined as anyone who is a members of a nation's armed forces or in a militia with all of these four distinctions:
-    - Command structure.
-    - Distinctive signs or uniform.
-    - Carrying arms openly.
-    - Following laws of war.
+  ## Военнопленный (POW)
+    Военнопленным считается лицо, являющееся членом вооружённых сил государства либо ополчения, обладающего всеми четырьмя признаками:
+    - Структура командования.
+    - Отличительные знаки или униформа.
+    - Открытое ношение оружия.
+    - Соблюдение законов войны.
 
-  ## Commander
-    The leader of the faction, interchangeable with the Acting Commander.
+  ## Командир
+    Руководитель фракции; термин взаимозаменяем с «исполняющим обязанности командира».
 
-    ## Adjutant
-May be reffered to as the XO, is the 2nd in command of the operation.
+  ## Адъютант
+    Может обозначаться как XO; второе лицо в командовании операцией.
 
-  ## Acting Commander
-    The individual acting in place of the Commander holds full command authority and is vested with all powers of the Commander for the duration of their appointment.
+  ## Исполняющий обязанности командира
+    Лицо, временно действующее вместо Командира, обладает всей полнотой командных полномочий и всеми правами Командира на срок своего назначения.
 
-  ## Command Staff
-    Personnel holding senior leadership positions responsible for planning, oversight, and command of operations, including the Commander and subordinate officers.
+  ## Командный состав
+    Личный состав, занимающий старшие руководящие должности и отвечающий за планирование, надзор и командование операциями, включая Командира и подчинённых офицеров.
 
-  ## Delegated Command
-    The temporary transfer of authority from a superior officer to a subordinate.
+  ## Делегированное командование
+    Временная передача полномочий старшим офицером подчинённому.
 
-  ## Area of Operations (AO)
-    The designated zone in which operations are being conducted. This is considered anywhere outside of your faction's ship/installation.
+  ## Район операций (AO)
+    Установленная зона проведения операции. Ею считается любая территория за пределами корабля/объекта вашей фракции.
 
-  ## Hostile Personnel
-    Any individual or group demonstrating intent or capability to inflict harm on personnel, civilians or objectives.
+  ## Враждебный персонал
+    Любое лицо или группа, демонстрирующие намерение или способность причинить вред личному составу, гражданским лицам или объектам.
 
-  ## Non-Combatant
-    Individuals not actively participating in hostilities, generally civilians.
+  ## Некомбатант
+    Лицо, не принимающее активного участия в боевых действиях; как правило, гражданское лицо.
 
-  ## Protected Persons
-    Civilians, medical personnel, surrendering combatants and any individual otherwise safeguarded under the laws of war.
+  ## Защищаемые лица
+    Гражданские лица, медицинский персонал, сдающиеся комбатанты и любые иные лица, защищённые законами войны.
 
-  ## Lethal Force
-    Force intended or reasonably expected to cause death or serious bodily harm.
+  ## Летальная сила
+    Сила, предназначенная для причинения смерти или тяжкого вреда здоровью либо разумно ожидаемо способная их причинить.
 
-  ## Non-Lethal Force
-    Force intended to incapacitate or compel compliance without causing death. Less-than-lethal weapons that still deal minor amounts of damage such as baton rounds are counted as Non-Lethal force.
+  ## Нелетальная сила
+    Сила, предназначенная для обезвреживания или принуждения к подчинению без причинения смерти. Менее летальное оружие, которое всё же наносит небольшой урон, например дубинные боеприпасы, считается нелетальной силой.
 
-  ## Secure Area
-    Any location defended by your faction that has at least one full line of fortifications or five or more posted guards.
+  ## Безопасная зона
+    Любое защищаемое вашей фракцией место, имеющее как минимум одну сплошную линию укреплений либо пять или более выставленных охранников.
 
-  ## Personnel
-    All members of the applicable faction.
+  ## Личный состав
+    Все представители соответствующей фракции.
 
-  ## Auxiliary Staff/Support Crew
-    Non combat roles that provide logistical, police, medical, or engineering support.
+  ## Вспомогательный персонал / экипаж поддержки
+    Небоевые роли, обеспечивающие логистическую, полицейскую, медицинскую или инженерную поддержку.
 
-  ## Flight Crew
-    Pilots and Dropship Crew Chiefs.
+  ## Лётный экипаж
+    Пилоты и бортовые начальники десантных кораблей.
 
-  ## Third-Party Personnel
-    Individuals or groups not affiliated with the primary factions (OPFOR/GOVFOR/CLF) involved in the operation.
+  ## Персонал третьих сторон
+    Лица или группы, не относящиеся к основным фракциям (OPFOR/GOVFOR/CLF), участвующим в операции.
 
-  ## Combat Information Center (CIC)
-    The command and control hub of a ship or installation.
+  ## Боевой информационный центр (CIC)
+    Центр управления и командования корабля или объекта.
 
-  ## Special Weapon
-    Any weapon not issued to general members of the faction, usually acquired from the special weapons vendor or ASRS.
+  ## Специальное оружие
+    Любое оружие, которое не выдаётся рядовым членам фракции и обычно приобретается у поставщика специального оружия или через ASRS.
 
-  ## Heavy Weapon
-    Any weapon thats does not fire a standard rifle, pistol, or smg round. Or uses non-standard pistol, rifle, or smg magazines, for example box magazines on an L/HMG. This includes weapons that fire High Explosive munitions like rockets or grenades. This does not include HEAP magazines.
+  ## Тяжёлое оружие
+    Любое оружие, не использующее стандартный винтовочный, пистолетный или пистолет-пулемётный боеприпас, либо использующее нестандартные магазины для таких боеприпасов, например короба для L/HMG. Сюда относится оружие, стреляющее фугасными боеприпасами, например ракетами или гранатами. Магазины HEAP к этой категории не относятся.
 </Document>

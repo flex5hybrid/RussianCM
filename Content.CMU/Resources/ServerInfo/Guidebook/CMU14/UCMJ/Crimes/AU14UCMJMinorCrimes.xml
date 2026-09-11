@@ -1,47 +1,47 @@
-﻿<Document>
-  # Minor Crimes
-    These crimes are of low severity and can alternatively be punished with an NJP.
+<Document>
+  # Мелкие преступления
+    Эти преступления имеют низкую степень тяжести и могут вместо ареста наказываться NJP.
 
-  ## Failure to Follow Procedure
-    Failing to follow the regulations found in the Standard Operating Procedure.
-      - 10 Minutes, equipment confiscation where relevant.
+  ## Несоблюдение процедур
+    Нарушение правил, установленных Стандартными операционными процедурами.
+      - 10 минут, а при необходимости — конфискация оборудования.
 
-  ## Failure to Attend Combative Briefing
-    Failing to attend briefing as a combative personnel (Ex., squad members, vehicle crew, intel personnel) without a valid reason (waiting in the requisitions line, gearing up after late wake-up, still equipping weapon systems to a vehicle, etc)
-      - 5 Minutes
+  ## Неявка на боевой брифинг
+    Неявка на брифинг боевого персонала (например, членов отрядов, экипажей техники, разведывательного персонала) без уважительной причины (ожидание в очереди снабжения, экипировка после позднего пробуждения, незавершённая установка вооружения на транспорт и т. п.).
+      - 5 минут.
 
-  ## Smoking in Medical Areas
-    Smoking in areas designated for use by medical personnel, such as the entire medbay and surgical rooms.
+  ## Курение в медицинских зонах
+    Курение в помещениях, предназначенных для медицинского персонала, например во всём медблоке и операционных.
       - NJP
 
-  ## Hooliganism
-    Behaviour that is generally disruptive to the ship or installation and its personnel, which is classified as low-level shenanigans not deserving of more severe punishment. Things such as excessive window knocking, force-feeding or failing to conduct oneself properly during the briefing, such as climbing the Briefing overview.
-      - 6 minutes.
+  ## Хулиганство
+    Поведение, нарушающее работу корабля/объекта и мешающее его персоналу, но относящееся к мелким выходкам, не заслуживающим более строгого наказания. Например, чрезмерный стук по окнам, насильственное кормление или неподобающее поведение во время брифинга, включая залезание на конструкцию обзора брифинга.
+      - 6 минут.
 
-  ## Trespassing
-    Unauthorised access to an area which a person does not normally have access to, or without command/superior approval.
-      - 9 minutes.
+  ## Незаконное проникновение
+    Несанкционированный доступ в зону, к которой лицо обычно не имеет доступа, либо вход без разрешения командования/начальника.
+      - 9 минут.
 
-  ## Intoxication
-    To consume alcohol, marijuana, or other substances, such as drugs, resulting in being mentally or physically impaired.
-      - 10 minutes, extended until the person is no longer impaired.
+  ## Опьянение
+    Употребление алкоголя, марихуаны или иных веществ, включая наркотики, в результате чего нарушаются умственные или физические способности.
+      - 10 минут с продлением до прекращения состояния опьянения.
 
-  ## Theft
-    To take items (or property) from another person or entity without their express permission, or to retain possession of items that have been taken without permission. This includes the removal of vendors from department areas without permission.
-      - 10 minutes, and the item(s) returned to the owner for minor items (Vendors, food, clothing).
-      - 20 minutes, and the item(s) returned to the owner for major items (Vehicles, weaponry, communication devices, ammunition)
+  ## Кража
+    Присвоение предметов (или имущества) другого лица либо организации без прямого разрешения или сохранение у себя предметов, изъятых без разрешения. Включает перемещение торговых автоматов из отделов без разрешения.
+      - 10 минут и возврат предметов владельцу для незначимого имущества (торговые автоматы, еда, одежда).
+      - 20 минут и возврат предметов владельцу для значимого имущества (транспорт, оружие, средства связи, боеприпасы).
 
-  ## Disrespecting a Superior
-    Using offensive names or being directly disrespectful to anyone of a higher rank or position.
+  ## Неуважение к старшему
+    Оскорбительные обращения или прямое неуважение к лицу более высокого звания либо должности.
       - NJP
 
-  ## Insubordination
-    To ignore or not execute the lawful orders of higher-ranking personnel.
-      - 12 minutes.
+  ## Неподчинение
+    Игнорирование или неисполнение законных приказов персонала более высокого звания.
+      - 12 минут.
 
-  ## False Testimony
-    To intentionally and willingly lie to an MP/Law Enforcement Officer, or deputised officer, during a criminal investigation with the intent to disrupt said investigation.
-      - 5 minutes, in relation to a minor crime.
-      - 15 minutes, in relation to a major crime.
-      - 20 minutes, in relation to a capital crime.
+  ## Ложные показания
+    Умышленная и сознательная ложь сотруднику ВП/правоохранительных органов либо уполномоченному сотруднику в ходе уголовного расследования с целью помешать ему.
+      - 5 минут, если расследуется мелкое преступление.
+      - 15 минут, если расследуется тяжкое преступление.
+      - 20 минут, если расследуется капитальное преступление.
 </Document>

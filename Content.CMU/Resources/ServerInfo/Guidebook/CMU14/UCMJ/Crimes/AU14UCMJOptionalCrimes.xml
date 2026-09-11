@@ -1,21 +1,21 @@
-﻿<Document>
-  # Optional Crimes
-    These crimes can be added to existing charges where relevant.
+<Document>
+  # Дополнительные преступления
+    Эти обвинения могут добавляться к уже имеющимся, когда это применимо.
 
-  ## Resisting Arrest
-    To resist the Military Police's lawful order, arrest or search.
-      - 5 minutes, refusing to comply with a lawful search or arrest.
-      - 10 minutes, resisting a legal arrest by fleeing or using force.
+  ## Сопротивление аресту
+    Сопротивление законному распоряжению, аресту или обыску Военной полиции.
+      - 5 минут за отказ подчиниться законному обыску или аресту.
+      - 10 минут за сопротивление законному аресту путём побега или применения силы.
 
-  ## Aiding and Abetting
-    Assisting others in committing a crime, directly or indirectly, or encouraging them to commit one. Any person who aids and abets is required to be informed of the crimes of the person they aided.
-      - Same punishment as the crime committed.
+  ## Пособничество
+    Прямая или косвенная помощь другим лицам в совершении преступления либо склонение их к совершению преступления. Пособнику необходимо сообщить, в каких преступлениях обвиняется лицо, которому он помогал.
+      - То же наказание, что и за совершённое преступление.
 
-  ## Disorderly Conduct in Confinement
-    To cause disruption in a significant manner while in Brig and under arrest. This can be added on to any charge.
-      - 7 minutes.
+  ## Нарушение порядка в заключении
+    Существенное нарушение порядка во время нахождения в бриге под арестом. Может добавляться к любому обвинению.
+      - 7 минут.
 
-  ## Dereliction of Duty
-    Failure to salute an officer of higher rank when told or refusal to salute.
+  ## Ненадлежащее исполнение обязанностей
+    Невыполнение воинского приветствия офицеру более высокого звания после требования либо отказ от приветствия.
       - NJP.
 </Document>

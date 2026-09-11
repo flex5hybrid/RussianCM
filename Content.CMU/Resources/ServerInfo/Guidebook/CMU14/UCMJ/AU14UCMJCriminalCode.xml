@@ -1,12 +1,12 @@
-﻿<Document>
-  # Criminal Code
+<Document>
+  # Уголовный кодекс
 
-    The Criminal Code outlines offenses and punishments under the Uniform Code of Military Justice. Below you will find a list of crimes divided by severity.
+    Уголовный кодекс определяет правонарушения и наказания в рамках Единого кодекса военной юстиции. Ниже приведён список преступлений, разделённых по степени тяжести.
 
-  ## Categories
-    - [textlink="Optional Crimes" link="AU14UCMJOptionalCrimes"]
-    - [textlink="Minor Crimes" link="AU14UCMJMinorCrimes"]
-    - [textlink="Major Crimes" link="AU14UCMJMajorCrimes"]
-    - [textlink="Capital Crimes" link="AU14UCMJCapitalCrimes"]
-    - [textlink="Precautionary Charges" link="AU14UCMJPrecautionaryCharges"]
+  ## Категории
+    - [textlink="Дополнительные преступления" link="AU14UCMJOptionalCrimes"]
+    - [textlink="Мелкие преступления" link="AU14UCMJMinorCrimes"]
+    - [textlink="Тяжкие преступления" link="AU14UCMJMajorCrimes"]
+    - [textlink="Капитальные преступления" link="AU14UCMJCapitalCrimes"]
+    - [textlink="Превентивные основания" link="AU14UCMJPrecautionaryCharges"]
 </Document>

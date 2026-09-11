@@ -1,26 +1,26 @@
-﻿<Document>
-  # Uniform Code of Military Justice
+<Document>
+  # Единый кодекс военной юстиции
 
-    These are sets of laws and rules used by GOVFOR/OPFOR and all relevant military factions.
+    Это свод законов и правил, применяемый GOVFOR/OPFOR и всеми соответствующими военными фракциями.
 
-  ### Basic Principles
-    - All personnel are required to both enforce the law and abide by it.
-    - MP/Law Enforcement must investigate reported crimes; however, if an investigation determines the offence to be minor, it may be disregarded at their discretion.
-    - MP/Law Enforcement breaking the law in any capacity cannot be ignored.
-    - Charges are not to be applied to those who use force on others when defending themselves from illegal harm, so long as they defend themselves with proportional force. This also extends to the defense of others if they believe the others are in lethal danger.
-    - No person may serve more than thirty minutes in the brig for the total accumulation of their crimes at time of sentencing, unless on permanent confinement.
-    - Spirit of the Law: The laws are meant as intended by their spirit, not their exact wording.
-    - On Threats to break the Uniform Code of Military Justice: Threatening to commit a Major or Capital Crime such as Unauthorized Deployment or Muder may be charged as breaking the Law as long as it's credible that the law will be broken. In cases of threats to murder, charges are to be treated as Attempted Murder.
-    - Vicarious Prosecution: With the exclusion of capital crimes, actions resulting in Neglect of Duty or crimes resulting in major bodily harm, the Victim of the crime retains the right to drop charges and request MPs or other prosecuting parties to release the defendant. If the prosecuting party continues with the arrest, they may detain the defendant for up to ten minutes, and must write to Provost for approval on continuing the arrest. If the ten minute mark passes or Provost doesnt respond in time or rejects for the arrest to continue, they must be released.
+  ### Основные принципы
+    - Весь личный состав обязан как соблюдать закон, так и обеспечивать его исполнение.
+    - Военная полиция/правоохранительные органы обязаны расследовать заявленные преступления; однако, если расследование установит, что правонарушение является мелким, оно может быть оставлено без дальнейшего преследования по их усмотрению.
+    - Нарушение закона сотрудниками военной полиции/правоохранительных органов не может быть проигнорировано ни при каких обстоятельствах.
+    - Обвинения не предъявляются лицам, применившим силу для защиты себя от незаконного причинения вреда, если применённая сила была соразмерной. Это также распространяется на защиту других лиц, если имеются основания полагать, что им угрожает смертельная опасность.
+    - Совокупный срок содержания лица в бриге по всем преступлениям на момент вынесения приговора не может превышать тридцати минут, если не назначено постоянное заключение.
+    - Дух закона: законы должны применяться в соответствии с их смыслом и назначением, а не только с буквальной формулировкой.
+    - Угрозы нарушить Единый кодекс военной юстиции: угроза совершить тяжкое или капитальное преступление, например несанкционированное развёртывание или убийство, может рассматриваться как нарушение закона, если существует реальная вероятность исполнения угрозы. Угроза убийством в таком случае рассматривается как покушение на убийство.
+    - Отказ потерпевшего от преследования: за исключением капитальных преступлений, деяний, повлекших халатность при исполнении обязанностей, и преступлений, повлекших тяжкий вред здоровью, потерпевший вправе отказаться от обвинений и потребовать от ВП или иной стороны обвинения освободить обвиняемого. Если сторона обвинения продолжает арест, она может задерживать обвиняемого не более десяти минут и обязана обратиться к Провосту за разрешением продолжить арест. Если десять минут истекли, Провост не ответил вовремя либо отказал в продолжении ареста, лицо должно быть освобождено.
 
-  ## Categories
-    - [textlink="Criminal Code" link="AU14UCMJCriminalCode"]
-    - [textlink="Right To Appeal" link="AU14UCMJRightToAppeal"]
-    - [textlink="Non-Judicial Punishments" link="AU14UCMJNJP"]
-    - [textlink="Arresting Procedures" link="AU14UCMJArrestingProcedure"]
-    - [textlink="Law Rank Structure" link="AU14UCMJLawRankStructure"]
-    - [textlink="Definitions and Glossary" link="AU14UCMJDefinitionsandGlossary"]
+  ## Разделы
+    - [textlink="Уголовный кодекс" link="AU14UCMJCriminalCode"]
+    - [textlink="Право на апелляцию" link="AU14UCMJRightToAppeal"]
+    - [textlink="Внесудебные наказания" link="AU14UCMJNJP"]
+    - [textlink="Порядок ареста" link="AU14UCMJArrestingProcedure"]
+    - [textlink="Правовая иерархия" link="AU14UCMJLawRankStructure"]
+    - [textlink="Определения и глоссарий" link="AU14UCMJDefinitionsandGlossary"]
     - [textlink="DNR" link="AU14UCMJDNR"]
-    - [textlink="Executions" link="AU14UCMJExecutions"]
-    - [textlink="Geneva Convention" link="AU14UCMJGENCON"]
+    - [textlink="Казни" link="AU14UCMJExecutions"]
+    - [textlink="Женевская конвенция" link="AU14UCMJGENCON"]
 </Document>

@@ -1,31 +1,31 @@
-﻿<Document>
-  # Capital Crimes
-    These crimes are of extreme severity. All of these crimes will be punished by permanent confinement and demotion.
+<Document>
+  # Капитальные преступления
+    Эти преступления имеют крайнюю степень тяжести. Все они наказываются постоянным заключением и понижением в звании.
 
-  ## Jailbreak/Escape
-    To escape, assist in an escape, attempt escape, or be willfully and knowingly broken out of a cell.
+  ## Побег из брига / освобождение заключённого
+    Побег, содействие побегу, попытка побега либо сознательное согласие на незаконное освобождение из камеры.
 
-  ## Attempted Murder
-    Attempting to murder a person but failing to do so. If the evidence shows that the arrested person was clearly trying to kill someone with ill intent but failed in the action itself.
+  ## Покушение на убийство
+    Попытка убить человека, не доведённая до конца. Обвинение применяется, если доказательства ясно показывают, что задержанный со злым умыслом пытался убить другого человека, но не смог завершить действие.
 
-  ## Murder
-    Killing someone with malicious intent. This includes Synthetic units. The charge applies even if the victim is later revived.
+  ## Убийство
+    Умышленное убийство со злым умыслом. Включает синтетические единицы. Обвинение применяется даже если жертва впоследствии была реанимирована.
 
-  ## Terrorism
-    The use or threat of violence against non-combatants or critical infrastructure with the intent to intimidate, coerce, or achieve political, ideological, or religious objectives.
+  ## Терроризм
+    Применение или угроза применения насилия против некомбатантов либо критически важной инфраструктуры с целью запугивания, принуждения или достижения политических, идеологических либо религиозных целей.
 
-  ## Sedition
-    To engage in actions or refuse to follow orders to overthrow or usurp the legitimate command structure. Creating a massive threat to the ship without the knowledge and approval of the command falls under sedition.
+  ## Мятеж
+    Действия либо отказ исполнять приказы с целью свергнуть или присвоить законную структуру командования. Создание масштабной угрозы кораблю без ведома и одобрения командования также подпадает под мятеж.
 
-  ## Espionage
-    The covert collection of sensitive or classified information with the intent to distribute that information to an enemy force willingly.
+  ## Шпионаж
+    Тайный сбор чувствительной или секретной информации с намерением добровольно передать её вражеской силе.
 
-  ## Desertion
-    Refusing to carry out the duties essential to one’s post or abandoning one's post without authorisation, without intent to return. (Retreating from the planet when the FOB is breached is not Desertion; refusing to return when ordered is).
+  ## Дезертирство
+    Отказ выполнять обязанности, необходимые для своей должности, либо оставление поста без разрешения и без намерения вернуться. (Отступление с планеты при прорыве FOB не является дезертирством; отказ вернуться после приказа — является.)
 
-  ## Breaking the Geneva Convention
-    Breaking one or more of the articles of the Geneva Convention.
+  ## Нарушение Женевской конвенции
+    Нарушение одной или нескольких статей Женевской конвенции.
 
-  ## Commander Authority for Termination
-    A capital crime in which the commander may order the immediate execution of a member of the military when said member has been deemed an unacceptable threat to the operation, unit and personnel under their command.
+  ## Полномочие Командира на казнь
+    Капитальное основание, позволяющее Командиру распорядиться о немедленной казни военнослужащего, если тот признан неприемлемой угрозой операции, подразделению и личному составу под командованием Командира.
 </Document>

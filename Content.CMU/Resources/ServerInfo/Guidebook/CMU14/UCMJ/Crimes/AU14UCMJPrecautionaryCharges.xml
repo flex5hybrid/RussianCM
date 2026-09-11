@@ -1,16 +1,16 @@
-﻿<Document>
-  # Precautionary Charges
-    These are used to confine people indefinitely, similar to capital crimes.
+<Document>
+  # Превентивные основания
+    Используются для содержания лиц на неопределённый срок, аналогично капитальным преступлениям.
 
-  ## Insanity
-    Acting in a manner that indicates the individual is not of sound mind and poses a danger to themselves or others (e.g., attempting suicide). This does not include individuals reporting harmless or non-disruptive experiences, such as having an “imaginary friend.”
-      - Confinement may be applied for up to 15 minutes. During this time, the individual is to be evaluated by a medical professional. Following evaluation, the individual is to be released or, if deemed unfit, discharged from the unit.
+  ## Невменяемость
+    Поведение, указывающее, что лицо не находится в здравом уме и представляет опасность для себя или окружающих (например, попытка самоубийства). Не относится к безвредным и не нарушающим порядок переживаниям, например рассказам о «воображаемом друге».
+      - Содержание может применяться на срок до 15 минут. За это время лицо должно быть обследовано медицинским специалистом. После обследования лицо освобождается либо, если признано непригодным, увольняется из подразделения.
 
-  ## Incompetence for Duty
-    A status applied to an arrested military member charged solely with the following capital crimes: Attempted Murder, Desertion, Espionage, or Jailbreak. This status may not be applied to any other capital offences.
-      - The individual will be stripped of rank and military equipment and discharged from the unit.
+  ## Непригодность к службе
+    Статус, применяемый к арестованному военнослужащему, обвиняемому исключительно в одном из следующих капитальных преступлений: покушение на убийство, дезертирство, шпионаж или побег из брига. К другим капитальным преступлениям этот статус не применяется.
+      - Лицо лишается звания и военного снаряжения и увольняется из подразделения.
 
-  ## Prisoner of War
-    Any detained combatant as defined in the [textlink="Definitions and Glossary" link="AU14UCMJDefinitionsandGlossary"].
-      - Discretionary confinement, usually permanent
+  ## Военнопленный
+    Любой задержанный комбатант, соответствующий определению из [textlink="Определения и глоссарий" link="AU14UCMJDefinitionsandGlossary"].
+      - Срок содержания определяется по усмотрению, обычно постоянный
 </Document>

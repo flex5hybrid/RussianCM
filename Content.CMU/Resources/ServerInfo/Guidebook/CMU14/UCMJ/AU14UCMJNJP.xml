@@ -1,12 +1,12 @@
-﻿<Document>
-  # Non-Judicial Punishments
-    - Non-Judicial Punishments (NJPs) are disciplinary measures used to resolve minor offenses without arresting personnel.
-    - Any Non-Commissioned Officer (Corporal+) or higher may issue an NJP.
-    - An NJP may not be used in the place of an arrest for anything but minor or optional offenses.
+<Document>
+  # Внесудебные наказания
+    - Внесудебные наказания (NJP) — дисциплинарные меры для разрешения мелких нарушений без ареста личного состава.
+    - Любой унтер-офицер (капрал и выше) либо старший по званию может назначить NJP.
+    - NJP может заменять арест только за мелкие или дополнительные правонарушения.
 
-  ##General usage
-    - NJPs should not risk the person's health.
-    - NJPs cannot take longer than the original sentence, or a 10 minute brig timer if none exists.
-    - If the NJP offer is refused, they are to serve the original sentence, or a 10 minute brig timer if none exists.
-    - Accepting an NJP waives the right to appeal.
+  ## Общее применение
+    - NJP не должно подвергать здоровье лица риску.
+    - Продолжительность NJP не может превышать исходный срок наказания либо 10 минут брига, если исходный срок не установлен.
+    - Если предложенное NJP отклонено, лицо отбывает исходный срок наказания либо 10 минут брига, если исходный срок не установлен.
+    - Принятие NJP означает отказ от права на апелляцию.
 </Document>
