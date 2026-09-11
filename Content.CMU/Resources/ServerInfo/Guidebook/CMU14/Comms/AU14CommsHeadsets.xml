@@ -1,191 +1,123 @@
 <Document>
   # Полевые гарнитуры
 
-  Your headset is the radio you were issued, the one in your ears slot, and for most roles it is the only radio you will ever touch. This page covers what it does, what it will not do, and the one thing about it that gets people killed.
+  Гарнитура — выданная вам личная радиостанция в слоте ушей. Для большинства ролей это единственное средство радиосвязи, которым вы будете пользоваться. Здесь описано, что она умеет, чего не умеет и какая её особенность чаще всего приводит к проблемам.
 
   <Box>
-    <GuideEntityEmbed Entity="AU14HeadsetGovforMarineFTL" Caption="Squad Headset"/>
-    <GuideEntityEmbed Entity="AU14HeadsetGovforCommand" Caption="Command Headset"/>
-    <GuideEntityEmbed Entity="AU14CLFHeadset" Caption="CLF Earpiece"/>
+    <GuideEntityEmbed Entity="AU14HeadsetGovforMarineFTL" Caption="Гарнитура отряда"/>
+    <GuideEntityEmbed Entity="AU14HeadsetGovforCommand" Caption="Командная гарнитура"/>
+    <GuideEntityEmbed Entity="AU14CLFHeadset" Caption="Наушник CLF"/>
   </Box>
 
-  ## Talking on it
+  ## Передача сообщений
 
-  Wear it in your ears slot, then type a colon, the letter h, a space, and what you want to say:
+  Наденьте гарнитуру в слот ушей и введите двоеточие, букву h, пробел и сообщение:
 
-  [color=#a4885c]:h Contact front, wait out.[/color]
+  [color=#a4885c]:h Контакт спереди, ожидайте.[/color]
 
-  That goes out on the headset's default net. Most headsets carry more than one. Examine yours to see which, and which letter reaches each:
+  Сообщение уйдёт в основную сеть гарнитуры. Большинство гарнитур имеют несколько сетей. Осмотрите свою, чтобы увидеть доступные сети и их буквы:
 
-  - [color=#a4885c]:v[/color] for command, if you have the command key.
-  - [color=#a4885c]:a[/color] for Alpha, if you have the Alpha key.
+  - [color=#a4885c]:v[/color] — командная сеть, если есть командный ключ.
+  - [color=#a4885c]:a[/color] — сеть Альфа, если есть ключ Альфы.
 
-  A headset can only use a net it holds the key for, and you cannot fit keys in the field. If you need a net you do not have, borrow somebody's handset. There is no other way.
+  Гарнитура может использовать только сеть, ключ которой уже установлен. Добавить ключ в полевых условиях невозможно. Если нужна отсутствующая сеть, воспользуйтесь чьей-либо телефонной трубкой.
 
-  Your name does not go out on the air. Everyone on the net, friendly or otherwise, sees your callsign instead. Talking face to face is unaffected.
+  В эфир передаётся не ваше имя, а позывной. Это видят и союзники, и противники. Обычная речь лицом к лицу не меняется.
 
-  ## The thing that gets people killed
+  ## Особенность, из-за которой пропадает связь
 
-  A headset is not a phone. On its own it reaches nobody.
+  Гарнитура — не телефон. Сама по себе она ни до кого не достаёт.
 
-  Combat nets are [bold]anchor-gated[/bold]: your headset only works while it is standing near something that holds the net up. Any of these will do it:
+  Боевые сети [bold]зависят от ретрансляторов[/bold]: гарнитура работает только рядом с объектом, поддерживающим эту сеть. Подойдут:
 
-  - A powered AN/PRC worn by a trained operator, usually your Fireteam Leader.
-  - A deployed retransmission station.
-  - A command-post antenna mast.
-  - A powered shipboard communications array.
-  - A vehicle radio, covering little more than the hull it is bolted into.
-  - A CLF base station or relay set, staked down, for CLF nets.
-  - Any mast or array the CLF have spliced a tap into, again for CLF nets.
+  - Включённая AN/PRC на подготовленном операторе, обычно Командире боевой группы.
+  - Развёрнутая ретрансляционная станция.
+  - Антенная мачта командного пункта.
+  - Включённый корабельный коммуникационный массив.
+  - Бортовая радиостанция техники, покрывающая в основном её корпус.
+  - Закреплённая базовая станция или ретранслятор CLF для сетей CLF.
+  - Любая мачта или массив, куда CLF установили врезку, также только для сетей CLF.
 
-  With none of those in reach your net is not weak. It is dead. You will speak and nothing at all will happen.
+  Если ни один источник не находится в радиусе, сеть не становится слабой — она полностью перестаёт работать. Вы отправите сообщение, но никто его не получит.
 
-  Walk away from whoever carries the pack and you have walked off the net. That is the whole of it.
+  Уйдя от носителя ранцевой радиостанции, вы можете выйти из зоны сети.
 
-  Colony and civilian channels are the exception - nothing anchors them, they work anywhere, and anybody at all can listen to them.
+  Исключение — колониальный и гражданские каналы. Они не требуют ретрансляторов, работают везде и могут прослушиваться кем угодно.
 
-  ### How near is near enough
+  ### Какое расстояние считается допустимым
 
   <Table Columns="2" MinForcedColumnWidth="120">
-    <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Distance from the anchor[/bold]</Box>
-    </ColorBox>
-    <ColorBox Color="#263238">
-      <Box Margin="4">[bold]What you get[/bold]</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">0-30 tiles</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Clear both ways.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">30-45 tiles</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Readable, but words go missing.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">Beyond 45 tiles</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Nothing.</Box>
-    </ColorBox>
+    <ColorBox Color="#263238"><Box Margin="4">[bold]Расстояние от ретранслятора[/bold]</Box></ColorBox>
+    <ColorBox Color="#263238"><Box Margin="4">[bold]Результат[/bold]</Box></ColorBox>
+    <ColorBox><Box Margin="4">0–30 тайлов</Box></ColorBox><ColorBox><Box Margin="4">Чистая связь в обе стороны.</Box></ColorBox>
+    <ColorBox><Box Margin="4">30–45 тайлов</Box></ColorBox><ColorBox><Box Margin="4">Разборчиво, но часть слов теряется.</Box></ColorBox>
+    <ColorBox><Box Margin="4">Более 45 тайлов</Box></ColorBox><ColorBox><Box Margin="4">Связи нет.</Box></ColorBox>
   </Table>
 
-  Those numbers assume a whip antenna at normal transmit power. Turning an operator's set up, or fitting a mast antenna and standing still, buys more. Turning it down buys less. A command-post mast is worth about 75 tiles on its own, and a powered shipboard array covers its whole ship, every deck.
+  Эти значения предполагают штыревую антенну и нормальную мощность передатчика. Повышенная мощность или мачтовая антенна в неподвижном состоянии увеличивают дальность; пониженная мощность уменьшает её. Мачта командного пункта сама по себе покрывает примерно 75 тайлов, а включённый корабельный массив — весь корабль на всех палубах.
 
-  Everything else reaches one level up or down and no further, so a tunnel or a lower deck normally wants its own relay.
+  Все остальные источники покрывают только один уровень выше и ниже, поэтому тоннелю или нижней палубе обычно требуется отдельный ретранслятор.
 
-  ## Clipped earpieces
+  ## Закрепляемые наушники
 
-  Some people are not issued a headset at all. The CLF wear a [bold]concealable earpiece[/bold] instead, and it works differently in ways worth knowing.
+  Некоторые роли не получают обычную гарнитуру. CLF используют [bold]скрываемый наушник[/bold], закрепляемый на одежде.
 
-  An earpiece is a uniform accessory. Clip it to a garment you are wearing and it puts the net straight into your ears - there is no headset in your ears slot to examine, and nothing an enemy can see. Take the garment off, or pull the earpiece out of it, and you are off the net immediately.
+  Наушник — аксессуар формы. Закрепите его на надетой одежде, и сеть будет поступать прямо в уши: отдельной гарнитуры в слоте ушей нет и противник её не увидит. Снимите одежду или отсоедините наушник — связь немедленно пропадёт.
 
-  It will clip to anything that takes accessories, and it works from any of them: a jumpsuit, a vest, a militia coat, webbing, body armour. What matters is that the garment is actually being worn, not which slot it sits in.
+  Его можно закрепить на любом предмете, поддерживающем аксессуары: комбинезоне, жилете, куртке ополчения, разгрузке или броне. Важно лишь, чтобы предмет одежды был надет.
 
-  Otherwise it behaves as a headset does. [color=#a4885c]:h[/color] transmits on the cell net, the colony channel is there as well, and both are subject to everything above about anchors and range. An earpiece answers a radio check like any other station, so an operator running one will see the whole cell come back even when nobody in it carries a pack.
+  В остальном он ведёт себя как обычная гарнитура. [color=#a4885c]:h[/color] передаёт в сеть ячейки, колониальный канал также доступен, а правила ретрансляции и дальности остаются теми же. Наушник отвечает на RADIO CHECK как обычная станция, поэтому оператор увидит в отчёте всю ячейку, даже если ни у кого кроме него нет ранцевой радиостанции.
 
-## Радиоэлектронное подавление
+  ## Радиоэлектронное подавление
 
-  Enemy jammers cut into headset traffic. Inside a jammer field:
+  Вражеские глушилки нарушают работу гарнитур. Внутри поля помех:
 
-  - Nothing you send goes out at all.
-  - What comes in arrives broken.
-  - The closer the jammer, the worse both get.
+  - Исходящие сообщения полностью блокируются.
+  - Входящие сообщения приходят обрывками.
+  - Чем ближе источник помех, тем хуже связь.
 
-  Direct frequencies are jammed the same way. An AN/PRC in FH mode can still push traffic out of a jammer field; a headset cannot, and there is nothing you can do about it from the headset end except leave.
+  Прямые частоты глушатся так же. AN/PRC в режиме FH может передавать из зоны помех, гарнитура — нет; единственный способ восстановить передачу с гарнитуры — выйти из зоны глушения.
 
-  ## Direct frequencies
+  ## Прямые частоты
 
-  Some headsets hold one frequency of their own alongside their keyed nets. Transmit on it with [color=#a4885c]:x[/color].
+  Некоторые гарнитуры имеют одну собственную частоту помимо сетей с ключами. Передача на ней выполняется через [color=#a4885c]:x[/color].
 
-  A direct frequency:
+  Прямая частота:
 
-  - Belongs to no net and needs no key.
-  - Needs no anchor, mast or array.
-  - Is heard by anything tuned to the same number, including whoever finds it by accident or by searching for it.
+  - Не относится ни к какой именованной сети и не требует ключа.
+  - Не требует ретранслятора, мачты или массива.
+  - Слышна любому устройству на том же значении, включая тех, кто найдёт частоту случайно или сканированием.
 
-  To set one, right-click the headset, select [bold]Tune Frequency[/bold], and enter something between [color=#a4885c]30.000[/color] and [color=#a4885c]87.999[/color] MHz. The decimal point is optional, so [color=#a4885c]30750[/color] and [color=#a4885c]30.750[/color] are the same frequency.
+  Чтобы задать частоту, нажмите ПКМ по гарнитуре, выберите [bold]Tune Frequency[/bold] и введите значение от [color=#a4885c]30.000[/color] до [color=#a4885c]87.999[/color] MHz. Точка необязательна: [color=#a4885c]30750[/color] и [color=#a4885c]30.750[/color] — одна частота.
 
-  Without a relay, direct traffic is clear to 30 tiles, degraded to 50, and gone past that. A powered AN/PRC carrying the same frequency in a slot will bridge between users, as long as both of them are inside 50 tiles of the radio.
+  Без ретранслятора сигнал чистый до 30 тайлов, ухудшается до 50 и исчезает дальше. Включённая AN/PRC с той же частотой в слоте может связать пользователей, если оба находятся в пределах 50 тайлов от радиостанции.
 
-  [bold]Clear Tuned Frequency[/bold] empties it again. Headsets issued with a preset also offer [bold]Reset to Default Frequency[/bold].
+  [bold]Clear Tuned Frequency[/bold] очищает частоту. Гарнитуры с заводской предустановкой также имеют [bold]Reset to Default Frequency[/bold].
 
-  ## Using a net you do not have
+  ## Использование сети, которой нет в вашей гарнитуре
 
-  Squad leader headsets carry the squad and JTAC nets but not command. The way round it is somebody else's handset, normally the Fireteam Leader's.
+  Гарнитуры командиров отрядов содержат отрядную и JTAC-сеть, но не командную. Для выхода в отсутствующую сеть используйте чужую трубку, обычно Командира боевой группы.
 
-  - Stand within about [bold]two and a half tiles[/bold] of them or of a deployed radio.
-  - Alt-click the wearer or the radio.
-  - Select [bold]Take Handset[/bold].
-  - Transmit with [color=#a4885c]:r[/color].
+  - Встаньте примерно в [bold]двух с половиной тайлах[/bold] от носителя или развёрнутой радиостанции.
+  - Нажмите Alt+ЛКМ по носителю или радиостанции.
+  - Выберите [bold]Take Handset[/bold].
+  - Передавайте через [color=#a4885c]:r[/color].
 
-  While you hold it, anything you say out loud goes out on the net whether you meant it to or not. Whisper if you need to say something privately. Walk too far and the cord pulls out of your hand.
+  Пока трубка у вас в руке, обычная речь вслух также уходит в эфир, даже если вы этого не хотели. Для приватной фразы используйте шёпот. При удалении провод вырвет трубку из руки.
 
-  Handset traffic goes out under [bold]your[/bold] callsign, not the operator's.
+  Трафик трубки идёт под [bold]вашим[/bold] позывным, а не позывным оператора радиостанции.
 
-  ## When it does not work
+  ## Если не работает
 
   <Table Columns="2" MinForcedColumnWidth="120">
-    <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Symptom[/bold]</Box>
-    </ColorBox>
-    <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Что проверить[/bold]</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">Nobody answers on a combat net</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">There is no anchor in reach. This is the answer most of the time. Find the pack, the mast or the array.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">Traffic arrives in pieces</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">You are at the edge of coverage, or you are being jammed. Close the distance.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">AN/PRC traffic arrives as pure static</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">One of the two radios does not have matching COMSEC fill. Headsets do not use fill cards at all - only the AN/PRC does.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">A net is missing entirely</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Examine the headset. If the key is not in it, it never will be. Use a handset.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">[bold]No frequency set[/bold] on [color=#a4885c]:x[/color]</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Tune one first.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">Direct-frequency traffic goes nowhere</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Confirm both of you typed the same number, and that you are inside range of each other or of the bridging radio.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">An earpiece user hears nothing</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Confirm the earpiece is clipped into a garment they are actually wearing, then check coverage as above.</Box>
-    </ColorBox>
+    <ColorBox Color="#263238"><Box Margin="4">[bold]Симптом[/bold]</Box></ColorBox>
+    <ColorBox Color="#263238"><Box Margin="4">[bold]Что проверить[/bold]</Box></ColorBox>
+    <ColorBox><Box Margin="4">Никто не отвечает в боевой сети</Box></ColorBox><ColorBox><Box Margin="4">В радиусе нет ретранслятора. Найдите ранцевую радиостанцию, мачту или массив — это самая частая причина.</Box></ColorBox>
+    <ColorBox><Box Margin="4">Сообщения приходят обрывками</Box></ColorBox><ColorBox><Box Margin="4">Вы на границе зоны покрытия или под глушением. Сократите расстояние.</Box></ColorBox>
+    <ColorBox><Box Margin="4">Трафик AN/PRC приходит сплошным шумом</Box></ColorBox><ColorBox><Box Margin="4">У одной из радиостанций нет подходящего COMSEC-ключа. Гарнитуры не используют карты ключей — только AN/PRC.</Box></ColorBox>
+    <ColorBox><Box Margin="4">Нужная сеть полностью отсутствует</Box></ColorBox><ColorBox><Box Margin="4">Осмотрите гарнитуру. Если ключа нет, добавить его нельзя. Используйте трубку.</Box></ColorBox>
+    <ColorBox><Box Margin="4">[bold]No frequency set[/bold] при [color=#a4885c]:x[/color]</Box></ColorBox><ColorBox><Box Margin="4">Сначала настройте частоту.</Box></ColorBox>
+    <ColorBox><Box Margin="4">Трафик прямой частоты никуда не идёт</Box></ColorBox><ColorBox><Box Margin="4">Убедитесь, что оба ввели одинаковое значение и находятся в прямой дальности друг друга либо в радиусе связывающей AN/PRC.</Box></ColorBox>
+    <ColorBox><Box Margin="4">Пользователь скрытого наушника ничего не слышит</Box></ColorBox><ColorBox><Box Margin="4">Убедитесь, что наушник закреплён на действительно надетой одежде, затем проверьте покрытие.</Box></ColorBox>
   </Table>
 </Document>
