@@ -171,22 +171,20 @@ public abstract partial class SharedStationSpawningSystem : EntitySystem
                 if (entProtos == null || entProtos.Count == 0)
                     continue;
 
-                // CMU14 Begin
-                EntityUid? slotEnt = null;
-                StorageComponent? storage = null;
-                if (inventoryComp != null)
+                // Storage contents only exist if their target storage actually exists.
+                // Spawning before this check leaves loose orphan entities for loadouts
+                // whose storage slot is supplied by a different roundstart loadout.
+                if (inventoryComp == null ||
+                    !InventorySystem.TryGetSlotEntity(entity, slotName, out var slotEnt, inventoryComponent: inventoryComp) ||
+                    slotEnt == null ||
+                    !_storageQuery.TryComp(slotEnt.Value, out var storage))
                 {
-                    InventorySystem.TryGetSlotEntity(entity, slotName, out slotEnt, inventoryComponent: inventoryComp);
-
-                    if (slotEnt != null)
-                        _storageQuery.TryComp(slotEnt.Value, out storage);
+                    continue;
                 }
 
                 foreach (var entProto in entProtos)
                 {
                     var spawnedEntity = Spawn(entProto, coords);
-                    if (slotEnt == null || storage == null)
-                        continue;
 
                     if (TryComp(spawnedEntity, out ItemComponent? item))
                     {
@@ -196,7 +194,6 @@ public abstract partial class SharedStationSpawningSystem : EntitySystem
 
                     _storage.Insert(slotEnt.Value, spawnedEntity, out _, storageComp: storage, playSound: false);
                 }
-                // CMU14 End
             }
         }
 
