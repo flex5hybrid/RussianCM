@@ -13,8 +13,8 @@ namespace Content.IntegrationTests.CMU14.Maps;
 [TestFixture]
 public sealed class BosenmoriMapTest
 {
-    private static readonly ProtoId<GamePresetPrototype> DistressSignal = "DistressSignal";
-    private static readonly ProtoId<GameMapPrototype> Bosenmori = "BosenmoriBasho";
+    private const string DistressSignal = "DistressSignal";
+    private const string Bosenmori = "BosenmoriBasho";
 
     [Test]
     public async Task DistressMapLoadsWithPairedDirectionalProjections()
@@ -25,10 +25,10 @@ public sealed class BosenmoriMapTest
         await server.WaitAssertion(() =>
         {
             var prototypes = server.ResolveDependency<IPrototypeManager>();
-            var preset = prototypes.Index(DistressSignal);
+            var preset = prototypes.Index<GamePresetPrototype>(DistressSignal);
             Assert.That(preset.SupportedPlanets, Does.Contain("AUPlanetBosenmoriBasho"));
 
-            var mapPrototype = prototypes.Index(Bosenmori);
+            var mapPrototype = prototypes.Index<GameMapPrototype>(Bosenmori);
             var loader = server.System<MapLoaderSystem>();
             var options = DeserializationOptions.Default with { InitializeMaps = true, PauseMaps = true };
             Assert.That(loader.TryLoadMap(mapPrototype.MapPath, out var map, out var grids, options), Is.True);
