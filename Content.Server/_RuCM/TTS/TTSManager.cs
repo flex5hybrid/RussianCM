@@ -338,7 +338,7 @@ public sealed class TTSManager
 
         if (string.IsNullOrEmpty(apiToken))
         {
-            _sawmill.Error("TTS API token is empty");
+            _sawmill.Warning("TTS API token is empty; TTS is disabled");
             return false;
         }
 
