@@ -21,26 +21,33 @@ public sealed partial class RadioChannelPrototype : IPrototype
     public string LocalizedName => Loc.GetString(Name);
 
     /// <summary>
-    /// Single-character prefix to determine what channel a message should be sent to.
+    /// Upstream keycode kept in prototype data for compatibility/debugging.
+    /// RuCM-facing code should use <see cref="KeyCode"/> instead.
     /// </summary>
-    [DataField("keycode")]
-    public char KeyCode { get; private set; } = '\0';
+    [DataField("keycode"), ViewVariables(VVAccess.ReadOnly)]
+    public char CanonicalKeyCode { get; private set; } = '\0';
 
     /// <summary>
-    /// Optional RuCM-facing alias for <see cref="KeyCode"/>.
-    /// The canonical keycode remains unchanged so upstream CMU keycodes keep working.
+    /// Optional RuCM-facing keycode. When present, this is the primary keycode shown to players
+    /// and used by normal chat/UI code.
     /// </summary>
-    [DataField("localizedKeycode")]
+    [DataField("localizedKeycode"), ViewVariables(VVAccess.ReadOnly)]
     public char LocalizedKeyCode { get; private set; } = '\0';
 
+    /// <summary>
+    /// Player-facing keycode for this channel.
+    /// </summary>
     [ViewVariables(VVAccess.ReadOnly)]
-    public char DisplayKeyCode => LocalizedKeyCode == '\0' ? KeyCode : LocalizedKeyCode;
+    public char KeyCode => LocalizedKeyCode == '\0' ? CanonicalKeyCode : LocalizedKeyCode;
+
+    [ViewVariables(VVAccess.ReadOnly)]
+    public char DisplayKeyCode => KeyCode;
 
     public bool MatchesKeyCode(char keyCode)
     {
         var normalized = char.ToLowerInvariant(keyCode);
         return char.ToLowerInvariant(KeyCode) == normalized ||
-               LocalizedKeyCode != '\0' && char.ToLowerInvariant(LocalizedKeyCode) == normalized;
+               char.ToLowerInvariant(CanonicalKeyCode) == normalized;
     }
 
     /// <summary>
