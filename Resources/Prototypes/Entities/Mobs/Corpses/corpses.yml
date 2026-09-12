@@ -59,6 +59,34 @@
     - ResearchAssistantGear
     - ScientistGear
 
+# Security starting gear stores a flash and spare magazine in the player's
+# selected backpack. Random corpses don't get the normal player loadout that
+# supplies that backpack, so those storage items would otherwise spawn loose
+# and survive deletion of the corpse in entity lifecycle tests.
+- type: startingGear
+  id: SecurityCadetCorpseGear
+  parent: SecurityCadetGear
+  equipment:
+    back: ClothingBackpackSecurity
+
+- type: startingGear
+  id: SecurityOfficerCorpseGear
+  parent: SecurityOfficerGear
+  equipment:
+    back: ClothingBackpackSecurity
+
+- type: startingGear
+  id: DetectiveCorpseGear
+  parent: DetectiveGear
+  equipment:
+    back: ClothingBackpackSecurity
+
+- type: startingGear
+  id: WardenCorpseGear
+  parent: WardenGear
+  equipment:
+    back: ClothingBackpackSecurity
+
 - type: entity
   parent: SalvageHumanCorpse
   id: MobRandomSecurityCorpse
@@ -66,10 +94,10 @@
   components:
   - type: Loadout
     prototypes:
-    - SecurityCadetGear
-    - SecurityOfficerGear
-    - DetectiveGear
-    - WardenGear
+    - SecurityCadetCorpseGear
+    - SecurityOfficerCorpseGear
+    - DetectiveCorpseGear
+    - WardenCorpseGear
 
 - type: entity
   parent: SalvageHumanCorpse
