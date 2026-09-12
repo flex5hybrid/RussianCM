@@ -11,6 +11,7 @@
   components:
   - type: CMUDroneAndroid
     supportsModules: false
+  - type: CMUDroneDeletionGuard
   - type: CMUCombatDrone
     fireArcDegrees: 180
     repairAmount: 30
