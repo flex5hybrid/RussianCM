@@ -1,28 +1,28 @@
 ent-RMCJumpsuitTSEPA = униформа ПДСН
     .desc = Стандартная форма офицера ПДСН.
 
-ent-RMCJumpsuitMarineRoyal = {ent-AU14FatiguesDesertRMC}
-    .desc = {ent-AU14FatiguesDesertRMC.desc}
+ent-RMCJumpsuitMarineRoyal = пустынная полевая форма королевского морпеха
+    .desc = Стандартная полевая форма коммандос Королевской морской пехоты Империи Трёх Миров.
     .suffix = Заполнена
 
-ent-RMCJumpsuitMarineRoyalMK80 = {ent-AU14FatiguesDesertRMC}
-    .desc = {ent-AU14FatiguesDesertRMC.desc}
+ent-RMCJumpsuitMarineRoyalMK80 = пустынная полевая форма королевского морпеха
+    .desc = Стандартная полевая форма коммандос Королевской морской пехоты Империи Трёх Миров.
     .suffix = МК80
 
-ent-RMCJumpsuitMarineRoyalMedic = {ent-AU14FatiguesDesertRMC}
-    .desc = {ent-AU14FatiguesDesertRMC.desc}
+ent-RMCJumpsuitMarineRoyalMedic = пустынная полевая форма королевского морпеха
+    .desc = Стандартная полевая форма коммандос Королевской морской пехоты Империи Трёх Миров.
     .suffix = Медик
 
-ent-RMCJumpsuitMarineRoyalDropPouch = {ent-AU14FatiguesDesertRMC}
-    .desc = {ent-AU14FatiguesDesertRMC.desc}
+ent-RMCJumpsuitMarineRoyalDropPouch = пустынная полевая форма королевского морпеха
+    .desc = Стандартная полевая форма коммандос Королевской морской пехоты Империи Трёх Миров.
     .suffix = Сброс
 
-ent-RMCJumpsuitMarineRoyalTeamlead = {ent-AU14FatiguesDesertRMCTeamlead}
-    .desc = {ent-AU14FatiguesDesertRMCTeamlead.desc}
+ent-RMCJumpsuitMarineRoyalTeamlead = пустынная полевая форма командира группы королевских морпехов
+    .desc = Стандартная полевая форма коммандос Королевской морской пехоты Империи Трёх Миров. Обычно её носят сержанты и офицеры.
     .suffix = Заполнена
 
-ent-RMCJumpsuitMarineRoyalPVE = {ent-AU14FatiguesDesertRMC}
-    .desc = {ent-AU14FatiguesDesertRMC.desc}
+ent-RMCJumpsuitMarineRoyalPVE = пустынная полевая форма королевского морпеха
+    .desc = Стандартная полевая форма коммандос Королевской морской пехоты Империи Трёх Миров.
     .suffix = ПвЕ
 
 ent-RMCJumpsuitMarinePara = полевая форма королевского морпеха
