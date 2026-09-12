@@ -37,9 +37,6 @@ public sealed partial class XenoDespoilerAcidBarrageProjectileSystem : EntitySys
             _hive.SetSameHive(shooter, puddle);
 
         if (_lingeringQuery.TryComp(puddle, out var puddleComp))
-        {
             puddleComp.Caster = comp.Shooter;
-            Dirty(puddle, puddleComp);
-        }
     }
 }
