@@ -10,7 +10,7 @@ namespace Content.Shared.Radio.Components;
 /// <summary>
 ///     This component is by entities that can contain encryption keys
 /// </summary>
-[RegisterComponent, NetworkedComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class EncryptionKeyHolderComponent : Component
 {
     /// <summary>
@@ -41,17 +41,18 @@ public sealed partial class EncryptionKeyHolderComponent : Component
     /// <summary>
     ///     Combined set of radio channels provided by all contained keys.
     /// </summary>
-    [ViewVariables]
+    [ViewVariables, AutoNetworkedField]
     public HashSet<ProtoId<RadioChannelPrototype>> Channels = new();
 
     /// <summary>
     ///     This is the channel that will be used when using the default/department prefix (<see cref="SharedChatSystem.DefaultChannelKey"/>).
     /// </summary>
-    [DataField]
+    [DataField, AutoNetworkedField]
     public string? DefaultChannel;
 
     /// <summary>
     ///     Combined set of radio channels provided by all contained keys that are ReadOnly.
     /// </summary>
+    [AutoNetworkedField]
     public HashSet<ProtoId<RadioChannelPrototype>> ReadOnlyChannels = new();
 }
