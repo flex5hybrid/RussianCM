@@ -1,8 +1,8 @@
-ent-RMCPropTyrargoVehicleVTOL = {ent-VehicleBlackfootBase}
-    .desc = {ent-VehicleBlackfootBase.desc}
+ent-RMCPropTyrargoVehicleVTOL = AD-71E «Блэкфут»
+    .desc = Компактный СВВП-аппарат, предназначенный для многоуровневых операций.
     .suffix = Проп
-ent-RMCPropTyrargoVehicleVTOLCrashed = {ent-VehicleBlackfootBase}
-    .desc = {ent-VehicleBlackfootBase.desc}
+ent-RMCPropTyrargoVehicleVTOLCrashed = AD-71E «Блэкфут»
+    .desc = Компактный СВВП-аппарат, предназначенный для многоуровневых операций.
     .suffix = Проп, Разбит
 
 ent-RMCPropTyrargoVehicleATV = автоматизированное транспортное средство «Бизон»
