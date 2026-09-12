@@ -1,0 +1,52 @@
+- type: material
+  id: RuMCWoodComponentMaterial
+  stackEntity: RMCWoodComponent
+  name: деревянные части
+  icon: { sprite: _RuMC14/Production/Materials/components.rsi, state: wood-components }
+  price: 0.00133
+
+
+- type: stack
+  id: RuMCWoodComponentStack
+  name: деревянные части
+  icon: { sprite: _RuMC14/Production/Materials/components.rsi, state: wood-components }
+  spawn: RuMCWoodComponent
+  maxCount: 10
+
+- type: entity
+  abstract: true
+  parent: SheetMetalBase
+  id: RuMCComponentBase
+  components:
+    - type: Stack
+      count: 10
+    - type: Sprite
+      sprite: _RuMC14/Production/Materials/components.rsi
+    - type: Item
+      size: Normal
+      sprite: _RuMC14/Production/Materials/components.rsi
+
+- type: entity
+  parent: RuMCComponentBase
+  id: RuMCWoodComponent
+  name: деревянные части
+  description: Деревянные детали,вырезанные на столе кухонным ножем. Можно использовать для создания простых станков.
+  suffix: Filled
+  components:
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        CMSteel: 3750
+    - type: Stack
+      count: 10
+      stackType: RuMCWoodComponentStack
+      baseLayer: base
+      layerStates:
+        - wood-components
+        - wood-components
+        - wood-components
+        - wood-components
+    - type: Sprite
+      layers:
+        - state: wood-components
+          map: ["base"]

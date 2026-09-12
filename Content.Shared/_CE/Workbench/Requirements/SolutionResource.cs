@@ -1,0 +1,110 @@
+using Content.Shared._RMC14.Chemistry.Reagent;
+using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.Chemistry.Reagent;
+using Content.Shared.FixedPoint;
+using Robust.Shared.Prototypes;
+
+namespace Content.Shared._CE.Workbench.Requirements;
+
+public sealed partial class SolutionResource : CEWorkbenchCraftRequirement
+{
+    [DataField(required: true)]
+    public ProtoId<ReagentPrototype> Reagent = default!;
+
+    /// <summary>
+    /// How much impurity from other reagents is allowed?
+    /// </summary>
+    [DataField(required: true)]
+    public float Purity = 1f;
+
+    [DataField(required: true)]
+    public FixedPoint2 Amount = 1f;
+
+    [DataField]
+    public EntProtoId DummyEntityIcon = "CELiquidDropDummy";
+
+    public override bool CheckRequirement(IEntityManager entManager,
+        IPrototypeManager protoManager,
+        HashSet<EntityUid> placedEntities)
+    {
+        var solutionSys = entManager.System<SharedSolutionContainerSystem>();
+        foreach (var ent in placedEntities)
+        {
+            if (!solutionSys.TryGetDrawableSolution(ent, out var soln, out var solution))
+                continue;
+
+            var volume = solution.Volume;
+
+            if (volume < Amount)
+                continue;
+
+            foreach (var (id, quantity) in solution.Contents)
+            {
+                if (id.Prototype != Reagent)
+                    continue;
+
+                //Purity check
+                if (quantity / volume < Purity)
+                    continue;
+
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public override void PostCraft(IEntityManager entManager, IPrototypeManager protoManager, HashSet<EntityUid> placedEntities)
+    {
+        var solutionSys = entManager.System<SharedSolutionContainerSystem>();
+        foreach (var ent in placedEntities)
+        {
+            if (!solutionSys.TryGetDrawableSolution(ent, out var soln, out var solution))
+                continue;
+
+            var volume = solution.Volume;
+            if (volume < Amount)
+                continue;
+
+            foreach (var (id, quantity) in solution.Contents)
+            {
+                if (id.Prototype != Reagent)
+                    continue;
+
+                //Purity check
+                if (quantity / volume < Purity)
+                    continue;
+
+                solutionSys.Draw(ent, soln.Value, Amount);
+                return;
+            }
+        }
+    }
+
+    public override double GetPrice(IEntityManager entManager, IPrototypeManager protoManager)
+    {
+        var reagentSystem = entManager.System<RMCReagentSystem>();
+
+if (!reagentSystem.TryIndex(Reagent, out var indexedReagent))
+    return 0;
+
+return indexedReagent.PricePerUnit * (double)Amount;
+    }
+
+public override string GetRequirementTitle(IPrototypeManager protoManager)
+{
+    return string.Empty;
+}
+
+public override Color GetRequirementColor(IPrototypeManager protoManager)
+{
+    return Color.White;
+}
+
+    public override EntityPrototype? GetRequirementEntityView(IPrototypeManager protoManager)
+    {
+        if (!protoManager.TryIndex(DummyEntityIcon, out var indexedEnt))
+            return null;
+        return indexedEnt;
+    }
+}
