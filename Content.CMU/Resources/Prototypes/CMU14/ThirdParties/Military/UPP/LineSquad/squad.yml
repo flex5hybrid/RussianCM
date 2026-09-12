@@ -1,0 +1,21 @@
+- type: entity
+  parent: SquadBase
+  id: CMUSquadUPPLine
+  name: UPP Line Infantry
+  components:
+  - type: SquadTeam
+    color: "#ed7e57"
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: UPPSOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_spp
+    leaderIcon:
+      sprite: _RMC14/Interface/cm_job_icons.rsi
+      state: upp_lt
+    canSupplyDrop: false
+    group: UPPLine
