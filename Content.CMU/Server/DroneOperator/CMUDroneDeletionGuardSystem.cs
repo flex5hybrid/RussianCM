@@ -15,14 +15,17 @@ public sealed class CMUDroneDeletionGuardSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<CMUDroneAndroidComponent, EntityTerminatingEvent>(
+        SubscribeLocalEvent<CMUDroneDeletionGuardComponent, EntityTerminatingEvent>(
             OnDroneTerminating,
             before: [typeof(CMUDroneOperatorSystem)]);
     }
 
-    private void OnDroneTerminating(Entity<CMUDroneAndroidComponent> ent, ref EntityTerminatingEvent args)
+    private void OnDroneTerminating(Entity<CMUDroneDeletionGuardComponent> ent, ref EntityTerminatingEvent args)
     {
-        if (!_mobState.IsDead(ent.Owner))
-            ent.Comp.RuinedCoreSpawned = true;
+        if (!_mobState.IsDead(ent.Owner) &&
+            TryComp<CMUDroneAndroidComponent>(ent.Owner, out var drone))
+        {
+            drone.RuinedCoreSpawned = true;
+        }
     }
 }
