@@ -4,10 +4,13 @@ using Content.Shared._RMC14.Marines;
 using Content.Shared._RMC14.Marines.Squads;
 using Content.Shared._RMC14.Xenonids;
 using Content.Shared.Chat;
+using Content.Shared.Radio;
+using Content.Shared.Radio.Components;
 using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared._RMC14.Chat;
 
@@ -19,6 +22,8 @@ public abstract partial class SharedCMChatSystem : EntitySystem
     {
         SubscribeLocalEvent<MarineComponent, ChatGetPrefixEvent>(OnMarineGetPrefix);
         SubscribeLocalEvent<XenoComponent, ChatGetPrefixEvent>(OnXenoGetPrefix);
+        SubscribeLocalEvent<WearingHeadsetComponent, ChatGetPrefixEvent>(OnHeadsetGetPrefix);
+        SubscribeLocalEvent<IntrinsicRadioTransmitterComponent, ChatGetPrefixEvent>(OnIntrinsicGetPrefix);
     }
 
     private void OnMarineGetPrefix(Entity<MarineComponent> ent, ref ChatGetPrefixEvent args)
@@ -39,6 +44,63 @@ public abstract partial class SharedCMChatSystem : EntitySystem
 
         if (args.Channel?.ID != SharedChatSystem.HivemindChannel.Id)
             args.Channel = null;
+    }
+
+    private void OnHeadsetGetPrefix(Entity<WearingHeadsetComponent> ent, ref ChatGetPrefixEvent args)
+    {
+        if (args.Channel == null ||
+            !TryComp(ent.Comp.Headset, out EncryptionKeyHolderComponent? keys))
+            return;
+
+        if (TryResolveAccessibleChannel(keys.Channels, args.Channel, out var channel))
+            args.Channel = channel;
+    }
+
+    private void OnIntrinsicGetPrefix(Entity<IntrinsicRadioTransmitterComponent> ent, ref ChatGetPrefixEvent args)
+    {
+        if (args.Channel == null)
+            return;
+
+        if (TryResolveAccessibleChannel(ent.Comp.Channels, args.Channel, out var channel))
+            args.Channel = channel;
+    }
+
+    private bool TryResolveAccessibleChannel(
+        IEnumerable<ProtoId<RadioChannelPrototype>> channels,
+        RadioChannelPrototype requested,
+        out RadioChannelPrototype? channel)
+    {
+        channel = null;
+        var keyCode = char.ToLowerInvariant(requested.KeyCode);
+
+        // Explicit RuCM keycodes win over a stock/canonical channel using the same character.
+        // This is what makes e.g. :к resolve to the channel actually present in the headset
+        // instead of whichever prototype happened to win the global lookup dictionary.
+        foreach (var id in channels)
+        {
+            var candidate = ProtoMan.Index<RadioChannelPrototype>(id);
+            if (candidate.RadioPrefix != requested.RadioPrefix ||
+                candidate.LocalizedKeyCode == '\0' ||
+                char.ToLowerInvariant(candidate.LocalizedKeyCode) != keyCode)
+                continue;
+
+            channel = candidate;
+            return true;
+        }
+
+        // Fall back to the normal player-facing keycode for non-localized channels.
+        foreach (var id in channels)
+        {
+            var candidate = ProtoMan.Index<RadioChannelPrototype>(id);
+            if (candidate.RadioPrefix != requested.RadioPrefix ||
+                char.ToLowerInvariant(candidate.KeyCode) != keyCode)
+                continue;
+
+            channel = candidate;
+            return true;
+        }
+
+        return false;
     }
 
     protected bool IsHivebrokenXeno(EntityUid uid)
