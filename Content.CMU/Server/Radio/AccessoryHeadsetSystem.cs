@@ -163,6 +163,7 @@ public sealed partial class AccessoryHeadsetSystem : EntitySystem
             if (transmitter.Channels.Add(channel))
                 ent.Comp.TransmitterAddedChannels.Add(channel);
         }
+        Dirty(target, transmitter);
 
         // Grant default channel for the :h prefix
         var defaultChannel = ent.Comp.DefaultChannel?.Id;
@@ -218,6 +219,8 @@ public sealed partial class AccessoryHeadsetSystem : EntitySystem
 
             if (transmitter.Channels.Count == 0)
                 RemCompDeferred<IntrinsicRadioTransmitterComponent>(target.Value);
+            else
+                Dirty(target.Value, transmitter);
         }
 
         // Only remove receiver if there are no active channels left
