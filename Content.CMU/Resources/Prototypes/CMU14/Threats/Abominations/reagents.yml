@@ -19,6 +19,20 @@
           types:
             Poison: 0.5
 
+# Weyland-Yutani counteragent — removes an active abomination infection.
+- type: reagent
+  id: AbominationCounteragent
+  name: reagent-name-abomination-counteragent
+  group: Biological
+  desc: reagent-desc-abomination-counteragent
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: medicine
+  color: "#d9e8e8"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:CureAbominationInfection
+
 # Pre-filled syringe used by mimics / admins / Weyland-Yutani researchers
 # to inject the venom directly. Player-facing name is "clotted syringe"
 # so it doesn't telegraph what it actually is on examine.
@@ -33,5 +47,20 @@
         maxVol: 15
         reagents:
         - ReagentId: AbominationVenom
+          Quantity: 15
+  - type: Injector
+
+# Pre-filled cure supplied in Weyland-Yutani experiment crates.
+- type: entity
+  parent: BaseSyringe
+  id: AU14AbominationCounteragentSyringe
+  name: experimental counteragent syringe
+  description: A syringe filled with a pale, opaque Weyland-Yutani research fluid.
+  components:
+  - type: Solution
+    solution:
+        maxVol: 15
+        reagents:
+        - ReagentId: AbominationCounteragent
           Quantity: 15
   - type: Injector
