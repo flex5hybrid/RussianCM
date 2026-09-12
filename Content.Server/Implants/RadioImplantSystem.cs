@@ -34,6 +34,8 @@ public sealed partial class RadioImplantSystem : EntitySystem
             if (intrinsicRadioTransmitter.Channels.Add(channel))
                 ent.Comp.TransmitterAddedChannels.Add(channel);
         }
+
+        Dirty(args.Implanted, intrinsicRadioTransmitter);
     }
 
     /// <summary>
@@ -67,6 +69,10 @@ public sealed partial class RadioImplantSystem : EntitySystem
         if (radioTransmitterComponent.Channels.Count == 0 || activeRadioComponent?.Channels.Count == 0)
         {
             RemCompDeferred<IntrinsicRadioTransmitterComponent>(args.Implanted);
+        }
+        else
+        {
+            Dirty(args.Implanted, radioTransmitterComponent);
         }
     }
 }
