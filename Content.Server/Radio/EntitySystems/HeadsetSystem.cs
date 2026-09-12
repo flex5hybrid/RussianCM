@@ -69,7 +69,9 @@ public sealed partial class HeadsetSystem : SharedHeadsetSystem
         base.OnGotEquipped(uid, component, args);
         if (component.IsEquipped && component.Enabled)
         {
-            EnsureComp<WearingHeadsetComponent>(args.EquipTarget).Headset = uid;
+            var wearing = EnsureComp<WearingHeadsetComponent>(args.EquipTarget);
+            wearing.Headset = uid;
+            Dirty(args.EquipTarget, wearing);
             UpdateRadioChannels(uid, component);
         }
     }
@@ -101,7 +103,10 @@ public sealed partial class HeadsetSystem : SharedHeadsetSystem
         }
         else if (component.IsEquipped)
         {
-            EnsureComp<WearingHeadsetComponent>(Transform(uid).ParentUid).Headset = uid;
+            var wearer = Transform(uid).ParentUid;
+            var wearing = EnsureComp<WearingHeadsetComponent>(wearer);
+            wearing.Headset = uid;
+            Dirty(wearer, wearing);
             UpdateRadioChannels(uid, component);
         }
     }
