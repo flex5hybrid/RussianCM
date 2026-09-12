@@ -11,6 +11,7 @@
     nameDataset: CMUNamesDroneAndroid
     maxNameLength: 24
     followCloseRange: 1
+  - type: CMUDroneDeletionGuard
   - type: RemoveComponents
     components:
     - type: WorkingJoeVoice
