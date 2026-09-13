@@ -158,7 +158,7 @@
     shoes: CMBootsBlack
     head: CMHeadCapPeakedFormal
     jumpsuit: CMJumpsuitXOFormal
-    ears: AU14HeadsetGovforCommand
+    ears: AU14HeadsetOpforCommand
 
 # ├──[ Spawnpoints ]─────────────────────────────────────────────────┤
 - type: entity
