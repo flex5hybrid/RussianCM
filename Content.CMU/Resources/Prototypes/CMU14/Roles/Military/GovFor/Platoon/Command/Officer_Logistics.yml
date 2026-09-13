@@ -5,7 +5,7 @@
   name: au14-job-name-govforlogistics
   description: au14-job-description-govforlogistics
   icon: "AU14JobIconGovLO"
-  spawnMenuRoleName: Logistics Officer (GOVFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-logistics-officer
   supervisors: au14-job-supervisors-govforplatco
   startingGear: AU14GearGOVFOROfficerLogistics
   dummyStartingGear: AU14GearGOVFOROfficerLogisticsDummy
@@ -158,7 +158,7 @@
     shoes: CMBootsBlack
     head: CMHeadCapPeakedFormal
     jumpsuit: CMJumpsuitXOFormal
-    ears: AU14HeadsetOpforCommand
+    ears: AU14HeadsetGovforCommand
 
 # ├──[ Spawnpoints ]─────────────────────────────────────────────────┤
 - type: entity
