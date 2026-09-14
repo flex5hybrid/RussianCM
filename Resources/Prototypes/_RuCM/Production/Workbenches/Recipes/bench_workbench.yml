@@ -1,0 +1,11 @@
+- type: CERecipe
+  id: RUMCMTest1
+  tag: RUMCRecipeBenchWorkWorkbench
+  category: Materials
+  craftTime: 2
+  requirements:
+  - !type:ProtoIdResource
+    protoId: CottonBol
+    count: 1
+  result: MaterialCloth1
+  resultCount: 6

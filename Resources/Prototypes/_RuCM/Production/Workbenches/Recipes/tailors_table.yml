@@ -1,0 +1,533 @@
+- type: CERecipe
+  id: RUMCMaterialCloth1
+  tag: RUMCRecipeTailorsTable
+  category: Materials
+  craftTime: 2
+  requirements:
+  - !type:ProtoIdResource
+    protoId: CottonBol
+    count: 1
+  result: MaterialCloth1
+  resultCount: 6
+
+- type: CERecipe
+  id: RUMCSandbagEmpty10
+  tag: RUMCRecipeTailorsTable
+  category: Materials
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 5
+  result: CMSandbagEmpty10
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCHescoKit
+  tag: RUMCRecipeTailorsTable
+  category: Materials
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: AU14HescoKit
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCMaskCoifPMC
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  - !type:StackResource
+    stack: CMSteel
+    count: 10
+  result: RMCMaskCoifPMC
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCHandsInsulatedBlackMarine
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  - !type:StackResource
+    stack: CMSteel
+    count: 10
+  result: AU14PVEHandsInsulatedBlackMarine
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCHandsLeatherBlack
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: RMCHandsLeatherBlack
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCClothingMaskClown
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: ClothingMaskClown
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCMaskBalaclavaSkullBlack
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: RMCMaskBalaclavaSkullBlack
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCMaskScarfBlack
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: RMCMaskScarfBlack
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCMaskSmockBlack
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: RMCMaskSmockBlack
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCMaskKeffiyehBlack
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: RMCMaskKeffiyehBlack
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCMaskTornScarfBlack
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: RMCMaskTornScarfBlack
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCJumpsuitSyntheticOutdated
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: CMJumpsuitSyntheticOutdated
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCJumpsuitTMCC
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: RMCJumpsuitTMCC
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCJumpsuitCivilianScientist
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: RMCJumpsuitCivilianScientist
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCJumpsuitSPPCiv2
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: CMJumpsuitSPPCiv2
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCJumpsuitOrdnanceTech
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: CMJumpsuitOrdnanceTech
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCJumpsuitChaplain
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: RMCJumpsuitChaplain
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCJumpsuitPizza
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: RMCJumpsuitPizza
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCJumpsuitSPP
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: CMJumpsuitSPP
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCJumpsuitMercenaryHeavy
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: RMCJumpsuitMercenaryHeavy
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCJumpsuitMaintTech
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: CMJumpsuitMaintTech
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCJumpsuitSteward
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: RMCJumpsuitSteward
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCJumpsuitDutch
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: RMCJumpsuitDutch
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCClothingHeadHatPirate
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: ClothingHeadHatPirate
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCClothingHeadRastaHat
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: ClothingHeadRastaHat
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCClothingHeadBandRed
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: ClothingHeadBandRed
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCClothingHeadBandSkull
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: ClothingHeadBandSkull
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCClothingHeadHatStrawHat
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: ClothingHeadHatStrawHat
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCCMHeadCapSPPUshankaCivilian
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: CMHeadCapSPPUshankaCivilian
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCHeadCapCargo
+  tag: RUMCRecipeTailorsTable
+  category: Clothing
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 10
+  result: RMCHeadCapCargo
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCPouchGeneralLarge
+  tag: RUMCRecipeTailorsTable
+  category: Pouch
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: RMCPouchGeneralLarge
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCPouchMagazine
+  tag: RUMCRecipeTailorsTable
+  category: Pouch
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: RMCPouchMagazine
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCWebbingDropPouch
+  tag: RUMCRecipeTailorsTable
+  category: Pouch
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: AU14WebbingDropPouch
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCBeltUtilityGeneral
+  tag: RUMCRecipeTailorsTable
+  category: Pouch
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 30
+  result: RMCBeltUtilityGeneral
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCBeltMarine
+  tag: RUMCRecipeTailorsTable
+  category: Belt
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 20
+  result: CMBeltMarine
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCBeltUtility
+  tag: RUMCRecipeTailorsTable
+  category: Belt
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 20
+  result: CMBeltUtility
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCBeltMedicBag
+  tag: RUMCRecipeTailorsTable
+  category: Belt
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 20
+  result: CMBeltMedicBag
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCSatchelNorm
+  tag: RUMCRecipeTailorsTable
+  category: Bag
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 20
+  result: RMCSatchelNorm
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCBackpackMarine
+  tag: RUMCRecipeTailorsTable
+  category: Bag
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 20
+  result: CMBackpackMarine
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCBackpackMedical
+  tag: RUMCRecipeTailorsTable
+  category: Bag
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 20
+  result: CMBackpackMedical
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCBackpack
+  tag: RUMCRecipeTailorsTable
+  category: Bag
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 20
+  result: CMBackpack
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCBackpackEngineer
+  tag: RUMCRecipeTailorsTable
+  category: Bag
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 20
+  result: CMBackpackEngineer
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCFrameBackpackRMC
+  tag: RUMCRecipeTailorsTable
+  category: Bag
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: Cloth
+    count: 120
+  result: AU14FrameBackpackRMC
+  resultCount: 1
