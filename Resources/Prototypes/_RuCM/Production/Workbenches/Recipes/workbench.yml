@@ -1,0 +1,122 @@
+- type: CERecipe
+  id: RUMCAcousticGuitarInstrument
+  tag: RUMCRecipeWorkbench
+  category: Tools
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: RMCWood
+    count: 10
+  result: AcousticGuitarInstrument
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCToolShovel
+  tag: RUMCRecipeWorkbench
+  category: Tools
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: RMCWood
+    count: 10
+  - !type:StackResource
+    stack: CMSteel
+    count: 5
+  result: AU14ToolShovel
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCFireAxe
+  tag: RUMCRecipeWorkbench
+  category: Tools
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: RMCWood
+    count: 10
+  - !type:StackResource
+    stack: CMSteel
+    count: 5
+  result: RMCFireAxe
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCToolPickaxe
+  tag: RUMCRecipeWorkbench
+  category: Tools
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: RMCWood
+    count: 10
+  - !type:StackResource
+    stack: CMSteel
+    count: 5
+  result: AU14ToolPickaxe
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCKitchenKnife
+  tag: RUMCRecipeWorkbench
+  category: Tools
+  craftTime: 3
+  requirements:
+  - !type:StackResource
+    stack: RMCWood
+    count: 2
+  - !type:StackResource
+    stack: CMSteel
+    count: 3
+  result: RMCKitchenKnife
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCToolMachete
+  tag: RUMCRecipeWorkbench
+  category: Tools
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: RMCWood
+    count: 2
+  - !type:StackResource
+    stack: CMSteel
+    count: 10
+  result: AU14ToolMachete
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCChessBoard
+  tag: RUMCRecipeWorkbench
+  category: Tools
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: RMCWood
+    count: 10
+  result: ChessBoard
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCBaseballBat
+  tag: RUMCRecipeWorkbench
+  category: Tools
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: RMCWood
+    count: 10
+  result: RMCBaseballBat
+  resultCount: 1
+
+- type: CERecipe
+  id: RUMCWoodComponent
+  tag: RUMCRecipeWorkbench
+  category: Tools
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: RMCWood
+    count: 10
+  result: RuMCWoodComponent
+  resultCount: 1
