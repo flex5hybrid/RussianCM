@@ -1,52 +1,52 @@
 - type: CERecipeCategory
   id: MachineCore
-  name: Машинерия
+  name: Machinery
   priority: 3
 
 - type: CERecipeCategory
   id: Tools
-  name: Инструменты
+  name: Tools
   priority: 2
 
 - type: CERecipeCategory
   id: Weapon
-  name: Оружие
+  name: Weapons
   priority: 2
 
 - type: CERecipeCategory
   id: Armor
-  name: Броня
+  name: Armor
   priority: 2
 
 - type: CERecipeCategory
   id: Materials
-  name: Материалы
+  name: Materials
   priority: 1
 
 - type: CERecipeCategory
   id: FloorTile
-  name: Плитка
+  name: Floor Tiles
 
 - type: CERecipeCategory
   id: Carpet
-  name: Ковры
+  name: Carpets
 
 - type: CERecipeCategory
   id: Wallpaper
-  name: Обои
+  name: Wallpapers
 
 - type: CERecipeCategory
   id: Clothing
-  name: Одежда
+  name: Clothing
 
 - type: CERecipeCategory
   id: Pouch
-  name: Подсумки
+  name: Pouches
 
 - type: CERecipeCategory
   id: Belt
-  name: Пояса
+  name: Belts
 
 - type: CERecipeCategory
   id: Bag
-  name: Сумки
+  name: Bags

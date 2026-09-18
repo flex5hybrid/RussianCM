@@ -60,8 +60,8 @@
   parent:
   - RUMCBaseWorkbench
   id: RUMCWorkbench
-  name: простой верстак.
-  description: Наспех слепленный стол из досок,на котором можно создать пару простых предметов.
+  name: simple workbench.
+  description: A hastily cobbled-together plank table where a couple of simple items can be crafted.
   components:
   - type: Sprite
     state: workbench
@@ -113,8 +113,8 @@
   parent:
   - RUMCBaseWorkbench
   id: RUMCTailorsTable
-  name: стол портного
-  description: Простой и грубый стол портного. Несмотря на век технологий все еще остается полезен.
+  name: tailor's table
+  description: A simple, rugged tailor's table. Despite the age of technology, it remains useful.
   components:
   - type: Sprite
     state: tailors_table
@@ -128,8 +128,8 @@
   parent:
   - RUMCBaseWorkbench
   id: RUMCBenchWorkWorkbench
-  name: слесарный верстак
-  description: Хорошо сделанный верстак для слесарных работ. Позволяет начать производить простые махинации с металлом и стальными деталями.
+  name: bench-work workbench
+  description: A well-crafted workbench for mechanical work. Allows you to start producing simple machinery with metal and steel components.
   components:
   - type: Sprite
     state: bench_workbench
