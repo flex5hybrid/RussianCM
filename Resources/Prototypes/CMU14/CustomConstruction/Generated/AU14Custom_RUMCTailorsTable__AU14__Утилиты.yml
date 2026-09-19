@@ -2,7 +2,7 @@
 # entity: RUMCTailorsTable
 # spawnlist: AU14
 # category: Утилиты
-# steps: m:RMCWood:25:5|em:RuMCWoodComponent:5:5|t:Screwing:5
+# steps: m:RMCWood:20:10|em:RuMCWoodComponent:5:10
 # deconstruct: 
 # health: 0
 # Safe to edit, commit, or delete. Deleting removes it from the construction menu.
@@ -18,8 +18,8 @@
       - !type:SnapToGrid
       steps:
       - material: RMCWood
-        amount: 25
-        doAfter: 5
+        amount: 20
+        doAfter: 10
   - node: mid
     entity: AU14CustomEntityMid_RUMCTailorsTable__AU14__Утилиты
     edges:
@@ -27,14 +27,12 @@
       steps:
       - material: RuMCWoodComponentStack
         amount: 5
-        doAfter: 5
-      - tool: Screwing
-        doAfter: 5
+        doAfter: 10
     - to: start
       completed:
       - !type:SpawnPrototype
         prototype: RMCPlankWood1
-        amount: 25
+        amount: 20
       - !type:DeleteEntity
       steps:
       - tool: Prying
@@ -46,7 +44,7 @@
       completed:
       - !type:SpawnPrototype
         prototype: RMCPlankWood1
-        amount: 25
+        amount: 20
       - !type:SpawnPrototype
         prototype: RuMCWoodComponent
         amount: 5
@@ -77,8 +75,8 @@
 
 - type: construction
   id: AU14Custom_RUMCTailorsTable__AU14__Утилиты
-  name: "стол портного"
-  description: "Простой и грубый стол портного. Несмотря на век технологий все еще остается полезен."
+  name: "tailor's table"
+  description: "A simple, rugged tailor's table. Despite the age of technology, it remains useful."
   graph: AU14CustomGraph_RUMCTailorsTable__AU14__Утилиты
   startNode: start
   targetNode: target

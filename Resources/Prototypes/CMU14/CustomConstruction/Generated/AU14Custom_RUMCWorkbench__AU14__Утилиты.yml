@@ -2,7 +2,7 @@
 # entity: RUMCWorkbench
 # spawnlist: AU14
 # category: Утилиты
-# steps: m:RMCWood:30:10
+# steps: m:RMCWood:20:10
 # deconstruct: 
 # health: 0
 # Safe to edit, commit, or delete. Deleting removes it from the construction menu.
@@ -18,7 +18,7 @@
       - !type:SnapToGrid
       steps:
       - material: RMCWood
-        amount: 30
+        amount: 20
         doAfter: 10
   - node: target
     entity: AU14CustomEntity_RUMCWorkbench__AU14__Утилиты
@@ -27,7 +27,7 @@
       completed:
       - !type:SpawnPrototype
         prototype: RMCPlankWood1
-        amount: 30
+        amount: 20
       - !type:DeleteEntity
       steps:
       - tool: Prying
@@ -46,8 +46,8 @@
 
 - type: construction
   id: AU14Custom_RUMCWorkbench__AU14__Утилиты
-  name: "простой верстак."
-  description: "Наспех слепленный стол из досок,на котором можно создать пару простых предметов."
+  name: "simple workbench."
+  description: "A hastily cobbled-together plank table where a couple of simple items can be crafted."
   graph: AU14CustomGraph_RUMCWorkbench__AU14__Утилиты
   startNode: start
   targetNode: target
