@@ -1,6 +1,6 @@
 - type: material
   id: RuMCWoodComponentMaterial
-  stackEntity: RMCWoodComponent
+  stackEntity: RuMCWoodComponent
   name: wooden parts
   icon: { sprite: _RuMC/Textures/Production/Materials/components.rsi, state: wood-components }
   price: 0.00133
