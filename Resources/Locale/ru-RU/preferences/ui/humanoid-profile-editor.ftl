@@ -104,7 +104,7 @@ humanoid-profile-editor-preference-satchel = Сумка
 humanoid-profile-editor-preference-duffelbag = Спортивная сумка
 humanoid-profile-editor-guidebook-button-tooltip = Нажмите для дополнительной информации
 
-# Spawn priority
+# Приоритет появления
 humanoid-profile-editor-preference-spawn-priority-none = Нет
 humanoid-profile-editor-preference-spawn-priority-arrivals = Прибытие
 humanoid-profile-editor-preference-spawn-priority-cryosleep = Криосон
@@ -123,7 +123,7 @@ humanoid-profile-editor-naming-rules-warning = Внимание: оскорби�
 humanoid-profile-editor-markings-tab = Метки
 humanoid-profile-editor-flavortext-tab = Описание
 
-# Traits
+# Черты
 humanoid-profile-editor-traits-tab = Черты
 humanoid-profile-editor-no-traits = Нет доступных черт
 
@@ -133,7 +133,7 @@ trait-category-disabilities = Инвалидности
 trait-category-speech = Речевые черты
 trait-category-quirks = Причуды
 
-# Armor
+# Броня
 humanoid-profile-editor-preference-armor-random = Случайная
 humanoid-profile-editor-preference-armor-padded = С подкладками
 humanoid-profile-editor-preference-armor-padless = Без подкладок
@@ -151,7 +151,10 @@ humanoid-profile-editor-segment-line = Линейная пехота
 humanoid-profile-editor-segment-officer = Офицеры
 humanoid-profile-editor-segment-leader = Сержантский состав
 
-humanoid-profile-editor-threat-marker-suffix =  (Маркер)
+humanoid-profile-editor-threat-marker-suffix = (Маркер)
+humanoid-profile-editor-threat-jobs-section = Должности угроз
+humanoid-profile-editor-threat-neomorph = Неоморфы
+humanoid-profile-editor-threat-badbloodclan = Клан Плохой Крови
 humanoid-profile-editor-threat-xeno = Ксеноморфы
 humanoid-profile-editor-threat-ape = Обезьяны
 humanoid-profile-editor-threat-cultist = Культисты
@@ -161,32 +164,32 @@ humanoid-profile-editor-threat-tribal = Дикари
 
 
 
-humanoid-profile-editor-randomize = Randomize
+humanoid-profile-editor-randomize = Случайно
 
-humanoid-profile-editor-randomize-unlocked-button = Randomize unlocked
+humanoid-profile-editor-randomize-unlocked-button = Случайно для разблокированных
 
-humanoid-profile-editor-randomize-name-button = Name
+humanoid-profile-editor-randomize-name-button = Имя
 
-humanoid-profile-editor-randomize-species-button = Species
+humanoid-profile-editor-randomize-species-button = Вид
 
-humanoid-profile-editor-randomize-age-button = Age
+humanoid-profile-editor-randomize-age-button = Возраст
 
-humanoid-profile-editor-randomize-sex-button = Sex
+humanoid-profile-editor-randomize-sex-button = Пол
 
-humanoid-profile-editor-randomize-skin-button = Skin color
+humanoid-profile-editor-randomize-skin-button = Цвет кожи
 
-humanoid-profile-editor-randomize-eye-button = Eye color
+humanoid-profile-editor-randomize-eye-button = Цвет глаз
 
-humanoid-profile-editor-randomize-markings-button = Markings
+humanoid-profile-editor-randomize-markings-button = Метки
 
-humanoid-profile-editor-voice-label = Voice:
+humanoid-profile-editor-voice-label = Голос:
 
-humanoid-profile-editor-randomizer-lock-tooltip = Prevents the value from being randomized
+humanoid-profile-editor-randomizer-lock-tooltip = Не даёт значению измениться при случайной генерации
 
-humanoid-profile-editor-voice-masculine = Masculine
+humanoid-profile-editor-voice-masculine = Мужской
 
-humanoid-profile-editor-voice-feminine = Feminine
+humanoid-profile-editor-voice-feminine = Женский
 
-humanoid-profile-editor-voice-neutral = Neutral
+humanoid-profile-editor-voice-neutral = Нейтральный
 
-humanoid-profile-editor-voice-none = Unnamed Voice
+humanoid-profile-editor-voice-none = Безымянный голос

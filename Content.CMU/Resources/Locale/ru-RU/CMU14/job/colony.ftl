@@ -45,15 +45,15 @@ au14-id-job-title-colony-civilian = Гражданский колонии
 au14-job-description-civiliancolonist = Житель колонии.
 au14-job-prefix-civiliancolonist = CIV
 
-au14-job-name-civilianfoodserviceworker = Работник общественного питания
+au14-job-name-civilianfoodserviceworker = Работник общепита
 au14-job-description-civilianfoodserviceworker = Работайте на кухне, пополняйте запасы бара и следите, чтобы рабочие были накормлены.
 au14-job-prefix-civilianfoodserviceworker = FSW
 
-au14-job-name-civilianshopkeep = Лавочник
+au14-job-name-civilianshopkeep = Продавец
 au14-job-description-civilianshopkeep = Следите за запасами магазина колонии, занимайтесь торговлей и обеспечивайте жителей товарами первой необходимости.
 au14-job-prefix-civilianshopkeep = SHOP
 
-au14-job-name-civilianwastemanagementspecialist = Специалист по утилизации отходов
+au14-job-name-civilianwastemanagementspecialist = Специалист по утилизации
 au14-job-description-civilianwastemanagementspecialist = Убирайте, дезинфицируйте и утилизируйте. Здравый смысл начинается с чистоты.
 au14-job-prefix-civilianwastemanagementspecialist = WMS
 
@@ -147,8 +147,8 @@ au14-job-name-civiliancolonysynthetic = Синтетик колониальны�
 au14-job-description-civiliancolonysynthetic = Вы искусственный человек, созданный корпорацией «Вейланд-Ютани». Помогайте персоналу колонии в повседневных задачах. Вы не способны использовать баллистическое оружие. (ВНИМАНИЕ: ЭТА РОЛЬ ТРЕБУЕТ ВЫСОКОГО УРОВНЯ РП)
 au14-job-prefix-civiliancolonysynthetic = CSYNTH
 
-au14-job-name-civiliankellandwarden = Смотритель Kelland
-au14-job-description-civiliankellandwarden = Вы представитель среднего руководства горнодобывающей компании Kelland, дочернего предприятия «Вейланд-Ютани», назначенный управлять тюрьмой этой колонии. Заставляйте заключённых работать, производить продукцию и соблюдать дисциплину. Если они хорошо себя ведут, предоставляйте им дополнительные привилегии или разрешайте свободно передвигаться по колонии. (Роль доступна на LV-747 и в отдельных режимах)
+au14-job-name-civiliankellandwarden = Смотритель Келланд
+au14-job-description-civiliankellandwarden = Вы представитель среднего руководства горнодобывающей компании Келланд, дочернего предприятия «Вейланд-Ютани», назначенный управлять тюрьмой этой колонии. Заставляйте заключённых работать, производить продукцию и соблюдать дисциплину. Если они хорошо себя ведут, предоставляйте им дополнительные привилегии или разрешайте свободно передвигаться по колонии. (Роль доступна на LV-747 и в отдельных режимах)
 au14-job-prefix-civiliankellandwarden = WARD
 
 au14-job-name-civilianprisoner = Заключённый
@@ -224,8 +224,8 @@ au14-job-description-civilianlaselleliaison = Связной бионацион�
 au14-job-prefix-laselleliaison = LL
 
 au14-job-name-civilianambassador = Посол
-au14-job-name-civilianambassadoricsc = Посол ICSC
-au14-job-description-civilianambassadoricsc = Возглавляйте дипломатическую миссию ICSC в колонии.
+au14-job-name-civilianambassadoricsc = Посол НКВС
+au14-job-description-civilianambassadoricsc = Возглавляйте дипломатическую миссию НКВС в колонии.
 au14-job-prefix-civilianambassadoricsc = ISCS Amb.
 
 au14-job-name-civilianambassadorupp = Посол СПН
@@ -240,8 +240,8 @@ au14-job-name-civilianambassadortwe = Посол ИТМ
 au14-job-description-civilianambassadortwe = Возглавляйте дипломатическую миссию ИТМ в колонии.
 au14-job-prefix-civilianambassadortwe = TWE Amb.
 
-au14-job-name-civilianambassadorcca = Посол ККА
-au14-job-description-civilianambassadorcca = Возглавляйте дипломатическую миссию ККА в колонии.
+au14-job-name-civilianambassadorcca = Посол КЦА
+au14-job-description-civilianambassadorcca = Возглавляйте дипломатическую миссию КЦА в колонии.
 au14-job-prefix-civilianambassadorcca = CCA Amb.
 
 au14-job-name-civilianrightsobserver = Межзвёздный наблюдатель за соблюдением прав человека

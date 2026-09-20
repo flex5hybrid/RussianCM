@@ -26,11 +26,11 @@ game-ticker-get-info-preround-text = Привет и добро пожалова
 game-ticker-no-map-selected = [color=red]Карта ещё не выбрана![/color]
 game-ticker-player-no-jobs-available-when-joining = При попытке присоединиться к игре ни одной роли не было доступно.
 
-# Displayed in chat to admins when a player joins
+# Показывается админам в чате, когда игрок заходит
 player-join-message = Игрок { $name } зашёл!
 player-first-join-message = Игрок { $name } зашёл на сервер впервые.
 
-# Displayed in chat to admins when a player leaves
+# Показывается админам в чате, когда игрок выходит
 player-leave-message = Игрок { $name } вышел!
 
 latejoin-arrival-announcement = { $character } ({ $job }) { GENDER($entity) ->
@@ -53,26 +53,23 @@ game-run-level-PreRoundLobby = Предраундовое лобби
 game-run-level-InRound = В раунде
 game-run-level-PostRound = После раунда
 
-# Missing entries synced from en-US
-
 game-ticker-no-map-selected-plain = Карта еще не выбрана!
 
+# Заголовки столбцов таблицы сведений о раунде в лобби.
+lobby-info-govfor-ship = КОРАБЛЬ ГОВФОР
 
-# Column headings for the lobby round-info table.
-lobby-info-govfor-ship = GOVFOR SHIP
+lobby-info-opfor-ship = КОРАБЛЬ ОПФОР
 
-lobby-info-opfor-ship = OPFOR SHIP
+lobby-info-govfor-platoon = ВЗВОД ГОВФОР
 
-lobby-info-govfor-platoon = GOVFOR PLATOON
+lobby-info-opfor-platoon = ВЗВОД ОПФОР
 
-lobby-info-opfor-platoon = OPFOR PLATOON
+lobby-info-planet = ПЛАНЕТА
 
-lobby-info-planet = PLANET
+lobby-info-gamemode = РЕЖИМ
 
-lobby-info-gamemode = GAMEMODE
+lobby-info-players = ИГРОКИ
 
-lobby-info-players = PLAYERS
+lobby-info-round-time = ВРЕМЯ РАУНДА
 
-lobby-info-round-time = ROUND TIME
-
-lobby-info-players-value = {$count} ({$ready} ready)
+lobby-info-players-value = {$count} (готовы: {$ready})

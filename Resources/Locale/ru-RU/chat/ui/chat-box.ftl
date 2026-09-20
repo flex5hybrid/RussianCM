@@ -3,6 +3,9 @@ hud-chatbox-info-talk = { $talk-key } чтобы говорить.
 hud-chatbox-info-cycle = Нажмите здесь чтобы говорить, { $cycle-key } для переключения каналов.
 hud-chatbox-info-unbound = Нажмите здесь чтобы говорить.
 
+chat-tab-all = ВСЕ
+chat-tab-radio = РАЦИЯ
+
 hud-chatbox-select-name-prefixed = { $prefix } { $name }
 hud-chatbox-select-channel-Admin = Админ
 hud-chatbox-select-channel-Console = Консоль
@@ -84,9 +87,6 @@ hud-chatbox-display-color-whole-message-help = Применяет цвета к�
 hud-chatbox-display-legacy = Использовать старый чат
 hud-chatbox-display-legacy-help = Показывает старую панель прокрутки и скрывает структурированные вкладки и разделённый чат.
 
-
-hud-chatbox-split-direction = Layout:
-
-hud-chatbox-split-direction-stacked = Stacked
-
-hud-chatbox-split-direction-side = Side by side
+hud-chatbox-split-direction = Расположение:
+hud-chatbox-split-direction-stacked = Друг под другом
+hud-chatbox-split-direction-side = Рядом
