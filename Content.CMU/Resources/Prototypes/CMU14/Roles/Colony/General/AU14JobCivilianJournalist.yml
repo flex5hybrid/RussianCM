@@ -30,7 +30,7 @@
   requireAdminNotify: false
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-colonycivilian
-  spawnMenuRoleName: Journalist (CMU)
+  spawnMenuRoleName: cmu-spawn-role-journalist-cmu # RuMC edit
   accessGroups:
   - Colonist
   - aunews

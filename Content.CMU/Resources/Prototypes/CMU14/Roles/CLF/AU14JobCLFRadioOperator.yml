@@ -60,7 +60,7 @@
   requireAdminNotify: false
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-clflrs
-  spawnMenuRoleName: CLF Radio Operator (CMU)
+  spawnMenuRoleName: cmu-spawn-role-clf-radio-operator-cmu # RuMC edit
   accessGroups:
   - Colonist
   roleWeight: 0.25

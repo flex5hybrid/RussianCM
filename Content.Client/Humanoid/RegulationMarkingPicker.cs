@@ -169,6 +169,7 @@ public sealed class RegulationMarkingPicker : BoxContainer
         if (showColors)
         {
             foreach (var (name, color) in DropdownColors
+                         .Select(entry => (Name: GetColorDisplayName(entry.Name), entry.Color)) // RuMC edit
                          .Where(entry => entry.Name.Contains(filter, StringComparison.OrdinalIgnoreCase))
                          .OrderBy(entry => entry.Name))
             {
@@ -181,6 +182,13 @@ public sealed class RegulationMarkingPicker : BoxContainer
 
         _updating = false;
     }
+
+    // RuMC edit start
+    private static string GetColorDisplayName(string name)
+    {
+        return Loc.GetString($"regulation-hair-color-{name.ToLowerInvariant().Replace(' ', '-')}");
+    }
+    // RuMC edit end
 
     private void SelectMarking(ItemList.ItemListSelectedEventArgs args)
     {

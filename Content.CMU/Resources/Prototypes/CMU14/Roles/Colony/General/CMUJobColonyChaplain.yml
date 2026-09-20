@@ -26,7 +26,7 @@
   requireAdminNotify: false
   joinNotifyCrew: false
   supervisors: cmu-colony-supervisors-colonist
-  spawnMenuRoleName: Colony Chaplain (CMU)
+  spawnMenuRoleName: cmu-spawn-role-colony-chaplain-cmu # RuMC edit
   accessGroups:
   - Colonist
   roleWeight: 0.25

@@ -70,7 +70,7 @@
   requireAdminNotify: true
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-clfcellleader
-  spawnMenuRoleName: CLF Cell Leader (CMU)
+  spawnMenuRoleName: cmu-spawn-role-clf-cell-leader-cmu # RuMC edit
   accessGroups:
   - Colonist
   roleWeight: 0.25

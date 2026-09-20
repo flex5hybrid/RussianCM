@@ -10,7 +10,7 @@
   startingGear: CMUGearColonyPrisonGuard
   icon: AU14JobIconColonyColonist
   supervisors: cmu-colony-supervisors-colonist
-  spawnMenuRoleName: Colony Prison Guard (CMU)
+  spawnMenuRoleName: cmu-spawn-role-colony-prison-guard-cmu # RuMC edit
   playTimeTracker: CMUJobColonyPrisonGuard
   ranks:
     RMCRankCivilian: []

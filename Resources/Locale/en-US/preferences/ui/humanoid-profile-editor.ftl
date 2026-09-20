@@ -45,6 +45,17 @@ humanoid-profile-editor-distress-signal-tab = Distress Signal
 humanoid-profile-editor-government-jobs-tab = Government Jobs
 humanoid-profile-editor-insurgency-jobs-tab = Insurgency Jobs
 humanoid-profile-editor-threat-roles-tab = Threat Jobs
+humanoid-profile-editor-threats-label = Threats
+humanoid-profile-editor-threat-jobs-section = Threat Jobs
+humanoid-profile-editor-threat-marker-suffix = (Marker)
+humanoid-profile-editor-threat-xeno = Xenomorph
+humanoid-profile-editor-threat-ape = Apes
+humanoid-profile-editor-threat-cultist = Cultists
+humanoid-profile-editor-threat-wendigo = Wendigo
+humanoid-profile-editor-threat-abomination = Abominations
+humanoid-profile-editor-threat-tribal = Tribals
+humanoid-profile-editor-threat-neomorph = Neomorphs
+humanoid-profile-editor-threat-badbloodclan = Bad Blood Clan
 humanoid-profile-editor-allegiance-label = Allegiance:
 humanoid-profile-editor-allegiance-none = None
 humanoid-profile-editor-origin-label = Origin:
@@ -136,6 +147,14 @@ humanoid-profile-editor-segment-support = Support
 humanoid-profile-editor-segment-leader = Infantry NCO
 humanoid-profile-editor-segment-line = Line Infantry
 
+# Armor
+humanoid-profile-editor-preference-armor-random = Random
+humanoid-profile-editor-preference-armor-padded = Padded
+humanoid-profile-editor-preference-armor-padless = Padless
+humanoid-profile-editor-preference-armor-ridged = Ridged
+humanoid-profile-editor-preference-armor-carrier = Carrier
+humanoid-profile-editor-preference-armor-skull = Skull
+humanoid-profile-editor-preference-armor-smooth = Smooth
 
 humanoid-profile-editor-randomize = Randomize
 

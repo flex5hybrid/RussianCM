@@ -10,7 +10,7 @@
   startingGear: CMUGearCivilianAtmosian
   icon: "AU14JobIconColonyEngineer"
   supervisors: au14-job-supervisors-colonyadministrator
-  spawnMenuRoleName: Colony Atmospheric Technician
+  spawnMenuRoleName: cmu-spawn-role-colony-atmospheric-technician # RuMC edit
   playTimeTracker: CMUJobCivilianAtmosian
   ranks:
     RMCRankCivilian: []

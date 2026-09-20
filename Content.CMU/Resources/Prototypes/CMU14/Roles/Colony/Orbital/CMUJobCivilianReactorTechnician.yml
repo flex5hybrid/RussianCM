@@ -10,7 +10,7 @@
   startingGear: CMUGearColonyReactorTechnician
   icon: AU14JobIconColonyColonist
   supervisors: cmu-colony-supervisors-colonist
-  spawnMenuRoleName: Colony Reactor Technician (CMU)
+  spawnMenuRoleName: cmu-spawn-role-colony-reactor-technician-cmu # RuMC edit
   playTimeTracker: CMUJobColonyReactorTechnician
   ranks:
     RMCRankCivilian: []

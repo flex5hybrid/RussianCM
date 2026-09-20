@@ -380,7 +380,7 @@ public partial class ChatBox : UIWidget
             {
                 ToggleMode = true,
                 Mode = BaseButton.ActionMode.Release,
-                MinWidth = Math.Max(58, tab.Title.Length * 9),
+                MinWidth = Math.Max(58, ChatUserSettings.GetDisplayTitle(tab).Length * 9), // RuMC edit
                 StyleClasses = { StyleNano.StyleClassChatChannelSelectorButton },
                 CanDrag = !isAll
             };
@@ -785,7 +785,9 @@ public partial class ChatBox : UIWidget
 
     private string GetTabTitle(string tabId)
     {
-        return _tabs.FirstOrDefault(tab => tab.Id == tabId)?.Title ?? "TAB";
+        return _tabs.FirstOrDefault(tab => tab.Id == tabId) is { } found
+            ? ChatUserSettings.GetDisplayTitle(found) // RuMC edit
+            : "TAB";
     }
 
     private void SyncFilterPopup()
