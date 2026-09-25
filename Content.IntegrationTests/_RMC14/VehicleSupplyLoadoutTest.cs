@@ -1,6 +1,7 @@
 #pragma warning disable RA0002 // Explicitly arrange platoon and depot ownership.
 using Content.Server.CMU14.Round;
 using Content.Shared.CMU14;
+using Content.Shared.CMU14.Fighter;
 using Content.Shared.CMU14.util;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,6 +53,22 @@ public sealed class VehicleSupplyLoadoutTest
 
             foreach (var entry in console!.Vehicles)
             {
+                Assert.That(prototypes.TryIndex<EntityPrototype>(entry.Vehicle.Id, out var vehicle), Is.True);
+                if (vehicle!.TryComp<FighterGroundComponent>(out _, factory))
+                {
+                    // Fighter pylons are serviced with a power loader, rather than ItemSlots loadouts.
+                    Assert.That(entry.LoadoutCategories, Is.Empty);
+                    Assert.That(entry.Bundle.Select(id => id.Id), Does.Contain("CMUFighterLandingPadFolded"));
+                    Assert.That(entry.Hardpoints.Select(id => id.Id), Is.SupersetOf(new[]
+                    {
+                        "RMCDropshipAttachmentRocketPod", "RMCDropshipAttachmentAmmoGAU",
+                        "RMCDropshipAttachmentAmmoRocketMiniMike", "RMCDropshipAttachmentAmmoRocketKeeper",
+                        "RMCDropshipAttachmentAmmoRocketWidowmaker", "RMCDropshipAttachmentAmmoRocketHarpoon",
+                        "RMCDropshipAttachmentAmmoRocketNapalm",
+                    }));
+                    continue;
+                }
+
                 Assert.That(entry.LoadoutCategories, Is.Not.Empty, $"{entry.Vehicle.Id} has no loadout categories");
 
                 foreach (var cat in entry.LoadoutCategories)

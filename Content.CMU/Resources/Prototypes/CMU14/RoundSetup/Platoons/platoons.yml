@@ -1,6 +1,7 @@
 - type: platoon
   id: USCM
   vehicleSupplyCatalog:
+  - CMUFighterGround
   - VehicleTank
   - VehicleAPC
   - VehicleAPCMed
@@ -35,6 +36,7 @@
 - type: platoon
   id: LACN
   vehicleSupplyCatalog:
+  - CMUFighterGround
   - VehicleTank
   - VehicleAPC
   - VehicleAPCMed
@@ -355,6 +357,7 @@
 - type: platoon
   id: UPP
   vehicleSupplyCatalog:
+  - CMUFighterGround
   - VehicleSPPTank
   - VehicleSPPAPC
   - VehicleSPPVan
@@ -682,6 +685,7 @@
 - type: platoon
   id: WEYU
   vehicleSupplyCatalog:
+  - CMUFighterGround
   - VehicleTankPMC
   - VehicleAPCPMC
   - VehicleHumvee
@@ -1004,6 +1008,7 @@
 - type: platoon
   id: CMBCIU
   vehicleSupplyCatalog:
+  - CMUFighterGround
   - AU14VehicleCivHSVan
   - AU14VehicleCivArmoredTruck
   - AU14VehicleCivVan
@@ -1220,6 +1225,7 @@
 - type: platoon
   id: HAZOPS
   vehicleSupplyCatalog:
+  - CMUFighterGround
   - VehicleAev
   - VehicleAPC
   - VehicleAPCMed
@@ -1250,6 +1256,7 @@
 - type: platoon
   id: ProdigySF
   vehicleSupplyCatalog:
+  - CMUFighterGround
   - VehicleHumvee
   - VehicleHumveeTransport
   - AU14VehicleCivArmoredTruck
@@ -1529,6 +1536,7 @@
 - type: platoon
   id: VAIPO
   vehicleSupplyCatalog:
+  - CMUFighterGround
   - VehicleAPC
   - VehicleHumvee
   - VehicleHumveeTransport
@@ -1711,6 +1719,7 @@
 - type: platoon
   id: RMC
   vehicleSupplyCatalog:
+  - CMUFighterGround
   - VehicleTankTWE
   - VehicleHumveeTransport
   - VehicleHumveeMedical

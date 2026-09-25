@@ -26,7 +26,7 @@ public sealed partial class GameTicker
     internal List<LobbyLineupEntry> GetLobbyLineup()
     {
         var entries = new List<LobbyLineupEntry>();
-        if (RunLevel != GameRunLevel.PreRoundLobby || !_cfg.GetCVar(CCVars.LobbyPartyTime))
+        if (RunLevel != GameRunLevel.PreRoundLobby || !LobbyPartySettings.IsEnabled(_cfg))
             return entries;
 
         var departments = _prototypeManager.EnumeratePrototypes<DepartmentPrototype>()

@@ -1,6 +1,7 @@
 using System.Linq;
-using Content.Server.CMU14.ZLevels.Core;
 using Content.Server.CMU14.Dropship.MultiDeck;
+using Content.Server.CMU14.Ops.ForceOnForce;
+using Content.Server.CMU14.ZLevels.Core;
 using Content.Shared.CMU14.Dropship.MultiDeck;
 using Content.Shared._RMC14.Dropship.Weapon;
 using Content.Shared._RMC14.Overwatch;
@@ -21,7 +22,6 @@ using Content.Shared.GameTicking.Components;
 using Robust.Shared.EntitySerialization.Systems;
 using Content.Server._RMC14.Requisitions;
 using Content.Shared._RMC14.Telephone;
-using Content.Shared._RMC14.SupplyDrop;
 using Content.Shared._RMC14.Ladder;
 using Content.Shared.CMU14;
 
@@ -37,12 +37,12 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
     [Dependency] private MapLoaderSystem _mapLoader = default!;
     [Dependency] private SharedMapSystem _mapSystem = default!;
     [Dependency] private MetaDataSystem _metaData = default!;
-    [Dependency] private CMUZLevelsSystem _zLevels = default!;
-    [Dependency] private SharedSupplyDropSystem _supplyDrop = default!;
-    [Dependency] private MultiDeckDropshipSystem _multiDeck = default!;
     [Dependency] private SharedOverwatchConsoleSystem _overwatch = default!;
     [Dependency] private SharedTacticalMapSystem _tacticalMap = default!;
     [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private CMUZLevelsSystem _zLevels = default!;
+    [Dependency] private FactionSwapSystem _factionSwap = default!;
+    [Dependency] private MultiDeckDropshipSystem _multiDeck = default!;
 
     // Store selected platoons in the system
     private PlatoonPrototype? _selectedGovforPlatoon;
@@ -117,10 +117,10 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
                 else
                     continue;
 
-                SpawnShipVendors(shipUid, shipPlatoon, shipFaction.Faction);
+                SpawnShipVendors(shipUid, shipPlatoon!, shipFaction.Faction);
 
                 if (shipFaction.Faction == "opfor")
-                    ConvertGovforEntitiesToOpfor(shipUid, shipTransform);
+                    _factionSwap.ConvertGovforEntitiesToOpfor(shipUid, shipTransform);
             }
         }
 
@@ -278,6 +278,9 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
     {
         SetPhonesFactionOnGrid(grid, faction);
 
+        if (faction == "opfor")
+            _factionSwap.ConvertGovforEntitiesToOpfor(grid, Transform(grid));
+
         if (HasComp<MultiDeckDropshipComponent>(grid))
         {
             var shipFaction = EnsureComp<ShipFactionComponent>(grid);
@@ -389,7 +392,7 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
                 while (carriers.MoveNext(out var carrier, out var owner, out var carrierTransform))
                 {
                     if (owner.Faction == faction && !HasComp<DropshipComponent>(carrier) &&
-                        IsMarkerOnShipOrZLevel(carrier, carrierTransform, transform))
+                        _factionSwap.IsMarkerOnShipOrZLevel(carrier, carrierTransform, transform))
                     {
                         atHome = true;
                         break;
@@ -499,53 +502,6 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
         }
     }
 
-    private static readonly ProtoId<FactionSwapSetPrototype> OpforShipSwaps = "OpforShipSwaps";
-
-    private void ConvertGovforEntitiesToOpfor(EntityUid shipUid, TransformComponent shipTransform)
-    {
-        if (!_prototypeManager.TryIndex(OpforShipSwaps, out FactionSwapSetPrototype? swapSet))
-            return;
-
-        var swaps = swapSet.Swaps;
-        // Covers markers spawned above and entities baked into the map; swapping (not editing
-        // components) so MapInit-derived state such as alliance controllable factions is correct.
-        // Membership uses the ship's whole z-network: decks load as separate grids and a bare
-        // GridUid check silently skips every deck but the one that got the faction tag.
-        var toSwap = new List<(EntityUid uid, EntProtoId opforProtoId, TransformComponent transform)>();
-        var supplyDrops = new List<EntityUid>();
-        var query = AllEntityQuery<MetaDataComponent, TransformComponent>();
-        while (query.MoveNext(out var uid, out var meta, out var transform))
-        {
-            if (!IsMarkerOnShipOrZLevel(shipUid, shipTransform, transform) || meta.EntityPrototype is not { } proto)
-                continue;
-
-            if (swaps.TryGetValue(proto.ID, out var opforProtoId))
-                toSwap.Add((uid, opforProtoId, transform));
-            else if (proto.ID == "RMCSupplyDropConsole")
-                supplyDrops.Add(uid);
-        }
-
-        foreach (var (uid, opforProtoId, transform) in toSwap)
-        {
-            // A renamed target must leave the Govfor entity in place, not delete it unreplaced
-            if (!_prototypeManager.TryIndex<EntityPrototype>(opforProtoId, out _))
-                continue;
-
-            _entityManager.SpawnAttachedTo(opforProtoId, transform.Coordinates, rotation: transform.LocalRotation);
-            _entityManager.DeleteEntity(uid);
-        }
-
-        // No Opfor supply drop console prototype exists; retarget the marine squad binding so
-        // launches resolve the ship pads via SquadOpfor's supplyDropPadSquad.
-        foreach (var uid in supplyDrops)
-            _supplyDrop.SetSquad(uid, "SquadOpfor");
-    }
-
-    /// <summary>
-    /// Materialize ship markers on every deck using the same platoon resolution as Bush.
-    /// A standalone Almayer can call this after the round starts without duplicating
-    /// vendors already created by the platoon rule.
-    /// </summary>
     public void SpawnShipVendors(EntityUid shipUid, PlatoonPrototype platoon, string faction)
     {
         var shipTransform = Transform(shipUid);
@@ -554,7 +510,7 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
         {
             var transform = _entityManager.GetComponent<TransformComponent>(markerUid);
             if (!markerComp.Ship ||
-                !IsMarkerOnShipOrZLevel(shipUid, shipTransform, transform) ||
+                !_factionSwap.IsMarkerOnShipOrZLevel(shipUid, shipTransform, transform) ||
                 markerComp.Spawned)
             {
                 continue;
@@ -562,42 +518,35 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
 
             if (markerComp.Class == PlatoonMarkerClass.DropshipDestination)
             {
-                string dropshipDestinationProtoId = "CMDropshipDestinationHome";
+                const string dropshipDestinationProtoId = "CMDropshipDestinationHome";
                 var dropshipEntity = _entityManager.SpawnAttachedTo(dropshipDestinationProtoId, transform.Coordinates, rotation: transform.LocalRotation);
                 markerComp.Spawned = true;
-                // Inherit the metadata name from the marker
                 if (_entityManager.TryGetComponent<MetaDataComponent>(markerUid, out var markerMeta) &&
                     _entityManager.TryGetComponent<MetaDataComponent>(dropshipEntity, out var destMeta))
                 {
                     _metaData.SetEntityName(dropshipEntity, markerMeta.EntityName, destMeta);
                 }
+
                 _sharedDropshipSystem.SetFactionController(dropshipEntity, faction);
                 _sharedDropshipSystem.SetDestinationType(dropshipEntity, "Dropship");
                 continue;
             }
 
-
-            // --- VENDOR MARKER LOGIC (shipside) ---
-            // Ignore markerComp.Govfor/Opfor, use platoon and markerComp.Class
-            if (TryResolvePlatoonVendor(platoon, markerComp.Class, out var vendorProtoId))
+            if (!TryResolvePlatoonVendor(platoon, markerComp.Class, out var vendorProtoId) ||
+                !_prototypeManager.TryIndex<EntityPrototype>(vendorProtoId, out var vendorProto))
             {
-                if (_prototypeManager.TryIndex<EntityPrototype>(vendorProtoId, out var vendorProto))
-                {
-                    // SpawnEntity has no rotation parameter, so spawn attached to keep the marker's rotation
-                    var spawned = _entityManager.SpawnAttachedTo(vendorProto.ID, transform.Coordinates, rotation: transform.LocalRotation);
-                    markerComp.Spawned = true;
-                    SetRequisitionsVendorAccess(spawned, markerComp.Class, faction);
-                    if (_entityManager.TryGetComponent<RotaryPhoneComponent>(spawned, out var spawnedPhone))
-                    {
-                        if (!string.IsNullOrEmpty(faction))
-                        {
-                            spawnedPhone.Faction = faction;
-                            Dirty(spawned, spawnedPhone);
-                        }
-                    }
-                }
+                continue;
             }
 
+            var spawned = _entityManager.SpawnAttachedTo(vendorProto.ID, transform.Coordinates, rotation: transform.LocalRotation);
+            markerComp.Spawned = true;
+            SetRequisitionsVendorAccess(spawned, markerComp.Class, faction);
+            if (_entityManager.TryGetComponent<RotaryPhoneComponent>(spawned, out var spawnedPhone) &&
+                !string.IsNullOrEmpty(faction))
+            {
+                spawnedPhone.Faction = faction;
+                Dirty(spawned, spawnedPhone);
+            }
         }
     }
 
@@ -639,29 +588,6 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
     {
         return faction == "govfor" && planetComp.GovforInShip ||
                faction == "opfor" && planetComp.OpforInShip;
-    }
-
-    private bool IsMarkerOnShipOrZLevel(EntityUid shipUid, TransformComponent shipTransform, TransformComponent markerTransform)
-    {
-        if (markerTransform.ParentUid == shipUid || markerTransform.GridUid == shipUid)
-            return true;
-
-        if (shipTransform.MapUid is not { } shipMap ||
-            markerTransform.MapUid is not { } markerMap)
-        {
-            return false;
-        }
-
-        if (markerMap == shipMap)
-            return false;
-
-        if (!_zLevels.TryGetZNetwork(shipMap, out var shipNetwork) ||
-            !_zLevels.TryGetZNetwork(markerMap, out var markerNetwork))
-        {
-            return false;
-        }
-
-        return shipNetwork.Value.Owner == markerNetwork.Value.Owner;
     }
 
     private bool TryResolvePlatoonVendor(

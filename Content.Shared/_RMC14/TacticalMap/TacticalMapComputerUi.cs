@@ -22,6 +22,13 @@ public sealed class TacticalMapQueenEyeMoveMsg(Vector2i position) : BoundUserInt
     public readonly Vector2i Position = position;
 }
 
+// CMU14: this is the ID in the authorized blip dictionary, not a client entity ID.
+[Serializable, NetSerializable]
+public sealed class TacticalMapQueenWatchMsg(int targetId) : BoundUserInterfaceMessage
+{
+    public readonly int TargetId = targetId;
+}
+
 [Serializable, NetSerializable]
 public sealed class TacticalMapCreateLabelMsg(Vector2i position, string text) : BoundUserInterfaceMessage
 {

@@ -71,6 +71,8 @@ public sealed partial class VehicleSupplyLiftComponent : Component
     [NonSerialized]
     public string PendingVehicle = string.Empty;
 
+    public EntityUid? PendingRequester; // CMU14: authenticate delivered fighter equipment.
+
     public string? PendingSupplySide; // CMU14
     public EntityUid? PendingSupplyConsole; // CMU14
 

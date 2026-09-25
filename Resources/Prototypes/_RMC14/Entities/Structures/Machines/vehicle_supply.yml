@@ -35,6 +35,21 @@
         type: VehicleSupplyBui
   - type: VehicleSupplyConsole
     vehicles:
+    # CMU14: fighter and portable faction-owned VTOL pad.
+    - name: Two-seat VTOL fighter
+      vehicle: CMUFighterGround
+      group: vehicle-fighter
+      bundle:
+      - CMUFighterLandingPadFolded
+      hardpoints:
+      - CMUFighterLandingPadFolded
+      - RMCDropshipAttachmentRocketPod
+      - RMCDropshipAttachmentAmmoGAU
+      - RMCDropshipAttachmentAmmoRocketMiniMike
+      - RMCDropshipAttachmentAmmoRocketKeeper
+      - RMCDropshipAttachmentAmmoRocketWidowmaker
+      - RMCDropshipAttachmentAmmoRocketHarpoon
+      - RMCDropshipAttachmentAmmoRocketNapalm
     - name: M2420 JTMV Armed
       vehicle: VehicleHumvee
       group: vehicle-support

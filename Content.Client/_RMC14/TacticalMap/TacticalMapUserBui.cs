@@ -5,6 +5,7 @@ using Robust.Client.Player;
 using Robust.Client.UserInterface.Controls;
 using Content.Shared._RMC14.Areas;
 using Content.Shared._RMC14.TacticalMap;
+using Content.Shared._RMC14.Xenonids.Eye;
 using JetBrains.Annotations;
 
 namespace Content.Client._RMC14.TacticalMap;
@@ -77,6 +78,16 @@ public sealed partial class TacticalMapUserBui(EntityUid owner, Enum uiKey) : CM
 
         Window.Wrapper.SetupUpdateButton(msg => SendPredictedMessage(msg));
         Window.Wrapper.Map.OnQueenEyeMove += position => SendPredictedMessage(new TacticalMapQueenEyeMoveMsg(position));
+        Window.Wrapper.Map.CanQueenWatchBlip = id =>
+        {
+            if (_player.LocalEntity != Owner || !EntMan.HasComponent<QueenEyeActionComponent>(Owner) ||
+                !EntMan.TryGetComponent(Owner, out TacticalMapUserComponent? current) || !current.Xenos)
+                return false;
+            var blips = current.XenoBlips;
+            return blips.TryGetValue(id, out var blip) && blip.Status == TacticalMapBlipStatus.Alive &&
+                blip.Image?.RsiState != "enemy_blip";
+        };
+        Window.Wrapper.Map.OnQueenWatch += id => SendPredictedMessage(new TacticalMapQueenWatchMsg(id));
     }
 
     protected override void UpdateState(BoundUserInterfaceState state)

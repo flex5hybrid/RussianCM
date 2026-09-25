@@ -53,7 +53,8 @@ public sealed class MohawkRampPreviewTest
                 for (var y = -12; y <= 12; y++)
                     maps.SetTile(lowerMap, pad, new Vector2i(x, y), tile);
             }
-            var approach = transform.ToMapCoordinates(new EntityCoordinates(lower, 0.5f, -6.5f));
+            // The sloped ramp row is at Y=-3.5; stand on the flat row within its 1.2-tile preview range.
+            var approach = transform.ToMapCoordinates(new EntityCoordinates(lower, 0.5f, -4.5f));
             camera = entities.SpawnEntity(null, new EntityCoordinates(lowerMap, approach.Position));
             entities.GetComponent<TransformComponent>(camera).GridTraversal = false;
             entities.EnsureComponent<EyeComponent>(camera);
@@ -106,7 +107,7 @@ public sealed class MohawkRampPreviewTest
         {
             var transform = server.EntMan.System<SharedTransformSystem>();
             transform.SetWorldPosition(camera,
-                transform.ToMapCoordinates(new EntityCoordinates(lower, 0.5f, -6.5f)).Position);
+                transform.ToMapCoordinates(new EntityCoordinates(lower, 0.5f, -4.5f)).Position);
         });
         await AssertPreview(true);
         await server.WaitAssertion(() =>

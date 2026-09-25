@@ -55,6 +55,14 @@ public sealed class CMUReconViewMessage(Vector2i offset) : BoundUserInterfaceMes
 [Serializable, NetSerializable]
 public sealed class CMUReconClassicMessage : BoundUserInterfaceMessage;
 
+[Serializable, NetSerializable]
+public sealed class CMUReconQueenEyeMoveMessage(int generation, int depth, Vector2 position) : BoundUserInterfaceMessage
+{
+    public int Generation = generation;
+    public int Depth = depth;
+    public Vector2 Position = position;
+}
+
 // Personal geometry only. The server resolves the actor, faction and destination from the session.
 [Serializable, NetSerializable]
 public sealed class CMUReconPreloadRequest(int requestId, bool preferPlanetOnShip, bool cancel = false) : EntityEventArgs
@@ -185,7 +193,30 @@ public sealed class CMUReconFeedbackMessage(string localizationKey) : BoundUserI
 }
 
 [Serializable, NetSerializable]
-public readonly record struct CMUReconContact(int Depth, TacticalMapBlip Blip);
+public readonly record struct CMUReconContact(int Depth, TacticalMapBlip Blip, string? Name = null,
+    NetEntity? CameraTarget = null, NetEntity? XenoWatchTarget = null);
+
+[Serializable, NetSerializable]
+public sealed class CMUReconXenoWatchMessage(int generation, NetEntity target) : BoundUserInterfaceMessage
+{
+    public int Generation = generation;
+    public NetEntity Target = target;
+}
+
+[Serializable, NetSerializable]
+public sealed class CMUReconCameraMessage(int generation, NetEntity? target) : BoundUserInterfaceMessage
+{
+    public int Generation = generation;
+    public NetEntity? Target = target;
+}
+
+[Serializable, NetSerializable]
+public sealed class CMUReconCameraViewMessage(int generation, NetEntity? camera, string? name = null) : BoundUserInterfaceMessage
+{
+    public int Generation = generation;
+    public NetEntity? Camera = camera;
+    public string? Name = name;
+}
 
 [Serializable, NetSerializable]
 public sealed class CMUReconContactsMessage(int generation, CMUReconContact[] contacts) : BoundUserInterfaceMessage

@@ -140,6 +140,15 @@ Contact shadows are bounded and disabled at distant zoom. The initialized occupa
 
 Read-only viewers see navigation and viewing controls only; the pencil, text, Send, colour, width, undo and clear UI is hidden until the server confirms drawing access.
 
+Friendly marine contacts include their names; the Marine names checkbox hides these labels without hiding icons.
+Anonymous enemy sensor contacts never include names or camera targets. Trained overwatch operators using an
+overwatch console can click highlighted marine icons to open the existing helmet camera in a separate window.
+The map remains open, and dragging, pencil strokes and text placement retain their normal behavior.
+The server checks the current visible contact, console access, skill, squad faction and worn camera.
+Closing the map or camera, removing the helmet, or losing access releases the existing overwatch eye and PVS
+subscription. This uses the usual movement/damage cancellation and does not add camera access to personal maps,
+ghost maps, map tables or command tablets.
+
 Batched edits carry a generation, request ID, bounded additions and removals. Each addition contains continuous map points, color, width, signed floor and optional plain text. The server validates the whole batch before applying any mutation and acknowledges it before the client discards its draft. The server checks open UI,
 access, range, leadership, generation, current faction/network membership, finite coordinates, map bounds,
 color and payload size. Terrain clearance is irrelevant to pencil annotations.

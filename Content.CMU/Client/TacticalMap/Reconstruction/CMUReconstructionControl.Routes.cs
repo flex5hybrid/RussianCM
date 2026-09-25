@@ -15,6 +15,9 @@ public sealed partial class CMUReconstructionControl
     private readonly List<Vector2> _projectedStroke = [];
     private bool _drawing;
     private Vector2 _lastSample;
+    private bool _queenEyePress;
+    public Func<bool>? QueenEyeActive;
+    public Action<Vector2, int>? OnQueenEyeMove;
     public bool DrawingEnabled { get; set; }
     public bool TextEnabled { get; set; }
     public float StrokeWidth { get; set; } = 3;
@@ -129,7 +132,7 @@ public sealed partial class CMUReconstructionControl
         _stroke.Clear();
     }
 
-    public void CancelStroke() { _drawing = false; _stroke.Clear(); }
+    public void CancelStroke() { _drawing = false; _stroke.Clear(); _pressedContact = null; _pressedXeno = null; _queenEyePress = false; }
 
     protected override void EnteredTree()
     {
@@ -149,6 +152,9 @@ public sealed partial class CMUReconstructionControl
         else if (type == KeyEventType.Down && !args.Handled && UserInterfaceManager.CurrentlyHovered == this)
         {
             FinishStroke();
+            _pressedContact = null;
+            _pressedXeno = null;
+            _queenEyePress = false;
             _panning = false;
             _rotating = true;
             _lastMouse = UserInterfaceManager.MousePositionScaled.Position - GlobalPosition;
@@ -161,6 +167,9 @@ public sealed partial class CMUReconstructionControl
         base.KeyBindDown(args);
         if (args.Function != EngineKeyFunctions.UIClick && args.Function != EngineKeyFunctions.UIRightClick) return;
         _lastMouse = args.RelativePosition;
+        _pressedContact = null;
+        _pressedXeno = null;
+        _queenEyePress = false;
         if (!_rotating && args.Function == EngineKeyFunctions.UIClick && TextEnabled && Scene is { } scene)
         {
             if (TryDrawingPoint(args.RelativePosition, out var point)) OnTextPoint?.Invoke(point, scene.MinDepth + _selectedLevel);
@@ -175,6 +184,13 @@ public sealed partial class CMUReconstructionControl
         {
             FinishStroke();
             _panning = true;
+            if (args.Function == EngineKeyFunctions.UIClick)
+            {
+                _pressedXeno = XenoAt(args.RelativePosition);
+                _queenEyePress = _pressedXeno == null && QueenEyeActive?.Invoke() == true;
+                if (!_queenEyePress && _pressedXeno == null) _pressedContact = CameraAt(args.RelativePosition);
+                _contactPress = args.RelativePosition;
+            }
         }
         args.Handle();
     }
@@ -185,16 +201,40 @@ public sealed partial class CMUReconstructionControl
         if (args.Function != EngineKeyFunctions.UIClick && args.Function != EngineKeyFunctions.UIRightClick) return;
         if (args.Function == EngineKeyFunctions.UIClick)
         {
+            if (_pressedXeno is { } xeno && !DrawingEnabled && !TextEnabled &&
+                Vector2.DistanceSquared(_contactPress, args.RelativePosition) < 16 && XenoAt(args.RelativePosition) == xeno)
+                OnXenoWatchRequested?.Invoke(xeno);
+            if (_queenEyePress && !DrawingEnabled && !TextEnabled && QueenEyeActive?.Invoke() == true &&
+                Vector2.DistanceSquared(_contactPress, args.RelativePosition) < 16 &&
+                Scene is { } scene && TryDrawingPoint(args.RelativePosition, out var point))
+                OnQueenEyeMove?.Invoke(point, scene.MinDepth + _selectedLevel);
+            if (_pressedContact is { } target && Vector2.DistanceSquared(_contactPress, args.RelativePosition) < 16 &&
+                CameraAt(args.RelativePosition) == target)
+                OnCameraRequested?.Invoke(target);
             SampleStroke(args.RelativePosition, true);
             FinishStroke();
         }
         _panning = false;
+        _pressedContact = null;
+        _pressedXeno = null;
+        _queenEyePress = false;
         args.Handle();
     }
 
     protected override void MouseMove(GUIMouseMoveEventArgs args)
     {
         base.MouseMove(args);
+        ToolTip = DrawingEnabled || TextEnabled ? null :
+            XenoAt(args.RelativePosition) != null ? Loc.GetString("cmu-recon-xeno-watch-click") :
+            QueenEyeActive?.Invoke() == true ? Loc.GetString("cmu-recon-queen-eye-click") :
+            CameraAt(args.RelativePosition) != null ? Loc.GetString("cmu-recon-camera-click") : null;
+        if (_pressedContact != null || _pressedXeno != null || _queenEyePress)
+        {
+            if (Vector2.DistanceSquared(_contactPress, args.RelativePosition) < 16) return;
+            _pressedContact = null;
+            _pressedXeno = null;
+            _queenEyePress = false;
+        }
         var delta = args.RelativePosition - _lastMouse;
         _lastMouse = args.RelativePosition;
         if (_drawing) SampleStroke(args.RelativePosition);
@@ -220,8 +260,12 @@ public sealed partial class CMUReconstructionControl
     protected override void MouseExited()
     {
         base.MouseExited();
+        ToolTip = null;
         FinishStroke();
         _panning = false;
         _rotating = false;
+        _pressedContact = null;
+        _pressedXeno = null;
+        _queenEyePress = false;
     }
 }

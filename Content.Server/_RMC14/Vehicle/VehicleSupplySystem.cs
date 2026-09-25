@@ -308,6 +308,9 @@ public sealed partial class VehicleSupplySystem : EntitySystem
 
     private void OnAutomatedVendorVended(Entity<ActorComponent> ent, ref RMCAutomatedVendedUserEvent args)
     {
+        // CMU14: fighter supply storage and faction ownership.
+        var vended = new VehicleSupplyVendedEvent(ent.Owner);
+        RaiseLocalEvent(args.Item, ref vended);
         if (!HasComp<HardpointItemComponent>(args.Item))
             return;
 
@@ -420,10 +423,11 @@ public sealed partial class VehicleSupplySystem : EntitySystem
         if (!TryGetLift(ent.Owner, ent.Comp, out var lift))
             return;
 
-        TryToggleLift(ent, lift, args.Raise);
+        TryToggleLift(ent, lift, args.Raise, args.Actor); // CMU14
     }
 
-    private void TryToggleLift(Entity<VehicleSupplyConsoleComponent> console, Entity<VehicleSupplyLiftComponent> lift, bool raise)
+    // CMU14 method: retain the requesting operator for delivered equipment.
+    private void TryToggleLift(Entity<VehicleSupplyConsoleComponent> console, Entity<VehicleSupplyLiftComponent> lift, bool raise, EntityUid? requester = null)
     {
         var comp = lift.Comp;
         if (comp.NextMode != null || comp.Busy)
@@ -479,6 +483,8 @@ public sealed partial class VehicleSupplySystem : EntitySystem
             if (canQueueVehicle && nextVehicle != null)
             {
                 comp.PendingVehicle = nextVehicle;
+                // CMU14: fighter supply storage and faction ownership.
+                comp.PendingRequester = requester;
             }
             else
             {
@@ -508,8 +514,12 @@ public sealed partial class VehicleSupplySystem : EntitySystem
     {
         var comp = lift.Comp;
         var coords = _transform.GetMapCoordinates(lift);
-        foreach (var candidate in _lookup.GetEntitiesInRange<VehicleComponent>(coords, comp.Radius))
+        // CMU14: fighter supply storage and faction ownership.
+        foreach (var candidateUid in _lookup.GetEntitiesInRange(coords, comp.Radius))
         {
+            if (!HasComp<VehicleComponent>(candidateUid) && !HasComp<VehicleSupplyStorageComponent>(candidateUid))
+                continue;
+            var candidate = new Entity<TransformComponent>(candidateUid, Transform(candidateUid));
             if (Deleted(candidate.Owner) || candidate.Owner == comp.ActiveVehicle)
                 continue;
 
@@ -524,6 +534,13 @@ public sealed partial class VehicleSupplySystem : EntitySystem
 
     private bool IsLoweringBlocked(Entity<VehicleSupplyLiftComponent> lift)
     {
+        // CMU14: fighter supply storage and faction ownership.
+        if (lift.Comp.ActiveVehicle is { } supplied && IsOnLift(lift, supplied))
+        {
+            var attempt = new VehicleSupplyStorageAttemptEvent();
+            RaiseLocalEvent(supplied, ref attempt);
+            if (attempt.Cancelled) return true;
+        }
         if (lift.Comp.ActiveVehicle is { } active &&
             IsOnLift(lift, active) &&
             _rmcVehicles.TryGetInteriorMapId(active, out var interiorMap))
@@ -738,6 +755,9 @@ public sealed partial class VehicleSupplySystem : EntitySystem
 
     private void FinishRaisedVehicle(Entity<VehicleSupplyLiftComponent> lift, EntityUid vehicle, string vehicleId, string key)
     {
+        // CMU14: fighter supply storage and faction ownership.
+        var delivered = new VehicleSupplyDeliveredEvent(lift, lift.Comp.PendingRequester);
+        RaiseLocalEvent(vehicle, ref delivered);
         lift.Comp.ActiveVehicle = vehicle;
         lift.Comp.ActiveVehicleId = vehicleId;
         ClaimOrderedEntry(lift.Comp, key, lift.Comp.PendingVehicleGroup);
@@ -757,6 +777,8 @@ public sealed partial class VehicleSupplySystem : EntitySystem
     {
         lift.PendingLoadouts.Clear();
         lift.PendingBundle.Clear();
+        // CMU14: fighter supply storage and faction ownership.
+        lift.PendingRequester = null;
     }
 
     private static void QueuePendingLoadout(
@@ -803,7 +825,10 @@ public sealed partial class VehicleSupplySystem : EntitySystem
             if (!_prototypes.TryIndex<EntityPrototype>(proto, out _))
                 continue;
 
-            SpawnAtPosition(proto.Id, origin.Offset(offsets[i % offsets.Length]));
+            // CMU14: fighter supply storage and faction ownership.
+            var item = SpawnAtPosition(proto.Id, origin.Offset(offsets[i % offsets.Length]));
+            var delivered = new VehicleSupplyDeliveredEvent(lift, lift.Comp.PendingRequester);
+            RaiseLocalEvent(item, ref delivered);
         }
     }
 

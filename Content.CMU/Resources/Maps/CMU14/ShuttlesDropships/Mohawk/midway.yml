@@ -6,7 +6,7 @@ meta:
   forkId: ''
   forkVersion: ''
   time: '2026-09-18T00:00:00'
-  entityCount: 285
+  entityCount: 287
 maps: []
 grids:
 - 1
@@ -137,6 +137,17 @@ entities:
     - type: Shuttle
     - type: Dropship
       tacticalLandFootprint: 17,24
+      startupSound:
+        path: /Audio/CMU14/Dropships/Mohawk/takeoff.ogg
+        params:
+          volume: 6
+      travelSound:
+        path: /Audio/CMU14/Dropships/Mohawk/flight.ogg
+        params:
+          volume: -3
+          loop: true
+      arrivalSound:
+        path: /Audio/CMU14/Dropships/Mohawk/landing.ogg
     - type: MultiDeckDropship
       landingOffset: 1
       exteriorDecks:
@@ -2222,3 +2233,19 @@ entities:
     - type: Transform
       parent: 1
       pos: 8.5,3.5
+- proto: CMUMohawkMidwayOmahaPilot9e5b91c0ba
+  entities:
+  - uid: 286
+    components:
+    - type: Transform
+      parent: 1
+      pos: -0.5,9.5
+      rot: 3.141592653589793 rad
+- proto: CMUMohawkMidwayOmahaPilot9e5b91c0ba
+  entities:
+  - uid: 287
+    components:
+    - type: Transform
+      parent: 1
+      pos: 1.5,9.5
+      rot: 3.141592653589793 rad

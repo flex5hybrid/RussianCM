@@ -31,6 +31,8 @@ public sealed class MohawkOccupantsTest
 {
     [TestCase("omaha")]
     [TestCase("midway")]
+    [TestCase("omaha_navy")]
+    [TestCase("midway_navy")]
     public async Task SeatsKeepPassengersOutOfWallsAndReplicateVisualOffsets(string variant)
     {
         await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true, Connected = true });
@@ -42,7 +44,10 @@ public sealed class MohawkOccupantsTest
             ship = LoadShip(entities, variant);
             var transform = entities.System<SharedTransformSystem>();
             var seats = entities.EntityQuery<MohawkSeatComponent>().ToArray();
-            Assert.That(seats, Has.Length.EqualTo(variant == "omaha" ? 64 : 19));
+            Assert.That(seats, Has.Length.EqualTo(variant.StartsWith("omaha") ? 64 : 21));
+            foreach (var x in new[] { -0.5f, 1.5f })
+                Assert.That(seats.Count(s => entities.GetComponent<TransformComponent>(s.Owner).LocalPosition == new Vector2(x, 9.5f)),
+                    Is.EqualTo(1), "Both cockpit crew consoles need a seat.");
             foreach (var seat in seats)
             {
                 var xform = entities.GetComponent<TransformComponent>(seat.Owner);

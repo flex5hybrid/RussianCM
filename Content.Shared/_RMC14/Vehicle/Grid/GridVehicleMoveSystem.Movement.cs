@@ -171,6 +171,9 @@ public sealed partial class GridVehicleMoverSystem : EntitySystem
 
         var hasThrottle = throttle != 0f;
         var profile = GetDriveProfile(uid, mover);
+        // CMU14: preserve analog throttle from aircraft taxi assistance.
+        var throttleScale = Math.Clamp(MathF.Abs(throttle), 0, 1);
+        profile = profile with { MaxSpeed = profile.MaxSpeed * throttleScale, MaxReverseSpeed = profile.MaxReverseSpeed * throttleScale };
         var throttleDirection = throttle < 0f ? new Vector2i(0, -1) : new Vector2i(0, 1);
         var speedResult = hasThrottle
             ? GridVehicleMotionSimulator.StepDriveSpeed(

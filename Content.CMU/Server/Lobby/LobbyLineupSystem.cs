@@ -13,7 +13,7 @@ using Robust.Shared.Timing;
 namespace Content.Server.CMU14.Lobby;
 
 /// <summary>Transient lobby gestures. No gameplay entities or saved character data are changed.</summary>
-public sealed class LobbyLineupSystem : EntitySystem
+public sealed partial class LobbyLineupSystem : EntitySystem
 {
     [Dependency] private GameTicker _ticker = default!;
     [Dependency] private IGameTiming _timing = default!;
@@ -27,9 +27,12 @@ public sealed class LobbyLineupSystem : EntitySystem
     {
         base.Initialize();
         SubscribeNetworkEvent<LobbyLineupEmoteRequest>(OnEmote);
+        SubscribeNetworkEvent<LobbyPartyShowRequest>(OnShow);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnCleanup);
         _players.PlayerStatusChanged += OnPlayerStatusChanged;
         Subs.CVar(_configuration, CCVars.LobbyPartyTime, OnPartyTimeChanged);
+        Subs.CVar(_configuration, CCVars.LobbyPartyTimeFlyby, OnPartyTimeChanged);
+        Subs.CVar(_configuration, CCVars.LobbyPartyTimeParade, OnPartyTimeChanged);
     }
 
     public override void Shutdown()
@@ -40,17 +43,19 @@ public sealed class LobbyLineupSystem : EntitySystem
 
     private void OnCleanup(RoundRestartCleanupEvent ev)
     {
+        ResetShows();
         _nextAction.Clear();
         _nextRally.Clear();
     }
 
     private void OnPartyTimeChanged(bool enabled)
     {
+        // A live setting change must not reset the shared cooldown and overlap an existing show.
+        _nextAutomaticShow = _timing.RealTime + TimeSpan.FromSeconds(20);
         _nextAction.Clear();
         _nextRally.Clear();
         // Clients retain their previews long enough to play the departure before hiding the panel.
-        if (enabled)
-            _ticker.UpdateInfoText();
+        _ticker.UpdateInfoText();
     }
 
     private void OnPlayerStatusChanged(object? sender, SessionStatusEventArgs args)
@@ -66,7 +71,7 @@ public sealed class LobbyLineupSystem : EntitySystem
 
     public bool TryEmote(ICommonSession session, LobbyLineupEmote emote)
     {
-        if (!_configuration.GetCVar(CCVars.LobbyPartyTime) ||
+        if (!LobbyPartySettings.IsEnabled(_configuration) ||
             _ticker.RunLevel != GameRunLevel.PreRoundLobby || session.Status != SessionStatus.InGame ||
             !session.Channel.IsConnected || !Enum.IsDefined(emote) ||
             _ticker.PlayerGameStatuses.GetValueOrDefault(session.UserId) != PlayerGameStatus.ReadyToPlay ||

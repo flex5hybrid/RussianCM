@@ -23,6 +23,7 @@ public sealed partial class LobbyLineupShowcaseCommand : LocalizedCommands
     private bool _pendingWindow;
     private bool _pendingDebug;
     private int _pendingCount = 60;
+    private LobbyPartyShow? _pendingShow;
 
     public override string Command => "lobbyshowcase";
 
@@ -31,7 +32,8 @@ public sealed partial class LobbyLineupShowcaseCommand : LocalizedCommands
         var count = 60;
         var window = false;
         var debug = false;
-        if (args.Length > 3)
+        LobbyPartyShow? show = null;
+        if (args.Length > 4)
         {
             shell.WriteError(Help);
             return;
@@ -42,6 +44,10 @@ public sealed partial class LobbyLineupShowcaseCommand : LocalizedCommands
                 window = true;
             else if (arg == "debug")
                 debug = true;
+            else if (arg == "flyby")
+                show = LobbyPartyShow.Flyby;
+            else if (arg == "parade")
+                show = LobbyPartyShow.Parade;
             else if (arg == "off" && args.Length == 1)
                 break;
             else if (!int.TryParse(arg, out count) || count is < 1 or > 256)
@@ -67,11 +73,12 @@ public sealed partial class LobbyLineupShowcaseCommand : LocalizedCommands
             _pendingWindow = window;
             _pendingDebug = debug;
             _pendingCount = count;
+            _pendingShow = show;
             _states.OnStateChanged += OnStateChanged;
             shell.WriteLine(Loc.GetString("cmu-lobby-lineup-showcase-pending"));
             return;
         }
-        Show(window, count, debug);
+        Show(window, count, debug, show);
     }
 
     private void OnStateChanged(StateChangedEventArgs args)
@@ -79,16 +86,16 @@ public sealed partial class LobbyLineupShowcaseCommand : LocalizedCommands
         if (args.NewState is not LobbyState)
             return;
         _states.OnStateChanged -= OnStateChanged;
-        Show(_pendingWindow, _pendingCount, _pendingDebug);
+        Show(_pendingWindow, _pendingCount, _pendingDebug, _pendingShow);
     }
 
-    private void Show(bool window, int count, bool debug)
+    private void Show(bool window, int count, bool debug, LobbyPartyShow? show)
     {
         var lobby = (_states.CurrentState as LobbyState)?.Lobby;
         var entries = CreateEntries(_prototypes, count);
         if (lobby != null && !window)
         {
-            lobby.Lineup.SetShowcase(entries, debug);
+            lobby.Lineup.SetShowcase(entries, debug, show);
             return;
         }
 
@@ -101,7 +108,7 @@ public sealed partial class LobbyLineupShowcaseCommand : LocalizedCommands
         };
         _window.Contents.AddChild(panel);
         _window.OpenCentered();
-        panel.SetShowcase(entries, debug);
+        panel.SetShowcase(entries, debug, show);
     }
 
     public static List<LobbyLineupEntry> CreateEntries(IPrototypeManager prototypes, int count = 60)

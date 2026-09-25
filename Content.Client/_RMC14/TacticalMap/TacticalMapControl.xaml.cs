@@ -106,6 +106,8 @@ public sealed partial class TacticalMapControl : TextureRect
     public Action<Vector2i, string>? OnBlipRightClicked;
     public Action? OnUserInteraction;
     public Action<Vector2i>? OnQueenEyeMove;
+    public Func<int, bool>? CanQueenWatchBlip;
+    public Action<int>? OnQueenWatch;
     public Action<Vector2i, string>? OnCreateLabel;
     public Action<Vector2i, string>? OnEditLabel;
     public Action<Vector2i>? OnDeleteLabel;
@@ -376,6 +378,9 @@ public sealed partial class TacticalMapControl : TextureRect
     }
 
     private TacticalMapBlip? GetBlipAtPosition(Vector2 controlPosition)
+        => GetBlipIndexAtPosition(controlPosition) is { } index ? _blips![index] : null;
+
+    private int? GetBlipIndexAtPosition(Vector2 controlPosition)
     {
         if (_blips == null || Texture == null)
             return null;
@@ -384,8 +389,9 @@ public sealed partial class TacticalMapControl : TextureRect
         (Vector2 actualSize, Vector2 actualTopLeft, float overlayScale) = GetDrawParameters();
         float clickTolerance = ClickTolerance * overlayScale;
 
-        foreach (TacticalMapBlip blip in _blips)
+        for (var i = 0; i < _blips.Length; i++)
         {
+            var blip = _blips[i];
             Vector2 blipPosition = IndicesToPosition(blip.Indices) * overlayScale + actualTopLeft;
             float scaledBlipSize = GetScaledBlipSize(overlayScale);
             blipPosition -= new Vector2(scaledBlipSize / 2); // CMU14: match the centered icon rectangle.
@@ -396,7 +402,7 @@ public sealed partial class TacticalMapControl : TextureRect
             );
 
             if (blipRect.Contains(pixelPosition))
-                return blip;
+                return i;
         }
 
         return null;
@@ -853,6 +859,14 @@ public sealed partial class TacticalMapControl : TextureRect
 
         if (args.Function == EngineKeyFunctions.UIClick)
         {
+            if (!Drawing && !IsCanvas && CanQueenWatchBlip != null &&
+                GetBlipIndexAtPosition(args.RelativePosition) is { } index &&
+                _blipEntityIds != null && index < _blipEntityIds.Length && CanQueenWatchBlip(_blipEntityIds[index]))
+            {
+                OnQueenWatch?.Invoke(_blipEntityIds[index]);
+                args.Handle();
+                return;
+            }
             if (HandleQueenEyeClick(args))
                 return;
 

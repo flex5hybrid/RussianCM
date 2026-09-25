@@ -99,6 +99,8 @@ public sealed partial class CMUTacticalReconstructionSystem : EntitySystem
         public bool ReuseGeometry;
         public int[] ChunkOrder = [];
         public CMUReconContactsMessage? LastContacts;
+        public EntityUid? CameraTarget;
+        public EntityUid? Camera;
     }
 
     public override void Initialize()
@@ -169,12 +171,13 @@ public sealed partial class CMUTacticalReconstructionSystem : EntitySystem
             EntityManager.System<Content.Server._RMC14.TacticalMap.TacticalMapSystem>().ResolveReconstructionFaction((ent, computer), args.Actor);
         if (!TryCreateSurvey(ent, args, out var survey))
         {
-            _surveys.Remove(key);
+            CloseSurvey(ent, args.Actor);
             _ui.ServerSendUiMessage(ent, UiKey(ent), new CMUReconFeedbackMessage("cmu-recon-no-map") { RequestId = args.RequestId }, args.Actor);
             return;
         }
         survey.NextRequest = _timing.CurTime + TimeSpan.FromSeconds(2);
         survey.NextSwitch = _timing.CurTime + TimeSpan.FromSeconds(0.25);
+        CloseSurvey(ent, args.Actor);
         _surveys[key] = survey;
         if (computer != null)
             EntityManager.System<Content.Server._RMC14.TacticalMap.TacticalMapSystem>().RefreshReconstructionContacts((ent, computer));
@@ -531,7 +534,7 @@ public sealed partial class CMUTacticalReconstructionSystem : EntitySystem
         {
             if (!CanUse(key.Console, key.Actor) || !_ui.IsUiOpen(key.Console, UiKey(key.Console), key.Actor) || !IsCurrentSurvey(key.Console, survey))
             {
-                _surveys.Remove(key);
+                CloseSurvey(key.Console, key.Actor);
                 if (!TerminatingOrDeleted(key.Console)) _ui.CloseUi(key.Console, UiKey(key.Console), key.Actor);
                 continue;
             }

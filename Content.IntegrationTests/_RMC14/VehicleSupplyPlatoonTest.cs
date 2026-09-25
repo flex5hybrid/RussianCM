@@ -303,7 +303,7 @@ public sealed class VehicleSupplyPlatoonTest : GameTest
     private void Queue(Depot depot, string vehicle)
     {
         depot.Console.Comp.SelectedVehicle = vehicle;
-        Invoke("TryToggleLift", depot.Console, depot.Lift, true);
+        Invoke("TryToggleLift", depot.Console, depot.Lift, true, null!);
     }
 
     private void Complete(Depot depot)

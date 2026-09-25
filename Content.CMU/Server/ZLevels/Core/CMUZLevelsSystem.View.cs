@@ -872,7 +872,7 @@ public sealed partial class CMUZLevelsSystem
                         if (highGround.PreviewRange + 0.05f > ExamineSystemShared.MaxRaycastRange)
                             Logger.GetSawmill("content").Warning($"CanPreviewUpperZFromStairCore: range ({highGround.PreviewRange + 0.05f}) exceeds max raycast range ({ExamineSystemShared.MaxRaycastRange})!");
 
-                        if (Vector2.DistanceSquared(origin.Position, target.Position) > range * range)
+                        if (Vector2.DistanceSquared(origin.Position, target.Position) > highGround.PreviewRange * highGround.PreviewRange)
                             continue;
 
                         if (profiling)

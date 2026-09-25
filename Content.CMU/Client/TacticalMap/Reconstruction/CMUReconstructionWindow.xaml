@@ -41,6 +41,7 @@
             <CheckBox Name="Isolate" Text="{Loc cmu-recon-isolate}" />
             <CheckBox Name="Labels" Text="{Loc cmu-recon-labels}" Pressed="True" />
             <CheckBox Name="Contacts" Text="{Loc cmu-recon-contacts}" Pressed="True" />
+            <CheckBox Name="MarineNames" Text="{Loc cmu-recon-marine-names}" />
             <BoxContainer Name="DrawingSidebar" Orientation="Vertical" SeparationOverride="7" Visible="False">
               <Label Text="{Loc cmu-recon-draw}" FontColorOverride="#E7BC78" Margin="0,12,0,0" />
               <GridContainer Name="Colors" Columns="3" />
