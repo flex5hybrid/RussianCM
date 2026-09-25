@@ -158,6 +158,8 @@
 - type: job
   parent: AU14JobDSPilotBase
   id: AU14JobGOVFORDSPilot
+  marineAuthorityLevel: 7
+  spawnPointJob: CMRifleman
   hidden: false
   setPreference: true
   basePlaytimeTracker: true
