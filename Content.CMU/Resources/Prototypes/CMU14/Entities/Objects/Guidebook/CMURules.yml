@@ -42,8 +42,8 @@
   children:
   - AU14GamemodeRulesInsurgency
   # - AU14GamemodeRulesForceOnForce
-  # - AU14GamemodeRulesDistressSignal
-  # - AU14GamemodeRulesColonyFall
+  - AU14GamemodeRulesDistressSignal
+  - AU14GamemodeRulesColonyFall
   # - AU14GamemodeRulesPrometheus
 
 - type: guideEntry
@@ -70,19 +70,19 @@
 #   priority: 7
 #   text: "/ServerInfo/Guidebook/CMU14/Rules/Gamemodes/AU14GamemodeRulesForceOnForce.xml"
 #
-# - type: guideEntry
-#   parent: RMC
-#   id: AU14GamemodeRulesDistressSignal
-#   name: cmu-guide-entry-rules-distress-signal
-#   priority: 8
-#   text: "/ServerInfo/Guidebook/CMU14/Rules/Gamemodes/AU14GamemodeRulesDistressSignal.xml"
+- type: guideEntry
+  parent: RMC
+  id: AU14GamemodeRulesDistressSignal
+  name: cmu-guide-entry-rules-distress-signal
+  priority: 8
+  text: "/ServerInfo/Guidebook/CMU14/Rules/Gamemodes/AU14GamemodeRulesDistressSignal.xml"
                #
-# - type: guideEntry
-#   parent: RMC
-#   id: AU14GamemodeRulesColonyFall
-#   name: cmu-guide-entry-rules-colony-fall
-#   priority: 9
-#   text: "/ServerInfo/Guidebook/CMU14/Rules/Gamemodes/AU14GamemodeRulesColonyFall.xml"
+- type: guideEntry
+  parent: RMC
+  id: AU14GamemodeRulesColonyFall
+  name: cmu-guide-entry-rules-colony-fall
+  priority: 9
+  text: "/ServerInfo/Guidebook/CMU14/Rules/Gamemodes/AU14GamemodeRulesColonyFall.xml"
 #
 # - type: guideEntry
 #   parent: RMC
