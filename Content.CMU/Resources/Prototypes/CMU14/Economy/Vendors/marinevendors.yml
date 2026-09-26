@@ -615,10 +615,6 @@
         name: Black Beret
       - id: AU14CamoPatrolCap
         amount: 10
-    - name: Backpack
-      entries:
-      - id: RMCBackpackRTO
-        amount: 5
     - name: Pouches
       entries:
       - id: AU14PouchCommandFill
@@ -1063,6 +1059,10 @@
         amount: 80
       - id: AU14PouchGasMaskBag
         amount: 20
+    - name: Hearing Protection
+      entries:
+      - id: CMUHeadElectronicHearingProtection
+        amount: 60
     - name: Optics
       entries:
       - id: RMCLaserDesignatorPVE

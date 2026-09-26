@@ -261,8 +261,10 @@ namespace Content.Server.Preferences.Managers
                 profile.Height,
                 profile.Weight,
                 Enum.TryParse<BuildType>(profile.Build, out var build) ? build : BuildType.Average,
-                profile.HideMetaInformation
-            ).WithTTSVoice(HumanoidCharacterProfile.ValidateTTSVoice(profile.TTSVoice, _prototypeManager));
+                profile.HideMetaInformation)/
+            .WithTTSVoice(HumanoidCharacterProfile.ValidateTTSVoice(profile.TTSVoice, _prototypeManager));
+            // CMU14: Force on Force roles, hijacking, announcements and identification.
+            .WithForceOnForcePreferences((ForceOnForceSide) profile.FoFSide, (ForceOnForceFallback) profile.FoFFallback);
         }
 
         private static HashSet<ProtoId<ThreatPrototype>> ConvertThreatPreferences(string? raw)
