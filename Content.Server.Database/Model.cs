@@ -59,6 +59,7 @@ namespace Content.Server.Database
         public DbSet<RMCLinkedAccount> RMCLinkedAccounts { get; set; } = default!;
         public DbSet<RMCPatronTier> RMCPatronTiers { get; set; } = default!;
         public DbSet<RMCPatron> RMCPatrons { get; set; } = default!;
+        public DbSet<CMUSponsorPreferences> CMUSponsorPreferences { get; set; } = default!; // CMU14
         public DbSet<RMCLinkingCodes> RMCLinkingCodes { get; set; } = default!;
         public DbSet<RMCLinkedAccountLogs> RMCLinkedAccountLogs { get; set; } = default!;
         public DbSet<RMCPatronLobbyMessage> RMCPatronLobbyMessages { get; set; } = default!;
@@ -475,6 +476,14 @@ namespace Content.Server.Database
             modelBuilder.Entity<RMCPatronTier>()
                 .HasIndex(t => t.DiscordRole)
                 .IsUnique();
+
+            // CMU14: choices belong to the player independently of the subscription row.
+            modelBuilder.Entity<CMUSponsorPreferences>()
+                .HasOne(p => p.Player)
+                .WithMany()
+                .HasForeignKey(p => p.PlayerId)
+                .HasPrincipalKey(p => p.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<RMCLinkingCodes>()
                 .HasOne(l => l.Player)

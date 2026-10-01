@@ -2027,6 +2027,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("uuid")
                         .HasColumnName("patron_id");
 
+                    b.Property<bool>("Approved")
+                        .HasColumnType("boolean")
+                        .HasColumnName("approved");
+
                     b.Property<string>("Message")
                         .IsRequired()
                         .HasMaxLength(500)
@@ -3660,6 +3664,46 @@ namespace Content.Server.Database.Migrations.Postgres
                 {
                     b.Navigation("Members");
                 });
+            modelBuilder.Entity("Content.Server.Database.CMUSponsorPreferences", b =>
+                {
+                    b.Property<Guid>("PlayerId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("player_id");
+
+                    b.Property<string>("ApprovedFigurineDescription")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("approved_figurine_description");
+
+                    b.Property<string>("CustomItem")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("custom_item");
+
+                    b.Property<string>("Settings")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("settings");
+
+                    b.HasKey("PlayerId")
+                        .HasName("PK_cmu_sponsor_preferences");
+
+                    b.ToTable("cmu_sponsor_preferences", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.CMUSponsorPreferences", b =>
+                {
+                    b.HasOne("Content.Server.Database.Player", "Player")
+                        .WithMany()
+                        .HasForeignKey("PlayerId")
+                        .HasPrincipalKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_cmu_sponsor_preferences_player_player_id1");
+
+                    b.Navigation("Player");
+                });
+
 #pragma warning restore 612, 618
         }
     }

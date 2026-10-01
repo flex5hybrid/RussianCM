@@ -1,0 +1,20 @@
+uniform lowp vec4 trimColor;
+varying highp vec2 localUV;
+
+void vertex() {
+    localUV = tCoord2;
+}
+
+void fragment() {
+    lowp vec4 base = texture2D(TEXTURE, UV);
+    lowp float left = texture2D(TEXTURE, UV - vec2(TEXTURE_PIXEL_SIZE.x, 0.0)).a;
+    lowp float right = texture2D(TEXTURE, UV + vec2(TEXTURE_PIXEL_SIZE.x, 0.0)).a;
+    lowp float below = texture2D(TEXTURE, UV + vec2(0.0, TEXTURE_PIXEL_SIZE.y)).a;
+    // Do not sample into an adjacent animation frame at the edge of the RSI region.
+    left *= step(0.04, localUV.x);
+    right *= step(localUV.x, 0.96);
+    below *= step(localUV.y, 0.96);
+    lowp float edge = 1.0 - step(0.5, min(left, min(right, below)));
+    lowp float shade = 0.55 + 0.45 * max(base.r, max(base.g, base.b));
+    COLOR = vec4(mix(base.rgb, trimColor.rgb * shade, edge * trimColor.a), base.a);
+}

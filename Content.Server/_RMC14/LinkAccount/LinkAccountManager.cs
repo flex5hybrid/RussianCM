@@ -33,6 +33,8 @@ public sealed partial class LinkAccountManager : IPostInjectInit
     {
         var patron = await _db.GetPatron(player.UserId, cancel);
         var linked = await _db.HasLinkedAccount(player.UserId, cancel);
+        var cosmetics = await _db.GetCMUSponsorPreferences(player.UserId.UserId); // CMU14
+        var settings = DeserializeSponsorSettings(cosmetics?.Settings, patron?.GhostColor); // CMU14
         cancel.ThrowIfCancellationRequested();
 
         var tier = patron?.Tier;
@@ -60,13 +62,15 @@ public sealed partial class LinkAccountManager : IPostInjectInit
             shoutouts = new SharedRMCRoundEndShoutouts(marineName, xenoName);
 
         Robust.Shared.Maths.Color? ghostColor = null;
-        if (patron?.GhostColor is { } patronColor)
+        if (settings.GhostColor is { } patronColor) // CMU14: settings survive subscription removal
         {
             var sysColor = Color.FromArgb(patronColor);
             ghostColor = new Robust.Shared.Maths.Color(sysColor.R, sysColor.G, sysColor.B, sysColor.A);
         }
 
-        var connected = new SharedRMCPatronFull(sharedTier, linked, ghostColor, lobbyMessage, shoutouts);
+        var connected = new SharedRMCPatronFull(sharedTier, linked, ghostColor, lobbyMessage, shoutouts,
+            settings, cosmetics?.ApprovedFigurineDescription ?? "", cosmetics?.CustomItem ?? "",
+            GetSponsorFigurine(player.UserId)); // CMU14
         _connected[player.UserId] = connected;
         PatronUpdated?.Invoke((player.UserId, connected));
     }
@@ -79,6 +83,7 @@ public sealed partial class LinkAccountManager : IPostInjectInit
     private void ClientDisconnected(ICommonSession player)
     {
         _connected.Remove(player.UserId);
+        _sponsorLastSave.Remove(player.UserId); // CMU14
     }
 
     private void SendPatronStatus(ICommonSession player)
@@ -180,9 +185,7 @@ public sealed partial class LinkAccountManager : IPostInjectInit
         if (GetConnectedPatron(user)?.Tier is not { GhostColor: true })
             return;
 
-        Color? sysColor = color == null ? null : Color.FromArgb(color.Value.ToArgb());
-        _db.SetGhostColor(user, sysColor);
-        OnPatronUpdated(user, p => p with { GhostColor = color });
+        SaveSponsorGhostColor(user, color); // CMU14: use the same serialized persistence path as other cosmetics
     }
 
     private void OnPatronUpdated(NetUserId user, Func<SharedRMCPatronFull, SharedRMCPatronFull> action)
@@ -199,11 +202,17 @@ public sealed partial class LinkAccountManager : IPostInjectInit
     public async Task RefreshAllPatrons()
     {
         var patrons = await _db.GetAllPatrons();
+        var preferences = await _db.GetAllCMUSponsorPreferences(); // CMU14
+        _publicPatrons.Clear(); // CMU14
+        var hidden = preferences.Where(p => !DeserializeSponsorSettings(p.Settings).PublicRecognition)
+            .Select(p => p.PlayerId).ToHashSet(); // CMU14
 
         _allPatrons.Clear();
         _figurines.Clear();
         foreach (var patron in patrons)
         {
+            if (patron.Tier.ShowOnCredits && !hidden.Contains(patron.PlayerId)) // CMU14
+                _publicPatrons.Add(new NetUserId(patron.PlayerId)); // CMU14
             _allPatrons[new NetUserId(patron.PlayerId)] = new SharedRMCPatron(
                 patron.Player.LastSeenUserName,
                 patron.Tier.Name,
@@ -236,13 +245,13 @@ public sealed partial class LinkAccountManager : IPostInjectInit
 
     public void SendPatronsToAll()
     {
-        var msg = new RMCPatronListMsg { Patrons = _allPatrons.Values.ToList() };
+        var msg = new RMCPatronListMsg { Patrons = PublicPatrons() }; // CMU14
         _net.ServerSendToAll(msg);
     }
 
     private void SendPatrons(ICommonSession player)
     {
-        var msg = new RMCPatronListMsg { Patrons = _allPatrons.Values.ToList() };
+        var msg = new RMCPatronListMsg { Patrons = PublicPatrons() }; // CMU14
         _net.ServerSendMessage(msg, player.Channel);
     }
 

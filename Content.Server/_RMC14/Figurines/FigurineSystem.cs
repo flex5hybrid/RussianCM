@@ -61,13 +61,15 @@ public sealed partial class FigurineSystem : EntitySystem
 
     private void OnPlayerSpawnComplete(PlayerSpawnCompleteEvent ev)
     {
+        if (_linkAccount.GetConnectedPatron(ev.Player)?.Tier is not { Figurines: true }) // CMU14
+            return; // CMU14
         if (!HasComp<MarineComponent>(ev.Mob))
             return;
 
         if (!_allFigurines.TryGetValue(ev.Player.UserId.ToString(), out var figurineId))
             return;
 
-        var figurine = Spawn(figurineId, MapCoordinates.Nullspace);
+        var figurine = Spawn(figurineId, Transform(ev.Mob).Coordinates); // CMU14: failed delivery leaves it at the player's feet
         if (_hands.TryPickupAnyHand(ev.Mob, figurine, false))
             return;
 
@@ -103,7 +105,7 @@ public sealed partial class FigurineSystem : EntitySystem
     {
         _figurines.Clear();
 
-        var available = _linkAccount.GetFigurines();
+        // var available = _linkAccount.GetFigurines(); // CMU14: published figurines remain in the common collection
         foreach (var (_, figurineId) in _allFigurines)
         {
             if (_prototypes.TryIndex(figurineId, out var figurine) &&
@@ -115,8 +117,9 @@ public sealed partial class FigurineSystem : EntitySystem
                     continue;
                 }
 
-                if (!available.Contains(guid))
-                    continue;
+                // CMU14: published figurines remain in the common collection after a subscription ends.
+                // if (!available.Contains(guid))
+                //     continue;
 
                 _figurines.Add(figurineId);
             }
@@ -180,6 +183,9 @@ public sealed partial class FigurineSystem : EntitySystem
     {
         return name.Replace(" ", "").Replace("'", "");
     }
+
+    // CMU14: the sponsor editor previews the published prototype without creating gameplay items.
+    public string? GetSponsorFigurine(Guid user) => _allFigurines.GetValueOrDefault(user.ToString());
 
     public string FormatSpriteName(string name)
     {

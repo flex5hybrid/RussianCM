@@ -29,6 +29,7 @@ public sealed partial class LinkAccountSystem : EntitySystem
     private TimeSpan _nextLobbyMessageTime;
     private TimeSpan _lobbyMessageInitialDelay;
     private (string Message, string User)? _nextLobbyMessage;
+    private string? _previousLobbyUser; // CMU14
     private RoundEndShoutout? _nextMarineShoutout;
     private RoundEndShoutout? _nextXenoShoutout;
 
@@ -140,11 +141,18 @@ public sealed partial class LinkAccountSystem : EntitySystem
         }
     }
 
-    private async void GetRandomLobbyMessage()
+    private async void GetRandomLobbyMessage(bool display = false) // CMU14
     {
         try
         {
-            _nextLobbyMessage = await _db.GetRandomLobbyMessage();
+            _nextLobbyMessage = await _db.GetRandomLobbyMessage(_previousLobbyUser); // CMU14
+            // CMU14: query at display time so edits and subscription changes cannot leave a stale queued message.
+            if (display && _nextLobbyMessage is { } message)
+            {
+                _previousLobbyUser = message.User;
+                _adminLog.Add(LogType.RMCLobbyMessage, $"Displaying lobby message from {message.User:user}: {message.Message:message}");
+                RaiseNetworkEvent(new SharedRMCDisplayLobbyMessageEvent(message.Message, message.User));
+            }
         }
         catch (Exception e)
         {
@@ -171,7 +179,7 @@ public sealed partial class LinkAccountSystem : EntitySystem
             HasComp<GhostComponent>(ent))
         {
             var color = EnsureComp<GhostColorComponent>(ent);
-            color.Color = tuple.Patron.GhostColor;
+            color.Color = tuple.Patron.Tier is { GhostColor: true } ? tuple.Patron.GhostColor : null; // CMU14
             Dirty(ent, color);
         }
     }
@@ -184,12 +192,7 @@ public sealed partial class LinkAccountSystem : EntitySystem
 
         _nextLobbyMessageTime = time + _timeBetweenLobbyMessages;
 
-        if (_nextLobbyMessage is { } message)
-        {
-            _adminLog.Add(LogType.RMCLobbyMessage, $"Displaying lobby message from {message.User:user}: {message.Message:message}");
-            RaiseNetworkEvent(new SharedRMCDisplayLobbyMessageEvent(message.Message, message.User));
-        }
-
-        GetRandomLobbyMessage();
+        // CMU14: approval and subscription state are rechecked for each display.
+        GetRandomLobbyMessage(display: true);
     }
 }

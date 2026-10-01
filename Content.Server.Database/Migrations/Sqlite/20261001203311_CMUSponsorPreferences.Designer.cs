@@ -3,6 +3,7 @@ using System;
 using Content.Server.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Content.Server.Database.Migrations.Sqlite
 {
     [DbContext(typeof(SqliteServerDbContext))]
-    partial class SqliteServerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20261001203311_CMUSponsorPreferences")]
+    partial class CMUSponsorPreferences
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.6");
@@ -1009,6 +1012,33 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.ToTable("cmu_round_outcomes", (string)null);
                 });
 
+            modelBuilder.Entity("Content.Server.Database.CMUSponsorPreferences", b =>
+                {
+                    b.Property<Guid>("PlayerId")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("player_id");
+
+                    b.Property<string>("ApprovedFigurineDescription")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("approved_figurine_description");
+
+                    b.Property<string>("CustomItem")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("custom_item");
+
+                    b.Property<string>("Settings")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("settings");
+
+                    b.HasKey("PlayerId")
+                        .HasName("PK_cmu_sponsor_preferences");
+
+                    b.ToTable("cmu_sponsor_preferences", (string)null);
+                });
+
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
                 {
                     b.Property<int>("Id")
@@ -1366,6 +1396,14 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("flavor_text");
 
+                    b.Property<int>("FoFFallback")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("fo_f_fallback");
+
+                    b.Property<int>("FoFSide")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("fo_f_side");
+
                     b.Property<string>("FullDescription")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
@@ -1376,14 +1414,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Property<string>("GamemodeAntagPreferences")
                         .HasColumnType("TEXT")
                         .HasColumnName("gamemode_antag_preferences");
-
-                    b.Property<int>("FoFSide")
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("fo_f_side");
-
-                    b.Property<int>("FoFFallback")
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("fo_f_fallback");
 
                     b.Property<string>("GamemodeJobPriorities")
                         .HasColumnType("TEXT")
@@ -1439,6 +1469,10 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasDefaultValue("")
                         .HasColumnName("medical_record");
 
+                    b.Property<byte[]>("OrganMarkings")
+                        .HasColumnType("jsonb")
+                        .HasColumnName("organ_markings");
+
                     b.Property<string>("Origin")
                         .HasColumnType("TEXT")
                         .HasColumnName("origin");
@@ -1452,9 +1486,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasDefaultValue(true)
                         .HasColumnName("playtime_perks");
-                    b.Property<byte[]>("OrganMarkings")
-                        .HasColumnType("jsonb")
-                        .HasColumnName("organ_markings");
 
                     b.Property<int>("PreferenceId")
                         .HasColumnType("INTEGER")
@@ -1518,9 +1549,17 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("synthetic");
 
+                    b.Property<string>("TTSVoice")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("tts_voice");
+
                     b.Property<string>("ThreatPreference")
                         .HasColumnType("TEXT")
                         .HasColumnName("threat_preference");
+
+                    b.Property<string>("Voice")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("voice");
 
                     b.Property<int>("Weight")
                         .ValueGeneratedOnAdd()
@@ -1541,13 +1580,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasDefaultValue("")
                         .HasColumnName("xeno_prefix");
-                    b.Property<string>("TTSVoice")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("tts_voice");
-
-                    b.Property<string>("Voice")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("voice");
 
                     b.Property<string>("YautjaProfile")
                         .HasColumnType("TEXT")
@@ -2639,61 +2671,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("Profile");
                 });
 
-            modelBuilder.Entity("Content.Server.Database.CMUBalanceRatingPoll", b =>
-                {
-                    b.HasOne("Content.Server.Database.Player", "CreatedBy")
-                        .WithMany()
-                        .HasForeignKey("CreatedById")
-                        .HasPrincipalKey("UserId")
-                        .OnDelete(DeleteBehavior.SetNull)
-                        .HasConstraintName("FK_cmu_balance_rating_polls_player_created_by_id");
-
-                    b.HasOne("Content.Server.Database.Round", "Round")
-                        .WithMany()
-                        .HasForeignKey("RoundId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_cmu_balance_rating_polls_round_round_id");
-
-                    b.Navigation("CreatedBy");
-
-                    b.Navigation("Round");
-                });
-
-            modelBuilder.Entity("Content.Server.Database.CMUBalanceRatingResponse", b =>
-                {
-                    b.HasOne("Content.Server.Database.Player", "Player")
-                        .WithMany()
-                        .HasForeignKey("PlayerId")
-                        .HasPrincipalKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_cmu_balance_rating_responses_player_player_id");
-
-                    b.HasOne("Content.Server.Database.CMUBalanceRatingPoll", "Poll")
-                        .WithMany("Responses")
-                        .HasForeignKey("PollId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_cmu_balance_rating_responses_cmu_balance_rating_polls_poll_id");
-
-                    b.Navigation("Player");
-
-                    b.Navigation("Poll");
-                });
-
-            modelBuilder.Entity("Content.Server.Database.CMURoundOutcome", b =>
-                {
-                    b.HasOne("Content.Server.Database.Round", "Round")
-                        .WithOne()
-                        .HasForeignKey("Content.Server.Database.CMURoundOutcome", "RoundId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_cmu_round_outcomes_round_round_id");
-
-                    b.Navigation("Round");
-                });
-
             modelBuilder.Entity("Content.Server.Database.Ban", b =>
                 {
                     b.HasOne("Content.Server.Database.Player", "CreatedBy")
@@ -2809,6 +2786,74 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("Ban");
 
                     b.Navigation("Round");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.CMUBalanceRatingPoll", b =>
+                {
+                    b.HasOne("Content.Server.Database.Player", "CreatedBy")
+                        .WithMany()
+                        .HasForeignKey("CreatedById")
+                        .HasPrincipalKey("UserId")
+                        .OnDelete(DeleteBehavior.SetNull)
+                        .HasConstraintName("FK_cmu_balance_rating_polls_player_created_by_id");
+
+                    b.HasOne("Content.Server.Database.Round", "Round")
+                        .WithMany()
+                        .HasForeignKey("RoundId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_cmu_balance_rating_polls_round_round_id");
+
+                    b.Navigation("CreatedBy");
+
+                    b.Navigation("Round");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.CMUBalanceRatingResponse", b =>
+                {
+                    b.HasOne("Content.Server.Database.Player", "Player")
+                        .WithMany()
+                        .HasForeignKey("PlayerId")
+                        .HasPrincipalKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_cmu_balance_rating_responses_player_player_id");
+
+                    b.HasOne("Content.Server.Database.CMUBalanceRatingPoll", "Poll")
+                        .WithMany("Responses")
+                        .HasForeignKey("PollId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_cmu_balance_rating_responses_cmu_balance_rating_polls_poll_id");
+
+                    b.Navigation("Player");
+
+                    b.Navigation("Poll");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.CMURoundOutcome", b =>
+                {
+                    b.HasOne("Content.Server.Database.Round", "Round")
+                        .WithOne()
+                        .HasForeignKey("Content.Server.Database.CMURoundOutcome", "RoundId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_cmu_round_outcomes_round_round_id");
+
+                    b.Navigation("Round");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.CMUSponsorPreferences", b =>
+                {
+                    b.HasOne("Content.Server.Database.Player", "Player")
+                        .WithMany()
+                        .HasForeignKey("PlayerId")
+                        .HasPrincipalKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_cmu_sponsor_preferences_player_player_id1");
+
+                    b.Navigation("Player");
                 });
 
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
@@ -3394,11 +3439,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("Flags");
                 });
 
-            modelBuilder.Entity("Content.Server.Database.CMUBalanceRatingPoll", b =>
-                {
-                    b.Navigation("Responses");
-                });
-
             modelBuilder.Entity("Content.Server.Database.Ban", b =>
                 {
                     b.Navigation("Addresses");
@@ -3414,6 +3454,11 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("Rounds");
 
                     b.Navigation("Unban");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.CMUBalanceRatingPoll", b =>
+                {
+                    b.Navigation("Responses");
                 });
 
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
@@ -3559,50 +3604,11 @@ namespace Content.Server.Database.Migrations.Sqlite
 
                     b.Navigation("Rounds");
                 });
+
             modelBuilder.Entity("Content.Server.Database.YautjaClan", b =>
                 {
                     b.Navigation("Members");
                 });
-            modelBuilder.Entity("Content.Server.Database.CMUSponsorPreferences", b =>
-                {
-                    b.Property<Guid>("PlayerId")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("player_id");
-
-                    b.Property<string>("ApprovedFigurineDescription")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("approved_figurine_description");
-
-                    b.Property<string>("CustomItem")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("custom_item");
-
-                    b.Property<string>("Settings")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("settings");
-
-                    b.HasKey("PlayerId")
-                        .HasName("PK_cmu_sponsor_preferences");
-
-                    b.ToTable("cmu_sponsor_preferences", (string)null);
-                });
-
-            modelBuilder.Entity("Content.Server.Database.CMUSponsorPreferences", b =>
-                {
-                    b.HasOne("Content.Server.Database.Player", "Player")
-                        .WithMany()
-                        .HasForeignKey("PlayerId")
-                        .HasPrincipalKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_cmu_sponsor_preferences_player_player_id1");
-
-                    b.Navigation("Player");
-                });
-
 #pragma warning restore 612, 618
         }
     }

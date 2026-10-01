@@ -15,6 +15,10 @@ public sealed partial class LinkAccountManager : IPostInjectInit
     public SharedRMCLobbyMessage? LobbyMessage { get; private set; }
     public SharedRMCRoundEndShoutouts? RoundEndShoutout { get; private set; }
 
+    public Content.Shared.CMU14.Sponsors.CMUSponsorSettings SponsorSettings { get; private set; } = new(); // CMU14
+    public string ApprovedFigurineDescription { get; private set; } = ""; // CMU14
+    public string? FigurinePrototype { get; private set; } // CMU14
+
     public event Action<Guid>? CodeReceived;
     public event Action? Updated;
 
@@ -30,6 +34,9 @@ public sealed partial class LinkAccountManager : IPostInjectInit
         GhostColor = ev.Patron?.GhostColor;
         LobbyMessage = ev.Patron?.LobbyMessage;
         RoundEndShoutout = ev.Patron?.RoundEndShoutout;
+        SponsorSettings = ev.Patron?.SponsorSettings ?? new(); // CMU14
+        ApprovedFigurineDescription = ev.Patron?.ApprovedFigurineDescription ?? ""; // CMU14
+        FigurinePrototype = ev.Patron?.FigurinePrototype; // CMU14
         Updated?.Invoke();
     }
 
@@ -46,7 +53,7 @@ public sealed partial class LinkAccountManager : IPostInjectInit
 
     public bool CanViewPatronPerks()
     {
-        return Tier is { } tier && (tier.GhostColor || tier.NamedItems || tier.Figurines || tier.LobbyMessage || tier.RoundEndShoutout);
+        return Tier != null || SponsorSettings != new Content.Shared.CMU14.Sponsors.CMUSponsorSettings(); // CMU14: let former sponsors see saved choices
     }
 
     void IPostInjectInit.PostInject()

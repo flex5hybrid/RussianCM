@@ -1,0 +1,49 @@
+- type: entity
+  id: CMUSponsorGhostPreview
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Mobs/Ghosts/ghost_human.rsi
+    color: "#FFFFFF88"
+    layers:
+    - state: animated
+  - type: CMUSponsorGhost
+
+- type: entity
+  parent: RMCPatchPeace
+  id: CMUSponsorPatchPeace
+  name: commemorative peace patch
+  description: A decorative patch for a project supporter.
+
+- type: entity
+  parent: RMCPatchOliveBranch
+  id: CMUSponsorPatchBranch
+  name: commemorative olive branch patch
+  description: A decorative patch for a project supporter.
+
+- type: entity
+  parent: RMCPatchFreelancer
+  id: CMUSponsorPatchSkull
+  name: commemorative skull patch
+  description: A decorative patch for a project supporter.
+
+- type: shader
+  id: CMUSponsorCapeTrimGold
+  kind: source
+  path: /Textures/CMU14/Shaders/sponsor_cape_trim.swsl
+  params:
+    trimColor: 0.85, 0.67, 0.24, 1.0
+
+- type: shader
+  id: CMUSponsorCapeTrimSilver
+  kind: source
+  path: /Textures/CMU14/Shaders/sponsor_cape_trim.swsl
+  params:
+    trimColor: 0.75, 0.80, 0.85, 1.0
+
+- type: shader
+  id: CMUSponsorCapeTrimRed
+  kind: source
+  path: /Textures/CMU14/Shaders/sponsor_cape_trim.swsl
+  params:
+    trimColor: 0.75, 0.15, 0.16, 1.0

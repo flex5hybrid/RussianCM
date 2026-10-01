@@ -36,7 +36,8 @@ public sealed partial class RMCBoostyCommand : LocalizedCommands
         new("\u0411\u043e\u0435\u0446", 1512834040233721906UL, 5, true, true, true, false, false, false),
         new("\u0428\u0442\u0443\u0440\u043c\u043e\u0432\u0438\u043a", 1512834069350846604UL, 4, true, true, true, true, false, false),
         new("\u0420\u0430\u0437\u0432\u0435\u0434\u0447\u0438\u043a", 1512834091488120973UL, 3, true, true, true, true, true, false),
-        new("\u041a\u043e\u043c\u0430\u043d\u0434\u0438\u0440 \u044f\u0447\u0435\u0439\u043a\u0438", 1512834125331959919UL, 2, true, true, true, true, true, true),
+        // CMU14: legacy Commander tier remains compatible, but is not offered among the six current tiers.
+        // new("\u041a\u043e\u043c\u0430\u043d\u0434\u0438\u0440 \u044f\u0447\u0435\u0439\u043a\u0438", 1512834125331959919UL, 2, true, true, true, true, true, true),
         new("\u041b\u0438\u0434\u0435\u0440 \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u0438\u044f", 1512834158966079682UL, 1, true, true, true, true, true, true),
     ];
 

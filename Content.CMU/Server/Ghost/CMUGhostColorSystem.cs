@@ -6,6 +6,7 @@ namespace Content.Server.CMU14.Ghost;
 
 public sealed class CMUGhostColorSystem : EntitySystem
 {
+    [Dependency] private Content.Server._RMC14.LinkAccount.LinkAccountManager _link = default!;
     private const float GhostAlpha = 0x88 / 255f;
 
     public override void Initialize()
@@ -13,13 +14,23 @@ public sealed class CMUGhostColorSystem : EntitySystem
         SubscribeNetworkEvent<CMUSetGhostColorEvent>(OnSetGhostColor);
     }
 
-    private void OnSetGhostColor(CMUSetGhostColorEvent ev, EntitySessionEventArgs args)
+    private async void OnSetGhostColor(CMUSetGhostColorEvent ev, EntitySessionEventArgs args)
     {
         if (args.SenderSession.AttachedEntity is not { } ghost || !HasComp<GhostComponent>(ghost))
             return;
-
-        var comp = EnsureComp<GhostColorComponent>(ghost);
-        comp.Color = ev.Color is { } color ? color.WithAlpha(GhostAlpha) : null;
-        Dirty(ghost, comp);
+        if (_link.GetConnectedPatron(args.SenderSession.UserId) is not { Tier.GhostColor: true } patron)
+            return;
+        try
+        {
+            await _link.SaveSponsorSettings(args.SenderSession.UserId,
+                (patron.SponsorSettings ?? new Content.Shared.CMU14.Sponsors.CMUSponsorSettings()) with
+                {
+                    GhostColor = ev.Color?.WithAlpha(GhostAlpha).ToArgb(),
+                }, ghostColorOnly: true);
+        }
+        catch (Exception e)
+        {
+            Log.Error($"Could not save sponsor ghost color: {e}");
+        }
     }
 }

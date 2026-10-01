@@ -399,7 +399,7 @@ namespace Content.Server.Database
 
         Task SetXenoShoutout(Guid player, string name);
 
-        Task<(string Message, string User)?> GetRandomLobbyMessage();
+        Task<(string Message, string User)?> GetRandomLobbyMessage(string? previousUser = null); // CMU14
 
         Task<(RoundEndShoutout? Marine, RoundEndShoutout? Xeno)> GetRandomShoutout();
 
@@ -1482,10 +1482,10 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.SetXenoShoutout(player, name));
         }
 
-        public Task<(string Message, string User)?> GetRandomLobbyMessage()
+        public Task<(string Message, string User)?> GetRandomLobbyMessage(string? previousUser = null) // CMU14
         {
             DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.GetRandomLobbyMessage());
+            return RunDbCommand(() => _db.GetRandomLobbyMessage(previousUser)); // CMU14
         }
 
         public Task<(RoundEndShoutout? Marine, RoundEndShoutout? Xeno)> GetRandomShoutout()

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -137,6 +137,7 @@ public sealed class RMCLinkedAccountLogs
 [Table(("rmc_patron_lobby_messages"))]
 public sealed class RMCPatronLobbyMessage
 {
+    public bool Approved { get; set; } = true; // CMU14: retain previously published messages until edited
     [Key, ForeignKey("Patron")]
     public Guid PatronId { get; set; }
 

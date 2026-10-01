@@ -1,0 +1,175 @@
+- type: entity
+  parent: RMCDonorCapeItem01
+  id: CMUSponsorCape01
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape01.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem02
+  id: CMUSponsorCape02
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape02.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem03
+  id: CMUSponsorCape03
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape03.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem04
+  id: CMUSponsorCape04
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape04.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem05
+  id: CMUSponsorCape05
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape05.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem06
+  id: CMUSponsorCape06
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape06.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem07
+  id: CMUSponsorCape07
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape07.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem08
+  id: CMUSponsorCape08
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape08.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem09
+  id: CMUSponsorCape09
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape09.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem10
+  id: CMUSponsorCape10
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape10.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem11
+  id: CMUSponsorCape11
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape11.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem12
+  id: CMUSponsorCape12
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape12.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem13
+  id: CMUSponsorCape13
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape13.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem14
+  id: CMUSponsorCape14
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape14.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem15
+  id: CMUSponsorCape15
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape15.rsi
+        state: equipped-NECK
+
+- type: entity
+  parent: RMCDonorCapeItem16
+  id: CMUSponsorCape16
+  components:
+  - type: CMUSponsorCape
+  - type: Clothing
+    clothingVisuals:
+      neck:
+      - sprite: _RuMC14/DonorCapes/cape16.rsi
+        state: equipped-NECK

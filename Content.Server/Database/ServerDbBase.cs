@@ -2542,6 +2542,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
         public async Task SetLobbyMessage(Guid player, string message)
         {
+            using var guard = await LockPreferencesAsync(new NetUserId(player)); // CMU14
             await using var db = await GetDb();
             var msg = await db.DbContext.RMCPatronLobbyMessages
                 .Include(l => l.Patron)
@@ -2554,6 +2555,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                 })
                 .Entity;
             msg.Message = message;
+            msg.Approved = false; // CMU14: edits require a new approval
 
             await db.DbContext.SaveChangesAsync();
         }
@@ -2594,7 +2596,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             await db.DbContext.SaveChangesAsync();
         }
 
-        public async Task<(string Message, string User)?> GetRandomLobbyMessage()
+        public async Task<(string Message, string User)?> GetRandomLobbyMessage(string? previousUser = null) // CMU14
         {
             // TODO RMC14 the random row is evaluated outside the DB, if we have that many patrons I guess we have better problems!
             await using var db = await GetDb();
@@ -2602,12 +2604,17 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                 .Include(p => p.Patron)
                 .ThenInclude(p => p.Player)
                 .Where(p => p.Patron.Tier.LobbyMessage)
+                .Where(p => p.Approved) // CMU14
                 .Where(p => !string.IsNullOrWhiteSpace(p.Message))
                 .Select(p => new { p.Message, p.Patron.Player.LastSeenUserName })
                 .ToListAsync();
 
             if (messages.Count == 0)
                 return null;
+
+            // CMU14: every eligible author has equal odds; avoid immediate repeats when another author is available.
+            if (messages.Any(m => m.LastSeenUserName != previousUser))
+                messages = messages.Where(m => m.LastSeenUserName != previousUser).ToList();
 
             var random = messages[Random.Shared.Next(messages.Count)];
             return (random.Message, random.LastSeenUserName);

@@ -1,4 +1,6 @@
-﻿using Robust.Shared.Serialization;
+using Robust.Shared.Serialization;
+
+using Content.Shared.CMU14.Sponsors; // CMU14
 
 namespace Content.Shared._RMC14.LinkAccount;
 
@@ -8,5 +10,9 @@ public sealed record SharedRMCPatronFull(
     bool Linked,
     Color? GhostColor,
     SharedRMCLobbyMessage? LobbyMessage,
-    SharedRMCRoundEndShoutouts? RoundEndShoutout
+    SharedRMCRoundEndShoutouts? RoundEndShoutout,
+    CMUSponsorSettings? SponsorSettings = null, // CMU14
+    string ApprovedFigurineDescription = "", // CMU14
+    string CustomItem = "", // CMU14
+    string? FigurinePrototype = null // CMU14
 );

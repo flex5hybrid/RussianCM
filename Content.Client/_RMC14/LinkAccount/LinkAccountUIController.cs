@@ -47,6 +47,7 @@ public sealed partial class LinkAccountUIController : UIController, IOnSystemCha
 
     private void OnUpdated()
     {
+        _sponsorTab?.Refresh(); // CMU14
         if (UIManager.ActiveScreen is not LobbyGui gui)
             return;
 
@@ -115,6 +116,7 @@ public sealed partial class LinkAccountUIController : UIController, IOnSystemCha
             _patronPerksWindow.OnClose += () => _patronPerksWindow = null;
 
             var tier = _linkAccount.Tier;
+            AddSponsorTab(); // CMU14
             SetTabTitle(_patronPerksWindow.LobbyMessageTab, Loc.GetString("rmc-ui-lobby-message"));
             SetTabVisible(_patronPerksWindow.LobbyMessageTab, tier is { LobbyMessage: true });
             _patronPerksWindow.LobbyMessage.OnTextEntered += ChangeLobbyMessage;
