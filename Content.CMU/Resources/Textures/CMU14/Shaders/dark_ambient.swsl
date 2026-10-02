@@ -21,12 +21,14 @@ void fragment() {
     highp float darkest = min(source.r, min(source.g, source.b));
     highp float saturation = (brightest - darkest) / max(brightest, 0.0001);
 
-    // Neutral shadows get the cold tint. Saturated signals and flames retain their hue.
-    highp float shadow = 1.0 - smoothstep(0.03, 0.55, luminance);
+    // Deepen the lower tones while preserving the endpoints and bright colored signals.
+    highp float signal = smoothstep(0.7, 1.0, saturation) * smoothstep(0.35, 0.85, brightest);
+    highp float contrast = pow(max(luminance, 0.0001), 0.45 * (1.0 - 0.8 * signal));
+    highp float shadow = 1.0 - smoothstep(0.02, 0.5, luminance);
     highp float neutral = 1.0 - saturation;
-    highp vec3 graded = mix(source.rgb, vec3(luminance), 0.18 * neutral);
-    graded *= mix(vec3(1.0), vec3(0.88, 0.95, 1.0), shadow * neutral);
-    graded *= 1.0 - 0.20 * shadow;
+    highp vec3 graded = mix(source.rgb, vec3(luminance), 0.28 * neutral * shadow);
+    graded *= mix(vec3(1.0), vec3(0.74, 0.9, 1.0), shadow * neutral);
+    graded *= contrast;
 
     // A multiplicative curve leaves black and transparent Z-level openings intact.
     COLOR = vec4(mix(source.rgb, graded, clamp(Intensity, 0.0, 1.0)), source.a);
