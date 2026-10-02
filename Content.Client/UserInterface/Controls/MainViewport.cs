@@ -26,6 +26,7 @@ namespace Content.Client.UserInterface.Controls
             {
                 AlwaysRender = true,
                 RenderZLevels = true,
+                CMUAllowDarkAmbient = true, // CMU14: only the main game viewport opts into color grading.
                 RenderScaleMode = ScalingViewportRenderScaleMode.CeilInt,
                 MouseFilter = MouseFilterMode.Stop
             };

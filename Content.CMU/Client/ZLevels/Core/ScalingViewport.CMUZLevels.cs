@@ -830,10 +830,13 @@ public sealed partial class ScalingViewport
         // low alpha over the frame - no stencil/LOS masking, that's the point (see everything above you).
         if (_drawFaintUpperComposite && _stairPreviewViewport is not null)
         {
+            var darkAmbient = ApplyCMUDarkAmbientShader(handle.DrawingHandleScreen, _stairPreviewViewport.RenderTarget.Texture);
             handle.DrawingHandleScreen.DrawTextureRect(
                 _stairPreviewViewport.RenderTarget.Texture,
                 drawBox,
                 Color.White.WithAlpha(_faintUpperAlpha));
+            if (darkAmbient)
+                handle.DrawingHandleScreen.UseShader(null);
         }
     }
 
@@ -913,8 +916,10 @@ public sealed partial class ScalingViewport
         screen.UseShader(GetStencilMaskShader());
         DrawStairPreviewFovMask(screen, drawBox);
 
-        screen.UseShader(GetStencilEqualDrawShader());
+        if (!ApplyCMUDarkAmbientShader(screen, _stairPreviewViewport.RenderTarget.Texture, stencil: true))
+            screen.UseShader(GetStencilEqualDrawShader());
         screen.DrawTextureRect(_stairPreviewViewport.RenderTarget.Texture, drawBox);
+        screen.UseShader(GetStencilEqualDrawShader());
         screen.DrawRect(drawBox, StairPreviewTint);
 
         screen.UseShader(GetStencilClearShader());
