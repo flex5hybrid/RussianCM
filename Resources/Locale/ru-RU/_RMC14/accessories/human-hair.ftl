@@ -259,9 +259,9 @@ marking-RMCHumanHairChelseaPonytail = Панк-бритье, хвост Челс
 
 marking-RMCHumanHairChelseaFringe = Панк-Шейв, Челси (Фриндж)
 
-marking-RMCHumanHairChelseaSmallHawkFringe = Punk Shave, Chelsea Small Hawk (Fringe)
+marking-RMCHumanHairChelseaSmallHawkFringe = Панк-Шейв, Челси Смолл Хоук (Фриндж)
 
-marking-RMCHumanHairChelseaBigHawkFringe = Punk Shave, Chelsea Big Hawk (Fringe)
+marking-RMCHumanHairChelseaBigHawkFringe = Панк-Шейв, Челси Биг Хоук (Фриндж)
 
 marking-RMCHumanHairChelseaPonytailFringe = Панк-бритье, хвост Челси (бахрома)
 

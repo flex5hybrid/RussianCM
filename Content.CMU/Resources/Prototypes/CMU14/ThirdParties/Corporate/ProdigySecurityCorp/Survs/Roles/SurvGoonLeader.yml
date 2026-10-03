@@ -38,7 +38,7 @@
       - CMU14SquadProdigy
   - type: MarineOrders
 
-  name: cmu-job-name-team-leader 
+  name: cmu-job-name-team-leader
   description: au14-job-description-wyguard
   setPreference: true
   ranks:
@@ -55,7 +55,7 @@
     - Epilepsy
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-wy
-  spawnMenuRoleName: cmu-spawn-role-prodigy-team-leader-cmu-surv 
+  spawnMenuRoleName: cmu-spawn-role-prodigy-team-leader-cmu-surv
   accessGroups:
   - auprodigy
   - AUPrisonStaff

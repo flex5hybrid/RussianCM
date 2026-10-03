@@ -35,7 +35,7 @@ marking-HumanFacialHairMutton = Бакенбарды (Бараньи отбив�
 marking-HumanFacialHairSideburn = Бакенбарды
 
 
-marking-FacialHairShaved = Shaved
+marking-FacialHairShaved = Гладко выбрит
 
 marking-HumanFacialHairAbe-abe = Beard (Abraham Lincoln)
 

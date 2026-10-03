@@ -11,7 +11,7 @@
   startingGear: CMUGearColonyRiotControlTeamLeader
   icon: RMCJobIconBureauDeputy
   supervisors: cmu-colony-supervisors-colonist
-  spawnMenuRoleName: cmu-spawn-role-colony-riot-control-team-leader-cmu 
+  spawnMenuRoleName: cmu-spawn-role-colony-riot-control-team-leader-cmu
   playTimeTracker: CMUJobColonyRiotControlTeamLeader
   ranks:
     RMCRankCivilian: []

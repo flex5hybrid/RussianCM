@@ -30,7 +30,7 @@
   requireAdminNotify: false
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-foreman
-  spawnMenuRoleName: cmu-spawn-role-colony-miner-cmu 
+  spawnMenuRoleName: cmu-spawn-role-colony-miner-cmu
   accessGroups:
   - Colonist
   roleWeight: 0.25

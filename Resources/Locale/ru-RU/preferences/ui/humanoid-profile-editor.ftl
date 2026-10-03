@@ -104,7 +104,7 @@ humanoid-profile-editor-preference-satchel = Сумка
 humanoid-profile-editor-preference-duffelbag = Спортивная сумка
 humanoid-profile-editor-guidebook-button-tooltip = Нажмите для дополнительной информации
 
-# Spawn priority
+# Приоритет появления
 humanoid-profile-editor-preference-spawn-priority-none = Нет
 humanoid-profile-editor-preference-spawn-priority-arrivals = Прибытие
 humanoid-profile-editor-preference-spawn-priority-cryosleep = Криосон
@@ -123,7 +123,7 @@ humanoid-profile-editor-naming-rules-warning = Внимание: оскорби�
 humanoid-profile-editor-markings-tab = Метки
 humanoid-profile-editor-flavortext-tab = Описание
 
-# Traits
+# Черты
 humanoid-profile-editor-traits-tab = Черты
 humanoid-profile-editor-no-traits = Нет доступных черт
 
@@ -133,7 +133,7 @@ trait-category-disabilities = Инвалидности
 trait-category-speech = Речевые черты
 trait-category-quirks = Причуды
 
-# Armor
+# Броня
 humanoid-profile-editor-preference-armor-random = Случайная
 humanoid-profile-editor-preference-armor-padded = С подкладками
 humanoid-profile-editor-preference-armor-padless = Без подкладок
@@ -151,7 +151,10 @@ humanoid-profile-editor-segment-line = Линейная пехота
 humanoid-profile-editor-segment-officer = Офицеры
 humanoid-profile-editor-segment-leader = Сержантский состав
 
-humanoid-profile-editor-threat-marker-suffix =  (Маркер)
+humanoid-profile-editor-threat-marker-suffix = (Маркер)
+humanoid-profile-editor-threat-jobs-section = Должности угроз
+humanoid-profile-editor-threat-neomorph = Неоморфы
+humanoid-profile-editor-threat-badbloodclan = Клан Плохой Крови
 humanoid-profile-editor-threat-xeno = Ксеноморфы
 humanoid-profile-editor-threat-ape = Обезьяны
 humanoid-profile-editor-threat-cultist = Культисты

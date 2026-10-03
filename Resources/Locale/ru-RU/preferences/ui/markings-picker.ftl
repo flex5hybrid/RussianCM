@@ -71,50 +71,50 @@ marking-slot = Слот { $number }
 
 
 
-markings-layer-Special = Special
+markings-layer-Special = Особое
 
-markings-layer-Tail = Tail
+markings-layer-Tail = Хвост
 
-markings-layer-Tail-Moth = Wings
+markings-layer-Tail-Moth = Крылья
 
-markings-layer-Hair = Hair
+markings-layer-Hair = Волосы
 
-markings-layer-FacialHair = Facial Hair
+markings-layer-FacialHair = Растительность на лице
 
-markings-layer-UndergarmentTop = Undershirt
+markings-layer-UndergarmentTop = Нижняя рубашка
 
-markings-layer-UndergarmentBottom = Underpants
+markings-layer-UndergarmentBottom = Трусы
 
-markings-layer-Chest = Chest
+markings-layer-Chest = Туловище
 
-markings-layer-Head = Head
+markings-layer-Head = Голова
 
-markings-layer-Snout = Snout
+markings-layer-Snout = Нос
 
-markings-layer-SnoutCover = Snout (Cover)
+markings-layer-SnoutCover = Нос (покрытие)
 
-markings-layer-HeadSide = Head (Side)
+markings-layer-HeadSide = Голова (бок)
 
-markings-layer-HeadTop = Head (Top)
+markings-layer-HeadTop = Голова (верх)
 
-markings-layer-Eyes = Eyes
+markings-layer-Eyes = Глаза
 
-markings-layer-RArm = Right Arm
+markings-layer-RArm = Правая рука
 
-markings-layer-LArm = Left Arm
+markings-layer-LArm = Левая рука
 
-markings-layer-RHand = Right Hand
+markings-layer-RHand = Правая кисть
 
-markings-layer-LHand = Left Hand
+markings-layer-LHand = Левая кисть
 
-markings-layer-RLeg = Right Leg
+markings-layer-RLeg = Правая нога
 
-markings-layer-LLeg = Left Leg
+markings-layer-LLeg = Левая нога
 
-markings-layer-RFoot = Right Foot
+markings-layer-RFoot = Правая стопа
 
-markings-layer-LFoot = Left Foot
+markings-layer-LFoot = Левая стопа
 
-markings-layer-Overlay = Overlay
+markings-layer-Overlay = Наложение
 
-markings-layer-TailOverlay = Overlay
+markings-layer-TailOverlay = Наложение

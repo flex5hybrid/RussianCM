@@ -8,7 +8,7 @@
   roundProfiles:
   - AU14RoundJobProfileWorkingJoe
   icon: "AU14JobIconGovWorkingJoe"
-  spawnMenuRoleName: cmu-spawn-role-working-joe-govfor 
+  spawnMenuRoleName: cmu-spawn-role-working-joe-govfor
   supervisors: au14-job-supervisors-workingjoe-military
   usePlayerProfile: false
   jobEntity: AU14MobWorkingJoeGOVFOR

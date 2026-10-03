@@ -30,7 +30,7 @@
   requireAdminNotify: false
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-colonycivilian
-  spawnMenuRoleName: cmu-spawn-role-colonist-cmu 
+  spawnMenuRoleName: cmu-spawn-role-colonist-cmu
   accessGroups:
   - Colonist
   roleWeight: 0.25

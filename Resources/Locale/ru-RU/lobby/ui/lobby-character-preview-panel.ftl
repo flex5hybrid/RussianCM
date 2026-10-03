@@ -8,26 +8,29 @@ lobby-character-preview-ignore-allegiance = Игнорировать прина�
 lobby-character-preview-ignore-allegiance-tooltip = При включении, спавнит текущего выбранного персонажа независимо от принадлежности.
 
 
-# The toggle states below spell out on/off in the label itself rather than relying on the button's
-# colour alone - color-only state indicators are hard to read at a glance and unreliable for anyone
-# with a colour vision deficiency. The On state additionally carries hazard striping, so the enabled
-# state is marked by shape as well as by word and fill: this toggle overrides allegiance matching and
-# is the one setting here that changes who you can spawn as, so it should be obvious at a glance that
-# it is armed. Plain slashes rather than an icon glyph - the OSD font has no icon coverage and a
-# missing glyph renders as a blank box.
+# Состояния переключателя ниже прописаны словами прямо в надписи, а не только цветом кнопки:
+# индикаторы состояния, заданные одним цветом, трудно считывать с первого взгляда, и они
+# ненадёжны для людей с нарушением цветового зрения. Состояние «Вкл» дополнительно несёт
+# предупреждающую штриховку, так что включённое состояние отмечено формой, а не только словом и
+# заливкой: этот переключатель отменяет сопоставление принадлежности и является единственной
+# настройкой здесь, меняющей то, за кого можно появиться, поэтому с первого взгляда должно быть
+# очевидно, что он активен. Обычные косые черты вместо значка-глифа: у шрифта OSD нет покрытия
+# для значков, и отсутствующий глиф отображается пустым квадратом.
 lobby-character-preview-ignore-allegiance-off = Игнорирование принадлежности: Выкл
 
 lobby-character-preview-ignore-allegiance-on = /// Игнорирование принадлежности: Вкл ///
 
-# Two-line character summary shown beside the preview sprite. The pronoun and its verb have to stay
-# inside one selector ("He is" vs "They are"), so the colour wraps the whole phrase.
-# Both hues sit well under the terminal text's own brightness so they read as secondary rather than
-# as two alarm colours on a green screen: saturation 0.22, luminance 0.62. See docs/cmu/09-theming.md.
-lobby-character-summary-name = This is [color=#FFFFFF]{$name}[/color]
+# Двухстрочная сводка о персонаже рядом со спрайтом превью. Местоимение и глагол должны оставаться
+# внутри одного селектора («Он» / «Она»), поэтому цвет оборачивает всю фразу целиком.
+# Оба оттенка заметно темнее собственной яркости текста терминала, чтобы читаться как второстепенные,
+# а не как два тревожных цвета на зелёном экране: насыщенность 0,22, яркость 0,62. См. docs/cmu/09-theming.md.
+lobby-character-summary-name = Это [color=#FFFFFF]{$name}[/color]
 
 lobby-character-summary-age = [color=#88A3AF]{$gender ->
-    [male] He is
-    [female] She is
-    [epicene] They are
-    *[other] It is
-}[/color] [color=#BF9595]{$age}[/color] years old
+    [female] Ей
+    *[other] Ему
+}[/color] [color=#BF9595]{$age}[/color] { $age ->
+    [one] год
+    [few] года
+   *[other] лет
+}

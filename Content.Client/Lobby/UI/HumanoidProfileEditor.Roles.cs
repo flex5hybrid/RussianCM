@@ -448,11 +448,11 @@ public sealed partial class HumanoidProfileEditor
 
         if (!IsRoundStartThreatAssignmentJob(job))
             yield break;
-        // CMU14 hardcode Localization Begin: fix hardcode localization for forks    
+        // CMU14 hardcode Localization Begin: fix hardcode localization for forks
         var threatJobsTitle = Loc.GetString("humanoid-profile-editor-threat-jobs-section");
         yield return (ColonyThreatJobList, GamemodeColonyFall, "colony-threat", threatJobsTitle);
         yield return (DistressThreatJobList, GamemodeDistressSignal, "distress-threat", threatJobsTitle);
-        // CMU14 hardcode Localization End 
+        // CMU14 hardcode Localization End
     }
 
     private static int CompareDepartmentsForCharacterSetup(DepartmentPrototype? x, DepartmentPrototype? y)

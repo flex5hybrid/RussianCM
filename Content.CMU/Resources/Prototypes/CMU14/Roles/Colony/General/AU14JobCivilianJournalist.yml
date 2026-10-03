@@ -31,7 +31,7 @@
   requireAdminNotify: false
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-colonycivilian
-  spawnMenuRoleName: cmu-spawn-role-journalist-cmu 
+  spawnMenuRoleName: cmu-spawn-role-journalist-cmu
   accessGroups:
   - Colonist
   - aunews

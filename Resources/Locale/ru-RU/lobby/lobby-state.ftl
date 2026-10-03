@@ -38,8 +38,8 @@ lobby-state-playtime-comment-grasstouchless = { $hours } часов. Подум�
 lobby-state-playtime-comment-selfdestructive = { $hours } часов. Серьёзно?
 
 
-# Compact forms for the lobby round-info table, where the ROUND TIME heading already provides
-# the context that the longer strings above spell out.
-lobby-state-round-time-short = {$hours}h {$minutes}m
+# Компактные формы для таблицы сведений о раунде в лобби, где заголовок «ВРЕМЯ РАУНДА» уже
+# задаёт контекст, который в более длинных строках выше прописан словами.
+lobby-state-round-time-short = {$hours}ч {$minutes}м
 
-lobby-state-round-not-started-short = Not started
+lobby-state-round-not-started-short = Не начат

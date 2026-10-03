@@ -49,7 +49,7 @@
   dummyStartingGear: AU14GearCivilianColonyPilotDummy
   icon: "AU14JobIconCivilianColonyPilot"
   requireAdminNotify: true
-  spawnMenuRoleName: cmu-spawn-role-commercial-pilot-orbital 
+  spawnMenuRoleName: cmu-spawn-role-commercial-pilot-orbital
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-orbital
   accessGroups:

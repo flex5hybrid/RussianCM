@@ -202,7 +202,7 @@ marking-HumanHairLongWithBangs = Длинная с чёлкой
 marking-HumanHairOverEyePigtail = Хвостик (Через глаз)
 
 
-marking-HairBald = Bald
+marking-HairBald = Лысый
 
 marking-HumanHairAfro-afro = Afro
 
@@ -612,7 +612,7 @@ marking-HumanHairLongWithBangs-longwithbangs = Long With Bangs
 
 marking-HumanHairOverEyePigtail-overeyepigtail = Pigtail (Over Eye)
 
-marking-HumanHairTerminal = Terminal
+marking-HumanHairTerminal = Терминал
 
 marking-HumanHairTerminal-terminal = Primary
 

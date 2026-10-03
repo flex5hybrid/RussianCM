@@ -1,4 +1,4 @@
-# Using reallife Mormon Missionaries as the Base but kept purposefully ambigous 
+# Using reallife Mormon Missionaries as the Base but kept purposefully ambigous
 # To avoid people not knowing anything about mormon or even christian religion doing slop RP
 
 - type: job
@@ -24,14 +24,14 @@
       sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: synth
 
-  name: cmu-job-name-wandering-missionary 
+  name: cmu-job-name-wandering-missionary
   description: You have been sent by your church to do missionary work on the frontier. Provide community serivce and humanitarian aid where needed and preach the good word to the hungry souls out here.
   setPreference: true
   playTimeTracker: AU14JobReturningColonist
   ranks:
     RMCRankCivilian: []
   startingGear: AU14GearCivilianColonist
-  spawnMenuRoleName: cmu-spawn-role-missionary-3rd-party 
+  spawnMenuRoleName: cmu-spawn-role-missionary-3rd-party
   icon: "CMJobIconEmpty"
   requireAdminNotify: false
   joinNotifyCrew: false

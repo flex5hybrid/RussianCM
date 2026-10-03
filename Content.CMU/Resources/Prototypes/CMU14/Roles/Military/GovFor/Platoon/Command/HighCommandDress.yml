@@ -36,7 +36,7 @@
   playTimeTracker: CMUJobGOVFORAdjutantDress
   startingGear: CMUGearGOVFORAdjutantDress
   icon: RMCJobIconUNMCAdjutant
-  spawnMenuRoleName: cmu-spawn-role-high-command-adjutant-dress-uniform-govfor 
+  spawnMenuRoleName: cmu-spawn-role-high-command-adjutant-dress-uniform-govfor
   ranks:
     RMCRankCivilian: []
   joinNotifyCrew: true
@@ -117,7 +117,7 @@
   playTimeTracker: CMUJobGOVFORBrigadierGeneral
   startingGear: CMUGearGOVFORBrigadierGeneral
   icon: RMCJobIconUNMCBrigadierGeneral
-  spawnMenuRoleName: cmu-spawn-role-brigadier-general-govfor-event-vip 
+  spawnMenuRoleName: cmu-spawn-role-brigadier-general-govfor-event-vip
   ranks:
     RMCRankCivilian: []
   joinNotifyCrew: true
@@ -188,7 +188,7 @@
   playTimeTracker: CMUJobGOVFORVipEscort
   startingGear: CMUGearGOVFORVipEscort
   icon: AU14JobIconMP
-  spawnMenuRoleName: cmu-spawn-role-vip-escort-detail-govfor 
+  spawnMenuRoleName: cmu-spawn-role-vip-escort-detail-govfor
   ranks:
     RMCRankCivilian: []
   joinNotifyCrew: false
@@ -266,7 +266,7 @@
   playTimeTracker: CMUJobGOVFORAdjutantDress
   startingGear: CMUGearOPFORAdjutantDress
   icon: RMCJobIconUNMCAdjutant
-  spawnMenuRoleName: cmu-spawn-role-high-command-adjutant-dress-uniform-opfor 
+  spawnMenuRoleName: cmu-spawn-role-high-command-adjutant-dress-uniform-opfor
   ranks:
     RMCRankCivilian: []
   joinNotifyCrew: true
@@ -345,7 +345,7 @@
   playTimeTracker: CMUJobGOVFORBrigadierGeneral
   startingGear: CMUGearOPFORBrigadierGeneral
   icon: RMCJobIconUNMCBrigadierGeneral
-  spawnMenuRoleName: cmu-spawn-role-brigadier-general-opfor-event-vip 
+  spawnMenuRoleName: cmu-spawn-role-brigadier-general-opfor-event-vip
   ranks:
     RMCRankCivilian: []
   joinNotifyCrew: true
@@ -414,7 +414,7 @@
   playTimeTracker: CMUJobGOVFORVipEscort
   startingGear: CMUGearOPFORVipEscort
   icon: AU14JobIconMP
-  spawnMenuRoleName: cmu-spawn-role-vip-escort-detail-opfor 
+  spawnMenuRoleName: cmu-spawn-role-vip-escort-detail-opfor
   ranks:
     RMCRankCivilian: []
   joinNotifyCrew: false
