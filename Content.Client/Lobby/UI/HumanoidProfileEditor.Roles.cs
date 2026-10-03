@@ -25,6 +25,8 @@ namespace Content.Client.Lobby.UI;
 public sealed partial class HumanoidProfileEditor
 {
     private const string InsurgencyDepartmentId = "AU14DepartmentColonialLiberationFront";
+    private const string ColonistJobId = "AU14JobCivilianColonist";
+    private const string ColonistSpecialLoadoutId = "AU14ColonistSpecialLoadout";
 
     /// <summary>
     /// Temporary override of the selected job, used to preview roles.
@@ -32,6 +34,8 @@ public sealed partial class HumanoidProfileEditor
     public JobPrototype? JobOverride;
 
     private LoadoutWindow? _loadoutWindow;
+    private ColonistSkillEditorWindow? _colonistSkillWindow;
+    private ColonistClothingWindow? _colonistClothingWindow;
     [ViewVariables] private PlatoonRankPreferenceWindow? _rankPreferenceWindow;
 
     private readonly List<(string Gamemode, string JobId, RequirementsSelector Selector)> _jobPriorities = new();
@@ -115,6 +119,117 @@ public sealed partial class HumanoidProfileEditor
         };
 
         UpdateJobPriorities();
+    }
+
+    // Opens the colonist skills window and saves every change to the profile.
+    private void OpenColonistSkillEditor(JobPrototype jobProto, RoleLoadout roleLoadout, RoleLoadoutPrototype roleLoadoutProto)
+    {
+        _colonistSkillWindow?.Dispose();
+        _colonistSkillWindow = null;
+        var collection = IoCManager.Instance;
+
+        if (collection == null || _playerManager.LocalSession == null || Profile == null)
+            return;
+
+        if (!_prototypeManager.TryIndex<RoleLoadoutPrototype>(ColonistSpecialLoadoutId, out var specialLoadoutProto))
+            return;
+
+        JobOverride = jobProto;
+        var session = _playerManager.LocalSession;
+
+        RoleLoadout? specialLoadout = null;
+        if (Profile.Loadouts.TryGetValue(specialLoadoutProto.ID, out var existingSpecial))
+            specialLoadout = existingSpecial.Clone();
+
+        if (specialLoadout == null)
+        {
+            specialLoadout = new RoleLoadout(specialLoadoutProto.ID);
+            specialLoadout.SetDefault(Profile, session, _prototypeManager);
+        }
+
+        _colonistSkillWindow = new ColonistSkillEditorWindow(Profile, roleLoadout, roleLoadoutProto, specialLoadout, specialLoadoutProto, session, collection);
+        _colonistSkillWindow.OpenCenteredLeft();
+
+        var concreteKey = LoadoutSystem.GetJobPrototype(jobProto.ID);
+
+        _colonistSkillWindow.OnLoadoutPressed += (loadoutGroup, loadoutProto) =>
+        {
+            roleLoadout.AddLoadout(loadoutGroup, loadoutProto, _prototypeManager);
+            Profile = Profile!.WithLoadout(concreteKey, roleLoadout);
+            _colonistSkillWindow.RefreshLoadouts(Profile, roleLoadout, specialLoadout, session, collection);
+            ReloadPreview();
+            SetDirty();
+        };
+
+        _colonistSkillWindow.OnLoadoutUnpressed += (loadoutGroup, loadoutProto) =>
+        {
+            roleLoadout.RemoveLoadout(loadoutGroup, loadoutProto, _prototypeManager);
+            Profile = Profile!.WithLoadout(concreteKey, roleLoadout);
+            _colonistSkillWindow.RefreshLoadouts(Profile, roleLoadout, specialLoadout, session, collection);
+            ReloadPreview();
+            SetDirty();
+        };
+
+        _colonistSkillWindow.OnSpecialLoadoutPressed += (loadoutGroup, loadoutProto) =>
+        {
+            specialLoadout.AddLoadout(loadoutGroup, loadoutProto, _prototypeManager);
+            Profile = Profile!.WithLoadout(specialLoadoutProto.ID, specialLoadout);
+            _colonistSkillWindow.RefreshLoadouts(Profile, roleLoadout, specialLoadout, session, collection);
+            ReloadPreview();
+            SetDirty();
+        };
+
+        _colonistSkillWindow.OnSpecialLoadoutUnpressed += (loadoutGroup, loadoutProto) =>
+        {
+            specialLoadout.RemoveLoadout(loadoutGroup, loadoutProto, _prototypeManager);
+            Profile = Profile!.WithLoadout(specialLoadoutProto.ID, specialLoadout);
+            _colonistSkillWindow.RefreshLoadouts(Profile, roleLoadout, specialLoadout, session, collection);
+            ReloadPreview();
+            SetDirty();
+        };
+
+        _colonistSkillWindow.OnClothingEditorRequested += () => OpenColonistClothingEditor(specialLoadout, specialLoadoutProto, collection);
+
+        _colonistSkillWindow.ApplyVanillaDefaultsIfUntouched(roleLoadout);
+
+        ReloadPreview();
+        _colonistSkillWindow.OnClose += () =>
+        {
+            _colonistClothingWindow?.Close();
+            JobOverride = null;
+            ReloadPreview();
+        };
+
+        UpdateJobPriorities();
+    }
+
+    // Opens the custom clothing window for the special loadout.
+    private void OpenColonistClothingEditor(RoleLoadout specialLoadout, RoleLoadoutPrototype specialLoadoutProto, IDependencyCollection collection)
+    {
+        _colonistClothingWindow?.Dispose();
+
+        var window = new ColonistClothingWindow(specialLoadout, specialLoadoutProto, collection);
+        _colonistClothingWindow = window;
+
+        window.OnApply += (group, loadout) =>
+        {
+            specialLoadout.SetCustomLoadout(group, loadout, _prototypeManager);
+            Profile = Profile!.WithLoadout(specialLoadoutProto.ID, specialLoadout);
+            window.Refresh(specialLoadout);
+            ReloadPreview();
+            SetDirty();
+        };
+
+        window.OnClear += (group, loadoutProto) =>
+        {
+            specialLoadout.RemoveLoadout(group, loadoutProto, _prototypeManager);
+            Profile = Profile!.WithLoadout(specialLoadoutProto.ID, specialLoadout);
+            window.Refresh(specialLoadout);
+            ReloadPreview();
+            SetDirty();
+        };
+
+        window.OpenCenteredRight();
     }
 
     public void RefreshJobs()
@@ -296,6 +411,35 @@ public sealed partial class HumanoidProfileEditor
             };
         }
 
+        Button? skillsButton = null;
+        if (job.ID == ColonistJobId && loadoutProto != null)
+        {
+            skillsButton = new Button
+            {
+                Text = Loc.GetString("colonist-skill-editor-button"),
+                HorizontalAlignment = HAlignment.Right,
+                VerticalAlignment = VAlignment.Center,
+                Margin = new Thickness(3f, 3f, 0f, 0f),
+                MinWidth = 90,
+                StyleClasses = { StyleNano.StyleClassCrtButton },
+            };
+
+            skillsButton.OnPressed += _ =>
+            {
+                RoleLoadout? loadout = null;
+                if (Profile?.Loadouts.TryGetValue(loadoutKey, out var existing) == true)
+                    loadout = existing.Clone();
+
+                if (loadout == null)
+                {
+                    loadout = new RoleLoadout(loadoutProto.ID);
+                    loadout.SetDefault(Profile, _playerManager.LocalSession, _prototypeManager);
+                }
+
+                OpenColonistSkillEditor(job, loadout, loadoutProto);
+            };
+        }
+
         var rankEntry = BuildRankPreferenceJobEntry(job);
         var rankButton = new Button
         {
@@ -312,6 +456,8 @@ public sealed partial class HumanoidProfileEditor
         _jobPriorities.Add((gamemode, job.ID, selector));
         jobContainer.AddChild(selector);
         jobContainer.AddChild(loadoutButton);
+        if (skillsButton != null)
+            jobContainer.AddChild(skillsButton);
         jobContainer.AddChild(rankButton);
         CrtLobbyTheme.Apply(jobContainer);
         category.AddChild(jobContainer);

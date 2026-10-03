@@ -148,6 +148,12 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
                     continue;
                 }
 
+                if (!CustomClothingRules.Validate(loadout, loadoutProto, collection))
+                {
+                    loadouts.RemoveAt(i);
+                    continue;
+                }
+
                 var selectedCount = selectionCounts.GetValueOrDefault(loadout.Prototype);
                 if (selectedCount >= Math.Max(1, loadoutProto.MaxSelections))
                 {
@@ -382,6 +388,19 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
 
         RecalculatePoints(protoManager);
 
+        return true;
+    }
+
+    // Adds a loadout with player-chosen data, replacing an earlier pick of the same loadout.
+    public bool SetCustomLoadout(ProtoId<LoadoutGroupPrototype> selectedGroup, Loadout selected, IPrototypeManager protoManager)
+    {
+        if (!SelectedLoadouts.TryGetValue(selectedGroup, out var groupLoadouts))
+            return false;
+
+        groupLoadouts.RemoveAll(loadout => loadout.Prototype == selected.Prototype);
+        groupLoadouts.Add(selected);
+
+        RecalculatePoints(protoManager);
         return true;
     }
 

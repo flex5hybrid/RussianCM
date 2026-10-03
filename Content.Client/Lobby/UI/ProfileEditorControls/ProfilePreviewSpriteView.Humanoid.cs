@@ -72,6 +72,7 @@ public sealed partial class ProfilePreviewSpriteView
             {
                 var loadout = humanoid.GetLoadoutOrDefault(key, _playerManager.LocalSession, humanoid.Species, EntMan, _prototypeManager);
                 GiveDummyLoadout(loadout);
+                ColonistClothingPreview.Apply(EntMan, _prototypeManager, PreviewDummy, humanoid, key);
             }
         }
     }

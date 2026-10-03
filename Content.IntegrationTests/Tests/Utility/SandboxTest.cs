@@ -33,7 +33,7 @@ public sealed class SandboxTest
             Options = new GameControllerOptions
             {
                 LoadConfigAndUserData = false,
-                MountOptions = new MountOptions(dirMounts: ["../../Content.CMU/Resources"], zipMounts: []),
+                MountOptions = new MountOptions(dirMounts: ["../../Content.CMU/Resources", "../../Content.RUMC/Resources"], zipMounts: []),
             }
         };
 

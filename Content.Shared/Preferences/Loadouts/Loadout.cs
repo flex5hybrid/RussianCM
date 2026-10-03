@@ -12,11 +12,24 @@ public sealed partial class Loadout : IEquatable<Loadout>
     [DataField]
     public ProtoId<LoadoutPrototype> Prototype;
 
+    // Player-chosen item, name and color, used by loadouts that allow a free choice.
+    [DataField]
+    public string? CustomEntity;
+
+    [DataField]
+    public string? CustomName;
+
+    [DataField]
+    public Color? CustomColor;
+
     public bool Equals(Loadout? other)
     {
         if (ReferenceEquals(null, other)) return false;
         if (ReferenceEquals(this, other)) return true;
-        return Prototype.Equals(other.Prototype);
+        return Prototype.Equals(other.Prototype) &&
+               CustomEntity == other.CustomEntity &&
+               CustomName == other.CustomName &&
+               CustomColor == other.CustomColor;
     }
 
     public override bool Equals(object? obj)
@@ -26,6 +39,6 @@ public sealed partial class Loadout : IEquatable<Loadout>
 
     public override int GetHashCode()
     {
-        return Prototype.GetHashCode();
+        return HashCode.Combine(Prototype, CustomEntity, CustomName, CustomColor);
     }
 }

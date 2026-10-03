@@ -785,9 +785,11 @@ namespace Content.Server.Database
         /// </summary>
         public string LoadoutName { get; set; } = string.Empty;
 
-        /*
-         * Insert extra data here like custom descriptions or colors or whatever.
-         */
+        public string? CustomEntity { get; set; }
+
+        public string? CustomName { get; set; }
+
+        public string? CustomColor { get; set; }
     }
 
     #endregion

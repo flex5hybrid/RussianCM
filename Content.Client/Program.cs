@@ -11,7 +11,7 @@ namespace Content.Client
             ContentStart.StartLibrary(args, new GameControllerOptions
             {
                 MountOptions = new MountOptions(
-                    dirMounts: new List<string> { "../../Content.CMU/Resources" },
+                    dirMounts: new List<string> { "../../Content.CMU/Resources", "../../Content.RUMC/Resources" },
                     zipMounts: new List<string>()),
             });
         }

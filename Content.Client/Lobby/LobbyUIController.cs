@@ -474,6 +474,7 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
         {
             var loadout = profile.GetLoadoutOrDefault(key, _playerManager.LocalSession, profile.Species, EntityManager, _prototypeManager);
             GiveDummyLoadout(dummy, loadout);
+            ColonistClothingPreview.Apply(EntityManager, _prototypeManager, dummy, profile, key);
         }
     }
 
@@ -636,6 +637,7 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
             {
                 var loadout = humanoid.GetLoadoutOrDefault(key, _playerManager.LocalSession, humanoid.Species, EntityManager, _prototypeManager);
                 GiveDummyLoadout(dummyEnt, loadout);
+                ColonistClothingPreview.Apply(EntityManager, _prototypeManager, dummyEnt, humanoid, key);
             }
         }
 

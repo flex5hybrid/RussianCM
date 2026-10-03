@@ -20,3 +20,4 @@ loadouts-repeatable-name = {$name} ({$count}/{$max})
 loadouts-repeatable-name-cost = {$name} ({$count}/{$max}) — {$cost} points each
 loadouts-skill-upgrade-name = {$name} +{$amount}
 loadouts-skill-upgrade-invalid = This skill upgrade is not configured correctly
+loadouts-skill-requirement-not-met = Requires {$skill} level {$level}

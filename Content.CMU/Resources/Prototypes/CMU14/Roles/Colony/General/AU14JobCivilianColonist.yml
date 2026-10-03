@@ -38,6 +38,8 @@
 - type: startingGear
   id: AU14GearCivilianColonist
   equipment:
+    jumpsuit: CMJumpsuitColonist
+    shoes: RMCShoesBlack
     id: AU14IDCardColonyColonist
 
 - type: entity
@@ -57,18 +59,32 @@
 # ├──[ colony ]──────────────────────────────────────────────────────┤
 - type: roleLoadout
   id: JobAU14JobCivilianColonist
-  points: 7
+  points: 20
   groups:
   - CivSatchelAU14
-  - CivFootwearAU14
-  - CivHatsAU14
-  - CivGlassesAU14
-  - CivJumpsuitAU14
-  - CivJacketAU14
   - PaperworkRMC
   - RecreationalRMC
   - CannedDrinksAU14
   - SmokablesRMC
-  - EyewearRMC
-  - MasksRMC
-  - HeadwearCLFAU14
+  - AU14ColonistSkillGroupConstruction
+  - AU14ColonistSkillGroupCqc
+  - AU14ColonistSkillGroupDomestics
+  - AU14ColonistSkillGroupEndurance
+  - AU14ColonistSkillGroupEngineer
+  - AU14ColonistSkillGroupFirearms
+  - AU14ColonistSkillGroupFireman
+  - AU14ColonistSkillGroupIntel
+  - AU14ColonistSkillGroupJtac
+  - AU14ColonistSkillGroupLeadership
+  - AU14ColonistSkillGroupMedical
+  - AU14ColonistSkillGroupMeleeWeapons
+  - AU14ColonistSkillGroupNavigations
+  - AU14ColonistSkillGroupOverwatch
+  - AU14ColonistSkillGroupPilot
+  - AU14ColonistSkillGroupPolice
+  - AU14ColonistSkillGroupPowerLoader
+  - AU14ColonistSkillGroupResearch
+  - AU14ColonistSkillGroupSurgery
+  - AU14ColonistSkillGroupVehicles
+  - AU14ColonistSkillGroupSpecial
+  - AU14ColonistSkillGroupGear

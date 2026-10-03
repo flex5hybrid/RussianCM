@@ -27,3 +27,5 @@ loadouts-repeatable-name-cost = {$name} ({$count}/{$max}) — {$cost} points eac
 loadouts-skill-upgrade-name = {$name} +{$amount}
 
 loadouts-skill-upgrade-invalid = This skill upgrade is not configured correctly
+
+loadouts-skill-requirement-not-met = Требуется { $skill } { $level } уровня

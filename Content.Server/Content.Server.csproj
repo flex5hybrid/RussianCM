@@ -42,6 +42,7 @@
 
   <ItemGroup>
     <Compile Include="..\Content.CMU\Server\**\*.cs" Link="CMU\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\Content.RUMC\Server\**\*.cs" Link="RUMC\%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.EntitySystemSubscriptionsGenerator.targets" />
 

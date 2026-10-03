@@ -199,6 +199,12 @@ namespace Content.Server.Preferences.Managers
                         groupLoadouts.Add(new Loadout()
                         {
                             Prototype = profLoadout.LoadoutName,
+                            CustomEntity = profLoadout.CustomEntity,
+                            CustomName = profLoadout.CustomName,
+                            CustomColor = profLoadout.CustomColor != null &&
+                                          Color.TryFromHex(profLoadout.CustomColor, out var tint)
+                                ? tint
+                                : null,
                         });
                     }
                 }

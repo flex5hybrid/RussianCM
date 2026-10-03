@@ -391,6 +391,9 @@ namespace Content.Server.Database
                         profileGroup.Loadouts.Add(new ProfileLoadout()
                         {
                             LoadoutName = loadout.Prototype,
+                            CustomEntity = loadout.CustomEntity,
+                            CustomName = loadout.CustomName,
+                            CustomColor = loadout.CustomColor?.ToHex(),
                         });
                     }
 

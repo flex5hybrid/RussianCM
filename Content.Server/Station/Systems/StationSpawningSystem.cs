@@ -11,6 +11,9 @@ using Content.Server.Mind;
 using Content.Server.PDA;
 using Content.Server.Station.Components;
 using Content.Server.CMU14.Yautja;
+using System.Diagnostics.CodeAnalysis;
+using Content.Shared.CMU14.Clothing;
+using Content.Shared.CMU14.Roles;
 using Content.Shared._RMC14.Marines;
 using Content.Shared.CMU14.Yautja;
 using Content.Shared._RMC14.Marines.Squads;
@@ -71,6 +74,7 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
     [Dependency] private RoundJobProfileSystem _roundJobProfiles = default!;
     [Dependency] private PdaSystem _pdaSystem = default!;
     [Dependency] private IPrototypeManager _prototypeManager = default!;
+    [Dependency] private IComponentFactory _componentFactory = default!;
     [Dependency] private PlatoonSpawnRuleSystem _platoonSpawnRuleSystem = default!;
     [Dependency] private SquadSystem _squadSystem = default!;
     [Dependency] private NpcFactionSystem _npcFaction = default!;
@@ -78,6 +82,7 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
     [Dependency] private YautjaProfileApplySystem _yautjaProfile = default!;
     [Dependency] private ISharedAdminLogManager _adminLog = default!;
     [Dependency] private MindSystem _mindSystem = default!;
+    [Dependency] private Content.Shared.Hands.EntitySystems.SharedHandsSystem _specialHands = default!;
     [Dependency] private ICMUServerPerformanceDiagnostics _performance = default!; // CMU14
 
     private static readonly PlatoonJobClass[] PlatoonJobClasses = Enum.GetValues<PlatoonJobClass>();
@@ -286,11 +291,15 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
                 // CMU14: custom job bodies also receive their selected equipment.
                 EquipRoleLoadout(jobEntity, loadout, loadoutProto, applyEffects: false);
                 EquipRoleName(jobEntity, loadout, loadoutProto);
+                EquipSpecialLoadout(jobEntity, profile, loadoutProto);
             }
 
             DoJobSpecials(job, jobEntity);
             if (loadout != null && loadoutProto != null)
+            {
                 ApplyRoleLoadoutEffects(jobEntity, loadout, loadoutProto);
+                ApplySpecialLoadoutEffects(jobEntity, profile, loadoutProto);
+            }
 
             ApplyRegulationAppearance(jobEntity, profile);
             ApplyTeamFaction(jobEntity, team);
@@ -337,7 +346,10 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
         }
 
         if (loadout != null && loadoutProto != null)
+        {
             EquipRoleLoadout(entity.Value, loadout, loadoutProto, applyEffects: false);
+            EquipSpecialLoadout(entity.Value, profile, loadoutProto);
+        }
 
         if (prototype?.StartingGear != null)
         {
@@ -422,7 +434,10 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
 
         // Job profiles establish the base skill preset, so loadout upgrades must run afterwards.
         if (loadout != null && loadoutProto != null)
+        {
             ApplyRoleLoadoutEffects(entity.Value, loadout, loadoutProto);
+            ApplySpecialLoadoutEffects(entity.Value, profile, loadoutProto);
+        }
 
         ApplyRegulationAppearance(entity.Value, profile);
         _identity.QueueIdentityUpdate(entity.Value);
@@ -832,6 +847,164 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
 
         _adminLog.Add(LogType.RMCCharacterDescription,
             $"{ToPrettyString(uid):player} has skin tone {NamedColorHelper.NearestColorName(profile.Appearance.SkinColor)}");
+    }
+
+    // Finds the special loadout the player picked for this job, if the job has one.
+    private bool TryGetSpecialLoadout(
+        HumanoidCharacterProfile? profile,
+        RoleLoadoutPrototype? jobLoadoutProto,
+        [NotNullWhen(true)] out RoleLoadout? special,
+        [NotNullWhen(true)] out RoleLoadoutPrototype? specialProto)
+    {
+        special = null;
+        specialProto = null;
+
+        return profile != null &&
+               jobLoadoutProto != null &&
+               JobSpecialLoadouts.ByRoleLoadout.TryGetValue(jobLoadoutProto.ID, out var specialId) &&
+               profile.Loadouts.TryGetValue(specialId, out special) &&
+               _prototypeManager.TryIndex(specialId, out specialProto);
+    }
+
+    // Clothing slots where a special loadout item may replace what is already worn.
+    private static readonly HashSet<string> SpecialLoadoutReplaceSlots = new()
+    {
+        "shoes", "jumpsuit", "outerClothing", "eyes", "gloves", "head", "mask",
+    };
+
+    // Gives the character everything they picked in the special loadout.
+    private void EquipSpecialLoadout(EntityUid entity, HumanoidCharacterProfile? profile, RoleLoadoutPrototype? jobLoadoutProto)
+    {
+        if (!TryGetSpecialLoadout(profile, jobLoadoutProto, out var special, out var specialProto))
+            return;
+
+        foreach (var group in special.SelectedLoadouts.OrderBy(x => specialProto.Groups.FindIndex(e => e == x.Key)))
+        {
+            foreach (var selected in group.Value)
+            {
+                if (!_prototypeManager.TryIndex(selected.Prototype, out var loadoutProto))
+                    continue;
+
+                if (CustomClothingRules.TryGetEffect(loadoutProto, out var clothing))
+                    GiveCustomClothing(entity, clothing.Slot, selected);
+                else
+                    GiveSpecialLoadoutEntry(entity, loadoutProto);
+            }
+        }
+    }
+
+    // Spawns the clothing the player chose, with their name and color, and wears it in place of the old item.
+    private void GiveCustomClothing(EntityUid entity, string slot, Loadout selected)
+    {
+        if (selected.CustomEntity == null ||
+            !_prototypeManager.TryIndex<EntityPrototype>(selected.CustomEntity, out var proto) ||
+            !CustomClothingRules.IsEligible(proto, slot, _componentFactory))
+        {
+            return;
+        }
+
+        var item = Spawn(proto.ID, Transform(entity).Coordinates);
+
+        if (CustomClothingRules.SanitizeName(selected.CustomName) is { } name)
+            _metaSystem.SetEntityName(item, name);
+
+        if (selected.CustomColor is { } color)
+        {
+            var tint = EnsureComp<AU14CustomClothingColorComponent>(item);
+            tint.Color = color.WithAlpha(1f);
+            Dirty(item, tint);
+        }
+
+        // Slots like pockets depend on the uniform and get emptied when it is taken off, so remember them.
+        var dependents = new List<(string Slot, EntityUid Item)>();
+        if (InventorySystem.TryGetSlots(entity, out var slotDefinitions))
+        {
+            foreach (var definition in slotDefinitions)
+            {
+                if (definition.DependsOn == slot && InventorySystem.TryGetSlotEntity(entity, definition.Name, out var held))
+                    dependents.Add((definition.Name, held.Value));
+            }
+        }
+
+        EntityUid? replaced = null;
+        if (InventorySystem.TryUnequip(entity, slot, out var old, silent: true, force: true))
+            replaced = old;
+
+        if (InventorySystem.TryEquip(entity, item, slot, silent: true, force: true))
+        {
+            if (replaced != null)
+                QueueDel(replaced);
+        }
+        else
+        {
+            QueueDel(item);
+
+            // Put the old item back if the new one did not fit.
+            if (replaced != null)
+                InventorySystem.TryEquip(entity, replaced.Value, slot, silent: true, force: true);
+        }
+
+        // Put back whatever was dropped from the dependent slots.
+        foreach (var (dependentSlot, heldItem) in dependents)
+        {
+            if (!InventorySystem.TryGetSlotEntity(entity, dependentSlot, out _))
+                InventorySystem.TryEquip(entity, heldItem, dependentSlot, silent: true, force: true);
+        }
+    }
+
+    // Spawns the items of one loadout entry and equips or holds them.
+    private void GiveSpecialLoadoutEntry(EntityUid entity, LoadoutPrototype loadout)
+    {
+        var coordinates = Transform(entity).Coordinates;
+
+        foreach (var (slot, protoId) in loadout.Equipment)
+        {
+            var item = Spawn(protoId, coordinates);
+            if (!TryEquipSpecialItem(entity, item, slot))
+                PickUpOrLeave(entity, item);
+        }
+
+        foreach (var protoId in loadout.Inhand)
+            PickUpOrLeave(entity, Spawn(protoId, coordinates));
+    }
+
+    // Equips into the slot (pockets use either one). Other slots keep what is already worn unless they may be replaced.
+    private bool TryEquipSpecialItem(EntityUid entity, EntityUid item, string slot)
+    {
+        var candidates = slot switch
+        {
+            "pocket1" => new[] { "pocket1", "pocket2" },
+            "pocket2" => new[] { "pocket2", "pocket1" },
+            _ => new[] { slot },
+        };
+
+        foreach (var candidate in candidates)
+        {
+            if (!InventorySystem.TryGetSlotEntity(entity, candidate, out _) &&
+                InventorySystem.TryEquip(entity, item, candidate, silent: true, force: true))
+            {
+                return true;
+            }
+        }
+
+        return SpecialLoadoutReplaceSlots.Contains(slot) &&
+               InventorySystem.TryEquip(entity, item, slot, silent: true, force: true);
+    }
+
+    // Puts the item in a free hand, otherwise leaves it on the floor.
+    private void PickUpOrLeave(EntityUid entity, EntityUid item)
+    {
+        if (TryComp(entity, out Content.Shared.Hands.Components.HandsComponent? hands) &&
+            _specialHands.TryGetEmptyHand((entity, hands), out var emptyHand))
+        {
+            _specialHands.TryPickup(entity, item, emptyHand, checkActionBlocker: false, handsComp: hands);
+        }
+    }
+
+    private void ApplySpecialLoadoutEffects(EntityUid entity, HumanoidCharacterProfile? profile, RoleLoadoutPrototype? jobLoadoutProto)
+    {
+        if (TryGetSpecialLoadout(profile, jobLoadoutProto, out var special, out var specialProto))
+            ApplyRoleLoadoutEffects(entity, special, specialProto);
     }
 
     /// <summary>

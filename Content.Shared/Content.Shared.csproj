@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <Compile Include="..\Content.CMU\Shared\**\*.cs" Link="CMU\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\Content.RUMC\Shared\**\*.cs" Link="RUMC\%(RecursiveDir)%(Filename)%(Extension)" />
     <Folder Include="_RMC14\Extract\" />
   </ItemGroup>
 

@@ -105,6 +105,12 @@ public static class ClientPackaging
             new HashSet<string>(),
             cancel: cancel);
 
+        await RobustSharedPackaging.DoResourceCopy(
+            Path.Combine(contentDir, "Content.RUMC", "Resources"),
+            inputPass,
+            new HashSet<string>(),
+            cancel: cancel);
+
         inputPass.InjectFinished();
     }
 }
