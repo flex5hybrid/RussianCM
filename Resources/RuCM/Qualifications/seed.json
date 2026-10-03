@@ -1,0 +1,1719 @@
+{
+  "MigrationGroups": {
+    "communications": [
+      "AU14JobGOVFORRadioTrafficOperator"
+    ],
+    "field_engineering": [
+      "AU14JobGOVFORSquadCombatTech",
+      "AU14JobGOVFORSquadCombatTechRMC",
+      "AU14JobGOVFORSquadCombatTechWYPMC",
+      "AU14JobGOVFORSquadCombatTechUPP"
+    ],
+    "logistics": [
+      "AU14JobGOVFOROfficerLogisticsWYPMC",
+      "AU14JobGOVFOROfficerLogisticsRMC",
+      "AU14JobGOVFOROfficerLogisticsCMBCIU",
+      "AU14JobGOVFORAuxTech",
+      "AU14JobGOVFOROfficerLogistics",
+      "AU14JobGOVFOROfficerLogisticsUPP"
+    ],
+    "sergeant": [
+      "AU14JobGOVFORVehicleCrewman",
+      "AU14JobGOVFORRadioTelephoneOperatorWYPMC",
+      "AU14JobGOVFORDSPilotUPP",
+      "AU14JobGOVFORDCC",
+      "AU14JobGOVFORSquadSergeantCMBCIU",
+      "AU14JobGOVFORSquadSergeant",
+      "AU14JobGOVFORDSPilotRMC",
+      "AU14JobGOVFORDCCRMC",
+      "AU14JobGOVFORRadioTelephoneOperator",
+      "AU14JobGOVFORRadioTelephoneOperatorRMC",
+      "AU14JobGOVFORSquadSergeantRMC",
+      "AU14JobGOVFORDSPilotWYPMC",
+      "AU14JobGOVFORSquadSergeantWYPMC",
+      "AU14JobGOVFORSectionSergeant",
+      "AU14JobGOVFORSquadSergeantUPP",
+      "AU14JobGOVFORRadioTrafficOperator",
+      "AU14JobGOVFORDSPilot",
+      "AU14JobGOVFORSectionSergeantRMC",
+      "AU14JobGOVFORDCCUPP",
+      "AU14JobGOVFORSectionSergeantCMBCIU",
+      "AU14JobGOVFORDCCWYPMC",
+      "AU14JobGOVFORGunshipPilot",
+      "CMUJobGOVFORDroneOperator",
+      "AU14JobGOVFORFighterPilot",
+      "AU14JobGOVFORSectionSergeantWYPMC",
+      "AU14JobGOVFORFighterSystemsOfficer",
+      "AU14JobGOVFORRadioTelephoneOperatorUPP",
+      "AU14JobGOVFORSectionSergeantUPP"
+    ],
+    "aviation": [
+      "AU14JobGOVFORDSPilotUPP",
+      "AU14JobGOVFORDCC",
+      "AU14JobGOVFORDSPilotRMC",
+      "AU14JobGOVFORDCCRMC",
+      "AU14JobGOVFORDSPilotWYPMC",
+      "AU14JobGOVFORDSPilot",
+      "AU14JobGOVFORDCCUPP",
+      "AU14JobGOVFORDCCWYPMC",
+      "AU14JobGOVFORGunshipPilot",
+      "AU14JobGOVFORFighterPilot",
+      "AU14JobGOVFORFighterSystemsOfficer"
+    ],
+    "vehicle_crew": [
+      "AU14JobGOVFORVehicleCrewman",
+      "AU14JobGOVFORVehicleCommander"
+    ],
+    "military_police": [
+      "AU14JobGOVFOROfficerMPCMBCIU",
+      "AU14JobGOVFOROfficerMPRMC",
+      "AU14JobGOVFORMilitaryPoliceMan",
+      "AU14JobGOVFOROfficerMPUPP",
+      "AU14JobGOVFOROfficerMP",
+      "AU14JobGOVFOROfficerMPWYPMC"
+    ],
+    "officer": [
+      "AU14JobGOVFOROfficerEngiWYPMC",
+      "AU14JobGOVFORAdjutantRMC",
+      "AU14JobGOVFORVehicleCommander",
+      "AU14JobGOVFOROfficerLogisticsWYPMC",
+      "AU14JobGOVFOROfficerMPCMBCIU",
+      "AU14JobGOVFOROfficerLogisticsRMC",
+      "AU14JobGOVFOROfficerMPRMC",
+      "AU14JobGOVFOROfficerMedical",
+      "AU14JobGOVFORAdjutantWYPMC",
+      "AU14JobGOVFORMilitaryPoliceMan",
+      "AU14JobGOVFORAdjutantUPP",
+      "AU14JobGOVFOROfficerIntelRMC",
+      "AU14JobGOVFORAdjutant",
+      "AU14JobGOVFORMilitaryDoctor",
+      "AU14JobGOVFOROfficerEngi",
+      "AU14JobGOVFOROfficerMPUPP",
+      "AU14JobGOVFOROfficerMedicalCMBCIU",
+      "AU14JobGOVFOROfficerLogisticsCMBCIU",
+      "AU14JobGOVFOROfficerIntelWYPMC",
+      "AU14JobGOVFOROfficerMedicalWYPMC",
+      "AU14JobGOVFOROfficerIntel",
+      "AU14JobGOVFORAdjutantCMBCIU",
+      "AU14JobGOVFORPlatOp",
+      "AU14JobGOVFOROfficerIntelCMBCIU",
+      "AU14JobGOVFOROfficerEngiUPP",
+      "AU14JobGOVFORPlatOpUPP",
+      "AU14JobGOVFOROfficerMedicalUPP",
+      "AU14JobGOVFOROfficerMP",
+      "AU14JobGOVFOROfficerMedicalRMC",
+      "AU14JobGOVFORPlatOpRMC",
+      "AU14JobGOVFOROfficerIntelUPP",
+      "AU14JobGOVFOROfficerLogistics",
+      "AU14JobGOVFOROfficerLogisticsUPP",
+      "AU14JobGOVFOROfficerMPWYPMC",
+      "AU14JobGOVFORPlatOpWYPMC"
+    ],
+    "drone_operator": [
+      "CMUJobGOVFORDroneOperator"
+    ],
+    "medical": [
+      "AU14JobGOVFORPlatoonCorpsmanCMBCIU",
+      "AU14JobGOVFOROfficerMedical",
+      "AU14JobGOVFORPlatoonCorpsman",
+      "AU14JobGOVFORMilitaryDoctor",
+      "AU14JobGOVFOROfficerMedicalCMBCIU",
+      "AU14JobGOVFOROfficerMedicalWYPMC",
+      "AU14JobGOVFORPlatoonCorpsmanWYPMC",
+      "AU14JobGOVFORPlatoonCorpsmanRMC",
+      "AU14JobGOVFOROfficerMedicalUPP",
+      "AU14JobGOVFORPlatoonCorpsmanUPP",
+      "AU14JobGOVFOROfficerMedicalRMC",
+      "AU14JobGOVFORNurse"
+    ],
+    "heavy_weapons": [
+      "AU14JobGOVFORWeaponsSpecialist",
+      "AU14JobGOVFORSquadAutomaticRiflemanRMC",
+      "AU14JobGOVFORSquadAutomaticRiflemanWYPMC",
+      "AU14JobGOVFORSquadAutomaticRiflemanUPP",
+      "AU14JobGOVFORSquadAutomaticRifleman"
+    ],
+    "intelligence": [
+      "AU14JobGOVFOROfficerIntelRMC",
+      "AU14JobGOVFOROfficerIntelWYPMC",
+      "AU14JobGOVFOROfficerIntel",
+      "AU14JobGOVFOROfficerIntelCMBCIU",
+      "AU14JobGOVFOROfficerIntelUPP"
+    ],
+    "technical_engineering": [
+      "AU14JobGOVFOROfficerEngiWYPMC",
+      "AU14JobGOVFOREngineeringTech",
+      "AU14JobGOVFOROfficerEngi",
+      "AU14JobGOVFOROfficerEngiUPP"
+    ]
+  },
+  "OfficerJobs": [
+    "AU14JobGOVFORAdjutant",
+    "AU14JobGOVFORAdjutantCMBCIU",
+    "AU14JobGOVFORAdjutantRMC",
+    "AU14JobGOVFORAdjutantUPP",
+    "AU14JobGOVFORAdjutantWYPMC",
+    "AU14JobGOVFOROfficerEngi",
+    "AU14JobGOVFOROfficerEngiUPP",
+    "AU14JobGOVFOROfficerEngiWYPMC",
+    "AU14JobGOVFOROfficerIntel",
+    "AU14JobGOVFOROfficerIntelCMBCIU",
+    "AU14JobGOVFOROfficerIntelRMC",
+    "AU14JobGOVFOROfficerIntelUPP",
+    "AU14JobGOVFOROfficerIntelWYPMC",
+    "AU14JobGOVFOROfficerLogistics",
+    "AU14JobGOVFOROfficerLogisticsCMBCIU",
+    "AU14JobGOVFOROfficerLogisticsRMC",
+    "AU14JobGOVFOROfficerLogisticsUPP",
+    "AU14JobGOVFOROfficerLogisticsWYPMC",
+    "AU14JobGOVFOROfficerMedical",
+    "AU14JobGOVFOROfficerMedicalCMBCIU",
+    "AU14JobGOVFOROfficerMedicalRMC",
+    "AU14JobGOVFOROfficerMedicalUPP",
+    "AU14JobGOVFOROfficerMedicalWYPMC",
+    "AU14JobGOVFOROfficerMP",
+    "AU14JobGOVFOROfficerMPCMBCIU",
+    "AU14JobGOVFOROfficerMPRMC",
+    "AU14JobGOVFOROfficerMPUPP",
+    "AU14JobGOVFOROfficerMPWYPMC",
+    "AU14JobGOVFORPlatOp",
+    "AU14JobGOVFORPlatOpRMC",
+    "AU14JobGOVFORPlatOpUPP",
+    "AU14JobGOVFORPlatOpWYPMC",
+    "AU14JobGOVFORVehicleCommander",
+    "AU14JobGOVFORMilitaryDoctor",
+    "AU14JobGOVFORMilitaryPoliceMan"
+  ],
+  "CommandingOfficerJobs": [
+    "AU14JobGOVFORPlatCo",
+    "AU14JobGOVFORPlatCoCMBCIU",
+    "AU14JobGOVFORPlatCoRMC",
+    "AU14JobGOVFORPlatCoUPP",
+    "AU14JobGOVFORPlatCoWYPMC"
+  ],
+  "Definitions": {
+    "communications": {
+      "Id": "communications",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "theory",
+          "Name": "rucm-qualifications-item-theory",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "safety",
+          "Name": "rucm-qualifications-item-safety",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "practice",
+          "Name": "rucm-qualifications-item-practice",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-communications",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "intelligence": {
+      "Id": "intelligence",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "theory",
+          "Name": "rucm-qualifications-item-theory",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "safety",
+          "Name": "rucm-qualifications-item-safety",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "practice",
+          "Name": "rucm-qualifications-item-practice",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-intelligence",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "field_engineering": {
+      "Id": "field_engineering",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "theory",
+          "Name": "rucm-qualifications-item-theory",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "safety",
+          "Name": "rucm-qualifications-item-safety",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "practice",
+          "Name": "rucm-qualifications-item-practice",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-field_engineering",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "commanding_officer": {
+      "Id": "commanding_officer",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "theory",
+          "Name": "rucm-qualifications-item-theory",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "safety",
+          "Name": "rucm-qualifications-item-safety",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "practice",
+          "Name": "rucm-qualifications-item-practice",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-commanding_officer",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "logistics": {
+      "Id": "logistics",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "theory",
+          "Name": "rucm-qualifications-item-theory",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "safety",
+          "Name": "rucm-qualifications-item-safety",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "practice",
+          "Name": "rucm-qualifications-item-practice",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-logistics",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "sergeant": {
+      "Id": "sergeant",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "tactics",
+          "Name": "rucm-qualifications-item-tactics",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "firearms",
+          "Name": "rucm-qualifications-item-firearms",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "military_regulations",
+          "Name": "rucm-qualifications-item-military_regulations",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 3,
+          "Id": "teaching",
+          "Name": "rucm-qualifications-item-teaching",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 4,
+          "Id": "topography",
+          "Name": "rucm-qualifications-item-topography",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 5,
+          "Id": "drill",
+          "Name": "rucm-qualifications-item-drill",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 6,
+          "Id": "unit_command",
+          "Name": "rucm-qualifications-item-unit_command",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-sergeant",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "aviation": {
+      "Id": "aviation",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "theory",
+          "Name": "rucm-qualifications-item-theory",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "safety",
+          "Name": "rucm-qualifications-item-safety",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "practice",
+          "Name": "rucm-qualifications-item-practice",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-aviation",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "heavy_weapons": {
+      "Id": "heavy_weapons",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "theory",
+          "Name": "rucm-qualifications-item-theory",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "safety",
+          "Name": "rucm-qualifications-item-safety",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "practice",
+          "Name": "rucm-qualifications-item-practice",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-heavy_weapons",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "military_police": {
+      "Id": "military_police",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "theory",
+          "Name": "rucm-qualifications-item-theory",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "safety",
+          "Name": "rucm-qualifications-item-safety",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "practice",
+          "Name": "rucm-qualifications-item-practice",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-military_police",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "vehicle_crew": {
+      "Id": "vehicle_crew",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "theory",
+          "Name": "rucm-qualifications-item-theory",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "safety",
+          "Name": "rucm-qualifications-item-safety",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "practice",
+          "Name": "rucm-qualifications-item-practice",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-vehicle_crew",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "drone_operator": {
+      "Id": "drone_operator",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "theory",
+          "Name": "rucm-qualifications-item-theory",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "safety",
+          "Name": "rucm-qualifications-item-safety",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "practice",
+          "Name": "rucm-qualifications-item-practice",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-drone_operator",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "officer": {
+      "Id": "officer",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "tactics",
+          "Name": "rucm-qualifications-item-tactics",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "firearms",
+          "Name": "rucm-qualifications-item-firearms",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "drill",
+          "Name": "rucm-qualifications-item-drill",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 3,
+          "Id": "military_regulations",
+          "Name": "rucm-qualifications-item-military_regulations",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 4,
+          "Id": "operations",
+          "Name": "rucm-qualifications-item-operations",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 5,
+          "Id": "staff_work",
+          "Name": "rucm-qualifications-item-staff_work",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 6,
+          "Id": "crisis_management",
+          "Name": "rucm-qualifications-item-crisis_management",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-officer",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "medical": {
+      "Id": "medical",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "theory",
+          "Name": "rucm-qualifications-item-theory",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "safety",
+          "Name": "rucm-qualifications-item-safety",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "practice",
+          "Name": "rucm-qualifications-item-practice",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-medical",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "technical_engineering": {
+      "Id": "technical_engineering",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "theory",
+          "Name": "rucm-qualifications-item-theory",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "safety",
+          "Name": "rucm-qualifications-item-safety",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "practice",
+          "Name": "rucm-qualifications-item-practice",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-technical_engineering",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
+    "enlisted": {
+      "Id": "enlisted",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "firearms",
+          "Name": "rucm-qualifications-item-firearms",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "tactics",
+          "Name": "rucm-qualifications-item-tactics",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "drill",
+          "Name": "rucm-qualifications-item-drill",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 3,
+          "Id": "first_aid",
+          "Name": "rucm-qualifications-item-first_aid",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 4,
+          "Id": "topography",
+          "Name": "rucm-qualifications-item-topography",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 5,
+          "Id": "engineering_basics",
+          "Name": "rucm-qualifications-item-engineering_basics",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 6,
+          "Id": "communications",
+          "Name": "rucm-qualifications-item-communications",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 7,
+          "Id": "military_regulations",
+          "Name": "rucm-qualifications-item-military_regulations",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 8,
+          "Id": "field_exercise",
+          "Name": "rucm-qualifications-item-field_exercise",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-enlisted",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    }
+  },
+  "TrackerAliases": {
+    "AU14JobOpforPlatOp": "AU14JobGOVFORPlatOp",
+    "AU14JobGOVFORRadioTelephoneOperatorWYPMC": "AU14JobGOVFORRadioTelephoneOperator",
+    "AU14JobGOVFORk9handler": "AU14JobThirdPartyK9Handler",
+    "AU14JobGOVFORRadioTelephoneOoperator": "AU14JobGOVFORRadioTelephoneOperator",
+    "AU14JobGOVFORDSPilotUPP": "AU14JobGOVFORDSPilot",
+    "AU14JobAbominationMimic": "AU14JobBiomorphMimic",
+    "AU14JobGOVFORPlatCoCMBCIU": "AU14JobGOVFORPlatCo",
+    "AU14JobGOVFORDSPilotWYPMC": "AU14JobGOVFORDSPilot",
+    "AU14Jobmobboss": "AU14JobMobBoss",
+    "AU14JobGOVFORSquadSergeantCMBCIU": "AU14JobGOVFORSquadSergeant",
+    "AU14JobGOVFORPlatCoWYPMC": "AU14JobGOVFORPlatCo",
+    "AU14JobGOVFORPlatoonCorpsmanCMBCIU": "AU14JobGOVFORPlatoonCorpsman",
+    "AU14JobPlatoonCommander": "AU14JobGOVFORPlatCo",
+    "AU14JobGOVFORDSPilotRMC": "AU14JobGOVFORDSPilot",
+    "AU14JobGOVFORDCCRMC": "AU14JobGOVFORDCC",
+    "AU14JobAbominationGrunt": "AU14JobBiomorphGrunt",
+    "AU14JobGOVFORRadioTelephoneOperatorRMC": "AU14JobGOVFORRadioTelephoneOperator",
+    "AU14JobOPFORAuxSupportSynth": "AU14JobGOVFORAuxSupportSynth",
+    "AU14JobGOVFORSquadSergeantRMC": "AU14JobGOVFORSquadSergeant",
+    "AU14Jobmobgoon": "AU14JobMobGoon",
+    "AU14JobMilitaryPolice": "AU14JobGOVFORMilitaryPoliceMan",
+    "AU14JobCivilianscientist": "AU14JobCivilianScientist",
+    "AU14JobGOVFORSquadSergeantWYPMC": "AU14JobGOVFORSquadSergeant",
+    "AU14JobOpforDSPilot": "AU14JobGOVFORDSPilot",
+    "AU14JobGOVFORSquadRiflemanUPP": "AU14JobGOVFORSquadRifleman",
+    "AU14JobGOVFORPlatCoRMC": "AU14JobGOVFORPlatCo",
+    "AU14JobMilitaryPoliceTracker": "AU14JobGOVFORMilitaryPoliceMan",
+    "AU14JobOpforSquadSergeant": "AU14JobGOVFORSquadSergeant",
+    "AU14JobGOVFORSquadRiflemanCMBCIU": "AU14JobGOVFORSquadRifleman",
+    "AU14JobGOVFORSquadSergeantUPP": "AU14JobGOVFORSquadSergeant",
+    "AU14JobGOVFORPlatoonCorpsmanWYPMC": "AU14JobGOVFORPlatoonCorpsman",
+    "AU14Jobcivilianprisoner": "AU14JobCivilianPrisoner",
+    "AU14JobGOVFORSquadRiflemanRMC": "AU14JobGOVFORSquadRifleman",
+    "AU14JobGOVFORAuxSupportSynthRMC": "AU14JobGOVFORAuxSupportSynth",
+    "AU14JobCivilianEcologist": "AU14JobCivilianScientist",
+    "AU14Jobwyguard": "AU14JobWYGuard",
+    "AU14JobGOVFORPlatoonCorpsmanRMC": "AU14JobGOVFORPlatoonCorpsman",
+    "AU14JobGOVFORSectionSergeantRMC": "AU14JobGOVFORSectionSergeant",
+    "AU14JobCiviliannspaConstable": "AU14JobCivilianCMBDeputy",
+    "AU14JobAbominationSpider": "AU14JobBiomorphSpider",
+    "AU14JobGOVFORPlatOpUPP": "AU14JobGOVFORPlatOp",
+    "AU14JobOpforSquadAutomaticRifleman": "AU14JobGOVFORSquadAutomaticRifleman",
+    "AU14JobGOVFORDCCUPP": "AU14JobGOVFORDCC",
+    "AU14JobGOVFORPlatoonCorpsmanUPP": "AU14JobGOVFORPlatoonCorpsman",
+    "AU14JobGOVFORSquadAutomaticRiflemanRMC": "AU14JobGOVFORSquadAutomaticRifleman",
+    "au14JobcivilianKellandWarden": "AU14JobCivilianKellandWarden",
+    "AU14JobOpforPlatCo": "AU14JobGOVFORPlatCo",
+    "AU14JobOPFORadvisor": "AU14JobGOVFORadvisor",
+    "AU14JobPlatoonOperationsOfficer": "AU14JobGOVFORPlatOp",
+    "AU14JobOPFORk9handler": "AU14JobThirdPartyK9Handler",
+    "AU14JobGOVFORDCCWYPMC": "AU14JobGOVFORDCC",
+    "AU14JobGOVFORPlatOpRMC": "AU14JobGOVFORPlatOp",
+    "AU14JobOpforDCC": "AU14JobGOVFORDCC",
+    "AU14JobGOVFORSectionSergeantCMBCIU": "AU14JobGOVFORSectionSergeant",
+    "AU14JobGOVFORSquadAutomaticRiflemanWYPMC": "AU14JobGOVFORSquadAutomaticRifleman",
+    "AU14JobGOVFORSquadAutomaticRiflemanUPP": "AU14JobGOVFORSquadAutomaticRifleman",
+    "AU14JobGOVFORPlatCoUPP": "AU14JobGOVFORPlatCo",
+    "AU14JobGOVFORSquadRiflemanWYPMC": "AU14JobGOVFORSquadRifleman",
+    "AU14JobGOVFORSectionSergeantWYPMC": "AU14JobGOVFORSectionSergeant",
+    "AU14JobOpforRadioTelephoneOoperator": "AU14JobGOVFORRadioTelephoneOperator",
+    "AU14JobGOVFORPlatOpWYPMC": "AU14JobGOVFORPlatOp",
+    "AU14JobOpforSquadRifleman": "AU14JobGOVFORSquadRifleman",
+    "AU14JobGOVFORRadioTelephoneOperatorUPP": "AU14JobGOVFORRadioTelephoneOperator",
+    "AU14JobOpforSectionSergeant": "AU14JobGOVFORSectionSergeant",
+    "AU14JobAbominationSkitter": "AU14JobBiomorphSkitter",
+    "AU14JobOPFORSquadCombatTech": "AU14JobGOVFORSquadCombatTech",
+    "AU14JobOpforPlatoonCorpsman": "AU14JobGOVFORPlatoonCorpsman",
+    "AU14JobGOVFORSectionSergeantUPP": "AU14JobGOVFORSectionSergeant"
+  },
+  "Roles": {
+    "AU14JobGOVFORVehicleCrewman": {
+      "Professional": [
+        "vehicle_crew"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORVehicleCrewman",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORRadioTelephoneOperatorWYPMC": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORRadioTelephoneOperatorWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFOROfficerEngiWYPMC": {
+      "Professional": [
+        "technical_engineering"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerEngiWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORDSPilotUPP": {
+      "Professional": [
+        "aviation"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORDSPilotUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORDCC": {
+      "Professional": [
+        "aviation"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORDCC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORAdjutantRMC": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORAdjutantRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORSquadSergeantCMBCIU": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadSergeantCMBCIU",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORVehicleCommander": {
+      "Professional": [
+        "vehicle_crew"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORVehicleCommander",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORSquadRiflemanUPP": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadRiflemanUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORPlatCoWYPMC": {
+      "Professional": [
+        "commanding_officer"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatCoWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 0
+    },
+    "AU14JobGOVFORPlatoonCorpsmanCMBCIU": {
+      "Professional": [
+        "medical"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatoonCorpsmanCMBCIU",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORWeaponsSpecialist": {
+      "Professional": [
+        "heavy_weapons"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORWeaponsSpecialist",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFOROfficerLogisticsWYPMC": {
+      "Professional": [
+        "logistics"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerLogisticsWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFOROfficerMPCMBCIU": {
+      "Professional": [
+        "military_police"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerMPCMBCIU",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFOROfficerLogisticsRMC": {
+      "Professional": [
+        "logistics"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerLogisticsRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORSquadSergeant": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadSergeant",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORDSPilotRMC": {
+      "Professional": [
+        "aviation"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORDSPilotRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFOROfficerMPRMC": {
+      "Professional": [
+        "military_police"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerMPRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORDCCRMC": {
+      "Professional": [
+        "aviation"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORDCCRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFOROfficerMedical": {
+      "Professional": [
+        "medical"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerMedical",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORRadioTelephoneOperator": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORRadioTelephoneOperator",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFOREngineeringTech": {
+      "Professional": [
+        "technical_engineering"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOREngineeringTech",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORAdjutantWYPMC": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORAdjutantWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORSquadCombatTech": {
+      "Professional": [
+        "field_engineering"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadCombatTech",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORSquadCombatTechRMC": {
+      "Professional": [
+        "field_engineering"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadCombatTechRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORRadioTelephoneOperatorRMC": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORRadioTelephoneOperatorRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORPlatCo": {
+      "Professional": [
+        "commanding_officer"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatCo",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 0
+    },
+    "AU14JobGOVFORMilitaryPoliceMan": {
+      "Professional": [
+        "military_police"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORMilitaryPoliceMan",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORSquadSergeantRMC": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadSergeantRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORDSPilotWYPMC": {
+      "Professional": [
+        "aviation"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORDSPilotWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORPlatCoCMBCIU": {
+      "Professional": [
+        "commanding_officer"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatCoCMBCIU",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 0
+    },
+    "AU14JobGOVFORSquadSergeantWYPMC": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadSergeantWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORAdjutantUPP": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORAdjutantUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFOROfficerIntelRMC": {
+      "Professional": [
+        "intelligence"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerIntelRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORAdjutant": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORAdjutant",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORSectionSergeant": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSectionSergeant",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORPlatoonCorpsman": {
+      "Professional": [
+        "medical"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatoonCorpsman",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORMilitaryDoctor": {
+      "Professional": [
+        "medical"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORMilitaryDoctor",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFOROfficerEngi": {
+      "Professional": [
+        "technical_engineering"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerEngi",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORPlatCoRMC": {
+      "Professional": [
+        "commanding_officer"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatCoRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 0
+    },
+    "AU14JobGOVFOROfficerMPUPP": {
+      "Professional": [
+        "military_police"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerMPUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFOROfficerMedicalCMBCIU": {
+      "Professional": [
+        "medical"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerMedicalCMBCIU",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFOROfficerLogisticsCMBCIU": {
+      "Professional": [
+        "logistics"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerLogisticsCMBCIU",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORSquadCombatTechWYPMC": {
+      "Professional": [
+        "field_engineering"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadCombatTechWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFOROfficerIntelWYPMC": {
+      "Professional": [
+        "intelligence"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerIntelWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFOROfficerMedicalWYPMC": {
+      "Professional": [
+        "medical"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerMedicalWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORSquadRiflemanCMBCIU": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadRiflemanCMBCIU",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORSquadSergeantUPP": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadSergeantUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFOROfficerIntel": {
+      "Professional": [
+        "intelligence"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerIntel",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORPlatoonCorpsmanWYPMC": {
+      "Professional": [
+        "medical"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatoonCorpsmanWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORAdjutantCMBCIU": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORAdjutantCMBCIU",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORPlatOp": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatOp",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORRadioTrafficOperator": {
+      "Professional": [
+        "communications"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORRadioTrafficOperator",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORSquadRifleman": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadRifleman",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORDSPilot": {
+      "Professional": [
+        "aviation"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORDSPilot",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFOROfficerIntelCMBCIU": {
+      "Professional": [
+        "intelligence"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerIntelCMBCIU",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFOROfficerEngiUPP": {
+      "Professional": [
+        "technical_engineering"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerEngiUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORSectionSergeantRMC": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSectionSergeantRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORPlatOpUPP": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatOpUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORPlatoonCorpsmanRMC": {
+      "Professional": [
+        "medical"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatoonCorpsmanRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORSquadAutomaticRiflemanRMC": {
+      "Professional": [
+        "heavy_weapons"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadAutomaticRiflemanRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFOROfficerMedicalUPP": {
+      "Professional": [
+        "medical"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerMedicalUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORDCCUPP": {
+      "Professional": [
+        "aviation"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORDCCUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFOROfficerMP": {
+      "Professional": [
+        "military_police"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerMP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORSectionSergeantCMBCIU": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSectionSergeantCMBCIU",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORPlatoonCorpsmanUPP": {
+      "Professional": [
+        "medical"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatoonCorpsmanUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORAuxTech": {
+      "Professional": [
+        "logistics"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORAuxTech",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORSquadCombatTechUPP": {
+      "Professional": [
+        "field_engineering"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadCombatTechUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORSquadRiflemanRMC": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadRiflemanRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORDCCWYPMC": {
+      "Professional": [
+        "aviation"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORDCCWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFOROfficerMedicalRMC": {
+      "Professional": [
+        "medical"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerMedicalRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORPlatOpRMC": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatOpRMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFOROfficerIntelUPP": {
+      "Professional": [
+        "intelligence"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerIntelUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORGunshipPilot": {
+      "Professional": [
+        "aviation"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORGunshipPilot",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFOROfficerLogistics": {
+      "Professional": [
+        "logistics"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerLogistics",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORSquadAutomaticRiflemanWYPMC": {
+      "Professional": [
+        "heavy_weapons"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadAutomaticRiflemanWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORSquadAutomaticRiflemanUPP": {
+      "Professional": [
+        "heavy_weapons"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadAutomaticRiflemanUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORPlatCoUPP": {
+      "Professional": [
+        "commanding_officer"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatCoUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 0
+    },
+    "CMUJobGOVFORDroneOperator": {
+      "Professional": [
+        "drone_operator"
+      ],
+      "Enabled": true,
+      "JobId": "CMUJobGOVFORDroneOperator",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFOROfficerLogisticsUPP": {
+      "Professional": [
+        "logistics"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerLogisticsUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORSquadAutomaticRifleman": {
+      "Professional": [
+        "heavy_weapons"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadAutomaticRifleman",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORFighterPilot": {
+      "Professional": [
+        "aviation"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORFighterPilot",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORSquadRiflemanWYPMC": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSquadRiflemanWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFORSectionSergeantWYPMC": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSectionSergeantWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORNurse": {
+      "Professional": [
+        "medical"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORNurse",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 1
+    },
+    "AU14JobGOVFOROfficerMPWYPMC": {
+      "Professional": [
+        "military_police"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFOROfficerMPWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORPlatOpWYPMC": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORPlatOpWYPMC",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 3
+    },
+    "AU14JobGOVFORFighterSystemsOfficer": {
+      "Professional": [
+        "aviation"
+      ],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORFighterSystemsOfficer",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORRadioTelephoneOperatorUPP": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORRadioTelephoneOperatorUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    },
+    "AU14JobGOVFORSectionSergeantUPP": {
+      "Professional": [],
+      "Enabled": true,
+      "JobId": "AU14JobGOVFORSectionSergeantUPP",
+      "Tracker": "",
+      "Govfor": true,
+      "MinimumLevel": 2
+    }
+  }
+}
