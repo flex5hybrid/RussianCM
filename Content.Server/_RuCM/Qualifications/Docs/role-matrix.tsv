@@ -1,0 +1,90 @@
+AU14JobGOVFORAdjutant	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Adjutant.yml	3	
+AU14JobGOVFORAdjutantCMBCIU	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Adjutant.yml	3	
+AU14JobGOVFORAdjutantRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Adjutant.yml	3	
+AU14JobGOVFORAdjutantUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Adjutant.yml	3	
+AU14JobGOVFORAdjutantWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Adjutant.yml	3	
+AU14JobGOVFORAuxTech	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Engineering\AuxTech.yml	1	logistics
+AU14JobGOVFORDCC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Aircrew\DCC.yml	2	aviation
+AU14JobGOVFORDCCRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Aircrew\DCC.yml	2	aviation
+AU14JobGOVFORDCCUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Aircrew\DCC.yml	2	aviation
+AU14JobGOVFORDCCWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Aircrew\DCC.yml	2	aviation
+AU14JobGOVFORDSPilot	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Aircrew\DSPilot.yml	2	aviation
+AU14JobGOVFORDSPilotRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Aircrew\DSPilot.yml	2	aviation
+AU14JobGOVFORDSPilotUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Aircrew\DSPilot.yml	2	aviation
+AU14JobGOVFORDSPilotWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Aircrew\DSPilot.yml	2	aviation
+AU14JobGOVFOREngineeringTech	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Engineering\EngineeringTechnician.yml	1	technical_engineering
+AU14JobGOVFORFighterPilot	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Aircrew\DSPilot.yml	2	aviation
+AU14JobGOVFORFighterSystemsOfficer	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Aircrew\DSPilot.yml	2	aviation
+AU14JobGOVFORGunshipPilot	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Aircrew\DSPilot.yml	2	aviation
+AU14JobGOVFORMilitaryDoctor	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Medical\MilitaryDoctor.yml	3	medical
+AU14JobGOVFORMilitaryPoliceMan	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Support\MilitaryPolice.yml	3	military_police
+AU14JobGOVFORNurse	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Medical\Nurse.yml	1	medical
+AU14JobGOVFOROfficerEngi	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Engineering.yml	3	technical_engineering
+AU14JobGOVFOROfficerEngiUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Engineering.yml	3	technical_engineering
+AU14JobGOVFOROfficerEngiWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Engineering.yml	3	technical_engineering
+AU14JobGOVFOROfficerIntel	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Intelligence.yml	3	intelligence
+AU14JobGOVFOROfficerIntelCMBCIU	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Intelligence.yml	3	intelligence
+AU14JobGOVFOROfficerIntelRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Intelligence.yml	3	intelligence
+AU14JobGOVFOROfficerIntelUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Intelligence.yml	3	intelligence
+AU14JobGOVFOROfficerIntelWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Intelligence.yml	3	intelligence
+AU14JobGOVFOROfficerLogistics	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Logistics.yml	3	logistics
+AU14JobGOVFOROfficerLogisticsCMBCIU	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Logistics.yml	3	logistics
+AU14JobGOVFOROfficerLogisticsRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Logistics.yml	3	logistics
+AU14JobGOVFOROfficerLogisticsUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Logistics.yml	3	logistics
+AU14JobGOVFOROfficerLogisticsWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Logistics.yml	3	logistics
+AU14JobGOVFOROfficerMedical	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Medical.yml	3	medical
+AU14JobGOVFOROfficerMedicalCMBCIU	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Medical.yml	3	medical
+AU14JobGOVFOROfficerMedicalRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Medical.yml	3	medical
+AU14JobGOVFOROfficerMedicalUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Medical.yml	3	medical
+AU14JobGOVFOROfficerMedicalWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Medical.yml	3	medical
+AU14JobGOVFOROfficerMP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Police.yml	3	military_police
+AU14JobGOVFOROfficerMPCMBCIU	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Police.yml	3	military_police
+AU14JobGOVFOROfficerMPRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Police.yml	3	military_police
+AU14JobGOVFOROfficerMPUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Police.yml	3	military_police
+AU14JobGOVFOROfficerMPWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Police.yml	3	military_police
+AU14JobGOVFORPlatCo	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Commander.yml	0	commanding_officer
+AU14JobGOVFORPlatCoCMBCIU	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Commander.yml	0	commanding_officer
+AU14JobGOVFORPlatCoRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Commander.yml	0	commanding_officer
+AU14JobGOVFORPlatCoUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Commander.yml	0	commanding_officer
+AU14JobGOVFORPlatCoWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Commander.yml	0	commanding_officer
+AU14JobGOVFORPlatoonCorpsman	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Medical\PlatoonCorpsman.yml	1	medical
+AU14JobGOVFORPlatoonCorpsmanCMBCIU	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Medical\PlatoonCorpsman.yml	1	medical
+AU14JobGOVFORPlatoonCorpsmanRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Medical\PlatoonCorpsman.yml	1	medical
+AU14JobGOVFORPlatoonCorpsmanUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Medical\PlatoonCorpsman.yml	1	medical
+AU14JobGOVFORPlatoonCorpsmanWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Medical\PlatoonCorpsman.yml	1	medical
+AU14JobGOVFORPlatOp	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Staff.yml	3	
+AU14JobGOVFORPlatOpRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Staff.yml	3	
+AU14JobGOVFORPlatOpUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Staff.yml	3	
+AU14JobGOVFORPlatOpWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_Staff.yml	3	
+AU14JobGOVFORRadioTelephoneOperator	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Support\FireTeamLeader.yml	2	
+AU14JobGOVFORRadioTelephoneOperatorRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Support\FireTeamLeader.yml	2	
+AU14JobGOVFORRadioTelephoneOperatorUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Support\FireTeamLeader.yml	2	
+AU14JobGOVFORRadioTelephoneOperatorWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Support\FireTeamLeader.yml	2	
+AU14JobGOVFORRadioTrafficOperator	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Support\RadioTrafficOperator.yml	2	communications
+AU14JobGOVFORSectionSergeant	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Sergeant_Section.yml	2	
+AU14JobGOVFORSectionSergeantCMBCIU	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Sergeant_Section.yml	2	
+AU14JobGOVFORSectionSergeantRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Sergeant_Section.yml	2	
+AU14JobGOVFORSectionSergeantUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Sergeant_Section.yml	2	
+AU14JobGOVFORSectionSergeantWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Sergeant_Section.yml	2	
+AU14JobGOVFORSquadAutomaticRifleman	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Infantry\SquadAutomaticRifleman.yml	1	heavy_weapons
+AU14JobGOVFORSquadAutomaticRiflemanRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Infantry\SquadAutomaticRifleman.yml	1	heavy_weapons
+AU14JobGOVFORSquadAutomaticRiflemanUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Infantry\SquadAutomaticRifleman.yml	1	heavy_weapons
+AU14JobGOVFORSquadAutomaticRiflemanWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Infantry\SquadAutomaticRifleman.yml	1	heavy_weapons
+AU14JobGOVFORSquadCombatTech	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Engineering\SquadCombatTech.yml	1	field_engineering
+AU14JobGOVFORSquadCombatTechRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Engineering\SquadCombatTech.yml	1	field_engineering
+AU14JobGOVFORSquadCombatTechUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Engineering\SquadCombatTech.yml	1	field_engineering
+AU14JobGOVFORSquadCombatTechWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Engineering\SquadCombatTech.yml	1	field_engineering
+AU14JobGOVFORSquadRifleman	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Infantry\SquadRifleman.yml	1	
+AU14JobGOVFORSquadRiflemanCMBCIU	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Infantry\SquadRifleman.yml	1	
+AU14JobGOVFORSquadRiflemanRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Infantry\SquadRifleman.yml	1	
+AU14JobGOVFORSquadRiflemanUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Infantry\SquadRifleman.yml	1	
+AU14JobGOVFORSquadRiflemanWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Infantry\SquadRifleman.yml	1	
+AU14JobGOVFORSquadSergeant	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Sergeant_Squad.yml	2	
+AU14JobGOVFORSquadSergeantCMBCIU	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Sergeant_Squad.yml	2	
+AU14JobGOVFORSquadSergeantRMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Sergeant_Squad.yml	2	
+AU14JobGOVFORSquadSergeantUPP	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Sergeant_Squad.yml	2	
+AU14JobGOVFORSquadSergeantWYPMC	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Sergeant_Squad.yml	2	
+AU14JobGOVFORVehicleCommander	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Command\Officer_VehicleCommander.yml	3	vehicle_crew
+AU14JobGOVFORVehicleCrewman	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Support\VehicleCrewman.yml	2	vehicle_crew
+AU14JobGOVFORWeaponsSpecialist	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Infantry\WeaponsSpecialist.yml	1	heavy_weapons
+CMUJobGOVFORDroneOperator	Content.CMU\Resources\Prototypes\CMU14\Roles\Military\GovFor\Platoon\Infantry\DroneOperator.yml	2	drone_operator

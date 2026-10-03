@@ -1,4 +1,3 @@
-```ftl
 cmu-emote-name-pushups = Отжимания
 cmu-emote-msg-pushups = принимает упор лёжа и начинает отжиматься.
 cmu-emote-name-situps = Подъёмы корпуса
@@ -54,3 +53,4 @@ cmu-situps-stop = Вы прекращаете делать подъёмы кор
     [few] повторов
     [many] повторов
    *[other] повторов
+}.

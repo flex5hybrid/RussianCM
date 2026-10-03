@@ -159,6 +159,3 @@ language-learning-search-placeholder = Поиск слов...
 language-learning-show-words = Показать слова
 language-learning-hide-words = Скрыть слова
 language-learning-no-results = По вашему запросу слова не найдены.
-language-Yautja-name = Яутжа
-language-Yautja-description = Древний инопланетный язык охотников и воинов.
-language-Yautja-first-contact = Звуки следуют паттерну инопланетного охотника.
