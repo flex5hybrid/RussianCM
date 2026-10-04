@@ -46,7 +46,7 @@ public sealed partial class QualificationService
             }
             // Upgrade only the three renamed instructor roles; retain explicitly configured roles.
             const string instructorDefaults = "drill-instructor-defaults-v1";
-            var defaults = seed.Roles.Values.Where(r => r.JobId.StartsWith("AU14JobGOVFORadvisor", StringComparison.Ordinal)).ToArray();
+            var defaults = seed.Roles.Values.Where(r => r.Enabled && QualificationRules.IsDrillInstructor(r.JobId)).ToArray();
             if (defaults.Length > 0 && !loaded.Migrations.Contains(instructorDefaults))
             {
                 var previousRevision = loaded.Revision;
