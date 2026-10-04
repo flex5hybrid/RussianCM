@@ -1572,6 +1572,18 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("profile_loadout_id");
 
+                    b.Property<string>("CustomColor")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("custom_color");
+
+                    b.Property<string>("CustomEntity")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("custom_entity");
+
+                    b.Property<string>("CustomName")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("custom_name");
+
                     b.Property<string>("LoadoutName")
                         .IsRequired()
                         .HasColumnType("TEXT")
