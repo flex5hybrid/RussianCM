@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
@@ -50,6 +52,37 @@ public sealed class SqliteQualificationRepository : IRuCMQualificationRepository
     public Task<QualificationStore?> Load(CancellationToken cancel = default) => Task.Run(() => LoadCore(cancel), cancel);
     public Task Save(QualificationStore store, long expectedRevision, CancellationToken cancel = default) =>
         Task.Run(() => SaveCore(store, expectedRevision, cancel), cancel);
+    public Task<MigrationScan> ScanMigrationCandidates(CancellationToken cancel = default) =>
+        Task.Run(() => ScanMigrationCandidatesCore(cancel), cancel);
+
+    private MigrationScan ScanMigrationCandidatesCore(CancellationToken cancel)
+    {
+        cancel.ThrowIfCancellationRequested();
+        using var connection = new SqliteConnection(_connection);
+        connection.Open();
+
+        var accountsScanned = 0;
+        using (var count = new SqliteCommand("SELECT COUNT(*) FROM player", connection))
+            accountsScanned = Convert.ToInt32(count.ExecuteScalar(), CultureInfo.InvariantCulture);
+
+        var candidates = new Dictionary<Guid, Dictionary<string, double>>();
+        using var command = new SqliteCommand("SELECT player_id, tracker, time_spent FROM play_time", connection);
+        using var reader = command.ExecuteReader();
+        while (reader.Read())
+        {
+            cancel.ThrowIfCancellationRequested();
+            if (!Guid.TryParse(reader.GetString(0), out var player))
+                continue;
+            var tracker = reader.GetString(1);
+            if (!TimeSpan.TryParse(reader.GetString(2), CultureInfo.InvariantCulture, out var spent))
+                continue;
+            if (!candidates.TryGetValue(player, out var trackers))
+                candidates[player] = trackers = new();
+            trackers[tracker] = trackers.GetValueOrDefault(tracker) + spent.TotalHours;
+        }
+
+        return new(accountsScanned, candidates.Select(p => new MigrationCandidate(p.Key, p.Value)).ToArray());
+    }
 
     private QualificationStore? LoadCore(CancellationToken cancel)
     {
