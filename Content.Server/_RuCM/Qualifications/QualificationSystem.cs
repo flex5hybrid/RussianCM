@@ -354,7 +354,16 @@ public sealed partial class QualificationSystem : EntitySystem
             result.Store.Audit = s.Audit.Where(a => a.Target == target || a.Target == null).TakeLast(100).ToList();
             result.Store.Participation.Clear();
             if (_previews.TryGetValue(player.UserId, out var preview))
-            { result.PreviewToken = preview.Token; result.Preview = new() { Counts = preview.Plan.Grants.Values.SelectMany(x => x).GroupBy(x => x).ToDictionary(g => g.Key, g => g.Count()), Records = preview.Plan.Grants.Sum(x => x.Value.Count) }; }
+            {
+                result.PreviewToken = preview.Token;
+                result.Preview = new()
+                {
+                    AccountsScanned = preview.Plan.AccountsScanned,
+                    EligibleAccounts = preview.Plan.Grants.Count,
+                    Counts = preview.Plan.Grants.Values.SelectMany(x => x).GroupBy(x => x).ToDictionary(g => g.Key, g => g.Count()),
+                    Records = preview.Plan.Grants.Sum(x => x.Value.Count)
+                };
+            }
         }
         else
         {
@@ -536,15 +545,26 @@ public sealed partial class QualificationSystem : EntitySystem
                     if (operation == QualificationAction.MigrationPreview)
                     {
                         if (!Service.IsManagement(actor)) throw new QualificationPermissionException();
-                        var roster = JsonSerializer.Deserialize<HashSet<Guid>>(request.Payload) ?? throw new QualificationValidationException("roster");
-                        if (roster.Count > 10000) throw new QualificationValidationException("roster");
-                        var candidates = new List<MigrationCandidate>();
-                        foreach (var id in roster)
+                        var roster = JsonSerializer.Deserialize<HashSet<Guid>?>(request.Payload);
+                        MigrationPlan plan;
+                        if (roster == null)
                         {
-                            var times = await _db.GetPlayTimes(id);
-                            candidates.Add(new(id, times.GroupBy(t => t.Tracker).ToDictionary(g => g.Key, g => g.Sum(t => t.TimeSpent.TotalHours))));
+                            var scan = await Service.ScanMigrationCandidates();
+                            plan = Service.MigrationDryRun(scan.Candidates, actor.Context.At, scan.AccountsScanned);
                         }
-                        var plan = Service.MigrationDryRun(candidates, actor.Context.At);
+                        else
+                        {
+                            if (roster.Count == 0 || roster.Count > 10000)
+                                throw new QualificationValidationException("roster");
+                            var candidates = new List<MigrationCandidate>();
+                            foreach (var id in roster)
+                            {
+                                var times = await _db.GetPlayTimes(id);
+                                candidates.Add(new(id, times.GroupBy(t => t.Tracker)
+                                    .ToDictionary(g => g.Key, g => g.Sum(t => t.TimeSpent.TotalHours))));
+                            }
+                            plan = Service.MigrationDryRun(candidates, actor.Context.At, roster.Count);
+                        }
                         _previews[player.UserId] = (Guid.NewGuid().ToString("N"), plan);
                     }
                     else if (operation == QualificationAction.MigrationExecute)
