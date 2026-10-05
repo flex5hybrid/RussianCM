@@ -80,6 +80,8 @@ public sealed class QualificationConfiguration
 [Serializable, NetSerializable]
 public sealed class QualificationMigrationPreview
 {
+    public int AccountsScanned { get; set; }
+    public int EligibleAccounts { get; set; }
     public Dictionary<string, int> Counts { get; set; } = new();
     public int Records { get; set; }
 }
