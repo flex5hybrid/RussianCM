@@ -718,7 +718,7 @@ public sealed partial class QualificationWindow : DefaultWindow
     {
         var migration = Card(_content, L("migration"), L("migration-evidence"), true);
         Text(migration, L("migration-steps"));
-        Button(migration, L("migration-scan-all"), () =>
+        Button(migration, L("dry-run"), () =>
         {
             var req = Request();
             req.Configuration = new() { Roster = null };
@@ -726,7 +726,7 @@ public sealed partial class QualificationWindow : DefaultWindow
         }, () => Ready);
 
         var selected = Column(); selected.Visible = false; migration.AddChild(selected);
-        Button(migration, L("migration-selected-advanced"), () => selected.Visible = !selected.Visible);
+        Button(migration, L("technical-roster"), () => selected.Visible = !selected.Visible);
         Text(selected, L("named-accounts-help"));
         var roster = AccountChecks(selected, "migration-roster", new());
         var ids = Field(selected, "migration-ids", L("migration-roster"), help: L("uuid-list-help"));
@@ -737,7 +737,7 @@ public sealed partial class QualificationWindow : DefaultWindow
             result.UnionWith(roster.Where(p => p.Value.Pressed).Select(p => p.Key));
             return result;
         }
-        Button(selected, L("dry-run-selected"), () =>
+        Button(selected, L("dry-run"), () =>
         {
             var req = Request();
             req.Configuration = new() { Roster = Roster() };
@@ -747,8 +747,7 @@ public sealed partial class QualificationWindow : DefaultWindow
         if (_view.Preview is { } preview)
         {
             var results = Card(_content, L("preview-results"), L("preview-help"));
-            Heading(results, L("migration-scanned", ("count", preview.AccountsScanned)));
-            Heading(results, L("migration-eligible", ("count", preview.EligibleAccounts)));
+            Heading(results, L("roster-count", ("count", preview.AccountsScanned)));
             foreach (var (id, count) in preview.Counts)
                 Text(results, DefinitionName(id) + ": " + count);
             Heading(results, L("migration-records") + ": " + preview.Records);
