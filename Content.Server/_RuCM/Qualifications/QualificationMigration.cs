@@ -2,51 +2,98 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Content.Shared._RuCM.Qualifications;
 
 namespace Content.Server._RuCM.Qualifications;
 
 public sealed record MigrationCandidate(Guid Player, Dictionary<string, double> TrackerHours);
-public sealed record MigrationPlan(string Key, long Revision, DateTimeOffset At, Dictionary<Guid, HashSet<string>> Grants);
+public sealed record MigrationScan(int AccountsScanned, IReadOnlyList<MigrationCandidate> Candidates);
+public sealed record MigrationPlan(string Key, long Revision, DateTimeOffset At, int AccountsScanned, Dictionary<Guid, HashSet<string>> Grants);
 public sealed record QualificationMigrationSettings(Dictionary<string, HashSet<string>> Groups, Dictionary<string, string> Aliases);
 
 public sealed partial class QualificationService
 {
     public const string MigrationKey = "govfor-training-v1";
 
-    /// <summary>No writes. Recent GOVFOR evidence is job-specific, never inferred from account last-seen.</summary>
-    public MigrationPlan MigrationDryRun(IEnumerable<MigrationCandidate> candidates, DateTimeOffset at)
+    /// <summary>
+    /// One-time soft migration from historical role timers. Human GOVFOR service over three hours
+    /// grants Enlisted; higher levels and professional clearances use their configured role groups.
+    /// Synthetic evidence is rejected before aliases are folded.
+    /// </summary>
+    public MigrationPlan MigrationDryRun(IEnumerable<MigrationCandidate> candidates, DateTimeOffset at, int? accountsScanned = null)
     {
         var s = VolatileSnapshot();
+        var unique = candidates.Where(c => c.Player != Guid.Empty).GroupBy(c => c.Player).Select(g => g.First()).ToArray();
         var grants = new Dictionary<Guid, HashSet<string>>();
-        if (s.Migrations.Contains(MigrationKey)) return new(MigrationKey, s.Revision, at, grants);
-        var roles = s.Roles.Values.Where(r => r.Enabled && !r.Synthetic && !s.CommandingOfficerJobs.Contains(r.JobId)).ToArray();
+        var scanned = accountsScanned ?? unique.Length;
+        if (s.Migrations.Contains(MigrationKey)) return new(MigrationKey, s.Revision, at, scanned, grants);
+
+        var humanGovforRoles = s.Roles.Values.Where(r => r.Govfor && !r.Synthetic).ToArray();
+        var migrationRoles = humanGovforRoles.Where(r => r.Enabled && !s.CommandingOfficerJobs.Contains(r.JobId)).ToArray();
+
         // Reject synthetic evidence before alias folding, including aliases to human trackers.
         // Trackers shared by human and synthetic jobs cannot prove human service.
         var syntheticTrackers = s.Roles.Values.Where(r => r.Synthetic).Select(r => r.Tracker).Where(t => t.Length > 0).ToHashSet();
         var syntheticCanonical = syntheticTrackers.Select(t => s.TrackerAliases.GetValueOrDefault(t, t)).ToHashSet();
-        foreach (var candidate in candidates.GroupBy(c => c.Player).Select(g => g.First()))
+
+        foreach (var candidate in unique)
         {
             var earned = new HashSet<string>();
-            var canonicalHours = candidate.TrackerHours.Where(t => !syntheticTrackers.Contains(t.Key) &&
-                !syntheticCanonical.Contains(s.TrackerAliases.GetValueOrDefault(t.Key, t.Key))).GroupBy(t => s.TrackerAliases.GetValueOrDefault(t.Key, t.Key)).ToDictionary(g => g.Key, g => g.Sum(t => Math.Max(0, t.Value)));
-            double Hours(string groupId, IEnumerable<RoleRequirement> fallback)
+            var canonicalHours = candidate.TrackerHours
+                .Where(t => !syntheticTrackers.Contains(t.Key) &&
+                    !syntheticCanonical.Contains(s.TrackerAliases.GetValueOrDefault(t.Key, t.Key)))
+                .GroupBy(t => s.TrackerAliases.GetValueOrDefault(t.Key, t.Key))
+                .ToDictionary(g => g.Key, g => g.Sum(t => Math.Max(0, t.Value)));
+
+            double Hours(IEnumerable<RoleRequirement> group)
             {
-                var group = s.MigrationGroups.TryGetValue(groupId, out var jobs) ? s.Roles.Values.Where(r => jobs.Contains(r.JobId) && !r.Synthetic && !s.CommandingOfficerJobs.Contains(r.JobId)) : fallback;
-                return group.Select(r => r.Tracker).Where(t => t.Length > 0).Distinct().Sum(t => canonicalHours.GetValueOrDefault(t));
+                return group.Select(r => r.Tracker)
+                    .Where(t => t.Length > 0)
+                    .Select(t => s.TrackerAliases.GetValueOrDefault(t, t))
+                    .Distinct()
+                    .Sum(t => canonicalHours.GetValueOrDefault(t));
             }
-            if (s.Participation.Any(p => p.Player == candidate.Player && p.At >= at.AddDays(-14) && p.At <= at && s.Roles.TryGetValue(p.Job, out var participated) && participated.Govfor && !participated.Synthetic)) earned.Add("enlisted");
-            if (Hours("sergeant", roles.Where(r => r.MinimumLevel == MilitaryLevel.Sergeant)) >= 5) earned.UnionWith(new[] { "enlisted", "sergeant" });
-            if (Hours("officer", roles.Where(r => r.MinimumLevel == MilitaryLevel.Officer)) >= 10) earned.UnionWith(QualificationRules.Levels);
-            foreach (var definition in s.Definitions.Values.Where(d => d.Enabled && !QualificationRules.Levels.Contains(d.Id) && d.Id != "commanding_officer"))
-                if (Hours(definition.Id, roles.Where(r => r.Professional.Contains(definition.Id))) >= 5) earned.Add(definition.Id);
-            // Never restore an existing suspension/revocation through migration.
-            if (s.Players.TryGetValue(candidate.Player, out var player)) earned.ExceptWith(player.Grants.Keys);
-            if (candidate.Player != Guid.Empty && earned.Count > 0) grants[candidate.Player] = earned;
+
+            IEnumerable<RoleRequirement> MigrationGroup(string groupId, IEnumerable<RoleRequirement> fallback)
+            {
+                if (!s.MigrationGroups.TryGetValue(groupId, out var jobs))
+                    return fallback;
+                return s.Roles.Values.Where(r => jobs.Contains(r.JobId) && !r.Synthetic && !s.CommandingOfficerJobs.Contains(r.JobId));
+            }
+
+            // Strictly more than three hours, summed across all human GOVFOR role trackers.
+            if (Hours(humanGovforRoles) > 3)
+                earned.Add("enlisted");
+
+            if (Hours(MigrationGroup("sergeant", migrationRoles.Where(r => r.MinimumLevel == MilitaryLevel.Sergeant))) >= 5)
+                earned.UnionWith(new[] { "enlisted", "sergeant" });
+
+            if (Hours(MigrationGroup("officer", migrationRoles.Where(r => r.MinimumLevel == MilitaryLevel.Officer))) >= 10)
+                earned.UnionWith(QualificationRules.Levels);
+
+            foreach (var definition in s.Definitions.Values.Where(d =>
+                         d.Enabled && !QualificationRules.Levels.Contains(d.Id) && d.Id != "commanding_officer"))
+            {
+                if (Hours(MigrationGroup(definition.Id, migrationRoles.Where(r => r.Professional.Contains(definition.Id)))) >= 5)
+                    earned.Add(definition.Id);
+            }
+
+            // Never restore an existing active/suspended/revoked record through migration.
+            if (s.Players.TryGetValue(candidate.Player, out var player))
+                earned.ExceptWith(player.Grants.Keys);
+
+            if (earned.Count > 0)
+                grants[candidate.Player] = earned;
         }
-        return new(MigrationKey, s.Revision, at, grants);
+
+        return new(MigrationKey, s.Revision, at, scanned, grants);
     }
+
+    public Task<MigrationScan> ScanMigrationCandidates(CancellationToken cancel = default) =>
+        _repository.ScanMigrationCandidates(cancel);
+
     private QualificationStore VolatileSnapshot() => System.Threading.Volatile.Read(ref _cache);
 
     public async Task ExecuteMigration(QualificationAuthority actor, MigrationPlan plan)
@@ -70,13 +117,22 @@ public sealed partial class QualificationService
                     if (player.Grants.ContainsKey(qualification)) continue;
                     Award(next, player, qualification, actor.Context, MigrationKey);
                     next.Audit.Add(new(Guid.NewGuid(), "MigrationGrant", actor.Context.Actor, id, actor.Context.At,
-                        actor.Context.Round, actor.Context.Server, "", qualification, MigrationKey, JsonSerializer.Serialize(plan)));
+                        actor.Context.Round, actor.Context.Server, "", qualification, MigrationKey, plan.Key));
                     granted.Add(new("Grant", id, qualification, actor.Context.Actor));
                 }
             }
             next.Migrations.Add(plan.Key);
+            var counts = plan.Grants.Values.SelectMany(x => x).GroupBy(x => x)
+                .ToDictionary(g => g.Key, g => g.Count());
+            var summary = JsonSerializer.Serialize(new
+            {
+                plan.AccountsScanned,
+                EligibleAccounts = plan.Grants.Count,
+                Records = plan.Grants.Sum(x => x.Value.Count),
+                Counts = counts
+            });
             next.Audit.Add(new(Guid.NewGuid(), "MigrationExecute", actor.Context.Actor, null, actor.Context.At,
-                actor.Context.Round, actor.Context.Server, "", JsonSerializer.Serialize(plan.Grants), MigrationKey, plan.Key));
+                actor.Context.Round, actor.Context.Server, "", summary, MigrationKey, plan.Key));
             next.Revision = current.Revision + 1;
             await _repository.Save(next, current.Revision);
             System.Threading.Volatile.Write(ref _cache, next);
