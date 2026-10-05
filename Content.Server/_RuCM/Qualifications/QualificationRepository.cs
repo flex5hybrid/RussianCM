@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Threading;
@@ -14,6 +15,8 @@ public interface IRuCMQualificationRepository
 {
     Task<QualificationStore?> Load(CancellationToken cancel = default);
     Task Save(QualificationStore store, long expectedRevision, CancellationToken cancel = default);
+    Task<MigrationScan> ScanMigrationCandidates(CancellationToken cancel = default) =>
+        Task.FromResult(new MigrationScan(0, Array.Empty<MigrationCandidate>()));
 }
 
 /// <summary>Own tables in the game's PostgreSQL database, transactional CAS and append-only audit.</summary>
@@ -55,6 +58,31 @@ public sealed class PostgresQualificationRepository : IRuCMQualificationReposito
         CREATE TRIGGER immutable_audit BEFORE UPDATE OR DELETE ON rucm_training.audit FOR EACH ROW EXECUTE FUNCTION rucm_training.immutable_audit();
         INSERT INTO rucm_training.schema_migration(version) VALUES(1) ON CONFLICT DO NOTHING;
         """;
+
+    public async Task<MigrationScan> ScanMigrationCandidates(CancellationToken cancel = default)
+    {
+        await using var connection = new NpgsqlConnection(_connection);
+        await connection.OpenAsync(cancel);
+
+        var accountsScanned = 0;
+        await using (var count = new NpgsqlCommand("SELECT COUNT(*) FROM player", connection))
+            accountsScanned = Convert.ToInt32(await count.ExecuteScalarAsync(cancel));
+
+        var candidates = new Dictionary<Guid, Dictionary<string, double>>();
+        await using var command = new NpgsqlCommand("SELECT player_id, tracker, time_spent FROM play_time", connection);
+        await using var reader = await command.ExecuteReaderAsync(cancel);
+        while (await reader.ReadAsync(cancel))
+        {
+            var player = reader.GetGuid(0);
+            var tracker = reader.GetString(1);
+            var hours = reader.GetFieldValue<TimeSpan>(2).TotalHours;
+            if (!candidates.TryGetValue(player, out var trackers))
+                candidates[player] = trackers = new();
+            trackers[tracker] = trackers.GetValueOrDefault(tracker) + hours;
+        }
+
+        return new(accountsScanned, candidates.Select(p => new MigrationCandidate(p.Key, p.Value)).ToArray());
+    }
 
     public async Task<QualificationStore?> Load(CancellationToken cancel = default)
     {
