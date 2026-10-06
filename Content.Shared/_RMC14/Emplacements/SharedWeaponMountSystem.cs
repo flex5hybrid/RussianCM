@@ -458,7 +458,10 @@ public abstract partial class SharedWeaponMountSystem : EntitySystem
             if (!TryComp(ent, out MetaDataComponent? metaData))
                 return false;
 
-            if (HasWeaponMountNearbyPopup((grid.Value, mapGrid), coordinates, ent.Owner, ent.Comp.MountExclusionAreaSize, user))
+            // RuMC edit start
+            if (ent.Comp.MountExclusionAreaSize != 0 &&
+                HasWeaponMountNearbyPopup((grid.Value, mapGrid), coordinates, ent.Owner, ent.Comp.MountExclusionAreaSize, user))
+            // RuMC edit end
                 return false;
 
             if (ent.Comp.BarricadeExclusionAreaSize != 0 &&
@@ -715,6 +718,12 @@ public abstract partial class SharedWeaponMountSystem : EntitySystem
     private bool TryGetNearbyMounts(Entity<MapGridComponent> grid, EntityCoordinates coordinates, out List<Entity<WeaponMountComponent>> mounts, float range = 1.5f)
     {
         mounts = new List<Entity<WeaponMountComponent>>();
+
+        // RuMC edit start
+        if (range < 0.5f)
+            return false;
+        // RuMC edit end
+
         var position = _mapSystem.LocalToTile(grid, grid, coordinates);
         var checkArea = new Box2(position.X - range + 1, position.Y - range + 1, position.X + range, position.Y + range);
         var enumerable = _mapSystem.GetLocalAnchoredEntities(grid, grid, checkArea);
