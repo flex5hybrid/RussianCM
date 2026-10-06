@@ -2,7 +2,7 @@
 name: Changelog
 
 concurrency:
-  group: update-changelog
+  group: ${{ inputs.diagnose_only == true && 'changelog-diagnose' || 'update-changelog' }}
   cancel-in-progress: false
 
 on:
@@ -14,6 +14,10 @@ on:
       - Resources/Changelog/**
   workflow_dispatch:
     inputs:
+      diagnose_only:
+        description: "Only test Mistral with a tiny fixed prompt: no changelog, commits or Discord"
+        type: boolean
+        default: false
       start_date:
         description: "Recover missing entries since ISO-8601 date; already delivered entries are skipped"
         required: false
@@ -59,10 +63,30 @@ on:
         value: ${{ jobs.update.outputs.commit_hash }}
 
 jobs:
+  diagnose:
+    if: github.event_name == 'workflow_dispatch' && inputs.diagnose_only == true
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.13"
+      - name: Install diagnostic dependency
+        run: python3 -m pip install --disable-pip-version-check requests
+      - name: Probe Mistral access without changelog or delivery
+        run: python3 Tools/_CMU14/Changelog/changelog_mistral_diagnostics.py
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          CHANGELOG_TRANSLATION_MODEL: ${{ vars.CHANGELOG_TRANSLATION_MODEL || 'mistral-small-latest' }}
+          PYTHONUNBUFFERED: '1'
+
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    if: vars.DONT_UPDATE_CHANGELOG != 'true'
+    if: vars.DONT_UPDATE_CHANGELOG != 'true' && inputs.diagnose_only != true
     outputs:
       changes_detected: ${{ steps.auto-commit.outputs.changes_detected }}
       commit_hash: ${{ steps.resolve-ref.outputs.commit_hash }}
