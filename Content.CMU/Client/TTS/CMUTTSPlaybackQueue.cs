@@ -14,14 +14,23 @@ public sealed class CMUTTSPlaybackQueue<TKey, TValue>(Func<TimeSpan> now) where 
     private const int MaxBytes = 32 * 1024 * 1024;
     private static readonly TimeSpan MaxAge = TimeSpan.FromSeconds(12);
     private readonly Dictionary<TKey, Queue<(TValue Value, int Bytes, TimeSpan Added)>> _queues = new();
+    private readonly List<TKey> _expiryKeys = new();
     private int _count;
     private int _bytes;
 
     public TKey[] Keys => _queues.Count == 0 ? Array.Empty<TKey>() : _queues.Keys.ToArray();
 
+    /// <summary>Copies a stable key snapshot into a caller-owned reusable buffer.</summary>
+    public void CopyKeys(List<TKey> keys)
+    {
+        keys.Clear();
+        keys.AddRange(_queues.Keys);
+    }
+
     public bool Enqueue(TKey key, TValue value, int bytes)
     {
-        foreach (var queuedKey in Keys)
+        CopyKeys(_expiryKeys);
+        foreach (var queuedKey in _expiryKeys)
             DiscardExpired(queuedKey);
         if (bytes < 0 || bytes > MaxBytes || _count >= MaxQueued || _bytes > MaxBytes - bytes)
             return false;
