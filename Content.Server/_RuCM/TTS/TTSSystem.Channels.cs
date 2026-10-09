@@ -31,7 +31,7 @@ public sealed partial class TTSSystem
     private readonly CMUTTSDeliveryOrder<EntityUid> _deliveryOrder = new();
     private readonly CMUTTSDeliveryOrder<ICommonSession> _radioOrder = new();
     private readonly CMUTTSDeliveryOrder<bool> _announcementOrder = new();
-    private readonly Dictionary<(ICommonSession Session, ulong Transmission), TimeSpan> _radioDeliveries = new();
+    private readonly CMUTTSRadioDeliveryCache<(ICommonSession Session, ulong Transmission)> _radioDeliveries = new();
 
     private void InitializeChannels()
     {
@@ -72,12 +72,7 @@ public sealed partial class TTSSystem
         if (tts.VoicePrototypeId == null)
             return;
 
-        foreach (var (key, expiry) in _radioDeliveries.ToArray())
-        {
-            if (expiry <= _timing.CurTime)
-                _radioDeliveries.Remove(key);
-        }
-        if (args.TransmissionId != 0 && !_radioDeliveries.TryAdd((session, args.TransmissionId), _timing.CurTime + TimeSpan.FromSeconds(30)))
+        if (args.TransmissionId != 0 && !_radioDeliveries.TryAdd((session, args.TransmissionId), _timing.CurTime))
             return;
 
         var generation = _roundGeneration;

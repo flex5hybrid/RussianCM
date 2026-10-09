@@ -32,6 +32,7 @@ public sealed partial class TTSSystem : EntitySystem
     private readonly Dictionary<EntityUid, PlayingSound> _playing = new();
     private readonly Dictionary<PlaybackLane, EntityUid> _activeLanes = new();
     private readonly List<EntityUid> _finished = new();
+    private readonly List<PlaybackLane> _queuedLanes = new();
     private CMUTTSPlaybackQueue<PlaybackLane, PlayTTSEvent> _queue = default!;
 
     private enum PlaybackChannel : byte { Local, Radio, Announcement, Preview }
@@ -81,7 +82,8 @@ public sealed partial class TTSSystem : EntitySystem
         }
         foreach (var uid in _finished)
             FinishPlayback(uid, true);
-        foreach (var lane in _queue.Keys)
+        _queue.CopyKeys(_queuedLanes);
+        foreach (var lane in _queuedLanes)
             StartQueuedPlayback(lane);
     }
 
@@ -167,6 +169,12 @@ public sealed partial class TTSSystem : EntitySystem
             return false;
 
         volume = Math.Clamp(volume, 0f, 1f);
+        EntityUid? source = null;
+        // Resolve spatial sources before WAV decoding and audio-buffer allocation.
+        if (ev.SourceUid is { } netSource && !ev.IsRadio &&
+            (!TryGetEntity(netSource, out source) || TerminatingOrDeleted(source)))
+            return false;
+
         var filePath = new ResPath($"{_fileIndex++}.wav");
 
         ContentRoot.AddOrUpdateFile(filePath, ev.Data);
@@ -187,14 +195,11 @@ public sealed partial class TTSSystem : EntitySystem
                 .WithVolume(SharedAudioSystem.GainToVolume(volume) - (ev.IsWhisper ? 6f : 0f))
                 .WithMaxDistance(ev.IsWhisper ? SharedChatSystem.WhisperMuffledRange : SharedChatSystem.VoiceRange);
 
-            if (ev.SourceUid != null && !ev.IsRadio)
+            if (source is { } sourceUid)
             {
-                if (!TryGetEntity(ev.SourceUid.Value, out var source) || TerminatingOrDeleted(source))
-                    return false;
-
                 var playback = _audio.PlayEntity(
                     audioResource.AudioStream,
-                    source.Value,
+                    sourceUid,
                     soundSpecifier,
                     audioParams);
 
