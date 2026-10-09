@@ -16,8 +16,8 @@ ent-RMCSupplyDropPadsGuideBook = подставки для поставок
 ent-RMCTheLineGuideBook = Линия
   .desc = Линия
 
-ent-RMCASRSinterfaceGuideBook = АСРС-интерфейс
-  .desc = Интерфейс АСРС
+ent-RMCASRSinterfaceGuideBook = АСХВ-интерфейс
+  .desc = Интерфейс АСХВ
 
 ent-RMCGuidebookPaperRequisitionsWritten = счет-фактура заявки
   .desc = Единая бюрократическая единица, ожидающая одобрения.

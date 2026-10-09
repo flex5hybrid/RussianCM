@@ -1,0 +1,9 @@
+cmu-platoon-uscm-name = Колониальная морская пехота США
+cmu-platoon-lacn-name = Латиноамериканский колониальный флот
+cmu-platoon-upp-name = Морская пехота СПН
+cmu-platoon-weyu-name = ЧВК «Вейланд-Ютани»
+cmu-platoon-cmbciu-name = Оперативная группа БКМ
+cmu-platoon-hazops-name = РХБЗ США
+cmu-platoon-prodigysf-name = Служба безопасности «Продиджи»
+cmu-platoon-vaipo-name = Основная группа Vanguard's Arrow
+cmu-platoon-rmc-name = Имперский ударный корпус ИТМ

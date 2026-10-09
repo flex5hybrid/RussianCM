@@ -1,4 +1,4 @@
-rmc-requisitions-window-title = Система хранения и получения грузов (СХПГ)
+rmc-requisitions-window-title = Автоматизированная система хранения и выдачи (АСХВ)
 
 rmc-requisitions-order-items = Заказать предметы
 rmc-requisitions-view-requests = Просмотр запросов
@@ -12,7 +12,7 @@ rmc-requisitions-info = Инфо
 rmc-requisitions-buy = Купить
 
 rmc-requisitions-no-platform = Нет платформы
-rmc-requisitions-asrs-busy = СХПГ занята
+rmc-requisitions-asrs-busy = АСХВ занята
 rmc-requisitions-raise = Поднять
 rmc-requisitions-lower = Опустить
 rmc-requisitions-platform-lowered = Платформа: опущена
@@ -40,6 +40,7 @@ rmc-requisitions-stock = Запас: {$current}/{$max}{$refill}
 rmc-requisitions-stock-refill = {"  "}+{$time}
 rmc-requisitions-now = сейчас
 
+rmc-requisitions-category-air-defense = ПВО
 rmc-requisitions-category-engineering = Инженерия
 rmc-requisitions-category-materials = Материалы
 rmc-requisitions-category-explosives = Взрывчатка
@@ -61,3 +62,11 @@ rmc-requisitions-category-furniture = Мебель
 rmc-requisitions-category-machines-and-vendors = Механизмы/торгоматы (нужен гаечный ключ)
 rmc-requisitions-category-research = Исследования
 rmc-requisitions-category-botany = Ботаника
+rmc-requisitions-category-atmospherics = Атмосфера
+rmc-requisitions-category-food = Еда
+rmc-requisitions-category-civilian-goods = Гражданские товары
+rmc-requisitions-category-corporate-equipment = Корпоративное снаряжение
+rmc-requisitions-category-weysec-ammo = Боеприпасы Ве-Ю
+rmc-requisitions-category-weysec-gear = Снаряжение Ве-Ю
+rmc-requisitions-category-weysec-weapons = Оружие Ве-Ю
+rmc-requisitions-category-weyland-yutani-research = Исследования Ве-Ю

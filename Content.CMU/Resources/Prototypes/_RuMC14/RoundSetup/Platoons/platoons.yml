@@ -1,6 +1,6 @@
 - type: platoon
   id: BEAR
-  name: "PMC 'BEAR'"
+  name: cmu-platoon-bear-name
   lorePrimer: RuMCPrimerPlatoonBEAR
   Allegiance: UPP
   languages:

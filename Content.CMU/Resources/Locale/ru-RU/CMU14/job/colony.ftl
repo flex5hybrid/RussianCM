@@ -67,7 +67,7 @@ au14-job-prefix-colonyadministrator = ADMIN
 au14-loadout-group-colony-administrator-skills = Навыки
 
 au14-job-name-civilianfreightsystemsspecialist = Специалист по грузовым системам
-au14-job-description-civilianfreightsystemsspecialist = Управляйте ASRS и координируйте поступающие и отправляемые поставки.
+au14-job-description-civilianfreightsystemsspecialist = Управляйте АСХВ и координируйте поступающие и отправляемые поставки.
 au14-job-prefix-freightsystemsspecialist = FSS
 
 au14-job-name-civilianengineer = Инженер

@@ -1,4 +1,3 @@
-```ftl
 cmu-emote-name-pushups = Отжимания
 cmu-emote-msg-pushups = принимает упор лёжа и начинает отжиматься.
 cmu-emote-name-situps = Подъёмы корпуса
@@ -13,8 +12,8 @@ cmu-pushups-count = выполняет {$count} {$count ->
    *[other] отжиманий
 }.
 cmu-pushups-fail-emote = поднимается, не сумев сделать ещё одно отжимание после {$count} {$count ->
-    [one] повтора
-    [few] повторов
+    [one] повтор
+    [few] повтора
     [many] повторов
    *[other] повторов
 }!
@@ -25,8 +24,8 @@ cmu-pushups-fail = Руки больше не держат! Вам удалос�
    *[other] отжиманий
 }.
 cmu-pushups-stop = Вы прекращаете отжиматься после {$count} {$count ->
-    [one] повтора
-    [few] повторов
+    [one] повтор
+    [few] повтора
     [many] повторов
    *[other] повторов
 }.
@@ -38,8 +37,8 @@ cmu-situps-count = выполняет {$count} {$count ->
    *[other] подъёмов корпуса
 }.
 cmu-situps-fail-emote = поднимается, не сумев сделать ещё один подъём корпуса после {$count} {$count ->
-    [one] повтора
-    [few] повторов
+    [one] повтор
+    [few] повтора
     [many] повторов
    *[other] повторов
 }!
@@ -50,7 +49,8 @@ cmu-situps-fail = Мышцы пресса больше не выдерживаю
    *[other] подъёмов корпуса
 }.
 cmu-situps-stop = Вы прекращаете делать подъёмы корпуса после {$count} {$count ->
-    [one] повтора
-    [few] повторов
+    [one] повтор
+    [few] повтора
     [many] повторов
    *[other] повторов
+}.

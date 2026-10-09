@@ -894,7 +894,7 @@ public sealed partial class HumanoidProfileEditor
 
             platoonOptions.Add(new PlatoonRankOptions(
                 platoon.ID,
-                platoon.Name,
+                Loc.GetString(platoon.Name),
                 platoon.PlatoonPatch,
                 ranks));
         }

@@ -73,3 +73,5 @@ lobby-info-players = ИГРОКИ
 lobby-info-round-time = ВРЕМЯ РАУНДА
 
 lobby-info-players-value = {$count} (готовы: {$ready})
+
+lobby-info-none = Нет

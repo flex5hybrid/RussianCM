@@ -121,4 +121,3 @@ ghost-target-window-warp-to-random = Random
 ghost-target-window-warp-to-most-followed-tooltip = Warp to the most followed player
 
 ghost-target-window-warp-to-random-tooltip = Warp to a random player
-ghost-target-window-tab-yautja = Яутжа

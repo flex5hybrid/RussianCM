@@ -22,6 +22,10 @@ cmu-asrs-platform-lowered = ОПУЩЕНА
 cmu-asrs-platform-raised = ПОДНЯТА
 cmu-asrs-platform-lowering = ОПУСКАЕТСЯ
 cmu-asrs-platform-raising = ПОДНИМАЕТСЯ
+cmu-asrs-button-busy = АСХВ ЗАНЯТА
+cmu-asrs-button-raise = ПОДНЯТЬ
+cmu-asrs-button-lower = ОПУСТИТЬ
+cmu-asrs-button-wait = ПОДОЖДИТЕ
 cmu-asrs-stock-unlimited = НЕОГРАНИЧЕННО
 cmu-asrs-stock-count = В НАЛИЧИИ { $current }/{ $max }
 cmu-asrs-stock-count-refill = В НАЛИЧИИ { $current }/{ $max } | +{ $time }
@@ -50,14 +54,14 @@ cmu-asrs-checkout-success = Заказ принят. Поставка добав
 cmu-asrs-checkout-invalid = Заказ отклонён: некорректная корзина.
 cmu-asrs-checkout-funds = Заказ отклонён: недостаточно средств.
 cmu-asrs-checkout-stock = Заказ отклонён: запасы изменились. Проверьте корзину.
-cmu-asrs-checkout-platform = Заказ отклонён: платформа ASRS не подключена.
+cmu-asrs-checkout-platform = Заказ отклонён: платформа АСХВ не подключена.
 cmu-asrs-checkout-full = Заказ отклонён: на платформе недостаточно свободных мест.
 cmu-asrs-phase-verifying = ПРОВЕРКА ЗАПАСОВ...
 cmu-asrs-phase-packing = ФОРМИРОВАНИЕ ГРУЗОВОГО МАНИФЕСТА...
 cmu-asrs-phase-sealing = ЗАПЕЧАТЫВАНИЕ ЯЩИКОВ...
 cmu-asrs-phase-dispatching = ОТПРАВКА НА ПЛАТФОРМУ...
 cmu-asrs-phase-complete = ПОСТАВКА ПРИНЯТА
-cmu-asrs-receipt-title = КВИТАНЦИЯ ОТПРАВКИ ASRS
+cmu-asrs-receipt-title = КВИТАНЦИЯ ОТПРАВКИ АСХВ
 cmu-asrs-receipt-summary = СПИСАНО: ${ $cost }
     ГРУЗ: { $weight } ЕД. ВЕСА
     ПОСТАВОК: { $crates }
@@ -67,21 +71,21 @@ cmu-asrs-preview-loose = МАРШРУТ: ГРУЗ БЕЗ ЯЩИКА // { $weight
 cmu-asrs-slot-filled = Это место на платформе занято поставкой
 cmu-asrs-slot-free = Место на платформе свободно
 cmu-asrs-slot-overflow = Поставка превышает доступную вместимость платформы
-cmu-asrs-boot-bus = ASRS/88 УПРАВЛЕНИЕ ПОГРУЗКОЙ
+cmu-asrs-boot-bus = АСХВ/88 УПРАВЛЕНИЕ ПОГРУЗКОЙ
     {"["}01] ОПРОС ШИНЫ ХРАНИЛИЩА...
     {"["}02] ОЖИДАНИЕ ТЕЛЕМЕТРИИ ПОГРУЗОЧНОГО ОТСЕКА
-cmu-asrs-boot-cranes = ASRS/88 УПРАВЛЕНИЕ ПОГРУЗКОЙ
+cmu-asrs-boot-cranes = АСХВ/88 УПРАВЛЕНИЕ ПОГРУЗКОЙ
     {"["}OK] ШИНА ХРАНИЛИЩА
     {"["}03] КАЛИБРОВКА СЕРВОПРИВОДОВ КРАНА...
-cmu-asrs-boot-scale = ASRS/88 УПРАВЛЕНИЕ ПОГРУЗКОЙ
+cmu-asrs-boot-scale = АСХВ/88 УПРАВЛЕНИЕ ПОГРУЗКОЙ
     {"["}OK] НУЛЕВАЯ ПОЗИЦИЯ КРАНА
     {"["}04] ОБНУЛЕНИЕ ГРУЗОВЫХ ВЕСОВ...
-cmu-asrs-boot-manifest = ASRS/88 УПРАВЛЕНИЕ ПОГРУЗКОЙ
+cmu-asrs-boot-manifest = АСХВ/88 УПРАВЛЕНИЕ ПОГРУЗКОЙ
     {"["}OK] ВЕСОВЫЕ ДАТЧИКИ
     {"["}05] ПОДКЛЮЧЕНИЕ ТОМА МАНИФЕСТА...
-cmu-asrs-boot-ready = ASRS/88 УПРАВЛЕНИЕ ПОГРУЗКОЙ
+cmu-asrs-boot-ready = АСХВ/88 УПРАВЛЕНИЕ ПОГРУЗКОЙ
     ВСЕ СИСТЕМЫ В НОРМЕ // ПОГРУЗОЧНЫЙ ОТСЕК ГОТОВ
-cmu-asrs-idle = ПОГРУЗОЧНЫЙ ОТСЕК ASRS // ОЖИДАНИЕ
+cmu-asrs-idle = ПОГРУЗОЧНЫЙ ОТСЕК АСХВ // ОЖИДАНИЕ
     ═══════════════════════════════════
     ПОЗИЦИЯ КРАНА { $position } // ОЖИДАНИЕ МАНИФЕСТА
     ШИНА ХРАНИЛИЩА БЕЗ АКТИВНОСТИ // МОНИТОРИНГ ПЛАТФОРМЫ АКТИВЕН

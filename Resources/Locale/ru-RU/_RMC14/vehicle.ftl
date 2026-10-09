@@ -359,8 +359,27 @@ rmc-vehicle-supply-option-VehicleBlackfootReconSystem = {ent-VehicleBlackfootRec
 rmc-vehicle-supply-option-VehicleBlackfootSensorArray = {ent-VehicleBlackfootSensorArray-name}
 
 
-rmc-vehicle-powered-demolition-working = The plow bites into the structure. Keep pushing forward!
+rmc-vehicle-powered-demolition-working = Ковш врезается в конструкцию. Продолжайте давить вперёд!
+rmc-vehicle-powered-demolition-indestructible = Ковш не может разрушить эту структуру.
 
-rmc-vehicle-powered-demolition-indestructible = The plow cannot break through this structure.
+rmc-vehicle-enter-pulled-full = Здесь нет места для того, кого вы тащите внутрь.
 
-rmc-vehicle-enter-pulled-full = There's no room for who you're dragging inside.
+cmu-vehicle-supply-unassigned = Этому депо не назначен взвод.
+cmu-vehicle-supply-allowance = {$platoon} — выдано техники: {$used}/{$limit} (максимум один танк и один СВВП)
+cmu-vehicle-supply-preview-title = Предпросмотр техники
+cmu-vehicle-supply-stored-vehicles = Техника на складе
+cmu-vehicle-supply-loadout = Комплектация техники
+cmu-vehicle-supply-raise = Поднять
+cmu-vehicle-supply-lower = Опустить
+cmu-vehicle-supply-active-none = нет
+cmu-vehicle-supply-status-busy = занято
+cmu-vehicle-supply-status-idle = ожидание
+cmu-vehicle-supply-status-line = Лифт: { $lift } | Статус: { $status } | Активно: { $active }
+cmu-vehicle-supply-lift-none = Нет лифта
+cmu-vehicle-supply-lift-lowered = Опущен
+cmu-vehicle-supply-lift-raised = Поднят
+cmu-vehicle-supply-lift-lowering = Опускается
+cmu-vehicle-supply-lift-raising = Поднимается
+cmu-vehicle-supply-lift-preparing = Подготовка
+cmu-vehicle-supply-copies-expanded = Копии v
+cmu-vehicle-supply-copies-collapsed = Копии >

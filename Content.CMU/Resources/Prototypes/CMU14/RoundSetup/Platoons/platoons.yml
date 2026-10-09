@@ -14,7 +14,7 @@
   - VehicleHumveeMedical
   - VehicleBlackfootDoorGunVariant
   - VehicleBlackfootTransport
-  name: US Colonial Marines
+  name: cmu-platoon-uscm-name
   lorePrimer: AU14PrimerPlatoonUSCM
   Allegiance: UA
   reqlist: USCMCargoCatalog
@@ -46,7 +46,7 @@
   - VehicleHumveeMedical
   - VehicleBlackfootDoorGunVariant
   - VehicleBlackfootTransport
-  name: Латиноамериканский колониальный флот
+  name: cmu-platoon-lacn-name
   lorePrimer: AU14PrimerPlatoonLACN
   Allegiance: UA
   languages:
@@ -375,7 +375,7 @@
   - VehicleSPPVanMedical
   - VehicleSPPVanLogistics
   - VehicleSPPVanPrisoner
-  name: UPP Naval Infantry
+  name: cmu-platoon-upp-name
   lorePrimer: AU14PrimerPlatoonUPP
   Allegiance: UPP
   languages:
@@ -712,7 +712,7 @@
   - VehicleHumveeMedical
   - VehicleBlackfootDoorGunVariant
   - VehicleBlackfootTransport
-  name: WY PMC
+  name: cmu-platoon-weyu-name
   lorePrimer: AU14PrimerPlatoonWEYU
   reqlist: WYPMCCargoCatalog
   vendorSet: WYPMC
@@ -1047,7 +1047,7 @@
   - VehicleHumveeTransport
   - VehicleHumveeMedical
   - VehicleBlackfootDoorGunVariant
-  name: CMB Crisis Intervention
+  name: cmu-platoon-cmbciu-name
   lorePrimer: AU14PrimerPlatoonCMBCIU
   Allegiance: UA
   languages:
@@ -1276,7 +1276,7 @@
   - VehicleHumveeMedical
   - VehicleHumveeTransport
   - VehicleBlackfootTransport
-  name: USCM Hazardous Operations Unit
+  name: cmu-platoon-hazops-name
   lorePrimer: AU14PrimerPlatoonHAZOPS
   Allegiance: UA
   languages:
@@ -1308,7 +1308,7 @@
   - AU14VehicleCivTruck
   - AU14VehicleCivEMSAmbulance
   - VehicleAev
-  name: Prodigy Security Forces
+  name: cmu-platoon-prodigysf-name
   lorePrimer: AU14PrimerPlatoonProdigySF
   reqlist: ProdigyCargoCatalog
   languages:
@@ -1600,7 +1600,7 @@
   - VehicleBlackfootDoorGunVariant
   - VehicleBlackfootTransport
   - VehicleAev
-  name: VAI Primary Operations
+  name: cmu-platoon-vaipo-name
   lorePrimer: AU14PrimerPlatoonVAIPO
   reqlist: VAIPOCargoCatalog
   Allegiance: UA
@@ -1790,7 +1790,7 @@
   - VehicleHumvee
   - VehicleHumveeTransport
   - VehicleHumveeMedical
-  name: TWE Royal Marine Commandos
+  name: cmu-platoon-rmc-name
   lorePrimer: AU14PrimerPlatoonRMC
   Allegiance: TWE
   languages:

@@ -1,6 +1,6 @@
-ent-RMCAreaSupplyDockVehicle = Автомобиль АСРС
+ent-RMCAreaSupplyDockVehicle = АСХВ (техника)
 
-ent-RMCAreaSupplyStationVehicle = Автомобиль АСРС
+ent-RMCAreaSupplyStationVehicle = АСХВ (техника)
 
 ent-RMCAreaSupplyDock = Шаттл снабжения
 
