@@ -1,0 +1,13 @@
+- type: shader
+  id: CMUDarkAmbient
+  kind: source
+  path: /Textures/CMU14/Shaders/dark_ambient.swsl
+
+- type: shader
+  id: CMUDarkAmbientStencil
+  kind: source
+  path: /Textures/CMU14/Shaders/dark_ambient.swsl
+  stencil:
+    ref: 1
+    op: Keep
+    func: Equal
