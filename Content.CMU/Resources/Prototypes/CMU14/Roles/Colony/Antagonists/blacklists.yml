@@ -38,6 +38,7 @@
     - AU14JobOPFORAuxSupportSynth
     - AU14JobGOVFORWorkingJoe
     - AU14JobOPFORWorkingJoe
+    - AU14SpawnPointGOVFORWorkingJoeUPP # RuMC edit
 
 - type: antagJobBlacklist
   id: AllGovforJobs
@@ -78,6 +79,7 @@
     - AU14JobGOVFORVehicleCrewman
     - AU14JobGOVFORVehicleCommander
     - AU14JobGOVFORCombatCorrespondent
+    - AU14SpawnPointGOVFORWorkingJoeUPP # RuMC edit
 
 - type: antagJobBlacklist
   id: AllOpforJobs
