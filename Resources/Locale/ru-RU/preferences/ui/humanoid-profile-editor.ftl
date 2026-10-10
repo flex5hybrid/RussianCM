@@ -70,9 +70,9 @@ humanoid-profile-editor-character-description-tab = Персонаж
 humanoid-profile-editor-short-examine-label = Короткое описание при осмотре:
 humanoid-profile-editor-short-examine-tooltip = Короткая строка, показываемая при обычном осмотре вашего персонажа. Должна быть короче 100 символов.
 humanoid-profile-editor-height-label = Рост:
-humanoid-profile-editor-height-tooltip = Рост вашего персонажа, в футах и дюймах (от 4'0 до 6'11).
+humanoid-profile-editor-height-tooltip = Рост вашего персонажа, в футах и дюймах (от 4'0 до 6'11). 1 фут = 30,48 см. 1 дюйм = 2,54 см. Учитывайте это при создании персонажа и переводе в метрическую систему.
 humanoid-profile-editor-weight-label = Вес:
-humanoid-profile-editor-weight-tooltip = Вес вашего персонажа в фунтах, от 90 до 300.
+humanoid-profile-editor-weight-tooltip = Вес вашего персонажа в фунтах, от 90 до 300. 1 фунт = 0,45 кг. Учитывайте это при создании персонажа и переводе в метрическую систему.
 humanoid-profile-editor-build-label = Телосложение:
 humanoid-profile-editor-build-tooltip = Телосложение вашего персонажа.
 humanoid-profile-editor-skin-tone-label = Оттенок кожи:
