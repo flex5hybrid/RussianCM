@@ -1,0 +1,10 @@
+- type: marking
+  id: RuMCUndershirtSeegSon
+  bodyPart: UndergarmentTop
+  markingCategory: UndergarmentTop
+  forcedColoring: true
+  RMCFollowSkinColor: false
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, Diona, Moth, SlimePerson, Avali, Vulpkanin, Rodentia, Feroxi, Skrell]
+  sprites:
+  - sprite: CMU14/Mobs/Human_Customization/seegsonshirt.rsi
+    state: seegson_shirt

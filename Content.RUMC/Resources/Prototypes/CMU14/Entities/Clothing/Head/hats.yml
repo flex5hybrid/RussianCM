@@ -1,0 +1,13 @@
+- type: entity
+  parent: RMCHeadCapFlippable
+  id: RuMCSeegsonCap
+  name: seegson cap
+  description: This is a stylish cap with the SeegSon logo
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Head/seegson_cap.rsi
+  - type: Clothing
+    sprite: CMU14/Clothing/Head/seegson_cap.rsi
+  - type: ItemCamouflage
+    camouflageVariations:
+      Classic: CMU14/Clothing/Head/seegson_cap.rsi

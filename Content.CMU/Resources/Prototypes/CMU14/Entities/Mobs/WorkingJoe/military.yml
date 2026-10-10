@@ -26,6 +26,7 @@
     id: AU14IDCardGOVFORWorkingJoe
     ears: AU14HeadsetWorkingJoe
     ears2: RMCM5CameraGear
+    head: RuMCSeegsonCap # RuMC edit
 
 - type: entity
   parent: AU14MobWorkingJoe
@@ -55,3 +56,4 @@
     id: AU14IDCardOPFORWorkingJoe
     ears: AU14HeadsetWorkingJoe
     ears2: RMCM5CameraGear
+    head: RuMCSeegsonCap # RuMC edit

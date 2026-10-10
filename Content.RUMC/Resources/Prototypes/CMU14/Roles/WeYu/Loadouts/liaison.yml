@@ -1,0 +1,10 @@
+- type: loadout
+  id: RMCHeadBeretWeYaRuMC
+  effects:
+    - !type:JobRequirementLoadoutEffect
+      requirement:
+        !type:RoleTimeRequirement
+        role: AU14JobCivilianCorporateLiaison
+        time: 540000 # 150 hrs
+  equipment:
+    head: RMCHeadBeretWeYa

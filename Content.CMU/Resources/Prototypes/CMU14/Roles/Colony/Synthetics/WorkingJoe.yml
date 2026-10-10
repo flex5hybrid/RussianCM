@@ -74,6 +74,7 @@
     back: AU14IMPBackpackWorkingJoe
     pocket1: RMCPouchElectronicsFill
     pocket2: RMCPouchConstructionFillFull
+    head: RuMCSeegsonCap # RuMC edit
   storage:
       belt:
       - AU14MaintenanceJackSpecial
