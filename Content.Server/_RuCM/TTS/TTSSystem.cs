@@ -104,7 +104,13 @@ public sealed partial class TTSSystem : EntitySystem
         }
     }
 
-    private async void OnEntitySpoke(
+    private void OnEntitySpoke(EntityUid uid, TTSComponent component, EntitySpokeEvent args)
+    {
+        _ = CMUTTSRequestRunner.Run(() => SendLocalTTS(uid, component, args),
+            e => Logger.Warning($"TTS local speech failed: {e}"));
+    }
+
+    private async System.Threading.Tasks.Task SendLocalTTS(
         EntityUid uid,
         TTSComponent component,
         EntitySpokeEvent args)
@@ -190,7 +196,13 @@ public sealed partial class TTSSystem : EntitySystem
         }
     }
 
-    private async void OnRequestPreviewTTS(RequestPreviewTTSEvent ev, EntitySessionEventArgs args)
+    private void OnRequestPreviewTTS(RequestPreviewTTSEvent ev, EntitySessionEventArgs args)
+    {
+        _ = CMUTTSRequestRunner.Run(() => SendPreviewTTS(ev, args),
+            e => Logger.Warning($"TTS preview failed: {e}"));
+    }
+
+    private async System.Threading.Tasks.Task SendPreviewTTS(RequestPreviewTTSEvent ev, EntitySessionEventArgs args)
     {
         if (!_isEnabled || string.IsNullOrWhiteSpace(ev.VoiceId) || ev.VoiceId.Length > 128)
             return;

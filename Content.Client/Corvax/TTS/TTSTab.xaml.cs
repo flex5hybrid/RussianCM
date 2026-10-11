@@ -36,6 +36,7 @@ public sealed partial class TTSTab : Control
     private string? _selectedCategory;
     private byte[]? _referenceAudio;
     private bool _referenceUploadPending;
+    private TTSSystem? _subscribedTts;
 
     private static readonly Regex CategoryRegex = new(@"^(.*?)\s*\(([^)]+)\)\s*$", RegexOptions.Compiled);
 
@@ -54,6 +55,7 @@ public sealed partial class TTSTab : Control
     {
         base.EnteredTree();
         var tts = _entityManager.System<TTSSystem>();
+        _subscribedTts = tts;
         tts.ReferenceVoiceResultReceived += OnReferenceVoiceResult;
         tts.ReferenceVoiceCatalogUpdated += OnReferenceVoiceCatalogUpdated;
         tts.ReferenceVoiceAccessUpdated += OnReferenceVoiceAccessUpdated;
@@ -66,11 +68,15 @@ public sealed partial class TTSTab : Control
 
     protected override void ExitedTree()
     {
-        var tts = _entityManager.System<TTSSystem>();
-        tts.ReferenceVoiceResultReceived -= OnReferenceVoiceResult;
-        tts.ReferenceVoiceCatalogUpdated -= OnReferenceVoiceCatalogUpdated;
-        tts.ReferenceVoiceAccessUpdated -= OnReferenceVoiceAccessUpdated;
-        tts.ReferenceVoiceDeleteResultReceived -= OnReferenceVoiceDeleteResult;
+        // Disconnect can remove the system before the UI leaves the tree.
+        if (_subscribedTts is { } tts)
+        {
+            tts.ReferenceVoiceResultReceived -= OnReferenceVoiceResult;
+            tts.ReferenceVoiceCatalogUpdated -= OnReferenceVoiceCatalogUpdated;
+            tts.ReferenceVoiceAccessUpdated -= OnReferenceVoiceAccessUpdated;
+            tts.ReferenceVoiceDeleteResultReceived -= OnReferenceVoiceDeleteResult;
+            _subscribedTts = null;
+        }
         _adminManager.AdminStatusUpdated -= OnReferenceVoiceAccessUpdated;
         _referenceUploadPending = false;
         _referenceAudio = null;

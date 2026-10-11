@@ -52,7 +52,10 @@ public sealed partial class TTSSystem
 
     private void OnHeadsetTTS(EntityUid uid, ActorComponent actor, ref HeadsetRadioReceiveRelayEvent args)
     {
-        _ = SendRadioTTS(uid, actor.PlayerSession, args.RelayedEvent);
+        var session = actor.PlayerSession;
+        var relayed = args.RelayedEvent;
+        _ = CMUTTSRequestRunner.Run(() => SendRadioTTS(uid, session, relayed),
+            e => Logger.Warning($"TTS radio speech failed: {e}"));
     }
 
     // private void OnIntrinsicTTS(Entity<IntrinsicRadioReceiverComponent> ent, ref RadioReceiveEvent args)
@@ -100,7 +103,13 @@ public sealed partial class TTSSystem
         RaiseNetworkEvent(new PlayTTSEvent(data, isRadio: true, speakerUid: speakerUid), session);
     }
 
-    private async void OnAnnouncementTTS(RMCAnnouncementMadeEvent args)
+    private void OnAnnouncementTTS(RMCAnnouncementMadeEvent args)
+    {
+        _ = CMUTTSRequestRunner.Run(() => SendAnnouncementTTS(args),
+            e => Logger.Warning($"TTS announcement failed: {e}"));
+    }
+
+    private async Task SendAnnouncementTTS(RMCAnnouncementMadeEvent args)
     {
         if (!_isEnabled || args.Filter == null)
             return;
