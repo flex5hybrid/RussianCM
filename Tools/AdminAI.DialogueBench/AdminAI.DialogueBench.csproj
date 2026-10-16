@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Content.CMU/Server/AdminAI/IAIInferenceClient.cs" Link="Server/IAIInferenceClient.cs" />
+    <Compile Include="../../Content.CMU/Server/AdminAI/AIInferenceOptions.cs" Link="Server/AIInferenceOptions.cs" />
+    <Compile Include="../../Content.CMU/Server/AdminAI/AIInferenceProtocol.cs" Link="Server/AIInferenceProtocol.cs" />
+    <Compile Include="../../Content.CMU/Server/AdminAI/UdsAIInferenceClient.cs" Link="Server/UdsAIInferenceClient.cs" />
+    <Compile Include="../../Content.CMU/Server/AdminAI/AIRuleKnowledgeBase.cs" Link="Server/AIRuleKnowledgeBase.cs" />
+    <Compile Include="../../Content.CMU/Server/AdminAI/AIDraftSessionStore.cs" Link="Server/AIDraftSessionStore.cs" />
+    <Compile Include="../../Content.CMU/Server/AdminAI/AIResponsePolicy.cs" Link="Server/AIResponsePolicy.cs" />
+    <Compile Include="../../Content.CMU/Server/AdminAI/AICaseAnalyzer.cs" Link="Server/AICaseAnalyzer.cs" />
+    <Compile Include="../../Content.CMU/Shared/AdminAI/AdminAIDraftText.cs" Link="Shared/AdminAIDraftText.cs" />
+  </ItemGroup>
+</Project>

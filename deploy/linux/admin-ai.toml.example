@@ -1,0 +1,17 @@
+# Optional server configuration. Enable only after the placement audit and local acceptance checks.
+[cmu.admin_ai]
+enabled = false
+socket_path = "/run/rucmu-ai/llama.sock"
+governor_enabled = true
+safe_faq = false
+clarification = false
+investigation = false
+draft_output_tokens = 128
+max_concurrent_requests = 1
+queue_capacity = 8
+request_timeout_seconds = 45
+context_max_logs = 64
+evidence_max_chars = 24000
+context_window_minutes = 15
+# Supply the audited absolute cgroup paths for RuCMU and all three Squad units, separated by ';'.
+cgroup_paths = ""

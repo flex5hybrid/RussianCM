@@ -1,6 +1,8 @@
 using System.Linq;
 using System.Text;
 using Content.Client.Administration.Managers;
+using Content.Client.CMU14.AdminAI; // CMU14
+using Content.Client.Administration.Systems; // CMU14
 using Content.Client.Administration.UI.CustomControls;
 using Content.Client.UserInterface.Systems.Bwoink;
 using Content.Shared.Administration;
@@ -27,6 +29,7 @@ namespace Content.Client.Administration.UI.Bwoink
         [Dependency] private IUserInterfaceManager _ui = default!;
         [Dependency] private IConfigurationManager _cfg = default!;
         public AdminAHelpUIHandler AHelpHelper = default!;
+        public AdminAIDraftControl AI { get; private set; } = default!; // CMU14
 
         private PlayerInfo? _currentPlayer;
 
@@ -43,6 +46,16 @@ namespace Content.Client.Administration.UI.Bwoink
                 return;
 
             AHelpHelper = helper;
+            // CMU14 Begin: private AI workspace; never submits the compose field
+            AI = new AdminAIDraftControl(); AIWorkspaceSlot.AddChild(AI);
+            AI.RequestDraft += request => IoCManager.Resolve<IEntitySystemManager>().GetEntitySystem<BwoinkSystem>().RequestAIDraft(request); // CMU14
+            AI.RequestContext += request => IoCManager.Resolve<IEntitySystemManager>().GetEntitySystem<BwoinkSystem>().RequestAIContext(request); // CMU14
+            AI.InsertDraft += text => // CMU14
+            {
+                if (_adminManager.HasFlag(AdminFlags.Adminhelp) && _currentPlayer is { } player && AHelpHelper.TryGetChannel(player.SessionId, out var panel)) panel.InsertDraftText(text);
+            };
+
+            // CMU14 End
 
             _adminManager.AdminStatusUpdated += UpdateButtons;
             UpdateButtons();
@@ -208,6 +221,7 @@ namespace Content.Client.Administration.UI.Bwoink
                 return;
 
             _adminManager.AdminStatusUpdated -= UpdateButtons;
+            AI?.Close(); // CMU14
         }
 
         public void OnBwoink(NetUserId channel)
@@ -293,6 +307,8 @@ namespace Content.Client.Administration.UI.Bwoink
         private void SwitchToChannel(NetUserId? ch)
         {
             UpdateButtons();
+            AI.Select(ch); // CMU14
+            AI.SetOtherPlayers(ChannelSelector.PlayerInfo.Select(player => (player.SessionId, player.Username))); // CMU14
 
             AHelpHelper.HideAllPanels();
             if (ch != null)

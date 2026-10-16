@@ -1,4 +1,5 @@
 using Content.Server.CMU14.Administration.Console;
+using Content.Server.CMU14.AdminAI; // CMU14
 using Content.Server.CMU14.Diagnostics.Performance;
 using Content.Server.CMU14.Yautja;
 using Content.Server._RMC14.Actions;
@@ -101,6 +102,8 @@ internal static class ServerContentIoC
         // CMU14
         deps.Register<ServerLogsDownloadManager>();
         deps.Register<ICMUServerPerformanceDiagnostics, CMUServerPerformanceDiagnosticsManager>();
+        deps.Register<IAdminAIService, AdminAIService>();
+        deps.Register<IAdminAIRoundContext, AdminAIRoundContext>();
 
         // RMC14
         deps.Register<LinkAccountManager>();

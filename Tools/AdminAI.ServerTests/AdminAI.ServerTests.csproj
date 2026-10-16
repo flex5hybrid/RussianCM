@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <GenerateProgramFile>false</GenerateProgramFile>
+    <!-- The existing Content.Server friend assembly, used for the internal local endpoint test constructor. -->
+    <AssemblyName>Content.IntegrationTests</AssemblyName>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsTestProject>true</IsTestProject>
+    <IsPackable>false</IsPackable>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="4.4.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="5.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+    <PackageReference Include="NSubstitute" Version="5.3.0" />
+    <!-- Required by the real engine integration fixture; do not rely on adjacent cached DLLs. -->
+    <PackageReference Include="Moq" Version="4.20.72" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Real compiled Content.Server and engine; no linked copies of the transport implementation. -->
+    <Reference Include="Content.Server"><HintPath>$(AdminAIContentServerDirectory)/Content.Server.dll</HintPath></Reference>
+    <Reference Include="Content.Shared"><HintPath>$(AdminAIContentServerDirectory)/Content.Shared.dll</HintPath></Reference>
+    <Reference Include="Content.Shared.Database"><HintPath>$(AdminAIContentServerDirectory)/Content.Shared.Database.dll</HintPath></Reference>
+    <Reference Include="Robust.Shared"><HintPath>$(AdminAIEngineAssemblyDirectory)/Robust.Shared.dll</HintPath></Reference>
+    <Reference Include="Robust.Shared.Maths"><HintPath>$(AdminAIEngineAssemblyDirectory)/Robust.Shared.Maths.dll</HintPath></Reference>
+    <Reference Include="Robust.Server"><HintPath>$(AdminAIEngineAssemblyDirectory)/Robust.Server.dll</HintPath></Reference>
+    <Reference Include="Robust.Shared.Testing"><HintPath>$(AdminAIEngineAssemblyDirectory)/Robust.Shared.Testing.dll</HintPath></Reference>
+    <Reference Include="Robust.Client"><HintPath>$(AdminAIEngineAssemblyDirectory)/Robust.Client.dll</HintPath></Reference>
+    <Reference Include="Robust.UnitTesting"><HintPath>$(AdminAIEngineAssemblyDirectory)/Robust.UnitTesting.dll</HintPath></Reference>
+    <Compile Include="../AdminAI.Spike/MockWorker.cs" Link="Fixture/MockWorker.cs" />
+    <Compile Include="../AdminAI.Tests/Program.cs" Link="Runner/Program.cs" />
+    <Compile Include="../../Content.IntegrationTests/_CMU14/AdminAI/AdminAIServerIpcTests.cs" Link="Tests/AdminAIServerIpcTests.cs" />
+    <Content Include="$(AdminAIEngineAssemblyDirectory)/runtimes/**/*">
+      <Link>runtimes/%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Target Name="CopyEngineResourcesForIsolatedServer" AfterTargets="Build" Condition="'$(AdminAIEngineResourceDirectory)' != ''">
+    <!-- The engine's normal resource layout is relative to the executable; copy real resources to the test layout. -->
+    <ItemGroup><_AdminAIEngineResource Include="$(AdminAIEngineResourceDirectory)/**/*" /></ItemGroup>
+    <Copy SourceFiles="@(_AdminAIEngineResource)"
+          DestinationFiles="@(_AdminAIEngineResource->'$(MSBuildProjectDirectory)/bin/Resources/%(RecursiveDir)%(Filename)%(Extension)')"
+          SkipUnchangedFiles="true" />
+  </Target>
+</Project>

@@ -1,3 +1,4 @@
+using Content.Server.CMU14.AdminAI; // CMU14
 using Content.Server.CMU14.Diagnostics.Performance;
 using Content.Server.CMU14.ZLevels.Core;
 using Content.Server.Acz;
@@ -58,6 +59,7 @@ namespace Content.Server.Entry
         [Dependency] private IChatManager _chatSan = default!;
         [Dependency] private IChatSanitizationManager _chat = default!;
         [Dependency] private ICMUServerPerformanceDiagnostics _performanceDiagnostics = default!;
+        [Dependency] private IAdminAIService _adminAI = default!; // CMU14
         [Dependency] private IComponentFactory _factory = default!;
         [Dependency] private IConfigurationManager _cfg = default!;
         [Dependency] private IConnectionManager _connection = default!;
@@ -175,12 +177,14 @@ namespace Content.Server.Entry
             _cvarCtrl.Initialize();
             _feedbackManager.Initialize();
             _performanceDiagnostics.Initialize();
+            _adminAI.Initialize(); // CMU14
         }
 
         public override void Update(ModUpdateLevel level, FrameEventArgs frameEventArgs)
         {
             base.Update(level, frameEventArgs);
             _performanceDiagnostics.ObservePhase(level);
+            _adminAI.ObservePhase(level); // CMU14
 
             switch (level)
             {
@@ -217,6 +221,7 @@ namespace Content.Server.Entry
             {
                 _playTimeTracking.Shutdown();
                 _performanceDiagnostics.Shutdown();
+                _adminAI.Shutdown(); // CMU14
                 _dbManager.Shutdown();
             }
 

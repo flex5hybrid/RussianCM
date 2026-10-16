@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <GenerateProgramFile>false</GenerateProgramFile>
+    <AssemblyName>Content.IntegrationTests</AssemblyName>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsTestProject>true</IsTestProject>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="4.4.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="5.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+    <Reference Include="Content.Client"><HintPath>$(AdminAIContentClientDirectory)/Content.Client.dll</HintPath></Reference>
+    <Reference Include="Content.Shared"><HintPath>$(AdminAIContentClientDirectory)/Content.Shared.dll</HintPath></Reference>
+    <Reference Include="Robust.Shared"><HintPath>$(AdminAIEngineAssemblyDirectory)/Robust.Shared.dll</HintPath></Reference>
+    <Reference Include="Robust.Shared.Maths"><HintPath>$(AdminAIEngineAssemblyDirectory)/Robust.Shared.Maths.dll</HintPath></Reference>
+    <Reference Include="Robust.Client"><HintPath>$(AdminAIEngineAssemblyDirectory)/Robust.Client.dll</HintPath></Reference>
+    <Reference Include="Robust.Server"><HintPath>$(AdminAIEngineAssemblyDirectory)/Robust.Server.dll</HintPath></Reference>
+    <Reference Include="Robust.UnitTesting"><HintPath>$(AdminAIEngineAssemblyDirectory)/Robust.UnitTesting.dll</HintPath></Reference>
+    <Compile Include="../AdminAI.Tests/Program.cs" Link="Runner/Program.cs" />
+    <Compile Include="../../Content.IntegrationTests/_CMU14/AdminAI/AdminAIClientUiTests.cs" Link="Tests/AdminAIClientUiTests.cs" />
+    <Content Include="$(AdminAIEngineAssemblyDirectory)/runtimes/**/*">
+      <Link>runtimes/%(RecursiveDir)%(Filename)%(Extension)</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <!-- The focused executable does not inherit the game's native-asset dependency graph. Reuse its matching native files. -->
+    <Content Include="$(AdminAIEngineNativeDirectory)/*.dll" Exclude="$(AdminAIEngineNativeDirectory)/Content.*;$(AdminAIEngineNativeDirectory)/Robust.*" Condition="'$(AdminAIEngineNativeDirectory)' != ''">
+      <Link>%(Filename)%(Extension)</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Target Name="CopyEngineResources" AfterTargets="Build" Condition="'$(AdminAIEngineResourceDirectory)' != ''">
+    <ItemGroup><_Resources Include="$(AdminAIEngineResourceDirectory)/**/*" /></ItemGroup>
+    <Copy SourceFiles="@(_Resources)" DestinationFiles="@(_Resources->'$(MSBuildProjectDirectory)/bin/Resources/%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

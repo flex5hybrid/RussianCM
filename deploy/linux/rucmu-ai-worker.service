@@ -1,0 +1,64 @@
+# Template: install only after the read-only placement audit and Linux acceptance checks.
+[Unit]
+Description=RuCMU local AI worker (CPU only, Unix socket)
+After=local-fs.target
+StartLimitIntervalSec=600
+StartLimitBurst=2
+
+[Service]
+Type=simple
+User=rucmu-ai
+Group=rucmu-ai-socket
+EnvironmentFile=/etc/rucmu-ai/worker.env
+ExecStartPre=/usr/bin/bash /opt/rucmu-ai/bin/worker-preflight.sh
+# Match inference threads to the one-CPU quota to avoid worker-induced CPU pressure.
+# Bound prefill buffers and use the pinned build's q8 KV cache to stay below MemoryHigh.
+ExecStart=/opt/rucmu-ai/bin/llama-server --model ${MODEL_PATH} --host /run/rucmu-ai/llama.sock --ctx-size 4096 --parallel 1 --threads 1 --threads-batch 1 --batch-size 128 --ubatch-size 128 --cache-type-k q8_0 --cache-type-v q8_0 --cache-ram 0 --ctx-checkpoints 0 --n-gpu-layers 0 --no-kv-offload --poll 0 --poll-batch 0 --offline --no-webui --no-agent --log-disable
+WorkingDirectory=/opt/rucmu-ai
+RuntimeDirectory=rucmu-ai
+RuntimeDirectoryMode=0770
+UMask=0007
+Restart=on-failure
+RestartSec=120
+TimeoutStartSec=180
+TimeoutStopSec=15
+KillMode=control-group
+
+CPUAccounting=yes
+CPUWeight=1
+CPUQuota=100%
+Nice=15
+IOAccounting=yes
+IOWeight=1
+MemoryAccounting=yes
+MemoryHigh=3G
+MemoryMax=4G
+MemorySwapMax=0
+TasksMax=64
+# AllowedCPUs is intentionally absent. Choose a cpuset only AFTER auditing all four game units.
+
+NoNewPrivileges=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+PrivateNetwork=yes
+RestrictAddressFamilies=AF_UNIX
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+RestrictNamespaces=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+ReadOnlyPaths=/opt/rucmu-ai
+ReadWritePaths=/run/rucmu-ai
+InaccessiblePaths=-/srv -/var/lib/rucmu -/var/lib/squad -/etc/rucmu -/etc/squad
+# No prompts/responses in worker logs. App logs carry bounded status-only diagnostics.
+StandardOutput=null
+StandardError=null
+
+[Install]
+WantedBy=multi-user.target

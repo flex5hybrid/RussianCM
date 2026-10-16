@@ -11,6 +11,8 @@
     <Compile Include="..\Content.CMU\IntegrationTests\**\*.cs" Link="CMU14\%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
   <ItemGroup>
+    <!-- CMU14: local IPC failure fixture -->
+    <Compile Include="..\Tools\AdminAI.Spike\MockWorker.cs" Link="CMU14\AdminAI\MockWorker.cs" />
     <Compile Include="..\Content.RUMC\Tests\**\*.cs" Link="RUMC\%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
   <ItemGroup>

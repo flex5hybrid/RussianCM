@@ -62,6 +62,13 @@ namespace Content.Client.Administration.UI.Bwoink
             InputTextChanged?.Invoke(args.Text);
         }
 
+        // CMU14 method: insert without submitting ahelp
+        public void InsertDraftText(string text)
+        {
+            // Keep operator-written text and do not raise the text-entered/send event.
+            SenderLineEdit.Text = string.IsNullOrWhiteSpace(SenderLineEdit.Text) ? text : SenderLineEdit.Text + " " + text;
+        }
+
         public void ReceiveLine(SharedBwoinkSystem.BwoinkTextMessage message)
         {
             if (!Visible)

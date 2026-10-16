@@ -6,6 +6,7 @@ using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Content.Server.Administration.Managers;
+using Content.Server.CMU14.AdminAI; // CMU14
 using Content.Server.Afk;
 using Content.Server.Database;
 using Content.Server.Discord;
@@ -719,6 +720,11 @@ namespace Content.Server.Administration.Systems
 
             _afkManager.PlayerDidAction(senderSession);
 
+            // CMU14: observers receive only accepted input; ordinary ahelp delivery remains independent.
+            var accepted = new AdminAHelpAcceptedEvent(message.UserId.UserId, _gameTicker.RoundId,
+                senderAHelpAdmin, message.Text, message.AdminOnly);
+            RaiseLocalEvent(accepted);
+
             // If it's not an admin / admin chooses to keep the sound and message is not an admin only message, then play it.
             var playSound = (!senderAHelpAdmin || message.PlaySound) && !message.AdminOnly;
 
@@ -768,6 +774,9 @@ namespace Content.Server.Administration.Systems
                 );
                 _messageQueues[message.UserId].Enqueue(GenerateAHelpMessage(messageParams));
             }
+
+            // CMU14: automatic FAQ runs only after ordinary delivery/relay preparation, never instead of it.
+            RaiseLocalEvent(new AdminAHelpDeliveredEvent(accepted));
 
             if (admins.Count != 0 || sendsWebhook)
                 return;

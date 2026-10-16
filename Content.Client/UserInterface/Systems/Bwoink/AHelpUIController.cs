@@ -14,6 +14,7 @@ using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.MenuBar.Widgets;
 using Content.Shared.Administration;
+using Content.Shared.Administration.AdminAI; // CMU14
 using Content.Shared.CCVar;
 using Content.Shared.Input;
 using JetBrains.Annotations;
@@ -105,6 +106,9 @@ public sealed partial class AHelpUIController: UIController, IOnSystemChanged<Bw
     {
         _bwoinkSystem = system;
         _bwoinkSystem.OnBwoinkTextMessageRecieved += ReceivedBwoink;
+        _bwoinkSystem.OnAdminAIDraftState += ReceivedAIDraft; // CMU14
+        _bwoinkSystem.OnAdminAICaseState += ReceivedAICase; // CMU14
+        _bwoinkSystem.OnAdminAIDraftReset += ResetAIDraft; // CMU14
 
         _input.SetInputCommand(ContentKeyFunctions.OpenAHelp,
             InputCmdHandler.FromDelegate(_ => _staffHelp.ToggleWindow()));
@@ -116,6 +120,10 @@ public sealed partial class AHelpUIController: UIController, IOnSystemChanged<Bw
 
         DebugTools.Assert(_bwoinkSystem != null);
         _bwoinkSystem!.OnBwoinkTextMessageRecieved -= ReceivedBwoink;
+        _bwoinkSystem.OnAdminAIDraftState -= ReceivedAIDraft; // CMU14
+        _bwoinkSystem.OnAdminAICaseState -= ReceivedAICase; // CMU14
+        _bwoinkSystem.OnAdminAIDraftReset -= ResetAIDraft; // CMU14
+        ResetAIDraft();
         _bwoinkSystem = null;
     }
 
@@ -158,6 +166,22 @@ public sealed partial class AHelpUIController: UIController, IOnSystemChanged<Bw
         }
 
         UIHelper!.Receive(message);
+        if (UIHelper is AdminAHelpUIHandler { IsOpen: true, Control: { } control } && control.AI.NeedsView(message.UserId)) control.AI.Open(); // CMU14
+    }
+
+    // CMU14 method: authenticated private assistant state
+    private void ReceivedAIDraft(AdminAIDraftState state)
+    {
+        if (_adminManager.HasFlag(AdminFlags.Adminhelp) && UIHelper is AdminAHelpUIHandler helper) helper.Control?.AI.Receive(state); // CMU14
+    }
+    // CMU14 method: authenticated private assistant state
+    private void ResetAIDraft()
+    { if (UIHelper is AdminAHelpUIHandler helper) helper.Control?.AI.Reset(); } // CMU14
+    // CMU14 method: authenticated private assistant state
+    private void ReceivedAICase(AdminAICaseState state)
+    {
+        if (_adminManager.HasFlag(AdminFlags.Adminhelp) && _adminManager.HasFlag(AdminFlags.Logs)
+            && UIHelper is AdminAHelpUIHandler helper) helper.Control?.AI.ReceiveCase(state); // CMU14
     }
 
     private void DiscordRelayUpdated(BwoinkDiscordRelayUpdated args, EntitySessionEventArgs session)
@@ -185,8 +209,8 @@ public sealed partial class AHelpUIController: UIController, IOnSystemChanged<Bw
 
         UIHelper.SendMessageAction = (userId, textMessage, playSound, adminOnly) => _bwoinkSystem?.Send(userId, textMessage, playSound, adminOnly);
         UIHelper.InputTextChanged += (channel, text) => _bwoinkSystem?.SendInputTextUpdated(channel, text.Length > 0);
-        UIHelper.OnClose += () => { SetAHelpPressed(false); };
-        UIHelper.OnOpen +=  () => { SetAHelpPressed(true); };
+        UIHelper.OnClose += () => { if (UIHelper is AdminAHelpUIHandler helper) helper.Control?.AI.Close(); SetAHelpPressed(false); }; // CMU14
+        UIHelper.OnOpen +=  () => { if (UIHelper is AdminAHelpUIHandler helper) helper.Control?.AI.Open(); SetAHelpPressed(true); }; // CMU14
         SetAHelpPressed(UIHelper.IsOpen);
     }
 

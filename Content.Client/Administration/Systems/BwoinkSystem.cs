@@ -1,5 +1,6 @@
 #nullable enable
 using Content.Shared.Administration;
+using Content.Shared.Administration.AdminAI; // CMU14
 using JetBrains.Annotations;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
@@ -12,7 +13,21 @@ namespace Content.Client.Administration.Systems
         [Dependency] private IGameTiming _timing = default!;
 
         public event EventHandler<BwoinkTextMessage>? OnBwoinkTextMessageRecieved;
+        public event Action<AdminAIDraftState>? OnAdminAIDraftState; // CMU14
+        public event Action<AdminAICaseState>? OnAdminAICaseState; // CMU14
+        public event Action? OnAdminAIDraftReset; // CMU14
         private (TimeSpan Timestamp, bool Typing) _lastTypingUpdateSent;
+
+        public override void Initialize()
+        {
+            base.Initialize();
+            SubscribeNetworkEvent<AdminAIDraftState>((state, _) => OnAdminAIDraftState?.Invoke(state)); // CMU14
+            SubscribeNetworkEvent<AdminAICaseState>((state, _) => OnAdminAICaseState?.Invoke(state)); // CMU14
+            SubscribeNetworkEvent<AdminAIDraftReset>((_, _) => OnAdminAIDraftReset?.Invoke()); // CMU14
+        }
+
+        public void RequestAIDraft(AdminAIDraftRequest request) => RaiseNetworkEvent(request); // CMU14
+        public void RequestAIContext(AdminAIContextRequest request) => RaiseNetworkEvent(request); // CMU14
 
         protected override void OnBwoinkTextMessage(BwoinkTextMessage message, EntitySessionEventArgs eventArgs)
         {

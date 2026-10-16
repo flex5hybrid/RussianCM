@@ -1,0 +1,2 @@
+<!-- Standalone boundary tests deliberately do not import/build RobustToolbox. -->
+<Project />
