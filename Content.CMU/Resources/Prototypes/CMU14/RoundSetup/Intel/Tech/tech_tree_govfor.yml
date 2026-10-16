@@ -150,15 +150,15 @@
           icon:
             sprite: _RMC14/Interface/tech_tree.rsi
             state: marine
-        - name: PMC BEAR
-          description: The PMC BEAR group is heading to the world’s hottest spots, ready to kill anyone for money!
+        - name: cmu-tech-govfor-bear
+          description: cmu-tech-govfor-bear-desc  
           cost: 27
           events:
           - !type:TechPartySpawnEvent
             thirdPartyId: CHTORM_PMC_BEAR
           - !type:TechAnnounceEvent
-            author: INTEL OPERATIONS
-            message: The BEAR mercenary unit will be arriving soon.
+            author: cmu-tech-author-intel-operations
+            message: cmu-tech-govfor-bear-announce
           icon:
             sprite: _RMC14/Interface/tech_tree.rsi
             state: medic_qol
