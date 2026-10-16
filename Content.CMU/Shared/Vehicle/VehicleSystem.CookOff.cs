@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Shared._RuMC14.Vehicle; // RuMC edit
 using Content.Shared.Buckle;
 using Content.Shared.Buckle.Components;
 using Content.Shared.Ghost.Components;
@@ -33,11 +34,11 @@ public sealed partial class VehicleSystem
 
     private void OnCookOffRuptured(Entity<TankCookOffComponent> ent, ref TankCookOffRupturedEvent args)
     {
-        EjectOccupants(ent, ent.Comp.EjectionDistance, ent.Comp.EjectionSpeed);
+        EjectOccupants(ent, ent.Comp.EjectionDistance, ent.Comp.EjectionSpeed, cookOff: true); // RuMC edit
     }
 
     // shared with the OB write-off, which boots the crew the same way
-    public void EjectOccupants(EntityUid vehicle, float distance, float speed)
+    public void EjectOccupants(EntityUid vehicle, float distance, float speed, bool cookOff = false) // RuMC edit
     {
         if (_net.IsClient || !TryComp<VehicleInteriorComponent>(vehicle, out var interior) ||
             interior.MapId == MapId.Nullspace)
@@ -87,6 +88,11 @@ public sealed partial class VehicleSystem
             UntrackOccupant(occupant, vehicle);
             _throwing.TryThrow(occupant, direction * distance, speed,
                 recoil: false, playSound: false, doSpin: false);
+
+            // RuMC edit start
+            var ejected = new RuMCVehicleOccupantEjectedEvent(vehicle, cookOff);
+            RaiseLocalEvent(occupant, ref ejected);
+            // RuMC edit end
         }
     }
 }
