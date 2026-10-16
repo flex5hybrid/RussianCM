@@ -143,6 +143,17 @@ namespace Content.Server.NodeContainer.EntitySystems
             {
                 _nodeGroupSystem.QueueNodeRemove(node);
                 node.Deleting = true;
+
+                if (node.DirectLinks.Count == 0)
+                    continue;
+
+                foreach (var linked in node.DirectLinks)
+                {
+                    linked.DirectLinks.Remove(node);
+                    _nodeGroupSystem.QueueReflood(linked);
+                }
+
+                node.DirectLinks.Clear();
             }
         }
 

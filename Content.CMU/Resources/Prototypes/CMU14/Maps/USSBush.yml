@@ -7,6 +7,10 @@
   - /Maps/CMU14/Legacy/USSBush_below.yml
   mapsAbove:
   - /Maps/CMU14/Legacy/USSBush_above.yml
+  # A warship: nothing is dug in its decks, and no stairs are built between them.
+  zLevelsComponentOverrides:
+  - type: ZBuildableMap
+    enabled: false
   minPlayers: 0
   maxPlayers: 75
   maxRandomOffset: 0

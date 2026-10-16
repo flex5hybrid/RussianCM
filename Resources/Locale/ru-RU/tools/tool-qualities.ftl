@@ -47,3 +47,12 @@ tool-quality-vehicle-servicing-tool-name = Ремонтный домкрат
 tool-quality-shearing-name = Shearing
 
 tool-quality-shearing-tool-name = Wirecutter
+
+tool-quality-hammering-name = Ковка
+tool-quality-hammering-tool-name = Молот
+
+tool-quality-tonging-name = Захват щипцами
+tool-quality-tonging-tool-name = Щипцы
+
+tool-quality-chiseling-name = Резьба по металлу
+tool-quality-chiseling-tool-name = Зубило
