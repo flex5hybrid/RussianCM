@@ -14,6 +14,8 @@ from pathlib import Path
 import requests
 import yaml
 
+from changelog_mistral_diagnostics import print_diagnostics, zero_limits
+
 
 class TranslationError(RuntimeError):
     pass
@@ -211,6 +213,12 @@ class RussianTranslator:
                 self.next_request_at = time.monotonic() + self.request_interval
                 status = response.status_code
                 if status == 429:
+                    print_diagnostics(response)
+                    if zero_limits(response):
+                        raise TranslationRateLimitError(
+                            "Mistral reports a zero API limit for this request. Check model/workspace access in API/Limits; "
+                            "waiting or generating another key in the same workspace cannot enable access. Saved translations are retained."
+                        )
                     if has_monthly_quota_error(response):
                         raise TranslationRateLimitError(
                             "Mistral workspace spending/monthly quota is exhausted. Check Mistral Admin Panel > "
