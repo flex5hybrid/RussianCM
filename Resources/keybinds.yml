@@ -199,6 +199,10 @@ binds:
 - function: OpenEmotesMenu
   type: State
   key: Y
+- function: CMUOpenPhraseWheel # CMU14: quick phrase wheel
+  type: State
+  key: Y
+  mod1: Shift
 - function: TextCursorSelect
   # TextCursorSelect HAS to be above ExamineEntity
   # So that LineEdit receives it correctly.

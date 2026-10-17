@@ -5,6 +5,8 @@
         <ScrollContainer VerticalExpand="True" HorizontalExpand="True">
             <BoxContainer Orientation="Vertical" Margin="10 8 10 8" SeparationOverride="2" VerticalExpand="True">
                 <Button Name="OpenUiSetupButton" Text="{Loc 'cmu-ui-setup-open'}" Margin="0 0 0 8" />
+                <!-- CMU14: quick phrase binder -->
+                <Button Name="PhraseBinderButton" Text="{Loc 'cmu-phrase-binder-title'}" Margin="0 0 0 8" />
                 <ui:CmuAppearanceOptions Name="Appearance" />
 
                 <!-- cmu edit start: settings grouped by what they do -->

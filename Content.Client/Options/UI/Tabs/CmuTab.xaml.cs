@@ -1,3 +1,4 @@
+using Content.Client.CMU14.PhraseBinder; // CMU14: quick phrase binder
 using Content.Shared.CMU14.Medical.Core;
 using Content.Shared.CMU14.ZLevels;
 using Content.Shared.CCVar;
@@ -25,6 +26,9 @@ public sealed partial class CmuTab : Control
         IoCManager.InjectDependencies(this);
 
         OpenUiSetupButton.OnPressed += _ => OpenUiSetupRequested?.Invoke();
+        // CMU14: quick phrase binder
+        PhraseBinderButton.OnPressed += _ =>
+            UserInterfaceManager.GetUIController<PhraseBinderUIController>().OpenEditor();
         Appearance.RegisterOptions(Control);
         Appearance.CrtUiPreviewChanged += (enabled, color) => CrtUiPreviewChanged?.Invoke(enabled, color);
         Control.OnApplied += MarkUiConfigured;
