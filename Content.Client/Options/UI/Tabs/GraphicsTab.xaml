@@ -26,6 +26,15 @@
                     <ui:OptionSlider Name="SharpnessSlider" Title="{Loc 'ui-options-sharpness'}" />
                 </cmu:CmuOptionSection>
 
+                <!-- CMU14: optional world color grading, enabled by default. -->
+                <cmu:CmuOptionSection Title="{Loc 'cmu-options-lighting-title'}">
+                    <CheckBox Name="CMUDarkAmbientCheckBox"
+                              Text="{Loc 'cmu-options-dark-ambient-enabled'}"
+                              ToolTip="{Loc 'cmu-options-dark-ambient-tooltip'}" />
+                    <ui:OptionSlider Name="CMUDarkAmbientIntensitySlider"
+                                     Title="{Loc 'cmu-options-dark-ambient-intensity'}" />
+                </cmu:CmuOptionSection>
+
                 <cmu:CmuOptionSection Title="{Loc 'ui-options-interface-label'}">
                     <ui:OptionDropDown Name="DropDownUIScale" Title="{Loc 'ui-options-scale-label'}" />
                     <CheckBox Name="ViewportStretchCheckBox" Text="{Loc 'ui-options-vp-stretch'}" />
