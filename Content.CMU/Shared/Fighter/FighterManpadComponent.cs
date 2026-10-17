@@ -31,6 +31,12 @@ public sealed partial class FighterManpadComponent : Component
 
 public sealed partial class FighterManpadAimActionEvent : InstantActionEvent;
 
+// RuMC edit start
+/// <summary>Raised when the operator raises the launcher against aircraft.</summary>
+[ByRefEvent]
+public readonly record struct FighterManpadAimStartedEvent(EntityUid User);
+// RuMC edit end
+
 /// <summary>Ends any pending acquisition immediately when the operator lowers the launcher.</summary>
 [ByRefEvent]
 public readonly record struct FighterManpadAimStoppedEvent;
@@ -45,6 +51,11 @@ public sealed partial class FighterManpadVisualComponent : Component
     [DataField, AutoNetworkedField] public float WindupSeconds = 1.2f;
     [DataField, AutoNetworkedField] public Vector2 Direction = Vector2.UnitY;
     [DataField, AutoNetworkedField] public Vector2 TubeDirection = Vector2.UnitY;
+    // RuMC edit start
+    [DataField, AutoNetworkedField] public Vector2? Destination;
+    [DataField, AutoNetworkedField] public EntityUid? Target;
+    [DataField, AutoNetworkedField] public float FlightSeconds = AscentSeconds;
+    // RuMC edit end
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoNetworkedField, AutoPausedField]
     public TimeSpan StartedAt;
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoNetworkedField, AutoPausedField]

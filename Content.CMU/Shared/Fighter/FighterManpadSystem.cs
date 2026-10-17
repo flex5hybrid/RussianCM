@@ -74,6 +74,10 @@ public sealed partial class FighterManpadSystem : EntitySystem
         ent.Comp.AimingUser = args.Performer;
         _actions.SetToggled(ent.Comp.AimAction, true);
         Dirty(ent);
+        // RuMC edit start
+        var started = new FighterManpadAimStartedEvent(args.Performer);
+        RaiseLocalEvent(ent, ref started);
+        // RuMC edit end
         _popup.PopupEntity(Loc.GetString(ent.Comp.IgnoreIFF ? "cmu-manpad-aiming-all" : "cmu-manpad-aiming"), args.Performer, args.Performer);
     }
 
