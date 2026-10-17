@@ -1,0 +1,578 @@
+# Миска для супа
+- type: constructionGraph
+  id: AU14CustomGraph_FoodBowlBig__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 1
+        doAfter: 1
+  - node: target
+    entity: AU14CustomEntity_FoodBowlBig__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_FoodBowlBig__RuMC__KitchenRuMC
+  parent: FoodBowlBig
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_FoodBowlBig__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_FoodBowlBig__RuMC__KitchenRuMC
+  name: "bowl"
+  description: "A simple bowl, used for soups and salads."
+  graph: AU14CustomGraph_FoodBowlBig__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Большая тарелка
+- type: constructionGraph
+  id: AU14CustomGraph_FoodPlate__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 1
+        doAfter: 1
+  - node: target
+    entity: AU14CustomEntity_FoodPlate__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_FoodPlate__RuMC__KitchenRuMC
+  parent: FoodPlate
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_FoodPlate__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_FoodPlate__RuMC__KitchenRuMC
+  name: "large plate"
+  description: "A large plate, excellent for bread."
+  graph: AU14CustomGraph_FoodPlate__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Форма для кексов
+- type: constructionGraph
+  id: AU14CustomGraph_FoodPlateMuffinTin__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 1
+        doAfter: 1
+  - node: target
+    entity: AU14CustomEntity_FoodPlateMuffinTin__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_FoodPlateMuffinTin__RuMC__KitchenRuMC
+  parent: FoodPlateMuffinTin
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_FoodPlateMuffinTin__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_FoodPlateMuffinTin__RuMC__KitchenRuMC
+  name: "muffin tin"
+  description: "A cheap foil tin for muffins."
+  graph: AU14CustomGraph_FoodPlateMuffinTin__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Маленькая тарелка
+- type: constructionGraph
+  id: AU14CustomGraph_FoodPlateSmall__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 1
+        doAfter: 1
+  - node: target
+    entity: AU14CustomEntity_FoodPlateSmall__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_FoodPlateSmall__RuMC__KitchenRuMC
+  parent: FoodPlateSmall
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_FoodPlateSmall__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_FoodPlateSmall__RuMC__KitchenRuMC
+  name: "small plate"
+  description: "A small plate. Delicate."
+  graph: AU14CustomGraph_FoodPlateSmall__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Форма для пирогов
+- type: constructionGraph
+  id: AU14CustomGraph_FoodPlateTin__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 1
+        doAfter: 1
+  - node: target
+    entity: AU14CustomEntity_FoodPlateTin__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_FoodPlateTin__RuMC__KitchenRuMC
+  parent: FoodPlateTin
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_FoodPlateTin__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_FoodPlateTin__RuMC__KitchenRuMC
+  name: "pie tin"
+  description: "A cheap foil tin for pies."
+  graph: AU14CustomGraph_FoodPlateTin__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Стакан для кофе (обычный)
+- type: constructionGraph
+  id: AU14CustomGraph_RMCCoffeeCup__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 2
+        doAfter: 1
+  - node: target
+    entity: AU14CustomEntity_RMCCoffeeCup__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCCoffeeCup__RuMC__KitchenRuMC
+  parent: RMCCoffeeCup
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCCoffeeCup__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCCoffeeCup__RuMC__KitchenRuMC
+  name: "cup"
+  description: "A ceramic mug for various beverages."
+  graph: AU14CustomGraph_RMCCoffeeCup__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Стакан для кофе (коф)
+- type: constructionGraph
+  id: AU14CustomGraph_RMCColonyLiberationFrontCup__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 1
+        doAfter: 2
+  - node: target
+    entity: AU14CustomEntity_RMCColonyLiberationFrontCup__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCColonyLiberationFrontCup__RuMC__KitchenRuMC
+  parent: RMCColonyLiberationFrontCup
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCColonyLiberationFrontCup__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCColonyLiberationFrontCup__RuMC__KitchenRuMC
+  name: "CLF cup"
+  description: "A durable, well‑worn mug with the CLF symbol."
+  graph: AU14CustomGraph_RMCColonyLiberationFrontCup__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Стеклянный стакан
+- type: constructionGraph
+  id: AU14CustomGraph_RMCDrinkGlass__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMGlass
+        amount: 1
+        doAfter: 2
+  - node: target
+    entity: AU14CustomEntity_RMCDrinkGlass__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCDrinkGlass__RuMC__KitchenRuMC
+  parent: RMCDrinkGlass
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCDrinkGlass__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCDrinkGlass__RuMC__KitchenRuMC
+  name: "glass"
+  description: "A regular glass for drinks."
+  graph: AU14CustomGraph_RMCDrinkGlass__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Вилка
+- type: constructionGraph
+  id: AU14CustomGraph_RMCFork__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 1
+        doAfter: 1
+  - node: target
+    entity: AU14CustomEntity_RMCFork__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCFork__RuMC__KitchenRuMC
+  parent: RMCFork
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCFork__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCFork__RuMC__KitchenRuMC
+  name: "fork"
+  description: "This is a fork. Definitely sharp."
+  graph: AU14CustomGraph_RMCFork__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Кухонный нож
+- type: constructionGraph
+  id: AU14CustomGraph_RMCKitchenKnifeChef__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 2
+        doAfter: 1
+      - material: RMCWood
+        amount: 1
+        doAfter: 1
+  - node: target
+    entity: AU14CustomEntity_RMCKitchenKnifeChef__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCKitchenKnifeChef__RuMC__KitchenRuMC
+  parent: RMCKitchenKnifeChef
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCKitchenKnifeChef__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCKitchenKnifeChef__RuMC__KitchenRuMC
+  name: "kitchen knife"
+  description: "A versatile chef’s knife from SpaceCook Incorporated. Guaranteed to stay sharp for many years."
+  graph: AU14CustomGraph_RMCKitchenKnifeChef__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Обычная кружка (КМП)
+- type: constructionGraph
+  id: AU14CustomGraph_RMCMarineCorpsCup__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 1
+        doAfter: 2
+  - node: target
+    entity: AU14CustomEntity_RMCMarineCorpsCup__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCMarineCorpsCup__RuMC__KitchenRuMC
+  parent: RMCMarineCorpsCup
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCMarineCorpsCup__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCMarineCorpsCup__RuMC__KitchenRuMC
+  name: "CM cup"
+  description: "A durable cup with the KMP emblem, designed to work in any conditions."
+  graph: AU14CustomGraph_RMCMarineCorpsCup__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Скалка
+- type: constructionGraph
+  id: AU14CustomGraph_RMCRollingPin__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: RMCWood
+        amount: 1
+        doAfter: 5
+  - node: target
+    entity: AU14CustomEntity_RMCRollingPin__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCRollingPin__RuMC__KitchenRuMC
+  parent: RMCRollingPin
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCRollingPin__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCRollingPin__RuMC__KitchenRuMC
+  name: "rolling pin"
+  description: "It’s used to knock out the bartender."
+  graph: AU14CustomGraph_RMCRollingPin__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Обычная кружка (СПН)
+- type: constructionGraph
+  id: AU14CustomGraph_RMCSocialistPPCup__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 1
+        doAfter: 2
+  - node: target
+    entity: AU14CustomEntity_RMCSocialistPPCup__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCSocialistPPCup__RuMC__KitchenRuMC
+  parent: RMCSocialistPPCup
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCSocialistPPCup__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCSocialistPPCup__RuMC__KitchenRuMC
+  name: "UPP cup"
+  description: "A durable crimson-colored cup with an SPN emblem stamped on it. Ready to serve comrades among the stars."
+  graph: AU14CustomGraph_RMCSocialistPPCup__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Ложка
+- type: constructionGraph
+  id: AU14CustomGraph_RMCSpoon__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 1
+        doAfter: 1
+  - node: target
+    entity: AU14CustomEntity_RMCSpoon__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCSpoon__RuMC__KitchenRuMC
+  parent: RMCSpoon
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCSpoon__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCSpoon__RuMC__KitchenRuMC
+  name: "spoon"
+  description: "This is a spoon. You can see your inverted reflection in it."
+  graph: AU14CustomGraph_RMCSpoon__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Обычная кружка (ООН)
+- type: constructionGraph
+  id: AU14CustomGraph_RMCUnitedNationsCup__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 1
+        doAfter: 2
+  - node: target
+    entity: AU14CustomEntity_RMCUnitedNationsCup__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCUnitedNationsCup__RuMC__KitchenRuMC
+  parent: RMCUnitedNationsCup
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCUnitedNationsCup__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCUnitedNationsCup__RuMC__KitchenRuMC
+  name: "UNISC cup"
+  description: "A sleek, official mug featuring the UNISC emblem, symbolizing unity, order, and authority among the stars. Created for those who support peace and order."
+  graph: AU14CustomGraph_RMCUnitedNationsCup__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Обычная кружка (Ве-Ю)
+- type: constructionGraph
+  id: AU14CustomGraph_RMCWestonYamadaCup__RuMC__KitchenRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 1
+        doAfter: 2
+  - node: target
+    entity: AU14CustomEntity_RMCWestonYamadaCup__RuMC__KitchenRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCWestonYamadaCup__RuMC__KitchenRuMC
+  parent: RMCWestonYamadaCup
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCWestonYamadaCup__RuMC__KitchenRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCWestonYamadaCup__RuMC__KitchenRuMC
+  name: "WeYu cup"
+  description: "A clean, stylish cup with the Weyland‑Yutani corporation logo on the side."
+  graph: AU14CustomGraph_RMCWestonYamadaCup__RuMC__KitchenRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-kitchen
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item

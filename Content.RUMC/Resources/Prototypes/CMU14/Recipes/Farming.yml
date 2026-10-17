@@ -1,0 +1,295 @@
+# Клиппер
+- type: constructionGraph
+  id: AU14CustomGraph_HydroponicsToolClippers__RuMC__FarmingRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 3
+        doAfter: 5
+  - node: target
+    entity: AU14CustomEntity_HydroponicsToolClippers__RuMC__FarmingRuMC
+
+- type: entity
+  id: AU14CustomEntity_HydroponicsToolClippers__RuMC__FarmingRuMC
+  parent: HydroponicsToolClippers
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_HydroponicsToolClippers__RuMC__FarmingRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_HydroponicsToolClippers__RuMC__FarmingRuMC
+  name: "plant clippers"
+  description: "A tool used to take samples from plants."
+  graph: AU14CustomGraph_HydroponicsToolClippers__RuMC__FarmingRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-farming
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Грядки
+- type: constructionGraph
+  id: AU14CustomGraph_hydroponicsSoil__RuMC__FarmingRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: mid
+      completed:
+      - !type:SnapToGrid
+      steps:
+      - material: CMSandbagFull
+        amount: 5
+        doAfter: 5
+  - node: mid
+    entity: AU14CustomEntityMid_hydroponicsSoil__RuMC__FarmingRuMC
+    edges:
+    - to: target
+      steps:
+      - entityId: AU14CustomEntity_AU14ToolShovel__RuMC__ToolsRuMC
+        consume: false
+        doAfter: 5
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: CMSandbagFull
+        amount: 5
+      - !type:DeleteEntity
+      steps:
+      - tool: Prying
+        doAfter: 2
+  - node: target
+    entity: AU14CustomEntity_hydroponicsSoil__RuMC__FarmingRuMC
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: CMSandbagFull
+        amount: 5
+      - !type:DeleteEntity
+      steps:
+      - tool: Prying
+        doAfter: 2
+
+- type: entity
+  id: AU14CustomEntity_hydroponicsSoil__RuMC__FarmingRuMC
+  parent: hydroponicsSoil
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_hydroponicsSoil__RuMC__FarmingRuMC
+    node: target
+  - type: StructuralSupport
+    cantileverSpan: 2
+
+- type: entity
+  id: AU14CustomEntityMid_hydroponicsSoil__RuMC__FarmingRuMC
+  parent: AU14CustomConstructionFrame
+  suffix: AU14 Custom Construction (in progress)
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_hydroponicsSoil__RuMC__FarmingRuMC
+    node: mid
+
+- type: construction
+  id: AU14Custom_hydroponicsSoil__RuMC__FarmingRuMC
+  name: "soil"
+  description: "A mix of organic matter and minerals creating a soil to grow your plant in space. Seems to be dry."
+  graph: AU14CustomGraph_hydroponicsSoil__RuMC__FarmingRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-farming
+  spawnlist: RuMC
+  isCM: true
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+# Сумка для семян
+- type: constructionGraph
+  id: AU14CustomGraph_RMCStoragePlantBag__RuMC__FarmingRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: Cloth
+        amount: 2
+        doAfter: 10
+  - node: target
+    entity: AU14CustomEntity_RMCStoragePlantBag__RuMC__FarmingRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCStoragePlantBag__RuMC__FarmingRuMC
+  parent: RMCStoragePlantBag
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCStoragePlantBag__RuMC__FarmingRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCStoragePlantBag__RuMC__FarmingRuMC
+  name: "мешок для растений"
+  description: ""
+  graph: AU14CustomGraph_RMCStoragePlantBag__RuMC__FarmingRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-farming
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Мотыга
+- type: constructionGraph
+  id: AU14CustomGraph_RMCToolMiniHoe__RuMC__FarmingRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 3
+        doAfter: 5
+  - node: target
+    entity: AU14CustomEntity_RMCToolMiniHoe__RuMC__FarmingRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCToolMiniHoe__RuMC__FarmingRuMC
+  parent: RMCToolMiniHoe
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCToolMiniHoe__RuMC__FarmingRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCToolMiniHoe__RuMC__FarmingRuMC
+  name: "mini hoe"
+  description: "It is used for weeding or scratching the back."
+  graph: AU14CustomGraph_RMCToolMiniHoe__RuMC__FarmingRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-farming
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Лопатка
+- type: constructionGraph
+  id: AU14CustomGraph_RMCToolSpade__RuMC__FarmingRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 3
+        doAfter: 5
+  - node: target
+    entity: AU14CustomEntity_RMCToolSpade__RuMC__FarmingRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCToolSpade__RuMC__FarmingRuMC
+  parent: RMCToolSpade
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCToolSpade__RuMC__FarmingRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCToolSpade__RuMC__FarmingRuMC
+  name: "mini shovel"
+  description: "A small tool for digging and moving soil."
+  graph: AU14CustomGraph_RMCToolSpade__RuMC__FarmingRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-farming
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Коса
+- type: constructionGraph
+  id: AU14CustomGraph_HydroponicsToolScythe__RuMC__FarmingRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 5
+        doAfter: 3
+  - node: target
+    entity: AU14CustomEntity_HydroponicsToolScythe__RuMC__FarmingRuMC
+
+- type: entity
+  id: AU14CustomEntity_HydroponicsToolScythe__RuMC__FarmingRuMC
+  parent: HydroponicsToolScythe
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_HydroponicsToolScythe__RuMC__FarmingRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_HydroponicsToolScythe__RuMC__FarmingRuMC
+  name: "scythe"
+  description: "A sharp and curved blade on a long fibremetal handle, this tool makes it easy to reap what you sow."
+  graph: AU14CustomGraph_HydroponicsToolScythe__RuMC__FarmingRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-farming
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Маленькое ведерко
+- type: constructionGraph
+  id: AU14CustomGraph_RMCBucket__RuMC__FarmingRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 2
+        doAfter: 5
+  - node: target
+    entity: AU14CustomEntity_RMCBucket__RuMC__FarmingRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCBucket__RuMC__FarmingRuMC
+  parent: RMCBucket
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCBucket__RuMC__FarmingRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCBucket__RuMC__FarmingRuMC
+  name: "bucket"
+  description: "This is a bucket. It holds 120 units."
+  graph: AU14CustomGraph_RMCBucket__RuMC__FarmingRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-farming
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item

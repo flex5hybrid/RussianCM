@@ -1,0 +1,386 @@
+# Семена конопли
+- type: constructionGraph
+  id: AU14CustomGraph_CannabisSeeds__RuMC__DrugsRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 10
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+  - node: target
+    entity: AU14CustomEntity_CannabisSeeds__RuMC__DrugsRuMC
+
+- type: entity
+  id: AU14CustomEntity_CannabisSeeds__RuMC__DrugsRuMC
+  parent: CannabisSeeds
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_CannabisSeeds__RuMC__DrugsRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_CannabisSeeds__RuMC__DrugsRuMC
+  name: "packet of cannabis seeds"
+  description: "Taxable."
+  graph: AU14CustomGraph_CannabisSeeds__RuMC__DrugsRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-drugs
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Шприц
+- type: constructionGraph
+  id: AU14CustomGraph_CMSyringe__RuMC__DrugsRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMGlass
+        amount: 1
+        doAfter: 2
+      - material: RMCPlastic
+        amount: 1
+        doAfter: 2
+  - node: target
+    entity: AU14CustomEntity_CMSyringe__RuMC__DrugsRuMC
+
+- type: entity
+  id: AU14CustomEntity_CMSyringe__RuMC__DrugsRuMC
+  parent: CMSyringe
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_CMSyringe__RuMC__DrugsRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_CMSyringe__RuMC__DrugsRuMC
+  name: "syringe"
+  description: "It is used for collecting blood samples or introducing reagents."
+  graph: AU14CustomGraph_CMSyringe__RuMC__DrugsRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-drugs
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Молотая конопля
+- type: constructionGraph
+  id: AU14CustomGraph_GroundCannabis__RuMC__DrugsRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - entityId: LeavesCannabis
+        consume: true
+        doAfter: 5
+  - node: target
+    entity: AU14CustomEntity_GroundCannabis__RuMC__DrugsRuMC
+
+- type: entity
+  id: AU14CustomEntity_GroundCannabis__RuMC__DrugsRuMC
+  parent: GroundCannabis
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_GroundCannabis__RuMC__DrugsRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_GroundCannabis__RuMC__DrugsRuMC
+  name: "ground cannabis"
+  description: "Ground cannabis, ready to take you on a trip."
+  graph: AU14CustomGraph_GroundCannabis__RuMC__DrugsRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-drugs
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Молотая радужная конопля
+- type: constructionGraph
+  id: AU14CustomGraph_GroundCannabisRainbow__RuMC__DrugsRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - entityId: LeavesCannabisRainbow
+        consume: true
+        doAfter: 5
+  - node: target
+    entity: AU14CustomEntity_GroundCannabisRainbow__RuMC__DrugsRuMC
+
+- type: entity
+  id: AU14CustomEntity_GroundCannabisRainbow__RuMC__DrugsRuMC
+  parent: GroundCannabisRainbow
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_GroundCannabisRainbow__RuMC__DrugsRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_GroundCannabisRainbow__RuMC__DrugsRuMC
+  name: "ground rainbow cannabis"
+  description: "Ground rainbow cannabis, ready to take you on a trip."
+  graph: AU14CustomGraph_GroundCannabisRainbow__RuMC__DrugsRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-drugs
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Молотый табак
+- type: constructionGraph
+  id: AU14CustomGraph_GroundTobacco__RuMC__DrugsRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - entityId: LeavesTobacco
+        consume: true
+        doAfter: 5
+  - node: target
+    entity: AU14CustomEntity_GroundTobacco__RuMC__DrugsRuMC
+
+- type: entity
+  id: AU14CustomEntity_GroundTobacco__RuMC__DrugsRuMC
+  parent: GroundTobacco
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_GroundTobacco__RuMC__DrugsRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_GroundTobacco__RuMC__DrugsRuMC
+  name: "ground tobacco"
+  description: "Ground tobacco, perfect for hand-rolled cigarettes."
+  graph: AU14CustomGraph_GroundTobacco__RuMC__DrugsRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-drugs
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Косяк
+- type: constructionGraph
+  id: AU14CustomGraph_Joint__RuMC__DrugsRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - entityId: LeavesCannabis
+        consume: true
+        doAfter: 5
+      - entityId: CMPaper
+        consume: true
+        doAfter: 5
+  - node: target
+    entity: AU14CustomEntity_Joint__RuMC__DrugsRuMC
+
+- type: entity
+  id: AU14CustomEntity_Joint__RuMC__DrugsRuMC
+  parent: Joint
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_Joint__RuMC__DrugsRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_Joint__RuMC__DrugsRuMC
+  name: "joint"
+  description: "A roll of dried plant matter wrapped in thin paper."
+  graph: AU14CustomGraph_Joint__RuMC__DrugsRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-drugs
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Шприц с веществами
+- type: constructionGraph
+  id: AU14CustomGraph_RMCSyringeDrugs__RuMC__DrugsRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - entityId: CMSyringe
+        consume: true
+        doAfter: 5
+      - material: GroundCannabis
+        amount: 1
+        doAfter: 5
+  - node: target
+    entity: AU14CustomEntity_RMCSyringeDrugs__RuMC__DrugsRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCSyringeDrugs__RuMC__DrugsRuMC
+  parent: RMCSyringeDrugs
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCSyringeDrugs__RuMC__DrugsRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCSyringeDrugs__RuMC__DrugsRuMC
+  name: "syringe"
+  description: "Contains aggressive drugs intended for torture."
+  graph: AU14CustomGraph_RMCSyringeDrugs__RuMC__DrugsRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-drugs
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Курительная трубка
+- type: constructionGraph
+  id: AU14CustomGraph_SmokingPipe__RuMC__DrugsRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: RMCWood
+        amount: 5
+        doAfter: 5
+  - node: target
+    entity: AU14CustomEntity_SmokingPipe__RuMC__DrugsRuMC
+
+- type: entity
+  id: AU14CustomEntity_SmokingPipe__RuMC__DrugsRuMC
+  parent: SmokingPipe
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_SmokingPipe__RuMC__DrugsRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_SmokingPipe__RuMC__DrugsRuMC
+  name: "pipe"
+  description: "Just like grandpappy used to smoke."
+  graph: AU14CustomGraph_SmokingPipe__RuMC__DrugsRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-drugs
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Семена табака
+- type: constructionGraph
+  id: AU14CustomGraph_TobaccoSeeds__RuMC__DrugsRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 10
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+      - entityId: FoodGrass
+        consume: true
+        doAfter: 0
+  - node: target
+    entity: AU14CustomEntity_TobaccoSeeds__RuMC__DrugsRuMC
+
+- type: entity
+  id: AU14CustomEntity_TobaccoSeeds__RuMC__DrugsRuMC
+  parent: TobaccoSeeds
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_TobaccoSeeds__RuMC__DrugsRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_TobaccoSeeds__RuMC__DrugsRuMC
+  name: "packet of tobacco seeds"
+  description: "These seeds grow into tobacco plants."
+  graph: AU14CustomGraph_TobaccoSeeds__RuMC__DrugsRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-drugs
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item

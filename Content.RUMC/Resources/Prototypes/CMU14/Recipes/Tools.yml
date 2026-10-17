@@ -1,0 +1,122 @@
+# Лопата
+- type: constructionGraph
+  id: AU14CustomGraph_AU14ToolShovel__RuMC__ToolsRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 5
+        doAfter: 5
+      - material: RMCWood
+        amount: 5
+        doAfter: 5
+  - node: target
+    entity: AU14CustomEntity_AU14ToolShovel__RuMC__ToolsRuMC
+
+- type: entity
+  id: AU14CustomEntity_AU14ToolShovel__RuMC__ToolsRuMC
+  parent: AU14ToolShovel
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_AU14ToolShovel__RuMC__ToolsRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_AU14ToolShovel__RuMC__ToolsRuMC
+  name: "лопата"
+  description: "Большой инструмент для копания и перемещения грунта."
+  graph: AU14CustomGraph_AU14ToolShovel__RuMC__ToolsRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-tools
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# K92
+- type: constructionGraph
+  id: AU14CustomGraph_AU14MaintenanceJack__RuMC__ToolsRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: CMSteel
+        amount: 10
+        doAfter: 10
+      - entityId: CMWrench
+        consume: true
+        doAfter: 10
+      - entityId: CMCrowbar
+        consume: true
+        doAfter: 10
+  - node: target
+    entity: AU14CustomEntity_AU14MaintenanceJack__RuMC__ToolsRuMC
+
+- type: entity
+  id: AU14CustomEntity_AU14MaintenanceJack__RuMC__ToolsRuMC
+  parent: AU14MaintenanceJack
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_AU14MaintenanceJack__RuMC__ToolsRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_AU14MaintenanceJack__RuMC__ToolsRuMC
+  name: "K92 Maintenance Jack"
+  description: "A small carryable maintenance jack used to service vehicles, can also act as a bludgeoning device that comes in handy in emergencies. Can be used to disengage door jacks."
+  graph: AU14CustomGraph_AU14MaintenanceJack__RuMC__ToolsRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-tools
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Модифицированная сварка
+- type: constructionGraph
+  id: AU14CustomGraph_RMCWelderPVE__RuMC__ToolsRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - entityId: CMWelder
+        consume: true
+        doAfter: 10
+      - entityId: CMWelderSmall
+        consume: true
+        doAfter: 10
+      - material: RMCCable
+        amount: 10
+        doAfter: 10
+  - node: target
+    entity: AU14CustomEntity_RMCWelderPVE__RuMC__ToolsRuMC
+
+- type: entity
+  id: AU14CustomEntity_RMCWelderPVE__RuMC__ToolsRuMC
+  parent: RMCWelderPVE
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCWelderPVE__RuMC__ToolsRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_RMCWelderPVE__RuMC__ToolsRuMC
+  name: "modified welder"
+  description: "A more “advanced” version of the CM welding machine: it is equipped with a welding shield to protect the eyes."
+  graph: AU14CustomGraph_RMCWelderPVE__RuMC__ToolsRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-tools
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item

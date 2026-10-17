@@ -1,0 +1,361 @@
+# Аккордион
+# - type: constructionGraph
+#   id: AU14CustomGraph_AccordionInstrument__RuMC__FunRuMC
+#   start: start
+#   graph:
+#   - node: start
+#     edges:
+#     - to: target
+#       steps:
+#       - material: RMCWood
+#         amount: 10
+#         doAfter: 20
+#   - node: target
+#     entity: AU14CustomEntity_AccordionInstrument__RuMC__FunRuMC
+
+# - type: entity
+#   id: AU14CustomEntity_AccordionInstrument__RuMC__FunRuMC
+#   parent: AccordionInstrument
+#   suffix: AU14 Custom Construction
+#   components:
+#   - type: Construction
+#     graph: AU14CustomGraph_AccordionInstrument__RuMC__FunRuMC
+#     node: target
+
+# - type: construction
+#   id: AU14Custom_AccordionInstrument__RuMC__FunRuMC
+#   name: "аккордеон"
+#   description: "Это музыкальный инструмент."
+#   graph: AU14CustomGraph_AccordionInstrument__RuMC__FunRuMC
+#   startNode: start
+#   targetNode: target
+#   category: FunRuMC
+#   spawnlist: RuMC
+#   isCM: true
+#   objectType: Item
+
+# Акустическая гитара
+# - type: constructionGraph
+#   id: AU14CustomGraph_AcousticGuitarInstrument__RuMC__FunRuMC
+#   start: start
+#   graph:
+#   - node: start
+#     edges:
+#     - to: target
+#       steps:
+#       - material: RMCWood
+#         amount: 10
+#         doAfter: 20
+#   - node: target
+#     entity: AU14CustomEntity_AcousticGuitarInstrument__RuMC__FunRuMC
+
+# - type: entity
+#   id: AU14CustomEntity_AcousticGuitarInstrument__RuMC__FunRuMC
+#   parent: AcousticGuitarInstrument
+#   suffix: AU14 Custom Construction
+#   components:
+#   - type: Construction
+#     graph: AU14CustomGraph_AcousticGuitarInstrument__RuMC__FunRuMC
+#     node: target
+
+# - type: construction
+#   id: AU14Custom_AcousticGuitarInstrument__RuMC__FunRuMC
+#   name: "акустическая гитара"
+#   description: "Короче, сыграем 'Wonderwall'."
+#   graph: AU14CustomGraph_AcousticGuitarInstrument__RuMC__FunRuMC
+#   startNode: start
+#   targetNode: target
+#   category: FunRuMC
+#   spawnlist: RuMC
+#   isCM: true
+#   objectType: Item
+
+# Банджо
+# - type: constructionGraph
+#   id: AU14CustomGraph_BanjoInstrument__RuMC__FunRuMC
+#   start: start
+#   graph:
+#   - node: start
+#     edges:
+#     - to: target
+#       steps:
+#       - material: RMCWood
+#         amount: 10
+#         doAfter: 20
+#   - node: target
+#     entity: AU14CustomEntity_BanjoInstrument__RuMC__FunRuMC
+
+# - type: entity
+#   id: AU14CustomEntity_BanjoInstrument__RuMC__FunRuMC
+#   parent: BanjoInstrument
+#   suffix: AU14 Custom Construction
+#   components:
+#   - type: Construction
+#     graph: AU14CustomGraph_BanjoInstrument__RuMC__FunRuMC
+#     node: target
+
+# - type: construction
+#   id: AU14Custom_BanjoInstrument__RuMC__FunRuMC
+#   name: "банджо"
+#   description: "Это музыкальный инструмент."
+#   graph: AU14CustomGraph_BanjoInstrument__RuMC__FunRuMC
+#   startNode: start
+#   targetNode: target
+#   category: FunRuMC
+#   spawnlist: RuMC
+#   isCM: true
+#   objectType: Item
+
+# Басс гитара
+# - type: constructionGraph
+#   id: AU14CustomGraph_BassGuitarInstrument__RuMC__FunRuMC
+#   start: start
+#   graph:
+#   - node: start
+#     edges:
+#     - to: target
+#       steps:
+#       - material: RMCWood
+#         amount: 10
+#         doAfter: 15
+#   - node: target
+#     entity: AU14CustomEntity_BassGuitarInstrument__RuMC__FunRuMC
+
+# - type: entity
+#   id: AU14CustomEntity_BassGuitarInstrument__RuMC__FunRuMC
+#   parent: BassGuitarInstrument
+#   suffix: AU14 Custom Construction
+#   components:
+#   - type: Construction
+#     graph: AU14CustomGraph_BassGuitarInstrument__RuMC__FunRuMC
+#     node: target
+
+# - type: construction
+#   id: AU14Custom_BassGuitarInstrument__RuMC__FunRuMC
+#   name: "бас-гитара"
+#   description: "Вы чувствуете себя очень крутым, держа её в руках."
+#   graph: AU14CustomGraph_BassGuitarInstrument__RuMC__FunRuMC
+#   startNode: start
+#   targetNode: target
+#   category: FunRuMC
+#   spawnlist: RuMC
+#   isCM: true
+#   objectType: Item
+
+# Трость
+- type: constructionGraph
+  id: AU14CustomGraph_Cane__RuMC__FunRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: RMCWood
+        amount: 10
+        doAfter: 15
+  - node: target
+    entity: AU14CustomEntity_Cane__RuMC__FunRuMC
+
+- type: entity
+  id: AU14CustomEntity_Cane__RuMC__FunRuMC
+  parent: Cane
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_Cane__RuMC__FunRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_Cane__RuMC__FunRuMC
+  name: "cane"
+  description: "A wooden cane."
+  graph: AU14CustomGraph_Cane__RuMC__FunRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-fun
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Шахматная доска
+- type: constructionGraph
+  id: AU14CustomGraph_ChessBoard__RuMC__FunRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: RMCWood
+        amount: 10
+        doAfter: 20
+  - node: target
+    entity: AU14CustomEntity_ChessBoard__RuMC__FunRuMC
+
+- type: entity
+  id: AU14CustomEntity_ChessBoard__RuMC__FunRuMC
+  parent: ChessBoard
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_ChessBoard__RuMC__FunRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_ChessBoard__RuMC__FunRuMC
+  name: "chessboard"
+  description: "A chessboard. Pieces included!"
+  graph: AU14CustomGraph_ChessBoard__RuMC__FunRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-fun
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Доска для шашек
+- type: constructionGraph
+  id: AU14CustomGraph_CheckerBoard__RuMC__FunRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: RMCWood
+        amount: 10
+        doAfter: 20
+  - node: target
+    entity: AU14CustomEntity_CheckerBoard__RuMC__FunRuMC
+
+- type: entity
+  id: AU14CustomEntity_CheckerBoard__RuMC__FunRuMC
+  parent: CheckerBoard
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_CheckerBoard__RuMC__FunRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_CheckerBoard__RuMC__FunRuMC
+  name: "checkerboard"
+  description: "A checkerboard. Pieces included!"
+  graph: AU14CustomGraph_CheckerBoard__RuMC__FunRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-fun
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Кларнет
+# - type: constructionGraph
+#   id: AU14CustomGraph_ClarinetInstrument__RuMC__FunRuMC
+#   start: start
+#   graph:
+#   - node: start
+#     edges:
+#     - to: target
+#       steps:
+#       - material: RMCWood
+#         amount: 10
+#         doAfter: 20
+#   - node: target
+#     entity: AU14CustomEntity_ClarinetInstrument__RuMC__FunRuMC
+
+# - type: entity
+#   id: AU14CustomEntity_ClarinetInstrument__RuMC__FunRuMC
+#   parent: ClarinetInstrument
+#   suffix: AU14 Custom Construction
+#   components:
+#   - type: Construction
+#     graph: AU14CustomGraph_ClarinetInstrument__RuMC__FunRuMC
+#     node: target
+
+# - type: construction
+#   id: AU14Custom_ClarinetInstrument__RuMC__FunRuMC
+#   name: "кларнет"
+#   description: "Фаворит осьминога со дна океана."
+#   graph: AU14CustomGraph_ClarinetInstrument__RuMC__FunRuMC
+#   startNode: start
+#   targetNode: target
+#   category: FunRuMC
+#   spawnlist: RuMC
+#   isCM: true
+#   objectType: Item
+
+# Виолончель
+# - type: constructionGraph
+#   id: AU14CustomGraph_ViolaInstrument__RuMC__FunRuMC
+#   start: start
+#   graph:
+#   - node: start
+#     edges:
+#     - to: target
+#       steps:
+#       - material: RMCWood
+#         amount: 10
+#         doAfter: 20
+#   - node: target
+#     entity: AU14CustomEntity_ViolaInstrument__RuMC__FunRuMC
+
+# - type: entity
+#   id: AU14CustomEntity_ViolaInstrument__RuMC__FunRuMC
+#   parent: ViolaInstrument
+#   suffix: AU14 Custom Construction
+#   components:
+#   - type: Construction
+#     graph: AU14CustomGraph_ViolaInstrument__RuMC__FunRuMC
+#     node: target
+
+# - type: construction
+#   id: AU14Custom_ViolaInstrument__RuMC__FunRuMC
+#   name: "виола"
+#   description: "Как скрипка, только хуже."
+#   graph: AU14CustomGraph_ViolaInstrument__RuMC__FunRuMC
+#   startNode: start
+#   targetNode: target
+#   category: FunRuMC
+#   spawnlist: RuMC
+#   isCM: true
+#   objectType: Item
+
+# Губная гармошка
+# - type: constructionGraph
+#   id: AU14CustomGraph_HarmonicaInstrument__RuMC__FunRuMC
+#   start: start
+#   graph:
+#   - node: start
+#     edges:
+#     - to: target
+#       steps:
+#       - material: RMCWood
+#         amount: 10
+#         doAfter: 20
+#   - node: target
+#     entity: AU14CustomEntity_HarmonicaInstrument__RuMC__FunRuMC
+
+# - type: entity
+#   id: AU14CustomEntity_HarmonicaInstrument__RuMC__FunRuMC
+#   parent: HarmonicaInstrument
+#   suffix: AU14 Custom Construction
+#   components:
+#   - type: Construction
+#     graph: AU14CustomGraph_HarmonicaInstrument__RuMC__FunRuMC
+#     node: target
+
+# - type: construction
+#   id: AU14Custom_HarmonicaInstrument__RuMC__FunRuMC
+#   name: "губная гармошка"
+#   description: "Это музыкальный инструмент."
+#   graph: AU14CustomGraph_HarmonicaInstrument__RuMC__FunRuMC
+#   startNode: start
+#   targetNode: target
+#   category: FunRuMC
+#   spawnlist: RuMC
+#   isCM: true
+#   objectType: Item
+
+

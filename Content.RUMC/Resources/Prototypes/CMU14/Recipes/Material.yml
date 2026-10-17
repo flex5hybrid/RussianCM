@@ -1,0 +1,71 @@
+# Ткань
+- type: constructionGraph
+  id: AU14CustomGraph_MaterialCloth1__RuMC__MaterialRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: RMCWood
+        amount: 5
+        doAfter: 5
+  - node: target
+    entity: AU14CustomEntity_MaterialCloth1__RuMC__MaterialRuMC
+
+- type: entity
+  id: AU14CustomEntity_MaterialCloth1__RuMC__MaterialRuMC
+  parent: MaterialCloth1
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_MaterialCloth1__RuMC__MaterialRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_MaterialCloth1__RuMC__MaterialRuMC
+  name: "cloth"
+  description: "A raw material."
+  graph: AU14CustomGraph_MaterialCloth1__RuMC__MaterialRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-material
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item
+
+# Мешки для песка
+- type: constructionGraph
+  id: AU14CustomGraph_CMSandbagEmpty10__RuMC__MaterialRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: target
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 15
+  - node: target
+    entity: AU14CustomEntity_CMSandbagEmpty10__RuMC__MaterialRuMC
+
+- type: entity
+  id: AU14CustomEntity_CMSandbagEmpty10__RuMC__MaterialRuMC
+  parent: CMSandbagEmpty10
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_CMSandbagEmpty10__RuMC__MaterialRuMC
+    node: target
+
+- type: construction
+  id: AU14Custom_CMSandbagEmpty10__RuMC__MaterialRuMC
+  name: "empty sandbags"
+  description: "Some empty sandbags, best to fill them up if you want to use them."
+  graph: AU14CustomGraph_CMSandbagEmpty10__RuMC__MaterialRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-material
+  spawnlist: RuMC
+  isCM: true
+  objectType: Item

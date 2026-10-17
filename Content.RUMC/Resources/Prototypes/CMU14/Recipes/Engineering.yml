@@ -1,0 +1,107 @@
+# Кабинка обслуживания синтетиков
+- type: constructionGraph
+  id: AU14CustomGraph_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: mid
+      completed:
+      - !type:SnapToGrid
+      steps:
+      - material: CMSteel
+        amount: 30
+        doAfter: 10
+  - node: mid
+    entity: AU14CustomEntityMid_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+    edges:
+    - to: target
+      steps:
+      - material: RMCCable
+        amount: 30
+        doAfter: 5
+      - tool: Screwing
+        doAfter: 3
+      - entityId: CMAPCElectronics
+        consume: true
+        doAfter: 5
+      - entityId: CMAPCElectronics
+        consume: true
+        doAfter: 0
+      - entityId: RMCPowerCellHigh
+        consume: true
+        doAfter: 5
+      - entityId: RMCPowerCellHigh
+        consume: true
+        doAfter: 0
+      - entityId: RMCPowerCellHigh
+        consume: true
+        doAfter: 0
+      - tool: Welding
+        doAfter: 5
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: CMSheetMetal1
+        amount: 30
+      - !type:DeleteEntity
+      steps:
+      - tool: Prying
+        doAfter: 2
+  - node: target
+    entity: AU14CustomEntity_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: CMSheetMetal1
+        amount: 30
+      - !type:SpawnPrototype
+        prototype: RMCCableCoil1
+        amount: 30
+      - !type:SpawnPrototype
+        prototype: CMAPCElectronics
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: RMCPowerCellHigh
+        amount: 3
+      - !type:DeleteEntity
+      steps:
+      - tool: Prying
+        doAfter: 2
+
+- type: entity
+  id: AU14CustomEntity_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+  parent: RMCSyntheticMaintenanceStation
+  suffix: AU14 Custom Construction
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+    node: target
+  - type: StructuralSupport
+    cantileverSpan: 2
+
+- type: entity
+  id: AU14CustomEntityMid_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+  parent: AU14CustomConstructionFrame
+  suffix: AU14 Custom Construction (in progress)
+  components:
+  - type: Construction
+    graph: AU14CustomGraph_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+    node: mid
+
+- type: construction
+  id: AU14Custom_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+  name: "synthetic maintenance station"
+  description: "A wall-mounted maintenance cradle for synthetic units."
+  graph: AU14CustomGraph_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+  startNode: start
+  targetNode: target
+  category: construction-category-rumc-engineering
+  spawnlist: RuMC
+  isCM: true
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
