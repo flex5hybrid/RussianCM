@@ -99,10 +99,9 @@ public sealed class CMURecruitCmuParityTest : GameTest
             entities.EventBus.RaiseEvent(EventSource.Local, spawn);
             Assert.That(spawn.SpawnResult, Is.Not.Null, $"{mapId}: native generic arrival must be usable");
             var mob = spawn.SpawnResult!.Value;
-            var skills = entities.System<SkillsSystem>();
-            Assert.That(skills.GetSkill(mob, "RMCSkillFirearms"), Is.EqualTo(1));
-            Assert.That(skills.GetSkill(mob, "RMCSkillConstruction"), Is.EqualTo(1));
-            Assert.That(skills.GetSkill(mob, "RMCSkillMedical"), Is.Zero);
+            Assert.That(entities.System<SkillsSystem>().GetSkill(mob, "RMCSkillFirearms"), Is.EqualTo(1));
+            Assert.That(entities.System<SkillsSystem>().GetSkill(mob, "RMCSkillConstruction"), Is.EqualTo(1));
+            Assert.That(entities.System<SkillsSystem>().GetSkill(mob, "RMCSkillMedical"), Is.Zero);
             Assert.That(entities.System<StationSystem>().GetOwningStation(mob), Is.EqualTo(station));
             Assert.That(entities.HasComponent<SquadMemberComponent>(mob), Is.False, "No temporary combat squad assignment");
             Assert.That(entities.System<RankSystem>().GetRank(mob)!.Paygrade, Is.EqualTo("E0"));
