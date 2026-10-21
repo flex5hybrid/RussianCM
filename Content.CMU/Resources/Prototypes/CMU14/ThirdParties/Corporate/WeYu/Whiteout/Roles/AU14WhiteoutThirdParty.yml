@@ -1,0 +1,208 @@
+- type: job
+  parent: CMJobBase
+  id: AU14JobWYWhiteoutOperative
+  roundSide: ThirdParty
+  roundForce: WY
+  roundRole: WYWhiteoutOperative
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: spp_pvt
+  - type: Skills
+    skills:
+      RMCSkillEndurance: 3
+      RMCSkillFirearms: 3
+      RMCSkillCqc: 2
+      RMCSkillConstruction: 2
+      RMCSkillEngineer: 2
+      RMCSkillPolice: 2
+  - type: JobPrefix
+    prefix: cmu-whiteout-prefix
+  - type: Language
+    spokenLanguages:
+    - English
+    - Japanese
+    understoodLanguages:
+    - English
+    - Japanese
+    currentLanguage: English
+    defaultLanguage: English
+  name: cmu-whiteout-name
+  description: cmu-whiteout-description
+  playTimeTracker: AU14JobWYWhiteoutOperative
+  ranks:
+    RMCRankCivilian: []
+  startingGear: AU14GearWYWhiteoutOperative
+  spawnMenuRoleName: WY Whiteout Operative (Third Party)
+  greeting: cmu-whiteout-greeting
+  icon: RMCJobIconPMCWhiteout
+  joinNotifyCrew: false
+  supervisors: cmu-whiteout-leader
+  accessGroups:
+  - auwy
+  hidden: false
+
+- type: entity
+  parent: AU14BaseMobSpeciesOrganicWeYu
+  id: AU14JobWYWhiteoutOperative
+  name: WY Whiteout Operative
+  components:
+  - type: GhostTakeoverAvailable
+  - type: PyroWhitelist
+  - type: GhostRoleApplySpecial
+    squad: SquadPMC
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: cmu-whiteout-name
+    description: cmu-whiteout-description
+    reregister: false
+    job: AU14JobWYWhiteoutOperative
+    raffle:
+      settings: short
+    rules: cmu-whiteout-rules
+
+- type: startingGear
+  id: AU14GearWYWhiteoutOperative
+  equipment:
+    id: CMUIDCardPMCWhiteout
+    jumpsuit: AU14UploadWhiteoutUniform
+    outerClothing: AU14UploadWhiteoutArmor
+    gloves: AU14UploadWhiteoutGauntlets
+    head: AU14UploadWhiteoutHelmet
+    shoes: AU14UploadWhiteoutGreaves
+    mask: RMCMaskCoifPMC
+    ears: RMCHeadsetDistressPMC
+    back: RMCSatchelPMC
+    belt: RMCWeaponFL3FlamerWhiteout
+    pocket1: RMCPouchMagazineLargePMC
+    pocket2: RMCPouchMagazineLargePMC
+    suitstorage: RMCWeaponRifleM54C2Whiteout
+  storage:
+    back:
+    - RMCExplosivePlastic
+    - RMCExplosivePlastic
+    - RMCExplosiveBreachingCharge
+    - RMCExplosiveBreachingCharge
+    - CMCrowbar
+    - RMCTankFlamerFL3Whiteout
+    - RMCTankFlamerFL3Whiteout
+    outerClothing:
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+    pocket1:
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+    pocket2:
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+
+- type: playTimeTracker
+  id: AU14JobWYWhiteoutOperative
+- type: job
+  parent: CMJobBase
+  id: AU14JobWYWhiteoutGunner
+  roundSide: ThirdParty
+  roundForce: WY
+  roundRole: WYWhiteoutGunner
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: spp_pvt
+  - type: Skills
+    skills:
+      RMCSkillEndurance: 3
+      RMCSkillFirearms: 3
+      RMCSkillSpecialistWeapons: 2
+      RMCSkillPolice: 2
+  - type: JobPrefix
+    prefix: cmu-whiteout-prefix-gunner
+  - type: Language
+    spokenLanguages:
+    - English
+    - Japanese
+    understoodLanguages:
+    - English
+    - Japanese
+    currentLanguage: English
+    defaultLanguage: English
+  name: cmu-whiteout-name-gunner
+  description: cmu-whiteout-description
+  playTimeTracker: AU14JobWYWhiteoutGunner
+  ranks:
+    RMCRankCivilian: []
+  startingGear: AU14GearWYWhiteoutGunner
+  spawnMenuRoleName: WY Whiteout Smartgunner (Third Party)
+  greeting: cmu-whiteout-greeting
+  icon: RMCJobIconPMCGunner
+  joinNotifyCrew: false
+  supervisors: cmu-whiteout-leader
+  accessGroups:
+  - auwy
+  hidden: false
+
+- type: entity
+  parent: AU14BaseMobSpeciesOrganicWeYu
+  id: AU14JobWYWhiteoutGunner
+  name: WY Whiteout Smartgunner
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: SquadPMC
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: cmu-whiteout-name-gunner
+    description: cmu-whiteout-description
+    reregister: false
+    job: AU14JobWYWhiteoutGunner
+    raffle:
+      settings: short
+    rules: cmu-whiteout-rules
+
+- type: startingGear
+  id: AU14GearWYWhiteoutGunner
+  equipment:
+    id: CMUIDCardPMCWhiteoutGunner
+    jumpsuit: AU14UploadWhiteoutUniform
+    outerClothing: AU14UploadWhiteoutSmartgunArmor
+    gloves: AU14UploadWhiteoutGauntlets
+    head: AU14UploadWhiteoutHelmet
+    shoes: AU14UploadWhiteoutGreaves
+    mask: RMCMaskCoifPMC
+    ears: RMCHeadsetDistressPMC
+    back: RMCSatchelPMC
+    pocket1: RMCPouchDrumPMC
+    pocket2: RMCPouchDrumPMC
+    suitstorage: RMCSmartGunWhiteOut
+  storage:
+    back:
+    - RMCExplosivePlastic
+    - RMCExplosivePlastic
+    - RMCExplosiveBreachingCharge
+    - RMCExplosiveBreachingCharge
+    - CMCrowbar
+    - RMCMagazineSmartGunirradiated
+    - RMCMagazineSmartGunirradiated
+    outerClothing:
+    - RMCMagazineSmartGunirradiated
+    - RMCMagazineSmartGunirradiated
+    pocket1:
+    - RMCMagazineSmartGunirradiated
+    - RMCMagazineSmartGunirradiated
+    - RMCMagazineSmartGunirradiated
+    pocket2:
+    - RMCMagazineSmartGunirradiated
+    - RMCMagazineSmartGunirradiated
+    - RMCMagazineSmartGunirradiated
+
+- type: playTimeTracker
+  id: AU14JobWYWhiteoutGunner

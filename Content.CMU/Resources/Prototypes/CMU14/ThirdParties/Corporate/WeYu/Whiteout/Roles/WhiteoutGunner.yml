@@ -65,11 +65,11 @@
   id: CMUGearPMCWhiteoutGunner
   equipment:
     id: CMUIDCardPMCWhiteoutGunner
-    jumpsuit: AU14UploadWhiteoutUniform
-    outerClothing: AU14UploadWhiteoutSmartgunArmor
-    gloves: AU14UploadWhiteoutGauntlets
-    head: AU14UploadWhiteoutHelmet
-    shoes: AU14UploadWhiteoutGreaves
+    jumpsuit: RMCJumpsuitVeteranPMCCommando
+    outerClothing: CMArmorM4PMCSmartGunHarnessCommando
+    gloves: RMCHandsVeteranPMCCommando
+    head: ArmorHelmetPMCCommando
+    shoes: RMCBootsPMCCommandoFilled
     mask: RMCMaskCoifPMC
     ears: RMCHeadsetDistressPMC
     back: RMCSatchelPMC
