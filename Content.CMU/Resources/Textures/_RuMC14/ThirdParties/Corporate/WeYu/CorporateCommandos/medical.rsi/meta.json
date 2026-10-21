@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "upgrade_kit"
+    },
+    {
+      "name": "upgrade_kit_e"
+    },
+    {
+      "name": "open"
+    },
+    {
+      "name": "surgical_case_elite"
+    }
+  ]
+}

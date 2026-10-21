@@ -1,0 +1,103 @@
+- type: entity
+  parent: RMCArmorM4PMCNoLight
+  id: AU14ArmorWeYaProvostMarshal
+  name: W-Y Provost Marshal Armor
+  description: Armored vest issued to Weyland-Yutani Provost Marshals.
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/armor.rsi
+  - type: CMArmor
+    melee: 30
+    bullet: 40
+    bio: 25
+    explosionArmor: 35
+  - type: RMCArmorSpeedTier
+    speedTier: light
+  - type: ClothingSpeedModifier
+    walkModifier: 0.727
+    sprintModifier: 0.727
+  - type: Storage
+    grid:
+    - 0,0,7,1
+  - type: Corrodible
+    isCorrodible: false
+
+- type: entity
+  parent: AU14ArmorWeYaProvostMarshal
+  id: AU14ArmorWeYaProvostMarshalLeader
+  name: W-Y Provost Marshal Leader Armor
+  description: Reinforced armor issued to Weyland-Yutani Provost Marshal team leaders.
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/armor_sl.rsi
+  - type: CMArmor
+    melee: 30
+    bullet: 45
+    bio: 25
+    explosionArmor: 35
+
+- type: entity
+  parent: ArmorHelmetM10
+  id: AU14HelmetWeYaProvostMarshal
+  name: W-Y Provost Marshal Helmet
+  description: Armored helmet issued to Weyland-Yutani Provost Marshals.
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/helmet.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/helmet.rsi
+  - type: Corrodible
+    isCorrodible: false
+  - type: RMCEarProtection
+  - type: CMArmor
+    melee: 30
+    bullet: 40
+    bio: 30
+    explosionArmor: 40
+  - type: ItemCamouflage
+    camouflageVariations: { }
+
+- type: entity
+  parent: AU14HelmetWeYaProvostMarshal
+  id: AU14HelmetWeYaProvostMarshalLeader
+  name: W-Y Provost Marshal Leader Helmet
+  description: Reinforced helmet issued to Weyland-Yutani Provost Marshal team leaders.
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/helmet_sl.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/helmet_sl.rsi
+
+- type: startingGear
+  id: AU14GearWeYaProvostMarshal
+  equipment:
+    id: RMCIDCardPMC
+    jumpsuit: RMCJumpsuitVeteranPMCCommandoWeYu
+    outerClothing: AU14ArmorWeYaProvostMarshal
+    head: AU14HelmetWeYaProvostMarshal
+    shoes: RMCBootsPMCFilled
+    belt: RMCBeltSecurityWeYaFilled
+    back: RMCSatchelLightpackBlack
+    ears: AU14ColonyWeylandHeadset
+    suitstorage: RMCMK80Commando
+  storage:
+    back:
+    - RMCBoxZiptie
+    - RMCFlashlight
+
+- type: startingGear
+  id: AU14GearWeYaProvostMarshalLeader
+  equipment:
+    id: RMCIDCardPMC
+    jumpsuit: RMCJumpsuitVeteranPMCCommandoWeYu
+    outerClothing: AU14ArmorWeYaProvostMarshalLeader
+    head: AU14HelmetWeYaProvostMarshalLeader
+    shoes: RMCBootsPMCFilled
+    belt: RMCBeltSecurityWeYaFilled
+    back: RMCSatchelLightpackBlack
+    ears: AU14ColonyWeylandHeadset
+    suitstorage: RMCMK80Commando
+  storage:
+    back:
+    - RMCBoxZiptie
+    - RMCFlashlight

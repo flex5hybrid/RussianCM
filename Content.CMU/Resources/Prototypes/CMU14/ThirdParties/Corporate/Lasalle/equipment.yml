@@ -1,0 +1,421 @@
+
+
+# PMC armors
+- type: entity
+  parent: [RMCBaseMarineArmor, RMCAllowSuitStorageClothingArmorPMC]
+  id: RuMCLBArmorN
+  name: M3-LB Combat Armor
+  description: A heavily modified, proprietary version of Armat Systems' M3 armor platform developed by Lasalle Bionational. Issued exclusively to operators of the corporation's Hazard Intervention Group for high-risk operations in hostile environments.
+  components:
+  - type: RMCArmorSpeedTier
+    speedTier: medium
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/armor.rsi
+  - type: CMArmor
+    melee: 20
+    bullet: 25 # CLOTHING_ARMOR_MEDIUMHIGH
+    bio: 20 # CLOTHING_ARMOR_MEDIUM
+    explosionArmor: 20 # CLOTHING_ARMOR_MEDIUM
+  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+    walkModifier: 0.725
+    sprintModifier: 0.725
+  - type: Storage
+    grid:
+    - 0,0,3,1 # 2 slots
+  - type: ItemCamouflage
+    camouflageVariations: { }
+
+- type: entity
+  parent: RMCMarineUniformBase
+  id: RuMCUniformLasalle
+  name: Lasalle Bionational Corporate Security Uniform
+  description: Armored equipment issued to Lasalle Bionational corporate security personnel.
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/uniform.rsi
+
+- type: entity
+  parent: RuMCUniformLasalle
+  id: RuMCUniformLasalleSynth
+  suffix: Webbing
+  components:
+  - type: WebbingClothing
+    startingWebbing: CMWebbingSurgicalBlue
+
+- type: entity
+  parent: [CMBaseMask, CMUBaseGasMaskFilterSlot]
+  id: RuMCGasmaskLB
+  name: LBN-4 Gas Mask
+  description: A lightweight, reinforced gas mask developed by Lasalle Bionational for security and industrial work in hazardous environments.
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/gasmask.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/gasmask.rsi
+  - type: HideLayerClothing
+    slots:
+    - HeadTop
+    - HeadSide
+    - Snout
+  - type: Tag
+    tags:
+    - GasMask
+  - type: CMArmor
+    bio: 20
+  - type: MycotoxinProtection
+    fullProtection: false
+
+- type: radioChannel
+  id: radioLB
+  name: chat-radio-command
+  keycode: "ь"
+  frequency: 4398
+  color: "#3e5f8a"
+  longRange: true
+  tower: false
+
+- type: entity
+  parent: CMEncryptionKey
+  id: RUMC14EncryptionKeyLB
+  name: LB Encryption Key
+  components:
+  - type: EncryptionKey
+    channels:
+    - radioLB
+    defaultChannel: radioLB
+  - type: Sprite
+    state: stripped_key
+
+- type: entity
+  parent: RMCHeadsetDistressWeYa
+  id: RUMC14CHeadsetDistressLB
+  name: HIG Headset
+  suffix: HIG
+  description: A specialized headset used by the HIG.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - RUMC14EncryptionKeyLB
+  - type: GrantTacMapAlert
+
+- type: npcFaction
+  id: RUMC14LB
+  name: Lasalle Bionational
+  hostile:
+  - AUWeYu
+  - RMCXeno
+  - CLF
+  - AUGoo
+  - OPFOR
+  - CMUAPE
+
+- type: entity
+  parent: ArmorHelmetM10
+  id: RuMCHelmetOperLB
+  name: HIG Combat Helmet
+  description: A fully enclosed combat helmet issued to Lasalle Bionational Hazard Intervention Group operators. Its reinforced construction and integrated visor are designed for high-risk operations in hostile environments.
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/helmet.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/helmet.rsi
+  - type: ItemCamouflage
+    camouflageVariations: {}
+
+- type: entity
+  parent: CMBootsBlack
+  id: RuMCShoesLB
+  name: HIG Combat Boots
+  description: A pair of reinforced black combat boots with distinctive blue accents, standard issue for Lasalle Bionational Hazard Intervention Group operators.
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/shoes.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/shoes.rsi
+
+- type: entity
+  parent: [RMCItemSlotM5Bayonet, RuMCShoesLB]
+  id: RuMCShoesLBFilled
+  suffix: Filled
+
+- type: entity
+  parent: AU14GlovesBase
+  id: RuMCGlovesLB
+  name: HIG Combat Gloves
+  description: A pair of reinforced black combat gloves with distinctive blue accents, standard issue for Lasalle Bionational Hazard Intervention Group operators.
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/gloves.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/gloves.rsi
+
+- type: entity
+  parent: CMArmorHelmetM11
+  id: RuMCHelmetSLLB
+  name: HIG Squad Leader Combat Helmet
+  description: A fully enclosed combat helmet issued to Lasalle Bionational response team leaders. A blue marking identifies the wearer's command status, while an integrated telemetry beacon distinguishes them from the rest of the squad.
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/helmet_sl.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/helmet_sl.rsi
+  - type: ItemCamouflage
+    camouflageVariations: {}
+
+- type: entity
+  parent: CMArmorHelmetM10Medic
+  id: RuMCHelmetMedLB
+  name: HIG Combat Helmet
+  description: A fully enclosed combat helmet issued to Lasalle Bionational Hazard Intervention Group operators. Its reinforced construction and integrated visor are designed for high-risk operations in hostile environments.
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/helmet.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/helmet.rsi
+  - type: ItemCamouflage
+    camouflageVariations: {}
+
+- type: entity
+  parent: RMCArmorHelmetM10Welding
+  id: RuMCHelmetEngiLB
+  name: HIG Technician Combat Helmet
+  description: A fully enclosed combat helmet issued to Lasalle Bionational Hazard Intervention Group technicians. Its enlarged visor improves visibility, and an integrated flip-down shield is provided for welding.
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/helmet_engi.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/helmet_engi.rsi
+  - type: ItemCamouflage
+    camouflageVariations: {}
+
+- type: entity
+  parent: RMCBaseBullet
+  id: RuMCLaserBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Heat: 30
+        Piercing: 10
+  - type: RMCProjectileDamageFalloff
+    thresholds:
+    - range: 22
+      falloff: 9999
+      ignoreModifiers: true
+    - range: 6
+      falloff: 6
+  - type: CMArmorPiercing
+    amount: 10
+  - type: RMCProjectileAccuracy
+    accuracy: 100
+    thresholds:
+    - range: 6
+      falloff: 6
+
+- type: entity
+  parent: CMCartridgeSMGBase
+  id: RuMCCartridgeLaserSMG
+  name: Handful of AP Laser Rounds (9x19mm)
+  description: A 9×19mm cartridge for submachine guns.
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - RuMCCartridgeLaserSMG
+  - type: CartridgeAmmo
+    proto: RuMCLaserBullet
+
+- type: Tag
+  id: RuMCMagazineSMGM36
+
+- type: Tag
+  id: RuMCCartridgeLaserSMG
+
+- type: entity
+  parent: CMMagazineRifleBase
+  id: RuMCMagazineSMGM36
+  name: A-M36 Power Cell
+  description: A high-capacity disposable power cell designed for the experimental A-M36.
+  components:
+  - type: Tag
+    tags:
+    - CMMagazineSmg
+    - RuMCMagazineSMGM36
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - RuMCCartridgeLaserSMG
+    proto: RuMCCartridgeLaserSMG
+    capacity: 40
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/magazine.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+    zeroOnlyOnEmpty: true
+  - type: Appearance
+
+- type: entity
+  parent: CMBaseWeaponSMG
+  name: A-M36 Prototype
+  id: WeaponSMGM36
+  description: An experimental directed-energy submachine gun developed for Lasalle Bionational Corporate Security. Issued to high-threat response teams and select elite operators, its powerful laser pulses can ignite organic targets.
+  suffix: Filled
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/m36.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/m36.rsi
+  - type: Gun
+    shotsPerBurst: 3
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_m63.ogg
+  - type: RMCSelectiveFire
+    baseFireModes:
+    - SemiAuto
+    - Burst
+    - FullAuto
+    recoilWielded: 0.1
+    recoilUnwielded: 5
+    scatterWielded: 10
+    scatterUnwielded: 15
+    baseFireRate: 6.67
+    burstScatterMult: 5
+    modifiers:
+      Burst:
+        fireDelay: 0.0999
+        maxScatterModifier: 10
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 6
+      FullAuto:
+        maxScatterModifier: 2.75
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+  - type: RMCWeaponAccuracy
+    accuracyMultiplier: 1.2
+    accuracyMultiplierUnwielded: 0.8
+  - type: MagazineAmmoProvider
+    autoEject: true
+    soundAutoEject: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: RuMCMagazineSMGM36
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - RuMCMagazineSMGM36
+  - type: AttachableHolder
+    randomAttachmentChance: 0.1
+    slots:
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentRecoilCompensator
+          - RMCAttachmentExtendedCompensator
+          - RMCAttachmentSuppressor
+          - RMCAttachmentSuppressorCompact
+          - RMCM5Bayonet
+      rmc-aslot-rail:
+        startingAttachable: RMCAttachmentS5MicroRedDotSight
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentMagneticHarness
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS5MicroRedDotSight
+          - RMCAttachmentS6ReflexSight
+          - RMCAttachmentS42xTelescopicMiniscope
+      rmc-aslot-underbarrel:
+        startingAttachable: RMCAttachmentLaserSight
+        whitelist:
+          tags:
+          - RMCAttachmentFlashlightGrip
+          - RMCAttachmentGyroscopicStabilizer
+          - RMCAttachmentLaserSight
+          - RMCAttachmentBipod
+          - RMCAttachmentExtinguisher
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-barrel: 0.74, 0.1
+      rmc-aslot-rail: 0.002, 0.1
+      rmc-aslot-underbarrel: 0.35, -0.321
+  - type: GunDamageModifier
+    multiplier: 1
+    
+
+- type: rank
+  id: RUMC14RankHIGTeamLead
+  name: HIG Squad Leader
+  prefix: SL
+  paygrade: HIG-LB3
+
+- type: rank
+  id: RUMC14RankHIGSpecialist
+  name: HIG Specialist
+  prefix: Spec.
+  paygrade: HIG-LB2
+
+- type: rank
+  id: RUMC14RankHIGTrooper
+  name: HIG Operative
+  prefix: Op.
+  paygrade: HIG-LB1
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RUMC14JobIconHIGSL
+  icon:
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/icons.rsi
+    state: leader
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RUMC14JobIconHIGCorpsman
+  icon:
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/icons.rsi
+    state: medic
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RUMC14JobIconHIGSynth
+  icon:
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/icons.rsi
+    state: synth
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RUMC14JobIconHIGComTech
+  icon:
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/icons.rsi
+    state: engi
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RUMC14JobIconHIGOper
+  icon:
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/Lasalle/icons.rsi
+    state: merc

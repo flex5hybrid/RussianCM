@@ -1,0 +1,60 @@
+- type: entity
+  parent: CMArmorM4PMCCommando
+  id: AU14UploadWhiteoutArmor
+  name: Whiteout M7X Apesuit
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/Whiteout/armor.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/Whiteout/armor.rsi
+
+- type: entity
+  parent: CMArmorM4PMCSmartGunHarnessCommando
+  id: AU14UploadWhiteoutSmartgunArmor
+  name: Whiteout M7X smartgunner Apesuit
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/Whiteout/armor.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/Whiteout/armor.rsi
+
+- type: entity
+  parent: ArmorHelmetPMCCommando
+  id: AU14UploadWhiteoutHelmet
+  name: Whiteout M7X helmet
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/Whiteout/helmet.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/Whiteout/helmet.rsi
+    equippedPrefix: off
+
+- type: entity
+  parent: RMCJumpsuitVeteranPMCCommando
+  id: AU14UploadWhiteoutUniform
+  name: Whiteout android combat uniform
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/Whiteout/uniform.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/Whiteout/uniform.rsi
+
+- type: entity
+  parent: RMCHandsVeteranPMCCommando
+  id: AU14UploadWhiteoutGauntlets
+  name: Whiteout M7X gauntlets
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/Whiteout/gauntlets.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/Whiteout/gauntlets.rsi
+
+- type: entity
+  parent: RMCBootsPMCCommandoFilled
+  id: AU14UploadWhiteoutGreaves
+  name: Whiteout M7X greaves
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/Whiteout/greaves.rsi
+  - type: Clothing
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/Whiteout/greaves.rsi

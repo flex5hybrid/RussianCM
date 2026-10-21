@@ -1,0 +1,168 @@
+- type: playTimeTracker
+  id: AU14JobWeYaProvostMarshal
+  isHumanoid: true
+
+- type: playTimeTracker
+  id: AU14JobWeYaProvostMarshalLeader
+  isHumanoid: true
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: AU14JobIconWeYaProvostMarshal
+  icon:
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/icons.rsi
+    state: pmc_mp
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: AU14JobIconWeYaProvostMarshalLeader
+  icon:
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/icons.rsi
+    state: pmc_inv
+
+- type: job
+  parent: CMJobBase
+  id: AU14JobWeYaProvostMarshal
+  roundSide: ThirdParty
+  roundForce: WY
+  roundProfiles:
+  - AU14RoundJobProfileThirdParty
+  roundRole: WYProvostMarshal
+  roundComponents:
+  - type: Skills
+    skills:
+      RMCSkillCqc: 2
+      RMCSkillEndurance: 3
+      RMCSkillFirearms: 2
+      RMCSkillFireman: 2
+      RMCSkillIntel: 2
+      RMCSkillPolice: 3
+  - type: JobPrefix
+    prefix: au14-job-prefix-wy-provost-marshal
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/cm_job_icons.rsi
+      state: weya_goon_standard
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - SquadPMC
+  name: au14-job-name-wy-provost-marshal
+  description: au14-job-description-wy-provost-marshal
+  playTimeTracker: AU14JobWeYaProvostMarshal
+  startingGear: AU14GearWeYaProvostMarshal
+  icon: AU14JobIconWeYaProvostMarshal
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-wy
+  spawnMenuRoleName: au14-spawn-role-name-wy-provost-marshal
+  accessGroups:
+  - auwy
+  - AUPrisonStaff
+
+- type: job
+  parent: AU14JobWeYaProvostMarshal
+  id: AU14JobWeYaProvostMarshalLeader
+  roundRole: WYProvostMarshalLeader
+  roundComponents:
+  - type: Skills
+    skills:
+      RMCSkillCqc: 2
+      RMCSkillEndurance: 3
+      RMCSkillFirearms: 2
+      RMCSkillFireman: 2
+      RMCSkillIntel: 2
+      RMCSkillLeadership: 2
+      RMCSkillPolice: 3
+  - type: JobPrefix
+    prefix: au14-job-prefix-wy-provost-marshal-leader
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/cm_job_icons.rsi
+      state: weya_goon_standard
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - SquadPMC
+  name: au14-job-name-wy-provost-marshal-leader
+  description: au14-job-description-wy-provost-marshal
+  playTimeTracker: AU14JobWeYaProvostMarshalLeader
+  startingGear: AU14GearWeYaProvostMarshalLeader
+  icon: AU14JobIconWeYaProvostMarshalLeader
+  spawnMenuRoleName: au14-spawn-role-name-wy-provost-marshal-leader
+
+- type: entity
+  id: AU14SpawnPointWeYaProvostMarshal
+  parent: CMSpawnPointJobBase
+  name: W-Y Provost Marshal spawn point
+  components:
+  - type: SpawnPoint
+    job_id: AU14JobWeYaProvostMarshal
+  - type: Sprite
+    state: syn_spawn
+
+- type: entity
+  id: AU14SpawnPointWeYaProvostMarshalLeader
+  parent: CMSpawnPointJobBase
+  name: W-Y Provost Marshal Leader spawn point
+  components:
+  - type: SpawnPoint
+    job_id: AU14JobWeYaProvostMarshalLeader
+  - type: Sprite
+    state: syn_spawn
+- type: entity
+  id: AU14RandomHumanoidWeYaProvostMarshal
+  name: W-Y Provost Marshal
+  suffix: Ghost
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/icons.rsi
+    state: pmc_mp
+  - type: RandomHumanoidSpawner
+    settings: AU14WYProvostMarshal
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: AU14WYProvostMarshal
+  components:
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: au14-job-name-wy-provost-marshal
+    description: au14-job-description-wy-provost-marshal
+    rules: au14-ghost-role-information-wy-provost-rules
+    reregister: false
+    job: AU14JobWeYaProvostMarshal
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+    squad: SquadPMC
+
+- type: entity
+  id: AU14RandomHumanoidWeYaProvostMarshalLeader
+  name: W-Y Provost Marshal Leader
+  suffix: Ghost
+  components:
+  - type: Sprite
+    sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/icons.rsi
+    state: pmc_inv
+  - type: RandomHumanoidSpawner
+    settings: AU14WYProvostMarshalLeader
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: AU14WYProvostMarshalLeader
+  components:
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: au14-job-name-wy-provost-marshal-leader
+    description: au14-job-description-wy-provost-marshal
+    rules: au14-ghost-role-information-wy-provost-rules
+    reregister: false
+    job: AU14JobWeYaProvostMarshalLeader
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+    squad: SquadPMC

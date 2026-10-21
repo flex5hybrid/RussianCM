@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "CM-SS13 development team; converted from CM-SS13 DMI assets",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "visor-on",
+      "directions": 4
+    },
+    {
+      "name": "off-equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "equipped-HELMET-reptilian",
+      "directions": 4
+    },
+    {
+      "name": "equipped-HELMET-vulpkanin",
+      "directions": 4
+    },
+    {
+      "name": "equipped-HELMET-feroxi",
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET-reptilian",
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET-vulpkanin",
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET-feroxi",
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "icon-flash"
+    }
+  ]
+}

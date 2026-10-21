@@ -1,0 +1,105 @@
+- type: entity
+  parent: CMBaseMask
+  id: CMMaskTrans
+  name: Weyland-Yutani Universal Translator
+  description: An experimental mask with an integrated translator.
+  components:
+  - type: IdentityBlocker
+    coverage: MOUTH
+  - type: Sprite
+    sprite: Clothing/Mask/gassecurity.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/gassecurity.rsi
+  - type: Item
+    storedRotation: -90
+  - type: Tag
+    tags:
+    - TransMask
+  - type: TranslatorDevice
+    spokenLanguages:
+      - English
+      - Xeno
+      - Yautja
+      - Legalese
+      - Spanish
+      - Portuguese
+      - French
+      - German
+      - Russian
+      - Japanese
+      - Mandarin
+      - Arcturian
+      - Korean
+      - Turkish
+      - Swahili
+      - Arabic
+      - Afrikaans
+      - Latin
+      - Ukrainian
+      - Polish
+      - Czech
+      - Italian
+      - Irish
+      - Finnish
+      - Hungarian
+      - Albanian
+      - Serbian
+      - Lithuanian
+      - Dutch
+      - Persian
+      - Hindi
+      - Vietnamese
+      - Indonesian
+      - Filipino
+      - Urdu
+      - Yoruba
+      - Esperanto
+      - Swedish
+      - Brazilian
+      - Slovak
+      - Romanian
+    understoodLanguages:
+      - English
+      - Xeno
+      - Yautja
+      - Legalese
+      - Spanish
+      - Portuguese
+      - French
+      - German
+      - Russian
+      - Japanese
+      - Mandarin
+      - Arcturian
+      - Korean
+      - Turkish
+      - Swahili
+      - Arabic
+      - Afrikaans
+      - Latin
+      - Ukrainian
+      - Polish
+      - Czech
+      - Italian
+      - Irish
+      - Finnish
+      - Hungarian
+      - Albanian
+      - Serbian
+      - Lithuanian
+      - Dutch
+      - Persian
+      - Hindi
+      - Vietnamese
+      - Indonesian
+      - Filipino
+      - Urdu
+      - Yoruba
+      - Esperanto
+      - Swedish
+      - Brazilian
+      - Slovak
+      - Romanian
+
+- type: Tag
+  id: TransMask
