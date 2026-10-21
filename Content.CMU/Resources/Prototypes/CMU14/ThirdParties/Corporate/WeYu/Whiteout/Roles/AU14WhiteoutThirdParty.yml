@@ -11,12 +11,44 @@
       state: spp_pvt
   - type: Skills
     skills:
-      RMCSkillEndurance: 3
+      RMCSkillCqc: 5
+      RMCSkillLeadership: 3
+      RMCSkillEndurance: 5
+      RMCSkillEngineer: 4
+      RMCSkillConstruction: 3
       RMCSkillFirearms: 3
-      RMCSkillCqc: 2
-      RMCSkillConstruction: 2
-      RMCSkillEngineer: 2
+      RMCSkillOverwatch: 1
+      RMCSkillMedical: 4
+      RMCSkillSurgery: 3
+      RMCSkillResearch: 1
+      RMCSkillMeleeWeapons: 2
+      RMCSkillPilot: 2
       RMCSkillPolice: 2
+      RMCSkillFireman: 5
+      RMCSkillPowerLoader: 2
+      RMCSkillVehicles: 3
+      RMCSkillJtac: 4
+      RMCSkillIntel: 2
+      RMCSkillDomestics: 2
+      RMCSkillNavigations: 1
+      RMCSkillExecution: 1
+      RMCSkillSmartGun: 1
+  - type: Synth
+    canUseGuns: true
+  - type: CMArmor
+    immuneToAP: true
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/_RMC14/Weapons/synthpunch1.ogg
+      params:
+        variation: 0.15
+        volume: -1
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 35
   - type: JobPrefix
     prefix: cmu-whiteout-prefix
   - type: Language
@@ -30,6 +62,7 @@
     defaultLanguage: English
   name: cmu-whiteout-name
   description: cmu-whiteout-description
+  isSynthetic: true
   playTimeTracker: AU14JobWYWhiteoutOperative
   ranks:
     RMCRankCivilian: []
@@ -67,7 +100,7 @@
 - type: startingGear
   id: AU14GearWYWhiteoutOperative
   equipment:
-    id: CMUIDCardPMCWhiteout
+    id: AU14IDCardWYWhiteoutOperative
     jumpsuit: AU14UploadWhiteoutUniform
     outerClothing: AU14UploadWhiteoutArmor
     gloves: AU14UploadWhiteoutGauntlets
@@ -118,10 +151,44 @@
       state: spp_pvt
   - type: Skills
     skills:
-      RMCSkillEndurance: 3
+      RMCSkillCqc: 5
+      RMCSkillLeadership: 3
+      RMCSkillEndurance: 5
+      RMCSkillEngineer: 4
+      RMCSkillConstruction: 3
       RMCSkillFirearms: 3
-      RMCSkillSpecialistWeapons: 2
+      RMCSkillOverwatch: 1
+      RMCSkillMedical: 4
+      RMCSkillSurgery: 3
+      RMCSkillResearch: 1
+      RMCSkillMeleeWeapons: 2
+      RMCSkillPilot: 2
       RMCSkillPolice: 2
+      RMCSkillFireman: 5
+      RMCSkillPowerLoader: 2
+      RMCSkillVehicles: 3
+      RMCSkillJtac: 4
+      RMCSkillIntel: 2
+      RMCSkillDomestics: 2
+      RMCSkillNavigations: 1
+      RMCSkillExecution: 1
+      RMCSkillSmartGun: 1
+  - type: Synth
+    canUseGuns: true
+  - type: CMArmor
+    immuneToAP: true
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/_RMC14/Weapons/synthpunch1.ogg
+      params:
+        variation: 0.15
+        volume: -1
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 35
   - type: JobPrefix
     prefix: cmu-whiteout-prefix-gunner
   - type: Language
@@ -135,6 +202,7 @@
     defaultLanguage: English
   name: cmu-whiteout-name-gunner
   description: cmu-whiteout-description
+  isSynthetic: true
   playTimeTracker: AU14JobWYWhiteoutGunner
   ranks:
     RMCRankCivilian: []
@@ -171,7 +239,7 @@
 - type: startingGear
   id: AU14GearWYWhiteoutGunner
   equipment:
-    id: CMUIDCardPMCWhiteoutGunner
+    id: AU14IDCardWYWhiteoutGunner
     jumpsuit: AU14UploadWhiteoutUniform
     outerClothing: AU14UploadWhiteoutSmartgunArmor
     gloves: AU14UploadWhiteoutGauntlets

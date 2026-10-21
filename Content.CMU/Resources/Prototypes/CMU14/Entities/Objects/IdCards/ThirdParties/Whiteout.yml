@@ -1,6 +1,30 @@
 - type: entity
   parent: CMIDCardBase
   categories: [ HideSpawnMenu ]
+  id: AU14IDCardWYWhiteoutOperative
+  name: WY whiteout operative ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobWYWhiteoutOperative
+  - type: ItemIFF
+    factions:
+    - FactionWEYU
+
+- type: entity
+  parent: CMIDCardBase
+  categories: [ HideSpawnMenu ]
+  id: AU14IDCardWYWhiteoutGunner
+  name: WY whiteout smartgunner ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobWYWhiteoutGunner
+  - type: ItemIFF
+    factions:
+    - FactionWEYU
+
+- type: entity
+  parent: CMIDCardBase
+  categories: [ HideSpawnMenu ]
   id: CMUIDCardPMCWhiteout
   name: WY whiteout operative ID card
   components:
