@@ -27,3 +27,19 @@
 
 - type: Tag
   id: AU14MastAntennaHead
+
+
+- type: Tag
+  id: AU14PartCapacitor
+
+- type: Tag
+  id: AU14PartScanningModule
+
+- type: Tag
+  id: AU14PartManipulator
+
+- type: Tag
+  id: AU14PartMicroLaser
+
+- type: Tag
+  id: AU14PartMatterBin
