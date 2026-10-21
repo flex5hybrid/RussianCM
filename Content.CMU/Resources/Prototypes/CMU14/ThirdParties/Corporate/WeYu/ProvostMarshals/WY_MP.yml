@@ -1,0 +1,348 @@
+
+- type: startingGear
+  id: AU14GearWYPMCPartyMedicMP
+  equipment:
+    id: AU14IDCardColonyCorporateLiaison
+    outerClothing: AU14ArmorWeYaProvostMarshal
+    jumpsuit: CMJumpsuitVeteranPMCCommandoWeYu
+    shoes: RMCBootsPMCFilled
+    eyes: RMCGlassesMedicalHUDGlasses
+    head: AU14WYPMCBallCap
+    mask: RMCMaskCoifPMC
+    gloves: RMCHandsVeteranPMC
+    belt: RMCBeltMedicBagPMC
+    pocket1: RMCPouchMagazineLargePMC
+    pocket2: RMCPouchMedkitPMCFilled
+    back: RMCSatchelLightpackWeYa
+    ears: RMCHeadsetDistressWeYa
+    suitstorage: RMCWeaponSMGM63B2
+  storage:
+    outerClothing:
+    - CMMagazineSMGM63AP
+    - CMMagazineSMGM63AP
+    belt:
+    - CMUpgradedTraumaKit10
+    - CMUpgradedTraumaKit10
+    - CMUpgradedBurnKit10
+    - CMUpgradedBurnKit10
+    - CMEpinephrineAutoInjector
+    - CMDexalinPlusAutoInjector
+    - AU14OxycodoneAutoInjector
+    - CMPillCanisterBicaridine
+    - CMPillCanisterDexalin
+    - CMPillCanisterDylovene
+    - CMPillCanisterInaprovaline
+    - AU14PillCanisterTramadol
+    - AU14PillCanisterOxycodone
+    - AU14PillCanisterParacetamol
+    - CMUSplintItem
+    - CMHealthAnalyzer
+    - AU14PillCanisterImidazoline
+    pocket1:
+    - CMMagazineSMGM63AP
+    - CMMagazineSMGM63AP
+    - CMMagazineSMGM63AP
+    - CMMagazineSMGM63AP
+    back:
+    - AU14CMDefibrillator
+    - CMStunbaton
+    - RMCTacticalPrybar
+    - RMCUniversalRecorder
+    - CMMagazineSMGM63AP
+    - CMMaskGas
+  inhand:
+  - CMUGasMaskFilterWY
+
+- type: job
+  parent: CMJobBase
+  id: AU14JobWYPMCPartyMedicMP
+  roundSide: ThirdParty
+  roundForce: WY
+  roundRole: WYPMCPartyMedic
+  roundComponents:
+  - type: NpcFactionMember
+    factions:
+    - AUWeYu
+  - type: Skills
+    skills:
+      RMCSkillEndurance: 3
+      RMCSkillFirearms: 2
+      RMCSkillFireman: 2
+      RMCSkillMedical: 2
+      RMCSkillConstruction: 2
+      RMCSkillEngineer: 2
+      RMCSkillPolice: 2
+      RMCSkillSurgery: 1
+      RMCSkillCqc: 1
+      RMCSkillResearch: 1
+  - type: JobPrefix
+    prefix: au14-job-prefix-AU14JobGOVFORPlatoonCorpsmanWYPMC
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: synth
+
+  name: au14-job-name-wy-medical-investigator
+  description: au14-pmcparty-description
+  playTimeTracker: AU14JobWYPMCPartyMedicMP
+  ranks:
+    AU14RankWeYuEnforcerSenior: []
+  spawnMenuRoleName: au14-spawn-role-name-wy-medical-investigator
+  startingGear: AU14GearWYPMCPartyMedicMP
+  greeting: au14-pmcparty-greeting
+  icon: "AU14JobIconWeYaProvostMarshal"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-wy
+  accessGroups:
+  - auwy
+  - AUPrisonStaff
+  hidden: false
+
+- type: entity
+  parent: AU14BaseMobSpeciesOrganicWeYu
+  id: AU14JobWYPMCPartyMedicMP
+  name: au14-job-name-wy-medical-investigator
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: SquadPMC
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: au14-job-name-wy-medical-investigator
+    description: au14-pmcparty-description
+    reregister: false
+    job: AU14JobWYPMCPartyMedicMP
+    raffle:
+      settings: short
+    rules: au14-wy-inspector-rules
+
+- type: playTimeTracker
+  id: AU14JobWYPMCPartyMedicMP
+
+- type: startingGear
+  id: AU14GearWYPMCPartyLeaderMP
+  equipment:
+    id: AU14IDCardColonyCorporateLiaison
+    outerClothing: AU14ArmorWeYaProvostMarshalLeader
+    jumpsuit: CMJumpsuitVeteranPMCCommandoWeYu
+    shoes: RMCBootsPMCFilled
+    mask: RMCMaskCoifPMC
+    eyes: RMCGlassesMedicalHUDGlasses
+    head: AU14WYPMCBallCap
+    gloves: RMCHandsVeteranPMC
+    belt: RMCBeltHolsterPistolWeYaMK80Fill
+    pocket1: RMCPouchMagazineLargePMC
+    pocket2: RMCPouchAutoinjector
+    back: RMCSatchelLightpackWeYa
+    ears: RMCHeadsetDistressWeYa
+    suitstorage: RMCWeaponRifleM54C2
+  storage:
+    outerClothing:
+    - CMMagazineRifleM54CAP
+    - CMMagazineRifleM54CAP
+    pocket1:
+    - CMMagazineRifleM54CAP
+    - CMMagazineRifleM54CAP
+    - CMMagazineRifleM54CAP
+    - CMMagazineRifleM54CAP
+    pocket2:
+    - CMBicaridineAutoInjector
+    - CMBicaridineAutoInjector
+    - CMKelotaneAutoInjector
+    - CMKelotaneAutoInjector
+    - AU14TramadolAutoInjector
+    - AU14TramadolAutoInjector
+    - CMEmergencyAutoInjector
+    back:
+    - CMStunbaton
+    - RMCTacticalPrybar
+    - RMCUniversalRecorder
+    - RMCMREWeYaPMC
+    - RMCExplosivePlastic
+    - RMCRangefinder
+    - CMMaskGas
+  inhand:
+  - CMUGasMaskFilterWY
+
+- type: job
+  parent: CMJobBase
+  id: AU14JobWYPMCPartyLeaderMP
+  roundSide: ThirdParty
+  roundForce: WY
+  roundRole: WYPMCPartyLeader
+  roundComponents:
+  - type: NpcFactionMember
+    factions:
+    - AUWeYu
+  - type: Skills
+    skills:
+      RMCSkillConstruction: 2
+      RMCSkillCqc: 2
+      RMCSkillEndurance: 3
+      RMCSkillEngineer: 2
+      RMCSkillFirearms: 2
+      RMCSkillFireman: 2
+      RMCSkillIntel: 1
+      RMCSkillJtac: 2
+      RMCSkillLeadership: 1
+      RMCSkillMedical: 1
+      RMCSkillVehicles: 1
+      RMCSkillPolice: 2
+      RMCSkillResearch: 1
+      RMCSkillOverwatch: 1
+  - type: JobPrefix
+    prefix: au14-job-prefix-AU14JobGOVFORSectionSergeantWYPMC
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: synth
+  - type: MarineOrders
+
+  name: au14-job-name-wy-lead-investigator
+  description: au14-pmcparty-description
+  playTimeTracker: AU14JobWYPMCPartyLeaderMP
+  ranks:
+    AU14RankWeYuEnforcerLead: []
+  spawnMenuRoleName: au14-spawn-role-name-wy-lead-investigator
+  startingGear: AU14GearWYPMCPartyLeaderMP
+  greeting: au14-pmcparty-greeting
+  icon: "AU14JobIconWeYaProvostMarshalLeader"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-wy
+  accessGroups:
+  - auwy
+  - AUPrisonStaff
+  hidden: false
+
+- type: entity
+  parent: AU14BaseMobSpeciesOrganicWeYu
+  id: AU14JobWYPMCPartyLeaderMP
+  name: au14-job-name-wy-lead-investigator
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: SquadPMC
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: au14-job-name-wy-lead-investigator
+    description: au14-pmcparty-description
+    reregister: false
+    job: AU14JobWYPMCPartyLeaderMP
+    raffle:
+      settings: short
+    rules: au14-wy-inspector-rules
+
+- type: playTimeTracker
+  id: AU14JobWYPMCPartyLeaderMP
+
+- type: startingGear
+  id: AU14GearWYPMCPartyMP
+  equipment:
+    id: AU14IDCardColonyCorporateLiaison
+    outerClothing: AU14ArmorWeYaProvostMarshal
+    jumpsuit: CMJumpsuitVeteranPMCCommandoWeYu
+    shoes: RMCBootsPMCFilled
+    eyes: CMGlassesSecurity
+    head: AU14WYPMCBallCap
+    mask: RMCMaskCoifPMC
+    gloves: RMCHandsVeteranPMC
+    belt: RMCBeltHolsterPistolPMC
+    pocket1: RMCPouchMagazineLargePMC
+    pocket2: AU14PouchIFAKFill
+    back: RMCSatchelLightpackWeYa
+    ears: RMCHeadsetDistressWeYa
+    suitstorage: RMCWeaponRifleM54CWhiteNoLock
+  storage:
+    outerClothing:
+    - CMMagazineRifleM54CAP
+    - CMU14TearGasGrenade
+    pocket1:
+    - CMMagazineRifleM54CAP
+    - CMMagazineRifleM54CAP
+    - CMMagazineRifleM54CAP
+    - CMMagazineRifleM54CAP
+    back:
+    - CMStunbaton
+    - RMCTacticalPrybar
+    - RMCMREWeYaPMC
+    - RMCBoxZiptie
+    - RMCWeaponTaser
+    - CMMaskGas
+    - CMUGasMaskFilterWY
+    belt:
+    - RMCWeaponPistolPK7
+    - RMCMagazinePistolPK7
+    - RMCMagazinePistolPK7
+    - RMCMagazinePistolPK7
+    - RMCMagazinePistolPK7
+    - RMCMagazinePistolPK7
+    - RMCMagazinePistolPK7
+
+- type: job
+  parent: CMJobBase
+  id: AU14JobWYPMCPartyMP
+  roundSide: ThirdParty
+  roundForce: WY
+  roundRole: WYPMCPartySmartgunner
+  roundComponents:
+  - type: NpcFactionMember
+    factions:
+    - AUWeYu
+  - type: Skills
+    skills:
+      RMCSkillCqc: 1
+      RMCSkillEndurance: 3
+      RMCSkillFirearms: 2
+      RMCSkillFireman: 2
+      RMCSkillConstruction: 2
+      RMCSkillEngineer: 2
+      RMCSkillPolice: 2
+  - type: JobPrefix
+    prefix: au14-job-prefix-AU14JobGOVFORSquadRiflemanWYPMC
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: smartgunner
+
+  name: au14-job-name-wy-enforcer
+  description: au14-pmcparty-description
+  playTimeTracker: AU14JobWYPMCPartyMP
+  ranks:
+    AU14RankWeYuEnforcer: []
+  spawnMenuRoleName: au14-spawn-role-name-wy-enforcer
+  startingGear: AU14GearWYPMCPartyMP
+  greeting: au14-pmcparty-greeting
+  icon: "AU14JobIconWeYaProvostMarshal"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-wy
+  accessGroups:
+  - auwy
+  - AUPrisonStaff
+  hidden: false
+
+- type: entity
+  parent: AU14BaseMobSpeciesOrganicWeYu
+  id: AU14JobWYPMCPartyMP
+  name: au14-job-name-wy-enforcer
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: SquadPMC
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: au14-job-name-wy-enforcer
+    description: au14-pmcparty-description
+    reregister: false
+    job: AU14JobWYPMCPartyMP
+    raffle:
+      settings: short
+    rules: au14-wy-inspector-rules
+
+- type: playTimeTracker
+  id: AU14JobWYPMCPartyMP

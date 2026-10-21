@@ -1,10 +1,12 @@
 - type: partySpawn
   id: WYPMCWhiteoutSpawn
   leadersToSpawn:
-    AU14JobWYWhiteoutOperative: 1
+    CMUJobPMCWhiteout: 1
   gruntsToSpawn:
-    AU14JobWYWhiteoutGunner: 1
+    CMUJobPMCWhiteoutGunner: 1
     CMUJobPMCSynthetic: 1
+    AU14JobWYWhiteoutGunner: 1
+    AU14JobWYWhiteoutOperative: 1
   scalewithpop: false
   spawnTogether: true
 

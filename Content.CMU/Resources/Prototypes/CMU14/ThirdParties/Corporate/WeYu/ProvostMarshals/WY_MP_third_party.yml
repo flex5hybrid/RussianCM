@@ -1,0 +1,21 @@
+- type: partySpawn
+  id: WYInspectorsMPSpawn
+  leadersToSpawn:
+    AU14JobWYPMCPartyLeaderMP: 1
+  gruntsToSpawn:
+    AU14JobWYPMCPartyMedicMP: 1
+    AU14JobWYPMCPartyMP: 2
+  scalewithpop: false
+  spawnTogether: true
+
+- type: thirdParty
+  id: WYInspectorsMP
+  announceAsSurvivors: true
+  partyspawn: WYInspectorsMPSpawn
+  entrymethod: shuttle
+  dropshippath: /Maps/CMU14/Vehicles/Dropships/rmc_ert_pmc_shuttle.yml
+  weight: 15
+  minplayers: 30
+  maxplayers: 400
+  ghostsNeeded: 4
+  roundstart: false
