@@ -53,15 +53,16 @@ both databases, and transfer only the `rucm_training` schema into the existing g
 using PostgreSQL backup/restore tools before restarting. If that schema already exists in the
 destination, review the records and resolve conflicts before importing; never overwrite it blindly.
 
-Qualifications enforce role access only for GOVFOR in **Insurgency**. Lobby mode votes use
+General qualification gates enforce role access for GOVFOR in **Insurgency**. Lobby mode votes use
 `AuRoundSystem.SelectedPreset`; an active round uses `GameTicker.CurrentPreset` first. Other modes
-restore the original role requirements and configured `game.role_timer_override`.
+restore the original requirements for ordinary roles. The three GOVFOR Drill Instructor variants
+always require Sergeant plus active Instructor Accreditation, with no separate job whitelist.
 Defaults are enabled/enforce/fail-closed. Existing explicit settings continue to take precedence:
 `enabled=false` is Disabled, `enabled=true,enforce=false` is Warn. Disabled/Warn retain the original
 timers. Enforce uses `JobRequirementOverridePrototype` to replace only Overall/Role/Department timer
-requirements for enabled qualification roles. Age/traits, bans and allegiance remain intact. Whitelists
-remain intact except for the three GOVFOR Drill Instructor roles: Enforce replaces their old role
-whitelist with Sergeant plus active Instructor Accreditation on both client and server.
+requirements for enabled qualification roles. Age/traits, bans and allegiance remain intact. Whitelists remain intact for all other jobs. The three GOVFOR Drill Instructor roles have no
+independent role whitelist: Sergeant plus active Instructor Accreditation is required server-side
+for every mode, even when the general qualifications gate is disabled.
 Storage failures deny admission when no player cache exists, with a Critical/Fatal log; `fail_open=true`
 explicitly enables fail-open for ordinary qualification roles. Drill Instructor always requires positive
 Sergeant/accreditation evidence, including with fail-open enabled. Last-loaded records remain effective. Failed mutations do not publish cache
@@ -88,7 +89,7 @@ Platoon Advisor is displayed as **Drill Instructor / Сержант-инстру
 IDs (`AU14JobGOVFORadvisor`, `...RMC`, `...UPP`); IDs, preferences, gear and ranks stay
 compatible. In Enforce, those roles require at least Sergeant and active Instructor Accreditation.
 Revoking accreditation immediately denies further admission; holding the job never creates accreditation.
-Their old whitelist returns when the gate is disabled or outside Insurgency. A one-time audited additive upgrade enables
+Their job whitelist is permanently removed; outside Insurgency the ordinary non-time role requirements remain in force, alongside the instructor accreditation gate. A one-time audited additive upgrade enables
 their default role requirements in existing stores unless management has explicitly edited that role.
 Holding the role allows browsing; certification still requires explicit instructor accreditation.
 Every loaded job with `isSynthetic=true` is excluded from human qualification admission, participation,

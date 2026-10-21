@@ -14004,25 +14004,6 @@ Entries:
   id: 811
   time: '2026-10-15T13:10:06.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2179
-- author: '- add: Перенесены новые возможности и исправления CMU по состоянию на 16
-    октября.'
-  time: '2026-10-16T06:28:56Z'
-  changes:
-  - type: Remove
-    message: Удалён радиоканал Mob Family.
-  - type: Fix
-    message: Сохранена совместимость локальных настроек TTS и русских медицинских
-      руководств с обновлениями CMU.
-  id: 843
-  url: https://github.com/flex5hybrid/RussianCM/pull/525
-  labels:
-  - 'Changes: UI'
-  - 'Changes: Sprites'
-  - 'Changes: Map'
-  - 'Changes: Audio'
-  - 'Changes: Translations'
-  - 'Changes: Shaders'
-  - XL
 - author: TheHellFireo
   changes:
   - message: Reapers can spend 500 flesh to reanimate a recently dead hive sister
@@ -14052,6 +14033,25 @@ Entries:
   id: 846
   time: '2026-10-15T17:48:34.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2185
+- author: '- add: Перенесены новые возможности и исправления CMU по состоянию на 16
+    октября.'
+  time: '2026-10-16T06:28:56Z'
+  changes:
+  - type: Remove
+    message: Удалён радиоканал Mob Family.
+  - type: Fix
+    message: Сохранена совместимость локальных настроек TTS и русских медицинских
+      руководств с обновлениями CMU.
+  id: 843
+  url: https://github.com/flex5hybrid/RussianCM/pull/525
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Sprites'
+  - 'Changes: Map'
+  - 'Changes: Audio'
+  - 'Changes: Translations'
+  - 'Changes: Shaders'
+  - XL
 - author: Vixting
   changes:
   - message: Fixed vehicle cupola 1 shotting resin
@@ -14147,5 +14147,105 @@ Entries:
   id: 851
   time: '2026-10-18T02:22:26.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2210
+- author: flex5hybrid
+  time: '2026-10-18T14:14:55Z'
+  changes:
+  - type: Add
+    message: Перенесены новые возможности и исправления CMU по состоянию на 18 октября.
+  - type: Fix
+    message: Сохранён русский перевод руководств снабжения и HAZOPS при обновлении
+      CMU.
+  id: 855
+  url: https://github.com/flex5hybrid/RussianCM/pull/531
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Sprites'
+  - 'Changes: Map'
+  - 'Changes: Translations'
+  - XL
+- author: '- add: Добавлены крафты, молоток, грабли и грядки, дрова, растительное
+    волокно с деревьев и кустов.'
+  time: '2026-10-18T14:20:15Z'
+  changes:
+  - type: Add
+    message: Добавлена готовка (кастрюля, сковорода, печи) и дровяные печи с духовкой.
+  - type: Add
+    message: 'Добавлена электрическая стадия: станки, детали, прямые кабели и шахты,
+      трансформаторы, генераторы, нефть, бетон, подземные колонны.'
+  - type: Add
+    message: Добавлены паровая стадия, ковка, плавка и измельчение, новые руды и слои
+      добычи.
+  - type: Tweak
+    message: Вниз копают лопатой (земля и глина), киркой (глина → камень) и отбойным
+      буром (камень → чёрный камень).
+  - type: Tweak
+    message: При обвале выпадает ресурс слоя, упавшее приземляется на твёрдый тайл.
+  - type: Remove
+    message: Убраны обломки при обвале и затемнение упавших предметов.
+  id: 854
+  url: https://github.com/flex5hybrid/RussianCM/pull/522
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Sprites'
+  - 'Changes: Map'
+  - 'Changes: Audio'
+  - 'Changes: Translations'
+  - XL
+- author: '- add: Добавлен раздел "Алкоголь RuMC" в меню крафтов, в котором содержатся
+    различные бутылки алкогольных напитков и сам их крафт из соответсвующих культур
+    растений'
+  time: '2026-10-18T14:20:40Z'
+  changes:
+  - type: Add
+    message: Добавлен раздел "Наркотики RuMC" в меню крафтов, в котором содержатся
+      различные табачные изделия и изделия из травы
+  - type: Add
+    message: Добавлен раздел "Инженерия RuMC", в который была добавлена станция технического
+      обслуживания синтетиков
+  - type: Add
+    message: Добавлен раздел "Развлечения RuMC". На данный момент там есть шахматы,
+      шашки и трость. В будущем планируется вернуть музыкальные инструменты
+  - type: Add
+    message: Добавлен раздел "Кухня RuMC", в котором находятся столовые принадлежности,
+      формочки для выпекания и кухонная утварь
+  - type: Add
+    message: Добавлен раздел "Материалы RuMC". В данный момент туда попал крафт ткани,
+      мешков с песком
+  - type: Add
+    message: Добавлен раздел "Инструменты RuMC". В данный момент там находится крафт
+      модифицированной сварки, ключа К92, лопаты
+  - type: Add
+    message: Добавлен раздел "Фермерство RuMC". Туда добавлены крафты грядок, инструментов
+      для садоводства, сумки для растений
+  id: 853
+  url: https://github.com/flex5hybrid/RussianCM/pull/520
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Translations'
+  - L
+- author: '- fix: Исключения при предпрослушивании и доставке TTS больше не выходят
+    из асинхронных обработчиков речи без перехвата.'
+  time: '2026-10-18T14:25:10Z'
+  changes:
+  - type: Fix
+    message: Исправлена ошибка вкладки голосов TTS при отключении от сервера.
+  id: 852
+  url: https://github.com/flex5hybrid/RussianCM/pull/511
+  labels:
+  - 'Changes: UI'
+  - M
+- author: '- fix: Дополнен русский перевод новых интерфейсов, предметов, материалов,
+    станков, оружейных и броневых вариантов, снабжения и модулей техники.'
+  time: '2026-10-18T19:26:17Z'
+  changes:
+  - type: Admin
+    message: Переведены состояния и действия обращений AHelp, игровые режимы администрации
+      и подтипы ролей.
+  id: 856
+  url: https://github.com/flex5hybrid/RussianCM/pull/533
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Translations'
+  - L
 Name: CMU
 Order: -1

@@ -163,6 +163,34 @@
   - stack: RUMCBranch
     amount: 1
 
+# The steel tools: sheets of metal (CMSteel) and a stick, worked with a smithing hammer, as the brass ones are. They are the pickaxe and the
+# shovel of the colony, the ones that come in the crate of work tools.
+- type: craftRecipe
+  id: RUMCCraftSteelPickaxe
+  name: au14-craft-recipe-steel-pickaxe
+  output: AU14ToolPickaxe
+  time: 10
+  tools:
+  - Hammering
+  consumables:
+  - stack: CMSteel
+    amount: 4
+  - stack: RUMCBranch
+    amount: 1
+
+- type: craftRecipe
+  id: RUMCCraftSteelShovel
+  name: au14-craft-recipe-steel-shovel
+  output: AU14ToolShovel
+  time: 8
+  tools:
+  - Hammering
+  consumables:
+  - stack: CMSteel
+    amount: 3
+  - stack: RUMCBranch
+    amount: 1
+
 # The brass molds are cut from the empty one like the iron ones.
 - type: craftRecipe
   id: RUMCCraftBrassSheetMold
@@ -342,9 +370,9 @@
   - Hammering
   consumables:
   - stack: RUMCBrassSheet
-    amount: 4
+    amount: 6
   - stack: RUMCBrassParts
-    amount: 3
+    amount: 4
 
 # The boiler has a firebox, so it takes wood as well.
 - type: craftRecipe
@@ -356,11 +384,11 @@
   - Hammering
   consumables:
   - stack: RUMCBrassSheet
-    amount: 5
+    amount: 6
   - stack: RUMCBrassParts
-    amount: 3
-  - stack: RMCWood
     amount: 4
+  - stack: RMCWood
+    amount: 2
 
 - type: craftRecipe
   id: RUMCCraftSteamGenerator
@@ -397,9 +425,9 @@
   - Hammering
   consumables:
   - stack: RUMCBrassSheet
-    amount: 7
+    amount: 6
   - stack: RUMCBrassParts
-    amount: 5
+    amount: 4
 
 - type: craftRecipe
   id: RUMCCraftSteamDrill
@@ -414,7 +442,8 @@
   - stack: RUMCBrassParts
     amount: 4
 
-# The steel water pipes (the liquid pipes): the same as the brass ones, of an iron sheet and a ring for the joint.
+# The steel water pipes (the liquid pipes): the same as the brass ones, of sheets of metal. They were forged at the anvil, and crafted of a sheet and a steel
+# ring, which only the electric extruder makes; now they are crafted by hand of sheets alone, so that the pipes need no electricity.
 - type: craftRecipe
   id: RUMCCraftSteelWaterPipe
   name: au14-craft-recipe-steel-water-pipe
@@ -423,10 +452,8 @@
   tools:
   - Hammering
   consumables:
-  - stack: RUMCIronSheet
-    amount: 1
-  - stack: RUMCIronRing
-    amount: 1
+  - stack: CMSteel
+    amount: 2
 
 - type: craftRecipe
   id: RUMCCraftSteelWaterPipeDown
@@ -436,9 +463,19 @@
   tools:
   - Hammering
   consumables:
-  - stack: RUMCIronSheet
-    amount: 1
-  - stack: RUMCIronRing
+  - stack: CMSteel
+    amount: 3
+
+# The steel water pump is crafted by hand, of two machine hulls (it was forged at the anvil of an iron ingot).
+- type: craftRecipe
+  id: RUMCCraftSteelPump
+  name: au14-craft-recipe-steel-pump
+  output: RUMCSteelPump
+  time: 12
+  tools:
+  - Hammering
+  consumables:
+  - stack: RUMCMachineHull
     amount: 2
 
 # Rope, twisted out of plant fiber cut from the bushes: the coil that is let down a pit.

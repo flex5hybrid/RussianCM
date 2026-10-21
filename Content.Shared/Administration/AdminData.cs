@@ -70,9 +70,14 @@ namespace Content.Shared.Administration
             return HasFlag(AdminFlags.Stealth);
         }
 
+        /// <summary>
+        /// Allows prototype uploads for admins granted the QUERY permission used by the loadprototype command.
+        /// Host access remains an explicit override.
+        /// </summary>
         public bool CanAdminReloadPrototypes()
         {
-            return HasFlag(AdminFlags.Host);
+            return HasFlag(AdminFlags.Query)
+                || HasFlag(AdminFlags.Host); // CMU14: allow QUERY prototype uploads while preserving HOST access
         }
     }
 }

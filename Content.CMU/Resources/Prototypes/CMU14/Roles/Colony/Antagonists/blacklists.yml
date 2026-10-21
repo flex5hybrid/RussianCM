@@ -84,6 +84,7 @@
 - type: antagJobBlacklist
   id: AllGovforJobs
   jobs:
+    - RuCMJobGOVFORRecruit
     - AU14JobGOVFORPlatCo
     - AU14JobGOVFORPlatOp
     - AU14JobGOVFORAdjutant

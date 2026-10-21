@@ -93,7 +93,7 @@
 - type: entity
   id: AU14SpawnPointWeYaProvostMarshal
   parent: CMSpawnPointJobBase
-  name: W-Y Provost Marshal spawn point
+  name: W-Y Inspector spawn point
   components:
   - type: SpawnPoint
     job_id: AU14JobWeYaProvostMarshal
@@ -103,7 +103,7 @@
 - type: entity
   id: AU14SpawnPointWeYaProvostMarshalLeader
   parent: CMSpawnPointJobBase
-  name: W-Y Provost Marshal Leader spawn point
+  name: W-Y Inspector Team Leader spawn point
   components:
   - type: SpawnPoint
     job_id: AU14JobWeYaProvostMarshalLeader
@@ -111,7 +111,7 @@
     state: syn_spawn
 - type: entity
   id: AU14RandomHumanoidWeYaProvostMarshal
-  name: W-Y Provost Marshal
+  name: W-Y Inspector
   suffix: Ghost
   components:
   - type: Sprite
@@ -140,7 +140,7 @@
 
 - type: entity
   id: AU14RandomHumanoidWeYaProvostMarshalLeader
-  name: W-Y Provost Marshal Leader
+  name: W-Y Inspector Team Leader
   suffix: Ghost
   components:
   - type: Sprite

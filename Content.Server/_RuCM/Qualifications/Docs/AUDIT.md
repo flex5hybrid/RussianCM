@@ -101,4 +101,4 @@ No effective Enlisted level means Recruit in the domain and UI. Enforce denies t
 combat roles. This addon does not silently replace station job slots, inventory/vending systems,
 or upstream equipment rules. A base-access/unarmed Recruit role or map training area must be
 configured by the server's map/role maintainers if recruits are to spawn on a GOVFOR base.
-E4+ RP supervision and emergency deployment remain manual as specified. No scripted training game mode is added.
+E4+ RP supervision remains manual. Recruit tasks and training are restricted to the GOVFOR base by server rules; emergency deployment is forbidden, including by CO order. A GOVFOR carrier counts as the base; a FOB does not. No scripted training game mode is added.

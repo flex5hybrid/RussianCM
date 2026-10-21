@@ -137,11 +137,11 @@ public sealed class GOVFORRegulationsTests : ContentUnitTest
     [TestCase("enlisted", "communications", GOVFORTrainingGuides.Communications)]
     [TestCase("enlisted", "military_regulations", GOVFORTrainingGuides.MilitaryCode)]
     [TestCase("sergeant", "tactics", GOVFORTrainingGuides.Command)]
-    [TestCase("sergeant", "teaching", GOVFORTrainingGuides.Qualifications)]
+    [TestCase("sergeant", "teaching", GOVFORTrainingGuides.InstructorHandbook)] // CMU14: teaching now opens the instructor handbook.
     [TestCase("sergeant", "unit_command", GOVFORTrainingGuides.Command)]
     [TestCase("officer", "operations", GOVFORTrainingGuides.Command)]
-    [TestCase("officer", "staff_work", GOVFORTrainingGuides.Sop)]
-    [TestCase("officer", "military_regulations", GOVFORTrainingGuides.Drill)]
+    [TestCase("officer", "staff_work", GOVFORTrainingGuides.Command)] // CMU14: current advanced-course references.
+    [TestCase("officer", "military_regulations", GOVFORTrainingGuides.MilitaryCode)]
     public void ReadingReferencesUseRealUnchangedChecklistIds(string qualification, string item, string expected)
     {
         var seed = JsonSerializer.Deserialize<QualificationStore>(File.ReadAllText(Find("Resources/RuCM/Qualifications/seed.json")));

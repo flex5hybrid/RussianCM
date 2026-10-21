@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCArmorM4PMCNoLight
   id: AU14ArmorWeYaProvostMarshal
-  name: W-Y Provost Marshal Armor
-  description: Armored vest issued to Weyland-Yutani Provost Marshals.
+  name: W-Y Inspector Armor
+  description: Armored vest issued to Weyland-Yutani Inspectors.
   components:
   - type: Sprite
     sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/armor.rsi
@@ -25,8 +25,8 @@
 - type: entity
   parent: AU14ArmorWeYaProvostMarshal
   id: AU14ArmorWeYaProvostMarshalLeader
-  name: W-Y Provost Marshal Leader Armor
-  description: Reinforced armor issued to Weyland-Yutani Provost Marshal team leaders.
+  name: W-Y Inspector Team Leader Armor
+  description: Reinforced armor issued to Weyland-Yutani Inspector team leaders.
   components:
   - type: Sprite
     sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/armor_sl.rsi
@@ -39,8 +39,8 @@
 - type: entity
   parent: ArmorHelmetM10
   id: AU14HelmetWeYaProvostMarshal
-  name: W-Y Provost Marshal Helmet
-  description: Armored helmet issued to Weyland-Yutani Provost Marshals.
+  name: W-Y Inspector Helmet
+  description: Armored helmet issued to Weyland-Yutani Inspectors.
   components:
   - type: Sprite
     sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/helmet.rsi
@@ -60,8 +60,8 @@
 - type: entity
   parent: AU14HelmetWeYaProvostMarshal
   id: AU14HelmetWeYaProvostMarshalLeader
-  name: W-Y Provost Marshal Leader Helmet
-  description: Reinforced helmet issued to Weyland-Yutani Provost Marshal team leaders.
+  name: W-Y Inspector Team Leader Helmet
+  description: Reinforced helmet issued to Weyland-Yutani Inspector team leaders.
   components:
   - type: Sprite
     sprite: /Textures/_RuMC14/ThirdParties/Corporate/WeYu/ProvostMarshals/helmet_sl.rsi

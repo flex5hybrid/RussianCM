@@ -113,7 +113,21 @@ public sealed class GOVFORGuidebookTests : GameTest
                 var document = new Document();
                 Assert.That(parser.TryAddMarkup(document, new ProtoId<GuideEntryPrototype>(id)), Is.True, id);
                 Assert.That(Descendants(document).OfType<GuidebookError>(), Is.Empty, id);
+                // CMU14: the published recruit restriction must survive guidebook parsing in both cultures.
+                if (id is "RuCMGOVFORTrainingQualifications" or "RuCMGOVFORRecruitCourseIntroduction" or "RuCMGOVFORInstructorHandbookWork")
+                {
+                    var text = string.Join(" ", Descendants(document).OfType<RichTextLabel>().Select(l => l.GetMessage().ToString()));
+                    Assert.That(text, Does.Contain("вне базы"), id);
+                    Assert.That(text, Does.Contain("FOB"), id);
+                    Assert.That(text, Does.Contain("чрезвычайны"), id);
+                }
             }
+            // CMU14: mode rules use the same document parser as the training handbook.
+            var rulesDocument = new Document();
+            Assert.That(parser.TryAddMarkup(rulesDocument, new ProtoId<GuideEntryPrototype>("AU14GamemodeRulesInsurgency")), Is.True);
+            Assert.That(Descendants(rulesDocument).OfType<GuidebookError>(), Is.Empty);
+            Assert.That(string.Join(" ", Descendants(rulesDocument).OfType<RichTextLabel>().Select(l => l.GetMessage().ToString())),
+                Does.Contain("использование рекрутов вне базы"));
 
             controller.OpenGuidebook();
             var guides = ui.WindowRoot.Children.OfType<GuidebookWindow>().Single();

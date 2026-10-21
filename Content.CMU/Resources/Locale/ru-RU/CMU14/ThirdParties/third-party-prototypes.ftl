@@ -166,26 +166,26 @@ ent-SquadWeYaCommando = Коммандос Ве-Ю
 ent-WeaponSMGM36 = A-M36 Экспериментальный
   .desc = Экспериментальный пистолет-пулемет направленной энергии, разработанный для сил корпоративной безопасности Lasalle Bionational. Поступает на вооружение групп реагирования на угрозы повышенной опасности и отдельных бойцов элитных подразделений; его мощные лазерные импульсы способны в ряде случаев воспламенять органические цели.
 
-ent-AU14ArmorWeYaProvostMarshal = Броня провоста-маршала Weyland-Yutani
-  .desc = Бронежилет, выданный провостам-маршалам Weyland-Yutani.
-ent-AU14ArmorWeYaProvostMarshalLeader = Броня командира провостов-маршалов Weyland-Yutani
-  .desc = Усиленная броня для командиров группы провостов-маршалов Weyland-Yutani.
-ent-AU14HelmetWeYaProvostMarshal = Шлем провоста-маршала Weyland-Yutani
-  .desc = Бронированный шлем, выданный провостам-маршалам Weyland-Yutani.
-ent-AU14HelmetWeYaProvostMarshalLeader = Шлем командира провостов-маршалов Weyland-Yutani
-  .desc = Усиленный шлем для командиров группы провостов-маршалов Weyland-Yutani.
-ent-AU14SpawnPointWeYaProvostMarshal = Точка появления провоста-маршала W-Y
-ent-AU14SpawnPointWeYaProvostMarshalLeader = Точка появления командира провостов-маршалов W-Y
-au14-job-name-wy-provost-marshal = Провост-маршал W-Y
+ent-AU14ArmorWeYaProvostMarshal = Броня инспектора Weyland-Yutani
+  .desc = Бронежилет, выданный инспекторам Weyland-Yutani.
+ent-AU14ArmorWeYaProvostMarshalLeader = Броня старшего инспектора Weyland-Yutani
+  .desc = Усиленная броня для старших инспекторов Weyland-Yutani.
+ent-AU14HelmetWeYaProvostMarshal = Шлем инспектора Weyland-Yutani
+  .desc = Бронированный шлем, выданный инспекторам Weyland-Yutani.
+ent-AU14HelmetWeYaProvostMarshalLeader = Шлем старшего инспектора Weyland-Yutani
+  .desc = Усиленный шлем для старших инспекторов Weyland-Yutani.
+ent-AU14SpawnPointWeYaProvostMarshal = Точка появления инспектора W-Y
+ent-AU14SpawnPointWeYaProvostMarshalLeader = Точка появления старшего инспектора W-Y
+au14-job-name-wy-provost-marshal = Инспектор W-Y
 au14-job-description-wy-provost-marshal = Следите за соблюдением правил Weyland-Yutani и поддерживайте порядок как сотрудник военной полиции корпорации.
 au14-job-prefix-wy-provost-marshal = PvM
-au14-spawn-role-name-wy-provost-marshal = Провост-маршал W-Y (третья сторона)
-au14-job-name-wy-provost-marshal-leader = Командир провостов-маршалов W-Y
+au14-spawn-role-name-wy-provost-marshal = Инспектор W-Y (третья сторона)
+au14-job-name-wy-provost-marshal-leader = Старший инспектор W-Y
 au14-job-prefix-wy-provost-marshal-leader = PvML
-au14-spawn-role-name-wy-provost-marshal-leader = Командир провостов-маршалов W-Y (третья сторона)
+au14-spawn-role-name-wy-provost-marshal-leader = Старший инспектор W-Y (третья сторона)
 
-ent-AU14RandomHumanoidWeYaProvostMarshal = Провост-маршал W-Y
-ent-AU14RandomHumanoidWeYaProvostMarshalLeader = Командир провостов-маршалов W-Y
+ent-AU14RandomHumanoidWeYaProvostMarshal = Инспектор W-Y
+ent-AU14RandomHumanoidWeYaProvostMarshalLeader = Старший инспектор W-Y
 au14-ghost-role-information-wy-provost-rules = Выполняйте приказы корпорации, следите за соблюдением её правил и поддерживайте порядок.
 
 

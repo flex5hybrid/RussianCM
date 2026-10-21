@@ -40,8 +40,8 @@
   - type: SpawnHungryThirsty
   - type: Skills
     skills:
-      RMCSkillFirearms: 0
-      RMCSkillConstruction: 0
+      RMCSkillFirearms: 1 # CMU14: permanent job skills, separate from supervised training.
+      RMCSkillConstruction: 1
       RMCSkillMedical: 0
   - type: JobPrefix
     prefix: rucm-recruit-prefix

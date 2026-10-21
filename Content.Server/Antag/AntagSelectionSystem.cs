@@ -23,6 +23,7 @@ using Content.Shared.Database;
 using Content.Shared.Follower;
 using Content.Shared.GameTicking;
 using Content.Shared.GameTicking.Components;
+using Content.Shared.Players; // CMU14
 using Content.Shared.Random.Helpers;
 using Content.Shared.Roles;
 using Content.Shared._RMC14.Marines.Skills; // CMU14
@@ -159,6 +160,10 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
 
         // Ensure the player is allowed to play this antagonist!
         if (IsAntagBanned(args.Player, def) || !_playTime.IsAllowed(args.Player, def.PrefRoles))
+            return;
+
+        // CMU14: the ghost-role path does not call IsSessionValid.
+        if (CMUIsRecruitMind(args.Player.GetMind()))
             return;
 
         if (!TrySpawnAntagonist((rule, select), def, args.Player, _transform.GetMapCoordinates(ent), out var uid))
@@ -635,6 +640,13 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
         AntagSpecifierPrototype prototype,
         ICommonSession player)
     {
+        // CMU14: recheck after job assignment and before spawning/replacing any entity.
+        if (CMUIsRecruitMind(player.GetMind()))
+        {
+            DeSelectSession(gameRule, prototype, player);
+            return false;
+        }
+
         // Get a valid entity to initialize
         if (!TryGetAntagEntity(gameRule, prototype, player, out var antagEnt))
         {

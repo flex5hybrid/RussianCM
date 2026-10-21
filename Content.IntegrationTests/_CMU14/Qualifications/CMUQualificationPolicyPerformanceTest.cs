@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.Reflection;
+using System.Linq;
 using Content.IntegrationTests.Fixtures;
 using Content.Server._RuCM.Qualifications;
 using Content.Server.Administration.Managers;
@@ -82,7 +83,11 @@ public sealed class CMUQualificationPolicyPerformanceTest : GameTest
         await Server.WaitPost(() => SEntMan.System<QualificationSystem>().Update(1));
         await RunUntilSynced();
         await Server.WaitAssertion(() =>
-            Assert.That(Server.ResolveDependency<IConfigurationManager>().GetCVar(CCVars.GameRoleTimerOverride),
-                Is.Not.EqualTo(QualificationRolePolicy.OverrideId)));
+        {
+            var overrides = SProtoMan.Index<JobRequirementOverridePrototype>(QualificationRolePolicy.OverrideId);
+            Assert.That(overrides.Jobs.ContainsKey(jobId), Is.False, "General gates are disabled");
+            Assert.That(overrides.Jobs["AU14JobGOVFORadvisor"].OfType<QualificationAccessRequirement>().Count(), Is.EqualTo(1),
+                "Instructor accreditation remains mandatory");
+        });
     }
 }

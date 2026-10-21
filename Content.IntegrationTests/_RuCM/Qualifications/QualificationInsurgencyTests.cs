@@ -22,9 +22,10 @@ public sealed class QualificationInsurgencyTests : GameTest
     [Test]
     public async Task InsurgencyReplacesOnlyTimersAndOtherModesRestoreOriginalRequirements()
     {
-        const string jobId = "AU14JobGOVFORadvisor";
+        const string jobId = "AU14JobGOVFORSectionSergeant"; // CMU14: instructors have a mandatory gate in all modes.
         await Server.WaitPost(() =>
         {
+            Server.ResolveDependency<IConfigurationManager>().SetCVar(QualificationCVars.Enabled, false);
             var seed = new QualificationStore();
             seed.Definitions["sergeant"] = new() { Id = "sergeant" };
             seed.Roles[jobId] = new() { JobId = jobId, MinimumLevel = MilitaryLevel.Sergeant };
@@ -50,15 +51,19 @@ public sealed class QualificationInsurgencyTests : GameTest
                 Assert.That(insurgency, Does.Contain(requirement), "Preserve age, traits and other restrictions");
             Assert.That(system.Mode, Is.EqualTo(QualificationMode.Enforce));
             Assert.That(system.CanTakeJob(ServerSession.UserId, jobId), Is.False);
-            Assert.That(job.LocalizedName, Is.EqualTo(Server.ResolveDependency<Robust.Shared.Localization.ILocalizationManager>().GetString("rucm-qualifications-drill-instructor-name")));
+            Assert.That(prototypes.Index<JobPrototype>("AU14JobGOVFORadvisor").LocalizedName,
+                Is.EqualTo(Server.ResolveDependency<Robust.Shared.Localization.ILocalizationManager>().GetString("rucm-qualifications-drill-instructor-name")));
             foreach (var preset in new[] { "ForceOnForce", "DistressSignal", "Insurgency" })
             {
                 round.SetPreset(prototypes.Index<GamePresetPrototype>(preset)); system.SynchronizeRolePolicy();
                 if (preset == "Insurgency") continue;
                 Assert.That(system.Mode, Is.EqualTo(QualificationMode.Disabled));
-                Assert.That(system.CanTakeJob(ServerSession.UserId, jobId), Is.True);
+                Assert.That(system.CanTakeJob(ServerSession.UserId, jobId), Is.False,
+                    "Instructor certification remains mandatory outside Insurgency");
                 Assert.That(roles.GetRoleRequirements(job), Is.EquivalentTo(original));
-                Assert.That(cfg.GetCVar(CCVars.GameRoleTimerOverride), Is.EqualTo(""));
+                var instructorRequirements = roles.GetRoleRequirements(prototypes.Index<JobPrototype>("AU14JobGOVFORadvisor"));
+                Assert.That(instructorRequirements.OfType<QualificationAccessRequirement>().Count(), Is.EqualTo(1));
+                Assert.That(system.CanTakeJob(ServerSession.UserId, "AU14JobGOVFORadvisor"), Is.False);
             }
             cfg.SetCVar(QualificationCVars.Enabled, false); system.SynchronizeRolePolicy();
             Assert.That(roles.GetRoleRequirements(job), Is.EquivalentTo(original));
@@ -93,8 +98,8 @@ public sealed class QualificationInsurgencyTests : GameTest
             var policy = new QualificationPolicyState { Active = true, Staff = false };
             const string job = "AU14JobGOVFORadvisor";
             policy.Jobs.Add(job); policy.Eligibility[job] = false;
-            policy.BaseRequirements[job] = new(Server.System<SharedRoleSystem>().GetRoleRequirements(
-                Server.ResolveDependency<IPrototypeManager>().Index<JobPrototype>(job)));
+            Server.System<QualificationSystem>().SynchronizeRolePolicy();
+            policy.BaseRequirements[job] = new(Server.System<QualificationRolePolicy>().BaseRequirements[job]);
             using var stream = new System.IO.MemoryStream();
             Server.ResolveDependency<Robust.Shared.Serialization.IRobustSerializer>().Serialize(stream, policy); bytes = stream.ToArray();
         });

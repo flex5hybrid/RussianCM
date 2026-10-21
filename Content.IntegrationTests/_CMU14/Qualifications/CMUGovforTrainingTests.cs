@@ -95,6 +95,11 @@ public sealed class CMUGovforTrainingTests : GameTest
             Assert.That(Server.System<QualificationSystem>().Authority(ServerSession).CurrentParticipant, Is.True);
             Assert.That(Server.System<QualificationSystem>().View(_other, _student.UserId).Management, Is.False);
             Assert.That(Server.System<CMUGovforTrainingSystem>().IsRecruit(_recruit), Is.True);
+            // Exercise the real job skills rather than a separate, all-zero human fixture.
+            var job = Server.ProtoMan.Index<JobPrototype>(GOVFORRecruitJob.Id);
+            var skillSystem = Server.System<SkillsSystem>();
+            foreach (var (skill, level) in ((SkillsComponent)job.RoundComponents["Skills"].Component).Skills)
+                skillSystem.SetSkill(_recruit, skill, level);
         });
     }
 
@@ -137,6 +142,9 @@ public sealed class CMUGovforTrainingTests : GameTest
         {
             var training = Server.System<CMUGovforTrainingSystem>();
             var skills = Server.System<SkillsSystem>();
+            Assert.That(skills.GetSkill(_recruit, "RMCSkillFirearms"), Is.EqualTo(1));
+            Assert.That(skills.GetSkill(_recruit, "RMCSkillConstruction"), Is.EqualTo(1));
+            Assert.That(skills.GetSkill(_recruit, "RMCSkillMedical"), Is.Zero);
             skills.SetSkill(_recruit, "RMCSkillEngineer", 1);
             Assert.That(training.Assign(_teacherA, _recruit), Is.Empty);
             Assert.That(training.Start(_teacherA, _recruit, Engineering), Is.Empty);
@@ -149,6 +157,7 @@ public sealed class CMUGovforTrainingTests : GameTest
             Assert.That(skills.GetSkill(_recruit, "RMCSkillEngineer"), Is.EqualTo(1),
                 "Changing topics removes the previous topic's access");
             Assert.That(skills.HasSkill(_recruit, "RMCSkillConstruction", 2), Is.False);
+            Assert.That(skills.GetSkill(_recruit, "RMCSkillConstruction"), Is.EqualTo(1));
             Assert.That(training.Start(_teacherA, _recruit, Engineering), Is.Empty);
             skills.SetSkill(_recruit, "RMCSkillEngineer", 3); // Real role skill changes survive session removal.
             Assert.That(skills.GetSkill(_recruit, "RMCSkillEngineer"), Is.EqualTo(3));
@@ -156,6 +165,9 @@ public sealed class CMUGovforTrainingTests : GameTest
             Assert.That(Server.EntMan.HasComponent<CMUTrainingSkillsComponent>(_recruit), Is.False);
             Assert.That(skills.GetSkill(_recruit, "RMCSkillEngineer"), Is.EqualTo(3));
             Assert.That(skills.HasSkill(_recruit, "RMCSkillConstruction", 2), Is.False);
+            Assert.That(skills.GetSkill(_recruit, "RMCSkillConstruction"), Is.EqualTo(1));
+            Assert.That(skills.GetSkill(_recruit, "RMCSkillFirearms"), Is.EqualTo(1));
+            Assert.That(skills.GetSkill(_recruit, "RMCSkillMedical"), Is.Zero);
         });
     }
 

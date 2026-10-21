@@ -28,6 +28,7 @@
   components:
   - type: Stack
     stackType: RUMCZincOre
+  - type: GroundStack
   - type: Sprite
     sprite: CMU14/Objects/Materials/ore.rsi
     state: zinc
@@ -79,7 +80,7 @@
   name: zinc ingot
   icon: { sprite: CMU14/Objects/Materials/iron_ingot.rsi, state: zinc }
   spawn: RUMCZincIngot
-  maxCount: 10
+  maxCount: 50
 
 - type: material
   id: RUMCZinc
@@ -178,7 +179,7 @@
   name: brass ingot
   icon: { sprite: CMU14/Objects/Materials/iron_ingot.rsi, state: brass }
   spawn: RUMCBrassIngot
-  maxCount: 10
+  maxCount: 50
 
 - type: material
   id: RUMCBrass

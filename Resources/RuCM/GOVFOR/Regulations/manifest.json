@@ -24,7 +24,7 @@
     "id": "RuCMGOVFORTrainingQualifications",
     "xml": "Resources/ServerInfo/Guidebook/_RuCM/GOVFOR/TrainingQualifications.xml",
     "source": "Resources/RuCM/GOVFOR/Regulations/TrainingQualifications.md",
-    "source_sha256": "5e1b3c166e404e633b2c95f19c6f1320717f9ff7d761a10c789d99f115764a78",
-    "prose_sha256": "4a7c318a2cbfa5107da33fd2f73d5d34e87add017ea3825ff85e51a78fe4fadd"
+    "source_sha256": "ab3335bee6f3aeeb39a0af61370d0202bd172e05b086d9d3fc5e51699e4004d5",
+    "prose_sha256": "47f50cd2b1f89844f01c528902ea803ff6471d891638d60c2caeeef8a2a16fd6"
   }
 ]

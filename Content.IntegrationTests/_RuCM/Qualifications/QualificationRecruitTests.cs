@@ -3,6 +3,10 @@ using System.Linq;
 using System.Reflection;
 using Content.IntegrationTests.Fixtures;
 using Content.Server._RuCM.Qualifications;
+using Content.Server.Antag;
+using Content.Shared.Antag;
+using Content.Shared.Roles;
+using Robust.Shared.Prototypes;
 using Content.Server.Administration.Managers;
 using Content.Server.EUI;
 using Content.Server.GameTicking;
@@ -46,6 +50,31 @@ public sealed class QualificationRecruitTests : GameTest
         });
         await Pair.RunTicksSync(10);
         await Server.WaitAssertion(() => Assert.That(Server.System<QualificationSystem>().Authority(ServerSession).CurrentParticipant, Is.True));
+    }
+
+    [Test]
+    public async Task CurrentRecruitJobRejectsMidRoundAntagonistSelection()
+    {
+        var map = await Pair.CreateTestMap();
+        await Server.WaitAssertion(() =>
+        {
+            var entities = Server.EntMan;
+            var body = entities.SpawnEntity("CMMobHuman", map.GridCoords);
+            var minds = entities.System<SharedMindSystem>();
+            var mind = minds.GetOrCreateMind(ServerSession.UserId);
+            minds.TransferTo(mind, body);
+            entities.System<SharedRoleSystem>().MindAddJobRole(mind, jobPrototype: GOVFORRecruitJob.Id);
+            Server.PlayerMan.SetAttachedEntity(ServerSession, body);
+
+            var prototypes = Server.ResolveDependency<IPrototypeManager>();
+            Assert.That(prototypes.Index<JobPrototype>(GOVFORRecruitJob.Id).CanBeAntag, Is.False);
+            var antag = prototypes.Index<AntagSpecifierPrototype>("Thief");
+            var method = typeof(AntagSelectionSystem).GetMethod("IsMindValid",
+                BindingFlags.Instance | BindingFlags.NonPublic);
+            Assert.That(method, Is.Not.Null);
+            Assert.That(method!.Invoke(entities.System<AntagSelectionSystem>(), new object?[] { mind, antag }), Is.False,
+                "Mid-round antag selection must reject the Recruit job regardless of antagonist job filters");
+        });
     }
 
     [Test]

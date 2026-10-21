@@ -3,13 +3,13 @@ au14-drill-head = Головка
 au14-drill-head-left = { $left }/{ $max }
 au14-drill-head-none = Нет головки
 au14-drill-status-working = Бурит: { $percent }%
-au14-drill-status-no-deposit = Под ним нет месторождения руды
+au14-drill-status-no-deposit = Под ним нет ни месторождения руды, ни каменного пола
 au14-drill-status-no-head = Вставьте головку
 au14-drill-status-idle = Простаивает: нужны пар или питание, головка и место для руды
 au14-drill-head-broke = Головка бура ломается.
 au14-drill-head-examine = Головки хватит ещё на { $left } из { $max } проходов.
-au14-drill-examine-deposit = Под ним лежит месторождение руды.
-au14-drill-examine-no-deposit = Под ним нет месторождения руды.
+au14-drill-examine-deposit = Под ним лежит месторождение руды или голый камень пещеры.
+au14-drill-examine-no-deposit = Под ним нет ни месторождения руды, ни каменного пола.
 au14-drill-examine-working = Он бурит.
 au14-drill-examine-idle = Он простаивает.
 au14-deposit-examine = Руда в нём похожа на: { $ores }.
@@ -17,6 +17,8 @@ au14-deposit-examine-empty = В нём ничего не осталось.
 
 reagent-name-au14-zinc-melt = расплавленный цинк
 reagent-desc-au14-zinc-melt = Цинк, расплавленный в тигле. Две части меди и две части его дают латунь.
+reagent-name-au14-iron-melt = расплавленное железо
+reagent-desc-au14-iron-melt = Железо, расплавленное в тигле. Для него нужен жар каменной плавильни, и оно отливается в слитки железа.
 
 ent-RUMCOreDepositStone = каменное месторождение руды
     .desc = Месторождение руды в камне, до пяти видов в нём. В основном медь, железо и цинк. Поставьте на него бур.
@@ -64,11 +66,8 @@ ent-RUMCBrassMoldSheet = латунная форма листа
 ent-RUMCBrassMoldIngots = латунная форма на три слитка
     .desc = Латунная плита с углублениями под три слитка. Вставленная в паровую плавильню вместе с рудой на три слитка, отливает три слитка сразу.
 au14-anvil-recipe-brass-parts = латунные детали
+au14-anvil-recipe-brass-sheet = латунный лист
 
 au14-anvil-recipe-steel-drill-head = стальная буровая головка
 
-au14-anvil-recipe-steel-pipe = стальная труба
 
-au14-anvil-recipe-steel-pipe-down = стальная труба вниз
-
-au14-anvil-recipe-steel-pump = стальной водяной насос

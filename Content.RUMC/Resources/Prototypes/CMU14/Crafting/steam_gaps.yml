@@ -19,7 +19,7 @@
   tools:
   - Hammering
   consumables:
-  - stack: RUMCIronSheet
+  - stack: CMSteel
     amount: 3
   - stack: RUMCBranch
     amount: 1
@@ -32,7 +32,7 @@
   tools:
   - Hammering
   consumables:
-  - stack: RUMCIronSheet
+  - stack: CMSteel
     amount: 2
   - stack: RUMCBranch
     amount: 1
@@ -45,7 +45,7 @@
   tools:
   - Hammering
   consumables:
-  - stack: RUMCIronSheet
+  - stack: CMSteel
     amount: 1
   - stack: RUMCBranch
     amount: 1
@@ -58,8 +58,8 @@
   tools:
   - Hammering
   consumables:
-  - stack: RUMCIronSheet
-    amount: 12
+  - stack: RUMCBrassIngot
+    amount: 5
   - stack: RUMCStone
     amount: 4
 
@@ -72,9 +72,9 @@
   - Hammering
   consumables:
   - stack: RUMCBrassSheet
-    amount: 7
+    amount: 6
   - stack: RUMCBrassParts
-    amount: 5
+    amount: 4
   - stack: RMCWood
     amount: 2
 

@@ -11,7 +11,7 @@
   dummyStartingGear: AU14GearGOVFORadvisorDummy
   playTimeTracker: AU14JobGOVFORadvisor
   requireAdminNotify: true
-  whitelisted: true
+  whitelisted: false # Admission uses Sergeant + active Instructor Accreditation, not an independent job whitelist.
   canBeAntag: false
   accessGroups:
   - AU14GovforCommand
@@ -108,6 +108,7 @@
 - type: job
   parent: AU14JobadvisorBase
   id: AU14JobGOVFORadvisor
+  whitelisted: false
   hidden: false
   setPreference: true
   basePlaytimeTracker: true
@@ -222,6 +223,7 @@
 - type: job
   parent: AU14JobadvisorBase
   id: AU14JobGOVFORadvisorRMC
+  whitelisted: false
   roundForce: RMC
   spawnMenuRoleName: Advisor (TWE RMC)
   ranks:
@@ -234,6 +236,7 @@
 - type: job
   parent: AU14JobadvisorBase
   id: AU14JobGOVFORadvisorUPP
+  whitelisted: false
   roundForce: UPP
   spawnMenuRoleName: Advisor (UPP)
   ranks:

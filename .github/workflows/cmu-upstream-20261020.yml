@@ -1,0 +1,126 @@
+name: CMU upstream merge check (2026-10-20)
+
+on:
+  push:
+    branches:
+      - codex/cmu-upstream-20261020
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  merge-upstream:
+    if: "${{ !contains(github.event.head_commit.message, '[skip ci]') }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: false
+
+      - name: Three-way merge with official CMU upstream
+        id: merge
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add cmu-upstream https://github.com/AU-14/ColonialMarinesUniverse.git
+          git fetch --no-tags cmu-upstream master
+          echo "# CMU upstream synchronization — 2026-10-20" > conflict-report.md
+          echo "" >> conflict-report.md
+          echo "Base: RuCMU $(git rev-parse HEAD)" >> conflict-report.md
+          echo "Upstream: $(git rev-parse FETCH_HEAD)" >> conflict-report.md
+          echo "" >> conflict-report.md
+          set +e
+          git merge --no-ff --no-commit FETCH_HEAD >merge-command.log 2>&1
+          code=$?
+          set -e
+          cat merge-command.log
+          if [ "$code" -eq 0 ]; then
+            echo "No conflicts — upstream merged." >> conflict-report.md
+            git rm .github/workflows/cmu-upstream-20261020.yml
+            git commit -m "Merge CMU upstream through $(git rev-parse --short=12 FETCH_HEAD)"
+            git push origin HEAD:refs/heads/codex/cmu-upstream-20261020
+            echo "sync_result=merged" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git status --short > git-status.txt
+          git diff --name-only --diff-filter=U > conflict-files.txt
+          git diff --cc > conflict-diffs.patch || true
+          python3 - <<'PY'
+          import pathlib, subprocess, re
+          report = pathlib.Path("conflict-report.md")
+          proc = subprocess.run(["git","diff","--name-only","-z","--diff-filter=U"], capture_output=True, check=True)
+          files = [p.decode("utf-8", "surrogateescape") for p in proc.stdout.split(b"\0") if p]
+          with report.open("a", encoding="utf-8") as out:
+              out.write(f"Git merge exit code: 1; unmerged files: {len(files)}\n\n")
+              out.write("## Git merge output\n\n```\n" + pathlib.Path("merge-command.log").read_text(errors="replace") + "\n```\n\n")
+              for i, f in enumerate(files, 1):
+                  out.write(f"## {i}. `{f}`\n\n")
+                  info = subprocess.run(["git", "ls-files", "-u", "--", f], capture_output=True, text=True)
+                  out.write("Stages (1=base, 2=RuCMU, 3=CMU):\n\n```\n" + info.stdout + "```\n\n")
+                  path = pathlib.Path(f)
+                  if path.is_file() and path.stat().st_size <= 25_000_000:
+                      try:
+                          lines = path.read_text(errors="replace").splitlines(keepends=True)
+                      except OSError:
+                          lines = []
+                      blocks = []
+                      current = []
+                      inside = False
+                      for n, line in enumerate(lines, 1):
+                          if line.startswith("<<<<<<< "):
+                              inside = True
+                              current = [f"[line {n}] " + line]
+                          elif inside:
+                              current.append(line)
+                              if line.startswith(">>>>>>> "):
+                                  blocks.append("".join(current))
+                                  current = []
+                                  inside = False
+                      if blocks:
+                          out.write("### All conflict blocks\n\n")
+                          for block in blocks:
+                              out.write("```diff\n" + block + ("" if block.endswith("\n") else "\n") + "```\n\n")
+                      else:
+                          out.write("No inline markers (may be binary, rename, delete/modify, or another index-level conflict).\n\n")
+                  else:
+                      out.write("Nonregular or large file; stage object IDs above.\n\n")
+          print("UNMERGED_COUNT=" + str(len(files)))
+          print("UNMERGED_FILES_BEGIN")
+          print("\n".join(files))
+          print("UNMERGED_FILES_END")
+          PY
+          if [ -s conflict-files.txt ]; then
+            python3 .github/scripts/resolve_cmu_upstream_20261020.py
+            git add -u
+            if [ -n "$(git ls-files -u)" ]; then
+              echo "Unresolved index entries remain" >&2
+              exit 1
+            fi
+            git rm .github/workflows/cmu-upstream-20261020.yml .github/scripts/resolve_cmu_upstream_20261020.py
+            git diff --cached --check
+            git commit -m "Merge CMU upstream through $(git rev-parse --short=12 FETCH_HEAD) with RuCMU fixes"
+            git push origin HEAD:refs/heads/codex/cmu-upstream-20261020
+            echo "sync_result=merged_after_conflicts" >> "$GITHUB_OUTPUT"
+          else
+            echo "sync_result=merge_error" >> "$GITHUB_OUTPUT"
+            exit 1
+          fi
+
+      - name: Upload exact conflict report and merge diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cmu-upstream-20261020-conflict-report
+          path: |
+            conflict-report.md
+            conflict-files.txt
+            conflict-diffs.patch
+            git-status.txt
+            merge-command.log
+          if-no-files-found: warn
+          retention-days: 30

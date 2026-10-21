@@ -196,9 +196,6 @@ ent-RUMCPlatinumPowderItem = порошок платины
 ent-RUMCUraniumPowderItem = порошок урана
     .desc = Мелкоизмельчённый порошок урана.
 
-ent-RUMCIronSheet = лист железа
-    .desc = Лист железа.
-
 ent-RUMCAluminumSheet = лист алюминия
     .desc = Лист алюминия.
 
