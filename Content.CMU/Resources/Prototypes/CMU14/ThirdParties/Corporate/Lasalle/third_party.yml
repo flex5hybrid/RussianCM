@@ -116,7 +116,7 @@
   hidden: false
 
 - type: entity
-  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  parent: AU14BaseMobSpeciesOrganicWeYu
   id: RMCRandomHumanoidHIGOPER
   name: HIG Rifleman
   components:
@@ -244,7 +244,7 @@
   hidden: false
 
 - type: entity
-  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  parent: AU14BaseMobSpeciesOrganicWeYu
   id: RUMC14RandomHumanoidHIGLeader
   name: HIG Leader
   components:
@@ -367,7 +367,7 @@
   hidden: false
 
 - type: entity
-  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  parent: AU14BaseMobSpeciesOrganicWeYu
   id: RUMC14RandomHumanoidHIGMedic
   name: HIG Medic
   components:
@@ -477,7 +477,7 @@
   hidden: false
 
 - type: entity
-  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  parent: AU14BaseMobSpeciesOrganicWeYu
   id: RUMC14RandomHumanoidHIGEngi
   name: HIG Enginner
   components:
@@ -607,7 +607,7 @@
   hidden: false
 
 - type: entity
-  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  parent: AU14BaseMobSpeciesOrganicWeYu
   id: RUMC14RandomHumanoidHIGSynth
   name: HIG Synth
   components:
