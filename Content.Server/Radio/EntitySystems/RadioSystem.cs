@@ -263,7 +263,7 @@ public sealed partial class RadioSystem : SharedRadioSystem
                 && (HasComp<YautjaComponent>(maskListener)
                     || (TryComp<GhostComponent>(maskListener, out var listenerGhost)
                         && listenerGhost.CanGhostInteract
-                        && _admin.IsAdmin(maskListener)));
+                        && _admin.HasAdminFlag(maskListener, Content.Shared.Administration.AdminFlags.GhostSenses))); // cmu edit
 
             if (listenerEntity.HasValue
                 && ((listenerEntity.Value != messageSource

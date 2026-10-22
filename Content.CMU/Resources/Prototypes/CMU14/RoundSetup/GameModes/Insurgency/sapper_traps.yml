@@ -187,6 +187,7 @@
     maxIntensity: 1
     canCreateVacuum: false
   - type: ProjectileGrenade
+    triggerKey: trigger # RuMC edit
     evenSpread: true
     minVelocity: 0.5
     maxVelocity: 1.5

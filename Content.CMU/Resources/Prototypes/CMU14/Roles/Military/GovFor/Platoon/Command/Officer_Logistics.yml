@@ -28,8 +28,8 @@
   roundComponents:
   - type: AU14CallToAttentionAbility
   - type: AU14CallsignRole
-    suffix: "05"
-    commandElement: true
+    suffix: OPS
+    auxiliaryElement: true # LONGBOW OPS, the logistics net is the auxiliary net
   - type: Skills
     preset: AU14SkillPresetOfficerLogistics
   - type: JobPrefix

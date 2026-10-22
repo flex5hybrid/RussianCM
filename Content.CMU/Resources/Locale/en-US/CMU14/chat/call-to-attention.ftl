@@ -1,6 +1,15 @@
-au14-call-to-attention-notice = You snap to attention!
+au14-call-to-attention-notice = You stand at attention!
 au14-call-to-attention-callout-room-attention = ROOM, ATTENTION!!
 au14-call-to-attention-callout-room-tenchut = ROOM TENCHUT!!
 au14-call-to-attention-callout-commander-on-deck = COMMANDER ON DECK!!
+au14-salute-order-notice = You salute.
+au14-salute-order-callout-salute = SALUTE!!
+au14-salute-order-callout-salute-sharp = RENDER HONORS!!
+au14-salute-order-callout-present-arms = PRESENT ARMS!!
+au14-military-order-silence = Silence
+au14-military-order-salute = Salute
+au14-military-order-attention = Stand at attention
+au14-action-military-order-name = Issue order
+au14-action-military-order-description = Open the military order selector.
 au14-emote-name-snap-to-attention = Snap to Attention
 au14-emote-msg-snap-to-attention = snaps to attention.

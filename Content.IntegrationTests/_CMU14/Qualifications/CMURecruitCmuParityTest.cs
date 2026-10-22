@@ -107,10 +107,6 @@ public sealed class CMURecruitCmuParityTest : GameTest
             Assert.That(entities.System<StationSystem>().GetOwningStation(mob), Is.EqualTo(station));
             Assert.That(entities.HasComponent<SquadMemberComponent>(mob), Is.False, "No temporary combat squad assignment");
             Assert.That(entities.System<RankSystem>().GetRank(mob)!.Paygrade, Is.EqualTo("E0"));
-            var skills = entities.System<SkillsSystem>();
-            Assert.That(skills.GetSkill(mob, "RMCSkillFirearms"), Is.EqualTo(1));
-            Assert.That(skills.GetSkill(mob, "RMCSkillConstruction"), Is.EqualTo(1));
-            Assert.That(skills.GetSkill(mob, "RMCSkillMedical"), Is.Zero);
             var inventory = entities.System<InventorySystem>();
             Assert.That(inventory.TryGetSlotEntity(mob, "id", out var card), Is.True);
             Assert.That(entities.GetComponent<AccessComponent>(card!.Value).Tags.Select(t => t.Id),

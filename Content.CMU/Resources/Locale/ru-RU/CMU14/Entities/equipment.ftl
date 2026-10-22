@@ -4,6 +4,7 @@ ent-AU14HAZOPSequipmentvendor = автомат снаряжения
 
 ent-CMUAirtightSealSpace =
     .suffix = CMU, Космос
+    .desc = { ent-CMWallReinforcedHeavyAlmayer.desc }
 
 ent-CMUVehicleAPCWolfpackTurret = башня «Волчьей стаи»
 

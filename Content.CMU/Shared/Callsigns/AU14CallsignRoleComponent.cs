@@ -11,6 +11,15 @@ public sealed partial class AU14CallsignRoleComponent : Component
     [DataField]
     public bool CommandElement;
 
+    // logistics staff work the auxiliary net, so they sit under the faction's
+    // auxiliary squad word (LONGBOW) even though nobody slots them into that squad
+    [DataField]
+    public bool AuxiliaryElement;
+
+    // short role tag shown before the callsign on radio, e.g. "SL" -> (SL) ALPHA 6
+    [DataField]
+    public string? RadioTag;
+
     // directory console section this role is listed under (AIR, MP, MEDICAL, INTEL);
     // null = command element or squad as usual
     [DataField]

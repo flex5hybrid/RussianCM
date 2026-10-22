@@ -1,6 +1,15 @@
-au14-call-to-attention-notice = Вы резко встаёте по стойке смирно!
+au14-call-to-attention-notice = Вы замираете по стойке смирно!
 au14-call-to-attention-callout-room-attention = В ПОМЕЩЕНИИ, СМИРНО!!
 au14-call-to-attention-callout-room-tenchut = ВСЕМ СМИРНО!!
 au14-call-to-attention-callout-commander-on-deck = КОМАНДИР НА ПАЛУБЕ!!
+au14-salute-order-notice = Вы отдаёте честь.
+au14-salute-order-callout-salute = ОТДАТЬ ЧЕСТЬ!!
+au14-salute-order-callout-salute-sharp = ЧЕСТЬ ОФИЦЕРУ!!
+au14-salute-order-callout-present-arms = К ОРУЖИЮ, ЧЕСТЬ!!
+au14-military-order-silence = Заткнуться
+au14-military-order-salute = Отдать честь
+au14-military-order-attention = Встать смирно
+au14-action-military-order-name = Приказ
+au14-action-military-order-description = Открыть меню военных приказов.
 au14-emote-name-snap-to-attention = Встать по стойке смирно
 au14-emote-msg-snap-to-attention = резко встаёт по стойке смирно.

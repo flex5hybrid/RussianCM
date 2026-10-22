@@ -1,4 +1,4 @@
-## Приказ о тишине — способность CO
+## Приказ о тишине
 au14-silence-order-notice = Вы ощущаете присутствие старшего офицера.
 au14-silence-order-callout-silence = Тишина!!
 au14-silence-order-callout-shhhh = Тс-с-с!!

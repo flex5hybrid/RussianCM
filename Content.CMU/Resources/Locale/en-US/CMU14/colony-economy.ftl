@@ -191,3 +191,49 @@ admin-console-trade-tax-section = -- Parcel Sales Tax --
 admin-console-current-trade-tax = Current Parcel Sales Tax: { $percent }%
 admin-console-trade-tax-description = Taken from what the drone pays for a parcel sold on a trade platform. That share goes to the colony budget, the rest to the seller.
 admin-console-trade-tax-announcement = Colony parcel sales tax has been set to { $percent }%. That share of every parcel sold on a trade platform goes to the colony.
+
+# Shared console screen pieces
+cmu-economy-sales-tax = Sales tax
+cmu-economy-income-tax = Income tax
+cmu-economy-transit-tariff = Transit tariff
+cmu-economy-embargoes = Embargoes
+cmu-economy-trade-pacts = Trade pacts
+cmu-economy-none = None
+
+# Corporate affairs console screen
+cmu-corporate-heading = CORPORATE AFFAIRS
+cmu-corporate-subheading = COLONY LIAISON OFFICE // TRANSIT & SUPPORT
+cmu-corporate-treasury = Corporate Treasury
+cmu-corporate-withdraw-tax = Withdrawals pay { $percent }% colony income tax.
+cmu-corporate-withdraw-no-tax = Withdrawals are currently untaxed.
+cmu-corporate-tariff = Transit Tariff
+cmu-corporate-current-tariff = Current rate
+cmu-corporate-exact = EXACT RATE (0-{ $max }%)
+cmu-corporate-apply = APPLY
+cmu-corporate-tariff-announced = Every tariff change is announced colony-wide.
+cmu-corporate-support = Corporate Support
+cmu-corporate-support-hint = Call in corporate security, synthetics or contractors, paid from the corporate budget.
+cmu-corporate-footer = Tariff income is paid into the corporate budget from every submission.
+
+# Budget console screen
+cmu-budget-heading = COLONY BUDGET
+cmu-budget-subheading = COLONY TREASURY // ADMINISTRATION
+cmu-budget-treasury = Treasury
+cmu-budget-payroll = Payroll
+cmu-budget-payroll-hint = Pays every department's staff now, from each department's own budget.
+cmu-budget-dispense = DISPENSE ALL SALARIES
+cmu-budget-dispense-confirm = CONFIRM PAYDAY
+cmu-budget-departments = Departments
+cmu-budget-department-count = { $count ->
+    [one] 1 DEPARTMENT
+   *[other] { $count } DEPARTMENTS
+}
+cmu-budget-transfer-amount = TRANSFER AMOUNT
+cmu-budget-transfer = TRANSFER
+cmu-budget-department-budget = BUDGET { $amount }
+cmu-budget-total = Held by departments
+cmu-budget-footer = Transfers move money from the colony budget into a department's budget.
+
+# Cash vendor front
+cmu-cash-vendor-credit = CREDIT
+cmu-cash-vendor-other = Other

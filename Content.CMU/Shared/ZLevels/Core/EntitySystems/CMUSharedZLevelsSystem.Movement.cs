@@ -30,7 +30,7 @@ public abstract partial class CMUSharedZLevelsSystem
 {
     public const int MaxZLevelsBelowRendering = 8;
 
-    private const float ZGravityForce = 9.8f;
+    public const float ZGravityForce = 9.8f;
     private const float ZVelocityLimit = 20.0f;
     protected const float MinActiveZVelocity = 0.05f;
 
@@ -288,6 +288,15 @@ public abstract partial class CMUSharedZLevelsSystem
                 continue;
             }
 
+            var beforeMovement = new CMUZBeforeMovementEvent(frameTime);
+            RaiseLocalEvent(uid, ref beforeMovement);
+
+            if (_hoverQuery.TryComp(uid, out var hover))
+            {
+                UpdateZHover(uid, zPhys, hover, xform, physics, frameTime);
+                continue;
+            }
+
             var oldVelocity = zPhys.Velocity;
             var oldHeight = zPhys.LocalPosition;
 
@@ -313,8 +322,10 @@ public abstract partial class CMUSharedZLevelsSystem
                     "tick",
                     $"frame={frameTime:F4} oldLocal={oldHeight:F3} local={zPhys.LocalPosition:F3} oldVel={oldVelocity:F3} vel={zPhys.Velocity:F3} distance={distanceToGround:F3} sticky={stickyGround} hasGround={hasGroundContact} fallingGround={fallingGroundContact} snap={groundSnapDistance:F3} body={physics.BodyStatus}");
 
+            // Throwing owns the airborne window even when a horizontal boost starts at floor height.
             if (hasGroundContact &&
-                physics.BodyStatus != BodyStatus.OnGround)
+                physics.BodyStatus != BodyStatus.OnGround &&
+                !HasComp<ThrownItemComponent>(uid))
             {
                 _physics.SetBodyStatus(uid, physics, BodyStatus.OnGround);
             }
@@ -691,6 +702,7 @@ public abstract partial class CMUSharedZLevelsSystem
         zPhys.LocalPosition = 0;
         DirtyZPhysics(uid, zPhys, oldVelocity, oldHeight);
         RemComp<CMUZFallingComponent>(uid);
+        RemComp<CMUZHoverComponent>(uid);
     }
 
     private void TryProcessZLevelBoundary(EntityUid uid, CMUZPhysicsComponent zPhys, bool stickyGround)
@@ -1124,7 +1136,7 @@ public abstract partial class CMUSharedZLevelsSystem
 
             //No ZEntities found, check floor tiles
             var tileFound = _map.TryGetTileRef(checkingGridUid, checkingGrid, checkingTile, out var tileRef);
-            var tileEmpty = !tileFound || tileRef.Tile.IsEmpty;
+            var tileEmpty = !tileFound || CMUZLevelOpeningCache.IsFallThroughTile(tileRef.Tile, TilDefMan);
             var tileType = _debugFalling && tileFound ? tileRef.Tile.TypeId.ToString() : "none";
             // RUMC: a tile with something on it that lets a body through is not the ground; the condition that was here (kept): if (tileFound && !tileEmpty)
             if (tileFound &&
@@ -1172,7 +1184,8 @@ public abstract partial class CMUSharedZLevelsSystem
         {
             if (_dropshipDeckQuery.HasComp(candidate.Owner) &&
                 _map.TryGetTileRef(candidate.Owner, candidate.Comp,
-                    _map.WorldToTile(candidate.Owner, candidate.Comp, worldPosition), out var deckTile) && !deckTile.Tile.IsEmpty)
+                    _map.WorldToTile(candidate.Owner, candidate.Comp, worldPosition), out var deckTile) &&
+                !CMUZLevelOpeningCache.IsFallThroughTile(deckTile.Tile, TilDefMan))
             {
                 gridUid = candidate.Owner;
                 grid = candidate.Comp;
@@ -1722,7 +1735,7 @@ public abstract partial class CMUSharedZLevelsSystem
             return false;
 
         if (_map.TryGetTileRef(aboveGrid, mapAboveGrid, world, out var tileRef) &&
-            !tileRef.Tile.IsEmpty)
+            !CMUZLevelOpeningCache.IsFallThroughTile(tileRef.Tile, TilDefMan))
             return true;
 
         return false;
@@ -1746,7 +1759,7 @@ public abstract partial class CMUSharedZLevelsSystem
             return false;
 
         if (_map.TryGetTileRef(aboveGrid, mapAboveGrid, world, out var tileRef) &&
-            !tileRef.Tile.IsEmpty)
+            !CMUZLevelOpeningCache.IsFallThroughTile(tileRef.Tile, TilDefMan))
             return true;
 
         return false;
@@ -1774,7 +1787,7 @@ public abstract partial class CMUSharedZLevelsSystem
         {
             var tile = _map.WorldToTile(checkingMap, checkingGrid, worldPosition);
             if (_map.TryGetTileRef(checkingMap, checkingGrid, tile, out var tileRef) &&
-                !tileRef.Tile.IsEmpty)
+                !CMUZLevelOpeningCache.IsFallThroughTile(tileRef.Tile, TilDefMan))
             {
                 if (!_mapQuery.TryComp(checkingMap.Owner, out var map))
                     return false;

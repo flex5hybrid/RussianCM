@@ -1,8 +1,8 @@
 - type: entity
   parent: ActionMarineBase
   id: ActionMarineCallToAttention
-  name: Call to Attention
-  description: Orders visible personnel to snap to attention and lower their voices.
+  name: au14-action-military-order-name
+  description: au14-action-military-order-description
   components:
   - type: Action
     itemIconStyle: NoItem

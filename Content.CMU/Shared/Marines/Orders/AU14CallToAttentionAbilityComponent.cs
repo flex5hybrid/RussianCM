@@ -12,7 +12,7 @@ namespace Content.Shared.CMU14.Marines.Orders;
 public sealed partial class AU14CallToAttentionAbilityComponent : Component
 {
     /// <summary>
-    /// Officers can remain an attention focus without receiving the order action.
+    /// Whether this entity can open the military-order selector.
     /// </summary>
     [DataField, AutoNetworkedField]
     public bool CanCall = true;
@@ -24,14 +24,33 @@ public sealed partial class AU14CallToAttentionAbilityComponent : Component
     public EntityUid? ActionEntity;
 
     [DataField, AutoNetworkedField]
-    public ProtoId<EmotePrototype> Emote = "AU14SnapToAttention";
+    public ProtoId<EmotePrototype> SaluteEmote = "Salute";
+
+    [DataField, AutoNetworkedField]
+    public ProtoId<EmotePrototype> AttentionEmote = "AU14SnapToAttention";
 
     [DataField]
-    public List<LocId> Callouts = new()
+    public List<LocId> SaluteCallouts = new()
+    {
+        "au14-salute-order-callout-salute",
+        "au14-salute-order-callout-salute-sharp",
+        "au14-salute-order-callout-present-arms",
+    };
+
+    [DataField]
+    public List<LocId> AttentionCallouts = new()
     {
         "au14-call-to-attention-callout-room-attention",
         "au14-call-to-attention-callout-room-tenchut",
-        "au14-call-to-attention-callout-commander-on-deck",
+    };
+
+    [DataField]
+    public List<LocId> SilenceCallouts = new()
+    {
+        "au14-silence-order-callout-silence",
+        "au14-silence-order-callout-shhhh",
+        "au14-silence-order-callout-ahem",
+        "au14-silence-order-callout-lock-it-up",
     };
 
     /// <summary>
@@ -40,11 +59,14 @@ public sealed partial class AU14CallToAttentionAbilityComponent : Component
     [DataField, AutoNetworkedField]
     public TimeSpan Cooldown = TimeSpan.FromSeconds(60);
 
-    /// <summary>
-    /// How long non-exempt targets are forced to whisper after the order.
-    /// </summary>
     [DataField, AutoNetworkedField]
-    public TimeSpan WhisperDuration = TimeSpan.FromSeconds(10);
+    public TimeSpan SaluteReadyAt;
+
+    [DataField, AutoNetworkedField]
+    public TimeSpan AttentionReadyAt;
+
+    [DataField, AutoNetworkedField]
+    public TimeSpan SilenceReadyAt;
 
     /// <summary>
     /// Maximum sight range of the effect in tiles.
@@ -64,4 +86,7 @@ public sealed partial class AU14CallToAttentionAbilityComponent : Component
     /// </summary>
     [DataField]
     public TimeSpan ResponseStagger = TimeSpan.FromSeconds(2.5);
+
+    [DataField]
+    public float OfficerNearbyRange = 7f;
 }

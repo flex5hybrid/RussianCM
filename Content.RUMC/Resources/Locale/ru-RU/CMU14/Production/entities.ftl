@@ -237,3 +237,4 @@ ent-RUMCClayWallCokeCoal = глиняная стена
 
 ent-RUMCCokeCoal1 =
     .suffix = Один
+    .desc = { ent-RUMCCokeCoal.desc }

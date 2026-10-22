@@ -1,44 +1,24 @@
-using Robust.Shared.GameStates;
-using Robust.Shared.Prototypes;
-
 namespace Content.Shared.CMU14.Marines.Orders;
 
 /// <summary>
-/// Added to the GOVFOR Platoon Commander. Grants the Silence Order ability with its own independent cooldown.
+/// Grants access to the silence order in the shared military-order selector.
 /// </summary>
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+[RegisterComponent]
 public sealed partial class AU14SilenceOrderAbilityComponent : Component
 {
-    [DataField, AutoNetworkedField]
-    public EntProtoId SilenceAction = "ActionMarineGovforSilence";
-
-    [DataField, AutoNetworkedField]
-    public EntityUid? SilenceActionEntity;
-
-    /// <summary>
-    /// Cooldown in seconds between uses. Independent from other marine orders.
-    /// </summary>
-    [DataField, AutoNetworkedField]
+    [DataField]
     public TimeSpan Cooldown = TimeSpan.FromSeconds(10);
 
     /// <summary>
     /// How long targets remain whisper-only.
     /// </summary>
-    [DataField, AutoNetworkedField]
+    [DataField]
     public TimeSpan Duration = TimeSpan.FromSeconds(15);
 
     /// <summary>
     /// Radius of the effect in tiles.
     /// </summary>
-    [DataField, AutoNetworkedField]
+    [DataField]
     public float Range = 7f;
 
-    [DataField]
-    public List<LocId> Callouts = new()
-    {
-        "au14-silence-order-callout-silence",
-        "au14-silence-order-callout-shhhh",
-        "au14-silence-order-callout-ahem",
-        "au14-silence-order-callout-lock-it-up",
-    };
 }

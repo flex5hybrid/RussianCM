@@ -34,6 +34,11 @@
 - Автомат боеприпасов: содержит боеприпасы — от стандартных до AP и барабанов ML66A. Выдавайте разумные запросы.
 - Автомат излишков: содержит ключи шифрования, форму, броню и шлемы. Запрошенное отсюда обычно можно выдавать свободно.
 
+<!-- CMU14: scope availability -->
+During Insurgency, night vision scopes are unavailable from requisitions vendors. Regular scopes remain available, and CLF vendors retain their night vision scopes.
+In every game mode, squad leaders may choose one 2x miniscope or night vision scope from their squad leader vendor.
+This is one scope total per person, even when using multiple squad leader racks.
+Both scopes fit standard GOVFOR rifles and the scout rifle. Specialist rifles with fixed optics retain their built-in scopes.
 <!-- CMU14: sling mounting modes -->
 Нажмите Alt и щёлкните по снятому двухточечному ремню, чтобы переключить крепление между планкой и подствольным слотом, освободив планку для прицела.
 Подствольное крепление работает на оружии, уже совместимом с этим ремнём, но не позволяет заменить несъёмные встроенные модули.
