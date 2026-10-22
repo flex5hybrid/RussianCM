@@ -1,0 +1,179 @@
+- type: entity
+  parent: RMCEngineerKit
+  id: RuCMEngineerKitSD
+  suffix: Filled, RuCM, Solar Devils
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCCableCoil30
+      amount: 1
+    - id: CMAPCElectronics
+      amount: 3
+    - id: RMCPowerCellHigh
+      amount: 1
+    - id: RMCExplosiveBreachingCharge
+      amount: 2
+
+- type: entity
+  parent: [RMCBaseMarineArmor, RMCAllowSuitStorageClothingArmorPMC]
+  id: RuCMArmorUSCMM4XSmart
+  name: M4-X Armor Harness
+  description: A next-generation armor system for Marines fighting xenomorphs, featuring an acid-resistant polymer coating and reinforced ballistic protection.
+  suffix: No Suitlamp, RuCM, Solar Devils
+  components:
+  - type: RMCArmorSpeedTier
+    speedTier: medium
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
+  - type: Sprite
+    sprite: _RuMC14/SolarDevils/armor_m4x.rsi 
+  - type: CMArmor
+    melee: 35
+    bullet: 25 # CLOTHING_ARMOR_MEDIUMHIGH
+    bio: 40 # CLOTHING_ARMOR_MEDIUM
+    explosionArmor: 20 # CLOTHING_ARMOR_MEDIUM
+  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+    walkModifier: 0.725
+    sprintModifier: 0.725
+  - type: Storage
+    grid:
+    - 0,0,5,1 # 2 slots
+  - type: Corrodible
+    isCorrodible: false
+  - type: ClothingBlockBackpack
+  - type: SmartGunArmor
+  - type: ItemCamouflage
+    camouflageVariations: { }
+
+- type: entity
+  parent: [RMCBaseMarineArmor, RMCAllowSuitStorageClothingArmorPMC]
+  id: RuCMArmorUSCMM4X
+  name: M4-X Armor
+  description: A next-generation armor system for Marines fighting xenomorphs, featuring an acid-resistant polymer coating and reinforced ballistic protection.
+  suffix: No Suitlamp, RuCM, Solar Devils
+  components:
+  - type: RMCArmorSpeedTier
+    speedTier: medium
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
+  - type: Sprite
+    sprite: _RuMC14/SolarDevils/armor_m4x.rsi 
+  - type: CMArmor
+    melee: 35
+    bullet: 25 # CLOTHING_ARMOR_MEDIUMHIGH
+    bio: 40 # CLOTHING_ARMOR_MEDIUM
+    explosionArmor: 20 # CLOTHING_ARMOR_MEDIUM
+  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+    walkModifier: 0.725
+    sprintModifier: 0.725
+  - type: Storage
+    grid:
+    - 0,0,5,1 # 2 slots
+  - type: Corrodible
+    isCorrodible: false
+  - type: ItemCamouflage
+    camouflageVariations: { }
+
+- type: entity
+  parent: ArmorHelmetM10
+  id: RuCMUSCMM4X
+  suffix: Solar Devils, RuCM
+  name: M4-X Helmet
+  description: A next-generation combat helmet designed for use with the M4-X armor. Its full-face design protects against light ballistic impacts and provides enhanced acid resistance.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/SolarDevils/helmet_m4x.rsi 
+  - type: Clothing
+    sprite: _RuMC14/SolarDevils/helmet_m4x.rsi 
+  - type: Corrodible
+    isCorrodible: false
+  - type: RMCEarProtection
+  - type: CMArmor
+    melee: 35
+    bullet: 25
+    bio: 40
+    explosionArmor: 20
+  - type: ItemCamouflage
+    camouflageVariations: { }
+
+- type: entity
+  parent: SquadBase
+  id: RuCMSquadSolarDevils
+  suffix: Solar Devils, RuCM
+  name: Solar Devils
+  components:
+  - type: SquadTeam
+    color: "#A52A2A"
+    accessLevels:
+    - CMAccessAlpha
+    - CMAccessBravo
+    - CMAccessCharlie
+    - CMAccessDelta
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: UASOF
+    canSupplyDrop: false
+    group: SOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_civillian
+  - type: Tag
+    tags:
+    - RuCMSquadSolarDevils
+
+- type: Tag
+  id: RuCMSquadSolarDevils
+
+- type: entity
+  parent: AU14HeadsetGovforMarine
+  id: RuCMHeadsetSD
+  suffix: Solar Devils, RuCM
+  name: Solar Devils Headset
+  description: Issued to members of the Solar Devils.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/headsets.rsi
+    state: soc_headset
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - CMEncryptionKeyColony
+  - type: RMCHeadset
+    channels:
+    - UASOF
+  - type: GrantSquadLeaderTracker
+    defaultMode: SquadLeader
+    trackerModes:
+    - SquadLeader
+    - BattleBuddy
+    - PrimaryLandingZone
+
+- type: entity
+  parent: RuCMHeadsetSD
+  id: RuCMHeadsetSDSL
+  suffix: Leader, RuCM, Solar Devils
+  description:
+  components:
+  - type: RMCHeadset
+    radioTextIncrease: 2
+
+- type: entity
+  parent: [AU14CamoUSCMFatigues, RMCJumpsuitMarinePatchBase]
+  id: RuCMJumpsuitMarineSD
+  suffix: Patch, Webbing, RuCM, Solar Devils
+  components:
+  - type: WebbingClothing
+    startingWebbing: RMCToolWebbingFilled
+
+- type: entity
+  parent: [AU14CamoUSCMFatigues, RMCJumpsuitMarinePatchBase]
+  id: RuCMJumpsuitMarineSDMed
+  suffix: Patch, Webbing, RuCM, Solar Devils
+  components:
+  - type: WebbingClothing
+    startingWebbing: CMWebbingSurgicalGreen

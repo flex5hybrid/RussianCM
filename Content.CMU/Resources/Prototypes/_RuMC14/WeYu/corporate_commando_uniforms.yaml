@@ -1,0 +1,75 @@
+- type: entity
+  parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
+  id: RuCMWYBWJumpsuit
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: Bio-Weapons Department Uniform
+  description: The uniform of the Ve-Yu Bio-Weapon Department is well-protected against impacts and acid.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/uniform_bioweapons.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - RMCPatchWeYaBlack
+
+- type: entity
+  parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
+  id: RuCMJumpsuitVeteranPMCCommandoWeYu
+  name: We-Yu elite commando combat uniform
+  description: Armored uniform used by elite "Weyland-Yutani" Corporate Commandos. Lightweight and comfortable, yet offering strong protection.
+  suffix: Corporate Commando, RuCM, We-Yu Corporate Commandos
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Uniforms/PMC/officer.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - RMCPatchWeYaBlack
+  - type: WebbingClothing
+    startingWebbing: RuCMWebbingPMCCommandoWeYu
+
+
+- type: entity
+  parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
+  id: RuCMJumpsuitVeteranPMCCommandoWeYuSL
+  name: We-Yu elite commando combat uniform
+  description: Armored uniform used by elite "Weyland-Yutani" Corporate Commandos. Lightweight and comfortable, yet offering strong protection.
+  suffix: Commando Squad Leader, RuCM, We-Yu Corporate Commandos
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/uniform_commando_leader.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - RMCPatchWeYaBlack
+  - type: WebbingClothing
+    startingWebbing: RuCMWebbingPMCCommandoWeYuSL
+
+
+- type: entity
+  parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
+  id: RuCMJumpsuitVeteranPMCCommandoWeYuSG
+  name: We-Yu elite commando combat uniform
+  description: Armored uniform used by elite "Weyland-Yutani" Corporate Commandos. Lightweight and comfortable, yet offering strong protection.
+  suffix: Commando SmartGun, RuCM, We-Yu Corporate Commandos
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Uniforms/PMC/officer.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - RMCPatchWeYaBlack
+  - type: WebbingClothing
+    startingWebbing: RuCMWebbingPMCCommandoWeYuSG
+
+
+- type: entity
+  parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
+  id: RuCMJumpsuitVeteranPMCCommandoWeYa
+  name: We-Yu elite commando combat uniform
+  description: Armored uniform used by elite Weyland-Yutani commandos. Lightweight and comfortable, yet offering strong protection.
+  suffix: Commando Dogcatcher, RuCM, We-Yu Corporate Commandos
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/uniform_dogcatcher.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - RMCPatchWeYaBlack
+  - type: WebbingClothing
+    startingWebbing: RMCWebbingPMCCommandoWeYu

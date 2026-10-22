@@ -1,0 +1,522 @@
+- type: entity
+  parent: SquadBase
+  id: RuCMSquadWeYaCommando
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: We-Yu Corporate Commando
+  components:
+  - type: SquadTeam
+    color: "#C0C0C0"
+    background:
+      sprite: _RMC14/Interface/cm_job_icons.rsi
+      state: empty
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: radioWEYU
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_pmc
+    canSupplyDrop: false
+    group: WeYa
+    leaderIcon:
+      sprite: _RuMC14/WeYu/job_icons.rsi 
+      state: leader
+
+- type: Tag
+  id: RuCMSquadWeYaCommando
+
+- type: entity
+  parent: RMCHeadsetDistressWeYa
+  id: RuCMHeadsetDistressWeYaCommando
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: headset We-Yu
+  description: A specialized headset used by corporate personnel.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - CMEncryptionKeyWEYUColony
+  - type: GrantTacMapAlert
+
+- type: entity
+  parent: RMCHeadsetDistressWeYaCommando
+  id: RuCMHeadsetDistressWeYaCommandoLeader
+  suffix: Leader, RuCM, We-Yu Corporate Commandos
+  description:
+  components:
+  - type: RMCHeadset
+    radioTextIncrease: 2
+
+### Storages
+
+- type: entity
+  parent: CMWebbingBlack
+  id: RuCMWebbingPMCCommandoWeYu
+  suffix: Commando, Filled, RuCM, We-Yu Corporate Commandos
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCGrenadeBlastM12
+      amount: 2
+    - id: RMCMREWeYaPMC
+    - id: CMFireExtinguisherPortable
+    - id: RMCHandcuffs
+
+- type: entity
+  parent: CMWebbingBlack
+  id: RuCMWebbingPMCCommandoWeYuSL
+  suffix: Commando, Filled, RuCM, We-Yu Corporate Commandos
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCLaserDesignator
+    - id: RMCGrenadeBlastM12
+    - id: RMCMREWeYaPMC
+    - id: CMFireExtinguisherPortable
+    - id: CMCrowbar
+
+- type: entity
+  parent: CMWebbingBlack
+  id: RuCMWebbingPMCCommandoWeYuSG
+  suffix: Commando, Filled, RuCM, We-Yu Corporate Commandos
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCGrenadeBlastM12
+      amount: 2
+    - id: RMCMREWeYaPMC
+    - id: CMFireExtinguisherPortable
+    - id: CMCrowbar
+
+- type: entity
+  parent: RMCSatchelLightpack
+  id: RuCMSatchelCommandoWeYa
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: We-Yu Commando backpack
+  description: An ergonomic, rugged, high-capacity backpack designed for Weyland-Yutani commandos.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/backpack_rifleman.rsi
+
+- type: entity
+  parent: RMCSatchelLightpack
+  id: RuCMSatchelCommandoWeYaLeader
+  suffix: Squad Leader, We-Yu Corporate Commandos, RuCM
+  name: We-Yu Commando backpack
+  description: An ergonomic, rugged, high-capacity backpack designed for Weyland-Yutani commandos.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/backpack_commando_leader.rsi
+
+- type: entity
+  parent: RMCSatchelLightpack
+  id: RuCMSatchelCommandoWeYaDog
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: We-Yu Commando backpack
+  description: An ergonomic, rugged, high-capacity backpack designed for Weyland-Yutani commandos.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/backpack_dogcatcher.rsi
+
+### Armor & Helmets
+
+- type: entity
+  parent: RMCArmorM4PMCNoLight
+  id: RuCMArmorM4PMCCommandoWeYa
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: Elite Armor MY7
+  description: A complex system of overlapping plates, designed to make the wearer highly resistant to fire from small arms.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/armor_rifleman.rsi
+  - type: CMArmor
+    melee: 30 # CLOTHING_ARMOR_VERYHIGH (melee);
+    bullet: 40 # CLOTHING_ARMOR_ULTRAHIGH (bullets); going with an intermediate value until more damage types get implemented (more likely to be hit by bullets than melee)
+    bio: 25 # CLOTHING_ARMOR_MEDIUM
+    explosionArmor: 35 # CLOTHING_ARMOR_VERYHIGH
+  - type: RMCArmorSpeedTier
+    speedTier: light
+  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_MEDIUM
+    walkModifier: 0.727
+    sprintModifier: 0.727
+  - type: Storage
+    grid:
+    - 0,0,7,1 # 4 slots
+  - type: Corrodible
+    isCorrodible: false
+
+- type: entity
+  parent: RMCArmorM4PMCNoLight
+  id: RuCMArmorM4PMCCommandoWeYaLeader
+  suffix: Squad Leader, We-Yu Corporate Commandos, RuCM
+  name: Elite Armor MY7
+  description: A complex system of overlapping plates, designed to make the wearer highly resistant to small-arms fire. A reinforced version intended specifically for the group leader.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/armor_commando_leader.rsi
+  - type: CMArmor
+    melee: 30 # CLOTHING_ARMOR_VERYHIGH (melee);
+    bullet: 45 # CLOTHING_ARMOR_ULTRAHIGH (bullets); going with an intermediate value until more damage types get implemented (more likely to be hit by bullets than melee)
+    bio: 25 # CLOTHING_ARMOR_MEDIUM
+    explosionArmor: 35 # CLOTHING_ARMOR_VERYHIGH
+  - type: RMCArmorSpeedTier
+    speedTier: light
+  - type: Storage
+    grid:
+    - 0,0,7,1 # 4 slots
+  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_MEDIUM
+    walkModifier: 0.727
+    sprintModifier: 0.727
+  - type: Corrodible
+    isCorrodible: false  
+  
+- type: entity
+  parent: ArmorHelmetM10
+  id: RuCMArmorHelmetPMCCommandoWeYa
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: Elite PMC helmet MY7
+  description: A fully enclosed armored helmet designed for use with the MY7 system.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/helmet_rifleman.rsi 
+  - type: Clothing
+    sprite: _RuMC14/WeYu/helmet_rifleman.rsi 
+  - type: Corrodible
+    isCorrodible: false
+  - type: RMCEarProtection
+  - type: CMArmor
+    melee: 30
+    bullet: 40
+    bio: 30
+    explosionArmor: 40
+  - type: IntegratedVisors
+    visorsToAdd:
+    - RMCVisorSquadIntegrated
+    - RMCVisorMedicalAdvancedIntegrated
+  - type: ItemCamouflage
+    camouflageVariations: { }
+  
+- type: entity
+  parent: ArmorHelmetPMCCommandoWeYa
+  id: RuCMArmorHelmetPMCCommandoWeYaLeader
+  suffix: Squad Leader, We-Yu Corporate Commandos, RuCM
+  name: Elite PMC helmet MY7
+  description: A fully enclosed armored helmet, designed for the MY7L kit. Version for the squad leader.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/helmet_commando_leader.rsi 
+  - type: Clothing
+    sprite: _RuMC14/WeYu/helmet_commando_leader.rsi 
+  - type: Corrodible
+    isCorrodible: false
+  - type: RMCEarProtection
+  - type: ItemCamouflage
+    camouflageVariations: { }
+
+- type: entity
+  parent: [ ClothingEyesBase , ShowMedicalIcons ]
+  id: RuCMGlassesM4WeYa
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: M4 night vision device
+  description: Headset and night vision system. Allows for an illuminated view of the surrounding environment.
+  components:
+  - type: Item
+    storedRotation: 0
+  - type: Sprite
+    sprite: _RuMC14/WeYu/night_vision_goggles.rsi 
+    layers:
+    - state: icon
+      map: [ "icon" ]
+  - type: Clothing
+    sprite: _RuMC14/WeYu/night_vision_goggles.rsi
+  - type: NightVisionItem
+    mesons: true
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.NightVisionItemVisuals.Active:
+        icon:
+          True: { state: icon_on }
+          False: { state: icon }
+  
+- type: entity
+  parent: ArmorHelmetPMCCommandoWeYa
+  id: RuCMArmorHelmetPMCCommandoWeYaSmart
+  suffix: Smartgunner, We-Yu Corporate Commandos, RuCM
+  name: Elite PMC helmet MY7SG
+  description: A fully enclosed armored helmet, designed for use with the MY7SG system.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/helmet_smartgunner.rsi
+  - type: Clothing
+    sprite: _RuMC14/WeYu/helmet_smartgunner.rsi
+  - type: Corrodible
+    isCorrodible: false
+  - type: RMCEarProtection
+  - type: ItemCamouflage
+    camouflageVariations: { }
+
+- type: entity
+  parent: RMCArmorM4PMCNoLight
+  id: RuCMArmorM4PMCCommandoWeYaSmart
+  suffix: Smartgunner, We-Yu Corporate Commandos, RuCM
+  name: Elite Armor MY7SG
+  description: A complex system of overlapping plates, designed to make the wearer highly resistant to fire from small arms.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/armor_smartgunner.rsi
+  - type: CMArmor
+    melee: 30 # CLOTHING_ARMOR_VERYHIGH (melee);
+    bullet: 40 # CLOTHING_ARMOR_ULTRAHIGH (bullets); going with an intermediate value until more damage types get implemented (more likely to be hit by bullets than melee)
+    bio: 25 # CLOTHING_ARMOR_MEDIUM
+    explosionArmor: 35 # CLOTHING_ARMOR_VERYHIGH
+  - type: Storage
+    grid:
+    - 0,0,7,1 # 4 slots
+  - type: RMCArmorSpeedTier
+    speedTier: light
+  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_MEDIUM
+    walkModifier: 0.727
+    sprintModifier: 0.727
+  - type: Corrodible
+    isCorrodible: false
+  - type: ClothingBlockBackpack
+  - type: SmartGunArmor
+
+- type: entity
+  parent: ArmorHelmetPMCCommandoWeYa
+  id: RuCMArmorHelmetPMCCommandoWeYaDogcatcher
+  suffix: Dogcatcher, We-Yu Corporate Commandos, RuCM
+  name: Elite PMC M5X Helmet
+  description: Fully enclosed ballistic helmet, designed for use with the M5X system.
+  components:
+    - type: Sprite
+      sprite: _RuMC14/WeYu/helmet_dogcatcher.rsi
+    - type: Clothing
+      sprite: _RuMC14/WeYu/helmet_dogcatcher.rsi
+    - type: ParasiteResistance
+      maxCount: 10
+    - type: Corrodible
+      isCorrodible: false
+    - type: RMCEarProtection
+    - type: ItemCamouflage
+      camouflageVariations: {}
+
+- type: entity
+  parent: RMCArmorM4PMCNoLight
+  id: RuCMArmorM4PMCCommandoWeYaDogcatcher
+  suffix: Dogcatcher, We-Yu Corporate Commandos, RuCM
+  name: M5X Elite Armor
+  description: A complex system of overlapping plates, designed to make the wearer highly resistant to the xeno threat.
+  components:
+    - type: Sprite
+      sprite: _RuMC14/WeYu/armor_dogcatcher.rsi
+    - type: CMArmor
+      melee: 45 # CLOTHING_ARMOR_VERYHIGH (melee);
+      bullet: 20 # CLOTHING_ARMOR_ULTRAHIGH (bullets); going with an intermediate value until more damage types get implemented (more likely to be hit by bullets than melee)
+      bio: 40 # CLOTHING_ARMOR_MEDIUM
+      explosionArmor: 15 # CLOTHING_ARMOR_VERYHIGH
+    - type: RMCArmorSpeedTier
+      speedTier: light
+    - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_MEDIUM
+      walkModifier: 0.727
+      sprintModifier: 0.727
+    - type: Storage
+      grid:
+        - 0,0,5,1 # 3 slots
+    - type: Corrodible
+      isCorrodible: false
+
+### Medical & Small utilities/items
+
+- type: entity
+  parent: CMAutoInjector
+  id: RuCMMeralyneAutoInjector
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: meralyne autoinjector
+  description: An autoinjector containing 3 doses of Meralyne, an advanced medication for treating bleeding and circulatory disorders.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 45
+        reagents:
+        - ReagentId: CMMeralyne
+          Quantity: 45
+  - type: CMRefillableSolution
+    reagents:
+      CMMeralyne: 45
+
+- type: entity
+  parent: CMAutoInjector
+  id: RuCMDermalineAutoInjector
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: dermaline autoinjector
+  description: An auto-injector containing 3 doses of Dermalin, an advanced burn medication.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 45
+        reagents:
+        - ReagentId: CMDermaline
+          Quantity: 45
+  - type: CMRefillableSolution
+    reagents:
+      CMDermaline: 45
+
+- type: entity
+  parent: CMFirstAidKit
+  id: RuCMCommandoWeYaAidKitFilled
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: Weyland-Yutani first aid kit
+  description: It belongs to some kind of special unit. If you have medical training, you’ll be able to fit it into your backpack.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/first_aid_kit.rsi
+    layers:
+    - state: WeYaAidKit
+    - state: kit_empty
+      map: [ "openLayer" ]
+  - type: Item
+    size: Normal
+    sprite: _RuMC14/WeYu/first_aid_kit.rsi
+    heldPrefix: WeYaAidKit
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,13,1 # 7 slots
+    whitelist:
+      tags:
+      - CMSurgicalCaseFilled
+      - DiscreteHealthAnalyzer
+      - Dropper
+      - Pill
+      - Bottle
+      - Syringe
+      - PillCanister
+      - CMTraumaKit
+      - CMBurnKit
+      - Ointment
+      - CMOintment
+      - Brutepack
+      - Bloodpack
+      - CMUSplintItem
+      - RMCPenlight
+      - CMAutoInjector
+      - RMCSyringeCase
+      - CMSurgicalLine
+      - CMSynthGraft
+      - CMRollerItem
+      - BodyBag
+      - Hypospray
+      - CMBloodPack
+      - CMSurgicalCase
+      components:
+      - Hypospray
+  - type: IgnoreContentsSize
+    items:
+      tags:
+      - CMSurgicalCaseFilled
+      - PillCanister
+      - CMSurgicalCase
+      - RMCSyringeCase
+  - type: StorageFill
+    contents:
+    - id: CMUpgradedKitMedicalFilled
+      amount: 2
+    - id: CMBloodPackFull
+    - id: CMUSplintItem
+    - id: RMCSyringeCaseFilledPMC
+    - id: CMSurgicalCaseFilled
+    - id: CMPortableSurgicalBedSpawnFolded
+
+- type: entity
+  parent: RMCBaseBioSuit
+  id: RuCMBWLabcoat
+  name: We-Yu laboratory coat for protection against chemical substances
+  description: A sturdy lab coat that now more closely resembles a long coat. It is crafted from durable, wear-resistant materials and designed for conducting hazardous experiments in the field. It is most commonly seen on personnel from the Biological Weapons Division of the Weyland-Yutani Corporation.
+  suffix: Generic, RMC, RuCM, We-Yu Corporate Commandos
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/labcoat_bioweapons.rsi
+  - type: Clothing
+    sprite: _RuMC14/WeYu/labcoat_bioweapons.rsi
+  - type: CMHardArmor
+  - type: Storage
+    grid:
+    - 0,0,3,1 # 2 slots
+    maxItemSize: Huge
+
+- type: entity
+  parent: RMCBaseBioSuit
+  id: RuCMBWLabcoatDir
+  name: We-Yu laboratory coat for protection against chemical substances
+  description: A sturdy lab coat that now more closely resembles a long coat. It is crafted from durable, wear-resistant materials and designed for conducting hazardous experiments in the field. It is most commonly seen on personnel from the Biological Weapons Division of the Weyland-Yutani Corporation.
+  suffix: Generic, RMC, RuCM, We-Yu Corporate Commandos
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/armor_bioweapons_director.rsi
+  - type: Clothing
+    sprite: _RuMC14/WeYu/armor_bioweapons_director.rsi
+  - type: CMHardArmor
+  - type: Storage
+    grid:
+    - 0,0,3,1 # 2 slots
+    maxItemSize: Huge
+
+- type: entity
+  parent: RMCHoodBioGeneral
+  id: RuCMBioHelmetBW
+  name: We-Yu chemical protection hood
+  description: A durable laboratory hood. Constructed from wear-resistant materials designed for conducting hazardous experiments in the field. Typically found in the possession of the W-Y Corporation’s biological weapons division.
+  suffix: Bio-Weapons, RuCM, We-Yu Corporate Commandos
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/hood_bioweapons.rsi
+  - type: Clothing
+    sprite: _RuMC14/WeYu/hood_bioweapons.rsi
+
+- type: entity
+  parent: CMGlassesSecurity
+  id: RuCMGlassesBW
+  name: Durable W-Y laboratory safety goggles
+  description: One-piece molded laboratory safety goggles, capable of withstanding even the harshest working conditions in a laboratory. Typically seen on personnel from the Biological Weapons Division of the Weyland-Yutani Corporation.
+  suffix: Bio-Weapons, RuCM, We-Yu Corporate Commandos
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/goggles_bioweapons.rsi
+  - type: Clothing
+    sprite: _RuMC14/WeYu/goggles_bioweapons.rsi
+
+- type: entity
+  parent: RMCBriefcase
+  id: RuCMBriefcaseBW
+  suffix: We-Yu Corporate Commandos, RuCM
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/briefcase_bioweapons.rsi
+  - type: StorageFill
+    contents:
+    - id: AU14ObjectiveItemWYLaptop
+    - id: CMPenClicky
+    - id: RMCWeYaClipboard
+    - id: CMMagazinePistolMK80
+    - id: CMMagazinePistolMK80
+    - id: RMCPillCyanide
+    - id: RMCPillCyanide
+    - id: RMCPillCyanide
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000

@@ -1,0 +1,587 @@
+- type: startingGear
+  id: RuCMGearMarineSDRifleman
+  equipment:
+    head: RuCMUSCMM4X
+    mask: RMCMaskKeffiyeh
+    ears: RuCMHeadsetSD
+    jumpsuit: RuCMJumpsuitMarineSD
+    outerClothing: RuCMArmorUSCMM4X
+    gloves: AU14PVEHandsInsulatedBlackMarine
+    shoes: CMBootsBlackFilled
+    suitstorage: AU14WeaponRifleM41AMK1Tactical
+    id: CMDogtagRifleman
+    belt: CMBeltMarine
+    back: RMCSatchelMarineIntelChestrig
+    pocket1: AU14PouchIFAKFill
+    pocket2: RMCPouchFlareFilled
+  storage:
+    back:
+    - RuCMEngineerKitSD
+    - CMPacketGrenadeHighExplosiveFilled
+    - RMCPacketGrenadeIncendiaryFilled
+    - CMSheetMetal30
+    - CMSheetPlasteel30
+    - RMCMotionDetector
+    - RMCPatchSolarDevils
+    - RMCVisorNightVision
+    belt:
+    - RMCMagazineRifleM54CMK1HEAP
+    - RMCMagazineRifleM54CMK1WP
+    - CMMagazineRifleM54CMK1AP
+    - CMMagazineRifleM54CMK1AP
+    - CMMagazineRifleM54CMK1AP
+    outerClothing:
+    - RMCLaserDesignator
+    - AU14HemostaticGauzePacket
+    - CMUSplintItem
+
+- type: playTimeTracker
+  id: RuCMJobMarineSDRifleman
+
+- type: job
+  parent: CMJobBase
+  id: RuCMUSCMRiflemanBase
+  name: Rifleman
+  description: You are a member of the 3rd Battalion, the Solar Devils, part of the 2nd Division, 1st Marine Regiment. Unlike most service members, you are a well-trained and properly equipped career Marine.
+  playTimeTracker: RuCMJobMarineSDRifleman
+  basePlaytimeTracker: true
+  hidden: true
+
+- type: job
+  parent: RuCMUSCMRiflemanBase
+  id: RuCMMarineSDRifleman
+  roundSide: ThirdParty
+  roundForce: USCM
+  roundRole: RuCMMarineSDRifleman
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: private
+    background:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_ua
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuCMSquadSolarDevils
+  - type: Skills
+    skills:
+        RMCSkillFireman: 3
+        RMCSkillEngineer: 3
+        RMCSkillConstruction: 2
+        RMCSkillFirearms: 2
+        RMCSkillEndurance: 3
+        RMCSkillJtac: 1
+        RMCSkillVehicles: 1
+        RMCSkillPowerLoader: 1
+  - type: SpotterWhitelist
+
+  name: Rifleman
+  description: au14-usarmy-armored-greeting
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    RMCRankPrivateFirstClass:
+      entity: AU14ChevronUSCMPrivateFirstClass
+      requirements: []
+  spawnMenuRoleName: USCM Devil (RuMC, 3rd Party)
+  startingGear: RuCMGearMarineSDRifleman
+  greeting: au14-usarmy-armored-greeting
+  icon: "CMJobIconEmpty"
+  joinNotifyCrew: false
+  supervisors: cm-job-name-squad-leader
+  accessGroups:
+  - AU14GovforSquad
+  hidden: true
+
+- type: entity
+  parent: AU14BaseMobSpeciesOrganicUSArmy
+  id: RuCMJobUSCMDevilsRifleman
+  suffix: Solar Devils, RuCM
+  name: SD Rifleman
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadSolarDevils
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Rifleman
+    description: au14-usarmy-armored-greeting
+    job: RuCMMarineSDRifleman
+    raffle:
+      settings: short
+    rules: au14-usarmy-rules
+
+- type: startingGear
+  id: RuCMJobMarineSDLeader
+  equipment:
+    id: CMDogtagSquadLeader
+    jumpsuit: RuCMJumpsuitMarineSD
+    outerClothing: RuCMArmorUSCMM4X
+    gloves: AU14PVEHandsInsulatedBlackMarine
+    head: RuCMUSCMM4X
+    shoes: CMBootsBlackFilled
+    mask: RMCMaskKeffiyeh
+    ears: RuCMHeadsetSDSL
+    eyes: RMCGlassesMedicalHUDGlasses
+    back: RMCSatchelMarineIntelChestrig
+    belt: CMBeltMarine
+    pocket1: AU14PouchIFAKFill
+    pocket2: RMCPouchFlareFilled
+    suitstorage: AU14WeaponRifleM41AMK1Tactical
+  storage:
+    back:
+    - CMFirstAidKitFilled
+    - CMAdvFirstAidKitFilled
+    - CMAdvFirstAidKitFilled
+    - CMFirstAidKitSurgeryFilled
+    - RMCMotionDetector
+    - RMCPatchSolarDevils
+    - RMCVisorNightVision
+    - RuCMEngineerKitSD
+    outerClothing:
+    - RMCLaserDesignator
+    - AU14HemostaticGauzePacket
+    - CMUSplintItem
+    belt:
+    - RMCMagazineRifleM54CMK1HEAP
+    - RMCMagazineRifleM54CMK1WP
+    - CMMagazineRifleM54CMK1AP
+    - CMMagazineRifleM54CMK1AP
+    - CMMagazineRifleM54CMK1AP
+
+- type: playTimeTracker
+  id: RuCMMarineSDLeader
+
+- type: job
+  parent: CMJobBase
+  id: RuCMUSCMLeaderBase
+  name: Squad Leader
+  description: You are a member of the 3rd Battalion, the Solar Devils, part of the 2nd Division, 1st Marine Regiment. Unlike most service members, you are a well-trained and properly equipped career Marine.
+  playTimeTracker: RuCMMarineSDLeader
+  basePlaytimeTracker: true
+  hidden: true
+
+- type: job
+  parent: RuCMUSCMLeaderBase
+  id: RuCMMarineSDLeader
+  roundSide: ThirdParty
+  roundForce: USCM
+  roundRole: RuCMMarineSDLeader
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: private
+    background:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_ua
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuCMSquadSolarDevils
+  - type: Skills
+    skills:
+        RMCSkillCqc: 3
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 3
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 3
+        RMCSkillEndurance: 3
+        RMCSkillJtac: 3
+        RMCSkillLeadership: 3
+        RMCSkillVehicles: 1
+        RMCSkillSurgery: 1
+        RMCSkillMedical: 2
+        RMCSkillPowerLoader: 1
+        RMCSkillIntel: 1
+        RMCSkillPilot: 2
+  - type: SpotterWhitelist
+  - type: JobPrefix
+    prefix: cm-job-prefix-squad-leader
+  - type: MarineOrders
+  - type: SquadLeader
+  - type: RMCTrackable
+  - type: RMCPointing
+
+  name: Squad Leader
+  description: au14-usarmy-armored-greeting
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    RMCRankStaffSergeant:
+      entity: AU14ChevronUSCMStaffSergeant
+      requirements: []
+  spawnMenuRoleName: USCM Devil Leader (RuMC, 3rd Party)
+  startingGear: RuCMJobMarineSDLeader
+  greeting: au14-usarmy-armored-greeting
+  icon: "CMJobIconSquadLeader"
+  joinNotifyCrew: false
+  accessGroups:
+  - AU14GovforSquad
+  hidden: true
+
+- type: entity
+  parent: AU14BaseMobSpeciesOrganicUSArmy
+  id: RuCMJobUSCMDevilsLeader
+  suffix: Squad Leader, Solar Devils, RuCM
+  name: SD Squad Leader
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadSolarDevils
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Squad Leader
+    description: au14-usarmy-armored-greeting
+    job: RuCMMarineSDLeader
+    raffle:
+      settings: short
+    rules: au14-usarmy-rules
+
+- type: startingGear
+  id: RuCMGearSDFTL
+  equipment:
+    head: RuCMUSCMM4X
+    ears: RuCMHeadsetSDSL
+    jumpsuit: RuCMJumpsuitMarineSD
+    outerClothing: RuCMArmorUSCMM4X
+    gloves: AU14PVEHandsInsulatedBlackMarine
+    shoes: CMBootsBlackFilled
+    suitstorage: AU14WeaponRifleM41AMK1Tactical
+    id: CMDogtagFireteamLeader
+    belt: CMBeltMarine
+    back: RMCBackpackRTO
+    pocket1: AU14PouchIFAKFill
+    pocket2: RMCPouchFlareFilled
+  storage:
+    belt:
+    - RMCMagazineRifleM54CMK1HEAP
+    - RMCMagazineRifleM54CMK1WP
+    - CMMagazineRifleM54CMK1AP
+    - CMMagazineRifleM54CMK1AP
+    - CMMagazineRifleM54CMK1AP
+    outerClothing:
+    - RMCLaserDesignator
+    - AU14HemostaticGauzePacket
+    - CMUSplintItem
+    back:
+    - CMPacketGrenadeHighExplosiveFilled
+    - RMCMotionDetector
+    - RMCSentry
+    - RMCPatchSolarDevils
+    - RuCMEngineerKitSD
+    - RMCVisorNightVision
+
+- type: playTimeTracker
+  id: RuCMJobSDFTL
+
+- type: job
+  parent: CMJobBase
+  id: RuCMUSCMFTLBase
+  name: Fireteam Leader
+  description: You are a member of the 3rd Battalion, the Solar Devils, part of the 2nd Division, 1st Marine Regiment. Unlike most service members, you are a well-trained and properly equipped career Marine.
+  playTimeTracker: RuCMJobSDFTL
+  basePlaytimeTracker: true
+  hidden: true
+
+- type: job
+  parent: RuCMUSCMFTLBase
+  id: RuCMJobSDFTL
+  roundSide: ThirdParty
+  roundForce: USCM
+  roundRole: RuCMJobSDFTL
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: private
+    background:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_ua
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuCMSquadSolarDevils
+  - type: Skills
+    skills:
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 3
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 3
+        RMCSkillLeadership: 1
+        RMCSkillEndurance: 2
+        RMCSkillJtac: 4
+        RMCSkillPilot: 1
+        RMCSkillPowerLoader: 1
+        RMCSkillVehicles: 1
+  - type: SpotterWhitelist
+  - type: MarineOrders
+  - type: RMCTrackable
+  - type: RMCPointing
+
+  name: Fireteam Leader
+  description: au14-usarmy-armored-greeting
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    RMCRankCorporal:
+      entity: AU14ChevronUSCMCorporal
+      requirements: []
+  spawnMenuRoleName: USCM Devil FTL (RuMC, 3rd Party)
+  startingGear: RuCMGearSDFTL
+  greeting: au14-usarmy-armored-greeting
+  icon: "CMJobIconFireteamLeader"
+  joinNotifyCrew: false
+  accessGroups:
+  - AU14GovforSquad
+  hidden: true
+
+- type: entity
+  parent: AU14BaseMobSpeciesOrganicUSArmy
+  id: RuCMJobUSCMDevilsFTL
+  suffix: Solar Devils, RuCM
+  name: SD Fireteam Leader
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadSolarDevils
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Fireteam Leader
+    description: au14-usarmy-armored-greeting
+    job: RuCMJobSDFTL
+    raffle:
+      settings: short
+    rules: au14-usarmy-rules
+
+- type: startingGear
+  id: RuCMGearSDMedic
+  equipment:
+    ears: RuCMHeadsetSD
+    head: RuCMUSCMM4X
+    jumpsuit: RuCMJumpsuitMarineSDMed
+    outerClothing: RuCMArmorUSCMM4X
+    gloves: AU14PVEHandsInsulatedBlackMarine
+    shoes: CMBootsBlackFilled
+    eyes: RMCGlassesMedicalHUDGlasses
+    suitstorage: AU14WeaponRifleM41AMK1Tactical
+    id: CMDogtagHospitalCorpsman
+    belt: AU14BeltMedicBagSupportSynthRMC
+    back: RMCSatchelMarineIntelChestrig
+    pocket1: RMCPouchMagazineLarge
+    pocket2: RMCPouchFlareFilled
+  storage:
+    back:
+    - CMFirstAidKitFilled
+    - CMAdvFirstAidKitFilled
+    - CMAdvFirstAidKitFilled
+    - CMFirstAidKitSurgeryFilled
+    - CMSynthGraft
+    - CMHealthAnalyzer
+    - CMDefibrillator
+    - RMCVisorNightVision
+    outerClothing:
+    - RMCLaserDesignator
+    - AU14HemostaticGauzePacket
+    - CMUSplintItem
+    pocket1:
+    - RMCMagazineRifleM54CMK1HEAP
+    - RMCMagazineRifleM54CMK1WP
+    - CMMagazineRifleM54CMK1AP
+    - CMMagazineRifleM54CMK1AP
+
+- type: playTimeTracker
+  id: RuCMJobSDMedic
+
+- type: job
+  parent: CMJobBase
+  id: RuCMUSCMMedBase
+  name: Corpsman
+  description: You are a member of the 3rd Battalion, the Solar Devils, part of the 2nd Division, 1st Marine Regiment. Unlike most service members, you are a well-trained and properly equipped career Marine.
+  playTimeTracker: RuCMJobSDMedic
+  basePlaytimeTracker: true
+  hidden: true
+
+- type: job
+  parent: RuCMUSCMMedBase
+  id: RuCMJobSDMedic
+  roundSide: ThirdParty
+  roundForce: USCM
+  roundRole: RuCMJobSDMedic
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: private
+    background:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_ua
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuCMSquadSolarDevils
+  - type: Skills
+    skills:
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 3
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 3
+        RMCSkillMedical: 3
+        RMCSkillSurgery: 2
+        RMCSkillEndurance: 3
+        RMCSkillJtac: 1
+        RMCSkillPowerLoader: 1
+        RMCSkillVehicles: 1
+  - type: SpotterWhitelist
+
+  name: Corpsman
+  description: au14-usarmy-armored-greeting
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    RMCRankLanceCorporal:
+      entity: AU14ChevronUSCMLanceCorporal
+      requirements: []
+  spawnMenuRoleName: USCM Devil Medic (RuMC, 3rd Party)
+  startingGear: RuCMGearSDMedic
+  greeting: au14-usarmy-armored-greeting
+  icon: "CMJobIconHospitalCorpsman"
+  joinNotifyCrew: false
+  accessGroups:
+  - AU14GovforSquad
+  hidden: true
+
+- type: entity
+  parent: AU14BaseMobSpeciesOrganicUSArmy
+  id: RuCMJobUSCMDevilsMedic
+  suffix: Medic, Solar Devils, RuCM
+  name: SD Corpsman
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadSolarDevils
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Corpsman
+    description: au14-usarmy-armored-greeting
+    job: RuCMJobSDMedic
+    raffle:
+      settings: short
+    rules: au14-usarmy-rules
+
+- type: startingGear
+  id: RuCMJobSDSmart
+  equipment:
+    id: CMDogtagSmartGunOperator
+    jumpsuit: RuCMJumpsuitMarineSD
+    outerClothing: RuCMArmorUSCMM4XSmart
+    gloves: AU14PVEHandsInsulatedBlackMarine
+    head: RuCMUSCMM4X
+    shoes: CMBootsBlackFilled
+    ears: RuCMHeadsetSD
+    back: RMCScabbardMacheteSGFilled
+    belt: RMCBeltSmartGunOperatorPistol
+    pocket1: AU14PouchIFAKFill
+    pocket2: AU14PouchIFAKFill
+    suitstorage: RMCSmartGun
+    eyes: RMCGlassesSmartGunSight
+  storage:
+    outerClothing:
+    - RMCPatchSolarDevils
+    - RMCLaserDesignator
+    belt:
+    - CMWeaponPistolM1984
+    - RMCMagazinePistolM1984HP
+    - RMCMagazineSmartGunirradiated
+    - RMCMagazineSmartGunirradiated
+    - RMCMagazineSmartGunirradiated
+
+- type: playTimeTracker
+  id: RuCMSDSmart
+
+- type: job
+  parent: CMJobBase
+  id: RuCMUSCMSmartBase
+  name: Smartgunner
+  description: You are a member of the 3rd Battalion, the Solar Devils, part of the 2nd Division, 1st Marine Regiment. Unlike most service members, you are a well-trained and properly equipped career Marine.
+  playTimeTracker: RuCMSDSmart
+  basePlaytimeTracker: true
+  hidden: true
+
+- type: job
+  parent: RuCMUSCMSmartBase
+  id: RuCMSDSmart
+  roundSide: ThirdParty
+  roundForce: USCM
+  roundRole: RuCMSDSmart
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: private
+    background:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_ua
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuCMSquadSolarDevils
+  - type: Skills
+    skills:
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 3
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 3
+        RMCSkillEndurance: 2
+        RMCSkillJtac: 1
+        RMCSkillVehicles: 1
+        RMCSkillPowerLoader: 1
+        RMCSkillSmartGun: 1
+  - type: SpotterWhitelist
+
+  name: Smartgunner
+  description: au14-usarmy-armored-greeting
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    RMCRankLanceCorporal:
+      entity: AU14ChevronUSCMLanceCorporal
+      requirements: []
+  spawnMenuRoleName: USCM Devil Smart (RuMC, 3rd Party)
+  startingGear: RuCMJobSDSmart
+  greeting: au14-usarmy-armored-greeting
+  icon: "CMJobIconSmartGunOperator"
+  joinNotifyCrew: false
+  accessGroups:
+  - AU14GovforSquad
+  hidden: true
+
+- type: entity
+  parent: AU14BaseMobSpeciesOrganicUSArmy
+  id: RuCMJobUSCMDevilsSmart
+  suffix: Smartgunner, Solar Devils, RuCM
+  name: SD Smartgunner
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadSolarDevils
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Smartgunner
+    description: au14-usarmy-armored-greeting
+    job: RuCMSDSmart
+    raffle:
+      settings: short
+    rules: au14-usarmy-rules

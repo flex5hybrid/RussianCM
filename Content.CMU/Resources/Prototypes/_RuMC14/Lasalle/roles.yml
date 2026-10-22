@@ -1,0 +1,631 @@
+- type: entity
+  parent: SquadBase
+  id: RuCMSquadHIG
+  suffix: Lasalle, RuCM
+  name: HIG
+  components:
+  - type: SquadTeam
+    color: "#3e5f8a"
+    background:
+      sprite: _RMC14/Interface/cm_job_icons.rsi
+      state: empty
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: radioWEYU
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_pmc
+    canSupplyDrop: false
+    group: HIG
+    leaderIcon:
+      sprite: _RuMC14/Lasalle/job_icons.rsi 
+      state: leader
+  - type: Tag
+    tags:
+    - RuCMSquadHIG
+
+- type: Tag
+  id: RuCMSquadHIG
+
+- type: startingGear
+  id: RuCMJobHIGOper
+  equipment:
+    id: RMCIDCardPMC
+    jumpsuit: RuCMUniformLasalle
+    outerClothing: RuCMLBArmorN
+    gloves: RuCMGlovesLB
+    head: RuCMHelmetOperLB
+    shoes: RuCMShoesLBFilled
+    mask: RuCMGasmaskLB
+    ears: RuCMCHeadsetDistressLB
+    back: RMCSatchelLightpackBlack5Slot
+    belt: RMCBeltPMC
+    pocket1: AU14PouchIFAKFill
+    pocket2: RMCPouchToolsSocMarineRaiderFill
+    suitstorage: RuCMWeaponSMGM36
+  storage:
+    back:
+    - CMStunbaton
+    - RMCBoxZiptie
+    - RMCRadioHandheldColonyOff
+    - RMCPacketGrenadeSmokeFilled
+    outerClothing:
+    - CMMRE
+    - RMCBinoculars
+    belt:
+    - RuCMMagazineSMGM36
+    - RuCMMagazineSMGM36
+    - RuCMMagazineSMGM36
+    - RuCMMagazineSMGM36
+    - RuCMMagazineSMGM36
+
+- type: playTimeTracker
+  id: RuCMHIGOPER
+
+- type: job
+  parent: CMJobBase
+  id: RuCMHIGOPER
+  roundSide: ThirdParty
+  roundForce: LB
+  roundRole: RuCMHIGOPER
+  roundComponents:
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuCMSquadHIG
+  - type: Skills
+    skills:
+      RMCSkillCqc: 1
+      RMCSkillFirearms: 3
+      RMCSkillPolice: 2
+      RMCSkillFireman: 2
+      RMCSkillConstruction: 2
+      RMCSkillEngineer: 1
+      RMCSkillEndurance: 5
+  - type: NpcFactionMember
+    factions:
+    - RuCMLB
+  - type: Language
+    spokenLanguages:
+    - English
+    - Japanese
+    - French
+    understoodLanguages:
+    - English
+    - Japanese
+    - French
+    currentLanguage: English
+    defaultLanguage: English
+
+  name: Rifleman
+  description: HIG Rifleman
+  playTimeTracker: RuCMHIGOPER
+  ranks:
+    RuCMRankHIGTrooper: []
+  spawnMenuRoleName: HIG Rifleman
+  startingGear: RuCMJobHIGOper
+  icon: "RuCMJobIconHIGOper"
+  joinNotifyCrew: false
+  accessGroups:
+  - auadmin
+  - Colonist
+  - CMCargoTech
+  - auorbitalmanagement
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  id: RuCMRandomHumanoidHIGOPER
+  suffix: Lasalle, RuCM
+  name: HIG Rifleman
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadHIG
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Rifleman
+    description: HIG RIfleman
+    job: RuCMHIGOPER
+    raffle:
+      settings: short
+
+- type: startingGear
+  id: RuCMJobHIGLeader # New
+  equipment:
+    id: RMCIDCardPMC
+    jumpsuit: RuCMUniformLasalle
+    outerClothing: RuCMLBArmorN
+    gloves: RuCMGlovesLB
+    head: RuCMHelmetSLLB
+    shoes: RuCMShoesLBFilled
+    mask: RuCMGasmaskLB
+    ears: RuCMCHeadsetDistressLB
+    back: RMCSatchelLightpackBlack
+    belt: RMCBeltHolsterPistolPMC
+    pocket1: RMCPouchToolsSocMarineRaiderFill
+    pocket2: RMCPouchMedicalSocDutchUnmarked
+    suitstorage: RuCMWeaponSMGM36
+    eyes: RMCGlassesMedicalHUDGlasses
+  storage:
+    back:
+    - AU14TeleBaton
+    - AU14PacketGrenadeFragM12Filled
+    - CMFireExtinguisherPortable
+    - RuCMMagazineSMGM36
+    - RuCMMagazineSMGM36
+    - RuCMMagazineSMGM36
+    - RuCMMagazineSMGM36
+    outerClothing:
+    - CMMRE
+    - RMCLaserDesignator
+    belt:
+    - RMCWeaponPistolB92FS
+    - RMCMagazinePistolB92FS
+    - RMCMagazinePistolB92FS
+    - RMCMagazinePistolB92FS
+    - RMCMagazinePistolB92FS
+    - RMCMagazinePistolB92FS
+    - RMCMagazinePistolB92FS
+    pocket2:
+    - CMHealthAnalyzer
+    - CMUpgradedTraumaKit10
+    - CMUpgradedTraumaKit10
+    - CMUpgradedBurnKit10
+    - CMUpgradedBurnKit10
+    - CMBicaridineAutoInjector
+    - CMKelotaneAutoInjector
+    - CMTricordrazineAutoInjectorNoSkill
+    - AU14OxycodoneAutoInjector
+    - CMDexalinPlusAutoInjector
+
+- type: playTimeTracker
+  id: RuCMHIGTeamLeader
+
+- type: job
+  parent: CMJobBase
+  id: RuCMHIGTeamLeader
+  roundSide: ThirdParty
+  roundForce: LB
+  roundRole: RuCMHIGTeamLeader
+  roundComponents:
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuCMSquadHIG
+  - type: Skills
+    skills:
+        RMCSkillConstruction: 2
+        RMCSkillCqc: 1
+        RMCSkillEndurance: 3
+        RMCSkillEngineer: 2
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 2
+        RMCSkillIntel: 1
+        RMCSkillJtac: 2
+        RMCSkillLeadership: 1
+        RMCSkillMedical: 1
+        RMCSkillVehicles: 1
+        RMCSkillPolice: 2
+        RMCSkillOverwatch: 1
+  - type: NpcFactionMember
+    factions:
+    - RuCMLB
+  - type: Language
+    spokenLanguages:
+    - English
+    - Japanese
+    - French
+    understoodLanguages:
+    - English
+    - Japanese
+    - French
+    currentLanguage: English
+    defaultLanguage: English
+  - type: MarineOrders
+
+  name: Leader
+  description: HIG Leader
+  playTimeTracker: RuCMHIGTeamLeader
+  ranks:
+    RuCMRankHIGTeamLead: []
+  spawnMenuRoleName: HIG Rifleman
+  startingGear: RuCMJobHIGLeader
+  icon: "RuCMJobIconHIGSL"
+  joinNotifyCrew: false
+  accessGroups:
+  - auadmin
+  - Colonist
+  - CMCargoTech
+  - auorbitalmanagement
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  id: RuCMRandomHumanoidHIGLeader
+  suffix: Squad Leader, Lasalle, RuCM
+  name: HIG Leader
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadHIG
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Leader
+    description: HIG Leader
+    job: RuCMHIGTeamLeader
+    raffle:
+      settings: short
+
+# Corpsman
+
+- type: startingGear
+  id: RuCMJobHIGMedic
+  equipment:
+    id: RMCIDCardPMC
+    jumpsuit: RuCMUniformLasalle
+    outerClothing: RuCMLBArmorN
+    gloves: RuCMGlovesLB
+    head: RuCMHelmetMedLB
+    shoes: RuCMShoesLBFilled
+    mask: RuCMGasmaskLB
+    ears: RuCMCHeadsetDistressLB
+    back: RMCSatchelMedicpack
+    belt: AU14BeltMedicBagSupportSynthBlack
+    pocket1: RMCPouchMedkitPMCFilled
+    pocket2: RMCPouchMedicalSocDutchUnmarked
+    suitstorage: RuCMWeaponSMGM36
+  storage:
+    back:
+      - RMCBoxZiptie
+      - AU14CMDefibrillator
+      - RMCPacketGrenadeSmokeFilled
+      - RMCBottleAntiZed
+      - RuCMMagazineSMGM36
+      - RuCMMagazineSMGM36
+      - RuCMMagazineSMGM36
+    outerClothing:
+      - CMMRE
+      - CMMRE
+    pocket2:
+      - CMHealthAnalyzer
+      - CMUpgradedTraumaKit10
+      - CMUpgradedTraumaKit10
+      - CMUpgradedBurnKit10
+      - CMUpgradedBurnKit10
+      - CMBicaridineAutoInjector
+      - CMKelotaneAutoInjector
+      - CMTricordrazineAutoInjector
+      - AU14OxycodoneAutoInjector
+      - CMDexalinPlusAutoInjector
+    belt:
+      - CMUCastItem
+      - AU14PillCanisterTramadol
+      - AU14PillCanisterOsteoCalc
+
+- type: playTimeTracker
+  id: RuCMHIGMedic
+
+- type: playTimeTracker
+  id: RuCMHIGEngi
+
+- type: job
+  parent: CMJobBase
+  id: RuCMHIGMedic
+  roundSide: ThirdParty
+  roundForce: LB
+  roundRole: RuCMHIGMedic
+  roundComponents:
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuCMSquadHIG
+  - type: Skills
+    skills:
+      RMCSkillCqc: 1
+      RMCSkillFirearms: 2
+      RMCSkillPolice: 2
+      RMCSkillFireman: 2
+      RMCSkillConstruction: 2
+      RMCSkillEngineer: 2
+      RMCSkillMedical: 2
+      RMCSkillSurgery: 1
+      RMCSkillEndurance: 3
+  - type: NpcFactionMember
+    factions:
+    - RuCMLB
+  - type: Language
+    spokenLanguages:
+    - English
+    - Japanese
+    - French
+    understoodLanguages:
+    - English
+    - Japanese
+    - French
+    currentLanguage: English
+    defaultLanguage: English
+
+  name: Medic
+  description: HIG Medic
+  playTimeTracker: RuCMHIGMedic
+  ranks:
+    RuCMRankHIGSpecialist: []
+  spawnMenuRoleName: HIG Medic
+  startingGear: RuCMJobHIGMedic
+  icon: "RuCMJobIconHIGCorpsman"
+  joinNotifyCrew: false
+  accessGroups:
+  - auadmin
+  - Colonist
+  - CMCargoTech
+  - auorbitalmanagement
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  id: RuCMRandomHumanoidHIGMedic
+  suffix: Medic, Lasalle, RuCM
+  name: HIG Medic
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadHIG
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Medic
+    description: HIG Medic
+    job: RuCMHIGMedic
+    raffle:
+      settings: short
+
+
+- type: startingGear
+  id: RuCMJobHIGEngi
+  equipment:
+    id: RMCIDCardPMC
+    jumpsuit: RuCMUniformLasalle
+    outerClothing: RuCMLBArmorN
+    gloves: RuCMGlovesLB
+    head: RuCMHelmetEngiLB
+    shoes: RuCMShoesLBFilled
+    mask: RuCMGasmaskLB
+    ears: RuCMCHeadsetDistressLB
+    back: RMCSatchelLightpackWelder
+    belt: AU14BeltUtilityFilled
+    pocket1: RMCPouchExplosiveFilledPlasticExplosives
+    pocket2: RMCPouchMagazineLargePMC
+    suitstorage: RuCMWeaponSMGM36
+  storage:
+    back:
+    - RMCBoxZiptie
+    - RMCSentry
+    - RMCPacketGrenadeSmokeFilled
+    - CMSheetMetal
+    - CMSheetMetal
+    - CMSheetPlasteel
+    - CMSheetPlasteel
+    outerClothing:
+    - CMMRE
+    - RMCGrenadeMFHS
+    pocket2:
+    - RuCMMagazineSMGM36
+    - RuCMMagazineSMGM36
+    - RuCMMagazineSMGM36
+    - RuCMMagazineSMGM36
+    head:
+    - CMOintment10
+    - AU14HemostaticGauze
+
+- type: job
+  parent: CMJobBase
+  id: RuCMHIGEngi
+  roundSide: ThirdParty
+  roundForce: LB
+  roundRole: RuCMHIGEngi
+  roundComponents:
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuCMSquadHIG
+  - type: Skills
+    skills:
+      RMCSkillFirearms: 2
+      RMCSkillPolice: 2
+      RMCSkillFireman: 2
+      RMCSkillConstruction: 3
+      RMCSkillEngineer: 4
+      RMCSkillMedical: 1
+      RMCSkillEndurance: 3
+      RMCSkillJtac: 2
+      RMCSkillCqc: 1
+      RMCSkillPowerLoader: 2
+  - type: NpcFactionMember
+    factions:
+    - RuCMLB
+  - type: Language
+    spokenLanguages:
+    - English
+    - Japanese
+    - French
+    understoodLanguages:
+    - English
+    - Japanese
+    - French
+    currentLanguage: English
+    defaultLanguage: English
+
+  name: Enginner
+  description: HIG Enginner
+  playTimeTracker: RuCMHIGEngi
+  ranks:
+    RuCMRankHIGSpecialist: []
+  spawnMenuRoleName: HIG Enginner
+  startingGear: RuCMJobHIGEngi
+  icon: "RuCMJobIconHIGComTech"
+  joinNotifyCrew: false
+  accessGroups:
+  - auadmin
+  - Colonist
+  - CMCargoTech
+  - auorbitalmanagement
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  id: RuCMRandomHumanoidHIGEngi
+  suffix: Lasalle, RuCM
+  name: HIG Enginner
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadHIG
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Enginner
+    description: HIG Enginner
+    job: RuCMHIGEngi
+    raffle:
+      settings: short
+
+- type: startingGear
+  id: RuCMGearHIGSynth
+  equipment:
+    id: RMCIDCardPMC
+    outerClothing: RuCMLBArmorN
+    head: RuCMHelmetOperLB
+    jumpsuit: RuCMUniformLasalleSynth
+    gloves: RuCMGlovesLB
+    shoes: RuCMShoesLBFilled
+    belt: AU14BeltMedicBagSupportSynthRMC
+    pocket1: AU14PouchToolsFilledComtech
+    pocket2: AU14PouchPoliceEquipmentSupportSynth
+    back: RMCSmartpackA1Black
+    ears: RuCMCHeadsetDistressLB
+  storage:
+    outerClothing:
+    - RMCNailgunCompact
+    - RMCMagazineSMGNailgun
+    back:
+    - RMCPortableDialysis
+    - CMScalpelManager
+    - AU14CMDefibrillator
+    - RMCMotionDetector
+    - CMPortableSurgicalBedSpawnFolded
+    - CMBloodPackFull
+    - CMBloodPackFull
+    - AU14MaintenanceJackSpecial
+    belt:
+    - AU14PillCanisterOsteoCalc
+    - AU14PillCanisterTramadol
+    - CMUCastItem
+
+- type: playTimeTracker
+  id: RuCMJobHIGSynth
+
+- type: job
+  parent: CMJobBase
+  id: RuCMJobHIGSynth
+  roundSide: ThirdParty
+  roundForce: LB
+  roundRole: RuCMJobHIGSynth
+  roundComponents:
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuCMSquadHIG
+  - type: Skills
+    skills:
+      RMCSkillCqc: 5
+      RMCSkillEngineer: 4
+      RMCSkillConstruction: 3
+      RMCSkillFirearms: 2
+      RMCSkillOverwatch: 1
+      RMCSkillMedical: 4
+      RMCSkillSurgery: 3
+      RMCSkillResearch: 1
+      RMCSkillMeleeWeapons: 2
+      RMCSkillPilot: 2
+      RMCSkillPolice: 2
+      RMCSkillFireman: 5
+      RMCSkillPowerLoader: 2
+      RMCSkillVehicles: 2
+      RMCSkillJtac: 3
+      RMCSkillIntel: 2
+      RMCSkillDomestics: 2
+      RMCSkillNavigations: 1
+  - type: NpcFactionMember
+    factions:
+    - RuCMLB
+  - type: DemoSpecWhitelist
+  - type: GrenadeSpecWhitelist
+  - type: ScoutWhitelist
+  - type: SniperWhitelist
+  - type: PyroWhitelist
+  - type: JobPrefix
+    prefix: rmc-job-prefix-synth
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/_RMC14/Weapons/synthpunch1.ogg
+      params:
+        variation: 0.15
+        volume: -1
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 35
+  - type: Synth
+  - type: Language
+    preset: AU14LanguagePresetSynth
+  - type: LanguageLearning
+    preset: AU14LanguageLearningPresetSynth
+  whitelisted: true
+  whitelistParent: RMCWhitelistMedium
+
+  name: Synth
+  description: HIG Synth
+  playTimeTracker: RuCMJobHIGSynth
+  ranks:
+    RuCMRankHIGSpecialist: []
+  spawnMenuRoleName: HIG Synth
+  startingGear: RuCMGearHIGSynth
+  icon: "RuCMJobIconHIGSynth"
+  joinNotifyCrew: false
+  accessGroups:
+  - auadmin
+  - Colonist
+  - CMCargoTech
+  - auorbitalmanagement
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  id: RuCMRandomHumanoidHIGSynth
+  suffix: Lasalle, RuCM
+  name: HIG Synth
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadHIG
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Synth
+    description: HIG Synth
+    job: RuCMJobHIGSynth
+    raffle:
+      settings: short

@@ -1,0 +1,223 @@
+- type: job
+  parent: CMJobBase
+  id: RuCMJobSuperSynth
+  roundSide: ThirdParty
+  roundForce: WY
+  roundRole: SuperSynth
+  roundComponents:
+  - type: Skills
+    skills:
+        RMCSkillCqc: 5
+        RMCSkillLeadership: 3
+        RMCSkillEndurance: 5
+        RMCSkillEngineer: 4
+        RMCSkillConstruction: 3
+        RMCSkillFirearms: 3
+        RMCSkillOverwatch: 1
+        RMCSkillMedical: 4
+        RMCSkillSurgery: 3
+        RMCSkillResearch: 1
+        RMCSkillMeleeWeapons: 2
+        RMCSkillPilot: 2
+        RMCSkillPolice: 2
+        RMCSkillFireman: 5
+        RMCSkillPowerLoader: 2
+        RMCSkillVehicles: 3
+        RMCSkillJtac: 4
+        RMCSkillIntel: 2
+        RMCSkillDomestics: 2
+        RMCSkillNavigations: 1
+        RMCSkillExecution: 1
+        RMCSkillSmartGun: 1
+  - type: CMVendorUser
+    id: AU14JobCivilianCorporateLiaison
+    points: 70
+  - type: JobPrefix
+    prefix: au14-job-prefix-corporateliaison
+  - type: Language
+    spokenLanguages:
+    - English
+    - SignLanguage
+    - TacticalSignLanguage
+    - Primitive
+    - Xeno
+    - Yautja
+    - Arcturian
+    - Binary
+    - Latin
+    - Legalese
+    - Portuguese
+    - Spanish
+    - Arabic
+    - French
+    - German
+    - Russian
+    - Japanese
+    - Mandarin
+    - Korean
+    - Turkish
+    - Swahili
+    - Afrikaans
+    - Swedish
+    - Esperanto
+    - Ukrainian
+    - Polish
+    - Czech
+    - Italian
+    - Irish
+    - Finnish
+    - Hungarian
+    - Albanian
+    - Serbian
+    - Lithuanian
+    - Dutch
+    - Persian
+    - Hindi
+    - Vietnamese
+    - Indonesian
+    - Filipino
+    - Urdu
+    - Yoruba
+    - Brazilian
+    - Slovak
+    - Romanian
+    understoodLanguages:
+    - English
+    - SignLanguage
+    - TacticalSignLanguage
+    - Primitive
+    - Xeno
+    - Yautja
+    - Arcturian
+    - Binary
+    - Latin
+    - Legalese
+    - Portuguese
+    - Spanish
+    - Arabic
+    - French
+    - German
+    - Russian
+    - Japanese
+    - Mandarin
+    - Korean
+    - Turkish
+    - Swahili
+    - Afrikaans
+    - Swedish
+    - Esperanto
+    - Ukrainian
+    - Polish
+    - Czech
+    - Italian
+    - Irish
+    - Finnish
+    - Hungarian
+    - Albanian
+    - Serbian
+    - Lithuanian
+    - Dutch
+    - Persian
+    - Hindi
+    - Vietnamese
+    - Indonesian
+    - Filipino
+    - Urdu
+    - Yoruba
+    - Brazilian
+    - Slovak
+    - Romanian
+    currentLanguage: English
+    defaultLanguage: English
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: synth
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - SquadPMC
+  - type: NpcFactionMember
+    factions:
+    - GOVFOR
+  - type: Marine
+    Faction: govfor
+
+  name: We-Yu Super Synth Intern
+  description: Follow the directives of the Weyland-Yutani Directorate.
+  playTimeTracker: RuCMJobSuperSynth
+  ranks:
+    RMCRankWeYaTrainee: []
+  spawnMenuRoleName: WY Super Synth (3rd party)
+  startingGear: RuCMGearSuperSynth
+  greeting: au14-ipie-lawyer-greeting
+  icon: "CMJobIconLiaison"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-wy
+  accessGroups:
+  - Colonist
+  - auadmin
+  - AUPrisonStaff
+  - auwy
+  hidden: false
+
+- type: entity
+  parent: AU14BaseMobSpeciesOrganicWeYu
+  id: RuCMJobSuperSynth
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: We-Yu Super Synth Intern
+  components:
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/_RMC14/Weapons/synthpunch1.ogg
+      params:
+        variation: 0.15
+        volume: -1
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 100
+  - type: Synth
+    changeBrain: false
+    canUseGuns: true
+    hideGeneration: true
+    useHumanHealthIcons: true
+    critThreshold: 399
+    deadThreshold: 400
+  - type: CMArmor
+    melee: 35
+    bullet: 20
+    bio: 20
+    explosionArmor: 25
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: SquadPMC
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Super Synth
+    description: Follow the directives of the Weyland-Yutani Directorate.
+    reregister: false
+    job: RuCMJobSuperSynth
+    raffle:
+      settings: short
+    rules: Follow the directives of the Weyland-Yutani Directorate.
+
+- type: startingGear
+  id: RuCMGearSuperSynth
+  equipment:
+    id: AU14IDCardColonyCorporateLiaison
+    jumpsuit: RMCJumpsuitWEYATrainee
+    shoes: RMCShoesLaceup
+    back: CMSatchel
+    ears: AU14ColonyWeylandHeadset
+  storage:
+    back:
+    - CMPenClicky
+    - CMClipboard
+
+- type: playTimeTracker
+  id: RuCMJobSuperSynth

@@ -1,0 +1,267 @@
+- type: entity
+  parent: [RMCBaseSlideMagazineVisualsBallistic, RMCWeaponRevolverBase]
+  id: RuCMWeaponRevolverMatebaCommando
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: Mateba Custom Autorevolver
+  description: The .454 Mateba 6 Unica is an automatic revolver—a semi-automatic handgun that uses its own recoil to rotate the cylinder. Extremely rare, prohibitively expensive, and incredibly powerful, it is in the hands of a select few high-ranking American officials. Stylish, sophisticated, and, above all, extremely lethal.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Pistols/mateba/jungle.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/Pistols/mateba/jungle.rsi
+  - type: Gun
+    shotsPerBurst: 3
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - Burst
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_mateba.ogg
+  - type: Tag
+    tags:
+    - Sidearm
+    - RMCRevolver
+    - RMCMateba
+  - type: Corrodible
+    isCorrodible: false
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+      - RMCSpeedLoaderMateba
+      - RMCSpeedLoaderMatebaHE
+      - RMCSpeedLoaderMatebaHIAP
+      - RMCSpeedLoaderMatebaHighImpact
+      - RMCCartridgeRevolverMatebaHE
+      - RMCCartridgeRevolverMatebaHIAP
+      - RMCCartridgeRevolverMatebaHighImpact
+      - RMCCartridgeRevolverMateba
+    proto: RMCCartridgeRevolverMatebaHighImpact
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+  - type: GunDamageModifier
+    multiplier: 1.5
+  - type: RMCSelectiveFire
+    baseFireModes:
+    - SemiAuto
+    - Burst
+    recoilWielded: 4
+    recoilUnwielded: 4
+    baseFireRate: 1.111
+    scatterWielded: 8
+    scatterUnwielded: 20
+    burstScatterMult: 5
+    burstFireRateMultiplier: 3 #This + 0.1332 = perfect
+    modifiers:
+      Burst:
+        fireDelay: 0.1332 #0.2664
+        maxScatterModifier: 10
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 6
+  - type: RMCWeaponAccuracy
+    accuracyMultiplier: 1.1
+    accuracyMultiplierUnwielded: 0.75
+  - type: Appearance
+  - type: AttachableHolder
+    slots:
+      rmc-bslot-barrel: 
+        startingAttachable: RMCAttachmentMatebaStandard
+        whitelist:
+          tags:
+          - RMCAttachmentMatebaStandard
+          - RMCAttachmentMatebaMarksman
+          - RMCAttachmentMatebaSnubNose
+      rmc-aslot-barrel: 
+        startingAttachable: RMCAttachmentRecoilCompensator
+        whitelist:
+          tags:
+          - RMCAttachmentRecoilCompensator
+          - RMCAttachmentBarrelCharger
+      rmc-aslot-rail: 
+        startingAttachable: RMCAttachmentS6ReflexSight
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS5MicroRedDotSight
+          - RMCAttachmentS6ReflexSight
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-bslot-barrel: 0.215, 0.19
+      rmc-aslot-barrel: 0.215, 0.19
+      rmc-aslot-rail: -0.11, 0.22
+  - type: ItemCamouflage
+    camouflageVariations:
+      Jungle: _RMC14/Objects/Weapons/Guns/Pistols/mateba/jungle.rsi
+      Desert: _RMC14/Objects/Weapons/Guns/Pistols/mateba/desert.rsi
+      Snow: _RMC14/Objects/Weapons/Guns/Pistols/mateba/snow.rsi
+      Classic: _RMC14/Objects/Weapons/Guns/Pistols/mateba/classic.rsi
+      Urban: _RMC14/Objects/Weapons/Guns/Pistols/mateba/urban.rsi
+  - type: RMCAirShot
+    preparationTime: 1.5
+    requiresCombat: true
+    doAfterBreakOnMove: false
+    ignoreRoof: true
+    shakeAmount: 5
+    requiredSkills:
+      RMCSkillLeadership: 3
+  - type: RMCBattleExecute
+
+
+- type: entity
+  parent: [RMCBaseSlideMagazineVisuals, CMWeaponPistolBase]
+  id: RuCMMK80Commando
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: VP78 pistol
+  description: A massive, imposing semi-automatic pistol chambered for 9mm ammunition with "squash-head" bullets. Frequently encountered both in the United States and throughout the TWE space, it is a common choice for both We-Yu private military contractor units and corporate executives. The weapon is also undergoing limited field testing as part of a next-generation sidearm program for the Marine Corps. The We-Yu logo is engraved on the slide—a constant reminder of who’s really in charge.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Pistols/mk80.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/Pistols/mk80.rsi
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 8
+  - type: Gun
+    shotsPerBurst: 3
+    availableModes:
+    - SemiAuto
+    - Burst
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_mk80.ogg
+  - type: RMCSelectiveFire
+    baseFireModes:
+    - SemiAuto
+    - Burst
+    recoilWielded: 1
+    recoilUnwielded: 2
+    scatterWielded: 10
+    scatterUnwielded: 10
+    baseFireRate: 2
+    burstScatterMult: 4
+    modifiers:
+      Burst:
+        fireDelay: 0.08 # For some reason the intended value of 0.1665 is too slow because it has a burst cooldown
+        maxScatterModifier: 10
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 6
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - CMMagazinePistolMK80
+        startingItem: CMMagazinePistolMK80
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        startingAttachable: RMCAttachmentBarrelCharger
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentRecoilCompensator
+          - RMCAttachmentSuppressor
+          - RMCAttachmentSuppressorCompact
+      rmc-aslot-rail:
+        startingAttachable: RMCAttachmentS6ReflexSight
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS5MicroRedDotSight
+          - RMCAttachmentS6ReflexSight
+      rmc-aslot-underbarrel:
+        locked: true
+        startingAttachable:  RMCAttachmentLaserLightModule
+        whitelist:
+          tags:
+          - RMCAttachmentLaserLightModule
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-barrel: 0.685, 0.125
+      rmc-aslot-rail: -0.125, 0.215
+      rmc-aslot-underbarrel: 0.284, -0.19
+  - type: Tag
+    tags:
+    - Sidearm
+    - RMCMK80
+
+- type: Tag
+  id: RuCMMK80Commando
+
+
+- type: entity
+  parent: RMCSmartGunNoCamo
+  id: RuCMSmartGunWeYaCommando
+  name: M56T "Terminator" smart gun
+  description: An authentic M56T Smartgun firearm, consisting of four parts. If you have one, you’re ready to inflict some serious pain on anyone who gets in your way.
+  suffix: Commando, RuCM, We-Yu Corporate Commandos
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/smartgun.rsi
+    layers:
+    - state: base
+      sprite: _RuMC14/WeYu/smartgun.rsi
+    - state: mag-0
+      sprite: _RuMC14/WeYu/smartgun.rsi
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: _RuMC14/WeYu/smartgun.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: RMCMagazineSmartGunirradiated
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - RMCMagazineSmartGunirradiated
+          - RMCMagazineSmartGun #For some reason when this is removed mags literally becomes unusable :confused:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: RMCPowerCellSmartgun
+        whitelist:
+          components:
+          - SmartGunBattery
+  - type: GunDamageModifier
+    multiplier: 1
+  - type: GunToggleableAmmo
+    settings:
+    - damage:
+        types:
+          Piercing: 40
+      armorPiercing: 5
+      name: rmc-toggleable-ammo-highly-precise
+      icon:
+        sprite: _RMC14/Actions/marine_smart_gun_actions.rsi
+        state: ammo_swap_normal
+    - damage:
+        types:
+          Piercing: 30
+      armorPiercing: 35
+      name: rmc-toggleable-ammo-armor-shredding
+      icon:
+        sprite: _RMC14/Actions/marine_smart_gun_actions.rsi
+        state: ammo_swap_ap
+  - type: RMCSelectiveFire
+    recoilWielded: 3
+    scatterWielded: 10
+    baseFireRate: 10
+    burstScatterMult: 1
+    modifiers:
+      FullAuto:
+        maxScatterModifier: 0
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 80
+  - type: GunIDLock
