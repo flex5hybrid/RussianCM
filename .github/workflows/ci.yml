@@ -253,6 +253,8 @@ jobs:
     timeout-minutes: 45
     strategy:
       fail-fast: false
+      # CMU14: leave hosted runner capacity for Publish and other workflows.
+      max-parallel: 6
       matrix:
         # CMU14: longest first, so the slow shards ask for runners before the quick ones. github doesn't
         # promise to start them in this order, it's only a nudge. keep new shards in rough time order
