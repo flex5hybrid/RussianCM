@@ -1,0 +1,1140 @@
+###########################
+
+- type: entity
+  parent: SquadBase
+  id: RuCMSquadSWATCMB
+  name: SWAT
+  components:
+  - type: SquadTeam
+    color: "#252850"
+    background:
+      sprite: _RMC14/Interface/cm_job_icons.rsi
+      state: empty
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: Colony
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_pmc
+    canSupplyDrop: false
+    group: SWAT
+    leaderIcon:
+      sprite: _RMC14/Interface/cm_job_icons.rsi
+      state: cmb_mar
+
+- type: trackerMode
+  id: RuCMLeaderSWAT
+  job: RuCMSWATTeamLeader
+  alert: SquadTrackerTeamLeader
+
+- type: entity
+  parent: AU14IDCardGOVFOR
+  id: RuCMIDCardSWATTeamLeader
+  suffix: CMB SWAT, RuCM
+  name: SWAT Unit Marshal badge
+  description: A symbol of public trust and distinction. The laws of Earth reach beyond the Solar System.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/cmb_marshal.rsi
+    state: icon
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _RMC14/Objects/CMIDs/cmb_marshal.rsi
+  - type: PresetIdCard
+    job: RuCMSWATTeamLeader
+  - type: ItemIFF
+    factions:
+    - AUBureau
+
+- type: entity
+  parent: AU14IDCardGOVFOR
+  id: RuCMIDCardSWATSergeant
+  suffix: CMB SWAT, RuCM
+  name: SWAT Team Commander badge
+  description: A symbol of public trust and distinction. The laws of Earth reach beyond the Solar System.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+    state: icon
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+  - type: PresetIdCard
+    job: RuCMSWATSergeant
+  - type: ItemIFF
+    factions:
+    - AUBureau
+
+- type: entity
+  parent: AU14IDCardGOVFOR
+  id: RuCMIDCardSWATMedic
+  suffix: CMB SWAT, RuCM
+  name: SWAT Combat Medic badge
+  description: A symbol of public trust and distinction. The laws of Earth reach beyond the Solar System.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+    state: icon
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+  - type: PresetIdCard
+    job: RuCMSWATMedic
+  - type: ItemIFF
+    factions:
+    - AUBureau
+
+- type: entity
+  parent: AU14IDCardGOVFOR
+  id: RuCMIDCardSWATBreacher
+  suffix: CMB SWAT, RuCM
+  name: SWAT Breacher badge
+  description: A symbol of public trust and distinction. The laws of Earth reach beyond the Solar System.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+    state: icon
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+  - type: PresetIdCard
+    job: RuCMSWATEngineer
+  - type: ItemIFF
+    factions:
+    - AUBureau
+
+- type: entity
+  parent: AU14IDCardGOVFOR
+  id: RuCMIDCardSWATShieldman
+  suffix: CMB SWAT, RuCM
+  name: SWAT Shield Officer badge
+  description: A symbol of public trust and distinction. The laws of Earth reach beyond the Solar System.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+    state: icon
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+  - type: PresetIdCard
+    job: RuCMSWATShieldman
+  - type: ItemIFF
+    factions:
+    - AUBureau
+
+- type: entity
+  parent: AU14IDCardGOVFOR
+  id: RuCMIDCardSWATOperator
+  suffix: CMB SWAT, RuCM
+  name: SWAT Officer badge
+  description: A symbol of public trust and distinction. The laws of Earth reach beyond the Solar System.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+    state: icon
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+  - type: PresetIdCard
+    job: RuCMSWATOperator
+  - type: ItemIFF
+    factions:
+    - AUBureau
+
+# Маршал подразделения
+
+- type: job
+  parent: CMJobBase
+  id: RuCMSWATTeamLeader
+  name: SWAT Unit Marshal
+  description: You are the SWAT rapid response unit marshal. Confirm your assignment and directives with the administrator or responder who called you in.
+  playTimeTracker: RuCMSWATTeamLeader
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    Marshal:
+      entity: AU14ChevronCMBMarshal
+      requirements: []
+  startingGear: RuCMRUMJobC14SWATLeader
+  icon: "RMCJobIconBureauMarshal"
+  joinNotifyCrew: false
+  accessGroups:
+  - auadmin
+  - Colonist
+  - CMCargoTech
+  - auorbitalmanagement
+  - aucmb
+  - AUPrisonStaff
+  - ShipMasterAccess
+  - aulegacygroupcommand
+  - AU14GovforCommand
+  - AU14OpforCommand
+  - auheadsofcolony
+  spawnMenuRoleName: SWAT Unit Marshal
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - AUBureau
+    - type: Language
+      spokenLanguages:
+      - English
+      - TacticalSignLanguage
+      understoodLanguages:
+      - English
+      - TacticalSignLanguage
+      currentLanguage: English
+      defaultLanguage: English
+    - type: Skills
+      skills:
+        RMCSkillCqc: 3
+        RMCSkillFirearms: 2
+        RMCSkillPolice: 2
+        RMCSkillFireman: 5
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 2
+        RMCSkillEndurance: 3
+        RMCSkillJtac: 3
+        RMCSkillLeadership: 4
+        RMCSkillVehicles: 1
+        RMCSkillMedical: 2
+        RMCSkillMeleeWeapons: 1
+        RMCSkillOverwatch: 1
+    - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
+    - type: SquadLeader
+      icon:
+        sprite: _RMC14/Interface/cm_job_icons.rsi
+        state: cmb_mar
+    - type: RMCPointing
+    - type: RMCTrackable
+    - type: JobPrefix
+      prefix: MAR
+  hidden: false
+
+- type: entity
+  id: RuCMRandomHumanoidSWATLeader
+  name: SWAT Marshal Commander ghost role
+  suffix: Spawner, Player, CMB SWAT, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/cmb_marshal.rsi
+    state: icon
+  - type: RandomHumanoidSpawner
+    settings: RuCMGhostSWATLeader
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMGhostSWATLeader
+  components:
+  - type: GhostRole
+    name: SWAT Unit Marshal
+    description: Follow your commander’s orders and complete the assigned SWAT mission.
+    rules: Follow your chain of command and obey all orders. Follow the event administrator’s instructions.
+    reregister: false
+    job: RuCMSWATTeamLeader
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadSWATCMB
+
+- type: startingGear
+  id: RuCMRUMJobC14SWATLeader
+  equipment:
+    id: RuCMIDCardSWATTeamLeader
+    jumpsuit: RuCMSWATFatiguesBasic
+    outerClothing: RMCArmorM4RMarshallMedium
+    gloves: AU14PVEHandsInsulatedBlackMarine
+    head: RMCHeadBeretAgentIvan
+    shoes: RMCBootsPMCFilled
+    mask: Cigar
+    ears: AU14CMBHeadsetOnlyCMB
+    back: AU14MolleSatchel
+    belt: RMCM276ShotgunShellLoadingRigFill
+    pocket1: RMCPouchMedicalSocDutchUnmarked
+    pocket2: AU14PouchPoliceEquipmentSupportSynth
+    suitstorage: RMCWeaponShotgunM3717
+    eyes: CMGlassesSecurity
+  storage:
+    back:
+    - RMCLaserDesignator
+    - RMCExplosiveBreachingChargeRubber
+    - CMFireExtinguisherPortable
+    - RMCTacticalPrybar
+    - AU14AttachmentTwoPointSling
+    outerClothing:
+    - CMMRE
+    - CMMRE
+    pocket1:
+    - CMHealthAnalyzer
+    - CMUpgradedTraumaKit10
+    - CMUpgradedTraumaKit10
+    - CMUpgradedBurnKit10
+    - CMUpgradedBurnKit10
+    - CMBicaridineAutoInjector
+    - CMKelotaneAutoInjector
+    - CMTricordrazineAutoInjectorNoSkill
+    - AU14OxycodoneAutoInjector
+    - CMDexalinPlusAutoInjector
+  inhand:
+    - RMCZippoGold
+
+- type: playTimeTracker
+  id: RuCMSWATTeamLeader
+
+# Командир группы
+
+- type: job
+  parent: CMJobBase
+  id: RuCMSWATSergeant
+  name: SWAT Team Commander
+  description: You are a SWAT team commander. Follow the unit marshal’s orders and help lead your team.
+  playTimeTracker: RuCMSWATSergeant
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    RuCMRankCMBSWATTeamCommander:
+      entity: RuCMChevronCMBSWATSergeant
+      requirements: []
+  startingGear: RuCMJobSWATSergeant
+  icon: RuCMJobIconSWATSergeant
+  joinNotifyCrew: false
+  accessGroups:
+  - auadmin
+  - Colonist
+  - CMCargoTech
+  - auorbitalmanagement
+  - aucmb
+  - AUPrisonStaff
+  - ShipMasterAccess
+  - aulegacygroupcommand
+  - AU14GovforCommand
+  - AU14OpforCommand
+  - auheadsofcolony
+  spawnMenuRoleName: SWAT Team Commander
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - AUBureau
+    - type: Language
+      spokenLanguages:
+      - English
+      - TacticalSignLanguage
+      understoodLanguages:
+      - English
+      - TacticalSignLanguage
+      currentLanguage: English
+      defaultLanguage: English
+    - type: Skills
+      skills:
+        RMCSkillCqc: 3
+        RMCSkillFirearms: 3
+        RMCSkillPolice: 2
+        RMCSkillFireman: 3
+        RMCSkillConstruction: 2
+        RMCSkillEndurance: 3
+        RMCSkillJtac: 1
+        RMCSkillLeadership: 2
+        RMCSkillVehicles: 1
+        RMCSkillMeleeWeapons: 1
+        RMCSkillMedical: 2
+        RMCSkillEngineer: 1
+    - type: MarineOrders
+    - type: SquadLeader
+      icon:
+        sprite: /_RMC14/Interface/cm_job_icons.rsi
+        state: cmb_dep
+    - type: RMCPointing
+    - type: RMCTrackable
+    - type: JobPrefix
+      prefix: TC
+  hidden: false
+
+- type: entity
+  id: RuCMRandomHumanoidSWATSergeant
+  name: SWAT Team Sergeant ghost role
+  suffix: Spawner, Player, CMB SWAT, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+    state: icon
+  - type: RandomHumanoidSpawner
+    settings: RuCMGhostSWATSergeant
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMGhostSWATSergeant
+  components:
+  - type: GhostRole
+    name: SWAT Team Commander
+    description: Follow your commander’s orders and complete the assigned SWAT mission.
+    rules: Follow your chain of command and obey all orders.
+    reregister: false
+    job: RuCMSWATSergeant
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadSWATCMB
+
+- type: startingGear
+  id: RuCMJobSWATSergeant
+  equipment:
+    id: RuCMIDCardSWATSergeant
+    jumpsuit: RuCMSWATFatiguesBasic
+    outerClothing: RMCArmorM4RMedium
+    gloves: AU14PVEHandsInsulatedBlackMarine
+    head: RMCArmorHelmetM10CMBVisorSWAT
+    shoes: RMCBootsPMCFilled
+    mask: RMCMaskCoifPMC
+    ears: AU14CMBHeadsetOnlyCMB
+    back: RMCSatchelTSEPA
+    belt: CMBeltMarine
+    pocket1: RMCPouchToolsSocMarineRaiderFill
+    pocket2: RMCPouchMedicalSocDutchUnmarked
+    eyes: CMGlassesSecurity
+  storage:
+    back:
+    - AU14TeleBaton
+    - RMCMotionDetector
+    - RMCLaserDesignator
+    - CMFireExtinguisherPortable
+    - AU14AttachmentTwoPointSling
+    - RMCMegaphone
+    outerClothing:
+    - CMMRE
+    - CMMRE
+    pocket2:
+    - CMHealthAnalyzer
+    - CMUpgradedTraumaKit10
+    - CMUpgradedTraumaKit10
+    - CMUpgradedBurnKit10
+    - CMUpgradedBurnKit10
+    - CMBicaridineAutoInjector
+    - CMKelotaneAutoInjector
+    - CMTricordrazineAutoInjectorNoSkill
+    - AU14OxycodoneAutoInjector
+    - CMDexalinPlusAutoInjector
+  inhand:
+    - AU14KitWeaponM16A2
+
+- type: playTimeTracker
+  id: RuCMSWATSergeant
+
+# Офицер контроля беспорядков
+
+- type: job
+  parent: CMJobBase
+  id: RuCMSWATOperator
+  name: SWAT Crowd Control Officer
+  description: You are a member of the SWAT rapid response team. Follow your commander’s orders and complete the assigned mission.
+  playTimeTracker: RuCMSWATOperator
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    RMCRankCMBRiotControlOfficer:
+      entity: RuCMChevronCMBSWATOfficer
+      requirements: []
+  startingGear: RuCMJobSWATOperator
+  icon: RuCMJobIconSWATOperator
+  joinNotifyCrew: false
+  accessGroups:
+  - auadmin
+  - Colonist
+  - CMCargoTech
+  - auorbitalmanagement
+  - aucmb
+  - AUPrisonStaff
+  - ShipMasterAccess
+  - aulegacygroupcommand
+  - AU14GovforCommand
+  - AU14OpforCommand
+  - auheadsofcolony
+  spawnMenuRoleName: SWAT Crowd Control Officer
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - AUBureau
+    - type: Language
+      spokenLanguages:
+      - English
+      - TacticalSignLanguage
+      understoodLanguages:
+      - English
+      - TacticalSignLanguage
+      currentLanguage: English
+      defaultLanguage: English
+    - type: Skills
+      skills:
+        RMCSkillCqc: 2
+        RMCSkillFirearms: 2
+        RMCSkillPolice: 2
+        RMCSkillFireman: 3
+        RMCSkillEndurance: 2
+        RMCSkillJtac: 1
+        RMCSkillVehicles: 1
+        RMCSkillMeleeWeapons: 1
+        RMCSkillEngineer: 1
+    - type: JobPrefix
+      prefix: CCO
+  hidden: false
+
+- type: entity
+  id: RuCMRandomHumanoidSWATOperator
+  name: SWAT Operator ghost role
+  suffix: Spawner, Player, CMB SWAT, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+    state: icon
+  - type: RandomHumanoidSpawner
+    settings: RuCMGhostSWATOperator
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMGhostSWATOperator
+  components:
+  - type: GhostRole
+    name: SWAT Crowd Control Officer
+    description: Follow your commander’s orders and complete the assigned SWAT mission.
+    rules: Follow your chain of command and obey all orders.
+    reregister: false
+    job: RuCMSWATOperator
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadSWATCMB
+
+- type: startingGear
+  id: RuCMJobSWATOperator
+  equipment:
+    id: RuCMIDCardSWATOperator
+    jumpsuit: RuCMSWATFatiguesBasic
+    outerClothing: RMCArmorM4RMedium
+    gloves: AU14PVEHandsInsulatedBlackMarine
+    head: RMCArmorHelmetM10CMBVisorSWAT
+    shoes: RMCBootsPMCFilled
+    mask: CMMaskCoif
+    ears: AU14CMBHeadsetOnlyCMB
+    back: RMCSatchelTSEPA
+    belt: CMBeltMarine
+    pocket1: AU14PouchIFAKFill
+    pocket2: RMCPouchFlareFilled
+    eyes: CMGlassesSecurity
+  storage:
+    back:
+    - CMStunbaton
+    - RMCMotionDetector
+    - RMCBoxZiptie
+    - RMCRadioHandheldColonyOff
+    - CMRollerBedSpawnFolded
+    - RMCBinoculars
+    - AU14AttachmentTwoPointSling
+    belt:
+    - RMCMagazineSMGPDW90AP
+    - RMCMagazineSMGPDW90AP
+    - RMCMagazineSMGPDW90AP
+    - RMCMagazineSMGPDW90AP
+    outerClothing:
+    - CMMRE
+    - CMMRE
+  inhand:
+    - AU14KitWeaponP90
+
+- type: playTimeTracker
+  id: RuCMSWATOperator
+
+# Санитар
+
+- type: job
+  parent: CMJobBase
+  id: RuCMSWATMedic
+  name: SWAT Combat Medic
+  description: You are the SWAT rapid response team medic. Follow your commander’s orders, complete the mission, and monitor your team’s health.
+  playTimeTracker: RuCMSWATMedic
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    RMCRankCMBMedicalTechnician:
+      entity: RuCMChevronCMBSWATMedic
+      requirements: []
+  startingGear: RuCMJobSWATMedic
+  icon: RuCMJobIconSWATMedic
+  joinNotifyCrew: false
+  accessGroups:
+  - auadmin
+  - Colonist
+  - CMCargoTech
+  - auorbitalmanagement
+  - aucmb
+  - AUPrisonStaff
+  - ShipMasterAccess
+  - aulegacygroupcommand
+  - AU14GovforCommand
+  - AU14OpforCommand
+  - auheadsofcolony
+  spawnMenuRoleName: SWAT Combat Medic
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: NpcFactionMember
+          factions:
+          - AUBureau
+        - type: Language
+          spokenLanguages:
+          - English
+          - TacticalSignLanguage
+          understoodLanguages:
+          - English
+          - TacticalSignLanguage
+          currentLanguage: English
+          defaultLanguage: English
+        - type: Skills
+          skills:
+            RMCSkillCqc: 3
+            RMCSkillFirearms: 2
+            RMCSkillPolice: 2
+            RMCSkillFireman: 3
+            RMCSkillEndurance: 2
+            RMCSkillMeleeWeapons: 1
+            RMCSkillVehicles: 1
+            RMCSkillSurgery: 3
+            RMCSkillMedical: 3
+            RMCSkillEngineer: 1
+        - type: JobPrefix
+          prefix: MED
+  hidden: false
+
+- type: entity
+  id: RuCMRandomHumanoidSWATMedic
+  name: SWAT Corpsman ghost role
+  suffix: Spawner, Player, CMB SWAT, RuCM
+  components:
+    - type: Sprite
+      sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+      state: icon
+    - type: RandomHumanoidSpawner
+      settings: RuCMGhostSWATMedic
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMGhostSWATMedic
+  components:
+    - type: GhostRole
+      name: SWAT Combat Medic
+      description: Follow your commander’s orders and complete the assigned SWAT mission.
+      rules: Follow your chain of command and obey all orders.
+      reregister: false
+      job: RuCMSWATMedic
+      raffle:
+        settings: short
+    - type: GhostRoleApplySpecial
+      squad: RuCMSquadSWATCMB
+
+- type: startingGear
+  id: RuCMJobSWATMedic
+  equipment:
+    id: RuCMIDCardSWATMedic
+    jumpsuit: RuCMSWATFatiguesMedic
+    outerClothing: RMCArmorM4RMedium
+    gloves: AU14PVEHandsInsulatedBlackMarine
+    head: RMCArmorHelmetM10CMBVisorSWAT
+    shoes: RMCBootsPMCFilled
+    mask: CMMaskCoif
+    ears: AU14CMBHeadsetOnlyCMB
+    back: CMBackpackMedical
+    belt: AU14BeltMedicBagFilled
+    pocket1: RMCPouchMagazineLarge
+    pocket2: RMCPouchMedicalSocDutchUnmarked
+    eyes: RMCGlassesMedicalHUDGlasses
+  storage:
+    back:
+      - CMStunbaton
+      - RMCBoxZiptie
+      - RMCRadioHandheldColonyOff
+      - CMRollerBedSpawnFolded
+      - AU14CMDefibrillator
+      - AU14AttachmentTwoPointSling
+    outerClothing:
+    - CMMRE
+    - CMMRE
+    pocket1:
+    - RMCMagazineSMGPDW90AP
+    - RMCMagazineSMGPDW90AP
+    - RMCMagazineSMGPDW90AP
+    - RMCMagazineSMGPDW90AP
+    pocket2:
+      - CMHealthAnalyzer
+      - CMUpgradedTraumaKit10
+      - CMUpgradedTraumaKit10
+      - CMUpgradedBurnKit10
+      - CMUpgradedBurnKit10
+      - CMBicaridineAutoInjector
+      - CMKelotaneAutoInjector
+      - CMTricordrazineAutoInjector
+      - AU14OxycodoneAutoInjector
+      - CMDexalinPlusAutoInjector
+    belt:
+      - CMUCastItem
+      - CMUSplintItem
+      - CMUSplintItem
+      - AU14PillCanisterTramadol
+      - AU14PillCanisterOsteoCalc
+  inhand:
+    - AU14KitWeaponP90
+
+- type: playTimeTracker
+  id: RuCMSWATMedic
+
+# Инженер
+
+- type: job
+  parent: CMJobBase
+  id: RuCMSWATEngineer
+  name: SWAT Breacher
+  description: You are the SWAT rapid response team breacher. Follow your commander’s orders and clear a path to complete the mission.
+  playTimeTracker: RuCMSWATEngineer
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    RMCRankCMBBreachingTechnician:
+      entity: RuCMChevronCMBSWATEngineer
+      requirements: []
+  startingGear: RuCMJobSWATEngineer
+  icon: RuCMJobIconSWATBreacher
+  joinNotifyCrew: false
+  accessGroups:
+  - auadmin
+  - Colonist
+  - CMCargoTech
+  - auorbitalmanagement
+  - aucmb
+  - AUPrisonStaff
+  - ShipMasterAccess
+  - aulegacygroupcommand
+  - AU14GovforCommand
+  - AU14OpforCommand
+  - auheadsofcolony
+  spawnMenuRoleName: SWAT Breacher
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - AUBureau
+    - type: Language
+      spokenLanguages:
+      - English
+      - TacticalSignLanguage
+      understoodLanguages:
+      - English
+      - TacticalSignLanguage
+      currentLanguage: English
+      defaultLanguage: English
+    - type: Skills
+      skills:
+        RMCSkillCqc: 2
+        RMCSkillFirearms: 2
+        RMCSkillPolice: 2
+        RMCSkillFireman: 3
+        RMCSkillEndurance: 2
+        RMCSkillJtac: 1
+        RMCSkillVehicles: 2
+        RMCSkillMeleeWeapons: 1
+        RMCSkillConstruction: 3
+        RMCSkillEngineer: 3
+    - type: JobPrefix
+      prefix: BR
+  hidden: false
+
+- type: entity
+  id: RuCMRandomHumanoidSWATEngineer
+  name: SWAT ComTech ghost role
+  suffix: Spawner, Player, CMB SWAT, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+    state: icon
+  - type: RandomHumanoidSpawner
+    settings: RuCMGhostSWATEngineer
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMGhostSWATEngineer
+  components:
+  - type: GhostRole
+    name: SWAT Breacher
+    description: Complete your assigned mission. Open fire only if fired upon or when ordered.
+    rules: Follow your chain of command and obey all orders.
+    reregister: false
+    job: RuCMSWATEngineer
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadSWATCMB
+
+- type: startingGear
+  id: RuCMJobSWATEngineer
+  equipment:
+    id: RuCMIDCardSWATBreacher
+    jumpsuit: RuCMSWATFatiguesTools
+    outerClothing: RMCArmorM4RMedium
+    gloves: AU14PVEHandsInsulatedBlackMarine
+    head: RMCArmorHelmetM10CMBVisorSWAT
+    shoes: RMCBootsPMCFilled
+    mask: CMMaskCoif
+    ears: AU14CMBHeadsetOnlyCMB
+    back: CMBackpackWelder
+    belt: RuCMBeltXM51Filled
+    pocket1: RMCPouchExplosiveFilledPlasticExplosives
+    pocket2: AU14PouchMagazineLargeFilledM16
+    suitstorage: AU14WeaponRifleM16A2
+    eyes: RMCWeldingGoggles
+  storage:
+    back:
+    - CMStunbaton
+    - RMCBoxZiptie
+    - AU14AttachmentTwoPointSling
+    - RMCExplosiveBreachingChargeRubber
+    - RMCExplosiveBreachingChargeRubber
+    - RMCExplosiveBreachingChargeRubber
+    - CMSheetMetal
+    - CMSheetMetal
+    - CMSheetMetal
+    - CMSheetPlasteel
+    - CMSheetPlasteel
+    outerClothing:
+    - CMMRE
+    - CMMRE
+
+- type: playTimeTracker
+  id: RuCMSWATEngineer
+
+- type: entity
+  parent: RMCBeltXM51
+  id: RuCMBeltXM51Filled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponShotgunXM51
+    - id: RMCMagazineShotgunXM51
+      amount: 2
+    - id: RMCShellShotgunBreaching
+      amount: 5
+
+# Щитовик
+
+- type: job
+  parent: CMJobBase
+  id: RuCMSWATShieldman
+  name: SWAT Shield Officer
+  description: You are the SWAT rapid response team shield officer. Follow your commander’s orders and lead the way through enemy lines.
+  playTimeTracker: RuCMSWATShieldman
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    RMCRankCMBSWATSpecialist:
+      entity: RuCMChevronCMBSWATShieldman
+      requirements: []
+  startingGear: RuCMJobSWATShieldman
+  icon: RuCMJobIconSWATShieldman
+  joinNotifyCrew: false
+  accessGroups:
+  - auadmin
+  - Colonist
+  - CMCargoTech
+  - auorbitalmanagement
+  - aucmb
+  - AUPrisonStaff
+  - ShipMasterAccess
+  - aulegacygroupcommand
+  - AU14GovforCommand
+  - AU14OpforCommand
+  - auheadsofcolony
+  spawnMenuRoleName: SWAT Shield Officer
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - AUBureau
+    - type: Language
+      spokenLanguages:
+      - English
+      - TacticalSignLanguage
+      understoodLanguages:
+      - English
+      - TacticalSignLanguage
+      currentLanguage: English
+      defaultLanguage: English
+    - type: Skills
+      skills:
+        RMCSkillCqc: 4
+        RMCSkillFirearms: 2
+        RMCSkillPolice: 2
+        RMCSkillFireman: 3
+        RMCSkillEndurance: 3
+        RMCSkillJtac: 1
+        RMCSkillVehicles: 1
+        RMCSkillMeleeWeapons: 3
+        RMCSkillEngineer: 1
+    - type: JobPrefix
+      prefix: SHD
+  hidden: false
+
+- type: entity
+  id: RuCMRandomHumanoidSWATShieldman
+  name: SWAT Shieldman ghost role
+  suffix: Spawner, Player, CMB SWAT, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
+    state: icon
+  - type: RandomHumanoidSpawner
+    settings: RuCMGhostSWATShieldman
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMGhostSWATShieldman
+  components:
+  - type: GhostRole
+    name: SWAT Shield Officer
+    description: Follow your commander’s orders and complete the assigned SWAT mission.
+    rules: Follow your chain of command and obey all orders.
+    reregister: false
+    job: RuCMSWATShieldman
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadSWATCMB
+
+- type: startingGear
+  id: RuCMJobSWATShieldman
+  equipment:
+    id: RuCMIDCardSWATShieldman
+    jumpsuit: RuCMSWATFatiguesBasic
+    outerClothing: RMCArmorM4RMedium
+    gloves: AU14PVEHandsInsulatedBlackMarine
+    head: RMCArmorHelmetM10CMBVisorSWAT
+    shoes: RMCBootsPMCFilled
+    mask: CMMaskCoif
+    ears: AU14CMBHeadsetOnlyCMB
+    back: AU14MolleSatchel
+    belt: RMCM276ShotgunShellLoadingRigFill
+    pocket1: RMCPouchExplosiveFilledPlasticExplosives
+    pocket2: RMCPouchMedicalSocDutchUnmarked
+    suitstorage: AU14WeaponShotgunSPAS12HAZOPS
+    eyes: CMGlassesSecurity
+  storage:
+    back:
+    - RMCBoxZiptie
+    - AU14AttachmentTwoPointSling
+    - RMCExplosiveBreachingChargeRubber
+    - RMCExplosiveBreachingChargeRubber
+    - RMCExplosiveBreachingChargeRubber
+    pocket2:
+      - CMHealthAnalyzer
+      - CMUpgradedTraumaKit10
+      - CMUpgradedTraumaKit10
+      - CMUpgradedBurnKit10
+      - CMUpgradedBurnKit10
+      - CMBicaridineAutoInjector
+      - CMKelotaneAutoInjector
+      - CMTricordrazineAutoInjector
+      - AU14OxycodoneAutoInjector
+      - CMDexalinPlusAutoInjector
+    outerClothing:
+    - CMMRE
+    - CMMRE
+  inhand:
+    - AU14BallisticShieldRMC
+    - AU14TeleBaton
+
+- type: playTimeTracker
+  id: RuCMSWATShieldman
+
+# Форма
+
+- type: entity
+  parent: AU14UniversalBlackFatigues
+  id: RuCMSWATFatiguesBasic
+  suffix: Webbing
+  components:
+  - type: WebbingClothing
+    startingWebbing: RMCWebbingHolsterBlackSpearhead
+
+- type: entity
+  parent: AU14UniversalBlackFatigues
+  id: RuCMSWATFatiguesMedic
+  suffix: Webbing
+  components:
+  - type: WebbingClothing
+    startingWebbing: CMWebbingSurgicalBlue
+
+- type: entity
+  parent: AU14UniversalBlackFatigues
+  id: RuCMSWATFatiguesTools
+  suffix: Webbing
+  components:
+  - type: WebbingClothing
+    startingWebbing: RMCToolWebbingFilled
+
+# ├──[ SWAT - Иконки ]───────────────────────────────────────────┤
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconSWATTeamLeader
+  icon:
+    sprite: /_RMC14/Interface/cm_job_icons.rsi
+    state: cmb_mar
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconSWATSergeant
+  icon:
+    sprite: /_RMC14/Interface/cm_job_icons.rsi
+    state: cmb_dep
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconSWATMedic
+  icon:
+    sprite: /_RMC14/Interface/cm_job_icons.rsi
+    state: rmc_medic
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconSWATShieldman
+  icon:
+    sprite: /_RMC14/Interface/cm_job_icons.rsi
+    state: cmb_rco
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconSWATBreacher
+  icon:
+    sprite: /_RMC14/Interface/cm_job_icons.rsi
+    state: rmc_breacher
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconSWATOperator
+  icon:
+    sprite: /_RMC14/Interface/cm_job_icons.rsi
+    state: cmb_icc
+
+- type: rank
+  id: RuCMRankCMBSWATTeamCommander
+  name: CMB SWAT Team Commander
+  prefix: SWAT Team Cmdr.
+
+# SWAT Rapid Response Team
+- type: entity
+  parent: AU14ChevronCMBBase
+  id: RuCMChevronCMBSWATOfficer
+  suffix: CMB SWAT, RuCM
+  name: CMB SWAT Crowd Control Officer chevron
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_flagofficer
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_flagofficer
+  - type: RankChanger
+    rank: RMCRankCMBRiotControlOfficer
+    override: true
+
+- type: entity
+  parent: AU14ChevronCMBBase
+  id: RuCMChevronCMBSWATMedic
+  suffix: CMB SWAT, RuCM
+  name: CMB SWAT Combat Medic chevron
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_flagofficer
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_flagofficer
+  - type: RankChanger
+    rank: RMCRankCMBMedicalTechnician
+    override: true
+
+- type: entity
+  parent: AU14ChevronCMBBase
+  id: RuCMChevronCMBSWATEngineer
+  suffix: CMB SWAT, RuCM
+  name: CMB SWAT Breacher chevron
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_flagofficer
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_flagofficer
+  - type: RankChanger
+    rank: RMCRankCMBBreachingTechnician
+    override: true
+
+- type: entity
+  parent: AU14ChevronCMBBase
+  id: RuCMChevronCMBSWATShieldman
+  suffix: CMB SWAT, RuCM
+  name: CMB SWAT Special Operations Specialist chevron
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_flagofficer
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_flagofficer
+  - type: RankChanger
+    rank: RMCRankCMBSWATSpecialist
+    override: true
+
+- type: entity
+  parent: AU14ChevronCMBBase
+  id: RuCMChevronCMBSWATSergeant
+  suffix: CMB SWAT, RuCM
+  name: CMB SWAT Team Commander chevron
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_flagofficer
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_flagofficer
+  - type: RankChanger
+    rank: RuCMRankCMBSWATTeamCommander
+    override: true

@@ -1,0 +1,177 @@
+# ├──[ NSPA Commissioner ]───────────────────────────────────────────────┤
+
+- type: job
+  parent: AU14JobLEOLeaderBase
+  id: RuCMJobCivilianNSPAComissar
+  roundSide: Civilian
+  roundForce: NSPA
+  roundRole: CivilianNSPAInspector
+  roundComponents:
+  - type: NpcFactionMember
+    factions:
+    - AUBureau
+  - type: Skills
+    skills:
+      RMCSkillCqc: 3
+      RMCSkillEndurance: 3
+      RMCSkillFirearms: 1
+      RMCSkillFireman: 2
+      RMCSkillIntel: 1
+      RMCSkillMedical: 1
+      RMCSkillMeleeWeapons: 1
+      RMCSkillOverwatch: 1
+      RMCSkillPolice: 2
+      RMCSkillLeadership: 3
+      RMCSkillVehicles: 1
+      RMCSkillEngineer: 1
+      RMCSkillConstruction: 1
+  - type: JobPrefix
+    prefix: au14-job-prefix-civiliannspainspector
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/cm_job_icons.rsi
+      state: tse_painspector
+  - type: Language
+    preset: AU14LanguagePresetTWE
+
+  name: NSPA Commissioner
+  description: You are the local NSPA commissioner. You oversee several NSPA precincts and offices and serve as their senior authority.
+  setPreference: false
+  canBeAntag: false
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - NoEnglish
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    RuCMRankNSPAComissar:
+      entity: RuCMChevronNSPAComissar
+      requirements: []
+  startingGear: RuCMGearCivilianNSPAInspector
+  icon: "RMCJobIconTSEPAInspector"
+  requireAdminNotify: true
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-colonycivilian
+  spawnMenuRoleName: NSPA Comissar (RuMC14)
+  accessGroups:
+  - auadmin
+  - aucmb
+  - Colonist
+  - AUPrisonStaff
+  roleWeight: 0.25
+
+- type: startingGear
+  id: RuCMGearCivilianNSPAInspector
+  equipment:
+    id: RuCMIDCardColonyNSPAComissar
+    back: RMCSatchelTSEPA
+    jumpsuit: RMCJumpsuitTSEPA
+    shoes: RMCBootsPMCFilled
+    head: RMCHeadCapTSEPAPeakedGold
+    belt: CMBeltSecurityMarshalFilled
+    ears: AU14CMBHeadset
+    outerClothing: RMCCoatTSEPA
+    suitstorage: AU14BeltHolsterPistolBlack
+    pocket1: AU14PouchIFAKFill
+    pocket2: AU14PouchGeneralLargeLEOFilled
+  inhand:
+  - AU14GunCasePistolL45
+  storage:
+    back:
+    - AU14GuidebookLawColonial
+    - RuCMStampNSPAComissar
+
+- type: entity
+  id: RuCMRandomHumanoidNSPAComissar
+  name: NSPA Comissioner ghost role
+  suffix: Spawner, Player, Event, NSPA, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/gold_id.rsi
+    state: gold
+  - type: RandomHumanoidSpawner
+    settings: RuCMNSPAComissar
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMNSPAComissar
+  components:
+  - type: GhostRole
+    name: NSPA Commissioner
+    description: You are the local NSPA commissioner. You oversee several NSPA precincts and offices and serve as their senior authority.
+    rules: Your role and purpose are determined by the administrator who called you in. Follow the event administrator’s instructions.
+    reregister: false
+    job: RuCMJobCivilianNSPAComissar
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+
+- type: entity
+  parent: AU14IDCardColonyLEOLeader
+  id: RuCMIDCardColonyNSPAComissar
+  name: NSPA Commissioner ID card
+  components:
+  - type: PresetIdCard
+    job: RuCMJobCivilianNSPAComissar
+
+- type: rank
+  id: RuCMRankNSPAComissar
+  name: Commissioner
+  prefix: Comm.
+
+- type: entity
+  parent: AU14ChevronNSPABase
+  id: RuCMChevronNSPAComissar
+  suffix: NSPA, RuCM
+  name: NSPA Commissioner chevron
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_officer
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_officer
+  - type: RankChanger
+    rank: RuCMRankNSPAComissar
+    override: true
+
+- type: entity
+  parent: AU14StampBase
+  id: RuCMStampNSPAComissar
+  name: NSPA Commissioner seal
+  suffix: Admin, NSPA, RuCM
+  components:
+  - type: Sprite
+    state: stamp-provost
+  - type: Stamp
+    stampedName: NSPA Commissioner
+    stampedColor: "#cb0000"
+    stampState: "paper_stamp-provost"
+
+- type: entity
+  id: RuCMRandomHumanoidNSPAConstable
+  name: NSPA Constable ghost role
+  suffix: Spawner, Player, NSPA, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/gold_id.rsi
+    state: gold
+  - type: RandomHumanoidSpawner
+    settings: RuCMNSPAConstable
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMNSPAConstable
+  components:
+  - type: GhostRole
+    name: au14-job-name-civiliannspaConstable
+    description: au14-job-description-civiliannspaConstable
+    rules: Maintain order and follow the inspector’s and commissioner’s instructions.
+    reregister: false
+    job: AU14JobCivilianNSPAConstable
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial

@@ -12,19 +12,19 @@
   id: RuCMJobPMCWeYaCommando
   equipment:
     id: RMCIDCardPMC
-    jumpsuit: CMJumpsuitVeteranPMCCommandoWeYu
-    outerClothing: CMArmorM4PMCCommandoWeYa
+    jumpsuit: RuCMJumpsuitVeteranPMCCommandoWeYu
+    outerClothing: RuCMArmorM4PMCCommandoWeYa
     gloves: AU14HandsSilverRMC
-    head: ArmorHelmetPMCCommandoWeYa
+    head: RuCMArmorHelmetPMCCommandoWeYa
     shoes: RMCBootsPMCCommandoFilled
     mask: RMCMaskCoifPMC
-    ears: RMCHeadsetDistressWeYaCommando
-    back: RMCSatchelCommadoWeYa
+    ears: RuCMHeadsetDistressWeYaCommando
+    back: RuCMSatchelCommandoWeYa
     belt: RMCBeltPMC
     pocket1: RMCPouchToolsSocMarineRaiderFill
     pocket2: RMCPouchMedicalSocDutchUnmarked
-    suitstorage: RMCWeaponRifleM54C2Fixed
-    eyes: CMGlassesM4WeYa
+    suitstorage: RMCWeaponRifleM54C2
+    eyes: RuCMGlassesM4WeYa
   storage:
     back:
     - CMStunbaton
@@ -34,7 +34,7 @@
     - CMRollerBedSpawnFolded
     - RMCSynthResetKeySMART
     - AU14CMDefibrillator
-    - CMCommandoWeYaAidKitFilled
+    - RuCMCommandoWeYaAidKitFilled
     outerClothing:
     - RMCMagazineRifleM54CHEAP
     - RMCMagazineRifleM54CHEAP
@@ -142,18 +142,18 @@
   id: RuCMJobPMCWeYaCommandoSmart
   equipment:
     id: RMCIDCardPMC
-    jumpsuit: CMJumpsuitVeteranPMCCommandoWeYuSG
-    outerClothing: CMArmorM4PMCCommandoWeYaSmart
+    jumpsuit: RuCMJumpsuitVeteranPMCCommandoWeYuSG
+    outerClothing: RuCMArmorM4PMCCommandoWeYaSmart
     gloves: AU14HandsSilverRMC
-    head: ArmorHelmetPMCCommandoWeYaSmart
+    head: RuCMArmorHelmetPMCCommandoWeYaSmart
     shoes: RMCBootsPMCCommandoFilled
     mask: RMCMaskCoifPMC
-    ears: RMCHeadsetDistressWeYaCommando
+    ears: RuCMHeadsetDistressWeYaCommando
     back: RMCScabbardMacheteSGFilled
     belt: RMCBeltSmartGunOperatorPistolPMC
     pocket1: RMCPouchDrumPMCFill
     pocket2: RMCPouchMedicalSocDutchUnmarked
-    suitstorage: RMCSmartGunWeYaCommando
+    suitstorage: RuCMSmartGunWeYaCommando
     eyes: RMCGlassesSmartGunSight
   storage:
     outerClothing:
@@ -166,7 +166,7 @@
     - RMCMagazineSmartGunirradiated
     - RMCMagazineSmartGunirradiated
     - RMCMagazineSmartGunirradiated
-    - RMCMK80Commando
+    - RuCMMK80Commando
     pocket2:
     - CMHealthAnalyzer
     - CMUpgradedTraumaKit10
@@ -271,19 +271,19 @@
   id: RuCMJobPMCWeYaCommandoDogcatcher
   equipment:
     id: RMCIDCardPMC
-    jumpsuit: RMCJumpsuitVeteranPMCCommandoWeYa
+    jumpsuit: RuCMJumpsuitVeteranPMCCommandoWeYa
     outerClothing: RuCMArmorM4PMCCommandoWeYaDogcatcher
     gloves: AU14HandsSilverRMC
     head: RuCMArmorHelmetPMCCommandoWeYaDogcatcher
     shoes: RMCBootsPMCCommandoFilled
     mask: RMCMaskCoifPMC
-    ears: RMCHeadsetDistressWeYaCommando
+    ears: RuCMHeadsetDistressWeYaCommando
     back: RuCMSatchelCommandoWeYaDog
     belt: RMCBeltPMC
     pocket1: RMCPouchToolsSocMarineRaiderFill
     pocket2: RMCPouchMedicalSocDutchUnmarked
-    suitstorage: RMCWeaponRifleM54C2DogCather
-    eyes: CMGlassesM4WeYa
+    suitstorage: RMCWeaponRifleM54C2
+    eyes: RuCMGlassesM4WeYa
   storage:
     back:
     - CMStunbaton
@@ -293,7 +293,7 @@
     - CMRollerBedSpawnFolded
     - RMCSynthResetKeySMART
     - AU14CMDefibrillator
-    - CMCommandoWeYaAidKitFilled
+    - RuCMCommandoWeYaAidKitFilled
     outerClothing:
     - CMMagazineRifleM54CAP
     - CMMagazineRifleM54CAP
@@ -407,19 +407,19 @@
   id: RuCMJobPMCWeYaCommandoLeader
   equipment:
     id: RMCIDCardPMC
-    jumpsuit: CMJumpsuitVeteranPMCCommandoWeYuSL
-    outerClothing: CMArmorM4PMCCommandoWeYaLeader
+    jumpsuit: RuCMJumpsuitVeteranPMCCommandoWeYuSL
+    outerClothing: RuCMArmorM4PMCCommandoWeYaLeader
     gloves: RMCHandsVeteran
-    head: ArmorHelmetPMCCommandoWeYaLeader
+    head: RuCMArmorHelmetPMCCommandoWeYaLeader
     shoes: RMCBootsPMCCommandoFilled
     mask: RMCMaskCoifPMC
-    ears: RMCHeadsetDistressWeYaCommandoLeader
-    back: RMCSatchelCommadoWeYaLeader
+    ears: RuCMHeadsetDistressWeYaCommandoLeader
+    back: RuCMSatchelCommandoWeYaLeader
     belt: RMCMatebaBeltLuxurious
     pocket1: RMCPouchToolsSocMarineRaiderFill
     pocket2: RMCPouchMedicalSocDutchUnmarked
-    suitstorage: RMCWeaponRifleM54C2Fixed
-    eyes: CMGlassesM4WeYa
+    suitstorage: RMCWeaponRifleM54C2
+    eyes: RuCMGlassesM4WeYa
   storage:
     back:
     - AU14TeleBaton
@@ -428,7 +428,7 @@
     - RMCMagazineRifleM54CHEAP
     - RMCSynthResetKeySMART
     - AU14CMDefibrillator
-    - CMCommandoWeYaAidKitFilled
+    - RuCMCommandoWeYaAidKitFilled
     outerClothing:
     - RMCMagazineRifleM54CHEAP
     - RMCMagazineRifleM54CHEAP
@@ -441,7 +441,7 @@
     - RMCSpeedLoaderMatebaHIAP
     - RMCSpeedLoaderMatebaHIAP
     - RMCSpeedLoaderMatebaHIAP
-    - RMCWeaponRevolverMatebaCommando
+    - RuCMWeaponRevolverMatebaCommando
     pocket2:
     - CMHealthAnalyzer
     - CMUpgradedTraumaKit10
@@ -555,12 +555,12 @@
   id: RuCMGearWYBWScientist
   equipment:
     id: AU14IDCardCivilianScientist
-    jumpsuit: AU14WYBWJumpsuit
+    jumpsuit: RuCMWYBWJumpsuit
     head: RuCMBioHelmetBW
     belt: RMCBeltHolsterPistolWeYa
     shoes: RMCShoesWhite
     ears: AU14ColonyWeylandHeadset
-    outerClothing: RMCBWLabcoat
+    outerClothing: RuCMBWLabcoat
     eyes: RuCMGlassesBW
     gloves: CMHandsLatex
     back: CMSatchelSecureStandard
@@ -573,7 +573,7 @@
     - RMCGlassesReagentHUDGlasses
     - RMCGlassesMedicalHUDGlasses
     - AU14CMDefibrillator
-    - CMCommandoWeYaAidKitFilled
+    - RuCMCommandoWeYaAidKitFilled
     - RMCSpaceCash1000
     - RMCSpaceCash1000
     - RMCSpaceCash1000
@@ -660,12 +660,12 @@
   id: RuCMGearWYBWDirector
   equipment:
     id: AU14IDCardCivilianScientist
-    jumpsuit: AU14WYBWJumpsuit
+    jumpsuit: RuCMWYBWJumpsuit
     head: RuCMBioHelmetBW
     belt: RMCBeltHolsterPistolWeYaMK80Fill
     shoes: RMCShoesWhite
     ears: AU14ColonyWeylandHeadset
-    outerClothing: RMCBWLabcoatDir
+    outerClothing: RuCMBWLabcoatDir
     eyes: RuCMGlassesBW
     gloves: CMHandsLatex
     back: CMSatchelSecureStandard
@@ -678,7 +678,7 @@
     - RMCGlassesReagentHUDGlasses
     - RMCGlassesMedicalHUDGlasses
     - AU14CMDefibrillator
-    - CMCommandoWeYaAidKitFilled
+    - RuCMCommandoWeYaAidKitFilled
     - RMCSpaceCash1000
     - RMCSpaceCash1000
     - RMCSpaceCash1000
@@ -761,7 +761,7 @@
   id: RuCMGearWYOperator
   equipment:
     id: RMCIDCardPMC
-    jumpsuit: RMCJumpsuitVeteranPMCCommandoWeYa
+    jumpsuit: RuCMJumpsuitVeteranPMCCommandoWeYa
     head: AU14WYPMCBallCap
     belt: RMCBeltHolsterPistolWeYaMK80Fill
     shoes: RMCBootsPMCCommandoFilled

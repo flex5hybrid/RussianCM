@@ -117,7 +117,7 @@
   hidden: false
 
 - type: entity
-  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  parent: CMMobHuman
   id: RuCMRandomHumanoidHIGOPER
   suffix: Lasalle, RuCM
   name: HIG Rifleman
@@ -246,7 +246,7 @@
   hidden: false
 
 - type: entity
-  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  parent: CMMobHuman
   id: RuCMRandomHumanoidHIGLeader
   suffix: Squad Leader, Lasalle, RuCM
   name: HIG Leader
@@ -370,7 +370,7 @@
   hidden: false
 
 - type: entity
-  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  parent: CMMobHuman
   id: RuCMRandomHumanoidHIGMedic
   suffix: Medic, Lasalle, RuCM
   name: HIG Medic
@@ -481,7 +481,7 @@
   hidden: false
 
 - type: entity
-  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  parent: CMMobHuman
   id: RuCMRandomHumanoidHIGEngi
   suffix: Lasalle, RuCM
   name: HIG Enginner
@@ -612,7 +612,7 @@
   hidden: false
 
 - type: entity
-  parent: RuMCBaseMobSpeciesOrganicBlackDragoons
+  parent: CMMobHuman
   id: RuCMRandomHumanoidHIGSynth
   suffix: Lasalle, RuCM
   name: HIG Synth

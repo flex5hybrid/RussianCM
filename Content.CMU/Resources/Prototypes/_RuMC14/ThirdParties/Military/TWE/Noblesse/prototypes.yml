@@ -1,0 +1,474 @@
+# ├──[ TWE Noble ]───────────────────────────────────────────────┤
+
+- type: job
+  parent: CMJobBase
+  id: RuCMJobTWENoble
+  name: TWE Noble
+  description: You are a member of the Empire’s privileged class, afforded honor and respect. Though you hold no direct authority, your influence lets you make requests that are difficult to refuse.
+  playTimeTracker: RuCMJobTWENoble
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    RuCMRankNoblesseDuke:
+      entity: RuCMChevronNoblesseDuke
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuCMJobTWENoble
+        time: 360000
+    RuCMRankNoblesseMargrave:
+      entity: RuCMChevronNoblesseMargrave
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuCMJobTWENoble
+        time: 252000
+    RuCMRankNoblesseMarquise:
+      entity: RuCMChevronNoblesseMarquise
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuCMJobTWENoble
+        time: 180000
+    RuCMRankNoblesseCount:
+      entity: RuCMChevronNoblesseCount
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuCMJobTWENoble
+        time: 72000
+    RuCMRankNoblesseViscount:
+      entity: RuCMChevronNoblesseViscount
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuCMJobTWENoble
+        time: 36000
+    RuCMRankNoblesseBaron:
+      entity: RuCMChevronNoblesseBaron
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuCMJobTWENoble
+        time: 18000
+    RuCMRankNoblesseKnight:
+      entity: RuCMChevronNoblesseKnight
+      requirements: []
+  startingGear: RuCMGearNoble
+  icon: "RuCMJobIconGVTNoble"
+  joinNotifyCrew: false
+  spawnMenuRoleName: TWE Noble
+  supervisors: cm-job-supervisors-staff
+  accessGroups:
+  - ShipMasterAccess
+  - RMCWeYa
+  - auadmin
+  - Colonist
+  - CMCargoTech
+  - auorbitalmanagement
+  - AUPrisonStaff
+  - ShipMasterAccess
+  - aulegacygroupcommand
+  - AU14GovforCommand
+  - AU14OpforCommand
+  - auheadsofcolony
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Skills
+      skills:
+        RMCSkillCqc: 2
+        RMCSkillEndurance: 1
+        RMCSkillMeleeWeapons: 1
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 1
+        RMCSkillIntel: 1
+        RMCSkillMedical: 2
+        RMCSkillLeadership: 3
+        RMCSkillPolice: 1
+        RMCSkillSurgery: 1
+        RMCSkillVehicles: 1
+    - type: MarineOrders
+      moveOrderSoundMale:
+        collection: AU14MaleMoveOrder
+      moveOrderSoundFemale:
+        collection: AU14FemaleMoveOrder
+      focusOrderSoundMale:
+        collection: AU14MaleFocusOrder
+      focusOrderSoundFemale:
+        collection: AU14FemaleFocusOrder
+      holdOrderSoundMale:
+        collection: AU14MaleHoldOrder
+      holdOrderSoundFemale:
+        collection: AU14FemaleHoldOrder
+  hasIcon: true
+  hidden: true
+
+- type: startingGear
+  id: RuCMGearNoble
+  equipment:
+    head: AU14CivFedoraGray
+    eyes: RMCSunglasses
+    ears: AU14ColonyAdminHeadset
+    jumpsuit: CMJumpsuitLiaisonCharcoal
+    outerClothing: RMCFancySuitJacketRed
+    gloves: CMHandsBrown
+    shoes: RMCShoesFancyLeather
+    id: RuCMIDCardColonialResponder
+    belt: RMCMatebaBeltLuxuriousFilled
+    back: AU14SlingSatchelBlack
+    pocket1: RMCPouchDocument
+    pocket2: RMCPouchGeneralLarge
+  storage:
+    pocket2:
+    - CMUUniversalPaperTool
+    back:
+    - RuCMStampNoblesse
+    - AU14StampApproved
+    - AU14StampDenied
+    - CMPenFountain
+
+- type: entity
+  id: RuCMRandomHumanoidNoble
+  name: Imperial Noble ghost role
+  suffix: Spawner, Player, Event, TWE Noblesse, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/gold_id.rsi
+    state: gold
+  - type: RandomHumanoidSpawner
+    settings: RuCMNoble
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMNoble
+  components:
+  - type: GhostRole
+    name: TWE Noble
+    description: You are a member of the Empire’s privileged class, afforded honor and respect. Though you hold no direct authority, your influence lets you make requests that are difficult to refuse.
+    rules: Your role and purpose are determined by the administrator who called you in. Follow the event administrator’s instructions.
+    reregister: false
+    job: RuCMJobTWENoble
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+
+- type: entity
+  parent: CMIDCardGold
+  id: RuCMIDCardTWENoble
+  suffix: TWE Noblesse, RuCM
+  name: TWE Noble ID card
+  description: A symbol of honor and authority in Imperial territory.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/gold_id.rsi
+    state: gold
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _RMC14/Objects/CMIDs/gold_id.rsi
+  - type: PresetIdCard
+    job: RuCMJobTWENoble
+
+- type: playTimeTracker
+  id: RuCMJobTWENoble
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconGVTNoble
+  icon:
+    sprite: /_RMC14/Interface/cm_job_icons.rsi
+    state: para_commander
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconGVTLesserNoble
+  icon:
+    sprite: /_RMC14/Interface/cm_job_icons.rsi
+    state: para_teamleader
+
+# Colonial Government Ranks
+# Noble
+- type: rank
+  id: RuCMRankNoblesseKnight
+  name: Knight
+  prefix: Knight
+  malePrefix: Sir
+  femalePrefix: Dame
+
+- type: rank
+  id: RuCMRankNoblesseBaron
+  name: Baron
+  prefix: Baron
+  malePrefix: Baron
+  femalePrefix: Baroness
+
+- type: rank
+  id: RuCMRankNoblesseViscount
+  name: Viscount
+  prefix: Viscount
+  malePrefix: Viscount
+  femalePrefix: Viscountess
+
+- type: rank
+  id: RuCMRankNoblesseCount
+  name: Count
+  prefix: Count
+  malePrefix: Count
+  femalePrefix: Countess
+
+- type: rank
+  id: RuCMRankNoblesseMarquise
+  name: Marquis
+  prefix: Marquis
+  malePrefix: Marquis
+  femalePrefix: Marchioness
+
+- type: rank
+  id: RuCMRankNoblesseMargrave
+  name: Margrave
+  prefix: Margrave
+  malePrefix: Margrave
+  femalePrefix: Margravine
+
+- type: rank
+  id: RuCMRankNoblesseDuke
+  name: Duke
+  prefix: Duke
+  malePrefix: Duke
+  femalePrefix: Duchess
+
+- type: rank
+  id: RuCMRankNoblesseGrandDuke
+  name: Grand Duke
+  prefix: Grand Duke
+  malePrefix: Grand Duke
+  femalePrefix: Grand Duchess
+
+- type: rank
+  id: RuCMRankNoblesseArchduke
+  name: Archduke
+  prefix: Archduke
+  malePrefix: Archduke
+  femalePrefix: Archduchess
+
+- type: rank
+  id: RuCMRankNoblesseKnyaz
+  name: Prince
+  prefix: Prince
+  malePrefix: Prince
+  femalePrefix: Princess
+
+- type: rank
+  id: RuCMRankNoblesseGrandKnyaz
+  name: Grand Prince
+  prefix: Grand Prince
+  malePrefix: Grand Prince
+  femalePrefix: Grand Princess
+
+- type: rank
+  id: RuCMRankNoblessePrince
+  name: Prince
+  prefix: Prince
+  malePrefix: Prince
+  femalePrefix: Princess
+
+- type: rank
+  id: RuCMRankNoblesseKing
+  name: King
+  prefix: King
+  malePrefix: King
+  femalePrefix: Queen
+
+- type: rank
+  id: RuCMRankNoblesseEmperor
+  name: Emperor
+  prefix: Emperor
+  malePrefix: Emperor
+  femalePrefix: Empress
+
+# base
+- type: entity
+  parent: RMCArmbandBase
+  id: RuCMChevronNoblesseBase
+  abstract: true
+  suffix: Noble insignia, RuCM
+  description: An insignia of noble rank.
+# ├──[ Noblesse ]───────────────────────────────────────────┤
+
+- type: entity
+  parent: RuCMChevronNoblesseBase
+  id: RuCMChevronNoblesseKnight
+  suffix: TWE Noblesse, RuCM
+  name: Knight’s insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankNoblesseKnight
+    override: true
+
+- type: entity
+  parent: RuCMChevronNoblesseBase
+  id: RuCMChevronNoblesseBaron
+  suffix: TWE Noblesse, RuCM
+  name: Baron’s insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankNoblesseBaron
+    override: true
+
+- type: entity
+  parent: RuCMChevronNoblesseBase
+  id: RuCMChevronNoblesseViscount
+  suffix: TWE Noblesse, RuCM
+  name: Viscount’s insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankNoblesseViscount
+    override: true
+
+- type: entity
+  parent: RuCMChevronNoblesseBase
+  id: RuCMChevronNoblesseCount
+  suffix: TWE Noblesse, RuCM
+  name: Count’s insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankNoblesseCount
+    override: true
+
+- type: entity
+  parent: RuCMChevronNoblesseBase
+  id: RuCMChevronNoblesseMarquise
+  suffix: TWE Noblesse, RuCM
+  name: Marquis’s insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankNoblesseMarquise
+    override: true
+
+- type: entity
+  parent: RuCMChevronNoblesseBase
+  id: RuCMChevronNoblesseMargrave
+  suffix: TWE Noblesse, RuCM
+  name: Margrave’s insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankNoblesseMargrave
+    override: true
+
+- type: entity
+  parent: RuCMChevronNoblesseBase
+  id: RuCMChevronNoblesseDuke
+  suffix: TWE Noblesse, RuCM
+  name: Duke’s insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankNoblesseDuke
+    override: true
+
+- type: entity
+  parent: RuCMChevronNoblesseBase
+  id: RuCMChevronNoblesseGrandDuke
+  suffix: TWE Noblesse, RuCM
+  name: Grand Duke’s insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankNoblesseGrandDuke
+    override: true
+
+- type: entity
+  parent: RuCMChevronNoblesseBase
+  id: RuCMChevronNoblesseArchduke
+  suffix: TWE Noblesse, RuCM
+  name: Archduke’s insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankNoblesseArchduke
+    override: true
+
+- type: entity
+  parent: RuCMChevronNoblesseBase
+  id: RuCMChevronNoblesseEmperor
+  suffix: TWE Noblesse, RuCM
+  name: Emperor’s insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankNoblesseEmperor
+    override: true
+
+- type: entity
+  parent: AU14StampBase
+  id: RuCMStampNoblesse
+  name: TWE Noble seal
+  suffix: Admin, TWE Noblesse, RuCM
+  components:
+  - type: Sprite
+    state: stamp-rd
+  - type: Stamp
+    stampedName: TWE Noble
+    stampedColor: "#00191f"
+    stampState: "paper_stamp-rd"

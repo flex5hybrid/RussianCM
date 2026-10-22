@@ -1,0 +1,842 @@
+- type: entity
+  parent: CMArmorM4PMC
+  id: RuCMArmorDutchVestNew
+  suffix: Dutch Dozen, RuCM
+  name: D2 armored vest
+  description: A protective vest worn by some seriously experienced mercs.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/OuterClothing/Dutch/vest.rsi
+  - type: CMArmor
+    melee: 30 # CLOTHING_ARMOR_HIGH
+    bullet: 35 # CLOTHING_ARMOR_HIGHPLUS
+    bio: 20
+    explosionArmor: 30 # CLOTHING_ARMOR_HIGH
+  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_VERY_LIGHT
+    walkModifier: 0.897
+    sprintModifier: 0.897
+  - type: PointLight
+    enabled: false
+    radius: 7 # Higher light range
+    softness: 5
+    autoRot: true
+    netsync: false
+  - type: ClothingRequireEquipped
+    whitelist: null
+
+- type: entity
+  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+  id: RuCMWeaponRifleM16Dutch
+  name: M16 rifle
+  description: An old, reliable design first adopted by the U.N. military in the 1960s. Something like this belongs in a museum of war history. It is chambered in 5.56x45mm.
+  suffix: Filled, Dutch Dozen, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Rifles/m16.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/Rifles/m16.rsi
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - Burst
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_m16.ogg
+  - type: RMCSelectiveFire
+    baseFireModes:
+    - SemiAuto
+    - Burst
+    recoilUnwielded: 3
+    scatterWielded: 2
+    scatterUnwielded: 20
+    baseFireRate: 4
+    burstScatterMult: 2
+    modifiers:
+      Burst:
+        fireDelay: 0.1665
+        maxScatterModifier: 10
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 6
+      FullAuto:
+        fireDelay: 0
+        maxScatterModifier: 13
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 4
+  - type: RMCWeaponAccuracy
+    accuracyMultiplier: 1.35
+    accuracyMultiplierUnwielded: 0.65
+  - type: MagazineAmmoProvider
+    autoEject: false
+    soundAutoEject: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: RuCMMagazineRifleM16AP
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_m16_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_m16_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - RuCMMagazineRifleM16AP
+          - RMCMagazineRifleM16
+  - type: GunDamageModifier
+    multiplier: 1.0
+  - type: AttachableHolder
+    randomAttachmentChance: 0.42
+    slots:
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentExtendedCompensator
+          - RMCAttachmentSuppressor
+          - RMCM5Bayonet
+        random:
+        - RMCM5Bayonet
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentMagneticHarness
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS6ReflexSight
+          - RMCAttachmentS84xTelescopicScope
+          - RMCAttachmentS42xTelescopicMiniscope
+        random:
+        - RMCAttachmentS6ReflexSight
+      rmc-aslot-stock:
+        locked: true
+        startingAttachable: RMCAttachmentM16Stock
+        whitelist:
+          tags:
+          - RMCAttachmentM16Stock
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - RMCAttachmentAngledGrip
+          - RMCAttachmentVerticalGrip
+          - RMCAttachmentFlashlightGrip
+          - RMCAttachmentGyroscopicStabilizer
+          - RMCAttachmentBipod
+          - RMCAttachmentBurstFireAssembly
+          - RMCAttachmentUnderbarrelExtinguisher
+          - RMCAttachmentMiniFlamethrower # TODO RMC14 advanced flamer
+          - RMCAttachmentU1GrenadeLauncher
+          - RMCAttachmentU7UnderbarrelShotgun
+          - RMCAttachmentLaserSight
+          - RMCAttachmentM203GrenadeLauncher
+        random:
+        - RMCAttachmentAngledGrip
+        - RMCAttachmentVerticalGrip
+        - RMCAttachmentBurstFireAssembly
+        - RMCAttachmentUnderbarrelExtinguisher
+        - RMCAttachmentLaserSight
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-barrel: 0.81, -0.03
+      rmc-aslot-rail: -0.15, 0.12
+      rmc-aslot-stock: -0.5, 0
+      rmc-aslot-underbarrel: 0.28, -0.33
+
+- type: entity
+  parent: CMMagazineRifleBase
+  id: RuCMMagazineRifleM16AP
+  suffix: Dutch Dozen, RuCM
+  name: "M16 AP Magazine (5.56x45mm)"
+  components:
+  - type: Tag
+    tags:
+    - CMMagazineRifle
+    - RuCMMagazineRifleM16AP
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - RuCMCartridgeRifleM16AP
+    proto: RuCMCartridgeRifleM16AP
+    capacity: 20
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m16.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Appearance
+
+- type: entity
+  parent: CMBaseCartridgeRifle
+  id: RuCMCartridgeRifleM16AP
+  name: AP Cartridge (5.56x45)
+  description: A 5.56x45 rifle cartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - RMCCartridgeRifleM16
+  - type: CartridgeAmmo
+    proto: RuCMBulletRifle556x45mmAP
+
+- type: entity
+  parent: BulletRifle10x24mm
+  id: RuCMBulletRifle556x45mmAP
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 42
+  - type: CMArmorPiercing
+    amount: 40
+
+- type: Tag
+  id: RuCMMagazineRifleM16AP
+
+- type: Tag
+  id: RuCMCartridgeRifleM16AP
+
+- type: entity
+  parent: CMWebbingHolster
+  id: RuCMWebbingHolsterM1911
+  suffix: Dutch, Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: AU14WeaponPistolM48A4
+    - id: AU14MagazinePistolM48A4
+    - id: AU14MagazinePistolM48A4
+
+- type: entity
+  parent: CMWebbing
+  id: RuCMWebbingDutch
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: RuCMMagazineRifleM16AP
+      amount: 3
+
+- type: entity
+  parent: RMCJumpsuitDutch
+  id: RuCMJumpsuitDutchM1911
+  suffix: Webbing
+  components:
+  - type: WebbingClothing
+    startingWebbing: RuCMWebbingHolsterM1911
+
+- type: entity
+  parent: RMCJumpsuitDutch
+  id: RuCMJumpsuitDutchM16AP
+  suffix: Webbing
+  components:
+  - type: WebbingClothing
+    startingWebbing: RuCMWebbingDutch
+
+- type: entity
+  parent: SquadBase
+  id: RuCMSquadDutch
+  name: Dutch’s Dozen
+  components:
+  - type: SquadTeam
+    color: "#32CD32"
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: MarineSOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_forecon
+    canSupplyDrop: false
+    group: FORECON
+  - type: Tag
+    tags:
+    - RuCMSquadDutch
+
+- type: Tag
+  id: RuCMSquadDutch
+
+- type: job
+  parent: CMJobBase
+  id: RuCMDutchRifleman
+  name: cm-job-name-rifleman
+  description: rmc-job-description-cbrn-rifleman
+  playTimeTracker: RuCMJobDutchRifleman
+  ranks:
+    RMCRankLanceCorporal: []
+  startingGear: RuCMGearDutchRifleman
+  icon: "CMJobIconEmpty"
+  hasIcon: false
+  joinNotifyCrew: false
+  accessGroups:
+  - ShipMasterAccess
+  spawnMenuRoleName: Dutch Rifleman
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Skills
+      skills:
+        RMCSkillCqc: 1
+        RMCSkillEndurance: 4
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 2
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 2
+        RMCSkillJtac: 1
+        RMCSkillMedical: 1
+        RMCSkillMeleeWeapons: 1
+    - type: DemoSpecWhitelist
+    - type: GrenadeSpecWhitelist
+    - type: ScoutWhitelist
+    - type: SniperWhitelist
+    - type: PyroWhitelist
+    - type: NpcFactionMember
+      factions:
+      - UNMC
+    - type: JobPrefix
+      prefix: cm-job-prefix-rifleman
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: private
+  hidden: true
+
+- type: entity
+  id: RuCMRandomHumanoidDutchRifleman
+  name: dutch ghost role rifleman
+  suffix: Spawner, Player, Dutch Dozen, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Markers/landmarks.rsi
+    state: unmc_spawn
+  - type: RandomHumanoidSpawner
+    settings: RuCMDutchRifleman
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMDutchRifleman
+  components:
+  - type: GhostRole
+    name: Dutch’s Dozen Rifleman
+    description: You are a rifleman in Dutch’s Dozen!
+    rules: Track down and eliminate all Yautja. Recover your equipment and exfiltrate.
+    reregister: false
+    job: RuCMDutchRifleman
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadDutch
+
+- type: startingGear
+  id: RuCMGearDutchRifleman
+  equipment:
+    ears: RMCHeadsetDistressDukes
+    jumpsuit: RuCMJumpsuitDutchM1911
+    outerClothing: RuCMArmorDutchVestNew
+    gloves: RMCHandsCombat
+    head: RMCArmorHelmetDutch
+    shoes: CMBootsJungleFilled
+    suitstorage: RuCMWeaponRifleM16Dutch
+    id: RMCDogtagMarineRaider
+    belt: CMBeltMarine
+    back: RMCSatchelLightpack
+    pocket1: RMCPouchMagazineLarge
+    pocket2: RMCPouchFirstAidERTFill
+  storage:
+    back:
+    - CMFirstAidKitFilled
+    - RMCMotionDetector
+    outerClothing:
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    belt:
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    pocket1:
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+
+- type: playTimeTracker
+  id: RuCMJobDutchRifleman
+
+- type: job
+  parent: CMJobBase
+  id: RuCMDutchMedic
+  name: cm-job-name-hospital-corpsman
+  description: rmc-job-description-cbrn-medic
+  playTimeTracker: RuCMJobDutchMedic
+  ranks:
+    RMCRankCorporal: []
+  startingGear: RuCMGearDutchMedic
+  icon: "CMJobIconEmpty"
+  hasIcon: false
+  joinNotifyCrew: false
+  marineAuthorityLevel: 1
+  accessGroups:
+  - ShipMasterAccess
+  overwatchSortPriority: -2
+  overwatchRoleName: Hospital Corpsmen
+  spawnMenuRoleName: Dutch Hospital Corpsman
+  roleWeight: 1
+  displayWeight: 2
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Skills
+      skills:
+        RMCSkillCqc: 1
+        RMCSkillFirearms: 2
+        RMCSkillPolice: 2
+        RMCSkillFireman: 3
+        RMCSkillConstruction: 1
+        RMCSkillEngineer: 2
+        RMCSkillMedical: 3
+        RMCSkillJtac: 1
+        RMCSkillSurgery: 1
+        RMCSkillMeleeWeapons: 1
+        RMCSkillEndurance: 4
+    - type: NpcFactionMember
+      factions:
+      - UNMC
+    - type: JobPrefix
+      prefix: cm-job-prefix-hospital-corpsman
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: medic
+  hidden: true
+
+- type: entity
+  id: RuCMRandomHumanoidDutchMedic
+  name: dutch ghost role hospital corpsman
+  suffix: Spawner, Player, Dutch Dozen, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Markers/landmarks.rsi
+    state: unmc_spawn
+  - type: RandomHumanoidSpawner
+    settings: RuCMDutchMedic
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMDutchMedic
+  components:
+  - type: GhostRole
+    name: Dutch’s Dozen Corpsman
+    description: You are a corpsman in Dutch’s Dozen!
+    rules: Track down and eliminate all Yautja. Recover your equipment and exfiltrate.
+    reregister: false
+    job: RuCMDutchMedic
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadDutch
+
+- type: startingGear
+  id: RuCMGearDutchMedic
+  equipment:
+    ears: RMCHeadsetDistressDukes
+    eyes: RMCGlassesMedicalHUDGlasses
+    jumpsuit: RuCMJumpsuitDutchM16AP
+    outerClothing: RuCMArmorDutchVestNew
+    gloves: RMCHandsCombat
+    head: RMCArmorHelmetDutch
+    shoes: CMBootsJungleFilled
+    suitstorage: RuCMWeaponRifleM16Dutch
+    id: RMCDogtagMarineRaider
+    belt: CMBeltMedicBag
+    back: RMCSatchelLightpack
+    pocket1: RMCPouchMagazineLarge
+    pocket2: RMCPouchMedkitFillAdvanced
+  storage:
+    back:
+    - RMCDefibrillatorCompact
+    - RMCMotionDetector
+    - CMSurgicalLine
+    - CMSynthGraft
+    - CMRollerBedSpawnFolded
+    - RMCPacketGrenadeSmokeFilled
+    - CMAdvFirstAidKitFilled
+    pocket1:
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    belt:
+    - CMUpgradedTraumaKit10
+    - CMUpgradedTraumaKit10
+    - CMUpgradedBurnKit10
+    - CMUpgradedBurnKit10
+    - CMEpinephrineAutoInjector
+    - CMDexalinPlusAutoInjector
+    # RMC TODO: oxycodone autoinjector
+    - CMPillCanisterBicaridine
+    - CMPillCanisterDexalin
+    - CMPillCanisterDylovene
+    - CMPillCanisterKelotane
+    - CMPillCanisterInaprovaline
+    # RMC TODO: Tramadol pill bottle
+    # RMC TODO: Oxycodone pill bottle
+    # RMC TODO: Peridaxon pill bottle
+    # RMC TODO: nano splints
+    - CMHealthAnalyzer
+    - RMCPillCanisterImidazoline
+    # RMC TODO: Alkysine pill bottle
+
+- type: playTimeTracker
+  id: RuCMJobDutchMedic
+
+- type: job
+  parent: CMJobBase
+  id: RuCMDutchGunner
+  name: Machine Gunner
+  description: rmc-job-description-cbrn-rifleman
+  playTimeTracker: RuCMJobDutchGunner
+  ranks:
+    RMCRankLanceCorporal: []
+  startingGear: RuCMGearDutchGunner
+  icon: "CMJobIconEmpty"
+  hasIcon: false
+  joinNotifyCrew: false
+  accessGroups:
+  - ShipMasterAccess
+  spawnMenuRoleName: Dutch Gunner
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Skills
+      skills:
+        RMCSkillCqc: 1
+        RMCSkillEndurance: 4
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 2
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 2
+        RMCSkillJtac: 1
+        RMCSkillMedical: 1
+        RMCSkillMeleeWeapons: 1
+    - type: DemoSpecWhitelist
+    - type: GrenadeSpecWhitelist
+    - type: ScoutWhitelist
+    - type: SniperWhitelist
+    - type: PyroWhitelist
+    - type: NpcFactionMember
+      factions:
+      - UNMC
+    - type: JobPrefix
+      prefix: cm-job-prefix-rifleman
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: private
+  hidden: true
+
+- type: entity
+  id: RuCMRandomHumanoidDutchGunner
+  name: dutch ghost role gunner
+  suffix: Spawner, Player, Dutch Dozen, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Markers/landmarks.rsi
+    state: unmc_spawn
+  - type: RandomHumanoidSpawner
+    settings: RuCMDutchGunner
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMDutchGunner
+  components:
+  - type: GhostRole
+    name: Dutch’s Dozen Machine Gunner
+    description: You are a machine gunner in Dutch’s Dozen!
+    rules: Track down and eliminate all Yautja. Recover your equipment and exfiltrate.
+    reregister: false
+    job: RuCMDutchGunner
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadDutch
+
+- type: startingGear
+  id: RuCMGearDutchGunner
+  equipment:
+    ears: RMCHeadsetDistressDukes
+    jumpsuit: RMCJumpsuitDutch
+    outerClothing: RuCMArmorDutchVestNew
+    gloves: RMCHandsCombat
+    head: RMCArmorHelmetDutch
+    shoes: CMBootsJungleFilled
+    suitstorage: RMCWeaponLMGM60
+    id: RMCDogtagMarineRaider
+    belt: RMCBeltHolsterPistol
+    back: RMCSatchelLightpack
+    pocket1: RMCPouchExplosiveFilledPlasticExplosives
+    pocket2: RMCPouchFirstAidERTFill
+  storage:
+    back:
+    - RMCMagazineLMGM60
+    - RMCMagazineLMGM60
+    - RMCMagazineLMGM60
+    - RMCMagazineLMGM60
+    - RMCMagazineLMGM60
+    - RMCMagazineLMGM60
+    belt:
+    - AU14WeaponPistolM48A4
+    - AU14MagazinePistolM48A4
+    - AU14MagazinePistolM48A4
+    - AU14MagazinePistolM48A4
+    - AU14MagazinePistolM48A4
+    - AU14MagazinePistolM48A4
+    - AU14MagazinePistolM48A4
+
+- type: playTimeTracker
+  id: RuCMJobDutchGunner
+
+- type: job
+  parent: CMJobBase
+  id: RuCMDutchWS
+  name: Flamethrower Operator
+  description: rmc-job-description-cbrn-ws
+  playTimeTracker: RuCMJobDutchWS
+  ranks:
+    RMCRankOperator: []
+  startingGear: RuCMGearDutchWS
+  icon: "CMJobIconEmpty"
+  hasIcon: false
+  joinNotifyCrew: false
+  marineAuthorityLevel: 2
+  accessGroups:
+  - ShipMasterAccess
+  spawnMenuRoleName: Dutch Weapons Specialist
+  overwatchSortPriority: -4
+  overwatchShowName: true
+  overwatchRoleName: Specialist
+  roleWeight: 1
+  displayWeight: 4
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Skills
+      skills:
+        RMCSkillCqc: 1
+        RMCSkillEndurance: 4
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 2
+        RMCSkillConstruction: 2
+        RMCSkillEngineer: 2
+        RMCSkillJtac: 1
+        RMCSkillMedical: 1
+        RMCSkillMeleeWeapons: 1
+    - type: DemoSpecWhitelist
+    - type: GrenadeSpecWhitelist
+    - type: ScoutWhitelist
+    - type: SniperWhitelist
+    - type: PyroWhitelist
+    - type: NpcFactionMember
+      factions:
+      - UNMC
+      leader: true
+    - type: JobPrefix
+      prefix: cm-job-prefix-weapons-specialist
+    - type: CommandAccent
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: spec
+  hidden: true
+
+- type: entity
+  id: RuCMRandomHumanoidDutchWS
+  name: dutch ghost role weapons specialist
+  suffix: Spawner, Player, Dutch Dozen, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Markers/landmarks.rsi
+    state: unmc_spawn
+  - type: RandomHumanoidSpawner
+    settings: RuCMDutchWS
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMDutchWS
+  components:
+  - type: GhostRole
+    name: Flamethrower Operator
+    description: You are the flamethrower operator in Dutch’s Dozen!
+    rules: Track down and eliminate all Yautja. Recover your equipment and exfiltrate.
+    reregister: false
+    job: RuCMDutchWS
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadDutch
+
+- type: startingGear
+  id: RuCMGearDutchWS
+  equipment:
+    ears: RMCHeadsetDistressDukes
+    jumpsuit: RuCMJumpsuitDutchM1911
+    outerClothing: RuCMArmorDutchVestNew
+    gloves: RMCHandsCombat
+    head: RMCArmorHelmetDutch
+    shoes: CMBootsJungleFilled
+    suitstorage: RuCMWeaponRifleM16Dutch
+    id: RMCDogtagMarineRaider
+    belt: CMBeltMarine
+    back: RMCBackpackBroiler
+    pocket1: RMCPouchFuelTank
+    pocket2: RMCPouchFirstAidERTFill
+  inhand:
+  - RMCWeaponFlamerSpec
+  storage:
+    outerClothing:
+    - CMMRE
+    pocket1:
+    - RMCTankFlamerLargeX
+    - RMCTankFlamerLargeB
+    belt:
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+
+- type: playTimeTracker
+  id: RuCMJobDutchWS
+
+- type: job
+  parent: CMJobBase
+  id: RuCMDutch
+  name: Dutch # Arnold 'Dutch' Schäfer
+  description: rmc-job-description-cbrn-squad-leader
+  playTimeTracker: RuCMJobDutch
+  ranks:
+    RMCRankMajor: []
+  startingGear: RuCMGearDutch
+  icon: "CMJobIconEmpty"
+  hasIcon: false
+  joinNotifyCrew: false
+  marineAuthorityLevel: 2
+  accessGroups:
+  - ShipMasterAccess
+  spawnMenuRoleName: Dutch
+  overwatchSortPriority: -6
+  overwatchShowName: true
+  overwatchRoleName: Squad Leader
+  roleWeight: 1
+  displayWeight: 6
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Skills
+      skills:
+        RMCSkillCqc: 5
+        RMCSkillFireman: 5
+        RMCSkillEngineer: 2
+        RMCSkillConstruction: 2
+        RMCSkillFirearms: 3
+        RMCSkillLeadership: 4
+        RMCSkillMedical: 3
+        RMCSkillMeleeWeapons: 2
+        RMCSkillEndurance: 5
+        RMCSkillJtac: 3
+        RMCSkillOverwatch: 1
+    - type: DemoSpecWhitelist
+    - type: GrenadeSpecWhitelist
+    - type: ScoutWhitelist
+    - type: SniperWhitelist
+    - type: PyroWhitelist
+    - type: NpcFactionMember
+      factions:
+      - UNMC
+    - type: MarineOrders
+      leader: true
+    - type: JobPrefix
+      prefix: cm-job-prefix-squad-leader
+    - type: CommandAccent
+    - type: TacticalMapIcon
+      icon:
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: leader
+    - type: RMCTrackable
+    - type: RMCAwardRecommendation
+  hidden: true
+
+- type: entity
+  id: RuCMRandomHumanoidDutch
+  name: dutch ghost role
+  suffix: Spawner, Player, Dutch Dozen, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Markers/landmarks.rsi
+    state: unmc_spawn
+  - type: RandomHumanoidSpawner
+    settings: RuCMDutch
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMDutch
+  components:
+  - type: GhostRole
+    name: Dutch
+    description: You are Dutch (Arnold “Dutch” Schäfer).
+    rules: Track down and eliminate all Yautja. Recover your equipment and exfiltrate.
+    reregis: false
+    job: RuCMDutch
+    raffle:
+      settings: short
+    requirements:
+    - !type:RoleTimeRequirement
+      role: CMJobSquadLeader
+      time: 36000 # 10 Hours
+    - !type:RoleTimeRequirement
+      role: CMJobWeaponsSpecialist
+      time: 18000 # 5 Hours
+  - type: GhostRoleApplySpecial
+    squad: RuCMSquadDutch
+
+- type: startingGear
+  id: RuCMGearDutch
+  equipment:
+    ears: RMCHeadsetDistressDukesLeader
+    eyes: RMCGlassesSPPCommandoNightVision
+    jumpsuit: RuCMJumpsuitDutchM16AP
+    outerClothing: RuCMArmorDutchVestNew
+    gloves: RMCHandsCombat
+    mask: CMUYautjaMaskPred01Ebony
+    shoes: CMBootsJungleFilled
+    suitstorage: RuCMWeaponRifleM16Dutch
+    head: RMCArmorHelmetDutch
+    id: RMCDogtagMarineRaider
+    belt: CMBeltMarine
+    back: RMCScabbardMacheteM2100Filled
+    pocket1: RMCPouchExplosiveFilledPlasticExplosives
+    pocket2: RMCPouchMedicalSocDutchFill
+  storage:
+    outerClothing:
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    belt:
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+    - RuCMMagazineRifleM16AP
+
+- type: playTimeTracker
+  id: RuCMJobDutch

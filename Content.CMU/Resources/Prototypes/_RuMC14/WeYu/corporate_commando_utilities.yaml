@@ -41,7 +41,7 @@
   - type: GrantTacMapAlert
 
 - type: entity
-  parent: RMCHeadsetDistressWeYaCommando
+  parent: RuCMHeadsetDistressWeYaCommando
   id: RuCMHeadsetDistressWeYaCommandoLeader
   suffix: Leader, RuCM, We-Yu Corporate Commandos
   description:
@@ -199,7 +199,7 @@
     camouflageVariations: { }
   
 - type: entity
-  parent: ArmorHelmetPMCCommandoWeYa
+  parent: RuCMArmorHelmetPMCCommandoWeYa
   id: RuCMArmorHelmetPMCCommandoWeYaLeader
   suffix: Squad Leader, We-Yu Corporate Commandos, RuCM
   name: Elite PMC helmet MY7
@@ -242,7 +242,7 @@
           False: { state: icon }
   
 - type: entity
-  parent: ArmorHelmetPMCCommandoWeYa
+  parent: RuCMArmorHelmetPMCCommandoWeYa
   id: RuCMArmorHelmetPMCCommandoWeYaSmart
   suffix: Smartgunner, We-Yu Corporate Commandos, RuCM
   name: Elite PMC helmet MY7SG
@@ -286,7 +286,7 @@
   - type: SmartGunArmor
 
 - type: entity
-  parent: ArmorHelmetPMCCommandoWeYa
+  parent: RuCMArmorHelmetPMCCommandoWeYa
   id: RuCMArmorHelmetPMCCommandoWeYaDogcatcher
   suffix: Dogcatcher, We-Yu Corporate Commandos, RuCM
   name: Elite PMC M5X Helmet

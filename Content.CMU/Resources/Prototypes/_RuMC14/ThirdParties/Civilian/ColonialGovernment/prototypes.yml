@@ -1,0 +1,266 @@
+## Колония
+
+# ├──[ Колониальный исполнитель ]───────────────────────────────────────────────┤
+
+- type: job
+  parent: CMJobBase
+  id: RuCMJobColonialResponder
+  whitelisted: true
+  whitelistParent: RMCWhitelistHard
+  name: Colonial Affairs Coordinator
+  description: You coordinate the local colonial government. Maintain communication with the colony and its administrator, and help ensure operations run smoothly. The administrator reports to you, but give them room to manage their duties.
+  playTimeTracker: RuCMJobColonialResponder
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    RuCMRankGovernmentColonialGovernor:
+      entity: RuCMChevronGovernmentColonialGovernor
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuCMJobColonialResponder
+        time: 180000
+    RuCMRankGovernmentSrAssistant:
+      entity: RuCMChevronGovernmentSrAssistant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuCMJobColonialResponder
+        time: 90000
+    RuCMRankGovernmentAssistant:
+      entity: RuCMChevronGovernmentAssistant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuCMJobColonialResponder
+        time: 36000
+    RuCMRankGovernmentJrAssistant:
+      entity: RuCMChevronGovernmentJrAssistant
+      requirements: []
+  startingGear: RuCMGearColonialResponder
+  icon: "RuCMJobIconGVTResponder"
+  joinNotifyCrew: false
+  spawnMenuRoleName: Colonial Affairs Coordinator
+  supervisors: cm-job-supervisors-staff
+  accessGroups:
+  - ShipMasterAccess
+  - RMCWeYa
+  - auadmin
+  - Colonist
+  - CMCargoTech
+  - auorbitalmanagement
+  - AUPrisonStaff
+  - ShipMasterAccess
+  - aulegacygroupcommand
+  - AU14GovforCommand
+  - AU14OpforCommand
+  - auheadsofcolony
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Skills
+      skills:
+        RMCSkillConstruction: 2
+        RMCSkillEndurance: 1
+        RMCSkillEngineer: 2
+        RMCSkillFirearms: 2
+        RMCSkillFireman: 1
+        RMCSkillIntel: 1
+        RMCSkillJtac: 3
+        RMCSkillMedical: 2
+        RMCSkillOverwatch: 1
+        RMCSkillPolice: 1
+        RMCSkillPowerLoader: 1
+        RMCSkillSurgery: 1
+        RMCSkillVehicles: 2
+  hasIcon: true
+  hidden: true
+
+- type: startingGear
+  id: RuCMGearColonialResponder
+  equipment:
+    head: AU14CivFedoraGray
+    eyes: RMCSunglasses
+    ears: AU14ColonyAdminHeadset
+    jumpsuit: CMJumpsuitLiaisonCharcoal
+    outerClothing: AU14CivilianGrayTrenchCoat
+    gloves: CMHandsBrown
+    shoes: RMCShoesLaceup
+    id: RuCMIDCardColonialResponder
+    belt: CMClipboard
+    back: AU14SlingSatchelBlack
+    pocket1: RMCPouchDocument
+    pocket2: RMCPouchGeneralLarge
+  storage:
+    pocket2:
+    - CMUUniversalPaperTool
+    back:
+    - RuCMStampColonialGovernment
+    - AU14StampApproved
+    - AU14StampDenied
+    - CMPenFountain
+
+- type: entity
+  id: RuCMRandomHumanoidColonialResponder
+  name: Colonial responder ghost role
+  suffix: Spawner, Player, Fax Responder, Colonial Government, RuCM
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/silver_id.rsi
+    state: silver
+  - type: RandomHumanoidSpawner
+    settings: RuCMColonialResponder
+
+- type: randomHumanoidSettings
+  parent: RMCEventHumanoid
+  id: RuCMColonialResponder
+  components:
+  - type: GhostRole
+    name: Colonial Affairs Coordinator
+    description: You coordinate the local colonial government. Maintain communication with the colony and its administrator, and help ensure operations run smoothly. The administrator reports to you, but give them room to manage their duties.
+    rules: Respond to faxes and follow server administrators’ instructions.
+    reregister: false
+    job: RuCMJobColonialResponder
+    raffle:
+      settings: short
+  - type: GhostRoleApplySpecial
+
+- type: entity
+  parent: CMIDCardGold
+  id: RuCMIDCardColonialResponder
+  suffix: Colonial Government, RuCM
+  name: Colonial Affairs Coordinator ID card
+  description: A symbol of law and authority in the colonial territories.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/CMIDs/silver_id.rsi
+    state: silver
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _RMC14/Objects/CMIDs/silver_id.rsi
+  - type: PresetIdCard
+    job: RuCMJobColonialResponder
+
+- type: playTimeTracker
+  id: RuCMJobColonialResponder
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconGVTResponder
+  icon:
+    sprite: /_RMC14/Interface/cm_job_icons.rsi
+    state: staff_officer
+
+# Colonial Government Ranks
+# Responder
+- type: rank
+  id: RuCMRankGovernmentJrAssistant
+  name: Junior Governor’s Assistant
+  prefix: Jr. Gov. Asst.
+  paygrade: GVT-JGA
+
+- type: rank
+  id: RuCMRankGovernmentAssistant
+  name: Governor’s Assistant
+  prefix: Gov. Asst.
+  paygrade: GVT-GA
+
+- type: rank
+  id: RuCMRankGovernmentSrAssistant
+  name: Senior Governor’s Assistant
+  prefix: Sr. Gov. Asst.
+  paygrade: GVT-SGA
+
+- type: rank
+  id: RuCMRankGovernmentColonialGovernor
+  name: Colonial Governor
+  prefix: Governor
+  paygrade: GVT-GOVR
+
+# base
+- type: entity
+  parent: RMCArmbandBase
+  id: RuCMChevronGovernmentBase
+  abstract: true
+  suffix: Government official insignia, RuCM
+  description: Government official insignia.
+# ├──[ Colonial Government ]───────────────────────────────────────────┤
+
+- type: entity
+  parent: RuCMChevronGovernmentBase
+  id: RuCMChevronGovernmentJrAssistant
+  suffix: Colonial Government, RuCM
+  name: Junior Governor’s Assistant insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankGovernmentJrAssistant
+    override: true
+
+- type: entity
+  parent: RuCMChevronGovernmentBase
+  id: RuCMChevronGovernmentAssistant
+  suffix: Colonial Government, RuCM
+  name: Governor’s Assistant insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankGovernmentAssistant
+    override: true
+
+- type: entity
+  parent: RuCMChevronGovernmentBase
+  id: RuCMChevronGovernmentSrAssistant
+  suffix: Colonial Government, RuCM
+  name: Senior Governor’s Assistant insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankGovernmentSrAssistant
+    override: true
+
+- type: entity
+  parent: RuCMChevronGovernmentBase
+  id: RuCMChevronGovernmentColonialGovernor
+  suffix: Colonial Government, RuCM
+  name: Colonial Governor insignia
+  components:
+  - type: Sprite
+    sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+    state: ranks_enlisted
+  - type: UniformAccessory
+    playerSprite:
+      sprite: CMU14/Clothing/Accessory/Chevrons/universal.rsi
+      state: equipped-ranks_enlisted
+  - type: RankChanger
+    rank: RuCMRankGovernmentColonialGovernor
+    override: true
+
+- type: entity
+  parent: AU14StampBase
+  id: RuCMStampColonialGovernment
+  name: Colonial Government seal
+  suffix: Admin, Colonial Government, RuCM
+  components:
+  - type: Sprite
+    state: stamp-hop
+  - type: Stamp
+    stampedName: Colonial Government
+    stampedColor: "#00191f"
+    stampState: "paper_stamp-cap"
