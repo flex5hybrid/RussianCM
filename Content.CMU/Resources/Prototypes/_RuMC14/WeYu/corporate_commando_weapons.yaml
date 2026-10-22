@@ -265,3 +265,53 @@
         unwieldedScatterMultiplier: 2
         shotsToMaxScatter: 80
   - type: GunIDLock
+
+- type: entity
+  parent: CMBaseMagazinePistol
+  id: RuCMMagazinePistolMK80Incendiary
+  suffix: We-Yu Corporate Commandos, RuCM
+  name: VP-78 magazine (9mm incendiary)
+  components:
+  - type: Tag
+    tags:
+    - CMMagazinePistol
+    - RuCMMagazinePistolMK80Incendiary
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - RuCMCartridgePistol9mmIncendiary # MK80 is specially chambered for these rounds; regular pistols cannot use them.
+    proto: RuCMCartridgePistol9mmIncendiary
+    capacity: 18
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/mk80.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: RuCMCartridgePistol9mmIncendiary
+  name: cartridge (9mm incendiary)
+  parent: CMCartridgePistolBase
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - RuCMBulletPistol9mmIncendiary
+  - type: CartridgeAmmo
+    proto: RuCMBulletPistol9mmIncendiary
+
+- type: entity
+  parent: RCMBulletPistol9mmSquashHead
+  id: RuCMBulletPistol9mmIncendiary
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 33
+  - type: CMArmorPiercing
+    amount: 10
+  - type: IgniteOnProjectileHit
