@@ -216,11 +216,18 @@ namespace Content.Client.Viewport
             var drawBoxGlobal = drawBox.Translated(GlobalPixelPosition);
             _viewport.RenderScreenOverlaysBelow(handle, this, drawBoxGlobal);
 
-            ApplySharpnessShader(handle);
+            // CMU14 Begin: grade the completed world image, including viewport sharpness.
+            // ApplySharpnessShader(handle);
+            var darkAmbient = ApplyCMUDarkAmbientShader(handle.DrawingHandleScreen, _viewport.RenderTarget.Texture);
+            if (!darkAmbient)
+                ApplySharpnessShader(handle);
+            // CMU14 End
 
             handle.DrawingHandleScreen.DrawTextureRect(_viewport.RenderTarget.Texture, drawBox);
 
-            if (_sharpnessStrength > 0)
+            // CMU14: also reset the grading shader before drawing overlays and other UI controls.
+            // if (_sharpnessStrength > 0)
+            if (_sharpnessStrength > 0 || darkAmbient)
                 handle.DrawingHandleScreen.UseShader(null);
 
             DrawZLevelComposites(handle, drawBox);
