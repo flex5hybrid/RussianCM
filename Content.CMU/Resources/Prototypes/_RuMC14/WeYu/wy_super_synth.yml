@@ -139,9 +139,9 @@
       - SquadPMC
   - type: NpcFactionMember
     factions:
-    - GOVFOR
+    - AUWeYu
   - type: Marine
-    Faction: govfor
+    Faction: weyu
 
   name: We-Yu Super Synth Intern
   description: Follow the directives of the Weyland-Yutani Directorate.
@@ -164,7 +164,7 @@
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
   id: RuCMJobSuperSynth
-  suffix: We-Yu Corporate Commandos, RuCM
+  suffix: Corporate Commando
   name: We-Yu Super Synth Intern
   components:
   - type: MeleeWeapon

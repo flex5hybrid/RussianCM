@@ -1,7 +1,7 @@
 - type: entity
   parent: CMBaseMask
   id: RuCMMaskTrans
-  suffix: We-Yu Corporate Commandos, RuCM
+  suffix: Corporate Commando
   name: We-Yu Universal Translator Mask
   description: An experimental mask with an integrated translator.
   components:

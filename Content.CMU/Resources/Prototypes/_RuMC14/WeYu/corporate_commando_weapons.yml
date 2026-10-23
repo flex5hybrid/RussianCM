@@ -1,7 +1,7 @@
 - type: entity
   parent: [RMCBaseSlideMagazineVisualsBallistic, RMCWeaponRevolverBase]
   id: RuCMWeaponRevolverMatebaCommando
-  suffix: We-Yu Corporate Commandos, RuCM
+  suffix: Corporate Commando
   name: Mateba Custom Autorevolver
   description: The .454 Mateba 6 Unica is an automatic revolver—a semi-automatic handgun that uses its own recoil to rotate the cylinder. Extremely rare, prohibitively expensive, and incredibly powerful, it is in the hands of a select few high-ranking American officials. Stylish, sophisticated, and, above all, extremely lethal.
   components:
@@ -65,20 +65,20 @@
   - type: Appearance
   - type: AttachableHolder
     slots:
-      rmc-bslot-barrel: 
+      rmc-bslot-barrel:
         startingAttachable: RMCAttachmentMatebaStandard
         whitelist:
           tags:
           - RMCAttachmentMatebaStandard
           - RMCAttachmentMatebaMarksman
           - RMCAttachmentMatebaSnubNose
-      rmc-aslot-barrel: 
+      rmc-aslot-barrel:
         startingAttachable: RMCAttachmentRecoilCompensator
         whitelist:
           tags:
           - RMCAttachmentRecoilCompensator
           - RMCAttachmentBarrelCharger
-      rmc-aslot-rail: 
+      rmc-aslot-rail:
         startingAttachable: RMCAttachmentS6ReflexSight
         whitelist:
           tags:
@@ -112,7 +112,7 @@
 - type: entity
   parent: [RMCBaseSlideMagazineVisuals, CMWeaponPistolBase]
   id: RuCMMK80Commando
-  suffix: We-Yu Corporate Commandos, RuCM
+  suffix: Corporate Commando
   name: VP78 pistol
   description: A massive, imposing semi-automatic pistol chambered for 9mm ammunition with "squash-head" bullets. Frequently encountered both in the United States and throughout the TWE space, it is a common choice for both We-Yu private military contractor units and corporate executives. The weapon is also undergoing limited field testing as part of a next-generation sidearm program for the Marine Corps. The We-Yu logo is engraved on the slide—a constant reminder of who’s really in charge.
   components:
@@ -203,7 +203,7 @@
   id: RuCMSmartGunWeYaCommando
   name: M56T "Terminator" smart gun
   description: An authentic M56T Smartgun firearm, consisting of four parts. If you have one, you’re ready to inflict some serious pain on anyone who gets in your way.
-  suffix: Commando, RuCM, We-Yu Corporate Commandos
+  suffix: Commando, Corporate Commando
   components:
   - type: Sprite
     sprite: _RuMC14/WeYu/smartgun.rsi
@@ -269,12 +269,13 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RuCMMagazinePistolMK80Incendiary
-  suffix: We-Yu Corporate Commandos, RuCM
+  suffix: Corporate Commando
   name: VP-78 magazine (9mm incendiary)
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
+    - CMMagazinePistolMK80
     - RuCMMagazinePistolMK80Incendiary
   - type: BallisticAmmoProvider
     mayTransfer: True
@@ -293,12 +294,14 @@
 
 - type: entity
   id: RuCMCartridgePistol9mmIncendiary
+  suffix: Corporate Commando
   name: cartridge (9mm incendiary)
   parent: CMCartridgePistolBase
   components:
   - type: Tag
     tags:
     - Cartridge
+    - RuCMCartridgePistol9mmIncendiary
     - RuCMBulletPistol9mmIncendiary
   - type: CartridgeAmmo
     proto: RuCMBulletPistol9mmIncendiary
@@ -306,6 +309,7 @@
 - type: entity
   parent: RCMBulletPistol9mmSquashHead
   id: RuCMBulletPistol9mmIncendiary
+  suffix: Corporate Commando
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

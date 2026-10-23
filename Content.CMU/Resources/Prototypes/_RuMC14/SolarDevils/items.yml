@@ -1,7 +1,7 @@
 - type: entity
   parent: RMCEngineerKit
   id: RuCMEngineerKitSD
-  suffix: Filled, RuCM, Solar Devils
+  suffix: Filled, Solar Devils
   components:
   - type: StorageFill
     contents:
@@ -19,7 +19,7 @@
   id: RuCMArmorUSCMM4XSmart
   name: M4-X Armor Harness
   description: A next-generation armor system for Marines fighting xenomorphs, featuring an acid-resistant polymer coating and reinforced ballistic protection.
-  suffix: No Suitlamp, RuCM, Solar Devils
+  suffix: No Suitlamp, Solar Devils
   components:
   - type: RMCArmorSpeedTier
     speedTier: medium
@@ -51,7 +51,7 @@
   id: RuCMArmorUSCMM4X
   name: M4-X Armor
   description: A next-generation armor system for Marines fighting xenomorphs, featuring an acid-resistant polymer coating and reinforced ballistic protection.
-  suffix: No Suitlamp, RuCM, Solar Devils
+  suffix: No Suitlamp, Solar Devils
   components:
   - type: RMCArmorSpeedTier
     speedTier: medium
@@ -79,7 +79,7 @@
 - type: entity
   parent: ArmorHelmetM10
   id: RuCMUSCMM4X
-  suffix: Solar Devils, RuCM
+  suffix: Solar Devils
   name: M4-X Helmet
   description: A next-generation combat helmet designed for use with the M4-X armor. Its full-face design protects against light ballistic impacts and provides enhanced acid resistance.
   components:
@@ -101,7 +101,7 @@
 - type: entity
   parent: SquadBase
   id: RuCMSquadSolarDevils
-  suffix: Solar Devils, RuCM
+  suffix: Solar Devils
   name: Solar Devils
   components:
   - type: SquadTeam
@@ -132,7 +132,7 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: RuCMHeadsetSD
-  suffix: Solar Devils, RuCM
+  suffix: Solar Devils
   name: Solar Devils Headset
   description: Issued to members of the Solar Devils.
   components:
@@ -156,7 +156,7 @@
 - type: entity
   parent: RuCMHeadsetSD
   id: RuCMHeadsetSDSL
-  suffix: Leader, RuCM, Solar Devils
+  suffix: Leader, Solar Devils
   description:
   components:
   - type: RMCHeadset
@@ -165,7 +165,7 @@
 - type: entity
   parent: [AU14CamoUSCMFatigues, RMCJumpsuitMarinePatchBase]
   id: RuCMJumpsuitMarineSD
-  suffix: Patch, Webbing, RuCM, Solar Devils
+  suffix: Patch, Webbing, Solar Devils
   components:
   - type: WebbingClothing
     startingWebbing: RMCToolWebbingFilled
@@ -173,7 +173,7 @@
 - type: entity
   parent: [AU14CamoUSCMFatigues, RMCJumpsuitMarinePatchBase]
   id: RuCMJumpsuitMarineSDMed
-  suffix: Patch, Webbing, RuCM, Solar Devils
+  suffix: Patch, Webbing, Solar Devils
   components:
   - type: WebbingClothing
     startingWebbing: CMWebbingSurgicalGreen

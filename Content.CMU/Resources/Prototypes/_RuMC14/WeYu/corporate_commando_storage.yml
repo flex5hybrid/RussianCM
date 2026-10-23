@@ -1,0 +1,69 @@
+# Webbing and backpack prototypes
+- type: entity
+  parent: CMWebbingBlack
+  id: RuCMWebbingPMCCommandoWeYu
+  suffix: Commando, Filled, Corporate Commando
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCGrenadeBlastM12
+      amount: 2
+    - id: RMCMREWeYaPMC
+    - id: CMFireExtinguisherPortable
+    - id: RMCHandcuffs
+
+- type: entity
+  parent: CMWebbingBlack
+  id: RuCMWebbingPMCCommandoWeYuSL
+  suffix: Commando, Filled, Corporate Commando
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCLaserDesignator
+    - id: RMCGrenadeBlastM12
+    - id: RMCMREWeYaPMC
+    - id: CMFireExtinguisherPortable
+    - id: CMCrowbar
+
+- type: entity
+  parent: CMWebbingBlack
+  id: RuCMWebbingPMCCommandoWeYuSG
+  suffix: Commando, Filled, Corporate Commando
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCGrenadeBlastM12
+      amount: 2
+    - id: RMCMREWeYaPMC
+    - id: CMFireExtinguisherPortable
+    - id: CMCrowbar
+
+- type: entity
+  parent: RMCSatchelLightpack
+  id: RuCMSatchelCommandoWeYa
+  suffix: Corporate Commando
+  name: We-Yu Commando backpack
+  description: An ergonomic, rugged, high-capacity backpack designed for Weyland-Yutani commandos.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/backpack_rifleman.rsi
+
+- type: entity
+  parent: RMCSatchelLightpack
+  id: RuCMSatchelCommandoWeYaLeader
+  suffix: Squad Leader, Corporate Commando
+  name: We-Yu Commando backpack
+  description: An ergonomic, rugged, high-capacity backpack designed for Weyland-Yutani commandos.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/backpack_commando_leader.rsi
+
+- type: entity
+  parent: RMCSatchelLightpack
+  id: RuCMSatchelCommandoWeYaDog
+  suffix: Corporate Commando
+  name: We-Yu Commando backpack
+  description: An ergonomic, rugged, high-capacity backpack designed for Weyland-Yutani commandos.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/backpack_dogcatcher.rsi

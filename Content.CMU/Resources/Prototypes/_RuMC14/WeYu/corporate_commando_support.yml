@@ -1,0 +1,192 @@
+# Medical and support item prototypes
+- type: entity
+  parent: CMAutoInjector
+  id: RuCMMeralyneAutoInjector
+  suffix: Corporate Commando
+  name: meralyne autoinjector
+  description: An autoinjector containing 3 doses of Meralyne, an advanced medication for treating bleeding and circulatory disorders.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 45
+        reagents:
+        - ReagentId: CMMeralyne
+          Quantity: 45
+  - type: CMRefillableSolution
+    reagents:
+      CMMeralyne: 45
+
+- type: entity
+  parent: CMAutoInjector
+  id: RuCMDermalineAutoInjector
+  suffix: Corporate Commando
+  name: dermaline autoinjector
+  description: An auto-injector containing 3 doses of Dermalin, an advanced burn medication.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 45
+        reagents:
+        - ReagentId: CMDermaline
+          Quantity: 45
+  - type: CMRefillableSolution
+    reagents:
+      CMDermaline: 45
+
+- type: entity
+  parent: CMFirstAidKit
+  id: RuCMCommandoWeYaAidKitFilled
+  suffix: Corporate Commando
+  name: Weyland-Yutani first aid kit
+  description: It belongs to some kind of special unit. If you have medical training, you’ll be able to fit it into your backpack.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/first_aid_kit.rsi
+    layers:
+    - state: WeYaAidKit
+    - state: kit_empty
+      map: [ "openLayer" ]
+  - type: Item
+    size: Normal
+    sprite: _RuMC14/WeYu/first_aid_kit.rsi
+    heldPrefix: WeYaAidKit
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,13,1 # 7 slots
+    whitelist:
+      tags:
+      - CMMedicalUpgradeKit
+      - CMSurgicalCaseFilled
+      - DiscreteHealthAnalyzer
+      - Dropper
+      - Pill
+      - Bottle
+      - Syringe
+      - PillCanister
+      - CMTraumaKit
+      - CMBurnKit
+      - Ointment
+      - CMOintment
+      - Brutepack
+      - Bloodpack
+      - CMUSplintItem
+      - RMCPenlight
+      - CMAutoInjector
+      - RMCSyringeCase
+      - CMSurgicalLine
+      - CMSynthGraft
+      - CMRollerItem
+      - BodyBag
+      - Hypospray
+      - CMBloodPack
+      - CMSurgicalCase
+      components:
+      - Hypospray
+  - type: IgnoreContentsSize
+    items:
+      tags:
+      - CMMedicalUpgradeKit
+      - CMSurgicalCaseFilled
+      - PillCanister
+      - CMSurgicalCase
+      - RMCSyringeCase
+  - type: StorageFill
+    contents:
+    - id: CMMedicalUpgradeKitFilledCommando
+      amount: 2
+    - id: CMBloodPackFull
+    - id: CMUSplintItem
+    - id: RMCSyringeCaseFilledPMC
+    - id: CMSurgicalCaseFilled
+    - id: CMPortableSurgicalBedSpawnFolded
+
+- type: entity
+  parent: RMCBaseBioSuit
+  id: RuCMBWLabcoat
+  name: We-Yu laboratory coat for protection against chemical substances
+  description: A sturdy lab coat that now more closely resembles a long coat. It is crafted from durable, wear-resistant materials and designed for conducting hazardous experiments in the field. It is most commonly seen on personnel from the Biological Weapons Division of the Weyland-Yutani Corporation.
+  suffix: Generic, RMC, Corporate Commando
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/labcoat_bioweapons.rsi
+  - type: Clothing
+    sprite: _RuMC14/WeYu/labcoat_bioweapons.rsi
+  - type: CMHardArmor
+  - type: Storage
+    grid:
+    - 0,0,3,1 # 2 slots
+    maxItemSize: Huge
+
+- type: entity
+  parent: RMCBaseBioSuit
+  id: RuCMBWLabcoatDir
+  name: We-Yu laboratory coat for protection against chemical substances
+  description: A sturdy lab coat that now more closely resembles a long coat. It is crafted from durable, wear-resistant materials and designed for conducting hazardous experiments in the field. It is most commonly seen on personnel from the Biological Weapons Division of the Weyland-Yutani Corporation.
+  suffix: Generic, RMC, Corporate Commando
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/armor_bioweapons_director.rsi
+  - type: Clothing
+    sprite: _RuMC14/WeYu/armor_bioweapons_director.rsi
+  - type: CMHardArmor
+  - type: Storage
+    grid:
+    - 0,0,3,1 # 2 slots
+    maxItemSize: Huge
+
+- type: entity
+  parent: RMCHoodBioGeneral
+  id: RuCMBioHelmetBW
+  name: We-Yu chemical protection hood
+  description: A durable laboratory hood. Constructed from wear-resistant materials designed for conducting hazardous experiments in the field. Typically found in the possession of the W-Y Corporation’s biological weapons division.
+  suffix: Bio-Weapons, Corporate Commando
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/hood_bioweapons.rsi
+  - type: Clothing
+    sprite: _RuMC14/WeYu/hood_bioweapons.rsi
+
+- type: entity
+  parent: CMGlassesSecurity
+  id: RuCMGlassesBW
+  name: Durable W-Y laboratory safety goggles
+  description: One-piece molded laboratory safety goggles, capable of withstanding even the harshest working conditions in a laboratory. Typically seen on personnel from the Biological Weapons Division of the Weyland-Yutani Corporation.
+  suffix: Bio-Weapons, Corporate Commando
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/goggles_bioweapons.rsi
+  - type: Clothing
+    sprite: _RuMC14/WeYu/goggles_bioweapons.rsi
+
+- type: entity
+  parent: RMCBriefcase
+  id: RuCMBriefcaseBW
+  suffix: Corporate Commando
+  components:
+  - type: Sprite
+    sprite: _RuMC14/WeYu/briefcase_bioweapons.rsi
+  - type: StorageFill
+    contents:
+    - id: AU14ObjectiveItemWYLaptop
+    - id: CMPenClicky
+    - id: RMCWeYaClipboard
+    - id: CMMagazinePistolMK80
+    - id: CMMagazinePistolMK80
+    - id: RMCPillCyanide
+    - id: RMCPillCyanide
+    - id: RMCPillCyanide
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000
+    - id: RMCSpaceCash1000

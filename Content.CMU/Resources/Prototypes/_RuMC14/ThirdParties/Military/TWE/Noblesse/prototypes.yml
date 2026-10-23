@@ -125,7 +125,7 @@
 - type: entity
   id: RuCMRandomHumanoidNoble
   name: Imperial Noble ghost role
-  suffix: Spawner, Player, Event, TWE Noblesse, RuCM
+  suffix: Spawner, Player, Event, TWE Noblesse
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/gold_id.rsi
@@ -137,6 +137,11 @@
   parent: RMCEventHumanoid
   id: RuCMNoble
   components:
+  - type: NpcFactionMember
+    factions:
+    - NSPA
+  - type: Marine
+    Faction: nspa
   - type: GhostRole
     name: TWE Noble
     description: You are a member of the Empire’s privileged class, afforded honor and respect. Though you hold no direct authority, your influence lets you make requests that are difficult to refuse.
@@ -150,7 +155,7 @@
 - type: entity
   parent: CMIDCardGold
   id: RuCMIDCardTWENoble
-  suffix: TWE Noblesse, RuCM
+  suffix: TWE Noblesse
   name: TWE Noble ID card
   description: A symbol of honor and authority in Imperial territory.
   components:
@@ -171,14 +176,14 @@
   parent: CMJobIconBase
   id: RuCMJobIconGVTNoble
   icon:
-    sprite: /_RMC14/Interface/cm_job_icons.rsi
-    state: para_commander
+    sprite: _RMC14/Interface/cm_job_icons.rsi
+    state: tse_painspector
 
 - type: jobIcon
   parent: CMJobIconBase
   id: RuCMJobIconGVTLesserNoble
   icon:
-    sprite: /_RMC14/Interface/cm_job_icons.rsi
+    sprite: _RMC14/Interface/cm_job_icons.rsi
     state: para_teamleader
 
 # Colonial Government Ranks
@@ -286,14 +291,14 @@
   parent: RMCArmbandBase
   id: RuCMChevronNoblesseBase
   abstract: true
-  suffix: Noble insignia, RuCM
+  suffix: Noble insignia, TWE Noblesse
   description: An insignia of noble rank.
 # ├──[ Noblesse ]───────────────────────────────────────────┤
 
 - type: entity
   parent: RuCMChevronNoblesseBase
   id: RuCMChevronNoblesseKnight
-  suffix: TWE Noblesse, RuCM
+  suffix: TWE Noblesse
   name: Knight’s insignia
   components:
   - type: Sprite
@@ -310,7 +315,7 @@
 - type: entity
   parent: RuCMChevronNoblesseBase
   id: RuCMChevronNoblesseBaron
-  suffix: TWE Noblesse, RuCM
+  suffix: TWE Noblesse
   name: Baron’s insignia
   components:
   - type: Sprite
@@ -327,7 +332,7 @@
 - type: entity
   parent: RuCMChevronNoblesseBase
   id: RuCMChevronNoblesseViscount
-  suffix: TWE Noblesse, RuCM
+  suffix: TWE Noblesse
   name: Viscount’s insignia
   components:
   - type: Sprite
@@ -344,7 +349,7 @@
 - type: entity
   parent: RuCMChevronNoblesseBase
   id: RuCMChevronNoblesseCount
-  suffix: TWE Noblesse, RuCM
+  suffix: TWE Noblesse
   name: Count’s insignia
   components:
   - type: Sprite
@@ -361,7 +366,7 @@
 - type: entity
   parent: RuCMChevronNoblesseBase
   id: RuCMChevronNoblesseMarquise
-  suffix: TWE Noblesse, RuCM
+  suffix: TWE Noblesse
   name: Marquis’s insignia
   components:
   - type: Sprite
@@ -378,7 +383,7 @@
 - type: entity
   parent: RuCMChevronNoblesseBase
   id: RuCMChevronNoblesseMargrave
-  suffix: TWE Noblesse, RuCM
+  suffix: TWE Noblesse
   name: Margrave’s insignia
   components:
   - type: Sprite
@@ -395,7 +400,7 @@
 - type: entity
   parent: RuCMChevronNoblesseBase
   id: RuCMChevronNoblesseDuke
-  suffix: TWE Noblesse, RuCM
+  suffix: TWE Noblesse
   name: Duke’s insignia
   components:
   - type: Sprite
@@ -412,7 +417,7 @@
 - type: entity
   parent: RuCMChevronNoblesseBase
   id: RuCMChevronNoblesseGrandDuke
-  suffix: TWE Noblesse, RuCM
+  suffix: TWE Noblesse
   name: Grand Duke’s insignia
   components:
   - type: Sprite
@@ -429,7 +434,7 @@
 - type: entity
   parent: RuCMChevronNoblesseBase
   id: RuCMChevronNoblesseArchduke
-  suffix: TWE Noblesse, RuCM
+  suffix: TWE Noblesse
   name: Archduke’s insignia
   components:
   - type: Sprite
@@ -446,7 +451,7 @@
 - type: entity
   parent: RuCMChevronNoblesseBase
   id: RuCMChevronNoblesseEmperor
-  suffix: TWE Noblesse, RuCM
+  suffix: TWE Noblesse
   name: Emperor’s insignia
   components:
   - type: Sprite
@@ -464,7 +469,7 @@
   parent: AU14StampBase
   id: RuCMStampNoblesse
   name: TWE Noble seal
-  suffix: Admin, TWE Noblesse, RuCM
+  suffix: Admin, TWE Noblesse
   components:
   - type: Sprite
     state: stamp-rd

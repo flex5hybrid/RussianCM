@@ -98,7 +98,7 @@
 - type: entity
   parent: AU14BaseMobSpeciesOrganicUSArmy
   id: RuCMJobUSCMDevilsRifleman
-  suffix: Solar Devils, RuCM
+  suffix: Solar Devils
   name: SD Rifleman
   components:
   - type: GhostTakeoverAvailable
@@ -227,7 +227,7 @@
 - type: entity
   parent: AU14BaseMobSpeciesOrganicUSArmy
   id: RuCMJobUSCMDevilsLeader
-  suffix: Squad Leader, Solar Devils, RuCM
+  suffix: Squad Leader, Solar Devils
   name: SD Squad Leader
   components:
   - type: GhostTakeoverAvailable
@@ -345,7 +345,7 @@
 - type: entity
   parent: AU14BaseMobSpeciesOrganicUSArmy
   id: RuCMJobUSCMDevilsFTL
-  suffix: Solar Devils, RuCM
+  suffix: Solar Devils
   name: SD Fireteam Leader
   components:
   - type: GhostTakeoverAvailable
@@ -462,7 +462,7 @@
 - type: entity
   parent: AU14BaseMobSpeciesOrganicUSArmy
   id: RuCMJobUSCMDevilsMedic
-  suffix: Medic, Solar Devils, RuCM
+  suffix: Medic, Solar Devils
   name: SD Corpsman
   components:
   - type: GhostTakeoverAvailable
@@ -569,7 +569,7 @@
 - type: entity
   parent: AU14BaseMobSpeciesOrganicUSArmy
   id: RuCMJobUSCMDevilsSmart
-  suffix: Smartgunner, Solar Devils, RuCM
+  suffix: Smartgunner, Solar Devils
   name: SD Smartgunner
   components:
   - type: GhostTakeoverAvailable

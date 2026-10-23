@@ -1,0 +1,50 @@
+# Squad and headset prototypes
+- type: entity
+  parent: SquadBase
+  id: RuCMSquadWeYaCommando
+  suffix: Corporate Commando
+  name: We-Yu Corporate Commando
+  components:
+  - type: SquadTeam
+    color: "#C0C0C0"
+    background:
+      sprite: _RMC14/Interface/cm_job_icons.rsi
+      state: empty
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: radioWEYU
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_pmc
+    canSupplyDrop: false
+    group: WeYa
+    leaderIcon:
+      sprite: _RuMC14/WeYu/job_icons.rsi
+      state: leader
+
+- type: Tag
+  id: RuCMSquadWeYaCommando
+
+- type: entity
+  parent: RMCHeadsetDistressWeYa
+  id: RuCMHeadsetDistressWeYaCommando
+  suffix: Corporate Commando
+  name: headset We-Yu
+  description: A specialized headset used by corporate personnel.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - CMEncryptionKeyWEYUColony
+  - type: GrantTacMapAlert
+
+- type: entity
+  parent: RuCMHeadsetDistressWeYaCommando
+  id: RuCMHeadsetDistressWeYaCommandoLeader
+  suffix: Leader, Corporate Commando
+  components:
+  - type: RMCHeadset
+    radioTextIncrease: 2

@@ -100,7 +100,7 @@
 - type: entity
   id: RuCMRandomHumanoidColonialResponder
   name: Colonial responder ghost role
-  suffix: Spawner, Player, Fax Responder, Colonial Government, RuCM
+  suffix: Spawner, Player, Fax Responder, Colonial Government
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/silver_id.rsi
@@ -125,7 +125,7 @@
 - type: entity
   parent: CMIDCardGold
   id: RuCMIDCardColonialResponder
-  suffix: Colonial Government, RuCM
+  suffix: Colonial Government
   name: Colonial Affairs Coordinator ID card
   description: A symbol of law and authority in the colonial territories.
   components:
@@ -146,7 +146,7 @@
   parent: CMJobIconBase
   id: RuCMJobIconGVTResponder
   icon:
-    sprite: /_RMC14/Interface/cm_job_icons.rsi
+    sprite: _RMC14/Interface/cm_job_icons.rsi
     state: staff_officer
 
 # Colonial Government Ranks
@@ -180,14 +180,14 @@
   parent: RMCArmbandBase
   id: RuCMChevronGovernmentBase
   abstract: true
-  suffix: Government official insignia, RuCM
+  suffix: Government official insignia, Colonial Government
   description: Government official insignia.
 # ├──[ Colonial Government ]───────────────────────────────────────────┤
 
 - type: entity
   parent: RuCMChevronGovernmentBase
   id: RuCMChevronGovernmentJrAssistant
-  suffix: Colonial Government, RuCM
+  suffix: Colonial Government
   name: Junior Governor’s Assistant insignia
   components:
   - type: Sprite
@@ -204,7 +204,7 @@
 - type: entity
   parent: RuCMChevronGovernmentBase
   id: RuCMChevronGovernmentAssistant
-  suffix: Colonial Government, RuCM
+  suffix: Colonial Government
   name: Governor’s Assistant insignia
   components:
   - type: Sprite
@@ -221,7 +221,7 @@
 - type: entity
   parent: RuCMChevronGovernmentBase
   id: RuCMChevronGovernmentSrAssistant
-  suffix: Colonial Government, RuCM
+  suffix: Colonial Government
   name: Senior Governor’s Assistant insignia
   components:
   - type: Sprite
@@ -238,7 +238,7 @@
 - type: entity
   parent: RuCMChevronGovernmentBase
   id: RuCMChevronGovernmentColonialGovernor
-  suffix: Colonial Government, RuCM
+  suffix: Colonial Government
   name: Colonial Governor insignia
   components:
   - type: Sprite
@@ -256,7 +256,7 @@
   parent: AU14StampBase
   id: RuCMStampColonialGovernment
   name: Colonial Government seal
-  suffix: Admin, Colonial Government, RuCM
+  suffix: Admin, Colonial Government
   components:
   - type: Sprite
     state: stamp-hop

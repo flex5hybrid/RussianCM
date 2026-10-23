@@ -119,7 +119,7 @@
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
   id: RuCMWeYaCommando
-  suffix: We-Yu Corporate Commandos, RuCM
+  suffix: Corporate Commando
   name: WY Commando
   components:
   - type: GhostTakeoverAvailable
@@ -241,7 +241,7 @@
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
   id: RuCMWeYaCommandoSmart
-  suffix: Smartgunner, We-Yu Corporate Commandos, RuCM
+  suffix: Smartgunner, Corporate Commando
   name: WY Commando smart
   components:
   - type: GhostTakeoverAvailable
@@ -377,7 +377,7 @@
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
   id: RuCMWeYaCommandoDogcatcher
-  suffix: Dogcatcher, We-Yu Corporate Commandos, RuCM
+  suffix: Dogcatcher, Corporate Commando
   name: WY Commando Dog Catcher
   components:
   - type: GhostTakeoverAvailable
@@ -525,7 +525,7 @@
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
   id: RuCMWeYaCommandoLeader
-  suffix: Squad Leader, We-Yu Corporate Commandos, RuCM
+  suffix: Squad Leader, Corporate Commando
   name: WY Commando Leader
   components:
   - type: GhostTakeoverAvailable
@@ -635,7 +635,7 @@
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
   id: RuCMJobWYBWScientist
-  suffix: Scientist, We-Yu Corporate Commandos, RuCM
+  suffix: Scientist, Corporate Commando
   name: WY Bio-Weapons Scientist (3rd party)
   components:
   - type: GhostTakeoverAvailable
@@ -736,7 +736,7 @@
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
   id: RuCMJobWYBWDirector
-  suffix: Director, We-Yu Corporate Commandos, RuCM
+  suffix: Director, Corporate Commando
   name: WY Director Bio-Weapons Director (3rd party)
   components:
   - type: GhostTakeoverAvailable
@@ -820,7 +820,7 @@
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
   id: RuCMJobWYOperator
-  suffix: Operator, We-Yu Corporate Commandos, RuCM
+  suffix: Operator, Corporate Commando
   name: WY Bio-Weapons Operator (3rd party)
   components:
   - type: GhostTakeoverAvailable

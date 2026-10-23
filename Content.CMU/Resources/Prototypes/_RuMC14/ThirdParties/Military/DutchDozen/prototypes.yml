@@ -1,7 +1,7 @@
 - type: entity
   parent: CMArmorM4PMC
   id: RuCMArmorDutchVestNew
-  suffix: Dutch Dozen, RuCM
+  suffix: Dutch Dozen
   name: D2 armored vest
   description: A protective vest worn by some seriously experienced mercs.
   components:
@@ -29,7 +29,7 @@
   id: RuCMWeaponRifleM16Dutch
   name: M16 rifle
   description: An old, reliable design first adopted by the U.N. military in the 1960s. Something like this belongs in a museum of war history. It is chambered in 5.56x45mm.
-  suffix: Filled, Dutch Dozen, RuCM
+  suffix: Filled, Dutch Dozen
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m16.rsi
@@ -150,7 +150,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RuCMMagazineRifleM16AP
-  suffix: Dutch Dozen, RuCM
+  suffix: Dutch Dozen
   name: "M16 AP Magazine (5.56x45mm)"
   components:
   - type: Tag
@@ -176,6 +176,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RuCMCartridgeRifleM16AP
+  suffix: Dutch Dozen
   name: AP Cartridge (5.56x45)
   description: A 5.56x45 rifle cartridge
   components:
@@ -189,6 +190,7 @@
 - type: entity
   parent: BulletRifle10x24mm
   id: RuCMBulletRifle556x45mmAP
+  suffix: Dutch Dozen
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -207,7 +209,7 @@
 - type: entity
   parent: CMWebbingHolster
   id: RuCMWebbingHolsterM1911
-  suffix: Dutch, Filled
+  suffix: Filled, Dutch Dozen
   components:
   - type: StorageFill
     contents:
@@ -218,7 +220,7 @@
 - type: entity
   parent: CMWebbing
   id: RuCMWebbingDutch
-  suffix: Filled
+  suffix: Filled, Dutch Dozen
   components:
   - type: StorageFill
     contents:
@@ -228,7 +230,7 @@
 - type: entity
   parent: RMCJumpsuitDutch
   id: RuCMJumpsuitDutchM1911
-  suffix: Webbing
+  suffix: Webbing, Dutch Dozen
   components:
   - type: WebbingClothing
     startingWebbing: RuCMWebbingHolsterM1911
@@ -236,7 +238,7 @@
 - type: entity
   parent: RMCJumpsuitDutch
   id: RuCMJumpsuitDutchM16AP
-  suffix: Webbing
+  suffix: Webbing, Dutch Dozen
   components:
   - type: WebbingClothing
     startingWebbing: RuCMWebbingDutch
@@ -244,6 +246,7 @@
 - type: entity
   parent: SquadBase
   id: RuCMSquadDutch
+  suffix: Dutch Dozen
   name: Dutch’s Dozen
   components:
   - type: SquadTeam
@@ -314,7 +317,7 @@
 - type: entity
   id: RuCMRandomHumanoidDutchRifleman
   name: dutch ghost role rifleman
-  suffix: Spawner, Player, Dutch Dozen, RuCM
+  suffix: Spawner, Player, Dutch Dozen
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -424,7 +427,7 @@
 - type: entity
   id: RuCMRandomHumanoidDutchMedic
   name: dutch ghost role hospital corpsman
-  suffix: Spawner, Player, Dutch Dozen, RuCM
+  suffix: Spawner, Player, Dutch Dozen
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -549,7 +552,7 @@
 - type: entity
   id: RuCMRandomHumanoidDutchGunner
   name: dutch ghost role gunner
-  suffix: Spawner, Player, Dutch Dozen, RuCM
+  suffix: Spawner, Player, Dutch Dozen
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -663,7 +666,7 @@
 - type: entity
   id: RuCMRandomHumanoidDutchWS
   name: dutch ghost role weapons specialist
-  suffix: Spawner, Player, Dutch Dozen, RuCM
+  suffix: Spawner, Player, Dutch Dozen
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -780,7 +783,7 @@
 - type: entity
   id: RuCMRandomHumanoidDutch
   name: dutch ghost role
-  suffix: Spawner, Player, Dutch Dozen, RuCM
+  suffix: Spawner, Player, Dutch Dozen
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi

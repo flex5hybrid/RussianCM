@@ -3,6 +3,7 @@
 - type: entity
   parent: SquadBase
   id: RuCMSquadSWATCMB
+  suffix: SWAT
   name: SWAT
   components:
   - type: SquadTeam
@@ -33,7 +34,7 @@
 - type: entity
   parent: AU14IDCardGOVFOR
   id: RuCMIDCardSWATTeamLeader
-  suffix: CMB SWAT, RuCM
+  suffix: SWAT
   name: SWAT Unit Marshal badge
   description: A symbol of public trust and distinction. The laws of Earth reach beyond the Solar System.
   components:
@@ -53,7 +54,7 @@
 - type: entity
   parent: AU14IDCardGOVFOR
   id: RuCMIDCardSWATSergeant
-  suffix: CMB SWAT, RuCM
+  suffix: SWAT
   name: SWAT Team Commander badge
   description: A symbol of public trust and distinction. The laws of Earth reach beyond the Solar System.
   components:
@@ -73,7 +74,7 @@
 - type: entity
   parent: AU14IDCardGOVFOR
   id: RuCMIDCardSWATMedic
-  suffix: CMB SWAT, RuCM
+  suffix: SWAT
   name: SWAT Combat Medic badge
   description: A symbol of public trust and distinction. The laws of Earth reach beyond the Solar System.
   components:
@@ -93,7 +94,7 @@
 - type: entity
   parent: AU14IDCardGOVFOR
   id: RuCMIDCardSWATBreacher
-  suffix: CMB SWAT, RuCM
+  suffix: SWAT
   name: SWAT Breacher badge
   description: A symbol of public trust and distinction. The laws of Earth reach beyond the Solar System.
   components:
@@ -113,7 +114,7 @@
 - type: entity
   parent: AU14IDCardGOVFOR
   id: RuCMIDCardSWATShieldman
-  suffix: CMB SWAT, RuCM
+  suffix: SWAT
   name: SWAT Shield Officer badge
   description: A symbol of public trust and distinction. The laws of Earth reach beyond the Solar System.
   components:
@@ -133,7 +134,7 @@
 - type: entity
   parent: AU14IDCardGOVFOR
   id: RuCMIDCardSWATOperator
-  suffix: CMB SWAT, RuCM
+  suffix: SWAT
   name: SWAT Officer badge
   description: A symbol of public trust and distinction. The laws of Earth reach beyond the Solar System.
   components:
@@ -236,7 +237,7 @@
 - type: entity
   id: RuCMRandomHumanoidSWATLeader
   name: SWAT Marshal Commander ghost role
-  suffix: Spawner, Player, CMB SWAT, RuCM
+  suffix: Spawner, Player, SWAT
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/cmb_marshal.rsi
@@ -318,7 +319,7 @@
       entity: RuCMChevronCMBSWATSergeant
       requirements: []
   startingGear: RuCMJobSWATSergeant
-  icon: RuCMJobIconSWATSergeant
+  icon: RMCJobIconBureauDeputy
   joinNotifyCrew: false
   accessGroups:
   - auadmin
@@ -365,7 +366,7 @@
     - type: MarineOrders
     - type: SquadLeader
       icon:
-        sprite: /_RMC14/Interface/cm_job_icons.rsi
+        sprite: _RMC14/Interface/cm_job_icons.rsi
         state: cmb_dep
     - type: RMCPointing
     - type: RMCTrackable
@@ -376,7 +377,7 @@
 - type: entity
   id: RuCMRandomHumanoidSWATSergeant
   name: SWAT Team Sergeant ghost role
-  suffix: Spawner, Player, CMB SWAT, RuCM
+  suffix: Spawner, Player, SWAT
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
@@ -458,7 +459,7 @@
       entity: RuCMChevronCMBSWATOfficer
       requirements: []
   startingGear: RuCMJobSWATOperator
-  icon: RuCMJobIconSWATOperator
+  icon: RMCJobIconBureauDeputy
   joinNotifyCrew: false
   accessGroups:
   - auadmin
@@ -506,7 +507,7 @@
 - type: entity
   id: RuCMRandomHumanoidSWATOperator
   name: SWAT Operator ghost role
-  suffix: Spawner, Player, CMB SWAT, RuCM
+  suffix: Spawner, Player, SWAT
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
@@ -583,7 +584,7 @@
       entity: RuCMChevronCMBSWATMedic
       requirements: []
   startingGear: RuCMJobSWATMedic
-  icon: RuCMJobIconSWATMedic
+  icon: RMCJobIconBureauDeputy
   joinNotifyCrew: false
   accessGroups:
   - auadmin
@@ -632,7 +633,7 @@
 - type: entity
   id: RuCMRandomHumanoidSWATMedic
   name: SWAT Corpsman ghost role
-  suffix: Spawner, Player, CMB SWAT, RuCM
+  suffix: Spawner, Player, SWAT
   components:
     - type: Sprite
       sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
@@ -725,7 +726,7 @@
       entity: RuCMChevronCMBSWATEngineer
       requirements: []
   startingGear: RuCMJobSWATEngineer
-  icon: RuCMJobIconSWATBreacher
+  icon: RMCJobIconBureauDeputy
   joinNotifyCrew: false
   accessGroups:
   - auadmin
@@ -774,7 +775,7 @@
 - type: entity
   id: RuCMRandomHumanoidSWATEngineer
   name: SWAT ComTech ghost role
-  suffix: Spawner, Player, CMB SWAT, RuCM
+  suffix: Spawner, Player, SWAT
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
@@ -837,7 +838,7 @@
 - type: entity
   parent: RMCBeltXM51
   id: RuCMBeltXM51Filled
-  suffix: Filled
+  suffix: Filled, SWAT
   components:
   - type: StorageFill
     contents:
@@ -862,7 +863,7 @@
       entity: RuCMChevronCMBSWATShieldman
       requirements: []
   startingGear: RuCMJobSWATShieldman
-  icon: RuCMJobIconSWATShieldman
+  icon: RMCJobIconBureauDeputy
   joinNotifyCrew: false
   accessGroups:
   - auadmin
@@ -910,7 +911,7 @@
 - type: entity
   id: RuCMRandomHumanoidSWATShieldman
   name: SWAT Shieldman ghost role
-  suffix: Spawner, Player, CMB SWAT, RuCM
+  suffix: Spawner, Player, SWAT
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/cmb_deputy.rsi
@@ -983,7 +984,7 @@
 - type: entity
   parent: AU14UniversalBlackFatigues
   id: RuCMSWATFatiguesBasic
-  suffix: Webbing
+  suffix: Webbing, SWAT
   components:
   - type: WebbingClothing
     startingWebbing: RMCWebbingHolsterBlackSpearhead
@@ -991,7 +992,7 @@
 - type: entity
   parent: AU14UniversalBlackFatigues
   id: RuCMSWATFatiguesMedic
-  suffix: Webbing
+  suffix: Webbing, SWAT
   components:
   - type: WebbingClothing
     startingWebbing: CMWebbingSurgicalBlue
@@ -999,54 +1000,12 @@
 - type: entity
   parent: AU14UniversalBlackFatigues
   id: RuCMSWATFatiguesTools
-  suffix: Webbing
+  suffix: Webbing, SWAT
   components:
   - type: WebbingClothing
     startingWebbing: RMCToolWebbingFilled
 
 # ├──[ SWAT - Иконки ]───────────────────────────────────────────┤
-
-- type: jobIcon
-  parent: CMJobIconBase
-  id: RuCMJobIconSWATTeamLeader
-  icon:
-    sprite: /_RMC14/Interface/cm_job_icons.rsi
-    state: cmb_mar
-
-- type: jobIcon
-  parent: CMJobIconBase
-  id: RuCMJobIconSWATSergeant
-  icon:
-    sprite: /_RMC14/Interface/cm_job_icons.rsi
-    state: cmb_dep
-
-- type: jobIcon
-  parent: CMJobIconBase
-  id: RuCMJobIconSWATMedic
-  icon:
-    sprite: /_RMC14/Interface/cm_job_icons.rsi
-    state: rmc_medic
-
-- type: jobIcon
-  parent: CMJobIconBase
-  id: RuCMJobIconSWATShieldman
-  icon:
-    sprite: /_RMC14/Interface/cm_job_icons.rsi
-    state: cmb_rco
-
-- type: jobIcon
-  parent: CMJobIconBase
-  id: RuCMJobIconSWATBreacher
-  icon:
-    sprite: /_RMC14/Interface/cm_job_icons.rsi
-    state: rmc_breacher
-
-- type: jobIcon
-  parent: CMJobIconBase
-  id: RuCMJobIconSWATOperator
-  icon:
-    sprite: /_RMC14/Interface/cm_job_icons.rsi
-    state: cmb_icc
 
 - type: rank
   id: RuCMRankCMBSWATTeamCommander
@@ -1057,7 +1016,7 @@
 - type: entity
   parent: AU14ChevronCMBBase
   id: RuCMChevronCMBSWATOfficer
-  suffix: CMB SWAT, RuCM
+  suffix: SWAT
   name: CMB SWAT Crowd Control Officer chevron
   components:
   - type: Sprite
@@ -1074,7 +1033,7 @@
 - type: entity
   parent: AU14ChevronCMBBase
   id: RuCMChevronCMBSWATMedic
-  suffix: CMB SWAT, RuCM
+  suffix: SWAT
   name: CMB SWAT Combat Medic chevron
   components:
   - type: Sprite
@@ -1091,7 +1050,7 @@
 - type: entity
   parent: AU14ChevronCMBBase
   id: RuCMChevronCMBSWATEngineer
-  suffix: CMB SWAT, RuCM
+  suffix: SWAT
   name: CMB SWAT Breacher chevron
   components:
   - type: Sprite
@@ -1108,7 +1067,7 @@
 - type: entity
   parent: AU14ChevronCMBBase
   id: RuCMChevronCMBSWATShieldman
-  suffix: CMB SWAT, RuCM
+  suffix: SWAT
   name: CMB SWAT Special Operations Specialist chevron
   components:
   - type: Sprite
@@ -1125,7 +1084,7 @@
 - type: entity
   parent: AU14ChevronCMBBase
   id: RuCMChevronCMBSWATSergeant
-  suffix: CMB SWAT, RuCM
+  suffix: SWAT
   name: CMB SWAT Team Commander chevron
   components:
   - type: Sprite

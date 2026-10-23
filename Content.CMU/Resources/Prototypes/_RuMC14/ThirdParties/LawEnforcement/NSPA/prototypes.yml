@@ -86,7 +86,7 @@
 - type: entity
   id: RuCMRandomHumanoidNSPAComissar
   name: NSPA Comissioner ghost role
-  suffix: Spawner, Player, Event, NSPA, RuCM
+  suffix: Spawner, Player, Event, NSPA
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/gold_id.rsi
@@ -111,6 +111,7 @@
 - type: entity
   parent: AU14IDCardColonyLEOLeader
   id: RuCMIDCardColonyNSPAComissar
+  suffix: NSPA
   name: NSPA Commissioner ID card
   components:
   - type: PresetIdCard
@@ -124,7 +125,7 @@
 - type: entity
   parent: AU14ChevronNSPABase
   id: RuCMChevronNSPAComissar
-  suffix: NSPA, RuCM
+  suffix: NSPA
   name: NSPA Commissioner chevron
   components:
   - type: Sprite
@@ -142,7 +143,7 @@
   parent: AU14StampBase
   id: RuCMStampNSPAComissar
   name: NSPA Commissioner seal
-  suffix: Admin, NSPA, RuCM
+  suffix: Admin, NSPA
   components:
   - type: Sprite
     state: stamp-provost
@@ -154,7 +155,7 @@
 - type: entity
   id: RuCMRandomHumanoidNSPAConstable
   name: NSPA Constable ghost role
-  suffix: Spawner, Player, NSPA, RuCM
+  suffix: Spawner, Player, NSPA
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/gold_id.rsi

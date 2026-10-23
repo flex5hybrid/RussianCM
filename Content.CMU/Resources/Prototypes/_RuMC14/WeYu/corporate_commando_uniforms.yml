@@ -1,9 +1,9 @@
 - type: entity
   parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
   id: RuCMWYBWJumpsuit
-  suffix: We-Yu Corporate Commandos, RuCM
+  suffix: Corporate Commando
   name: Bio-Weapons Department Uniform
-  description: The uniform of the Ve-Yu Bio-Weapon Department is well-protected against impacts and acid.
+  description: The uniform of the We-Yu Bio-Weapons Department is well-protected against impacts and acid.
   components:
   - type: Sprite
     sprite: _RuMC14/WeYu/uniform_bioweapons.rsi
@@ -16,7 +16,7 @@
   id: RuCMJumpsuitVeteranPMCCommandoWeYu
   name: We-Yu elite commando combat uniform
   description: Armored uniform used by elite "Weyland-Yutani" Corporate Commandos. Lightweight and comfortable, yet offering strong protection.
-  suffix: Corporate Commando, RuCM, We-Yu Corporate Commandos
+  suffix: Corporate Commando
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/officer.rsi
@@ -32,7 +32,7 @@
   id: RuCMJumpsuitVeteranPMCCommandoWeYuSL
   name: We-Yu elite commando combat uniform
   description: Armored uniform used by elite "Weyland-Yutani" Corporate Commandos. Lightweight and comfortable, yet offering strong protection.
-  suffix: Commando Squad Leader, RuCM, We-Yu Corporate Commandos
+  suffix: Commando Squad Leader, Corporate Commando
   components:
   - type: Sprite
     sprite: _RuMC14/WeYu/uniform_commando_leader.rsi
@@ -48,7 +48,7 @@
   id: RuCMJumpsuitVeteranPMCCommandoWeYuSG
   name: We-Yu elite commando combat uniform
   description: Armored uniform used by elite "Weyland-Yutani" Corporate Commandos. Lightweight and comfortable, yet offering strong protection.
-  suffix: Commando SmartGun, RuCM, We-Yu Corporate Commandos
+  suffix: Commando SmartGun, Corporate Commando
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/officer.rsi
@@ -64,7 +64,7 @@
   id: RuCMJumpsuitVeteranPMCCommandoWeYa
   name: We-Yu elite commando combat uniform
   description: Armored uniform used by elite Weyland-Yutani commandos. Lightweight and comfortable, yet offering strong protection.
-  suffix: Commando Dogcatcher, RuCM, We-Yu Corporate Commandos
+  suffix: Commando Dogcatcher, Corporate Commando
   components:
   - type: Sprite
     sprite: _RuMC14/WeYu/uniform_dogcatcher.rsi
@@ -72,4 +72,4 @@
     startingAccessories:
     - RMCPatchWeYaBlack
   - type: WebbingClothing
-    startingWebbing: RMCWebbingPMCCommandoWeYu
+    startingWebbing: RuCMWebbingPMCCommandoWeYu

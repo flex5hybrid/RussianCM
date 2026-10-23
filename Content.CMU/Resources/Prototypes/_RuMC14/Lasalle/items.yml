@@ -4,7 +4,7 @@
 - type: entity
   parent: [RMCBaseMarineArmor, RMCAllowSuitStorageClothingArmorPMC]
   id: RuCMLBArmorN
-  suffix: Lasalle, RuCM
+  suffix: Lasalle HIG
   name: M3-LB Combat Armor
   description: A heavily modified proprietary version of the Armat Systems M3 armor platform, developed by Lasalle Bionational. Issued exclusively to its Hazard Intervention Group operators for high-risk operations.
   components:
@@ -32,7 +32,7 @@
 - type: entity
   parent: RMCMarineUniformBase
   id: RuCMUniformLasalle
-  suffix: Lasalle, RuCM
+  suffix: Lasalle HIG
   name: Lasalle Bionational Security Uniform
   description: Armored uniform issued to Lasalle Bionational security personnel.
   components:
@@ -42,7 +42,7 @@
 - type: entity
   parent: RuCMUniformLasalle
   id: RuCMUniformLasalleSynth
-  suffix: Webbing, RuCM, Lasalle
+  suffix: Webbing, Lasalle HIG
   components:
   - type: WebbingClothing
     startingWebbing: CMWebbingSurgicalBlue
@@ -50,7 +50,7 @@
 - type: entity
   parent: [CMBaseMask, CMUBaseGasMaskFilterSlot]
   id: RuCMGasmaskLB
-  suffix: Lasalle, RuCM
+  suffix: Lasalle HIG
   name: LBN-4 Gas Mask
   description: A lightweight, reinforced gas mask developed by Lasalle Bionational for security and industrial work in hazardous environments.
   components:
@@ -83,7 +83,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: RuCMEncryptionKeyLB
-  suffix: Lasalle, RuCM
+  suffix: Lasalle HIG
   name: LB Encryption Key
   components:
   - type: EncryptionKey
@@ -97,7 +97,7 @@
   parent: RMCHeadsetDistressWeYa
   id: RuCMCHeadsetDistressLB
   name: HIG Headset
-  suffix: HIG, RuCM, Lasalle
+  suffix: Lasalle HIG
   description: A specialized headset used by the Hazard Intervention Group.
   components:
   - type: ContainerFill
@@ -120,7 +120,7 @@
 - type: entity
   parent: ArmorHelmetM10
   id: RuCMHelmetOperLB
-  suffix: Lasalle, RuCM
+  suffix: Lasalle HIG
   name: HIG Combat Helmet
   description: A fully enclosed combat helmet issued to Lasalle Bionational Hazard Intervention Group operators. Its reinforced construction and built-in visor are designed for high-risk operations in hostile environments.
   components:
@@ -134,7 +134,7 @@
 - type: entity
   parent: CMBootsBlack
   id: RuCMShoesLB
-  suffix: Lasalle, RuCM
+  suffix: Lasalle HIG
   name: HIG Combat Boots
   description: Reinforced black combat boots with distinctive blue accents, standard issue for Lasalle Bionational Hazard Intervention Group operators.
   components:
@@ -146,12 +146,12 @@
 - type: entity
   parent: [RMCItemSlotM5Bayonet, RuCMShoesLB]
   id: RuCMShoesLBFilled
-  suffix: Filled, RuCM, Lasalle
+  suffix: Filled, Lasalle HIG
 
 - type: entity
   parent: AU14GlovesBase
   id: RuCMGlovesLB
-  suffix: Lasalle, RuCM
+  suffix: Lasalle HIG
   name: HIG Combat Gloves
   description: Reinforced black combat gloves with distinctive blue accents, standard issue for Lasalle Bionational Hazard Intervention Group operators.
   components:
@@ -163,7 +163,7 @@
 - type: entity
   parent: CMArmorHelmetM11
   id: RuCMHelmetSLLB
-  suffix: Lasalle, RuCM
+  suffix: Lasalle HIG
   name: HIG Squad Leader Combat Helmet
   description: A fully enclosed combat helmet issued to Lasalle Bionational response team leaders. A blue marking identifies its command role, while an integrated telemetry beacon distinguishes the wearer from the rest of the team.
   components:
@@ -177,7 +177,7 @@
 - type: entity
   parent: CMArmorHelmetM10Medic
   id: RuCMHelmetMedLB
-  suffix: Lasalle, RuCM
+  suffix: Lasalle HIG
   name: HIG Combat Helmet
   description: A fully enclosed combat helmet issued to Lasalle Bionational Hazard Intervention Group operators. Its reinforced construction and built-in visor are designed for high-risk operations in hostile environments.
   components:
@@ -191,7 +191,7 @@
 - type: entity
   parent: RMCArmorHelmetM10Welding
   id: RuCMHelmetEngiLB
-  suffix: Lasalle, RuCM
+  suffix: Lasalle HIG
   name: HIG Engineer Combat Helmet
   description: A fully enclosed combat helmet issued to Lasalle Bionational Hazard Intervention Group technicians. Its enlarged visor improves visibility, and an integrated flip-down shield protects the wearer during welding.
   components:
@@ -205,7 +205,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: RuCMLaserBullet
-  suffix: Lasalle, RuCM
+  suffix: Lasalle HIG
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -231,7 +231,7 @@
 - type: entity
   parent: CMCartridgeSMGBase
   id: RuCMCartridgeLaserSMG
-  suffix: Lasalle, RuCM
+  suffix: Lasalle HIG
   name: 9×19 mm Armor-Piercing Laser Cartridges
   description: A 9×19 mm cartridge for the submachine gun.
   components:
@@ -251,7 +251,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RuCMMagazineSMGM36
-  suffix: Lasalle, RuCM
+  suffix: Lasalle HIG
   name: A-M36 Power Cell
   description: A high-capacity disposable power cell developed for the experimental A-M36.
   components:
@@ -285,7 +285,7 @@
   name: Experimental A-M36
   id: RuCMWeaponSMGM36
   description: An experimental directed-energy submachine gun developed for Lasalle Bionational security forces. Issued to high-risk response teams and select elite operators, its powerful laser pulses can ignite organic targets.
-  suffix: Filled, RuCM, Lasalle
+  suffix: Filled, Lasalle HIG
   components:
   - type: Sprite
     sprite: _RuMC14/Lasalle/smg_m36.rsi
