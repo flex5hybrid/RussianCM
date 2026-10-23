@@ -629,3 +629,56 @@
     job: RuCMJobHIGSynth
     raffle:
       settings: short
+
+- type: rank
+  id: RuCMRankHIGTeamLead
+  name: HIG Team Leader
+  prefix: TL
+  paygrade: HIG-LB3
+
+- type: rank
+  id: RuCMRankHIGSpecialist
+  name: HIG Specialist
+  prefix: Spec.
+  paygrade: HIG-LB2
+
+- type: rank
+  id: RuCMRankHIGTrooper
+  name: HIG Operator
+  prefix: Op.
+  paygrade: HIG-LB1
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconHIGSL
+  icon:
+    sprite: _RuMC14/Lasalle/job_icons.rsi
+    state: leader
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconHIGCorpsman
+  icon:
+    sprite: _RuMC14/Lasalle/job_icons.rsi
+    state: medic
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconHIGSynth
+  icon:
+    sprite: _RuMC14/Lasalle/job_icons.rsi
+    state: synth
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconHIGComTech
+  icon:
+    sprite: _RuMC14/Lasalle/job_icons.rsi
+    state: engi
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuCMJobIconHIGOper
+  icon:
+    sprite: _RuMC14/Lasalle/job_icons.rsi
+    state: merc
