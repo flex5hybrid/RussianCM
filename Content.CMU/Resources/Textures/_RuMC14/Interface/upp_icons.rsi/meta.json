@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": " 'hubaruba' from Discord",
+  "size": {
+    "x": 16,
+    "y": 16
+  },
+    "states": [
+        {
+            "name": "UPP_com"
+        },
+        {
+            "name": "UPP_eng"
+        },
+        {
+            "name": "UPP_inf"
+        },
+        {
+            "name": "UPP_med"
+        },
+        {
+            "name": "UPP_officer"
+        },
+        {
+            "name": "UPP-VDV_com"
+        },
+        {
+            "name": "UPP-VDV_Dcom"
+        },
+        {
+            "name": "UPP-VDV_inf"
+        },
+        {
+            "name": "UPP-VDV_eng"
+        },
+        {
+            "name": "UPP-VDV_med"
+        },
+        {
+            "name": "UPP-VDV_snipe"
+        },
+        {
+            "name": "UPP-VDV_gunner"
+        }
+    ]
+}

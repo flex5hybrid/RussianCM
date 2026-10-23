@@ -101,6 +101,30 @@
 
 - type: entity
   parent: RMCMarineHelmetBase
+  id: RuMCUPPCrewHelmet
+  name: UPP crew helmet
+  description: A standard-issue padded helmet for UPP vehicle crews. Designed to protect against concussions and shrapnel inside armored vehicles. Includes built-in communication gear and a reinforced visor.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/helmet/Crew.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/UPP/helmet/Crew.rsi
+
+- type: entity
+  parent: RMCMarineHelmetBase
+  id: RuMCUPPPilotHelmet
+  name: UPP pilot helmet
+  description: A sealed flight helmet for UPP dropship and VTOL pilots. Features an integrated oxygen supply, advanced targeting optics, and a reinforced canopy. Built for those who fly into the fire.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/helmet/Pilot.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/UPP/helmet/Pilot.rsi
+
+#VDV
+
+- type: entity
+  parent: RMCMarineHelmetBase
   id: RuMCUPPInfantryHelmetVDV
   name: 6B-VDV helmet
   description: A lightweight universal helmet for UPP Airborne Troops. Based on the standard SPN helmet, but lighter and with improved field of vision for airborne operations. Solid protection without sacrificing mobility.
@@ -115,6 +139,8 @@
     bullet: 20
     bio: 20
     explosionArmor: 15
+
+#SOF
 
 - type: entity
   parent: RMCMarineHelmetBase

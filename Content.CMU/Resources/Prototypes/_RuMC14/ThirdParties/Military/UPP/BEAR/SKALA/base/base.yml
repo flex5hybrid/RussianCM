@@ -23,9 +23,9 @@
       - [ RuMCInfantryHelmetBEARFull, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
       - [ RuMCBEARInfantryHelmet, RMCBootsSPP, CMHandsBrown ]
     randomWeapon:
-    - [ RuMCSniperRifleSVAROG, RuMCUniformBlackBEARFull, RuMCUPPNavalInfantryBeltPistolFull, RuMCPouchMagazineSVAROGBEARFull, ]
-    - [ RuMCSniperRifleSVAROG, RuMCUniformGrayBEARFull, RuMCUPPNavalInfantryBeltPistolFull, RuMCPouchMagazineSVAROGBEARFull, ]
-    - [ RuMCSniperRifleSVAROG, RuMCUniformBEARFull, RuMCUPPNavalInfantryBeltPistolFull, RuMCPouchMagazineSVAROGBEARFull, ]
+    - [ RuMCSniperRifleSVAROG, RuMCUniformBlackBEARFull, RuMCUPPNavalInfantryBeltPistolFull, RuMCPouchMagazineSVAROGFull, ]
+    - [ RuMCSniperRifleSVAROG, RuMCUniformGrayBEARFull, RuMCUPPNavalInfantryBeltPistolFull, RuMCPouchMagazineSVAROGFull, ]
+    - [ RuMCSniperRifleSVAROG, RuMCUniformBEARFull, RuMCUPPNavalInfantryBeltPistolFull, RuMCPouchMagazineSVAROGFull, ]
     tryEquipRandomWeapon: true
 
 - type: entity
@@ -45,8 +45,8 @@
 
 - type: entity
   parent: RuMCUPPPouchMagazineLarge
-  id: RuMCPouchMagazineSVAROGBEARFull
-  suffix: RuMC, FULL, BEAR
+  id: RuMCPouchMagazineSVAROGFull
+  suffix: RuMC, FULL
   components:
   - type: StorageFill
     contents:

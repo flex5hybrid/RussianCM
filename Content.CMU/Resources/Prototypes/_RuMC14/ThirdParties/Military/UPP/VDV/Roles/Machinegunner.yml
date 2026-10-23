@@ -1,0 +1,131 @@
+- type: job
+  parent: CMJobBase
+  id: RuMCUPPVDVMachinegunner
+  roundSide: ThirdParty
+  roundForce: UPP
+  roundRole: RuMCUPPVDVMachinegunner
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: spp_sl_a
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuMCSquadVDV
+  - type: Skills
+    skills:
+      RMCSkillCqc: 3
+      RMCSkillEngineer: 1
+      RMCSkillConstruction: 1
+      RMCSkillFirearms: 2
+      RMCSkillMeleeWeapons: 3
+      RMCSkillMedical: 1
+      RMCSkillFireman: 1
+      RMCSkillJtac: 1
+  - type: EquipEntityPreset
+    preset: RuMCVDVMachinegunnerPreset
+  - type: JobPrefix
+    prefix: rumc-job-prefix-vdv
+  - type: MarineOrders
+  - type: RMCTrackable
+  - type: RMCPointing
+  - type: Language
+    spokenLanguages:
+    - Russian
+    - German
+    understoodLanguages:
+    - Russian
+    - German
+    currentLanguage: Russian
+    defaultLanguage: Russian
+
+  name: Machinegunner
+  description: VDV Machinegunner
+  playTimeTracker: RuMCJobUPPVDVMachinegunner
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    UPP_Plutonowy:
+      entity: AU14ChevronUPPNIPlutonowy
+      requirements: []
+    UPP_Sergeant:
+      entity: AU14ChevronUPPNISergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPVDVMachinegunner
+        time: 1800 # 0.5 hours
+    UPP_SeniorSergeant:
+      entity: AU14ChevronUPPNISeniorSergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPVDVMachinegunner
+        time: 5400 # 1.5 hours
+    UPP_JuniorLieutenant:
+      entity: AU14ChevronUPPNIJuniorLieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPVDVMachinegunner
+        time: 7200 # 2 hours
+    UPP_Lieutenant:
+      entity: AU14ChevronUPPNILieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPVDVMachinegunner
+        time: 10800 # 3 hours
+  spawnMenuRoleName: VDV Machinegunner
+  startingGear: RuMCGearUPPVDVMachinegunner
+  greeting: rumc-vdv-greeting
+  icon: "RuMCJobIconUPPVDVMachinegunner"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforSquad
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicUPPVDV
+  id: RuMCJobUPPVDVMachinegunner
+  name: VDV Machinegunner
+  components:
+  - type: EquipEntityPreset
+    preset: RuMCVDVMachinegunnerPreset
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuMCSquadVDV
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: VDV Machinegunner
+    description: You are part of a UPP! Not one step back!
+    job: RuMCUPPVDVMachinegunner
+    raffle:
+      settings: short
+
+- type: startingGear
+  parent: RuMCGearUPPVDVbase
+  id: RuMCGearUPPVDVMachinegunner
+  equipment:
+    id: RuCMIDCardUPPVDVMachinegunner
+    ears: RuMCHeadsetVDV
+  storage:
+    back:
+    - RuMCirpUPP
+    - AU14GrenadeHighExplosiveUPP
+    - AU14GrenadeSmokeUPP
+    - RMCExplosiveBreachingCharge
+  inhand:
+    - RuMCirpUPP
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconUPPVDVMachinegunner
+  icon:
+    sprite: _RuMC14/Interface/upp_icons.rsi
+    state: UPP-VDV_gunner
+
+# Time tracker
+
+- type: playTimeTracker
+  id: RuMCJobUPPVDVMachinegunner

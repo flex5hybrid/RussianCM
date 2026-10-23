@@ -1,0 +1,148 @@
+- type: job
+  parent: CMJobBase
+  id: RuMCUPPVDVCommander
+  roundSide: ThirdParty
+  roundForce: UPP
+  roundRole: RuMCUPPVDVCommander
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: spp_sl_a
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuMCSquadVDV
+  - type: Skills
+    skills:
+      RMCSkillCqc: 2
+      RMCSkillPowerLoader: 1
+      RMCSkillEngineer: 2
+      RMCSkillConstruction: 2
+      RMCSkillFirearms: 2
+      RMCSkillMeleeWeapons: 3
+      RMCSkillMedical: 1
+      RMCSkillPilot: 1
+      RMCSkillPolice: 2
+      RMCSkillFireman: 1
+      RMCSkillVehicles: 2
+      RMCSkillJtac: 2
+      RMCSkillEndurance: 3
+      RMCSkillLeadership: 2
+  - type: EquipEntityPreset
+    preset: RuMCVDVOfficerPreset
+  - type: JobPrefix
+    prefix: rumc-job-prefix-commander
+  - type: MarineOrders
+  - type: RMCTrackable
+  - type: RMCPointing
+  - type: Language
+    spokenLanguages:
+    - Polish
+    - English
+    - Russian
+    - Spanish
+    - Mandarin
+    - German
+    understoodLanguages:
+    - Polish
+    - English
+    - Russian
+    - Spanish
+    - Mandarin
+    - German
+    currentLanguage: Russian
+    defaultLanguage: Russian
+
+  name: Commander
+  description: VDV Commander
+  playTimeTracker: RuMCJobUPPVDVCommander
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    UPP_Plutonowy:
+      entity: AU14ChevronUPPNIPlutonowy
+      requirements: []
+    UPP_Sergeant:
+      entity: AU14ChevronUPPNISergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPVDVCommander
+        time: 1800 # 0.5 hours
+    UPP_SeniorSergeant:
+      entity: AU14ChevronUPPNISeniorSergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPVDVCommander
+        time: 5400 # 1.5 hours
+    UPP_JuniorLieutenant:
+      entity: AU14ChevronUPPNIJuniorLieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPVDVCommander
+        time: 7200 # 2 hours
+    UPP_Lieutenant:
+      entity: AU14ChevronUPPNILieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPVDVCommander
+        time: 10800 # 3 hours
+  spawnMenuRoleName: VDV Commander
+  startingGear: RuMCGearUPPVDVCommander
+  greeting: rumc-vdv-greeting
+  icon: "RuMCJobIconUPPVDVCommander"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforCommand
+  - AU14GovforSquad
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicUPPVDV
+  id: RuMCJobUPPVDVCommander
+  name: VDV Commander
+  components:
+  - type: EquipEntityPreset
+    preset: RuMCVDVOfficerPreset
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuMCSquadVDV
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: VDV Commander
+    description: You are part of a UPP! Not one step back!
+    job: RuMCUPPVDVCommander
+    raffle:
+      settings: short
+
+- type: startingGear
+  parent: RuMCGearUPPVDVbaseLigth
+  id: RuMCGearUPPVDVCommander
+  equipment:
+    id: RuCMIDCardUPPVDVCommander
+    ears: RuMCHeadsetVDV
+  storage:
+    back:
+    - RuMCirpUPP
+    - AU14PacketGrenadeHighExplosiveUPPFilled
+    - AU14GrenadeSmokeUPP
+    - RMCExplosiveBreachingCharge
+    - RMCDrinkAlcoholVodka
+    - RMCDrinkAlcoholVodka
+  inhand:
+    - RuMCirpUPP
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconUPPVDVCommander
+  icon:
+    sprite: _RuMC14/Interface/upp_icons.rsi
+    state: UPP-VDV_com
+
+# Time tracker
+
+- type: playTimeTracker
+  id: RuMCJobUPPVDVCommander

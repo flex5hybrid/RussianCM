@@ -2,7 +2,7 @@
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   name: PKM-MS
   id: RuMCMachineGunPKM_MS
-  description: Effective at all distances, but requires the right stance.
+  description: A lightweight variant of the PKM-MS, adapted for airborne troops. Better handling and mobility at the cost of some long-range stability.
   components:
   - type: Item
     size: Huge
@@ -50,8 +50,8 @@
         unwieldedScatterMultiplier: 2
         shotsToMaxScatter: 25
   - type: RMCWeaponAccuracy
-    accuracyMultiplier: 1
-    accuracyMultiplierUnwielded: 0.5
+    accuracyMultiplier: 1.0
+    accuracyMultiplierUnwielded: 0.6
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -93,7 +93,6 @@
           - RuMCAttachmentAK13StockCollapsible
           - RuMCAttachmentPKPStockCollapsible
       rmc-aslot-underbarrel:
-        #startingAttachable: RMCAttachmentBipod
         whitelist:
           tags:
           - RMCAttachmentAngledGrip
@@ -117,10 +116,10 @@
     - RuMCWeaponLMGPKP_MS
     - RMCWeaponLMGQYJ72
   - type: WieldDelay
-    baseDelay: 1.9
+    baseDelay: 1.2
   - type: WieldableSpeedModifiers
-    base: 0.5
-    light: 0.69
-    medium: 0.75
-    heavy: 0.806
+    base: 0.75
+    light: 0.85
+    medium: 0.85
+    heavy: 0.9
   - type: GunRequiresWield

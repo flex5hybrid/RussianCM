@@ -1,0 +1,137 @@
+- type: job
+  parent: CMJobBase
+  id: RuMCUPPVDVSniper
+  roundSide: ThirdParty
+  roundForce: UPP
+  roundRole: RuMCUPPVDVSniper
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: spp_sl_a
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuMCSquadVDV
+  - type: Skills
+    skills:
+      RMCSkillCqc: 3
+      RMCSkillEngineer: 2
+      RMCSkillConstruction: 1
+      RMCSkillFirearms: 3
+      RMCSkillMedical: 2
+      RMCSkillMeleeWeapons: 3
+      RMCSkillPolice: 2
+      RMCSkillFireman: 3
+      RMCSkillVehicles: 2
+      RMCSkillEndurance: 2
+  - type: EquipEntityPreset
+    preset: RuMCVDVPresetSniper
+  - type: JobPrefix
+    prefix: rumc-job-prefix-vdv
+  - type: MarineOrders
+  - type: RMCTrackable
+  - type: RMCPointing
+  - type: Language
+    spokenLanguages:
+    - English
+    - Russian
+    - Spanish
+    - German
+    understoodLanguages:
+    - English
+    - Russian
+    - Spanish
+    - German
+    currentLanguage: Russian
+    defaultLanguage: Russian
+
+  name: Sniper
+  description: VDV Sniper
+  playTimeTracker: RuMCJobUPPVDVSniper
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    UPP_Plutonowy:
+      entity: AU14ChevronUPPNIPlutonowy
+      requirements: []
+    UPP_Sergeant:
+      entity: AU14ChevronUPPNISergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPVDVSniper
+        time: 1800 # 0.5 hours
+    UPP_SeniorSergeant:
+      entity: AU14ChevronUPPNISeniorSergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPVDVSniper
+        time: 5400 # 1.5 hours
+    UPP_JuniorLieutenant:
+      entity: AU14ChevronUPPNIJuniorLieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPVDVSniper
+        time: 7200 # 2 hours
+    UPP_Lieutenant:
+      entity: AU14ChevronUPPNILieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPVDVSniper
+        time: 10800 # 3 hours
+  spawnMenuRoleName: VDV Sniper
+  startingGear: RuMCGearUPPVDVSniper
+  greeting: rumc-vdv-greeting
+  icon: "RuMCJobIconUPPVDVSniper"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforSquad
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicUPPVDV
+  id: RuMCJobUPPVDVSniper
+  name: VDV Sniper
+  components:
+  - type: EquipEntityPreset
+    preset: RuMCVDVPresetSniper
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuMCSquadVDV
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: VDV Sniper
+    description: You are part of a UPP! Not one step back!
+    job: RuMCUPPVDVSniper
+    raffle:
+      settings: short
+
+- type: startingGear
+  parent: RuMCGearUPPVDVbaseLigth
+  id: RuMCGearUPPVDVSniper
+  equipment:
+    id: RuCMIDCardUPPVDVSniper
+    ears: RuMCHeadsetVDV
+  storage:
+    back:
+    - RuMCirpUPP
+    - AU14GrenadeSmokeUPP
+    - AU14GrenadeSmokeUPP
+    - AU14GrenadeSmokeUPP
+  inhand:
+    - RuMCirpUPP
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconUPPVDVSniper
+  icon:
+    sprite: _RuMC14/Interface/upp_icons.rsi
+    state: UPP-VDV_snipe
+
+# Time tracker
+
+- type: playTimeTracker
+  id: RuMCJobUPPVDVSniper

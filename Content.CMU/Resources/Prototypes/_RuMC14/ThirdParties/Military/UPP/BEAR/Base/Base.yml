@@ -320,7 +320,7 @@
 - type: entity
   parent: RMCHeadsetMarine
   id: RuMCHeadsetBEAR
-  name: UPP SOF headset
+  name: BEAR headset
   description: Issued exclusively to UPP Special Forces such as BEAR.
   suffix: RuMC, BEAR
   components:

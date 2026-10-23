@@ -543,7 +543,7 @@
     - name: Fatigues
       choices: { CMUPlatoonAirCrewFatigues: 1 }
       entries:
-      - id: AU14BoilerFatiguesUPP
+      - id: RuMCUPPFatiguesPilot
     - name: Body Armor
       choices: { CMUPlatoonAirCrewVest: 1 }
       entries:
@@ -561,12 +561,7 @@
     - name: Headgear
       choices: { CMUPlatoonAirCrewHeadgear: 1 }
       entries:
-      - id: AU14JungleM50Helmet
-      - id: AU14CamoM50Helmet
-      - id: AU14UPPPatrolCap
-      - id: AU14UPPBoonie
-      - id: RuMCUPPNavalInfantryCapUshanka
-      - id: RuMCHeadBeretMarien
+      - id: RuMCUPPPilotHelmet
     - name: Flight Visor
       choices: { CMUPlatoonAirCrewFlightVisor: 1 }
       entries:
@@ -1483,8 +1478,6 @@
       #RuMCBoxBulletsRifleAG80AP
       #RuMCBoxBulletsRifle10x24mmAP
       #RuMCBoxBulletsRifleType71AP
-      #
-      #
     - name: explosives
       entries:
       - id: CMUBoxGrenadeTraining
@@ -1568,7 +1561,11 @@
       - id: RuMCUPPNavalInfantryHeavyHelmet2
         amount: 4
       - id: RuMCUPPArmorCrew
-        amount: 10
+        amount: 4
+      - id: RuMCUPPCrewHelmet
+        amount: 4
+      - id: RuMCUPPFatiguesCrew
+        amount: 4
     - name: Devices
       entries:
       - id: AU14PowerCellSmartgunUPP

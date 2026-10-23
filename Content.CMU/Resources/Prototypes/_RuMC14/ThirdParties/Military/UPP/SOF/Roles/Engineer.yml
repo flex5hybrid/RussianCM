@@ -1,0 +1,142 @@
+- type: job
+  parent: CMJobBase
+  id: RuMCUPPSOFEngineer
+  roundSide: ThirdParty
+  roundForce: UPP
+  roundRole: RuMCUPPSOFEngineer
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: spp_sl_a
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuMCSquadSOF
+  - type: Skills
+    skills:
+      RMCSkillCqc: 3
+      RMCSkillEngineer: 4
+      RMCSkillConstruction: 4
+      RMCSkillFirearms: 3
+      RMCSkillMeleeWeapons: 3
+      RMCSkillMedical: 2
+      RMCSkillPolice: 2
+      RMCSkillFireman: 3
+      RMCSkillVehicles: 3
+      RMCSkillEndurance: 3
+      RMCSkillJtac: 2
+  - type: EquipEntityPreset
+    preset: RuMCSOFEngineerPreset
+  - type: JobPrefix
+    prefix: rumc-job-prefix-SOF
+  - type: MarineOrders
+  - type: RMCTrackable
+  - type: RMCPointing
+  - type: Language
+    spokenLanguages:
+    - English
+    - Russian
+    - Spanish
+    - German
+    understoodLanguages:
+    - Polish
+    - English
+    - Russian
+    - Spanish
+    - Mandarin
+    - German
+    currentLanguage: Russian
+    defaultLanguage: Russian
+
+  name: Engineer
+  description: SOF Engineer
+  playTimeTracker: RuMCJobUPPSOFEngineer
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    UPP_Plutonowy:
+      entity: AU14ChevronUPPNIPlutonowy
+      requirements: []
+    UPP_Sergeant:
+      entity: AU14ChevronUPPNISergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFEngineer
+        time: 1800 # 0.5 hours
+    UPP_SeniorSergeant:
+      entity: AU14ChevronUPPNISeniorSergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFEngineer
+        time: 5400 # 1.5 hours
+    UPP_JuniorLieutenant:
+      entity: AU14ChevronUPPNIJuniorLieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFEngineer
+        time: 7200 # 2 hours
+    UPP_Lieutenant:
+      entity: AU14ChevronUPPNILieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFEngineer
+        time: 10800 # 3 hours
+  spawnMenuRoleName: SOF Engineer
+  startingGear: RuMCGearUPPSOFbase_ALT
+  greeting: rumc-SOF-greeting
+  icon: "RuMCJobIconUPPSOFEngineer"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforSquad
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicUPPSOF
+  id: RuMCJobUPPSOFEngineer
+  name: SOF Engineer
+  components:
+  - type: EquipEntityPreset
+    preset: RuMCSOFEngineerPreset
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuMCSquadSOF
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: SOF Engineer
+    description: You are part of a UPP! Not one step back!
+    job: RuMCUPPSOFEngineer
+    raffle:
+      settings: short
+
+- type: startingGear
+  parent: RuMCGearUPPSOFbaseALT
+  id: RuMCGearUPPSOFbase_ALT
+  equipment:
+    id: RuCMIDCardUPPSOFEngineer
+    ears: RuMCHeadsetSOF
+  storage:
+    back:
+    - RuMCirpUPP
+    - CMSheetMetal
+    - CMSheetMetal
+    - CMSheetPlasteel50
+    - AU14GrenadeHighExplosiveUPP
+    - RMCExplosiveBreachingCharge
+  inhand:
+    - RuMCUTESCCase_GROZA
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconUPPSOFEngineer
+  icon:
+    sprite: _RuMC14/Interface/upp_icons.rsi
+    state: UPP_officer
+
+# Time tracker
+
+- type: playTimeTracker
+  id: RuMCJobUPPSOFEngineer

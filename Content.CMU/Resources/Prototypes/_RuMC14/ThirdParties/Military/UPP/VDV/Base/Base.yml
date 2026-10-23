@@ -1,0 +1,396 @@
+- type: entity
+  parent: CMMobHuman
+  id: RuMCBaseMobSpeciesOrganicUPPVDV
+  suffix: RuMC, VDV
+  abstract: true
+  components:
+  - type: GhostTakeoverAvailable
+  - type: RandomHumanoidAppearance
+  - type: RandomHumanoidAppearanceWhitelisted
+    allowedMaleHairStyles:
+    - RMCHumanHairCrew
+    - RMCHumanHairAviator
+    - RMCHumanHairJensen
+    - RMCHumanHairAverageJoe
+    - AU14HumanHairCIA5
+    - RMCHumanHairCombover
+    - RMCHumanHairCombover2
+    - RMCHumanHairCplDietrich
+    - RMCHumanHairCut
+    - RMCHumanHairHeadStubble
+    - RMCHumanHairHighAndTight
+    - RMCHumanHairHighfade
+    - RMCHumanHairHighlight
+    - AU14HumanHairIRS
+    - RMCHumanHairLtRasczak
+    - RMCHumanHairMarineFade
+    - RMCHumanHairMarineFlatTop
+    - RMCHumanHairMedfade
+    - RMCHumanHairNofade
+    - RMCHumanHairShavedpart
+    - RMCHumanHairShavedHead
+    - RMCHumanHairShort
+    - RMCHumanHairSideUndercutHang
+    - RMCHumanHairSkinhead
+    - RMCHumanHairTaper
+    - RMCHumanHairWardaddy
+    - RMCHumanHairUndercut
+    - RMCHumanHairUndercutTop
+    allowedFemaleHairStyles:
+    - RMCHumanHairShortbangs
+    - RMCHumanHairBobcurl
+    - RMCHumanHairMarineBun
+    - RMCHumanHairBun
+    - RMCHumanHairFringetail
+    - AU14HumanHairLowBun
+    - AU14HumanHairLowPonyTail
+    - AU14HumanHairLowPonyTailAlt
+    - RMCHumanHairPonytail1
+    - RMCHumanHairPonytail7
+    - RMCHumanHairPvtRedding
+    - RMCHumanHairPvtVasquez
+    - RMCHumanHairLong
+    - RMCHumanHairPixieCutLeft
+    - RMCHumanHairPixieCutRight
+    allowedHairColorsHex:
+    - "#0B0B0B"
+    - "#1A1A1A"
+    - "#222222"
+    - "#2B1B0F"
+    - "#3B2314"
+    - "#4A2E1A"
+    - "#5A3A22"
+    - "#6B4A2F"
+    - "#9C8651"
+    - "#B79A5A"
+    - "#4A1F12"
+    - "#7A5E42"
+    allowedEyeColorsHex: [ "#000000" ]
+    beardChance: 0.1
+    allowedBeardStyles:
+    - HumanFacialHairSmallstache
+    - HumanFacialHairChinlessbeard
+    - HumanFacialHairCroppedfullbeard
+    - HumanFacialHair5oclockmoustache
+    - HumanFacialHairFiveoclock
+    - HumanFacialHairJensen
+    - HumanFacialHair7oclockmoustache
+    - HumanFacialHair7oclock
+    - HumanFacialHair3oclock
+    - HumanFacialHairSelleck
+    - HumanFacialHairSideburn
+    - HumanFacialHairElvis
+    - HumanFacialHairMutton
+    - HumanFacialHairMoustache
+    - HumanFacialHairPencilstache
+    - HumanFacialHairWalrus
+    - HumanFacialHairFumanchu
+    - HumanFacialHairHogan
+    - HumanFacialHairVandyke
+    - RMCHumanFacialHairSoulfulSelleck
+    - HumanFacialHairGt
+
+#  Headset
+
+- type: entity
+  parent: RMCHeadsetMarine
+  id: RuMCHeadsetVDV
+  name: UPP VDV headset
+  description: Issued exclusively to UPP Special Forces such as VDV.
+  suffix: RuMC, VDV
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/headsets.rsi
+    state: soc_headset
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - CMEncryptionKeyColony
+      - AU14EncryptionKeyUPPAmb
+  - type: RMCHeadset
+    channels:
+    - UPPSOF
+  - type: GrantSquadLeaderTracker
+    defaultMode: SquadLeader
+    trackerModes:
+    - VDVsCommandingOfficer
+    - SquadLeader
+    - BattleBuddy
+    - PrimaryLandingZone
+
+# BELTS
+
+#ak4047-7074
+- type: entity
+  parent: RuMCUPPNavalInfantryBeltAmmo
+  id: RuMCBeltMagazineVDVFull
+  suffix: RuMC, FULL, VDV
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCMagazineRifleAK4047
+      amount: 2
+    - id: RMCMagazineRifleAK4047AP
+      amount: 2
+    - id: RuMCMagazineRifleAK4047Tracer
+      amount: 1
+
+- type: entity
+  parent: RuMCUPPPouchMagazineLarge
+  id: RuMCPouchMagazineVDVFull
+  suffix: RuMC, FULL, VDV
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCMagazineRifleAK4047
+      amount: 2
+    - id: RuMCMagazineRifleAK4047Tracer
+      amount: 1
+    - id: RMCMagazineRifleAK4047AP
+      amount: 1
+
+#machinegun
+- type: entity
+  parent: RuMCUPPPouchDrum
+  id: RuMCUPPPouchDrumVDVFull
+  suffix: RuMC, FULL, VDV
+  components:
+  - type: StorageFill
+    contents:
+    - id: RuMCMagazinePKP_MS
+      amount: 2
+    - id: RuMCMagazinePKP_MSTracer
+      amount: 1
+
+- type: entity
+  parent: RuMCUPPNavalInfantryBeltMachinegunner
+  id: RuMCUPPBeltMachinegunnerVDVFull
+  suffix: RuMC, FULL, VDV
+  components:
+  - type: StorageFill
+    contents:
+    - id: RuMCMagazinePKP_MS
+      amount: 5
+    - id: RuMCMagazinePKP_MSTracer
+      amount: 2
+
+# ARMOR
+
+- type: entity
+  parent: RuMCUPPArmorVDV_Light
+  id: RuMCArmorLightVDVFull
+  suffix: RuMC, FULL, VDV
+  components:
+  - type: StorageFill
+    contents:
+    - id: AU14ArmorGarbShinGuardsUPP
+    #- id: AU14ArmorGarbCrotchPadUPP
+    - id: AU14ArmorGarbShoulderPadsUPP
+    #- id: AU14ArmorGarbMagazineWebbingUPP
+    #- id: AU14ArmorGarbLargeWebbingUPP
+
+- type: entity
+  parent: RuMCUPPArmorVDV
+  id: RuMCArmorVDVFull
+  suffix: RuMC, FULL, VDV
+  components:
+  - type: StorageFill
+    contents:
+    - id: AU14ArmorGarbShinGuardsUPP
+    - id: AU14ArmorGarbCrotchPadUPP
+    - id: AU14ArmorGarbShoulderPadsUPP
+    #- id: AU14ArmorGarbMagazineWebbingUPP
+    #- id: AU14ArmorGarbLargeWebbingUPP
+
+# HELMET
+
+- type: entity
+  parent: RuMCUPPInfantryHelmetVDV
+  id: RuMCUPPInfantryHelmetVDVFull
+  suffix: RuMC, FULL, VDV
+  components:
+  - type: StorageFill
+    contents:
+    - id: AU14GogglesM1A1PolarizedBallistic
+
+# UNIFORM
+
+- type: entity
+  parent: RuMCFatiguesVDV
+  id: RuMCFatiguesVDVFull
+  suffix: RuMC, FULL, VDV
+  components:
+  - type: WebbingClothing
+    startingWebbing: AU14WebbingDropPouchUPP
+
+- type: entity
+  parent: RuMCFatiguesVDV_medic
+  id: RuMCFatiguesVDV_medicFull
+  suffix: RuMC, FULL, VDV
+  components:
+  - type: WebbingClothing
+    startingWebbing: AU14WebbingDropPouchUPP
+
+- type: entity
+  parent: RuMCFatiguesVDV_eng
+  id: RuMCFatiguesVDV_engFull
+  suffix: RuMC, FULL, VDV
+  components:
+  - type: WebbingClothing
+    startingWebbing: AU14WebbingDropPouchUPP
+
+- type: entity
+  parent: RuMCFatiguesVDV_officer
+  id: RuMCFatiguesVDV_officerFull
+  suffix: RuMC, FULL, VDV
+  components:
+  - type: WebbingClothing
+    startingWebbing: AU14WebbingDropPouchUPP
+
+# BASE GEAR
+
+- type: startingGear
+  id: RuMCGearUPPVDVbase
+  equipment:
+    outerClothing: RuMCArmorVDVFull
+    #mask:
+    #eyes:
+    pocket2: RuMCUPPPouchIFAKFill
+    back: RuMCUPPNavalInfantrySatchel
+    ears2: RMCM5CameraGear
+
+- type: startingGear
+  id: RuMCGearUPPVDVbaseLigth
+  equipment:
+    outerClothing: RuMCArmorLightVDVFull
+    #mask:
+    #eyes:
+    pocket2: RuMCUPPPouchIFAKFill
+    back: RuMCUPPNavalInfantryBackpackBig
+    ears2: RMCM5CameraGear
+
+# RANDOM GEAR/PRESET
+
+- type: entity
+  id: RuMCVDVOfficerPreset
+  name: VDV Officer preset
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityPreset
+    randomGearOther:
+    -
+      - [ RuMCUPPInfantryHelmetVDV, CMMaskCoif, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
+      - [ RuMCUPPInfantryHelmetVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves ]
+      - [ RuMCHeadBeretVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
+      - [ RuMCHeadBeretVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
+      - [ RuMCHeadBeretVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
+      - [ RuMCHeadBeretVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
+      - [ RuMCHeadCapVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves ]
+      - [ RuMCHeadBoonieVDV, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
+    randomWeapon:
+    - [ RMCWeaponRifleAK4047, RuMCFatiguesVDV_officerFull, RuMCBeltMagazineVDVFull, RuMCPouchMagazineVDVFull ]
+    - [ RuMCWeaponRifleAK7074, RuMCFatiguesVDV_officerFull, RuMCBeltMagazineVDVFull, RuMCPouchMagazineVDVFull ]
+    tryEquipRandomWeapon: true
+
+- type: entity
+  id: RuMCVDVPreset
+  name: VDV Rifle preset
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityPreset
+    randomGearOther:
+    -
+      - [ RuMCUPPInfantryHelmetVDV, CMMaskCoif, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
+      - [ RuMCUPPInfantryHelmetVDV, RuMCMaskBalaklava, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves ]
+      - [ RuMCUPPInfantryHelmetVDV, CMMaskCoif,RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
+      - [ RuMCUPPInfantryHelmetVDV, RuMCMaskBalaklava,RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
+      - [ RuMCHeadCapVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves ]
+      - [ RuMCHeadBoonieVDV, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
+    randomWeapon:
+    - [ RMCWeaponRifleAK4047, RuMCFatiguesVDVFull, RuMCBeltMagazineVDVFull, RuMCPouchMagazineVDVFull ]
+    - [ RuMCWeaponRifleAK7074, RuMCFatiguesVDVFull, RuMCBeltMagazineVDVFull, RuMCPouchMagazineVDVFull ]
+    tryEquipRandomWeapon: true
+
+- type: entity
+  id: RuMCVDVMachinegunnerPreset
+  name: VDV Machinegunner preset
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityPreset
+    randomGearOther:
+    -
+      - [ RuMCUPPInfantryHelmetVDVFull, CMMaskCoif, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
+      - [ RuMCUPPInfantryHelmetVDVFull, RuMCMaskBalaklava, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves ]
+      - [ RuMCUPPInfantryHelmetVDVFull, CMMaskCoif,RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
+      - [ RuMCUPPInfantryHelmetVDVFull, RuMCMaskBalaklava,RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
+      - [ RuMCUPPNavalInfantryHeavyHelmet2, CMMaskCoif, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
+      - [ RuMCUPPNavalInfantryHeavyHelmet2, RuMCMaskBalaklava, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves ]
+      - [ RuMCUPPNavalInfantryHeavyHelmet2, CMMaskCoif,RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
+      - [ RuMCUPPNavalInfantryHeavyHelmet2, RuMCMaskBalaklava,RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
+      - [ RuMCHeadBeretVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
+      - [ RuMCHeadCapVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves ]
+      - [ RuMCHeadBoonieVDV, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
+    randomWeapon:
+    - [ RuMCMachineGunPKM_MS, RuMCFatiguesVDVFull, RuMCUPPBeltMachinegunnerVDVFull, RuMCUPPPouchDrumVDVFull ]
+    tryEquipRandomWeapon: true
+
+- type: entity
+  id: RuMCVDVMedicPreset
+  name: VDV Medic preset
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityPreset
+    randomGearOther:
+    -
+      - [ RuMCUPPInfantryHelmetVDVFull, CMMaskCoif, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves, RMCGlassesMedicalHUDGlasses ]
+      - [ RuMCUPPInfantryHelmetVDVFull, RuMCMaskBalaklava, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves, RMCGlassesMedicalHUDGlasses ]
+      - [ RuMCHeadBeretVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves, RMCGlassesMedicalHUDGlasses ]
+      - [ RuMCHeadBeretVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves, RMCGlassesMedicalHUDGlasses ]
+      - [ RuMCHeadCapVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves, RMCGlassesMedicalHUDGlasses ]
+      - [ RuMCHeadCapVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves, RMCGlassesMedicalHUDGlasses ]
+      - [ RuMCHeadCapVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves, RMCGlassesMedicalHUDGlasses ]
+      - [ RuMCHeadCapVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves, RMCGlassesMedicalHUDGlasses ]
+      - [ RuMCHeadBoonieVDV, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine, RMCGlassesMedicalHUDGlasses ]
+      - [ RuMCHeadBoonieVDV, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine, RMCGlassesMedicalHUDGlasses ]
+      - [ RuMCHeadBoonieVDV, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine, RMCGlassesMedicalHUDGlasses ]
+      - [ RuMCHeadBoonieVDV, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine, RMCGlassesMedicalHUDGlasses ]
+    randomWeapon:
+    - [ RuMCWeaponRifleAK7074, RuMCFatiguesVDV_medicFull, AU14BeltMedicalUPPFull, RuMCPouchMagazineVDVFull ]
+    tryEquipRandomWeapon: true
+
+- type: entity
+  id: RuMCVDVEngineerPreset
+  name: VDV Engineer preset
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityPreset
+    randomGearOther:
+    -
+      - [ RuMCUPPInfantryHelmetVDVFull, RuMCMaskBalaklava, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves, RMCWeldingGogglesSuperior ]
+      - [ RuMCUPPInfantryHelmetVDVFull, RuMCMaskBalaklava,RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine, RMCWeldingGogglesSuperior ]
+      - [ RuMCHeadCapVDV, RuMCMaskBalaklava, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves, RMCWeldingGogglesSuperior ]
+      - [ RuMCHeadCapVDV, RuMCMaskBalaklava, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves, RMCWeldingGogglesSuperior ]
+      - [ RuMCHeadBoonieVDV, RuMCMaskBalaklava, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine, RMCWeldingGogglesSuperior ]
+      - [ RuMCHeadBoonieVDV, RuMCMaskBalaklava, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine, RMCWeldingGogglesSuperior ]
+    randomWeapon:
+    - [ RMCWeaponRifleAK4047, RuMCFatiguesVDV_engFull, AU14BeltUtilityFilled, RuMCPouchMagazineVDVFull ]
+    tryEquipRandomWeapon: true
+
+- type: entity
+  id: RuMCVDVPresetSniper
+  name: VDV Sniper preset
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityPreset
+    randomGearOther:
+    -
+      - [ RuMCUPPInfantryHelmetVDV, CMMaskCoif, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
+      - [ RuMCUPPInfantryHelmetVDV, RuMCMaskBalaklava, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves ]
+      - [ RuMCUPPInfantryHelmetVDV, CMMaskCoif,RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
+      - [ RuMCUPPInfantryHelmetVDV, RuMCMaskBalaklava,RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
+      - [ RuMCHeadCapVDV, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves ]
+      - [ RuMCHeadBoonieVDV, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
+    randomWeapon:
+    - [ RuMCSniperRifleSVAROG, RuMCFatiguesVDVFull, RuMCUPPNavalInfantryBeltPistolFull, RuMCPouchMagazineSVAROGFull ]
+    #- [ RuMCSniperRifleSVAROG, RuMCUniformBEARFull, RuMCUPPNavalInfantryBeltPistolFull, RuMCPouchMagazineSVAROGFull, ]
+    tryEquipRandomWeapon: true
