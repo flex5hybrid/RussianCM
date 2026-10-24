@@ -80,3 +80,6 @@
   - type: Tag
     tags:
     - Pickaxe
+  - type: Construction # RuMC edit
+    graph: AU14CustomGraphAU14ToolShovelRuMC
+    node: target

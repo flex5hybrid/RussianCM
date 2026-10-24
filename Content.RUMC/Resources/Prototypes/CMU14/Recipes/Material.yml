@@ -1,6 +1,6 @@
 # Ткань
 - type: constructionGraph
-  id: AU14CustomGraph_MaterialCloth1__RuMC__MaterialRuMC
+  id: AU14CustomGraphMaterialCloth1RuMC
   start: start
   graph:
   - node: start
@@ -11,22 +11,22 @@
         amount: 5
         doAfter: 5
   - node: target
-    entity: AU14CustomEntity_MaterialCloth1__RuMC__MaterialRuMC
+    entity: AU14CustomEntityMaterialCloth1RuMC
 
 - type: entity
-  id: AU14CustomEntity_MaterialCloth1__RuMC__MaterialRuMC
+  id: AU14CustomEntityMaterialCloth1RuMC
   parent: MaterialCloth1
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_MaterialCloth1__RuMC__MaterialRuMC
+    graph: AU14CustomGraphMaterialCloth1RuMC
     node: target
 
 - type: construction
-  id: AU14Custom_MaterialCloth1__RuMC__MaterialRuMC
+  id: AU14CustomMaterialCloth1RuMC
   name: "cloth"
   description: "A raw material."
-  graph: AU14CustomGraph_MaterialCloth1__RuMC__MaterialRuMC
+  graph: AU14CustomGraphMaterialCloth1RuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-material
@@ -36,7 +36,7 @@
 
 # Мешки для песка
 - type: constructionGraph
-  id: AU14CustomGraph_CMSandbagEmpty10__RuMC__MaterialRuMC
+  id: AU14CustomGraphCMSandbagEmpty10RuMC
   start: start
   graph:
   - node: start
@@ -47,22 +47,22 @@
         amount: 5
         doAfter: 15
   - node: target
-    entity: AU14CustomEntity_CMSandbagEmpty10__RuMC__MaterialRuMC
+    entity: AU14CustomEntityCMSandbagEmpty10RuMC
 
 - type: entity
-  id: AU14CustomEntity_CMSandbagEmpty10__RuMC__MaterialRuMC
+  id: AU14CustomEntityCMSandbagEmpty10RuMC
   parent: CMSandbagEmpty10
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_CMSandbagEmpty10__RuMC__MaterialRuMC
+    graph: AU14CustomGraphCMSandbagEmpty10RuMC
     node: target
 
 - type: construction
-  id: AU14Custom_CMSandbagEmpty10__RuMC__MaterialRuMC
+  id: AU14CustomCMSandbagEmpty10RuMC
   name: "empty sandbags"
   description: "Some empty sandbags, best to fill them up if you want to use them."
-  graph: AU14CustomGraph_CMSandbagEmpty10__RuMC__MaterialRuMC
+  graph: AU14CustomGraphCMSandbagEmpty10RuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-material

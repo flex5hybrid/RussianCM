@@ -1,6 +1,6 @@
 # Пиво
 - type: constructionGraph
-  id: AU14CustomGraph_DrinkBottleBeer__RuMC__AlcoholRuMC
+  id: AU14CustomGraphDrinkBottleBeerRuMC
   start: start
   graph:
   - node: start
@@ -11,22 +11,22 @@
         amount: 2
         doAfter: 5
   - node: target
-    entity: AU14CustomEntity_DrinkBottleBeer__RuMC__AlcoholRuMC
+    entity: AU14CustomEntityDrinkBottleBeerRuMC
 
 - type: entity
-  id: AU14CustomEntity_DrinkBottleBeer__RuMC__AlcoholRuMC
+  id: AU14CustomEntityDrinkBottleBeerRuMC
   parent: DrinkBottleBeer
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_DrinkBottleBeer__RuMC__AlcoholRuMC
+    graph: AU14CustomGraphDrinkBottleBeerRuMC
     node: target
 
 - type: construction
-  id: AU14Custom_DrinkBottleBeer__RuMC__AlcoholRuMC
+  id: AU14CustomDrinkBottleBeerRuMC
   name: "beer bottle"
   description: "An alcoholic beverage made from malted grains, hops, yeast, and water."
-  graph: AU14CustomGraph_DrinkBottleBeer__RuMC__AlcoholRuMC
+  graph: AU14CustomGraphDrinkBottleBeerRuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-alcohol
@@ -36,7 +36,7 @@
 
 
 - type: constructionGraph
-  id: AU14CustomGraph_DrinkBeerBottleFull__RuMC__AlcoholRuMC
+  id: AU14CustomGraphDrinkBeerBottleFullRuMC
   start: start
   graph:
   - node: start
@@ -65,22 +65,22 @@
         consume: true
         doAfter: 0
   - node: target
-    entity: AU14CustomEntity_DrinkBeerBottleFull__RuMC__AlcoholRuMC
+    entity: AU14CustomEntityDrinkBeerBottleFullRuMC
 
 - type: entity
-  id: AU14CustomEntity_DrinkBeerBottleFull__RuMC__AlcoholRuMC
+  id: AU14CustomEntityDrinkBeerBottleFullRuMC
   parent: DrinkBeerBottleFull
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_DrinkBeerBottleFull__RuMC__AlcoholRuMC
+    graph: AU14CustomGraphDrinkBeerBottleFullRuMC
     node: target
 
 - type: construction
-  id: AU14Custom_DrinkBeerBottleFull__RuMC__AlcoholRuMC
+  id: AU14CustomDrinkBeerBottleFullRuMC
   name: "beer bottle"
   description: "An alcoholic beverage made from malted grains, hops, yeast, and water."
-  graph: AU14CustomGraph_DrinkBeerBottleFull__RuMC__AlcoholRuMC
+  graph: AU14CustomGraphDrinkBeerBottleFullRuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-alcohol
@@ -90,7 +90,7 @@
 
 # Ром
 - type: constructionGraph
-  id: AU14CustomGraph_DrinkBottleRum__RuMC__AlcoholRuMC
+  id: AU14CustomGraphDrinkBottleRumRuMC
   start: start
   graph:
   - node: start
@@ -101,22 +101,22 @@
         amount: 2
         doAfter: 5
   - node: target
-    entity: AU14CustomEntity_DrinkBottleRum__RuMC__AlcoholRuMC
+    entity: AU14CustomEntityDrinkBottleRumRuMC
 
 - type: entity
-  id: AU14CustomEntity_DrinkBottleRum__RuMC__AlcoholRuMC
+  id: AU14CustomEntityDrinkBottleRumRuMC
   parent: DrinkBottleRum
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_DrinkBottleRum__RuMC__AlcoholRuMC
+    graph: AU14CustomGraphDrinkBottleRumRuMC
     node: target
 
 - type: construction
-  id: AU14Custom_DrinkBottleRum__RuMC__AlcoholRuMC
+  id: AU14CustomDrinkBottleRumRuMC
   name: "Captain Pete's Cuban spiced rum"
   description: "This isn't just rum, oh no. It's practically GRIFF in a bottle."
-  graph: AU14CustomGraph_DrinkBottleRum__RuMC__AlcoholRuMC
+  graph: AU14CustomGraphDrinkBottleRumRuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-alcohol
@@ -125,7 +125,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: AU14CustomGraph_DrinkRumBottleFull__RuMC__AlcoholRuMC
+  id: AU14CustomGraphDrinkRumBottleFullRuMC
   start: start
   graph:
   - node: start
@@ -154,22 +154,22 @@
         consume: true
         doAfter: 0
   - node: target
-    entity: AU14CustomEntity_DrinkRumBottleFull__RuMC__AlcoholRuMC
+    entity: AU14CustomEntityDrinkRumBottleFullRuMC
 
 - type: entity
-  id: AU14CustomEntity_DrinkRumBottleFull__RuMC__AlcoholRuMC
+  id: AU14CustomEntityDrinkRumBottleFullRuMC
   parent: DrinkRumBottleFull
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_DrinkRumBottleFull__RuMC__AlcoholRuMC
+    graph: AU14CustomGraphDrinkRumBottleFullRuMC
     node: target
 
 - type: construction
-  id: AU14Custom_DrinkRumBottleFull__RuMC__AlcoholRuMC
+  id: AU14CustomDrinkRumBottleFullRuMC
   name: "Captain Pete's Cuban spiced rum"
   description: "This isn't just rum, oh no. It's practically GRIFF in a bottle."
-  graph: AU14CustomGraph_DrinkRumBottleFull__RuMC__AlcoholRuMC
+  graph: AU14CustomGraphDrinkRumBottleFullRuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-alcohol
@@ -179,7 +179,7 @@
 
 # Вино
 - type: constructionGraph
-  id: AU14CustomGraph_DrinkBottleWine__RuMC__AlcoholRuMC
+  id: AU14CustomGraphDrinkBottleWineRuMC
   start: start
   graph:
   - node: start
@@ -190,22 +190,22 @@
         amount: 2
         doAfter: 5
   - node: target
-    entity: AU14CustomEntity_DrinkBottleWine__RuMC__AlcoholRuMC
+    entity: AU14CustomEntityDrinkBottleWineRuMC
 
 - type: entity
-  id: AU14CustomEntity_DrinkBottleWine__RuMC__AlcoholRuMC
+  id: AU14CustomEntityDrinkBottleWineRuMC
   parent: DrinkBottleWine
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_DrinkBottleWine__RuMC__AlcoholRuMC
+    graph: AU14CustomGraphDrinkBottleWineRuMC
     node: target
 
 - type: construction
-  id: AU14Custom_DrinkBottleWine__RuMC__AlcoholRuMC
+  id: AU14CustomDrinkBottleWineRuMC
   name: "Doublebearded Bearded Special wine bottle"
   description: "A faint aura of unease and asspainery surrounds the bottle."
-  graph: AU14CustomGraph_DrinkBottleWine__RuMC__AlcoholRuMC
+  graph: AU14CustomGraphDrinkBottleWineRuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-alcohol
@@ -214,7 +214,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: AU14CustomGraph_DrinkWineBottleFull__RuMC__AlcoholRuMC
+  id: AU14CustomGraphDrinkWineBottleFullRuMC
   start: start
   graph:
   - node: start
@@ -243,22 +243,22 @@
         consume: true
         doAfter: 0
   - node: target
-    entity: AU14CustomEntity_DrinkWineBottleFull__RuMC__AlcoholRuMC
+    entity: AU14CustomEntityDrinkWineBottleFullRuMC
 
 - type: entity
-  id: AU14CustomEntity_DrinkWineBottleFull__RuMC__AlcoholRuMC
+  id: AU14CustomEntityDrinkWineBottleFullRuMC
   parent: DrinkWineBottleFull
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_DrinkWineBottleFull__RuMC__AlcoholRuMC
+    graph: AU14CustomGraphDrinkWineBottleFullRuMC
     node: target
 
 - type: construction
-  id: AU14Custom_DrinkWineBottleFull__RuMC__AlcoholRuMC
+  id: AU14CustomDrinkWineBottleFullRuMC
   name: "Doublebearded Bearded Special wine bottle"
   description: "A faint aura of unease and asspainery surrounds the bottle."
-  graph: AU14CustomGraph_DrinkWineBottleFull__RuMC__AlcoholRuMC
+  graph: AU14CustomGraphDrinkWineBottleFullRuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-alcohol
@@ -268,7 +268,7 @@
 
 # Водка
 - type: constructionGraph
-  id: AU14CustomGraph_DrinkBottleVodka__RuMC__AlcoholRuMC
+  id: AU14CustomGraphDrinkBottleVodkaRuMC
   start: start
   graph:
   - node: start
@@ -279,22 +279,22 @@
         amount: 2
         doAfter: 5
   - node: target
-    entity: AU14CustomEntity_DrinkBottleVodka__RuMC__AlcoholRuMC
+    entity: AU14CustomEntityDrinkBottleVodkaRuMC
 
 - type: entity
-  id: AU14CustomEntity_DrinkBottleVodka__RuMC__AlcoholRuMC
+  id: AU14CustomEntityDrinkBottleVodkaRuMC
   parent: DrinkBottleVodka
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_DrinkBottleVodka__RuMC__AlcoholRuMC
+    graph: AU14CustomGraphDrinkBottleVodkaRuMC
     node: target
 
 - type: construction
-  id: AU14Custom_DrinkBottleVodka__RuMC__AlcoholRuMC
+  id: AU14CustomDrinkBottleVodkaRuMC
   name: "vodka bottle"
   description: "Aah, vodka. Prime choice of drink AND fuel by Russians worldwide."
-  graph: AU14CustomGraph_DrinkBottleVodka__RuMC__AlcoholRuMC
+  graph: AU14CustomGraphDrinkBottleVodkaRuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-alcohol
@@ -303,7 +303,7 @@
   objectType: Item
 
 - type: constructionGraph
-  id: AU14CustomGraph_DrinkVodkaBottleFull__RuMC__AlcoholRuMC
+  id: AU14CustomGraphDrinkVodkaBottleFullRuMC
   start: start
   graph:
   - node: start
@@ -332,22 +332,22 @@
         consume: true
         doAfter: 0
   - node: target
-    entity: AU14CustomEntity_DrinkVodkaBottleFull__RuMC__AlcoholRuMC
+    entity: AU14CustomEntityDrinkVodkaBottleFullRuMC
 
 - type: entity
-  id: AU14CustomEntity_DrinkVodkaBottleFull__RuMC__AlcoholRuMC
+  id: AU14CustomEntityDrinkVodkaBottleFullRuMC
   parent: DrinkVodkaBottleFull
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_DrinkVodkaBottleFull__RuMC__AlcoholRuMC
+    graph: AU14CustomGraphDrinkVodkaBottleFullRuMC
     node: target
 
 - type: construction
-  id: AU14Custom_DrinkVodkaBottleFull__RuMC__AlcoholRuMC
+  id: AU14CustomDrinkVodkaBottleFullRuMC
   name: "vodka bottle"
   description: "Aah, vodka. Prime choice of drink AND fuel by Russians worldwide."
-  graph: AU14CustomGraph_DrinkVodkaBottleFull__RuMC__AlcoholRuMC
+  graph: AU14CustomGraphDrinkVodkaBottleFullRuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-alcohol

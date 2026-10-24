@@ -144,7 +144,7 @@
 
 # Трость
 - type: constructionGraph
-  id: AU14CustomGraph_Cane__RuMC__FunRuMC
+  id: AU14CustomGraphCaneRuMC
   start: start
   graph:
   - node: start
@@ -155,22 +155,22 @@
         amount: 10
         doAfter: 15
   - node: target
-    entity: AU14CustomEntity_Cane__RuMC__FunRuMC
+    entity: AU14CustomEntityCaneRuMC
 
 - type: entity
-  id: AU14CustomEntity_Cane__RuMC__FunRuMC
+  id: AU14CustomEntityCaneRuMC
   parent: Cane
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_Cane__RuMC__FunRuMC
+    graph: AU14CustomGraphCaneRuMC
     node: target
 
 - type: construction
-  id: AU14Custom_Cane__RuMC__FunRuMC
+  id: AU14CustomCaneRuMC
   name: "cane"
   description: "A wooden cane."
-  graph: AU14CustomGraph_Cane__RuMC__FunRuMC
+  graph: AU14CustomGraphCaneRuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-fun
@@ -180,7 +180,7 @@
 
 # Шахматная доска
 - type: constructionGraph
-  id: AU14CustomGraph_ChessBoard__RuMC__FunRuMC
+  id: AU14CustomGraphChessBoardRuMC
   start: start
   graph:
   - node: start
@@ -191,22 +191,22 @@
         amount: 10
         doAfter: 20
   - node: target
-    entity: AU14CustomEntity_ChessBoard__RuMC__FunRuMC
+    entity: AU14CustomEntityChessBoardRuMC
 
 - type: entity
-  id: AU14CustomEntity_ChessBoard__RuMC__FunRuMC
+  id: AU14CustomEntityChessBoardRuMC
   parent: ChessBoard
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_ChessBoard__RuMC__FunRuMC
+    graph: AU14CustomGraphChessBoardRuMC
     node: target
 
 - type: construction
-  id: AU14Custom_ChessBoard__RuMC__FunRuMC
+  id: AU14CustomChessBoardRuMC
   name: "chessboard"
   description: "A chessboard. Pieces included!"
-  graph: AU14CustomGraph_ChessBoard__RuMC__FunRuMC
+  graph: AU14CustomGraphChessBoardRuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-fun
@@ -216,7 +216,7 @@
 
 # Доска для шашек
 - type: constructionGraph
-  id: AU14CustomGraph_CheckerBoard__RuMC__FunRuMC
+  id: AU14CustomGraphCheckerBoardRuMC
   start: start
   graph:
   - node: start
@@ -227,22 +227,22 @@
         amount: 10
         doAfter: 20
   - node: target
-    entity: AU14CustomEntity_CheckerBoard__RuMC__FunRuMC
+    entity: AU14CustomEntityCheckerBoardRuMC
 
 - type: entity
-  id: AU14CustomEntity_CheckerBoard__RuMC__FunRuMC
+  id: AU14CustomEntityCheckerBoardRuMC
   parent: CheckerBoard
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_CheckerBoard__RuMC__FunRuMC
+    graph: AU14CustomGraphCheckerBoardRuMC
     node: target
 
 - type: construction
-  id: AU14Custom_CheckerBoard__RuMC__FunRuMC
+  id: AU14CustomCheckerBoardRuMC
   name: "checkerboard"
   description: "A checkerboard. Pieces included!"
-  graph: AU14CustomGraph_CheckerBoard__RuMC__FunRuMC
+  graph: AU14CustomGraphCheckerBoardRuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-fun
