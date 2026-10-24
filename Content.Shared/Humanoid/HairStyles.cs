@@ -195,6 +195,7 @@ namespace Content.Shared.Humanoid
             "HumanFacialHairVandyke",
             "RMCHumanFacialHairSoulfulSelleck",
             "HumanFacialHairGt",
+            "HumanFacialHairHip", // RuMC edit
         };
 
         /// <summary>

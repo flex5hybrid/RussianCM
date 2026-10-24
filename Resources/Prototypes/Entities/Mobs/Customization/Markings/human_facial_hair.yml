@@ -22,6 +22,14 @@
   sprites:
     - sprite: Mobs/Customization/human_facial_hair.rsi
       state: gt
+  # RuMC edit start
+- type: marking
+  id: HumanFacialHairHip
+  bodyPart: FacialHair
+  sprites:
+    - sprite: Mobs/Customization/human_facial_hair.rsi
+      state: hip
+  # RuMC edit end
 - type: marking
   id: HumanFacialHairJensen
   bodyPart: FacialHair
