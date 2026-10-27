@@ -215,8 +215,25 @@ jobs:
               if updated!=original:
                   before_junk,after_junk=junk_count(original),junk_count(updated)
                   if after_junk>before_junk:
-                      raise RuntimeError(f"New Fluent syntax error in {path}: {before_junk}->{after_junk}")
-                  path.write_text(updated,encoding="utf-8")
+                      baseline_lines=original.splitlines(keepends=True)
+                      modified_idxs=[i for i,(a,b) in enumerate(zip(baseline_lines,new_lines)) if a!=b]
+                      attempts=0
+                      while after_junk>before_junk and modified_idxs and attempts<40:
+                          parsed=FluentParser().parse(updated)
+                          bad=next((n for n in parsed.body if isinstance(n,ast.Junk)),None)
+                          err_line=updated[:bad.span.start].count("\n") if bad is not None and bad.span else len(new_lines)-1
+                          ix=min(modified_idxs,key=lambda i:abs(i-err_line))
+                          new_lines[ix]=baseline_lines[ix]
+                          modified_idxs.remove(ix)
+                          attempts+=1
+                          updated="".join(new_lines)
+                          after_junk=junk_count(updated)
+                          counts["syntax_fallback_lines"]+=1
+                      if after_junk>before_junk:
+                          print(f"Unable to repair syntax: keeping untranslated {path}",flush=True)
+                          updated=original
+                          counts["syntax_fallback_files"]+=1
+                  if updated!=original: path.write_text(updated,encoding="utf-8")
                   changed_files.append(path)
           
           for filename,base_text in original_files.items():
