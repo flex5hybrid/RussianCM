@@ -1,0 +1,166 @@
+name: Temporary CMU locale synchronization
+on:
+  push:
+    branches:
+      - chore/sync-cmu-ru-locale-20261028
+    paths:
+      - .github/workflows/tmp-cmu-ru-locale-sync.yml
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Copy missing Fluent messages without overwriting translations
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from __future__ import annotations
+          import collections
+          import pathlib
+          import re
+          import subprocess
+          
+          en_root = pathlib.Path("Content.CMU/Resources/Locale/en-US")
+          ru_root = pathlib.Path("Content.CMU/Resources/Locale/ru-RU")
+          entry_re = re.compile(r"^(-?[A-Za-z][A-Za-z0-9_-]*)[ \t]*=")
+          attr_re = re.compile(r"^[ \t]+\.([A-Za-z][A-Za-z0-9_-]*)[ \t]*=")
+          
+          def separator(line):
+              return not line.strip() or line.startswith("#")
+          
+          def parse(content):
+              lines = content.splitlines(keepends=True)
+              starts = []
+              for i, line in enumerate(lines):
+                  m = entry_re.match(line)
+                  if m:
+                      starts.append((i, m.group(1)))
+              entries = {}
+              for pos, (start, key) in enumerate(starts):
+                  end = starts[pos + 1][0] if pos + 1 < len(starts) else len(lines)
+                  stop = end
+                  while stop > start + 1 and separator(lines[stop - 1]):
+                      stop -= 1
+                  attributes = {}
+                  attr_positions = []
+                  for j in range(start + 1, stop):
+                      m = attr_re.match(lines[j])
+                      if m:
+                          attr_positions.append((j, m.group(1)))
+                  for n, (j, name) in enumerate(attr_positions):
+                      k = attr_positions[n + 1][0] if n + 1 < len(attr_positions) else stop
+                      while k > j + 1 and separator(lines[k - 1]):
+                          k -= 1
+                      attributes.setdefault(name, "".join(lines[j:k]).rstrip("\r\n") + "\n")
+                  entries.setdefault(key, dict(start=start, end=end, stop=stop,
+                                               block="".join(lines[start:stop]).rstrip("\r\n") + "\n",
+                                               attrs=attributes))
+              return lines, entries
+          
+          added_output = subprocess.check_output(
+              ["git", "diff", "--name-only", "--diff-filter=A", "origin/master...HEAD", "--",
+               str(ru_root)], text=True)
+          added = {pathlib.Path(line) for line in added_output.splitlines() if line.endswith(".ftl")}
+          original = {p: p.read_text(encoding="utf-8") for p in ru_root.rglob("*.ftl")
+                      if p not in added}
+          known = {}
+          original_count = collections.Counter()
+          for path in sorted(original):
+              _, entries = parse(original[path])
+              for key, item in entries.items():
+                  original_count[key] += 1
+                  known.setdefault(key, [path, set(item["attrs"])])
+          
+          pending_roots = collections.defaultdict(list)
+          pending_attrs = collections.defaultdict(lambda: collections.defaultdict(list))
+          keys_added = attrs_added = 0
+          for source in sorted(en_root.rglob("*.ftl")):
+              target = ru_root / source.relative_to(en_root)
+              _, entries = parse(source.read_text(encoding="utf-8"))
+              for key, item in entries.items():
+                  if key in known:
+                      owner, attrs = known[key]
+                      for attr, block in item["attrs"].items():
+                          if attr not in attrs:
+                              pending_attrs[owner][key].append(block)
+                              attrs.add(attr)
+                              attrs_added += 1
+                  else:
+                      pending_roots[target].append(item["block"])
+                      known[key] = [target, set(item["attrs"])]
+                      keys_added += 1
+          
+          changed = set()
+          dropped_duplicates = 0
+          for path in sorted(set(original) | added | set(pending_roots) | set(pending_attrs)):
+              if path in added:
+                  blocks = pending_roots[path]
+                  if not blocks:
+                      path.unlink(missing_ok=True)
+                      dropped_duplicates += 1
+                      continue
+                  content = "\n".join(b.rstrip("\r\n") + "\n" for b in blocks)
+                  path.parent.mkdir(parents=True, exist_ok=True)
+                  path.write_text(content, encoding="utf-8")
+                  changed.add(path)
+                  continue
+              if path not in original:
+                  continue
+              content = original[path]
+              if path in pending_attrs:
+                  lines, existing = parse(content)
+                  inserts = collections.defaultdict(list)
+                  for key, blocks in pending_attrs[path].items():
+                      if key not in existing:
+                          raise RuntimeError(f"Missing key for attribute insertion: {path}: {key}")
+                      at = existing[key]["stop"]
+                      inserts[at].extend(blocks)
+                  for at in sorted(inserts, reverse=True):
+                      prefix = "\n" if at > 0 and not lines[at - 1].endswith("\n") else ""
+                      lines[at:at] = [prefix + "".join(inserts[at])]
+                  content = "".join(lines)
+              if pending_roots[path]:
+                  content += ("" if content.endswith("\n") else "\n")
+                  content += ("" if content.endswith("\n\n") else "\n")
+                  content += "\n".join(b.rstrip("\r\n") + "\n" for b in pending_roots[path])
+              if content != original[path]:
+                  path.write_text(content, encoding="utf-8")
+                  changed.add(path)
+          
+          final = collections.defaultdict(list)
+          for path in ru_root.rglob("*.ftl"):
+              _, entries = parse(path.read_text(encoding="utf-8"))
+              for key, item in entries.items():
+                  final[key].append((path, set(item["attrs"])))
+          final_dupes = sum(max(0, len(v) - 1) for v in final.values())
+          original_dupes = sum(max(0, v - 1) for v in original_count.values())
+          if final_dupes > original_dupes:
+              raise RuntimeError(f"Introduced duplicate Fluent keys: {original_dupes} -> {final_dupes}")
+          missing = []
+          for source in en_root.rglob("*.ftl"):
+              _, entries = parse(source.read_text(encoding="utf-8"))
+              for key, item in entries.items():
+                  if key not in final:
+                      missing.append(f"{source}: {key}")
+                  else:
+                      all_attrs = set().union(*(attrs for _, attrs in final[key]))
+                      missing.extend(f"{source}: {key}.{a}" for a in item["attrs"] if a not in all_attrs)
+          if missing:
+              raise RuntimeError("Locale coverage incomplete: " + ", ".join(missing[:25]))
+          print(f"Synced locale: added {keys_added} messages, {attrs_added} attributes; updated {len(changed)} files; removed {dropped_duplicates} redundant copied files; new duplicate count {final_dupes - original_dupes}")
+          
+          PY
+      - name: Commit synchronized locale and remove temporary workflow
+        shell: bash
+        run: |
+          git diff --check
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A Content.CMU/Resources/Locale/ru-RU
+          git rm .github/workflows/tmp-cmu-ru-locale-sync.yml
+          git commit -m "chore(locale): add missing Fluent messages and attributes"
+          git push origin HEAD:chore/sync-cmu-ru-locale-20261028
