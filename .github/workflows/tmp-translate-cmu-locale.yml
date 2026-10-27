@@ -62,11 +62,16 @@ jobs:
               return ids
           
           def get_simple_values(content):
-              values = {}
+              values, current_key = {}, None
               for line in content.splitlines():
+                  entry = entry_re.match(line)
+                  if entry: current_key = entry.group(1)
                   m = simple_line.match(line)
                   if m and m.group(2).strip():
-                      values[m.group(1).strip()] = m.group(2).strip()
+                      key = m.group(1).strip()
+                      if key.startswith(".") and current_key:
+                          key = current_key + key
+                      values[key] = m.group(2).strip()
               return values
           
           old_ids, old_attrs = set(), collections.defaultdict(set)
