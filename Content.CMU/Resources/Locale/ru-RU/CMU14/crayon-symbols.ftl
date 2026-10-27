@@ -1,67 +1,67 @@
-cmu-crayon-symbol-missing-colors = You need a crayon of every colour in this symbol, in any tone.
+cmu-crayon-symbol-missing-colors = Вам нужен карандаш любого цвета в этом символе, в любом тоне.
 
-cmu-crayon-custom-category = Custom symbols
+cmu-crayon-custom-category = Пользовательские символы
 
-cmu-crayon-custom-new = New
+cmu-crayon-custom-new = Новый
 
-cmu-crayon-custom-edit = Edit
+cmu-crayon-custom-edit = Редактировать
 
-cmu-crayon-custom-delete = Delete
+cmu-crayon-custom-delete = Исключить
 
-cmu-crayon-canvas-title = Crayon symbol
+cmu-crayon-canvas-title = Карандашный символ
 
-cmu-crayon-canvas-name = Name
+cmu-crayon-canvas-name = Имя
 
-cmu-crayon-canvas-eraser = Eraser
+cmu-crayon-canvas-eraser = Эразер
 
-cmu-crayon-canvas-fill = Fill
+cmu-crayon-canvas-fill = Заполнить
 
-cmu-crayon-canvas-brush-tool = Brush
+cmu-crayon-canvas-brush-tool = кисть
 
-cmu-crayon-canvas-line = Line
+cmu-crayon-canvas-line = линия
 
-cmu-crayon-canvas-circle = Circle
+cmu-crayon-canvas-circle = Круг
 
-cmu-crayon-canvas-gradient = Gradient
+cmu-crayon-canvas-gradient = градиент
 
-cmu-crayon-canvas-size = Size
+cmu-crayon-canvas-size = Размер
 
-cmu-crayon-canvas-mirror = Mirror
+cmu-crayon-canvas-mirror = Зеркало
 
-cmu-crayon-canvas-mirror-none = None
+cmu-crayon-canvas-mirror-none = Нет
 
-cmu-crayon-canvas-mirror-both = Both
+cmu-crayon-canvas-mirror-both = Оба
 
-cmu-crayon-canvas-gradient-colors = Gradient
+cmu-crayon-canvas-gradient-colors = градиент
 
-cmu-crayon-canvas-gradient-set = Use the brush colour
+cmu-crayon-canvas-gradient-set = Используйте цвет кисти
 
-cmu-crayon-canvas-pop-out = Pop out
+cmu-crayon-canvas-pop-out = Всплывать
 
-cmu-crayon-canvas-section-canvas = Canvas
+cmu-crayon-canvas-section-canvas = холст
 
-cmu-crayon-canvas-section-colours = Colours
+cmu-crayon-canvas-section-colours = Цвета
 
-cmu-crayon-canvas-section-tool = Tool
+cmu-crayon-canvas-section-tool = Инструмент
 
-cmu-crayon-canvas-clear = Clear
+cmu-crayon-canvas-clear = Очистить
 
-cmu-crayon-canvas-save = Save
+cmu-crayon-canvas-save = Сохранить
 
-cmu-crayon-canvas-rainbow = rainbow crayon
+cmu-crayon-canvas-rainbow = радужный карандаш
 
-cmu-crayon-canvas-needs = Needs: {$crayons}
+cmu-crayon-canvas-needs = Потребности: {$crayons}
 
-cmu-crayon-canvas-error-name = Give the symbol a name.
+cmu-crayon-canvas-error-name = Дайте символу имя.
 
-cmu-crayon-canvas-error-empty = Draw something first.
+cmu-crayon-canvas-error-empty = Сначала нарисуйте что-нибудь.
 
-cmu-crayon-canvas-error-colors = Use at most {$max} colours.
+cmu-crayon-canvas-error-colors = Использовать максимум {$max} Цвета.
 
-cmu-crayon-canvas-brush = Drawing with: {$color}
+cmu-crayon-canvas-brush = Рисуем с: {$color}
 
-cmu-crayon-canvas-tone-lighter = {$crayon}, {$steps} lighter
+cmu-crayon-canvas-tone-lighter = {$crayon}, {$steps} легче
 
-cmu-crayon-canvas-tone-darker = {$crayon}, {$steps} darker
+cmu-crayon-canvas-tone-darker = {$crayon}, {$steps} темный
 
-cmu-crayon-status-custom = custom symbol
+cmu-crayon-status-custom = таможенный символ

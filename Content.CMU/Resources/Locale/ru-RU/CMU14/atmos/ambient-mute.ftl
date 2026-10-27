@@ -1,3 +1,3 @@
-cmu-ambient-mute-muted = You loosen the panel, muffling the machine's hum.
+cmu-ambient-mute-muted = Вы ослабляете панель, приглушаете гул машины.
 
-cmu-ambient-mute-unmuted = You screw the panel back in, restoring the hum.
+cmu-ambient-mute-unmuted = Ты вкручиваешь панель обратно, восстанавливая гул.

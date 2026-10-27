@@ -1,155 +1,155 @@
-cmu-id-access-category-govfor = GOVFOR Access
+cmu-id-access-category-govfor = GOVFOR Доступ
 
-cmu-id-job-govfor-rifleman = Rifleman
+cmu-id-job-govfor-rifleman = Стрелок
 
-cmu-id-job-govfor-squad = Squad Member
+cmu-id-job-govfor-squad = Член отряда
 
-cmu-id-job-govfor-weapons-specialist = Weapons Specialist
+cmu-id-job-govfor-weapons-specialist = Специалист по вооружению
 
-cmu-id-job-govfor-f-t-l = Fireteam Leader
+cmu-id-job-govfor-f-t-l = Командир огневой группы
 
-cmu-id-job-govfor-corpsman = Corpsman
+cmu-id-job-govfor-corpsman = Позвать санитара
 
-cmu-id-job-govfor-engineer = Engineer
+cmu-id-job-govfor-engineer = Инженер
 
-cmu-id-job-govfor-aux-tech = Auxiliary Technician
+cmu-id-job-govfor-aux-tech = Вспомогательный техник
 
-cmu-id-job-govfor-pilot = Pilot
+cmu-id-job-govfor-pilot = пилот
 
-cmu-id-job-govfor-gunner = Gunner
+cmu-id-job-govfor-gunner = стрелок
 
-cmu-id-job-govfor-vehicle-crew = Vehicle Crew
+cmu-id-job-govfor-vehicle-crew = Экипаж автомобиля
 
-cmu-id-job-govfor-security = Military Police
+cmu-id-job-govfor-security = Военная полиция
 
-cmu-id-job-govfor-command-no-logistics = Officer
+cmu-id-job-govfor-command-no-logistics = офицер
 
-cmu-id-job-govfor-command = Command
+cmu-id-job-govfor-command = Командование
 
-cmu-id-access-category-opfor = OPFOR Access
+cmu-id-access-category-opfor = OPFOR Доступ
 
-cmu-id-job-opfor-rifleman = Rifleman
+cmu-id-job-opfor-rifleman = Стрелок
 
-cmu-id-job-opfor-squad = Squad Member
+cmu-id-job-opfor-squad = Член отряда
 
-cmu-id-job-opfor-weapons-specialist = Weapons Specialist
+cmu-id-job-opfor-weapons-specialist = Специалист по вооружению
 
-cmu-id-job-opfor-f-t-l = Fireteam Leader
+cmu-id-job-opfor-f-t-l = Командир огневой группы
 
-cmu-id-job-opfor-corpsman = Corpsman
+cmu-id-job-opfor-corpsman = Позвать санитара
 
-cmu-id-job-opfor-engineer = Engineer
+cmu-id-job-opfor-engineer = Инженер
 
-cmu-id-job-opfor-aux-tech = Auxiliary Technician
+cmu-id-job-opfor-aux-tech = Вспомогательный техник
 
-cmu-id-job-opfor-pilot = Pilot
+cmu-id-job-opfor-pilot = пилот
 
-cmu-id-job-opfor-gunner = Gunner
+cmu-id-job-opfor-gunner = стрелок
 
-cmu-id-job-opfor-vehicle-crew = Vehicle Crew
+cmu-id-job-opfor-vehicle-crew = Экипаж автомобиля
 
-cmu-id-job-opfor-security = Military Police
+cmu-id-job-opfor-security = Военная полиция
 
-cmu-id-job-opfor-command-no-logistics = Officer
+cmu-id-job-opfor-command-no-logistics = офицер
 
-cmu-id-job-opfor-command = Command
+cmu-id-job-opfor-command = Командование
 
-cmu-id-access-category-colony = Colony Access
+cmu-id-access-category-colony = Доступ к колонии
 
-cmu-id-access-category-colony-leadership = Colony Leadership
+cmu-id-access-category-colony-leadership = Лидерство колонии
 
-cmu-id-job-colony-admin = Colony Administrator
+cmu-id-job-colony-admin = Администратор колонии
 
-cmu-id-job-colony-headsofcolony = Head of Department
+cmu-id-job-colony-headsofcolony = Начальник отдела
 
-cmu-id-job-colony-engi = Engineer
+cmu-id-job-colony-engi = Инженер
 
-cmu-id-job-colony-cmb = Marshal
+cmu-id-job-colony-cmb = Маршал
 
-cmu-id-job-colony-med = Medical
+cmu-id-job-colony-med = Медицина
 
-cmu-id-job-colony-news = Press
+cmu-id-job-colony-news = Пресса
 
-cmu-id-job-colony-orbitalmanagement = Orbital Management
+cmu-id-job-colony-orbitalmanagement = Орбитальное управление
 
-cmu-id-job-colony-orbitallaw = Orbital Law
+cmu-id-job-colony-orbitallaw = Орбитальный закон
 
-cmu-id-console-title = Identification Computer
+cmu-id-console-title = Идентифицирующий компьютер
 
-cmu-id-console-heading = PERSONNEL IDENTIFICATION
+cmu-id-console-heading = Персональная идентификация
 
-cmu-id-console-subheading = { $faction } // ACCESS PROGRAMMING TERMINAL
+cmu-id-console-subheading = { $faction } // ПРОГРАММА ДОСТУПОВ ТЕРМИНАЛ
 
-cmu-id-console-status-locked = LOCKED
+cmu-id-console-status-locked = Закрытый
 
-cmu-id-console-status-denied = NOT AUTHORIZED
+cmu-id-console-status-denied = Не осуждён
 
-cmu-id-console-status-authorized = AUTHORIZED
+cmu-id-console-status-authorized = Авторизованный
 
-cmu-id-console-slot-auth = AUTHORIZATION CARD
+cmu-id-console-slot-auth = АВТОРИЗАЦИОННЫЙ КАРТ
 
-cmu-id-console-slot-target = CARD TO MODIFY
+cmu-id-console-slot-target = КАРД К МОДИФИИ
 
-cmu-id-console-no-card = NO CARD INSERTED
+cmu-id-console-no-card = Никаких карт.
 
-cmu-id-console-unknown = Unknown
+cmu-id-console-unknown = неизвестный
 
-cmu-id-console-sign-in = SIGN IN
+cmu-id-console-sign-in = ВЗГЛЯД
 
-cmu-id-console-log-out = LOG OUT
+cmu-id-console-log-out = Уходите.
 
-cmu-id-console-eject = EJECT
+cmu-id-console-eject = ЖЕКТ
 
-cmu-id-console-insert = INSERT
+cmu-id-console-insert = ИНСЕРТ
 
-cmu-id-console-tab-access = ACCESS
+cmu-id-console-tab-access = Доступ
 
-cmu-id-console-tab-jobs = JOBS
+cmu-id-console-tab-jobs = ДЖОБС
 
-cmu-id-console-tab-squads = SQUADS
+cmu-id-console-tab-squads = Квадраты
 
-cmu-id-console-iff-grant = GRANT IFF
+cmu-id-console-iff-grant = ГРАНТ ИФФ
 
-cmu-id-console-iff-revoke = REVOKE IFF
+cmu-id-console-iff-revoke = Ревок Ифф
 
-cmu-id-console-grant-all = GRANT ALL
+cmu-id-console-grant-all = Всем привет
 
-cmu-id-console-revoke-all = REVOKE ALL
+cmu-id-console-revoke-all = Революция
 
-cmu-id-console-grant-group = GRANT GROUP
+cmu-id-console-grant-group = ГРАНТ ГРУППА
 
-cmu-id-console-revoke-group = REVOKE GROUP
+cmu-id-console-revoke-group = Группа REVOKE
 
-cmu-id-console-discharge = DISHONORABLE DISCHARGE
+cmu-id-console-discharge = Неблагоприятная диаграмма
 
-cmu-id-console-discharge-confirm = CONFIRM: CANNOT BE UNDONE
+cmu-id-console-discharge-confirm = Исполнитель: Cannot Be UNDONE
 
-cmu-id-console-unassign = UNASSIGN SQUAD
+cmu-id-console-unassign = СВЯЗАННЫЙ КВАД
 
-cmu-id-console-caption-groups = ACCESS GROUPS
+cmu-id-console-caption-groups = Группа доступа
 
-cmu-id-console-caption-access = ACCESS // { $group }
+cmu-id-console-caption-access = Доступность // { $group }
 
-cmu-id-console-caption-departments = DEPARTMENTS
+cmu-id-console-caption-departments = ДЕПАРТМЕНТЫ
 
-cmu-id-console-caption-jobs = ASSIGNMENTS // { $group }
+cmu-id-console-caption-jobs = Назначения // { $group }
 
-cmu-id-console-caption-squads = SQUADS
+cmu-id-console-caption-squads = Квадраты
 
-cmu-id-console-caption-squads-hint = PICK A SQUAD TO ASSIGN THE CARD'S OWNER
+cmu-id-console-caption-squads-hint = Нажмите кнопку, чтобы узнать владельца карты
 
-cmu-id-console-entry-on = GRANTED
+cmu-id-console-entry-on = ОБЯЗАТЕЛЬНЫЙ
 
 cmu-id-console-entry-off = --
 
-cmu-id-console-placeholder-sign-in = INSERT AN AUTHORIZED CARD AND SIGN IN
+cmu-id-console-placeholder-sign-in = ВНИМАНИЕ АВТОРИЗИРОВАННОГО КАРТА И ВЗГЛЯД
 
-cmu-id-console-placeholder-insert = INSERT THE CARD TO MODIFY
+cmu-id-console-placeholder-insert = Вставить карту в модификацию
 
-cmu-id-console-footer-idle = Sign in with a command card, then insert the card you want to change.
+cmu-id-console-footer-idle = Зарегистрируйтесь с помощью командной карты, а затем вставьте карту, которую вы хотите изменить.
 
-cmu-id-console-footer-access = Pick a group, then click an access to grant or revoke it. IFF lets friendly fire pass the card's owner.
+cmu-id-console-footer-access = Выберите группу, затем нажмите на доступ к предоставлению или отмените его. IFF позволяет дружелюбному огню пропустить владельца карты.
 
-cmu-id-console-footer-jobs = Picking an assignment replaces the card's access with that job's.
+cmu-id-console-footer-jobs = Выбор задания заменяет доступ к карте работой.
 
-cmu-id-console-footer-squads = Assigns the card's owner to a squad.
+cmu-id-console-footer-squads = Назначает владельца карты в отряд.

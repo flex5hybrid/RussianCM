@@ -13,4 +13,4 @@ ui-options-function-cmu-inspect-injuries = Осмотреть травмы
 ui-options-function-cmu-open-medical-crafting-menu = Открыть меню медицинского крафта
 ui-options-function-cmu-toggle-shoot-down-z-level = Переключить стрельбу на Z-уровень ниже
 
-ui-options-cmu-zlevels-look-aim = Shoot where you look across Z-levels (off: use the shoot down hotkey)
+ui-options-cmu-zlevels-look-aim = Стреляйте там, где вы смотрите через Z-уровни (выключено: используйте горячий ключ для сбивания)

@@ -1,1 +1,1 @@
-cmu-regulation-scissors-not-regulation = These scissors only do regulation haircuts.
+cmu-regulation-scissors-not-regulation = Эти ножницы только регулируют стрижки.

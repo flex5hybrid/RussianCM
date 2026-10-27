@@ -1,68 +1,68 @@
-ent-CMUExpeditionLeafLitter1 = fallen leaves
-    .desc = Curled leaves and broken fronds gathered against the roots.
+ent-CMUExpeditionLeafLitter1 = опавшие листья
+    .desc = Свернутые листья и сломанные фронды собрались против корней.
 
-ent-CMUExpeditionLeafLitter2 = fallen leaves
-    .desc = Curled leaves and broken fronds gathered against the roots.
+ent-CMUExpeditionLeafLitter2 = опавшие листья
+    .desc = Свернутые листья и сломанные фронды собрались против корней.
 
-ent-CMUExpeditionLeafLitter3 = fallen leaves
-    .desc = Curled leaves and broken fronds gathered against the roots.
+ent-CMUExpeditionLeafLitter3 = опавшие листья
+    .desc = Свернутые листья и сломанные фронды собрались против корней.
 
-ent-CMUExpeditionLeafLitter4 = fallen leaves
-    .desc = Curled leaves and broken fronds gathered against the roots.
+ent-CMUExpeditionLeafLitter4 = опавшие листья
+    .desc = Свернутые листья и сломанные фронды собрались против корней.
 
-ent-CMUExpeditionMoss1 = moss bed
-    .desc = A low mat of damp vegetation clings to the forest floor.
+ent-CMUExpeditionMoss1 = моховая кровать
+    .desc = Низкий коврик сырой растительности цепляется за лесной пол.
 
-ent-CMUExpeditionMoss2 = moss bed
-    .desc = A low mat of damp vegetation clings to the forest floor.
+ent-CMUExpeditionMoss2 = моховая кровать
+    .desc = Низкий коврик сырой растительности цепляется за лесной пол.
 
-ent-CMUExpeditionMoss3 = moss bed
-    .desc = A low mat of damp vegetation clings to the forest floor.
+ent-CMUExpeditionMoss3 = моховая кровать
+    .desc = Низкий коврик сырой растительности цепляется за лесной пол.
 
-ent-CMUExpeditionFungus1 = wild fungi
-    .desc = Small fruiting bodies feed on rotting timber.
+ent-CMUExpeditionFungus1 = дикие грибы
+    .desc = Мелкие плодовые тела питаются гниющей древесиной.
 
-ent-CMUExpeditionFungus2 = wild fungi
-    .desc = Small fruiting bodies feed on rotting timber.
+ent-CMUExpeditionFungus2 = дикие грибы
+    .desc = Мелкие плодовые тела питаются гниющей древесиной.
 
-ent-CMUExpeditionFungus3 = wild fungi
-    .desc = Small fruiting bodies feed on rotting timber.
+ent-CMUExpeditionFungus3 = дикие грибы
+    .desc = Мелкие плодовые тела питаются гниющей древесиной.
 
-ent-CMUExpeditionAsh = cold ash
-    .desc = Gray ash and fragments of charcoal mark where something burned.
+ent-CMUExpeditionAsh = холодный пепел
+    .desc = Серый пепел и фрагменты древесного угля, где что-то горело.
 
-ent-CMUExpeditionCharcoal = charred timber
-    .desc = Splintered wood, blackened all the way through.
+ent-CMUExpeditionCharcoal = обугленный лес
+    .desc = Осколенное дерево, почерневшее на всем пути.
 
-ent-CMUExpeditionCharredTree1 = fire-killed tree
-    .desc = Blistered bark hangs from a trunk killed by the fire.
+ent-CMUExpeditionCharredTree1 = Пожарное дерево
+    .desc = Сверкающая кора свисает с ствола, убитого огнем.
 
-ent-CMUExpeditionCharredTree2 = fire-killed tree
-    .desc = Blistered bark hangs from a trunk killed by the fire.
+ent-CMUExpeditionCharredTree2 = Пожарное дерево
+    .desc = Сверкающая кора свисает с ствола, убитого огнем.
 
-ent-CMUExpeditionCharredTree3 = fire-killed tree
-    .desc = Blistered bark hangs from a trunk killed by the fire.
+ent-CMUExpeditionCharredTree3 = Пожарное дерево
+    .desc = Сверкающая кора свисает с ствола, убитого огнем.
 
-ent-CMUExpeditionCharredTree4 = fire-killed tree
-    .desc = Blistered bark hangs from a trunk killed by the fire.
+ent-CMUExpeditionCharredTree4 = Пожарное дерево
+    .desc = Сверкающая кора свисает с ствола, убитого огнем.
 
-ent-CMUExpeditionFallenLog1 = fallen trunk
-    .desc = A broken trunk lies across the undergrowth, thick enough to shelter behind.
+ent-CMUExpeditionFallenLog1 = упавший багажник
+    .desc = Разбитый ствол лежит через подлесок, достаточно толстый, чтобы укрыться позади.
 
-ent-CMUExpeditionFallenLog2 = fallen trunk
-    .desc = A broken trunk lies across the undergrowth, thick enough to shelter behind.
+ent-CMUExpeditionFallenLog2 = упавший багажник
+    .desc = Разбитый ствол лежит через подлесок, достаточно толстый, чтобы укрыться позади.
 
-ent-CMUExpeditionCampfire = abandoned fire ring
-    .desc = Old coals and half-burned sticks remain in a survey crew's fire ring.
+ent-CMUExpeditionCampfire = Заброшенное огненное кольцо
+    .desc = Старые угли и полусгоревшие палки остаются в огненном кольце съемочной группы.
 
-ent-CMUExpeditionBurntFrame = burned camp remains
-    .desc = Charred poles and collapsed timber are all that remain of a temporary shelter.
+ent-CMUExpeditionBurntFrame = Сожженный лагерь остался
+    .desc = Обугленные столбы и обвалившаяся древесина - все, что осталось от временного укрытия.
 
-ent-CMUExpeditionAbandonedPack = ruined equipment bundle
-    .desc = A weathered bundle of torn packing and unusable field supplies.
+ent-CMUExpeditionAbandonedPack = Разрушенный комплект оборудования
+    .desc = Выветрившийся пакет разорванной упаковки и непригодных полевых припасов.
 
-ent-CMUExpeditionWreckedCart = wrecked survey carrier
-    .desc = Its wheels and cargo frame collapsed long before the recovery team arrived.
+ent-CMUExpeditionWreckedCart = аварийный оператор
+    .desc = Его колеса и грузовая рама рухнули задолго до прибытия команды восстановления.
 
-ent-CMUExpeditionWildfire = smoldering wildfire
-    .desc = An active pocket of fire burns among the remains of the forest.
+ent-CMUExpeditionWildfire = тлеющий лесной пожар
+    .desc = Активный очаг огня горит среди остатков леса.

@@ -1,15 +1,15 @@
-cmu-power-riser-source-live = Mains present on this deck. The twin {$direction} is fed.
+cmu-power-riser-source-live = Присутствует на этой палубе. Близнецы {$direction} Его кормят.
 
-cmu-power-riser-source-dead = Mains out on this deck. The twin {$direction} is dark.
+cmu-power-riser-source-dead = На этой палубе. Близнецы {$direction} Темно.
 
-cmu-power-riser-sink = Fed from the twin {$direction}.
+cmu-power-riser-sink = Фед от близнеца {$direction}.
 
-cmu-power-riser-unlinked = Unlinked. No twin on the adjacent deck.
+cmu-power-riser-unlinked = Несвязанный. Нет близнецов на соседней палубе.
 
-cmu-power-riser-role-source = Source
+cmu-power-riser-role-source = Источник
 
-cmu-power-riser-role-sink = Sink
+cmu-power-riser-role-sink = потопить
 
-cmu-power-riser-role-toggled = You toggle the riser to {$role}.
+cmu-power-riser-role-toggled = Ты переключаешь подъемник на {$role}.
 
-cmu-power-riser-dir-toggled = You pry the riser to look {$direction}.
+cmu-power-riser-dir-toggled = Ты пытаешься подняться, чтобы посмотреть {$direction}.

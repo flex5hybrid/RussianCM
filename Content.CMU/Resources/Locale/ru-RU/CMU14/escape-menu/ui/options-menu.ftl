@@ -53,66 +53,66 @@ cmu-ui-setup-save = Сохранить и продолжить
 cmu-ui-setup-open = Открыть настройку интерфейса
 cmu-ui-options-examine-wounds-in-chat = Показывать ранения в чате при осмотре, как в CM13
 
-cmu-ui-options-identification = Identification
+cmu-ui-options-identification = Идентификация
 
-cmu-ui-options-fof-unidentified-marker = Show question marks for unfamiliar enemy uniforms in FoF
+cmu-ui-options-fof-unidentified-marker = Показать вопросительные знаки для незнакомой вражеской формы в ФОФ
 
-cmu-ui-options-fof-unidentified-marker-tooltip = Shows a question mark above living enemies whose uniform is not issued or sold by your platoon. Works without HUD gear and never marks teammates or dead bodies.
+cmu-ui-options-fof-unidentified-marker-tooltip = Показывает вопросительный знак над живыми врагами, униформа которых не выдана и не продана вашим взводом. Работает без снаряжения HUD и никогда не отмечает товарищей по команде или мертвые тела.
 
-cmu-ui-options-temperature-fahrenheit = Show temperatures in Fahrenheit
+cmu-ui-options-temperature-fahrenheit = Показать температуру в Фаренгейте
 
-cmu-ui-options-temperature-fahrenheit-tooltip = Switches medical scanners, patient monitors, atmos consoles, and the gas analyzer to Fahrenheit readings.
+cmu-ui-options-temperature-fahrenheit-tooltip = Переключает медицинские сканеры, мониторы пациентов, консоли Atmos и анализатор газа на показания Фаренгейта.
 
-cmu-ui-options-chat-reset-to-local = Switch chat back to Local/Dead after sending
+cmu-ui-options-chat-reset-to-local = Переключите чат обратно в Local/Dead после отправки
 
-cmu-ui-options-chat-reset-to-local-tooltip = After you send a message on any other channel, the chat box goes back to Local, or to Dead chat if you're a ghost.
+cmu-ui-options-chat-reset-to-local-tooltip = После того, как вы отправляете сообщение на любой другой канал, окно чата возвращается в Local или в Dead chat, если вы призрак.
 
-cmu-ui-options-chat-center-input = Center chat input while typing like in CM13
+cmu-ui-options-chat-center-input = Вход в чат центра при вводе как в CM13
 
-cmu-ui-options-chat-center-input-tooltip = Pressing a chat key moves the text box to the middle of the screen. It goes back when you send or cancel the message.
+cmu-ui-options-chat-center-input-tooltip = Нажатие клавиши чата перемещает текстовое поле в середину экрана. Он возвращается, когда вы отправляете или отменяете сообщение.
 
-cmu-ui-options-popups-in-chat = Show on-screen popups in chat
+cmu-ui-options-popups-in-chat = Показать на экране всплывающие окна в чате
 
-cmu-ui-options-popups-in-chat-tooltip = Copies every popup message, like "You can't reach that", into your chat log.
+cmu-ui-options-popups-in-chat-tooltip = Копиирует каждое всплывающее сообщение, например, «Вы не можете достичь этого», в свой журнал чата.
 
-cmu-ui-options-hide-popups-on-screen = Hide on-screen popups
+cmu-ui-options-hide-popups-on-screen = Спрятать всплывающие окна на экране
 
-cmu-ui-options-hide-popups-on-screen-tooltip = Stops popup messages from appearing on screen. Turn on "Show on-screen popups in chat" too to only see them in chat.
+cmu-ui-options-hide-popups-on-screen-tooltip = Препятствует появлению всплывающих сообщений на экране. Включите «Показать всплывающие окна на экране в чате», чтобы увидеть их только в чате.
 
-cmu-ui-options-chat-speech-sounds = Play speech sounds when people talk
+cmu-ui-options-chat-speech-sounds = Играйте в звуки речи, когда люди говорят
 
-cmu-ui-options-chat-speech-sounds-tooltip = The short voice sounds that play when someone nearby speaks. Turning this off only affects what you hear.
+cmu-ui-options-chat-speech-sounds-tooltip = Короткий голос звучит, когда кто-то рядом говорит. Отключение этого влияет только на то, что вы слышите.
 
-cmu-ui-options-privacy = Privacy
+cmu-ui-options-privacy = конфиденциальность
 
-cmu-ui-options-hide-round-end-username = Hide my username on the round-end screen
+cmu-ui-options-hide-round-end-username = Спрячьте мое имя пользователя на круглом экране
 
-cmu-ui-options-hide-round-end-username-tooltip = Other players see your character at round end, but not the account that played them.
+cmu-ui-options-hide-round-end-username-tooltip = Другие игроки видят вашего персонажа в конце раунда, но не в аккаунте, в котором он играл.
 
-cmu-ui-options-hide-examine-tooltip = Hide the shift-click examine popup
+cmu-ui-options-hide-examine-tooltip = Hide the shift-click explore popup смотреть онлайн
 
-cmu-ui-options-hide-examine-tooltip-tooltip = Examining no longer opens a popup. Turn on "Echo everything you examine to chat" too to read examines in chat instead.
+cmu-ui-options-hide-examine-tooltip-tooltip = Обследование больше не открывает всплывающее окно. Включите «Эхо всего, что вы изучаете в чате», чтобы читать экзамены в чате.
 
-cmu-ui-options-hide-cassette-music-notes = Hide music notes over cassette listeners
+cmu-ui-options-hide-cassette-music-notes = Спрятать музыкальные ноты над слушателями кассет
 
-cmu-ui-options-hide-cassette-music-notes-tooltip = Stops drawing the floating music notes over people who are listening to a cassette player.
+cmu-ui-options-hide-cassette-music-notes-tooltip = Хватит рисовать плавающие музыкальные ноты над людьми, которые слушают кассетный плеер.
 
-cmu-ui-options-interface = Interface
+cmu-ui-options-interface = Интерфейс
 
-cmu-ui-options-gameplay = Gameplay
+cmu-ui-options-gameplay = Геймплей
 
-cmu-ui-options-popups-examine = Popups and examine
+cmu-ui-options-popups-examine = Всплывающие окна и осмотр
 
-cmu-ui-options-screen-shake = Screen shake
+cmu-ui-options-screen-shake = Скриншоты
 
-cmu-ui-options-sound = Sound
+cmu-ui-options-sound = Звук звука
 
-cmu-ui-options-visuals = Visuals
+cmu-ui-options-visuals = Визуал
 
-cmu-ui-options-vault-on-bump = Vault by walking into ledges and railings
+cmu-ui-options-vault-on-bump = Убежище, войдя в уступы и перила
 
-cmu-ui-options-vault-on-bump-tooltip = Walking into a ledge or railing you can vault over starts vaulting it. Tables and barricades are left out. Keep pushing into it to finish, or step away to cancel.
+cmu-ui-options-vault-on-bump-tooltip = Войдя в выступ или перила, вы можете переступить через него. Столы и баррикады остались без внимания. Продолжайте толкать его, чтобы закончить, или отойдите, чтобы отменить.
 
-cmu-ui-options-no-shake-when-resting = Stay down when resting
+cmu-ui-options-no-shake-when-resting = Оставайтесь на месте, когда отдыхаете
 
-cmu-ui-options-no-shake-when-resting-tooltip = While you lie down on purpose, others can't shake you back up. Being stunned, knocked down or unconscious still lets them.
+cmu-ui-options-no-shake-when-resting-tooltip = Пока ты лежишь нарочно, другие не могут встряхнуть тебя. Быть ошеломленным, сбитым с ног или без сознания все еще позволяет им.

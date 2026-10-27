@@ -45,34 +45,34 @@ reagent-desc-purple-plasma = Плазма с фиолетовым оттенко
 reagent-name-royal-plasma = Королевская плазма
 reagent-desc-royal-plasma = Тёмно-фиолетовая плазма...
 
-reagent-name-botanical-ammonia = Plant-based ammonia
+reagent-name-botanical-ammonia = Растительный аммиак
 
-reagent-desc-botanical-ammonia = Ammonia drawn from plant matter. Feeds crops, poisons crew.
+reagent-desc-botanical-ammonia = Аммиак, полученный из растительного вещества. Кормят посевы, отравляют экипаж.
 
-reagent-name-botanical-diethylamine = Plant-based diethylamine
+reagent-name-botanical-diethylamine = Диэтиламин на растительной основе
 
-reagent-desc-botanical-diethylamine = A potent fertilizer distilled from plant matter.
+reagent-desc-botanical-diethylamine = Мощное удобрение, дистиллированное из растительного вещества.
 
-reagent-name-botanical-unstable-mutagen = Plant-based unstable mutagen
+reagent-name-botanical-unstable-mutagen = Растительный неустойчивый мутаген
 
-reagent-desc-botanical-unstable-mutagen = A mutagenic compound extracted from mutated flora. Encourages cancerous growths in humans.
+reagent-desc-botanical-unstable-mutagen = Мутагенное соединение, извлеченное из мутировавшей флоры. Поощряет раковые образования у людей.
 
-reagent-name-botanical-phenol = Plant-based phenol
+reagent-name-botanical-phenol = Фенол растительного происхождения
 
-reagent-desc-botanical-phenol = A plant-derived phenol. Reeks of whiskey and scrambles nerves.
+reagent-desc-botanical-phenol = Фенол растительного происхождения. Пахнет виски и ломает нервы.
 
-reagent-name-botanical-amatoxin = Plant-based amatoxin
+reagent-name-botanical-amatoxin = Растительный аматоксин
 
-reagent-desc-botanical-amatoxin = A mushroom-derived toxin that taxes the body the longer it lingers.
+reagent-desc-botanical-amatoxin = Яд, полученный из грибов, который облагает организм налогами, чем дольше он задерживается.
 
 reagent-name-oleoresin-capsicum = Oleoresin capsicum
 
-reagent-desc-oleoresin-capsicum = A concentrated pepper extract used in pepper spray. Extremely painful in the eyes.
+reagent-desc-oleoresin-capsicum = Концентрированный экстракт перца, используемый в перцовом спрее. Очень болезненно в глазах.
 
-reagent-name-capsicum-neutralizer = Capsicum neutralizer
+reagent-name-capsicum-neutralizer = нейтрализатор Capsicum
 
-reagent-desc-capsicum-neutralizer = A soothing saline wash that neutralizes pepper spray.
+reagent-desc-capsicum-neutralizer = Успокаивающий солевой раствор, нейтрализующий перцовый спрей.
 
-reagent-name-cmu-tear-gas = tear gas
+reagent-name-cmu-tear-gas = слезоточивый газ
 
-reagent-desc-cmu-tear-gas = A lachrymatory agent. Harmless in a beaker, miserable as a smoke.
+reagent-desc-cmu-tear-gas = Лахриматорный агент. Безвредный в клюве, несчастный как дым.

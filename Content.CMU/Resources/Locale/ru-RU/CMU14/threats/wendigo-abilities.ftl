@@ -1,9 +1,9 @@
-ent-ActionCMUWendigoPunchSwing = Punch Swing
-    .desc = Toggle. While on, a wide swing that connects also punches every enemy it hits, and puts Punch on cooldown. Only works while Punch is ready.
+ent-ActionCMUWendigoPunchSwing = Пунш Свинг
+    .desc = Тоггл. В то время как на, широкий качели, которые соединяются, также ударяет каждого врага, которого он поражает, и ставит удар на охлаждение. Работает только тогда, когда Punch готов.
 
 ent-ActionCMUWendigoClawedSweep = Clawed Sweep
-    .desc = Rake the ground in a wide cone in front of you. After a short wind-up, every enemy caught is torn open, knocked down and disarmed.
+    .desc = Разбейте землю широким конусом перед вами. После короткой ликвидации каждый пойманный враг разрывается, сбивается с ног и разоружается.
 
-cmu-wendigo-punch-swing-on = Your swings will now punch.
+cmu-wendigo-punch-swing-on = Ваши качели теперь будут бить.
 
-cmu-wendigo-punch-swing-off = Your swings no longer punch.
+cmu-wendigo-punch-swing-off = Твои качели больше не бьют.

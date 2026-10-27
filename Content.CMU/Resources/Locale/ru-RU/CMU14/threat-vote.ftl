@@ -17,6 +17,6 @@ au14-threat-not-selected-return-to-lobby = "Вы не были выбраны у
 
 cmu-threat-marker-shortfall-announcement = НЕХВАТКА ТОЧЕК СПАВНА {$kind}: у '{$source}' на планете '{$planet}' меньше точек спавна, чем требуется тел ({$short}). Раунд продолжается; тела без точки спавна не появятся.
 
-au14-threat-vote-observer-notice = The threat vote selected {$threat}. Your vote counts as interest. You can withdraw in Threats and Third Parties; joining another role removes your interest.
+au14-threat-vote-observer-notice = Избранное голосование об угрозе {$threat}Ваш голос засчитывается как процент. Вы можете отказаться от участия в Угрозах и Третьих лицах; присоединение к другой роли устраняет ваш интерес.
 
-au14-threat-vote-opted-out-return-to-lobby = "The threat vote selected {$threat}, which is disabled in your preferences. You have been returned to the lobby and are free to Join-In-Progress (JIP)."
+au14-threat-vote-opted-out-return-to-lobby = "Выбранное голосование об угрозе {$threat}которые отключены в ваших предпочтениях. Вы были возвращены в лобби и свободны для участия в прогрессе (JIP).

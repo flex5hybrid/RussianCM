@@ -1,13 +1,13 @@
-cmu-sas-description = You are part of Special Air Service - Tier One special forces of the TWE. You have been called by TWE Ambassador, report in and protect the Ambassador.
+cmu-sas-description = Вы являетесь частью Специальной воздушной службы - Спецназ первого уровня TWEВы были вызваны TWE Посол, сообщите и защитите посла.
 
-cmu-sas-greeting = You are a member of Special Air Service regiment.
-             You have been called by TWE Ambassador on the colony.
-             Report in ASAP, make contact with the Ambassador and protect them.
+cmu-sas-greeting = Вы являетесь членом специального авиационного полка.
+             Вы были вызваны TWE Посол в колонии.
+             Сообщите в ASAP, свяжитесь с послом и защитите его.
 
-             'We going deep, and we going hard.
+             Мы идем глубоко, и мы идем тяжело.
 
-             Surely you can't be serious.
+             Конечно, ты не можешь быть серьезным.
 
-             I am serious, and don't call me Shirley.'
+             Я серьезно, и не называй меня Ширли.
 
-cmu-sas-rules = You report to the nearest highest authority, either TWE Ambassador or your SAS Commander. Protect the Ambassador at all cost.
+cmu-sas-rules = Вы сообщаете в ближайший высший орган, либо TWE Посол или командир SAS. Защитить посла любой ценой.

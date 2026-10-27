@@ -1,65 +1,65 @@
-cmu-admin-flag-desc-admin = Basic admin powers: admin verbs, the admin menu, and anything that checks "is this an admin" (admin-only machine screens, the admin strip view, spawning players as jobs, following without being counted). Give to every admin; don't give to mentors.
+cmu-admin-flag-desc-admin = Основные полномочия администратора: глаголы администратора, меню администратора и все, что проверяет «это администратор» (экраны только для администратора, вид полосы администратора, нерест игроков в качестве рабочих мест, следование без учета). Дайте каждому администратору; не давайте наставникам.
 
-cmu-admin-flag-desc-ban = Ban and unban players.
+cmu-admin-flag-desc-ban = Запретить и запретить игроков.
 
-cmu-admin-flag-desc-debug = Debug commands for coders and testing: rejuvenate, editing solutions, tags, alerts and actions, strip-all, performance tools and similar.
+cmu-admin-flag-desc-debug = Команды отладки для кодеров и тестирования: омолаживающие, редактирующие решения, теги, оповещения и действия, Strip-all, инструменты производительности и тому подобное.
 
-cmu-admin-flag-desc-fun = Event and fun tools: controlling mobs, explosions, polymorphs, global sounds, making people antagonists and similar. Usually held back from trial admins.
+cmu-admin-flag-desc-fun = Мероприятия и забавные инструменты: управление толпами, взрывами, полиморфами, глобальными звуками, создание антагонистов людей и тому подобное. Обычно удерживается от судебных администраторов.
 
-cmu-admin-flag-desc-permissions = Edit admins, ranks and permissions in this panel. You can only grant flags you hold yourself.
+cmu-admin-flag-desc-permissions = Редактировать администраторы, ранги и разрешения в этой панели. Вы можете использовать только флаги, которые вы держите.
 
-cmu-admin-flag-desc-server = Server-wide settings: the panic bunker, server config values, persistence saves, z-level network tools and similar. Restarting and ending rounds is ROUND.
+cmu-admin-flag-desc-server = Настройки сервера: панический бункер, значения конфигураций сервера, сохранения стойкости, сетевые инструменты z-уровня и тому подобное. Перезапуск и окончание раундов завершены.
 
-cmu-admin-flag-desc-spawn = Spawn entities, tiles and decals, and open the sandbox panel.
+cmu-admin-flag-desc-spawn = Заросшие сущности, плитки и наклейки и откройте панель песочницы.
 
-cmu-admin-flag-desc-varedit = View Variables: inspect and edit any entity's data directly. Powerful; mistakes can break a round.
+cmu-admin-flag-desc-varedit = Просмотр переменных: непосредственно проверяйте и редактируйте данные любого объекта. Мощный, ошибки могут сломать круг.
 
-cmu-admin-flag-desc-mapping = Mapping tools: mapping mode, tile and decal editing commands, and map clean-up commands.
+cmu-admin-flag-desc-mapping = Инструменты картографирования: режим отображения, команды редактирования плитки и декаля и команды очистки карты.
 
-cmu-admin-flag-desc-logs = View the admin logs.
+cmu-admin-flag-desc-logs = Посмотреть журналы администратора.
 
-cmu-admin-flag-desc-round = Run the round: end or restart it, force the map or game mode, delay the start, ready everyone up, set job priorities and call shuttles.
+cmu-admin-flag-desc-round = Запустите раунд: закончите или перезапустите его, заставьте карту или режим игры, задержите старт, подготовьте всех, установите приоритеты работы и вызовите шаттлы.
 
-cmu-admin-flag-desc-query = Run entity queries and the tile, rename and stairwell commands built on them.
+cmu-admin-flag-desc-query = Запустите запросы сущности и плитку, переименуйте и команды лестницы, построенные на них.
 
-cmu-admin-flag-desc-adminhelp = Receive and answer admin help (AHelp) tickets.
+cmu-admin-flag-desc-adminhelp = Получить и ответить на помощь администратора (AHelp) билеты.
 
-cmu-admin-flag-desc-viewnotes = View players' admin notes.
+cmu-admin-flag-desc-viewnotes = Посмотреть заметки администратора игроков.
 
-cmu-admin-flag-desc-editnotes = Create, edit and delete admin notes. Also needed to receive some admin alerts.
+cmu-admin-flag-desc-editnotes = Создание, редактирование и удаление заметок администратора. Также необходимо получать несколько предупреждений администратора.
 
-cmu-admin-flag-desc-massban = Mass bans on SS14.Admin.
+cmu-admin-flag-desc-massban = Массовые запреты на SS14Админ.
 
-cmu-admin-flag-desc-stealth = Stay hidden from adminwho, except to other admins with this flag.
+cmu-admin-flag-desc-stealth = Держитесь подальше от администратора, кроме других администраторов с этим флагом.
 
-cmu-admin-flag-desc-adminchat = Read and send admin chat, including messages relayed from Discord.
+cmu-admin-flag-desc-adminchat = Читайте и отправляйте чат администратора, включая сообщения, переданные из Discord.
 
-cmu-admin-flag-desc-pii = See personally identifying information (IPs, hardware IDs and the like) in game and on SS14.Admin.
+cmu-admin-flag-desc-pii = См. личную идентифицирующую информацию (IP, идентификаторы оборудования и т.п.) в игре и на SS14Админ.
 
-cmu-admin-flag-desc-moderator = Moderator commands: dsay, announcements, MOTD, playtime edits, connection bypasses, ghost kicks, running verbs as someone else and silicon laws.
+cmu-admin-flag-desc-moderator = Команды модератора: dsay, анонсы, MOTD, редактирование игрового времени, обходы соединений, удары призрака, запуск глаголов как кого-то другого и кремниевые законы.
 
-cmu-admin-flag-desc-adminwho = Use the adminwho command to see which admins are online.
+cmu-admin-flag-desc-adminwho = Используйте команду администратора, чтобы увидеть, какие администраторы находятся в Интернете.
 
-cmu-admin-flag-desc-namecolor = Set the color of your OOC name.
+cmu-admin-flag-desc-namecolor = Установите цвет своего имени.
 
-cmu-admin-flag-desc-commendations = Give out and manage commendations.
+cmu-admin-flag-desc-commendations = Выдавать и управлять похвалами.
 
-cmu-admin-flag-desc-mentorhelp = Receive and answer mentor help tickets. On its own, this is all a mentor needs.
+cmu-admin-flag-desc-mentorhelp = Получать и отвечать наставнику помогают билеты. Это все, что нужно наставнику.
 
-cmu-admin-flag-desc-host = Dangerous host-level powers, such as running server-side scripts and reloading prototypes. Only for server hosts.
+cmu-admin-flag-desc-host = Опасные возможности хоста, такие как запуск сценариев на стороне сервера и перезагрузка прототипов. Только для серверных хостов.
 
-cmu-admin-flag-desc-rmcmaintainer = RMC maintainer test commands. Nothing currently uses this flag.
+cmu-admin-flag-desc-rmcmaintainer = RMC Контрольные команды. В настоящее время этот флаг не используется.
 
-cmu-admin-flag-desc-adminghost = RMC admin ghost permission. Nothing currently uses this flag.
+cmu-admin-flag-desc-adminghost = RMC Админ разрешение призрака. В настоящее время этот флаг не используется.
 
-cmu-admin-flag-desc-clans = Administer Yautja clans: ranks, members and the clan admin panel.
+cmu-admin-flag-desc-clans = Административные кланы Yautja: ряды, члены и группа администраторов клана.
 
-cmu-admin-flag-desc-adminalerts = Receive admin alerts, admin announcements and admin notification sounds (new player joins, faxes and similar).
+cmu-admin-flag-desc-adminalerts = Получайте предупреждения администратора, объявления администратора и звуки уведомлений администратора (новый игрок присоединяется, факсы и тому подобное).
 
-cmu-admin-flag-desc-playerlist = Receive the admin player list, which shows who is an antagonist. Without it the admin menu's player list stays empty.
+cmu-admin-flag-desc-playerlist = Получите список игроков администратора, который показывает, кто является антагонистом. Без него список игроков в меню администратора остается пустым.
 
-cmu-admin-flag-desc-ghostsenses = As a ghost: hear all speech regardless of range, see a Yautja's real name through its mask, and use dead chat even while it's disabled.
+cmu-admin-flag-desc-ghostsenses = Как призрак: слушайте любую речь, независимо от диапазона, смотрите настоящее имя Яутджи через его маску и используйте мертвый чат, даже когда он отключен.
 
-cmu-admin-flag-desc-freezoom = Move and zoom the camera freely while playing, not just as a ghost.
+cmu-admin-flag-desc-freezoom = Двигайтесь и увеличивайте камеру свободно во время игры, а не просто как призрак.
 
-cmu-admin-flag-desc-staff = Counts as on-duty staff: listed in adminwho and showadmins, counts as an admin online for vote rules, exempt from the player cap, AFK kicks, votekicks and multi-server kicks, and tracks admin playtime.
+cmu-admin-flag-desc-staff = Засчитывается как дежурный персонал: перечисленный в администраторе, который и Showadmins, рассчитывается как администратор онлайн для правил голосования, освобождается от кепки игрока, ударов AFK, ударов голосов и многосерверных ударов и отслеживает время игры администратора.

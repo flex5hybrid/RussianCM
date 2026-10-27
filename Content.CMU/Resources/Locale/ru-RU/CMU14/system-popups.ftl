@@ -1,5 +1,5 @@
-salvage-spawner-rummage = You rummage through the debris...
+salvage-spawner-rummage = Ты рылся в обломках...
 
-salvage-spawner-found = You find something worth salvaging!
+salvage-spawner-found = Вы найдете что-то стоящее спасения!
 
-cmu-fusion-cell-expired = The fusion cell sputters and dies — it has expired.
+cmu-fusion-cell-expired = Слияние клеток распыляется и погибает — оно истекло.

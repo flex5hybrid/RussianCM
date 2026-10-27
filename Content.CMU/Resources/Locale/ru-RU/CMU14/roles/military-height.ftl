@@ -1,13 +1,13 @@
-cmu-role-military-age = Character must be { $max } years old or younger.
+cmu-role-military-age = Характер должен быть { $max } лет или моложе.
 
-cmu-role-military-height = Character must be between { $min } and { $max } tall (closest: { $closest }).
+cmu-role-military-height = Характер должен быть между { $min } и { $max } высокий (ближайший: { $closest }).
 
-cmu-role-military-weight = Character must weigh { $range } lbs at { $height } for their sex and age.
+cmu-role-military-weight = Характер должен весить { $range } на { $height } для их пола и возраста.
 
-cmu-role-military-weight-alternatives = Or instead, { $fixes }.
+cmu-role-military-weight-alternatives = Или вместо этого, { $fixes }.
 
-cmu-role-military-fix-height = be { $height } tall
+cmu-role-military-fix-height = быть { $height } высокий
 
-cmu-role-military-fix-age = be { $age } years old
+cmu-role-military-fix-age = быть { $age } возраст
 
-cmu-role-military-fix-or = {" "}or{" "}
+cmu-role-military-fix-or = {" "}или{" "}

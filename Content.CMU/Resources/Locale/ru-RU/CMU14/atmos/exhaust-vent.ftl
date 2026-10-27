@@ -1,11 +1,11 @@
-cmu-exhaust-vent-state-open = Stack open, discharging.
+cmu-exhaust-vent-state-open = Откройте стек, разрядитесь.
 
-cmu-exhaust-vent-state-closed = Stack closed.
+cmu-exhaust-vent-state-closed = Стек закрыт.
 
-cmu-exhaust-vent-state-blocked = No open sky above this stack; it cannot discharge.
+cmu-exhaust-vent-state-blocked = Никакого открытого неба над этой стопкой; она не может разрядиться.
 
-cmu-exhaust-vent-open = open
+cmu-exhaust-vent-open = открытый
 
-cmu-exhaust-vent-closed = closed
+cmu-exhaust-vent-closed = закрыто
 
-cmu-exhaust-vent-toggle-state = You use the screwdriver to {$state} the exhaust vent.
+cmu-exhaust-vent-toggle-state = Вы используете отвертку для {$state} Вентиляционное отверстие.

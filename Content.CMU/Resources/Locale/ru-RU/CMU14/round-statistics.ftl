@@ -1,137 +1,137 @@
-cmu-round-stats-title = CMU Round Outcomes
+cmu-round-stats-title = CMU Итоги раунда
 
-cmu-round-stats-heading = Operational Outcomes
+cmu-round-stats-heading = Операционные результаты
 
-cmu-round-stats-loading = Loading recorded history…
+cmu-round-stats-loading = Загрузка записанной истории...
 
-cmu-round-stats-failed = Could not load history. Refresh to retry.
+cmu-round-stats-failed = Не смог загрузить историю. Перезагрузить.
 
-cmu-round-stats-refresh = Refresh
+cmu-round-stats-refresh = Обновить
 
-cmu-round-stats-back-planets = Back to planets
+cmu-round-stats-back-planets = Вернуться к планетам
 
-cmu-round-stats-showcase = Showcase
+cmu-round-stats-showcase = Витрина
 
-cmu-round-stats-planets = Planets
+cmu-round-stats-planets = планеты
 
-cmu-round-stats-population = Population
+cmu-round-stats-population = Население
 
-cmu-round-stats-threats = Threats
+cmu-round-stats-threats = угрозы
 
-cmu-round-stats-matchups = Matchups
+cmu-round-stats-matchups = Мачуп
 
-cmu-round-stats-archive = Round archive
+cmu-round-stats-archive = Круглый архив
 
-cmu-round-stats-history = { $count } saved endings · latest saved round #{ $round } · records since { $date }
+cmu-round-stats-history = { $count } Сохраненные концовки · последний сохраненный раунд #{ $round } Записи с тех пор { $date }
 
-cmu-round-stats-history-note = Round IDs count server rounds. This archive counts saved endings for Distress Signal, Insurgency, Colony Fall and Force on Force. Earlier or unrecorded rounds are not backfilled.
+cmu-round-stats-history-note = Круглые идентификаторы считают раунды сервера. Этот архив содержит сохраненные окончания для Distress Signal, Insurgency, Colony Fall и Force on Force. Ранние или незаписанные раунды не заполняются.
 
-cmu-round-stats-force-on-force = Force on Force
+cmu-round-stats-force-on-force = Сила против силы
 
-cmu-round-stats-opfor = Opfor
+cmu-round-stats-opfor = Оппорт
 
-cmu-round-stats-fof-govfor-victory = Govfor victory
+cmu-round-stats-fof-govfor-victory = Победа Говфора
 
-cmu-round-stats-fof-opfor-victory = Opfor victory
+cmu-round-stats-fof-opfor-victory = Опережая победу
 
-cmu-round-stats-inspect = Inspect breakdown
+cmu-round-stats-inspect = Проверить поломку
 
-cmu-round-stats-previous = Previous
+cmu-round-stats-previous = Предыдущий
 
-cmu-round-stats-next = Next
+cmu-round-stats-next = Следующий
 
-cmu-round-stats-page = Page { $page } / { $pages } · { $count } results
+cmu-round-stats-page = Страница { $page } / { $pages } · { $count } результаты
 
-cmu-round-stats-wins = { $count } wins
+cmu-round-stats-wins = { $count } победа
 
-cmu-round-stats-counts = { $total } endings · { $decided } decided · { $draws } draws · { $unknown } unknown
+cmu-round-stats-counts = { $total } окончаниях · { $decided } решено { $draws } жребий · { $unknown } неизвестно
 
-cmu-round-stats-average = Average duration · { $duration }
+cmu-round-stats-average = Средняя продолжительность; { $duration }
 
-cmu-round-stats-no-planets = No planet metadata recorded for this selection.
+cmu-round-stats-no-planets = Никаких метаданных о планетах, записанных для этого отбора.
 
-cmu-round-stats-missing-planets = { $count } endings have no planet metadata.
+cmu-round-stats-missing-planets = { $count } Концы не имеют метаданных о планетах.
 
-cmu-round-stats-population-note = Recorded player count at round end. Each band shows its own decided win rate and sample size.
+cmu-round-stats-population-note = Записанный игрок считает в конце раунда. Каждая группа показывает свою собственную ставку выигрыша и размер выборки.
 
-cmu-round-stats-players = { $band } players
+cmu-round-stats-players = { $band } игроки
 
-cmu-round-stats-share = { $rate } of endings in this selection
+cmu-round-stats-share = { $rate } Окончания в этом выборе
 
-cmu-round-stats-empty = No recorded endings match this selection.
+cmu-round-stats-empty = Никакие записанные окончания не соответствуют этому выбору.
 
-cmu-round-stats-missing-threats = { $count } endings have no selected threat recorded.
+cmu-round-stats-missing-threats = { $count } Окончания не имеют зарегистрированной выбранной угрозы.
 
-cmu-round-stats-platoon-threat = Platoon vs threat
+cmu-round-stats-platoon-threat = Платон против угрозы
 
-cmu-round-stats-platoon-platoon = Platoon vs platoon
+cmu-round-stats-platoon-platoon = Платон против взвода
 
-cmu-round-stats-missing-pairings = { $count } endings have no complete pairing for this view.
+cmu-round-stats-missing-pairings = { $count } Окончания не имеют полной пары для этой точки зрения.
 
-cmu-round-stats-matchup-note = Rates follow the named mode factions. Platoon names identify the recorded pairing; small samples can be misleading.
+cmu-round-stats-matchup-note = Ставки следуют за названными модными фракциями. Названия взводов идентифицируют записанное сопряжение; небольшие образцы могут вводить в заблуждение.
 
-cmu-round-stats-back = Back to matchups
+cmu-round-stats-back = Назад к матчам
 
-cmu-round-stats-no-pairings = No recorded pairings for this view.
+cmu-round-stats-no-pairings = Никаких записанных пар для этой точки зрения.
 
 cmu-round-stats-pair = { $platoon } vs { $opponent }
 
-cmu-round-stats-search = Search
+cmu-round-stats-search = Поиск
 
-cmu-round-stats-search-placeholder = Round ID, planet ID, platoon ID, threat ID or source…
+cmu-round-stats-search-placeholder = Круглый ID, идентификатор планеты, идентификатор взвода, идентификатор угрозы или источник...
 
 cmu-round-stats-round = #{ $round } · { $winner } · { $outcome }
 
-cmu-round-stats-round-detail = { $planet } · { $players } players · { $duration } · { $date } UTC
+cmu-round-stats-round-detail = { $planet } · { $players } Игроки · { $duration } · { $date } UTC
 
-cmu-round-stats-source = Recorded source: { $source }
+cmu-round-stats-source = Записанный источник: { $source }
 
-cmu-round-stats-round-pair = GOVFOR: { $govfor } / OPFOR: { $opfor } / Threat: { $threat }
+cmu-round-stats-round-pair = GOVFOR: { $govfor } / OPFOR: { $opfor } Угроза: { $threat }
 
-cmu-round-stats-details = Show / hide details
+cmu-round-stats-details = Показать / скрыть детали
 
-cmu-round-stats-back-to = ← Back to { $section }
+cmu-round-stats-back-to = ← Вернуться к { $section }
 
-cmu-round-stats-back-hint = Return to the previous list and position.
+cmu-round-stats-back-hint = Вернитесь к предыдущему списку и позиции.
 
 cmu-round-stats-browse-level = 01 / BROWSE
 
-cmu-round-stats-detail-level = 02 / DETAIL
+cmu-round-stats-detail-level = 02 / ДЕТАЙЛ
 
-cmu-round-stats-ending-count = { $count } recorded endings
+cmu-round-stats-ending-count = { $count } Записанные окончания
 
-cmu-round-stats-location = Location
+cmu-round-stats-location = Расположение
 
-cmu-round-stats-endings = Endings
+cmu-round-stats-endings = Завершение
 
-cmu-round-stats-avg-time = Avg. time
+cmu-round-stats-avg-time = Авг. время
 
-cmu-round-stats-duration = Duration
+cmu-round-stats-duration = Продолжительность
 
-cmu-round-stats-decided = Decided
+cmu-round-stats-decided = Решено
 
-cmu-round-stats-decided-count = { $count } decided
+cmu-round-stats-decided-count = { $count } решение
 
-cmu-round-stats-draw = Draw
+cmu-round-stats-draw = рисовать
 
-cmu-round-stats-unknown = Unknown
+cmu-round-stats-unknown = неизвестный
 
-cmu-round-stats-matrix-caption = { $side } win rate · decided wins beneath · select a cell for details
+cmu-round-stats-matrix-caption = { $side } Показатель выигрыша · решительные победы под · выберите ячейку для деталей
 
-cmu-round-stats-platoon-opponent = Platoon / opponent
+cmu-round-stats-platoon-opponent = Платон / Противник
 
-cmu-round-stats-no-pairing = No recorded pairing.
+cmu-round-stats-no-pairing = Никаких записей о спаривании.
 
-cmu-round-stats-location-file = LOCATION FILE
+cmu-round-stats-location-file = Местонахождение
 
-cmu-round-stats-population-file = POPULATION FILE
+cmu-round-stats-population-file = ФИЛЬ ПОПУЛЯЦИИ
 
-cmu-round-stats-threat-file = THREAT FILE
+cmu-round-stats-threat-file = Ужасная пленка
 
-cmu-round-stats-matchup-file = MATCHUP FILE
+cmu-round-stats-matchup-file = ФИЛЬ МАТЧУП
 
-cmu-round-stats-round-file = ROUND FILE
+cmu-round-stats-round-file = Круглый стол
 
-cmu-round-stats-round-label = Round
+cmu-round-stats-round-label = Круглый
 
-cmu-round-stats-winner = Winner
+cmu-round-stats-winner = победитель

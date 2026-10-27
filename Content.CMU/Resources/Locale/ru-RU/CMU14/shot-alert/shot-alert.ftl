@@ -1,5 +1,5 @@
-cmu-shot-alert-gunfire = SHOTS FIRED detected near {$location}.
+cmu-shot-alert-gunfire = Фирмы обнаружены вблизи {$location}.
 
-cmu-shot-alert-explosion = EXPLOSION detected near {$location}.
+cmu-shot-alert-explosion = Обнаружено вблизи {$location}.
 
-cmu-shot-alert-unknown-location = an unknown location
+cmu-shot-alert-unknown-location = Неизвестное местоположение

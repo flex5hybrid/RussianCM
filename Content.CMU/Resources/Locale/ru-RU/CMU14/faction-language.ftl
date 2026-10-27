@@ -1,6 +1,6 @@
-faction-language-picker-title = Choose Faction Language
+faction-language-picker-title = Выберите язык фракции
 
-faction-language-picker-title-faction = Choose Language | { $faction }
+faction-language-picker-title-faction = Выберите язык { $faction }
 
-faction-language-picker-description = Choose a language for your faction.
-    All members will speak and understand it.
+faction-language-picker-description = Выберите язык для своей фракции.
+    Все участники будут говорить и понимать это.

@@ -1,23 +1,23 @@
-alliance-console-title = Alliance Console
+alliance-console-title = Консоль Альянса
 
-alliance-console-faction-title = Alliance Console — { $faction }
+alliance-console-faction-title = Консоль Альянса — { $faction }
 
-alliance-console-subtitle = Set the standing of third-party factions.
+alliance-console-subtitle = Установить статус сторонних фракций.
 
-alliance-console-status-neutral = Neutral
+alliance-console-status-neutral = нейтральный
 
-alliance-console-status-friendly = Friendly
+alliance-console-status-friendly = дружелюбный
 
-alliance-console-status-hostile = Hostile
+alliance-console-status-hostile = враждебный
 
-alliance-console-crt-heading = ALLIANCE COMMAND
+alliance-console-crt-heading = Команды Альянса
 
-alliance-console-crt-subheading = THIRD-PARTY FACTION STANDINGS
+alliance-console-crt-subheading = THIRD-PARTY ФАКЦИОННЫЕ ОСТАВКИ
 
-alliance-console-crt-subheading-faction = { $faction } // THIRD-PARTY STANDINGS
+alliance-console-crt-subheading-faction = { $faction } // THIRD-PARTY стоячие позиции
 
-alliance-console-crt-empty = NO THIRD-PARTY FACTIONS ON RECORD
+alliance-console-crt-empty = НЕТ THIRD-PARTY ФАКЦИИ ПО РЕКОРДУ
 
-alliance-console-crt-standing = STANDING: { $status }
+alliance-console-crt-standing = Стоять: { $status }
 
-alliance-console-crt-summary = FRIENDLY { $friendly } // NEUTRAL { $neutral } // HOSTILE { $hostile }
+alliance-console-crt-summary = Дружественно { $friendly } NEUTRAL { $neutral } // ХОСТИЛЬ { $hostile }

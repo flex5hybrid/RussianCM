@@ -1,9 +1,9 @@
-cmu-tank-cook-off-unrepairable = The ammunition has cooked off. The tank is destroyed beyond repair.
+cmu-tank-cook-off-unrepairable = Боеприпасы уже готовы. Танк был уничтожен после ремонта.
 
-cmu-vehicle-wreck-unrepairable = The vehicle's frame has been destroyed beyond repair.
+cmu-vehicle-wreck-unrepairable = Рама автомобиля была разрушена после ремонта.
 
-cmu-tank-cook-off-entry-blocked = The tank's ammunition is cooking off. You cannot enter the wreck.
+cmu-tank-cook-off-entry-blocked = Боеприпасы танка готовятся. Вы не можете войти в обломки.
 
-cmu-vehicle-totaled-unrepairable = The orbital strike wrecked it. The vehicle is beyond repair.
+cmu-vehicle-totaled-unrepairable = Орбитальный удар разрушил его. Автомобиль находится вне ремонта.
 
-cmu-vehicle-totaled-entry-blocked = The hull is gutted. There is nothing left in there to crew.
+cmu-vehicle-totaled-entry-blocked = Корпус потрошен. Там ничего не осталось для экипажа.

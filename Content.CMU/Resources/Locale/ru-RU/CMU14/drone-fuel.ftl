@@ -1,11 +1,11 @@
-cmu-flamer-fuel-warning = [color=orange]Unstable fuel is stressing the drive and weapon systems. A tank rupture will destroy this drone.[/color]
+cmu-flamer-fuel-warning = [color=orange]Нестабильное топливо подчеркивает привод и системы вооружения. Разрыв танка уничтожит этот беспилотник.[/color]
 
-cmu-flamer-fuel-ruined = The fuel cook-off has permanently destroyed the chassis and electronics.
+cmu-flamer-fuel-ruined = Приготовление топлива навсегда уничтожило шасси и электронику.
 
-cmu-flamer-fuel-lockout = The drone's fuel system is overheating or its controls have shorted out!
+cmu-flamer-fuel-lockout = Топливная система дрона перегревается или его управление затормозилось!
 
-cmu-flamer-fuel-submerged = The flamer nozzle is under water and won't light!
+cmu-flamer-fuel-submerged = Сопло пламени находится под водой и не загорится!
 
-cmu-flamer-fuel-corrosion = Corrosive fuel has permanently reduced the effectiveness of repairs.
+cmu-flamer-fuel-corrosion = Коррозионное топливо навсегда снизило эффективность ремонта.
 
-cmu-flamer-fuel-secondary = The spilled fuel sputters and begins to flare again!
+cmu-flamer-fuel-secondary = Пролитое топливо разбрызгивается и снова начинает вспыхивать!

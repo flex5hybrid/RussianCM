@@ -1,13 +1,13 @@
-cmu-barotrauma-low-1 = The air is too thin! Your body aches as the pressure drops away!
+cmu-barotrauma-low-1 = Воздух слишком тонкий! Ваше тело болит, когда давление падает!
 
-cmu-barotrauma-low-2 = Your ears pop painfully and your chest feels tight!
+cmu-barotrauma-low-2 = Ваши уши лопаются болезненно, и ваша грудь чувствует себя плотно!
 
-cmu-barotrauma-low-3 = You feel light-headed as the low pressure pulls at you!
+cmu-barotrauma-low-3 = Вы чувствуете себя легкомысленным, когда низкое давление тянет вас!
 
-cmu-barotrauma-low-4 = Everything throbs dully as the pressure around you falls away!
+cmu-barotrauma-low-4 = Все тупо пульсирует, когда давление вокруг вас падает!
 
-cmu-barotrauma-high-1 = The pressure squeezes hard against your chest and head!
+cmu-barotrauma-high-1 = Давление сильно сдавливает вашу грудь и голову!
 
-cmu-barotrauma-high-2 = Your ears ring and throb under the heavy pressure!
+cmu-barotrauma-high-2 = Ваши уши звонят и пульсируют под сильным давлением!
 
-cmu-barotrauma-high-3 = The air presses in on you from every side!
+cmu-barotrauma-high-3 = Воздух давит на вас со всех сторон!

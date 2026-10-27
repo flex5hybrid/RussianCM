@@ -1,1 +1,1 @@
-tiles-cmu-open-air-sealed = open air (sealed)
+tiles-cmu-open-air-sealed = Открытый воздух (Sealed)

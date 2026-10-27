@@ -1,3 +1,3 @@
-gas-phoron = Phoron
+gas-phoron = Форон
 
 gas-phoron-abbreviation = Ph

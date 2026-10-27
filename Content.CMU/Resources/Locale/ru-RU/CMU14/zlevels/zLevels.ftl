@@ -39,14 +39,14 @@ cmu-zlevel-ladder-retract-finish = Вы складываете лестницу.
 # AU14 (переработка строительства): этап 1 цикла взгляда вверх (слабый силуэт верхнего уровня).
 cmu-zlevel-faint-up-enabled = Вы бросаете взгляд вверх и едва различаете уровень над собой.
 
-cmu-zlevel-ladder-throw-start-self = You get ready to toss {THE($item)} {$direction} the ladder.
+cmu-zlevel-ladder-throw-start-self = Приготовьтесь бросить {THE($item)} {$direction} Лестница.
 
-cmu-zlevel-ladder-throw-start-others = {$user} gets ready to toss {THE($item)} {$direction} the ladder.
+cmu-zlevel-ladder-throw-start-others = {$user} Готовьтесь бросать {THE($item)} {$direction} Лестница.
 
-cmu-zlevel-ladder-throw-finish-self = You toss {THE($item)} {$direction} the ladder.
+cmu-zlevel-ladder-throw-finish-self = Ты бросаешь {THE($item)} {$direction} Лестница.
 
-cmu-zlevel-ladder-throw-finish-others = {$user} tosses {THE($item)} {$direction} the ladder.
+cmu-zlevel-ladder-throw-finish-others = {$user} бросать {THE($item)} {$direction} Лестница.
 
-cmu-zlevel-ladder-throw-up = up
+cmu-zlevel-ladder-throw-up = вверх
 
-cmu-zlevel-ladder-throw-down = down
+cmu-zlevel-ladder-throw-down = вниз

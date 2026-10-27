@@ -1,206 +1,206 @@
-ent-CMURiderHatchling = writhing parasite
-    .desc = A small, writhing thing that moves far too deliberately for an animal.
+ent-CMURiderHatchling = извивающийся паразит
+    .desc = Маленькая, извилистая вещь, которая движется слишком далеко для животного.
 
-ghost-role-information-rider-name = the writhing parasite
+ghost-role-information-rider-name = извивающийся паразит
 
-ghost-role-information-rider-description = A catalogued-impossible Weyland-Yutani hatchling. Slip inside a sleeping, willing or dead host, whisper from the dark, and never be seen. Bullets bounce off the hide; fire is the only thing that kills it quickly.
+ghost-role-information-rider-description = Невозможный в каталоге птенец Вейланд-Ютани. Поскользнитесь внутри спящего, готового или мертвого хозяина, прошептайте из темноты, и вас никогда не увидят. Пули отскакивают от шкуры; огонь — единственное, что убивает его быстро.
 
-ghost-role-information-rider-rules = You are a solo antagonist. Hide, ride, and scheme. You may kill to survive or to serve a scheme, not for revenge.
+ghost-role-information-rider-rules = Вы сольный антагонист. Прячься, кататься и планировать. Вы можете убивать, чтобы выжить или служить схеме, а не для мести.
 
-roles-antag-rider-role-name = The Rider
+roles-antag-rider-role-name = Всадник
 
-roles-antag-rider-objective = Ride someone to the end of the round without ever being seen.
+roles-antag-rider-objective = Поезжайте с кем-нибудь до конца раунда, не будучи замеченным.
 
-language-RiderCant-name = The Hum
+language-RiderCant-name = Гум
 
-language-RiderCant-description = A low vibration in the chest, felt more than heard.
+language-RiderCant-description = Низкая вибрация в груди, ощущается больше, чем слышится.
 
-rider-role-greeting = You are the thing that got out. Small. Old. Clever.
-    Weyland-Yutani grew you in a jar and catalogued you as HOLOTYPE W-7, and the lab that did it no longer admits you exist.
-    You have no body worth the name - find a host, slip inside, and stay hidden.
-    You cannot force them for long - you can only make the alternative worse.
-    Whisper. Wait. Choose your hosts like you choose your moments: both must hold.
-    Information is your currency: what hosts mutter, what your borrowed eyes see.
-    Trade it, leverage it, sell one host's secret to another. You play people, not levers.
+rider-role-greeting = Ты то, что вышло. Маленький. Старый. Умно.
+    Вейланд-Ютани вырастил вас в банке и каталогизировал как HOLOTYPE. W-7И лаборатория, которая это сделала, больше не признает, что вы существуете.
+    У вас нет тела, достойного названия - найдите хозяина, проскользните внутрь и оставайтесь скрытыми.
+    Их нельзя заставлять долго — можно только усугубить альтернативу.
+    Шепотом. Подожди. Выберите своих хозяев, как вы выбираете свои моменты: оба должны держаться.
+    Информация — это ваша валюта: что говорят хозяева, что видят ваши заемные глаза.
+    Торгуйте им, пользуйтесь им, продавайте секрет одного хоста другому. Ты играешь людей, а не рычаги.
 
-rider-latch-invalid = Your hooks find no purchase. Not this one.
+rider-latch-invalid = Твои крючки не купятся. Не этот.
 
-rider-latch-riding = You already have a host.
+rider-latch-riding = У вас уже есть хозяин.
 
-rider-latch-start = You coil, ready to leap...
+rider-latch-start = Ты катишься, готов прыгнуть...
 
-rider-latch-failed = They shifted. You missed.
+rider-latch-failed = Они сдвинулись. Ты пропустил.
 
-rider-host-latched = Something is inside you. It whispers. Doctors could cut it out. Or you can listen.
+rider-host-latched = Что-то внутри тебя. Он шепчет. Врачи могут его вырезать. Или ты можешь слушать.
 
-rider-host-latched-wrap = *"Something is inside you. It whispers. Doctors could cut it out. Or you can listen."*
+rider-host-latched-wrap = Что-то внутри тебя. Он шепчет. Врачи могут его вырезать. Или можешь слушать.
 
-rider-no-host = You have no host.
+rider-no-host = У тебя нет хозяина.
 
-rider-grip-low = Your grip is too weak for that.
+rider-grip-low = Твоя хватка слишком слаба для этого.
 
-rider-grip-name = Grip
+rider-grip-name = Грипп
 
-rider-grip-desc = How tightly the grip. Abilities spend, resistance drains.
+rider-grip-desc = Как крепко хватка. Способности расходуются, сопротивление истощается.
 
-rider-whisper-wrap = Something whispers: { $text }
+rider-whisper-wrap = Что-то шепчет: { $text }
 
-rider-whisper-echo = You whisper to your host: { $text }
+rider-whisper-echo = Вы шепчете своему хозяину: { $text }
 
-rider-whisper-ghost = {"["}color=#3cb371][font size=14][bold]Rider Whisper ({$rider} -> {$host}):[/bold] "{$message}"[/font][/color]
+rider-whisper-ghost = {"["}Цвет = #3cb371][font size=14][bold]Всадник шепчет (){$rider} -> {$host}):[/bold] "{$message}"[/font][/color]
 
-rider-speak-blocked = Their throat will not answer.
+rider-speak-blocked = Их горло не отвечает.
 
-rider-punish-host = Something burns behind your eyes!
+rider-punish-host = Что-то горит у тебя за глазами!
 
-rider-mute-cast = You clamp your host's throat shut.
+rider-mute-cast = Вы зажимаете горло хозяина.
 
-rider-mute-host = Your throat seizes. No sound comes out.
+rider-mute-host = У тебя перехватило горло. Звук не выходит.
 
-rider-mute-blocked = Your throat refuses to make a sound.
+rider-mute-blocked = Горло отказывается издавать звуки.
 
-rider-mute-end = The clamp inside your throat lets go.
+rider-mute-end = Зажим в горле отпускает.
 
-rider-mute-release = You loosen your hold on your host's throat.
+rider-mute-release = Ты ослабляешь хватку на горле хозяина.
 
-rider-seize-host = Your body moves on its own. You watch from somewhere behind your own eyes.
+rider-seize-host = Ваше тело движется самостоятельно. Ты смотришь откуда-то из-за собственных глаз.
 
-rider-seize-end-host = Control floods back. Your hands are yours again - for now.
+rider-seize-end-host = Контролируйте наводнения. Теперь ваши руки снова ваши.
 
-rider-eject-loud = A small, writhing thing bursts from { $host }!
+rider-eject-loud = Маленькая, извивающаяся вещь вырывается из { $host }!
 
-rider-resist-start = { $host } strains and twitches, fighting something no one else can see!
+rider-resist-start = { $host } Напрягается и дергается, сражаясь с тем, что никто больше не может видеть!
 
-rider-soothe = The pain goes quiet. You feel oddly calm.
+rider-soothe = Боль проходит тихо. Чувствуешь себя странно спокойно.
 
-rider-soothe-end = The calm lifts. You feel everything again.
+rider-soothe-end = Спокойный подъем. Ты снова все чувствуешь.
 
-rider-grip-tight = Whatever is inside you has gone very, very still. That is worse.
+rider-grip-tight = Все, что находится внутри вас, прошло очень, очень тихо. Это еще хуже.
 
-rider-grip-loose = Something inside you loosens its grip, just slightly.
+rider-grip-loose = Что-то внутри тебя немного ослабляет его хватку.
 
-rider-grip-thread = The presence inside you is barely there - a thread of what it was.
+rider-grip-thread = Присутствие внутри вас едва ли есть — нить того, чем оно было.
 
-rider-verb-inspect = Inspect rider
+rider-verb-inspect = Проверить всадника
 
-rider-verb-eject = Force-eject rider
+rider-verb-eject = Всадник с силой выброса
 
-rider-admin-inspect = Rider: {$rider}
-    Host: {$host}
-    Grip: {$grip}
-    Hosts ridden: {$hosts}
-    Total ride time: {$minutes} min
+rider-admin-inspect = Всадник: {$rider}
+    Ведущий: {$host}
+    Грип: {$grip}
+    Ведущие: {$hosts}
+    Общее время езды: {$minutes} мин.
 
-rider-vent-examine = A small shape slips into the vent and is gone.
+rider-vent-examine = Небольшая форма проскальзывает в вентиляцию и уходит.
 
-rider-squeeze-through = You flatten yourself and pour through the gap.
+rider-squeeze-through = Ты сглаживаешь себя и выливаешься через щель.
 
-rider-offer-sent = You press close and put the question to them.
+rider-offer-sent = Вы нажимаете на них и ставите вопрос.
 
-rider-offer-pending = You have already asked. They are thinking.
+rider-offer-pending = Вы уже спросили. Они думают.
 
-rider-offer-title = Something asks
+rider-offer-title = Что-то спрашивает
 
-rider-offer-message = Something small and cold presses against you, wanting in. It whispers of what it can offer. Let it inside?
+rider-offer-message = Что-то маленькое и холодное давит на тебя, желая войти. Он шепчет о том, что может предложить. Впусти его внутрь?
 
-rider-offer-accept = Let it in
+rider-offer-accept = Впусти его.
 
-rider-offer-refuse = Refuse
+rider-offer-refuse = отказываться
 
-rider-offer-refused = They refused you.
+rider-offer-refused = Они отказались от тебя.
 
-rider-offer-far = They are no longer within your reach.
+rider-offer-far = Они больше не находятся в пределах вашей досягаемости.
 
-rider-ghost-host-name = Stirring corpse
+rider-ghost-host-name = Помешивающийся труп
 
-rider-ghost-host-description = A dead body that has stopped being dead. Something coiled inside it wants a driver.
+rider-ghost-host-description = Тело, которое перестало быть мертвым. Что-то закрученное внутри хочет водитель.
 
-rider-ghost-host-rules = You are the host, not the thing inside it. It whispers, hurts, and bargains. Resist, bargain, or cooperate as your character would.
+rider-ghost-host-rules = Вы являетесь хозяином, а не вещью внутри него. Он шепчет, ранит и торгуется. Сопротивляйтесь, торгуйте или сотрудничайте, как ваш персонаж.
 
-rider-ghost-host-takeover = Cold. You remember dying, and then a second heartbeat that is not yours. Something is in your skull.
+rider-ghost-host-takeover = Холодно. Ты помнишь, как умирала, а потом второе сердцебиение, которое не твое. Что-то у тебя в черепе.
 
-cmu-summary-detail-rider-riding = Rode {$hosts} host(s) for {$minutes} minutes and was still riding someone at round end.
+cmu-summary-detail-rider-riding = Дорога {$hosts} хозяин(ы) для {$minutes} Несколько минут и все еще катался на ком-то в конце раунда.
 
-cmu-summary-detail-rider-free = Rode {$hosts} host(s) for {$minutes} minutes and ended the round hostless.
+cmu-summary-detail-rider-free = Дорога {$hosts} хозяин(ы) для {$minutes} Минуты и закончился раунд без хозяев.
 
-rider-tell-mild = { $entName } rubs the back of their neck.
+rider-tell-mild = { $entName } Потирают заднюю часть шеи.
 
-rider-tell-medium = { $entName } twitches and loses the thread of their sentence.
+rider-tell-medium = { $entName } дергается и теряет нить своего предложения.
 
-rider-tell-heavy = { $entName } shudders hard, hands trembling.
+rider-tell-heavy = { $entName } Твердо вздрагивает, руки дрожат.
 
-rider-examine-mild = They keep touching their neck, like something itches under the skin.
+rider-examine-mild = Они продолжают прикасаться к шее, как будто что-то чешется под кожей.
 
-rider-examine-medium = Something is off - the pauses are wrong and the voice runs flat.
+rider-examine-medium = Что-то не так - паузы неправильные, и голос работает ровно.
 
-rider-examine-heavy = Tremors, unfocused eyes, a face wrung-out from the inside.
+rider-examine-heavy = Тремор, несфокусированные глаза, лицо, вырванное изнутри.
 
-rider-analyzer-abnormal = The readout flickers. Something is slightly abnormal - cranial region.
+rider-analyzer-abnormal = Чтение мерцает. Что-то слегка ненормальное - черепная область.
 
-rider-analyzer-foreign = FOREIGN BODY DETECTED - cranial cavity. It is moving.
+rider-analyzer-foreign = Обнаружено чужое тело - черепная полость. Он движется.
 
-rider-crawl-residue = traces of an unknown biological film
+rider-crawl-residue = Следы неизвестного биологического фильма
 
-rider-extracted = A slick, finger-length thing drops out of the incision and hits the floor running!
+rider-extracted = Лёгкая штука длиной в палец выпадает из разреза и бежит по полу!
 
-rider-surge-refused = Only a willing host can be rewarded.
+rider-surge-refused = Только желающий может быть вознагражден.
 
-rider-surge-host = A cold flush floods your chest - pain gone, heartbeat huge, hands steady. The thing did this.
+rider-surge-host = Холодный прилив наводняет вашу грудь - боль прошла, сердцебиение огромно, руки устойчивы. Эта штука сделала это.
 
-rider-coax-host = Your aches quiet down and your wounds itch as they close. Something inside you did this.
+rider-coax-host = Ваши боли затихают, и ваши раны чешутся, когда они закрываются. Что-то внутри тебя сделало это.
 
-rider-sustain-host = Warmth spreads from your spine into every hurt. Bruises you never saw fade, and the pull inside you goes deeper, holding you together.
+rider-sustain-host = Тепло распространяется из позвоночника в каждую боль. Ушибы, которые вы никогда не видели, исчезают, и тяга внутри вас идет глубже, удерживая вас вместе.
 
-rider-flavor-hitchhiker = Tonight you are a hitchhiker: still be riding someone when the round ends. Patience is the whole game.
+rider-flavor-hitchhiker = Сегодня вечером вы автостопщик: все еще катаетесь на ком-то, когда заканчивается раунд. Терпение – это вся игра.
 
-rider-flavor-leapfrog = Tonight you are a leapfrog: ride three different hosts who were awake and steerable before the round ends. Sleepers do not count.
+rider-flavor-leapfrog = Сегодня вы прыжок: ездите на трех разных хозяев, которые были бодрыми и управляемыми до конца раунда. Спящие не считаются.
 
-rider-flavor-puppeteer = Tonight you are a puppeteer: when the round ends, be riding a host who carries the { $item }. Whisper, bargain, seize - their hands, your goal.
+rider-flavor-puppeteer = Сегодня вечером вы кукловод: когда раунд заканчивается, катайтесь на хозяине, который несет куклы. { $item }Шепни, торгуйся, хватай - свои руки, свою цель.
 
-rider-choir-hum = The choir hums at the edge of your thoughts: another of your kind, { $direction }, { $distance }.
+rider-choir-hum = Хор гудит на краю твоих мыслей: другой твой вид, { $direction }, { $distance }.
 
-rider-choir-close = close enough to touch
+rider-choir-close = достаточно близко, чтобы коснуться
 
-rider-choir-near = not far
+rider-choir-near = Не далеко
 
-rider-choir-far = far away
+rider-choir-far = далеко
 
-rider-choir-north = to the north
+rider-choir-north = к северу
 
-rider-choir-northeast = to the northeast
+rider-choir-northeast = к северо-востоку
 
-rider-choir-east = to the east
+rider-choir-east = на востоке
 
-rider-choir-southeast = to the southeast
+rider-choir-southeast = к юго-востоку
 
-rider-choir-south = to the south
+rider-choir-south = к югу
 
-rider-choir-southwest = to the southwest
+rider-choir-southwest = к юго-западу
 
-rider-choir-west = to the west
+rider-choir-west = на западе
 
-rider-choir-northwest = to the northwest
+rider-choir-northwest = к северо-западу
 
-cmu-summary-detail-rider-leapfrog-win = Leapt between {$credited} credited hosts over {$minutes} minutes and made the count.
+cmu-summary-detail-rider-leapfrog-win = Прыгнуть между {$credited} Кредитные хосты над {$minutes} Несколько минут и сделали счет.
 
-cmu-summary-detail-rider-leapfrog-fail = Rode {$hosts} host(s) for {$minutes} minutes but only {$credited} counted - the count was never made.
+cmu-summary-detail-rider-leapfrog-fail = Дорога {$hosts} хозяин(ы) для {$minutes} минуты, но только {$credited} Подсчитано - подсчет никогда не производился.
 
-cmu-summary-detail-rider-puppeteer-win = Steered a host true for {$minutes} minutes across {$hosts} host(s) - the puppeteer's goal was in hand at the end.
+cmu-summary-detail-rider-puppeteer-win = Управляйте хозяином истинно для {$minutes} несколько минут {$hosts} Хозяин(ы) - цель кукловода была в руках в конце.
 
-cmu-summary-detail-rider-puppeteer-fail = Rode {$hosts} host(s) for {$minutes} minutes but never steered the right hands to the goal.
+cmu-summary-detail-rider-puppeteer-fail = Дорога {$hosts} хозяин(ы) для {$minutes} минуты, но никогда не направлял правую руку к цели.
 
-ent-CMURiderLatchedMarker = writhing shape
+ent-CMURiderLatchedMarker = извилистая форма
 
-ent-CMURiderManifest = flickering parasite
+ent-CMURiderManifest = мерцающий паразит
 
-rider-locator-title = Rider locator
+rider-locator-title = Наездник
 
-rider-locator-follow = Jump to rider
+rider-locator-follow = Прыгай всадник
 
-rider-locator-free = free-roaming
+rider-locator-free = роуминг
 
-rider-grip-feel = Something inside you coils tighter.
+rider-grip-feel = Что-то внутри тебя закручивается сильнее.
 
-rider-mask-slip = Your hold falters. A wet click rolls off their tongue mid-word.
+rider-mask-slip = Твоя хватка колеблется. Мокрый щелчок сворачивает язык с середины слова.
 
-rider-offer-lapsed = The moment to let it in has passed.
+rider-offer-lapsed = Момент, чтобы впустить его, прошел.

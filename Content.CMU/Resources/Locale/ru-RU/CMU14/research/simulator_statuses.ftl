@@ -13,58 +13,58 @@ cmu-sim-status-stage-three-3 = РАСЧЁТ СИНТЕЗА
 cmu-sim-status-stage-three-4 = ИСКЛЮЧЕНИЕ НЕПРЕДВИДЕННЫХ ВАРИАНТОВ
 cmu-sim-status-stage-three-5 = ВЫЧИСЛЕНИЕ СВОЙСТВ РЕАГЕНТА
 
-research-sim-status-ready = READY
+research-sim-status-ready = Готовый
 
-research-sim-status-commencing = COMMENCING SIMULATION
+research-sim-status-commencing = ИСПОЛНИТЕЛЬНАЯ СИМУЛЬТАЦИЯ
 
-research-sim-status-pick-ready = SIMULATION COMPLETE - PICK A RECIPE
+research-sim-status-pick-ready = СИМУЛЯЦИОННЫЙ КОМПЛЕТ - ПИКАТЬ РЕЧЬ
 
 research-sim-status-done = SIMULATION COMPLETE - REPORT PRINTED
 
-research-sim-status-critfail = CRITICAL FAILURE - SIMULATION ABORTED
+research-sim-status-critfail = КРИТИЧЕСКИЙ ФАЙЛУР - СИМУЛЬТАЦИЯ
 
-research-sim-status-no-target = NO TARGET INSERTED
+research-sim-status-no-target = Никаких зацепок.
 
-research-sim-status-bad-target-data = TARGET DATA UNREADABLE
+research-sim-status-bad-target-data = ДАННЫЕ ТАРГЕТЫ НЕПРЕДОСТАВЛЯЮТСЯ
 
-research-sim-status-incomplete-target = TARGET DATA INCOMPLETE
+research-sim-status-incomplete-target = Неполный набор данных
 
-research-sim-status-target-corrupted = TARGET DATA CORRUPTED
+research-sim-status-target-corrupted = ТАРГЕТНЫЕ ДАННЫЕ КОРРУПТНЫЕ
 
-research-sim-status-target-destroyed = TARGET CHEMICAL LOCKED DOWN
+research-sim-status-target-destroyed = ТАРГЕТ ХИМИЧЕСКИЙ ОКРУЖЕННЫЙ
 
-research-sim-status-target-cannot-alter = TARGET CAN NOT BE ALTERED
+research-sim-status-target-cannot-alter = ТАРГЕТ не может быть изменен
 
-research-sim-status-target-no-complexity = TARGET TOO SIMPLE - NEEDS AT LEAST 2 PROPERTIES
+research-sim-status-target-no-complexity = ТАРГЕТ СЛИШКОМ ПРОСТОЙ - НЕОБХОДИМОСТИ 2 Ресурсы
 
-research-sim-status-unknown-catalysts = TARGET RECIPE HAS UNIDENTIFIED CATALYSTS
+research-sim-status-unknown-catalysts = ТАРГЕТНЫЙ ПРЕДСТАВЛЕНИЕ УСЛОВИЛЫЕ КАТАЛИСТЫ
 
-research-sim-status-unknown-components = TARGET RECIPE HAS UNIDENTIFIED COMPONENTS
+research-sim-status-unknown-components = ТАРГЕТНЫЙ ПРЕДОСТАВЛЕННЫЙ СОГЛАШЕНИЯ
 
-research-sim-status-no-target-picked = NO TARGET PROPERTY SELECTED
+research-sim-status-no-target-picked = Никакой контрактной собственности не выделено
 
-research-sim-status-unadjustable = TARGET PROPERTY CAN NOT BE ADJUSTED
+research-sim-status-unadjustable = ТАРГЕТНЫЙ СПОРТ НЕ МОЖЕТ ПРЕДСТАВЛЯТЬСЯ
 
-research-sim-status-insufficient-clearance-amplify = INSUFFICIENT CLEARANCE TO AMPLIFY FURTHER
+research-sim-status-insufficient-clearance-amplify = Неудобное объяснение для усиления
 
-research-sim-status-unable-amplify-further = TARGET PROPERTY AT MAXIMUM LEVEL
+research-sim-status-unable-amplify-further = Таргетная собственность на максимальном уровне
 
-research-sim-status-insufficient-funds = INSUFFICIENT RESEARCH CREDITS
+research-sim-status-insufficient-funds = Неэффективные исследовательские программы
 
-research-sim-status-no-reference = NO REFERENCE INSERTED
+research-sim-status-no-reference = Никаких обязательств
 
-research-sim-status-bad-reference-data = REFERENCE DATA UNREADABLE
+research-sim-status-bad-reference-data = ДАННЫЕ ОТВЕТСТВЕННОСТИ НЕВОЗМОЖНЫ
 
-research-sim-status-incomplete-reference = REFERENCE DATA INCOMPLETE
+research-sim-status-incomplete-reference = Неполный набор данных об ОТВЕТСТВИИ
 
-research-sim-status-reference-corrupted = REFERENCE DATA CORRUPTED
+research-sim-status-reference-corrupted = УТВЕРЖДЕННЫЕ ДАННЫЕ
 
-research-sim-status-reference-destroyed = REFERENCE CHEMICAL LOCKED DOWN
+research-sim-status-reference-destroyed = Химическая закрытая вода
 
-research-sim-status-no-reference-picked = NO REFERENCE PROPERTY SELECTED
+research-sim-status-no-reference-picked = Не было выделено никакой рабочей силы
 
-research-sim-status-reference-unadjustable = REFERENCE PROPERTY CAN NOT BE ADJUSTED
+research-sim-status-reference-unadjustable = ОТВЕТСТВЕННОСТЬ НЕ МОЖЕТ ПРАВИТЬСЯ
 
-research-sim-status-already-in-target = REFERENCE PROPERTY ALREADY IN TARGET
+research-sim-status-already-in-target = ОТВЕТСТВЕННОСТЬ В ТАРГЕТУ
 
-research-sim-status-inequal = TARGET AND REFERENCE PROPERTY LEVELS MUST BE EQUAL
+research-sim-status-inequal = ТАРГЕТ И ПРОФЕРЕНЦИОННЫЕ ПРАВИЛА ДОЛЖНЫ быть равными

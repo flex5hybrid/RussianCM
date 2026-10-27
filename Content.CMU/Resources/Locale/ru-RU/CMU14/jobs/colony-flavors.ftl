@@ -45,6 +45,6 @@ cmu-cmb-prefix-bureau-observer = OBS
 cmu-cmb-supervisors-bureau = Бюро колониальных маршалов
 cmu-cmb-rules-bureau-observer = Вы наблюдатель Бюро. Вы нейтральны ко всем фракциям. Наблюдайте, ведите записи и оказывайте медицинскую помощь там, где она необходима, но не принимайте ничью сторону в боевых действиях.
 
-cmu-colony-description-atmosian = Keep the colony breathing. Chase pressure drops, seal hull breaches, scrub the bad air out, and make every vented room livable again.
+cmu-colony-description-atmosian = Пусть колония дышит. Погоня за падением давления, уплотнение корпуса, вымывание плохого воздуха и снова сделать каждую вентилируемую комнату пригодной для жизни.
 
-cmu-colony-prefix-atmosian = ATMOS
+cmu-colony-prefix-atmosian = банкомат

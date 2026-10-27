@@ -102,4 +102,4 @@ cmu-asrs-budget-prefix = БЮДЖЕТ:
 cmu-asrs-after-prefix = ПОСЛЕ:
 cmu-asrs-conveyor-crate = ▥  ЯЩИК { $number }  //  ЗАПЕЧАТАН
 
-cmu-asrs-seal-stamp = { $code } // SEALED
+cmu-asrs-seal-stamp = { $code } // Опечатанный

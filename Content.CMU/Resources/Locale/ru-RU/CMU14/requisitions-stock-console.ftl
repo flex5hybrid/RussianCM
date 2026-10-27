@@ -82,43 +82,43 @@ ent-CMUTableReinforcedRequisitionDispenseSouth =
     .suffix = Выдача заказов, юг
     .desc = { ent-CMUTableReinforcedRequisitionDispenseBase.desc }
 
-cmu-req-stock-console-window-title = Requisitions Stock
+cmu-req-stock-console-window-title = Запасы реквизиций
 
-cmu-req-stock-console-refresh-button = Refresh
+cmu-req-stock-console-refresh-button = Обновить
 
 cmu-req-stock-console-summary = {$vendors} {$vendors ->
-    [one] vendor
-   *[other] vendors
-}, {$items} items, {$empty} out of stock
+    [one] продавец
+   *[other] поставщики
+}, {$items} предметы, {$empty} вне запасов
 
-cmu-req-stock-console-no-vendors = No automated requisitions vendors found on this ship.
+cmu-req-stock-console-no-vendors = Автоматических реквизиций на этом корабле не обнаружено.
 
-cmu-req-stock-console-unlimited = unlimited
+cmu-req-stock-console-unlimited = ограниченный
 
-cmu-req-stock-console-amount = {$amount} left
+cmu-req-stock-console-amount = {$amount} левый
 
 cmu-req-stock-console-amount-max = {$amount} / {$max}
 
-cmu-req-stock-console-search = Search
+cmu-req-stock-console-search = Поиск
 
-cmu-req-stock-console-of-max = of {$max}
+cmu-req-stock-console-of-max = из {$max}
 
-cmu-req-stock-console-heading = REQUISITIONS STOCK
+cmu-req-stock-console-heading = Рекомендации СТОК
 
-cmu-req-stock-console-search-placeholder = Search items...
+cmu-req-stock-console-search-placeholder = Поиск предметов...
 
-cmu-req-stock-console-low-only = LOW STOCK ONLY
+cmu-req-stock-console-low-only = Лишь застрял
 
-cmu-req-stock-console-footer = Live stock of this ship's requisitions vendors. Items at a quarter or less of their starting stock show as low.
+cmu-req-stock-console-footer = Живой запас поставщиков реквизиций этого корабля. Предметы на четверть или менее их начальных запасов показывают низкий уровень.
 
-cmu-req-stock-console-tag-out = { $count } OUT
+cmu-req-stock-console-tag-out = { $count } ВЫХОД
 
-cmu-req-stock-console-tag-low = { $count } LOW
+cmu-req-stock-console-tag-low = { $count } Низкий
 
-cmu-req-stock-console-tag-ok = ALL STOCKED
+cmu-req-stock-console-tag-ok = Все застряли
 
-cmu-req-stock-console-status-ok = IN STOCK
+cmu-req-stock-console-status-ok = Застрять
 
-cmu-req-stock-console-status-low = LOW
+cmu-req-stock-console-status-low = Низкий
 
-cmu-req-stock-console-status-out = OUT
+cmu-req-stock-console-status-out = ВЫХОД

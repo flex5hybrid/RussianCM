@@ -1,19 +1,19 @@
-reagent-name-silicone-oil = silicone oil
+reagent-name-silicone-oil = силиконовое масло
 
-reagent-desc-silicone-oil = Polydimethylsiloxane. A clear, slick oil that keeps artificial muscle fibres from grinding themselves apart.
+reagent-desc-silicone-oil = Полидиметилсилоксан. Чистое, скользкое масло, которое удерживает искусственные мышечные волокна от размола.
 
-reagent-name-glycol = glycol
+reagent-name-glycol = гликоль
 
-reagent-desc-glycol = A sweet, syrupy coolant. Keeps fluid moving across a wide temperature range. Don't drink it.
+reagent-desc-glycol = Сладкий, сиропообразный охладитель. Поддерживает движение жидкости в широком температурном диапазоне. Не пей его.
 
-reagent-name-synthetic-latex = synthetic latex
+reagent-name-synthetic-latex = синтетический латекс
 
-reagent-desc-synthetic-latex = A milky polymer emulsion stabilised with ammonia. Gives synthetic blood its body and its colour.
+reagent-desc-synthetic-latex = Молочная полимерная эмульсия, стабилизированная аммиаком. Он дает синтетическую кровь своему телу и цвету.
 
-reagent-name-surfactant = surfactant
+reagent-name-surfactant = поверхностно-активный
 
-reagent-desc-surfactant = Sodium alkyl sulfate. Stops oil and water from separating out of a mixture.
+reagent-desc-surfactant = Алкилсульфат натрия. Препятствует отделению масла и воды от смеси.
 
-reagent-name-corrosion-inhibitor = corrosion inhibitor
+reagent-name-corrosion-inhibitor = ингибитор коррозии
 
-reagent-desc-corrosion-inhibitor = Sodium phosphate. Coats metal surfaces so circulating fluid doesn't eat them.
+reagent-desc-corrosion-inhibitor = Натриевый фосфат. Металлические поверхности покрытий, поэтому циркулирующая жидкость их не ест.

@@ -1,304 +1,304 @@
-ent-CMUExpeditionWreckCMAlamoWall1 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall1 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall10 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall10 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall16 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall16 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall17 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall17 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall18 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall18 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall19 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall19 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall2 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall2 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall22 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall22 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall23 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall23 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall24 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall24 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall25 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall25 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall26 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall26 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall27 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall27 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall28 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall28 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall29 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall29 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall3 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall3 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall30 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall30 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall31 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall31 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall32 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall32 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall33 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall33 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall34 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall34 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall35 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall35 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall38 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall38 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall39 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall39 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall4 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall4 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall40 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall40 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall41 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall41 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall46 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall46 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall47 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall47 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall48 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall48 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall49 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall49 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall5 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall5 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall53 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall53 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall59 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall59 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall6 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall6 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall61 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall61 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall62 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall62 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall64 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall64 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall65 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall65 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall66 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall66 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall67 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall67 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall69 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall69 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall7 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall7 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall70 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall70 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall71 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall71 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall72 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall72 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall73 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall73 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall74 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall74 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall75 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall75 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall76 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall76 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall77 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall77 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall78 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall78 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall8 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall8 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall81 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall81 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall82 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall82 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall83 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall83 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall84 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall84 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall84Flipped = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall84Flipped = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall85 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall85 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall85Flipped = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall85Flipped = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall86 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall86 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall89 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall89 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall92 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall92 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall94 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall94 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall95 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall95 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall96 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall96 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall97 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall97 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall98 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall98 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMAlamoWall99 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMAlamoWall99 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall10 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall10 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall100 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall100 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall102 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall102 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall105 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall105 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall106 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall106 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall107 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall107 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall108 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall108 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall18 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall18 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall19 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall19 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall46 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall46 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall49 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall49 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall86b = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall86b = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall89b = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall89b = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall95 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall95 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall95a = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall95a = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall97a = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall97a = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall99 = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall99 = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-ent-CMUExpeditionWreckCMNormandyWall99a = torn dropship hull
-    .desc = Crushed structural plating from a downed aircraft.
+ent-CMUExpeditionWreckCMNormandyWall99a = порванный корпус
+    .desc = Раздавленная структурная обшивка сбитого самолета.
 
-cmu-expedition-wreck-longhaul = Longhaul cargo transport (Fallujah derivative)
+cmu-expedition-wreck-longhaul = Долгосрочный грузовой транспорт (производная от Фаллуджи)
 
-cmu-expedition-wreck-report = Wreck: {$ship}. Impact: {$impact}.
+cmu-expedition-wreck-report = Разрушение: {$ship}Воздействие: {$impact}.
 
-cmu-expedition-impact-forestskid = long forest skid with stripped trees
+cmu-expedition-impact-forestskid = Длинные лесные лыжи с полосатыми деревьями
 
-cmu-expedition-impact-burnout = fuel burnout across a broad blast clearing
+cmu-expedition-impact-burnout = выгорание топлива через широкую очистку от взрыва
 
-cmu-expedition-impact-cliffstrike = mountain strike with rockfall and scattered wreckage
+cmu-expedition-impact-cliffstrike = горный удар с камнепадом и разбросанными обломками
 
-cmu-expedition-impact-shorebreak = shoreline breakup with dry cargo access
+cmu-expedition-impact-shorebreak = Распад береговой линии с доступом к сухому грузу
 
-cmu-expedition-impact-breakup = separated forward section and debris trail
+cmu-expedition-impact-breakup = Разделенный передний участок и след от мусора
 
-cmu-expedition-wreck-relief = Relief utility transport (Fallujah derivative)
+cmu-expedition-wreck-relief = Перевозка коммунальных услуг (производная от Фаллуджи)
 
-cmu-expedition-wreck-surveyor = Surveyor field transport (Fallujah derivative)
+cmu-expedition-wreck-surveyor = Геодезический полевой транспорт (производная от Фаллуджи)
 
-cmu-expedition-wreck-kestrel = Kestrel gunship (gunship derivative)
+cmu-expedition-wreck-kestrel = Kestrel Gunship (производное от Gunship)
 
-cmu-expedition-wreck-escort = Escort strike transport (gunship derivative)
+cmu-expedition-wreck-escort = Escort strike transport (оружейный производный)
 
-cmu-expedition-wreck-pathfinder = Pathfinder scout gunship (gunship derivative)
+cmu-expedition-wreck-pathfinder = Pathfinder Scout Gunship (недоступная ссылка)
 
-ent-CMUExpeditionWreckSeat = damaged pilot seat
-    .desc = A harness hangs loose from the impact-twisted frame.
+ent-CMUExpeditionWreckSeat = поврежденное кресло пилота
+    .desc = Упряжка свисает с витой от удара рамы.
 
-ent-CMUExpeditionWreckConsole = wrecked avionics rack
-    .desc = Shattered displays and exposed cabling. Nothing responds to the controls.
+ent-CMUExpeditionWreckConsole = разбитая стойка авионики
+    .desc = Разрушенные дисплеи и открытые кабели. Ничто не реагирует на контроль.
 
-cmu-expedition-wreck-mule = MULE-17 heavy equipment lander
+cmu-expedition-wreck-mule = MULE-17 посадочный модуль тяжелой техники
 
-ent-CMUExpeditionMuleFlightConsole = shattered MULE flight console
-    .desc = The impact drove the displays into their housings. A scratched checklist still reads: secure the load before opening the ramp.
+ent-CMUExpeditionMuleFlightConsole = Разбитая консоль MULE Flight
+    .desc = Удар загнал дисплеи в их корпуса. Нацарапанный контрольный список по-прежнему гласит: закрепите нагрузку перед открытием пандуса.
 
-ent-CMUExpeditionMulePowerRack = ruptured cargo power cabinet
-    .desc = Burnt cables run toward the experimental miner's restraint cradle. The breakers tripped far too late.
+ent-CMUExpeditionMulePowerRack = Разорванный грузовой энергетический шкаф
+    .desc = Сгоревшие кабели идут в сторону удерживающей колыбели экспериментального шахтера. Выключатели споткнулись слишком поздно.
 
-ent-CMUExpeditionMuleCargo = torn-down equipment pallet
-    .desc = A heavy transit case containing the lander's support equipment. Its restraint straps have snapped at their anchor points.
+ent-CMUExpeditionMuleCargo = разорванный поддон оборудования
+    .desc = Тяжелый транзитный корпус, содержащий вспомогательное оборудование спускаемого аппарата. Его удерживающие ремни зацепились за их якорные точки.
 
-ent-CMUExpeditionMuleToolCase = scattered loadmaster's tools
-    .desc = A battered tool case thrown clear of the cargo ramp. Mud is packed into every latch.
+ent-CMUExpeditionMuleToolCase = Разбросанные инструменты грузоотправителя
+    .desc = Разбитый ящик с инструментами выброшен из грузовой рампы. Грязь упакована в каждую защелку.

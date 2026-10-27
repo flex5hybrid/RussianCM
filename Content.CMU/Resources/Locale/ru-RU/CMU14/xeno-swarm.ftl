@@ -51,93 +51,93 @@ ent-CMUSwarmGuardMarker = метка охраны роя
 
 cmu-swarm-disabled = В этом режиме игры приказы рою недоступны для этой королевы.
 
-cmu-swarm-full = Hive swarm is full ({$limit} living lessers).
+cmu-swarm-full = Улей рой полон (){$limit} Жить меньше.
 
-cmu-swarm-ovi-note = Ovi command link. Issued orders continue after detaching.
+cmu-swarm-ovi-note = Командная линия Ови. Выданные заказы продолжаются после отсоединения.
 
-cmu-swarm-flag-limit = The hive has 64 flags. Replace old orders or clear player markers first.
+cmu-swarm-flag-limit = Улей имеет 64 Флаги. Сначала замените старые заказы или четкие маркеры игроков.
 
-cmu-swarm-ungrouped = Ungrouped
+cmu-swarm-ungrouped = негруппированный
 
-cmu-swarm-squad = Squad {$number}
+cmu-swarm-squad = Отряд {$number}
 
-cmu-swarm-select-squad = Select squad
+cmu-swarm-select-squad = Выберите отряд
 
-cmu-swarm-assign-squad = Assign selected
+cmu-swarm-assign-squad = Выбранное назначение
 
-cmu-swarm-select-all = Select all
+cmu-swarm-select-all = Выберите все
 
-cmu-swarm-select-none = Clear selection
+cmu-swarm-select-none = Ясный выбор
 
-cmu-swarm-selection-count = {$count} selected
+cmu-swarm-selection-count = {$count} выбранный
 
-cmu-swarm-place-order = Place order
+cmu-swarm-place-order = Заказ места
 
-cmu-swarm-release = Release to roam
+cmu-swarm-release = Отпустить в роум
 
-cmu-swarm-append = Add patrol point (up to 8)
+cmu-swarm-append = Добавить пункт патрулирования (до 8)
 
-cmu-swarm-apply-aggression = Apply to selected
+cmu-swarm-apply-aggression = Подать заявку на выбранный
 
-cmu-swarm-roam-note = Roam: 21 × 15 tiles, pauses, then rest and wake cycles.
+cmu-swarm-roam-note = Роум: 21 × 15 плитки, паузы, затем циклы отдыха и бодрствования.
 
-cmu-swarm-work-note = Build / weed: one site per flag; requires plasma and a valid site.
+cmu-swarm-work-note = Построить/сорняк: один участок на флаг; требуется плазма и действующий участок.
 
-cmu-swarm-markers-heading = Hive player markers: yellow rally, red attack, cyan defend
+cmu-swarm-markers-heading = Маркеры игроков улья: желтый ралли, красная атака, циан-защита
 
-cmu-swarm-place-marker = Place marker
+cmu-swarm-place-marker = Маркировка места
 
-cmu-swarm-clear-markers = Clear player markers
+cmu-swarm-clear-markers = Ясные маркеры игроков
 
-cmu-swarm-selection-hint = Select individuals or a squad. Orders affect only selected lessers.
+cmu-swarm-selection-hint = Выберите людей или отряд. Заказы касаются только избранных меньших.
 
-cmu-swarm-target-hint = Click a visible world tile or escort target; right-click cancels targeting.
+cmu-swarm-target-hint = Нажмите на видимую плитку мира или цель сопровождения; правый клик отменяет таргетинг.
 
-cmu-swarm-member = Lesser {$number} · squad {$squad} · {$order} · {$aggression}
+cmu-swarm-member = меньше {$number} • Отряд {$squad} · {$order} · {$aggression}
 
-cmu-swarm-member-resting = {" "}(resting)
+cmu-swarm-member-resting = {" "}(отдыхает)
 
-cmu-swarm-member-working = {" "}(building)
+cmu-swarm-member-working = {" "}(строительство)
 
-cmu-swarm-order-idle = Free roaming
+cmu-swarm-order-idle = Бесплатный роуминг
 
-cmu-swarm-order-guard = Guard
+cmu-swarm-order-guard = гвардия
 
-cmu-swarm-order-follow = Escort xeno
+cmu-swarm-order-follow = Эскорт ксено
 
-cmu-swarm-order-roam = Roam area
+cmu-swarm-order-roam = Район Роум
 
-cmu-swarm-order-patrol = Patrol route
+cmu-swarm-order-patrol = Патрульный маршрут
 
-cmu-swarm-order-build = Build resin
+cmu-swarm-order-build = Строить смолу
 
-cmu-swarm-order-weed = Plant weeds
+cmu-swarm-order-weed = Посадить сорняки
 
-cmu-swarm-order-rally = Rally
+cmu-swarm-order-rally = Ралли
 
-cmu-swarm-order-attack = Attack
+cmu-swarm-order-attack = Нападение
 
-cmu-swarm-order-defend = Defend
+cmu-swarm-order-defend = Защищать
 
-cmu-swarm-aggression-passive = Passive (never attack)
+cmu-swarm-aggression-passive = Пассивный (никогда не атакует)
 
-cmu-swarm-aggression-defensive = Defensive (engage within 3 tiles)
+cmu-swarm-aggression-defensive = Оборонительный (вовлечение внутрь) 3 плитка
 
-cmu-swarm-aggression-aggressive = Aggressive (pursue within order leash)
+cmu-swarm-aggression-aggressive = Агрессивный (преследуется в пределах порядкового поводка)
 
-cmu-swarm-aggression-short-passive = Passive
+cmu-swarm-aggression-short-passive = пассивный
 
-cmu-swarm-aggression-short-defensive = Defensive
+cmu-swarm-aggression-short-defensive = оборонительный
 
-cmu-swarm-aggression-short-aggressive = Aggressive
+cmu-swarm-aggression-short-aggressive = агрессивный
 
-cmu-swarm-structure-wall = Resin wall
+cmu-swarm-structure-wall = Стена из смолы
 
-cmu-swarm-structure-membrane = Resin membrane
+cmu-swarm-structure-membrane = мембрана смолы
 
-cmu-swarm-structure-door = Resin door
+cmu-swarm-structure-door = Смоляная дверь
 
-ent-CMUActionPlaceSwarmOrder = Place swarm order flag
-    .desc = Place the order or tactical marker prepared in the ovi swarm panel.
+ent-CMUActionPlaceSwarmOrder = Флаг приказа роя
+    .desc = Поместите заказ или тактический маркер, приготовленный на панели роя Ovi.
 
-cmu-swarm-patrol-limit = This route already has eight points. Uncheck Add patrol point to start a new route.
+cmu-swarm-patrol-limit = Этот маршрут уже имеет восемь пунктов. Добавить пункт патрулирования, чтобы начать новый маршрут.

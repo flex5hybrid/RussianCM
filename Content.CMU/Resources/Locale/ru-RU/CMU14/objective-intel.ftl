@@ -1,81 +1,81 @@
-objective-intel-window-title = Objective Intel
+objective-intel-window-title = Объективный Intel
 
-objective-intel-unlocked = [color=red][bold]Unlocked intel:[/bold][/color]
+objective-intel-unlocked = [color=red][bold]Разблокированная информация:[/bold][/color]
 
 objective-intel-points = Intel Points:
 
-objective-intel-next-tier = Next tier: { $current }/{ $total }
+objective-intel-next-tier = Следующий уровень: { $current }/{ $total }
 
-objective-intel-all-tiers-summary = Next tier: All tiers unlocked
+objective-intel-all-tiers-summary = Следующий уровень: Все уровни разблокированы
 
-objective-intel-all-unlocked = All intel tiers unlocked.
+objective-intel-all-unlocked = Все уровни разведданных разблокированы.
 
-objective-intel-unlock = Unlock: [{ $cost }]
+objective-intel-unlock = Разблокировать:{ $cost }]
 
-cmu-ui-objcon-title = Objectives Console
+cmu-ui-objcon-title = Цели Консоль
 
-cmu-ui-objcon-heading = OPERATION OBJECTIVES
+cmu-ui-objcon-heading = Функциональные цели
 
-cmu-ui-objcon-subheading = { $done } of { $total } done · { $open } still open
+cmu-ui-objcon-subheading = { $done } из { $total } сделанный { $open } по-прежнему открыт
 
-cmu-ui-objcon-points = { $points } / { $required } PTS
+cmu-ui-objcon-points = { $points } / { $required } ПТС
 
-cmu-ui-objcon-current = Win points
+cmu-ui-objcon-current = Победные очки
 
-cmu-ui-objcon-required = Needed for final
+cmu-ui-objcon-required = Нужен для финала
 
-cmu-ui-objcon-remaining = Still to earn
+cmu-ui-objcon-remaining = Все еще зарабатывать
 
-cmu-ui-objcon-footer = Complete objectives to earn win points. Press Intel on an objective to unlock what's known about it.
+cmu-ui-objcon-footer = Полные цели, чтобы заработать очки победы. Нажмите Intel на цель, чтобы разблокировать то, что известно об этом.
 
-cmu-ui-objcon-empty = No objectives have been issued yet.
+cmu-ui-objcon-empty = Никаких целей пока не поставлено.
 
-cmu-ui-objcon-intel = INTEL
+cmu-ui-objcon-intel = ИНТЕЛЬ
 
-cmu-ui-objcon-worth = { $points } PTS
+cmu-ui-objcon-worth = { $points } ПТС
 
-cmu-ui-objcon-repeating = Repeatable
+cmu-ui-objcon-repeating = повторяющийся
 
-cmu-ui-objcon-repeats = Completed { $done } of { $max } times
+cmu-ui-objcon-repeats = завершенный { $done } из { $max } время
 
-cmu-ui-objcon-repeats-max = Can be completed { $max } times
+cmu-ui-objcon-repeats-max = Может быть завершен { $max } время
 
-cmu-ui-objcon-repeats-count = Completed { $done } times
+cmu-ui-objcon-repeats-count = завершенный { $done } время
 
-cmu-ui-objcon-type-final = Final objective
+cmu-ui-objcon-type-final = Конечная цель
 
-cmu-ui-objcon-type-major = Major objectives
+cmu-ui-objcon-type-major = Основные цели
 
-cmu-ui-objcon-type-minor = Minor objectives
+cmu-ui-objcon-type-minor = Незначительные цели
 
-cmu-ui-objcon-status-open = OPEN
+cmu-ui-objcon-status-open = ОТКРЫТЬ
 
-cmu-ui-objcon-status-completed = COMPLETED
+cmu-ui-objcon-status-completed = выполненный
 
-cmu-ui-objcon-status-failed = FAILED
+cmu-ui-objcon-status-failed = несостоявшийся
 
-cmu-ui-objcon-status-captured = CAPTURED
+cmu-ui-objcon-status-captured = Плененный
 
-cmu-ui-objcon-status-uncaptured = UNCAPTURED
+cmu-ui-objcon-status-uncaptured = незавершенный
 
-cmu-ui-objcon-status-repeating = REPEATING
+cmu-ui-objcon-status-repeating = Повторять
 
-cmu-ui-objintel-subheading = { $unlocked } of { $total } intel tiers unlocked
+cmu-ui-objintel-subheading = { $unlocked } из { $total } Секретные ярусы разблокированы
 
 cmu-ui-objintel-points = { $points } INTEL PTS
 
-cmu-ui-objintel-footer = Spend intel points to unlock the next tier of what's known about this objective.
+cmu-ui-objintel-footer = Потратьте очки информации, чтобы разблокировать следующий уровень того, что известно об этой цели.
 
-cmu-ui-objintel-unlocked = Unlocked intel
+cmu-ui-objintel-unlocked = Разблокированная информация
 
-cmu-ui-objintel-none = Nothing unlocked yet.
+cmu-ui-objintel-none = Пока ничего не разблокировано.
 
-cmu-ui-objintel-next = Next tier
+cmu-ui-objintel-next = Следующий уровень
 
-cmu-ui-objintel-tier = TIER { $tier }
+cmu-ui-objintel-tier = Время { $tier }
 
-cmu-ui-objintel-short = { $points } more intel points needed.
+cmu-ui-objintel-short = { $points } Необходимы дополнительные разведданные.
 
-cmu-ui-objintel-unlock = UNLOCK · { $cost } PTS
+cmu-ui-objintel-unlock = UNLOCK { $cost } ПТС
 
-cmu-ui-objintel-confirm = CONFIRM UNLOCK
+cmu-ui-objintel-confirm = Подтвердить UNLOCK

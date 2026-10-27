@@ -71,26 +71,26 @@ reagent-desc-cmu-meclizine = Средство от головокружения.
 
 cmu-medical-anti-vertigo-guidebook = Устраняет головокружение и предотвращает его на { $minutes } минут.
 
-cmu-medical-regenerate-limb-guidebook        = Regenerates one missing native limb per 5 units metabolized at 213K or colder.
+cmu-medical-regenerate-limb-guidebook        = Восстанавливает одну отсутствующую нативную конечность 5 единицы метаболизируются в 213K Или холоднее.
 
-cmu-medical-reverse-revival-timer-guidebook   = Reverses { $seconds } seconds of an active revival countdown per unit metabolized. Cannot reverse permanent death or an expired countdown.
+cmu-medical-reverse-revival-timer-guidebook   = Обратная сторона { $seconds } секунды активного обратного отсчета возрождения на единицу метаболизированной. Не может обратить вспять постоянную смерть или просроченный обратный отсчет.
 
-cmu-medical-cryo-bone-blood-guidebook         = Gradually mends all fractures by { $bone } bone integrity per unit and restores { $blood }% blood per second during metabolism.
+cmu-medical-cryo-bone-blood-guidebook         = Постепенно излечивает все переломы { $bone } целостность костей на единицу и восстановление { $blood }% крови в секунду во время метаболизма.
 
-cmu-medical-cryo-burn-wounds-guidebook        = Gradually closes burn wounds by { $amount } wound damage per unit, including severe burns.
+cmu-medical-cryo-burn-wounds-guidebook        = Постепенно закрывает ожоговые раны { $amount } повреждения раны на единицу, включая сильные ожоги.
 
-cmu-medical-cryo-brute-wounds-guidebook       = Gradually closes brute wounds by { $amount } wound damage per unit, including gaping cuts.
+cmu-medical-cryo-brute-wounds-guidebook       = Постепенно закрывает грубые раны { $amount } повреждение раны на единицу, включая зияющие порезы.
 
-cmu-medical-cryo-organs-guidebook             = Gradually restores { $amount } health per unit to every attached organ.
+cmu-medical-cryo-organs-guidebook             = Постепенно восстанавливается { $amount } здоровье на единицу на каждый присоединенный орган.
 
-reagent-name-cmu-tranexamic-acid             = Tranexamic Acid
+reagent-name-cmu-tranexamic-acid             = Транснексамная кислота
 
-reagent-desc-cmu-tranexamic-acid             = A clotting agent that stops bleeding for as long as it stays in the bloodstream. It doesn't close the wounds.
+reagent-desc-cmu-tranexamic-acid             = Свертывающий агент, который останавливает кровотечение до тех пор, пока он остается в кровотоке. Он не закрывает раны.
 
-reagent-name-cmu-aminomethylbenzoic-acid     = Aminomethylbenzoic Acid
+reagent-name-cmu-aminomethylbenzoic-acid     = Аминометилбензойная кислота
 
-reagent-desc-cmu-aminomethylbenzoic-acid     = A chemical precursor. Mix it with hydrogen and inaprovaline to make tranexamic acid.
+reagent-desc-cmu-aminomethylbenzoic-acid     = Химический предшественник. Смешайте его с водородом и инапровалином, чтобы сделать транексамовую кислоту.
 
-reagent-name-cmu-blood-plasma = blood plasma
+reagent-name-cmu-blood-plasma = плазма крови
 
-reagent-desc-cmu-blood-plasma = The liquid part of blood. Given from a plasma pack of a matching type it restores blood volume quickly and slows bleeding for a while.
+reagent-desc-cmu-blood-plasma = Жидкая часть крови. Полученный из плазменной упаковки соответствующего типа, он быстро восстанавливает объем крови и замедляет кровотечение на некоторое время.

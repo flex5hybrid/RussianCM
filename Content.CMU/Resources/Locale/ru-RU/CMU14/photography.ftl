@@ -12,44 +12,44 @@ cmu-photo-camera-examine-video-mode = Включён [color=yellow]видеор�
 
 cmu-photo-camera-not-wielded = Для снимка нужно держать {THE($camera)} в обеих руках.
 
-cmu-photo-camera-verb-frame = Frame {$size}x{$size}
+cmu-photo-camera-verb-frame = каркас {$size}х{$size}
 
-cmu-photo-camera-frame-set = Frame set to {$size}x{$size} tiles.
+cmu-photo-camera-frame-set = Обрамление установлено {$size}х{$size} плитки.
 
-cmu-photo-camera-examine = The viewfinder frames a [color=yellow]{$size}x{$size}[/color] area. Click a tile to take a photo; alt-click to change the frame.
+cmu-photo-camera-examine = Видоискатель представляет собой [color=yellow]{$size}х{$size}[/color] район. Нажмите на плитку, чтобы сделать фотографию; alt-click, чтобы изменить кадр.
 
-cmu-photo-camera-too-far = That is too far away to photograph.
+cmu-photo-camera-too-far = Это слишком далеко, чтобы фотографировать.
 
-cmu-photo-camera-not-in-view = You can't see that area to photograph it.
+cmu-photo-camera-not-in-view = Вы не можете увидеть эту область, чтобы сфотографировать ее.
 
-cmu-photo-examine = A {$size}x{$size} photograph taken by {$photographer}. Use it to look closer.
+cmu-photo-examine = А. {$size}х{$size} фотография, сделанная {$photographer}Используйте его, чтобы присмотреться.
 
 cmu-photo-window-signed = - {$photographer}
 
-cmu-photo-window-close = Put it away
+cmu-photo-window-close = Убери это.
 
-cmu-photo-shows = It shows: {$contents}.
+cmu-photo-shows = Это показывает: {$contents}.
 
-cmu-photo-shows-nothing = Nothing in it can be made out.
+cmu-photo-shows-nothing = Ничего в нем не может быть сделано.
 
-cmu-photo-person-dead = {$name} (dead)
+cmu-photo-person-dead = {$name} (мертвый)
 
-cmu-photo-person-critical = {$name} (badly hurt)
+cmu-photo-person-critical = {$name} (очень больно)
 
-cmu-photo-object-count = {$count}x {$name}
+cmu-photo-object-count = {$count}х {$name}
 
-cmu-photo-window-caption = In the photo: {$contents}
+cmu-photo-window-caption = На фото: {$contents}
 
-cmu-photo-window-caption-nothing = nothing that can be made out
+cmu-photo-window-caption-nothing = Ничего, что может быть сделано
 
 cmu-photo-camera-shots = { $shots ->
-    [0] Film: [color=red]out of film[/color]. Use a roll of camera film on it to reload.
-    [1] Film: [color=yellow]1/{$max}[/color] shot left.
-   *[other] Film: [color=yellow]{$shots}/{$max}[/color] shots left.
+    [0] Фильм: [color=red]Из фильма[/color]Используйте рулон пленки камеры для перезарядки.
+    [1] Фильм: [color=yellow]1/{$max}[/color] Выстрел влево.
+   *[other] Фильм: [color=yellow]{$shots}/{$max}[/color] Остались выстрелы.
 }
 
-cmu-photo-camera-no-film = *click* The camera is out of film. Load a fresh roll.
+cmu-photo-camera-no-film = *щёлкнуть* Камера вышла из пленки. Загрузите свежий рулон.
 
-cmu-photo-camera-film-full = The roll in the camera is still full.
+cmu-photo-camera-film-full = Ролик в камере по-прежнему полон.
 
-cmu-photo-camera-film-loaded = You load a fresh roll: {$shots} shots.
+cmu-photo-camera-film-loaded = Вы загружаете свежий рулон: {$shots} выстрелы.

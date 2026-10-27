@@ -1,339 +1,339 @@
-cmd-cmu-squads-desc = Open expedition squad management and tactical diagnostics.
+cmd-cmu-squads-desc = Открытое управление экспедиционным отрядом и тактическая диагностика.
 
-cmd-cmu-squads-help = cmu-squads
+cmd-cmu-squads-help = отряды
 
-cmu-squads-title = Expedition squad management
+cmu-squads-title = Управление экспедиционным отрядом
 
-cmu-squads-refresh = Refresh
+cmu-squads-refresh = Обновить
 
-cmu-squads-copy = Copy diagnostics
+cmu-squads-copy = Копирование диагностики
 
-cmu-squads-copy-tip = Copy the latest displayed diagnostics for every member of the selected squad.
+cmu-squads-copy-tip = Копируйте последнюю отображаемую диагностику для каждого члена выбранной команды.
 
-cmu-squads-copied = Squad diagnostics copied to clipboard.
+cmu-squads-copied = Диагностика отряда скопирована в буфер обмена.
 
-cmu-squads-live = Live updates
+cmu-squads-live = Обновления Live
 
-cmu-squads-spawn = Spawn squad
+cmu-squads-spawn = Отряд Спаун
 
-cmu-squads-doctrine = Apply doctrine
+cmu-squads-doctrine = Применять доктрину
 
-cmu-squads-clothing-note = Faction kits set clothing, primary weapons and ammunition at spawn.
-    Kits and doctrine do not change team or IFF.
-    Set friendly and hostile factions in Relations.
+cmu-squads-clothing-note = Фракционные наборы устанавливают одежду, основное оружие и боеприпасы на нерест.
+    Наборы и доктрина не меняют команду или МФФ.
+    Установите дружественные и враждебные фракции в отношениях.
 
-cmu-squads-here = At my body / ghost
+cmu-squads-here = В моём теле / Призрак
 
-cmu-squads-map = Map
+cmu-squads-map = Карта
 
-cmu-squads-move = Move
+cmu-squads-move = Двигаться
 
-cmu-squads-move-tip = Travel to the destination while responding to threats along the route.
+cmu-squads-move-tip = Отправляйтесь в пункт назначения, отвечая на угрозы вдоль маршрута.
 
-cmu-squads-assault = Assault
+cmu-squads-assault = нападение
 
-cmu-squads-assault-tip = Fight toward this objective in short bounds. Engage contacts, keep safe firing lanes, and resume the advance when able. Immediate threats, treatment and ammunition still take priority.
+cmu-squads-assault-tip = Стремитесь к этой цели в короткие сроки. Задействуйте контакты, сохраняйте безопасные полосы стрельбы и возобновляйте продвижение, когда это возможно. Непосредственные угрозы, лечение и боеприпасы по-прежнему имеют приоритет.
 
-cmu-squads-guard = Guard / fortify
+cmu-squads-guard = Охрана/укрепление
 
-cmu-squads-hold = Hold position
+cmu-squads-hold = Постоянная позиция
 
-cmu-squads-patrol-add = Add patrol point
+cmu-squads-patrol-add = Добавить патрульный пункт
 
-cmu-squads-patrol-start = Start patrol
+cmu-squads-patrol-start = Начинаем патрулировать
 
-cmu-squads-patrol-stop = Stop patrol
+cmu-squads-patrol-stop = Остановите патруль.
 
-cmu-squads-regroup = Regroup
+cmu-squads-regroup = Перегруппировка
 
-cmu-squads-resupply = Stand down / resupply
+cmu-squads-resupply = Остановка / Resupply
 
-cmu-squads-add-friendly = Add friendly
+cmu-squads-add-friendly = Добавить дружелюбный
 
-cmu-squads-add-target = Add target
+cmu-squads-add-target = Добавить цель
 
-cmu-squads-set-friendly = Apply friendlies
+cmu-squads-set-friendly = Применять Friendlies
 
-cmu-squads-set-target = Apply targets
+cmu-squads-set-target = Применять цели
 
-cmu-squads-factions = Comma-separated factions; default resets overrides
+cmu-squads-factions = Разделенные запятыми фракции; перезагрузка по умолчанию
 
-cmu-squads-diagram = Tactical diagram: 48 m, centered on selected member
+cmu-squads-diagram = Тактическая схема: 48 m, в центре которого находится выбранный член
 
-cmu-squads-legend = White: ready | Orange: injured | Gray: inactive
-    Cyan: selection / route | Red: contact | Yellow: destination
-    Green: cover | Orange rings: rejected cover
+cmu-squads-legend = Белая: готовая, оранжевая, травмированная, серая: неактивная
+    Cyan: выбор / маршрут | Красный: контакт | Желтый
+    Зеленый: обложка | Оранжевые кольца: отвергнутая обложка
 
-cmu-squads-select = Select a squad and member to inspect decisions.
+cmu-squads-select = Выберите команду и члена для проверки решений.
 
-cmu-squads-summary = Squad {$squad}: {$count} members | Map {$map} | {$phase}
+cmu-squads-summary = Отряд {$squad}: {$count} Члены Карты {$map} | {$phase}
 
-cmu-squads-applied = Applied to {$count} members.
+cmu-squads-applied = Применяется к {$count} членов.
 
-cmu-squads-invalid = Invalid selection, position, faction or parameters.
+cmu-squads-invalid = Недействительный выбор, позиция, фракция или параметры.
 
-cmu-squads-orders-tab = Orders
+cmu-squads-orders-tab = Заказы
 
-cmu-squads-deploy-tab = Deploy
+cmu-squads-deploy-tab = Развернуть
 
-cmu-squads-relations-tab = Relations
+cmu-squads-relations-tab = Отношения
 
-cmu-squads-map-tab = Tactical view
+cmu-squads-map-tab = Тактический взгляд
 
-cmu-squads-diagnostics-tab = Diagnostics
+cmu-squads-diagnostics-tab = Диагностика
 
-cmu-squads-destination = Order destination
+cmu-squads-destination = Заказать пункт назначения
 
-cmu-squads-facing = Defense facing
+cmu-squads-facing = Противостояние
 
-cmu-squads-count = Squad size (1–12)
+cmu-squads-count = Размер отряда1–12)
 
-cmu-squads-composition = Squad composition / role
+cmu-squads-composition = Композиция / роль отряда
 
-cmu-squads-outfit = Faction equipment kit
+cmu-squads-outfit = Комплект оборудования фракции
 
-cmu-squads-doctrine-label = Starting doctrine
+cmu-squads-doctrine-label = Начало доктрины
 
-cmu-squads-deploy-note = Deploys at the destination set in Orders.
-    “At my body / ghost” uses your current position.
+cmu-squads-deploy-note = развертывается в пункте назначения, установленном в приказах.
+    «В моем теле / призраке» использует ваше текущее положение.
 
-cmu-squads-patrol-heading = Patrol route
+cmu-squads-patrol-heading = Патрульный маршрут
 
-cmu-squads-auto-patrol = Automatic local patrol
+cmu-squads-auto-patrol = Автоматическое местное патрулирование
 
-cmu-squads-auto-patrol-tip = Creates a walkable local route around this squad. Combat pauses patrol; explicit movement or hold orders replace it.
+cmu-squads-auto-patrol-tip = Создает пешеходный маршрут вокруг этого отряда. Боевые паузы патрулируют; явные движения или удержание приказов заменяют его.
 
-cmu-squads-patrol-clear = Clear patrol points
+cmu-squads-patrol-clear = Ясные пункты патрулирования
 
-cmu-squads-patrol-no-space = No safe patrol loop found. The squad will retry while automatic patrol is enabled.
+cmu-squads-patrol-no-space = Безопасная патрульная петля не найдена. Отряд будет возвращаться, пока включен автоматический патруль.
 
-cmu-squads-coordination-heading = Squad behavior
+cmu-squads-coordination-heading = Поведение отряда
 
-cmu-squads-aim-skill = Aim skill: {$percent}%
+cmu-squads-aim-skill = Цель мастерства: {$percent}%
 
-cmu-squads-aim-skill-tip = Applies to this squad when released. Controls target leading and aiming precision. Lower skill adds a stable aiming error; 100% uses full tracking. Native weapon spread still applies.
+cmu-squads-aim-skill-tip = Применяется к этому отряду при освобождении. Контролирует направленность и точность прицеливания. Низкая квалификация добавляет стабильную ошибку прицеливания; 100% использует полное отслеживание. Оружие по-прежнему применяется.
 
-cmu-squads-cooperate = Assist nearby friendly squads
+cmu-squads-cooperate = Помощь близлежащим дружным отрядам
 
-cmu-squads-cooperate-tip = Share contacts by compatible radio and let one free squad assist from a different approach. Hold, guard and explicit travel orders take priority.
+cmu-squads-cooperate-tip = Поделитесь контактами по совместимому радио и позвольте одному бесплатному отряду помочь с другим подходом. Держите, охраняйте и явные заказы на поездки в приоритете.
 
-cmu-squads-relations-note = Applies to the selected squad.
-    Use “default” to restore faction defaults.
-    In Targets, AllHostile engages known enemies, visibly armed non-friendlies and identified armed vehicles.
-    Unarmed neutral people and animals are ignored unless they attack or their faction is explicitly targeted.
-    Squadmates, friendly factions and ignored entities remain protected.
+cmu-squads-relations-note = Применяется к выбранному отряду.
+    Используйте «по умолчанию» для восстановления дефолтов фракций.
+    В Targets AllHostile сражается с известными врагами, явно вооруженными недружелюбными людьми и идентифицированными вооруженными транспортными средствами.
+    Безоружные нейтральные люди и животные игнорируются, если они не нападают или их фракция не является явной целью.
+    Подразделения, дружественные фракции и игнорируемые организации остаются под защитой.
 
-cmu-squads-all-hostile-option = AllHostile — enemies and armed non-friendlies
+cmu-squads-all-hostile-option = AllHostile — враги и вооруженные недружественные
 
-cmu-squads-friendly-heading = Friendly factions
+cmu-squads-friendly-heading = Дружеские фракции
 
-cmu-squads-target-heading = Hostile factions
+cmu-squads-target-heading = Враждебные группировки
 
-cmu-squads-overview = {$active}/{$total} active · {$phase} · {$points} patrol points · {$operation}
+cmu-squads-overview = {$active}/{$total} активный {$phase} · {$points} патрульные пункты; {$operation}
 
 cmu-squads-member-summary = {$role} · {$duty} · {$condition}
-    {$weapon} — {$ammo} rounds · Damage {$damage} · {$state}
+    {$weapon} — {$ammo} Ущерб · Ущерб {$damage} · {$state}
 
-cmu-squads-unarmed = No active weapon
+cmu-squads-unarmed = Нет активного оружия
 
-cmu-squads-diagnostic-controller = Controller: {$owner} — {$reason} | State changes: {$changes}
+cmu-squads-diagnostic-controller = Контроллер: {$owner} — {$reason} Государственные изменения: {$changes}
 
-cmu-squads-diagnostic-timing = Decision time: {$last} ms | Moving average: {$average} ms | Peak: {$peak} ms | Samples: {$samples}
+cmu-squads-diagnostic-timing = Время принятия решения: {$last} ms | Скользящая средняя: {$average} ms | пик: {$peak} ms | Образцы: {$samples}
 
-cmu-squads-diagnostic-learning = Experience: {$group} | Outcomes: {$samples} | Flank cost: {$flank} | Danger cost: {$danger}
+cmu-squads-diagnostic-learning = Опыт: {$group} Результаты: {$samples} Стоимость фланга: {$flank} Опасная стоимость: {$danger}
 
-cmu-squads-diagnostic-corner = Corner: {$decision} | Remembered lanes: {$lanes} | Alternate approaches: {$flanks} | Staging moves: {$staging}
+cmu-squads-diagnostic-corner = Уголок: {$decision} Запомнившиеся полосы: {$lanes} Альтернативные подходы: {$flanks} Постановочные ходы: {$staging}
 
-cmu-squads-diagnostic-patrol = Patrol: {$decision} | Visits: {$visits} | Searches: {$searches} | Failed routes: {$failures}
+cmu-squads-diagnostic-patrol = Патруль: {$decision} Посещение: {$visits} Поиски: {$searches} Неудачные маршруты: {$failures}
 
-cmu-squads-diagnostic-assistance = Assistance: {$decision} | Accepted: {$accepted} | Declined: {$declined}
+cmu-squads-diagnostic-assistance = Помощь: {$decision} Принято: {$accepted} Снижается: {$declined}
 
-cmu-squads-diagnostic-grenade = Ordnance: {$decision}
+cmu-squads-diagnostic-grenade = Оружие: {$decision}
 
-cmu-squads-diagnostic-fire-response = Fire response: {$decision} | Ally pats: {$pats} | Self rolls: {$rolls} | Ground-fire escapes: {$escapes}
+cmu-squads-diagnostic-fire-response = Пожарная реакция: {$decision} Ally Pats: {$pats} Самокат: {$rolls} Побеги от огня: {$escapes}
 
-cmu-squads-diagnostic-close-quarters = Teammate clearance steps: {$nudges} | Last-resort melee strikes: {$strikes}
+cmu-squads-diagnostic-close-quarters = Шаги по расчистке товарищей по команде: {$nudges} Забастовка в последней инстанции: {$strikes}
 
-cmu-squads-condition-player = player-controlled
+cmu-squads-condition-player = контролируемый игроком
 
-cmu-squads-condition-dead = dead
+cmu-squads-condition-dead = мёртв
 
-cmu-squads-condition-critical = critical
+cmu-squads-condition-critical = критический
 
-cmu-squads-condition-disabled = AI disabled
+cmu-squads-condition-disabled = ИИ отключен
 
-cmu-squads-condition-active = active
+cmu-squads-condition-active = активный
 
 cmu-squads-member-recorded = {$role} · {$duty} · {$condition}
-    Last AI record: {$weapon} — {$ammo} rounds · Damage {$damage} · {$state}
+    Последний рекорд ИИ: {$weapon} — {$ammo} Ущерб · Ущерб {$damage} · {$state}
 
-cmu-squads-diagnostic-recorded = Current condition: {$condition}
-    Last living AI record at {$at}s, sampled {$age}s before control ended.
-    Equipment and remembered lanes below describe that sample, before stop cleanup.
+cmu-squads-diagnostic-recorded = Текущее состояние: {$condition}
+    Последний живой рекорд ИИ в {$at}s, выборочный {$age}до окончания контроля.
+    Оборудование и запоминающиеся полосы ниже описывают этот образец, прежде чем прекратить очистку.
 
 cmu-squads-diagnostic-recorded-activity = {$state} | {$duty} / {$doctrine} / {$phase}
-    Controller: {$owner} — {$reason}
-    Fire: {$fire} | Weapon decision: {$weaponDecision}
-    Active weapon: {$weapon} | Rounds: {$ammo} | Damage: {$damage} | Stress: {$stress}
-    Native fire wait: {$nativeWait}s | AI aim wait: {$aimWait}s
-    Corner: {$corner} | Remembered lanes: {$lanes}
+    Контроллер: {$owner} — {$reason}
+    Огонь: {$fire} Решение по оружию: {$weaponDecision}
+    Активное оружие: {$weapon} Круглые: {$ammo} Повреждение: {$damage} Стресс: {$stress}
+    Местные пожарные ждут: {$nativeWait}Цель ИИ — ждать: {$aimWait}s
+    Уголок: {$corner} Запомнившиеся полосы: {$lanes}
 
-cmu-squads-diagnostic-recorded-history = Decisions before AI control ended:
+cmu-squads-diagnostic-recorded-history = Решения, принятые до окончания контроля над ИИ:
 
-cmu-squads-diagnostic-recorded-movement = Squad: {$squad} | Traffic: {$traffic} | Door: {$door} | Vault: {$vault}
-    Firing movement: {$movement} | Sustained fire: {$sustained} | Volley: {$volley}
+cmu-squads-diagnostic-recorded-movement = Отряд: {$squad} Пробки: {$traffic} Дверь: {$door} Убежище: {$vault}
+    Огнеметное движение: {$movement} Устойчивый огонь: {$sustained} Волей: {$volley}
 
-cmu-squads-diagnostic-lifetime = Lifetime counters and decision timing:
+cmu-squads-diagnostic-lifetime = Пожизненные счетчики и сроки принятия решений:
 
-cmu-squads-diagnostic-lifetime-movement = State changes: {$changes} | Route searches: {$searches} / {$milliseconds} ms
-    Detours: {$detours} | Clearance steps: {$nudges} | Doors opened: {$doors} | Door failures: {$doorFailures}
-    Covered moves: {$covered} | Interrupted moves: {$interrupted}
+cmu-squads-diagnostic-lifetime-movement = Государственные изменения: {$changes} Маршрутный поиск: {$searches} / {$milliseconds} мс
+    Объезды: {$detours} Шаги клиренса: {$nudges} Двери открылись: {$doors} Неисправности дверей: {$doorFailures}
+    Крытые ходы: {$covered} Прерванные движения: {$interrupted}
 
-cmu-squads-diagnostic-lifetime-combat = Moving shots: {$movingShots} | Reloads: {$reloads} | Grenades: {$grenades}
-    Failed plans: {$failedPlans} | Corner flanks: {$flanks} | Corner staging moves: {$staging}
+cmu-squads-diagnostic-lifetime-combat = Движущиеся выстрелы: {$movingShots} Перезагрузка: {$reloads} Гранаты: {$grenades}
+    Неудачные планы: {$failedPlans} Угловые фланги: {$flanks} Угловые ходы: {$staging}
 
-cmu-squads-diagnostic-no-record = Current condition: {$condition}. No living AI activity was sampled before control ended.
+cmu-squads-diagnostic-no-record = Текущее состояние: {$condition}Ни одна живая деятельность ИИ не была отобрана до окончания контроля.
 
-cmu-squads-diagnostic-hearing = Last heard: {$kind} | Age: {$age}s (sound alone does not authorize a shot)
+cmu-squads-diagnostic-hearing = Последний раз слышал: {$kind} Возраст: {$age}s (звук сам по себе не разрешает выстрел)
 
-cmu-squads-diagnostic-hearing-none = Last heard: no sound recorded
+cmu-squads-diagnostic-hearing-none = Последний услышанный: звук не записан
 
-cmu-squads-noise-gunfire = gunfire
+cmu-squads-noise-gunfire = выстрел
 
-cmu-squads-noise-door = door opening
+cmu-squads-noise-door = дверной проем
 
-cmu-squads-treatment-native = Self-treatment: native dose ({$status})
+cmu-squads-treatment-native = Самолечение: нативная доза ({$status})
 
-cmu-squads-treatment-preparing = Self-treatment: freeing a hand | Preparation time remaining: {$remaining}s
+cmu-squads-treatment-preparing = Самолечение: освобождение руки | Оставшееся время подготовки: {$remaining}s
 
-cmu-squads-treatment-idle = Self-treatment: no active dose | Next attempt allowed in {$retry}s
+cmu-squads-treatment-idle = Самостоятельное лечение: нет активной дозы {$retry}s
 
-cmu-squads-medic-task = Medic task: {$phase} — {$decision} | Doses: {$doses} | Shocks: {$shocks}
+cmu-squads-medic-task = Лекарственное задание: {$phase} — {$decision} Дозы: {$doses} Шокирует: {$shocks}
 
-cmu-squads-medic-none = Medic task: none
+cmu-squads-medic-none = Лекарственное задание: нет
 
-cmu-squads-activity-heading = Current activity
+cmu-squads-activity-heading = Текущая деятельность
 
-cmu-squads-activity-recorded = Last living activity
+cmu-squads-activity-recorded = Последняя живая деятельность
 
-cmu-squads-order-label = Order
+cmu-squads-order-label = Заказ
 
-cmu-squads-tactic-label = Squad tactic
+cmu-squads-tactic-label = Тактика отряда
 
-cmu-squads-action-label = Executing
+cmu-squads-action-label = исполнитель
 
-cmu-squads-status-label = Status / wait
+cmu-squads-status-label = Статус / Ждать
 
 cmu-squads-current-action = {$state} · {$owner} — {$reason}
 
-cmu-squads-order-point = {$order} · Map {$map}, {$x}, {$y}
+cmu-squads-order-point = {$order} · Карта {$map}, {$x}, {$y}
 
-cmu-squads-order-assault = Assault objective
+cmu-squads-order-assault = Цель нападения
 
-cmu-squads-order-guard = Guard / fortify destination
+cmu-squads-order-guard = Охрана / укрепление назначения
 
-cmu-squads-order-auto-patrol = Automatic local patrol
+cmu-squads-order-auto-patrol = Автоматическое местное патрулирование
 
-cmu-squads-order-patrol = Follow patrol route
+cmu-squads-order-patrol = Следуйте маршруту патрулирования
 
-cmu-squads-order-move = Move to destination
+cmu-squads-order-move = Переехать в пункт назначения
 
-cmu-squads-order-hold = Hold current position
+cmu-squads-order-hold = Задержите текущую позицию
 
-cmu-squads-order-support = Support a friendly squad
+cmu-squads-order-support = Поддержите дружный отряд
 
-cmu-squads-order-local = Local squad behavior
+cmu-squads-order-local = Поведение местного отряда
 
-cmu-squads-order-ended = AI control ended; earlier activity is shown below
+cmu-squads-order-ended = Управление ИИ закончилось; более ранняя активность показана ниже
 
-cmu-squads-phase-holding = Holding
+cmu-squads-phase-holding = Холдинг
 
-cmu-squads-phase-travelling = Travelling
+cmu-squads-phase-travelling = путешествовать
 
-cmu-squads-phase-anti-rush = Defending against a closing attacker
+cmu-squads-phase-anti-rush = Защита от закрывающего нападающего
 
-cmu-squads-phase-withdraw = Withdrawing
+cmu-squads-phase-withdraw = снимать
 
-cmu-squads-phase-anti-armor = Engaging armor
+cmu-squads-phase-anti-armor = Захватывающая броня
 
-cmu-squads-phase-fire-and-move = Fire and maneuver
+cmu-squads-phase-fire-and-move = Огонь и маневр
 
-cmu-squads-phase-assault = Assaulting the objective
+cmu-squads-phase-assault = Нападение на цель
 
-cmu-squads-phase-assault-advance = Advancing to the assault objective
+cmu-squads-phase-assault-advance = Продвижение к цели нападения
 
-cmu-squads-phase-no-active-members = No active members
+cmu-squads-phase-no-active-members = Активных членов нет
 
-cmu-squad-phase-reason-no-active-members = No nearby member is available for squad orders.
+cmu-squad-phase-reason-no-active-members = Ни один из ближайших членов не доступен для командования.
 
-cmu-squad-phase-reason-closing-melee-threat = A current or recently observed melee attacker is closing in.
+cmu-squad-phase-reason-closing-melee-threat = Нынешний или недавно замеченный нападающий ближнего боя приближается.
 
-cmu-squad-phase-reason-casualties-or-empty-weapons = Casualties or ammunition shortages require recovery.
+cmu-squad-phase-reason-casualties-or-empty-weapons = Потери или нехватка боеприпасов требуют восстановления.
 
-cmu-squad-phase-reason-vehicle-contact = An armed vehicle is engaged by an anti-armor member.
+cmu-squad-phase-reason-vehicle-contact = Вооруженным транспортным средством занимается член антиброни.
 
-cmu-squad-phase-reason-assault-contact = Engaging a contact while advancing toward the assault objective.
+cmu-squad-phase-reason-assault-contact = Взаимодействие при продвижении к цели нападения.
 
-cmu-squad-phase-reason-assault-objective = Advancing toward the ordered assault objective.
+cmu-squad-phase-reason-assault-objective = Продвижение к цели упорядоченного нападения.
 
-cmu-squad-phase-reason-moving-to-order = Following an explicit movement order.
+cmu-squad-phase-reason-moving-to-order = Следуя явному порядку движения.
 
-cmu-squad-phase-reason-no-contact = No current contact requires a combat maneuver.
+cmu-squad-phase-reason-no-contact = Никакой текущий контакт не требует боевого маневра.
 
-cmu-squad-phase-reason-engaging-contact = A contact is being engaged with covering fire and movement.
+cmu-squad-phase-reason-engaging-contact = Контакт осуществляется с прикрытием огня и движения.
 
-cmu-squads-recorded-status = Now {$condition} · Record at {$at}s · Last fire check: {$fire}
+cmu-squads-recorded-status = Сейчас {$condition} • Запись в {$at}s · Последняя пожарная проверка: {$fire}
 
-cmu-squads-status-utility-cleanup = Waiting to store or release a held utility item.
+cmu-squads-status-utility-cleanup = В ожидании хранения или выпуска удерживаемого полезного элемента.
 
-cmu-squads-status-weapon = Preparing a weapon: {$reason}
+cmu-squads-status-weapon = Готовим оружие: {$reason}
 
-cmu-squads-status-door = Door handling: {$reason}
+cmu-squads-status-door = Обработка дверей: {$reason}
 
-cmu-squads-status-traffic = Teammate clearance: {$reason}
+cmu-squads-status-traffic = Разрешение товарища по команде: {$reason}
 
-cmu-squads-status-route = The current order route is blocked.
+cmu-squads-status-route = Маршрут текущего заказа заблокирован.
 
-cmu-squads-status-cover = Maneuver coordination: {$reason}
+cmu-squads-status-cover = Маневровая координация: {$reason}
 
-cmu-squads-status-corner = Holding a dangerous corner: {$reason}
+cmu-squads-status-corner = Держать опасный угол: {$reason}
 
-cmu-squads-status-shot = Firing lane paused: {$reason}
+cmu-squads-status-shot = Огневая полоса остановилась: {$reason}
 
-cmu-squads-status-sight = Waiting for a visible aim point.
+cmu-squads-status-sight = В ожидании видимой цели.
 
-cmu-squads-status-cadence = Normal weapon fire interval: {$remaining}s remaining.
+cmu-squads-status-cadence = Нормальный интервал стрельбы: {$remaining}оставшийся.
 
-cmu-squads-status-aim = Aiming / planned firing pause: {$remaining}s remaining.
+cmu-squads-status-aim = Целевая/плановая пауза стрельбы: {$remaining}оставшийся.
 
-cmu-squads-status-none = No active wait reported. Detailed fire checks are in Diagnostics.
+cmu-squads-status-none = Об активном ожидании не сообщается. Подробные пожарные проверки проводятся в диагностике.
 
-cmu-squads-diagnostic-assault = Assault: {$decision} | Completed bounds: {$bounds}
+cmu-squads-diagnostic-assault = Нападение: {$decision} Полные границы: {$bounds}
 
-cmu-squads-diagnostic-recorded-assault = Assault: {$decision}
+cmu-squads-diagnostic-recorded-assault = Нападение: {$decision}
 
-cmu-squads-diagnostic-rocket = Launcher selection / safety: {$decision}
+cmu-squads-diagnostic-rocket = Выбор пусковой установки / безопасность: {$decision}
 
-cmu-squads-variant-mixed = Squad · balanced combined arms
+cmu-squads-variant-mixed = Отряд · сбалансированное комбинированное вооружение
 
-cmu-squads-variant-fireteam = Squad · rifle fireteam
+cmu-squads-variant-fireteam = Отряд · стрелковая группа
 
-cmu-squads-variant-patrol = Squad · mobile patrol
+cmu-squads-variant-patrol = Отряд · мобильный патруль
 
-cmu-squads-variant-defense = Squad · defensive support
+cmu-squads-variant-defense = Отряд · оборонительная поддержка
 
-cmu-squads-variant-raiders = Squad · close assault
+cmu-squads-variant-raiders = Отряд · Близкое нападение
 
-cmu-squads-variant-medical = Squad · medical escort
+cmu-squads-variant-medical = Отряд · медицинский эскорт
 
-cmu-squads-variant-rifleman = Role · rifleman (mixed rifles)
+cmu-squads-variant-rifleman = Роль: стрелок (смешанные винтовки)
 
-cmu-squads-variant-assault = Role · assault (SMGs / breachers)
+cmu-squads-variant-assault = Роль · нападение (SMGs / взломщики)
 
-cmu-squads-variant-support = Role · support (automatic weapons)
+cmu-squads-variant-support = Роль: поддержка (автоматическое оружие)
 
-cmu-squads-variant-marksman = Role · marksman (DMRs / snipers)
+cmu-squads-variant-marksman = Роль · стрелок (DMR/снайперы)
 
-cmu-squads-variant-rocketeer = Role · rocketeer (launcher + primary)
+cmu-squads-variant-rocketeer = Роль · ракетчик (запуск + первичный)
 
-cmu-squads-variant-medic = Role · medic (medical tools + primary)
+cmu-squads-variant-medic = Роль врача (медицинские инструменты + первичные)

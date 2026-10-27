@@ -1,30 +1,30 @@
-cmu-mohawk-floor = Mohawk deck
+cmu-mohawk-floor = Мохаукская палуба
 
-cmu-mohawk-roof = Mohawk upper hull plating
+cmu-mohawk-roof = Обшивка верхнего корпуса Mohawk
 
-ent-CMUMohawkApproachShadow = approaching dropship
-    .desc = A large dropship is descending toward this spot.
+ent-CMUMohawkApproachShadow = приближающийся корабль
+    .desc = Большой корабль спускается к этому месту.
 
-cmu-mohawk-ramp = Mohawk boarding ramp
+cmu-mohawk-ramp = Панорама Mohawk
 
-cmu-mohawk-camera-omaha = Omaha cameras
+cmu-mohawk-camera-omaha = Камеры Омахи
 
-cmu-mohawk-camera-midway = Midway cameras
+cmu-mohawk-camera-midway = Камеры Midway
 
-cmu-mohawk-flight-interlock = The flight interlock prevents deploying the ramp or ladder.
+cmu-mohawk-flight-interlock = Блокировка полета предотвращает развертывание пандуса или лестницы.
 
-cmu-mohawk-landing-obstructed = The landing site does not have clearance for all three decks.
+cmu-mohawk-landing-obstructed = Место посадки не имеет допуска на все три палубы.
 
-cmu-mohawk-controls-no-access = Access denied. Only pilots, engineers, and command can operate the ramp and ladder.
+cmu-mohawk-controls-no-access = Доступ запрещен. Только пилоты, инженеры и команда могут управлять пандусом и лестницей.
 
-cmu-mohawk-controls-broken = The remote connection is damaged. Repair it with a multitool.
+cmu-mohawk-controls-broken = Удаленное соединение повреждено. Отремонтируйте его с помощью мультиинструмента.
 
-cmu-mohawk-controls-unskilled = You need engineering or piloting training to repair these controls.
+cmu-mohawk-controls-unskilled = Вам нужна инженерная или пилотная подготовка для ремонта этих элементов управления.
 
-cmu-mohawk-controls-sabotaged = The controls spark as the hatch is forced open!
+cmu-mohawk-controls-sabotaged = Управление искрится, когда люк вынужден открыться!
 
-cmu-mohawk-controls-repaired = The remote connection has been restored.
+cmu-mohawk-controls-repaired = Удалённое соединение восстановлено.
 
-cmu-mohawk-gunnery-only = Fire the M90 from the dedicated gunnery console.
+cmu-mohawk-gunnery-only = Огонь M90 Из специальной оружейной консоли.
 
-cmu-mohawk-gunnery-seat = You must be buckled into the gunnery seat to fire the M90.
+cmu-mohawk-gunnery-seat = Вы должны быть пристегнуты к оружейному сиденью, чтобы стрелять M90.

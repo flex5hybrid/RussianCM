@@ -1,3 +1,3 @@
-cmu-criminal-records-status-changed = {$officer} has marked {$name} as {$status}.
+cmu-criminal-records-status-changed = {$officer} отмеченный {$name} как {$status}.
 
-cmu-criminal-records-status-changed-reason = {$officer} has marked {$name} as {$status} for {$reason}.
+cmu-criminal-records-status-changed-reason = {$officer} отмеченный {$name} как {$status} для {$reason}.

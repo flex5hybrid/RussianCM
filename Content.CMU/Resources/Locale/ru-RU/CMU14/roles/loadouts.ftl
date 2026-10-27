@@ -1,7 +1,7 @@
-au14-loadout-group-medical-jumpsuit = Medical uniforms
+au14-loadout-group-medical-jumpsuit = Медицинская форма
 
-au14-loadout-group-medical-hat = Medical headwear
+au14-loadout-group-medical-hat = Медицинские головные уборы
 
-au14-loadout-group-medical-jacket = Medical jackets
+au14-loadout-group-medical-jacket = Медицинские куртки
 
-cmu-loadout-group-corporate-skirts = Corporate skirts
+cmu-loadout-group-corporate-skirts = Корпоративные юбки

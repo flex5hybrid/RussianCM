@@ -1,3 +1,3 @@
-cmu-chevron-hide-verb = Hide chevron
+cmu-chevron-hide-verb = Скрыть шеврон
 
-cmu-chevron-show-verb = Show chevron
+cmu-chevron-show-verb = Показать шеврон

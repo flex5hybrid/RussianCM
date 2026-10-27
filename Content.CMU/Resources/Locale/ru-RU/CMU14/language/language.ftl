@@ -160,6 +160,6 @@ language-learning-show-words = Показать слова
 language-learning-hide-words = Скрыть слова
 language-learning-no-results = По вашему запросу слова не найдены.
 
-language-Beast-name = Beast
+language-Beast-name = зверь
 
-language-Beast-description = The tongue of nature.
+language-Beast-description = Язык природы.

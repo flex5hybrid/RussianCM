@@ -138,38 +138,38 @@ research-sim-ui-target-data = [head=3]Данные целевого вещест
 research-sim-ui-reference-data = [head=3]Данные эталонного вещества[/head]
 research-sim-ui-price = [bold]Стоимость операции: {$COST}[/bold]
 
-research-xrf-scanner-conflict = The sample was removed before the scan could begin.
+research-xrf-scanner-conflict = Образец был удален до начала сканирования.
 
-xrf-scanner-vial-name = vial ({ $reagent })
+xrf-scanner-vial-name = флакон{ $reagent })
 
-research-data-ui-improve-locked = {"["}color=#ffbf00][head=3]X clearance in {$TIME}m[/head][/color]
+research-data-ui-improve-locked = {"["}Цвет = #ffbf00[head=3]X клиренс {$TIME}м[/head][/color]
 
-research-sim-ui-header-status = Simulator status
+research-sim-ui-header-status = Статус симулятора
 
-research-sim-ui-header-mode = Mode
+research-sim-ui-header-mode = Режим
 
-research-sim-ui-header-actions = Actions
+research-sim-ui-header-actions = Действия
 
-research-sim-ui-header-target = Target
+research-sim-ui-header-target = Цель
 
-research-sim-ui-header-reference = Reference
+research-sim-ui-header-reference = Ссылка
 
-research-sim-ui-header-pick-recipe = Pick a recipe
+research-sim-ui-header-pick-recipe = Выберите рецепт
 
-research-sim-ui-status-not-ready = NOT READY
+research-sim-ui-status-not-ready = Не готов
 
-research-sim-ui-finalize = FINALIZE
+research-sim-ui-finalize = ФИНАЛИЗ
 
-research-sim-ui-sim-cost = ESTIMATED SIMULATING COST: {$NUM}
+research-sim-ui-sim-cost = Оценочная симулирующая стоимость: {$NUM}
 
-research-sim-ui-selected-ref-conflict = Conflicts with the selected reference property.
+research-sim-ui-selected-ref-conflict = Конфликты с выбранным эталонным свойством.
 
-research-sim-ui-selected-targ-conflict = Conflicts with the selected target property.
+research-sim-ui-selected-targ-conflict = Конфликты с выбранной целевой собственностью.
 
-research-sim-status-conflict-cancel = WARNING: {$REFERENCE} CONFLICTS WITH {$TARGET} - BOTH WILL CANCEL OUT
+research-sim-status-conflict-cancel = Предупреждение: {$REFERENCE} Конфликты с {$TARGET} - Оба сойдут с катушек
 
-research-sim-status-conflict-target-survives = WARNING: {$REFERENCE} CONFLICTS WITH {$TARGET} - {$REFERENCE} WILL NOT BE ADDED, {$TARGET} DROPS TO LEVEL {$LEVEL}
+research-sim-status-conflict-target-survives = Предупреждение: {$REFERENCE} Конфликты с {$TARGET} - {$REFERENCE} Не будет приписано, {$TARGET} Бросается в путь {$LEVEL}
 
-research-sim-status-conflict-reference-survives = WARNING: {$REFERENCE} CONFLICTS WITH {$TARGET} - {$TARGET} WILL BE REMOVED, {$REFERENCE} ADDED AT LEVEL {$LEVEL}
+research-sim-status-conflict-reference-survives = Предупреждение: {$REFERENCE} Конфликты с {$TARGET} - {$TARGET} будут удалены, {$REFERENCE} Посвящается на уровне {$LEVEL}
 
 cmu-research-reduce-cooldown = [color=#ffbf00][head=3]-60s 1CR[/head][/color]

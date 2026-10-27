@@ -1,245 +1,245 @@
-cmu-lobby-lineup-title = PARTY TIME
+cmu-lobby-lineup-title = Время вечеринок
 
-cmu-lobby-lineup-count = { $count } READY
+cmu-lobby-lineup-count = { $count } Готовый
 
-cmu-lobby-lineup-preferences = Ready up. Squad up. Show off.
+cmu-lobby-lineup-preferences = Готово. Отрядитесь. Покажи.
 
-cmu-lobby-lineup-role-hint = Preferred roles and squads • Final assignments at round start
+cmu-lobby-lineup-role-hint = Предпочтительные роли и команды • Заключительные задания на старте раунда
 
-cmu-lobby-lineup-empty = Ready up to step into the lineup.
+cmu-lobby-lineup-empty = Готовы войти в состав.
 
 cmu-lobby-lineup-section = { $section } / { $count }
 
-cmu-lobby-lineup-command = Command
+cmu-lobby-lineup-command = Командование
 
-cmu-lobby-lineup-squads = Squads / No preference
+cmu-lobby-lineup-squads = Отряды/ Никаких предпочтений
 
-cmu-lobby-lineup-support = Support
+cmu-lobby-lineup-support = Поддержка
 
-cmu-lobby-lineup-unassigned = Awaiting assignment
+cmu-lobby-lineup-unassigned = Ожидание назначения
 
-cmu-lobby-lineup-ready = READY
+cmu-lobby-lineup-ready = Готовый
 
-cmu-lobby-lineup-no-role = No preferred role
+cmu-lobby-lineup-no-role = Нет предпочтительной роли
 
-cmu-lobby-lineup-showcase = PARTY TIME
+cmu-lobby-lineup-showcase = Время вечеринок
 
-cmd-lobbyshowcase-desc = Preview a populated lobby lineup with several factions and squads, locally.
+cmd-lobbyshowcase-desc = Предварительный просмотр населенных лоббистов с несколькими фракциями и отрядами, на местном уровне.
 
-cmd-lobbyshowcase-help = Usage: lobbyshowcase [1-256] [window] [debug] [flyby|parade|supply], or lobbyshowcase off. Defaults to the player UI with 60 sample characters; you control the first character and preview chat stays local. Enable cmu.lobby_party_time for the lineup, cmu.lobby_party_time_flyby for flybys, or cmu.lobby_party_time_parade for parades and supply scrambles; each switch works independently. Use flyby, parade or supply to preview that show after arrival, debug to control any sample character and expose demo controls, window for a separate preview, or off to restore live players. Outside the lobby, queues the showcase for your next lobby connection.
+cmd-lobbyshowcase-help = Использование: lobbyshowcase [1-256] [window] [debug] [flyby|parade|supply]Или вести лоббистскую выставку. Дефолты для UI игрока с 60 выборка символов; вы управляете первым персонажем и предварительный просмотр чата остается локальным. Включите cmu.lobby party time для линейки, cmu.lobby party time flyby для пролетов или cmu.lobby party time parade для парадов и схваток поставок; каждый переключатель работает независимо. Используйте пролет, парад или поставку для предварительного просмотра, который показывается после прибытия, отладка для управления любым образцом персонажа и разоблачение демонстрационных элементов управления, окно для отдельного предварительного просмотра или для восстановления живых игроков. Вне вестибюля, очередей витрины для вашего следующего лобби связи.
 
-cmu-lobby-lineup-showcase-pending = Showcase queued. Connect to a server to display it in the lobby.
+cmu-lobby-lineup-showcase-pending = Витрина в очереди. Подключитесь к серверу, чтобы отобразить его в лобби.
 
-cmu-lobby-lineup-bay = STAGING BAY { $number } / PERSONNEL STANDING BY
+cmu-lobby-lineup-bay = Ступенька { $number } / ПЕРСОНАЛЬНЫЙ СТАНДИНГ
 
-cmu-lobby-lineup-selected = ● SELECTED
+cmu-lobby-lineup-selected = • Избранный
 
-cmu-lobby-lineup-you = ● YOU
+cmu-lobby-lineup-you = • Вы
 
-cmu-lobby-lineup-action-salute = Salute
+cmu-lobby-lineup-action-salute = Отдать честь
 
-cmu-lobby-lineup-action-wave = Wave
+cmu-lobby-lineup-action-wave = волна
 
-cmu-lobby-lineup-action-gear = Gear
+cmu-lobby-lineup-action-gear = Гир
 
-cmu-lobby-lineup-action-stretch = Stretch
+cmu-lobby-lineup-action-stretch = растяжка
 
-cmu-lobby-lineup-action-rally = Squad rally
+cmu-lobby-lineup-action-rally = Ралли отрядов
 
-cmu-lobby-lineup-rally-hint = Send a rally signal through your section. Shared 8 second cooldown.
+cmu-lobby-lineup-rally-hint = Отправьте сигнал ралли через ваш участок. общий 8 Второе охлаждение.
 
-cmu-lobby-lineup-emote-salute = ↑ SALUTING
+cmu-lobby-lineup-emote-salute = ↑ Салют
 
-cmu-lobby-lineup-emote-wave = ~ WAVING
+cmu-lobby-lineup-emote-wave = - Бежать
 
-cmu-lobby-lineup-emote-gear = + CHECKING GEAR
+cmu-lobby-lineup-emote-gear = + Чек Гир
 
-cmu-lobby-lineup-emote-stretch = ↔ STRETCHING
+cmu-lobby-lineup-emote-stretch = □ Стретчинг
 
 cmu-lobby-lineup-emote-rally = » SQUAD RALLY
 
-cmu-lobby-lineup-chat-placeholder = Say something to the lobby…
+cmu-lobby-lineup-chat-placeholder = Скажите что-нибудь в лобби.
 
-cmu-lobby-lineup-ooc = OOC
+cmu-lobby-lineup-ooc = ООК
 
-cmu-lobby-lineup-ooc-hint = Sent to the lobby's OOC chat and shown above your character.
+cmu-lobby-lineup-ooc-hint = Отправлен в чат OOC лобби и показан выше вашего персонажа.
 
-cmu-lobby-lineup-demo-placeholder = Try a local sample chat bubble…
+cmu-lobby-lineup-demo-placeholder = Попробуйте местный образец пузыря чата...
 
-cmu-lobby-lineup-send = Send
+cmu-lobby-lineup-send = Отправить
 
-cmu-lobby-lineup-bubbles = Chat bubbles
+cmu-lobby-lineup-bubbles = Чатовые пузыри
 
-cmu-lobby-lineup-ambient = Idle actions
+cmu-lobby-lineup-ambient = Бездельные действия
 
-cmu-lobby-lineup-banter = Demo banter
+cmu-lobby-lineup-banter = Демо-бантер
 
-cmu-lobby-lineup-action-unready = Ready up to chat and emote in the staging area.
+cmu-lobby-lineup-action-unready = Готовы к разговору и эмоту в области постановки.
 
-cmu-lobby-lineup-cooldown = Next action in { $seconds }s
+cmu-lobby-lineup-cooldown = Следующее действие в { $seconds }s
 
-cmu-lobby-lineup-acting = YOU / { $name } · { $section }
+cmu-lobby-lineup-acting = Ты? { $name } · { $section }
 
-cmu-lobby-lineup-standing-by = Ready to party
+cmu-lobby-lineup-standing-by = Готовы к вечеринке
 
 cmu-lobby-lineup-wait = { $seconds }s
 
-cmu-lobby-lineup-demo-acting = { $name } / Click any sample character to control them
+cmu-lobby-lineup-demo-acting = { $name } Нажмите любой символ образца, чтобы контролировать их
 
-cmu-lobby-lineup-banter-0 = Radio check. You read me?
+cmu-lobby-lineup-banter-0 = Проверка по радио. Ты меня читаешь?
 
-cmu-lobby-lineup-banter-1 = Loud and clear.
+cmu-lobby-lineup-banter-1 = Громко и ясно.
 
-cmu-lobby-lineup-banter-2 = Gear checked. Ready to move.
+cmu-lobby-lineup-banter-2 = Гир проверил. Готов к переезду.
 
-cmu-lobby-lineup-banter-3 = Save me a window seat.
+cmu-lobby-lineup-banter-3 = Прибереги мне оконное сиденье.
 
-cmu-lobby-lineup-banter-4 = Stay close out there.
+cmu-lobby-lineup-banter-4 = Не подходи близко.
 
-cmu-lobby-lineup-banter-5 = This is going to be a long drop.
+cmu-lobby-lineup-banter-5 = Это будет длинное падение.
 
-cmu-lobby-lineup-action-dance = Dance
+cmu-lobby-lineup-action-dance = Танец
 
-cmu-lobby-lineup-action-pushups = Push-ups
+cmu-lobby-lineup-action-pushups = Отжимания
 
-cmu-lobby-lineup-action-spin = Victory spin
+cmu-lobby-lineup-action-spin = Победный поворот
 
-cmu-lobby-lineup-action-disco = Disco drill
+cmu-lobby-lineup-action-disco = Дискография
 
-cmu-lobby-lineup-emote-dance = DANCE BREAK
+cmu-lobby-lineup-emote-dance = Танцующий брик
 
-cmu-lobby-lineup-emote-pushups = DROP AND GIVE ME 30
+cmu-lobby-lineup-emote-pushups = Бросай и дай мне 30
 
-cmu-lobby-lineup-emote-spin = VICTORY LAP
+cmu-lobby-lineup-emote-spin = Плоскость жертвы
 
-cmu-lobby-lineup-emote-disco = DISCO DRILL
+cmu-lobby-lineup-emote-disco = Диско Дрилл
 
-cmu-lobby-lineup-previous-move = Previous move
+cmu-lobby-lineup-previous-move = Предыдущий ход
 
-cmu-lobby-lineup-next-move = Next move
+cmu-lobby-lineup-next-move = Следующий ход
 
-cmu-lobby-lineup-perform-move = Perform
+cmu-lobby-lineup-perform-move = выступать
 
-cmu-lobby-lineup-solo-hint = Perform this move with your character.
+cmu-lobby-lineup-solo-hint = Сделайте этот шаг со своим персонажем.
 
-cmu-lobby-lineup-random-move = Random
+cmu-lobby-lineup-random-move = Случайность
 
-cmu-lobby-lineup-previous-team = Previous squad routine
+cmu-lobby-lineup-previous-team = Предыдущее расписание
 
-cmu-lobby-lineup-next-team = Next squad routine
+cmu-lobby-lineup-next-team = Следующая рутина
 
-cmu-lobby-lineup-perform-team = Rally
+cmu-lobby-lineup-perform-team = Ралли
 
-cmu-lobby-lineup-team-hint = Start this routine with everyone in your section. Shared 8 second cooldown.
+cmu-lobby-lineup-team-hint = Начните эту процедуру со всеми в вашем разделе. общий 8 Второе охлаждение.
 
-cmu-lobby-lineup-all-teams = All squads
+cmu-lobby-lineup-all-teams = Всем отрядам
 
-cmu-lobby-lineup-chat-tooltip = OOC: { $message }
+cmu-lobby-lineup-chat-tooltip = ООК: { $message }
 
-cmu-lobby-lineup-emote-moonwalk = MOONWALK
+cmu-lobby-lineup-emote-moonwalk = Лунный поход
 
-cmu-lobby-lineup-emote-robot = THE ROBOT
+cmu-lobby-lineup-emote-robot = Робот
 
-cmu-lobby-lineup-emote-shuffle = SHUFFLE
+cmu-lobby-lineup-emote-shuffle = шлюха
 
-cmu-lobby-lineup-emote-breakdance = BREAKDANCE
+cmu-lobby-lineup-emote-breakdance = БРЕКДАНС
 
-cmu-lobby-lineup-emote-headbang = HEADBANG
+cmu-lobby-lineup-emote-headbang = Глухой удар
 
-cmu-lobby-lineup-emote-guitar = AIR GUITAR
+cmu-lobby-lineup-emote-guitar = Воздушный гитара
 
-cmu-lobby-lineup-emote-backflip = BACKFLIP
+cmu-lobby-lineup-emote-backflip = Щелчок
 
-cmu-lobby-lineup-emote-shadowbox = SHADOWBOX
+cmu-lobby-lineup-emote-shadowbox = ШАДОВБОКС
 
-cmu-lobby-lineup-emote-faint = DRAMATIC FAINT
+cmu-lobby-lineup-emote-faint = ДРАМАТИЧЕСКИЙ ФИНТ
 
-cmu-lobby-lineup-emote-conga = CONGA LINE
+cmu-lobby-lineup-emote-conga = Конга Лайн
 
-cmu-lobby-lineup-emote-squad-wave = SQUAD WAVE
+cmu-lobby-lineup-emote-squad-wave = Квадратная волна
 
-cmu-lobby-lineup-emote-squad-workout = SQUAD WORKOUT
+cmu-lobby-lineup-emote-squad-workout = Квадратный бой
 
 cmu-lobby-lineup-emote-dance-off = DANCE-OFF
 
-cmu-lobby-lineup-banter-6 = Who gave command a dance floor?
+cmu-lobby-lineup-banter-6 = Кто командовал танцполом?
 
-cmu-lobby-lineup-banter-7 = This counts as training, right?
+cmu-lobby-lineup-banter-7 = Это считается тренировкой, верно?
 
-cmu-lobby-lineup-banter-8 = Thirty? I heard three.
+cmu-lobby-lineup-banter-8 = Тридцать? Я слышал три.
 
-cmu-lobby-lineup-banter-9 = Tactical moonwalk. Look it up.
+cmu-lobby-lineup-banter-9 = Тактическая лунная походка. Посмотри.
 
-cmu-lobby-lineup-banter-10 = The floor is officially contested.
+cmu-lobby-lineup-banter-10 = Пол официально оспаривается.
 
-cmu-lobby-lineup-banter-11 = Nobody put this in the report.
+cmu-lobby-lineup-banter-11 = Никто не включил это в отчет.
 
-cmu-lobby-lineup-quick = QUICK
+cmu-lobby-lineup-quick = Куик
 
-cmu-lobby-lineup-solo = SOLO
+cmu-lobby-lineup-solo = Соло
 
-cmu-lobby-lineup-team = SQUAD
+cmu-lobby-lineup-team = Квадрат
 
-cmu-lobby-lineup-emote-burst-fire = BURST FIRE
+cmu-lobby-lineup-emote-burst-fire = Огонь Бурста
 
-cmu-lobby-lineup-emote-spray = SPRAY AND PRAY
+cmu-lobby-lineup-emote-spray = Молитесь и молитесь
 
-cmu-lobby-lineup-emote-xeno-hug = XENO CUDDLES
+cmu-lobby-lineup-emote-xeno-hug = Ксено Каддлс
 
-cmu-lobby-lineup-emote-facehugger = FREE FACE HUGS
+cmu-lobby-lineup-emote-facehugger = Огромное лицо
 
-cmu-lobby-lineup-emote-chestburst = SURPRISE LARVA!
+cmu-lobby-lineup-emote-chestburst = Сюрприз Ларва!
 
-cmu-lobby-lineup-emote-morph = SECRETLY A XENO
+cmu-lobby-lineup-emote-morph = Секретно Ксено
 
-cmu-lobby-lineup-emote-dodge-roll = TACTICAL TUMBLE
+cmu-lobby-lineup-emote-dodge-roll = ТАКТИЧЕСКАЯ ТЕМБЛЯ
 
-cmu-lobby-lineup-emote-grenade = WRONG POCKET!
+cmu-lobby-lineup-emote-grenade = Неправильный пакет!
 
-cmu-lobby-lineup-emote-volley = FIRING SQUAD
+cmu-lobby-lineup-emote-volley = ПЕРВЫЙ КВАД
 
-cmu-lobby-lineup-emote-squad-xeno = XENO CHAOS
+cmu-lobby-lineup-emote-squad-xeno = Ксено Хаос
 
-cmu-lobby-lineup-arriving = MAKE AN ENTRANCE!
+cmu-lobby-lineup-arriving = Сделать вход!
 
-cmu-lobby-lineup-departing = PARTY'S OVER — SCATTER!
+cmu-lobby-lineup-departing = Вечеринка закончена - СКАТЕР!
 
-cmu-lobby-party-flyby = Flyby
+cmu-lobby-party-flyby = Флайби
 
-cmu-lobby-party-parade = Parade
+cmu-lobby-party-parade = парад
 
-cmu-lobby-party-flyby-hint = The whole readied crew fights across a battlefield with cover, grenades, tank shells and advancing xenos while the jet makes low strafing passes. Everyone sees the same show.
+cmu-lobby-party-flyby-hint = Весь подготовленный экипаж сражается на поле боя с прикрытием, гранатами, танковыми снарядами и наступающими ксеносами, в то время как самолет делает низкие перевалы. Все смотрят одно и то же шоу.
 
-cmu-lobby-party-parade-hint = Send the readied crew on a chaotic march with flips, moonwalks, flag-bearing vehicles and very poor cargo discipline.
+cmu-lobby-party-parade-hint = Отправьте подготовленный экипаж на хаотичном марше с перевернутыми, лунными походами, несущими флаг транспортными средствами и очень плохой грузовой дисциплиной.
 
-cmu-lobby-party-stop = Hide show
+cmu-lobby-party-stop = Скрыть шоу
 
 cmu-lobby-party-sounds = SFX
 
-cmu-lobby-party-sounds-hint = Engine, weapon and convoy sounds during lobby shows.
+cmu-lobby-party-sounds-hint = Двигатель, оружие и конвой звучат во время лобби-шоу.
 
-cmu-lobby-party-ready = Shows ready
+cmu-lobby-party-ready = Показы готовы
 
-cmu-lobby-party-cooldown = Next show: {$seconds}s
+cmu-lobby-party-cooldown = Следующее шоу: {$seconds}s
 
-cmu-lobby-party-playing = PARTY IN PROGRESS
+cmu-lobby-party-playing = СТОРОНА В ПРОГРЕСС
 
 cmu-lobby-party-flyby-title = CONTACT FRONT — AIR SUPPORT INBOUND
 
-cmu-lobby-party-parade-title = PASS IN REVIEW
+cmu-lobby-party-parade-title = Прохождение в Review
 
-cmu-lobby-lineup-emote-pie = TACTICAL PIE DELIVERY
+cmu-lobby-lineup-emote-pie = ТАКТИЧЕСКИЙ PIE DELIVERY
 
-cmu-lobby-lineup-emote-banana = WATCH YOUR STEP
+cmu-lobby-lineup-emote-banana = Следи за своим шагом
 
-cmu-lobby-lineup-emote-confetti = MORALE CANNON
+cmu-lobby-lineup-emote-confetti = Мораль Каннон
 
-cmu-lobby-party-supply = Supply scramble
+cmu-lobby-party-supply = Схватка поставок
 
-cmu-lobby-party-supply-hint = Unleash runaway supply carts, flying snack crates and an overenthusiastic xeno courier on the readied crew. Everyone joins the conga evacuation. Shares the parade switch and global show cooldown.
+cmu-lobby-party-supply-hint = Развяжите сбежавшие тележки, летающие ящики с закусками и сверхэнтузиастического ксенокурьера на подготовленном экипаже. Все присоединяются к эвакуации конга. Делится коммутатором парада и глобальным шоу-холодом.
 
-cmu-lobby-party-supply-title = REQUISITIONS PRESENTS: EXPRESS DELIVERY
+cmu-lobby-party-supply-title = ПРЕДУПРЕЖДЕНИЕ О ПРЕДУПРЕЖДЕНИЯХ: ЭКСПРЕССОВАНИЕ
 
-cmu-lobby-party-supply-warning = BRAKES ARE ON BACKORDER — CATCH YOUR RATIONS!
+cmu-lobby-party-supply-warning = Брекеты на баккордере — поймай свои ставки!
 
-cmu-lobby-party-supply-finale = NOTHING TO REPORT — CONGA TO THE EXIT
+cmu-lobby-party-supply-finale = Ничего не сообщать - Конга к выходу

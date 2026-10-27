@@ -1,5 +1,5 @@
-cmu-pickup-blocker-blocked = Your huge fingers fumble uselessly around the { $item }.
+cmu-pickup-blocker-blocked = Ваши огромные пальцы бесполезно скачут вокруг { $item }.
 
-cmu-ape-limb-rip-invalid = You can only rip limbs off dead bodies.
+cmu-ape-limb-rip-invalid = Вы можете только оторвать конечности от мертвых тел.
 
-cmu-ape-limb-rip-finish = You tear a limb clean off.
+cmu-ape-limb-rip-finish = Вы срываете чистую конечность.

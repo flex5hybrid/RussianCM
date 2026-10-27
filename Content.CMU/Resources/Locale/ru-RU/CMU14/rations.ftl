@@ -1,13 +1,13 @@
-ent-RMCMRETSE = TWE ORP ration
-    .desc = An Operation Ration Pack. Uses similar to USCM MRE format, but utilizes expensive preserving materials and methods and not less expensive meals from TWE cuisine.
+ent-RMCMRETSE = TWE Пайка ОРП
+    .desc = Операционный рацион. Использование, аналогичное USCM Формат MRE, но использует дорогостоящие консервирующие материалы и методы, а не менее дорогие блюда TWE Кухня.
 
-ent-RMCMREWeYaPMC = PMC CFR ration
-    .desc = A Combat Field Ration. Uses similar to USCM MRE format, but utilizes expensive preserving materials and methods and not less expensive foods, not much different from going to a restaurant. Eating better worlds.
+ent-RMCMREWeYaPMC = PMC CFR Ration
+    .desc = Боевая полевая группировка. Использование, аналогичное USCM Формат MRE, но использует дорогостоящие консервирующие материалы и методы и не менее дорогие продукты, мало чем отличается от похода в ресторан. Ешьте лучшие миры.
 
-ent-RMCBoxMRETSEEmpty = box of ORPs (x12)
-    .desc = A box of ORPs. Scrummy!
+ent-RMCBoxMRETSEEmpty = Коробка ORPs (x12)
+    .desc = Коробка ОРП. Сволочь!
     .suffix = TWE
 
-ent-RMCBoxMRETSE = box of ORPs (x12)
-    .desc = A box of ORPs. Scrummy!
-    .suffix = Filled, TWE
+ent-RMCBoxMRETSE = Коробка ORPs (x12)
+    .desc = Коробка ОРП. Сволочь!
+    .suffix = Заполненный, TWE

@@ -1,97 +1,97 @@
-cmu-overwatch-roster-group-lead = SQUAD LEAD
+cmu-overwatch-roster-group-lead = Квадратный лидер
 
-cmu-overwatch-roster-group-fireteam = FIRETEAM {$number}
+cmu-overwatch-roster-group-fireteam = Огненная команда {$number}
 
-cmu-overwatch-roster-group-fireteam-named = FIRETEAM {$number} - {$name}
+cmu-overwatch-roster-group-fireteam-named = Огненная команда {$number} - {$name}
 
-cmu-overwatch-roster-group-unassigned = UNASSIGNED
+cmu-overwatch-roster-group-unassigned = неподтвержденный
 
-cmu-overwatch-roster-group-cameras = TRIPOD CAMERAS
+cmu-overwatch-roster-group-cameras = Трипод камерас
 
 cmu-overwatch-roster-ftl = {$name} (FTL)
 
-cmu-overwatch-roster-no-camera = {$name} (NO CAM)
+cmu-overwatch-roster-no-camera = {$name} (Нет CAM)
 
-cmu-overwatch-roster-crit = UNCONSCIOUS
+cmu-overwatch-roster-crit = неосознанный
 
-cmu-overwatch-roster-feed = CAM
+cmu-overwatch-roster-feed = КАМ
 
-cmu-overwatch-roster-feed-tooltip = Watch this camera in the feeds window (up to four at once). Press again to close it.
+cmu-overwatch-roster-feed-tooltip = Смотрите эту камеру в окне подачи (до четырех сразу). Нажмите снова, чтобы закрыть его.
 
-cmu-overwatch-roster-hide = HIDE
+cmu-overwatch-roster-hide = Спрятаться
 
-cmu-overwatch-roster-show = SHOW
+cmu-overwatch-roster-show = показывать
 
 cmu-overwatch-roster-promote = SL
 
-cmu-overwatch-roster-already-leader = Already the squad leader.
+cmu-overwatch-roster-already-leader = Уже командир отряда.
 
-cmu-overwatch-roster-distance = SL {$distance}m
+cmu-overwatch-roster-distance = SL {$distance}м
 
-cmu-overwatch-roster-distance-none = SL -
+cmu-overwatch-roster-distance-none = СЛ -
 
-cmu-overwatch-supply-label = SUPPLY DROP:
+cmu-overwatch-supply-label = ВЕДУЩИЙ ДРОП:
 
-cmu-overwatch-supply-ready = READY
+cmu-overwatch-supply-ready = Готовый
 
-cmu-overwatch-supply-no-crate = NO CRATE
+cmu-overwatch-supply-no-crate = Без корки
 
-cmu-overwatch-supply-recharging = RECHARGING {$seconds}s
+cmu-overwatch-supply-recharging = Переписка {$seconds}s
 
-cmu-overwatch-feeds-title = Camera Feeds
+cmu-overwatch-feeds-title = Корм для камер
 
-cmu-overwatch-feeds-empty = NO FEED
+cmu-overwatch-feeds-empty = Без еды
 
-cmu-overwatch-feeds-no-signal = NO SIGNAL
+cmu-overwatch-feeds-no-signal = НЕТ СИГНАЛА
 
-cmu-overwatch-feeds-close = Close this feed.
+cmu-overwatch-feeds-close = Закройте корм.
 
 cmu-overwatch-feeds-night-vision = NV
 
-cmu-overwatch-feeds-night-vision-tooltip = Switch this feed to night vision.
+cmu-overwatch-feeds-night-vision-tooltip = Переключите этот корм на ночное зрение.
 
-cmu-overwatch-feeds-rec = REC
+cmu-overwatch-feeds-rec = РЭЦ
 
 cmu-overwatch-feeds-channel = CH {$channel}
 
-cmu-overwatch-feeds-speed = SP
+cmu-overwatch-feeds-speed = СП
 
-cmu-overwatch-feeds-full = All {$max} camera feeds are in use. Close one first.
+cmu-overwatch-feeds-full = Все {$max} Камеры используются. Сначала закрой.
 
-cmu-overwatch-fireteams-help = Move marines between fireteams and choose who leads each one.
+cmu-overwatch-fireteams-help = Перемещайте морских пехотинцев между командами и выберите, кто будет руководить каждой из них.
 
-cmu-overwatch-fireteams-squad-leader = SQUAD LEADER: {$name}
+cmu-overwatch-fireteams-squad-leader = Квадратный лидер: {$name}
 
-cmu-overwatch-fireteams-no-squad-leader = NO SQUAD LEADER
+cmu-overwatch-fireteams-no-squad-leader = Никакого лидера
 
-cmu-overwatch-fireteams-nickname = Fireteam nickname
+cmu-overwatch-fireteams-nickname = Прозвище Fireteam
 
-cmu-overwatch-fireteams-set-nickname = SET
+cmu-overwatch-fireteams-set-nickname = УСТАНОВИТЬ
 
-cmu-overwatch-fireteams-empty = No one assigned.
+cmu-overwatch-fireteams-empty = Никто не назначен.
 
-cmu-overwatch-fireteams-lead = LEAD
+cmu-overwatch-fireteams-lead = вести
 
-cmu-overwatch-fireteams-lead-tooltip = Make them this fireteam's leader.
+cmu-overwatch-fireteams-lead-tooltip = Сделать их лидером этой команды.
 
-cmu-overwatch-fireteams-lead-off-tooltip = Stand them down as fireteam leader.
+cmu-overwatch-fireteams-lead-off-tooltip = Уничтожьте их как лидера огневой команды.
 
-cmu-overwatch-fireteams-move-tooltip = Move to fireteam {$number}.
+cmu-overwatch-fireteams-move-tooltip = Перейти в Fireteam {$number}.
 
-cmu-overwatch-fireteams-remove = OUT
+cmu-overwatch-fireteams-remove = ВЫХОД
 
-cmu-overwatch-fireteams-remove-tooltip = Take them out of their fireteam.
+cmu-overwatch-fireteams-remove-tooltip = Выведи их из своей команды.
 
-cmu-overwatch-fireteams-auto-on = AUTO LEADERS: ON
+cmu-overwatch-fireteams-auto-on = Лидеры АВТО: НА
 
-cmu-overwatch-fireteams-auto-off = AUTO LEADERS: OFF
+cmu-overwatch-fireteams-auto-off = Лидеры АВТО: выбывшие
 
-cmu-overwatch-fireteams-auto-on-desc = A missing squad or fireteam leader is filled automatically.
+cmu-overwatch-fireteams-auto-on-desc = Пропавший командир отряда или огневой команды заполняется автоматически.
 
-cmu-overwatch-fireteams-auto-off-desc = Leaders for this squad are only chosen by hand.
+cmu-overwatch-fireteams-auto-off-desc = Руководителей для этого отряда выбирают только вручную.
 
-cmu-overwatch-fireteams-auto-tooltip = Whether this squad gets a squad leader and fireteam leaders automatically. Off, nobody is promoted unless you or the squad leader choose them.
+cmu-overwatch-fireteams-auto-tooltip = Получит ли этот отряд командира отряда и командиров огневой команды автоматически. Никто не будет повышен, если вы или командир отряда не выберете их.
 
-cmu-overwatch-feeds-focus = FOCUS
+cmu-overwatch-feeds-focus = Фокс
 
-cmu-overwatch-feeds-focus-tooltip = Show only this camera, filling the window. Press again to see all feeds.
+cmu-overwatch-feeds-focus-tooltip = Покажи только эту камеру, заполнив окно. Нажмите снова, чтобы увидеть все каналы.

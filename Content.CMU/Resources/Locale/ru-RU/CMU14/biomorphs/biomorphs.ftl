@@ -1,61 +1,61 @@
-biomorph-assimilate-self = You cannot assimilate yourself.
+biomorph-assimilate-self = Вы не можете ассимилироваться.
 
-biomorph-assimilate-not-humanoid = This target is not suitable for assimilation.
+biomorph-assimilate-not-humanoid = Эта цель не подходит для ассимиляции.
 
-biomorph-assimilate-not-incapacitated = The target must be incapacitated first.
+biomorph-assimilate-not-incapacitated = Сначала цель должна быть выведена из строя.
 
-biomorph-assimilate-already = This victim has already been assimilated.
+biomorph-assimilate-already = Эта жертва уже ассимилирована.
 
-biomorph-assimilate-synth = Synthetics have nothing for you to absorb.
+biomorph-assimilate-synth = Синтетикам нечего поглотить.
 
-biomorph-assimilate-complete = {CAPITALIZE($target)} has been assimilated.
+biomorph-assimilate-complete = {CAPITALIZE($target)} Они ассимилировались.
 
-biomorph-mimic-transform-no-profiles = You have no assimilated forms to mimic yet.
+biomorph-mimic-transform-no-profiles = У вас еще нет ассимилированных форм для имитации.
 
-biomorph-mimic-transform-revert = Your borrowed form starts to slough away!
+biomorph-mimic-transform-revert = Ваша заимствованная форма начинает отслаиваться!
 
-biomorph-mimic-on-cooldown = Your flesh is still settling — you can't take another shape yet.
+biomorph-mimic-on-cooldown = Ваша плоть все еще оседает — вы еще не можете принять другую форму.
 
-reagent-name-biomorph-venom = biomorph venom
+reagent-name-biomorph-venom = биоморфный яд
 
-reagent-desc-biomorph-venom = A clotting, dark fluid wrung from rotted flesh. Causes the standard biomorph infection in anyone unlucky enough to metabolise it.
+reagent-desc-biomorph-venom = Свертывание, темная жидкость, вырванная из гниющей плоти. Вызывает стандартную биоморфную инфекцию у любого, кому не повезло, чтобы метаболизировать ее.
 
-reagent-effect-guidebook-cause-biomorph-infection = Causes [color=#a83a55]biomorph infection[/color] with a [color=red]{NATURALPERCENT($chance, 3)}%[/color] chance per metabolism tick.
+reagent-effect-guidebook-cause-biomorph-infection = Причины [color=#a83a55]биоморфная инфекция[/color] с а [color=red]{NATURALPERCENT($chance, 3)}%[/color] Шанс на клеща метаболизма.
 
-biomorph-mimic-picker-title = Mimic - Choose Form
+biomorph-mimic-picker-title = Мимика - выберите форму
 
-biomorph-construction-picker-title = Choose Flesh Structure
+biomorph-construction-picker-title = Выберите структуру плоти
 
-biomorph-secrete-no-choice = You haven't chosen a flesh structure yet.
+biomorph-secrete-no-choice = Вы еще не выбрали структуру плоти.
 
-biomorph-secrete-nest-cooldown = Your insides still ache — you need more time before birthing another nest.
+biomorph-secrete-nest-cooldown = Ваши внутренности все еще болят — вам нужно больше времени, прежде чем родить другое гнездо.
 
-au14-job-name-biomorph-spider = Spider Biomorph
+au14-job-name-biomorph-spider = Биоморфный паук
 
-au14-job-name-biomorph-grunt = Grunt Biomorph
+au14-job-name-biomorph-grunt = Грант Биоморф
 
-au14-job-name-biomorph-skitter = Skitter Biomorph
+au14-job-name-biomorph-skitter = Скиттер Биоморф
 
-au14-job-name-biomorph-mimic = Mimic Biomorph
+au14-job-name-biomorph-mimic = Мимика Биоморф
 
-chat-radio-biomorph = BIO
+chat-radio-biomorph = Био
 
-chat-radio-biomorph-mimic = MIMIC
+chat-radio-biomorph-mimic = МИМИКА
 
-biomorph-assimilate-victim-ghosted = Your body is no longer yours. You watch, bodiless, as it stands up wearing your face.
+biomorph-assimilate-victim-ghosted = Ваше тело больше не ваше. Ты смотришь, бестелесный, как он встает на твоем лице.
 
-biomorph-infection-cured-amputation = The crawling heat under your skin gutters out... Whatever was growing there went with the limb.
+biomorph-infection-cured-amputation = Ползучее тепло под вашей кожей выталкивает... Все, что там росло, шло с конечностью.
 
-biomorph-infection-cured-counteragent = Something cold floods your veins, and the crawling heat inside you dies.
+biomorph-infection-cured-counteragent = Что-то холодное наводняет ваши вены, и ползучее тепло внутри вас умирает.
 
-reagent-name-biomorph-counteragent = experimental counteragent
+reagent-name-biomorph-counteragent = экспериментальный контрагент
 
-reagent-desc-biomorph-counteragent = A pale, opaque research fluid of Weyland-Yutani origin. Purges an active biomorph infection outright. The sure thing, at a price.
+reagent-desc-biomorph-counteragent = Бледная, непрозрачная исследовательская жидкость происхождения Вейланд-Ютани. Чистит активную биоморфную инфекцию. Конечно, по цене.
 
-reagent-effect-guidebook-cure-biomorph-infection = Cures [color=#a83a55]biomorph infection[/color].
+reagent-effect-guidebook-cure-biomorph-infection = проклятие [color=#a83a55]биоморфная инфекция[/color].
 
-biomorph-mimic-draw-venom = A syringe of clotted, dark fluid slips free of your borrowed skin.
+biomorph-mimic-draw-venom = Шприц из свернутой темной жидкости проскальзывает без вашей заимствованной кожи.
 
-name-identifier-format-biomorph = Biomorph-{$number}
+name-identifier-format-biomorph = Биоморфный{$number}
 
-au14-threat-vote-option-biomorphs = Biomorph Threat
+au14-threat-vote-option-biomorphs = Угроза мерзостей

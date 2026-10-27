@@ -609,480 +609,480 @@ cmu-yautja-blooding-call-three-mixed = Группа молодых охотни�
 
 cmu-yautja-blooding-call-pack = Охотничья стая молодых охотников (от четырёх до шести участников)
 
-cmu-yautja-cloak-sputter-rain = Rain patters across your cloak, scattering it into flickering static!
+cmu-yautja-cloak-sputter-rain = Дождевые брызги поперек плаща, рассеивая его в мерцающую статику!
 
-cmu-yautja-mark-section-selection = Mark Selected Target
+cmu-yautja-mark-section-selection = Выбранная цель Mark
 
-cmu-yautja-mark-view-instruction = Nearby Targets contains your eight latest sightings. Marked History keeps every target you have marked.
+cmu-yautja-mark-view-instruction = Ближайшие цели содержат восемь последних наблюдений. История хранит каждую цель, которую вы отметили.
 
-cmu-yautja-mark-reason-required = Reason required for thrall and blooded marks
+cmu-yautja-mark-reason-required = Причина, необходимая для ловли и кровавых меток
 
-cmu-yautja-mark-no-history = You have not marked any targets yet.
+cmu-yautja-mark-no-history = Вы еще не определили никаких целей.
 
-cmu-yautja-mark-selection-instruction = Select a target above, then choose the mark you want to apply.
+cmu-yautja-mark-selection-instruction = Выберите цель выше, затем выберите знак, который вы хотите применить.
 
-cmu-yautja-mark-known-marks = Known marks: {$marks} | {$status}
+cmu-yautja-mark-known-marks = Известные марки: {$marks} | {$status}
 
-cmu-yautja-mark-target-available = target available
+cmu-yautja-mark-target-available = Целевой доступ
 
-cmu-yautja-mark-target-unavailable = target unavailable; record retained for reference
+cmu-yautja-mark-target-unavailable = целевой недоступен; запись сохранена для справки
 
-cmu-yautja-mark-desired-kind = Mark to apply
+cmu-yautja-mark-desired-kind = Марка для применения
 
-cmu-yautja-mark-existing-kind = Your existing mark
+cmu-yautja-mark-existing-kind = Ваш существующий знак
 
-cmu-yautja-mark-no-owned-mark = You have no existing marks on this target. Use Apply New Mark above.
+cmu-yautja-mark-no-owned-mark = У вас нет следов на этой цели. Используйте новую марку выше.
 
-cmu-yautja-thrall-raise-invalid = The bracer cannot raise that. Only intact dead humanoids can serve.
+cmu-yautja-thrall-raise-invalid = Брассер не может поднять это. Только неповрежденные мертвые гуманоиды могут служить.
 
-cmu-yautja-thrall-raise-limit = Too many raised thralls already walk. The bracer cannot sustain another until one of them falls.
+cmu-yautja-thrall-raise-limit = Слишком много поднятых моллюсков уже ходят. Брюк не может выдержать другого, пока один из них не упадет.
 
-cmu-yautja-thrall-raised-others = {$target} shudders back to a twisted semblance of life!
+cmu-yautja-thrall-raised-others = {$target} Возвращаясь к извращенному подобию жизни!
 
-cmu-yautja-thrall-raised-examine = Their skin has an ashen pallor, and their movements carry a subtle wrongness.
+cmu-yautja-thrall-raised-examine = Их кожа имеет пепельную бледность, а их движения несут тонкую неправоту.
 
-cmu-yautja-thrall-raise-cover-refuse = The corrupted flesh rejects the covering.
+cmu-yautja-thrall-raise-cover-refuse = Испорченная плоть отвергает покров.
 
-cmu-yautja-thrall-takeover-notice = You are a thrall, bound in service to the Yautja hunter {$master}. They raised you from the dead; follow their orders. You are not friendly to marines or xenos.
+cmu-yautja-thrall-takeover-notice = Ты раб, связанный служением охотнику-яутдже. {$master}Они воскресили вас из мертвых, следуйте их приказам. Вы не дружелюбны к морпехам или ксеносам.
 
-cmu-yautja-thrall-ghost-role-name = Bad Blood Thrall
+cmu-yautja-thrall-ghost-role-name = Плохая кровь Thrall
 
-cmu-yautja-thrall-ghost-role-description = Raised from the dead by a Bad Blood's scavenged technology. Serve your new master.
+cmu-yautja-thrall-ghost-role-description = Воспитан из мертвых по технологии Bad Blood. Служи своему новому хозяину.
 
-cmu-yautja-thrall-ghost-role-rules = You are bound to the Bad Blood who raised you. Follow their orders. You are not friendly to marines or xenos.
+cmu-yautja-thrall-ghost-role-rules = Вы связаны с плохой кровью, которая вас воспитала. Следуйте их приказам. Вы не дружелюбны к морпехам или ксеносам.
 
-cmu-yautja-weapon-refuse = Your hands reject the crude mechanisms of human weaponry.
+cmu-yautja-weapon-refuse = Ваши руки отвергают грубые механизмы человеческого оружия.
 
-ent-CMUActionYautjaRaiseThrall = Raise Thrall
-    .desc = Revive a dead humanoid as a thrall, claimable by ghosts. Costs bracer power.
+ent-CMUActionYautjaRaiseThrall = Поднять трель
+    .desc = Оживите мертвого гуманоида как раба, на которого претендуют призраки. Затраты на электроэнергию.
 
-cmu-yautja-mark-view-recent = Nearby Targets
+cmu-yautja-mark-view-recent = Ближайшие цели
 
-cmu-yautja-mark-view-history = Marked History
+cmu-yautja-mark-view-history = Отмеченная история
 
-cmu-yautja-mark-view-recent-detail = Recently seen targets must be nearby when you place their first mark.
+cmu-yautja-mark-view-recent-detail = Недавно замеченные цели должны быть рядом, когда вы ставите свою первую отметку.
 
-cmu-yautja-mark-view-history-detail = Previous marked targets remain here. You can change or remove your marks at any distance.
+cmu-yautja-mark-view-history-detail = Предыдущие цели остаются здесь. Вы можете изменить или удалить свои следы на любом расстоянии.
 
-cmu-yautja-mark-previous = Previous
+cmu-yautja-mark-previous = Предыдущий
 
-cmu-yautja-mark-next = Next
+cmu-yautja-mark-next = Следующий
 
-cmu-yautja-mark-page = Page {$page}/{$pages}
+cmu-yautja-mark-page = Страница {$page}/{$pages}
 
-cmu-yautja-mark-history-summary = {$count} saved target record(s) on this page.
+cmu-yautja-mark-history-summary = {$count} Запись (записи) цели на этой странице.
 
-cmu-yautja-mark-change = Change Existing
+cmu-yautja-mark-change = Изменения, существующие
 
-cmu-yautja-mark-prey-detail = Claims one living humanoid or xeno as your active hunt.
+cmu-yautja-mark-prey-detail = Утверждает, что один живой гуманоид или ксено - ваша активная охота.
 
-cmu-yautja-mark-honored-detail = Identifies a humanoid whose conduct deserves honor.
+cmu-yautja-mark-honored-detail = Идентифицирует гуманоида, поведение которого заслуживает чести.
 
-cmu-yautja-mark-dishonored-detail = Identifies a humanoid or xeno as dishonorable.
+cmu-yautja-mark-dishonored-detail = Идентифицирует гуманоида или ксенона как бесчестного.
 
-cmu-yautja-mark-gear-carrier-detail = Identifies a humanoid carrying Yautja equipment.
+cmu-yautja-mark-gear-carrier-detail = Идентифицирует гуманоида, несущего оборудование Яутджи.
 
-cmu-yautja-mark-thrall-detail = Binds a non-Yautja humanoid to you as a thrall.
+cmu-yautja-mark-thrall-detail = Привязывает не-яутский гуманоид к вам как раб.
 
-cmu-yautja-mark-student-detail = Identifies another Yautja as your student.
+cmu-yautja-mark-student-detail = Идентифицирует другого Яутджу как вашего ученика.
 
-cmu-yautja-mark-blooded-detail = Recognizes a non-Yautja humanoid as blooded.
+cmu-yautja-mark-blooded-detail = Признает неяутского гуманоида кровожадным.
 
-cmu-yautja-mark-unknown-detail = Unknown designation.
+cmu-yautja-mark-unknown-detail = Неизвестное обозначение.
 
-cmu-yautja-mark-applied-target = A Yautja hunter marked you as {$kind}.
+cmu-yautja-mark-applied-target = Охотник из Яутджи отметил тебя как {$kind}.
 
-cmu-yautja-mark-changed = You changed {$target}'s mark from {$old} to {$new}.
+cmu-yautja-mark-changed = Ты изменился. {$target}знак от {$old} то {$new}.
 
-cmu-yautja-mark-changed-target = A Yautja hunter changed your mark from {$old} to {$new}.
+cmu-yautja-mark-changed-target = Охотник за яутьями изменил вашу отметку {$old} то {$new}.
 
-cmu-yautja-mark-removed = You removed {$kind} from {$target}.
+cmu-yautja-mark-removed = Вы удалили {$kind} из {$target}.
 
-cmu-yautja-mark-removed-target = A Yautja hunter removed your {$kind} mark.
+cmu-yautja-mark-removed-target = Охотник за яутьями удалил тебя {$kind} Марк.
 
-cmu-yautja-recall-bound = {$item} is now bound to you.
+cmu-yautja-recall-bound = {$item} Теперь он привязан к вам.
 
-cmu-yautja-recall-acid = Your bound weapon is covered in acid and cannot be recalled.
+cmu-yautja-recall-acid = Ваше связанное оружие покрыто кислотой, и его нельзя вспомнить.
 
-cmu-yautja-recall-contained = Your bound weapon is enclosed and cannot be recalled.
+cmu-yautja-recall-contained = Ваше связанное оружие закрыто и не может быть отозвано.
 
-cmu-yautja-recall-hands-full = You need a free hand to recall a weapon.
+cmu-yautja-recall-hands-full = Вам нужна свободная рука, чтобы вспомнить оружие.
 
-cmu-yautja-butcher-verb = Butcher corpse
+cmu-yautja-butcher-verb = Мясниковый труп
 
-reagent-name-cmu-yautja-analgesic = Yautja analgesic
+reagent-name-cmu-yautja-analgesic = Яутджа анальгетик
 
-reagent-desc-cmu-yautja-analgesic = A fast-clearing alien analgesic formulated to keep a wounded hunter functional.
+reagent-desc-cmu-yautja-analgesic = Быстро очищающийся инопланетный анальгетик, разработанный для поддержания работоспособности раненого охотника.
 
-cmu-yautja-cloak-blocked-combat = Your cloak cannot stabilize so soon after striking. Wait { $seconds } seconds.
+cmu-yautja-cloak-blocked-combat = Ваш плащ не может стабилизироваться так быстро после удара. Подожди. { $seconds } секунды.
 
-name-identifier-format-abomination = Abomination-{$number}
+name-identifier-format-abomination = мерзость-{$number}
 
-cmu-yautja-cloak-blocked-acid = You are covered in acid. The cloak cannot stabilize.
+cmu-yautja-cloak-blocked-acid = Вы покрыты кислотой. Плащ не может стабилизироваться.
 
-cmu-yautja-cloak-blocked-fire = You are on fire. The cloak cannot stabilize.
+cmu-yautja-cloak-blocked-fire = Ты в огне. Плащ не может стабилизироваться.
 
-cmu-yautja-cloak-blocked-dot = Ongoing injuries prevent the cloak from stabilizing.
+cmu-yautja-cloak-blocked-dot = Постоянные травмы препятствуют стабилизации плаща.
 
-cmu-yautja-cloak-blocked-water = Rain is hammering down on you. The cloak cannot stabilize.
+cmu-yautja-cloak-blocked-water = Дождь обрушивается на вас. Плащ не может стабилизироваться.
 
-ent-CMUActionYautjaHonorRoar = Honor Roar
+ent-CMUActionYautjaHonorRoar = Рев чести
 
-ent-CMUActionYautjaHuntingLeap = Hunting Leap
-    .desc = Play the Yautja death laugh.
+ent-CMUActionYautjaHuntingLeap = Охотничий скачок
+    .desc = Смейтесь над смертью Яутджи.
 
-cmu-job-supervisors-yautja-youngblood = the Blooded and higher ranks
+cmu-job-supervisors-yautja-youngblood = Кровавые и высшие чины
 
-cmu-job-supervisors-yautja-hellhound = your bonded master, then the Blooded and higher ranks
+cmu-job-supervisors-yautja-hellhound = Связанный хозяин, затем Кровавый и высшие чины
 
-cmu-yautja-preserve-edge-confirm = Are you sure you want to traverse the fog and escape the preserve?
+cmu-yautja-preserve-edge-confirm = Вы уверены, что хотите преодолеть туман и сбежать из заповедника?
 
-cmu-yautja-preserve-edge-yes = Yes
+cmu-yautja-preserve-edge-yes = Да
 
-cmu-yautja-preserve-edge-no = No
+cmu-yautja-preserve-edge-no = Нет
 
-cmu-yautja-preserve-edge-yautja-denied = Why would you do this?
+cmu-yautja-preserve-edge-yautja-denied = Зачем вы это сделали?
 
-cmu-yautja-preserve-edge-start = You begin to make your escape!
+cmu-yautja-preserve-edge-start = Вы начинаете убегать!
 
-cmu-yautja-preserve-edge-cancelled = You lose your way and come back.
+cmu-yautja-preserve-edge-cancelled = Ты теряешь свой путь и возвращаешься.
 
-cmu-yautja-preserve-edge-escaped = You have escaped from the hunting grounds!
+cmu-yautja-preserve-edge-escaped = Вы сбежали с охотничьих угодий!
 
-cmu-yautja-repair-damaged = It has been damaged by long use and poor maintenance.
+cmu-yautja-repair-damaged = Он был поврежден в результате длительного использования и плохого обслуживания.
 
-cmu-yautja-repair-worn = It has been worn from long use and poor maintenance.
+cmu-yautja-repair-worn = Его носят из-за длительного использования и плохого обслуживания.
 
-cmu-yautja-repair-damaged-they = They have been damaged by long use and poor maintenance.
+cmu-yautja-repair-damaged-they = Они были повреждены в результате длительного использования и плохого обслуживания.
 
-cmu-yautja-repair-reinforced = It has been reinforced to be more protective.
+cmu-yautja-repair-reinforced = Он был усилен, чтобы быть более защитным.
 
-cmu-yautja-hivebreaker-consent-title = Submit?
+cmu-yautja-hivebreaker-consent-title = Подать?
 
-cmu-yautja-hivebreaker-consent-message = Do you wish to be Enthralled by the Bad Blood?
+cmu-yautja-hivebreaker-consent-message = Вы хотите быть в восторге от плохой крови?
 
-cmu-weyu-hivebreaker-consent-message = Do you wish to be Enthralled by whoever holds the device?
+cmu-weyu-hivebreaker-consent-message = Вы хотите быть в восторге от того, кто держит устройство?
 
-cmu-weyu-hivebreaker-enthralled-target = We have been enthralled by a tallhost and its strange device!
+cmu-weyu-hivebreaker-enthralled-target = Мы были в восторге от высокого хозяина и его странного устройства!
 
-cmu-yautja-chain-gauntlet-chain-message = GET OVER HERE!
+cmu-yautja-chain-gauntlet-chain-message = Иди сюда!
 
-cmu-yautja-spike-launcher-nonyautja-examine = Looks like some kind of...mechanical donut.
+cmu-yautja-spike-launcher-nonyautja-examine = Похоже на какой-то механический пончик.
 
-cmu-yautja-power-examine-left-attachment = The left bracer attachment is {$item}.
+cmu-yautja-power-examine-left-attachment = Прикрепление левого скоба является {$item}.
 
-cmu-yautja-power-examine-right-attachment = The right bracer attachment is {$item}.
+cmu-yautja-power-examine-right-attachment = Правое крепление скобки является {$item}.
 
-cmu-yautja-power-examine-badblood = This belongs to a bad-blood!
+cmu-yautja-power-examine-badblood = Это принадлежит плохой крови!
 
-cmu-yautja-shoulder-gear-examine = {$item} is on their shoulder.
+cmu-yautja-shoulder-gear-examine = {$item} Он на их плече.
 
-cmu-yautja-cannon-pack-examine-charge = It currently has {$charge}/{$max} charge.
+cmu-yautja-cannon-pack-examine-charge = В настоящее время имеет {$charge}/{$max} Заряд.
 
-cmu-yautja-plasma-rifle-nonyautja-examine = This thing looks like an alien rifle of some kind. Strange.
+cmu-yautja-plasma-rifle-nonyautja-examine = Эта штука выглядит как инопланетная винтовка. Странно.
 
-cmu-yautja-plasma-rifle-low-power = The rifle does not have enough power remaining!
+cmu-yautja-plasma-rifle-low-power = Винтовка не имеет достаточной мощности!
 
-cmu-yautja-plasma-rifle-max-charge = The plasma rifle hums as it achieves maximum charge.
+cmu-yautja-plasma-rifle-max-charge = Плазменная винтовка гудит, достигая максимального заряда.
 
-cmu-yautja-plasma-carbine-nonyautja-examine = This thing looks like a rifle, but there's no mag or proper barrel. What the hell is it?
+cmu-yautja-plasma-carbine-nonyautja-examine = Эта штука выглядит как винтовка, но нет ни мага, ни подходящего ствола. Что это, черт возьми?
 
-cmu-yautja-plasma-carbine-primary-fire-mode = It is set to fire incendiary plasma bolts.
+cmu-yautja-plasma-carbine-primary-fire-mode = Он предназначен для запуска зажигательных плазменных болтов.
 
-cmu-yautja-plasma-carbine-secondary-fire-mode = It is set to fire impact-explosive plasma bolts.
+cmu-yautja-plasma-carbine-secondary-fire-mode = Он предназначен для запуска ударно-взрывных плазменных болтов.
 
-cmu-yautja-plasma-carbine-max-charge = The plasma carbine hums as it achieves maximum charge.
+cmu-yautja-plasma-carbine-max-charge = Плазменный карабин гудит по мере достижения максимального заряда.
 
-cmu-yautja-defoliator-nonyautja-examine = Looks like some massively fucked up alien flamethrower.
+cmu-yautja-defoliator-nonyautja-examine = Похоже на какой-то инопланетный огнемет.
 
-cmu-yautja-plasma-pistol-nonyautja-examine = This thing looks like an alien gun of some kind. Strange.
+cmu-yautja-plasma-pistol-nonyautja-examine = Эта штука выглядит как инопланетное оружие. Странно.
 
-cmu-yautja-plasma-pistol-primary-fire-mode = It is set to fire plasma bolts.
+cmu-yautja-plasma-pistol-primary-fire-mode = Он предназначен для стрельбы плазменными болтами.
 
-cmu-yautja-plasma-pistol-secondary-fire-mode = It is set to fire incendiary plasma bolts.
+cmu-yautja-plasma-pistol-secondary-fire-mode = Он предназначен для запуска зажигательных плазменных болтов.
 
-cmu-yautja-plasma-pistol-max-charge = The plasma pistol hums as it achieves maximum charge.
+cmu-yautja-plasma-pistol-max-charge = Плазменный пистолет гудит, достигая максимального заряда.
 
-cmu-yautja-chain-gauntlet-examine-combo = Stack up your combo meter by using [color=red]HARM[/color] intent, then use those combo stacks on different intents for different finishers.
+cmu-yautja-chain-gauntlet-examine-combo = Соберите комбометр с помощью [color=red]Ужас[/color] Затем используйте эти комбинированные стеки для разных целей для разных финишеров.
 
-cmu-yautja-chain-gauntlet-examine-help = Finish your combo on [color=green]HELP[/color] intent to slam the target into the ground, incapacitating them for a few seconds. Humanoids also take extra damage.
+cmu-yautja-chain-gauntlet-examine-help = Заканчивайте комбо на [color=green]помогать[/color] Они хотят забить цель в землю, выведя ее из строя на несколько секунд. Гуманоиды также получают дополнительные повреждения.
 
-cmu-yautja-chain-gauntlet-examine-shove = Finish your combo on [color=blue]SHOVE[/color] intent to throw the target away. Chains wrapped around the gauntlet will pull them back, and the special ability increases the throw range.
+cmu-yautja-chain-gauntlet-examine-shove = Заканчивайте комбо на [color=blue]ставить[/color] Намерение отбросить цель. Цепи, обернутые вокруг перчатки, будут оттягивать их назад, а особая способность увеличивает дальность броска.
 
-cmu-yautja-chain-gauntlet-examine-grab = Finish your combo on [color=orange]GRAB[/color] intent to execute the target instantly. They must already be unconscious or in critical condition.
+cmu-yautja-chain-gauntlet-examine-grab = Заканчивайте комбо на [color=orange]ГРАБ[/color] Стремление выполнить цель мгновенно. Они должны быть без сознания или в критическом состоянии.
 
-cmu-yautja-hunt-escape-console-dialog-message = Do you wish to close or open the shutter?
+cmu-yautja-hunt-escape-console-dialog-message = Вы хотите закрыть или открыть затвор?
 
-cmu-yautja-bracer-attachment-right = Right
+cmu-yautja-bracer-attachment-right = Правильно.
 
-cmu-yautja-bracer-attachment-left = Left
+cmu-yautja-bracer-attachment-left = Левый
 
-cmu-yautja-choice-wrist-blades = Wrist Blades
+cmu-yautja-choice-wrist-blades = наручный клинки
 
 cmu-yautja-choice-scimitar = Combi Scimitar
 
-cmu-yautja-choice-chain-gauntlet = Chain Gauntlet
+cmu-yautja-choice-chain-gauntlet = Скриншоты Chain Gauntlet
 
-cmu-yautja-polished-name = polished {$name}
+cmu-yautja-polished-name = отполирован {$name}
 
-cmu-yautja-scalp-name = {$name}'s scalp
+cmu-yautja-scalp-name = {$name}скальп
 
-cmu-yautja-scalp-biography-thrall = enthralled by {$master} for «{$reason}»
+cmu-yautja-scalp-biography-thrall = очарованный {$master} для ""{$reason}»
 
-cmu-yautja-scalp-biography-honored = honored for «{$reason}»
+cmu-yautja-scalp-biography-honored = Почетный для "{$reason}»
 
-cmu-yautja-scalp-biography-dishonored = marked as dishonorable for «{$reason}»
+cmu-yautja-scalp-biography-dishonored = помечены как позорные для "{$reason}»
 
-cmu-yautja-scalp-biography-gear-carrier = killed after {$hunter} marked {$them} as a thief of Yautja equipment
+cmu-yautja-scalp-biography-gear-carrier = убит после {$hunter} обозначенный {$them} Как вор оборудования Yautja
 
-cmu-yautja-scalp-biography-two = {$first} and {$second}
+cmu-yautja-scalp-biography-two = {$first} и {$second}
 
-cmu-yautja-scalp-biography-many = {$entries}, and {$last}
+cmu-yautja-scalp-biography-many = {$entries}и {$last}
 
 cmu-yautja-scalp-biography-record = {$name}: {$biography}.
 
-cmu-yautja-scalp-prey-unworthy = {$hunter} had the unpleasant duty of running {$them} to ground.
+cmu-yautja-scalp-prey-unworthy = {$hunter} Неприятная обязанность бегать {$them} На землю.
 
-cmu-yautja-scalp-prey-first = An honourable first trophy for a truly precocious child. {$hunter}'s parents must be so proud.
+cmu-yautja-scalp-prey-first = Почетный первый трофей для действительно преждевременного ребенка. {$hunter}Родители должны гордиться.
 
-cmu-yautja-scalp-prey-success = This trophy was taken by {$hunter} after a successful hunt.
+cmu-yautja-scalp-prey-success = Этот трофей был получен {$hunter} После удачной охоты.
 
-cmu-yautja-scalp-prey-fine = This fine trophy was taken by {$hunter} after a successful hunt.
+cmu-yautja-scalp-prey-fine = Прекрасный трофей был получен {$hunter} После удачной охоты.
 
-cmu-yautja-scalp-worth-shameful = This is the scalp of a human who was even more shameful than usual.
+cmu-yautja-scalp-worth-shameful = Это скальп человека, который был еще более позорным, чем обычно.
 
-cmu-yautja-scalp-worth-honorable = This is the scalp of a human.
+cmu-yautja-scalp-worth-honorable = Это скальп человека.
 
-cmu-yautja-scalp-worth-irrelevant = This is the scalp of an irrelevant human.
+cmu-yautja-scalp-worth-irrelevant = этот скальп irrelevant человеческий.
 
-cmu-yautja-scalp-worth-dishonored = This is the scalp of a human who could have been worthy, had {$they} not insisted on disgracing {$themselves}.
+cmu-yautja-scalp-worth-dishonored = Это скальп человека, который мог бы быть достойным. {$they} Не настаивает на позоре {$themselves}.
 
-cmu-yautja-scalp-worth-respectable = This is the scalp of a respectable human with blood on {$their} hands.
+cmu-yautja-scalp-worth-respectable = Это скальп уважаемого человека с кровью на голове. {$their} Руки.
 
-cmu-yautja-scalp-worth-destructive = This is the scalp of an uncommonly destructive human.
+cmu-yautja-scalp-worth-destructive = Это скальп необычно разрушительного человека.
 
-cmu-yautja-scalp-worth-worthy = This is the scalp of a truly worthy human, no doubt descended from many storied warriors. {$theirCapitalized} arms were soaked to the elbows with the life-blood of many.
+cmu-yautja-scalp-worth-worthy = Это скальп действительно достойного человека, несомненно, произошедшего от многих легендарных воинов. {$theirCapitalized} Руки были пропитаны локтями жизненной кровью многих.
 
-cmu-yautja-tracker-readout-dead = Your bracer shows a readout of deceased Yautja bio signatures{$locations}.
+cmu-yautja-tracker-readout-dead = Ваш бюстгальтер показывает считывание биоподписей умершей Яутджи{$locations}.
 
-cmu-yautja-tracker-readout-gear = Your bracer shows a readout of Yautja technology signatures{$locations}.
+cmu-yautja-tracker-readout-gear = Ваш бюстгальтер показывает считывание подписей технологии Yautja{$locations}.
 
-cmu-yautja-tracker-closest-owner =  <b>{$name}</b>'s
+cmu-yautja-tracker-closest-owner =  <b>{$name}</b>?
 
-cmu-yautja-tracker-closest-item = , a <b>{$name}</b>,
+cmu-yautja-tracker-closest-item = а <b>{$name}</b>,
 
-cmu-yautja-tracker-closest-on-top = You are directly on top of the{$signature} signature.
+cmu-yautja-tracker-closest-on-top = Вы находитесь прямо на вершине{$signature} подпись.
 
-cmu-yautja-tracker-closest-away = The closest signature{$signature} is {$distance} paces <b>{$direction}</b> in <b>{$area}</b>.
+cmu-yautja-tracker-closest-away = Ближайшая подпись{$signature} это {$distance} темп <b>{$direction}</b> в <b>{$area}</b>.
 
-cmu-yautja-tracker-no-signatures = There are no signatures that require your attention.
+cmu-yautja-tracker-no-signatures = Нет подписей, которые требуют вашего внимания.
 
-cmu-yautja-tracker-location-hunting-grounds = , <b>{$count}</b> in the hunting grounds
+cmu-yautja-tracker-location-hunting-grounds = , <b>{$count}</b> на охотничьих угодьях
 
-cmu-yautja-tracker-location-orbit = , <b>{$count}</b> in orbit
+cmu-yautja-tracker-location-orbit = , <b>{$count}</b> на орбите
 
-cmu-yautja-tracker-location-low-orbit = , <b>{$count}</b> in low orbit
+cmu-yautja-tracker-location-low-orbit = , <b>{$count}</b> на низкой орбите
 
-cmu-yautja-tracker-unknown-area = Unknown
+cmu-yautja-tracker-unknown-area = неизвестный
 
-cmu-yautja-tracker-direction-north = north
+cmu-yautja-tracker-direction-north = север
 
-cmu-yautja-tracker-direction-northeast = northeast
+cmu-yautja-tracker-direction-northeast = северо-востоку
 
-cmu-yautja-tracker-direction-southeast = southeast
+cmu-yautja-tracker-direction-southeast = юго-востоку
 
-cmu-yautja-tracker-direction-south = south
+cmu-yautja-tracker-direction-south = юг
 
-cmu-yautja-tracker-direction-southwest = southwest
+cmu-yautja-tracker-direction-southwest = юго-западу
 
-cmu-yautja-tracker-direction-northwest = northwest
+cmu-yautja-tracker-direction-northwest = северо-западу
 
-cmu-yautja-tracker-direction-unknown = unknown direction
+cmu-yautja-tracker-direction-unknown = Неизвестное направление
 
-cmu-yautja-profile-legacy-armor = {$set} legacy armor
+cmu-yautja-profile-legacy-armor = {$set} Наследственная броня
 
-cmu-yautja-profile-unique-armor = {$set} unique armor
+cmu-yautja-profile-unique-armor = {$set} Уникальная броня
 
-cmu-yautja-profile-legacy-mask = {$set} legacy bio-mask
+cmu-yautja-profile-legacy-mask = {$set} Наследственная биомаска
 
-cmu-yautja-profile-unique-mask = {$set} unique bio-mask
+cmu-yautja-profile-unique-mask = {$set} Уникальная биомаска
 
-cmu-yautja-profile-legacy-greaves = {$set} legacy greaves
+cmu-yautja-profile-legacy-greaves = {$set} унаследованный
 
-cmu-yautja-profile-unique-greaves = {$set} unique greaves
+cmu-yautja-profile-unique-greaves = {$set} уникальные гривы
 
-cmu-yautja-profile-legacy-bracers = {$set} legacy bracers
+cmu-yautja-profile-legacy-bracers = {$set} устаревшие скобки
 
-cmu-yautja-profile-clan-bracers = {$set} clan bracers
+cmu-yautja-profile-clan-bracers = {$set} клановые скобки
 
-cmu-yautja-profile-shoulder-caster = {$material} shoulder plasma caster
+cmu-yautja-profile-shoulder-caster = {$material} плечевой плазменный кастер
 
-cmu-yautja-profile-pattern = {$material} {$item}, pattern {$style}
+cmu-yautja-profile-pattern = {$material} {$item}шаблон {$style}
 
-cmu-yautja-profile-no-accessory = None
+cmu-yautja-profile-no-accessory = Нет
 
-cmu-yautja-profile-mask-accessory = {$material} mask accessory {$style}
+cmu-yautja-profile-mask-accessory = {$material} маска аксессуар {$style}
 
-cmu-yautja-profile-cape-battle-worn = battle-worn cape
+cmu-yautja-profile-cape-battle-worn = боевой плащ
 
-cmu-yautja-profile-sound-retro = Retro
+cmu-yautja-profile-sound-retro = Ретро
 
-cmu-yautja-profile-sound-modern = Modern
+cmu-yautja-profile-sound-modern = Современный
 
-cmu-yautja-caster-fire-mode = It is set to fire {$mode}.
+cmu-yautja-caster-fire-mode = Он загорелся. {$mode}.
 
-cmu-yautja-tracker-approximate-distance = approximately <b>{$distance}</b>
+cmu-yautja-tracker-approximate-distance = приблизительно <b>{$distance}</b>
 
-cmu-yautja-scalp-pronoun-male-they = he
+cmu-yautja-scalp-pronoun-male-they = он
 
-cmu-yautja-scalp-pronoun-male-their = his
+cmu-yautja-scalp-pronoun-male-their = его
 
-cmu-yautja-scalp-pronoun-male-them = him
+cmu-yautja-scalp-pronoun-male-them = он
 
-cmu-yautja-scalp-pronoun-male-themselves = himself
+cmu-yautja-scalp-pronoun-male-themselves = сам
 
-cmu-yautja-scalp-pronoun-female-they = she
+cmu-yautja-scalp-pronoun-female-they = она
 
-cmu-yautja-scalp-pronoun-female-their = her
+cmu-yautja-scalp-pronoun-female-their = ее
 
-cmu-yautja-scalp-pronoun-female-them = her
+cmu-yautja-scalp-pronoun-female-them = ее
 
-cmu-yautja-scalp-pronoun-female-themselves = herself
+cmu-yautja-scalp-pronoun-female-themselves = сама
 
-cmu-yautja-scalp-pronoun-neutral-they = they
+cmu-yautja-scalp-pronoun-neutral-they = они
 
-cmu-yautja-scalp-pronoun-neutral-their = their
+cmu-yautja-scalp-pronoun-neutral-their = их
 
-cmu-yautja-scalp-pronoun-neutral-them = them
+cmu-yautja-scalp-pronoun-neutral-them = их
 
-cmu-yautja-scalp-pronoun-neutral-themselves = themselves
+cmu-yautja-scalp-pronoun-neutral-themselves = самих себя
 
-cmu-yautja-profile-skin-tan = tan
+cmu-yautja-profile-skin-tan = смуглый
 
-cmu-yautja-profile-skin-green = green
+cmu-yautja-profile-skin-green = зелёный
 
-cmu-yautja-profile-skin-purple = purple
+cmu-yautja-profile-skin-purple = фиолетовый
 
-cmu-yautja-profile-skin-blue = blue
+cmu-yautja-profile-skin-blue = синий
 
-cmu-yautja-profile-skin-red = red
+cmu-yautja-profile-skin-red = красный
 
-cmu-yautja-profile-skin-black = black
+cmu-yautja-profile-skin-black = чёрный
 
-cmu-yautja-profile-eye-gold = gold
+cmu-yautja-profile-eye-gold = золотой
 
-cmu-yautja-profile-eye-amber = amber
+cmu-yautja-profile-eye-amber = янтарный
 
-cmu-yautja-profile-eye-copper = copper
+cmu-yautja-profile-eye-copper = медный
 
-cmu-yautja-profile-eye-red = red
+cmu-yautja-profile-eye-red = красный
 
-cmu-yautja-profile-eye-jade = jade
+cmu-yautja-profile-eye-jade = нефритовый
 
-cmu-yautja-profile-eye-slate = slate
+cmu-yautja-profile-eye-slate = сланцевый
 
-cmu-yautja-profile-eye-black = black
+cmu-yautja-profile-eye-black = чёрный
 
-cmu-yautja-profile-quills-standard = Standard
+cmu-yautja-profile-quills-standard = Стандартный
 
-cmu-yautja-profile-quills-short-thick = Short Thick
+cmu-yautja-profile-quills-short-thick = Короткие толстые
 
-cmu-yautja-profile-quills-straight-thin = Straight Thin
+cmu-yautja-profile-quills-straight-thin = Прямые тонкие
 
-cmu-yautja-profile-quills-long-tied = Long Tied
+cmu-yautja-profile-quills-long-tied = Длинные связанные
 
-cmu-yautja-profile-quills-short-thin = Short Thin
+cmu-yautja-profile-quills-short-thin = Короткие тонкие
 
-cmu-yautja-profile-quills-long-curved = Long Curved
+cmu-yautja-profile-quills-long-curved = Длинные изогнутые
 
-cmu-yautja-profile-quills-long-straight = Long Straight
+cmu-yautja-profile-quills-long-straight = Длинные прямые
 
-cmu-yautja-profile-quills-long-wide = Long Wide
+cmu-yautja-profile-quills-long-wide = Длинные широкие
 
-cmu-yautja-profile-quills-short-wide = Short Wide
+cmu-yautja-profile-quills-short-wide = Короткие широкие
 
-cmu-yautja-emp-observer = You hear a hiss and crackle!
+cmu-yautja-emp-observer = Ты слышишь шипение и треск!
 
-cmu-yautja-emp-wearer = Your bracers hiss and spark!
+cmu-yautja-emp-wearer = Твои скобы шипят и искрятся!
 
-cmu-yautja-hunting-ground-jungle-moon = Jungle Moon
+cmu-yautja-hunting-ground-jungle-moon = Луна джунглей
 
-cmu-yautja-hunting-ground-desert-moon = Desert Moon
+cmu-yautja-hunting-ground-desert-moon = Пустынная Луна
 
-cmu-yautja-hunt-call-tribal-small = Tribals (small)
+cmu-yautja-hunt-call-tribal-small = Племена (маленькие)
 
-cmu-yautja-hunt-call-tribal-group = Tribals (group)
+cmu-yautja-hunt-call-tribal-group = Племя (группа)
 
-cmu-yautja-hunt-call-tribal-large = Tribals (large)
+cmu-yautja-hunt-call-tribal-large = Племена (большие)
 
-cmu-yautja-blooding-call-solo = Solo Youngblood (one member)
+cmu-yautja-blooding-call-solo = Solo Youngblood (один участник)
 
-cmu-yautja-blooding-call-solo-experienced = Solo Youngblood (one experienced member)
+cmu-yautja-blooding-call-solo-experienced = Solo Youngblood (один опытный участник)
 
-cmu-yautja-arrow-name-inert-dynamic = inert dynamic arrow
+cmu-yautja-arrow-name-inert-dynamic = inert dynamic стрела
 
-cmu-yautja-arrow-name-explosive-dynamic = explosive dynamic arrow
+cmu-yautja-arrow-name-explosive-dynamic = Взрывная динамическая стрела
 
-cmu-yautja-arrow-name-emp-dynamic = EMP dynamic arrow
+cmu-yautja-arrow-name-emp-dynamic = Динамическая стрелка EMP
 
-cmu-yautja-arrow-name-activated-explosive = activated explosive arrow
+cmu-yautja-arrow-name-activated-explosive = activated взрывной стрела
 
-cmu-yautja-arrow-name-activated-emp = activated EMP arrow
+cmu-yautja-arrow-name-activated-emp = Активированная стрелка EMP
 
-cmu-yautja-arrow-name-snare = snare arrow
+cmu-yautja-arrow-name-snare = snare стрела
 
-cmu-yautja-arrow-name-inert = inert arrow
+cmu-yautja-arrow-name-inert = inert стрела
 
-cmu-yautja-arrow-warhead-emp = EMP
+cmu-yautja-arrow-warhead-emp = ЭМИ
 
-cmu-yautja-arrow-warhead-explosive = Explosive
+cmu-yautja-arrow-warhead-explosive = взрывной
 
-cmu-yautja-tracker-dead-signature = deceased Yautja bio signature
+cmu-yautja-tracker-dead-signature = Умерла био-подпись Яутджи
 
-cmu-yautja-hivebreaker-dishonored-reason = Enthralled to a Bad Blood!
+cmu-yautja-hivebreaker-dishonored-reason = Увлекшись плохой кровью!
 
-cmu-yautja-badblood-hive-name = Bad Blood hive
+cmu-yautja-badblood-hive-name = Плохой улей крови
 
-cmu-yautja-blooded-name-prompt = Enter the newblood's new name.
+cmu-yautja-blooded-name-prompt = Введите новое имя новой крови.
 
-cmu-yautja-blooded-name-title = Blooded Name
+cmu-yautja-blooded-name-title = Кровавое имя
 
-cmu-yautja-lobby-filter = Filter
+cmu-yautja-lobby-filter = Фильтр
 
-cmu-yautja-lobby-bracer-section-core = Retro / ebony / silver
+cmu-yautja-lobby-bracer-section-core = Ретро / эбен / серебро
 
-cmu-yautja-lobby-bracer-section-premium = Bronze / crimson / bone
+cmu-yautja-lobby-bracer-section-premium = Бронза / малина / кость
 
-cmu-yautja-lobby-bracer-section-legacy = Legacy
+cmu-yautja-lobby-bracer-section-legacy = Наследие
 
-cmu-yautja-admin-youngblood-description = Creates a Youngblood hunting-ground call without eligibility checks.
+cmu-yautja-admin-youngblood-description = Создает охотничий звонок Youngblood без проверки соответствия.
 
-cmu-yautja-admin-youngblood-help = Usage: yautja_youngblood_call <call id>
+cmu-yautja-admin-youngblood-help = Использование: yautja youngblood call <call id>
 
-cmu-yautja-admin-youngblood-no-console = No blooding console is available.
+cmu-yautja-admin-youngblood-no-console = Кровавая консоль не доступна.
 
-cmu-yautja-admin-youngblood-no-ground = No hunting ground is active. Select one at the hunter flight console first.
+cmu-yautja-admin-youngblood-no-ground = Охотничьи угодья не активны. Сначала выберите один на консоли полета охотника.
 
-cmu-yautja-admin-youngblood-no-spawn = No Yautja ship Youngblood spawn is available.
+cmu-yautja-admin-youngblood-no-spawn = Яутский корабль Youngblood не доступен.
 
-cmu-yautja-admin-youngblood-unknown-call = Unknown Youngblood call id: {$id}
+cmu-yautja-admin-youngblood-unknown-call = Оригинальное название: Youngblood Call Id: {$id}
 
-cmu-yautja-admin-youngblood-create-failed = Unable to create the Youngblood call.
+cmu-yautja-admin-youngblood-create-failed = Невозможно создать призыв Молодой Крови.
 
-cmu-yautja-admin-youngblood-created = Created Youngblood call {$id} without eligibility checks.
+cmu-yautja-admin-youngblood-created = Оригинальное название: Youngblood Call {$id} без проверок соответствия.
 
 cmu-yautja-admin-youngblood-call-id = <call id>
 
-cmu-yautja-youngblood-raffle-unavailable = This Youngblood raffle or your eligibility data is not available yet. Please try again shortly.
+cmu-yautja-youngblood-raffle-unavailable = Эта лотерея Youngblood или ваши данные о приемлемости еще не доступны. Пожалуйста, попробуйте еще раз в ближайшее время.
 
-cmu-yautja-youngblood-raffle-restricted = You cannot join this Youngblood raffle with an adult Yautja whitelist or a Youngblood role ban.
+cmu-yautja-youngblood-raffle-restricted = Вы не можете присоединиться к этой лотерее Youngblood со взрослым белым списком Yautja или запретом на роль Youngblood.
 
-cmu-yautja-youngblood-raffle-maximum = Your Youngblood playtime exceeds the eligibility range for this call (limit: {$hours} hours).
+cmu-yautja-youngblood-raffle-maximum = Время игры Youngblood превышает диапазон приемлемости для этого вызова (ограничение: {$hours} часов).
 
-cmu-yautja-youngblood-raffle-minimum = This call requires at least {$hours} hours of Youngblood experience.
+cmu-yautja-youngblood-raffle-minimum = Этот призыв требует как минимум {$hours} Многочасовой опыт Youngblood.
 
-cmu-yautja-youngblood-raffle-experience = This call requires at least {$hours} hours in squad roles and {$hours} hours as a xeno.
+cmu-yautja-youngblood-raffle-experience = Этот призыв требует как минимум {$hours} Часы в командных ролях и {$hours} Часы как ксенолог.
 
-cmu-yautja-medicomp-empty-gun = The healing gun is empty.
+cmu-yautja-medicomp-empty-gun = Оружие исцеления пусто.
 
-cmu-yautja-medicomp-stabilized = You stabilize the wounds.
+cmu-yautja-medicomp-stabilized = Вы стабилизируете раны.

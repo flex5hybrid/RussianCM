@@ -110,78 +110,78 @@ cmu-summary-petition = Петиция о забастовке собрала {$c
 cmu-vigilante-empty = В этой колонии нет заметного присутствия мафии. Будьте начеку — рано или поздно отбросы всё равно выползут наружу.
 cmu-vigilante-list = Члены мафии в этой колонии:
 
-cmu-admin-verb-make-antag = Make {$antag}
+cmu-admin-verb-make-antag = делать {$antag}
 
-reagent-name-cmu-phoron-fuel = Phoron Fuel Mix
+reagent-name-cmu-phoron-fuel = Топливная смесь Phoron
 
-reagent-desc-cmu-phoron-fuel = A stabilized phoron slurry for incinerator units. Burns long, spreads on its own, and shrugs off extinguishers.
+reagent-desc-cmu-phoron-fuel = Стабилизированная суспензия для мусоросжигательных установок. Горит долго, распространяется самостоятельно, и отмахивается от огнетушителей.
 
-roles-antag-replicant-name = Synth Replicant
+roles-antag-replicant-name = Синтетический репликант
 
-roles-antag-replicant-objective = Replace someone. Live their life. Don't get caught.
+roles-antag-replicant-objective = Замените кого-нибудь. Живи своей жизнью. Не попадайтесь.
 
-replicant-role-greeting = You are a synthetic copy that was never supposed to leave the lab. Somewhere in this colony is a life you can take: pick your target, study them, and become them when no one is watching. Your transponder card can carry their name, but only the real thing carries their access. The original cannot remain free - dead, or ruined in a cell, either serves.
+replicant-role-greeting = Ты синтетическая копия, которая никогда не должна была покидать лабораторию. Где-то в этой колонии есть жизнь, которую вы можете взять: выбрать свою цель, изучить их и стать ими, когда никто не смотрит. Ваша транспондерная карта может нести их имя, но только реальная вещь несет их доступ. Оригинал не может оставаться свободным — мертвым, или разрушенным в клетке, либо служит.
 
-replicant-already-transformed = There is no going back. This face is yours now.
+replicant-already-transformed = Нет пути назад. Теперь это лицо твое.
 
-replicant-target-lost = The pattern slips away. The link is gone.
+replicant-target-lost = Узор ускользает. Ссылка исчезла.
 
-replicant-transform-start = You begin copying the pattern. Hold still.
+replicant-transform-start = Вы начинаете копировать шаблон. Не двигайся.
 
-replicant-transform-finish = The copy settles over you. You are {$name} now.
+replicant-transform-finish = Копия оседает над вами. Ты есть {$name} Сейчас.
 
-replicant-picker-title = Assume Identity
+replicant-picker-title = Предполагать идентичность
 
-replicant-picker-description = Choose the life you intend to take. Study them well; you will have to answer for their history.
+replicant-picker-description = Выберите жизнь, которую вы собираетесь взять. Изучите их хорошо, вам придется отвечать за их историю.
 
-cmu-summary-detail-replicant-replaced = They replaced {$target}.
+cmu-summary-detail-replicant-replaced = Они заменили {$target}.
 
-cmu-summary-detail-replicant-never = They never assumed another identity.
+cmu-summary-detail-replicant-never = Они никогда не принимали другой идентичности.
 
-suspect-description-male = Male
+suspect-description-male = Мужской
 
-suspect-description-female = Female
+suspect-description-female = Женский
 
-suspect-description-young = young
+suspect-description-young = молодой
 
-suspect-description-middle-aged = middle-aged
+suspect-description-middle-aged = среднего возраста
 
-suspect-description-elder = elder
+suspect-description-elder = старейшина
 
-suspect-description-build = build
+suspect-description-build = строить
 
-suspect-description-hair = {$color} hair
+suspect-description-hair = {$color} волосы
 
-suspect-description-eyes = {$color} eyes
+suspect-description-eyes = {$color} глаза
 
-suspect-description-skin = {$color} skin
+suspect-description-skin = {$color} кожа
 
-suspect-description-reason = {$reason}. Witness description: {$description}
+suspect-description-reason = {$reason}Описание свидетеля: {$description}
 
-suspect-description-languages = Reportedly speaks: {$languages}.
+suspect-description-languages = Как сообщается, говорит: {$languages}.
 
-cmu-bounty-cover-blown = Your cover is blown. Law enforcement has your details on file. Time to disappear.
+cmu-bounty-cover-blown = Твое прикрытие взорвано. У правоохранительных органов есть ваши данные в файле. Время исчезнуть.
 
-cmu-bounty-evidence-prints = fingerprints
+cmu-bounty-evidence-prints = отпечатки пальцев
 
-cmu-bounty-evidence-dna = DNA
+cmu-bounty-evidence-dna = ДНК
 
-cmu-bounty-evidence-history = Matching {$kind} recovered from {$item}.
+cmu-bounty-evidence-history = совпадение {$kind} восстановленный из {$item}.
 
-wanted-poster-verb-text = Print wanted posters
+wanted-poster-verb-text = Печать желаемых плакатов
 
-wanted-poster-printed = Printed {$count} wanted posters.
+wanted-poster-printed = напечатанный {$count} Нужны плакаты.
 
-wanted-poster-none = No active bounties to print.
+wanted-poster-none = Никаких активных наград для печати.
 
-wanted-poster-content = {$name} is wanted by the Colonial Marshals Bureau.
+wanted-poster-content = {$name} Его разыскивает Колониальное бюро маршалов.
 
-    Bounty: ${$bounty}, payable on capture.
+    Bounty: ${$bounty}Оплата при захвате.
 
     {$reason}
 
-    Report sightings to your local Marshal's office.
+    Сообщите о наблюдениях в местный маршал.
 
-cmu-cannibal-diet = { CAPITALIZE(THE($food)) } turns your stomach. Only meat can sustain a hunger like yours.
+cmu-cannibal-diet = { CAPITALIZE(THE($food)) } Переворачивает живот. Только мясо может выдержать такой голод, как ваш.
 
-cmu-summary-header = {"["}bold][color=#d1b85d]Colony Underworld:[/color][/bold]
+cmu-summary-header = {"["}смелый[color=#d1b85d]Колония Подземный мир:[/color][/bold]

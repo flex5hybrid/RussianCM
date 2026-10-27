@@ -1,113 +1,113 @@
-cmu-workspace-dossier = Dossier
+cmu-workspace-dossier = Досье
 
-cmu-workspace-appearance = Appearance
+cmu-workspace-appearance = Внешность
 
-cmu-workspace-deployment = Deployment
+cmu-workspace-deployment = Развёртывание
 
-cmu-workspace-preview = Character preview
+cmu-workspace-preview = Персонаж Preview
 
-cmu-workspace-service-record = Service record
+cmu-workspace-service-record = Послужной список
 
-cmu-workspace-profile-tools = Profile tools
+cmu-workspace-profile-tools = Инструменты профиля
 
-cmu-workspace-done = Done
+cmu-workspace-done = Сделано
 
-cmu-workspace-close-loadout = Close role loadout
+cmu-workspace-close-loadout = Близкая загрузка роли
 
-cmu-workspace-close-roster = Close roster
+cmu-workspace-close-roster = Близкий список
 
-cmu-workspace-ghost-roles = Available ghost roles & raffles
+cmu-workspace-ghost-roles = Доступные призрачные роли и лотереи
 
-cmu-workspace-faction-colonists = COLONISTS
+cmu-workspace-faction-colonists = Колонисты
 
 cmu-workspace-faction-govfor = GOVFOR
 
 cmu-workspace-faction-opfor = OPFOR
 
-cmu-workspace-faction-other = OTHER
+cmu-workspace-faction-other = другой
 
-cmu-workspace-faction-colonists-caption = Life on the frontier
+cmu-workspace-faction-colonists-caption = Жизнь на границе
 
-cmu-workspace-faction-govfor-caption = Orders. Duty. Deployment.
+cmu-workspace-faction-govfor-caption = Приказы. Долг. Развертывание.
 
-cmu-workspace-faction-opfor-caption = A different cause
+cmu-workspace-faction-opfor-caption = Другая причина
 
-cmu-workspace-faction-other-caption = The hunt begins
+cmu-workspace-faction-other-caption = Охота начинается
 
-cmu-workspace-new-character = + New character
+cmu-workspace-new-character = + Новый персонаж
 
-cmu-workspace-body = Body
+cmu-workspace-body = Тело
 
-cmu-workspace-hair = Hair
+cmu-workspace-hair = волосы
 
-cmu-workspace-eyes = Eyes
+cmu-workspace-eyes = Глаза
 
-cmu-workspace-character-options = Character options
+cmu-workspace-character-options = Варианты персонажей
 
-cmu-workspace-bioview = PERSONNEL / BIOVIEW
+cmu-workspace-bioview = ПЕРСОННЕЛЬ / БИОВЬЕВ
 
-cmu-workspace-personal-file = Personal file
+cmu-workspace-personal-file = Персональный файл
 
-cmu-workspace-deployment-settings = Deployment settings
+cmu-workspace-deployment-settings = Параметры развертывания
 
-cmu-workspace-mode-context = Preferences are saved separately for each mode. One High priority per mode.
+cmu-workspace-mode-context = Предпочтения сохраняются отдельно для каждого режима. Один высокий приоритет в режиме.
 
-cmu-workspace-facial-hair = Facial hair
+cmu-workspace-facial-hair = волосы на лице
 
-cmu-workspace-measurements = Height / weight
+cmu-workspace-measurements = Высота/вес
 
-cmu-workspace-edit-details = Edit physical details
+cmu-workspace-edit-details = Редактировать физические детали
 
-cmu-workspace-height-feet = Height · feet
+cmu-workspace-height-feet = Высота · ноги
 
-cmu-workspace-height-inches = Height · inches
+cmu-workspace-height-inches = Высота · дюймы
 
-cmu-workspace-description-caption = Public appearance & examine text
+cmu-workspace-description-caption = Публичное появление и изучение текста
 
-cmu-workspace-medical-caption = Health history
+cmu-workspace-medical-caption = История здравоохранения
 
-cmu-workspace-criminal-caption = Legal history
+cmu-workspace-criminal-caption = Правовая история
 
-cmu-workspace-general-caption = Service & background
+cmu-workspace-general-caption = Сервис и фон
 
-cmu-workspace-equipment-identity = Equipment identity
+cmu-workspace-equipment-identity = Идентификация оборудования
 
-cmu-workspace-role-defaults = Restore role defaults
+cmu-workspace-role-defaults = Восстановление роли по умолчанию
 
-cmu-workspace-switch-character = Switch character
+cmu-workspace-switch-character = Персонаж Switch
 
-cmu-workspace-saved = All changes saved
+cmu-workspace-saved = Все изменения сохранены
 
-cmu-workspace-unsaved = Unsaved changes
+cmu-workspace-unsaved = Неспасенные изменения
 
-cmu-workspace-record-empty = No entry yet · Select to edit
+cmu-workspace-record-empty = No entry yet · Выбрать для редактирования
 
-cmu-workspace-record-placeholder = Write this record here…
+cmu-workspace-record-placeholder = Напишите эту запись здесь...
 
-cmu-workspace-save-prompt = Save your character changes before leaving?
+cmu-workspace-save-prompt = Сохраните свой характер перед уходом?
 
-cmu-workspace-frontier-operations = FRONTIER OPERATIONS / LIVE MANIFEST
+cmu-workspace-frontier-operations = Фронтовые операции / Live Manifest
 
-cmu-workspace-choose-faction = Choose your allegiance.
+cmu-workspace-choose-faction = Выбери свою верность.
 
-cmu-workspace-open-roles = {$count} roles available
+cmu-workspace-open-roles = {$count} Доступные роли
 
-cmu-workspace-position-open = Open position · Select to join
+cmu-workspace-position-open = Открытая позиция · Выберите присоединиться
 
-cmu-workspace-position-locked = Unavailable · Hover for details
+cmu-workspace-position-locked = Недоступно · Зависимость от деталей
 
-cmu-workspace-position-filled = Position filled
+cmu-workspace-position-filled = Должность заполнена
 
-cmu-workspace-no-vacancies = No open positions
+cmu-workspace-no-vacancies = Нет открытых позиций
 
-cmu-workspace-vacancies = + Join · {$count} open
+cmu-workspace-vacancies = + Присоединяйтесь {$count} открытый
 
-cmu-workspace-vacancies-unlimited = + Join · Open positions
+cmu-workspace-vacancies-unlimited = + Присоединяйтесь · Открытые позиции
 
-cmu-workspace-assigned = Assigned
+cmu-workspace-assigned = Назначенный
 
 cmu-workspace-portrait-pending = —
 
-cmu-workspace-late-join-disabled = Late joining is currently disabled.
+cmu-workspace-late-join-disabled = Позднее присоединение в настоящее время отключено.
 
-cmu-workspace-no-factions = No factions are available to join right now. This list updates automatically when deployment opens.
+cmu-workspace-no-factions = Никакие фракции не могут присоединиться прямо сейчас. Этот список обновляется автоматически при открытии развертывания.

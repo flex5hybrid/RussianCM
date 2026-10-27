@@ -1,13 +1,13 @@
-rumc-job-prefix-commander = Commander
+rumc-job-prefix-commander = Командир
 
-rumc-job-prefix-grenader = Grenader
+rumc-job-prefix-grenader = Гренадер
 
-rumc-job-prefix-machinegunner = Machinegunner
+rumc-job-prefix-machinegunner = Пулемётчик
 
-rumc-job-prefix-medic = Medic
+rumc-job-prefix-medic = Медик
 
-rumc-job-prefix-rifleman = Rifleman
+rumc-job-prefix-rifleman = Стрелок
 
-rumc-bear-greeting = You are a member of the secret BEAR PMC special operations unit working for the UPP! The connection between BEAR and the UPP is strictly confidential. Nobody should know who you are or what you are doing here. You are friendly to the UPP and hostile to VAI and Weyland-Yutani PMCs. Operate covertly. Complete your objectives. Leave no trace.
+rumc-bear-greeting = Вы являетесь членом секретного подразделения спецопераций ЧВК BEAR, работающего на UPPСвязь между медведем и UPP является строго конфиденциальной. Никто не должен знать, кто вы и что вы здесь делаете. Вы дружелюбны к UPP Враждебны к ЧВК ВАИ и Вейланд-Ютани. Действуйте скрытно. Выполняйте свои цели. Не оставляй следов.
 
-rumc-liquidator-greeting = You are a member of the UPP liquidator team! Your task is to burn out every biological threat on the colony. Not one step back!
+rumc-liquidator-greeting = Вы являетесь членом UPP Команда ликвидаторов! Ваша задача - сжечь все биологические угрозы на колонии. Ни шагу назад!

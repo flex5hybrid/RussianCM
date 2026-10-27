@@ -27,92 +27,92 @@ ent-CMUButtonKitchenOpenForBusiness = кнопка открытия столов
     .desc = Поднимает и опускает кухонные ставни. Пока они подняты, автоматы NutriCo не выдают еду и напитки.
     .suffix = Закрыто, кухня
 
-cmu-autodrink-title = NutriCo AutoDrink
+cmu-autodrink-title = NutriCo Auto-Drink
 
-cmu-autodrink-select = SELECT BEVERAGE
+cmu-autodrink-select = Избранное пиво
 
 cmu-autodrink-extras = EXTRAS
 
-cmu-autodrink-pour = POUR SIZE
+cmu-autodrink-pour = НАШИ СИЗЫ
 
 cmu-autodrink-units = { $amount }u
 
-cmu-autodrink-bay = DISPENSING BAY
+cmu-autodrink-bay = Запрещается платить
 
-cmu-autodrink-bay-empty = BAY EMPTY
+cmu-autodrink-bay-empty = Поспешите.
 
 cmu-autodrink-volume = { $volume } / { $max }u
 
-cmu-autodrink-cup = DISPENSE CUP
+cmu-autodrink-cup = ДИСПЕНС КУП
 
-cmu-autodrink-eject = TAKE CONTAINER
+cmu-autodrink-eject = Взять контейнер
 
-cmu-autodrink-no-container = Put a cup or other container in the bay first.
+cmu-autodrink-no-container = Сначала положите чашку или другой контейнер в бухту.
 
-cmu-autodrink-full = The container in the bay is full.
+cmu-autodrink-full = Контейнер в бухте заполнен.
 
-cmu-autodrink-bay-occupied = Take the container out of the bay first.
+cmu-autodrink-bay-occupied = Сначала вынесите контейнер из бухты.
 
-cmu-autodrink-coffee = black coffee
+cmu-autodrink-coffee = черный кофе
 
-cmu-autodrink-tea = hot tea
+cmu-autodrink-tea = горячий чай
 
-cmu-autodrink-chocolate-milk = chocolate milk
+cmu-autodrink-chocolate-milk = шоколадное молоко
 
-cmu-autodrink-electrolyte-orange = orange drink
+cmu-autodrink-electrolyte-orange = апельсиновый напиток
 
-cmu-autodrink-electrolyte-lemon-lime = lemon-lime drink
+cmu-autodrink-electrolyte-lemon-lime = напиток из лимонной лайма
 
-cmu-autodrink-electrolyte-grape = grape drink
+cmu-autodrink-electrolyte-grape = виноградный напиток
 
-cmu-autodrink-ice = ice
+cmu-autodrink-ice = лед
 
-cmu-autodrink-note-hot = hot
+cmu-autodrink-note-hot = горячий
 
-cmu-autodrink-note-chilled = chilled
+cmu-autodrink-note-chilled = охлажденный
 
-cmu-autochef-title = NutriCo AutoChef
+cmu-autochef-title = Руководитель NutriCo Auto
 
-cmu-autochef-menu = TODAY'S MENU
+cmu-autochef-menu = Меню сегодняшнего дня
 
-cmu-autochef-search = Search the menu...
+cmu-autochef-search = Поищите в меню...
 
-cmu-autochef-dispense = DISPENSE
+cmu-autochef-dispense = ДИСПЕНСА
 
-cmu-autochef-left = { $count } LEFT
+cmu-autochef-left = { $count } Слева
 
-cmu-autochef-sold-out = SOLD OUT
+cmu-autochef-sold-out = Продано
 
-cmu-autochef-unlimited = IN STOCK
+cmu-autochef-unlimited = Застрять
 
-cmu-autochef-nothing = Nothing on the menu matches.
+cmu-autochef-nothing = В меню ничего не совпадает.
 
-cmu-autochef-readout = > { $count } SERVINGS READY
+cmu-autochef-readout = > { $count } Служения готовы
 
-cmu-reagent-horchata-name = horchata
+cmu-reagent-horchata-name = горчата
 
-cmu-reagent-horchata-desc = A sweet, milky rice drink with cinnamon and vanilla.
+cmu-reagent-horchata-desc = Сладкий, молочный рисовый напиток с корицей и ванилью.
 
-cmu-reagent-cafe-de-olla-name = café de olla
+cmu-reagent-cafe-de-olla-name = Кафе де Олья
 
-cmu-reagent-cafe-de-olla-desc = Coffee brewed with cinnamon and piloncillo, the way it's made in a clay pot.
+cmu-reagent-cafe-de-olla-desc = Кофе, заваренный с корицей и пилонцилло, как он сделан в глиняном горшке.
 
-cmu-reagent-agua-fresca-name = agua fresca
+cmu-reagent-agua-fresca-name = агуа фреска
 
-cmu-reagent-agua-fresca-desc = A light, sweet drink of hibiscus steeped in cold water.
+cmu-reagent-agua-fresca-desc = Легкий, сладкий напиток гибискуса, погруженный в холодную воду.
 
-cmu-reagent-chai-tea-name = chai tea
+cmu-reagent-chai-tea-name = чай
 
-cmu-reagent-chai-tea-desc = Strong black tea simmered with milk and warm spices.
+cmu-reagent-chai-tea-desc = Сильный черный чай кипятили молоком и теплыми специями.
 
-cmu-reagent-mango-lassi-name = mango lassi
+cmu-reagent-mango-lassi-name = манго ласси
 
-cmu-reagent-mango-lassi-desc = A thick, cold blend of yogurt and mango.
+cmu-reagent-mango-lassi-desc = Толстая, холодная смесь йогурта и манго.
 
-cmu-reagent-kvass-name = kvass
+cmu-reagent-kvass-name = квас
 
-cmu-reagent-kvass-desc = A lightly fizzy, malty drink fermented from rye bread.
+cmu-reagent-kvass-desc = Легко газированный, солодовый напиток, ферментированный из ржаного хлеба.
 
-cmu-reagent-sbiten-name = sbiten
+cmu-reagent-sbiten-name = сбитен
 
-cmu-reagent-sbiten-desc = A hot drink of honey, water and spices.
+cmu-reagent-sbiten-desc = Горячий напиток из меда, воды и специй.

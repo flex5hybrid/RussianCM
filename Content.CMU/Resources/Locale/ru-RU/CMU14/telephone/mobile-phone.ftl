@@ -1,13 +1,13 @@
-cmu-mobile-phone-name = {$owner}'s Mobile Phone
+cmu-mobile-phone-name = {$owner}Мобильный телефон
 
-cmu-mobile-phone-rename-title = Mobile Phone
+cmu-mobile-phone-rename-title = Мобильный телефон
 
-cmu-mobile-phone-rename-prompt = Caller name
+cmu-mobile-phone-rename-prompt = Имя позывного
 
-cmu-mobile-phone-rename-invalid = The name must be between 1 and {$max} characters.
+cmu-mobile-phone-rename-invalid = Имя должно быть между 1 и {$max} персонажей.
 
-cmu-mobile-phone-renamed = The phone now shows as {$name}.
+cmu-mobile-phone-renamed = Телефон теперь выглядит как {$name}.
 
-cmu-payphone-use = Use payphone
+cmu-payphone-use = Используйте телефон
 
-cmu-payphone-name = Payphone ({$area})
+cmu-payphone-name = Платный телефон{$area})

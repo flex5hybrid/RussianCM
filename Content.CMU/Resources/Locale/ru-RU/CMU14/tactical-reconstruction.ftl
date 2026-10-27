@@ -1,14 +1,14 @@
-cmu-recon-title = Battlefield reconstruction
+cmu-recon-title = Реконструкция Battlefield
 
-cmu-recon-open = Open 3D reconstruction
+cmu-recon-open = Открыть 3D восстановление
 
-cmu-recon-floor = FLOOR / CUTAWAY
+cmu-recon-floor = Погода / Cutaway
 
 cmu-recon-level = Z { $z }
 
-cmu-recon-top-down = Top down
+cmu-recon-top-down = Сверху вниз
 
-cmu-recon-reset = Reset
+cmu-recon-reset = сброс
 
 cmu-recon-north = N
 
@@ -16,152 +16,152 @@ cmu-recon-controls = Drag: pan · Middle-drag: orbit · Scroll: zoom
 
 cmu-recon-pencil-controls = Drag: draw · Right-drag: pan · Middle-drag: orbit · Scroll: zoom
 
-cmu-recon-pencil = Pencil
+cmu-recon-pencil = Карандаш
 
-cmu-recon-draw = DRAW
+cmu-recon-draw = драу
 
-cmu-recon-draw-help = Draw or place text markers, then press Send to share. Undo and Clear also wait for Send.
+cmu-recon-draw-help = Нарисуйте или разместите текстовые маркеры, а затем нажмите Отправить, чтобы поделиться. Ундо и Клир тоже ждут отправки.
 
-cmu-recon-undo-drawing = Undo drawing
+cmu-recon-undo-drawing = Рисование
 
-cmu-recon-clear-drawings = Clear drawings
+cmu-recon-clear-drawings = Ясные чертежи
 
-cmu-recon-ink-yellow = Yellow pencil
+cmu-recon-ink-yellow = Желтый карандаш
 
-cmu-recon-ink-red = Red pencil
+cmu-recon-ink-red = Красный карандаш
 
-cmu-recon-ink-blue = Blue pencil
+cmu-recon-ink-blue = Синий карандаш
 
-cmu-recon-ink-green = Green pencil
+cmu-recon-ink-green = Зеленый карандаш
 
-cmu-recon-ink-white = White pencil
+cmu-recon-ink-white = Белый карандаш
 
-cmu-recon-ink-purple = Purple pencil
+cmu-recon-ink-purple = Фиолетовый карандаш
 
-cmu-recon-drawing-marker = Drawing { $id }
+cmu-recon-drawing-marker = Рисование { $id }
 
-cmu-recon-labels = Area names
+cmu-recon-labels = Наименования районов
 
-cmu-recon-rally-marker = Rally { $id }
+cmu-recon-rally-marker = Ралли { $id }
 
-cmu-recon-move-marker = Move { $id }
+cmu-recon-move-marker = Двигаться { $id }
 
-cmu-recon-loading = Loading map…
+cmu-recon-loading = Карта загрузки...
 
-cmu-recon-progress = Loading map · { $percent }%
+cmu-recon-progress = Карта загрузки · { $percent }%
 
-cmu-recon-live = Edits stay in your draft until you press Send.
+cmu-recon-live = Редакция останется в вашем проекте, пока вы не нажмете "Отправить".
 
-cmu-recon-no-map = No supported map is available from this table.
+cmu-recon-no-map = Поддерживаемой карты из этой таблицы нет.
 
-cmu-recon-order-invalid = The table connection changed. Reopen the map to draw.
+cmu-recon-order-invalid = Связь стола изменилась. Откройте карту, чтобы рисовать.
 
-cmu-recon-order-sent = Drawing shared.
+cmu-recon-order-sent = Рисуем совместно.
 
-cmu-recon-route-invalid = The drawing could not be saved. Try drawing inside the map.
+cmu-recon-route-invalid = Рисунок спасти не удалось. Попробуйте рисовать внутри карты.
 
-cmu-recon-order-cancelled = Drawing removed.
+cmu-recon-order-cancelled = Рисование удалено.
 
-cmu-recon-heading = TACTICAL / RECONSTRUCTION
+cmu-recon-heading = ТАКТИЧЕСКАЯ / РЕКОНСТРУКЦИЯ
 
-cmu-recon-feed = STATIC MAP
+cmu-recon-feed = Статическая карта
 
-cmu-recon-low-walls = Lower walls
+cmu-recon-low-walls = Нижние стены
 
-cmu-recon-isolate = Isolate this floor
+cmu-recon-isolate = Изолируйте этот этаж
 
-cmu-recon-legend = STRUCTURES
+cmu-recon-legend = Структуры
 
-cmu-recon-legend-wall = Walls / structure
+cmu-recon-legend-wall = Стены / Структура
 
-cmu-recon-legend-door = Doors / access
+cmu-recon-legend-door = Двери / Доступ
 
-cmu-recon-legend-glass = Glass / glazing
+cmu-recon-legend-glass = Стекло / остекление
 
-cmu-recon-view-floor = Z { $z }  /  STRUCTURAL SURVEY
+cmu-recon-view-floor = Z { $z }  / Структурное исследование
 
-cmu-recon-scale = DATUM GRID  /  4 m
+cmu-recon-scale = DATUM GRID /  4 м
 
-cmu-recon-refreshing = Showing saved map · Connecting…
+cmu-recon-refreshing = Сохраненная карта · Подключение...
 
-cmu-recon-feed-saved = SAVED MAP / CONNECTING
+cmu-recon-feed-saved = Спасенная карта / Связь
 
-cmu-recon-place-text = Text marker
+cmu-recon-place-text = Текстовый маркер
 
-cmu-recon-send = Send
+cmu-recon-send = Отправить
 
-cmu-recon-sending = Sending…
+cmu-recon-sending = Отправить...
 
-cmu-recon-send-failed = Changes were not sent. Your draft is still here; check the table connection and try again.
+cmu-recon-send-failed = Изменения не были отправлены. Ваш проект все еще здесь; проверьте подключение к таблице и попробуйте еще раз.
 
-cmu-recon-width = Pencil width
+cmu-recon-width = Ширина карандаша
 
-cmu-recon-width-value = { $width } px
+cmu-recon-width-value = { $width } х
 
-cmu-recon-text-placeholder = Marker text…
+cmu-recon-text-placeholder = Маркерный текст...
 
-cmu-recon-contacts = Tracked icons
+cmu-recon-contacts = Отслеженные иконы
 
-cmu-recon-marine-names = Marine names
+cmu-recon-marine-names = Морские имена
 
-cmu-recon-camera-title = Helmet camera — { $name }
+cmu-recon-camera-title = Шлемная камера — { $name }
 
-cmu-recon-camera-help = Close this view to return to your own camera.
+cmu-recon-camera-help = Закройте этот вид, чтобы вернуться к своей камере.
 
-cmu-recon-camera-close = Disconnect camera
+cmu-recon-camera-close = Отключите камеру
 
-cmu-recon-camera-click = Click to view this marine's overwatch camera.
+cmu-recon-camera-click = Нажмите, чтобы посмотреть камеру наблюдения этого морского пехотинца.
 
-cmu-recon-text-controls = Enter marker text, then click the map to place it · Send shares your edits
+cmu-recon-text-controls = Введите текст маркера, а затем нажмите на карту, чтобы разместить его · Отправьте свои правки
 
-cmu-recon-map = MAP
+cmu-recon-map = карта
 
-cmu-recon-layer = MAP LAYER
+cmu-recon-layer = Карта Лейера
 
-cmu-recon-layer-tooltip = Choose which drawings and tracked icons to show.
+cmu-recon-layer-tooltip = Выберите, какие рисунки и отслеживаемые иконки показать.
 
-cmu-recon-layer-both = Squad + platoon
+cmu-recon-layer-both = Отряд + взвод
 
-cmu-recon-layer-combined = All factions
+cmu-recon-layer-combined = Все фракции
 
-cmu-recon-layer-platoon = Platoon
+cmu-recon-layer-platoon = Платон
 
-cmu-recon-layer-squad = Squad
+cmu-recon-layer-squad = Отряд
 
-cmu-recon-layer-marines = Marines
+cmu-recon-layer-marines = Морпехи
 
 cmu-recon-layer-govfor = GOVFOR
 
 cmu-recon-layer-opfor = OPFOR
 
-cmu-recon-layer-xenos = Xenos
+cmu-recon-layer-xenos = Ксено
 
 cmu-recon-layer-clf = CLF
 
-cmu-recon-layer-weyu = Weyland-Yutani
+cmu-recon-layer-weyu = Вейланд-Ютани
 
-cmu-recon-layer-abomination = Abomination
+cmu-recon-layer-abomination = Абоминация
 
-cmu-recon-layer-yautja = Yautja
+cmu-recon-layer-yautja = Яутжа
 
-cmu-recon-planet = Planet
+cmu-recon-planet = Планета
 
-cmu-recon-ship = Ship
+cmu-recon-ship = Корабль
 
-cmu-recon-center-player = Center on me
+cmu-recon-center-player = Центр на мне
 
-cmu-options-tacmap = Tactical map
+cmu-options-tacmap = Тактическая карта
 
-cmu-options-tacmap-classic = Use the classic tactical map
+cmu-options-tacmap-classic = Используйте классическую тактическую карту
 
-cmu-options-tacmap-classic-tooltip = Open the original 2D tactical map instead of the reconstruction. Applies the next time you open the map.
+cmu-options-tacmap-classic-tooltip = Откройте оригинал 2D Тактическая карта вместо реконструкции. Применяется при следующем открытии карты.
 
-cmu-options-tacmap-center = Center the 3D tactical map on me when it opens
+cmu-options-tacmap-center = Центр 3D Тактическая карта, когда она открывается
 
-cmu-options-tacmap-center-tooltip = Start on your position and floor. When viewing a different map, keep that map's view instead.
+cmu-options-tacmap-center-tooltip = Начните с вашей позиции и пола. При просмотре другой карты сохраняйте вместо этого вид этой карты.
 
-cmu-recon-queen-eye-click = Click weeds to move the queen eye. Drag to pan.
+cmu-recon-queen-eye-click = Нажмите на сорняки, чтобы переместить глаз королевы. Отправляйся на сковородку.
 
-cmu-recon-xeno-watch-click = Click to watch this xenomorph.
+cmu-recon-xeno-watch-click = Нажмите, чтобы посмотреть этот ксеноморф.
 
-cmu-recon-static-map = Static map
+cmu-recon-static-map = Статическая карта

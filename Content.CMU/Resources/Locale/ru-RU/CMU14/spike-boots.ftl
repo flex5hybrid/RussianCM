@@ -1,3 +1,3 @@
-cmu-spike-boots-crush-resin = You feel the ground crack beneath your boots.
+cmu-spike-boots-crush-resin = Вы чувствуете трещину под сапогами.
 
-cmu-spike-boots-step-flesh = You feel your boots ripping through flesh.
+cmu-spike-boots-step-flesh = Ты чувствуешь, как твои ботинки рвутся сквозь плоть.

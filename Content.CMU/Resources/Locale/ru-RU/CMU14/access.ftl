@@ -25,4 +25,4 @@ cmu-access-staff-officer = Штабной офицер
 
 cmu-access-kitchen = Кухня
 
-cmu-access-opfor-squad-weapons-specialist = Opfor Squad WS
+cmu-access-opfor-squad-weapons-specialist = Отряд Opfor WS

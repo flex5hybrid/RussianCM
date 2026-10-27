@@ -43,72 +43,72 @@ cmu-robotic-limb-repair-burn-finish-others = { THE($user) } ремонтируе
 cmu-medical-tourniquet-applied-stump = Жгут наложен на культю.
 cmu-medical-tourniquet-verb-remove-stump = Снять жгут с культи
 
-cmu-medical-tourniquet-no-selected-limb = There's no arm or leg to put a tourniquet on where you're aiming.
+cmu-medical-tourniquet-no-selected-limb = Нет ни руки, ни ноги, чтобы нанести жгут туда, куда вы нацеливаетесь.
 
-cmu-medical-cast-removed-early = The cast comes off before the bone has finished setting.
+cmu-medical-cast-removed-early = Литье снимается до того, как кость закончит установку.
 
-cmu-medical-splint-verb-remove = Remove splint
+cmu-medical-splint-verb-remove = Удалить шину
 
-cmu-medical-splint-removing = Removing splint...
+cmu-medical-splint-removing = Удаление шины...
 
-cmu-medical-splint-removed = The splint is removed.
+cmu-medical-splint-removed = Шпилька удаляется.
 
-cmu-medical-body-part-picker-header = Pick a part to bandage
+cmu-medical-body-part-picker-header = Выберите часть для перевязки
 
-cmu-medical-body-part-picker-empty = No wounds to bandage.
+cmu-medical-body-part-picker-empty = Никаких ран от повязки.
 
 cmu-medical-body-part-picker-entry = { $part } — { $count } { $count ->
-    [one] wound
-   *[other] wounds
+    [one] рана
+   *[other] раны
 }
 
 cmu-medical-body-part-sided = { $side } { $type }
 
-cmu-medical-body-part-side-left = Left
+cmu-medical-body-part-side-left = Левый
 
-cmu-medical-body-part-side-right = Right
+cmu-medical-body-part-side-right = Правильно.
 
-cmu-medical-body-part-type-other = Other
+cmu-medical-body-part-type-other = другой
 
-cmu-medical-body-part-type-torso = Torso
+cmu-medical-body-part-type-torso = Туловище
 
-cmu-medical-body-part-type-head = Head
+cmu-medical-body-part-type-head = Голова
 
-cmu-medical-body-part-type-arm = Arm
+cmu-medical-body-part-type-arm = Рука
 
-cmu-medical-body-part-type-hand = Hand
+cmu-medical-body-part-type-hand = Кисть
 
-cmu-medical-body-part-type-leg = Leg
+cmu-medical-body-part-type-leg = Нога
 
-cmu-medical-body-part-type-foot = Foot
+cmu-medical-body-part-type-foot = Ступня
 
-cmu-medical-body-part-type-tail = Tail
+cmu-medical-body-part-type-tail = Хвост
 
-cmu-wound-arterial-spray = Blood squirts out of your { $part } in hot spurts!
+cmu-wound-arterial-spray = Кровь выплескивается из тебя { $part } В горячих рывках!
 
-cmu-wound-arterial-spray-stump = Blood squirts out of the stump where your { $limb } used to be!
+cmu-wound-arterial-spray-stump = Кровь брызгает из пня, где ты { $limb } Раньше было!
 
 cmu-wound-stump-limb = { $symmetry ->
-    [left] left{" "}
-    [right] right{" "}
+    [left] левый{" "}
+    [right] правильно{" "}
    *[other] {""}
 }{ $type ->
-    [arm] arm
-    [hand] hand
-    [leg] leg
-    [foot] foot
-   *[other] limb
+    [arm] рука
+    [hand] рука
+    [leg] нога
+    [foot] нога
+   *[other] конечность
 }
 
-cmu-internal-bleed-pain = You feel a stabbing pain in your {$part}!
+cmu-internal-bleed-pain = Вы чувствуете колющую боль в своем {$part}!
 
-cmu-shrapnel-move-pain = You feel shrapnel digging into your {$part} as you move.
+cmu-shrapnel-move-pain = Вы чувствуете, как осколки копаются в вашем {$part} Когда ты двигаешься.
 
 cmu-body-part-name = { $side ->
-        [left] left { $type }
-        [right] right { $type }
+        [left] левый { $type }
+        [right] правильно { $type }
        *[none] { $type ->
-            [torso] chest
+            [torso] грудь
            *[other] { $type }
         }
     }

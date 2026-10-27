@@ -5,23 +5,23 @@ cmu-force-interest-join = Проявить интерес
 cmu-force-interest-withdraw = Отозвать интерес
 cmu-force-interest-help = Как только достаточное количество подходящих игроков проявит интерес и наступит время прибытия сил, их роли станут доступны здесь. Займите роль в течение 240 секунд; невзятые роли будут удалены. Вы можете отозвать свой интерес в любое время до развёртывания.
 
-cmu-ghost-call-button = Amplify the Distress Signal
+cmu-ghost-call-button = Усильте сигнал бедствия
 
-cmu-ghost-call-status-available = Enough of the round's players are dead.
-  You may call in a small group of random arrivals.
+cmu-ghost-call-status-available = Все игроки раунда мертвы.
+  Вы можете позвонить в небольшой группе случайных прибытий.
 
-cmu-ghost-call-status-time = Signal Amplification unlocks in {$minutes} minute(s).
+cmu-ghost-call-status-time = Усиление сигнала открывается в {$minutes} минута(ы).
 
-cmu-ghost-call-status-dead = {$dead} dead of {$required} needed relative to the living.
+cmu-ghost-call-status-dead = {$dead} мертвый {$required} Потребность относительно живых.
 
-cmu-ghost-call-pending = A random arrival is already on the way
+cmu-ghost-call-pending = Случайное прибытие уже в пути
 
-cmu-ghost-call-deny-pending = {$party} was already called in and has not arrived yet. Another call becomes possible once it deploys.
+cmu-ghost-call-deny-pending = {$party} Он уже был вызван и еще не прибыл. Другой звонок становится возможным после его развертывания.
 
-cmu-ghost-call-deny-dead = Not enough dead players yet: {$dead} of {$required} needed.
+cmu-ghost-call-deny-dead = Не хватает мертвых игроков: {$dead} из {$required} необходимо.
 
-cmu-ghost-call-deny-time = Too early in the round: try again in {$minutes} minute(s).
+cmu-ghost-call-deny-time = Слишком рано в раунде: попробуйте снова {$minutes} минута(ы).
 
-cmu-ghost-call-deny-none = No random arrivals are available for this round right now.
+cmu-ghost-call-deny-none = Никаких случайных прибытий для этого раунда сейчас нет.
 
-cmu-ghost-call-sent = {$party} is on the way.
+cmu-ghost-call-sent = {$party} Уже в пути.

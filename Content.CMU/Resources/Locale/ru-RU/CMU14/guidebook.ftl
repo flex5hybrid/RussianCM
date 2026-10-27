@@ -147,156 +147,156 @@ cmu-guide-entry-lore-ua-hawks = «Ястребы»
 cmu-guide-entry-lore-ua-magpies = «Сороки»
 cmu-guide-entry-lore-ua-politics = Политика
 
-cmu-guide-entry-ship-weapons = Ship Orbital Support Weapons
+cmu-guide-entry-ship-weapons = Орбитальное оружие поддержки кораблей
 
-cmu-guide-entry-yautja-honor-code = Yautja Honor Code
+cmu-guide-entry-yautja-honor-code = Яутский кодекс чести
 
-cmu-guide-entry-yautja-honor-code-prey = Prey
+cmu-guide-entry-yautja-honor-code-prey = Добыча
 
-cmu-guide-entry-yautja-honor-code-prey-caveats = Prey Caveats
+cmu-guide-entry-yautja-honor-code-prey-caveats = Хищные пещеры
 
-cmu-guide-entry-yautja-honor-code-trophies = Trophies and Prey Welfare
+cmu-guide-entry-yautja-honor-code-trophies = Трофеи и благосостояние добычи
 
-cmu-guide-entry-yautja-honor-code-weapons = Weapons and Tools
+cmu-guide-entry-yautja-honor-code-weapons = Оружие и инструменты
 
-cmu-guide-entry-yautja-honor-code-hunting-grounds = The Hunting Grounds
+cmu-guide-entry-yautja-honor-code-hunting-grounds = Охотничьи земли
 
-cmu-guide-entry-yautja-honor-code-preserve = The Hunting Preserve
+cmu-guide-entry-yautja-honor-code-preserve = Охотничий заповедник
 
-cmu-guide-entry-yautja-honor-code-blooded = Other Blooded
+cmu-guide-entry-yautja-honor-code-blooded = Другие Кровавые
 
-cmu-guide-entry-yautja-honor-code-youngbloods = Youngbloods
+cmu-guide-entry-yautja-honor-code-youngbloods = Молодая кровь
 
-cmu-guide-entry-yautja-honor-code-thralls = Thralls
+cmu-guide-entry-yautja-honor-code-thralls = Троллс
 
-cmu-guide-entry-yautja-honor-code-gear-recovery = Gear Recovery
+cmu-guide-entry-yautja-honor-code-gear-recovery = Восстановление груши
 
-cmu-guide-entry-yautja-honor-code-lodges = Lodges
+cmu-guide-entry-yautja-honor-code-lodges = Ложи
 
-cmu-guide-entry-yautja-honor-code-hellhounds = Hellhounds
+cmu-guide-entry-yautja-honor-code-hellhounds = Адские псы
 
-cmu-guide-entry-yautja-honor-code-ancients = Ancient's Privilege
+cmu-guide-entry-yautja-honor-code-ancients = Привилегия древних
 
-cmu-guide-entry-yautja-honor-code-gamemodes = Game Modes
+cmu-guide-entry-yautja-honor-code-gamemodes = Игровые режимы
 
-cmu-guide-entry-yautja-honor-code-spirit = Spirit of the Whitelist
+cmu-guide-entry-yautja-honor-code-spirit = Дух Белого списка
 
-cmu-guide-entry-sop-physical-standards = Physical Standards
+cmu-guide-entry-sop-physical-standards = Физические стандарты
 
-cmu-guide-entry-comms-anprc-guided = AN/PRC-117G: Guided Panel
+cmu-guide-entry-comms-anprc-guided = AN/PRC-117GРуководящая группа
 
-cmu-guide-entry-comms-anprc-expert = AN/PRC-117G: Expert Faceplate
+cmu-guide-entry-comms-anprc-expert = AN/PRC-117G: Экспертная панель
 
-cmu-guide-entry-antag-rider = The Rider
+cmu-guide-entry-antag-rider = Всадник
 
-cmu-guide-entry-hearing-loss = Hearing Loss
+cmu-guide-entry-hearing-loss = Потеря слуха
 
-cmu-guide-entry-cmu = Guidebook
+cmu-guide-entry-cmu = Путеводитель
 
-cmu-guide-entry-mortar = Mortar
+cmu-guide-entry-mortar = миномет
 
-cmu-guide-entry-forensics = Forensics
+cmu-guide-entry-forensics = Судебная экспертиза
 
-cmu-guide-entry-law-enforcement = Colony Law Enforcement
+cmu-guide-entry-law-enforcement = Колония Правоохранительные органы
 
-cmu-guide-entry-engineering = Engineering
+cmu-guide-entry-engineering = Инженерное дело
 
-cmu-guide-entry-intel-objectives = Objectives and Intel
+cmu-guide-entry-intel-objectives = Цели и Intel
 
-cmu-guide-entry-objectives = Objectives
+cmu-guide-entry-objectives = Цели
 
-cmu-guide-entry-objective-points = Points
+cmu-guide-entry-objective-points = Точки
 
-cmu-guide-entry-intel = Intel
+cmu-guide-entry-intel = Разведка
 
-cmu-guide-entry-eng-gear = Engineering Equipment
+cmu-guide-entry-eng-gear = Инженерное оборудование
 
-cmu-guide-entry-eng-construction = Construction
+cmu-guide-entry-eng-construction = Строительство
 
-cmu-guide-entry-eng-power = Power
+cmu-guide-entry-eng-power = Сила
 
-cmu-guide-entry-eng-atmos = Atmospherics
+cmu-guide-entry-eng-atmos = атмосфера
 
-cmu-guide-entry-eng-hazards = Fire and Radiation
+cmu-guide-entry-eng-hazards = Огонь и радиация
 
-cmu-guide-entry-eng-fortify = Fortifications
+cmu-guide-entry-eng-fortify = Укрепления
 
-cmu-guide-entry-eng-sentries = Sentries
+cmu-guide-entry-eng-sentries = часовня
 
-cmu-guide-entry-eng-breach = Breaching and Demolition
+cmu-guide-entry-eng-breach = Проповедь и разрушение
 
-cmu-guide-entry-eng-vehicles = Vehicle Repair
+cmu-guide-entry-eng-vehicles = Ремонт автомобиля
 
-cmu-guide-entry-eng-synths = Repairing Synthetics
+cmu-guide-entry-eng-synths = Ремонт синтетики
 
-cmu-guide-entry-eng-ordnance = Ordnance
+cmu-guide-entry-eng-ordnance = Оружие
 
-cmu-guide-entry-towers = Comms and Sensor Towers
+cmu-guide-entry-towers = Сенсорные и сенсорные башни
 
-cmu-guide-entry-law-roles = Roles and Gear
+cmu-guide-entry-law-roles = Роли и Gear
 
-cmu-guide-entry-law-basics = Colony Law Basics
+cmu-guide-entry-law-basics = Основы колониального права
 
-cmu-guide-entry-law-dispatch = Radio and 911 Dispatch
+cmu-guide-entry-law-dispatch = Радио и 911 отправка
 
-cmu-guide-entry-law-records = Criminal Records
+cmu-guide-entry-law-records = Уголовные рекорды
 
-cmu-guide-entry-law-arrests = Arrests and Holding
+cmu-guide-entry-law-arrests = Аресты и удержание
 
-cmu-guide-entry-defibrillators = Defibrillators
+cmu-guide-entry-defibrillators = Дефибрилляторы
 
-cmu-guide-entry-medical = Medical
+cmu-guide-entry-medical = Медицина
 
-cmu-guide-entry-medical-infantry = Start Here: Infantry First Aid
+cmu-guide-entry-medical-infantry = Оригинальное название: Infantry First Aid
 
-cmu-guide-entry-medical-diagnosis = Diagnosis
+cmu-guide-entry-medical-diagnosis = диагностика
 
-cmu-guide-entry-medical-wounds = Wounds and Bleeding
+cmu-guide-entry-medical-wounds = Раны и кровотечение
 
-cmu-guide-entry-medical-blood = Blood and Transfusions
+cmu-guide-entry-medical-blood = Кровь и переливание
 
-cmu-guide-entry-medical-field-care = Field Treatment Mixing
+cmu-guide-entry-medical-field-care = Смешивание полевой обработки
 
-cmu-guide-entry-medical-bones = Fractures
+cmu-guide-entry-medical-bones = Переломы
 
-cmu-guide-entry-medical-pain = Pain
+cmu-guide-entry-medical-pain = Боль
 
-cmu-guide-entry-medical-organs = Organs
+cmu-guide-entry-medical-organs = Органы
 
-cmu-guide-entry-medical-surgery = Surgery
+cmu-guide-entry-medical-surgery = хирургия
 
-cmu-guide-entry-surgery-opening = Opening and Closing
+cmu-guide-entry-surgery-opening = Открытие и закрытие
 
-cmu-guide-entry-surgery-fractures = Fracture Surgery
+cmu-guide-entry-surgery-fractures = хирургия перелома
 
-cmu-guide-entry-surgery-bleeding = Bleeding, Burns and Complications
+cmu-guide-entry-surgery-bleeding = Кровотечение, ожоги и осложнения
 
-cmu-guide-entry-surgery-organs = Organ Surgery
+cmu-guide-entry-surgery-organs = Хирургия органов
 
-cmu-guide-entry-surgery-limbs = Limb Surgery
+cmu-guide-entry-surgery-limbs = Хирургия конечностей
 
-cmu-guide-entry-medical-resuscitation = Resuscitation
+cmu-guide-entry-medical-resuscitation = реанимация
 
-cmu-guide-entry-medical-machines = Medical Machines
+cmu-guide-entry-medical-machines = Медицинские машины
 
-cmu-guide-entry-medications = Medications
+cmu-guide-entry-medications = Лекарства
 
-cmu-guide-entry-meds-brute = Brute Medications
+cmu-guide-entry-meds-brute = Грубые лекарства
 
-cmu-guide-entry-meds-burn = Burn Medications
+cmu-guide-entry-meds-burn = Сжигать лекарства
 
-cmu-guide-entry-meds-toxin = Toxin Medications
+cmu-guide-entry-meds-toxin = Лекарства от токсинов
 
-cmu-guide-entry-meds-suffocation = Suffocation Medications
+cmu-guide-entry-meds-suffocation = Лекарства от удушья
 
-cmu-guide-entry-meds-pain = Painkillers
+cmu-guide-entry-meds-pain = Обезболивающие
 
-cmu-guide-entry-meds-organs = Organ and Bone Medications
+cmu-guide-entry-meds-organs = Органические и костные лекарства
 
-cmu-guide-entry-meds-other = Other Medications
+cmu-guide-entry-meds-other = Другие лекарства
 
 cmu-guide-entry-overwatch = Overwatch
 
-cmu-guide-entry-fob-security = FOB Security Squad
+cmu-guide-entry-fob-security = Отряд безопасности FOB
 
-cmu-guide-entry-skills = Skills
+cmu-guide-entry-skills = Навыки

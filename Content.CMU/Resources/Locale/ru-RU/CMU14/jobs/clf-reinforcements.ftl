@@ -6,11 +6,11 @@ cmu-clf-prefix-engineer = ENG
 cmu-clf-prefix-specialist = SPC
 cmu-clf-rules = Вы состоите в Колониальном освободительном фронте. Вы враждебны колониальной администрации и её вооружённым силам и нейтральны ко всем остальным, пока вас не спровоцируют. Следуйте за лидером своей ячейки и освободите колонию.
 
-ent-CMUCLFJeepCrew = CLF jeep crew
-    .desc = A civilian CLF fighter sent to crew an HMG jeep.
+ent-CMUCLFJeepCrew = CLF экипаж джипа
+    .desc = гражданский CLF Боец отправил экипажу джип HMG.
 
-cmu-clf-jeep-crew-name = CLF Jeep Crew
+cmu-clf-jeep-crew-name = CLF Экипаж Jeep
 
-cmu-clf-jeep-party-name = CLF HMG Jeep Crew
+cmu-clf-jeep-party-name = CLF Экипаж HMG Jeep
 
-cmu-clf-jeep-crew-description = You and another civilian CLF fighter have been sent with an HMG jeep to support the local cell. Pilot your dropship to the colony, unload the jeep, and report to the cell leader for orders.
+cmu-clf-jeep-crew-description = Вы и еще один гражданский CLF Боец был отправлен с джипом HMG для поддержки местной ячейки. Пилотируйте свой дропшип в колонию, разгружайте джип и отчитывайтесь перед руководителем камеры за приказы.

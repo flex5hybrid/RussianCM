@@ -1,1 +1,1 @@
-cmu-construction-condition-minimum-skill = You need {$skill} skill {$level} or higher to build this.
+cmu-construction-condition-minimum-skill = Тебе нужно {$skill} умение {$level} Или выше, чтобы построить это.

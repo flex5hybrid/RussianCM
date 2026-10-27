@@ -1,163 +1,163 @@
-marking-CMUUnderwearBoxersWhite = White Boxers
+marking-CMUUnderwearBoxersWhite = Белые боксеры
 
-marking-CMUUnderwearBoxersWhite-white_boxers = White Boxers
+marking-CMUUnderwearBoxersWhite-white_boxers = Белые боксеры
 
-marking-CMUUnderwearBoxersBlack = Black Boxers
+marking-CMUUnderwearBoxersBlack = Черные боксеры
 
-marking-CMUUnderwearBoxersBlack-black_boxers = Black Boxers
+marking-CMUUnderwearBoxersBlack-black_boxers = Черные боксеры
 
-marking-CMUUnderwearBoxersBlue = Blue Boxers
+marking-CMUUnderwearBoxersBlue = Синие боксеры
 
-marking-CMUUnderwearBoxersBlue-blue_boxers = Blue Boxers
+marking-CMUUnderwearBoxersBlue-blue_boxers = Синие боксеры
 
-marking-CMUUnderwearBoxersPink = Pink Boxers
+marking-CMUUnderwearBoxersPink = Розовые боксеры
 
-marking-CMUUnderwearBoxersPink-pink_boxers = Pink Boxers
+marking-CMUUnderwearBoxersPink-pink_boxers = Розовые боксеры
 
-marking-CMUUnderwearBoxersGrey = Grey Boxers
+marking-CMUUnderwearBoxersGrey = Серые боксеры
 
-marking-CMUUnderwearBoxersGrey-grey_boxers = Grey Boxers
+marking-CMUUnderwearBoxersGrey-grey_boxers = Серые боксеры
 
-marking-CMUUnderwearBoxersOlive = Olive Boxers
+marking-CMUUnderwearBoxersOlive = Оливковые боксеры
 
-marking-CMUUnderwearBoxersOlive-marine_boxers = Olive Boxers
+marking-CMUUnderwearBoxersOlive-marine_boxers = Оливковые боксеры
 
-marking-CMUUnderwearBriefsWhite = White Briefs
+marking-CMUUnderwearBriefsWhite = Белые брифинги
 
-marking-CMUUnderwearBriefsWhite-white_briefs = White Briefs
+marking-CMUUnderwearBriefsWhite-white_briefs = Белые брифинги
 
-marking-CMUUnderwearBriefsBlack = Black Briefs
+marking-CMUUnderwearBriefsBlack = Черные сводки
 
-marking-CMUUnderwearBriefsBlack-black_briefs = Black Briefs
+marking-CMUUnderwearBriefsBlack-black_briefs = Черные сводки
 
-marking-CMUUnderwearPantiesWhite = White Panties
+marking-CMUUnderwearPantiesWhite = Белые трусики
 
-marking-CMUUnderwearPantiesWhite-white_satin = White Panties
+marking-CMUUnderwearPantiesWhite-white_satin = Белые трусики
 
-marking-CMUUnderwearPantiesBlack = Black Panties
+marking-CMUUnderwearPantiesBlack = Черные трусы
 
-marking-CMUUnderwearPantiesBlack-black_satin = Black Panties
+marking-CMUUnderwearPantiesBlack-black_satin = Черные трусы
 
-marking-CMUUnderwearPantiesGrey = Grey Panties
+marking-CMUUnderwearPantiesGrey = Серые трусики
 
-marking-CMUUnderwearPantiesGrey-grey_satin = Grey Panties
+marking-CMUUnderwearPantiesGrey-grey_satin = Серые трусики
 
-marking-CMUUndershirtOlive = Olive Undershirt
+marking-CMUUndershirtOlive = Оливковая футболка
 
-marking-CMUUndershirtOlive-undershirt_uscm_short = Olive Undershirt
+marking-CMUUndershirtOlive-undershirt_uscm_short = Оливковая футболка
 
-marking-CMUUndershirtOliveSleeveless = Olive Undershirt (Sleeveless)
+marking-CMUUndershirtOliveSleeveless = Оливковая футболка (без рукавов)
 
-marking-CMUUndershirtOliveSleeveless-undershirt_uscm = Olive Undershirt (Sleeveless)
+marking-CMUUndershirtOliveSleeveless-undershirt_uscm = Оливковая футболка (без рукавов)
 
-marking-CMUUndershirtBlack = Black Undershirt
+marking-CMUUndershirtBlack = Черная футболка
 
-marking-CMUUndershirtBlack-undershirt_black_short = Black Undershirt
+marking-CMUUndershirtBlack-undershirt_black_short = Черная футболка
 
-marking-CMUUndershirtBlackSleeveless = Black Undershirt (Sleeveless)
+marking-CMUUndershirtBlackSleeveless = Черная футболка (без рукавов)
 
-marking-CMUUndershirtBlackSleeveless-undershirt_black = Black Undershirt (Sleeveless)
+marking-CMUUndershirtBlackSleeveless-undershirt_black = Черная футболка (без рукавов)
 
-marking-CMUUndershirtWhite = White Undershirt
+marking-CMUUndershirtWhite = Белая футболка
 
-marking-CMUUndershirtWhite-undershirt_short = White Undershirt
+marking-CMUUndershirtWhite-undershirt_short = Белая футболка
 
-marking-CMUUndershirtWhiteSleeveless = White Undershirt (Sleeveless)
+marking-CMUUndershirtWhiteSleeveless = Белая футболка (без рукавов)
 
-marking-CMUUndershirtWhiteSleeveless-undershirt = White Undershirt (Sleeveless)
+marking-CMUUndershirtWhiteSleeveless-undershirt = Белая футболка (без рукавов)
 
-marking-CMUUndershirtGrey = Grey Undershirt
+marking-CMUUndershirtGrey = Серая футболка
 
-marking-CMUUndershirtGrey-undershirt_grey_short = Grey Undershirt
+marking-CMUUndershirtGrey-undershirt_grey_short = Серая футболка
 
-marking-CMUUndershirtGreySleeveless = Grey Undershirt (Sleeveless)
+marking-CMUUndershirtGreySleeveless = Серая футболка (без рукавов)
 
-marking-CMUUndershirtGreySleeveless-undershirt_grey = Grey Undershirt (Sleeveless)
+marking-CMUUndershirtGreySleeveless-undershirt_grey = Серая футболка (без рукавов)
 
-marking-CMUUndershirtRed = Red Undershirt
+marking-CMUUndershirtRed = Красная футболка
 
-marking-CMUUndershirtRed-undershirt_uscm_red = Red Undershirt
+marking-CMUUndershirtRed-undershirt_uscm_red = Красная футболка
 
-marking-CMUUndershirtYellow = Yellow Undershirt
+marking-CMUUndershirtYellow = Желтая футболка
 
-marking-CMUUndershirtYellow-undershirt_uscm_yellow = Yellow Undershirt
+marking-CMUUndershirtYellow-undershirt_uscm_yellow = Желтая футболка
 
-marking-CMUUndershirtBlue = Blue Undershirt
+marking-CMUUndershirtBlue = Голубая футболка
 
-marking-CMUUndershirtBlue-undershirt_uscm_blue = Blue Undershirt
+marking-CMUUndershirtBlue-undershirt_uscm_blue = Голубая футболка
 
-marking-CMUBraWhite = White Bra
+marking-CMUBraWhite = Белый браслет
 
-marking-CMUBraWhite-bra_white = White Bra
+marking-CMUBraWhite-bra_white = Белый браслет
 
-marking-CMUBraBlack = Black Bra
+marking-CMUBraBlack = Черный браслет
 
-marking-CMUBraBlack-bra_black = Black Bra
+marking-CMUBraBlack-bra_black = Черный браслет
 
-marking-CMUSportsBraOlive = Olive Sports Bra
+marking-CMUSportsBraOlive = Оливковый спортивный браслет
 
-marking-CMUSportsBraOlive-sports_uscm = Olive Sports Bra
+marking-CMUSportsBraOlive-sports_uscm = Оливковый спортивный браслет
 
-marking-CMUSportsBraWhite = White Sports Bra
+marking-CMUSportsBraWhite = Белый спортивный браслет
 
-marking-CMUSportsBraWhite-sports_white = White Sports Bra
+marking-CMUSportsBraWhite-sports_white = Белый спортивный браслет
 
-marking-CMUSportsBraBlack = Black Sports Bra
+marking-CMUSportsBraBlack = Черный спортивный браслет
 
-marking-CMUSportsBraBlack-sports_black = Black Sports Bra
+marking-CMUSportsBraBlack-sports_black = Черный спортивный браслет
 
-marking-CMUUnderwearBoxersDarkGreen = Dark Green Boxers
+marking-CMUUnderwearBoxersDarkGreen = Темно-зеленые боксеры
 
-marking-CMUUnderwearBoxersDarkGreen-upp_boxers = Dark Green Boxers
+marking-CMUUnderwearBoxersDarkGreen-upp_boxers = Темно-зеленые боксеры
 
-marking-CMUUnderwearBoxersBrown = Brown Boxers
+marking-CMUUnderwearBoxersBrown = Браун боксеры
 
-marking-CMUUnderwearBoxersBrown-army_boxers = Brown Boxers
+marking-CMUUnderwearBoxersBrown-army_boxers = Браун боксеры
 
-marking-CMUUndershirtTelnyashkaBlue = Blue Telnyashka
+marking-CMUUndershirtTelnyashkaBlue = Синий Тельняшко
 
-marking-CMUUndershirtTelnyashkaBlue-telnyashka_blue = Blue Telnyashka
+marking-CMUUndershirtTelnyashkaBlue-telnyashka_blue = Синий Тельняшко
 
-marking-CMUUndershirtTelnyashkaGreen = Green Telnyashka
+marking-CMUUndershirtTelnyashkaGreen = Зеленый Тельняшко
 
-marking-CMUUndershirtTelnyashkaGreen-telnyashka_green = Green Telnyashka
+marking-CMUUndershirtTelnyashkaGreen-telnyashka_green = Зеленый Тельняшко
 
-marking-CMUUndershirtTelnyashkaRed = Red Telnyashka
+marking-CMUUndershirtTelnyashkaRed = Красный Тельняшко
 
-marking-CMUUndershirtTelnyashkaRed-telnyashka_red = Red Telnyashka
+marking-CMUUndershirtTelnyashkaRed-telnyashka_red = Красный Тельняшко
 
-marking-CMUUndershirtTan = Tan Undershirt
+marking-CMUUndershirtTan = Футболка Тана
 
-marking-CMUUndershirtTan-undershirt_army_short = Tan Undershirt
+marking-CMUUndershirtTan-undershirt_army_short = Футболка Тана
 
-marking-CMUUndershirtTanSleeveless = Tan Undershirt (Sleeveless)
+marking-CMUUndershirtTanSleeveless = Футболка Тан (Без рукавов)
 
-marking-CMUUndershirtTanSleeveless-undershirt_army = Tan Undershirt (Sleeveless)
+marking-CMUUndershirtTanSleeveless-undershirt_army = Футболка Тан (Без рукавов)
 
-marking-CMUUndershirtBlackLong = Black Undershirt (Long Sleeve)
+marking-CMUUndershirtBlackLong = Черная футболка (длинный рукав)
 
-marking-CMUUndershirtBlackLong-undershirt_black_long = Black Undershirt (Long Sleeve)
+marking-CMUUndershirtBlackLong-undershirt_black_long = Черная футболка (длинный рукав)
 
-marking-CMUSportsBraTan = Tan Sports Bra
+marking-CMUSportsBraTan = Тан Спортс Брай
 
-marking-CMUSportsBraTan-sports_army = Tan Sports Bra
+marking-CMUSportsBraTan-sports_army = Тан Спортс Брай
 
-marking-CMUUndershirtNone = None
+marking-CMUUndershirtNone = Нет
 
-marking-CMUUndershirtNone-none = None
+marking-CMUUndershirtNone-none = Нет
 
-marking-CMUUndershirtBlackWY = Black WY Undershirt
+marking-CMUUndershirtBlackWY = Черная футболка
 
-marking-CMUUndershirtBlackWY-undershirt_black_short_wy = Black WY Undershirt
+marking-CMUUndershirtBlackWY-undershirt_black_short_wy = Черная футболка
 
-marking-CMUUndershirtGreyWY = Grey WY Undershirt
+marking-CMUUndershirtGreyWY = Футболка Grey WY
 
-marking-CMUUndershirtGreyWY-undershirt_grey_wy = Grey WY Undershirt
+marking-CMUUndershirtGreyWY-undershirt_grey_wy = Футболка Grey WY
 
-marking-CMUUndershirtOrange = Orange Undershirt
+marking-CMUUndershirtOrange = Апельсиновая футболка
 
-marking-CMUUndershirtOrange-undershirt_orange = Orange Undershirt
+marking-CMUUndershirtOrange-undershirt_orange = Апельсиновая футболка
 
-marking-CMUUndershirtPurple = Purple Undershirt
+marking-CMUUndershirtPurple = Фиолетовая футболка
 
-marking-CMUUndershirtPurple-undershirt_purple = Purple Undershirt
+marking-CMUUndershirtPurple-undershirt_purple = Фиолетовая футболка

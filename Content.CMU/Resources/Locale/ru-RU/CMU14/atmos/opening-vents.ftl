@@ -1,17 +1,17 @@
-cmu-opening-vent-state-open = Airway open.
+cmu-opening-vent-state-open = Воздушные пути открыты.
 
-cmu-opening-vent-state-closed = Airway closed.
+cmu-opening-vent-state-closed = Воздушные пути закрыты.
 
-cmu-opening-vent-state-locked = Airway auto-sealed: one deck is below the lockout pressure.
+cmu-opening-vent-state-locked = Автоматическая запечатка дыхательных путей: одна палуба ниже давления локаута.
 
-cmu-opening-vent-examine = Local pressure: {$here} kPa. Connected: {$there} kPa.
+cmu-opening-vent-examine = Местное давление: {$here} kPa. Подключено: {$there} КПа.
 
-cmu-opening-vent-unlinked = Unlinked. No matching vent on the adjacent deck.
+cmu-opening-vent-unlinked = Несвязанный. На соседней палубе нет соответствующего отверстия.
 
-cmu-opening-vent-open = open
+cmu-opening-vent-open = открытый
 
-cmu-opening-vent-closed = closed
+cmu-opening-vent-closed = закрыто
 
-cmu-opening-vent-toggle-state = You use the screwdriver to {$state} the vent.
+cmu-opening-vent-toggle-state = Вы используете отвертку для {$state} Вентиляционное отверстие.
 
-cmu-opening-vent-dir-toggled = You pry the vent to look {$direction}.
+cmu-opening-vent-dir-toggled = Ты ищешь выход, чтобы посмотреть {$direction}.

@@ -1,3 +1,3 @@
-holiday-custom-cmu-birthday = Today is CMU's birthday! CMU's predecessor project, UA-14, broke ground on 11/11/2024. Thank you for your continued support and for playing our stupid space game server with us!
+holiday-custom-cmu-birthday = Сегодня CMUДень рождения! CMUПредшественник проекта, UA-14Разбитая земля на 11/11/2024Спасибо за вашу постоянную поддержку и за то, что вы играете на нашем глупом сервере космических игр с нами!
 
-holiday-name-cmu-alien-day = Alien Day
+holiday-name-cmu-alien-day = День инопланетян

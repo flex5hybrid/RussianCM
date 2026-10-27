@@ -1,3 +1,3 @@
-tribal-item-restricted-pickup = You cannot pick this up.
+tribal-item-restricted-pickup = Ты не можешь забрать это.
 
-tribal-item-restricted-equip = You cannot equip this.
+tribal-item-restricted-equip = Вы не можете оборудовать это.

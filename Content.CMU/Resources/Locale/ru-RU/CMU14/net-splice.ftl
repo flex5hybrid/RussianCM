@@ -33,8 +33,8 @@ au14-splice-no-reading = По этой несущей ещё нет показа
 au14-splice-reading = Последнее зондирование: { $position }, уровень сигнала — { $strength }.
 au14-splice-help = Сначала грубо просканируйте диапазон, затем постепенно приближайтесь к позиции с самым сильным откликом. Каждое зондирование повышает вероятность обнаружения. Фиксация в неверной позиции повышает её значительно сильнее и дополнительно расходует зондирования.
 
-au14-splice-feed-opened = A tap spliced into the feed drops loose as it opens, and its keying module falls out.
+au14-splice-feed-opened = Кран, сплюснутый в корм, падает, когда он открывается, и его ключевой модуль выпадает.
 
-au14-splice-header-feeder = FEEDER JUNCTION
+au14-splice-header-feeder = ИССЛЕДОВАНИЕ ФИДЕРА
 
-au14-splice-header-trunk = TRUNK SPLICE
+au14-splice-header-trunk = ТРАНСПОРТНАЯ СЛУЖБА

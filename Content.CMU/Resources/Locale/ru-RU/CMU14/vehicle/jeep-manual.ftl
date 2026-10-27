@@ -1,316 +1,316 @@
-cmu-jeep-manual-title = M-Jeep field manual
+cmu-jeep-manual-title = Руководство по эксплуатации M-Jeep
 
-cmu-vehicle-manual-index = PARTS AND PAGES
+cmu-vehicle-manual-index = Части и страницы
 
-cmu-vehicle-manual-facing-south = Front
+cmu-vehicle-manual-facing-south = Фронт
 
-cmu-vehicle-manual-facing-north = Back
+cmu-vehicle-manual-facing-north = Назад
 
-cmu-vehicle-manual-facing-east = Right
+cmu-vehicle-manual-facing-east = Правильно.
 
-cmu-vehicle-manual-facing-west = Left
+cmu-vehicle-manual-facing-west = Левый
 
-cmu-vehicle-manual-panels-shut = Panels: shut
+cmu-vehicle-manual-panels-shut = Панели: закрытые
 
-cmu-vehicle-manual-panels-open = Panels: open
+cmu-vehicle-manual-panels-open = Панели: открытые
 
-cmu-vehicle-manual-hint = Click a part on the jeep, or pick a page from the list.
+cmu-vehicle-manual-hint = Нажмите на часть на джипе или выберите страницу из списка.
 
-cmu-vehicle-manual-shown = Outlined on the jeep.
+cmu-vehicle-manual-shown = Нарисован на джипе.
 
-cmu-vehicle-manual-not-shown = Not seen from this side: turn the jeep or open the panels.
+cmu-vehicle-manual-not-shown = Не видно с этой стороны: поверните джип или откройте панели.
 
-cmu-vehicle-manual-about = WHAT IT IS
+cmu-vehicle-manual-about = Что это такое
 
-cmu-vehicle-manual-use = USING IT
+cmu-vehicle-manual-use = использовать
 
 cmu-vehicle-manual-damage = DAMAGE
 
-cmu-vehicle-manual-repair = REPAIR
+cmu-vehicle-manual-repair = РЕПАИР
 
-cmu-vehicle-manual-replace = REMOVING AND REFITTING
+cmu-vehicle-manual-replace = Устранение и исправление
 
 cmu-jeep-manual-panel-damage =
-    Hits wear the panel on the side they land: the doors from the sides, the hood from the front, the tailgate from behind.
-    At half its integrity a door is broken and stops no shots. Worn right down, a panel is wrecked past welding and has to be replaced.
+    Хиты носят панель сбоку они приземляются: двери с боков, капот спереди, задняя дверь сзади.
+    На половине его целостности дверь сломана и не останавливается. Изношенная прямо вниз, панель разрушается после сварки и должна быть заменена.
 
 cmu-jeep-manual-panel-repair =
-    Use a lit welder on it: 2 s a pass, 25 integrity and 5 fuel each, repeating until it's whole.
-    A wrecked panel can't be welded: take it off and fit a new one. Hoods, doors, tailgates and windshields are made at the autolathe.
+    Используйте сварщик на нем: 2 Пропуск, 25 целостность и 5 Повторяйте каждый, пока он не станет целым.
+    Разбитую панель нельзя сварить: снимите ее и поместите новую. Капюшоны, двери, задние ворота и лобовые стекла изготавливаются на автолате.
 
 cmu-jeep-manual-panel-replace =
-    Take it off in three steps:
-    • Screwdriver: take the screws out (2 s).
-    • Wrench: take the bolts out (2 s).
-    • Lift it off by hand.
-    Anything hanging on it has to come off first.
-    To refit, click its empty place holding the part to hang it on, then wrench it (2 s) and screw it down (2 s). It goes back on shut.
+    Снимите его в три шага:
+    • Screwdriver: take the screws out2 с).
+    • Wrench: take the bolts out2 с).
+    • Снимите его вручную.
+    Все, что висит на нем, должно сначала свалиться.
+    Чтобы переоборудовать, нажмите на его пустое место, держа часть, чтобы повесить его, а затем вырвать его (2 s) и повернуть его (2 с). Он возвращается на замке.
 
-cmu-jeep-manual-weld-repair = Use a lit welder on it: 2 s a pass, 10 integrity and 5 fuel each, repeating until it's whole.
+cmu-jeep-manual-weld-repair = Используйте сварщик на нем: 2 Пропуск, 10 целостность и 5 Повторяйте каждый, пока он не станет целым.
 
 cmu-jeep-manual-kit-use =
-    Click it with an empty hand to take it. Click its place holding one to stow it again.
-    Kit on a door or the tailgate can't be reached with that panel off, nor on the tailgate while it's open.
+    Нажмите на него пустой рукой, чтобы взять его. Нажмите на его место, держа одно, чтобы уложить его снова.
+    Набор на двери или задней двери не может быть достигнут с этой панелью, ни на задней двери, пока она открыта.
 
 cmu-jeep-manual-seat-use =
-    Click the seat to sit, click it again to get out. Clicking the jeep's body puts you in the nearest free seat.
-    Climbing over a shut door takes 2 s and stops if you move or get hurt. Through an open door it's instant.
+    Нажмите на сиденье, чтобы сесть, нажмите еще раз, чтобы выйти. Нажатие на тело джипа ставит вас на ближайшее свободное место.
+    Восхождение через закрытую дверь 2 s и останавливается, если вы двигаетесь или получаете травму. Через открытую дверь это мгновенно.
 
-cmu-jeep-manual-fuel-door = Fuel door
+cmu-jeep-manual-fuel-door = Топливная дверь
 
 cmu-jeep-manual-fuel-door-about =
-    The filler for the jeep's fuel tank, low on the rear quarter. The tank holds 60 units of welding fuel and comes 45 full.
-    The engine only burns fuel while the jeep is being driven. Run it dry and the engine dies.
+    Наполнитель для топливного бака джипа, низкий в задней четверти. Танк держит 60 единицы сварочного топлива и поступает 45 Полный.
+    Двигатель сжигает топливо только во время движения джипа. Высушите его, и двигатель умрет.
 
 cmu-jeep-manual-fuel-door-use =
-    > [color=#FFB454]TO REFUEL[/color]
-    1. Click the fuel door with an empty hand to open it.
-    2. Hold a fuel can: the jerry can on the tailgate, or any can of welding fuel.
-    3. Click the open fuel door with the can. It pours at 6 units a second; the progress bar is the tank filling. Moving stops it.
-    Examine the jeep to read the fuel gauge.
+    > [color=#FFB454]Отступать[/color]
+    1Щелкните топливной дверью с пустой рукой, чтобы открыть ее.
+    2Держите топливную банку: майку на задней двери или любую банку сварочного топлива.
+    3Щелкните открытой топливной дверью с помощью банки. Он льется на 6 единицы в секунду; бар прогресса - заполнение резервуара. Переезд останавливает его.
+    Проверьте джип, чтобы прочитать датчик топлива.
 
-cmu-jeep-manual-fuel-door-replace = The fuel door is part of the body: it can't be taken off.
+cmu-jeep-manual-fuel-door-replace = Топливная дверь является частью корпуса: ее нельзя снять.
 
-cmu-jeep-manual-hood = Hood
+cmu-jeep-manual-hood = Гуд
 
-cmu-jeep-manual-hood-about = Covers the engine. Open it, or take it off, to reach the engine.
+cmu-jeep-manual-hood-about = Охватывает двигатель. Откройте его или снимите, чтобы добраться до двигателя.
 
 cmu-jeep-manual-hood-use =
-    Click it with an empty hand to open or close it.
-    It won't open with the windshield folded down: raise the windshield first.
+    Нажмите на него пустой рукой, чтобы открыть или закрыть его.
+    Оно не откроется сложенным лобовым стеклом: поднимите лобовое стекло первым.
 
-cmu-jeep-manual-engine = Engine
+cmu-jeep-manual-engine = Двигатель
 
-cmu-jeep-manual-engine-about = What drives the jeep. It has 150 integrity; at nothing the jeep won't run and the engine catches fire.
+cmu-jeep-manual-engine-about = Что движет джипом Он имеет 150 целостность; ни при чем джип не будет работать и двигатель загорится.
 
-cmu-jeep-manual-engine-use = With the hood open, click the engine with an empty hand to see how it's holding up.
+cmu-jeep-manual-engine-use = С открытым капотом нажмите на двигатель с пустой рукой, чтобы увидеть, как он держится.
 
 cmu-jeep-manual-engine-damage =
-    It takes a fifth of every hit on the jeep, and all of a hit on the hood. Head on crashes wear it too.
-    Below half it smokes and runs rough. Below a fifth it smokes heavily. At nothing it bursts into flames: see Engine fire.
+    Это занимает пятую часть каждого попадания на джип, и все попадание на капот. Голова на авариях тоже носит его.
+    Ниже половины он курит и бежит грубо. Ниже пятого он сильно курит. Ни при чем он вспыхивает пламенем: см. Двигатель огня.
 
-cmu-jeep-manual-engine-repair = Open the hood and use a lit welder on the engine: 4 s a pass, 75 integrity and 5 fuel each. Two passes take it from dead to whole.
+cmu-jeep-manual-engine-repair = Откройте капот и используйте на двигателе освещенный сварщик: 4 Пропуск, 75 целостность и 5 топливом для каждого. Два прохода превращают его из мертвого в целое.
 
-cmu-jeep-manual-engine-replace = The engine stays in the jeep: it's repaired, never swapped.
+cmu-jeep-manual-engine-replace = Двигатель остается в джипе: он отремонтирован, никогда не менялся.
 
-cmu-jeep-manual-windshield = Windshield
+cmu-jeep-manual-windshield = Ветровое стекло
 
 cmu-jeep-manual-windshield-about =
-    Keeps shots and grit off the front seats. Raised and whole, it stops about half the shots at a front rider's head and chest from ahead.
-    Folded down or missing, grit thrown up on dirt at speed can blind the front riders for a few seconds. Goggles keep it out.
+    Хранит выстрелы и сдирается с передних сидений. Поднятый и цельный, он останавливает около половины выстрелов в голову и грудь впереди.
+    Сложенный или отсутствующий, песок, брошенный на грязь на скорости, может ослепить передних гонщиков на несколько секунд. Очки не пускают.
 
 cmu-jeep-manual-windshield-use =
-    Click it with an empty hand to fold it down or raise it.
-    It can't fold down with the hood open: close the hood first.
+    Нажмите на него пустой рукой, чтобы сложить его или поднять.
+    Он не может сложиться с открытым капотом: сначала закройте капот.
 
-cmu-jeep-manual-windshield-damage = It takes a quarter of every hit on the jeep, and wears from the shots it stops. At half its integrity it's broken and stops nothing.
+cmu-jeep-manual-windshield-damage = Требуется четверть каждого попадания на джип, и носит от выстрелов он останавливается. В половине своей целостности он сломан и ничего не останавливает.
 
-cmu-jeep-manual-door-driver = Driver's door
+cmu-jeep-manual-door-driver = Дверь водителя
 
-cmu-jeep-manual-door-driver-about = Shut, it stops shots at the driver's legs from that side. The shovel and the axe hang on it.
+cmu-jeep-manual-door-driver-about = Заткнись, он останавливает выстрелы в ноги водителя с той стороны. Лопата и топор висят на ней.
 
-cmu-jeep-manual-door-passenger = Passenger's door
+cmu-jeep-manual-door-passenger = Дверь пассажира
 
-cmu-jeep-manual-door-passenger-about = Shut, it stops shots at the passenger's legs from that side. The jack hangs on it.
+cmu-jeep-manual-door-passenger-about = Заткнись, он останавливает выстрелы в ноги пассажира с той стороны. Джек висит на нем.
 
 cmu-jeep-manual-door-use =
-    Click it with an empty hand to open or close it.
-    Shut, it makes getting in or out a 2 s climb, and no one can drag a rider out over it.
+    Нажмите на него пустой рукой, чтобы открыть или закрыть его.
+    Заткнись, это делает вход или выход 2 Подъем, и никто не может перетащить наездника через него.
 
-cmu-jeep-manual-tailgate = Tailgate
+cmu-jeep-manual-tailgate = Тайлгейт
 
-cmu-jeep-manual-tailgate-about = The back of the bed. The spare and the jerry can hang on it, and it's the way into the gunner's seat and the medical bed.
+cmu-jeep-manual-tailgate-about = Задняя часть кровати. Запасная и джерри могут висеть на ней, и это путь в кресло наводчика и медицинскую кровать.
 
 cmu-jeep-manual-tailgate-use =
-    Click it with an empty hand to open or close it.
-    Open it to load or unload cargo. While it's open, the spare and the jerry can can't be reached.
+    Нажмите на него пустой рукой, чтобы открыть или закрыть его.
+    Откройте его для загрузки или разгрузки груза. Пока он открыт, запасной и джерри не могут быть достигнуты.
 
-cmu-jeep-manual-seat-driver = Driver's seat
+cmu-jeep-manual-seat-driver = Место водителя
 
 cmu-jeep-manual-seat-driver-about =
-    Whoever sits here drives, and gets the driver's controls. The engine starts when a driver takes the wheel.
-    A driver can only fire a sidearm, and can't wield anything two handed.
+    Тот, кто сидит здесь, водит машину и получает водительские права. Двигатель запускается, когда водитель берет колесо.
+    Водитель может стрелять только из оружия и не может владеть чем-либо двумя руками.
 
-cmu-jeep-manual-seat-passenger = Passenger's seat
+cmu-jeep-manual-seat-passenger = Место пассажира
 
-cmu-jeep-manual-seat-passenger-about = Any gun can be fired from it, less steadily the faster the jeep goes. Firearms training steadies it.
+cmu-jeep-manual-seat-passenger-about = Из него можно выстрелить из любого пистолета, и чем быстрее будет джип, тем менее стабильно. Обучение огнестрельному оружию укрепляет его.
 
-cmu-jeep-manual-wheels = Wheels
+cmu-jeep-manual-wheels = Колеса
 
 cmu-jeep-manual-wheels-about =
-    The wheel set is also the jeep's hull: if it's ruined the jeep won't go.
-    Off road tyres are the same on any ground. Road tyres are quicker on paving, slower on dirt and sand, and bog down in water.
+    Колесо также является корпусом джипа: если он испорчен, джип не пойдет.
+    Внедорожные шины одинаковы на любой земле. Дорожные шины быстрее на мощении, медленнее на грязи и песке и увязают в воде.
 
-cmu-jeep-manual-wheels-use = Examine the jeep to see which tyres it's on.
+cmu-jeep-manual-wheels-use = Проверьте джип, чтобы увидеть, какие шины на нем.
 
-cmu-jeep-manual-wheels-damage = Crashes wear the wheels, harder the faster you hit. Shots wear them a little too.
+cmu-jeep-manual-wheels-damage = Крушения носят колеса, сильнее, чем быстрее вы попали. Их тоже немного носят.
 
 cmu-jeep-manual-wheels-replace =
-    Open vehicle maintenance (alt verb on the jeep, or click it with the maintenance jack), hold the jack and take the set off (1.5 s). A ruined set falls apart into scrap.
-    Click the jeep holding a wheel set to fit it (1.5 s).
+    Откройте техническое обслуживание транспортного средства (альт-глагол на джипе или нажмите на него с помощью разъема для технического обслуживания), удерживайте разъем и выключите (1.5 Разрушенный набор разваливается на металлолом.
+    Нажмите на джип, держащий колесо, чтобы соответствовать ему (1.5 с).
 
-cmu-jeep-manual-spare = Spare wheel
+cmu-jeep-manual-spare = Запасное колесо
 
-cmu-jeep-manual-spare-about = A whole wheel set carried on the tailgate. It keeps its own paint and rims.
+cmu-jeep-manual-spare-about = Целый набор колес перевозился на задней двери. Сохраняет собственную краску и ободки.
 
 cmu-jeep-manual-spare-use =
-    Click it with an empty hand to take it off; click its place with a set to stow one.
-    To swap it in, take the old set off with the jack (see Wheels) and fit the spare.
+    Нажмите на него пустой рукой, чтобы снять его; нажмите его место с набором для укладки.
+    Чтобы поменять его, возьмите старый набор с домкратом (см. Колеса) и поместите запасной.
 
-cmu-jeep-manual-jerrycan = Jerry can
+cmu-jeep-manual-jerrycan = Джерри может
 
-cmu-jeep-manual-jerrycan-about = 60 units of fuel on the tailgate, for the fuel door.
+cmu-jeep-manual-jerrycan-about = 60 единицы топлива на задней двери, для топливной двери.
 
-cmu-jeep-manual-jerrycan-damage = A hit on the jeep can hole it. A holed can leaks, even after it's taken off.
+cmu-jeep-manual-jerrycan-damage = Удар по джипу может пробить его. Отверстие может протекать, даже после его снятия.
 
-cmu-jeep-manual-shovel = Shovel
+cmu-jeep-manual-shovel = лопата
 
-cmu-jeep-manual-shovel-about = An entrenching tool, on the driver's door.
+cmu-jeep-manual-shovel-about = Укрепляющий инструмент, на двери водителя.
 
-cmu-jeep-manual-axe = Fire axe
+cmu-jeep-manual-axe = Огненный топор
 
-cmu-jeep-manual-axe-about = A fire axe, on the driver's door.
+cmu-jeep-manual-axe-about = Огненный топор на двери водителя.
 
-cmu-jeep-manual-jack = Maintenance jack
+cmu-jeep-manual-jack = Обслуживание Jack
 
-cmu-jeep-manual-jack-about = On the passenger's door. It opens vehicle maintenance, where the wheels and the gun come off.
+cmu-jeep-manual-jack-about = На двери пассажира. Он открывает техническое обслуживание автомобиля, где отрываются колеса и пистолет.
 
-cmu-jeep-manual-extinguisher = Fire extinguisher
+cmu-jeep-manual-extinguisher = Огнетушитель
 
-cmu-jeep-manual-extinguisher-about = Strapped to the cowl ahead of the passenger's door. Spray it on a burning jeep to put the engine fire out.
+cmu-jeep-manual-extinguisher-about = Пристегнутый к капоту перед дверью пассажира. Распылите его на горящий джип, чтобы потушить огонь двигателя.
 
-cmu-jeep-manual-headlights = Headlights
+cmu-jeep-manual-headlights = Фары
 
-cmu-jeep-manual-headlights-about = Light the way ahead, on low or high beam. Only whole headlights shine.
+cmu-jeep-manual-headlights-about = Осветите путь вперед, на низком или высоком луче. Светят только целые фары.
 
-cmu-jeep-manual-headlights-use = The driver works them from the headlights button, or the F key.
+cmu-jeep-manual-headlights-use = Водитель работает с кнопкой фар или клавишей F.
 
-cmu-jeep-manual-searchlight = Searchlight
+cmu-jeep-manual-searchlight = Проверка
 
-cmu-jeep-manual-searchlight-about = A round searchlight on a hinged yoke by the driver's windshield post, on military jeeps only. It throws a long, narrow beam wherever it points.
+cmu-jeep-manual-searchlight-about = Круглый прожектор на шарнирном яме у поста лобового стекла водителя, только на военных джипах. Он бросает длинный, узкий луч, куда бы он ни указывал.
 
 cmu-jeep-manual-searchlight-use =
-    Click it with an empty hand to take hold of it: it lights up and swings after your cursor, up to 45° either side of the jeep's front like the gun mount, from a seat or standing beside the jeep.
-    Drop it from your hand (Q) to let go and put it out. Walking off or being knocked down lets go too.
+    Нажмите на него пустой рукой, чтобы взять его: он загорается и качается после вашего курсора, до 45- по обе стороны от передней части джипа, как артиллерийская установка, с места или стоя рядом с джипом.
+    Бросьте его из руки (Q), чтобы отпустить и потушить. Уйти или быть сбитым с ног тоже отпускает.
 
 cmu-jeep-manual-searchlight-replace =
-    Take it off with a screwdriver (2 s); it comes into your hand.
-    To fit it on either side, hold it in one hand and a screwdriver in the other, then click the empty mount by that side's windshield post (2 s).
+    Снимите его с отвертки ()2 s); он попадает в вашу руку.
+    Чтобы поместить его с обеих сторон, держите его в одной руке и отвертку в другой, а затем щелкните пустым креплением по ветровому стеклу этой стороны (2 с).
 
-cmu-jeep-manual-turn-signals = Turn signals
+cmu-jeep-manual-turn-signals = Поворачивай сигналы
 
-cmu-jeep-manual-turn-signals-about = Amber lamps on the front fenders.
+cmu-jeep-manual-turn-signals-about = Янтарные лампы на передних крыльях.
 
-cmu-jeep-manual-turn-signals-use = They blink as the jeep turns, with automatic signals on, or all together with the hazard lights.
+cmu-jeep-manual-turn-signals-use = Они мигают при повороте джипа, с включенными автоматическими сигналами или все вместе с огнями опасности.
 
-cmu-jeep-manual-tail-lights = Tail lights
+cmu-jeep-manual-tail-lights = Огни хвоста
 
-cmu-jeep-manual-tail-lights-about = The tail, brake and rear signal lamps in one cluster.
+cmu-jeep-manual-tail-lights-about = Хвостовые, тормозные и задние сигнальные лампы в одном кластере.
 
-cmu-jeep-manual-tail-lights-use = They glow with the headlights on, and brighten as the jeep slows.
+cmu-jeep-manual-tail-lights-use = Они светятся при включенных фарах и сияют по мере замедления джипа.
 
 cmu-jeep-manual-lamp-damage =
-    Hits on the jeep can catch a lamp. A shot right at a lamp shatters it outright, and crashes break the lamps near where the jeep hit.
-    At half its integrity a lamp is broken and stays dark.
+    Хиты на джипе могут поймать лампу. Удар прямо в лампу разбивает ее вдребезги и разбивает лампы рядом с местом удара джипа.
+    В половине своей целостности лампа разбивается и остается темной.
 
 cmu-jeep-manual-lamp-replace =
-    Take it off with a screwdriver (2 s); it comes into your hand.
-    Click its empty place holding a lamp to fit it: any lamp of the kind fits either side.
+    Снимите его с отвертки ()2 s); он попадает в вашу руку.
+    Нажмите на его пустое место, держа лампу, чтобы соответствовать ему: любая лампа такого рода подходит с обеих сторон.
 
-cmu-jeep-manual-key = Ignition key
+cmu-jeep-manual-key = Ключ зажигания
 
 cmu-jeep-manual-key-about =
-    Each jeep comes with its key in the ignition, and only that key fits it. Without it the engine won't start, and pulling it stops the engine.
-    A blank key becomes the key of the first jeep it goes into.
+    Каждый джип поставляется со своим ключом в зажигании, и только этот ключ подходит ему. Без него двигатель не запустится, а вытягивание его останавливает двигатель.
+    Ключ становится ключом от первого джипа, в который он входит.
 
-cmu-jeep-manual-key-use = Use the key on the jeep to put it in. The driver can take it out with the key button. While someone drives, only people in the jeep can pull it.
+cmu-jeep-manual-key-use = Используйте ключ на джипе, чтобы положить его. Водитель может снять его с помощью кнопки клавиши. Пока кто-то ездит, тянуть его могут только люди в джипе.
 
-cmu-jeep-manual-controls = Driver's controls
+cmu-jeep-manual-controls = Управление водителем
 
-cmu-jeep-manual-controls-about = Buttons the driver gets on taking the wheel.
+cmu-jeep-manual-controls-about = Кнопки, которые водитель берет на себя за руль.
 
 cmu-jeep-manual-controls-use =
-    • Engine: on or off. It won't catch without a key, fuel, a working engine and a sound hull.
-    • Headlights: off, low beam, high beam.
-    • Horn.
-    • Hazard lights: both signals blink.
-    • Automatic turn signals: on by default.
-    • Take out the key.
+    • Двигатель: включен или выключен. Он не поймает без ключа, топлива, работающего двигателя и звукового корпуса.
+    • Фары: выключены, низкий луч, высокий луч.
+    • Рог.
+    Опасные огни: оба сигнала мигают.
+    • Автоматические сигналы поворота: по умолчанию.
+    • Вынуть ключ.
 
-cmu-jeep-manual-hull = Hull
+cmu-jeep-manual-hull = Халл
 
-cmu-jeep-manual-hull-about = The jeep's hull is its wheel set, with the gun's mount on the gun jeep. A ruined hull leaves the jeep sagging where it stands, and its doors stop giving cover.
+cmu-jeep-manual-hull-about = Корпус джипа - это его колесный набор, с креплением пистолета на джипе. Разрушенный корпус оставляет джип провисать там, где он стоит, и его двери перестают давать прикрытие.
 
-cmu-jeep-manual-hull-damage = Crashes, hits and anything run down wear it.
+cmu-jeep-manual-hull-damage = Крушения, удары и все, что падает, носит его.
 
 cmu-jeep-manual-hull-repair =
-    Use a lit welder on the jeep's body. Each pass mends a part of the hull and repeats until it's whole.
-    Every repair leaves it a little weaker than new.
+    Используйте сварщик на теле джипа. Каждый проход исправляет часть корпуса и повторяется до тех пор, пока он не станет целым.
+    Каждый ремонт оставляет его немного слабее нового.
 
-cmu-jeep-manual-fire = Engine fire
+cmu-jeep-manual-fire = Возгорание двигателя
 
 cmu-jeep-manual-fire-about =
-    When the engine dies it bursts into flames, and fire catches on the ground under it and creeps out a tile at a time until it is put out. Twenty seconds later the jeep blows up, throwing its riders clear and leaving a burnt out wreck. Going up on the move, the wreck slides on before it stops.
-    Killed by far more than it had left, like a rocket, or shot on while it burns, the engine goes up at once.
-    Nothing destroys the wreck. A lit welder cuts it down in 15 s for 10 fuel, leaving ten metal sheets and ten rods.
+    Когда двигатель умирает, он вспыхивает, и огонь ловит на земле под ним и выползает плитку за раз, пока она не потухнет. Двадцать секунд спустя джип взрывается, выбрасывая своих всадников и оставляя сгоревший обломок. Поднимаясь на ходу, крушение скользит, прежде чем остановиться.
+    Убитый гораздо больше, чем он оставил, как ракета, или выстрелил, пока он горит, двигатель поднимается сразу.
+    Ничто не разрушает обломки. Зажженный сварщик режет его в 15 для 10 топливо, оставив десять металлических листов и десять стержней.
 
 cmu-jeep-manual-fire-use =
-    Get out, or put it out: spray the jeep's fire extinguisher on it, or throw water over it.
-    Put out in time, the engine is left barely running. Weld it back up before you rely on it.
+    Выйдите или потушите его: распылите на него огнетушитель джипа или бросьте над ним воду.
+    Выключенный вовремя, двигатель почти не работает. Сварите его обратно, прежде чем полагаться на него.
 
-cmu-jeep-manual-crashes = Crashes
+cmu-jeep-manual-crashes = крушения
 
-cmu-jeep-manual-crashes-about = Hitting walls and people hurts the jeep, and the faster you go the worse it is.
+cmu-jeep-manual-crashes-about = Удары по стенам и людям вредят джипу, и чем быстрее вы едете, тем хуже.
 
 cmu-jeep-manual-crashes-damage =
-    Every crash wears the wheels and can break the lamps near where the jeep hit. Head on crashes also dent the front and wear the engine.
-    A head on crash at speed blacks out the riders for a moment and can knock them out. A knocked out driver leans on the horn.
+    Каждая авария носит колеса и может разбить лампы рядом с местом падения джипа. Голова при авариях также вмятывает переднюю часть и носит двигатель.
+    Голова при столкновении на скорости на мгновение отключает гонщиков и может выбить их. Выбитый водитель опирается на рог.
 
-cmu-jeep-manual-crashes-repair = Beat the dents out with a lit welder on the front: 3 s a pass, 5 fuel each.
+cmu-jeep-manual-crashes-repair = Выбивайте вмятины с помощью освещенного сварщика спереди: 3 Пропуск, 5 топливом для каждого.
 
-cmu-jeep-manual-gun = Gun jeep: machine gun
+cmu-jeep-manual-gun = Пистолетный джип: пулемет
 
-cmu-jeep-manual-gun-about = A belt fed machine gun on a pedestal, fired by whoever sits in the gunner's seat. It swings 45 degrees either way and holds 300 rounds.
+cmu-jeep-manual-gun-about = Поясной пулемет на пьедестале, выпущенный тем, кто сидит на сиденье наводчика. Качается 45 Уровни в любом случае и держит 300 Круги.
 
 cmu-jeep-manual-gun-use =
-    Sit in the gunner's seat and fire; your hands stay on the gun.
-    To reload, use a cupola ammo crate on the jeep (1.5 s).
+    Сядьте на место наводчика и стреляйте; ваши руки остаются на пистолете.
+    Для перезарядки используйте ящик с патронами на джипе (1.5 с).
 
 cmu-jeep-manual-gun-repair =
-    Weld it like the hull.
-    It comes off through vehicle maintenance with the jack: the gun before its mount.
+    Сварить как корпус.
+    Он выходит из-за технического обслуживания автомобиля с домкратом: пистолет перед его креплением.
 
-cmu-jeep-manual-cargo = Cargo jeep: bed
+cmu-jeep-manual-cargo = Грузовой джип: кровать
 
-cmu-jeep-manual-cargo-about = The fastest jeep, with a bed that carries one crate.
+cmu-jeep-manual-cargo-about = Самый быстрый джип, с кроватью, которая несет один ящик.
 
 cmu-jeep-manual-cargo-use =
-    Open the tailgate, then pull a crate up and click the jeep, or use the load verb (2 s).
-    Wrench it down (2 s) or it slides off the back at speed with the tailgate open.
-    To unload, loosen it with the wrench and use the unload verb: it's set down behind the jeep.
+    Откройте заднюю дверь, затем поднимите ящик и нажмите на джип или используйте глагол нагрузки (2 с).
+    Опустить его ()2 s) или она скатывается сзади со скоростью с открытым задним ходом.
+    Чтобы разгрузить, ослабьте его гаечным ключом и используйте глагол разгрузки: он установлен за джипом.
 
-cmu-jeep-manual-medical = Medical jeep: bed
+cmu-jeep-manual-medical = Медицинский джип: кровать
 
-cmu-jeep-manual-medical-about = A surgical bed in the back that works as an operating table, with the medic's seat facing it.
+cmu-jeep-manual-medical-about = Хирургическая кровать в задней части, которая работает как операционный стол, а сиденье врача обращено к нему.
 
-cmu-jeep-manual-medical-use = Use the lie on verb, or lay a patient on it. The tailgate is its door.
+cmu-jeep-manual-medical-use = Используйте ложь на глаголе или положите на него пациента. Задняя дверь - это ее дверь.
 
-cmu-jeep-manual-transport = Transport jeep
+cmu-jeep-manual-transport = Транспортный джип
 
-cmu-jeep-manual-transport-about = Two more seats in the back, open to get in and out of. It has no tailgate: the spare and the jerry can hang on its back wall.
+cmu-jeep-manual-transport-about = Еще два места сзади, открытые для входа и выхода. У него нет задней двери: запасной и джерри могут висеть на задней стенке.
 
-cmu-jeep-manual-paint = Paint and cleaning
+cmu-jeep-manual-paint = Краска и чистка
 
-cmu-jeep-manual-paint-about = The vehicle spray painter, made at the autolathe, repaints the body, the inside, the seats and the wheels, and sprays rim designs on the wheels.
+cmu-jeep-manual-paint-about = Автомобильный распылитель, сделанный на автолате, перекрашивает тело, внутреннюю часть, сиденья и колеса, а также распыляет конструкции обода на колесах.
 
 cmu-jeep-manual-paint-use =
-    Use the painter in hand to pick a colour, then spray the part. The body takes 10 s and 5 charges.
-    Dirt builds up from driving, and riders' blood splashes on. Scrub it off with soap or a wet mop (5 s); space cleaner takes some off too.
+    Используйте живописца в руке, чтобы выбрать цвет, а затем распылить деталь. Тело принимает 10 s и 5 обвинения.
+    Грязь накапливается от вождения, и кровь гонщиков брызгает на. Очистить его с мылом или мокрой шваброй (5 s); космический очиститель также снимает некоторые из них.
 
-cmu-jeep-manual-crate = The crate
+cmu-jeep-manual-crate = ящик
 
-cmu-jeep-manual-crate-about = The jeep ships whole in a wooden crate: on its wheels, key in, ready to drive, with this manual.
+cmu-jeep-manual-crate-about = Джип поставляется целиком в деревянном ящике: на колесах, ключе, готов к вождению, с этим руководством.
 
 cmu-jeep-manual-crate-use =
-    Unlatch it by hand on clear ground (3 s). The walls fall flat round the jeep.
-    Break the walls up for planks with a crowbar, or leave them: they're cleared away after a while.
+    Отцепить его вручную на чистом грунте3 с). Стены падают ровно вокруг джипа.
+    Разбейте стены для досок ломом или оставьте их: через некоторое время они убираются.

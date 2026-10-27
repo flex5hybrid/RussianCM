@@ -7,10 +7,10 @@ cmu-reaper-revive-queen = Павшую королеву нельзя реани�
 
 cmu-reaper-revive-cooldown = Реанимация всё ещё перезаряжается у всех жнецов.
 
-cmu-reaper-revive-invalid = You need an unclaimed dead xeno from your hive.
+cmu-reaper-revive-invalid = Тебе нужно невостребованное мертвое ксено из твоего улья.
 
-cmu-reaper-revive-start = You bind the fallen sister. Stay still for two minutes.
+cmu-reaper-revive-start = Ты связываешь падшую сестру. Оставайтесь неподвижными две минуты.
 
-cmu-reaper-revive-complete = The sister stirs as your vessels withdraw.
+cmu-reaper-revive-complete = Сестра шевелится, когда ваши сосуды отходят.
 
-cmu-reaper-revive-cancelled = The binding breaks. Your flesh is spent and the cooldown remains.
+cmu-reaper-revive-cancelled = Обязательные разрывы. Ваша плоть потрачена, а охлаждение осталось.

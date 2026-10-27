@@ -278,4 +278,4 @@ cmu-fighter-pad-packed = Площадка СВВП истребителя сло
 ent-CMUFighterLandingPad = посадочная площадка истребителя
     .desc = Площадка подготовки двухместных истребителей с ограничением по фракции. Зарулите на неё, чтобы обозначить место взлёта и посадки. Самолёт возвращается в точку взлёта. Сложите площадку гаечным ключом и отвёрткой.
 
-cmu-fighter-landing-diverted = The recovery site is still blocked. Diverting to the nearest clear spot.
+cmu-fighter-landing-diverted = Сайт восстановления по-прежнему заблокирован. Отправляйтесь в ближайшее прозрачное место.

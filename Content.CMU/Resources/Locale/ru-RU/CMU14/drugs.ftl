@@ -8,6 +8,6 @@ reagent-name-speed-demon = Демон скорости
 au-pill-contents-psilocybin = Измельчённые псилоцибиновые грибы
 reagent-desc-speed-demon = Опасный уличный наркотик, значительно повышающий скорость и рефлексы, но обладающий высокой токсичностью.
 
-construction-smokeable-joint-leaf = Leaf-Rolled Joint
+construction-smokeable-joint-leaf = Лиственно-катанный сустав
 
-construction-smokeable-joint-rainbow-leaf = Leaf-Rolled Rainbow Joint
+construction-smokeable-joint-rainbow-leaf = Объединённый радужный шар

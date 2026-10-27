@@ -1,31 +1,31 @@
-cmu-capture-objective-already-hoisting = The flag is already being hoisted!
+cmu-capture-objective-already-hoisting = Флаг уже поднимается!
 
-cmu-capture-objective-already-lowering = The flag is already being lowered!
+cmu-capture-objective-already-lowering = Флаг уже опускается!
 
-cmu-capture-objective-begin-lowering = You begin lowering the flag...
+cmu-capture-objective-begin-lowering = Вы начинаете опускать флаг...
 
-cmu-capture-objective-faction-cannot-raise = Your faction cannot raise this flag.
+cmu-capture-objective-faction-cannot-raise = Ваша фракция не может поднять этот флаг.
 
-cmu-capture-objective-begin-raising = You begin raising the flag for { $faction }...
+cmu-capture-objective-begin-raising = Вы начинаете поднимать флаг { $faction }...
 
-cmu-capture-objective-lowered = You have lowered the flag.
+cmu-capture-objective-lowered = Вы опустили флаг.
 
-cmu-capture-objective-raised = You have raised the flag for { $faction }.
+cmu-capture-objective-raised = Вы подняли флаг за { $faction }.
 
-cmu-capture-objective-damage-lowered = The flag has been lowered due to heavy damage!
+cmu-capture-objective-damage-lowered = Флаг был спущен из-за серьезных повреждений.
 
-cmu-interact-objective-need-tool = You need a { $tool } for this step.
+cmu-interact-objective-need-tool = Тебе нужен { $tool } для этого шага.
 
-cmu-interact-objective-completed = [color=green]This has already been completed.[/color]
+cmu-interact-objective-completed = [color=green]Это уже завершено.[/color]
 
-cmu-interact-objective-use-tool = Use a [color=cyan]{ $tool }[/color] on this.
+cmu-interact-objective-use-tool = Используйте [color=cyan]{ $tool }[/color] На этом.
 
-cmu-interact-objective-use-empty-hand = Use an [color=cyan]empty hand[/color] to interact with this.
+cmu-interact-objective-use-empty-hand = Используйте [color=cyan]Пустая рука[/color] взаимодействовать с этим.
 
-cmu-interact-objective-tools-needed = Tools needed: { $tools }
+cmu-interact-objective-tools-needed = Необходимые инструменты: { $tools }
 
-cmu-interact-objective-skills-required = Requires skills: { $skills }
+cmu-interact-objective-skills-required = Требуются навыки: { $skills }
 
-cmu-interact-objective-access-required = Requires access: { $access }
+cmu-interact-objective-access-required = Требуется доступ: { $access }
 
-cmu-interact-objective-progress = Progress: [color=white]{ $current }[/color]/[color=white]{ $needed }[/color] interactions.
+cmu-interact-objective-progress = Прогресс: [color=white]{ $current }[/color]/[color=white]{ $needed }[/color] взаимодействия.

@@ -3,28 +3,28 @@ cmu-pepper-spray-examine = It has [color=orange]{ $charges }[/color] { $charges 
    *[other] sprays
 } left.
 
-cmu-pepper-spray-empty = The can sputters. It needs refilling.
+cmu-pepper-spray-empty = Может хлестать. Его нужно наполнить.
 
-cmu-pepper-spray-eyes-burn = Your eyes burn!
+cmu-pepper-spray-eyes-burn = Твои глаза горят!
 
-cmu-pepper-spray-sprayed = { CAPITALIZE(THE($user)) } pepper sprays { THE($target) } in the face!
+cmu-pepper-spray-sprayed = { CAPITALIZE(THE($user)) } перцовые спреи { THE($target) } В лицо!
 
-cmu-pepper-spray-protected = { CAPITALIZE(THE($target)) }'s eyes are covered.
+cmu-pepper-spray-protected = { CAPITALIZE(THE($target)) }Глаза закрыты.
 
-cmu-pepper-spray-protected-self = The spray splashes off your eye protection.
+cmu-pepper-spray-protected-self = Спрей отрыгивает защиту ваших глаз.
 
-cmu-pepper-spray-weak = Your eyes sting a little.
+cmu-pepper-spray-weak = Твои глаза немного жалят.
 
-cmu-pepper-spray-antidote-nothing = It doesn't do anything.
+cmu-pepper-spray-antidote-nothing = Он ничего не делает.
 
-cmu-pepper-spray-antidote-relief = The burning in your eyes washes away.
+cmu-pepper-spray-antidote-relief = Горение в твоих глазах смывается.
 
-cmu-pepper-spray-antidote-sprayed = { CAPITALIZE(THE($user)) } sprays the antidote in { THE($target) }'s eyes.
+cmu-pepper-spray-antidote-sprayed = { CAPITALIZE(THE($user)) } распыляет противоядие в { THE($target) }Глаза.
 
-cmu-pepper-spray-splash-self-verb = Splash your eyes
+cmu-pepper-spray-splash-self-verb = Раскрой глаза.
 
-cmu-pepper-spray-splash-verb = Splash their eyes
+cmu-pepper-spray-splash-verb = Выплескивайте глаза
 
-cmu-pepper-spray-splash-self = The water washes some of the burning out of your eyes.
+cmu-pepper-spray-splash-self = Вода промывает часть горения ваших глаз.
 
-cmu-pepper-spray-splash-other = { CAPITALIZE(THE($user)) } splashes water in { THE($target) }'s eyes.
+cmu-pepper-spray-splash-other = { CAPITALIZE(THE($user)) } брызги воды в { THE($target) }Глаза.

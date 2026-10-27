@@ -58,4 +58,4 @@ cmu-xeno-infection-burst-now-xeno-back = Мы вырываем позвоноч�
 
 cmu-pathogen-words-of-the-overmind-header = Мысли Сверхразума эхом разносятся по Слиянию...
 
-cmu-xeno-spore-sac-blocked = You can't reach that spot to plant a sac.
+cmu-xeno-spore-sac-blocked = Вы не можете добраться до этого места, чтобы посадить мешок.

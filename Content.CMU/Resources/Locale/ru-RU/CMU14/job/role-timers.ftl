@@ -1,13 +1,13 @@
-cmu-role-timer-military-roles = any military roles
+cmu-role-timer-military-roles = Любые военные роли
 
-cmu-role-timer-military-command-roles = any military command roles
+cmu-role-timer-military-command-roles = Любые военные командные роли
 
-cmu-role-timer-medical-roles = any medical roles
+cmu-role-timer-medical-roles = Любые медицинские роли
 
-cmu-role-timer-military-engineering-roles = any military engineering roles
+cmu-role-timer-military-engineering-roles = Любые военные инженерные роли
 
-cmu-role-timer-security-roles = any security or law enforcement roles
+cmu-role-timer-security-roles = Любые функции безопасности или правоохранительных органов
 
-cmu-role-timer-vehicle-crew-roles = any vehicle crew roles
+cmu-role-timer-vehicle-crew-roles = Любые роли экипажа
 
-cmu-role-timer-flight-crew-roles = any flight crew roles
+cmu-role-timer-flight-crew-roles = Любая роль летного экипажа

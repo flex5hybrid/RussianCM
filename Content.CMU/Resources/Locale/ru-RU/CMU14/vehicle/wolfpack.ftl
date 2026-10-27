@@ -1,8 +1,8 @@
-ent-CMUVehicleAPCWolfpack = M577A3E2 'Wolfpack' MGS
-    .desc = A mobile gun system built on the M577 armored personnel carrier, carrying a rotating autocannon turret over its troop bay.
+ent-CMUVehicleAPCWolfpack = M577A3E2 «Волчья стая» MGS
+    .desc = Мобильная система оружия, построенная на M577 Бронетранспортер, несущий вращающуюся пушечную башню над своим отсеком.
 
-ent-CMUVehicleAPCWolfpackFrontCannon = Wolfpack MGS frontal cannon
-    .desc = A fixed forward cannon fitted for the Wolfpack MGS hull.
+ent-CMUVehicleAPCWolfpackFrontCannon = Фронтальная пушка Wolfpack MGS
+    .desc = Неподвижная передняя пушка, установленная для корпуса Wolfpack MGS.
 
-ent-CMUVehicleAPCWolfpackFlareLauncher = Wolfpack MGS flare launcher
-    .desc = A flare launcher fitted for the Wolfpack MGS support mount.
+ent-CMUVehicleAPCWolfpackFlareLauncher = Пусковая установка Wolfpack MGS
+    .desc = Ракетная установка, установленная для установки поддержки Wolfpack MGS.

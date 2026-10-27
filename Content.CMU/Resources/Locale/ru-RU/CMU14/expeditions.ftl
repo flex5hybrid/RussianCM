@@ -1,83 +1,83 @@
-cmd-cmu-expedition-desc = Generate and inspect custom Govfor expedition maps.
+cmd-cmu-expedition-desc = Создавайте и проверяйте пользовательские карты экспедиций Govfor.
 
-cmd-cmu-expedition-visit-desc = Enter a ready expedition at its landing zone for inspection.
+cmd-cmu-expedition-visit-desc = Введите готовую экспедицию в зону посадки для осмотра.
 
-cmd-cmu-expedition-visit-help = cmu-expedition-visit <map ID> [connected username]
+cmd-cmu-expedition-visit-help = экспедиционный визит <map ID> [connected username]
 
-cmu-expedition-visit-no-player = A connected player is required. From the server console, include their username.
+cmu-expedition-visit-no-player = Требуется подключенный игрок. С серверной консоли включите их имя пользователя.
 
-cmu-expedition-visited = {$player} is at the landing zone on expedition map {$map}.
+cmu-expedition-visited = {$player} находится в зоне высадки на карте экспедиции {$map}.
 
-cmd-cmu-expedition-help = cmu-expedition scenarios, cmu-expedition scenario <scenario ID> <seed>, cmu-expedition generate <Woodland|Swamp|Tundra|Beach|Mountain|SwampJungle|BurnedWoodland> <seed> [RiverValley|LakeCountry|Ridgeline|Wetlands|Coast|Archipelago|Caldera|Fjord|Delta|Highlands] [CrashRecovery|SurveyCamp|BrokenConvoy|LostRelay], cmu-expedition <status|open|briefing> <map ID>, or cmu-expedition time <map ID> hour <0..23.99>
+cmd-cmu-expedition-help = сценарии cmu-экспедиции, сценарии cmu-экспедиции <scenario ID> <seed>Cmu-экспедиция генерирует <Woodland|Swamp|Tundra|Beach|Mountain|SwampJungle|BurnedWoodland> <seed> [RiverValley|LakeCountry|Ridgeline|Wetlands|Coast|Archipelago|Caldera|Fjord|Delta|Highlands] [CrashRecovery|SurveyCamp|BrokenConvoy|LostRelay]КМУ-экспедиция <status|open|briefing> <map ID>или время экспедиций <map ID> час <0..23.99>
 
-cmu-expedition-invalid-scenario = Unknown expedition story or missing story props. Use cmu-expedition scenarios to list presets.
+cmu-expedition-invalid-scenario = Неизвестная экспедиционная история или пропавший сюжетный реквизит. Используйте сценарии cmu-expedition для перечня предустановок.
 
-cmu-expedition-no-scenario = This is a terrain-only expedition. Generate a named scenario to include a recovery story.
+cmu-expedition-no-scenario = Это экспедиция только по местности. Создайте именованный сценарий, чтобы включить историю восстановления.
 
-cmu-expedition-objective-location = Last known cargo location: {$x}, {$y}.
+cmu-expedition-objective-location = Последнее известное местоположение груза: {$x}, {$y}.
 
-cmu-expedition-sector-map-name = {$sector} — Expedition {$seed}
+cmu-expedition-sector-map-name = {$sector} - Экспедиция {$seed}
 
-cmu-expedition-sector-lz-name = {$sector} — LZ {$seed}
+cmu-expedition-sector-lz-name = {$sector} - LZ {$seed}
 
-cmu-expedition-invalid-profile = Invalid expedition profile, palette, size, or variant. Check server prototypes.
+cmu-expedition-invalid-profile = Недействительный профиль экспедиции, палитра, размер или вариант. Проверьте прототипы сервера.
 
-cmu-expedition-no-layout = This seed could not fit connected sites and a safe landing zone. Try another seed or landform.
+cmu-expedition-no-layout = Это семя не могло поместиться на соединенных участках и безопасной зоне посадки. Попробуйте другое семя или форму земли.
 
-cmu-expedition-busy = An expedition is already generating. Wait for it to finish.
+cmu-expedition-busy = Уже создается экспедиция. Подожди, пока все закончится.
 
-cmu-expedition-limit = Three expedition maps already exist. Remove an unused expedition map before generating another.
+cmu-expedition-limit = Уже существуют три карты экспедиций. Удалите неиспользованную карту экспедиции, прежде чем создавать другую.
 
-cmu-expedition-failed = Expedition generation failed. See the server log; the incomplete map will be removed.
+cmu-expedition-failed = Поколение экспедиции провалилось. Смотрите журнал сервера; неполная карта будет удалена.
 
-cmu-expedition-started = Generating expedition map {$map} with seed {$seed}. Its Govfor LZ will open automatically when generation completes.
+cmu-expedition-started = Создание карты экспедиции {$map} семя семя {$seed}Его Govfor LZ откроется автоматически при завершении генерации.
 
-cmu-expedition-not-map = This map is not a generated expedition.
+cmu-expedition-not-map = Эта карта не является созданной экспедицией.
 
-cmu-expedition-not-ready = Expedition is still generating. Its landing zone is unavailable.
+cmu-expedition-not-ready = Экспедиция продолжается. Зона посадки недоступна.
 
-cmu-expedition-ready = Expedition ready. Command-generated missions publish their Govfor LZ automatically.
+cmu-expedition-ready = Экспедиция готова. Командные миссии автоматически публикуют Govfor LZ.
 
-cmu-expedition-opened = Govfor expedition landing zone is open.
+cmu-expedition-opened = Зона посадки экспедиции Говфор открыта.
 
-cmu-expedition-details = Seed {$seed}: {$biome} / {$landform} / {$story}. Landing center: {$x}, {$y}.
+cmu-expedition-details = семя {$seed}: {$biome} / {$landform} / {$story}Центр посадки: {$x}, {$y}.
 
-cmu-expedition-map-name = Expedition {$seed}
+cmu-expedition-map-name = экспедиция {$seed}
 
-cmu-expedition-lz-name = Expedition {$seed} — Landing Zone
+cmu-expedition-lz-name = экспедиция {$seed} - Зона посадки
 
-ent-CMUExpeditionBoulder1 = weathered boulder
-    .desc = Local stone worn smooth by wind and water.
+ent-CMUExpeditionBoulder1 = выветрившийся валун
+    .desc = Местный камень носился гладко под ветром и водой.
 
-ent-CMUExpeditionBoulder2 = weathered boulder
-    .desc = Local stone worn smooth by wind and water.
+ent-CMUExpeditionBoulder2 = выветрившийся валун
+    .desc = Местный камень носился гладко под ветром и водой.
 
-ent-CMUExpeditionBoulder3 = weathered boulder
-    .desc = Local stone worn smooth by wind and water.
+ent-CMUExpeditionBoulder3 = выветрившийся валун
+    .desc = Местный камень носился гладко под ветром и водой.
 
-ent-CMUExpeditionSupply = abandoned equipment case
-    .desc = A damaged case left behind by the expedition.
+ent-CMUExpeditionSupply = Заброшенное оборудование
+    .desc = Поврежденный случай, оставленный экспедицией.
 
-ent-CMUExpeditionRelay = silent field relay
-    .desc = An abandoned relay at the edge of the surveyed territory.
+ent-CMUExpeditionRelay = бесшумная полевая эстафета
+    .desc = Заброшенная эстафета на краю обследованной территории.
 
-ent-CMUExpeditionMiner = SUNDIAL experimental miner
-    .desc = A compact trial extraction rig in a reinforced transport frame. Its paired calibration controller is sealed beside the cutter housing. The machine is shut down.
+ent-CMUExpeditionMiner = Солнечный экспериментальный майнер
+    .desc = Компактная пробная установка для извлечения в усиленной транспортной раме. Его спаренный регулятор калибровки запечатан рядом с корпусом резца. Машина выключена.
 
-cmu-expedition-airspace = Expedition {$seed} — altitude level {$level}
+cmu-expedition-airspace = экспедиция {$seed} - высотный уровень {$level}
 
-cmu-expedition-time-set = Expedition lighting time updated on every level.
+cmu-expedition-time-set = Время освещения экспедиции обновляется на каждом уровне.
 
-cmu-expedition-announcement = PRIORITY BLACK ASSIGNMENT. Recover the experimental miner at {$sector}. LZ {$lz} is open. GOVFOR, deploy immediately.
+cmu-expedition-announcement = Приоритетное черное заявление. Восстановление экспериментального шахтера в {$sector}LZ {$lz} Открыт. GOVFORРазвернуть немедленно.
 
-cmu-expedition-fly = Launch to {$sector}
+cmu-expedition-fly = Начать с {$sector}
 
-cmd-cmu-expedition-orders-desc = Set expedition squad movement, guard work, tactics, and faction rules.
+cmd-cmu-expedition-orders-desc = Установите движение отряда экспедиции, работу охраны, тактику и правила фракции.
 
-cmd-cmu-expedition-orders-help = cmu-expedition-orders <map ID|here> <squad ID> <move|assault|guard|patrol-add> [x y, omit with here] [guard only: auto|north|east|south|west]; or patrol-start|patrol-stop|patrol-clear; or style <Steady|Aggressive|Cautious>; or friendly|target <comma-separated NPC factions|default>
+cmd-cmu-expedition-orders-help = приказы об экспедициях <map ID|here> <squad ID> <move|assault|guard|patrol-add> [x y, omit with here] [guard only: auto|north|east|south|west]; или патрульный запуск |patrol-stop |patrol-clear; или стиль <Steady|Aggressive|Cautious>; или дружественная цель <comma-separated NPC factions|default>
 
-cmu-expedition-unknown-faction = Unknown NPC faction: {$faction}.
+cmu-expedition-unknown-faction = Неизвестная фракция NPC: {$faction}.
 
-cmu-expedition-orders-applied = Orders applied to {$count} expedition guards.
+cmu-expedition-orders-applied = Приказы, применяемые к {$count} Стражи экспедиции.
 
-cmu-expedition-ai-squad = Squad {$squad} created. Use cmu-expedition-orders to direct it.
+cmu-expedition-ai-squad = Отряд {$squad} созданный. Используйте cmu-expedition-приказы, чтобы управлять им.

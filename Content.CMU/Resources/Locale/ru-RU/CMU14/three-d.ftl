@@ -1,107 +1,107 @@
-cmd-cmu_3d-desc = Open the local 3D asset workbench.
+cmd-cmu_3d-desc = Откройте местный 3D Сбор активов.
 
-cmd-cmu_3d-help = Usage: cmu_3d [model ID], or cmu_3d off.
+cmd-cmu_3d-help = Использование: cmu 3d [model ID]или cmu 3d.
 
-cmu-3d-title = Garrison 3D asset workbench
+cmu-3d-title = Гаррисон 3D рабочий стол
 
-cmu-3d-model = Model
+cmu-3d-model = Модель
 
-cmu-3d-count = { $count } models
+cmu-3d-count = { $count } модели
 
-cmu-3d-reset = Reset camera
+cmu-3d-reset = Сброс камеры
 
-cmu-3d-edges = Show edges
+cmu-3d-edges = Показать края
 
-cmu-3d-south = South / front
+cmu-3d-south = Южный / фронт
 
-cmu-3d-east = East / right
+cmu-3d-east = Восток / Право
 
-cmu-3d-north = North / back
+cmu-3d-north = Север / назад
 
-cmu-3d-west = West / left
+cmu-3d-west = Западный / Левый
 
-cmu-3d-reference = Sprite reference
+cmu-3d-reference = Ссылка на спрайт
 
-cmu-3d-details = Status: { $status } • { $parts } solid parts
+cmu-3d-details = Состояние: { $status } • { $parts } твердые части
 
-cmu-3d-too-complex = This model exceeds the preview's geometry budget and cannot be displayed. Simplify its solid parts.
+cmu-3d-too-complex = Эта модель превышает бюджет геометрии предварительного просмотра и не может быть отображена. Упростите его твердые части.
 
-cmu-3d-reference-ready = Prototype icon shown for the selected direction.
+cmu-3d-reference-ready = Иконка прототипа, показанная для выбранного направления.
 
-cmu-3d-reference-missing = This prototype has no available sprite reference.
+cmu-3d-reference-missing = Этот прототип не имеет доступной ссылки на спрайт.
 
-cmu-3d-no-reference = No source prototype assigned.
+cmu-3d-no-reference = Прототип источника не присваивается.
 
-cmu-3d-reference-help = Use the direction selector to compare the front, sides, and back. Icons may omit live layers, animation, and connected structure appearance.
+cmu-3d-reference-help = Используйте селектор направления для сравнения передней, боковой и задней сторон. Иконки могут опускать живые слои, анимацию и внешний вид связанной структуры.
 
-cmu-3d-controls = Left-drag to orbit freely • Scroll to zoom • Reset camera to fit the model
+cmu-3d-controls = Left-drag to orbit free • Scroll to zoom • Сброс камеры в соответствии с моделью
 
-cmu-3d-preview-status = Draft asset preview. Sprite matching and animation review are still required. The normal game view remains active.
+cmu-3d-preview-status = Проект предварительного просмотра активов. Сопоставление спрайтов и обзор анимации по-прежнему необходимы. Обычный вид игры остается активным.
 
-cmu-3d-empty = No 3D model prototypes are loaded.
+cmu-3d-empty = Нет 3D Прототипы моделей загружаются.
 
-cmu-3d-unknown = Unknown 3D model ID: { $id }
+cmu-3d-unknown = неизвестный 3D Модель ID: { $id }
 
-cmd-cmu_3d_live-desc = Open the live 3D scene workbench (debug administrators).
+cmd-cmu_3d_live-desc = Откройте Live 3D Сцена рабочего стола (администраторы отладки).
 
-cmd-cmu_3d_live-help = Usage: cmu_3d_live, or cmu_3d_live off.
+cmd-cmu_3d_live-help = Использование: cmu 3d live или cmu 3d live off.
 
-cmu-3d-live-title = Live 3D scene workbench
+cmu-3d-live-title = Жить 3D сценический рабочий стол
 
-cmu-3d-live-scope = Debug inspection of nearby replicated entities, refreshed 10 times per second. This view does not apply player fog, lighting or blindness. Draft art and fallback markers are incomplete; use the normal view for gameplay.
+cmu-3d-live-scope = Отладочная проверка близлежащих реплицированных объектов, обновленная 10 раз в секунду. Это представление не относится к туману игрока, освещению или слепоте. Проектное искусство и маркеры запаса неполны; используйте обычный вид для геймплея.
 
-cmu-3d-live-top = Top view
+cmu-3d-live-top = Вид сверху
 
-cmu-3d-live-inherited = Inherited candidates
+cmu-3d-live-inherited = Унаследованные кандидаты
 
-cmu-3d-live-fallbacks = Missing / state markers
+cmu-3d-live-fallbacks = Пропавшие / государственные маркеры
 
-cmu-3d-live-cutaway = Lower walls
+cmu-3d-live-cutaway = Нижние стены
 
-cmu-3d-live-controls = Left-drag to orbit • Right-drag to pan • Scroll to zoom • Click to inspect • Follows your controlled entity
+cmu-3d-live-controls = Слева на орбиту • Справа на панораму • Прокрутка до увеличения • Нажмите, чтобы проверить • Следует за вашим контролируемым объектом
 
-cmu-3d-live-unavailable = Requires an active debug administrator and a controlled entity on a loaded map.
+cmu-3d-live-unavailable = Требуется активный администратор отладки и контролируемый объект на загруженной карте.
 
-cmu-3d-live-statistics = { $exact } exact drafts • { $inherited } inherited • { $fallback } markers ({ $states } unsupported states) • { $floors } floor tiles • { $boxes } solids • { $omitted } entities omitted • { $dropped } solids rejected by render budget
+cmu-3d-live-statistics = { $exact } Точные проекты { $inherited } унаследованный { $fallback } маркеры{ $states } Неподдерживаемые государства { $floors } напольная плитка • { $boxes } твердые тела • { $omitted } Опущенные объекты • { $dropped } твердые вещества, отклоненные бюджетом рендеринга
 
-cmu-3d-live-select = Click an entity to inspect its model reference.
+cmu-3d-live-select = Нажмите на объект, чтобы проверить его модельную ссылку.
 
-cmu-3d-live-inspect = Open asset workbench
+cmu-3d-live-inspect = Рабочая группа по открытым активам
 
 cmu-3d-live-selected = { $prototype } → { $model }
 
-cmu-3d-live-no-model = No authored model
+cmu-3d-live-no-model = Нет авторской модели
 
-cmd-cmu3d-desc = Toggle first-person 3D on Stable Garrison Redux.
+cmd-cmu3d-desc = Toggle от первого лица 3D Стабильный гарнизон Redux.
 
-cmd-cmu3d-help = Usage: cmu3d. Run it again to return to the normal view.
+cmd-cmu3d-help = Использование: cmu3d. Запустите его снова, чтобы вернуться к нормальному виду.
 
-cmu-3d-firstperson-unavailable = First-person 3D is available only while controlling a character or observer on Stable Garrison Redux.
+cmu-3d-firstperson-unavailable = от первого лица 3D Доступен только при управлении персонажем или наблюдателем на Stable Garrison Redux.
 
-cmd-cmu_3d_firstperson-desc = Enable first-person 3D on Stable Garrison Redux.
+cmd-cmu_3d_firstperson-desc = Позволяет первому лицу 3D Стабильный гарнизон Redux.
 
-cmd-cmu_3d_firstperson-help = Usage: cmu_3d_firstperson, or cmu_3d_firstperson off.
+cmd-cmu_3d_firstperson-help = Использование: cmu 3d firstperson или cmu 3d firstperson off.
 
-cmu-3d-capture-title = CMU 3D controls
+cmu-3d-capture-title = CMU 3D контроль
 
-cmu-3d-capture-instructions = First-person 3D is on. Use your usual movement and interaction keys.
-    Press { $key } to enable or disable mouse capture. Move the captured mouse to look around.
-    Escape, chat, the console or leaving the game window releases the mouse so you can use the HUD.
-    Change this shortcut in Options → Controls → Camera → 3D: Toggle mouse capture.
-    Run cmu3d again to return to the normal view.
+cmu-3d-capture-instructions = от первого лица 3D Готово. Используйте обычные ключи движения и взаимодействия.
+    Пресса { $key } Включить или отключить захват мыши. Переместите захваченную мышь, чтобы осмотреться.
+    Побег, чат, консоль или выход из окна игры освобождает мышь, чтобы вы могли использовать HUD.
+    Измените этот ярлык в опциях → Управление → Камера 3DЗахват мыши Toggle.
+    Снова запустить cmu3d, чтобы вернуться к нормальному виду.
 
-cmu-3d-change-binding = Change hotkey
+cmu-3d-change-binding = Поменять горячий ключ
 
-cmu-3d-start-look = Start mouse look
+cmu-3d-start-look = Начать смотреть мышь
 
-ui-options-function-cmu-toggle-first-person-mouse = 3D: Toggle mouse capture
+ui-options-function-cmu-toggle-first-person-mouse = 3DЗахват мыши Toggle mouse capture
 
-cmd-cmu_3d_capture-desc = Capture the mouse in the first-person 3D view after closing the console, or release it.
+cmd-cmu_3d_capture-desc = Захват мыши от первого лица 3D Посмотреть после закрытия консоли, или выпустить ее.
 
-cmd-cmu_3d_capture-help = Usage: cmu_3d_capture [off]
+cmd-cmu_3d_capture-help = Использование: cmu 3d capture [off]
 
-cmu-3d-capture-unavailable = Run cmu3d before requesting mouse capture.
+cmu-3d-capture-unavailable = Запустите cmu3d, прежде чем запрашивать захват мыши.
 
-cmu-3d-capture-requested = Mouse capture requested. Close the console and any open popup; { $key } toggles capture and Escape releases it.
+cmu-3d-capture-requested = Запрос на захват мышей. Закройте консоль и любое открытое всплывающее окно; { $key } Тогглз захватывает и Escape выпускает его.
 
-cmu-3d-capture-released = Mouse released. Use { $key } to capture it again.
+cmu-3d-capture-released = Мышь освобождена. Использовать { $key } Чтобы захватить его снова.

@@ -1,4 +1,4 @@
-cmu-playtime-leaderboard-title = CMU Playtime Leaderboard
+cmu-playtime-leaderboard-title = CMU Игровая доска Leaderboard
 
 cmu-playtime-leaderboard-loading = Loading playtime...
 
@@ -14,18 +14,18 @@ cmu-playtime-leaderboard-summary = {$roles ->
     *[other] {$players} players
 } with recorded hours
 
-cmu-playtime-leaderboard-xeno-header = Xenomorphs
+cmu-playtime-leaderboard-xeno-header = Ксеноморфы
 
-cmu-playtime-leaderboard-govfor-header = Govfor
+cmu-playtime-leaderboard-govfor-header = Говфор
 
-cmu-playtime-leaderboard-xeno-champions = Top Xenomorphs
+cmu-playtime-leaderboard-xeno-champions = Топ ксеноморфов
 
-cmu-playtime-leaderboard-govfor-champions = Top Govfor
+cmu-playtime-leaderboard-govfor-champions = Топ Говфор
 
-cmu-playtime-leaderboard-role-subtitle = {$hours}h · {$players} players
+cmu-playtime-leaderboard-role-subtitle = {$hours}h) {$players} игроки
 
-cmu-playtime-leaderboard-empty = No playtime recorded yet.
+cmu-playtime-leaderboard-empty = Пьесы пока не записаны.
 
-cmd-cmuleaderboard-desc = Opens the playtime leaderboard for xeno and GOVFOR roles.
+cmd-cmuleaderboard-desc = Открывает таблицу лидеров игрового времени для ксено и GOVFOR роли.
 
-cmd-cmuleaderboard-help = Usage: cmuleaderboard
+cmd-cmuleaderboard-help = Использование: cmuleaderboard

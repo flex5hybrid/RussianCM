@@ -1,35 +1,35 @@
-cmu-xeno-parasite-shaken-loose = {CAPITALIZE(THE($parasite))} loses its grip and slides off {THE($victim)}!
+cmu-xeno-parasite-shaken-loose = {CAPITALIZE(THE($parasite))} теряет хватку и сползает {THE($victim)}!
 
-cmu-xeno-parasite-constricts = As you reach for {THE($parasite)}, its tail tightens around {THE($victim)}'s neck. You pull your hand back, deciding that's not a good idea.
+cmu-xeno-parasite-constricts = Когда вы достигаете {THE($parasite)}Его хвост затягивается вокруг {THE($victim)}Шея. Ты отдергиваешь руку назад, решив, что это плохая идея.
 
-cmu-xeno-parasite-hugged-1 = Something wet and leathery slaps onto your face and clamps down!
+cmu-xeno-parasite-hugged-1 = Что-то мокрое и кожаное хлопает по лицу и зажимает!
 
-cmu-xeno-parasite-hugged-2 = Spindly legs wrap around your head and a tail cinches around your throat!
+cmu-xeno-parasite-hugged-2 = Покрученные ноги обернуты вокруг головы, а хвост чешется вокруг горла!
 
-cmu-xeno-parasite-hugged-3 = The world goes dark as something forces itself over your face!
+cmu-xeno-parasite-hugged-3 = Мир темнеет, когда что-то навязывается вам на лицо!
 
-cmu-xeno-parasite-hugged-4 = You feel something push its way down your throat!
+cmu-xeno-parasite-hugged-4 = Вы чувствуете, как что-то толкает вас в горло!
 
-cmu-xeno-parasite-holding-1 = Something is lodged in your throat. You can't swallow.
+cmu-xeno-parasite-holding-1 = Что-то застряло у тебя в горле. Ты не можешь глотать.
 
-cmu-xeno-parasite-holding-2 = The thing on your face tightens its grip.
+cmu-xeno-parasite-holding-2 = Тварь на вашем лице затягивает хватку.
 
-cmu-xeno-parasite-holding-3 = You feel a slow, rhythmic pulsing deep in your throat.
+cmu-xeno-parasite-holding-3 = Вы чувствуете медленное, ритмичное пульсирование глубоко в горле.
 
-cmu-xeno-parasite-holding-4 = Its legs flex against your skull.
+cmu-xeno-parasite-holding-4 = Его ноги сгибаются к твоему черепу.
 
-cmu-xeno-parasite-holding-5 = Air keeps flowing into your lungs, but it isn't you doing the breathing.
+cmu-xeno-parasite-holding-5 = Воздух продолжает течь в ваши легкие, но вы не дышите.
 
-cmu-xeno-parasite-holding-6 = The tail around your neck twitches.
+cmu-xeno-parasite-holding-6 = Хвост вокруг шеи дергается.
 
-cmu-xeno-parasite-holding-7 = There's a warm, heavy pressure building in your chest.
+cmu-xeno-parasite-holding-7 = В твоей груди тёплое, сильное здание под давлением.
 
-cmu-xeno-parasite-holding-8 = You can feel its body swell and shrink against your face.
+cmu-xeno-parasite-holding-8 = Вы можете почувствовать, как его тело набухает и сжимается на лице.
 
-cmu-xeno-parasite-fell-off-1 = The thing on your face goes limp and peels away. You gasp for air.
+cmu-xeno-parasite-fell-off-1 = Тварь на твоем лице хромает и отслаивается. Ты задыхаешься.
 
-cmu-xeno-parasite-fell-off-2 = It lets go and slides off your face. Your throat is raw.
+cmu-xeno-parasite-fell-off-2 = Он отпускает и сползает с вашего лица. У тебя горло сырое.
 
-cmu-xeno-parasite-fell-off-3 = The legs loosen and the creature drops away. You cough hard.
+cmu-xeno-parasite-fell-off-3 = Ноги ослабевают, и существо отпадает. Ты сильно кашляешь.
 
-cmu-xeno-parasite-fell-off-4 = It's off your face. You can breathe on your own again, but something feels wrong inside.
+cmu-xeno-parasite-fell-off-4 = Это с твоего лица. Вы можете дышать самостоятельно, но внутри что-то не так.

@@ -1,31 +1,31 @@
-cmu-dropship-turbulence-start-1 = The hull groans as the dropship slams into a wall of turbulence!
+cmu-dropship-turbulence-start-1 = Корпус стонет, когда дропшип врезается в стену турбулентности!
 
-cmu-dropship-turbulence-start-2 = The deck drops out from under you as the dropship hits a pocket of dead air!
+cmu-dropship-turbulence-start-2 = Палуба выпадает из-под вас, когда дропшип попадает в карман мертвого воздуха!
 
-cmu-dropship-turbulence-start-3 = The engines scream and the whole bird shakes like it's coming apart!
+cmu-dropship-turbulence-start-3 = Двигатели кричат, и вся птица трясется, как будто она разваливается!
 
-cmu-dropship-turbulence-start-4 = Crosswinds hammer the dropship, rattling every strap and bolt in the hold!
+cmu-dropship-turbulence-start-4 = Кроссвиндс забивает дропшип, бряцает каждым ремнем и болтает в трюме!
 
-cmu-dropship-turbulence-start-5 = Warning lights flicker as the dropship bucks through a storm front!
+cmu-dropship-turbulence-start-5 = Предупреждающие огни мерцают, когда дропшип проходит через штормовой фронт!
 
-cmu-dropship-turbulence-start-6 = Atmospheric shear tears at the airframe and the dropship lurches hard to one side!
+cmu-dropship-turbulence-start-6 = Атмосфера разрывает слезы на планере, и дропшип тяжело бросается в одну сторону!
 
-cmu-dropship-turbulence-start-7 = The dropship pitches and rolls, loose gear clattering across the deck!
+cmu-dropship-turbulence-start-7 = Дроноходы и катки, рыхлое снаряжение, грохочущее по палубе!
 
-cmu-dropship-turbulence-knocked-down-1 = The deck heaves and throws you off your feet!
+cmu-dropship-turbulence-knocked-down-1 = Палуба вздымается и сбрасывает вас с ног!
 
-cmu-dropship-turbulence-knocked-down-2 = You lose your footing and slam into the deck!
+cmu-dropship-turbulence-knocked-down-2 = Ты теряешь опору и врезаешься в палубу!
 
-cmu-dropship-turbulence-knocked-down-3 = The dropship lurches and you go sprawling!
+cmu-dropship-turbulence-knocked-down-3 = Корабль рычит, а ты расползаешься!
 
-cmu-dropship-turbulence-knocked-down-4 = You grab for a handhold and miss, hitting the floor hard!
+cmu-dropship-turbulence-knocked-down-4 = Ты хватаешься за опору и промахиваешься, сильно ударяясь о пол!
 
-cmu-dropship-turbulence-knocked-down-5 = A sudden drop pitches you onto the deck!
+cmu-dropship-turbulence-knocked-down-5 = Внезапная капля бросает вас на палубу!
 
-cmu-dropship-launch-drop-1 = Your stomach lurches as the dropship freefalls out of the ship's bay!
+cmu-dropship-launch-drop-1 = Ваш желудок суетится, когда корабль свободно падает из бухты корабля!
 
-cmu-dropship-launch-drop-2 = The docking clamps release with a bang and the dropship drops like a stone out of the bay!
+cmu-dropship-launch-drop-2 = Стыковочные зажимы с треском отпускаются, и дропшип падает как камень из бухты!
 
-cmu-dropship-launch-drop-3 = The bay doors yawn open and the dropship falls away into the dark, your stomach left somewhere behind you!
+cmu-dropship-launch-drop-3 = Двери бухты зевают, и дропшип падает в темноту, твой желудок оставили где-то позади тебя!
 
-cmu-dropship-launch-drop-4 = Weightlessness grabs you as the dropship plummets clear of the ship!
+cmu-dropship-launch-drop-4 = Невесомость захватывает вас, когда корабль падает с корабля!

@@ -7,9 +7,9 @@ ent-CMUAirtightSealSpace =
     .desc = { ent-CMWallReinforcedHeavyAlmayer.desc }
 
 ent-CMUVehicleAPCWolfpackTurret = башня «Волчьей стаи»
-    .desc = A rotating turret mount for the M577A3E2 'Wolfpack' MGS.
+    .desc = Вращающееся крепление башни для M577A3E2 "Wolfpack" MGS.
 
 ent-CMUVehicleAPCWolfpackAutocannon = автоматическая пушка AC3-E «Волчьей стаи»
-    .desc = A rapid-firing autocannon refitted for the Wolfpack MGS turret. It uses ACE autocannon ammunition.
+    .desc = Быстродействующая автопушка, переоборудованная для башни Wolfpack MGS. Он использует боеприпасы АПФ.
 
 ent-AU14StampWYAssistant = печать помощника корпоративного представителя

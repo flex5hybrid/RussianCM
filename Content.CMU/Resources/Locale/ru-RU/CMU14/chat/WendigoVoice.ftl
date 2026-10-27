@@ -1,7 +1,7 @@
-wendigo-voice-window-title = Wendigo Voice Mimicry
+wendigo-voice-window-title = Голос Вендиго Мимикрия
 
-wendigo-voice-search-placeholder = Search...
+wendigo-voice-search-placeholder = Поиск...
 
-wendigo-voice-category-all = All
+wendigo-voice-category-all = Все
 
-wendigo-voice-no-results = No results.
+wendigo-voice-no-results = Никаких результатов.

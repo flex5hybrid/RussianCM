@@ -1,3 +1,3 @@
-cmu-chat-emote-name-burning = Burning
+cmu-chat-emote-name-burning = Сжигание
 
-cmu-chat-emote-msg-burning = screams as they are engulfed in flames!
+cmu-chat-emote-msg-burning = Они кричат, когда охвачены пламенем!

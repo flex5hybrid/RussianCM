@@ -103,14 +103,14 @@ cmu-colony-name-atmosian = Атмосферный техник колонии
 
 cmu-spawn-role-auxiliary-staff-opfor = Вспомогательный персонал (OPFOR)
 
-cmu-job-name-bosenmori-colonist = Colonist
+cmu-job-name-bosenmori-colonist = колонист
 
-cmu-job-name-bosenmori-surgeon = Surgeon
+cmu-job-name-bosenmori-surgeon = Хирург
 
-cmu-job-name-bosenmori-engineer = Engineer
+cmu-job-name-bosenmori-engineer = Инженер
 
-cmu-job-name-bosenmori-nspa = NSPA Constable
+cmu-job-name-bosenmori-nspa = Констебль NSPA
 
-cmu-job-description-bosenmori-colonist = You are a colonist of Bosenmori Basho. You saw those... things... kill your friends. All you can do now is try to survive.
+cmu-job-description-bosenmori-colonist = Вы - колонист Босенмори Башо. Вы видели, как эти вещи убивают ваших друзей. Все, что вы можете сделать сейчас, это попытаться выжить.
 
-cmu-job-rules-bosenmori-colonist = You are a civilian. You are NEUTRAL to all factions unless provoked. You are aware of the threat but not how it functions or operates.
+cmu-job-rules-bosenmori-colonist = Ты гражданский. Вы нейтральны по отношению ко всем фракциям, если вас не спровоцировать. Вы знаете об угрозе, но не знаете, как она действует.

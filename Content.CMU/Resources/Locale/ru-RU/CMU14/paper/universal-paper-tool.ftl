@@ -9,6 +9,6 @@ cmu-universal-paper-tool-printed = Напечатано: {$paper}.
 cmu-universal-paper-tool-no-paper = Сначала вставьте бумагу.
 cmu-universal-paper-tool-invalid-template = Этот шаблон не является прототипом документа.
 
-cmu-universal-paper-tool-search-placeholder = Search templates...
+cmu-universal-paper-tool-search-placeholder = Шаблоны поиска...
 
-cmu-universal-paper-tool-close = Close
+cmu-universal-paper-tool-close = Закрыть

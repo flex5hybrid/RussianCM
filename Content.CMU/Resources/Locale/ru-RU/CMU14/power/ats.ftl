@@ -1,7 +1,7 @@
-cmu-ats-examine = Mains monitor. Backup circuit: {$state}.
+cmu-ats-examine = Главный монитор. Резервная схема: {$state}.
 
-cmu-ats-state-standby = standby, mains healthy
+cmu-ats-state-standby = Standby, Mains Здоровый
 
-cmu-ats-state-cranking = CRANKING, hold on
+cmu-ats-state-cranking = Хватит, держись.
 
-cmu-ats-state-online = ONLINE, on backup
+cmu-ats-state-online = Онлайн, на резервной копии

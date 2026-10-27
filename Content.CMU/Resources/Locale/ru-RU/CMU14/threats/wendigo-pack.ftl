@@ -1,5 +1,5 @@
-chat-radio-cmu-wendigo-pack = PACK
+chat-radio-cmu-wendigo-pack = ПАК
 
-cmu-wendigo-pack-death-announce = The pack feels {$wendigo} fall silent in {$location}.
+cmu-wendigo-pack-death-announce = Пачка чувствует {$wendigo} замолчать в {$location}.
 
-cmu-wendigo-pack-unknown-location = Unknown
+cmu-wendigo-pack-unknown-location = неизвестный

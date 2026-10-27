@@ -1,14 +1,14 @@
-ent-CMUMedicalJeepBeacon = medical jeep drop beacon
-    .desc = A single-use medical vehicle beacon. Activate it and throw it onto open ground. Stand clear of the blue beam while the jeep crate drops in.
+ent-CMUMedicalJeepBeacon = Медицинский джип Drop Beacon
+    .desc = Одноразовый медицинский маяк. Активируйте его и выбросьте на открытый грунт. Держитесь подальше от синего луча, пока ящик джипа падает.
 
-ent-CMUMedicalJeepDropLaser = medical vehicle delivery beam
-    .desc = A blue beacon marking an incoming vehicle crate. Stand clear!
+ent-CMUMedicalJeepDropLaser = Луч доставки медицинского транспортного средства
+    .desc = Синий маяк, обозначающий входящий ящик транспортного средства. Стойте на месте!
 
-ent-CMUCrateJeepMedicalDrop = civilian medical jeep crate
-    .desc = A civilian medical jeep in a wooden crate, ready to drive. Unlatch it by hand on clear ground and the walls fall away.
+ent-CMUCrateJeepMedicalDrop = гражданский медицинский джип
+    .desc = Гражданский медицинский джип в деревянном ящике, готовый к вождению. Раскройте его вручную на чистом грунте, и стены отпадут.
 
-cmu-medical-jeep-beacon-spent-name = spent medical jeep beacon
+cmu-medical-jeep-beacon-spent-name = Медицинский джип Beacon
 
-cmu-medical-jeep-beacon-spent-desc = A depleted medical vehicle delivery beacon.
+cmu-medical-jeep-beacon-spent-desc = Исчерпанный маяк доставки медицинского автомобиля.
 
-cmu-medical-jeep-beacon-called = Medical jeep inbound! Stand clear of the blue beam!
+cmu-medical-jeep-beacon-called = Медицинский джип на подходе! Держись подальше от голубого луча!

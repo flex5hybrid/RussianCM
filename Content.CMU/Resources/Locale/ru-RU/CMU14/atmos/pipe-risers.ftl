@@ -1,13 +1,13 @@
-cmu-pipe-riser-linked = The line couples to the deck {$direction}.
+cmu-pipe-riser-linked = Линия соединяется с палубой {$direction}.
 
-cmu-pipe-riser-unlinked = Unlinked. No matching riser one deck {$direction}.
+cmu-pipe-riser-unlinked = Несвязанный. Ни один подъёмник ни одной палубы {$direction}.
 
-cmu-pipe-riser-dir-toggled = You pry the riser to look {$direction}.
+cmu-pipe-riser-dir-toggled = Ты пытаешься подняться, чтобы посмотреть {$direction}.
 
-cmu-z-direction-above = above
+cmu-z-direction-above = выше
 
-cmu-z-direction-below = below
+cmu-z-direction-below = ниже
 
-cmu-zlevel-panel-closed = Its service panel is sealed. A multitool releases it.
+cmu-zlevel-panel-closed = Его панель обслуживания запечатана. Мультиинструмент его выпускает.
 
-cmu-zlevel-panel-open = Its service panel is open. Pry the machine apart from here.
+cmu-zlevel-panel-open = Панель обслуживания открыта. Отнеси машину подальше отсюда.

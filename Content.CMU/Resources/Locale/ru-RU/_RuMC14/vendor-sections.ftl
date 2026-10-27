@@ -1,161 +1,161 @@
-au14-vendor-section-ammunition = Ammunition
+au14-vendor-section-ammunition = Боеприпасы
 
-au14-vendor-section-apparel = Apparel
+au14-vendor-section-apparel = Одежда
 
-au14-vendor-section-armor = Armor
+au14-vendor-section-armor = Броня
 
-au14-vendor-section-armor-components = Armor Components
+au14-vendor-section-armor-components = Броневые компоненты
 
-au14-vendor-section-attachments = Attachments
+au14-vendor-section-attachments = Прикрепления
 
-au14-vendor-section-backpack = Backpack
+au14-vendor-section-backpack = Рюкзак
 
-au14-vendor-section-bag = Bag
+au14-vendor-section-bag = сумка
 
-au14-vendor-section-barrel-attachments = Barrel Attachments
+au14-vendor-section-barrel-attachments = Баррельные прикрепления
 
-au14-vendor-section-belt = Belt
+au14-vendor-section-belt = Пояс
 
-au14-vendor-section-belts = Belts
+au14-vendor-section-belts = Пояса
 
-au14-vendor-section-body-armor = Body Armor
+au14-vendor-section-body-armor = Броня для тела
 
-au14-vendor-section-chevrons = Chevrons
+au14-vendor-section-chevrons = Шевроны
 
-au14-vendor-section-coats = Coats
+au14-vendor-section-coats = пальто
 
-au14-vendor-section-devices = Devices
+au14-vendor-section-devices = устройства
 
-au14-vendor-section-engineer-set = Engineer Set
+au14-vendor-section-engineer-set = Инженерный набор
 
-au14-vendor-section-engineer-uniform = Engineer Uniform
+au14-vendor-section-engineer-uniform = Униформа
 
-au14-vendor-section-engineering-materials = Engineering Materials
+au14-vendor-section-engineering-materials = Инженерные материалы
 
-au14-vendor-section-engineering-storage-bag = Engineering Storage Bag
+au14-vendor-section-engineering-storage-bag = Мешок для хранения машин
 
-au14-vendor-section-engineering-storage-pouch = Engineering Storage Pouch
+au14-vendor-section-engineering-storage-pouch = Инженерный складской мешок
 
-au14-vendor-section-engineering-supplies = Engineering Supplies
+au14-vendor-section-engineering-supplies = Инженерные поставки
 
-au14-vendor-section-equipment = Equipment
+au14-vendor-section-equipment = Снаряжение
 
-au14-vendor-section-essential-equipment = Essential Equipment
+au14-vendor-section-essential-equipment = Основное оборудование
 
-au14-vendor-section-essential-medical-equipment = Essential Medical Equipment
+au14-vendor-section-essential-medical-equipment = Основное медицинское оборудование
 
-au14-vendor-section-explosives = Explosives
+au14-vendor-section-explosives = Взрывчатка
 
-au14-vendor-section-fatigues = Fatigues
+au14-vendor-section-fatigues = Полевая форма
 
-au14-vendor-section-firearm-system = Firearm System
+au14-vendor-section-firearm-system = Система огнестрельного оружия
 
-au14-vendor-section-flag = Flag
+au14-vendor-section-flag = Флаг
 
-au14-vendor-section-flares-lights = Flares & Lights
+au14-vendor-section-flares-lights = Вспышки и огни
 
-au14-vendor-section-food = Food
+au14-vendor-section-food = Еда
 
-au14-vendor-section-footwear = Footwear
+au14-vendor-section-footwear = обувь
 
-au14-vendor-section-gas-mask = Gas Mask
+au14-vendor-section-gas-mask = Газовая маска
 
-au14-vendor-section-general-medical-supplies = General Medical Supplies
+au14-vendor-section-general-medical-supplies = Общие медицинские принадлежности
 
-au14-vendor-section-glasses = Glasses
+au14-vendor-section-glasses = Очки
 
-au14-vendor-section-glasses-goggles = Glasses & Goggles
+au14-vendor-section-glasses-goggles = Очки и очки
 
-au14-vendor-section-gloves = Gloves
+au14-vendor-section-gloves = Перчатки
 
-au14-vendor-section-gun-munitions = Gun Munitions
+au14-vendor-section-gun-munitions = Пушечные боеприпасы
 
-au14-vendor-section-handgun-ammunition = Handgun Ammunition
+au14-vendor-section-handgun-ammunition = Оружейный боеприпас
 
-au14-vendor-section-handguns = Handguns
+au14-vendor-section-handguns = Оружие
 
-au14-vendor-section-hat = Hat
+au14-vendor-section-hat = шляпа
 
-au14-vendor-section-headgear = Headgear
+au14-vendor-section-headgear = Головной убор
 
-au14-vendor-section-helmet = Helmet
+au14-vendor-section-helmet = шлем
 
-au14-vendor-section-hud = HUD
+au14-vendor-section-hud = ХУД
 
-au14-vendor-section-injectors = Injectors
+au14-vendor-section-injectors = Инжекторы
 
-au14-vendor-section-inmate-restraining-gear = Inmate Restraining Gear
+au14-vendor-section-inmate-restraining-gear = Заключенный сдерживает гир
 
-au14-vendor-section-limited-injector-medications = Limited Injector Medications
+au14-vendor-section-limited-injector-medications = Ограниченные инъекционные препараты
 
-au14-vendor-section-limited-pill-medications = Limited Pill Medications
+au14-vendor-section-limited-pill-medications = Ограниченные таблетки
 
-au14-vendor-section-load-bearing-equipment = Load Bearing Equipment
+au14-vendor-section-load-bearing-equipment = Оборудование для подшипников
 
-au14-vendor-section-magazine-bullets = Magazine Bullets
+au14-vendor-section-magazine-bullets = Журнал Пули
 
-au14-vendor-section-mask = Mask
+au14-vendor-section-mask = Маска
 
-au14-vendor-section-materials = Materials
+au14-vendor-section-materials = материалы
 
-au14-vendor-section-medical-gloves = Medical Gloves
+au14-vendor-section-medical-gloves = Медицинские перчатки
 
-au14-vendor-section-medical-masks = Medical Masks
+au14-vendor-section-medical-masks = Медицинские маски
 
-au14-vendor-section-medical-pouches = Medical Pouches
+au14-vendor-section-medical-pouches = Медицинские мешочки
 
-au14-vendor-section-medical-storage = Medical Storage
+au14-vendor-section-medical-storage = Медицинское хранение
 
-au14-vendor-section-medical-supplies = Medical Supplies
+au14-vendor-section-medical-supplies = Медицинские принадлежности
 
-au14-vendor-section-misc = Misc
+au14-vendor-section-misc = Миск
 
-au14-vendor-section-optics = Optics
+au14-vendor-section-optics = оптика
 
-au14-vendor-section-patches = Patches
+au14-vendor-section-patches = Патчи
 
-au14-vendor-section-pill-bottles = Pill Bottles
+au14-vendor-section-pill-bottles = Бутылки для таблеток
 
-au14-vendor-section-pouches = Pouches
+au14-vendor-section-pouches = мешочки
 
-au14-vendor-section-power-generation = Power Generation
+au14-vendor-section-power-generation = Генерация электроэнергии
 
-au14-vendor-section-primary-ammunition = Primary Ammunition
+au14-vendor-section-primary-ammunition = Основные боеприпасы
 
-au14-vendor-section-rail-attachments = Rail Attachments
+au14-vendor-section-rail-attachments = Железнодорожные прицепы
 
-au14-vendor-section-record-keeping = Record Keeping
+au14-vendor-section-record-keeping = Ведение записей
 
-au14-vendor-section-secondary-ammunition = Secondary Ammunition
+au14-vendor-section-secondary-ammunition = Вторичный боеприпас
 
-au14-vendor-section-softcovers = Softcovers
+au14-vendor-section-softcovers = Мягкое покрытие
 
-au14-vendor-section-spare-equipment = Spare Equipment
+au14-vendor-section-spare-equipment = Запасное оборудование
 
-au14-vendor-section-special-firearms = Special Firearms
+au14-vendor-section-special-firearms = Специальное огнестрельное оружие
 
-au14-vendor-section-standard-equipment = Standard Equipment
+au14-vendor-section-standard-equipment = Стандартное оборудование
 
-au14-vendor-section-standard-primaries = Standard Primaries
+au14-vendor-section-standard-primaries = Стандартные первичные
 
-au14-vendor-section-standard-secondaries = Standard Secondaries
+au14-vendor-section-standard-secondaries = Стандартные вторичные
 
-au14-vendor-section-support-equipment = Support Equipment
+au14-vendor-section-support-equipment = Оборудование поддержки
 
-au14-vendor-section-tents = Tents
+au14-vendor-section-tents = Палатки
 
-au14-vendor-section-tool-storage = Tool Storage
+au14-vendor-section-tool-storage = Склад инструментов
 
-au14-vendor-section-tools = Tools
+au14-vendor-section-tools = Инструменты
 
-au14-vendor-section-underbarrel-attachments = Underbarrel Attachments
+au14-vendor-section-underbarrel-attachments = Подствольные прикрепления
 
-au14-vendor-section-vest = Vest
+au14-vendor-section-vest = жилет
 
-au14-vendor-section-weapon-ammunition = Weapon Ammunition
+au14-vendor-section-weapon-ammunition = Оружейный боеприпас
 
-au14-vendor-section-weapons = Weapons
+au14-vendor-section-weapons = Оружие
 
-au14-vendor-section-weapons-specialist-sets = Weapons Specialist Sets
+au14-vendor-section-weapons-specialist-sets = Специалист по оружию
 
-au14-vendor-section-webbings = Webbings
+au14-vendor-section-webbings = Уэббинг

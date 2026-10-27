@@ -1,5 +1,5 @@
-cmu-phone-rename-title = Relabel phone
+cmu-phone-rename-title = Обозначить телефон
 
-cmu-phone-rename-prompt = New label
+cmu-phone-rename-prompt = Новый лейбл
 
-cmu-phone-rename-done = You relabel the phone "{ $name }".
+cmu-phone-rename-done = Переименуйте телефон.{ $name }".

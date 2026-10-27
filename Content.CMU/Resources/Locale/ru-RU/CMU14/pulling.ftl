@@ -1,1 +1,1 @@
-cmu-pull-aggressive-struggle-hint = The grip is too tight to just slip out of. Move to struggle free!
+cmu-pull-aggressive-struggle-hint = Хватка слишком плотная, чтобы просто выскользнуть. Двигайтесь к борьбе свободно!

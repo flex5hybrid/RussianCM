@@ -26,4 +26,4 @@ tunable-radio-cleared = Настроенная частота гарнитуры
 
 tunable-radio-language-no-radio = { $language } невозможно передать по радиосети.
 
-tunable-radio-current-freq-placeholder = FREQ: ---.---
+tunable-radio-current-freq-placeholder = ФРЕК: -----

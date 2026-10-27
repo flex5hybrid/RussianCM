@@ -1,53 +1,53 @@
-cmu-prodigy-callin-greeting = Your Prodigy team has been contracted to support the operation. Check in with the Prodigy command on the ground and get to work.
+cmu-prodigy-callin-greeting = Ваша команда Prodigy получила контракт на поддержку операции. Свяжитесь с командой Prodigy на земле и приступайте к работе.
 
-cmu-prodigy-callin-supervisors = the Prodigy command on the ground
+cmu-prodigy-callin-supervisors = Командование вундеркиндов на земле
 
-cmu-prodigy-callin-rules = You are a Prodigy Security Corporation contractor. You are ALLIED to Prodigy, NEUTRAL to civilians and HOSTILE to Prodigy's enemies.
+cmu-prodigy-callin-rules = Вы являетесь подрядчиком Prodigy Security Corporation. Вы преданы вундеркинду, нейтральны гражданским лицам и враждебны врагам вундеркинда.
 
-cmu-job-title-prodigy-guard-lead = Senior Guard
+cmu-job-title-prodigy-guard-lead = Старшая гвардия
 
-cmu-job-title-prodigy-guard = Security Guard
+cmu-job-title-prodigy-guard = Охрана безопасности
 
-cmu-prodigy-guard-lead-name = Prodigy Senior Guard
+cmu-prodigy-guard-lead-name = Старшая гвардия
 
-cmu-prodigy-guard-name = Prodigy Security Guard
+cmu-prodigy-guard-name = Вундеркинд охранник
 
-cmu-prodigy-guard-description = You are part of a Prodigy security guard detail, sent in to guard Prodigy sites, people and property and keep order around them.
+cmu-prodigy-guard-description = Вы являетесь частью охранника Prodigy, отправленного для охраны сайтов Prodigy, людей и имущества и поддержания порядка вокруг них.
 
-cmu-job-title-prodigy-sf-leader = Squad Leader
+cmu-job-title-prodigy-sf-leader = Командир отряда
 
-cmu-job-title-prodigy-sf-rifleman = Rifleman
+cmu-job-title-prodigy-sf-rifleman = Стрелок
 
-cmu-job-title-prodigy-sf-corpsman = Corpsman
+cmu-job-title-prodigy-sf-corpsman = Позвать санитара
 
-cmu-job-title-prodigy-sf-smartgunner = Smartgunner
+cmu-job-title-prodigy-sf-smartgunner = Смартгун
 
-cmu-prodigy-sf-leader-name = Prodigy SF Squad Leader
+cmu-prodigy-sf-leader-name = Лидер отряда Prodigy SF
 
-cmu-prodigy-sf-rifleman-name = Prodigy SF Rifleman
+cmu-prodigy-sf-rifleman-name = Винтовка Prodigy SF
 
-cmu-prodigy-sf-corpsman-name = Prodigy SF Corpsman
+cmu-prodigy-sf-corpsman-name = Продиги SF Corpsman
 
 cmu-prodigy-sf-smartgunner-name = Prodigy SF Smartgunner
 
-cmu-prodigy-sf-description = You are part of a Prodigy Security Forces squad, sent in to reinforce the Prodigy forces in the area of operations.
+cmu-prodigy-sf-description = Вы являетесь частью отряда сил безопасности Prodigy, направленного для усиления сил Prodigy в районе операций.
 
-cmu-job-title-prodigy-sniper = Marksman
+cmu-job-title-prodigy-sniper = Пехотный снайпер
 
-cmu-job-title-prodigy-spotter = Spotter
+cmu-job-title-prodigy-spotter = споттер
 
-cmu-prodigy-sniper-name = Prodigy Marksman
+cmu-prodigy-sniper-name = Продиги Марксман
 
-cmu-prodigy-spotter-name = Prodigy Spotter
+cmu-prodigy-spotter-name = Обсуждение Prodigy Spotter
 
-cmu-prodigy-sniper-description = You are part of a Prodigy sniper overwatch pair, sent in with an M96S to cover the Prodigy forces and pick off high-value targets.
+cmu-prodigy-sniper-description = Вы являетесь частью снайперской снайперской пары, отправленной в M96S Чтобы прикрыть силы Вундеркинда и отбить ценные цели.
 
-cmu-job-title-prodigy-foreman = Foreman
+cmu-job-title-prodigy-foreman = Бригадир
 
-cmu-job-title-prodigy-builder = Builder
+cmu-job-title-prodigy-builder = Строитель
 
-cmu-prodigy-foreman-name = Prodigy Foreman
+cmu-prodigy-foreman-name = Вундеркинд Форман
 
-cmu-prodigy-builder-name = Prodigy Builder
+cmu-prodigy-builder-name = Вундеркиндский строитель
 
-cmu-prodigy-construction-description = You are part of a Prodigy construction crew, sent in to build, fortify and repair for the Prodigy forces in the area.
+cmu-prodigy-construction-description = Вы являетесь частью строительной команды Prodigy, отправленной для строительства, укрепления и ремонта сил Prodigy в этом районе.

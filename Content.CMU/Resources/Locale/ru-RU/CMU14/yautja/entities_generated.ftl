@@ -2244,8 +2244,8 @@ ent-CMUHunterShipYautjaVendorDinnerware = тарелка раздатчик
 
 ent-CMUSkillPresetYautjaWarrior = яутжа воин
 
-ent-CMUYautjaYoungbloodRelayBeacon = youngblood relay beacon
-    .desc = A device covered in sacred text, attuned to young hunters. It whirrs and beeps every couple of seconds.
+ent-CMUYautjaYoungbloodRelayBeacon = Эстафета молодой крови
+    .desc = Устройство, покрытое священным текстом, настроенное на молодых охотников. Каждые пару секунд он шепчет и гудит.
 
-ent-CMUWeYuHivebreaker = salvaged hivebreaker
-    .desc = A recovered Yautja hivebreaker, its alien interlocks cut out and rewired by Weyland-Yutani. Breaks a serpent's link to the Hivemind and binds it to whoever holds the device.
+ent-CMUWeYuHivebreaker = спасенный ульебой
+    .desc = Восстановленный ульебой Яутджи, его инопланетные блокировки вырезаны и перемонтированы Вейландом-Ютани. Разрывает змею связь с Улей-разумом и связывает его с тем, кто держит устройство.

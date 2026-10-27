@@ -1,1 +1,1 @@
-cmu-round-end-hidden-username = (hidden)
+cmu-round-end-hidden-username = (скрыто)

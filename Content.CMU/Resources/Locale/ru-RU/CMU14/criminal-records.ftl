@@ -132,53 +132,53 @@ cmu-records-print-content = [head=2]УГОЛОВНОЕ ДОСЬЕ[/head]
 ent-CMUSuspectPhoto = фотография подозреваемого
     .desc = Фотография, напечатанная из базы уголовных досье.
 
-cmu-criminal-records-heading = CRIMINAL RECORDS
+cmu-criminal-records-heading = КРИМИНАЛЬНЫЕ РЕКОРДЫ
 
 cmu-criminal-records-subheading = { $count ->
-    [one] SECURITY DATABASE // 1 RECORD LISTED
-   *[other] SECURITY DATABASE // { $count } RECORDS LISTED
+    [one] ДАННЫЕ БЕЗОПАСНОСТИ // 1 ПРИЗНАНИЕ
+   *[other] ДАННЫЕ БЕЗОПАСНОСТИ // { $count } Упоминается
 }
 
-cmu-criminal-records-access-granted = ACCESS GRANTED
+cmu-criminal-records-access-granted = Доступ гарантирован
 
-cmu-criminal-records-access-read-only = READ ONLY
+cmu-criminal-records-access-read-only = ТОЛЬКО ЧТЕНИЕ
 
-cmu-criminal-records-search = SEARCH RECORDS
+cmu-criminal-records-search = Поисковые запросы
 
-cmu-criminal-records-search-placeholder = Type to search...
+cmu-criminal-records-search-placeholder = Тип для поиска...
 
-cmu-criminal-records-show = SHOW
+cmu-criminal-records-show = показывать
 
-cmu-criminal-records-show-all = All statuses
+cmu-criminal-records-show-all = Все статусы
 
-cmu-criminal-records-none = NO RECORDS FOUND
+cmu-criminal-records-none = Никаких документов не найдено
 
-cmu-criminal-records-select = SELECT A RECORD
+cmu-criminal-records-select = Выбрать рекорд
 
-cmu-criminal-records-particulars = Particulars
+cmu-criminal-records-particulars = Особенности
 
-cmu-criminal-records-fingerprints = Fingerprints
+cmu-criminal-records-fingerprints = Отпечатки пальцев
 
-cmu-criminal-records-dna = DNA
+cmu-criminal-records-dna = ДНК
 
-cmu-criminal-records-religion = Religion
+cmu-criminal-records-religion = Религия
 
-cmu-criminal-records-squad = Squad
+cmu-criminal-records-squad = Отряд
 
-cmu-criminal-records-bounty = Bounty
+cmu-criminal-records-bounty = Награда
 
-cmu-criminal-records-set-by = SET BY { $name }
+cmu-criminal-records-set-by = Садись { $name }
 
-cmu-criminal-records-set-status = Set Status
+cmu-criminal-records-set-status = Установить статус
 
-cmu-criminal-records-no-access = Your ID doesn't have access to change records.
+cmu-criminal-records-no-access = Ваш ID не имеет доступа к записи об изменениях.
 
-cmu-criminal-records-add-entry = ADD ENTRY
+cmu-criminal-records-add-entry = ВХОД
 
-cmu-criminal-records-delete = DELETE
+cmu-criminal-records-delete = Удалить
 
-cmu-criminal-records-delete-confirm = CONFIRM
+cmu-criminal-records-delete-confirm = Утверждение
 
-cmu-criminal-records-footer-edit = Wanted, suspect and hostile statuses ask for a reason. History entries are timestamped.
+cmu-criminal-records-footer-edit = Разыскиваемые, подозрительные и враждебные статусы просят о причине. Записи истории маркированы по времени.
 
-cmu-criminal-records-footer-read-only = Read-only: swipe an ID with security access to make changes.
+cmu-criminal-records-footer-read-only = Только для чтения: проведите ID с доступом к безопасности для внесения изменений.

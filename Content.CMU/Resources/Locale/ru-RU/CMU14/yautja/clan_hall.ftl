@@ -1,187 +1,187 @@
-cmd-clanhall-desc = Opens the Yautja clan hall.
+cmd-clanhall-desc = Открывается зал клана Яутджа.
 
-cmd-clanhall-help = Usage: clanhall
+cmd-clanhall-help = Оригинальное название: Clanhall
 
-cmd-clanhall-denied = You need a Yautja whitelist or clan profile to use this.
+cmd-clanhall-denied = Для этого вам нужен белый список или профиль клана Yautja.
 
-cmu-yautja-hall-verb = Clan hall
+cmu-yautja-hall-verb = Клановый зал
 
-cmu-yautja-bracer-menu-clan-hall = Clan hall
+cmu-yautja-bracer-menu-clan-hall = Клановый зал
 
-cmu-yautja-bracer-menu-clan-hall-detail = Clans, members and honor
+cmu-yautja-bracer-menu-clan-hall-detail = Кланы, члены и честь
 
-cmu-yautja-hall-title = Clan hall
+cmu-yautja-hall-title = Клановый зал
 
-cmu-yautja-hall-tab-clan = Clan
+cmu-yautja-hall-tab-clan = Клан
 
-cmu-yautja-hall-tab-boards = Leaderboard
+cmu-yautja-hall-tab-boards = Руководитель
 
-cmu-yautja-hall-tab-hunter = Hunter
+cmu-yautja-hall-tab-hunter = Охотник
 
-cmu-yautja-hall-tab-whitelists = Whitelists
+cmu-yautja-hall-tab-whitelists = Белые списки
 
-cmu-yautja-hall-tab-round = Round
+cmu-yautja-hall-tab-round = Круглый
 
-cmu-yautja-hall-clan = Clan
+cmu-yautja-hall-clan = Клан
 
-cmu-yautja-hall-clanless = No clan
+cmu-yautja-hall-clanless = Нет клана
 
-cmu-yautja-hall-clan-unknown = Unknown clan
+cmu-yautja-hall-clan-unknown = Неизвестный клан
 
-cmu-yautja-hall-online = Online
+cmu-yautja-hall-online = Онлайн
 
-cmu-yautja-hall-offline = Offline
+cmu-yautja-hall-offline = Оффлайн
 
-cmu-yautja-hall-edit = Edit
+cmu-yautja-hall-edit = Редактировать
 
-cmu-yautja-hall-save = Save
+cmu-yautja-hall-save = Сохранить
 
-cmu-yautja-hall-cancel = Cancel
+cmu-yautja-hall-cancel = Отмена
 
-cmu-yautja-hall-set = Set
+cmu-yautja-hall-set = Настройка
 
-cmu-yautja-hall-create = Create
+cmu-yautja-hall-create = создавать
 
-cmu-yautja-hall-search = Search
+cmu-yautja-hall-search = Поиск
 
-cmu-yautja-hall-player = Player name or ID
+cmu-yautja-hall-player = Имя игрока или ID
 
-cmu-yautja-hall-error = Something went wrong, try again.
+cmu-yautja-hall-error = Что-то пошло не так, попробуйте еще раз.
 
-cmu-yautja-hall-confirm = Confirm?
+cmu-yautja-hall-confirm = Подтверждаю?
 
-cmu-yautja-hall-open = Open
+cmu-yautja-hall-open = Открыть
 
-cmu-yautja-hall-rank-of = Rank {$standing} of {$clans}
+cmu-yautja-hall-rank-of = Ранг {$standing} из {$clans}
 
-cmu-yautja-hall-notice = Notice
+cmu-yautja-hall-notice = Уведомление
 
-cmu-yautja-hall-notice-empty = No notice.
+cmu-yautja-hall-notice-empty = Без предупреждения.
 
-cmu-yautja-hall-description = Description
+cmu-yautja-hall-description = Описание
 
-cmu-yautja-hall-elite-notes = Elite notes
+cmu-yautja-hall-elite-notes = Элитные ноты
 
-cmu-yautja-hall-notes-empty = No notes.
+cmu-yautja-hall-notes-empty = Никаких заметок.
 
-cmu-yautja-hall-members = Members
+cmu-yautja-hall-members = Члены
 
 cmu-yautja-hall-members-count = {$members ->
-    [one] 1 member
-   *[other] {$members} members
+    [one] 1 член
+   *[other] {$members} члены
 }
 
-cmu-yautja-hall-leader-tag = Leader {$name}
+cmu-yautja-hall-leader-tag = Лидер {$name}
 
-cmu-yautja-hall-your-clan = Your clan
+cmu-yautja-hall-your-clan = Твой клан
 
-cmu-yautja-hall-petitions-title = Join requests
+cmu-yautja-hall-petitions-title = Присоединяйтесь к запросам
 
-cmu-yautja-hall-no-members = No members.
+cmu-yautja-hall-no-members = Никаких членов.
 
-cmu-yautja-hall-accept = Accept
+cmu-yautja-hall-accept = принимать
 
-cmu-yautja-hall-refuse = Refuse
+cmu-yautja-hall-refuse = отказываться
 
-cmu-yautja-hall-petition = Request to join
+cmu-yautja-hall-petition = Просьба присоединиться
 
-cmu-yautja-hall-withdraw = Cancel request
+cmu-yautja-hall-withdraw = Отменить запрос
 
-cmu-yautja-hall-petition-pending = You have asked to join this clan.
+cmu-yautja-hall-petition-pending = Вы просили присоединиться к этому клану.
 
-cmu-yautja-hall-no-clan = You are not in a clan. Use the leaderboard to find one and request to join.
+cmu-yautja-hall-no-clan = Ты не в клане. Используйте таблицу лидеров, чтобы найти одну и попросить присоединиться.
 
-cmu-yautja-hall-no-clan-young = You can join a clan once you are Blooded.
+cmu-yautja-hall-no-clan-young = Вы можете присоединиться к клану, как только будете окровавлены.
 
-cmu-yautja-hall-clan-hidden = You can't view that clan.
+cmu-yautja-hall-clan-hidden = Вы не можете видеть этот клан.
 
-cmu-yautja-hall-edit-clan = Edit clan
+cmu-yautja-hall-edit-clan = Клан Эдит
 
-cmu-yautja-hall-name = Name
+cmu-yautja-hall-name = Имя
 
-cmu-yautja-hall-color = Colour
+cmu-yautja-hall-color = цвет
 
-cmu-yautja-hall-mask = Mask
+cmu-yautja-hall-mask = Маска
 
-cmu-yautja-hall-mask-style = Mask {$style}
+cmu-yautja-hall-mask-style = Маска {$style}
 
-cmu-yautja-hall-material-ebony = Ebony
+cmu-yautja-hall-material-ebony = эбеновый
 
-cmu-yautja-hall-material-silver = Silver
+cmu-yautja-hall-material-silver = Серебро
 
-cmu-yautja-hall-material-bronze = Bronze
+cmu-yautja-hall-material-bronze = бронза
 
-cmu-yautja-hall-material-crimson = Crimson
+cmu-yautja-hall-material-crimson = Нуб
 
-cmu-yautja-hall-material-bone = Bone
+cmu-yautja-hall-material-bone = косточка
 
-cmu-yautja-hall-honor = Honor
+cmu-yautja-hall-honor = честь
 
-cmu-yautja-hall-disband = Disband clan
+cmu-yautja-hall-disband = Распустить клан
 
-cmu-yautja-hall-new-clan-description = No description yet.
+cmu-yautja-hall-new-clan-description = Пока нет описания.
 
-cmu-yautja-hall-board-clans = Clans
+cmu-yautja-hall-board-clans = Кланы
 
-cmu-yautja-hall-board-hunters = Hunters
+cmu-yautja-hall-board-hunters = охотники
 
-cmu-yautja-hall-col-clan = Clan
+cmu-yautja-hall-col-clan = Клан
 
-cmu-yautja-hall-col-leader = Leader
+cmu-yautja-hall-col-leader = Лидер
 
-cmu-yautja-hall-col-members = Members
+cmu-yautja-hall-col-members = Члены
 
-cmu-yautja-hall-col-honor = Honor
+cmu-yautja-hall-col-honor = честь
 
-cmu-yautja-hall-filter-all = All clans
+cmu-yautja-hall-filter-all = Все кланы
 
-cmu-yautja-hall-clan-locked = Only Blooded hunters can view other clans.
+cmu-yautja-hall-clan-locked = Только окровавленные охотники могут видеть другие кланы.
 
-cmu-yautja-hall-no-clans = There are no clans.
+cmu-yautja-hall-no-clans = Нет никаких кланов.
 
-cmu-yautja-hall-no-hunters = No hunters found.
+cmu-yautja-hall-no-hunters = Охотников не нашли.
 
-cmu-yautja-hall-found = New clan
+cmu-yautja-hall-found = Новый клан
 
-cmu-yautja-hall-hunter-hidden = You can't view that hunter.
+cmu-yautja-hall-hunter-hidden = Вы не можете видеть этого охотника.
 
-cmu-yautja-hall-rank = Rank
+cmu-yautja-hall-rank = Ранг
 
-cmu-yautja-hall-actions = Actions
+cmu-yautja-hall-actions = Действия
 
-cmu-yautja-hall-move = Move to
+cmu-yautja-hall-move = Двигаться
 
-cmu-yautja-hall-move-button = Move
+cmu-yautja-hall-move-button = Двигаться
 
-cmu-yautja-hall-exile = Remove from clan
+cmu-yautja-hall-exile = Удалить из клана
 
-cmu-yautja-hall-make-ancient = Make Ancient
+cmu-yautja-hall-make-ancient = Сделать древним
 
-cmu-yautja-hall-remove-ancient = Remove Ancient
+cmu-yautja-hall-remove-ancient = Удалить древние
 
-cmu-yautja-hall-purge = Delete profile
+cmu-yautja-hall-purge = Удалить профиль
 
-cmu-yautja-hall-whitelist = Whitelist
+cmu-yautja-hall-whitelist = Белый список
 
-cmu-yautja-hall-self = This is you.
+cmu-yautja-hall-self = Это ты.
 
-cmu-yautja-hall-no-actions = You can't change anything about this hunter.
+cmu-yautja-hall-no-actions = Ты не можешь ничего изменить в этом охотнике.
 
-cmu-yautja-hall-grant = Whitelist
+cmu-yautja-hall-grant = Белый список
 
-cmu-yautja-hall-grant-title = Add player
+cmu-yautja-hall-grant-title = Добавить игрока
 
-cmu-yautja-hall-no-whitelist = Nobody is whitelisted.
+cmu-yautja-hall-no-whitelist = Никто не включен в белый список.
 
-cmu-yautja-hall-revoke = Remove whitelist
+cmu-yautja-hall-revoke = Удалить белый список
 
-cmu-yautja-hall-flag-yautja = Yautja
+cmu-yautja-hall-flag-yautja = Яутжа
 
-cmu-yautja-hall-flag-legacy = Legacy
+cmu-yautja-hall-flag-legacy = Наследие
 
-cmu-yautja-hall-flag-council = Council
+cmu-yautja-hall-flag-council = Совет
 
-cmu-yautja-hall-flag-councillegacy = Council legacy
+cmu-yautja-hall-flag-councillegacy = Наследие Совета
 
 cmu-yautja-hall-flag-leader = Leader
 
@@ -189,106 +189,106 @@ cmu-yautja-hall-round-info = Round {$round}, {$active ->
     [true] in progress
    *[false] in lobby
 }. Hunt {$initialized ->
-    [true] started, {$slots} slots
-   *[false] not started
+    [true] Начало, {$slots} слоты
+   *[false] Не начиналось
 }.
 
-cmu-yautja-hall-round-init = Start hunt
+cmu-yautja-hall-round-init = Начать охоту
 
-cmu-yautja-hall-hunt = Hunt
+cmu-yautja-hall-hunt = охота
 
-cmu-yautja-hall-hunt-on = Active
+cmu-yautja-hall-hunt-on = Активный
 
-cmu-yautja-hall-hunt-off = Inactive
+cmu-yautja-hall-hunt-off = неактивный
 
-cmu-yautja-hall-settings = Settings
+cmu-yautja-hall-settings = Настройки
 
 cmu-yautja-hall-minus = -
 
 cmu-yautja-hall-plus = +
 
-cmu-yautja-hall-round-slots = Hunter slots
+cmu-yautja-hall-round-slots = Игровые автоматы Hunter
 
-cmu-yautja-hall-round-random = Random hunts
+cmu-yautja-hall-round-random = Случайная охота
 
-cmu-yautja-hall-round-every = every
+cmu-yautja-hall-round-every = каждый
 
-cmu-yautja-hall-round-rounds = rounds
+cmu-yautja-hall-round-rounds = обход
 
-cmu-yautja-hall-round-random-left = Next random hunt in {$rounds} rounds.
+cmu-yautja-hall-round-random-left = Следующая случайная охота {$rounds} Круги.
 
-cmu-yautja-hall-not-found = Player {$player} not found.
+cmu-yautja-hall-not-found = Игрок {$player} Не найдено.
 
-cmu-yautja-hall-done-rank = Rank changed.
+cmu-yautja-hall-done-rank = Ранг изменился.
 
-cmu-yautja-hall-done-exile = Removed from clan.
+cmu-yautja-hall-done-exile = Изгнан из клана.
 
-cmu-yautja-hall-done-move = Moved.
+cmu-yautja-hall-done-move = Переехал.
 
-cmu-yautja-hall-done-ancient = Made Ancient.
+cmu-yautja-hall-done-ancient = Сделано древним.
 
-cmu-yautja-hall-done-unancient = Ancient removed.
+cmu-yautja-hall-done-unancient = Древний удален.
 
-cmu-yautja-hall-done-purge = Profile deleted.
+cmu-yautja-hall-done-purge = Профиль удален.
 
-cmu-yautja-hall-done-saved = Saved.
+cmu-yautja-hall-done-saved = Спасён.
 
-cmu-yautja-hall-done-honor = Honor set.
+cmu-yautja-hall-done-honor = Набор чести.
 
-cmu-yautja-hall-done-found = Clan created.
+cmu-yautja-hall-done-found = Клан создан.
 
-cmu-yautja-hall-done-disband = Clan disbanded.
+cmu-yautja-hall-done-disband = Клан расформирован.
 
-cmu-yautja-hall-done-petition = Request sent.
+cmu-yautja-hall-done-petition = Запрос отправлен.
 
-cmu-yautja-hall-done-withdrawn = Request cancelled.
+cmu-yautja-hall-done-withdrawn = Запрос отменен.
 
-cmu-yautja-hall-done-accepted = Accepted.
+cmu-yautja-hall-done-accepted = Принято.
 
-cmu-yautja-hall-done-refused = Refused.
+cmu-yautja-hall-done-refused = Отказался.
 
-cmu-yautja-hall-done-whitelist = Whitelist updated for {$player}.
+cmu-yautja-hall-done-whitelist = Белый список обновлен {$player}.
 
-cmu-yautja-hall-denied-rank = You can't give that rank.
+cmu-yautja-hall-denied-rank = Ты не можешь дать этому званию.
 
-cmu-yautja-hall-denied-exile = You can't remove that hunter.
+cmu-yautja-hall-denied-exile = Вы не можете удалить этого охотника.
 
-cmu-yautja-hall-denied-move = You can't move that hunter.
+cmu-yautja-hall-denied-move = Ты не можешь сдвинуть этого охотника.
 
-cmu-yautja-hall-denied-ancient = You can't change Ancient status.
+cmu-yautja-hall-denied-ancient = Вы не можете изменить древний статус.
 
-cmu-yautja-hall-denied-purge = You can't delete that profile.
+cmu-yautja-hall-denied-purge = Вы не можете удалить этот профиль.
 
-cmu-yautja-hall-denied-no-profile = That hunter has no profile.
+cmu-yautja-hall-denied-no-profile = У этого охотника нет профиля.
 
-cmu-yautja-hall-denied-edit = You can't edit that.
+cmu-yautja-hall-denied-edit = Ты не можешь это отредактировать.
 
-cmu-yautja-hall-denied-text = Text is empty or too long.
+cmu-yautja-hall-denied-text = Текст пустой или слишком длинный.
 
-cmu-yautja-hall-denied-sigil = Invalid mask.
+cmu-yautja-hall-denied-sigil = Недействительная маска.
 
-cmu-yautja-hall-denied-color = Colour must be #RRGGBB.
+cmu-yautja-hall-denied-color = Цвет должен быть #RRGGBB.
 
-cmu-yautja-hall-denied-name = Name is empty or too long.
+cmu-yautja-hall-denied-name = Имя пустое или слишком длинное.
 
-cmu-yautja-hall-denied-honor = You can't set honor.
+cmu-yautja-hall-denied-honor = Вы не можете установить честь.
 
-cmu-yautja-hall-denied-honor-value = Honor can't be negative.
+cmu-yautja-hall-denied-honor-value = Честь не может быть отрицательной.
 
-cmu-yautja-hall-denied-found = You can't create or disband clans.
+cmu-yautja-hall-denied-found = Нельзя создавать и распускать кланы.
 
-cmu-yautja-hall-denied-petition = Only hunters without a clan can request to join.
+cmu-yautja-hall-denied-petition = Только охотники без клана могут просить о присоединении.
 
-cmu-yautja-hall-denied-no-petition = That request no longer exists.
+cmu-yautja-hall-denied-no-petition = Такой просьбы больше не существует.
 
-cmu-yautja-hall-denied-petition-answer = You can't answer that request.
+cmu-yautja-hall-denied-petition-answer = Вы не можете ответить на эту просьбу.
 
-cmu-yautja-hall-denied-already-clanned = That hunter already joined another clan.
+cmu-yautja-hall-denied-already-clanned = Этот охотник уже присоединился к другому клану.
 
-cmu-yautja-hall-denied-clan-gone = That clan no longer exists.
+cmu-yautja-hall-denied-clan-gone = Этот клан больше не существует.
 
-cmu-yautja-hall-denied-whitelist = You can't change whitelists.
+cmu-yautja-hall-denied-whitelist = Нельзя менять белые списки.
 
-cmu-yautja-hall-denied-whitelist-flags = Invalid whitelist flags.
+cmu-yautja-hall-denied-whitelist-flags = Недействительные флаги белого списка.
 
-cmu-yautja-hall-denied-round = You can't change hunt settings.
+cmu-yautja-hall-denied-round = Вы не можете изменить настройки охоты.

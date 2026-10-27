@@ -3,154 +3,154 @@ department-console-salary-announcement-title = Зарплатная ведомо
 
 colony-comms-console-announcement-title = Колония
 
-department-console-title = Department Console
+department-console-title = Консоль департамента
 
-department-console-management-tab = Management
+department-console-management-tab = Управление
 
-department-console-orders-tab = Orders
+department-console-orders-tab = Заказы
 
-cmu-department-console-supplies = Field supplies (dispensed here)
+cmu-department-console-supplies = Полевые поставки (распределяются здесь)
 
-department-console-department = Department
+department-console-department = Департамент
 
-department-console-department-budget = Department Budget: ${ $amount }
+department-console-department-budget = Бюджет департамента: ${ $amount }
 
-department-console-withdraw-label = Withdraw: $
+department-console-withdraw-label = Вывод: $
 
-department-console-amount-placeholder = Amount
+department-console-amount-placeholder = Сумма
 
-department-console-withdraw-cash = Withdraw Cash
+department-console-withdraw-cash = Снять наличные
 
-department-console-default-salary-label = Default Salary: $
+department-console-default-salary-label = Зарплата по умолчанию: $
 
-department-console-set-default-salary = Set Default Salary
+department-console-set-default-salary = Зарплата по умолчанию Set
 
-department-console-hire-hint = Use an ID card on the console to hire.
+department-console-hire-hint = Используйте ID-карту на консоли, чтобы нанять.
 
-department-console-employees = Employees:
+department-console-employees = Работники:
 
-department-console-announcement = Department Announcement:
+department-console-announcement = Объявление департамента:
 
-department-console-announcement-placeholder = Type announcement...
+department-console-announcement-placeholder = Тип объявления...
 
-department-console-send = Send
+department-console-send = Отправить
 
-department-console-reason = Reason:
+department-console-reason = Причина:
 
-department-console-reason-placeholder = Reason for order...
+department-console-reason-placeholder = Основание для порядка...
 
-department-console-deliver-to = Deliver to:
+department-console-deliver-to = Доставить:
 
-department-console-delivery-placeholder = Delivery location...
+department-console-delivery-placeholder = Место доставки...
 
-department-console-categories = Categories:
+department-console-categories = Категории:
 
-department-console-select-category = Select a category
+department-console-select-category = Выберите категорию
 
 department-console-salary = ${ $amount }
 
-department-console-salary-custom = ${ $amount } (custom)
+department-console-salary-custom = ${ $amount } (обычай)
 
-department-console-salary-placeholder = Salary
+department-console-salary-placeholder = Зарплата
 
-department-console-set = Set
+department-console-set = Настройка
 
-department-console-reset = Reset
+department-console-reset = сброс
 
-department-console-fire = Fire
+department-console-fire = Огонь
 
-department-console-no-employees = No employees.
+department-console-no-employees = Без сотрудников.
 
-department-console-no-catalog = No catalog available.
+department-console-no-catalog = Каталог не доступен.
 
-department-console-category = Category: { $category }
+department-console-category = Категория: { $category }
 
 department-console-item-cost = ${ $amount }
 
-department-console-order = Order
+department-console-order = Заказ
 
-department-console-no-items = No items in this category.
+department-console-no-items = Никаких предметов в этой категории.
 
-department-console-unknown = Unknown
+department-console-unknown = неизвестный
 
-department-console-access-denied = Access denied.
+department-console-access-denied = Доступ запрещён.
 
-department-console-hired = { $name } has been hired to { $department }.
+department-console-hired = { $name } Был нанят для { $department }.
 
-department-console-announcement-sender = { $department } Dept.
+department-console-announcement-sender = { $department } Отдел.
 
-department-console-order-no-reason = No reason given
+department-console-order-no-reason = Никакой причины
 
-department-console-order-no-location = No location specified
+department-console-order-no-location = Место не указано
 
-department-console-salary-insufficient = [bold]{ $department }[/bold]: Insufficient department budget (need ${ $need }, have ${ $have })
+department-console-salary-insufficient = [bold]{ $department }[/bold]Недостаточный бюджет департамента (нужны $){ $need }Иметь ${ $have })
 
-department-console-salary-dispensed = [bold]{ $department }[/bold]: ${ $amount } dispensed
+department-console-salary-dispensed = [bold]{ $department }[/bold]: ${ $amount } разрешённый
 
-department-console-income-tax = ({ $amount } income tax)
+department-console-income-tax = ({ $amount } подоходный налог
 
-colony-comms-console-title = Communications Console
+colony-comms-console-title = Консоль связи
 
-colony-comms-console-send-message = Send Message
+colony-comms-console-send-message = Отправить сообщение
 
-colony-comms-console-toggle-siren = Toggle Siren
+colony-comms-console-toggle-siren = Скачать Siren
 
-cmu-department-heading = DEPARTMENT CONSOLE
+cmu-department-heading = ДЕПАРТМЕНТНАЯ КОНСОЛЕ
 
-cmu-department-subheading = { $department } // COLONY ADMINISTRATION
+cmu-department-subheading = { $department } // Колониальная администрация
 
-cmu-department-page-staff = STAFF
+cmu-department-page-staff = СТАФФ
 
-cmu-department-page-orders = ORDERS
+cmu-department-page-orders = Ордеры
 
-cmu-department-treasury = Treasury
+cmu-department-treasury = Минфин
 
-cmu-department-withdraw = WITHDRAW CASH
+cmu-department-withdraw = Взять наличные
 
-cmu-department-withdraw-button = WITHDRAW
+cmu-department-withdraw-button = ОТВЕТ
 
-cmu-department-default-salary = DEFAULT SALARY
+cmu-department-default-salary = Дефаул Салари
 
-cmu-department-set-default = SET DEFAULT
+cmu-department-set-default = Успокойся.
 
-cmu-department-staff = Staff
+cmu-department-staff = Персонал
 
-cmu-department-staff-count = { $count } ON PAYROLL
+cmu-department-staff-count = { $count } На Пайролле
 
-cmu-department-hire-hint = Swipe an ID card on the console to hire its owner.
+cmu-department-hire-hint = Прокрутите ID-карту на консоли, чтобы нанять ее владельца.
 
-cmu-department-pay = PAY { $amount }
+cmu-department-pay = платить { $amount }
 
-cmu-department-pay-custom = PAY { $amount } (CUSTOM)
+cmu-department-pay-custom = платить { $amount } (КУСТОМ)
 
-cmu-department-set = SET
+cmu-department-set = УСТАНОВИТЬ
 
-cmu-department-reset = RESET
+cmu-department-reset = Возрождение
 
-cmu-department-reset-tooltip = Go back to the department's default salary.
+cmu-department-reset-tooltip = Возвращайся к зарплате департамента по умолчанию.
 
-cmu-department-fire = FIRE
+cmu-department-fire = Огонь
 
-cmu-department-fire-confirm = CONFIRM
+cmu-department-fire-confirm = Утверждение
 
-cmu-department-announcement = Department Announcement
+cmu-department-announcement = Объявление департамента
 
-cmu-department-send = SEND
+cmu-department-send = ОТПРАВИТЬ
 
-cmu-department-delivery = Delivery
+cmu-department-delivery = Доставка
 
-cmu-department-reason = REASON
+cmu-department-reason = Причина
 
-cmu-department-deliver-to = DELIVER TO
+cmu-department-deliver-to = Доставить
 
-cmu-department-categories = CATEGORIES
+cmu-department-categories = КАТЕГОРИИ
 
-cmu-department-pick-category = SELECT A CATEGORY
+cmu-department-pick-category = Выберите категорию
 
-cmu-department-order = ORDER
+cmu-department-order = приказ
 
-cmu-department-cant-afford = The department budget can't cover this.
+cmu-department-cant-afford = Бюджет департамента не может покрыть это.
 
-cmu-department-footer-staff = Salaries are paid from the department budget each payday.
+cmu-department-footer-staff = Зарплаты выплачиваются из бюджета департамента каждый день.
 
-cmu-department-footer-orders = Orders are paid from the department budget. Give a reason and where to deliver them.
+cmu-department-footer-orders = Заказы оплачиваются из бюджета департамента. Дайте повод и где их доставить.

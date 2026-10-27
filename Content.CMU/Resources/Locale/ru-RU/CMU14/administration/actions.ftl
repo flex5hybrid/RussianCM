@@ -1,77 +1,77 @@
-cmu-admin-actions-title = CMU Actions
+cmu-admin-actions-title = CMU Действия
 
-cmu-admin-target-missing = This target no longer exists.
+cmu-admin-target-missing = Эта цель больше не существует.
 
-cmu-admin-refresh = Refresh
+cmu-admin-refresh = Обновить
 
-cmu-admin-skills = Skills
+cmu-admin-skills = Навыки
 
-cmu-admin-squads = Squads
+cmu-admin-squads = Отряды
 
-cmu-admin-equipment = Equipment
+cmu-admin-equipment = Снаряжение
 
-cmu-admin-category-xeno = Xenomorphs
+cmu-admin-category-xeno = Ксеноморфы
 
-cmu-admin-category-neomorph = Neomorphs
+cmu-admin-category-neomorph = Неоморфы
 
-cmu-admin-search-castes = Search castes...
+cmu-admin-search-castes = Поисковые касты...
 
-cmu-admin-search-skills = Search skills...
+cmu-admin-search-skills = Навыки поиска...
 
-cmu-admin-search-squads = Search squads...
+cmu-admin-search-squads = Поисковые отряды...
 
-cmu-admin-search-hives = Search hives...
+cmu-admin-search-hives = Поиск ульев...
 
-cmu-admin-transform-hint = Click a caste to transform. Hover for details.
+cmu-admin-transform-hint = Нажмите на касту, чтобы трансформироваться. Включите детали.
 
 cmu-admin-transform-variant = {$name} ({$variant})
 
-cmu-admin-tier = Tier {$tier}
+cmu-admin-tier = Уровень {$tier}
 
-cmu-admin-body-count = {$count} bodies
+cmu-admin-body-count = {$count} тела
 
-cmu-admin-no-results = No matching bodies.
+cmu-admin-no-results = Никаких совпадающих тел.
 
-cmu-admin-skills-hint = Set a skill level and apply it. Level 0 removes that training.
+cmu-admin-skills-hint = Установите уровень мастерства и применяйте его. Уровень 0 Отменяет это обучение.
 
-cmu-admin-apply = Apply
+cmu-admin-apply = Применять
 
-cmu-admin-remove-squad = Remove from squad
+cmu-admin-remove-squad = Удалить из отряда
 
-cmu-admin-current-squad = Current squad: {$squad}
+cmu-admin-current-squad = Текущий состав: {$squad}
 
-cmu-admin-squad-row = {$name} · {$members} living
+cmu-admin-squad-row = {$name} · {$members} жить
 
-cmu-admin-current = Current
+cmu-admin-current = текущий
 
-cmu-admin-assign = Assign
+cmu-admin-assign = назначать
 
-cmu-admin-create-assign = Create and assign
+cmu-admin-create-assign = Создавать и назначать
 
-cmu-admin-none = None
+cmu-admin-none = Нет
 
-cmu-admin-current-hive = Current hive: {$hive}
+cmu-admin-current-hive = Текущий улей: {$hive}
 
-cmu-admin-leave-hive = Leave hive
+cmu-admin-leave-hive = Оставить улей
 
-cmu-admin-hives = Hives
+cmu-admin-hives = Ульи
 
-cmu-admin-hive-hint = Assign a hive below. Empty hives are visible to admins.
+cmu-admin-hive-hint = Назначьте улей ниже. Пустые ульи видны администраторам.
 
-cmu-admin-hive-needs-xeno = Hive assignment requires a xenomorph target.
+cmu-admin-hive-needs-xeno = Назначение улья требует ксеноморфной цели.
 
-cmu-admin-create-hive = Create hive
+cmu-admin-create-hive = Создать улей
 
-cmu-admin-hive-name = Custom name (optional)
+cmu-admin-hive-name = Имя пользователя (факультативно)
 
-cmu-admin-create-hive-hint = Click a template to create its hive.
+cmu-admin-create-hive-hint = Нажмите на шаблон, чтобы создать его улей.
 
-cmu-admin-create-corrupted-hive = Create corrupted hive
+cmu-admin-create-corrupted-hive = Создать поврежденный улей
 
-cmu-admin-assign-created-hive = Assign target on creation
+cmu-admin-assign-created-hive = Назначение цели на создание
 
-cmu-admin-corrupted-hive = {$name} · Corrupted
+cmu-admin-corrupted-hive = {$name} · Коррумпированы
 
-cmu-admin-hive-details = {$members} living · {$larva} larvae · Queen: {$queen}
+cmu-admin-hive-details = {$members} жить {$larva} Личинки · Королева: {$queen}
 
-cmu-admin-hive-queen = Queen: {$queen}
+cmu-admin-hive-queen = Королева: {$queen}

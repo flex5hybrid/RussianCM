@@ -1,18 +1,18 @@
-cmu-expedition-sundial-background = SUNDIAL is a trial extraction rig intended to recover usable material from deposits too scattered for the colony's conventional machinery. Its cutter, sample controls, and paired calibration controller travel as one registered assembly. Govfor's assignment is to recover that assembly and its records for the colony; the recovery team is not authorized to conduct another field trial.
+cmu-expedition-sundial-background = SUNDIAL - это пробная установка для извлечения полезного материала из месторождений, слишком разбросанных для обычной техники колонии. Его резец, контроль образцов и контроллер калибровки перемещаются как одна зарегистрированная сборка. Задание Говфора состоит в том, чтобы восстановить эту сборку и ее записи для колонии; команда восстановления не уполномочена проводить еще одно полевое испытание.
 
-cmu-expedition-story-recovery-orders = Identify the SUNDIAL chassis. Keep its paired controller with the frame. Preserve the recorder and written records when practical. Return the assembly through the expedition landing zone.
+cmu-expedition-story-recovery-orders = Определите солнечное шасси. Держите его спаренный контроллер с рамкой. Сохраняйте регистратор и письменные записи, когда это практично. Вернуть сборку через зону высадки экспедиции.
 
-cmu-expedition-blackwater-name = Blackwater Reach
+cmu-expedition-blackwater-name = Блэкуотер достиг
 
 cmu-expedition-blackwater-history =
-    Blackwater is the river belt beyond the colony's last maintained survey line. Early prospectors followed its dark tributaries, tied sample bags to the trees, and left when the deposits proved too scattered for conventional rigs. Their narrow footpaths are the only routes that remain.
+    Блэкуотер является речным поясом за пределами последней линии наблюдения колонии. Ранние изыскатели следовали за его темными притоками, привязывали пробные мешки к деревьям и уходили, когда отложения оказались слишком разбросанными для обычных буровых установок. Их узкие пешеходные дорожки являются единственными сохранившимися маршрутами.
 
 cmu-expedition-blackwater-briefing =
-    A Govfor transport carrying the SUNDIAL miner disappeared while diverting around weather. Its last cargo ping came from Blackwater Reach. Recover the chassis and its paired controller; collect the flight recorder if practical. No ground reception team was assigned.
+    Транспорт Govfor, перевозивший минер SUNDIAL, исчез, отвлекаясь от погоды. Его последний грузовой пинг пришел из Blackwater Reach. Восстановить шасси и его спаренный контроллер; собрать бортовой самописец, если это практично. Наземная приемная не была назначена.
 
 cmu-expedition-blackwater-orders =
-    GOVFOR / RECOVERY ORDERS
-    SECTOR: Blackwater Reach
+    GOVFOR / УСТАНОВЛЯЕМЫЕ УСЛОВИЯ
+    Исполнитель: Blackwater Reach
 
     { cmu-expedition-sundial-background }
 
@@ -23,41 +23,41 @@ cmu-expedition-blackwater-orders =
     { cmu-expedition-story-recovery-orders }
 
 cmu-expedition-blackwater-note =
-    FIELD COPY / CONTRACT SURVEYOR
-    The transport asked us to confirm a landing beacon. We don't have one. I told the pilot twice. They read back our old survey number, then descended behind the ridge.
-    Leaving this copy where the old sample path turns. We're following the noise. If recovery gets here first, check who issued that approach.
+    FIELD COPY/CONTRACT SURVEYOR
+    Транспорт попросил нас подтвердить посадочный маяк. У нас его нет. Я дважды говорил пилоту. Они зачитали наш старый номер опроса, а затем спустились за хребет.
+    Оставляя эту копию там, где поворачивается старый путь образца. Мы следим за шумом. Если восстановление наступит раньше, проверьте, кто издал этот подход.
 
 cmu-expedition-blackwater-recording =
-    FR-112 / FINAL BUFFER
-    PILOT: Beacon is giving us a clear strip.
-    LOADMASTER: Cargo restraint indicator just changed. I haven't touched it.
-    PILOT: Those are trees. Climb, climb—
-    (Recording ends. The stored approach beacon identifies itself as a survey station closed eleven months earlier.)
+    FR-112 / Последний буфер
+    Бикон дает нам четкую полоску.
+    ЛОАДМАСТЕР: Показатель ограничения грузов только что изменился. Я его не трогал.
+    Это деревья. Восхождение, восхождение -
+    (Запись заканчивается. Сохраненный маяк подхода идентифицирует себя как обзорная станция, закрытая одиннадцать месяцев назад.
 
 cmu-expedition-blackwater-target =
-    SUNDIAL / TRANSIT INSPECTION
-    The chassis bears a fresh river-silt line. Several restraint bolts are bent from impact, but the forward latch is fully retracted and its paint is unbroken. The local-release cover remains sealed. The paired controller is still locked inside the frame.
+    Солнечная / транситальная инспекция
+    Шасси имеет свежую речную линию. Несколько удерживающих болтов согнуты от удара, но передняя защелка полностью втянута и ее краска не нарушена. Локальное покрытие остается закрытым. Парный контроллер по-прежнему заблокирован внутри рамы.
 
-ent-CMUBlackwaterReachOrders = recovery orders: Blackwater Reach
-    .desc = A field copy of the recovery assignment and the sector survey history.
+ent-CMUBlackwaterReachOrders = Оригинальное название: Blackwater Reach
+    .desc = Полевая копия задания на восстановление и история секторальных обследований.
 
-ent-CMUBlackwaterReachNote = weathered field record: Blackwater Reach
-    .desc = A creased record left by someone who passed through the sector.
+ent-CMUBlackwaterReachNote = Полевые рекорды: Blackwater Reach
+    .desc = Сломанный рекорд, оставленный кем-то, кто прошел через сектор.
 
-ent-CMUBlackwaterReachRecorder = recovered recorder: Blackwater Reach
-    .desc = A battered recorder with a short retained buffer. Examine it closely to read the surviving transcript.
+ent-CMUBlackwaterReachRecorder = Регистратор: Blackwater Reach
+    .desc = Потрепанный рекордер с коротким буфером. Внимательно изучите его, чтобы прочитать сохранившуюся расшифровку.
 
-cmu-expedition-reedwake-name = Reedwake Basin
+cmu-expedition-reedwake-name = Бассейн Ридвэйк
 
 cmu-expedition-reedwake-history =
-    Reedwake was never intended for permanent occupation. Survey crews worked from temporary clearings between reed beds, where every wet season erased the previous season's markers. Old reports call it exhausted ground; newer samples disagree.
+    Ридвэйк никогда не предназначался для постоянной оккупации. Опросные бригады работали на временных расчистках между тростниковыми ложами, где каждый влажный сезон стирал маркеры предыдущего сезона. Старые отчеты называют это истощенной почвой; новые образцы не согласны.
 
 cmu-expedition-reedwake-briefing =
-    A contractor diverted the SUNDIAL shipment to Reedwake for an unapproved field demonstration. The team stopped reporting after water reached their survey clearing. Recover the miner from the remaining dry ground and preserve the test records. The transport's onward delivery was never completed.
+    Подрядчик перенаправил SUNDIAL в Ридвэйк для несанкционированной демонстрации. Команда перестала отчитываться после того, как вода достигла их очистки. Восстановление шахтера из оставшейся сухой земли и сохранение протоколов испытаний. Доставка транспорта так и не была завершена.
 
 cmu-expedition-reedwake-orders =
-    GOVFOR / RECOVERY ORDERS
-    SECTOR: Reedwake Basin
+    GOVFOR / УСТАНОВЛЯЕМЫЕ УСЛОВИЯ
+    Исполнитель: Reedwake Basin
 
     { cmu-expedition-sundial-background }
 
@@ -68,40 +68,40 @@ cmu-expedition-reedwake-orders =
     { cmu-expedition-story-recovery-orders }
 
 cmu-expedition-reedwake-note =
-    SHIFT LOG / BASIN SURVEY
-    The water moved our stakes again. Yesterday's dry trail is a channel now.
-    The demonstration lead wants another cut before we pack. The intake has swallowed half the reed bed and the filter reads mud. I have written STOP on the console in grease because nobody reads the instrument faults.
-    We will pull the rig back to the clearing when the winch battery is charged.
+    Быстрый поиск / BASIN SURVEY
+    Вода снова сдвинула наши колья. Вчерашний сухой след теперь канал.
+    Руководитель демонстрации хочет еще один разрез, прежде чем мы упакуем вещи. Прием проглотил половину тростниковой кровати, и фильтр считывает грязь. Я написал «Стоп» на консоли в смазке, потому что никто не читает неисправности инструмента.
+    Мы вернем буровую установку на расчистку, когда заряжается лебедочная батарея.
 
 cmu-expedition-reedwake-recording =
-    SURVEY AUDIO / UNSENT HANDOVER
-    'We got it onto the pad. Nobody starts it again. Put the recovery tag on the frame, take the sample ledger, and follow the high ground out. Leave the spare batteries. I am not losing somebody over a performance bonus.'
-    (A second voice asks who authorized the demonstration. The recorder is switched off before an answer.)
+    ОБРАЩЕНИЕ АУДИО/ОБЩЕГО ГАНДОВЕРА
+    Мы взяли его на площадку. Никто не начинает это снова. Положите тег восстановления на раму, возьмите книгу образцов и следуйте за высотой. Оставьте запасные батареи. Я не теряю кого-то из-за бонуса за выступление.
+    (Второй голос спрашивает, кто санкционировал демонстрацию. Регистратор выключается перед ответом.
 
 cmu-expedition-reedwake-target =
-    SUNDIAL / FIELD INSPECTION
-    Tangled reed fibers protrude from the intake. The emergency stop is held down with a strip of cloth; mud has dried over the operator's grease-pencil warning. A scratched tally beside the cutter lists six attempted runs and no accepted samples.
+    Солнечная / Полевая инспекция
+    Спутанные тростниковые волокна выступают из впуска. Аварийная остановка удерживается полоской ткани; грязь высохла над предупреждением оператора о смазке-карандаше. Нацарапанный счет рядом с резцом перечисляет шесть попыток пробежки и никаких принятых образцов.
 
-ent-CMUReedwakeBasinOrders = recovery orders: Reedwake Basin
-    .desc = A field copy of the recovery assignment and the sector survey history.
+ent-CMUReedwakeBasinOrders = Заказы на восстановление: Reedwake Basin
+    .desc = Полевая копия задания на восстановление и история секторальных обследований.
 
-ent-CMUReedwakeBasinNote = weathered field record: Reedwake Basin
-    .desc = A creased record left by someone who passed through the sector.
+ent-CMUReedwakeBasinNote = Полевые рекорды: Reedwake Basin
+    .desc = Сломанный рекорд, оставленный кем-то, кто прошел через сектор.
 
-ent-CMUReedwakeBasinRecorder = recovered recorder: Reedwake Basin
-    .desc = A battered recorder with a short retained buffer. Examine it closely to read the surviving transcript.
+ent-CMUReedwakeBasinRecorder = Регистратор: Reedwake Basin
+    .desc = Потрепанный рекордер с коротким буфером. Внимательно изучите его, чтобы прочитать сохранившуюся расшифровку.
 
-cmu-expedition-ashfall-name = Ashfall Scar
+cmu-expedition-ashfall-name = Шрам Ashfall
 
 cmu-expedition-ashfall-history =
-    A dry lightning season burned this forest long before the transport came down. New shoots grow beneath the standing dead trees, while the ridges still carry bands of exposed ash. The colony's regional maps have not caught up with the changed canopy.
+    Сухой сезон молний сжег этот лес задолго до падения транспорта. Новые побеги растут под стоящими мертвыми деревьями, в то время как хребты все еще несут полосы открытого пепла. Региональные карты колонии не догнали изменившийся навес.
 
 cmu-expedition-ashfall-briefing =
-    The SUNDIAL transport came down inside the old burn scar. Its crew reported smoke before losing communications, and the preliminary incident sheet blames the forest fire. Recover the miner and the recorder. Establish whether the damage began in the cargo bay or on the ground.
+    Солнечный транспорт спустился внутрь старого ожогового шрама. Его экипаж сообщил о дыме до потери связи, и в предварительном отчете о происшествии виноват лесной пожар. Восстановить шахтера и диктофон. Установить, начались ли повреждения в грузовом отсеке или на земле.
 
 cmu-expedition-ashfall-orders =
-    GOVFOR / RECOVERY ORDERS
-    SECTOR: Ashfall Scar
+    GOVFOR / УСТАНОВЛЯЕМЫЕ УСЛОВИЯ
+    Исполнитель: Ashfall Scar
 
     { cmu-expedition-sundial-background }
 
@@ -112,41 +112,41 @@ cmu-expedition-ashfall-orders =
     { cmu-expedition-story-recovery-orders }
 
 cmu-expedition-ashfall-note =
-    RANGER'S NOTE / OLD FIRE LINE
-    This ridge burned nineteen days ago. I was here when the rain put it out.
-    There was a new column this morning: narrow, black, and well east of the old fire. The dispatch clerk kept asking whether the forest was still burning. I gave them the dates. Please put the dates in the report.
+    ПРИМЕЧАНИЕ РАНЖЕРА / Старая пожарная линия
+    Этот хребет сгорел девятнадцать дней назад. Я был здесь, когда дождь погас.
+    Сегодня утром появилась новая колонна: узкая, черная и к востоку от старого огня. Диспетчер продолжал спрашивать, горит ли лес. Я дал им даты. Пожалуйста, укажите даты в отчете.
 
 cmu-expedition-ashfall-recording =
-    FR-112 / CARGO CHANNEL
-    LOADMASTER: Battery rack temperature is climbing. Miner pack is cold; it is the auxiliary rack.
-    PILOT: We can set down past the ridge.
-    LOADMASTER: That service ticket said the rack was replaced.
-    (The fire warning sounds before the impact alarm. A maintenance attachment contains a replacement authorization, but no completion signature.)
+    FR-112 / Карго Шанель
+    LOADMASTER: Температура аккумуляторной стойки повышается. Упаковка шахтера холодная, это вспомогательная стойка.
+    Мы можем пройти мимо хребта.
+    LOADMASTER: В этом служебном билете говорилось, что стойка была заменена.
+    (Предупреждение о пожаре звучит перед сигнализацией о столкновении. Вложение для технического обслуживания содержит разрешение на замену, но не подпись завершения.
 
 cmu-expedition-ashfall-target =
-    SUNDIAL / FIRE DAMAGE SURVEY
-    Soot darkens the outside of the housing. Beneath it, the miner's battery isolation seals remain intact. One flank is heavily scorched; the protected side still carries its transit label. The heat appears to have reached the frame from outside.
+    Огнестрельное изображение / Fire DAMAGE SURVEY
+    Сажа темнеет снаружи корпуса. Под ним уплотнения изоляции батареи шахтера остаются нетронутыми. Один фланг сильно обожжен; защищенная сторона по-прежнему несет свой транзитный ярлык. Тепло, кажется, достигло рамы снаружи.
 
-ent-CMUAshfallScarOrders = recovery orders: Ashfall Scar
-    .desc = A field copy of the recovery assignment and the sector survey history.
+ent-CMUAshfallScarOrders = Оригинальное название: Ashfall Scar
+    .desc = Полевая копия задания на восстановление и история секторальных обследований.
 
-ent-CMUAshfallScarNote = weathered field record: Ashfall Scar
-    .desc = A creased record left by someone who passed through the sector.
+ent-CMUAshfallScarNote = Полевые рекорды: Ashfall Scar
+    .desc = Сломанный рекорд, оставленный кем-то, кто прошел через сектор.
 
-ent-CMUAshfallScarRecorder = recovered recorder: Ashfall Scar
-    .desc = A battered recorder with a short retained buffer. Examine it closely to read the surviving transcript.
+ent-CMUAshfallScarRecorder = Регистратор: Ashfall Scar
+    .desc = Потрепанный рекордер с коротким буфером. Внимательно изучите его, чтобы прочитать сохранившуюся расшифровку.
 
-cmu-expedition-whiteout-name = Whiteout Shelf
+cmu-expedition-whiteout-name = Полка Whiteout
 
 cmu-expedition-whiteout-history =
-    Whiteout Shelf follows a fjord used by seasonal survey parties. The route is marked on old winter charts, but the crews who made those charts traveled light. Thin scrub, weathered rock, and long snowfields separate the few places where a loaded transport can stop.
+    Полка Whiteout следует за фьордом, используемым сезонными вечеринками. Маршрут отмечен на старых зимних картах, но экипажи, которые составляли эти карты, путешествовали налегке. Тонкий кустарник, выветрившаяся скала и длинные снежные поля разделяют несколько мест, где может остановиться загруженный транспорт.
 
 cmu-expedition-whiteout-briefing =
-    After a forced landing, the delivery crew unloaded SUNDIAL for an overland move to a safer pickup point. Their carrier failed on the shelf, and the crew left the machine to retreat on foot. Recover the chassis and its controller. The last message requests personnel recovery separately.
+    После вынужденной посадки экипаж разгрузил SUNDIAL для сухопутного переезда в более безопасную точку пикапа. Их авианосец провалился на полке, и экипаж покинул машину, чтобы отступить пешком. Восстановите шасси и его контроллер. Последнее сообщение требует восстановления персонала отдельно.
 
 cmu-expedition-whiteout-orders =
-    GOVFOR / RECOVERY ORDERS
-    SECTOR: Whiteout Shelf
+    GOVFOR / УСТАНОВЛЯЕМЫЕ УСЛОВИЯ
+    Исполнитель: Whiteout Shelf
 
     { cmu-expedition-sundial-background }
 
@@ -157,39 +157,39 @@ cmu-expedition-whiteout-orders =
     { cmu-expedition-story-recovery-orders }
 
 cmu-expedition-whiteout-note =
-    LOADMASTER'S ROUTE CARD
-    The old winter route will carry people. It will not carry this load.
-    We shifted the miner off the carrier after the axle housing split. The crew took the shelter pack and the medical bag. If you follow us, follow the light footprints. The deep ruts end with the machine.
-    Nobody is to wait with it.
+    Корзина Лодмастера
+    Старый зимний маршрут перевозит людей. Он не будет нести этот груз.
+    Мы сместили шахтера с носителя после разделения оси. Экипаж забрал укрытие и медицинскую сумку. Если вы последуете за нами, следуйте за светлыми следами. Глубокие колеи заканчиваются машиной.
+    Никто не должен ждать с этим.
 
 cmu-expedition-whiteout-recording =
-    DELIVERY RECORDER / FINAL MESSAGE
-    'All crew accounted for at departure. One leg injury, moving with assistance. We have isolated the miner and left the recorder with it. We cannot move the weight across another cut in the shelf. Tell dispatch this is an equipment abandonment, not a refusal to proceed.'
+    Окончательное сообщение / Final Message
+    Все члены экипажа были учтены при вылете. Одна травма ноги, перемещение с помощью. Мы изолировали шахтера и оставили с ним самописец. Мы не можем переместить вес через другой разрез на полке. Скажите диспетчеру, что это отказ от оборудования, а не отказ продолжать.
 
 cmu-expedition-whiteout-target =
-    SUNDIAL / COLD-WEATHER ABANDONMENT
-    The shutdown checklist is tucked behind the controller cover. Every box is initialed. Tow fittings are polished bright by repeated attempts to move the load; a snapped coupling remains wedged beneath one bracket. The crew left the machine deliberately and correctly.
+    Солнечный / COLD-WEATHER АБАНДОНЕНТ
+    Контрольный список отключения спрятан за крышкой контроллера. Каждая коробка инициализирована. Буксирная арматура отполирована яркими повторными попытками переместить нагрузку; щелкнутая сцепка остается зажатой под одной скобкой. Экипаж покинул машину намеренно и правильно.
 
-ent-CMUWhiteoutShelfOrders = recovery orders: Whiteout Shelf
-    .desc = A field copy of the recovery assignment and the sector survey history.
+ent-CMUWhiteoutShelfOrders = Заказы на восстановление: Whiteout Shelf
+    .desc = Полевая копия задания на восстановление и история секторальных обследований.
 
-ent-CMUWhiteoutShelfNote = weathered field record: Whiteout Shelf
-    .desc = A creased record left by someone who passed through the sector.
+ent-CMUWhiteoutShelfNote = Полевые рекорды: Whiteout Shelf
+    .desc = Сломанный рекорд, оставленный кем-то, кто прошел через сектор.
 
-ent-CMUWhiteoutShelfRecorder = recovered recorder: Whiteout Shelf
-    .desc = A battered recorder with a short retained buffer. Examine it closely to read the surviving transcript.
+ent-CMUWhiteoutShelfRecorder = Регистратор: Whiteout Shelf
+    .desc = Потрепанный рекордер с коротким буфером. Внимательно изучите его, чтобы прочитать сохранившуюся расшифровку.
 
-cmu-expedition-glasswater-name = Glasswater Strand
+cmu-expedition-glasswater-name = Стеклянная вода Strand
 
 cmu-expedition-glasswater-history =
-    Glasswater is a long stretch of pale shore between wooded rises and broken headlands. Survey crews once used it to collect tide samples. Storms still return pieces of their floats, mixed with driftwood and debris carried from far beyond the colony.
+    Glasswater - это длинный участок бледного берега между лесистыми подъемами и сломанными мысами. Экипажи когда-то использовали его для сбора образцов приливов. Штормы по-прежнему возвращают куски своих поплавков, смешанных с дрейфами и обломками, перенесенными далеко за пределы колонии.
 
 cmu-expedition-glasswater-briefing =
-    A coastal forced landing scattered the SUNDIAL shipment along Glasswater Strand. The miner's passive cargo tag is still responding, but the transport's distress transmitter stopped abruptly after impact. Recover the machine and inspect the remaining record. No salvage party was dispatched.
+    Прибрежная принудительная посадка разбросала солнечную партию вдоль Glasswater Strand. Пассивный грузоотправитель шахтера все еще реагирует, но передатчик бедствия транспорта внезапно остановился после удара. Восстановите машину и проверьте оставшуюся запись. Спасательный отряд не был отправлен.
 
 cmu-expedition-glasswater-orders =
-    GOVFOR / RECOVERY ORDERS
-    SECTOR: Glasswater Strand
+    GOVFOR / УСТАНОВЛЯЕМЫЕ УСЛОВИЯ
+    Исполнитель: Glasswater Strand
 
     { cmu-expedition-sundial-background }
 
@@ -200,42 +200,42 @@ cmu-expedition-glasswater-orders =
     { cmu-expedition-story-recovery-orders }
 
 cmu-expedition-glasswater-note =
-    WATER-DAMAGED CARGO SLIP
-    One experimental extraction chassis. One paired control unit. Two cases of calibration stock.
-    Below the printed manifest, in a different hand:
-    The red box stays. The aerial assembly comes with us. Leave the heavy frame; its tag is passive. We can argue about the claim when we're clear of the beach.
+    WATER-DAMAGED Карго Слип
+    Одно экспериментальное извлечение шасси. Один спаренный блок управления. Два случая калибровочного запаса.
+    Ниже печатный манифест, в другой руке:
+    Красный ящик остается. Воздушная сборка идет вместе с нами. Оставьте тяжелый каркас; его метка пассивна. Мы можем спорить об этом, когда уберемся с пляжа.
 
 cmu-expedition-glasswater-recording =
-    FR-112 / POST-IMPACT BUFFER
-    (Impact. Several minutes of surf and loose metal. Footsteps approach.)
-    UNKNOWN: The crew?
-    UNKNOWN: Gone up the strand. Cut the transmitter lead clean. Leave this box; it will only record us carrying it.
-    (The audio continues with surf until the recorder's reserve power fails.)
+    FR-112 / POST-IMPACT буфер
+    (Влияние. Несколько минут серфинга и рыхлого металла. Шаги приближаются.
+    Неизвестно: экипаж?
+    Неизвестно: Пошла вверх. Отрежьте передатчик. Оставьте эту коробку, она будет записывать только то, что мы несем.
+    (Аудио продолжается до тех пор, пока резервная мощность регистратора не выйдет из строя.)
 
 cmu-expedition-glasswater-target =
-    SUNDIAL / SALVAGE INSPECTION
-    Salt has dried in the frame joints. The controller is present, but somebody has scraped the ownership stencil from its cover. The work is recent and incomplete: the original serial can still be read under a bolt head.
+    Солнечная / Сальваговая инспекция
+    Соль высохла в каркасных суставах. Контроллер присутствует, но кто-то соскреб трафарет с его крышки. Работа недавняя и неполная: оригинальный сериал все еще можно прочитать под головкой болта.
 
-ent-CMUGlasswaterStrandOrders = recovery orders: Glasswater Strand
-    .desc = A field copy of the recovery assignment and the sector survey history.
+ent-CMUGlasswaterStrandOrders = Заказы на восстановление: Glasswater Strand
+    .desc = Полевая копия задания на восстановление и история секторальных обследований.
 
-ent-CMUGlasswaterStrandNote = weathered field record: Glasswater Strand
-    .desc = A creased record left by someone who passed through the sector.
+ent-CMUGlasswaterStrandNote = Полевые рекорды: Glasswater Strand
+    .desc = Сломанный рекорд, оставленный кем-то, кто прошел через сектор.
 
-ent-CMUGlasswaterStrandRecorder = recovered recorder: Glasswater Strand
-    .desc = A battered recorder with a short retained buffer. Examine it closely to read the surviving transcript.
+ent-CMUGlasswaterStrandRecorder = Регистратор: Glasswater Strand
+    .desc = Потрепанный рекордер с коротким буфером. Внимательно изучите его, чтобы прочитать сохранившуюся расшифровку.
 
-cmu-expedition-cairn-name = Cairn Pass
+cmu-expedition-cairn-name = Кэрн Пасс
 
 cmu-expedition-cairn-history =
-    Cairn Pass is named for the stone heaps left by the colony's first geological survey. Its route was cut for hand-carried instruments, widened in a few places, and never maintained as a freight road. Most maps still draw an unbroken line through it.
+    Перевал Кэрн назван в честь каменных груд, оставленных первой геологической разведкой колонии. Его маршрут был сокращен для ручных инструментов, расширен в нескольких местах и никогда не поддерживался в качестве грузовой дороги. Большинство карт по-прежнему проводят через него непрерывную линию.
 
 cmu-expedition-cairn-briefing =
-    The delivery crew attempted an overland detour after a remote drop-off. Their loaded carrier could not complete Cairn Pass. Recover SUNDIAL from the abandoned load and bring back the route paperwork. Dispatch records disagree about who approved the detour.
+    Экипаж доставки попытался совершить наземный объезд после дистанционного высадки. Их загруженный перевозчик не смог завершить перевал Кэрн. Восстановите СУНДИАЛ из брошенного груза и верните маршрутную документацию. Диспетчерские записи не согласны с тем, кто одобрил объезд.
 
 cmu-expedition-cairn-orders =
-    GOVFOR / RECOVERY ORDERS
-    SECTOR: Cairn Pass
+    GOVFOR / УСТАНОВЛЯЕМЫЕ УСЛОВИЯ
+    Исполнитель: Cairn Pass
 
     { cmu-expedition-sundial-background }
 
@@ -246,42 +246,42 @@ cmu-expedition-cairn-orders =
     { cmu-expedition-story-recovery-orders }
 
 cmu-expedition-cairn-note =
-    DRIVER'S COPY / ROUTE VARIATION
-    The map says service route. The old survey plate says foot access.
-    I asked for the load limit three times. Dispatch answered with the arrival deadline. We got the frame as far as the next usable clearing before the carrier gave out.
-    Signed: transport lead. Copy retained beside the old survey path because the terminal keeps replacing our report.
+    Водительская копия / ROUTE VARIATION
+    На карте указан маршрут обслуживания. Старая табличка говорит о доступе к ногам.
+    Я три раза просил лимит нагрузки. Диспетчер ответил в срок прибытия. Мы получили раму до следующей полезной очистки, прежде чем перевозчик выдал.
+    Подпись: транспортный свинец. Копия сохранилась рядом со старым маршрутом опроса, потому что терминал продолжает заменять наш отчет.
 
 cmu-expedition-cairn-recording =
-    CONVOY RECORDER / DISPATCH TRAFFIC
-    DRIVER: This is not a freight route.
-    DISPATCH: Your route approval is on the manifest.
-    DRIVER: That is my request for a route assessment. Nobody has signed the approval box.
-    (The retained manifest agrees with the driver. A later dispatch summary calls the same document an authorization.)
+    КОНВОЙ РЕКОРДЕР / ДИСПАТЧНЫЙ ТРАФИК
+    Водитель: Это не грузовой маршрут.
+    Одобрение вашего маршрута находится в манифесте.
+    Водитель: Это мой запрос на оценку маршрута. Никто не подписывал рамку одобрения.
+    (Оставленный манифест согласовывается с водителем. Более позднее резюме рассылки называет тот же документ разрешением.
 
 cmu-expedition-cairn-target =
-    SUNDIAL / LOAD INSPECTION
-    Its shipping plates were removed to lighten the carrier, exposing fresh scrapes along the frame. The controller seal is intact. A folded route assessment is trapped behind the tie-down: requested, timestamped, and never approved.
+    Солнечная / Грузовая инспекция
+    Его транспортные пластины были удалены, чтобы облегчить перевозчика, обнажая свежие царапины вдоль рамы. Уплотнение контроллера не повреждено. Сложенная оценка маршрута находится в ловушке за увязкой: запрашиваемая, отметка времени и никогда не утверждается.
 
-ent-CMUCairnPassOrders = recovery orders: Cairn Pass
-    .desc = A field copy of the recovery assignment and the sector survey history.
+ent-CMUCairnPassOrders = Заказы на восстановление: Cairn Pass
+    .desc = Полевая копия задания на восстановление и история секторальных обследований.
 
-ent-CMUCairnPassNote = weathered field record: Cairn Pass
-    .desc = A creased record left by someone who passed through the sector.
+ent-CMUCairnPassNote = Полевые рекорды: Cairn Pass
+    .desc = Сломанный рекорд, оставленный кем-то, кто прошел через сектор.
 
-ent-CMUCairnPassRecorder = recovered recorder: Cairn Pass
-    .desc = A battered recorder with a short retained buffer. Examine it closely to read the surviving transcript.
+ent-CMUCairnPassRecorder = Регистратор: Cairn Pass
+    .desc = Потрепанный рекордер с коротким буфером. Внимательно изучите его, чтобы прочитать сохранившуюся расшифровку.
 
-cmu-expedition-hollow-name = Hollow Signal
+cmu-expedition-hollow-name = Полый сигнал
 
 cmu-expedition-hollow-history =
-    An abandoned survey relay stands among the lakes beyond the colony's useful coverage. It was left in place when the sample network closed. Local crews call the district Hollow Signal because handsets occasionally receive a voice there, even when nobody answers a reply.
+    Заброшенная эстафета исследования стоит среди озер за пределами полезного покрытия колонии. Он был оставлен на месте, когда сеть выборки закрылась. Местные экипажи звонят в районный Hollow Signal, потому что телефоны иногда получают голос там, даже когда никто не отвечает на ответ.
 
 cmu-expedition-hollow-briefing =
-    SUNDIAL's cargo tag has appeared beside the disused relay after a delivery diversion. A repeating distress call identifies the original transport, but every cycle is identical. Recover the machine and the relay record. Treat the broadcast as unverified.
+    Грузовая метка SUNDIAL появилась рядом с неиспользуемым реле после утечки доставки. Повторяющийся сигнал бедствия идентифицирует исходный транспорт, но каждый цикл идентичен. Восстановите машину и запись ретрансляции. Относитесь к трансляции как к непроверенной.
 
 cmu-expedition-hollow-orders =
-    GOVFOR / RECOVERY ORDERS
-    SECTOR: Hollow Signal
+    GOVFOR / УСТАНОВЛЯЕМЫЕ УСЛОВИЯ
+    Исполнитель: Hollow Signal
 
     { cmu-expedition-sundial-background }
 
@@ -292,25 +292,25 @@ cmu-expedition-hollow-orders =
     { cmu-expedition-story-recovery-orders }
 
 cmu-expedition-hollow-note =
-    SERVICE NOTE / RELAY CLOSURE
-    The local recorder remains connected for maintenance playback. The station cannot authenticate distress traffic and is not an approved approach beacon.
-    Handwritten beneath the closure stamp:
-    Someone bridged the playback output to the aerial after we shut this down. The voice is ours, from the old drill. That is why it never answers.
+    ПРИМЕЧАНИЕ УСЛУГИ / ПОДДЕРЖКА
+    Местный регистратор остается подключенным для воспроизведения технического обслуживания. Станция не может аутентифицировать трафик бедствия и не является одобренным маяком подхода.
+    Рукописный под штампом закрытия:
+    Кто-то подключил вывод воспроизведения к воздуху после того, как мы закрыли это. Голос наш, из старой дрели. Вот почему он никогда не отвечает.
 
 cmu-expedition-hollow-recording =
-    RELAY BUFFER / REPEATED SEGMENT
-    TRANSPORT VOICE: Emergency descent. Requesting a clear approach.
-    (The phrase repeats with the same cough and the same click. Beneath the newest recording, the original file header reads TRAINING / APPROACH CHECK. The cargo arrival was logged much later, through a local maintenance connection.)
+    Повторное сообщение / Repeated SEGMENT
+    Транспортный голос: аварийный спуск. Требовать четкого подхода.
+    (Фраза повторяется с одним и тем же кашлем и одним и тем же щелчком). Под самой новой записью оригинальный заголовок файла читает TRAINING / APPROACH CHECK. Прибытие груза было зарегистрировано гораздо позже, через местное техническое обслуживание.
 
 cmu-expedition-hollow-target =
-    SUNDIAL / DIVERTED SHIPMENT
-    The miner is upright and its transport frame is undistorted. There are no impact marks beneath the dust. The delivery docket has been overwritten with the relay's obsolete station code. Whatever happened to the flight, this machine was unloaded here under control.
+    Солнечный / ДИВЕРТНЫЙ ШИМПЕНТ
+    Шахтер в вертикальном положении, а его транспортная рама не искажена. Под пылью нет следов удара. Докет доставки был перезаписан устаревшим кодом станции реле. Что бы ни случилось с полётом, эта машина была разгружена здесь под контролем.
 
-ent-CMUHollowSignalOrders = recovery orders: Hollow Signal
-    .desc = A field copy of the recovery assignment and the sector survey history.
+ent-CMUHollowSignalOrders = Заказы на восстановление: Hollow Signal
+    .desc = Полевая копия задания на восстановление и история секторальных обследований.
 
-ent-CMUHollowSignalNote = weathered field record: Hollow Signal
-    .desc = A creased record left by someone who passed through the sector.
+ent-CMUHollowSignalNote = Полевые рекорды: Hollow Signal
+    .desc = Сломанный рекорд, оставленный кем-то, кто прошел через сектор.
 
-ent-CMUHollowSignalRecorder = recovered recorder: Hollow Signal
-    .desc = A battered recorder with a short retained buffer. Examine it closely to read the surviving transcript.
+ent-CMUHollowSignalRecorder = Регистратор: Hollow Signal
+    .desc = Потрепанный рекордер с коротким буфером. Внимательно изучите его, чтобы прочитать сохранившуюся расшифровку.

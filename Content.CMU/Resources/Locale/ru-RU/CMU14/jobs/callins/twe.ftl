@@ -1,27 +1,27 @@
-cmu-job-title-nspa-tactical-leader = Tactical Team Leader
+cmu-job-title-nspa-tactical-leader = Руководитель тактической команды
 
-cmu-job-title-nspa-tactical-officer = Tactical Officer
+cmu-job-title-nspa-tactical-officer = Тактический офицер
 
-cmu-ghost-name-nspa-tactical-leader = NSPA Tactical Team Leader
+cmu-ghost-name-nspa-tactical-leader = Руководитель тактической команды NSPA
 
-cmu-ghost-name-nspa-tactical-officer = NSPA Tactical Officer
+cmu-ghost-name-nspa-tactical-officer = Тактический офицер NSPA
 
-cmu-job-description-nspa-tactical = You are part of a Neroid Sector Policing Authority tactical team, sent in to breach, arrest and restore order where ordinary constables can't.
+cmu-job-description-nspa-tactical = Вы являетесь частью тактической команды Нероидального Сектора полиции, отправленной на взлом, арест и восстановление порядка там, где обычные констебли не могут.
 
-cmu-job-rules-nspa-tactical = You are a member of the NSPA, the Neroid Sector Policing Authority of the TWE. You are ALLIED to the TWE and its allies, NEUTRAL to civilians and HOSTILE to criminals and the TWE's enemies. Arrest where you can; use force where you must.
+cmu-job-rules-nspa-tactical = Вы являетесь членом NSPA, Нероидального Полицейского Управления Сектора. TWEТы во всем виноват. TWE и его союзники, нейтральные по отношению к гражданским лицам и враждебные по отношению к преступникам и TWEВраги. Арестуйте там, где вы можете, применяйте силу там, где вы должны.
 
-cmu-job-title-rmc-engineer-lead = Engineer Corporal
+cmu-job-title-rmc-engineer-lead = Инженер капрал
 
-cmu-job-title-rmc-engineer = Combat Engineer
+cmu-job-title-rmc-engineer = Боевой инженер
 
-cmu-rmc-engineer-lead-name = RMC Engineer Corporal
+cmu-rmc-engineer-lead-name = RMC Инженер капрал
 
-cmu-rmc-engineer-name = RMC Combat Engineer
+cmu-rmc-engineer-name = RMC Боевой инженер
 
-cmu-rmc-engineer-description = You are part of a Royal Marines combat engineer section, sent in to fortify positions, clear obstacles and breach defences for the TWE forces in the area.
+cmu-rmc-engineer-description = Вы являетесь частью секции боевых инженеров Королевской морской пехоты, отправленной для укрепления позиций, устранения препятствий и защиты от нарушений. TWE сил в этом районе.
 
-cmu-rmc-engineer-greeting = Your engineer section has been sent in to support the operation. Find out where the TWE forces need fortifying or breaching, then get to work.
+cmu-rmc-engineer-greeting = Ваш инженерный отдел был отправлен для поддержки операции. Узнайте, где TWE Силы нуждаются в укреплении или прорыве, затем приступайте к работе.
 
-cmu-job-greeting-iasf-reinforcements = Your section of the IASF 24th Parachute Regiment has been sent in to reinforce the operation. Link up with the forces on the ground.
+cmu-job-greeting-iasf-reinforcements = Ваш раздел IASF 24th Парашютный полк был направлен для усиления операции. Свяжитесь с силами на земле.
 
-cmu-job-description-iasf-reinforcements = You are a member of the IASF 24th Parachute Regiment, flown in as reinforcements at the request of the forces on the ground. Fight for your Empress and country.
+cmu-job-description-iasf-reinforcements = Вы являетесь членом IASF 24th Парашютный полк, прилетевший в качестве подкрепления по требованию сил на земле. Сражайтесь за свою Императрицу и страну.

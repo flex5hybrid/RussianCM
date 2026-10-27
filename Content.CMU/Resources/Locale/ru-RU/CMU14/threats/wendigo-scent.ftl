@@ -1,9 +1,9 @@
-cmu-wendigo-scent-caught = You catch {THE($target)}'s scent.
+cmu-wendigo-scent-caught = Поймать {THE($target)}Запах.
 
-cmu-wendigo-scent-none = There is no scent on {THE($target)} to follow.
+cmu-wendigo-scent-none = Нет никакого запаха на {THE($target)} Следовать.
 
-cmu-wendigo-scent-lost = The scent goes cold.
+cmu-wendigo-scent-lost = Запах становится холодным.
 
-cmu-wendigo-scent-alert-name = Scent
+cmu-wendigo-scent-alert-name = запах
 
-cmu-wendigo-scent-alert-desc = Points toward the prey whose scent you caught.
+cmu-wendigo-scent-alert-desc = Указывает на добычу, запах которой вы поймали.

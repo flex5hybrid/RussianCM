@@ -1,47 +1,47 @@
-cmu-elevator-title = Elevator control
+cmu-elevator-title = Управление лифтом
 
-cmu-elevator-floor = Floor {$floor}
+cmu-elevator-floor = пол {$floor}
 
-cmu-elevator-select-floor = You are on floor {$floor}. Select a destination floor.
+cmu-elevator-select-floor = Ты на полу. {$floor}Выберите пункт назначения.
 
-cmu-elevator-disabled = The elevator is disabled.
+cmu-elevator-disabled = Лифт отключен.
 
-cmu-elevator-invalid-rail-outline = The elevator needs an outline of rails, walls, or doors around the control, open on at most one side.
+cmu-elevator-invalid-rail-outline = Лифт нуждается в контуре рельсов, стен или дверей вокруг управления, открытых максимум с одной стороны.
 
-cmu-elevator-no-rails = No elevator rails, walls, or doors on this grid share this control's elevator ID.
+cmu-elevator-no-rails = Никакие рельсы лифта, стены или двери в этой сетке не разделяют идентификатор лифта этого управления.
 
-cmu-elevator-outline-open = The elevator outline doesn't enclose the control. Face rails outward along the platform's edge and connect walls and doors edge-to-edge so at most one side is left open.
+cmu-elevator-outline-open = Контур лифта не включает управление. Лицевые рельсы выходят наружу вдоль края платформы и соединяют стены и двери от края до края, поэтому максимум одна сторона остается открытой.
 
-cmu-elevator-rail-outside = Every elevator rail, wall, and door must be part of the platform outline.
+cmu-elevator-rail-outside = Каждый лифт, стена и дверь должны быть частью схемы платформы.
 
-cmu-elevator-no-destination = That floor isn't a linked z-level with a floor grid under the elevator.
+cmu-elevator-no-destination = Этот этаж не связан z-уровнем с сеткой пола под лифтом.
 
-cmu-elevator-destination-blocked = The destination elevator footprint is occupied.
+cmu-elevator-destination-blocked = Место назначения лифта занято.
 
-cmu-elevator-shaft-blocked = A floor between here and the destination blocks the elevator shaft.
+cmu-elevator-shaft-blocked = Пол между здесь и пунктом назначения блокирует шахту лифта.
 
-cmu-elevator-call-no-elevator = No elevator with this button's ID is linked to this floor.
+cmu-elevator-call-no-elevator = Ни один лифт с этой кнопкой не связан с этим этажом.
 
-cmu-elevator-call-already-here = The elevator is already on this floor.
+cmu-elevator-call-already-here = Лифт уже на этом этаже.
 
-cmu-elevator-call-arrived = The elevator arrives.
+cmu-elevator-call-arrived = Прибывает лифт.
 
-cmu-elevator-call-coming = The elevator is on its way.
+cmu-elevator-call-coming = Лифт уже в пути.
 
-cmu-elevator-moving = The elevator is already moving.
+cmu-elevator-moving = Лифт уже движется.
 
-cmu-elevator-platform-grid-blocked = Another grid on the elevator platform prevents it from moving.
+cmu-elevator-platform-grid-blocked = Еще одна сетка на лифтовой платформе мешает ему двигаться.
 
-cmu-elevator-overloaded = The elevator is overloaded and has broken. An engineer must re-enable it.
+cmu-elevator-overloaded = Лифт перегружен и сломался. Инженер должен его восстановить.
 
-cmu-elevator-disable-verb = Disable elevator
+cmu-elevator-disable-verb = Отключить лифт
 
-cmu-elevator-enable-verb = Enable elevator
+cmu-elevator-enable-verb = Включить лифт
 
-cmu-elevator-disable-confirmation = Disable this elevator? Only engineering-qualified personnel can enable it again.
+cmu-elevator-disable-confirmation = Отключить лифт? Только квалифицированные инженеры могут сделать это снова.
 
-cmu-elevator-enable-confirmation = Re-enable this elevator?
+cmu-elevator-enable-confirmation = Включить этот лифт?
 
-cmu-elevator-disabled-success = Elevator disabled.
+cmu-elevator-disabled-success = Лифт отключен.
 
-cmu-elevator-enabled-success = Elevator enabled.
+cmu-elevator-enabled-success = Лифт включен.

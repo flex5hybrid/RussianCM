@@ -1,10 +1,10 @@
-ent-CMUAttachmentNightVisionScope = 1.5x night vision scope
-    .desc = A rail-mounted night vision optic with fixed 1.5x zoom and five minutes of battery life while scoped in. Recharge its internal battery in a recharger. The optical zoom remains usable without power.
+ent-CMUAttachmentNightVisionScope = 1.5x ночное видение
+    .desc = Оптика ночного видения, установленная на рельсах с фиксированным 1.5x зум и пять минут автономной работы при включении. Заряжайте свою внутреннюю батарею в зарядном устройстве. Оптический зум остается пригодным для использования без питания.
 
-cmu-night-vision-scope-battery-empty = The scope's battery is empty. Night vision switches off, but the optical zoom still works.
+cmu-night-vision-scope-battery-empty = Батарея прицела пуста. Ночное зрение выключается, но оптический зум все еще работает.
 
-ent-CMUCrateAttachmentNightVisionScope = night vision scope attachment crate (x3)
-    .desc = A crate containing three rechargeable 1.5x night vision scopes.
+ent-CMUCrateAttachmentNightVisionScope = ящик крепления ночного видения (x3)
+    .desc = ящик, содержащий три перезаряжаемых 1.5x Прицел ночного видения.
 
-ent-RMCM96SIntegratedScope = M96S integrated scope
-    .desc = An integrated scope with night vision. This isn't supposed to come off the gun. How did you get it?
+ent-RMCM96SIntegratedScope = M96S комплексный охват
+    .desc = Интегрированная область с ночным видением. Это не должно сходить с пистолета. Как ты его получил?

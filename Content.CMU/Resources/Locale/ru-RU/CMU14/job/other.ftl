@@ -53,469 +53,469 @@ au14-prodigyrescue-greeting = Вы состоите в «Тактическом 
 
     Вы нейтральны ко всем подразделениям Ве-Ю
 
-au14-department-colony-mapspecific = Map Specific
+au14-department-colony-mapspecific = Карта Спецификация
 
-au14-department-colony-mapspecific-description = Roles limited to specific maps. Hover over job names to see map availability.
+au14-department-colony-mapspecific-description = Роли ограничены конкретными картами. Нажмите на имена вакансий, чтобы увидеть доступность карты.
 
-au14-department-prometheus = Prometheus
+au14-department-prometheus = Прометей
 
-au14-department-prometheus-description = Roles limited to use on the prometheus gamemode
+au14-department-prometheus-description = Роли, ограниченные для использования в игровом режиме Prometheus
 
-au14-department-prison = Prison
+au14-department-prison = Тюрьма
 
-au14-department-prison-description = Roles limited to use on the prison gamemode
+au14-department-prison-description = Роли, ограниченные для использования в тюремном игровом режиме
 
-au14-department-isolation = Isolation
+au14-department-isolation = Изоляция
 
-au14-department-isolation-description = Roles limited to use on the Isolation gamemode
+au14-department-isolation-description = Роли, ограниченные для использования в игровом режиме Isolation
 
-au14-job-description-mobboss= You're the leader of the local crime syndicate, ensure the goals of your family are met
+au14-job-description-mobboss= Вы лидер местного преступного синдиката, убедитесь, что цели вашей семьи достигнуты.
 
-au14-job-prefix-mobboss = MOB
+au14-job-prefix-mobboss = Моб
 
-au14-job-description-mobgoon = You're a soldier in local crime syndicate, listen to the boss
+au14-job-description-mobgoon = Ты солдат местного криминального синдиката, послушай босса.
 
-au14-job-description-wyguard= You're corporate security hired by Weyland-Yutani. Listen to and protect the employees and company assets
+au14-job-description-wyguard= Вы - корпоративная охрана, нанятая Вейландом-Ютани. Слушайте и защищайте сотрудников и активы компании
 
-au14-job-prefix-wyguard = WYSEC
+au14-job-prefix-wyguard = ВИСЭК
 
-au14-department-third-party = Third Party
+au14-department-third-party = Третья сторона
 
-au14-department-third-party-description = Select this job to play as a third party
+au14-department-third-party-description = Выберите эту работу, чтобы играть в качестве третьей стороны.
 
-au14-department-threat = threat
+au14-department-threat = угроза
 
-au14-department-threat-description = Select this job to play as the threat
+au14-department-threat-description = Выберите эту работу, чтобы играть в качестве угрозы
 
-au14-cmbinvestigate-rules = You are an officer of the law. Investigate the area. You are neutral unless attacked.
+au14-cmbinvestigate-rules = Вы являетесь должностным лицом закона. Исследуйте этот район. Вы нейтральны, если на вас не нападают.
 
-au14-lacncommandosniper-rules = You have been loaned to the United Americas Allied Command by the LACN for a special mission on this planet, the details of which have not been disclosed to you. You have been ordered to investigate the area and report to the local UA command. You are friendly to the UA and neutral to civilians.
+au14-lacncommandosniper-rules = Вы были отданы в аренду Союзному командованию Соединенных Штатов Америки для специальной миссии на этой планете, подробности которой вам не были раскрыты. Вам приказано исследовать этот район и доложить местному командованию УА. Вы дружелюбны к UA и нейтральны к гражданским лицам.
 
-au14-uacglostthreat-rules = You are a Government Forces Third Party! You are friendly to GOVFOR forces and neutral to civilians. This threat asks for a slightly higher level of roleplay than others! Please keep this in mind.
+au14-uacglostthreat-rules = Вы - третья сторона правительства! Вы дружелюбны к GOVFOR Силы и нейтралитет по отношению к гражданским лицам. Эта угроза требует немного более высокого уровня ролевой игры, чем другие. Пожалуйста, имейте это в виду.
 
-au14-rmcert-rules = You have been dispatched as a Royal Marines Commando Rapid Reaction Troop member. The details of the mission have not been disclosed to you, however your main objective is to assist the TWE and its allies in the area of operation. You are friendly to TWE command and its allies, and neutral to civilians.
+au14-rmcert-rules = Вы были отправлены в качестве члена Королевской морской пехоты Коммандо быстрого реагирования. Подробности миссии не были раскрыты вам, но ваша основная цель - помочь вам. TWE и их союзников в районе проведения операции. Вы дружелюбны к TWE Командование и его союзники, нейтральные по отношению к гражданским лицам.
 
-au14-uppgrom-rules = You are a member of UPP's elite GROM special unit! You do not remember what happened or what is happening in round.
+au14-uppgrom-rules = Вы являетесь членом UPPЭлитное спецподразделение GROM! Вы не помните, что произошло или что происходит в круге.
 
-au14-uppgrom-greeting = You are a member of UPP's elite GROM special forces unit!
+au14-uppgrom-greeting = Вы являетесь членом UPPЭлитное подразделение спецназа GROM!
 
-    Your last mission was disastrous, you lost contact with your mothership and command.
+    Ваша последняя миссия была катастрофической, вы потеряли связь с вашим материнским кораблем и командованием.
 
-    Your supplies are running low, and only by your adaptability you managed you survive.
+    Ваши запасы падают, и только благодаря вашей адаптивности вы смогли выжить.
 
-    Ensure survival of yourself and your squadmates and contact nearest friendly command.
-    Poland Is Not Yet Lost!
+    Обеспечьте выживание себе и своим товарищам по команде и свяжитесь с ближайшим дружественным командованием.
+    Польша еще не потеряна!
 
-    You are not hostile to the UPP and CCA and neutral to other countries!
+    Вы не враждебны по отношению к UPP и нейтральным к другим странам!
 
-au14-unisc-rules = You are a mix of Volunteers from different countries put into a Peacekeeping force, Protect Civilians, Enforce Geneva, Always attempt to be neutral. Remember, nobody is above Geneva.
+au14-unisc-rules = Вы представляете собой смесь добровольцев из разных стран, объединенных в миротворческие силы, защищающих гражданских лиц, женевских сил, всегда пытающихся быть нейтральными. Помни, никто не выше Женевы.
 
-au14-unisc-greeting = You are a mix of Volunteers from different countries put into a Peacekeeping force.
+au14-unisc-greeting = Вы — смесь добровольцев из разных стран, введённых в миротворческие силы.
 
-    You have been dispatched by Platoon Command to investigate a call incoming from a Colony, the one you're currently going towards.
+    Вы были отправлены командованием взвода для расследования звонка, поступающего из колонии, к которой вы в настоящее время направляетесь.
 
-    You've got a full Squad, along with your Platoon Operations Officer and an Enforcer Team.
+    У вас есть полный отряд, вместе с офицером по операциям взвода и командой силовиков.
 
-    Make sure that the Geneva Convention is upheld, Civilians rights are protected, and ensure the safety of your squad mates aswell.
+    Убедитесь, что Женевская конвенция соблюдена, права гражданских лиц защищены, а также обеспечить безопасность ваших товарищей по команде.
 
-    Your Rules of Engagement are tight, do not fire unless fired upon or in defense of Non-Combatants, always attempt to be neutral, always attempt to avoid acting in anything other than self-defense.
+    Ваши Правила Взаимодействия жесткие, не стреляйте, если не обстреляли или в защиту некомбатантов, всегда старайтесь быть нейтральными, всегда старайтесь избегать действий в чем-либо, кроме самообороны.
 
-    ROE may always be changed by the Platoon Operations Officer or Platoon Commander.
+    ROE всегда может быть изменен офицером по операциям взвода или командиром взвода.
 
-    You are netrual to all countries, corporations and organizations. You are Allied to the United Nations.
+    Вы чисты для всех стран, корпораций и организаций. Вы являетесь союзником ООН.
 
-au14-job-name-unisc-automatic-rifleman = UNISC Automatic Rifleman
+au14-job-name-unisc-automatic-rifleman = Автоматический стрелок UNISC
 
-au14-job-name-unisc-ammo-bearer = UNISC Ammo Bearer
+au14-job-name-unisc-ammo-bearer = Амунитор UNISC
 
-au14-job-name-unisc-enforcer = UNISC Enforcer
+au14-job-name-unisc-enforcer = Исполнитель UNISC
 
-au14-job-name-unisc-lead-enforcer = UNISC Lead Enforcer
+au14-job-name-unisc-lead-enforcer = Исполнительный директор UNISC
 
-au14-job-name-unisc-squad-leader = UNISC Squad Leader
+au14-job-name-unisc-squad-leader = Руководитель отряда UNISC
 
-au14-job-name-unisc-platoon-operations-officer = UNISC Platoon Operations Officer
+au14-job-name-unisc-platoon-operations-officer = Операционный офицер UNISC
 
-au14-job-name-unisc-rifleman = UNISC Rifleman
+au14-job-name-unisc-rifleman = Стрелок UNISC
 
-au14-job-name-unisc-corpsman = UNISC Corpsman
+au14-job-name-unisc-corpsman = Корпусник UNISC
 
-au14-job-name-unisc-hospital-corpsman = UNISC Hospital Corpsman
+au14-job-name-unisc-hospital-corpsman = Больничный корпус UNISC
 
-au14-unisc-description = United Nations Interstellar Space Corps personnel (peacekeepers).
+au14-unisc-description = Сотрудники Межзвездного космического корпуса ООН (миротворцы).
 
-chat-radio-unisc = UNISOF
+chat-radio-unisc = ЮНИСФ
 
-rmc-squad-info-GROMCommandingOfficer = GROM Commanding Officer
+rmc-squad-info-GROMCommandingOfficer = Командир GROM
 
-au14-uppgrom-description = You are a member of UPP's elite GROM special forces unit. Survive with your squad and contact any friendly Command.
+au14-uppgrom-description = Вы являетесь членом UPPЭлитное подразделение спецназа GROM. Выживите со своим отрядом и свяжитесь с любым дружественным командованием.
 
-au-14-job-name-papthirdparty-investigator = PaP Investigator
+au-14-job-name-papthirdparty-investigator = Следователь PaP
 
-au-14-job-prefix-papthirdparty-investigator = Pap Inv
+au-14-job-prefix-papthirdparty-investigator = Пап Инв
 
-au14-papthirdparty-description = You are part of PaP's Investigation group. You were called to a colony to investigate. You are not aware of the situation. Investigate.
+au14-papthirdparty-description = Вы являетесь частью группы по расследованию. Тебя вызвали в колонию для расследования. Вы не осведомлены о ситуации. Расследуйте.
 
-au-14-job-name-papthirdparty-captain = PaP Senior Investigator
+au-14-job-name-papthirdparty-captain = Старший следователь PaP
 
-au-14-job-prefix-papthirdparty-captain = PaP SInv
+au-14-job-prefix-papthirdparty-captain = Пап Инв
 
-au-14-job-name-papthirdparty-observer = Interstellar Human Rights Observer
+au-14-job-name-papthirdparty-observer = Межзвездный наблюдатель по правам человека
 
-au14-papthirdparty-description-observer = Through hard work, you have managed to make your way onto the frontier alongside a PaP investigation group to document and record any atrocities that may be occurring in this dark sector of space. It’s partly a PR stunt, but it’s important work. In an emergency, you may also be able to provide medical aid to those in need.
+au14-papthirdparty-description-observer = Благодаря упорной работе вам удалось пробраться на границу вместе с группой по расследованию ПАП, чтобы задокументировать и зафиксировать любые зверства, которые могут происходить в этом темном секторе космоса. Это отчасти пиар-ход, но это важная работа. В чрезвычайной ситуации вы также можете оказать медицинскую помощь нуждающимся.
 
 au-14-job-prefix-papthirdparty-observer = PaP Obs
 
-au14-papthirdparty-greeting = You are member of People's armed Police of UPP.
+au14-papthirdparty-greeting = Вы являетесь членом Народной вооруженной полиции UPP.
 
-    You have been dispatched to investigate colony you are making way to.
+    Вас отправили исследовать колонию, в которую вы направляетесь.
 
-    You have friendly to GOVFOR, neutral to civilians and hostile to CLF.
+    Вы дружелюбны к GOVFORнейтральным по отношению к гражданским лицам и враждебным по отношению к CLF.
 
-au-14-job-name-upptd-squadleader = Squad Leader
+au-14-job-name-upptd-squadleader = Командир отряда
 
 au-14-job-prefix-upptd-squadleader = TD SL
 
-au-14-job-name-upptd-rifleman = Rifleman
+au-14-job-name-upptd-rifleman = Стрелок
 
 au-14-job-prefix-upptd-rifleman = TD RFN
 
-au-14-job-name-upptd-loader = Loader
+au-14-job-name-upptd-loader = погрузчик
 
-au-14-job-prefix-upptd-loader = TD LOAD
+au-14-job-prefix-upptd-loader = ТД Лоуд
 
-au14-upptd-description = You are a member of UPP's Territorial Defense. You were on patrol and.. Well... Now you are lost. Find your command and follow their orders.
+au14-upptd-description = Вы являетесь членом UPPТерриториальная оборона. Вы были в патруле и... Ну... Теперь ты потерян. Найди свою команду и следуй их приказам.
 
-au14-upptd-greeting = You are member of UPP's Territorial Defense.
+au14-upptd-greeting = Вы являетесь членом UPPТерриториальная оборона.
 
-    You have been dispatched to patrol but got lost.
-    Find any local command and join their forces.
-    You have friendly to UPP and CCA, neutral to civilians and other countries, and hostile to CLF.
+    Вас отправили патрулировать, но вы заблудились.
+    Найдите любое местное командование и объедините свои силы.
+    Вы дружелюбны к UPP и ОАС, нейтральный по отношению к гражданским лицам и другим странам и враждебный по отношению к CLF.
 
-au14-professorvonbandolier-rules = Blast! No sign of proper game for weeks, and that was your last cup of good tea.
+au14-professorvonbandolier-rules = Взрыв! Никаких признаков хорошей игры в течение нескольких недель, и это была ваша последняя чашка хорошего чая.
 
-    You have no allies or allegiences to any faction.
-    Set up in the local area - find, track, and hunt your chosen game.
-    Spare those not worth the hunt, unless they make themselves a problem.
+    У вас нет союзников или преданности какой-либо фракции.
+    Настройте в местном районе - найдите, отслеживайте и охотитесь на выбранную вами игру.
+    Избавьтесь от тех, кто не стоит охоты, если только они не создают проблемы.
 
-au14-forecon-rules = You are a member of USCMC FORECON! You do not remember what happened or what is happening in round.
+au14-forecon-rules = Вы являетесь членом USCMC FORECON! Вы не помните, что произошло или что происходит в круге.
 
-au14-forecon-greeting = You are a member of USCMC elite FORECON special forces unit!
+au14-forecon-greeting = Вы являетесь членом элитного подразделения спецназа USCMC FORECON!
 
-    Your last mission was disastrous, you lost contact with your mothership and command.
+    Ваша последняя миссия была катастрофической, вы потеряли связь с вашим материнским кораблем и командованием.
 
-    Your supplies are running low, and only by your adaptability you managed you survive.
+    Ваши запасы падают, и только благодаря вашей адаптивности вы смогли выжить.
 
-    Ensure survival of yourself and your squadmates and contact nearest friendly command.
+    Обеспечьте выживание себе и своим товарищам по команде и свяжитесь с ближайшим дружественным командованием.
 
-    You are not hostile to the UA and TWE and neutral to other countries!
+    Вы не враждуете с UA и TWE нейтральным по отношению к другим странам.
 
-au14-forecon-detachment-greeting = You are a member of USCMC elite FORECON special forces unit!
+au14-forecon-detachment-greeting = Вы являетесь членом элитного подразделения спецназа USCMC FORECON!
 
-    You were dispatched to GOVFOR. Report to command for further orders.
+    Вас отправили в GOVFORСообщите командованию о дальнейших приказах.
 
-    You are part of GOVFOR!
+    Вы являетесь частью GOVFOR!
 
-au14-forecon-detachment-rules = You were dispatched to support the UA forces in the area. Report to their command for further orders.
+au14-forecon-detachment-rules = Вы были направлены для поддержки сил ОА в этом районе. Отчитывайтесь перед своим командованием о дальнейших приказах.
 
-rmc-job-description-forecon-detachment = You are a member or USCMC FORECON. You were dispatched to support the UA forces in the area. Report to their command for further orders.
+rmc-job-description-forecon-detachment = Вы являетесь членом USCMC FORECON. Вы были направлены для поддержки сил ОА в этом районе. Отчитывайтесь перед своим командованием о дальнейших приказах.
 
-au14-job-name-forecon-spotter = Spotter
+au14-job-name-forecon-spotter = споттер
 
 au14-job-prefix-forecon-spotter = SPOT
 
-au-14-job-name-uacg-squadleader = Lost Squad Leader
+au-14-job-name-uacg-squadleader = Потерянный командир отряда
 
-au-14-job-prefix-uacg-squadleader = Lost CG SL
+au-14-job-prefix-uacg-squadleader = Потерянный CG SL
 
-au-14-job-name-uacg-rifleman = Lost Rifleman
+au-14-job-name-uacg-rifleman = Потерянный стрелок
 
 au-14-job-prefix-uacg-rifleman = CG RFN
 
-au-14-job-name-uacg-ammobearer = Lost Ammo Bearer
+au-14-job-name-uacg-ammobearer = Потерянный носитель боеприпасов
 
 au-14-job-prefix-uacg-ammobearer = CG AB
 
-au14-uacg-rules = You are a UA third party! You are friendly to UA forces and neutral to civilians. This third party asks for a slightly higher level of roleplay than others! Please keep this in mind.
+au14-uacg-rules = Вы - третья сторона! Вы дружелюбны к силам ОА и нейтральны к гражданским лицам. Эта третья сторона требует немного более высокого уровня ролевой игры, чем другие! Пожалуйста, имейте это в виду.
 
-au14-uacg-description = Your squad was separated from your platoon whilst on a short range patrol from your FOB, when extreme weather had veered you off course. Relink with the UA forces in the area with those who remain.
+au14-uacg-description = Ваш отряд был отделен от вашего взвода во время патрулирования на небольшом расстоянии от вашего FOB, когда экстремальная погода отклонила вас от курса. Свяжитесь с силами ОА в этом районе с теми, кто остается.
 
-au14-uacg-greeting = You are a member of UACG patrol!
+au14-uacg-greeting = Вы являетесь членом патруля ОАКГ!
 
-    You were patrolling and got lost. Report to local command for further orders.
+    Вы патрулировали и заблудились. Сообщите местному командованию о дальнейших приказах.
 
-    You are part of GOVFOR!
+    Вы являетесь частью GOVFOR!
 
-au14-usarmy-greeting = You are a member of US Army 1st cavalry division!
+au14-usarmy-greeting = Вы являетесь членом армии США 1st Кавалерийская дивизия!
 
-    During your last mission you lost contact with HQ.
+    Во время последней миссии вы потеряли связь с штабом.
 
-    You are aware of the threat.
+    Вы знаете об угрозе.
 
-    Your objective is to eliminate the threat.
+    Ваша цель - устранить угрозу.
 
-    You are friendly to UA and neutral to other countries.
+    Вы дружелюбны к UA и нейтральны к другим странам.
 
-au14-usarmy-rules = You are a member of US Army! You do not remember what happened or what is happening in round.
+au14-usarmy-rules = Вы являетесь членом армии США! Вы не помните, что произошло или что происходит в круге.
 
-rmc-squad-info-USArmyCommandingOfficer = US Army Commanding Officer
+rmc-squad-info-USArmyCommandingOfficer = Командир армии США
 
-au14-job-name-usarmy-trooper = Trooper
+au14-job-name-usarmy-trooper = Войска
 
-au14-job-prefix-usarmy-trooper = TRP
+au14-job-prefix-usarmy-trooper = ТРП
 
-au14-job-name-usarmy-trooper-lat = Anti Tank Trooper
+au14-job-name-usarmy-trooper-lat = Антитанковый отряд
 
-au14-job-prefix-usarmy-trooper-lat = LAT
+au14-job-prefix-usarmy-trooper-lat = Ловкий
 
-au14-job-name-usarmy-cet = Combat Engineering Technician
+au14-job-name-usarmy-cet = Боевой инженер-техник
 
-au14-job-prefix-usarmy-cet = CET
+au14-job-prefix-usarmy-cet = СЕТ
 
-au14-job-name-usarmy-cmt = Combat Medical Technician
+au14-job-name-usarmy-cmt = Боевой медицинский техник
 
-au14-job-prefix-usarmy-cmt = CMT
+au14-job-prefix-usarmy-cmt = СМТ
 
-au14-job-name-usarmy-hg = Heavy Gunner
+au14-job-name-usarmy-hg = Тяжелый стрелок
 
-au14-job-prefix-usarmy-hg = HG
+au14-job-prefix-usarmy-hg = ГГ
 
-au14-job-description-usarmy = You are a member of US Army. Follow your objectives and achieve victory.
+au14-job-description-usarmy = Вы являетесь членом армии США. Следуйте своим целям и добивайтесь победы.
 
-au14-job-name-usarmy-tankcommander = Tank Commander
+au14-job-name-usarmy-tankcommander = Танковый командир
 
-au14-job-prefix-usarmy-tankcommander = TC
+au14-job-prefix-usarmy-tankcommander = ТК
 
-au14-job-name-usarmy-tankdriver = Tank Driver
+au14-job-name-usarmy-tankdriver = Водитель танка
 
 au14-job-prefix-usarmy-tankdriver = TD
 
-au14-job-name-usarmy-tankgunner = Tank Gunner
+au14-job-name-usarmy-tankgunner = Танковый стрелок
 
 au14-job-prefix-usarmy-tankgunner = TG
 
-au14-job-name-usarmy-tankloader = Tank Loader
+au14-job-name-usarmy-tankloader = Погрузчик танков
 
-au14-job-prefix-usarmy-tankloader = TLOAD
+au14-job-prefix-usarmy-tankloader = ГЛАВА
 
-au14-job-description-usarmy-tankcrew = You are a member of US Army 32nd Armored Division. You lost contact with HQ and your tank got in the mud. Contact nearest friendly command.
+au14-job-description-usarmy-tankcrew = Вы являетесь членом армии США 32nd Бронированная дивизия. Вы потеряли связь с штабом и ваш танк попал в грязь. Свяжитесь с ближайшей дружественной командой.
 
-au14-usarmy-tank-greeting = You are a member of US Army 32nd Armored Division!
+au14-usarmy-tank-greeting = Вы являетесь членом армии США 32nd Бронированная дивизия!
 
-    You lost contact with HQ, and your tank got into the mud so you abandoned it.
+    Вы потеряли связь с штабом, и ваш танк попал в грязь, поэтому вы отказались от него.
 
-    Contact and join nearest friendly forces.
+    Свяжитесь с ближайшими дружественными силами.
 
-    You are friendly to UA and neutral to other countries.
+    Вы дружелюбны к UA и нейтральны к другим странам.
 
-au14-usarmy-armored-greeting = You are a member of US Army 32nd Armored Division!
+au14-usarmy-armored-greeting = Вы являетесь членом армии США 32nd Бронированная дивизия!
 
-    You were dispatched to aid GOVFOR forces in the AO!
+    Тебя отправили на помощь. GOVFOR Силы в АО!
 
-    Get ready for action and report to the GOVFOR Commanding Officer!
+    Приготовьтесь к действию и доложите GOVFOR Командир!
 
-    You are friendly to GOVFOR, neutral to civilians and hostile to CLF!
+    Вы дружелюбны к GOVFORнейтральным по отношению к гражданским лицам и враждебным по отношению к CLF!
 
-au14-job-description-forecon-killteam = You are a member of FORECON Kill Team. Assasinate your target.
+au14-job-description-forecon-killteam = Вы являетесь членом команды FORECON Kill. Уничтожить свою цель.
 
-au14-job-description-forecon-killteam-greeting = You are a member of USCMC elite FORECON special forces unit!
+au14-job-description-forecon-killteam-greeting = Вы являетесь членом элитного подразделения спецназа USCMC FORECON!
 
-    You are a member of Scout Sniper's Kill Team. You were ordered to assasinate High Valuable Target.
-    (If admins did not order you anything, you are to assasinate Colony Admin. Reasoning from High Command was not disclosed to you)
+    Вы являетесь членом команды убийц скаутского снайпера. Вам было приказано убить Высокая Ценная Цель.
+    (Если администраторы ничего вам не заказали, вы должны убить администратора колонии.) Размышления высшего командования не были раскрыты вам.
 
-    You are NOT a part of GOVFOR, but do not be overly agressive to them. Do whatever is needed to succeed in your mission.
+    Вы не являетесь частью GOVFORНе будьте чрезмерно агрессивны к ним. Делайте все необходимое, чтобы добиться успеха в своей миссии.
 
-au14-forecon-killteam-rules = You do not know what is going on in round. Your main goal is to assasinate the target. You are not attached to the UA forces in the area, but do not be overly agressive to them.
+au14-forecon-killteam-rules = Вы не знаете, что происходит в округе. Ваша главная цель - уничтожить цель. Вы не привязаны к силам ОА в этом районе, но не будьте чрезмерно агрессивны к ним.
 
-au14-job-description-forecon-firstrecon = You are a member USCMC FORECON 1st Battalion. You are here to investigate WMD.
+au14-job-description-forecon-firstrecon = Вы являетесь членом USCMC FORECON 1st Батальон. Вы здесь, чтобы исследовать ОМП.
 
-au14-job-description-forecon-firstrecon-greeting = You are a member of USCMC elite FORECON special forces unit!
+au14-job-description-forecon-firstrecon-greeting = Вы являетесь членом элитного подразделения спецназа USCMC FORECON!
 
-    You are a member of 1st Reconnaissance Battalion.
-    Your Intelligence reports a possibility of Weapons of Mass Destruction (WMD).
-    Find and secure any WMD.
+    Вы являетесь членом 1st Разведывательный батальон.
+    Ваша разведка сообщает о возможности оружия массового поражения (ОМУ).
+    Найдите и защитите любое оружие.
 
-    Your Right of Engagement are to ONLY return fire. Never attack until provoked. If you are sure of ill intentions, you may fire first within reasonable limits.
-    Godfather is watching you!
+    Ваше право на участие заключается только в ответном огне. Никогда не нападайте, пока не спровоцированы. Если вы уверены в плохих намерениях, вы можете начать стрелять в разумных пределах.
+    Крестный отец следит за тобой!
 
-    You are NOT a part of GOVFOR, but you are not hostile until provoked. Your mission is securing or eliminating WMD.
+    Вы не являетесь частью GOVFORНо вы не враждебны, пока не спровоцированы. Ваша миссия - защита или ликвидация ОМУ.
 
-au14-job-name-forecon-corpsman = Hospital Corpsman 2. Class
+au14-job-name-forecon-corpsman = Больничный корпусмен 2Класс
 
 au14-job-prefix-forecon-corpsman = HC2
 
-au14-pmcparty-description = You are a part of Weyland-Yutani PMC party! You were called for a special mission in the area, follow your orders.
+au14-pmcparty-description = Вы являетесь частью партии Вейланд-Ютани! Вас вызвали на специальную миссию в этом районе, следуйте вашим приказам.
 
-au14-pmcparty-greeting = You are a part of Weyland-Yutani PMC party!
+au14-pmcparty-greeting = Вы являетесь частью партии Вейланд-Ютани!
 
-    You were called for a special mission in the area, follow your orders.
+    Вас вызвали на специальную миссию в этом районе, следуйте вашим приказам.
 
-    Company's profit is your goal.
+    Прибыль компании – ваша цель.
 
-    Weyland-Yutani - building better worlds.
+    Вейланд-Ютани — построение лучших миров.
 
-au14-job-name-wypmc = Private Military Contractor
+au14-job-name-wypmc = Частный военный подрядчик
 
-au14-job-name-wypmc-contractor = PMC Contractor
+au14-job-name-wypmc-contractor = Подрядчик PMC
 
-au14-job-name-wypmc-leader = PMC Leader
+au14-job-name-wypmc-leader = Лидер PMC
 
 au14-job-name-wypmc-smartgun-operator = PMC Smartgun Operator
 
-au14-job-name-wypmc-sniper = PMC Sniper
+au14-job-name-wypmc-sniper = Снайпер PMC
 
-au14-job-name-ipie-lawyer = IPIE Lawyer
+au14-job-name-ipie-lawyer = Адвокат IPIE
 
-au14-job-name-ipie-ppo = IPIE Personal Protection Officer
+au14-job-name-ipie-ppo = Сотрудник по личной защите IPIE
 
-au14-ipie-lawyer-description = You are Intelectual Property Infringement Enforcement Lawyer of Weyland-Yutani Corporation. Defend Corporation's rights!
+au14-ipie-lawyer-description = Вы являетесь адвокатом по вопросам нарушения прав интеллектуальной собственности корпорации Weyland-Yutani. Защитить права корпорации!
 
-au14-ipie-lawyer-greeting = You are Intelectual Property Infringement Enforcement Lawyer of Weyland-Yutani Corporation.
+au14-ipie-lawyer-greeting = Вы являетесь адвокатом по вопросам нарушения прав интеллектуальной собственности корпорации Weyland-Yutani.
 
-    You were called to investigate Intelectual Property Infringement.
-    If you spawned as a synth, play as normal. You are undercover.
-    Find any inconsistencies and sue everyone!
+    Вас вызвали расследовать нарушение прав интеллектуальной собственности.
+    Если вы родились как синт, играйте как обычно. Ты под прикрытием.
+    Найдите любые несоответствия и подавайте в суд на всех!
 
-    Company's profit is your goal.
+    Прибыль компании – ваша цель.
 
-    Weyland-Yutani - building better worlds.
+    Вейланд-Ютани — построение лучших миров.
 
-au14-ipie-ppo-description = You are Weyland-Yutani's Personal Protection Officer. Protect IPIE Lawyer with your life.
+au14-ipie-ppo-description = Вы сотрудник по личной защите Вейланд-Ютани. Защита IPIE Адвокат с вашей жизнью.
 
-au14-ipie-greeting = You are Weyland-Yutani's Personal Protection Officer. Protect IPIE Lawyer with your life.
+au14-ipie-greeting = Вы сотрудник по личной защите Вейланд-Ютани. Защита IPIE Адвокат с вашей жизнью.
 
-    You were called to investigate Intelectual Property Infringement.
-    Assist the IPIE Lawyer and ensure their safety.
+    Вас вызвали расследовать нарушение прав интеллектуальной собственности.
+    Помогите адвокату IPIE и обеспечить его безопасность.
 
-    Company's profit is your goal.
+    Прибыль компании – ваша цель.
 
-    Weyland-Yutani - building better worlds.
+    Вейланд-Ютани — построение лучших миров.
 
-au14-lacncommando-description = You have been loaned to the United Americas Allied Command by the LACN for a special mission on this planet, the details of which have not been disclosed to you. You have been ordered to investigate the area and report to the local UA command.
+au14-lacncommando-description = Вы были отданы в аренду Союзному командованию Соединенных Штатов Америки для специальной миссии на этой планете, подробности которой вам не были раскрыты. Вам приказано исследовать этот район и доложить местному командованию УА.
 
-au14-job-name-vai-mercenary = Contractor
+au14-job-name-vai-mercenary = подрядчик
 
-au14-vai-mercenary-description = You are Vanguard's Arrow Incorporated Mercenary. Follow your contract. For details, consult your primer.
+au14-vai-mercenary-description = Вы - наемник Vanguard's Arrow Incorporated. Следуйте своему контракту. Для получения подробной информации, проконсультируйтесь с праймером.
 
-au14-job-prefix-vai-mercenary = VAIC
+au14-job-prefix-vai-mercenary = ВАИК
 
-au14-job-name-vai-teamleader = Team Leader
+au14-job-name-vai-teamleader = Командир группы
 
-au14-job-prefix-vai-teamleader = VAITL
+au14-job-prefix-vai-teamleader = Вейтл
 
-au14-job-name-vai-medic = Medical Specialist
+au14-job-name-vai-medic = Медицинский специалист
 
-au14-job-prefix-vai-medic = VAIM
+au14-job-prefix-vai-medic = Ваим
 
-au14-job-name-vai-engi = Engineering Specialist
+au14-job-name-vai-engi = Инженерный специалист
 
-au14-job-prefix-vai-engi = VAIE
+au14-job-prefix-vai-engi = Вэй
 
-au14-job-name-vai-machinegunner = Machinegunner
+au14-job-name-vai-machinegunner = Пулемётчик
 
-au14-job-prefix-vai-machinegunner = VAIMG
+au14-job-prefix-vai-machinegunner = ВАЙМГ
 
-au14-vaipo-greeting = You are part of Vanguard's Arrow Incorporated Primary Operations.
+au14-vaipo-greeting = Вы являетесь частью Vanguard's Arrow Incorporated Primary Operations.
 
-    You received a call from local UA Ambassador and to investigate it.
-    Ensure safety of Ambassador for all cost.
+    Вы получили звонок от местного посла УА и расследуете его.
+    Обеспечить безопасность посла любой ценой.
 
-    You are FRIENDLY to all UA units.
+    Вы дружите со всеми подразделениями UA.
 
-au14-vaiso-greeting = You are part of Vanguard's Arrow Incorporated Special Operations.
+au14-vaiso-greeting = Вы являетесь частью специальных операций Vanguard's Arrow Incorporated.
 
-    You are tasked unsavory operations, black ops, and the anti-WY work.
+    Вам поручены сомнительные операции, черные операции и работа против WY.
 
-    You received intel from local CLF insurgents on Weyland-Yutani research facility.
+    Вы получили информацию от местных CLF Повстанцы на исследовательском объекте Вейланд-Ютани.
 
-    You are to raid it and retrieve any valuable intel.
+    Вы должны обыскать его и получить любую ценную информацию.
 
-    Do it quickly, and dont draw unnecessery attention.
+    Делайте это быстро и не привлекайте излишнего внимания.
 
-    Remember, you are not here, never was and never will.
+    Помните, вас здесь нет, никогда не было и никогда не будет.
 
-    You are FRIENDLY to all UA units.
+    Вы дружите со всеми подразделениями UA.
 
-au14-vaisp-greeting = You are part of Vanguard's Arrow Incorporated.
+au14-vaisp-greeting = Вы являетесь частью Vanguard's Arrow Incorporated.
 
-    You are a part of Medical team called by UA Ambassador.
+    Вы являетесь частью медицинской команды, вызванной послом UA.
 
-    Ensure their safety at all cost.
+    Обеспечить их безопасность любой ценой.
 
-    You are FRIENDLY to all UA units.
+    Вы дружите со всеми подразделениями UA.
 
-au14-prodigyparty-description = You are a part of "Prodigy Armed Repair Team" (PART)! You were called for a special mission in the area, follow your orders.
+au14-prodigyparty-description = Вы входите в состав команды «Prodigy Armed Repair Team». Вас вызвали на специальную миссию в этом районе, следуйте вашим приказам.
 
-au14-prodigyextract-description = You are a Extraction Ship team called in by a Prodigy 3rd Party! Use your ship to get your Contractors out of there!
+au14-prodigyextract-description = Вы - команда экстракционного корабля, вызванная вундеркиндом. 3rd Вечеринка! Используйте свой корабль, чтобы вытащить оттуда подрядчиков!
 
-au14-prodigyhazard-description = You are a Hazard Response Team called in for a special mission involving a Chemical, Biological, Ultraviolet, Radiological, and Nuclear tasking.
+au14-prodigyhazard-description = Вы - команда реагирования на опасность, призванная для специальной миссии, включающей химическую, биологическую, ультрафиолетовую, радиологическую и ядерную задачи.
 
-au14-prodigyrescue-description = You are a Search and Rescue team in the local area that responded to a distress signal in the local area, find out who needs help.
+au14-prodigyrescue-description = Вы поисково-спасательная команда в местном районе, которая ответила на сигнал бедствия в местном районе, выяснить, кто нуждается в помощи.
 
-au14-job-name-msg-commander = Commander
+au14-job-name-msg-commander = Командир
 
-au14-job-name-msg-watchstander = Watch Stander
+au14-job-name-msg-watchstander = Смотреть Stander
 
 au14-job-prefix-msg-watchstander = WS
 
-au14-job-description-msg = You are a part of Marine Security Guard. You were called to ensure safety of UA Embassy in the colony.
+au14-job-description-msg = Вы являетесь частью морской охраны. Вас вызвали для обеспечения безопасности посольства УА в колонии.
 
-au14-job-greeting-msg = You are a part of Marine Security Guard.
-    You were called to ensure safety of UA Embassy on the colony.
-    You are NOT a part of GOVFOR nor hostile to them.
+au14-job-greeting-msg = Вы являетесь частью морской охраны.
+    Вас вызвали для обеспечения безопасности посольства УА на колонии.
+    Вы не являетесь частью GOVFOR И не враждебны к ним.
 
-au14-wysurv-greeting = Everything has gone wrong, this is a complete disaster.
+au14-wysurv-greeting = Все пошло не так, это полная катастрофа.
 
-    Ensure your survival at all costs, the knowledge you posess was paid for with many lifes.
+    Обеспечьте себе выживание любой ценой, знания, которые вы представляете, были оплачены многими жизнями.
 
-    Company's profit is your goal.
+    Прибыль компании – ваша цель.
 
-    Weyland-Yutani - building better worlds.
+    Вейланд-Ютани — построение лучших миров.
 
-au14-wysurv-description = You are whats left of the local Weyland-Yutani employees. Survive and ensure your knowledge reaches the company.
+au14-wysurv-description = Вы - то, что осталось от местных сотрудников Вейланд-Ютани. Выживите и убедитесь, что ваши знания достигают компании.
 
-au14-job-name-tweiasf-paratrooper = Rifleman
+au14-job-name-tweiasf-paratrooper = Стрелок
 
-au14-job-name-tweiasf-ce = Assault Engineer
+au14-job-name-tweiasf-ce = Штурмовой инженер
 
-au14-job-name-tweiasf-cm = Medical Technician
+au14-job-name-tweiasf-cm = Медицинский техник
 
-au14-job-name-tweiasf-tl = Team Lead
+au14-job-name-tweiasf-tl = Ведущая команда
 
-au14-job-prefix-iasf = 24/PARA
+au14-job-prefix-iasf = 24ПАРА
 
-au14-job-prefix-tweiasf-sl = 24/PARA TL
+au14-job-prefix-tweiasf-sl = 24PARA TL
 
-au14-job-name-tweiasf-co = Commander
+au14-job-name-tweiasf-co = Командир
 
 au14-job-prefix-tweiasf-co = 24/PARA CDR
 
-au14-job-name-tweiasf-pl = Fleet Air Arm Pilot
+au14-job-name-tweiasf-pl = Пилот Air Arm
 
 au14-job-prefix-tweiasf-pl = 24/PARA PL
 
-au14-job-description-twepara = You are a member of the Imperial Armed Space Forces 24th Parachute Regiment. Follow your orders.
+au14-job-description-twepara = Вы являетесь членом Императорских вооруженных космических сил. 24th Парашютный полк. Следуйте вашим приказам.
 
-au14-job-description-IASFsurv = You are a stranded member of the IASF 24th Parachute Regiment. Fight for Empress, country and also your life.
+au14-job-description-IASFsurv = Вы являетесь членом IASF 24th Парашютный полк. Боритесь за Императрицу, страну и свою жизнь.
 
-au14-job-description-IASFsurv-bosenmori = You are a stranded member of the IASF 24th Parachute Regiment who was training in the areas around the colony of Bosenmori Basho. Fight for your Empress, country and also your life.
+au14-job-description-IASFsurv-bosenmori = Вы являетесь членом IASF 24th Парашютный полк, который тренировался в районах вокруг колонии Босенмори Башо. Боритесь за свою Императрицу, страну и свою жизнь.
 
-au14-job-greeting-IASFsurv = You have been stranded in this colony, dropship out of fuel and almost out of ammunition
-    Most of your squad is dead, you are all thats left... For now
+au14-job-greeting-IASFsurv = Вы застряли в этой колонии, высадили корабль из топлива и почти из боеприпасов.
+    Большая часть вашего отряда мертва, вы все, что осталось. Пока что
 
-    You are a member of the Three World Empires Imperial Armed Space Forces, you are NEUTRAL to civilians and other countries and HOSTILE to the CLF.
+    Вы являетесь членом Имперских вооруженных космических сил трех мировых империй, вы являетесь НЕУТРАЛЬНЫМ для гражданских лиц и других стран и ХОСТИЛЬНЫМ для космических войск. CLF.
 
-au14-job-rules-IASFsurv = You are a member of the TWEs IASF, you are NEUTRAL to civilians and other countries and HOSTILE to the CLF.
-    You are fully aware of the threat after having witnessed it for several days.
+au14-job-rules-IASFsurv = Вы являетесь членом TWEs IASF, вы НЕУТРАЛЬНЫ для гражданских лиц и других стран и ХОСТИЛЬНЫ для гражданского населения. CLF.
+    Вы полностью осознаете угрозу после того, как были свидетелями ее в течение нескольких дней.
 
-cmu-job-name-iasf-mortar-gunner = Mortar Gunner
+cmu-job-name-iasf-mortar-gunner = Пулеметчик
 
-cmu-job-name-iasf-mortar-loader = Mortar Loader
+cmu-job-name-iasf-mortar-loader = Погрузчик минометов
 
-cmu-ghost-name-iasf-mortar-gunner = IASF Mortar Gunner
+cmu-ghost-name-iasf-mortar-gunner = Мортарный стрелок IASF
 
-cmu-ghost-name-iasf-mortar-loader = IASF Mortar Loader
+cmu-ghost-name-iasf-mortar-loader = Мортарный погрузчик IASF
 
-cmu-job-description-iasf-mortar = You are part of an IASF mortar team from the 24th Parachute Regiment, sent in to give the forces on the ground indirect fire support.
+cmu-job-description-iasf-mortar = Вы являетесь частью минометной команды IASF 24th Парашютный полк, посланный для оказания силам на земле косвенной огневой поддержки.
 
-cmu-job-greeting-iasf-mortar = Your mortar team has been sent in to support the operation. Find a safe firing position, get the L53A1 set up and take fire missions from the forces on the ground.
+cmu-job-greeting-iasf-mortar = Ваша минометная команда была отправлена для поддержки операции. Найдите безопасное место для стрельбы, получите L53A1 Создавайте и выполняйте огневые задачи из сил на земле.

@@ -37,8 +37,8 @@ chat-radio-cca = КЦА
 chat-radio-vai = VAI
 chat-radio-part = Продиджи
 
-chat-radio-govforfoxtrot = FOXT
+chat-radio-govforfoxtrot = Фокс
 
-chat-radio-opforvictor = VICT
+chat-radio-opforvictor = Жертва
 
-chat-radio-raiders = RAID
+chat-radio-raiders = рейд

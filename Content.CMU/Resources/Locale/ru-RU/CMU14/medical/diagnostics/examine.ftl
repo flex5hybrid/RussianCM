@@ -94,10 +94,10 @@ cmu-medical-examine-part-other = Другое
 cmu-medical-examine-part-other-left = Левая часть
 cmu-medical-examine-part-other-right = Правая часть
 
-cmu-medical-examine-bleed-tier-minor = minor
+cmu-medical-examine-bleed-tier-minor = незначительный
 
-cmu-medical-examine-bleed-tier-moderate = moderate
+cmu-medical-examine-bleed-tier-moderate = умеренный
 
-cmu-medical-examine-bleed-tier-severe = severe
+cmu-medical-examine-bleed-tier-severe = сильный
 
-cmu-medical-examine-bleed-tier-arterial = arterial
+cmu-medical-examine-bleed-tier-arterial = артериальный

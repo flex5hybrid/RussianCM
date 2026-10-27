@@ -5,24 +5,24 @@ cmu-ui-fax-subheading = { $count } { $count ->
    *[other] destinations
 } on the network
 
-cmu-ui-fax-tray-loaded = PAPER IN
+cmu-ui-fax-tray-loaded = Паперта
 
-cmu-ui-fax-tray-empty = NO PAPER
+cmu-ui-fax-tray-empty = Нет бумаги
 
-cmu-ui-fax-route = Route
+cmu-ui-fax-route = Маршрут
 
-cmu-ui-fax-from = From
+cmu-ui-fax-from = из
 
 cmu-ui-fax-to = To
 
-cmu-ui-fax-destinations = Destinations
+cmu-ui-fax-destinations = Направления
 
-cmu-ui-fax-search = Search destinations...
+cmu-ui-fax-search = Поисковые адреса...
 
-cmu-ui-fax-no-destinations = No other fax machines found. Press Refresh to look again.
+cmu-ui-fax-no-destinations = Других факсов не найдено. Нажмите Refresh, чтобы посмотреть еще раз.
 
-cmu-ui-fax-no-match = No destinations match that search.
+cmu-ui-fax-no-match = Ни один пункт назначения не соответствует этому поиску.
 
-cmu-ui-fax-selected = SELECTED
+cmu-ui-fax-selected = Избранный
 
-cmu-ui-fax-footer = Put paper in the tray, pick a destination, then Send. Copy prints a duplicate here.
+cmu-ui-fax-footer = Положите бумагу в лоток, выберите пункт назначения, затем отправьте. Здесь копия печатает дубликат.

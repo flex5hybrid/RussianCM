@@ -1,109 +1,109 @@
 cmu-mre-ship-mess-hall = Не хочется есть сухпаёк, когда в столовой есть нормальная еда.
 
-cmu-reagent-meat-protein-name = meat protein
+cmu-reagent-meat-protein-name = мясной протеин
 
-cmu-reagent-meat-protein-desc = Proteins found in various types of meat.
+cmu-reagent-meat-protein-desc = Белки содержатся в различных видах мяса.
 
-cmu-reagent-bread-name = bread
+cmu-reagent-bread-name = хлеб
 
-cmu-reagent-bread-desc = Cooked bread.
+cmu-reagent-bread-desc = Приготовленный хлеб.
 
-cmu-reagent-vegetable-name = vegetable
+cmu-reagent-vegetable-name = овощ
 
-cmu-reagent-vegetable-desc = Some sort of vegetable.
+cmu-reagent-vegetable-desc = Какой-то овощ.
 
-cmu-reagent-cheese-name = cheese
+cmu-reagent-cheese-name = сыр
 
-cmu-reagent-cheese-desc = This used to be milk.
+cmu-reagent-cheese-desc = Раньше это было молоко.
 
-cmu-reagent-plant-matter-name = plant matter
+cmu-reagent-plant-matter-name = растительное вещество
 
-cmu-reagent-plant-matter-desc = Some sort of plant.
+cmu-reagent-plant-matter-desc = Какое-то растение.
 
-cmu-reagent-fish-meat-name = fish meat
+cmu-reagent-fish-meat-name = Рыбье мясо
 
-cmu-reagent-fish-meat-desc = It used to swim.
+cmu-reagent-fish-meat-desc = Раньше он плавал.
 
-cmu-reagent-potato-name = potato
+cmu-reagent-potato-name = картофель
 
-cmu-reagent-potato-desc = Mashed and processed potato.
+cmu-reagent-potato-desc = Пюре и обработанный картофель.
 
-cmu-reagent-nuts-name = nuts
+cmu-reagent-nuts-name = орехи
 
-cmu-reagent-nuts-desc = Some sort of grinded nut, smells like almonds.
+cmu-reagent-nuts-desc = Какой-то измельченный орех, пахнет миндалем.
 
-cmu-reagent-noodles-name = noodles
+cmu-reagent-noodles-name = лапша
 
-cmu-reagent-noodles-desc = Cooked noodles.
+cmu-reagent-noodles-desc = Приготовленная лапша.
 
-cmu-reagent-fruit-name = fruit
+cmu-reagent-fruit-name = фрукты
 
-cmu-reagent-fruit-desc = Some sort of fruit.
+cmu-reagent-fruit-desc = Какой-то фрукт.
 
-cmu-reagent-mushroom-name = mushroom
+cmu-reagent-mushroom-name = гриб
 
-cmu-reagent-mushroom-desc = Some sort of fungus.
+cmu-reagent-mushroom-desc = Какой-то грибок.
 
-cmu-reagent-buckwheat-name = buckwheat
+cmu-reagent-buckwheat-name = гречневая крупа
 
-cmu-reagent-buckwheat-desc = A grain porridge made out of buckwheat.
+cmu-reagent-buckwheat-desc = Зерновая каша, сделанная из гречки.
 
-cmu-reagent-vegemite-name = vegemite
+cmu-reagent-vegemite-name = вегемит
 
-cmu-reagent-vegemite-desc = A thick yeast extract food spread: salty, slightly bitter, malty, with an umami flavour similar to beef bouillon and a hint of radiation.
+cmu-reagent-vegemite-desc = Распространилась густая пища из дрожжевого экстракта: соленая, слегка горькая, солодовая, с вкусом умами, похожим на говяжий бульон и намеком на радиацию.
 
-cmu-reagent-honey-name = honey
+cmu-reagent-honey-name = мед
 
-cmu-reagent-honey-desc = A natural sweet, viscous food substance composed mainly of fructose and glucose.
+cmu-reagent-honey-desc = Натуральное сладкое, вязкое пищевое вещество, состоящее в основном из фруктозы и глюкозы.
 
-cmu-reagent-hazelnut-beverage-name = chocolate hazelnut protein beverage
+cmu-reagent-hazelnut-beverage-name = шоколадный протеиновый напиток фундука
 
-cmu-reagent-hazelnut-beverage-desc = Powderized chocolate and hazelnut protein drink beverage, ready to be mixed with water.
+cmu-reagent-hazelnut-beverage-desc = Порошковый шоколад и белок фундука пьют напиток, готовый к смешиванию с водой.
 
-cmu-reagent-chocolate-beverage-name = chocolate protein beverage
+cmu-reagent-chocolate-beverage-name = шоколадный протеиновый напиток
 
-cmu-reagent-chocolate-beverage-desc = Powderized chocolate drink beverage, ready to be mixed with water.
+cmu-reagent-chocolate-beverage-desc = Порошкообразный шоколадный напиток, готовый к смешиванию с водой.
 
-cmu-reagent-orange-beverage-name = orange beverage
+cmu-reagent-orange-beverage-name = апельсиновый напиток
 
-cmu-reagent-orange-beverage-desc = Powderized electrolyte beverage with an orange flavor, ready to be mixed with water. Smells of, surprise surprise, oranges.
+cmu-reagent-orange-beverage-desc = Порошкообразный электролитный напиток с оранжевым вкусом, готовый к смешиванию с водой. Пахнет сюрпризом, апельсинами.
 
-cmu-reagent-lemon-lime-beverage-name = lemon-lime beverage
+cmu-reagent-lemon-lime-beverage-name = лимонно-лаймовый напиток
 
-cmu-reagent-lemon-lime-beverage-desc = Powderized electrolyte beverage with a lemon-lime flavor, ready to be mixed with water. Smells of, surprise surprise, lemons and limes.
+cmu-reagent-lemon-lime-beverage-desc = Порошкообразный электролитный напиток с лимонно-лаймовым вкусом, готовый к смешиванию с водой. Запахи, сюрпризы, лимоны и лаймы.
 
-cmu-reagent-grape-beverage-name = grape beverage
+cmu-reagent-grape-beverage-name = виноградный напиток
 
-cmu-reagent-grape-beverage-desc = Powderized electrolyte beverage with a grape flavor, ready to be mixed with water.
+cmu-reagent-grape-beverage-desc = Порошкообразный электролитный напиток с виноградным вкусом, готовый к смешиванию с водой.
 
-cmu-reagent-hazelnut-chocolate-drink-name = chocolate hazelnut drink
+cmu-reagent-hazelnut-chocolate-drink-name = Шоколадный напиток фундука
 
-cmu-reagent-hazelnut-chocolate-drink-desc = A creamy chocolate and hazelnut protein drink.
+cmu-reagent-hazelnut-chocolate-drink-desc = Сливочный шоколад и протеиновый напиток из фундука.
 
-cmu-can-needs-opener = { CAPITALIZE(THE($can)) } is sealed shut. You need a can opener, or a knife if you're desperate.
+cmu-can-needs-opener = { CAPITALIZE(THE($can)) } Он закрыт. Вам нужен открывалка или нож, если вы в отчаянии.
 
-cmu-can-unfold-opener = Unfold { THE($opener) } first.
+cmu-can-unfold-opener = свернуть { THE($opener) } Сначала.
 
-cmu-can-open-start = You start opening the can. { $hiss }
+cmu-can-open-start = Вы начинаете открывать банку. { $hiss }
 
-cmu-can-open-crude-start = You start crudely hacking the can open. { $hiss }
+cmu-can-open-crude-start = Вы начинаете грубо взламывать банку. { $hiss }
 
-cmu-can-hiss-nice = It makes a nice hiss.
+cmu-can-hiss-nice = От него отлично шипит.
 
-cmu-can-hiss-none = It doesn't make any hiss.
+cmu-can-hiss-none = Он не шипит.
 
-cmu-can-hiss-small = It makes a small hiss.
+cmu-can-hiss-small = Это немного шипит.
 
-cmu-can-opened = You open the can.
+cmu-can-opened = Открой банку.
 
-cmu-can-examine-sealed = It's sealed. Open it with a can opener or a knife.
+cmu-can-examine-sealed = Она запечатана. Откройте его открывалкой или ножом.
 
 cmu-mre-name-with-entree = {$mre} ({$entree})
 
-cmu-food-spread-examine = You can put this onto other food.
+cmu-food-spread-examine = Вы можете положить это на другую еду.
 
-cmu-food-spread-closed = Open { THE($spread) } first.
+cmu-food-spread-closed = Открыть { THE($spread) } Сначала.
 
-cmu-food-spread-empty = { CAPITALIZE(THE($spread)) } is empty.
+cmu-food-spread-empty = { CAPITALIZE(THE($spread)) } пустой.
 
-cmu-food-spread-full = You can't put any more onto { THE($food) }.
+cmu-food-spread-full = Ты не можешь больше ставить на { THE($food) }.
