@@ -78,3 +78,54 @@ insfor-sapper-snare-cutting = Вы начинаете разрезать пет�
 insfor-sapper-snare-cut-free = Петля перерезана, и вы падаете на землю.
 insfor-sapper-atm-message-title = Устройство для выкачивания средств
 insfor-sapper-atm-message-prompt = Оставьте сообщение на экране банкомата до завершения его самовосстановления (необязательно, до {$max} символов)
+
+insfor-sapper-workbench-window-title = Обсуждение Sapper's Workbench
+
+insfor-sapper-workbench-tab-gunsmithing = оружейный мастер
+
+insfor-sapper-workbench-tab-fabrication = Изготовление
+
+insfor-sapper-workbench-no-weapon-loaded = Никакого оружия
+
+insfor-sapper-workbench-take-weapon-button = Взять оружие
+
+insfor-sapper-workbench-attachment-slots = Игровые автоматы Attachment
+
+insfor-sapper-workbench-load-weapon-slots = Загрузите оружие, чтобы показать его слоты.
+
+insfor-sapper-workbench-buffs-debuffs = Баффы / Debuffs
+
+insfor-sapper-workbench-no-modifiers = Модификаторы крепления не применяются.
+
+insfor-sapper-workbench-empty = пустой
+
+insfor-sapper-workbench-slot = { $slot }: { $attachment }
+
+insfor-sapper-workbench-add = + Добавить
+
+insfor-sapper-workbench-remove = - Удалить
+
+insfor-sapper-workbench-materials = материалы
+
+insfor-sapper-workbench-no-materials-loaded = Нет загруженных материалов
+
+insfor-sapper-workbench-material = { $name }: { $count }
+
+insfor-sapper-workbench-eject = Катапультироваться
+
+insfor-sapper-workbench-loose-help = Ингредиенты помогают
+
+insfor-sapper-workbench-loose-help-description = Они должны лежать свободно на скамейке или рядом с ней, чтобы потребляться:
+
+insfor-sapper-workbench-ingredient = х{ $count } { $name }
+
+insfor-sapper-workbench-craft = ремесло
+
+insfor-sapper-workbench-no-materials = Нет материалов
+
+insfor-sapper-workbench-material-cost = { $name } { $count }
+
+cmu-sapper-atm-logins-leaked = The rig also dumps {$count} cached card {$count ->
+    [one] login
+   *[other] logins
+} with PINs. Use the rig in hand to read them.

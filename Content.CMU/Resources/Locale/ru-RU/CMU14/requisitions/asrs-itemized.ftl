@@ -101,3 +101,5 @@ cmu-asrs-seal-dispatch = ЗАПЕЧАТАТЬ И ОТПРАВИТЬ
 cmu-asrs-budget-prefix = БЮДЖЕТ:
 cmu-asrs-after-prefix = ПОСЛЕ:
 cmu-asrs-conveyor-crate = ▥  ЯЩИК { $number }  //  ЗАПЕЧАТАН
+
+cmu-asrs-seal-stamp = { $code } // Опечатанный

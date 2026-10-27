@@ -146,3 +146,157 @@ cmu-guide-entry-lore-ua-doves = «Голуби»
 cmu-guide-entry-lore-ua-hawks = «Ястребы»
 cmu-guide-entry-lore-ua-magpies = «Сороки»
 cmu-guide-entry-lore-ua-politics = Политика
+
+cmu-guide-entry-ship-weapons = Орбитальное оружие поддержки кораблей
+
+cmu-guide-entry-yautja-honor-code = Яутский кодекс чести
+
+cmu-guide-entry-yautja-honor-code-prey = Добыча
+
+cmu-guide-entry-yautja-honor-code-prey-caveats = Хищные пещеры
+
+cmu-guide-entry-yautja-honor-code-trophies = Трофеи и благосостояние добычи
+
+cmu-guide-entry-yautja-honor-code-weapons = Оружие и инструменты
+
+cmu-guide-entry-yautja-honor-code-hunting-grounds = Охотничьи земли
+
+cmu-guide-entry-yautja-honor-code-preserve = Охотничий заповедник
+
+cmu-guide-entry-yautja-honor-code-blooded = Другие Кровавые
+
+cmu-guide-entry-yautja-honor-code-youngbloods = Молодая кровь
+
+cmu-guide-entry-yautja-honor-code-thralls = Троллс
+
+cmu-guide-entry-yautja-honor-code-gear-recovery = Восстановление груши
+
+cmu-guide-entry-yautja-honor-code-lodges = Ложи
+
+cmu-guide-entry-yautja-honor-code-hellhounds = Адские псы
+
+cmu-guide-entry-yautja-honor-code-ancients = Привилегия древних
+
+cmu-guide-entry-yautja-honor-code-gamemodes = Игровые режимы
+
+cmu-guide-entry-yautja-honor-code-spirit = Дух Белого списка
+
+cmu-guide-entry-sop-physical-standards = Физические стандарты
+
+cmu-guide-entry-comms-anprc-guided = AN/PRC-117GРуководящая группа
+
+cmu-guide-entry-comms-anprc-expert = AN/PRC-117G: Экспертная панель
+
+cmu-guide-entry-antag-rider = Всадник
+
+cmu-guide-entry-hearing-loss = Потеря слуха
+
+cmu-guide-entry-cmu = Путеводитель
+
+cmu-guide-entry-mortar = миномет
+
+cmu-guide-entry-forensics = Судебная экспертиза
+
+cmu-guide-entry-law-enforcement = Колония Правоохранительные органы
+
+cmu-guide-entry-engineering = Инженерное дело
+
+cmu-guide-entry-intel-objectives = Цели и Intel
+
+cmu-guide-entry-objectives = Цели
+
+cmu-guide-entry-objective-points = Точки
+
+cmu-guide-entry-intel = Разведка
+
+cmu-guide-entry-eng-gear = Инженерное оборудование
+
+cmu-guide-entry-eng-construction = Строительство
+
+cmu-guide-entry-eng-power = Сила
+
+cmu-guide-entry-eng-atmos = атмосфера
+
+cmu-guide-entry-eng-hazards = Огонь и радиация
+
+cmu-guide-entry-eng-fortify = Укрепления
+
+cmu-guide-entry-eng-sentries = часовня
+
+cmu-guide-entry-eng-breach = Проповедь и разрушение
+
+cmu-guide-entry-eng-vehicles = Ремонт автомобиля
+
+cmu-guide-entry-eng-synths = Ремонт синтетики
+
+cmu-guide-entry-eng-ordnance = Оружие
+
+cmu-guide-entry-towers = Сенсорные и сенсорные башни
+
+cmu-guide-entry-law-roles = Роли и Gear
+
+cmu-guide-entry-law-basics = Основы колониального права
+
+cmu-guide-entry-law-dispatch = Радио и 911 отправка
+
+cmu-guide-entry-law-records = Уголовные рекорды
+
+cmu-guide-entry-law-arrests = Аресты и удержание
+
+cmu-guide-entry-defibrillators = Дефибрилляторы
+
+cmu-guide-entry-medical = Медицина
+
+cmu-guide-entry-medical-infantry = Оригинальное название: Infantry First Aid
+
+cmu-guide-entry-medical-diagnosis = диагностика
+
+cmu-guide-entry-medical-wounds = Раны и кровотечение
+
+cmu-guide-entry-medical-blood = Кровь и переливание
+
+cmu-guide-entry-medical-field-care = Смешивание полевой обработки
+
+cmu-guide-entry-medical-bones = Переломы
+
+cmu-guide-entry-medical-pain = Боль
+
+cmu-guide-entry-medical-organs = Органы
+
+cmu-guide-entry-medical-surgery = хирургия
+
+cmu-guide-entry-surgery-opening = Открытие и закрытие
+
+cmu-guide-entry-surgery-fractures = хирургия перелома
+
+cmu-guide-entry-surgery-bleeding = Кровотечение, ожоги и осложнения
+
+cmu-guide-entry-surgery-organs = Хирургия органов
+
+cmu-guide-entry-surgery-limbs = Хирургия конечностей
+
+cmu-guide-entry-medical-resuscitation = реанимация
+
+cmu-guide-entry-medical-machines = Медицинские машины
+
+cmu-guide-entry-medications = Лекарства
+
+cmu-guide-entry-meds-brute = Грубые лекарства
+
+cmu-guide-entry-meds-burn = Сжигать лекарства
+
+cmu-guide-entry-meds-toxin = Лекарства от токсинов
+
+cmu-guide-entry-meds-suffocation = Лекарства от удушья
+
+cmu-guide-entry-meds-pain = Обезболивающие
+
+cmu-guide-entry-meds-organs = Органические и костные лекарства
+
+cmu-guide-entry-meds-other = Другие лекарства
+
+cmu-guide-entry-overwatch = Overwatch
+
+cmu-guide-entry-fob-security = Отряд безопасности FOB
+
+cmu-guide-entry-skills = Навыки

@@ -42,3 +42,73 @@ cmu-robotic-limb-repair-burn-finish-user = Вы ремонтируете обг�
 cmu-robotic-limb-repair-burn-finish-others = { THE($user) } ремонтирует обгоревшую проводку в { $limb } у { THE($target) } с помощью { THE($tool) }.
 cmu-medical-tourniquet-applied-stump = Жгут наложен на культю.
 cmu-medical-tourniquet-verb-remove-stump = Снять жгут с культи
+
+cmu-medical-tourniquet-no-selected-limb = Нет ни руки, ни ноги, чтобы нанести жгут туда, куда вы нацеливаетесь.
+
+cmu-medical-cast-removed-early = Литье снимается до того, как кость закончит установку.
+
+cmu-medical-splint-verb-remove = Удалить шину
+
+cmu-medical-splint-removing = Удаление шины...
+
+cmu-medical-splint-removed = Шпилька удаляется.
+
+cmu-medical-body-part-picker-header = Выберите часть для перевязки
+
+cmu-medical-body-part-picker-empty = Никаких ран от повязки.
+
+cmu-medical-body-part-picker-entry = { $part } — { $count } { $count ->
+    [one] рана
+   *[other] раны
+}
+
+cmu-medical-body-part-sided = { $side } { $type }
+
+cmu-medical-body-part-side-left = Левый
+
+cmu-medical-body-part-side-right = Правильно.
+
+cmu-medical-body-part-type-other = другой
+
+cmu-medical-body-part-type-torso = Туловище
+
+cmu-medical-body-part-type-head = Голова
+
+cmu-medical-body-part-type-arm = Рука
+
+cmu-medical-body-part-type-hand = Кисть
+
+cmu-medical-body-part-type-leg = Нога
+
+cmu-medical-body-part-type-foot = Ступня
+
+cmu-medical-body-part-type-tail = Хвост
+
+cmu-wound-arterial-spray = Кровь выплескивается из тебя { $part } В горячих рывках!
+
+cmu-wound-arterial-spray-stump = Кровь брызгает из пня, где ты { $limb } Раньше было!
+
+cmu-wound-stump-limb = { $symmetry ->
+    [left] левый{" "}
+    [right] правильно{" "}
+   *[other] {""}
+}{ $type ->
+    [arm] рука
+    [hand] рука
+    [leg] нога
+    [foot] нога
+   *[other] конечность
+}
+
+cmu-internal-bleed-pain = Вы чувствуете колющую боль в своем {$part}!
+
+cmu-shrapnel-move-pain = Вы чувствуете, как осколки копаются в вашем {$part} Когда ты двигаешься.
+
+cmu-body-part-name = { $side ->
+        [left] левый { $type }
+        [right] правильно { $type }
+       *[none] { $type ->
+            [torso] грудь
+           *[other] { $type }
+        }
+    }

@@ -62,3 +62,5 @@ stamp-component-stamped-name-au14-clfcel = Лидер ячейки КОФ
 
 stamp-component-stamped-name-au14-approve = ОДОБРЕНО
 stamp-component-stamped-name-au14-deny = ОТКАЗАНО
+
+stamp-component-stamped-name-au14-depadmin = Заместитель администратора

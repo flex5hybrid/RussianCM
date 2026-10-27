@@ -32,3 +32,13 @@ cmu-upp-division-kommissar-prefix = DKM
 cmu-upp-kommissar-supervisors = политическое управление Союза
 cmu-upp-kommissar-greeting = Вы политический офицер Союза, прикомандированный к линейной пехоте. Следите за солдатами, следите за офицерами и добивайтесь исполнения воли Союза независимо от того, что происходит на поле боя.
 cmu-upp-kommissar-rules = Вы комиссар СПН. Вы обычный человек и можете погибнуть от любой угрозы. Прежде всего проводите волю Союза среди его собственных солдат, а уже затем — среди его врагов.
+
+cmu-job-title-uppline-rpg-gunner = РПГ Gunner
+
+cmu-job-title-uppline-rpg-loader = Погрузчик RPG
+
+cmu-uppline-name-rpg-gunner = UPP Морская пехота RPG Gunner
+
+cmu-uppline-name-rpg-loader = UPP Морская пехота RPG Loader
+
+cmu-uppline-description-rpg = Вы являетесь частью UPP Команда морской пехоты РПГ, отправленная с HJRA-12 выбить вражеские доспехи и укрепления для UPP Силы на земле.

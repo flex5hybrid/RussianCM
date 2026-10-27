@@ -25,3 +25,5 @@ tunable-radio-verb-clear = Очистить настроенную частот�
 tunable-radio-cleared = Настроенная частота гарнитуры очищена.
 
 tunable-radio-language-no-radio = { $language } невозможно передать по радиосети.
+
+tunable-radio-current-freq-placeholder = ФРЕК: -----

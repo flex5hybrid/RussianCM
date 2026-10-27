@@ -488,3 +488,7 @@ chat-radio-cmu-yautja-stranded = STRND
 
 cmu-yautja-badblood-weapon-choice-title = Выберите оружие
 cmu-yautja-badblood-weapon-choice-warning = Это действие необратимо. Вы уверены?
+
+cmu-yautja-action-honor-roar-desc = Рёв, оглушительный и оглушительный близлежащая добыча.
+
+cmu-yautja-action-hunting-leap-desc = Скачайте по цели и нанесите удар своим оружием ближнего боя.

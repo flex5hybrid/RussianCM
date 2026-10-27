@@ -207,3 +207,7 @@ origin-icsc-pakistan-description = Родом из Пакистана, неза�
 # Происхождение — Prodigy
 origin-prodigy-newsiam-name = Prodigy - Новый Сиам
 origin-prodigy-newsiam-description = Родом из Нового Сиама, территории Prodigy Security Corp.
+
+origin-ua-artificial-womb-name = UA - Искусственная матка
+
+origin-ua-artificial-womb-description = Вы выросли в искусственной утробе для военной службы. Как солдат AW, у вас должно быть оружие, произведенное до войны.2010 или имя создателя оружия как ваша фамилия. Фамилии не должны включать цифры или символы и должны быть одним словом.

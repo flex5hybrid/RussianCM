@@ -206,3 +206,7 @@ cmu-reagent-property-desc-duration = Неизвестным способом у�
 cmu-reagent-property-name-encephaloprasive = Энцефалопразивное
 cmu-reagent-property-desc-encephaloprasive = Значительно увеличивает амплитуду гамма- и бета-волн мозга, позволяя носителю транслировать свои мысли.
 cmu-reagent-property-code-yautjahemogenic = ЯГМ
+
+cmu-reagent-property-name-irritating = раздражающий
+
+cmu-reagent-property-desc-irritating = Воспаляет слизистые оболочки при контакте, вызывая кашель, разрывы и временную слепоту. Заблокированы противогазы и внутренности. Активный ингредиент слезоточивого газа.

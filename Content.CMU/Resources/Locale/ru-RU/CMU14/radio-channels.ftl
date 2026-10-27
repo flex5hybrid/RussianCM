@@ -36,3 +36,9 @@ chat-radio-icsc = НКВС
 chat-radio-cca = КЦА
 chat-radio-vai = VAI
 chat-radio-part = Продиджи
+
+chat-radio-govforfoxtrot = Фокс
+
+chat-radio-opforvictor = Жертва
+
+chat-radio-raiders = рейд

@@ -186,3 +186,13 @@ cmu-trait-auto-ignore-desc = Если вы присоединяетесь к р�
 cmu-trait-category-addictions = Зависимости
 
 cmu-trait-category-phobias = Страхи и фобии
+
+cmu-ui-options-movement = Движение
+
+cmu-ui-options-tile-movement = Движение плитки
+
+cmu-ui-options-tile-movement-tooltip = Перейдите от плитки к плитке вместо того, чтобы свободно ходить, как предки, которые были до вас.
+
+cmu-ui-options-tile-movement-walk-only = Движение плитки во время ходьбы
+
+cmu-ui-options-tile-movement-walk-only-tooltip = Переходите от плитки к плитке во время ходьбы и свободно во время бега. Движение плитки выше перекрывает это.

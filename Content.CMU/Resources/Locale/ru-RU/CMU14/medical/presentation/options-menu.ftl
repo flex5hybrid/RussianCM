@@ -12,3 +12,5 @@ ui-options-function-cmu-target-body-zone-right-leg = Выбрать правую
 ui-options-function-cmu-inspect-injuries = Осмотреть травмы
 ui-options-function-cmu-open-medical-crafting-menu = Открыть меню медицинского крафта
 ui-options-function-cmu-toggle-shoot-down-z-level = Переключить стрельбу на Z-уровень ниже
+
+ui-options-cmu-zlevels-look-aim = Стреляйте там, где вы смотрите через Z-уровни (выключено: используйте горячий ключ для сбивания)

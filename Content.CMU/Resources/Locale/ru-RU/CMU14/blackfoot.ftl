@@ -73,3 +73,85 @@ cmu-blackfoot-fuel-pump-packed = Топливный насос «Блэкфут�
 cmu-blackfoot-fuel-pump-mount-hint = Поместите этот ящик на развёрнутую площадку «Блэкфута» и закрепите гаечным ключом в гнезде топливного насоса.
 
 cmu-blackfoot-fuel-pump-mounted = Топливный насос «Блэкфута» закреплён на посадочной площадке.
+
+cmu-blackfoot-rear-door-control-unlinked = Это управление не связано с задней дверью Blackfoot.
+
+cmu-blackfoot-rear-door-opened = Задняя дверь открылась.
+
+cmu-blackfoot-rear-door-closed = Задняя дверь закрыта.
+
+cmu-blackfoot-rear-door-board-blocked = Откройте заднюю дверь перед посадкой сзади.
+
+cmu-blackfoot-rear-door-exit-blocked = Откройте заднюю дверь перед выходом сзади.
+
+cmu-blackfoot-rear-door-airborne-exit-blocked = Блэкфут движется слишком быстро, чтобы выпрыгнуть.
+
+cmu-blackfoot-landing-pad-pack-hint = Используйте инструменты для упаковки посадочной площадки Blackfoot.
+
+cmu-blackfoot-landing-pad-unlinked = Ни одна развернутая посадочная площадка Blackfoot не связана.
+
+cmu-blackfoot-landing-pad-no-aircraft = Ни один Блэкфут не припаркован на посадочной площадке.
+
+cmu-blackfoot-landing-pad-service-started = Начался цикл дозаправки и подзарядки Blackfoot.
+
+cmu-blackfoot-landing-pad-recharge-started = Связанного топливного насоса обнаружено не было, начался цикл подзарядки Blackfoot.
+
+cmu-blackfoot-landing-pad-service-stopped = Цикл дозаправки и подзарядки Blackfoot остановился.
+
+cmu-blackfoot-landing-pad-invalid-ground = Посадочная площадка должна быть развернута на действительной земле.
+
+cmu-blackfoot-landing-pad-clear-area = Посадочная площадка нуждается в ясном 3x3 Зона развертывания.
+
+cmu-blackfoot-flight-computer-title = Летный компьютер Blackfoot
+
+cmu-blackfoot-flight-computer-pad-no-link = Пад: нет ссылки
+
+cmu-blackfoot-flight-computer-pad-aircraft = Пад: самолет припаркован
+
+cmu-blackfoot-flight-computer-pad-deployed = Пад: развернутый
+
+cmu-blackfoot-flight-computer-pad-none = Pad: нет развернутого планшета
+
+cmu-blackfoot-flight-computer-pump-no-link = Топливный насос: нет связи
+
+cmu-blackfoot-flight-computer-pump-linked = Топливный насос: подключен
+
+cmu-blackfoot-flight-computer-pump-missing = Топливный насос: отсутствует
+
+cmu-blackfoot-flight-computer-pump-no-pad = Топливный насос: нет прокладки
+
+cmu-blackfoot-flight-computer-aircraft-none = Самолеты: нет
+
+cmu-blackfoot-flight-computer-aircraft-linked = Оригинальное название: Blackfoot Linked
+
+cmu-blackfoot-flight-computer-fuel = топливо
+
+cmu-blackfoot-flight-computer-battery = батарея
+
+cmu-blackfoot-flight-computer-meter-empty = { $name }: --
+
+cmu-blackfoot-flight-computer-meter-value = { $name }: { $value }/{ $max }
+
+cmu-blackfoot-flight-computer-start-refuel = Начать заправку
+
+cmu-blackfoot-flight-computer-stop-refuel = Остановить заправку
+
+cmu-blackfoot-flight-computer-start-recharge = Начать подзарядку
+
+cmu-blackfoot-flight-computer-stop-recharge = Прекратить подзарядку
+
+cmu-blackfoot-weapon-stowed = Блэкфут уложен.
+
+cmu-blackfoot-weapon-taking-off = Оружие Blackfoot защищено во время взлета.
+
+cmu-blackfoot-weapon-landing = Оружие Blackfoot защищено во время посадки.
+
+cmu-blackfoot-weapon-crashed = Блэкфут слишком поврежден, чтобы стрелять.
+
+cmu-blackfoot-weapon-invalid-state = Блэкфут не может стрелять в текущем состоянии полета.
+
+cmu-blackfoot-weapon-stealth = Блэкфут не может стрелять, пока скрытность активна.
+
+cmu-blackfoot-weapon-rear-door = Откройте заднюю дверь, прежде чем стрелять из дверного пистолета.
+
+cmu-blackfoot-weapon-launcher-airborne = Пусковые установки Blackfoot могут стрелять только в воздухе.

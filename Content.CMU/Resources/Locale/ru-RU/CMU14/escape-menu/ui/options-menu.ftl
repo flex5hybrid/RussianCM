@@ -52,3 +52,67 @@ cmu-ui-setup-later = Напомнить в следующий раз
 cmu-ui-setup-save = Сохранить и продолжить
 cmu-ui-setup-open = Открыть настройку интерфейса
 cmu-ui-options-examine-wounds-in-chat = Показывать ранения в чате при осмотре, как в CM13
+
+cmu-ui-options-identification = Идентификация
+
+cmu-ui-options-fof-unidentified-marker = Показать вопросительные знаки для незнакомой вражеской формы в ФОФ
+
+cmu-ui-options-fof-unidentified-marker-tooltip = Показывает вопросительный знак над живыми врагами, униформа которых не выдана и не продана вашим взводом. Работает без снаряжения HUD и никогда не отмечает товарищей по команде или мертвые тела.
+
+cmu-ui-options-temperature-fahrenheit = Показать температуру в Фаренгейте
+
+cmu-ui-options-temperature-fahrenheit-tooltip = Переключает медицинские сканеры, мониторы пациентов, консоли Atmos и анализатор газа на показания Фаренгейта.
+
+cmu-ui-options-chat-reset-to-local = Переключите чат обратно в Local/Dead после отправки
+
+cmu-ui-options-chat-reset-to-local-tooltip = После того, как вы отправляете сообщение на любой другой канал, окно чата возвращается в Local или в Dead chat, если вы призрак.
+
+cmu-ui-options-chat-center-input = Вход в чат центра при вводе как в CM13
+
+cmu-ui-options-chat-center-input-tooltip = Нажатие клавиши чата перемещает текстовое поле в середину экрана. Он возвращается, когда вы отправляете или отменяете сообщение.
+
+cmu-ui-options-popups-in-chat = Показать на экране всплывающие окна в чате
+
+cmu-ui-options-popups-in-chat-tooltip = Копиирует каждое всплывающее сообщение, например, «Вы не можете достичь этого», в свой журнал чата.
+
+cmu-ui-options-hide-popups-on-screen = Спрятать всплывающие окна на экране
+
+cmu-ui-options-hide-popups-on-screen-tooltip = Препятствует появлению всплывающих сообщений на экране. Включите «Показать всплывающие окна на экране в чате», чтобы увидеть их только в чате.
+
+cmu-ui-options-chat-speech-sounds = Играйте в звуки речи, когда люди говорят
+
+cmu-ui-options-chat-speech-sounds-tooltip = Короткий голос звучит, когда кто-то рядом говорит. Отключение этого влияет только на то, что вы слышите.
+
+cmu-ui-options-privacy = конфиденциальность
+
+cmu-ui-options-hide-round-end-username = Спрячьте мое имя пользователя на круглом экране
+
+cmu-ui-options-hide-round-end-username-tooltip = Другие игроки видят вашего персонажа в конце раунда, но не в аккаунте, в котором он играл.
+
+cmu-ui-options-hide-examine-tooltip = Hide the shift-click explore popup смотреть онлайн
+
+cmu-ui-options-hide-examine-tooltip-tooltip = Обследование больше не открывает всплывающее окно. Включите «Эхо всего, что вы изучаете в чате», чтобы читать экзамены в чате.
+
+cmu-ui-options-hide-cassette-music-notes = Спрятать музыкальные ноты над слушателями кассет
+
+cmu-ui-options-hide-cassette-music-notes-tooltip = Хватит рисовать плавающие музыкальные ноты над людьми, которые слушают кассетный плеер.
+
+cmu-ui-options-interface = Интерфейс
+
+cmu-ui-options-gameplay = Геймплей
+
+cmu-ui-options-popups-examine = Всплывающие окна и осмотр
+
+cmu-ui-options-screen-shake = Скриншоты
+
+cmu-ui-options-sound = Звук звука
+
+cmu-ui-options-visuals = Визуал
+
+cmu-ui-options-vault-on-bump = Убежище, войдя в уступы и перила
+
+cmu-ui-options-vault-on-bump-tooltip = Войдя в выступ или перила, вы можете переступить через него. Столы и баррикады остались без внимания. Продолжайте толкать его, чтобы закончить, или отойдите, чтобы отменить.
+
+cmu-ui-options-no-shake-when-resting = Оставайтесь на месте, когда отдыхаете
+
+cmu-ui-options-no-shake-when-resting-tooltip = Пока ты лежишь нарочно, другие не могут встряхнуть тебя. Быть ошеломленным, сбитым с ног или без сознания все еще позволяет им.

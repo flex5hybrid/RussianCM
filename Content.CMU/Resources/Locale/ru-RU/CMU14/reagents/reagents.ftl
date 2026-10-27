@@ -44,3 +44,35 @@ reagent-name-purple-plasma = Фиолетовая плазма
 reagent-desc-purple-plasma = Плазма с фиолетовым оттенком...
 reagent-name-royal-plasma = Королевская плазма
 reagent-desc-royal-plasma = Тёмно-фиолетовая плазма...
+
+reagent-name-botanical-ammonia = Растительный аммиак
+
+reagent-desc-botanical-ammonia = Аммиак, полученный из растительного вещества. Кормят посевы, отравляют экипаж.
+
+reagent-name-botanical-diethylamine = Диэтиламин на растительной основе
+
+reagent-desc-botanical-diethylamine = Мощное удобрение, дистиллированное из растительного вещества.
+
+reagent-name-botanical-unstable-mutagen = Растительный неустойчивый мутаген
+
+reagent-desc-botanical-unstable-mutagen = Мутагенное соединение, извлеченное из мутировавшей флоры. Поощряет раковые образования у людей.
+
+reagent-name-botanical-phenol = Фенол растительного происхождения
+
+reagent-desc-botanical-phenol = Фенол растительного происхождения. Пахнет виски и ломает нервы.
+
+reagent-name-botanical-amatoxin = Растительный аматоксин
+
+reagent-desc-botanical-amatoxin = Яд, полученный из грибов, который облагает организм налогами, чем дольше он задерживается.
+
+reagent-name-oleoresin-capsicum = Oleoresin capsicum
+
+reagent-desc-oleoresin-capsicum = Концентрированный экстракт перца, используемый в перцовом спрее. Очень болезненно в глазах.
+
+reagent-name-capsicum-neutralizer = нейтрализатор Capsicum
+
+reagent-desc-capsicum-neutralizer = Успокаивающий солевой раствор, нейтрализующий перцовый спрей.
+
+reagent-name-cmu-tear-gas = слезоточивый газ
+
+reagent-desc-cmu-tear-gas = Лахриматорный агент. Безвредный в клюве, несчастный как дым.

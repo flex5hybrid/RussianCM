@@ -106,3 +106,206 @@ admin-console-trade-tax-section = -- Налог на продажу посыло
 admin-console-current-trade-tax = Текущий налог на продажу посылок: { $percent }%
 admin-console-trade-tax-description = Берётся из суммы, которую дрон платит за посылку, проданную на торговой платформе. Эта доля уходит в бюджет колонии, остальное получает продавец.
 admin-console-trade-tax-announcement = Налог колонии на продажу посылок установлен в { $percent }%. Эта доля от каждой посылки, проданной на торговой платформе, уходит колонии.
+
+colony-economy-sales-tax = Налог с продаж: { $percent }%
+
+colony-economy-income-tax = Подоходный налог: { $percent }%
+
+colony-economy-transit-tariff = Транзитный тариф: { $percent }%
+
+colony-economy-active-embargoes = Активные эмбарго: { $factions }
+
+colony-economy-no-embargoes = Эмбарго: нет
+
+colony-economy-active-trade-pacts = Активные торговые пакты: { $factions }
+
+colony-economy-no-trade-pacts = Торговые соглашения: нет
+
+colony-economy-overview = - Обзор экономики колонии -
+
+colony-economy-third-party-support = Сторонняя поддержка -
+
+colony-economy-open-third-party-menu = Открытое стороннее меню
+
+colony-economy-unknown-faction = Неизвестная фракция
+
+colony-economy-apply = Применять
+
+admin-console-title = Консоль администрации
+
+admin-console-colony-budget = Бюджет колонии: ${ $amount }
+
+admin-console-sales-tax-section = - Налог с продаж -
+
+admin-console-current-sales-tax = Текущий налог с продаж: { $percent }%
+
+admin-console-sales-tax-description = Применяется к денежным поставщикам и корпоративным заказам ASRS. Налоговые поступления идут в колониальный бюджет.
+
+admin-console-new-tax = Новый налог0–50%):
+
+admin-console-tax-placeholder = Например. 10
+
+admin-console-income-tax-section = - Налог на прибыль -
+
+admin-console-current-income-tax = Текущий подоходный налог: { $percent }%
+
+admin-console-income-tax-description = Вычитается из выплат заработной платы и корпоративных денежных средств. Доходы идут в колониальный бюджет.
+
+admin-console-announcement-sender = Администрация
+
+admin-console-sales-tax-announcement = Налог с продаж колоний установлен { $percent }%.
+
+admin-console-income-tax-announcement = Налог на доходы колонии установлен { $percent }Это влияет на выплаты заработной платы и корпоративные изъятия.
+
+corporate-console-title = Консоль по корпоративным вопросам
+
+corporate-console-budget = Корпоративный бюджет: ${ $amount }
+
+corporate-console-withdraw-section = - Снять наличные -
+
+corporate-console-transit-tariff-section = - Транзитный тариф -
+
+corporate-console-current-transit-tariff = Текущий транзитный тариф: { $percent }%
+
+corporate-console-transit-tariff-description = Процент от всех поданных на хранение выплат, который идет в корпоративный бюджет вместо колонии.
+
+corporate-console-new-tariff = Новый тариф0–50%):
+
+corporate-console-tariff-placeholder = Например. 15
+
+corporate-console-withdraw-tax-note = Примечание: Выводы подлежат { $percent }% подоходный налог.
+
+corporate-console-withdraw-no-tax = Нет подоходного налога на снятие средств.
+
+corporate-console-announcement-sender = Корпоративные вопросы
+
+corporate-console-tariff-announcement = Корпоративный транзитный тариф установлен { $percent }Выплаты в колонию были скорректированы.
+
+budget-console-title = Бюджетная консоль
+
+budget-console-current-budget = Текущий бюджет: { $amount }
+
+budget-console-withdraw-cash = Вывод денежных средств:
+
+budget-console-dispense-salaries = Раздавать все зарплаты
+
+budget-console-transfer-department = Перевод в отдел:
+
+budget-console-amount-placeholder = Сумма
+
+budget-console-department-entry = { $department } (Бюджет: $){ $amount })
+
+budget-console-transfer = передача
+
+budget-console-no-departments = Никаких отделов не найдено.
+
+cash-vendor-credit = Кредит:
+
+cash-vendor-amount = ${ $amount }
+
+cash-vendor-scan-id = Идентификатор сканера
+
+cash-vendor-clear-department = Чистый Депт
+
+cash-vendor-return-change = Вернуться назад Изменение
+
+cash-vendor-department-budget = Бюджет госбюджета:
+
+cash-vendor-department-budget-value = ${ $amount } ({ $department })
+
+cash-vendor-search-placeholder = Поиск...
+
+cash-vendor-footer-hint = Вставьте наличные или носите свой идентификатор, затем выберите пункт.
+
+cash-vendor-prices-include-tax = Цены, в т.ч. налог
+
+cash-vendor-id-account = ID аккаунт:
+
+cash-vendor-insufficient-cash = Не хватает наличных, и нет удостоверения личности, чтобы взимать с остальных.
+
+cash-vendor-insufficient-funds = Недостаток средств на ID-карте.
+
+cash-vendor-card-locked = Ваша ID-карта заблокирована.
+
+cash-vendor-card-charged = ${ $amount } Списан с вашей ID-карты.
+
+cash-vendor-sales-tax = Налог с продаж: { $percent }%
+
+cash-vendor-no-sales-tax = Нет налога с продаж
+
+cash-vendor-buy = Купить
+
+cash-vendor-no-items = Никаких предметов.
+
+cmu-economy-sales-tax = Налог с продаж
+
+cmu-economy-income-tax = Подоходный налог
+
+cmu-economy-transit-tariff = Транзитный тариф
+
+cmu-economy-embargoes = Стыд
+
+cmu-economy-trade-pacts = Торговые пакты
+
+cmu-economy-none = Нет
+
+cmu-corporate-heading = Корпоративные продукты
+
+cmu-corporate-subheading = COLONY LIAISON OFFICE // Транзит и поддержка
+
+cmu-corporate-treasury = Корпоративное Казначейство
+
+cmu-corporate-withdraw-tax = Вывод средств { $percent }% подоходный налог колонии.
+
+cmu-corporate-withdraw-no-tax = Выводы в настоящее время не облагаются налогом.
+
+cmu-corporate-tariff = Транзитный тариф
+
+cmu-corporate-current-tariff = Текущая ставка
+
+cmu-corporate-exact = Точная ставка0-{ $max }%)
+
+cmu-corporate-apply = ПРИМЕЧАНИЕ
+
+cmu-corporate-tariff-announced = Каждое изменение тарифа объявляется колониальным.
+
+cmu-corporate-support = Корпоративная поддержка
+
+cmu-corporate-support-hint = Звонок по корпоративной безопасности, синтетикам или подрядчикам, оплачивается из корпоративного бюджета.
+
+cmu-corporate-footer = Тарифный доход уплачивается в корпоративный бюджет с каждого представления.
+
+cmu-budget-heading = Колонский буджет
+
+cmu-budget-subheading = Колонная траектория // АДМИНИСТРАЦИЯ
+
+cmu-budget-treasury = Минфин
+
+cmu-budget-payroll = Оплата труда
+
+cmu-budget-payroll-hint = Платит сотрудникам каждого отдела, из собственного бюджета каждого департамента.
+
+cmu-budget-dispense = ДИСПЕНСА ВСЕХ САЛАРИЙ
+
+cmu-budget-dispense-confirm = КОНФИРМ ПЕЙДЕЙ
+
+cmu-budget-departments = Департаменты
+
+cmu-budget-department-count = { $count ->
+    [one] 1 ДЕПАРТМЕНТ
+   *[other] { $count } ДЕПАРТМЕНТЫ
+}
+
+cmu-budget-transfer-amount = Земельный переход
+
+cmu-budget-transfer = Трансфер
+
+cmu-budget-department-budget = Бюджет { $amount }
+
+cmu-budget-total = Ведомые департаментами
+
+cmu-budget-footer = Переводы переводят деньги из бюджета колонии в бюджет департамента.
+
+cmu-cash-vendor-credit = КРЕДИТ
+
+cmu-cash-vendor-other = другой

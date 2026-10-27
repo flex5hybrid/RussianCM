@@ -85,3 +85,47 @@ faction-roster-print-content = [head=2]ЛИЧНОЕ ДЕЛО[/head]
 
     {"["}bold]Общие сведения[/bold]
     {$general}
+
+detailed-examine-verb-message = Посмотрите их подробное описание персонажа.
+
+faction-roster-console-heading = ПЕРСОНАЛЬНЫЙ РОСТЕР
+
+faction-roster-console-count-filtered = { $shown } из { $count } В поле
+
+faction-roster-console-search = Поиск по имени или должности...
+
+faction-roster-console-empty = Ни одного человека на поле
+
+faction-roster-console-no-match = Никакого личного контакта
+
+faction-roster-console-open = Открыть
+
+faction-roster-console-footer = Выберите запись, чтобы открыть полное досье.
+
+faction-roster-dossier-subheading = { $job } ЛИЧНОЙ ДОССИЕР
+
+faction-roster-dossier-short-examine = Взгляд с высоты
+
+faction-roster-dossier-statistics = Жизненная статистика
+
+faction-roster-dossier-not-recorded = Не записано
+
+faction-roster-dossier-none = Ничего в деле.
+
+faction-roster-dossier-footer = Записи являются самоотчетными и могут быть неполными.
+
+cmu-edit-description-verb = Редактировать описание
+
+cmu-edit-description-title = Редактировать описание
+
+cmu-edit-description-hint = Изменения только для этого раунда. Ваш спасенный персонаж не пострадал.
+
+cmu-edit-description-short = Краткий обзор текста
+
+cmu-edit-description-full = Полное описание персонажа
+
+cmu-edit-description-limit = { $count }/{ $max }
+
+cmu-edit-description-save = Сохранить
+
+cmu-edit-description-cancel = Отмена

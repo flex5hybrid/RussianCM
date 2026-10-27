@@ -131,3 +131,138 @@ anprc-fixed-net-bearing = ПЕЛЕНГ { $net }: направление на г�
     [mid] на некотором расстоянии.
    *[far] далеко.
 }
+
+anprc-chat-label = 117G
+
+anprc-chat-intercept-label = ИНТ
+
+anprc-chat-intercept-verb = включён
+
+anprc-key-untrained = Вы не знаете, как взломать ключ. Это требует обучения радиооператоров.
+
+anprc-key-offline = Набор должен быть включен и либо носиться, либо ставиться на работу с ключом.
+
+anprc-key-no-fix = Сначала почините сеть этой фракции. У вас пока нет трафика для анализа.
+
+anprc-key-bad-trial = Судебный процесс должен быть { $length } символы из { $symbols }.
+
+anprc-key-no-depth = Никаких судебных разбирательств. Ждите трафика в сети, которую вы починили.
+
+anprc-key-trial-result = судебный { $trial }: { $hits } из { $length } на месте.
+
+anprc-key-broken = Ключ сломан. Этот набор читает { $faction } Трафик до тех пор, пока они не перекодируются. Они не могут передавать информацию по сети.
+
+anprc-quick-setup-loaded = Стандартные загруженные сети: { $nets }.
+
+anprc-quick-setup-nothing = Стандартные сети уже загружены.
+
+anprc-quick-setup-full = Нет свободной памяти для: { $nets }Сначала удалите или опустошите память.
+
+anprc-call-says = { $name } говорит: "{ $message }"
+
+anprc-call-no-fill = Нет заполнения COMSEC. Набор не имеет фракционной сети для вызова.
+
+anprc-call-no-link = Нет связи. Набор выключен, уложен, заклинило, из власти или поиска.
+
+anprc-call-no-link-target = Нет связи. Эта станция вне досягаемости - между вами нет релейного пути или прямой связи.
+
+anprc-call-incoming = Твой AN/PRC-117G Звонит: { $caller }Возьми трубку, чтобы ответить.
+
+anprc-call-incoming-connected = Входящий звонок от { $caller } - подключен через телефон.
+
+anprc-call-ended = Повесь трубку.
+
+anprc-call-far-end-hung-up = Линия мертва. Другой конец повис.
+
+anprc-call-link-lost = Звонок падает. Линк потерялся.
+
+anprc-call-net-blocked = Телефон звонит. Подождите, прежде чем снова использовать радио.
+
+anprc-verb-phone = Используйте телефон
+
+anprc-emcon-on = ЭМКОН: Сет молчит. Он не будет передавать, ретранслировать или звонить и использует очень мало энергии. Он может получать трафик.
+
+anprc-emcon-off = ЭМКОН поднялся. Набор может передавать и ретранслировать снова.
+
+anprc-emcon-no-transmit = Набор находится в EMCON и не может передавать. Отключите EMCON на странице OPT.
+
+anprc-retrans-needs-staked = Ретранс работает только тогда, когда набор поставлен на карту.
+
+anprc-retrans-needs-nets = Выберите два разных воспоминания, каждое из которых содержит названную сеть.
+
+anprc-retrans-bridged = Retrans Active: трафик { $a } повторяется на { $b }и наоборот.
+
+anprc-retrans-relayed = [RXMT] { $speaker }: { $message }
+
+anprc-return-to-auto-done = Съёмочная площадка вернулась на АВТО.
+
+anprc-peak-needs-staked = Выберите настройки и включите их перед пиком антенны.
+
+anprc-peak-already = Антенна уже установлена.
+
+anprc-peak-start = Вы начинаете прицеливаться и настраивать антенну.
+
+anprc-peak-done = Антенна достигла пика. Диапазон реле увеличивается до тех пор, пока набор не будет упакован.
+
+anprc-otar-needs-current-fill = Вам нужен текущий ключ вашей фракции, прежде чем отправлять его по воздуху.
+
+anprc-otar-cooldown = Набор все еще ездит на велосипеде после последнего толчка ключа.
+
+anprc-otar-none = Ни один доступный набор не имеет устаревшего ключа.
+
+anprc-otar-sent = Ключ, посланный по воздуху { $count ->
+    [one] один набор
+   *[other] { $count } набор
+}.
+
+anprc-otar-received = Ключ COMSEC вашего набора был обновлен по воздуху { $station }.
+
+anprc-dwell-needs-search = Начните поиск группы перед парковкой головы поиска.
+
+anprc-dwell-on = Голова поиска припаркована на контакте. Остальная часть группы игнорируется, пока вы не выпустите ее.
+
+anprc-dwell-lost = Этот контакт исчез или уже был урегулирован.
+
+anprc-jammer-none = Никакие помехи не влияют на набор.
+
+anprc-jammer-bearing-first = Жаммерный подшипник { $bearing }Двигайся хотя бы { $baseline } Плитку и взять второй подшипник, чтобы зафиксировать ее положение.
+
+anprc-jammer-baseline-short = Жаммерный подшипник { $bearing }Но вы только переехали { $moved } из { $baseline } Плитка с первого положения. Двигайтесь дальше, прежде чем брать второй подшипник.
+
+anprc-jammer-fixed = FIX: подшипники пересекаются { $bearing }примерно { $distance } Плитки прочь. Джаммер отметил на карте вашей фракции { $minutes } минуты.
+
+anprc-antenna-none = НЕТ
+
+anprc-log-report-title = NET LOG
+
+anprc-log-report-title-intercepts = МЕЖДУНАРОДНЫЙ ЛОГ
+
+anprc-log-report-station = Начало:
+
+anprc-log-report-entries = ВЕДОМОСТИ:
+
+anprc-log-report-intercept = (Интерцепт)
+
+anprc-log-report-footer = Переписано с одного AN/PRC-117G сетевой журнал. Время использует установленные часы, а не местное время.
+
+anprc-bearing-n = N
+
+anprc-bearing-ne = Нэ
+
+anprc-bearing-e = Е
+
+anprc-bearing-se = Шеф.
+
+anprc-bearing-s = S
+
+anprc-bearing-sw = SW
+
+anprc-bearing-w = WWW
+
+anprc-bearing-nw = NW
+
+anprc-antenna-whip = Свист
+
+anprc-antenna-wire = Жить
+
+anprc-antenna-mast = мачта

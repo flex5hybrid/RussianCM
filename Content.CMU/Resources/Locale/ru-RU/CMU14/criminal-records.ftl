@@ -131,3 +131,54 @@ cmu-records-print-content = [head=2]УГОЛОВНОЕ ДОСЬЕ[/head]
 
 ent-CMUSuspectPhoto = фотография подозреваемого
     .desc = Фотография, напечатанная из базы уголовных досье.
+
+cmu-criminal-records-heading = КРИМИНАЛЬНЫЕ РЕКОРДЫ
+
+cmu-criminal-records-subheading = { $count ->
+    [one] ДАННЫЕ БЕЗОПАСНОСТИ // 1 ПРИЗНАНИЕ
+   *[other] ДАННЫЕ БЕЗОПАСНОСТИ // { $count } Упоминается
+}
+
+cmu-criminal-records-access-granted = Доступ гарантирован
+
+cmu-criminal-records-access-read-only = ТОЛЬКО ЧТЕНИЕ
+
+cmu-criminal-records-search = Поисковые запросы
+
+cmu-criminal-records-search-placeholder = Тип для поиска...
+
+cmu-criminal-records-show = показывать
+
+cmu-criminal-records-show-all = Все статусы
+
+cmu-criminal-records-none = Никаких документов не найдено
+
+cmu-criminal-records-select = Выбрать рекорд
+
+cmu-criminal-records-particulars = Особенности
+
+cmu-criminal-records-fingerprints = Отпечатки пальцев
+
+cmu-criminal-records-dna = ДНК
+
+cmu-criminal-records-religion = Религия
+
+cmu-criminal-records-squad = Отряд
+
+cmu-criminal-records-bounty = Награда
+
+cmu-criminal-records-set-by = Садись { $name }
+
+cmu-criminal-records-set-status = Установить статус
+
+cmu-criminal-records-no-access = Ваш ID не имеет доступа к записи об изменениях.
+
+cmu-criminal-records-add-entry = ВХОД
+
+cmu-criminal-records-delete = Удалить
+
+cmu-criminal-records-delete-confirm = Утверждение
+
+cmu-criminal-records-footer-edit = Разыскиваемые, подозрительные и враждебные статусы просят о причине. Записи истории маркированы по времени.
+
+cmu-criminal-records-footer-read-only = Только для чтения: проведите ID с доступом к безопасности для внесения изменений.

@@ -57,3 +57,5 @@ cmu-xeno-infection-burst-now-xeno-back = Мы вырываем позвоноч�
 # Слово Королевы
 
 cmu-pathogen-words-of-the-overmind-header = Мысли Сверхразума эхом разносятся по Слиянию...
+
+cmu-xeno-spore-sac-blocked = Вы не можете добраться до этого места, чтобы посадить мешок.

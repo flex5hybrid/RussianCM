@@ -109,3 +109,79 @@ cmu-summary-entry = {$name} ({$user}) был {$role}. {$detail}
 cmu-summary-petition = Петиция о забастовке собрала {$count}/{$goal} подписей.
 cmu-vigilante-empty = В этой колонии нет заметного присутствия мафии. Будьте начеку — рано или поздно отбросы всё равно выползут наружу.
 cmu-vigilante-list = Члены мафии в этой колонии:
+
+cmu-admin-verb-make-antag = делать {$antag}
+
+reagent-name-cmu-phoron-fuel = Топливная смесь Phoron
+
+reagent-desc-cmu-phoron-fuel = Стабилизированная суспензия для мусоросжигательных установок. Горит долго, распространяется самостоятельно, и отмахивается от огнетушителей.
+
+roles-antag-replicant-name = Синтетический репликант
+
+roles-antag-replicant-objective = Замените кого-нибудь. Живи своей жизнью. Не попадайтесь.
+
+replicant-role-greeting = Ты синтетическая копия, которая никогда не должна была покидать лабораторию. Где-то в этой колонии есть жизнь, которую вы можете взять: выбрать свою цель, изучить их и стать ими, когда никто не смотрит. Ваша транспондерная карта может нести их имя, но только реальная вещь несет их доступ. Оригинал не может оставаться свободным — мертвым, или разрушенным в клетке, либо служит.
+
+replicant-already-transformed = Нет пути назад. Теперь это лицо твое.
+
+replicant-target-lost = Узор ускользает. Ссылка исчезла.
+
+replicant-transform-start = Вы начинаете копировать шаблон. Не двигайся.
+
+replicant-transform-finish = Копия оседает над вами. Ты есть {$name} Сейчас.
+
+replicant-picker-title = Предполагать идентичность
+
+replicant-picker-description = Выберите жизнь, которую вы собираетесь взять. Изучите их хорошо, вам придется отвечать за их историю.
+
+cmu-summary-detail-replicant-replaced = Они заменили {$target}.
+
+cmu-summary-detail-replicant-never = Они никогда не принимали другой идентичности.
+
+suspect-description-male = Мужской
+
+suspect-description-female = Женский
+
+suspect-description-young = молодой
+
+suspect-description-middle-aged = среднего возраста
+
+suspect-description-elder = старейшина
+
+suspect-description-build = строить
+
+suspect-description-hair = {$color} волосы
+
+suspect-description-eyes = {$color} глаза
+
+suspect-description-skin = {$color} кожа
+
+suspect-description-reason = {$reason}Описание свидетеля: {$description}
+
+suspect-description-languages = Как сообщается, говорит: {$languages}.
+
+cmu-bounty-cover-blown = Твое прикрытие взорвано. У правоохранительных органов есть ваши данные в файле. Время исчезнуть.
+
+cmu-bounty-evidence-prints = отпечатки пальцев
+
+cmu-bounty-evidence-dna = ДНК
+
+cmu-bounty-evidence-history = совпадение {$kind} восстановленный из {$item}.
+
+wanted-poster-verb-text = Печать желаемых плакатов
+
+wanted-poster-printed = напечатанный {$count} Нужны плакаты.
+
+wanted-poster-none = Никаких активных наград для печати.
+
+wanted-poster-content = {$name} Его разыскивает Колониальное бюро маршалов.
+
+    Bounty: ${$bounty}Оплата при захвате.
+
+    {$reason}
+
+    Сообщите о наблюдениях в местный маршал.
+
+cmu-cannibal-diet = { CAPITALIZE(THE($food)) } Переворачивает живот. Только мясо может выдержать такой голод, как ваш.
+
+cmu-summary-header = {"["}смелый[color=#d1b85d]Колония Подземный мир:[/color][/bold]

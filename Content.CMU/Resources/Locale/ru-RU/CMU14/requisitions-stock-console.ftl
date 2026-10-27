@@ -81,3 +81,44 @@ ent-CMUTableReinforcedRequisitionDispenseNorth =
 ent-CMUTableReinforcedRequisitionDispenseSouth =
     .suffix = Выдача заказов, юг
     .desc = { ent-CMUTableReinforcedRequisitionDispenseBase.desc }
+
+cmu-req-stock-console-window-title = Запасы реквизиций
+
+cmu-req-stock-console-refresh-button = Обновить
+
+cmu-req-stock-console-summary = {$vendors} {$vendors ->
+    [one] продавец
+   *[other] поставщики
+}, {$items} предметы, {$empty} вне запасов
+
+cmu-req-stock-console-no-vendors = Автоматических реквизиций на этом корабле не обнаружено.
+
+cmu-req-stock-console-unlimited = ограниченный
+
+cmu-req-stock-console-amount = {$amount} левый
+
+cmu-req-stock-console-amount-max = {$amount} / {$max}
+
+cmu-req-stock-console-search = Поиск
+
+cmu-req-stock-console-of-max = из {$max}
+
+cmu-req-stock-console-heading = Рекомендации СТОК
+
+cmu-req-stock-console-search-placeholder = Поиск предметов...
+
+cmu-req-stock-console-low-only = Лишь застрял
+
+cmu-req-stock-console-footer = Живой запас поставщиков реквизиций этого корабля. Предметы на четверть или менее их начальных запасов показывают низкий уровень.
+
+cmu-req-stock-console-tag-out = { $count } ВЫХОД
+
+cmu-req-stock-console-tag-low = { $count } Низкий
+
+cmu-req-stock-console-tag-ok = Все застряли
+
+cmu-req-stock-console-status-ok = Застрять
+
+cmu-req-stock-console-status-low = Низкий
+
+cmu-req-stock-console-status-out = ВЫХОД
