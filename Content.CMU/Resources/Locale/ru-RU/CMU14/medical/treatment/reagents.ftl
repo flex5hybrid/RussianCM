@@ -70,3 +70,27 @@ reagent-name-cmu-meclizine = Меклизин
 reagent-desc-cmu-meclizine = Средство от головокружения. Устраняет головокружение от укачивания, фобий и подобных причин. Одна доза предотвращает его примерно на 20 минут.
 
 cmu-medical-anti-vertigo-guidebook = Устраняет головокружение и предотвращает его на { $minutes } минут.
+
+cmu-medical-regenerate-limb-guidebook        = Regenerates one missing native limb per 5 units metabolized at 213K or colder.
+
+cmu-medical-reverse-revival-timer-guidebook   = Reverses { $seconds } seconds of an active revival countdown per unit metabolized. Cannot reverse permanent death or an expired countdown.
+
+cmu-medical-cryo-bone-blood-guidebook         = Gradually mends all fractures by { $bone } bone integrity per unit and restores { $blood }% blood per second during metabolism.
+
+cmu-medical-cryo-burn-wounds-guidebook        = Gradually closes burn wounds by { $amount } wound damage per unit, including severe burns.
+
+cmu-medical-cryo-brute-wounds-guidebook       = Gradually closes brute wounds by { $amount } wound damage per unit, including gaping cuts.
+
+cmu-medical-cryo-organs-guidebook             = Gradually restores { $amount } health per unit to every attached organ.
+
+reagent-name-cmu-tranexamic-acid             = Tranexamic Acid
+
+reagent-desc-cmu-tranexamic-acid             = A clotting agent that stops bleeding for as long as it stays in the bloodstream. It doesn't close the wounds.
+
+reagent-name-cmu-aminomethylbenzoic-acid     = Aminomethylbenzoic Acid
+
+reagent-desc-cmu-aminomethylbenzoic-acid     = A chemical precursor. Mix it with hydrogen and inaprovaline to make tranexamic acid.
+
+reagent-name-cmu-blood-plasma = blood plasma
+
+reagent-desc-cmu-blood-plasma = The liquid part of blood. Given from a plasma pack of a matching type it restores blood volume quickly and slows bleeding for a while.

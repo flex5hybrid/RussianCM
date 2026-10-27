@@ -131,3 +131,138 @@ anprc-fixed-net-bearing = ПЕЛЕНГ { $net }: направление на г�
     [mid] на некотором расстоянии.
    *[far] далеко.
 }
+
+anprc-chat-label = 117G
+
+anprc-chat-intercept-label = INT
+
+anprc-chat-intercept-verb = on
+
+anprc-key-untrained = You do not know how to break a key. This requires radio-operator training.
+
+anprc-key-offline = The set must be on and either worn or staked to work a key.
+
+anprc-key-no-fix = Fix one of that faction's nets first. You have no traffic to analyze yet.
+
+anprc-key-bad-trial = A trial must be { $length } symbols from { $symbols }.
+
+anprc-key-no-depth = No trials banked. Wait for traffic on a net you have fixed.
+
+anprc-key-trial-result = TRIAL { $trial }: { $hits } of { $length } in place.
+
+anprc-key-broken = KEY BROKEN. This set reads { $faction } traffic until they recrypto. It still cannot transmit on their nets.
+
+anprc-quick-setup-loaded = Standard nets loaded: { $nets }.
+
+anprc-quick-setup-nothing = Standard nets are already loaded.
+
+anprc-quick-setup-full = No free memory for: { $nets }. Delete or empty a memory first.
+
+anprc-call-says = { $name } says, "{ $message }"
+
+anprc-call-no-fill = No COMSEC fill loaded. The set has no faction network to call through.
+
+anprc-call-no-link = NO LINK. The set is off, stowed, jammed, out of power or searching.
+
+anprc-call-no-link-target = NO LINK. That station is out of reach - there is no relay path or direct link between you.
+
+anprc-call-incoming = Your AN/PRC-117G is ringing: { $caller }. Take the handset to answer.
+
+anprc-call-incoming-connected = Incoming call from { $caller } - connected through your handset.
+
+anprc-call-ended = You hang up.
+
+anprc-call-far-end-hung-up = The line goes dead. The other end hung up.
+
+anprc-call-link-lost = The call drops. Link lost.
+
+anprc-call-net-blocked = The handset is on a call. Hang up before using the radio net again.
+
+anprc-verb-phone = Use Phone
+
+anprc-emcon-on = EMCON: the set is silent. It will not transmit, relay or ring, and uses very little power. It can still receive traffic.
+
+anprc-emcon-off = EMCON lifted. The set can transmit and relay again.
+
+anprc-emcon-no-transmit = The set is in EMCON and cannot transmit. Disable EMCON on the faceplate's OPT page.
+
+anprc-retrans-needs-staked = Retrans only works while the set is staked down.
+
+anprc-retrans-needs-nets = Select two different memories, each containing a named net.
+
+anprc-retrans-bridged = Retrans active: traffic on { $a } is repeated on { $b }, and vice versa.
+
+anprc-retrans-relayed = [RXMT] { $speaker }: { $message }
+
+anprc-return-to-auto-done = The set is back on AUTO.
+
+anprc-peak-needs-staked = Stake the set down and switch it on before peaking the antenna.
+
+anprc-peak-already = The antenna is already peaked.
+
+anprc-peak-start = You begin aiming and tuning the antenna...
+
+anprc-peak-done = Antenna peaked. Relay range is increased until the set is packed up.
+
+anprc-otar-needs-current-fill = You need your faction's current key loaded before sending it over the air.
+
+anprc-otar-cooldown = The set is still cycling after the last key push.
+
+anprc-otar-none = No reachable set has an outdated key.
+
+anprc-otar-sent = Key sent over the air to { $count ->
+    [one] one set
+   *[other] { $count } sets
+}.
+
+anprc-otar-received = Your set's COMSEC key was updated over the air by { $station }.
+
+anprc-dwell-needs-search = Start a band search before parking the search head.
+
+anprc-dwell-on = Search head parked on the contact. The rest of the band is ignored until you release it.
+
+anprc-dwell-lost = That contact has faded or already been resolved.
+
+anprc-jammer-none = No jammer is affecting the set.
+
+anprc-jammer-bearing-first = Jammer bearing { $bearing }. Move at least { $baseline } tiles and take a second bearing to fix its position.
+
+anprc-jammer-baseline-short = Jammer bearing { $bearing }, but you have only moved { $moved } of { $baseline } tiles from the first position. Move farther before taking the second bearing.
+
+anprc-jammer-fixed = FIX: bearings cross at { $bearing }, about { $distance } tiles away. Jammer marked on your faction's map for { $minutes } minutes.
+
+anprc-antenna-none = NONE
+
+anprc-log-report-title = NET LOG
+
+anprc-log-report-title-intercepts = INTERCEPT LOG
+
+anprc-log-report-station = STATION:
+
+anprc-log-report-entries = ENTRIES:
+
+anprc-log-report-intercept = (INTERCEPT)
+
+anprc-log-report-footer = Transcribed from an AN/PRC-117G net log. Times use the set clock, not local time.
+
+anprc-bearing-n = N
+
+anprc-bearing-ne = NE
+
+anprc-bearing-e = E
+
+anprc-bearing-se = SE
+
+anprc-bearing-s = S
+
+anprc-bearing-sw = SW
+
+anprc-bearing-w = W
+
+anprc-bearing-nw = NW
+
+anprc-antenna-whip = WHIP
+
+anprc-antenna-wire = WIRE
+
+anprc-antenna-mast = MAST

@@ -461,3 +461,7 @@ cmu-autodoc-chemicals-heading = Химикаты капсулы сна
 cmu-autodoc-no-chemicals = Химикаты не настроены.
 cmu-autodoc-dose-small = 5 ед.
 cmu-autodoc-dose-large = 10 ед.
+
+cmu-body-scanner-title-parasite = Parasite
+
+cmu-body-scanner-detail-parasite = embryo in the chest cavity, stage { $stage } of { $final }

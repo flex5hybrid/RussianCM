@@ -52,3 +52,5 @@ insfor-picker-flag-title = Выберите флаг
 
 # Служебная должность, используемая только как ключ белого списка редактора INSFOR.
 au14-job-name-insfor-editor = Доступ к редактору INSFOR
+
+cmu-insfor-vendor-section-anti-armor = Anti-Armor

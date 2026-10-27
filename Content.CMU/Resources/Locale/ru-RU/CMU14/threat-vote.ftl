@@ -16,3 +16,7 @@ au14-threat-vote-seat-opened = Одно из тел угрозы осталос�
 au14-threat-not-selected-return-to-lobby = "Вы не были выбраны угрозой этого раунда. Вы возвращены в лобби и можете присоединиться к уже идущему раунду (JIP)."
 
 cmu-threat-marker-shortfall-announcement = НЕХВАТКА ТОЧЕК СПАВНА {$kind}: у '{$source}' на планете '{$planet}' меньше точек спавна, чем требуется тел ({$short}). Раунд продолжается; тела без точки спавна не появятся.
+
+au14-threat-vote-observer-notice = The threat vote selected {$threat}. Your vote counts as interest. You can withdraw in Threats and Third Parties; joining another role removes your interest.
+
+au14-threat-vote-opted-out-return-to-lobby = "The threat vote selected {$threat}, which is disabled in your preferences. You have been returned to the lobby and are free to Join-In-Progress (JIP)."

@@ -42,3 +42,73 @@ cmu-robotic-limb-repair-burn-finish-user = Вы ремонтируете обг�
 cmu-robotic-limb-repair-burn-finish-others = { THE($user) } ремонтирует обгоревшую проводку в { $limb } у { THE($target) } с помощью { THE($tool) }.
 cmu-medical-tourniquet-applied-stump = Жгут наложен на культю.
 cmu-medical-tourniquet-verb-remove-stump = Снять жгут с культи
+
+cmu-medical-tourniquet-no-selected-limb = There's no arm or leg to put a tourniquet on where you're aiming.
+
+cmu-medical-cast-removed-early = The cast comes off before the bone has finished setting.
+
+cmu-medical-splint-verb-remove = Remove splint
+
+cmu-medical-splint-removing = Removing splint...
+
+cmu-medical-splint-removed = The splint is removed.
+
+cmu-medical-body-part-picker-header = Pick a part to bandage
+
+cmu-medical-body-part-picker-empty = No wounds to bandage.
+
+cmu-medical-body-part-picker-entry = { $part } — { $count } { $count ->
+    [one] wound
+   *[other] wounds
+}
+
+cmu-medical-body-part-sided = { $side } { $type }
+
+cmu-medical-body-part-side-left = Left
+
+cmu-medical-body-part-side-right = Right
+
+cmu-medical-body-part-type-other = Other
+
+cmu-medical-body-part-type-torso = Torso
+
+cmu-medical-body-part-type-head = Head
+
+cmu-medical-body-part-type-arm = Arm
+
+cmu-medical-body-part-type-hand = Hand
+
+cmu-medical-body-part-type-leg = Leg
+
+cmu-medical-body-part-type-foot = Foot
+
+cmu-medical-body-part-type-tail = Tail
+
+cmu-wound-arterial-spray = Blood squirts out of your { $part } in hot spurts!
+
+cmu-wound-arterial-spray-stump = Blood squirts out of the stump where your { $limb } used to be!
+
+cmu-wound-stump-limb = { $symmetry ->
+    [left] left{" "}
+    [right] right{" "}
+   *[other] {""}
+}{ $type ->
+    [arm] arm
+    [hand] hand
+    [leg] leg
+    [foot] foot
+   *[other] limb
+}
+
+cmu-internal-bleed-pain = You feel a stabbing pain in your {$part}!
+
+cmu-shrapnel-move-pain = You feel shrapnel digging into your {$part} as you move.
+
+cmu-body-part-name = { $side ->
+        [left] left { $type }
+        [right] right { $type }
+       *[none] { $type ->
+            [torso] chest
+           *[other] { $type }
+        }
+    }

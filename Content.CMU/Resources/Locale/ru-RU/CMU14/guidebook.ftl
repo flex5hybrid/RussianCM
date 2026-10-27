@@ -146,3 +146,157 @@ cmu-guide-entry-lore-ua-doves = «Голуби»
 cmu-guide-entry-lore-ua-hawks = «Ястребы»
 cmu-guide-entry-lore-ua-magpies = «Сороки»
 cmu-guide-entry-lore-ua-politics = Политика
+
+cmu-guide-entry-ship-weapons = Ship Orbital Support Weapons
+
+cmu-guide-entry-yautja-honor-code = Yautja Honor Code
+
+cmu-guide-entry-yautja-honor-code-prey = Prey
+
+cmu-guide-entry-yautja-honor-code-prey-caveats = Prey Caveats
+
+cmu-guide-entry-yautja-honor-code-trophies = Trophies and Prey Welfare
+
+cmu-guide-entry-yautja-honor-code-weapons = Weapons and Tools
+
+cmu-guide-entry-yautja-honor-code-hunting-grounds = The Hunting Grounds
+
+cmu-guide-entry-yautja-honor-code-preserve = The Hunting Preserve
+
+cmu-guide-entry-yautja-honor-code-blooded = Other Blooded
+
+cmu-guide-entry-yautja-honor-code-youngbloods = Youngbloods
+
+cmu-guide-entry-yautja-honor-code-thralls = Thralls
+
+cmu-guide-entry-yautja-honor-code-gear-recovery = Gear Recovery
+
+cmu-guide-entry-yautja-honor-code-lodges = Lodges
+
+cmu-guide-entry-yautja-honor-code-hellhounds = Hellhounds
+
+cmu-guide-entry-yautja-honor-code-ancients = Ancient's Privilege
+
+cmu-guide-entry-yautja-honor-code-gamemodes = Game Modes
+
+cmu-guide-entry-yautja-honor-code-spirit = Spirit of the Whitelist
+
+cmu-guide-entry-sop-physical-standards = Physical Standards
+
+cmu-guide-entry-comms-anprc-guided = AN/PRC-117G: Guided Panel
+
+cmu-guide-entry-comms-anprc-expert = AN/PRC-117G: Expert Faceplate
+
+cmu-guide-entry-antag-rider = The Rider
+
+cmu-guide-entry-hearing-loss = Hearing Loss
+
+cmu-guide-entry-cmu = Guidebook
+
+cmu-guide-entry-mortar = Mortar
+
+cmu-guide-entry-forensics = Forensics
+
+cmu-guide-entry-law-enforcement = Colony Law Enforcement
+
+cmu-guide-entry-engineering = Engineering
+
+cmu-guide-entry-intel-objectives = Objectives and Intel
+
+cmu-guide-entry-objectives = Objectives
+
+cmu-guide-entry-objective-points = Points
+
+cmu-guide-entry-intel = Intel
+
+cmu-guide-entry-eng-gear = Engineering Equipment
+
+cmu-guide-entry-eng-construction = Construction
+
+cmu-guide-entry-eng-power = Power
+
+cmu-guide-entry-eng-atmos = Atmospherics
+
+cmu-guide-entry-eng-hazards = Fire and Radiation
+
+cmu-guide-entry-eng-fortify = Fortifications
+
+cmu-guide-entry-eng-sentries = Sentries
+
+cmu-guide-entry-eng-breach = Breaching and Demolition
+
+cmu-guide-entry-eng-vehicles = Vehicle Repair
+
+cmu-guide-entry-eng-synths = Repairing Synthetics
+
+cmu-guide-entry-eng-ordnance = Ordnance
+
+cmu-guide-entry-towers = Comms and Sensor Towers
+
+cmu-guide-entry-law-roles = Roles and Gear
+
+cmu-guide-entry-law-basics = Colony Law Basics
+
+cmu-guide-entry-law-dispatch = Radio and 911 Dispatch
+
+cmu-guide-entry-law-records = Criminal Records
+
+cmu-guide-entry-law-arrests = Arrests and Holding
+
+cmu-guide-entry-defibrillators = Defibrillators
+
+cmu-guide-entry-medical = Medical
+
+cmu-guide-entry-medical-infantry = Start Here: Infantry First Aid
+
+cmu-guide-entry-medical-diagnosis = Diagnosis
+
+cmu-guide-entry-medical-wounds = Wounds and Bleeding
+
+cmu-guide-entry-medical-blood = Blood and Transfusions
+
+cmu-guide-entry-medical-field-care = Field Treatment Mixing
+
+cmu-guide-entry-medical-bones = Fractures
+
+cmu-guide-entry-medical-pain = Pain
+
+cmu-guide-entry-medical-organs = Organs
+
+cmu-guide-entry-medical-surgery = Surgery
+
+cmu-guide-entry-surgery-opening = Opening and Closing
+
+cmu-guide-entry-surgery-fractures = Fracture Surgery
+
+cmu-guide-entry-surgery-bleeding = Bleeding, Burns and Complications
+
+cmu-guide-entry-surgery-organs = Organ Surgery
+
+cmu-guide-entry-surgery-limbs = Limb Surgery
+
+cmu-guide-entry-medical-resuscitation = Resuscitation
+
+cmu-guide-entry-medical-machines = Medical Machines
+
+cmu-guide-entry-medications = Medications
+
+cmu-guide-entry-meds-brute = Brute Medications
+
+cmu-guide-entry-meds-burn = Burn Medications
+
+cmu-guide-entry-meds-toxin = Toxin Medications
+
+cmu-guide-entry-meds-suffocation = Suffocation Medications
+
+cmu-guide-entry-meds-pain = Painkillers
+
+cmu-guide-entry-meds-organs = Organ and Bone Medications
+
+cmu-guide-entry-meds-other = Other Medications
+
+cmu-guide-entry-overwatch = Overwatch
+
+cmu-guide-entry-fob-security = FOB Security Squad
+
+cmu-guide-entry-skills = Skills

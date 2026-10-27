@@ -207,3 +207,7 @@ origin-icsc-pakistan-description = Родом из Пакистана, неза�
 # Происхождение — Prodigy
 origin-prodigy-newsiam-name = Prodigy - Новый Сиам
 origin-prodigy-newsiam-description = Родом из Нового Сиама, территории Prodigy Security Corp.
+
+origin-ua-artificial-womb-name = UA - Artificial Womb
+
+origin-ua-artificial-womb-description = You were grown in an artificial womb for military service. As an A.W. Soldier, you must have a weapon produced pre-2010 or the name of the weapon's creator as your last name. A.W. last names must not include numbers or symbols and must be a single word.

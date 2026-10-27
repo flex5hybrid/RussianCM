@@ -106,3 +106,206 @@ admin-console-trade-tax-section = -- Налог на продажу посыло
 admin-console-current-trade-tax = Текущий налог на продажу посылок: { $percent }%
 admin-console-trade-tax-description = Берётся из суммы, которую дрон платит за посылку, проданную на торговой платформе. Эта доля уходит в бюджет колонии, остальное получает продавец.
 admin-console-trade-tax-announcement = Налог колонии на продажу посылок установлен в { $percent }%. Эта доля от каждой посылки, проданной на торговой платформе, уходит колонии.
+
+colony-economy-sales-tax = Sales Tax: { $percent }%
+
+colony-economy-income-tax = Income Tax: { $percent }%
+
+colony-economy-transit-tariff = Transit Tariff: { $percent }%
+
+colony-economy-active-embargoes = Active Embargoes: { $factions }
+
+colony-economy-no-embargoes = Embargoes: None
+
+colony-economy-active-trade-pacts = Active Trade Pacts: { $factions }
+
+colony-economy-no-trade-pacts = Trade Pacts: None
+
+colony-economy-overview = -- Colony Economy Overview --
+
+colony-economy-third-party-support = -- Third Party Support --
+
+colony-economy-open-third-party-menu = Open Third Party Menu
+
+colony-economy-unknown-faction = Unknown Faction
+
+colony-economy-apply = Apply
+
+admin-console-title = Administration Console
+
+admin-console-colony-budget = Colony Budget: ${ $amount }
+
+admin-console-sales-tax-section = -- Sales Tax --
+
+admin-console-current-sales-tax = Current Sales Tax: { $percent }%
+
+admin-console-sales-tax-description = Applies to cash vendors and corporate ASRS orders. Tax revenue goes to the colony budget.
+
+admin-console-new-tax = New Tax (0–50%):
+
+admin-console-tax-placeholder = e.g. 10
+
+admin-console-income-tax-section = -- Income Tax --
+
+admin-console-current-income-tax = Current Income Tax: { $percent }%
+
+admin-console-income-tax-description = Deducted from salary payouts and corporate cash withdrawals. Revenue goes to the colony budget.
+
+admin-console-announcement-sender = Administration
+
+admin-console-sales-tax-announcement = Colony sales tax has been set to { $percent }%.
+
+admin-console-income-tax-announcement = Colony income tax has been set to { $percent }%. This affects salary payouts and corporate withdrawals.
+
+corporate-console-title = Corporate Affairs Console
+
+corporate-console-budget = Corporate Budget: ${ $amount }
+
+corporate-console-withdraw-section = -- Withdraw Cash --
+
+corporate-console-transit-tariff-section = -- Transit Tariff --
+
+corporate-console-current-transit-tariff = Current Transit Tariff: { $percent }%
+
+corporate-console-transit-tariff-description = A percentage of all submission storage payouts that goes to the corporate budget instead of the colony.
+
+corporate-console-new-tariff = New Tariff (0–50%):
+
+corporate-console-tariff-placeholder = e.g. 15
+
+corporate-console-withdraw-tax-note = Note: Withdrawals are subject to { $percent }% income tax.
+
+corporate-console-withdraw-no-tax = No income tax on withdrawals.
+
+corporate-console-announcement-sender = Corporate Affairs
+
+corporate-console-tariff-announcement = Corporate transit tariff has been set to { $percent }%. Submission payouts to the colony have been adjusted.
+
+budget-console-title = Budget Console
+
+budget-console-current-budget = Current Budget: { $amount }
+
+budget-console-withdraw-cash = Withdraw Cash:
+
+budget-console-dispense-salaries = Dispense All Salaries
+
+budget-console-transfer-department = Transfer to Department:
+
+budget-console-amount-placeholder = Amount
+
+budget-console-department-entry = { $department } (Budget: ${ $amount })
+
+budget-console-transfer = Transfer
+
+budget-console-no-departments = No departments found.
+
+cash-vendor-credit = Credit:
+
+cash-vendor-amount = ${ $amount }
+
+cash-vendor-scan-id = Scan ID
+
+cash-vendor-clear-department = Clear Dept
+
+cash-vendor-return-change = Return Change
+
+cash-vendor-department-budget = Dept Budget:
+
+cash-vendor-department-budget-value = ${ $amount } ({ $department })
+
+cash-vendor-search-placeholder = Search...
+
+cash-vendor-footer-hint = Insert cash or carry your ID, then select item.
+
+cash-vendor-prices-include-tax = Prices incl. tax
+
+cash-vendor-id-account = ID Account:
+
+cash-vendor-insufficient-cash = Not enough cash, and no ID card to charge the rest to.
+
+cash-vendor-insufficient-funds = Insufficient funds on your ID card.
+
+cash-vendor-card-locked = Your ID card is locked.
+
+cash-vendor-card-charged = ${ $amount } charged to your ID card.
+
+cash-vendor-sales-tax = Sales Tax: { $percent }%
+
+cash-vendor-no-sales-tax = No sales tax
+
+cash-vendor-buy = Buy
+
+cash-vendor-no-items = No items available.
+
+cmu-economy-sales-tax = Sales tax
+
+cmu-economy-income-tax = Income tax
+
+cmu-economy-transit-tariff = Transit tariff
+
+cmu-economy-embargoes = Embargoes
+
+cmu-economy-trade-pacts = Trade pacts
+
+cmu-economy-none = None
+
+cmu-corporate-heading = CORPORATE AFFAIRS
+
+cmu-corporate-subheading = COLONY LIAISON OFFICE // TRANSIT & SUPPORT
+
+cmu-corporate-treasury = Corporate Treasury
+
+cmu-corporate-withdraw-tax = Withdrawals pay { $percent }% colony income tax.
+
+cmu-corporate-withdraw-no-tax = Withdrawals are currently untaxed.
+
+cmu-corporate-tariff = Transit Tariff
+
+cmu-corporate-current-tariff = Current rate
+
+cmu-corporate-exact = EXACT RATE (0-{ $max }%)
+
+cmu-corporate-apply = APPLY
+
+cmu-corporate-tariff-announced = Every tariff change is announced colony-wide.
+
+cmu-corporate-support = Corporate Support
+
+cmu-corporate-support-hint = Call in corporate security, synthetics or contractors, paid from the corporate budget.
+
+cmu-corporate-footer = Tariff income is paid into the corporate budget from every submission.
+
+cmu-budget-heading = COLONY BUDGET
+
+cmu-budget-subheading = COLONY TREASURY // ADMINISTRATION
+
+cmu-budget-treasury = Treasury
+
+cmu-budget-payroll = Payroll
+
+cmu-budget-payroll-hint = Pays every department's staff now, from each department's own budget.
+
+cmu-budget-dispense = DISPENSE ALL SALARIES
+
+cmu-budget-dispense-confirm = CONFIRM PAYDAY
+
+cmu-budget-departments = Departments
+
+cmu-budget-department-count = { $count ->
+    [one] 1 DEPARTMENT
+   *[other] { $count } DEPARTMENTS
+}
+
+cmu-budget-transfer-amount = TRANSFER AMOUNT
+
+cmu-budget-transfer = TRANSFER
+
+cmu-budget-department-budget = BUDGET { $amount }
+
+cmu-budget-total = Held by departments
+
+cmu-budget-footer = Transfers move money from the colony budget into a department's budget.
+
+cmu-cash-vendor-credit = CREDIT
+
+cmu-cash-vendor-other = Other

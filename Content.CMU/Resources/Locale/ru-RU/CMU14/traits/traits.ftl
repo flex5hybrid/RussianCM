@@ -186,3 +186,13 @@ cmu-trait-auto-ignore-desc = Если вы присоединяетесь к р�
 cmu-trait-category-addictions = Зависимости
 
 cmu-trait-category-phobias = Страхи и фобии
+
+cmu-ui-options-movement = Movement
+
+cmu-ui-options-tile-movement = Tile movement
+
+cmu-ui-options-tile-movement-tooltip = Move from tile to tile instead of walking freely, just like the forebears who came before you.
+
+cmu-ui-options-tile-movement-walk-only = Tile movement while walking
+
+cmu-ui-options-tile-movement-walk-only-tooltip = Move from tile to tile while walking, and freely while running. Tile movement above overrides this.

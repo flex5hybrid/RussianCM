@@ -26,3 +26,5 @@ cmu-warp-location-mycelium-cluster = кластер мицелия
 cmu-warp-location-plasma-node = плазменный узел
 cmu-warp-location-mycelium-pylon = пилон мицелия
 cmu-warp-location-sporecaster = споровик
+
+cmu-warp-location-hotspot = the hotspot

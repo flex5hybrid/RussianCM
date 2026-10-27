@@ -265,3 +265,5 @@ au14-toolperm-tool-zleveltoggles = Переключатели Z-уровней
 au14-toolperm-tool-zsync = Списки Z-синхронизации
 au14-toolperm-tool-insfor = Редактор INSFOR
 au14-toolperm-tool-spawnlistdelete = Удаление списка спавна
+
+au14-toolperm-user-header = { $ckey } ({ $count })

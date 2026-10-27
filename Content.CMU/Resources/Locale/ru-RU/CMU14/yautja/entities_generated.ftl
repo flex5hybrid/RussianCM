@@ -2243,3 +2243,9 @@ ent-CMUHunterShipYautjaVendorDinnerware = тарелка раздатчик
     .desc = kitchen и restaurant снаряжение торговый автомат.
 
 ent-CMUSkillPresetYautjaWarrior = яутжа воин
+
+ent-CMUYautjaYoungbloodRelayBeacon = youngblood relay beacon
+    .desc = A device covered in sacred text, attuned to young hunters. It whirrs and beeps every couple of seconds.
+
+ent-CMUWeYuHivebreaker = salvaged hivebreaker
+    .desc = A recovered Yautja hivebreaker, its alien interlocks cut out and rewired by Weyland-Yutani. Breaks a serpent's link to the Hivemind and binds it to whoever holds the device.

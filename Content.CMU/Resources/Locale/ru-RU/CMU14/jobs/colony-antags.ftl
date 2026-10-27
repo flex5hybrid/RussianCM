@@ -109,3 +109,79 @@ cmu-summary-entry = {$name} ({$user}) был {$role}. {$detail}
 cmu-summary-petition = Петиция о забастовке собрала {$count}/{$goal} подписей.
 cmu-vigilante-empty = В этой колонии нет заметного присутствия мафии. Будьте начеку — рано или поздно отбросы всё равно выползут наружу.
 cmu-vigilante-list = Члены мафии в этой колонии:
+
+cmu-admin-verb-make-antag = Make {$antag}
+
+reagent-name-cmu-phoron-fuel = Phoron Fuel Mix
+
+reagent-desc-cmu-phoron-fuel = A stabilized phoron slurry for incinerator units. Burns long, spreads on its own, and shrugs off extinguishers.
+
+roles-antag-replicant-name = Synth Replicant
+
+roles-antag-replicant-objective = Replace someone. Live their life. Don't get caught.
+
+replicant-role-greeting = You are a synthetic copy that was never supposed to leave the lab. Somewhere in this colony is a life you can take: pick your target, study them, and become them when no one is watching. Your transponder card can carry their name, but only the real thing carries their access. The original cannot remain free - dead, or ruined in a cell, either serves.
+
+replicant-already-transformed = There is no going back. This face is yours now.
+
+replicant-target-lost = The pattern slips away. The link is gone.
+
+replicant-transform-start = You begin copying the pattern. Hold still.
+
+replicant-transform-finish = The copy settles over you. You are {$name} now.
+
+replicant-picker-title = Assume Identity
+
+replicant-picker-description = Choose the life you intend to take. Study them well; you will have to answer for their history.
+
+cmu-summary-detail-replicant-replaced = They replaced {$target}.
+
+cmu-summary-detail-replicant-never = They never assumed another identity.
+
+suspect-description-male = Male
+
+suspect-description-female = Female
+
+suspect-description-young = young
+
+suspect-description-middle-aged = middle-aged
+
+suspect-description-elder = elder
+
+suspect-description-build = build
+
+suspect-description-hair = {$color} hair
+
+suspect-description-eyes = {$color} eyes
+
+suspect-description-skin = {$color} skin
+
+suspect-description-reason = {$reason}. Witness description: {$description}
+
+suspect-description-languages = Reportedly speaks: {$languages}.
+
+cmu-bounty-cover-blown = Your cover is blown. Law enforcement has your details on file. Time to disappear.
+
+cmu-bounty-evidence-prints = fingerprints
+
+cmu-bounty-evidence-dna = DNA
+
+cmu-bounty-evidence-history = Matching {$kind} recovered from {$item}.
+
+wanted-poster-verb-text = Print wanted posters
+
+wanted-poster-printed = Printed {$count} wanted posters.
+
+wanted-poster-none = No active bounties to print.
+
+wanted-poster-content = {$name} is wanted by the Colonial Marshals Bureau.
+
+    Bounty: ${$bounty}, payable on capture.
+
+    {$reason}
+
+    Report sightings to your local Marshal's office.
+
+cmu-cannibal-diet = { CAPITALIZE(THE($food)) } turns your stomach. Only meat can sustain a hunger like yours.
+
+cmu-summary-header = {"["}bold][color=#d1b85d]Colony Underworld:[/color][/bold]

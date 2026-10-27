@@ -78,3 +78,54 @@ insfor-sapper-snare-cutting = Вы начинаете разрезать пет�
 insfor-sapper-snare-cut-free = Петля перерезана, и вы падаете на землю.
 insfor-sapper-atm-message-title = Устройство для выкачивания средств
 insfor-sapper-atm-message-prompt = Оставьте сообщение на экране банкомата до завершения его самовосстановления (необязательно, до {$max} символов)
+
+insfor-sapper-workbench-window-title = Sapper's Workbench
+
+insfor-sapper-workbench-tab-gunsmithing = Gunsmithing
+
+insfor-sapper-workbench-tab-fabrication = Fabrication
+
+insfor-sapper-workbench-no-weapon-loaded = No weapon loaded
+
+insfor-sapper-workbench-take-weapon-button = Take Weapon
+
+insfor-sapper-workbench-attachment-slots = Attachment Slots
+
+insfor-sapper-workbench-load-weapon-slots = Load a weapon to show its slots.
+
+insfor-sapper-workbench-buffs-debuffs = Buffs / Debuffs
+
+insfor-sapper-workbench-no-modifiers = No attachment modifiers applied.
+
+insfor-sapper-workbench-empty = empty
+
+insfor-sapper-workbench-slot = { $slot }: { $attachment }
+
+insfor-sapper-workbench-add = +Add
+
+insfor-sapper-workbench-remove = -Remove
+
+insfor-sapper-workbench-materials = Materials
+
+insfor-sapper-workbench-no-materials-loaded = No materials loaded
+
+insfor-sapper-workbench-material = { $name }: { $count }
+
+insfor-sapper-workbench-eject = Eject
+
+insfor-sapper-workbench-loose-help = Loose Ingredients Help
+
+insfor-sapper-workbench-loose-help-description = These must lie loose on or next to the bench to be consumed:
+
+insfor-sapper-workbench-ingredient = x{ $count } { $name }
+
+insfor-sapper-workbench-craft = Craft
+
+insfor-sapper-workbench-no-materials = No materials
+
+insfor-sapper-workbench-material-cost = { $name } { $count }
+
+cmu-sapper-atm-logins-leaked = The rig also dumps {$count} cached card {$count ->
+    [one] login
+   *[other] logins
+} with PINs. Use the rig in hand to read them.

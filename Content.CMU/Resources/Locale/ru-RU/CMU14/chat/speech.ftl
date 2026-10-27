@@ -1,2 +1,6 @@
 chat-speech-verb-name-working-joe = Рабочий Джо
 chat-speech-verb-working-joe-1 = холодно произносит
+
+cmu-emote-speech-muffled = ...
+
+cmu-emote-speech-unheard = ...

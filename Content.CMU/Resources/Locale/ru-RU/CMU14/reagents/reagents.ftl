@@ -44,3 +44,35 @@ reagent-name-purple-plasma = Фиолетовая плазма
 reagent-desc-purple-plasma = Плазма с фиолетовым оттенком...
 reagent-name-royal-plasma = Королевская плазма
 reagent-desc-royal-plasma = Тёмно-фиолетовая плазма...
+
+reagent-name-botanical-ammonia = Plant-based ammonia
+
+reagent-desc-botanical-ammonia = Ammonia drawn from plant matter. Feeds crops, poisons crew.
+
+reagent-name-botanical-diethylamine = Plant-based diethylamine
+
+reagent-desc-botanical-diethylamine = A potent fertilizer distilled from plant matter.
+
+reagent-name-botanical-unstable-mutagen = Plant-based unstable mutagen
+
+reagent-desc-botanical-unstable-mutagen = A mutagenic compound extracted from mutated flora. Encourages cancerous growths in humans.
+
+reagent-name-botanical-phenol = Plant-based phenol
+
+reagent-desc-botanical-phenol = A plant-derived phenol. Reeks of whiskey and scrambles nerves.
+
+reagent-name-botanical-amatoxin = Plant-based amatoxin
+
+reagent-desc-botanical-amatoxin = A mushroom-derived toxin that taxes the body the longer it lingers.
+
+reagent-name-oleoresin-capsicum = Oleoresin capsicum
+
+reagent-desc-oleoresin-capsicum = A concentrated pepper extract used in pepper spray. Extremely painful in the eyes.
+
+reagent-name-capsicum-neutralizer = Capsicum neutralizer
+
+reagent-desc-capsicum-neutralizer = A soothing saline wash that neutralizes pepper spray.
+
+reagent-name-cmu-tear-gas = tear gas
+
+reagent-desc-cmu-tear-gas = A lachrymatory agent. Harmless in a beaker, miserable as a smoke.

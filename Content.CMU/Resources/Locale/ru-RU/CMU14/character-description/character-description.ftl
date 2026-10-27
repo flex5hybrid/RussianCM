@@ -85,3 +85,47 @@ faction-roster-print-content = [head=2]ЛИЧНОЕ ДЕЛО[/head]
 
     {"["}bold]Общие сведения[/bold]
     {$general}
+
+detailed-examine-verb-message = View their detailed character description.
+
+faction-roster-console-heading = PERSONNEL ROSTER
+
+faction-roster-console-count-filtered = { $shown } OF { $count } ON FILE
+
+faction-roster-console-search = Search by name or job...
+
+faction-roster-console-empty = NO PERSONNEL ON FILE
+
+faction-roster-console-no-match = NO MATCHING PERSONNEL
+
+faction-roster-console-open = OPEN >
+
+faction-roster-console-footer = Select a record to open the full dossier.
+
+faction-roster-dossier-subheading = { $job } // PERSONNEL DOSSIER
+
+faction-roster-dossier-short-examine = At a Glance
+
+faction-roster-dossier-statistics = Vital Statistics
+
+faction-roster-dossier-not-recorded = Not recorded
+
+faction-roster-dossier-none = Nothing on file.
+
+faction-roster-dossier-footer = Records are self-reported and may be incomplete.
+
+cmu-edit-description-verb = Edit Description
+
+cmu-edit-description-title = Edit Description
+
+cmu-edit-description-hint = Changes only last for this round. Your saved character isn't affected.
+
+cmu-edit-description-short = Short Examine Text
+
+cmu-edit-description-full = Full Character Description
+
+cmu-edit-description-limit = { $count }/{ $max }
+
+cmu-edit-description-save = Save
+
+cmu-edit-description-cancel = Cancel

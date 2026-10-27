@@ -36,3 +36,9 @@ chat-radio-icsc = НКВС
 chat-radio-cca = КЦА
 chat-radio-vai = VAI
 chat-radio-part = Продиджи
+
+chat-radio-govforfoxtrot = FOXT
+
+chat-radio-opforvictor = VICT
+
+chat-radio-raiders = RAID

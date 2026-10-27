@@ -41,3 +41,5 @@ cmu-lobby-clock-docked = Раунд через {$time}
 cmu-lobby-clock-docked-paused = Начало раунда приостановлено
 cmu-lobby-clock-docked-soon = Раунд скоро начнётся
 cmu-lobby-clock-docked-now = Раунд начинается
+
+cmu-lobby-clock-loading-map = Loading map…

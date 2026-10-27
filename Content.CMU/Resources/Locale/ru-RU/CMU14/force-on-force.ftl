@@ -42,3 +42,5 @@ cmu-fof-hijack-join = Присоединиться — телепортиров�
 cmu-fof-hijack-stay = Остаться здесь
 cmu-fof-hijack-join-unavailable = Транспортировка больше недоступна. Вы остались на месте.
 cmu-fof-launch-preparing = Вражеский десантный корабль готовится к вылету на посадочную зону. Расчётное время: 3 минуты. Запросите вылет в течение этого времени, чтобы отправиться одновременно с ним.
+
+cmu-admin-tablet-faction-switch = Switch to {$faction}

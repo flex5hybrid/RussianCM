@@ -102,3 +102,15 @@ au14-spawn-role-name-wy-scientist = Учёный Ве-Ю
 cmu-colony-name-atmosian = Атмосферный техник колонии
 
 cmu-spawn-role-auxiliary-staff-opfor = Вспомогательный персонал (OPFOR)
+
+cmu-job-name-bosenmori-colonist = Colonist
+
+cmu-job-name-bosenmori-surgeon = Surgeon
+
+cmu-job-name-bosenmori-engineer = Engineer
+
+cmu-job-name-bosenmori-nspa = NSPA Constable
+
+cmu-job-description-bosenmori-colonist = You are a colonist of Bosenmori Basho. You saw those... things... kill your friends. All you can do now is try to survive.
+
+cmu-job-rules-bosenmori-colonist = You are a civilian. You are NEUTRAL to all factions unless provoked. You are aware of the threat but not how it functions or operates.

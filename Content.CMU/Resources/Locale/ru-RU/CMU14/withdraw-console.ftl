@@ -34,3 +34,33 @@ withdraw-console-round-end-stalemate = Обе фракции согласили�
 
 # Для колонии
 withdraw-console-colony-evac-enabled = Вывод сил колонии подтверждён. Системы заправки спасательных шлюпок активированы. Эвакуация будет разрешена на отметке в 10 минут.
+
+withdraw-console-gamemode-disabled = Withdrawal is not possible when responding to a distress signal.
+
+withdraw-console-ui-title = Withdraw Console
+
+withdraw-console-ui-initiate = Initiate Withdraw
+
+withdraw-console-ui-cancel = Cancel Withdrawal
+
+withdraw-console-ui-confirm = CONFIRM
+
+withdraw-console-ui-crt-heading = WITHDRAWAL CONTROL
+
+withdraw-console-ui-crt-heading-faction = WITHDRAWAL CONTROL // { $faction }
+
+withdraw-console-ui-crt-subheading = OPERATION TERMINATION PROTOCOL // DUAL AUTHORIZATION
+
+withdraw-console-ui-crt-auth = COMMAND AUTHORIZATION
+
+withdraw-console-ui-crt-timer = TIME TO WITHDRAWAL
+
+withdraw-console-ui-crt-stalemate-proposed = STALEMATE PROPOSED
+
+withdraw-console-ui-crt-status-locked = LOCKED
+
+withdraw-console-ui-crt-status-ready = ARMED
+
+withdraw-console-ui-crt-status-active = WITHDRAWING
+
+withdraw-console-ui-crt-status-concluded = CONCLUDED

@@ -608,3 +608,481 @@ cmu-yautja-blooding-call-three-experienced = Группа опытных мол�
 cmu-yautja-blooding-call-three-mixed = Группа молодых охотников разного опыта (от двух до трёх участников)
 
 cmu-yautja-blooding-call-pack = Охотничья стая молодых охотников (от четырёх до шести участников)
+
+cmu-yautja-cloak-sputter-rain = Rain patters across your cloak, scattering it into flickering static!
+
+cmu-yautja-mark-section-selection = Mark Selected Target
+
+cmu-yautja-mark-view-instruction = Nearby Targets contains your eight latest sightings. Marked History keeps every target you have marked.
+
+cmu-yautja-mark-reason-required = Reason required for thrall and blooded marks
+
+cmu-yautja-mark-no-history = You have not marked any targets yet.
+
+cmu-yautja-mark-selection-instruction = Select a target above, then choose the mark you want to apply.
+
+cmu-yautja-mark-known-marks = Known marks: {$marks} | {$status}
+
+cmu-yautja-mark-target-available = target available
+
+cmu-yautja-mark-target-unavailable = target unavailable; record retained for reference
+
+cmu-yautja-mark-desired-kind = Mark to apply
+
+cmu-yautja-mark-existing-kind = Your existing mark
+
+cmu-yautja-mark-no-owned-mark = You have no existing marks on this target. Use Apply New Mark above.
+
+cmu-yautja-thrall-raise-invalid = The bracer cannot raise that. Only intact dead humanoids can serve.
+
+cmu-yautja-thrall-raise-limit = Too many raised thralls already walk. The bracer cannot sustain another until one of them falls.
+
+cmu-yautja-thrall-raised-others = {$target} shudders back to a twisted semblance of life!
+
+cmu-yautja-thrall-raised-examine = Their skin has an ashen pallor, and their movements carry a subtle wrongness.
+
+cmu-yautja-thrall-raise-cover-refuse = The corrupted flesh rejects the covering.
+
+cmu-yautja-thrall-takeover-notice = You are a thrall, bound in service to the Yautja hunter {$master}. They raised you from the dead; follow their orders. You are not friendly to marines or xenos.
+
+cmu-yautja-thrall-ghost-role-name = Bad Blood Thrall
+
+cmu-yautja-thrall-ghost-role-description = Raised from the dead by a Bad Blood's scavenged technology. Serve your new master.
+
+cmu-yautja-thrall-ghost-role-rules = You are bound to the Bad Blood who raised you. Follow their orders. You are not friendly to marines or xenos.
+
+cmu-yautja-weapon-refuse = Your hands reject the crude mechanisms of human weaponry.
+
+ent-CMUActionYautjaRaiseThrall = Raise Thrall
+    .desc = Revive a dead humanoid as a thrall, claimable by ghosts. Costs bracer power.
+
+cmu-yautja-mark-view-recent = Nearby Targets
+
+cmu-yautja-mark-view-history = Marked History
+
+cmu-yautja-mark-view-recent-detail = Recently seen targets must be nearby when you place their first mark.
+
+cmu-yautja-mark-view-history-detail = Previous marked targets remain here. You can change or remove your marks at any distance.
+
+cmu-yautja-mark-previous = Previous
+
+cmu-yautja-mark-next = Next
+
+cmu-yautja-mark-page = Page {$page}/{$pages}
+
+cmu-yautja-mark-history-summary = {$count} saved target record(s) on this page.
+
+cmu-yautja-mark-change = Change Existing
+
+cmu-yautja-mark-prey-detail = Claims one living humanoid or xeno as your active hunt.
+
+cmu-yautja-mark-honored-detail = Identifies a humanoid whose conduct deserves honor.
+
+cmu-yautja-mark-dishonored-detail = Identifies a humanoid or xeno as dishonorable.
+
+cmu-yautja-mark-gear-carrier-detail = Identifies a humanoid carrying Yautja equipment.
+
+cmu-yautja-mark-thrall-detail = Binds a non-Yautja humanoid to you as a thrall.
+
+cmu-yautja-mark-student-detail = Identifies another Yautja as your student.
+
+cmu-yautja-mark-blooded-detail = Recognizes a non-Yautja humanoid as blooded.
+
+cmu-yautja-mark-unknown-detail = Unknown designation.
+
+cmu-yautja-mark-applied-target = A Yautja hunter marked you as {$kind}.
+
+cmu-yautja-mark-changed = You changed {$target}'s mark from {$old} to {$new}.
+
+cmu-yautja-mark-changed-target = A Yautja hunter changed your mark from {$old} to {$new}.
+
+cmu-yautja-mark-removed = You removed {$kind} from {$target}.
+
+cmu-yautja-mark-removed-target = A Yautja hunter removed your {$kind} mark.
+
+cmu-yautja-recall-bound = {$item} is now bound to you.
+
+cmu-yautja-recall-acid = Your bound weapon is covered in acid and cannot be recalled.
+
+cmu-yautja-recall-contained = Your bound weapon is enclosed and cannot be recalled.
+
+cmu-yautja-recall-hands-full = You need a free hand to recall a weapon.
+
+cmu-yautja-butcher-verb = Butcher corpse
+
+reagent-name-cmu-yautja-analgesic = Yautja analgesic
+
+reagent-desc-cmu-yautja-analgesic = A fast-clearing alien analgesic formulated to keep a wounded hunter functional.
+
+cmu-yautja-cloak-blocked-combat = Your cloak cannot stabilize so soon after striking. Wait { $seconds } seconds.
+
+name-identifier-format-abomination = Abomination-{$number}
+
+cmu-yautja-cloak-blocked-acid = You are covered in acid. The cloak cannot stabilize.
+
+cmu-yautja-cloak-blocked-fire = You are on fire. The cloak cannot stabilize.
+
+cmu-yautja-cloak-blocked-dot = Ongoing injuries prevent the cloak from stabilizing.
+
+cmu-yautja-cloak-blocked-water = Rain is hammering down on you. The cloak cannot stabilize.
+
+ent-CMUActionYautjaHonorRoar = Honor Roar
+
+ent-CMUActionYautjaHuntingLeap = Hunting Leap
+    .desc = Play the Yautja death laugh.
+
+cmu-job-supervisors-yautja-youngblood = the Blooded and higher ranks
+
+cmu-job-supervisors-yautja-hellhound = your bonded master, then the Blooded and higher ranks
+
+cmu-yautja-preserve-edge-confirm = Are you sure you want to traverse the fog and escape the preserve?
+
+cmu-yautja-preserve-edge-yes = Yes
+
+cmu-yautja-preserve-edge-no = No
+
+cmu-yautja-preserve-edge-yautja-denied = Why would you do this?
+
+cmu-yautja-preserve-edge-start = You begin to make your escape!
+
+cmu-yautja-preserve-edge-cancelled = You lose your way and come back.
+
+cmu-yautja-preserve-edge-escaped = You have escaped from the hunting grounds!
+
+cmu-yautja-repair-damaged = It has been damaged by long use and poor maintenance.
+
+cmu-yautja-repair-worn = It has been worn from long use and poor maintenance.
+
+cmu-yautja-repair-damaged-they = They have been damaged by long use and poor maintenance.
+
+cmu-yautja-repair-reinforced = It has been reinforced to be more protective.
+
+cmu-yautja-hivebreaker-consent-title = Submit?
+
+cmu-yautja-hivebreaker-consent-message = Do you wish to be Enthralled by the Bad Blood?
+
+cmu-weyu-hivebreaker-consent-message = Do you wish to be Enthralled by whoever holds the device?
+
+cmu-weyu-hivebreaker-enthralled-target = We have been enthralled by a tallhost and its strange device!
+
+cmu-yautja-chain-gauntlet-chain-message = GET OVER HERE!
+
+cmu-yautja-spike-launcher-nonyautja-examine = Looks like some kind of...mechanical donut.
+
+cmu-yautja-power-examine-left-attachment = The left bracer attachment is {$item}.
+
+cmu-yautja-power-examine-right-attachment = The right bracer attachment is {$item}.
+
+cmu-yautja-power-examine-badblood = This belongs to a bad-blood!
+
+cmu-yautja-shoulder-gear-examine = {$item} is on their shoulder.
+
+cmu-yautja-cannon-pack-examine-charge = It currently has {$charge}/{$max} charge.
+
+cmu-yautja-plasma-rifle-nonyautja-examine = This thing looks like an alien rifle of some kind. Strange.
+
+cmu-yautja-plasma-rifle-low-power = The rifle does not have enough power remaining!
+
+cmu-yautja-plasma-rifle-max-charge = The plasma rifle hums as it achieves maximum charge.
+
+cmu-yautja-plasma-carbine-nonyautja-examine = This thing looks like a rifle, but there's no mag or proper barrel. What the hell is it?
+
+cmu-yautja-plasma-carbine-primary-fire-mode = It is set to fire incendiary plasma bolts.
+
+cmu-yautja-plasma-carbine-secondary-fire-mode = It is set to fire impact-explosive plasma bolts.
+
+cmu-yautja-plasma-carbine-max-charge = The plasma carbine hums as it achieves maximum charge.
+
+cmu-yautja-defoliator-nonyautja-examine = Looks like some massively fucked up alien flamethrower.
+
+cmu-yautja-plasma-pistol-nonyautja-examine = This thing looks like an alien gun of some kind. Strange.
+
+cmu-yautja-plasma-pistol-primary-fire-mode = It is set to fire plasma bolts.
+
+cmu-yautja-plasma-pistol-secondary-fire-mode = It is set to fire incendiary plasma bolts.
+
+cmu-yautja-plasma-pistol-max-charge = The plasma pistol hums as it achieves maximum charge.
+
+cmu-yautja-chain-gauntlet-examine-combo = Stack up your combo meter by using [color=red]HARM[/color] intent, then use those combo stacks on different intents for different finishers.
+
+cmu-yautja-chain-gauntlet-examine-help = Finish your combo on [color=green]HELP[/color] intent to slam the target into the ground, incapacitating them for a few seconds. Humanoids also take extra damage.
+
+cmu-yautja-chain-gauntlet-examine-shove = Finish your combo on [color=blue]SHOVE[/color] intent to throw the target away. Chains wrapped around the gauntlet will pull them back, and the special ability increases the throw range.
+
+cmu-yautja-chain-gauntlet-examine-grab = Finish your combo on [color=orange]GRAB[/color] intent to execute the target instantly. They must already be unconscious or in critical condition.
+
+cmu-yautja-hunt-escape-console-dialog-message = Do you wish to close or open the shutter?
+
+cmu-yautja-bracer-attachment-right = Right
+
+cmu-yautja-bracer-attachment-left = Left
+
+cmu-yautja-choice-wrist-blades = Wrist Blades
+
+cmu-yautja-choice-scimitar = Combi Scimitar
+
+cmu-yautja-choice-chain-gauntlet = Chain Gauntlet
+
+cmu-yautja-polished-name = polished {$name}
+
+cmu-yautja-scalp-name = {$name}'s scalp
+
+cmu-yautja-scalp-biography-thrall = enthralled by {$master} for «{$reason}»
+
+cmu-yautja-scalp-biography-honored = honored for «{$reason}»
+
+cmu-yautja-scalp-biography-dishonored = marked as dishonorable for «{$reason}»
+
+cmu-yautja-scalp-biography-gear-carrier = killed after {$hunter} marked {$them} as a thief of Yautja equipment
+
+cmu-yautja-scalp-biography-two = {$first} and {$second}
+
+cmu-yautja-scalp-biography-many = {$entries}, and {$last}
+
+cmu-yautja-scalp-biography-record = {$name}: {$biography}.
+
+cmu-yautja-scalp-prey-unworthy = {$hunter} had the unpleasant duty of running {$them} to ground.
+
+cmu-yautja-scalp-prey-first = An honourable first trophy for a truly precocious child. {$hunter}'s parents must be so proud.
+
+cmu-yautja-scalp-prey-success = This trophy was taken by {$hunter} after a successful hunt.
+
+cmu-yautja-scalp-prey-fine = This fine trophy was taken by {$hunter} after a successful hunt.
+
+cmu-yautja-scalp-worth-shameful = This is the scalp of a human who was even more shameful than usual.
+
+cmu-yautja-scalp-worth-honorable = This is the scalp of a human.
+
+cmu-yautja-scalp-worth-irrelevant = This is the scalp of an irrelevant human.
+
+cmu-yautja-scalp-worth-dishonored = This is the scalp of a human who could have been worthy, had {$they} not insisted on disgracing {$themselves}.
+
+cmu-yautja-scalp-worth-respectable = This is the scalp of a respectable human with blood on {$their} hands.
+
+cmu-yautja-scalp-worth-destructive = This is the scalp of an uncommonly destructive human.
+
+cmu-yautja-scalp-worth-worthy = This is the scalp of a truly worthy human, no doubt descended from many storied warriors. {$theirCapitalized} arms were soaked to the elbows with the life-blood of many.
+
+cmu-yautja-tracker-readout-dead = Your bracer shows a readout of deceased Yautja bio signatures{$locations}.
+
+cmu-yautja-tracker-readout-gear = Your bracer shows a readout of Yautja technology signatures{$locations}.
+
+cmu-yautja-tracker-closest-owner =  <b>{$name}</b>'s
+
+cmu-yautja-tracker-closest-item = , a <b>{$name}</b>,
+
+cmu-yautja-tracker-closest-on-top = You are directly on top of the{$signature} signature.
+
+cmu-yautja-tracker-closest-away = The closest signature{$signature} is {$distance} paces <b>{$direction}</b> in <b>{$area}</b>.
+
+cmu-yautja-tracker-no-signatures = There are no signatures that require your attention.
+
+cmu-yautja-tracker-location-hunting-grounds = , <b>{$count}</b> in the hunting grounds
+
+cmu-yautja-tracker-location-orbit = , <b>{$count}</b> in orbit
+
+cmu-yautja-tracker-location-low-orbit = , <b>{$count}</b> in low orbit
+
+cmu-yautja-tracker-unknown-area = Unknown
+
+cmu-yautja-tracker-direction-north = north
+
+cmu-yautja-tracker-direction-northeast = northeast
+
+cmu-yautja-tracker-direction-southeast = southeast
+
+cmu-yautja-tracker-direction-south = south
+
+cmu-yautja-tracker-direction-southwest = southwest
+
+cmu-yautja-tracker-direction-northwest = northwest
+
+cmu-yautja-tracker-direction-unknown = unknown direction
+
+cmu-yautja-profile-legacy-armor = {$set} legacy armor
+
+cmu-yautja-profile-unique-armor = {$set} unique armor
+
+cmu-yautja-profile-legacy-mask = {$set} legacy bio-mask
+
+cmu-yautja-profile-unique-mask = {$set} unique bio-mask
+
+cmu-yautja-profile-legacy-greaves = {$set} legacy greaves
+
+cmu-yautja-profile-unique-greaves = {$set} unique greaves
+
+cmu-yautja-profile-legacy-bracers = {$set} legacy bracers
+
+cmu-yautja-profile-clan-bracers = {$set} clan bracers
+
+cmu-yautja-profile-shoulder-caster = {$material} shoulder plasma caster
+
+cmu-yautja-profile-pattern = {$material} {$item}, pattern {$style}
+
+cmu-yautja-profile-no-accessory = None
+
+cmu-yautja-profile-mask-accessory = {$material} mask accessory {$style}
+
+cmu-yautja-profile-cape-battle-worn = battle-worn cape
+
+cmu-yautja-profile-sound-retro = Retro
+
+cmu-yautja-profile-sound-modern = Modern
+
+cmu-yautja-caster-fire-mode = It is set to fire {$mode}.
+
+cmu-yautja-tracker-approximate-distance = approximately <b>{$distance}</b>
+
+cmu-yautja-scalp-pronoun-male-they = he
+
+cmu-yautja-scalp-pronoun-male-their = his
+
+cmu-yautja-scalp-pronoun-male-them = him
+
+cmu-yautja-scalp-pronoun-male-themselves = himself
+
+cmu-yautja-scalp-pronoun-female-they = she
+
+cmu-yautja-scalp-pronoun-female-their = her
+
+cmu-yautja-scalp-pronoun-female-them = her
+
+cmu-yautja-scalp-pronoun-female-themselves = herself
+
+cmu-yautja-scalp-pronoun-neutral-they = they
+
+cmu-yautja-scalp-pronoun-neutral-their = their
+
+cmu-yautja-scalp-pronoun-neutral-them = them
+
+cmu-yautja-scalp-pronoun-neutral-themselves = themselves
+
+cmu-yautja-profile-skin-tan = tan
+
+cmu-yautja-profile-skin-green = green
+
+cmu-yautja-profile-skin-purple = purple
+
+cmu-yautja-profile-skin-blue = blue
+
+cmu-yautja-profile-skin-red = red
+
+cmu-yautja-profile-skin-black = black
+
+cmu-yautja-profile-eye-gold = gold
+
+cmu-yautja-profile-eye-amber = amber
+
+cmu-yautja-profile-eye-copper = copper
+
+cmu-yautja-profile-eye-red = red
+
+cmu-yautja-profile-eye-jade = jade
+
+cmu-yautja-profile-eye-slate = slate
+
+cmu-yautja-profile-eye-black = black
+
+cmu-yautja-profile-quills-standard = Standard
+
+cmu-yautja-profile-quills-short-thick = Short Thick
+
+cmu-yautja-profile-quills-straight-thin = Straight Thin
+
+cmu-yautja-profile-quills-long-tied = Long Tied
+
+cmu-yautja-profile-quills-short-thin = Short Thin
+
+cmu-yautja-profile-quills-long-curved = Long Curved
+
+cmu-yautja-profile-quills-long-straight = Long Straight
+
+cmu-yautja-profile-quills-long-wide = Long Wide
+
+cmu-yautja-profile-quills-short-wide = Short Wide
+
+cmu-yautja-emp-observer = You hear a hiss and crackle!
+
+cmu-yautja-emp-wearer = Your bracers hiss and spark!
+
+cmu-yautja-hunting-ground-jungle-moon = Jungle Moon
+
+cmu-yautja-hunting-ground-desert-moon = Desert Moon
+
+cmu-yautja-hunt-call-tribal-small = Tribals (small)
+
+cmu-yautja-hunt-call-tribal-group = Tribals (group)
+
+cmu-yautja-hunt-call-tribal-large = Tribals (large)
+
+cmu-yautja-blooding-call-solo = Solo Youngblood (one member)
+
+cmu-yautja-blooding-call-solo-experienced = Solo Youngblood (one experienced member)
+
+cmu-yautja-arrow-name-inert-dynamic = inert dynamic arrow
+
+cmu-yautja-arrow-name-explosive-dynamic = explosive dynamic arrow
+
+cmu-yautja-arrow-name-emp-dynamic = EMP dynamic arrow
+
+cmu-yautja-arrow-name-activated-explosive = activated explosive arrow
+
+cmu-yautja-arrow-name-activated-emp = activated EMP arrow
+
+cmu-yautja-arrow-name-snare = snare arrow
+
+cmu-yautja-arrow-name-inert = inert arrow
+
+cmu-yautja-arrow-warhead-emp = EMP
+
+cmu-yautja-arrow-warhead-explosive = Explosive
+
+cmu-yautja-tracker-dead-signature = deceased Yautja bio signature
+
+cmu-yautja-hivebreaker-dishonored-reason = Enthralled to a Bad Blood!
+
+cmu-yautja-badblood-hive-name = Bad Blood hive
+
+cmu-yautja-blooded-name-prompt = Enter the newblood's new name.
+
+cmu-yautja-blooded-name-title = Blooded Name
+
+cmu-yautja-lobby-filter = Filter
+
+cmu-yautja-lobby-bracer-section-core = Retro / ebony / silver
+
+cmu-yautja-lobby-bracer-section-premium = Bronze / crimson / bone
+
+cmu-yautja-lobby-bracer-section-legacy = Legacy
+
+cmu-yautja-admin-youngblood-description = Creates a Youngblood hunting-ground call without eligibility checks.
+
+cmu-yautja-admin-youngblood-help = Usage: yautja_youngblood_call <call id>
+
+cmu-yautja-admin-youngblood-no-console = No blooding console is available.
+
+cmu-yautja-admin-youngblood-no-ground = No hunting ground is active. Select one at the hunter flight console first.
+
+cmu-yautja-admin-youngblood-no-spawn = No Yautja ship Youngblood spawn is available.
+
+cmu-yautja-admin-youngblood-unknown-call = Unknown Youngblood call id: {$id}
+
+cmu-yautja-admin-youngblood-create-failed = Unable to create the Youngblood call.
+
+cmu-yautja-admin-youngblood-created = Created Youngblood call {$id} without eligibility checks.
+
+cmu-yautja-admin-youngblood-call-id = <call id>
+
+cmu-yautja-youngblood-raffle-unavailable = This Youngblood raffle or your eligibility data is not available yet. Please try again shortly.
+
+cmu-yautja-youngblood-raffle-restricted = You cannot join this Youngblood raffle with an adult Yautja whitelist or a Youngblood role ban.
+
+cmu-yautja-youngblood-raffle-maximum = Your Youngblood playtime exceeds the eligibility range for this call (limit: {$hours} hours).
+
+cmu-yautja-youngblood-raffle-minimum = This call requires at least {$hours} hours of Youngblood experience.
+
+cmu-yautja-youngblood-raffle-experience = This call requires at least {$hours} hours in squad roles and {$hours} hours as a xeno.
+
+cmu-yautja-medicomp-empty-gun = The healing gun is empty.
+
+cmu-yautja-medicomp-stabilized = You stabilize the wounds.
