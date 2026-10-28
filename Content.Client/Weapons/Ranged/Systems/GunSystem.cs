@@ -627,6 +627,7 @@ public sealed partial class GunSystem : SharedGunSystem
         }
 
         ConfigureMuzzleFlashLight(ent, light, Lights); // CMU14
+        EntityManager.System<Content.Client.CMU14.Lighting.CinematicReactiveLightSystem>().MuzzleFlash(ent); // CMU14
 
         var animTwo = new Animation()
         {

@@ -1,0 +1,28 @@
+#include "/Shaders/Internal/shadow_cast_shared.swsl"
+
+const highp float g_MinVariance = 0.0;
+
+uniform highp vec2 target_size;
+uniform highp vec2 world_origin;
+uniform highp vec2 world_x;
+uniform highp vec2 world_y;
+uniform highp vec2 eye_position;
+uniform bool draw_fov;
+uniform sampler2D fov_map;
+
+highp vec2 frameUv(highp vec2 fragmentPosition)
+{
+    return fragmentPosition / target_size;
+}
+
+highp vec2 frameWorld(highp vec2 uv)
+{
+    return world_origin + world_x * uv.x + world_y * uv.y;
+}
+
+highp float visibleAt(highp vec2 position)
+{
+    if (draw_fov && doesOcclude(position - eye_position, fov_map, 0.75, -0.75 / 32.0))
+        return 0.0;
+    return 1.0;
+}

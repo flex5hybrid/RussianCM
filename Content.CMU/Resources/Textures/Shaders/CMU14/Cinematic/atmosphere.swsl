@@ -1,0 +1,23 @@
+light_mode unshaded;
+blend_mode add;
+
+#include "/Textures/Shaders/CMU14/Cinematic/source.swsl"
+
+uniform highp float atmosphere_density;
+uniform highp float atmosphere_strength;
+uniform highp float beam_width;
+uniform highp float beam_falloff;
+
+void fragment()
+{
+    highp vec2 world = frameWorld(frameUv(FRAGCOORD.xy));
+    if (visibleAt(emission_position) < 0.5 || visibleAt(world) < 0.5)
+        discard;
+    highp float radial = max(1.0 - length(world - source_position) / source_radius, 0.0);
+    highp float beam = sourceMask(world, beam_width);
+    highp float dust = 0.88 + 0.08 * sin(dot(world, vec2(13.1, 5.7)) + TIME * 0.45)
+        * sin(dot(world, vec2(-3.7, 11.2)) - TIME * 0.3);
+    highp float amount = pow(radial, beam_falloff) * beam * atmosphere_density
+        * atmosphere_strength * source_energy * dust;
+    COLOR = vec4(source_color * amount, 1.0);
+}

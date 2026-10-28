@@ -1,0 +1,30 @@
+light_mode unshaded;
+blend_mode add;
+
+#include "/Textures/Shaders/CMU14/Cinematic/source.swsl"
+
+uniform sampler2D scene_texture;
+uniform highp vec2 emission_size;
+uniform highp float emission_threshold;
+uniform highp float bloom_strength;
+uniform bool procedural_emission;
+
+void fragment()
+{
+    highp vec2 uv = frameUv(FRAGCOORD.xy);
+    highp vec2 world = frameWorld(uv);
+    if (visibleAt(emission_position) < 0.5 || visibleAt(world) < 0.5)
+        discard;
+    highp vec2 delta = (world - emission_position) / max(emission_size, vec2(0.02));
+    highp float shape = exp(-dot(delta, delta) * 2.8);
+    highp vec3 scene = texture2D(scene_texture, uv).rgb;
+    highp float brightness = max(max(scene.r, scene.g), scene.b);
+    highp float extraction = smoothstep(max(0.0, emission_threshold - 0.12), emission_threshold + 0.12, brightness);
+    if (procedural_emission)
+        extraction = 1.0;
+    highp vec3 hue = mix(scene / max(brightness, 0.001), source_color, 0.65);
+    if (procedural_emission)
+        hue = source_color;
+    highp float amount = shape * extraction * bloom_strength * source_energy;
+    COLOR = vec4(hue * amount, 1.0);
+}

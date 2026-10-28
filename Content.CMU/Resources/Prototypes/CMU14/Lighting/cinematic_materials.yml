@@ -1,0 +1,39 @@
+- type: cmuCinematicMaterial
+  id: CMUOrdinarySurface
+  reflectivity: 0
+  roughness: 1
+
+- type: cmuCinematicMaterial
+  id: CMUMatteMetal
+  reflectivity: 0.14
+  roughness: 0.78
+  priority: 1
+  tiles: [ CMFloorSteel, CMFloorPlating, FloorSteel, Plating, FloorReinforced, FloorMetalDiamond ]
+
+- type: cmuCinematicMaterial
+  id: CMUPolishedMetal
+  reflectivity: 0.33
+  roughness: 0.3
+  priority: 2
+  tiles: [ CMFloorPlate, RMCFloorMono ]
+
+- type: cmuCinematicMaterial
+  id: CMUTile
+  reflectivity: 0.2
+  roughness: 0.64
+  priority: 3
+  tiles: [ CMFloorWhite, CMFloorWhiteSterile, CMFloorSterile, CMFloorOffice, FloorWhite, FloorKitchen, FloorLino ]
+
+- type: cmuCinematicMaterial
+  id: CMUWetFloor
+  reflectivity: 0.28
+  roughness: 0.4
+  stretch: 0.9
+
+- type: cmuCinematicMaterial
+  id: CMUGlass
+  reflectivity: 0.24
+  roughness: 0.28
+  stretch: 0.22
+  priority: 4
+  tiles: [ FloorGlass, FloorRGlass, FloorGlassPlasma ]

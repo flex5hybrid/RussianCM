@@ -1,0 +1,24 @@
+- type: shader
+  id: CMUCinematicEmission
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/emission.swsl
+
+- type: shader
+  id: CMUCinematicDownsample
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/downsample.swsl
+
+- type: shader
+  id: CMUCinematicSpill
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/spill.swsl
+
+- type: shader
+  id: CMUCinematicAtmosphere
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/atmosphere.swsl
+
+- type: shader
+  id: CMUCinematicComposite
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/composite.swsl

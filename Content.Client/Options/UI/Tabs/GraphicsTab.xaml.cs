@@ -25,6 +25,20 @@ public sealed partial class GraphicsTab : Control
         Control.AddOptionCheckBox(CCVars.AmbientOcclusion, AmbientOcclusionCheckBox);
         Control.AddOption(new OptionFullscreen(Control, _cfg, FullscreenCheckBox));
         Control.AddOption(new OptionLightingQuality(Control, _cfg, DropDownLightingQuality));
+        // CMU14 Begin: archived cinematic lighting controls.
+        Control.AddOptionDropDown(CCVars.CMUCinematicLighting, DropDownCinematicLighting,
+        [
+            new OptionDropDownCVar<int>.ValueOption(0, Loc.GetString("cmu-cinematic-lighting-off")),
+            new OptionDropDownCVar<int>.ValueOption(1, Loc.GetString("cmu-cinematic-lighting-low")),
+            new OptionDropDownCVar<int>.ValueOption(2, Loc.GetString("cmu-cinematic-lighting-high")),
+            new OptionDropDownCVar<int>.ValueOption(3, Loc.GetString("cmu-cinematic-lighting-ultra")),
+        ]);
+        Control.AddOptionPercentSlider(CCVars.CMUCinematicAOIntensity, CinematicAOIntensity, 0f, 2f);
+        Control.AddOptionPercentSlider(CCVars.CMUCinematicAORadius, CinematicAORadius, 0.5f, 2f);
+        Control.AddOptionPercentSlider(CCVars.CMUCinematicAtmosphere, CinematicAtmosphere);
+        DropDownCinematicLighting.Button.OnItemSelected += _ => UpdateCinematicOptionsVisibility();
+        AmbientOcclusionCheckBox.OnToggled += _ => UpdateCinematicOptionsVisibility();
+        // CMU14 End
 
         Control.AddOptionSlider(
             CCVars.ViewportSharpnessStrength,
@@ -83,6 +97,7 @@ public sealed partial class GraphicsTab : Control
         Control.AddOptionCheckBox(CCVars.HudFpsCounterVisible, FpsCounterCheckBox);
 
         Control.Initialize();
+        UpdateCinematicOptionsVisibility(); // CMU14
 
         _cfg.OnValueChanged(CCVars.ViewportMinimumWidth, _ => UpdateViewportWidthRange());
         _cfg.OnValueChanged(CCVars.ViewportMaximumWidth, _ => UpdateViewportWidthRange());
@@ -98,6 +113,15 @@ public sealed partial class GraphicsTab : Control
         MaxFpsInput.Disabled = vSync;
         MaxFpsDisplayRateButton.Disabled = vSync || _clyde.GetMainWindowMonitor() == null;
         MaxFpsContainer.Modulate = vSync ? Color.FromHex("#FFFFFF80") : Color.White;
+    }
+
+    // CMU14 method: show controls supported by the selected cinematic preset.
+    private void UpdateCinematicOptionsVisibility()
+    {
+        var advanced = DropDownCinematicLighting.Button.SelectedId >= 2;
+        CinematicAOIntensity.Visible = advanced && AmbientOcclusionCheckBox.Pressed;
+        CinematicAORadius.Visible = advanced && AmbientOcclusionCheckBox.Pressed;
+        CinematicAtmosphere.Visible = advanced;
     }
 
     private void SetMaxFpsToDisplayRate()

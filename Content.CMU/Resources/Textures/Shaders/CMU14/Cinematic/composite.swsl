@@ -1,0 +1,37 @@
+light_mode unshaded;
+blend_mode none;
+
+#include "/Textures/Shaders/CMU14/Cinematic/frame.swsl"
+
+uniform sampler2D scene_texture;
+uniform sampler2D light_texture;
+uniform sampler2D surface_texture;
+uniform sampler2D blocker_texture;
+uniform sampler2D effects_texture;
+uniform sampler2D bloom_small;
+uniform sampler2D bloom_medium;
+uniform sampler2D bloom_large;
+uniform bool surface_effects;
+
+void fragment()
+{
+    highp vec2 uv = frameUv(FRAGCOORD.xy);
+    highp vec4 scene = texture2D(scene_texture, uv);
+    highp float surface = texture2D(surface_texture, uv).a;
+    highp float visible = visibleAt(frameWorld(uv)) * surface * step(0.001, scene.a);
+    highp vec3 bloom = texture2D(bloom_small, uv).rgb * 0.5
+        + texture2D(bloom_medium, uv).rgb * 0.3 + texture2D(bloom_large, uv).rgb * 0.2;
+    bloom *= 1.0 - step(0.08, texture2D(blocker_texture, uv).r);
+    highp vec3 local = vec3(0.0);
+    if (surface_effects)
+        local = texture2D(effects_texture, uv).rgb;
+    highp vec3 lighting = texture2D(light_texture, uv).rgb;
+    highp float illumination = max(max(lighting.r, lighting.g), lighting.b);
+    highp float brightness = max(max(scene.r, scene.g), scene.b);
+    // Effects can only decorate pixels already visible under native lighting. In particular,
+    // a black creature silhouette, FOV hole, or transparent Z opening gains no information.
+    highp float readable = smoothstep(0.012, 0.10, brightness) * smoothstep(0.025, 0.15, illumination);
+    highp vec3 addition = min(bloom * 0.85 + local, vec3(0.22)) * visible * readable;
+    highp vec3 result = scene.rgb + addition * max(vec3(0.0), vec3(0.95) - scene.rgb);
+    COLOR = vec4(result, scene.a);
+}

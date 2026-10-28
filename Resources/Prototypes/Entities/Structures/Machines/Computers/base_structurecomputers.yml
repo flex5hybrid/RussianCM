@@ -5,6 +5,9 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: CMUCinematicEmitter # CMU14
+    profile: CMUTerminal
+    emissionOffset: 0, 0.25
   - type: Tag
     tags:
     - VehicleHeavyDriveOver

@@ -3,6 +3,8 @@
   id: ExplosionLight
   name: explosion light
   components:
+  - type: CMUCinematicEmitter # CMU14
+    profile: CMUExplosion
   - type: PointLight
   - type: Tag
     tags:
