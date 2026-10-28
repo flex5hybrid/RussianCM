@@ -33,6 +33,8 @@ public sealed partial class CinematicLightingSystem : EntitySystem
     private readonly HashSet<EntityUid> _seen = new();
     private long? _activeViewport;
     private CinematicLightingOverlay? _overlay;
+    private CinematicSurfaceLightingOverlay? _surfaceOverlay;
+    private CinematicIrradianceOverlay? _irradianceOverlay;
     public CinematicLightingQuality Quality { get; private set; }
     public CinematicLightingStatistics LastFrame { get; internal set; }
 
@@ -54,6 +56,13 @@ public sealed partial class CinematicLightingSystem : EntitySystem
         {
             _overlay = new CinematicLightingOverlay(EntityManager, this);
             _overlays.AddOverlay(_overlay);
+            if (Quality.SurfaceEffects)
+            {
+                _irradianceOverlay = new CinematicIrradianceOverlay(_overlay);
+                _overlays.AddOverlay(_irradianceOverlay);
+                _surfaceOverlay = new CinematicSurfaceLightingOverlay(_overlay);
+                _overlays.AddOverlay(_surfaceOverlay);
+            }
         }
         LastFrame = default;
     }
@@ -67,6 +76,18 @@ public sealed partial class CinematicLightingSystem : EntitySystem
 
     private void RemoveOverlay()
     {
+        if (_irradianceOverlay != null)
+        {
+            _overlays.RemoveOverlay(_irradianceOverlay);
+            _irradianceOverlay.Dispose();
+            _irradianceOverlay = null;
+        }
+        if (_surfaceOverlay != null)
+        {
+            _overlays.RemoveOverlay(_surfaceOverlay);
+            _surfaceOverlay.Dispose();
+            _surfaceOverlay = null;
+        }
         if (_overlay == null)
             return;
         // OverlayManager.RemoveOverlay does not call Dispose in this engine revision.
@@ -136,9 +157,20 @@ public sealed partial class CinematicLightingSystem : EntitySystem
             && (power.PowerDisabled || power.NeedsPower && !power.Powered))
             return;
 
-        if (TryComp<SpriteComponent>(uid, out var sprite)
-            && (!sprite.Visible || sprite.ContainerOccluded || sprite.Color.A <= 0.01f))
-            return;
+        TryComp<SpriteComponent>(uid, out var sprite);
+        if (sprite != null)
+        {
+            if (!sprite.Visible || sprite.Color.A <= 0.01f)
+                return;
+            if (sprite.ContainerOccluded)
+            {
+                // Hands may hide the standalone item sprite while explicitly passing its light.
+                // Retain that native light, but never draw a second item sprite over the actor.
+                if (light == null || light.ContainerOccluded)
+                    return;
+                sprite = null;
+            }
+        }
 
         // Do not let an opt-in item disclose a hidden wearer, ghost, or special visibility layer.
         var current = uid;
@@ -150,7 +182,8 @@ public sealed partial class CinematicLightingSystem : EntitySystem
                 && (!parentSprite.Visible || parentSprite.Color.A <= 0.01f))
                 return;
             if (profile.FollowParentLight && current != uid
-                && TryComp<PointLightComponent>(current, out var parentLight) && !parentLight.Enabled)
+                && TryComp<PointLightComponent>(current, out var parentLight)
+                && (!parentLight.Enabled || parentLight.ContainerOccluded))
                 return;
             if (profile.RequirePower && TryComp<ApcPowerReceiverComponent>(current, out var parentPower)
                 && (parentPower.PowerDisabled || parentPower.NeedsPower && !parentPower.Powered))
@@ -170,10 +203,8 @@ public sealed partial class CinematicLightingSystem : EntitySystem
                 && TryComp<TransformComponent>(xform.ParentUid, out var fixtureXform))
                 offset += _transform.GetWorldRotation(fixtureXform).RotateVec(fixture.Offset);
             position += offset;
-            // Native wall fixtures sit 0.005m inside the wall edge. Move the cosmetic origin
-            // outward by half a world pixel so exact geometric clipping starts on the room side.
-            if (offset.LengthSquared() > 0.01f)
-                position += Vector2.Normalize(offset) * 0.016f;
+            // Preserve Clyde's exact point. RMC map fixtures can be just 0.005m outside a
+            // wall face; a blind "outward" bias can move them into the adjacent wall.
         }
         // RMC wall fixtures move their sprite independently of the physical light point.
         // Extract bloom at the rendered sprite, while spill still originates at the native light.
@@ -181,7 +212,7 @@ public sealed partial class CinematicLightingSystem : EntitySystem
         if (sprite != null && !profile.ProceduralEmission)
             emissionPosition = entityPosition + (sprite.NoRotation ? -eye.Rotation : rotation).RotateVec(sprite.Offset);
         emissionPosition += rotation.RotateVec(emitter.EmissionOffset);
-        if (!bounds.Enlarged(0.5f).Contains(emissionPosition))
+        if (!bounds.Enlarged(Math.Clamp(profile.Radius, 0.15f, 7f)).Contains(position))
             return;
 
         var pulse = _reactive.GetPulse(emitter, profile);
@@ -190,14 +221,26 @@ public sealed partial class CinematicLightingSystem : EntitySystem
             return;
 
         var radius = Math.Clamp(MathF.Min(light?.Radius ?? profile.Radius, profile.Radius), 0.15f, 7f);
-        var color = _reactive.GetColor(uid, light?.Color ?? profile.Color);
+        var targetColor = light?.Color ?? profile.Color;
+        var saturation = MathF.Max(targetColor.R, MathF.Max(targetColor.G, targetColor.B))
+            - MathF.Min(targetColor.R, MathF.Min(targetColor.G, targetColor.B));
+        var tint = profile.Tint * (1f - Math.Clamp((saturation - 0.08f) / 0.3f, 0f, 1f));
+        // A blue lamp or saturated red/blue alert is not turned into a warm industrial fixture.
+        if (targetColor.B > targetColor.R + 0.035f && profile.Color.R > profile.Color.B)
+            tint = 0f;
+        targetColor = new Color(MathHelper.Lerp(targetColor.R, profile.Color.R, tint),
+            MathHelper.Lerp(targetColor.G, profile.Color.G, tint),
+            MathHelper.Lerp(targetColor.B, profile.Color.B, tint), targetColor.A);
+        var color = _reactive.GetColor(uid, targetColor);
         var maskRotation = light?.Rotation ?? Angle.Zero;
         if (light is { MaskAutoRotate: true })
             maskRotation += rotation;
         var distance = Vector2.DistanceSquared(position, eye.Position.Position + eye.Offset);
         var score = profile.Priority * 100f + energy * radius / (1f + distance * 0.1f);
         var source = new CinematicLightSource(uid, position, emissionPosition, radius, color, energy,
-            maskRotation, light?.LightMask, profile, score, xform.GridUid);
+            maskRotation, light?.LightMask, profile, score, xform.GridUid, sprite, entityPosition, rotation,
+            light?.Color ?? Color.Black, light?.Radius ?? 0f, light?.Energy ?? 0f,
+            light?.Falloff ?? 1f, light?.CurveFactor ?? 1f);
 
         // Insertion into a bounded array gives stable priority and avoids sorting an unbounded light set.
         var index = sources.Count;
@@ -239,7 +282,18 @@ internal readonly record struct CinematicLightSource(
     ProtoId<LightMaskPrototype>? Mask,
     CMUCinematicLightProfilePrototype Profile,
     float Score,
-    EntityUid? Grid);
+    EntityUid? Grid,
+    SpriteComponent? Sprite,
+    Vector2 EntityPosition,
+    Angle EntityRotation,
+    Color NativeColor,
+    float NativeRadius,
+    float NativeEnergy,
+    float NativeFalloff,
+    float NativeCurveFactor)
+{
+    public float GeometryRadius => MathF.Min(7f, MathF.Max(Radius, NativeRadius));
+}
 
 public readonly record struct CinematicLightingStatistics(
     int Quality,

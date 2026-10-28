@@ -85,6 +85,23 @@ public sealed class CinematicLightingGeometryTest
         Assert.That(vertices, Is.Empty);
     }
 
+    [TestCase(0.005f, -1f)]
+    [TestCase(-0.005f, 1f)]
+    public void WallFaceReflectionsPointIntoTheOpenRoom(float wallY, float expectedY)
+    {
+        var vertices = BuildMesh([new Edge(new Vector2(-8, wallY), new Vector2(8, wallY))]);
+        var direction = SurfaceDirection(System.Runtime.InteropServices.CollectionsMarshal.AsSpan(vertices));
+        Assert.That(Vector2.Dot(direction, new Vector2(0, expectedY)), Is.GreaterThan(0.99f));
+    }
+
+    [Test]
+    public void UnobstructedSourceUsesTheViewDirectionFallback()
+    {
+        var vertices = BuildMesh([]);
+        Assert.That(SurfaceDirection(System.Runtime.InteropServices.CollectionsMarshal.AsSpan(vertices)),
+            Is.EqualTo(Vector2.Zero));
+    }
+
     [TestCase(0f)]
     [TestCase(-1f)]
     [TestCase(float.NaN)]

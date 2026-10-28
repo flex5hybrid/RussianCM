@@ -1,72 +1,126 @@
-# The live PointLight color wins over these fallback colors. Signal colors stay authoritative.
+# Linear radiance is authored independently of native gameplay-light radius/energy.
+# Saturated native alert colors are preserved by the neutral-only fixture tint.
 - type: cmuCinematicLightProfile
   id: CMUFixture
-  threshold: 0.1
-  emissionSize: 0.5, 0.32
-  bloom: 0.8
-  spill: 0.18
-  radius: 3.5
-  atmosphere: 0.035
+  color: "#FFD2A0"
+  tint: 0.7
+  threshold: 0.32
+  core: 5
+  emissionSize: 0.55, 0.10
+  bloom: 1.1
+  spill: 1.8
+  reflection: 1.6
+  radius: 5
+  atmosphere: 0.045
 
 - type: cmuCinematicLightProfile
   id: CMUIndustrial
-  threshold: 0.1
-  color: "#D9A56B"
-  emissionSize: 0.5, 0.3
-  bloom: 0.75
-  spill: 0.22
-  radius: 3.5
+  color: "#FFBA72"
+  tint: 0.85
+  threshold: 0.28
+  core: 5.5
+  emissionSize: 0.65, 0.10
+  bloom: 1.2
+  spill: 2.2
+  reflection: 1.8
+  radius: 5
   atmosphere: 0.08
 
 - type: cmuCinematicLightProfile
   id: CMUTerminal
-  color: "#88C9D8"
-  emissionSize: 0.4, 0.38
+  color: "#84DDAA"
+  tint: 1.0
+  emissionSize: 0.35, 0.3
+  emissionRegion: 0.16, 0.42, 0.85, 0.84
   threshold: 0.12
-  bloom: 0.45
-  spill: 0.12
-  radius: 1.6
+  emissionChroma: 0.45
+  core: 2.8
+  textureColor: 1.0
+  bloom: 0.8
+  spill: 0.8
+  reflection: 1.2
+  radius: 2.4
   requireLight: false
 
 - type: cmuCinematicLightProfile
   id: CMUNeon
   color: "#6DBCCC"
   emissionSize: 0.85, 0.45
-  threshold: 0.25
-  bloom: 0.85
-  spill: 0.14
-  radius: 2
+  threshold: 0.2
+  core: 4
+  textureColor: 0.9
+  bloom: 1.2
+  spill: 0.8
+  reflection: 1.1
+  radius: 2.5
+  requireLight: false
+
+- type: cmuCinematicLightProfile
+  id: CMUVendor
+  color: "#89C9E0"
+  tint: 1.0
+  threshold: 0.28
+  emissionChroma: 0.35
+  emissionRegion: 0.02, 0.15, 0.98, 0.98
+  core: 3.4
+  textureColor: 1.0
+  bloom: 0.7
+  spill: 0.65
+  reflection: 0.9
+  radius: 2.0
+  requireLight: false
+
+- type: cmuCinematicLightProfile
+  id: CMUVendorRed
+  color: "#FF5946"
+  tint: 1.0
+  threshold: 0.24
+  emissionChroma: 0.35
+  emissionRegion: 0.02, 0.15, 0.98, 0.98
+  core: 3.8
+  textureColor: 1.0
+  bloom: 0.8
+  spill: 0.75
+  reflection: 1.0
+  radius: 2.0
   requireLight: false
 
 - type: cmuCinematicLightProfile
   id: CMUFlashlight
   emissionSize: 0.16, 0.16
-  bloom: 0.4
-  spill: 0.12
+  threshold: 0.35
+  core: 4.5
+  bloom: 0.65
+  spill: 1.3
+  reflection: 1.4
   radius: 5
-  atmosphere: 0.17
-  proceduralEmission: true
+  atmosphere: 0.7
   priority: 1
 
 - type: cmuCinematicLightProfile
   id: CMUFloodlight
-  threshold: 0.16
   color: "#D7EEF1"
   emissionSize: 0.36, 0.36
-  bloom: 0.85
-  spill: 0.19
+  threshold: 0.25
+  core: 5.5
+  bloom: 1.0
+  spill: 2.5
+  reflection: 1.6
   radius: 6
-  atmosphere: 0.22
-  beamFalloff: 1.4
+  atmosphere: 1.1
+  beamFalloff: 1.6
+  beamCone: true
   priority: 1
 
 - type: cmuCinematicLightProfile
   id: CMUBeacon
-  emissionSize: 0.17, 0.17
-  bloom: 0.75
-  spill: 0.23
+  emissionSize: 0.13, 0.13
+  core: 4
+  bloom: 1.0
+  spill: 2.2
+  reflection: 2.0
   radius: 4.5
-  atmosphere: 0.26
+  atmosphere: 0.6
   proceduralEmission: true
   followParentLight: true
   priority: 2
@@ -74,8 +128,10 @@
 - type: cmuCinematicLightProfile
   id: CMUMuzzleFlash
   emissionSize: 0.23, 0.23
-  bloom: 1.1
-  spill: 0.3
+  core: 6
+  bloom: 1.2
+  spill: 3.2
+  reflection: 2.0
   radius: 2
   proceduralEmission: true
   requirePower: false
@@ -86,10 +142,12 @@
   id: CMUExplosion
   color: "#EAA55C"
   emissionSize: 0.65, 0.65
-  bloom: 1.3
-  spill: 0.4
+  core: 8
+  bloom: 1.4
+  spill: 4
+  reflection: 2.5
   radius: 5.5
-  atmosphere: 0.15
+  atmosphere: 0.35
   proceduralEmission: true
   requirePower: false
   pulseDuration: 0.65

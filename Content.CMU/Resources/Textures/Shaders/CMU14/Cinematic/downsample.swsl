@@ -22,10 +22,7 @@ void fragment()
 {
     highp vec2 uv = FRAGCOORD.xy / target_size;
     if (texture2D(blocker_texture, uv).r > 0.08)
-    {
-        COLOR = vec4(0.0);
-        return;
-    }
+        discard;
     highp vec3 sum = gather(uv, vec2(0.0)) * 4.0;
     sum += gather(uv, vec2(-1.5, -1.5));
     sum += gather(uv, vec2(1.5, -1.5));

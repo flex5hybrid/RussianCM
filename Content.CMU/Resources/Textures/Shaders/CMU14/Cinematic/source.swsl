@@ -9,7 +9,7 @@ uniform highp float source_rotation;
 uniform bool has_light_mask;
 uniform sampler2D light_mask;
 
-highp float sourceMask(highp vec2 position, highp float width)
+highp float sourceMaskRadius(highp vec2 position, highp float width, highp float radius)
 {
     if (!has_light_mask)
         return 1.0;
@@ -18,8 +18,13 @@ highp float sourceMask(highp vec2 position, highp float width)
     highp float s = sin(source_rotation);
     highp vec2 local = vec2(c * delta.x + s * delta.y, -s * delta.x + c * delta.y);
     local.x /= width;
-    highp vec2 uv = local / (2.0 * source_radius) + 0.5;
+    highp vec2 uv = local / (2.0 * max(radius, 0.001)) + 0.5;
     return texture2D(light_mask, clamp(uv, 0.0, 1.0)).r;
+}
+
+highp float sourceMask(highp vec2 position, highp float width)
+{
+    return sourceMaskRadius(position, width, source_radius);
 }
 
 highp float sourceAttenuation(highp vec2 position)

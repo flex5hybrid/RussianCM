@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Numerics;
 using Content.Client.Graphics;
 using Content.Client.Light.EntitySystems;
+using Content.Shared.CCVar;
 using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
 using Robust.Shared.Configuration;
@@ -15,7 +16,7 @@ using Color = Robust.Shared.Maths.Color;
 
 namespace Content.Client.CMU14.Lighting;
 
-/// <summary>Runs after sprites have been lit, before the native hard FOV and vision/HUD overlays.</summary>
+/// <summary>Owns the terrain-lighting and final lens passes, on either side of native entity rendering.</summary>
 public sealed partial class CinematicLightingOverlay : Overlay
 {
     [Dependency] private IClyde _clyde = default!;
@@ -30,6 +31,12 @@ public sealed partial class CinematicLightingOverlay : Overlay
     private readonly OverlayResourceCache<CinematicViewportResources> _resources = new();
     private readonly Func<IClydeViewport, CinematicViewportResources> _factory;
     private CinematicViewportResources? _lastResources;
+    private double _surfaceCpu;
+    private double _lightingCpu;
+    private double _prepareCpu;
+    private readonly Action _drawLight;
+    private readonly Action _copyLight;
+    private CinematicViewportResources _lightResources = default!;
 
     public override OverlaySpace Space => OverlaySpace.WorldSpaceBelowFOV;
     public override bool RequestScreenTexture => true;
@@ -41,15 +48,15 @@ public sealed partial class CinematicLightingOverlay : Overlay
         _system = system;
         _stencils = entities.System<GridStencilSystem>();
         _factory = CreateResources;
+        _drawLight = DrawLightBuffer;
+        _copyLight = CopyLightBuffer;
         ZIndex = -100;
     }
 
-    private CinematicViewportResources CreateResources(IClydeViewport viewport)
-    {
-        return new CinematicViewportResources(_clyde, _entities, _prototypes, _textures, _tiles, _config, _system.Quality);
-    }
+    private CinematicViewportResources CreateResources(IClydeViewport viewport) =>
+        new(_clyde, _entities, _prototypes, _textures, _tiles, _config, _system.Quality);
 
-    protected override bool BeforeDraw(in OverlayDrawArgs args)
+    internal bool Prepare(in OverlayDrawArgs args, bool gatherSources = true)
     {
         if (!_system.IsEligible(args.Viewport, _lights)
             || !_entities.TryGetComponent<MapComponent>(args.MapUid, out var map) || !map.LightingEnabled)
@@ -58,55 +65,139 @@ public sealed partial class CinematicLightingOverlay : Overlay
             return false;
         }
         var resources = _resources.GetForViewport(args.Viewport, _factory);
-        _system.CollectSources(args.MapId, args.WorldAABB, args.Viewport.Eye!, resources.Frame.Sources);
+        if (gatherSources || !resources.SurfacePrepared)
+        {
+            var start = Stopwatch.GetTimestamp();
+            _system.CollectSources(args.MapId, args.WorldAABB, args.Viewport.Eye!, resources.Frame.Sources);
+            _prepareCpu = Stopwatch.GetElapsedTime(start).TotalMilliseconds;
+        }
         return resources.Frame.Sources.Count > 0;
     }
+
+    protected override bool BeforeDraw(in OverlayDrawArgs args) => Prepare(args, !_system.Quality.SurfaceEffects);
+
+    private CinematicViewportResources Begin(in OverlayDrawArgs args, Texture scene)
+    {
+        var resources = _resources.GetForViewport(args.Viewport, _factory);
+        _lastResources = resources;
+        resources.Frame.Begin(args, scene);
+        resources.EnsureSize(args.Viewport.Size, args.MapId, args.Viewport.LightRenderTarget.Size);
+        return resources;
+    }
+
+    private bool BeginGeometry(CinematicViewportResources resources, in OverlayDrawArgs args)
+    {
+        if (!resources.Occlusion.Update(args.MapId, args.WorldAABB.Enlarged(7f)))
+            return false;
+        resources.Occlusion.BeginMeshes();
+        resources.Occlusion.RenderBlockers(resources.Blockers);
+        return true;
+    }
+
+    internal void DrawIrradiance(in OverlayDrawArgs args)
+    {
+        var start = Stopwatch.GetTimestamp();
+        var resources = Begin(args, args.Viewport.RenderTarget.Texture);
+        resources.SurfacePrepared = false;
+        if (!BeginGeometry(resources, args))
+            return;
+        resources.Bloom.Render(resources.Emission, resources.Pyramid, resources.Blockers.Texture);
+        resources.Spill!.RenderIrradiance(resources.Irradiance!);
+        resources.Spill.RenderNativeContribution(resources.NativeContribution!);
+        _lightResources = resources;
+        resources.Frame.Render(resources.NativeLightCopy!, _copyLight);
+        resources.Frame.Render(args.Viewport.LightRenderTarget, _drawLight);
+        resources.SurfacePrepared = true;
+        _lightingCpu = Stopwatch.GetElapsedTime(start).TotalMilliseconds;
+    }
+
+    private void DrawLightBuffer()
+    {
+        var frame = _lightResources.Frame;
+        var shader = _lightResources.LightComposite!;
+        frame.BindFrame(shader);
+        shader.SetParameter("irradiance_texture", _lightResources.Irradiance!.Texture);
+        shader.SetParameter("native_light_texture", _lightResources.NativeLightCopy!.Texture);
+        shader.SetParameter("native_contribution_texture", _lightResources.NativeContribution!.Texture);
+        shader.SetParameter("blocker_texture", _lightResources.Blockers.Texture);
+        shader.SetParameter("local_exposure", Exposure);
+        frame.Handle.UseShader(shader);
+        frame.Handle.DrawRect(frame.Bounds, Color.White);
+    }
+
+    private void CopyLightBuffer()
+    {
+        var frame = _lightResources.Frame;
+        var shader = _lightResources.LightCopy!;
+        shader.SetParameter("native_copy_texture", frame.Viewport.LightRenderTarget.Texture);
+        shader.SetParameter("target_size", frame.TargetSize);
+        frame.Handle.UseShader(shader);
+        frame.Handle.DrawRect(frame.Bounds, Color.White);
+    }
+
+    internal void DrawSurfaces(in OverlayDrawArgs args, Texture scene)
+    {
+        var start = Stopwatch.GetTimestamp();
+        var resources = Begin(args, scene);
+        if (!resources.SurfacePrepared)
+            return;
+        var frame = resources.Frame;
+        resources.Material!.Render(resources.Materials!);
+        resources.Spill!.RenderReflections(resources.Reflections!, resources.Materials!.Texture, resources.Emission.Texture);
+        var shader = resources.SurfaceComposite!;
+        frame.BindFrame(shader);
+        shader.SetParameter("target_size", (Vector2) args.Viewport.Size);
+        shader.SetParameter("scene_texture", scene);
+        shader.SetParameter("material_texture", resources.Materials.Texture);
+        shader.SetParameter("reflection_texture", resources.Reflections!.Texture);
+        shader.SetParameter("local_exposure", Exposure);
+        args.WorldHandle.SetTransform(Matrix3x2.Identity);
+        args.WorldHandle.UseShader(shader);
+        args.WorldHandle.DrawRect(args.WorldBounds, Color.White);
+        args.WorldHandle.UseShader(null);
+        resources.SurfacePrepared = true;
+        _surfaceCpu = Stopwatch.GetElapsedTime(start).TotalMilliseconds;
+    }
+
+    private float Exposure => Math.Clamp(_config.GetCVar(CCVars.CMUCinematicExposure), 0f, 3f);
 
     protected override void Draw(in OverlayDrawArgs args)
     {
         if (ScreenTexture == null)
             return;
         var start = Stopwatch.GetTimestamp();
-        var resources = _resources.GetForViewport(args.Viewport, _factory);
-        var frame = resources.Frame;
-        _lastResources = resources;
-        frame.Begin(args, ScreenTexture);
-        resources.EnsureSize(args.Viewport.Size, args.MapId);
-        if (!resources.Occlusion.Update(args.MapId, args.WorldAABB.Enlarged(7f)))
+        var resources = Begin(args, ScreenTexture);
+        if (!resources.SurfacePrepared && !BeginGeometry(resources, args))
             return;
-
-        resources.Occlusion.BeginMeshes();
-        resources.Occlusion.RenderBlockers(resources.Blockers);
-        resources.Bloom.Render(resources.Pyramid, resources.Blockers.Texture);
-        if (resources.Materials != null && resources.Effects != null)
-        {
-            resources.Material!.Render(resources.Materials);
-            resources.Spill!.Render(resources.Effects, resources.Materials.Texture);
-            resources.Atmosphere!.Render(resources.Effects);
-        }
+        var frame = resources.Frame;
+        if (!_system.Quality.SurfaceEffects || !resources.SurfacePrepared)
+            resources.Bloom.Render(resources.Emission, resources.Pyramid, resources.Blockers.Texture);
+        if (resources.AtmosphereTarget != null)
+            resources.Atmosphere!.Render(resources.AtmosphereTarget);
         resources.Occlusion.EndMeshes();
 
         var composite = resources.Composite;
-        // Frame uniforms were set for an offscreen pass; the final pass uses the actual viewport size.
         frame.BindFrame(composite);
         composite.SetParameter("target_size", (Vector2) args.Viewport.Size);
         composite.SetParameter("scene_texture", ScreenTexture);
-        composite.SetParameter("light_texture", args.Viewport.LightRenderTarget.Texture);
-        composite.SetParameter("blocker_texture", resources.Blockers.Texture);
         composite.SetParameter("surface_texture", _stencils.GetNonSpaceStencil(args).Texture);
-        composite.SetParameter("effects_texture", (resources.Effects ?? resources.Pyramid[0]).Texture);
-        composite.SetParameter("surface_effects", resources.Effects != null);
-        composite.SetParameter("bloom_small", resources.Pyramid[1].Texture);
-        composite.SetParameter("bloom_medium", resources.Pyramid[Math.Min(2, resources.Pyramid.Length - 1)].Texture);
-        composite.SetParameter("bloom_large", resources.Pyramid[^1].Texture);
+        composite.SetParameter("emission_texture", resources.Emission.Texture);
+        composite.SetParameter("atmosphere_texture", (resources.AtmosphereTarget ?? resources.Emission).Texture);
+        composite.SetParameter("atmospheric_effects", resources.AtmosphereTarget != null);
+        composite.SetParameter("bloom_compact", resources.Pyramid[0].Texture);
+        composite.SetParameter("bloom_medium", resources.Pyramid[Math.Min(1, resources.Pyramid.Length - 1)].Texture);
+        composite.SetParameter("bloom_wide", resources.Pyramid[^1].Texture);
+        composite.SetParameter("local_exposure", Exposure);
         args.WorldHandle.SetTransform(Matrix3x2.Identity);
         args.WorldHandle.UseShader(composite);
         args.WorldHandle.DrawRect(args.WorldBounds, Color.White);
         args.WorldHandle.UseShader(null);
-
+        resources.SurfacePrepared = false;
         _system.LastFrame = new CinematicLightingStatistics(_system.Quality.Level, frame.Sources.Count,
             resources.Atmosphere?.LastSources ?? 0, resources.Occlusion.EdgeCount, resources.Occlusion.MeshRebuilds,
-            resources.TargetCount, resources.TargetBytes, Stopwatch.GetElapsedTime(start).TotalMilliseconds);
+            resources.TargetCount, resources.TargetBytes,
+            _prepareCpu + (_system.Quality.SurfaceEffects ? _surfaceCpu + _lightingCpu : 0)
+            + Stopwatch.GetElapsedTime(start).TotalMilliseconds);
     }
 
     protected override void DisposeBehavior()
@@ -122,15 +213,23 @@ public sealed partial class CinematicLightingOverlay : Overlay
         if (_lastResources is not { } resources)
             return;
         Copy("blockers", resources.Blockers);
+        Copy("native-light", resources.Frame.Viewport.LightRenderTarget);
+        if (resources.NativeLightCopy != null)
+            Copy("native-light-original", resources.NativeLightCopy);
+        Copy("emission", resources.Emission);
+        if (resources.NativeContribution != null)
+            Copy("native-contribution", resources.NativeContribution);
         if (resources.Materials != null)
+        {
             Copy("materials", resources.Materials);
-        if (resources.Effects != null)
-            Copy("effects", resources.Effects);
+            Copy("irradiance", resources.Irradiance!);
+            Copy("reflections", resources.Reflections!);
+            Copy("atmosphere", resources.AtmosphereTarget!);
+        }
         for (var i = 0; i < resources.Pyramid.Length; i++)
             Copy($"bloom-{i}", resources.Pyramid[i]);
         return;
 
-        void Copy(string name, IRenderTexture target) =>
-            target.CopyPixelsToMemory<Rgba32>(img => capture(name, img));
+        void Copy(string name, IRenderTexture target) => target.CopyPixelsToMemory<Rgba32>(img => capture(name, img));
     }
 }

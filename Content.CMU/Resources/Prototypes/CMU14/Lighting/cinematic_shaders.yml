@@ -22,3 +22,18 @@
   id: CMUCinematicComposite
   kind: source
   path: /Textures/Shaders/CMU14/Cinematic/composite.swsl
+
+- type: shader
+  id: CMUCinematicSurfaceComposite
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/surface-composite.swsl
+
+- type: shader
+  id: CMUCinematicLightComposite
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/light-composite.swsl
+
+- type: shader
+  id: CMUCinematicLightCopy
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/light-copy.swsl

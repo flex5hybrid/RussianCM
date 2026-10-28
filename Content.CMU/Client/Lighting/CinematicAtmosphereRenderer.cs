@@ -32,7 +32,7 @@ internal sealed class CinematicAtmosphereRenderer : IDisposable
         _draw = Draw;
     }
 
-    public void Render(IRenderTexture target) => _frame.Render(target, _draw);
+    public void Render(IRenderTexture target) => _frame.Render(target, _draw, CinematicRenderContext.RadianceClearColor);
 
     private void Draw()
     {
@@ -53,9 +53,10 @@ internal sealed class CinematicAtmosphereRenderer : IDisposable
             _frame.BindFrame(shader);
             _frame.BindSource(shader, source);
             shader.SetParameter("atmosphere_density", Math.Clamp(density, 0f, 1f));
-            shader.SetParameter("atmosphere_strength", Math.Clamp(source.Profile.Atmosphere, 0f, 0.5f));
+            shader.SetParameter("atmosphere_strength", Math.Clamp(source.Profile.Atmosphere, 0f, 4f));
             shader.SetParameter("beam_width", Math.Clamp(source.Profile.BeamWidth, 0.2f, 2f));
             shader.SetParameter("beam_falloff", Math.Clamp(source.Profile.BeamFalloff, 0.2f, 5f));
+            shader.SetParameter("beam_cone", source.Profile.BeamCone);
             _frame.Handle.UseShader(shader);
             _occlusion.DrawMesh(mesh);
         }

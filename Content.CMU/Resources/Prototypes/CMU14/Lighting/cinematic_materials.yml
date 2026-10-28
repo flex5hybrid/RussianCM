@@ -5,34 +5,46 @@
 
 - type: cmuCinematicMaterial
   id: CMUMatteMetal
-  reflectivity: 0.14
+  reflectivity: 0.22
   roughness: 0.78
   priority: 1
-  tiles: [ CMFloorSteel, CMFloorPlating, FloorSteel, Plating, FloorReinforced, FloorMetalDiamond ]
+  tiles:
+  - CMFloorSteel
+  - CMFloorBlack
+  - CMFloorPlating
+  - FloorSteel
+  - Plating
+  - FloorReinforced
+  - FloorMetalDiamond
+  - CMFloorSteelPlanetDarkBlueBase
+  - CMFloorStrataMetalBase
+  # Concrete metal roots only: the broader Hybrisa color bases also contain carpet.
+  - RMCFloorHybrisaBlack
+  - RMCFloorHybrisaBlueFull
 
 - type: cmuCinematicMaterial
   id: CMUPolishedMetal
-  reflectivity: 0.33
-  roughness: 0.3
+  reflectivity: 0.72
+  roughness: 0.24
   priority: 2
-  tiles: [ CMFloorPlate, RMCFloorMono ]
+  tiles: [ CMFloorPlate, RMCFloorMono, RMCFloorHybrisaBlackShiny ]
 
 - type: cmuCinematicMaterial
   id: CMUTile
-  reflectivity: 0.2
+  reflectivity: 0.38
   roughness: 0.64
   priority: 3
-  tiles: [ CMFloorWhite, CMFloorWhiteSterile, CMFloorSterile, CMFloorOffice, FloorWhite, FloorKitchen, FloorLino ]
+  tiles: [ CMFloorWhite, CMFloorWhiteSterile, CMFloorSterile, CMFloorOffice, FloorWhite, FloorKitchen, FloorLino, RMCFloorHybrisaBlueTile ]
 
 - type: cmuCinematicMaterial
   id: CMUWetFloor
-  reflectivity: 0.28
-  roughness: 0.4
-  stretch: 0.9
+  reflectivity: 0.85
+  roughness: 0.16
+  stretch: 1
 
 - type: cmuCinematicMaterial
   id: CMUGlass
-  reflectivity: 0.24
+  reflectivity: 0.46
   roughness: 0.28
   stretch: 0.22
   priority: 4

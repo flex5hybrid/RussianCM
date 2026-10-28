@@ -28,6 +28,11 @@ internal sealed class CinematicMaterialRenderer
     private readonly List<WorldRect> _rects = new(2048);
     private readonly HashSet<Entity<CMUCinematicMaterialComponent>> _surfaces = new();
     private readonly HashSet<Entity<PuddleComponent>> _puddles = new();
+    private readonly HashSet<(EntityUid Grid, Vector2i Tile)> _wetTiles = new();
+    private readonly List<DrawVertexUV2DColor> _wetVertices = new(1024);
+    private readonly DrawVertexUV2DColor[] _wetTileVertices = new DrawVertexUV2DColor[16];
+    private static readonly float[] WetSteps = [0f, 0.18f, 0.82f, 1f];
+    private readonly Texture _white = Texture.White;
     private static readonly Color Ordinary = Encode(0f, 1f, 0f);
 
     public CinematicMaterialRenderer(IEntityManager entities, IPrototypeManager prototypes,
@@ -82,17 +87,89 @@ internal sealed class CinematicMaterialRenderer
         }
 
         _puddles.Clear();
-        _lookup.GetEntitiesIntersecting(_frame.Map, _frame.Bounds.CalcBoundingBox(), _puddles);
-        var wet = _prototypes.Index<CMUCinematicMaterialPrototype>("CMUWetFloor");
+        _wetTiles.Clear();
+        // Include neighbours just outside the camera, so the screen edge never becomes a dry seam.
+        _lookup.GetEntitiesIntersecting(_frame.Map, _frame.Bounds.CalcBoundingBox().Enlarged(1f), _puddles);
         foreach (var entity in _puddles)
-            DrawSurface(entity, new Vector2(0.85f), Vector2.Zero, Encode(wet.Reflectivity, wet.Roughness, wet.Stretch));
+        {
+            if (!_entities.TryGetComponent<TransformComponent>(entity, out var xform)
+                || xform.GridUid is not { } grid || !VisibleSurface(entity, xform)
+                || !_transform.TryGetGridTilePosition((entity.Owner, xform), out var tile))
+                continue;
+            _wetTiles.Add((grid, tile));
+        }
+        var wet = _prototypes.Index<CMUCinematicMaterialPrototype>("CMUWetFloor");
+        var data = new Color(wet.Reflectivity, wet.Roughness, wet.Stretch, 1f);
+        foreach (var grid in _grids)
+        {
+            _wetVertices.Clear();
+            foreach (var key in _wetTiles)
+            {
+                if (key.Grid == grid.Owner)
+                    AddWetTile(grid.Owner, key.Tile, grid.Comp.TileSize, data);
+            }
+            if (_wetVertices.Count == 0)
+                continue;
+            _frame.SetWorldTransform(_transform.GetWorldMatrix(grid.Owner));
+            _frame.Handle.DrawPrimitives(DrawPrimitiveTopology.TriangleList, _white,
+                CollectionsMarshal.AsSpan(_wetVertices));
+        }
+    }
+
+    private void AddWetTile(EntityUid grid, Vector2i tile, float tileSize, Color data)
+    {
+        var left = _wetTiles.Contains((grid, tile + new Vector2i(-1, 0)));
+        var right = _wetTiles.Contains((grid, tile + new Vector2i(1, 0)));
+        var bottom = _wetTiles.Contains((grid, tile + new Vector2i(0, -1)));
+        var top = _wetTiles.Contains((grid, tile + new Vector2i(0, 1)));
+        // A flat plateau joins actual neighbouring wet cells. Only the exposed pool perimeter
+        // fades out; separate circular footprints would turn a reflected strip into bright dots.
+        var steps = WetSteps;
+        var vertices = _wetTileVertices;
+        for (var y = 0; y < 4; y++)
+        for (var x = 0; x < 4; x++)
+        {
+            var alpha = x == 0 && !left || x == 3 && !right || y == 0 && !bottom || y == 3 && !top ? 0f : 1f;
+            vertices[y * 4 + x] = new DrawVertexUV2DColor(
+                (new Vector2(tile.X, tile.Y) + new Vector2(steps[x], steps[y])) * tileSize,
+                data.WithAlpha(alpha));
+        }
+        for (var y = 0; y < 3; y++)
+        for (var x = 0; x < 3; x++)
+        {
+            var a = y * 4 + x;
+            _wetVertices.Add(vertices[a]);
+            _wetVertices.Add(vertices[a + 1]);
+            _wetVertices.Add(vertices[a + 5]);
+            _wetVertices.Add(vertices[a]);
+            _wetVertices.Add(vertices[a + 5]);
+            _wetVertices.Add(vertices[a + 4]);
+        }
+    }
+
+    internal bool VisibleSurface(EntityUid uid, TransformComponent xform)
+    {
+        if (xform.MapID != _frame.Map)
+            return false;
+        var current = uid;
+        for (var depth = 0; depth < 16; depth++)
+        {
+            if (_entities.TryGetComponent<MetaDataComponent>(current, out var metadata) && metadata.VisibilityMask != 1
+                || _entities.TryGetComponent<SpriteComponent>(current, out var sprite)
+                && (!sprite.Visible || sprite.ContainerOccluded || sprite.Color.A <= 0.01f))
+                return false;
+            if (!_entities.TryGetComponent<TransformComponent>(current, out var parent)
+                || parent.ParentUid == EntityUid.Invalid || parent.ParentUid == xform.GridUid
+                || parent.ParentUid == xform.MapUid)
+                return true;
+            current = parent.ParentUid;
+        }
+        return false;
     }
 
     private void DrawSurface(EntityUid uid, Vector2 size, Vector2 offset, Color color)
     {
-        if (!_entities.TryGetComponent<TransformComponent>(uid, out var xform) || xform.MapID != _frame.Map
-            || _entities.TryGetComponent<SpriteComponent>(uid, out var sprite)
-            && (!sprite.Visible || sprite.ContainerOccluded || sprite.Color.A <= 0.01f))
+        if (!_entities.TryGetComponent<TransformComponent>(uid, out var xform) || !VisibleSurface(uid, xform))
             return;
         _frame.SetWorldTransform(_transform.GetWorldMatrix(xform));
         _frame.Handle.DrawRect(Box2.CenteredAround(offset, size), color);

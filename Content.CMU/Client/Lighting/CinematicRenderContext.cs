@@ -12,6 +12,10 @@ internal sealed class CinematicRenderContext
     // Color.Transparent is transparent WHITE in Robust. These targets are sampled as RGB data,
     // so invisible pixels must also have zero RGB or they become blockers / additive white light.
     public static readonly Color ClearColor = new(0f, 0f, 0f, 0f);
+    // Radiance targets use native HDR RGB, with implicit destination alpha one. Clyde's
+    // Add uses DstAlpha; an HDR RGBA target would amplify overlapping sources recursively.
+    // Black with alpha one also makes diagnostic screenshots opaque.
+    public static readonly Color RadianceClearColor = new(0f, 0f, 0f, 1f);
     private readonly Action _draw;
     private Action _pass = default!;
     private IRenderTexture _target = default!;

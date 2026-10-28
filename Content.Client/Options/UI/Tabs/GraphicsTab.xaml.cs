@@ -36,6 +36,7 @@ public sealed partial class GraphicsTab : Control
         Control.AddOptionPercentSlider(CCVars.CMUCinematicAOIntensity, CinematicAOIntensity, 0f, 2f);
         Control.AddOptionPercentSlider(CCVars.CMUCinematicAORadius, CinematicAORadius, 0.5f, 2f);
         Control.AddOptionPercentSlider(CCVars.CMUCinematicAtmosphere, CinematicAtmosphere);
+        Control.AddOptionPercentSlider(CCVars.CMUCinematicExposure, CinematicExposure, 0f, 3f);
         DropDownCinematicLighting.Button.OnItemSelected += _ => UpdateCinematicOptionsVisibility();
         AmbientOcclusionCheckBox.OnToggled += _ => UpdateCinematicOptionsVisibility();
         // CMU14 End
@@ -122,6 +123,7 @@ public sealed partial class GraphicsTab : Control
         CinematicAOIntensity.Visible = advanced && AmbientOcclusionCheckBox.Pressed;
         CinematicAORadius.Visible = advanced && AmbientOcclusionCheckBox.Pressed;
         CinematicAtmosphere.Visible = advanced;
+        CinematicExposure.Visible = DropDownCinematicLighting.Button.SelectedId > 0;
     }
 
     private void SetMaxFpsToDisplayRate()

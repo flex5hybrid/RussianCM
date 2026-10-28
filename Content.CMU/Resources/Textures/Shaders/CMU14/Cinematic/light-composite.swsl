@@ -1,0 +1,66 @@
+light_mode unshaded;
+blend_mode none;
+
+#include "/Textures/Shaders/CMU14/Cinematic/frame.swsl"
+
+uniform sampler2D irradiance_texture;
+uniform sampler2D blocker_texture;
+uniform sampler2D native_light_texture;
+uniform sampler2D native_contribution_texture;
+uniform highp float local_exposure;
+
+highp vec3 wallProbe(highp vec2 uv, highp vec2 offset)
+{
+    highp vec2 point = clamp(uv + offset, 0.0, 1.0);
+    highp float free_surface = 1.0 - step(0.08, texture2D(blocker_texture, point).r);
+    return texture2D(irradiance_texture, point).rgb * free_surface;
+}
+
+void fragment()
+{
+    highp vec2 uv = frameUv(FRAGCOORD.xy);
+    if (visibleAt(frameWorld(uv)) < 0.5)
+        discard;
+    highp vec3 radiance = texture2D(irradiance_texture, uv).rgb;
+    if (texture2D(blocker_texture, uv).r > 0.08)
+    {
+        // Receive room-side light on the visible opaque wall face. This never expands the
+        // source visibility mesh or writes light to the floor on the far side of a thin wall.
+        highp vec2 near_step = vec2(0.20) / max(vec2(length(world_x), length(world_y)), vec2(0.001));
+        highp vec2 far_step = near_step * 2.25;
+        highp vec3 face = max(wallProbe(uv, vec2(near_step.x, 0.0)), wallProbe(uv, vec2(-near_step.x, 0.0)));
+        face = max(face, max(wallProbe(uv, vec2(0.0, near_step.y)), wallProbe(uv, vec2(0.0, -near_step.y))));
+        highp vec3 outer = max(wallProbe(uv, vec2(far_step.x, 0.0)), wallProbe(uv, vec2(-far_step.x, 0.0)));
+        outer = max(outer, max(wallProbe(uv, vec2(0.0, far_step.y)), wallProbe(uv, vec2(0.0, -far_step.y))));
+        radiance = max(radiance, max(face * 0.8, outer * 0.45));
+    }
+    radiance *= local_exposure;
+    highp float peak = max(max(radiance.r, radiance.g), radiance.b);
+    // Leave untouched pixels in the original native target, including the exact edge samples.
+    // Reading a reduced copy everywhere would unnecessarily filter light outside our footprint.
+    highp vec3 managed = texture2D(native_contribution_texture, uv).rgb;
+    if (peak < 0.0001 && max(max(managed.r, managed.g), managed.b) * local_exposure < 0.0001)
+        discard;
+    highp vec3 native = texture2D(native_light_texture, uv).rgb;
+    // Replace part of the modelled neutral point-light contribution with the compact authored
+    // field. This is source-local light redistribution, not exposure of the finished image.
+    // Retain at least a quarter of native lighting where hard and soft shadows differ.
+    native -= min(managed * 0.75 * clamp(local_exposure, 0.0, 1.0), native * 0.75);
+    const highp vec3 luminance = vec3(0.2126, 0.7152, 0.0722);
+    highp float native_peak = max(max(native.r, native.g), native.b);
+    highp float native_min = min(min(native.r, native.g), native.b);
+    highp float native_saturation = (native_peak - native_min) / max(native_peak, 0.0001);
+    // Redistribute only neutral native light into the local source hue, at identical luminance.
+    // Existing saturated alert colors retain their native contribution. This makes a warm lamp
+    // illuminate surfaces warmly without reducing ambient brightness or applying a scene filter.
+    highp float neutral = 1.0 - smoothstep(0.12, 0.5, native_saturation);
+    highp float coverage = smoothstep(0.015, 0.22, peak);
+    highp vec3 hue = radiance / max(dot(radiance, luminance), 0.0001);
+    highp vec3 recolored = hue * dot(native, luminance);
+    highp vec3 composed = mix(native, recolored, 0.78 * neutral * coverage);
+    // Added light remains independent from the luminance-preserving color redistribution.
+    // The engine applies the completed field to original sprite/tile albedo before hard FOV.
+    // This destination stores lighting energy, not display color. A shoulder at one would
+    // silently cap local illumination below ordinary overlapping native lights.
+    COLOR = vec4(composed + radiance / (1.0 + peak / 6.0), 1.0);
+}

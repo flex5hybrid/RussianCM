@@ -119,14 +119,15 @@ internal sealed class CinematicOcclusionRenderer
             mesh = new Mesh();
             _meshes.Add(source.Uid, mesh);
         }
-        if (mesh.Hash == _geometryHash && mesh.Origin == source.Position && mesh.Radius == source.Radius)
+        if (mesh.Hash == _geometryHash && mesh.Origin == source.Position && mesh.Radius == source.GeometryRadius)
             return mesh;
         MeshRebuilds++;
         mesh.Hash = _geometryHash;
         mesh.Origin = source.Position;
-        mesh.Radius = source.Radius;
-        mesh.Valid = Build(source.Position, source.Radius, CollectionsMarshal.AsSpan(_edges),
+        mesh.Radius = source.GeometryRadius;
+        mesh.Valid = Build(source.Position, source.GeometryRadius, CollectionsMarshal.AsSpan(_edges),
             quality.CircleSegments, quality.LocalEdges, _localEdges, _angles, mesh.Vertices);
+        mesh.SurfaceDirection = mesh.Valid ? SurfaceDirection(CollectionsMarshal.AsSpan(mesh.Vertices)) : Vector2.Zero;
         return mesh;
     }
 
@@ -146,5 +147,6 @@ internal sealed class CinematicOcclusionRenderer
         public Vector2 Origin;
         public float Radius;
         public bool Valid;
+        public Vector2 SurfaceDirection;
     }
 }

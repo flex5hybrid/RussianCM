@@ -16,4 +16,8 @@ public sealed partial class CCVars
 
     public static readonly CVarDef<float> CMUCinematicAtmosphere =
         CVarDef.Create("cmu.lighting.cinematic_atmosphere", 0.3f, CVar.CLIENTONLY | CVar.ARCHIVE);
+
+    /// <summary>Exposure of authored local radiance, never of the original image.</summary>
+    public static readonly CVarDef<float> CMUCinematicExposure =
+        CVarDef.Create("cmu.lighting.cinematic_exposure", 1.2f, CVar.CLIENTONLY | CVar.ARCHIVE);
 }

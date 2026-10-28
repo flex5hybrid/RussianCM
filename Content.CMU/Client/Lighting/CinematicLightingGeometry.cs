@@ -90,6 +90,28 @@ public static class CinematicLightingGeometry
         angles.Add(WrapAngle(angle + 0.0001f));
     }
 
+    /// <summary>Direction into the open surface, from the area centroid of the clipped visibility fan.</summary>
+    public static Vector2 SurfaceDirection(ReadOnlySpan<Vector2> vertices)
+    {
+        if (vertices.Length < 4)
+            return Vector2.Zero;
+        var origin = vertices[0];
+        var moment = Vector2.Zero;
+        var area = 0f;
+        for (var i = 1; i < vertices.Length - 1; i++)
+        {
+            var a = vertices[i] - origin;
+            var b = vertices[i + 1] - origin;
+            var weight = MathF.Abs(Cross(a, b));
+            moment += (a + b) * weight;
+            area += weight;
+        }
+        if (area < 0.00001f)
+            return Vector2.Zero;
+        var centroid = moment / (area * 3f);
+        return centroid.LengthSquared() > 0.0001f ? Vector2.Normalize(centroid) : Vector2.Zero;
+    }
+
     private static float WrapAngle(float angle) => angle < -MathF.PI ? angle + MathF.Tau
         : angle >= MathF.PI ? angle - MathF.Tau : angle;
 

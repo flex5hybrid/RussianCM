@@ -4,27 +4,147 @@ blend_mode add;
 #include "/Textures/Shaders/CMU14/Cinematic/source.swsl"
 
 uniform sampler2D material_texture;
+uniform sampler2D scene_texture;
+uniform sampler2D emission_texture;
 uniform highp float spill_strength;
+uniform highp float reflection_strength;
+uniform highp float emitter_span;
+uniform bool reflection_pass;
+uniform bool native_pass;
+uniform highp vec3 native_color;
+uniform highp float native_radius;
+uniform highp float native_energy;
+uniform highp float native_falloff;
+uniform highp float native_curve;
+uniform bool sprite_reflection;
+uniform highp vec2 reflection_direction;
+uniform highp vec4 emission_bounds;
+
+highp vec3 emissionAt(highp vec2 world)
+{
+    // The shared emissive image contains no actors. Restrict sampling to this light's actual
+    // sprite bounds, so stretching one reflection cannot borrow a neighbouring screen or lamp.
+    if (world.x < emission_bounds.x || world.y < emission_bounds.y
+        || world.x > emission_bounds.z || world.y > emission_bounds.w)
+        return vec3(0.0);
+    highp vec2 relative = world - world_origin;
+    highp vec2 uv = vec2(dot(relative, world_x) / max(dot(world_x, world_x), 0.001),
+        dot(relative, world_y) / max(dot(world_y, world_y), 0.001));
+    if (uv.x < 0.0 || uv.y < 0.0 || uv.x > 1.0 || uv.y > 1.0)
+        return vec3(0.0);
+    return texture2D(emission_texture, uv).rgb;
+}
+
+highp vec3 reflectionTap(highp vec2 world, highp vec2 tangent, highp float blur)
+{
+    return emissionAt(world) * 0.5 + emissionAt(world + tangent * blur) * 0.25
+        + emissionAt(world - tangent * blur) * 0.25;
+}
 
 void fragment()
 {
     highp vec2 uv = frameUv(FRAGCOORD.xy);
     highp vec2 world = frameWorld(uv);
-    if (visibleAt(emission_position) < 0.5 || visibleAt(world) < 0.5)
+    if (visibleAt(source_position) < 0.5 || visibleAt(world) < 0.5)
         discard;
-    highp vec4 material = texture2D(material_texture, uv);
-    highp float attenuation = sourceAttenuation(world) * sourceMask(world, 1.0);
     highp vec2 delta = world - source_position;
-    // Reflection lobes stay in world coordinates, preserving pixel detail and camera stability.
-    // Wet surfaces have a longer lobe, polished metal a compact brighter highlight.
-    highp float roughness = max(material.g, 0.12);
-    highp float stretch = 0.3 + material.b * 2.5;
-    highp vec2 reflected = delta + vec2(0.0, 0.35);
-    highp float glint = exp(-reflected.x * reflected.x / (0.12 + roughness * 0.5)
-        - reflected.y * reflected.y / stretch);
-    highp float seams = mix(0.72, 1.0, smoothstep(0.34, 0.49, abs(fract(world.x) - 0.5)));
-    highp float reflection = glint * material.r * (1.0 - roughness * 0.5) * seams;
-    highp float spill = spill_strength * attenuation;
-    highp float amount = (spill + reflection * attenuation * 0.65) * source_energy * material.a;
-    COLOR = vec4(source_color * amount, 1.0);
+    highp float distance = length(delta);
+    highp float edge = 1.0 - smoothstep(source_radius * 0.65, source_radius, distance);
+    highp float mask = sourceMask(world, 1.0);
+    // SWSL inlines this entry point into main(): return would skip Clyde's final color write.
+    // Keep both outputs in branches; helper functions may still return normally.
+    if (native_pass)
+    {
+        // Match the pinned Clyde light curve, inside the same bounded visibility geometry.
+        // This estimates only opted-in visible point lights; ambient is never a subtraction input.
+        highp float s = clamp(sqrt(dot(delta, delta) + 1.0) / max(native_radius, 0.001), 0.0, 1.0);
+        highp float s2 = s * s;
+        highp float curve = mix(s, s2, clamp(native_curve, 0.0, 1.0));
+        highp float value = clamp((1.0 - s2) * (1.0 - s2) / (1.0 + native_falloff * curve), 0.0, 1.0);
+        highp float saturation = (max(max(native_color.r, native_color.g), native_color.b)
+            - min(min(native_color.r, native_color.g), native_color.b))
+            / max(max(max(native_color.r, native_color.g), native_color.b), 0.001);
+        highp float neutral = 1.0 - smoothstep(0.10, 0.65, saturation);
+        highp float boundary = 1.0 - smoothstep(6.5, 7.0, distance);
+        COLOR = vec4(native_color * value * native_energy
+            * sourceMaskRadius(world, 1.0, native_radius) * neutral * boundary, 1.0);
+    }
+    else if (reflection_pass)
+    {
+        highp vec4 material = texture2D(material_texture, uv);
+        if (material.a < 0.01 || material.r < 0.005)
+            discard;
+        highp float roughness = clamp(material.g, 0.08, 1.0);
+        // Stretch is continuous across a feathered wet boundary. Thresholding it into a
+        // category turns every puddle centre into a disconnected glowing circle.
+        highp float wet = clamp(material.b, 0.0, 1.0);
+        highp vec2 reflected = delta - reflection_direction * mix(0.65, 1.15, wet);
+        highp vec2 tangent = vec2(-reflection_direction.y, reflection_direction.x);
+        highp float width = 0.10 + roughness * 0.35 + emitter_span * 0.22;
+        highp float length = mix(0.45 + roughness * 0.6, 3.6, wet);
+        highp float lobe = exp(-pow(abs(dot(reflected, tangent)) / width, 1.65)
+            - pow(abs(dot(reflected, reflection_direction)) / length, 1.3));
+        highp float detail = dot(texture2D(scene_texture, uv).rgb, vec3(0.2126, 0.7152, 0.0722));
+        // Surface texture controls the response; no artificial repeating checker/seam pattern.
+        highp float texture_response = 0.65 + 0.35 * sqrt(clamp(detail * 8.0, 0.0, 1.0));
+        highp vec3 reflected_light;
+        if (sprite_reflection)
+        {
+            highp float along = dot(delta, reflection_direction);
+            highp float across = dot(delta, tangent);
+            highp float reach = mix(1.85, 4.2, wet);
+            highp float envelope = smoothstep(0.08, 0.35, along)
+                * (1.0 - smoothstep(reach * 0.62, reach, along));
+            if (envelope < 0.001)
+                discard;
+            highp float spread = 1.0 + roughness * 0.7;
+            // Offset RSI frames can put a tube far from the centre of a mostly transparent
+            // 64px image. Project the entire real source rectangle, rather than assuming its
+            // centre is luminous. The projection axis is world-space, including rotated cameras.
+            highp vec2 bounds_center = (emission_bounds.xy + emission_bounds.zw) * 0.5;
+            highp vec2 bounds_half = (emission_bounds.zw - emission_bounds.xy) * 0.5;
+            highp float source_middle = dot(bounds_center, reflection_direction);
+            highp float source_half = dot(bounds_half, abs(reflection_direction));
+            highp float source_along = mix(source_middle + source_half, source_middle - source_half,
+                clamp((along - 0.08) / max(reach - 0.08, 0.01), 0.0, 1.0));
+            highp vec2 sample_world = source_position + tangent * (across / spread)
+                + reflection_direction * (source_along - dot(source_position, reflection_direction));
+            highp float blur = 0.012 + roughness * roughness * 0.16;
+            highp float along_blur = 0.02 + roughness * roughness * 0.22 + wet * 0.20;
+            reflected_light = vec3(0.0);
+            for (int tap = 0; tap < 7; tap++)
+            {
+                highp float weight = tap == 3 ? 20.0 : (tap == 2 || tap == 4 ? 15.0
+                    : (tap == 1 || tap == 5 ? 6.0 : 1.0));
+                reflected_light += reflectionTap(sample_world + reflection_direction
+                    * (float(tap - 3) * along_blur / 3.0), tangent, blur) * (weight / 64.0);
+            }
+            // The sampled HDR core already contains source color and energy. Avoid applying
+            // them a second time; rough surfaces have a broad, weaker image than wet metal.
+            // Keep the convolved source visible at normal camera scale. Filtering a narrow
+            // tube over a rough surface already spreads its energy; a second tiny multiplier
+            // made even polished-metal responses disappear into ordinary diffuse lighting.
+            reflected_light *= mix(0.95, 0.42, roughness) * envelope;
+        }
+        else
+        {
+            reflected_light = source_color * source_energy * lobe * 0.22;
+        }
+        highp vec3 radiance = reflected_light * material.r * reflection_strength
+            * texture_response * edge * mask;
+        COLOR = vec4(radiance, 1.0);
+    }
+    else
+    {
+        // A compact area-light pool carries the composition. A much weaker broad tail gives
+        // bounce without washing an entire corridor in the same tint. The lamp axis follows
+        // the open wall face instead of treating every fixture as a horizontal point source.
+        highp vec2 tangent = vec2(-reflection_direction.y, reflection_direction.x);
+        highp float area_distance = length(vec2(max(abs(dot(delta, tangent)) - emitter_span, 0.0),
+            dot(delta, reflection_direction)));
+        highp float squared = area_distance * area_distance;
+        highp float falloff = 2.6 / (1.0 + squared * 3.2) + 0.16 / (1.0 + squared * 0.5);
+        highp float amount = spill_strength * 3.2 * falloff * edge * mask;
+        COLOR = vec4(source_color * amount * source_energy, 1.0);
+    }
 }

@@ -3,28 +3,50 @@ blend_mode add;
 
 #include "/Textures/Shaders/CMU14/Cinematic/source.swsl"
 
-uniform sampler2D scene_texture;
+uniform bool sprite_emission;
 uniform highp vec2 emission_size;
+uniform highp vec4 emission_region;
 uniform highp float emission_threshold;
+uniform highp float emission_chroma;
+uniform highp float core_strength;
+uniform highp float texture_weight;
 uniform highp float bloom_strength;
-uniform bool procedural_emission;
 
 void fragment()
 {
-    highp vec2 uv = frameUv(FRAGCOORD.xy);
-    highp vec2 world = frameWorld(uv);
-    if (visibleAt(emission_position) < 0.5 || visibleAt(world) < 0.5)
+    highp vec2 world = frameWorld(frameUv(FRAGCOORD.xy));
+    if (visibleAt(source_position) < 0.5 || visibleAt(world) < 0.5)
         discard;
-    highp vec2 delta = (world - emission_position) / max(emission_size, vec2(0.02));
-    highp float shape = exp(-dot(delta, delta) * 2.8);
-    highp vec3 scene = texture2D(scene_texture, uv).rgb;
-    highp float brightness = max(max(scene.r, scene.g), scene.b);
-    highp float extraction = smoothstep(max(0.0, emission_threshold - 0.12), emission_threshold + 0.12, brightness);
-    if (procedural_emission)
-        extraction = 1.0;
-    highp vec3 hue = mix(scene / max(brightness, 0.001), source_color, 0.65);
-    if (procedural_emission)
-        hue = source_color;
-    highp float amount = shape * extraction * bloom_strength * source_energy;
-    COLOR = vec4(hue * amount, 1.0);
+    highp vec3 hue = source_color;
+    highp float mask;
+    if (sprite_emission)
+    {
+        highp vec4 pixel = texture2D(TEXTURE, UV);
+        highp float brightness = max(max(pixel.r, pixel.g), pixel.b);
+        highp vec2 inside = smoothstep(emission_region.xy, emission_region.xy + vec2(0.015), UV2)
+            * (vec2(1.0) - smoothstep(emission_region.zw - vec2(0.015), emission_region.zw, UV2));
+        mask = pixel.a * inside.x * inside.y
+            * smoothstep(max(0.0, emission_threshold - 0.08), emission_threshold + 0.08, brightness);
+        if (emission_chroma > 0.0)
+        {
+            // Color selection is perceptual; linear-light chroma makes beige monitor housings
+            // look saturated and incorrectly turns their keyboards into emissive surfaces.
+            highp vec3 perceptual = sqrt(max(pixel.rgb, vec3(0.0)));
+            highp float peak = max(max(perceptual.r, perceptual.g), perceptual.b);
+            highp float chroma = peak - min(min(perceptual.r, perceptual.g), perceptual.b);
+            mask *= smoothstep(emission_chroma * 0.75, emission_chroma * 1.25,
+                chroma / max(peak, 0.001));
+        }
+        hue = mix(source_color, pixel.rgb / max(brightness, 0.001), texture_weight);
+    }
+    else
+    {
+        if (visibleAt(emission_position) < 0.5)
+            discard;
+        highp vec2 delta = (world - emission_position) / max(emission_size, vec2(0.02));
+        mask = exp(-dot(delta, delta) * 3.5);
+    }
+    if (mask < 0.001)
+        discard;
+    COLOR = vec4(hue * core_strength * bloom_strength * source_energy * mask, 1.0);
 }

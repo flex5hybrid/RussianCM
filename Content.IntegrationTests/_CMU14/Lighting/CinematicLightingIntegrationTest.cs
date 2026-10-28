@@ -31,7 +31,7 @@ public sealed class CinematicLightingIntegrationTest : GameTest
         await Client.WaitAssertion(() =>
         {
             string[] shaders = ["CMUCinematicEmission", "CMUCinematicDownsample", "CMUCinematicSpill",
-                "CMUCinematicAtmosphere", "CMUCinematicComposite"];
+                "CMUCinematicAtmosphere", "CMUCinematicComposite", "CMUCinematicSurfaceComposite", "CMUCinematicLightComposite", "CMUCinematicLightCopy"];
             foreach (var id in shaders)
             {
                 using var shader = CProtoMan.Index<ShaderPrototype>(id).InstanceUnique();
@@ -82,6 +82,8 @@ public sealed class CinematicLightingIntegrationTest : GameTest
                 {
                     config.SetCVar(CCVars.CMUCinematicLighting, quality);
                     Assert.That(overlays.HasOverlay<CinematicLightingOverlay>(), Is.EqualTo(quality != 0));
+                    Assert.That(overlays.HasOverlay<CinematicSurfaceLightingOverlay>(), Is.EqualTo(quality >= 2));
+                    Assert.That(overlays.HasOverlay<CinematicIrradianceOverlay>(), Is.EqualTo(quality >= 2));
                     Assert.That(system.IsEligible(first, lights), Is.False);
                     using (system.BeginViewport(first))
                     {
@@ -148,12 +150,37 @@ public sealed class CinematicLightingIntegrationTest : GameTest
             var renderedSprite = CEntMan.GetComponent<SpriteComponent>(fixture);
             var spriteColor = renderedSprite.Color;
             var sprites = CEntMan.System<SpriteSystem>();
+            var materialFrame = new CinematicRenderContext(CProtoMan, Client.ResolveDependency<IResourceCache>());
+            materialFrame.Map = coords.MapId;
+            var materials = new CinematicMaterialRenderer(CEntMan, CProtoMan,
+                Client.ResolveDependency<ITileDefinitionManager>(), materialFrame);
+            var beaconTransform = CEntMan.GetComponent<TransformComponent>(beacon);
             try
             {
                 Collect();
                 Assert.That(sources.Exists(source => source.Uid == fixture), Is.True);
                 Assert.That(sources.Exists(source => source.Uid == beacon), Is.True);
+                Assert.That(materials.VisibleSurface(beacon, beaconTransform), Is.True);
+                var modelSource = sources.Find(source => source.Uid == fixture);
+                Assert.That(modelSource.NativeColor, Is.EqualTo(native.Color));
+                Assert.That(modelSource.NativeEnergy, Is.EqualTo(native.Energy));
+                Assert.That(modelSource.NativeRadius, Is.EqualTo(native.Radius));
+                sprites.SetContainerOccluded((fixture, renderedSprite), true);
+                Collect();
+                Assert.That(sources.Exists(source => source.Uid == fixture), Is.True,
+                    "A container can pass native light while hiding the standalone item sprite.");
+                Assert.That(sources.Find(source => source.Uid == fixture).Sprite, Is.Null,
+                    "A held light must not duplicate its item sprite over the actor.");
+                lights.SetContainerOccluded(fixture, true, native);
+                Collect();
+                Assert.That(sources.Exists(source => source.Uid == fixture || source.Uid == beacon), Is.False);
+                lights.SetContainerOccluded(fixture, false, native);
+                sprites.SetContainerOccluded((fixture, renderedSprite), false);
+                Collect();
                 var rotation = transform.GetWorldRotation(fixture);
+                Assert.That(sources.Find(source => source.Uid == fixture).Position,
+                    Is.EqualTo(coords.Position + rotation.RotateVec(native.Offset)),
+                    "Match Clyde's light origin exactly: a 0.016m bias can move RMC fixtures inside a wall.");
                 var spriteRotation = renderedSprite.NoRotation ? -eye.Rotation : rotation;
                 var expectedEmission = coords.Position + spriteRotation.RotateVec(renderedSprite.Offset);
                 Assert.That(sources.Find(source => source.Uid == fixture).EmissionPosition,
@@ -162,6 +189,8 @@ public sealed class CinematicLightingIntegrationTest : GameTest
                 Collect();
                 Assert.That(sources.Exists(source => source.Uid == fixture || source.Uid == beacon), Is.False,
                     "A hidden parent must not disclose itself through a child emitter.");
+                Assert.That(materials.VisibleSurface(beacon, beaconTransform), Is.False,
+                    "A hidden parent must not disclose itself through a child material footprint either.");
                 sprites.SetColor((fixture, renderedSprite), spriteColor);
                 lights.SetEnabled(fixture, false, native);
                 Collect();
@@ -181,6 +210,8 @@ public sealed class CinematicLightingIntegrationTest : GameTest
             {
                 CEntMan.DeleteEntity(beacon);
                 CEntMan.RemoveComponent<ApcPowerReceiverComponent>(fixture);
+                lights.SetContainerOccluded(fixture, false, native);
+                sprites.SetContainerOccluded((fixture, renderedSprite), false);
                 lights.SetEnabled(fixture, true, native);
                 sprites.SetColor((fixture, renderedSprite), spriteColor);
                 config.SetCVar(CCVars.CMUCinematicLighting, original);
@@ -208,6 +239,9 @@ public sealed class CinematicLightingIntegrationTest : GameTest
                 It.IsAny<TextureSampleParameters?>(), It.IsAny<string>())).Returns(
                 (Vector2i size, RenderTargetFormatParameters format, TextureSampleParameters? sample, string name) =>
                 {
+                    if (name != "cmu-cinematic-blockers" && name != "cmu-cinematic-materials")
+                        Assert.That(format.ColorFormat, Is.EqualTo(RenderTargetColorFormat.R11FG11FB10F),
+                            "Clyde Add uses DstAlpha: radiance must use HDR RGB so overlapping sources cannot amplify alpha.");
                     var real = clyde.CreateRenderTarget(size, format, sample, name);
                     var target = new Mock<IRenderTexture>();
                     target.SetupGet(t => t.Size).Returns(size);
@@ -230,13 +264,18 @@ public sealed class CinematicLightingIntegrationTest : GameTest
                 .Callback((IRenderTarget _, Action _, Color? clear) => clears.Add(clear));
             resources.Frame.Handle = drawing.Object;
             resources.Occlusion.RenderBlockers(resources.Blockers);
-            resources.Bloom.Render(resources.Pyramid, resources.Blockers.Texture);
+            resources.Bloom.Render(resources.Emission, resources.Pyramid, resources.Blockers.Texture);
             resources.Material!.Render(resources.Materials!);
-            resources.Spill!.Render(resources.Effects!, resources.Materials!.Texture);
-            Assert.That(clears.Count, Is.EqualTo(resources.Pyramid.Length + 3));
+            resources.Spill!.RenderIrradiance(resources.Irradiance!);
+            resources.Spill.RenderNativeContribution(resources.NativeContribution!);
+            resources.Spill.RenderReflections(resources.Reflections!, resources.Materials!.Texture, resources.Emission.Texture);
+            resources.Atmosphere!.Render(resources.AtmosphereTarget!);
+            Assert.That(clears.Count, Is.EqualTo(resources.Pyramid.Length + 7));
             foreach (var clear in clears)
-                Assert.That(clear, Is.EqualTo(new Color(0f, 0f, 0f, 0f)),
+                Assert.That(clear, Is.AnyOf(CinematicRenderContext.ClearColor, CinematicRenderContext.RadianceClearColor),
                     "RGB data masks must not retain the white RGB channels of Color.Transparent.");
+            Assert.That(clears.Count(clear => clear == CinematicRenderContext.RadianceClearColor), Is.EqualTo(5),
+                "Emission, irradiance, reflections and atmosphere use opaque-black HDR RGB targets.");
             var count = targets.Count;
             resources.EnsureSize(new Vector2i(65, 33), new MapId(1));
             Assert.That(targets.Count, Is.EqualTo(count), "Steady rendering reuses its targets.");
