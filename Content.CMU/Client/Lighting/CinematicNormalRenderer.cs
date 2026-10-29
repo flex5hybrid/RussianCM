@@ -12,12 +12,15 @@ namespace Content.Client.CMU14.Lighting;
 
 /// <summary>
 /// Experimental sprite-normal prepass and visibility-clipped directional highlight.
-/// Restricted to CMUCinematicNormalComponent entities, never writes native light data.
+/// Selects authored opt-in sprites or a capped set of visible sprites in mass-test mode.
+/// Never modifies native light buffers or gameplay visibility.
 /// </summary>
 internal sealed class CinematicNormalRenderer : IDisposable
 {
-    private const int MaximumSources = 8;
-    private const int MaximumSprites = 64;
+    private const int OptInSources = 8;
+    private const int MassSources = 16;
+    private const int OptInSprites = 64;
+    private const int MassSprites = 256;
     private readonly IEntityManager _entities;
     private readonly EntityLookupSystem _lookup;
     private readonly SharedTransformSystem _transforms;
@@ -28,7 +31,10 @@ internal sealed class CinematicNormalRenderer : IDisposable
     private readonly ShaderInstance _capture;
     private readonly CinematicShaderPool _lights;
     private readonly HashSet<Entity<CMUCinematicNormalComponent>> _visible = new();
+    private readonly HashSet<Entity<SpriteComponent>> _visibleSprites = new();
+    private readonly List<NormalCandidate> _candidates = new(MassSprites);
     private readonly Dictionary<string, RSI?> _normals = new();
+    private bool _lastMassMode;
     private readonly Action _drawNormals;
     private readonly Action _drawLights;
     private Texture _normalTexture = Texture.White;
@@ -46,13 +52,20 @@ internal sealed class CinematicNormalRenderer : IDisposable
         _lookup = entities.System<EntityLookupSystem>();
         _transforms = entities.System<SharedTransformSystem>();
         _capture = prototypes.Index<ShaderPrototype>("CMUCinematicNormalCapture").InstanceUnique();
-        _lights = new CinematicShaderPool(prototypes.Index<ShaderPrototype>("CMUCinematicNormalLight"), MaximumSources);
+        _lights = new CinematicShaderPool(prototypes.Index<ShaderPrototype>("CMUCinematicNormalLight"), MassSources);
         _drawNormals = DrawNormals;
         _drawLights = DrawLights;
     }
 
-    public void Render(IRenderTexture normals, IRenderTexture light)
+    public void Render(IRenderTexture normals, IRenderTexture light, bool massMode)
     {
+        // A mode switch is also a resource-reload point for previously missing normal
+        // RSI assets added during a local test. Negative cache entries are per renderer.
+        if (_lastMassMode != massMode)
+        {
+            _lastMassMode = massMode;
+            _normals.Clear();
+        }
         _frame.Render(normals, _drawNormals, CinematicRenderContext.ClearColor);
         _normalTexture = normals.Texture;
         // Clear even when no eligible sprite is visible, to prevent a stale frame
@@ -96,36 +109,131 @@ internal sealed class CinematicNormalRenderer : IDisposable
             if (_textures.TryGetResource<RSIResource>(path, out var normal))
                 result = normal.RSI;
         }
-        // Missing resources are not cached; hot-reloaded content may appear later.
-        if (result != null)
-            _normals.Add(source, result);
+        // Most existing RSI assets have no generated normals. Cache misses too:
+        // otherwise every visible sprite could hit the filesystem every frame.
+        // Changing the mass-mode CVar clears this cache for local asset reloads.
+        _normals.Add(source, result);
         return result;
+    }
+
+    private readonly record struct NormalCandidate(
+        EntityUid Uid, SpriteComponent Sprite, TransformComponent Xform,
+        float Strength, Vector2 Position, float DistanceSquared, bool Explicit);
+
+    private void AddCandidate(EntityUid uid, SpriteComponent sprite,
+        float strength, bool explicitOptIn, Vector2 eyePosition)
+    {
+        if (strength <= 0f || !sprite.Visible || sprite.ContainerOccluded || sprite.Color.A <= 0.01f
+            || !_entities.TryGetComponent<TransformComponent>(uid, out var xform)
+            || xform.MapID != _frame.Map
+            || sprite.AllLayers is not IReadOnlyList<ISpriteLayer> layers)
+            return;
+
+        // Most sprites are unmodified upstream assets. Resolve at most four visible
+        // RSI layers first, and never include entities without an available normal RSI.
+        var hasNormals = false;
+        for (var layerIndex = 0; layerIndex < Math.Min(layers.Count, 4); layerIndex++)
+        {
+            if (layers[layerIndex] is not SpriteComponent.Layer layer
+                || !layer.Visible || layer.Color.A <= 0.01f || layer.ActualRsi == null)
+                continue;
+            if (ResolveNormalRsi(layer.ActualRsi) is { } mapped
+                && mapped.TryGetState(layers[layerIndex].RsiState, out _))
+            {
+                hasNormals = true;
+                break;
+            }
+        }
+        if (!hasNormals || !Visible(uid, xform))
+            return;
+
+        var (position, _) = _transforms.GetWorldPositionRotation(xform);
+        _candidates.Add(new NormalCandidate(uid, sprite, xform, strength, position,
+            Vector2.DistanceSquared(position, eyePosition), explicitOptIn));
+    }
+
+    private void GatherCandidates()
+    {
+        _candidates.Clear();
+        var eyePosition = _frame.Viewport.Eye!.Position.Position + _frame.Viewport.Eye.Offset;
+        var bounds = _frame.Bounds.CalcBoundingBox();
+        if (_lastMassMode)
+        {
+            // Spatially query SpriteComponent, not every entity on the map.
+            _visibleSprites.Clear();
+            _lookup.GetEntitiesIntersecting(_frame.Map, bounds, _visibleSprites);
+            foreach (var entity in _visibleSprites)
+            {
+                var optIn = _entities.TryGetComponent<CMUCinematicNormalComponent>(
+                    entity.Owner, out var marker);
+                if (optIn && !marker!.Enabled)
+                    continue;
+                AddCandidate(entity.Owner, entity.Comp,
+                    optIn ? Math.Clamp(marker!.Strength, 0f, 1f) : 0.65f,
+                    optIn, eyePosition);
+            }
+        }
+        else
+        {
+            _visible.Clear();
+            _lookup.GetEntitiesIntersecting(_frame.Map, bounds, _visible);
+            foreach (var entity in _visible)
+            {
+                if (!entity.Comp.Enabled
+                    || !_entities.TryGetComponent<SpriteComponent>(entity.Owner, out var sprite))
+                    continue;
+                AddCandidate(entity.Owner, sprite, Math.Clamp(entity.Comp.Strength, 0f, 1f),
+                    true, eyePosition);
+            }
+        }
+
+        // Fixed-cost per-frame budget. Explicitly opted-in test objects win ties;
+        // nearby objects are chosen deterministically instead of HashSet iteration order.
+        _candidates.Sort(static (a, b) =>
+        {
+            var cmp = b.Explicit.CompareTo(a.Explicit);
+            if (cmp != 0)
+                return cmp;
+            cmp = a.DistanceSquared.CompareTo(b.DistanceSquared);
+            return cmp != 0 ? cmp : a.Uid.Id.CompareTo(b.Uid.Id);
+        });
+        var budget = _lastMassMode ? MassSprites : OptInSprites;
+        if (_candidates.Count > budget)
+            _candidates.RemoveRange(budget, _candidates.Count - budget);
+
+        // Approximate native sprite sorting; the engine additionally sorts by
+        // screen-space bounding-box top, which cannot be reconstructed reliably
+        // for every special renderer here. Keep this explicitly experimental.
+        _candidates.Sort(static (a, b) =>
+        {
+            var cmp = a.Sprite.DrawDepth.CompareTo(b.Sprite.DrawDepth);
+            if (cmp != 0)
+                return cmp;
+            cmp = a.Sprite.RenderOrder.CompareTo(b.Sprite.RenderOrder);
+            if (cmp != 0)
+                return cmp;
+            cmp = b.Position.Y.CompareTo(a.Position.Y);
+            return cmp != 0 ? cmp : a.Uid.Id.CompareTo(b.Uid.Id);
+        });
     }
 
     private void DrawNormals()
     {
         _hasNormals = false;
-        _visible.Clear();
-        _lookup.GetEntitiesIntersecting(_frame.Map, _frame.Bounds.CalcBoundingBox(), _visible);
+        GatherCandidates();
         var eyeRotation = _frame.Viewport.Eye!.Rotation;
-        var count = 0;
-        foreach (var entity in _visible)
+        foreach (var entity in _candidates)
         {
-            if (count >= MaximumSprites)
-                break;
-            if (!entity.Comp.Enabled || entity.Comp.Strength <= 0f
-                || !_entities.TryGetComponent<TransformComponent>(entity, out var xform)
-                || !_entities.TryGetComponent<SpriteComponent>(entity, out var sprite)
-                || !Visible(entity, xform) || sprite.AllLayers is not IReadOnlyList<ISpriteLayer> layers)
-                continue;
-
-            var (position, rotation) = _transforms.GetWorldPositionRotation(xform);
+            var sprite = entity.Sprite;
+            var (_, rotation) = _transforms.GetWorldPositionRotation(entity.Xform);
             var angle = (rotation + eyeRotation).Reduced().FlipPositive();
-            var entityMatrix = Matrix3Helpers.CreateTransform(position,
+            var entityMatrix = Matrix3Helpers.CreateTransform(entity.Position,
                 CinematicLightingGeometry.RenderedRotation(rotation, eyeRotation,
                     sprite.NoRotation, sprite.SnapCardinals));
             var spriteMatrix = sprite.LocalMatrix * entityMatrix;
 
+            if (sprite.AllLayers is not IReadOnlyList<ISpriteLayer> layers)
+                continue;
             for (var i = 0; i < Math.Min(layers.Count, 4); i++)
             {
                 if (layers[i] is not SpriteComponent.Layer layer || !layer.Visible || layer.Color.A <= 0.01f
@@ -150,7 +258,7 @@ internal sealed class CinematicNormalRenderer : IDisposable
                     continue;
                 _capture.SetParameter("normal_basis_x", Vector2.Normalize(x));
                 _capture.SetParameter("normal_basis_y", Vector2.Normalize(y));
-                _capture.SetParameter("normal_strength", Math.Clamp(entity.Comp.Strength, 0f, 1f));
+                _capture.SetParameter("normal_strength", entity.Strength);
                 _frame.SetWorldTransform(matrix);
                 _frame.Handle.UseShader(_capture);
                 var size = texture.Size / (float) EyeManager.PixelsPerMeter;
@@ -159,7 +267,6 @@ internal sealed class CinematicNormalRenderer : IDisposable
                     new UIBox2(0f, 0f, texture.Width, texture.Height));
                 _hasNormals = true;
             }
-            count++;
         }
         _frame.SetWorldTransform(Matrix3x2.Identity);
     }
@@ -169,7 +276,7 @@ internal sealed class CinematicNormalRenderer : IDisposable
         if (!_hasNormals)
             return;
 
-        for (var index = 0; index < Math.Min(_frame.Sources.Count, MaximumSources); index++)
+        for (var index = 0; index < Math.Min(_frame.Sources.Count, _lastMassMode ? MassSources : OptInSources); index++)
         {
             var source = _frame.Sources[index];
             var mesh = _occlusion.GetMesh(source, _quality);
