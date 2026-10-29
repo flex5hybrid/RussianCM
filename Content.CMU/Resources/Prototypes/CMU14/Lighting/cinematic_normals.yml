@@ -1,0 +1,9 @@
+- type: shader
+  id: CMUCinematicNormalCapture
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/normal-capture.swsl
+
+- type: shader
+  id: CMUCinematicNormalLight
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/normal-light.swsl
