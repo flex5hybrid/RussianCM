@@ -35,6 +35,10 @@ public sealed partial class CinematicLightingOverlay : Overlay
     internal IReadOnlyList<CinematicLightSource> Sources => _lastResources?.Frame.Sources
         ?? (IReadOnlyList<CinematicLightSource>) Array.Empty<CinematicLightSource>();
     internal CinematicRenderContext? CaptureFrame => _lastResources?.Frame;
+    internal (int Eligible, int Rendered, int Layers) NormalStats =>
+        _lastResources?.NormalRenderer is { } normals
+            ? (normals.EligibleSprites, normals.RenderedSprites, normals.RenderedLayers)
+            : default;
     private double _surfaceCpu;
     private double _waterCpu;
     private double _lightingCpu;
