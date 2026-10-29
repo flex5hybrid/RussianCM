@@ -12,11 +12,15 @@ public sealed partial class CinematicLightingStatsCommand : IConsoleCommand
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        var stats = _entities.System<CinematicLightingSystem>().LastFrame;
+        var system = _entities.System<CinematicLightingSystem>();
+        var stats = system.LastFrame;
         shell.WriteLine(Loc.GetString("cmu-cinematic-stats-result", ("quality", stats.Quality),
             ("sources", stats.Sources), ("beams", stats.AtmosphereSources), ("edges", stats.OccluderEdges),
             ("rebuilds", stats.MeshRebuilds), ("targets", stats.Targets),
             ("memory", (stats.TargetBytes / 1048576d).ToString("F2", System.Globalization.CultureInfo.InvariantCulture)),
             ("cpu", stats.CpuMilliseconds.ToString("F3", System.Globalization.CultureInfo.InvariantCulture))));
+        var normals = system.NormalStats;
+        if (system.NormalsEnabled)
+            shell.WriteLine($"Normal mapping: mass={system.NormalsAll}, selected={normals.Eligible}, rendered={normals.Rendered}, layers={normals.Layers}.");
     }
 }
