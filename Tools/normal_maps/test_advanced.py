@@ -66,6 +66,40 @@ class NormalAdvancedTests(unittest.TestCase):
             "equipment")
         self.assertEqual(profile_for_path("Resources/Textures/Tiles/metal.png"), "floor")
 
+    def test_barbed_wire_auto_profile_never_creates_near_horizontal_normals(self):
+        self.assertEqual(
+            profile_for_path("Resources/Textures/_RMC14/Objects/barbed_wire.rsi/barbed_wire_3.png"),
+            "wire")
+        self.assertEqual(
+            profile_for_path("Resources/Textures/_RMC14/Structures/Walls/Barricades/razorwire.rsi/barbed_wire.png"),
+            "wire")
+        # An opaque painted stripe is a common source of false interior height:
+        # a wire-specific profile must greatly reduce this influence.
+        im = Image.new("RGBA", (32, 32), (110, 110, 110, 255))
+        painter = ImageDraw.Draw(im)
+        for y in range(3, 29, 5):
+            painter.rectangle((3, y, 28, y + 1), fill=(228, 228, 228, 255))
+        wire = np.asarray(normal_sheet(
+            im, (32, 32), NormalOptions(), resource_path="Objects/barbed_wire.rsi/barbed_wire_3.png"))
+        solid = np.asarray(normal_sheet(
+            im, (32, 32), NormalOptions(profile="equipment")))
+        flat = np.array([128, 128, 255], dtype=np.int16)
+        wire_delta = np.abs(wire[:, :, :3].astype(np.int16) - flat).mean()
+        solid_delta = np.abs(solid[:, :, :3].astype(np.int16) - flat).mean()
+        self.assertLess(wire_delta, solid_delta * 0.35)
+        self.assertGreaterEqual(int(wire[:, :, 2].min()), 233)
+
+    def test_wire_preview_displays_opposing_light_directions(self):
+        image = self.make_box()
+        normal = normal_sheet(image, (32, 32), NormalOptions(profile="wire"))
+        preview = light_preview(image, normal, (32, 32), scale=4)
+        self.assertEqual(preview.mode, "RGBA")
+        self.assertEqual(preview.size[0], 4 * 32 * 4 + 5 * 8)
+        # Two directional illumination panels should be measurably different.
+        x1, x2 = 3 * 8 + 32 * 4 + 11, 4 * 8 + 2 * 32 * 4 + 11
+        self.assertNotEqual(preview.getpixel((x1, 8 + 10)),
+                            preview.getpixel((x2, 8 + 10)))
+
     def test_validation(self):
         with self.assertRaises(ValueError):
             NormalOptions(mode="bad")
