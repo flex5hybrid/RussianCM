@@ -96,8 +96,9 @@ internal sealed class CinematicNormalRenderer : IDisposable
             if (_textures.TryGetResource<RSIResource>(path, out var normal))
                 result = normal.RSI;
         }
-        // A missing normal is not fatal: most content has no generated map yet.
-        _normals.Add(source, result);
+        // Missing resources are not cached; hot-reloaded content may appear later.
+        if (result != null)
+            _normals.Add(source, result);
         return result;
     }
 
@@ -128,7 +129,9 @@ internal sealed class CinematicNormalRenderer : IDisposable
             for (var i = 0; i < Math.Min(layers.Count, 4); i++)
             {
                 if (layers[i] is not SpriteComponent.Layer layer || !layer.Visible || layer.Color.A <= 0.01f
-                    || layer.ActualRsi?.TryGetState(layers[i].RsiState, out var state) != true)
+                    || layer.ActualRsi == null)
+                    continue;
+                if (!layer.ActualRsi.TryGetState(layers[i].RsiState, out var state))
                     continue;
                 var normalRsi = ResolveNormalRsi(layer.ActualRsi);
                 if (normalRsi == null || !normalRsi.TryGetState(layers[i].RsiState, out var normalState))
