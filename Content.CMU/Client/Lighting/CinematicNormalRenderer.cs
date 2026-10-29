@@ -39,6 +39,9 @@ internal sealed class CinematicNormalRenderer : IDisposable
     private readonly Action _drawLights;
     private Texture _normalTexture = Texture.White;
     private bool _hasNormals;
+    public int EligibleSprites { get; private set; }
+    public int RenderedSprites { get; private set; }
+    public int RenderedLayers { get; private set; }
 
     public CinematicNormalRenderer(IEntityManager entities, IResourceCache textures,
         IPrototypeManager prototypes, CinematicRenderContext frame,
@@ -200,6 +203,7 @@ internal sealed class CinematicNormalRenderer : IDisposable
         var budget = _lastMassMode ? MassSprites : OptInSprites;
         if (_candidates.Count > budget)
             _candidates.RemoveRange(budget, _candidates.Count - budget);
+        EligibleSprites = _candidates.Count;
 
         // Approximate native sprite sorting; the engine additionally sorts by
         // screen-space bounding-box top, which cannot be reconstructed reliably
@@ -220,11 +224,14 @@ internal sealed class CinematicNormalRenderer : IDisposable
     private void DrawNormals()
     {
         _hasNormals = false;
+        RenderedSprites = 0;
+        RenderedLayers = 0;
         GatherCandidates();
         var eyeRotation = _frame.Viewport.Eye!.Rotation;
         foreach (var entity in _candidates)
         {
             var sprite = entity.Sprite;
+            var renderedAny = false;
             var (_, rotation) = _transforms.GetWorldPositionRotation(entity.Xform);
             var angle = (rotation + eyeRotation).Reduced().FlipPositive();
             var entityMatrix = Matrix3Helpers.CreateTransform(entity.Position,
@@ -266,7 +273,11 @@ internal sealed class CinematicNormalRenderer : IDisposable
                     Box2.CenteredAround(Vector2.Zero, size), Color.White,
                     new UIBox2(0f, 0f, texture.Width, texture.Height));
                 _hasNormals = true;
+                RenderedLayers++;
+                renderedAny = true;
             }
+            if (renderedAny)
+                RenderedSprites++;
         }
         _frame.SetWorldTransform(Matrix3x2.Identity);
     }
