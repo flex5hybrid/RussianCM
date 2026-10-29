@@ -59,7 +59,8 @@ public sealed partial class CinematicLightingOverlay : Overlay
     }
 
     private CinematicViewportResources CreateResources(IClydeViewport viewport) =>
-        new(_clyde, _entities, _prototypes, _textures, _tiles, _config, _system.Quality);
+        new(_clyde, _entities, _prototypes, _textures, _tiles, _config,
+            _system.Quality, _system.NormalsEnabled);
 
     internal bool Prepare(in OverlayDrawArgs args, bool gatherSources = true)
     {
@@ -209,6 +210,10 @@ public sealed partial class CinematicLightingOverlay : Overlay
                 resources.Blockers.Texture, resources.Blockers);
         if (resources.AtmosphereTarget != null)
             resources.Atmosphere!.Render(resources.AtmosphereTarget);
+        // Normal mapping stays presentation-only: it never modifies the native light map.
+        // Perform this before releasing the shared visibility meshes used by its light pass.
+        if (resources.NormalRenderer != null && resources.Normals != null && resources.NormalLight != null)
+            resources.NormalRenderer.Render(resources.Normals, resources.NormalLight);
         resources.Occlusion.EndMeshes();
 
         var composite = resources.Composite;
@@ -230,6 +235,9 @@ public sealed partial class CinematicLightingOverlay : Overlay
         composite.SetParameter("reflection_texture", (resources.Reflections ?? resources.Emission).Texture);
         composite.SetParameter("material_texture", (resources.Materials ?? resources.Emission).Texture);
         composite.SetParameter("native_texture", (resources.NativeLightCopy ?? resources.Emission).Texture);
+        composite.SetParameter("normal_texture", (resources.Normals ?? resources.Emission).Texture);
+        composite.SetParameter("normal_light_texture", (resources.NormalLight ?? resources.Emission).Texture);
+        composite.SetParameter("normals_enabled", resources.NormalRenderer != null);
         args.WorldHandle.SetTransform(Matrix3x2.Identity);
         args.WorldHandle.UseShader(composite);
         args.WorldHandle.DrawRect(args.WorldBounds, Color.White);
@@ -265,6 +273,10 @@ public sealed partial class CinematicLightingOverlay : Overlay
             Copy("materials", resources.Materials);
             Copy("irradiance", resources.Irradiance!);
             Copy("reflections", resources.Reflections!);
+            if (resources.Normals != null)
+                Copy("normals", resources.Normals);
+            if (resources.NormalLight != null)
+                Copy("normal-lights", resources.NormalLight);
             Copy("atmosphere", resources.AtmosphereTarget!);
         }
         for (var i = 0; i < resources.Pyramid.Length; i++)
