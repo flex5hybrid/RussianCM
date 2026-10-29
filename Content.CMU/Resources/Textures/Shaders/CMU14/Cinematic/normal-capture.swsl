@@ -1,0 +1,29 @@
+light_mode unshaded;
+blend_mode none;
+
+// Convert the generated tangent-space normal RSI into a world-space data buffer.
+// The source images are ordinary sRGB PNGs: convert their sampled RGB data
+// back to encoded normal space before interpreting channel values.
+uniform highp vec2 normal_basis_x;
+uniform highp vec2 normal_basis_y;
+uniform highp float normal_strength;
+
+highp vec3 toPerceptual(highp vec3 value)
+{
+    highp vec3 low = 12.92 * value;
+    highp vec3 high = 1.055 * pow(max(value, vec3(0.0)), vec3(1.0 / 2.4)) - 0.055;
+    return mix(low, high, step(vec3(0.0031308), value));
+}
+
+void fragment()
+{
+    highp vec4 sampled = texture2D(TEXTURE, UV);
+    if (sampled.a < 0.01)
+        discard;
+
+    highp vec3 normal = normalize(toPerceptual(sampled.rgb) * 2.0 - 1.0);
+    highp vec2 planar = normal_basis_x * normal.x + normal_basis_y * normal.y;
+    highp vec3 world_normal = normalize(vec3(planar, max(0.001, normal.z)));
+    // Target RGB stores *data*, not final shaded surface colour.
+    COLOR = vec4(world_normal * 0.5 + 0.5, sampled.a * normal_strength);
+}
