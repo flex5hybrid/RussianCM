@@ -7,7 +7,7 @@ namespace Content.Client.CMU14.Lighting;
 
 internal enum CinematicDebugView : byte
 {
-    Final, Native, Direct, Indirect, Emissive, Core, Inner, Outer, Reflections, Materials, Atmosphere, Occlusion, Bloom, Contacts,
+    Final, Native, Direct, Indirect, Emissive, Core, Inner, Outer, Reflections, Materials, Atmosphere, Occlusion, Bloom, Contacts, Normals, NormalLight,
 }
 
 /// <summary>Client-local diagnostic switches. No readback, replication or gameplay light changes.</summary>
