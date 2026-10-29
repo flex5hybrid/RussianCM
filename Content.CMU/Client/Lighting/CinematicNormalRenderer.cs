@@ -136,7 +136,7 @@ internal sealed class CinematicNormalRenderer : IDisposable
 
                 var direction = layer.EffectiveDirection(state, angle,
                     sprite.EnableDirectionOverride ? sprite.DirectionOverride : null);
-                if (layer.AnimationFrame >= normalState.AnimationFrameCount)
+                if (layer.AnimationFrame >= normalState.DelayCount)
                     continue;
                 var texture = normalState.GetFrame(direction, layer.AnimationFrame);
                 layer.GetLayerDrawMatrix(direction, out var layerMatrix);
