@@ -7,3 +7,15 @@
   components:
   - type: CMUCinematicNormal
     strength: 0.75
+
+# A standalone, fully generated four-state normal RSI is committed for this demo.
+- type: entity
+  id: CMUCinematicNormalDemoLaptop
+  parent: BaseItem
+  suffix: normal-map lighting demo
+  components:
+  - type: Sprite
+    sprite: CMU14/Items/laptop.rsi
+    state: laptop_off
+  - type: CMUCinematicNormal
+    strength: 0.75
