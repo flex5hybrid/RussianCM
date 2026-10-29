@@ -1,0 +1,41 @@
+light_mode unshaded;
+blend_mode add;
+
+#include "/Textures/Shaders/CMU14/Cinematic/source.swsl"
+
+uniform sampler2D normal_texture;
+uniform highp float normal_light_strength;
+
+void fragment()
+{
+    highp vec2 uv = frameUv(FRAGCOORD.xy);
+    highp vec2 world = frameWorld(uv);
+    if (visibleAt(source_position) < 0.5 || visibleAt(world) < 0.5)
+        discard;
+    highp vec4 encoded = texture2D(normal_texture, uv);
+    if (encoded.a < 0.01)
+        discard;
+
+    highp vec2 delta = source_position - world;
+    highp float distance = length(delta);
+    if (distance >= source_radius)
+        discard;
+
+    // Approximate overhead fixture height above one test object's top surface.
+    // The light *source* location is still the original gameplay point-light.
+    highp vec3 light_dir = normalize(vec3(delta, 0.95));
+    highp vec3 normal = normalize(encoded.rgb * 2.0 - 1.0);
+    highp float normal_facing = max(0.0, dot(normal, light_dir));
+    highp float flat_facing = light_dir.z;
+    // Positive directional excess only: never darken native lighting or make
+    // a normally flat sprite unnaturally bright.
+    highp float extra = max(0.0, normal_facing - flat_facing);
+    if (extra < 0.001)
+        discard;
+
+    highp float fade = sourceAttenuation(world);
+    highp float mask = sourceMask(world, 1.0);
+    highp vec3 radiance = source_color * min(source_energy, 3.0)
+        * extra * fade * mask * encoded.a * min(normal_light_strength, 0.65);
+    COLOR = vec4(radiance, 1.0);
+}
