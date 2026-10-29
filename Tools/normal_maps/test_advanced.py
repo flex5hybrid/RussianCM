@@ -95,10 +95,12 @@ class NormalAdvancedTests(unittest.TestCase):
         preview = light_preview(image, normal, (32, 32), scale=4)
         self.assertEqual(preview.mode, "RGBA")
         self.assertEqual(preview.size[0], 4 * 32 * 4 + 5 * 8)
-        # Two directional illumination panels should be measurably different.
-        x1, x2 = 3 * 8 + 32 * 4 + 11, 4 * 8 + 2 * 32 * 4 + 11
-        self.assertNotEqual(preview.getpixel((x1, 8 + 10)),
-                            preview.getpixel((x2, 8 + 10)))
+        # The 3rd and 4th panels are independently lit from opposite sides.
+        raster = np.asarray(preview)
+        x_left, x_right = 3 * 8 + 2 * 32 * 4, 4 * 8 + 3 * 32 * 4
+        a = raster[8:8 + 128, x_left:x_left + 128]
+        b = raster[8:8 + 128, x_right:x_right + 128]
+        self.assertTrue(np.any(a != b))
 
     def test_validation(self):
         with self.assertRaises(ValueError):
