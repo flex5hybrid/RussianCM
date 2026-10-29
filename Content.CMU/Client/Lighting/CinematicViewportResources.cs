@@ -72,7 +72,7 @@ internal sealed class CinematicViewportResources : IDisposable
             LightComposite = prototypes.Index(LightShader).InstanceUnique();
             LightCopy = prototypes.Index<ShaderPrototype>("CMUCinematicLightCopy").InstanceUnique();
             if (_normalsEnabled)
-                NormalRenderer = new CinematicNormalRenderer(entities, textures, prototypes, Frame, Occlusion, quality);
+                NormalRenderer = new CinematicNormalRenderer(entities, textures, prototypes, Frame, Occlusion, quality, config);
         }
     }
 
