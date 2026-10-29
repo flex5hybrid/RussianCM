@@ -6,11 +6,15 @@ All processing stays inside a single RSI animation/direction frame.
 from __future__ import annotations
 
 from dataclasses import dataclass
+import re
 import numpy as np
 from PIL import Image, ImageFilter
 
 MODES = ('flat', 'bevel', 'height', 'hybrid')
-PROFILES = ('auto', 'generic', 'equipment', 'character', 'floor')
+PROFILES = ('auto', 'generic', 'equipment', 'character', 'floor', 'wire')
+
+# Only recognizable asset categories; never silently classify every grey texture as metal.
+WIRE_NAMES = re.compile(r'(?<![a-z])(?:barbed[_-]?wire|razor[_-]?wire|wire|cable|coil|chain|rope|mesh|fence)(?![a-z])')
 
 
 @dataclass(frozen=True)
@@ -33,7 +37,12 @@ class NormalOptions:
 
 
 def profile_for_path(path: str) -> str:
-    parts = {part.lower() for part in path.replace('\\', '/').split('/')}
+    normalized = path.replace('\\', '/').lower()
+    parts = set(normalized.split('/'))
+    # Thin coiled wires are not height fields: light/dark bands depict strands,
+    # occlusion, and hand-painted highlights, not a continuous embossed plate.
+    if WIRE_NAMES.search(normalized):
+        return 'wire'
     if parts & {'tiles', 'floors', 'floor', 'turf', 'terrain'}:
         return 'floor'
     if parts & {'mobs', 'human', 'humans', 'characters', 'xenonids', 'xenos', 'clothing'}:
@@ -72,8 +81,11 @@ def _frame_normals(frame: Image.Image, opts: NormalOptions, profile: str) -> Ima
     if opts.mode in ('bevel', 'hybrid') and opts.bevel > 0 and profile != 'floor':
         edge = _blur(alpha, opts.bevel)
         dx, dy = _gradient(edge)
-        normal_x -= dx * opts.strength
-        normal_y += dy * opts.strength
+        # A wire is a thin curved filament, not an extruded slab with near-vertical
+        # cliffs. Keep contour normals gentle even when global --strength is high.
+        bevel_strength = min(opts.strength, 1.6) if profile == 'wire' else opts.strength
+        normal_x -= dx * bevel_strength
+        normal_y += dy * bevel_strength
 
     if opts.mode in ('height', 'hybrid') and opts.detail_strength > 0:
         rgb = src[:, :, :3].astype(np.float32) / 255.0
@@ -87,11 +99,12 @@ def _frame_normals(frame: Image.Image, opts: NormalOptions, profile: str) -> Ima
         height = np.sign(height) * np.maximum(np.abs(height) - 0.018, 0.0)
         dx, dy = _gradient(height)
         mult = {'floor': 0.28, 'character': 0.7, 'generic': 0.85,
-                'equipment': 1.0}[profile]
+                'equipment': 1.0, 'wire': 0.12}[profile]
         normal_x -= dx * opts.detail_strength * mult
         normal_y += dy * opts.detail_strength * mult
 
-        if opts.edge_strength > 0:
+        if opts.edge_strength > 0 and profile != 'wire':
+            # Color stripes on wire are highlights/occlusions, not engraved joints.
             # Add *subtle* inset joints along strong interior colour edges,
             # including iso-luminant stripes that RGB->gray alone would miss.
             # Saturation-normalized chroma reduces responses to light/dark shading.
@@ -110,6 +123,13 @@ def _frame_normals(frame: Image.Image, opts: NormalOptions, profile: str) -> Ima
             normal_x -= sx * opts.edge_strength * mult
             normal_y += sy * opts.edge_strength * mult
 
+    # Prevent highly saturated cyan/magenta normals from tiny high-contrast
+    # features. A wire needs a stricter tilt limit than a solid object.
+    slope = np.hypot(normal_x, normal_y)
+    max_slope = 0.65 if profile == 'wire' else 1.4
+    factor = np.minimum(1.0, max_slope / np.maximum(slope, 1e-8))
+    normal_x *= factor
+    normal_y *= factor
     # Normalize per pixel. Outside geometry alpha is exactly zero.
     denom = np.sqrt(normal_x * normal_x + normal_y * normal_y + 1.0)
     normals = np.stack((normal_x / denom, normal_y / denom, 1.0 / denom), axis=2)
@@ -138,22 +158,39 @@ def normal_sheet(source: Image.Image, frame_size: tuple[int, int],
 
 def light_preview(source: Image.Image, normal: Image.Image,
                   frame_size: tuple[int, int], scale: int = 4) -> Image.Image:
-    """Diagnostic 3-panel image: original | normal | re-lit approximation.
+    """Diagnostic 4-panel sheet: albedo | normals | left light | right light.
 
-    Preview lighting is *not* the game's lighting shader.
+    The same albedo and normals are lit from opposite sides to reveal actual
+    directional response. This simplified preview is not the game's shader.
     """
     w, h = frame_size
     src = source.convert('RGBA').crop((0, 0, w, h))
     nrm = normal.convert('RGBA').crop((0, 0, w, h))
     base = np.asarray(src, dtype=np.float32)
-    normal_rgb = np.asarray(nrm, dtype=np.float32)[:, :, :3] / 255.0 * 2.0 - 1.0
-    lighting = np.maximum(0.0, normal_rgb[:, :, 0] * 0.50 +
-                          normal_rgb[:, :, 1] * 0.40 + normal_rgb[:, :, 2] * 0.77)
-    shaded = np.uint8(np.rint(np.clip(base[:, :, :3] * (0.25 + lighting[:, :, None] * 0.85), 0, 255)))
-    relit = Image.fromarray(np.dstack((shaded, base[:, :, 3].astype(np.uint8))), 'RGBA')
+    raw_normals = np.asarray(nrm, dtype=np.float32)[:, :, :3] / 255.0 * 2.0 - 1.0
+    # After 8-bit storage, a nominal 128/128/255 normal is marginally non-unit.
+    direction_norm = np.maximum(np.linalg.norm(raw_normals, axis=2, keepdims=True), 1e-5)
+    normals = raw_normals / direction_norm
+
+    def shade(light: tuple[float, float, float]) -> Image.Image:
+        direction = np.array(light, dtype=np.float32)
+        direction /= np.linalg.norm(direction)
+        diffuse = np.maximum(0.0, np.sum(normals * direction, axis=2))
+        # The specular diagnostic highlights orientation differences on metal.
+        half_vector = direction + np.array([0.0, 0.0, 1.0], dtype=np.float32)
+        half_vector /= np.linalg.norm(half_vector)
+        specular = np.maximum(0.0, np.sum(normals * half_vector, axis=2)) ** 24
+        scale_light = 0.18 + 0.85 * diffuse
+        shaded = np.clip(base[:, :, :3] * scale_light[:, :, None]
+                         + specular[:, :, None] * 33.0, 0.0, 255.0)
+        return Image.fromarray(np.dstack((np.uint8(np.rint(shaded)),
+                                         base[:, :, 3].astype(np.uint8))), 'RGBA')
+
+    images = (src, nrm, shade((-0.80, -0.25, 0.65)), shade((0.80, 0.25, 0.65)))
     padding = max(6, scale * 2)
-    sheet = Image.new('RGBA', (w * 3 * scale + padding * 4, h * scale + padding * 2), (26, 30, 39, 255))
-    for i, image in enumerate((src, nrm, relit)):
+    sheet = Image.new('RGBA', (w * 4 * scale + padding * 5, h * scale + padding * 2),
+                      (26, 30, 39, 255))
+    for i, image in enumerate(images):
         sheet.alpha_composite(image.resize((w * scale, h * scale), Image.Resampling.NEAREST),
                               (padding * (i + 1) + i * w * scale, padding))
     return sheet
