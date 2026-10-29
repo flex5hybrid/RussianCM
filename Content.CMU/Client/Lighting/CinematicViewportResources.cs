@@ -16,6 +16,7 @@ internal sealed class CinematicViewportResources : IDisposable
     private static readonly ProtoId<ShaderPrototype> LightShader = "CMUCinematicLightComposite";
     private readonly IClyde _clyde;
     private readonly CinematicLightingQuality _quality;
+    private readonly bool _normalsEnabled;
     private Vector2i _size;
     private Vector2i _nativeLightSize;
     private MapId _map;
@@ -27,6 +28,7 @@ internal sealed class CinematicViewportResources : IDisposable
     public readonly CinematicContactRenderer? Contact;
     public readonly CinematicLightSpillRenderer? Spill;
     public readonly CinematicAtmosphereRenderer? Atmosphere;
+    public readonly CinematicNormalRenderer? NormalRenderer;
     public readonly ShaderInstance Composite;
     public readonly ShaderInstance? SurfaceComposite;
     public readonly ShaderInstance? LightComposite;
@@ -40,17 +42,20 @@ internal sealed class CinematicViewportResources : IDisposable
     public IRenderTexture? Reflections;
     public IRenderTexture? AtmosphereTarget;
     public IRenderTexture? NativeLightCopy;
+    public IRenderTexture? Normals;
+    public IRenderTexture? NormalLight;
     public bool SurfacePrepared;
     public long TargetBytes { get; private set; }
     public int TargetCount => Pyramid.Length + (Blockers == null ? 0 : 1) + (Emission == null ? 0 : 1)
-        + (OpticalSeeds == null ? 0 : 1) + (Materials == null ? 0 : 5);
+        + (OpticalSeeds == null ? 0 : 1) + (Materials == null ? 0 : 5) + (Normals == null ? 0 : 2);
 
     public CinematicViewportResources(IClyde clyde, IEntityManager entities, IPrototypeManager prototypes,
         IResourceCache textures, ITileDefinitionManager tiles, IConfigurationManager config,
-        CinematicLightingQuality quality)
+        CinematicLightingQuality quality, bool normalsEnabled)
     {
         _clyde = clyde;
         _quality = quality;
+        _normalsEnabled = normalsEnabled && quality.SurfaceEffects;
         Frame = new CinematicRenderContext(prototypes, textures);
         Occlusion = new CinematicOcclusionRenderer(entities, prototypes, Frame);
         Bloom = new CinematicBloomRenderer(prototypes, Frame, Occlusion, quality);
@@ -66,6 +71,8 @@ internal sealed class CinematicViewportResources : IDisposable
             SurfaceComposite = prototypes.Index(SurfaceShader).InstanceUnique();
             LightComposite = prototypes.Index(LightShader).InstanceUnique();
             LightCopy = prototypes.Index<ShaderPrototype>("CMUCinematicLightCopy").InstanceUnique();
+            if (_normalsEnabled)
+                NormalRenderer = new CinematicNormalRenderer(entities, textures, prototypes, Frame, Occlusion, quality);
         }
     }
 
@@ -98,6 +105,11 @@ internal sealed class CinematicViewportResources : IDisposable
             Reflections = Create(reduced, "reflections");
             AtmosphereTarget = Create(reduced, "atmosphere");
             NativeLightCopy = Create(_nativeLightSize, "native-light-copy");
+            if (_normalsEnabled)
+            {
+                Normals = Create(size, "normals", RenderTargetColorFormat.Rgba8, filter: false);
+                NormalLight = Create(size, "normal-light");
+            }
         }
         Pyramid = new IRenderTexture[_quality.BloomLevels];
         for (var i = 0; i < Pyramid.Length; i++)
@@ -133,6 +145,10 @@ internal sealed class CinematicViewportResources : IDisposable
         AtmosphereTarget = null;
         NativeLightCopy?.Dispose();
         NativeLightCopy = null;
+        Normals?.Dispose();
+        Normals = null;
+        NormalLight?.Dispose();
+        NormalLight = null;
         foreach (var target in Pyramid)
             target?.Dispose();
         Pyramid = Array.Empty<IRenderTexture>();
@@ -152,6 +168,7 @@ internal sealed class CinematicViewportResources : IDisposable
         SurfaceComposite?.Dispose();
         LightComposite?.Dispose();
         LightCopy?.Dispose();
+        NormalRenderer?.Dispose();
         Occlusion.Dispose();
     }
 }
