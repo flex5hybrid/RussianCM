@@ -31,7 +31,7 @@ jobs:
     name: Start publish
     needs: changelog
     if: always() && (needs.changelog.result == 'success' || needs.changelog.result == 'skipped')
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm # CMU14: use the ARM pool for Python-only publish coordination
     timeout-minutes: 15
     outputs:
       already-published: ${{ steps.start.outputs.already-published }}
@@ -40,16 +40,27 @@ jobs:
         with:
           persist-credentials: true
           submodules: false
-          sparse-checkout: |
-            RobustToolbox
-            Tools
+          sparse-checkout: Tools # CMU14: engine sources are not needed to resolve the version
 
-      - name: Checkout RobustToolbox
+      # CMU14 Begin: preserve git describe semantics without downloading engine file contents.
+      - name: Fetch RobustToolbox version metadata
         run: |
-          git config --global url."https://x-access-token:${{ github.token }}@github.com/".insteadOf "https://github.com/"
-          git submodule update --init --depth=1 RobustToolbox
-          cd RobustToolbox
-          git fetch --unshallow --tags origin
+          engine_commit=$(git rev-parse HEAD:RobustToolbox)
+          engine_url=$(git config -f .gitmodules --get submodule.RobustToolbox.url)
+          git init --bare RobustToolbox
+          git -C RobustToolbox remote add origin "$engine_url"
+          git -C RobustToolbox fetch --filter=blob:none --tags origin "$engine_commit"
+          git -C RobustToolbox update-ref HEAD "$engine_commit"
+      # CMU14 End
+
+      # CMU14 Begin: install the publishing script dependency on the ARM image.
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.13"
+
+      - name: Install publish dependencies
+        run: python3 -m pip install --disable-pip-version-check requests
+      # CMU14 End
 
       - name: Start publish
         id: start
@@ -146,13 +157,22 @@ jobs:
       needs.publish_start.result == 'success' &&
       needs.publish_start.outputs.already-published != 'true' &&
       needs.package.result == 'success'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm # CMU14: uploads do not require an x64 build runner
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7
         with:
           submodules: false
           sparse-checkout: Tools
+
+      # CMU14 Begin: install the publishing script dependency on the ARM image.
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.13"
+
+      - name: Install publish dependencies
+        run: python3 -m pip install --disable-pip-version-check requests
+      # CMU14 End
 
       - name: Download packages
         uses: actions/download-artifact@v8
@@ -172,7 +192,7 @@ jobs:
       always() &&
       needs.publish_start.result == 'success' &&
       needs.publish_start.outputs.already-published != 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm # CMU14: use the ARM pool for Python-only publish coordination
     timeout-minutes: 15
     needs: [publish_start, package, publish_upload]
     steps:
@@ -181,6 +201,15 @@ jobs:
           persist-credentials: true
           submodules: false
           sparse-checkout: Tools
+
+      # CMU14 Begin: install the publishing script dependency on the ARM image.
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.13"
+
+      - name: Install publish dependencies
+        run: python3 -m pip install --disable-pip-version-check requests
+      # CMU14 End
 
       - name: Publish version
         if: needs.package.result == 'success' && needs.publish_upload.result == 'success'
