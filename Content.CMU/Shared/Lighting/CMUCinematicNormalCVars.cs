@@ -9,4 +9,8 @@ public static class CMUCinematicNormalCVars
 {
     public static readonly CVarDef<bool> Enabled =
         CVarDef.Create("cmu.lighting.cinematic_normals", false, CVar.CLIENTONLY);
+
+    /// <summary>Client-local mass-test mode, no new replicated components.</summary>
+    public static readonly CVarDef<bool> AllSprites =
+        CVarDef.Create("cmu.lighting.cinematic_normals_all", false, CVar.CLIENTONLY);
 }
