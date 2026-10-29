@@ -38,6 +38,7 @@ public sealed partial class CinematicLightingSystem : EntitySystem
     private CinematicIrradianceOverlay? _irradianceOverlay;
     public CinematicLightingQuality Quality { get; private set; }
     internal bool NormalsEnabled { get; private set; }
+    internal bool NormalsAll { get; private set; }
     public CinematicLightingStatistics LastFrame { get; internal set; }
     internal CinematicLightingControls Controls { get; } = new();
     internal IReadOnlyList<CinematicLightSource> Sources => _overlay?.Sources ?? Array.Empty<CinematicLightSource>();
@@ -52,6 +53,14 @@ public sealed partial class CinematicLightingSystem : EntitySystem
         InitializeWater();
         Subs.CVar(_config, CCVars.CMUCinematicLighting, OnQualityChanged, true);
         Subs.CVar(_config, CMUCinematicNormalCVars.Enabled, OnNormalsChanged, true);
+        Subs.CVar(_config, CMUCinematicNormalCVars.AllSprites, OnNormalsAllChanged, true);
+    }
+
+    private void OnNormalsAllChanged(bool enabled)
+    {
+        // No viewport reallocations: the same two targets are reused in both modes.
+        // The renderer clears missing-normal cache entries when this value changes.
+        NormalsAll = enabled;
     }
 
     private void OnNormalsChanged(bool enabled)
