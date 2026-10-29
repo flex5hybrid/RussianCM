@@ -5,6 +5,10 @@ blend_mode add;
 
 uniform sampler2D normal_texture;
 uniform highp float normal_light_strength;
+uniform highp float normal_light_height;
+uniform highp float normal_light_contrast;
+uniform highp float normal_light_flatness;
+uniform highp float normal_light_max_boost;
 
 void fragment()
 {
@@ -12,6 +16,7 @@ void fragment()
     highp vec2 world = frameWorld(uv);
     if (visibleAt(source_position) < 0.5 || visibleAt(world) < 0.5)
         discard;
+
     highp vec4 encoded = texture2D(normal_texture, uv);
     if (encoded.a < 0.01)
         discard;
@@ -21,21 +26,24 @@ void fragment()
     if (distance >= source_radius)
         discard;
 
-    // Approximate overhead fixture height above one test object's top surface.
-    // The light *source* location is still the original gameplay point-light.
-    highp vec3 light_dir = normalize(vec3(delta, 0.95));
+    // A lower fixture height makes side-facing details respond to light direction.
+    highp vec3 light_dir = normalize(vec3(delta, max(normal_light_height, 0.05)));
     highp vec3 normal = normalize(encoded.rgb * 2.0 - 1.0);
     highp float normal_facing = max(0.0, dot(normal, light_dir));
-    highp float flat_facing = light_dir.z;
-    // Positive directional excess only: never darken native lighting or make
-    // a normally flat sprite unnaturally bright.
-    highp float extra = max(0.0, normal_facing - flat_facing);
-    if (extra < 0.001)
+    highp float flat_facing = max(0.0, light_dir.z);
+
+    // Subtract a controllable flat-surface baseline. Flatness < 1 deliberately
+    // adds a small baseline glow; use 1.0 for strictly directional excess.
+    // Do not name the baseline "flat": flat is a reserved GLSL qualifier.
+    highp float shape = max(0.0, normal_facing - flat_facing * normal_light_flatness);
+    shape = min(shape * normal_light_contrast, normal_light_max_boost);
+    shape = pow(max(shape, 0.0), 0.9);
+    if (shape < 0.001)
         discard;
 
     highp float fade = sourceAttenuation(world);
     highp float mask = sourceMask(world, 1.0);
     highp vec3 radiance = source_color * min(source_energy, 3.0)
-        * extra * fade * mask * encoded.a * min(normal_light_strength, 0.65);
+        * shape * fade * mask * encoded.a * normal_light_strength;
     COLOR = vec4(radiance, 1.0);
 }
