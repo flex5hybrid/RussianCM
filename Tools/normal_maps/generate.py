@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reproducible, offline, alpha-based normal-map generator for SS14 textures.
+"""Reproducible, offline normal-map generator for SS14 textures.
 
 Mirrors resource paths under _GeneratedNormalMaps inside the same Textures root.
 For .rsi sheets the output is a separate, loadable .rsi with the original meta.json.
@@ -11,13 +11,13 @@ from __future__ import annotations
 import argparse
 import io
 import json
-import math
 import shutil
 import subprocess
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageFilter
+from PIL import Image
+from normal_algorithms import MODES, PROFILES, NormalOptions, light_preview, normal_sheet as generate_normal_sheet
 
 TEXTURE_ROOTS = (Path("Resources/Textures"), Path("Content.CMU/Resources/Textures"))
 OUTPUT_DIR = "_GeneratedNormalMaps"
@@ -73,41 +73,13 @@ def changed_paths(repo: Path, ref: str) -> list[Path]:
     return result
 
 
-def encode_normal(dx: float, dy: float, strength: float) -> tuple[int, int, int]:
-    # The image pixel Y axis points down; tangent-space green points up.
-    nx, ny, nz = -dx * strength, dy * strength, 1.0
-    norm = math.sqrt(nx * nx + ny * ny + nz * nz)
-    return tuple(int(round(max(0.0, min(1.0, (v / norm + 1.0) * 0.5)) * 255)) for v in (nx, ny, nz))
-
-
-def normal_sheet(source: Image.Image, frame_size: tuple[int, int], bevel: float, strength: float) -> Image.Image:
-    """Generate each RSI frame independently, avoiding bleed between sheet cells."""
-    width, height = source.size
-    fw, fh = frame_size
-    if fw <= 0 or fh <= 0 or width % fw or height % fh:
-        raise ValueError(f"Image {source.size} is not a multiple of RSI frame size {frame_size}")
-    src = source.convert("RGBA")
-    result = Image.new("RGBA", src.size, (0, 0, 0, 0))
-    for frame_y in range(0, height, fh):
-        for frame_x in range(0, width, fw):
-            tile = src.crop((frame_x, frame_y, frame_x + fw, frame_y + fh))
-            alpha = tile.getchannel("A")
-            smooth = alpha.filter(ImageFilter.GaussianBlur(radius=bevel)) if bevel > 0 else alpha
-            values = smooth.load()
-            opacity = alpha.load()
-            output = Image.new("RGBA", (fw, fh), (0, 0, 0, 0))
-            pixels = output.load()
-            for y in range(fh):
-                for x in range(fw):
-                    a = opacity[x, y]
-                    if not a:
-                        continue
-                    # Replicated border samples do not wrap to adjacent spritesheet cells.
-                    dx = (values[min(x + 1, fw - 1), y] - values[max(x - 1, 0), y]) / 510.0
-                    dy = (values[x, min(y + 1, fh - 1)] - values[x, max(y - 1, 0)]) / 510.0
-                    pixels[x, y] = (*encode_normal(dx, dy, strength), a)
-            result.paste(output, (frame_x, frame_y))
-    return result
+def normal_sheet(source: Image.Image, frame_size: tuple[int, int], bevel: float, strength: float,
+                 *, mode: str = "hybrid", profile: str = "auto", detail_strength: float = 2.2,
+                 detail_radius: float = 2.4, edge_strength: float = 0.16,
+                 resource_path: str = "") -> Image.Image:
+    """Compatible wrapper; the new algorithm also detects internal sprite detail."""
+    options = NormalOptions(mode, profile, bevel, strength, detail_strength, detail_radius, edge_strength)
+    return generate_normal_sheet(source, frame_size, options, resource_path=resource_path)
 
 
 def png_bytes(image: Image.Image) -> bytes:
@@ -117,10 +89,13 @@ def png_bytes(image: Image.Image) -> bytes:
 
 
 class Synchronizer:
-    def __init__(self, check: bool, bevel: float, strength: float):
+    def __init__(self, check: bool, bevel: float, strength: float, *, mode: str = "hybrid",
+                 profile: str = "auto", detail_strength: float = 2.2, detail_radius: float = 2.4,
+                 edge_strength: float = 0.16, preview_dir: Path | None = None):
         self.check = check
-        self.bevel = bevel
-        self.strength = strength
+        self.options = NormalOptions(mode, profile, bevel, strength, detail_strength, detail_radius, edge_strength)
+        self.preview_dir = preview_dir
+        self.preview_count = 0
         self.errors: list[str] = []
         self.changed = 0
         self.checked = 0
@@ -156,7 +131,13 @@ class Synchronizer:
             return
         with Image.open(source) as img:
             size = frame_size or img.size
-            result = normal_sheet(img, size, self.bevel, self.strength)
+            result = generate_normal_sheet(img, size, self.options, resource_path=source.as_posix())
+            if self.preview_dir is not None and self.preview_count < 24:
+                self.preview_dir.mkdir(parents=True, exist_ok=True)
+                # Only the first RSI frame is used for the diagnostic preview.
+                name = f"{self.preview_count:02d}-{source.stem[:45]}.png"
+                light_preview(img, result, size, scale=5).save(self.preview_dir / name)
+                self.preview_count += 1
             # Verify decoded pixels, not PNG compression bytes, across Pillow/zlib versions.
             if target.is_file():
                 try:
@@ -193,8 +174,13 @@ class Synchronizer:
                     self.remove(old)
 
 
-def run(repo: Path, paths: list[Path], check: bool, bevel: float, strength: float, full: bool = False) -> Synchronizer:
-    worker = Synchronizer(check, bevel, strength)
+def run(repo: Path, paths: list[Path], check: bool, bevel: float, strength: float,
+        full: bool = False, *, mode: str = "hybrid", profile: str = "auto",
+        detail_strength: float = 2.2, detail_radius: float = 2.4,
+        edge_strength: float = 0.16, preview_dir: Path | None = None) -> Synchronizer:
+    worker = Synchronizer(check, bevel, strength, mode=mode, profile=profile,
+                          detail_strength=detail_strength, detail_radius=detail_radius,
+                          edge_strength=edge_strength, preview_dir=preview_dir)
     assets: set[tuple[Path, Path]] = set()
     for path in paths:
         location = source_location(repo, path)
@@ -232,10 +218,27 @@ def main() -> int:
     selection.add_argument("--paths", nargs="+", type=Path, metavar="PATH", help="Process selected source files or folders")
     parser.add_argument("--check", action="store_true", help="Verify generated output without writing")
     parser.add_argument("--bevel", type=float, default=1.25, help="Blur radius for alpha-derived bevel (default: 1.25)")
-    parser.add_argument("--strength", type=float, default=5.0, help="Normal strength (default: 5.0)")
+    parser.add_argument("--strength", type=float, default=5.0, help="Silhouette bevel strength")
+    parser.add_argument("--mode", choices=MODES, default="hybrid",
+                        help="Normal inference: flat, bevel, height or hybrid (default)")
+    parser.add_argument("--profile", choices=PROFILES, default="auto",
+                        help="Per-material detail strength; auto classifies by asset path")
+    parser.add_argument("--detail-strength", type=float, default=2.2,
+                        help="Strength of internal texture relief (default: 2.2)")
+    parser.add_argument("--detail-radius", type=float, default=2.4,
+                        help="Radius for local illumination removal (default: 2.4)")
+    parser.add_argument("--edge-strength", type=float, default=0.16,
+                        help="Subtle joints along colour boundaries (default: 0.16)")
+    parser.add_argument("--preview-dir", type=Path, metavar="DIR",
+                        help="Optional diagnostic first-frame contact sheets (max 24)")
     args = parser.parse_args()
-    if not (0 <= args.bevel <= 16 and 0 <= args.strength <= 100):
-        parser.error("--bevel must be 0..16 and --strength 0..100")
+    try:
+        NormalOptions(args.mode, args.profile, args.bevel, args.strength,
+                      args.detail_strength, args.detail_radius, args.edge_strength)
+    except ValueError as exc:
+        parser.error(str(exc))
+    if args.check and args.preview_dir:
+        parser.error("--preview-dir cannot be combined with --check")
     repo = Path(__file__).resolve().parents[2]
     try:
         if args.all:
@@ -251,7 +254,10 @@ def main() -> int:
                     paths.extend(p.relative_to(repo) for p in full.rglob("*") if p.is_file())
                 else:
                     paths.append(path)
-        worker = run(repo, paths, args.check, args.bevel, args.strength, args.all)
+        worker = run(repo, paths, args.check, args.bevel, args.strength, args.all,
+                     mode=args.mode, profile=args.profile, detail_strength=args.detail_strength,
+                     detail_radius=args.detail_radius, edge_strength=args.edge_strength,
+                     preview_dir=args.preview_dir)
     except (ValueError, OSError, KeyError, subprocess.CalledProcessError) as exc:
         print(f"normal-map generation failed: {exc}", file=sys.stderr)
         return 2
