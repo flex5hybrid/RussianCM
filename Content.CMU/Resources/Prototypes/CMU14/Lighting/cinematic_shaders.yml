@@ -37,3 +37,11 @@
   id: CMUCinematicLightCopy
   kind: source
   path: /Textures/Shaders/CMU14/Cinematic/light-copy.swsl
+- type: shader
+  id: CMUCinematicWallReceiver
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/receiver.swsl
+- type: shader
+  id: CMUCinematicContact
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/contact.swsl

@@ -12,7 +12,7 @@ cmu-cinematic-stats-description = Show cinematic lighting rendering counters.
 cmu-cinematic-stats-help = cmu_cinematic_stats: last rendered main viewport; CPU submission time is not GPU time.
 cmu-cinematic-stats-result = Quality { $quality }; sources { $sources }; beams { $beams }; occluder edges { $edges }; mesh rebuilds { $rebuilds }; targets { $targets }; target memory { $memory } MiB; CPU submission { $cpu } ms.
 cmu-cinematic-demo-description = Create an isolated cinematic lighting demonstration room.
-cmu-cinematic-demo-help = cmu_cinematic_demo [player] [industrial | industrial-static | almayer | reference | view x y | capture | reload | watch]: industrial set, Almayer, or the original StableGarrison reference hall; view moves the camera, capture saves a comparison. Requires Mapping.
+cmu-cinematic-demo-help = cmu_cinematic_demo [player] [industrial | industrial-static | materials | reference | almayer | view x y | capture 3..60 | state all/lamp-off/screens-off/alarm/spotlight | debug mode | zoom scale | reload | watch]. State and zoom changes require an isolated review map. Requires Mapping.
 cmu-cinematic-demo-created = Lighting demo created: map { $map }, grid { $grid }. Compare cinematic quality 0, 1, 2, 3 from the same position. Terminals, metal, tile, glass, a puddle, floodlights, and an alert beacon are included.
 cmu-cinematic-capture-description = Capture all four cinematic lighting presets and their frame times.
 cmu-cinematic-capture-help = cmu_cinematic_capture [3-60 seconds per preset | stop]: measures all four presets first, then saves screenshots and diagnostic fields separately; temporarily disables VSync and the FPS limit, then restores graphics settings. Keep the camera still. Server: cmu_cinematic_demo [player] capture [seconds].
@@ -21,3 +21,7 @@ cmu-cinematic-capture-already-running = A lighting capture is already running. U
 
 cmu-cinematic-demo-load-failed = Failed to load the CMU map review copy.
 cmu-cinematic-demo-map-loaded = Loaded actual map { $path }, map { $map }, camera { $x }, { $y }. Power is fixed for every preset; the authored ambient is preserved.
+cmu-cinematic-debug-description = Inspect cinematic lighting fields without GPU readback.
+cmu-cinematic-debug-help = cmu_cinematic_debug all|off|native|direct|indirect|emissive|core|inner|outer|bloom|reflections|materials|atmosphere|occlusion|contacts; enable|disable direct|indirect|reflections|glow|atmosphere|contacts; quality 0..3; window 1920 1080.
+cmu-cinematic-review-state-error = State changes require an isolated review map: all, lamp-off, screens-off, alarm, spotlight, alarm-off, spotlight-off.
+cmu-cinematic-review-state = Review state: { $state }; selected lamp: { $lamp }.

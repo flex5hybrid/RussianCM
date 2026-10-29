@@ -31,6 +31,9 @@ public sealed partial class CinematicLightingOverlay : Overlay
     private readonly OverlayResourceCache<CinematicViewportResources> _resources = new();
     private readonly Func<IClydeViewport, CinematicViewportResources> _factory;
     private CinematicViewportResources? _lastResources;
+    internal IReadOnlyList<CinematicLightSource> Sources => _lastResources?.Frame.Sources
+        ?? (IReadOnlyList<CinematicLightSource>) Array.Empty<CinematicLightSource>();
+    internal CinematicRenderContext? CaptureFrame => _lastResources?.Frame;
     private double _surfaceCpu;
     private double _lightingCpu;
     private double _prepareCpu;
@@ -81,6 +84,7 @@ public sealed partial class CinematicLightingOverlay : Overlay
         var resources = _resources.GetForViewport(args.Viewport, _factory);
         _lastResources = resources;
         resources.Frame.Begin(args, scene);
+        resources.Frame.Controls = _system.Controls;
         resources.EnsureSize(args.Viewport.Size, args.MapId, args.Viewport.LightRenderTarget.Size);
         return resources;
     }
@@ -101,7 +105,8 @@ public sealed partial class CinematicLightingOverlay : Overlay
         resources.SurfacePrepared = false;
         if (!BeginGeometry(resources, args))
             return;
-        resources.Bloom.Render(resources.Emission, resources.Pyramid, resources.Blockers.Texture);
+        resources.Bloom.Render(resources.Emission, resources.Pyramid, resources.Blockers.Texture,
+            resources.InnerSeeds, resources.OuterSeeds, resources.Blockers);
         resources.Spill!.RenderIrradiance(resources.Irradiance!);
         resources.Spill.RenderNativeContribution(resources.NativeContribution!);
         _lightResources = resources;
@@ -121,6 +126,8 @@ public sealed partial class CinematicLightingOverlay : Overlay
         shader.SetParameter("native_contribution_texture", _lightResources.NativeContribution!.Texture);
         shader.SetParameter("blocker_texture", _lightResources.Blockers.Texture);
         shader.SetParameter("local_exposure", Exposure);
+        shader.SetParameter("native_only", _system.Controls.View == CinematicDebugView.Native);
+        shader.SetParameter("direct_enabled", _system.Controls.Direct);
         frame.Handle.UseShader(shader);
         frame.Handle.DrawRect(frame.Bounds, Color.White);
     }
@@ -143,7 +150,8 @@ public sealed partial class CinematicLightingOverlay : Overlay
             return;
         var frame = resources.Frame;
         resources.Material!.Render(resources.Materials!);
-        resources.Spill!.RenderReflections(resources.Reflections!, resources.Materials!.Texture);
+        resources.Contact!.Render(resources.Blockers);
+        resources.Spill!.RenderReflections(resources.Reflections!, resources.Materials!.Texture, resources.Emission.Texture);
         var shader = resources.SurfaceComposite!;
         frame.BindFrame(shader);
         shader.SetParameter("target_size", (Vector2) args.Viewport.Size);
@@ -171,7 +179,8 @@ public sealed partial class CinematicLightingOverlay : Overlay
             return;
         var frame = resources.Frame;
         if (!_system.Quality.SurfaceEffects || !resources.SurfacePrepared)
-            resources.Bloom.Render(resources.Emission, resources.Pyramid, resources.Blockers.Texture);
+            resources.Bloom.Render(resources.Emission, resources.Pyramid, resources.Blockers.Texture,
+                resources.InnerSeeds, resources.OuterSeeds, resources.Blockers);
         if (resources.AtmosphereTarget != null)
             resources.Atmosphere!.Render(resources.AtmosphereTarget);
         resources.Occlusion.EndMeshes();
@@ -188,6 +197,13 @@ public sealed partial class CinematicLightingOverlay : Overlay
         composite.SetParameter("bloom_medium", resources.Pyramid[Math.Min(1, resources.Pyramid.Length - 1)].Texture);
         composite.SetParameter("bloom_wide", resources.Pyramid[^1].Texture);
         composite.SetParameter("local_exposure", Exposure);
+        composite.SetParameter("debug_view", (int) _system.Controls.View);
+        composite.SetParameter("glow_enabled", _system.Controls.Glow);
+        composite.SetParameter("blocker_texture", resources.Blockers.Texture);
+        composite.SetParameter("direct_texture", (resources.Irradiance ?? resources.Emission).Texture);
+        composite.SetParameter("reflection_texture", (resources.Reflections ?? resources.Emission).Texture);
+        composite.SetParameter("material_texture", (resources.Materials ?? resources.Emission).Texture);
+        composite.SetParameter("native_texture", (resources.NativeLightCopy ?? resources.Emission).Texture);
         args.WorldHandle.SetTransform(Matrix3x2.Identity);
         args.WorldHandle.UseShader(composite);
         args.WorldHandle.DrawRect(args.WorldBounds, Color.White);
@@ -217,6 +233,8 @@ public sealed partial class CinematicLightingOverlay : Overlay
         if (resources.NativeLightCopy != null)
             Copy("native-light-original", resources.NativeLightCopy);
         Copy("emission", resources.Emission);
+        Copy("inner-seeds", resources.InnerSeeds);
+        Copy("outer-seeds", resources.OuterSeeds);
         if (resources.NativeContribution != null)
             Copy("native-contribution", resources.NativeContribution);
         if (resources.Materials != null)

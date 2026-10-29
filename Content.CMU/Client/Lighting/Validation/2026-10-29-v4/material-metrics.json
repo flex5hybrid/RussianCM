@@ -1,0 +1,280 @@
+{
+  "config_version": 1,
+  "thresholds": {
+    "maximum_white_fraction": 0.025,
+    "minimum_actor_contrast_ratio": 0.75,
+    "minimum_local_color_bias": 0.003,
+    "minimum_color_locality_difference": 0.002,
+    "minimum_source_off_change": 0.0005,
+    "straight_gradient": 0.025,
+    "straight_run_pixels": 48,
+    "original_edge_gradient": 0.02
+  },
+  "all_checks_pass": true,
+  "presets": [
+    {
+      "quality": 1,
+      "size": [
+        1344,
+        960
+      ],
+      "deep_exterior_pixels": 551388,
+      "changed_deep_exterior_pixels": 0,
+      "white_visible_fraction": 0.0,
+      "regions": {
+        "matte": {
+          "mean_luminance": 0.023171818190233614,
+          "peak_luminance": 0.6651160417681449,
+          "p99_luminance": 0.20605312043492854,
+          "rms_contrast": 1.7679681029314238,
+          "contrast_ratio_to_off": 4.972019569251992,
+          "mean_rgb": [
+            0.021790592176942722,
+            0.023833132467807917,
+            0.020688115684837527
+          ],
+          "delta_rgb": [
+            0.006880726696857864,
+            0.006053378828084673,
+            0.0049244102719417935
+          ]
+        },
+        "polished": {
+          "mean_luminance": 0.01838791965923939,
+          "peak_luminance": 0.6596838215954258,
+          "p99_luminance": 0.20002896833286188,
+          "rms_contrast": 2.205868226454829,
+          "contrast_ratio_to_off": 7.27728272779392,
+          "mean_rgb": [
+            0.01769447008472478,
+            0.018801777127330256,
+            0.01633025370862413
+          ],
+          "delta_rgb": [
+            0.0069241074876024685,
+            0.006106947197071067,
+            0.004956501346885759
+          ]
+        },
+        "tile": {
+          "mean_luminance": 0.1356879244191675,
+          "peak_luminance": 0.7441741994943964,
+          "p99_luminance": 0.3485871339307403,
+          "rms_contrast": 0.45057453927510005,
+          "contrast_ratio_to_off": 1.3086364255718652,
+          "mean_rgb": [
+            0.13985833593014668,
+            0.1356310900700789,
+            0.12397072828656978
+          ],
+          "delta_rgb": [
+            0.005556426481322374,
+            0.004964651723013841,
+            0.004140620199096755
+          ]
+        },
+        "wet": {
+          "mean_luminance": 0.01839988719625166,
+          "peak_luminance": 0.6596838215954258,
+          "p99_luminance": 0.20002896833286188,
+          "rms_contrast": 2.205173960949153,
+          "contrast_ratio_to_off": 7.1133404898056805,
+          "mean_rgb": [
+            0.017335318469139573,
+            0.018789632738358545,
+            0.017673866416077304
+          ],
+          "delta_rgb": [
+            0.006925224489154175,
+            0.0061065142882341895,
+            0.004952810557465339
+          ]
+        }
+      },
+      "straight_boundary_candidates": {
+        "longest_run_pixels": 55,
+        "needs_visual_review": true
+      },
+      "checks": {
+        "fov": true,
+        "white_coverage": true
+      }
+    },
+    {
+      "quality": 2,
+      "size": [
+        1344,
+        960
+      ],
+      "deep_exterior_pixels": 551388,
+      "changed_deep_exterior_pixels": 0,
+      "white_visible_fraction": 0.0009243565901268278,
+      "regions": {
+        "matte": {
+          "mean_luminance": 0.11087280021857536,
+          "peak_luminance": 0.40513259848326927,
+          "p99_luminance": 0.3390108791380211,
+          "rms_contrast": 0.7306627465852813,
+          "contrast_ratio_to_off": 2.0548274985967545,
+          "mean_rgb": [
+            0.11085256479431457,
+            0.11215708010574045,
+            0.09821054365168826
+          ],
+          "delta_rgb": [
+            0.09594269931426197,
+            0.09437732646605353,
+            0.08244683823881983
+          ]
+        },
+        "polished": {
+          "mean_luminance": 0.2394083446414573,
+          "peak_luminance": 0.8066056558893098,
+          "p99_luminance": 0.7859300364817441,
+          "rms_contrast": 0.9406988564907215,
+          "contrast_ratio_to_off": 3.103418172624739,
+          "mean_rgb": [
+            0.2498797610501778,
+            0.23908578452725673,
+            0.21176945080758391
+          ],
+          "delta_rgb": [
+            0.23910939845303814,
+            0.226390954596986,
+            0.20039569844581695
+          ]
+        },
+        "tile": {
+          "mean_luminance": 0.48565517960408716,
+          "peak_luminance": 1.0,
+          "p99_luminance": 1.0,
+          "rms_contrast": 0.5002511736659659,
+          "contrast_ratio_to_off": 1.4529158901157149,
+          "mean_rgb": [
+            0.5047616951429994,
+            0.4844185562976643,
+            0.4416439300911341
+          ],
+          "delta_rgb": [
+            0.37045978569420085,
+            0.35375211795060907,
+            0.3218138220036537
+          ]
+        },
+        "wet": {
+          "mean_luminance": 0.31842927145523453,
+          "peak_luminance": 0.8637945646351226,
+          "p99_luminance": 0.8414868639176777,
+          "rms_contrast": 0.9976000846850483,
+          "contrast_ratio_to_off": 3.2180087379452584,
+          "mean_rgb": [
+            0.34969836870102855,
+            0.3146317713479126,
+            0.26397168145926064
+          ],
+          "delta_rgb": [
+            0.33928827472107115,
+            0.30194865289782186,
+            0.25125062560063977
+          ]
+        }
+      },
+      "straight_boundary_candidates": {
+        "longest_run_pixels": 56,
+        "needs_visual_review": true
+      },
+      "checks": {
+        "fov": true,
+        "white_coverage": true
+      }
+    },
+    {
+      "quality": 3,
+      "size": [
+        1344,
+        960
+      ],
+      "deep_exterior_pixels": 551388,
+      "changed_deep_exterior_pixels": 0,
+      "white_visible_fraction": 0.0013789807080049556,
+      "regions": {
+        "matte": {
+          "mean_luminance": 0.11281721465016273,
+          "peak_luminance": 0.3730989986351572,
+          "p99_luminance": 0.3440797549105494,
+          "rms_contrast": 0.7351171417342883,
+          "contrast_ratio_to_off": 2.067354500533793,
+          "mean_rgb": [
+            0.11301881544991177,
+            0.11408020554546909,
+            0.09971262436794216
+          ],
+          "delta_rgb": [
+            0.09810894996985985,
+            0.09630045190578171,
+            0.08394891895507352
+          ]
+        },
+        "polished": {
+          "mean_luminance": 0.2401685487458805,
+          "peak_luminance": 0.8167542772443339,
+          "p99_luminance": 0.7948845134195391,
+          "rms_contrast": 0.9445876791720329,
+          "contrast_ratio_to_off": 3.1162476162835944,
+          "mean_rgb": [
+            0.2507078854164864,
+            0.239830309299114,
+            0.21248497362354266
+          ],
+          "delta_rgb": [
+            0.23993752281934766,
+            0.2271354793688441,
+            0.20111122126177716
+          ]
+        },
+        "tile": {
+          "mean_luminance": 0.4855521129166342,
+          "peak_luminance": 1.0,
+          "p99_luminance": 1.0,
+          "rms_contrast": 0.5013317769599694,
+          "contrast_ratio_to_off": 1.4560543649048163,
+          "mean_rgb": [
+            0.5043420033484696,
+            0.4843340793260028,
+            0.4422890508417384
+          ],
+          "delta_rgb": [
+            0.37004009389967524,
+            0.3536676409789524,
+            0.32245894275424786
+          ]
+        },
+        "wet": {
+          "mean_luminance": 0.31940021884698466,
+          "peak_luminance": 0.8569213917825653,
+          "p99_luminance": 0.8420057255251296,
+          "rms_contrast": 0.9961978933895763,
+          "contrast_ratio_to_off": 3.2134856190017347,
+          "mean_rgb": [
+            0.35058587547493025,
+            0.3156408058728729,
+            0.2648110437773342
+          ],
+          "delta_rgb": [
+            0.34017578149497,
+            0.30295768742278656,
+            0.2520899879187105
+          ]
+        }
+      },
+      "straight_boundary_candidates": {
+        "longest_run_pixels": 56,
+        "needs_visual_review": true
+      },
+      "checks": {
+        "fov": true,
+        "white_coverage": true
+      }
+    }
+  ]
+}

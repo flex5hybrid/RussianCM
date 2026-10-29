@@ -10,10 +10,12 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Map;
+using Robust.Shared.Map.Components;
 using Robust.Shared.Maths;
 using Robust.Shared.Utility;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
+using Color = Robust.Shared.Maths.Color;
 
 namespace Content.Client.CMU14.Lighting;
 
@@ -47,6 +49,7 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
     private long _started;
     private DateTime _stageUtc;
     private CaptureState? _scene;
+    private EntityUid? _reviewMap;
     private long _lastFrame;
     private long _frames;
     private double _total;
@@ -82,6 +85,7 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
         _samples.EnsureCapacity(65536);
         _imagesOnly = false;
         _scene = null;
+        _reviewMap = null;
         _directory = new ResPath($"/cinematic-lighting/{DateTime.UtcNow:yyyyMMdd-HHmmss}");
         _resources.UserData.CreateDir(_directory);
         _active = true;
@@ -108,6 +112,7 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
                     && _eyes.MainViewport is ScalingViewport)
                 {
                     _waitingForScene = false;
+                    _reviewMap = EntityManager.System<CinematicLightingSystem>().CaptureFrame?.MapUid;
                     BeginStage(0);
                 }
                 else if (elapsed > 180)
@@ -232,16 +237,19 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
     {
         if (_eyes.MainViewport is not ScalingViewport { Eye: { } eye } viewport)
             return null;
+        var controls = EntityManager.System<CinematicLightingSystem>().Controls;
+        var ambient = _reviewMap is { } map && EntityManager.TryGetComponent<MapLightComponent>(map, out var light)
+            ? light.AmbientLightColor : Color.Black;
         return new CaptureState(eye.Position, eye.Rotation, eye.Zoom, eye.Offset, viewport.PixelSize,
             eye.DrawLight, eye.DrawFov, _config.GetCVar(CCVars.CMUCinematicExposure),
             _config.GetCVar(CCVars.CMUCinematicAtmosphere), _config.GetCVar(CCVars.CMUCinematicAOIntensity),
             _config.GetCVar(CCVars.CMUCinematicAORadius), _config.GetCVar(CCVars.AmbientOcclusion),
-            _config.GetCVar(CVars.LightResolutionScale));
+            _config.GetCVar(CVars.LightResolutionScale), controls.View, controls.EnabledMask, ambient);
     }
 
     private readonly record struct CaptureState(MapCoordinates Position, Angle Rotation, Vector2 Zoom, Vector2 Offset,
         Vector2i PixelSize, bool DrawLight, bool DrawFov, float Exposure, float Atmosphere, float AOIntensity,
-        float AORadius, bool AOEnabled, float NativeScale);
+        float AORadius, bool AOEnabled, float NativeScale, CinematicDebugView DebugView, int EnabledEffects, Color Ambient);
 
     private double Percentile(double fraction) => _samples.Count == 0 ? 0
         : _samples[Math.Clamp((int) Math.Ceiling((_samples.Count - 1) * fraction), 0, _samples.Count - 1)];
@@ -297,6 +305,23 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
         writer.WriteLine($"Fixed capture state: {_scene}");
         foreach (var row in _rows)
             writer.WriteLine(row);
+        using var sourceFile = _resources.UserData.Open(_directory / "sources.csv",
+            FileMode.Create, FileAccess.Write, FileShare.None);
+        using var sources = new StreamWriter(sourceFile);
+        sources.WriteLine("entity,profile,shape,x,y,emission_x,emission_y,r,g,b,energy,radius,direct,indirect,reflection,core,inner,outer,falloff,atmosphere,native_energy,mask_rotation_radians,mask");
+        foreach (var source in EntityManager.System<CinematicLightingSystem>().Sources)
+        {
+            var profile = source.Profile;
+            var emission = source.LuminousPosition ?? source.EmissionPosition;
+            sources.WriteLine($"{source.Uid.Id},{profile.ID},{profile.Shape},{F(source.Position.X)},{F(source.Position.Y)},{F(emission.X)},{F(emission.Y)},{F(source.Color.R)},{F(source.Color.G)},{F(source.Color.B)},{F(source.Energy)},{F(source.Radius)},{F(profile.Spill)},{F(profile.Indirect)},{F(profile.Reflection)},{F(profile.Core)},{F(profile.InnerGlow)},{F(profile.OuterGlow)},{F(profile.Falloff)},{F(profile.Atmosphere)},{F(source.NativeEnergy)},{F(source.Rotation.Theta)},{source.Mask?.Id}");
+        }
+        if (EntityManager.System<CinematicLightingSystem>().CaptureFrame is { } frame)
+        {
+            using var viewFile = _resources.UserData.Open(_directory / "view.json",
+                FileMode.Create, FileAccess.Write, FileShare.None);
+            using var view = new StreamWriter(viewFile);
+            view.WriteLine($"{{\"origin\":[{F(frame.WorldOrigin.X)},{F(frame.WorldOrigin.Y)}],\"x\":[{F(frame.WorldX.X)},{F(frame.WorldX.Y)}],\"y\":[{F(frame.WorldY.X)},{F(frame.WorldY.Y)}],\"size\":[{frame.Viewport.Size.X},{frame.Viewport.Size.Y}],\"map\":{(int) frame.Map}}}");
+        }
     }
 
     public void Stop(string reason = "Stopped by command.")

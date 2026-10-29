@@ -35,3 +35,12 @@ public sealed partial class CMUCinematicAtmosphereComponent : Component
 {
     [DataField, AutoNetworkedField] public float Density = 0.3f;
 }
+
+/// <summary>Small authored contact footprint for heavy static furnishings, independent of gameplay occlusion.</summary>
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+public sealed partial class CMUCinematicContactComponent : Component
+{
+    [DataField, AutoNetworkedField] public Vector2 Size = new(0.9f, 0.18f);
+    [DataField, AutoNetworkedField] public Vector2 Offset = new(0f, -0.42f);
+    [DataField, AutoNetworkedField] public float Strength = 0.12f;
+}

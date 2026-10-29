@@ -17,7 +17,7 @@ void fragment()
     highp float distance = length(world - source_position);
     highp float radial = max(1.0 - distance / source_radius, 0.0);
     highp float beam = sourceMask(world, beam_width);
-    if (beam_cone)
+    if (beam_cone && !has_light_mask)
     {
         highp vec2 delta = world - source_position;
         highp vec2 forward = vec2(-sin(source_rotation), cos(source_rotation));

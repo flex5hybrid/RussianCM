@@ -1,0 +1,139 @@
+{
+  "config_version": 1,
+  "thresholds": {
+    "maximum_white_fraction": 0.025,
+    "minimum_actor_contrast_ratio": 0.75,
+    "minimum_local_color_bias": 0.003,
+    "minimum_color_locality_difference": 0.002,
+    "minimum_source_off_change": 0.0005,
+    "straight_gradient": 0.025,
+    "straight_run_pixels": 48,
+    "original_edge_gradient": 0.02
+  },
+  "all_checks_pass": true,
+  "presets": [
+    {
+      "quality": 1,
+      "size": [
+        1344,
+        960
+      ],
+      "deep_exterior_pixels": 551388,
+      "changed_deep_exterior_pixels": 0,
+      "white_visible_fraction": 0.0,
+      "regions": {
+        "whole_stand": {
+          "mean_luminance": 0.00041782960732235445,
+          "peak_luminance": 0.7426435309802679,
+          "p99_luminance": 0.0,
+          "rms_contrast": 17.478340022199674,
+          "contrast_ratio_to_off": 10.436756722585079,
+          "mean_rgb": [
+            0.0004764418593890581,
+            0.00040932299638477633,
+            0.0003295050000256119
+          ],
+          "delta_rgb": [
+            -0.0246591814498718,
+            -0.025291840307178477,
+            -0.02398623044331989
+          ]
+        }
+      },
+      "straight_boundary_candidates": {
+        "longest_run_pixels": 0,
+        "needs_visual_review": false
+      },
+      "checks": {
+        "fov": true,
+        "white_coverage": true
+      }
+    },
+    {
+      "quality": 2,
+      "size": [
+        1344,
+        960
+      ],
+      "deep_exterior_pixels": 551388,
+      "changed_deep_exterior_pixels": 0,
+      "white_visible_fraction": 0.0,
+      "regions": {
+        "whole_stand": {
+          "mean_luminance": 0.037100925081857486,
+          "peak_luminance": 0.8126745386208976,
+          "p99_luminance": 0.7044633218654476,
+          "rms_contrast": 3.1770968412237655,
+          "contrast_ratio_to_off": 1.8971244851530757,
+          "mean_rgb": [
+            0.04029742881584662,
+            0.036723112743843066,
+            0.03143104544620222
+          ],
+          "delta_rgb": [
+            0.015161805506569224,
+            0.011021949440245224,
+            0.007115310002815057
+          ]
+        }
+      },
+      "straight_boundary_candidates": {
+        "longest_run_pixels": 56,
+        "needs_visual_review": true
+      },
+      "source_off": {
+        "mean_positive_change": 0.00913909622559509,
+        "peak_positive_change": 0.764035571656597,
+        "changed_pixels": 66916
+      },
+      "checks": {
+        "fov": true,
+        "white_coverage": true,
+        "source_off_response": true
+      }
+    },
+    {
+      "quality": 3,
+      "size": [
+        1344,
+        960
+      ],
+      "deep_exterior_pixels": 551388,
+      "changed_deep_exterior_pixels": 0,
+      "white_visible_fraction": 0.0,
+      "regions": {
+        "whole_stand": {
+          "mean_luminance": 0.037094605898883866,
+          "peak_luminance": 0.8126745386208976,
+          "p99_luminance": 0.7044633218654476,
+          "rms_contrast": 3.1783455305079182,
+          "contrast_ratio_to_off": 1.8978701089516887,
+          "mean_rgb": [
+            0.04028918038471027,
+            0.036716920013559515,
+            0.03142915450693526
+          ],
+          "delta_rgb": [
+            0.015153557075432459,
+            0.011015756709961591,
+            0.007113419063547972
+          ]
+        }
+      },
+      "straight_boundary_candidates": {
+        "longest_run_pixels": 56,
+        "needs_visual_review": true
+      },
+      "source_off": {
+        "mean_positive_change": 0.009139212994821427,
+        "peak_positive_change": 0.764035571656597,
+        "changed_pixels": 66805
+      },
+      "checks": {
+        "fov": true,
+        "white_coverage": true,
+        "source_off_response": true
+      }
+    }
+  ]
+}

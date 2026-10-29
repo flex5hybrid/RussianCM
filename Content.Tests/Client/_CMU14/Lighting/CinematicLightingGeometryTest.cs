@@ -4,6 +4,7 @@ using System.Numerics;
 using Content.Client.CMU14.Lighting;
 using Content.Client.CMU14.Lighting.Configuration;
 using NUnit.Framework;
+using Robust.Shared.Maths;
 using static Content.Client.CMU14.Lighting.CinematicLightingGeometry;
 
 namespace Content.Tests.Client.CMU14.Lighting;
@@ -11,6 +12,66 @@ namespace Content.Tests.Client.CMU14.Lighting;
 [TestFixture]
 public sealed class CinematicLightingGeometryTest
 {
+    [TestCase(180, 0, true, false, 0)]
+    [TestCase(180, 0, false, true, 0)]
+    [TestCase(180, 30, true, true, -30)]
+    [TestCase(180, 30, false, true, 0)]
+    [TestCase(37, 0, false, false, 37)]
+    public void ContactFollowsRenderedFeetInsteadOfEntityCardinal(double world, double eye,
+        bool noRotation, bool snapCardinals, double expected)
+    {
+        Assert.That(RenderedRotation(Angle.FromDegrees(world), Angle.FromDegrees(eye), noRotation, snapCardinals)
+            .Reduced().Theta, Is.EqualTo(Angle.FromDegrees(expected).Reduced().Theta).Within(0.000001));
+    }
+
+    [TestCase(0.02f, false)]
+    [TestCase(0.5f, true)]
+    public void OpticalReceiverCannotExitTheFarFaceOfAThinWall(float thickness, bool expected)
+    {
+        Edge[] edges =
+        [
+            new(new Vector2(1, 1), new Vector2(1, -1)),
+            new(new Vector2(1 + thickness, -1), new Vector2(1 + thickness, 1)),
+        ];
+        Assert.That(ReceiverRouteIsSafe(new Vector2(0.95f, 0), new Vector2(1.25f, 0),
+            Vector2.UnitY, 0.2f, edges), Is.EqualTo(expected));
+    }
+
+    [Test]
+    public void OpticalReceiverRejectsAThinDiagonalWallAndAcceptsASolidTileSeam()
+    {
+        var rotation = Matrix3x2.CreateRotation(0.7f);
+        Edge[] diagonal =
+        [
+            new(Vector2.Transform(new Vector2(1, 1), rotation), Vector2.Transform(new Vector2(1, -1), rotation)),
+            new(Vector2.Transform(new Vector2(1.02f, -1), rotation), Vector2.Transform(new Vector2(1.02f, 1), rotation)),
+        ];
+        Assert.That(ReceiverRouteIsSafe(Vector2.Transform(new Vector2(0.95f, 0), rotation),
+            Vector2.Transform(new Vector2(1.25f, 0), rotation), Vector2.TransformNormal(Vector2.UnitY, rotation),
+            0.2f, diagonal), Is.False);
+        Edge[] joined =
+        [
+            new(new Vector2(1, 1), new Vector2(1, -1)),
+            new(new Vector2(1.1f, -1), new Vector2(1.1f, 1)),
+            new(new Vector2(1.1f, 1), new Vector2(1.1f, -1)),
+            new(new Vector2(2, -1), new Vector2(2, 1)),
+        ];
+        Assert.That(ReceiverRouteIsSafe(new Vector2(.95f, 0), new Vector2(1.25f, 0),
+            Vector2.UnitY, .2f, joined), Is.True);
+        Vector2[] polygon = [new(1, -1), new(2, -1), new(2, 1), new(1, 1)];
+        Assert.That(PointInsidePolygon(new Vector2(1.5f, 0), polygon), Is.True);
+        Assert.That(PointInsidePolygon(new Vector2(.95f, 0), polygon), Is.False);
+    }
+
+    [Test]
+    public void DuplicateThinBlockersCannotCancelIntoAnOpticalOpening()
+    {
+        var front = new Edge(new Vector2(1, 1), new Vector2(1, -1));
+        var back = new Edge(new Vector2(1.02f, -1), new Vector2(1.02f, 1));
+        Assert.That(ReceiverRouteIsSafe(new Vector2(.95f, 0), new Vector2(1.25f, 0),
+            Vector2.UnitY, .2f, [front, back, front, back]), Is.False);
+    }
+
     [TestCase(0f, 0.8f, 0f)]
     [TestCase(0.5f, 0.8f, 0.4f)]
     [TestCase(1f, 0f, 0f)]

@@ -12,6 +12,13 @@ uniform sampler2D bloom_medium;
 uniform sampler2D bloom_wide;
 uniform bool atmospheric_effects;
 uniform highp float local_exposure;
+uniform highp int debug_view;
+uniform bool glow_enabled;
+uniform sampler2D blocker_texture;
+uniform sampler2D direct_texture;
+uniform sampler2D reflection_texture;
+uniform sampler2D material_texture;
+uniform sampler2D native_texture;
 
 void fragment()
 {
@@ -26,11 +33,33 @@ void fragment()
     highp vec3 atmosphere = vec3(0.0);
     if (atmospheric_effects)
         atmosphere = texture2D(atmosphere_texture, uv).rgb;
-    highp vec3 radiance = core * 0.95 + compact * 0.60 + medium * 0.35 + wide * 0.22
-        + atmosphere * 0.18;
+    highp vec2 receiver = texture2D(blocker_texture, uv).rg;
+    highp float contact = clamp(texture2D(blocker_texture, uv).b, 0.0, 0.2) * visible;
+    highp float air = 1.0 - receiver.r * (1.0 - clamp(receiver.g, 0.0, 1.0));
+    highp vec3 radiance = glow_enabled
+        ? core * 0.8 + (compact * 0.95 + medium * 0.25 + wide * 0.75) * air : vec3(0.0);
+    radiance += atmosphere * air * 0.24;
     // Visibility comes from native FOV and geometry, never from the brightness of the old frame.
     radiance *= local_exposure * visible;
     highp float peak = max(max(radiance.r, radiance.g), radiance.b);
     highp vec3 response = radiance / (1.0 + peak);
-    COLOR = vec4(scene.rgb + max(vec3(0.0), vec3(1.0) - scene.rgb) * response, scene.a);
+    if (debug_view == 0)
+        COLOR = vec4(scene.rgb * (1.0 - contact) + max(vec3(0.0), vec3(1.0) - scene.rgb) * response, scene.a);
+    else
+    {
+        highp vec3 diagnostic = vec3(0.0);
+        if (debug_view == 1) diagnostic = texture2D(native_texture, uv).rgb;
+        if (debug_view == 2 || debug_view == 3) diagnostic = texture2D(direct_texture, uv).rgb;
+        if (debug_view == 4 || debug_view == 5) diagnostic = core;
+        if (debug_view == 6) diagnostic = compact;
+        if (debug_view == 7) diagnostic = medium * 0.25 + wide * 0.75;
+        if (debug_view == 8) diagnostic = texture2D(reflection_texture, uv).rgb;
+        if (debug_view == 9) diagnostic = texture2D(material_texture, uv).rgb;
+        if (debug_view == 10) diagnostic = atmosphere;
+        if (debug_view == 11) diagnostic = texture2D(blocker_texture, uv).rrr;
+        if (debug_view == 12) diagnostic = core * 0.8 + compact * 0.95 + medium * 0.25 + wide * 0.75;
+        if (debug_view == 13) diagnostic = vec3(contact);
+        highp float diagnostic_peak = max(max(diagnostic.r, diagnostic.g), diagnostic.b);
+        COLOR = vec4(diagnostic / (1.0 + diagnostic_peak) * visible, scene.a);
+    }
 }

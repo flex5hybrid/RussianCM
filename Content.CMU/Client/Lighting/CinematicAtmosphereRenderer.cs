@@ -37,13 +37,16 @@ internal sealed class CinematicAtmosphereRenderer : IDisposable
     private void Draw()
     {
         LastSources = 0;
+        if (!_frame.Controls.Atmosphere)
+            return;
         foreach (var source in _frame.Sources)
         {
             if (source.Profile.Atmosphere <= 0f || LastSources >= _quality.AtmosphericSources)
                 continue;
             var density = _config.GetCVar(CCVars.CMUCinematicAtmosphere);
-            if (_entities.TryGetComponent<CMUCinematicAtmosphereComponent>(source.Grid ?? _frame.MapUid, out var room))
-                density = CombineDensity(density, room.Density);
+            var roomDensity = _entities.TryGetComponent<CMUCinematicAtmosphereComponent>(source.Grid ?? _frame.MapUid, out var room)
+                ? room.Density : 0.12f;
+            density = CombineDensity(density, roomDensity);
             if (density <= 0f)
                 continue;
             var mesh = _occlusion.GetMesh(source, _quality);

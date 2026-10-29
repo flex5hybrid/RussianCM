@@ -42,6 +42,7 @@ public sealed partial class CMUCinematicDemoCommand : LocalizedEntityCommands
     [Dependency] private PuddleSystem _puddles = default!;
     [Dependency] private ISharedPlayerManager _players = default!;
     [Dependency] private ITileDefinitionManager _tiles = default!;
+    [Dependency] private IPrototypeManager _prototypes = default!;
     [Dependency] private SharedTransformSystem _transform = default!;
     [Dependency] private IConsoleHost _console = default!;
 
@@ -51,7 +52,7 @@ public sealed partial class CMUCinematicDemoCommand : LocalizedEntityCommands
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length > 4)
+        if (args.Length > 5 || args.Length == 5 && args[1] != "debug")
         {
             shell.WriteError(Help);
             return;
@@ -63,6 +64,30 @@ public sealed partial class CMUCinematicDemoCommand : LocalizedEntityCommands
             return;
         }
         var mode = args.Length >= 2 ? args[1] : "industrial";
+        if (mode == "zoom" && args.Length == 3 && session?.AttachedEntity is { } zoomActor
+            && EntityManager.GetComponent<TransformComponent>(zoomActor).MapUid is { } zoomMap
+            && EntityManager.HasComponent<CMUCinematicReviewSceneComponent>(zoomMap)
+            && float.TryParse(args[2], NumberStyles.Float, CultureInfo.InvariantCulture, out var zoom)
+            && zoom is >= 0.5f and <= 2f)
+        {
+            _console.RemoteExecuteCommand(session, "zoom " + zoom.ToString(CultureInfo.CurrentCulture));
+            return;
+        }
+        if (mode == "state" && args.Length == 3 && session?.AttachedEntity is { } reviewActor)
+        {
+            SetReviewState(shell, reviewActor, args[2]);
+            return;
+        }
+        if (mode == "debug" && args.Length >= 3 && session != null)
+        {
+            _console.RemoteExecuteCommand(session, "cmu_cinematic_debug " + string.Join(' ', args[2..]));
+            return;
+        }
+        if (mode == "materials")
+        {
+            CreateMaterialReview(shell, session);
+            return;
+        }
         if (mode is "reload" or "watch" && session != null)
         {
             _console.RemoteExecuteCommand(session, mode == "watch" ? "rldshader +watch" : "rldshader");
@@ -81,7 +106,14 @@ public sealed partial class CMUCinematicDemoCommand : LocalizedEntityCommands
             if (session.AttachedEntity is { } viewer
                 && EntityManager.GetComponent<TransformComponent>(viewer).MapUid is { } reviewMap
                 && EntityManager.HasComponent<CMUCinematicReviewSceneComponent>(reviewMap))
+            {
+                if (EntityManager.TryGetComponent<Content.Shared._RMC14.Light.RMCAmbientLightComponent>(reviewMap, out var ambient))
+                {
+                    ambient.IsAnimating = false;
+                    EntityManager.Dirty(reviewMap, ambient);
+                }
                 _map.SetPaused(EntityManager.GetComponent<TransformComponent>(viewer).MapID, true);
+            }
             _console.RemoteExecuteCommand(session, $"cmu_cinematic_capture {seconds}");
             return;
         }
@@ -110,6 +142,10 @@ public sealed partial class CMUCinematicDemoCommand : LocalizedEntityCommands
         _map.SetAmbientLight(mapId, Color.FromHex("#25303B"));
         AddAir(map);
         var grid = _map.CreateGridEntity(mapId);
+        // The control scene must stay readable even with the cinematic effects disabled.
+        var roof = EntityManager.EnsureComponent<Content.Shared.Light.Components.ImplicitRoofComponent>(grid);
+        roof.Color = Color.FromHex("#6B6B6B");
+        EntityManager.Dirty(grid, roof);
         EntityManager.AddComponent<CMUCinematicAtmosphereComponent>(grid).Density = 0.8f;
         for (var tx = -10; tx <= 10; tx++)
         for (var ty = -6; ty <= 6; ty++)
@@ -162,14 +198,14 @@ public sealed partial class CMUCinematicDemoCommand : LocalizedEntityCommands
         var alarm = AddFixture(7, 5, "#A8D9F0", "CMUFixture");
         AddFixture(-6, -5, "#F1B679", "CMUIndustrial");
         AddFixture(5, -5, "#ACD8F0", "CMUFixture");
-        var beacon = EntityManager.SpawnEntity("CMUWarshipAlertBeaconRed", new EntityCoordinates(alarm, Vector2.Zero));
+        var beacon = EntityManager.SpawnEntity("CMUCinematicReviewBeacon", new EntityCoordinates(alarm, Vector2.Zero));
         if (mode == "industrial-static")
         {
             EntityManager.RemoveComponent<RotatingLightComponent>(beacon);
             _transform.SetLocalRotation(beacon, Angle.FromDegrees(30));
         }
-        Spawn("RMCSmallFloodlight", -6, -2);
-        Spawn("RMCTallFloodlight", 8, -2);
+        Spawn("CMUCinematicReviewSmallFloodlight", -6, -2);
+        Spawn("CMUCinematicReviewTallFloodlight", 8, -2);
         for (var px = 4; px <= 6; px++)
         for (var py = -1; py <= 1; py++)
         {
@@ -180,6 +216,7 @@ public sealed partial class CMUCinematicDemoCommand : LocalizedEntityCommands
         }
         PowerForReview(mapId);
         PlacePlayer(session, new EntityCoordinates(grid.Owner, new Vector2(0.5f, 0.5f)));
+        IndexReviewSources(map, mapId, new Vector2(0.5f, 0.5f));
         shell.WriteLine(Loc.GetString("cmu-cinematic-demo-created", ("map", mapId),
             ("grid", EntityManager.GetNetEntity(grid.Owner))));
         return;
@@ -217,6 +254,7 @@ public sealed partial class CMUCinematicDemoCommand : LocalizedEntityCommands
         PowerForReview(mapId);
         // Open dining / recreation room: industrial perimeter, vendors, terminals and furniture.
         PlacePlayer(session, new EntityCoordinates(loaded.Value.Owner, position));
+        IndexReviewSources(loaded.Value.Owner, mapId, position);
         shell.WriteLine(Loc.GetString("cmu-cinematic-demo-map-loaded", ("path", path.ToString()),
             ("map", mapId), ("x", position.X), ("y", position.Y)));
     }

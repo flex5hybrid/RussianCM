@@ -83,7 +83,7 @@ internal sealed class CinematicMaterialRenderer
             if (!_prototypes.TryIndex(entity.Comp.Material, out var material))
                 continue;
             DrawSurface(entity, entity.Comp.Size, entity.Comp.Offset,
-                Encode(material.Reflectivity, material.Roughness, material.Stretch));
+                Encode(material.Reflectivity * material.SpecularStrength, material.Roughness, material.Stretch));
         }
 
         _puddles.Clear();
@@ -99,7 +99,8 @@ internal sealed class CinematicMaterialRenderer
             _wetTiles.Add((grid, tile));
         }
         var wet = _prototypes.Index<CMUCinematicMaterialPrototype>("CMUWetFloor");
-        var data = new Color(wet.Reflectivity, wet.Roughness, wet.Stretch, 1f);
+        var data = new Color(Math.Clamp(wet.Reflectivity * wet.SpecularStrength / 4f, 0f, 1f),
+            wet.Roughness, wet.Stretch, 1f);
         foreach (var grid in _grids)
         {
             _wetVertices.Clear();
@@ -183,7 +184,7 @@ internal sealed class CinematicMaterialRenderer
             if ((best == null || material.Priority > best.Priority) && Matches(tile, material, 0))
                 best = material;
         }
-        return best == null ? Ordinary : Encode(best.Reflectivity, best.Roughness, best.Stretch);
+        return best == null ? Ordinary : Encode(best.Reflectivity * best.SpecularStrength, best.Roughness, best.Stretch);
     }
 
     private bool Matches(ContentTileDefinition tile, CMUCinematicMaterialPrototype material, int depth)
@@ -205,7 +206,7 @@ internal sealed class CinematicMaterialRenderer
     private static Color Encode(float reflectivity, float roughness, float stretch)
     {
         // Draw primitives convert colors from sRGB; undo that conversion for this linear data texture.
-        return Color.ToSrgb(new Color(Math.Clamp(reflectivity, 0f, 1f),
+        return Color.ToSrgb(new Color(Math.Clamp(reflectivity / 4f, 0f, 1f),
             Math.Clamp(roughness, 0f, 1f), Math.Clamp(stretch, 0f, 1f), 1f));
     }
 }

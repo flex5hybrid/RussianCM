@@ -11,17 +11,22 @@ highp vec3 gather(highp vec2 uv, highp vec2 offset)
     highp vec2 sampleUv = clamp(uv + offset * source_pixel, 0.0, 1.0);
     // Keep each downsample from transporting light across a wall. The blocker mask stays
     // at full viewport resolution, even when the bloom pyramid becomes very small.
-    highp float barrier = texture2D(blocker_texture, sampleUv).r;
-    barrier = max(barrier, texture2D(blocker_texture, mix(uv, sampleUv, 0.25)).r);
-    barrier = max(barrier, texture2D(blocker_texture, mix(uv, sampleUv, 0.5)).r);
-    barrier = max(barrier, texture2D(blocker_texture, mix(uv, sampleUv, 0.75)).r);
-    return texture2D(source_texture, sampleUv).rgb * (1.0 - step(0.08, barrier));
+    highp vec2 receiver = texture2D(blocker_texture, sampleUv).rg;
+    highp float barrier = receiver.r * (1.0 - receiver.g);
+    receiver = texture2D(blocker_texture, mix(uv, sampleUv, 0.25)).rg;
+    barrier = max(barrier, receiver.r * (1.0 - receiver.g));
+    receiver = texture2D(blocker_texture, mix(uv, sampleUv, 0.5)).rg;
+    barrier = max(barrier, receiver.r * (1.0 - receiver.g));
+    receiver = texture2D(blocker_texture, mix(uv, sampleUv, 0.75)).rg;
+    barrier = max(barrier, receiver.r * (1.0 - receiver.g));
+    return texture2D(source_texture, sampleUv).rgb * (1.0 - clamp(barrier, 0.0, 1.0));
 }
 
 void fragment()
 {
     highp vec2 uv = FRAGCOORD.xy / target_size;
-    if (texture2D(blocker_texture, uv).r > 0.08)
+    highp vec2 receiver = texture2D(blocker_texture, uv).rg;
+    if (receiver.r * (1.0 - receiver.g) > 0.999)
         discard;
     highp vec3 sum = gather(uv, vec2(0.0)) * 4.0;
     sum += gather(uv, vec2(-1.5, -1.5));

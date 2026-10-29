@@ -22,6 +22,8 @@ internal sealed class CinematicRenderContext
     private readonly IPrototypeManager _prototypes;
     private readonly IResourceCache _textures;
     private readonly Dictionary<string, Texture> _masks = new();
+    private readonly Dictionary<ShaderInstance, FrameBinding> _frameBindings = new();
+    private readonly Dictionary<ShaderInstance, SourceBinding> _sourceBindings = new();
 
     public IClydeViewport Viewport = default!;
     public DrawingHandleWorld Handle = default!;
@@ -34,6 +36,7 @@ internal sealed class CinematicRenderContext
     public Vector2 WorldY;
     public readonly List<CinematicLightSource> Sources = new(65);
     public readonly HashSet<EntityUid> SeenMeshes = new();
+    public CinematicLightingControls Controls = new();
 
     public CinematicRenderContext(IPrototypeManager prototypes, IResourceCache textures)
     {
@@ -80,6 +83,11 @@ internal sealed class CinematicRenderContext
 
     public void BindFrame(ShaderInstance shader)
     {
+        var binding = new FrameBinding(_target.Size, WorldOrigin, WorldX, WorldY,
+            Viewport.Eye!.Position.Position, Viewport.Eye.DrawFov, Viewport.FovRenderTarget.Texture);
+        if (_frameBindings.TryGetValue(shader, out var previous) && previous == binding)
+            return;
+        _frameBindings[shader] = binding;
         shader.SetParameter("target_size", (Vector2) _target.Size);
         shader.SetParameter("world_origin", WorldOrigin);
         shader.SetParameter("world_x", WorldX);
@@ -91,15 +99,22 @@ internal sealed class CinematicRenderContext
 
     public void BindSource(ShaderInstance shader, in CinematicLightSource source)
     {
+        var emission = source.LuminousPosition ?? source.EmissionPosition;
+        var binding = new SourceBinding(source.Position, emission, source.Radius,
+            source.Color, source.Energy, source.Rotation, source.Mask);
+        if (_sourceBindings.TryGetValue(shader, out var previous) && previous == binding)
+            return;
+        _sourceBindings[shader] = binding;
         shader.SetParameter("source_position", source.Position);
-        shader.SetParameter("emission_position", source.EmissionPosition);
+        shader.SetParameter("emission_position", emission);
         shader.SetParameter("source_radius", source.Radius);
         var linear = Color.FromSrgb(source.Color);
         shader.SetParameter("source_color", new Vector3(linear.R, linear.G, linear.B));
         shader.SetParameter("source_energy", source.Energy);
         shader.SetParameter("source_rotation", (float) source.Rotation.Theta);
         shader.SetParameter("has_light_mask", source.Mask != null);
-        var mask = Scene;
+        // An unused sampler must not retain a viewport texture that can be disposed on resize.
+        var mask = Texture.White;
         if (source.Mask is { } maskId)
         {
             if (!_masks.TryGetValue(maskId.Id, out mask))
@@ -110,4 +125,9 @@ internal sealed class CinematicRenderContext
         }
         shader.SetParameter("light_mask", mask);
     }
+
+    private readonly record struct FrameBinding(Vector2i Size, Vector2 Origin, Vector2 X, Vector2 Y,
+        Vector2 Eye, bool DrawFov, Texture Fov);
+    private readonly record struct SourceBinding(Vector2 Position, Vector2 Emission, float Radius,
+        Color Color, float Energy, Angle Rotation, ProtoId<LightMaskPrototype>? Mask);
 }

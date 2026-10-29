@@ -18,6 +18,7 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
     private readonly AuthoredBinding?[] _authoredBindings;
     private readonly Action _draw;
     private Texture _materials = default!;
+    private Texture _emission = default!;
     private bool _reflections;
     private bool _nativeContribution;
     private bool _bindShared;
@@ -43,8 +44,9 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
         _frame.Render(irradiance, _draw, CinematicRenderContext.RadianceClearColor);
     }
 
-    public void RenderReflections(IRenderTexture reflections, Texture materials)
+    public void RenderReflections(IRenderTexture reflections, Texture materials, Texture? emission = null)
     {
+        _emission = emission ?? _frame.Scene;
         _nativeContribution = false;
         _materials = materials;
         _reflections = true;
@@ -93,17 +95,32 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
                     shader.SetParameter("native_falloff", native.Falloff);
                     shader.SetParameter("native_curve", native.Curve);
                 }
-                var authored = new AuthoredBinding(Math.Clamp(source.Profile.Spill, 0f, 8f) * 0.28f,
-                    Math.Clamp(source.Profile.Reflection, 0f, 8f), source.Profile.EmissionSize.X);
+                var controls = _frame.Controls;
+                var authored = new AuthoredBinding(Math.Clamp(source.Profile.Spill, 0f, 8f),
+                    Math.Clamp(source.Profile.Reflection, 0f, 8f), source.Profile.EmissionSize.X,
+                    source.Profile.EmissionSize, (int) source.Profile.Shape, source.Profile.WallMounted,
+                    source.Profile.Falloff, source.Profile.Indirect,
+                    controls.Direct && controls.View != CinematicDebugView.Indirect,
+                    controls.Indirect && controls.View != CinematicDebugView.Direct);
                 if (_authoredBindings[slot] != authored)
                 {
                     _authoredBindings[slot] = authored;
                     shader.SetParameter("spill_strength", authored.Spill);
                     shader.SetParameter("reflection_strength", authored.Reflection);
                     shader.SetParameter("emitter_span", authored.Span);
+                    shader.SetParameter("emitter_size", authored.Size);
+                    shader.SetParameter("source_shape", authored.Shape);
+                    shader.SetParameter("wall_mounted", authored.WallMounted);
+                    shader.SetParameter("area_samples", _quality.Level >= 3 ? 5 : 3);
+                    shader.SetParameter("light_falloff", Math.Clamp(authored.Falloff, 0.5f, 12f));
+                    shader.SetParameter("indirect_strength", Math.Clamp(authored.Indirect, 0f, 2f));
+                    shader.SetParameter("direct_enabled", authored.Direct);
+                    shader.SetParameter("indirect_enabled", authored.IndirectEnabled);
                 }
                 var direction = mesh.SurfaceDirection.LengthSquared() > 0f
                     ? mesh.SurfaceDirection : -Vector2.Normalize(_frame.WorldY);
+                if (source.Profile.Shape == Content.Shared.CMU14.Lighting.CMUCinematicSourceShape.Cone && source.Mask == null)
+                    direction = source.Rotation.RotateVec(Vector2.UnitY);
                 shader.SetParameter("reflection_direction", direction);
             }
             shader.SetParameter("native_pass", _nativeContribution);
@@ -112,6 +129,8 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
             {
                 shader.SetParameter("material_texture", _materials);
                 shader.SetParameter("scene_texture", _frame.Scene);
+                shader.SetParameter("emission_texture", _emission);
+                shader.SetParameter("reflection_enabled", _frame.Controls.Reflections);
             }
             _frame.Handle.UseShader(shader);
             _occlusion.DrawMesh(mesh);
@@ -122,5 +141,6 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
     public void Dispose() => _shaders.Dispose();
 
     private readonly record struct NativeBinding(Color Color, float Radius, float Energy, float Falloff, float Curve);
-    private readonly record struct AuthoredBinding(float Spill, float Reflection, float Span);
+    private readonly record struct AuthoredBinding(float Spill, float Reflection, float Span, Vector2 Size,
+        int Shape, bool WallMounted, float Falloff, float Indirect, bool Direct, bool IndirectEnabled);
 }

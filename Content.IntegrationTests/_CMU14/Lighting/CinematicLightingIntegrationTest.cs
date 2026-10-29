@@ -31,7 +31,7 @@ public sealed class CinematicLightingIntegrationTest : GameTest
         await Client.WaitAssertion(() =>
         {
             string[] shaders = ["CMUCinematicEmission", "CMUCinematicDownsample", "CMUCinematicSpill",
-                "CMUCinematicAtmosphere", "CMUCinematicComposite", "CMUCinematicSurfaceComposite", "CMUCinematicLightComposite", "CMUCinematicLightCopy"];
+                "CMUCinematicAtmosphere", "CMUCinematicComposite", "CMUCinematicSurfaceComposite", "CMUCinematicLightComposite", "CMUCinematicLightCopy", "CMUCinematicWallReceiver", "CMUCinematicContact"];
             foreach (var id in shaders)
             {
                 using var shader = CProtoMan.Index<ShaderPrototype>(id).InstanceUnique();
@@ -60,6 +60,46 @@ public sealed class CinematicLightingIntegrationTest : GameTest
     }
 
     [Test]
+    public async Task AuthoredMasksAndIndependentSurfaceResponsesAreValid()
+    {
+        await Client.WaitAssertion(() =>
+        {
+            var cache = Client.ResolveDependency<IResourceCache>();
+            var tube = CProtoMan.Index<CMUCinematicEmissionMaskPrototype>("CMUTubeMask");
+            var rsi = cache.GetResource<RSIResource>(new Robust.Shared.Utility.ResPath(tube.Rsi)).RSI;
+            Assert.That(rsi.Size, Is.EqualTo(tube.FrameSize));
+            Assert.That(tube.Directions.Count, Is.EqualTo(4));
+            foreach (var region in tube.Directions.Values)
+            {
+                Assert.That(region.X, Is.GreaterThanOrEqualTo(0));
+                Assert.That(region.Y, Is.GreaterThanOrEqualTo(0));
+                Assert.That(region.Z, Is.LessThanOrEqualTo(1));
+                Assert.That(region.W, Is.LessThanOrEqualTo(1));
+                Assert.That((region.Z - region.X) * (region.W - region.Y), Is.InRange(0.001f, 0.04f),
+                    "A tube mask must isolate the luminous element, not the full RSI rectangle.");
+            }
+            var fixture = CProtoMan.Index<CMUCinematicLightProfilePrototype>("CMUFixture");
+            Assert.That(fixture.Shape, Is.EqualTo(CMUCinematicSourceShape.Linear));
+            Assert.That(fixture.WallMounted, Is.True);
+            Assert.That(fixture.Indirect, Is.GreaterThan(0));
+            Assert.That(fixture.InnerGlow, Is.GreaterThan(fixture.OuterGlow));
+            var matte = CProtoMan.Index<CMUCinematicMaterialPrototype>("CMUMatteMetal");
+            var polished = CProtoMan.Index<CMUCinematicMaterialPrototype>("CMUPolishedMetal");
+            var wet = CProtoMan.Index<CMUCinematicMaterialPrototype>("CMUWetFloor");
+            Assert.That(polished.Reflectivity * polished.SpecularStrength,
+                Is.GreaterThan(matte.Reflectivity * matte.SpecularStrength * 4));
+            Assert.That(polished.Roughness, Is.LessThan(matte.Roughness));
+            Assert.That(wet.Stretch, Is.GreaterThan(polished.Stretch));
+            var controls = CEntMan.System<CinematicLightingSystem>().Controls;
+            controls.Indirect = false;
+            controls.Reflections = false;
+            Assert.That(controls.Direct && controls.Glow && controls.Atmosphere, Is.True);
+            controls.Reset();
+            Assert.That(controls.EnabledMask, Is.EqualTo(63));
+        });
+    }
+
+    [Test]
     public async Task PresetsSwitchLiveAndViewportScopeCannotLeakIntoAnotherCameraOrZLevel()
     {
         await Client.WaitAssertion(() =>
@@ -78,7 +118,8 @@ public sealed class CinematicLightingIntegrationTest : GameTest
             try
             {
                 lights.DrawLighting = true;
-                foreach (var quality in new[] { 1, 2, 3, 0, 3, 1, 0 })
+                for (var cycle = 0; cycle < 10; cycle++)
+                foreach (var quality in new[] { 1, 2, 3, 0 })
                 {
                     config.SetCVar(CCVars.CMUCinematicLighting, quality);
                     Assert.That(overlays.HasOverlay<CinematicLightingOverlay>(), Is.EqualTo(quality != 0));
@@ -160,6 +201,21 @@ public sealed class CinematicLightingIntegrationTest : GameTest
                 Collect();
                 Assert.That(sources.Exists(source => source.Uid == fixture), Is.True);
                 Assert.That(sources.Exists(source => source.Uid == beacon), Is.True);
+                var beaconLight = CEntMan.GetComponent<PointLightComponent>(beacon);
+#pragma warning disable RA0002 // Set animation-owned state explicitly in this headless regression fixture.
+                beaconLight.Rotation = Angle.FromDegrees(37);
+#pragma warning restore RA0002
+                Collect();
+                Assert.That(sources.Find(source => source.Uid == beacon).Rotation, Is.EqualTo(beaconLight.Rotation),
+                    "Cinematic beams must follow the live native animation, not just the entity transform.");
+#pragma warning disable RA0002 // Exercise the native mount-relative mask mode without changing its production prototype.
+                beaconLight.MaskAutoRotate = true;
+#pragma warning restore RA0002
+                transform.SetLocalRotation(beacon, Angle.FromDegrees(29));
+                Collect();
+                Assert.That(sources.Find(source => source.Uid == beacon).Rotation,
+                    Is.EqualTo(beaconLight.Rotation + transform.GetWorldRotation(beacon)),
+                    "A directional native mask must retain its own rotation plus the mounted pose.");
                 Assert.That(materials.VisibleSurface(beacon, beaconTransform), Is.True);
                 var modelSource = sources.Find(source => source.Uid == fixture);
                 Assert.That(modelSource.NativeColor, Is.EqualTo(native.Color));
@@ -264,18 +320,22 @@ public sealed class CinematicLightingIntegrationTest : GameTest
                 .Callback((IRenderTarget _, Action _, Color? clear) => clears.Add(clear));
             resources.Frame.Handle = drawing.Object;
             resources.Occlusion.RenderBlockers(resources.Blockers);
-            resources.Bloom.Render(resources.Emission, resources.Pyramid, resources.Blockers.Texture);
+            resources.Bloom.Render(resources.Emission, resources.Pyramid, resources.Blockers.Texture,
+                resources.InnerSeeds, resources.OuterSeeds);
             resources.Material!.Render(resources.Materials!);
+            resources.Contact!.Render(resources.Blockers);
             resources.Spill!.RenderIrradiance(resources.Irradiance!);
             resources.Spill.RenderNativeContribution(resources.NativeContribution!);
             resources.Spill.RenderReflections(resources.Reflections!, resources.Materials!.Texture);
             resources.Atmosphere!.Render(resources.AtmosphereTarget!);
-            Assert.That(clears.Count, Is.EqualTo(resources.Pyramid.Length + 7));
+            Assert.That(clears.Count, Is.EqualTo(resources.Pyramid.Length + 10));
+            Assert.That(clears.Count(clear => clear == null), Is.EqualTo(1),
+                "The contact B contribution must preserve the blocker R and receiver G channels.");
             foreach (var clear in clears)
-                Assert.That(clear, Is.AnyOf(CinematicRenderContext.ClearColor, CinematicRenderContext.RadianceClearColor),
+                Assert.That(clear, Is.AnyOf(null, CinematicRenderContext.ClearColor, CinematicRenderContext.RadianceClearColor),
                     "RGB data masks must not retain the white RGB channels of Color.Transparent.");
-            Assert.That(clears.Count(clear => clear == CinematicRenderContext.RadianceClearColor), Is.EqualTo(5),
-                "Emission, irradiance, reflections and atmosphere use opaque-black HDR RGB targets.");
+            Assert.That(clears.Count(clear => clear == CinematicRenderContext.RadianceClearColor), Is.EqualTo(7),
+                "Three optical seeds, irradiance, native contribution, reflections and atmosphere use HDR RGB.");
             var count = targets.Count;
             resources.EnsureSize(new Vector2i(65, 33), new MapId(1));
             Assert.That(targets.Count, Is.EqualTo(count), "Steady rendering reuses its targets.");

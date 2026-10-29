@@ -20,6 +20,14 @@ highp vec2 frameWorld(highp vec2 uv)
     return world_origin + world_x * uv.x + world_y * uv.y;
 }
 
+highp vec2 worldUv(highp vec2 position)
+{
+    highp vec2 delta = position - world_origin;
+    highp float determinant = world_x.x * world_y.y - world_x.y * world_y.x;
+    return vec2(delta.x * world_y.y - delta.y * world_y.x,
+        world_x.x * delta.y - world_x.y * delta.x) / determinant;
+}
+
 highp float visibleAt(highp vec2 position)
 {
     if (draw_fov && doesOcclude(position - eye_position, fov_map, 0.75, -0.75 / 32.0))

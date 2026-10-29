@@ -37,6 +37,9 @@ public sealed partial class CinematicLightingSystem : EntitySystem
     private CinematicIrradianceOverlay? _irradianceOverlay;
     public CinematicLightingQuality Quality { get; private set; }
     public CinematicLightingStatistics LastFrame { get; internal set; }
+    internal CinematicLightingControls Controls { get; } = new();
+    internal IReadOnlyList<CinematicLightSource> Sources => _overlay?.Sources ?? Array.Empty<CinematicLightSource>();
+    internal CinematicRenderContext? CaptureFrame => _overlay?.CaptureFrame;
 
     internal void CaptureDebug(Action<string, Image<Rgba32>> capture) =>
         _overlay?.CaptureDebug(capture);
@@ -148,6 +151,10 @@ public sealed partial class CinematicLightingSystem : EntitySystem
         if (!_seen.Add(uid) || !emitter.Enabled || emitter.Intensity <= 0f || xform.MapID != map
             || !_prototypes.TryIndex(emitter.Profile, out var profile))
             return;
+
+        if (profile.MountProfiles.TryGetValue(xform.LocalRotation.GetCardinalDir(), out var mountedId)
+            && _prototypes.TryIndex(mountedId, out var mounted))
+            profile = mounted;
 
         if (light is null && profile.RequireLight || light is { Enabled: false } or { ContainerOccluded: true }
             || light is { Energy: <= 0f } or { Radius: <= 0f })
@@ -292,7 +299,11 @@ internal readonly record struct CinematicLightSource(
     float NativeFalloff,
     float NativeCurveFactor)
 {
-    public float GeometryRadius => MathF.Min(7f, MathF.Max(Radius, NativeRadius));
+    // Native replacement is bounded to Radius too. No pass samples the discarded outer ring.
+    public float GeometryRadius => Radius;
+    public Vector2? LuminousPosition { get; init; }
+    public Vector2 LuminousAxis { get; init; }
+    public float LuminousSpan { get; init; }
 }
 
 public readonly record struct CinematicLightingStatistics(

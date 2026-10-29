@@ -11,6 +11,7 @@ uniform highp float emission_chroma;
 uniform highp float core_strength;
 uniform highp float texture_weight;
 uniform highp float bloom_strength;
+uniform bool authored_mask;
 
 void fragment()
 {
@@ -27,11 +28,11 @@ void fragment()
         highp float brightness = texture_weight > 0.5
             ? max(max(pixel.r, pixel.g), pixel.b)
             : dot(pixel.rgb, vec3(0.2126, 0.7152, 0.0722));
-        highp vec2 inside = smoothstep(emission_region.xy, emission_region.xy + vec2(0.015), UV2)
-            * (vec2(1.0) - smoothstep(emission_region.zw - vec2(0.015), emission_region.zw, UV2));
-        mask = pixel.a * inside.x * inside.y
+        // The cropped quad already limits the exact Content-authored luminous region.
+        // Its UVs still sample the real current RSI frame; alpha and animation remain authoritative.
+        mask = pixel.a
             * smoothstep(max(0.0, emission_threshold - 0.08), emission_threshold + 0.08, brightness);
-        if (emission_chroma > 0.0)
+        if (emission_chroma > 0.0 && (!authored_mask || texture_weight > 0.5))
         {
             // Color selection is perceptual; linear-light chroma makes beige monitor housings
             // look saturated and incorrectly turns their keyboards into emissive surfaces.
