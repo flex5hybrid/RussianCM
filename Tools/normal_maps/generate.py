@@ -157,6 +157,15 @@ class Synchronizer:
         with Image.open(source) as img:
             size = frame_size or img.size
             result = normal_sheet(img, size, self.bevel, self.strength)
+            # Verify decoded pixels, not PNG compression bytes, across Pillow/zlib versions.
+            if target.is_file():
+                try:
+                    with Image.open(target) as old:
+                        if old.size == result.size and old.convert("RGBA").tobytes() == result.tobytes():
+                            self.checked += 1
+                            return
+                except (OSError, ValueError):
+                    pass
             self.sync_bytes(target, png_bytes(result))
 
     def sync_rsi(self, source: Path, target: Path) -> None:
