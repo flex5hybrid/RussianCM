@@ -43,6 +43,7 @@ public sealed partial class CinematicLightingSystem : EntitySystem
     internal CinematicLightingControls Controls { get; } = new();
     internal IReadOnlyList<CinematicLightSource> Sources => _overlay?.Sources ?? Array.Empty<CinematicLightSource>();
     internal CinematicRenderContext? CaptureFrame => _overlay?.CaptureFrame;
+    internal (int Eligible, int Rendered, int Layers) NormalStats => _overlay?.NormalStats ?? default;
 
     internal void CaptureDebug(Action<string, Image<Rgba32>> capture) =>
         _overlay?.CaptureDebug(capture);
