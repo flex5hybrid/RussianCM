@@ -1,11 +1,12 @@
 using Robust.Shared;
 using Robust.Shared.Configuration;
 
-namespace Content.Shared.CCVar;
+namespace Content.Shared.CMU14.Lighting;
 
-public sealed partial class CCVars
+/// <summary>Client-only feature switch; registered by Robust through CVarDefs.</summary>
+[CVarDefs]
+public static class CMUCinematicNormalCVars
 {
-    /// <summary>Experimental opt-in normal mapping. Off by default and client-only.</summary>
-    public static readonly CVarDef<bool> CMUCinematicNormals =
+    public static readonly CVarDef<bool> Enabled =
         CVarDef.Create("cmu.lighting.cinematic_normals", false, CVar.CLIENTONLY);
 }
