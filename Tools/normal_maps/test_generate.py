@@ -63,6 +63,22 @@ class NormalGenerationTests(unittest.TestCase):
             run(repo, sources, check=False, bevel=1.25, strength=5)
             self.assertFalse((target / "crate.png").exists())
 
+    def test_check_accepts_different_png_compression(self):
+        with tempfile.TemporaryDirectory() as temp:
+            repo = Path(temp)
+            relative = Path("Resources/Textures/Objects/box.png")
+            source = repo / relative
+            source.parent.mkdir(parents=True)
+            image = Image.new("RGBA", (8, 8), (180, 180, 180, 255))
+            image.save(source)
+            run(repo, [relative], check=False, bevel=1.25, strength=5)
+            output = repo / "Resources/Textures" / OUTPUT_DIR / "Objects/box.png"
+            # Recompress losslessly: same normals, different binary PNG.
+            with Image.open(output) as original:
+                original.load()
+                original.save(output, format="PNG", compress_level=0)
+            self.assertEqual(run(repo, [relative], check=True, bevel=1.25, strength=5).changed, 0)
+
     def test_excluded_interface_and_generated_files(self):
         repo = Path("/tmp/sample-repo")
         self.assertIsNone(source_location(repo, Path("Content.CMU/Resources/Textures/CMU14/Interface/hud.rsi/meta.json")))
