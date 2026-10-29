@@ -19,6 +19,7 @@ internal sealed class CinematicRenderContext
     private readonly Action _draw;
     private Action _pass = default!;
     private IRenderTexture _target = default!;
+    public Vector4 Region { get; private set; } = new(0f, 0f, 1f, 1f);
     private readonly IPrototypeManager _prototypes;
     private readonly IResourceCache _textures;
     private readonly Dictionary<string, Texture> _masks = new();
@@ -61,6 +62,7 @@ internal sealed class CinematicRenderContext
     public void Render(IRenderTexture target, Action pass, Color? clear = null)
     {
         _target = target;
+        Region = new Vector4(0f, 0f, 1f, 1f);
         _pass = pass;
         Handle.RenderInRenderTarget(target, _draw, clear);
     }
@@ -68,7 +70,7 @@ internal sealed class CinematicRenderContext
     private void DrawPass()
     {
         var scale = Viewport.RenderScale * (_target.Size / (Vector2) Viewport.Size);
-        Handle.SetTransform(_target.GetWorldToLocalMatrix(Viewport.Eye!, scale));
+        Handle.SetTransform(_target.GetWorldToLocalMatrix(Viewport.Eye!, scale) * RegionMatrix());
         _pass();
         Handle.UseShader(null);
     }
@@ -78,8 +80,19 @@ internal sealed class CinematicRenderContext
     public void SetWorldTransform(Matrix3x2 transform)
     {
         var scale = Viewport.RenderScale * (_target.Size / (Vector2) Viewport.Size);
-        Handle.SetTransform(transform * _target.GetWorldToLocalMatrix(Viewport.Eye!, scale));
+        Handle.SetTransform(transform * _target.GetWorldToLocalMatrix(Viewport.Eye!, scale) * RegionMatrix());
     }
+
+    // Local atlas projection affects only the current pass. Frame uniforms still describe
+    // the full physical target; the seed shader maps its subregion back to world UV.
+    public void SetRegion(Vector4 region)
+    {
+        Region = region;
+        SetWorldTransform(Matrix3x2.Identity);
+    }
+
+    private Matrix3x2 RegionMatrix() => Matrix3x2.CreateScale(Region.Z, Region.W)
+        * Matrix3x2.CreateTranslation(Region.X * _target.Size.X, Region.Y * _target.Size.Y);
 
     public void BindFrame(ShaderInstance shader)
     {

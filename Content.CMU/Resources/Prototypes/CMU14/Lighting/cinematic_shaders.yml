@@ -45,3 +45,13 @@
   id: CMUCinematicContact
   kind: source
   path: /Textures/Shaders/CMU14/Cinematic/contact.swsl
+
+- type: shader
+  id: CMUCinematicWaterMaterial
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/water-material.swsl
+
+- type: shader
+  id: CMUCinematicWaterReflection
+  kind: source
+  path: /Textures/Shaders/CMU14/Cinematic/water-reflection.swsl

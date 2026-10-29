@@ -1,0 +1,134 @@
+{
+  "before": "Content.CMU\\Client\\Lighting\\Validation\\2026-10-29-v4-atlas\\atlas-only-reference",
+  "after": "Content.CMU\\Client\\Lighting\\Validation\\2026-10-29-v4-atlas\\reference",
+  "presets": [
+    {
+      "quality": 0,
+      "whole_frame": {
+        "changed_pixels": 212,
+        "mean_absolute_channel_change_8bit": 0.007339203042328042,
+        "maximum_channel_change_8bit": 112
+      },
+      "statue_water_xyxy": [
+        758,
+        500,
+        972,
+        722
+      ],
+      "statue_water": {
+        "changed_pixels": 0,
+        "mean_absolute_channel_change_8bit": 0.0,
+        "maximum_channel_change_8bit": 0
+      },
+      "central_actor_xyxy": [
+        645,
+        445,
+        695,
+        512
+      ],
+      "central_actor": {
+        "changed_pixels": 0,
+        "mean_absolute_channel_change_8bit": 0.0,
+        "maximum_channel_change_8bit": 0
+      },
+      "deep_hidden_pixels": 356999,
+      "nonblack_in_deep_hidden": 0
+    },
+    {
+      "quality": 1,
+      "whole_frame": {
+        "changed_pixels": 212,
+        "mean_absolute_channel_change_8bit": 0.007339203042328042,
+        "maximum_channel_change_8bit": 112
+      },
+      "statue_water_xyxy": [
+        758,
+        500,
+        972,
+        722
+      ],
+      "statue_water": {
+        "changed_pixels": 0,
+        "mean_absolute_channel_change_8bit": 0.0,
+        "maximum_channel_change_8bit": 0
+      },
+      "central_actor_xyxy": [
+        645,
+        445,
+        695,
+        512
+      ],
+      "central_actor": {
+        "changed_pixels": 0,
+        "mean_absolute_channel_change_8bit": 0.0,
+        "maximum_channel_change_8bit": 0
+      },
+      "deep_hidden_pixels": 356999,
+      "nonblack_in_deep_hidden": 0
+    },
+    {
+      "quality": 2,
+      "whole_frame": {
+        "changed_pixels": 11890,
+        "mean_absolute_channel_change_8bit": 0.06790493758267195,
+        "maximum_channel_change_8bit": 190
+      },
+      "statue_water_xyxy": [
+        758,
+        500,
+        972,
+        722
+      ],
+      "statue_water": {
+        "changed_pixels": 1224,
+        "mean_absolute_channel_change_8bit": 0.04791473716707362,
+        "maximum_channel_change_8bit": 7
+      },
+      "central_actor_xyxy": [
+        645,
+        445,
+        695,
+        512
+      ],
+      "central_actor": {
+        "changed_pixels": 0,
+        "mean_absolute_channel_change_8bit": 0.0,
+        "maximum_channel_change_8bit": 0
+      },
+      "deep_hidden_pixels": 356999,
+      "nonblack_in_deep_hidden": 0
+    },
+    {
+      "quality": 3,
+      "whole_frame": {
+        "changed_pixels": 25002,
+        "mean_absolute_channel_change_8bit": 0.09182167658730159,
+        "maximum_channel_change_8bit": 191
+      },
+      "statue_water_xyxy": [
+        758,
+        500,
+        972,
+        722
+      ],
+      "statue_water": {
+        "changed_pixels": 1224,
+        "mean_absolute_channel_change_8bit": 0.04790070444276052,
+        "maximum_channel_change_8bit": 7
+      },
+      "central_actor_xyxy": [
+        645,
+        445,
+        695,
+        512
+      ],
+      "central_actor": {
+        "changed_pixels": 0,
+        "mean_absolute_channel_change_8bit": 0.0,
+        "maximum_channel_change_8bit": 0
+      },
+      "deep_hidden_pixels": 356999,
+      "nonblack_in_deep_hidden": 0
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+// Shared by the opaque water receiver and native submerged-body water replacement.
+uniform sampler2D water_reflection_texture;
+uniform sampler2D blocker_texture;
+uniform highp float local_exposure;
+
+highp vec3 cinematicWaterResponse(highp vec3 water, highp vec3 albedo, highp vec2 uv)
+{
+    highp vec3 radiance = texture2D(water_reflection_texture, uv).rgb * local_exposure;
+    highp float peak = max(max(radiance.r, radiance.g), radiance.b);
+    highp vec3 response = radiance / (1.0 + peak);
+    highp float contact = clamp(texture2D(blocker_texture, uv).b, 0.0, 0.2);
+    highp float detail = 0.55 + dot(water, vec3(0.2126, 0.7152, 0.0722)) * 0.45;
+    return max(vec3(0.0), vec3(1.0) - albedo) * response * detail * (1.0 - contact);
+}

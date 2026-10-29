@@ -83,9 +83,9 @@ public sealed partial class CMUCinematicDemoCommand : LocalizedEntityCommands
             _console.RemoteExecuteCommand(session, "cmu_cinematic_debug " + string.Join(' ', args[2..]));
             return;
         }
-        if (mode == "materials")
+        if (mode is "materials" or "water")
         {
-            CreateMaterialReview(shell, session);
+            CreateMaterialReview(shell, session, mode == "water");
             return;
         }
         if (mode is "reload" or "watch" && session != null)
@@ -112,6 +112,9 @@ public sealed partial class CMUCinematicDemoCommand : LocalizedEntityCommands
                     ambient.IsAnimating = false;
                     EntityManager.Dirty(reviewMap, ambient);
                 }
+                // Pausing the review map alone does not stop client movement prediction.
+                // Keep the observer fixed as well, so keyboard focus cannot move a capture.
+                EntityManager.EnsureComponent<AdminFrozenComponent>(viewer);
                 _map.SetPaused(EntityManager.GetComponent<TransformComponent>(viewer).MapID, true);
             }
             _console.RemoteExecuteCommand(session, $"cmu_cinematic_capture {seconds}");

@@ -3,6 +3,7 @@ using System.Numerics;
 using Content.Client.Graphics;
 using Content.Client.Light.EntitySystems;
 using Content.Shared.CCVar;
+using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
 using Robust.Shared.Configuration;
@@ -35,6 +36,7 @@ public sealed partial class CinematicLightingOverlay : Overlay
         ?? (IReadOnlyList<CinematicLightSource>) Array.Empty<CinematicLightSource>();
     internal CinematicRenderContext? CaptureFrame => _lastResources?.Frame;
     private double _surfaceCpu;
+    private double _waterCpu;
     private double _lightingCpu;
     private double _prepareCpu;
     private readonly Action _drawLight;
@@ -102,11 +104,12 @@ public sealed partial class CinematicLightingOverlay : Overlay
     {
         var start = Stopwatch.GetTimestamp();
         var resources = Begin(args, args.Viewport.RenderTarget.Texture);
+        _waterCpu = 0;
         resources.SurfacePrepared = false;
         if (!BeginGeometry(resources, args))
             return;
-        resources.Bloom.Render(resources.Emission, resources.Pyramid, resources.Blockers.Texture,
-            resources.InnerSeeds, resources.OuterSeeds, resources.Blockers);
+        resources.Bloom.Render(resources.Emission, resources.OpticalSeeds, resources.Pyramid,
+            resources.Blockers.Texture, resources.Blockers);
         resources.Spill!.RenderIrradiance(resources.Irradiance!, Exposure);
         _lightResources = resources;
         resources.Frame.Render(resources.NativeLightCopy!, _copyLight);
@@ -164,6 +167,32 @@ public sealed partial class CinematicLightingOverlay : Overlay
         _surfaceCpu = Stopwatch.GetElapsedTime(start).TotalMilliseconds;
     }
 
+    internal void DrawWaterSurfaces(in OverlayDrawArgs args)
+    {
+        if (!_system.Controls.Reflections || _system.Controls.View != CinematicDebugView.Final)
+            return;
+        var resources = _resources.GetForViewport(args.Viewport, _factory);
+        if (!resources.SurfacePrepared || resources.Water == null)
+            return;
+        var start = Stopwatch.GetTimestamp();
+        resources.Water.DrawReflections(args, resources.Reflections!.Texture, resources.Blockers.Texture, Exposure);
+        _waterCpu = Stopwatch.GetElapsedTime(start).TotalMilliseconds;
+    }
+
+    internal bool BindWaterSubmersion(in BeforePostShaderRenderEvent args, EntityUid receiver)
+    {
+        if (!_system.Quality.SurfaceEffects || !_system.Controls.Reflections
+            || _system.Controls.View != CinematicDebugView.Final
+            || !_system.IsEligible(args.Viewport, _lights)
+            || _lastResources is not { SurfacePrepared: true, Water: { } water } resources
+            || resources.Frame.Viewport != args.Viewport || !water.ContainsReceiver(receiver))
+            return false;
+        var start = Stopwatch.GetTimestamp();
+        water.BindResponse(args.Shader, resources.Reflections!.Texture, resources.Blockers.Texture, Exposure);
+        _waterCpu += Stopwatch.GetElapsedTime(start).TotalMilliseconds;
+        return true;
+    }
+
     private float Exposure => Math.Clamp(_config.GetCVar(CCVars.CMUCinematicExposure), 0f, 3f);
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -176,8 +205,8 @@ public sealed partial class CinematicLightingOverlay : Overlay
             return;
         var frame = resources.Frame;
         if (!_system.Quality.SurfaceEffects || !resources.SurfacePrepared)
-            resources.Bloom.Render(resources.Emission, resources.Pyramid, resources.Blockers.Texture,
-                resources.InnerSeeds, resources.OuterSeeds, resources.Blockers);
+            resources.Bloom.Render(resources.Emission, resources.OpticalSeeds, resources.Pyramid,
+                resources.Blockers.Texture, resources.Blockers);
         if (resources.AtmosphereTarget != null)
             resources.Atmosphere!.Render(resources.AtmosphereTarget);
         resources.Occlusion.EndMeshes();
@@ -209,7 +238,7 @@ public sealed partial class CinematicLightingOverlay : Overlay
         _system.LastFrame = new CinematicLightingStatistics(_system.Quality.Level, frame.Sources.Count,
             resources.Atmosphere?.LastSources ?? 0, resources.Occlusion.EdgeCount, resources.Occlusion.MeshRebuilds,
             resources.TargetCount, resources.TargetBytes,
-            _prepareCpu + (_system.Quality.SurfaceEffects ? _surfaceCpu + _lightingCpu : 0)
+            _prepareCpu + (_system.Quality.SurfaceEffects ? _surfaceCpu + _lightingCpu + _waterCpu : 0)
             + Stopwatch.GetElapsedTime(start).TotalMilliseconds);
     }
 
@@ -230,8 +259,7 @@ public sealed partial class CinematicLightingOverlay : Overlay
         if (resources.NativeLightCopy != null)
             Copy("native-light-original", resources.NativeLightCopy);
         Copy("emission", resources.Emission);
-        Copy("inner-seeds", resources.InnerSeeds);
-        Copy("outer-seeds", resources.OuterSeeds);
+        Copy("optical-seeds", resources.OpticalSeeds);
         if (resources.Materials != null)
         {
             Copy("materials", resources.Materials);

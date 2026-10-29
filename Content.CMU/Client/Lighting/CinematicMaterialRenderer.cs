@@ -14,6 +14,7 @@ namespace Content.Client.CMU14.Lighting;
 /// <summary>Content material mask, including inherited tile definitions and actual wet-floor puddles.</summary>
 internal sealed class CinematicMaterialRenderer
 {
+    public CinematicWaterSurfaceRenderer? Water;
     private readonly IEntityManager _entities;
     private readonly SharedMapSystem _map;
     private readonly SharedTransformSystem _transform;
@@ -115,6 +116,7 @@ internal sealed class CinematicMaterialRenderer
             _frame.Handle.DrawPrimitives(DrawPrimitiveTopology.TriangleList, _white,
                 CollectionsMarshal.AsSpan(_wetVertices));
         }
+        Water?.DrawMask();
     }
 
     private void AddWetTile(EntityUid grid, Vector2i tile, float tileSize, Color data)

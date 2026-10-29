@@ -2,7 +2,10 @@ import renderdoc as rd
 import os, sys, json, csv, traceback, struct, math
 root = os.path.join(os.getcwd(), 'bin', 'cinematic-demo')
 def shader_role(text):
-    for token, role in [('face_luminous','wall-receiver'),('contact_strength','contact-mask'),('core_strength','emission'),('spill_strength','spill'),('atmosphere_strength','atmosphere'),('bloom_compact','lens-composite'),('reflection_texture','surface-composite'),('irradiance_texture','native-light-composite'),('native_copy_texture','native-light-copy'),('source_pixel','bloom')]:
+    # Optional arithmetic inside the unchanged native body draw is not a separate CMU pass.
+    if 'cmu_water_enabled' in text:
+        return None
+    for token, role in [('water_reflection_texture','water-specular'),('water_material_data','water-material'),('face_luminous','wall-receiver'),('contact_strength','contact-mask'),('core_strength','emission'),('spill_strength','spill'),('atmosphere_strength','atmosphere'),('bloom_compact','lens-composite'),('reflection_texture','surface-composite'),('irradiance_texture','native-light-composite'),('native_copy_texture','native-light-copy'),('source_pixel','bloom')]:
         if token in text:
             return role
     return None
@@ -40,7 +43,7 @@ with open(os.path.join(root,'gpu-final-analysis.log'),'w',encoding='utf-8') as l
                                 for label, effect in [('irradiance','direct-indirect'),('reflections','specular'),('native-contribution','native-contribution')]:
                                     if any(label in name for name in outputs): role = effect
                             if role == 'emission':
-                                for label, effect in [('inner-seeds','emission-inner'),('outer-seeds','emission-outer')]:
+                                for label, effect in [('optical-seeds','emission-optical'),('inner-seeds','emission-inner'),('outer-seeds','emission-outer')]:
                                     if any(label in name for name in outputs): role = effect
                             if not role:
                                 for t in pipe.GetOutputTargets():
@@ -71,7 +74,7 @@ with open(os.path.join(root,'gpu-final-analysis.log'),'w',encoding='utf-8') as l
                 c.SetFrameEvent(last_event[0],True)
                 for tex in c.GetTextures():
                     name = names.get(str(tex.resourceId),'')
-                    if any(s in name for s in ['cmu-cinematic-emission','cmu-cinematic-inner-seeds','cmu-cinematic-outer-seeds','cmu-cinematic-bloom-','cmu-cinematic-irradiance','cmu-cinematic-reflections','cmu-cinematic-atmosphere','cmu-cinematic-native-contribution','cmu-cinematic-native-light-copy']):
+                    if any(s in name for s in ['cmu-cinematic-optical-seeds','cmu-cinematic-emission','cmu-cinematic-inner-seeds','cmu-cinematic-outer-seeds','cmu-cinematic-bloom-','cmu-cinematic-irradiance','cmu-cinematic-reflections','cmu-cinematic-atmosphere','cmu-cinematic-native-contribution','cmu-cinematic-native-light-copy']):
                         data = c.GetTextureData(tex.resourceId,rd.Subresource())
                         peaks=[0.0,0.0,0.0]
                         nonfinite=0

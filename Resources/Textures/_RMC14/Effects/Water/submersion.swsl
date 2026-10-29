@@ -9,6 +9,11 @@ uniform highp vec2 surface_origin;
 uniform highp float pixels_per_meter;
 uniform bool immersed;
 
+// CMU14 start: use the same water response behind and inside native submersion.
+#include "/Textures/Shaders/CMU14/Cinematic/water-response.swsl"
+uniform bool cmu_water_enabled;
+// CMU14 end
+
 void fragment() {
     highp vec4 body = zTexture(UV);
     highp vec2 screen = SCREEN_UV / SCREEN_PIXEL_SIZE;
@@ -20,7 +25,13 @@ void fragment() {
     } else {
         highp vec2 tile_uv = fract((screen - surface_origin) / pixels_per_meter + vec2(0.5));
         lowp vec4 water = zTextureSpec(water_texture, mix(water_uv.xy, water_uv.zw, tile_uv)) * water_color;
-        water.rgb *= zTextureSpec(water_light, SCREEN_UV).rgb;
+        // CMU14 start: preserve the native body mask, depth, alpha and water texture.
+        highp vec3 albedo = water.rgb * zTextureSpec(water_light, SCREEN_UV).rgb;
+        if (cmu_water_enabled)
+            water.rgb = albedo + cinematicWaterResponse(water.rgb, albedo, SCREEN_UV);
+        else
+            water.rgb = albedo;
+        // CMU14 end
         // Preserve premultiplied alpha and the silhouette of clothing and held items.
         // Fully immersed bodies remain faintly visible; living mobs also emit bubbles.
         lowp float opacity = immersed ? 0.12 : 0.65;

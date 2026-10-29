@@ -31,7 +31,7 @@ public sealed class CinematicLightingIntegrationTest : GameTest
         await Client.WaitAssertion(() =>
         {
             string[] shaders = ["CMUCinematicEmission", "CMUCinematicDownsample", "CMUCinematicSpill",
-                "CMUCinematicAtmosphere", "CMUCinematicComposite", "CMUCinematicSurfaceComposite", "CMUCinematicLightComposite", "CMUCinematicLightCopy", "CMUCinematicWallReceiver", "CMUCinematicContact"];
+                "CMUCinematicAtmosphere", "CMUCinematicComposite", "CMUCinematicSurfaceComposite", "CMUCinematicLightComposite", "CMUCinematicLightCopy", "CMUCinematicWallReceiver", "CMUCinematicContact", "CMUCinematicWaterMaterial", "CMUCinematicWaterReflection", "RMCWaterSubmersion"];
             foreach (var id in shaders)
             {
                 using var shader = CProtoMan.Index<ShaderPrototype>(id).InstanceUnique();
@@ -125,6 +125,7 @@ public sealed class CinematicLightingIntegrationTest : GameTest
                     Assert.That(overlays.HasOverlay<CinematicLightingOverlay>(), Is.EqualTo(quality != 0));
                     Assert.That(overlays.HasOverlay<CinematicSurfaceLightingOverlay>(), Is.EqualTo(quality >= 2));
                     Assert.That(overlays.HasOverlay<CinematicIrradianceOverlay>(), Is.EqualTo(quality >= 2));
+                    Assert.That(overlays.HasOverlay<CinematicWaterSurfaceOverlay>(), Is.EqualTo(quality >= 2));
                     Assert.That(system.IsEligible(first, lights), Is.False);
                     using (system.BeginViewport(first))
                     {
@@ -284,6 +285,73 @@ public sealed class CinematicLightingIntegrationTest : GameTest
     }
 
     [Test]
+    public async Task WaterCoverageRejectsHiddenSpritesAndAnyLayerAtOrAboveCarpets()
+    {
+        var testMap = await Pair.CreateTestMap();
+        NetEntity waterNet = default;
+        await Server.WaitPost(() =>
+        {
+            Server.PlayerMan.SetAttachedEntity(ServerSession!, testMap.Grid.Owner);
+            waterNet = SEntMan.GetNetEntity(SEntMan.SpawnEntity("RMCEntityDesertWaterShallow", testMap.GridCoords));
+        });
+        await Pair.RunUntilSynced();
+        await Client.WaitAssertion(() =>
+        {
+            var water = CEntMan.GetEntity(waterNet);
+            var coords = CEntMan.System<SharedTransformSystem>().GetMapCoordinates(water);
+            var sprite = CEntMan.GetComponent<SpriteComponent>(water);
+            var sprites = CEntMan.System<SpriteSystem>();
+            var clyde = Client.ResolveDependency<IClyde>();
+            using var viewport = clyde.CreateViewport(new Vector2i(65, 33));
+            viewport.Eye = new ClientEye { Position = coords };
+            using var resources = new CinematicViewportResources(clyde, CEntMan, CProtoMan,
+                Client.ResolveDependency<IResourceCache>(), Client.ResolveDependency<ITileDefinitionManager>(),
+                Client.ResolveDependency<IConfigurationManager>(), CinematicLightingQuality.For(2));
+            resources.EnsureSize(viewport.Size, coords.MapId);
+            resources.Frame.Viewport = viewport;
+            resources.Frame.Map = coords.MapId;
+            resources.Frame.Bounds = new Box2Rotated(Box2.CenteredAround(coords.Position, new Vector2(10)), Angle.Zero);
+            var drawing = new Mock<DrawingHandleWorld>(MockBehavior.Loose, Texture.White);
+            drawing.Setup(h => h.RenderInRenderTarget(It.IsAny<IRenderTarget>(), It.IsAny<Action>(), It.IsAny<Color?>()))
+                .Callback((IRenderTarget _, Action draw, Color? _) => draw());
+            resources.Frame.Handle = drawing.Object;
+            Draw();
+            Assert.That(resources.Water!.LayerCount, Is.GreaterThan(0), "Real native water must receive material data.");
+            Assert.That(resources.Water.ContainsReceiver(water), Is.True);
+            sprites.SetDrawDepth((water, sprite), (int) Content.Shared.DrawDepth.DrawDepth.FloorTiles);
+            Draw();
+            Assert.That(resources.Water.LayerCount, Is.Zero, "The late pass must never paint over carpet/actor layers.");
+            Assert.That(resources.Water.ContainsReceiver(water), Is.False);
+            sprites.SetDrawDepth((water, sprite), (int) Content.Shared.DrawDepth.DrawDepth.BelowFloor);
+            sprites.SetVisible((water, sprite), false);
+            Draw();
+            Assert.That(resources.Water.LayerCount, Is.Zero);
+            sprites.SetVisible((water, sprite), true);
+            sprites.SetContainerOccluded((water, sprite), true);
+            Draw();
+            Assert.That(resources.Water.LayerCount, Is.Zero);
+            sprites.SetContainerOccluded((water, sprite), false);
+            sprites.SetColor((water, sprite), Color.White.WithAlpha(0));
+            Draw();
+            Assert.That(resources.Water.LayerCount, Is.Zero);
+            sprites.SetColor((water, sprite), Color.White);
+            Draw();
+            Assert.That(resources.Water.LayerCount, Is.GreaterThan(0));
+            return;
+
+            // Exercise the real water collector/draw callback. Moq cannot proxy the unrelated
+            // tile batch's ReadOnlySpan argument; that is not part of this receiver contract.
+            void Draw() => resources.Frame.Render(resources.Materials!, resources.Water!.DrawMask,
+                CinematicRenderContext.ClearColor);
+        });
+        await Server.WaitPost(() =>
+        {
+            SEntMan.DeleteEntity(SEntMan.GetEntity(waterNet));
+            Server.PlayerMan.SetAttachedEntity(ServerSession!, null);
+        });
+    }
+
+    [Test]
     public async Task OddSizeResizeViewportPurgeAndDisableReleaseEveryOwnedTargetExactlyOnce()
     {
         await Client.WaitAssertion(() =>
@@ -317,27 +385,29 @@ public sealed class CinematicLightingIntegrationTest : GameTest
             resources.EnsureSize(new Vector2i(65, 33), new MapId(1));
             Assert.That(resources.Pyramid[0].Size, Is.EqualTo(new Vector2i(33, 17)));
             Assert.That(resources.Emission.Size, Is.EqualTo(new Vector2i(33, 17)));
+            Assert.That(resources.OpticalSeeds.Size, Is.EqualTo(new Vector2i(66, 17)),
+                "Odd viewport sizes must give both atlas fields exactly the same integer texel grid.");
+            Assert.That(resources.TargetCount, Is.EqualTo(12));
             var clears = new List<Color?>();
             var drawing = new Mock<DrawingHandleWorld>(MockBehavior.Loose, Texture.White);
             drawing.Setup(h => h.RenderInRenderTarget(It.IsAny<IRenderTarget>(), It.IsAny<Action>(), It.IsAny<Color?>()))
                 .Callback((IRenderTarget _, Action _, Color? clear) => clears.Add(clear));
             resources.Frame.Handle = drawing.Object;
             resources.Occlusion.RenderBlockers(resources.Blockers);
-            resources.Bloom.Render(resources.Emission, resources.Pyramid, resources.Blockers.Texture,
-                resources.InnerSeeds, resources.OuterSeeds);
+            resources.Bloom.Render(resources.Emission, resources.OpticalSeeds, resources.Pyramid, resources.Blockers.Texture);
             resources.Material!.Render(resources.Materials!);
             resources.Contact!.Render(resources.Blockers);
             resources.Spill!.RenderIrradiance(resources.Irradiance!);
             resources.Spill.RenderReflections(resources.Reflections!, resources.Materials!.Texture);
             resources.Atmosphere!.Render(resources.AtmosphereTarget!);
-            Assert.That(clears.Count, Is.EqualTo(resources.Pyramid.Length + 9));
+            Assert.That(clears.Count, Is.EqualTo(resources.Pyramid.Length + 8));
             Assert.That(clears.Count(clear => clear == null), Is.EqualTo(1),
                 "The contact B contribution must preserve the blocker R and receiver G channels.");
             foreach (var clear in clears)
                 Assert.That(clear, Is.AnyOf(null, CinematicRenderContext.ClearColor, CinematicRenderContext.RadianceClearColor),
                     "RGB data masks must not retain the white RGB channels of Color.Transparent.");
-            Assert.That(clears.Count(clear => clear == CinematicRenderContext.RadianceClearColor), Is.EqualTo(6),
-                "Three optical seeds, irradiance, reflections and atmosphere use HDR RGB.");
+            Assert.That(clears.Count(clear => clear == CinematicRenderContext.RadianceClearColor), Is.EqualTo(5),
+                "Core, packed optical seeds, irradiance, reflections and atmosphere use HDR RGB.");
             var count = targets.Count;
             resources.EnsureSize(new Vector2i(65, 33), new MapId(1));
             Assert.That(targets.Count, Is.EqualTo(count), "Steady rendering reuses its targets.");

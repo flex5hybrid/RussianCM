@@ -3,6 +3,7 @@ using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.CMU14.Lighting;
+using Content.Shared.Damage.Components;
 using Content.Shared.FixedPoint;
 using Content.Shared.Light;
 using Content.Shared.Light.Components;
@@ -87,7 +88,7 @@ public sealed partial class CMUCinematicDemoCommand
             ("lamp", review.SelectedLamp is { } lamp ? EntityManager.GetNetEntity(lamp).ToString() : "-")));
     }
 
-    private void CreateMaterialReview(IConsoleShell shell, ICommonSession? session)
+    private void CreateMaterialReview(IConsoleShell shell, ICommonSession? session, bool waterReceivers = false)
     {
         var map = _map.CreateMap(out var mapId, runMapInit: true);
         EntityManager.AddComponent<CMUCinematicReviewSceneComponent>(map);
@@ -129,6 +130,19 @@ public sealed partial class CMUCinematicDemoCommand
             _lights.SetEnergy(lamp, 1f);
             EntityManager.SpawnEntity("CMOverheadPipe",
                 new EntityCoordinates(grid.Owner, new Vector2(-6.5f + column * 4f, 5.5f)));
+        }
+        if (waterReceivers)
+        {
+            // Separate optical-receiver test, leaving the four-material control untouched.
+            // Both middle lamps get real opaque water; lamp-off retains an independent control.
+            foreach (var x in new[] { -2.5f, 1.5f })
+            foreach (var y in new[] { 1.5f, 2.5f, 3.5f })
+                EntityManager.SpawnEntity("RMCEntityDesertWaterShallow",
+                    new EntityCoordinates(grid.Owner, new Vector2(x, y)));
+            var marine = EntityManager.SpawnEntity("CMMobHuman",
+                new EntityCoordinates(grid.Owner, new Vector2(-2.5f, 2.5f)));
+            EntityManager.AddComponent<GodmodeComponent>(marine);
+            EntityManager.System<Content.Server.Clothing.Systems.OutfitSystem>().SetOutfit(marine, "CMGearRiflemanEquipped");
         }
         PowerForReview(mapId);
         PlacePlayer(session, new EntityCoordinates(grid.Owner, new Vector2(-0.5f, -1.5f)));

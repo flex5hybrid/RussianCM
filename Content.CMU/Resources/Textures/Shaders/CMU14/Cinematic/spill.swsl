@@ -103,7 +103,13 @@ void fragment()
                 * (1.0 + max(along, 0.0) * 0.13);
             highp vec2 film = vec2(across / wet_width, (along - 0.85) / 1.1);
             highp float film_tail = 1.0 - smoothstep(source_radius * 0.45, source_radius * 0.85, distance);
-            lobe = mix(lobe, exp(-0.5 * dot(film, film)) * film_tail, wet);
+            highp float film_lobe = exp(-0.5 * dot(film, film)) * film_tail;
+            // A finite rough emitter has a faint wide microfacet skirt as well as its
+            // narrow image. It remains tied to source size, roughness, radius and shadows.
+            highp float skirt = roughness * (0.25 + emitter_span)
+                / (1.0 + dot(delta, delta) * 0.8);
+            highp float wet_lobe = film_lobe + skirt * (1.0 - film_lobe);
+            lobe = mix(lobe, wet_lobe, wet);
             // Only a small luminous patch is sampled, never the sprite's rectangular frame.
             // Roughness integrates five taps of the real current emissive field. The bounded
             // source mesh, wet receiver coverage and the original source mask still clip it.

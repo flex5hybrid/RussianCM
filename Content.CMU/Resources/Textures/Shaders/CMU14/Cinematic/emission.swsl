@@ -12,10 +12,15 @@ uniform highp float core_strength;
 uniform highp float texture_weight;
 uniform highp float bloom_strength;
 uniform bool authored_mask;
+uniform highp vec4 seed_region;
 
 void fragment()
 {
-    highp vec2 world = frameWorld(frameUv(FRAGCOORD.xy));
+    highp vec2 seed_uv = (frameUv(FRAGCOORD.xy) - seed_region.xy) / seed_region.zw;
+    // A source outside this viewport must never spill into the adjacent atlas field.
+    if (seed_uv.x < 0.0 || seed_uv.y < 0.0 || seed_uv.x > 1.0 || seed_uv.y > 1.0)
+        discard;
+    highp vec2 world = frameWorld(seed_uv);
     if (visibleAt(source_position) < 0.5 || visibleAt(world) < 0.5)
         discard;
     highp vec3 hue = source_color;

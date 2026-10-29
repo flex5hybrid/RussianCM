@@ -20,10 +20,11 @@ internal sealed class CinematicBloomRenderer : IDisposable
     private readonly ShaderInstance _downsample;
     private readonly Action _drawSeeds;
     private readonly Action _drawDownsample;
+    private readonly Action _drawOptical;
     private Texture _input = default!;
     private Texture _blockers = default!;
     private int _seedPass;
-    private float _spacing = 1f;
+    private Vector4 _sourceRegion = new(0f, 0f, 1f, 1f);
 
     public CinematicBloomRenderer(IPrototypeManager prototypes, CinematicRenderContext frame,
         CinematicOcclusionRenderer occlusion, CinematicLightingQuality quality)
@@ -32,37 +33,44 @@ internal sealed class CinematicBloomRenderer : IDisposable
         _frame = frame;
         _occlusion = occlusion;
         _quality = quality;
-        // Three independent radiance passes, up to four live sprite layers per source.
+        // Three independent radiance streams, up to four live sprite layers per source.
         _seeds = new CinematicShaderPool(prototypes.Index<ShaderPrototype>("CMUCinematicEmission"), quality.Sources * 12);
         _bindings = new SeedBinding?[quality.Sources * 12];
         _downsample = prototypes.Index<ShaderPrototype>("CMUCinematicDownsample").InstanceUnique();
         _drawSeeds = DrawSeeds;
         _drawDownsample = DrawDownsample;
+        _drawOptical = DrawOptical;
     }
 
-    public void Render(IRenderTexture emission, IRenderTexture[] pyramid, Texture blockers,
-        IRenderTexture? inner = null, IRenderTexture? outer = null, IRenderTexture? receiverMask = null)
+    public void Render(IRenderTexture emission, IRenderTexture optical, IRenderTexture[] pyramid,
+        Texture blockers, IRenderTexture? receiverMask = null)
     {
         _blockers = blockers;
         _seedPass = 0;
         _frame.Render(emission, _drawSeeds, CinematicRenderContext.RadianceClearColor);
         if (receiverMask != null)
             _occlusion.RenderReceivers(receiverMask, _quality, emission.Texture);
-        if (inner != null && outer != null)
-        {
-            _seedPass = 1;
-            _frame.Render(inner, _drawSeeds, CinematicRenderContext.RadianceClearColor);
-            _seedPass = 2;
-            _frame.Render(outer, _drawSeeds, CinematicRenderContext.RadianceClearColor);
-        }
-        _input = (inner ?? emission).Texture;
+        _frame.Render(optical, _drawOptical, CinematicRenderContext.RadianceClearColor);
         for (var i = 0; i < pyramid.Length; i++)
         {
-            if (i == 1)
-                _input = (outer ?? emission).Texture;
-            _spacing = 1f;
+            if (i < 2)
+            {
+                _input = optical.Texture;
+                _sourceRegion = new Vector4(i * 0.5f, 0f, 0.5f, 1f);
+            }
+            else
+                _sourceRegion = new Vector4(0f, 0f, 1f, 1f);
             _frame.Render(pyramid[i], _drawDownsample, CinematicRenderContext.ClearColor);
             _input = pyramid[i].Texture;
+        }
+    }
+
+    private void DrawOptical()
+    {
+        for (_seedPass = 1; _seedPass <= 2; _seedPass++)
+        {
+            _frame.SetRegion(new Vector4((_seedPass - 1) * 0.5f, 0f, 0.5f, 1f));
+            DrawSeeds();
         }
     }
 
@@ -101,7 +109,7 @@ internal sealed class CinematicBloomRenderer : IDisposable
         var profile = source.Profile;
         var gain = _seedPass == 0 ? 1f : profile.Bloom * (_seedPass == 1 ? profile.InnerGlow : profile.OuterGlow);
         var binding = new SeedBinding(profile.EmissionSize, crop, profile.Threshold,
-            profile.EmissionChroma, profile.Core, profile.TextureColor, gain, authored);
+            profile.EmissionChroma, profile.Core, profile.TextureColor, gain, authored, _frame.Region);
         if (_bindings[slot] != binding)
         {
             _bindings[slot] = binding;
@@ -113,6 +121,7 @@ internal sealed class CinematicBloomRenderer : IDisposable
             seed.SetParameter("texture_weight", binding.TextureColor);
             seed.SetParameter("bloom_strength", binding.Gain);
             seed.SetParameter("authored_mask", binding.Authored);
+            seed.SetParameter("seed_region", binding.Region);
         }
         return seed;
     }
@@ -182,7 +191,9 @@ internal sealed class CinematicBloomRenderer : IDisposable
         _downsample.SetParameter("source_texture", _input);
         _downsample.SetParameter("blocker_texture", _blockers);
         _downsample.SetParameter("target_size", _frame.TargetSize);
-        _downsample.SetParameter("source_pixel", new Vector2(_spacing / _input.Width, _spacing / _input.Height));
+        _downsample.SetParameter("source_pixel", new Vector2(1f / (_input.Width * _sourceRegion.Z),
+            1f / (_input.Height * _sourceRegion.W)));
+        _downsample.SetParameter("source_region", _sourceRegion);
         _frame.Handle.UseShader(_downsample);
         _frame.Handle.DrawRect(_frame.Bounds, Color.White);
     }
@@ -194,6 +205,6 @@ internal sealed class CinematicBloomRenderer : IDisposable
     }
 
     private readonly record struct SeedBinding(Vector2 Size, Vector4 Crop, float Threshold,
-        float Chroma, float Core, float TextureColor, float Gain, bool Authored);
+        float Chroma, float Core, float TextureColor, float Gain, bool Authored, Vector4 Region);
     private readonly record struct LuminousShape(Vector2 Position, Vector2 Axis, float Span);
 }

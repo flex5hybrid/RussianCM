@@ -23,6 +23,7 @@ internal sealed class CinematicViewportResources : IDisposable
     public readonly CinematicOcclusionRenderer Occlusion;
     public readonly CinematicBloomRenderer Bloom;
     public readonly CinematicMaterialRenderer? Material;
+    public readonly CinematicWaterSurfaceRenderer? Water;
     public readonly CinematicContactRenderer? Contact;
     public readonly CinematicLightSpillRenderer? Spill;
     public readonly CinematicAtmosphereRenderer? Atmosphere;
@@ -32,8 +33,7 @@ internal sealed class CinematicViewportResources : IDisposable
     public readonly ShaderInstance? LightCopy;
     public IRenderTexture Blockers = default!;
     public IRenderTexture Emission = default!;
-    public IRenderTexture InnerSeeds = default!;
-    public IRenderTexture OuterSeeds = default!;
+    public IRenderTexture OpticalSeeds = default!;
     public IRenderTexture[] Pyramid = Array.Empty<IRenderTexture>();
     public IRenderTexture? Materials;
     public IRenderTexture? Irradiance;
@@ -43,7 +43,7 @@ internal sealed class CinematicViewportResources : IDisposable
     public bool SurfacePrepared;
     public long TargetBytes { get; private set; }
     public int TargetCount => Pyramid.Length + (Blockers == null ? 0 : 1) + (Emission == null ? 0 : 1)
-        + (InnerSeeds == null ? 0 : 2) + (Materials == null ? 0 : 5);
+        + (OpticalSeeds == null ? 0 : 1) + (Materials == null ? 0 : 5);
 
     public CinematicViewportResources(IClyde clyde, IEntityManager entities, IPrototypeManager prototypes,
         IResourceCache textures, ITileDefinitionManager tiles, IConfigurationManager config,
@@ -58,6 +58,8 @@ internal sealed class CinematicViewportResources : IDisposable
         if (quality.SurfaceEffects)
         {
             Material = new CinematicMaterialRenderer(entities, prototypes, tiles, Frame);
+            Water = new CinematicWaterSurfaceRenderer(entities, prototypes, Frame, Material);
+            Material.Water = Water;
             Contact = new CinematicContactRenderer(entities, prototypes, Frame, Material);
             Spill = new CinematicLightSpillRenderer(prototypes, Frame, Occlusion, quality);
             Atmosphere = new CinematicAtmosphereRenderer(entities, config, prototypes, Frame, Occlusion, quality);
@@ -87,8 +89,8 @@ internal sealed class CinematicViewportResources : IDisposable
         Emission = Create(new Vector2i((size.X + 1) / 2, (size.Y + 1) / 2), "emission", filter: false);
         var reduced = new Vector2i(Math.Max(1, (size.X + _quality.ResolutionDivisor - 1) / _quality.ResolutionDivisor),
             Math.Max(1, (size.Y + _quality.ResolutionDivisor - 1) / _quality.ResolutionDivisor));
-        InnerSeeds = Create(reduced, "inner-seeds");
-        OuterSeeds = Create(reduced, "outer-seeds");
+        // Two independent radiance fields, one target transition and one clear.
+        OpticalSeeds = Create(new Vector2i(reduced.X * 2, reduced.Y), "optical-seeds");
         if (_quality.SurfaceEffects)
         {
             Materials = Create(reduced, "materials", RenderTargetColorFormat.Rgba8);
@@ -119,10 +121,8 @@ internal sealed class CinematicViewportResources : IDisposable
         Blockers = default!;
         Emission?.Dispose();
         Emission = default!;
-        InnerSeeds?.Dispose();
-        InnerSeeds = default!;
-        OuterSeeds?.Dispose();
-        OuterSeeds = default!;
+        OpticalSeeds?.Dispose();
+        OpticalSeeds = default!;
         Materials?.Dispose();
         Materials = null;
         Irradiance?.Dispose();
@@ -145,6 +145,7 @@ internal sealed class CinematicViewportResources : IDisposable
         DisposeTargets();
         Bloom.Dispose();
         Contact?.Dispose();
+        Water?.Dispose();
         Spill?.Dispose();
         Atmosphere?.Dispose();
         Composite.Dispose();

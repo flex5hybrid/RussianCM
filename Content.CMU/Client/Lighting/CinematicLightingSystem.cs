@@ -34,6 +34,7 @@ public sealed partial class CinematicLightingSystem : EntitySystem
     private long? _activeViewport;
     private CinematicLightingOverlay? _overlay;
     private CinematicSurfaceLightingOverlay? _surfaceOverlay;
+    private CinematicWaterSurfaceOverlay? _waterOverlay;
     private CinematicIrradianceOverlay? _irradianceOverlay;
     public CinematicLightingQuality Quality { get; private set; }
     public CinematicLightingStatistics LastFrame { get; internal set; }
@@ -47,6 +48,7 @@ public sealed partial class CinematicLightingSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
+        InitializeWater();
         Subs.CVar(_config, CCVars.CMUCinematicLighting, OnQualityChanged, true);
     }
 
@@ -65,6 +67,8 @@ public sealed partial class CinematicLightingSystem : EntitySystem
                 _overlays.AddOverlay(_irradianceOverlay);
                 _surfaceOverlay = new CinematicSurfaceLightingOverlay(_overlay);
                 _overlays.AddOverlay(_surfaceOverlay);
+                _waterOverlay = new CinematicWaterSurfaceOverlay(_overlay);
+                _overlays.AddOverlay(_waterOverlay);
             }
         }
         LastFrame = default;
@@ -79,6 +83,12 @@ public sealed partial class CinematicLightingSystem : EntitySystem
 
     private void RemoveOverlay()
     {
+        if (_waterOverlay != null)
+        {
+            _overlays.RemoveOverlay(_waterOverlay);
+            _waterOverlay.Dispose();
+            _waterOverlay = null;
+        }
         if (_irradianceOverlay != null)
         {
             _overlays.RemoveOverlay(_irradianceOverlay);
