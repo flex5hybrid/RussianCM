@@ -40,11 +40,10 @@ internal sealed class CinematicViewportResources : IDisposable
     public IRenderTexture? Reflections;
     public IRenderTexture? AtmosphereTarget;
     public IRenderTexture? NativeLightCopy;
-    public IRenderTexture? NativeContribution;
     public bool SurfacePrepared;
     public long TargetBytes { get; private set; }
     public int TargetCount => Pyramid.Length + (Blockers == null ? 0 : 1) + (Emission == null ? 0 : 1)
-        + (InnerSeeds == null ? 0 : 2) + (Materials == null ? 0 : 6);
+        + (InnerSeeds == null ? 0 : 2) + (Materials == null ? 0 : 5);
 
     public CinematicViewportResources(IClyde clyde, IEntityManager entities, IPrototypeManager prototypes,
         IResourceCache textures, ITileDefinitionManager tiles, IConfigurationManager config,
@@ -83,7 +82,9 @@ internal sealed class CinematicViewportResources : IDisposable
         _size = size;
         _nativeLightSize = requestedLightSize;
         Blockers = Create(size, "blockers", RenderTargetColorFormat.Rgba8);
-        Emission = Create(size, "emission");
+        // Intrinsic RSI texels remain crisp with nearest sampling; a 2x/3x viewport does
+        // not require a full-size HDR copy of each original pixel-art luminous element.
+        Emission = Create(new Vector2i((size.X + 1) / 2, (size.Y + 1) / 2), "emission", filter: false);
         var reduced = new Vector2i(Math.Max(1, (size.X + _quality.ResolutionDivisor - 1) / _quality.ResolutionDivisor),
             Math.Max(1, (size.Y + _quality.ResolutionDivisor - 1) / _quality.ResolutionDivisor));
         InnerSeeds = Create(reduced, "inner-seeds");
@@ -95,7 +96,6 @@ internal sealed class CinematicViewportResources : IDisposable
             Reflections = Create(reduced, "reflections");
             AtmosphereTarget = Create(reduced, "atmosphere");
             NativeLightCopy = Create(_nativeLightSize, "native-light-copy");
-            NativeContribution = Create(reduced, "native-contribution");
         }
         Pyramid = new IRenderTexture[_quality.BloomLevels];
         for (var i = 0; i < Pyramid.Length; i++)
@@ -105,11 +105,12 @@ internal sealed class CinematicViewportResources : IDisposable
         }
     }
 
-    private IRenderTexture Create(Vector2i size, string label, RenderTargetColorFormat format = RenderTargetColorFormat.R11FG11FB10F)
+    private IRenderTexture Create(Vector2i size, string label, RenderTargetColorFormat format = RenderTargetColorFormat.R11FG11FB10F,
+        bool filter = true)
     {
         TargetBytes += (long) size.X * size.Y * (format == RenderTargetColorFormat.Rgba16F ? 8 : 4);
         return _clyde.CreateRenderTarget(size, new RenderTargetFormatParameters(format, hasDepthStencil: false),
-            new TextureSampleParameters { Filter = true }, $"cmu-cinematic-{label}");
+            new TextureSampleParameters { Filter = filter }, $"cmu-cinematic-{label}");
     }
 
     private void DisposeTargets()
@@ -132,8 +133,6 @@ internal sealed class CinematicViewportResources : IDisposable
         AtmosphereTarget = null;
         NativeLightCopy?.Dispose();
         NativeLightCopy = null;
-        NativeContribution?.Dispose();
-        NativeContribution = null;
         foreach (var target in Pyramid)
             target?.Dispose();
         Pyramid = Array.Empty<IRenderTexture>();

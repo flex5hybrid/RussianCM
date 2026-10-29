@@ -93,7 +93,121 @@
       },
       "straight_boundary_candidates": {
         "longest_run_pixels": 55,
-        "needs_visual_review": true
+        "needs_visual_review": true,
+        "segments": [
+          {
+            "orientation": "horizontal",
+            "line": 134,
+            "start": 260,
+            "end_exclusive": 315,
+            "pixels": 55
+          },
+          {
+            "orientation": "horizontal",
+            "line": 134,
+            "start": 516,
+            "end_exclusive": 571,
+            "pixels": 55
+          },
+          {
+            "orientation": "horizontal",
+            "line": 134,
+            "start": 1028,
+            "end_exclusive": 1083,
+            "pixels": 55
+          },
+          {
+            "orientation": "horizontal",
+            "line": 116,
+            "start": 260,
+            "end_exclusive": 314,
+            "pixels": 54
+          },
+          {
+            "orientation": "horizontal",
+            "line": 116,
+            "start": 516,
+            "end_exclusive": 570,
+            "pixels": 54
+          },
+          {
+            "orientation": "horizontal",
+            "line": 116,
+            "start": 1028,
+            "end_exclusive": 1082,
+            "pixels": 54
+          },
+          {
+            "orientation": "horizontal",
+            "line": 117,
+            "start": 260,
+            "end_exclusive": 314,
+            "pixels": 54
+          },
+          {
+            "orientation": "horizontal",
+            "line": 117,
+            "start": 516,
+            "end_exclusive": 570,
+            "pixels": 54
+          },
+          {
+            "orientation": "horizontal",
+            "line": 117,
+            "start": 1028,
+            "end_exclusive": 1082,
+            "pixels": 54
+          },
+          {
+            "orientation": "horizontal",
+            "line": 135,
+            "start": 260,
+            "end_exclusive": 314,
+            "pixels": 54
+          },
+          {
+            "orientation": "horizontal",
+            "line": 135,
+            "start": 516,
+            "end_exclusive": 570,
+            "pixels": 54
+          },
+          {
+            "orientation": "horizontal",
+            "line": 135,
+            "start": 1028,
+            "end_exclusive": 1082,
+            "pixels": 54
+          },
+          {
+            "orientation": "horizontal",
+            "line": 136,
+            "start": 260,
+            "end_exclusive": 314,
+            "pixels": 54
+          },
+          {
+            "orientation": "horizontal",
+            "line": 136,
+            "start": 516,
+            "end_exclusive": 570,
+            "pixels": 54
+          },
+          {
+            "orientation": "horizontal",
+            "line": 136,
+            "start": 1028,
+            "end_exclusive": 1082,
+            "pixels": 54
+          },
+          {
+            "orientation": "horizontal",
+            "line": 115,
+            "start": 260,
+            "end_exclusive": 313,
+            "pixels": 53
+          }
+        ]
       },
       "checks": {
         "fov": true,
@@ -108,80 +222,110 @@
       ],
       "deep_exterior_pixels": 551388,
       "changed_deep_exterior_pixels": 0,
-      "white_visible_fraction": 0.0009243565901268278,
+      "white_visible_fraction": 0.0013995830094193722,
       "regions": {
         "matte": {
-          "mean_luminance": 0.11087280021857536,
-          "peak_luminance": 0.40513259848326927,
-          "p99_luminance": 0.3390108791380211,
-          "rms_contrast": 0.7306627465852813,
-          "contrast_ratio_to_off": 2.0548274985967545,
+          "mean_luminance": 0.11234940737803589,
+          "peak_luminance": 0.4142387629935585,
+          "p99_luminance": 0.34588979760606103,
+          "rms_contrast": 0.7302181249097114,
+          "contrast_ratio_to_off": 2.0535770983954267,
           "mean_rgb": [
-            0.11085256479431457,
-            0.11215708010574045,
-            0.09821054365168826
+            0.11222996639113705,
+            0.11368030451898198,
+            0.09951748935287906
           ],
           "delta_rgb": [
-            0.09594269931426197,
-            0.09437732646605353,
-            0.08244683823881983
+            0.0973201009110844,
+            0.0959005508792944,
+            0.08375378394001011
           ]
         },
         "polished": {
-          "mean_luminance": 0.2394083446414573,
-          "peak_luminance": 0.8066056558893098,
-          "p99_luminance": 0.7859300364817441,
-          "rms_contrast": 0.9406988564907215,
-          "contrast_ratio_to_off": 3.103418172624739,
+          "mean_luminance": 0.24049680858226996,
+          "peak_luminance": 0.8122516696532166,
+          "p99_luminance": 0.7876274608993858,
+          "rms_contrast": 0.9402848034644751,
+          "contrast_ratio_to_off": 3.1020521885191807,
           "mean_rgb": [
-            0.2498797610501778,
-            0.23908578452725673,
-            0.21176945080758391
+            0.25091964062752786,
+            0.24019821375422756,
+            0.2127635804410792
           ],
           "delta_rgb": [
-            0.23910939845303814,
-            0.226390954596986,
-            0.20039569844581695
+            0.24014927803038644,
+            0.22750338382395838,
+            0.20138982807931344
           ]
         },
         "tile": {
-          "mean_luminance": 0.48565517960408716,
+          "mean_luminance": 0.490420860732154,
           "peak_luminance": 1.0,
           "p99_luminance": 1.0,
-          "rms_contrast": 0.5002511736659659,
-          "contrast_ratio_to_off": 1.4529158901157149,
+          "rms_contrast": 0.5035029286827146,
+          "contrast_ratio_to_off": 1.4623601988616097,
           "mean_rgb": [
-            0.5047616951429994,
-            0.4844185562976643,
-            0.4416439300911341
+            0.5094228012265095,
+            0.48920364915119713,
+            0.4465252537180896
           ],
           "delta_rgb": [
-            0.37045978569420085,
-            0.35375211795060907,
-            0.3218138220036537
+            0.3751208917777095,
+            0.3585372108041391,
+            0.32669514563060403
           ]
         },
         "wet": {
-          "mean_luminance": 0.31842927145523453,
-          "peak_luminance": 0.8637945646351226,
-          "p99_luminance": 0.8414868639176777,
-          "rms_contrast": 0.9976000846850483,
-          "contrast_ratio_to_off": 3.2180087379452584,
+          "mean_luminance": 0.1900556837170239,
+          "peak_luminance": 0.8051230429735291,
+          "p99_luminance": 0.7616573822788184,
+          "rms_contrast": 1.2443542563779078,
+          "contrast_ratio_to_off": 4.0139760727743825,
           "mean_rgb": [
-            0.34969836870102855,
-            0.3146317713479126,
-            0.26397168145926064
+            0.20159584836174171,
+            0.18912939018802566,
+            0.1652502284327863
           ],
           "delta_rgb": [
-            0.33928827472107115,
-            0.30194865289782186,
-            0.25125062560063977
+            0.19118575438172972,
+            0.1764462717379097,
+            0.1525291725741397
           ]
         }
       },
       "straight_boundary_candidates": {
         "longest_run_pixels": 56,
-        "needs_visual_review": true
+        "needs_visual_review": true,
+        "segments": [
+          {
+            "orientation": "horizontal",
+            "line": 135,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 136,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 137,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 138,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          }
+        ]
       },
       "checks": {
         "fov": true,
@@ -196,80 +340,131 @@
       ],
       "deep_exterior_pixels": 551388,
       "changed_deep_exterior_pixels": 0,
-      "white_visible_fraction": 0.0013789807080049556,
+      "white_visible_fraction": 0.0018789298889948,
       "regions": {
         "matte": {
-          "mean_luminance": 0.11281721465016273,
-          "peak_luminance": 0.3730989986351572,
-          "p99_luminance": 0.3440797549105494,
-          "rms_contrast": 0.7351171417342883,
-          "contrast_ratio_to_off": 2.067354500533793,
+          "mean_luminance": 0.11426857930460138,
+          "peak_luminance": 0.3793024628374957,
+          "p99_luminance": 0.3492068698839876,
+          "rms_contrast": 0.7351183671143728,
+          "contrast_ratio_to_off": 2.0673579466444725,
           "mean_rgb": [
-            0.11301881544991177,
-            0.11408020554546909,
-            0.09971262436794216
+            0.1144121608848002,
+            0.11556383818894134,
+            0.10101519151987196
           ],
           "delta_rgb": [
-            0.09810894996985985,
-            0.09630045190578171,
-            0.08394891895507352
+            0.09950229540474866,
+            0.0977840845492545,
+            0.08525148610700357
           ]
         },
         "polished": {
-          "mean_luminance": 0.2401685487458805,
-          "peak_luminance": 0.8167542772443339,
+          "mean_luminance": 0.24125602635380233,
+          "peak_luminance": 0.8162227676727356,
           "p99_luminance": 0.7948845134195391,
-          "rms_contrast": 0.9445876791720329,
-          "contrast_ratio_to_off": 3.1162476162835944,
+          "rms_contrast": 0.9441133943230056,
+          "contrast_ratio_to_off": 3.114682924023881,
           "mean_rgb": [
-            0.2507078854164864,
-            0.239830309299114,
-            0.21248497362354266
+            0.251735618535925,
+            0.24094810934072725,
+            0.21344800626851834
           ],
           "delta_rgb": [
-            0.23993752281934766,
-            0.2271354793688441,
-            0.20111122126177716
+            0.24096525593878404,
+            0.22825327941045886,
+            0.20207425390675351
           ]
         },
         "tile": {
-          "mean_luminance": 0.4855521129166342,
+          "mean_luminance": 0.4901022737836947,
           "peak_luminance": 1.0,
           "p99_luminance": 1.0,
-          "rms_contrast": 0.5013317769599694,
-          "contrast_ratio_to_off": 1.4560543649048163,
+          "rms_contrast": 0.5040147842507231,
+          "contrast_ratio_to_off": 1.4638468182387394,
           "mean_rgb": [
-            0.5043420033484696,
-            0.4843340793260028,
-            0.4422890508417384
+            0.5088165485053583,
+            0.48888218211847245,
+            0.44708225651394173
           ],
           "delta_rgb": [
-            0.37004009389967524,
-            0.3536676409789524,
-            0.32245894275424786
+            0.3745146390565603,
+            0.35821574377142024,
+            0.32725214842645195
           ]
         },
         "wet": {
-          "mean_luminance": 0.31940021884698466,
-          "peak_luminance": 0.8569213917825653,
-          "p99_luminance": 0.8420057255251296,
-          "rms_contrast": 0.9961978933895763,
-          "contrast_ratio_to_off": 3.2134856190017347,
+          "mean_luminance": 0.19162336590065487,
+          "peak_luminance": 0.7962581113454543,
+          "p99_luminance": 0.767580288567772,
+          "rms_contrast": 1.2379956813710518,
+          "contrast_ratio_to_off": 3.9934648977583906,
           "mean_rgb": [
-            0.35058587547493025,
-            0.3156408058728729,
-            0.2648110437773342
+            0.20340975861860736,
+            0.19065972766013792,
+            0.16646279772596076
           ],
           "delta_rgb": [
-            0.34017578149497,
-            0.30295768742278656,
-            0.2520899879187105
+            0.19299966463859497,
+            0.17797660921002278,
+            0.15374174186731232
           ]
         }
       },
       "straight_boundary_candidates": {
         "longest_run_pixels": 56,
-        "needs_visual_review": true
+        "needs_visual_review": true,
+        "segments": [
+          {
+            "orientation": "horizontal",
+            "line": 135,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 136,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 137,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 138,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 139,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 140,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 141,
+            "start": 521,
+            "end_exclusive": 572,
+            "pixels": 51
+          }
+        ]
       },
       "checks": {
         "fov": true,

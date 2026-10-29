@@ -20,7 +20,7 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
     private Texture _materials = default!;
     private Texture _emission = default!;
     private bool _reflections;
-    private bool _nativeContribution;
+    private float _nativeWeight;
     private bool _bindShared;
 
     public CinematicLightSpillRenderer(IPrototypeManager prototypes, CinematicRenderContext frame,
@@ -35,11 +35,11 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
         _draw = Draw;
     }
 
-    public void RenderIrradiance(IRenderTexture irradiance)
+    public void RenderIrradiance(IRenderTexture irradiance, float exposure = 1f)
     {
         _bindShared = true;
-        _nativeContribution = false;
-        _materials = _frame.Scene;
+        _nativeWeight = .75f * Math.Clamp(exposure, 0f, 1f) / Math.Max(exposure, .001f);
+        _materials = Texture.White;
         _reflections = false;
         _frame.Render(irradiance, _draw, CinematicRenderContext.RadianceClearColor);
     }
@@ -47,18 +47,9 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
     public void RenderReflections(IRenderTexture reflections, Texture materials, Texture? emission = null)
     {
         _emission = emission ?? _frame.Scene;
-        _nativeContribution = false;
         _materials = materials;
         _reflections = true;
         _frame.Render(reflections, _draw, CinematicRenderContext.RadianceClearColor);
-    }
-
-    public void RenderNativeContribution(IRenderTexture target)
-    {
-        _nativeContribution = true;
-        _reflections = false;
-        _materials = _frame.Scene;
-        _frame.Render(target, _draw, CinematicRenderContext.RadianceClearColor);
     }
 
     private void Draw()
@@ -68,8 +59,6 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
         for (var slot = 0; slot < _frame.Sources.Count; slot++)
         {
             var source = _frame.Sources[slot];
-            if (_nativeContribution && (source.NativeEnergy <= 0f || source.Profile.ProceduralEmission))
-                continue;
             var mesh = _occlusion.GetMesh(source, _quality);
             if (!mesh.Valid)
                 continue;
@@ -80,18 +69,22 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
                 _frame.BindSource(shader, source);
                 // Reset texture references after resize, even for branches not sampling them.
                 shader.SetParameter("material_texture", _materials);
-                shader.SetParameter("scene_texture", _frame.Scene);
+                shader.SetParameter("scene_texture", Texture.White);
                 // SetParameter boxes scalar/vector values in the public shader API. Keep stable
                 // radiometry in bounded slot caches, while positions, masks and animation update.
                 var native = new NativeBinding(source.NativeColor, source.NativeRadius, source.NativeEnergy,
-                    source.NativeFalloff, source.NativeCurveFactor);
+                    source.NativeFalloff, source.NativeCurveFactor, source.Profile.ProceduralEmission);
                 if (_nativeBindings[slot] != native)
                 {
                     _nativeBindings[slot] = native;
                     var nativeColor = Color.FromSrgb(native.Color);
                     shader.SetParameter("native_color", new Vector3(nativeColor.R, nativeColor.G, nativeColor.B));
                     shader.SetParameter("native_radius", native.Radius);
-                    shader.SetParameter("native_energy", native.Energy);
+                    var peak = Math.Max(nativeColor.R, Math.Max(nativeColor.G, nativeColor.B));
+                    var saturation = (peak - Math.Min(nativeColor.R, Math.Min(nativeColor.G, nativeColor.B))) / Math.Max(peak, .001f);
+                    var neutral = Math.Clamp((saturation - .10f) / .55f, 0f, 1f);
+                    neutral = 1f - neutral * neutral * (3f - 2f * neutral);
+                    shader.SetParameter("native_energy", native.Procedural ? 0f : native.Energy * neutral);
                     shader.SetParameter("native_falloff", native.Falloff);
                     shader.SetParameter("native_curve", native.Curve);
                 }
@@ -99,7 +92,7 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
                 var authored = new AuthoredBinding(Math.Clamp(source.Profile.Spill, 0f, 8f),
                     Math.Clamp(source.Profile.Reflection, 0f, 8f), source.Profile.EmissionSize.X,
                     source.Profile.EmissionSize, (int) source.Profile.Shape, source.Profile.WallMounted,
-                    source.Profile.Falloff, source.Profile.Indirect,
+                    source.Profile.Falloff, source.Profile.Indirect, _nativeWeight,
                     controls.Direct && controls.View != CinematicDebugView.Indirect,
                     controls.Indirect && controls.View != CinematicDebugView.Direct);
                 if (_authoredBindings[slot] != authored)
@@ -114,6 +107,7 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
                     shader.SetParameter("area_samples", _quality.Level >= 3 ? 5 : 3);
                     shader.SetParameter("light_falloff", Math.Clamp(authored.Falloff, 0.5f, 12f));
                     shader.SetParameter("indirect_strength", Math.Clamp(authored.Indirect, 0f, 2f));
+                    shader.SetParameter("native_replacement_weight", authored.NativeWeight);
                     shader.SetParameter("direct_enabled", authored.Direct);
                     shader.SetParameter("indirect_enabled", authored.IndirectEnabled);
                 }
@@ -123,7 +117,6 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
                     direction = source.Rotation.RotateVec(Vector2.UnitY);
                 shader.SetParameter("reflection_direction", direction);
             }
-            shader.SetParameter("native_pass", _nativeContribution);
             shader.SetParameter("reflection_pass", _reflections);
             if (_reflections)
             {
@@ -140,7 +133,7 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
 
     public void Dispose() => _shaders.Dispose();
 
-    private readonly record struct NativeBinding(Color Color, float Radius, float Energy, float Falloff, float Curve);
+    private readonly record struct NativeBinding(Color Color, float Radius, float Energy, float Falloff, float Curve, bool Procedural);
     private readonly record struct AuthoredBinding(float Spill, float Reflection, float Span, Vector2 Size,
-        int Shape, bool WallMounted, float Falloff, float Indirect, bool Direct, bool IndirectEnabled);
+        int Shape, bool WallMounted, float Falloff, float Indirect, float NativeWeight, bool Direct, bool IndirectEnabled);
 }

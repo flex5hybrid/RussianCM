@@ -10,7 +10,7 @@ uniform highp float spill_strength;
 uniform highp float reflection_strength;
 uniform highp float emitter_span;
 uniform bool reflection_pass;
-uniform bool native_pass;
+uniform highp float native_replacement_weight;
 uniform highp vec3 native_color;
 uniform highp float native_radius;
 uniform highp float native_energy;
@@ -60,7 +60,7 @@ void fragment()
     highp vec2 delta = world - source_position;
     highp float distance = length(delta);
     highp float edge = 1.0 - smoothstep(source_radius * 0.65, source_radius, distance);
-    // All contributions, including replacement of native light, stay inside the authored
+    // All additional contributions stay inside the authored
     // footprint. Reject its empty exterior before the relatively expensive FOV samples.
     if (edge < 0.00001)
         discard;
@@ -72,27 +72,9 @@ void fragment()
     highp float across = dot(delta, tangent);
     if (wall_mounted)
         mask *= smoothstep(-0.15, 0.12, along);
-    if (!native_pass && edge * mask < 0.00001)
+    if (edge * mask < 0.00001)
         discard;
-    // SWSL inlines this entry point into main(): return would skip Clyde's final color write.
-    // Keep both outputs in branches; helper functions may still return normally.
-    if (native_pass)
-    {
-        // Match the pinned Clyde light curve, inside the same bounded visibility geometry.
-        // This estimates only opted-in visible point lights; ambient is never a subtraction input.
-        highp float s = clamp(sqrt(dot(delta, delta) + 1.0) / max(native_radius, 0.001), 0.0, 1.0);
-        highp float s2 = s * s;
-        highp float curve = mix(s, s2, clamp(native_curve, 0.0, 1.0));
-        highp float value = clamp((1.0 - s2) * (1.0 - s2) / (1.0 + native_falloff * curve), 0.0, 1.0);
-        highp float saturation = (max(max(native_color.r, native_color.g), native_color.b)
-            - min(min(native_color.r, native_color.g), native_color.b))
-            / max(max(max(native_color.r, native_color.g), native_color.b), 0.001);
-        highp float neutral = 1.0 - smoothstep(0.10, 0.65, saturation);
-        highp float boundary = edge;
-        COLOR = vec4(native_color * value * native_energy
-            * sourceMaskRadius(world, 1.0, native_radius) * neutral * boundary, 1.0);
-    }
-    else if (reflection_pass)
+    if (reflection_pass)
     {
         if (!reflection_enabled)
             discard;
@@ -117,9 +99,11 @@ void fragment()
         {
             // Blend responses, not projection lengths. Interpolating the lobe's centre/length
             // across a wet boundary can create a second bright band at the edge of a pool.
-            highp float wet_width = max(0.23, emitter_span * 0.65 + roughness * 0.18);
-            highp vec2 film = vec2(across / wet_width, (along - 1.15) / 2.0);
-            lobe = mix(lobe, exp(-0.5 * dot(film, film)), wet);
+            highp float wet_width = max(0.14, emitter_span * 0.40 + roughness * 0.12)
+                * (1.0 + max(along, 0.0) * 0.13);
+            highp vec2 film = vec2(across / wet_width, (along - 0.85) / 1.1);
+            highp float film_tail = 1.0 - smoothstep(source_radius * 0.45, source_radius * 0.85, distance);
+            lobe = mix(lobe, exp(-0.5 * dot(film, film)) * film_tail, wet);
             // Only a small luminous patch is sampled, never the sprite's rectangular frame.
             // Roughness integrates five taps of the real current emissive field. The bounded
             // source mesh, wet receiver coverage and the original source mask still clip it.
@@ -131,7 +115,7 @@ void fragment()
             live += texture2D(emission_texture, sample_uv - step_uv).rgb * 0.2;
             live += texture2D(emission_texture, sample_uv + step_uv * 2.0).rgb * 0.1;
             live += texture2D(emission_texture, sample_uv - step_uv * 2.0).rgb * 0.1;
-            reflected_color = mix(reflected_color, reflected_color * 0.35 + live * 0.5, wet);
+            reflected_color = mix(reflected_color, reflected_color * 0.45 + live * 0.12, wet);
         }
         lobe *= smoothstep(0.02, 0.30, along);
         if (lobe * edge * mask < 0.0001)
@@ -157,7 +141,20 @@ void fragment()
         highp float bounce = indirect_enabled
             ? 1.0 / (1.0 + dot(bounce_delta, bounce_delta) * 7.0) : 0.0;
         bounce *= 1.0 - smoothstep(source_radius * 0.35, source_radius * 0.7, distance);
-        highp float amount = (spill_strength * direct * 2.5 + indirect_strength * bounce) * edge * mask;
-        COLOR = vec4(source_color * amount * source_energy, 1.0);
+        highp vec3 direct_radiance = source_color * spill_strength * direct * 2.5 * edge * mask * source_energy;
+        if (direct_enabled && native_energy > 0.0)
+        {
+            // Estimate only this neutral point light, in the same visibility mesh.
+            // Subtract from the added field, never from the original native light buffer.
+            highp float s = clamp(sqrt(dot(delta, delta) + 1.0) / max(native_radius, 0.001), 0.0, 1.0);
+            highp float s2 = s * s;
+            highp float curve = mix(s, s2, clamp(native_curve, 0.0, 1.0));
+            highp float value = clamp((1.0 - s2) * (1.0 - s2) / (1.0 + native_falloff * curve), 0.0, 1.0);
+            highp vec3 native_estimate = native_color * value * native_energy
+                * sourceMaskRadius(world, 1.0, native_radius) * edge;
+            direct_radiance = max(direct_radiance - native_estimate * native_replacement_weight, vec3(0.0));
+        }
+        highp vec3 indirect_radiance = source_color * indirect_strength * bounce * edge * mask * source_energy;
+        COLOR = vec4(direct_radiance + indirect_radiance, 1.0);
     }
 }

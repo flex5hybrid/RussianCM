@@ -128,9 +128,19 @@ def analyze(root, config, source_off=None, reference=True, swatches=False):
             tile_edges = (np.minimum(world_x % 1, 1 - world_x % 1) < .07) | (np.minimum(world_y % 1, 1 - world_y % 1) < .07)
             allowed &= ~tile_edges
         edge = allowed & (np.maximum(np.abs(dx), np.abs(dy)) > thresholds['straight_gradient'])
+        candidates = []
+        for orientation, scan in [('horizontal', edge), ('vertical', edge.T)]:
+            for line, values_on_line in enumerate(scan):
+                starts = np.flatnonzero(np.diff(np.r_[False, values_on_line, False].astype(np.int8)) == 1)
+                ends = np.flatnonzero(np.diff(np.r_[False, values_on_line, False].astype(np.int8)) == -1)
+                for start, end in zip(starts, ends):
+                    if end - start >= thresholds['straight_run_pixels']:
+                        candidates.append({'orientation': orientation, 'line': int(line),
+                                           'start': int(start), 'end_exclusive': int(end), 'pixels': int(end-start)})
         longest = max(max(map(run_length, edge)), max(map(run_length, edge.T)))
         row['straight_boundary_candidates'] = {'longest_run_pixels': longest,
-            'needs_visual_review': longest >= thresholds['straight_run_pixels']}
+            'needs_visual_review': longest >= thresholds['straight_run_pixels'],
+            'segments': sorted(candidates, key=lambda v: -v['pixels'])[:16]}
         if source_off is not None and quality >= 2:
             # Use native captures of the reflections debug view, whose HDR is tone mapped by
             # composite.swsl. Do not measure wrapped 8-bit copies of a raw float render target.

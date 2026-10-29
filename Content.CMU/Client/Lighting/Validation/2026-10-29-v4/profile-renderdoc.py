@@ -67,7 +67,7 @@ with open(os.path.join(root,'gpu-final-analysis.log'),'w',encoding='utf-8') as l
                 details.append([item['quality'], number, value.eventId,role,ms,parents.get(value.eventId,'').rstrip()])
             samples.append({'quality':item['quality'],'sample':number,'event_gpu_ms':total,'cmu_draw_clear_gpu_ms':own,'cmu_events':len(roles)})
             log.write(str(samples[-1])+'\n'); log.flush()
-            if item['quality']==2 and not hdr:
+            if item['quality'] in (2,3) and not any(h['quality'] == item['quality'] for h in hdr):
                 c.SetFrameEvent(last_event[0],True)
                 for tex in c.GetTextures():
                     name = names.get(str(tex.resourceId),'')
@@ -79,7 +79,7 @@ with open(os.path.join(root,'gpu-final-analysis.log'),'w',encoding='utf-8') as l
                             rgb = [uf(value&2047,6),uf((value>>11)&2047,6),uf((value>>22)&1023,5)]
                             nonfinite += sum(not math.isfinite(x) for x in rgb)
                             peaks = [max(peaks[i],rgb[i]) for i in range(3)]
-                        hdr.append({'target':name,'format':tex.format.Name(),'width':tex.width,'height':tex.height,'rgb_max':peaks,'nonfinite_channels':nonfinite})
+                        hdr.append({'quality':item['quality'],'target':name,'format':tex.format.Name(),'width':tex.width,'height':tex.height,'rgb_max':peaks,'nonfinite_channels':nonfinite})
             c.Shutdown(); cap.Shutdown()
         with open(os.path.join(root,'gpu-final-samples.json'),'w') as output: json.dump({'samples':samples,'hdr':hdr},output,indent=2)
         with open(os.path.join(root,'gpu-final-events.csv'),'w',newline='',encoding='utf-8') as output:

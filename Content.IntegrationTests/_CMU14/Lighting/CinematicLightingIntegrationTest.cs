@@ -298,6 +298,8 @@ public sealed class CinematicLightingIntegrationTest : GameTest
                     if (name != "cmu-cinematic-blockers" && name != "cmu-cinematic-materials")
                         Assert.That(format.ColorFormat, Is.EqualTo(RenderTargetColorFormat.R11FG11FB10F),
                             "Clyde Add uses DstAlpha: radiance must use HDR RGB so overlapping sources cannot amplify alpha.");
+                    if (name == "cmu-cinematic-emission")
+                        Assert.That(sample?.Filter, Is.False, "The reduced core retains the original RSI pixel edges.");
                     var real = clyde.CreateRenderTarget(size, format, sample, name);
                     var target = new Mock<IRenderTexture>();
                     target.SetupGet(t => t.Size).Returns(size);
@@ -314,6 +316,7 @@ public sealed class CinematicLightingIntegrationTest : GameTest
                 CinematicLightingQuality.For(2)));
             resources.EnsureSize(new Vector2i(65, 33), new MapId(1));
             Assert.That(resources.Pyramid[0].Size, Is.EqualTo(new Vector2i(33, 17)));
+            Assert.That(resources.Emission.Size, Is.EqualTo(new Vector2i(33, 17)));
             var clears = new List<Color?>();
             var drawing = new Mock<DrawingHandleWorld>(MockBehavior.Loose, Texture.White);
             drawing.Setup(h => h.RenderInRenderTarget(It.IsAny<IRenderTarget>(), It.IsAny<Action>(), It.IsAny<Color?>()))
@@ -325,17 +328,16 @@ public sealed class CinematicLightingIntegrationTest : GameTest
             resources.Material!.Render(resources.Materials!);
             resources.Contact!.Render(resources.Blockers);
             resources.Spill!.RenderIrradiance(resources.Irradiance!);
-            resources.Spill.RenderNativeContribution(resources.NativeContribution!);
             resources.Spill.RenderReflections(resources.Reflections!, resources.Materials!.Texture);
             resources.Atmosphere!.Render(resources.AtmosphereTarget!);
-            Assert.That(clears.Count, Is.EqualTo(resources.Pyramid.Length + 10));
+            Assert.That(clears.Count, Is.EqualTo(resources.Pyramid.Length + 9));
             Assert.That(clears.Count(clear => clear == null), Is.EqualTo(1),
                 "The contact B contribution must preserve the blocker R and receiver G channels.");
             foreach (var clear in clears)
                 Assert.That(clear, Is.AnyOf(null, CinematicRenderContext.ClearColor, CinematicRenderContext.RadianceClearColor),
                     "RGB data masks must not retain the white RGB channels of Color.Transparent.");
-            Assert.That(clears.Count(clear => clear == CinematicRenderContext.RadianceClearColor), Is.EqualTo(7),
-                "Three optical seeds, irradiance, native contribution, reflections and atmosphere use HDR RGB.");
+            Assert.That(clears.Count(clear => clear == CinematicRenderContext.RadianceClearColor), Is.EqualTo(6),
+                "Three optical seeds, irradiance, reflections and atmosphere use HDR RGB.");
             var count = targets.Count;
             resources.EnsureSize(new Vector2i(65, 33), new MapId(1));
             Assert.That(targets.Count, Is.EqualTo(count), "Steady rendering reuses its targets.");

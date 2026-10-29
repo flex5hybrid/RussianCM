@@ -6,10 +6,8 @@ blend_mode none;
 uniform sampler2D irradiance_texture;
 uniform sampler2D blocker_texture;
 uniform sampler2D native_light_texture;
-uniform sampler2D native_contribution_texture;
 uniform highp float local_exposure;
 uniform bool native_only;
-uniform bool direct_enabled;
 
 highp vec3 wallProbe(highp vec2 uv, highp vec2 offset)
 {
@@ -42,15 +40,11 @@ void fragment()
     highp float peak = max(max(radiance.r, radiance.g), radiance.b);
     // Leave untouched pixels in the original native target, including the exact edge samples.
     // Reading a reduced copy everywhere would unnecessarily filter light outside our footprint.
-    highp vec3 managed = texture2D(native_contribution_texture, uv).rgb;
-    if (peak < 0.0001 && max(max(managed.r, managed.g), managed.b) * local_exposure < 0.0001)
+    if (peak < 0.0001)
         discard;
     highp vec3 native = texture2D(native_light_texture, uv).rgb;
-    // Replace part of the modelled neutral point-light contribution with the compact authored
-    // field. This is source-local light redistribution, not exposure of the finished image.
-    // Retain at least a quarter of native lighting where hard and soft shadows differ.
-    if (direct_enabled)
-        native -= min(managed * 0.75 * clamp(local_exposure, 0.0, 1.0), native * 0.75);
+    // Irradiance already contains only the positive authored excess over the native model.
+    // Keep the original native field intact; no second per-source pass or subtraction target.
     // Native radiance keeps its own hue. Even a faint broad tail must not recolor the
     // neutral background; local color comes only from physically added source energy.
     // Added light remains independent from the retained native contribution.

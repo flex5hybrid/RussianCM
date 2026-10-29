@@ -35,14 +35,15 @@
           ],
           "delta_rgb": [
             -0.0246591814498718,
-            -0.025291840307178477,
+            -0.02529184030717848,
             -0.02398623044331989
           ]
         }
       },
       "straight_boundary_candidates": {
         "longest_run_pixels": 0,
-        "needs_visual_review": false
+        "needs_visual_review": false,
+        "segments": []
       },
       "checks": {
         "fov": true,
@@ -60,31 +61,103 @@
       "white_visible_fraction": 0.0,
       "regions": {
         "whole_stand": {
-          "mean_luminance": 0.037100925081857486,
-          "peak_luminance": 0.8126745386208976,
-          "p99_luminance": 0.7044633218654476,
-          "rms_contrast": 3.1770968412237655,
-          "contrast_ratio_to_off": 1.8971244851530757,
+          "mean_luminance": 0.029307225139862246,
+          "peak_luminance": 0.764035571656597,
+          "p99_luminance": 0.5432362493966825,
+          "rms_contrast": 3.2190346740440177,
+          "contrast_ratio_to_off": 1.9221666206225476,
           "mean_rgb": [
-            0.04029742881584662,
-            0.036723112743843066,
-            0.03143104544620222
+            0.03139068648847389,
+            0.029084517572426673,
+            0.02537836876199938
           ],
           "delta_rgb": [
-            0.015161805506569224,
-            0.011021949440245224,
-            0.007115310002815057
+            0.006255063179220843,
+            0.003383354268770876,
+            0.0010626333186033244
           ]
         }
       },
       "straight_boundary_candidates": {
         "longest_run_pixels": 56,
-        "needs_visual_review": true
+        "needs_visual_review": true,
+        "segments": [
+          {
+            "orientation": "horizontal",
+            "line": 133,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 134,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 135,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 136,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 137,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 138,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 139,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 140,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 141,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 142,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          }
+        ]
       },
       "source_off": {
-        "mean_positive_change": 0.00913909622559509,
+        "mean_positive_change": 0.009174106330655704,
         "peak_positive_change": 0.764035571656597,
-        "changed_pixels": 66916
+        "changed_pixels": 67146
       },
       "checks": {
         "fov": true,
@@ -103,31 +176,103 @@
       "white_visible_fraction": 0.0,
       "regions": {
         "whole_stand": {
-          "mean_luminance": 0.037094605898883866,
-          "peak_luminance": 0.8126745386208976,
-          "p99_luminance": 0.7044633218654476,
-          "rms_contrast": 3.1783455305079182,
-          "contrast_ratio_to_off": 1.8978701089516887,
+          "mean_luminance": 0.029317459782737778,
+          "peak_luminance": 0.764035571656597,
+          "p99_luminance": 0.5446177194050003,
+          "rms_contrast": 3.220826561146198,
+          "contrast_ratio_to_off": 1.9232366015095221,
           "mean_rgb": [
-            0.04028918038471027,
-            0.036716920013559515,
-            0.03142915450693526
+            0.03140101480541595,
+            0.029095011964454753,
+            0.025385754544758953
           ],
           "delta_rgb": [
-            0.015153557075432459,
-            0.011015756709961591,
-            0.007113419063547972
+            0.0062653914961628195,
+            0.0033938486607990865,
+            0.0010700191013623313
           ]
         }
       },
       "straight_boundary_candidates": {
         "longest_run_pixels": 56,
-        "needs_visual_review": true
+        "needs_visual_review": true,
+        "segments": [
+          {
+            "orientation": "horizontal",
+            "line": 133,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 134,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 135,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 136,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 137,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 138,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 139,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 140,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 141,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          },
+          {
+            "orientation": "horizontal",
+            "line": 142,
+            "start": 516,
+            "end_exclusive": 572,
+            "pixels": 56
+          }
+        ]
       },
       "source_off": {
-        "mean_positive_change": 0.009139212994821427,
+        "mean_positive_change": 0.009174601996415907,
         "peak_positive_change": 0.764035571656597,
-        "changed_pixels": 66805
+        "changed_pixels": 67109
       },
       "checks": {
         "fov": true,

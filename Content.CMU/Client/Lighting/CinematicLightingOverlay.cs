@@ -107,8 +107,7 @@ public sealed partial class CinematicLightingOverlay : Overlay
             return;
         resources.Bloom.Render(resources.Emission, resources.Pyramid, resources.Blockers.Texture,
             resources.InnerSeeds, resources.OuterSeeds, resources.Blockers);
-        resources.Spill!.RenderIrradiance(resources.Irradiance!);
-        resources.Spill.RenderNativeContribution(resources.NativeContribution!);
+        resources.Spill!.RenderIrradiance(resources.Irradiance!, Exposure);
         _lightResources = resources;
         resources.Frame.Render(resources.NativeLightCopy!, _copyLight);
         resources.Frame.Render(args.Viewport.LightRenderTarget, _drawLight);
@@ -123,11 +122,9 @@ public sealed partial class CinematicLightingOverlay : Overlay
         frame.BindFrame(shader);
         shader.SetParameter("irradiance_texture", _lightResources.Irradiance!.Texture);
         shader.SetParameter("native_light_texture", _lightResources.NativeLightCopy!.Texture);
-        shader.SetParameter("native_contribution_texture", _lightResources.NativeContribution!.Texture);
         shader.SetParameter("blocker_texture", _lightResources.Blockers.Texture);
         shader.SetParameter("local_exposure", Exposure);
         shader.SetParameter("native_only", _system.Controls.View == CinematicDebugView.Native);
-        shader.SetParameter("direct_enabled", _system.Controls.Direct);
         frame.Handle.UseShader(shader);
         frame.Handle.DrawRect(frame.Bounds, Color.White);
     }
@@ -235,8 +232,6 @@ public sealed partial class CinematicLightingOverlay : Overlay
         Copy("emission", resources.Emission);
         Copy("inner-seeds", resources.InnerSeeds);
         Copy("outer-seeds", resources.OuterSeeds);
-        if (resources.NativeContribution != null)
-            Copy("native-contribution", resources.NativeContribution);
         if (resources.Materials != null)
         {
             Copy("materials", resources.Materials);
