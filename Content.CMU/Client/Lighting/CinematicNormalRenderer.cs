@@ -1,6 +1,7 @@
 using System.Numerics;
 using Content.Client.CMU14.Lighting.Configuration;
 using Content.Shared.CMU14.Lighting;
+using Robust.Shared.Configuration;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
@@ -28,6 +29,7 @@ internal sealed class CinematicNormalRenderer : IDisposable
     private readonly CinematicRenderContext _frame;
     private readonly CinematicOcclusionRenderer _occlusion;
     private readonly CinematicLightingQuality _quality;
+    private readonly IConfigurationManager _config;
     private readonly ShaderInstance _capture;
     private readonly CinematicShaderPool _lights;
     private readonly HashSet<Entity<CMUCinematicNormalComponent>> _visible = new();
@@ -45,13 +47,15 @@ internal sealed class CinematicNormalRenderer : IDisposable
 
     public CinematicNormalRenderer(IEntityManager entities, IResourceCache textures,
         IPrototypeManager prototypes, CinematicRenderContext frame,
-        CinematicOcclusionRenderer occlusion, CinematicLightingQuality quality)
+        CinematicOcclusionRenderer occlusion, CinematicLightingQuality quality,
+        IConfigurationManager config)
     {
         _entities = entities;
         _textures = textures;
         _frame = frame;
         _occlusion = occlusion;
         _quality = quality;
+        _config = config;
         _lookup = entities.System<EntityLookupSystem>();
         _transforms = entities.System<SharedTransformSystem>();
         _capture = prototypes.Index<ShaderPrototype>("CMUCinematicNormalCapture").InstanceUnique();
@@ -287,6 +291,16 @@ internal sealed class CinematicNormalRenderer : IDisposable
         if (!_hasNormals)
             return;
 
+        // Read CVars once per light pass; these take effect without client recompilation.
+        // Clamp test inputs so extreme values cannot destabilize the HDR contribution.
+        var gain = ClampFinite(_config.GetCVar(CMUCinematicNormalCVars.Gain), 0f, 3f, 1f);
+        var height = ClampFinite(_config.GetCVar(CMUCinematicNormalCVars.Height), 0.05f, 3f, 0.45f);
+        var contrast = ClampFinite(_config.GetCVar(CMUCinematicNormalCVars.Contrast), 0f, 6f, 3f);
+        var flatness = ClampFinite(_config.GetCVar(CMUCinematicNormalCVars.Flatness), 0f, 1f, 0.7f);
+        var maxBoost = ClampFinite(_config.GetCVar(CMUCinematicNormalCVars.MaxBoost), 0f, 2f, 1f);
+        if (gain <= 0f || contrast <= 0f || maxBoost <= 0f)
+            return;
+
         for (var index = 0; index < Math.Min(_frame.Sources.Count, _lastMassMode ? MassSources : OptInSources); index++)
         {
             var source = _frame.Sources[index];
@@ -298,11 +312,18 @@ internal sealed class CinematicNormalRenderer : IDisposable
             _frame.BindFrame(shader);
             _frame.BindSource(shader, source);
             shader.SetParameter("normal_texture", _normalTexture);
-            shader.SetParameter("normal_light_strength", 0.4f);
+            shader.SetParameter("normal_light_strength", gain);
+            shader.SetParameter("normal_light_height", height);
+            shader.SetParameter("normal_light_contrast", contrast);
+            shader.SetParameter("normal_light_flatness", flatness);
+            shader.SetParameter("normal_light_max_boost", maxBoost);
             _frame.Handle.UseShader(shader);
             _occlusion.DrawMesh(mesh);
         }
     }
+
+    private static float ClampFinite(float value, float min, float max, float fallback) =>
+        float.IsFinite(value) ? Math.Clamp(value, min, max) : fallback;
 
     public void Dispose()
     {
