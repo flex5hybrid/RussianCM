@@ -51,7 +51,7 @@ public sealed partial class CinematicLightingSystem : EntitySystem
         base.Initialize();
         InitializeWater();
         Subs.CVar(_config, CCVars.CMUCinematicLighting, OnQualityChanged, true);
-        Subs.CVar(_config, CCVars.CMUCinematicNormals, OnNormalsChanged, true);
+        Subs.CVar(_config, CMUCinematicNormalCVars.Enabled, OnNormalsChanged, true);
     }
 
     private void OnNormalsChanged(bool enabled)
