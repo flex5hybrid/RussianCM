@@ -1,74 +1,106 @@
-# CMU generated normal maps (v1)
+# CMU generated normal maps — v2
 
-Generates deterministic **alpha-silhouette normal maps** offline for plain PNGs and regular RSI folders, and **commits them to Git**. The client does not regenerate maps during gameplay. Original assets are never modified. No RobustToolbox changes required.
+Offline, deterministic normal-map **asset pipeline** for SS14/CMU. Developers add a PNG or RSI, run this tool, inspect its generated map and commit it next to the source in Git. The game client does **not** need to generate normals at runtime. No RobustToolbox changes are required for this tool.
 
-## Install and test
+> The generated maps are approximations of painted 2D surface geometry. RGB pixels alone cannot reliably reconstruct true 3D shapes. In particular, painted highlights and dark lines are not guaranteed to be actual bumps or recesses.
 
-From the repository root:
+## Installation
 
-~~~sh
+From the repository root (Python 3.12 recommended):
+
+~~~shell
 python -m pip install -r Tools/normal_maps/requirements.txt
 python -m unittest discover -s Tools/normal_maps -p 'test_*.py'
 ~~~
 
-## Generate and commit
+## Generate and visually inspect one RSI
 
-Regenerate one RSI or individual PNG:
-
-~~~sh
-python Tools/normal_maps/generate.py --paths Content.CMU/Resources/Textures/CMU14/Items/laptop.rsi
+~~~shell
+python Tools/normal_maps/generate.py \
+  --paths Content.CMU/Resources/Textures/CMU14/Items/laptop.rsi \
+  --mode hybrid \
+  --profile equipment \
+  --preview-dir /tmp/cmu-normal-preview
 ~~~
 
-Or update only changed textures (including deletion and rename cleanup):
+Each preview includes the **original sprite**, the **generated normal map** and an **approximate directional relighting preview**. Only the first frame of up to 24 processed PNG sheets is previewed. The preview is diagnostic: it is **not the CMU light shader**.
 
-~~~sh
-python Tools/normal_maps/generate.py --changed-from origin/master
-~~~
-
-Review and commit BOTH the modified source and its generated output. CI checks changed source textures using:
-
-~~~sh
-python Tools/normal_maps/generate.py --check --changed-from origin/master
-~~~
-
-For a **separate, intentional rollout** of the entire preexisting asset collection, use --all. **Do not run it casually**: it may create thousands of files. Full --all --check additionally detects orphaned outputs, while changed-file CI checks only the sources modified by that PR.
-
-## File structure
-
-A normal RSI is mirrored under the same resource root's _GeneratedNormalMaps directory:
+Normal maps are created in parallel resource directories:
 
 ~~~text
 Content.CMU/Resources/Textures/CMU14/Items/laptop.rsi/
-  meta.json
-  laptop_off.png
-
+    meta.json
+    laptop_off.png
 Content.CMU/Resources/Textures/_GeneratedNormalMaps/CMU14/Items/laptop.rsi/
-  meta.json
-  laptop_off.png
+    meta.json
+    laptop_off.png
 ~~~
 
-Identical rules apply under Resources/Textures. Mirrored RSI folders preserve the original metadata, state names, source PNG sheet layout, animation frames, directions, dimensions, licensing, and alpha. The game can later access generated RSI states via its ordinary RSI resource loading. Standalone PNGs are mirrored as standalone PNGs.
+This also works for ordinary PNG files and textures in the upstream Resources/Textures root. RSI frame size, state names, directions, animation sheets and metadata are preserved. A normal sheet is computed **independently for each RSI frame** to prevent interpolation across neighbouring sprite frames.
 
-Interface, UI, HUD, icon, font, cursor, and logo folders are excluded by default. The first version supports regular .rsi directories and .png, **not .rsic**.
+## Generation modes
 
-## What is generated
+| Mode | Explanation |
+|---|---|
+| flat | Constant (128, 128, 255) for each visible pixel; preserves the original alpha |
+| bevel | Silhouette-only normal map from smoothed alpha (previous v1 behaviour) |
+| height | Internal relief estimated from multiscale local luminance and weak chromatic seam cues |
+| hybrid (default) | Alpha bevel **plus** internal detail and colour-boundary seams |
 
-Each RSI frame is processed separately so one frame cannot leak gradients into its neighbours. The generator blurs the **alpha silhouette**, estimates its X/Y gradient, converts it into a tangent-space unit normal and preserves the original alpha channel. A flat interior normally has RGB(128,128,255). For tuning:
+The internal-relief estimator uses a small blur minus a broad blur to suppress baked *large-scale* lighting gradients, dead-zones low-contrast noise, and adds low-amplitude inset seams at stronger colour transitions. It is intentionally much weaker than full 'brightness=height'. This approach makes opaque sprite interiors less featureless; however, **it can still produce false relief** from painted patterns, and there is no single correct reconstruction.
 
-- --bevel 1.25 controls how far the silhouette bevel extends.
-- --strength 5 controls how steeply the edge normal tilts.
+## Material profiles
 
-This is intentionally conservative: image brightness, painted shadows, highlights, and colours are not interpreted as object depth. The generator cannot recover real 3D geometry. More advanced authored normals and exclusions can be added later.
+--profile auto (default) guesses a safe detail multiplier by directory:
+- floor/tiles/terrain: very low detail and no silhouette bevel;
+- Mobs/Characters/Clothing: reduced interior detail;
+- Objects/Items/Structures/Doors/Vehicles: standard equipment detail;
+- other directories: generic detail.
 
-## Limitations and next stage
+For a specific item, force --profile equipment, --profile character, --profile floor or --profile generic. Profile selection does not alter the source image. Bevel mode on a fully opaque solid rectangle may still be flat if the source provides no alpha silhouette.
 
-- This PR **does not yet make lighting read the normals**. A normal buffer, height model, and normal-aware lighting shader are future work.
-- Existing asset normals are **not bulk-created** in this PR; only subsequently changed/selected files are handled.
-- For RSI assets, meta.json uses the real Robust format of a frame size object with x/y coordinates.
-- Generated results are source-code artifacts: changes to the algorithm may require intentional regeneration.
-- The generated data texture must be sampled as normal-vector data rather than colour (ensure suitable colour-space handling in the future renderer).
-- Automatically generated assets are derived works: original licensing and attribution still apply; the original meta.json is kept unmodified.
+## Tunable parameters
 
-## Contributor workflow
+~~~shell
+python Tools/normal_maps/generate.py \
+  --paths Content.CMU/Resources/Textures/CMU14/Items/laptop.rsi \
+  --mode hybrid --profile equipment \
+  --bevel 1.25 --strength 5 \
+  --detail-strength 2.2 --detail-radius 2.4 --edge-strength 0.16 \
+  --preview-dir /tmp/cmu-normal-preview
+~~~
 
-Add or update textures -> run the generator for the changed path -> inspect its PNGs -> commit both source and generated RSI/PNG -> CI verifies exact output. Missing/stale generated files fail CI. If an RSI is deleted, the generator removes its mirror.
+- --bevel: blur radius for alpha silhouette (0..16)
+- --strength: slope strength at alpha silhouette (0..100)
+- --detail-strength: amount of inferred inner relief (0..20)
+- --detail-radius: spatial scale for removing broad painted shading (0.5..16)
+- --edge-strength: amount of small recessed seams at chromatic edges (0..2)
+
+For noisy textures start by lowering detail-strength and edge-strength. For flat floor tiles force --profile floor. For assets where colour must **never** imply geometry use --mode bevel or --mode flat.
+
+## Incremental Git workflow / CI
+
+After editing your texture, update only the assets modified since the base branch:
+
+~~~shell
+python Tools/normal_maps/generate.py --changed-from origin/master
+python Tools/normal_maps/generate.py --check --changed-from origin/master
+~~~
+
+Commit BOTH source and generated assets. CI checks reproducibility at the decoded pixel level (rather than PNG compression bytes), and fails on missing or outdated normal maps for changed source textures. The workflow is read-only; it does not silently write commits into contributor branches.
+
+To process a particular directory use --paths with the directory; to intentionally generate the entire historical asset collection use --all. **Do not run --all casually**: it can add thousands of files. It also reconciles removed generated files. Use --check to verify without writing.
+
+Generated maps are stored inside _GeneratedNormalMaps under each of the existing texture roots. Interface, UI, HUD, icon, font, cursor and logo folders are excluded. Only regular .rsi and .png are supported in v2, not .rsic. Existing original files are never modified.
+
+## Future rendering integration
+
+This PR generates **assets**, not the lighting system that consumes them. To render them in CMU, the client must:
+1. resolve a normal RSI frame matching the source RSI state/direction/animation;
+2. ensure correct per-layer sorting, sprite flip/rotation, and linear normal data sampling;
+3. provide a normal buffer aligned with world-space pixels and an approximate light/surface height;
+4. incorporate normals into a directional/area-light shader and preserve hard FOV.
+
+**Do not enable every automatically generated normal map without reviewing representative lighting results.** Maps are a useful starting point, not authored 3D geometry.
+
+Art licensing and attributions remain those of the source asset; metadata is copied unchanged.
