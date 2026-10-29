@@ -1,0 +1,9 @@
+# Deliberately separate from live barbed-wire prototypes.
+# This test entity draws ordinary gameplay art; it changes no gameplay components.
+- type: entity
+  id: CMUCinematicNormalDemoWire
+  parent: BarbedWire1
+  suffix: normal-map lighting demo
+  components:
+  - type: CMUCinematicNormal
+    strength: 0.75
