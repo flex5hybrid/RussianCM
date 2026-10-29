@@ -213,7 +213,7 @@ public sealed partial class CinematicLightingOverlay : Overlay
         // Normal mapping stays presentation-only: it never modifies the native light map.
         // Perform this before releasing the shared visibility meshes used by its light pass.
         if (resources.NormalRenderer != null && resources.Normals != null && resources.NormalLight != null)
-            resources.NormalRenderer.Render(resources.Normals, resources.NormalLight);
+            resources.NormalRenderer.Render(resources.Normals, resources.NormalLight, _system.NormalsAll);
         resources.Occlusion.EndMeshes();
 
         var composite = resources.Composite;
