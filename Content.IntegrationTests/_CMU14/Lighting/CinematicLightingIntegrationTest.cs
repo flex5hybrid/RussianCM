@@ -268,7 +268,7 @@ public sealed class CinematicLightingIntegrationTest : GameTest
             resources.Material!.Render(resources.Materials!);
             resources.Spill!.RenderIrradiance(resources.Irradiance!);
             resources.Spill.RenderNativeContribution(resources.NativeContribution!);
-            resources.Spill.RenderReflections(resources.Reflections!, resources.Materials!.Texture, resources.Emission.Texture);
+            resources.Spill.RenderReflections(resources.Reflections!, resources.Materials!.Texture);
             resources.Atmosphere!.Render(resources.AtmosphereTarget!);
             Assert.That(clears.Count, Is.EqualTo(resources.Pyramid.Length + 7));
             foreach (var clear in clears)

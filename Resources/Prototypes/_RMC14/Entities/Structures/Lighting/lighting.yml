@@ -8,8 +8,8 @@
   description: A lighting fixture that is fitted with a bright fluorescent light tube. Looking at it for too long makes your eyes go watery.
   suffix: Always powered, DO NOT MAP
   components:
-  - type: CMUCinematicEmitter # CMU14: industrial tube signature, native cold colors remain authoritative.
-    profile: CMUIndustrial
+  - type: CMUCinematicEmitter # CMU14: restrained fluorescent balance; native tube colors remain authoritative.
+    profile: CMUFixture
   - type: Transform
     anchored: false
   - type: Physics

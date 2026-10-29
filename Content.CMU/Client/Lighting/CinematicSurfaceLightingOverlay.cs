@@ -1,3 +1,4 @@
+using Content.Client.Light;
 using Robust.Client.Graphics;
 using Robust.Shared.Enums;
 
@@ -17,7 +18,9 @@ public sealed class CinematicSurfaceLightingOverlay : Overlay
     public CinematicSurfaceLightingOverlay(CinematicLightingOverlay owner)
     {
         _owner = owner;
-        ZIndex = 100; // Native contact AO is already in the terrain image.
+        // Contact shading must attenuate the reflected field along with the floor beneath it.
+        // Drawing above native AO would paint bright specular light back over contact creases.
+        ZIndex = AfterLightTargetOverlay.ContentZIndex;
     }
 
     protected override bool BeforeDraw(in OverlayDrawArgs args) => _owner.Prepare(args, gatherSources: false);

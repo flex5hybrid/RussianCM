@@ -1,6 +1,5 @@
 using Content.Client.CMU14.Lighting.Configuration;
 using System.Numerics;
-using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Maths;
 using Robust.Shared.Prototypes;
@@ -15,22 +14,23 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
     private readonly CinematicOcclusionRenderer _occlusion;
     private readonly CinematicLightingQuality _quality;
     private readonly CinematicShaderPool _shaders;
-    private readonly SpriteSystem _sprites;
+    private readonly NativeBinding?[] _nativeBindings;
+    private readonly AuthoredBinding?[] _authoredBindings;
     private readonly Action _draw;
     private Texture _materials = default!;
-    private Texture _emission = default!;
     private bool _reflections;
     private bool _nativeContribution;
     private bool _bindShared;
 
-    public CinematicLightSpillRenderer(IEntityManager entities, IPrototypeManager prototypes, CinematicRenderContext frame,
+    public CinematicLightSpillRenderer(IPrototypeManager prototypes, CinematicRenderContext frame,
         CinematicOcclusionRenderer occlusion, CinematicLightingQuality quality)
     {
         _frame = frame;
         _occlusion = occlusion;
         _quality = quality;
-        _sprites = entities.System<SpriteSystem>();
         _shaders = new CinematicShaderPool(prototypes.Index(SpillShader), quality.Sources);
+        _nativeBindings = new NativeBinding?[quality.Sources];
+        _authoredBindings = new AuthoredBinding?[quality.Sources];
         _draw = Draw;
     }
 
@@ -39,16 +39,14 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
         _bindShared = true;
         _nativeContribution = false;
         _materials = _frame.Scene;
-        _emission = _frame.Scene;
         _reflections = false;
         _frame.Render(irradiance, _draw, CinematicRenderContext.RadianceClearColor);
     }
 
-    public void RenderReflections(IRenderTexture reflections, Texture materials, Texture emission)
+    public void RenderReflections(IRenderTexture reflections, Texture materials)
     {
         _nativeContribution = false;
         _materials = materials;
-        _emission = emission;
         _reflections = true;
         _frame.Render(reflections, _draw, CinematicRenderContext.RadianceClearColor);
     }
@@ -57,7 +55,7 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
     {
         _nativeContribution = true;
         _reflections = false;
-        _materials = _emission = _frame.Scene;
+        _materials = _frame.Scene;
         _frame.Render(target, _draw, CinematicRenderContext.RadianceClearColor);
     }
 
@@ -81,16 +79,29 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
                 // Reset texture references after resize, even for branches not sampling them.
                 shader.SetParameter("material_texture", _materials);
                 shader.SetParameter("scene_texture", _frame.Scene);
-                shader.SetParameter("emission_texture", _emission);
-                var nativeColor = Color.FromSrgb(source.NativeColor);
-                shader.SetParameter("native_color", new Vector3(nativeColor.R, nativeColor.G, nativeColor.B));
-                shader.SetParameter("native_radius", source.NativeRadius);
-                shader.SetParameter("native_energy", source.NativeEnergy);
-                shader.SetParameter("native_falloff", source.NativeFalloff);
-                shader.SetParameter("native_curve", source.NativeCurveFactor);
-                shader.SetParameter("spill_strength", Math.Clamp(source.Profile.Spill, 0f, 8f) * 0.28f);
-                shader.SetParameter("reflection_strength", Math.Clamp(source.Profile.Reflection, 0f, 8f));
-                shader.SetParameter("emitter_span", source.Profile.EmissionSize.X);
+                // SetParameter boxes scalar/vector values in the public shader API. Keep stable
+                // radiometry in bounded slot caches, while positions, masks and animation update.
+                var native = new NativeBinding(source.NativeColor, source.NativeRadius, source.NativeEnergy,
+                    source.NativeFalloff, source.NativeCurveFactor);
+                if (_nativeBindings[slot] != native)
+                {
+                    _nativeBindings[slot] = native;
+                    var nativeColor = Color.FromSrgb(native.Color);
+                    shader.SetParameter("native_color", new Vector3(nativeColor.R, nativeColor.G, nativeColor.B));
+                    shader.SetParameter("native_radius", native.Radius);
+                    shader.SetParameter("native_energy", native.Energy);
+                    shader.SetParameter("native_falloff", native.Falloff);
+                    shader.SetParameter("native_curve", native.Curve);
+                }
+                var authored = new AuthoredBinding(Math.Clamp(source.Profile.Spill, 0f, 8f) * 0.28f,
+                    Math.Clamp(source.Profile.Reflection, 0f, 8f), source.Profile.EmissionSize.X);
+                if (_authoredBindings[slot] != authored)
+                {
+                    _authoredBindings[slot] = authored;
+                    shader.SetParameter("spill_strength", authored.Spill);
+                    shader.SetParameter("reflection_strength", authored.Reflection);
+                    shader.SetParameter("emitter_span", authored.Span);
+                }
                 var direction = mesh.SurfaceDirection.LengthSquared() > 0f
                     ? mesh.SurfaceDirection : -Vector2.Normalize(_frame.WorldY);
                 shader.SetParameter("reflection_direction", direction);
@@ -101,14 +112,6 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
             {
                 shader.SetParameter("material_texture", _materials);
                 shader.SetParameter("scene_texture", _frame.Scene);
-                shader.SetParameter("emission_texture", _emission);
-                var useSprite = source.Sprite != null && !source.Profile.ProceduralEmission;
-                shader.SetParameter("sprite_reflection", useSprite);
-                var bounds = useSprite
-                    ? _sprites.CalculateBounds((source.Uid, source.Sprite!), source.EntityPosition,
-                        source.EntityRotation, _frame.Viewport.Eye!.Rotation).CalcBoundingBox()
-                    : Box2.CenteredAround(source.EmissionPosition, source.Profile.EmissionSize * 2f);
-                shader.SetParameter("emission_bounds", new Vector4(bounds.Left, bounds.Bottom, bounds.Right, bounds.Top));
             }
             _frame.Handle.UseShader(shader);
             _occlusion.DrawMesh(mesh);
@@ -117,4 +120,7 @@ internal sealed class CinematicLightSpillRenderer : IDisposable
     }
 
     public void Dispose() => _shaders.Dispose();
+
+    private readonly record struct NativeBinding(Color Color, float Radius, float Energy, float Falloff, float Curve);
+    private readonly record struct AuthoredBinding(float Spill, float Reflection, float Span);
 }

@@ -16,6 +16,7 @@ internal sealed class CinematicBloomRenderer : IDisposable
     private readonly CinematicOcclusionRenderer _occlusion;
     private readonly CinematicLightingQuality _quality;
     private readonly CinematicShaderPool _seeds;
+    private readonly SeedBinding?[] _seedBindings;
     private readonly ShaderInstance _downsample;
     private readonly Action _drawSeeds;
     private readonly Action _drawDownsample;
@@ -29,6 +30,7 @@ internal sealed class CinematicBloomRenderer : IDisposable
         _occlusion = occlusion;
         _quality = quality;
         _seeds = new CinematicShaderPool(prototypes.Index(EmissionShader), quality.Sources);
+        _seedBindings = new SeedBinding?[quality.Sources];
         _downsample = prototypes.Index(DownsampleShader).InstanceUnique();
         _drawSeeds = DrawSeeds;
         _drawDownsample = DrawDownsample;
@@ -53,16 +55,24 @@ internal sealed class CinematicBloomRenderer : IDisposable
         {
             if (source.Sprite == null && !source.Profile.ProceduralEmission)
                 continue;
-            var seed = _seeds.Get(slot++);
+            var seed = _seeds.Get(slot);
             _frame.BindFrame(seed);
             _frame.BindSource(seed, source);
-            seed.SetParameter("emission_size", source.Profile.EmissionSize);
-            seed.SetParameter("emission_region", source.Profile.EmissionRegion);
-            seed.SetParameter("emission_threshold", source.Profile.Threshold);
-            seed.SetParameter("emission_chroma", source.Profile.EmissionChroma);
-            seed.SetParameter("core_strength", source.Profile.Core);
-            seed.SetParameter("texture_weight", source.Profile.TextureColor);
-            seed.SetParameter("bloom_strength", source.Profile.Bloom);
+            var binding = new SeedBinding(source.Profile.EmissionSize, source.Profile.EmissionRegion,
+                source.Profile.Threshold, source.Profile.EmissionChroma, source.Profile.Core,
+                source.Profile.TextureColor, source.Profile.Bloom);
+            if (_seedBindings[slot] != binding)
+            {
+                _seedBindings[slot] = binding;
+                seed.SetParameter("emission_size", binding.Size);
+                seed.SetParameter("emission_region", binding.Region);
+                seed.SetParameter("emission_threshold", binding.Threshold);
+                seed.SetParameter("emission_chroma", binding.Chroma);
+                seed.SetParameter("core_strength", binding.Core);
+                seed.SetParameter("texture_weight", binding.TextureColor);
+                seed.SetParameter("bloom_strength", binding.Bloom);
+            }
+            slot++;
             var sprite = source.Sprite;
             var useSprite = sprite != null && !source.Profile.ProceduralEmission;
             seed.SetParameter("sprite_emission", useSprite);
@@ -126,4 +136,7 @@ internal sealed class CinematicBloomRenderer : IDisposable
         _seeds.Dispose();
         _downsample.Dispose();
     }
+
+    private readonly record struct SeedBinding(Vector2 Size, Vector4 Region, float Threshold,
+        float Chroma, float Core, float TextureColor, float Bloom);
 }

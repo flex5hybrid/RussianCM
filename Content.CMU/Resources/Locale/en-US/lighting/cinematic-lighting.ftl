@@ -15,7 +15,7 @@ cmu-cinematic-demo-description = Create an isolated cinematic lighting demonstra
 cmu-cinematic-demo-help = cmu_cinematic_demo [player] [industrial | industrial-static | almayer | reference | view x y | capture | reload | watch]: industrial set, Almayer, or the original StableGarrison reference hall; view moves the camera, capture saves a comparison. Requires Mapping.
 cmu-cinematic-demo-created = Lighting demo created: map { $map }, grid { $grid }. Compare cinematic quality 0, 1, 2, 3 from the same position. Terminals, metal, tile, glass, a puddle, floodlights, and an alert beacon are included.
 cmu-cinematic-capture-description = Capture all four cinematic lighting presets and their frame times.
-cmu-cinematic-capture-help = cmu_cinematic_capture [3-60 seconds per preset | stop]: saves actual world screenshots and frame times; temporarily disables VSync and the FPS limit, then restores graphics settings. Keep the camera still.
+cmu-cinematic-capture-help = cmu_cinematic_capture [3-60 seconds per preset | stop]: measures all four presets first, then saves screenshots and diagnostic fields separately; temporarily disables VSync and the FPS limit, then restores graphics settings. Keep the camera still. Server: cmu_cinematic_demo [player] capture [seconds].
 cmu-cinematic-capture-started = Comparison capture armed. Close the console and keep the camera still. Waiting for a lit main viewport; results will be saved in client user data under cinematic-lighting.
 cmu-cinematic-capture-already-running = A lighting capture is already running. Use cmu_cinematic_capture stop first.
 

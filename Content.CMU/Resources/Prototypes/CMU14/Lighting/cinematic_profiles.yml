@@ -2,22 +2,22 @@
 # Saturated native alert colors are preserved by the neutral-only fixture tint.
 - type: cmuCinematicLightProfile
   id: CMUFixture
-  color: "#FFD2A0"
-  tint: 0.7
-  threshold: 0.32
+  color: "#FFE6C4"
+  tint: 0.35
+  threshold: 0.64
   core: 5
   emissionSize: 0.55, 0.10
   bloom: 1.1
-  spill: 1.8
+  spill: 1.45
   reflection: 1.6
-  radius: 5
+  radius: 4.4
   atmosphere: 0.045
 
 - type: cmuCinematicLightProfile
   id: CMUIndustrial
   color: "#FFBA72"
   tint: 0.85
-  threshold: 0.28
+  threshold: 0.64
   core: 5.5
   emissionSize: 0.65, 0.10
   bloom: 1.2
@@ -65,9 +65,9 @@
   core: 3.4
   textureColor: 1.0
   bloom: 0.7
-  spill: 0.65
+  spill: 0.9
   reflection: 0.9
-  radius: 2.0
+  radius: 3.2
   requireLight: false
 
 - type: cmuCinematicLightProfile
@@ -82,7 +82,7 @@
   bloom: 0.8
   spill: 0.75
   reflection: 1.0
-  radius: 2.0
+  radius: 2.8
   requireLight: false
 
 - type: cmuCinematicLightProfile

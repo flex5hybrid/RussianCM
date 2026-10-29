@@ -70,11 +70,19 @@ public sealed partial class CMUCinematicDemoCommand : LocalizedEntityCommands
         }
         if (mode == "capture" && session != null)
         {
+            var seconds = 6;
+            if (args.Length > 3 || args.Length == 3
+                && (!int.TryParse(args[2], NumberStyles.Integer, CultureInfo.InvariantCulture, out seconds)
+                    || seconds is < 3 or > 60))
+            {
+                shell.WriteError(Help);
+                return;
+            }
             if (session.AttachedEntity is { } viewer
                 && EntityManager.GetComponent<TransformComponent>(viewer).MapUid is { } reviewMap
                 && EntityManager.HasComponent<CMUCinematicReviewSceneComponent>(reviewMap))
                 _map.SetPaused(EntityManager.GetComponent<TransformComponent>(viewer).MapID, true);
-            _console.RemoteExecuteCommand(session, "cmu_cinematic_capture 6");
+            _console.RemoteExecuteCommand(session, $"cmu_cinematic_capture {seconds}");
             return;
         }
         if (mode == "view" && args.Length == 4 && session?.AttachedEntity is { } actor

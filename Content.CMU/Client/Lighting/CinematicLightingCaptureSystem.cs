@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
+using System.Numerics;
 using Content.Client.Viewport;
 using Content.Shared.CCVar;
 using Robust.Client.Graphics;
@@ -8,6 +9,8 @@ using Robust.Shared;
 using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 using Robust.Shared.ContentPack;
+using Robust.Shared.Map;
+using Robust.Shared.Maths;
 using Robust.Shared.Utility;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
@@ -24,7 +27,7 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
     [Dependency] private IResourceManager _resources = default!;
     [Dependency] private IEyeManager _eyes = default!;
     [Dependency] private ILogManager _logs = default!;
-    private readonly List<double> _samples = new(65536);
+    private readonly List<double> _samples = new();
     private readonly List<string> _rows = new(4);
     private readonly CopyPixelsDelegate<Rgba32> _screenshot;
     private bool _active;
@@ -32,12 +35,18 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
     private bool _waitingForImage;
     // Viewport screenshot completion is delivered by the renderer's frame loop.
     private bool _advancePending;
+    private bool _imagesOnly;
+    private double _worstFrame;
+    private double _worstFrameCpu;
+    private double _maxCpu;
     private int _quality;
     private int _seconds;
     private int _originalQuality;
     private int _originalMaxFps;
     private bool _originalVsync;
     private long _started;
+    private DateTime _stageUtc;
+    private CaptureState? _scene;
     private long _lastFrame;
     private long _frames;
     private double _total;
@@ -70,6 +79,9 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
         _originalVsync = _config.GetCVar(CVars.DisplayVSync);
         _seconds = seconds;
         _rows.Clear();
+        _samples.EnsureCapacity(65536);
+        _imagesOnly = false;
+        _scene = null;
         _directory = new ResPath($"/cinematic-lighting/{DateTime.UtcNow:yyyyMMdd-HHmmss}");
         _resources.UserData.CreateDir(_directory);
         _active = true;
@@ -102,6 +114,11 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
                     Stop("No lit main viewport became available within 180 seconds.");
                 return;
             }
+            if (_scene is { } fixedScene && ReadScene() != fixedScene)
+            {
+                Stop("Camera or lighting settings changed during comparison; capture discarded.");
+                return;
+            }
             if (_waitingForImage)
             {
                 if (_advancePending)
@@ -110,7 +127,6 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
                     _advancePending = false;
                     if (_quality == 3)
                     {
-                        WriteReport();
                         Stop("Completed all four presets.");
                     }
                     else
@@ -127,11 +143,32 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
                 _lastFrame = now;
                 return;
             }
+            // Finish every timing stage before any PNG encoding or GPU readback. Diagnostic
+            // targets requested after High used to complete during the following Ultra stage.
+            if (_imagesOnly)
+            {
+                CaptureImages();
+                return;
+            }
+            _scene ??= ReadScene();
+            if (_scene == null || _quality >= 2
+                && EntityManager.System<CinematicLightingSystem>().LastFrame.Sources == 0)
+            {
+                Stop("No stable lit main viewport; capture discarded.");
+                return;
+            }
             var milliseconds = Stopwatch.GetElapsedTime(_lastFrame, now).TotalMilliseconds;
             _lastFrame = now;
             _frames++;
             _total += milliseconds;
-            _cpuTotal += EntityManager.System<CinematicLightingSystem>().LastFrame.CpuMilliseconds;
+            var cpu = EntityManager.System<CinematicLightingSystem>().LastFrame.CpuMilliseconds;
+            _cpuTotal += cpu;
+            _maxCpu = Math.Max(_maxCpu, cpu);
+            if (milliseconds > _worstFrame)
+            {
+                _worstFrame = milliseconds;
+                _worstFrameCpu = cpu;
+            }
             if (_samples.Count < 65536)
                 _samples.Add(milliseconds);
             if (elapsed < _seconds + 2)
@@ -139,21 +176,23 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
 
             _samples.Sort();
             var stats = EntityManager.System<CinematicLightingSystem>().LastFrame;
-            var row = $"preset={_quality} frames={_frames} samples={_samples.Count} mean_ms={F(_total / Math.Max(1, _frames))} "
+            var row = $"preset={_quality} stage_utc={_stageUtc:O} frames={_frames} samples={_samples.Count} mean_ms={F(_total / Math.Max(1, _frames))} "
                 + $"p50_ms={F(Percentile(0.5))} p95_ms={F(Percentile(0.95))} p99_ms={F(Percentile(0.99))} "
                 + $"cinematic_cpu_ms={F(_cpuTotal / Math.Max(1, _frames))} sources={stats.Sources} "
-                + $"beams={stats.AtmosphereSources} targets={stats.Targets} target_bytes={stats.TargetBytes}";
+                + $"beams={stats.AtmosphereSources} targets={stats.Targets} target_bytes={stats.TargetBytes} "
+                + $"worst_ms={F(_worstFrame)} worst_cmu_ms={F(_worstFrameCpu)} max_cmu_ms={F(_maxCpu)} "
+                + $"exposure={F(_scene.Value.Exposure)} atmosphere={F(_scene.Value.Atmosphere)} native_scale={F(_scene.Value.NativeScale)}";
             _rows.Add(row);
             Log(row);
-            if (_eyes.MainViewport is not ScalingViewport viewport)
+            if (_quality < 3)
+                BeginStage(_quality + 1);
+            else
             {
-                Stop("The main viewport changed during capture.");
-                return;
+                WriteReport();
+                _imagesOnly = true;
+                Log("Measurements complete without image readbacks. Starting image-only stages.");
+                BeginStage(0);
             }
-            _waitingForImage = true;
-            if (_quality == 2)
-                EntityManager.System<CinematicLightingSystem>().CaptureDebug(SaveDebugImage);
-            viewport.Screenshot(_screenshot);
         }
         catch (Exception exception)
         {
@@ -169,9 +208,40 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
         _frames = 0;
         _total = 0;
         _cpuTotal = 0;
+        _worstFrame = _worstFrameCpu = _maxCpu = 0;
         _started = _lastFrame = Stopwatch.GetTimestamp();
-        Log($"Warming preset {quality}; measuring {_seconds} seconds after two-second warmup.");
+        _stageUtc = DateTime.UtcNow;
+        Log(_imagesOnly ? $"Capturing preset {quality}; two-second warmup."
+            : $"Warming preset {quality}; measuring {_seconds} seconds after two-second warmup.");
     }
+
+    private void CaptureImages()
+    {
+        if (_eyes.MainViewport is not ScalingViewport viewport)
+        {
+            Stop("The main viewport changed during capture.");
+            return;
+        }
+        _waitingForImage = true;
+        if (_quality == 2)
+            EntityManager.System<CinematicLightingSystem>().CaptureDebug(SaveDebugImage);
+        viewport.Screenshot(_screenshot);
+    }
+
+    private CaptureState? ReadScene()
+    {
+        if (_eyes.MainViewport is not ScalingViewport { Eye: { } eye } viewport)
+            return null;
+        return new CaptureState(eye.Position, eye.Rotation, eye.Zoom, eye.Offset, viewport.PixelSize,
+            eye.DrawLight, eye.DrawFov, _config.GetCVar(CCVars.CMUCinematicExposure),
+            _config.GetCVar(CCVars.CMUCinematicAtmosphere), _config.GetCVar(CCVars.CMUCinematicAOIntensity),
+            _config.GetCVar(CCVars.CMUCinematicAORadius), _config.GetCVar(CCVars.AmbientOcclusion),
+            _config.GetCVar(CVars.LightResolutionScale));
+    }
+
+    private readonly record struct CaptureState(MapCoordinates Position, Angle Rotation, Vector2 Zoom, Vector2 Offset,
+        Vector2i PixelSize, bool DrawLight, bool DrawFov, float Exposure, float Atmosphere, float AOIntensity,
+        float AORadius, bool AOEnabled, float NativeScale);
 
     private double Percentile(double fraction) => _samples.Count == 0 ? 0
         : _samples[Math.Clamp((int) Math.Ceiling((_samples.Count - 1) * fraction), 0, _samples.Count - 1)];
@@ -223,6 +293,8 @@ public sealed partial class CinematicLightingCaptureSystem : EntitySystem
         using var writer = new StreamWriter(output);
         writer.WriteLine("Actual native client frame intervals. Not isolated GPU timing. Keep camera and scene fixed.");
         writer.WriteLine("Two-second warmup per preset; up to 65536 interval samples per preset. Images use native viewport resolution.");
+        writer.WriteLine("All timing stages precede image-only stages. No diagnostic readback/PNG encoding during measurements.");
+        writer.WriteLine($"Fixed capture state: {_scene}");
         foreach (var row in _rows)
             writer.WriteLine(row);
     }

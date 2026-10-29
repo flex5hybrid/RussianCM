@@ -143,7 +143,7 @@ public sealed partial class CinematicLightingOverlay : Overlay
             return;
         var frame = resources.Frame;
         resources.Material!.Render(resources.Materials!);
-        resources.Spill!.RenderReflections(resources.Reflections!, resources.Materials!.Texture, resources.Emission.Texture);
+        resources.Spill!.RenderReflections(resources.Reflections!, resources.Materials!.Texture);
         var shader = resources.SurfaceComposite!;
         frame.BindFrame(shader);
         shader.SetParameter("target_size", (Vector2) args.Viewport.Size);

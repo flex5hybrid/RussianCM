@@ -56,7 +56,7 @@ internal sealed class CinematicViewportResources : IDisposable
         if (quality.SurfaceEffects)
         {
             Material = new CinematicMaterialRenderer(entities, prototypes, tiles, Frame);
-            Spill = new CinematicLightSpillRenderer(entities, prototypes, Frame, Occlusion, quality);
+            Spill = new CinematicLightSpillRenderer(prototypes, Frame, Occlusion, quality);
             Atmosphere = new CinematicAtmosphereRenderer(entities, config, prototypes, Frame, Occlusion, quality);
             SurfaceComposite = prototypes.Index(SurfaceShader).InstanceUnique();
             LightComposite = prototypes.Index(LightShader).InstanceUnique();

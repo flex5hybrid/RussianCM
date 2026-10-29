@@ -15,7 +15,7 @@ cmu-cinematic-demo-description = Создать отдельное помеще�
 cmu-cinematic-demo-help = cmu_cinematic_demo [игрок] [industrial | industrial-static | almayer | reference | view x y | capture | reload | watch]: промышленная сцена, Almayer или зал исходного референса StableGarrison; view меняет позицию камеры, capture сохраняет сравнение. Требуется Mapping.
 cmu-cinematic-demo-created = Демонстрационная сцена создана: карта { $map }, грид { $grid }. Сравните качество освещения 0, 1, 2, 3 с одной позиции. В комнате есть терминалы, металл, кафель, стекло, лужа, прожекторы и аварийный маяк.
 cmu-cinematic-capture-description = Снять игровые кадры и замерить время кадра для четырёх режимов освещения.
-cmu-cinematic-capture-help = cmu_cinematic_capture [3-60 секунд на режим | stop]: сохраняет настоящие кадры мира и замеры; временно отключает VSync и лимит FPS, затем восстанавливает графические настройки. Не двигайте камеру.
+cmu-cinematic-capture-help = cmu_cinematic_capture [3-60 секунд на режим | stop]: сначала измеряет четыре режима, затем отдельно сохраняет кадры и диагностические поля; временно отключает VSync и лимит FPS, затем восстанавливает графические настройки. Не двигайте камеру. Серверный вызов: cmu_cinematic_demo [игрок] capture [секунды].
 cmu-cinematic-capture-started = Сравнительный захват подготовлен. Закройте консоль и не двигайте камеру. Ожидается освещённый основной вид; результаты появятся в пользовательской папке клиента cinematic-lighting.
 cmu-cinematic-capture-already-running = Захват освещения уже запущен. Сначала выполните cmu_cinematic_capture stop.
 
