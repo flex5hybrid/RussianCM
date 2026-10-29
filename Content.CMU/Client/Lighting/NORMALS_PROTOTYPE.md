@@ -8,8 +8,8 @@ This is an **opt-in experimental renderer** for CMU Cinematic Lighting V4, not a
 2. The client finds a matching generated RSI using the path transformation:
    /Textures/CMU14/Items/laptop.rsi -> /Textures/_GeneratedNormalMaps/CMU14/Items/laptop.rsi.
 3. It samples the current normal RSI state, animation frame, and direction and draws each enabled sprite layer into a **world-oriented** RGBA normal target. Rotated / mirrored sprite axes are transformed into a common world basis.
-4. A separate high-dynamic-range target accumulates a *positive directional excess* from up to eight existing cinematic lights using the same visibility polygon and light masks as the V4 spill renderer.
-5. The final V4 composite adds this weak extra response to scene RGB only where native FOV / non-space stencil allows it. Native lighting is neither modified nor subtracted. Quality Off and the CVar Off retain the original path.
+4. A separate high-dynamic-range target accumulates tunable directional highlights from up to eight cinematic lights in explicit mode or 16 in mass mode, using the same visibility polygon and light masks as the V4 spill renderer.
+5. The final V4 composite adds this configurable extra response to scene RGB only where native FOV / non-space stencil allows it. Native lighting is neither modified nor subtracted. Quality Off and the CVar Off retain the original path.
 
 The renderer supports **two client-only modes**, both off by default:
 
@@ -74,15 +74,31 @@ cmu_cinematic_stats
 
 `cmu_cinematic_stats` reports `selected`, `rendered`, `layers` for the normal pass. If rendered is zero, either no normal RSI matches the scene or there are no visible eligible sprites. Test moving the camera and moving lamps independently, comparing to `cvar cmu.lighting.cinematic_normals_all false` (explicit only) and `cvar cmu.lighting.cinematic_normals false` (fully disabled).
 
+### Real-time normal-light tuning
+
+The normal renderer exposes five client-only CVars. They are read each light pass, so changing them in the client console takes effect without a C# rebuild:
+
+~~~text
+cvar cmu.lighting.cinematic_normals_gain 1.25
+cvar cmu.lighting.cinematic_normals_height 0.45
+cvar cmu.lighting.cinematic_normals_contrast 3.0
+cvar cmu.lighting.cinematic_normals_flatness 0.7
+cvar cmu.lighting.cinematic_normals_max_boost 1.0
+~~~
+
+Defaults are gain 1.0, height 0.45, contrast 3.0, flatness 0.7, max boost 1.0. For a *strict* per-pixel directional difference, set flatness to 1.0. Lower flatness intentionally introduces a baseline glow; using it as a relief diagnostic can be misleading. Compare `cmu_cinematic_debug NormalLight` and `final` against `cvar cmu.lighting.cinematic_normals false`; leave normals disabled by default on production clients.
+
+For a stronger but bounded experiment, try gain 1.5 / contrast 4.0. If the result becomes noisy or washed out, return to gain 0.8 / contrast 2.0; reduce height towards 0.3 to emphasize the side-facing response. Values are clamped client-side.
+
 **Performance:** start with High (2), compare against Off at the same camera position; profile GPU time independently because `cmu_cinematic_stats` CPU time is not a GPU timer. Do not enable the bulk setting on live rounds before measuring scene-correctness and performance.
 
 ## Designed boundaries / known limitations
 
 - This is **not** full PBR or global illumination, and it deliberately does not cast new shadows from fake height maps.
-- The normal-aware effect is a weak additive orientation highlight, not a physically conserved re-lighting model.
+- The normal-aware effect is an additive orientation highlight, not a physically conserved re-lighting model. High gain/contrast or flatness below 1 may brighten entire sprite faces instead of producing only relief; tune and compare in final mode.
 - Only opt-in sprites participate unless the mass CVar is enabled. The mass test is capped at 256 sprites / 16 lights and may not exactly reproduce native sprite depth order for composites.
 - The source is an approximate height-from-image normal generator. Its output is not true geometric ground truth.
-- Local fixture height is a constant approximation in normal-light.swsl. Accurate per-object and per-lamp heights are future work.
+- Local fixture height is a tunable approximation (CVar). Accurate per-object and per-lamp heights are future work.
 - World-space basis transforms and sRGB decoding need visual checking with real image/video captures, especially mirrored sprites and different GPU drivers.
 - The example wire prototype does not have its generated RSI committed; generate it explicitly using the script in PR #575 before using the wire demo.
 
