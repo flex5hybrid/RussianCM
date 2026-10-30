@@ -168,6 +168,12 @@ public sealed partial class RMCPlaytimeStatsWindow : FancyWindow
         _cmuSilverTime = TimeSpan.FromHours(_config.GetCVar(AU14CCVars.PlaytimeMedalSilverHours));
         _cmuGoldTime = TimeSpan.FromHours(_config.GetCVar(AU14CCVars.PlaytimeMedalGoldHours));
         _cmuPlatinumTime = TimeSpan.FromHours(_config.GetCVar(AU14CCVars.PlaytimeMedalPlatinumHours));
+        // RuMC edit Start
+        _cmuRubyTime = TimeSpan.FromHours(_config.GetCVar(AU14CCVars.PlaytimeMedalRubyHours));
+        _cmuAmethystTime = TimeSpan.FromHours(_config.GetCVar(AU14CCVars.PlaytimeMedalAmethystHours));
+        _cmuEmeraldTime = TimeSpan.FromHours(_config.GetCVar(AU14CCVars.PlaytimeMedalEmeraldHours));
+        _cmuPrismaticTime = TimeSpan.FromHours(_config.GetCVar(AU14CCVars.PlaytimeMedalPrismaticHours));
+        // RuMC edit End
         // cmu edit end
         _rubyTime = TimeSpan.FromHours(_config.GetCVar(RMCCVars.RMCPlaytimeRubyMedalTimeHours));
         _emeraldTime = TimeSpan.FromHours(_config.GetCVar(RMCCVars.RMCPlaytimeEmeraldMedalTimeHours));
@@ -189,9 +195,26 @@ public sealed partial class RMCPlaytimeStatsWindow : FancyWindow
     private TimeSpan _cmuSilverTime;
     private TimeSpan _cmuGoldTime;
     private TimeSpan _cmuPlatinumTime;
+    // RuMC edit Start
+    private TimeSpan _cmuRubyTime;
+    private TimeSpan _cmuAmethystTime;
+    private TimeSpan _cmuEmeraldTime;
+    private TimeSpan _cmuPrismaticTime;
+    // RuMC edit End
+
 
     private RMCPlaytimeMedalType? CMUGetMedalType(TimeSpan playtime)
     {
+        // RuMC edit Start
+        if (playtime >= _cmuPrismaticTime)
+            return RMCPlaytimeMedalType.Prismatic;
+        if (playtime >= _cmuEmeraldTime)
+            return RMCPlaytimeMedalType.Emerald;
+        if (playtime >= _cmuAmethystTime)
+            return RMCPlaytimeMedalType.Amethyst;
+        if (playtime >= _cmuRubyTime)
+            return RMCPlaytimeMedalType.Ruby;
+        // RuMC edit End
         if (playtime >= _cmuPlatinumTime)
             return RMCPlaytimeMedalType.Platinum;
         if (playtime >= _cmuGoldTime)
