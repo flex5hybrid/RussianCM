@@ -331,7 +331,7 @@
       state: helmet
 
 - type: entity
-  parent: RMCHelmetGarbNightVision
+  parent: [ RMCHelmetGarbNightVision, RuMCBatteryDrainSight ] # RuMC edit
   id: CMULACNHelmetGarbNightVision
   name: NV-2 aircrew night vision goggles
   description: A flip-down night vision mount issued to LACN aircrew. Clip it into a helmet and pull it down to see in the dark.

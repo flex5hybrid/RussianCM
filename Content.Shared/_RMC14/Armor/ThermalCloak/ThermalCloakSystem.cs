@@ -5,6 +5,7 @@ using Content.Shared._RMC14.Weapons.Ranged.IFF;
 using Content.Shared._RMC14.Xenonids.Devour;
 using Content.Shared._RMC14.Xenonids.Parasite;
 using Content.Shared._RMC14.Xenonids.Projectile;
+using Content.Shared._RuMC14.BatteryDrain; // RuMC edit
 using Content.Shared.Actions;
 using Content.Shared.Actions.Components;
 using Content.Shared.Humanoid;
@@ -163,6 +164,8 @@ public sealed partial class ThermalCloakSystem : EntitySystem
             InitializeCloakUserOpacity(user, ent.Comp, activeInvisibility);
 
             ent.Comp.Enabled = true;
+            var toggled = new RuMCBatteryDrainActiveChangedEvent(true); // RuMC edit
+            RaiseLocalEvent(ent, ref toggled); // RuMC edit
             turnInvisible.Enabled = true;
             Dirty(ent.Owner, ent.Comp);
             Dirty(user, turnInvisible);
@@ -198,6 +201,8 @@ public sealed partial class ThermalCloakSystem : EntitySystem
             invisible.Opacity = 1;
             Dirty(user, invisible);
             ent.Comp.Enabled = false;
+            var toggled = new RuMCBatteryDrainActiveChangedEvent(false); // RuMC edit
+            RaiseLocalEvent(ent, ref toggled); // RuMC edit
             turnInvisible.Enabled = false;
 
             Dirty(ent.Owner, ent.Comp);
