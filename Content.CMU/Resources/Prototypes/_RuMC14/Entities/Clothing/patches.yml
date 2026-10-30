@@ -19,7 +19,7 @@
 - type: entity
   parent: RMCPatchBase
   id: RuMCPatchBEARHammer
-  name: BEAR patch 'Hammer'
+  name: BEAR patch
   description: A skull to remember. Red lines to fear. No mercy. No questions. Only results.
   components:
   - type: Sprite
@@ -70,4 +70,24 @@
   - type: HelmetAccessory
     rsi:
       sprite: _RuMC14/Clothing/Patches/VDV_alt.rsi
+      state: helmet
+
+##NorcommLiu
+
+- type: entity
+  parent: RMCPatchBase
+  id: RuMCPatchNoLu
+  name: Norcomm Liu patch
+  description: Norcomm Liu patch, this one belongs to the Norcomm company.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/Patches/NorcommLiu.rsi
+    state: icon
+  - type: UniformAccessory
+    playerSprite:
+      sprite: _RuMC14/Clothing/Patches/NorcommLiu.rsi
+      state: patch
+  - type: HelmetAccessory
+    rsi:
+      sprite: _RuMC14/Clothing/Patches/NorcommLiu.rsi
       state: helmet

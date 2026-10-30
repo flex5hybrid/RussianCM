@@ -1,0 +1,149 @@
+- type: job
+  parent: CMJobBase
+  id: RuMCUPPSOFCommander
+  roundSide: ThirdParty
+  roundForce: UPP
+  roundRole: RuMCUPPSOFCommander
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: spp_sl_a
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuMCSquadSOF
+  - type: Skills
+    skills:
+      RMCSkillCqc: 3
+      RMCSkillPowerLoader: 2
+      RMCSkillEngineer: 2
+      RMCSkillConstruction: 2
+      RMCSkillFirearms: 3
+      RMCSkillMeleeWeapons: 3
+      RMCSkillMedical: 3
+      RMCSkillPilot: 2
+      RMCSkillPolice: 2
+      RMCSkillFireman: 3
+      RMCSkillVehicles: 3
+      RMCSkillJtac: 3
+      RMCSkillEndurance: 3
+      RMCSkillLeadership: 3
+  - type: EquipEntityPreset
+    preset: RuMCSOFOfficerPreset
+  - type: JobPrefix
+    prefix: rumc-job-prefix-commander
+  - type: MarineOrders
+  - type: RMCTrackable
+  - type: RMCPointing
+  - type: Language
+    spokenLanguages:
+    - Polish
+    - English
+    - Russian
+    - Spanish
+    - Mandarin
+    - German
+    understoodLanguages:
+    - Polish
+    - English
+    - Russian
+    - Spanish
+    - Mandarin
+    - German
+    currentLanguage: Russian
+    defaultLanguage: Russian
+
+  name: Commander
+  description: SOF Commander
+  playTimeTracker: RuMCJobUPPSOFCommander
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    UPP_Plutonowy:
+      entity: AU14ChevronUPPNIPlutonowy
+      requirements: []
+    UPP_Sergeant:
+      entity: AU14ChevronUPPNISergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFCommander
+        time: 1800 # 0.5 hours
+    UPP_SeniorSergeant:
+      entity: AU14ChevronUPPNISeniorSergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFCommander
+        time: 5400 # 1.5 hours
+    UPP_JuniorLieutenant:
+      entity: AU14ChevronUPPNIJuniorLieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFCommander
+        time: 7200 # 2 hours
+    UPP_Lieutenant:
+      entity: AU14ChevronUPPNILieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFCommander
+        time: 10800 # 3 hours
+  spawnMenuRoleName: SOF Commander
+  startingGear: RuMCGearUPPSOFbase_COM
+  greeting: rumc-SOF-greeting
+  icon: "RuMCJobIconUPPSOFCommander"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforCommand
+  - AU14GovforSquad
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicUPPSOF
+  id: RuMCJobUPPSOFCommander
+  name: SOF Commander
+  components:
+  - type: EquipEntityPreset
+    preset: RuMCSOFOfficerPreset
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuMCSquadSOF
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: SOF Commander
+    description: You are part of a UPP! Not one step back!
+    job: RuMCUPPSOFCommander
+    raffle:
+      settings: short
+
+- type: startingGear
+  parent: RuMCGearUPPSOFbaseCOM
+  id: RuMCGearUPPSOFbase_COM
+  equipment:
+    id: RuCMIDCardUPPSOFCommander
+    ears: RuMCHeadsetSOF
+    suitstorage: RMCWeaponRifleAK4047Tactical
+  storage:
+    back:
+    - RuMCirpUPP
+    - AU14PacketGrenadeHighExplosiveUPPFilled
+    - AU14GrenadeSmokeUPP
+    - RMCExplosiveBreachingCharge
+    - RMCDrinkAlcoholVodka
+    - RMCDrinkAlcoholVodka
+  inhand:
+    - RuMCirpUPP
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconUPPSOFCommander
+  icon:
+    sprite: _RuMC14/Interface/upp_icons.rsi
+    state: UPP_com
+
+# Time tracker
+
+- type: playTimeTracker
+  id: RuMCJobUPPSOFCommander

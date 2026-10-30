@@ -524,9 +524,7 @@
     - name: au14-vendor-section-fatigues
       choices: { CMUPlatoonAirCrewFatigues: 1 }
       entries:
-      - id: RuMCUniformBEAR
-      - id: RuMCUniformBEAR_Black
-      - id: RuMCUniformBEAR_Gray
+      - id: RuMCUPPFatiguesPilot
     - name: au14-vendor-section-body-armor
       choices: { CMUPlatoonAirCrewVest: 1 }
       entries:
@@ -545,10 +543,7 @@
     - name: au14-vendor-section-headgear
       choices: { CMUPlatoonAirCrewHeadgear: 1 }
       entries:
-      - id: RuMCBEARBoonieBlack
-      - id: RuMCBEARBoonieBrown
-      - id: RuMCBEARCapBlack
-      - id: RuMCBEARCapBrown
+      - id: RuMCUPPPilotHelmet
     - name: au14-vendor-section-webbings
       choices: { CMUPlatoonAirCrewWebbings: 1 }
       entries:
@@ -1471,7 +1466,11 @@
       - id: RuMCUPPNavalInfantryHeavyHelmet2
         amount: 4
       - id: RuMCUPPArmorCrew
-        amount: 10
+        amount: 4
+      - id: RuMCUPPCrewHelmet
+        amount: 4
+      - id: RuMCUPPFatiguesCrew
+        amount: 4
     - name: Radio Equipment
       entries:
       - id: ANPRC117GRadio

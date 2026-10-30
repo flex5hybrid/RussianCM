@@ -42,7 +42,7 @@
     recoilUnwielded: 5
     scatterWielded: 10
     scatterUnwielded: 22
-    baseFireRate: 5
+    baseFireRate: 5.5
     modifiers:
       FullAuto:
         maxScatterModifier: 15

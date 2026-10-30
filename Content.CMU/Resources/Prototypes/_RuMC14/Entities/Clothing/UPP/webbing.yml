@@ -1,0 +1,10 @@
+#Norcomm Liu
+
+- type: entity
+  parent: RMCOuterClothingExternalWebbing
+  id: RuMCOuterClothingExternalWebbingNoLu
+  name: Norcomm Liu utility webbing
+  description: Standard-issue utility webbing for Norcomm Liu personnel. Designed to carry tools, spare parts, and personal equipment during long shifts. Practical, durable, and marked with the corporate insignia.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/NorcommLiu/webbing/PIONER_external_webbing.rsi

@@ -51,11 +51,11 @@
     recoilUnwielded: 4
     scatterWielded: 4
     scatterUnwielded: 11
-    baseFireRate: 4
+    baseFireRate: 4.25
     burstScatterMult: 1
   - type: RMCWeaponAccuracy
-    accuracyMultiplier: 1.3
-    accuracyMultiplierUnwielded: 0.65
+    accuracyMultiplier: 1.25
+    accuracyMultiplierUnwielded: 0.8
   - type: ItemSlots
     slots:
       gun_magazine:

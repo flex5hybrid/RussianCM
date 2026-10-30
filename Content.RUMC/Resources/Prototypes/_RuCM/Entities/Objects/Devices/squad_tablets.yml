@@ -1,0 +1,21 @@
+- type: entity
+  parent: BaseItem
+  id: UPPSquadSpecializationTablet
+  name: UPP squad specialization tablet
+  description: A tactical tablet for squad leaders to choose a squad doctrine.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Devices/command_tablet.rsi
+    state: cotablet
+  - type: Item
+    size: Small
+  - type: ActivatableUI
+    key: enum.SquadSpecializationUI.Key
+  - type: UserInterface
+    interfaces:
+      enum.SquadSpecializationUI.Key:
+        type: SquadSpecializationTabletBui
+  - type: SquadSpecializationTablet
+    faction: UPP
+  - type: Corrodible
+    isCorrodible: false

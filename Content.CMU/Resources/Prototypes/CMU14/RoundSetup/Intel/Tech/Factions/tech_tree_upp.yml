@@ -228,6 +228,30 @@
           icon:
             sprite: _RMC14/Interface/tech_tree.rsi
             state: marine
+        - name: SOF Moscow assault Team
+          description: Summon a SOF Moscow assault team.
+          cost: 35
+          events:
+          - !type:TechPartySpawnEvent
+            thirdPartyId: Moscow
+          - !type:TechAnnounceEvent
+            author: cmu-tech-author-intel-operations
+            message: A SOF Moscow assault team has been contracted for the operation.
+          icon:
+            sprite: _RMC14/Interface/tech_tree.rsi
+            state: weapon
+        - name: VDV Vimpel assault Team
+          description: Summon a full VDV Vimpel assault team.
+          cost: 35
+          events:
+          - !type:TechPartySpawnEvent
+            thirdPartyId: Vimpel
+          - !type:TechAnnounceEvent
+            author: cmu-tech-author-intel-operations
+            message: A VDV Vimpel assault team has been contracted for the operation.
+          icon:
+            sprite: _RMC14/Interface/tech_tree.rsi
+            state: weapon
         - name: cmu-tech-upp-bear-skala
           description: cmu-tech-upp-bear-skala-desc
           cost: 22
@@ -300,6 +324,18 @@
           - !type:TechAnnounceEvent
             author: cmu-tech-author-intel-operations
             message: cmu-tech-upp-bear-chtorm-announce
+          icon:
+            sprite: _RMC14/Interface/tech_tree.rsi
+            state: weapon
+        - name: VDV Zvezda assault Team
+          description: Summon a full VDV Zvezda assault team.
+          cost: 65
+          events:
+          - !type:TechPartySpawnEvent
+            thirdPartyId: Zvezda
+          - !type:TechAnnounceEvent
+            author: cmu-tech-author-intel-operations
+            message: A VDV Zvezda assault team has been contracted for the operation.
           icon:
             sprite: _RMC14/Interface/tech_tree.rsi
             state: weapon

@@ -127,6 +127,7 @@
   equipment:
     id: RuCMIDCardUPPBEARCommander
     ears: RuMCHeadsetBEARGROZA
+    suitstorage: RuMCWeaponRifleAK13Tactical
   storage:
     back:
     - RMCLaserDesignator

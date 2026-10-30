@@ -43,6 +43,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Content.Shared._RMC14.Marines.Roles.Ranks;
+using Content.Shared._RMC14.Marines.Squads.Specialization;
 using Content.Shared.Storage.EntitySystems;
 using Content.Shared.Storage;
 using Content.Shared._RMC14.Cryostorage;
@@ -82,6 +83,7 @@ public abstract partial class SharedCMAutomatedVendorSystem : EntitySystem
     [Dependency] private SharedWebbingSystem _webbing = default!;
     [Dependency] private ThrowingSystem _throwingSystem = default!;
     [Dependency] private SharedRankSystem _rank = default!;
+    [Dependency] private SharedSquadSpecializationSystem _squadSpecialization = default!;
     [Dependency] private Content.Shared.CMU14.Kitchen.CMUFoodlineSystem _cmuFoodline = default!; // cmu edit
 
     // TODO RMC14 make this a prototype
@@ -453,6 +455,13 @@ public abstract partial class SharedCMAutomatedVendorSystem : EntitySystem
         var entry = section.Entries[args.Entry];
         if (entry.Amount is <= 0)
             return;
+
+        if (!IsSpecializationAllowed(actor, section.SquadSpecializations, section.ExcludeSquadSpecializations) ||
+            !IsSpecializationAllowed(actor, entry.SquadSpecializations, entry.ExcludeSquadSpecializations))
+        {
+            _popup.PopupEntity(Loc.GetString("rmc-squad-specialization-not-available"), vendor, actor);
+            return;
+        }
 
         if (!_prototypes.TryIndex(entry.Id, out var entity))
         {
@@ -826,9 +835,16 @@ public abstract partial class SharedCMAutomatedVendorSystem : EntitySystem
             return false;
         }
 
-        var entry = vendor.Comp.Sections[sectionIndex].Entries[entryIndex];
+        var section = vendor.Comp.Sections[sectionIndex];
+        var entry = section.Entries[entryIndex];
         if (entry.Amount is <= 0 || !_prototypes.TryIndex(entry.Id, out var entity))
             return false;
+
+        if (!IsSpecializationAllowed(actor, section.SquadSpecializations, section.ExcludeSquadSpecializations) ||
+            !IsSpecializationAllowed(actor, entry.SquadSpecializations, entry.ExcludeSquadSpecializations))
+        {
+            return false;
+        }
 
         if (entry.Amount != null)
         {
@@ -879,6 +895,22 @@ public abstract partial class SharedCMAutomatedVendorSystem : EntitySystem
         return true;
     }
     // cmu edit end
+
+    public bool IsSpecializationAllowed(EntityUid actor, List<ProtoId<SquadSpecializationPrototype>> required, List<ProtoId<SquadSpecializationPrototype>> excluded)
+    {
+        if (required.Count == 0 && excluded.Count == 0)
+            return true;
+
+        var userSpec = _squadSpecialization.GetSquadSpecialization(actor);
+
+        if (required.Count > 0 && (userSpec == null || !required.Contains(userSpec.Value)))
+            return false;
+
+        if (excluded.Count > 0 && userSpec != null && excluded.Contains(userSpec.Value))
+            return false;
+
+        return true;
+    }
 
     private void Vend(EntityUid vendor, EntityUid player, EntProtoId toVend, Vector2 offset, SlotFlags? replaceSlot = null)
     {

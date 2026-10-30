@@ -1,4 +1,5 @@
 using Content.Shared._RMC14.Marines.Roles.Ranks;
+using Content.Shared._RMC14.Marines.Squads.Specialization;
 using Content.Shared.Inventory;
 using Content.Shared.Roles;
 using Robust.Shared.Prototypes;
@@ -43,6 +44,12 @@ public sealed partial class CMVendorSection
     public List<string> Holidays = new();
 
     [DataField]
+    public List<ProtoId<SquadSpecializationPrototype>> SquadSpecializations = new();
+
+    [DataField]
+    public List<ProtoId<SquadSpecializationPrototype>> ExcludeSquadSpecializations = new();
+
+    [DataField]
     public bool HasBoxes;
 }
 
@@ -77,6 +84,12 @@ public sealed partial record CMVendorEntry
 
     [DataField]
     public bool Recommended;
+
+    [DataField]
+    public List<ProtoId<SquadSpecializationPrototype>> SquadSpecializations = new();
+
+    [DataField]
+    public List<ProtoId<SquadSpecializationPrototype>> ExcludeSquadSpecializations = new();
 
     [DataField]
     public bool Mandatory;

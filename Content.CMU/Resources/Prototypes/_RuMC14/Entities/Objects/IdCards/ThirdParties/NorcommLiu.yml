@@ -1,0 +1,35 @@
+- type: entity
+  parent: CMIDCardBase
+  categories: [ HideSpawnMenu ]
+  id: RuCMIDCardUPPNorcommChief
+  name: UPP Liquidator Commander ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPNorcommChief
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPNorcommSpec
+  categories: [ HideSpawnMenu ]
+  name: UPP Liquidator Machinegunner ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPNorcommSpec
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPNorcommTech
+  categories: [ HideSpawnMenu ]
+  name: UPP Liquidator Rifleman ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPNorcommTech
+  - type: ItemIFF
+    factions:
+    - GOVFOR

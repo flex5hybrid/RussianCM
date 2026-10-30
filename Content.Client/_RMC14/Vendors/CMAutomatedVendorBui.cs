@@ -2,6 +2,7 @@ using System.Linq;
 using Content.Client.CMU14.Yautja;
 using Content.Shared._RMC14.Holiday;
 using Content.Shared._RMC14.Marines.Roles.Ranks;
+using Content.Shared._RMC14.Marines.Squads.Specialization;
 using Content.Shared._RMC14.Medical.Refill;
 using Content.Shared._RMC14.Vendors;
 using Content.Shared.Mind;
@@ -30,6 +31,7 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
     private readonly SharedMindSystem _mind;
     private readonly SharedRankSystem _rank;
     private readonly SharedRMCHolidaySystem _rmcHoliday;
+    private readonly SharedSquadSpecializationSystem _squadSpec;
 
     private CMAutomatedVendorWindow? _window;
 
@@ -39,6 +41,7 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
         _mind = EntMan.System<SharedMindSystem>();
         _rmcHoliday = EntMan.System<SharedRMCHolidaySystem>();
         _rank = EntMan.System<SharedRankSystem>();
+        _squadSpec = EntMan.System<SharedSquadSpecializationSystem>();
     }
 
     protected override void Open()
@@ -96,7 +99,7 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
             for (var entryIndex = 0; entryIndex < section.Entries.Count; entryIndex++)
             {
                 var entry = section.Entries[entryIndex];
-                var uiEntry = new CMAutomatedVendorEntry();
+                var uiEntry = new CMAutomatedVendorEntry { Entry = entry };
 
                 if (_prototype.TryIndex(entry.Id, out var entity))
                 {
@@ -239,7 +242,21 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
                 validHoliday = true;
         }
 
-        return validJob && validHoliday && validRank;
+        var validSpec = true;
+        if (section.SquadSpecializations.Count > 0 || section.ExcludeSquadSpecializations.Count > 0)
+        {
+            var userSpec = _player.LocalEntity != null
+                ? _squadSpec.GetSquadSpecialization(_player.LocalEntity.Value)
+                : null;
+
+            if (section.SquadSpecializations.Count > 0 && (userSpec == null || !section.SquadSpecializations.Contains(userSpec.Value)))
+                validSpec = false;
+
+            if (section.ExcludeSquadSpecializations.Count > 0 && userSpec != null && section.ExcludeSquadSpecializations.Contains(userSpec.Value))
+                validSpec = false;
+        }
+
+        return validJob && validHoliday && validRank && validSpec;
     }
 
     private void OnButtonPressed(int sectionIndex, int entryIndex, List<int> linkedEntryIndexes)
@@ -251,6 +268,27 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
     private void OnSearchChanged(LineEditEventArgs args)
     {
         ApplySearchFilter(args.Text);
+    }
+
+    private bool IsEntrySpecializationValid(CMVendorEntry? entry)
+    {
+        if (entry == null)
+            return true;
+
+        if (entry.SquadSpecializations.Count == 0 && entry.ExcludeSquadSpecializations.Count == 0)
+            return true;
+
+        var userSpec = _player.LocalEntity != null
+            ? _squadSpec.GetSquadSpecialization(_player.LocalEntity.Value)
+            : null;
+
+        if (entry.SquadSpecializations.Count > 0 && (userSpec == null || !entry.SquadSpecializations.Contains(userSpec.Value)))
+            return false;
+
+        if (entry.ExcludeSquadSpecializations.Count > 0 && userSpec != null && entry.ExcludeSquadSpecializations.Contains(userSpec.Value))
+            return false;
+
+        return true;
     }
 
     private void ApplySearchFilter(string? text)
@@ -268,6 +306,12 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
             {
                 if (entriesControl is not CMAutomatedVendorEntry entry)
                     continue;
+
+                if (!IsEntrySpecializationValid(entry.Entry))
+                {
+                    entry.Visible = false;
+                    continue;
+                }
 
                 if (string.IsNullOrWhiteSpace(text))
                     entry.Visible = true;
@@ -318,6 +362,7 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
             var section = vendor.Sections[sectionIndex];
             var uiSection = (CMAutomatedVendorSection) _window.Sections.GetChild(sectionIndex);
             uiSection.Label.SetMessage(GetSectionName(user, section));
+            uiSection.Visible = IsSectionValid(section);
 
             var sectionDisabled = false;
             if (section.Choices is { } choices)
@@ -334,6 +379,13 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
             {
                 var entry = section.Entries[entryIndex];
                 var uiEntry = (CMAutomatedVendorEntry) uiSection.Entries.GetChild(entryIndex);
+
+                if (!IsEntrySpecializationValid(entry))
+                {
+                    uiEntry.Visible = false;
+                    continue;
+                }
+
                 var personalRemaining = entry.MaxPerUser is { } maxPerUser
                     ? maxPerUser - (user?.PurchaseCounts.GetValueOrDefault(entry.Id.Id) ?? 0)
                     : (int?) null;

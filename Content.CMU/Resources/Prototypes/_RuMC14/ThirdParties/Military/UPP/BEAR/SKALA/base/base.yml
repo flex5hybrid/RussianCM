@@ -6,26 +6,22 @@
   - type: EntityPreset
     randomGearOther:
     -
-      - [ RuMCBEARCapBrown, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
-      - [ RuMCBEARCapBrown, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves ]
-      - [ RuMCBEARCapBlack, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
-      - [ RuMCBEARCapBlack, RMCBootsSPP, CMHandsBrown ]
-      - [ RuMCBEARBoonieBrown, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
-      - [ RuMCBEARBoonieBrown, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves ]
-      - [ RuMCBEARBoonieBlack, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
-      - [ RuMCBEARBoonieBlack, RMCBootsSPP, CMHandsBrown ]
-      - [ RuMCInfantryHelmetBEARFull, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
-      - [ RuMCBEARInfantryHelmet, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves ]
-      - [ RuMCInfantryHelmetBEARFull, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
-      - [ RuMCBEARInfantryHelmet, RMCBootsSPP, CMHandsBrown ]
-      - [ RuMCInfantryHelmetBEARFull, RMCBootsSPPBlack, AU14PVEHandsFingerlessBlackGloves ]
-      - [ RuMCBEARInfantryHelmet, RMCBootsSPPBlack, AU14PVEHandsFingerlessBrownGloves ]
-      - [ RuMCInfantryHelmetBEARFull, RMCBootsSPP, AU14PVEHandsInsulatedBlackMarine ]
-      - [ RuMCBEARInfantryHelmet, RMCBootsSPP, CMHandsBrown ]
+      - [ RuMCBEARCapBrown]
+      - [ RuMCBEARCapBlack]
+      - [ RuMCBEARBoonieBrown]
+      - [ RuMCBEARBoonieBlack]
+      - [ RuMCInfantryHelmetBEARFull]
+      - [ RuMCBEARInfantryHelmet]
+    -
+      - [ CMHandsBrown]
+      - [ AU14PVEHandsInsulatedBlackMarine]
+      - [ AU14PVEHandsFingerlessBrownGloves]
+      - [ AU14PVEHandsFingerlessBlackGloves]
+    -
+      - [ RMCBootsSPPBlack]
+      - [ RMCBootsSPP]
     randomWeapon:
-    - [ RuMCSniperRifleSVAROG, RuMCUniformBlackBEARFull, RuMCUPPNavalInfantryBeltPistolFull, RuMCPouchMagazineSVAROGBEARFull, ]
-    - [ RuMCSniperRifleSVAROG, RuMCUniformGrayBEARFull, RuMCUPPNavalInfantryBeltPistolFull, RuMCPouchMagazineSVAROGBEARFull, ]
-    - [ RuMCSniperRifleSVAROG, RuMCUniformBEARFull, RuMCUPPNavalInfantryBeltPistolFull, RuMCPouchMagazineSVAROGBEARFull, ]
+    - [ RuMCUniformBlackBEARFull, RuMCUPPNavalInfantryBeltPistolFull, RuMCPouchMagazineSVAROGFull, ]
     tryEquipRandomWeapon: true
 
 - type: entity
@@ -45,8 +41,8 @@
 
 - type: entity
   parent: RuMCUPPPouchMagazineLarge
-  id: RuMCPouchMagazineSVAROGBEARFull
-  suffix: RuMC, FULL, BEAR
+  id: RuMCPouchMagazineSVAROGFull
+  suffix: RuMC, FULL
   components:
   - type: StorageFill
     contents:

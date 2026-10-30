@@ -125,6 +125,7 @@
   equipment:
     id: RuCMIDCardUPPBEARMedic
     ears: RuMCHeadsetBEAR
+    suitstorage: RuMCWeaponRifleAK13Tactical_alt2
   storage:
     back:
     - RuMCirpUPP

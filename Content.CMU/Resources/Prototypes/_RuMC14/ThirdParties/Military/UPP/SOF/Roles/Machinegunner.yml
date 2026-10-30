@@ -1,0 +1,134 @@
+- type: job
+  parent: CMJobBase
+  id: RuMCUPPSOFMachinegunner
+  roundSide: ThirdParty
+  roundForce: UPP
+  roundRole: RuMCUPPSOFMachinegunner
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: spp_sl_a
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuMCSquadSOF
+  - type: Skills
+    skills:
+      RMCSkillCqc: 3
+      RMCSkillEngineer: 2
+      RMCSkillConstruction: 2
+      RMCSkillFirearms: 2
+      RMCSkillSmartGun: 1
+      RMCSkillMeleeWeapons: 3
+      RMCSkillMedical: 2
+      RMCSkillFireman: 2
+      RMCSkillEndurance: 3
+      RMCSkillJtac: 2
+  - type: EquipEntityPreset
+    preset: RuMCSOFMachinegunnerPreset
+  - type: JobPrefix
+    prefix: rumc-job-prefix-SOF
+  - type: MarineOrders
+  - type: RMCTrackable
+  - type: RMCPointing
+  - type: Language
+    spokenLanguages:
+    - Russian
+    - German
+    understoodLanguages:
+    - Russian
+    - German
+    currentLanguage: Russian
+    defaultLanguage: Russian
+
+  name: Machinegunner
+  description: SOF Machinegunner
+  playTimeTracker: RuMCJobUPPSOFMachinegunner
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    UPP_Plutonowy:
+      entity: AU14ChevronUPPNIPlutonowy
+      requirements: []
+    UPP_Sergeant:
+      entity: AU14ChevronUPPNISergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFMachinegunner
+        time: 1800 # 0.5 hours
+    UPP_SeniorSergeant:
+      entity: AU14ChevronUPPNISeniorSergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFMachinegunner
+        time: 5400 # 1.5 hours
+    UPP_JuniorLieutenant:
+      entity: AU14ChevronUPPNIJuniorLieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFMachinegunner
+        time: 7200 # 2 hours
+    UPP_Lieutenant:
+      entity: AU14ChevronUPPNILieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFMachinegunner
+        time: 10800 # 3 hours
+  spawnMenuRoleName: SOF Machinegunner
+  startingGear: RuMCGearUPPSOFbase_HEAVY
+  greeting: rumc-SOF-greeting
+  icon: "RuMCJobIconUPPSOFMachinegunner"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforSquad
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicUPPSOF
+  id: RuMCJobUPPSOFMachinegunner
+  name: SOF Machinegunner
+  components:
+  - type: EquipEntityPreset
+    preset: RuMCSOFMachinegunnerPreset
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuMCSquadSOF
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: SOF Machinegunner
+    description: You are part of a UPP! Not one step back!
+    job: RuMCUPPSOFMachinegunner
+    raffle:
+      settings: short
+
+- type: startingGear
+  parent: RuMCGearUPPSOFbaseHEAVY
+  id: RuMCGearUPPSOFbase_HEAVY
+  equipment:
+    id: RuCMIDCardUPPSOFMachinegunner
+    ears: RuMCHeadsetSOF
+    suitstorage: AU14SmartGunUPP
+  storage:
+    back:
+    - RuMCirpUPP
+    - AU14GrenadeHighExplosiveUPP
+    - AU14GrenadeSmokeUPP
+    - RMCExplosiveBreachingCharge
+  inhand:
+    - RuMCirpUPP
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconUPPSOFMachinegunner
+  icon:
+    sprite: _RuMC14/Interface/upp_icons.rsi
+    state: UPP_officer
+
+# Time tracker
+
+- type: playTimeTracker
+  id: RuMCJobUPPSOFMachinegunner

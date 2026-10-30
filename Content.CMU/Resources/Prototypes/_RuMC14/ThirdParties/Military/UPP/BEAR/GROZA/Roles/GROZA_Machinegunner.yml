@@ -122,13 +122,14 @@
   equipment:
     id: RuCMIDCardUPPBEARMachinegunner
     ears: RuMCHeadsetBEARGROZA
+    suitstorage: RuMCWeaponRifleAK13Tactical_alt1
   storage:
     back:
     - CMSheetMetal
+    - CMSheetMetal
     - CMSheetPlasteel50
     - AU14GrenadeHighExplosiveUPP
-    - RuMCMagazinePP13M
-    - RuMCMagazinePP13M
-    - RMCVisorWelding
+    - AU14GrenadeHighExplosiveUPP
+    - RMCWeldingGogglesSuperior
   inhand:
     - RuMCUTESCCase_GROZA

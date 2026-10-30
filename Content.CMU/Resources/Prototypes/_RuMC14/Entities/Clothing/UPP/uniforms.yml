@@ -1,5 +1,45 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
+  id: RuMCUPPFatiguesCrew
+  name: UPP crew fatigues
+  description: Standard-issue fatigues for UPP vehicle crews. Reinforced seams and flame-resistant fabric designed for tankers and drivers. Practical and durable for life inside an armored vehicle.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/uniform/crew.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - AU14PatchUPP
+
+- type: entity
+  parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
+  id: RuMCUPPFatiguesPilot
+  name: UPP pilot fatigues
+  description: Standard-issue flight fatigues for UPP dropship and VTOL pilots. Lightweight, flame-resistant, and designed for long hours in the cockpit. For those who rule the skies above the colony.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/uniform/pilot.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - AU14PatchUPP
+
+#Norcomm Liu
+
+- type: entity
+  parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
+  id: RuMCFatiguesNoLu
+  name: Norcomm Liu utility fatigues
+  description: Standard-issue utility fatigues for Norcomm Liu personnel. Heavy-duty fabric with reinforced knees and multiple tool pockets. Built for engineers and technicians who keep the Union running.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/NorcommLiu/uniform/PIONER_uniform.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - RuMCPatchNoLu
+
+#VDV
+
+- type: entity
+  parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: RuMCFatiguesVDV
   name: VDV airborne fatigues
   description: Standard fatigues for UPP Airborne Troops. Light Kevlar lining offers basic shrapnel protection without limiting mobility during deployment.
@@ -10,6 +50,9 @@
     startingAccessories:
     - AU14PatchUPP
     - RMCPatchSPPVDV
+  - type: Tag
+    tags:
+    - RMCUniformSPP
 
 - type: entity
   parent: RuMCFatiguesVDV
@@ -19,10 +62,6 @@
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/uniform/VDV/eng.rsi
-  - type: UniformAccessoryHolder
-    startingAccessories:
-    - AU14PatchUPP
-    - RMCPatchSPPVDV
 
 - type: entity
   parent: RuMCFatiguesVDV
@@ -32,10 +71,6 @@
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/uniform/VDV/medic.rsi
-  - type: UniformAccessoryHolder
-    startingAccessories:
-    - AU14PatchUPP
-    - RMCPatchSPPVDV
 
 - type: entity
   parent: RuMCFatiguesVDV
@@ -45,12 +80,8 @@
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/uniform/VDV/officer.rsi
-  - type: UniformAccessoryHolder
-    startingAccessories:
-    - AU14PatchUPP
-    - RMCPatchSPPVDV
 
-##SOF
+#SOF
 
 - type: entity
   parent: RMCMarineUniformBase
@@ -63,3 +94,6 @@
   - type: UniformAccessoryHolder
     startingAccessories:
     - AU14PatchUPP
+  - type: Tag
+    tags:
+    - RMCUniformSPP

@@ -1,0 +1,38 @@
+- type: entity
+  parent: RMCHeadsetMarine
+  id: RuMCHeadsetNorcommLiu
+  name: UPP Norcomm Liu headset
+  description: Norcomm Liu headset.
+  suffix: RuMC, Norcomm Liu
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/headsets.rsi
+    state: soc_headset
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - CMEncryptionKeyColony
+      - AU14EncryptionKeyUPPAmb
+  - type: RMCHeadset
+    channels:
+    - UPPSOF
+  - type: GrantSquadLeaderTracker
+    defaultMode: SquadLeader
+    trackerModes:
+    - Norcomm LiuCommandingOfficer
+    - SquadLeader
+    - BattleBuddy
+    - PrimaryLandingZone
+
+
+- type: entity
+  parent: RuMCUPPPouchConstruction
+  id: RuMCUPPPouchConstructionFill
+  name: PM-18-Construction
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    # same kit as AU14PouchIFAKFill, keep them in step
+    - id: CMSheetMetal
+    - id: CMSheetMetal
