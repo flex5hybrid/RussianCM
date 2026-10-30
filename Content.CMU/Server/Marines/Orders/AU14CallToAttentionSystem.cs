@@ -30,7 +30,7 @@ namespace Content.Server.CMU14.Marines.Orders;
 
 public sealed partial class AU14CallToAttentionSystem : EntitySystem
 {
-    private static readonly TimeSpan StandAtAttentionDuration = TimeSpan.FromSeconds(12);
+    private static readonly TimeSpan StandAtAttentionDuration = TimeSpan.FromSeconds(1);
     private static readonly TimeSpan OrderAbilitySyncInterval = TimeSpan.FromSeconds(1);
     private const string OrdersBuiName = "AU14MilitaryOrdersBoundUserInterface";
 
@@ -53,6 +53,7 @@ public sealed partial class AU14CallToAttentionSystem : EntitySystem
     [Dependency] private IGameTiming _timing = default!;
 
     private readonly HashSet<Entity<HumanoidProfileComponent>> _receivers = new();
+    private readonly List<EntityUid> _expiredAttention = new();
     private TimeSpan _nextAbilitySync;
 
     public override void Initialize()
@@ -74,11 +75,18 @@ public sealed partial class AU14CallToAttentionSystem : EntitySystem
         base.Update(frameTime);
 
         var time = _timing.CurTime;
+        _expiredAttention.Clear();
         var frozen = EntityQueryEnumerator<AU14StandAtAttentionComponent>();
         while (frozen.MoveNext(out var uid, out var component))
         {
             if (!IsPaused(uid) && component.ExpiresAt <= time)
-                RemCompDeferred<AU14StandAtAttentionComponent>(uid);
+                _expiredAttention.Add(uid);
+        }
+
+        foreach (var uid in _expiredAttention)
+        {
+            RemComp<AU14StandAtAttentionComponent>(uid);
+            _actionBlocker.UpdateCanMove(uid);
         }
 
         if (time < _nextAbilitySync)
@@ -461,10 +469,10 @@ public sealed partial class AU14CallToAttentionSystem : EntitySystem
 
     private void SyncOrderAbilities()
     {
-        var query = EntityQueryEnumerator<MarineComponent, OriginalRoleComponent, RankComponent>();
-        while (query.MoveNext(out var uid, out _, out var role, out _))
+        var query = EntityQueryEnumerator<MarineComponent>();
+        while (query.MoveNext(out var uid, out _))
         {
-            if (role.Job is not { } jobId ||
+            if (_rank.GetJobId(uid) is not { } jobId ||
                 !_proto.TryIndex(jobId, out JobPrototype? job) ||
                 !TryGetRoleAndRank(uid, out _, out _, out var paygrade, out var rankId) ||
                 (!IsOfficerRank(paygrade, rankId) && !IsOrderLeader(uid, job)))
@@ -525,8 +533,7 @@ public sealed partial class AU14CallToAttentionSystem : EntitySystem
         paygrade = null;
         rankId = null;
 
-        if (!TryComp<OriginalRoleComponent>(uid, out var original) ||
-            original.Job is not { } jobId ||
+        if (_rank.GetJobId(uid) is not { } jobId ||
             !_proto.TryIndex(jobId, out JobPrototype? jobProto) ||
             _rank.GetRank(uid) is not { } rank)
         {

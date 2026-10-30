@@ -11,5 +11,6 @@ au14-military-order-salute = Salute
 au14-military-order-attention = Stand at attention
 au14-action-military-order-name = Issue order
 au14-action-military-order-description = Open the military order selector.
+ent-ActionMarineCallToAttention = { au14-action-military-order-name }
 au14-emote-name-snap-to-attention = Snap to Attention
 au14-emote-msg-snap-to-attention = snaps to attention.

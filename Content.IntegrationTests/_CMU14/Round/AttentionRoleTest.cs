@@ -1,4 +1,5 @@
 using Content.IntegrationTests.Fixtures;
+using Content.Server._RMC14.Marines.Roles.Ranks;
 using Content.Shared.ActionBlocker;
 using Content.Shared._RMC14.Marines;
 using Content.Shared._RMC14.Marines.Roles.Ranks;
@@ -7,6 +8,9 @@ using Content.Shared.CMU14.Marines.Orders;
 using Content.Shared.CMU14.Round.Roles;
 using Content.Shared.Movement.Components;
 using Content.Shared.Roles;
+using Robust.Shared.Physics;
+using Robust.Shared.Physics.Components;
+using Robust.Shared.Physics.Systems;
 
 namespace Content.IntegrationTests.CMU14.Round;
 
@@ -93,6 +97,8 @@ public sealed class AttentionRoleTest : GameTest
             var marineJob = SProtoMan.Index<JobPrototype>($"AU14Job{force}SquadRifleman");
             SEntMan.AddComponents(leader, callerJob.RoundComponents);
             SEntMan.EnsureComponent<OriginalRoleComponent>(leader).Job = jobId;
+            SEntMan.EnsureComponent<MarineComponent>(leader);
+            SEntMan.System<RankSystem>().SetRank(leader, "RMCRankMajor");
             Assert.That(SEntMan.GetComponent<AU14CallToAttentionAbilityComponent>(leader).ActionEntity, Is.Not.Null);
             SEntMan.AddComponents(commander, commanderJob.RoundComponents);
             SEntMan.EnsureComponent<OriginalRoleComponent>(commander).Job = commanderJob.ID;
@@ -127,10 +133,66 @@ public sealed class AttentionRoleTest : GameTest
     }
 
     [Test]
+    public async Task OfficerAttentionOrderReachesSubordinateAndExpiresAfterOneSecond()
+    {
+        var map = await Pair.CreateTestMap();
+        EntityUid officer = default, marine = default;
+        await Server.WaitAssertion(() =>
+        {
+            SEntMan.System<SharedMapSystem>().SetPaused(map.MapUid, false);
+            officer = SEntMan.SpawnEntity("CMMobHuman", map.GridCoords);
+            marine = SEntMan.SpawnEntity("CMMobHuman", map.GridCoords.Offset(new Vector2(1, 0)));
+
+            var officerJob = SProtoMan.Index<JobPrototype>(AU14JobGOVFORPlatCoPrototype);
+            SEntMan.AddComponents(officer, officerJob.RoundComponents);
+            SEntMan.EnsureComponent<OriginalRoleComponent>(officer).Job = officerJob.ID;
+            SEntMan.EnsureComponent<MarineComponent>(officer);
+            SEntMan.System<RankSystem>().SetRank(officer, "RMCRankMajor");
+
+            var marineJob = SProtoMan.Index<JobPrototype>(AU14JobGOVFORSquadRiflemanPrototype);
+            SEntMan.AddComponents(marine, marineJob.RoundComponents);
+            SEntMan.EnsureComponent<OriginalRoleComponent>(marine).Job = marineJob.ID;
+            SEntMan.EnsureComponent<MarineComponent>(marine);
+            SEntMan.System<RankSystem>().SetRank(marine, "RMCRankPrivate");
+
+            var ability = SEntMan.GetComponent<AU14CallToAttentionAbilityComponent>(officer);
+            ability.ResponseStagger = TimeSpan.Zero;
+            Assert.That(ability.CanCall, Is.True);
+            Assert.That(SEntMan.System<RankSystem>().GetRank(officer)?.ID, Is.EqualTo("RMCRankMajor"));
+            Assert.That(SEntMan.System<RankSystem>().GetRank(marine)?.ID, Is.EqualTo("RMCRankPrivate"));
+            Assert.That(officerJob.RoundForce, Is.EqualTo(marineJob.RoundForce));
+            var action = new AU14CallToAttentionActionEvent();
+            SEntMan.EventBus.RaiseLocalEvent(officer, action);
+            var ui = SEntMan.System<SharedUserInterfaceSystem>();
+            Assert.That(ui.IsUiOpen(officer, AU14MilitaryOrderUiKey.Key, officer), Is.True);
+            ui.RaiseUiMessage(officer, AU14MilitaryOrderUiKey.Key,
+                new AU14MilitaryOrderSelectedBuiMsg(AU14MilitaryOrder.Attention) { Actor = officer });
+            Assert.That(ability.AttentionReadyAt, Is.GreaterThan(SGameTiming.CurTime),
+                $"order was rejected; officer job {SEntMan.System<RankSystem>().GetJobId(officer)}, target job {SEntMan.System<RankSystem>().GetJobId(marine)}");
+        });
+
+        await Pair.RunSeconds(0.1f);
+        await Server.WaitAssertion(() =>
+        {
+            Assert.That(SEntMan.HasComponent<AU14StandAtAttentionComponent>(marine), Is.True);
+            Assert.That(SEntMan.System<ActionBlockerSystem>().CanMove(marine), Is.False);
+        });
+
+        await Pair.RunSeconds(1.1f);
+        await Server.WaitAssertion(() =>
+        {
+            Assert.That(SEntMan.HasComponent<AU14StandAtAttentionComponent>(marine), Is.False);
+            SEntMan.DeleteEntity(officer);
+            SEntMan.DeleteEntity(marine);
+        });
+    }
+
+    [Test]
     public async Task StandAtAttentionBlocksMovementForItsDuration()
     {
         var map = await Pair.CreateTestMap();
         EntityUid marine = default;
+        TimeSpan expiresAt = default;
         await Server.WaitAssertion(() =>
         {
             marine = SEntMan.SpawnEntity("CMMobHuman", map.GridCoords);
@@ -145,22 +207,32 @@ public sealed class AttentionRoleTest : GameTest
             Assert.That(actionBlocker.CanMove(marine), Is.True);
 
             var attention = SEntMan.EnsureComponent<AU14StandAtAttentionComponent>(marine);
-            attention.ExpiresAt = SGameTiming.CurTime + TimeSpan.FromSeconds(12);
+            attention.ExpiresAt = SGameTiming.CurTime + TimeSpan.FromSeconds(1);
+            expiresAt = attention.ExpiresAt;
 
             actionBlocker.UpdateCanMove(marine);
             Assert.That(actionBlocker.CanMove(marine), Is.False);
         });
 
-        await Pair.RunSeconds(11);
+        await Pair.RunSeconds(0.5f);
         await Server.WaitAssertion(() =>
             Assert.That(SEntMan.System<ActionBlockerSystem>().CanMove(marine), Is.False));
 
-        await Pair.RunSeconds(1.5f);
+        await Pair.RunSeconds(0.75f);
         await Server.WaitAssertion(() =>
         {
             Assert.That(SEntMan.HasComponent<AU14StandAtAttentionComponent>(marine), Is.False);
             Assert.That(SEntMan.System<ActionBlockerSystem>().CanMove(marine), Is.True);
             SEntMan.DeleteEntity(marine);
         });
+    }
+
+    private void MakeMovable(EntityUid uid)
+    {
+        var physics = SEntMan.GetComponent<PhysicsComponent>(uid);
+        SEntMan.System<SharedPhysicsSystem>().SetBodyType(uid, BodyType.KinematicController, body: physics);
+        SEntMan.EnsureComponent<GodmodeComponent>(uid);
+        SEntMan.System<MobStateSystem>().ChangeMobState(uid, MobState.Alive);
+        SEntMan.System<ActionBlockerSystem>().UpdateCanMove(uid);
     }
 }
