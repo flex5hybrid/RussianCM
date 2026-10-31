@@ -140,6 +140,7 @@
     - id: turret-cannon
       hardpointType: Cannon
       slotType: Cannon
+      compatibilityId: TWETankCannon # RuMC edit
       required: false
       insertDelay: 2.0
     - id: turret-launcher

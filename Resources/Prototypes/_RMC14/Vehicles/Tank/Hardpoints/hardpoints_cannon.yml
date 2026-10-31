@@ -261,6 +261,7 @@
     hardpointType: Cannon
     vehicleFamily: Tank
     slotType: Cannon
+    compatibilityId: TWETankCannon # RuMC edit
     damageMultiplier: 0.125
     repairRate: 0.01
   - type: HardpointIntegrity
@@ -339,6 +340,7 @@
     hardpointType: Cannon
     vehicleFamily: Tank
     slotType: Cannon
+    compatibilityId: TWETankCannon # RuMC edit
     damageMultiplier: 0.125
     repairRate: 0.01
   - type: HardpointIntegrity
