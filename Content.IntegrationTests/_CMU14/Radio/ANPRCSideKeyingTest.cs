@@ -169,6 +169,7 @@ public sealed class ANPRCSideKeyingTest
         var baked = new[]
         {
             "ANPRC117GRadioFilled", "ANPRC117GRadioOPFORFilled", "ANPRCFillCardGOVFOR", "ANPRCFillCardOPFOR",
+            "ANPRC117GRadio", // RuMC edit: GOVFOR-only, use RuMCANPRC117GRadioIssuedBare
         };
 
         await server.WaitAssertion(() =>

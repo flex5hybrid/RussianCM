@@ -1281,7 +1281,7 @@
         amount: 15
     - name: Radio Equipment
       entries:
-      - id: ANPRC117GRadio
+      - id: RuMCANPRC117GRadioIssuedBare # RuMC edit
         amount: 3
       - id: ANPRCWhipAntenna
         amount: 3

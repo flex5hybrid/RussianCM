@@ -6,6 +6,7 @@ using Content.Shared.Item;
 using Content.Shared.Storage;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
+using Robust.Shared.Network; // RuMC edit
 using Robust.Shared.Prototypes;
 using System;
 using System.Linq;
@@ -19,6 +20,7 @@ public sealed partial class ContainerFillSystem : EntitySystem
     [Dependency] private EntityTableSystem _entityTable = default!;
     [Dependency] private SharedTransformSystem _transform = default!;
     [Dependency] private SharedItemSystem _itemSys = default!;
+    [Dependency] private INetManager _net = default!; // RuMC edit
 
     public override void Initialize()
     {
@@ -35,7 +37,14 @@ public sealed partial class ContainerFillSystem : EntitySystem
         var xform = Transform(uid);
 
         if (!_transform.TryGetMapOrGridCoordinates(uid, out var coords, xform))
-            return;
+        {
+            // RuMC edit start: fill nullspace entities on the server (requisitions), not client previews
+            if (!_net.IsServer)
+                return;
+
+            coords = new EntityCoordinates(uid, Vector2.Zero);
+            // RuMC edit end
+        }
 
         foreach (var (containerId, prototypes) in component.Containers)
         {
