@@ -3,6 +3,8 @@
   parent: BaseItem
   id: RMCFlashlightBase
   components:
+  - type: CMUCinematicEmitter # CMU14
+    profile: CMUFlashlight
   - type: MeleeWeapon
     wideAnimationRotation: 90
     damage:

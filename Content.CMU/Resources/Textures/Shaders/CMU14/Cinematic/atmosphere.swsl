@@ -1,0 +1,34 @@
+light_mode unshaded;
+blend_mode add;
+
+#include "/Textures/Shaders/CMU14/Cinematic/source.swsl"
+
+uniform highp float atmosphere_density;
+uniform highp float atmosphere_strength;
+uniform highp float beam_width;
+uniform highp float beam_falloff;
+uniform bool beam_cone;
+
+void fragment()
+{
+    highp vec2 world = frameWorld(frameUv(FRAGCOORD.xy));
+    if (visibleAt(source_position) < 0.5 || visibleAt(world) < 0.5)
+        discard;
+    highp float distance = length(world - source_position);
+    highp float radial = max(1.0 - distance / source_radius, 0.0);
+    highp float beam = sourceMask(world, beam_width);
+    if (beam_cone && !has_light_mask)
+    {
+        highp vec2 delta = world - source_position;
+        highp vec2 forward = vec2(-sin(source_rotation), cos(source_rotation));
+        highp float along = dot(delta, forward);
+        highp float across = abs(delta.x * forward.y - delta.y * forward.x);
+        beam *= (1.0 - smoothstep(0.35, 0.65, across / max(along, 0.01)))
+            * smoothstep(0.0, 0.35, along);
+    }
+    // Optical depth avoids multiplying several small artistic sliders into invisibility.
+    highp float scattering = 1.0 - exp(-atmosphere_density * atmosphere_strength * 5.5);
+    highp float depth = pow(radial, beam_falloff) * smoothstep(0.02, 0.45, distance);
+    highp float dust = 0.98 + 0.02 * sin(dot(world, vec2(1.7, 0.63))) * sin(dot(world, vec2(-0.41, 2.2)));
+    COLOR = vec4(source_color * scattering * depth * beam * source_energy * dust, 1.0);
+}

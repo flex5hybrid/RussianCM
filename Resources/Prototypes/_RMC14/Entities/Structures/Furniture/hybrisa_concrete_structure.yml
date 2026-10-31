@@ -4,6 +4,10 @@
   name: concrete statue
   description: A decorative statue with the Weyland-Yutani 'Wings' adorned on it, A corporate brutalist piece of art.
   components:
+  - type: CMUCinematicContact # CMU14: authored base contact, independent of gameplay occlusion.
+    size: 1.7, 0.24
+    offset: 0, -0.36
+    strength: 0.18
   - type: Sprite
     noRot: true
     sprite: _RMC14/Structures/concrete_structure.rsi
@@ -28,6 +32,8 @@
   id: RMCConcreteStatueOffset
   suffix: Offset
   components:
+  - type: CMUCinematicContact # CMU14: follow the offset statue's actual base.
+    offset: 0.5, 0.04
   - type: Sprite
     offset: 0.5,0.9
   - type: Fixtures

@@ -1,0 +1,141 @@
+{
+  "samples": [
+    {
+      "quality": 0,
+      "sample": 0,
+      "event_gpu_ms": 3.9874560000000074,
+      "cmu_draw_clear_gpu_ms": 0.0,
+      "cmu_events": 0
+    },
+    {
+      "quality": 0,
+      "sample": 1,
+      "event_gpu_ms": 6.637567999999997,
+      "cmu_draw_clear_gpu_ms": 0.0,
+      "cmu_events": 0
+    },
+    {
+      "quality": 0,
+      "sample": 2,
+      "event_gpu_ms": 2.0991999999999966,
+      "cmu_draw_clear_gpu_ms": 0.0,
+      "cmu_events": 0
+    },
+    {
+      "quality": 2,
+      "sample": 3,
+      "event_gpu_ms": 4.870144000000013,
+      "cmu_draw_clear_gpu_ms": 0.9052160000000011,
+      "cmu_events": 172
+    },
+    {
+      "quality": 2,
+      "sample": 4,
+      "event_gpu_ms": 3.854336000000009,
+      "cmu_draw_clear_gpu_ms": 1.5103999999999973,
+      "cmu_events": 172
+    },
+    {
+      "quality": 2,
+      "sample": 5,
+      "event_gpu_ms": 3.837952000000008,
+      "cmu_draw_clear_gpu_ms": 1.5114239999999963,
+      "cmu_events": 172
+    },
+    {
+      "quality": 3,
+      "sample": 6,
+      "event_gpu_ms": 4.808704000000007,
+      "cmu_draw_clear_gpu_ms": 2.4115199999999977,
+      "cmu_events": 183
+    },
+    {
+      "quality": 3,
+      "sample": 7,
+      "event_gpu_ms": 2.606079999999997,
+      "cmu_draw_clear_gpu_ms": 0.9185280000000015,
+      "cmu_events": 183
+    },
+    {
+      "quality": 3,
+      "sample": 8,
+      "event_gpu_ms": 7.09222400000001,
+      "cmu_draw_clear_gpu_ms": 5.402624000000007,
+      "cmu_events": 183
+    }
+  ],
+  "hdr": [
+    {
+      "target": "cmu-cinematic-emission-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 2016,
+      "height": 1440,
+      "rgb_max": [
+        6.5625,
+        4.5625,
+        3.9375
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-irradiance-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 1008,
+      "height": 720,
+      "rgb_max": [
+        7.5625,
+        6.125,
+        6.125
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-reflections-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 1008,
+      "height": 720,
+      "rgb_max": [
+        0.71875,
+        0.484375,
+        0.2734375
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-atmosphere-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 1008,
+      "height": 720,
+      "rgb_max": [
+        0.609375,
+        0.7265625,
+        0.71875
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-native-light-copy-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 1008,
+      "height": 720,
+      "rgb_max": [
+        1.078125,
+        0.9375,
+        0.671875
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-native-contribution-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 1008,
+      "height": 720,
+      "rgb_max": [
+        0.9375,
+        0.9921875,
+        0.984375
+      ],
+      "nonfinite_channels": 0
+    }
+  ]
+}

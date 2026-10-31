@@ -1,0 +1,22 @@
+light_mode unshaded;
+blend_mode none;
+
+#include "/Textures/Shaders/CMU14/Cinematic/frame.swsl"
+
+uniform sampler2D scene_texture;
+uniform sampler2D material_texture;
+uniform sampler2D reflection_texture;
+uniform highp float local_exposure;
+
+void fragment()
+{
+    highp vec2 uv = frameUv(FRAGCOORD.xy);
+    highp vec4 scene = texture2D(scene_texture, uv);
+    highp float surface = texture2D(material_texture, uv).a;
+    highp float visible = visibleAt(frameWorld(uv)) * surface * step(0.001, scene.a);
+    highp vec3 specular = texture2D(reflection_texture, uv).rgb;
+    highp vec3 radiance = specular * local_exposure * visible;
+    highp float peak = max(max(radiance.r, radiance.g), radiance.b);
+    highp vec3 response = radiance / (1.0 + peak);
+    COLOR = vec4(scene.rgb + max(vec3(0.0), vec3(1.0) - scene.rgb) * response, scene.a);
+}
