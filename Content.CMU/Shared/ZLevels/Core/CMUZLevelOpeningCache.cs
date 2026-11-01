@@ -421,6 +421,22 @@ public sealed class CMUZLevelOpeningCache
         return ((ContentTileDefinition) tileDefinition[tile.TypeId]).CMUFallThrough;
     }
 
+    /// <summary>
+    ///     Whether this tile can hold a landing ship. Unlike <see cref="IsFallThroughTile"/>,
+    ///     the bare Space tile used for empty map cells is not a surface: map chunks store
+    ///     empty cells as Space, so treating it as floor would let ships land in mid-air.
+    /// </summary>
+    public static bool IsLandingSurfaceTile(
+        Tile tile,
+        ITileDefinitionManager tileDefinition)
+    {
+        if (tile.IsEmpty)
+            return false;
+
+        var tileDef = (ContentTileDefinition) tileDefinition[tile.TypeId];
+        return !tileDef.CMUFallThrough && tileDef.ID != ContentTileDefinition.SpaceID;
+    }
+
     public static bool CanLookUpThrough(
         Tile tile,
         ITileDefinitionManager tileDefinition)
