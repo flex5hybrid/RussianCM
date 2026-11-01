@@ -411,7 +411,7 @@
   recruitGear: CMUGearRecruitUPP
   instructorGear: CMUGearInstructorUPP
   vehicleSupplyCatalog:
-  - CMUFighterGround
+  - CMUFighterGroundUPP
   - VehicleSPPTank
   - VehicleSPPAPC
   - VehicleSPPVan
@@ -755,7 +755,7 @@
   recruitGear: CMUGearRecruitUPP
   instructorGear: CMUGearInstructorUPP
   vehicleSupplyCatalog:
-  - CMUFighterGround
+  - CMUFighterGroundUPP
   - VehicleSPPTank
   - VehicleSPPAPC
   - VehicleSPPVan
