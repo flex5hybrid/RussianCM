@@ -25,6 +25,7 @@ using Content.Shared.Tag;
 using Robust.Shared.EntitySerialization;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.Prototypes;
+using Content.Server.CMU14.ColonyEconomy;
 
 namespace Content.Server.CMU14.Round.ColonyShift;
 
@@ -38,6 +39,8 @@ public sealed partial class ColonyRotationRuleSystem : GameRuleSystem<ColonyRota
     [Dependency] private MapLoaderSystem _mapLoader = default!;
     [Dependency] private MobStateSystem _mobState = default!;
     [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private SubmissionCommoditySystem _commodity = default!;
+    [Dependency] private SubmissionMarketSystem _market = default!;
 
     protected override void Started(EntityUid uid, ColonyRotationRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
@@ -499,7 +502,7 @@ public sealed partial class ColonyRotationRuleSystem : GameRuleSystem<ColonyRota
         var aboard = new HashSet<EntityUid>();
         if (comp.Shuttle is { } ship && !TerminatingOrDeleted(ship))
         {
-            var prices = GetPrices();
+
             var pending = new Stack<EntityUid>();
             pending.Push(ship);
             while (pending.TryPop(out var uid))
@@ -518,7 +521,7 @@ public sealed partial class ColonyRotationRuleSystem : GameRuleSystem<ColonyRota
                     continue;
                 }
 
-                var price = GetPrice(uid, prices);
+                var price = GetPrice(uid);
                 if (price <= 0)
                     continue;
 
@@ -546,45 +549,36 @@ public sealed partial class ColonyRotationRuleSystem : GameRuleSystem<ColonyRota
                HasComp<MobStateComponent>(uid) && !_mobState.IsDead(uid);
     }
 
-    // the submission points mapped on the colony are the price list, best price per tag wins
-    private Dictionary<ProtoId<TagPrototype>, float> GetPrices()
-    {
-        var prices = new Dictionary<ProtoId<TagPrototype>, float>();
-        var query = EntityQueryEnumerator<SubmissionStorageComponent>();
-        while (query.MoveNext(out var storage))
-        {
-            if (storage.Rewards == null)
-                continue;
 
-            foreach (var (tag, reward) in storage.Rewards)
-            {
-                if (!prices.TryGetValue(tag, out var best) || reward > best)
-                    prices[tag] = reward;
-            }
+/// <summary>
+/// Determines the best available sale price for an item
+/// using the current colony commodity and market systems.
+/// </summary>
+private float GetPrice(EntityUid uid)
+{
+    var bestPrice = 0f;
+
+    var query = EntityQueryEnumerator<SubmissionStorageComponent>();
+
+    while (query.MoveNext(out var storage))
+    {
+        if (!_commodity.TryMatch(
+                storage,
+                uid,
+                out var commodity,
+                out var basePrice))
+        {
+            continue;
         }
 
-        return prices;
+        var price = basePrice * _market.GetMultiplier(commodity);
+
+        bestPrice = MathF.Max(bestPrice, price);
     }
 
-    private float GetPrice(EntityUid uid, Dictionary<ProtoId<TagPrototype>, float> prices)
-    {
-        if (prices.Count == 0 || !TryComp(uid, out TagComponent? tags))
-            return 0;
+    return bestPrice;
+}
 
-        // same averaging as SubmissionStorageSystem so the numbers match what the chutes would've paid
-        var sum = 0f;
-        var matched = 0;
-        foreach (var tag in tags.Tags)
-        {
-            if (!prices.TryGetValue(tag, out var reward))
-                continue;
-
-            sum += reward;
-            matched++;
-        }
-
-        return matched == 0 ? 0 : sum / matched;
-    }
 
     protected override void AppendRoundEndText(EntityUid uid, ColonyRotationRuleComponent component, GameRuleComponent gameRule, ref RoundEndTextAppendEvent args)
     {
