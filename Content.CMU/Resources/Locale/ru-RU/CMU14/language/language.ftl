@@ -119,9 +119,6 @@ language-Filipino-description = Австронезийский земной яз
 language-Hebrew-name = Иврит
 language-Hebrew-description = Семитский язык, возрожденный как разговорный в XX веке, с богатым историческим и религиозным наследием.
 
-language-Hebrew-name = Иврит
-language-Urdu-description =
-
 language-Yoruba-name = Йоруба
 language-Yoruba-description = Тональный африканский язык с характерным произношением.
 
