@@ -29,6 +29,12 @@
         whitelist:
           tags:
           - RuMCMagazineRifleAK4047buben
+      mag-3:
+        whitelist:
+          tags:
+          - AU14MagazineRifleAG80
+          - AU14MagazineRifleAG80AP
+          - AU14MagazineRifleAG80Ext
   - type: Clothing
     sprite: _RuMC14/Objects/Weapons/Guns/Rifles/ak7074.rsi
   - type: ContainerContainer
@@ -51,7 +57,7 @@
     recoilUnwielded: 4
     scatterWielded: 4
     scatterUnwielded: 11
-    baseFireRate: 4.25
+    baseFireRate: 5
     burstScatterMult: 1
   - type: RMCWeaponAccuracy
     accuracyMultiplier: 1.25
@@ -73,6 +79,9 @@
           - RuMCMagazineRifleAK4047bakelite
           - RuMCMagazineRifleAK4047APbakelite
           - RuMCMagazineRifleAK4047buben
+          - AU14MagazineRifleAG80
+          - AU14MagazineRifleAG80AP
+          - AU14MagazineRifleAG80Ext
   - type: GunDamageModifier
     multiplier: 1.1
   - type: AttachableHolder
