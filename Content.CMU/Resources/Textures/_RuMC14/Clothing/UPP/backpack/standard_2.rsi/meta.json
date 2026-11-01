@@ -18,6 +18,9 @@
       "name": "open"
     },
     {
+      "name": "med"
+    },
+    {
       "name": "closed"
     }
   ]

@@ -10,23 +10,34 @@
   announcement: rmc-squad-spec-upp-vdv-announced
 
 - type: squadSpecialization
-  id: UPPSpecSOF
-  name: rmc-squad-spec-upp-sof-name
-  description: rmc-squad-spec-upp-sof-desc
-  summary: rmc-squad-spec-upp-sof-summary
-  faction: UPP
-  icon:
-    sprite: _RMC14/Objects/Clothing/Head/SPP/army_helmet.rsi
-    state: icon
-  announcement: rmc-squad-spec-upp-sof-announced
-
-- type: squadSpecialization
   id: UPPSpecRecon
   name: rmc-squad-spec-upp-recon-name
   description: rmc-squad-spec-upp-recon-desc
   summary: rmc-squad-spec-upp-recon-summary
   faction: UPP
   icon:
-    sprite: _RMC14/Objects/Clothing/Head/Helmets/skullcapm.rsi
+    sprite: _RMC14/Objects/Clothing/Head/SPP/beret.rsi
     state: icon
   announcement: rmc-squad-spec-upp-recon-announced
+
+- type: squadSpecialization
+  id: UPPSpecStormtrooper
+  name: rmc-squad-spec-upp-stormtrooper-name
+  description: rmc-squad-spec-upp-stormtrooper-desc
+  summary: rmc-squad-spec-upp-stormtrooper-summary
+  faction: UPP
+  icon:
+    sprite: _RMC14/Objects/Clothing/Head/SPP/beret.rsi
+    state: icon
+  announcement: rmc-squad-spec-upp-stormtrooper-announced
+
+- type: squadSpecialization
+  id: UPPSpecGranison
+  name: rmc-squad-spec-upp-granison-name
+  description: rmc-squad-spec-upp-granison-desc
+  summary: rmc-squad-spec-upp-granison-summary
+  faction: UPP
+  icon:
+    sprite: _RMC14/Objects/Clothing/Head/SPP/beret.rsi
+    state: icon
+  announcement: rmc-squad-spec-upp-granison-announced
