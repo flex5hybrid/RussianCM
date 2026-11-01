@@ -116,8 +116,11 @@ language-Indonesian-description = Австронезийский земной я
 language-Filipino-name = Филиппинский
 language-Filipino-description = Австронезийский земной язык, сформировавшийся под влиянием множества культур.
 
-language-Urdu-name = Урду
-language-Urdu-description = Индоарийский язык с сильным персидским и арабским влиянием.
+language-Hebrew-name = Иврит
+language-Hebrew-description = Семитский язык, возрожденный как разговорный в XX веке, с богатым историческим и религиозным наследием.
+
+language-Hebrew-name = Иврит
+language-Urdu-description =
 
 language-Yoruba-name = Йоруба
 language-Yoruba-description = Тональный африканский язык с характерным произношением.
