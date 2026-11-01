@@ -416,13 +416,15 @@
   - type: SkillPamphlet
     language: Romanian
 
-# ├──[ RuCM14 tongues ]─────────────────────────────────────────┤
+# ├──[ RuCM14 ]─────────────────────────────────────────┤
 
 - type: entity
   parent: CMPamphletLanguage
-  id: RuCM14PamphletLanguageHebrew
+  id: RuMCPamphletLanguageHebrew
   name: Treatise of the Universal Tongue
   description: This appears to be a comprehensive guide to the ancient Earth language, Hebrew.
   components:
   - type: SkillPamphlet
     language: Hebrew
+
+  # ├──[ end of RuCM14 ]─────────────────────────────────────────┤
