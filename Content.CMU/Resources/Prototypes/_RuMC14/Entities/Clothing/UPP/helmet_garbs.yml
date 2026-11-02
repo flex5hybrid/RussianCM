@@ -1,0 +1,67 @@
+# Православный крест
+- type: entity
+  parent: RMCHelmetGarbBase
+  id: RuMCUPPHelmetGarbOrthodoxCross
+  name: orthodox cross helmet garb
+  description: A small orthodox cross attached to a helmet. A symbol of faith for those who believe in something greater than the Union.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/HelmetGarb/orthodox_cross.rsi
+    state: icon
+  - type: Item
+    sprite: _RuMC14/Clothing/UPP/HelmetGarb/orthodox_cross.rsi
+  - type: HelmetAccessory
+    rsi:
+      sprite: _RuMC14/Clothing/UPP/HelmetGarb/orthodox_cross.rsi
+      state: helmet
+
+# Значок ВДВ
+- type: entity
+  parent: RMCHelmetGarbBase
+  id: RuMCUPPHelmetGarbVDV
+  name: VDV helmet badge
+  description: A metal badge depicting the airborne troops emblem. Worn by those who jump first.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/HelmetGarb/upp_vdv.rsi
+    state: icon
+  - type: Item
+    sprite: _RuMC14/Clothing/UPP/HelmetGarb/upp_vdv.rsi
+  - type: HelmetAccessory
+    rsi:
+      sprite: _RuMC14/Clothing/UPP/HelmetGarb/upp_vdv.rsi
+      state: helmet
+
+# Значок Армии
+- type: entity
+  parent: RMCHelmetGarbBase
+  id: RuMCUPPHelmetGarbArmy
+  name: army helmet badge
+  description: A standard-issue UPP army badge. A mark of service in the regular armed forces.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/HelmetGarb/upp_star.rsi
+    state: icon
+  - type: Item
+    sprite: _RuMC14/Clothing/UPP/HelmetGarb/upp_star.rsi
+  - type: HelmetAccessory
+    rsi:
+      sprite: _RuMC14/Clothing/UPP/HelmetGarb/upp_star.rsi
+      state: helmet
+
+# Красная Звезда
+- type: entity
+  parent: RMCHelmetGarbBase
+  id: RuMCUPPHelmetGarbRedStar
+  name: red star helmet badge
+  description: A bright red star worn on the helmet. A symbol of the Union, the revolution, and the endless struggle.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/HelmetGarb/upp_flair.rsi
+    state: icon
+  - type: Item
+    sprite: _RuMC14/Clothing/UPP/HelmetGarb/upp_flair.rsi
+  - type: HelmetAccessory
+    rsi:
+      sprite: _RuMC14/Clothing/UPP/HelmetGarb/upp_flair.rsi
+      state: helmet

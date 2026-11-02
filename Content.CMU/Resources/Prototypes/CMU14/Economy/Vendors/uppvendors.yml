@@ -146,6 +146,12 @@
         amount: 12
       - id: AU14ArmorGarbJunglePonchoUPP
         amount: 40
+      - id: RuMCUPPHelmetGarbOrthodoxCross
+        amount: 6
+      - id: RuMCUPPHelmetGarbArmy
+        amount: 40
+      - id: RuMCUPPHelmetGarbRedStar
+        amount: 40
     - name: Backpack
       entries:
       - id: RuMCUPPNavalInfantrySatchel
@@ -269,6 +275,8 @@
       - id: RuMCPatchVDV
         maxPerUser: 1
       - id: RuMCPatchVDValt
+        maxPerUser: 1
+      - id: RuMCUPPHelmetGarbVDV
         maxPerUser: 1
 
 - type: entity
