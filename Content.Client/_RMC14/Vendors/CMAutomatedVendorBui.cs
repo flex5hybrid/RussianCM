@@ -103,6 +103,8 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
             {
                 var entry = section.Entries[entryIndex];
                 var uiEntry = new CMAutomatedVendorEntry { Entry = entry };
+                if (vendor.UiStyle == CMVendorUiStyle.Yautja)
+                    uiEntry.UseYautjaTheme();
 
                 if (_prototype.TryIndex(entry.Id, out var entity))
                 {
@@ -193,6 +195,7 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
         if (_window == null || vendor.UiStyle != CMVendorUiStyle.Yautja)
             return;
 
+        _window.UseYautjaTheme();
         _window.ReagentsBar.ForegroundStyleBoxOverride = YautjaBracerUiStyle.Flat(YautjaBracerUiStyle.Red, YautjaBracerUiStyle.HotRed);
         _window.PointsLabel.FontColorOverride = YautjaBracerUiStyle.HotRed;
     }
@@ -202,6 +205,7 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
         if (vendor.UiStyle != CMVendorUiStyle.Yautja)
             return;
 
+        section.UseYautjaTheme();
         section.Label.Modulate = YautjaBracerUiStyle.HotRed;
     }
 
