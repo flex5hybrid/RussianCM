@@ -1,5 +1,5 @@
 using System.Numerics;
-using Content.Server._RuMC14.Decals; // RuMC edit
+using Content.Server.CMU14.Decals;
 using Content.Server.Fluids.EntitySystems;
 using Content.Shared.Body.Components;
 using Content.Shared.Chemistry.Components;
@@ -76,7 +76,7 @@ public sealed partial class CMUWoundsSystem
                 break;
             }
 
-            if (!_decalFloor.HasFloor(target)) // RuMC edit: no blood over holes
+            if (!_decalFloor.HasFloor(target))
                 continue;
 
             landing = target;

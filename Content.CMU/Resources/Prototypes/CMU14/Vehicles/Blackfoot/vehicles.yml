@@ -206,7 +206,7 @@
   - type: HardpointIntegrity
     maxIntegrity: 500
     bypassEntryOnZero: true
-  - type: RuMCBlackfootDestruction # RuMC edit
+  - type: CMUBlackfootDestruction
   - type: VehicleEnter
     interiorPath: /Maps/CMU14/Vehicles/Blackfoot/blackfoot.yml
     enterDoAfter: 1

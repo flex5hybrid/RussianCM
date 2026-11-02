@@ -1,6 +1,6 @@
 using System.Linq;
 using Content.Shared.CMU14.Blackfoot;
-using Content.Shared.CMU14.ZLevels.Core.Components; // RuMC edit
+using Content.Shared.CMU14.ZLevels.Core.Components; // CMU14
 using Content.Shared._RMC14.Actions;
 using Content.Shared._RMC14.Vehicle;
 using Content.Shared.Actions.Components;
@@ -139,7 +139,7 @@ public sealed partial class ActionUIController
         }
 
         AddBlackfootDoorGunActions(desiredOrdered);
-        AddZLevelLookUpAction(desiredOrdered); // RuMC edit
+        AddZLevelLookUpAction(desiredOrdered); // CMU14
 
         EntityUid? viewToggleAction = null;
         if (_playerManager.LocalEntity is { } toggleUser &&
@@ -290,7 +290,7 @@ public sealed partial class ActionUIController
         AddVehicleAction(desiredOrdered, actions.StowToggleAction);
     }
 
-    // RuMC edit start
+    // CMU14 start
     private void AddZLevelLookUpAction(List<EntityUid?> desiredOrdered)
     {
         if (_playerManager.LocalEntity is { } user &&
@@ -299,7 +299,7 @@ public sealed partial class ActionUIController
             AddVehicleAction(desiredOrdered, viewer.ZLevelActionEntity);
         }
     }
-    // RuMC edit end
+    // CMU14 end
 
     private void AddBlackfootDoorGunActions(List<EntityUid?> desiredOrdered)
     {

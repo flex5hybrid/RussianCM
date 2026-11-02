@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Numerics;
-using Content.Server._RuMC14.Blackfoot; // RuMC edit
+using Content.Server.CMU14.Blackfoot;
 using Content.Server.CMU14.ZLevels.Core;
 using Content.Shared.CMU14.Blackfoot;
 using Content.Shared.CMU14.ZLevels.Core;
@@ -55,7 +55,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
     [Dependency] private TurfSystem _turf = default!;
     [Dependency] private VehicleViewToggleSystem _viewToggle = default!;
     [Dependency] private CMUZLevelsSystem _zLevels = default!;
-    [Dependency] private RuMCBlackfootDestructionSystem _destruction = default!; // RuMC edit
+    [Dependency] private CMUBlackfootDestructionSystem _destruction = default!;
 
     public override void Initialize()
     {
@@ -83,7 +83,6 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
         var aircraft = EntityQueryEnumerator<BlackfootFlightComponent>();
         while (aircraft.MoveNext(out var uid, out var flight))
         {
-            // RuMC edit: a falling Blackfoot is controlled by its destruction, not by its flight state.
             if (_destruction.IsFalling(uid))
                 continue;
 
@@ -373,14 +372,12 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
 
     private void ProcessThrusters(Entity<BlackfootFlightComponent> flight)
     {
-        // RuMC edit: a wrecked airframe cannot run, so it falls even when its thrusters are whole.
         if (!IsAirborneOrTransitioning(flight.Comp.State) ||
             (HasFunctionalThrusters(flight.Owner) && !_hardpoints.IsDestroyedBeyondRepair(flight.Owner)))
         {
             return;
         }
 
-        // RuMC edit: without thrusters the Blackfoot is shot down, not set gently on the ground.
         if (_destruction.TryBeginFall(flight.Owner))
             return;
 
@@ -392,7 +389,6 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
         if (flight.Comp.State != BlackfootFlightState.Crashed)
             return;
 
-        // RuMC edit: a destroyed airframe does not come back.
         if (_hardpoints.IsDestroyedBeyondRepair(flight.Owner))
             return;
 
@@ -612,7 +608,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
         return true;
     }
 
-    public void Crash(Entity<BlackfootFlightComponent> flight) // RuMC edit: public, see RuMCBlackfootDestructionSystem
+    public void Crash(Entity<BlackfootFlightComponent> flight)
     {
         DeleteShadow(flight);
         DeleteDownwash(flight);
@@ -621,7 +617,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
         flight.Comp.MovementMode = BlackfootMovementMode.VTOL;
 
         if (IsAirborne(flight.Comp.State))
-            _zLevels.TryMove(flight.Owner, GetCrashOffset(flight)); // RuMC edit
+            _zLevels.TryMove(flight.Owner, GetCrashOffset(flight));
 
         _viewToggle.RefreshOutsideViewers(flight.Owner);
         SetState(flight.Owner, flight, BlackfootFlightState.Crashed);
@@ -630,7 +626,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
         RaiseLocalEvent(flight.Owner, ref ev);
     }
 
-    // RuMC edit: a crashing aircraft falls through open air to the first solid level, not just one level down.
+    // falls through open air to the first solid level
     private int GetCrashOffset(Entity<BlackfootFlightComponent> flight)
     {
         if (Transform(flight.Owner).MapUid is not { } map ||
@@ -1419,7 +1415,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
         if (performer != ent.Owner || !_actionBlocker.CanConsciouslyPerformAction(performer) ||
             ent.Comp.Vehicle is not { } vehicleUid ||
             !TryComp(vehicleUid, out BlackfootFlightComponent? flightComp) ||
-            _destruction.IsFalling(vehicleUid)) // RuMC edit
+            _destruction.IsFalling(vehicleUid))
         {
             return false;
         }

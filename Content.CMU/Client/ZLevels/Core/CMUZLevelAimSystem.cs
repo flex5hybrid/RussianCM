@@ -1,7 +1,7 @@
 using System.Numerics;
 using Content.Client.Gameplay;
 using Content.Client.Weapons.Ranged.Systems;
-using Content.Shared._RuMC14.ZLevels.Vehicle; // RuMC edit
+using Content.Shared.CMU14.ZLevels.Vehicles;
 using Content.Shared.CMU14.ZLevels;
 using Content.Shared.CMU14.ZLevels.Core.Components;
 using Content.Shared.CMU14.ZLevels.Core.EntitySystems;
@@ -48,7 +48,7 @@ public sealed partial class CMUZLevelAimSystem : EntitySystem
     [Dependency] private IGameTiming _timing = default!;
     [Dependency] private CMUClientZLevelsSystem _zLevels = default!;
     [Dependency] private CMUZLevelShootingSystem _shooting = default!;
-    [Dependency] private RuMCVehicleZViewSystem _vehicleView = default!; // RuMC edit
+    [Dependency] private CMUVehicleZViewSystem _vehicleView = default!;
     [Dependency] private SharedTransformSystem _transform = default!;
     [Dependency] private GunSystem _gun = default!;
     [Dependency] private InputSystem _inputSystem = default!;
@@ -100,7 +100,7 @@ public sealed partial class CMUZLevelAimSystem : EntitySystem
         if (!_config.GetCVar(CMUZLevelsCVars.Enabled))
             return 0;
 
-        var xform = Transform(_vehicleView.GetViewSource(user)); // RuMC edit
+        var xform = Transform(_vehicleView.GetViewSource(user));
         if (xform.MapUid is not { } map ||
             cursor.MapId != xform.MapID)
         {
