@@ -12,3 +12,5 @@ cmu-vendor-details = Описание предмета
 cmu-vendor-out = НЕТ НА СКЛАДЕ
 cmu-vendor-low = МАЛО
 cmu-vendor-in-stock = В НАЛИЧИИ
+cmu-vendor-points = Осталось очков: { $count }
+cmu-vendor-faction-points = Победные очки { $faction }: { $count }
