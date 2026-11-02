@@ -59,7 +59,7 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
         }
 
         _window.Search.OnTextChanged += OnSearchChanged;
-        _window.LowStockOnly.OnToggled += _ => ApplySearchFilter(_window.Search.Text);
+        _window.LowStockOnly.OnToggled += _ => ApplySearchFilter(_window?.Search.Text);
         Refresh();
     }
 
@@ -120,7 +120,7 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
                     var name = entity.Name;
                     var color = CMAutomatedVendorPanel.DefaultColor;
                     var borderColor = CMAutomatedVendorPanel.DefaultBorderColor;
-                    var hoverColor = CMAutomatedVendorPanel.DefaultBorderColor;
+                    var hoverColor = CMAutomatedVendorPanel.DefaultHoveredColor;
                     if (vendor.UiStyle == CMVendorUiStyle.Yautja)
                     {
                         color = YautjaBracerUiStyle.DeepCard;
@@ -294,7 +294,7 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
         return true;
     }
 
-    /// <summary>Only finite stocks with a known maximum can be classified as low.</summary>
+    /// <summary>Empty stocks are always low; positive stocks need a known maximum.</summary>
     private static bool IsLowStock(CMVendorEntry entry)
     {
         return entry.Amount is { } amount &&
@@ -353,14 +353,15 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
         if (vendor.UseObjectivePoints)
         {
             userPoints = vendor.CachedFactionWinPoints;
-            pointsLabel = $"{vendor.Faction.ToUpperInvariant()} Win Points: {userPoints}";
+            pointsLabel = Loc.GetString("cmu-vendor-faction-points",
+                ("faction", vendor.Faction.ToUpperInvariant()), ("count", userPoints));
         }
         else
         {
             userPoints = vendor.PointsType == null
                 ? user?.Points ?? 0
                 : user?.ExtraPoints?.GetValueOrDefault(vendor.PointsType) ?? 0;
-            pointsLabel = $"Points Remaining: {userPoints}";
+            pointsLabel = Loc.GetString("cmu-vendor-points", ("count", userPoints));
         }
 
         if (NeedsSectionRebuild(vendor))
