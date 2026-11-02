@@ -26,7 +26,6 @@ public sealed class CMUTTSVoiceAssignmentTest : GameTest
           components:
           - type: TTS
             voice: TURRET_FLOOR
-
         """;
 
     [Test]
@@ -75,8 +74,8 @@ public sealed class CMUTTSVoiceAssignmentTest : GameTest
         {
             foreach (var id in CMUTTSVoiceSelection.YautjaVoiceIds)
             {
-                var prototype = SProtoMan.Index<TTSVoicePrototype>(id);
-                Assert.That(CMUTTSVoiceSelection.IsYautjaSelectable(prototype), Is.True, id);
+                var voicePrototype = SProtoMan.Index<TTSVoicePrototype>(id);
+                Assert.That(CMUTTSVoiceSelection.IsYautjaSelectable(voicePrototype), Is.True, id);
             }
 
             var entity = SEntMan.SpawnEntity(prototype, map.GridCoords);
@@ -92,7 +91,7 @@ public sealed class CMUTTSVoiceAssignmentTest : GameTest
                 profiles.ApplyProfile(entity, hunter, equipProfileGear: false);
                 Assert.That(SEntMan.GetComponent<TTSComponent>(entity).VoicePrototypeId, Is.EqualTo("GARROSH"));
 
-                // Reapplying on map initialization must preserve the chosen voice.
+                // Reapplying the hunter profile must preserve the selected voice.
                 profiles.ApplyProfile(entity, hunter, equipProfileGear: false);
                 Assert.That(SEntMan.GetComponent<TTSComponent>(entity).VoicePrototypeId, Is.EqualTo("GARROSH"));
 
