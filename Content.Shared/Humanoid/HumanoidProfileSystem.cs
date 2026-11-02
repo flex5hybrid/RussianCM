@@ -36,13 +36,7 @@ public sealed partial class HumanoidProfileSystem : EntitySystem
         SetVoice(ent, profile.Voice);
         if (TryComp<Content.Shared.Corvax.TTS.TTSComponent>(ent, out var tts))
         {
-            // CMU14: hunter voices are validated independently of humanoid sex.
-            // tts.VoicePrototypeId = HumanoidCharacterProfile.ValidateTTSVoice(profile.TTSVoice, ProtoMan, profile.Sex);
-            tts.VoicePrototypeId = HumanoidCharacterProfile.ValidateTTSVoice(
-                profile.TTSVoice,
-                ProtoMan,
-                profile.Sex,
-                profile.Species.Id == "Yautja");
+            tts.VoicePrototypeId = HumanoidCharacterProfile.ValidateTTSVoice(profile.TTSVoice, ProtoMan, profile.Sex);
             var voiceApplied = new Content.Shared.Corvax.TTS.CMUTTSVoiceAppliedEvent();
             RaiseLocalEvent(ent, ref voiceApplied);
         }
