@@ -85,7 +85,7 @@ public sealed partial class TTSSystem
         var voice = tts.VoicePrototypeId;
         var voiceEvent = new TransformSpeakerVoiceEvent(args.MessageSource, voice);
         RaiseLocalEvent(args.MessageSource, voiceEvent);
-        voice = voiceEvent.VoiceId;
+        voice = EnforceYautjaVoice(args.MessageSource, voiceEvent.VoiceId);
         if (CustomTTSVoice.TryGetSpeaker(voice, out _))
             await EnsureReferenceVoiceCatalogLoaded();
         if (!_isEnabled || generation != _roundGeneration)
