@@ -1,6 +1,6 @@
 # Кабинка обслуживания синтетиков
 - type: constructionGraph
-  id: AU14CustomGraph_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+  id: AU14CustomGraphRMCSyntheticMaintenanceStationRuMC
   start: start
   graph:
   - node: start
@@ -13,7 +13,7 @@
         amount: 30
         doAfter: 10
   - node: mid
-    entity: AU14CustomEntityMid_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+    entity: AU14CustomEntityMidRMCSyntheticMaintenanceStationRuMC
     edges:
     - to: target
       steps:
@@ -49,7 +49,7 @@
       - tool: Prying
         doAfter: 2
   - node: target
-    entity: AU14CustomEntity_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+    entity: AU14CustomEntityRMCSyntheticMaintenanceStationRuMC
     edges:
     - to: start
       completed:
@@ -71,30 +71,30 @@
         doAfter: 2
 
 - type: entity
-  id: AU14CustomEntity_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+  id: AU14CustomEntityRMCSyntheticMaintenanceStationRuMC
   parent: RMCSyntheticMaintenanceStation
   suffix: AU14 Custom Construction
   components:
   - type: Construction
-    graph: AU14CustomGraph_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+    graph: AU14CustomGraphRMCSyntheticMaintenanceStationRuMC
     node: target
   - type: StructuralSupport
     cantileverSpan: 2
 
 - type: entity
-  id: AU14CustomEntityMid_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+  id: AU14CustomEntityMidRMCSyntheticMaintenanceStationRuMC
   parent: AU14CustomConstructionFrame
   suffix: AU14 Custom Construction (in progress)
   components:
   - type: Construction
-    graph: AU14CustomGraph_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+    graph: AU14CustomGraphRMCSyntheticMaintenanceStationRuMC
     node: mid
 
 - type: construction
-  id: AU14Custom_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+  id: AU14CustomRMCSyntheticMaintenanceStationRuMC
   name: "synthetic maintenance station"
   description: "A wall-mounted maintenance cradle for synthetic units."
-  graph: AU14CustomGraph_RMCSyntheticMaintenanceStation__RuMC__EngineeringRuMC
+  graph: AU14CustomGraphRMCSyntheticMaintenanceStationRuMC
   startNode: start
   targetNode: target
   category: construction-category-rumc-engineering
