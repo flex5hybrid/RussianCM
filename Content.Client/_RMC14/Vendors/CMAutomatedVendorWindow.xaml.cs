@@ -30,6 +30,7 @@ public sealed partial class CMAutomatedVendorWindow : DefaultWindow
         ReagentsStrip.PanelOverride = Strip(CrtTerminalPalette.Surface2);
         FooterStrip.PanelOverride = Strip(CrtTerminalPalette.Surface1);
 
+        Heading.Text = Loc.GetString("cmu-vendor-heading");
         Heading.FontOverride = _kit.Title;
         Heading.FontColorOverride = CrtTerminalPalette.TextBright;
         SummaryLabel.FontOverride = _kit.Small;
@@ -71,6 +72,11 @@ public sealed partial class CMAutomatedVendorWindow : DefaultWindow
     public void SetNothingFound(bool empty)
     {
         EmptyLabel.Visible = empty;
+    }
+
+    public void SetReagentsVisible(bool visible)
+    {
+        ReagentsStrip.Visible = visible;
     }
 
     private static StyleBoxFlat Strip(Color color)
