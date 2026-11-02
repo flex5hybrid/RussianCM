@@ -27,8 +27,9 @@ public sealed partial class TTSSystem
 
     private bool IsYautjaSpeaker(EntityUid uid)
     {
-        return HasComp<YautjaComponent>(uid) ||
-               TryComp<HumanoidProfileComponent>(uid, out var profile) && profile.Species.Id == "Yautja";
+        return HasComp<YautjaComponent>(uid)
+            || (TryComp<HumanoidProfileComponent>(uid, out var profile)
+                && profile.Species.Id == "Yautja");
     }
 
     private string EnforceYautjaVoice(EntityUid uid, string voiceId)
@@ -36,8 +37,8 @@ public sealed partial class TTSSystem
         if (!IsYautjaSpeaker(uid))
             return voiceId;
 
-        return _prototypeManager.TryIndex<TTSVoicePrototype>(voiceId, out var voice) &&
-               CMUTTSVoiceSelection.IsYautjaSelectable(voice)
+        return _prototypeManager.TryIndex<TTSVoicePrototype>(voiceId, out var voice)
+            && CMUTTSVoiceSelection.IsYautjaSelectable(voice)
             ? voiceId
             : CMUTTSVoiceSelection.DefaultYautjaVoice;
     }
@@ -47,12 +48,13 @@ public sealed partial class TTSSystem
         if (IsYautjaSpeaker(ent.Owner))
         {
             ent.Comp.VoicePrototypeId = EnforceYautjaVoice(
-                ent.Owner, ent.Comp.VoicePrototypeId ?? string.Empty);
+                ent.Owner,
+                ent.Comp.VoicePrototypeId ?? string.Empty);
             return;
         }
 
-        if (!string.IsNullOrWhiteSpace(ent.Comp.VoicePrototypeId) &&
-            ent.Comp.VoicePrototypeId != CMUTTSVoiceSelection.RandomVoice)
+        if (!string.IsNullOrWhiteSpace(ent.Comp.VoicePrototypeId)
+            && ent.Comp.VoicePrototypeId != CMUTTSVoiceSelection.RandomVoice)
             return;
 
         var sex = GetSpeakerSex(ent);
