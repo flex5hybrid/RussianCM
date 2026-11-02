@@ -329,7 +329,7 @@
             state: weapon
         - name: VDV Zvezda assault Team
           description: Summon a full VDV Zvezda assault team.
-          cost: 65
+          cost: 50
           events:
           - !type:TechPartySpawnEvent
             thirdPartyId: Zvezda

@@ -17,7 +17,6 @@
   - type: CMAutomatedVendor
     sections:
     - name: Fatigues
-      excludeSquadSpecializations: [ UPPSpecVDV, UPPSpecRecon ]
       entries:
       - id: AU14FatiguesUPP
         amount: 40
@@ -26,12 +25,13 @@
       squadSpecializations: [ UPPSpecVDV ]
       entries:
       - id: RuMCFatiguesVDV
+        maxPerUser: 1
     - name: cmu-vendor-section-upp-recon-fatigues
       choices: { CMUPlatoonFatigues: 1 }
       squadSpecializations: [ UPPSpecRecon ]
       entries:
-      - id: CMJumpsuitSPP
-      - id: AU14FatiguesUPP
+      - id: RuMCFatiguesRecon
+        maxPerUser: 1
     - name: Footwear
       entries:
       - id: RMCBootsSPPBlackFilled
@@ -257,7 +257,7 @@
       - id: RMCGlassesTriMaxBronze
         amount: 25
     - name: Patches
-      squadSpecializations: [ UPPSpecRecon ]
+      excludeSquadSpecializations: [ UPPSpecVDV ]
       entries:
       - id: AU14PatchUPP
         amount: 80
@@ -267,9 +267,9 @@
       squadSpecializations: [ UPPSpecVDV ]
       entries:
       - id: RuMCPatchVDV
-        amount: 80
+        maxPerUser: 1
       - id: RuMCPatchVDValt
-        amount: 80
+        maxPerUser: 1
 
 - type: entity
   parent: ColMarTechBase

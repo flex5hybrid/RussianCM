@@ -28,22 +28,24 @@ cmu-vendor-section-sl-doctrine = Планшет доктрины отделен�
 cmu-vendor-section-upp-vdv-fatigues = [ВДВ] Форма десанта
 cmu-vendor-section-upp-vdv-headgear = [ВДВ] Головные уборы десанта
 cmu-vendor-section-upp-vdv-armor = [ВДВ] Бронежилеты десанта
-cmu-vendor-section-upp-vdv-weapons = [ВДВ] Вооружение десанта
-cmu-vendor-section-upp-vdv-ammo = [ВДВ] Боеприпасы десанта
 
 cmu-vendor-section-upp-recon-fatigues = [Разведка] Камуфляжная форма
 cmu-vendor-section-upp-recon-headgear = [Разведка] Маскировочные уборы
 cmu-vendor-section-upp-recon-armor = [Разведка] Облегченная броня
-cmu-vendor-section-upp-recon-weapons = [Разведка] Спецвооружение
-cmu-vendor-section-upp-recon-ammo = [Разведка] Боеприпасы и оптика
 
 # Specializations: UPP
 rmc-squad-spec-upp-vdv-name = Воздушно-десантные войска (ВДВ)
-rmc-squad-spec-upp-vdv-desc = Десантно-штурмовая доктрина быстрого прорыва. Маневренные карабины, пистолеты-пулеметы и облегченная броня для максимальной мобильности на поле боя.
-rmc-squad-spec-upp-vdv-summary = Экипировка: Голубой берет ВДВ, шлем 6Б-ВДВ, бронежилеты ВДВ. Вооружение: Автомат Тип 71C, ПП Тип 19, дробовик Тип 23.
+rmc-squad-spec-upp-vdv-desc = Десантно-штурмовая доктрина быстрого прорыва.
+rmc-squad-spec-upp-vdv-summary = Экипировка: Голубой берет ВДВ, шлем 6Б-ВДВ, бронежилеты ВДВ.
 rmc-squad-spec-upp-vdv-announced = [ШТАБ ОТРЯДА]: Отделение действует по десантно-штурмовой доктрине ВДВ! Получите форму и оружие десанта в автоматах снабжения!
 
 rmc-squad-spec-upp-recon-name = Разведка и егеря («Разбойники»)
-rmc-squad-spec-upp-recon-desc = Диверсионная доктрина скрытных операций и дальнего огневого поражения. Маскировочные накидки, снайперские винтовки Тип 88 и бесшумное оружие.
-rmc-squad-spec-upp-recon-summary = Экипировка: Панамы, маскировочный капюшон M8, бесшумная броня. Вооружение: Марксманская винтовка Тип 88 DMR, бесшумный ПП Тип 64, карабин Тип 73, глушители.
-rmc-squad-spec-upp-recon-announced = [ШТАБ ОТРЯДА]: Отделение действует по доктрине Разведки! Получите маскировочную экипировку и бесшумное оружие в автоматах снабжения!
+rmc-squad-spec-upp-recon-desc = Диверсионная доктрина скрытных операций и дальнего огневого поражения.
+rmc-squad-spec-upp-recon-summary = Экипировка: Панамы, броне берет, лёгкая броня.
+rmc-squad-spec-upp-recon-announced = [ШТАБ ОТРЯДА]: Отделение действует по доктрине Разведки! Получите форму и оружие разведки в автоматах снабжения!
+
+# Specializations: UA
+rmc-squad-spec-uscm-forecon-name = Разведка и егеря («FORECON»)
+rmc-squad-spec-uscm-forecon-desc = Диверсионная доктрина скрытных операций и дальнего огневого поражения.
+rmc-squad-spec-uscm-forecon-summary = Экипировка: Панамы, броне берет, лёгкая броня.
+rmc-squad-spec-uscm-forecon-announced = [ШТАБ ОТРЯДА]: Отделение действует по доктрине Разведки! Получите форму и оружие разведки в автоматах снабжения!

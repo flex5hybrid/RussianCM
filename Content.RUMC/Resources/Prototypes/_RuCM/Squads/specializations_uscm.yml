@@ -1,0 +1,10 @@
+- type: squadSpecialization
+  id: USCMSpecFORECON
+  name: rmc-squad-spec-uscm-forecon-name
+  description: rmc-squad-spec-uscm-forecon-desc
+  summary: rmc-squad-spec-uscm-forecon-summary
+  faction: UA
+  icon:
+    sprite: _RMC14/Objects/Clothing/Head/SPP/beret.rsi
+    state: icon
+  announcement: rmc-squad-spec-uscm-forecon-announced

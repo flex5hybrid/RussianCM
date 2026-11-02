@@ -71,7 +71,8 @@
       CHTORM_PMC_BEAR: 11000
       GROZA_PMC_BEAR: 9000
       SKALA_PMC_BEAR: 7000
-      Moscow: 10000
+      Moskva: 10000
+      Kupol: 5000
       Liquidators: 7000 #only flamethrowers
       Migrant_UPP: 1000 #They don’t speak English.
 
@@ -164,4 +165,3 @@
     replenishInterval: 60
     callableParties:
       Freelancers: 4500
-      

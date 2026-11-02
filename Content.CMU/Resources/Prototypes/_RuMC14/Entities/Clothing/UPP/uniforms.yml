@@ -97,3 +97,20 @@
   - type: Tag
     tags:
     - RMCUniformSPP
+
+#Razbojniki
+
+- type: entity
+  parent: RMCMarineUniformBase
+  id: RuMCFatiguesRecon
+  name: Recon combat fatigues
+  description: Standard fatigues for UPP Recon. Light Kevlar lining for shrapnel protection. Worn by elite operators on missions where failure is not an option.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/uniform/Razbojniki.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - AU14PatchUPP
+  - type: Tag
+    tags:
+    - RMCUniformSPP
