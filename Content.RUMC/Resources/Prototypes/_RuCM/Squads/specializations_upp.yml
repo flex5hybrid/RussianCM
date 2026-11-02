@@ -1,0 +1,21 @@
+- type: squadSpecialization
+  id: UPPSpecVDV
+  name: rmc-squad-spec-upp-vdv-name
+  description: rmc-squad-spec-upp-vdv-desc
+  summary: rmc-squad-spec-upp-vdv-summary
+  faction: UPP
+  icon:
+    sprite: _RMC14/Objects/Clothing/Head/SPP/beret.rsi
+    state: icon
+  announcement: rmc-squad-spec-upp-vdv-announced
+
+- type: squadSpecialization
+  id: UPPSpecRecon
+  name: rmc-squad-spec-upp-recon-name
+  description: rmc-squad-spec-upp-recon-desc
+  summary: rmc-squad-spec-upp-recon-summary
+  faction: UPP
+  icon:
+    sprite: _RMC14/Objects/Clothing/Head/SPP/beret.rsi
+    state: icon
+  announcement: rmc-squad-spec-upp-recon-announced

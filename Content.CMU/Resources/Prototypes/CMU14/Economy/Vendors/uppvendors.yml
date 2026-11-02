@@ -20,6 +20,18 @@
       entries:
       - id: AU14FatiguesUPP
         amount: 40
+    - name: cmu-vendor-section-upp-vdv-fatigues
+      choices: { CMUPlatoonFatigues: 1 }
+      squadSpecializations: [ UPPSpecVDV ]
+      entries:
+      - id: RuMCFatiguesVDV
+        maxPerUser: 1
+    - name: cmu-vendor-section-upp-recon-fatigues
+      choices: { CMUPlatoonFatigues: 1 }
+      squadSpecializations: [ UPPSpecRecon ]
+      entries:
+      - id: RuMCFatiguesRecon
+        maxPerUser: 1
     - name: Footwear
       entries:
       - id: RMCBootsSPPBlackFilled
@@ -45,6 +57,7 @@
       - id: AU14WebbingDropPouchUPP
         amount: 20
     - name: Headgear
+      excludeSquadSpecializations: [ UPPSpecVDV, UPPSpecRecon ]
       entries:
       - id: AU14UPPNavalInfantryHelmet
         amount: 40
@@ -58,6 +71,32 @@
         amount: 40
       - id: RMCM5CameraGear
         amount: 30
+    - name: cmu-vendor-section-upp-vdv-headgear
+      squadSpecializations: [ UPPSpecVDV ]
+      entries:
+      - id: RuMCHeadBeretVDV
+        amount: 40
+      - id: RuMCUPPInfantryHelmetVDV
+        amount: 40
+      - id: RuMCHeadCapVDV
+        amount: 20
+      - id: RuMCHeadBoonieVDV
+        amount: 15
+      - id: RMCM5CameraGear
+        amount: 30
+    - name: cmu-vendor-section-upp-recon-headgear
+      squadSpecializations: [ UPPSpecRecon ]
+      entries:
+      - id: AU14UPPBoonie
+        amount: 40
+      - id: RuMCHeadBeretSSO
+        amount: 30
+      - id: AU14UPPPatrolCap
+        amount: 20
+      - id: AU14HeadCommandoBeanie
+        amount: 20
+      - id: RMCM5CameraGear
+        amount: 30
     - name: Heads Up Display
       entries:
       - id: RMCVisorSquad
@@ -65,12 +104,31 @@
       - id: RMCVisorWelding
         amount: 8
     - name: Armor
+      excludeSquadSpecializations: [ UPPSpecVDV, UPPSpecRecon ]
       entries:
       - id: AU14UPPArmor
         amount: 40
       - id: AU14UPPArmorMinimalistic
         amount: 30
       - id: AU14UPPArmorBulky
+        amount: 25
+    - name: cmu-vendor-section-upp-vdv-armor
+      squadSpecializations: [ UPPSpecVDV ]
+      entries:
+      - id: RuMCUPPArmorVDV
+        amount: 40
+      - id: RuMCUPPArmorVDV_Light
+        amount: 30
+      - id: RuMCUPPArmorVDV_Heavy
+        amount: 25
+    - name: cmu-vendor-section-upp-recon-armor
+      squadSpecializations: [ UPPSpecRecon ]
+      entries:
+      - id: AU14UPPArmor
+        amount: 40
+      - id: AU14UPPArmorMinimalistic
+        amount: 30
+      - id: AU14ArmorArmyUPP
         amount: 25
     - name: Armor Components
       entries:
@@ -199,11 +257,19 @@
       - id: RMCGlassesTriMaxBronze
         amount: 25
     - name: Patches
+      excludeSquadSpecializations: [ UPPSpecVDV ]
       entries:
       - id: AU14PatchUPP
         amount: 80
       - id: AU14PatchUPPNavalInfantry
         amount: 80
+    - name: Patches
+      squadSpecializations: [ UPPSpecVDV ]
+      entries:
+      - id: RuMCPatchVDV
+        maxPerUser: 1
+      - id: RuMCPatchVDValt
+        maxPerUser: 1
 
 - type: entity
   parent: ColMarTechBase
@@ -398,6 +464,12 @@
     - AU14JobOPFOROfficerMedical
     - AU14JobOPFORAuxSupportSynth
     sections:
+    - name: cmu-vendor-section-upp-vdv-fatigues
+      choices: { CMUPlatoonFatigues: 1 }
+      squadSpecializations: [ UPPSpecVDV ]
+      entries:
+      - id: RuMCFatiguesVDV_medic
+        amount: 20
     # - name: cmu-vendor-section-pressurized-canisters # RuMC edit
     #   entries:
     #   - id: RMCPouchReagentCanister
@@ -547,7 +619,7 @@
     - name: Fatigues
       choices: { CMUPlatoonAirCrewFatigues: 1 }
       entries:
-      - id: AU14BoilerFatiguesUPP
+      - id: RuMCUPPFatiguesPilot
     - name: Body Armor
       choices: { CMUPlatoonAirCrewVest: 1 }
       entries:
@@ -565,13 +637,7 @@
     - name: Headgear
       choices: { CMUPlatoonAirCrewHeadgear: 1 }
       entries:
-      - id: AU14UPPPilot
-      - id: AU14JungleM50Helmet
-      - id: AU14CamoM50Helmet
-      - id: AU14UPPPatrolCap
-      - id: AU14UPPBoonie
-      - id: RuMCUPPNavalInfantryCapUshanka
-      - id: RuMCHeadBeretMarien
+      - id: RuMCUPPPilotHelmet
     - name: Flight Visor
       choices: { CMUPlatoonAirCrewFlightVisor: 1 }
       entries:
@@ -840,6 +906,7 @@
       - id: AU14ArmorSmartGunDesertCombatHarnessUPP
       - id: RuMCUPPPouchDrum
       - id: RMCScabbardMacheteSGFilled
+      - id: AU14GlassesSmartGunSightUPP
     - name: au14-vendor-section-headgear
       choices: { CMHelmet: 1 }
       entries:
@@ -921,6 +988,11 @@
     - AU14JobGOVFORSquadSergeantUPP
     - AU14JobGOVFORSquadSergeantWYPMC
     sections:
+    - name: cmu-vendor-section-sl-doctrine
+      takeAll: CMDoctrine
+      entries:
+      - id: UPPSquadSpecializationTablet
+        recommended: true
     - name: cmu-vendor-section-sl-scopes
       choices: { CMUSquadLeaderScope: 1 }
       entries:
@@ -1053,6 +1125,8 @@
         maxPerUser: 1
       - id: RMCAttachmentTwoPointSling
         maxPerUser: 1
+      - id: RMCAttachmentVerticalGrip
+        maxPerUser: 1
     - name: Special Ammunition
       choices: { CMUSpecialAmmo: 2 }
       entries:
@@ -1156,6 +1230,11 @@
     - AU14JobGOVFOROfficerEngi
     - AU14JobOPFOROfficerEngi
     sections:
+    - name: cmu-vendor-section-upp-vdv-fatigues
+      choices: { CMUPlatoonFatigues: 1 }
+      squadSpecializations: [ UPPSpecVDV ]
+      entries:
+      - id: RuMCFatiguesVDV_eng
     - name: Engineer Set
       takeAll: CMEngineerSet
       entries:
@@ -1390,9 +1469,11 @@
       - id: RMCWeaponRifleType71
         amount: 6
       - id: RMCWeaponRifleType71C
-        amount: 3
+        amount: 2
       - id: RMCWeaponRifleAK4047
-        amount: 10
+        amount: 6
+      - id: RuMCWeaponRifleAK7074
+        amount: 2
       - id: RuMCRifleVAL
         amount: 2
       - id: RMCWeaponPistolNP92Empty
@@ -1502,8 +1583,6 @@
       #RuMCBoxBulletsRifleAG80AP
       #RuMCBoxBulletsRifle10x24mmAP
       #RuMCBoxBulletsRifleType71AP
-      #
-      #
     - name: explosives
       entries:
       - id: CMUBoxGrenadeTraining
@@ -1587,7 +1666,11 @@
       - id: RuMCUPPNavalInfantryHeavyHelmet2
         amount: 4
       - id: RuMCUPPArmorCrew
-        amount: 10
+        amount: 4
+      - id: RuMCUPPCrewHelmet
+        amount: 4
+      - id: RuMCUPPFatiguesCrew
+        amount: 4
     - name: Devices
       entries:
       - id: AU14PowerCellSmartgunUPP
@@ -1686,7 +1769,24 @@
       - id: RuMCUPPNavalInfantryCapUshanka
         amount: 40
     - name: Fatigues
+      excludeSquadSpecializations: [ UPPSpecVDV, UPPSpecRecon ]
       entries:
+      - id: AU14FatiguesUPP
+        amount: 40
+    - name: cmu-vendor-section-upp-vdv-fatigues
+      squadSpecializations: [ UPPSpecVDV ]
+      entries:
+      - id: RuMCFatiguesVDV
+        amount: 40
+      - id: RuMCFatiguesVDV_eng
+        amount: 20
+      - id: RuMCFatiguesVDV_medic
+        amount: 20
+    - name: cmu-vendor-section-upp-recon-fatigues
+      squadSpecializations: [ UPPSpecRecon ]
+      entries:
+      - id: CMJumpsuitSPP
+        amount: 40
       - id: AU14FatiguesUPP
         amount: 40
     - name: Footwear

@@ -1,0 +1,131 @@
+- type: job
+  parent: CMJobBase
+  id: RuMCUPPNorcommTech
+  roundSide: ThirdParty
+  roundForce: UPP
+  roundRole: RuMCUPPNorcommTech
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: spp_pvt
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuMCSquadNorcommLiu
+  - type: Skills
+    skills:
+      RMCSkillEngineer: 3
+      RMCSkillConstruction: 3
+      RMCSkillFirearms: 1
+      RMCSkillMeleeWeapons: 1
+      RMCSkillPolice: 1
+      RMCSkillFireman: 4
+      RMCSkillVehicles: 2
+      RMCSkillJtac: 1
+  - type: JobPrefix
+    prefix: rumc-job-prefix-rifleman
+  - type: MarineOrders
+  - type: RMCTrackable
+  - type: RMCPointing
+  - type: Language
+    spokenLanguages:
+    - Polish
+    - English
+    - Russian
+    - Spanish
+    - Mandarin
+    - German
+    understoodLanguages:
+    - Polish
+    - English
+    - Russian
+    - Spanish
+    - Mandarin
+    - German
+    currentLanguage: Russian
+    defaultLanguage: Russian
+
+  name: Technician
+  description: Technician
+  playTimeTracker: RuMCJobUPPNorcommTech
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    UPP_Private:
+      entity: AU14ChevronUPPNIPrivate
+      requirements: []
+    UPP_Gefreiter:
+      entity: AU14ChevronUPPNIGefreiter
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommTech
+        time: 1800 # 0.5 hours
+    UPP_SeniorGefreiter:
+      entity: AU14ChevronUPPNISeniorGefreiter
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommTech
+        time: 5400 # 1.5 hours
+  spawnMenuRoleName: Technician
+  startingGear: RuMCGearUPPNorcommTech
+  greeting: rumc-Technician-greeting
+  icon: "RuMCJobIconUPPNorcommTech"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforSquad
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicUPPBEAR
+  id: RuMCJobUPPNorcommTech
+  name: Technician
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuMCSquadNorcommLiu
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Technician
+    description: You are part of a UPP Norcomm Lui team! Your job is to burn every biological threat on the colony to the ground. Not one step back!
+    job: RuMCUPPNorcommTech
+    raffle:
+      settings: short
+
+- type: startingGear
+  #parent: RuMCGearUPPBEARbase
+  id: RuMCGearUPPNorcommTech
+  equipment:
+    id: RuCMIDCardUPPNorcommTech
+    outerClothing: RMCOuterClothingExternalWebbingBrownFull
+    jumpsuit: RuMCFatiguesNoLu
+    shoes: RMCBootsSPPFilled
+    head: RuMCHeadCapNoLu
+    belt: AU14BeltUtilityFilled
+    pocket1: AU14PouchIFAKFill
+    pocket2: RuMCUPPPouchConstructionFill
+    back: RuMCUPPNavalInfantrySatchel
+    ears: RuMCHeadsetNorcommLiu
+    suitstorage: AU14BeltHolsterPistolUPPFull
+  storage:
+    back:
+    - RuMCirpUPP
+    - CMSheetMetal
+    - CMSheetMetal
+    - CMSheetPlasteel50
+    - RMCWeldingGogglesSuperior
+  inhand:
+    - AU14GlovesCBRNUPP
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconUPPNorcommTech
+  icon:
+    sprite: _RuMC14/Interface/upp_icons.rsi
+    state: UPP-Norcomm_Technician
+
+- type: playTimeTracker
+  id: RuMCJobUPPNorcommTech

@@ -1,0 +1,144 @@
+- type: job
+  parent: CMJobBase
+  id: RuMCUPPNorcommDoctor
+  roundSide: ThirdParty
+  roundForce: UPP
+  roundRole: RuMCUPPNorcommDoctor
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: spp_pvt
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuMCSquadNorcommLiu
+  - type: Skills
+    skills:
+      RMCSkillEngineer: 3
+      RMCSkillConstruction: 3
+      RMCSkillFirearms: 1
+      RMCSkillMeleeWeapons: 1
+      RMCSkillPolice: 1
+      RMCSkillFireman: 4
+      RMCSkillVehicles: 2
+      RMCSkillJtac: 1
+  - type: JobPrefix
+    prefix: rumc-job-prefix-rifleman
+  - type: MarineOrders
+  - type: RMCTrackable
+  - type: RMCPointing
+  - type: Language
+    spokenLanguages:
+    - Polish
+    - English
+    - Russian
+    - Spanish
+    - Mandarin
+    - German
+    understoodLanguages:
+    - Polish
+    - English
+    - Russian
+    - Spanish
+    - Mandarin
+    - German
+    currentLanguage: Russian
+    defaultLanguage: Russian
+
+  name: Doctor
+  description: Doctor Engineer
+  playTimeTracker: RuMCJobUPPNorcommDoctor
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    UPP_Plutonowy:
+      entity: AU14ChevronUPPNIPlutonowy
+      requirements: []
+    UPP_Sergeant:
+      entity: AU14ChevronUPPNISergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommDoctor
+        time: 1800 # 0.5 hours
+    UPP_SeniorSergeant:
+      entity: AU14ChevronUPPNISeniorSergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommDoctor
+        time: 5400 # 1.5 hours
+    UPP_JuniorLieutenant:
+      entity: AU14ChevronUPPNIJuniorLieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommDoctor
+        time: 7200 # 2 hours
+    UPP_Lieutenant:
+      entity: AU14ChevronUPPNILieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommDoctor
+        time: 10800 # 3 hours
+  spawnMenuRoleName: Doctor
+  startingGear: RuMCGearUPPNorcommDoctor
+  greeting: rumc-Doctor-greeting
+  icon: "RuMCJobIconUPPNorcommDoctor"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforSquad
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicUPPBEAR
+  id: RuMCJobUPPNorcommDoctor
+  name: Doctor
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuMCSquadNorcommLiu
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Doctor
+    description: You are part of a UPP Norcomm Lui team! Your job is to burn every biological threat on the colony to the ground. Not one step back!
+    job: RuMCUPPNorcommDoctor
+    raffle:
+      settings: short
+
+- type: startingGear
+  parent: RuMCGearUPPBEARbase
+  id: RuMCGearUPPNorcommDoctor
+  equipment:
+    id: RuCMIDCardUPPNorcommDoctor
+    outerClothing: RuMCUPPArmorNoLu_Heavy
+    jumpsuit: RuMCFatiguesNoLu
+    shoes: RMCBootsSPPFilled
+    head: RuMCHeadCapNoLu
+    belt: AU14BeltUtilityFilled
+    pocket1: AU14PouchIFAKFill
+    pocket2: RuMCUPPPouchConstructionFill
+    back: RuMCUPPNavalInfantrySatchel
+    ears: RuMCHeadsetNorcommLiu
+    suitstorage: AU14BeltHolsterPistolUPPFull
+  storage:
+    back:
+    - RuMCirpUPP
+    - CMSheetMetal
+    - CMSheetPlasteel50
+    - AU14GrenadeHighExplosiveUPP
+    - AU14GrenadeHighExplosiveUPP
+    - RMCWeldingGogglesSuperior
+  inhand:
+    - AU14GlovesCBRNUPP
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconUPPNorcommDoctor
+  icon:
+    sprite: _RuMC14/Interface/upp_icons.rsi
+    state: UPP-Norcomm_Doctor
+
+- type: playTimeTracker
+  id: RuMCJobUPPNorcommDoctor

@@ -123,6 +123,7 @@
   equipment:
     id: RuCMIDCardUPPBEARRifleman
     ears: RuMCHeadsetBEARGROZA
+    suitstorage: RuMCWeaponRifleAK13Tactical_alt1
   storage:
     back:
     - AU14GrenadeHighExplosiveUPP

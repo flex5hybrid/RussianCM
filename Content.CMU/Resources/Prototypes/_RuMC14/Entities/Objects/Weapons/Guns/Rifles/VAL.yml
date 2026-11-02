@@ -37,20 +37,20 @@
   - type: RMCSelectiveFire
     baseFireModes:
     - FullAuto
-    recoilUnwielded: 2
-    scatterWielded: 3
-    scatterUnwielded: 10
+    recoilUnwielded: 4
+    scatterWielded: 4
+    scatterUnwielded: 11
     baseFireRate: 5.5
     modifiers:
       FullAuto:
-        maxScatterModifier: 8
-        shotsToMaxScatter: 8
+        maxScatterModifier: 13
+        shotsToMaxScatter: 4
   - type: MeleeWeapon
     damage:
       types:
         Blunt: 15
   - type: RMCWeaponAccuracy
-    accuracyMultiplier: 1.3
+    accuracyMultiplier: 1.25
     accuracyMultiplierUnwielded: 0.65
   - type: ItemSlots
     slots:
@@ -107,7 +107,7 @@
     medium: 0.8
     heavy: 0.77
   - type: WieldDelay
-    baseDelay: 0.22
+    baseDelay: 0.3
 
 - type: entity
   parent: RuMCRifleVAL

@@ -1,0 +1,47 @@
+- type: entity
+  parent: CMIDCardBase
+  categories: [ HideSpawnMenu ]
+  id: RuCMIDCardUPPSOFCommander
+  name: SOF Commander ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPSOFCommander
+  - type: ItemIFF
+    factions:
+    - AUUpp
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPSOFRifleman
+  categories: [ HideSpawnMenu ]
+  name: SOF Rifleman ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPSOFRifleman
+  - type: ItemIFF
+    factions:
+    - AUUpp
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPSOFEngineer
+  categories: [ HideSpawnMenu ]
+  name: SOF Engineer ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPSOFEngineer
+  - type: ItemIFF
+    factions:
+    - AUUpp
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPSOFMachinegunner
+  categories: [ HideSpawnMenu ]
+  name: SOF Machinegunner ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPSOFMachinegunner
+  - type: ItemIFF
+    factions:
+    - AUUpp

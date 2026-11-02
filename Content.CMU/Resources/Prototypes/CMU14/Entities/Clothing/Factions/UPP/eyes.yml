@@ -12,7 +12,7 @@
     - state: icon
       map: [ "icon" ]
   - type: Clothing
-    sprite: _RMC14/Objects/Clothing/Eyes/Glasses/m42_scoutsight.rsi
+    sprite: CMU14/Clothing/UPP/eyes/rvs37_sight.rsi
   - type: NightVisionItem
     skills:
       RMCSkillSmartGun: 1

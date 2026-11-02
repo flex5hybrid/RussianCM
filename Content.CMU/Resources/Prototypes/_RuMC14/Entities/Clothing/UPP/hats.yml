@@ -1,41 +1,5 @@
 - type: entity
   parent: CMHeadCap
-  id: RuMCHeadBeretVDV
-  name: blue VDV beret
-  description: No one but us! The beret, created for the Airborne Forces, has become a symbol of strength and willpower.
-  components:
-  - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/beret/blueBeret.rsi
-  - type: Clothing
-    sprite: _RuMC14/Clothing/UPP/beret/blueBeret.rsi
-  - type: Appearance
-
-- type: entity
-  parent: CMHeadCap
-  id: RuMCHeadCapVDV
-  name: desert cap
-  description: An ordinary desert cap for UPP troops. Comfortable and so beautiful!
-  components:
-  - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/cap/desertCap.rsi
-  - type: Clothing
-    sprite: _RuMC14/Clothing/UPP/cap/desertCap.rsi
-  - type: Appearance
-
-- type: entity
-  parent: CMHeadCap
-  id: RuMCHeadBoonieVDV
-  name: desert boonie
-  description: Something you wouldn't want to go into the desert without.
-  components:
-  - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/cap/desertBoonie.rsi
-  - type: Clothing
-    sprite: _RuMC14/Clothing/UPP/cap/desertBoonie.rsi
-  - type: Appearance
-
-- type: entity
-  parent: CMHeadCap
   id: RuMCHeadBeretMarien
   name: black Marien beret
   description: The beret, created for the Marine, has become a symbol of unbending character and endurance.
@@ -44,18 +8,6 @@
     sprite: _RuMC14/Clothing/UPP/beret/blackBeret.rsi
   - type: Clothing
     sprite: _RuMC14/Clothing/UPP/beret/blackBeret.rsi
-  - type: Appearance
-
-- type: entity
-  parent: CMHeadCap
-  id: RuMCHeadBeretSSO
-  name: red SSO beret
-  description: Special forces take it. If you see it, it means the situation has reached its peak.
-  components:
-  - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/beret/redBeret.rsi
-  - type: Clothing
-    sprite: _RuMC14/Clothing/UPP/beret/redBeret.rsi
   - type: Appearance
 
 - type: entity
@@ -112,12 +64,102 @@
 
 - type: entity
   parent: CMHeadCap
-  id: RuMCHeadUshankaVDV
-  name: ushanka VDV
+  id: RuMCHeadUshankaMilitia
+  name: ushanka militia
   description: It shields the head from the wind of high mountains and cold steppes.
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/cap/uppushankaMVD.rsi
   - type: Clothing
     sprite: _RuMC14/Clothing/UPP/cap/uppushankaMVD.rsi
+  - type: Appearance
+
+#VDV
+
+- type: entity
+  parent: CMHeadCap
+  id: RuMCHeadBeretVDV
+  name: blue VDV beret
+  description: No one but us! The beret, created for the Airborne Forces, has become a symbol of strength and willpower.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/beret/blueBeret.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/UPP/beret/blueBeret.rsi
+  - type: Appearance
+
+- type: entity
+  parent: CMHeadCap
+  id: RuMCHeadCapVDV
+  name: desert cap
+  description: An ordinary desert cap for UPP troops. Comfortable and so beautiful!
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/cap/desertCap.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/UPP/cap/desertCap.rsi
+  - type: Appearance
+
+- type: entity
+  parent: CMHeadCap
+  id: RuMCHeadBoonieVDV
+  name: desert boonie
+  description: Something you wouldn't want to go into the desert without.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/cap/desertBoonie.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/UPP/cap/desertBoonie.rsi
+  - type: Appearance
+
+#SOF
+
+- type: entity
+  parent: CMHeadCap
+  id: RuMCHeadBeretSSO
+  name: red SOF beret
+  description: Special forces take it. If you see it, it means the situation has reached its peak.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/beret/redBeret.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/UPP/beret/redBeret.rsi
+  - type: Appearance
+
+#Norcomm Liu
+
+- type: entity
+  parent: CMHeadCap
+  id: RuMCHeadBoonieNoLu
+  name: Norcomm Liu field boonie
+  description: A lightweight field hat issued to Norcomm Liu personnel. Designed for long shifts in harsh environments. Features the company's insignia on the side.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/NorcommLiu/cap/PIONER_Boonie.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/NorcommLiu/cap/PIONER_Boonie.rsi
+  - type: Appearance
+
+- type: entity
+  parent: CMHeadCap
+  id: RuMCHeadUshankaNoLu
+  name: Norcomm Liu winter ushanka
+  description: A standard-issue winter hat for Norcomm Liu workers and security. Keeps the head warm during long shifts on cold colony worlds. Bears the company insignia.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/NorcommLiu/cap/PIONER_ushanka.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/NorcommLiu/cap/PIONER_ushanka.rsi
+  - type: Appearance
+
+- type: entity
+  parent: CMHeadCap
+  id: RuMCHeadCapNoLu
+  name: Norcomm Liu service cap
+  description: A simple service cap for Norcomm Liu engineers and technicians. Practical, durable, and marked with the corporate logo. For those who build the future of the Union.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/NorcommLiu/cap/PIONER_cap.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/NorcommLiu/cap/PIONER_cap.rsi
   - type: Appearance

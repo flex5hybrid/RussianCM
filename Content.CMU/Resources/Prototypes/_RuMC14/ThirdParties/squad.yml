@@ -25,6 +25,56 @@
 
 - type: entity
   parent: SquadBase
+  id: RuMCSquadVDV
+  name: VDV
+  components:
+  - type: SquadTeam
+    color: "#b23a3a"
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: UPPSOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_spp_alpha
+    leaderIcon:
+      sprite: _RMC14/Interface/cm_job_icons.rsi
+      state: upp_lt
+    canSupplyDrop: false
+    group: VDV
+  - type: Tag
+    tags:
+    - RuMCSquadVDV
+
+- type: entity
+  parent: SquadBase
+  id: RuMCSquadSOF
+  name: SOF
+  components:
+  - type: SquadTeam
+    color: "#b23a3a"
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: UPPSOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_spp_alpha
+    leaderIcon:
+      sprite: _RMC14/Interface/cm_job_icons.rsi
+      state: upp_lt
+    canSupplyDrop: false
+    group: SOF
+  - type: Tag
+    tags:
+    - RuMCSquadSOF
+
+- type: entity
+  parent: SquadBase
   id: RuMCSquadLiquidator
   name: Liquidators
   components:
@@ -47,6 +97,40 @@
   - type: Tag
     tags:
     - RuMCSquadLiquidator
+
+- type: entity
+  parent: SquadBase
+  id: RuMCSquadNorcommLiu
+  name: Norcomm Liu
+  components:
+  - type: SquadTeam
+    color: "#b23a3a"
+    blacklistedSquadArmor:
+    - Helmet
+    - Goggles
+    - Armor
+    - Gloves
+    radio: UPPSOF
+    minimapBackground:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: background_spp_alpha
+    leaderIcon:
+      sprite: _RMC14/Interface/cm_job_icons.rsi
+      state: upp_lt
+    canSupplyDrop: false
+    group: NorcommLiu
+  - type: Tag
+    tags:
+    - RuMCSquadNorcommLiu
+
+- type: Tag
+  id: RuMCSquadVDV
+
+- type: Tag
+  id: RuMCSquadSOF
+
+- type: Tag
+  id: RuMCSquadNorcommLiu
 
 - type: Tag
   id: RuMCSquadLiquidator

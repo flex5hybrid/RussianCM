@@ -1,0 +1,61 @@
+#Боевая группа 10
+- type: partySpawn
+  id: ZvezdaSpawn
+  leadersToSpawn:
+    RuMCJobUPPVDVCommander: 1
+  gruntsToSpawn:
+    RuMCJobUPPVDVDeputyCommander: 1
+    RuMCJobUPPVDVEngineer: 1
+    RuMCJobUPPVDVMachinegunner: 2
+    RuMCJobUPPVDVMedic: 2
+    RuMCJobUPPVDVRifleman: 2
+    RuMCJobUPPVDVSniper: 1
+  scalewithpop: false
+  spawnTogether: true
+
+- type: thirdParty
+  id: Zvezda
+  announceAsSurvivors: true
+  partyspawn: ZvezdaSpawn
+  whitelistedGamemodes:
+    - insurgency
+    - forceonforce
+    - colonyfall
+  entrymethod: shuttle
+  dropshippath: /Maps/CMU14/Vehicles/Dropships/rmc_ert_spp_shuttle.yml
+  weight: 20
+  minplayers: 0
+  maxplayers: 400
+  ghostsNeeded: 0
+  roundstart: false
+
+#Малая группа 5
+- type: partySpawn
+  id: KupolSpawn
+  leadersToSpawn:
+    RuMCJobUPPVDVCommander: 1
+  gruntsToSpawn:
+    RuMCJobUPPVDVDeputyCommander: 1
+    RuMCJobUPPVDVEngineer: 1
+    #RuMCJobUPPVDVMachinegunner: 1
+    RuMCJobUPPVDVMedic: 1
+    RuMCJobUPPVDVRifleman: 1
+    #RuMCJobUPPVDVSniper: 1
+  scalewithpop: false
+  spawnTogether: true
+
+- type: thirdParty
+  id: Kupol
+  announceAsSurvivors: true
+  partyspawn: KupolSpawn
+  whitelistedGamemodes:
+    - insurgency
+    - forceonforce
+    - colonyfall
+  entrymethod: shuttle
+  dropshippath: /Maps/CMU14/Vehicles/Dropships/rmc_ert_spp_shuttle.yml
+  weight: 20
+  minplayers: 0
+  maxplayers: 400
+  ghostsNeeded: 0
+  roundstart: false

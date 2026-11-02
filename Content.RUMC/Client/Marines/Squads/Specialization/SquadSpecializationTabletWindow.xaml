@@ -1,0 +1,33 @@
+<controls:SquadSpecializationTabletWindow
+    xmlns="https://spacestation14.io"
+    xmlns:controls="clr-namespace:Content.Client.RUMC.Marines.Squads.Specialization"
+    xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+    Title="{Loc 'rmc-squad-specialization-window-title'}"
+    MinSize="650 560">
+    <PanelContainer StyleClasses="WindowBackground">
+        <PanelContainer.PanelOverride>
+            <graphics:StyleBoxFlat BackgroundColor="#14181c" />
+        </PanelContainer.PanelOverride>
+        <BoxContainer Orientation="Vertical" Margin="8">
+            <!-- Header Panel -->
+            <PanelContainer StyleClasses="HeaderPanel" Margin="0 0 0 8">
+                <PanelContainer.PanelOverride>
+                    <graphics:StyleBoxFlat BackgroundColor="#1f252b" BorderColor="#2e3842" BorderThickness="1" />
+                </PanelContainer.PanelOverride>
+                <BoxContainer Orientation="Vertical" Margin="10 8">
+                    <BoxContainer Orientation="Horizontal">
+                        <Label Name="SquadNameLabel" Access="Public" StyleClasses="LabelHeadingBigger" />
+                        <Control HorizontalExpand="True" />
+                        <Label Name="SquadStatusLabel" Access="Public" StyleClasses="LabelSubText" />
+                    </BoxContainer>
+                    <Label Name="InstructionLabel" Access="Public" Text="{Loc 'rmc-squad-specialization-instruction'}" StyleClasses="LabelSubText" Margin="0 4 0 0" />
+                </BoxContainer>
+            </PanelContainer>
+
+            <!-- Scrollable List of Specializations -->
+            <ScrollContainer HorizontalExpand="True" VerticalExpand="True">
+                <BoxContainer Name="SpecializationsContainer" Access="Public" Orientation="Vertical" SeparationOverride="8" Margin="0 0 4 0" />
+            </ScrollContainer>
+        </BoxContainer>
+    </PanelContainer>
+</controls:SquadSpecializationTabletWindow>

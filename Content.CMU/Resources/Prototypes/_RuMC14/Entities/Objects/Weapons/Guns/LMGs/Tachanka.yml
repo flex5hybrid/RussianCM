@@ -29,7 +29,6 @@
   - type: Gun
     selectedMode: FullAuto
     availableModes:
-    - SemiAuto
     - FullAuto
     soundGunshot:
       path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_m60.ogg
@@ -39,7 +38,6 @@
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: RMCSelectiveFire
     baseFireModes:
-    - SemiAuto
     - FullAuto
     recoilWielded: 0
     recoilUnwielded: 0

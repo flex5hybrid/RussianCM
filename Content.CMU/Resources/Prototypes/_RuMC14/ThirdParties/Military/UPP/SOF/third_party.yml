@@ -1,0 +1,27 @@
+# Спецы
+- type: partySpawn
+  id: MoskvaSpawn
+  leadersToSpawn:
+    RuMCJobUPPSOFCommander: 1
+  gruntsToSpawn:
+    RuMCJobUPPSOFEngineer: 1
+    RuMCJobUPPSOFMachinegunner: 1
+    RuMCJobUPPSOFRifleman: 2
+  scalewithpop: false
+  spawnTogether: true
+
+- type: thirdParty
+  id: Moskva
+  announceAsSurvivors: true
+  partyspawn: MoskvaSpawn
+  whitelistedGamemodes:
+    - insurgency
+    - forceonforce
+    - colonyfall
+  entrymethod: shuttle
+  dropshippath: /Maps/CMU14/Vehicles/Dropships/rmc_ert_spp_shuttle.yml
+  weight: 20
+  minplayers: 0
+  maxplayers: 400
+  ghostsNeeded: 0
+  roundstart: false

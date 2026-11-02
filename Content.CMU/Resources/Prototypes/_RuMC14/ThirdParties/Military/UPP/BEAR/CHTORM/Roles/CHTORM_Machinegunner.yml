@@ -124,6 +124,7 @@
   equipment:
     id: RuCMIDCardUPPBEARMachinegunner
     ears: RuMCHeadsetBEAR
+    suitstorage: RuMCMachineGunPKP_MSTactical
   storage:
     back:
     - AU14GrenadeHighExplosiveUPP

@@ -1,0 +1,83 @@
+- type: entity
+  parent: CMIDCardBase
+  categories: [ HideSpawnMenu ]
+  id: RuCMIDCardUPPVDVCommander
+  name: VDV Commander ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPVDVCommander
+  - type: ItemIFF
+    factions:
+    - AUUpp
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPVDVDeputyCommander
+  categories: [ HideSpawnMenu ]
+  name: VDV Deputy Commander ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPVDVDeputyCommander
+  - type: ItemIFF
+    factions:
+    - AUUpp
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPVDVEngineer
+  categories: [ HideSpawnMenu ]
+  name: VDV Engineer ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPVDVEngineer
+  - type: ItemIFF
+    factions:
+    - AUUpp
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPVDVMachinegunner
+  categories: [ HideSpawnMenu ]
+  name: VDV Machinegunner ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPVDVMachinegunner
+  - type: ItemIFF
+    factions:
+    - AUUpp
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPVDVMedic
+  categories: [ HideSpawnMenu ]
+  name: VDV Medic ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPVDVMedic
+  - type: ItemIFF
+    factions:
+    - AUUpp
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPVDVRifleman
+  categories: [ HideSpawnMenu ]
+  name: VDV Rifleman ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPVDVRifleman
+  - type: ItemIFF
+    factions:
+    - AUUpp
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPVDVSniper
+  categories: [ HideSpawnMenu ]
+  name: VDV Sniper ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPVDVSniper
+  - type: ItemIFF
+    factions:
+    - AUUpp

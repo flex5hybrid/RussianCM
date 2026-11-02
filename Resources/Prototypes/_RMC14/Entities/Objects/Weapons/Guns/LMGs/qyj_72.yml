@@ -51,7 +51,7 @@
     recoilUnwielded: 0
     scatterWielded: 1
     scatterUnwielded: 1
-    baseFireRate: 3.6
+    baseFireRate: 5.5
     burstScatterMult: 3
     modifiers:
       Burst:

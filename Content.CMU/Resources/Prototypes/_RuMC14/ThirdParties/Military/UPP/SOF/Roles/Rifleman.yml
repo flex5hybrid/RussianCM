@@ -1,0 +1,136 @@
+- type: job
+  parent: CMJobBase
+  id: RuMCUPPSOFRifleman
+  roundSide: ThirdParty
+  roundForce: UPP
+  roundRole: RuMCUPPSOFRifleman
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: spp_sl_a
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuMCSquadSOF
+  - type: Skills
+    skills:
+      RMCSkillCqc: 3
+      RMCSkillEngineer: 2
+      RMCSkillConstruction: 2
+      RMCSkillFirearms: 2
+      RMCSkillMedical: 2
+      RMCSkillMeleeWeapons: 3
+      RMCSkillPolice: 2
+      RMCSkillFireman: 2
+      RMCSkillVehicles: 2
+      RMCSkillEndurance: 3
+  - type: EquipEntityPreset
+    preset: RuMCSOFPreset
+  - type: JobPrefix
+    prefix: rumc-job-prefix-SOF
+  - type: MarineOrders
+  - type: RMCTrackable
+  - type: RMCPointing
+  - type: Language
+    spokenLanguages:
+    - English
+    - Russian
+    - German
+    understoodLanguages:
+    - English
+    - Russian
+    - German
+    currentLanguage: Russian
+    defaultLanguage: Russian
+
+  name: Rifleman
+  description: SOF Rifleman
+  playTimeTracker: RuMCJobUPPSOFRifleman
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    UPP_Plutonowy:
+      entity: AU14ChevronUPPNIPlutonowy
+      requirements: []
+    UPP_Sergeant:
+      entity: AU14ChevronUPPNISergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFRifleman
+        time: 1800 # 0.5 hours
+    UPP_SeniorSergeant:
+      entity: AU14ChevronUPPNISeniorSergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFRifleman
+        time: 5400 # 1.5 hours
+    UPP_JuniorLieutenant:
+      entity: AU14ChevronUPPNIJuniorLieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFRifleman
+        time: 7200 # 2 hours
+    UPP_Lieutenant:
+      entity: AU14ChevronUPPNILieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPSOFRifleman
+        time: 10800 # 3 hours
+  spawnMenuRoleName: SOF Rifleman
+  startingGear: RuMCGearUPPSOFbaseA
+  greeting: rumc-SOF-greeting
+  icon: "RuMCJobIconUPPSOFRifleman"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforSquad
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicUPPSOF
+  id: RuMCJobUPPSOFRifleman
+  name: SOF Rifleman
+  components:
+  - type: EquipEntityPreset
+    preset: RuMCSOFPreset
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuMCSquadSOF
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: SOF Rifleman
+    description: You are part of a UPP! Not one step back!
+    job: RuMCUPPSOFRifleman
+    raffle:
+      settings: short
+
+- type: startingGear
+  parent: RuMCGearUPPSOFbase
+  id: RuMCGearUPPSOFbaseA
+  equipment:
+    id: RuCMIDCardUPPSOFRifleman
+    ears: RuMCHeadsetSOF
+    suitstorage: RMCWeaponRifleAK4047Tactical
+  storage:
+    back:
+    - RuMCirpUPP
+    - AU14GrenadeHighExplosiveUPP
+    - AU14GrenadeSmokeUPP
+    - AU14GrenadeHighExplosiveUPP
+  inhand:
+    - RuMCirpUPP
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconUPPSOFRifleman
+  icon:
+    sprite: _RuMC14/Interface/upp_icons.rsi
+    state: UPP_officer
+
+# Time tracker
+
+- type: playTimeTracker
+  id: RuMCJobUPPSOFRifleman

@@ -16,6 +16,75 @@
     sprintModifier: 0.62
 
 - type: entity
+  parent: AU14UPPArmorMinimalistic
+  id: RuMCUPPArmorPilot
+  name: pilot armor vest
+  description: Armor vest for airborne pilots and dropship crews. Reinforced against explosions and shrapnel, but lighter than standard infantry armor. Made for those who fly into the fire.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/armor/armor_pilot.rsi
+  - type: CMArmor
+    melee: 30
+    bullet: 15
+    bio: 20
+    explosionArmor: 15
+
+- type: entity
+  parent: AU14UPPArmor
+  id: RuMCUPPArmorCrew
+  name: crew armor vest
+  description: Armor vest for airborne vehicle crews. Designed for tankers and drivers who need protection from explosions and shrapnel inside a vehicle. Light, practical, reliable.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/armor/armor_crew.rsi
+  - type: CMArmor
+    melee: 15
+    bullet: 15
+    bio: 15
+    explosionArmor: 15
+
+#Norcomm Liu
+
+- type: entity
+  parent: AU14UPPArmorBulky
+  id: RuMCUPPArmorNoLu_Heavy
+  name: Norcomm Liu heavy utility armor
+  description: Heavy-duty armored webbing for Norcomm Liu personnel. Reinforced plates protect against industrial hazards, shrapnel, and heavy machinery accidents. Built for workers in high-risk environments.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/NorcommLiu/armor/Pioner_Armor_Webbing.rsi
+  - type: CMArmor
+    melee: 10
+    bullet: 5
+    bio: 10
+    explosionArmor: 5
+
+- type: entity
+  parent: AU14UPPArmor
+  id: RuMCUPPArmorNoLu_Standard
+  name: Norcomm Liu utility armor
+  description: Standard protective armor for Norcomm Liu engineers and technicians. Lightweight plates offer basic protection without restricting movement, allowing workers to perform repairs and maintenance in the field.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/NorcommLiu/armor/Pioner_Armor.rsi
+  - type: CMArmor
+    melee: 10
+    bullet: 5
+    bio: 10
+    explosionArmor: 5
+
+#VDV
+
+- type: entity
+  parent: AU14UPPArmorBulky
+  id: RuMCUPPArmorVDV_Heavy
+  name: VDV heavy armor vest
+  description: Heavy assault armor for UPP Airborne Troops. Thick composite plates provide superior protection against shrapnel and heavy fire. Designed for breaching operations where survival is the only priority.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/armor/VDV/armor_heavy.rsi
+
+- type: entity
   parent: AU14UPPArmor
   id: RuMCUPPArmorVDV
   name: VDV standard armor vest
@@ -43,33 +112,7 @@
     bio: 15
     explosionArmor: 15
 
-- type: entity
-  parent: AU14UPPArmorMinimalistic
-  id: RuMCUPPArmorPilot
-  name: pilot armor vest
-  description: Armor vest for airborne pilots and dropship crews. Reinforced against explosions and shrapnel, but lighter than standard infantry armor. Made for those who fly into the fire.
-  components:
-  - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/armor/armor_pilot.rsi
-  - type: CMArmor
-    melee: 30
-    bullet: 15
-    bio: 20
-    explosionArmor: 15
-
-- type: entity
-  parent: AU14UPPArmor
-  id: RuMCUPPArmorCrew
-  name: crew armor vest
-  description: Armor vest for airborne vehicle crews. Designed for tankers and drivers who need protection from explosions and shrapnel inside a vehicle. Light, practical, reliable.
-  components:
-  - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/armor/armor_crew.rsi
-  - type: CMArmor
-    melee: 15
-    bullet: 15
-    bio: 15
-    explosionArmor: 15
+#SOF
 
 - type: entity
   parent: AU14UPPArmor
@@ -109,9 +152,13 @@
     sprite: _RuMC14/Clothing/UPP/armor/SOF/armor_large.rsi
   - type: CMArmor
     melee: 30
-    bullet: 40
-    bio: 25
-    explosionArmor: 30
+    bullet: 30
+    bio: 20
+    explosionArmor: 20
+  - type: Corrodible
+    isCorrodible: false
+  - type: ClothingBlockBackpack
+  - type: SmartGunArmor
 
 - type: entity
   parent: AU14UPPArmorMinimalistic

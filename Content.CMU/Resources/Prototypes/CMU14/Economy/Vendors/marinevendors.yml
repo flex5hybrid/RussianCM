@@ -18,9 +18,15 @@
   - type: CMAutomatedVendor
     sections:
     - name: Fatigues
+      excludeSquadSpecializations: [ USCMSpecFORECON ]
       entries:
       - id: AU14CamoUSCMFatigues
-        amount: 120
+        amount: 40
+    - name: cmu-vendor-section-upp-vdv-fatigues
+      choices: { CMUPlatoonFatigues: 1 }
+      squadSpecializations: [ USCMSpecFORECON ]
+      entries:
+      - id: AU14CamoUSCMFatigues
     - name: Footwear
       entries:
       - id: CMBootsBlackFilled
@@ -63,6 +69,11 @@
         amount: 10
       - id: RMCM5CameraGear
         amount: 30
+    - name: Headgear
+      squadSpecializations: [ USCMSpecFORECON ]
+      entries:
+      - id: RMCHeadBeretGreen
+        maxPerUser: 1
     - name: Heads Up Display
       entries:
       - id: RMCVisorSquad
@@ -70,6 +81,7 @@
       - id: RMCVisorWelding
         amount: 8
     - name: Armor
+      excludeSquadSpecializations: [ USCMSpecFORECON ]
       entries:
       - id: AU14CamoArmorM3Smooth
         amount: 65
@@ -77,6 +89,14 @@
         amount: 65
       - id: AU14CamoArmorM3Dimpled
         amount: 65
+    - name: Armor
+      squadSpecializations: [ USCMSpecFORECON ]
+      entries:
+      - id: AU14ArmorM3RForecon
+        maxPerUser: 1
+      - id: RMCArmorUDEPForecon
+        amount: 4
+        maxPerUser: 1
     - name: Armor Components
       entries:
       - id: AU14CamoKitArmor
@@ -211,6 +231,7 @@
       - id: AU14CamoHelmetGarbGasmask
         amount: 40
     - name: Patches
+      excludeSquadSpecializations: [ USCMSpecFORECON ]
       entries:
       - id: AU14PatchUAFlag
         amount: 80
@@ -218,6 +239,17 @@
         amount: 80
       - id: AU14PatchUSCM
         amount: 80
+    - name: Patches
+      squadSpecializations: [ USCMSpecFORECON ]
+      entries:
+      - id: AU14PatchUAFlag
+        amount: 80
+      - id: AU14PatchUSCM
+        amount: 80
+      - id: RMCPatchFORECON
+        amount: 80
+
+
 
 - type: entity
   parent: ColMarTechBase
@@ -759,6 +791,11 @@
     - AU14JobGOVFORSquadSergeantUPP
     - AU14JobGOVFORSquadSergeantWYPMC
     sections:
+    - name: cmu-vendor-section-sl-doctrine
+      takeAll: CMDoctrine
+      entries:
+      - id: USCMSquadSpecializationTablet
+        recommended: true
     - name: cmu-vendor-section-sl-scopes
       choices: { CMUSquadLeaderScope: 1 }
       entries:

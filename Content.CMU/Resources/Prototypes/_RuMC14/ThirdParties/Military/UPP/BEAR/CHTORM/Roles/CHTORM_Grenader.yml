@@ -124,6 +124,7 @@
   equipment:
     id: RuCMIDCardUPPBEARGrenader
     ears: RuMCHeadsetBEAR
+    suitstorage: RuMCWeaponRifleAK13Tactical
     back: AU14SatchelDemoSpecUPP
   storage:
     back:
