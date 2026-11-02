@@ -1,10 +1,10 @@
 using Content.Shared.Body;
 using System.Linq;
 using System.Numerics;
-using Content.Client.Lobby;
 using Content.Client.Corvax.TTS;
-using Content.Shared.Corvax.TTS;
 using Content.Client.Humanoid;
+using Content.Client.Lobby;
+using Content.Shared.Corvax.TTS;
 using Content.Client.Stylesheets;
 using Content.Shared.CMU14.Yautja;
 using Content.Shared.Humanoid;
@@ -1525,8 +1525,8 @@ public sealed partial class YautjaProfileEditor : ScrollContainer
         _ttsVoice.Clear();
         foreach (var id in CMUTTSVoiceSelection.YautjaVoiceIds)
         {
-            if (!_prototypeManager.TryIndex<TTSVoicePrototype>(id, out var voice) ||
-                !CMUTTSVoiceSelection.IsYautjaSelectable(voice))
+            if (!_prototypeManager.TryIndex<TTSVoicePrototype>(id, out var voice)
+                || !CMUTTSVoiceSelection.IsYautjaSelectable(voice))
                 continue;
 
             _ttsVoice.AddItem(voice.Name, _ttsVoices.Count);
