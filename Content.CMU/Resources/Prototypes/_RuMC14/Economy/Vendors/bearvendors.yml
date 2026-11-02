@@ -94,6 +94,12 @@
         amount: 12
       - id: AU14ArmorGarbJunglePonchoUPP
         amount: 40
+      - id: RuMCUPPHelmetGarbOrthodoxCross
+        amount: 6
+      #- id: RuMCUPPHelmetGarbArmy
+      #  amount: 40
+      #- id: RuMCUPPHelmetGarbRedStar
+      #  amount: 40
     - name: au14-vendor-section-backpack
       entries:
       - id: RuMCUPPNavalInfantrySatchel
