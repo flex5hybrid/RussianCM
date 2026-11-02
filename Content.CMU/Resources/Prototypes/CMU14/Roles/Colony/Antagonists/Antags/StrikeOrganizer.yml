@@ -2,6 +2,7 @@
   id: StrikeOrganizer
   prefRoles: [ StrikeOrganizerRole ]
   jobBlacklistGroup:
+  - RuMCColonyLeadershipJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
   - AllCLFJobs

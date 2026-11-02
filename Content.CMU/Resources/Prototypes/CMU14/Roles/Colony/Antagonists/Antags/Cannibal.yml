@@ -2,6 +2,7 @@
   id: Cannibal
   prefRoles: [ CannibalRole ]
   jobBlacklistGroup:
+  - RuMCColonyLeadershipJobs # RuMC edit
   - AllGovforCommandStaff
   - AllOpforCommandStaff
   - AllCLFJobs

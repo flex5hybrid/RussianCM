@@ -2,6 +2,7 @@
   id: Rider
   prefRoles: [ RiderRole ]
   jobBlacklistGroup:
+  - RuMCColonyLeadershipJobs # RuMC edit
   - AllGovforCommandStaff
   - AllOpforCommandStaff
   - AllColonyDepartmentHeadJobs

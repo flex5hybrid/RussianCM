@@ -2,6 +2,7 @@
   id: Arsonist
   prefRoles: [ ArsonistRole ]
   jobBlacklistGroup:
+  - RuMCColonyLeadershipJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
   - AllCLFJobs

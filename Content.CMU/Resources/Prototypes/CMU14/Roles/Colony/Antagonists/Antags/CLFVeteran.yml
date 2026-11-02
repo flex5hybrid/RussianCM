@@ -2,6 +2,7 @@
   id: CLFVeteran
   prefRoles: [ CLFVeteranRole ]
   jobBlacklistGroup:
+  - RuMCColonyLeadershipJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
   - AllCLFJobs

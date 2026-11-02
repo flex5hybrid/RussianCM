@@ -2,6 +2,7 @@
   id: DrugDealer
   prefRoles: [ DrugDealerRole ]
   jobBlacklistGroup:
+  - RuMCColonyLeadershipJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
   - AllCLFJobs

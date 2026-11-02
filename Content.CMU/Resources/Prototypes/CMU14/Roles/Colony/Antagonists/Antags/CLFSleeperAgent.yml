@@ -2,9 +2,8 @@
   id: CLFSleeperAgent
   prefRoles: [ CLFSleeperAgentRole ]
   jobWhitelist:
+  # RuMC edit: AU14JobCivilianCMBMarshal and AU14JobCivilianColonyAdministrator removed from whitelist
   - AU14JobCivilianCorporateLiaison
-  - AU14JobCivilianCMBMarshal
-  - AU14JobCivilianColonyAdministrator
   - AU14JobGOVFORPlatOp
   - AU14JobGOVFORAdjutant
   - AU14JobGOVFORSquadSergeant
