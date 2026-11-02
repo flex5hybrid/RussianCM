@@ -1,4 +1,5 @@
 using Content.Shared.Corvax.TTS;
+using Content.Shared.CMU14.Yautja;
 using Content.Shared.Humanoid;
 using Robust.Shared.Random;
 
@@ -24,8 +25,32 @@ public sealed partial class TTSSystem
         EnsureVoiceAssigned(ent);
     }
 
+    private bool IsYautjaSpeaker(EntityUid uid)
+    {
+        return HasComp<YautjaComponent>(uid) ||
+               TryComp<HumanoidProfileComponent>(uid, out var profile) && profile.Species.Id == "Yautja";
+    }
+
+    private string EnforceYautjaVoice(EntityUid uid, string voiceId)
+    {
+        if (!IsYautjaSpeaker(uid))
+            return voiceId;
+
+        return _prototypeManager.TryIndex<TTSVoicePrototype>(voiceId, out var voice) &&
+               CMUTTSVoiceSelection.IsYautjaSelectable(voice)
+            ? voiceId
+            : CMUTTSVoiceSelection.DefaultYautjaVoice;
+    }
+
     private void EnsureVoiceAssigned(Entity<TTSComponent> ent)
     {
+        if (IsYautjaSpeaker(ent.Owner))
+        {
+            ent.Comp.VoicePrototypeId = EnforceYautjaVoice(
+                ent.Owner, ent.Comp.VoicePrototypeId ?? string.Empty);
+            return;
+        }
+
         if (!string.IsNullOrWhiteSpace(ent.Comp.VoicePrototypeId) &&
             ent.Comp.VoicePrototypeId != CMUTTSVoiceSelection.RandomVoice)
             return;
