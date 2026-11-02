@@ -33,8 +33,10 @@ public static class CMUTTSVoiceSelection
 
     public static bool IsYautjaSelectable(TTSVoicePrototype voice)
     {
-        return IsYautjaVoice(voice.ID) && voice.Sex == Sex.Male &&
-               voice.RoundStart && !voice.SponsorOnly;
+        return IsYautjaVoice(voice.ID)
+            && voice.Sex == Sex.Male
+            && voice.RoundStart
+            && !voice.SponsorOnly;
     }
 
     public static string SanitizeYautjaVoice(string? voiceId)
