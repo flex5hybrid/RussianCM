@@ -12,3 +12,5 @@ cmu-vendor-details = Item details
 cmu-vendor-out = OUT OF STOCK
 cmu-vendor-low = LOW STOCK
 cmu-vendor-in-stock = IN STOCK
+cmu-vendor-points = Points remaining: { $count }
+cmu-vendor-faction-points = { $faction } win points: { $count }
