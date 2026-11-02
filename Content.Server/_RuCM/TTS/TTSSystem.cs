@@ -131,6 +131,7 @@ public sealed partial class TTSSystem : EntitySystem
         var requestedAt = _timing.RealTime;
         using var delivery = _deliveryOrder.Reserve(args.VoiceSource ?? uid);
 
+        EnsureVoiceAssigned((uid, component));
         var voiceId = component.VoicePrototypeId;
 
         if (string.IsNullOrWhiteSpace(voiceId))
@@ -138,7 +139,7 @@ public sealed partial class TTSSystem : EntitySystem
 
         var voiceEvent = new TransformSpeakerVoiceEvent(args.VoiceSource ?? uid, voiceId);
         RaiseLocalEvent(args.VoiceSource ?? uid, voiceEvent);
-        voiceId = voiceEvent.VoiceId;
+        voiceId = EnforceYautjaVoice(args.VoiceSource ?? uid, voiceEvent.VoiceId);
 
         if (CustomTTSVoice.TryGetSpeaker(voiceId, out _))
             await EnsureReferenceVoiceCatalogLoaded();
