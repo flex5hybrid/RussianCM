@@ -38,14 +38,16 @@ public sealed class AntagSpecifierMigrationTest : AntagTest
 
     private static readonly Dictionary<string, string[]> JobBlacklistGroups = new()
     {
+        // RuMC edit start
         ["RunawaySynth"] = ["AllGovforCommandStaff", "AllOpforCommandStaff"],
-        ["Fugitive"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllWeYuJobs", "AllSynthJobs"],
-        ["DrugDealer"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllWeYuJobs", "AllSynthJobs"],
-        ["CorporateSpy"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs"],
-        ["CLFVeteran"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllSynthJobs"],
-        ["StrikeOrganizer"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllWeYuJobs"],
-        ["Cannibal"] = ["AllGovforCommandStaff", "AllOpforCommandStaff", "AllCLFJobs"],
-        ["SerialKiller"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllSynthJobs"],
+        ["Fugitive"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllWeYuJobs", "AllSynthJobs", "RuMCColonyLeadershipJobs"],
+        ["DrugDealer"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllWeYuJobs", "AllSynthJobs", "RuMCColonyLeadershipJobs"],
+        ["CorporateSpy"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "RuMCColonyLeadershipJobs"],
+        ["CLFVeteran"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllSynthJobs", "RuMCColonyLeadershipJobs"],
+        ["StrikeOrganizer"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllWeYuJobs", "RuMCColonyLeadershipJobs"],
+        ["Cannibal"] = ["AllGovforCommandStaff", "AllOpforCommandStaff", "AllCLFJobs", "RuMCColonyLeadershipJobs"],
+        ["SerialKiller"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllSynthJobs", "RuMCColonyLeadershipJobs"],
+        // RuMC edit end
     };
 
     private static readonly Dictionary<string, string> Roles = new()
@@ -214,9 +216,7 @@ public sealed class AntagSpecifierMigrationTest : AntagTest
             Assert.That(SProtoMan.Index<AntagSpecifierPrototype>(CLFSleeperAgentPrototype).JobWhitelist?.Select(job => job.Id),
                 Is.EquivalentTo(new[]
                 {
-                    "AU14JobCivilianCorporateLiaison",
-                    "AU14JobCivilianCMBMarshal",
-                    "AU14JobCivilianColonyAdministrator",
+                    "AU14JobCivilianCorporateLiaison", // RuMC edit
                     "AU14JobGOVFORPlatOp",
                     "AU14JobGOVFORAdjutant",
                     "AU14JobGOVFORSquadSergeant",
