@@ -2,6 +2,8 @@ using Content.Shared.Body;
 using System.Linq;
 using System.Numerics;
 using Content.Client.Lobby;
+using Content.Client.Corvax.TTS;
+using Content.Shared.Corvax.TTS;
 using Content.Client.Humanoid;
 using Content.Client.Stylesheets;
 using Content.Shared.CMU14.Yautja;
@@ -54,6 +56,9 @@ public sealed partial class YautjaProfileEditor : ScrollContainer
     private readonly Label _summaryCaster = new();
     private readonly OptionButton _translatorType = new();
     private readonly OptionButton _invisibilitySound = new();
+    private readonly OptionButton _ttsVoice = new();
+    private readonly List<TTSVoicePrototype> _ttsVoices = new();
+    private readonly Label _ttsVoiceHelp = new();
     private readonly Label _translatorHelp = new();
     private readonly Label _invisibilityHelp = new();
     private readonly Label _flavorLimit = new();
@@ -263,6 +268,8 @@ public sealed partial class YautjaProfileEditor : ScrollContainer
         AddGenderOptions(_gender);
         AddTranslatorTypeOptions(_translatorType);
         AddInvisibilitySoundOptions(_invisibilitySound);
+        RebuildTTSVoiceOptions();
+        _ttsVoiceHelp.Text = Loc.GetString("cmu-yautja-lobby-tts-voice-help");
 
         _name.OnTextChanged += args => Mutate(profile => profile.WithName(args.Text));
         _age.OnTextChanged += args =>
@@ -294,6 +301,14 @@ public sealed partial class YautjaProfileEditor : ScrollContainer
             PlayPreviewSound(GetInvisibilityPreviewSound(args.Id));
             Mutate(profile => profile.WithInvisibilitySound((YautjaInvisibilitySound) args.Id));
         };
+        _ttsVoice.OnItemSelected += args =>
+        {
+            if (args.Id < 0 || args.Id >= _ttsVoices.Count)
+                return;
+
+            _ttsVoice.SelectId(args.Id);
+            Mutate(profile => profile.WithTTSVoice(_ttsVoices[args.Id].ID));
+        };
         _status.OnItemSelected += args =>
         {
             _status.SelectId(args.Id);
@@ -320,6 +335,9 @@ public sealed partial class YautjaProfileEditor : ScrollContainer
         UpdateFlavorLimit(yautja.FlavorText.Length);
         _translatorType.SelectId((int) yautja.TranslatorType);
         _invisibilitySound.SelectId((int) yautja.InvisibilitySound);
+        var ttsIndex = _ttsVoices.FindIndex(voice => voice.ID == yautja.TTSVoice);
+        if (_ttsVoices.Count > 0)
+            _ttsVoice.SelectId(Math.Max(0, ttsIndex));
         UpdateTechHelp(yautja.TranslatorType, yautja.InvisibilitySound);
         RebuildVisualSelectors(yautja);
         UpdateSelectionSummary(yautja);
@@ -1501,6 +1519,28 @@ public sealed partial class YautjaProfileEditor : ScrollContainer
         };
     }
 
+    private void RebuildTTSVoiceOptions()
+    {
+        _ttsVoices.Clear();
+        _ttsVoice.Clear();
+        foreach (var id in CMUTTSVoiceSelection.YautjaVoiceIds)
+        {
+            if (!_prototypeManager.TryIndex<TTSVoicePrototype>(id, out var voice) ||
+                !CMUTTSVoiceSelection.IsYautjaSelectable(voice))
+                continue;
+
+            _ttsVoice.AddItem(voice.Name, _ttsVoices.Count);
+            _ttsVoices.Add(voice);
+        }
+    }
+
+    private void PreviewTTSVoice()
+    {
+        var id = _ttsVoice.SelectedId;
+        if (id >= 0 && id < _ttsVoices.Count)
+            _entManager.System<TTSSystem>().RequestPreviewTTS(_ttsVoices[id].ID);
+    }
+
     private Control BuildTechnologyPage()
     {
         return new BoxContainer
@@ -1519,6 +1559,11 @@ public sealed partial class YautjaProfileEditor : ScrollContainer
                     _invisibilitySound,
                     _invisibilityHelp,
                     () => PlayPreviewSound(GetInvisibilityPreviewSound(_invisibilitySound.SelectedId))),
+                TechOptionBlock(
+                    "cmu-yautja-lobby-tts-voice",
+                    _ttsVoice,
+                    _ttsVoiceHelp,
+                    PreviewTTSVoice),
             },
         };
     }
