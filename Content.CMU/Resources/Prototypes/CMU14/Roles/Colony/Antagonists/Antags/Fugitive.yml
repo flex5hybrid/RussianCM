@@ -2,6 +2,7 @@
   id: Fugitive
   prefRoles: [ FugitiveRole ]
   jobBlacklistGroup:
+  - RuMCColonyLeadershipJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
   - AllCLFJobs

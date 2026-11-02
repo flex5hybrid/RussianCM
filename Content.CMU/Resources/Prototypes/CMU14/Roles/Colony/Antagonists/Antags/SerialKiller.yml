@@ -2,6 +2,7 @@
   id: SerialKiller
   prefRoles: [ SerialKillerRole ]
   jobBlacklistGroup:
+  - RuMCColonyLeadershipJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
   - AllCLFJobs

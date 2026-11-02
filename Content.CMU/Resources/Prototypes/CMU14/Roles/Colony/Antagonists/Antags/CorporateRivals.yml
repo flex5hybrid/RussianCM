@@ -18,6 +18,7 @@
   id: WeylandYutaniAgent
   prefRoles: [ WeylandYutaniAgentRole ]
   jobBlacklistGroup:
+  - RuMCColonyLeadershipJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
   - AllCLFJobs
@@ -91,6 +92,7 @@
   id: CorporateSpy
   prefRoles: [ CorporateSpyRole ]
   jobBlacklistGroup:
+  - RuMCColonyLeadershipJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
   - AllCLFJobs

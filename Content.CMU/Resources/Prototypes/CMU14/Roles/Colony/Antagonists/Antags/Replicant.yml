@@ -2,6 +2,7 @@
   id: Replicant
   prefRoles: [ ReplicantRole ]
   jobBlacklistGroup:
+  - RuMCColonyLeadershipJobs # RuMC edit
   - AllGovforCommandStaff
   - AllOpforCommandStaff
   briefing:

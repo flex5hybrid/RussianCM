@@ -218,3 +218,16 @@
     - AU14JobOPFORDCC
     - AU14JobOPFORVehicleCrewman
     - AU14JobOPFORVehicleCommander
+
+# RuMC edit start
+- type: antagJobBlacklist
+  id: RuMCColonyLeadershipJobs
+  jobs:
+    - AU14JobCivilianColonyAdministrator
+    - AU14JobCivilianCMBMarshal
+    - AU14JobCivilianAmbassadorCCA
+    - AU14JobCivilianAmbassadorICSC
+    - AU14JobCivilianAmbassadorTWE
+    - AU14JobCivilianAmbassadorUA
+    - AU14JobCivilianAmbassadorUPP
+# RuMC edit end
