@@ -1,0 +1,10 @@
+# Bare vendor radio, keys to GOVFOR or OPFOR (ANPRC117GRadio is GOVFOR-only)
+- type: entity
+  parent: ANPRC117GRadio
+  id: RuMCANPRC117GRadioIssuedBare
+  suffix: Issue, bare, keys to side
+  components:
+  - type: ANPRCSideKeyed
+    variants:
+      govfor: ANPRC117GRadio
+      opfor: ANPRC117GRadioOPFOR
