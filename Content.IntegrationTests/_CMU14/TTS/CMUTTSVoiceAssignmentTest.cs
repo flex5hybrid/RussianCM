@@ -66,8 +66,9 @@ public sealed class CMUTTSVoiceAssignmentTest : GameTest
         });
     }
 
-    [Test]
-    public async Task YautjaVoicesAreAvailableAndEnforcedRegardlessOfSex()
+    [TestCase("CMUMobYautja")]
+    [TestCase("CMUMobYautjaYoungblood")]
+    public async Task YautjaVoicesAreAvailableAndEnforcedRegardlessOfSex(string prototype)
     {
         var map = await Pair.CreateTestMap();
         await Server.WaitAssertion(() =>
@@ -78,7 +79,7 @@ public sealed class CMUTTSVoiceAssignmentTest : GameTest
                 Assert.That(CMUTTSVoiceSelection.IsYautjaSelectable(prototype), Is.True, id);
             }
 
-            var entity = SEntMan.SpawnEntity("CMUMobYautja", map.GridCoords);
+            var entity = SEntMan.SpawnEntity(prototype, map.GridCoords);
             try
             {
                 var profiles = SEntMan.System<YautjaProfileApplySystem>();
