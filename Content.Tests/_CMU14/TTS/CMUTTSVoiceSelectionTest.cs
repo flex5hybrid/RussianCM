@@ -48,6 +48,25 @@ public sealed class CMUTTSVoiceSelectionTest
         Assert.That(CMUTTSVoiceSelection.GetRandomVoices(voices, Sex.Unsexed), Has.Length.EqualTo(3));
     }
 
+    [Test]
+    public void YautjaWhitelistIsStrictAndHasSafeFallback()
+    {
+        Assert.Multiple(() =>
+        {
+            Assert.That(CMUTTSVoiceSelection.IsYautjaVoice("REXXAR"), Is.True);
+            Assert.That(CMUTTSVoiceSelection.IsYautjaVoice("PUCHKOW"), Is.False);
+            Assert.That(CMUTTSVoiceSelection.IsYautjaVoice("custom:MyVoice"), Is.False);
+            Assert.That(CMUTTSVoiceSelection.SanitizeYautjaVoice("custom:MyVoice"),
+                Is.EqualTo(CMUTTSVoiceSelection.DefaultYautjaVoice));
+            Assert.That(CMUTTSVoiceSelection.SanitizeYautjaVoice(null),
+                Is.EqualTo(CMUTTSVoiceSelection.DefaultYautjaVoice));
+            Assert.That(CMUTTSVoiceSelection.IsYautjaSelectable(Voice("GARROSH", Sex.Male)), Is.True);
+            Assert.That(CMUTTSVoiceSelection.IsYautjaSelectable(Voice("GARROSH", Sex.Female)), Is.False);
+            Assert.That(CMUTTSVoiceSelection.IsYautjaSelectable(Voice("GARROSH", Sex.Male, sponsor: true)), Is.False);
+            Assert.That(CMUTTSVoiceSelection.IsYautjaSelectable(Voice("GARROSH", Sex.Male, roundStart: false)), Is.False);
+        });
+    }
+
     private static TTSVoicePrototype Voice(string id, Sex sex, bool sponsor = false, bool roundStart = true)
     {
         // Prototype fields have private setters; construct minimal fixtures without loading game resources.
