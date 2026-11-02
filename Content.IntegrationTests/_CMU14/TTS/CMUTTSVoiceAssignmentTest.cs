@@ -23,6 +23,14 @@ public sealed class CMUTTSVoiceAssignmentTest : GameTest
           components:
           - type: TTS
             voice: TURRET_FLOOR
+
+        - type: entity
+          id: CMUTTSYautjaTest
+          components:
+          - type: TTS
+          - type: HumanoidProfile
+            species: Yautja
+            sex: Female
         """;
 
     [Test]
@@ -58,6 +66,44 @@ public sealed class CMUTTSVoiceAssignmentTest : GameTest
             {
                 SEntMan.DeleteEntity(female);
                 SEntMan.DeleteEntity(fixedVoice);
+            }
+        });
+    }
+
+    [Test]
+    public async Task YautjaVoicesAreAvailableAndEnforcedRegardlessOfSex()
+    {
+        var map = await Pair.CreateTestMap();
+        await Server.WaitAssertion(() =>
+        {
+            foreach (var id in CMUTTSVoiceSelection.YautjaVoiceIds)
+            {
+                var prototype = SProtoMan.Index<TTSVoicePrototype>(id);
+                Assert.That(CMUTTSVoiceSelection.IsYautjaSelectable(prototype), Is.True, id);
+            }
+
+            var entity = SEntMan.SpawnEntity("CMUTTSYautjaTest", map.GridCoords);
+            try
+            {
+                var profiles = SEntMan.System<HumanoidProfileSystem>();
+                var hunter = HumanoidCharacterProfile.DefaultWithSpecies("Yautja")
+                    .WithSex(Sex.Female)
+                    .WithTTSVoice("GARROSH");
+
+                profiles.ApplyProfileTo(entity, hunter);
+                Assert.That(SEntMan.GetComponent<TTSComponent>(entity).VoicePrototypeId, Is.EqualTo("GARROSH"));
+
+                profiles.ApplyProfileTo(entity, hunter.WithTTSVoice("PUCHKOW"));
+                Assert.That(SEntMan.GetComponent<TTSComponent>(entity).VoicePrototypeId,
+                    Is.EqualTo(CMUTTSVoiceSelection.DefaultYautjaVoice));
+
+                profiles.ApplyProfileTo(entity, hunter.WithTTSVoice("custom:MyVoice"));
+                Assert.That(SEntMan.GetComponent<TTSComponent>(entity).VoicePrototypeId,
+                    Is.EqualTo(CMUTTSVoiceSelection.DefaultYautjaVoice));
+            }
+            finally
+            {
+                SEntMan.DeleteEntity(entity);
             }
         });
     }
