@@ -201,7 +201,7 @@ public sealed partial class RuMCManpadLowAltitudeMissileSystem : EntitySystem
 
     private void DamageBlackfoot(RuMCManpadLowAltitudeMissileComponent missile)
     {
-        var dealt = _hardpoints.RuMCDamageVehicleHullExact(missile.Target, missile.Hit.Damage);
+        var dealt = _hardpoints.CMUDamageVehicleHullExact(missile.Target, missile.Hit.Damage);
         LogHit(missile, RuMCManpadLowAltitudeTargetKind.Blackfoot, dealt);
     }
 
