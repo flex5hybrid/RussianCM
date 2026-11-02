@@ -5,6 +5,7 @@ using Content.Shared._RMC14.Weapons.Ranged.IFF;
 using Content.Shared._RMC14.Xenonids.Devour;
 using Content.Shared._RMC14.Xenonids.Parasite;
 using Content.Shared._RMC14.Xenonids.Projectile;
+using Content.Shared._RuMC14.BatteryDrain; // RuMC edit
 using Content.Shared.Actions;
 using Content.Shared.Actions.Components;
 using Content.Shared.Humanoid;
@@ -75,14 +76,11 @@ public sealed partial class ThermalCloakSystem : EntitySystem
         {
             var isMoving = physics.LinearVelocity.LengthSquared() > 0.01f;
             var target = isMoving ? cloakUser.MovingOpacity : cloakUser.Opacity;
-            // CMU14: rain malfunction flicker. Malfunction is set by YautjaCloakSystem on rain-exposed tiles.
-            // Target opacity spikes toward visible and the lerp runs faster so it reads as static.
+            // CMU14: rain leaves a faint silhouette; sparse interference is rendered on the client.
             var lerpSpeed = cloakUser.LerpSpeed;
             if (cloakUser.Malfunction)
             {
-                if (_random.Prob(0.35f))
-                    target = _random.NextFloat(0.4f, 1.0f);
-                lerpSpeed = 4f;
+                target = MathF.Max(target, .035f);
             }
 
             var delta = MathF.Min(lerpSpeed * frameTime, MathF.Abs(target - cloakUser.CurrentOpacity)); // CMU14: lerpSpeed covers the flicker rate
@@ -163,6 +161,8 @@ public sealed partial class ThermalCloakSystem : EntitySystem
             InitializeCloakUserOpacity(user, ent.Comp, activeInvisibility);
 
             ent.Comp.Enabled = true;
+            var toggled = new RuMCBatteryDrainActiveChangedEvent(true); // RuMC edit
+            RaiseLocalEvent(ent, ref toggled); // RuMC edit
             turnInvisible.Enabled = true;
             Dirty(ent.Owner, ent.Comp);
             Dirty(user, turnInvisible);
@@ -198,6 +198,8 @@ public sealed partial class ThermalCloakSystem : EntitySystem
             invisible.Opacity = 1;
             Dirty(user, invisible);
             ent.Comp.Enabled = false;
+            var toggled = new RuMCBatteryDrainActiveChangedEvent(false); // RuMC edit
+            RaiseLocalEvent(ent, ref toggled); // RuMC edit
             turnInvisible.Enabled = false;
 
             Dirty(ent.Owner, ent.Comp);

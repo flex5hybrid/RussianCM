@@ -198,7 +198,7 @@ rmc-hardpoint-failure-effect-tire-blowout = Транспортное средс�
 rmc-hardpoint-failure-effect-thrown-tread = Транспортное средство едва движется до переустановки гусеницы.
 rmc-hardpoint-failure-effect-engine-overheat = Двигатель захлёбывается, ускорение резко снижено.
 rmc-hardpoint-failure-effect-electrical-short = Электрическая мощность этой точки крепления нестабильна и снижена.
-rmc-hardpoint-failure-effect-fuel-leak = Blackfoot теряет топливо со временем до ремонта.
+rmc-hardpoint-failure-effect-fuel-leak = «Черноступ» теряет топливо со временем до ремонта.
 rmc-hardpoint-failure-effect-default = Точка крепления неисправна.
 
 # Формат-строки диагностики поломок

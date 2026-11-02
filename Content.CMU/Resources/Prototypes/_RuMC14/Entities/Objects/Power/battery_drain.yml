@@ -1,0 +1,34 @@
+# Items whose own battery drains while they are active
+- type: entity
+  id: RuMCBatteryDrainBase
+  abstract: true
+  components:
+  - type: PowerCellDraw
+    enabled: false
+  - type: ExaminableBattery
+  - type: RuMCBatteryDrain
+
+- type: entity
+  parent: RuMCBatteryDrainBase
+  id: RuMCBatteryDrainSight
+  abstract: true
+  components:
+  - type: Battery
+    maxCharge: 300000 # 5 minutes in a recharger (1000 W)
+    startingCharge: 300000
+  - type: PowerCellDraw
+    drawRate: 1000 # 5 minutes
+
+- type: entity
+  parent: RuMCBatteryDrainBase
+  id: RuMCBatteryDrainCloak
+  abstract: true
+  components:
+  - type: Battery
+    maxCharge: 300000 # 5 minutes in a recharger (1000 W)
+    startingCharge: 300000
+  - type: PowerCellDraw
+    drawRate: 1000 # 5 minutes
+  - type: BatterySelfRecharger
+    autoRechargeRate: 500 # 10 minutes
+    autoRechargePauseTime: 10

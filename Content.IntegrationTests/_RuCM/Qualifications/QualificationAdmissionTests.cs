@@ -115,7 +115,7 @@ public sealed class QualificationAdmissionTests : GameTest
                         "An instructor never needs a second job whitelist");
                     if (!active)
                     {
-                        var candidates = new StationJobsGetCandidatesEvent(ServerSession.UserId, new() { id });
+                        var candidates = new StationJobsGetCandidatesEvent(ServerSession.UserId, new() { id }, HumanoidCharacterProfile.DefaultWithSpecies());
                         Server.EntMan.EventBus.RaiseEvent(EventSource.Local, ref candidates);
                         Assert.That(candidates.Jobs, Is.Empty);
                         var disallowed = new GetDisallowedJobsEvent(ServerSession, new());

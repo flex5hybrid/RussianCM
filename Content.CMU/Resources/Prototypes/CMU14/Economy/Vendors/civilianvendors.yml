@@ -269,10 +269,10 @@
   - type: CMAutomatedVendor
     jobs: [ AU14JobCivilianNurse, AU14JobCivilianPhysician, AU14JobCivilianHeadPhysician, AU14JobCLFPhysician, AU14JobCLFSurgeon ]
     sections:
-    - name: cmu-vendor-section-pressurized-canisters
-      entries:
-      - id: RMCPouchReagentCanister
-        amount: 1
+    # - name: cmu-vendor-section-pressurized-canisters # RuMC edit
+    #   entries:
+    #   - id: RMCPouchReagentCanister
+    #     amount: 1
     - name: Shoes
       choices: { CMUcivilianmedicalshoes: 1 }
       entries:
@@ -363,10 +363,10 @@
   - type: CMAutomatedVendor
     jobs: [ AU14JobCivilianEmergencyResponseOfficer, AU14JobCLFPhysician, AU14JobCLFSurgeon ]
     sections:
-    - name: cmu-vendor-section-pressurized-canisters
-      entries:
-      - id: RMCPouchReagentCanister
-        amount: 1
+    # - name: cmu-vendor-section-pressurized-canisters # RuMC edit
+    #   entries:
+    #   - id: RMCPouchReagentCanister
+    #     amount: 1
     - name: Shoes
       choices: { CMUcivilianmedicalshoes: 1 }
       entries:

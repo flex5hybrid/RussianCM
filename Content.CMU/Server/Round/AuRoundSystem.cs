@@ -47,6 +47,7 @@ namespace Content.Server.CMU14.Round
         {
             "ForceOnForce",
             "Insurgency",
+            "ColonyShift", // RuMC edit
         };
 
         private static readonly HashSet<string> PostRoundstartThreatVotePresets = new(StringComparer.OrdinalIgnoreCase)
@@ -128,6 +129,10 @@ namespace Content.Server.CMU14.Round
             set => _state.SelectedOpforShip = value;
         }
 
+        // Grids keyed by prototype id. Round setup tags the voted ship's faction
+        // once the votes have concluded.
+        private readonly Dictionary<string, IReadOnlyList<EntityUid>> _loadedGameMapGrids = new();
+
         public void SetOpforShip(string shipId)
         {
             _selectedOpforShip = shipId;
@@ -179,6 +184,7 @@ namespace Content.Server.CMU14.Round
 
             base.Initialize();
             SubscribeLocalEvent<LoadingMapsEvent>(OnLoadingMaps);
+            SubscribeLocalEvent<PostGameMapLoad>(OnPostGameMapLoad);
             _voteSequence.Reset();
             _state.Reset();
             SelectedPlanetMap = null;
@@ -994,19 +1000,31 @@ namespace Content.Server.CMU14.Round
                 };
             }
 
-
-
-            if (presetProto.RequiresGovforVote && govforPlatoons.Count > 0 && !ApplyKabanPlatoon(true, StartShipVote))
+            // Respect upstream vote visibility and CMU's Kaban platoon restrictions.
+            List<(string text, object data)> BuildVoteOptions(
+                List<ProtoId<PlatoonPrototype>> platoons,
+                bool isGovfor)
             {
-                var optionsplatoons = new List<(string text, object data)>();
-                foreach (var platoonId in govforPlatoons)
+                var options = new List<(string text, object data)>();
+                foreach (var platoonId in platoons)
                 {
-                    if (!KabanPlatoonAllowed(platoonId, true)) // CMU14
+                    if (!KabanPlatoonAllowed(platoonId, isGovfor)) // CMU14
                         continue;
                     var platoon = _prototypeManager.Index<PlatoonPrototype>(platoonId);
-                    optionsplatoons.Add((Loc.GetString(platoon.Name), platoon));
+                    if (!platoon.ShowInVote)
+                        continue;
+                    options.Add((Loc.GetString(platoon.Name), platoon));
                 }
 
+                return options;
+            }
+
+            var optionsplatoons = BuildVoteOptions(govforPlatoons, true);
+            if (presetProto.RequiresGovforVote &&
+                govforPlatoons.Count > 0 &&
+                !ApplyKabanPlatoon(true, StartShipVote) &&
+                optionsplatoons.Count > 0)
+            {
                 var voteopt = new VoteOptions
                 {
                     Title = Loc.GetString("au14-vote-title-govfor"),
@@ -1058,17 +1076,12 @@ namespace Content.Server.CMU14.Round
                 };
             }
 
-            if (presetProto.RequiresOpforVote && opforPlatoons.Count > 0 && !ApplyKabanPlatoon(false, StartShipVote))
+            optionsplatoons = BuildVoteOptions(opforPlatoons, false);
+            if (presetProto.RequiresOpforVote &&
+                opforPlatoons.Count > 0 &&
+                !ApplyKabanPlatoon(false, StartShipVote) &&
+                optionsplatoons.Count > 0)
             {
-                var optionsplatoons = new List<(string text, object data)>();
-                foreach (var platoonId in opforPlatoons)
-                {
-                    if (!KabanPlatoonAllowed(platoonId, false)) // CMU14
-                        continue;
-                    var platoon = _prototypeManager.Index<PlatoonPrototype>(platoonId);
-                    optionsplatoons.Add((Loc.GetString(platoon.Name), platoon));
-                }
-
                 var voteopt = new VoteOptions
                 {
                     Title = Loc.GetString("au14-vote-title-opfor"),
@@ -1170,6 +1183,15 @@ namespace Content.Server.CMU14.Round
 
             return platoon?.PossibleShips.FirstOrDefault();
         }
+
+        private void OnPostGameMapLoad(PostGameMapLoad ev)
+        {
+            _loadedGameMapGrids[ev.GameMap.ID] = ev.Grids;
+        }
+
+        /// <summary>The grids the given game map loaded with this round, if it has loaded.</summary>
+        public bool TryGetLoadedShipGrids(string gameMapId, out IReadOnlyList<EntityUid> grids)
+            => _loadedGameMapGrids.TryGetValue(gameMapId, out grids!);
 
         public bool IsVoteSequenceRunning()
         {

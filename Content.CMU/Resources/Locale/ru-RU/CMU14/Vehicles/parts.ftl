@@ -166,17 +166,17 @@ ent-CMUCrateVehiclePartArmorPaladin = броня «Паладин»
 ent-CMUCrateVehiclePartArmorReactiveUPP = динамическая защита
     .desc = Динамическая защита для танка СПП.
 
-ent-CMUCrateVehiclePartBlackfootThrusters = двигатели «Блэкфута»
-    .desc = Усиленные двигатели вертикального взлёта и посадки для AD-71E «Блэкфут».
+ent-CMUCrateVehiclePartBlackfootThrusters = ящик с двигателями «Черноступа»
+    .desc = Ящик с усиленными двигателями для AD-71E «Черноступ».
 
-ent-CMUCrateVehiclePartBlackfootLaunchers = блок осветительных ракет «Блэкфута»
-    .desc = Блок вспомогательных осветительных ракет «Блэкфута», управляемый пилотом.
+ent-CMUCrateVehiclePartBlackfootLaunchers = ящик с модулем сигнальных ракет «Черноступа»
+    .desc = Ящик с пусковой установкой сигнальных ракет для «Черноступа».
 
-ent-CMUCrateVehiclePartBlackfootDoorGun = автоматический гранатомёт M866
-    .desc = Автоматический гранатомёт в заднем дверном проёме AD-71E «Блэкфут».
+ent-CMUCrateVehiclePartBlackfootDoorGun = ящик с гранатомётом M866 для «Черноступа»
+    .desc = Ящик с автоматическим гранатомётом M866 для заднего дверного проёма «Черноступа».
 
-ent-CMUCrateVehiclePartBlackfootReconSystem = разведывательная система «Блэкфута»
-    .desc = Вспомогательный комплект скрытности и разведки для «Блэкфута».
+ent-CMUCrateVehiclePartBlackfootReconSystem = ящик с разведывательным блоком «Черноступа»
+    .desc = Ящик с оборудованием для скрытности и разведки для «Черноступа».
 
-ent-CMUCrateVehiclePartBlackfootSensorArray = комплекс датчиков «Блэкфута»
-    .desc = Комплект датчиков отложенного внедрения для разведывательного варианта «Блэкфута».
+ent-CMUCrateVehiclePartBlackfootSensorArray = ящик с блоком сенсоров «Черноступа»
+    .desc = Ящик с блоком сенсоров для разведывательной версии «Черноступа».

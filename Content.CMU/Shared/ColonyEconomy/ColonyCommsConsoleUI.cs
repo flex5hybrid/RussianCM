@@ -21,13 +21,45 @@ public sealed class ColonyCommsConsoleBuiMsg : BoundUserInterfaceMessage
 [Serializable, NetSerializable]
 public sealed class ColonyCommsConsoleBuiState : BoundUserInterfaceState
 {
+    // None outside greenshift, the window hides the transport row then. RuMC edit 
+    public ColonyRotationTransportStatus Transport;
+
+    // when the current phase flips over (dispatch, landing, departure), in server CurTime. RuMC edit 
+    public TimeSpan? TransportAt;
+    public bool CanCall;
+    public bool CanRecall;
 
     public ColonyCommsConsoleBuiState()
     {
 
     }
+    // RuMC edit ColonyShift Start
+    public ColonyCommsConsoleBuiState(ColonyRotationTransportStatus transport, TimeSpan? transportAt, bool canCall, bool canRecall)
+    {
+        Transport = transport;
+        TransportAt = transportAt;
+        CanCall = canCall;
+        CanRecall = canRecall;
+    }
 }
 
+[Serializable, NetSerializable]
+public enum ColonyRotationTransportStatus : byte
+{
+    None,
+    Scheduled,
+    Inbound,
+    Approaching,
+    Docked,
+    Departing,
+}
+
+[Serializable, NetSerializable]
+public sealed class ColonyCommsConsoleTransportCallBuiMsg : BoundUserInterfaceMessage;
+
+[Serializable, NetSerializable]
+public sealed class ColonyCommsConsoleTransportRecallBuiMsg : BoundUserInterfaceMessage;
+    // RuMC edit ColonyShift End
 [Serializable, NetSerializable]
 public sealed class ColonyCommsConsoleMessage : EntityEventArgs
 {

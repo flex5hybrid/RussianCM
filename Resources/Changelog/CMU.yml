@@ -15707,7 +15707,7 @@ Entries:
       nails.
     type: Fix
   id: 913
-  time: '2026-10-24T12:39:34.0000000+00:00'    
+  time: '2026-10-24T12:39:34.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2277
 - author: '- admin: Добавлена автоматическая публикация правил RuCMU и руководств
     CMU в Discord с оглавлением и обновлением существующих сообщений.'
@@ -15757,7 +15757,7 @@ Entries:
       returning to orders, without inspecting through walls or pursuing stale evidence
       indefinitely.
     type: Fix
-  id: 872
+  id: 927
   time: '2026-10-24T16:47:16.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2282
 - author: TheHellFireo
@@ -15771,7 +15771,7 @@ Entries:
   - message: Each hive can have up to twenty living swarm lessers, with summons filling
       available slots.
     type: Tweak
-  id: 873
+  id: 928
   time: '2026-10-24T16:47:45.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2280
 - author: TheHellFireo
@@ -15780,21 +15780,21 @@ Entries:
       threat counts. Survivor announcements now adjust if the roster changes at round
       start.
     type: Fix
-  id: 874
+  id: 929
   time: '2026-10-24T18:13:48.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2284
 - author: Kadeo64
   changes:
   - message: two eggs in clearance X crate
     type: Tweak
-  id: 875
+  id: 930
   time: '2026-10-24T21:43:39.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2279
 - author: ArturUr1
   changes:
   - message: Replacing the hardcoded newmed localization with localization keys.
     type: Code
-  id: 876
+  id: 931
   time: '2026-10-25T11:59:18.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2290
 - author: sunzu432
@@ -15808,7 +15808,7 @@ Entries:
   - message: 'Hope''s Retreat: Small aesthetic tweaks to some names and some light
       changes to make areas feel more lived-in.'
     type: Tweak
-  id: 877
+  id: 932
   time: '2026-10-25T14:36:21.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2288
 - author: TheHellFireo
@@ -15822,7 +15822,7 @@ Entries:
     type: Add
   - message: Fixed clipped matchup names and outcome count badges.
     type: Fix
-  id: 878
+  id: 933
   time: '2026-10-25T16:38:10.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2294
 - author: troytroy400
@@ -15850,7 +15850,7 @@ Entries:
   - message: Corsat Station, Kutjevo Biolab and Chances Claim are temporarily out
       of the Distress Signal map vote while they become MultiZ.
     type: Remove
-  id: 879
+  id: 934
   time: '2026-10-25T17:42:48.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2292
 - author: rokudara-sen
@@ -15858,21 +15858,21 @@ Entries:
   - message: The Yautja Honor Code is now in the guidebook under Rules, and examining
       a hunting bracer links to it.
     type: Add
-  id: 880
+  id: 935
   time: '2026-10-25T17:45:09.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2283
 - author: Mary-Marilyn
   changes:
   - message: Added more loadout clothes to scientists and doctors
     type: Add
-  id: 881
+  id: 936
   time: '2026-10-26T00:41:49.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2295
 - author: AngryAl1123
   changes:
   - message: CCA diplomatic console
     type: Add
-  id: 882
+  id: 937
   time: '2026-10-26T04:19:41.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2299
 - author: rokudara-sen
@@ -15887,7 +15887,7 @@ Entries:
     type: Tweak
   - message: Yautja whitelists and hunt settings are tabs in the clan hall now.
     type: Admin
-  id: 883
+  id: 938
   time: '2026-10-26T18:50:51.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2278
 - author: Vixting
@@ -15900,14 +15900,14 @@ Entries:
   - message: Added centrifuge, mainly used to load auto injectors evenly from the
       output from the turing.
     type: Add
-  id: 884
+  id: 939
   time: '2026-10-26T19:24:49.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2305
 - author: Vixting
   changes:
   - message: Added the gambler drone
     type: Add
-  id: 885
+  id: 940
   time: '2026-10-26T21:04:36.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2291
 - author: TheHellFireo
@@ -15921,7 +15921,7 @@ Entries:
   - message: Hide inactive hives from Join as Xeno while allowing queued players to
       leave them.
     type: Fix
-  id: 886
+  id: 941
   time: '2026-10-27T16:58:20.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2307
 - author: TheHellFireo
@@ -15937,7 +15937,7 @@ Entries:
     type: Fix
   - message: Vehicles and powerloaders can pass through raised Mohawk ramp railings.
     type: Fix
-  id: 887
+  id: 942
   time: '2026-10-27T16:58:42.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2310
 - author: ILoveDespoiler
@@ -15949,7 +15949,7 @@ Entries:
     type: Remove
   - message: Changed Root stats (HP, etc.) to match new abilities.
     type: Tweak
-  id: 888
+  id: 943
   time: '2026-10-27T16:59:05.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2309
 - author: Dongo4
@@ -15958,7 +15958,7 @@ Entries:
       This should hopefully fix the "phantom" issue where players on the roofs were
       visible to players the lower z level as if they were on the same z level.'
     type: Map
-  id: 889
+  id: 944
   time: '2026-10-27T16:59:09.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2311
 - author: ILoveDespoiler
@@ -15976,14 +15976,14 @@ Entries:
     type: Fix
   - message: Fixed Neomorphs not gaining larva (bloodbursters) from latejoins.
     type: Fix
-  id: 890
+  id: 945
   time: '2026-10-27T16:59:35.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2308
 - author: SupremecyS
   changes:
   - message: Added new UPP pilot helmet and mask. With the help of @#KILLALLWORKINGJOES
     type: Add
-  id: 891
+  id: 946
   time: '2026-10-27T16:59:43.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2289
 - author: Valklria
@@ -15991,7 +15991,7 @@ Entries:
   - message: Added the ability to depart via helicopter from the garrison landing
       pad; added quarters for VTOL and gunship pilots.
     type: Add
-  id: 892
+  id: 947
   time: '2026-10-27T17:00:01.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2302
 - author: TheHellFireo
@@ -16012,7 +16012,7 @@ Entries:
   - message: Fixed a client crash caused by expired rating prompts removing themselves
       during a UI update.
     type: Fix
-  id: 893
+  id: 948
   time: '2026-10-27T17:01:02.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2312
 - author: ver0098
@@ -16021,14 +16021,14 @@ Entries:
     type: Tweak
   - message: Hobelar integrity is now 700 instead of being the same as the Longstreet
     type: Tweak
-  id: 894
+  id: 949
   time: '2026-10-27T17:01:27.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2300
 - author: HotdogMan52
   changes:
   - message: 5.56 AP to take parent's falloff values, as it always should've
     type: Tweak
-  id: 895
+  id: 950
   time: '2026-10-27T17:01:56.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2297
 - author: TheHellFireo
@@ -16044,7 +16044,7 @@ Entries:
     type: Fix
   - message: Boiler air cover can hit flying Lexington gunships for 800 hull damage.
     type: Add
-  id: 896
+  id: 951
   time: '2026-10-27T17:59:37.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2315
 - author: ILoveDespoiler
@@ -16064,9 +16064,68 @@ Entries:
     type: Tweak
   - message: Fixed several Venator abilities having improper descriptions.
     type: Fix
-  id: 897
+  id: 952
   time: '2026-10-27T18:02:52.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2286
+- author: '- add: Добавлены кабанкоины с постоянным кошельком, магазином с иконками
+    и историей.'
+  time: '2026-10-27T20:46:36Z'
+  changes:
+  - type: Add
+    message: Добавлены жетоны приоритета профессии ×3/×5 и гибкие жетоны с проверками
+      допуска и недельными ограничениями.
+  - type: Add
+    message: Добавлено форсирование режима, планеты, GOVFOR, OPFOR и полного набора
+      через очередь будущих раундов с возвратом при отмене.
+  - type: Add
+    message: Добавлены согласуемые персональные TTS-голоса и личные Discord-роли.
+  - type: Add
+    message: 'Привязка Discord встроена в игровой сервер: один бот, автоматическая
+      кнопка и одноразовые коды.'
+  - type: Admin
+    message: Добавлено выключенное по умолчанию требование привязки Discord для игры,
+      управляемое cvar rmc.discord_account_linking_required.
+  - type: Admin
+    message: Менеджеры могут сразу начислять и снимать КБК по сикею, включая собственный
+      аккаунт; изменения сохраняются в журнале.
+  - type: Tweak
+    message: Выбор приоритета разделён на понятные шаги; список профессий соответствует
+      персонализации и не содержит дубликатов.
+  - type: Tweak
+    message: Привязка Discord перенесена в настройки, личное дело и кабанкоины — в
+      персонализацию.
+  - type: Fix
+    message: Исправлены перенос текста карточек, локализация и ошибки загрузки меню.
+  - type: Fix
+    message: Личные Discord-роли поднимаются под настроенную границу для корректного
+      отображения цвета.
+  - type: Code
+    message: Модули по умолчанию выключены; FoF-приоритеты пока недоступны.
+  - type: Code
+    message: Исправлены ресурсы BuildChecker и пути подмодулей помощника Git.
+  id: 972
+  url: https://github.com/flex5hybrid/RussianCM/pull/559
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Translations'
+  - XL
+- author: PERed5
+  time: '2026-10-27T20:46:50Z'
+  changes:
+  - type: Add
+    message: Добавлена недостающая русская локализация консоли изучений
+  - type: Add
+    message: Добавлена русская локализация пакетов с кровью
+  - type: Tweak
+    message: Изменены названия торгоматов (инженерный торгомат > ИнжеМат и так далее)
+  - type: Fix
+    message: Нормандская стена стала стеной нормандии
+  id: 973
+  url: https://github.com/flex5hybrid/RussianCM/pull/568
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Translations'
+  - M
 - author: TheHellFireo
   changes:
   - message: Fixed stale targeting, shield body-state restoration and several entity
@@ -16080,7 +16139,7 @@ Entries:
   - message: Reduced repeated inventory, HUD, interaction and chat work, and made
       global round-end body visibility opt-in.
     type: Tweak
-  id: 898
+  id: 953
   time: '2026-10-28T08:55:18.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2313
 - author: TheHellFireo
@@ -16088,7 +16147,7 @@ Entries:
   - message: Aligned the HunterShip reactor-area chair's buckled occupant with its
       sprite.
     type: Fix
-  id: 899
+  id: 954
   time: '2026-10-28T11:06:53.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2323
 - author: TheHellFireo
@@ -16110,7 +16169,7 @@ Entries:
     type: Tweak
   - message: Added clearly identified L66A2 ammunition supplies to RMC requisitions.
     type: Add
-  id: 900
+  id: 955
   time: '2026-10-28T11:07:03.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2322
 - author: TheHellFireo
@@ -16136,7 +16195,7 @@ Entries:
   - message: Restored commando carrying skills, explosive training for equipped roles,
       and leader orders.
     type: Fix
-  id: 901
+  id: 956
   time: '2026-10-28T11:07:18.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2325
 - author: TheHellFireo
@@ -16160,7 +16219,7 @@ Entries:
     type: Fix
   - message: Queen eyes and other sensor-only bodies no longer crush people when falling.
     type: Fix
-  id: 902
+  id: 957
   time: '2026-10-28T11:07:34.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2324
 - author: TheHellFireo
@@ -16183,7 +16242,7 @@ Entries:
     type: Fix
   - message: Semiotic signs keep their offsets when placed with PlaceFree.
     type: Fix
-  id: 903
+  id: 958
   time: '2026-10-28T11:08:06.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2345
 - author: TheHellFireo
@@ -16213,7 +16272,7 @@ Entries:
   - message: XMP5A6 and cardiocaine descriptions clarify magazine compatibility and
       living cardiac-arrest treatment.
     type: Tweak
-  id: 904
+  id: 959
   time: '2026-10-28T11:09:29.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2344
 - author: TheHellFireo
@@ -16250,7 +16309,7 @@ Entries:
     type: Fix
   - message: TWE requisitions stocks combat-drone ammunition crates.
     type: Add
-  id: 905
+  id: 960
   time: '2026-10-28T11:16:00.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2354
 - author: CatoChristopherMrow
@@ -16258,7 +16317,7 @@ Entries:
   - message: Banned Davy Jones from the cockpit, disallowing dead pilots to keep flying
       the gunship.
     type: Fix
-  id: 906
+  id: 961
   time: '2026-10-28T11:17:12.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2318
 - author: rokudara-sen
@@ -16282,7 +16341,7 @@ Entries:
     type: Fix
   - message: Yautja can challenge each other to honor duels
     type: Fix
-  id: 907
+  id: 962
   time: '2026-10-28T11:18:24.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2314
 - author: rokudara-sen
@@ -16295,7 +16354,7 @@ Entries:
   - message: Sandstone bricks can be built into sandstone doors, walls, floors and
       handrails
     type: Add
-  id: 908
+  id: 963
   time: '2026-10-28T11:18:59.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2316
 - author: TheHellFireo
@@ -16310,7 +16369,7 @@ Entries:
     type: Fix
   - message: Corrected Bush security camera networks and UCMJ execution wording.
     type: Fix
-  id: 909
+  id: 964
   time: '2026-10-28T11:20:12.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2326
 - author: byondsucks
@@ -16341,7 +16400,7 @@ Entries:
   - message: Yautja parity pass against cm across combat, gear, self-destruct, night
       vision, sounds and sprites.
     type: Code
-  id: 910
+  id: 965
   time: '2026-10-28T11:57:18.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2237
 - author: ver0098
@@ -16351,7 +16410,7 @@ Entries:
     type: Add
   - message: Type-64 damage multiplier is now 1.15x.
     type: Tweak
-  id: 911
+  id: 966
   time: '2026-10-28T12:00:50.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2061
 - author: Ignies
@@ -16360,8 +16419,579 @@ Entries:
     type: Tweak
   - message: Mob collision with Jeep wreck.
     type: Fix
-  id: 912
+  id: 967
   time: '2026-10-28T12:04:35.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2306
+- author: Vencallium
+  changes:
+  - message: Medical vendors now offer one pressurized reagent canister pouch.
+    type: Add
+  - message: Machine guns, temporary emplacements, weapon mounts, and sentries can
+      be deployed beside barricades. Other solid obstructions still block placement.
+    type: Tweak
+  - message: Hospital incident payments go directly to the colony budget or the appropriate
+      GOVFOR or OPFOR requisitions budget.
+    type: Tweak
+  - message: Hospital consoles report that earned payments were deposited instead
+      of dispensed as cash.
+    type: Fix
+  - message: The medical guide has a dedicated cryogenic medicine page covering treatments,
+      recipes, temperatures, and precursors.
+    type: Add
+  - message: Cryogenic recipes that call for Cryoxadone now use Marine Cryoxadone,
+      including Necrosol.
+    type: Tweak
+  - message: The filled Cryoxadone beaker contains and is labeled as Marine Cryoxadone.
+    type: Tweak
+  - message: Replaced many Bosenmori placeholder objects with matching functional
+      CM, RMC, or CMU prototypes and consolidated matching sprite duplicates.
+    type: Map
+  - message: Converted distinctive Bosenmori floor art into named, functional floor
+      tiles.
+    type: Map
+  - message: Corrected the Bosenmori asteroid floor tile's variant count so its texture
+      loads.
+    type: Fix
+  - message: Long telephone lists can scroll within the phone window.
+    type: Fix
+  - message: Orbital bombardments strike the matching position on every connected
+      Z-level.
+    type: Add
+  - message: Multi-Z orbital strikes show target markers and apply explosion steps
+      on each affected level.
+    type: Tweak
+  - message: Orbital protection is checked on each affected level.
+    type: Tweak
+  - message: Moderators can use `stopglobalsound` to stop admin-played global audio
+      for everyone or specified players.
+    type: Admin
+  - message: Moderators can use `intel:spawnintel`.
+    type: Admin
+  - message: CMU round statistics can be filtered to 1 week, 2 weeks, 1 month, 3 months,
+      6 months, or 1 year.
+    type: Add
+  - message: Internal bleeding can cause a brief “You cough up some blood” warning
+      with cough and blood-splash sounds.
+    type: Add
+  - message: Blood-cough warnings become more frequent as the number of internally
+      bleeding body parts increases.
+    type: Tweak
+  - message: GOVFOR and OPFOR ASRS catalogs include gear from the selected platoon's
+      requisitions and equipment vendors.
+    type: Add
+  - message: Faction ASRS gear is priced using comparable requisitions items and delivered
+      as the complete item, including its contents.
+    type: Tweak
+  - message: Faction ASRS catalogs include ammunition for their smart gunners and
+      specialist-weapon classes.
+    type: Add
+  - message: Faction ASRS stock refreshes when the selected platoon catalog is reapplied.
+    type: Tweak
+  - message: Cellphones have a 5% chance to use the IED ringtone when they ring.
+    type: Add
+  - message: GOVFOR and OPFOR each have a faction-specific medical radio channel colored
+      evergreen.
+    type: Add
+  - message: Faction headsets include separate medical-channel keys; doctors, medical
+      officers, and high command receive suitable headsets, and faction relays support
+      the channels.
+    type: Tweak
+  - message: Research-contract synthesis excludes food and drink reagents, while Water
+      and Sugar remain available.
+    type: Tweak
+  - message: Removed duplicate research-simulator localization definitions.
+    type: Fix
+  - message: Hunger drains 1.5 times more slowly. Thirst and gains from eating are
+      unchanged.
+    type: Tweak
+  - message: Athletic and Muscular selections in Character Records apply sex-specific
+      muscular sprites to human characters.
+    type: Add
+  - message: The character's Build field keeps that appearance in sync when sex, or
+      markings change.
+    type: Tweak
+  - message: Added focused regression coverage for barricade placement, global audio,
+      ringtone resets, multi-Z impacts, faction ASRS stock, and character Build appearance.
+    type: Code
+  id: 968
+  time: '2026-10-28T16:22:19.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2287
+- author: rokudara-sen
+  changes:
+  - message: The queen's slashes are much less likely to sever a yautja's limbs.
+    type: Tweak
+  id: 969
+  time: '2026-10-28T20:23:54.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2359
+- author: rokudara-sen
+  changes:
+  - message: Yautja can open their runed sandstone doors with wristblades again.
+    type: Fix
+  - message: Thrown yautja harpoons hit their target instead of sliding through.
+    type: Fix
+  - message: Marking new prey removes your old prey mark.
+    type: Fix
+  - message: Buckling into a chair no longer breaks the yautja mask visor.
+    type: Fix
+  - message: The hunter ship has its thrall bracer kits again.
+    type: Fix
+  - message: A recovered yautja body gives as much intel as a recovered queen.
+    type: Tweak
+  - message: Yautja melee weapons hit humans like in CM-SS13, through armor and without
+      the skill bonus.
+    type: Tweak
+  - message: Yautja can only throw a carried body 7 tiles.
+    type: Tweak
+  - message: Yautja stay conscious for 20 seconds after going into crit.
+    type: Tweak
+  - message: Clan hall hunt settings need the Clans admin flag instead of Host.
+    type: Admin
+  id: 970
+  time: '2026-10-28T21:27:06.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2360
+- author: TheHellFireo
+  changes:
+  - message: Preserve docking when docked grids transfer between levels.
+    type: Fix
+  - message: Correct XM99A hitscan obstruction around fixture geometry.
+    type: Fix
+  - message: Prevent rejected reinforcement shuttles from retaining maps and allow
+      lemon-drop boxes to fit inside ration packs.
+    type: Fix
+  - message: Preserve copied ghost sprites and the Venator gib visual.
+    type: Fix
+  - message: Avoid inaudible cross-floor and vehicle audio allocations and repeated
+      hidden lobby trait-control construction.
+    type: Code
+  - message: Update to stock RobustToolbox v294.0.1 and reduce networking, deployment
+      and diagnostic allocation costs.
+    type: Code
+  id: 971
+  time: '2026-10-29T00:35:23.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2357
+- author: KeiKiyomi
+  changes:
+  - message: Stethoscopes can now detect raspy breathing in patients with neomorph
+      infections from stage 2 onward.
+    type: Add
+  id: 917
+  time: '2026-10-29T09:25:14.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2358
+- author: TheHellFireo
+  changes:
+  - message: Fixed a climbing interaction that could interrupt client movement prediction.
+    type: Fix
+  - message: Reduced repeated work when updating clothing, stains and metabolism.
+    type: Fix
+  - message: Reduced unnecessary combat sound allocations while preserving sounds
+      inside vehicles.
+    type: Fix
+  id: 918
+  time: '2026-10-29T10:44:05.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2366
+- author: rokudara-sen
+  changes:
+  - message: Free Company Raiders get better armor, rifle lights, flares, a real medical
+      pouch, a stocked pack and ex-MARSOC skills so they stand a chance on distress
+      calls against xenos.
+    type: Tweak
+  - message: The raider leader's XM40 no longer accepts HEAP magazines.
+    type: Tweak
+  id: 919
+  time: '2026-10-30T11:04:47.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2375
+- author: ILoveDespoiler
+  changes:
+  - message: Added 100 AP to King.
+    type: Add
+  - message: Adjusted some stats of King so it can fulfill its role as the Tie Breaker
+      that ends the game.
+    type: Tweak
+  id: 920
+  time: '2026-10-30T11:05:57.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2371
+- author: Mary-Marilyn
+  changes:
+  - message: Added a WY Corporate Synthetic for insurgency
+    type: Add
+  id: 921
+  time: '2026-10-30T11:06:14.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2372
+- author: rokudara-sen
+  changes:
+  - message: Yautja clan masks, thrall masks and the council helmet block chem smoke
+      and nerve gas, like in cmss13.
+    type: Fix
+  - message: The warrior punch, bone chips and hedgehog spikes no longer slow yautja.
+    type: Fix
+  - message: Yautja communicators keep working when the colony comms tower is down.
+    type: Fix
+  - message: Yautja get a warning just before they hit crit.
+    type: Add
+  - message: Yautja can't self-destruct while in crit, like in cmss13.
+    type: Fix
+  id: 922
+  time: '2026-10-30T11:07:48.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2367
+- author: rokudara-sen
+  changes:
+  - message: Admins can call the Yautja Military Caste as an ERT. They arrive on their
+      own shuttle with an Enforcer leading Soldiers.
+    type: Admin
+  - message: Military Caste bracers have their bracer menu, self-destruct and translator
+      again.
+    type: Fix
+  - message: Military Caste kits match CM13, with a plasma carbine, strong xeno restraints
+      and knife greaves.
+    type: Tweak
+  id: 923
+  time: '2026-10-30T11:08:46.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2370
+- author: rokudara-sen
+  changes:
+  - message: Serial killers can butcher human corpses with a knife or anything sharp
+      in hand, like preds do.
+    type: Add
+  id: 924
+  time: '2026-10-30T11:10:21.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2376
+- author: rokudara-sen
+  changes:
+  - message: Colony jeep kits only show up once, and only on the colony ASRS console.
+    type: Fix
+  id: 925
+  time: '2026-10-30T11:10:50.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2364
+- author: TheHellFireo
+  changes:
+  - message: Fixed several movement, ammunition, recycling, lathe, shuttle and sentry-camera
+      issues.
+    type: Fix
+  - message: Fixed gas loss and duplication when blocking and reopening tiles.
+    type: Fix
+  - message: Rockets now trigger at their aimed stopping point, and hijack pipe warnings
+      remain until their burst.
+    type: Fix
+  - message: Added guidebook Back/Forward navigation with remembered page searches
+      and scroll positions.
+    type: Add
+  - message: Ordinary handheld radios now support a receive-only mode.
+    type: Add
+  - message: Health scanners distinguish critical overdoses, and options refresh when
+      settings change.
+    type: Tweak
+  id: 926
+  time: '2026-10-30T14:05:14.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2377
+- author: maertayn
+  changes:
+  - message: Force on Force gains a colony roster with limited colony roles (`game_rules.yml`),
+      their own store, a colonist rule, faction job selection in the character editor
+      and a round time limit (75min + 20min overtime, perhaps too low, needs tweaking)
+    type: Add
+  - message: New Hotspot objectives with game preset support, ties into the round
+      time limit and enables sudden-death mode during overtime. During overtime the
+      loser gets extra points when holding the hotspot.
+    type: Add
+  - message: Distress Signal can now roll Runaway Synth and Replicant antagonists.
+    type: Add
+  - message: 'Ships and planets get a life support atmos layer: breathing vents, day/night
+      air cycles, spreading fires and sealed Z-level openings.'
+    type: Add
+  - message: Ship fire alarm, built into the shuttle console and separate prototypes
+      (`CMUShipFireAlarm`). Enables siphoning of bad gases in the life support vent
+      and stops feeding oxygen.
+    type: Add
+  - message: Gunship master arm toggle, weapons will not function on safe
+    type: Add
+  - message: Antagonist rolls now use pity weighting. Every consecutive round you
+      go unselected raises your draw weight by a step, up to a cap, and getting an
+      antag resets it.
+    type: Tweak
+  - message: 'Colony antagonist spawn chances now rise with demand: the more ready
+      players who specifically want an antag, the higher its roll, up to a cap. Players
+      with fewer antag selections influence the antag roll more than someone who selected
+      all antags.'
+    type: Tweak
+  - message: Alert levels are now tracked per warship instead of globally.
+    type: Tweak
+  - message: Yautja consoles are gated by rank (leader/ancient/elder), and youngbloods
+      hatch speaking Yautja.
+    type: Tweak
+  - message: Ship-launched gas weapons now hurt xenomorphs too.
+    type: Tweak
+  - message: Gas canister resale pays 1.75x more per mol, and can no longer sell above
+      catalog cost.
+    type: Tweak
+  - message: Food vendors stock twice as many prepared meals.
+    type: Tweak
+  - message: Helmets can take a tucked-in and enabled regular flashlight.
+    type: Tweak
+  - message: Ship MREs stay locked until round setup completes, with an admin override.
+    type: Tweak
+  - message: Incompatible vehicle hardpoints refuse with a popup explaining why (BUG-1173).
+    type: Fix
+  - message: Surgeons can clamp internal bleeds that drugs are holding shut (BUG-1174).
+    type: Fix
+  - message: Civilians can open the facility medical vendor (BUG-1168).
+    type: Fix
+  - message: Pathogen spore sacs are breakable (BUG-1176).
+    type: Fix
+  - message: Cutting a door's power wires now lets you hack it open.
+    type: Fix
+  - message: Hive leader popups say Xenomorph instead of Xenonid (BUG-1164).
+    type: Fix
+  - message: The ASRS guide button now opens the requisitions guide instead of the
+      generic cargo guide (BUG-1165).
+    type: Fix
+  - message: Cancelling a dropship landing no longer skips its refuel cooldown (BUG-1170).
+    type: Fix
+  - message: WeYu IPIE roles now use the WeYu faction instead of government forces
+      (BUG-1169).
+    type: Fix
+  - message: The AK-4047 stock now starts collapsed (BUG-1166).
+    type: Fix
+  - message: Threat member job previews show a larva instead of a queen (BUG-1073).
+    type: Fix
+  - message: Xeno chevrons in playtime stats now use xeno rank time thresholds (BUG-1072).
+    type: Fix
+  - message: Rider whisper text uses the right font again, and is muted when global
+      ghost chat is disabled.
+    type: Fix
+  - message: ahelp, mhelp and bug reports relay to Discord, with a reworked mentor
+      help window and a new in-game bug report window. Early prototype.
+    type: Admin
+  - message: 'Lobby voting hardened: round and gamemode commands require confirmation,
+      vote locks persist across restarts, platoons are out of the vote.'
+    type: Admin
+  - message: 'New tools: instant third-party deployment (force interest), a life support
+      command (adds the full pressure/breathing/heat medical set, which is disabled
+      during playtest, to a player), commendation print lock and a debug cigar that
+      never burns out.'
+    type: Admin
+  - message: Updates to the Mohawk dropship, Fort McNeil, Fiorina and the hunter ship.
+    type: Map
+  - message: Salamander pressure-suit only seals when wearing the new Salamander pressure
+      helmet, and fire resistance is fixed for the fire-suits.
+    type: Tweak
+  - message: Small 1x1 copy of the 2x2 StationAnchorIndestructible (`CMUAnchorIndestructible`)
+    type: Add
+  - message: '`showadmins` shell command now shows admins who are playing as [IC]
+      when adminned (deadminned implies it)'
+    type: Admin
+  - message: Fire stops spreading through closed double-doors (any door larger than
+      1x1)
+    type: Fix
+  - message: Initial Discord linking - post the single-use coupling code into the
+      configured channel
+    type: Add
+  - message: 'Leadership sleeper advisory fax is sent to all grouped faxes: `military-command`,
+      `marshal-bureau`, `colony-command`, `warship-command`'
+    type: Tweak
+  - message: Periodic cleanup of trash and loose items
+    type: Admin
+  id: 927
+  time: '2026-10-30T17:03:16.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2363
+- author: rokudara-sen
+  changes:
+  - message: Humans can turn on the clan mask visor while wearing yautja bracers.
+    type: Add
+  - message: 'Linked thralls become the cmss13 Thrall species: more health, half brute
+      and burn, stun resistance, no bleeding or broken bones, stronger punches, dark
+      vision, butchering, prey marking and dagger flaying.'
+    type: Add
+  - message: Yautja and thralls can hang corpses from the ceiling with the strange
+      rope, found on the hunter ship.
+    type: Add
+  - message: Yautja can butcher fallen yautja.
+    type: Add
+  - message: Dathwei and thwei restore blood on humans and mend shattered bones.
+    type: Tweak
+  - message: Yautja and linked thralls no longer choke when a xeno drags them in crit.
+    type: Tweak
+  id: 928
+  time: '2026-10-30T18:55:08.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2380
+- author: rokudara-sen
+  changes:
+  - message: Wielding the plasma rifle, plasma carbine or spike launcher no longer
+      slows yautja.
+    type: Tweak
+  - message: Plasma rifle and carbine bolts knock humans down for 4 seconds.
+    type: Tweak
+  - message: The plasma carbine and hunting bow fire at their intended speed, and
+      the carbine fires a 2-round burst.
+    type: Fix
+  id: 929
+  time: '2026-10-30T20:17:09.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2383
+- author: TheHellFireo
+  changes:
+  - message: Scientists can investigate recovered hunting bracers through twenty experiments
+      and decipher five clues to unlock their controls.
+    type: Add
+  - message: Yautja abilities now have distinct cloak, plasma, leap, roar, recall,
+      drone and staged trophy effects.
+    type: Tweak
+  - message: Caster sights and shots follow their firing mode and direction, with
+      firing sounds; Xenomorph victims remain visible during Butcher.
+    type: Fix
+  id: 930
+  time: '2026-10-30T23:42:30.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2386
+- author: maertayn
+  changes:
+  - message: Strip (long range) headsets from preserve spawns
+    type: Fix
+  id: 931
+  time: '2026-10-31T03:44:50.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2389
+- author: Vixting
+  changes:
+  - message: Removed carry over votes being halved
+    type: Remove
+  id: 932
+  time: '2026-10-31T12:53:25.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2392
+- author: toot521
+  changes:
+  - message: Grom Rapid Response Unit Squad and Team to UPP Ambassador Callins
+    type: Add
+  - message: Ministry of Space Security Informal Collaborator Team to UPP Ambassador
+      Callins
+    type: Add
+  - message: Grom Survs from UPP Ambassador Console
+    type: Remove
+  id: 933
+  time: '2026-10-31T12:55:22.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2378
+- author: rokudara-sen
+  changes:
+  - message: Remote thrall self-destruct asks the hunter to confirm instead of the
+      thrall.
+    type: Fix
+  - message: Blooded thralls lose yautja tech when their master is gone.
+    type: Fix
+  - message: Thrown smart discs can't be snatched out of the air by non-yautja.
+    type: Fix
+  - message: Serpent hunts are capped like cmss13, small hunts roll at most one big
+      xeno.
+    type: Tweak
+  - message: Yautja can eat raw meat without getting sick.
+    type: Fix
+  - message: The falcon drone no longer opens doors and deploys quietly.
+    type: Fix
+  - message: Hunter ship lockers no longer trap you in the walls.
+    type: Fix
+  - message: Ghosts no longer appear in the hunt journal's nearby targets.
+    type: Fix
+  - message: Rending and piercing swords and war scythes look right on your back.
+    type: Fix
+  - message: A yautja self-destruct no longer gibs nearby ghosts.
+    type: Fix
+  - message: Hunter ship lockers no longer hold random station items.
+    type: Tweak
+  - message: The hunter ship's spare gear crates are stocked with weapons, armour
+      and supplies.
+    type: Add
+  - message: The bracer translator shows a typing indicator while you use it.
+    type: Tweak
+  - message: 'Military Caste power armor matches cmss13: more fire resistant, as fast
+      as full hunter armor, and blocks pounces from the front.'
+    type: Tweak
+  id: 934
+  time: '2026-10-31T14:45:21.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2393
+- author: rokudara-sen
+  changes:
+  - message: The hunting bracer window is redesigned with tabs, live states and a
+      tracker scope.
+    type: Tweak
+  - message: The bracer gear tracker finds gear on other levels of the same area.
+    type: Fix
+  id: 935
+  time: '2026-10-31T14:45:31.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2394
+- author: byondsucks
+  changes:
+  - message: Point blank shots now have double accuracy
+    type: Tweak
+  id: 936
+  time: '2026-11-01T02:17:20.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2398
+- author: ILoveDespoiler
+  changes:
+  - message: Fixed raw text display when examining a Xeno with AP.
+    type: Fix
+  id: 937
+  time: '2026-11-01T02:17:45.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2401
+- author: rokudara-sen
+  changes:
+  - message: Submission points pay the same for an item everywhere, crops are rebalanced
+      so every crop is worth growing, and salvage, wood and steel pay less.
+    type: Tweak
+  - message: Submission point prices now move with supply and demand, and off-world
+      buyers sometimes want one thing badly or are flooded with it.
+    type: Add
+  - message: Use a submission point with an empty hand to see what it buys and what
+      it pays right now.
+    type: Add
+  - message: Submission points no longer swallow items they don't pay for.
+    type: Fix
+  id: 938
+  time: '2026-11-01T05:41:31.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2301
+- author: ILoveDespoiler
+  changes:
+  - message: Added two new Chemical properties, Bloodbursting and Mycotoxigenic.
+    type: Add
+  - message: Added Mycohemolymph and Sporoplasm fluids as drawable solutions from
+      every Neomorph, with unique properties compared to Neomorph Blood and Plasma.
+      Research rejoice!
+    type: Add
+  id: 939
+  time: '2026-11-01T05:41:44.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2374
+- author: TheHellFireo
+  changes:
+  - message: Fixed Yautja cloak transitions and Butcher presentation under thermal
+      vision.
+    type: Fix
+  - message: Reworked bracer inspection around the real item on the floor, with clearer
+      physical clues and a compact procedure menu.
+    type: Tweak
+  - message: Bracer research now mixes eight standard-chemical procedures with twelve
+      generated-compound procedures.
+    type: Tweak
+  - message: Fixed bracer contact/menu interaction and granted research access to
+      Wey-Yu scientists and corporate liaison variants.
+    type: Fix
+  id: 940
+  time: '2026-11-01T09:21:19.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2395
+- author: TheHellFireo
+  changes:
+  - message: Added the UPP fighter for UPP and BEAR, plus an admin-spawnable swept-wing
+      fighter.
+    type: Add
+  - message: Fighters now use short takeoffs and landings that adapt to available
+      space, with new airframe effects and sounds.
+    type: Tweak
+  - message: Removed fighter VTOL pads and their supply bundles.
+    type: Remove
+  - message: Reworked the fighter cockpit with a larger shared camera/airspace display
+      and visible flight, weapon and mission controls.
+    type: Tweak
+  - message: All fighter strikes show a laser 2.3 seconds before impact and warn 1
+      second before impact.
+    type: Tweak
+  - message: Reduced fighter camera rendering outside its panel and repeated roof
+      lookups in lighting and weather overlays.
+    type: Tweak
+  id: 941
+  time: '2026-11-01T14:55:45.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2406
 Name: CMU
 Order: -1

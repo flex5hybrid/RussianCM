@@ -17,6 +17,7 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Popups;
+using Content.Shared.Prying.Systems;
 using Content.Shared.Database;
 using Content.Shared.Standing;
 using Content.Shared.Throwing;
@@ -55,7 +56,7 @@ public sealed partial class YautjaAttachmentSystem : EntitySystem
         SubscribeLocalEvent<YautjaGearContainerComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<YautjaGearContainerComponent, ComponentShutdown>(OnShutdown);
         SubscribeLocalEvent<YautjaGearContainerComponent, GetItemActionsEvent>(OnGetItemActions);
-        SubscribeLocalEvent<YautjaGearContainerComponent, InteractUsingEvent>(OnInteractUsing);
+        SubscribeLocalEvent<YautjaGearContainerComponent, InteractUsingEvent>(OnInteractUsing, before: [typeof(PryingSystem)]);
         SubscribeLocalEvent<YautjaGearContainerComponent, YautjaBracerUnequippedEvent>(OnBracerUnequipped);
         SubscribeLocalEvent<YautjaGearContainerComponent, YautjaToggleCasterActionEvent>(OnToggleCaster);
         // CMU14: the gear toggles run through the bracer misuse roll (yaut_bracers.dm:629), which lives in
@@ -86,8 +87,8 @@ public sealed partial class YautjaAttachmentSystem : EntitySystem
         SubscribeLocalEvent<YautjaStoredGearComponent, ContainerGettingRemovedAttemptEvent>(OnStoredGearRemoveAttempt);
         SubscribeLocalEvent<YautjaStoredGearHandRemovalCompletedEvent>(OnStoredGearHandRemovalCompleted);
         SubscribeLocalEvent<DoorComponent, YautjaBracerAttachmentForceDoorDoAfterEvent>(OnBracerAttachmentForceDoorDoAfter);
-        SubscribeLocalEvent<AirlockComponent, InteractUsingEvent>(OnForceAirlockWithBracerAttachment);
-        SubscribeLocalEvent<ResinDoorComponent, InteractUsingEvent>(OnForceResinDoorWithBracerAttachment);
+        SubscribeLocalEvent<AirlockComponent, InteractUsingEvent>(OnForceAirlockWithBracerAttachment, before: [typeof(PryingSystem)]);
+        SubscribeLocalEvent<ResinDoorComponent, InteractUsingEvent>(OnForceResinDoorWithBracerAttachment, before: [typeof(PryingSystem)]);
         InitializeTempleDoor();
     }
 
@@ -984,6 +985,13 @@ public sealed partial class YautjaAttachmentSystem : EntitySystem
             deployedStored.ReinsertedByDeploy = true;
 
         SetGearState(bracer, gear, kind, true);
+        if (kind == YautjaGearKind.Caster)
+        {
+            var effect = EntityManager.System<CMUYautjaEffectsSystem>().Emit(
+                CMUYautjaEffect.CasterDeploy, Transform(user).Coordinates, .972f, user);
+            effect.Comp.Item = deployed;
+            Dirty(effect);
+        }
         PlayGearSound(GetDeploySound(bracer.Comp, kind), user);
         _popup.PopupEntity(Loc.GetString("cmu-yautja-gear-deployed", ("item", deployed)), user, user);
         _adminLog.Add(LogType.Action, LogImpact.Low, $"{ToPrettyString(user):player} deployed Yautja gear {ToPrettyString(deployed):gear} from {ToPrettyString(bracer.Owner):bracer}");

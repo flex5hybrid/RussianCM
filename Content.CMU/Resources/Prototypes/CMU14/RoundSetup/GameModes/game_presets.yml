@@ -4,7 +4,7 @@
   - colonyfall
   name: cmu-gamemode-colonyfall-name
   showInVote: true
-  maxPlayers: 45
+  maxPlayers: 65
   description: cmu-gamemode-colonyfall-desc
   burrowedLarvaEnabled: false
   thirdPartyAutoSpawn: true
@@ -17,6 +17,24 @@
   - AuVoteRule
   - ColonyAntags
 
+# greenshift: colony life with no threat, no antags and no third parties, ends on the crew rotation transport. RuMC edit.
+- type: gamePreset
+  id: ColonyShift
+  alias:
+  - colonyshift
+  - greenshift
+  name: cmu-gamemode-colonyshift-name
+  showInVote: true
+  maxPlayers: 20
+  minPlayers: 0
+  description: cmu-gamemode-colonyshift-desc
+  burrowedLarvaEnabled: false
+  supportedPlanets:
+  - SharedPlanetPool
+  rules:
+  - AuVoteRule
+  - ColonyRotation
+
 - type: gamePreset
   id: DistressSignal
   alias:
@@ -25,6 +43,7 @@
   showInVote: true
   description: cmu-gamemode-distresssignal-desc
   requiresGovforVote: true
+  thirdPartyForceShuttle: true
   dropshipFabricatorStartingPoints: 18000
   supportedPlanets:
 # - CMUPlanetStableGarrisonRedux # Govfor can hunker-down in Garrison; can be rushed by threats
@@ -43,12 +62,14 @@
   - AuPlanetShivasSnowball
 # - AuPlanetChances # temporarily removed
   - CMUPlanetLV624
+  - CMUPlanetVaradero
   rules:
   - AuVoteRule
   - PlatoonSpawn
   - RemoveAllJobs
   - AddGovfor
   - AddGovforAuxiliaryStaffDistress
+  - DistressAntags
 
 - type: gamePreset
   id: Insurgency
@@ -102,6 +123,8 @@
   - AddGovforAuxiliaryStaff
   - AddOpfor
   - AddOpforAuxiliaryStaff
+  - AddColonist
+  - FoFTimeLimitRule
 
 - type: gamePreset
   id: Jailbreak

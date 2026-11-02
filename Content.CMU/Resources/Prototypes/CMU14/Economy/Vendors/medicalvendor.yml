@@ -16,10 +16,10 @@
       RMCSkillMedical: 2
     hackable: true
     sections:
-    - name: cmu-vendor-section-pressurized-canisters
-      entries:
-      - id: RMCPouchReagentCanister
-        amount: 1
+    # - name: cmu-vendor-section-pressurized-canisters # RuMC edit
+    #   entries:
+    #   - id: RMCPouchReagentCanister
+    #     amount: 1
     - name: General Medical Supplies
       entries:
       - id: CMOintment10
@@ -187,10 +187,10 @@
       RMCSkillMedical: 2
     hackable: true
     sections:
-    - name: cmu-vendor-section-pressurized-canisters
-      entries:
-      - id: RMCPouchReagentCanister
-        amount: 1
+    # - name: cmu-vendor-section-pressurized-canisters # RuMC edit
+    #   entries:
+    #   - id: RMCPouchReagentCanister
+    #     amount: 1
     - name: Blood Packs
       entries:
       - id: CMBloodPackFull
@@ -274,10 +274,10 @@
   - type: CMAutomatedVendor
     hackable: true
     sections:
-    - name: cmu-vendor-section-pressurized-canisters
-      entries:
-      - id: RMCPouchReagentCanister
-        amount: 1
+    # - name: cmu-vendor-section-pressurized-canisters # RuMC edit
+    #   entries:
+    #   - id: RMCPouchReagentCanister
+    #     amount: 1
     - name: Blood Packs
       entries:
       - id: CMBloodPackFull
@@ -336,10 +336,10 @@
       - Hypospray
   - type: CMAutomatedVendor
     sections:
-    - name: cmu-vendor-section-pressurized-canisters
-      entries:
-      - id: RMCPouchReagentCanister
-        amount: 1
+    # - name: cmu-vendor-section-pressurized-canisters # RuMC edit
+    #   entries:
+    #   - id: RMCPouchReagentCanister
+    #     amount: 1
     - name: Autoinjectors
       entries:
       - id: CMTricordrazineAutoInjector

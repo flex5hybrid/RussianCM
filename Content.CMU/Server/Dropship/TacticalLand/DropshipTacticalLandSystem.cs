@@ -6,6 +6,7 @@ using Content.Server.CMU14.Dropship.MultiDeck;
 using Content.Shared.CMU14.Dropship.MultiDeck;
 using Content.Server.CMU14.ZLevels.Core;
 using Content.Server._RMC14.Dropship;
+using Content.Shared.CMU14.Dropship.GunshipControls;
 using Content.Shared.CMU14.Dropship.TacticalLand;
 using Content.Shared.CMU14.ZLevels.Core;
 using Content.Shared.CMU14.ZLevels.Core.Components;
@@ -494,11 +495,16 @@ public sealed partial class DropshipTacticalLandSystem : SharedDropshipTacticalL
                 else
                 {
                     var opening = CMUZLevelOpeningCache.IsOpeningTile(tileRef.Tile, _tile);
-                    if (tileRef.Tile.IsEmpty && !opening)
+                    if (!allowUnmappedAir &&
+                        !CMUZLevelOpeningCache.IsLandingSurfaceTile(tileRef.Tile, _tile))
+                    {
                         blockedThis = true;
+                    }
                     else if (!opening &&
                              _turf.IsTileBlocked(tileRef, blockMask, DropshipMinimumBlockingArea))
+                    {
                         blockedThis = true;
+                    }
                 }
 
                 if (blockedThis)
@@ -628,17 +634,18 @@ public sealed partial class DropshipTacticalLandSystem : SharedDropshipTacticalL
         if (eye.Console is not { } console ||
             !TryComp(console, out DropshipTacticalLandSessionComponent? session) ||
             !IsTacticalHover(session, xform) ||
-            session.InitialMap is not { } initialMap ||
-            !HasComp<RMCPlanetComponent>(initialMap) ||
             xform.MapUid is not { } map ||
             !TryComp(map, out CMUZLevelMapComponent? level) ||
-            !_zLevels.TryMapOffset(initialMap, TacticalHoverMapOffset, out var upperMap) ||
-            upperMap.Value.Owner != map)
+            level.Depth <= 0 ||
+            !_zLevels.TryMapOffset(map, -1, out _))
         {
             return false;
         }
 
-        return level.Depth == 1;
+        // The eye is looking at a flight level above the ground. Its sky is
+        // airborne, not a missing floor: the ship descends to the level below
+        // after the approach. Solid roofs and fixtures still block below.
+        return true;
     }
 
     private IReadOnlyList<Vector2i> GetRotatedFootprintOffsets(DropshipPilotEyeComponent eye)
@@ -768,7 +775,8 @@ public sealed partial class DropshipTacticalLandSystem : SharedDropshipTacticalL
             return;
         }
 
-        if (!_zLevels.TryMapOffset(map, offset, out _, out var targetMap))
+        if (!_zLevels.TryMapOffset(map, offset, out var targetLevel, out var targetMap) ||
+            targetLevel.Value.Comp.Depth < 0)
         {
             _popup.PopupEntity(Loc.GetString(offset > 0
                     ? "cmu-tactical-land-no-higher-level"
@@ -801,6 +809,23 @@ public sealed partial class DropshipTacticalLandSystem : SharedDropshipTacticalL
         if (!TryComp(dropshipGrid, out DropshipComponent? dropship) || dropship.Crashed)
             return;
 
+        var groundMapOffset = -1;
+        if (TryComp<MultiDeckDropshipComponent>(dropshipGrid, out var assembly))
+            groundMapOffset = -1 - assembly.LandingOffset;
+
+        var footprint = ent.Comp.Footprint.X > 0 && ent.Comp.Footprint.Y > 0
+            ? ent.Comp.Footprint
+            : dropship.TacticalLandFootprint;
+
+        InitializeTacticalHover(dropshipGrid, ent.Owner, footprint, groundMapOffset);
+    }
+
+    private DropshipTacticalHoverComponent InitializeTacticalHover(
+        EntityUid dropshipGrid,
+        EntityUid? hoverDestination,
+        Vector2i footprint,
+        int groundMapOffset)
+    {
         var hover = EnsureComp<DropshipTacticalHoverComponent>(dropshipGrid);
         CleanupHoverEffects((dropshipGrid, hover));
 
@@ -810,22 +835,25 @@ public sealed partial class DropshipTacticalLandSystem : SharedDropshipTacticalL
             hover.DownwashPrototype = appearance.DownwashPrototype;
         }
 
-        if (TryComp<MultiDeckDropshipComponent>(dropshipGrid, out var assembly))
-            hover.GroundMapOffset = -1 - assembly.LandingOffset;
-
-        hover.HoverDestination = ent.Owner;
-        if (Transform(dropshipGrid).MapUid is { } hoverMap &&
-            _zLevels.TryMapOffset(hoverMap, hover.GroundMapOffset, out var groundMap))
+        hover.HoverDestination = hoverDestination;
+        hover.GroundMapOffset = groundMapOffset;
+        hover.Footprint = footprint;
+        if (Transform(dropshipGrid).MapUid is { } hoverMap)
         {
-            hover.GroundMap = groundMap.Value.Owner;
+            if (hover.GroundMapOffset == 0)
+            {
+                hover.GroundMap = hoverMap;
+            }
+            else if (_zLevels.TryMapOffset(hoverMap, hover.GroundMapOffset, out var groundMap))
+            {
+                hover.GroundMap = groundMap.Value.Owner;
+            }
         }
-        hover.Footprint = ent.Comp.Footprint.X > 0 && ent.Comp.Footprint.Y > 0
-            ? ent.Comp.Footprint
-            : dropship.TacticalLandFootprint;
 
         _zLevels.EnsureZLevelViewer(dropshipGrid);
         SpawnHoverShadow((dropshipGrid, hover));
         SpawnHoverDownwashes((dropshipGrid, hover));
+        return hover;
     }
 
     public void EndTacticalHoverForReroute(EntityUid dropship)
@@ -1084,7 +1112,8 @@ public sealed partial class DropshipTacticalLandSystem : SharedDropshipTacticalL
         var canMoveUp = CanMoveTacticalEye(eye, TacticalHoverMapOffset);
         var canMoveDown = CanMoveTacticalEye(eye, -TacticalHoverMapOffset);
         var rotationDegrees = pilotEye?.RotationQuarterTurns * 90 ?? 0;
-        var state = new DropshipNavigationTacticalLandBuiState(GetNetEntity(eye), clearForLanding, tacticalHover, canMoveUp, canMoveDown, rotationDegrees, doorLocks, false);
+        TryComp(ent, out GunshipControlsComponent? gunshipControls);
+        var state = new DropshipNavigationTacticalLandBuiState(GetNetEntity(eye), clearForLanding, tacticalHover, canMoveUp, canMoveDown, rotationDegrees, doorLocks, false, gunshipControls != null, gunshipControls?.Armed ?? false);
         _ui.SetUiState(ent.Owner, DropshipNavigationUiKey.Key, state);
     }
 
@@ -1105,7 +1134,8 @@ public sealed partial class DropshipTacticalLandSystem : SharedDropshipTacticalL
     {
         return TryComp(eye, out TransformComponent? xform) &&
                xform.MapUid is { } map &&
-               _zLevels.TryMapOffset(map, offset, out _);
+               _zLevels.TryMapOffset(map, offset, out var targetLevel) &&
+               targetLevel.Value.Comp.Depth >= 0;
     }
 
     private static bool IsTacticalHover(DropshipTacticalLandSessionComponent session, TransformComponent eyeXform)

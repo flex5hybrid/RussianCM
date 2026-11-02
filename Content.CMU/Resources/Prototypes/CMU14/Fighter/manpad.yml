@@ -3,7 +3,7 @@
   id: CMUFighterManpad
   name: EMBLR MANPAD
   suffix: Operator IFF
-  description: A shoulder-fired anti-air launcher. Load an EMBLR 70mm rocket, wield it with both hands and use Scan high altitude to intercept hostile aircraft crossing your sector. Lowering or dropping it cancels the lock. Reload after each launch. Use Scan low altitude to lock onto a gunship. # RuMC edit
+  description: A shoulder-fired anti-air launcher. Load an EMBLR 70mm rocket, wield it with both hands and use Scan high altitude to intercept hostile aircraft crossing your sector. Lowering or dropping it cancels the lock. Reload after each launch. Use Scan low altitude to lock onto a gunship or a Blackfoot. # RuMC edit
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/UPP/emblr/emblr_icon.rsi
@@ -36,11 +36,10 @@
       path: /Audio/_RMC14/Weapons/Guns/Cock/m5_ammo.ogg
   - type: FighterManpad
   # RuMC edit start
-  - type: RuMCManpadGunship
+  - type: RuMCManpadLowAltitude
     lockTime: 3
     lockRange: 15
     missileFlightTime: 3
-    damage: 800
   - type: Gun
     showExamineText: false
   # RuMC edit end
