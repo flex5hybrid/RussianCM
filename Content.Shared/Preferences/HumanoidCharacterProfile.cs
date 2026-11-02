@@ -151,8 +151,17 @@ namespace Content.Shared.Preferences
             return Content.Shared.Corvax.TTS.CMUTTSVoiceSelection.IsSelectable(voice);
         }
 
-        public static string ValidateTTSVoice(string? voice, IPrototypeManager prototypes, Sex? sex = null)
+        public static string ValidateTTSVoice(string? voice, IPrototypeManager prototypes, Sex? sex = null, bool yautja = false)
         {
+            if (yautja)
+            {
+                return !string.IsNullOrWhiteSpace(voice) &&
+                       prototypes.TryIndex<Content.Shared.Corvax.TTS.TTSVoicePrototype>(voice, out var hunterVoice) &&
+                       Content.Shared.Corvax.TTS.CMUTTSVoiceSelection.IsYautjaSelectable(hunterVoice)
+                    ? voice
+                    : Content.Shared.Corvax.TTS.CMUTTSVoiceSelection.DefaultYautjaVoice;
+            }
+
             if (Content.Shared.Corvax.TTS.CustomTTSVoice.TryGetSpeaker(voice, out _))
                 return voice!;
 
