@@ -1,4 +1,7 @@
 using Content.IntegrationTests.Fixtures;
+using Content.Server.CMU14.Yautja;
+using Content.Server.Corvax.TTS;
+using Content.Shared.CMU14.Yautja;
 using Content.Shared.Corvax.TTS;
 using Content.Shared.Humanoid;
 using Content.Shared.Preferences;
@@ -58,6 +61,52 @@ public sealed class CMUTTSVoiceAssignmentTest : GameTest
             {
                 SEntMan.DeleteEntity(female);
                 SEntMan.DeleteEntity(fixedVoice);
+            }
+        });
+    }
+
+    [TestCase("CMUMobYautja")]
+    [TestCase("CMUMobYautjaYoungblood")]
+    public async Task YautjaVoicesAreAvailableAndEnforcedRegardlessOfSex(string prototype)
+    {
+        var map = await Pair.CreateTestMap();
+        await Server.WaitAssertion(() =>
+        {
+            foreach (var id in CMUTTSVoiceSelection.YautjaVoiceIds)
+            {
+                var voicePrototype = SProtoMan.Index<TTSVoicePrototype>(id);
+                Assert.That(CMUTTSVoiceSelection.IsYautjaSelectable(voicePrototype), Is.True, id);
+            }
+
+            var entity = SEntMan.SpawnEntity(prototype, map.GridCoords);
+            try
+            {
+                var profiles = SEntMan.System<YautjaProfileApplySystem>();
+                var tts = SEntMan.System<TTSSystem>();
+                var hunter = YautjaCharacterProfile.Default
+                    .WithSex(Sex.Female)
+                    .WithTTSVoice("GARROSH");
+
+                // The real Yautja application path must restore the choice after humanoid voice validation.
+                profiles.ApplyProfile(entity, hunter, equipProfileGear: false);
+                Assert.That(SEntMan.GetComponent<TTSComponent>(entity).VoicePrototypeId, Is.EqualTo("GARROSH"));
+
+                // Reapplying the hunter profile must preserve the selected voice.
+                profiles.ApplyProfile(entity, hunter, equipProfileGear: false);
+                Assert.That(SEntMan.GetComponent<TTSComponent>(entity).VoicePrototypeId, Is.EqualTo("GARROSH"));
+
+                profiles.ApplyProfile(entity, hunter.WithTTSVoice("PUCHKOW"), equipProfileGear: false);
+                Assert.That(SEntMan.GetComponent<TTSComponent>(entity).VoicePrototypeId,
+                    Is.EqualTo(CMUTTSVoiceSelection.DefaultYautjaVoice));
+
+                // Server-side enforcement must not trust a caller even if it bypasses profile sanitization.
+                tts.ApplyYautjaProfileVoice(entity, "custom:MyVoice");
+                Assert.That(SEntMan.GetComponent<TTSComponent>(entity).VoicePrototypeId,
+                    Is.EqualTo(CMUTTSVoiceSelection.DefaultYautjaVoice));
+            }
+            finally
+            {
+                SEntMan.DeleteEntity(entity);
             }
         });
     }

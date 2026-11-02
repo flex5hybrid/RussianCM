@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Shared.Body;
+using Content.Shared.Corvax.TTS;
 using Robust.Shared.Prototypes;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
@@ -407,6 +408,9 @@ public sealed partial class YautjaCharacterProfile
     public YautjaInvisibilitySound InvisibilitySound { get; private set; } = YautjaInvisibilitySound.Modern;
 
     [DataField]
+    public string TTSVoice { get; private set; } = CMUTTSVoiceSelection.DefaultYautjaVoice;
+
+    [DataField]
     public YautjaLegacySet Legacy { get; private set; } = YautjaLegacySet.None;
 
     [DataField]
@@ -558,6 +562,7 @@ public sealed partial class YautjaCharacterProfile
         CapeColor = other.CapeColor;
         TranslatorType = SanitizeEnum(other.TranslatorType, YautjaTranslatorType.Modern);
         InvisibilitySound = SanitizeEnum(other.InvisibilitySound, YautjaInvisibilitySound.Modern);
+        TTSVoice = CMUTTSVoiceSelection.SanitizeYautjaVoice(other.TTSVoice);
         Legacy = SanitizeEnum(other.Legacy, YautjaLegacySet.None);
         Unique = SanitizeEnum(other.Unique, YautjaUniqueSet.None);
         FlavorText = other.FlavorText;
@@ -566,6 +571,11 @@ public sealed partial class YautjaCharacterProfile
     public YautjaCharacterProfile Clone()
     {
         return new YautjaCharacterProfile(this);
+    }
+
+    public YautjaCharacterProfile WithTTSVoice(string? voiceId)
+    {
+        return new(this) { TTSVoice = CMUTTSVoiceSelection.SanitizeYautjaVoice(voiceId) };
     }
 
     public YautjaCharacterProfile WithName(string name)

@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Text.Json;
 using Content.Shared.Body;
+using Content.Shared.Corvax.TTS; // CMU14: validate the stored hunter voice.
 using Content.Shared.CMU14.Yautja;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
@@ -51,6 +52,7 @@ internal static class YautjaProfileSerializer
         public YautjaCapeStyle? CapeStyle { get; set; }
         public string CapeColor { get; set; } = string.Empty;
         public string FlavorText { get; set; } = string.Empty;
+        public string? TTSVoice { get; set; } // CMU14: preserve an optional value for older profiles.
     }
 
     public static YautjaCharacterProfile DeserializeYautjaProfile(string? serialized)
@@ -107,7 +109,8 @@ internal static class YautjaProfileSerializer
             .WithStatus(parsed.Status ?? YautjaCharacterProfile.Default.Status)
             .WithCapeStyle(parsed.CapeStyle ?? YautjaCharacterProfile.Default.CapeStyle)
             .WithCapeColor(ReadColor(parsed.CapeColor, YautjaCharacterProfile.Default.CapeColor))
-            .WithFlavorText(parsed.FlavorText ?? string.Empty);
+            .WithFlavorText(parsed.FlavorText ?? string.Empty)
+            .WithTTSVoice(parsed.TTSVoice); // CMU14: missing or invalid voices receive the approved default.
 
         if (parsed.SkinColorPreset is { } skinColor)
         {
@@ -159,6 +162,7 @@ internal static class YautjaProfileSerializer
             CapeStyle = profile.CapeStyle,
             CapeColor = profile.CapeColor.ToHex(),
             FlavorText = profile.FlavorText,
+            TTSVoice = CMUTTSVoiceSelection.SanitizeYautjaVoice(profile.TTSVoice), // CMU14: validated on save.
         };
 
         return JsonSerializer.Serialize(serialized);

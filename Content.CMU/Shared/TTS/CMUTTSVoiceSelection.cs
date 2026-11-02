@@ -10,6 +10,39 @@ namespace Content.Shared.Corvax.TTS;
 public static class CMUTTSVoiceSelection
 {
     public const string RandomVoice = "random";
+    public const string DefaultYautjaVoice = "REXXAR";
+
+    /// <summary>
+    /// The curated masculine voices available to every Yautja, regardless of sex.
+    /// Shared by the editor, profile persistence and server-side checks.
+    /// </summary>
+    public static readonly string[] YautjaVoiceIds =
+    [
+        "REXXAR",
+        "GARROSH",
+        "ILLIDAN",
+        "ARTHAS",
+        "LORD_HARKON",
+        "SUPER_MUTANT_FL3",
+    ];
+
+    public static bool IsYautjaVoice(string? voiceId)
+    {
+        return voiceId != null && YautjaVoiceIds.Contains(voiceId, StringComparer.Ordinal);
+    }
+
+    public static bool IsYautjaSelectable(TTSVoicePrototype voice)
+    {
+        return IsYautjaVoice(voice.ID)
+            && voice.Sex == Sex.Male
+            && voice.RoundStart
+            && !voice.SponsorOnly;
+    }
+
+    public static string SanitizeYautjaVoice(string? voiceId)
+    {
+        return IsYautjaVoice(voiceId) ? voiceId! : DefaultYautjaVoice;
+    }
 
     public static bool MatchesSex(Sex voiceSex, Sex characterSex)
     {

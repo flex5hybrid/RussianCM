@@ -131,6 +131,7 @@ public sealed partial class TTSSystem : EntitySystem
         var requestedAt = _timing.RealTime;
         using var delivery = _deliveryOrder.Reserve(args.VoiceSource ?? uid);
 
+        // CMU14: OnSpoke already assigned the voice using the actual voice source.
         var voiceId = component.VoicePrototypeId;
 
         if (string.IsNullOrWhiteSpace(voiceId))
@@ -138,7 +139,9 @@ public sealed partial class TTSSystem : EntitySystem
 
         var voiceEvent = new TransformSpeakerVoiceEvent(args.VoiceSource ?? uid, voiceId);
         RaiseLocalEvent(args.VoiceSource ?? uid, voiceEvent);
-        voiceId = voiceEvent.VoiceId;
+        // CMU14: prevent voice transforms from bypassing the Yautja voice whitelist.
+        // voiceId = voiceEvent.VoiceId;
+        voiceId = EnforceYautjaVoice(args.VoiceSource ?? uid, voiceEvent.VoiceId);
 
         if (CustomTTSVoice.TryGetSpeaker(voiceId, out _))
             await EnsureReferenceVoiceCatalogLoaded();
