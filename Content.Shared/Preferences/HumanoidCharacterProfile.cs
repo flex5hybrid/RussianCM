@@ -151,13 +151,19 @@ namespace Content.Shared.Preferences
             return Content.Shared.Corvax.TTS.CMUTTSVoiceSelection.IsSelectable(voice);
         }
 
-        public static string ValidateTTSVoice(string? voice, IPrototypeManager prototypes, Sex? sex = null, bool yautja = false)
+        // CMU14: Yautja voice selection must ignore the hunter's sex but enforce the approved voice set.
+        // public static string ValidateTTSVoice(string? voice, IPrototypeManager prototypes, Sex? sex = null)
+        public static string ValidateTTSVoice(
+            string? voice,
+            IPrototypeManager prototypes,
+            Sex? sex = null,
+            bool yautja = false)
         {
             if (yautja)
             {
-                return !string.IsNullOrWhiteSpace(voice) &&
-                       prototypes.TryIndex<Content.Shared.Corvax.TTS.TTSVoicePrototype>(voice, out var hunterVoice) &&
-                       Content.Shared.Corvax.TTS.CMUTTSVoiceSelection.IsYautjaSelectable(hunterVoice)
+                return !string.IsNullOrWhiteSpace(voice)
+                       && prototypes.TryIndex<Content.Shared.Corvax.TTS.TTSVoicePrototype>(voice, out var hunterVoice)
+                       && Content.Shared.Corvax.TTS.CMUTTSVoiceSelection.IsYautjaSelectable(hunterVoice)
                     ? voice
                     : Content.Shared.Corvax.TTS.CMUTTSVoiceSelection.DefaultYautjaVoice;
             }
