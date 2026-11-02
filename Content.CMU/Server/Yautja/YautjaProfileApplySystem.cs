@@ -84,7 +84,8 @@ public sealed partial class YautjaProfileApplySystem : EntitySystem
             .WithAge(profile.Age)
             .WithSex(profile.Sex)
             .WithGender(profile.Gender)
-            .WithCharacterAppearance(profile.Appearance);
+            .WithCharacterAppearance(profile.Appearance)
+            .WithTTSVoice(profile.TTSVoice);
 
         if (yautja != null && yautja.VocalSounds.TryGetValue(profile.Sex, out var voice))
             humanoidProfile = humanoidProfile.WithVoice(voice);
