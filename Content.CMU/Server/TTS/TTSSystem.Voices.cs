@@ -43,6 +43,18 @@ public sealed partial class TTSSystem
             : CMUTTSVoiceSelection.DefaultYautjaVoice;
     }
 
+    /// <summary>
+    /// Restores the selected hunter voice after the ordinary humanoid profile system has applied its sex-based TTS rules.
+    /// No changes to shared humanoid profile validation are necessary.
+    /// </summary>
+    public void ApplyYautjaProfileVoice(EntityUid uid, string? voiceId)
+    {
+        if (!IsYautjaSpeaker(uid) || !TryComp<TTSComponent>(uid, out var tts))
+            return;
+
+        tts.VoicePrototypeId = EnforceYautjaVoice(uid, voiceId ?? string.Empty);
+    }
+
     private void EnsureVoiceAssigned(Entity<TTSComponent> ent)
     {
         if (IsYautjaSpeaker(ent.Owner))
