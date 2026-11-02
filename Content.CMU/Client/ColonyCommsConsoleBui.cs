@@ -20,10 +20,13 @@ public sealed class ColonyCommsConsoleBui(EntityUid owner, Enum uiKey) : BoundUs
             var message = _window.Announcement.Text;
             SendPredictedMessage(new ColonyCommsConsoleSendMessageBuiMsg(message));
         };
+        _window.TransportCall.OnPressed += _ => SendMessage(new ColonyCommsConsoleTransportCallBuiMsg()); // RuMC edit ColonyShift
+        _window.TransportRecall.OnPressed += _ => SendMessage(new ColonyCommsConsoleTransportRecallBuiMsg()); // RuMC edit ColonyShift
     }
 
     protected override void UpdateState(BoundUserInterfaceState state)
     {
-
+        if (state is ColonyCommsConsoleBuiState comms) // RuMC edit ColonyShift
+            _window?.UpdateTransport(comms); // RuMC edit ColonyShift
     }
 }

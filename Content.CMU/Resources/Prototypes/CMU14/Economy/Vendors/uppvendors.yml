@@ -470,10 +470,10 @@
       entries:
       - id: RuMCFatiguesVDV_medic
         amount: 20
-    - name: cmu-vendor-section-pressurized-canisters
-      entries:
-      - id: RMCPouchReagentCanister
-        amount: 1
+    # - name: cmu-vendor-section-pressurized-canisters # RuMC edit
+    #   entries:
+    #   - id: RMCPouchReagentCanister
+    #     amount: 1
     - name: Essential Equipment
       takeAll: CMUEssentialEquipment
       entries:
@@ -1697,7 +1697,7 @@
         amount: 15
     - name: Radio Equipment
       entries:
-      - id: ANPRC117GRadio
+      - id: RuMCANPRC117GRadioIssuedBare # RuMC edit
         amount: 3
       - id: ANPRCWhipAntenna
         amount: 3

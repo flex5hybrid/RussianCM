@@ -162,10 +162,10 @@ public sealed partial class RMCDiscordManager
             var result = await _linkDb.CompleteDiscordLink(code, modal.User.Id, now);
             var key = result.Status switch
             {
-                DiscordLinkStatus.Success => "success",
-                DiscordLinkStatus.AlreadyLinked => "already-linked",
-                DiscordLinkStatus.Expired => "expired",
-                DiscordLinkStatus.Conflict => "conflict",
+                RMCDiscordLinkStatus.Success => "success",
+                RMCDiscordLinkStatus.AlreadyLinked => "already-linked",
+                RMCDiscordLinkStatus.Expired => "expired",
+                RMCDiscordLinkStatus.Conflict => "conflict",
                 _ => "invalid-code",
             };
             if (result.Player != Guid.Empty)

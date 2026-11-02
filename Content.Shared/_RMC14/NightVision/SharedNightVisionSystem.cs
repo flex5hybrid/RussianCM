@@ -1,6 +1,7 @@
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared._RMC14.Scoping;
 using Content.Shared._RMC14.Visor;
+using Content.Shared._RuMC14.BatteryDrain; // RuMC edit
 using Content.Shared.Actions;
 using Content.Shared.Alert;
 using Content.Shared.IgnitionSource;
@@ -281,6 +282,8 @@ public abstract partial class SharedNightVisionSystem : EntitySystem
         item.Comp.User = user;
 
         _appearance.SetData(item, NightVisionItemVisuals.Active, true);
+        var toggled = new RuMCBatteryDrainActiveChangedEvent(true); // RuMC edit
+        RaiseLocalEvent(item, ref toggled); // RuMC edit
 
         if (!_timing.ApplyingState)
         {
@@ -401,6 +404,8 @@ public abstract partial class SharedNightVisionSystem : EntitySystem
         item.Comp.User = null;
 
         _appearance.SetData(item, NightVisionItemVisuals.Active, false);
+        var toggled = new RuMCBatteryDrainActiveChangedEvent(false); // RuMC edit
+        RaiseLocalEvent(item, ref toggled); // RuMC edit
 
         if (TryComp(user, out NightVisionComponent? nightVision))
         {

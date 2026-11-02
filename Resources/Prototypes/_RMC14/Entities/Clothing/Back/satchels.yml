@@ -237,7 +237,8 @@
 
 - type: entity
   parent: CMSatchel
-  id: RMCBackpackScout
+  id: RMCBackpackScoutBase # RuMC edit
+  abstract: true # RuMC edit
   name: M68 thermal cloak
   description: The lightweight thermal dampeners and optical camouflage provided by this cloak are weaker than those found in standard USCM ghillie suits. In exchange, the cloak can be worn over combat armor and offers the wearer high maneuverability and adaptability to many environments.
   components:
@@ -278,8 +279,14 @@
   - type: DestroyOnPreset
     preset: DistressSignal
 
+# RuMC edit start
 - type: entity
-  parent: RMCBackpackScout
+  parent: [ RMCBackpackScoutBase, RuMCBatteryDrainCloak ]
+  id: RMCBackpackScout
+# RuMC edit end
+
+- type: entity
+  parent: RMCBackpackScoutBase # RuMC edit
   id: RMCBackpackScoutDS
   components:
   - type: ThermalCloak
@@ -289,7 +296,7 @@
     inverted: true
 
 - type: entity
-  parent: RMCBackpackScout
+  parent: [ RMCBackpackScoutBase, RuMCBatteryDrainCloak ] # RuMC edit
   id: RMCBackpackSPPCommando
   name: V86 thermal cloak
   description: A thermo-optic camouflage cloak commonly used by UPP commando units.

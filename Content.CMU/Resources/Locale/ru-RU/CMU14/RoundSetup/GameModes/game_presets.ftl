@@ -9,3 +9,6 @@ cmu-gamemode-insurgency-desc = Колониальные повстанцы го�
 
 cmu-gamemode-forceonforce-name = Стенка на стенку
 cmu-gamemode-forceonforce-desc = Война... Война никогда не меняется.
+
+cmu-gamemode-colonyshift-name = Жизнь колонии
+cmu-gamemode-colonyshift-desc = Тихая смена на внеземной колонии. Никакой угрозы нет. Работайте, торгуйте и живите спокойно, пока не прибудет транспорт для ротации экипажа.

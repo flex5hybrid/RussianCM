@@ -19,7 +19,7 @@ public sealed partial class KabanEconomyTests
         return code;
     }
 
-    private async Task<DiscordLinkResult> LinkDiscord(Guid code, ulong discord = 12345)
+    private async Task<RMCDiscordLinkResult> LinkDiscord(Guid code, ulong discord = 12345)
     {
         await using var db = Open();
         return await DiscordAccountLinking.Complete(db, code, discord, Now);
@@ -29,8 +29,8 @@ public sealed partial class KabanEconomyTests
     public async Task DiscordLinkConsumesCodeAndCreatesPersistentLinkAndAuditOnce()
     {
         var code = await DiscordCode();
-        Assert.That((await LinkDiscord(code)).Status, Is.EqualTo(DiscordLinkStatus.Success));
-        Assert.That((await LinkDiscord(code)).Status, Is.EqualTo(DiscordLinkStatus.InvalidCode));
+        Assert.That((await LinkDiscord(code)).Status, Is.EqualTo(RMCDiscordLinkStatus.Success));
+        Assert.That((await LinkDiscord(code)).Status, Is.EqualTo(RMCDiscordLinkStatus.InvalidCode));
         await using var db = Open();
         Assert.That((await db.RMCLinkedAccounts.SingleAsync()).PlayerId, Is.EqualTo(_user));
         Assert.That((await db.RMCLinkedAccounts.SingleAsync()).DiscordId, Is.EqualTo(12345UL));
@@ -45,7 +45,7 @@ public sealed partial class KabanEconomyTests
     public async Task DiscordLinkRejectsExpiredAndFutureCodesWithoutMutatingAccounts(int hours)
     {
         var code = await DiscordCode(created: Now.AddHours(hours));
-        Assert.That((await LinkDiscord(code)).Status, Is.EqualTo(DiscordLinkStatus.Expired));
+        Assert.That((await LinkDiscord(code)).Status, Is.EqualTo(RMCDiscordLinkStatus.Expired));
         await using var db = Open();
         Assert.That(await db.RMCLinkedAccounts.CountAsync(), Is.Zero);
         Assert.That(await db.RMCDiscordAccounts.CountAsync(), Is.Zero);
@@ -56,9 +56,9 @@ public sealed partial class KabanEconomyTests
     public async Task DiscordLinkRejectsUnknownAndEmptyCodesAndZeroDiscordId()
     {
         var code = await DiscordCode();
-        Assert.That((await LinkDiscord(Guid.Empty)).Status, Is.EqualTo(DiscordLinkStatus.InvalidCode));
-        Assert.That((await LinkDiscord(Guid.NewGuid())).Status, Is.EqualTo(DiscordLinkStatus.InvalidCode));
-        Assert.That((await LinkDiscord(code, 0)).Status, Is.EqualTo(DiscordLinkStatus.InvalidCode));
+        Assert.That((await LinkDiscord(Guid.Empty)).Status, Is.EqualTo(RMCDiscordLinkStatus.InvalidCode));
+        Assert.That((await LinkDiscord(Guid.NewGuid())).Status, Is.EqualTo(RMCDiscordLinkStatus.InvalidCode));
+        Assert.That((await LinkDiscord(code, 0)).Status, Is.EqualTo(RMCDiscordLinkStatus.InvalidCode));
         await using var db = Open();
         Assert.That(await db.RMCLinkingCodes.CountAsync(), Is.EqualTo(1));
         Assert.That(await db.RMCLinkedAccounts.CountAsync(), Is.Zero);
@@ -70,9 +70,9 @@ public sealed partial class KabanEconomyTests
         var code = await DiscordCode();
         await LinkDiscord(code);
         var second = await DiscordCode(_manager);
-        Assert.That((await LinkDiscord(second)).Status, Is.EqualTo(DiscordLinkStatus.Conflict));
+        Assert.That((await LinkDiscord(second)).Status, Is.EqualTo(RMCDiscordLinkStatus.Conflict));
         var original = await DiscordCode();
-        Assert.That((await LinkDiscord(original, 67890)).Status, Is.EqualTo(DiscordLinkStatus.Conflict));
+        Assert.That((await LinkDiscord(original, 67890)).Status, Is.EqualTo(RMCDiscordLinkStatus.Conflict));
         await using var db = Open();
         Assert.That((await db.RMCLinkedAccounts.SingleAsync()).PlayerId, Is.EqualTo(_user));
         Assert.That((await db.RMCLinkedAccounts.SingleAsync()).DiscordId, Is.EqualTo(12345UL));
@@ -90,7 +90,7 @@ public sealed partial class KabanEconomyTests
             db.RMCPatrons.Add(new RMCPatron { PlayerId = _user, TierId = 900 });
             await db.SaveChangesAsync();
         }
-        Assert.That((await LinkDiscord(await DiscordCode())).Status, Is.EqualTo(DiscordLinkStatus.AlreadyLinked));
+        Assert.That((await LinkDiscord(await DiscordCode())).Status, Is.EqualTo(RMCDiscordLinkStatus.AlreadyLinked));
         await using var check = Open();
         Assert.That(await check.RMCLinkedAccountLogs.CountAsync(), Is.EqualTo(1));
         Assert.That((await check.RMCPatrons.SingleAsync()).TierId, Is.EqualTo(900));
@@ -102,8 +102,8 @@ public sealed partial class KabanEconomyTests
     {
         var code = await DiscordCode();
         var results = await Task.WhenAll(Task.Run(() => LinkDiscord(code)), Task.Run(() => LinkDiscord(code, 67890)));
-        Assert.That(results.Count(r => r.Status == DiscordLinkStatus.Success), Is.EqualTo(1));
-        Assert.That(results.Count(r => r.Status == DiscordLinkStatus.InvalidCode), Is.EqualTo(1));
+        Assert.That(results.Count(r => r.Status == RMCDiscordLinkStatus.Success), Is.EqualTo(1));
+        Assert.That(results.Count(r => r.Status == RMCDiscordLinkStatus.InvalidCode), Is.EqualTo(1));
         await using var db = Open();
         Assert.That(await db.RMCLinkedAccounts.CountAsync(), Is.EqualTo(1));
         Assert.That(await db.RMCLinkedAccountLogs.CountAsync(), Is.EqualTo(1));
@@ -115,8 +115,8 @@ public sealed partial class KabanEconomyTests
         var a = await DiscordCode();
         var b = await DiscordCode(_manager);
         var results = await Task.WhenAll(Task.Run(() => LinkDiscord(a)), Task.Run(() => LinkDiscord(b)));
-        Assert.That(results.Count(r => r.Status == DiscordLinkStatus.Success), Is.EqualTo(1));
-        Assert.That(results.Count(r => r.Status == DiscordLinkStatus.Conflict), Is.EqualTo(1));
+        Assert.That(results.Count(r => r.Status == RMCDiscordLinkStatus.Success), Is.EqualTo(1));
+        Assert.That(results.Count(r => r.Status == RMCDiscordLinkStatus.Conflict), Is.EqualTo(1));
         await using var db = Open();
         Assert.That(await db.RMCLinkedAccounts.CountAsync(), Is.EqualTo(1));
         Assert.That(await db.RMCLinkedAccountLogs.CountAsync(), Is.EqualTo(1));

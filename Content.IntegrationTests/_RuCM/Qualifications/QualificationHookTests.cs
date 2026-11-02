@@ -98,7 +98,7 @@ public sealed class QualificationHookTests : GameTest
             ent.System<Content.Server.CMU14.Round.AuRoundSystem>().SetPreset(Server.ResolveDependency<IPrototypeManager>().Index<Content.Server.GameTicking.Presets.GamePresetPrototype>("Insurgency"));
             var player = ServerSession;
             Assert.That(player, Is.Not.Null);
-            var candidates = new StationJobsGetCandidatesEvent(player.UserId, new List<ProtoId<JobPrototype>> { job });
+            var candidates = new StationJobsGetCandidatesEvent(player.UserId, new List<ProtoId<JobPrototype>> { job }, HumanoidCharacterProfile.DefaultWithSpecies());
             ent.EventBus.RaiseEvent(EventSource.Local, ref candidates);
             Assert.That(candidates.Jobs, Is.Empty);
             var disallowed = new GetDisallowedJobsEvent(player, new()); ent.EventBus.RaiseEvent(EventSource.Local, ref disallowed);
@@ -111,7 +111,7 @@ public sealed class QualificationHookTests : GameTest
                 ent.EventBus.RaiseEvent(EventSource.Local, spawn); Assert.That(spawn.JobId, Is.Null);
             }
             cfg.SetCVar(QualificationCVars.Enabled, false);
-            var unchanged = new StationJobsGetCandidatesEvent(player.UserId, new List<ProtoId<JobPrototype>> { job }); ent.EventBus.RaiseEvent(EventSource.Local, ref unchanged);
+            var unchanged = new StationJobsGetCandidatesEvent(player.UserId, new List<ProtoId<JobPrototype>> { job }, HumanoidCharacterProfile.DefaultWithSpecies()); ent.EventBus.RaiseEvent(EventSource.Local, ref unchanged);
             Assert.That(unchanged.Jobs, Does.Contain(new ProtoId<JobPrototype>(job)));
             var noGate = new PlayerBeforeSpawnEvent(player, HumanoidCharacterProfile.DefaultWithSpecies(), job, true, EntityUid.Invalid);
             ent.EventBus.RaiseEvent(EventSource.Local, noGate); Assert.That(noGate.JobId, Is.EqualTo(job));
@@ -186,7 +186,7 @@ public sealed class QualificationHookTests : GameTest
         {
             var ent = Server.ResolveDependency<IEntityManager>(); var other = ent.SpawnEntity("CMMobHuman", map.GridCoords);
             var attempt = new BoundUserInterfaceMessageAttempt(other, actor, QualificationUiKey.Main, new OpenBoundInterfaceMessage());
-            ent.EventBus.RaiseLocalEvent(actor, attempt); Assert.That(attempt.Cancelled, Is.True);
+            ent.EventBus.RaiseLocalEvent(actor, ref attempt); Assert.That(attempt.Cancelled, Is.True);
         });
     }
 
