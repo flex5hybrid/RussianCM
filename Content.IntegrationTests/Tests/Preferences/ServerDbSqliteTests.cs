@@ -175,7 +175,8 @@ namespace Content.IntegrationTests.Tests.Preferences
                 .WithSkinColor(YautjaSkinColor.Black)
                 .WithDreadColor(YautjaDreadColor.Brown)
                 .WithQuillStyle(YautjaQuillStyle.LongCurved)
-                .WithEyeColor(YautjaEyeColor.Jade);
+                .WithEyeColor(YautjaEyeColor.Jade)
+                .WithTTSVoice("ILLIDAN");
             await db.InitPrefsAsync(user, CharlieCharlieson().WithYautjaProfile(yautja));
             var saved = await db.GetPlayerPreferencesAsync(user);
             await Pair.Server.WaitAssertion(() =>
@@ -185,6 +186,7 @@ namespace Content.IntegrationTests.Tests.Preferences
                 Assert.Multiple(() =>
                 {
                     Assert.That(restored.Name, Is.EqualTo(yautja.Name));
+                    Assert.That(restored.TTSVoice, Is.EqualTo("ILLIDAN"));
                     Assert.That(restored.SkinColor, Is.EqualTo(YautjaSkinColor.Black));
                     Assert.That(restored.DreadColor, Is.EqualTo(YautjaDreadColor.Brown));
                     Assert.That(restored.QuillStyle, Is.EqualTo(YautjaQuillStyle.LongCurved));
