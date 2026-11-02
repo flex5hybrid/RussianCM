@@ -8,12 +8,14 @@ using Content.Shared.CMU14.Dropship.GunshipControls;
 using Content.Shared.CMU14.Dropship.Integrity;
 using Content.Shared.CMU14.Dropship.TacticalLand;
 using Content.Shared.CMU14.ZLevels.Core;
+using Content.Shared.CMU14.ZLevels.Core.Components;
 using Content.Shared._RMC14.Dropship;
 using Content.Shared._RMC14.Dropship.AttachmentPoint;
 using Content.Shared._RMC14.Dropship.Weapon;
 using Content.Shared._RMC14.Camera;
 using Content.Shared._RMC14.NightVision;
 using Content.Shared._RMC14.PowerLoader;
+using Content.Shared._RMC14.Rules;
 using Content.Shared._RMC14.Vehicle;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
@@ -32,6 +34,8 @@ using Content.Shared.Interaction.Components;
 using Content.Shared.Maps;
 using Content.Shared.Physics;
 using Content.Shared.Popups;
+using Content.Shared.Shuttles.Components;
+using Content.Shared.Shuttles.Systems;
 using Content.Shared.UserInterface;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Server.Movement.Components;
@@ -713,11 +717,31 @@ public sealed partial class DropshipTacticalLandSystem
             return;
         }
 
-        if (Transform(seat).GridUid is not { } grid ||
-            !HasComp<DropshipTacticalHoverComponent>(grid))
+        if (Transform(seat).GridUid is not { } grid)
         {
             seat.Comp.HeldInputs = GunshipControlInput.None;
             seat.Comp.PressedActions = 0;
+            return;
+        }
+
+        if (!HasComp<DropshipTacticalHoverComponent>(grid))
+        {
+            seat.Comp.HeldInputs = GunshipControlInput.None;
+
+            // A landed gunship can lift off directly into free flight
+            // Other flight controls still require the hover state
+            if (ev.Action != GunshipControlAction.Ascend || !ev.Pressed)
+            {
+                seat.Comp.PressedActions = 0;
+                return;
+            }
+
+            var takeoffMask = (ushort) (1 << (int) ev.Action);
+            if ((seat.Comp.PressedActions & takeoffMask) != 0)
+                return;
+
+            seat.Comp.PressedActions = takeoffMask;
+            TryTakeOffGunship(seat, grid);
             return;
         }
 
@@ -1307,8 +1331,14 @@ public sealed partial class DropshipTacticalLandSystem
             }
 
             var opening = CMUZLevelOpeningCache.IsOpeningTile(targetTile.Tile, _tile);
-            if (targetTile.Tile.IsEmpty && !opening)
+            if (!allowUnmappedAir &&
+                !CMUZLevelOpeningCache.IsLandingSurfaceTile(targetTile.Tile, _tile))
+            {
+                // A landing needs real floor. Empty tiles inside materialized
+                // chunks, bare Space cells, holes and sealed open-air tiles are
+                // flyable but cannot hold the hull.
                 return false;
+            }
 
             var tileBlocked = !opening &&
                 _turf.IsTileBlocked(targetTile, blockMask, DropshipMinimumBlockingArea);
@@ -1679,35 +1709,94 @@ public sealed partial class DropshipTacticalLandSystem
         ent.Comp.HasCachedFootprintBoundaryRotation = false;
     }
 
-    private void TryChangeGunshipAltitude(Entity<GunshipPilotSeatComponent> seat, int offset)
+    private void TryTakeOffGunship(Entity<GunshipPilotSeatComponent> seat, EntityUid grid)
     {
         if (seat.Comp.Pilot is not { } pilot)
             return;
 
-        if (Transform(seat).GridUid is not { } grid ||
-            !TryComp(grid, out DropshipTacticalHoverComponent? hover) ||
-            !TryComp(grid, out MapGridComponent? dropshipGrid) ||
+        if (!TryComp(grid, out DropshipComponent? dropship) ||
+            dropship.Crashed ||
             Transform(grid).MapUid is not { } currentMap)
         {
             _popup.PopupEntity(Loc.GetString("cmu-gunship-not-hovering"), seat, pilot, PopupType.MediumCaution);
             return;
         }
 
-        if (hover.AltitudeTransitionAt != null)
+        // Only a landed dropship can take off. An FTL in progress owns its
+        // position until the arrival sequence finishes
+        if (TryComp(grid, out FTLComponent? ftl) &&
+            ftl.State is not (FTLState.Cooldown or FTLState.Available))
         {
-            _popup.PopupEntity(Loc.GetString("cmu-gunship-altitude-transition-active"), seat, pilot, PopupType.MediumCaution);
+            _popup.PopupEntity(Loc.GetString("cmu-gunship-not-hovering"), seat, pilot, PopupType.MediumCaution);
             return;
         }
 
-        if (!_zLevels.TryMapOffset(currentMap, offset, out var targetMap))
+        // The ground level is the current map. Keep the ephemeral landing
+        // marker following the hull if one is still attached, and reuse the
+        // footprint that landing was cleared with
+        EntityUid? hoverDestination = dropship.Destination is { } destination &&
+                                      HasComp<EphemeralDropshipDestinationComponent>(destination)
+            ? destination
+            : null;
+
+        var footprint = dropship.TacticalLandFootprint;
+        if (hoverDestination is { } marker &&
+            TryComp(marker, out EphemeralDropshipDestinationComponent? ephemeral) &&
+            ephemeral.Footprint.X > 0 &&
+            ephemeral.Footprint.Y > 0)
         {
-            _popup.PopupEntity(Loc.GetString(offset > 0
-                    ? "cmu-gunship-no-higher-flight-level"
-                    : "cmu-gunship-no-lower-flight-level"),
-                seat,
-                pilot,
-                PopupType.MediumCaution);
+            footprint = ephemeral.Footprint;
+        }
+
+        // Prefer climbing one level: a gunship that landed on any surface
+        // resumes free flight in the air directly above that surface.
+        // Planet surfaces keep the existing obstruction feedback; upper-level
+        // roofs lift off in place instead so a normal landing can always be
+        // undone even when the airspace above the roof is not flyable.
+        var isPlanetSurface = HasComp<RMCPlanetComponent>(currentMap);
+        if (_zLevels.TryMapOffset(currentMap, 1, out _))
+        {
+            var hover = InitializeTacticalHover(grid, hoverDestination, footprint, 0);
+            if (TryChangeGunshipAltitude(seat, 1, quiet: !isPlanetSurface))
+                return;
+
+            CleanupHoverEffects((grid, hover));
+            RemComp<DropshipTacticalHoverComponent>(grid);
+
+            if (isPlanetSurface)
+                return;
+        }
+        else if (isPlanetSurface)
+        {
+            _popup.PopupEntity(Loc.GetString("cmu-gunship-no-higher-flight-level"), seat, pilot, PopupType.MediumCaution);
             return;
+        }
+
+        // Lift off in place on the current level, keeping it as the ground
+        // reference so a descent can land back on the same surface.
+        InitializeTacticalHover(grid, hoverDestination, footprint, 0);
+    }
+
+    private bool TryChangeGunshipAltitude(Entity<GunshipPilotSeatComponent> seat, int offset, bool quiet = false)
+    {
+        if (seat.Comp.Pilot is not { } pilot)
+            return false;
+
+        if (Transform(seat).GridUid is not { } grid ||
+            !TryComp(grid, out DropshipTacticalHoverComponent? hover) ||
+            !TryComp(grid, out MapGridComponent? dropshipGrid) ||
+            Transform(grid).MapUid is not { } currentMap)
+        {
+            if (!quiet)
+                _popup.PopupEntity(Loc.GetString("cmu-gunship-not-hovering"), seat, pilot, PopupType.MediumCaution);
+            return false;
+        }
+
+        if (hover.AltitudeTransitionAt != null)
+        {
+            if (!quiet)
+                _popup.PopupEntity(Loc.GetString("cmu-gunship-altitude-transition-active"), seat, pilot, PopupType.MediumCaution);
+            return false;
         }
 
         var position = _transform.GetWorldPosition(grid);
@@ -1715,29 +1804,57 @@ public sealed partial class DropshipTacticalLandSystem
         var snappedDegrees = Math.Round(currentRotation.Degrees / 90d) * 90d;
         var snappedRotation = Angle.FromDegrees(snappedDegrees);
 
-        // Landings still demand real floor on the target level. Flight over
-        // unmapped sky is decided inside the footprint check.
-        var landing = offset < 0 &&
-            (hover.GroundMap == targetMap.Value.Owner || hover.GroundMap is null && hover.GroundMapOffset == -1);
-
-        var clear = IsGunshipFootprintClear((grid, dropshipGrid), targetMap.Value.Owner, position, snappedRotation,
-            !landing, out var blockers);
-        if (!clear && !CanGunshipCrashThrough(blockers))
+        var step = TryResolveGunshipAltitudeTarget((grid, dropshipGrid),
+            currentMap,
+            offset,
+            position,
+            snappedRotation,
+            out var targetMap,
+            out var landing,
+            out var levelDelta);
+        if (step == GunshipAltitudeStep.NoLevel)
         {
-            _popup.PopupEntity(Loc.GetString("cmu-gunship-target-level-blocked"), seat, pilot, PopupType.MediumCaution);
-            return;
+            if (!quiet)
+            {
+                _popup.PopupEntity(Loc.GetString(offset > 0
+                        ? "cmu-gunship-no-higher-flight-level"
+                        : "cmu-gunship-no-lower-flight-level"),
+                    seat,
+                    pilot,
+                    PopupType.MediumCaution);
+            }
+
+            return false;
+        }
+
+        if (step == GunshipAltitudeStep.Blocked)
+        {
+            if (!quiet)
+                _popup.PopupEntity(Loc.GetString("cmu-gunship-target-level-blocked"), seat, pilot, PopupType.MediumCaution);
+            return false;
+        }
+
+        // Landings still demand real floor on the target level. Flight over
+        // unmapped sky is decided inside the footprint check
+        var clear = IsGunshipFootprintClear((grid, dropshipGrid), targetMap, position, snappedRotation,
+            !landing, out var blockers);
+        if (!clear && (landing || !CanGunshipCrashThrough(blockers)))
+        {
+            if (!quiet)
+                _popup.PopupEntity(Loc.GetString("cmu-gunship-target-level-blocked"), seat, pilot, PopupType.MediumCaution);
+            return false;
         }
 
         _transform.SetWorldRotation(grid, snappedRotation);
         hover.GunshipLinearVelocity = Vector2.Zero;
         hover.GunshipAngularVelocityDegrees = 0f;
-        hover.AltitudeTargetMap = targetMap.Value.Owner;
-        hover.AltitudeOffset = offset;
+        hover.AltitudeTargetMap = targetMap;
+        hover.AltitudeOffset = levelDelta;
         hover.AltitudeLanding = landing;
         hover.AltitudePilot = pilot;
         hover.AltitudeTransitionAt = _timing.CurTime + GunshipAltitudeTransitionTime;
 
-        var warningCoords = new EntityCoordinates(targetMap.Value.Owner, position);
+        var warningCoords = new EntityCoordinates(targetMap, position);
         SpawnGunshipFootprintWarning(warningCoords,
             (grid, dropshipGrid),
             snappedRotation,
@@ -1752,6 +1869,113 @@ public sealed partial class DropshipTacticalLandSystem
             seat,
             pilot,
             PopupType.Medium);
+
+        return true;
+    }
+
+    // A landing needs real floor across the whole hull. Empty tiles inside a
+    // materialized chunk, bare Space cells, holes and sealed open-air tiles are
+    // flyable but cannot hold the ship up.
+    private bool HasGunshipLandingSurface(
+        Entity<MapGridComponent> dropship,
+        EntityUid mapUid,
+        Vector2 position,
+        Angle rotation)
+    {
+        if (!TryComp(mapUid, out MapGridComponent? grid))
+            return false;
+
+        foreach (var rotatedCenter in GetRotatedGunshipFootprintCenters(dropship, rotation, boundaryOnly: false))
+        {
+            if (!_map.TryGetTileRef(mapUid, grid, position + rotatedCenter, out var tile) ||
+                !CMUZLevelOpeningCache.IsLandingSurfaceTile(tile.Tile, _tile))
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    // True when any hull tile is over something solid. Used to reject a descent
+    // that would otherwise pass a partly covered roof straight through the hull.
+    private bool HasAnyGunshipLandingSurface(
+        Entity<MapGridComponent> dropship,
+        EntityUid mapUid,
+        Vector2 position,
+        Angle rotation)
+    {
+        if (!TryComp(mapUid, out MapGridComponent? grid))
+            return false;
+
+        foreach (var rotatedCenter in GetRotatedGunshipFootprintCenters(dropship, rotation, boundaryOnly: false))
+        {
+            if (_map.TryGetTileRef(mapUid, grid, position + rotatedCenter, out var tile) &&
+                CMUZLevelOpeningCache.IsLandingSurfaceTile(tile.Tile, _tile))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private enum GunshipAltitudeStep
+    {
+        Step,
+        NoLevel,
+        Blocked,
+    }
+
+    // Resolves a single ascent/descent step. A descent only lands when the hull
+    // already rests on a surface (a roof or the ground under the current level)
+    // or when the level immediately below can hold the whole hull. Otherwise it
+    // is a plain flight-level change, so the pilot can still move between upper
+    // levels without being forced down onto the first surface far below.
+    private GunshipAltitudeStep TryResolveGunshipAltitudeTarget(
+        Entity<MapGridComponent> dropship,
+        EntityUid currentMap,
+        int offset,
+        Vector2 position,
+        Angle rotation,
+        out EntityUid targetMap,
+        out bool landing,
+        out int levelDelta)
+    {
+        targetMap = currentMap;
+        landing = false;
+        levelDelta = offset;
+
+        if (offset < 0 && HasGunshipLandingSurface(dropship, currentMap, position, rotation))
+        {
+            // A hull sitting on a roof or on the ground lands where it is
+            // instead of dropping through the surface below.
+            landing = true;
+            levelDelta = 0;
+            return GunshipAltitudeStep.Step;
+        }
+
+        if (!_zLevels.TryMapOffset(currentMap, offset, out var mappedTarget))
+            return GunshipAltitudeStep.NoLevel;
+
+        targetMap = mappedTarget.Value.Owner;
+
+        if (offset < 0)
+        {
+            // The ground is the lowest flight level; underground decks are only
+            // reachable on foot.
+            if (TryComp(targetMap, out CMUZLevelMapComponent? targetLevel) && targetLevel.Depth < 0)
+                return GunshipAltitudeStep.Blocked;
+
+            landing = HasGunshipLandingSurface(dropship, targetMap, position, rotation);
+            if (!landing && HasAnyGunshipLandingSurface(dropship, targetMap, position, rotation))
+            {
+                // The hull would clip into a partly covered roof.
+                return GunshipAltitudeStep.Blocked;
+            }
+        }
+
+        return GunshipAltitudeStep.Step;
     }
 
     private void SpawnGunshipFootprintWarning(
@@ -1815,7 +2039,11 @@ public sealed partial class DropshipTacticalLandSystem
             !landing, out var blockers);
         if (!clear)
         {
-            if (!CanGunshipCrashThrough(blockers))
+            // A landing must never mow through what is left at the site. An
+            // ascent may break destructible blockers, but only if the impact
+            // actually clears them: teleporting with survivors inside the hull
+            // is what let obstacles pass through the ship.
+            if (landing || !CanGunshipCrashThrough(blockers))
             {
                 PopupAltitudeTransitionFailure(hover.Owner, pilot, "The flight-level change was aborted by an indestructible obstruction.");
                 return;
@@ -1829,6 +2057,14 @@ public sealed partial class DropshipTacticalLandSystem
             // finish this as an ordinary altitude change as well.
             if (TryComp(hover.Owner, out DropshipIntegrityComponent? integrity) && integrity.Crashing)
                 return;
+
+            clear = IsGunshipFootprintClear((hover.Owner, dropshipGrid), map, position, rotation,
+                !landing, out blockers);
+            if (!clear)
+            {
+                PopupAltitudeTransitionFailure(hover.Owner, pilot, "The flight-level change was aborted by an indestructible obstruction.");
+                return;
+            }
         }
 
         var targetCoords = new MapCoordinates(position, targetMapComp.MapId);
