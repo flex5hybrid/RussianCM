@@ -1,5 +1,3 @@
-#RuMC modified
-
 - type: entity
   parent: RMCWeaponRifleAK4047
   name: AK-7074 assault rifle
@@ -57,7 +55,7 @@
     recoilUnwielded: 4
     scatterWielded: 4
     scatterUnwielded: 11
-    baseFireRate: 5
+    baseFireRate: 4.5
     burstScatterMult: 1
   - type: RMCWeaponAccuracy
     accuracyMultiplier: 1.25

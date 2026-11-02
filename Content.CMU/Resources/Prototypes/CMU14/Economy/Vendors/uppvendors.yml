@@ -257,7 +257,7 @@
       - id: RMCGlassesTriMaxBronze
         amount: 25
     - name: Patches
-      squadSpecializations: [ UPPSpecRecon, UPPSpecStormtrooper, UPPSpecGranison ]
+      squadSpecializations: [ UPPSpecRecon ]
       entries:
       - id: AU14PatchUPP
         amount: 80
@@ -1469,9 +1469,11 @@
       - id: RMCWeaponRifleType71
         amount: 6
       - id: RMCWeaponRifleType71C
-        amount: 3
+        amount: 2
       - id: RMCWeaponRifleAK4047
-        amount: 10
+        amount: 6
+      - id: RuMCWeaponRifleAK7074
+        amount: 2
       - id: RuMCRifleVAL
         amount: 2
       - id: RMCWeaponPistolNP92Empty

@@ -37,18 +37,6 @@ cmu-vendor-section-upp-recon-armor = [Разведка] Облегченная �
 cmu-vendor-section-upp-recon-weapons = [Разведка] Спецвооружение
 cmu-vendor-section-upp-recon-ammo = [Разведка] Боеприпасы и оптика
 
-cmu-vendor-section-upp-stormtrooper-fatigues = [Тяжёлая пехота] Форма
-cmu-vendor-section-upp-stormtrooper-headgear = [Тяжёлая пехота] Головные уборы
-cmu-vendor-section-upp-stormtrooper-armor = [Тяжёлая пехота] Тяжелая штурмовая броня
-cmu-vendor-section-upp-stormtrooper-weapons = [Тяжёлая пехота] Спецвооружение
-cmu-vendor-section-upp-stormtrooper-ammo = [Тяжёлая пехота] Усиленный боекомплект
-
-cmu-vendor-section-upp-granison-fatigues = [Инженеры] Форма
-cmu-vendor-section-upp-granison-headgear = [Инженеры] Головные уборы
-cmu-vendor-section-upp-granison-armor = [Инженеры] Облегченная броня
-cmu-vendor-section-upp-granison-weapons = [Инженеры] Спецвооружение
-cmu-vendor-section-upp-granison-ammo = [Инженеры] Тяжёлое вооружение
-
 # Specializations: UPP
 rmc-squad-spec-upp-vdv-name = Воздушно-десантные войска (ВДВ)
 rmc-squad-spec-upp-vdv-desc = Десантно-штурмовая доктрина быстрого прорыва. Маневренные карабины, пистолеты-пулеметы и облегченная броня для максимальной мобильности на поле боя.
@@ -59,13 +47,3 @@ rmc-squad-spec-upp-recon-name = Разведка и егеря («Разбойн
 rmc-squad-spec-upp-recon-desc = Диверсионная доктрина скрытных операций и дальнего огневого поражения. Маскировочные накидки, снайперские винтовки Тип 88 и бесшумное оружие.
 rmc-squad-spec-upp-recon-summary = Экипировка: Панамы, маскировочный капюшон M8, бесшумная броня. Вооружение: Марксманская винтовка Тип 88 DMR, бесшумный ПП Тип 64, карабин Тип 73, глушители.
 rmc-squad-spec-upp-recon-announced = [ШТАБ ОТРЯДА]: Отделение действует по доктрине Разведки! Получите маскировочную экипировку и бесшумное оружие в автоматах снабжения!
-
-rmc-squad-spec-upp-stormtrooper-name = Усиленный оряд (Штурмовики)
-rmc-squad-spec-upp-stormtrooper-desc = Штурмовая доктрина. Огнём и мечом!
-rmc-squad-spec-upp-stormtrooper-summary = Экипировка: Ак4047/Ag80 + 2 обвеса любой категории, так же большее количество гранат.
-rmc-squad-spec-upp-stormtrooper-announced = [ШТАБ ОТРЯДА]: Отделение дейтсвует по штурмовой докрине! Получите снаряжение и броню в автоматах снабжения!
-
-rmc-squad-spec-upp-granison-name = Усиленный оряд (Инженеры)
-rmc-squad-spec-upp-granison-desc = Оборонительная доктрина для долгих и успешных операций. Цена победы - крепкий тыл!
-rmc-squad-spec-upp-granison-summary = Экипировка: Сталь и турели, тяжёлые станковые пулемёты и АГС! Всё что нужно для великолепной обороны.
-rmc-squad-spec-upp-granison-announced = [ШТАБ ОТРЯДА]: Отделение действует по доктрине инженеров! Получите инженерную экипировку и турели в автоматах снабжения!
