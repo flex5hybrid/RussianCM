@@ -1,4 +1,5 @@
 using Content.Shared._RMC14.NightVision;
+using Content.Shared._RuMC14.BatteryDrain; // RuMC edit
 using Content.Shared.CMU14.Clothing;
 using Content.Shared.Item.ItemToggle;
 using Content.Shared.Item.ItemToggle.Components;
@@ -16,6 +17,7 @@ public sealed class CMUHelmetGarbNightVisionSystem : EntitySystem
     private static readonly TimeSpan CheckInterval = TimeSpan.FromSeconds(0.25);
 
     [Dependency] private SharedContainerSystem _container = default!;
+    [Dependency] private RuMCBatteryDrainSystem _batteryDrain = default!; // RuMC edit
     [Dependency] private ItemToggleSystem _itemToggle = default!;
     [Dependency] private SharedNightVisionSystem _nightVision = default!;
     [Dependency] private IGameTiming _timing = default!;
@@ -50,7 +52,7 @@ public sealed class CMUHelmetGarbNightVisionSystem : EntitySystem
 
     private void Refresh(Entity<CMUHelmetGarbNightVisionComponent> ent, NightVisionItemComponent nightVision)
     {
-        var wearer = _itemToggle.IsActivated(ent.Owner) ? Wearer(ent) : null;
+        var wearer = _itemToggle.IsActivated(ent.Owner) && !_batteryDrain.IsDepleted(ent.Owner) ? Wearer(ent) : null; // RuMC edit
         if (nightVision.User == wearer)
             return;
 

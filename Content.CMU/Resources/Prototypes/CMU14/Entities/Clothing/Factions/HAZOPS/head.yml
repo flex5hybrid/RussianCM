@@ -21,7 +21,7 @@
     sprite: CMU14/Clothing/HAZOPS/pagst.rsi
 
 - type: entity
-  parent: RMCHelmetGarbToggleableBase
+  parent: [ RMCHelmetGarbToggleableBase, RuMCBatteryDrainSight ] # RuMC edit
   id: CMUHelmetGarbPVS71NightVision
   name: PVS-71 night vision goggles
   description: HAZOPS-issue night vision goggles that clip into a helmet. Pull them down to see in the dark.
