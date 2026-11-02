@@ -36,7 +36,7 @@ public sealed partial class HumanoidProfileSystem : EntitySystem
         SetVoice(ent, profile.Voice);
         if (TryComp<Content.Shared.Corvax.TTS.TTSComponent>(ent, out var tts))
         {
-            tts.VoicePrototypeId = HumanoidCharacterProfile.ValidateTTSVoice(profile.TTSVoice, ProtoMan, profile.Sex);
+            tts.VoicePrototypeId = HumanoidCharacterProfile.ValidateTTSVoice(profile.TTSVoice, ProtoMan, profile.Sex, profile.Species.Id == "Yautja");
             var voiceApplied = new Content.Shared.Corvax.TTS.CMUTTSVoiceAppliedEvent();
             RaiseLocalEvent(ent, ref voiceApplied);
         }
