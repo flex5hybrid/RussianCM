@@ -1198,6 +1198,12 @@ namespace Content.Server.CMU14.Round
             return _voteSequenceRunning;
         }
 
+        // the gamemode vote is the first step, the planet and platoon votes after it don't change the preset
+        public bool IsAwaitingPresetVote()
+        {
+            return _voteSequenceRunning && _selectedPreset == null;
+        }
+
         public void StartVoteSequence(Action? onFinished = null)
         {
             StartKabanVoteSequence(onFinished); // CMU14
