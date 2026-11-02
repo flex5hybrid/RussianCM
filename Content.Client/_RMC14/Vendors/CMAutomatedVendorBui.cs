@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Client.CMU14.Yautja;
+using Content.Client.CMU14.Interface;
 using Content.Shared._RMC14.Holiday;
 using Content.Shared._RMC14.Marines.Roles.Ranks;
 using Content.Shared._RMC14.Marines.Squads.Specialization;
@@ -58,6 +59,7 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
         }
 
         _window.Search.OnTextChanged += OnSearchChanged;
+        _window.LowStockOnly.OnToggled += _ => ApplySearchFilter(_window.Search.Text);
         Refresh();
     }
 
@@ -94,6 +96,7 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
             var uiSection = new CMAutomatedVendorSection { Section = section };
             uiSection.Label.SetMessage(GetSectionName(user, section));
             uiSection.Visible = IsSectionValid(section);
+            uiSection.UpdateCount(section.Entries.Count, section.Entries.Count);
             ApplySectionStyle(vendor, uiSection);
 
             for (var entryIndex = 0; entryIndex < section.Entries.Count; entryIndex++)
@@ -291,39 +294,45 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
         return true;
     }
 
+    /// <summary>Only finite stocks with a known maximum can be classified as low.</summary>
+    private static bool IsLowStock(CMVendorEntry entry)
+    {
+        return entry.Amount is { } amount &&
+               (amount <= 0 || entry.Max is > 0 && amount * 4L <= entry.Max.Value);
+    }
+
     private void ApplySearchFilter(string? text)
     {
         if (_window == null)
             return;
 
+        var anyVisible = false;
+        var lowOnly = _window.LowStockOnly.Pressed;
         foreach (var sectionControl in _window.Sections.Children)
         {
             if (sectionControl is not CMAutomatedVendorSection section)
                 continue;
 
-            var any = false;
+            var visible = 0;
             foreach (var entriesControl in section.Entries.Children)
             {
                 if (entriesControl is not CMAutomatedVendorEntry entry)
                     continue;
 
-                if (!IsEntrySpecializationValid(entry.Entry))
-                {
-                    entry.Visible = false;
-                    continue;
-                }
-
-                if (string.IsNullOrWhiteSpace(text))
-                    entry.Visible = true;
-                else
-                    entry.Visible = entry.Panel.Button.TextLabel.Text?.Contains(text, OrdinalIgnoreCase) ?? false;
-
+                var valid = IsEntrySpecializationValid(entry.Entry);
+                var matches = string.IsNullOrWhiteSpace(text) ||
+                              (entry.Panel.Button.TextLabel.Text?.Contains(text.Trim(), OrdinalIgnoreCase) ?? false);
+                entry.Visible = valid && matches && (!lowOnly || entry.Entry is { } stock && IsLowStock(stock));
                 if (entry.Visible)
-                    any = true;
+                    visible++;
             }
 
-            section.Visible = any && (section.Section == null || IsSectionValid(section.Section));
+            section.UpdateCount(visible, section.Entries.ChildCount);
+            section.Visible = visible > 0 && (section.Section == null || IsSectionValid(section.Section));
+            anyVisible |= section.Visible;
         }
+
+        _window.SetNothingFound(!anyVisible);
     }
 
     public void Refresh()
@@ -424,8 +433,9 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
                     uiEntry.Amount.Text = entry.Amount.ToString();
                 }
 
-                uiEntry.Amount.Modulate = disabled ? Color.Red : Color.White;
+                uiEntry.Amount.Modulate = disabled ? CrtTerminalPalette.Alert : CrtTerminalPalette.TextBright;
                 uiEntry.Panel.Button.Disabled = disabled;
+                uiEntry.SetAvailability(entry.Amount is <= 0, IsLowStock(entry));
 
                 // Stock line: how many are left to buy at all (an infinity symbol when the entry has no
                 // stock cap).
@@ -461,16 +471,23 @@ public sealed partial class CMAutomatedVendorBui : BoundUserInterface
             }
         }
 
+        var eligible = vendor.Sections
+            .Where(IsSectionValid)
+            .SelectMany(section => section.Entries)
+            .Where(IsEntrySpecializationValid)
+            .ToList();
+        _window.UpdateInventorySummary(eligible.Count, eligible.Count(IsLowStock),
+            eligible.Count(entry => entry.Amount is <= 0));
         ApplySearchFilter(_window.Search.Text);
         _window.PointsLabel.Text = anyEntryWithPoints ? pointsLabel : string.Empty;
 
         if (!EntMan.TryGetComponent(Owner, out CMSolutionRefillerComponent? refiller))
         {
-            _window.ReagentsContainer.Visible = false;
+            _window.SetReagentsVisible(false);
             return;
         }
 
-        _window.ReagentsContainer.Visible = true;
+        _window.SetReagentsVisible(true);
 
         var current = refiller.Current;
         var max = refiller.Max;
