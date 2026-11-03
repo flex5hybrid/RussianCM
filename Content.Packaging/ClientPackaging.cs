@@ -76,15 +76,17 @@ public static class ClientPackaging
         var graph = new RobustClientAssetGraph();
         pass.Dependencies.Add(new AssetPassDependency(graph.Output.Name));
 
+        // CMU14: resolve overlapping resource mounts before the parallel RSI/text passes.
+        var inputPass = new CMUResourceInput();
+        graph.Input.AddDependency(inputPass);
+
         var dropSvgPass = new AssetPassFilterDrop(f => f.Path.EndsWith(".svg"))
         {
             Name = "DropSvgPass",
         };
         dropSvgPass.AddDependency(graph.Input).AddBefore(graph.PresetPasses);
 
-        AssetGraph.CalculateGraph([pass, dropSvgPass, ..graph.AllPasses], logger);
-
-        var inputPass = graph.Input;
+        AssetGraph.CalculateGraph([pass, dropSvgPass, inputPass, ..graph.AllPasses], logger); // CMU14
 
         await RobustSharedPackaging.WriteContentAssemblies(
             inputPass,

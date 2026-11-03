@@ -9,6 +9,7 @@
   <!-- CMU14: compile tests alongside their CMU-owned feature sources. -->
   <ItemGroup>
     <Compile Include="..\Content.CMU\Tests\**\*.cs" Link="CMU14\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="../Content.CMU/Packaging/*.cs" Link="CMU14/Packaging/%(Filename)%(Extension)" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NUnit" />
@@ -21,6 +22,8 @@
   <Import Project="..\RobustToolbox\Imports\Server.props" />
   <Import Project="..\RobustToolbox\Imports\Shared.props" />
   <Import Project="..\RobustToolbox\Imports\Testing.props" />
+  <!-- CMU14: exercise the resource input against the real packaging graphs. -->
+  <Import Project="../RobustToolbox/Imports/Packaging.props" />
   <ItemGroup>
     <ProjectReference Include="..\Content.Client\Content.Client.csproj" />
     <ProjectReference Include="..\Content.Server\Content.Server.csproj" />

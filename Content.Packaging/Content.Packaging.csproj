@@ -7,6 +7,11 @@
 
   <Import Project="../MSBuild/Content.props" />
 
+  <!-- CMU14: share the mount-aware packaging input with its regression tests. -->
+  <ItemGroup>
+    <Compile Include="../Content.CMU/Packaging/*.cs" />
+  </ItemGroup>
+
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
 
   <Import Project="..\RobustToolbox\Imports\Shared.props" />
