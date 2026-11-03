@@ -186,11 +186,6 @@ public static class ServerPackaging
         var graph = new RobustServerAssetGraph();
         var passes = graph.AllPasses.ToList();
 
-        // CMU14: server resources need the same mount precedence as the client.
-        var inputPassResources = new CMUResourceInput();
-        graph.InputResources.AddDependency(inputPassResources);
-        passes.Add(inputPassResources);
-
         pass.Dependencies.Add(new AssetPassDependency(graph.Output.Name));
 
         // Include a TOML config file - include the ss14 one from Resources if possible, using the RT one as a fallback.
@@ -203,6 +198,7 @@ public static class ServerPackaging
         AssetGraph.CalculateGraph(passes, logger);
 
         var inputPassCore = graph.InputCore;
+        var inputPassResources = graph.InputResources;
 
         // Additional assemblies that need to be copied such as EFCore.
         var sourcePath = Path.Combine(contentDir, "bin", "Content.Server");
