@@ -38,6 +38,12 @@ jobs:
       - name: Check CRLF
         run: python3 Tools/check_crlf.py
 
+      # CMU14: overlapping mounts break RSI packing and duplicate merged YAML/FTL entries.
+      - name: Check resource mount paths
+        run: |
+          python3 -m unittest discover -s .github/scripts -p 'test_check_resource_paths.py'
+          python3 .github/scripts/check_resource_paths.py
+
       - name: Reject RobustToolbox submodule updates in PRs
         if: github.event_name == 'pull_request'
         uses: actions/github-script@v9.0.0
