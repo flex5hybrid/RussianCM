@@ -52,33 +52,15 @@
   ranks:
     RMCRankCivilian: []
   chevrons:
-    UPP_Plutonowy:
-      entity: AU14ChevronUPPNIPlutonowy
+    UPP_Gefreiter:
+      entity: AU14ChevronUPPNIGefreiter
       requirements: []
-    UPP_Sergeant:
-      entity: AU14ChevronUPPNISergeant
-      requirements:
-      - !type:RoleTimeRequirement
-        role: RuMCJobUPPVDVSniper
-        time: 1800 # 0.5 hours
-    UPP_SeniorSergeant:
-      entity: AU14ChevronUPPNISeniorSergeant
+    UPP_SeniorGefreiter:
+      entity: AU14ChevronUPPNISeniorGefreiter
       requirements:
       - !type:RoleTimeRequirement
         role: RuMCJobUPPVDVSniper
         time: 5400 # 1.5 hours
-    UPP_JuniorLieutenant:
-      entity: AU14ChevronUPPNIJuniorLieutenant
-      requirements:
-      - !type:RoleTimeRequirement
-        role: RuMCJobUPPVDVSniper
-        time: 7200 # 2 hours
-    UPP_Lieutenant:
-      entity: AU14ChevronUPPNILieutenant
-      requirements:
-      - !type:RoleTimeRequirement
-        role: RuMCJobUPPVDVSniper
-        time: 10800 # 3 hours
   spawnMenuRoleName: VDV Sniper
   startingGear: RuMCGearUPPVDVSniper
   greeting: rumc-vdv-greeting
