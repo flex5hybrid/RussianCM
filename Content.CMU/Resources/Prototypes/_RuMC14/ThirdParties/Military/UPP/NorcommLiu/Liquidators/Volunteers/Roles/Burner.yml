@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPLiquidatorBurner
   roundSide: ThirdParty
-  roundForce: UPP
+  roundForce: Liquidators
   roundRole: RuMCUPPLiquidatorBurner
   roundComponents:
   - type: TacticalMapIcon

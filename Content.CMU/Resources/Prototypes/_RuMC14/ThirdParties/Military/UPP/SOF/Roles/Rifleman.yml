@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPSOFRifleman
   roundSide: ThirdParty
-  roundForce: UPP
+  roundForce: SOF
   roundRole: RuMCUPPSOFRifleman
   roundComponents:
   - type: TacticalMapIcon

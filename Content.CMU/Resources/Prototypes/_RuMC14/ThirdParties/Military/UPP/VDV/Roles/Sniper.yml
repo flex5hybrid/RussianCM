@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPVDVSniper
   roundSide: ThirdParty
-  roundForce: UPP
+  roundForce: VDV
   roundRole: RuMCUPPVDVSniper
   roundComponents:
   - type: TacticalMapIcon

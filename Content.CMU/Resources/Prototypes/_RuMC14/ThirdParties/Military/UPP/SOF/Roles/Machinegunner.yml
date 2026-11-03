@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPSOFMachinegunner
   roundSide: ThirdParty
-  roundForce: UPP
+  roundForce: SOF
   roundRole: RuMCUPPSOFMachinegunner
   roundComponents:
   - type: TacticalMapIcon
