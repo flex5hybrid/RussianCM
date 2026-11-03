@@ -231,17 +231,8 @@ public static class ServerPackaging
         const string rulesOverview = "ServerInfo/Guidebook/_RMC14/Rules/RMCOverview.xml";
         inputPassResources.InjectFileFromDisk(rulesOverview, Path.Combine(contentDir, "Resources", rulesOverview));
 
-        await RobustSharedPackaging.DoResourceCopy(
-            Path.Combine(contentDir, "Content.CMU", "Resources"),
-            inputPassResources,
-            new HashSet<string>(),
-            cancel: cancel);
-
-        await RobustSharedPackaging.DoResourceCopy(
-            Path.Combine(contentDir, "Content.RUMC", "Resources"),
-            inputPassResources,
-            new HashSet<string>(),
-            cancel: cancel);
+        // CMU14: copy only unique fork assets into the server package.
+        await SharedPackaging.CopyAdditionalResources(contentDir, inputPassResources, cancel);
 
         if (hybridAcz)
         {
