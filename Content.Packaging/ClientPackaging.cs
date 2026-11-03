@@ -99,17 +99,8 @@ public static class ClientPackaging
             SharedPackaging.AdditionalIgnoredResources,
             cancel);
 
-        await RobustSharedPackaging.DoResourceCopy(
-            Path.Combine(contentDir, "Content.CMU", "Resources"),
-            inputPass,
-            new HashSet<string>(),
-            cancel: cancel);
-
-        await RobustSharedPackaging.DoResourceCopy(
-            Path.Combine(contentDir, "Content.RUMC", "Resources"),
-            inputPass,
-            new HashSet<string>(),
-            cancel: cancel);
+        // CMU14: copy only unique fork assets into the client package.
+        await SharedPackaging.CopyAdditionalResources(contentDir, inputPass, cancel);
 
         inputPass.InjectFinished();
     }
