@@ -175,7 +175,8 @@ jobs:
       needs.publish_start.outputs.already-published != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    needs: [changelog, publish_start, package]
+    # CMU14: an early finish aborts the CDN transaction before its files arrive.
+    needs: [changelog, publish_start, package, publish_upload]
     steps:
       - uses: actions/checkout@v7
         with:
