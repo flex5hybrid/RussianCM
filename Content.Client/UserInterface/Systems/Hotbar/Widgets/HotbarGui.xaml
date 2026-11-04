@@ -1,14 +1,17 @@
-﻿<widgets:HotbarGui
+<!-- CMU14: adaptive CRT HUD layout using native controls and input routing. -->
+<widgets:HotbarGui
     xmlns="https://spacestation14.io"
     xmlns:inventory="clr-namespace:Content.Client.UserInterface.Systems.Inventory.Controls"
     xmlns:hands="clr-namespace:Content.Client.UserInterface.Systems.Hands.Controls"
     xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Hotbar.Widgets"
+    xmlns:hud="clr-namespace:Content.Client.CMU14.Interface.Hud"
     Name="HotbarInterface"
     VerticalExpand="True"
     VerticalAlignment="Bottom"
     Orientation="Vertical"
-    HorizontalAlignment="Center">
-    <BoxContainer Orientation="Vertical">
+    HorizontalAlignment="Stretch"
+    HorizontalExpand="True">
+    <BoxContainer Orientation="Vertical" HorizontalExpand="True">
         <BoxContainer Name="SingleStorageContainer"
                       Access="Public"
                       HorizontalAlignment="Center"
@@ -35,7 +38,8 @@
                           Margin="10">
             </BoxContainer>
         </BoxContainer>
-        <BoxContainer Orientation="Horizontal" Name="Hotbar" HorizontalAlignment="Center">
+        <hud:CmuHudDock Name="Hotbar" HorizontalExpand="True">
+          <hud:CmuHudPanel StyleClasses="CmuHudSurface" Margin="0 0 0 0">
             <inventory:ItemSlotButtonContainer
                 Name="SecondHotbar"
                 SlotGroup="SecondHotbar"
@@ -45,9 +49,12 @@
                 ExpandBackwards="True"
                 Columns="6"
                 HorizontalExpand="False"/>
+          </hud:CmuHudPanel>
+          <hud:CmuHudPanel StyleClasses="CmuHudSurface">
+           <BoxContainer Orientation="Horizontal" SeparationOverride="3">
             <inventory:ItemStatusPanel
                 Name="StatusPanelRight"
-                HorizontalAlignment="Center" Margin="0 0 -2 2"
+                HorizontalAlignment="Center"
                 SetWidth="125"
                 SetHeight="60"/>
             <hands:HandsContainer
@@ -58,9 +65,12 @@
                 ColumnLimit="6"/>
             <inventory:ItemStatusPanel
                 Name="StatusPanelLeft"
-                HorizontalAlignment="Center" Margin="-2 0 0 2"
+                HorizontalAlignment="Center"
                 SetWidth="125"
                 SetHeight="60"/>
+           </BoxContainer>
+          </hud:CmuHudPanel>
+          <hud:CmuHudPanel StyleClasses="CmuHudSurface">
             <inventory:ItemSlotButtonContainer
                 Name="MainHotbar"
                 SlotGroup="MainHotbar"
@@ -71,6 +81,7 @@
                 ExpandBackwards="True"
                 Columns="6"
                 />
-        </BoxContainer>
+          </hud:CmuHudPanel>
+        </hud:CmuHudDock>
     </BoxContainer>
 </widgets:HotbarGui>

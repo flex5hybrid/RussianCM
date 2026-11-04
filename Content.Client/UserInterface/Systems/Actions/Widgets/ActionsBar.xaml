@@ -1,4 +1,5 @@
-﻿<widgets:ActionsBar
+<!-- CMU14: adaptive CRT HUD layout using native controls and input routing. -->
+<widgets:ActionsBar
     xmlns="https://spacestation14.io"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Actions.Widgets"
@@ -9,9 +10,8 @@
 >
     <BoxContainer Orientation="Vertical">
         <controls:ActionButtonContainer
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            MaxSize="64 9999"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
             Name="ActionsContainer"
             Access="Public"
             Rows="1"/>

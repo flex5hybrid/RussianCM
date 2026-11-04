@@ -1,9 +1,9 @@
-﻿<ui:ChangelogWindow xmlns="https://spacestation14.io"
+<ui:ChangelogWindow xmlns="https://spacestation14.io"
                     xmlns:ui="clr-namespace:Content.Client.Changelog"
                     Title="{Loc 'changelog-window-title'}"
                     MinSize="500 400"
-                    SetSize="500 400"
-                    Stylesheet="Interface">
+                    SetSize="500 400">
+    <!-- CMU14: inherit the live UI setup stylesheet instead of Stylesheet="Interface". -->
     <PanelContainer StyleClasses="BackgroundPanel" />
     <BoxContainer Orientation="Vertical">
         <TabContainer Name="Tabs" Access="Public" HorizontalExpand="True" VerticalExpand="True" />

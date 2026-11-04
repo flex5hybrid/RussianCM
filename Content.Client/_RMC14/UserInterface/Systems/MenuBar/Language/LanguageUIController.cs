@@ -91,8 +91,8 @@ public sealed partial class LanguageUIController : UIController, IOnStateEntered
         if (button.ButtonRoot.Children.FirstOrDefault() is TextureRect icon)
             icon.TextureScale = new Vector2(1.2f, 1.2f);
 
-        topBar.AddChild(button);
-        button.SetPositionInParent(topBar.EmotesButton.GetPositionInParent());
+        // CMU14: keep the language button inside the adaptive menu grid.
+        topBar.AddMenuButton(button, topBar.EmotesButton);
         _languageButton = button;
         UpdateLanguageButtonIcon();
     }

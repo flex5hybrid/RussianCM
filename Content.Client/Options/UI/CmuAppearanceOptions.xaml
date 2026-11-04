@@ -9,6 +9,9 @@
                        ToolTip="{Loc 'cmu-ui-options-font-tooltip'}" />
     <CheckBox Name="CrtMenuEffectCheckBox" Text="{Loc 'cmu-ui-options-menu-crt-effect'}" />
     <ui:OptionSlider Name="CrtIntensitySlider" Title="{Loc 'cmu-ui-options-crt-intensity'}" />
+    <!-- CMU14: expose the existing glass curvature and vignette preferences. -->
+    <ui:OptionSlider Name="CrtCurvatureSlider" Title="{Loc 'cmu-hud-crt-curvature'}" ToolTip="{Loc 'cmu-hud-crt-curvature-tooltip'}" />
+    <ui:OptionSlider Name="CrtVignetteSlider" Title="{Loc 'cmu-hud-crt-vignette'}" />
     <CheckBox Name="ChatCrtHazeCheckBox"
               Text="{Loc 'cmu-ui-options-chat-crt-haze'}"
               ToolTip="{Loc 'cmu-ui-options-chat-crt-haze-tooltip'}" />
