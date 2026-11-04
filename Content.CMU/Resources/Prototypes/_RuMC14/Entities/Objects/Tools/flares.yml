@@ -18,6 +18,7 @@
   - type: Tag
     tags:
     - RuMCFlare
+    - RMCFlare
     - RuMCFlareWhite
   - type: ExpendableLight
     spentName: spent RSP-1 flare
@@ -83,6 +84,7 @@
   - type: Tag
     tags:
     - RuMCFlare
+    - RMCFlare
     - RuMCFlareRedCAS
   - type: Sprite
     sprite: _RuMC14/Objects/Misc/flares.rsi
@@ -168,6 +170,7 @@
   - type: Tag
     tags:
     - RuMCFlare
+    - RMCFlare
     - RuMCFlareGreen
   - type: ExpendableLight
     spentName: spent RSP-3 flare

@@ -15,14 +15,17 @@
       - RuMCSquadNorcommLiu
   - type: Skills
     skills:
-      RMCSkillEngineer: 3
-      RMCSkillConstruction: 3
+      RMCSkillCqc: 1
+      RMCSkillEngineer: 2
+      RMCSkillConstruction: 2
       RMCSkillFirearms: 1
+      RMCSkillMedical: 4
+      RMCSkillSurgery: 4
       RMCSkillMeleeWeapons: 1
       RMCSkillPolice: 1
-      RMCSkillFireman: 4
+      RMCSkillFireman: 2
       RMCSkillVehicles: 2
-      RMCSkillJtac: 1
+      RMCSkillEndurance: 2
   - type: JobPrefix
     prefix: rumc-job-prefix-rifleman
   - type: MarineOrders
@@ -115,8 +118,9 @@
     outerClothing: RuMCUPPArmorNoLu_Heavy
     jumpsuit: RuMCFatiguesNoLu
     shoes: RMCBootsSPPFilled
-    head: RuMCHeadCapNoLu
-    belt: AU14BeltUtilityFilled
+    head: RuMCHeadCapNoLuFill
+    belt: RuMCUPPNavalInfantryBeltMedicFill
+    eyes: RMCGlassesMedicalHUDGlasses
     pocket1: AU14PouchIFAKFill
     pocket2: RuMCUPPPouchConstructionFill
     back: RuMCUPPNavalInfantrySatchel
@@ -125,13 +129,11 @@
   storage:
     back:
     - RuMCirpUPP
-    - CMSheetMetal
-    - CMSheetPlasteel50
-    - AU14GrenadeHighExplosiveUPP
-    - AU14GrenadeHighExplosiveUPP
-    - RMCWeldingGogglesSuperior
-  inhand:
-    - AU14GlovesCBRNUPP
+    - AU14GrenadeSmokeUPP
+    - AU14CMDefibrillator
+    - CMSurgicalCaseFilled
+    - CMPortableSurgicalBedSpawnFolded
+    - ClothingHandsGlovesNitrile
 
 - type: jobIcon
   parent: CMJobIconBase

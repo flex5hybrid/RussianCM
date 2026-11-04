@@ -49,6 +49,7 @@
       - RMCFlare
       - RMCFlareCAS
       - RMCFlareL96
+      - RuMCFlareRedCAS
     capacity: 1
     proto: CMFlare
     soundInsert:

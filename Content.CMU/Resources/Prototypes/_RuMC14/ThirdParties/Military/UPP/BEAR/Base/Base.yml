@@ -481,10 +481,10 @@
     -
       - [ RMCGlassesMedicalHUDGlasses]
     randomWeapon:
-    #- [ RuMCWeaponSMGsPP13MTactical, RuMCUniformBlackBEARFull, AU14BeltMedicBagProdigyFilled, RuMCPouchMagazinePP13BEARFull ]
-    #- [ RuMCWeaponSMGsPP13MTactical, RuMCUniformBlackBEARFull, AU14BeltMedicBagProdigyFilled, RuMCPouchMagazinePP13BEARFull ]
-    #- [ RuMCWeaponSMGsPP13MTactical, RuMCUniformGrayBEARFull, AU14BeltMedicBagProdigyFilled,  RuMCPouchMagazinePP13BEARFull ]
-    #- [ RuMCWeaponRifleAK13Tactical, RuMCUniformBEARFull, AU14BeltMedicBagProdigyFilled, RuMCPouchMagazineBEARFull ]
-    #- [ RuMCWeaponRifleAK13Tactical_alt1, RuMCUniformGrayBEARFull, AU14BeltMedicBagProdigyFilled, RuMCPouchMagazineBEARFull ]
-    - [ RuMCUniformBlackBEARFull, AU14BeltMedicBagProdigyFilled, RuMCPouchMagazineBEARFull ]
+    #- [ RuMCWeaponSMGsPP13MTactical, RuMCUniformBlackBEARFull, RuMCUPPNavalInfantryBeltMedicFill, RuMCPouchMagazinePP13BEARFull ]
+    #- [ RuMCWeaponSMGsPP13MTactical, RuMCUniformBlackBEARFull, RuMCUPPNavalInfantryBeltMedicFill, RuMCPouchMagazinePP13BEARFull ]
+    #- [ RuMCWeaponSMGsPP13MTactical, RuMCUniformGrayBEARFull, RuMCUPPNavalInfantryBeltMedicFill,  RuMCPouchMagazinePP13BEARFull ]
+    #- [ RuMCWeaponRifleAK13Tactical, RuMCUniformBEARFull, RuMCUPPNavalInfantryBeltMedicFill, RuMCPouchMagazineBEARFull ]
+    #- [ RuMCWeaponRifleAK13Tactical_alt1, RuMCUniformGrayBEARFull, RuMCUPPNavalInfantryBeltMedicFill, RuMCPouchMagazineBEARFull ]
+    - [ RuMCUniformBlackBEARFull, RuMCUPPNavalInfantryBeltMedicFill, RuMCPouchMagazineBEARFull ]
     tryEquipRandomWeapon: true

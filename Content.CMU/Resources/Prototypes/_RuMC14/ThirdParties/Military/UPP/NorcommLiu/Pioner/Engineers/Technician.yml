@@ -103,11 +103,12 @@
     outerClothing: RMCOuterClothingExternalWebbingBrownFull
     jumpsuit: RuMCFatiguesNoLu
     shoes: RMCBootsSPPFilled
-    head: RuMCHeadCapNoLu
+    head: RuMCHeadCapNoLuFill
     belt: AU14BeltUtilityFilled
+    eyes: RMCWeldingGogglesSuperior
     pocket1: AU14PouchIFAKFill
     pocket2: RuMCUPPPouchConstructionFill
-    back: RuMCUPPNavalInfantrySatchel
+    back: RuMCUPPNavalInfantryBackpack
     ears: RuMCHeadsetNorcommLiu
     suitstorage: AU14BeltHolsterPistolUPPFull
   storage:
@@ -116,7 +117,6 @@
     - CMSheetMetal
     - CMSheetMetal
     - CMSheetPlasteel50
-    - RMCWeldingGogglesSuperior
   inhand:
     - AU14GlovesCBRNUPP
 

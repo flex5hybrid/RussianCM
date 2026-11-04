@@ -103,11 +103,12 @@
     outerClothing: RuMCUPPArmorNoLu_Standard
     jumpsuit: RuMCFatiguesNoLu
     shoes: RMCBootsSPPFilled
-    head: RuMCHeadCapNoLu
+    head: RuMCHeadCapNoLuFill
     belt: AU14BeltUtilityFilled
+    eyes: RMCWeldingGogglesSuperior
     pocket1: AU14PouchIFAKFill
     pocket2: RuMCUPPPouchConstructionFill
-    back: RuMCUPPNavalInfantrySatchel
+    back: RuMCUPPNavalInfantryBackpackBig
     ears: RuMCHeadsetNorcommLiu
     suitstorage: AU14BeltHolsterPistolUPPFull
   storage:
@@ -116,7 +117,8 @@
     - CMSheetMetal
     - AU14GrenadeHighExplosiveUPP
     - AU14GrenadeHighExplosiveUPP
-    - RMCWeldingGogglesSuperior
+    - RMCSentryMini
+    - RMCSentryMini
   inhand:
     - AU14GlovesCBRNUPP
 
