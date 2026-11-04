@@ -15,7 +15,7 @@ public sealed partial class YautjaPredatorRoundCVars : CVars
     // per-round dice, only Insurgency, Distress Signal and Force on Force ever roll. FOF uses the DS chance,
     // Insurgency is meant to be twice as rare
     public static readonly CVarDef<float> InsurgencyChance =
-        CVarDef.Create("cmu.yautja.insurgency_chance", 1f / 6f, CVar.SERVERONLY | CVar.ARCHIVE);
+        CVarDef.Create("cmu.yautja.insurgency_chance", 1f / 3f, CVar.SERVERONLY | CVar.ARCHIVE); // RuMC edit
 
     public static readonly CVarDef<float> DistressSignalChance =
         CVarDef.Create("cmu.yautja.distress_signal_chance", 1f / 3f, CVar.SERVERONLY | CVar.ARCHIVE);
