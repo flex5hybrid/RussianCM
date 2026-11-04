@@ -316,15 +316,6 @@ public sealed partial class ChatUIController : UIController
 
     internal static void SetChatWindowOpacity(PanelContainer panel, float opacity)
     {
-        // CMU14: preserve opacity on live HUD surfaces.
-        if (panel.StyleClasses.Contains(Content.Client.CMU14.Interface.Hud.CmuHudStyle.Surface))
-        {
-            var hudBox = Content.Client.CMU14.Interface.Hud.CmuHudStyle.Box(
-                Content.Client.CMU14.Interface.Hud.CmuHudTone.Inset);
-            hudBox.Opacity = opacity;
-            panel.PanelOverride = hudBox;
-            return;
-        }
         // Read the base colour from the stylesheet, never from the panel's own current override.
         // This used to check PanelOverride first, which meant each call re-read the result of the
         // last one and multiplied alpha into it again - the log got darker every time the opacity

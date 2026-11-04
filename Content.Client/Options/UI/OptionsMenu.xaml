@@ -4,10 +4,14 @@
             xmlns:cmu="clr-namespace:Content.Client.CMU14.Interface"
             Title="{Loc 'ui-options-title'}"
             MinSize="800 450">
-    <!-- CMU14: settings keep live, undistorted controls under a stationary CRT raster. -->
-    <Control>
+    <!-- CMU14: capture the live content once through its CRT sibling. -->
+    <cmu:CrtScreenContainer>
         <Control Name="CrtContent" HorizontalExpand="True" VerticalExpand="True">
-            <!-- CMU14: one continuous background beneath the tabs and their content. -->
+            <!-- CrtPanelFill, not CrtPanel: a plain ground with no border and no inset, so this is
+                 still not a third concentric rectangle. It exists because TabContainer paints its
+                 panel only *below* the tab strip - the strip itself is left transparent, and inside
+                 the CRT render target transparent came out white past the last tab. Same rule as the
+                 chat: give it a ground rather than leaving a hole. -->
             <PanelContainer StyleClasses="CrtPanelFill" HorizontalExpand="True" VerticalExpand="True">
             <TabContainer Name="Tabs" Access="Public" StyleClasses="CrtTabContainer" VerticalExpand="True" HorizontalExpand="True">
                 <tabs:MiscTab Name="MiscTab" />
@@ -21,6 +25,6 @@
             </TabContainer>
             </PanelContainer>
         </Control>
-        <cmu:CrtScanlineOverlay Name="CrtOverlay" MenuSurface="True" HorizontalExpand="True" VerticalExpand="True" />
-    </Control>
+        <cmu:CrtScreenControl Name="CrtOverlay" HorizontalExpand="True" VerticalExpand="True" />
+    </cmu:CrtScreenContainer>
 </DefaultWindow>

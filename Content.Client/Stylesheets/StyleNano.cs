@@ -1,7 +1,5 @@
 using System.Linq;
 using System.Numerics;
-// CMU14: shared HUD palette and surfaces.
-using Content.Client.CMU14.Interface.Hud;
 using Content.Client.CMU14.UserInterface.ColorPicker;
 using Content.Client._RMC14;
 using Content.Client.ContextMenu.UI;
@@ -972,13 +970,9 @@ namespace Content.Client.Stylesheets
                 new StyleRule(new SelectorElement(typeof(TabContainer), null, null, null),
                     new[]
                     {
-                        // CMU14: native tabs follow CRT preview and retain their legacy fallback.
-                        new StyleProperty(TabContainer.StylePropertyPanelStyleBox,
-                            CrtUiEnabled ? (StyleBox) CmuHudStyle.Box(CmuHudTone.Inset, padding: 4) : tabContainerPanel),
-                        new StyleProperty(TabContainer.StylePropertyTabStyleBox,
-                            CrtUiEnabled ? (StyleBox) CmuHudStyle.Box(CmuHudTone.Selected, selected: true, padding: 5) : tabContainerBoxActive),
-                        new StyleProperty(TabContainer.StylePropertyTabStyleBoxInactive,
-                            CrtUiEnabled ? (StyleBox) CmuHudStyle.Box(CmuHudTone.Surface, padding: 5) : tabContainerBoxInactive),
+                        new StyleProperty(TabContainer.StylePropertyPanelStyleBox, tabContainerPanel),
+                        new StyleProperty(TabContainer.StylePropertyTabStyleBox, tabContainerBoxActive),
+                        new StyleProperty(TabContainer.StylePropertyTabStyleBoxInactive, tabContainerBoxInactive),
                     }),
 
                 // ProgressBar
@@ -1474,9 +1468,7 @@ namespace Content.Client.Stylesheets
 
                 new StyleRule(new SelectorElement(typeof(PanelContainer), new []{ ClassHighDivider}, null, null), new []
                 {
-                    // CMU14: palette-aware divider.
-                    // CMU14: palette-aware divider.
-                    new StyleProperty(PanelContainer.StylePropertyPanel, new StyleBoxFlat { BackgroundColor = CrtUiEnabled ? CmuHudStyle.EdgeColor : NanoGold, ContentMarginBottomOverride = 2, ContentMarginLeftOverride = 2}),
+                    new StyleProperty(PanelContainer.StylePropertyPanel, new StyleBoxFlat { BackgroundColor = NanoGold, ContentMarginBottomOverride = 2, ContentMarginLeftOverride = 2}),
                 }),
 
                 // Labels ---
@@ -1504,7 +1496,7 @@ namespace Content.Client.Stylesheets
                 Element<PanelContainer>().Class(ClassLowDivider)
                     .Prop(PanelContainer.StylePropertyPanel, new StyleBoxFlat
                     {
-                        BackgroundColor = CrtUiEnabled ? CmuHudStyle.EdgeColor : Color.FromHex("#444"),
+                        BackgroundColor = Color.FromHex("#444"),
                         ContentMarginLeftOverride = 2,
                         ContentMarginBottomOverride = 2
                     }),
@@ -1801,8 +1793,7 @@ namespace Content.Client.Stylesheets
                 {
                     new StyleProperty(Label.StylePropertyAlignMode, Label.AlignMode.Left),
                 }),
-            // CMU14: append HUD and native-menu integration rules.
-            }).Concat(CmuHudStyle.BuildRules(resCache)).ToList());
+            }).ToList());
         }
     }
 }

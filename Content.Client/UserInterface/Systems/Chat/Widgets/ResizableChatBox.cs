@@ -203,7 +203,7 @@ public sealed partial class ResizableChatBox : ChatBox
             var bottom = desiredBottom ?? Rect.Bottom;
 
             // clamp so it doesn't go too high or low (leave space for alerts UI)
-            var maxBottom = Parent.Size.Y - (HudWorkspaceEnabled ? 12 : MinDistanceFromBottom);
+            var maxBottom = Parent.Size.Y - MinDistanceFromBottom;
             if (maxBottom <= MinHeight)
             {
                 // we can't fit in our given space (window made awkwardly small), so give up
@@ -212,20 +212,18 @@ public sealed partial class ResizableChatBox : ChatBox
             }
             else
             {
-                var minBottom = HudWorkspaceEnabled ? MathF.Min(maxBottom, Rect.Top + MinHeight) : MinHeight;
-                bottom = Math.Clamp(bottom, minBottom, maxBottom);
+                bottom = Math.Clamp(bottom, MinHeight, maxBottom);
             }
 
             var maxLeft = Parent.Size.X - MinWidth;
-            var minimumLeft = HudWorkspaceEnabled ? MathF.Min(MinLeft, Parent.Size.X * 0.45f) : MinLeft;
-            if (maxLeft <= minimumLeft)
+            if (maxLeft <= MinLeft)
             {
                 // window too narrow, give up and overlap at our max left
                 left = maxLeft;
             }
             else
             {
-                left = Math.Clamp(left, minimumLeft, maxLeft);
+                left = Math.Clamp(left, MinLeft, maxLeft);
             }
 
             LayoutContainer.SetMarginLeft(this, -((right + 10) - left));

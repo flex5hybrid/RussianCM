@@ -1,13 +1,8 @@
 using System.Numerics;
 using Content.Client.Actions.UI;
 using Content.Client.Cooldown;
-// CMU14: shared HUD label styles.
-using Content.Client.CMU14.Interface.Hud;
-using Content.Client.Stylesheets;
-using Robust.Client.ResourceManagement;
 using Content.Shared.Alert;
 using Robust.Client.GameObjects;
-using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Timing;
@@ -59,10 +54,6 @@ namespace Content.Client.UserInterface.Systems.Alerts.Controls
 
         private readonly SpriteView _icon;
         private readonly CooldownGraphic _cooldownGraphic;
-        // CMU14: optional labels for compact status presentation.
-        private readonly Label _hudTitle;
-        // CMU14: side indicators have no panel fill or frame.
-        // private static readonly CmuHudStyleBox HudSurface = CmuHudStyle.Box(CmuHudTone.Inset);
 
         private EntityUid _spriteViewEntity;
 
@@ -100,37 +91,6 @@ namespace Content.Client.UserInterface.Systems.Alerts.Controls
                 MaxSize = new Vector2(64, 64)
             };
             Children.Add(_cooldownGraphic);
-            // CMU14: native icons stay compact and transparent in the side rail.
-            _hudTitle = new Label
-            {
-                Text = FormattedMessage.RemoveMarkupPermissive(Loc.GetString(alert.Name)),
-                ClipText = true,
-                Margin = new Thickness(53, 0, 6, 0),
-                VerticalAlignment = VAlignment.Center,
-                StyleClasses = { CmuHudStyle.Body },
-
-                MouseFilter = MouseFilterMode.Ignore,
-            };
-            AddChild(_hudTitle);
-            SetHudCompact(false);
-        }
-
-        // CMU14: resize the native sprite and cooldown together.
-        public void SetHudCompact(bool compact)
-        {
-            MinSize = new Vector2(compact ? 48 : 176, 48);
-            _icon.Scale = new Vector2(1.5f);
-            _icon.MaxSize = new Vector2(48);
-            _icon.SetSize = new Vector2(48);
-            _cooldownGraphic.MaxSize = new Vector2(48);
-            _hudTitle.Visible = !compact;
-        }
-
-        protected override void Draw(DrawingHandleScreen handle)
-        {
-            // CMU14: leave the world visible behind alert icons and cooldowns.
-            // HudSurface.Draw(handle, UIBox2.FromDimensions(Vector2.Zero, PixelSize), UIScale);
-            base.Draw(handle);
         }
 
         private Control SupplyTooltip(Control? sender)

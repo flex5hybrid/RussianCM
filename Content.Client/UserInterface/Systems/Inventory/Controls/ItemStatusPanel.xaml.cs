@@ -1,6 +1,4 @@
 using Content.Client.Items;
-// CMU14: HUD hand-status chrome.
-using Content.Client.CMU14.Interface.Hud;
 using Content.Shared.Hands.Components;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Inventory;
@@ -28,9 +26,6 @@ public sealed partial class ItemStatusPanel : Control
 
     // Tracked so we can re-run SetSide() if the theme changes.
     private HandLocation _side;
-    // CMU14: retain authored panel textures for other HUD themes.
-    private StyleBoxTexture? _legacyPanel;
-    private StyleBoxTexture? _legacyHighlight;
 
     public ItemStatusPanel()
     {
@@ -41,19 +36,6 @@ public sealed partial class ItemStatusPanel : Control
 
     public void SetSide(HandLocation location)
     {
-        // CMU14: use live HUD surfaces for the default theme, retaining legacy side textures.
-        _legacyPanel ??= (StyleBoxTexture) Panel.PanelOverride!;
-        _legacyHighlight ??= (StyleBoxTexture) HighlightPanel.PanelOverride!;
-        if (Theme.ID == "SS14DefaultTheme")
-        {
-            Panel.PanelOverride = CmuHudStyle.Box(CmuHudTone.Inset);
-            HighlightPanel.PanelOverride = new CmuHudStyleBox { Selected = true, OutlineOnly = true };
-            Contents.Margin = new Thickness(6, 5, 6, 4);
-            _side = location;
-            return;
-        }
-        Panel.PanelOverride = _legacyPanel;
-        HighlightPanel.PanelOverride = _legacyHighlight;
         // AN IMPORTANT REMINDER ABOUT THIS CODE:
         // In the UI, the RIGHT hand is on the LEFT on the screen.
         // So that a character facing DOWN matches the hand positions.

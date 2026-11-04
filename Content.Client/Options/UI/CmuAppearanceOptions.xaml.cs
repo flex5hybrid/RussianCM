@@ -32,9 +32,6 @@ public sealed partial class CmuAppearanceOptions : BoxContainer
         ]);
         controller.AddOptionCheckBox(CCVars.CMUCrtMenuEffect, CrtMenuEffectCheckBox);
         controller.AddOptionPercentSlider(CCVars.CMUCrtEffectIntensity, CrtIntensitySlider);
-        // CMU14: expose existing glass curvature and edge-shading preferences.
-        controller.AddOptionPercentSlider(CCVars.CMUCrtEffectCurvature, CrtCurvatureSlider, scale: 0.15f);
-        controller.AddOptionPercentSlider(CCVars.CMUCrtEffectVignette, CrtVignetteSlider);
         var crtUiEnabled = controller.AddOption(new OptionCrtUiEnabled(controller, _cfg, CrtUiEnabledCheckBox));
         crtUiEnabled.PreviewValueChanged += UpdateCrtUiOptionsPreview;
 

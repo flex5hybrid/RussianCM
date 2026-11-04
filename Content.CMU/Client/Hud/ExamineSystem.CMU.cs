@@ -1,6 +1,4 @@
 using System.Numerics;
-using Content.Client.CMU14.Interface;
-using Content.Client.CMU14.Interface.Hud;
 using Content.Shared.CCVar;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
@@ -69,29 +67,19 @@ public sealed partial class ExamineSystem
         {
             _examineTooltipOpen = new Popup { MaxWidth = 400 };
             _userInterfaceManager.ModalRoot.AddChild(_examineTooltipOpen);
-            var panel = new PanelContainer { Name = "ExaminePopupPanel" };
+            var panel = new PanelContainer { Name = "ExaminePopupPanel", ModulateSelfOverride = Color.LightGray.WithAlpha(0.90f) };
             panel.AddStyleClass(StyleClassEntityTooltip);
             _examineTooltipOpen.AddChild(panel);
             var body = new BoxContainer
             {
                 Name = "ExaminePopupVbox", Orientation = BoxContainer.LayoutOrientation.Vertical, MaxWidth = 400,
-                SeparationOverride = 8,
             };
             panel.AddChild(body);
-            _cmuHeader = new BoxContainer { SeparationOverride = 10 };
+            _cmuHeader = new BoxContainer { SeparationOverride = 5, Margin = new Thickness(6, 0, 6, 0) };
             body.AddChild(_cmuHeader);
-            _cmuNameLabel = new RichTextLabel
-            {
-                StyleClasses = { CmuHudStyle.ExamineHeading },
-                HorizontalExpand = true,
-            };
+            _cmuNameLabel = new RichTextLabel();
             _cmuHeader.AddChild(_cmuNameLabel);
-            _cmuBodyLabel = new RichTextLabel
-            {
-                Margin = new Thickness(0, 0, 0, 2),
-                Visible = false,
-                StyleClasses = { CmuHudStyle.ExamineBody },
-            };
+            _cmuBodyLabel = new RichTextLabel { Margin = new Thickness(4, 4, 0, 4), Visible = false };
             body.AddChild(_cmuBodyLabel);
             var buttons = new BoxContainer { Name = "ExamineButtonsHBox", VerticalAlignment = Control.VAlignment.Bottom };
             _cmuHoverButtons = new BoxContainer { Name = "HoverExamineHBox", HorizontalExpand = true,
@@ -101,8 +89,6 @@ public sealed partial class ExamineSystem
             buttons.AddChild(_cmuHoverButtons);
             buttons.AddChild(_cmuClickButtons);
             body.AddChild(buttons);
-            // Keep the body as the first child: UpdateTooltipInfo uses that native hierarchy.
-            panel.AddChild(new CrtScanlineOverlay { MenuSurface = true, IntensityScale = 0.45f });
         }
 
         if (HasComp<SpriteComponent>(target))
@@ -124,8 +110,7 @@ public sealed partial class ExamineSystem
         {
             _cmuName = name;
             _cmuKnownTarget = knowTarget;
-            // The heading font owns its weight and metrics; inline bold tags select another font.
-            _cmuNameLabel!.SetMessage(name);
+            _cmuNameLabel!.SetMessage(FormattedMessage.FromMarkupPermissive($"[bold]{FormattedMessage.EscapeText(name)}[/bold]"));
         }
 
         _cmuBodyLabel!.Visible = false;

@@ -1,6 +1,4 @@
 using System.Numerics;
-// CMU14: native slot chrome.
-using Content.Client.CMU14.Interface.Hud;
 using Content.Client.Cooldown;
 using Content.Client.UserInterface.Systems.Inventory.Controls;
 using Content.Shared._RMC14.IconLabel;
@@ -134,14 +132,12 @@ namespace Content.Client.UserInterface.Controls
             Name = "SlotButton_null";
             MinSize = new Vector2(DefaultButtonSize, DefaultButtonSize);
 
-            // CMU14: retain native input and measurement while replacing slot chrome.
-            AddChild(ButtonRect = new CmuHudSlotTexture(this)
+            AddChild(ButtonRect = new TextureRect
             {
                 TextureScale = new Vector2(2, 2),
                 MouseFilter = MouseFilterMode.Stop,
             });
-            // CMU14: share selected-slot framing.
-            AddChild(HighlightRect = new CmuHudSlotTexture(this, highlight: true)
+            AddChild(HighlightRect = new TextureRect
             {
                 Visible = false,
                 TextureScale = new Vector2(2, 2),
@@ -282,8 +278,6 @@ namespace Content.Client.UserInterface.Controls
                 ? fullTexture.Texture
                 : Theme.ResolveTextureOrNull(_buttonTexturePath)?.Texture;
             ButtonRect.Texture = texture;
-            // CMU14: resolve the frameless native slot glyph.
-            ((CmuHudSlotTexture) ButtonRect).SetGlyph(_buttonTexturePath);
             // CMU14: share the control-owned localization cache and preserve unchanged label layout.
             CMUUpdateIconLabel();
         }

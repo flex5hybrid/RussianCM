@@ -258,7 +258,7 @@ public abstract class RadialMenuButtonBase : BaseButton
 /// works only if control have parent, and ActiveContainer property is set.
 /// Also considers all space outside of radial menu buttons as itself for clicking.
 /// </summary>
-public sealed partial class RadialMenuContextualCentralTextureButton : TextureButton // CMU14: CRT centre.
+public sealed class RadialMenuContextualCentralTextureButton : TextureButton
 {
     /// <inheritdoc />
     public RadialMenuContextualCentralTextureButton()
@@ -415,8 +415,7 @@ public interface IRadialMenuItemWithSector
 }
 
 [Virtual]
-// CMU14: allow palette extension without replacing sector geometry.
-public partial class RadialMenuButtonWithSector : RadialMenuButton, IRadialMenuItemWithSector
+public class RadialMenuButtonWithSector : RadialMenuButton, IRadialMenuItemWithSector
 {
     private Vector2[]? _sectorPointsForDrawing;
 
@@ -550,8 +549,6 @@ public partial class RadialMenuButtonWithSector : RadialMenuButton, IRadialMenuI
                 ? _hoverBackgroundColorSrgb
                 : _backgroundColorSrgb;
 
-            // CMU14: retain sector geometry and hit tests; resolve live UI setup colours.
-            segmentColor = CMUSectorFill(segmentColor);
             DrawAnnulusSector(handle, containerCenter, _innerRadius * UIScale, _outerRadius * UIScale, angleFrom, angleTo, segmentColor);
         }
 
@@ -560,16 +557,12 @@ public partial class RadialMenuButtonWithSector : RadialMenuButton, IRadialMenuI
             var borderColor = DrawMode == DrawModeEnum.Hover
                 ? _hoverBorderColorSrgb
                 : _borderColorSrgb;
-            // CMU14: phosphor edge replaces the fixed slate border in CRT mode.
-            borderColor = CMUSectorEdge(borderColor);
             DrawAnnulusSector(handle, containerCenter, _innerRadius * UIScale, _outerRadius * UIScale, angleFrom, angleTo, borderColor, false);
         }
 
         if (!_isWholeCircle && DrawBorder)
         {
-            // CMU14: keep authored separator colours outside CRT mode.
-            DrawSeparatorLines(handle, containerCenter, _innerRadius * UIScale, _outerRadius * UIScale,
-                angleFrom, angleTo, CMUSectorSeparator(SeparatorColor));
+            DrawSeparatorLines(handle, containerCenter, _innerRadius * UIScale, _outerRadius * UIScale, angleFrom, angleTo, SeparatorColor);
         }
     }
 

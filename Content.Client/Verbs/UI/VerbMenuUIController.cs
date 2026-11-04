@@ -36,8 +36,6 @@ namespace Content.Client.Verbs.UI
         public NetEntity CurrentTarget;
         public SortedSet<Verb> CurrentVerbs = new();
         public List<VerbCategory> ExtraCategories = new();
-        // CMU14: publish ordinary context-menu targets to the HUD workspace.
-        public event Action<NetEntity, SortedSet<Verb>>? WorldTargetSelected;
 
         /// <summary>
         ///     Separate from <see cref="ContextMenuUIController.RootMenu"/>, since we can open a verb menu as a submenu
@@ -115,9 +113,6 @@ namespace Content.Client.Verbs.UI
 
             CurrentTarget = target;
             CurrentVerbs = _verbSystem.GetVerbs(target, user, Verb.VerbTypes, out ExtraCategories, force);
-            // CMU14: do not expose forced administrative targets as normal interactions.
-            if (!force)
-                WorldTargetSelected?.Invoke(target, CurrentVerbs);
             OpenMenu = menu;
 
             // Fill in client-side verbs.

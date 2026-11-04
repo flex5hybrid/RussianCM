@@ -221,8 +221,6 @@ public partial class ChatBox : UIWidget
     protected override void Resized()
     {
         base.Resized();
-        // CMU14: responsive world-action and emote columns.
-        UpdateHudCommandWidth();
         UpdateTabOverflowControls();
         RefreshVisibleChatLayout();
     }
@@ -235,8 +233,6 @@ public partial class ChatBox : UIWidget
         // cmu edit end
 
         _controller.SendMessage(this, SelectedChannel);
-        // CMU14: discard the submitted channel draft.
-        _hudChannelDrafts.Remove(sentOn);
 
         // cmu edit start
         // Snap back to Local after talking on another channel, or to Dead chat as a ghost. In the lobby, OOC.
@@ -387,8 +383,6 @@ public partial class ChatBox : UIWidget
 
     private void OnChannelSelect(ChatSelectChannel channel)
     {
-        // CMU14: retain drafts when changing channels.
-        SaveHudChannelDraft(channel);
         _controller.UpdateSelectedChannel(this);
     }
 
@@ -1840,9 +1834,6 @@ public partial class ChatBox : UIWidget
         base.Dispose(disposing);
 
         if (!disposing) return;
-        // CMU14: release the workspace channel subscription.
-        if (_hudEnabled)
-            _controller.SelectableChannelsChanged -= OnHudChannelsChanged;
         _controller.UnregisterChat(this);
         _controller.MessageAdded -= OnMessageAdded;
         _controller.HighlightsUpdated -= OnHighlightsUpdated;

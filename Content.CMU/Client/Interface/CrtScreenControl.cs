@@ -25,7 +25,8 @@ namespace Content.Client.CMU14.Interface;
 ///     Other parents remain supported, but also draw the source normally beneath the shaded copy.
 ///     </para>
 ///     <para>
-///     The terminal shader applies barrel curvature and vignette to the captured surface.
+///     Once the source is a texture, bloom and barrel curvature become possible in the same pass.
+///     Neither is implemented yet.
 ///     </para>
 /// </remarks>
 public sealed partial class CrtScreenControl : Control

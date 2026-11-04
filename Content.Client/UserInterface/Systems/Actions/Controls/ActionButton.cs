@@ -1,6 +1,4 @@
 using System.Numerics;
-// CMU14: shared action-slot chrome.
-using Content.Client.CMU14.Interface.Hud;
 using Content.Client.Actions;
 using Content.Client.Actions.UI;
 using Content.Client.Cooldown;
@@ -76,8 +74,7 @@ public sealed class ActionButton : Control, IEntityControl
         _controller = controller;
 
         MouseFilter = MouseFilterMode.Pass;
-        // CMU14: retain action input and measurement with the HUD surface.
-        Button = new CmuHudSlotTexture(this)
+        Button = new TextureRect
         {
             Name = "Button",
             TextureScale = new Vector2(2, 2)
@@ -332,8 +329,6 @@ public sealed class ActionButton : Control, IEntityControl
         {
             Button.Texture = null;
         }
-        // CMU14: preserve action-specific custom backgrounds.
-        ((CmuHudSlotTexture) Button).UseHudChrome = Button.Texture == _slotBackground;
     }
 
     public bool TryReplaceWith(EntityUid actionId, ActionsSystem system)

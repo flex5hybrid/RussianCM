@@ -1,7 +1,6 @@
 using System.Numerics;
 using Content.Client._RMC14.Storage;
 using Content.Client.Items.Systems;
-using Content.Client.Stylesheets; // CMU14: use the existing CRT mode preference.
 using Content.Shared.Item;
 using Content.Shared.Storage;
 using Robust.Client.GameObjects;
@@ -125,7 +124,6 @@ public sealed partial class ItemGridPiece : Control, IEntityControl // CMU14: co
         var size = _centerTexture!.Size * 2 * UIScale;
 
         var hovering = !_storageController.IsDragging && UserInterfaceManager.CurrentlyHovered == this;
-        var crt = StyleNano.CrtUiEnabled && Theme.ID == "SS14DefaultTheme"; // CMU14: preserve other themes.
         //yeah, this coloring is kinda hardcoded. deal with it. B)
         Color? colorModulate = hovering  ? null : Color.FromHex("#a8a8a8");
 
@@ -151,35 +149,22 @@ public sealed partial class ItemGridPiece : Control, IEntityControl // CMU14: co
                 var right = !adjustedShape.Contains(position + Vector2i.Right);
                 // CMU14 End
 
-                // CMU14 Storage Begin: CRT silhouettes share native cell hit geometry.
-                var nwTexture = GetTexture(top, bottom, left, right, Direction.NorthWest);
-                if (nwTexture != null)
+                if (GetTexture(top, bottom, left, right, Direction.NorthEast) is {} neTexture) // CMU14
                 {
-                    // Hit testing uses the native cell dimensions even when its texture is not drawn.
+                    var neOffset = new Vector2(size.X, 0);
+                    handle.DrawTextureRect(neTexture, new UIBox2(topLeft + neOffset, topLeft + neOffset + size), colorModulate);
+                }
+                if (GetTexture(top, bottom, left, right, Direction.NorthWest) is {} nwTexture) // CMU14
+                {
                     _texturesPositions.Add((nwTexture, Position + offset / UIScale));
+                    handle.DrawTextureRect(nwTexture, new UIBox2(topLeft, topLeft + size), colorModulate);
+
                     if (marked && nwTexture == _topLeftTexture)
                     {
                         maybeMarkedPos = topLeft;
                         marked = false;
                     }
                 }
-
-                if (crt)
-                {
-                    CMUDrawPieceCell(handle, new UIBox2(topLeft, topLeft + size * 2),
-                        top, bottom, left, right, hovering, UIScale);
-                    continue;
-                }
-
-                if (GetTexture(top, bottom, left, right, Direction.NorthEast) is {} neTexture) // CMU14
-                {
-                    var neOffset = new Vector2(size.X, 0);
-                    handle.DrawTextureRect(neTexture, new UIBox2(topLeft + neOffset, topLeft + neOffset + size), colorModulate);
-                }
-                if (nwTexture != null)
-                    handle.DrawTextureRect(nwTexture, new UIBox2(topLeft, topLeft + size), colorModulate);
-                // CMU14 End
-
                 if (GetTexture(top, bottom, left, right, Direction.SouthEast) is {} seTexture) // CMU14
                 {
                     var seOffset = size;

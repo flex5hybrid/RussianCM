@@ -1,4 +1,3 @@
-<!-- CMU14: adaptive CRT HUD layout using native controls and input routing. -->
 <screens:SeparatedChatGameScreen
     xmlns="https://spacestation14.io"
     xmlns:screens="clr-namespace:Content.Client.UserInterface.Screens"
@@ -27,9 +26,12 @@
             </BoxContainer>
             <alerts:AlertsUI Name="Alerts" Access="Protected" />
         </LayoutContainer>
-        <PanelContainer Name="SeparatedChatPanel" MinWidth="160" StyleClasses="CmuHudInset">
+        <PanelContainer Name="SeparatedChatPanel" MinWidth="160">
+            <PanelContainer.PanelOverride>
+                <graphics:StyleBoxFlat BackgroundColor="#202020" />
+            </PanelContainer.PanelOverride>
 
-            <BoxContainer Name="SeparatedChatContent" Orientation="Vertical" HorizontalExpand="True" SeparationOverride="6" Margin="6">
+            <BoxContainer Name="SeparatedChatContent" Orientation="Vertical" HorizontalExpand="True" SeparationOverride="10" Margin="10">
                 <menuBar:GameTopMenuBar Name="TopBar" HorizontalExpand="True" Access="Public" />
                 <chat:ChatBox StyleClasses="ChatOutput" VerticalExpand="True" HorizontalExpand="True" Name="Chat" Access="Protected" MinSize="0 0"/>
             </BoxContainer>
