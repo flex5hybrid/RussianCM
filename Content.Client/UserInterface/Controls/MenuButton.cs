@@ -20,7 +20,8 @@ public sealed partial class MenuButton : ContainerButton
     private static readonly Color ColorHovered = Color.FromHex("#acbac6"); // primary color[0] + 0.30 L
     private static readonly Color ColorPressed = Color.FromHex("#75838e"); // primary color[0] + 0.12 L
 
-    private const float VertPad = 4f;
+    // CMU14: compact menu-strip spacing.
+    private const float VertPad = 2f;
 
     private BoundKeyFunction? _function;
     private readonly BoxContainer _root;
@@ -47,7 +48,8 @@ public sealed partial class MenuButton : ContainerButton
         IoCManager.InjectDependencies(this);
         _buttonIcon = new TextureRect()
         {
-            TextureScale = new Vector2(0.5f, 0.5f),
+            // CMU14: fit native glyphs into compact menu cells.
+            TextureScale = new Vector2(0.375f, 0.375f),
             HorizontalAlignment = HAlignment.Center,
             VerticalAlignment = VAlignment.Center,
             VerticalExpand = true,
@@ -110,6 +112,20 @@ public sealed partial class MenuButton : ContainerButton
     private void UpdateChildColors()
     {
         if (_buttonIcon == null || _buttonLabel == null) return;
+        // CMU14: HUD glyph and binding colours follow the current palette.
+        if (StyleClasses.Contains(Content.Client.CMU14.Interface.Hud.CmuHudStyle.MenuButtonClass))
+        {
+            var color = DrawMode switch
+            {
+                DrawModeEnum.Pressed => Content.Client.CMU14.Interface.CrtTerminalPalette.Accent,
+                DrawModeEnum.Hover => Content.Client.CMU14.Interface.CrtTerminalPalette.TextBright,
+                DrawModeEnum.Disabled => Content.Client.CMU14.Interface.CrtTerminalPalette.TextDim.WithAlpha(0.4f),
+                _ => Content.Client.CMU14.Interface.CrtTerminalPalette.Text,
+            };
+            _buttonIcon.ModulateSelfOverride = color;
+            _buttonLabel.ModulateSelfOverride = color;
+            return;
+        }
         switch (DrawMode)
         {
             case DrawModeEnum.Normal:

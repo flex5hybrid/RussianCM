@@ -46,18 +46,11 @@ namespace Content.Client.Options.UI
         }
 
         /// <summary>
-        ///     The surface texture only - scanlines and grain. No bulge, no roll bar, and a much
-        ///     weaker vignette than the prop terminal uses: this is a page of settings being read,
-        ///     not a piece of set dressing. Pitch, grain and intensity still come from the shared
-        ///     cvars, so tuning those moves both.
+        ///     CMU14: shares the menu raster preference without distorting text or pointer targets.
         /// </summary>
         private void SetUpCrtScreen()
         {
-            CrtOverlay.Source = CrtContent;
-            CrtOverlay.Phosphor = CrtTerminalPalette.Accent;
-            CrtOverlay.Curvature = 0f;
-            CrtOverlay.Vignette = 0.12f;
-            CrtOverlay.Roll = false;
+            // CMU14: live controls keep their pointer alignment; glass effects belong to glass surfaces.
             CrtOverlay.Visible = _cfg.GetCVar(CCVars.CMUCrtMenuEffect) && StyleNano.CrtUiEnabled;
         }
 

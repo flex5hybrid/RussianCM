@@ -17,6 +17,8 @@ public sealed partial class AlertsUI : UIWidget
 {
     // also known as Control.Children?
     private readonly Dictionary<AlertKey, AlertControl> _alertControls = new();
+    // CMU14: compact side-status rail.
+    private bool _compact = true;
 
     public AlertsUI()
     {
@@ -37,6 +39,7 @@ public sealed partial class AlertsUI : UIWidget
         // also there may be some new alerts we need to show.
         // further, we need to ensure they are ordered w.r.t their configured order
         SyncUpdateControls(alertsSystem, alertOrderPrototype, alertStates);
+        UpdateHudPresentation();
     }
 
     public void ClearAllControls()
@@ -48,6 +51,32 @@ public sealed partial class AlertsUI : UIWidget
         }
 
         _alertControls.Clear();
+        UpdateHudPresentation();
+    }
+
+    // CMU14: bound the side rail to the available viewport height.
+    public void SetHudSpace(float height, bool compact)
+    {
+        StatusScroll.MaxHeight = MathF.Max(48, MathF.Min(340, height));
+        if (_compact == compact)
+            return;
+        _compact = compact;
+        UpdateHudPresentation();
+    }
+
+    // CMU14: hide informational area labels while retaining warning icons.
+    private void UpdateHudPresentation()
+    {
+        var hasVisibleStatus = false;
+        foreach (var control in _alertControls.Values)
+        {
+            // Only explicitly informational alerts may be collapsed. Unknown/new warning types stay visible.
+            var informational = control.Alert.Category is { } category && category.Id == "AreaInfo";
+            control.Visible = !informational;
+            hasVisibleStatus |= !informational;
+            control.SetHudCompact(_compact);
+        }
+        StatusPanel.Visible = hasVisibleStatus;
     }
 
     public event EventHandler<ProtoId<AlertPrototype>>? AlertPressed;

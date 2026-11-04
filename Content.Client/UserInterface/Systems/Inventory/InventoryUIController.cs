@@ -88,6 +88,7 @@ public sealed partial class InventoryUIController : UIController, IOnStateEntere
             _strippingWindow = null;
         }
 
+        // CMU14: hide a stale equipment drawer when the inventory is rebuilt.
         if (_inventoryHotbar != null)
         {
             _inventoryHotbar.Visible = false;
@@ -138,6 +139,8 @@ public sealed partial class InventoryUIController : UIController, IOnStateEntere
         if (clientInv == null)
         {
             _inventoryHotbar?.ClearButtons();
+            if (_inventoryHotbar != null)
+                _inventoryHotbar.Visible = false;
             if (_inventoryButton != null)
                 _inventoryButton.Visible = false;
 

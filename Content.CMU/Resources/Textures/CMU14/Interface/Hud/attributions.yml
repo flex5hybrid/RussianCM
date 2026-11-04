@@ -1,0 +1,4 @@
+- files: ["Slots/*.png"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Default HUD glyphs from goonstation at e77d85d9c1d93aa32da7702737ceeac2b56738ac, modified by PixelTK; ID glyph by YoungThugSS14. Neutral frame pixels removed for RuCM."
+  source: "https://github.com/goonstation/goonstation/tree/e77d85d9c1d93aa32da7702737ceeac2b56738ac"
