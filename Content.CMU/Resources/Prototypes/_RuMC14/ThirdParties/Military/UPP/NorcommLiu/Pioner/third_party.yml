@@ -19,10 +19,10 @@
     - colonyfall
   entrymethod: shuttle
   dropshippath: /Maps/CMU14/Dropships/rmc_ert_spp_shuttle.yml
-  weight: 20
+  weight: 0
   minplayers: 0
   maxplayers: 400
-  ghostsNeeded: 0
+  ghostsNeeded: 4
   roundstart: false
 
 #Norcomm Medical Team "Hippocrates"
@@ -46,10 +46,10 @@
     - colonyfall
   entrymethod: shuttle
   dropshippath: /Maps/CMU14/Dropships/rmc_ert_spp_shuttle.yml
-  weight: 20
+  weight: 0
   minplayers: 0
   maxplayers: 400
-  ghostsNeeded: 0
+  ghostsNeeded: 5
   roundstart: false
 
 #Norcomm Security Brigade "Hoplite"
@@ -73,8 +73,8 @@
     - colonyfall
   entrymethod: shuttle
   dropshippath: /Maps/CMU14/Dropships/rmc_ert_spp_shuttle.yml
-  weight: 20
+  weight: 0
   minplayers: 0
   maxplayers: 400
-  ghostsNeeded: 0
+  ghostsNeeded: 5
   roundstart: false
