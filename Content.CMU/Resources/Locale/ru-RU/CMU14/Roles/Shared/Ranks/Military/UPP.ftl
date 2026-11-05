@@ -52,8 +52,8 @@ rank-UPP_SeniorSergeant = Старший сержант
 rank-UPP_Sergeant = Сержант
     .prefix = Серж.
 
-rank-UPP_Corporal = Взводный
-    .prefix = Взв.
+rank-UPP_Corporal = Младший сержант
+    .prefix = Мл. серж.
 
 rank-UPP_Plutonowy = Младший сержант
     .prefix = Мл. серж.
