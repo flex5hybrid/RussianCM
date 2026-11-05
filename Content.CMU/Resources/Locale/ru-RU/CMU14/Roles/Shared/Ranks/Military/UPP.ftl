@@ -1,17 +1,17 @@
 rank-UPP_ChairmanMilitaryCouncil = Председатель военного совета
     .prefix = Пред. ВС
 
-rank-UPP_Marshal = Маршал
-    .prefix = Марш.
+rank-UPP_Marshal = Маршал СПН
+    .prefix = Маршал
 
-rank-UPP_GeneralOfTheBranch = Генерал рода войск
-    .prefix = Ген. р.в.
+rank-UPP_GeneralOfTheBranch = Генерал-полковник
+    .prefix = Генерал-полковник
 
-rank-UPP_DivisionalGeneral = Генерал дивизии
-    .prefix = Ген. див.
+rank-UPP_DivisionalGeneral = Генерал-лейтенант
+    .prefix = Генерал-лейтенант
 
-rank-UPP_BrigadierGeneral = Бригадный генерал
-    .prefix = Бриг. ген.
+rank-UPP_BrigadierGeneral = Генерал-майор
+    .prefix = Генерал-майор
 
 rank-UPP_Colonel = Полковник
     .prefix = Полк.
@@ -52,11 +52,11 @@ rank-UPP_SeniorSergeant = Старший сержант
 rank-UPP_Sergeant = Сержант
     .prefix = Серж.
 
-rank-UPP_Corporal = Капрал
-    .prefix = Капр.
+rank-UPP_Corporal = Младший сержант
+    .prefix = Мл. серж.
 
-rank-UPP_Plutonowy = Взводный
-    .prefix = Взв.
+rank-UPP_Plutonowy = Младший сержант
+    .prefix = Мл. серж.
 
 rank-UPP_SeniorGefreiter = Старший ефрейтор
     .prefix = Ст. ефр.
