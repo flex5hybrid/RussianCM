@@ -9,6 +9,7 @@ using Content.Shared._RMC14.Requisitions;
 using Content.Shared._RMC14.Requisitions.Components;
 using Content.Shared._RMC14.Scaling;
 using Content.Shared._RMC14.Weapons.Ranged.IFF;
+using Content.Shared._RuMC14.Reinforcements; // RuMC edit
 using Content.Shared.Access.Systems;
 using Content.Shared.CMU14.Util;
 using Content.Shared.GameTicking;
@@ -32,6 +33,7 @@ public sealed partial class TechSystem : EntitySystem
     [Dependency] private SharedMarineAnnounceSystem _marineAnnounce = default!;
     [Dependency] private INetManager _net = default!;
     [Dependency] private SharedRequisitionsSystem _requisitions = default!;
+    [Dependency] private SharedRuMCReinforcementSystem _reinforcements = default!; // RuMC edit
     [Dependency] private ScalingSystem _scaling = default!;
     // NOTE: Do not depend on platform-specific AuThirdPartySystem here (shared) — use ExecuteTechPartySpawn helper
     // to let server code call the server-side spawn implementation.
@@ -115,11 +117,29 @@ public sealed partial class TechSystem : EntitySystem
         Dirty(ent);
     }
 
+    // RuMC edit start
+    private static bool HasPartyCall(TechOption option)
+    {
+        foreach (var ev in option.Events)
+        {
+            if (ev is TechPartySpawnEvent { ThirdPartyId.Length: > 0 })
+                return true;
+        }
+
+        return false;
+    }
+    // RuMC edit end
+
     private void OnPurchaseOptionMsg(Entity<TechControlConsoleComponent> ent, ref TechPurchaseOptionBuiMsg args)
     {
         if (_net.IsClient)
             return;
 
+        TryPurchase(ent, args, null); // RuMC edit
+    }
+
+    private void TryPurchase(Entity<TechControlConsoleComponent> ent, TechPurchaseOptionBuiMsg args, RuMCReinforcementCall? call) // RuMC edit
+    {
         var team = !string.IsNullOrEmpty(args.Team) && args.Team != Team.None ? args.Team : ent.Comp.Team;
 
         var tree = _intel.EnsureTechTree(team);
@@ -147,6 +167,24 @@ public sealed partial class TechSystem : EntitySystem
         if (option.MaxPurchases > 0 && option.TimesPurchased >= option.MaxPurchases)
             return;
         // cmu edit end
+
+        // RuMC edit start
+        if (call == null && HasPartyCall(option))
+        {
+            if (_intel.GetCombinedPoints(team) < option.CurrentCost)
+                return;
+
+            var console = ent.Owner;
+            _reinforcements.Request(args.Actor,
+                Loc.GetString("rumc-reinforcement-side-tech", ("team", team)),
+                message =>
+                {
+                    if (TryComp(console, out TechControlConsoleComponent? comp))
+                        TryPurchase((console, comp), args, message);
+                });
+            return;
+        }
+        // RuMC edit end
 
         // cmu edit start: spend from the combined objective + intel pool shown on the console (intel first)
         if (!_intel.TrySpendCombinedPoints(team, option.CurrentCost))
@@ -214,7 +252,7 @@ public sealed partial class TechSystem : EntitySystem
                 }
                 else
                 {
-                    var newEv = partySpawnEv with { Team = team };
+                    var newEv = partySpawnEv with { Team = team, Call = call }; // RuMC edit
                     RaiseLocalEvent(newEv);
                 }
             }

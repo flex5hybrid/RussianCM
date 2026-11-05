@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Numerics;
+using Content.Server._RuMC14.Reinforcements; // RuMC edit
 using Content.Server.Access.Systems;
 using Content.Server.CMU14.Diagnostics.Performance;
 using Content.Server.CMU14.Round;
@@ -16,6 +17,7 @@ using Content.Shared._RMC14.Construction;
 using Content.Shared._RMC14.CrashLand;
 using Content.Shared._RMC14.Dropship;
 using Content.Shared._RMC14.Map;
+using Content.Shared._RuMC14.Reinforcements; // RuMC edit
 using Content.Shared.Access.Components;
 using Content.Shared.CMU14.util;
 using Content.Shared.GameTicking;
@@ -203,8 +205,8 @@ public sealed partial class ThirdPartySystem : EntitySystem
     // faction's ship pad while the faction is shipside.
     public void SpawnThirdParty(ThirdPartyPrototype party, PartySpawnPrototype spawnProto, bool roundStart,
         Dictionary<NetUserId, (ProtoId<JobPrototype>?, EntityUid)>? assignedJobs = null, bool? overrideDropship = null,
-        string? summoningFaction = null)
-        => QueueThirdParty(party, spawnProto, roundStart, overrideDropship, true, assignedJobs, summoningFaction);
+        string? summoningFaction = null, RuMCReinforcementCall? call = null) // RuMC edit
+        => QueueThirdParty(party, spawnProto, roundStart, overrideDropship, true, assignedJobs, summoningFaction, call); // RuMC edit
 
     /// <summary>
     ///     Spawns a third party right away, skipping the wait for interested players. Its members spawn as open ghost
@@ -216,7 +218,8 @@ public sealed partial class ThirdPartySystem : EntitySystem
 
     private uint QueueThirdParty(ThirdPartyPrototype party, PartySpawnPrototype spawnProto, bool roundStart,
         bool? overrideDropship, bool ready,
-        Dictionary<NetUserId, (ProtoId<JobPrototype>?, EntityUid)>? assignedJobs = null, string? summoningFaction = null)
+        Dictionary<NetUserId, (ProtoId<JobPrototype>?, EntityUid)>? assignedJobs = null, string? summoningFaction = null, // RuMC edit
+        RuMCReinforcementCall? call = null) // RuMC edit
     {
         var bodies = spawnProto.LeadersToSpawn.Concat(spawnProto.GruntsToSpawn).Concat(spawnProto.EntitiesToSpawn)
             .GroupBy(pair => pair.Key).ToDictionary(group => group.Key, group => group.Sum(pair => Math.Max(0, pair.Value)));
@@ -226,7 +229,7 @@ public sealed partial class ThirdPartySystem : EntitySystem
         var id = _forceInterest.QueueDeployment(party.DisplayName ?? party.ID,
             _forceInterest.GetPlayableBodies(bodies),
             interested => SpawnThirdPartySteps(party, spawnProto, roundStart,
-                assignments.Where(pair => interested.Contains(pair.Key)).ToDictionary(), overrideDropship, summoningFaction).GetEnumerator(),
+                assignments.Where(pair => interested.Contains(pair.Key)).ToDictionary(), overrideDropship, summoningFaction, call).GetEnumerator(), // RuMC edit
             ready, assignments.Keys);
         _queuedParties.Add(id, party);
         return id;
@@ -247,7 +250,7 @@ public sealed partial class ThirdPartySystem : EntitySystem
 
     private IEnumerable<ForceDeploymentStep> SpawnThirdPartySteps(ThirdPartyPrototype party, PartySpawnPrototype spawnProto, bool roundStart,
         Dictionary<NetUserId, (ProtoId<JobPrototype>?, EntityUid)>? assignedJobs, bool? overrideDropship,
-        string? summoningFaction = null)
+        string? summoningFaction = null, RuMCReinforcementCall? call = null) // RuMC edit
     {
         const float SpawnTogetherRadius = 8f;
         using var preparation = new ShuttlePreparation(_mapLoader);
@@ -817,6 +820,14 @@ public sealed partial class ThirdPartySystem : EntitySystem
 
         // Run neighbor-marking now (only once per spawn operation, using the last used marker)
         MarkNeighborsIfNeeded();
+
+        // RuMC edit start
+        if (call != null)
+        {
+            var spawnedEv = new RuMCThirdPartySpawnedEvent(call, spawnedLeaders, spawnedGrunts);
+            RaiseLocalEvent(ref spawnedEv);
+        }
+        // RuMC edit end
 
         if (roundStart && party.AnnounceAsSurvivors) // CMU14
         {

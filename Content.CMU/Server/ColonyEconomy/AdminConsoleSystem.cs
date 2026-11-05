@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis; // RuMC edit
 using System.Linq;
 using Content.Server.CMU14.Ambassador;
 using Content.Server.CMU14.Chat;
@@ -5,6 +6,7 @@ using Content.Server.CMU14.Round;
 using Content.Server.CMU14.Ops.ThirdParty;
 using Content.Server.Chat.Systems;
 using Content.Server.Popups;
+using Content.Shared._RuMC14.Reinforcements; // RuMC edit
 using Content.Shared.CMU14.Ambassador;
 using Content.Shared.CMU14.ColonyEconomy;
 using Content.Shared.CMU14.Threats;
@@ -26,6 +28,7 @@ public sealed partial class AdminConsoleSystem : EntitySystem
     [Dependency] private Robust.Shared.Timing.IGameTiming _timing = default!;
     [Dependency] private Content.Server.CMU14.Government.ColonyGovernmentSystem _government = default!; // RUMC: the reforms and the treaties make the calls cheaper
     [Dependency] private Content.Server.CMU14.WorldMarket.WorldMarketSystem _worldMarket = default!; // RUMC: the holidays from taxes that the ambassadors order
+    [Dependency] private SharedRuMCReinforcementSystem _reinforcements = default!; // RuMC edit
 
     public override void Initialize()
     {
@@ -205,23 +208,24 @@ public sealed partial class AdminConsoleSystem : EntitySystem
 
     private void OnCallThirdParty(EntityUid uid, AdminConsoleComponent comp, AdminConsoleCallThirdPartyBuiMsg msg)
     {
-        if (!comp.CallableParties.TryGetValue(msg.ThirdPartyId, out var cost))
-            return;
-        cost = cost * (100 - _government.CallDiscountPercent()) / 100f; // RUMC: the reforms and the treaties of the government of the colony make a call cheaper
-        if (comp.CalledParties.Contains(msg.ThirdPartyId))
-            return;
-        if (comp.CalledParties.Count >= comp.MaxCallIns || _timing.CurTime < comp.NextCallInAt)
-            return;
-        if (_colonyBudget.GetBudget() < cost)
-            return;
-        if (!_proto.TryIndex<ThirdPartyPrototype>(msg.ThirdPartyId, out var partyProto))
-            return;
-        if (!_auRound.IsThirdPartyAllowedForCurrentContext(partyProto))
-            return;
-        if (!_proto.TryIndex(partyProto.PartySpawn, out var spawnProto))
+        // RuMC edit start
+        if (!TryGetThirdPartyCall(comp, msg.ThirdPartyId, out _, out _, out _))
             return;
 
-        _thirdParty.SpawnThirdParty(partyProto, spawnProto, false);
+        var thirdPartyId = msg.ThirdPartyId;
+        _reinforcements.Request(msg.Actor,
+            Loc.GetString("rumc-reinforcement-side-colony-admin"),
+            call => CallThirdParty(uid, thirdPartyId, call));
+    }
+
+    private void CallThirdParty(EntityUid uid, string thirdPartyId, RuMCReinforcementCall call)
+    {
+        if (!TryComp(uid, out AdminConsoleComponent? comp) ||
+            !TryGetThirdPartyCall(comp, thirdPartyId, out var cost, out var partyProto, out var spawnProto))
+            return;
+        // RuMC edit end
+
+        _thirdParty.SpawnThirdParty(partyProto, spawnProto, false, call: call); // RuMC edit
 
         _colonyBudget.AddToBudget(-cost);
 
@@ -230,12 +234,32 @@ public sealed partial class AdminConsoleSystem : EntitySystem
         var q = EntityQueryEnumerator<AdminConsoleComponent>();
         while (q.MoveNext(out _, out var c))
         {
-            c.CalledParties.Add(msg.ThirdPartyId);
+            c.CalledParties.Add(thirdPartyId); // RuMC edit
             c.NextCallInAt = nextCallIn;
         }
 
         UpdateAllUi();
     }
+
+    // RuMC edit start
+    private bool TryGetThirdPartyCall(AdminConsoleComponent comp, string thirdPartyId, out float cost,
+        [NotNullWhen(true)] out ThirdPartyPrototype? partyProto, [NotNullWhen(true)] out PartySpawnPrototype? spawnProto)
+    {
+        partyProto = null;
+        spawnProto = null;
+        if (!comp.CallableParties.TryGetValue(thirdPartyId, out cost))
+            return false;
+
+        cost = cost * (100 - _government.CallDiscountPercent()) / 100f; // RUMC: the reforms and the treaties of the government of the colony make a call cheaper
+        return !comp.CalledParties.Contains(thirdPartyId) &&
+               comp.CalledParties.Count < comp.MaxCallIns &&
+               _timing.CurTime >= comp.NextCallInAt &&
+               _colonyBudget.GetBudget() >= cost &&
+               _proto.TryIndex<ThirdPartyPrototype>(thirdPartyId, out partyProto) &&
+               _auRound.IsThirdPartyAllowedForCurrentContext(partyProto) &&
+               _proto.TryIndex(partyProto.PartySpawn, out spawnProto);
+    }
+    // RuMC edit end
 
     // ── UI helpers ───────────────────────────────────────────────────────────
 
