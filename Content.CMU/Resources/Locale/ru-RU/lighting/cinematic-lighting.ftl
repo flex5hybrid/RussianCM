@@ -1,0 +1,27 @@
+cmu-cinematic-lighting-label = Кинематографическое освещение
+cmu-cinematic-lighting-tooltip = Локальное свечение, контактные тени, блики на поверхностях и световые лучи. Рекомендуется высокое качество. Применяется сразу после сохранения.
+cmu-cinematic-lighting-off = Выключено (исходное освещение)
+cmu-cinematic-lighting-low = Низкое
+cmu-cinematic-lighting-high = Высокое (рекомендуется)
+cmu-cinematic-lighting-ultra = Ультра
+cmu-cinematic-ao-intensity = Интенсивность контактных теней
+cmu-cinematic-ao-radius = Радиус контактных теней
+cmu-cinematic-atmosphere = Плотность световой атмосферы
+cmu-cinematic-exposure = Экспозиция локального света
+cmu-cinematic-stats-description = Показать счётчики кинематографического освещения.
+cmu-cinematic-debug-description = Просмотреть отдельные поля кинематографического света без чтения GPU.
+cmu-cinematic-debug-help = cmu_cinematic_debug all|off|native|direct|indirect|emissive|core|inner|outer|bloom|reflections|materials|atmosphere|occlusion|contacts; enable|disable direct|indirect|reflections|glow|atmosphere|contacts; quality 0..3; window 1920 1080.
+cmu-cinematic-stats-help = cmu_cinematic_stats: последний отрисованный основной вид; время отправки команд CPU не является временем GPU.
+cmu-cinematic-stats-result = Качество { $quality }; источники { $sources }; лучи { $beams }; рёбра препятствий { $edges }; пересчёты масок { $rebuilds }; буферы { $targets }; память буферов { $memory } МиБ; отправка CPU { $cpu } мс.
+cmu-cinematic-demo-description = Создать отдельное помещение для проверки кинематографического освещения.
+cmu-cinematic-demo-help = cmu_cinematic_demo [игрок] [industrial | industrial-static | materials | water | reference | almayer | view x y | capture 3..60 | state all/lamp-off/screens-off/alarm/spotlight | debug режим | zoom масштаб | reload | watch]. Изменение состояния и zoom доступны только на изолированном стенде. Требуется Mapping.
+cmu-cinematic-demo-created = Демонстрационная сцена создана: карта { $map }, грид { $grid }. Сравните качество освещения 0, 1, 2, 3 с одной позиции. В комнате есть терминалы, металл, кафель, стекло, лужа, прожекторы и аварийный маяк.
+cmu-cinematic-capture-description = Снять игровые кадры и замерить время кадра для четырёх режимов освещения.
+cmu-cinematic-capture-help = cmu_cinematic_capture [3-60 секунд на режим | stop]: сначала измеряет четыре режима, затем отдельно сохраняет кадры и диагностические поля; временно отключает VSync и лимит FPS, затем восстанавливает графические настройки. Не двигайте камеру. Серверный вызов: cmu_cinematic_demo [игрок] capture [секунды].
+cmu-cinematic-capture-started = Сравнительный захват подготовлен. Закройте консоль и не двигайте камеру. Ожидается освещённый основной вид; результаты появятся в пользовательской папке клиента cinematic-lighting.
+cmu-cinematic-capture-already-running = Захват освещения уже запущен. Сначала выполните cmu_cinematic_capture stop.
+
+cmu-cinematic-demo-load-failed = Не удалось загрузить демонстрационную копию карты CMU.
+cmu-cinematic-demo-map-loaded = Загружена настоящая карта { $path }, карта { $map }, камера { $x }, { $y }. Питание фиксировано одинаково для всех режимов; исходный ambient сохранён.
+cmu-cinematic-review-state-error = Состояние доступно только на отдельной тестовой карте: all, lamp-off, screens-off, alarm, spotlight, alarm-off, spotlight-off.
+cmu-cinematic-review-state = Состояние стенда: { $state }; контрольная лампа: { $lamp }.

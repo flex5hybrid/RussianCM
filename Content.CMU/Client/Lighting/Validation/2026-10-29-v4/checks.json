@@ -1,0 +1,107 @@
+{
+  "unit": {
+    "trx": "Content.Tests/TestResults/cinematic-v4-unit.trx",
+    "counters": {
+      "total": "28",
+      "executed": "28",
+      "passed": "28",
+      "failed": "0",
+      "error": "0",
+      "timeout": "0",
+      "aborted": "0",
+      "inconclusive": "0",
+      "passedButRunAborted": "0",
+      "notRunnable": "0",
+      "notExecuted": "0",
+      "disconnected": "0",
+      "warning": "0",
+      "completed": "0",
+      "inProgress": "0",
+      "pending": "0"
+    }
+  },
+  "integration": {
+    "trx": "Content.IntegrationTests/TestResults/cinematic-v4-optimized-integration-stable.trx",
+    "counters": {
+      "total": "5",
+      "executed": "5",
+      "passed": "5",
+      "failed": "0",
+      "error": "0",
+      "timeout": "0",
+      "aborted": "0",
+      "inconclusive": "0",
+      "passedButRunAborted": "0",
+      "notRunnable": "0",
+      "notExecuted": "0",
+      "disconnected": "0",
+      "warning": "0",
+      "completed": "0",
+      "inProgress": "0",
+      "pending": "0"
+    }
+  },
+  "native_runtime": {
+    "framework": ".NET 10.0.8",
+    "DOTNET_TieredCompilation": "0",
+    "DOTNET_ReadyToRun": "0"
+  },
+  "builds": {
+    "debug_client": {
+      "log": "cinematic-v4-optimized-build.log",
+      "summary": [
+        "C:\\Users\\ha13r\\.codex\\worktrees\\cmu-cinematic-lighting\\RussianCM\\Content.Shared\\Content.Shared.csproj : warning NU1903: РЈ РїР°РєРµС‚Р° \"SixLabors.ImageSharp\" 3.1.12 РµСЃС‚СЊ РёР·РІРµСЃС‚РЅР°СЏ СѓСЏР·РІРёРјРѕСЃС‚СЊ https://github.com/advisories/GHSA-v76p-62qx-wwq2 (СѓСЂРѕРІРµРЅСЊ СЃРµСЂСЊРµР·РЅРѕСЃС‚Рё: РІС‹СЃРѕРєРёР№ СѓСЂРѕРІРµРЅСЊ)",
+        "C:\\Users\\ha13r\\.codex\\worktrees\\cmu-cinematic-lighting\\RussianCM\\Content.Shared\\Content.Shared.csproj : warning NU1902: РЈ РїР°РєРµС‚Р° \"SixLabors.ImageSharp\" 3.1.12 РµСЃС‚СЊ РёР·РІРµСЃС‚РЅР°СЏ СѓСЏР·РІРёРјРѕСЃС‚СЊ https://github.com/advisories/GHSA-wmxv-xphr-5c9g (СѓСЂРѕРІРµРЅСЊ СЃРµСЂСЊРµР·РЅРѕСЃС‚Рё: СЃСЂРµРґРЅРёР№ СѓСЂРѕРІРµРЅСЊ)",
+        "    РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 240",
+        "    РћС€РёР±РѕРє: 0",
+        "",
+        "РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:01:32.26"
+      ]
+    },
+    "server": {
+      "log": "cinematic-v4-server-build.log",
+      "summary": [
+        "C:\\Users\\ha13r\\.codex\\worktrees\\cmu-cinematic-lighting\\RussianCM\\RobustToolbox\\Robust.Shared.Scripting\\Robust.Shared.Scripting.csproj : warning NU1903: РЈ РїР°РєРµС‚Р° \"SixLabors.ImageSharp\" 3.1.12 РµСЃС‚СЊ РёР·РІРµСЃС‚РЅР°СЏ СѓСЏР·РІРёРјРѕСЃС‚СЊ https://github.com/advisories/GHSA-v76p-62qx-wwq2 (СѓСЂРѕРІРµРЅСЊ СЃРµСЂСЊРµР·РЅРѕСЃС‚Рё: РІС‹СЃРѕРєРёР№ СѓСЂРѕРІРµРЅСЊ)",
+        "C:\\Users\\ha13r\\.codex\\worktrees\\cmu-cinematic-lighting\\RussianCM\\RobustToolbox\\Robust.Shared.Scripting\\Robust.Shared.Scripting.csproj : warning NU1902: РЈ РїР°РєРµС‚Р° \"SixLabors.ImageSharp\" 3.1.12 РµСЃС‚СЊ РёР·РІРµСЃС‚РЅР°СЏ СѓСЏР·РІРёРјРѕСЃС‚СЊ https://github.com/advisories/GHSA-wmxv-xphr-5c9g (СѓСЂРѕРІРµРЅСЊ СЃРµСЂСЊРµР·РЅРѕСЃС‚Рё: СЃСЂРµРґРЅРёР№ СѓСЂРѕРІРµРЅСЊ)",
+        "    РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 614",
+        "    РћС€РёР±РѕРє: 0",
+        "",
+        "РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:02:39.64"
+      ]
+    },
+    "release_client_before_optimization": {
+      "log": "cinematic-v4-release-build.log",
+      "summary": [
+        "C:\\Users\\ha13r\\.codex\\worktrees\\cmu-cinematic-lighting\\RussianCM\\Content.CMU\\Client\\Lighting\\CinematicLightingSystem.cs(198,18): warning RA0030: Use the non-generic variant of this method for type TransformComponent [C:\\Users\\ha13r\\.codex\\worktrees\\cmu-cinematic-lighting\\RussianCM\\Content.Client\\Content.Client.csproj]",
+        "C:\\Users\\ha13r\\.codex\\worktrees\\cmu-cinematic-lighting\\RussianCM\\Content.CMU\\Client\\Lighting\\CinematicLightingSystem.cs(210,20): warning RA0030: Use the non-generic variant of this method for type TransformComponent [C:\\Users\\ha13r\\.codex\\worktrees\\cmu-cinematic-lighting\\RussianCM\\Content.Client\\Content.Client.csproj]",
+        "    РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 240",
+        "    РћС€РёР±РѕРє: 0",
+        "",
+        "РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:01:32.77"
+      ]
+    },
+    "release_client": {
+      "log": "cinematic-v4-optimized-release-build.log",
+      "summary": [
+        "C:\\Users\\ha13r\\.codex\\worktrees\\cmu-cinematic-lighting\\RussianCM\\Content.CMU\\Client\\Lighting\\CinematicLightingSystem.cs(198,18): warning RA0030: Use the non-generic variant of this method for type TransformComponent [C:\\Users\\ha13r\\.codex\\worktrees\\cmu-cinematic-lighting\\RussianCM\\Content.Client\\Content.Client.csproj]",
+        "C:\\Users\\ha13r\\.codex\\worktrees\\cmu-cinematic-lighting\\RussianCM\\Content.CMU\\Client\\Lighting\\CinematicLightingSystem.cs(210,20): warning RA0030: Use the non-generic variant of this method for type TransformComponent [C:\\Users\\ha13r\\.codex\\worktrees\\cmu-cinematic-lighting\\RussianCM\\Content.Client\\Content.Client.csproj]",
+        "    Предупреждений: 536",
+        "    Ошибок: 0",
+        "",
+        "Прошло времени 00:05:33.39"
+      ]
+    }
+  },
+  "yaml": {
+    "log": "cinematic-v4-yamllinter.log",
+    "result": "No errors found in 773078 ms"
+  },
+  "aborted_attempt": {
+    "log": "cinematic-v4-optimized-integration.log",
+    "cause": "Internal CLR error 0x80131506 in RuntimeHelpers.CompileMethod during prototype composition. No passing result claimed; stable-runtime repeat passed."
+  },
+  "client_sha256": {
+    "debug": "49ea3e326359b81c45c086b665a1507f9e8d75eb2811591ebf358898b24aff3a",
+    "release": "15ae84de7625c5ef730aa9752a37d3ed7e5f6a24cfdfa05f508e10a93ad58260"
+  }
+}

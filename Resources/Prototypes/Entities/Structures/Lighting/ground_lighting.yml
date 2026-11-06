@@ -5,6 +5,8 @@
   suffix: Always Powered
   description: "An always powered light."
   components:
+  - type: CMUCinematicEmitter # CMU14
+    profile: CMUFixture
   - type: XenoCrusherChargable
     instantDestroy: true
     passOnDestroy: true

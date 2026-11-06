@@ -1,0 +1,35 @@
+#include "/Textures/Shaders/CMU14/Cinematic/frame.swsl"
+
+uniform highp vec2 source_position;
+uniform highp vec2 emission_position;
+uniform highp vec3 source_color;
+uniform highp float source_radius;
+uniform highp float source_energy;
+uniform highp float source_rotation;
+uniform bool has_light_mask;
+uniform sampler2D light_mask;
+
+highp float sourceMaskRadius(highp vec2 position, highp float width, highp float radius)
+{
+    if (!has_light_mask)
+        return 1.0;
+    highp vec2 delta = position - source_position;
+    highp float c = cos(source_rotation);
+    highp float s = sin(source_rotation);
+    highp vec2 local = vec2(c * delta.x + s * delta.y, -s * delta.x + c * delta.y);
+    local.x /= width;
+    highp vec2 uv = local / (2.0 * max(radius, 0.001)) + 0.5;
+    return texture2D(light_mask, clamp(uv, 0.0, 1.0)).r;
+}
+
+highp float sourceMask(highp vec2 position, highp float width)
+{
+    return sourceMaskRadius(position, width, source_radius);
+}
+
+highp float sourceAttenuation(highp vec2 position)
+{
+    highp float distance = length(position - source_position);
+    highp float fade = max(1.0 - distance / source_radius, 0.0);
+    return fade * fade / (1.0 + distance * 0.6);
+}

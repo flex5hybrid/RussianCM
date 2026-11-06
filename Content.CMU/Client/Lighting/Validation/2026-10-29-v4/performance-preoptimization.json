@@ -1,0 +1,474 @@
+{
+  "full_frame": {
+    "debug": [
+      {
+        "preset": 0.0,
+        "stage_utc": "2026-10-29T12:47:53.3552977Z",
+        "frames": 6887.0,
+        "samples": 6887.0,
+        "mean_ms": 4.357,
+        "p50_ms": 3.983,
+        "p95_ms": 6.451,
+        "p99_ms": 7.365,
+        "cinematic_cpu_ms": 0.0,
+        "sources": 0.0,
+        "beams": 0.0,
+        "targets": 0.0,
+        "target_bytes": 0.0,
+        "worst_ms": 11.152,
+        "worst_cmu_ms": 0.0,
+        "max_cmu_ms": 0.0,
+        "exposure": 1.2,
+        "atmosphere": 0.3,
+        "native_scale": 0.5
+      },
+      {
+        "preset": 1.0,
+        "stage_utc": "2026-10-29T12:48:25.3677768Z",
+        "frames": 5788.0,
+        "samples": 5788.0,
+        "mean_ms": 5.184,
+        "p50_ms": 4.736,
+        "p95_ms": 7.348,
+        "p99_ms": 8.232,
+        "cinematic_cpu_ms": 0.618,
+        "sources": 12.0,
+        "beams": 0.0,
+        "targets": 7.0,
+        "target_bytes": 11390400.0,
+        "worst_ms": 134.606,
+        "worst_cmu_ms": 0.579,
+        "max_cmu_ms": 1.871,
+        "exposure": 1.2,
+        "atmosphere": 0.3,
+        "native_scale": 0.5
+      },
+      {
+        "preset": 2.0,
+        "stage_utc": "2026-10-29T12:48:57.3776686Z",
+        "frames": 3990.0,
+        "samples": 3990.0,
+        "mean_ms": 7.521,
+        "p50_ms": 7.015,
+        "p95_ms": 9.858,
+        "p99_ms": 10.554,
+        "cinematic_cpu_ms": 2.589,
+        "sources": 35.0,
+        "beams": 6.0,
+        "targets": 14.0,
+        "target_bytes": 22357440.0,
+        "worst_ms": 11.742,
+        "worst_cmu_ms": 3.03,
+        "max_cmu_ms": 4.157,
+        "exposure": 1.2,
+        "atmosphere": 0.3,
+        "native_scale": 0.5
+      },
+      {
+        "preset": 3.0,
+        "stage_utc": "2026-10-29T12:49:29.3893973Z",
+        "frames": 3884.0,
+        "samples": 3884.0,
+        "mean_ms": 7.726,
+        "p50_ms": 7.216,
+        "p95_ms": 10.046,
+        "p99_ms": 10.84,
+        "cinematic_cpu_ms": 2.688,
+        "sources": 35.0,
+        "beams": 12.0,
+        "targets": 15.0,
+        "target_bytes": 22362480.0,
+        "worst_ms": 11.939,
+        "worst_cmu_ms": 3.147,
+        "max_cmu_ms": 4.182,
+        "exposure": 1.2,
+        "atmosphere": 0.3,
+        "native_scale": 0.5
+      }
+    ]
+  },
+  "gpu": [
+    {
+      "quality": 0,
+      "n": 3,
+      "median_ms": 0.0,
+      "min_ms": 0.0,
+      "max_ms": 0.0,
+      "p95_ms": 0.0,
+      "p99_ms": 0.0,
+      "all_event_median_ms": 1.5687679999999946
+    },
+    {
+      "quality": 2,
+      "n": 3,
+      "median_ms": 4.513792000000003,
+      "min_ms": 3.466239999999999,
+      "max_ms": 4.956160000000005,
+      "p95_ms": 4.911923200000005,
+      "p99_ms": 4.947312640000005,
+      "all_event_median_ms": 6.1624320000000194
+    },
+    {
+      "quality": 3,
+      "n": 3,
+      "median_ms": 3.564544000000005,
+      "min_ms": 3.4385920000000034,
+      "max_ms": 4.378624000000007,
+      "p95_ms": 4.297216000000007,
+      "p99_ms": 4.362342400000007,
+      "all_event_median_ms": 5.613568000000018
+    }
+  ],
+  "hdr": [
+    {
+      "target": "cmu-cinematic-emission-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 2016,
+      "height": 1440,
+      "rgb_max": [
+        8.375,
+        5.125,
+        4.5
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-inner-seeds-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 1008,
+      "height": 720,
+      "rgb_max": [
+        23.5,
+        16.0,
+        11.25
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-outer-seeds-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 1008,
+      "height": 720,
+      "rgb_max": [
+        10.25,
+        7.0,
+        5.0
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-irradiance-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 1008,
+      "height": 720,
+      "rgb_max": [
+        5.25,
+        6.25,
+        6.25
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-reflections-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 1008,
+      "height": 720,
+      "rgb_max": [
+        1.671875,
+        1.125,
+        0.671875
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-atmosphere-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 1008,
+      "height": 720,
+      "rgb_max": [
+        0.1484375,
+        0.177734375,
+        0.17578125
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-native-light-copy-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 1008,
+      "height": 720,
+      "rgb_max": [
+        1.078125,
+        0.9375,
+        0.671875
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-native-contribution-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 1008,
+      "height": 720,
+      "rgb_max": [
+        0.78125,
+        0.6796875,
+        0.5
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-bloom-0-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 1008,
+      "height": 720,
+      "rgb_max": [
+        18.0,
+        14.5,
+        10.5
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-bloom-1-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 504,
+      "height": 360,
+      "rgb_max": [
+        7.25,
+        5.5,
+        4.125
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-bloom-2-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 252,
+      "height": 180,
+      "rgb_max": [
+        5.5625,
+        3.5,
+        2.625
+      ],
+      "nonfinite_channels": 0
+    },
+    {
+      "target": "cmu-cinematic-bloom-3-color",
+      "format": "R11G11B10_FLOAT",
+      "width": 126,
+      "height": 90,
+      "rgb_max": [
+        4.3125,
+        1.640625,
+        1.21875
+      ],
+      "nonfinite_channels": 0
+    }
+  ],
+  "gpu_pass_medians": [
+    {
+      "quality": 2,
+      "role": "atmosphere",
+      "median_ms": 0.017408000000000003,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "blocker-mask",
+      "median_ms": 0.007168000000000001,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "bloom",
+      "median_ms": 0.254976,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "contact-mask",
+      "median_ms": 0.015360000000000002,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "direct-indirect",
+      "median_ms": 0.044031999999999974,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "emission",
+      "median_ms": 0.051199999999999954,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "emission-inner",
+      "median_ms": 0.03379200000000001,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "emission-outer",
+      "median_ms": 1.5022079999999995,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "field-clear",
+      "median_ms": 1.285120000000001,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "lens-composite",
+      "median_ms": 0.11571200000000001,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "material-mask",
+      "median_ms": 0.012288000000000002,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "native-contribution",
+      "median_ms": 1.133568,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "native-light-composite",
+      "median_ms": 0.035840000000000004,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "native-light-copy",
+      "median_ms": 0.023552,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "specular",
+      "median_ms": 0.03891199999999999,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "surface-composite",
+      "median_ms": 0.06656,
+      "n": 3
+    },
+    {
+      "quality": 2,
+      "role": "wall-receiver",
+      "median_ms": 0.025600000000000008,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "atmosphere",
+      "median_ms": 0.022528000000000006,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "blocker-mask",
+      "median_ms": 0.007168000000000001,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "bloom",
+      "median_ms": 0.273408,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "contact-mask",
+      "median_ms": 0.014336000000000002,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "direct-indirect",
+      "median_ms": 0.04300799999999998,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "emission",
+      "median_ms": 0.05222399999999996,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "emission-inner",
+      "median_ms": 0.028672000000000013,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "emission-outer",
+      "median_ms": 1.2175359999999988,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "field-clear",
+      "median_ms": 1.2001280000000007,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "lens-composite",
+      "median_ms": 0.11571200000000001,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "material-mask",
+      "median_ms": 0.011264000000000001,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "native-contribution",
+      "median_ms": 0.3164160000000005,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "native-light-composite",
+      "median_ms": 0.035840000000000004,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "native-light-copy",
+      "median_ms": 0.024576000000000004,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "specular",
+      "median_ms": 0.04095999999999998,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "surface-composite",
+      "median_ms": 0.06656,
+      "n": 3
+    },
+    {
+      "quality": 3,
+      "role": "wall-receiver",
+      "median_ms": 0.024576000000000008,
+      "n": 3
+    }
+  ]
+}

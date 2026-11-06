@@ -12,6 +12,8 @@
     snap:
     - Wallmount
   components:
+  - type: CMUCinematicEmitter # CMU14
+    profile: CMUFixture
   - type: MeleeSound
     soundGroups:
       Brute:

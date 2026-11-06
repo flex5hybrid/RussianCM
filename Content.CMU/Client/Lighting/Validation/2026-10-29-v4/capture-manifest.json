@@ -1,0 +1,529 @@
+[
+  {
+    "directory": "gpu-reference",
+    "captured_utc": "",
+    "view": {
+      "origin": [
+        215.0,
+        -153.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        2016,
+        1440
+      ],
+      "map": 1
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport and unmodified image data; see sources.csv. GPU folders are instrumentation captures, not frame benchmarks.",
+    "renderer_stage": "Final V4 pass fusion and tapered wet response"
+  },
+  {
+    "directory": "gpu-release-reference",
+    "captured_utc": "",
+    "view": {
+      "origin": [
+        215.0,
+        -153.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        2016,
+        1440
+      ],
+      "map": 1
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport and unmodified image data; see sources.csv. GPU folders are instrumentation captures, not frame benchmarks.",
+    "renderer_stage": "Final V4 pass fusion and tapered wet response"
+  },
+  {
+    "directory": "industrial",
+    "captured_utc": "2026-10-29T13:54:15.9880967Z",
+    "view": {
+      "origin": [
+        -10.0,
+        -7.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 5
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "Final V4 pass fusion and tapered wet response"
+  },
+  {
+    "directory": "industrial-alarm",
+    "captured_utc": "2026-10-29T13:56:54.1139404Z",
+    "view": {
+      "origin": [
+        -10.0,
+        -7.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 5
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "Final V4 pass fusion and tapered wet response"
+  },
+  {
+    "directory": "industrial-lamp-off",
+    "captured_utc": "2026-10-29T13:55:21.3340979Z",
+    "view": {
+      "origin": [
+        -10.0,
+        -7.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 5
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "Final V4 pass fusion and tapered wet response"
+  },
+  {
+    "directory": "industrial-screens-off",
+    "captured_utc": "2026-10-29T13:56:08.5674017Z",
+    "view": {
+      "origin": [
+        -10.0,
+        -7.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 5
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "Final V4 pass fusion and tapered wet response"
+  },
+  {
+    "directory": "industrial-spotlight",
+    "captured_utc": "2026-10-29T13:57:49.2238804Z",
+    "view": {
+      "origin": [
+        -10.0,
+        -7.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 5
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "Final V4 pass fusion and tapered wet response"
+  },
+  {
+    "directory": "materials",
+    "captured_utc": "2026-10-29T13:52:54.0444598Z",
+    "view": {
+      "origin": [
+        -11.0,
+        -9.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 4
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "Final V4 pass fusion and tapered wet response"
+  },
+  {
+    "directory": "materials-reflections",
+    "captured_utc": "2026-10-29T13:58:45.5749046Z",
+    "view": {
+      "origin": [
+        -11.0,
+        -9.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 6
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "Final V4 pass fusion and tapered wet response"
+  },
+  {
+    "directory": "materials-reflections-lamp-off",
+    "captured_utc": "2026-10-29T13:59:41.0256213Z",
+    "view": {
+      "origin": [
+        -11.0,
+        -9.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 6
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "Final V4 pass fusion and tapered wet response"
+  },
+  {
+    "directory": "reference",
+    "captured_utc": "2026-10-29T14:00:47.9332011Z",
+    "view": {
+      "origin": [
+        215.0,
+        -153.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 1
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "Final V4 pass fusion and tapered wet response"
+  },
+  {
+    "directory": "reference-contacts",
+    "captured_utc": "2026-10-29T12:08:44.7493158Z",
+    "view": {
+      "origin": [
+        215.0,
+        -153.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 2
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "V4 before final pass fusion; historical diagnostic, not final performance"
+  },
+  {
+    "directory": "reference-direct",
+    "captured_utc": "2026-10-29T12:10:08.1961699Z",
+    "view": {
+      "origin": [
+        215.0,
+        -153.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 2
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "V4 before final pass fusion; historical diagnostic, not final performance"
+  },
+  {
+    "directory": "reference-indirect",
+    "captured_utc": "2026-10-29T11:44:29.9322956Z",
+    "view": {
+      "origin": [
+        215.0,
+        -153.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 2
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "V4 before final pass fusion; historical diagnostic, not final performance"
+  },
+  {
+    "directory": "release-reference",
+    "captured_utc": "2026-10-29T14:20:47.6771018Z",
+    "view": {
+      "origin": [
+        215.0,
+        -153.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 1
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "Final V4 pass fusion and tapered wet response"
+  },
+  {
+    "directory": "resize-small",
+    "captured_utc": "2026-10-29T12:24:55.5146562Z",
+    "view": {
+      "origin": [
+        215.0,
+        -153.0
+      ],
+      "x": [
+        21.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        15.0
+      ],
+      "size": [
+        672,
+        480
+      ],
+      "map": 2
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "V4 before final pass fusion; historical diagnostic, not final performance"
+  },
+  {
+    "directory": "zoom-08",
+    "captured_utc": "2026-10-29T12:25:47.3521837Z",
+    "view": {
+      "origin": [
+        217.1,
+        -151.5
+      ],
+      "x": [
+        16.8,
+        0.0
+      ],
+      "y": [
+        0.0,
+        12.0
+      ],
+      "size": [
+        1344,
+        960
+      ],
+      "map": 2
+    },
+    "presets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "Native viewport, unmodified image data.",
+    "renderer_stage": "V4 before final pass fusion; historical diagnostic, not final performance"
+  }
+]

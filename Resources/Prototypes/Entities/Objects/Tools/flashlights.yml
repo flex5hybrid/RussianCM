@@ -1,9 +1,11 @@
-﻿- type: entity
+- type: entity
   name: flashlight
   parent: BaseItem
   id: FlashlightLantern
   description: It lights the way to freedom.
   components:
+  - type: CMUCinematicEmitter # CMU14
+    profile: CMUFlashlight
   - type: Tag
     tags:
     - Flashlight

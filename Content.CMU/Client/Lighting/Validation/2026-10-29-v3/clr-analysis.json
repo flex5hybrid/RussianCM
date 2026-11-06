@@ -1,0 +1,878 @@
+{
+  "events_lost": 0,
+  "pauses": [
+    {
+      "Utc": "2026-10-28T23:19:43.6365396Z",
+      "Milliseconds": 1.1886
+    },
+    {
+      "Utc": "2026-10-28T23:19:45.0025084Z",
+      "Milliseconds": 1.8153
+    },
+    {
+      "Utc": "2026-10-28T23:19:46.5204857Z",
+      "Milliseconds": 1.2381
+    },
+    {
+      "Utc": "2026-10-28T23:19:47.9483066Z",
+      "Milliseconds": 0.604
+    },
+    {
+      "Utc": "2026-10-28T23:19:49.3743898Z",
+      "Milliseconds": 0.6204
+    },
+    {
+      "Utc": "2026-10-28T23:19:50.7854162Z",
+      "Milliseconds": 0.5415
+    },
+    {
+      "Utc": "2026-10-28T23:19:52.2240017Z",
+      "Milliseconds": 0.5717
+    },
+    {
+      "Utc": "2026-10-28T23:19:53.6764812Z",
+      "Milliseconds": 0.5033
+    },
+    {
+      "Utc": "2026-10-28T23:19:55.1905159Z",
+      "Milliseconds": 0.5858
+    },
+    {
+      "Utc": "2026-10-28T23:19:56.62164Z",
+      "Milliseconds": 0.5517
+    },
+    {
+      "Utc": "2026-10-28T23:19:58.433379Z",
+      "Milliseconds": 0.6385
+    },
+    {
+      "Utc": "2026-10-28T23:20:01.458484Z",
+      "Milliseconds": 0.5307
+    },
+    {
+      "Utc": "2026-10-28T23:20:04.3951799Z",
+      "Milliseconds": 0.5592
+    },
+    {
+      "Utc": "2026-10-28T23:20:07.3487314Z",
+      "Milliseconds": 0.5569
+    },
+    {
+      "Utc": "2026-10-28T23:20:10.3380229Z",
+      "Milliseconds": 0.8456
+    },
+    {
+      "Utc": "2026-10-28T23:20:13.2855293Z",
+      "Milliseconds": 0.5473
+    },
+    {
+      "Utc": "2026-10-28T23:20:16.2942243Z",
+      "Milliseconds": 0.4924
+    },
+    {
+      "Utc": "2026-10-28T23:20:19.2744599Z",
+      "Milliseconds": 0.8704
+    },
+    {
+      "Utc": "2026-10-28T23:20:21.8129346Z",
+      "Milliseconds": 0.502
+    },
+    {
+      "Utc": "2026-10-28T23:20:24.3379912Z",
+      "Milliseconds": 0.4346
+    },
+    {
+      "Utc": "2026-10-28T23:20:26.8613727Z",
+      "Milliseconds": 0.4396
+    },
+    {
+      "Utc": "2026-10-28T23:20:29.3202392Z",
+      "Milliseconds": 0.4732
+    },
+    {
+      "Utc": "2026-10-28T23:20:31.7676311Z",
+      "Milliseconds": 0.4658
+    },
+    {
+      "Utc": "2026-10-28T23:20:34.2207398Z",
+      "Milliseconds": 0.4602
+    },
+    {
+      "Utc": "2026-10-28T23:20:36.7209819Z",
+      "Milliseconds": 0.5245
+    },
+    {
+      "Utc": "2026-10-28T23:20:39.1668909Z",
+      "Milliseconds": 0.4606
+    },
+    {
+      "Utc": "2026-10-28T23:20:41.6526684Z",
+      "Milliseconds": 0.5111
+    },
+    {
+      "Utc": "2026-10-28T23:20:43.0878071Z",
+      "Milliseconds": 0.7219
+    },
+    {
+      "Utc": "2026-10-28T23:20:44.5179079Z",
+      "Milliseconds": 0.5663
+    },
+    {
+      "Utc": "2026-10-28T23:20:45.9463383Z",
+      "Milliseconds": 0.7845
+    },
+    {
+      "Utc": "2026-10-28T23:20:47.3737719Z",
+      "Milliseconds": 0.675
+    },
+    {
+      "Utc": "2026-10-28T23:20:48.8120797Z",
+      "Milliseconds": 0.6018
+    },
+    {
+      "Utc": "2026-10-28T23:20:50.259331Z",
+      "Milliseconds": 0.566
+    },
+    {
+      "Utc": "2026-10-28T23:20:51.7095357Z",
+      "Milliseconds": 0.5917
+    },
+    {
+      "Utc": "2026-10-28T23:20:53.1572806Z",
+      "Milliseconds": 0.5864
+    },
+    {
+      "Utc": "2026-10-28T23:20:54.5893058Z",
+      "Milliseconds": 0.6567
+    },
+    {
+      "Utc": "2026-10-28T23:20:55.9964104Z",
+      "Milliseconds": 0.5811
+    },
+    {
+      "Utc": "2026-10-28T23:20:57.4345197Z",
+      "Milliseconds": 0.5673
+    },
+    {
+      "Utc": "2026-10-28T23:20:58.8631734Z",
+      "Milliseconds": 0.6816
+    },
+    {
+      "Utc": "2026-10-28T23:21:00.3491536Z",
+      "Milliseconds": 0.6022
+    },
+    {
+      "Utc": "2026-10-28T23:21:01.8124856Z",
+      "Milliseconds": 0.695
+    },
+    {
+      "Utc": "2026-10-28T23:21:03.2533241Z",
+      "Milliseconds": 0.7005
+    },
+    {
+      "Utc": "2026-10-28T23:21:04.6264833Z",
+      "Milliseconds": 0.8638
+    },
+    {
+      "Utc": "2026-10-28T23:21:06.0441519Z",
+      "Milliseconds": 0.6019
+    },
+    {
+      "Utc": "2026-10-28T23:21:07.4577207Z",
+      "Milliseconds": 0.5732
+    },
+    {
+      "Utc": "2026-10-28T23:21:08.8884303Z",
+      "Milliseconds": 0.6281
+    },
+    {
+      "Utc": "2026-10-28T23:21:10.2837741Z",
+      "Milliseconds": 0.6722
+    },
+    {
+      "Utc": "2026-10-28T23:21:11.6780874Z",
+      "Milliseconds": 0.6282
+    },
+    {
+      "Utc": "2026-10-28T23:21:13.0909963Z",
+      "Milliseconds": 0.767
+    },
+    {
+      "Utc": "2026-10-28T23:21:14.5092938Z",
+      "Milliseconds": 0.6788
+    },
+    {
+      "Utc": "2026-10-28T23:21:15.9296706Z",
+      "Milliseconds": 0.5836
+    },
+    {
+      "Utc": "2026-10-28T23:21:17.3648163Z",
+      "Milliseconds": 0.6838
+    },
+    {
+      "Utc": "2026-10-28T23:21:18.7732734Z",
+      "Milliseconds": 0.667
+    },
+    {
+      "Utc": "2026-10-28T23:21:20.1792076Z",
+      "Milliseconds": 0.9293
+    },
+    {
+      "Utc": "2026-10-28T23:21:21.6438395Z",
+      "Milliseconds": 0.6194
+    },
+    {
+      "Utc": "2026-10-28T23:21:23.1047594Z",
+      "Milliseconds": 0.7622
+    },
+    {
+      "Utc": "2026-10-28T23:21:24.5856258Z",
+      "Milliseconds": 0.625
+    },
+    {
+      "Utc": "2026-10-28T23:21:26.3705519Z",
+      "Milliseconds": 0.58
+    },
+    {
+      "Utc": "2026-10-28T23:21:29.2006136Z",
+      "Milliseconds": 0.5126
+    },
+    {
+      "Utc": "2026-10-28T23:21:31.0398337Z",
+      "Milliseconds": 0.811
+    },
+    {
+      "Utc": "2026-10-28T23:21:32.9268028Z",
+      "Milliseconds": 0.9499
+    },
+    {
+      "Utc": "2026-10-28T23:21:34.394082Z",
+      "Milliseconds": 0.7213
+    },
+    {
+      "Utc": "2026-10-28T23:21:35.9880797Z",
+      "Milliseconds": 0.9382
+    },
+    {
+      "Utc": "2026-10-28T23:21:37.4549938Z",
+      "Milliseconds": 0.788
+    },
+    {
+      "Utc": "2026-10-28T23:21:38.9333855Z",
+      "Milliseconds": 0.6194
+    },
+    {
+      "Utc": "2026-10-28T23:21:40.408004Z",
+      "Milliseconds": 0.9728
+    },
+    {
+      "Utc": "2026-10-28T23:21:41.883569Z",
+      "Milliseconds": 0.8392
+    },
+    {
+      "Utc": "2026-10-28T23:21:43.3364536Z",
+      "Milliseconds": 0.661
+    },
+    {
+      "Utc": "2026-10-28T23:21:44.837768Z",
+      "Milliseconds": 0.6508
+    },
+    {
+      "Utc": "2026-10-28T23:21:46.3142514Z",
+      "Milliseconds": 0.6219
+    },
+    {
+      "Utc": "2026-10-28T23:21:47.8048942Z",
+      "Milliseconds": 0.5849
+    },
+    {
+      "Utc": "2026-10-28T23:21:49.3114926Z",
+      "Milliseconds": 0.6657
+    },
+    {
+      "Utc": "2026-10-28T23:21:50.7937044Z",
+      "Milliseconds": 0.6224
+    },
+    {
+      "Utc": "2026-10-28T23:21:52.2133283Z",
+      "Milliseconds": 0.6851
+    },
+    {
+      "Utc": "2026-10-28T23:21:53.68611Z",
+      "Milliseconds": 0.591
+    },
+    {
+      "Utc": "2026-10-28T23:21:55.1658374Z",
+      "Milliseconds": 0.658
+    },
+    {
+      "Utc": "2026-10-28T23:21:56.6412608Z",
+      "Milliseconds": 0.6669
+    },
+    {
+      "Utc": "2026-10-28T23:21:58.1268023Z",
+      "Milliseconds": 0.8612
+    },
+    {
+      "Utc": "2026-10-28T23:21:59.5688485Z",
+      "Milliseconds": 0.5658
+    },
+    {
+      "Utc": "2026-10-28T23:22:00.9878475Z",
+      "Milliseconds": 0.6067
+    },
+    {
+      "Utc": "2026-10-28T23:22:02.422205Z",
+      "Milliseconds": 0.7392
+    }
+  ],
+  "collections": [
+    {
+      "utc": "2026-10-28T23:19:43.6365926Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:19:45.0025789Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:19:46.5205424Z",
+      "depth": 1,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:19:47.9483465Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:19:49.3744454Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:19:50.7854571Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:19:52.2240473Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:19:53.6765179Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:19:55.1905615Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:19:56.6216832Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:19:58.4334231Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:01.4585219Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:04.3952188Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:07.3487718Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:10.3380606Z",
+      "depth": 1,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:13.2855656Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:16.2942656Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:19.2745001Z",
+      "depth": 1,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:21.8129877Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:24.3380298Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:26.8614162Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:29.3202817Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:31.7676752Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:34.2207831Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:36.7210351Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:39.1669303Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:41.6527107Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:43.0878527Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:44.5179428Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:45.9463869Z",
+      "depth": 1,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:47.3738241Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:48.8121282Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:50.2593713Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:51.7095794Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:53.1573217Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:54.5893568Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:55.9964768Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:57.4345596Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:20:58.8632117Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:00.3492177Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:01.8125414Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:03.2533674Z",
+      "depth": 1,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:04.6265189Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:06.0442007Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:07.4577559Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:08.8884768Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:10.2838182Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:11.6781329Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:13.0910861Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:14.5093496Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:15.9297055Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:17.3648645Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:18.7733184Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:20.1792551Z",
+      "depth": 1,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:21.6438796Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:23.1048289Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:24.5856714Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:26.3706003Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:29.2006535Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:31.0398642Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:32.9268512Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:34.3941282Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:35.9881155Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:37.4550744Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:38.9334201Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:40.4080503Z",
+      "depth": 1,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:41.8836152Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:43.3364982Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:44.8378158Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:46.3142958Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:47.8049288Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:49.3115427Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:50.7937437Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:52.2134064Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:53.6861552Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:55.1658834Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:56.6413116Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:58.1268472Z",
+      "depth": 1,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:21:59.5688874Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:22:00.9878946Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-28T23:22:02.4222733Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    }
+  ],
+  "stages": [
+    {
+      "quality": 0,
+      "measure_utc": "2026-10-28T23:19:59.7496311Z",
+      "measurement_ms": 20006.688000000002,
+      "gc_pause_count": 7,
+      "gc_pause_total_ms": 4.4025,
+      "gc_pause_max_ms": 0.8704
+    },
+    {
+      "quality": 1,
+      "measure_utc": "2026-10-28T23:20:21.7537558Z",
+      "measurement_ms": 20004.375,
+      "gc_pause_count": 9,
+      "gc_pause_total_ms": 4.2716,
+      "gc_pause_max_ms": 0.5245
+    },
+    {
+      "quality": 2,
+      "measure_utc": "2026-10-28T23:20:43.7565308Z",
+      "measurement_ms": 20003.101000000002,
+      "gc_pause_count": 14,
+      "gc_pause_total_ms": 8.8561,
+      "gc_pause_max_ms": 0.7845
+    },
+    {
+      "quality": 3,
+      "measure_utc": "2026-10-28T23:21:05.7617679Z",
+      "measurement_ms": 20005.244000000002,
+      "gc_pause_count": 14,
+      "gc_pause_total_ms": 9.4197,
+      "gc_pause_max_ms": 0.9293
+    }
+  ],
+  "sampled_allocation_bytes": {
+    "System.Single": 202222568,
+    "System.Numerics.Vector2": 187074152,
+    "System.Boolean": 113730320,
+    "System.ValueTuple\u00602[Robust.Shared.GameObjects.EntityUid,Robust.Shared.GameObjects.OccluderTreeComponent][]": 71633984,
+    "System.Numerics.Vector3": 44655512,
+    "Enumerator[Robust.Shared.GameObjects.EntityUid]": 35281400,
+    "Robust.Shared.GameObjects.EntityUid[]": 27183064,
+    "\u003C\u003Ec__DisplayClass175_0": 20359728,
+    "System.SZGenericArrayEnumerator\u00601[Robust.Shared.GameObjects.EntityUid]": 19079632,
+    "System.String": 18648520,
+    "\u003C\u003Ec__DisplayClass19_0\u00602[System.Object,System.Int32]": 15883432,
+    "Replica\u00601[System.Threading.Tasks.RangeWorker]": 13953152,
+    "Slot[System.Threading.Tasks.TaskReplicator\u002BReplica][]": 13645472,
+    "GLCaps": 13532176,
+    "Robust.Client.Graphics.VectorFont": 12895536,
+    "System.Numerics.Vector4": 12683544,
+    "ContingentProperties": 12042296,
+    "System.Byte[]": 11878720,
+    "Entry[Robust.Shared.Physics.ComponentTreeEntry\u00601[Robust.Client.GameObjects.SpriteComponent]][]": 10873104,
+    "\u003CEnumerateHeld\u003Ed__42": 10658168,
+    "\u003CGetActorUis\u003Ed__29": 10127000,
+    "Enumerator[Robust.Client.GameObjects.SpriteComponent\u002BLayer]": 8954400,
+    "System.Threading.Tasks.IndexRange[]": 8637960,
+    "System.Action": 7993232,
+    "System.Threading.Tasks.Task": 7251056
+  }
+}

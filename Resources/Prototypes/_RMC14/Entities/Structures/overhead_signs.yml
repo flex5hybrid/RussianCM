@@ -23,6 +23,8 @@
   id: RMCOverheadSignNeon
   abstract: true
   components:
+  - type: CMUCinematicEmitter # CMU14: actual neon lettering, gated by native PointLight power.
+    profile: CMUNeon
   - type: Sprite
     sprite: _RMC14/Structures/overhead_neon_signs.rsi
     layers:

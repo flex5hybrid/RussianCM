@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "reference_size": [1344, 960],
+  "regions": {
+    "A_vendors": [170, 240, 430, 370],
+    "B_overhead": [30, 150, 1230, 340],
+    "C_corridor": [450, 350, 740, 550],
+    "D_statue": [750, 500, 990, 730],
+    "E_technical": [1050, 200, 1340, 950],
+    "F_lower": [580, 750, 1100, 958],
+    "red_near": [185, 315, 270, 375],
+    "red_far": [30, 375, 120, 435],
+    "cyan_near": [298, 315, 402, 380],
+    "cyan_far": [450, 365, 530, 430],
+    "warm_near": [580, 330, 650, 390],
+    "warm_far": [760, 400, 830, 450],
+    "actor": [646, 445, 700, 520]
+  },
+  "thresholds": {
+    "maximum_white_fraction": 0.025,
+    "minimum_actor_contrast_ratio": 0.75,
+    "minimum_local_color_bias": 0.003,
+    "minimum_color_locality_difference": 0.002,
+    "minimum_source_off_change": 0.0005,
+    "straight_gradient": 0.025,
+    "straight_run_pixels": 48,
+    "original_edge_gradient": 0.02
+  },
+  "rationale": "Regions follow the supplied 1344x960 reference. White coverage is capped at 2.5% of visible pixels; actor RMS contrast may not fall by more than 25%. Color/locality bounds require a positive linear-light signal above PNG quantization. Straight runs are candidates for visual review, excluding original edges, tile boundaries and FOV. Thresholds are fixed before the first V4 native capture; they are regression guards, not art acceptance."
+}
