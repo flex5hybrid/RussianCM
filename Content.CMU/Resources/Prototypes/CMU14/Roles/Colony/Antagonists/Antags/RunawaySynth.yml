@@ -2,6 +2,7 @@
   id: RunawaySynth
   prefRoles: [ RunawaySynthRole ]
   jobBlacklistGroup:
+  - RuMCNoColonialAntagsJobs # RuMC edit
   - AllGovforCommandStaff
   - AllOpforCommandStaff
 # jobBlacklist:

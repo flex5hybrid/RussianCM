@@ -3,6 +3,7 @@
   prefRoles: [ ReplicantRole ]
   jobBlacklistGroup:
   - RuMCColonyLeadershipJobs # RuMC edit
+  - RuMCNoColonialAntagsJobs # RuMC edit
   - AllGovforCommandStaff
   - AllOpforCommandStaff
   briefing:

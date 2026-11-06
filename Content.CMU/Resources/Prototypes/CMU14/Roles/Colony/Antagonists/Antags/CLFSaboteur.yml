@@ -3,6 +3,7 @@
   prefRoles: [ CLFSaboteurRole ]
   jobBlacklistGroup:
   - RuMCColonyLeadershipJobs # RuMC edit
+  - RuMCNoColonialAntagsJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
   - AllCLFJobs
