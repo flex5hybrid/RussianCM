@@ -43,7 +43,7 @@ cmu-ui-options-chat-crt-intensity = Chat CRT strength
 cmu-ui-options-examine-opacity = Examine background opacity
 
 cmu-hud-layout-title = HUD layout editor
-cmu-hud-layout-help = Select a HUD element and drag it. Default and Separated have independent layouts. Closing without saving cancels changes. Sizes use UI units.
+cmu-hud-layout-help = Drag a HUD frame to move it. Drag its bottom-right corner to resize. The editor toolbar can also be moved.
 cmu-hud-layout-snap = Snap to grid (8)
 cmu-hud-layout-x = Left
 cmu-hud-layout-y = Top
@@ -77,3 +77,5 @@ cmu-hud-layout-ammo = Ammo counter
 cmu-hud-layout-equipmentpanel = Equipment drawer
 cmu-hud-layout-inventorybutton = Equipment button
 cmu-hud-layout-votemenu = Votes
+
+cmu-hud-layout-individual = Individual buttons and slots

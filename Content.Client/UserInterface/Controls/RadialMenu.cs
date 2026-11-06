@@ -328,7 +328,7 @@ public sealed class RadialMenuOuterAreaButton : RadialMenuButtonBase
 }
 
 [Virtual]
-public class RadialMenuButton : RadialMenuButtonBase
+public partial class RadialMenuButton : RadialMenuButtonBase // CMU14: shared choice feedback.
 {
     /// <summary>
     /// Upon clicking this button the radial menu will be moved to the layer of this control.

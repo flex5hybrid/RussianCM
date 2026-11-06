@@ -73,6 +73,9 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
             _editor = null;
         };
         _editor.Open();
+        // Keep menu/action rails available to grab instead of covering them with the editor.
+        if (UIManager.ActiveScreen is InGameScreen screen)
+            LayoutContainer.SetPosition(_editor, new Vector2(MathF.Max(0, (screen.Width - _editor.SetWidth) / 2), 12));
     }
 
     public void Save()

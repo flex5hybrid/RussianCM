@@ -398,7 +398,7 @@ public sealed class ListContainerButton : ContainerButton, IEntityControl
         AddStyleClass(StyleClassButton);
         Data = data;
         Index = index;
-        StyleBoxOverride = new StyleBoxFlat(Color.White);
+        StyleBoxOverride = new Content.Client.CMU14.Interface.Hud.CmuHudListStyleBox(this); // CMU14: quiet hover; legacy fallback.
         // AddChild(Background = new PanelContainer
         // {
         //     HorizontalExpand = true,

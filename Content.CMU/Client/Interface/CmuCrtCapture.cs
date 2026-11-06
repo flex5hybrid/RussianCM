@@ -98,7 +98,7 @@ public sealed class CmuCrtCapture
                 {
                     Capturing = false;
                 }
-            }, Color.Transparent);
+            }, Color.Black.WithAlpha(0f)); // Empty premultiplied pixels must have zero RGB.
 
             var hz = Math.Clamp(_cfg.GetCVar(CCVars.CMUCrtDisplayRefreshRate), 12, 60);
             _shader.SetParameter("strength", strength);

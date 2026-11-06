@@ -1,13 +1,13 @@
-﻿<ui:RMCBuildChoiceControl
+<ui:RMCBuildChoiceControl
     xmlns="https://spacestation14.io"
     xmlns:ui="clr-namespace:Content.Client._RMC14.Construction">
     <BoxContainer Orientation="Horizontal">
         <Button Name="Button" Access="Public"
                 HorizontalExpand="True" VerticalExpand="False"
-                StyleClasses="ButtonSquare" Margin="2">
+                StyleClasses="ButtonSquare CmuHudCommand" Margin="2">
             <BoxContainer Orientation="Horizontal" Margin="0">
                 <Control MinWidth="2"/>
-                <RichTextLabel Name="NameLabel" Access="Public" VerticalAlignment="Center"/>
+                <RichTextLabel Name="NameLabel" Access="Public" VerticalAlignment="Center" StyleClasses="CmuHudBody" MouseFilter="Ignore"/>
             </BoxContainer>
         </Button>
     </BoxContainer>

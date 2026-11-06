@@ -46,7 +46,7 @@ cmu-ui-options-chat-crt-intensity = Сила эффекта ЭЛТ в чате
 cmu-ui-options-examine-opacity = Непрозрачность окна осмотра
 
 cmu-hud-layout-title = Расположение элементов HUD
-cmu-hud-layout-help = Выберите элемент в списке или на экране и перетащите его. Сохранение отдельно для Default и Separated. Закрытие без сохранения отменяет изменения. Размер задаётся в единицах интерфейса.
+cmu-hud-layout-help = Перетащите рамку элемента мышью. Потяните за нижний правый угол для изменения размера. Панель редактора тоже можно передвинуть.
 cmu-hud-layout-snap = Привязка к сетке (8)
 cmu-hud-layout-x = Слева
 cmu-hud-layout-y = Сверху
@@ -80,3 +80,5 @@ cmu-hud-layout-ammo = Счётчик боеприпасов
 cmu-hud-layout-equipmentpanel = Окно экипировки
 cmu-hud-layout-inventorybutton = Кнопка экипировки
 cmu-hud-layout-votemenu = Голосования
+
+cmu-hud-layout-individual = Отдельные кнопки и слоты
