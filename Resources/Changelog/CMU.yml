@@ -17248,10 +17248,22 @@ Entries:
   time: '2026-11-02T14:04:24.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2423
 - author: ArturUr1
+  time: '2026-11-02T18:17:46Z'
+  changes:
+  - type: Code
+    message: Исправлены ID кастомных крафтов RuMC
+  - type: Code
+    message: Крафты грядок через меню строительства исправлены
+  id: 1043
+  url: https://github.com/flex5hybrid/RussianCM/pull/544
+  labels:
+  - 'Changes: No C#'
+  - M
+- author: ArturUr1
   changes:
   - message: Synthetics can now throw creatures they are carrying on their shoulder.
     type: Add
-  id: 954
+  id: 1006
   time: '2026-11-02T19:06:12.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2422
 - author: rokudara-sen
@@ -17292,7 +17304,7 @@ Entries:
   - message: Yautja arrows, xeno skulls and pelts, the thrall full armour, the bracers,
       and the Anubys and Ronin masks use the current cmss13 sprites.
     type: Tweak
-  id: 955
+  id: 1007
   time: '2026-11-02T19:28:53.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2430
 - author: TheHellFireo
@@ -17320,15 +17332,25 @@ Entries:
   - message: Shortened FOB gun prompts and clarified platform relocation and powerloader
       installation instructions.
     type: Tweak
-  id: 956
+  id: 1008
   time: '2026-11-02T19:30:41.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2431
+- author: RomiGur
+  time: '2026-11-02T20:28:31Z'
+  changes:
+  - type: Tweak
+    message: Администратор колонии, маршал БКМ и послы больше не могут стать колониальными
+      антагонистами. Исключение - беглый синтетик
+  id: 1044
+  url: https://github.com/flex5hybrid/RussianCM/pull/588
+  labels:
+  - S
 - author: TheHellFireo
   changes:
   - message: Pit and retractable ladders now show the correct downward sprite at their
       upper ends.
     type: Fix
-  id: 957
+  id: 1009
   time: '2026-11-02T21:41:54.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2434
 - author: TheHellFireo
@@ -17336,9 +17358,21 @@ Entries:
   - message: Ladders warn and keep you in place if their exit has no secure footing,
       instead of dropping you into a shaft.
     type: Fix
-  id: 958
+  id: 1010
   time: '2026-11-02T21:42:05.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2437
+- author: '- add: Яутджа могут выбрать голос из набора суровых голосов охотников в
+    настройках CMU.'
+  time: '2026-11-02T21:54:22Z'
+  changes:
+  - type: Tweak
+    message: Голоса яутджа ограничены подходящими вариантами и больше не подменяются
+      на неподходящие.
+  id: 1045
+  url: https://github.com/flex5hybrid/RussianCM/pull/589
+  labels:
+  - 'Changes: Translations'
+  - M
 - author: RomiGur
   changes:
   - message: EMBLR MANPAD can lock onto and shoot down gunships and Blackfoots
@@ -17352,7 +17386,7 @@ Entries:
   - message: Blood, scorch and explosion decals no longer appear over holes in the
       floor
     type: Fix
-  id: 959
+  id: 1011
   time: '2026-11-02T22:12:56.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2403
 - author: TheHellFireo
@@ -17372,7 +17406,7 @@ Entries:
   - message: Tab-complete cavern settings, biome names and presets with cmu_caverns
       before Insurgency.
     type: Add
-  id: 960
+  id: 1012
   time: '2026-11-02T22:17:14.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2436
 - author: TheHellFireo
@@ -17400,7 +17434,7 @@ Entries:
   - message: Clearer fluid quantities and a short illustrated Pipes guide explain
       connections, diesel production and selling.
     type: Tweak
-  id: 961
+  id: 1013
   time: '2026-11-03T16:54:55.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2450
 - author: maertayn
@@ -17499,7 +17533,7 @@ Entries:
       ForceOnForce and Insurgency, gamemode blacklisting consolidated into DestroyOnPreset
       with an inverted whitelist mode, and FoF playtime privacy landed
     type: Code
-  id: 962
+  id: 1014
   time: '2026-11-03T18:03:03.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2399
 - author: TheHellFireo
@@ -17507,7 +17541,7 @@ Entries:
   - message: Fixed runechat briefly flashing in the top-left corner before appearing
       above the speaker.
     type: Fix
-  id: 963
+  id: 1015
   time: '2026-11-03T18:57:11.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2453
 - author: SupremecyS
@@ -17520,7 +17554,7 @@ Entries:
     type: Tweak
   - message: Readded Command peaked caps to UPP command vendor
     type: Add
-  id: 964
+  id: 1016
   time: '2026-11-03T20:04:16.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2447
 - author: rokudara-sen
@@ -17528,7 +17562,7 @@ Entries:
   - message: Yautja hunt prey now spawn as CMU third parties (CLF commandos, WY PMCs,
       RMC rapid response, freelancers) instead of the old presets.
     type: Tweak
-  id: 965
+  id: 1017
   time: '2026-11-03T20:04:25.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2448
 - author: maertayn
@@ -17536,7 +17570,7 @@ Entries:
   - message: Colony land enforcement is off by default now; servers can turn it back
       on with cmu.land_enforcement
     type: Tweak
-  id: 966
+  id: 1018
   time: '2026-11-03T23:13:08.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2455
 - author: maertayn
@@ -17546,9 +17580,26 @@ Entries:
     type: Fix
   - message: Wey-Yu PMC ghost warp menus now order jobs by their display weight
     type: Tweak
-  id: 967
+  id: 1019
   time: '2026-11-04T04:05:24.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2462
+- author: '- add: Добавлен CRT HUD с панелью взаимодействий с окружением и каталогом
+    доступных эмоций.'
+  time: '2026-11-04T19:24:35Z'
+  changes:
+  - type: Tweak
+    message: Обновлено оформление чата, экипировки, хранилищ, осмотра, контекстных
+      меню и игровых окон.
+  - type: Fix
+    message: Исправлены размещение элементов Default HUD, восстановление размеров
+      чата и привязка верхней панели при изменении его ширины.
+  id: 1046
+  url: https://github.com/flex5hybrid/RussianCM/pull/599
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Translations'
+  - 'Changes: Shaders'
+  - L
 - author: maertayn
   changes:
   - message: Consolidated and added new Discord relay systems in `HelpRelay`, check
@@ -17566,7 +17617,7 @@ Entries:
       cables and also to the vendors + ASRS, reparented power panels on APCs to CMApc
       (BUG-1270)
     type: Fix
-  id: 968
+  id: 1020
   time: '2026-11-04T20:01:50.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2468
 - author: TheHellFireo
@@ -17582,7 +17633,7 @@ Entries:
   - message: Direct power ports now explain how to connect machines to electrical
       panels using cable coils.
     type: Fix
-  id: 969
+  id: 1021
   time: '2026-11-05T11:13:26.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2473
 - author: TheHellFireo
@@ -17592,7 +17643,7 @@ Entries:
     type: Fix
   - message: Digging previews now mark visibly occupied or blocked tiles red.
     type: Fix
-  id: 970
+  id: 1022
   time: '2026-11-05T11:17:54.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2474
 - author: TheHellFireo
@@ -17603,7 +17654,7 @@ Entries:
       tiles of an opening in their firing direction, while nearby roofs leave open-air
       shots usable.
     type: Fix
-  id: 971
+  id: 1023
   time: '2026-11-05T12:07:50.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2475
 - author: TheHellFireo
@@ -17615,7 +17666,7 @@ Entries:
     type: Fix
   - message: Climbing and ladder landings reject solid obstructions.
     type: Fix
-  id: 972
+  id: 1024
   time: '2026-11-05T12:36:32.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2476
 - author: TheHellFireo
@@ -17643,7 +17694,7 @@ Entries:
     type: Fix
   - message: Ladders reject destinations that become blocked during a climb.
     type: Fix
-  id: 973
+  id: 1025
   time: '2026-11-05T12:37:57.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2477
 - author: TheHellFireo
@@ -17656,7 +17707,7 @@ Entries:
   - message: Bracer experiments no longer print paper notes; recovered discoveries
       stay in the interface.
     type: Remove
-  id: 974
+  id: 1026
   time: '2026-11-05T12:38:26.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2478
 - author: maertayn
@@ -17684,7 +17735,7 @@ Entries:
   - message: CI shard waves replace the admission scheduler; no protected environments,
       no PAT holds, priority-ordered waves
     type: Code
-  id: 975
+  id: 1027
   time: '2026-11-05T23:04:51.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2482
 - author: maertayn
@@ -17692,9 +17743,26 @@ Entries:
   - message: shard CI runs in reserved chunked waves so builds and helper jobs never
       queue behind shard legs
     type: Code
-  id: 976
+  id: 1028
   time: '2026-11-06T00:05:00.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2483
+- author: '- add: Добавлены настраиваемый CRT-интерфейс и кириллица в основном экранном
+    шрифте.'
+  time: '2026-11-06T01:27:20Z'
+  changes:
+  - type: Tweak
+    message: Обновлены оформление игровых окон, прозрачность чата и размещение элементов
+      HUD.
+  - type: Fix
+    message: Исправлены сброс прокрутки Default-чата, размещение хранилищ, первое
+      открытие экипировки и хоткей поиска чата.
+  id: 1047
+  url: https://github.com/flex5hybrid/RussianCM/pull/602
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Translations'
+  - 'Changes: Shaders'
+  - L
 - author: ILoveDespoiler
   changes:
   - message: 'Added a brand new Leap ability onto Harbinger: "Flurry Rush" allows
@@ -17706,7 +17774,7 @@ Entries:
     type: Add
   - message: Harbinger no longer has the Impale ability.
     type: Remove
-  id: 977
+  id: 1029
   time: '2026-11-06T13:04:39.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2472
 - author: KeiKiyomi
@@ -17715,7 +17783,7 @@ Entries:
       wit a 2 second delay equip, and 4 second unequip. Someone can come up behind
       you and take your dispo off as well
     type: Add
-  id: 978
+  id: 1030
   time: '2026-11-06T13:05:14.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2457
 - author: KeiKiyomi
@@ -17723,7 +17791,7 @@ Entries:
   - message: Slings can now attach rifles to a worn vest instead of into the suit
       storage slot
     type: Add
-  id: 979
+  id: 1031
   time: '2026-11-06T13:05:31.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2461
 - author: coolbloxxie
@@ -17731,7 +17799,7 @@ Entries:
   - message: photographs and suspect photos fit in folders, clipboards, and filing
       cabinets
     type: Tweak
-  id: 980
+  id: 1032
   time: '2026-11-06T13:06:21.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2446
 - author: rokudara-sen
@@ -17762,21 +17830,21 @@ Entries:
     type: Tweak
   - message: Stranded Yautja no longer spawn in Colony Fall.
     type: Tweak
-  id: 981
+  id: 1033
   time: '2026-11-06T13:08:28.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2433
 - author: KeiKiyomi
   changes:
   - message: Xeno's are now slowed and have their vision hazed inside gas OBs
     type: Fix
-  id: 982
+  id: 1034
   time: '2026-11-06T13:08:46.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2432
 - author: Mensla
   changes:
   - message: Removed two unfitting warcries.
     type: Remove
-  id: 983
+  id: 1035
   time: '2026-11-06T13:11:23.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2442
 - author: IntelligenceOfficerArthur
@@ -17789,7 +17857,7 @@ Entries:
     type: Add
   - message: For ease of making intelligence operatin!
     type: Admin
-  id: 984
+  id: 1036
   time: '2026-11-06T13:14:03.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2479
 - author: CatoChristopherMrow
@@ -17797,7 +17865,7 @@ Entries:
   - message: Large amount of gunship maintenance, including two new doorguns, alot
       of bugfixes, new huds, and tweaks
     type: Add
-  id: 985
+  id: 1037
   time: '2026-11-06T13:17:34.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2438
 - author: KeiKiyomi
@@ -17808,7 +17876,7 @@ Entries:
     type: Add
   - message: All vehicles can now be inspected for rigged explosives.
     type: Add
-  id: 986
+  id: 1038
   time: '2026-11-06T15:01:46.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2418
 - author: KeiKiyomi
@@ -17817,7 +17885,7 @@ Entries:
       its first takeoff or flyby. The gunship waits for everyone to disembark before
       returning to the fleet, and the Mohawk lands on its pad.
     type: Add
-  id: 987
+  id: 1039
   time: '2026-11-06T15:13:23.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2409
 - author: KeiKiyomi
@@ -17831,7 +17899,7 @@ Entries:
   - message: Support clouds spread through doors and vertical openings, while walls,
       floors, and roofs block their spread.
     type: Tweak
-  id: 988
+  id: 1040
   time: '2026-11-06T15:24:01.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2464
 - author: Scott-SS14
@@ -17840,7 +17908,7 @@ Entries:
     type: Add
   - message: CPR compressor functionality to CPR dummies.
     type: Add
-  id: 989
+  id: 1041
   time: '2026-11-06T15:45:20.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2427
 - author: ILoveDespoiler
@@ -17853,7 +17921,7 @@ Entries:
   - message: Edited the Ciph Hint document to account for two species being sent rather
       than one.
     type: Tweak
-  id: 990
+  id: 1042
   time: '2026-11-06T15:46:02.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2408
 Name: CMU
