@@ -48,7 +48,7 @@
       FullAuto:
         fireDelay: 0.02
         maxScatterModifier: 80
-        shotsToMaxScatter: 2
+        shotsToMaxScatter: 6
   - type: RMCWeaponAccuracy
     accuracyMultiplier: 0.9
     accuracyMultiplierUnwielded: 0.65
