@@ -206,6 +206,7 @@ public sealed class CmuHudWorkspaceTest : GameTest
             var update = ui.GetType().GetMethod("FrameUpdate")!.CreateDelegate<Action<FrameEventArgs>>(ui);
             var cfg = Client.ResolveDependency<IConfigurationManager>();
             Client.ResolveDependency<ILocalizationManager>().SetCulture(CultureInfo.GetCultureInfo("ru-RU"));
+            cfg.SetCVar(AU14CCVars.SeparatedHudStatusSide, "left");
             var host = new LayoutContainer();
             InGameScreen screen = separated ? new SeparatedChatGameScreen() : new DefaultGameScreen();
             host.AddChild(screen);
@@ -228,6 +229,7 @@ public sealed class CmuHudWorkspaceTest : GameTest
             hotbar.HandContainer.TryAddButton(new HandButton("left", HandLocation.Left));
             for (var index = 0; index < 4; index++)
                 actions.ActionsContainer.AddChild(new ActionButton(CEntMan) { MinSize = new Vector2(64) });
+            inventory.InventoryButton.Visible = true; // Simulate a controlled entity with equipment slots.
             inventory.CMUSetEquipmentVisible(true);
             var alerts = screen.GetWidget<AlertsUI>()!;
             var states = new Dictionary<AlertKey, AlertState>();
@@ -237,6 +239,10 @@ public sealed class CmuHudWorkspaceTest : GameTest
                 states[prototype.AlertKey] = new AlertState { Type = id, Severity = prototype.MinSeverity };
             }
             alerts.SyncControls(Client.System<AlertsSystem>(), null, states);
+            Assert.That(alerts.AlertContainer.Children.OfType<Content.Client.UserInterface.Systems.Alerts.Controls.AlertControl>()
+                .Single(control => control.Alert.ID == "AreaInfo").Visible, Is.True, "Location is essential HUD information.");
+            Assert.That(inventory.FindControl<CmuHudPanel>("EquipmentPanel").RasterEnabled, Is.False,
+                "Equipment must retain native sprites and hit regions without a CRT capture.");
 
             try
             {
@@ -335,6 +341,56 @@ public sealed class CmuHudWorkspaceTest : GameTest
                 Assert.That(chat.ChatInput.SearchInput.Parent!.Parent, Is.SameAs(chat.ChatInput));
             }
             finally{chat.Release();}
+        });
+    }
+
+    [TestCase(false)]
+    [TestCase(true)]
+    public async Task SavedHudPlacementMovesItsHitRegionAndCanBeReset(bool separated)
+    {
+        await Client.WaitAssertion(() =>
+        {
+            var ui = Client.ResolveDependency<IUserInterfaceManager>();
+            var cfg = Client.ResolveDependency<IConfigurationManager>();
+            var previous = cfg.GetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout);
+            cfg.SetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout, "");
+            if (separated) ui.LoadScreen<SeparatedChatGameScreen>();
+            else ui.LoadScreen<DefaultGameScreen>();
+            try
+            {
+                var screen = (InGameScreen) ui.ActiveScreen!;
+                var controller = ui.GetUIController<CmuHudLayoutController>();
+                var size = new Vector2(1280, 900);
+                void Arrange()
+                {
+                    screen.InvalidateMeasure();
+                    screen.Measure(size);
+                    screen.Arrange(UIBox2.FromDimensions(Vector2.Zero, size));
+                }
+                Arrange();
+                var entry = controller.GetEntries().Single(e => e.Id == "menu");
+                var parent = entry.Control.Parent;
+                var natural = entry.Control.GlobalPosition;
+                controller.Place(entry, new Vector2(180, 210), entry.Control.Size);
+                Arrange();
+                Assert.That(entry.Control.Parent, Is.SameAs(parent), "Editing must preserve native ownership.");
+                Assert.That(entry.Control.GlobalPosition.X, Is.EqualTo(180).Within(2));
+                Assert.That(entry.Control.GlobalPosition.Y, Is.EqualTo(210).Within(2));
+                var button = Descendants(entry.Control).OfType<MenuButton>().First(b => b.VisibleInTree);
+                var point = new ScreenCoordinates(button.GlobalPixelRect.Center, button.Root!.Window!.Id);
+                var hit = ui.MouseGetControl(point);
+                Assert.That(hit?.GetSelfAndLogicalAncestors().Contains(button), Is.True,
+                    "The moved button must remain clickable at its visible position.");
+                controller.Reset(entry.Id);
+                Arrange();
+                Assert.That(entry.Control.GlobalPosition.X, Is.EqualTo(natural.X).Within(2));
+                Assert.That(entry.Control.GlobalPosition.Y, Is.EqualTo(natural.Y).Within(2));
+            }
+            finally
+            {
+                cfg.SetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout, previous);
+                ui.UnloadScreen();
+            }
         });
     }
 

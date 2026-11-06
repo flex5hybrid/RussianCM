@@ -19,6 +19,12 @@ public sealed partial class CmuUiSetupWindow : DefaultWindow
     {
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
+        EditHudButton.Disabled = !UserInterfaceManager.GetUIController<Content.Client.CMU14.Interface.Hud.CmuHudLayoutController>().CanEdit;
+        EditHudButton.OnPressed += _ =>
+        {
+            Close();
+            UserInterfaceManager.GetUIController<Content.Client.CMU14.Interface.Hud.CmuHudLayoutController>().OpenEditor();
+        };
         Introduction.SetMessage(Loc.GetString("cmu-ui-setup-introduction"));
         Appearance.RegisterOptions(Settings);
         Settings.Initialize();

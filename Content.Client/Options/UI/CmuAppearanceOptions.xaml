@@ -18,6 +18,8 @@
     <CheckBox Name="ChatCrtHazeCheckBox"
               Text="{Loc 'cmu-ui-options-chat-crt-haze'}"
               ToolTip="{Loc 'cmu-ui-options-chat-crt-haze-tooltip'}" />
+    <ui:OptionSlider Name="ChatCrtIntensitySlider" Title="{Loc 'cmu-ui-options-chat-crt-intensity'}" />
+    <ui:OptionSlider Name="ExamineOpacitySlider" Title="{Loc 'cmu-ui-options-examine-opacity'}" />
     <CheckBox Name="ChatReadableFontCheckBox"
               Text="{Loc 'ui-options-crt-chat-readable-font'}"
               ToolTip="{Loc 'ui-options-crt-chat-readable-font-tooltip'}" />

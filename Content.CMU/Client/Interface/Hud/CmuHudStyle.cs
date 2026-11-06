@@ -209,13 +209,18 @@ public static partial class CmuHudStyle
                 .Prop(ContainerButton.StylePropertyStyleBox, Box(CmuHudTone.Hover, padding: 7))
                 .Prop(Control.StylePropertyModulateSelf, Color.White);
             yield return pressed.Pseudo(ContainerButton.StylePseudoClassPressed)
-                .Prop(ContainerButton.StylePropertyStyleBox, Box(CmuHudTone.Selected, selected: true, padding: 7))
+                .Prop(ContainerButton.StylePropertyStyleBox, new CmuHudStyleBox
+                {
+                    Tone = CmuHudTone.Selected, Selected = true,
+                    ContentMarginLeftOverride = 7, ContentMarginRightOverride = 7,
+                    ContentMarginTopOverride = 7, ContentMarginBottomOverride = 7,
+                })
                 .Prop(Control.StylePropertyModulateSelf, Color.White);
             yield return disabled.Pseudo(ContainerButton.StylePseudoClassDisabled)
                 .Prop(ContainerButton.StylePropertyStyleBox, Box(CmuHudTone.Inset, padding: 7))
                 .Prop(Control.StylePropertyModulateSelf, Color.White.WithAlpha(0.45f));
             yield return Child().Parent(pressed.Pseudo(ContainerButton.StylePseudoClassPressed))
-                .Child(Element<Label>()).Prop(Label.StylePropertyFontColor, InverseTextColor);
+                .Child(Element<Label>()).Prop(Label.StylePropertyFontColor, TextColor);
         }
         yield return Child().Parent(Element<Button>().Class(StyleNano.ButtonCaution)).Child(Element<Label>())
             .Prop(Label.StylePropertyFontColor, DangerColor);

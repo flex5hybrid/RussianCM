@@ -68,7 +68,8 @@ public sealed partial class CrtScanlineOverlay : Control
             return;
 
         var intensity = Math.Clamp(_cfg.GetCVar(CCVars.CMUCrtEffectIntensity), 0f, 1f)
-            * Math.Clamp(IntensityScale, 0f, 1f);
+            * Math.Clamp(IntensityScale, 0f, 1f)
+            * (ChatSurface ? Math.Clamp(_cfg.GetCVar(CCVars.CMUChatCrtIntensity), 0, 1) : 1);
         if (intensity <= 0f)
             return;
 

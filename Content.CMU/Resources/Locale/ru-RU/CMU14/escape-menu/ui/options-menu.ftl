@@ -2,8 +2,6 @@ cmu-ui-options-examine-log-in-chat = Показывать подробный р�
 cmu-ui-options-examine-full-text-in-chat = Дублировать весь текст осмотра в чат, как в SS13
 
 cmu-ui-options-accessibility = Доступность
-cmu-ui-options-chat-crt-haze = Эффект ЭЛТ-размытия поверх чата
-cmu-ui-options-chat-crt-haze-tooltip = Накладывает строки развёртки поверх чата. Отключите для чёткого текста, сохранив ЭЛТ-эффекты в остальных местах.
 cmu-ui-options-auto-ingest = Автоматически продолжать есть и пить
 cmu-ui-options-auto-ingest-tooltip = После первого укуса или глотка продолжает употреблять предмет в руке, пока он не закончится или действие не будет прервано.
 cmu-ui-options-voting = Голосования
@@ -44,7 +42,6 @@ cmu-ui-font-comic-sans = Comic Sans
 cmu-ui-font-roboto-mono = Roboto Mono
 cmu-ui-font-cozette = Cozette
 cmu-ui-font-noto-display = Noto Sans Display
-cmu-ui-options-menu-crt-effect = ЭЛТ-текстура в меню
 cmu-ui-options-crt-intensity = Интенсивность ЭЛТ-эффекта
 cmu-ui-setup-title = Настройте интерфейс под себя
 cmu-ui-setup-introduction = Добро пожаловать в CMU! Выберите внешний вид интерфейса и способ отображения чата. Позже всё это можно изменить в Настройки → CMU.

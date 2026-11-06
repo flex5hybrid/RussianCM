@@ -11,6 +11,7 @@ public sealed class CmuHudStyleBox : StyleBox
 {
     public CmuHudTone Tone { get; set; }
     public float Opacity { get; set; } = 1f;
+    public bool ExamineSurface { get; set; }
     public bool Selected { get; set; }
     public bool OutlineOnly { get; set; }
     public bool Inverse { get; set; }
@@ -35,7 +36,9 @@ public sealed class CmuHudStyleBox : StyleBox
                     CmuHudTone.Header => CmuHudStyle.HeaderColor,
                     _ => CmuHudStyle.SurfaceColor,
                 };
-            CmuCrtWindowsUIController.DrawFill(handle, box, fill.WithAlpha(Opacity));
+            CmuCrtWindowsUIController.DrawFill(handle, box, fill.WithAlpha(ExamineSurface
+                ? Math.Clamp(IoCManager.Resolve<Robust.Shared.Configuration.IConfigurationManager>().GetCVar(Content.Shared.CCVar.CCVars.CMUExamineOpacity), 0, 1)
+                : Opacity));
         }
 
         var edge = Selected ? CmuHudStyle.SelectionColor : CmuHudStyle.EdgeColor;

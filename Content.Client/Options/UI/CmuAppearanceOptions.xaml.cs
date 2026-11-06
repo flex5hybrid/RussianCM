@@ -45,6 +45,8 @@ public sealed partial class CmuAppearanceOptions : BoxContainer
         var crtUiColor = controller.AddOption(new OptionCrtUiColor(controller, _cfg, CrtUiColorSlider));
         crtUiColor.PreviewValueChanged += UpdateCrtUiOptionsPreview;
         controller.AddOptionCheckBox(CCVars.CMUChatCrtHaze, ChatCrtHazeCheckBox);
+        controller.AddOptionPercentSlider(CCVars.CMUChatCrtIntensity, ChatCrtIntensitySlider);
+        controller.AddOptionPercentSlider(CCVars.CMUExamineOpacity, ExamineOpacitySlider);
 
         // Not previewed like the two above, and not hidden when CRT is off either - it only does
         // anything under the CRT theme, but it is an accessibility setting and hiding it behind
@@ -144,7 +146,6 @@ public sealed partial class CmuAppearanceOptions : BoxContainer
         public override void LoadValue()
         {
             base.LoadValue();
-            NotifyPreviewValueChanged();
         }
 
         public override void SaveValue()
@@ -215,7 +216,6 @@ public sealed partial class CmuAppearanceOptions : BoxContainer
         public override void LoadValue()
         {
             base.LoadValue();
-            NotifyPreviewValueChanged();
         }
 
         public override void SaveValue()
