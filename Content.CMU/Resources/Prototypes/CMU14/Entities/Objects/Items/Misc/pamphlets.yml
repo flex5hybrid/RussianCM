@@ -416,7 +416,7 @@
   - type: SkillPamphlet
     language: Romanian
 
-# ├──[ RuCM14 ]─────────────────────────────────────────┤
+# ├──[ RuMC14 ]─────────────────────────────────────────┤
 
 - type: entity
   parent: CMPamphletLanguage
