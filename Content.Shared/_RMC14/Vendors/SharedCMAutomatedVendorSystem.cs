@@ -892,6 +892,9 @@ public abstract partial class SharedCMAutomatedVendorSystem : EntitySystem
             }
         }
 
+        // CMU14: orders bypass the menu, so carry the menu's user-component grants over too.
+        ApplyVendUserChanges(entry.Id, actor);
+
         return true;
     }
     // cmu edit end
@@ -910,6 +913,14 @@ public abstract partial class SharedCMAutomatedVendorSystem : EntitySystem
             return false;
 
         return true;
+    }
+
+    // CMU14 method
+    private void ApplyVendUserChanges(EntProtoId toVend, EntityUid actor)
+    {
+        if (_prototypes.Index(toVend).TryComp(out CMChangeUserOnVendComponent? change, _compFactory)
+                && change.AddComponents != null)
+            EntityManager.AddComponents(actor, change.AddComponents);
     }
 
     private void Vend(EntityUid vendor, EntityUid player, EntProtoId toVend, Vector2 offset, SlotFlags? replaceSlot = null)
