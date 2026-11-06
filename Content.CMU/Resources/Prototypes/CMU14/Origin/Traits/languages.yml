@@ -154,7 +154,7 @@
   components: []
   language: Polish
 
-  # ├──[ RuCM14 tongue ]─────────────────────────────────────────┤
+  # ├──[ RuMC14 tongue ]─────────────────────────────────────────┤
 
 - type: trait
   id: HebrewLanguage
