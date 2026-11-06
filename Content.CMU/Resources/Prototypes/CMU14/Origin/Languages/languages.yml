@@ -247,7 +247,7 @@
     !type:SyllableObfuscation
     replacement: ["nǐ", "hǎo", "shì", "de", "wǒ", "men", "zhè", "nà", "ma", "le", "qǐng", "xiè", "zài", "guó", "míng", "dōng", "tíng", "fēng", "píng", "zhōng", "chéng", "shēng", "bīng", "táng", "kōng", "qīng", "ráng", "páng", "líng", "děng", "tóng", "fāng"]
 
-# ├──[ RuCM14 ]─────────────────────────────────────────┤
+# ├──[ RuMC14 ]─────────────────────────────────────────┤
 
 - type: language
   id: Hebrew
