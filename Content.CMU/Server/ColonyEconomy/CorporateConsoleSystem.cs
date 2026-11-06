@@ -1,9 +1,11 @@
+using System.Diagnostics.CodeAnalysis; // RuMC edit
 using Content.Server.CMU14.Chat;
 using Content.Server.CMU14.Ops.ThirdParty;
 using Content.Server.CMU14.Round;
 using Content.Server.Chat.Systems;
 using Content.Server.Popups;
 using Content.Server.Stack;
+using Content.Shared._RuMC14.Reinforcements; // RuMC edit
 using Content.Shared.CMU14.ColonyEconomy;
 using Content.Shared.CMU14.Threats;
 using Content.Shared.Stacks;
@@ -31,6 +33,7 @@ public sealed partial class CorporateConsoleSystem : EntitySystem
     [Dependency] private TagSystem _tag = default!;
     [Dependency] private PopupSystem _popup = default!;
     [Dependency] private Robust.Shared.Timing.IGameTiming _timing = default!;
+    [Dependency] private SharedRuMCReinforcementSystem _reinforcements = default!; // RuMC edit
 
     private static readonly ProtoId<TagPrototype> CurrencyTag = "Currency";
 
@@ -128,22 +131,24 @@ public sealed partial class CorporateConsoleSystem : EntitySystem
 
     private void OnCallThirdParty(EntityUid uid, CorporateConsoleComponent comp, CorporateConsoleCallThirdPartyBuiMsg msg)
     {
-        if (!comp.CallableParties.TryGetValue(msg.ThirdPartyId, out var cost))
-            return;
-        if (comp.CalledParties.Contains(msg.ThirdPartyId))
-            return;
-        if (comp.CalledParties.Count >= comp.MaxCallIns || _timing.CurTime < comp.NextCallInAt)
-            return;
-        if (comp.CorporateBudget < cost)
-            return;
-        if (!_proto.TryIndex<ThirdPartyPrototype>(msg.ThirdPartyId, out var partyProto))
-            return;
-        if (!_auRound.IsThirdPartyAllowedForCurrentContext(partyProto))
-            return;
-        if (!_proto.TryIndex(partyProto.PartySpawn, out var spawnProto))
+        // RuMC edit start
+        if (!TryGetThirdPartyCall(comp, msg.ThirdPartyId, out _, out _, out _))
             return;
 
-        _thirdParty.SpawnThirdParty(partyProto, spawnProto, false);
+        var thirdPartyId = msg.ThirdPartyId;
+        _reinforcements.Request(msg.Actor,
+            Loc.GetString("rumc-reinforcement-side-corporate"),
+            call => CallThirdParty(uid, thirdPartyId, call));
+    }
+
+    private void CallThirdParty(EntityUid uid, string thirdPartyId, RuMCReinforcementCall call)
+    {
+        if (!TryComp(uid, out CorporateConsoleComponent? comp) ||
+            !TryGetThirdPartyCall(comp, thirdPartyId, out var cost, out var partyProto, out var spawnProto))
+            return;
+        // RuMC edit end
+
+        _thirdParty.SpawnThirdParty(partyProto, spawnProto, false, call: call); // RuMC edit
 
         // Deduct from ALL corporate consoles (they share one budget)
         var nextCallIn = _timing.CurTime + comp.CallInCooldown;
@@ -151,12 +156,29 @@ public sealed partial class CorporateConsoleSystem : EntitySystem
         while (q.MoveNext(out _, out var c))
         {
             c.CorporateBudget -= cost;
-            c.CalledParties.Add(msg.ThirdPartyId);
+            c.CalledParties.Add(thirdPartyId); // RuMC edit
             c.NextCallInAt = nextCallIn;
         }
 
         UpdateAllUi();
     }
+
+    // RuMC edit start
+    private bool TryGetThirdPartyCall(CorporateConsoleComponent comp, string thirdPartyId, out float cost,
+        [NotNullWhen(true)] out ThirdPartyPrototype? partyProto, [NotNullWhen(true)] out PartySpawnPrototype? spawnProto)
+    {
+        partyProto = null;
+        spawnProto = null;
+        return comp.CallableParties.TryGetValue(thirdPartyId, out cost) &&
+               !comp.CalledParties.Contains(thirdPartyId) &&
+               comp.CalledParties.Count < comp.MaxCallIns &&
+               _timing.CurTime >= comp.NextCallInAt &&
+               comp.CorporateBudget >= cost &&
+               _proto.TryIndex<ThirdPartyPrototype>(thirdPartyId, out partyProto) &&
+               _auRound.IsThirdPartyAllowedForCurrentContext(partyProto) &&
+               _proto.TryIndex(partyProto.PartySpawn, out spawnProto);
+    }
+    // RuMC edit end
 
     private void OnWithdraw(EntityUid uid, CorporateConsoleComponent comp, CorporateConsoleWithdrawBuiMsg msg)
     {

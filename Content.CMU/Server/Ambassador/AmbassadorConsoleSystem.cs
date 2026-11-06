@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis; // RuMC edit
 using System.Linq;
 using Content.Server.CMU14.Ops.ThirdParty;
 using Content.Server.CMU14.WorldMarket; // RUMC: the world map
@@ -12,6 +13,7 @@ using Content.Shared.CMU14.Threats;
 using Content.Shared.CMU14.WorldMarket; // RUMC: the world map
 using Content.Shared._RMC14.Intel.Tech;
 using Content.Shared._RMC14.Marines.Announce;
+using Content.Shared._RuMC14.Reinforcements; // RuMC edit
 using Content.Shared.Stacks;
 using Content.Shared.Interaction;
 using Content.Shared.Radio;
@@ -42,6 +44,7 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
     [Dependency] private TagSystem _tag = default!;
     [Dependency] private PopupSystem _popup = default!;
     [Dependency] private WorldMarketSystem _worldMarket = default!; // RUMC: the world map
+    [Dependency] private SharedRuMCReinforcementSystem _reinforcements = default!; // RuMC edit
     [Dependency] private IGameTiming _timing = default!;
 
     private static readonly TimeSpan UiRefreshInterval = TimeSpan.FromSeconds(1);
@@ -411,7 +414,7 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
     }
 
     // RUMC: the transports that are on their way: what arrives is put down at the console that it was sent to
-    private readonly List<(TimeSpan At, EntityUid Point, string Offer, string Faction)> _deliveries = new();
+    private readonly List<(TimeSpan At, EntityUid Point, string Offer, string Faction, RuMCReinforcementCall? Call)> _deliveries = new(); // RuMC edit
 
     private void ProcessDeliveries()
     {
@@ -437,7 +440,7 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
             }
 
             if (offer.Party is { } partyId && _proto.TryIndex(partyId, out var party) && _proto.TryIndex(party.PartySpawn, out var spawn))
-                _thirdParty.SpawnThirdParty(party, spawn, false);
+                _thirdParty.SpawnThirdParty(party, spawn, false, call: delivery.Call); // RuMC edit
 
             AnnounceStatus(Loc.GetString("rumc-mother-delivery", ("name", Loc.GetString(offer.Name))), delivery.Faction);
         }
@@ -454,8 +457,28 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
     // tax is put on. Several of the same can be ordered.
     private void OnMotherOrder(EntityUid uid, AmbassadorConsoleComponent comp, MotherOrderMessage msg)
     {
+        MotherOrder(uid, comp, msg, null); // RuMC edit
+    }
+
+    private void MotherOrder(EntityUid uid, AmbassadorConsoleComponent comp, MotherOrderMessage msg, RuMCReinforcementCall? call) // RuMC edit
+    {
         if (!_proto.TryIndex<WorldMotherOfferPrototype>(msg.Offer, out var offer) || _worldMarket.OfferBlocked(comp.FactionName, offer) != null)
             return;
+
+        // RuMC edit start
+        if (call == null && CallsParty(offer))
+        {
+            if (!CanOrderParty(comp, offer, msg))
+                return;
+
+            _reinforcements.Request(msg.Actor, GetReinforcementSide(uid), message =>
+            {
+                if (TryComp(uid, out AmbassadorConsoleComponent? console))
+                    MotherOrder(uid, console, msg, message);
+            });
+            return;
+        }
+        // RuMC edit end
 
         switch (offer.Group)
         {
@@ -470,7 +493,7 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                 if (!_worldMarket.TrySpendPoints(comp.FactionName, _worldMarket.OfferCost(comp.FactionName, offer)))
                     return;
 
-                _thirdParty.SpawnThirdParty(party, spawn, false);
+                _thirdParty.SpawnThirdParty(party, spawn, false, call: call); // RuMC edit
                 break;
 
             case MotherOfferGroup.Food:
@@ -511,7 +534,7 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                 if (!_worldMarket.TrySpendPoints(comp.FactionName, _worldMarket.OfferCost(comp.FactionName, offer)))
                     return;
 
-                _deliveries.Add((_timing.CurTime + TimeSpan.FromSeconds(offer.DelaySeconds), point, offer.ID, comp.FactionName));
+                _deliveries.Add((_timing.CurTime + TimeSpan.FromSeconds(offer.DelaySeconds), point, offer.ID, comp.FactionName, call)); // RuMC edit
                 break;
         }
 
@@ -664,20 +687,78 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
 
     private void OnCallThirdParty(EntityUid uid, AmbassadorConsoleComponent comp, AmbassadorCallThirdPartyBuiMsg msg)
     {
-        if (!comp.CallableParties.TryGetValue(msg.ThirdPartyId, out var cost)) return;
-        if (comp.CalledParties.Contains(msg.ThirdPartyId)) return;
-        if (comp.CalledParties.Count >= comp.MaxCallIns) return;
-        if (_timing.CurTime < comp.NextCallInAt) return;
-        if (comp.Budget < cost) return;
-        if (!_proto.TryIndex<ThirdPartyPrototype>(msg.ThirdPartyId, out var partyProto)) return;
-        if (!_proto.TryIndex(partyProto.PartySpawn, out var spawnProto)) return;
-        _thirdParty.SpawnThirdParty(partyProto, spawnProto, false);
+        // RuMC edit start
+        if (!TryGetThirdPartyCall(comp, msg.ThirdPartyId, out _, out _, out _))
+            return;
+
+        var thirdPartyId = msg.ThirdPartyId;
+        _reinforcements.Request(msg.Actor, GetReinforcementSide(uid), call => CallThirdParty(uid, thirdPartyId, call));
+    }
+
+    private bool CanOrderParty(AmbassadorConsoleComponent comp, WorldMotherOfferPrototype offer, MotherOrderMessage msg)
+    {
+        if (_worldMarket.PointsOf(comp.FactionName) < _worldMarket.OfferCost(comp.FactionName, offer))
+            return false;
+
+        if (offer.Group != MotherOfferGroup.Transport)
+        {
+            var party = offer.Parties.TryGetValue(comp.FactionName, out var byFaction) ? byFaction : offer.Party;
+            return party is { } partyId && _proto.TryIndex(partyId, out var partyProto) && _proto.HasIndex(partyProto.PartySpawn);
+        }
+
+        return int.TryParse(msg.Target, out var raw) &&
+               Exists(new EntityUid(raw)) &&
+               TryComp(new EntityUid(raw), out AmbassadorConsoleComponent? point) &&
+               point.FactionName == comp.FactionName;
+    }
+
+    private string GetReinforcementSide(EntityUid uid)
+    {
+        return TryComp(uid, out RuMCReinforcementSideComponent? side)
+            ? Loc.GetString(side.Side)
+            : Loc.GetString("rumc-reinforcement-side-unknown");
+    }
+
+    private static bool CallsParty(WorldMotherOfferPrototype offer)
+    {
+        return offer.Group switch
+        {
+            MotherOfferGroup.Pmc or MotherOfferGroup.Workers or MotherOfferGroup.Support => true,
+            MotherOfferGroup.Transport => !offer.Evacuation && offer.Party != null,
+            _ => false,
+        };
+    }
+
+    private void CallThirdParty(EntityUid uid, string thirdPartyId, RuMCReinforcementCall call)
+    {
+        if (!TryComp(uid, out AmbassadorConsoleComponent? comp) ||
+            !TryGetThirdPartyCall(comp, thirdPartyId, out var cost, out var partyProto, out var spawnProto))
+            return;
+        // RuMC edit end
+
+        _thirdParty.SpawnThirdParty(partyProto, spawnProto, false, call: call); // RuMC edit
 
         comp.Budget -= cost;
-        comp.CalledParties.Add(msg.ThirdPartyId);
+        comp.CalledParties.Add(thirdPartyId); // RuMC edit
         comp.NextCallInAt = _timing.CurTime + comp.CallInCooldown;
         UpdateAllFactionUi(comp);
     }
+
+    // RuMC edit start
+    private bool TryGetThirdPartyCall(AmbassadorConsoleComponent comp, string thirdPartyId, out float cost,
+        [NotNullWhen(true)] out ThirdPartyPrototype? partyProto, [NotNullWhen(true)] out PartySpawnPrototype? spawnProto)
+    {
+        partyProto = null;
+        spawnProto = null;
+        return comp.CallableParties.TryGetValue(thirdPartyId, out cost) &&
+               !comp.CalledParties.Contains(thirdPartyId) &&
+               comp.CalledParties.Count < comp.MaxCallIns &&
+               _timing.CurTime >= comp.NextCallInAt &&
+               comp.Budget >= cost &&
+               _proto.TryIndex<ThirdPartyPrototype>(thirdPartyId, out partyProto) &&
+               _proto.TryIndex(partyProto.PartySpawn, out spawnProto);
+    }
+    // RuMC edit end
 
     private void OnToggleEmbargo(EntityUid uid, AmbassadorConsoleComponent comp, AmbassadorToggleEmbargoBuiMsg msg)
     {

@@ -1,0 +1,17 @@
+- type: entity
+  parent: BaseItem
+  id: RuMCReinforcementHolopadFolded
+  name: folded holopad
+  description: A holopad packed in a box. Click the floor to unfold it.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Storage/boxes.rsi
+    state: box
+  - type: Item
+    size: Normal
+  - type: SpawnAfterInteract
+    prototype: RuMCReinforcementHolopad
+    doAfter: 1
+    removeOnInteract: true
+  - type: RuMCReinforcementCall
