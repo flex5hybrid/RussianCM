@@ -22,4 +22,4 @@ Install `fonttools`, then run from the repository root:
 python Tools/cmu/fonts/extend_uav_osd.py
 ```
 
-See `ATTRIBUTION.txt` for the original designer and usage statement.
+See `ATTRIBUTION-CMU-OSD.txt` for the original designer and usage statement.
