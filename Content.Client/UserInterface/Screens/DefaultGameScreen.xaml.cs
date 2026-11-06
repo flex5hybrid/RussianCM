@@ -19,12 +19,14 @@ public sealed partial class DefaultGameScreen : InGameScreen
         SetAnchorAndMarginPreset(TopLeft, LayoutPreset.TopLeft, margin: 10);
         SetAnchorAndMarginPreset(Ghost, LayoutPreset.BottomWide, margin: 80);
         SetAnchorAndMarginPreset(Inventory, LayoutPreset.BottomLeft, margin: 5);
-        SetAnchorAndMarginPreset(Hotbar, LayoutPreset.BottomWide, margin: 5);
+        SetAnchorAndMarginPreset(Hotbar, LayoutPreset.BottomWide, margin: 0); // CMU14: horizontal padding uses clamped Control.Margin.
         SetAnchorAndMarginPreset(Chat, LayoutPreset.TopRight, margin: 10);
-        SetAnchorAndMarginPreset(Alerts, LayoutPreset.TopRight, margin: 10);
-
-        Chat.SetSplitAvailable(false);
-        Chat.SetForceLegacyPresentation(true);
+        SetAnchorAndMarginPreset(Alerts, LayoutPreset.TopLeft, margin: 10); // CMU14: status rail belongs on the left.
+        // CMU14 Begin: overlay workspace layout and sizing live in the CMU partial.
+        CMUInitializeHud();
+        Chat.SetSplitAvailable(true);
+        Chat.SetForceLegacyPresentation(false);
+        // CMU14 End
         Chat.OnResized += ChatOnResized;
         Chat.OnChatResizeFinish += ChatOnResizeFinish;
 
@@ -32,10 +34,10 @@ public sealed partial class DefaultGameScreen : InGameScreen
         Inventory.OnResized += ResizeActionContainer;
     }
 
+    // CMU14 method: the shared coordinator owns the action grid and dock boundaries.
     private void ResizeActionContainer()
     {
-        float indent = Inventory.Size.Y + TopBar.Size.Y + 40;
-        Actions.ActionsContainer.MaxGridHeight = MainViewport.Size.Y - indent;
+        CMUUpdateHudLayout();
     }
 
     private void ChatOnResizeFinish(Vector2 _)
@@ -45,19 +47,17 @@ public sealed partial class DefaultGameScreen : InGameScreen
         OnChatResized?.Invoke(new Vector2(marginBottom, marginLeft));
     }
 
+    // CMU14 method: alerts are positioned only by the coordinator, not by legacy chat margins.
     private void ChatOnResized()
     {
-        var marginBottom = Chat.GetValue<float>(MarginBottomProperty);
-        SetMarginTop(Alerts, marginBottom);
+        CMUUpdateHudLayout();
     }
 
     public override ChatBox ChatBox => Chat;
 
-    //TODO: There's probably a better way to do this... but this is also the easiest way.
+    // CMU14 method: normalize archived overlay dimensions after the screen has a real size.
     public override void SetChatSize(Vector2 size)
     {
-        SetMarginBottom(Chat, size.X);
-        SetMarginLeft(Chat, size.Y);
-        SetMarginTop(Alerts, size.X);
+        CMUSetChatSize(size);
     }
 }

@@ -1,6 +1,10 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Numerics;
+// CMU14 Storage Begin: CRT presentation for native storage controls.
+using Content.Client.CMU14.Interface;
+using Content.Client.CMU14.Storage;
+// CMU14 End
 using Content.Client.Hands.Systems;
 using Content.Client.Items.Systems;
 using Content.Client.Storage;
@@ -135,7 +139,7 @@ public sealed partial class StorageWindow : BaseWindow
             }
         };
 
-        var panel = new PanelContainer();
+        var panel = new CmuStorageFrame(); // CMU14: palette-aware storage border.
         panel.PanelOverride = new StyleBoxFlat()
         {
             BorderColor = Color.Black,
@@ -168,7 +172,15 @@ public sealed partial class StorageWindow : BaseWindow
             }
         };
 
-        AddChild(container);
+        // CMU14: oversized floating inventories stay usable within the screen, with native scrollbars.
+        if (_storageController.StaticStorageUIEnabled)
+            AddChild(container);
+        else
+        {
+            var scroll = new ScrollContainer { ReturnMeasure = true, HScrollEnabled = true, VScrollEnabled = true };
+            scroll.AddChild(container);
+            AddChild(scroll);
+        }
     }
 
     protected override void OnThemeUpdated()
@@ -241,7 +253,7 @@ public sealed partial class StorageWindow : BaseWindow
         var rows = boundingGrid.Height + 1;
         _sidebar.Rows = rows;
 
-        var exitButton = new TextureButton
+        var exitButton = new CmuStorageButton // CMU14: native close behaviour with CRT presentation.
         {
             Name = "ExitButton",
             TextureNormal = _exitTexture,
@@ -269,8 +281,9 @@ public sealed partial class StorageWindow : BaseWindow
             Name = "ExitContainer",
             Children =
             {
-                new TextureRect
+                new CmuStorageTexture // CMU14: retain native sidebar measurement.
                 {
+                    Sidebar = true,
                     Texture = boundingGrid.Height != 0
                         ? _sidebarTopTexture
                         : _sidebarFatTexture,
@@ -288,8 +301,9 @@ public sealed partial class StorageWindow : BaseWindow
 
         if (_entity.System<StorageSystem>().NestedStorage && rows > 0)
         {
-            _backButton = new TextureButton
+            _backButton = new CmuStorageButton // CMU14: native navigation with CRT presentation.
             {
+                Back = true,
                 TextureNormal = _backTexture,
                 Scale = new Vector2(2, 2),
             };
@@ -318,8 +332,9 @@ public sealed partial class StorageWindow : BaseWindow
                 Name = "ExitContainer",
                 Children =
                 {
-                    new TextureRect
+                    new CmuStorageTexture // CMU14: retain native sidebar measurement.
                     {
+                        Sidebar = true,
                         Texture = rows > 2 ? _sidebarMiddleTexture : _sidebarBottomTexture,
                         TextureScale = new Vector2(2, 2),
                         Children =
@@ -337,8 +352,9 @@ public sealed partial class StorageWindow : BaseWindow
 
         for (var i = 0; i < fillerRows; i++)
         {
-            _sidebar.AddChild(new TextureRect
+            _sidebar.AddChild(new CmuStorageTexture // CMU14: CRT sidebar filler.
             {
+                Sidebar = true,
                 Texture = i != (fillerRows - 1) ? _sidebarMiddleTexture : _sidebarBottomTexture,
                 TextureScale = new Vector2(2, 2),
             });
@@ -376,8 +392,10 @@ public sealed partial class StorageWindow : BaseWindow
                     ? emptyTexture
                     : blockedTexture;
 
-                var rect = new TextureRect
+                var rect = new CmuStorageTexture // CMU14: CRT cells retain native dimensions and highlights.
                 {
+                    Blocked = !comp.Grid.Contains(x, y),
+                    Opaque = _storageController.OpaqueStorageWindow,
                     Texture = texture,
                     TextureScale = new Vector2(2, 2)
                 };
@@ -542,6 +560,8 @@ public sealed partial class StorageWindow : BaseWindow
 
         if (!IsOpen)
             return;
+
+        CMUConstrainFloating(); // CMU14: include moves and restored nested-window positions.
 
         if (_isDirty)
         {

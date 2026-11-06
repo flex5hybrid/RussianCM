@@ -32,6 +32,13 @@ public sealed partial class CmuAppearanceOptions : BoxContainer
         ]);
         controller.AddOptionCheckBox(CCVars.CMUCrtMenuEffect, CrtMenuEffectCheckBox);
         controller.AddOptionPercentSlider(CCVars.CMUCrtEffectIntensity, CrtIntensitySlider);
+        // CMU14: client-only display sampling, independent of gameplay and input bindings.
+        controller.AddOptionCheckBox(CCVars.CMUCrtDisplayEffect, CrtDisplayEffectCheckBox);
+        controller.AddOptionSlider(CCVars.CMUCrtDisplayRefreshRate, CrtDisplayRefreshSlider, 12, 60,
+            (_, value) => Loc.GetString("cmu-ui-options-crt-refresh-value", ("rate", value)));
+        controller.AddOptionPercentSlider(CCVars.ChatWindowOpacity, ChatOpacitySlider);
+        controller.AddOptionPercentSlider(CCVars.CMUCrtEffectCurvature, CrtCurvatureSlider, scale: 0.15f);
+        controller.AddOptionPercentSlider(CCVars.CMUCrtEffectVignette, CrtVignetteSlider);
         var crtUiEnabled = controller.AddOption(new OptionCrtUiEnabled(controller, _cfg, CrtUiEnabledCheckBox));
         crtUiEnabled.PreviewValueChanged += UpdateCrtUiOptionsPreview;
 

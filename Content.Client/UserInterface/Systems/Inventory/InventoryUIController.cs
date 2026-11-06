@@ -65,7 +65,10 @@ public sealed partial class InventoryUIController : UIController, IOnStateEntere
             return;
 
         if (UIManager.GetActiveUIWidgetOrNull<InventoryGui>() is { } inventoryGui)
+        {
+            RegisterInventoryBarContainer(inventoryGui.InventoryHotbar); // CMU14: bind the active view before populating it.
             RegisterInventoryButton(inventoryGui.InventoryButton);
+        }
     }
 
     public void OnStateEntered(GameplayState state)
@@ -88,10 +91,7 @@ public sealed partial class InventoryUIController : UIController, IOnStateEntere
             _strippingWindow = null;
         }
 
-        if (_inventoryHotbar != null)
-        {
-            _inventoryHotbar.Visible = false;
-        }
+        CMUSetInventoryBarVisible(false); // CMU14: also close the owning drawer during screen teardown.
 
         CommandBinds.Unregister<ClientInventorySystem>();
     }
@@ -109,6 +109,9 @@ public sealed partial class InventoryUIController : UIController, IOnStateEntere
     public void RegisterInventoryBarContainer(ItemSlotButtonContainer inventoryHotbar)
     {
         _inventoryHotbar = inventoryHotbar;
+        // CMU14: slot updates must target the registered drawer, including immediately after a HUD switch.
+        _slotGroups[inventoryHotbar.SlotGroup] = inventoryHotbar;
+        UpdateInventoryHotbar(_playerInventory);
     }
 
     public void RegisterInventoryButton(SlotButton? button)
@@ -122,6 +125,7 @@ public sealed partial class InventoryUIController : UIController, IOnStateEntere
         {
             _inventoryButton = button;
             _inventoryButton.Pressed += InventoryButtonPressed;
+            UpdateInventoryHotbar(_playerInventory); // CMU14: initialize the active toggle from current slots.
         }
     }
 
@@ -138,6 +142,7 @@ public sealed partial class InventoryUIController : UIController, IOnStateEntere
         if (clientInv == null)
         {
             _inventoryHotbar?.ClearButtons();
+            CMUSetInventoryBarVisible(false); // CMU14: close the drawer and its slot container together.
             if (_inventoryButton != null)
                 _inventoryButton.Visible = false;
 
@@ -208,16 +213,17 @@ public sealed partial class InventoryUIController : UIController, IOnStateEntere
 
     public void ToggleInventoryBar()
     {
+        CMUUseActiveInventoryBar(); // CMU14: a hidden screen must not receive the first refresh.
         if (_inventoryHotbar == null)
         {
             Log.Warning("Tried to toggle inventory bar when none are assigned");
             return;
         }
 
-        UpdateInventoryHotbar(_playerInventory);
         var shouldBeVisible = !_inventoryHotbar.Visible;
-        _inventoryHotbar.Visible = shouldBeVisible;
-
+        // CMU14: finish slot population before exposing the drawer; do not open without player inventory data.
+        UpdateInventoryHotbar(_playerInventory);
+        CMUSetInventoryBarVisible(shouldBeVisible && _playerInventory != null);
     }
 
     // Neuron Activation

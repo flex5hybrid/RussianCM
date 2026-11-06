@@ -1,0 +1,39 @@
+light_mode unshaded;
+
+uniform highp vec2 screenSize;
+uniform highp float pitch;
+uniform highp float strength;
+uniform highp float curvature;
+uniform highp float vignette;
+uniform highp float grain;
+uniform highp vec3 phosphor;
+
+void fragment() {
+    highp vec2 p = UV * 2.0 - 1.0;
+    highp float radius = dot(p, p) * 0.5;
+    // The raster and glass curve around the live UI. Text and hit targets stay aligned:
+    // scrolling chat is never captured, cached or sampled from a previous frame.
+    highp vec2 tube = p * (1.0 + curvature * radius);
+    highp float row = (tube.y * 0.5 + 0.5) * screenSize.y;
+    highp float wave = 0.5 - 0.5 * cos(row / max(pitch, 2.0) * 6.2831853);
+    highp float scan = wave * wave * 0.22;
+    highp float corner = vignette * radius * radius * 0.12;
+
+    // Rounded, dark glass lip. Its extent follows the existing curvature preference.
+    highp float edge = max(abs(tube.x), abs(tube.y));
+    highp float lip = smoothstep(0.985, 1.035, edge) * min(curvature * 2.0, 0.14);
+    highp vec2 reflectionUv = (UV - vec2(0.30, 0.03)) * vec2(1.35, 3.6);
+    highp float reflection = exp(-dot(reflectionUv, reflectionUv) * 3.0) * 0.008;
+    highp float rim = exp(-abs(edge - 0.975) * 180.0) * 0.006 * (1.0 - UV.y);
+    highp float glassAmount = clamp(curvature / 0.05, 0.0, 1.0);
+    highp float frame = floor(TIME * 24.0);
+    highp float signal = zRandom(FRAGCOORD.xy * SCREEN_PIXEL_SIZE + vec2(frame * 0.013, 0.0)).x;
+    highp float noise = (signal - 0.5) * grain * 0.025 * strength;
+    highp float light = (reflection + rim) * glassAmount * strength + max(noise, 0.0);
+    highp float shade = (scan + corner + lip) * strength + max(-noise, 0.0);
+
+    highp float alpha = clamp(shade + light, 0.0, 0.42);
+    // Canvas colours are premultiplied. Dividing by alpha turns a faint reflection
+    // into an almost opaque white patch wherever the scanline alpha approaches zero.
+    COLOR = vec4(phosphor * light, alpha);
+}

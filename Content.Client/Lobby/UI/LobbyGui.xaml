@@ -249,10 +249,11 @@
                          With a margin here the input bar sat in from the panel edge on three sides,
                          which is the ring of ground that reads as a border round it. -->
                     <Control Name="ChatCrtScreen" HorizontalExpand="True" VerticalExpand="True">
-                        <widgets:ChatBox Name="Chat" Access="Public" VerticalExpand="True"
-                                         Margin="0 0 0 0" MinHeight="50" />
+                        <!-- CMU14: raster stays behind chat text. -->
                         <cmu:CrtScanlineOverlay Name="ChatScanlines" HorizontalExpand="True"
                                                 VerticalExpand="True" />
+                        <widgets:ChatBox Name="Chat" Access="Public" VerticalExpand="True"
+                                         Margin="0 0 0 0" MinHeight="50" />
                     </Control>
                 </BoxContainer>
             </PanelContainer>

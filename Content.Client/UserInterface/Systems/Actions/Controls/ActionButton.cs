@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Client.CMU14.Interface.Hud;
 using Content.Client.Actions;
 using Content.Client.Actions.UI;
 using Content.Client.Cooldown;
@@ -74,7 +75,7 @@ public sealed class ActionButton : Control, IEntityControl
         _controller = controller;
 
         MouseFilter = MouseFilterMode.Pass;
-        Button = new TextureRect
+        Button = new CmuHudSlotTexture(this)
         {
             Name = "Button",
             TextureScale = new Vector2(2, 2)
@@ -329,6 +330,7 @@ public sealed class ActionButton : Control, IEntityControl
         {
             Button.Texture = null;
         }
+        ((CmuHudSlotTexture) Button).UseHudChrome = Button.Texture == _slotBackground;
     }
 
     public bool TryReplaceWith(EntityUid actionId, ActionsSystem system)

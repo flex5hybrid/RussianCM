@@ -8,15 +8,22 @@ namespace Content.Client.UserInterface.Systems.Hotbar.Widgets;
 [GenerateTypedNameReferences]
 public sealed partial class HotbarGui : UIWidget
 {
+    // CMU14: storage grows upward without repositioning other HUD widgets.
+    public float FooterHeight => Hotbar.DesiredSize.Y;
+    public float DockContentLeft => Hotbar.GlobalPosition.X - GlobalPosition.X + Hotbar.ContentLeft;
+    public event Action? DockLayoutChanged;
+
     public HotbarGui()
     {
         RobustXamlLoader.Load(this);
+        Hotbar.ContentPositionChanged += () => DockLayoutChanged?.Invoke();
         StatusPanelRight.SetSide(HandLocation.Right);
         StatusPanelLeft.SetSide(HandLocation.Left);
         var hotbarController = UserInterfaceManager.GetUIController<HotbarUIController>();
 
         hotbarController.Setup(HandContainer);
         LayoutContainer.SetGrowVertical(this, LayoutContainer.GrowDirection.Begin);
+        LayoutContainer.SetGrowHorizontal(this, LayoutContainer.GrowDirection.Constrain);
     }
 
     public void UpdatePanelEntityLeft(EntityUid? entity, Hand? hand)

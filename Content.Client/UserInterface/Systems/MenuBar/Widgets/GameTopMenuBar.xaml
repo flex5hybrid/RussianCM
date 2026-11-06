@@ -1,10 +1,11 @@
-﻿<widgets:GameTopMenuBar xmlns="https://spacestation14.io"
+<widgets:GameTopMenuBar xmlns="https://spacestation14.io"
            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+           xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
            xmlns:style="clr-namespace:Content.Client.Stylesheets"
            xmlns:ic="clr-namespace:Robust.Shared.Input;assembly=Robust.Shared"
            xmlns:is="clr-namespace:Content.Shared.Input;assembly=Content.Shared"
            xmlns:xe="clr-namespace:Content.Client.UserInterface.XamlExtensions"
-           xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
+           xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls" xmlns:hud="clr-namespace:Content.Client.CMU14.Interface.Hud"
            xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.MenuBar.Widgets"
            Name = "MenuButtons"
            VerticalExpand="False"
@@ -13,6 +14,8 @@
            VerticalAlignment="Top"
            SeparationOverride="5"
 >
+    <!-- CMU14: a translucent command band groups the native menu keys without adding padding. -->
+    <PanelContainer HorizontalExpand="True"><PanelContainer.PanelOverride><hud:CmuHudStyleBox Tone="Header" Opacity="0.55"/></PanelContainer.PanelOverride><GridContainer Name="MenuGrid" Columns="9" HSeparationOverride="4" VSeparationOverride="2" HorizontalExpand="True">
     <ui:MenuButton
         Name="EscapeButton"
         Access="Internal"
@@ -103,4 +106,5 @@
         HorizontalExpand="True"
         AppendStyleClass="{x:Static style:StyleClass.ButtonOpenLeft}"
         />
+    </GridContainer></PanelContainer>
 </widgets:GameTopMenuBar>

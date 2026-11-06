@@ -109,6 +109,10 @@ public sealed partial class StorageUIController : UIController, IOnSystemChanged
             OnPieceUnpressed(args, window, piece);
         };
 
+        // CMU14: populate after wiring item events, but before measuring/opening the window.
+        if (EntityManager.TryGetComponent<StorageComponent>(sBui.Owner, out var storage))
+            window.CMUPrepareForOpen((sBui.Owner, storage));
+
         if (StaticStorageUIEnabled)
         {
             var hotbar = UIManager.GetActiveUIWidgetOrNull<HotbarGui>();
@@ -448,8 +452,11 @@ public sealed partial class StorageUIController : UIController, IOnSystemChanged
             new ItemStorageLocation(DraggingRotation, Vector2i.Zero),
             EntityManager);
 
-        // I don't know why it divides the position by 2. Hope this helps! -emo
-        LayoutContainer.SetPosition(DraggingGhost, UIManager.MousePositionScaled.Position / 2 - offset );
+        // CMU14: convert physical mouse pixels once, using the ghost's actual UI scale.
+        // LayoutContainer.SetPosition(DraggingGhost, UIManager.MousePositionScaled.Position / 2 - offset);
+        var pointer = _input.MouseScreenPosition.Position / DraggingGhost.UIScale;
+        var origin = DraggingGhost.Parent?.GlobalPosition ?? Vector2.Zero;
+        LayoutContainer.SetPosition(DraggingGhost, pointer - origin - offset);
     }
 
     private void OnMenuEndDrag()

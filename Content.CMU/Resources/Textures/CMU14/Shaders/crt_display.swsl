@@ -1,0 +1,29 @@
+// Original CMU work, CC0-1.0. One live image, including glyphs; no frame history.
+light_mode unshaded;
+blend_mode mix;
+
+uniform highp float strength;
+uniform highp float pitch;
+uniform highp float curvature;
+uniform highp float vignette;
+uniform highp float grain;
+uniform highp float samplePhase;
+uniform highp vec2 screenSize;
+
+void fragment() {
+    highp vec2 p = UV * 2.0 - 1.0;
+    highp float r2 = dot(p, p) * 0.5;
+    highp vec2 source = p * (1.0 + curvature * r2) * 0.5 + 0.5;
+    highp vec2 pixel = 1.0 / screenSize;
+    highp vec4 image = zTexture(clamp(source, pixel * 0.5, vec2(1.0) - pixel * 0.5));
+    // Render targets contain premultiplied RGB; the source shader's mix mode expects straight
+    // colour and applies alpha on composition. Undo it once to preserve chat and glyph edges.
+    highp vec3 rgb = image.a > 0.0 ? image.rgb / image.a : vec3(0.0);
+    highp float inside = step(0.0, source.x) * step(source.x, 1.0)
+        * step(0.0, source.y) * step(source.y, 1.0);
+    highp float wave = 0.5 - 0.5 * cos(source.y * screenSize.y / max(pitch, 2.0) * 6.2831853);
+    highp float noise = zRandom(UV + vec2(samplePhase * 0.013, 0.0)).x - 0.5;
+    highp float shade = (wave * wave * 0.16 + vignette * r2 * r2 * 0.20) * strength;
+    // Retain colour and alpha. No bloom, afterglow, chromatic split or rolling shear over text.
+    COLOR = vec4(rgb * (1.0 - shade + noise * grain * strength * 0.015), image.a) * inside;
+}

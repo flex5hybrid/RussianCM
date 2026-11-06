@@ -1,0 +1,22 @@
+CMU OSD Cyrillic
+
+Based on UAV OSD Sans Mono by Nicholas Kruse.
+Original source: https://www.dafont.com/uav-osd-sans.font
+Author website: https://nicholaskruse.com
+Original author's published usage statement:
+"Font is free to use for personal or commercial use."
+The source is listed as 100% Free. This records the author's statement;
+it does not assign a different license to the original outlines.
+
+Original bundled file: Resources/Fonts/UAVOSD/UAV-OSD-Sans-Mono.ttf
+Original glyphs, advance widths and vertical metrics are preserved.
+Original designer metadata is retained in the extended font.
+
+Cyrillic extension: CMU contributors, 2026.
+Adds the 33 Russian letters in both cases, Russian quotation marks,
+numero sign, en/em dashes and ellipsis. Existing punctuation is unchanged.
+Lowercase Russian maps to capital-shaped glyphs, matching the original
+font's treatment of lowercase Latin.
+
+Reproducible generator: Tools/cmu/fonts/extend_uav_osd.py
+New family name: CMU OSD Cyrillic; version 1.001.

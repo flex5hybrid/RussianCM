@@ -8,3 +8,13 @@
   id: CMUCrtScanlines
   kind: source
   path: /Textures/CMU14/Shaders/crt_scanlines.swsl
+
+- type: shader
+  id: CMUCrtHudGlass
+  kind: source
+  path: /Textures/CMU14/Shaders/crt_hud_glass.swsl
+
+- type: shader
+  id: CMUCrtDisplay
+  kind: source
+  path: /Textures/CMU14/Shaders/crt_display.swsl

@@ -27,10 +27,9 @@ public sealed class StorageBoundUserInterface : BoundUserInterface
             .GetUIController<StorageUIController>()
             .CreateStorageWindow(this);
 
-        if (EntMan.TryGetComponent(Owner, out StorageComponent? storage))
-        {
-            _window.UpdateContainer((Owner, storage));
-        }
+        // CMU14: CreateStorageWindow populates the grid before measuring/opening the window.
+        // if (EntMan.TryGetComponent(Owner, out StorageComponent? storage))
+        //     _window.UpdateContainer((Owner, storage));
 
         _window.OnClose += Close;
         _window.FlagDirty();

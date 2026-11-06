@@ -2,6 +2,8 @@
          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
          xmlns:ui="clr-namespace:Content.Client.CMU14.Interface"
          MinWidth="620" MaxWidth="1280" RectClipContent="True">
+    <!-- CMU14: keep the raster behind vote text and timers. -->
+    <ui:CrtScanlineOverlay Name="VoteScanlines" HorizontalExpand="True" VerticalExpand="True" />
     <PanelContainer Name="VotePanel" StyleClasses="CrtPanel" />
 
     <!-- ContentPadding rather than the panel's own inset: the options are the widest thing in here,
@@ -47,10 +49,5 @@
                 MinWidth="{x:Static ui:CmuPanelMetrics.ButtonNarrow}" />
     </BoxContainer>
 
-    <!-- Last sibling, so it draws over both MainContent and MinimizedContent. Scanlines only, not
-         the full CrtScreenControl pass: the timer bar and the option fills both move every frame
-         this popup is open, and a live subtree must never go under the shader's render-target
-         capture - a stale or misaligned copy draws opaque over the real thing instead of failing
-         loudly. This is the cheap half built for exactly that case. -->
-    <ui:CrtScanlineOverlay Name="VoteScanlines" HorizontalExpand="True" VerticalExpand="True" />
+
 </Control>

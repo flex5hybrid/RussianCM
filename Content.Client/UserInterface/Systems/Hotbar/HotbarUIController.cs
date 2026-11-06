@@ -38,6 +38,7 @@ public sealed class HotbarUIController : UIController
         _storage = UIManager.GetUIController<StorageUIController>();
     }
 
+    // CMU14 method: register all active-screen containers before rebuilding hands and inventory slots.
     public void ReloadHotbar()
     {
         if (UIManager.ActiveScreen == null)
@@ -54,23 +55,21 @@ public sealed class HotbarUIController : UIController
             }
         }
 
-        _hands?.ReloadHands();
-        _inventory?.ReloadSlots();
-
         //todo move this over to its own hellhole
         var inventory = UIManager.ActiveScreen.GetWidget<InventoryGui>();
-        if (inventory == null)
+        if (inventory != null)
         {
-            return;
+            foreach (var container in GetAllItemSlotContainers(inventory))
+            {
+                // Yes, this is dirty.
+                container.SlotGroup = container.SlotGroup;
+            }
+
+            _inventory?.RegisterInventoryBarContainer(inventory.InventoryHotbar);
         }
 
-        foreach (var container in GetAllItemSlotContainers(inventory))
-        {
-            // Yes, this is dirty.
-            container.SlotGroup = container.SlotGroup;
-        }
-
-        _inventory?.RegisterInventoryBarContainer(inventory.InventoryHotbar);
+        _hands?.ReloadHands();
+        _inventory?.ReloadSlots();
     }
 
     private static IEnumerable<ItemSlotButtonContainer> GetAllItemSlotContainers(Control gui)

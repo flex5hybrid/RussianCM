@@ -17,6 +17,10 @@ public sealed partial class AlertsUI : UIWidget
 {
     // also known as Control.Children?
     private readonly Dictionary<AlertKey, AlertControl> _alertControls = new();
+    private bool _compact = true;
+
+    // CMU14: intrinsic height, independent of the rail scroll area and its current height limit.
+    public float HudContentHeight => AlertContainer.DesiredSize.Y;
 
     public AlertsUI()
     {
@@ -37,6 +41,7 @@ public sealed partial class AlertsUI : UIWidget
         // also there may be some new alerts we need to show.
         // further, we need to ensure they are ordered w.r.t their configured order
         SyncUpdateControls(alertsSystem, alertOrderPrototype, alertStates);
+        UpdateHudPresentation();
     }
 
     public void ClearAllControls()
@@ -48,6 +53,30 @@ public sealed partial class AlertsUI : UIWidget
         }
 
         _alertControls.Clear();
+        UpdateHudPresentation();
+    }
+
+    public void SetHudSpace(float height, bool compact)
+    {
+        StatusScroll.MaxHeight = MathF.Max(64, MathF.Min(420, height));
+        if (_compact == compact)
+            return;
+        _compact = compact;
+        UpdateHudPresentation();
+    }
+
+    private void UpdateHudPresentation()
+    {
+        var hasVisibleStatus = false;
+        foreach (var control in _alertControls.Values)
+        {
+            // Only explicitly informational alerts may be collapsed. Unknown/new warning types stay visible.
+            var informational = control.Alert.Category is { } category && category.Id == "AreaInfo";
+            control.Visible = !informational;
+            hasVisibleStatus |= !informational;
+            control.SetHudCompact(_compact);
+        }
+        StatusPanel.Visible = hasVisibleStatus;
     }
 
     public event EventHandler<ProtoId<AlertPrototype>>? AlertPressed;

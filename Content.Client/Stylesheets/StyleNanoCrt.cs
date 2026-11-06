@@ -1,5 +1,6 @@
 using System.Numerics;
 using Content.Client.CMU14.Interface;
+using Content.Client.CMU14.Interface.Hud; // CMU14: shared terminal chrome.
 using Content.Client.CMU14.UserInterface.ColorPicker;
 using Content.Client.Resources;
 using Content.Client.UserInterface.Controls;
@@ -271,11 +272,11 @@ namespace Content.Client.Stylesheets
         public const string StyleClassButtonToggleRed = "ButtonToggleRed";
 
         /// <summary>
-        ///     The CRT font stack, with Noto fallbacks for glyphs the OSD font lacks.
+        ///     The CRT font stack, including CMU's matching Cyrillic OSD glyphs and symbol fallbacks.
         /// </summary>
         public static readonly string[] UavOsdFontStack =
         {
-            "/Fonts/UAVOSD/UAV-OSD-Sans-Mono.ttf",
+            "/Fonts/UAVOSD/CMU-OSD-Cyrillic.ttf", // CMU14: original Latin forms plus matching Russian glyphs.
             "/Fonts/NotoSans/NotoSans-Regular.ttf",
             "/Fonts/NotoSans/NotoSansSymbols-Regular.ttf",
             "/Fonts/NotoSans/NotoSansSymbols2-Regular.ttf"
@@ -854,15 +855,12 @@ namespace Content.Client.Stylesheets
             // See StyleClassCrtPanelFill: a plain fill in the same colour crtPanel uses, with none
             // of its border/corner/texture trimmings, for backing a control that must stay invisible
             // against a CrtPanel behind it.
-            // Corner ticks, no border. The sidebar needs an outer edge that says "instrument" without
-            // enclosing anything - a stroked rect here is the outermost of the nested boxes, and
-            // everything inside it then has to justify not being one too. Four L-marks read as a
-            // device and leave all four sides open.
+            // CMU14: one continuous screen perimeter, matching terminal tables and dialog frames.
             var crtScreenPanel = new CrtStyleBox
             {
                 BackgroundColor = CrtTerminalPalette.Surface0,
-                BorderThickness = new Thickness(0),
-                DrawCornerTicks = true,
+                BorderThickness = new Thickness(1), // CMU14: a continuous terminal perimeter.
+                DrawCornerTicks = false, // CMU14
                 CornerColor = CrtTerminalPalette.Line,
                 CornerLength = 11,
                 ContentMarginLeftOverride = 0,
@@ -871,7 +869,7 @@ namespace Content.Client.Stylesheets
                 ContentMarginBottomOverride = 0
             };
 
-            var crtPanelFill = new StyleBoxFlat
+            var crtPanelFill = new CmuCrtFillStyleBox // CMU14: opaque nested fills retain CRT material.
             {
                 BackgroundColor = CrtPanelBackground,
             };
@@ -879,13 +877,13 @@ namespace Content.Client.Stylesheets
             // The command band. Void behind the cells so the 1px separations read as gaps cut in one
             // plate; the cells themselves are borderless fills stepping up on hover. Padding is
             // vertical only - the outer cells run to the band's edges, so the band has no rim.
-            var crtCommandBand = new StyleBoxFlat
+            var crtCommandBand = new CmuCrtFillStyleBox // CMU14
             {
                 BackgroundColor = CrtTerminalPalette.Void,
                 BorderThickness = new Thickness(0),
             };
 
-            var crtCommandCell = new StyleBoxFlat
+            var crtCommandCell = new CmuCrtFillStyleBox // CMU14
             {
                 BackgroundColor = CrtTerminalPalette.Surface2,
                 BorderThickness = new Thickness(0),
@@ -895,31 +893,29 @@ namespace Content.Client.Stylesheets
                 ContentMarginBottomOverride = 5,
             };
 
-            var crtCommandCellHover = new StyleBoxFlat(crtCommandCell)
+            var crtCommandCellHover = new CmuCrtFillStyleBox(crtCommandCell) // CMU14
             {
                 BackgroundColor = CrtTerminalPalette.Surface3,
             };
 
-            var crtCommandCellPressed = new StyleBoxFlat(crtCommandCell)
+            var crtCommandCellPressed = new CmuCrtFillStyleBox(crtCommandCell) // CMU14
             {
                 BackgroundColor = CrtTerminalPalette.Surface4,
             };
 
-            var crtCommandCellDisabled = new StyleBoxFlat(crtCommandCell)
+            var crtCommandCellDisabled = new CmuCrtFillStyleBox(crtCommandCell) // CMU14
             {
                 BackgroundColor = CrtTerminalPalette.Surface1,
             };
 
-            // crtPanel with the corner brackets left on. The vote popup builds its panel this way and
-            // it is what makes the popup read as a piece of equipment rather than a flat card; the
-            // lobby action panel sits directly above a vote popup, so the two have to agree.
+            // CMU14: vote and lobby panels share the same plain terminal frame.
             var crtPanelTicked = new CrtStyleBox
             {
                 BackgroundColor = CrtPanelBackground,
                 BorderColor = CrtGreenDim,
                 CornerColor = CrtGreen.WithAlpha(0.28f),
                 BorderThickness = new Thickness(1),
-                DrawCornerTicks = true,
+                DrawCornerTicks = false, // CMU14: keep the thin frame without extra corner brackets.
                 CornerLength = 10,
                 // Tighter than crtPanel's 10/10/8/8. This panel is nothing but a heading and a
                 // button grid, both of which already carry their own separations, so the panel's
@@ -1118,7 +1114,7 @@ namespace Content.Client.Stylesheets
             // Bottom rule across a whole option row, label included. Checkboxes already carry one via
             // crtCheckBox; without this the sliders and dropdowns were the only rows in a section
             // with no divider, so the rule appeared to stop partway along the list.
-            var crtOptionRow = new StyleBoxFlat
+            var crtOptionRow = new CmuCrtFillStyleBox // CMU14: paint signal texture in the opaque fill.
             {
                 BackgroundColor = Color.Transparent,
                 BorderColor = CrtGreenDim.WithAlpha(0.35f),
@@ -1163,7 +1159,7 @@ namespace Content.Client.Stylesheets
             // Band behind a section heading in a settings list. Rules top and bottom only - side
             // borders would close it into a box, and the whole point of these headings is to divide
             // a long list without adding another rectangle to it.
-            var crtSectionHeader = new StyleBoxFlat
+            var crtSectionHeader = new CmuCrtFillStyleBox // CMU14: paint signal texture in the opaque fill.
             {
                 BackgroundColor = CrtPanelBackground,
                 BorderColor = CrtGreenDim,
@@ -1177,7 +1173,7 @@ namespace Content.Client.Stylesheets
             // Footer strip under a tabbed window. A single top rule rather than a full box: it sits
             // inside the window frame and the tab panel already, and a third rectangle around three
             // buttons is what made the options footer look so heavy.
-            var crtFooterRow = new StyleBoxFlat
+            var crtFooterRow = new CmuCrtFillStyleBox // CMU14: paint signal texture in the opaque fill.
             {
                 BackgroundColor = CrtPanelBackground,
                 BorderColor = CrtGreenDim,
@@ -1188,11 +1184,11 @@ namespace Content.Client.Stylesheets
                 ContentMarginBottomOverride = 5,
             };
 
-            // Visible fills and bright text distinguish available tabs from disabled controls.
+            // CMU14: terminal tabs use reverse video, with identical metrics in every state.
             var crtChatTab = new StyleBoxFlat
             {
-                BackgroundColor = CrtTerminalPalette.Surface2,
-                BorderColor = CrtTerminalPalette.Line,
+                BackgroundColor = CmuHudStyle.SurfaceColor,
+                BorderColor = CmuHudStyle.EdgeColor,
                 BorderThickness = new Thickness(1),
                 ContentMarginLeftOverride = 8,
                 ContentMarginRightOverride = 8,
@@ -1202,22 +1198,20 @@ namespace Content.Client.Stylesheets
 
             var crtChatTabHover = new StyleBoxFlat(crtChatTab)
             {
-                BackgroundColor = CrtTerminalPalette.Surface3,
+                BackgroundColor = CmuHudStyle.HoverColor,
                 BorderColor = CrtTerminalPalette.Text,
             };
 
             var crtChatTabSelected = new StyleBoxFlat(crtChatTab)
             {
-                BackgroundColor = CrtTerminalPalette.Surface3,
+                BackgroundColor = useCrtUi ? CrtTerminalPalette.Accent : CrtTerminalPalette.Surface3,
                 BorderColor = CrtTerminalPalette.Accent,
-                BorderThickness = new Thickness(1, 1, 1, 2),
-                ContentMarginBottomOverride = 4,
             };
 
             // The channel-selector popup that sits on top of the chat input row. Deliberately much
             // tighter than CrtInsetPanel (8/8/6/6): this is a strip spanning the input bar, not a
             // window, and the CRT button chrome inside it already carries 3px + a border of its own.
-            var crtChatPopup = new StyleBoxFlat
+            var crtChatPopup = new CmuCrtFillStyleBox // CMU14: paint signal texture in the opaque fill.
             {
                 BackgroundColor = CrtInsetBackground,
                 BorderColor = CrtGreenDim,
