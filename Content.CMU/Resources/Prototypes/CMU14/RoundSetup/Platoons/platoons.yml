@@ -1109,6 +1109,7 @@
   startingGearOverrides:
     CMSatchelMarine: RMCSatchelLightpackWeYa
   lorePrimer: AU14PrimerPlatoonWEYU
+  Allegiance: WeylandYutani
   reqlist: WYPMCCargoCatalog
   vendorSet: WYPMC
   rations: RMCMREWeYaPMC
@@ -1714,6 +1715,7 @@
   startingGearOverrides:
     CMSatchelMarine: RMCSatchelLightpackBlack
   lorePrimer: AU14PrimerPlatoonProdigySF
+  Allegiance: Prodigy
   reqlist: ProdigyCargoCatalog
   languages:
     - English

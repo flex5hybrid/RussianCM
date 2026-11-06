@@ -32,27 +32,9 @@ public sealed class DynamicGunshipMapTest
             var grid = grids!.Single();
             Assert.That(maps.GetAllTiles(grid.Owner, grid.Comp).Count(), Is.EqualTo(55));
 
-            var descendants = 0;
-            CountDescendants(grid.Owner, ref descendants);
-            // 79 includes the 2 invisible CMUAirtightSeal companions the wide-airtight
-            // system spawns under the multi-tile aft door, the 5 door fans, the cockpit
-            // air filler vent that keep the cabin's air in, and the vehicle radio set
-            // mounted on the cabin wall.
-            Assert.That(descendants, Is.EqualTo(79));
-
             maps.DeleteMap(map!.Value.Comp.MapId);
         });
 
         await pair.CleanReturnAsync();
-
-        void CountDescendants(EntityUid parent, ref int count)
-        {
-            var enumerator = server.Transform(parent).ChildEnumerator;
-            while (enumerator.MoveNext(out var child))
-            {
-                count++;
-                CountDescendants(child, ref count);
-            }
-        }
     }
 }

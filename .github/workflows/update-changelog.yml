@@ -106,7 +106,6 @@ jobs:
         id: auto-commit
         if: inputs.dry_run != true && github.ref_name == github.event.repository.default_branch
         with:
-          file_pattern: Resources/Changelog/*.yml Resources/Changelog/Parts/*.yml
           commit_message: "Auto-update changelog [skip ci]"
           commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
 

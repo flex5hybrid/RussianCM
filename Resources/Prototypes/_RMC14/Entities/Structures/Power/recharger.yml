@@ -51,6 +51,7 @@
           - Visor
           - PortableDialysis
           - RuMCBatteryDrain # RuMC edit
+          - CMUAutocompressor # CMU14: rechargeable chest compressor
           # SmartGun Battery
   - type: ItemMapper
     sprite: _RMC14/Structures/Power/recharger.rsi
