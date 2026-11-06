@@ -38,6 +38,7 @@
       - MandarinLanguage
       - LegaleseLanguage
       - SwahiliLanguage
+      - HebrewLanguage # RuMC edit
       # - KoreanLanguage
       # - TurkishLanguage
       # - AfrikaansLanguage

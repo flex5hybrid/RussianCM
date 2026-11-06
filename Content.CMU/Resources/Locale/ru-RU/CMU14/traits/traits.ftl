@@ -89,6 +89,9 @@ au14-trait-hindi-language-desc = Вы умеете говорить и пони�
 au14-trait-hungarian-language-name = Венгерский язык
 au14-trait-hungarian-language-desc = Вы умеете говорить и понимать по-венгерски. Гармония гласных стала вашим верным спутником.
 
+au14-trait-hebrew-language-name = Иврит
+au14-trait-hebrew-language-desc = Вы умеете говорить и понимать на иврите. Наконец-то вы можете заказать хумус и фалафель с полной уверенностью.
+
 au14-trait-indonesian-language-name = Индонезийский язык
 au14-trait-indonesian-language-desc = Вы умеете говорить и понимать по-индонезийски. Удивительно простая грамматика теперь на вашей стороне.
 

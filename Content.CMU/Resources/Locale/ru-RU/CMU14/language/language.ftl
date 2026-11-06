@@ -119,6 +119,9 @@ language-Filipino-description = Австронезийский земной яз
 language-Urdu-name = Урду
 language-Urdu-description = Индоарийский язык с сильным персидским и арабским влиянием.
 
+language-Hebrew-name = Иврит
+language-Hebrew-description = Семитский язык, возрожденный как разговорный в XX веке, с богатым историческим и религиозным наследием.
+
 language-Yoruba-name = Йоруба
 language-Yoruba-description = Тональный африканский язык с характерным произношением.
 
