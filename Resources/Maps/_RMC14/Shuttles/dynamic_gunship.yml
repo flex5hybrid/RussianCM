@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/11/2026 21:32:38
-  entityCount: 81
+  entityCount: 82
 maps:
 - 72
 grids:
@@ -498,7 +498,7 @@ entities:
       canCollide: False
 - proto: AU14VehicleRadioSet
   entities:
-  - uid: 79
+  - uid: 82
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
