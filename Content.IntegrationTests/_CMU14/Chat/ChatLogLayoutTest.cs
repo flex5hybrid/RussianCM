@@ -77,8 +77,7 @@ public sealed class ChatLogLayoutTest : GameTest
             }
 
             Settle();
-            var scroll = Descendants(panel).OfType<ScrollContainer>().Single();
-            var bar = Descendants(panel).OfType<VScrollBar>().Single(b => b.Parent != scroll);
+            var bar = Descendants(panel).OfType<VScrollBar>().Single();
             Assert.That(formattedCount, Is.LessThan(120));
             Assert.That(entries[^1].Row, Is.Not.Null, "The newest message must be visible initially");
             Assert.That(entries[0].Row, Is.Null);
@@ -95,15 +94,15 @@ public sealed class ChatLogLayoutTest : GameTest
 
             bar.Value = (bar.MaxValue - bar.Page) / 2;
             Settle();
-            var anchor = entries.Where(e => e.Row != null && e.Row.Position.Y + e.Row.Height > scroll.VScroll)
+            var anchor = entries.Where(e => e.Row != null && e.Row.Position.Y + e.Row.Height > bar.Value)
                 .MinBy(e => e.Row!.Position.Y)!;
-            var previousY = anchor.Row!.Position.Y - scroll.VScroll;
+            var previousY = anchor.Row!.Position.Y - bar.Value;
             panel.AddMessage(new ChatMessage(ChatChannel.Radio, "new", "", default, null),
                 FormattedMessage.FromUnformatted("new"), Color.White);
             Settle();
             Assert.That(panel.EntryCount, Is.EqualTo(ChatLogPanel.MaxEntries));
             Assert.That(anchor.Row, Is.Not.Null);
-            Assert.That(anchor.Row!.Position.Y - scroll.VScroll, Is.EqualTo(previousY).Within(0.1f),
+            Assert.That(anchor.Row!.Position.Y - bar.Value, Is.EqualTo(previousY).Within(0.1f),
                 "Dropping the oldest history entry must preserve the visible message and pixel offset");
             AssertRowsDoNotOverlap(panel, ChatLogPanel.MaxEntries);
             panel.ScrollToBottom();
@@ -123,8 +122,8 @@ public sealed class ChatLogLayoutTest : GameTest
             Client.ResolveDependency<IConfigurationManager>().SetCVar(CCVars.CrtUiEnabled, crt);
             using var panel = new ChatLogPanel { SetSize = new Vector2(540, 650) };
             ui.WindowRoot.AddChild(panel);
-            var scroll = Descendants(panel).OfType<ScrollContainer>().Single();
-            var scrollBar = Descendants(panel).OfType<VScrollBar>().Single(bar => bar.Parent != scroll);
+            var scrollBar = Descendants(panel).OfType<VScrollBar>().Single();
+            var scroll = scrollBar.Parent!.GetChild(0);
 
             void AddMessages(int count)
             {
@@ -163,13 +162,13 @@ public sealed class ChatLogLayoutTest : GameTest
             AssertSettled(500);
             Assert.That(scrollBar.IsAtEnd, Is.True);
 
-            // Showing the scroll-to-latest button changes the space available to the viewport.
+            // The latest-message overlay must preserve the viewport and reader position.
             scrollBar.Value = (scrollBar.MaxValue - scrollBar.Page) / 2;
             AssertSettled(500);
-            var previousScroll = scroll.VScroll;
+            var previousScroll = scrollBar.Value;
             AddMessages(1);
             AssertSettled(501);
-            Assert.That(scroll.VScroll, Is.EqualTo(previousScroll).Within(0.01f),
+            Assert.That(scrollBar.Value, Is.EqualTo(previousScroll).Within(0.01f),
                 "Incoming chat must preserve the reader's position");
             panel.ScrollToBottom();
             AssertSettled(501);

@@ -217,6 +217,8 @@ public sealed partial class ChatUIController : UIController
 
         UpdateChannelPermissions();
 
+        CMUInitializeChatSearch(); // CMU14: local UI command, without changing network input IDs.
+
         _input.SetInputCommand(ContentKeyFunctions.FocusChat,
             InputCmdHandler.FromDelegate(_ => FocusChat()));
 
@@ -312,10 +314,20 @@ public sealed partial class ChatUIController : UIController
             return;
 
         SetChatWindowOpacity(panel, opacity);
+        chatBox!.CMURefreshChatOpacity(); // CMU14: caption and tab backing follow the same preference.
     }
 
     internal static void SetChatWindowOpacity(PanelContainer panel, float opacity)
     {
+        Content.Client.CMU14.Interface.Hud.CmuHudStyle.ChatOpacity = Math.Clamp(opacity, 0f, 1f); // CMU14
+        if (StyleNano.CrtUiEnabled && panel.StyleClasses.Contains(Content.Client.CMU14.Interface.Hud.CmuHudStyle.Surface))
+        {
+            var hudBox = Content.Client.CMU14.Interface.Hud.CmuHudStyle.Box(
+                Content.Client.CMU14.Interface.Hud.CmuHudTone.Inset);
+            hudBox.Opacity = opacity;
+            panel.PanelOverride = hudBox;
+            return;
+        }
         // Read the base colour from the stylesheet, never from the panel's own current override.
         // This used to check PanelOverride first, which meant each call re-read the result of the
         // last one and multiplied alpha into it again - the log got darker every time the opacity
@@ -336,13 +348,10 @@ public sealed partial class ChatUIController : UIController
             ? CrtTerminalPalette.Surface1
             : source?.BackgroundColor ?? StyleNano.ChatBackgroundColor;
 
-        // Opaque under the CRT theme. The surface ladder works by exact tones, and drawing Surface1
-        // at partial alpha composites it against Surface0 behind, landing on a colour that is darker
-        // than either and belongs to neither - which is why the log kept reading as black however the
-        // ladder was tuned. Translucency is a base-theme affordance; here it fights the palette.
-        var box = new StyleBoxFlat
+        // CMU14: opacity affects only the backing, in both interface styles; glyphs retain full alpha.
+        var box = new Content.Client.CMU14.Interface.Hud.CmuCrtFillStyleBox // CMU14: texture the backing, not glyphs.
         {
-            BackgroundColor = StyleNano.CrtUiEnabled ? color : color.WithAlpha(opacity)
+            BackgroundColor = color.WithAlpha(Math.Clamp(opacity, 0f, 1f))
         };
 
         // Carry the source's padding across. The override replaces the styled box wholesale, so

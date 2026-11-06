@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Numerics;
 using Content.Client.Stylesheets;
+using Content.Client.CMU14.Interface.Hud;
 using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
 using Content.Client.UserInterface.Systems.Chat.Widgets;
@@ -21,27 +22,22 @@ public sealed partial class SeparatedChatGameScreen : InGameScreen
     public const string StyleClassChatContainer = "ChatContainer";
     public const string StyleClassChatOutput = "ChatOutput";
 
-    private const float DefaultChatSplitFraction = 0.6f;
+    private const float DefaultChatSplitFraction = 0.7f;
     private const float MinChatSplitFraction = 0.35f;
     private const float MaxChatSplitFraction = 0.94f;
     private const int ApplyChatSplitFrames = 12;
-    private const float UnscaledChatWidth = 300f;
-    private const float MinChatScale = 0.55f;
     private const string StatusSideLeft = "left";
 
     private float? _pendingChatSplitFraction;
     private int _pendingChatSplitFrames;
-    private float _chatScale = 1f;
-    private readonly Dictionary<Control, ChatScaleBaseline> _chatScaleBaselines = new();
 
     // AU14: optional viewport centering (the chat panel otherwise pushes the game view left of window centre).
     private readonly IConfigurationManager _cfg;
-    private readonly IResourceCache _resourceCache;
+    private readonly CmuHudScreenCoordinator _hud;
 
     public SeparatedChatGameScreen()
     {
         _cfg = IoCManager.Resolve<IConfigurationManager>();
-        _resourceCache = IoCManager.Resolve<IResourceCache>();
         RobustXamlLoader.Load(this);
 
         AutoscaleMaxResolution = new Vector2i(1080, 770);
@@ -52,7 +48,10 @@ public sealed partial class SeparatedChatGameScreen : InGameScreen
         SetAnchorAndMarginPreset(Inventory, LayoutPreset.BottomLeft, margin: 5);
         SetAnchorAndMarginPreset(TopLeftContainer, LayoutPreset.TopLeft, margin: 10);
         SetAnchorAndMarginPreset(Ghost, LayoutPreset.BottomWide, margin: 80);
-        SetAnchorAndMarginPreset(Hotbar, LayoutPreset.BottomWide, margin: 5);
+        SetAnchorAndMarginPreset(Hotbar, LayoutPreset.BottomWide, margin: 0); // CMU14: safe even before the first viewport resize.
+        _hud = new CmuHudScreenCoordinator(ViewportContainer, Actions, Inventory, Hotbar, Alerts, Ghost, TopBar);
+        Chat.EnableHudWorkspace();
+        SeparatedChatPanel.MinWidth = 240;
         UpdateSeparatedHudStatusSide();
 
         // RMC14
@@ -61,7 +60,6 @@ public sealed partial class SeparatedChatGameScreen : InGameScreen
         ScreenContainer.OnSplitResizeFinished += OnSplitResizeFinished;
 
         ViewportContainer.OnResized += ResizeActionContainer;
-        SeparatedChatPanel.OnResized += UpdateChatPanelScale;
 
         // AU14: keep the game view centred on the window when enabled (re-applied on any pane resize).
         ViewportContainer.OnResized += UpdateViewportCentering;
@@ -78,6 +76,8 @@ public sealed partial class SeparatedChatGameScreen : InGameScreen
         var left = string.Equals(_cfg.GetCVar(AU14CCVars.SeparatedHudStatusSide), StatusSideLeft, StringComparison.OrdinalIgnoreCase);
         SetAnchorAndMarginPreset(Alerts, left ? LayoutPreset.CenterLeft : LayoutPreset.CenterRight, margin: 10);
         SetGrowVertical(Alerts, GrowDirection.Both);
+        _hud.StatusOnLeft = left;
+        _hud.Apply();
     }
 
     /// <summary>
@@ -88,10 +88,13 @@ public sealed partial class SeparatedChatGameScreen : InGameScreen
     private void UpdateViewportCentering()
     {
         var chatWidth = MathF.Max(0, ScreenContainer.Size.X - ViewportContainer.Size.X);
-        var offset = _cfg.GetCVar(AU14CCVars.CenterSeparatedViewport) ? chatWidth : 0;
-        LayoutContainer.SetMarginLeft(MainViewport, offset);
-        LayoutContainer.SetMarginLeft(Ghost, offset);
-        LayoutContainer.SetMarginLeft(Hotbar, offset);
+        // CMU14: keep a nonnegative game viewport even when chat occupies more than half the window.
+        var offset = _cfg.GetCVar(AU14CCVars.CenterSeparatedViewport)
+            ? MathF.Min(chatWidth, MathF.Max(0, ViewportContainer.Width - 64)) : 0;
+        LayoutContainer.SetMarginLeft(MainViewport, 0);
+        MainViewport.Margin = new Thickness(offset, 0, 0, 0);
+        _hud.LeftInset = offset;
+        _hud.Apply();
     }
 
     [Obsolete("Retained for CMUControlLifetime.Release cleanup.")]
@@ -107,18 +110,7 @@ public sealed partial class SeparatedChatGameScreen : InGameScreen
 
     private void ResizeActionContainer()
     {
-        float indent = 20;
-        Actions.ActionsContainer.MaxGridWidth = ViewportContainer.Size.X - indent;
-    }
-
-    private void UpdateChatPanelScale()
-    {
-        var scale = Math.Clamp(SeparatedChatPanel.Size.X / UnscaledChatWidth, MinChatScale, 1f);
-        if (Math.Abs(scale - _chatScale) < 0.001f)
-            return;
-
-        _chatScale = scale;
-        ApplyChatScale(SeparatedChatContent, scale);
+        _hud.Apply();
     }
 
     public override ChatBox ChatBox => GetWidget<ChatBox>()!;
@@ -169,107 +161,4 @@ public sealed partial class SeparatedChatGameScreen : InGameScreen
         return Math.Clamp(fraction, MinChatSplitFraction, MaxChatSplitFraction);
     }
 
-    private void ApplyChatScale(Control control, float scale)
-    {
-        var baseline = GetChatScaleBaseline(control);
-
-        control.Margin = Scale(baseline.Margin, scale);
-        control.MinSize = Scale(baseline.MinSize, scale);
-        control.SetSize = ScaleOptional(baseline.SetSize, scale);
-        control.MaxSize = ScaleOptional(baseline.MaxSize, scale);
-
-        if (control is BoxContainer box)
-            box.SeparationOverride = ScaleOptional(baseline.SeparationOverride, scale);
-
-        if (control is Label label)
-        {
-            var (variation, size, display) = GetChatFontStyle(label);
-            label.FontOverride = _resourceCache.NotoStack(variation, Math.Max(6, (int) Math.Round(size * scale)), display);
-        }
-
-        foreach (var child in control.Children)
-            ApplyChatScale(child, scale);
-    }
-
-    private ChatScaleBaseline GetChatScaleBaseline(Control control)
-    {
-        if (_chatScaleBaselines.TryGetValue(control, out var baseline))
-            return baseline;
-
-        baseline = new ChatScaleBaseline(
-            control.Margin,
-            control.MinSize,
-            control.SetSize,
-            control.MaxSize,
-            control is BoxContainer box ? box.SeparationOverride : null);
-        _chatScaleBaselines.Add(control, baseline);
-        return baseline;
-    }
-
-    private static Thickness Scale(Thickness value, float scale)
-    {
-        return new Thickness(value.Left * scale, value.Top * scale, value.Right * scale, value.Bottom * scale);
-    }
-
-    private static Vector2 Scale(Vector2 value, float scale)
-    {
-        return new Vector2(ScaleOptional(value.X, scale), ScaleOptional(value.Y, scale));
-    }
-
-    private static Vector2 ScaleOptional(Vector2 value, float scale)
-    {
-        return new Vector2(ScaleOptional(value.X, scale), ScaleOptional(value.Y, scale));
-    }
-
-    private static float ScaleOptional(float value, float scale)
-    {
-        return float.IsFinite(value) ? value * scale : value;
-    }
-
-    private static int? ScaleOptional(int? value, float scale)
-    {
-        return value is { } actual ? Math.Max(0, (int) Math.Round(actual * scale)) : null;
-    }
-
-    private static (string Variation, float Size, bool Display) GetChatFontStyle(Label label)
-    {
-        if (label.StyleClasses.Contains("LabelHeadingBigger"))
-            return ("Bold", 20f, false);
-
-        if (label.StyleClasses.Contains("LabelHeading"))
-            return ("Bold", 16f, false);
-
-        if (label.StyleClasses.Contains("LabelKeyText"))
-            return ("Bold", 12f, false);
-
-        if (label.StyleClasses.Contains("LabelSmall") ||
-            label.StyleClasses.Contains("LabelSubText") ||
-            label.StyleClasses.Contains("WindowFooterText"))
-        {
-            return ("Regular", 8f, false);
-        }
-
-        if (label.StyleClasses.Contains(Button.StyleClassButton))
-            return ("Bold", 10f, false);
-
-        return ("Regular", 10f, false);
-    }
-
-    private readonly struct ChatScaleBaseline
-    {
-        public readonly Thickness Margin;
-        public readonly Vector2 MinSize;
-        public readonly Vector2 SetSize;
-        public readonly Vector2 MaxSize;
-        public readonly int? SeparationOverride;
-
-        public ChatScaleBaseline(Thickness margin, Vector2 minSize, Vector2 setSize, Vector2 maxSize, int? separationOverride)
-        {
-            Margin = margin;
-            MinSize = minSize;
-            SetSize = setSize;
-            MaxSize = maxSize;
-            SeparationOverride = separationOverride;
-        }
-    }
 }

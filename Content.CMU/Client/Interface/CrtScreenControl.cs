@@ -25,8 +25,7 @@ namespace Content.Client.CMU14.Interface;
 ///     Other parents remain supported, but also draw the source normally beneath the shaded copy.
 ///     </para>
 ///     <para>
-///     Once the source is a texture, bloom and barrel curvature become possible in the same pass.
-///     Neither is implemented yet.
+///     The terminal shader applies barrel curvature and vignette to the captured surface.
 ///     </para>
 /// </remarks>
 public sealed partial class CrtScreenControl : Control
@@ -43,6 +42,9 @@ public sealed partial class CrtScreenControl : Control
 
     private IRenderTexture? _target;
     private Vector2i _targetSize;
+
+    /// <summary>Authored terminal passes supply their own raster; background materials must not double it.</summary>
+    public static bool CapturingSource { get; private set; }
 
     /// <summary>The subtree to draw through the shader. Must precede this control in the tree.</summary>
     public Control? Source { get; set; }
@@ -124,6 +126,7 @@ public sealed partial class CrtScreenControl : Control
     ///     palette, so turning the theme off left the grain running on the settings window.
     /// </remarks>
     public bool Drawing => _shader != null
+        && !CmuCrtCapture.Capturing
         && Source != null
         && Source.Visible
         && Visible
@@ -159,7 +162,7 @@ public sealed partial class CrtScreenControl : Control
         var handle = renderHandle.DrawingHandleScreen;
 
         // A failed render pass is retried every frame; LastError only gates Drawing for callers.
-        if (_shader == null || Source == null || !StyleNano.CrtUiEnabled)
+        if (_shader == null || Source == null || !StyleNano.CrtUiEnabled || CmuCrtCapture.Capturing)
             return;
 
         var intensity = _cfg.GetCVar(CCVars.CMUCrtEffectIntensity);
@@ -182,7 +185,19 @@ public sealed partial class CrtScreenControl : Control
             // Re-entrant render pass: we are inside the UI's own draw when this runs. If the engine
             // objects to that, it will surface here rather than taking the client down.
             handle.RenderInRenderTarget(_target,
-                () => _ui.RenderControl(renderHandle, Source, Vector2i.Zero),
+                () =>
+                {
+                    var previous = CapturingSource;
+                    CapturingSource = true;
+                    try
+                    {
+                        _ui.RenderControl(renderHandle, Source, Vector2i.Zero);
+                    }
+                    finally
+                    {
+                        CapturingSource = previous;
+                    }
+                },
                 Color.Transparent);
         }
         catch (Exception e)

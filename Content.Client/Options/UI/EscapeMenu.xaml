@@ -3,39 +3,38 @@
             xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
             xmlns:ui="clr-namespace:Content.Client.Voting.UI"
             xmlns:ui1="clr-namespace:Content.Client.Options.UI"
+            xmlns:hud="clr-namespace:Content.Client.CMU14.Interface.Hud"
             Title="{Loc 'ui-escape-title'}"
             Resizable="False">
 
+    <hud:CmuHudPanel MenuSurface="True">
     <BoxContainer Orientation="Vertical" SeparationOverride="5" MinWidth="310">
-        <PanelContainer Name="RoundStatusPanel" Access="Public">
-            <PanelContainer.PanelOverride>
-                <gfx:StyleBoxFlat BackgroundColor="#11161C" BorderColor="#3E4A58" BorderThickness="1" ContentMarginLeftOverride="10" ContentMarginRightOverride="10" ContentMarginTopOverride="8" ContentMarginBottomOverride="8"/>
-            </PanelContainer.PanelOverride>
-            <BoxContainer Orientation="Vertical" SeparationOverride="6">
+        <PanelContainer Name="RoundStatusPanel" Access="Public" StyleClasses="CmuHudInset">
+            <BoxContainer Orientation="Vertical" SeparationOverride="6" Margin="10 8">
                 <BoxContainer Orientation="Horizontal" SeparationOverride="8">
-                    <Label Text="{Loc 'ui-escape-status-title'}" Modulate="#D2B171"/>
+                    <Label Text="{Loc 'ui-escape-status-title'}" StyleClasses="CmuHudHeading"/>
                     <Control HorizontalExpand="True"/>
-                    <Label Access="Public" Name="RoundTimeValue" Modulate="#FFFFFF"/>
+                    <Label Access="Public" Name="RoundTimeValue" StyleClasses="CmuHudBody"/>
                 </BoxContainer>
                 <PanelContainer StyleClasses="LowDivider" />
                 <BoxContainer Orientation="Vertical" SeparationOverride="3">
                     <BoxContainer Orientation="Horizontal" SeparationOverride="10">
-                        <Label Text="{Loc 'ui-escape-status-map'}" Modulate="#8C96A3" MinSize="96 0"/>
-                        <Label Access="Public" Name="MapValue" Text="{Loc 'ui-escape-status-unknown'}" ClipText="True" HorizontalExpand="True" MinWidth="220" Modulate="#FFFFFF"/>
+                        <Label Text="{Loc 'ui-escape-status-map'}" StyleClasses="CmuHudBody CmuHudMuted" MinSize="96 0"/>
+                        <Label Access="Public" Name="MapValue" Text="{Loc 'ui-escape-status-unknown'}" ClipText="True" HorizontalExpand="True" MinWidth="220" StyleClasses="CmuHudBody"/>
                     </BoxContainer>
                     <BoxContainer Orientation="Horizontal" SeparationOverride="10">
-                        <Label Text="{Loc 'ui-escape-status-ship-map'}" Modulate="#8C96A3" MinSize="96 0"/>
-                        <Label Access="Public" Name="ShipMapValue" Text="{Loc 'ui-escape-status-no-ship'}" ClipText="True" HorizontalExpand="True" MinWidth="220" Modulate="#FFFFFF"/>
+                        <Label Text="{Loc 'ui-escape-status-ship-map'}" StyleClasses="CmuHudBody CmuHudMuted" MinSize="96 0"/>
+                        <Label Access="Public" Name="ShipMapValue" Text="{Loc 'ui-escape-status-no-ship'}" ClipText="True" HorizontalExpand="True" MinWidth="220" StyleClasses="CmuHudBody"/>
                     </BoxContainer>
                     <BoxContainer Orientation="Horizontal" SeparationOverride="10">
-                        <Label Text="{Loc 'ui-escape-status-gamemode'}" Modulate="#8C96A3" MinSize="96 0"/>
-                        <Label Access="Public" Name="GamemodeValue" Text="{Loc 'ui-escape-status-unknown'}" ClipText="True" HorizontalExpand="True" MinWidth="220" Modulate="#FFFFFF"/>
+                        <Label Text="{Loc 'ui-escape-status-gamemode'}" StyleClasses="CmuHudBody CmuHudMuted" MinSize="96 0"/>
+                        <Label Access="Public" Name="GamemodeValue" Text="{Loc 'ui-escape-status-unknown'}" ClipText="True" HorizontalExpand="True" MinWidth="220" StyleClasses="CmuHudBody"/>
                     </BoxContainer>
                     <BoxContainer Orientation="Horizontal" SeparationOverride="10">
-                        <Label Text="{Loc 'ui-escape-status-round'}" Modulate="#8C96A3" MinSize="96 0"/>
-                        <Label Access="Public" Name="RoundValue" HorizontalExpand="True" Align="Right" Modulate="#FFFFFF"/>
-                        <Label Text="{Loc 'ui-escape-status-players'}" Modulate="#8C96A3" MinSize="70 0"/>
-                        <Label Access="Public" Name="PlayersValue" Align="Right" Modulate="#FFFFFF"/>
+                        <Label Text="{Loc 'ui-escape-status-round'}" StyleClasses="CmuHudBody CmuHudMuted" MinSize="96 0"/>
+                        <Label Access="Public" Name="RoundValue" HorizontalExpand="True" Align="Right" StyleClasses="CmuHudBody"/>
+                        <Label Text="{Loc 'ui-escape-status-players'}" StyleClasses="CmuHudBody CmuHudMuted" MinSize="70 0"/>
+                        <Label Access="Public" Name="PlayersValue" Align="Right" StyleClasses="CmuHudBody"/>
                     </BoxContainer>
                 </BoxContainer>
             </BoxContainer>
@@ -58,4 +57,5 @@
         <Button Access="Public" Name="DisconnectButton" Text="{Loc 'ui-escape-disconnect'}" StyleClasses="negative OpenLeft" />
         <Button Access="Public" Name="QuitButton" Text="{Loc 'ui-escape-quit'}" StyleClasses="negative OpenRight" />
     </BoxContainer>
+    </hud:CmuHudPanel>
 </ui1:EscapeMenu>

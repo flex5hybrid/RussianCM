@@ -1,5 +1,7 @@
 using Content.Client.Gameplay;
+using Content.Client.UserInterface.Screens;
 using Content.Client.UserInterface.Systems.Gameplay;
+using Content.Shared.CMU14.CCVar;
 using Content.Shared.CMU14.Input;
 using Content.Shared.CMU14.Medical.Core;
 using Content.Shared.CMU14.Medical.Anatomy.BodyParts;
@@ -87,6 +89,7 @@ public sealed partial class BodyZoneTargetWidgetController :
         _player.LocalPlayerDetached += OnLocalDetached;
         _cfg.OnValueChanged(CMUMedicalCCVars.Enabled, OnGateCvarChanged);
         _cfg.OnValueChanged(CMUMedicalCCVars.HitLocationEnabled, OnGateCvarChanged);
+        _cfg.OnValueChanged(AU14CCVars.SeparatedHudStatusSide, OnStatusSideChanged);
 
         RefreshVisibility();
     }
@@ -114,6 +117,7 @@ public sealed partial class BodyZoneTargetWidgetController :
         _player.LocalPlayerDetached -= OnLocalDetached;
         _cfg.UnsubValueChanged(CMUMedicalCCVars.Enabled, OnGateCvarChanged);
         _cfg.UnsubValueChanged(CMUMedicalCCVars.HitLocationEnabled, OnGateCvarChanged);
+        _cfg.UnsubValueChanged(AU14CCVars.SeparatedHudStatusSide, OnStatusSideChanged);
 
         _widget.ZoneClicked -= OnZoneClicked;
         _widget.Orphan();
@@ -125,16 +129,23 @@ public sealed partial class BodyZoneTargetWidgetController :
         var screen = UIManager.ActiveScreen;
         var viewport = screen?.GetWidget<MainViewport>();
         var parent = viewport?.Parent ?? (Control?)screen ?? UIManager.RootControl;
-        parent.AddChild(widget);
+        if (widget.Parent != parent)
+        {
+            widget.Orphan();
+            parent.AddChild(widget);
+        }
 
         const float horizontalMargin = 8f;
-        const float verticalMargin = 18f;
+        var left = screen is DefaultGameScreen || screen is SeparatedChatGameScreen
+            && string.Equals(_cfg.GetCVar(AU14CCVars.SeparatedHudStatusSide), "left", StringComparison.OrdinalIgnoreCase);
+        var verticalMargin = left ? 82f : 18f;
         var width = widget.MinSize.X;
         var height = widget.MinSize.Y;
 
-        LayoutContainer.SetAnchorPreset(widget, LayoutContainer.LayoutPreset.BottomRight);
-        LayoutContainer.SetMarginLeft(widget, -(horizontalMargin + width));
-        LayoutContainer.SetMarginRight(widget, -horizontalMargin);
+        widget.HorizontalAlignment = left ? Control.HAlignment.Left : Control.HAlignment.Right;
+        LayoutContainer.SetAnchorPreset(widget, left ? LayoutContainer.LayoutPreset.BottomLeft : LayoutContainer.LayoutPreset.BottomRight);
+        LayoutContainer.SetMarginLeft(widget, left ? horizontalMargin : -(horizontalMargin + width));
+        LayoutContainer.SetMarginRight(widget, left ? horizontalMargin + width : -horizontalMargin);
         LayoutContainer.SetMarginTop(widget, -(verticalMargin + height));
         LayoutContainer.SetMarginBottom(widget, -verticalMargin);
     }
@@ -142,6 +153,12 @@ public sealed partial class BodyZoneTargetWidgetController :
     private void OnLocalAttached(EntityUid uid) => RefreshVisibility();
     private void OnLocalDetached(EntityUid uid) => RefreshVisibility();
     private void OnGateCvarChanged(bool _) => RefreshVisibility();
+
+    private void OnStatusSideChanged(string _)
+    {
+        if (_widget != null)
+            AttachToHud(_widget);
+    }
 
     private void RefreshVisibility()
     {

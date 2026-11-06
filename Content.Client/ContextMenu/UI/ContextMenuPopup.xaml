@@ -1,6 +1,7 @@
-<Popup xmlns="https://spacestation14.io">
-    <PanelContainer Name="MenuPanel">
+<Popup xmlns="https://spacestation14.io" xmlns:cmu="clr-namespace:Content.Client.CMU14.Interface">
+    <!-- CMU14: preserve native context-menu layout/input beneath the optional CRT display pass. -->
+    <cmu:CmuCrtDisplayPanel Name="MenuPanel" MenuSurface="True">
         <ScrollContainer Name="Scroll" VerticalExpand="True" HScrollEnabled="False" ReturnMeasure="True" ReserveScrollbarSpace="False">
         </ScrollContainer>
-    </PanelContainer>
+    </cmu:CmuCrtDisplayPanel>
 </Popup>

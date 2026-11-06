@@ -309,6 +309,12 @@ binds:
   type: State
   key: R
   mod1: Shift
+# CMU14: preserve Ctrl+F for holstering; chat search has its own shortcut.
+- function: cmu_chat_search
+  type: Command
+  key: F
+  mod1: Control
+  mod2: Shift
 - function: FlipObject
   type: State
   key: F

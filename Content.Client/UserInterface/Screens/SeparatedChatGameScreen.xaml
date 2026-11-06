@@ -20,19 +20,17 @@
             <widgets:GhostGui Name="Ghost" Access="Protected" />
             <inventory:InventoryGui Name="Inventory" Access="Protected"/>
             <hotbar:HotbarGui Name="Hotbar" Access="Protected"/>
-            <BoxContainer Name="TopLeftContainer" Orientation="Vertical">
+            <!-- CMU14: menus stay in the game viewport independently of chat width. -->
+            <BoxContainer Name="TopLeftContainer" Orientation="Vertical" SeparationOverride="8">
+                <menuBar:GameTopMenuBar Name="TopBar" Access="Public" HorizontalAlignment="Left"/>
                 <actions:ActionsBar Name="Actions" Access="Protected" />
                 <BoxContainer Name="VoteMenu" Access="Public" Orientation="Vertical"/>
             </BoxContainer>
             <alerts:AlertsUI Name="Alerts" Access="Protected" />
         </LayoutContainer>
-        <PanelContainer Name="SeparatedChatPanel" MinWidth="160">
-            <PanelContainer.PanelOverride>
-                <graphics:StyleBoxFlat BackgroundColor="#202020" />
-            </PanelContainer.PanelOverride>
+        <PanelContainer Name="SeparatedChatPanel" MinWidth="160" StyleClasses="CmuHudInset">
 
-            <BoxContainer Name="SeparatedChatContent" Orientation="Vertical" HorizontalExpand="True" SeparationOverride="10" Margin="10">
-                <menuBar:GameTopMenuBar Name="TopBar" HorizontalExpand="True" Access="Public" />
+            <BoxContainer Name="SeparatedChatContent" Orientation="Vertical" HorizontalExpand="True" SeparationOverride="6" Margin="6">
                 <chat:ChatBox StyleClasses="ChatOutput" VerticalExpand="True" HorizontalExpand="True" Name="Chat" Access="Protected" MinSize="0 0"/>
             </BoxContainer>
         </PanelContainer>

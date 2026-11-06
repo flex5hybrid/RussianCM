@@ -256,9 +256,7 @@ public sealed class OptionsThemeRegressionTest : GameTest
         await Client.WaitAssertion(() =>
         {
             using var panel = new ChatLogPanel();
-            var scroll = Descendants(panel).OfType<ScrollContainer>().Single();
-            var gutter = Descendants(panel).OfType<VScrollBar>()
-                .Single(bar => bar.Parent is not ScrollContainer);
+            var gutter = Descendants(panel).OfType<VScrollBar>().Single();
             var latest = Descendants(panel).OfType<Button>().Single();
             var frameUpdate = typeof(ChatLogPanel).GetMethod("FrameUpdate", BindingFlags.Instance | BindingFlags.NonPublic)!;
             var bounds = new UIBox2(Vector2.Zero, new Vector2(300, 160));
@@ -285,23 +283,32 @@ public sealed class OptionsThemeRegressionTest : GameTest
 
             Populate(80);
             Settle();
-            Assert.That(scroll.VScroll, Is.GreaterThan(0));
+            Assert.That(gutter.Value, Is.GreaterThan(0));
             Assert.That(gutter.IsAtEnd, Is.True);
             Assert.That(latest.Visible, Is.False);
 
-            // Relayout can clamp an offset without any input, particularly while replacing a tab.
-            scroll.VScroll = 0;
+            // Layout refresh retains bottom-follow; a real wheel gesture must cancel it.
+            panel.RefreshLayout();
             Settle();
             Assert.That(gutter.IsAtEnd, Is.True);
-            Assert.That(latest.Visible, Is.False);
+            var beforeWheel = gutter.Value;
+            var wheel = new GUIMouseWheelEventArgs(new Vector2(0, 1), panel,
+                Vector2.Zero, default, Vector2.Zero, Vector2.Zero);
+            typeof(ChatLogPanel).GetMethod("MouseWheel", BindingFlags.Instance | BindingFlags.NonPublic)!
+                .Invoke(panel, [wheel]);
+            Settle();
+            Assert.That(gutter.Value, Is.LessThan(beforeWheel - 40), "Upward wheel input must leave the latest messages.");
+            var afterWheel = gutter.Value;
+            Settle();
+            Assert.That(gutter.Value, Is.EqualTo(afterWheel).Within(0.1f), "Idle layout must not undo wheel input.");
 
             gutter.Value = 0;
             Settle();
-            Assert.That(scroll.VScroll, Is.Zero);
+            Assert.That(gutter.Value, Is.Zero);
             Assert.That(latest.Visible, Is.True);
             Populate(1);
             Settle();
-            Assert.That(scroll.VScroll, Is.Zero, "New messages must not interrupt reading older messages.");
+            Assert.That(gutter.Value, Is.Zero, "New messages must not interrupt reading older messages.");
 
             panel.Clear();
             Populate(20);
@@ -358,7 +365,7 @@ public sealed class OptionsThemeRegressionTest : GameTest
             button.ForceRunStyleUpdate();
             Assert.That(button.Modulate, Is.EqualTo(Color.White));
             Assert.That(button.Label.FontColorOverride, Is.EqualTo(button.Pressed
-                ? CrtTerminalPalette.TextBright
+                ? Content.Client.CMU14.Interface.Hud.CmuHudStyle.InverseTextColor
                 : CrtTerminalPalette.Text));
             Assert.That(button.TryGetStyleProperty<StyleBox>(ContainerButton.StylePropertyStyleBox, out var box), Is.True);
             Assert.That(box, Is.TypeOf<StyleBoxFlat>());

@@ -154,7 +154,7 @@ public sealed partial class CCVars
         CVarDef.Create("cmu.chat_row_tint", CMUChatRowTintFull, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
-    /// Draw the CRT scanline effect over chat independently of other menu effects.
+    /// Enable the CRT texture and optional display simulation over chat independently of menus.
     /// </summary>
     public static readonly CVarDef<bool> CMUChatCrtHaze =
         CVarDef.Create("cmu.chat_crt_haze", true, CVar.CLIENTONLY | CVar.ARCHIVE);
@@ -165,6 +165,14 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<float> CMUCrtEffectIntensity =
         CVarDef.Create("cmu.crt_effect_intensity", 0.5f, CVar.CLIENTONLY | CVar.ARCHIVE);
+
+    /// <summary>Curved background raster and glass shading; text always renders live.</summary>
+    public static readonly CVarDef<bool> CMUCrtDisplayEffect =
+        CVarDef.Create("cmu.crt_display_effect", true, CVar.CLIENTONLY | CVar.ARCHIVE);
+
+    /// <summary>Background signal updates per second. Does not throttle controls, input or simulation.</summary>
+    public static readonly CVarDef<int> CMUCrtDisplayRefreshRate =
+        CVarDef.Create("cmu.crt_display_refresh_rate", 24, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
     ///     Distance in pixels between scanlines. The single most important number in the effect:

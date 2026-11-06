@@ -2,13 +2,19 @@
               xmlns:ui="clr-namespace:Content.Client.Options.UI"
               Orientation="Vertical" SeparationOverride="2">
     <Label Text="{Loc 'ui-options-cmu-crt'}" StyleClasses="LabelKeyText" />
-    <CheckBox Name="CrtUiEnabledCheckBox" Text="{Loc 'ui-options-crt-ui-enabled'}" />
+    <CheckBox Name="CrtUiEnabledCheckBox" Text="{Loc 'cmu-ui-options-new-style'}" ToolTip="{Loc 'cmu-ui-options-new-style-tooltip'}" />
+    <ui:OptionSlider Name="ChatOpacitySlider" Title="{Loc 'cmu-ui-options-chat-opacity'}" />
     <ui:OptionColorSlider Name="CrtUiColorSlider"
               Title="{Loc 'ui-options-crt-ui-color'}" />
     <ui:OptionDropDown Name="UiFontDropDown" Title="{Loc 'cmu-ui-options-font'}"
                        ToolTip="{Loc 'cmu-ui-options-font-tooltip'}" />
     <CheckBox Name="CrtMenuEffectCheckBox" Text="{Loc 'cmu-ui-options-menu-crt-effect'}" />
     <ui:OptionSlider Name="CrtIntensitySlider" Title="{Loc 'cmu-ui-options-crt-intensity'}" />
+    <!-- CMU14: display effects share the appearance options used by UI Setup. -->
+    <CheckBox Name="CrtDisplayEffectCheckBox" Text="{Loc 'cmu-ui-options-crt-display'}" ToolTip="{Loc 'cmu-ui-options-crt-display-tooltip'}" />
+    <ui:OptionSlider Name="CrtDisplayRefreshSlider" Title="{Loc 'cmu-ui-options-crt-refresh'}" />
+    <ui:OptionSlider Name="CrtCurvatureSlider" Title="{Loc 'cmu-hud-crt-curvature'}" ToolTip="{Loc 'cmu-hud-crt-curvature-tooltip'}" />
+    <ui:OptionSlider Name="CrtVignetteSlider" Title="{Loc 'cmu-hud-crt-vignette'}" />
     <CheckBox Name="ChatCrtHazeCheckBox"
               Text="{Loc 'cmu-ui-options-chat-crt-haze'}"
               ToolTip="{Loc 'cmu-ui-options-chat-crt-haze-tooltip'}" />
