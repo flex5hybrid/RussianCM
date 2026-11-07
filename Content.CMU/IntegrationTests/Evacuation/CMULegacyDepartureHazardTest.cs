@@ -18,10 +18,11 @@ public sealed class CMULegacyDepartureHazardTest : GameTest
     {
         EntityUid map = default;
         EntityUid transitMap = default;
+        MapId mapId = default;
         await Server.WaitAssertion(() =>
         {
             var maps = SEntMan.System<SharedMapSystem>();
-            map = maps.CreateMap(out var mapId, runMapInit: true);
+            map = maps.CreateMap(out mapId, runMapInit: true);
             var floor = new Tile(Server.ResolveDependency<ITileDefinitionManager>()["Plating"].TileId);
             var terrain = maps.CreateGridEntity(mapId);
             maps.SetTile(terrain, Vector2i.Zero, floor);

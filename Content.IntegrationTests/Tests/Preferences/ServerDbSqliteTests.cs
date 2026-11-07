@@ -109,7 +109,11 @@ namespace Content.IntegrationTests.Tests.Preferences
             var preferences = (ServerPreferencesManager)pair.Server.ResolveDependency<IServerPreferencesManager>();
             var username = new NetUserId(new Guid("640bd619-fc8d-4fe2-bf3c-4a5fb17d6ddd"));
             const int slot = 0;
-            var originalProfile = CharlieCharlieson();
+            // CMU14: merged profile fields must survive together with the local TTS voice.
+            var originalProfile = CharlieCharlieson()
+                .WithTTSVoice("ILLIDAN")
+                .WithSyntheticGeneration(4)
+                .WithSyntheticModelSuffix("TEST-42");
             await db.InitPrefsAsync(username, originalProfile);
             var prefs = await db.GetPlayerPreferencesAsync(username);
             var profile = preferences.ConvertProfiles(prefs!.Profiles.Find(p => p.Slot == slot));
