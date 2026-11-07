@@ -1,11 +1,11 @@
-﻿<widgets:AlertsUI xmlns="https://spacestation14.io"
+<widgets:AlertsUI xmlns="https://spacestation14.io" xmlns:hud="clr-namespace:Content.Client.CMU14.Interface.Hud"
                   xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Alerts.Widgets"
                   MinSize="64 64" MaxWidth="72">
     <!-- CMU14: transparent side rail; no panel or raster behind native alert icons. -->
     <Control Name="StatusPanel" HorizontalAlignment="Center" VerticalAlignment="Center" Visible="False">
       <BoxContainer Orientation="Vertical" SeparationOverride="3">
        <ScrollContainer Name="StatusScroll" HScrollEnabled="False" ReturnMeasure="True" MaxHeight="420">
-        <BoxContainer Name="AlertContainer" Access="Public" Orientation="Vertical" SeparationOverride="3"/>
+        <hud:CmuHudAdaptiveBox Name="AlertContainer" Access="Public" Orientation="Vertical" SeparationOverride="3"/>
        </ScrollContainer>
       </BoxContainer>
     </Control>

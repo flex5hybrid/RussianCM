@@ -23,7 +23,7 @@ public sealed class HandsContainer : ItemSlotUIContainer<HandButton>
 
     public HandsContainer()
     {
-        AddChild(_grid = new GridContainer { HSeparationOverride = 4 }); // CMU14: uniform dock spacing.
+        AddChild(_grid = new Content.Client.CMU14.Interface.Hud.CmuHudAdaptiveGrid { HSeparationOverride = 4 }); // CMU14: shared family flow.
         _grid.ExpandBackwards = true;
     }
 

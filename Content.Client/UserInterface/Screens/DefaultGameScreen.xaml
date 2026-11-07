@@ -1,5 +1,5 @@
-﻿<screens:DefaultGameScreen
-    xmlns="https://spacestation14.io"
+<screens:DefaultGameScreen
+    xmlns="https://spacestation14.io" xmlns:hud="clr-namespace:Content.Client.CMU14.Interface.Hud"
     xmlns:screens="clr-namespace:Content.Client.UserInterface.Screens"
     xmlns:menuBar="clr-namespace:Content.Client.UserInterface.Systems.MenuBar.Widgets"
     xmlns:actions="clr-namespace:Content.Client.UserInterface.Systems.Actions.Widgets"
@@ -20,7 +20,7 @@
     <BoxContainer Name="TopLeft" Access="Protected" Orientation="Vertical" SeparationOverride="8">
         <menuBar:GameTopMenuBar Name="TopBar" Access="Public" HorizontalAlignment="Left"/>
         <actions:ActionsBar Name="Actions" Access="Protected" />
-        <BoxContainer Name="VoteMenu" Access="Public" Margin="0 8 0 0" Orientation="Vertical"/>
+        <hud:CmuHudAdaptiveBox Name="VoteMenu" Access="Public" Margin="0 8 0 0" Orientation="Vertical"/>
     </BoxContainer>
     <widgets:GhostGui Name="Ghost" Access="Protected" />
     <inventory:InventoryGui Name="Inventory" Access="Protected" />

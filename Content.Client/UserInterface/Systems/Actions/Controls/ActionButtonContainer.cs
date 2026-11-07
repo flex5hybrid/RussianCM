@@ -9,7 +9,7 @@ using Robust.Shared.Utility;
 namespace Content.Client.UserInterface.Systems.Actions.Controls;
 
 [Virtual]
-public partial class ActionButtonContainer : GridContainer
+public partial class ActionButtonContainer : Content.Client.CMU14.Interface.Hud.CmuHudAdaptiveGrid // CMU14
 {
     [Dependency] private IEntityManager _entity = default!;
     [Dependency] private IInputManager _input = default!;

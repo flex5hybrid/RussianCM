@@ -33,7 +33,7 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
     private readonly Dictionary<Control, UIBox2> _natural = new();
     private readonly Dictionary<Control, AppliedPlacement> _applied = new();
     private readonly HashSet<Control> _watched = new();
-    private readonly HashSet<GhostGui> _sizedGhostGroups = new();
+    private readonly Dictionary<Control, CmuHudFamilyLayout> _families = new();
     private List<Entry> _entries = new();
     private readonly List<(Entry Entry, CmuHudLayoutSettings.Placement Placement)> _placements = new();
     private bool _placementsDirty = true;
@@ -55,7 +55,7 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
 
     private void Load(string text)
     {
-        ClearGhostSizing();
+        ClearFamilySizing();
         _settings = CmuHudLayoutSettings.Parse(text);
         _placementsDirty = true;
         UIManager.ActiveScreen?.InvalidateArrange();
@@ -108,8 +108,7 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
 
     public void Reset(string? id = null)
     {
-        if (id is null or "ghost")
-            ClearGhostSizing();
+        ClearFamilySizing(id);
         _placementsDirty = true;
         if (id != null)
             _settings.Items.Remove(Profile + id);
@@ -218,15 +217,15 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
         _watched.Remove(child);
         _natural.Remove(child);
         _applied.Remove(child);
-        if (child is GhostGui ghost && _sizedGhostGroups.Remove(ghost))
-            ghost.SetCustomLayoutWidth(null);
         foreach (var descendant in child.Children)
             ChildRemoved(descendant);
+        if (_families.Remove(child, out var family))
+            family.Reset();
     }
 
     private void ClearTracking()
     {
-        ClearGhostSizing();
+        ClearFamilySizing();
         foreach (var control in _watched)
         {
             control.OnChildAdded -= ChildAdded;
@@ -243,11 +242,15 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
         _applied.Clear();
     }
 
-    private void ClearGhostSizing()
+    private void ClearFamilySizing(string? id = null)
     {
-        foreach (var ghost in _sizedGhostGroups)
-            ghost.SetCustomLayoutWidth(null);
-        _sizedGhostGroups.Clear();
+        foreach (var (control, family) in _families.Reverse().ToArray())
+        {
+            if (id != null && family.Id != id)
+                continue;
+            family.Reset();
+            _families.Remove(control);
+        }
     }
 
     public void RestoreNatural(InGameScreen screen)
@@ -303,27 +306,12 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
                 var rect = CmuHudLayoutSettings.Resolve(placement, finalSize, control.Size);
                 if (placement.Width > 0 || placement.Height > 0)
                 {
-                    // Measure is width-dependent: arranging alone retains rows measured for
-                    // the viewport. Ghost controls additionally need room for all wrapped rows.
-                    var measureSize = control.Margin.Inflate(rect.Size);
-                    if (control is GhostGui ghost)
+                    if (!_families.TryGetValue(control, out var family))
                     {
-                        rect = GrowToFitContent(rect, new Vector2(ghost.GetMinimumLayoutWidth(), rect.Height), finalSize);
-                        measureSize.X = control.Margin.Inflate(rect.Size).X;
-                        // Keep native parent measurements on the same wrapping width too,
-                        // rather than alternating full-viewport and edited desired sizes.
-                        ghost.SetCustomLayoutWidth(rect.Width);
-                        _sizedGhostGroups.Add(ghost);
-                        measureSize.Y = float.PositiveInfinity;
+                        family = new CmuHudFamilyLayout(control, entry.Id);
+                        _families.Add(control, family);
                     }
-                    if (!hasApplied || bounds != applied.Bounds || !control.IsMeasureValid || !control.IsArrangeValid
-                        || measureSize != applied.Request.Size)
-                        control.Measure(measureSize);
-                    if (control is GhostGui)
-                    {
-                        rect = GrowToFitContent(rect, new Vector2(rect.Width,
-                            control.DesiredSize.Y - control.Margin.SumVertical), finalSize);
-                    }
+                    rect = GrowToFitContent(rect, family.Prepare(rect.Size, finalSize, EntriesVersion), finalSize);
                 }
                 var offset = screen.GlobalPosition - control.Parent.GlobalPosition;
                 var request = control.Margin.Inflate(UIBox2.FromDimensions(rect.TopLeft + offset, rect.Size));
@@ -352,11 +340,16 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
     {
         if (UIManager.ActiveScreen is not InGameScreen screen)
             return;
-        var available = Vector2.Max(Vector2.One, screen.Size - size);
-        var fraction = Vector2.Clamp(position / available, Vector2.Zero, Vector2.One);
         var previous = _settings.Items.GetValueOrDefault(Profile + entry.Id);
+        var width = resize ? size.X : previous.Width;
+        var height = resize ? size.Y : previous.Height;
+        // Resolve uses the archived dimensions before growing a family for wrapped rows.
+        // Normalize against those same dimensions so moving an auto-grown family stays under the cursor.
+        var reference = new Vector2(width > 0 ? width : size.X, height > 0 ? height : size.Y);
+        var available = Vector2.Max(Vector2.One, screen.Size - reference);
+        var fraction = Vector2.Clamp(position / available, Vector2.Zero, Vector2.One);
         _settings.Items[Profile + entry.Id] = new CmuHudLayoutSettings.Placement(fraction.X, fraction.Y,
-            resize ? size.X : previous.Width, resize ? size.Y : previous.Height);
+            width, height);
         _placementsDirty = true;
         screen.InvalidateArrange();
     }

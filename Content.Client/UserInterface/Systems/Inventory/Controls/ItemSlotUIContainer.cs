@@ -11,7 +11,7 @@ public interface IItemslotUIContainer
     public bool TryAddButton(SlotControl control);
 }
 
-public abstract class ItemSlotUIContainer<T> : GridContainer, IItemslotUIContainer where T : SlotControl
+public abstract class ItemSlotUIContainer<T> : Content.Client.CMU14.Interface.Hud.CmuHudAdaptiveGrid, IItemslotUIContainer where T : SlotControl // CMU14
 {
     private readonly Dictionary<string, T> _buttons = new();
 
