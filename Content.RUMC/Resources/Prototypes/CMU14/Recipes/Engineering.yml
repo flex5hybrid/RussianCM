@@ -57,7 +57,7 @@
         prototype: CMSheetMetal1
         amount: 30
       - !type:SpawnPrototype
-        prototype: RMCCableCoil1
+        prototype: CMUThinCableLV
         amount: 30
       - !type:SpawnPrototype
         prototype: CMAPCElectronics
