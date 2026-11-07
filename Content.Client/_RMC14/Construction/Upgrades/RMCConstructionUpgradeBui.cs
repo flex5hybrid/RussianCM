@@ -57,6 +57,7 @@ public sealed partial class RMCConstructionUpgradeBui : BoundUserInterface
                     HorizontalAlignment = Control.HAlignment.Center,
                     Texture = _sprite.GetPrototypeIcon(upgradeProto).GetFrame(RsiDirection.South, 0),
                     TextureScale = new Vector2(2f, 2f),
+                    MouseFilter = Control.MouseFilterMode.Ignore, // CMU14: hover belongs to the choice.
                 };
 
                 button.OnButtonDown += _ => SendPredictedMessage(new RMCConstructionUpgradeBuiMsg(upgradeId));

@@ -136,7 +136,7 @@ public sealed partial class BodyZoneTargetWidgetController :
         }
 
         const float horizontalMargin = 8f;
-        var left = screen is DefaultGameScreen || screen is SeparatedChatGameScreen
+        var left = (screen is DefaultGameScreen or SeparatedChatGameScreen)
             && string.Equals(_cfg.GetCVar(AU14CCVars.SeparatedHudStatusSide), "left", StringComparison.OrdinalIgnoreCase);
         var verticalMargin = left ? 82f : 18f;
         var width = widget.MinSize.X;

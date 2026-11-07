@@ -38,7 +38,8 @@ public sealed class CmuCrtCapture
         if (Capturing || CrtScreenControl.CapturingSource || _failed)
             return false;
 
-        var strength = Math.Clamp(_cfg.GetCVar(CCVars.CMUCrtEffectIntensity) * scale, 0f, 1f);
+        var strength = Math.Clamp(_cfg.GetCVar(CCVars.CMUCrtEffectIntensity) * scale
+            * (chat ? _cfg.GetCVar(CCVars.CMUChatCrtIntensity) : 1f), 0f, 1f);
         if (!enabled || !StyleNano.CrtUiEnabled || strength <= 0
             || !(chat ? _cfg.GetCVar(CCVars.CMUChatCrtHaze) : _cfg.GetCVar(CCVars.CMUCrtMenuEffect)))
         {
@@ -52,10 +53,10 @@ public sealed class CmuCrtCapture
 
         var glass = _cfg.GetCVar(CCVars.CMUCrtDisplayEffect);
         var curvature = glass ? Math.Clamp(_cfg.GetCVar(CCVars.CMUCrtEffectCurvature), 0, 0.15f) * strength : 0;
-        // Transparent overscan retains edge labels and close buttons through barrel refraction.
-        var padding = new Vector2i((int) MathF.Ceiling(size.X * curvature / 2) + 2,
-            (int) MathF.Ceiling(size.Y * curvature / 2) + 2);
-        var targetSize = size + padding * 2;
+        // SpriteView and custom storage/terminal renderers use global screen coordinates.
+        // Capture in that same coordinate system; translating only the UI tree breaks their icons.
+        var targetSize = source.Root?.PixelSize ?? size;
+        var origin = source.GlobalPixelPosition;
         var handle = render.DrawingHandleScreen;
         var previousShader = handle.GetShader();
         var previousTransform = handle.GetTransform();
@@ -91,13 +92,13 @@ public sealed class CmuCrtCapture
                     render.SetScissor(null);
                     handle.SetTransform(Matrix3x2.Identity);
                     handle.UseShader(null);
-                    _ui.RenderControl(render, source, padding);
+                    _ui.RenderControl(render, source, origin);
                 }
                 finally
                 {
                     Capturing = false;
                 }
-            }, Color.Transparent);
+            }, Color.Black.WithAlpha(0f)); // Empty premultiplied pixels must have zero RGB.
 
             var hz = Math.Clamp(_cfg.GetCVar(CCVars.CMUCrtDisplayRefreshRate), 12, 60);
             _shader.SetParameter("strength", strength);
@@ -106,14 +107,18 @@ public sealed class CmuCrtCapture
             _shader.SetParameter("vignette", glass ? Math.Clamp(_cfg.GetCVar(CCVars.CMUCrtEffectVignette), 0, 1) : 0);
             _shader.SetParameter("grain", Math.Clamp(_cfg.GetCVar(CCVars.CMUCrtEffectStatic), 0, 1));
             _shader.SetParameter("samplePhase", (float) (Math.Floor(_timing.RealTime.TotalSeconds * hz) % 4096));
-            _shader.SetParameter("screenSize", (Vector2) targetSize);
+            _shader.SetParameter("screenSize", (Vector2) size);
+            // Clyde converts screen regions to bottom-origin texture UVs in DrawTextureScreen.
+            // Using the top-origin UI Y here clips everything except a strip of the panel.
+            _shader.SetParameter("regionOrigin", TextureOrigin(origin, size, targetSize));
+            _shader.SetParameter("regionSize", (Vector2) size / (Vector2) targetSize);
             handle.SetTransform(previousTransform);
             // The source's own modulation is already in the capture; ancestors apply once here.
             handle.Modulate = ancestorModulate;
             handle.UseShader(_shader);
             render.SetScissor(scissor);
-            handle.DrawTextureRect(_target.Texture, new UIBox2(-padding.X, -padding.Y,
-                size.X + padding.X, size.Y + padding.Y));
+            handle.DrawTextureRectRegion(_target.Texture, UIBox2.FromDimensions(Vector2.Zero, size),
+                UIBox2.FromDimensions(origin, size));
             Drawn = true;
             return true;
         }
@@ -132,6 +137,10 @@ public sealed class CmuCrtCapture
             render.SetScissor(scissor);
         }
     }
+
+    public static Vector2 TextureOrigin(Vector2i origin, Vector2i size, Vector2i targetSize) => new(
+        origin.X / (float) targetSize.X,
+        1f - (origin.Y + size.Y) / (float) targetSize.Y);
 
     public void Release()
     {

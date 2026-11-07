@@ -236,13 +236,12 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
             enabled = false;
         }
 
-        if (proto.Cost != null && loadout.Points != null)
+        // CMU14: admission limits/costs restrict adding an item, not removing a selected one.
+        // Applying IsValid to deselection left selected personalization buttons disabled.
+        if (!repeatable && pressed)
         {
-            if (!repeatable && loadout.Points < proto.Cost && pressed)
-            {
-                reason = null;
-                enabled = true;
-            }
+            enabled = true;
+            reason = null;
         }
 
         var cont = new LoadoutContainer(proto, !enabled, reason, repeatable)

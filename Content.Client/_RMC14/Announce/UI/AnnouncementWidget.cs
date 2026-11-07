@@ -179,6 +179,9 @@ public sealed partial class AnnouncementWidget : UIWidget
 
     private Vector2 ResolveScreenSize()
     {
+        // CMU14: size text against the same clear area used to position the announcement.
+        if (Parent is Content.Client.UserInterface.Screens.InGameScreen game)
+            return UserInterfaceManager.GetUIController<Content.Client.CMU14.Interface.Hud.CmuHudLayoutController>().GetAnnouncementArea(game).Size;
         return Parent is UIScreen screen ? screen.Size : FallbackScreenSize;
     }
 }

@@ -9,13 +9,19 @@ uniform highp float vignette;
 uniform highp float grain;
 uniform highp float samplePhase;
 uniform highp vec2 screenSize;
+uniform highp vec2 regionOrigin;
+uniform highp vec2 regionSize;
 
 void fragment() {
-    highp vec2 p = UV * 2.0 - 1.0;
+    highp vec2 localUV = (UV - regionOrigin) / regionSize;
+    highp vec2 p = localUV * 2.0 - 1.0;
     highp float r2 = dot(p, p) * 0.5;
-    highp vec2 source = p * (1.0 + curvature * r2) * 0.5 + 0.5;
+    // Content remains under its native hit regions: bound refraction to one physical pixel.
+    // The glass/raster is visible at any setting without displacing small buttons by characters.
+    highp vec2 displacement = clamp(p * curvature * r2 * 0.5, -1.0 / screenSize, 1.0 / screenSize);
+    highp vec2 source = localUV + displacement;
     highp vec2 pixel = 1.0 / screenSize;
-    highp vec4 image = zTexture(clamp(source, pixel * 0.5, vec2(1.0) - pixel * 0.5));
+    highp vec4 image = zTexture(regionOrigin + clamp(source, pixel * 0.5, vec2(1.0) - pixel * 0.5) * regionSize);
     // Render targets contain premultiplied RGB; the source shader's mix mode expects straight
     // colour and applies alpha on composition. Undo it once to preserve chat and glyph edges.
     highp vec3 rgb = image.a > 0.0 ? image.rgb / image.a : vec3(0.0);

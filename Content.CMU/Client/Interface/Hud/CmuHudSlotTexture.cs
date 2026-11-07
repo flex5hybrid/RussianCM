@@ -54,7 +54,7 @@ public sealed class CmuHudSlotTexture : TextureRect
 
     protected override void Draw(DrawingHandleScreen handle)
     {
-        if (Theme.ID != "SS14DefaultTheme" || !UseHudChrome || _slot != null && !_highlight && !_knownSlot)
+        if (!Content.Client.Stylesheets.StyleNano.CrtUiEnabled || Theme.ID != "SS14DefaultTheme" || !UseHudChrome || _slot != null && !_highlight && !_knownSlot)
         {
             base.Draw(handle);
             return;

@@ -38,3 +38,44 @@ cmu-hud-world-empty = No interactions are available for this object.
 cmu-hud-world-refresh = Refresh available interactions
 
 ui-options-function-cmu_chat_search = Search chat
+
+cmu-ui-options-chat-crt-intensity = Chat CRT strength
+cmu-ui-options-examine-opacity = Examine background opacity
+
+cmu-hud-layout-title = HUD layout editor
+cmu-hud-layout-help = Drag a HUD frame to move it. Drag its bottom-right corner to resize. The editor toolbar can also be moved.
+cmu-hud-layout-snap = Snap to grid (8)
+cmu-hud-layout-x = Left
+cmu-hud-layout-y = Top
+cmu-hud-layout-width = Width
+cmu-hud-layout-height = Height
+cmu-hud-layout-apply = Apply position and size
+cmu-hud-layout-reset-item = Reset selected element
+cmu-hud-layout-reset-all = Reset current layout
+cmu-hud-layout-cancel = Cancel
+cmu-hud-layout-save = Save
+cmu-hud-layout-menu = Menu
+cmu-hud-layout-actions = Action bar
+cmu-hud-layout-status = Status indicators
+cmu-hud-layout-equipment = Equipment
+cmu-hud-layout-ghost = Ghost buttons
+cmu-hud-layout-targeting = Body targeting
+cmu-hud-layout-chat = Chat
+cmu-hud-layout-announcements = Announcements
+cmu-hud-layout-indicator = Indicator
+cmu-hud-layout-slot = Slot
+cmu-hud-layout-secondhotbar = Left inventory group
+cmu-hud-layout-mainhotbar = Right inventory group
+cmu-hud-layout-statuspanelright = Right held item
+cmu-hud-layout-statuspanelleft = Left held item
+cmu-hud-layout-handcontainer = Hands
+cmu-hud-layout-singlestoragecontainer = Open storage
+cmu-hud-layout-doublestoragecontainer = Two open storages
+
+cmu-hud-layout-ammo = Ammo counter
+
+cmu-hud-layout-equipmentpanel = Equipment drawer
+cmu-hud-layout-inventorybutton = Equipment button
+cmu-hud-layout-votemenu = Votes
+
+cmu-hud-layout-individual = Individual buttons and slots

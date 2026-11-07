@@ -41,3 +41,44 @@ cmu-hud-world-empty = Нет доступных взаимодействий с 
 cmu-hud-world-refresh = Обновить доступные взаимодействия
 
 ui-options-function-cmu_chat_search = Поиск в чате
+
+cmu-ui-options-chat-crt-intensity = Сила эффекта ЭЛТ в чате
+cmu-ui-options-examine-opacity = Непрозрачность окна осмотра
+
+cmu-hud-layout-title = Расположение элементов HUD
+cmu-hud-layout-help = Перетащите рамку элемента мышью. Потяните за нижний правый угол для изменения размера. Панель редактора тоже можно передвинуть.
+cmu-hud-layout-snap = Привязка к сетке (8)
+cmu-hud-layout-x = Слева
+cmu-hud-layout-y = Сверху
+cmu-hud-layout-width = Ширина
+cmu-hud-layout-height = Высота
+cmu-hud-layout-apply = Применить положение и размер
+cmu-hud-layout-reset-item = Сбросить выбранный элемент
+cmu-hud-layout-reset-all = Сбросить текущую раскладку
+cmu-hud-layout-cancel = Отмена
+cmu-hud-layout-save = Сохранить
+cmu-hud-layout-menu = Меню
+cmu-hud-layout-actions = Панель действий
+cmu-hud-layout-status = Индикаторы
+cmu-hud-layout-equipment = Экипировка
+cmu-hud-layout-ghost = Кнопки призрака
+cmu-hud-layout-targeting = Зона прицеливания
+cmu-hud-layout-chat = Чат
+cmu-hud-layout-announcements = Объявления
+cmu-hud-layout-indicator = Индикатор
+cmu-hud-layout-slot = Слот
+cmu-hud-layout-secondhotbar = Левая группа слотов
+cmu-hud-layout-mainhotbar = Правая группа слотов
+cmu-hud-layout-statuspanelright = Предмет в правой руке
+cmu-hud-layout-statuspanelleft = Предмет в левой руке
+cmu-hud-layout-handcontainer = Руки
+cmu-hud-layout-singlestoragecontainer = Открытое хранилище
+cmu-hud-layout-doublestoragecontainer = Два открытых хранилища
+
+cmu-hud-layout-ammo = Счётчик боеприпасов
+
+cmu-hud-layout-equipmentpanel = Окно экипировки
+cmu-hud-layout-inventorybutton = Кнопка экипировки
+cmu-hud-layout-votemenu = Голосования
+
+cmu-hud-layout-individual = Отдельные кнопки и слоты

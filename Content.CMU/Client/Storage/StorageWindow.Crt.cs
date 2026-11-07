@@ -9,7 +9,7 @@ public sealed partial class StorageWindow
 
     protected override void Draw(IRenderHandle handle)
     {
-        if (!_cmuCapture.Draw(this, handle, true, false, 1))
+        if (!_cmuCapture.Draw(this, handle, false, false, 1))
             base.Draw(handle);
     }
 

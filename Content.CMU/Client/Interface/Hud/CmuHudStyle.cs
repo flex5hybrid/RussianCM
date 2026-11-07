@@ -91,6 +91,7 @@ public static partial class CmuHudStyle
             Element<PanelContainer>().Class(Inset).Prop(PanelContainer.StylePropertyPanel, Box(CmuHudTone.Inset)),
             Element<Label>().Class(Heading).Prop(Label.StylePropertyFont, headingFont).Prop(Label.StylePropertyFontColor, TextColor),
             Element<Label>().Class(Body).Prop(Label.StylePropertyFont, bodyFont).Prop(Label.StylePropertyFontColor, CrtTerminalPalette.Text),
+            Element<RichTextLabel>().Class(Body).Prop(Label.StylePropertyFont, bodyFont).Prop(Label.StylePropertyFontColor, CrtTerminalPalette.Text),
             Element<Label>().Class(Muted).Prop(Label.StylePropertyFontColor, MutedColor),
             Element<Button>().Class(ButtonClass).Prop(ContainerButton.StylePropertyStyleBox, normal).Prop(Control.StylePropertyModulateSelf, Color.White),
             Element<Button>().Class(ButtonClass).Pseudo(ContainerButton.StylePseudoClassHover).Prop(ContainerButton.StylePropertyStyleBox, hover),
@@ -106,9 +107,20 @@ public static partial class CmuHudStyle
             Element<Button>().Class(Command).Pseudo(ContainerButton.StylePseudoClassHover).Prop(ContainerButton.StylePropertyStyleBox, commandHover),
             Element<Button>().Class(Command).Pseudo(ContainerButton.StylePseudoClassPressed).Prop(ContainerButton.StylePropertyStyleBox, commandSelected),
             Element<Button>().Class(Command).Pseudo(ContainerButton.StylePseudoClassDisabled).Prop(ContainerButton.StylePropertyStyleBox, command).Prop(Control.StylePropertyModulateSelf, Color.White.WithAlpha(0.45f)),
+            // Construction choices have an additional native square class; override it at equal specificity.
+            Element<Button>().Class(Command).Class(StyleClass.ButtonSquare).Prop(ContainerButton.StylePropertyStyleBox, command),
+            Element<Button>().Class(Command).Class(StyleClass.ButtonSquare).Pseudo(ContainerButton.StylePseudoClassHover).Prop(ContainerButton.StylePropertyStyleBox, commandHover),
+            Element<Button>().Class(Command).Class(StyleClass.ButtonSquare).Pseudo(ContainerButton.StylePseudoClassPressed).Prop(ContainerButton.StylePropertyStyleBox, commandSelected),
+            Element<Button>().Class(Command).Class(StyleClass.ButtonSquare).Pseudo(ContainerButton.StylePseudoClassDisabled).Prop(ContainerButton.StylePropertyStyleBox, command),
+            Element<Button>().Class(Command).Class(StyleNano.ButtonOpenBoth).Prop(ContainerButton.StylePropertyStyleBox, command),
+            Element<Button>().Class(Command).Class(StyleNano.ButtonOpenBoth).Pseudo(ContainerButton.StylePseudoClassHover).Prop(ContainerButton.StylePropertyStyleBox, commandHover),
+            Element<Button>().Class(Command).Class(StyleNano.ButtonOpenBoth).Pseudo(ContainerButton.StylePseudoClassPressed).Prop(ContainerButton.StylePropertyStyleBox, commandSelected),
+            Element<Button>().Class(Command).Class(StyleNano.ButtonOpenBoth).Pseudo(ContainerButton.StylePseudoClassDisabled).Prop(ContainerButton.StylePropertyStyleBox, command),
             Child().Parent(Element<Button>().Class(Command)).Child(Element<Label>())
                 .Prop(Label.StylePropertyFont, bodyFont).Prop(Label.StylePropertyFontColor, TextColor),
             Child().Parent(Element<Button>().Class(Command).Pseudo(ContainerButton.StylePseudoClassPressed))
+                .Child(Element<Label>()).Prop(Label.StylePropertyFontColor, InverseTextColor),
+            Child().Parent(Element<Button>().Class(Command).Class(StyleNano.ButtonOpenBoth).Pseudo(ContainerButton.StylePseudoClassPressed))
                 .Child(Element<Label>()).Prop(Label.StylePropertyFontColor, InverseTextColor),
             Child().Parent(Element<Button>().Class(ButtonClass).Pseudo(ContainerButton.StylePseudoClassPressed))
                 .Child(Element<Label>()).Prop(Label.StylePropertyFontColor, InverseTextColor),
@@ -157,6 +169,23 @@ public static partial class CmuHudStyle
             .Prop("font", font);
 
         yield return Element<HSeparator>().Prop(HSeparator.StylePropertyColor, EdgeColor);
+        foreach (var state in new[]
+        {
+            ContainerButton.StylePseudoClassNormal, ContainerButton.StylePseudoClassHover,
+            ContainerButton.StylePseudoClassPressed, ContainerButton.StylePseudoClassDisabled,
+        })
+        {
+            var active = state is ContainerButton.StylePseudoClassHover or ContainerButton.StylePseudoClassPressed;
+            yield return Element<ContainerButton>().Class(ListContainer.StyleClassListContainerButton).Pseudo(state)
+                .Prop(ContainerButton.StylePropertyStyleBox, Box(active ? CmuHudTone.Hover : CmuHudTone.Inset, padding: 4))
+                .Prop(Control.StylePropertyModulateSelf, Color.White);
+        }
+        yield return Element<PanelContainer>().Class("BackgroundDark")
+            .Prop(PanelContainer.StylePropertyPanel, Box(CmuHudTone.Inset));
+        yield return Child()
+            .Parent(Child().Parent(Element<Button>().Class(Command).Pseudo(ContainerButton.StylePseudoClassPressed))
+                .Child(Element<BoxContainer>()))
+            .Child(Element<RichTextLabel>().Class(Body)).Prop(Label.StylePropertyFontColor, InverseTextColor);
         yield return Element<LineEdit>()
             .Prop(LineEdit.StylePropertyStyleBox, Box(CmuHudTone.Inset, padding: 4))
             .Prop("font", font).Prop("font-color", TextColor);
@@ -182,7 +211,7 @@ public static partial class CmuHudStyle
         yield return Child().Parent(Element<Button>()).Child(Element<Label>())
             .Prop(Label.StylePropertyFont, font).Prop(Label.StylePropertyFontColor, TextColor);
 
-        foreach (var shape in new[] { "", StyleNano.ButtonOpenLeft, StyleNano.ButtonOpenRight, StyleNano.ButtonOpenBoth })
+        foreach (var shape in new[] { "", StyleNano.ButtonOpenLeft, StyleNano.ButtonOpenRight, StyleNano.ButtonOpenBoth, StyleClass.ButtonSquare })
         foreach (var semantic in new[] { "", StyleNano.ButtonCaution, "positive" })
         {
             var normal = Element<ContainerButton>().Class(ContainerButton.StyleClassButton);
@@ -209,13 +238,18 @@ public static partial class CmuHudStyle
                 .Prop(ContainerButton.StylePropertyStyleBox, Box(CmuHudTone.Hover, padding: 7))
                 .Prop(Control.StylePropertyModulateSelf, Color.White);
             yield return pressed.Pseudo(ContainerButton.StylePseudoClassPressed)
-                .Prop(ContainerButton.StylePropertyStyleBox, Box(CmuHudTone.Selected, selected: true, padding: 7))
+                .Prop(ContainerButton.StylePropertyStyleBox, new CmuHudStyleBox
+                {
+                    Tone = CmuHudTone.Selected, Selected = true,
+                    ContentMarginLeftOverride = 7, ContentMarginRightOverride = 7,
+                    ContentMarginTopOverride = 7, ContentMarginBottomOverride = 7,
+                })
                 .Prop(Control.StylePropertyModulateSelf, Color.White);
             yield return disabled.Pseudo(ContainerButton.StylePseudoClassDisabled)
                 .Prop(ContainerButton.StylePropertyStyleBox, Box(CmuHudTone.Inset, padding: 7))
                 .Prop(Control.StylePropertyModulateSelf, Color.White.WithAlpha(0.45f));
             yield return Child().Parent(pressed.Pseudo(ContainerButton.StylePseudoClassPressed))
-                .Child(Element<Label>()).Prop(Label.StylePropertyFontColor, InverseTextColor);
+                .Child(Element<Label>()).Prop(Label.StylePropertyFontColor, TextColor);
         }
         yield return Child().Parent(Element<Button>().Class(StyleNano.ButtonCaution)).Child(Element<Label>())
             .Prop(Label.StylePropertyFontColor, DangerColor);
