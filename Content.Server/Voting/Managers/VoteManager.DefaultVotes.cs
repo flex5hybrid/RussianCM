@@ -250,7 +250,16 @@ namespace Content.Server.Voting.Managers
             vote.OnFinished += (_, args) =>
             {
                 string picked;
-                if (args.Winner == null)
+                // CMU14: weights and pity apply only when nobody has expressed a mode preference.
+                if (Content.Server._RuCM.Balance.RuDistressRotationState.IsUnattendedServerVote(initiator == null, args.Votes)
+                    && _entityManager.System<CMUPresetVoteSystem>().PickAutomaticPreset(presets.Keys) is { } automatic)
+                {
+                    picked = automatic;
+                    args.ResolveWinner(picked);
+                    _chatManager.DispatchServerAnnouncement(
+                        Loc.GetString("ui-vote-gamemode-tie", ("picked", Loc.GetString(presets[picked]))));
+                }
+                else if (args.Winner == null)
                 {
                     picked = (string) _random.Pick(args.Winners);
                     args.ResolveWinner(picked);
