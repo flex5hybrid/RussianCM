@@ -5,6 +5,7 @@
   - type: RMCPlanetMapPrototype
     votename: "Gixens Caverns"
     mapId: GixensCaverns
+    inRotation: false
     lorePrimer: AU14PrimerPlanetGixensCaverns
     allegiance: UA
     camouflage: Desert
@@ -26,7 +27,6 @@
     govforinship: true
     opforinship: true
     daycycleenabled: false
-    inRotation: false
     # All threat entries are disabled until this map has generic threat markers.
     # threats:
     # - XenoThreat

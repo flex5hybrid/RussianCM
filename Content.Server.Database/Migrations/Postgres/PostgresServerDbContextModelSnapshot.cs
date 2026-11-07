@@ -2296,6 +2296,20 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("boolean")
                         .HasColumnName("synthetic");
 
+                    // CMU14 synthetic profile fields
+                    b.Property<int>("SyntheticGeneration")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasDefaultValue(1)
+                        .HasColumnName("synthetic_generation");
+
+                    b.Property<string>("SyntheticModelSuffix")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("text")
+                        .HasDefaultValue("")
+                        .HasColumnName("synthetic_model_suffix");
+
                     b.Property<string>("TTSVoice")
                         .HasColumnType("text")
                         .HasColumnName("tts_voice");
