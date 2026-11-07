@@ -17924,5 +17924,16 @@ Entries:
   id: 1042
   time: '2026-11-06T15:46:02.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2408
+- author: '- tweak: Командный состав ГОВФОР и корпоративный связной больше не могут
+    стать колониальными антагонистами'
+  time: '2026-11-07T14:38:14Z'
+  changes:
+  - type: Tweak
+    message: Стрелки могут стать спящим агентом КОФ
+  id: 1048
+  url: https://github.com/flex5hybrid/RussianCM/pull/604
+  labels:
+  - 'Changes: No C#'
+  - M
 Name: CMU
 Order: -1
