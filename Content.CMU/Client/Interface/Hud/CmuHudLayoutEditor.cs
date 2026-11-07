@@ -8,6 +8,7 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared.Input;
+using Robust.Shared.Timing;
 
 namespace Content.Client.CMU14.Interface.Hud;
 
@@ -21,6 +22,7 @@ public sealed class CmuHudLayoutEditor : DefaultWindow
     private List<CmuHudLayoutController.Entry> _entries = new();
     private readonly EditOverlay _overlay;
     private int _selected;
+    private int _entriesVersion;
     private string? SelectedId => _selected < _entries.Count ? _entries[_selected].Id : null;
 
     public CmuHudLayoutEditor(CmuHudLayoutController controller)
@@ -71,6 +73,7 @@ public sealed class CmuHudLayoutEditor : DefaultWindow
     {
         var selectedId = SelectedId;
         _entries = _controller.GetEntries();
+        _entriesVersion = _controller.EntriesVersion;
         if (!_individual.Pressed)
             _entries.RemoveAll(entry => entry.Id.Contains('/'));
         _selector.Clear();
@@ -91,6 +94,13 @@ public sealed class CmuHudLayoutEditor : DefaultWindow
             return;
         _selected = index;
         _selector.SelectId(index);
+    }
+
+    protected override void FrameUpdate(FrameEventArgs args)
+    {
+        base.FrameUpdate(args);
+        if (_entriesVersion != _controller.EntriesVersion)
+            RefreshEntries();
     }
 
     private sealed class EditOverlay : Control

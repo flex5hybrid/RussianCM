@@ -31,12 +31,21 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
     private CmuHudLayoutSettings _settings = new();
     private bool _arranging;
     private readonly Dictionary<Control, UIBox2> _natural = new();
+    private readonly Dictionary<Control, AppliedPlacement> _applied = new();
+    private readonly HashSet<Control> _watched = new();
+    private List<Entry> _entries = new();
+    private readonly List<(Entry Entry, CmuHudLayoutSettings.Placement Placement)> _placements = new();
+    private bool _placementsDirty = true;
+    private InGameScreen? _trackedScreen;
+    private bool _entriesDirty = true;
     private CmuHudLayoutEditor? _editor;
     private string? _snapshot;
     private Control? _ammoAnchor;
     public string Profile => UIManager.ActiveScreen is SeparatedChatGameScreen ? "Separated/" : "Default/";
     public bool CanEdit => UIManager.ActiveScreen is InGameScreen;
+    public int EntriesVersion { get; private set; }
     public readonly record struct Entry(string Id, string Caption, Control Control);
+    private readonly record struct AppliedPlacement(UIBox2 Bounds, UIBox2 Request);
 
     public override void Initialize()
     {
@@ -46,17 +55,26 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
     private void Load(string text)
     {
         _settings = CmuHudLayoutSettings.Parse(text);
+        _placementsDirty = true;
         UIManager.ActiveScreen?.InvalidateArrange();
     }
 
     public override void FrameUpdate(Robust.Shared.Timing.FrameEventArgs args)
     {
-        if (UIManager.ActiveScreen is not InGameScreen screen || _ammoAnchor?.Parent == screen)
+        if (UIManager.ActiveScreen is not InGameScreen screen)
             return;
-        _ammoAnchor?.Orphan();
-        _ammoAnchor = new Control { Name = "CmuAmmoAnchor", SetSize = new Vector2(64), MouseFilter = Control.MouseFilterMode.Ignore };
-        screen.AddChild(_ammoAnchor);
-        LayoutContainer.SetPosition(_ammoAnchor, new Vector2(12, 360));
+        TrackScreen(screen);
+        if (_ammoAnchor?.Parent != screen)
+        {
+            _ammoAnchor?.Orphan();
+            _ammoAnchor = new Control { Name = "CmuAmmoAnchor", SetSize = new Vector2(64), MouseFilter = Control.MouseFilterMode.Ignore };
+            screen.AddChild(_ammoAnchor);
+            LayoutContainer.SetPosition(_ammoAnchor, new Vector2(12, 360));
+        }
+        // Controllers run after the engine's layout queue. A descendant can arrange itself
+        // without arranging InGameScreen; reconcile only placements that actually drifted.
+        if (_settings.Items.Count > 0)
+            Arrange(screen, screen.Size);
     }
 
     public void OpenEditor()
@@ -88,6 +106,7 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
 
     public void Reset(string? id = null)
     {
+        _placementsDirty = true;
         if (id != null)
             _settings.Items.Remove(Profile + id);
         else
@@ -100,9 +119,17 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
 
     public List<Entry> GetEntries()
     {
-        var entries = new List<Entry>();
         if (UIManager.ActiveScreen is not InGameScreen screen)
-            return entries;
+            return new List<Entry>();
+        return new List<Entry>(GetCachedEntries(screen));
+    }
+
+    private List<Entry> GetCachedEntries(InGameScreen screen)
+    {
+        TrackScreen(screen);
+        if (!_entriesDirty)
+            return _entries;
+        var entries = new List<Entry>();
         var seen = new HashSet<string>();
         void Add(string id, string caption, Control control)
         {
@@ -144,22 +171,87 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
                 Visit(child);
         }
         Visit(screen);
-        return entries;
+        _entries = entries;
+        _entriesDirty = false;
+        _placementsDirty = true;
+        return _entries;
+    }
+
+    private void TrackScreen(InGameScreen screen)
+    {
+        if (_trackedScreen == screen)
+            return;
+        if (_trackedScreen != null)
+            RestoreNatural(_trackedScreen);
+        ClearTracking();
+        _trackedScreen = screen;
+        Watch(screen);
+    }
+
+    private void Watch(Control control)
+    {
+        if (!_watched.Add(control))
+            return;
+        control.OnChildAdded += ChildAdded;
+        control.OnChildRemoved += ChildRemoved;
+        foreach (var child in control.Children)
+            Watch(child);
+    }
+
+    private void ChildAdded(Control child)
+    {
+        _entriesDirty = true;
+        EntriesVersion++;
+        Watch(child);
+    }
+
+    private void ChildRemoved(Control child)
+    {
+        _entriesDirty = true;
+        EntriesVersion++;
+        child.OnChildAdded -= ChildAdded;
+        child.OnChildRemoved -= ChildRemoved;
+        _watched.Remove(child);
+        _natural.Remove(child);
+        _applied.Remove(child);
+        foreach (var descendant in child.Children)
+            ChildRemoved(descendant);
+    }
+
+    private void ClearTracking()
+    {
+        foreach (var control in _watched)
+        {
+            control.OnChildAdded -= ChildAdded;
+            control.OnChildRemoved -= ChildRemoved;
+        }
+        _watched.Clear();
+        _entries.Clear();
+        _placements.Clear();
+        _placementsDirty = true;
+        _entriesDirty = true;
+        EntriesVersion++;
+        _trackedScreen = null;
+        _natural.Clear();
+        _applied.Clear();
     }
 
     public void RestoreNatural(InGameScreen screen)
     {
-        if (_arranging || screen != UIManager.ActiveScreen)
+        if (_arranging || screen != _trackedScreen)
             return;
         _arranging = true;
         try
         {
             foreach (var (control, rect) in _natural.Reverse())
             {
-                if (control.Parent != null)
+                // A newer native arrange already superseded this custom rectangle.
+                if (control.Parent != null && _applied.TryGetValue(control, out var applied)
+                    && Bounds(control) == applied.Bounds)
                     control.Arrange(rect);
             }
             _natural.Clear();
+            _applied.Clear();
         }
         finally { _arranging = false; }
     }
@@ -168,21 +260,39 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
     {
         if (_arranging || screen != UIManager.ActiveScreen || finalSize.X <= 0 || finalSize.Y <= 0)
             return;
+        var entries = GetCachedEntries(screen);
+        if (_placementsDirty)
+        {
+            _placements.Clear();
+            var profile = Profile;
+            foreach (var entry in entries)
+            {
+                if (_settings.Items.TryGetValue(profile + entry.Id, out var placement))
+                    _placements.Add((entry, placement));
+            }
+            _placementsDirty = false;
+        }
         _arranging = true;
         try
         {
             // Parent groups first, then their explicitly placed slots. All coordinates refer to
             // the full screen; moving one group cannot silently change another saved position.
-            foreach (var entry in GetEntries())
+            foreach (var (entry, placement) in _placements)
             {
-                if (!_settings.Items.TryGetValue(Profile + entry.Id, out var placement)
-                    || entry.Control.Parent == null || !entry.Control.VisibleInTree)
+                if (entry.Control.Parent == null || !entry.Control.VisibleInTree)
                     continue;
                 var control = entry.Control;
-                _natural[control] = UIBox2.FromDimensions(control.Position, control.Size);
+                var bounds = Bounds(control);
+                var hasApplied = _applied.TryGetValue(control, out var applied);
+                if (!hasApplied || bounds != applied.Bounds)
+                    _natural[control] = control.Margin.Inflate(bounds);
                 var rect = CmuHudLayoutSettings.Resolve(placement, finalSize, control.Size);
                 var offset = screen.GlobalPosition - control.Parent.GlobalPosition;
-                control.Arrange(UIBox2.FromDimensions(rect.TopLeft + offset, rect.Size));
+                var request = control.Margin.Inflate(UIBox2.FromDimensions(rect.TopLeft + offset, rect.Size));
+                if (hasApplied && bounds == applied.Bounds && request == applied.Request && control.IsArrangeValid)
+                    continue;
+                control.Arrange(request);
+                _applied[control] = new AppliedPlacement(Bounds(control), request);
             }
         }
         finally
@@ -190,6 +300,8 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
             _arranging = false;
         }
     }
+
+    private static UIBox2 Bounds(Control control) => UIBox2.FromDimensions(control.Position, control.Size);
 
     public void Place(Entry entry, Vector2 position, Vector2 size, bool resize = false)
     {
@@ -200,6 +312,7 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
         var previous = _settings.Items.GetValueOrDefault(Profile + entry.Id);
         _settings.Items[Profile + entry.Id] = new CmuHudLayoutSettings.Placement(fraction.X, fraction.Y,
             resize ? size.X : previous.Width, resize ? size.Y : previous.Height);
+        _placementsDirty = true;
         screen.InvalidateArrange();
     }
 
@@ -209,7 +322,7 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
         var top = 90f;
         var right = screen.Width - 12;
         var bottom = screen.Height - 100;
-        foreach (var entry in GetEntries())
+        foreach (var entry in GetCachedEntries(screen))
         {
             if (!entry.Control.VisibleInTree)
                 continue;
@@ -243,8 +356,8 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
     public void OnStateExited(GameplayState state)
     {
         _editor?.Close();
-        _natural.Clear();
         _ammoAnchor?.Orphan();
         _ammoAnchor = null;
+        ClearTracking();
     }
 }

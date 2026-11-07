@@ -399,6 +399,110 @@ public sealed class CmuHudWorkspaceTest : GameTest
     [TestCase(false, true)]
     [TestCase(true, false)]
     [TestCase(true, true)]
+    public async Task HudPlacementSurvivesActionChangesAndEquipmentToggles(bool separated, bool saved)
+    {
+        await Client.WaitAssertion(() =>
+        {
+            var ui = Client.ResolveDependency<IUserInterfaceManager>();
+            var cfg = Client.ResolveDependency<IConfigurationManager>();
+            var previous = cfg.GetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout);
+            var update = ui.GetType().GetMethod("FrameUpdate")!.CreateDelegate<Action<FrameEventArgs>>(ui);
+            cfg.SetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout, "");
+            if (separated) ui.LoadScreen<SeparatedChatGameScreen>();
+            else ui.LoadScreen<DefaultGameScreen>();
+            CmuHudLayoutEditor? editor = null;
+            void Settle()
+            {
+                for (var frame = 0; frame < 8; frame++)
+                    update(new FrameEventArgs(1f / 60));
+            }
+            try
+            {
+                var screen = (InGameScreen) ui.ActiveScreen!;
+                var controller = ui.GetUIController<CmuHudLayoutController>();
+                var actions = Descendants(screen).OfType<ActionsBar>().Single();
+                var inventory = Descendants(screen).OfType<InventoryGui>().Single();
+                inventory.InventoryButton.Visible = true;
+                for (var i = 0; i < 7; i++)
+                    actions.ActionsContainer.AddChild(new ActionButton(Client.ResolveDependency<IEntityManager>()));
+                var equipment = Descendants(inventory).Single(c => c.Name == "EquipmentPanel");
+                equipment.AddChild(new Control { MinSize = new Vector2(190, 260) });
+                inventory.CMUSetEquipmentVisible(false);
+                Settle();
+                var nativeMenuPosition = controller.GetEntries().Single(e => e.Id == "menu").Control.GlobalPosition;
+                var settings = new CmuHudLayoutSettings();
+                var positions = new Dictionary<string, Vector2>
+                {
+                    { "menu", new Vector2(0.25f, 0.2f) },
+                    { "actions", new Vector2(0.15f, 0.4f) },
+                    { "InventoryButton", new Vector2(0.08f, 0.75f) },
+                    { "action/0", new Vector2(0.35f, 0.55f) },
+                };
+                if (!saved)
+                {
+                    controller.OpenEditor();
+                    editor = ui.WindowRoot.Children.OfType<CmuHudLayoutEditor>().Single();
+                }
+                foreach (var (id, fraction) in positions)
+                {
+                    var entry = controller.GetEntries().Single(e => e.Id == id);
+                    settings.Items[controller.Profile + id] = new CmuHudLayoutSettings.Placement(fraction.X, fraction.Y, 0, 0);
+                    if (!saved)
+                        controller.Place(entry, Vector2.Max(Vector2.Zero, screen.Size - entry.Control.Size) * fraction,
+                            entry.Control.Size);
+                }
+                if (saved)
+                    cfg.SetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout, settings.Serialize());
+                void AssertPlacements()
+                {
+                    foreach (var id in positions.Keys)
+                    {
+                        var control = controller.GetEntries().Single(e => e.Id == id).Control;
+                        var expected = CmuHudLayoutSettings.Resolve(settings.Items[controller.Profile + id], screen.Size, control.Size);
+                        var actual = control.GlobalPosition - screen.GlobalPosition;
+                        Assert.That(actual.X, Is.EqualTo(expected.Left).Within(2), id + " X after a native subtree layout");
+                        Assert.That(actual.Y, Is.EqualTo(expected.Top).Within(2), id + " Y after a native subtree layout");
+                    }
+                }
+                Settle();
+                AssertPlacements();
+                var added = new ActionButton(Client.ResolveDependency<IEntityManager>());
+                actions.ActionsContainer.AddChild(added);
+                Settle();
+                AssertPlacements();
+                Assert.That(controller.GetEntries().Any(e => e.Control == added), Is.True);
+                inventory.CMUSetEquipmentVisible(true);
+                Settle();
+                AssertPlacements();
+                added.Orphan();
+                inventory.CMUSetEquipmentVisible(false);
+                Settle();
+                AssertPlacements();
+                Assert.That(controller.GetEntries().Any(e => e.Control == added), Is.False);
+                Settle();
+                AssertPlacements(); // Idle frames must not overwrite the native bounds used by reset/cancel.
+                if (saved)
+                    controller.Reset();
+                else
+                    editor!.Close();
+                Settle();
+                var menuPosition = controller.GetEntries().Single(e => e.Id == "menu").Control.GlobalPosition;
+                Assert.That(menuPosition.X, Is.EqualTo(nativeMenuPosition.X).Within(2));
+                Assert.That(menuPosition.Y, Is.EqualTo(nativeMenuPosition.Y).Within(2));
+            }
+            finally
+            {
+                editor?.Close();
+                cfg.SetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout, previous);
+                ui.UnloadScreen();
+            }
+        });
+    }
+
+    [TestCase(false, false)]
+    [TestCase(false, true)]
+    [TestCase(true, false)]
+    [TestCase(true, true)]
     public async Task EditorDragsThroughMouseRoutingRegardlessOfUseBindingOrder(bool separated, bool useFirst)
     {
         await Client.WaitAssertion(() =>

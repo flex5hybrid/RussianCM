@@ -89,6 +89,7 @@ public partial class ActionButtonContainer : GridContainer
 
     protected override void ChildRemoved(Control newChild)
     {
+        base.ChildRemoved(newChild); // CMU14: invalidate layout and notify HUD placement tracking.
         if (newChild is not ActionButton button)
             return;
 
