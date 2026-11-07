@@ -9,13 +9,22 @@ public sealed class CmuHudDock : Container
 {
     private const float Gap = 4;
     private readonly List<Row> _rows = new();
+    private float _rowWidth = float.NaN;
     private readonly record struct Row(int Start, int Count, float Width, float Height);
     public float ContentLeft { get; private set; }
     public event Action? ContentPositionChanged;
 
     protected override Vector2 MeasureOverride(Vector2 availableSize)
     {
+        foreach (var child in Children)
+            child.Measure(new Vector2(float.PositiveInfinity));
+        return BuildRows(availableSize.X);
+    }
+
+    private Vector2 BuildRows(float availableWidth)
+    {
         _rows.Clear();
+        _rowWidth = availableWidth;
         var start = 0;
         var count = 0;
         var width = 0f;
@@ -24,11 +33,10 @@ public sealed class CmuHudDock : Container
         for (var i = 0; i < ChildCount; i++)
         {
             var child = GetChild(i);
-            child.Measure(new Vector2(float.PositiveInfinity));
             var size = child.DesiredSize;
             if (size.X <= 0)
                 continue;
-            if (count > 0 && width + Gap + size.X > availableSize.X)
+            if (count > 0 && width + Gap + size.X > availableWidth)
             {
                 _rows.Add(new Row(start, i - start, width, height));
                 total.X = MathF.Max(total.X, width);
@@ -51,6 +59,9 @@ public sealed class CmuHudDock : Container
 
     protected override Vector2 ArrangeOverride(Vector2 finalSize)
     {
+        // A custom HUD rectangle can differ from the space offered by the native parent.
+        if (_rowWidth != finalSize.X)
+            BuildRows(finalSize.X);
         var previous = ContentLeft;
         ContentLeft = finalSize.X / 2;
         var y = 0f;

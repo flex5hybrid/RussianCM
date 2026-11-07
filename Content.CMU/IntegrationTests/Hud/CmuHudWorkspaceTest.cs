@@ -395,6 +395,80 @@ public sealed class CmuHudWorkspaceTest : GameTest
         });
     }
 
+    [TestCase(false)]
+    [TestCase(true)]
+    public async Task ResizingGhostAreaReflowsButtonsAndKeepsThemInsideTheFrame(bool separated)
+    {
+        await Client.WaitAssertion(() =>
+        {
+            var ui = Client.ResolveDependency<IUserInterfaceManager>();
+            var cfg = Client.ResolveDependency<IConfigurationManager>();
+            var previous = cfg.GetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout);
+            var update = ui.GetType().GetMethod("FrameUpdate")!.CreateDelegate<Action<FrameEventArgs>>(ui);
+            cfg.SetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout, "");
+            if (separated) ui.LoadScreen<SeparatedChatGameScreen>();
+            else ui.LoadScreen<DefaultGameScreen>();
+            void Settle()
+            {
+                for (var frame = 0; frame < 8; frame++)
+                    update(new FrameEventArgs(1f / 60));
+            }
+            try
+            {
+                var screen = (InGameScreen) ui.ActiveScreen!;
+                var controller = ui.GetUIController<CmuHudLayoutController>();
+                var entry = controller.GetEntries().Single(e => e.Id == "ghost");
+                var ghost = (GhostGui) entry.Control;
+                ghost.Visible = true;
+                ghost.Update(12, true);
+                var parent = ghost.Parent;
+                var buttons = Descendants(ghost).OfType<Button>().ToArray();
+                var labels = new[] { "Вернуться", "Телепорт", "Роли (12)", "Возродиться" };
+                for (var i = 0; i < buttons.Length; i++)
+                    buttons[i].Text = labels[i];
+                Settle();
+                var nativeWidth = ghost.Width;
+                float WideWidth() => buttons.Sum(b => b.DesiredSize.X) + 4 * (buttons.Length - 1) + 8;
+                void Resize(float width)
+                {
+                    controller.Place(entry, new Vector2(240, 160), new Vector2(width, 24), resize: true);
+                    Settle();
+                    Assert.That(ghost.Parent, Is.SameAs(parent));
+                    foreach (var button in buttons)
+                    {
+                        var bounds = button.GlobalRect;
+                        Assert.That(bounds.Left, Is.GreaterThanOrEqualTo(ghost.GlobalRect.Left - 1));
+                        Assert.That(bounds.Right, Is.LessThanOrEqualTo(ghost.GlobalRect.Right + 1));
+                        Assert.That(bounds.Top, Is.GreaterThanOrEqualTo(ghost.GlobalRect.Top - 1));
+                        Assert.That(bounds.Bottom, Is.LessThanOrEqualTo(ghost.GlobalRect.Bottom + 1));
+                    }
+                }
+                Resize(WideWidth());
+                Assert.That(buttons.Select(b => b.GlobalPosition.Y).Distinct().Count(), Is.EqualTo(1));
+                Resize(buttons.Max(b => b.DesiredSize.X) + 4);
+                Assert.That(buttons.Select(b => b.GlobalPosition.Y).Distinct().Count(), Is.GreaterThan(1));
+                Resize(16); // A frame narrower than a full label must grow to keep that button inside.
+                Assert.That(ghost.Width, Is.GreaterThanOrEqualTo(ghost.GetMinimumLayoutWidth() - 1));
+                buttons[2].Text = "Роли призраков (12345)";
+                Settle();
+                Resize(16);
+                Resize(WideWidth());
+                Assert.That(buttons.Select(b => b.GlobalPosition.Y).Distinct().Count(), Is.EqualTo(1));
+                var pixel = new ScreenCoordinates(buttons[0].GlobalPixelRect.Center, buttons[0].Root!.Window!.Id);
+                Assert.That(ui.MouseGetControl(pixel)?.GetSelfAndLogicalAncestors().Contains(buttons[0]), Is.True);
+                controller.Reset("ghost");
+                Settle();
+                Assert.That(ghost.Width, Is.EqualTo(nativeWidth).Within(2),
+                    "Reset must clear the edited wrapping width.");
+            }
+            finally
+            {
+                cfg.SetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout, previous);
+                ui.UnloadScreen();
+            }
+        });
+    }
+
     [TestCase(false, false)]
     [TestCase(false, true)]
     [TestCase(true, false)]

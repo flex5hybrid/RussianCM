@@ -17,6 +17,8 @@ public sealed partial class GhostGui : UIWidget
     public event Action? GhostRolesPressed;
     public event Action? LateJoinPressed;
     private int _prevNumberRoles;
+    private float _availableWidth = float.PositiveInfinity; // CMU14
+    private float? _customLayoutWidth; // CMU14
 
     public GhostGui()
     {
@@ -40,17 +42,36 @@ public sealed partial class GhostGui : UIWidget
         Visible = false;
     }
 
+    // CMU14: native viewport limits and custom editor bounds share the same width-driven flow.
     public void SetAvailableWidth(float width)
     {
-        // Use viewport space, not this centred widget's own content width. Otherwise the
-        // four-button row can select two columns merely because its labels are short.
-        var cellWidth = 0f;
+        width = MathF.Max(1, width);
+        if (_availableWidth == width)
+            return;
+        _availableWidth = width;
+        InvalidateMeasure();
+    }
+
+    protected override Vector2 MeasureOverride(Vector2 availableSize) =>
+        base.MeasureOverride(new Vector2(MathF.Min(availableSize.X, _customLayoutWidth ?? _availableWidth), availableSize.Y));
+
+    public void SetCustomLayoutWidth(float? width)
+    {
+        if (_customLayoutWidth == width)
+            return;
+        _customLayoutWidth = width;
+        InvalidateMeasure();
+    }
+
+    public float GetMinimumLayoutWidth()
+    {
+        var width = 1f;
         foreach (var button in GhostButtonGrid.Children)
         {
-            button.Measure(new Vector2(float.PositiveInfinity, float.PositiveInfinity));
-            cellWidth = MathF.Max(cellWidth, button.DesiredSize.X);
+            button.Measure(new Vector2(float.PositiveInfinity));
+            width = MathF.Max(width, button.DesiredSize.X);
         }
-        GhostButtonGrid.Columns = cellWidth * 4 + 9 <= width ? 4 : 2;
+        return width;
     }
 
     public void Update(int? roles, bool? canReturnToBody)
