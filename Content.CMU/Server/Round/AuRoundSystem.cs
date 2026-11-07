@@ -1160,9 +1160,10 @@ namespace Content.Server.CMU14.Round
             if (preset is not { RequiresGovforVote: true } || _selectedPlanet is not { GovforInShip: true } planet)
                 return null;
 
-            var platoon = _entityManager.System<PlatoonSpawnRuleSystem>().SelectedGovforPlatoon;
+            var platoons = _entityManager.System<PlatoonSpawnRuleSystem>();
+            var platoon = platoons.SelectedGovforPlatoon;
             if (platoon == null && planet.DefaultGovforPlatoon is { } fallback)
-                _prototypeManager.TryIndex(fallback, out platoon);
+                platoon = platoons.ResolveDefaultPlatoon(fallback, planet.PlatoonsGovfor, preset);
 
             return platoon?.PossibleShips.FirstOrDefault();
         }
@@ -1177,9 +1178,10 @@ namespace Content.Server.CMU14.Round
             if (preset is not { RequiresOpforVote: true } || _selectedPlanet is not { OpforInShip: true } planet)
                 return null;
 
-            var platoon = _entityManager.System<PlatoonSpawnRuleSystem>().SelectedOpforPlatoon;
+            var platoons = _entityManager.System<PlatoonSpawnRuleSystem>();
+            var platoon = platoons.SelectedOpforPlatoon;
             if (platoon == null && planet.DefaultOpforPlatoon is { } fallback)
-                _prototypeManager.TryIndex(fallback, out platoon);
+                platoon = platoons.ResolveDefaultPlatoon(fallback, planet.PlatoonsOpfor, preset);
 
             return platoon?.PossibleShips.FirstOrDefault();
         }

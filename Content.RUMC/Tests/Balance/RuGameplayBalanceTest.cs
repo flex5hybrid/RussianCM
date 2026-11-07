@@ -7,6 +7,7 @@ using Content.Shared.CMU14.util;
 using Content.Shared.CMU14.Medical.Anatomy.BodyParts;
 using Content.Shared.CMU14.Medical.Anatomy.BodyParts.Events;
 using Content.Shared.CMU14.Medical.Core;
+using Content.Shared._RMC14.Rules;
 using Content.Shared._RMC14.Xenonids.Maturing;
 using Content.Shared._RMC14.Xenonids.Projectile.Spit.Standard;
 using Content.Shared._RMC14.Xenonids.Projectile.Spit.Queen;
@@ -149,6 +150,36 @@ public sealed class RuGameplayBalanceTest : GameTest
             Assert.That(SProtoMan.HasIndex<PlatoonPrototype>("LACN"), Is.True);
             Assert.That(SProtoMan.Index<Content.Server.GameTicking.Presets.GamePresetPrototype>("Insurgency").ExcludedPlatoons,
                 Does.Not.Contain("LACN"));
+        });
+    }
+
+    [TestCase("DistressSignal", true)]
+    [TestCase("Insurgency", false)]
+    public async Task VaraderoFallbackRespectsModeExclusionWithoutChangingOtherModes(string mode, bool excluded)
+    {
+        await Server.WaitAssertion(() =>
+        {
+            var factory = Server.ResolveDependency<IComponentFactory>();
+            Assert.That(SProtoMan.Index<EntityPrototype>("CMUPlanetVaradero").TryGetComponent(
+                out RMCPlanetMapPrototypeComponent? planet, factory), Is.True);
+            var preset = SProtoMan.Index<Content.Server.GameTicking.Presets.GamePresetPrototype>(mode);
+            var platoons = Server.System<Content.Server.CMU14.Round.PlatoonSpawnRuleSystem>();
+            var platoon = platoons.ResolveDefaultPlatoon(planet!.DefaultGovforPlatoon!, planet.PlatoonsGovfor, preset);
+            Assert.That(platoon, Is.Not.Null);
+            Assert.That(platoon!.ID, excluded ? Is.Not.EqualTo("LACN") : Is.EqualTo("LACN"));
+
+            var round = Server.System<Content.Server.CMU14.Round.AuRoundSystem>();
+            Assert.That(round.SetPlanet("CMUPlanetVaradero"), Is.True);
+            round.SetGovforShip(string.Empty);
+            platoons.SelectedGovforPlatoon = null;
+            Assert.That(round.ResolveGovforShip(preset), Is.EqualTo(platoon.PossibleShips.FirstOrDefault()),
+                "the loaded ship and the spawned fallback faction must agree");
+
+            var manual = SProtoMan.Index<PlatoonPrototype>("LACN");
+            platoons.SelectedGovforPlatoon = manual;
+            Assert.That(round.ResolveGovforShip(preset), Is.EqualTo(manual.PossibleShips.FirstOrDefault()),
+                "an explicit admin selection must retain priority");
+            platoons.SelectedGovforPlatoon = null;
         });
     }
 
