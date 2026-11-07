@@ -109,11 +109,12 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
             return;
         }
 
-        // Fallback to default platoon if none selected, using planet component
+        // Fallback defaults also respect the active mode; explicitly selected/admin platoons retain priority.
+        var preset = GameTicker.CurrentPreset ?? _auRoundSystem.SelectedPreset;
         if (govPlatoon == null && !string.IsNullOrEmpty(planetComp.DefaultGovforPlatoon))
-            govPlatoon = _prototypeManager.Index<PlatoonPrototype>(planetComp.DefaultGovforPlatoon);
+            govPlatoon = ResolveDefaultPlatoon(planetComp.DefaultGovforPlatoon, planetComp.PlatoonsGovfor, preset);
         if (opPlatoon == null && !string.IsNullOrEmpty(planetComp.DefaultOpforPlatoon))
-            opPlatoon = _prototypeManager.Index<PlatoonPrototype>(planetComp.DefaultOpforPlatoon);
+            opPlatoon = ResolveDefaultPlatoon(planetComp.DefaultOpforPlatoon, planetComp.PlatoonsOpfor, preset);
 
         // Store the resolved selections back onto the system so other systems can access them
         SelectedGovforPlatoon = govPlatoon;

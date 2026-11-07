@@ -217,7 +217,7 @@ public sealed partial class ThreatSystem : EntitySystem
         bool isColonyFall = string.Equals(_auRound.SelectedPreset?.ID, "ColonyFall",
             StringComparison.OrdinalIgnoreCase);
         int playerCount = assignedJobs.Count;
-        int playerBudget = ThreatVoteSelection.CalculateThreatPlayerBudget(playerCount, threat.ThreatRatio);
+        int playerBudget = ThreatVoteSelection.CalculateThreatPlayerBudget(playerCount, threat);
 
         if (isColonyFall)
         {
@@ -262,7 +262,7 @@ public sealed partial class ThreatSystem : EntitySystem
 
         bool isColonyFall = string.Equals(_auRound.SelectedPreset?.ID, "ColonyFall",
             StringComparison.OrdinalIgnoreCase);
-        int playerBudget = ThreatVoteSelection.CalculateThreatPlayerBudget(playerCount, threat.ThreatRatio);
+        int playerBudget = ThreatVoteSelection.CalculateThreatPlayerBudget(playerCount, threat);
 
         if (isColonyFall)
         {

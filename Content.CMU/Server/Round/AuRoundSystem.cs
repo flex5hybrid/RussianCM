@@ -606,7 +606,7 @@ namespace Content.Server.CMU14.Round
             if (!_prototypeManager.TryIndex(threat.RoundStartSpawn, out PartySpawnPrototype? spawn))
                 return false;
 
-            bodyCount = ThreatVoteSelection.CalculateBodyCount(spawn, playerCount, threat.ThreatRatio);
+            bodyCount = ThreatVoteSelection.CalculateBodyCount(spawn, playerCount, threat);
             return true;
         }
 
@@ -1011,7 +1011,7 @@ namespace Content.Server.CMU14.Round
                     if (!KabanPlatoonAllowed(platoonId, isGovfor)) // CMU14
                         continue;
                     var platoon = _prototypeManager.Index<PlatoonPrototype>(platoonId);
-                    if (!platoon.ShowInVote)
+                    if (!platoon.ShowInVote || presetProto.ExcludedPlatoons.Contains(platoon.ID))
                         continue;
                     options.Add((Loc.GetString(platoon.Name), platoon));
                 }
@@ -1160,9 +1160,10 @@ namespace Content.Server.CMU14.Round
             if (preset is not { RequiresGovforVote: true } || _selectedPlanet is not { GovforInShip: true } planet)
                 return null;
 
-            var platoon = _entityManager.System<PlatoonSpawnRuleSystem>().SelectedGovforPlatoon;
+            var platoons = _entityManager.System<PlatoonSpawnRuleSystem>();
+            var platoon = platoons.SelectedGovforPlatoon;
             if (platoon == null && planet.DefaultGovforPlatoon is { } fallback)
-                _prototypeManager.TryIndex(fallback, out platoon);
+                platoon = platoons.ResolveDefaultPlatoon(fallback, planet.PlatoonsGovfor, preset);
 
             return platoon?.PossibleShips.FirstOrDefault();
         }
@@ -1177,9 +1178,10 @@ namespace Content.Server.CMU14.Round
             if (preset is not { RequiresOpforVote: true } || _selectedPlanet is not { OpforInShip: true } planet)
                 return null;
 
-            var platoon = _entityManager.System<PlatoonSpawnRuleSystem>().SelectedOpforPlatoon;
+            var platoons = _entityManager.System<PlatoonSpawnRuleSystem>();
+            var platoon = platoons.SelectedOpforPlatoon;
             if (platoon == null && planet.DefaultOpforPlatoon is { } fallback)
-                _prototypeManager.TryIndex(fallback, out platoon);
+                platoon = platoons.ResolveDefaultPlatoon(fallback, planet.PlatoonsOpfor, preset);
 
             return platoon?.PossibleShips.FirstOrDefault();
         }

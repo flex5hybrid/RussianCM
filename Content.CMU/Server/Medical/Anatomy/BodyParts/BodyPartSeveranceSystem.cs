@@ -132,6 +132,26 @@ public sealed partial class BodyPartSeveranceSystem : EntitySystem
             regeneration.SeverAttempts.Remove(args.Part);
         }
 
+        // RuCM: recent limb loss raises the trauma requirement; catastrophic damage can still sever.
+        // Surgery and post-mortem dismemberment retain their existing behavior.
+        var traumaticLimb = !args.Surgical
+            && args.Type is BodyPartType.Arm or BodyPartType.Hand or BodyPartType.Leg or BodyPartType.Foot
+            && (!TryComp(args.Body, out MobStateComponent? state) || state.CurrentState != MobState.Dead);
+        if (traumaticLimb
+            && TryComp<Content.Server._RuCM.Balance.RepeatSeveranceComponent>(args.Body, out var recent)
+            && _timing.CurTime < recent.LastSeverance + TimeSpan.FromSeconds(Math.Max(0f,
+                _cfg.GetCVar(Content.Shared._RuCM.Balance.RuBalanceCVars.RepeatSeveranceSeconds))))
+        {
+            var threshold = (ent.Comp.Max + ent.Comp.SeveranceThreshold)
+                * (FixedPoint2) Math.Max(1f, _cfg.GetCVar(Content.Shared._RuCM.Balance.RuBalanceCVars.LimbSeveranceThresholdMultiplier))
+                * (FixedPoint2) Math.Max(1f, _cfg.GetCVar(Content.Shared._RuCM.Balance.RuBalanceCVars.RepeatSeveranceThresholdMultiplier));
+            if (ent.Comp.SeveranceDamage < threshold)
+            {
+                args.Cancelled = true;
+                return;
+            }
+        }
+
         var detachedParts = new List<(EntityUid Part, BodyPartType Type, BodyPartSymmetry Symmetry)>();
         detachedParts.Add((args.Part, args.Type, partComp.Symmetry));
         foreach (var child in _organRelation.AllChildren(args.Part))
@@ -146,6 +166,9 @@ public sealed partial class BodyPartSeveranceSystem : EntitySystem
         {
             return;
         }
+
+        if (traumaticLimb)
+            EnsureComp<Content.Server._RuCM.Balance.RepeatSeveranceComponent>(args.Body).LastSeverance = _timing.CurTime;
 
         args.Succeeded = true;
         args.DetachedBody = detachedBody;

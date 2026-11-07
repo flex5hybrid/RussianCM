@@ -57,6 +57,14 @@ public sealed partial class ThreatPrototype : IPrototype
     [DataField("threatratio")]
     public float ThreatRatio { get; private set; } = 0.25f;
 
+    /// <summary>Round small player budgets upward instead of to the nearest player.</summary>
+    [DataField]
+    public bool RoundPlayerBudgetUp;
+
+    /// <summary>Minimum force size, still capped at half the ready population.</summary>
+    [DataField]
+    public int MinimumPlayerBudget;
+
     [DataField("thirdpartyratio")]
     public float ThirdPartyRatio { get; private set; } = 0.15f;
 
