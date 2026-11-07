@@ -15,6 +15,9 @@ using Content.Shared.Body.Part;
 using Content.Shared.FixedPoint;
 using Content.Shared._RMC14.Xenonids.Screech;
 using Content.Shared.Stunnable;
+using Content.Shared.StatusEffectNew;
+using Content.Shared._RMC14.Xenonids.Plasma;
+using Content.Shared.Actions.Components;
 using Content.Shared.Damage;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
@@ -64,6 +67,15 @@ public sealed class RuGameplayBalanceTest : GameTest
             Assert.That(SEntMan.HasComponent<XenoQueenSpitComponent>(queen), Is.False);
             var spit = SEntMan.GetComponent<XenoSpitComponent>(queen);
             var toggle = SEntMan.GetComponent<XenoToggleSpitComponent>(queen);
+            Assert.That(spit.ProjectileId.Id, Is.EqualTo("XenoQueenNeuroSpitProjectile"));
+            Assert.That(spit.PlasmaCost, Is.EqualTo(FixedPoint2.New(50)));
+            Assert.That(spit.Speed, Is.EqualTo(30));
+            Assert.That(toggle.AcidProto.Id, Is.EqualTo("XenoChargedSpitProjectile"));
+            Assert.That(toggle.AcidCost, Is.EqualTo(FixedPoint2.New(25)));
+            var spitAction = SSpawnAtPosition("ActionXenoSpitQueen", map.GridCoords);
+            Assert.That(SEntMan.GetComponent<ActionComponent>(spitAction).UseDelay, Is.EqualTo(TimeSpan.FromSeconds(2.5)));
+            var screechAction = SSpawnAtPosition("ActionXenoScreech", map.GridCoords);
+            Assert.That(SEntMan.GetComponent<ActionComponent>(screechAction).UseDelay, Is.EqualTo(TimeSpan.FromSeconds(50)));
             Assert.That(spit.ProjectileId, Is.EqualTo(toggle.NeuroProto));
             var change = new XenoSpitToggleActionEvent();
             SEntMan.EventBus.RaiseLocalEvent(queen, change);
@@ -78,27 +90,49 @@ public sealed class RuGameplayBalanceTest : GameTest
     }
 
     [Test]
-    public async Task ScreechRestoresShortCloseControlWithoutBlindnessOrLongRangeStun()
+    public async Task ScreechMatchesRmcCloseParalysisOuterStunAndParasiteRange()
     {
         var map = await Pair.CreateTestMap();
         EntityUid queen = default;
         EntityUid near = default;
         EntityUid far = default;
+        EntityUid outside = default;
+        EntityUid parasite = default;
+        EntityUid outsideParasite = default;
         await Server.WaitPost(() =>
         {
             queen = SSpawnAtPosition("CMXenoQueen", map.GridCoords);
             near = SSpawnAtPosition("CMMobHuman", new EntityCoordinates(map.GridCoords.EntityId, map.GridCoords.Position + new Vector2(1, 0)));
             far = SSpawnAtPosition("CMMobHuman", new EntityCoordinates(map.GridCoords.EntityId, map.GridCoords.Position + new Vector2(5, 0)));
+            outside = SSpawnAtPosition("CMMobHuman", new EntityCoordinates(map.GridCoords.EntityId, map.GridCoords.Position + new Vector2(9, 0)));
+            parasite = SSpawnAtPosition("CMXenoParasite", new EntityCoordinates(map.GridCoords.EntityId, map.GridCoords.Position + new Vector2(0, 10)));
+            outsideParasite = SSpawnAtPosition("CMXenoParasite", new EntityCoordinates(map.GridCoords.EntityId, map.GridCoords.Position + new Vector2(0, 13)));
             Server.System<XenoMaturingSystem>().Mature((queen, SEntMan.GetComponent<XenoMaturingComponent>(queen)));
         });
         await Server.WaitRunTicks(1);
         await Server.WaitAssertion(() =>
         {
+            var plasma = SEntMan.GetComponent<XenoPlasmaComponent>(queen);
+            var before = plasma.Plasma;
             var scream = new XenoScreechActionEvent { Performer = queen };
             SEntMan.EventBus.RaiseLocalEvent(queen, scream);
             Assert.That(scream.Handled, Is.True);
             Assert.That(SEntMan.HasComponent<StunnedComponent>(near), Is.True);
-            Assert.That(SEntMan.HasComponent<StunnedComponent>(far), Is.False);
+            Assert.That(SEntMan.HasComponent<StunnedComponent>(far), Is.True);
+            Assert.That(plasma.Plasma, Is.EqualTo(before - FixedPoint2.New(250)));
+            Assert.That(SEntMan.HasComponent<KnockedDownComponent>(near), Is.True);
+            Assert.That(SEntMan.HasComponent<KnockedDownComponent>(far), Is.False);
+            Assert.That(SEntMan.HasComponent<StunnedComponent>(outside), Is.False);
+            Assert.That(SEntMan.HasComponent<StunnedComponent>(parasite), Is.True);
+            Assert.That(SEntMan.HasComponent<StunnedComponent>(outsideParasite), Is.False);
+            var status = Server.System<StatusEffectsSystem>();
+            Assert.That(status.TryGetTime(near, SharedStunSystem.ParalyzeId, out var closeTime), Is.True);
+            Assert.That(closeTime.EndEffectTime - SGameTiming.CurTime, Is.EqualTo(TimeSpan.FromSeconds(8)));
+            Assert.That(status.TryGetTime(far, SharedStunSystem.StunId, out var farTime), Is.True);
+            Assert.That(farTime.EndEffectTime - SGameTiming.CurTime, Is.EqualTo(TimeSpan.FromSeconds(6)));
+            Assert.That(status.TryGetTime(parasite, SharedStunSystem.StunId, out var parasiteTime), Is.True);
+            // RMC applies its existing xeno stun-duration multiplier once, including to parasites.
+            Assert.That(parasiteTime.EndEffectTime - SGameTiming.CurTime, Is.EqualTo(TimeSpan.FromSeconds(8) * 0.667));
             Assert.That(SEntMan.HasComponent<ScreechBlindComponent>(near), Is.False);
             Assert.That(SEntMan.HasComponent<ScreechBlindComponent>(far), Is.False);
         });

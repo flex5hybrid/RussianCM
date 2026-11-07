@@ -117,6 +117,10 @@
   - type: RMCInnateRadioTextIncrease
     radioTextIncrease: 3
     instrinsic: true
+  # CMU14: original RMC single-shot neuro/acid ability, unlocked on maturation.
+  - type: XenoSpit
+    projectileId: XenoQueenNeuroSpitProjectile
+    plasmaCost: 50
   - type: XenoGut
   - type: XenoClaws
     clawType: VerySharp
@@ -247,31 +251,16 @@
     critThreshold: 1000 # CMU14: RuCM control queen, pre-rework health
     deadThreshold: 1100
     addComponents:
-    # CMU14: restore the existing neuro/acid toggle instead of the acid volley.
+    # CMU14: original RMC screech and spit toggle.
     - type: XenoScreech
-      range: 6
-      stunRange: 4
-      stunTime: 2
-      slowTime: 3
-      blindTime: 0
-      deafTime: 3
-    # - type: XenoQueenSpit
-    - type: XenoSpit
-      projectileId: CMURuQueenNeuroSpit
-      plasmaCost: 50
-      speed: 25
     - type: XenoToggleSpit
-      neuroProto: CMURuQueenNeuroSpit
-      acidProto: CMURuQueenAcidSpit
-      acidCost: 40
     # CMU14 - Overwrites the immature order, so matured queens order their extra abilities correctly
     - type: RMCActionOrder
       id: CMXenoQueen
     addActions:
-    - CMURuActionQueenScreech # CMU14: localized description of RuCM control
-    # - ActionXenoQueenSpit # CMU14: old single-shot control ability
-    - CMURuActionQueenSpit
-    - CMURuActionQueenToggleSpit
+    - ActionXenoScreech
+    - ActionXenoSpitQueen
+    - ActionXenoToggleSpitType
   - type: RMCSize
     size: Immobile
   - type: RMCXenoDamageVisuals
