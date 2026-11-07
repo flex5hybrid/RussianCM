@@ -49,7 +49,7 @@
     defaultLanguage: Russian
 
   name: Paramedic
-  description: Paramedic Engineer
+  description: Paramedic
   playTimeTracker: RuMCJobUPPNorcommParamedic
   ranks:
     RMCRankCivilian: []
@@ -104,7 +104,7 @@
     allowSpeech: true
     allowMovement: true
     name: Paramedic
-    description: You are part of a UPP Norcomm Lui team! Your job is to burn every biological threat on the colony to the ground. Not one step back!
+    description: You are part of a UPP Norcomm Liu team! Your job is to burn every biological threat on the colony to the ground. Not one step back!
     job: RuMCUPPNorcommParamedic
     raffle:
       settings: short

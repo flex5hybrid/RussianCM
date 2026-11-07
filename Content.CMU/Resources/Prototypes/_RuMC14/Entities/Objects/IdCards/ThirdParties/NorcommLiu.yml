@@ -60,7 +60,7 @@
 
 - type: entity
   parent: CMIDCardBase
-  id: RuMCGearUPPNorcommMedic
+  id: RuCMIDCardUPPNorcommMedic
   categories: [ HideSpawnMenu ]
   name: UPP Norcomm Medic ID card
   components:

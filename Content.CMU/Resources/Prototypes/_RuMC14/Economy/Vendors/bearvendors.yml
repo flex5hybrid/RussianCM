@@ -395,11 +395,11 @@
     - AU14JobOPFOROfficerMedical
     - AU14JobOPFORAuxSupportSynth
     sections:
-    - name: Essential Equipment
+    - name: au14-vendor-section-essential-equipment
       takeAll: CMUEssentialEquipment
       entries:
       - id: AU14VendorBundleCorpsmanEssentials
-    - name: Medical Pouches
+    - name: au14-vendor-section-medical-pouches
       choices: { CMUPlatoonMedicalPouch: 2 }
       entries:
       - id: RMCPouchAutoinjector
@@ -407,10 +407,8 @@
       - id: RuMCUPPPouchIFAK
       - id: RMCPouchSyringeFill
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
-    - name: Medical Storage
+    - name: au14-vendor-section-medical-storage
       choices: { CMUPlatoonMedicalStorage: 1 }
       entries:
       - id: RuMCUPPNavalInfantryBeltMedic

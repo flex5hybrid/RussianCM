@@ -38,7 +38,7 @@
     - id: CMSheetMetal
 
 - type: entity
-  parent: CMHeadCap
+  parent: RuMCHeadCapNoLu
   id: RuMCHeadCapNoLuFill
   components:
   - type: StorageFill
@@ -58,7 +58,6 @@
     - id: CMPillCanisterInaprovaline
     - id: CMPillCanisterKelotane
     - id: CMPillCanisterBicaridine
-    - id: CMPillCanisterKelotane
     - id: CMPillCanisterTricordrazine
     - id: RMCPillCanisterIron
     - id: AU14PillCanisterCryoxadone
