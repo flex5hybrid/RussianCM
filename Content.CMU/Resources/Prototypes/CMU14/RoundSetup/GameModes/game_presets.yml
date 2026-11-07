@@ -38,6 +38,9 @@
 
 - type: gamePreset
   id: DistressSignal
+  minPlayers: 20
+  excludedPlatoons:
+  - LACN
   alias:
   - distresssignal
   name: cmu-gamemode-distresssignal-name

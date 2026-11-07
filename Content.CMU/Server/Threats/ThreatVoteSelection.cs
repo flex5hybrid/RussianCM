@@ -45,6 +45,27 @@ public static class ThreatVoteSelection
         return ThreatVoteSelection.LimitBodyCount(bodyCount, playerBudget);
     }
 
+    internal static ThreatVoteBodyCount CalculateBodyCount(PartySpawnPrototype spawn,
+        int playerCount,
+        ThreatPrototype threat)
+    {
+        return LimitBodyCount(CalculateBodyCount(spawn, playerCount), CalculateThreatPlayerBudget(playerCount, threat));
+    }
+
+    internal static int CalculateThreatPlayerBudget(int readyPlayerCount, ThreatPrototype threat)
+    {
+        var budget = CalculateThreatPlayerBudget(readyPlayerCount, threat.ThreatRatio);
+        if (budget == 0)
+            return 0;
+
+        // Decimal preserves authored ratios at whole-player boundaries (100 × 0.27 must not become 28).
+        if (threat.RoundPlayerBudgetUp)
+            budget = Math.Clamp((int) Math.Ceiling(readyPlayerCount * (decimal) threat.ThreatRatio), 1, readyPlayerCount);
+
+        var minimum = Math.Clamp(threat.MinimumPlayerBudget, 0, readyPlayerCount / 2);
+        return Math.Max(budget, minimum);
+    }
+
     internal static int CalculateThreatPlayerBudget(int readyPlayerCount, float threatRatio)
     {
         if (readyPlayerCount <= 0 ||
