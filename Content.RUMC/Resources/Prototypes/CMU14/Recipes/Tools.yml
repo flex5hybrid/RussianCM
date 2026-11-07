@@ -94,7 +94,7 @@
       - entityId: CMWelderSmall
         consume: true
         doAfter: 10
-      - material: RMCCable
+      - material: CMUThinCableLV
         amount: 10
         doAfter: 10
   - node: target
