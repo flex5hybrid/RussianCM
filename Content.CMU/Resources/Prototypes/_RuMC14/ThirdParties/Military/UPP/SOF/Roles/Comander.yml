@@ -89,7 +89,7 @@
         time: 10800 # 3 hours
   spawnMenuRoleName: SOF Commander
   startingGear: RuMCGearUPPSOFbase_COM
-  greeting: rumc-SOF-greeting
+  greeting: rumc-sof-greeting
   icon: "RuMCJobIconUPPSOFCommander"
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-govfor

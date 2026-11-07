@@ -17,3 +17,18 @@
   id: LiquidatorCommandingOfficer
   job: RuMCUPPLiquidatorComander
   alert: SquadTrackerCommandingOfficer
+
+- type: trackerMode
+  id: SOFsCommandingOfficer
+  job: RuMCUPPSOFCommander
+  alert: SquadTrackerCommandingOfficer
+
+- type: trackerMode
+  id: VDVsCommandingOfficer
+  job: RuMCUPPVDVCommander
+  alert: SquadTrackerCommandingOfficer
+
+- type: trackerMode
+  id: NorcommLiuCommandingOfficer
+  job: RuMCUPPNorcommChief
+  alert: SquadTrackerCommandingOfficer

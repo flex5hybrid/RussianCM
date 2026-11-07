@@ -33,3 +33,15 @@
   - type: ItemIFF
     factions:
     - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPNorcommDoctor
+  categories: [ HideSpawnMenu ]
+  name: UPP Norcomm Liu Doctor ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPNorcommDoctor
+  - type: ItemIFF
+    factions:
+    - GOVFOR

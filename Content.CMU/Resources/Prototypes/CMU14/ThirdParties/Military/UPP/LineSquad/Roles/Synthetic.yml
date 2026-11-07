@@ -39,7 +39,7 @@
   playTimeTracker: CMUJobUPPLineSynthetic
   isSynthetic: true
   whitelisted: true
-  whitelistParent: CMUJobSyntheticWhitelist
+  # whitelistParent: CMUJobSyntheticWhitelist # RuMC: use this job's whitelist directly.
   ranks:
     RMCRankCivilian: []
   startingGear: CMUGearUPPLineSynthetic
