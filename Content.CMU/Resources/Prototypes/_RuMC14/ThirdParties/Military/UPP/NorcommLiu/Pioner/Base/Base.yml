@@ -38,7 +38,7 @@
     - id: CMSheetMetal
 
 - type: entity
-  parent: CMHeadCap
+  parent: RuMCHeadCapNoLu
   id: RuMCHeadCapNoLuFill
   components:
   - type: StorageFill
