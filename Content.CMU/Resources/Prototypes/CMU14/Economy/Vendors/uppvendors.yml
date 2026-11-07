@@ -72,33 +72,37 @@
       - id: RuMCUPPNavalInfantryCapUshanka
         amount: 40
       - id: RMCM5CameraGear
-        amount: 30
+        maxPerUser: 1
     - name: cmu-vendor-section-upp-vdv-headgear
       squadSpecializations: [ UPPSpecVDV ]
       entries:
       - id: RuMCHeadBeretVDV
-        amount: 40
+        maxPerUser: 1
       - id: RuMCUPPInfantryHelmetVDV
-        amount: 40
+        maxPerUser: 1
+      - id: AU14UPPPatrolCap
+        amount: 20
       - id: RuMCHeadCapVDV
+        amount: 5
+      - id: AU14UPPBoonie
         amount: 20
       - id: RuMCHeadBoonieVDV
-        amount: 15
+        amount: 5
       - id: RMCM5CameraGear
-        amount: 30
+        maxPerUser: 1
     - name: cmu-vendor-section-upp-recon-headgear
       squadSpecializations: [ UPPSpecRecon ]
       entries:
-      - id: AU14UPPBoonie
-        amount: 40
       - id: RuMCHeadBeretSSO
-        amount: 30
+        maxPerUser: 1
+      - id: AU14HeadCommandoBeanie
+        maxPerUser: 1
+      - id: AU14UPPBoonie
+        amount: 20
       - id: AU14UPPPatrolCap
         amount: 20
-      - id: AU14HeadCommandoBeanie
-        amount: 20
       - id: RMCM5CameraGear
-        amount: 30
+        maxPerUser: 1
     - name: Heads Up Display
       entries:
       - id: RMCVisorSquad
@@ -116,22 +120,18 @@
         amount: 25
     - name: cmu-vendor-section-upp-vdv-armor
       squadSpecializations: [ UPPSpecVDV ]
+      choices: { CMUPlatoonArmor: 1 }
       entries:
       - id: RuMCUPPArmorVDV
-        amount: 40
       - id: RuMCUPPArmorVDV_Light
-        amount: 30
       - id: RuMCUPPArmorVDV_Heavy
-        amount: 25
     - name: cmu-vendor-section-upp-recon-armor
       squadSpecializations: [ UPPSpecRecon ]
+      choices: { CMUPlatoonArmor: 1 }
       entries:
       - id: AU14UPPArmor
-        amount: 40
       - id: AU14UPPArmorMinimalistic
-        amount: 30
       - id: AU14ArmorArmyUPP
-        amount: 25
     - name: Armor Components
       entries:
       - id: AU14ArmorGarbShinGuardsUPP

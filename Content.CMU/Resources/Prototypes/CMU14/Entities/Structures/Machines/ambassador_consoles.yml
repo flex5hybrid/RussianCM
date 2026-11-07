@@ -72,12 +72,15 @@
       UPPGROMRRUSquad: 7000
       UPPGROMRRUTeam: 6000
       MSSOperationalGroup: 3000
-      CHTORM_PMC_BEAR: 11000
-      GROZA_PMC_BEAR: 9000
+      CHTORM_PMC_BEAR: 10000
+      GROZA_PMC_BEAR: 8500
       SKALA_PMC_BEAR: 7000
       Moskva: 10000
       Kupol: 5000
       Liquidators: 7000 #only flamethrowers
+      Hephaestus: 9000
+      Hippocrates: 4000
+      Hoplite: 4000
       Migrant_UPP: 1000 #They don’t speak English.
 
 

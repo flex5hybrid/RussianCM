@@ -392,7 +392,7 @@
     -
       - [ RMCGlassesMedicalHUDGlasses]
     randomWeapon:
-    - [ RuMCFatiguesVDV_medicFull, AU14BeltMedicalUPPFull, RuMCPouchMagazineVDVFull ]
+    - [ RuMCFatiguesVDV_medicFull, RuMCUPPNavalInfantryBeltMedicFill, RuMCPouchMagazineVDVFull ]
     tryEquipRandomWeapon: true
 
 - type: entity

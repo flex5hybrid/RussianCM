@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPVDVEngineer
   roundSide: ThirdParty
-  roundForce: UPP
+  roundForce: VDV
   roundRole: RuMCUPPVDVEngineer
   roundComponents:
   - type: TacticalMapIcon
@@ -54,33 +54,21 @@
   ranks:
     RMCRankCivilian: []
   chevrons:
-    UPP_Plutonowy:
-      entity: AU14ChevronUPPNIPlutonowy
+    UPP_Private:
+      entity: AU14ChevronUPPNIPrivate
       requirements: []
-    UPP_Sergeant:
-      entity: AU14ChevronUPPNISergeant
+    UPP_Gefreiter:
+      entity: AU14ChevronUPPNIGefreiter
       requirements:
       - !type:RoleTimeRequirement
         role: RuMCJobUPPVDVEngineer
         time: 1800 # 0.5 hours
-    UPP_SeniorSergeant:
-      entity: AU14ChevronUPPNISeniorSergeant
+    UPP_SeniorGefreiter:
+      entity: AU14ChevronUPPNISeniorGefreiter
       requirements:
       - !type:RoleTimeRequirement
         role: RuMCJobUPPVDVEngineer
         time: 5400 # 1.5 hours
-    UPP_JuniorLieutenant:
-      entity: AU14ChevronUPPNIJuniorLieutenant
-      requirements:
-      - !type:RoleTimeRequirement
-        role: RuMCJobUPPVDVEngineer
-        time: 7200 # 2 hours
-    UPP_Lieutenant:
-      entity: AU14ChevronUPPNILieutenant
-      requirements:
-      - !type:RoleTimeRequirement
-        role: RuMCJobUPPVDVEngineer
-        time: 10800 # 3 hours
   spawnMenuRoleName: VDV Engineer
   startingGear: RuMCGearUPPVDVEngineer
   greeting: rumc-vdv-greeting
