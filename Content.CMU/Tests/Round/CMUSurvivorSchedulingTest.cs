@@ -5,6 +5,7 @@ using System.Reflection;
 using Content.Server.CMU14.Round;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Presets;
+using Content.Server._RuCM.Discord;
 using Content.Shared._RMC14.Rules;
 using Content.Shared.CMU14.Threats;
 using Content.Shared.GameTicking;
@@ -12,6 +13,7 @@ using Content.Tests;
 using Moq;
 using NUnit.Framework;
 using Robust.Server.Player;
+using Robust.Shared.Configuration;
 using Robust.Shared.GameObjects;
 using Robust.Shared.IoC;
 using Robust.Shared.Network;
@@ -92,8 +94,17 @@ public sealed class CMUSurvivorSchedulingTest : ContentUnitTest
         var systems = new Mock<IEntitySystemManager>();
         systems.Setup(manager => manager.GetEntitySystem<PlatoonSpawnRuleSystem>())
             .Returns(new PlatoonSpawnRuleSystem());
+        var config = new Mock<IConfigurationManager>();
+        config.Setup(manager => manager.GetCVar(DiscordLinkingCVars.Required)).Returns(false);
+        var discordGate = new DiscordLinkGateSystem();
+        SetField(discordGate, "_config", config.Object);
+        systems.Setup(manager => manager.GetEntitySystem<DiscordLinkGateSystem>()).Returns(discordGate);
         var entities = new Mock<IEntityManager>();
         entities.SetupGet(manager => manager.EntitySysManager).Returns(systems.Object);
+        var tickerEntities = new Mock<EntityManager>();
+        typeof(EntityManager).GetField("_entitySystemManager", BindingFlags.Instance | BindingFlags.NonPublic)!
+            .SetValue(tickerEntities.Object, systems.Object);
+        SetField(ticker, "EntityManager", tickerEntities.Object);
         var random = new Mock<IRobustRandom>();
         random.Setup(value => value.Next(It.IsAny<int>())).Returns(0);
 
