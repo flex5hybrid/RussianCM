@@ -1,5 +1,5 @@
 <screens:SeparatedChatGameScreen
-    xmlns="https://spacestation14.io"
+    xmlns="https://spacestation14.io" xmlns:hud="clr-namespace:Content.Client.CMU14.Interface.Hud"
     xmlns:screens="clr-namespace:Content.Client.UserInterface.Screens"
     xmlns:menuBar="clr-namespace:Content.Client.UserInterface.Systems.MenuBar.Widgets"
     xmlns:actions="clr-namespace:Content.Client.UserInterface.Systems.Actions.Widgets"
@@ -24,7 +24,7 @@
             <BoxContainer Name="TopLeftContainer" Orientation="Vertical" SeparationOverride="8">
                 <menuBar:GameTopMenuBar Name="TopBar" Access="Public" HorizontalAlignment="Left"/>
                 <actions:ActionsBar Name="Actions" Access="Protected" />
-                <BoxContainer Name="VoteMenu" Access="Public" Orientation="Vertical"/>
+                <hud:CmuHudAdaptiveBox Name="VoteMenu" Access="Public" Orientation="Vertical"/>
             </BoxContainer>
             <alerts:AlertsUI Name="Alerts" Access="Protected" />
         </LayoutContainer>

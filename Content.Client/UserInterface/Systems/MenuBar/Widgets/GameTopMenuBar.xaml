@@ -15,7 +15,7 @@
            SeparationOverride="5"
 >
     <!-- CMU14: a translucent command band groups the native menu keys without adding padding. -->
-    <PanelContainer HorizontalExpand="True"><PanelContainer.PanelOverride><hud:CmuHudStyleBox Tone="Header" Opacity="0.55"/></PanelContainer.PanelOverride><GridContainer Name="MenuGrid" Columns="9" HSeparationOverride="4" VSeparationOverride="2" HorizontalExpand="True">
+    <PanelContainer HorizontalExpand="True"><PanelContainer.PanelOverride><hud:CmuHudStyleBox Tone="Header" Opacity="0.55"/></PanelContainer.PanelOverride><hud:CmuHudAdaptiveGrid Name="MenuGrid" Columns="9" HSeparationOverride="4" VSeparationOverride="2" HorizontalExpand="True">
     <ui:MenuButton
         Name="EscapeButton"
         Access="Internal"
@@ -106,5 +106,5 @@
         HorizontalExpand="True"
         AppendStyleClass="{x:Static style:StyleClass.ButtonOpenLeft}"
         />
-    </GridContainer></PanelContainer>
+    </hud:CmuHudAdaptiveGrid></PanelContainer>
 </widgets:GameTopMenuBar>

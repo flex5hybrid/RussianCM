@@ -70,10 +70,9 @@ public sealed partial class AlertsUI : UIWidget
         var hasVisibleStatus = false;
         foreach (var control in _alertControls.Values)
         {
-            // Only explicitly informational alerts may be collapsed. Unknown/new warning types stay visible.
-            var informational = control.Alert.Category is { } category && category.Id == "AreaInfo";
-            control.Visible = !informational;
-            hasVisibleStatus |= !informational;
+            // AreaInfo is gameplay information too; never suppress it for a compact layout.
+            control.Visible = true;
+            hasVisibleStatus = true;
             control.SetHudCompact(_compact);
         }
         StatusPanel.Visible = hasVisibleStatus;

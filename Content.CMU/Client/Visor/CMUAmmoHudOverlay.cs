@@ -97,7 +97,8 @@ public sealed class CMUAmmoHudOverlay : Overlay
         if (rounds != _displayedRounds || type != _displayedType)
             UpdateLayers(type, rounds);
 
-        var box = GetBox(args.ViewportBounds);
+        var box = _ui.GetUIController<Content.Client.CMU14.Interface.Hud.CmuHudLayoutController>()
+            .PlaceOverlay("ammo", GetBox(args.ViewportBounds));
         var time = _timing.CurTime;
         foreach (var icon in _layers)
         {
@@ -155,12 +156,16 @@ public sealed class CMUAmmoHudOverlay : Overlay
             var uiScale = alerts.UIScale;
             var size = 32 * Scale * uiScale;
             var container = alerts.AlertContainer;
-            var right = container.GlobalPixelPosition.X + container.PixelSize.X;
+            var right = alerts.GlobalPixelPosition.X + alerts.PixelSize.X;
             if (container.PixelSize.X <= 0)
                 right = alerts.GlobalPixelPosition.X + alerts.PixelSize.X;
 
-            var top = container.GlobalPixelPosition.Y + container.PixelSize.Y + AlertGap * uiScale;
-            return UIBox2.FromDimensions(new Vector2(right - size, top), new Vector2(size, size));
+            var top = alerts.GlobalPixelPosition.Y + alerts.PixelSize.Y + AlertGap * uiScale;
+            var root = alerts.Root;
+            var maximum = root == null ? (Vector2) viewport.BottomRight : (Vector2) root.PixelSize;
+            var origin = Vector2.Clamp(new Vector2(right - size, top), Vector2.Zero,
+                Vector2.Max(Vector2.Zero, maximum - new Vector2(size)));
+            return UIBox2.FromDimensions(origin, new Vector2(size));
         }
 
         const int fallbackSize = 32 * Scale;

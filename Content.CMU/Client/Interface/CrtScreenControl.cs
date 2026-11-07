@@ -40,8 +40,6 @@ public sealed partial class CrtScreenControl : Control
 
     private readonly ShaderInstance? _shader;
 
-    private IRenderTexture? _target;
-    private Vector2i _targetSize;
 
     /// <summary>Authored terminal passes supply their own raster; background materials must not double it.</summary>
     public static bool CapturingSource { get; private set; }
@@ -133,7 +131,7 @@ public sealed partial class CrtScreenControl : Control
         && PixelSize.X > 0 && PixelSize.Y > 0
         && StyleNano.CrtUiEnabled
         && _cfg.GetCVar(CCVars.CMUCrtEffectIntensity) > 0f
-        && LastError == null;
+        && _cfg.GetCVar(CCVars.CMUCrtMenuEffect);
 
     public CrtScreenControl()
     {
@@ -151,99 +149,17 @@ public sealed partial class CrtScreenControl : Control
     protected override void ExitedTree()
     {
         base.ExitedTree();
-        _target?.Dispose();
-        _target = null;
+        _cmuCapture.Release();
     }
 
-    // The IRenderHandle overload rather than the DrawingHandleScreen one: RenderControl needs an
-    // IRenderHandle and DrawingHandleScreen has no way back to it.
+    private readonly CmuCrtCapture _cmuCapture = new();
+
     protected override void Draw(IRenderHandle renderHandle)
     {
-        var handle = renderHandle.DrawingHandleScreen;
-
-        // A failed render pass is retried every frame; LastError only gates Drawing for callers.
-        if (_shader == null || Source == null || !StyleNano.CrtUiEnabled || CmuCrtCapture.Capturing)
+        if (Source == null || !Drawing)
             return;
-
-        var intensity = _cfg.GetCVar(CCVars.CMUCrtEffectIntensity);
-        if (intensity <= 0f)
-            return;
-
-        var size = PixelSize;
-        if (size.X <= 0 || size.Y <= 0)
-            return;
-
-        if (_target == null || _targetSize != size)
-        {
-            _target?.Dispose();
-            _target = _clyde.CreateRenderTarget(size, RenderTargetColorFormat.Rgba8Srgb, name: "cmu-crt");
-            _targetSize = size;
-        }
-
-        try
-        {
-            // Re-entrant render pass: we are inside the UI's own draw when this runs. If the engine
-            // objects to that, it will surface here rather than taking the client down.
-            handle.RenderInRenderTarget(_target,
-                () =>
-                {
-                    var previous = CapturingSource;
-                    CapturingSource = true;
-                    try
-                    {
-                        _ui.RenderControl(renderHandle, Source, Vector2i.Zero);
-                    }
-                    finally
-                    {
-                        CapturingSource = previous;
-                    }
-                },
-                Color.Transparent);
-        }
-        catch (Exception e)
-        {
-            LastError = e.Message;
-            return;
-        }
-
-        LastError = null;
-
-        // Authored values, used as authored. An earlier version of this scaled the amplitudes down by
-        // control size, on the theory that defaults tuned on a 1000x800 mock must be too strong for a
-        // small panel. That was wrong twice over: it made the effect nearly invisible on the surface
-        // it was meant to fix, and capping the roll bar's shear to a few pixels turned one coherent
-        // tear into per-glyph speckle, which reads as corrupted text rather than as a CRT. The roll
-        // bar is supposed to displace text by several characters - that is what makes it a roll bar.
-        //
-        // Surfaces that genuinely want a quieter effect say so through the per-instance properties
-        // below, which is a caller stating an intent rather than this control guessing one from a
-        // rectangle.
-        _shader.SetParameter("intensity", intensity);
-        _shader.SetParameter("pitch", _cfg.GetCVar(CCVars.CMUCrtEffectPitch));
-        _shader.SetParameter("staticAmount",
-            Grain ? _cfg.GetCVar(CCVars.CMUCrtEffectStatic) : 0f);
-        _shader.SetParameter("rollPeriod",
-            RollPeriod ?? _cfg.GetCVar(CCVars.CMUCrtEffectRollPeriod));
-        _shader.SetParameter("rollSweep", _cfg.GetCVar(CCVars.CMUCrtEffectRollSweep));
-        _shader.SetParameter("rollHeight", _cfg.GetCVar(CCVars.CMUCrtEffectRollHeight));
-        _shader.SetParameter("rollDisplace",
-            Roll ? _cfg.GetCVar(CCVars.CMUCrtEffectRollDisplace) : 0f);
-        _shader.SetParameter("rollLift",
-            Roll ? _cfg.GetCVar(CCVars.CMUCrtEffectRollLift) : 0f);
-        _shader.SetParameter("artifactAmount", ArtifactAmount);
-        _shader.SetParameter("artifactPeriod", ArtifactPeriod);
-        _shader.SetParameter("artifactSweep", ArtifactSweep);
-        _shader.SetParameter("artifactMode", (float) Artifact);
-        _shader.SetParameter("curvature",
-            Curvature ?? _cfg.GetCVar(CCVars.CMUCrtEffectCurvature));
-        _shader.SetParameter("vignette",
-            Vignette ?? _cfg.GetCVar(CCVars.CMUCrtEffectVignette));
-        _shader.SetParameter("aspect", size.Y > 0 ? size.X / (float) size.Y : 1f);
-        _shader.SetParameter("phosphor", Linear(Phosphor));
-
-        handle.UseShader(_shader);
-        handle.DrawTextureRect(_target.Texture, PixelSizeBox);
-        handle.UseShader(null);
+        LastError = _cmuCapture.Draw(Source, renderHandle, true, false, 1)
+            ? null : "CRT capture unavailable";
     }
 
     /// <summary>

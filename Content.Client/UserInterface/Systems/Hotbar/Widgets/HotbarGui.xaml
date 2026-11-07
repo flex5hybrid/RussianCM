@@ -12,15 +12,15 @@
     HorizontalAlignment="Stretch"
     HorizontalExpand="True">
     <BoxContainer Orientation="Vertical" HorizontalExpand="True" SeparationOverride="4">
-        <BoxContainer Name="SingleStorageContainer" Access="Public"
+        <hud:CmuHudAdaptiveBox Name="SingleStorageContainer" Access="Public"
                       HorizontalAlignment="Center" HorizontalExpand="True" Margin="0 4"/>
-        <BoxContainer Name="DoubleStorageContainer" Access="Public"
+        <hud:CmuHudAdaptiveBox Name="DoubleStorageContainer" Access="Public"
                       HorizontalAlignment="Stretch" HorizontalExpand="True" SeparationOverride="4" Margin="0 4">
-            <BoxContainer Name="LeftStorageContainer" Access="Public"
+            <hud:CmuHudAdaptiveBox Name="LeftStorageContainer" Access="Public"
                           HorizontalAlignment="Left" HorizontalExpand="True" VerticalAlignment="Bottom"/>
-            <BoxContainer Name="RightStorageContainer" Access="Public"
+            <hud:CmuHudAdaptiveBox Name="RightStorageContainer" Access="Public"
                           HorizontalAlignment="Right" HorizontalExpand="True" VerticalAlignment="Bottom"/>
-        </BoxContainer>
+        </hud:CmuHudAdaptiveBox>
         <hud:CmuHudDock Name="Hotbar" HorizontalExpand="True">
             <inventory:ItemSlotButtonContainer Name="SecondHotbar" SlotGroup="SecondHotbar"
                 VerticalAlignment="Bottom" HorizontalAlignment="Right" VerticalExpand="False"

@@ -212,6 +212,7 @@ public sealed partial class ItemGridPiece : Control, IEntityControl // CMU14: co
                 -iconRotation,
                 Vector2.Zero);
             var root = spriteBox.CalcBoundingBox().BottomLeft;
+            var previousTransform = handle.GetTransform(); // CMU14: preserve render-target/scroll origin.
             var pos = PixelPosition * 2
                       + (Parent?.GlobalPixelPosition ?? Vector2.Zero)
                       + sizeDifference
@@ -220,7 +221,7 @@ public sealed partial class ItemGridPiece : Control, IEntityControl // CMU14: co
             handle.SetTransform(pos, iconRotation);
             var box = new UIBox2(root, root + sprite.Size * scale);
             handle.DrawTextureRect(sprite, box);
-            handle.SetTransform(GlobalPixelPosition, Angle.Zero);
+            handle.SetTransform(previousTransform); // CMU14
         }
         else
         {

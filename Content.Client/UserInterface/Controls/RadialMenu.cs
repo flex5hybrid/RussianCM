@@ -140,7 +140,7 @@ public partial class RadialMenu : BaseWindow // CMU14: full-surface CRT renderin
         if (!children.Any())
             return null;
 
-        return children.First(x => x.Visible);
+        return children.FirstOrDefault(x => x.Visible); // CMU14: rebuilding layers may temporarily hide every layer.
     }
 
     public bool TryToMoveToNewLayer(Control newLayer)
@@ -328,7 +328,7 @@ public sealed class RadialMenuOuterAreaButton : RadialMenuButtonBase
 }
 
 [Virtual]
-public class RadialMenuButton : RadialMenuButtonBase
+public partial class RadialMenuButton : RadialMenuButtonBase // CMU14: shared choice feedback.
 {
     /// <summary>
     /// Upon clicking this button the radial menu will be moved to the layer of this control.
@@ -594,6 +594,9 @@ public partial class RadialMenuButtonWithSector : RadialMenuButton, IRadialMenuI
             return false;
         }
 
+        if (_isWholeCircle) // CMU14: single-choice crafting wheels cover the entire annulus.
+            return true;
+
         // difference from the center of the parent to the `point`
         var pointFromParent = point + Position - _parentCenter.Value;
 
@@ -634,14 +637,17 @@ public partial class RadialMenuButtonWithSector : RadialMenuButton, IRadialMenuI
     {
         const float minimalSegmentSize = MathF.Tau / 128f;
 
+        // CMU14: reused crafting sectors may change size; a full circle must never divide by zero.
         var requestedSegmentSize = angleSectorTo - angleSectorFrom;
-        var segmentCount = (int)(requestedSegmentSize / minimalSegmentSize) + 1;
+        if (requestedSegmentSize <= 0)
+            requestedSegmentSize += MathF.Tau;
+        var segmentCount = Math.Max(2, (int)(requestedSegmentSize / minimalSegmentSize) + 1);
         var anglePerSegment = requestedSegmentSize / (segmentCount - 1);
 
         var bufferSize = segmentCount * 2;
         if (_sectorPointsForDrawing == null || _sectorPointsForDrawing.Length != bufferSize)
         {
-            _sectorPointsForDrawing ??= new Vector2[bufferSize];
+            _sectorPointsForDrawing = new Vector2[bufferSize]; // CMU14: resize existing buffers too.
         }
 
         for (var i = 0; i < segmentCount; i++)

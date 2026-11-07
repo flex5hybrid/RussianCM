@@ -55,8 +55,11 @@ public sealed class CmuHudScreenCoordinator
             var width = MathF.Max(64, _viewport.Width - RightInset - 24);
             var menuWidth = OverlayChatBounds is { } bounds ? MathF.Max(64, bounds.Left - 24) : width;
             var menuLimit = StyleNano.CrtUiEnabled ? 456 : 650;
-            _menu.SetWidth = MathF.Min(menuLimit, menuWidth);
-            _menu.SetAvailableWidth(MathF.Min(menuLimit, menuWidth));
+            if (!CmuHudReflow.IsRoot(_menu))
+            {
+                _menu.SetWidth = MathF.Min(menuLimit, menuWidth);
+                _menu.SetAvailableWidth(MathF.Min(menuLimit, menuWidth));
+            }
             var top = MathF.Max(64, _menu.Height) + 18;
             var footer = MathF.Max(64, _hotbar.FooterHeight);
             // Keep the targeting doll above the equipment toggle at the foot of the left rail.
@@ -67,7 +70,8 @@ public sealed class CmuHudScreenCoordinator
             var count = _actions.ActionsContainer.ChildCount;
             var preferredRows = count <= 6 ? count : Math.Min(7, (count + 1) / 2);
             var actionRows = Math.Clamp(preferredRows, 1, Math.Max(1, (int) (availableActions / 68)));
-            _actions.ActionsContainer.Rows = StyleNano.CrtUiEnabled ? actionRows : 1;
+            if (!CmuHudReflow.IsRoot(_actions))
+                _actions.ActionsContainer.Rows = StyleNano.CrtUiEnabled ? actionRows : 1;
             _inventory.SetAvailableHeight(_viewport.Height - top - 80);
             LayoutContainer.SetMarginLeft(_inventory, 12);
             LayoutContainer.SetMarginTop(_inventory, -8);
@@ -105,7 +109,8 @@ public sealed class CmuHudScreenCoordinator
             LayoutContainer.SetMarginRight(_alerts, side);
             LayoutContainer.SetMarginTop(_alerts, railTop);
             LayoutContainer.SetMarginBottom(_alerts, railTop);
-            _alerts.SetHudSpace(railHeight, true);
+            if (!CmuHudReflow.IsRoot(_alerts))
+                _alerts.SetHudSpace(railHeight, true);
         }
         finally
         {

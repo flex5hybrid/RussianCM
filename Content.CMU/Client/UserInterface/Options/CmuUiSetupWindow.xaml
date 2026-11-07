@@ -7,6 +7,7 @@
             <ScrollContainer VerticalExpand="True" HorizontalExpand="True" HScrollEnabled="False">
                 <BoxContainer Orientation="Vertical" SeparationOverride="10" Margin="8">
                     <RichTextLabel Name="Introduction" />
+                    <Button Name="EditHudButton" Text="{Loc 'cmu-hud-layout-title'}" />
                     <ui:CmuAppearanceOptions Name="Appearance" />
                 </BoxContainer>
             </ScrollContainer>

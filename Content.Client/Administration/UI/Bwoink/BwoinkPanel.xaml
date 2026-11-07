@@ -3,10 +3,14 @@
      same pattern) - the inset belongs to whatever sits inside it, not to the screen plane itself. -->
 <BoxContainer
     xmlns="https://spacestation14.io"
+    xmlns:cmu="clr-namespace:Content.Client.CMU14.Interface"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Orientation="Vertical"
     HorizontalExpand="True"
     Margin="8">
+    <!-- CMU14: effect follows the conversation into detached help windows. -->
+    <cmu:CmuCrtDisplayPanel MenuSurface="True" HorizontalExpand="True" VerticalExpand="True">
+    <BoxContainer Orientation="Vertical">
     <OutputPanel Name="TextOutput" VerticalExpand="true" />
     <RichTextLabel Name="TypingIndicator" Access="Public" />
     <!-- StyleClassCrtBwoinkInput: a filled band with rules top and bottom, not an unstyled wrapper -
@@ -21,4 +25,6 @@
                          MinHeight="34"
                          SetHeight="34" />
     </PanelContainer>
+</BoxContainer>
+    </cmu:CmuCrtDisplayPanel>
 </BoxContainer>

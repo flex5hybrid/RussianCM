@@ -22,6 +22,7 @@ public sealed class ChatLogPanel : PanelContainer
     private readonly Button _scrollToLatest;
     private bool _updatingGeometry;
     private bool _followingBottom = true;
+    private bool _scrollInputPending; // CMU14: row-height corrections must not undo explicit input.
 
     public int EntryCount => _rows.EntryCount;
 
@@ -102,6 +103,7 @@ public sealed class ChatLogPanel : PanelContainer
     public void ScrollToBottom()
     {
         _followingBottom = true;
+        _scrollInputPending = false;
         _scrollToLatest.Visible = false;
         _viewport.InvalidateMeasure();
     }
@@ -125,6 +127,7 @@ public sealed class ChatLogPanel : PanelContainer
     {
         if (_updatingGeometry)
             return;
+        _scrollInputPending = true;
         _followingBottom = _scrollBar.Value + _scrollBar.Page >= _scrollBar.MaxValue - BottomTolerance;
         _scrollToLatest.Visible = !_followingBottom;
         // Scroll changes must remeasure the virtualized window before applying its message anchor.
@@ -138,9 +141,20 @@ public sealed class ChatLogPanel : PanelContainer
         var input = _scrollBar.Value;
         _rows.SetViewport(input, page, _followingBottom);
         _rows.Measure(new Vector2(width, float.PositiveInfinity));
+        if (_scrollInputPending && MathF.Abs(_rows.AnchoredScroll - input) > 0.01f)
+        {
+            // Revisit the requested window after estimates become exact, so preserving the
+            // wheel offset cannot leave only the previous anchor's rows materialized.
+            _rows.InvalidateMeasure();
+            _rows.Measure(new Vector2(width, float.PositiveInfinity));
+        }
         var content = _rows.DesiredSize.Y;
         var maximum = MathF.Max(0, content - page);
-        var anchored = Math.Clamp(_rows.AnchoredScroll, 0, maximum);
+        // Newly materialized rows can change estimates by almost an entire wheel step.
+        // Keep the player's requested offset during wheel/drag input; use a message anchor only
+        // for passive reflow (resizing, font changes and incoming messages).
+        var anchored = Math.Clamp(_scrollInputPending ? input : _rows.AnchoredScroll, 0, maximum);
+        _scrollInputPending = false;
         var target = _scrollBar.ValueTarget;
         _updatingGeometry = true;
         try
@@ -181,6 +195,7 @@ public sealed class ChatLogPanel : PanelContainer
         if (delta > 0)
             _followingBottom = false;
         // No hidden second scrollbar, delayed bottom snap or per-frame target overwrite.
+        _scrollInputPending = true;
         _scrollBar.Value = _scrollBar.ValueTarget - delta * 96;
         _viewport.InvalidateMeasure();
     }

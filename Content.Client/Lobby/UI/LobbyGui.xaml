@@ -26,8 +26,8 @@
                              JoinRoundWindow there are only four buttons left, and stretching them to
                              a vote popup's width would put back the empty space that move removed. -->
                         <PanelContainer StyleClasses="CrtPanelTicked" HorizontalAlignment="Left" Name="LeftSideTop"
-                                        VerticalAlignment="Top">
-                            <BoxContainer Orientation="Vertical" SeparationOverride="5" MaxWidth="1040"
+                                        VerticalAlignment="Top" SetWidth="{x:Static cmu:CmuPanelMetrics.LobbyActionColumnWidth}">
+                            <BoxContainer Orientation="Vertical" SeparationOverride="5"
                                           MinWidth="{x:Static cmu:CmuPanelMetrics.LobbyActionColumnWidth}">
                                 <!-- Ranked, not a grid of equals. Only one of Ready/Join is ever
                                      visible - whichever it is, it is the thing you came here to do,
@@ -57,7 +57,7 @@
                                     <Button Name="JoinRoundButton" Access="Public"
                                             Text="{Loc 'cmu-lobby-join-round'}"
                                             StyleClasses="ButtonBig" HorizontalExpand="True"
-                                            MinHeight="{x:Static cmu:CmuPanelMetrics.Row}"
+                                            MinHeight="{x:Static cmu:CmuPanelMetrics.RowTall}"
                                             Visible="False" />
                                     <!-- A rule, not just a gap. Ready/Join and Observe are ranked
                                          rather than equal, and off-theme two stacked buttons of the
@@ -250,7 +250,7 @@
                          which is the ring of ground that reads as a border round it. -->
                     <Control Name="ChatCrtScreen" HorizontalExpand="True" VerticalExpand="True">
                         <!-- CMU14: raster stays behind chat text. -->
-                        <cmu:CrtScanlineOverlay Name="ChatScanlines" HorizontalExpand="True"
+                        <cmu:CrtScanlineOverlay Name="ChatScanlines" ChatSurface="True" HorizontalExpand="True"
                                                 VerticalExpand="True" />
                         <widgets:ChatBox Name="Chat" Access="Public" VerticalExpand="True"
                                          Margin="0 0 0 0" MinHeight="50" />

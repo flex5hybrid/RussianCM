@@ -156,6 +156,15 @@ public sealed partial class CCVars
     /// <summary>
     /// Enable the CRT texture and optional display simulation over chat independently of menus.
     /// </summary>
+    public static readonly CVarDef<float> CMUChatCrtIntensity =
+        CVarDef.Create("cmu.chat_crt_intensity", 0.5f, CVar.CLIENTONLY | CVar.ARCHIVE);
+
+    public static readonly CVarDef<float> CMUExamineOpacity =
+        CVarDef.Create("cmu.examine_opacity", 0.9f, CVar.CLIENTONLY | CVar.ARCHIVE);
+
+    public static readonly CVarDef<string> CMUHudLayout =
+        CVarDef.Create("cmu.hud_layout", "", CVar.CLIENTONLY | CVar.ARCHIVE);
+
     public static readonly CVarDef<bool> CMUChatCrtHaze =
         CVarDef.Create("cmu.chat_crt_haze", true, CVar.CLIENTONLY | CVar.ARCHIVE);
 

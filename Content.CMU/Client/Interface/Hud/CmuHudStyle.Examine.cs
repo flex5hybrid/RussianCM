@@ -32,7 +32,11 @@ public static partial class CmuHudStyle
             yield break;
 
         yield return Element<PanelContainer>().Class(ExamineSystem.StyleClassEntityTooltip)
-            .Prop(PanelContainer.StylePropertyPanel, Box(padding: 10));
+            .Prop(PanelContainer.StylePropertyPanel, new CmuHudStyleBox
+            {
+                ExamineSurface = true, ContentMarginLeftOverride = 10, ContentMarginRightOverride = 10,
+                ContentMarginTopOverride = 10, ContentMarginBottomOverride = 10,
+            });
         yield return Element<RichTextLabel>().Class(ExamineHeading)
             .Prop(Label.StylePropertyFontColor, TextColor);
         yield return Element<RichTextLabel>().Class(ExamineBody)

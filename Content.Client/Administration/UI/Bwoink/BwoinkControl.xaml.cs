@@ -34,6 +34,8 @@ namespace Content.Client.Administration.UI.Bwoink
         {
             RobustXamlLoader.Load(this);
             IoCManager.InjectDependencies(this);
+            // CMU14: an OS popout has its own root and must retain the live UI setup stylesheet.
+            Stylesheet = IoCManager.Resolve<Content.Client.Stylesheets.IStylesheetManager>().SheetNano;
 
             var newPlayerThreshold = 0;
             _cfg.OnValueChanged(CCVars.NewPlayerThreshold, (val) => { newPlayerThreshold = val; }, true);

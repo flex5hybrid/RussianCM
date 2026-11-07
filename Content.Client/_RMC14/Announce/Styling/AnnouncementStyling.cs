@@ -167,26 +167,24 @@ public static class AnnouncementStyling
         return maxLineWidth;
     }
 
-    public static string CreateFormattedTextWithSize(string text, float fontSize, Color color, string? font = null)
-    {
-        var colorHex = ColorToHex(color);
-        if (!string.IsNullOrEmpty(font))
-            return $"[font=\"{font}\" size={(int)fontSize}][color={colorHex}]{text}[/color][/font]";
-
-        return $"[font size={(int)fontSize}][color={colorHex}]{text}[/color][/font]";
-    }
-
-    private static string ColorToHex(Color color)
-    {
-        var r = (int)(color.R * 255);
-        var g = (int)(color.G * 255);
-        var b = (int)(color.B * 255);
-        return $"#{r:X2}{g:X2}{b:X2}";
-    }
+    // CMU14: compose nodes instead of interpolating untrusted/cross-line markup into a font tag.
+    public static string CreateFormattedTextWithSize(string text, float fontSize, Color color, string? font = null) =>
+        CreateFormattedMessage(text, fontSize, color, font).ToMarkup();
 
     public static FormattedMessage CreateFormattedMessage(string text, float fontSize, Color color, string? font = null)
     {
-        var formattedText = CreateFormattedTextWithSize(text, fontSize, color, font);
-        return FormattedMessage.FromMarkupPermissive(formattedText);
+        var content = Content.Client.CMU14.Interface.CmuAnnouncementMarkup.Balance(
+            FormattedMessage.FromMarkupPermissive(text));
+        var message = new FormattedMessage();
+        message.PushTag(new MarkupNode("font", new MarkupParameter(font ?? "Default"),
+            new Dictionary<string, MarkupParameter>
+            {
+                { "size", new MarkupParameter((long) Math.Clamp((int) fontSize, 1, 256)) },
+            }));
+        message.PushColor(color);
+        message.AddMessage(content);
+        message.Pop();
+        message.Pop();
+        return message;
     }
 }

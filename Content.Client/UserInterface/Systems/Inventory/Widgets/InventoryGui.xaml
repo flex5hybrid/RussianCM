@@ -11,7 +11,7 @@
     HorizontalAlignment="Center">
     <BoxContainer Orientation="Vertical" SeparationOverride="4" HorizontalAlignment="Left">
       <!-- CMU14: a compact translucent equipment grid above the fixed toggle. -->
-      <hud:CmuHudPanel Name="EquipmentPanel" Visible="False" RasterEnabled="True">
+      <hud:CmuHudPanel Name="EquipmentPanel" Visible="False" RasterEnabled="False">
         <hud:CmuHudPanel.PanelOverride>
           <hud:CmuHudStyleBox Opacity="0.35"/>
         </hud:CmuHudPanel.PanelOverride>

@@ -1,10 +1,12 @@
-﻿<Control
+<Control
     xmlns="https://spacestation14.io"
+    xmlns:cmu="clr-namespace:Content.Client.CMU14.Interface"
     xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
     HorizontalExpand="True"
     VerticalExpand="True">
-    <PanelContainer StyleClasses="BackgroundDark" HorizontalExpand="True" VerticalExpand="True">
+    <!-- CMU14: include the admin player list and footer, not only the conversation log. -->
+    <cmu:CmuCrtDisplayPanel MenuSurface="True" StyleClasses="BackgroundDark CmuHudSurface" HorizontalExpand="True" VerticalExpand="True">
         <SplitContainer Orientation="Vertical" ResizeMode="NotResizable" HorizontalExpand="True" VerticalExpand="True">
             <!-- The MinWidths matter as much as the window's MinSize. This divider is draggable, and
                  SplitContainer defaults to SplitResizeMode.RespectChildrenMinSize, which clamps it
@@ -45,5 +47,5 @@
             </BoxContainer>
             <!-- CMU14 End -->
         </SplitContainer>
-    </PanelContainer>
+    </cmu:CmuCrtDisplayPanel>
 </Control>

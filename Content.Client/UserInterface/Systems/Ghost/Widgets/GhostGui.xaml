@@ -1,10 +1,12 @@
-﻿<widgets:GhostGui xmlns="https://spacestation14.io"
+<widgets:GhostGui xmlns="https://spacestation14.io"
                   xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Ghost.Widgets"
-                  HorizontalExpand="False" HorizontalAlignment="Center">
-    <GridContainer Name="GhostButtonGrid" Columns="4" HSeparationOverride="3" VSeparationOverride="3">
+                  xmlns:hud="clr-namespace:Content.Client.CMU14.Interface.Hud"
+                  HorizontalExpand="False" HorizontalAlignment="Stretch">
+    <!-- CMU14: wrap complete buttons at the actual group width, preserving their readable labels. -->
+    <hud:CmuHudDock Name="GhostButtonGrid" MouseFilter="Ignore">
         <Button Name="ReturnToBodyButton" StyleClasses="CmuHudButton" Text="{Loc ghost-gui-return-to-body-button}" />
         <Button Name="GhostWarpButton" StyleClasses="CmuHudButton" Text="{Loc ghost-gui-ghost-warp-button}" />
         <Button Name="GhostRolesButton" StyleClasses="CmuHudButton" />
         <Button Name="LateJoinButton" StyleClasses="CmuHudButton" Text="{Loc 'cmu-hud-respawn'}" />
-    </GridContainer>
+    </hud:CmuHudDock>
 </widgets:GhostGui>

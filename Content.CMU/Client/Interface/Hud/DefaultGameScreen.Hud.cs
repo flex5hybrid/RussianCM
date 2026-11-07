@@ -1,4 +1,6 @@
 using System.Numerics;
+using Content.Shared.CMU14.CCVar;
+using Robust.Shared.Configuration;
 using Content.Client.CMU14.Interface.Hud;
 using Robust.Shared.Maths;
 
@@ -15,8 +17,13 @@ public sealed partial class DefaultGameScreen
     {
         _cmuHud = new CmuHudScreenCoordinator(this, Actions, Inventory, Hotbar, Alerts, Ghost, TopBar)
         {
-            StatusOnLeft = true,
+            StatusOnLeft = string.Equals(IoCManager.Resolve<IConfigurationManager>().GetCVar(AU14CCVars.SeparatedHudStatusSide), "left", StringComparison.OrdinalIgnoreCase),
         };
+        IoCManager.Resolve<IConfigurationManager>().OnValueChanged(AU14CCVars.SeparatedHudStatusSide, side =>
+        {
+            _cmuHud.StatusOnLeft = string.Equals(side, "left", StringComparison.OrdinalIgnoreCase);
+            _cmuHud.Apply();
+        });
         Chat.EnableHudWorkspace();
         SetGrowHorizontal(Chat, GrowDirection.Begin);
         SetGrowVertical(Chat, GrowDirection.End);
