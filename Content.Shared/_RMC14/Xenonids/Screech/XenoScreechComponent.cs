@@ -13,23 +13,41 @@ public sealed partial class XenoScreechComponent : Component
     public FixedPoint2 PlasmaCost = 250;
 
     [DataField, AutoNetworkedField]
-    public float Range = 7;
+    public TimeSpan StunTime = TimeSpan.FromSeconds(6);
 
     [DataField, AutoNetworkedField]
-    public TimeSpan SlowTime = TimeSpan.FromSeconds(8);
+    public TimeSpan ParalyzeTime = TimeSpan.FromSeconds(8);
 
     [DataField, AutoNetworkedField]
-    public TimeSpan BlindTime = TimeSpan.FromSeconds(8);
+    public TimeSpan CloseDeafTime = TimeSpan.FromSeconds(7);
 
     [DataField, AutoNetworkedField]
-    public TimeSpan DeafTime = TimeSpan.FromSeconds(8);
+    public TimeSpan FarDeafTime = TimeSpan.FromSeconds(4);
+
+    // TODO RMC14 stun less within 4 tiles
+    [DataField, AutoNetworkedField]
+    public float StunRange = 7;
 
     [DataField, AutoNetworkedField]
-    public int ScreenShakeShakes = 12;
+    public float ParalyzeRange = 4;
 
     [DataField, AutoNetworkedField]
-    public int ScreenShakeStrength = 6;
+    public float ParasiteStunRange = 11.2838f;
 
+    [DataField, AutoNetworkedField]
+    public TimeSpan ParasiteStunTime = TimeSpan.FromSeconds(8);
+
+    [DataField, AutoNetworkedField]
+    public int CloseScreenShakeShakes = 12;
+
+    [DataField, AutoNetworkedField]
+    public int CloseScreenShakeStrength = 6;
+
+    [DataField, AutoNetworkedField]
+    public int FarScreenShakeShakes = 8;
+
+    [DataField, AutoNetworkedField]
+    public int FarScreenShakeStrength = 4;
 
     [DataField, AutoNetworkedField]
     public EntProtoId Effect = "CMEffectScreech";

@@ -107,8 +107,8 @@
     plasmaRegenOnWeeds: 4
     plasmaTransferDelay: 0
   - type: CMArmor
-    xenoArmor: 35
-    explosionArmor: 100
+    xenoArmor: 30 # CMU14: RuCM queen survivability
+    explosionArmor: 80
   - type: XenoWordQueen
   - type: XenoPsychicCommunication
   - type: VehicleDamageMultiplier
@@ -117,6 +117,10 @@
   - type: RMCInnateRadioTextIncrease
     radioTextIncrease: 3
     instrinsic: true
+  # CMU14: original RMC single-shot neuro/acid ability, unlocked on maturation.
+  - type: XenoSpit
+    projectileId: XenoQueenNeuroSpitProjectile
+    plasmaCost: 50
   - type: XenoGut
   - type: XenoClaws
     clawType: VerySharp
@@ -244,17 +248,19 @@
     message: cm-xeno-death-queen
     color: "#921992"
   - type: XenoMaturing
-    critThreshold: 1200
-    deadThreshold: 1300
+    critThreshold: 1000 # CMU14: RuCM control queen, pre-rework health
+    deadThreshold: 1100
     addComponents:
+    # CMU14: original RMC screech and spit toggle.
     - type: XenoScreech
-    - type: XenoQueenSpit
+    - type: XenoToggleSpit
     # CMU14 - Overwrites the immature order, so matured queens order their extra abilities correctly
     - type: RMCActionOrder
       id: CMXenoQueen
     addActions:
     - ActionXenoScreech
-    - ActionXenoQueenSpit
+    - ActionXenoSpitQueen
+    - ActionXenoToggleSpitType
   - type: RMCSize
     size: Immobile
   - type: RMCXenoDamageVisuals
@@ -288,7 +294,7 @@
   - type: StunOnExplosionReceived
     weak: false
   - type: XenoMeleeSever
-    chance: 0.4
+    chance: 0.05 # CMU14: rare exceptional sever, previously 0.4 per hit
   - type: CommendationGiver
   - type: XenoInhands
     prefix: queen

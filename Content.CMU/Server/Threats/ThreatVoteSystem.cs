@@ -279,7 +279,7 @@ public sealed partial class ThreatVoteSystem : EntitySystem
 
             ThreatVoteBodyCount bodyCount = ThreatVoteSelection.CalculateBodyCount(spawn,
                 playerCount,
-                threatProto.ThreatRatio);
+                threatProto);
 
             if (bodyCount.Total <= 0)
                 continue;

@@ -50,9 +50,9 @@ public sealed partial class AuRoundSystem
             && map.MapsAbove.Concat(map.MapsBelow).All(path => resources.ContentFileExists(path));
         bool PlatoonReady(PlatoonPrototype platoon, bool ship) => (!ship || platoon.PossibleShips.Count > 0 && platoon.PossibleShips.All(id => MapExists(id, false)))
             && (platoon.TechTree == "" || _prototypeManager.HasIndex<EntityPrototype>(platoon.TechTree));
-        Dictionary<string, string> Platoons(IEnumerable<ProtoId<PlatoonPrototype>> ids, bool ship)
+        Dictionary<string, string> Platoons(IEnumerable<ProtoId<PlatoonPrototype>> ids, bool ship, GamePresetPrototype preset)
             => ids.Distinct().Where(id => _prototypeManager.TryIndex(id, out PlatoonPrototype? platoon)
-                && PlatoonReady(platoon, ship))
+                && !preset.ExcludedPlatoons.Contains(platoon.ID) && PlatoonReady(platoon, ship))
                 .Select(id => _prototypeManager.Index(id)).ToDictionary(p => p.ID, p => Loc.GetString(p.Name));
         var result = new List<KabanForceOption>();
         foreach (var preset in _prototypeManager.EnumeratePrototypes<GamePresetPrototype>().Where(p => p.ShowInVote))
@@ -69,8 +69,8 @@ public sealed partial class AuRoundSystem
                 if (preset.MapPool is { } poolId && (!_prototypeManager.TryIndex<GameMapPoolPrototype>(poolId, out var pool)
                     || !pool.Maps.Contains(planet.MapId)))
                     continue;
-                var govfor = Platoons(planet.PlatoonsGovfor, planet.GovforInShip);
-                var opfor = Platoons(planet.PlatoonsOpfor, planet.OpforInShip);
+                var govfor = Platoons(planet.PlatoonsGovfor, planet.GovforInShip, preset);
+                var opfor = Platoons(planet.PlatoonsOpfor, planet.OpforInShip, preset);
                 if (preset.RequiresGovforVote && govfor.Count == 0 || preset.RequiresOpforVote && opfor.Count == 0)
                     continue;
                 // Defaults are consumed by PlatoonSpawnRuleSystem even if the preset doesn't run that side's vote.

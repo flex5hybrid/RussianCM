@@ -197,7 +197,7 @@ public sealed partial class AuJobSelectionSystem : EntitySystem
         if (!_prototypeManager.TryIndex(threat.RoundStartSpawn, out PartySpawnPrototype? partySpawn))
             return false;
 
-        bodyCount = ThreatVoteSelection.CalculateBodyCount(partySpawn, playerCount, threat.ThreatRatio);
+        bodyCount = ThreatVoteSelection.CalculateBodyCount(partySpawn, playerCount, threat);
         return true;
     }
 
