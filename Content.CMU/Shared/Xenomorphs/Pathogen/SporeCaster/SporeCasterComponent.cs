@@ -35,7 +35,7 @@ public sealed partial class CMUPathogenSporecasterComponent : Component
 
     [DataField, AutoNetworkedField]
     public TimeSpan NextAutoReleaseAt;
-    
-    [DataField, AutoNetworkedField]  
+
+    [DataField, AutoNetworkedField]
     public List<EntityUid> LivePoppers = new();
 }
