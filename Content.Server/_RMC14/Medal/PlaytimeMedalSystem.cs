@@ -28,10 +28,10 @@ public sealed partial class PlaytimeMedalSystem : EntitySystem
     private TimeSpan _goldTime;
     private TimeSpan _platinumTime;
     // cmu edit start: platinum is the highest medal
-    // private TimeSpan _rubyTime;
-    // private TimeSpan _amethystTime;
-    // private TimeSpan _emeraldTime;
-    // private TimeSpan _prismaticTime;
+    private TimeSpan _rubyTime; // RuMC edit
+    private TimeSpan _amethystTime; // RuMC edit
+    private TimeSpan _emeraldTime; // RuMC edit
+    private TimeSpan _prismaticTime; // RuMC edit
     // cmu edit end
 
     public override void Initialize()
@@ -55,6 +55,12 @@ public sealed partial class PlaytimeMedalSystem : EntitySystem
         // Subs.CVar(_config, RMCCVars.RMCPlaytimeEmeraldMedalTimeHours, v => _emeraldTime = TimeSpan.FromHours(v), true);
         // Subs.CVar(_config, RMCCVars.RMCPlaytimePrismaticMedalTimeHours, v => _prismaticTime = TimeSpan.FromHours(v), true);
         // cmu edit end
+        // RuMC Medal Tweaks Start
+        Subs.CVar(_config, AU14CCVars.PlaytimeMedalRubyHours, v => _rubyTime = TimeSpan.FromHours(v), true);
+        Subs.CVar(_config, AU14CCVars.PlaytimeMedalAmethystHours, v => _amethystTime = TimeSpan.FromHours(v), true);
+        Subs.CVar(_config, AU14CCVars.PlaytimeMedalEmeraldHours, v => _emeraldTime = TimeSpan.FromHours(v), true);
+        Subs.CVar(_config, AU14CCVars.PlaytimeMedalPrismaticHours, v => _prismaticTime = TimeSpan.FromHours(v), true);
+        // RuMC Medal Tweaks End
     }
 
     private void OnPlayerSpawnComplete(PlayerSpawnCompleteEvent ev)
@@ -84,8 +90,19 @@ public sealed partial class PlaytimeMedalSystem : EntitySystem
         // else if (time >= _rubyTime)
         //     medalType = RMCPlaytimeMedalType.Ruby;
         // else if (time >= _platinumTime)
-        if (time >= _platinumTime)
+        // if (time >= _platinumTime) // RuMC edit
         // cmu edit end
+        // RuMC edit Start
+        if (time >= _prismaticTime)
+            medalType = RMCPlaytimeMedalType.Prismatic;
+        else if (time >= _emeraldTime)
+            medalType = RMCPlaytimeMedalType.Emerald;
+        else if (time >= _amethystTime)
+            medalType = RMCPlaytimeMedalType.Amethyst;
+        else if (time >= _rubyTime)
+            medalType = RMCPlaytimeMedalType.Ruby;
+        // RuMC edit End
+        else if (time >= _platinumTime)
             medalType = RMCPlaytimeMedalType.Platinum;
         else if (time >= _goldTime)
             medalType = RMCPlaytimeMedalType.Gold;
