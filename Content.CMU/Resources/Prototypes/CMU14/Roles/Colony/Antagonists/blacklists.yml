@@ -229,3 +229,51 @@
     - AU14JobCivilianAmbassadorUA
     - AU14JobCivilianAmbassadorUPP
 # RuMC edit end
+
+# RuMC edit start
+- type: antagJobBlacklist
+  id: RuMCNoColonialAntagsJobs
+  jobs:
+    - AU14JobGOVFORPlatCo
+    - AU14JobGOVFORAdjutant
+    - AU14JobGOVFORPlatOp
+    - AU14JobGOVFORadvisor
+    - AU14JobGOVFOROfficerIntel
+    - AU14JobGOVFOROfficerLogistics
+    - AU14JobGOVFOROfficerEngi
+    - AU14JobGOVFOROfficerMedical
+    - AU14JobGOVFOROfficerMP
+    - AU14JobGOVFORVehicleCommander
+    - AU14JobGOVFORPlatCoCMBCIU
+    - AU14JobGOVFORPlatCoRMC
+    - AU14JobGOVFORPlatCoUPP
+    - AU14JobGOVFORPlatCoWYPMC
+    - AU14JobGOVFORAdjutantCMBCIU
+    - AU14JobGOVFORAdjutantRMC
+    - AU14JobGOVFORAdjutantUPP
+    - AU14JobGOVFORAdjutantWYPMC
+    - AU14JobGOVFORPlatOpRMC
+    - AU14JobGOVFORPlatOpUPP
+    - AU14JobGOVFORPlatOpWYPMC
+    - AU14JobGOVFORadvisorRMC
+    - AU14JobGOVFORadvisorUPP
+    - AU14JobGOVFOROfficerIntelCMBCIU
+    - AU14JobGOVFOROfficerIntelRMC
+    - AU14JobGOVFOROfficerIntelUPP
+    - AU14JobGOVFOROfficerIntelWYPMC
+    - AU14JobGOVFOROfficerLogisticsCMBCIU
+    - AU14JobGOVFOROfficerLogisticsRMC
+    - AU14JobGOVFOROfficerLogisticsUPP
+    - AU14JobGOVFOROfficerLogisticsWYPMC
+    - AU14JobGOVFOROfficerEngiUPP
+    - AU14JobGOVFOROfficerEngiWYPMC
+    - AU14JobGOVFOROfficerMedicalCMBCIU
+    - AU14JobGOVFOROfficerMedicalRMC
+    - AU14JobGOVFOROfficerMedicalUPP
+    - AU14JobGOVFOROfficerMedicalWYPMC
+    - AU14JobGOVFOROfficerMPCMBCIU
+    - AU14JobGOVFOROfficerMPRMC
+    - AU14JobGOVFOROfficerMPUPP
+    - AU14JobGOVFOROfficerMPWYPMC
+    - AU14JobCivilianCorporateLiaison
+# RuMC edit end
