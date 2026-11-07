@@ -12,6 +12,13 @@ public sealed partial class XenoScreechComponent : Component
     [DataField, AutoNetworkedField]
     public FixedPoint2 PlasmaCost = 250;
 
+    // CMU14: optional pre-rework close-range control, configured on the RuCM queen.
+    [DataField, AutoNetworkedField]
+    public float StunRange;
+
+    [DataField, AutoNetworkedField]
+    public TimeSpan StunTime;
+
     [DataField, AutoNetworkedField]
     public float Range = 7;
 

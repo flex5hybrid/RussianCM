@@ -1,0 +1,51 @@
+# Existing queen neurotoxin, acid, and spit action implementations with RuCM tuning.
+- type: entity
+  parent: XenoQueenNeuroSpitProjectile
+  id: CMURuQueenNeuroSpit
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: XenoSlowingSpitProjectile
+    paralyze: 2
+    instaNeuro: false
+  - type: ProjectileMaxRange
+    max: 4
+
+- type: entity
+  parent: XenoChargedSpitProjectile
+  id: CMURuQueenAcidSpit
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Heat: 20
+  - type: ModifyTargetOnHit
+    add:
+    - type: UserAcided
+      armorPiercing: 20
+      damage:
+        types:
+          Heat: 1
+      duration: 10
+    whitelist:
+      components:
+      - Marine
+  - type: ProjectileMaxRange
+    max: 5
+
+- type: entity
+  parent: ActionXenoSpitQueen
+  id: CMURuActionQueenSpit
+  components:
+  - type: Action
+    useDelay: 8
+  - type: TargetAction
+    range: 5
+
+- type: entity
+  parent: ActionXenoScreech
+  id: CMURuActionQueenScreech
+
+- type: entity
+  parent: ActionXenoToggleSpitType
+  id: CMURuActionQueenToggleSpit

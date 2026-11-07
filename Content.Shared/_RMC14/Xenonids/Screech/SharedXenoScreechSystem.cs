@@ -3,6 +3,7 @@ using Content.Shared._RMC14.Marines;
 using Content.Shared._RMC14.CameraShake;
 using Content.Shared._RMC14.Slow;
 using Content.Shared._RMC14.Xenonids.Plasma;
+using Content.Shared.Stunnable; // CMU14: pre-rework queen control
 using Content.Shared.Containers;
 using Content.Shared.Coordinates;
 using Content.Shared.Jittering;
@@ -23,6 +24,7 @@ namespace Content.Shared._RMC14.Xenonids.Screech;
 
 public sealed partial class XenoScreechSystem : EntitySystem
 {
+    [Dependency] private SharedStunSystem _stun = default!; // CMU14
     [Dependency] private MobStateSystem _mobState = default!;
     [Dependency] private XenoPlasmaSystem _xenoPlasma = default!;
     [Dependency] private EntityLookupSystem _entityLookup = default!;
@@ -39,6 +41,7 @@ public sealed partial class XenoScreechSystem : EntitySystem
     [Dependency] private IGameTiming _timing = default!;
 
     private readonly HashSet<Entity<MobStateComponent>> _mobs = new();
+    private readonly HashSet<Entity<MobStateComponent>> _closeMobs = new(); // CMU14: physical close-control range
 
     public override void Initialize()
     {
@@ -78,6 +81,11 @@ public sealed partial class XenoScreechSystem : EntitySystem
         _mobs.Clear();
         _entityLookup.GetEntitiesInRange(xform.Coordinates, xeno.Comp.Range, _mobs);
 
+        // CMU14: use a physical range query, independent of queen-eye examine overrides.
+        _closeMobs.Clear();
+        if (xeno.Comp.StunTime > TimeSpan.Zero)
+            _entityLookup.GetEntitiesInRange(xform.Coordinates, xeno.Comp.StunRange, _closeMobs);
+
         foreach (var receiver in _mobs)
         {
             if (!_xeno.CanAbilityAttackTarget(xeno, receiver))
@@ -85,6 +93,10 @@ public sealed partial class XenoScreechSystem : EntitySystem
 
             if (!ApplyScreechEffects(xeno, receiver, xeno.Comp.SlowTime, xeno.Comp.BlindTime))
                 continue;
+
+            // CMU14: short, non-stacking close-range control behind the existing wall check.
+            if (_closeMobs.Contains(receiver))
+                _stun.TryParalyze(receiver, xeno.Comp.StunTime, true);
 
             _cameraShake.ShakeCamera(receiver, xeno.Comp.ScreenShakeShakes, xeno.Comp.ScreenShakeStrength);
             Deafen(xeno, receiver, xeno.Comp.DeafTime);
@@ -105,9 +117,13 @@ public sealed partial class XenoScreechSystem : EntitySystem
 
         _slow.TrySuperSlowdown(receiver, slowTime, ignoreDurationModifier: true);
         _jitter.DoJitter(receiver, slowTime, true, 3f, 8f);
-        var blind = EnsureComp<ScreechBlindComponent>(receiver);
-        blind.EndsAt = _timing.CurTime + blindTime;
-        Dirty(receiver, blind);
+        // CMU14: zero disables blindness/scatter, including the first simulation tick.
+        if (blindTime > TimeSpan.Zero)
+        {
+            var blind = EnsureComp<ScreechBlindComponent>(receiver);
+            blind.EndsAt = _timing.CurTime + blindTime;
+            Dirty(receiver, blind);
+        }
         return true;
     }
 
