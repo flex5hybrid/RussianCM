@@ -17,7 +17,7 @@
     edges:
     - to: target
       steps:
-      - material: RMCCable
+      - material: CMUCableThinMVStack1
         amount: 30
         doAfter: 5
       - tool: Screwing
