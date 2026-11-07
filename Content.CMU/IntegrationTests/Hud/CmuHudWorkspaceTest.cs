@@ -26,6 +26,7 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared;
 using Robust.Shared.Configuration;
+using Robust.Shared.Input;
 using Robust.Shared.Localization;
 using Robust.Shared.Map;
 using Robust.Shared.Maths;
@@ -388,6 +389,78 @@ public sealed class CmuHudWorkspaceTest : GameTest
             }
             finally
             {
+                cfg.SetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout, previous);
+                ui.UnloadScreen();
+            }
+        });
+    }
+
+    [TestCase(false, false)]
+    [TestCase(false, true)]
+    [TestCase(true, false)]
+    [TestCase(true, true)]
+    public async Task EditorDragsThroughMouseRoutingRegardlessOfUseBindingOrder(bool separated, bool useFirst)
+    {
+        await Client.WaitAssertion(() =>
+        {
+            var ui = Client.ResolveDependency<IUserInterfaceManager>();
+            var cfg = Client.ResolveDependency<IConfigurationManager>();
+            var previous = cfg.GetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout);
+            var update = ui.GetType().GetMethod("FrameUpdate")!.CreateDelegate<Action<FrameEventArgs>>(ui);
+            var down = ui.GetType().GetMethod("KeyBindDown")!.CreateDelegate<Action<BoundKeyEventArgs>>(ui);
+            var up = ui.GetType().GetMethod("KeyBindUp")!.CreateDelegate<Action<BoundKeyEventArgs>>(ui);
+            var move = ui.GetType().GetMethod("MouseMove")!.CreateDelegate<Action<MouseMoveEventArgs>>(ui);
+            cfg.SetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout, "");
+            if (separated) ui.LoadScreen<SeparatedChatGameScreen>();
+            else ui.LoadScreen<DefaultGameScreen>();
+            CmuHudLayoutEditor? editor = null;
+            void Settle()
+            {
+                for (var frame = 0; frame < 8; frame++)
+                    update(new FrameEventArgs(1f / 60));
+            }
+            try
+            {
+                Settle();
+                var controller = ui.GetUIController<CmuHudLayoutController>();
+                var entry = controller.GetEntries().Single(e => e.Id == "menu");
+                var natural = entry.Control.GlobalPosition;
+                controller.OpenEditor();
+                Settle();
+                editor = ui.WindowRoot.Children.OfType<CmuHudLayoutEditor>().Single();
+                var overlay = ui.WindowRoot.Children.Single(c => c.Name == "CmuHudEditOverlay");
+                var start = new ScreenCoordinates((Vector2) entry.Control.GlobalPixelPosition
+                    + new Vector2(4) * entry.Control.UIScale, entry.Control.Root!.Window!.Id);
+                Assert.That(ui.MouseGetControl(start), Is.SameAs(overlay), "The visible edit layer must own the hit region.");
+                ui.ControlFocused = overlay;
+                var use = new BoundKeyEventArgs(EngineKeyFunctions.Use, BoundKeyState.Down, start, true);
+                var click = new BoundKeyEventArgs(EngineKeyFunctions.UIClick, BoundKeyState.Down, start, true);
+                if (useFirst)
+                {
+                    down(use);
+                    Assert.That(use.Handled, Is.False, "Use must not suppress the following UIClick binding.");
+                }
+                down(click);
+                Assert.That(click.Handled, Is.True);
+                var delta = new Vector2(176, 160) * entry.Control.UIScale;
+                var end = new ScreenCoordinates(start.Position + delta, start.Window);
+                move(new MouseMoveEventArgs(delta, end));
+                Settle(); // Do not force screen layout: the editor must invalidate it itself.
+                Assert.That(entry.Control.GlobalPosition.X, Is.GreaterThan(natural.X + 100));
+                Assert.That(entry.Control.GlobalPosition.Y, Is.GreaterThan(natural.Y + 100));
+                Assert.That(ui.ControlFocused, Is.SameAs(overlay), "Dragging must continue over other windows.");
+                up(new BoundKeyEventArgs(EngineKeyFunctions.UIClick, BoundKeyState.Up, end, true));
+                Assert.That(ui.ControlFocused, Is.Null);
+                editor.Close();
+                Settle();
+                Assert.That(entry.Control.GlobalPosition.X, Is.EqualTo(natural.X).Within(2));
+                Assert.That(entry.Control.GlobalPosition.Y, Is.EqualTo(natural.Y).Within(2));
+                Assert.That(overlay.Parent, Is.Null);
+            }
+            finally
+            {
+                editor?.Close();
+                ui.ControlFocused = null;
                 cfg.SetCVar(Content.Shared.CCVar.CCVars.CMUHudLayout, previous);
                 ui.UnloadScreen();
             }

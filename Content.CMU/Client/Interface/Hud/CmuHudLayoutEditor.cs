@@ -108,6 +108,7 @@ public sealed class CmuHudLayoutEditor : DefaultWindow
         public EditOverlay(CmuHudLayoutEditor editor)
         {
             _editor = editor;
+            Name = "CmuHudEditOverlay";
             MouseFilter = MouseFilterMode.Stop;
             var cache = IoCManager.Resolve<IResourceCache>();
             _font = StyleNano.CrtUiEnabled ? StyleNano.GetCrtFont(cache, 8) : cache.NotoStack(size: 10);
@@ -160,14 +161,17 @@ public sealed class CmuHudLayoutEditor : DefaultWindow
         protected override void KeyBindDown(GUIBoundKeyEventArgs args)
         {
             base.KeyBindDown(args);
-            args.Handle();
             if (args.Function == EngineKeyFunctions.CloseModals)
             {
+                args.Handle();
                 _editor.Close();
                 return;
             }
+            // LMB also binds Use. Handling that bind aborts the input manager's loop
+            // before UIClick can start the drag. MouseFilter.Stop still blocks the HUD below.
             if (args.Function != EngineKeyFunctions.UIClick)
                 return;
+            args.Handle();
             var point = args.PointerLocation.Position / UIScale;
             var index = _editor._selected;
             _resizing = index < _editor._entries.Count && _editor._entries[index].Control.VisibleInTree
@@ -183,14 +187,18 @@ public sealed class CmuHudLayoutEditor : DefaultWindow
             _startPointer = point;
             _startPosition = target.Control.GlobalPosition - screen.GlobalPosition;
             _startSize = target.Control.Size;
+            UserInterfaceManager.ControlFocused = this;
         }
 
         protected override void KeyBindUp(GUIBoundKeyEventArgs args)
         {
             base.KeyBindUp(args);
+            if (args.Function != EngineKeyFunctions.UIClick)
+                return;
             args.Handle();
-            if (args.Function == EngineKeyFunctions.UIClick)
-                EndDrag();
+            EndDrag();
+            if (UserInterfaceManager.ControlFocused == this)
+                UserInterfaceManager.ControlFocused = null;
         }
 
         protected override void ControlFocusExited()
