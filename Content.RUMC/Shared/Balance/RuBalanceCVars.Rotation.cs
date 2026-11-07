@@ -2,7 +2,8 @@ using Robust.Shared.Configuration;
 
 namespace Content.Shared._RuCM.Balance;
 
-public sealed partial class RuBalanceCVars
+[CVarDefs]
+public sealed class RuBalanceCVars
 {
     public static readonly CVarDef<float> DistressBaseWeight =
         CVarDef.Create("rucm.rotation.distress_base_weight", 1.5f, CVar.SERVER);

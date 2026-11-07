@@ -45,7 +45,6 @@ public abstract partial class SharedBodyPartHealthSystem : EntitySystem
     private bool _bodyPartEnabled;
     private float _bodyPartDamagePropagation;
     private float _explosionLimbSeveranceMultiplier;
-    private float _limbSeveranceThresholdMultiplier;
     private bool _severanceHeadDisabled;
     private bool _severanceTorsoDisabled;
 
@@ -63,8 +62,6 @@ public abstract partial class SharedBodyPartHealthSystem : EntitySystem
         Cfg.OnValueChanged(CMUMedicalCCVars.BodyPartDamagePropagation, v => _bodyPartDamagePropagation = v, true);
         Cfg.OnValueChanged(CMUMedicalCCVars.ExplosionLimbSeveranceMultiplier,
             v => _explosionLimbSeveranceMultiplier = MathF.Max(0f, v), true);
-        Cfg.OnValueChanged(Content.Shared._RuCM.Balance.RuBalanceCVars.LimbSeveranceThresholdMultiplier,
-            v => _limbSeveranceThresholdMultiplier = MathF.Max(1f, v), true);
         Cfg.OnValueChanged(CMUMedicalCCVars.SeveranceHeadDisabled, v => _severanceHeadDisabled = v, true);
         Cfg.OnValueChanged(CMUMedicalCCVars.SeveranceTorsoDisabled, v => _severanceTorsoDisabled = v, true);
     }
@@ -354,11 +351,7 @@ public abstract partial class SharedBodyPartHealthSystem : EntitySystem
         var damaged = new BodyPartDamagedEvent(body, partUid, partType, modified, health.Current, organs, tool, impact, trauma, targetZone);
         RaiseLocalEvent(partUid, ref damaged, broadcast: true);
 
-        var severanceThreshold = health.Max + health.SeveranceThreshold;
-        if (partType is BodyPartType.Arm or BodyPartType.Hand or BodyPartType.Leg or BodyPartType.Foot)
-            severanceThreshold *= (FixedPoint2) _limbSeveranceThresholdMultiplier;
-
-        if (health.SeveranceDamage >= severanceThreshold &&
+        if (health.SeveranceDamage >= health.Max + health.SeveranceThreshold &&
             !IsSeveranceLocked(partType) &&
             CanAutomaticallySever(body, partType, impact, stateAtImpact))
         {

@@ -5,14 +5,12 @@ using Content.Server.CMU14.Threats;
 using Content.Shared.CMU14.Threats;
 using Content.Shared.CMU14.util;
 using Content.Shared.CMU14.Medical.Anatomy.BodyParts;
-using Content.Shared.CMU14.Medical.Anatomy.BodyParts.Events;
 using Content.Shared.CMU14.Medical.Core;
 using Content.Shared._RMC14.Rules;
 using Content.Shared._RMC14.Xenonids.Maturing;
 using Content.Shared._RMC14.Xenonids.Projectile.Spit.Standard;
 using Content.Shared._RMC14.Xenonids.Projectile.Spit.Queen;
 using Content.Shared._RMC14.Xenonids.SpitToggle;
-using Content.Shared._RuCM.Balance;
 using Content.Shared.Body.Part;
 using Content.Shared.FixedPoint;
 using Content.Shared._RMC14.Xenonids.Screech;
@@ -107,34 +105,34 @@ public sealed class RuGameplayBalanceTest : GameTest
     }
 
     [Test]
-    public async Task RaisedThresholdKeepsADamagedLimbAttachedUntilSevereTrauma()
+    public async Task OrdinaryTraumaRetainsBaselineThresholdAndAllowsConsecutiveLimbLoss()
     {
         var map = await Pair.CreateTestMap();
         await Server.WaitAssertion(() =>
         {
-            Server.CfgMan.SetCVar(RuBalanceCVars.LimbSeveranceThresholdMultiplier, 1.5f);
             var human = SSpawnAtPosition("CMMobHuman", map.GridCoords);
             var index = Server.System<CMUMedicalBodyIndexSystem>();
-            var key = new CMUMedicalBodyPartKey(BodyPartType.Arm, BodyPartSymmetry.Left);
-            Assert.That(index.TryGetBodyPart(human, key, out var arm), Is.True);
-            var health = SEntMan.GetComponent<BodyPartHealthComponent>(arm);
-            var legacyThreshold = health.Max + health.SeveranceThreshold;
+            var parts = Server.System<SharedBodyPartHealthSystem>();
             var impact = DamageImpact.MeleeSlash;
             var onePoint = new DamageSpecifier { DamageDict = { ["Slash"] = FixedPoint2.New(1) } };
             var perPoint = DamageImpactSeverance.Calculate(onePoint, impact).Float()
                 * Server.CfgMan.GetCVar(CMUMedicalCCVars.BodyPartDamagePropagation);
-            var damage = new DamageSpecifier
+
+            foreach (var symmetry in new[] { BodyPartSymmetry.Left, BodyPartSymmetry.Right })
             {
-                DamageDict = { ["Slash"] = FixedPoint2.New(legacyThreshold.Float() * 1.2f / perPoint) },
-            };
-            var parts = Server.System<SharedBodyPartHealthSystem>();
-            Assert.That(parts.TryApplyPartDamage(human, arm, damage, impact: impact, ignoreResistance: true), Is.True);
-            Assert.That(health.SeveranceDamage, Is.GreaterThan(legacyThreshold));
-            Assert.That(index.TryGetBodyPart(human, key, out _), Is.True,
-                "crossing the legacy threshold alone must no longer detach the limb");
-            Assert.That(parts.TryApplyPartDamage(human, arm, damage, impact: impact, ignoreResistance: true), Is.True);
-            Assert.That(index.TryGetBodyPart(human, key, out _), Is.False,
-                "the higher threshold must remain finite");
+                var key = new CMUMedicalBodyPartKey(BodyPartType.Arm, symmetry);
+                Assert.That(index.TryGetBodyPart(human, key, out var arm), Is.True);
+                var health = SEntMan.GetComponent<BodyPartHealthComponent>(arm);
+                var threshold = health.Max + health.SeveranceThreshold;
+                var damage = new DamageSpecifier
+                {
+                    DamageDict = { ["Slash"] = FixedPoint2.New(threshold.Float() * 1.1f / perPoint) },
+                };
+                Assert.That(parts.TryApplyPartDamage(human, arm, damage,
+                    impact: impact, ignoreResistance: true), Is.True);
+                Assert.That(index.TryGetBodyPart(human, key, out _), Is.False,
+                    "ordinary trauma must retain its original threshold without repeat-loss protection");
+            }
         });
     }
 
@@ -183,39 +181,4 @@ public sealed class RuGameplayBalanceTest : GameTest
         });
     }
 
-    [TestCase(false, false, false)]
-    [TestCase(true, false, false)]
-    [TestCase(false, true, false)]
-    [TestCase(false, false, true)]
-    public async Task RepeatTraumaticSeveranceRequiresCatastrophicDamageButSurgeryStillWorks(bool catastrophic, bool surgical, bool expired)
-    {
-        var map = await Pair.CreateTestMap();
-        await Server.WaitAssertion(() =>
-        {
-            var human = SSpawnAtPosition("CMMobHuman", map.GridCoords);
-            var index = Server.System<CMUMedicalBodyIndexSystem>();
-            Assert.That(index.TryGetBodyPart(human, new(BodyPartType.Arm, BodyPartSymmetry.Left), out var first), Is.True);
-            Assert.That(index.TryGetBodyPart(human, new(BodyPartType.Arm, BodyPartSymmetry.Right), out var second), Is.True);
-            var sever = new BodyPartSeverAttemptEvent(human, first, BodyPartType.Arm);
-            SEntMan.EventBus.RaiseLocalEvent(first, ref sever);
-            Assert.That(sever.Succeeded, Is.True);
-
-            if (expired)
-                SEntMan.GetComponent<Content.Server._RuCM.Balance.RepeatSeveranceComponent>(human).LastSeverance
-                    -= TimeSpan.FromSeconds(Server.CfgMan.GetCVar(RuBalanceCVars.RepeatSeveranceSeconds) + 1);
-
-            if (catastrophic)
-            {
-                var damage = new DamageSpecifier { DamageDict = { ["Slash"] = FixedPoint2.New(2000) } };
-                Assert.That(Server.System<SharedBodyPartHealthSystem>().TryApplyPartDamage(
-                    human, second, damage, impact: DamageImpact.MeleeSlash, ignoreResistance: true), Is.True);
-                Assert.That(index.TryGetBodyPart(human, new(BodyPartType.Arm, BodyPartSymmetry.Right), out _), Is.False);
-                return;
-            }
-            sever = new(human, second, BodyPartType.Arm, Surgical: surgical);
-            SEntMan.EventBus.RaiseLocalEvent(second, ref sever);
-            Assert.That(sever.Succeeded, Is.EqualTo(surgical || expired));
-            Assert.That(sever.Cancelled, Is.EqualTo(!surgical && !expired));
-        });
-    }
 }
