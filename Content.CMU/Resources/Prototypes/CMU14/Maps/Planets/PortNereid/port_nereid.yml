@@ -5,7 +5,6 @@
   - type: RMCPlanetMapPrototype
     votename: "Port Nereid"
     mapId: portneroid
-    inRotation: true # RuMC: preserve the server's map rotation.
     lorePrimer: AU14PrimerPlanetLV327
     allegiance: UA
     camouflage: Jungle

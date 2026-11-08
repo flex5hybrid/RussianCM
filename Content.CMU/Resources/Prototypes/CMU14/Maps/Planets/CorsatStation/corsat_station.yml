@@ -5,7 +5,6 @@
   - type: RMCPlanetMapPrototype
     votename: "Corsat Station"
     mapId: aucorsat
-    inRotation: true # RuMC: preserve the server's map rotation.
     lorePrimer: AU14PrimerPlanetCorsatStation
     allegiance: UA
     camouflage: Urban

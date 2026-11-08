@@ -5,7 +5,6 @@
   - type: RMCPlanetMapPrototype
     votename: "Flight"
     mapId: Flight
-    inRotation: true # RuMC: preserve the server's map rotation.
     lorePrimer: AU14PrimerPlanetFlight
     allegiance: UA
     camouflage: Urban

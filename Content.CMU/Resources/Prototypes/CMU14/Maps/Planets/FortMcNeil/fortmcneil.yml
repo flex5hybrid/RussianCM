@@ -5,7 +5,6 @@
   - type: RMCPlanetMapPrototype
     votename: "Fort McNeil"
     mapId: cmufortmcneil
-    inRotation: true # RuMC: preserve the server's map rotation.
     lorePrimer: CMUPrimerPlanetFortMcNeil
     allegiance: UA
     camouflage: Urban

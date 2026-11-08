@@ -6,7 +6,7 @@
 engine_version = "v290.0.0"
 
 [game]
-defaultpreset = "DistressSignal"
+defaultpreset = "Insurgency"
 # Straight in-game baby
 map = "USSBushRedux"
 
