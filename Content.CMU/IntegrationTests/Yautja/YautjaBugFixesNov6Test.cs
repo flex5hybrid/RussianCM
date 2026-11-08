@@ -29,6 +29,8 @@ using Content.Shared.Stunnable;
 using Content.Shared.Weapons.Melee.Events;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
+using Robust.Shared.Localization;
+using Robust.Shared.Utility;
 
 namespace Content.IntegrationTests.CMU14.Yautja;
 
@@ -138,11 +140,15 @@ public sealed class YautjaBugFixesNov6Test
 
             var seen = examine.GetExamineText(target, otherHunter).ToString();
             var human = examine.GetExamineText(target, marine).ToString();
+            var localization = server.ResolveDependency<ILocalizationManager>();
+            string MarkText(string key, string reason) => FormattedMessage.FromMarkup(localization.GetString(key,
+                ("target", target), ("hunter", "Kha'ta"), ("reason", reason),
+                ("hasReason", reason.Length == 0 ? "no" : "yes"))).ToString();
 
             Assert.Multiple(() =>
             {
-                Assert.That(seen, Does.Contain("is being hunted by Kha'ta"));
-                Assert.That(seen, Does.Contain("dishonorable by Kha'ta for 'shot me in the back'"));
+                Assert.That(seen, Does.Contain(MarkText("cmu-yautja-mark-examine-prey", "")));
+                Assert.That(seen, Does.Contain(MarkText("cmu-yautja-mark-examine-dishonored", "shot me in the back")));
                 Assert.That(human, Does.Not.Contain("Kha'ta"), "only hunters read the marks");
             });
         });
