@@ -13,8 +13,9 @@ public sealed class CMUXenoDestrainTest : GameTest
 {
     public override PoolSettings PoolSettings => new() { Connected = true, Dirty = true };
 
-    [Test]
-    public async Task DestrainMessageTransfersPlayerHiveAndEvolutionPoints()
+    [TestCase("CMXenoDroneGardener", "CMXenoDrone")]
+    [TestCase("RMCXenoCrusherCharger", "RMCXenoCrusher")]
+    public async Task DestrainMessageTransfersPlayerHiveAndEvolutionPoints(string strainPrototype, string baseCastePrototype)
     {
         var map = await Pair.CreateTestMap();
         EntityUid gardener = default, hive = default, mind = default;
@@ -22,7 +23,7 @@ public sealed class CMUXenoDestrainTest : GameTest
         await Server.WaitAssertion(() =>
         {
             hive = SSpawnAtPosition("CMXenoHive", map.GridCoords);
-            gardener = SSpawnAtPosition("CMXenoDroneGardener", map.GridCoords);
+            gardener = SSpawnAtPosition(strainPrototype, map.GridCoords);
             Server.System<SharedXenoHiveSystem>().SetHive(gardener, hive);
             var minds = Server.System<SharedMindSystem>();
             mind = minds.GetOrCreateMind(ServerSession!.UserId).Owner;
@@ -50,7 +51,7 @@ public sealed class CMUXenoDestrainTest : GameTest
         {
             var drone = SComp<MindComponent>(mind).OwnedEntity!.Value;
             Assert.That(SEntMan.Deleted(gardener), Is.True, "Destraining must replace the specialized body.");
-            Assert.That(SComp<MetaDataComponent>(drone).EntityPrototype!.ID, Is.EqualTo("CMXenoDrone"));
+            Assert.That(SComp<MetaDataComponent>(drone).EntityPrototype!.ID, Is.EqualTo(baseCastePrototype));
             Assert.That(ServerSession!.AttachedEntity, Is.EqualTo(drone), "The same player must control the new body.");
             Assert.That(SComp<HiveMemberComponent>(drone).Hive, Is.EqualTo(hive));
             var points = SComp<XenoEvolutionComponent>(drone).Points;
