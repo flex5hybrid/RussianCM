@@ -2223,6 +2223,20 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("synthetic");
 
+                    // CMU14 synthetic profile fields
+                    b.Property<int>("SyntheticGeneration")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasDefaultValue(1)
+                        .HasColumnName("synthetic_generation");
+
+                    b.Property<string>("SyntheticModelSuffix")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT")
+                        .HasDefaultValue("")
+                        .HasColumnName("synthetic_model_suffix");
+
                     b.Property<string>("TTSVoice")
                         .HasColumnType("TEXT")
                         .HasColumnName("tts_voice");

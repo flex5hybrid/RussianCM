@@ -547,19 +547,20 @@
   id: RMCLoadoutGroupPins
   name: rmc-loadout-group-pins
   minLimit: 0
-  maxLimit: 13
+  maxLimit: 2 # CMU14: only the remaining pins are selectable.
   loadouts:
-  - RMCPinLGBT
-  - RMCPinAromantic
-  - RMCPinAsexual
-  - RMCPinBisexual
-  - RMCPinGay
-  - RMCPinIntersex
-  - RMCPinLesbian
-  - RMCPinNonBinary
-  - RMCPinPansexual
-  - RMCPinOmnisexual
-  - RMCPinTransgender
+  # CMU14: pride pins are unavailable in character loadouts.
+  # - RMCPinLGBT
+  # - RMCPinAromantic
+  # - RMCPinAsexual
+  # - RMCPinBisexual
+  # - RMCPinGay
+  # - RMCPinIntersex
+  # - RMCPinLesbian
+  # - RMCPinNonBinary
+  # - RMCPinPansexual
+  # - RMCPinOmnisexual
+  # - RMCPinTransgender
   - RMCPinAutism
   - RMCPinAutismGold
 

@@ -74,7 +74,8 @@ public sealed class DocumentationPublisherTest
         var controls = new HashSet<string>
         {
             "GuideEntityEmbed", "GuideReagentEmbed", "GuideReagentGroupEmbed", "GuideMicrowaveEmbed",
-            "GuideMicrowaveGroupEmbed", "CMUGuideImage", "CMUGuideZoomImage", "CMUGuideOutfitEmbed",
+            "GuideMicrowaveGroupEmbed", "CMUGuideImage", "CMUGuideZoomImage", "CMUGuideOutfitEmbed", "CMUFobGuideText",
+            "CMUGuideCraftingRecipes",
         };
         var count = 0;
         foreach (var file in files)

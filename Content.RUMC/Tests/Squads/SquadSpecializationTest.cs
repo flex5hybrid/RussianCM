@@ -11,7 +11,7 @@ namespace Content.IntegrationTests.CMU14.Squads;
 public sealed class SquadSpecializationTest : GameTest
 {
     private static readonly ProtoId<SquadSpecializationPrototype> SpecVDV = "UPPSpecVDV";
-    private static readonly ProtoId<SquadSpecializationPrototype> SpecSOF = "UPPSpecSOF";
+    private static readonly ProtoId<SquadSpecializationPrototype> SpecRecon = "UPPSpecRecon";
 
     [Test]
     public async Task TestSquadSpecializationFlowAndVendorFiltering()
@@ -34,14 +34,14 @@ public sealed class SquadSpecializationTest : GameTest
             Assert.That(specSys.TryGetSquadSpecialization(marine, out _), Is.False);
 
             var vdvList = new List<ProtoId<SquadSpecializationPrototype>> { SpecVDV };
-            var sofList = new List<ProtoId<SquadSpecializationPrototype>> { SpecSOF };
+            var reconList = new List<ProtoId<SquadSpecializationPrototype>> { SpecRecon };
             var emptyList = new List<ProtoId<SquadSpecializationPrototype>>();
 
             // Standard item (empty requirement) is allowed
             Assert.That(vendorSys.IsSpecializationAllowed(marine, emptyList, emptyList), Is.True);
             // Specialized items are not allowed yet
             Assert.That(vendorSys.IsSpecializationAllowed(marine, vdvList, emptyList), Is.False);
-            Assert.That(vendorSys.IsSpecializationAllowed(marine, sofList, emptyList), Is.False);
+            Assert.That(vendorSys.IsSpecializationAllowed(marine, reconList, emptyList), Is.False);
 
             // 2. Choose VDV specialization
             var squadSpec = SEntMan.EnsureComponent<SquadSpecializationComponent>(squad);
@@ -54,9 +54,9 @@ public sealed class SquadSpecializationTest : GameTest
 
             // 4. Vendor filtering with VDV
             Assert.That(vendorSys.IsSpecializationAllowed(marine, vdvList, emptyList), Is.True, "VDV items should be allowed for VDV squad");
-            Assert.That(vendorSys.IsSpecializationAllowed(marine, sofList, emptyList), Is.False, "SOF items should not be allowed for VDV squad");
+            Assert.That(vendorSys.IsSpecializationAllowed(marine, reconList, emptyList), Is.False, "Recon items should not be allowed for VDV squad");
             Assert.That(vendorSys.IsSpecializationAllowed(marine, emptyList, vdvList), Is.False, "Items excluding VDV should be rejected");
-            Assert.That(vendorSys.IsSpecializationAllowed(marine, emptyList, sofList), Is.True, "Items excluding SOF should be allowed for VDV squad");
+            Assert.That(vendorSys.IsSpecializationAllowed(marine, emptyList, reconList), Is.True, "Items excluding Recon should be allowed for VDV squad");
         });
     }
 }

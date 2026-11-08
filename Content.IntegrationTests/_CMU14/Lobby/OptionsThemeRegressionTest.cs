@@ -255,19 +255,18 @@ public sealed class OptionsThemeRegressionTest : GameTest
     {
         await Client.WaitAssertion(() =>
         {
-            using var panel = new ChatLogPanel();
+            var ui = Client.ResolveDependency<IUserInterfaceManager>();
+            var update = ui.GetType().GetMethod("FrameUpdate")!.CreateDelegate<Action<FrameEventArgs>>(ui);
+            using var panel = new ChatLogPanel { SetSize = new Vector2(300, 160) };
+            ui.WindowRoot.AddChild(panel);
             var gutter = Descendants(panel).OfType<VScrollBar>().Single();
             var latest = Descendants(panel).OfType<Button>().Single();
-            var frameUpdate = typeof(ChatLogPanel).GetMethod("FrameUpdate", BindingFlags.Instance | BindingFlags.NonPublic)!;
-            var bounds = new UIBox2(Vector2.Zero, new Vector2(300, 160));
 
             void Settle()
             {
                 for (var frame = 0; frame < 16; frame++)
                 {
-                    panel.Measure(bounds.Size);
-                    panel.Arrange(bounds);
-                    frameUpdate.Invoke(panel, [new FrameEventArgs(1f / 60f)]);
+                    update(new FrameEventArgs(1f / 60f));
                 }
             }
 
@@ -368,8 +367,11 @@ public sealed class OptionsThemeRegressionTest : GameTest
                 ? Content.Client.CMU14.Interface.Hud.CmuHudStyle.InverseTextColor
                 : CrtTerminalPalette.Text));
             Assert.That(button.TryGetStyleProperty<StyleBox>(ContainerButton.StylePropertyStyleBox, out var box), Is.True);
-            Assert.That(box, Is.TypeOf<StyleBoxFlat>());
-            Assert.That(((StyleBoxFlat) box!).BackgroundColor.A, Is.EqualTo(1f));
+            Assert.That(box, Is.InstanceOf<StyleBoxFlat>().Or.InstanceOf<Content.Client.CMU14.Interface.Hud.CmuHudStyleBox>());
+            var opacity = box is StyleBoxFlat flat
+                ? flat.BackgroundColor.A
+                : ((Content.Client.CMU14.Interface.Hud.CmuHudStyleBox) box!).Opacity;
+            Assert.That(opacity, Is.EqualTo(1f));
         }
     }
 

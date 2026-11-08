@@ -287,7 +287,9 @@ namespace Content.Server.Preferences.Managers
                 ? Content.Shared.CMU14.Religion.CMUReligionPrototype.Atheist
                 : profile.Religion)
             .WithArmorFlavorText(profile.ArmorFlavorText)
-            .WithHelmetFlavorText(profile.HelmetFlavorText);
+            .WithHelmetFlavorText(profile.HelmetFlavorText)
+            .WithSyntheticGeneration(profile.SyntheticGeneration) // CMU14
+            .WithSyntheticModelSuffix(profile.SyntheticModelSuffix); // CMU14
         }
 
         private static HashSet<ProtoId<ThreatPrototype>> ConvertThreatPreferences(string? raw)

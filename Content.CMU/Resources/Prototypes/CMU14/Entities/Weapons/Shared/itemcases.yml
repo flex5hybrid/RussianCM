@@ -252,7 +252,7 @@
       amount: 7
     - id: RuMcMagazineSniperRifleSVAROGFlak
       amount: 4
-    - id: RuMcSniperRifleSVAROG
+    - id: RuMCSniperRifleSVAROG
   - type: CMChangeUserOnVend
     addComponents:
     - type: SniperWhitelist

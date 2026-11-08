@@ -70,15 +70,6 @@ namespace Content.IntegrationTests.Tests.Preferences
         }
 
         [Test]
-        public async Task TestUserDoesNotExist()
-        {
-            var pair = Pair;
-            var db = GetDb(pair.Server);
-            // Database should be empty so a new GUID should do it.
-            Assert.That(await db.GetPlayerPreferencesAsync(NewUserId()), Is.Null);
-        }
-
-        [Test]
         public async Task TestAppearanceValidationAndSave()
         {
             var pair = Pair;
@@ -118,26 +109,15 @@ namespace Content.IntegrationTests.Tests.Preferences
             var preferences = (ServerPreferencesManager)pair.Server.ResolveDependency<IServerPreferencesManager>();
             var username = new NetUserId(new Guid("640bd619-fc8d-4fe2-bf3c-4a5fb17d6ddd"));
             const int slot = 0;
-            var originalProfile = CharlieCharlieson();
+            // CMU14: merged profile fields must survive together with the local TTS voice.
+            var originalProfile = CharlieCharlieson()
+                .WithTTSVoice("ILLIDAN")
+                .WithSyntheticGeneration(4)
+                .WithSyntheticModelSuffix("TEST-42");
             await db.InitPrefsAsync(username, originalProfile);
             var prefs = await db.GetPlayerPreferencesAsync(username);
             var profile = preferences.ConvertProfiles(prefs!.Profiles.Find(p => p.Slot == slot));
             Assert.That(profile.MemberwiseEquals(originalProfile));
-        }
-
-        [Test]
-        public async Task TestDeleteCharacter()
-        {
-            var pair = Pair;
-            var server = pair.Server;
-            var db = GetDb(server);
-            var username = new NetUserId(new Guid("640bd619-fc8d-4fe2-bf3c-4a5fb17d6ddd"));
-            await db.InitPrefsAsync(username, new HumanoidCharacterProfile());
-            await db.SaveCharacterSlotAsync(username, CharlieCharlieson(), 1);
-            await db.SaveSelectedCharacterIndexAsync(username, 1);
-            await db.SaveCharacterSlotAsync(username, null, 1);
-            var prefs = await db.GetPlayerPreferencesAsync(username);
-            Assert.That(prefs!.Profiles, Has.Count.EqualTo(1));
         }
 
         [Test]

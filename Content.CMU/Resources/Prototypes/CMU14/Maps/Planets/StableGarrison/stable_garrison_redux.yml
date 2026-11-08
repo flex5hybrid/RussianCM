@@ -18,7 +18,7 @@
     - VAIPO
     platoonsOpfor:
     - UPP
-    - BEAR
+    - BEAR # RuMC: retain the local OPFOR platoon.
     - ProdigySF
     - HAZOPS
     defaultgovfor: USCM

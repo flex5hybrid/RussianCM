@@ -2,6 +2,7 @@
 using Content.Shared.CMU14.BalanceRating;
 using Content.Shared.CMU14.Yautja;
 using Content.Shared.CCVar;
+using Content.Shared.Corvax.CCCVars;
 using Robust.Shared;
 
 namespace Content.IntegrationTests;
@@ -46,6 +47,7 @@ public static partial class PoolManager
         (CMUBalanceRatingCVars.AutomaticEnabled.Name, "false"),
         // Tests that exercise automatic hunts opt in; pooled round restarts must not load extra maps.
         (YautjaPredatorRoundCVars.RandomEnabled.Name, "false"),
+        (CCCVars.TTSEnabled.Name, "false"), // CMU14: fixtures opt into the offline TTS provider explicitly.
         // CMU14: perf heartbeats flood pooled test logs (~1k lines a shard) and no test reads them
         (CCVars.CMUServerPerformanceHeartbeatInterval.Name, "0"),
     };
