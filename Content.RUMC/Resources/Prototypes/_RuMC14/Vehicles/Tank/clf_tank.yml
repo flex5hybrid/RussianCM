@@ -1,0 +1,199 @@
+- type: entity
+  parent: VehicleSPPTankTurret
+  id: RuMCVehicleCLFTankTurretBase
+  name: CLF tank turret
+  description: A tank turret configured for the CLF Behemoth.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Structures/Vehicles/clftank.rsi
+    state: tank_turret_0
+  - type: HardpointIntegrity
+    maxIntegrity: 1450
+    integrity: 1450
+  - type: ItemSlots
+    slots:
+      turret-cannon:
+        startingItem: VehicleSPPTankP17702
+        disableEject: true
+        whitelist:
+          components:
+          - HardpointItem
+      turret-launcher:
+        startingItem: RuMCVehicleCLFTankCupola
+        disableEject: true
+        whitelist:
+          components:
+          - HardpointItem
+  - type: VehicleTurret
+    overlayRsi: _RuMC14/Structures/Vehicles/clftank.rsi
+
+- type: entity
+  parent: RuMCVehicleCLFTankTurretBase
+  id: RuMCVehicleCLFTankTurret
+  components:
+  - type: ItemSlots
+    slots:
+      turret-cannon:
+        startingItem: VehicleSPPTankRailgun
+        disableEject: true
+        whitelist:
+          components:
+          - HardpointItem
+      turret-launcher:
+        startingItem: RuMCVehicleCLFTankCupola
+        disableEject: true
+        whitelist:
+          components:
+          - HardpointItem
+
+- type: entity
+  parent: VehicleSPPTankCupola
+  id: RuMCVehicleCLFTankCupola
+  name: T60P3M cupola
+  description: A cupola-mounted weapon fitted to the CLF Behemoth.
+  components:
+  - type: UserIFF
+    factions:
+    - FactionCLF
+  - type: VehicleTurret
+    overlayRsi: _RuMC14/Structures/Vehicles/clftank.rsi
+
+- type: entity
+  parent: VehicleSPPTank
+  id: RuMCVehicleCLFTankBase
+  suffix: Base
+  name: Behemoth Light Tank
+  description: A light tank cobbled together by the CLF out of salvaged parts.
+  components:
+  - type: HardpointIntegrity
+    maxIntegrity: 2000
+    integrity: 2000
+  - type: GridVehicleMover
+    maxSpeed: 2
+  - type: TankCookOff
+    turretSprite:
+      sprite: _RuMC14/Structures/Vehicles/clftank.rsi
+      state: tank_turret_0
+  - type: Sprite
+    sprite: _RuMC14/Structures/Vehicles/clftank.rsi
+    layers:
+    - map: [ base ]
+      state: tank_base
+    - map: [ primary ]
+      state: tank_turret_0
+    - map: [ secondary ]
+      state: SECONDARY
+      visible: false
+    - map: [ support ]
+      state: SUPPORT
+      visible: false
+    - map: [ rmc-wheels ]
+      state: wheels_1
+  - type: ContainerContainer
+    containers:
+      primary: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      secondary: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      support: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+      wheel-1: !type:ContainerSlot
+        ent: null
+        showEnts: False
+        occludes: True
+  - type: VehicleHardpointVisuals
+    layers:
+    - state: ""
+      layer: primary
+    - state: ""
+      layer: secondary
+    - state: ""
+      layer: support
+  - type: HardpointSlots
+    vehicleFamily: Tank
+    slots:
+    - id: primary
+      hardpointType: Turret
+      slotType: Turret
+      compatibilityId: SPPTank
+      visualLayer: primary
+      insertDelay: 3.0
+      required: false
+    - id: secondary
+      hardpointType: Secondary
+      compatibilityId: SPPTank
+      visualLayer: secondary
+      insertDelay: 2.5
+      required: false
+    - id: support
+      hardpointType: Support
+      slotType: SupportAttachment
+      compatibilityId: SPPTank
+      visualLayer: support
+      insertDelay: 2.0
+      required: false
+    - id: wheel-1
+      hardpointType: Wheel
+      slotType: Treads
+      insertDelay: 2.0
+  - type: ItemSlots
+    slots:
+      primary:
+        startingItem: RuMCVehicleCLFTankTurretBase
+        disableEject: true
+        whitelist:
+          components:
+          - HardpointItem
+      secondary:
+        disableEject: true
+        whitelist:
+          components:
+          - HardpointItem
+      support:
+        disableEject: true
+        whitelist:
+          components:
+          - HardpointItem
+      wheel-1:
+        startingItem: VehicleTankTreads
+        disableEject: true
+        whitelist:
+          components:
+          - VehicleWheelItem
+
+- type: entity
+  parent: RuMCVehicleCLFTankBase
+  id: RuMCVehicleCLFTank
+  suffix: ""
+  components:
+  - type: ItemSlots
+    slots:
+      primary:
+        startingItem: RuMCVehicleCLFTankTurret
+        disableEject: true
+        whitelist:
+          components:
+          - HardpointItem
+      secondary:
+        disableEject: true
+        whitelist:
+          components:
+          - HardpointItem
+      support:
+        startingItem: VehicleSPPTankArtilleryModule
+        disableEject: true
+        whitelist:
+          components:
+          - HardpointItem
+      wheel-1:
+        startingItem: VehicleTankReinforcedTreads
+        disableEject: true
+        whitelist:
+          components:
+          - VehicleWheelItem
