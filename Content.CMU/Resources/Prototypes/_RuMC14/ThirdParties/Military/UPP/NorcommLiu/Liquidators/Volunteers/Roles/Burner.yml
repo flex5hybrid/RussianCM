@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPLiquidatorBurner
   roundSide: ThirdParty
-  roundForce: Liquidators
+  roundForce: UPP_spetsnaz
   roundRole: RuMCUPPLiquidatorBurner
   roundComponents:
   - type: TacticalMapIcon

@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPNorcommParamedic
   roundSide: ThirdParty
-  roundForce: NorcommLiu
+  roundForce: UPP_spetsnaz
   roundRole: RuMCUPPNorcommParamedic
   roundComponents:
   - type: TacticalMapIcon
