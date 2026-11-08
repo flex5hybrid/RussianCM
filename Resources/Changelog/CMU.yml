@@ -17935,5 +17935,45 @@ Entries:
   labels:
   - 'Changes: No C#'
   - M
+- author: '- tweak: Королеве возвращены способности RMC: ближний паралич, дальнее
+    оглушение и переключаемый нейротоксичный/кислотный плевок; снижены здоровье, броня
+    и шанс отрыва конечностей.'
+  time: '2026-11-07T16:54:13Z'
+  changes:
+  - type: Tweak
+    message: Немного увеличен стартовый состав ксеноморфов.
+  - type: Tweak
+    message: ЛАКФ временно исключён из выбора фракций Distress.
+  - type: Tweak
+    message: Distress чаще выбирается автоматически, когда игроки не голосуют за режим.
+  id: 1050
+  url: https://github.com/flex5hybrid/RussianCM/pull/607
+  labels:
+  - 'Changes: Translations'
+  - M
+- author: '- add: Добавлен редактор расположения HUD с управлением мышью и профилями
+    Default и Separated.'
+  time: '2026-11-07T20:08:46Z'
+  changes:
+  - type: Add
+    message: Добавлены сила CRT чата и прозрачность фона осмотра.
+  - type: Fix
+    message: Исправлена обработка повреждённой разметки объявлений, вызывавшей Stack
+      empty.
+  - type: Fix
+    message: Исправлены белые подложки, участки прокрутки, размещения и отрисовки
+      HUD, инвентарей и круговых меню.
+  - type: Fix
+    message: Изменение ширины перестраивает все семейства HUD, включая панель действий,
+      меню, индикаторы и слоты.
+  - type: Tweak
+    message: Обновлены AHelp, строительство и отклик наведения; CRT отключён в инвентарях.
+  id: 1049
+  url: https://github.com/flex5hybrid/RussianCM/pull/606
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Translations'
+  - 'Changes: Shaders'
+  - L
 Name: CMU
 Order: -1
