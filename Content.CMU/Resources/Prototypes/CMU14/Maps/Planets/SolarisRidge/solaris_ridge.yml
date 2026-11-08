@@ -5,7 +5,7 @@
   - type: RMCPlanetMapPrototype
     votename: "Solaris Ridge"
     mapId: SolarisRidge
-    inRotation: false
+    inRotation: true # RuMC: preserve the server's map rotation.
     lorePrimer: AU14PrimerPlanetLV1413
     allegiance: UA
     camouflage: Desert

@@ -5,7 +5,7 @@
   - type: RMCPlanetMapPrototype
     votename: "Hope's Retreat"
     mapId: hopesretreat
-    inRotation: false
+    inRotation: true # RuMC: preserve the server's map rotation.
     lorePrimer: CMUPrimerHopesRetreat
     allegiance: IndependentSystems
     camouflage: Desert

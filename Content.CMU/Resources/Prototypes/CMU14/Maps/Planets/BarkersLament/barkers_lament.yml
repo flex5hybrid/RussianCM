@@ -5,7 +5,7 @@
   - type: RMCPlanetMapPrototype
     votename: "Barker's Lament"
     mapId: CMULV376BarkersLament
-    inRotation: false
+    inRotation: true # RuMC: preserve the server's map rotation.
     lorePrimer: AU14PrimerPlanetLament
     allegiance: UA
     camouflage: Urban

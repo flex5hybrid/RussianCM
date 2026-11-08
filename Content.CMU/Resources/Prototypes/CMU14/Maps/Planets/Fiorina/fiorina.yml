@@ -5,7 +5,7 @@
   - type: RMCPlanetMapPrototype
     votename: "Fiorina Prison"
     mapId: aufiorina
-    inRotation: false
+    inRotation: true # RuMC: preserve the server's map rotation.
     lorePrimer: AU14PrimerPlanetFiorina
     allegiance: UA
     camouflage: Urban

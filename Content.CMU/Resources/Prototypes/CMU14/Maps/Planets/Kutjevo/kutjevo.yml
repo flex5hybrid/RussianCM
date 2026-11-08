@@ -5,7 +5,7 @@
   - type: RMCPlanetMapPrototype
     votename: "Kutjevo Biolab"
     mapId: auKutjevo
-    inRotation: false
+    inRotation: true # RuMC: preserve the server's map rotation.
     lorePrimer: AU14PrimerPlanetKutjevo
     allegiance: UA
     camouflage: Desert

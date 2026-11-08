@@ -5,7 +5,7 @@
   - type: RMCPlanetMapPrototype
     votename: "New Varadero"
     mapId: CMUVaradero
-    inRotation: false
+    inRotation: true # RuMC: preserve the server's map rotation.
     lorePrimer: CMUPrimerPlanetVaradero
     allegiance: UA
     camouflage: Jungle

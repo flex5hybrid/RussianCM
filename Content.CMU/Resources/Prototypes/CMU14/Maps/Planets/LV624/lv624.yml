@@ -5,7 +5,7 @@
   - type: RMCPlanetMapPrototype
     votename: "LV624 Lazarus Landing"
     mapId: CMULV624
-    inRotation: false
+    inRotation: true # RuMC: preserve the server's map rotation.
     lorePrimer: AU14PrimerPlanetLV624
     allegiance: UA
     camouflage: Jungle

@@ -5,7 +5,7 @@
   - type: RMCPlanetMapPrototype
     votename: "Shivas' Snowball"
     mapId: auShivas
-    inRotation: false
+    inRotation: true # RuMC: preserve the server's map rotation.
     lorePrimer: AU14PrimerPlanetShivasSnowball
     allegiance: UA
     camouflage: Snow
