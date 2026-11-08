@@ -17924,18 +17924,8 @@ Entries:
   id: 1042
   time: '2026-11-06T15:46:02.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2408
-- author: '- tweak: Командный состав ГОВФОР и корпоративный связной больше не могут
-    стать колониальными антагонистами'
-  time: '2026-11-07T14:38:14Z'
-  changes:
-  - type: Tweak
-    message: Стрелки могут стать спящим агентом КОФ
-  id: 1048
-  url: https://github.com/flex5hybrid/RussianCM/pull/604
-  labels:
-  - 'Changes: No C#'
-  - M
 - author: TheHellFireo
+  time: '2026-11-06T18:00:30.0000000+00:00'
   changes:
   - message: USS Bush decks can no longer be mined downward, and departing evacuation
       boats no longer leave invisible lethal zones.
@@ -17962,10 +17952,10 @@ Entries:
     type: Add
   - message: Native fuel research reports show read-only combustion measurements.
     type: Add
-  id: 991
-  time: '2026-11-06T18:00:30.0000000+00:00'
+  id: 1051
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2485
 - author: Operator-Exi
+  time: '2026-11-06T18:04:48.0000000+00:00'
   changes:
   - message: Some reactions now need heat, cold, or mixing. Close a container's lid
       and use Mix from the right-click menu for foams, smoke, tear gas, napalm blends,
@@ -18032,8 +18022,8 @@ Entries:
   - message: Spray vapor no longer passes over barricades, and each puff affects a
       target only once.
     type: Fix
-  - message: "Research contracts no longer ask for unobtainable chemicals like caf\xE9\
-      \ de olla."
+  - message: Research contracts no longer ask for unobtainable chemicals like café
+      de olla.
     type: Fix
   - message: The simulator charges exactly the cost it shows.
     type: Fix
@@ -18042,10 +18032,10 @@ Entries:
   - message: Added a shared fire stat system for flamers, molotovs, grenades and chemical
       ignition.
     type: Code
-  id: 992
-  time: '2026-11-06T18:04:48.0000000+00:00'
+  id: 1052
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2365
 - author: KeiKiyomi
+  time: '2026-11-06T18:05:03.0000000+00:00'
   changes:
   - message: Added Green, Blue, White and Rapid Fire laser batteries, including selectable
       wide-ring and sweeping-line patterns.
@@ -18144,10 +18134,10 @@ Entries:
       systems or writing feedback/bug reports, I will genuinely laugh if someone pings
       me with a report saying "my guns wont shoot" well did you fix the hardpoint?'
     type: Admin
-  id: 993
-  time: '2026-11-06T18:05:03.0000000+00:00'
+  id: 1053
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2092
 - author: Operator-Exi
+  time: '2026-11-06T18:05:06.0000000+00:00'
   changes:
   - message: The Early Warning Antagonist wakes. A Working Joe corrupted by The_Grand_Machine
       arrives as a forward scout.
@@ -18184,10 +18174,10 @@ Entries:
   - message: Added a shared blood-spray helper for weapon hits, and the yautja Z-level
       leap can now be given to non-yautja mobs.
     type: Code
-  id: 994
-  time: '2026-11-06T18:05:06.0000000+00:00'
+  id: 1054
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2456
 - author: TheHellFireo
+  time: '2026-11-06T18:05:25.0000000+00:00'
   changes:
   - message: Keep Foxtrot bonus skills consistent and show readable construction requirements.
     type: Fix
@@ -18205,27 +18195,38 @@ Entries:
   - message: Correct cross-deck chemical recharge, cargo headset keys and stacked
       tile fires.
     type: Fix
-  id: 995
-  time: '2026-11-06T18:05:25.0000000+00:00'
+  id: 1055
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2502
 - author: ILoveDespoiler
+  time: '2026-11-06T18:08:07.0000000+00:00'
   changes:
   - message: Harbingers Cyclone no longer hits through walls. [BUG-1255]
     type: Fix
   - message: Harbingers Cyclone no longer puts xeno highfive icons on top of people.
       It applies a proper damage effect on hit.
     type: Fix
-  id: 996
-  time: '2026-11-06T18:08:07.0000000+00:00'
+  id: 1056
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2439
 - author: ILoveDespoiler
+  time: '2026-11-06T18:08:39.0000000+00:00'
   changes:
   - message: Added the Runner evasion mechanic to Sprinter.
     type: Add
-  id: 997
-  time: '2026-11-06T18:08:39.0000000+00:00'
+  id: 1057
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2443
+- author: '- tweak: Командный состав ГОВФОР и корпоративный связной больше не могут
+    стать колониальными антагонистами'
+  time: '2026-11-07T14:38:14Z'
+  changes:
+  - type: Tweak
+    message: Стрелки могут стать спящим агентом КОФ
+  id: 1048
+  url: https://github.com/flex5hybrid/RussianCM/pull/604
+  labels:
+  - 'Changes: No C#'
+  - M
 - author: TheHellFireo
+  time: '2026-11-07T15:53:26.0000000+00:00'
   changes:
   - message: FOB weaponry crates now include a platform for each supplied weapon.
     type: Fix
@@ -18235,27 +18236,67 @@ Entries:
   - message: Powerloaders can no longer pull installed FOB weapons off their platforms
       without first detaching them.
     type: Fix
-  id: 998
-  time: '2026-11-07T15:53:26.0000000+00:00'
+  id: 1058
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2515
 - author: TheHellFireo
+  time: '2026-11-07T16:00:32.0000000+00:00'
   changes:
   - message: Fuel-filled Molotovs now create a local fire patch instead of a room-sized
       chemical spill.
     type: Fix
-  id: 999
-  time: '2026-11-07T16:00:32.0000000+00:00'
+  id: 1059
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2516
+- author: '- tweak: Королеве возвращены способности RMC: ближний паралич, дальнее
+    оглушение и переключаемый нейротоксичный/кислотный плевок; снижены здоровье, броня
+    и шанс отрыва конечностей.'
+  time: '2026-11-07T16:54:13Z'
+  changes:
+  - type: Tweak
+    message: Немного увеличен стартовый состав ксеноморфов.
+  - type: Tweak
+    message: ЛАКФ временно исключён из выбора фракций Distress.
+  - type: Tweak
+    message: Distress чаще выбирается автоматически, когда игроки не голосуют за режим.
+  id: 1050
+  url: https://github.com/flex5hybrid/RussianCM/pull/607
+  labels:
+  - 'Changes: Translations'
+  - M
+- author: '- add: Добавлен редактор расположения HUD с управлением мышью и профилями
+    Default и Separated.'
+  time: '2026-11-07T20:08:46Z'
+  changes:
+  - type: Add
+    message: Добавлены сила CRT чата и прозрачность фона осмотра.
+  - type: Fix
+    message: Исправлена обработка повреждённой разметки объявлений, вызывавшей Stack
+      empty.
+  - type: Fix
+    message: Исправлены белые подложки, участки прокрутки, размещения и отрисовки
+      HUD, инвентарей и круговых меню.
+  - type: Fix
+    message: Изменение ширины перестраивает все семейства HUD, включая панель действий,
+      меню, индикаторы и слоты.
+  - type: Tweak
+    message: Обновлены AHelp, строительство и отклик наведения; CRT отключён в инвентарях.
+  id: 1049
+  url: https://github.com/flex5hybrid/RussianCM/pull/606
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Translations'
+  - 'Changes: Shaders'
+  - L
 - author: KeiKiyomi
+  time: '2026-11-07T20:32:08.0000000+00:00'
   changes:
   - message: Added Rubber Round ammo to req for all standard GOVFOR ammo
     type: Add
   - message: Changed rubber rounds to now do stamina damage
     type: Tweak
-  id: 1000
-  time: '2026-11-07T20:32:08.0000000+00:00'
+  id: 1060
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2518
 - author: Operator-Exi
+  time: '2026-11-07T20:32:21.0000000+00:00'
   changes:
   - message: CLF3, Methane, the RMCCreateWater steps no longer preserve temperature
       through mixing, leading to 700k solutions.
@@ -18266,27 +18307,27 @@ Entries:
   - message: Chemmaster properly transfers reagent temperatures. Empty buffers reset
       to room temp.
     type: Fix
-  id: 1001
-  time: '2026-11-07T20:32:21.0000000+00:00'
+  id: 1061
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2512
 - author: IntelligenceOfficerArthur
+  time: '2026-11-07T20:33:01.0000000+00:00'
   changes:
   - message: Added the M1A1 multi-spectrum visor, cheap half-strength night vision
       that glows and sometimes cuts out until fixed with a screwdriver.
     type: Add
-  id: 1002
-  time: '2026-11-07T20:33:01.0000000+00:00'
+  id: 1062
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2513
 - author: KeiKiyomi
+  time: '2026-11-07T20:33:26.0000000+00:00'
   changes:
   - message: Fixed NVGs on M90 Camera
     type: Fix
   - message: Fixed in flight hand reloading
     type: Fix
-  id: 1003
-  time: '2026-11-07T20:33:26.0000000+00:00'
+  id: 1063
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2507
 - author: ILoveDespoiler
+  time: '2026-11-07T20:33:40.0000000+00:00'
   changes:
   - message: Haze can now build at a level similar to a Drone.
     type: Add
@@ -18305,10 +18346,10 @@ Entries:
   - message: Sporecasters now regenerate Popper ghostroles over time. There can still
       only be a max of 3 per Sporecaster.
     type: Tweak
-  id: 1004
-  time: '2026-11-07T20:33:40.0000000+00:00'
+  id: 1064
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2506
 - author: KeiKiyomi
+  time: '2026-11-07T20:41:50.0000000+00:00'
   changes:
   - message: Added LGBTQ+ identity pins to the all loadouts.
     type: Add
@@ -18327,32 +18368,32 @@ Entries:
     type: Add
   - message: Terra has written or will write Gen 4 lore
     type: Admin
-  id: 1005
-  time: '2026-11-07T20:41:50.0000000+00:00'
+  id: 1065
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2396
 - author: ChumpShrimpson
+  time: '2026-11-07T20:44:31.0000000+00:00'
   changes:
   - message: New equipment for INSFOR
     type: Add
-  id: 1006
-  time: '2026-11-07T20:44:31.0000000+00:00'
+  id: 1066
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2276
 - author: KeiKiyomi
+  time: '2026-11-07T20:45:30.0000000+00:00'
   changes:
   - message: Construction recipes now show materials stored in held or worn backpacks,
       and the construction menu stays open while placing builds.
     type: Tweak
-  id: 1007
-  time: '2026-11-07T20:45:30.0000000+00:00'
+  id: 1067
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2504
 - author: KeiKiyomi
+  time: '2026-11-07T20:45:51.0000000+00:00'
   changes:
   - message: Fixed dropship exchanging, getting a Midway instead of OMaa
     type: Fix
-  id: 1008
-  time: '2026-11-07T20:45:51.0000000+00:00'
+  id: 1068
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2505
 - author: rokudara-sen
+  time: '2026-11-07T20:54:25.0000000+00:00'
   changes:
   - message: Whitelisted ghosts can Join the Hunt while a hunt is running.
     type: Add
@@ -18383,24 +18424,23 @@ Entries:
     type: Fix
   - message: Yautja no longer show a question mark over their heads in Force on Force.
     type: Fix
-  id: 1009
-  time: '2026-11-07T20:54:25.0000000+00:00'
+  id: 1069
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2503
 - author: TheHellFireo
+  time: '2026-11-08T11:28:14.0000000+00:00'
   changes:
   - message: Xenos and neomorphs can mark future construction sites and automatically
       build them when in range.
     type: Add
-  id: 1010
-  time: '2026-11-08T11:28:14.0000000+00:00'
+  id: 1070
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2536
 - author: TheHellFireo
+  time: '2026-11-08T13:27:58.0000000+00:00'
   changes:
   - message: Reduced server replication overhead, recurring cleanup hitches, and repeated
       atmosphere and physics work.
     type: Fix
-  id: 1011
-  time: '2026-11-08T13:27:58.0000000+00:00'
+  id: 1071
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2517
 Name: CMU
 Order: -1
