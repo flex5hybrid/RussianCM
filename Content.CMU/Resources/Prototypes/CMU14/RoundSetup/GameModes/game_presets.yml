@@ -3,7 +3,7 @@
   alias:
   - colonyfall
   name: cmu-gamemode-colonyfall-name
-  showInVote: false
+  showInVote: true # RuMC: retain the server vote choices.
   maxPlayers: 65
   description: cmu-gamemode-colonyfall-desc
   burrowedLarvaEnabled: false
@@ -50,7 +50,23 @@
   thirdPartyForceShuttle: true
   dropshipFabricatorStartingPoints: 18000
   supportedPlanets:
-  - CMUPlanetStableGarrisonRedux
+  - CMUPlanetStableGarrisonRedux # CMU14: updated Operation Hannover map.
+# - CMUPlanetStableGarrisonDistress # govfor spawns planetside
+# - AUPlanetShepherdsPride # lot of forests/chokes
+  - CMUPlanetHopesRetreat
+  - AUPlanetBosenmoriBasho
+# - AUPlanetLV759 # Hybrisa Metro # missing threat spawns, scenario fails
+  - AUPlanetLV327 # Port Nereid
+  - AUPlanetSorokyne
+# - AUPlanetCorsatStation # temporarily removed
+  - CMUPlanetSolarisRidge
+  - CMUPlanetFortMcNeil
+  - AUPlanetTrijent
+# - AuPlanetKutjevo # temporarily removed
+  - AuPlanetShivasSnowball
+# - AuPlanetChances # temporarily removed
+  - CMUPlanetLV624
+  - CMUPlanetVaradero
   rules:
   - AuVoteRule
   - PlatoonSpawn
@@ -64,7 +80,7 @@
   alias:
   - insurgency
   name: cmu-gamemode-insurgency-name
-  showInVote: false
+  showInVote: true # RuMC: retain the server vote choices.
   description: cmu-gamemode-insurgency-desc
   minPlayers: 30
   burrowedLarvaEnabled: false
@@ -90,7 +106,7 @@
   alias:
   - forceonforce
   name: cmu-gamemode-forceonforce-name
-  showInVote: false
+  showInVote: true # RuMC: retain the server vote choices.
   description: cmu-gamemode-forceonforce-desc
   minPlayers: 100
   burrowedLarvaEnabled: false
