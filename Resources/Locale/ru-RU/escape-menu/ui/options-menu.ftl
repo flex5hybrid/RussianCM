@@ -143,13 +143,13 @@ ui-options-header-text-chat = Чат
 ui-options-header-text-other = Прочий ввод текста
 
 ui-options-hotkey-keymap = Использовать раскладку QWERTY (США)
-ui-options-hotkey-toggle-walk = Переключать ходьбу/бег
+ui-options-hotkey-toggle-walk = Переключать ходьбу и спринт
 
 ui-options-function-move-up = Двигаться вверх
 ui-options-function-move-left = Двигаться влево
 ui-options-function-move-down = Двигаться вниз
 ui-options-function-move-right = Двигаться вправо
-ui-options-function-walk = Идти
+ui-options-function-walk = Темп движения (ходьба/спринт)
 ui-options-function-toggle-knockdown = Переключить ползание
 
 ui-options-function-camera-rotate-left = Повернуть влево

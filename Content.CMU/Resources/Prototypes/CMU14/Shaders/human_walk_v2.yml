@@ -1,0 +1,9 @@
+- type: shader
+  id: CMUHumanWalkV2
+  kind: source
+  path: /Textures/CMU14/Shaders/human_walk_v2.swsl
+
+- type: shader
+  id: CMUHumanWalkV2Unshaded
+  kind: source
+  path: /Textures/CMU14/Shaders/human_walk_v2_unshaded.swsl
