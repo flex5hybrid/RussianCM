@@ -18442,5 +18442,16 @@ Entries:
     type: Fix
   id: 1071
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2517
+- author: '- add: Добавлена анимация ходьбы и бега!'
+  time: '2026-11-09T01:43:16Z'
+  changes:
+  - type: Tweak
+    message: Стандартное передвижение теперь - шаг.
+  - type: Tweak
+    message: Бег теперь тратит стамину!
+  id: 1072
+  url: https://github.com/flex5hybrid/RussianCM/pull/612
+  labels:
+  - XL
 Name: CMU
 Order: -1
