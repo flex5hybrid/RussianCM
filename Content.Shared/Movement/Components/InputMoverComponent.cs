@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Shared.CMU14.Movement; // CMU14
 using Content.Shared.Movement.Systems;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -82,11 +83,44 @@ namespace Content.Shared.Movement.Components
         public const float SprintingSoundModifier = 3.5f;
         public const float WalkingSoundModifier = 1.5f;
 
+        // CMU14 Human movement Begin
         public bool SprintOnModifier;
         public bool SprintBlocked;
+        public bool QuietWalk;
+        public CMUHumanMovementPace HumanWalkPace;
+
+        public float HumanWalkSpeedMultiplier => HumanWalkPace switch
+        {
+            CMUHumanMovementPace.Quiet => 0.60f,
+            CMUHumanMovementPace.Tactical => 0.82f,
+            _ => 1f,
+        };
+
+        public float HumanFootstepVolumeOffset => Sprinting ? 0f : HumanWalkPace switch
+        {
+            CMUHumanMovementPace.Quiet => -8f,
+            CMUHumanMovementPace.Tactical => -2f,
+            _ => 0f,
+        };
+
+        public float GetFootstepDistance(MobMoverComponent mover)
+        {
+            if (Sprinting)
+                return mover.StepSoundMoveDistanceRunning;
+
+            var spacing = HumanWalkPace switch
+            {
+                CMUHumanMovementPace.Quiet => 0.82f,
+                CMUHumanMovementPace.Tactical => 0.90f,
+                _ => 1f,
+            };
+            return mover.StepSoundMoveDistanceWalking * spacing;
+        }
 
         [ViewVariables]
-        public bool Sprinting => !SprintBlocked && SprintOnModifier == ((HeldMoveButtons & MoveButtons.Walk) != 0);
+        public bool Sprinting
+            => !SprintBlocked && SprintOnModifier == ((HeldMoveButtons & MoveButtons.Walk) != 0);
+        // CMU14 End
 
         [ViewVariables(VVAccess.ReadWrite)]
         public bool CanMove = true;
@@ -101,7 +135,11 @@ namespace Content.Shared.Movement.Components
         public Angle RelativeRotation;
         public TimeSpan LerpTarget;
         public bool CanMove;
+        // CMU14 Human movement Begin
         public bool SprintOnModifier;
         public bool SprintBlocked;
+        public bool QuietWalk;
+        public CMUHumanMovementPace HumanWalkPace;
+        // CMU14 End
     }
 }

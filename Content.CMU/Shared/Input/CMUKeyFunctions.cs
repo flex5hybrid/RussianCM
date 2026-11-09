@@ -7,6 +7,7 @@ public sealed class CMUKeyFunctions
 {
     public static readonly BoundKeyFunction CMUOpenPhraseWheel = "CMUOpenPhraseWheel";
     public static readonly BoundKeyFunction CMUToggleFirstPersonMouse = "CMUToggleFirstPersonMouse";
+    public static readonly BoundKeyFunction CMUToggleQuietWalk = "CMUToggleQuietWalk";
     public static readonly BoundKeyFunction CMUCycleBodyZoneTarget = "CMUCycleBodyZoneTarget";
     public static readonly BoundKeyFunction CMUCycleBodyZoneTargetReverse = "CMUCycleBodyZoneTargetReverse";
     public static readonly BoundKeyFunction CMUTargetBodyZoneHead = "CMUTargetBodyZoneHead";

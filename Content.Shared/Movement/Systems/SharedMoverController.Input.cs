@@ -1,6 +1,7 @@
 using System.Numerics;
 using Content.Shared.Alert;
 using Content.Shared.CCVar;
+using Content.Shared.CMU14.Input; // CMU14
 using Content.Shared.Follower.Components;
 using Content.Shared.Input;
 using Content.Shared.Movement.Components;
@@ -43,6 +44,7 @@ namespace Content.Shared.Movement.Systems
                 .Bind(EngineKeyFunctions.MoveRight, moveRightCmdHandler)
                 .Bind(EngineKeyFunctions.MoveDown, moveDownCmdHandler)
                 .Bind(EngineKeyFunctions.Walk, new WalkInputCmdHandler(this))
+                .Bind(CMUKeyFunctions.CMUToggleQuietWalk, new QuietWalkInputCmdHandler(this)) // CMU14
                 .Bind(EngineKeyFunctions.CameraRotateLeft, new CameraRotateInputCmdHandler(this, Direction.East))
                 .Bind(EngineKeyFunctions.CameraRotateRight, new CameraRotateInputCmdHandler(this, Direction.West))
                 .Bind(EngineKeyFunctions.CameraReset, new CameraResetInputCmdHandler(this))
@@ -118,8 +120,12 @@ namespace Content.Shared.Movement.Systems
             entity.Comp.RelativeRotation = state.RelativeRotation;
             entity.Comp.TargetRelativeRotation = state.TargetRelativeRotation;
             entity.Comp.CanMove = state.CanMove;
+            // CMU14 Human movement Begin
             entity.Comp.SprintOnModifier = state.SprintOnModifier;
             entity.Comp.SprintBlocked = state.SprintBlocked;
+            entity.Comp.QuietWalk = state.QuietWalk;
+            entity.Comp.HumanWalkPace = state.HumanWalkPace;
+            // CMU14 End
             entity.Comp.RelativeEntity = EnsureEntity<InputMoverComponent>(state.RelativeEntity, entity.Owner);
 
             // Reset
@@ -142,8 +148,12 @@ namespace Content.Shared.Movement.Systems
             args.State = new InputMoverComponentState()
             {
                 CanMove = entity.Comp.CanMove,
+                // CMU14 Human movement Begin
                 SprintOnModifier = entity.Comp.SprintOnModifier,
                 SprintBlocked = entity.Comp.SprintBlocked,
+                QuietWalk = entity.Comp.QuietWalk,
+                HumanWalkPace = entity.Comp.HumanWalkPace,
+                // CMU14 End
                 RelativeEntity = TerminatingOrDeleted(entity.Comp.RelativeEntity) ? null : GetNetEntity(entity.Comp.RelativeEntity),
                 LerpTarget = entity.Comp.LerpTarget,
                 HeldMoveButtons = entity.Comp.HeldMoveButtons,
@@ -452,7 +462,7 @@ namespace Content.Shared.Movement.Systems
             }
 
             // Logger.GetSawmill("content").Info($"{curDir}{walk}{sprint}");
-            return mover.SprintBlocked ? (walk + sprint, Vector2.Zero) : (walk, sprint);
+            return mover.SprintBlocked ? (walk + sprint, Vector2.Zero) : (walk, sprint); // CMU14
         }
 
         /// <summary>
@@ -638,6 +648,18 @@ namespace Content.Shared.Movement.Systems
                 if (session?.AttachedEntity == null) return false;
 
                 _controller.HandleRunChange(session.AttachedEntity.Value, message.SubTick, message.State == BoundKeyState.Down);
+                return false;
+            }
+        }
+
+        // CMU14 class
+        private sealed class QuietWalkInputCmdHandler(SharedMoverController controller) : InputCmdHandler
+        {
+            public override bool HandleCmdMessage(IEntityManager entManager, ICommonSession? session, IFullInputCmdMessage message)
+            {
+                if (message.State == BoundKeyState.Up && session?.AttachedEntity is { } uid)
+                    controller.ToggleQuietWalk(uid);
+
                 return false;
             }
         }

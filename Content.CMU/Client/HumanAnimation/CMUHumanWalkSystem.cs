@@ -138,7 +138,7 @@ public sealed partial class CMUHumanWalkSystem : EntitySystem
                 !(TryComp<CMUPushupsComponent>(uid, out var exercise) && exercise.Active) &&
                 !(TryComp<BodyComponent>(uid, out var body) && body.LegEntities.Count < body.RequiredLegs);
             var sprinting = input.Sprinting;
-            var stepDistance = sprinting ? mover.StepSoundMoveDistanceRunning : mover.StepSoundMoveDistanceWalking;
+            var stepDistance = input.GetFootstepDistance(mover);
             if (!moving || !float.IsFinite(stepDistance) || stepDistance <= 0)
             {
                 Restore(uid, state);
