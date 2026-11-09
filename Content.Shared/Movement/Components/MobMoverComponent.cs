@@ -28,6 +28,10 @@ namespace Content.Shared.Movement.Components
         [ViewVariables(VVAccess.ReadWrite)]
         public EntityCoordinates LastPosition { get; set; }
 
+        // Presentation can follow the same contacts that drive the existing step sound.
+        // Like StepSoundDistance, this is tracked locally by the movement simulation.
+        public uint FootstepSequence;
+
         /// <summary>
         ///     Used to keep track of how far we have moved before playing a step sound
         /// </summary>

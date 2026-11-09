@@ -31,6 +31,8 @@ namespace Content.Shared._RMC14.Stamina;
 public sealed partial class RMCStaminaSystem : EntitySystem
 {
     private static readonly ProtoId<TagPrototype> TaserTag = "Taser";
+    private const double SprintReserveFraction = 0.4;
+    private const double SprintRecoveryFraction = 0.55;
 
     [Dependency] private INetManager _net = default!;
     [Dependency] private IGameTiming _timing = default!;
@@ -99,7 +101,9 @@ public sealed partial class RMCStaminaSystem : EntitySystem
         if (!Resolve(ent, ref ent.Comp, false))
             return;
 
+        var combatStamina = Math.Clamp(ent.Comp.Current + ent.Comp.SprintExertion - amount, 0, ent.Comp.Max);
         ent.Comp.Current = Math.Clamp(ent.Comp.Current - amount, 0, ent.Comp.Max);
+        ent.Comp.SprintExertion = Math.Max(0, combatStamina - ent.Comp.Current);
 
         if (visual && amount > 0 && _timing.IsFirstTimePredicted)
         {
@@ -113,17 +117,35 @@ public sealed partial class RMCStaminaSystem : EntitySystem
         SetStaminaAlert((ent, ent.Comp));
     }
 
+    internal bool CanSprint(RMCStaminaComponent stamina)
+    {
+        stamina.SprintExhausted = stamina.SprintExhausted
+            ? stamina.Current < stamina.Max * SprintRecoveryFraction
+            : stamina.Current <= stamina.Max * SprintReserveFraction;
+        return !stamina.SprintExhausted;
+    }
+
+    internal void SpendForSprint(Entity<RMCStaminaComponent> ent, double amount)
+    {
+        var previous = ent.Comp.Current;
+        var reserve = ent.Comp.Max * SprintReserveFraction;
+        if (previous <= reserve || amount <= 0)
+            return;
+
+        var combatStamina = previous + ent.Comp.SprintExertion;
+        ent.Comp.Current = Math.Max(reserve, previous - amount);
+        ent.Comp.SprintExertion = combatStamina - ent.Comp.Current;
+        ent.Comp.NextRegen = _timing.CurTime + ent.Comp.RestPeriod;
+        if (Math.Ceiling(previous) != Math.Ceiling(ent.Comp.Current) || ent.Comp.Current == reserve)
+            Dirty(ent);
+        if (GetStaminaLevel(ent.Comp, previous) != GetStaminaLevel(ent.Comp, ent.Comp.Current))
+            SetStaminaAlert(ent);
+    }
+
     private void ProcessEffects(Entity<RMCStaminaComponent> ent)
     {
         ent.Comp.NextCheck = _timing.CurTime + ent.Comp.TimeBetweenChecks;
-
-        int newLevel = 0;
-
-        for (; newLevel < ent.Comp.TierThresholds.Length; newLevel++)
-        {
-            if (ent.Comp.Current >= ent.Comp.TierThresholds[newLevel])
-                break;
-        }
+        var newLevel = GetStaminaLevel(ent.Comp, ent.Comp.Current + ent.Comp.SprintExertion);
 
         if (newLevel >= 2)
         {
@@ -245,8 +267,17 @@ public sealed partial class RMCStaminaSystem : EntitySystem
 
     private void SetStaminaAlert(Entity<RMCStaminaComponent> ent)
     {
+        var level = GetStaminaLevel(ent.Comp, ent.Comp.Current);
         _alerts.ShowAlert((ent.Owner, null),
             ent.Comp.StaminaAlert,
-            (short)((ent.Comp.TierThresholds.Length - 1) - ent.Comp.Level));
+            (short)((ent.Comp.TierThresholds.Length - 1) - level));
+    }
+
+    private static int GetStaminaLevel(RMCStaminaComponent stamina, double current)
+    {
+        var level = 0;
+        while (level < stamina.TierThresholds.Length && current + 0.000001 < stamina.TierThresholds[level])
+            level++;
+        return level;
     }
 }

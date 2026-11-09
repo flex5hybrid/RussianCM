@@ -1,0 +1,15 @@
+{
+  "description": "Sprint with two contact poses per cycle, shorter support, and a brief flight phase.",
+  "body_forward": 1,
+  "bent_arms": true,
+  "poses": [
+    {"pose":"contact-left",  "foot_x": 4,  "foot_lift": 0, "body_down": 0},
+    {"pose":"load-left",     "foot_x": 1,  "foot_lift": 0, "body_down": 1},
+    {"pose":"push-left",     "foot_x": -2, "foot_lift": 0, "body_down": 0},
+    {"pose":"flight-left",   "foot_x": -4, "foot_lift": 1, "body_down": -1},
+    {"pose":"contact-right", "foot_x": -4, "foot_lift": 3, "body_down": 0},
+    {"pose":"load-right",    "foot_x": -2, "foot_lift": 4, "body_down": 1},
+    {"pose":"push-right",    "foot_x": 1,  "foot_lift": 3, "body_down": 0},
+    {"pose":"flight-right",  "foot_x": 3,  "foot_lift": 2, "body_down": -1}
+  ]
+}

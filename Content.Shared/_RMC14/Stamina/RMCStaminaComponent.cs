@@ -13,6 +13,13 @@ public sealed partial class RMCStaminaComponent : Component
     [DataField]
     public double Max = 100;
 
+    /// <summary>The portion of spent stamina due to running, without combat stun effects.</summary>
+    [DataField, AutoNetworkedField]
+    public double SprintExertion;
+
+    [DataField]
+    public bool SprintExhausted;
+
     [DataField]
     public int RegenPerTick = 6;
 

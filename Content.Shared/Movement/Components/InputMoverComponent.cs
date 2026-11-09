@@ -82,8 +82,11 @@ namespace Content.Shared.Movement.Components
         public const float SprintingSoundModifier = 3.5f;
         public const float WalkingSoundModifier = 1.5f;
 
+        public bool SprintOnModifier;
+        public bool SprintBlocked;
+
         [ViewVariables]
-        public bool Sprinting => (HeldMoveButtons & MoveButtons.Walk) == 0x0;
+        public bool Sprinting => !SprintBlocked && SprintOnModifier == ((HeldMoveButtons & MoveButtons.Walk) != 0);
 
         [ViewVariables(VVAccess.ReadWrite)]
         public bool CanMove = true;
@@ -98,5 +101,7 @@ namespace Content.Shared.Movement.Components
         public Angle RelativeRotation;
         public TimeSpan LerpTarget;
         public bool CanMove;
+        public bool SprintOnModifier;
+        public bool SprintBlocked;
     }
 }
