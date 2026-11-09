@@ -117,7 +117,7 @@ public abstract partial class SharedMoverController : VirtualController
     protected virtual void OnMoverStartup(Entity<InputMoverComponent> ent, ref ComponentStartup args)
     {
         _blocker.UpdateCanMove(ent, ent.Comp);
-        UpdateHumanSprint(ent);
+        UpdateHumanMovement(ent); // CMU14
     }
 
     public override void Shutdown()
@@ -129,7 +129,7 @@ public abstract partial class SharedMoverController : VirtualController
     public override void UpdateAfterSolve(bool prediction, float frameTime)
     {
         base.UpdateAfterSolve(prediction, frameTime);
-        SpendHumanSprintStamina(frameTime);
+        SpendHumanSprintStamina(frameTime); // CMU14
         UsedMobMovement.Clear();
     }
 
@@ -241,7 +241,7 @@ public abstract partial class SharedMoverController : VirtualController
         // If the body is in air but isn't weightless then it can't move
         var weightless = _gravity.IsWeightless(uid);
         var inAirHelpless = false;
-        UpdateHumanSprint(entity, !weightless && physicsComponent.BodyStatus == BodyStatus.OnGround);
+        UpdateHumanMovement(entity, !weightless && physicsComponent.BodyStatus == BodyStatus.OnGround); // CMU14
 
         if (physicsComponent.BodyStatus != BodyStatus.OnGround && !CanMoveInAirQuery.HasComponent(uid))
         {
@@ -299,12 +299,14 @@ public abstract partial class SharedMoverController : VirtualController
                     relayTarget,
                     frameTime);
                 tileMovement.WasWeightlessLastTick = weightless;
+                // CMU14 Human movement Begin
                 if (didTileMovement)
                 {
                     if (mover.SprintOnModifier && mover.Sprinting && DirVecForButtons(mover.HeldMoveButtons) != Vector2.Zero)
                         TrackHumanSprint(entity, xform, 1f);
                     return;
                 }
+                // CMU14 End
             }
             else
             {
@@ -331,7 +333,7 @@ public abstract partial class SharedMoverController : VirtualController
             sprintSpeed *= cmuZeroG.SpeedMultiplier;
             // cmu edit end
 
-            wishDir = AssertValidWish(mover, walkSpeed, sprintSpeed, out _);
+            wishDir = AssertValidWish(mover, walkSpeed, sprintSpeed, out _); // CMU14
 
             var ev = new CanWeightlessMoveEvent(uid);
             RaiseLocalEvent(uid, ref ev, true);
@@ -404,10 +406,11 @@ public abstract partial class SharedMoverController : VirtualController
             else
                 walkSpeed = sprintSpeed;
 
-            wishDir = AssertValidWish(mover, walkSpeed, sprintSpeed, out var sprintInput);
+            wishDir = AssertValidWish(mover, walkSpeed * mover.HumanWalkSpeedMultiplier, sprintSpeed, out var sprintInput); // CMU14
 
             if (wishDir != Vector2.Zero)
             {
+                // CMU14: charge only the sprint portion of the tick.
                 if (mover.SprintOnModifier && !mover.SprintBlocked)
                     TrackHumanSprint(entity, xform, sprintInput.Length());
                 friction = moveSpeedComponent?.Friction ?? MovementSpeedModifierComponent.DefaultFriction * _frictionModifier;
@@ -475,7 +478,7 @@ public abstract partial class SharedMoverController : VirtualController
                 // CMU14
                 var volumeEv = new GetMobFootstepVolumeEvent();
                 RaiseLocalEvent(uid, ref volumeEv);
-                soundModifier += volumeEv.Modifier;
+                soundModifier += volumeEv.Modifier + mover.HumanFootstepVolumeOffset; // CMU14
 
                 var audioParams = sound.Params
                     .AddVolume(sound.Params.Volume + soundModifier)
@@ -646,9 +649,7 @@ public abstract partial class SharedMoverController : VirtualController
             return false;
 
         var coordinates = xform.Coordinates;
-        var distanceNeeded = mover.Sprinting
-            ? mobMover.StepSoundMoveDistanceRunning
-            : mobMover.StepSoundMoveDistanceWalking;
+        var distanceNeeded = mover.GetFootstepDistance(mobMover); // CMU14
 
         // Handle footsteps.
         if (!weightless)
@@ -676,7 +677,7 @@ public abstract partial class SharedMoverController : VirtualController
             return false;
 
         mobMover.StepSoundDistance -= distanceNeeded;
-        mobMover.FootstepSequence++;
+        mobMover.FootstepSequence++; // CMU14: shared contact timing for 2D animation
 
         // CMU14: water movement overrides footwear, including silent walking.
         var mobSound = new GetMobFootstepSoundEvent();
@@ -765,10 +766,9 @@ public abstract partial class SharedMoverController : VirtualController
         return sound != null;
     }
 
-    private Vector2 AssertValidWish(InputMoverComponent mover, float walkSpeed, float sprintSpeed, out Vector2 sprintDir)
+    private Vector2 AssertValidWish(InputMoverComponent mover, float walkSpeed, float sprintSpeed, out Vector2 sprintDir) // CMU14
     {
-        var (walkDir, sprintInput) = GetVelocityInput(mover);
-        sprintDir = sprintInput;
+        (var walkDir, sprintDir) = GetVelocityInput(mover); // CMU14
 
         var total = walkDir * walkSpeed + sprintDir * sprintSpeed;
 
@@ -821,7 +821,9 @@ public abstract partial class SharedMoverController : VirtualController
         float frameTime
     )
     {
-        var movementSpeed = GetEntityMoveSpeed(physicsUid, inputMover.Sprinting);
+        var movementSpeed = GetEntityMoveSpeed(physicsUid, inputMover.Sprinting); // CMU14: apply walk pace below
+        if (!inputMover.Sprinting)
+            movementSpeed *= inputMover.HumanWalkSpeedMultiplier;
 
         // Invalid coordinates must not reach the slide timeout, snapping, or velocity calculation.
         // Leave the transform in place so its owner can correct it without an arbitrary teleport.
@@ -878,7 +880,7 @@ public abstract partial class SharedMoverController : VirtualController
                 // CMU14
                 var volumeEv = new GetMobFootstepVolumeEvent();
                 RaiseLocalEvent(uid, ref volumeEv);
-                soundModifier += volumeEv.Modifier;
+                soundModifier += volumeEv.Modifier + inputMover.HumanFootstepVolumeOffset; // CMU14
                 var volume = sound.Params.Volume + soundModifier;
 
                 var audioParams = sound.Params
@@ -1113,6 +1115,7 @@ public abstract partial class SharedMoverController : VirtualController
             {
                 movementVelocity *= moveSpeedComponent?.CurrentWalkSpeed ??
                     MovementSpeedModifierComponent.DefaultBaseWalkSpeed;
+                movementVelocity *= inputMover.HumanWalkSpeedMultiplier; // CMU14
             }
 
             movementVelocity = parentRotation.RotateVec(movementVelocity);

@@ -4,6 +4,7 @@ from pathlib import Path
 
 import numpy as np
 from PIL import Image
+from build_walk_maps import CLIPS, ROLES, root_offset
 from render_review import frame
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -33,6 +34,100 @@ def check_sprint_arms(sheets):
                 raised = sample(hand, sheets["run-" + role], direction, pose)
                 held = sample(hand, sheets["run-held-" + role], direction, pose)
                 assert raised.any() and Y[raised].mean() < Y[held].mean() - 1, (direction, role, pose)
+
+
+def check_depth_stride(sheets):
+    for mode in ("walk", "held", "run", "run-held"):
+        for direction in (0, 1):
+            feet = [
+                (side, np.array(frame(PARTS, f"{letter}_foot", direction))[:, :, 3] > 0)
+                for side, letter in (("left", "l"), ("right", "r"))
+            ]
+            contacts = []
+            for index in (0, 4):
+                rows = []
+                for side, mask in feet:
+                    posed = sample(mask, sheets[f"{mode}-foot-{side}"], direction, index)
+                    assert len(np.unique(Y[posed])) == len(np.unique(Y[mask])), (mode, direction, side, index, "clipped foot")
+                    rows.append(Y[posed].mean())
+                contacts.append(rows[0] - rows[1])
+            # A contact alternates which foot projects nearer the camera in both views.
+            assert min(contacts) < -1 and max(contacts) > 1, (mode, direction, contacts)
+
+
+def check_straight_feet(sheets):
+    for direction in (0, 1):
+        boots = np.array(frame(BOOTS, "equipped-FEET", direction))[:, :, 3] > 0
+        feet = {
+            side: np.array(frame(PARTS, f"{letter}_foot", direction))[:, :, 3] > 0
+            for side, letter in (("left", "l"), ("right", "r"))
+        }
+        for mode, _, spec in CLIPS:
+            if spec.get("stationary"):
+                continue
+            for index in range(8):
+                for side, foot in feet.items():
+                    for role, mask in ((f"foot-{side}", foot), (f"shoe-{side}", boots)):
+                        lookup = sheets[f"{mode}-{role}"]
+                        heel = sample(mask & (Y == 29), lookup, direction, index)
+                        toe = sample(mask & (Y >= 30), lookup, direction, index)
+                        assert heel.any() and toe.any(), (mode, role, direction, index)
+                        assert np.all(~toe.any(axis=0) | heel.any(axis=0)), (mode, role, direction, index)
+                    heel = sample(foot & (Y == 29), sheets[f"{mode}-foot-{side}"], direction, index)
+                    assert np.array_equal(heel.any(axis=0), (foot & (Y == 29)).any(axis=0)), (mode, side, direction, index)
+
+
+def check_stationary_actions(sheets):
+    for mode in ("idle", "reach", "reach-held", "melee", "melee-held", "shoot", "fall", "rise"):
+        for side in ("left", "right"):
+            foot = sheets[f"{mode}-foot-{side}"]
+            assert np.all(foot[:, :, :2] == 128), (mode, side, "stationary gesture moves a foot")
+            if mode not in ("reach", "melee"):
+                assert np.array_equal(sheets[f"{mode}-arm-{side}"], sheets[f"{mode}-root"]), (mode, side)
+
+
+def check_uniform_coverage(sheets):
+    for direction in range(4):
+        clothes = np.array(frame(UNIFORM, "equipped-INNERCLOTHING", direction))[:, :, 3] > 0
+        boots = np.array(frame(BOOTS, "equipped-FEET", direction))[:, :, 3] > 0
+        limbs = [
+            (f"{'arm' if part == 'hand' else part}-{side}",
+             np.array(frame(PARTS, f"{letter}_{part}", direction))[:, :, 3] > 0)
+            for letter, side in (("l", "left"), ("r", "right"))
+            for part in ("arm", "hand", "leg", "foot")
+        ]
+        for mode, _, _ in CLIPS:
+            for index in range(8):
+                covered = np.logical_or.reduce([
+                    *(sample(clothes, sheets[f"{mode}-{role}"], direction, index) for role in CLOTH_COMPONENTS),
+                    *(sample(boots, sheets[f"{mode}-{role}"], direction, index) for role in ("shoe-left", "shoe-right")),
+                ])
+                for role, skin in limbs:
+                    posed = sample(skin & (clothes | boots), sheets[f"{mode}-{role}"], direction, index)
+                    assert not np.any(posed & ~covered), (mode, role, direction, index)
+
+
+def expand_state(state):
+    assert state["directions"] == len(state["delays"]) == 4
+    packed = np.array(Image.open(RSI / (state["name"] + ".png")).convert("RGBA"))
+    height, width = packed.shape[:2]
+    assert width % 32 == height % 32 == 0
+    columns = width // 32
+    expanded = np.empty((128, 256, 4), dtype=np.uint8)
+    frame_index = 0
+    for direction, delays in enumerate(state["delays"]):
+        ticks = [round(delay * 10) for delay in delays]
+        assert all(tick > 0 and tick / 10 == delay for tick, delay in zip(ticks, delays))
+        assert sum(ticks) == 8
+        pose_index = 0
+        for tick in ticks:
+            x, y = frame_index % columns * 32, frame_index // columns * 32
+            data = packed[y:y + 32, x:x + 32]
+            for _ in range(tick):
+                expanded[direction*32:(direction+1)*32, pose_index*32:(pose_index+1)*32] = data
+                pose_index += 1
+            frame_index += 1
+    return expanded
 
 
 def fit_uniform(mask, direction):
@@ -132,19 +227,16 @@ def main():
     assert meta.get("load", {}).get("srgb") is False, "Coordinate data must bypass sRGB conversion"
     assert meta["size"] == {"x": 32, "y": 32}
     studies = Path(__file__).parent / "studies"
-    walk = json.loads((studies / "walk-v2.json").read_text())
     run = json.loads((studies / "run-v2.json").read_text())
     assert run["poses"][0]["foot_lift"] == 0 and run["poses"][4]["foot_lift"] > 0
     assert run["poses"][3]["foot_lift"] > 0 and run["poses"][7]["foot_lift"] > 0
+    clips = {name: spec for name, _, spec in CLIPS}
+    assert {state["name"] for state in meta["states"]} == {f"{name}-{role}" for name in clips for role in ROLES}
     yy, xx = np.mgrid[:32, :32]
     poses = pixels = 0
     sheets = {}
     for state in meta["states"]:
-        assert state["directions"] == 4
-        assert all(delays == [.1] * 8 for delays in state["delays"])
-        with Image.open(RSI / (state["name"] + ".png")) as image:
-            assert image.size == (256, 128), state["name"]
-            sheet = np.array(image.convert("RGBA"))
+        sheet = expand_state(state)
         sheets[state["name"]] = sheet
         for direction in range(4):
             for index in range(8):
@@ -157,9 +249,7 @@ def main():
                 assert np.all((source_x[visible] >= 0) & (source_x[visible] < 32)), state["name"]
                 assert np.all((source_y[visible] >= 0) & (source_y[visible] < 32)), state["name"]
                 if state["name"].endswith("-root"):
-                    spec = run if state["name"].startswith("run-") else walk
-                    down = spec["poses"][index]["body_down"]
-                    forward = spec.get("body_forward", 0) * (1 if direction == 2 else -1) if direction >= 2 else 0
+                    forward, down = root_offset(direction, index, clips[state["name"][:-5]])
                     assert np.all(source_x[visible] == xx[visible] - forward), "Rigid root must preserve horizontal pixels"
                     assert np.all(source_y[visible] == yy[visible] - down), "Root must move down, not up"
                     bounds = (xx - forward >= 0) & (xx - forward < 32) & (yy - down >= 0) & (yy - down < 32)
@@ -171,11 +261,17 @@ def main():
     unlit = (shaders / "human_walk_v2_unshaded.swsl").read_text(encoding="utf-8-sig").strip()
     assert unlit == "light_mode unshaded;\n" + lit, "Lit/unlit lookup math must match"
     check_sprint_arms(sheets)
+    check_depth_stride(sheets)
+    check_straight_feet(sheets)
+    check_stationary_actions(sheets)
+    check_uniform_coverage(sheets)
     outfits = check_profile_coverage(sheets)
     torso_cases = check_torso_fill(sheets)
     print(f"OK: linear lookup loading; {poses} poses; {pixels} visible coordinate samples stay inside their 32x32 frame; rigid-root direction; lit/unlit parity.")
     print(f"OK: no newly exposed sleeve, trouser or boot pixels in {outfits} profile outfit/pose cases.")
     print("OK: raised sprint wrists; no copied profile sleeve or glove; rear leg and boot shading.")
+    print(f"OK: alternating front/rear contacts in walk and sprint, and uniform coverage in all {len(clips)} clips.")
+    print("OK: front/rear toes align with the heels and ankles stay on their own tracks.")
     print(f"OK: repaired clothing gaps and preserved bare arms and open tops in {torso_cases} profile outfit/pose cases.")
 
 

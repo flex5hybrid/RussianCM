@@ -4,6 +4,8 @@ using Content.Client.Inventory;
 using Content.Shared.Body;
 using Content.Shared.Buckle.Components;
 using Content.Shared.Camera;
+using Content.Shared.CMU14.CrawlState;
+using Content.Shared.CMU14.HumanAnimation;
 using Content.Shared.CMU14.Pushups;
 using Content.Shared.CMU14.Surrender;
 using Content.Shared.Hands.Components;
@@ -53,14 +55,16 @@ public sealed partial class CMUHumanWalkSystem : EntitySystem
         public TimeSpan LastMoved;
         public float StridePhase;
         public uint FootstepSequence;
-        public int Frame = -1;
-        public bool Held;
-        public bool Sprinting;
+        public Clip? LowerPose;
+        public Clip? UpperPose;
+        public bool Standing;
+        public CMUHumanAction Action;
+        public TimeSpan ActionStarted;
         public int LayerCount;
         public readonly List<PosedLayer> Layers = new();
     }
 
-    private sealed record PoseMap(string Key, string Role, SpriteComponent.Layer Layer);
+    private sealed record PoseMap(string Key, string Role, SpriteComponent.Layer Layer, bool LowerBody);
 
     private sealed record PosedLayer(string Alias, SpriteComponent.Layer Layer, List<PoseMap> Maps,
         ShaderInstance? OriginalShader, ProtoId<ShaderPrototype>? OriginalPrototype,
@@ -68,7 +72,8 @@ public sealed partial class CMUHumanWalkSystem : EntitySystem
 
     public override void Initialize()
     {
-        // Register in the client so this visual experiment requires no server component/protocol changes.
+        SubscribeNetworkEvent<CMUHumanActionEvent>(OnAction);
+        // This option controls the client renderer independently of the server's movement rules.
         if (!_config.IsCVarRegistered(CVarName))
             _config.RegisterCVar(CVarName, false, CVar.CLIENTONLY | CVar.ARCHIVE);
         _config.OnValueChanged<bool>(CVarName, OnEnabled, true);
@@ -105,13 +110,22 @@ public sealed partial class CMUHumanWalkSystem : EntitySystem
         var query = EntityQueryEnumerator<HumanoidProfileComponent, InputMoverComponent, SpriteComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out var profile, out var input, out var sprite, out var xform))
         {
-            if (profile.Species.Id != "Human" || !TryComp<MobMoverComponent>(uid, out var mover))
+            if (profile.Species.Id != "Human"
+                || !TryComp<MobMoverComponent>(uid, out var mover)
+                || !TryComp<StandingStateComponent>(uid, out var standing)
+                || !TryComp<MobStateComponent>(uid, out var mob))
                 continue;
             _seen.Add(uid);
             if (!_states.TryGetValue(uid, out var state))
             {
-                state = new WalkState { Parent = xform.ParentUid, Position = xform.LocalPosition,
-                    LastMoved = now - TimeSpan.FromSeconds(1), FootstepSequence = mover.FootstepSequence };
+                state = new WalkState
+                {
+                    Parent = xform.ParentUid,
+                    Position = xform.LocalPosition,
+                    LastMoved = now - TimeSpan.FromSeconds(1),
+                    FootstepSequence = mover.FootstepSequence,
+                    Standing = standing.Standing,
+                };
                 _states.Add(uid, state);
             }
             var newStep = state.FootstepSequence != mover.FootstepSequence;
@@ -128,58 +142,95 @@ public sealed partial class CMUHumanWalkSystem : EntitySystem
             }
             if (delta > 0.001f && delta < 1.5f)
                 state.LastMoved = now;
-            var moving = input.CanMove && input.HasDirectionalMovement &&
-                (now - state.LastMoved).TotalSeconds < 0.12 &&
-                TryComp<StandingStateComponent>(uid, out var standing) && standing.Standing &&
-                TryComp<MobStateComponent>(uid, out var mob) && mob.CurrentState == MobState.Alive &&
-                !IsPaused(uid) && sprite.Visible && !sprite.ContainerOccluded &&
-                !HasComp<CMUSurrenderComponent>(uid) &&
-                !(TryComp<BuckleComponent>(uid, out var buckle) && buckle.Buckled) &&
-                !(TryComp<CMUPushupsComponent>(uid, out var exercise) && exercise.Active) &&
-                !(TryComp<BodyComponent>(uid, out var body) && body.LegEntities.Count < body.RequiredLegs);
-            var sprinting = input.Sprinting;
-            var stepDistance = sprinting ? mover.StepSoundMoveDistanceRunning : mover.StepSoundMoveDistanceWalking;
-            if (!moving || !float.IsFinite(stepDistance) || stepDistance <= 0)
+            var wasStanding = state.Standing;
+            state.Standing = standing.Standing;
+            if (IsPaused(uid) || !sprite.Visible || sprite.ContainerOccluded
+                || HasComp<CMUSurrenderComponent>(uid)
+                || TryComp<BuckleComponent>(uid, out var buckle) && buckle.Buckled
+                || TryComp<CMUPushupsComponent>(uid, out var exercise) && exercise.Active)
+            {
+                Restore(uid, state);
+                state.StridePhase = 0;
+                state.Action = CMUHumanAction.None;
+                continue;
+            }
+
+            if (wasStanding != state.Standing)
+            {
+                state.Action = state.Standing ? CMUHumanAction.Rise : CMUHumanAction.Fall;
+                state.ActionStarted = now;
+            }
+
+            var alive = mob.CurrentState == MobState.Alive;
+            var moving = input.CanMove && input.HasDirectionalMovement
+                && (now - state.LastMoved).TotalSeconds < .12;
+            var crawling = !state.Standing && moving && (alive || HasComp<ActiveCrawlWhileCritComponent>(uid));
+            var body = CompOrNull<BodyComponent>(uid);
+            var missingLegs = body != null && body.LegEntities.Count < body.RequiredLegs;
+            var held = HasHeldItem(uid);
+            var action = ActionClip(state, now, alive, state.Standing, held);
+            if (action == null && (!crawling && (!alive || !state.Standing) || moving && missingLegs))
             {
                 Restore(uid, state);
                 state.StridePhase = 0;
                 continue;
             }
-            var held = HasHeldItem(uid);
+
+            Clip? gait = null;
+            var stepDistance = input.GetFootstepDistance(mover);
+            if (moving && !missingLegs && float.IsFinite(stepDistance) && stepDistance > 0)
+            {
+                if (crawling)
+                {
+                    state.StridePhase = (state.StridePhase + delta / stepDistance * .75f) % 1;
+                    gait = new Clip(held ? "crawl-held" : "crawl", Math.Clamp((int) (state.StridePhase * 8), 0, 7));
+                }
+                else if (state.Standing && alive)
+                {
+                    int frame;
+                    if (uid == localEntity)
+                    {
+                        frame = (int) (mover.FootstepSequence & 1) * 4;
+                        // The contact pose and camera impulse follow the step sound request.
+                        if (!newStep)
+                            frame += Math.Clamp((int) (mover.StepSoundDistance / stepDistance * 4), 0, 3);
+                        else if (input.Sprinting && _eyes.MainViewport is not CMU3DSceneControl)
+                            _recoil.KickCamera(uid, new Vector2(0, -SprintStepKick));
+                    }
+                    else
+                    {
+                        state.StridePhase = (state.StridePhase + delta / stepDistance * .5f) % 1;
+                        frame = Math.Clamp((int) (state.StridePhase * 8), 0, 7);
+                    }
+                    gait = new Clip(WalkingClip(uid, input, body, held), frame);
+                }
+            }
+            else
+            {
+                state.StridePhase = 0;
+            }
+
+            if (state.Action is CMUHumanAction.Fall or CMUHumanAction.Rise)
+                gait = null;
+            var lower = gait ?? action ?? IdleClip(uid, now, held);
+            var upper = action ?? lower;
             if (!Valid((uid, sprite), state))
                 Restore(uid, state);
             if (state.Layers.Count == 0)
                 Apply((uid, sprite), state);
-            int frame;
-            if (uid == localEntity)
-            {
-                frame = (int) (mover.FootstepSequence & 1) * 4;
-                // Show the contact pose on the same update as a new sound request.
-                if (!newStep)
-                    frame += Math.Clamp((int) (mover.StepSoundDistance / stepDistance * 4), 0, 3);
-                else if (sprinting && _eyes.MainViewport is not CMU3DSceneControl)
-                    _recoil.KickCamera(uid, new Vector2(0, -SprintStepKick));
-            }
-            else
-            {
-                // Other movers use the same step spacing from their observed movement.
-                state.StridePhase = (state.StridePhase + delta / stepDistance * 0.5f) % 1;
-                frame = Math.Clamp((int) (state.StridePhase * 8), 0, 7);
-            }
-            if (frame == state.Frame && held == state.Held && sprinting == state.Sprinting)
+            if (state.LowerPose == lower && state.UpperPose == upper)
                 continue;
-            state.Frame = frame;
-            state.Held = held;
-            state.Sprinting = sprinting;
-            var prefix = sprinting ? (held ? "run-held-" : "run-") : (held ? "held-" : "walk-");
+            state.LowerPose = lower;
+            state.UpperPose = upper;
             foreach (var entry in state.Layers)
             {
                 foreach (var map in entry.Maps)
                 {
-                    var key = prefix + map.Role;
-                    _sprites.LayerSetRsiState((uid, sprite), map.Key, key);
-                    _sprites.LayerSetAutoAnimated((uid, sprite), map.Key, false);
-                    _sprites.LayerSetAnimationTime((uid, sprite), map.Key, frame * 0.1f + 0.001f);
+                    var clip = map.LowerBody ? lower : upper;
+                    var key = clip.Name + "-" + map.Role;
+                    if (map.Layer.State.Name != key)
+                        _sprites.LayerSetRsiState((uid, sprite), map.Key, key);
+                    _sprites.LayerSetAnimationTime((uid, sprite), map.Key, clip.Frame * .1f + .001f);
                 }
             }
         }
@@ -346,14 +397,19 @@ public sealed partial class CMUHumanWalkSystem : EntitySystem
             _sprites.LayerMapSet(ent.AsNullable(), mapKey, mapIndex);
             var mapLayer = (SpriteComponent.Layer) ent.Comp[mapIndex];
             _sprites.LayerSetDirOffset(mapLayer, layer.DirOffset);
-            maps.Add(new(mapKey, slices[slice], mapLayer));
+            _sprites.LayerSetAutoAnimated(ent.AsNullable(), mapKey, false);
+            var mapRole = slices[slice];
+            var lowerBody = mapRole is "clothes-back-leg" or "clothes-front-leg"
+                or "leg-left" or "leg-right" or "foot-left" or "foot-right" or "shoe-left" or "shoe-right";
+            maps.Add(new(mapKey, mapRole, mapLayer, lowerBody));
         }
         state.Layers.Add(new(alias, layer, maps, original, prototype, shader));
     }
 
     private void Restore(EntityUid uid, WalkState state)
     {
-        state.Frame = -1;
+        state.LowerPose = null;
+        state.UpperPose = null;
         if (state.Layers.Count == 0)
             return;
         if (TryComp<SpriteComponent>(uid, out var sprite))

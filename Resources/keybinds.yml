@@ -48,6 +48,9 @@ binds:
 - function: Walk
   type: State
   key: Shift
+- function: CMUToggleQuietWalk # CMU14: toggle quiet walking for humans
+  type: State
+  key: CapsLock
 # Shuttle
 - function: ShuttleStrafeUp
   type: State
