@@ -48,11 +48,33 @@ def check_depth_stride(sheets):
                 rows = []
                 for side, mask in feet:
                     posed = sample(mask, sheets[f"{mode}-foot-{side}"], direction, index)
-                    assert posed.sum() == mask.sum(), (mode, direction, side, index, "clipped foot")
+                    assert len(np.unique(Y[posed])) == len(np.unique(Y[mask])), (mode, direction, side, index, "clipped foot")
                     rows.append(Y[posed].mean())
                 contacts.append(rows[0] - rows[1])
             # A contact alternates which foot projects nearer the camera in both views.
             assert min(contacts) < -1 and max(contacts) > 1, (mode, direction, contacts)
+
+
+def check_straight_feet(sheets):
+    for direction in (0, 1):
+        boots = np.array(frame(BOOTS, "equipped-FEET", direction))[:, :, 3] > 0
+        feet = {
+            side: np.array(frame(PARTS, f"{letter}_foot", direction))[:, :, 3] > 0
+            for side, letter in (("left", "l"), ("right", "r"))
+        }
+        for mode, _, spec in CLIPS:
+            if spec.get("stationary"):
+                continue
+            for index in range(8):
+                for side, foot in feet.items():
+                    for role, mask in ((f"foot-{side}", foot), (f"shoe-{side}", boots)):
+                        lookup = sheets[f"{mode}-{role}"]
+                        heel = sample(mask & (Y == 29), lookup, direction, index)
+                        toe = sample(mask & (Y >= 30), lookup, direction, index)
+                        assert heel.any() and toe.any(), (mode, role, direction, index)
+                        assert np.all(~toe.any(axis=0) | heel.any(axis=0)), (mode, role, direction, index)
+                    heel = sample(foot & (Y == 29), sheets[f"{mode}-foot-{side}"], direction, index)
+                    assert np.array_equal(heel.any(axis=0), (foot & (Y == 29)).any(axis=0)), (mode, side, direction, index)
 
 
 def check_stationary_actions(sheets):
@@ -240,6 +262,7 @@ def main():
     assert unlit == "light_mode unshaded;\n" + lit, "Lit/unlit lookup math must match"
     check_sprint_arms(sheets)
     check_depth_stride(sheets)
+    check_straight_feet(sheets)
     check_stationary_actions(sheets)
     check_uniform_coverage(sheets)
     outfits = check_profile_coverage(sheets)
@@ -248,6 +271,7 @@ def main():
     print(f"OK: no newly exposed sleeve, trouser or boot pixels in {outfits} profile outfit/pose cases.")
     print("OK: raised sprint wrists; no copied profile sleeve or glove; rear leg and boot shading.")
     print(f"OK: alternating front/rear contacts in walk and sprint, and uniform coverage in all {len(clips)} clips.")
+    print("OK: front/rear toes align with the heels and ankles stay on their own tracks.")
     print(f"OK: repaired clothing gaps and preserved bare arms and open tops in {torso_cases} profile outfit/pose cases.")
 
 

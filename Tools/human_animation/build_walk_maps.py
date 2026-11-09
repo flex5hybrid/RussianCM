@@ -104,16 +104,26 @@ def pose(direction, index, held, spec):
             stride *= .55
             lift = min(lift, 1)
         dx, dy = round(stride * facing), -lift
+        sole = SOURCE
         if not profile:
-            outward = -1 if lx < 16 else 1
             depth = round(stride * (1 if direction == 0 else -1) * .6)
-            dx = outward if depth > 0 else -outward if depth < -1 else 0
+            dx = 0
             # Reserve pixels below the neutral sole for the forward step. The far foot recedes
             # independently of knee lift, which contributes less when looking along the stride.
             dy = 0 if stationary else -2 + depth - round(lift * .35)
+            if not stationary:
+                # Front and back source feet have a toe that sticks out by a pixel. Compress
+                # the outer half of the forefoot, keeping its outline and the ankle in place.
+                outward = -1 if lx < 16 else 1
+                outer_toe = (yy >= 30) & ((xx + .5 - lx) * outward > 0)
+                source_x = xx + np.where(outer_toe, outward, 0)
+                straight = encoded.copy()
+                straight[:, :, 0] = np.clip(source_x + 1, 1, 32)
+                straight[:, :, 3] = np.where((source_x >= 0) & (source_x < 32), 255, 0)
+                sole = Image.fromarray(straight)
         ankle_rows.append(dy)
         hip, ankle = (lx + forward, 21 + bob), (lx + dx, 29 + dy)
-        bend = 0 if stationary else facing if profile else (-.42 if lx < 16 else .42)
+        bend = facing if profile and not stationary else 0
         knee = joint(hip, ankle, bend)
 
         def leg_image(source):
@@ -129,7 +139,7 @@ def pose(direction, index, held, spec):
 
         leg_maps.append(leg_image(clipped(SOURCE, yy >= 21)))
         foot_map = Image.new("RGBA", (40, 40))
-        paste_at(foot_map, SOURCE, dx, dy)
+        paste_at(foot_map, sole, dx, dy)
         foot_maps.append(foot_map)
         leg_mask = (yy >= 21) & ((xx >= 16) if bounds[0] >= 16 else (xx < 16)) & (xx >= 9) & (xx < 22)
         if profile:
@@ -138,7 +148,7 @@ def pose(direction, index, held, spec):
         cloth_legs.append(leg_image(clipped(SOURCE, leg_mask)))
         shoe_mask = (np.ones((32, 32), bool) if profile else ((xx >= 16) if bounds[0] >= 16 else (xx < 16)))
         shoe = leg_image(clipped(SOURCE, shoe_mask & (yy >= 24) & (yy < 29)))
-        paste_at(shoe, clipped(SOURCE, shoe_mask & (yy >= 29)), dx, dy)
+        paste_at(shoe, clipped(sole, shoe_mask & (yy >= 29)), dx, dy)
         shoe_maps.append(shoe)
 
         if held:
