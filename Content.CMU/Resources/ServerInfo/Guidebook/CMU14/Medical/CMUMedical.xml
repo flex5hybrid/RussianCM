@@ -1,45 +1,45 @@
 <Document>
-  # Medical
+  # Медицина
 
-  [bold]Not a medic?[/bold] Start with [textlink="Infantry First Aid" link="CMUGuideMedicalInfantry"]. It covers everything in your IFAK and how to keep yourself and your squad alive until a medic arrives.
+  [bold]Не медик?[/bold] Начните с [textlink="Первой помощи пехоты" link="CMUGuideMedicalInfantry"]. Там всё, что есть в вашей IFAK, и как сохранить себя и отряд до прихода медика.
 
-  Injuries are tracked on each part of the body. A gunshot to the arm leaves a wound on that arm, a heavy blow can break a bone, and enough trauma to the chest can damage the organs inside it. Treating a patient means finding each of those problems and fixing them one by one.
+  Повреждения отслеживаются по каждой части тела. Пулевое ранение в руку оставляет рану на этой руке, тяжёлый удар может сломать кость, а достаточно сильная травма груди может повредить органы внутри неё. Лечить пациента — значит найти каждую из этих проблем и исправить их по одной.
 
   <Box>
-    <GuideEntityEmbed Entity="CMHealthAnalyzer" Caption="Health analyzer"/>
-    <GuideEntityEmbed Entity="CMTraumaKit10" Caption="Trauma kit"/>
-    <GuideEntityEmbed Entity="CMBurnKit10" Caption="Burn kit"/>
-    <GuideEntityEmbed Entity="CMScalpel" Caption="Scalpel"/>
+    <GuideEntityEmbed Entity="CMHealthAnalyzer" Caption="Анализатор здоровья"/>
+    <GuideEntityEmbed Entity="CMTraumaKit10" Caption="Травматологический набор"/>
+    <GuideEntityEmbed Entity="CMBurnKit10" Caption="Противоожоговый набор"/>
+    <GuideEntityEmbed Entity="CMScalpel" Caption="Скальпель"/>
   </Box>
 
-  ## How Injuries Work
-  - [bold]Body parts[/bold]: the head, torso, arms, hands, legs and feet each have their own health. Damage lands on the part that was hit.
-  - [bold]Wounds[/bold]: damage leaves wounds on the part it hit. Untreated wounds lower that part's maximum health and can bleed.
-  - [bold]Bones[/bold]: heavy hits can fracture a bone, from a hairline crack up to a shattered bone.
-  - [bold]Organs[/bold]: the heart, lungs, liver, kidneys, stomach, brain and eyes each have their own health, and damaged organs cause their own problems.
-  - [bold]Blood[/bold]: open wounds and internal bleeding drain blood, which starves the body of oxygen.
-  - [bold]Pain[/bold]: injuries hurt. Pain slows you down, ruins your aim and can put you into shock.
+  ## Как работают повреждения
+  - [bold]Части тела[/bold]: голова, торс, руки, кисти, ноги и ступни имеют собственное здоровье. Урон ложится на ту часть, в которую попали.
+  - [bold]Раны[/bold]: урон оставляет раны на поражённой части. Необработанные раны снижают её максимальное здоровье и могут кровоточить.
+  - [bold]Кости[/bold]: тяжёлые удары могут сломать кость — от трещины до раздробленности.
+  - [bold]Органы[/bold]: сердце, лёгкие, печень, почки, желудок, мозг и глаза имеют собственное здоровье, и повреждённые органы дают свои проблемы.
+  - [bold]Кровь[/bold]: открытые раны и внутреннее кровотечение теряют кровь, а тело из-за этого лишается кислорода.
+  - [bold]Боль[/bold]: повреждения болят. Боль замедляет вас, портит прицеливание и может вогнать в шок.
 
-  ## Aiming at a Body Part
-  In combat you can choose which part of the body to aim for. The keys to cycle or pick a body zone are under [bold]CMU Medical[/bold] in the controls menu. Aiming only nudges where a hit lands; it doesn't guarantee it.
+  ## Прицеливание в часть тела
+  В бою можно выбрать, в какую часть тела целиться. Клавиши переключения или выбора зоны тела находятся в разделе [bold]CMU Medical[/bold] меню управления. Прицеливание лишь смещает точку попадания; оно ничего не гарантирует.
 
-  ## Medical Training
-  Most medical work checks your medical skill:
-  - [bold]No training[/bold]: you can still use basic first aid like gauze and ointment, just more slowly.
-  - [bold]Basic training (medical 1)[/bold]: listen with a stethoscope, see fractures and internal bleeding on a health analyzer, hook up and read a patient monitor.
-  - [bold]Trained medic (medical 2)[/bold]: see organ damage on a health analyzer, use kits at full speed and strength, and use defibrillators.
-  - [bold]Surgery[/bold] uses a separate surgery skill. See [textlink="Surgery" link="CMUGuideMedicalSurgery"].
+  ## Медицинская подготовка
+  Большая часть медицинской работы проверяет ваш медицинский навык:
+  - [bold]Без подготовки[/bold]: вы всё ещё можете пользоваться базовой первой помощью — марлей и мазью, только медленнее.
+  - [bold]Базовая подготовка (медицина 1)[/bold]: слушать стетоскопом, видеть переломы и внутреннее кровотечение на анализаторе здоровья, подключать и читать монитор пациента.
+  - [bold]Обученный медик (медицина 2)[/bold]: видеть повреждение органов на анализаторе здоровья, использовать наборы на полной скорости и силе, пользоваться дефибрилляторами.
+  - [bold]Хирургия[/bold] использует отдельный хирургический навык. См. [textlink="Хирургия" link="CMUGuideMedicalSurgery"].
 
-  ## In This Guide
-  - [textlink="Cryogenic Medicines and Recipes" link="CMUGuideMedsCryogenic"]: cryo treatments, mixing ratios, heating requirements and precursor recipes.
-  - [textlink="Start Here: Infantry First Aid" link="CMUGuideMedicalInfantry"]: using your IFAK, for riflemen and anyone who isn't a medic.
-  - [textlink="Diagnosis" link="CMUGuideMedicalDiagnosis"]: working out what's wrong with a patient.
-  - [textlink="Wounds and Bleeding" link="CMUGuideMedicalWounds"]: dressing wounds, stopping bleeding and burns.
-  - [textlink="Field Treatment Mixing" link="CMUGuideMedicalFieldCare"]: making dressings in the field.
-  - [textlink="Fractures" link="CMUGuideMedicalBones"]: splints, casts and setting bones.
-  - [textlink="Pain" link="CMUGuideMedicalPain"]: pain, shock and painkillers.
-  - [textlink="Organs" link="CMUGuideMedicalOrgans"]: organ damage and how to fix it.
-  - [textlink="Surgery" link="CMUGuideMedicalSurgery"]: operating on a patient.
-  - [textlink="Resuscitation" link="CMUGuideMedicalResuscitation"]: CPR, the recovery position and bringing back the dead.
-  - [textlink="Defibrillators" link="CMUGuideDefibrillators"]: the Lifepak, the AED and patient monitoring.
+  ## В этом руководстве
+  - [textlink="Криогенные медикаменты и рецепты" link="CMUGuideMedsCryogenic"]: криолечение, пропорции смешивания, требования к нагреву и рецепты прекурсоров.
+  - [textlink="Начните здесь: первая помощь пехоты" link="CMUGuideMedicalInfantry"]: использование вашей IFAK — для стрелков и всех, кто не медик.
+  - [textlink="Диагностика" link="CMUGuideMedicalDiagnosis"]: как понять, что не так с пациентом.
+  - [textlink="Раны и кровотечение" link="CMUGuideMedicalWounds"]: перевязка ран, остановка кровотечения и ожоги.
+  - [textlink="Полевое смешивание препаратов" link="CMUGuideMedicalFieldCare"]: изготовление повязок в поле.
+  - [textlink="Переломы" link="CMUGuideMedicalBones"]: шины, гипс и вправление костей.
+  - [textlink="Боль" link="CMUGuideMedicalPain"]: боль, шок и обезболивающие.
+  - [textlink="Органы" link="CMUGuideMedicalOrgans"]: повреждение органов и как его исправить.
+  - [textlink="Хирургия" link="CMUGuideMedicalSurgery"]: оперирование пациента.
+  - [textlink="Реанимация" link="CMUGuideMedicalResuscitation"]: СЛР, восстановительное положение и возвращение мёртвых.
+  - [textlink="Дефибрилляторы" link="CMUGuideDefibrillators"]: Lifepak, AED и мониторинг пациента.
 </Document>

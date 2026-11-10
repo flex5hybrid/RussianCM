@@ -1,57 +1,57 @@
 <Document>
-  # Medical Machines
+  # Медицинские аппараты
 
-  Well-equipped medbays have machines that diagnose, treat and even operate on patients. Each pod needs its console within a few tiles to work.
+  Хорошо оснащённые медотсеки имеют аппараты, которые диагностируют, лечат и даже оперируют пациентов. Каждой капсуле нужна её консоль в пределах нескольких тайлов.
 
-  ## Body Scanner
+  ## Сканер тела
   <Box>
-    <GuideEntityEmbed Entity="CMUBodyScannerPod" Caption="Body scanner pod"/>
-    <GuideEntityEmbed Entity="CMUBodyScannerConsole" Caption="Body scanner console"/>
+    <GuideEntityEmbed Entity="CMUBodyScannerPod" Caption="Капсула сканера тела"/>
+    <GuideEntityEmbed Entity="CMUBodyScannerConsole" Caption="Консоль сканера тела"/>
   </Box>
-  The body scanner gives a full diagnostic readout of everything wrong with a patient: fractures, internal bleeding, organ damage and more, part by part.
-  - Put the patient in the pod, then use the console. Reading scans needs [bold]surgery training[/bold] (level 1).
-  - [bold]Calibration[/bold]: the console can also calibrate a surgical assist. Tune each scan slice and lock the abnormal readings while the sweep is in the cyan band. You have 2 minutes, and every wrong lock costs you 8 seconds.
-  - Succeed, and your surgery steps on that patient are [bold]twice as fast[/bold] for 10 minutes.
-  - Fail or run out of time, and you're locked out of calibrating that patient for 10 minutes.
+  Сканер тела выдаёт полную диагностическую картину всего, что не так с пациентом: переломы, внутренние кровотечения, повреждения органов и прочее, часть за частью.
+  - Поместите пациента в капсулу, затем используйте консоль. Для чтения сканов нужна [bold]хирургическая подготовка[/bold] (1-й уровень).
+  - [bold]Калибровка[/bold]: консоль также может калибровать хирургический ассистент. Настройте каждый срез скана и зафиксируйте аномальные показания, пока развёртка в голубой полосе. У вас 2 минуты, и каждая неверная фиксация стоит вам 8 секунд.
+  - При успехе ваши хирургические шаги на этом пациенте будут [bold]вдвое быстрее[/bold] в течение 10 минут.
+  - При провале или истечении времени вы не сможете калибровать этого пациента 10 минут.
 
-  ## Autodoc
+  ## Автодок
   <Box>
-    <GuideEntityEmbed Entity="CMUAutodocPod" Caption="Autodoc pod"/>
-    <GuideEntityEmbed Entity="CMUAutodocConsole" Caption="Autodoc console"/>
+    <GuideEntityEmbed Entity="CMUAutodocPod" Caption="Капсула автодока"/>
+    <GuideEntityEmbed Entity="CMUAutodocConsole" Caption="Консоль автодока"/>
   </Box>
-  The autodoc operates by itself, so anyone can queue up the work and step away. It needs no surgery training.
-  - Put the patient in the pod, then open the console.
-  - Pick a body part and the surgeries it needs, and add them to the queue. It can also run [bold]Repair Wounds / Burns[/bold] as an automated cycle.
-  - Press [bold]Start[/bold]. The pod works through the queue on its own. It's thorough but slow: each step takes the better part of a minute.
-  - [bold]Stop[/bold] pauses it, [bold]Clear[/bold] empties the queue, and [bold]Eject Patient[/bold] takes them out.
-  - The pod counts as an operating table, so its steps never fail because of where the patient is lying.
+  Автодок оперирует сам, поэтому любой может поставить процедуры в очередь и отойти. Хирургическая подготовка не требуется.
+  - Поместите пациента в капсулу, затем откройте консоль.
+  - Выберите часть тела и нужные ей операции и добавьте их в очередь. Он также может выполнять [bold]Восстановление ран / ожогов[/bold] как автоматический цикл.
+  - Нажмите [bold]Старт[/bold]. Капсула сама проходит очередь. Это основательно, но медленно: каждый шаг занимает почти минуту.
+  - [bold]Стоп[/bold] приостанавливает, [bold]Очистить[/bold] опустошает очередь, а [bold]Извлечь пациента[/bold] вынимает его.
+  - Капсула считается операционным столом, поэтому её шаги никогда не проваливаются из-за того, где лежит пациент.
 
-  ## Limb Printer
+  ## Принтер конечностей
   <Box>
-    <GuideEntityEmbed Entity="CMULimbPrinter" Caption="Limb printer"/>
+    <GuideEntityEmbed Entity="CMULimbPrinter" Caption="Принтер конечностей"/>
   </Box>
-  The limb printer makes replacement arms, hands, legs and feet for patients who've lost one. Open it to pick the limb and side you need. The printed limb drops out next to the machine.
-  - [bold]Human limbs[/bold] need [bold]30u of biogenic matrix[/bold] from the beaker and [bold]7.5u of blood[/bold] from a syringe of the patient's blood. The printer starts with a beaker of 120u matrix, enough for four limbs. Chemistry can mix more.
-  - [bold]Robotic limbs[/bold] need [bold]15 metal sheets[/bold] loaded into the printer instead.
-  - The printer only makes the limb. Attaching it is surgery; see [textlink="Limb Surgery" link="CMUGuideSurgeryLimbs"].
+  Принтер конечностей создаёт замену рук, кистей, ног и ступней для пациентов, потерявших конечность. Откройте его, чтобы выбрать нужную конечность и сторону. Напечатанная конечность выпадает рядом с аппаратом.
+  - [bold]Человеческие конечности[/bold] требуют [bold]30 ед. биогенной матрицы[/bold] из мензурки и [bold]7,5 ед. крови[/bold] из шприца с кровью пациента. Принтер поставляется с мензуркой на 120 ед. матрицы — хватает на четыре конечности. Химия может смешать ещё.
+  - [bold]Роботизированные конечности[/bold] требуют [bold]15 листов металла[/bold], загруженных в принтер вместо этого.
+  - Принтер только создаёт конечность. Присоединение — это операция; см. [textlink="Операции на конечностях" link="CMUGuideSurgeryLimbs"].
 
-  ## Portable Dialysis
+  ## Портативный диализ
   <Box>
-    <GuideEntityEmbed Entity="RMCPortableDialysis" Caption="Portable dialysis machine"/>
+    <GuideEntityEmbed Entity="RMCPortableDialysis" Caption="Портативный аппарат для диализа"/>
   </Box>
-  A battery-powered machine that cleans a patient's blood. Hook it up by using it on the patient; it needs [bold]medical training[/bold] (level 2) and stays connected while the patient is within 2 tiles.
-  - Every second it filters [bold]1.5u of each chemical[/bold] out of the bloodstream, good and bad alike. Use it to clear poisons and overdoses, not while their medicine is working.
-  - It also filters out [bold]saline[/bold], 3u a second, leaving the patient's own blood in its place. See [textlink="Blood and Transfusions" link="CMUGuideMedicalBlood"].
-  - [color=red]It costs the patient 6u of blood a second[/color]. Watch their blood level, and give blood if it drops.
-  - It disconnects when its battery runs out.
+  Аппарат на аккумуляторе, который очищает кровь пациента. Подключите его, применив к пациенту; нужна [bold]медицинская подготовка[/bold] (2-й уровень), и он остаётся подключённым, пока пациент в пределах 2 тайлов.
+  - Каждую секунду он отфильтровывает [bold]1,5 ед. каждого химиката[/bold] из кровотока — и полезного, и вредного. Используйте его, чтобы вывести яды и передозировки, но не пока действуют лекарства.
+  - Он также отфильтровывает [bold]физраствор[/bold], 3 ед. в секунду, оставляя на его месте собственную кровь пациента. См. [textlink="Кровь и переливания" link="CMUGuideMedicalBlood"].
+  - [color=red]Он стоит пациенту 6 ед. крови в секунду[/color]. Следите за уровнем крови и давайте кровь, если он падает.
+  - Он отключается, когда садится аккумулятор.
 
-  ## Cryo Pod
+  ## Криокапсула
   <Box>
-    <GuideEntityEmbed Entity="CryoPod" Caption="Cryo pod"/>
+    <GuideEntityEmbed Entity="CryoPod" Caption="Криокапсула"/>
   </Box>
-  The cryo pod injects medicine from an inserted beaker and chills the patient with gas from a connected freezer.
-  - Load a beaker with the cryogenic medicine needed for the patient's injuries, then put the patient inside.
-  - The new cryogenic medicines start healing when the patient's body reaches 213 K or colder. Opporozidone needs 150 K or colder.
-  - Cryoxadone treats suffocation and blood loss; Aloxadone treats burns; Traumoxadone treats brute damage; Urishoxadone treats poison and radiation; Doxarubixadone treats cellular and organ damage; Necrosol repairs fractures, restores blood and regenerates missing native limbs; Opporozidone reverses rot in dead patients.
-  - See [textlink="Cryogenic Medicines and Recipes" link="CMUGuideMedsCryogenic"] for mixing ratios, precursor recipes, heating requirements and treatment details.
+  Криокапсула вводит лекарство из вставленной мензурки и охлаждает пациента газом из подключённого морозильника.
+  - Загрузите в мензурку криогенное лекарство, нужное для повреждений пациента, затем поместите пациента внутрь.
+  - Новые криогенные лекарства начинают лечить, когда тело пациента достигает 213 K или ниже. Opporozidone требует 150 K или ниже.
+  - Cryoxadone лечит удушье и кровопотерю; Aloxadone лечит ожоги; Traumoxadone лечит физические повреждения; Urishoxadone лечит яд и радиацию; Doxarubixadone лечит клеточные и органные повреждения; Necrosol восстанавливает переломы, восполняет кровь и регенерирует утраченные родные конечности; Opporozidone обращает вспять разложение у мёртвых пациентов.
+  - О пропорциях смешивания, рецептах прекурсоров, требованиях к нагреву и деталях лечения см. [textlink="Криогенные медикаменты и рецепты" link="CMUGuideMedsCryogenic"].
 </Document>

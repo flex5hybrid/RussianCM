@@ -1,41 +1,41 @@
 <Document>
-  # Power & oil
+  # Энергия и нефть
 
-  [textlink="Mining & Industry" link="CMUGuideIndustry"] · [textlink="Equipment recipes" link="CMUGuideIndustryRecipes"]
+  [textlink="Добыча и производство" link="CMUGuideIndustry"] · [textlink="Рецепты снаряжения" link="CMUGuideIndustryRecipes"]
 
   <Box>
-    <GuideEntityEmbed Entity="RUMCSteamGenerator" Caption="GENERATE"/>
-    <GuideEntityEmbed Entity="RUMCTransformerDown" Caption="HV → MV"/>
-    <GuideEntityEmbed Entity="PowerPanel" Caption="ELECTRICAL PANEL"/>
+    <GuideEntityEmbed Entity="RUMCSteamGenerator" Caption="ГЕНЕРАЦИЯ"/>
+    <GuideEntityEmbed Entity="RUMCTransformerDown" Caption="ВН → СН"/>
+    <GuideEntityEmbed Entity="PowerPanel" Caption="ЭЛЕКТРОЩИТ"/>
   </Box>
-  [bold]Generator → HV cable → step-down transformer → MV cable → electrical panel → nearby machines.[/bold] Anchor the electrical panel directly over the MV cable; it supplies powered devices within five tiles. Anchor equipment and connect the matching cable networks. A generator alone does not power every machine in the room.
+  [bold]Генератор → кабель ВН → понижающий трансформатор → кабель СН → электрощит → ближайшие машины.[/bold] Закрепите электрощит прямо над кабелем СН: он питает устройства в радиусе пяти тайлов. Закрепляйте оборудование и подключайте соответствующие кабельные сети. Один генератор не питает все машины в помещении.
 
-  ## Choose a source
-  - [bold]Steam:[/bold] feed steam from your boiler to the generator.
-  - [bold]Solar:[/bold] expose panels to sunlight and orient them toward it; shade reduces output.
-  - [bold]Diesel / gas turbine:[/bold] supply the specified fuel through a suitable container or fluid connection. Keep the tank filled.
-  - [bold]Geothermal:[/bold] place near lava; ordinary cave floor supplies no heat.
-  - [bold]Battery buffer / bank:[/bold] store surplus generation. They need charging before they can cover shortages.
+  ## Выберите источник
+  - [bold]Пар:[/bold] подайте пар от котла к генератору.
+  - [bold]Солнце:[/bold] выставьте панели на солнечный свет и ориентируйте их на него; тень снижает выработку.
+  - [bold]Дизель / газовая турбина:[/bold] подавайте указанное топливо через подходящую ёмкость или жидкостное соединение. Держите бак заполненным.
+  - [bold]Геотермаль:[/bold] размещайте у лавы; обычный пещерный пол тепла не даёт.
+  - [bold]Буфер / батарея:[/bold] хранит излишки выработки. Перед покрытием дефицита их нужно зарядить.
 
-  Cable shafts connect matching voltage networks between Z-levels. Keep HV, MV and LV separate. Use a powered cell charger for removable tool cells.
+  Кабельные шахты соединяют сети одинакового напряжения между Z-уровнями. Держите ВН, СН и НН раздельно. Для съёмных элементов инструментов используйте заряжающее устройство под питанием.
 
-  [textlink="Make an electrical panel" link="CMUGuideIndustryRecipes"] · [textlink="Run a processing machine" link="CMUGuideIndustryMachines"]
+  [textlink="Сделать электрощит" link="CMUGuideIndustryRecipes"] · [textlink="Запустить обрабатывающую машину" link="CMUGuideIndustryMachines"]
 
-  ## Turn oil into useful supplies
+  ## Превратите нефть в полезные припасы
   <Box>
-    <GuideEntityEmbed Entity="RUMCOilPump" Caption="ON THE DEPOSIT"/>
-    <GuideEntityEmbed Entity="RUMCDistillationTower" Caption="SEPARATE FRACTIONS"/>
+    <GuideEntityEmbed Entity="RUMCOilPump" Caption="НА МЕСТОРОЖДЕНИИ"/>
+    <GuideEntityEmbed Entity="RUMCDistillationTower" Caption="РАЗДЕЛЕНИЕ ФРАКЦИЙ"/>
   </Box>
-  1. Activate a [textlink="prospector" link="CMUGuideIndustryTools"] to find nearby deposits. Place the oil pump on one and power it.
-  2. Lay a touching [textlink="liquid pipe run" link="CMUGuideIndustryPipes"] from the pump to the tower. Use a screwdriver on the first pipe, then the pump → OUTPUT → Connect selected pipe. Select the last pipe, then the tower → crude oil INPUT → Connect selected pipe.
-  3. Connect storage/output routes for [bold]all fractions[/bold]: naphtha, light fuel, heavy fuel and refinery gas. The tower occupies two tiles, so its inlet and four outputs can use separate pipe runs around the footprint. Full outputs can stop production.
-  4. Route light fuel and heavy fuel to the fuel mixer's matching INPUTS. [bold]30 units light fuel + 20 units heavy fuel → 50 units diesel.[/bold] Connect its diesel OUTPUT to a separate barrel's INPUT. Supply power and leave room for the finished fuel.
+  1. Активируйте [textlink="геологоразведчик" link="CMUGuideIndustryTools"], чтобы найти ближайшие месторождения. Поставьте нефтяной насос на одно из них и запитайте его.
+  2. Проложите соприкасающуюся [textlink="линию жидкостных труб" link="CMUGuideIndustryPipes"] от насоса к вышке. Примените отвёртку к первой трубе, затем насос → OUTPUT → Connect selected pipe. Выберите последнюю трубу, затем вышку → crude oil INPUT → Connect selected pipe.
+  3. Подключите маршруты хранения/вывода для [bold]всех фракций[/bold]: нафты, лёгкого топлива, тяжёлого топлива и нефтезаводского газа. Вышка занимает два тайла, поэтому её вход и четыре выхода могут использовать отдельные линии труб вокруг её площади. Заполненные выходы могут остановить производство.
+  4. Направьте лёгкое и тяжёлое топливо в соответствующие INPUTS топливного смесителя. [bold]30 единиц лёгкого топлива + 20 единиц тяжёлого топлива → 50 единиц дизеля.[/bold] Подключите его дизельный OUTPUT к INPUT отдельной бочки. Подайте питание и оставьте место для готового топлива.
 
-  [bold]Sell diesel:[/bold] move the filled barrel onto the colony ASRS elevator and send it away using the requisitions console. Diesel pays per unit actually inside; an empty barrel does not earn the fuel's value. [textlink="Selling controls" link="CMUGuideIndustryProducts"]
+  [bold]Продажа дизеля:[/bold] переместите заполненную бочку на лифт ASRS колонии и отправьте её через консоль снабжения. Дизель оплачивается за единицы, фактически находящиеся внутри; пустая бочка не приносит стоимости топлива. [textlink="Управление продажей" link="CMUGuideIndustryProducts"]
 
-  For plastics: crack suitable fractions into ethylene, polymerize it into pellets, then use a bender for sheets.
+  Для пластика: крекируйте подходящие фракции в этилен, полимеризуйте его в гранулы, затем используйте гибочный станок для листов.
 
-  Open each machine's window for its exact inputs, fluids and circuit. To fill a canister, hold it and right-click a fillable tank → [bold]Draw the liquid into the container[/bold]. Click a fillable tank or generator with the filled canister to pour it in.
+  Откройте окно каждой машины, чтобы увидеть её точные входы, жидкости и схему. Чтобы заполнить канистру, возьмите её и нажмите ПКМ по заполняемому баку → [bold]Набрать жидкость в ёмкость[/bold]. Щёлкните заполненной канистрой по заполняемому баку или генератору, чтобы вылить её.
 
-  [textlink="Pipe connection controls" link="CMUGuideIndustryPipes"] · [textlink="Machine quick reference" link="CMUGuideIndustryMachines"]
+  [textlink="Управление подключением труб" link="CMUGuideIndustryPipes"] · [textlink="Краткий справочник по машинам" link="CMUGuideIndustryMachines"]
 </Document>

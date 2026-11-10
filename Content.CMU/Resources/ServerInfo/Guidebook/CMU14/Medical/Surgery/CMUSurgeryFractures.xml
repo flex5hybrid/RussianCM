@@ -1,48 +1,48 @@
 <Document>
-  # Fracture Surgery
+  # Операции при переломах
 
   <Box>
-    <GuideEntityEmbed Entity="CMBonesetter" Caption="Bone setter"/>
-    <GuideEntityEmbed Entity="CMBoneGel" Caption="Bone gel"/>
-    <GuideEntityEmbed Entity="CMUBoneGraftItem" Caption="Bone graft"/>
+    <GuideEntityEmbed Entity="CMBonesetter" Caption="Костоправ"/>
+    <GuideEntityEmbed Entity="CMBoneGel" Caption="Костный гель"/>
+    <GuideEntityEmbed Entity="CMUBoneGraftItem" Caption="Костный трансплантат"/>
   </Box>
 
-  Simple, compound and shattered fractures are all set surgically. On an [bold]arm, hand, leg or foot[/bold] you only need to open the incision. On the [bold]chest or head[/bold] you also need to open the bone cavity, and close it again at the end. For how to tell fractures apart and what to do after, see [textlink="Fractures" link="CMUGuideMedicalBones"].
+  Простые, открытые и раздробленные переломы вправляются хирургически. На [bold]руке, кисти, ноге или ступне[/bold] достаточно открыть разрез. На [bold]груди или голове[/bold] нужно ещё открыть костную полость и в конце снова закрыть её. О том, как различать переломы и что делать после, см. [textlink="Переломы" link="CMUGuideMedicalBones"].
 
-  Fractures on limbs can be set on yourself.
+  Переломы на конечностях можно вправлять себе.
 
-  ## Set Simple Fracture
-  1. [italic]Open the incision.[/italic] (Chest or head: also open the bone cavity.)
+  ## Вправить простой перелом
+  1. [italic]Откройте разрез.[/italic] (Грудь или голова: также откройте костную полость.)
 
-  2. Realign the fracture with a [bold]bone setter[/bold].
+  2. Выровняйте перелом [bold]костоправом[/bold].
 
-  3. Apply [bold]bone gel[/bold].
+  3. Нанесите [bold]костный гель[/bold].
 
-  4. [italic]Close up.[/italic] (Chest or head: close the bone cavity.)
+  4. [italic]Закройте.[/italic] (Грудь или голова: закройте костную полость.)
 
-  ## Set Compound Fracture
-  1. [italic]Open the incision.[/italic] (Chest or head: also open the bone cavity.)
+  ## Вправить открытый перелом
+  1. [italic]Откройте разрез.[/italic] (Грудь или голова: также откройте костную полость.)
 
-  2. Realign the compound fracture with a [bold]bone setter[/bold].
+  2. Выровняйте открытый перелом [bold]костоправом[/bold].
 
-  3. Apply [bold]bone gel[/bold].
+  3. Нанесите [bold]костный гель[/bold].
 
-  4. [italic]Close up.[/italic] (Chest or head: close the bone cavity.)
+  4. [italic]Закройте.[/italic] (Грудь или голова: закройте костную полость.)
 
-  ## Set Shattered Fracture
-  A shattered bone needs a [bold]bone graft[/bold] to hold it together.
-  1. [italic]Open the incision.[/italic] (Chest or head: also open the bone cavity.)
+  ## Вправить раздробленный перелом
+  Раздробленной кости нужен [bold]костный трансплантат[/bold], чтобы удержать её вместе.
+  1. [italic]Откройте разрез.[/italic] (Грудь или голова: также откройте костную полость.)
 
-  2. Realign the shattered fracture with a [bold]bone setter[/bold].
+  2. Выровняйте раздробленный перелом [bold]костоправом[/bold].
 
-  3. Apply [bold]bone gel[/bold].
+  3. Нанесите [bold]костный гель[/bold].
 
-  4. Insert a [bold]bone graft[/bold].
+  4. Вставьте [bold]костный трансплантат[/bold].
 
-  5. Set the grafted bone in place with the [bold]bone setter[/bold].
+  5. Зафиксируйте трансплантированную кость на месте [bold]костоправом[/bold].
 
-  6. [italic]Close up.[/italic] (Chest or head: close the bone cavity.)
+  6. [italic]Закройте.[/italic] (Грудь или голова: закройте костную полость.)
 
-  ## Afterwards
-  Put a cast on the limb within 5 minutes of setting it, or the bone may heal crooked.
+  ## После операции
+  Наложите гипс на конечность в течение 5 минут после вправления, иначе кость может срастись криво.
 </Document>

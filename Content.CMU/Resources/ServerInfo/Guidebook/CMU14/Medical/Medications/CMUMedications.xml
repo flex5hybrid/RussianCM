@@ -1,26 +1,26 @@
 <Document>
-  # Medications
+  # Медикаменты
 
-  Medicines are sorted here by what they treat. Work out what kind of damage the patient has first (see [textlink="Diagnosis" link="CMUGuideMedicalDiagnosis"]), then reach for the right drug.
+  Здесь лекарства разложены по тому, что они лечат. Сначала определите, какой у пациента тип урона (см. [textlink="Диагностика" link="CMUGuideMedicalDiagnosis"]), а затем беритесь за нужный препарат.
 
-  - [textlink="Brute Medications" link="CMUGuideMedsBrute"]: cuts, bruises, stab and gunshot damage.
+  - [textlink="Препараты от физических повреждений" link="CMUGuideMedsBrute"]: порезы, ушибы, колотые и пулевые раны.
 
-  - [textlink="Burn Medications" link="CMUGuideMedsBurn"]: fire, shock, cold and acid damage.
+  - [textlink="Препараты от ожогов" link="CMUGuideMedsBurn"]: огонь, электрический удар, холод и кислота.
 
-  - [textlink="Toxin Medications" link="CMUGuideMedsToxin"]: poison, radiation and overdoses.
+  - [textlink="Препараты от токсинов" link="CMUGuideMedsToxin"]: яд, радиация и передозировки.
 
-  - [textlink="Suffocation Medications" link="CMUGuideMedsSuffocation"]: not breathing, damaged lungs and blood loss.
+  - [textlink="Препараты от удушья" link="CMUGuideMedsSuffocation"]: отсутствие дыхания, повреждённые лёгкие и кровопотеря.
 
-  - [textlink="Painkillers" link="CMUGuideMedsPain"]: pain relief, sedation, and reversing an overdose.
+  - [textlink="Обезболивающие" link="CMUGuideMedsPain"]: обезболивание, седация и выведение из передозировки.
 
-  - [textlink="Organ and Bone Medications" link="CMUGuideMedsOrgans"]: repairing organs, restarting the heart, and mending bones.
+  - [textlink="Препараты для органов и костей" link="CMUGuideMedsOrgans"]: восстановление органов, перезапуск сердца и лечение костей.
 
-  - [textlink="Cryogenic Medicines and Recipes" link="CMUGuideMedsCryogenic"]: cold treatments, mixing ratios and precursor recipes.
+  - [textlink="Криогенные медикаменты и рецепты" link="CMUGuideMedsCryogenic"]: холодовое лечение, пропорции смешивания и рецепты прекурсоров.
 
-  - [textlink="Other Medications" link="CMUGuideMedsOther"]: bleeding, body temperature and everything else.
+  - [textlink="Прочие медикаменты" link="CMUGuideMedsOther"]: кровотечение, температура тела и всё остальное.
 
-  ## General Rules
-  - Every medicine has an [bold]overdose[/bold] amount. Go over it and the drug starts hurting the patient instead. Each medicine's card shows its overdose.
-  - Some patients are [bold]allergic[/bold] to certain drugs. Watch for a reaction after giving something new.
-  - [bold]Tricordrazine[/bold] heals a little brute, burn, toxin and suffocation at once. When you're not sure what you're dealing with, it's a safe first choice.
+  ## Общие правила
+  - У каждого лекарства есть [bold]передозировка[/bold]. Перейдите её — и препарат начнёт вредить пациенту. Карточка каждого лекарства показывает его передозировку.
+  - У некоторых пациентов есть [bold]аллергия[/bold] на определённые препараты. Следите за реакцией после введения нового.
+  - [bold]Tricordrazine[/bold] немного лечит физические повреждения, ожоги, токсины и удушье сразу. Когда не уверены, с чем имеете дело, это безопасный первый выбор.
 </Document>
