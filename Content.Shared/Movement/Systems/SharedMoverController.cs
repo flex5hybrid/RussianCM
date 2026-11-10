@@ -117,7 +117,9 @@ public abstract partial class SharedMoverController : VirtualController
     protected virtual void OnMoverStartup(Entity<InputMoverComponent> ent, ref ComponentStartup args)
     {
         _blocker.UpdateCanMove(ent, ent.Comp);
-        UpdateHumanSprint(ent);
+// RuMC edit start - Remove stamina walk
+//         UpdateHumanSprint(ent);
+// RuMC edit end
     }
 
     public override void Shutdown()
@@ -129,7 +131,9 @@ public abstract partial class SharedMoverController : VirtualController
     public override void UpdateAfterSolve(bool prediction, float frameTime)
     {
         base.UpdateAfterSolve(prediction, frameTime);
-        SpendHumanSprintStamina(frameTime);
+// RuMC edit start - Remove stamina walk
+//         SpendHumanSprintStamina(frameTime);
+// RuMC edit end
         UsedMobMovement.Clear();
     }
 
@@ -241,7 +245,9 @@ public abstract partial class SharedMoverController : VirtualController
         // If the body is in air but isn't weightless then it can't move
         var weightless = _gravity.IsWeightless(uid);
         var inAirHelpless = false;
-        UpdateHumanSprint(entity, !weightless && physicsComponent.BodyStatus == BodyStatus.OnGround);
+// RuMC edit start - Remove stamina walk
+//         UpdateHumanSprint(entity, !weightless && physicsComponent.BodyStatus == BodyStatus.OnGround);
+// RuMC edit end
 
         if (physicsComponent.BodyStatus != BodyStatus.OnGround && !CanMoveInAirQuery.HasComponent(uid))
         {
@@ -300,11 +306,15 @@ public abstract partial class SharedMoverController : VirtualController
                     frameTime);
                 tileMovement.WasWeightlessLastTick = weightless;
                 if (didTileMovement)
-                {
-                    if (mover.SprintOnModifier && mover.Sprinting && DirVecForButtons(mover.HeldMoveButtons) != Vector2.Zero)
-                        TrackHumanSprint(entity, xform, 1f);
+// RuMC edit start - Remove stamina walk
+//                 {
+//                     if (mover.SprintOnModifier && mover.Sprinting && DirVecForButtons(mover.HeldMoveButtons) != Vector2.Zero)
+//                         TrackHumanSprint(entity, xform, 1f);
+// RuMC edit end
                     return;
-                }
+// RuMC edit start - Remove stamina walk
+//                 }
+// RuMC edit end
             }
             else
             {
@@ -331,7 +341,10 @@ public abstract partial class SharedMoverController : VirtualController
             sprintSpeed *= cmuZeroG.SpeedMultiplier;
             // cmu edit end
 
-            wishDir = AssertValidWish(mover, walkSpeed, sprintSpeed, out _);
+// RuMC edit start - Remove stamina walk
+//             wishDir = AssertValidWish(mover, walkSpeed, sprintSpeed, out _);
+// RuMC edit end
+            wishDir = AssertValidWish(mover, walkSpeed, sprintSpeed);
 
             var ev = new CanWeightlessMoveEvent(uid);
             RaiseLocalEvent(uid, ref ev, true);
@@ -404,12 +417,17 @@ public abstract partial class SharedMoverController : VirtualController
             else
                 walkSpeed = sprintSpeed;
 
-            wishDir = AssertValidWish(mover, walkSpeed, sprintSpeed, out var sprintInput);
+// RuMC edit start - Remove stamina walk
+//             wishDir = AssertValidWish(mover, walkSpeed, sprintSpeed, out var sprintInput);
+// RuMC edit end
+            wishDir = AssertValidWish(mover, walkSpeed, sprintSpeed);
 
             if (wishDir != Vector2.Zero)
             {
-                if (mover.SprintOnModifier && !mover.SprintBlocked)
-                    TrackHumanSprint(entity, xform, sprintInput.Length());
+// RuMC edit start - Remove stamina walk
+//                 if (mover.SprintOnModifier && !mover.SprintBlocked)
+//                     TrackHumanSprint(entity, xform, sprintInput.Length());
+// RuMC edit end
                 friction = moveSpeedComponent?.Friction ?? MovementSpeedModifierComponent.DefaultFriction * _frictionModifier;
                 friction *= tileDef?.MobFriction ?? tileDef?.Friction ?? 1f;
             }
@@ -765,10 +783,16 @@ public abstract partial class SharedMoverController : VirtualController
         return sound != null;
     }
 
-    private Vector2 AssertValidWish(InputMoverComponent mover, float walkSpeed, float sprintSpeed, out Vector2 sprintDir)
+// RuMC edit start - Remove stamina walk
+//     private Vector2 AssertValidWish(InputMoverComponent mover, float walkSpeed, float sprintSpeed, out Vector2 sprintDir)
+// RuMC edit end
+    private Vector2 AssertValidWish(InputMoverComponent mover, float walkSpeed, float sprintSpeed)
     {
-        var (walkDir, sprintInput) = GetVelocityInput(mover);
-        sprintDir = sprintInput;
+// RuMC edit start - Remove stamina walk
+//         var (walkDir, sprintInput) = GetVelocityInput(mover);
+//         sprintDir = sprintInput;
+// RuMC edit end
+        var (walkDir, sprintDir) = GetVelocityInput(mover);
 
         var total = walkDir * walkSpeed + sprintDir * sprintSpeed;
 
