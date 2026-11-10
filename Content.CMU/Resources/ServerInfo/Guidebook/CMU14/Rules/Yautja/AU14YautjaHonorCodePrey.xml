@@ -1,51 +1,51 @@
 <Document>
-  # Prey
+  # Добыча
 
-  Prey, to the Yautja, are non-Yautja creatures that are deadly and intelligent enough to prove a challenge. This page covers how each type of prey is seen and how it can be hunted. See [textlink="Weapons and Tools" link="AU14YautjaHonorCodeWeapons"] for what each type allows.
+  Добыча для яутжа — это не-яутжа, существа, достаточно смертоносные и разумные, чтобы бросить вызов. Эта страница описывает, как воспринимается каждый тип добычи и как на него можно охотиться. О том, что допускает каждый тип, см. [textlink="Оружие и инструменты" link="AU14YautjaHonorCodeWeapons"].
 
-  Each classification of prey stands on its own. For example, prey that isn't worthy doesn't automatically fall under un-huntable.
+  Каждая категория добычи самостоятельна. Например, добыча, не являющаяся Достойной, не автоматически попадает в категорию «недостойной охоты».
 
-  ## Worthy
-  [color=#57b339][bold]Worthy:[/bold][/color] all prey is worthy unless it falls into the un-huntable classification below.
+  ## Достойная
+  [color=#57b339][bold]Достойная:[/bold][/color] вся добыча Достойна, если не подпадает под классификацию «недостойная охота» ниже.
 
-  [bold]All worthy prey is to be hunted alone.[/bold]
+  [bold]Вся Достойная добыча должна преследоваться в одиночку.[/bold]
 
-  ## Un-huntable
-  [color=#a4885c][bold]Un-huntable:[/bold][/color] prey that isn't worthy and cannot be hunted. If un-huntable prey verbally provokes you (insulting you, bossing you around or generally acting LRP towards you), attacks you, or helps its allies attack you, it becomes worthy.
+  ## Недостойная охоты
+  [color=#a4885c][bold]Недостойная охоты:[/bold][/color] добыча, которая не является Достойной и на которую нельзя охотиться. Если недостойная охоты добыча вербально провоцирует вас (оскорбляет, отдаёт приказы или в целом ведёт себя как LRP по отношению к вам), атакует вас или помогает союзникам атаковать вас — она становится Достойной.
 
-  - Worthy prey that is below 75% health, missing limbs or hugged.
-  - Worthy prey dragging wounded or dead allies who were not involved in your hunt to safety.
-  - Worthy prey that is actively in combat, before your fight with it starts.
-  - Honored prey, if specified. This is prey that has defeated a fellow Yautja in single combat or performed a feat of strength. They may be awarded a trophy by you or from the ship, and may be held in higher regard.
-  - GOVFOR and OPFOR ship crew.
-  - Unarmed and civilian colonists.
-  - Working medics.
-  - Synths. See [textlink="Prey Caveats" link="AU14YautjaHonorCodePreyCaveats"].
-  - The SO, XO and CO. They become worthy after the 1 hour mark, and shouldn't be permakilled unless they lead a hunting party against you. Sneaking onto the ship to hunt GOVFOR or OPFOR leadership should never be done.
-  - Threat support castes incapable of putting up a fight: sentinels, boilers, queens, kings and the overmind.
+  - Достойная добыча с 75% здоровья и ниже, с ампутированными конечностями или заражённая лицехватом.
+  - Достойная добыча, тащущая раненых или убитых союзников, не участвовавших в вашей охоте, в безопасное место.
+  - Достойная добыча, активно находящаяся в бою, до начала вашего боя с ней.
+  - Почётная добыча, если так указано. Это добыча, победившая собрата-яутжа в единоборстве или совершившая подвиг силы. Ей могут вручить трофей вы или с корабля, и её могут держать в более высоком почёте.
+  - Экипаж корабля ГОВФОР и ОПФОР.
+  - Безоружные и гражданские колонисты.
+  - Работающие медики.
+  - Синтетики. См. [textlink="Оговорки по добыче" link="AU14YautjaHonorCodePreyCaveats"].
+  - SO, XO и CO. Они становятся Достойными после отметки в 1 час и не должны подвергаться окончательному уничтожению, если только они не ведут охотничью группу против вас. Проникать на корабль, чтобы охотиться на руководство ГОВФОР или ОПФОР, не следует никогда.
+  - Поддерживающие касты угрозы, неспособные оказать сопротивление: стражи (sentinels), бойлеры, королевы, короли и сверхразум.
+  
+  ## Бесчестные
+  [color=#ff0000][bold]Бесчестные:[/bold][/color] добыча, аморальная по своей природе.
 
-  ## Dishonorable
-  [color=#ff0000][bold]Dishonorable:[/bold][/color] prey that is innately immoral.
+  - Абоминации и аберрации, и любой, кто активно их защищает, включая прикрытие собственным телом и другие более тонкие способы. Проявляйте собственную инициативу. См. [textlink="Оговорки по добыче" link="AU14YautjaHonorCodePreyCaveats"].
+  - Ксеноморфы, эволюционирующие в Королеву в заповеднике.
+  - «Дюжина Датча».
+  - Участники Дуэли Чести, нарушающие её правила.
+  - Биоморфы.
 
-  - Abominations and aberrations, and anyone actively defending them, including bodyblocking and other subtler ways. Use your own initiative. See [textlink="Prey Caveats" link="AU14YautjaHonorCodePreyCaveats"].
-  - Xenomorphs that evolve into Queen on the preserve.
-  - Dutch's Dozen.
-  - Honor duel parties that breach the rules of an honor duel.
-  - Biomorphs.
+  ## Временно бесчестные
+  [color=#ffbf00][bold]Временно бесчестные:[/bold][/color] добыча, которая перестаёт быть Бесчестной после окончания столкновения. Любой, кто ей помогает, наследует статус «Временно бесчестной». Действия «Временно бесчестной» добычи, направленные только против одного яутжа на охоте, должны быть отражены этим яутжа в одиночку.
 
-  ## Temporarily dishonorable
-  [color=#ffbf00][bold]Temporarily dishonorable:[/bold][/color] prey that stops being dishonorable once the engagement ends. Anyone aiding them inherits the temporarily dishonorable status. Temporarily dishonorable actions aimed at only one Yautja on the hunt must be fought by that Yautja alone.
-
-  - Scientists involved in xenomorph experimentation, during a purge.
-  - A target or group of targets attacking the prey you're currently engaging.
-  - Shipside gear carriers and users, and anyone actively allowing the gear to stay shipside. This status lifts once all the gear is gone.
-  - Prey on stimulants that make them unkillable or super fast.
-  - Vehicles or aircraft attacking you or running you over.
-  - Prey carrying or desecrating a Yautja corpse (looting, beheading, delimbing).
-  - Prey committing LRP actions against the Yautja or metagaming the Honor Code. Do not be afraid to permakill un-huntables over egregious LRP.
-  - Prey, or groups of prey, interrupting an honor duel or running from one.
-  - Prey using OT or research weaponry against you.
-  - Prey attacking you while you are cloaked. Lurkers are excluded.
-  - Acid runners farming Yautja for acid, for example an acider who keeps landing one or two hits and running away to stay safe. Use your own initiative.
-  - Hive offensives. See [textlink="Prey Caveats" link="AU14YautjaHonorCodePreyCaveats"].
+  - Учёные, участвующие в экспериментах с ксеноморфами, во время очищения.
+  - Цель или группа целей, атакующая добычу, на которую вы прямо сейчас охотитесь.
+  - Носители и пользователи снаряжения на корабле, а также любой, кто активно позволяет снаряжению оставаться на корабле. Этот статус снимается, когда всё снаряжение убрано.
+  - Добыча под действием стимуляторов, делающих её неуязвимой или сверхбыстрой.
+  - Транспортные средства или авиация, атакующие вас или пытающиеся переехать вас.
+  - Добыча, несущая или оскверняющая труп яутжа (мародёрство, обезглавливание, расчленение).
+  - Добыча, совершающая LRP-действия против яутжа или использующая метагейм относительно Кодекса Чести. Не бойтесь окончательно уничтожать недостойных охоты за вопиющие LRP-действия.
+  - Добыча или группы добычи, вмешивающиеся в Дуэль Чести или убегающие с неё.
+  - Добыча, использующая против вас вооружение ОТ (Оружейного техника) или исследовательское оружие.
+  - Добыча, атакующая вас, пока вы под маскировкой. Скрытники (Lurkers) исключаются.
+  - Кислотные бегуны, фармящие яутжа ради кислоты, например кислотник, который постоянно наносит один-два удара и убегает, чтобы остаться в безопасности. Проявляйте собственную инициативу.
+  - Атаки улья. См. [textlink="Оговорки по добыче" link="AU14YautjaHonorCodePreyCaveats"].
 </Document>

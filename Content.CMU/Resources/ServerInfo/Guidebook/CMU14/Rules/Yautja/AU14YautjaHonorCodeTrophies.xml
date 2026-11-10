@@ -1,18 +1,18 @@
 <Document>
-  # Trophies and Prey Welfare
+  # Трофеи и забота о добыче
 
-  ## Trophies
-  Yautja are free to claim any body part of their prey, but are limited to a single item from the prey's inventory as a trophy, unless the prey is permakilled.
+  ## Трофеи
+  Яутжа вправе забрать любую часть тела своей добычи, но из инвентаря добычи можно взять только один предмет в качестве трофея, если только добыча не уничтожена окончательно.
 
-  Yautja may use their own initiative when choosing what to claim. For example, a Yautja who started the hunt might only take an item, as they were the initiating party. If the prey attacked the Yautja first, they might take a limb instead, and if the same prey tries again later, their skull.
+  Яутжа могут проявлять собственную инициативу при выборе того, что забрать. Например, яутжа, начавший охоту, может взять только предмет, поскольку он был инициатором. Если добыча атаковала яутжа первой, он может взять вместо этого конечность, а если та же добыча попытается снова позже — её череп.
 
-  - Yautja cannot use any of their trophies, except for headgear and melee weapons.
-  - Specialist weapons, smartguns, drones and any unique gear the specialist or smartgunner needs (such as the scout sight or specialist ammo) cannot be taken unless the prey is permakilled.
-  - The same applies to IDs, for both regular and specialist marines. Info tags can still be taken.
+  - Яутжа не могут использовать какие-либо свои трофеи, кроме головных уборов и холодного оружия.
+  - Специализированное оружие, смартганы, дроны и любое уникальное снаряжение, необходимое специалисту или смартганнеру (например, прицел разведчика или спецбоеприпасы), нельзя забирать, если только добыча не уничтожена окончательно.
+  - То же касается ID — как обычных морпехов, так и специалистов. Инфо-бирки при этом забирать можно.
 
-  ## Welfare of prey
-  You are forbidden from saving or healing anyone unless you're actively in combat with them.
-  - If the other faction intervenes while you are actively engaged, you may save your prey and bring them to a safe location on the hunting grounds to continue the hunt.
-  - If you breach the Honor Code while actively engaging prey, you may save them and return them to their defenses or faction.
-  - You may heal prey you've killed, but not defibrillate them.
+  ## Забота о добыче
+  Вам запрещено спасать или лечить кого-либо, если вы не находитесь с этим кем-то в активном бою.
+  - Если другая фракция вмешивается, пока вы активно сражаетесь, вы можете спасти свою добычу и перенести её в безопасное место на территории охотничьих угодий, чтобы продолжить охоту.
+  - Если вы нарушили Кодекс Чести, активно сражаясь с добычей, вы можете спасти её и вернуть к её укреплениям или фракции.
+  - Вы можете лечить добычу, которую убили, но не можете использовать на ней дефибриллятор.
 </Document>

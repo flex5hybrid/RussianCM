@@ -1,25 +1,25 @@
 <Document>
-  # Lodges
+  # Храмы
 
-  A lodge is an enclosed, secluded area that Yautja set up and operate from.
+  Храм — это закрытая и уединённая территория, на которой яутжа обустраиваются и действуют.
 
-  ## Lodge placement and foundation
-  - To declare a lodge, the Yautja must agree on a single site and secure the enclosed area, with every entrance and exit being a handcrafted sandstone door.
-  - No more than one lodge can exist at a time. Should a lodge be destroyed, or the Yautja decide to abandon or move it, they must tear down its sandstone doors to the best of their ability before declaring a new site.
-  - Lodges must be away from the main areas of the map, to keep them away from possible frontlines, and should not excessively affect any faction's ability to flank or maneuver. It is the Yautja's responsibility to make sure the lodge is in a secluded area.
-  - Lodges must be made after the marines land, to avoid round impact.
+  ## Размещение и основание храма
+  - Чтобы провозгласить храм, яутжа должны согласовать единое место и обезопасить закрытую территорию. Любой вход или выход из неё должен быть оборудован изготовленными вручную дверями из песчаника.
+  - Одновременно может существовать не более одного храма. Если храм будет уничтожен или яутжа решат оставить или перенести текущий, они должны по мере своих возможностей полностью разрушить двери из песчаника, прежде чем объявлять новое место храма.
+  - Храмы должны находиться вдали от основных ключевых зон фронта, чтобы оставаться в стороне от возможных линий фронта. Храмы не должны чрезмерно влиять на способность любой из сторон обходить противника с флангов или маневрировать по карте. Ответственность за создание храма в уединённом месте лежит на самих яутжа.
+  - Храмы должны создаваться только после высадки пехотинцев, чтобы не влиять на ход игры.
 
-  ## Lodge storage
-  Gear that can be tracked should not be stored in the lodge, unless that gear is in the process of being recovered.
+  ## Хранение снаряжения в храме
+  Любое снаряжение, которое можно отследить, не должно храниться в храме, за исключением случаев, когда оно находится в процессе возврата или изъятия.
 
-  ## Lodge defense
-  Parties trespassing into the lodge that you were already engaged with, or that are taking a passive look around, are [color=#57b339]worthy[/color].
-  - Example of a passive look around: entering the lodge without engaging the Yautja, trying to roleplay.
+  ## Оборона храма
+  Группы, проникшие в храм, с которыми вы уже вели бой, или которые просто пассивно осматриваются вокруг, считаются [color=#57b339]Достойной добычей[/color].
+  - Пример пассивного осмотра: вход в храм без вступления в бой с яутжа; попытка взаимодействия и отыгрыша роли.
 
-  Parties that attack the lodge itself, or enter it offensively, are [color=#ff0000]dishonorable[/color] for interfering with your hunt and attacking without due cause.
-  - Example of an offensive entry: entering with weapons drawn and engaging the Yautja before the Yautja engages them.
-  - Stray weapon fire or spit is not considered a deliberate attack.
-  - Any vehicle that deliberately attacks the lodge may be dispatched by dishonorable means.
+  Группы, атакующие сам храм или входящие с враждебными намерениями вместо пассивного осмотра, признаются [color=#ff0000]Бесчестными[/color], так как они мешают вашей охоте или нападают без должной причины.
+  - Пример враждебного входа: вход с обнажённым оружием и немедленное вступление в бой с яутжа до того, как яутжа сам вступит с ними в бой.
+  - Случайный огонь из оружия или плевки ксеноморфов не считаются преднамеренным нападением.
+  - Любая техника, намеренно атакующая храм, может быть уничтожена бесчестными способами.
 
-  Multiple Yautja may attack the same prey that enters the lodge, but should be very careful with how they classify that prey to avoid problems.
+  Несколько яутжа могут атаковать одну и ту же добычу, вошедшую в храм. Однако им следует проявлять крайнюю осторожность при определении статуса добычи во избежание нарушений.
 </Document>

@@ -1,29 +1,29 @@
 <Document>
-  # Gear Recovery
+  # Возвращение снаряжения и тел
 
-  ## Dissolving gel vials
-  Dissolving vials may only be used:
-  - For gear recovery, groundside and shipside, to destroy lost gear.
-  - To clear lodging spaces.
-  - To clean the hunting preserve.
-  - To destroy any remains of an abomination or aberration.
-  - To destroy any remains of genespliced xenomorphs.
-  - To clear unwanted hide or meat from flayed or butchered bodies.
+  ## Флаконы растворяющего геля
+  Растворяющие флаконы можно использовать только:
+  - Для возвращения снаряжения, на планете и на корабле, чтобы уничтожить утерянное снаряжение.
+  - Для очистки жилых помещений.
+  - Для очистки заповедника.
+  - Для уничтожения любых останков абоминации или аберрации.
+  - Для уничтожения любых останков генномодифицированных ксеноморфов.
+  - Для очистки нежелательной шкуры или мяса с освежёванных или разделанных тел.
 
-  Any other use is forbidden.
+  Любое другое использование запрещено.
 
-  ## Planetside gear recovery
-  Planetside gear carriers are [color=#57b339]worthy[/color] prey.
+  ## Возвращение снаряжения на планете
+  Похитители снаряжения на планете автоматически считаются [color=#57b339]Достойными[/color].
 
-  - Gear recovery is not mandatory, but it is encouraged and seen as a priority.
-  - Gear recovery in the FOB or the hive is forbidden.
-  - Yautja body recovery is mandatory and exempt from the FOB and hive clause above, though collateral damage should be avoided.
+  - Возвращение снаряжения не обязательно, но крайне рекомендуется и считается приоритетом.
+  - Возвращение снаряжения в ФОБ или в Улье запрещено.
+  - Возврат тел павших яутжа обязателен и не подпадает под пункт о ФОБ и Улье выше, хотя сопутствующего ущерба следует избегать.
 
-  ## Shipside gear recovery
-  Shipside gear carriers, and those actively keeping you from retrieving the gear, are [color=#ff0000]dishonorable[/color] prey.
+  ## Возвращение снаряжения на корабле или военной базе
+  Носители снаряжения на корабле, а также те, кто активно мешает вам забрать снаряжение, — [color=#ff0000]Бесчестные[/color].
 
-  - When recovering gear shipside, you must be efficient, focus on the recovery, and avoid damaging areas and people uninvolved in it. You are not on the hunt here.
-  - Negotiation is forbidden, though you may issue an ultimatum (such as "give it back or die") if you feel the situation warrants it. If the gear isn't returned, you must reclaim it by force.
-  - Shipside gear recovery is only ever mandatory for bodies. You may choose not to recover gear pieces.
-  - Post-hijack gear recovery is forbidden, unless it was started before the hijack, in which case it must be finished. Yautja body recovery is still mandatory, even after hijack.
+  - При возвращении снаряжения на корабле вы должны действовать чётко и эффективно, сосредоточиться на возврате и избегать повреждения зон и людей, не причастных к этому. Вы здесь не на охоте.
+  - Для возвращения снаряжения допускается выдвижение ультиматума (например, «верни или умри»). При отказе — забирайте силой. Для выдвижения ультиматума предоставьте слово старшему охотнику поблизости.
+  - Возврат элементов экипировки при этом не обязателен, но возврат тел сородичей обязателен всегда.
+  - Возвращение снаряжения после хайджека/отлёта корабля запрещено, если только оно не было начато до хайджека — в этом случае его нужно завершить. Возврат тел яутжа по-прежнему обязателен, даже после хайджека.
 </Document>

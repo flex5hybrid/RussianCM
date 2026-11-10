@@ -1,34 +1,34 @@
 <Document>
-  # Prey Caveats
+  # Оговорки по добыче
 
-  ## Synths
-  - Synths interfering with an ongoing hunt without attacking the Yautja, such as bodyblocking or trying to move the prey away, are [color=#57b339]worthy[/color].
-  - Synths attacking or hindering a Yautja in defense of others, such as disarming you, stealing your weapon or hitting you to protect the prey you're hunting, are [color=#ff0000]dishonorable[/color].
-  - Synths attacking or hindering a Yautja in self-defense, because you hit them first, are [color=#57b339]worthy[/color].
+  ## Синтетики
+  - Синтетики, вмешивающиеся в идущую охоту, не атакуя яутжа, например прикрывая телом или пытаясь увести добычу, — [color=#57b339]Достойные[/color].
+  - Синтетики, атакующие или мешающие яутжа в защите других, например обезоруживая вас, крадя ваше оружие или ударяя вас, чтобы защитить добычу, на которую вы охотитесь, — [color=#ff0000]Бесчестные[/color].
+  - Синтетики, атакующие или мешающие яутжа в целях самообороны, потому что вы ударили их первым, — [color=#57b339]Достойные[/color].
 
-  ## Carriers, facehuggers and other threat infectors
-  If a carrier or another non-xenomorph threat infector caste is spectating or loitering during a fight between you and a xenomorph or threat member, assume they're there to infect you. Following you while out of combat, or chatting you up for a long time, can be for the same reason. This makes them [color=#57b339]worthy[/color].
+  ## Носители, лицехваты и другие заражающие касты угрозы
+  Если носитель или другая не-ксеноморфская каста-заражатель угрозы наблюдает или кружит рядом во время боя между вами и ксеноморфом или членом угрозы, считайте, что они здесь, чтобы заразить вас. Преследование вас вне боя или долгие разговоры с вами могут быть по той же причине. Это делает их [color=#57b339]Достойными[/color].
 
-  If a facehugger or popper does any of the above, you may use dishonorable tools at will.
+  Если лицехват или поппер делает что-либо из вышеперечисленного, вы можете использовать бесчестные инструменты по своему усмотрению.
 
-  ## Abominations and aberrations
-  Abominations and aberrations are considered the worst thing in existence and should be eliminated with every Yautja-made tool in your arsenal. Focus on killing the abomination while minimizing unnecessary kills, though some are to be expected.
+  ## Абоминации и аберрации
+  Абоминации и аберрации считаются худшим, что существует, и должны уничтожаться каждым созданным яутжа инструментом из вашего арсенала. Сосредоточьтесь на убийстве абоминации, минимизируя ненужные убийства, хотя некоторых следует ожидать.
 
-  - Yautja may form a ceasefire with GOVFOR or OPFOR to concentrate on killing the abomination or aberration, but you must then focus on the abomination or aberration only.
-  - If you get infected, you must die at any cost.
-  - If you encounter a living infected Yautja, you are to make sure they die and, if possible, self-destruct their body.
-  - Self-destructing to kill an infected Yautja, an abomination or an aberration is a last resort, not the first solution.
-  - Should an abomination or aberration be on the ship, hunters may go aboard to destroy it, even after hijack.
-  - Once it is dead and the proof of its existence has been removed, all Yautja are to leave the ship as soon as possible.
+  - Яутжа могут заключить перемирие с ГОВФОР или ОПФОР, чтобы сосредоточиться на убийстве абоминации или аберрации, но затем вы обязаны сосредоточиться только на абоминации или аберрации.
+  - Если вы заражены, вы обязаны погибнуть любой ценой.
+  - Если вы встретите живого заражённого яутжа, вы обязаны обеспечить его смерть и, если возможно, активировать СУ на его теле.
+  - Самоуничтожение ради убийства заражённого яутжа, абоминации или аберрации — крайняя мера, а не первое решение.
+  - Если абоминация или аберрация находится на корабле, охотники могут подняться на борт, чтобы уничтожить её, даже после хайджека.
+  - Как только она мертва и доказательства её существования удалены, все яутжа должны покинуть корабль как можно скорее.
 
-  ## Hive offensives
-  In the case above, or when 5 or more xenos join a fight against a Yautja, other Yautja may join in freely unless the engaged Yautja demands otherwise. Should other Yautja join in, the temporarily dishonorable status from being attacked first goes away.
+  ## Атаки улья
+  В случае выше или когда 5 и более ксеноморфов присоединяются к бою против яутжа, другие яутжа могут свободно присоединиться, если только сражающийся яутжа не потребует иного. Если другие яутжа присоединяются, статус «Временно бесчестный» за атаку первым снимается.
 
-  If the Yautja instead began a hunt on one or two xenomorphs and more xenos join, other Yautja may assist only if the number is much higher, for example the entire hive.
+  Если же яутжа сам начал охоту на одного-двух ксеноморфов, а ксеноморфов прибывает больше, другие яутжа могут помочь только если их число значительно выше, например весь Улей.
 
-  ## Hive disruption
-  Yautja may hunt xenomorphs before T3s, but should be mindful of what they do and how much. Hold back if you initiate engagements yourself. You are responsible if early hunting leads to major round impact, and may be punished should it violate the spirit of the whitelist.
+  ## Нарушение покоя улья
+  Яутжа могут охотиться на ксеноморфов до T3, но должны быть внимательны к тому, что они делают и в каком объёме. Сдерживайтесь, если сами инициируете столкновения. Вы несёте ответственность, если ранняя охота приводит к серьёзному влиянию на раунд, и можете быть наказаны, если это нарушит дух вайтлиста.
 
-  ## Prey status inheritance
-  Anyone who directly or indirectly aids the prey you're currently engaged with inherits that prey's status, for example drone castes providing weeds and pheromones. Those helping worthy prey become worthy, and those helping dishonorable prey become dishonorable.
+  ## Наследование статуса добычи
+  Любой, кто прямо или косвенно помогает добыче, с которой вы сейчас сражаетесь, наследует статус этой добычи, например касты дронов, дающие смолу и феромоны. Помогающие Достойной добыче становятся Достойными, а помогающие Бесчестной добыче — Бесчестными.
 </Document>

@@ -1,38 +1,38 @@
 <Document>
-  # Yautja Honor Code
+  # Кодекс Чести Яутжа
 
   <Box>
-    <GuideEntityEmbed Entity="CMUMobYautja" Caption="Yautja"/>
+    <GuideEntityEmbed Entity="CMUMobYautja" Caption="Яутжа"/>
     <GuideEntityEmbed Entity="CMUYautjaBracer"/>
   </Box>
 
-  The [bold]Yautja Honor Code[/bold] is a set of rules all Yautja players are required to follow. Failure to uphold these rules may result in the suspension or removal of your Predator whitelist.
+  [bold]Кодекс Чести Яутжа[/bold] — это набор правил, которые обязаны соблюдать все игроки за яутжа. Несоблюдение этих правил может привести к временной блокировке или снятию вашего вайтлиста.
 
-  If you break the Honor Code while hunting prey, you are to cease your hunt of that prey. If you critically injure them, bring them back to their teammates:
-  - Xenomorphs to their weeds.
-  - Marines to their squadmates or fortifications.
-  - Colonists and CLF to the colony hospital.
+  Если вы нарушаете Кодекс Чести во время охоты на добычу, вы обязаны прекратить охоту на эту добычу. Если вы тяжело ранили её, верните её к своим товарищам:
+  - Ксеноморфов — на смолу или к сородичам.
+  - Морпехов — к их отряду или на укрепления.
+  - Колонистов и CLF — в колониальную больницу.
 
-  Should you be unable to because of a threat or time constraints, you will not be penalized. However, you should be prepared to defend your initial actions should a report be filed.
+  Если вы не можете этого сделать из-за прямой угрозы или нехватки времени, наказания не последует. Однако будьте готовы обосновать свои первоначальные действия администраторам, если будет подана жалоба.
 
-  The Honor Code will be updated as new content is added. For who the Yautja are and where they come from, see the [textlink="Yautja lore" link="CMUGuideLoreHunters"].
+  Кодекс Чести будет обновляться по мере добавления нового контента. О том, кто такие яутжа и откуда они родом, см. [textlink="лор яутжа" link="CMUGuideLoreHunters"].
 
-  [color=#ff0000][bold]To non-whitelisted players:[/bold][/color] anyone looking to make a whitelist report is kindly asked and expected to read the Honor Code thoroughly before making the report.
+  [color=#ff0000][bold]Игрокам без вайтлиста:[/bold][/color] всем, кто собирается подать жалобу по вайтлисту, настоятельно рекомендуется и вменяется в обязанность внимательно прочитать Кодекс Чести перед подачей жалобы.
 
-  ## Sections
-  - [textlink="Prey" link="AU14YautjaHonorCodePrey"]: how each type of prey is seen and how it may be hunted.
-  - [textlink="Prey Caveats" link="AU14YautjaHonorCodePreyCaveats"]: synths, infectors, abominations and hive offensives.
-  - [textlink="Trophies and Prey Welfare" link="AU14YautjaHonorCodeTrophies"]: what you may claim, and when you may save prey.
-  - [textlink="Weapons and Tools" link="AU14YautjaHonorCodeWeapons"]: what each type of prey allows.
-  - [textlink="The Hunting Grounds" link="AU14YautjaHonorCodeHuntingGrounds"]: where you may and may not hunt.
-  - [textlink="The Hunting Preserve" link="AU14YautjaHonorCodePreserve"]: preserve hunts and their restrictions.
-  - [textlink="Other Blooded" link="AU14YautjaHonorCodeBlooded"]: superiors, honor duels, cooperation and death.
-  - [textlink="Youngbloods" link="AU14YautjaHonorCodeYoungbloods"]: handling youngbloods.
-  - [textlink="Thralls" link="AU14YautjaHonorCodeThralls"]: taking and mentoring a thrall.
-  - [textlink="Gear Recovery" link="AU14YautjaHonorCodeGearRecovery"]: dissolving gel and recovering lost gear.
-  - [textlink="Lodges" link="AU14YautjaHonorCodeLodges"]: founding and defending a lodge.
-  - [textlink="Hellhounds" link="AU14YautjaHonorCodeHellhounds"]: hellhound etiquette.
-  - [textlink="Ancient's Privilege" link="AU14YautjaHonorCodeAncients"]: changing the code mid-round.
-  - [textlink="Game Modes" link="AU14YautjaHonorCodeGamemodes"]: Insurgency, Yautja purges and Force on Force.
-  - [textlink="Spirit of the Whitelist" link="AU14YautjaHonorCodeSpirit"]: what the written rules cannot cover.
+  ## Разделы
+  - [textlink="Добыча" link="AU14YautjaHonorCodePrey"]: как воспринимается каждый тип добычи и как на него можно охотиться.
+  - [textlink="Оговорки по добыче" link="AU14YautjaHonorCodePreyCaveats"]: синтетики, носители, абоминации и атаки улья.
+  - [textlink="Трофеи и забота о добыче" link="AU14YautjaHonorCodeTrophies"]: что можно забрать и когда можно спасать добычу.
+  - [textlink="Оружие и инструменты" link="AU14YautjaHonorCodeWeapons"]: что допускает каждый тип добычи.
+  - [textlink="Охотничьи угодья" link="AU14YautjaHonorCodeHuntingGrounds"]: где можно и где нельзя охотиться.
+  - [textlink="Заповедник" link="AU14YautjaHonorCodePreserve"]: охота в заповеднике и её ограничения.
+  - [textlink="Другие кровные" link="AU14YautjaHonorCodeBlooded"]: старшие, Дуэли Чести, кооперация и смерть.
+  - [textlink="Молодая кровь" link="AU14YautjaHonorCodeYoungbloods"]: обращение с Молодой кровью.
+  - [textlink="Слуги (Траллы)" link="AU14YautjaHonorCodeThralls"]: взятие Слуги и наставничество над ним.
+  - [textlink="Возвращение снаряжения и тел" link="AU14YautjaHonorCodeGearRecovery"]: растворяющий гель и возврат утерянного снаряжения.
+  - [textlink="Храмы" link="AU14YautjaHonorCodeLodges"]: основание и защита храма.
+  - [textlink="Адские гончие" link="AU14YautjaHonorCodeHellhounds"]: этикет общения с адскими гончими.
+  - [textlink="Привилегии Древних" link="AU14YautjaHonorCodeAncients"]: изменение Кодекса посреди раунда.
+  - [textlink="Игровые режимы" link="AU14YautjaHonorCodeGamemodes"]: «Восстание», чистки яутжа и «Стенка на стенку».
+  - [textlink="Дух вайтлиста" link="AU14YautjaHonorCodeSpirit"]: то, что не могут охватить писаные правила.
 </Document>
