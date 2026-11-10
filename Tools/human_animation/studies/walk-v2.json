@@ -1,0 +1,14 @@
+{
+  "description": "Eight authored contact/down/passing/up poses; offline articulated study only.",
+  "frame_ms": 100,
+  "poses": [
+    {"pose":"contact-left", "foot_x": 3,  "foot_lift": 0, "body_down": 0},
+    {"pose":"down-left",    "foot_x": 1.5,"foot_lift": 0, "body_down": 1},
+    {"pose":"passing-left", "foot_x": 0,  "foot_lift": 0, "body_down": 0},
+    {"pose":"up-left",      "foot_x": -1.5,"foot_lift": 0, "body_down": 0},
+    {"pose":"contact-right","foot_x": -3, "foot_lift": 0, "body_down": 0},
+    {"pose":"down-right",   "foot_x": -1.5,"foot_lift": 2, "body_down": 1},
+    {"pose":"passing-right","foot_x": 1.5,"foot_lift": 2, "body_down": 0},
+    {"pose":"up-right",     "foot_x": 3,  "foot_lift": 1, "body_down": 0}
+  ]
+}

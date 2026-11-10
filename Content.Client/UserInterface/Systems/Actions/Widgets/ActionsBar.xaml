@@ -7,13 +7,15 @@
     Orientation="Horizontal"
     HorizontalExpand="False"
 >
+    <!-- CMU14: ability buttons flow downwards; icons and key labels remain upright. -->
     <BoxContainer Orientation="Vertical">
         <controls:ActionButtonContainer
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            MaxSize="64 9999"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
             Name="ActionsContainer"
             Access="Public"
-            Rows="1"/>
+            HSeparationOverride="4"
+            VSeparationOverride="4"
+            Rows="6"/>
     </BoxContainer>
 </widgets:ActionsBar>

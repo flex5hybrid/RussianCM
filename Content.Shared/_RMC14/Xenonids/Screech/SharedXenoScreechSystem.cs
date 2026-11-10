@@ -3,6 +3,8 @@ using Content.Shared._RMC14.Marines;
 using Content.Shared._RMC14.CameraShake;
 using Content.Shared._RMC14.Slow;
 using Content.Shared._RMC14.Xenonids.Plasma;
+using Content.Shared.Stunnable; // CMU14: restore RMC queen control
+using Content.Shared._RMC14.Xenonids.Parasite;
 using Content.Shared.Containers;
 using Content.Shared.Coordinates;
 using Content.Shared.Jittering;
@@ -23,6 +25,7 @@ namespace Content.Shared._RMC14.Xenonids.Screech;
 
 public sealed partial class XenoScreechSystem : EntitySystem
 {
+    [Dependency] private SharedStunSystem _stun = default!; // CMU14
     [Dependency] private MobStateSystem _mobState = default!;
     [Dependency] private XenoPlasmaSystem _xenoPlasma = default!;
     [Dependency] private EntityLookupSystem _entityLookup = default!;
@@ -39,6 +42,8 @@ public sealed partial class XenoScreechSystem : EntitySystem
     [Dependency] private IGameTiming _timing = default!;
 
     private readonly HashSet<Entity<MobStateComponent>> _mobs = new();
+    private readonly HashSet<Entity<MobStateComponent>> _closeMobs = new(); // CMU14
+    private readonly HashSet<Entity<XenoParasiteComponent>> _parasites = new(); // CMU14
 
     public override void Initialize()
     {
@@ -53,6 +58,7 @@ public sealed partial class XenoScreechSystem : EntitySystem
         SubscribeLocalEvent<ScreechBlindComponent, DidUnequipHandEvent>(OnScreechUnequipHand);
     }
 
+    // CMU14 Begin: RMC queen screech; retain the public honor-roar helpers below.
     private void OnXenoScreechAction(Entity<XenoScreechComponent> xeno, ref XenoScreechActionEvent args)
     {
         if (args.Handled)
@@ -75,24 +81,69 @@ public sealed partial class XenoScreechSystem : EntitySystem
         if (_net.IsServer)
             _audio.PlayPvs(xeno.Comp.Sound, xeno);
 
+        _closeMobs.Clear();
+        _entityLookup.GetEntitiesInRange(xform.Coordinates, xeno.Comp.ParalyzeRange, _closeMobs);
+
+        foreach (var receiver in _closeMobs)
+        {
+            if (!_xeno.CanAbilityAttackTarget(xeno, receiver))
+                continue;
+
+            if (!Stun(xeno, receiver, xeno.Comp.ParalyzeTime, false))
+                continue;
+
+            _cameraShake.ShakeCamera(receiver, xeno.Comp.CloseScreenShakeShakes, xeno.Comp.CloseScreenShakeStrength);
+            Deafen(xeno, receiver, xeno.Comp.CloseDeafTime);
+        }
+
         _mobs.Clear();
-        _entityLookup.GetEntitiesInRange(xform.Coordinates, xeno.Comp.Range, _mobs);
+        _entityLookup.GetEntitiesInRange(xform.Coordinates, xeno.Comp.StunRange, _mobs);
 
         foreach (var receiver in _mobs)
         {
             if (!_xeno.CanAbilityAttackTarget(xeno, receiver))
                 continue;
 
-            if (!ApplyScreechEffects(xeno, receiver, xeno.Comp.SlowTime, xeno.Comp.BlindTime))
+            if (_closeMobs.Contains(receiver))
                 continue;
 
-            _cameraShake.ShakeCamera(receiver, xeno.Comp.ScreenShakeShakes, xeno.Comp.ScreenShakeStrength);
-            Deafen(xeno, receiver, xeno.Comp.DeafTime);
+            if (!Stun(xeno, receiver, xeno.Comp.StunTime, true))
+                continue;
+
+            _cameraShake.ShakeCamera(receiver, xeno.Comp.FarScreenShakeShakes, xeno.Comp.FarScreenShakeStrength);
+            Deafen(xeno, receiver, xeno.Comp.FarDeafTime);
+        }
+
+        _parasites.Clear();
+        _entityLookup.GetEntitiesInRange(xform.Coordinates, xeno.Comp.ParasiteStunRange, _parasites);
+
+        foreach (var receiver in _parasites)
+        {
+            if (!Stun(xeno, receiver, xeno.Comp.ParasiteStunTime, true, false))
+                continue;
+
+            _cameraShake.ShakeCamera(receiver, xeno.Comp.CloseScreenShakeShakes, xeno.Comp.CloseScreenShakeStrength);
         }
 
         if (_net.IsServer)
             SpawnAttachedTo(xeno.Comp.Effect, xeno.Owner.ToCoordinates());
     }
+
+    private bool Stun(EntityUid xeno, EntityUid receiver, TimeSpan time, bool stun, bool occlusionCheck = true)
+    {
+        if (_mobState.IsDead(receiver))
+            return false;
+
+        if (occlusionCheck && !_examineSystem.InRangeUnOccluded(xeno, receiver))
+            return false;
+
+        if (stun)
+            return _stun.TryStun(receiver, time, false);
+
+        return _stun.TryParalyze(receiver, time, false);
+    }
+
+    // CMU14 End
 
     // CMU Related Change
     public bool ApplyScreechEffects(EntityUid xeno, EntityUid receiver, TimeSpan slowTime, TimeSpan blindTime)
@@ -105,9 +156,13 @@ public sealed partial class XenoScreechSystem : EntitySystem
 
         _slow.TrySuperSlowdown(receiver, slowTime, ignoreDurationModifier: true);
         _jitter.DoJitter(receiver, slowTime, true, 3f, 8f);
-        var blind = EnsureComp<ScreechBlindComponent>(receiver);
-        blind.EndsAt = _timing.CurTime + blindTime;
-        Dirty(receiver, blind);
+        // CMU14: zero disables blindness/scatter, including the first simulation tick.
+        if (blindTime > TimeSpan.Zero)
+        {
+            var blind = EnsureComp<ScreechBlindComponent>(receiver);
+            blind.EndsAt = _timing.CurTime + blindTime;
+            Dirty(receiver, blind);
+        }
         return true;
     }
 

@@ -154,6 +154,19 @@
   components: []
   language: Polish
 
+  # ├──[ RuMC14 tongue ]─────────────────────────────────────────┤
+
+- type: trait
+  id: HebrewLanguage
+  name: au14-trait-hebrew-language-name
+  description: au14-trait-hebrew-language-desc
+  category: LanguageTraits
+  cost: 1
+  components: []
+  language: Hebrew
+
+  # ├──[ end of RuMC14 tongue ]─────────────────────────────────────────┤
+
 # - type: trait
 #   id: AfrikaansLanguage
 #   name: au14-trait-afrikaans-language-name

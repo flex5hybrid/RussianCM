@@ -212,6 +212,7 @@
     - ActionXenoDevolve
   - type: XenoStrain
     name: rmc-xeno-valkyrie-name
+    baseCaste: CMXenoPraetorian # CMU14: allow returning to the unstrained caste.
     description: rmc-xeno-valkyrie-description
     popup: rmc-xeno-valkyrie-popup
   - type: XenoPheromones
@@ -283,6 +284,7 @@
     - ActionXenoDevolve
   - type: XenoStrain
     name: rmc-xeno-dancer-name
+    baseCaste: CMXenoPraetorian # CMU14: allow returning to the unstrained caste.
     description: rmc-xeno-dancer-description
     popup: rmc-xeno-dancer-popup
   - type: CMArmor
@@ -335,6 +337,7 @@
     - ActionXenoDevolve
   - type: XenoStrain
     name: rmc-xeno-vanguard-name
+    baseCaste: CMXenoPraetorian # CMU14: allow returning to the unstrained caste.
     description: rmc-xeno-vanguard-description
     popup: rmc-xeno-vanguard-popup
   - type: XenoClaws
@@ -392,6 +395,7 @@
         Piercing: 10
   - type: XenoStrain
     name: rmc-xeno-oppressor-name
+    baseCaste: CMXenoPraetorian # CMU14: allow returning to the unstrained caste.
     description: rmc-xeno-oppressor-description
     popup: rmc-xeno-oppressor-popup
   - type: MovementSpeedModifier

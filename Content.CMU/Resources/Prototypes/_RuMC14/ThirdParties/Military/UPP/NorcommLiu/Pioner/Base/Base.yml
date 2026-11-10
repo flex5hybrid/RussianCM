@@ -19,7 +19,7 @@
   - type: GrantSquadLeaderTracker
     defaultMode: SquadLeader
     trackerModes:
-    - Norcomm LiuCommandingOfficer
+    - NorcommLiuCommandingOfficer
     - SquadLeader
     - BattleBuddy
     - PrimaryLandingZone

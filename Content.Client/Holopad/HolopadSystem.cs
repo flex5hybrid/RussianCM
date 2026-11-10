@@ -94,6 +94,11 @@ public sealed partial class HolopadSystem : SharedHolopadSystem
             };
 
             _sprite.AddLayer((hologram, hologramSprite), layer, null);
+
+            // RuMC edit start
+            foreach (var extra in holopadhologram.ExtraLayers)
+                _sprite.AddLayer((hologram, hologramSprite), extra, null);
+            // RuMC edit end
         }
 
         // Override specific values

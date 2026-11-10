@@ -140,6 +140,9 @@ language-Arcturian-description = An alien language from Arcturus with harmonic t
 language-Pathogen-name= = Pathogenic
 language-Pathogen-description = The common tongue of the Mycelial Confluence - a wet, clicking language carried through spores.
 
+language-Hebrew-name = Hebrew
+language-Hebrew-description = A Semitic language, revived as a spoken language in the 20th century, with a rich historical and religious heritage.
+
 language-Beast-name = Beast
 language-Beast-description = The tongue of nature.
 

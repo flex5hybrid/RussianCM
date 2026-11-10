@@ -24,7 +24,7 @@ public sealed partial class ItemSlotButtonContainer
         var count = 0;
         foreach (var (name, data) in inventory.SlotData)
         {
-            if (data.HasSlotGroup)
+            if (data.HasSlotGroup || !data.ShowInWindow)
                 continue;
 
             var slot = new CMULayoutSlot(name, data.ButtonOffset, GetButton(name));
@@ -46,7 +46,7 @@ public sealed partial class ItemSlotButtonContainer
         var width = 0;
         foreach (var (name, data) in inventory.SlotData)
         {
-            if (data.HasSlotGroup)
+            if (data.HasSlotGroup || !data.ShowInWindow)
                 continue;
 
             _cmuLayoutSlots.Add(new CMULayoutSlot(name, data.ButtonOffset, GetButton(name)));

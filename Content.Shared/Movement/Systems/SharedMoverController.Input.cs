@@ -118,6 +118,8 @@ namespace Content.Shared.Movement.Systems
             entity.Comp.RelativeRotation = state.RelativeRotation;
             entity.Comp.TargetRelativeRotation = state.TargetRelativeRotation;
             entity.Comp.CanMove = state.CanMove;
+            entity.Comp.SprintOnModifier = state.SprintOnModifier;
+            entity.Comp.SprintBlocked = state.SprintBlocked;
             entity.Comp.RelativeEntity = EnsureEntity<InputMoverComponent>(state.RelativeEntity, entity.Owner);
 
             // Reset
@@ -140,6 +142,8 @@ namespace Content.Shared.Movement.Systems
             args.State = new InputMoverComponentState()
             {
                 CanMove = entity.Comp.CanMove,
+                SprintOnModifier = entity.Comp.SprintOnModifier,
+                SprintBlocked = entity.Comp.SprintBlocked,
                 RelativeEntity = TerminatingOrDeleted(entity.Comp.RelativeEntity) ? null : GetNetEntity(entity.Comp.RelativeEntity),
                 LerpTarget = entity.Comp.LerpTarget,
                 HeldMoveButtons = entity.Comp.HeldMoveButtons,
@@ -448,7 +452,7 @@ namespace Content.Shared.Movement.Systems
             }
 
             // Logger.GetSawmill("content").Info($"{curDir}{walk}{sprint}");
-            return (walk, sprint);
+            return mover.SprintBlocked ? (walk + sprint, Vector2.Zero) : (walk, sprint);
         }
 
         /// <summary>

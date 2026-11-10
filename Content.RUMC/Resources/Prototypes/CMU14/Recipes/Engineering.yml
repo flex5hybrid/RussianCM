@@ -17,7 +17,7 @@
     edges:
     - to: target
       steps:
-      - material: RMCCable
+      - material: CMUThinCableLV
         amount: 30
         doAfter: 5
       - tool: Screwing
@@ -57,7 +57,7 @@
         prototype: CMSheetMetal1
         amount: 30
       - !type:SpawnPrototype
-        prototype: RMCCableCoil1
+        prototype: CMUCableThinLVStack1
         amount: 30
       - !type:SpawnPrototype
         prototype: CMAPCElectronics

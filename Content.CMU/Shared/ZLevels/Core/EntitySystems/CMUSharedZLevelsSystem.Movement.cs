@@ -124,7 +124,8 @@ public abstract partial class CMUSharedZLevelsSystem
 
     // Only passed directly to activation in the same move event. A height change, transition,
     // or wake can invoke other systems, so those paths must query the current ground again.
-    protected readonly record struct ZGroundContact(float Distance, bool Sticky);
+    protected readonly record struct ZGroundContact(float Distance, bool Sticky, ZFallCheck? FallCheck);
+    protected readonly record struct ZFallCheck(EntityUid? Grid, Vector2i Tile);
 
     protected void OnZPhysicsMoveGroundSnap(
         Entity<CMUZPhysicsComponent> ent, ref MoveEvent args, out ZGroundContact? unchangedGround)
@@ -158,8 +159,8 @@ public abstract partial class CMUSharedZLevelsSystem
         var oldVelocity = ent.Comp.Velocity;
         var oldHeight = ent.Comp.LocalPosition;
         Entity<CMUZPhysicsComponent?> nullableEnt = (ent.Owner, ent.Comp);
-        var distanceToGround = DistanceToGround(nullableEnt, out var stickyGround);
-        var ground = new ZGroundContact(distanceToGround, stickyGround);
+        var distanceToGround = DistanceToGround(nullableEnt, out var stickyGround, out var fallCheck);
+        var ground = new ZGroundContact(distanceToGround, stickyGround, fallCheck);
 
         if (TryGetSweptStickyMoveGroundSnapDistance(ent, args, distanceToGround, stickyGround, out var sweptDistance))
         {
@@ -197,6 +198,10 @@ public abstract partial class CMUSharedZLevelsSystem
         // level, so this returns before both the knockdown and the Blunt damage. YautjaComponent is the species marker
         // (CMUMobYautja, and a youngblood gains it when the role is taken); plain humans keep normal fall damage.
         if (HasComp<YautjaComponent>(ent.Owner))
+            return;
+
+        // CMU14: a CMUZLeap leaper (the Early Warning Joe) lands a dropped level like a yautja
+        if (TryComp(ent.Owner, out CMUZLeapComponent? zLeap) && zLeap.IgnoreFallDamage)
             return;
 
         var knockdownTime = MathF.Min(args.ImpactPower * 0.25f, 5f);
@@ -938,16 +943,22 @@ public abstract partial class CMUSharedZLevelsSystem
     /// <param name="maxFloors">How many z-levels down are we prepared to check? The default is 1, since in most cases we don't need to check more than that.</param>
     /// <returns></returns>
     public float DistanceToGround(Entity<CMUZPhysicsComponent?> target, out bool stickyGround, int maxFloors = 1)
+        => DistanceToGround(target, out stickyGround, out _, maxFloors);
+
+    private float DistanceToGround(Entity<CMUZPhysicsComponent?> target, out bool stickyGround,
+        out ZFallCheck? fallCheck, int maxFloors = 1)
     {
         if (!Prof.IsEnabled)
-            return DistanceToGroundCore(target, out stickyGround, maxFloors);
+            return DistanceToGroundCore(target, out stickyGround, out fallCheck, maxFloors);
 
         using var profile = Prof.Group("CMU Z DistanceToGround");
-        return DistanceToGroundCore(target, out stickyGround, maxFloors);
+        return DistanceToGroundCore(target, out stickyGround, out fallCheck, maxFloors);
     }
 
-    private float DistanceToGroundCore(Entity<CMUZPhysicsComponent?> target, out bool stickyGround, int maxFloors)
+    private float DistanceToGroundCore(Entity<CMUZPhysicsComponent?> target, out bool stickyGround,
+        out ZFallCheck? fallCheck, int maxFloors)
     {
+        fallCheck = null;
         if (!Resolve(target, ref target.Comp, false))
         {
             stickyGround = false;
@@ -970,7 +981,8 @@ public abstract partial class CMUSharedZLevelsSystem
         }
 
         var worldPos = _transform.GetWorldPosition(xform);
-        return DistanceToGroundAtWorldPositionCore(target, xform.MapUid, worldPos, out stickyGround, maxFloors);
+        return QueryGroundDistance(target.Owner, xform.MapUid, worldPos, target.Comp.LocalPosition,
+            target.Comp.Velocity, out stickyGround, maxFloors, out fallCheck);
     }
 
     private bool TryGetVehicleFootprintDistanceToGround(
@@ -1091,7 +1103,19 @@ public abstract partial class CMUSharedZLevelsSystem
         float velocity,
         out bool stickyGround,
         int maxFloors)
+        => QueryGroundDistance(target, mapUid, worldPos, localPosition, velocity, out stickyGround, maxFloors, out _);
+
+    private float QueryGroundDistance(
+        EntityUid target,
+        EntityUid? mapUid,
+        Vector2 worldPos,
+        float localPosition,
+        float velocity,
+        out bool stickyGround,
+        int maxFloors,
+        out ZFallCheck? fallCheck)
     {
+        fallCheck = null;
         stickyGround = false;
         if (mapUid is not { } resolvedMap ||
             !_zMapQuery.TryComp(resolvedMap, out var zMapComp))
@@ -1127,9 +1151,15 @@ public abstract partial class CMUSharedZLevelsSystem
             // A ship's ramp can leave a hole on a map that has no terrain grid.
             // Continue down through that empty level to find its lower deck.
             if (!TryResolveMovementGrid(checkingMap.Owner, worldPos, out var checkingGridUid, out var checkingGrid))
+            {
+                if (floor == 0)
+                    fallCheck = new ZFallCheck(null, default);
                 continue;
+            }
 
             var checkingTile = _map.WorldToTile(checkingGridUid, checkingGrid, worldPos);
+            if (floor == 0)
+                fallCheck = new ZFallCheck(checkingGridUid, checkingTile);
 
             if (TryGetHighGroundDistance(
                     target,

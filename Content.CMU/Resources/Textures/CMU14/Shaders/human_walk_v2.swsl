@@ -1,0 +1,93 @@
+uniform sampler2D poseMap;
+uniform highp vec4 poseUV;
+uniform highp vec4 poseUV1;
+uniform highp vec4 poseUV2;
+uniform highp vec4 poseUV3;
+uniform highp vec4 poseUV4;
+uniform highp vec4 poseUV5;
+uniform highp float component_count;
+uniform sampler2D displacementMap;
+uniform highp vec4 displacementUV;
+uniform highp float use_displacement;
+uniform highp float displacementSize;
+uniform highp float repair_torso_cuts;
+varying highp vec2 localCoord;
+
+void vertex() {
+    localCoord = tCoord2;
+}
+
+highp vec2 walkSourceCoord(highp vec4 pose) {
+    highp vec2 offset = (floor(pose.rg * 255.0 + vec2(0.5)) - vec2(128.0)) * vec2(1.0, -1.0);
+    return localCoord + offset / 32.0;
+}
+
+highp vec4 sampleWalkSource(highp vec2 sourceLocal) {
+    highp float alpha = 1.0;
+    highp float inside = step(0.0, sourceLocal.x) * step(sourceLocal.x, 1.0) *
+        step(0.0, sourceLocal.y) * step(sourceLocal.y, 1.0);
+    if (use_displacement > 0.5) {
+        // Preserve the inventory/body's existing displacement, sampled at the articulated source pixel.
+        highp vec2 originalCoord = clamp(sourceLocal, vec2(0.5 / 32.0), vec2(31.5 / 32.0));
+        highp vec4 original = texture2D(displacementMap, mix(displacementUV.xy, displacementUV.zw, originalCoord));
+        highp vec2 originalOffset = (floor(original.rg * 255.0 + vec2(0.5)) - vec2(128.0)) * vec2(1.0, -1.0);
+        sourceLocal += originalOffset / 32.0;
+        alpha *= original.a;
+    }
+    inside *= step(0.0, sourceLocal.x) * step(sourceLocal.x, 1.0) *
+        step(0.0, sourceLocal.y) * step(sourceLocal.y, 1.0);
+    // The source sprite occupies only one cell of a shared texture atlas. Never read a neighbour.
+    highp vec2 safeLocal = clamp(sourceLocal, vec2(0.5 / 32.0), vec2(31.5 / 32.0));
+    highp vec4 color = zTexture(UV + (safeLocal - localCoord) * 32.0 * TEXTURE_PIXEL_SIZE);
+    color.a *= alpha * inside;
+    return color;
+}
+
+highp vec4 sampleWalkPose(highp vec4 region) {
+    highp vec4 pose = texture2D(poseMap, mix(region.xy, region.zw, localCoord));
+    highp vec4 color = sampleWalkSource(walkSourceCoord(pose));
+    // Swinging arms can uncover the red cut surfaces painted on the stock detachable torso.
+    // Replace those pixels with nearby skin tones before the engine applies the character tint.
+    if (repair_torso_cuts > 0.5 && color.r > 3.0 * max(color.g, color.b)) {
+        color.rgb = color.r * vec3(1.0, 0.73, 0.64);
+    }
+    color.rgb *= 1.0 - pose.b;
+    color.a *= pose.a;
+    return vec4(color.rgb * color.a, color.a);
+}
+
+highp vec4 fillWalkTorso() {
+    highp vec4 pose = texture2D(poseMap, mix(poseUV5.xy, poseUV5.zw, localCoord));
+    if (pose.a < 0.5) {
+        return vec4(0.0);
+    }
+    highp vec2 source = walkSourceCoord(pose);
+    highp vec4 fabric = sampleWalkSource(source);
+    // Require cloth in this row and just above it. A waistline with a bare chest stays open.
+    if (fabric.a < 0.5 || sampleWalkSource(source + vec2(0.0, 1.0 / 32.0)).a < 0.5) {
+        return vec4(0.0);
+    }
+    return vec4(fabric.rgb * fabric.a, fabric.a);
+}
+
+highp vec4 overWalkPose(highp vec4 back, highp vec4 front) {
+    return front + back * (1.0 - front.a);
+}
+
+void fragment() {
+    highp vec4 color = sampleWalkPose(poseUV);
+    // Composite garment pixels, not their lookup coordinates: a transparent sleeve or boot
+    // must not erase the other limb or torso already painted underneath it.
+    if (component_count > 1.5) {
+        color = overWalkPose(color, sampleWalkPose(poseUV1));
+    }
+    if (component_count > 2.5) {
+        color = overWalkPose(color, sampleWalkPose(poseUV2));
+        color = overWalkPose(color, sampleWalkPose(poseUV3));
+        color = overWalkPose(color, sampleWalkPose(poseUV4));
+    }
+    if (component_count > 5.5 && color.a < 0.01) {
+        color = overWalkPose(fillWalkTorso(), color);
+    }
+    COLOR = vec4(color.rgb / max(color.a, 0.00001), color.a);
+}

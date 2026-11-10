@@ -1,4 +1,5 @@
 using System;
+using Content.Client.CMU14.Interface.Hud; // CMU14: CRT material belongs to fills, below text.
 using Robust.Client.Graphics;
 using Robust.Shared.Maths;
 
@@ -8,24 +9,8 @@ namespace Content.Client.Stylesheets;
 ///     A flat panel with a border and optional corner brackets, for the CRT theme.
 /// </summary>
 /// <remarks>
-///     <para>
-///     This used to paint its own "terminal texture" per panel: scanlines, a grid, pixel noise, and
-///     scattered pixelation blocks. All four are gone, because none of them were what they claimed
-///     to be. The scanlines were capped at <c>MaxScanlines = 3</c> with 86px spacing and measured
-///     from each panel's own top edge - three stray horizontal streaks per panel, restarting at
-///     every panel boundary, rather than the dense uniform raster a real scanline pass produces. The
-///     pixelation was hash-positioned clusters of one or two blocks with a drop shadow, scattered at
-///     ~130px intervals: random dots dressed up as signal artifacts. Grid was enabled on exactly one
-///     panel in the entire game and noise on none at all.
-///     </para>
-///     <para>
-///     Texture belongs to a pass over a whole surface, not to individual panels - a panel cannot know
-///     where it sits on the screen, so any raster it draws restarts at its own edges and reads as
-///     decoration on that panel rather than as a property of the display. That pass now exists:
-///     <c>crt_terminal.swsl</c> via <c>CrtScreenControl</c>, which does uniform scanlines with a
-///     cosine falloff, crawling grain and a roll bar in a single draw call over a whole subtree.
-///     Anything wanting CRT texture should go through that instead of reintroducing it here.
-///     </para>
+/// CMU14: fills and borders use native drawing. The enclosing display pass captures the
+/// complete window, including its text, so nested panels do not receive duplicate effects.
 /// </remarks>
 public sealed class CrtStyleBox : StyleBox
 {
@@ -62,7 +47,7 @@ public sealed class CrtStyleBox : StyleBox
         var thickness = BorderThickness.Scale(uiScale);
         var inner = thickness.Deflate(box);
 
-        handle.DrawRect(inner, BackgroundColor);
+        CmuCrtWindowsUIController.DrawFill(handle, inner, BackgroundColor); // CMU14
         DrawBorder(handle, box, thickness);
 
         // Corner brackets are a CRT-theme flourish; the base theme gets a plain bordered panel.
@@ -87,16 +72,16 @@ public sealed class CrtStyleBox : StyleBox
         var (left, top, right, bottom) = thickness;
 
         if (left > 0)
-            handle.DrawRect(new UIBox2(box.Left, box.Top, box.Left + left, box.Bottom), BorderColor);
+            CmuCrtWindowsUIController.DrawFill(handle, new UIBox2(box.Left, box.Top, box.Left + left, box.Bottom), BorderColor);
 
         if (top > 0)
-            handle.DrawRect(new UIBox2(box.Left, box.Top, box.Right, box.Top + top), BorderColor);
+            CmuCrtWindowsUIController.DrawFill(handle, new UIBox2(box.Left, box.Top, box.Right, box.Top + top), BorderColor);
 
         if (right > 0)
-            handle.DrawRect(new UIBox2(box.Right - right, box.Top, box.Right, box.Bottom), BorderColor);
+            CmuCrtWindowsUIController.DrawFill(handle, new UIBox2(box.Right - right, box.Top, box.Right, box.Bottom), BorderColor);
 
         if (bottom > 0)
-            handle.DrawRect(new UIBox2(box.Left, box.Bottom - bottom, box.Right, box.Bottom), BorderColor);
+            CmuCrtWindowsUIController.DrawFill(handle, new UIBox2(box.Left, box.Bottom - bottom, box.Right, box.Bottom), BorderColor);
     }
 
     private void DrawCorners(DrawingHandleScreen handle, UIBox2 box, float uiScale)
@@ -136,7 +121,7 @@ public sealed class CrtStyleBox : StyleBox
             MathF.Max(x, x + line * xDirection),
             MathF.Max(y, y + length * yDirection));
 
-        handle.DrawRect(horizontal, CornerColor);
-        handle.DrawRect(vertical, CornerColor);
+        CmuCrtWindowsUIController.DrawFill(handle, horizontal, CornerColor);
+        CmuCrtWindowsUIController.DrawFill(handle, vertical, CornerColor);
     }
 }

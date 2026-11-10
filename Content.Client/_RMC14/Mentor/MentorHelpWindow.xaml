@@ -4,10 +4,11 @@
      ground with nothing framing them, and the input reuses AHelp's CrtBwoinkInput band. -->
 <controls:MentorHelpWindow
     xmlns="https://spacestation14.io"
+    xmlns:cmu="clr-namespace:Content.Client.CMU14.Interface"
     xmlns:controls="clr-namespace:Content.Client._RMC14.Mentor"
     SetSize="600 360"
     Title="Mentor Help">
-    <PanelContainer StyleClasses="CrtScreenPanel" HorizontalExpand="True" VerticalExpand="True">
+    <cmu:CmuCrtDisplayPanel MenuSurface="True" StyleClasses="CrtScreenPanel" HorizontalExpand="True" VerticalExpand="True">
         <BoxContainer Orientation="Vertical" Margin="8" SeparationOverride="8">
             <OutputPanel Name="Messages" Access="Public" HorizontalExpand="True"
                          VerticalExpand="True" />
@@ -23,5 +24,5 @@
                 <Button Name="ReMentorButton" Access="Public" Text="Re-mentor" Visible="False" />
             </BoxContainer>
         </BoxContainer>
-    </PanelContainer>
+    </cmu:CmuCrtDisplayPanel>
 </controls:MentorHelpWindow>

@@ -59,6 +59,10 @@
   # Only the UPP ambassador can use it.
   - type: AccessReader
     access: [["AU14AccessAmbassadorUPP"]]
+  # RuMC edit start
+  - type: RuMCReinforcementSide
+    side: rumc-reinforcement-side-embassy-upp
+  # RuMC edit end
   - type: AmbassadorConsole
     factionName: UPP
     budget: 500
@@ -94,6 +98,10 @@
   # Only the UA ambassador can use it.
   - type: AccessReader
     access: [["AU14AccessAmbassadorUA"]]
+  # RuMC edit start
+  - type: RuMCReinforcementSide
+    side: rumc-reinforcement-side-embassy-ua
+  # RuMC edit end
   - type: AmbassadorConsole
     factionName: United Americas
     budget: 500
@@ -118,6 +126,10 @@
   # Only the TWE ambassador can use it.
   - type: AccessReader
     access: [["AU14AccessAmbassadorTWE"]]
+  # RuMC edit start
+  - type: RuMCReinforcementSide
+    side: rumc-reinforcement-side-embassy-twe
+  # RuMC edit end
   - type: AmbassadorConsole
     factionName: Three World Empire
     budget: 500
@@ -142,6 +154,10 @@
   # Only the ICSC ambassador can use it.
   - type: AccessReader
     access: [["AU14AccessAmbassadorICSC"]]
+  # RuMC edit start
+  - type: RuMCReinforcementSide
+    side: rumc-reinforcement-side-embassy-icsc
+  # RuMC edit end
   - type: AmbassadorConsole
     factionName: Independent Core System Colonies
     budget: 500
@@ -161,6 +177,10 @@
   - type: Sprite
     sprite: _RMC14/Structures/Machines/computer.rsi
     state: terminal1_old
+  # RuMC edit start
+  - type: RuMCReinforcementSide
+    side: rumc-reinforcement-side-embassy-cca
+  # RuMC edit end
   - type: AmbassadorConsole
     factionName: Central Confederation of Africa
     budget: 500

@@ -430,6 +430,7 @@ namespace Content.Client.Options.UI.Tabs
 
             AddHeader("ui-options-header-ui");
             AddButton(ContentKeyFunctions.FocusChat);
+            AddButton(Content.Client.CMU14.Chat.CMUChatInputCommands.Search); // CMU14
             AddButton(ContentKeyFunctions.FocusLocalChat);
             AddButton(ContentKeyFunctions.FocusEmote);
             AddButton(ContentKeyFunctions.FocusWhisperChat);
@@ -894,6 +895,10 @@ namespace Content.Client.Options.UI.Tabs
             {
                 bindType = KeyBindingType.Toggle;
             }
+
+            // CMU14: local chat search stays a console command when rebound.
+            if (function == Content.Client.CMU14.Chat.CMUChatInputCommands.Search)
+                bindType = KeyBindingType.Command;
 
             var registration = new KeyBindingRegistration
             {

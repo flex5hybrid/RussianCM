@@ -113,6 +113,7 @@
   id: MobHuman
   name: Urist McHands
   components:
+  - type: RMCStamina
   - type: TTS
     # voice: PUCHKOW # CMU14: assign a random voice matching the humanoid's sex.
     faction: Human

@@ -23,6 +23,10 @@ public sealed partial class CMUDiscordDocumentationSystem
                                        ?? throw new FormatException($"Missing {name} on {element.Name}.");
         switch (element.Name.LocalName)
         {
+            case "CMUFobGuideText":
+                return _localization.GetString(Required("Key"));
+            case "CMUGuideCraftingRecipes":
+                return Text("crafting-recipes");
             case "GuideEntityEmbed":
             {
                 var entity = _prototypes.Index<EntityPrototype>(Required("Entity"));

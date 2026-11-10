@@ -1958,6 +1958,11 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    // CMU14: playtime leaderboard opt-out column
+                    b.Property<bool>("CMUPlaytimeHidden")
+                        .HasColumnType("boolean")
+                        .HasColumnName("cmu_playtime_hidden");
+
                     b.Property<DateTime>("FirstSeenTime")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("first_seen_time");
@@ -2290,6 +2295,20 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Property<bool>("Synthetic")
                         .HasColumnType("boolean")
                         .HasColumnName("synthetic");
+
+                    // CMU14 synthetic profile fields
+                    b.Property<int>("SyntheticGeneration")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasDefaultValue(1)
+                        .HasColumnName("synthetic_generation");
+
+                    b.Property<string>("SyntheticModelSuffix")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("text")
+                        .HasDefaultValue("")
+                        .HasColumnName("synthetic_model_suffix");
 
                     b.Property<string>("TTSVoice")
                         .HasColumnType("text")

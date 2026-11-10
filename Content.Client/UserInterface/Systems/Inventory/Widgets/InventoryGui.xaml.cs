@@ -13,7 +13,16 @@ public sealed partial class InventoryGui : UIWidget
 
         var inventoryUIController = UserInterfaceManager.GetUIController<InventoryUIController>();
         inventoryUIController.RegisterInventoryBarContainer(InventoryHotbar);
+        // CMU14: the controller explicitly changes drawer visibility after populating its slots.
+        // Do not change an ancestor panel from its child's propagated visibility event.
 
         LayoutContainer.SetGrowVertical(this, LayoutContainer.GrowDirection.Begin);
     }
+
+    // CMU14 method: clamp equipment without measuring open storage windows.
+    public void SetAvailableHeight(float height)
+    {
+        EquipmentScroll.MaxHeight = MathF.Max(40, MathF.Min(290, height - 52));
+    }
+
 }

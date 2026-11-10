@@ -217,7 +217,7 @@ public sealed partial class ThreatSystem : EntitySystem
         bool isColonyFall = string.Equals(_auRound.SelectedPreset?.ID, "ColonyFall",
             StringComparison.OrdinalIgnoreCase);
         int playerCount = assignedJobs.Count;
-        int playerBudget = ThreatVoteSelection.CalculateThreatPlayerBudget(playerCount, threat.ThreatRatio);
+        int playerBudget = ThreatVoteSelection.CalculateThreatPlayerBudget(playerCount, threat);
 
         if (isColonyFall)
         {
@@ -262,7 +262,7 @@ public sealed partial class ThreatSystem : EntitySystem
 
         bool isColonyFall = string.Equals(_auRound.SelectedPreset?.ID, "ColonyFall",
             StringComparison.OrdinalIgnoreCase);
-        int playerBudget = ThreatVoteSelection.CalculateThreatPlayerBudget(playerCount, threat.ThreatRatio);
+        int playerBudget = ThreatVoteSelection.CalculateThreatPlayerBudget(playerCount, threat);
 
         if (isColonyFall)
         {
@@ -397,8 +397,7 @@ public sealed partial class ThreatSystem : EntitySystem
         int? playerBudget = null)
     {
         string threatId = threat.ID;
-        ProtoId<PartySpawnPrototype> partySpawn = threat.RoundStartSpawn;
-        if (string.IsNullOrWhiteSpace(partySpawn))
+        if (threat.RoundStartSpawn is not { } partySpawn || string.IsNullOrWhiteSpace(partySpawn.Id))
         {
             _sawmill.Debug($"[DEBUG] Threat '{threat.ID}' has no RoundStartSpawn configured, skipping spawn.");
             int removed = ThreatSystem.RemoveThreatJobAssignments(assignedJobs);

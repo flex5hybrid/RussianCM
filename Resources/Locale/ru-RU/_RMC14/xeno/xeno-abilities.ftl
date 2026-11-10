@@ -14,6 +14,7 @@ cm-xeno-requires-more-plasma = {CAPITALIZE($construction)} требует ещё
 cm-xeno-construction-plasma-left = Здесь запланирована постройка {$construction}. Требуется ещё [color=cyan]{$plasma}[/color] плазмы.
 cm-xeno-cant-reach-there = Вы не можете добраться туда!
 cm-xeno-cant-build-in-self = Нельзя строить так близко!
+rmc-xeno-build-mark-cleared = Мы убираем психическую метку с этого места.
 rmc-xeno-construction-unique-exists = {$choice} уже построен!
 rmc-xeno-construction-hive-limit-met = Улей достиг предела по количеству {$choice}!
 rmc-xeno-construction-requires-hive-weeds = {$choice} можно строить только на смоляных сорняках!

@@ -34,8 +34,11 @@ public sealed partial class ThreatPrototype : IPrototype
     [DataField("winconditions", required: false)]
     public List<string> WinConditions { get; private set; } = new();
 
+    /// <summary>
+    ///     Optional party to spawn at round start. Threats without one do not reserve or spawn player bodies.
+    /// </summary>
     [DataField("roundstartspawns")]
-    public ProtoId<PartySpawnPrototype> RoundStartSpawn { get; private set; }
+    public ProtoId<PartySpawnPrototype>? RoundStartSpawn { get; private set; }
 
     /// <summary>
     ///     Whether extra member bodies are spawned beyond the partySpawn plan so every held
@@ -56,6 +59,14 @@ public sealed partial class ThreatPrototype : IPrototype
     /// </summary>
     [DataField("threatratio")]
     public float ThreatRatio { get; private set; } = 0.25f;
+
+    /// <summary>Round small player budgets upward instead of to the nearest player.</summary>
+    [DataField]
+    public bool RoundPlayerBudgetUp;
+
+    /// <summary>Minimum force size, still capped at half the ready population.</summary>
+    [DataField]
+    public int MinimumPlayerBudget;
 
     [DataField("thirdpartyratio")]
     public float ThirdPartyRatio { get; private set; } = 0.15f;

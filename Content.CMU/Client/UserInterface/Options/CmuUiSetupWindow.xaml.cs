@@ -19,6 +19,12 @@ public sealed partial class CmuUiSetupWindow : DefaultWindow
     {
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
+        EditHudButton.Disabled = !UserInterfaceManager.GetUIController<Content.Client.CMU14.Interface.Hud.CmuHudLayoutController>().CanEdit;
+        EditHudButton.OnPressed += _ =>
+        {
+            Close();
+            UserInterfaceManager.GetUIController<Content.Client.CMU14.Interface.Hud.CmuHudLayoutController>().OpenEditor();
+        };
         Introduction.SetMessage(Loc.GetString("cmu-ui-setup-introduction"));
         Appearance.RegisterOptions(Settings);
         Settings.Initialize();
@@ -42,6 +48,8 @@ public sealed partial class CmuUiSetupWindow : DefaultWindow
                config.GetCVar(CCVars.CMUChatRowTint) is CCVars.CMUChatRowTintFull or CCVars.CMUChatRowTintMuted &&
                config.GetCVar(CCVars.CMUCrtMenuEffect) &&
                config.GetCVar(CCVars.CMUChatCrtHaze) &&
+               config.GetCVar(CCVars.CMUCrtDisplayEffect) == CCVars.CMUCrtDisplayEffect.DefaultValue &&
+               config.GetCVar(CCVars.CMUCrtDisplayRefreshRate) == CCVars.CMUCrtDisplayRefreshRate.DefaultValue &&
                config.GetCVar(CCVars.CMUCrtEffectIntensity) == CCVars.CMUCrtEffectIntensity.DefaultValue;
     }
 

@@ -1,0 +1,9 @@
+rumc-job-prefix-sof = SOF
+rumc-job-prefix-vdv = VDV
+rumc-job-prefix-deputy-commander = Deputy Commander
+rumc-sof-greeting = You are part of a UPP special operations team. Follow your commander's orders.
+rumc-vdv-greeting = You are part of a UPP airborne team. Follow your commander's orders.
+rumc-chief-engineer-greeting = You are the chief engineer of the UPP Norcomm Liu team. Coordinate your engineers.
+rumc-specialist-engineer-greeting = You are an engineering specialist of the UPP Norcomm Liu team. Support your team.
+rumc-technician-greeting = You are a technician of the UPP Norcomm Liu team. Support your team.
+rumc-doctor-greeting = You are a doctor of the UPP Norcomm Liu team. Treat your team's wounded.

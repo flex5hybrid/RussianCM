@@ -28,7 +28,7 @@
   - type: EquipEntityPreset
     preset: RuMCSOFPreset
   - type: JobPrefix
-    prefix: rumc-job-prefix-SOF
+    prefix: rumc-job-prefix-sof
   - type: MarineOrders
   - type: RMCTrackable
   - type: RMCPointing
@@ -79,7 +79,7 @@
         time: 10800 # 3 hours
   spawnMenuRoleName: SOF Rifleman
   startingGear: RuMCGearUPPSOFbaseA
-  greeting: rumc-SOF-greeting
+  greeting: rumc-sof-greeting
   icon: "RuMCJobIconUPPSOFRifleman"
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-govfor

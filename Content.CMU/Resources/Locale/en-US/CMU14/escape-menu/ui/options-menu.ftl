@@ -3,12 +3,12 @@ cmu-ui-options-examine-full-text-in-chat = Echo everything you examine to chat l
 cmu-ui-options-examine-wounds-in-chat = Echo people's wounds to chat when you examine them like in CM13
 
 cmu-ui-options-identification = Identification
-cmu-ui-options-fof-unidentified-marker = Show question marks for unfamiliar enemy uniforms in FoF
-cmu-ui-options-fof-unidentified-marker-tooltip = Shows a question mark above living enemies whose uniform is not issued or sold by your platoon. Works without HUD gear and never marks teammates or dead bodies.
+cmu-ui-options-fof-unidentified-marker = Show FoF identification markers
+cmu-ui-options-fof-unidentified-marker-tooltip = Shows an exclamation mark above the opposing side and a question mark above unfamiliar units. Allegiance-aligned third parties count as teammates. Works without HUD gear and never marks your own forces or dead bodies.
 
 cmu-ui-options-accessibility = Accessibility
-cmu-ui-options-chat-crt-haze = CRT haze over chat
-cmu-ui-options-chat-crt-haze-tooltip = Draw scanlines over chat. Turn this off for clear text while keeping CRT effects elsewhere.
+cmu-ui-options-chat-crt-haze = CRT effects over chat
+cmu-ui-options-chat-crt-haze-tooltip = Apply the CRT texture and optional display simulation to chat. Turn this off for clear text while keeping effects elsewhere.
 cmu-ui-options-auto-ingest = Automatically continue eating and drinking
 cmu-ui-options-auto-ingest-tooltip = After the first bite or sip, continue consuming the held item until it is empty or the action is interrupted.
 cmu-ui-options-temperature-fahrenheit = Show temperatures in Fahrenheit
@@ -51,7 +51,7 @@ cmu-ui-font-comic-sans = Comic Sans
 cmu-ui-font-roboto-mono = Roboto Mono
 cmu-ui-font-cozette = Cozette
 cmu-ui-font-noto-display = Noto Sans Display
-cmu-ui-options-menu-crt-effect = CRT texture on menus
+cmu-ui-options-menu-crt-effect = CRT effects on menus
 cmu-ui-options-crt-intensity = CRT effect strength
 cmu-ui-setup-title = Make yourself comfortable
 cmu-ui-setup-introduction = Welcome to CMU! Choose how your interface looks and how you read chat. You can change all of these later in Options → CMU.

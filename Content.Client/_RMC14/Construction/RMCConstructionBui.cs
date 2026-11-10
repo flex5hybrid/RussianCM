@@ -84,7 +84,7 @@ public sealed partial class RMCConstructionBui : BoundUserInterface
                 var button = new Button()
                 {
                     Text = "x" + stack,
-                    StyleClasses = { "OpenBoth" },
+                    StyleClasses = { "OpenBoth", Content.Client.CMU14.Interface.Hud.CmuHudStyle.Command }, // CMU14
                     SetWidth = 45,
                     Margin = new Thickness(0, 0, 0, 3),
                     HorizontalAlignment = Control.HAlignment.Right

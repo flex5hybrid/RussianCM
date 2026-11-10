@@ -1,0 +1,55 @@
+- type: entity
+  id: RuMCReinforcementHolopad
+  name: holopad
+  description: Holopad with a recorded message.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.25
+        mask:
+        - Impassable
+  - type: Sprite
+    sprite: Structures/Machines/holopad.rsi
+    drawdepth: HighFloorObjects
+    snapCardinals: true
+    layers:
+    - state: base
+    - state: lights_in_call
+      shader: unshaded
+  - type: PointLight
+    radius: 1.3
+    energy: 1.8
+    color: "#afe1fe"
+  - type: RuMCReinforcementHolopad
+    hologramProto: RuMCReinforcementHologram
+  - type: RuMCReinforcementCall
+
+# The hologram on RuMCReinforcementHolopad
+- type: entity
+  parent: HolopadHologram
+  id: RuMCReinforcementHologram
+  name: AI HERMES
+  description: A hologram of AI HERMES.
+  components:
+  - type: HolopadHologram
+    rsiPath: CMU14/Mobs/WorkingJoe/parts.rsi
+    rsiState: full
+    extraLayers:
+    - sprite: _RMC14/Objects/Clothing/Uniforms/Synthetic/joe.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: _RMC14/Objects/Clothing/Shoes/Boots/jackboots.rsi
+      state: equipped-FEET
+  - type: Speech
+    speechVerb: WorkingJoe
+    speechSounds: null
+  - type: TypingIndicator
+    proto: joe

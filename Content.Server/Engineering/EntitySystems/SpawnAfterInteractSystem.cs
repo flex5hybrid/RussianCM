@@ -1,3 +1,4 @@
+using Content.Server._RuMC14.Engineering; // RuMC edit
 using Content.Server.Engineering.Components;
 using Content.Server.Stack;
 using Content.Shared.Coordinates.Helpers;
@@ -77,7 +78,12 @@ namespace Content.Server.Engineering.EntitySystems
                 return;
             }
 
-            Spawn(component.Prototype, coordinates.SnapToGrid(grid));
+            var spawned = Spawn(component.Prototype, coordinates.SnapToGrid(grid)); // RuMC edit
+
+            // RuMC edit start
+            var spawnedEv = new RuMCSpawnAfterInteractSpawnedEvent(spawned);
+            RaiseLocalEvent(uid, ref spawnedEv);
+            // RuMC edit end
 
             if (component.RemoveOnInteract && stackComp == null)
                 TryQueueDel(uid);

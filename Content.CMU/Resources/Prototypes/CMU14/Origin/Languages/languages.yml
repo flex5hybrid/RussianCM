@@ -247,6 +247,24 @@
     !type:SyllableObfuscation
     replacement: ["nǐ", "hǎo", "shì", "de", "wǒ", "men", "zhè", "nà", "ma", "le", "qǐng", "xiè", "zài", "guó", "míng", "dōng", "tíng", "fēng", "píng", "zhōng", "chéng", "shēng", "bīng", "táng", "kōng", "qīng", "ráng", "páng", "líng", "děng", "tóng", "fāng"]
 
+# ├──[ RuMC14 ]─────────────────────────────────────────┤
+
+- type: language
+  id: Hebrew
+  name: "Hebrew"
+  description: "An old Earth language."
+  typefaceId: DefaultBold
+  languageIcon:
+    sprite: /Textures/_RMC14/Interface/flags.rsi
+    state: IL
+  expectedVocabularySize: 125
+  obfuscationMethod:
+    !type:SyllableObfuscation
+    replacement: ["chsh", "tz'kh", "k'sha", "v'ch", "ch'ra", "tz'ka", "sh'lam", "m'ach", "r'sh", "kh'l", "tz'af", "sh'ta", "ch'tz", "b'ra", "d'kha", "l'sh", "n'kh", "tz'm", "k'tz", "s'me", "z'kh", "g'sh", "t'f", "ch'm", "a'in", "o'er", "e'el", "u'tz"]
+    maxSyllables: 3
+
+# ├──[ end of RuMC14 ]─────────────────────────────────────────┤
+
 - type: language
   id: Binary
   name: "Binary"

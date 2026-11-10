@@ -143,6 +143,7 @@ public partial class ChatBox : UIWidget
         ChatInput.SearchButton.OnToggled += OnSearchToggled;
         ChatInput.SearchInput.OnTextChanged += OnSearchTextChanged;
         ChatInput.SearchInput.OnFocusExit += OnSearchFocusExit;
+        ChatInput.SearchInput.OnKeyBindDown += CMUOnSearchKeyBindDown; // CMU14
         // cmu edit end
         ChatInput.FilterButton.Popup.OnNewHighlights += OnNewHighlights;
         ChatInput.FilterButton.Popup.OnTabSelected += OnSettingsTabSelected;
@@ -233,6 +234,7 @@ public partial class ChatBox : UIWidget
         // cmu edit end
 
         _controller.SendMessage(this, SelectedChannel);
+        _hudChannelDrafts.Remove(sentOn);
 
         // cmu edit start
         // Snap back to Local after talking on another channel, or to Dead chat as a ghost. In the lobby, OOC.
@@ -344,6 +346,7 @@ public partial class ChatBox : UIWidget
 
     private void CloseSearch()
     {
+        ChatInput.SearchButton.SetSearchActive(false); // CMU14
         ChatInput.SearchInput.Visible = false;
         ChatInput.SearchInput.Text = string.Empty;
         SetSearch(string.Empty);
@@ -383,6 +386,7 @@ public partial class ChatBox : UIWidget
 
     private void OnChannelSelect(ChatSelectChannel channel)
     {
+        SaveHudChannelDraft(channel);
         _controller.UpdateSelectedChannel(this);
     }
 
@@ -791,7 +795,7 @@ public partial class ChatBox : UIWidget
                 button.RemoveStyleClass(StyleNano.StyleClassCrtChatTabSelected);
             button.Modulate = Color.White;
             button.Label.FontColorOverride = button.Pressed
-                ? CrtTerminalPalette.TextBright
+                ? Content.Client.CMU14.Interface.Hud.CmuHudStyle.InverseTextColor // CMU14: reverse-video selection.
                 : CrtTerminalPalette.Text;
         }
 
@@ -1273,6 +1277,7 @@ public partial class ChatBox : UIWidget
     {
         Stylesheet = _stylesheetManager.SheetNano;
         var enabled = StyleNano.CrtUiEnabled;
+        CMURefreshHudStyle(); // CMU14: the appearance switch restores native chat chrome too.
         _whitelist = BuildMarkupWhitelist(enabled);
         ApplyTabHeaderBackground(enabled);
         ChatWindowPanel.PanelOverride = null;
@@ -1293,11 +1298,11 @@ public partial class ChatBox : UIWidget
     /// </remarks>
     private void ApplyTabHeaderBackground(bool crtEnabled)
     {
-        TabHeaderPanel.PanelOverride = new StyleBoxFlat
+        TabHeaderPanel.PanelOverride = new Content.Client.CMU14.Interface.Hud.CmuCrtFillStyleBox // CMU14
         {
             BackgroundColor = crtEnabled
-                ? CrtTerminalPalette.Surface1
-                : Color.FromHex("#0C0F12"),
+                ? Content.Client.CMU14.Interface.Hud.CmuHudStyle.SurfaceColor.WithAlpha(_config.GetCVar(CCVars.ChatWindowOpacity)) // CMU14
+                : Color.FromHex("#0C0F12").WithAlpha(_config.GetCVar(CCVars.ChatWindowOpacity)), // CMU14
             BorderColor = CrtTerminalPalette.Line,
             BorderThickness = crtEnabled ? new Thickness(0, 0, 0, 1) : new Thickness(0),
         };
@@ -1777,6 +1782,7 @@ public partial class ChatBox : UIWidget
 
     private void OnInputKeyBindDown(GUIBoundKeyEventArgs args)
     {
+
         if (args.Function == EngineKeyFunctions.TextReleaseFocus)
         {
             ChatInput.Input.ReleaseKeyboardFocus();
@@ -1854,6 +1860,7 @@ public partial class ChatBox : UIWidget
         ChatInput.SearchButton.OnToggled -= OnSearchToggled;
         ChatInput.SearchInput.OnTextChanged -= OnSearchTextChanged;
         ChatInput.SearchInput.OnFocusExit -= OnSearchFocusExit;
+        ChatInput.SearchInput.OnKeyBindDown -= CMUOnSearchKeyBindDown; // CMU14
         // cmu edit end
         ChatInput.FilterButton.Popup.OnNewHighlights -= OnNewHighlights;
         ChatInput.FilterButton.Popup.OnTabSelected -= OnSettingsTabSelected;

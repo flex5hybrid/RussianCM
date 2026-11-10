@@ -1,5 +1,6 @@
 using System.Numerics;
 using Content.Client.Resources;
+using Robust.Client.Input;
 using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface.Controls;
@@ -17,7 +18,7 @@ public sealed class ChatSearchButton : Button
     public ChatSearchButton()
     {
         ToggleMode = true;
-        ToolTip = Loc.GetString("cmu-chat-search-tooltip");
+        ToolTip = Loc.GetString("cmu-chat-search-tooltip", ("key", IoCManager.Resolve<IInputManager>().GetKeyFunctionButtonString(CMUChatInputCommands.Search)));
         StyleBoxOverride = new StyleBoxFlat { BackgroundColor = Color.Transparent };
         MinSize = new Vector2(28, 22);
 
@@ -34,6 +35,18 @@ public sealed class ChatSearchButton : Button
         };
         AddChild(_icon);
 
-        OnToggled += args => _icon.ModulateSelfOverride = args.Pressed ? ColorActive : ColorNormal;
+        OnToggled += args => SetSearchActive(args.Pressed);
+    }
+
+    protected override void MouseEntered()
+    {
+        base.MouseEntered();
+        ToolTip = Loc.GetString("cmu-chat-search-tooltip", ("key", IoCManager.Resolve<IInputManager>().GetKeyFunctionButtonString(CMUChatInputCommands.Search)));
+    }
+
+    public void SetSearchActive(bool active)
+    {
+        Pressed = active;
+        _icon.ModulateSelfOverride = active ? ColorActive : ColorNormal;
     }
 }

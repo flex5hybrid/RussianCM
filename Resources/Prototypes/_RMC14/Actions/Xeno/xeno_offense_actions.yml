@@ -825,7 +825,7 @@
   id: ActionXenoScreech
   parent: ActionXenoBase
   name: Screech (250)
-  description: An ear-splitting screech that debilitates nearby enemies within 7 tiles. [color=red]Severely slows, deafens, restricts vision, and disrupts aim for 8 seconds. Blocked by solid walls, but not windows.[/color]
+  description: An ear-splitting screech. Paralyzes enemies within 4 tiles for 8 seconds and stuns enemies within 7 tiles for 6 seconds. Deafens close enemies for 7 seconds and distant enemies for 4 seconds. Also stuns parasites within 11.2838 tiles for 8 seconds. [color=red]Walls block its effects on enemies, but not on parasites.[/color] # CMU14: restored RMC screech
   components:
   - type: Action
     itemIconStyle: NoItem

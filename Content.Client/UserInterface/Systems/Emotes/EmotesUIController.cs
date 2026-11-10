@@ -147,25 +147,10 @@ public sealed partial class EmotesUIController : UIController, IOnStateChanged<G
 
     private IEnumerable<RadialMenuOptionBase> ConvertToButtons(IEnumerable<EmotePrototype> emotePrototypes)
     {
-        var whitelistSystem = EntitySystemManager.GetEntitySystem<EntityWhitelistSystem>();
-        var player = _playerManager.LocalSession?.AttachedEntity;
-
         Dictionary<EmoteCategory, List<RadialMenuOptionBase>> emotesByCategory = new();
         foreach (var emote in emotePrototypes)
         {
-            if (emote.Category == EmoteCategory.Invalid)
-                continue;
-
-            // only valid emotes that have ways to be triggered by chat and player have access / no restriction on
-            if (emote.Category == EmoteCategory.Invalid
-                || emote.ChatTriggers.Count == 0
-                || !(player.HasValue && whitelistSystem.IsWhitelistPassOrNull(emote.Whitelist, player.Value))
-                || whitelistSystem.IsWhitelistPass(emote.Blacklist, player.Value))
-                continue;
-
-            if (!emote.Available
-                && EntityManager.TryGetComponent<SpeechComponent>(player.Value, out var speech)
-                && !speech.AllowedEmotes.Contains(emote.ID))
+            if (!CanUseEmote(emote))
                 continue;
 
             if (!emotesByCategory.TryGetValue(emote.Category, out var list))
@@ -199,8 +184,27 @@ public sealed partial class EmotesUIController : UIController, IOnStateChanged<G
         return models;
     }
 
+    public bool CanUseEmote(EmotePrototype emote)
+    {
+        var player = _playerManager.LocalSession?.AttachedEntity;
+        if (emote.Category == EmoteCategory.Invalid || emote.ChatTriggers.Count == 0 || player is not { } entity)
+            return false;
+        var whitelist = EntitySystemManager.GetEntitySystem<EntityWhitelistSystem>();
+        if (!whitelist.IsWhitelistPassOrNull(emote.Whitelist, entity) || whitelist.IsWhitelistPass(emote.Blacklist, entity))
+            return false;
+        return emote.Available || !EntityManager.TryGetComponent<SpeechComponent>(entity, out var speech) || speech.AllowedEmotes.Contains(emote.ID);
+    }
+
     private void HandleRadialButtonClick(EmotePrototype prototype)
     {
         EntityManager.RaisePredictiveEvent(new PlayEmoteMessage(prototype.ID));
+    }
+
+    public bool TryPlayEmote(EmotePrototype prototype)
+    {
+        if (!CanUseEmote(prototype))
+            return false;
+        HandleRadialButtonClick(prototype);
+        return true;
     }
 }

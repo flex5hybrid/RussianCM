@@ -32,12 +32,21 @@ public sealed partial class CmuAppearanceOptions : BoxContainer
         ]);
         controller.AddOptionCheckBox(CCVars.CMUCrtMenuEffect, CrtMenuEffectCheckBox);
         controller.AddOptionPercentSlider(CCVars.CMUCrtEffectIntensity, CrtIntensitySlider);
+        // CMU14: client-only display sampling, independent of gameplay and input bindings.
+        controller.AddOptionCheckBox(CCVars.CMUCrtDisplayEffect, CrtDisplayEffectCheckBox);
+        controller.AddOptionSlider(CCVars.CMUCrtDisplayRefreshRate, CrtDisplayRefreshSlider, 12, 60,
+            (_, value) => Loc.GetString("cmu-ui-options-crt-refresh-value", ("rate", value)));
+        controller.AddOptionPercentSlider(CCVars.ChatWindowOpacity, ChatOpacitySlider);
+        controller.AddOptionPercentSlider(CCVars.CMUCrtEffectCurvature, CrtCurvatureSlider, scale: 0.15f);
+        controller.AddOptionPercentSlider(CCVars.CMUCrtEffectVignette, CrtVignetteSlider);
         var crtUiEnabled = controller.AddOption(new OptionCrtUiEnabled(controller, _cfg, CrtUiEnabledCheckBox));
         crtUiEnabled.PreviewValueChanged += UpdateCrtUiOptionsPreview;
 
         var crtUiColor = controller.AddOption(new OptionCrtUiColor(controller, _cfg, CrtUiColorSlider));
         crtUiColor.PreviewValueChanged += UpdateCrtUiOptionsPreview;
         controller.AddOptionCheckBox(CCVars.CMUChatCrtHaze, ChatCrtHazeCheckBox);
+        controller.AddOptionPercentSlider(CCVars.CMUChatCrtIntensity, ChatCrtIntensitySlider);
+        controller.AddOptionPercentSlider(CCVars.CMUExamineOpacity, ExamineOpacitySlider);
 
         // Not previewed like the two above, and not hidden when CRT is off either - it only does
         // anything under the CRT theme, but it is an accessibility setting and hiding it behind
@@ -137,7 +146,6 @@ public sealed partial class CmuAppearanceOptions : BoxContainer
         public override void LoadValue()
         {
             base.LoadValue();
-            NotifyPreviewValueChanged();
         }
 
         public override void SaveValue()
@@ -208,7 +216,6 @@ public sealed partial class CmuAppearanceOptions : BoxContainer
         public override void LoadValue()
         {
             base.LoadValue();
-            NotifyPreviewValueChanged();
         }
 
         public override void SaveValue()

@@ -252,6 +252,7 @@
     baseSprintSpeed: 3.4
   - type: XenoStrain
     name: rmc-xeno-charger-name
+    baseCaste: RMCXenoCrusher # CMU14: allow returning to the existing unstrained caste.
     description: rmc-xeno-charger-description
     popup: rmc-xeno-charger-popup
   - type: CombatMode

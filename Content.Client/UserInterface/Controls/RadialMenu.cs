@@ -10,7 +10,7 @@ using Robust.Shared.Input;
 namespace Content.Client.UserInterface.Controls;
 
 [Virtual]
-public class RadialMenu : BaseWindow
+public partial class RadialMenu : BaseWindow // CMU14: full-surface CRT rendering.
 {
     /// <summary>
     /// Contextual button used to traverse through previous layers of the radial menu
@@ -140,7 +140,7 @@ public class RadialMenu : BaseWindow
         if (!children.Any())
             return null;
 
-        return children.First(x => x.Visible);
+        return children.FirstOrDefault(x => x.Visible); // CMU14: rebuilding layers may temporarily hide every layer.
     }
 
     public bool TryToMoveToNewLayer(Control newLayer)
@@ -258,7 +258,7 @@ public abstract class RadialMenuButtonBase : BaseButton
 /// works only if control have parent, and ActiveContainer property is set.
 /// Also considers all space outside of radial menu buttons as itself for clicking.
 /// </summary>
-public sealed class RadialMenuContextualCentralTextureButton : TextureButton
+public sealed partial class RadialMenuContextualCentralTextureButton : TextureButton // CMU14: CRT centre.
 {
     /// <inheritdoc />
     public RadialMenuContextualCentralTextureButton()
@@ -328,7 +328,7 @@ public sealed class RadialMenuOuterAreaButton : RadialMenuButtonBase
 }
 
 [Virtual]
-public class RadialMenuButton : RadialMenuButtonBase
+public partial class RadialMenuButton : RadialMenuButtonBase // CMU14: shared choice feedback.
 {
     /// <summary>
     /// Upon clicking this button the radial menu will be moved to the layer of this control.
@@ -415,7 +415,8 @@ public interface IRadialMenuItemWithSector
 }
 
 [Virtual]
-public class RadialMenuButtonWithSector : RadialMenuButton, IRadialMenuItemWithSector
+// CMU14: allow palette extension without replacing sector geometry.
+public partial class RadialMenuButtonWithSector : RadialMenuButton, IRadialMenuItemWithSector
 {
     private Vector2[]? _sectorPointsForDrawing;
 
@@ -549,7 +550,12 @@ public class RadialMenuButtonWithSector : RadialMenuButton, IRadialMenuItemWithS
                 ? _hoverBackgroundColorSrgb
                 : _backgroundColorSrgb;
 
-            DrawAnnulusSector(handle, containerCenter, _innerRadius * UIScale, _outerRadius * UIScale, angleFrom, angleTo, segmentColor);
+            // CMU14: retain sector geometry and hit tests; resolve live UI setup colours.
+            segmentColor = CMUSectorFill(segmentColor);
+            // CMU14: texture only the annulus fill, retaining its transparent centre and live icons.
+            Content.Client.CMU14.Interface.Hud.CmuCrtWindowsUIController.DrawShape(handle, () =>
+                DrawAnnulusSector(handle, containerCenter, _innerRadius * UIScale, _outerRadius * UIScale,
+                    angleFrom, angleTo, segmentColor));
         }
 
         if (DrawBorder)
@@ -557,12 +563,16 @@ public class RadialMenuButtonWithSector : RadialMenuButton, IRadialMenuItemWithS
             var borderColor = DrawMode == DrawModeEnum.Hover
                 ? _hoverBorderColorSrgb
                 : _borderColorSrgb;
+            // CMU14: phosphor edge replaces the fixed slate border in CRT mode.
+            borderColor = CMUSectorEdge(borderColor);
             DrawAnnulusSector(handle, containerCenter, _innerRadius * UIScale, _outerRadius * UIScale, angleFrom, angleTo, borderColor, false);
         }
 
         if (!_isWholeCircle && DrawBorder)
         {
-            DrawSeparatorLines(handle, containerCenter, _innerRadius * UIScale, _outerRadius * UIScale, angleFrom, angleTo, SeparatorColor);
+            // CMU14: keep authored separator colours outside CRT mode.
+            DrawSeparatorLines(handle, containerCenter, _innerRadius * UIScale, _outerRadius * UIScale,
+                angleFrom, angleTo, CMUSectorSeparator(SeparatorColor));
         }
     }
 
@@ -583,6 +593,9 @@ public class RadialMenuButtonWithSector : RadialMenuButton, IRadialMenuItemWithS
         {
             return false;
         }
+
+        if (_isWholeCircle) // CMU14: single-choice crafting wheels cover the entire annulus.
+            return true;
 
         // difference from the center of the parent to the `point`
         var pointFromParent = point + Position - _parentCenter.Value;
@@ -624,14 +637,17 @@ public class RadialMenuButtonWithSector : RadialMenuButton, IRadialMenuItemWithS
     {
         const float minimalSegmentSize = MathF.Tau / 128f;
 
+        // CMU14: reused crafting sectors may change size; a full circle must never divide by zero.
         var requestedSegmentSize = angleSectorTo - angleSectorFrom;
-        var segmentCount = (int)(requestedSegmentSize / minimalSegmentSize) + 1;
+        if (requestedSegmentSize <= 0)
+            requestedSegmentSize += MathF.Tau;
+        var segmentCount = Math.Max(2, (int)(requestedSegmentSize / minimalSegmentSize) + 1);
         var anglePerSegment = requestedSegmentSize / (segmentCount - 1);
 
         var bufferSize = segmentCount * 2;
         if (_sectorPointsForDrawing == null || _sectorPointsForDrawing.Length != bufferSize)
         {
-            _sectorPointsForDrawing ??= new Vector2[bufferSize];
+            _sectorPointsForDrawing = new Vector2[bufferSize]; // CMU14: resize existing buffers too.
         }
 
         for (var i = 0; i < segmentCount; i++)

@@ -256,7 +256,7 @@
     edges:
     - to: target
       steps:
-      - entityId: CMSyringe
+      - entityId: AU14CustomEntityCMSyringeRuMC
         consume: true
         doAfter: 5
       - material: GroundCannabis

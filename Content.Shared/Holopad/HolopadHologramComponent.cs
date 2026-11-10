@@ -64,6 +64,11 @@ public sealed partial class HolopadHologramComponent : Component
     [DataField]
     public Vector2 Offset = new Vector2();
 
+    // RuMC edit start
+    [DataField]
+    public List<PrototypeLayerData> ExtraLayers = new();
+    // RuMC edit end
+
     /// <summary>
     /// An entity that is linked to this hologram
     /// </summary>

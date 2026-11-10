@@ -3,12 +3,15 @@
     xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
     xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Chat.Widgets"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Systems.Chat.Controls"
+    xmlns:hud="clr-namespace:Content.Client.CMU14.Interface.Hud"
+    xmlns:cmuChat="clr-namespace:Content.Client.CMU14.Chat"
     MouseFilter="Stop"
     HorizontalExpand="True"
     VerticalExpand="True"
     MinSize="500 260">
-    <PanelContainer Name="ChatWindowPanel" Access="Public" HorizontalExpand="True" VerticalExpand="True"
-                    StyleClasses="ChatPanel">
+    <!-- CMU14: material preferences cover both chat presentations without shading the glyphs. -->
+    <hud:CmuHudPanel Name="ChatWindowPanel" Access="Public" HorizontalExpand="True" VerticalExpand="True"
+                    StyleClasses="ChatPanel" RasterEnabled="True" ChatSurface="True">
         <!-- SeparationOverride="0": the input row's top rule doubles as the divider under the
              message log, so any separation here shows up as a dead gap above that rule. Rows that
              do want breathing space carry their own margin. -->
@@ -43,10 +46,11 @@
                     <widgets:ChatLogPanel Name="SecondaryContents" Access="Public" HorizontalExpand="True" VerticalExpand="True" />
                 </BoxContainer>
             </widgets:ChatPaneLayout>
-            <OutputPanel Name="LegacyContents" Access="Public" Visible="False" HorizontalExpand="True" VerticalExpand="True" Margin="8 8 8 4" ShowScrollDownButton="True" />
+            <!-- CMU14: responsive wheel handling also covers legacy chat presentation. -->
+            <cmuChat:CmuChatOutputPanel Name="LegacyContents" Access="Public" Visible="False" HorizontalExpand="True" VerticalExpand="True" Margin="8 8 8 4" ShowScrollDownButton="True" />
             <!-- Flush to the chat panel's left, right and bottom borders; its own stylebox adds only
                  the top rule. -->
             <controls:ChatInputBox HorizontalExpand="True" Name="ChatInput" Access="Public" Margin="0"/>
         </BoxContainer>
-    </PanelContainer>
+    </hud:CmuHudPanel>
 </widgets:ChatBox>

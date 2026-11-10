@@ -29,7 +29,9 @@ public sealed class ChatAccentStyleBox : StyleBox
 
     protected override void DoDraw(DrawingHandleScreen handle, UIBox2 box, float uiScale)
     {
-        handle.DrawRect(box, BackgroundColor);
+        // CMU14: row tints must not remain opaque when the chat backing is made transparent.
+        Content.Client.CMU14.Interface.Hud.CmuCrtWindowsUIController.DrawFill(handle, box,
+            BackgroundColor.WithAlpha(BackgroundColor.A * Content.Client.CMU14.Interface.Hud.CmuHudStyle.ChatOpacity));
 
         var (left, top, right, bottom) = BorderThickness.Scale(uiScale);
 

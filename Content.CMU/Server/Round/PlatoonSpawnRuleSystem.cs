@@ -14,12 +14,15 @@ using Robust.Shared.Log;
 using Robust.Shared.Prototypes;
 using Content.Server.GameTicking.Rules;
 using Content.Server.Maps;
+using Content.Server.Station.Systems; // RuMC edit
 using Content.Shared.Access;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared._RMC14.Dropship;
 using Content.Shared._RMC14.Rules;
+using Content.Shared.CMU14.Dropship.Exchange;
 using Content.Shared.CMU14.Round;
+using Content.Shared.CMU14.ZLevels.Core.EntitySystems;
 using Content.Shared.CMU14.util;
 using Content.Shared.GameTicking.Components;
 using Robust.Shared.EntitySerialization.Systems;
@@ -27,6 +30,7 @@ using Content.Server._RMC14.Requisitions;
 using Content.Shared._RMC14.Telephone;
 using Content.Shared._RMC14.Vendors;
 using Content.Shared._RMC14.Ladder;
+using Robust.Shared.Utility;
 
 using Content.Shared.CMU14;
 
@@ -34,6 +38,8 @@ namespace Content.Server.CMU14.Round;
 
 public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawnRuleComponent>
 {
+    private static readonly ResPath ExchangeMohawkPath = new("/Maps/CMU14/Dropships/Mohawk/midway_deployment.yml");
+
     [Dependency] private AccessReaderSystem _accessReader = default!;
     [Dependency] private IPrototypeManager _prototypeManager = default!;
     [Dependency] private IEntityManager _entityManager = default!;
@@ -48,6 +54,8 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
     [Dependency] private FactionSwapSystem _factionSwap = default!;
     [Dependency] private MultiDeckDropshipSystem _multiDeck = default!;
     [Dependency] private CameraNetworkSystem _cameraNetworks = default!;
+    [Dependency] private CMUSharedZLevelsSystem _zLevels = default!;
+    [Dependency] private StationSystem _stationSystem = default!; // RuMC edit
 
     private readonly ISawmill _sawmill = Logger.GetSawmill("cmu.platoon");
 
@@ -105,11 +113,12 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
             return;
         }
 
-        // Fallback to default platoon if none selected, using planet component
+        // Fallback defaults also respect the active mode; explicitly selected/admin platoons retain priority.
+        var preset = GameTicker.CurrentPreset ?? _auRoundSystem.SelectedPreset;
         if (govPlatoon == null && !string.IsNullOrEmpty(planetComp.DefaultGovforPlatoon))
-            govPlatoon = _prototypeManager.Index<PlatoonPrototype>(planetComp.DefaultGovforPlatoon);
+            govPlatoon = ResolveDefaultPlatoon(planetComp.DefaultGovforPlatoon, planetComp.PlatoonsGovfor, preset);
         if (opPlatoon == null && !string.IsNullOrEmpty(planetComp.DefaultOpforPlatoon))
-            opPlatoon = _prototypeManager.Index<PlatoonPrototype>(planetComp.DefaultOpforPlatoon);
+            opPlatoon = ResolveDefaultPlatoon(planetComp.DefaultOpforPlatoon, planetComp.PlatoonsOpfor, preset);
 
         // Store the resolved selections back onto the system so other systems can access them
         SelectedGovforPlatoon = govPlatoon;
@@ -310,6 +319,17 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
                 var gridMapId = _entityManager.GetComponent<TransformComponent>(grid).MapID;
                 _mapSystem.InitializeMap(gridMapId);
                 PrepareLoadedShuttleGrid(grid, faction, planetComp, DropshipDestinationComponent.DestinationType.Dropship);
+
+                // Every dynamic gunship exchanges for the Midway, regardless of the
+                // platoon's regular round-start Mohawk.
+                if (mapId.Filename == "dynamic_gunship.yml" &&
+                    HasComp<DropshipComponent>(grid))
+                {
+                    var exchange = EnsureComp<CMUDropshipMohawkExchangeComponent>(grid);
+                    exchange.Faction = faction;
+                    exchange.MohawkPath = ExchangeMohawkPath;
+                }
+
                 SpawnShuttleConsoleMarkers(
                     grid,
                     faction,
@@ -356,6 +376,58 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
                 usedDestinations,
                 destinationRandom);
         }
+    }
+
+    /// <summary>
+    /// Loads the replacement shuttle for a gunship-for-Mohawk exchange onto its own
+    /// initialized map without launching it, so a bad map aborts the exchange early.
+    /// </summary>
+    public bool TryLoadExchangeShuttle(ResPath path, out EntityUid map, out List<EntityUid> grids)
+    {
+        map = default;
+        grids = new List<EntityUid>();
+        if (!_mapLoader.TryLoadMap(path, out var loadedMap, out var loadedGrids))
+            return false;
+
+        map = loadedMap.Value.Owner;
+        _mapSystem.InitializeMap(loadedMap.Value.Comp.MapId);
+        foreach (var grid in loadedGrids)
+        {
+            grids.Add(grid);
+        }
+
+        return grids.Count > 0;
+    }
+
+    /// <summary>
+    /// Prepares exchange shuttle grids exactly like the round-start transports
+    /// (faction access, consoles, cameras) and flies them to the given pad.
+    /// </summary>
+    public bool TryLaunchExchangeShuttle(List<EntityUid> grids, string faction, EntityUid destination)
+    {
+        var planetComp = _auRoundSystem.GetSelectedPlanet();
+        if (planetComp == null)
+            return false;
+
+        var launched = false;
+        foreach (var grid in grids)
+        {
+            PrepareLoadedShuttleGrid(grid, faction, planetComp, DropshipDestinationComponent.DestinationType.Dropship);
+            SpawnShuttleConsoleMarkers(
+                grid,
+                faction,
+                DropshipDestinationComponent.DestinationType.Dropship,
+                "dropshipshuttlevmarker");
+
+            if (FindNavComputerOnGrid(grid) is not { } navComputer)
+                continue;
+
+            var navComp = _entityManager.GetComponent<DropshipNavigationComputerComponent>(navComputer);
+            if (_sharedDropshipSystem.FlyTo((navComputer, navComp), destination, null))
+                launched = true;
+        }
+
+        return launched;
     }
 
     private void PrepareLoadedShuttleGrid(
@@ -700,19 +772,54 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
     }
 
     /// <summary>
-    ///     Tags the round's voted ship for one side with its faction, using the grids
-    ///     its game map loaded with. Ships have no faction of their own; shipside
-    ///     systems resolve everything through ShipFactionComponent.
+    ///     Tags all decks of one side's ship with its faction, starting from the main deck.
     /// </summary>
     private void TagShipFaction(string faction)
     {
-        var shipId = faction == "govfor"
-            ? _auRoundSystem.ResolveGovforShip(null)
-            : _auRoundSystem.ResolveOpforShip(null);
-        if (string.IsNullOrEmpty(shipId) || !_auRoundSystem.TryGetLoadedShipGrids(shipId, out var grids))
-            return;
+        // RuMC edit start
+        // Both sides may share one ship map; start from the decks already tagged, not the map-id lookup.
+        var roots = new List<EntityUid>();
+        var tagged = AllEntityQuery<ShipFactionComponent>();
+        while (tagged.MoveNext(out var taggedGrid, out var taggedFaction))
+        {
+            if (!string.Equals(taggedFaction.Faction, faction, StringComparison.OrdinalIgnoreCase) ||
+                TerminatingOrDeleted(taggedGrid) ||
+                _stationSystem.GetOwningStation(taggedGrid) == null)
+                continue;
 
-        foreach (var grid in grids)
+            roots.Add(taggedGrid);
+        }
+
+        if (roots.Count == 0)
+        {
+            var shipId = faction == "govfor"
+                ? _auRoundSystem.ResolveGovforShip(null)
+                : _auRoundSystem.ResolveOpforShip(null);
+            if (string.IsNullOrEmpty(shipId) || !_auRoundSystem.TryGetLoadedShipGrids(shipId, out var loadedGrids))
+                return;
+
+            roots.AddRange(loadedGrids);
+        }
+        // RuMC edit end
+
+        // The game-map event contains the main deck; the z-level loader loads the remaining decks separately.
+        var shipGrids = new HashSet<EntityUid>(roots); // RuMC edit
+        var shipMaps = new HashSet<EntityUid>();
+        foreach (var grid in roots) // RuMC edit
+        {
+            if (TerminatingOrDeleted(grid) || Transform(grid).MapUid is not { } map)
+                continue;
+
+            shipMaps.UnionWith(_zLevels.GetAllNetworkMaps(map));
+        }
+
+        foreach (var map in shipMaps)
+        {
+            foreach (var grid in _mapSystem.GetAllGrids(Transform(map).MapID))
+                shipGrids.Add(grid.Owner);
+        }
+
+        foreach (var grid in shipGrids)
         {
             if (TerminatingOrDeleted(grid) ||
                 TryComp<ShipFactionComponent>(grid, out var existing) && !string.IsNullOrEmpty(existing.Faction))

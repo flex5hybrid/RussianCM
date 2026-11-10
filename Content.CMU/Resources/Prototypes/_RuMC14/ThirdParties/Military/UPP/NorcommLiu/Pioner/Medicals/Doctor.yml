@@ -84,7 +84,7 @@
         time: 10800 # 3 hours
   spawnMenuRoleName: Doctor
   startingGear: RuMCGearUPPNorcommDoctor
-  greeting: rumc-Doctor-greeting
+  greeting: rumc-doctor-greeting
   icon: "RuMCJobIconUPPNorcommDoctor"
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-govfor
@@ -140,7 +140,7 @@
   id: RuMCJobIconUPPNorcommDoctor
   icon:
     sprite: _RuMC14/Interface/upp_icons.rsi
-    state: UPP-Norcomm_Doctor
+    state: UPP_med
 
 - type: playTimeTracker
   id: RuMCJobUPPNorcommDoctor

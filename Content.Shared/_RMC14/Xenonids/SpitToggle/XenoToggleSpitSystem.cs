@@ -30,6 +30,7 @@ public sealed partial class XenoToggleSpitSystem : EntitySystem
 
         spit.PlasmaCost = cost;
         spit.ProjectileId = proto;
+        Dirty(xeno, spit); // CMU14: synchronize the restored ability as well as its toggle
         Dirty(xeno);
     }
 }

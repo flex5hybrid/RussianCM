@@ -19,7 +19,7 @@ public sealed class CMURecruitRulesTest
         Assert.That(text, Does.Contain("FOB"));
         Assert.That(text, Does.Contain("корабл"));
         Assert.That(text, Does.Contain("чрезвычайны"));
-        Assert.That(text, Does.Contain("правил сервера"));
+        Assert.That(text, Does.Contain("запре").IgnoreCase);
     }
 
     [Test]

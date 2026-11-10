@@ -1,5 +1,6 @@
 - type: job
   parent: CMJobBase
+  displayWeight: 21
   id: AU14JobCivilianCorporateAssistant
   roundSide: Civilian
   roundForce: WY
@@ -66,6 +67,7 @@
     outerClothing: AU14CivilianJacketTanPufferVest
     ears: AU14ColonyWeylandHeadset
     ears2: RMCM5CameraGear
+    pocket1: AU14StampWYAssistant # RuMC edit
 
 - type: entity
   parent: CMSpawnPointJobBase

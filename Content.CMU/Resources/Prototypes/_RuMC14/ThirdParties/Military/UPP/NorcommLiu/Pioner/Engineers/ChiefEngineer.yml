@@ -81,7 +81,7 @@
         time: 10800 # 3 hours
   spawnMenuRoleName: ChiefEngineer
   startingGear: RuMCGearUPPNorcommChief
-  greeting: rumc-ChiefEngineer-greeting
+  greeting: rumc-chief-engineer-greeting
   icon: "RuMCJobIconUPPNorcommChief"
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-govfor

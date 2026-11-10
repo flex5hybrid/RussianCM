@@ -26,11 +26,13 @@ public sealed partial class CMUPresetVoteSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
+        InitializeRotation();
         SubscribeLocalEvent<GameRunLevelChangedEvent>(OnRunLevelChanged);
     }
 
     private void OnRunLevelChanged(GameRunLevelChangedEvent ev)
     {
+        TrackRotation(ev);
         if (ev.New != GameRunLevel.InRound || ev.Old == GameRunLevel.InRound)
             return;
 

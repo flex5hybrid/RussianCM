@@ -28,7 +28,7 @@
   - type: EquipEntityPreset
     preset: RuMCSOFMachinegunnerPreset
   - type: JobPrefix
-    prefix: rumc-job-prefix-SOF
+    prefix: rumc-job-prefix-sof
   - type: MarineOrders
   - type: RMCTrackable
   - type: RMCPointing
@@ -77,7 +77,7 @@
         time: 10800 # 3 hours
   spawnMenuRoleName: SOF Machinegunner
   startingGear: RuMCGearUPPSOFbase_HEAVY
-  greeting: rumc-SOF-greeting
+  greeting: rumc-sof-greeting
   icon: "RuMCJobIconUPPSOFMachinegunner"
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-govfor

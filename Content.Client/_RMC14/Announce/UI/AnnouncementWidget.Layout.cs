@@ -372,7 +372,12 @@ public sealed partial class AnnouncementWidget
         var widgetSize = DesiredSize;
         var style = ActiveAnnouncement.Data.Style;
 
-        var position = CalculatePosition(screenSize, widgetSize, style);
+        // CMU14: announcements occupy the free play area, never the menu/action/chat rails.
+        var safe = screen is Content.Client.UserInterface.Screens.InGameScreen game
+            ? UserInterfaceManager.GetUIController<Content.Client.CMU14.Interface.Hud.CmuHudLayoutController>().GetAnnouncementArea(game)
+            : UIBox2.FromDimensions(Vector2.Zero, screenSize);
+        var position = CalculatePosition(safe.Size, widgetSize, style) + safe.TopLeft;
+        position = Vector2.Clamp(position, safe.TopLeft, Vector2.Max(safe.TopLeft, safe.BottomRight - widgetSize));
         position += ActiveAnnouncement.CurrentSlideOffset + ActiveAnnouncement.CurrentBounceOffset;
 
         UpdateLayoutRect(position, widgetSize);

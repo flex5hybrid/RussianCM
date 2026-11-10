@@ -34,3 +34,4 @@ cmu-discord-docs-reaction = **Рецепт:** { $inputs } → { $outputs }
 cmu-discord-docs-minimum-temperature = Минимальная температура: { $temperature } K.
 cmu-discord-docs-maximum-temperature = Максимальная температура: { $temperature } K.
 cmu-discord-docs-mixing = Смешивание: { $categories }
+cmu-discord-docs-crafting-recipes = Откройте эту страницу в игровой справке, чтобы воспользоваться интерактивным каталогом рецептов, посмотреть ингредиенты и оборудование и рассчитать производственные партии.

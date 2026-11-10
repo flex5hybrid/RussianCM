@@ -43,7 +43,7 @@
     edges:
     - to: target
       steps:
-      - entityId: DrinkBottleBeer
+      - entityId: AU14CustomEntityDrinkBottleBeerRuMC
         consume: true
         doAfter: 5
       - entityId: WheatBushel
@@ -132,7 +132,7 @@
     edges:
     - to: target
       steps:
-      - entityId: DrinkBottleRum
+      - entityId: AU14CustomEntityDrinkBottleRumRuMC
         consume: true
         doAfter: 5
       - entityId: Sugarcane
@@ -221,7 +221,7 @@
     edges:
     - to: target
       steps:
-      - entityId: DrinkBottleWine
+      - entityId: AU14CustomEntityDrinkBottleWineRuMC
         consume: true
         doAfter: 5
       - entityId: FoodGrape
@@ -310,7 +310,7 @@
     edges:
     - to: target
       steps:
-      - entityId: DrinkBottleVodka
+      - entityId: AU14CustomEntityDrinkBottleVodkaRuMC
         consume: true
         doAfter: 5
       - entityId: WheatBushel

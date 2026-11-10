@@ -1,4 +1,5 @@
 using Content.Shared.CMU14.Xenomorphs.Pathogen.Sporecaster;
+using Content.Shared.CMU14.Xenomorphs.Pathogen.Popper;
 using Content.Shared.CMU14.GasMask;
 using Content.Shared.CMU14.Xenomorphs.Pathogen.Mycotoxin;
 using Content.Shared._RMC14.Xenonids;
@@ -15,11 +16,15 @@ using Robust.Shared.Physics;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using Robust.Shared.Utility;
 using Content.Shared.Interaction;
 using Content.Shared.Body.Systems;
 using Content.Shared.CMU14.Medical.Injuries.Wounds;
 using Content.Shared.CMU14.Xenomorphs.Pathogen.Walker;
 using Content.Shared.Examine;
+using Content.Server.Ghost.Roles;
+using Content.Shared.Ghost;
+using Content.Shared.Ghost.Roles.Components;
 
 namespace Content.Server.CMU14.Xenomorphs.Pathogen.Sporecaster;
 
@@ -35,6 +40,7 @@ public sealed partial class CMUPathogenSporecasterSystem : EntitySystem
     [Dependency] private MobStateSystem _mobState = default!;
     [Dependency] private SharedBodySystem _body = default!;
     [Dependency] private Content.Shared.CMU14.Medical.Injuries.Wounds.SharedCMUWoundsSystem _wounds = default!;
+    [Dependency] private GhostRoleSystem _ghostRole = default!;   // NEW
 
     private readonly HashSet<Entity<MobStateComponent>> _nearby = new();
 
@@ -44,6 +50,7 @@ public sealed partial class CMUPathogenSporecasterSystem : EntitySystem
         SubscribeLocalEvent<CMUPathogenSporecasterComponent, DestructionEventArgs>(OnDestruction);
         SubscribeLocalEvent<CMUPathogenSporecasterComponent, InteractHandEvent>(OnInteract);
         SubscribeLocalEvent<CMUPathogenSporecasterComponent, ExaminedEvent>(OnExamine);
+        SubscribeLocalEvent<CMUPathogenPopperComponent, GhostRoleSpawnerUsedEvent>(OnPopperSpawnerUsed);
     }
 
     private void OnMapInit(Entity<CMUPathogenSporecasterComponent> ent, ref MapInitEvent args)
@@ -73,6 +80,16 @@ public sealed partial class CMUPathogenSporecasterSystem : EntitySystem
             if (_hive.GetHive(ent.Owner) is { } hive)
                 _hive.SetHive(parasite, hive);
         }
+    }
+
+    // live tracking when a ghost takes the role
+    private void OnPopperSpawnerUsed(Entity<CMUPathogenPopperComponent> popper, ref GhostRoleSpawnerUsedEvent args)
+    {
+        if (!TryComp(args.Spawner, out CMUPathogenSporecasterComponent? caster))
+            return;
+
+        _hive.SetSameHive(args.Spawner, popper.Owner);
+        caster.LivePoppers.Add(popper.Owner);
     }
 
     // Allow xenos from same hive to manually trigger a cloud
@@ -121,6 +138,18 @@ public sealed partial class CMUPathogenSporecasterSystem : EntitySystem
                 caster.StoredClouds = Math.Min(caster.MaxClouds, caster.StoredClouds + 1);
                 caster.NextGrowAt = time + caster.GrowInterval;
                 Dirty(uid, caster);
+            }
+
+            if (TryComp(uid, out GhostRoleMobSpawnerComponent? spawner))
+            {
+                for (var i = caster.LivePoppers.Count - 1; i >= 0; i--)
+                {
+                    var popper = caster.LivePoppers[i];
+                    if (TerminatingOrDeleted(popper) || _mobState.IsDead(popper))
+                        caster.LivePoppers.RemoveSwap(i);
+                }
+
+                _ghostRole.SetCurrent((uid, spawner), caster.LivePoppers.Count);
             }
 
             // Auto-release at targets
