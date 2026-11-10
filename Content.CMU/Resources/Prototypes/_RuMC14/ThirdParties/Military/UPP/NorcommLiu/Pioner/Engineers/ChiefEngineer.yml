@@ -102,7 +102,7 @@
     allowSpeech: true
     allowMovement: true
     name: ChiefEngineer
-    description: You are part of a UPP Norcomm Lui team! Your job is to burn every biological threat on the colony to the ground. Not one step back!
+    description: You are part of the UPP Norcomm Lui team! Your task is to report to the ambassador’s location. Not a step back!
     job: RuMCUPPNorcommChief
     raffle:
       settings: short
