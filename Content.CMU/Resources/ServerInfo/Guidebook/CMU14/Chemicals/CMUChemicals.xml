@@ -1,59 +1,59 @@
 ﻿<Document>
-  # Chemicals
+  # Химикаты
 
-  Chemicals are a powerful tool that can cause a variety of effects when consumed. Some can be obtained from vendors, purchased in requisitions, or be synthesized through combination with other chemicals.
+  Химикаты — это мощный инструмент, который при употреблении может вызывать разнообразные эффекты. Некоторые можно получить у торговцев, купить в снабжении или синтезировать путём соединения с другими химикатами.
 
-  Knowing different types of chemicals and their effects is important for being able to manage injury and danger.
+  Знание разных типов химикатов и их эффектов важно для того, чтобы уметь справляться с травмами и опасностями.
 
-  [color=red]Put the lid on a beaker or reagent jug before you put it in a bag or pouch.[/color] One stored without its lid spills everything in it.
+  [color=red]Закрывайте крышкой мензурку или канистру с реагентом, прежде чем класть её в сумку или подсумок.[/color] Ёмкость, хранящаяся без крышки, разливает всё своё содержимое.
 
-  ## Elements
+  ## Элементы
   <GuideReagentGroupEmbed Group="Elements"/>
 
   \n
 
-  ## Medicine
+  ## Медицина
   <GuideReagentGroupEmbed Group="Medicine"/>
 
   \n
 
-  ## Narcotics
+  ## Наркотики
   <GuideReagentGroupEmbed Group="Narcotics"/>
 
   \n
 
 
-  ## Pyrotechnics
+  ## Пиротехника
   <GuideReagentGroupEmbed Group="Pyrotechnic"/>
 
   \n
 
 
-  ## Toxins
+  ## Токсины
   <GuideReagentGroupEmbed Group="Toxins"/>
 
   \n
 
 
-  ## Foods
+  ## Продукты питания
   <GuideReagentGroupEmbed Group="Foods"/>
 
   \n
 
 
-  ## Botanical
+  ## Ботаника
   <GuideReagentGroupEmbed Group="Botanical"/>
 
   \n
 
 
-  ## Biological
+  ## Биология
   <GuideReagentGroupEmbed Group="Biological"/>
 
   \n
 
 
-  ## Other
+  ## Прочее
   <GuideReagentGroupEmbed Group="Unknown"/>
 
 </Document>
