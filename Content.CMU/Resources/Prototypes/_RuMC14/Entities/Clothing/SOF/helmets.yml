@@ -1,0 +1,16 @@
+- type: entity
+  parent: RMCMarineHelmetBase
+  id: RuMCUPPInfantryHelmetSOF
+  name: 7B-Zvezda helmet
+  description: A sealed vacuum-rated helmet for UPP Space Operating Forces. Built for zero-G and orbital operations. Integrated life support, reinforced visor, and comms. Excellent in the void, bulky on the ground.
+  components:
+  - type: IdentityBlocker
+  - type: Sprite
+    sprite: _RuMC14/Clothing/SOF/helmet/SOF_helmet.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/SOF/helmet/SOF_helmet.rsi
+  - type: CMArmor
+    melee: 25
+    bullet: 25
+    bio: 20
+    explosionArmor: 15

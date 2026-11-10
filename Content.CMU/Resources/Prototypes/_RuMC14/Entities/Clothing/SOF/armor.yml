@@ -1,0 +1,59 @@
+- type: entity
+  parent: AU14UPPArmor
+  id: RuMCUPPArmorSOF
+  name: SOF combat armor
+  description: Standard-issue combat armor for UPP Space Operating Forces. Balanced protection against bullets, melee, and biological threats. Worn by the elite operators of the Union.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/SOF/armor/armor.rsi
+  - type: CMArmor
+    melee: 30
+    bullet: 25
+    bio: 20
+    explosionArmor: 20
+
+- type: entity
+  parent: AU14UPPArmor
+  id: RuMCUPPArmorSOF_Alt
+  name: SOF combat armor (variant)
+  description: Alternative variant of SOF combat armor. Same protection, different cut. Used by specialized SOF units and independent operators.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/SOF/armor/armor_alt.rsi
+  - type: CMArmor
+    melee: 30
+    bullet: 25
+    bio: 20
+    explosionArmor: 20
+
+- type: entity
+  parent: AU14UPPArmorBulky
+  id: RuMCUPPArmorSOF_Heavy
+  name: SOF heavy assault armor
+  description: Heavy assault armor for SOF breachers and shock troops. Thick composite plates provide superior protection at the cost of mobility. For those who walk into the fire and expect to walk out.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/SOF/armor/armor_large.rsi
+  - type: CMArmor
+    melee: 30
+    bullet: 30
+    bio: 20
+    explosionArmor: 20
+  - type: Corrodible
+    isCorrodible: false
+  - type: ClothingBlockBackpack
+  - type: SmartGunArmor
+
+- type: entity
+  parent: AU14UPPArmorMinimalistic
+  id: RuMCUPPArmorSOF_Command
+  name: SOF command armor
+  description: Command armor for SOF officers and mission commanders. Lighter than standard combat armor, but with reinforced communication systems and rank insignia. Worn by those who lead from the front.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/SOF/armor/armor_command.rsi
+  - type: CMArmor
+    melee: 30
+    bullet: 25
+    bio: 20
+    explosionArmor: 20

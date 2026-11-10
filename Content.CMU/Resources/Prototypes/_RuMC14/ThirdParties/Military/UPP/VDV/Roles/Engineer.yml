@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPVDVEngineer
   roundSide: ThirdParty
-  roundForce: VDV
+  roundForce: UPP_spetsnaz
   roundRole: RuMCUPPVDVEngineer
   roundComponents:
   - type: TacticalMapIcon

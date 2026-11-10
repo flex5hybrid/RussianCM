@@ -1,0 +1,35 @@
+- type: entity
+  parent: CMHeadCap
+  id: RuMCHeadBeretVDV
+  name: blue VDV beret
+  description: No one but us! The beret, created for the Airborne Forces, has become a symbol of strength and willpower.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/VDV/cap/blueBeret.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/VDV/cap/blueBeret.rsi
+  - type: Appearance
+
+- type: entity
+  parent: CMHeadCap
+  id: RuMCHeadCapVDV
+  name: desert cap
+  description: An ordinary desert cap for UPP troops. Comfortable and so beautiful!
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/VDV/cap/desertCap.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/VDV/cap/desertCap.rsi
+  - type: Appearance
+
+- type: entity
+  parent: CMHeadCap
+  id: RuMCHeadBoonieVDV
+  name: desert boonie
+  description: Something you wouldn't want to go into the desert without.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/VDV/cap/desertBoonie.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/VDV/cap/desertBoonie.rsi
+  - type: Appearance

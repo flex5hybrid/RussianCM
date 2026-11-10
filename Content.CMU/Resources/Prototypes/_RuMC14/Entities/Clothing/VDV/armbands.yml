@@ -5,9 +5,9 @@
   description: white armband
   components:
   - type: Sprite
-    sprite: _RuMC14/Clothing/Universal/Armband/white_armband.rsi
+    sprite: _RuMC14/Clothing/armbands/white_armband.rsi
     state: icon
   - type: UniformAccessory
     playerSprite:
-      sprite: _RuMC14/Clothing/Universal/Armband/white_armband.rsi
+      sprite: _RuMC14/Clothing/armbands/white_armband.rsi
       state: armband
