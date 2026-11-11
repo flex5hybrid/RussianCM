@@ -1,8 +1,8 @@
-# Экспертная панель AN/PRC-117G. Все, что можно увидеть на стекле, лампах и 
-# гравировках. Стекло представляет собой дисплей с символами фиксированной ширины: старайтесь, чтобы переводы 
-# были короткими и набраны заглавными буквами, как и английский текст, иначе они будут обрезаны по краям.
-# Буквенные группы на клавиатуре (ABC1, DEF2, ...) расположены не случайно — на них 
-# вводятся позывные и названия.
+# Экспертная панель AN/PRC-117G. Всё, что можно увидеть на стекле, лампах и
+# гравировках станции. Стекло — это символьный дисплей фиксированной ширины: держите переводы
+# короткими и заглавными там, где заглавные в английском, иначе они обрежутся по краю.
+# Буквенные группы клавиатуры (ABC1, DEF2, ...) здесь намеренно отсутствуют — ввод позывных
+# и меток выполняется по ним.
 
 ## Общие слова
 anprc-fp-on = ВКЛ
@@ -18,7 +18,7 @@ anprc-fp-no-net = НЕТ СЕТИ
 anprc-fp-handset = ТРУБКА
 anprc-fp-headset = ГАРНИТУРА
 anprc-fp-callsign-auto = { $callsign } АВТО
-anprc-fp-unavailable-off = СТАНЦИЯ ВЫКЛ - ИСПОЛЬЗУЙТЕ 6 PWR ИЛИ ПЕРЕКЛЮЧАТЕЛЬ
+anprc-fp-unavailable-off = СТАНЦИЯ ВЫКЛ - ИСПОЛЬЗУЙТЕ 6 ПИТ ИЛИ ПЕРЕКЛЮЧАТЕЛЬ
 anprc-fp-note-wear-or-stake = НАДЕНЬТЕ ИЛИ ЗАКРЕПИТЕ СТАНЦИЮ, ЧТОБЫ РАБОТАТЬ В СЕТИ
 
 ## Режим, мощность, диапазоны
@@ -45,7 +45,7 @@ anprc-fp-slot-direct = { $freq } МГц  ПРЯМОЙ
 anprc-fp-slot-unknown-net = { $freq } МГц  НЕИЗВ. СЕТЬ
 anprc-fp-slot-empty = --- ПУСТО ---
 
-## Жкран OPT
+## Экран OPT
 anprc-fp-opt-title = OPT  НАСТРОЙКА
 anprc-fp-opt-mode = РЕЖИМ
 anprc-fp-opt-monitor = КОНТРОЛЬ
@@ -53,7 +53,7 @@ anprc-fp-opt-scan = СКАНИРОВАНИЕ
 anprc-fp-opt-squelch = ШУМОДАВ
 anprc-fp-opt-output = ВЫХОД
 anprc-fp-opt-backlight = ПОДСВЕТКА
-anprc-fp-opt-backlight-value = LT
+anprc-fp-opt-backlight-value = ПОДСВ
 anprc-fp-opt-techniques = ПРИЁМЫ
 anprc-fp-opt-burst = ПАКЕТНАЯ ПЕРЕДАЧА
 anprc-fp-opt-power-save = ЭНЕРГОСБЕРЕЖЕНИЕ
@@ -161,9 +161,9 @@ anprc-fp-ack-memory-renamed = ПАМЯТЬ { $label }
 anprc-fp-ack-net-loaded = СЕТЬ ЗАГРУЖЕНА
 
 ## Экран SEC
-anprc-fp-sec-title = SEC  COMSEC
+anprc-fp-sec-title = SEC COMSEC
 anprc-fp-sec-secured = ЗАЩИЩЕНО
-anprc-fp-sec-superseded = УСТАРЕЛО
+anprc-fp-sec-superseded = КЛЮЧ УСТАРЕЛ
 anprc-fp-sec-unsecured = НЕ ЗАЩИЩЕНО
 anprc-fp-sec-switch = ПЕРЕКЛЮЧАТЕЛЬ
 anprc-fp-sec-switch-load = LD - ЗАГРУЗИТЬ КЛЮЧ
@@ -171,7 +171,7 @@ anprc-fp-sec-switch-zeroize = Z - ГОТОВНОСТЬ К СТИРАНИЮ
 anprc-fp-sec-switch-operating = { $position } - РАБОТА
 anprc-fp-sec-fill = КЛЮЧ
 anprc-fp-sec-issued-to = ВЫДАН
-anprc-fp-sec-note-superseded = УСТАРЕЛО - НУЖЕН НОВЫЙ КЛЮЧ
+anprc-fp-sec-note-superseded = КЛЮЧ УСТАРЕЛ - НУЖЕН НОВЫЙ КЛЮЧ
 anprc-fp-sec-note-insert = ВСТАВЬТЕ КАРТУ КЛЮЧА ДЛЯ ЗАГРУЗКИ
 anprc-fp-sec-traffic = ТРАФИК
 anprc-fp-sec-encrypted = ЗАШИФРОВАН
@@ -184,11 +184,11 @@ anprc-fp-sec-no-fill = НЕТ КЛЮЧА
 anprc-fp-sec-destroy = УНИЧТОЖИТЬ
 anprc-fp-sec-confirm-burn = ПОДТВЕРДИТЬ СЖИГАНИЕ
 anprc-fp-sec-burn = СЖЕЧЬ
-anprc-fp-sec-recrypto = ПЕРЕШИФРОВКА
-anprc-fp-sec-confirm-recrypto = ПОДТВЕРДИТЬ ПЕРЕШИФРОВКУ
-anprc-fp-sec-supersede = ЗАМЕНИТЬ
+anprc-fp-sec-recrypto = СМЕНА ШИФРОВАНИЯ
+anprc-fp-sec-confirm-recrypto = ПОДТВЕРДИТЬ СМЕНУ ШИФРОВАНИЯ
+anprc-fp-sec-supersede = ЗАМЕНИТЬ КЛЮЧ
 anprc-fp-sec-needs-fill = НУЖЕН КЛЮЧ
-anprc-fp-sec-note-authority = ПЕРЕШИФРОВКА ТРЕБУЕТ РАЗРЕШЕНИЯ КОМАНДОВАНИЯ
+anprc-fp-sec-note-authority = СМЕНА ШИФРОВАНИЯ ТРЕБУЕТ РАЗРЕШЕНИЯ КОМАНДОВАНИЯ
 anprc-fp-sec-note-supersedes = ОНА АННУЛИРУЕТ ВСЕ СТАРЫЕ КАРТЫ ФРАКЦИИ
 anprc-fp-sec-otar = ПЕРЕЗАГРУЗКА КЛЮЧА ПО РАДИО
 anprc-fp-sec-otar-send = ОТПРАВИТЬ КЛЮЧ ПО РАДИО
@@ -198,10 +198,10 @@ anprc-fp-sec-note-otar = ШЛЁТ ТЕКУЩИЙ КЛЮЧ УСТАРЕВШИМ �
 anprc-fp-sec-note-otar-risk = ЗАХВАЧЕННЫЕ СТАНЦИИ С ВАШЕЙ КАРТОЙ ТОЖЕ ПОЛУЧАТ КЛЮЧ
 anprc-fp-ack-zeroize-armed = СТИРАНИЕ ВЗВЕДЕНО - ENT ЕЩЁ РАЗ ДЛЯ ОЧИСТКИ
 anprc-fp-ack-zeroized = КЛЮЧ СТЁРТ
-anprc-fp-ack-destroy-armed = УНИЧТОЖЕНИЕ ВЗВЕДЕНО - ENT ЕЩЁ РАЗ ДЛЯ СЖИГАНИЯ
+anprc-fp-ack-destroy-armed = УНИЧТОЖЕНИЕ КЛЮЧА ВЗВЕДЕНО - ENT ЕЩЁ РАЗ ДЛЯ СЖИГАНИЯ
 anprc-fp-ack-destroyed = КЛЮЧ УНИЧТОЖЕН
-anprc-fp-ack-recrypto-armed = ПЕРЕШИФРОВКА ВЗВЕДЕНА - ENT ЕЩЁ РАЗ ДЛЯ ПРИКАЗА
-anprc-fp-ack-recrypto = ПЕРЕШИФРОВКА ЗАКАЗАНА
+anprc-fp-ack-recrypto-armed = СМЕНА ШИФРОВАНИЯ ВЗВЕДЕНА - ENT ЕЩЁ РАЗ ДЛЯ ПРИКАЗА
+anprc-fp-ack-recrypto = СМЕНА ШИФРОВАНИЯ ЗАКАЗАНА
 anprc-fp-ack-otar-armed = ОТПРАВКА КЛЮЧА ВЗВЕДЕНА - ENT ЕЩЁ РАЗ ДЛЯ ОТПРАВКИ
 anprc-fp-ack-otar = КЛЮЧ ОТПРАВЛЕН ПО РАДИО
 
@@ -225,7 +225,7 @@ anprc-fp-srch-no-contacts = НЕТ КОНТАКТОВ
 anprc-fp-srch-contact-partial = ЧАСТИЧНО { $tier }/{ $max }
 anprc-fp-srch-contact-dwell = УДЕРЖ. { $tier }/{ $max }
 anprc-fp-srch-contact-own = { $net } (СВОЯ)
-anprc-fp-srch-contact-no-mem = { $net } (НЕТ ПАМ)
+anprc-fp-srch-contact-no-mem = { $net } (НЕТ ПАМЯТИ)
 anprc-fp-srch-note-select-memory = ВЫБЕРИТЕ ПАМЯТЬ НА PGM, ЧТОБЫ НАСТРОИТЬ ФИКС
 anprc-fp-srch-note-dwell = ENT НА ЧАСТИЧНОМ КОНТАКТЕ СТАВИТ ГОЛОВКУ НА НЕГО
 anprc-fp-srch-jammer = ПЕЛЕНГ ГЛУШИЛКИ
@@ -250,7 +250,7 @@ anprc-fp-key-depth = { $depth }/{ $max } В ЗАПАСЕ
 anprc-fp-key-test = ПРОВЕРИТЬ ПРОБНЫЙ КЛЮЧ
 anprc-fp-key-prompt = КЛЮЧ A-H x6
 anprc-fp-key-rules = 6 СИМВОЛОВ A-H, БЕЗ ПОВТОРОВ. СОВПАДЕНИЯ = СИМВОЛЫ НА СВОЁМ МЕСТЕ
-anprc-fp-key-no-depth = НЕТ ПРОБ В ЗАПАСЕ. КАЖДАЯ СТРОКА НА ФИКС. СЕТИ ДАЁТ ОДНУ
+anprc-fp-key-no-depth = НЕТ ПРОБ В ЗАПАСЕ. ОДНА СТРОКА С ФИКС. СЕТИ = ОДНА ПРОБА
 anprc-fp-key-trials = ПРОБЫ
 anprc-fp-key-no-trials = ПРОБ ЕЩЁ НЕТ
 anprc-fp-key-hits = { $hits }/{ $length }
@@ -277,17 +277,17 @@ anprc-fp-help-pg = +/- PG
 anprc-fp-help-pg-what = СМЕНИТЬ СТРАНИЦУ
 anprc-fp-help-soft-keys = МЯГКИЕ КЛАВИШИ ВНИЗУ ПЕРЕХОДЯТ НА СТРАНИЦЫ
 anprc-fp-help-keypad = КЛАВИАТУРА
-anprc-fp-help-key-1 = 1 CALL
+anprc-fp-help-key-1 = 1 ВЫЗОВ
 anprc-fp-help-key-1-what = ПРОВЕРКА СВЯЗИ
-anprc-fp-help-key-2 = 2 LT
+anprc-fp-help-key-2 = 2 ПОДСВ
 anprc-fp-help-key-2-what = ПОДСВЕТКА
-anprc-fp-help-key-3 = 3 MODE
+anprc-fp-help-key-3 = 3 РЕЖИМ
 anprc-fp-help-key-3-what = РЕЖИМ (ВОЛНА)
-anprc-fp-help-key-4 = 4 SQL
+anprc-fp-help-key-4 = 4 ШУМОД
 anprc-fp-help-key-4-what = ШУМОДАВ
-anprc-fp-help-key-5 = 5 ZERO
+anprc-fp-help-key-5 = 5 СТЕРЕТЬ
 anprc-fp-help-key-5-what = COMSEC, СТИРАНИЕ ВЗВЕДЕНО
-anprc-fp-help-key-6 = 6 PWR
+anprc-fp-help-key-6 = 6 ПИТ
 anprc-fp-help-key-6-what = ВКЛ И ВЫКЛ СТАНЦИИ
 anprc-fp-help-key-pages = 7 8 9 0
 anprc-fp-help-key-pages-what = OPT PGM SEC LOG
@@ -320,7 +320,7 @@ anprc-fp-help-techniques-2 = СБЕРЕЖЕНИЕ ТЯНЕТ БАТАРЕЮ, П�
 anprc-fp-help-techniques-3 = КОНТРОЛЬ СЛУШАЕТ 2-Ю СЕТЬ, EMCON МОЛЧИТ.
 anprc-fp-help-techniques-4 = OPT > ЗАКРЕПЛЁННАЯ: РЕТРАНСЛЯЦИЯ МОСТИТ ДВЕ
 anprc-fp-help-techniques-5 = ПАМЯТИ, ПИКИРОВАНИЕ +25% ДАЛЬНОСТИ.
-anprc-fp-help-techniques-6 = SEC: ОТПРАВЬТЕ КЛЮЧ ПО РАДИО ПОСЛЕ ПЕРЕШИФРОВКИ.
+anprc-fp-help-techniques-6 = SEC: ОТПРАВЬТЕ КЛЮЧ ПО РАДИО ПОСЛЕ СМЕНЫ ШИФРОВАНИЯ.
 anprc-fp-help-techniques-7 = SRCH: ENT НА ЧАСТИЧНОМ КОНТАКТЕ УДЕРЖИВАЕТ,
 anprc-fp-help-techniques-8 = ДВА ПЕЛЕНГА ГЛУШИЛКИ ДАЮТ ТОЧКУ НА КАРТЕ.
 anprc-fp-help-procedure = ПОРЯДОК РАБОТЫ
@@ -332,7 +332,7 @@ anprc-fp-help-procedure-5 = ИСПОЛЬЗУЙТЕ :r НА РАБОЧЕЙ ПАМ
 anprc-fp-help-procedure-6 = БЕЗ КЛЮЧА ВАШ ТРАФИК ИДЁТ ОТКРЫТО.
 
 ## Экран LOG
-anprc-fp-log-title = LOG  ЖУРНАЛ СЕТЕЙ
+anprc-fp-log-title = ЛОГ ЖУРНАЛ СЕТЕЙ
 anprc-fp-log-filter = ФИЛЬТР СЕТЕЙ
 anprc-fp-log-all-nets = ВСЕ СЕТИ
 anprc-fp-log-intercepts-only = ТОЛЬКО ПЕРЕХВАТЫ
@@ -347,10 +347,10 @@ anprc-fp-ack-log-printed = ЖУРНАЛ НАПЕЧАТАН
 anprc-fp-ack-intercepts-printed = ПЕРЕХВАТЫ НАПЕЧАТАНЫ
 
 ## Строка состояния сверху
-anprc-fp-lamp-rx = RX
-anprc-fp-lamp-tx = TX
-anprc-fp-rd-sec = SEC
-anprc-fp-rd-unsec = UNSEC
+anprc-fp-lamp-rx = ПРИЁМ
+anprc-fp-lamp-tx = ПЕРЕДАЧА
+anprc-fp-rd-sec = ЗАЩ
+anprc-fp-rd-unsec = НЕЗАЩ
 anprc-fp-rd-clear = ОТКР
 anprc-fp-rd-sig = СИГ { $bars }
 anprc-fp-rd-bat = БАТ { $bars }
@@ -362,34 +362,34 @@ anprc-fp-rd-search = ПОИСК ПО ДИАПАЗОНУ - СЕТИ СБРОШЕ�
 anprc-fp-rd-dwell = УДЕРЖАНИЕ КОНТАКТА - СЕТИ СБРОШЕНЫ
 anprc-fp-rd-search-band = ПОИСК
 anprc-fp-rd-direct = ПРЯМАЯ ЧАСТОТА
-anprc-fp-rd-band-sat = { $band } SAT
-anprc-fp-rd-band-los = { $band } LOS
-anprc-fp-rd-settings = { $mode }  SQL { $squelch }  PWR { $power }
-anprc-fp-rd-flag-mon = MON
-anprc-fp-rd-flag-scan = SCAN
-anprc-fp-rd-flag-burst = BURST
-anprc-fp-rd-flag-ps = PS
-anprc-fp-rd-flag-pri = PRI
+anprc-fp-rd-band-sat = { $band } СПУТНИК
+anprc-fp-rd-band-los = { $band } ПРЯМАЯ ВИД
+anprc-fp-rd-settings = { $mode }  ШУМОД { $squelch }  МОЩН { $power }
+anprc-fp-rd-flag-mon = КОНТР
+anprc-fp-rd-flag-scan = СКАН
+anprc-fp-rd-flag-burst = ПАКЕТ
+anprc-fp-rd-flag-ps = ЭСБ
+anprc-fp-rd-flag-pri = ПРИОР
 anprc-fp-rd-flag-emcon = EMCON
-anprc-fp-rd-flag-rxmt = RXMT
-anprc-fp-rd-stn = STN { $station }
-anprc-fp-rd-bit = BIT { $result }
-anprc-fp-rd-bit-no-cell = NO CELL
-anprc-fp-rd-bit-search = SRCH
-anprc-fp-rd-bit-pass = PASS
+anprc-fp-rd-flag-rxmt = РЕТР
+anprc-fp-rd-stn = СТН { $station }
+anprc-fp-rd-bit = САМОПР { $result }
+anprc-fp-rd-bit-no-cell = НЕТ ЭЛЕМЕНТА
+anprc-fp-rd-bit-search = ПОИСК
+anprc-fp-rd-bit-pass = ПРОЙДЕНО
 
 ## Гравировки, мягкие клавиши и строка состояния панели
 anprc-fp-eng-function = ФУНКЦИЯ
 anprc-fp-eng-sprung = LD / Z ПРУЖИНА
-anprc-fp-tab-pgm = PGM
+anprc-fp-tab-pgm = ПАМЯТЬ
 anprc-fp-tab-pgm-key = КЛАВИША 8
-anprc-fp-tab-sec = SEC
+anprc-fp-tab-sec = ЗАЩИТА
 anprc-fp-tab-sec-key = КЛАВИША 9
-anprc-fp-tab-srch = SRCH
+anprc-fp-tab-srch = ПОИСК
 anprc-fp-tab-srch-key = ДИАПАЗОН
-anprc-fp-tab-log = LOG
+anprc-fp-tab-log = ЖУРНАЛ
 anprc-fp-tab-log-key = КЛАВИША 0
-anprc-fp-tab-opt = OPT
+anprc-fp-tab-opt = НАСТР
 anprc-fp-tab-opt-key = КЛАВИША 7
 anprc-fp-tab-help-key = КЛАВИШИ
 anprc-fp-no-data = НЕТ ДАННЫХ ОТ СТАНЦИИ
@@ -403,9 +403,9 @@ anprc-fp-prompt-ld-held = LD УДЕРЖИВАЕТСЯ - СТРАНИЦА КЛЮ�
 anprc-fp-prompt-z-armed = Z УДЕРЖИВАЕТСЯ - СТИРАНИЕ ВЗВЕДЕНО, ПЕРЕКЛЮЧАТЕЛЬ ВОЗВРАЩАЕТСЯ
 anprc-fp-prompt-z-nothing = Z УДЕРЖИВАЕТСЯ - НЕЧЕГО СТИРАТЬ
 anprc-fp-prompt-no-cell = НЕТ ЭЛЕМЕНТА - ВСТАВЬТЕ БАТАРЕЮ
-anprc-fp-prompt-off = СТАНЦИЯ ВЫКЛ - ПЕРЕКЛЮЧАТЕЛЬ ИЛИ 6 PWR
+anprc-fp-prompt-off = СТАНЦИЯ ВЫКЛ - ПЕРЕКЛЮЧАТЕЛЬ ИЛИ 6 ПИТ
 anprc-fp-prompt-stowed = УБРАН - НАСТРОЙКИ В ПОРЯДКЕ, НАДЕНЬТЕ ДЛЯ РАБОТЫ В СЕТИ
-anprc-fp-prompt-no-net = НЕТ СЕТИ - 8 PGM, ЧТОБЫ ЗАГРУЗИТЬ
+anprc-fp-prompt-no-net = НЕТ СЕТИ - 8 ПАМЯТЬ, ЧТОБЫ ЗАГРУЗИТЬ
 
 ## Подтверждения клавиатуры и переключателя
 anprc-fp-ack-backlight = ПОДСВЕТКА { $level }
@@ -415,10 +415,10 @@ anprc-fp-ack-check-stowed = СТАНЦИЯ УБРАНА - НАДЕНЬТЕ ИЛ�
 anprc-fp-ack-check-searching = ИДЁТ ПОИСК - ПЕРЕДАЧА ЗАПРЕЩЕНА
 anprc-fp-ack-check-no-net = НЕТ СЕТИ ДЛЯ ПРОВЕРКИ
 anprc-fp-ack-nothing-to-wipe = НЕЧЕГО СТИРАТЬ
-anprc-fp-ack-no-cell = НЕТ ЭЛЕМЕНТА - PWR ОТКАЗАНО
+anprc-fp-ack-no-cell = НЕТ ЭЛЕМЕНТА - ПИТАНИЕ ОТКАЗАНО
 anprc-fp-ack-set-on = СТАНЦИЯ ВКЛ
 anprc-fp-ack-set-off = СТАНЦИЯ ВЫКЛ
-anprc-fp-ack-mode-plain = РЕЖИМ PLAIN - ТРАФИК ОТКРЫТО
+anprc-fp-ack-mode-plain = РЕЖИМ PT - ТРАФИК ОТКРЫТО
 anprc-fp-ack-set-on-comsec = СТАНЦИЯ ВКЛ - COMSEC ПОДНЯТ, ПЕРЕКЛЮЧАТЕЛЬ ВОЗВРАЩАЕТСЯ
 anprc-fp-ack-ld-comsec = LD - COMSEC ПОДНЯТ, ПЕРЕКЛЮЧАТЕЛЬ ВОЗВРАЩАЕТСЯ
 anprc-fp-ack-z-armed = Z - СТИРАНИЕ ВЗВЕДЕНО, ПОДТВЕРДИТЕ ENT. ПЕРЕКЛЮЧАТЕЛЬ ВОЗВРАЩАЕТСЯ
@@ -437,25 +437,25 @@ anprc-fp-backlight-day = ДЕНЬ
 anprc-fp-backlight-night = НОЧЬ
 
 ## Панель разъёмов
-anprc-fp-port-ant = ANT
-anprc-fp-port-audio = AUDIO
-anprc-fp-port-fill = KDU/FILL
-anprc-fp-port-power = PWR/GPS
+anprc-fp-port-ant = АНТ
+anprc-fp-port-audio = ЗВУК
+anprc-fp-port-fill = КЛЮЧ/ЗАГР
+anprc-fp-port-power = ПИТ/GPS
 
 ## Гравировки клавиатуры
-anprc-fp-key-clr = CLR
-anprc-fp-key-ent = ENT
-anprc-fp-key-fn-scrn = SCRN
-anprc-fp-key-fn-curs = CURS
-anprc-fp-key-fn-back = BACK
-anprc-fp-key-fn-work = WORK
-anprc-fp-key-fn-call = CALL
-anprc-fp-key-fn-lt = LT
-anprc-fp-key-fn-mode = MODE
-anprc-fp-key-fn-sql = SQL
-anprc-fp-key-fn-zero = ZERO
-anprc-fp-key-fn-pwr = PWR
-anprc-fp-key-fn-opt = OPT
-anprc-fp-key-fn-pgm = PGM
-anprc-fp-key-fn-sec = SEC
-anprc-fp-key-fn-log = LOG
+anprc-fp-key-clr = СБРОС
+anprc-fp-key-ent = ВВОД
+anprc-fp-key-fn-scrn = ЭКРАН
+anprc-fp-key-fn-curs = КУРС
+anprc-fp-key-fn-back = НАЗАД
+anprc-fp-key-fn-work = РАБОТА
+anprc-fp-key-fn-call = ВЫЗОВ
+anprc-fp-key-fn-lt = ПОДСВ
+anprc-fp-key-fn-mode = РЕЖИМ
+anprc-fp-key-fn-sql = ШУМОД
+anprc-fp-key-fn-zero = СТЕРЕТЬ
+anprc-fp-key-fn-pwr = ПИТ
+anprc-fp-key-fn-opt = НАСТР
+anprc-fp-key-fn-pgm = ПАМЯТЬ
+anprc-fp-key-fn-sec = ЗАЩИТА
+anprc-fp-key-fn-log = ЖУРНАЛ
