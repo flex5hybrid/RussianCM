@@ -1,14 +1,14 @@
 <Document>
-  # Hearing Loss
+  # Потеря слуха
 
-  Loud gunfire and explosions near you hurt your hearing if your ears are not covered. It builds up slowly. If it gets bad, you will go deaf for short periods.
+  Громкая стрельба и взрывы рядом вредят слуху, если уши не закрыты. Это накапливается постепенно. Если становится совсем плохо, вы на короткие промежутки глохнете.
 
-  To stay safe, wear a headset or hearing protection.
+  Чтобы не пострадать, надевайте гарнитуру или защиту слуха.
 
   <Box>
-    <GuideEntityEmbed Entity="CMUHeadElectronicHearingProtection" Caption="Hearing protection"/>
-    <GuideEntityEmbed Entity="AU14HeadsetGovforMarine" Caption="Headset"/>
+    <GuideEntityEmbed Entity="CMUHeadElectronicHearingProtection" Caption="Защита слуха"/>
+    <GuideEntityEmbed Entity="AU14HeadsetGovforMarine" Caption="Гарнитура"/>
   </Box>
 
-  Not sure if something protects your ears? Examine it.
+  Не уверены, защищает ли что-то ваши уши? Осмотрите предмет.
 </Document>

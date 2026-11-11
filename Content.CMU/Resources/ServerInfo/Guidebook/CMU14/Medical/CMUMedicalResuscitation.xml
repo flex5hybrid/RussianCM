@@ -1,33 +1,33 @@
 <Document>
-  # Resuscitation
+  # Реанимация
 
-  A patient who dies can often still be brought back, but only for a limited time. Once that time runs out, or the body starts to rot, they're gone for good.
+  Умершего пациента часто ещё можно вернуть, но лишь в течение ограниченного времени. Когда оно истекает или тело начинает разлагаться, он уходит навсегда.
 
-  ## How Long You Have: The Rot Timer
-  The moment someone dies, a [bold]rot timer[/bold] starts. It's how long their body can still be revived before it starts to decay.
-  - It lasts [bold]5 minutes[/bold]. When it runs out the body rots, and nothing can bring them back.
-  - A health analyzer shows roughly how many minutes are left. A medical HUD's health icon on a dead patient also changes as the timer runs down, from revivable to close to almost gone.
-  - The timer only runs while they're dead. Revive them and it resets.
+  ## Сколько у вас времени: таймер разложения
+  В момент смерти запускается [bold]таймер разложения[/bold]. Это то время, в течение которого тело ещё можно оживить, прежде чем оно начнёт разлагаться.
+  - Он длится [bold]5 минут[/bold]. Когда он истекает, тело разлагается, и вернуть его уже ничем нельзя.
+  - Анализатор здоровья показывает примерное число оставшихся минут. Значок здоровья на медицинском HUD у мёртвого пациента также меняется по мере истечения таймера — от «можно оживить» до «почти ушёл».
+  - Таймер идёт только пока пациент мёртв. Оживите его — и он сбросится.
 
-  You can buy more time:
-  - [bold]CPR[/bold]: every round adds 7 seconds, and more with a CPR mask on the patient.
-  - [bold]The recovery position[/bold]: adds a few seconds for every minute they lie in it.
-  - [bold]Neurocryogenic[/bold]: injected into a corpse, it keeps extending the timer for as long as it's in their system.
+  Вы можете купить дополнительное время:
+  - [bold]СЛР[/bold]: каждый цикл добавляет 7 секунд, а с маской для СЛР на пациенте — больше.
+  - [bold]Восстановительное положение[/bold]: добавляет несколько секунд за каждую минуту, что он лежит в нём.
+  - [bold]Neurocryogenic[/bold]: введённый в труп, он продлевает таймер, пока находится в организме.
 
-  ## CPR
-  - Click a dead patient with an empty hand to do chest compressions. Each round takes a few seconds.
-  - Each round adds 7 seconds to the time the patient can still be brought back, and clears up to 10 suffocation damage.
-  - You can't do CPR through a face mask. Pull it down or take it off first.
-  - A [bold]CPR mask[/bold] can be put on an unconscious patient to make CPR more effective. It slips off when they come to.
+  ## СЛР
+  - Щёлкните по мёртвому пациенту пустой рукой, чтобы делать компрессии грудной клетки. Каждый цикл занимает несколько секунд.
+  - Каждый цикл добавляет 7 секунд к времени, за которое пациента ещё можно вернуть, и снимает до 10 урона от удушья.
+  - Нельзя делать СЛР через лицевую маску. Спустите её или снимите.
+  - [bold]Маску для СЛР[/bold] можно надеть на бессознательного пациента, чтобы СЛР была эффективнее. Она спадает, когда он приходит в себя.
 
-  ## The Recovery Position
-  - Right-click a collapsed patient and choose [bold]Recovery position[/bold] to roll them onto their side.
-  - While they stay put, a living patient slowly recovers from suffocation damage.
-  - For a dead patient, every minute in the recovery position adds a few more seconds before they can no longer be brought back.
+  ## Восстановительное положение
+  - Нажмите ПКМ по упавшему пациенту и выберите [bold]Восстановительное положение[/bold], чтобы перевернуть его на бок.
+  - Пока он лежит так, живой пациент медленно восстанавливается от урона удушья.
+  - Для мёртвого пациента каждая минута в восстановительном положении добавляет ещё несколько секунд, прежде чем его уже нельзя будет вернуть.
 
-  ## Bringing Them Back
-  - A defibrillator shocks a dead patient back to life, if their body can still be saved. See [textlink="Defibrillators" link="CMUGuideDefibrillators"].
-  - Treat the patient's injuries before shocking. A revival only works if the shock can bring their total damage back below the point where they died.
-  - The heart has to be in good enough shape to restart. A failing or dead heart must be repaired first. See [textlink="Organs" link="CMUGuideMedicalOrgans"].
-  - [bold]Cardiocaine[/bold] can sometimes restart a heart that has stopped.
+  ## Возвращение к жизни
+  - Дефибриллятор разрядом возвращает мёртвого пациента к жизни, если его тело ещё можно спасти. См. [textlink="Дефибрилляторы" link="CMUGuideDefibrillators"].
+  - Лечите повреждения пациента до разряда. Оживление сработает, только если разряд сможет опустить общий урон ниже точки, в которой он умер.
+  - Сердце должно быть в достаточно хорошем состоянии, чтобы перезапуститься. Отказывающее или мёртвое сердце нужно сначала восстановить. См. [textlink="Органы" link="CMUGuideMedicalOrgans"].
+  - [bold]Cardiocaine[/bold] иногда может перезапустить остановившееся сердце.
 </Document>

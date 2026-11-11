@@ -1,34 +1,35 @@
 <Document>
-  # Prey Caveats
+  # Оговорки по добыче
 
-  ## Synths
-  - Synths interfering with an ongoing hunt without attacking the Yautja, such as bodyblocking or trying to move the prey away, are [color=#57b339]worthy[/color].
-  - Synths attacking or hindering a Yautja in defense of others, such as disarming you, stealing your weapon or hitting you to protect the prey you're hunting, are [color=#ff0000]dishonorable[/color].
-  - Synths attacking or hindering a Yautja in self-defense, because you hit them first, are [color=#57b339]worthy[/color].
+  ## Синтетики
+  Синты расцениваются Яутжа как искусственная имитация низших форм жизни и презираются. Вступать с ними в контакты не рекомендуется.
+  - Синт, вмешивающийся в охоту без прямого нападения (блокирует путь, уводит жертву), — Достойный.
+  - Синт, атаковавший Яутжа или напрямую препятствующий охоте (обезоруживает, бьёт, крадёт оружие), — Бесчестный.
 
-  ## Carriers, facehuggers and other threat infectors
-  If a carrier or another non-xenomorph threat infector caste is spectating or loitering during a fight between you and a xenomorph or threat member, assume they're there to infect you. Following you while out of combat, or chatting you up for a long time, can be for the same reason. This makes them [color=#57b339]worthy[/color].
+  ## Носители и лицехваты
+  Если носитель кружит рядом или наблюдает за вашим боем с ксеноморфом, считается, что он пытается вас заразить. То же касается случаев, когда он преследует вас вне боя или пытается отвлечь. Это делает его Достойным (как и попытка достать лицехвата).
 
-  If a facehugger or popper does any of the above, you may use dishonorable tools at will.
+  Если лицехват предпринимает попытку нападения, разрешено применять методы борьбы как против Бесчестных.
 
-  ## Abominations and aberrations
-  Abominations and aberrations are considered the worst thing in existence and should be eliminated with every Yautja-made tool in your arsenal. Focus on killing the abomination while minimizing unnecessary kills, though some are to be expected.
+  ## Предалиен
+  Предалиен считается осквернением вида и величайшей угрозой. Должен быть уничтожен любым доступным арсеналом.
+  - Первостепенная задача — ликвидация Предалиена с минимизацией сторонних жертв (хотя сопутствующий урон допустим).
+  - Допускается временное перемирие с морпехами ради уничтожения Предалиена.
+  - Заражение: если вы заражены, вы обязаны погибнуть. Если вы обнаружили заражённого брата, обеспечьте его смерть и уничтожьте его тело.
+  - Самоуничтожение для ликвидации Предалиена или заражённого брата — это крайняя мера, а не первое решение.
+  - Охотники имеют право подняться на борт корабля морпехов для ликвидации Предалиена (даже после отлёта/хайджека корабля). После уничтожения твари и всех следов её существования Яутжа обязаны немедленно покинуть корабль.
 
-  - Yautja may form a ceasefire with GOVFOR or OPFOR to concentrate on killing the abomination or aberration, but you must then focus on the abomination or aberration only.
-  - If you get infected, you must die at any cost.
-  - If you encounter a living infected Yautja, you are to make sure they die and, if possible, self-destruct their body.
-  - Self-destructing to kill an infected Yautja, an abomination or an aberration is a last resort, not the first solution.
-  - Should an abomination or aberration be on the ship, hunters may go aboard to destroy it, even after hijack.
-  - Once it is dead and the proof of its existence has been removed, all Yautja are to leave the ship as soon as possible.
+  ## Атака улья
+  - Если группа ксеноморфов (например: Воин, Королева, Носитель) атаковала вас первой, лишив шансов на сопротивление заражению, — они становятся Временно бесчестными.
+  - Если 5 и более ксеноморфов атакуют одного Яутжа, другие Охотники могут прийти на помощь. При этом статус «Временно бесчестный» с атаковавших снимается.
+  - Если Яутжа сам инициировал охоту на 1–2 ксеноморфов, а к ним пришло подкрепление, сородичи могут вмешаться только при подавляющем превосходстве врага (например, против целого Улья).
 
-  ## Hive offensives
-  In the case above, or when 5 or more xenos join a fight against a Yautja, other Yautja may join in freely unless the engaged Yautja demands otherwise. Should other Yautja join in, the temporarily dishonorable status from being attacked first goes away.
+  ## Зачистка улья
+  До момента открытия Т3 Яутжа могут охотиться на ксеноморфов, но должны соблюдать меру. Соблюдайте сдержанность, если сами инициируете стычки.
 
-  If the Yautja instead began a hunt on one or two xenomorphs and more xenos join, other Yautja may assist only if the number is much higher, for example the entire hive.
+  ## Наследование статуса
+  Любой, кто прямо или косвенно помогает вашей текущей цели, наследует её статус (пример: дроны, дающие смолу/феромоны в бою). Помогающие Достойным становятся Достойными, помогающие Бесчестным — Бесчестными.
 
-  ## Hive disruption
-  Yautja may hunt xenomorphs before T3s, but should be mindful of what they do and how much. Hold back if you initiate engagements yourself. You are responsible if early hunting leads to major round impact, and may be punished should it violate the spirit of the whitelist.
-
-  ## Prey status inheritance
-  Anyone who directly or indirectly aids the prey you're currently engaged with inherits that prey's status, for example drone castes providing weeds and pheromones. Those helping worthy prey become worthy, and those helping dishonorable prey become dishonorable.
+  ## Неоморфы
+  Неоморфы: Патогены, или Неоморфы, — вид существ, с которым раса Хищников сталкивалась крайне редко, и информация о них практически отсутствует. Взаимодействие с ними определяется Старшим охотником на корабле; если такой охотник отсутствует, то взаимодействия с неоморфами следует избегать и сводить их лишь к изучению. Ранги: Древний — Лидер — Старейшина.
 </Document>

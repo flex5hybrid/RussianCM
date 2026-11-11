@@ -1,279 +1,279 @@
 <Document>
-  # Guided panel
+  # Упрощённая панель
 
-  The guided panel is the default interface for the AN/PRC-117G.
+  Упрощённая панель — это интерфейс AN/PRC-117G по умолчанию.
 
-  It provides the controls needed for normal radio operation while leaving advanced settings on [bold]AUTO[/bold].
+  Она даёт всё нужное для обычной работы с радиостанцией, оставляя расширенные настройки в режиме [bold]AUTO[/bold].
 
-  By default, AUTO uses:
+  По умолчанию AUTO использует:
 
-  - FH waveform
-  - MED output power
-  - squelch 3
-  - the wearer's callsign
+  - форму сигнала FH
+  - выходную мощность MED
+  - шумоподавление 3
+  - позывной владельца
 
-  The display shows the radio's current state, while the banner below it reports problems that need attention.
+  Дисплей показывает текущее состояние радиостанции, а строка под ним сообщает о проблемах, требующих внимания.
 
-  Advanced functions such as output power, waveforms, fixed station callsigns, direct frequencies, the search receiver, and operator techniques are available through the [textlink="expert faceplate" link="AU14CommsANPRCExpert"].
+  Расширенные функции — выходная мощность, формы сигнала, постоянные позывные станции, прямые частоты, поисковый приёмник и операторские приёмы — доступны через [textlink="расширенную панель" link="AU14CommsANPRCExpert"].
 
-  ## Opening the panel
+  ## Открытие панели
 
-  Wear the radio, then alt-click it, or right-click it and select [bold]Open Radio Panel[/bold].
+  Наденьте радиостанцию, затем нажмите на неё с Alt или правой кнопкой и выберите [bold]Открыть панель радиостанции[/bold].
 
-  Only trained operators can open the panel. See [textlink="the AN/PRC-117G" link="AU14CommsANPRC"] for roles that begin with radio training.
+  Открыть панель могут только обученные операторы. О ролях, которые начинают с подготовки радиста, см. [textlink="AN/PRC-117G" link="AU14CommsANPRC"].
 
-  The first time the panel is opened, a short briefing appears.
+  При первом открытии панели появляется краткая вводная инструкция.
 
-  - [bold]GOT IT[/bold] closes the briefing.
-  - [bold]? HELP[/bold] opens it again and provides access to this guide.
-  - [bold]VIEW[/bold] switches between the guided panel and expert faceplate.
+  - [bold]ПОНЯТНО[/bold] закрывает инструкцию.
+  - [bold]? ПОМОЩЬ[/bold] открывает её снова и даёт доступ к этому руководству.
+  - [bold]ВИД[/bold] переключает между упрощённой панелью и расширенной панелью.
 
-  The radio remembers the last interface used.
+  Радиостанция запоминает последний использованный интерфейс.
 
-  ## Display
+  ## Дисплей
 
-  The display provides the radio's most important status information.
+  Дисплей показывает самое важное о состоянии радиостанции.
 
-  ### Working net
+  ### Рабочая сеть
 
-  The display shows:
+  На дисплее отображаются:
 
-  - working memory
-  - frequency
-  - loaded net
+  - рабочая ячейка памяти
+  - частота
+  - загруженная сеть
 
-  The [bold]TALK[/bold] line indicates whether [color=#a4885c]:r[/color] can currently transmit.
+  Строка [bold]ПЕРЕДАЧА[/bold] показывает, может ли сейчас передавать [color=#a4885c]:r[/color].
 
-  ### Security
+  ### Безопасность
 
-  The display shows the current waveform and encryption state.
+  На дисплее отображаются текущая форма сигнала и состояние шифрования.
 
-  Possible states are:
+  Возможные состояния:
 
-  - [bold]SECURE[/bold]
-  - [bold]NOT SECURE[/bold]
-  - [bold]IN CLEAR[/bold]
+  - [bold]ЗАЩИЩЕНО[/bold]
+  - [bold]НЕ ЗАЩИЩЕНО[/bold]
+  - [bold]ОТКРЫТО[/bold]
 
-  ### Connection and relay
+  ### Связь и ретрансляция
 
-  [bold]SIG[/bold] shows the quality of the radio's connection to its working net.
+  [bold]SIG[/bold] показывает качество связи радиостанции с рабочей сетью.
 
-  [bold]RELAY[/bold] shows:
+  [bold]РЕЛЕЙ[/bold] показывает:
 
-  - how many nets the radio is relaying
-  - the current relay range
+  - сколько сетей ретранслирует радиостанция
+  - текущую дальность ретрансляции
 
-  If the display reads [bold]NOT RELAYING[/bold], the radio is not providing combat-net coverage to nearby headsets.
+  Если на дисплее [bold]НЕ РЕТРАНСЛИРУЕТ[/bold], радиостанция не даёт боевого покрытия ближайшим гарнитурам.
 
-  Common causes include:
+  Частые причины:
 
-  - the radio is switched off
-  - the radio is not being worn
-  - the wearer does not have radio training
+  - радиостанция выключена
+  - радиостанция не надета
+  - у владельца нет подготовки радиста
 
-  Check the banner for the specific problem.
+  Конкретную проблему смотрите в строке состояния.
 
-  ## Status banner
+  ## Строка состояния
 
-  The banner below the display reports the next problem preventing normal operation.
+  Строка под дисплеем сообщает о следующей проблеме, которая мешает нормальной работе.
 
-  Problems are generally shown in the order they should be corrected, such as:
+  Проблемы обычно показываются в том порядке, в котором их нужно исправлять, например:
 
-  - missing battery
-  - radio switched off
-  - radio not worn
-  - no nets loaded
-  - no valid fill card
+  - нет аккумулятора
+  - радиостанция выключена
+  - радиостанция не надета
+  - не загружены сети
+  - нет действующей карты ключей
 
-  When possible, the banner includes a button that corrects the problem directly.
+  Где возможно, строка содержит кнопку, которая сразу исправляет проблему.
 
-  A green banner indicates that the radio is ready for normal operation.
+  Зелёная строка означает, что радиостанция готова к нормальной работе.
 
-  ## NETS
+  ## СЕТИ
 
-  The NETS tab manages the radio's memories.
+  Вкладка СЕТИ управляет ячейками памяти радиостанции.
 
-  The AN/PRC can contain up to four memory slots.
+  AN/PRC вмещает до четырёх ячеек памяти.
 
-  Each memory shows its contents and whether it is currently being used for transmission or relay coverage.
+  Каждая ячейка показывает своё содержимое и то, используется ли она сейчас для передачи или ретрансляции.
 
-  ### Standard nets
+  ### Стандартные сети
 
-  [bold]LOAD STANDARD NETS[/bold], or [bold]TURN ON AND LOAD STANDARD NETS[/bold], performs the standard setup.
+  [bold]ЗАГРУЗИТЬ СТАНДАРТНЫЕ СЕТИ[/bold] или [bold]ВКЛЮЧИТЬ И ЗАГРУЗИТЬ СТАНДАРТНЫЕ СЕТИ[/bold] выполняет стандартную настройку.
 
-  It:
+  Она:
 
-  - switches the radio on
-  - loads available squad and command nets
-  - selects the squad net as the working memory
+  - включает радиостанцию
+  - загружает доступные сети отделения и командования
+  - выбирает сеть отделения как рабочую ячейку
 
-  Existing manually configured memories are not overwritten.
+  Уже настроенные вручную ячейки не перезаписываются.
 
-  The button only appears while one or more standard nets are missing.
+  Кнопка появляется только тогда, когда не хватает одной или нескольких стандартных сетей.
 
-  ### Memory controls
+  ### Управление ячейками памяти
 
-  - [bold]USE[/bold] selects a memory as the working net and marks it [bold]ON AIR[/bold].
-  - [bold]EDIT[/bold] opens that memory's configuration.
-  - [bold]+ ADD MEMORY[/bold] creates a new empty memory.
+  - [bold]ИСПОЛЬЗОВАТЬ[/bold] выбирает ячейку как рабочую сеть и помечает её [bold]В ЭФИРЕ[/bold].
+  - [bold]ИЗМЕНИТЬ[/bold] открывает настройки этой ячейки.
+  - [bold]+ ДОБАВИТЬ ЯЧЕЙКУ[/bold] создаёт новую пустую ячейку.
 
-  Inside the memory editor:
+  В редакторе ячейки:
 
-  - [bold]Pick a net[/bold] selects the net stored in the memory.
-  - [bold][YOUR SQUAD][/bold] marks the operator's squad net.
-  - [bold][STANDARD][/bold] marks recommended nets.
-  - [bold][IN MEMORY][/bold] marks nets already loaded elsewhere in the radio.
-  - [bold][INTERCEPT][/bold] marks enemy nets resolved by the search receiver.
-  - [bold]Rename[/bold] changes the memory label, up to eight characters.
-  - [bold]EMPTY IT[/bold] clears the memory without removing its slot.
-  - [bold]DELETE MEMORY[/bold] removes the memory slot after confirmation.
-  - [bold]DONE[/bold] closes the editor.
+  - [bold]Выбрать сеть[/bold] выбирает сеть, хранящуюся в ячейке.
+  - [bold][ВАШЕ ОТДЕЛЕНИЕ][/bold] помечает сеть отделения оператора.
+  - [bold][СТАНДАРТ][/bold] помечает рекомендуемые сети.
+  - [bold][В ПАМЯТИ][/bold] помечает сети, уже загруженные в другую ячейку радиостанции.
+  - [bold][ПЕРЕХВАТ][/bold] помечает вражеские сети, определённые поисковым приёмником.
+  - [bold]Переименовать[/bold] меняет название ячейки, до восьми символов.
+  - [bold]ОЧИСТИТЬ[/bold] очищает ячейку, не удаляя её слот.
+  - [bold]УДАЛИТЬ ЯЧЕЙКУ[/bold] удаляет слот после подтверждения.
+  - [bold]ГОТОВО[/bold] закрывает редактор.
 
-  Memory labels are visible only to the operator.
+  Названия ячеек видит только оператор.
 
-  Every friendly combat net loaded into memory is relayed to nearby headsets, regardless of which memory is ON AIR.
+  Каждая дружественная боевая сеть, загруженная в память, ретранслируется на ближайшие гарнитуры, независимо от того, какая ячейка [bold]В ЭФИРЕ[/bold].
 
-  A radio can therefore transmit on one net while continuing to relay others.
+  Поэтому радиостанция может передавать на одной сети и одновременно ретранслировать другие.
 
-  Direct frequencies are configured through the [textlink="expert faceplate" link="AU14CommsANPRCExpert"].
+  Прямые частоты настраиваются через [textlink="расширенную панель" link="AU14CommsANPRCExpert"].
 
   ## LOG
 
-  The LOG tab stores the last [bold]50[/bold] radio messages handled by the set.
+  Вкладка LOG хранит последние [bold]50[/bold] радиосообщений, обработанных станцией.
 
-  The newest entries appear first.
+  Новые записи идут первыми.
 
-  The log includes received and transmitted traffic.
+  В журнал попадают и принятые, и переданные сообщения.
 
-  Available controls include:
+  Доступные элементы управления:
 
-  - search by sender or message text
-  - [bold]INTERCEPTS[/bold] - show only intercepted enemy traffic
-  - [bold]ALL NETS[/bold] - cycle through nets represented in the log
-  - [bold]PRINT LOG[/bold] - print the full log
-  - [bold]PRINT INTERCEPTS[/bold] - print only intercepted traffic
+  - поиск по отправителю или тексту сообщения
+  - [bold]ПЕРЕХВАТЫ[/bold] — показывать только перехваченный вражеский трафик
+  - [bold]ВСЕ СЕТИ[/bold] — переключаться между сетями, представленными в журнале
+  - [bold]ПЕЧАТЬ ЖУРНАЛА[/bold] — печать полного журнала
+  - [bold]ПЕЧАТЬ ПЕРЕХВАТОВ[/bold] — печать только перехваченного трафика
 
-  Printed logs are placed directly into the operator's hand.
+  Напечатанный журнал попадает прямо в руку оператора.
 
-  The radio must be worn or staked down before it can print.
+  Чтобы печатать, радиостанцию нужно надеть или закрепить.
 
-  A badge on the LOG tab shows how many entries arrived while another tab was open.
+  Значок на вкладке LOG показывает, сколько записей пришло, пока была открыта другая вкладка.
 
-  ## SECURITY
+  ## БЕЗОПАСНОСТЬ
 
-  The SECURITY tab displays the radio's encryption state and installed fill card.
+  Вкладка БЕЗОПАСНОСТЬ показывает состояние шифрования радиостанции и установленную карту ключей.
 
-  Possible states include:
+  Возможные состояния:
 
-  - [bold]ENCRYPTED[/bold] - the installed fill card is current and secured traffic is encrypted
-  - [bold]NOT ENCRYPTED[/bold] - no valid fill card is installed
-  - [bold]FILL SUPERSEDED[/bold] - the installed fill card became outdated after a recrypto
-  - [bold]IN THE CLEAR (PT)[/bold] - the radio is transmitting in plain-text mode
+  - [bold]ЗАШИФРОВАНО[/bold] — установленная карта ключей актуальна, защищённый трафик шифруется
+  - [bold]НЕ ЗАШИФРОВАНО[/bold] — действующая карта ключей не установлена
+  - [bold]КЛЮЧ УСТАРЕЛ[/bold] — установленная карта ключей устарела после смены шифрования
+  - [bold]ОТКРЫТЫЙ ТЕКСТ (PT)[/bold] — радиостанция передаёт в режиме открытого текста
 
-  If no valid fill is loaded, use a current COMSEC fill card on the radio.
+  Если действующий ключ не загружен, примените к радиостанции актуальную карту ключей COMSEC.
 
-  If the fill is superseded, replace it or receive a new key through over-the-air rekeying.
+  Если ключ устарел, замените карту или получите новый ключ через обновление ключа по радио.
 
-  If the radio is in PT, use [bold]RETURN TO AUTO[/bold] from SETTINGS to restore the normal FH configuration.
+  Если радиостанция в PT, выберите [bold]ВЕРНУТЬСЯ К АВТО[/bold] в НАСТРОЙКАХ, чтобы вернуть обычную конфигурацию FH.
 
-  ### Fill actions
+  ### Действия с ключом
 
-  The following actions require confirmation.
+  Следующие действия требуют подтверждения.
 
-  - [bold]ZEROIZE[/bold] - eject the active fill card into the operator's hand
-  - [bold]DESTROY FILL[/bold] - destroy the installed fill card
-  - [bold]ORDER RECRYPTO[/bold] - replace the faction's current encryption key and invalidate existing fill cards
+  - [bold]ZEROIZE[/bold] — извлечь активную карту ключей в руку оператора
+  - [bold]УНИЧТОЖИТЬ КЛЮЧ[/bold] — уничтожить установленную карту ключей
+  - [bold]ЗАКАЗАТЬ СМЕНУ ШИФРОВАНИЯ[/bold] — заменить текущий ключ шифрования фракции и аннулировать существующие карты ключей
 
-  ORDER RECRYPTO requires command authority.
+  ЗАКАЗАТЬ СМЕНУ ШИФРОВАНИЯ требует командных полномочий.
 
-  ZEROIZE or DESTROY FILL can be used to prevent an installed key from being captured.
+  ZEROIZE или УНИЧТОЖИТЬ КЛЮЧ можно использовать, чтобы установленный ключ не попал в руки противника.
 
-  ## SETTINGS
+  ## НАСТРОЙКИ
 
-  The SETTINGS tab shows the radio's current operating configuration.
+  Вкладка НАСТРОЙКИ показывает текущую рабочую конфигурацию радиостанции.
 
-  ### Operating mode
+  ### Режим работы
 
-  [bold]HOW THE SET IS RUNNING[/bold] displays [bold]AUTO[/bold] while the radio is using the guided panel's standard settings.
+  [bold]КАК РАБОТАЕТ СТАНЦИЯ[/bold] показывает [bold]АВТО[/bold], пока радиостанция использует стандартные настройки упрощённой панели.
 
-  Changes made through the expert faceplate are listed here.
+  Изменения, сделанные через расширенную панель, перечисляются здесь.
 
-  These can include:
+  Это могут быть:
 
-  - output power
-  - waveform
-  - squelch
-  - fixed station callsign
-  - burst transmission
-  - power save
-  - priority watch
+  - выходная мощность
+  - форма сигнала
+  - шумоподавление
+  - постоянный позывной станции
+  - пакетная передача
+  - энергосбережение
+  - приоритетное прослушивание
   - EMCON
-  - retransmission bridge
-  - active search
+  - мост ретрансляции
+  - активный поиск
 
-  ### Return to auto
+  ### Возврат к авто
 
-  [bold]RETURN TO AUTO[/bold] appears whenever the radio is outside the guided panel's standard configuration.
+  [bold]ВЕРНУТЬСЯ К АВТО[/bold] появляется, когда радиостанция выходит за пределы стандартной конфигурации упрощённой панели.
 
-  It restores the normal automatic settings and stops an active search.
+  Он возвращает обычные автоматические настройки и останавливает активный поиск.
 
-  It does [bold]not[/bold] remove:
+  Он [bold]не[/bold] удаляет:
 
-  - loaded memories
-  - installed fill card
+  - загруженные ячейки памяти
+  - установленную карту ключей
 
-  Use RETURN TO AUTO when a radio has been left in an unfamiliar configuration.
+  Используйте ВЕРНУТЬСЯ К АВТО, если радиостанция осталась в незнакомой конфигурации.
 
-  For example, a radio left in EMCON cannot transmit or provide relay coverage.
+  Например, радиостанция в EMCON не может передавать и не даёт покрытия ретрансляции.
 
-  ### Monitor
+  ### Прослушивание
 
-  [bold]MONITOR[/bold] listens to every loaded net simultaneously.
+  [bold]ПРОСЛУШИВАНИЕ[/bold] слушает все загруженные сети одновременно.
 
-  While MONITOR is active:
+  Пока ПРОСЛУШИВАНИЕ активно:
 
-  - all loaded nets can be received
-  - the radio becomes receive-only
-  - [color=#a4885c]:r[/color] cannot transmit
+  - все загруженные сети принимаются
+  - радиостанция работает только на приём
+  - [color=#a4885c]:r[/color] не может передавать
 
-  ### Scan
+  ### Сканирование
 
-  [bold]SCAN[/bold] listens to every loaded net.
+  [bold]СКАНИРОВАНИЕ[/bold] слушает все загруженные сети.
 
-  When a loaded net receives traffic, the radio moves ON AIR to that memory.
+  Когда в загруженной сети появляется трафик, радиостанция переводит [bold]В ЭФИРЕ[/bold] на эту ячейку.
 
-  It remains selected until another loaded net receives traffic or the operator changes it manually.
+  Она остаётся выбранной, пока трафик не появится в другой загруженной сети или оператор не переключит её вручную.
 
-  ### Station
+  ### Станция
 
-  [bold]STATION[/bold] shows the callsign currently used by the radio.
+  [bold]СТАНЦИЯ[/bold] показывает позывной, который сейчас использует радиостанция.
 
-  Additional controls include:
+  Дополнительные элементы управления:
 
-  - [bold]OPEN NET DIRECTORY[/bold] - show callsigns currently assigned to friendly stations
-  - [bold]PHONE[/bold] - open the field-telephone directory
+  - [bold]ОТКРЫТЬ СПРАВОЧНИК СЕТИ[/bold] — показать позывные, назначенные сейчас дружественным станциям
+  - [bold]ТЕЛЕФОН[/bold] — открыть справочник полевого телефона
 
-  See [textlink="the AN/PRC-117G" link="AU14CommsANPRC"] for field-phone operation.
+  О работе с полевым телефоном см. [textlink="AN/PRC-117G" link="AU14CommsANPRC"].
 
-  ## Expert faceplate
+  ## Расширенная панель
 
-  The guided panel provides everything required for normal radio operation.
+  Упрощённая панель даёт всё нужное для обычной работы с радиостанцией.
 
-  The [textlink="expert faceplate" link="AU14CommsANPRCExpert"] provides additional control when needed.
+  [textlink="Расширенная панель" link="AU14CommsANPRCExpert"] даёт дополнительное управление, когда оно нужно.
 
-  Advanced functions include:
+  Расширенные функции включают:
 
-  - changing output power
-  - changing waveform
-  - setting a fixed station callsign
-  - entering direct frequencies
-  - enabling power save
-  - enabling EMCON
-  - using priority watch
-  - bridging nets from a staked radio
-  - sending encryption keys over the air
-  - searching for unknown radio nets
-  - locating active jammers
+  - изменение выходной мощности
+  - изменение формы сигнала
+  - установку постоянного позывного станции
+  - ввод прямых частот
+  - включение энергосбережения
+  - включение EMCON
+  - использование приоритетного прослушивания
+  - соединение сетей с закреплённой радиостанции
+  - отправку ключей шифрования по радио
+  - поиск неизвестных радиосетей
+  - определение местоположения активных глушилок
 
-  These functions are optional and are not required for basic AN/PRC operation.
+  Эти функции необязательны и не нужны для базовой работы с AN/PRC.
 </Document>
