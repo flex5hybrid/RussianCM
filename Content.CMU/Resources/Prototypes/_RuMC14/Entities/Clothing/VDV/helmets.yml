@@ -1,0 +1,16 @@
+- type: entity
+  parent: RMCMarineHelmetBase
+  id: RuMCUPPInfantryHelmetVDV
+  name: 6B-VDV helmet
+  description: A lightweight universal helmet for UPP Airborne Troops. Based on the standard SPN helmet, but lighter and with improved field of vision for airborne operations. Solid protection without sacrificing mobility.
+  components:
+  - type: IdentityBlocker
+  - type: Sprite
+    sprite: _RuMC14/Clothing/VDV/helmet/VDV_helmet.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/VDV/helmet/VDV_helmet.rsi
+  - type: CMArmor
+    melee: 25
+    bullet: 20
+    bio: 20
+    explosionArmor: 15

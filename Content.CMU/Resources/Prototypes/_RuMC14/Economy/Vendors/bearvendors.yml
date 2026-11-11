@@ -390,32 +390,34 @@
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/medical_gear.rsi
-  #- type: CMAutomatedVendor
-  #  jobs:
-  #  - AU14JobGOVFORPlatoonCorpsman
-  #  - AU14JobGOVFOROfficerMedical
-  #  - AU14JobGOVFORAuxSupportSynth
-  #  - AU14JobOPFORPlatoonCorpsman
-  #  - AU14JobOPFOROfficerMedical
-  #  - AU14JobOPFORAuxSupportSynth
-  #  sections:
-  #  - name: au14-vendor-section-essential-equipment
-  #    takeAll: CMUEssentialEquipment
-  #    entries:
-  #    - id: AU14VendorBundleCorpsmanEssentials
-  #  - name: au14-vendor-section-medical-pouches
-  #    choices: { CMUPlatoonMedicalPouch: 2 }
-  #    entries:
-  #    - id: RMCPouchAutoinjector
-  #    - id: RMCPouchFirstResponder
-  #    - id: RMCPouchMedical
-  #    - id: RMCPouchSyringeFill
-  #    - id: RMCPouchFirstAidSplintsGauzeOintment
-  #    - id: RMCPouchFirstAidPills
-  #  - name: au14-vendor-section-medical-storage
-  #    choices: { CMUPlatoonMedicalStorage: 1 }
-  #    entries:
-  #    - id: AU14BeltMedicBagUPP
+  - type: CMAutomatedVendor
+    jobs:
+    - AU14JobGOVFORPlatoonCorpsman
+    - AU14JobGOVFOROfficerMedical
+    - AU14JobGOVFORAuxSupportSynth
+    - AU14JobOPFORPlatoonCorpsman
+    - AU14JobOPFOROfficerMedical
+    - AU14JobOPFORAuxSupportSynth
+    sections:
+    - name: au14-vendor-section-essential-equipment
+      takeAll: CMUEssentialEquipment
+      entries:
+      - id: AU14VendorBundleCorpsmanEssentials
+    - name: au14-vendor-section-medical-pouches
+      choices: { CMUPlatoonMedicalPouch: 2 }
+      entries:
+      - id: RMCPouchAutoinjector
+      - id: RMCPouchFirstResponder
+      - id: RuMCUPPPouchIFAK
+      - id: RMCPouchSyringeFill
+      - id: RMCPouchFirstAidSplintsGauzeOintment
+      - id: RMCPouchFirstAidPills
+    - name: au14-vendor-section-medical-storage
+      choices: { CMUPlatoonMedicalStorage: 1 }
+      entries:
+      - id: RuMCUPPNavalInfantryBeltMedic
+        recommended: true
+      - id: AU14BeltMedicBagUPP
   #  - name: au14-vendor-section-general-medical-supplies
   #    entries:
   #    - id: AU14HemostaticGauzePacket

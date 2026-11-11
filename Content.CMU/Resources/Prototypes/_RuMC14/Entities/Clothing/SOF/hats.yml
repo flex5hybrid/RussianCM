@@ -1,0 +1,11 @@
+- type: entity
+  parent: CMHeadCap
+  id: RuMCHeadBeretSSO
+  name: red SOF beret
+  description: Special forces take it. If you see it, it means the situation has reached its peak.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/SOF/beret/redBeret.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/SOF/beret/redBeret.rsi
+  - type: Appearance

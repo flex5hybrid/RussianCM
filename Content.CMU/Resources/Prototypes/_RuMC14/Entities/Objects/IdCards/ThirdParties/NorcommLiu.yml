@@ -2,7 +2,7 @@
   parent: CMIDCardBase
   categories: [ HideSpawnMenu ]
   id: RuCMIDCardUPPNorcommChief
-  name: UPP Liquidator Commander ID card
+  name: UPP Norcomm Chief ID card
   components:
   - type: PresetIdCard
     job: RuMCUPPNorcommChief
@@ -14,7 +14,7 @@
   parent: CMIDCardBase
   id: RuCMIDCardUPPNorcommSpec
   categories: [ HideSpawnMenu ]
-  name: UPP Liquidator Machinegunner ID card
+  name: UPP Norcomm Spec ID card
   components:
   - type: PresetIdCard
     job: RuMCUPPNorcommSpec
@@ -26,7 +26,7 @@
   parent: CMIDCardBase
   id: RuCMIDCardUPPNorcommTech
   categories: [ HideSpawnMenu ]
-  name: UPP Liquidator Rifleman ID card
+  name: UPP Norcomm Tech ID card
   components:
   - type: PresetIdCard
     job: RuMCUPPNorcommTech
@@ -36,12 +36,36 @@
 
 - type: entity
   parent: CMIDCardBase
-  id: RuCMIDCardUPPNorcommDoctor
   categories: [ HideSpawnMenu ]
-  name: UPP Norcomm Liu Doctor ID card
+  id: RuCMIDCardUPPNorcommDoctor
+  name: UPP Norcomm Doctor ID card
   components:
   - type: PresetIdCard
     job: RuMCUPPNorcommDoctor
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPNorcommParamedic
+  categories: [ HideSpawnMenu ]
+  name: UPP Norcomm Paramedic ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPNorcommParamedic
+  - type: ItemIFF
+    factions:
+    - GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: RuCMIDCardUPPNorcommMedic
+  categories: [ HideSpawnMenu ]
+  name: UPP Norcomm Medic ID card
+  components:
+  - type: PresetIdCard
+    job: RuMCUPPNorcommMedic
   - type: ItemIFF
     factions:
     - GOVFOR

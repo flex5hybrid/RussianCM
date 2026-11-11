@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPLiquidatorComander
   roundSide: ThirdParty
-  roundForce: UPP
+  roundForce: UPP_spetsnaz
   roundRole: RuMCUPPLiquidatorComander
   roundComponents:
   - type: TacticalMapIcon

@@ -105,6 +105,17 @@
           - Flare
 
 - type: entity
+  parent: AU14BeltMedicBagProdigy
+  id: RuMCUPPNavalInfantryBeltMedic
+  name: RD-169-Medical
+  description: A standard-issue medical belt adopted by UPP forces. Designed to carry essential medical supplies, trauma kits, and auto-injectors into the field. Trusted by combat medics across the Union.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/UPP/belt/machinegunner.rsi
+  - type: Clothing
+    sprite: _RuMC14/Clothing/UPP/belt/machinegunner.rsi
+
+- type: entity
   parent: RMCBeltMachineGunner
   id: RuMCUPPNavalInfantryBeltMachinegunner
   name: RD-154-Machinegunner

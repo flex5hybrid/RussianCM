@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPVDVCommander
   roundSide: ThirdParty
-  roundForce: UPP
+  roundForce: UPP_spetsnaz
   roundRole: RuMCUPPVDVCommander
   roundComponents:
   - type: TacticalMapIcon
@@ -60,33 +60,9 @@
   ranks:
     RMCRankCivilian: []
   chevrons:
-    UPP_Plutonowy:
-      entity: AU14ChevronUPPNIPlutonowy
-      requirements: []
-    UPP_Sergeant:
-      entity: AU14ChevronUPPNISergeant
-      requirements:
-      - !type:RoleTimeRequirement
-        role: RuMCJobUPPVDVCommander
-        time: 1800 # 0.5 hours
-    UPP_SeniorSergeant:
-      entity: AU14ChevronUPPNISeniorSergeant
-      requirements:
-      - !type:RoleTimeRequirement
-        role: RuMCJobUPPVDVCommander
-        time: 5400 # 1.5 hours
-    UPP_JuniorLieutenant:
-      entity: AU14ChevronUPPNIJuniorLieutenant
-      requirements:
-      - !type:RoleTimeRequirement
-        role: RuMCJobUPPVDVCommander
-        time: 7200 # 2 hours
     UPP_Lieutenant:
       entity: AU14ChevronUPPNILieutenant
-      requirements:
-      - !type:RoleTimeRequirement
-        role: RuMCJobUPPVDVCommander
-        time: 10800 # 3 hours
+      requirements: []
   spawnMenuRoleName: VDV Commander
   startingGear: RuMCGearUPPVDVCommander
   greeting: rumc-vdv-greeting

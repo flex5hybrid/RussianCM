@@ -36,3 +36,42 @@
     # same kit as AU14PouchIFAKFill, keep them in step
     - id: CMSheetMetal
     - id: CMSheetMetal
+
+- type: entity
+  parent: RuMCHeadCapNoLu
+  id: RuMCHeadCapNoLuFill
+  components:
+  - type: StorageFill
+    contents:
+    - id: RuMCUPPHelmetGarbRedStar
+
+- type: entity
+  parent: RuMCUPPNavalInfantryBeltMedic
+  id: RuMCUPPNavalInfantryBeltMedicFill
+  name: RD-169-Medical
+  description: A standard-issue medical belt adopted by UPP forces. Designed to carry essential medical supplies, trauma kits, and auto-injectors into the field. Trusted by combat medics across the Union.
+  components:
+  - type: StorageFill
+    contents:
+    - id: CMPillCanisterDexalin
+    - id: CMPillCanisterDylovene
+    - id: CMPillCanisterInaprovaline
+    - id: CMPillCanisterKelotane
+    - id: CMPillCanisterBicaridine
+    - id: CMPillCanisterTricordrazine
+    - id: RMCPillCanisterIron
+    - id: AU14PillCanisterCryoxadone
+    - id: AU14PillCanisterLeporazine
+    - id: AU14PillCanisterImidazoline
+    - id: AU14PillCanisterEthylredoxrazine
+    - id: AU14PillCanisterParacetamol
+    - id: AU14PillCanisterTramadol
+    - id: AU14PillCanisterOxycodone
+    - id: AU14PillCanisterCardiocaine
+    - id: AU14PillCanisterHepatocytin
+    - id: AU14PillCanisterNephronate
+    - id: AU14PillCanisterOsteoCalc
+    - id: AU14PillCanisterPulmovine
+    - id: CMEpinephrineAutoInjector
+    - id: AU14NaloxoneAutoInjector
+    - id: CMHealthAnalyzer

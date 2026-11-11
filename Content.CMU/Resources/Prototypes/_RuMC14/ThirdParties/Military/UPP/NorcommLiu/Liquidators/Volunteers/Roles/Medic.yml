@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPLiquidatorMedic
   roundSide: ThirdParty
-  roundForce: UPP
+  roundForce: UPP_spetsnaz
   roundRole: RuMCUPPLiquidatorMedic
   roundComponents:
   - type: TacticalMapIcon
@@ -106,7 +106,7 @@
     jumpsuit: CMJumpsuitSPPEngi
     shoes: RMCBootsSPPFilled
     head: RMCHardhatOrange
-    belt: AU14BeltMedicBagProdigyFilled
+    belt: RuMCUPPNavalInfantryBeltMedicFill
     pocket1: AU14PouchIFAKFill
     pocket2: AU14PouchIFAKFill
     back: CMUUPPNavalInfantrySatchelFullMarksman

@@ -24,6 +24,24 @@
     },
     {
       "name": "stock_Mini-on"
+    },
+    {
+      "name": "stock_AK7074"
+    },
+    {
+      "name": "stock_AK7074-on"
+    },
+    {
+      "name": "stock_PKM"
+    },
+    {
+      "name": "stock_PKM-on"
+    },
+    {
+      "name": "stock_PLM"
+    },
+    {
+      "name": "stock_PLM-on"
     }
   ]
 }

@@ -1,0 +1,145 @@
+- type: job
+  parent: CMJobBase
+  id: RuMCUPPNorcommParamedic
+  roundSide: ThirdParty
+  roundForce: UPP_spetsnaz
+  roundRole: RuMCUPPNorcommParamedic
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: spp_pvt
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuMCSquadNorcommLiu
+  - type: Skills
+    skills:
+      RMCSkillCqc: 2
+      RMCSkillEngineer: 1
+      RMCSkillFirearms: 1
+      RMCSkillMedical: 4
+      RMCSkillSurgery: 4
+      RMCSkillMeleeWeapons: 1
+      RMCSkillPolice: 1
+      RMCSkillFireman: 1
+      RMCSkillVehicles: 1
+      RMCSkillEndurance: 2
+  - type: JobPrefix
+    prefix: rumc-job-prefix-rifleman
+  - type: MarineOrders
+  - type: RMCTrackable
+  - type: RMCPointing
+  - type: Language
+    spokenLanguages:
+    - Polish
+    - English
+    - Russian
+    - Spanish
+    - Mandarin
+    - German
+    understoodLanguages:
+    - Polish
+    - English
+    - Russian
+    - Spanish
+    - Mandarin
+    - German
+    currentLanguage: Russian
+    defaultLanguage: Russian
+
+  name: Paramedic
+  description: Paramedic
+  playTimeTracker: RuMCJobUPPNorcommParamedic
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    UPP_Plutonowy:
+      entity: AU14ChevronUPPNIPlutonowy
+      requirements: []
+    UPP_Sergeant:
+      entity: AU14ChevronUPPNISergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommParamedic
+        time: 1800 # 0.5 hours
+    UPP_SeniorSergeant:
+      entity: AU14ChevronUPPNISeniorSergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommParamedic
+        time: 5400 # 1.5 hours
+    UPP_JuniorLieutenant:
+      entity: AU14ChevronUPPNIJuniorLieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommParamedic
+        time: 7200 # 2 hours
+    UPP_Lieutenant:
+      entity: AU14ChevronUPPNILieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommParamedic
+        time: 10800 # 3 hours
+  spawnMenuRoleName: Paramedic
+  startingGear: RuMCGearUPPNorcommParamedic
+  greeting: rumc-Paramedic-greeting
+  icon: "RuMCJobIconUPPNorcommParamedic"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforSquad
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicUPPBEAR
+  id: RuMCJobUPPNorcommParamedic
+  name: Paramedic
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuMCSquadNorcommLiu
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Paramedic
+    description: You are part of the UPP Norcomm Lui team! Your task is to report to the ambassador’s location. Not a step back!
+    job: RuMCUPPNorcommParamedic
+    raffle:
+      settings: short
+
+- type: startingGear
+  parent: RuMCGearUPPBEARbase
+  id: RuMCGearUPPNorcommParamedic
+  equipment:
+    id: RuCMIDCardUPPNorcommParamedic
+    outerClothing: RuMCUPPArmorNoLu_Standard
+    jumpsuit: RuMCFatiguesNoLu
+    shoes: RMCBootsSPPFilled
+    head: RuMCHeadCapNoLuFill
+    belt: RuMCUPPNavalInfantryBeltMedicFill
+    eyes: RMCGlassesMedicalHUDGlasses
+    pocket1: AU14PouchIFAKFill
+    pocket2: RuMCUPPPouchConstructionFill
+    back: RuMCUPPNavalInfantrySatchel
+    ears: RuMCHeadsetNorcommLiu
+    suitstorage: AU14BeltHolsterPistolUPPFull
+  storage:
+    back:
+    - RuMCirpUPP
+    - AU14GrenadeSmokeUPP
+    - AU14CMDefibrillator
+    - CMSurgicalCaseFilled
+    - CMPortableSurgicalBedSpawnFolded
+    - ClothingHandsGlovesNitrile
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconUPPNorcommParamedic
+  icon:
+    sprite: _RuMC14/Interface/upp_icons.rsi
+    state: UPP-Norcomm_Paramedic
+
+- type: playTimeTracker
+  id: RuMCJobUPPNorcommParamedic

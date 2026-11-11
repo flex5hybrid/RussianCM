@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPNorcommChief
   roundSide: ThirdParty
-  roundForce: UPP
+  roundForce: UPP_spetsnaz
   roundRole: RuMCUPPNorcommChief
   roundComponents:
   - type: TacticalMapIcon
@@ -102,7 +102,7 @@
     allowSpeech: true
     allowMovement: true
     name: ChiefEngineer
-    description: You are part of a UPP Norcomm Lui team! Your job is to burn every biological threat on the colony to the ground. Not one step back!
+    description: You are part of the UPP Norcomm Lui team! Your task is to report to the ambassador’s location. Not a step back!
     job: RuMCUPPNorcommChief
     raffle:
       settings: short
@@ -115,11 +115,12 @@
     outerClothing: RuMCUPPArmorNoLu_Heavy
     jumpsuit: RuMCFatiguesNoLu
     shoes: RMCBootsSPPFilled
-    head: RuMCHeadCapNoLu
+    head: RuMCHeadCapNoLuFill
     belt: AU14BeltUtilityFilled
+    eyes: RMCWeldingGogglesSuperior
     pocket1: AU14PouchIFAKFill
     pocket2: RuMCUPPPouchConstructionFill
-    back: RuMCUPPNavalInfantrySatchel
+    back: RuMCUPPNavalInfantryBackpack
     ears: RuMCHeadsetNorcommLiu
     suitstorage: AU14BeltHolsterPistolUPPFull
   storage:
@@ -129,7 +130,6 @@
     - CMSheetPlasteel50
     - AU14GrenadeHighExplosiveUPP
     - AU14GrenadeHighExplosiveUPP
-    - RMCWeldingGogglesSuperior
   inhand:
     - AU14GlovesCBRNUPP
 

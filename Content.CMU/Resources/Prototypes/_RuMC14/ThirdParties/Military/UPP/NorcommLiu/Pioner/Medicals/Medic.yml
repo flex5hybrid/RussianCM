@@ -1,0 +1,142 @@
+- type: job
+  parent: CMJobBase
+  id: RuMCUPPNorcommMedic
+  roundSide: ThirdParty
+  roundForce: UPP_spetsnaz
+  roundRole: RuMCUPPNorcommMedic
+  roundComponents:
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: spp_pvt
+  - type: AssignSquad
+    whitelist:
+      tags:
+      - RuMCSquadNorcommLiu
+  - type: Skills
+    skills:
+      RMCSkillFirearms: 1
+      RMCSkillMedical: 2
+      RMCSkillSurgery: 3
+      RMCSkillMeleeWeapons: 1
+      RMCSkillFireman: 1
+      RMCSkillVehicles: 1
+      RMCSkillEndurance: 1
+  - type: JobPrefix
+    prefix: rumc-job-prefix-rifleman
+  - type: MarineOrders
+  - type: RMCTrackable
+  - type: RMCPointing
+  - type: Language
+    spokenLanguages:
+    - Polish
+    - English
+    - Russian
+    - Spanish
+    - Mandarin
+    - German
+    understoodLanguages:
+    - Polish
+    - English
+    - Russian
+    - Spanish
+    - Mandarin
+    - German
+    currentLanguage: Russian
+    defaultLanguage: Russian
+
+  name: Medic
+  description: Medic
+  playTimeTracker: RuMCJobUPPNorcommMedic
+  ranks:
+    RMCRankCivilian: []
+  chevrons:
+    UPP_Plutonowy:
+      entity: AU14ChevronUPPNIPlutonowy
+      requirements: []
+    UPP_Sergeant:
+      entity: AU14ChevronUPPNISergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommMedic
+        time: 1800 # 0.5 hours
+    UPP_SeniorSergeant:
+      entity: AU14ChevronUPPNISeniorSergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommMedic
+        time: 5400 # 1.5 hours
+    UPP_JuniorLieutenant:
+      entity: AU14ChevronUPPNIJuniorLieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommMedic
+        time: 7200 # 2 hours
+    UPP_Lieutenant:
+      entity: AU14ChevronUPPNILieutenant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: RuMCJobUPPNorcommMedic
+        time: 10800 # 3 hours
+  spawnMenuRoleName: Medic
+  startingGear: RuMCGearUPPNorcommMedic
+  greeting: rumc-Medic-greeting
+  icon: "RuMCJobIconUPPNorcommMedic"
+  joinNotifyCrew: false
+  supervisors: au14-job-supervisors-govfor
+  accessGroups:
+  - AU14GovforSquad
+  hidden: false
+
+- type: entity
+  parent: RuMCBaseMobSpeciesOrganicUPPBEAR
+  id: RuMCJobUPPNorcommMedic
+  name: Medic
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRoleApplySpecial
+    squad: RuMCSquadNorcommLiu
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Medic
+    description: You are part of the UPP Norcomm Lui team! Your task is to report to the ambassador’s location. Not a step back!
+    job: RuMCUPPNorcommMedic
+    raffle:
+      settings: short
+
+- type: startingGear
+  parent: RuMCGearUPPBEARbase
+  id: RuMCGearUPPNorcommMedic
+  equipment:
+    id: RuCMIDCardUPPNorcommMedic
+    outerClothing: RMCOuterClothingExternalWebbingBrownFull
+    jumpsuit: RuMCFatiguesNoLu
+    shoes: RMCBootsSPPFilled
+    head: RuMCHeadCapNoLuFill
+    belt: RuMCUPPNavalInfantryBeltMedicFill
+    eyes: RMCGlassesMedicalHUDGlasses
+    pocket1: AU14PouchIFAKFill
+    pocket2: RuMCUPPPouchConstructionFill
+    back: RuMCUPPNavalInfantrySatchel
+    ears: RuMCHeadsetNorcommLiu
+    suitstorage: AU14BeltHolsterPistolUPPFull
+  storage:
+    back:
+    - RuMCirpUPP
+    - AU14GrenadeSmokeUPP
+    - AU14CMDefibrillator
+    - CMSurgicalCaseFilled
+    - CMPortableSurgicalBedSpawnFolded
+    - ClothingHandsGlovesNitrile
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconUPPNorcommMedic
+  icon:
+    sprite: _RuMC14/Interface/upp_icons.rsi
+    state: UPP-Norcomm_Medic
+
+- type: playTimeTracker
+  id: RuMCJobUPPNorcommMedic
