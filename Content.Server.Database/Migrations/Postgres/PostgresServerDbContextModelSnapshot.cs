@@ -2346,6 +2346,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("yautja_profile");
 
+                    b.Property<string>("SelectedDonorCape")
+                        .HasColumnType("text")
+                        .HasColumnName("selected_donor_cape");
+
                     b.HasKey("Id")
                         .HasName("PK_profile");
 
