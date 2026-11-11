@@ -2,6 +2,8 @@
   id: AUPlanetCorsatStation
   name: Corsat Station
   components:
+  - type: CMUColonyLanguage
+    defaultLanguage: English
   - type: RMCPlanetMapPrototype
     votename: "Corsat Station"
     mapId: aucorsat
@@ -18,7 +20,6 @@
     - HAZOPS
     - WEYU
     platoonsOpfor:
-    - ProdigySF
     - VAIPO
     - LACN
     defaultgovfor: WEYU

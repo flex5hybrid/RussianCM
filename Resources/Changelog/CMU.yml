@@ -18453,5 +18453,218 @@ Entries:
   url: https://github.com/flex5hybrid/RussianCM/pull/612
   labels:
   - XL
+- author: TheHellFireo
+  changes:
+  - message: Xenos can destrain through the evolution menu, with a 30-minute cooldown
+      after each successful use.
+    type: Add
+  id: 1073
+  time: '2026-11-08T15:35:49.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2539
+- author: TheHellFireo
+  changes:
+  - message: Fixed RMC Actions sometimes selecting a hiveless xeno variant under a
+      normal caste button.
+    type: Admin
+  id: 1074
+  time: '2026-11-08T15:57:36.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2540
+- author: TheHellFireo
+  changes:
+  - message: Added craftable inserter arms with moving joints, flexible cables and
+      visible carried items for factory assembly lines.
+    type: Add
+  - message: Electrolyzers now separate their products into dedicated outlets instead
+      of pumping out input water.
+    type: Fix
+  - message: Default ASRS platforms now pay the shared account for exports, including
+      oil barrels.
+    type: Fix
+  id: 1075
+  time: '2026-11-08T16:00:25.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2538
+- author: TheHellFireo
+  changes:
+  - message: Reduce avoidable server allocation during gameplay and round cleanup.
+    type: Fix
+  - message: Correct the Charger strain's return-to-caste prototype reference.
+    type: Fix
+  - message: Report unavailable allocation measurements accurately.
+    type: Code
+  id: 1076
+  time: '2026-11-08T19:08:41.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2543
+- author: TheHellFireo
+  changes:
+  - message: Keep Z-level visibility probes stable when changing parents on the same
+      map.
+    type: Fix
+  - message: Reduce delays processing server inputs during network send bursts and
+      simulation catch-up.
+    type: Fix
+  id: 1077
+  time: '2026-11-09T03:47:56.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2545
+- author: TheHellFireo
+  changes:
+  - message: Reduce server tick overhead and incoming packet delays, and prevent stale
+      NPC melee targets from interrupting AI updates.
+    type: Fix
+  id: 1078
+  time: '2026-11-09T03:48:30.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2547
+- author: KeiKiyomi
+  changes:
+  - message: Added pill recipe sheets and a machine that loads listed chemicals and
+      produces the formulation in a beaker.
+    type: Add
+  id: 1079
+  time: '2026-11-10T10:52:10.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2559
+- author: Kadeo64
+  changes:
+  - message: Double eggs in clearance X crate removed. We-Yu has seen fit to actually
+      look over the corpses of the Queens they've killed for these eggs, too.
+    type: Tweak
+  id: 1080
+  time: '2026-11-10T10:54:14.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2557
+- author: ILoveDespoiler
+  changes:
+  - message: Added a brand new Neomorph Strain, the Healer Haze. Sprites by Miyugi!
+    type: Add
+  - message: Adjusted some stats of regular Haze.
+    type: Tweak
+  id: 1081
+  time: '2026-11-10T10:54:46.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2546
+- author: KeiKiyomi
+  changes:
+  - message: Synths can still speak while decapped
+    type: Add
+  - message: Synths can now survive being delimbed
+    type: Tweak
+  - message: Queen and King gib now only rip off a synths legs (like in the movie)
+      but their legs cannot be reattatched ever again.
+    type: Tweak
+  - message: Synths no longer scream when they get hurt, only when they get gibbed
+    type: Tweak
+  id: 1082
+  time: '2026-11-10T10:55:26.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2544
+- author: rokudara-sen
+  changes:
+  - message: Yautja hunt prey no longer spawn with irradiated ammo or working night
+      vision. Their optics are fried and tell them so.
+    type: Fix
+  - message: The hunter ship now stocks working hunting traps and strange rope.
+    type: Fix
+  - message: Players whose job has no spawn point on the map now spawn at a sensible
+      fallback instead of a random leftover spawner.
+    type: Fix
+  - message: Chain whips can be unwrapped from the chain gauntlet, and right click
+      with the gauntlet shoves so the throw finisher works.
+    type: Fix
+  id: 1083
+  time: '2026-11-10T10:56:07.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2537
+- author: IntelligenceOfficerArthur
+  changes:
+  - message: 'The paramilitary element is now three teams: GRU Spetsnaz, CIA SAD and
+      the SAS, each with its own equipment rack.'
+    type: Add
+  - message: The CIA SAD rack now has a radio jammer, a Fulton extraction kit and
+      a flare pouch.
+    type: Add
+  - message: The SAS can pick the L83A2 or the MP5SD6, the CIA the XM4RA1 SOPMOD,
+      and the GRU now carries the AK-4047.
+    type: Add
+  - message: The SAS rack has balaclavas, the L22 gas mask, goggles and the M1A1 visor;
+      the CIA rack has goggles and gloves.
+    type: Add
+  - message: The Case Officer now carries a briefcase cuffed to his wrist. Only its
+      key unlocks it, wire cutters can cut it off, and the key can be swallowed.
+    type: Add
+  - message: The GRU Altyn now deploys from the UH7 GRU armor like a hardsuit helmet.
+    type: Fix
+  - message: The GRU sedative now actually puts targets to sleep.
+    type: Fix
+  - message: The M1A1 multi-spectrum visor whites out and blinds its wearer for 10
+      seconds near a lit flare.
+    type: Tweak
+  id: 1084
+  time: '2026-11-10T10:57:27.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2548
+- author: TheHellFireo
+  changes:
+  - message: Reduce server work in short ray queries, crowded-player visibility searches
+      and physics bookkeeping.
+    type: Code
+  - message: Prevent stale briefcase links and lobby shutdown errors.
+    type: Fix
+  id: 1085
+  time: '2026-11-10T19:07:07.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2567
+- author: ILoveDespoiler
+  changes:
+  - message: Fixed HEAP being in regular govfor vendors
+    type: Fix
+  id: 1086
+  time: '2026-11-11T06:32:05.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2570
+- author: troytroy400
+  changes:
+  - message: You can now edit your character from the escape menu while ghosted.
+    type: Add
+  - message: English is now a language trait you pick like any other, instead of a
+      language everyone gets for free.
+    type: Add
+  - message: Each colony now has its own default language.
+    type: Add
+  - message: Colony, corporate and CLF characters, including CLF reinforcements, now
+      default to the colony's language.
+    type: Add
+  - message: Platoons now have a default language. On Insurgency, the GOVFOR CO, XO,
+      staff officers, intel officers, fireteam leaders and squad leaders can speak
+      the colony's language.
+    type: Add
+  - message: Ambassadors now speak their allegiance's languages as well as the colony's.
+    type: Add
+  - message: Civilian third parties now speak the colony's language. Migrants also
+      speak the language of the faction that called them.
+    type: Add
+  - message: New ambassador call-ins. Embassy Staff (all ambassadors), Trade Delegation
+      (CCA, ICSC), Labor Union Organizers (CCA, UPP), Archaeology Team (UA, TWE) and
+      FEMA Disaster Response Team (UA).
+    type: Add
+  - message: Add more mainly unused call-ins for ambassador/corporate. UPP gets the
+      Militsiya patrol. UA gets the CMB patrol and CMB Tactical Team. TWE gets the
+      NSPA Tactical Team. ICSC gets Missionaries, Returning Civilians and a TV News
+      Crew. CCA gets Missionaries. Every ambassador except corporate can now call
+      in Migrants.
+    type: Add
+  - message: Colony administration can now call in a TV News Crew, CMB Parolee Transport,
+      Working Joes and Migrants. Corporate can call in WY Executives, WY Corporate
+      Security and Working Joes.
+    type: Add
+  - message: Third parties are now told who called them in and for which faction.
+    type: Add
+  - message: Removed the Prodigy Security Forces platoon. Prodigy can no longer be
+      picked as a character allegiance.
+    type: Remove
+  - message: Removed GROM, VAIPO, VAISP, RMC RRT, SAS, WY PMC, BEAR and the Liquidators
+      call-ins from the ambassador/corporate consoles.
+    type: Remove
+  - message: BEAR and SAS no longer spawns at random.
+    type: Tweak
+  - message: Ambassador consoles now start with 1000 and no longer generate money
+      on their own. City income, mission rewards and cash still add to them.
+    type: Tweak
+  - message: Console call-ins are now admin-logged and announced to admins, with who
+      called them, for which faction and from which console.
+    type: Admin
+  id: 1087
+  time: '2026-11-11T06:43:49.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2575
 Name: CMU
 Order: -1

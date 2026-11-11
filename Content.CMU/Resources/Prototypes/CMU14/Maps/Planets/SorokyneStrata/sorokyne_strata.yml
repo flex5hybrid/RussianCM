@@ -2,6 +2,8 @@
   id: AUPlanetSorokyne
   name: Sorokyne Strata
   components:
+  - type: CMUColonyLanguage
+    defaultLanguage: Mandarin
   - type: RMCPlanetMapPrototype
     votename: "Sorokyne Strata"
     mapId: au14sorokyne
@@ -12,7 +14,6 @@
     platoonsGovfor:
     - UPP
     - BEAR
-    - ProdigySF
     - LACN
     - CMBCIU
     platoonsOpfor:
@@ -37,9 +38,6 @@
     - cultistThirdParty
     - UPPGROM
     - UPPGROMAlt
-    - CHTORM_PMC_BEAR
-    - GROZA_PMC_BEAR
-    - SKALA_PMC_BEAR
     - UPPGROMAlt2
     - CLFSurvsBig
     - CLFSurvsMedium
