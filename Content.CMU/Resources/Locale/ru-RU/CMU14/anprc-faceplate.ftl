@@ -1,8 +1,8 @@
-# AN/PRC-117G expert view (the faceplate). Everything the set's glass, lamps and
-# engravings say. The glass is a fixed-width character display: keep translations
-# short and in capitals where the English is, or they get clipped at the edge.
-# The keypad's letter groups (ABC1, DEF2, ...) are not here on purpose - callsign
-# and label entry is keyed on them.
+# Экспертная панель AN/PRC-117G. Все, что можно увидеть на стекле, лампах и 
+# гравировках. Стекло представляет собой дисплей с символами фиксированной ширины: старайтесь, чтобы переводы 
+# были короткими и набраны заглавными буквами, как и английский текст, иначе они будут обрезаны по краям.
+# Буквенные группы на клавиатуре (ABC1, DEF2, ...) расположены не случайно — на них 
+# вводятся позывные и названия.
 
 ## Общие слова
 anprc-fp-on = ВКЛ
