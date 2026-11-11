@@ -2,6 +2,8 @@
   id: AUPlanetLV624
   name: LV624
   components:
+  - type: CMUColonyLanguage
+    defaultLanguage: English
   - type: RMCPlanetMapPrototype
     votename: "LV624 Green Hell"
     mapId: LV624
@@ -19,7 +21,6 @@
     platoonsOpfor:
     - UPP
     - BEAR
-    - ProdigySF
     - VAIPO
     defaultgovfor: USCM
     defaultopfor: UPP

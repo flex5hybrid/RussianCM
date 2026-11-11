@@ -213,19 +213,21 @@ public sealed partial class AdminConsoleSystem : EntitySystem
             return;
 
         var thirdPartyId = msg.ThirdPartyId;
-        _reinforcements.Request(msg.Actor,
+        var actor = msg.Actor; // CMU14: the caller is named in the admin log and told to the party
+        _reinforcements.Request(actor,
             Loc.GetString("rumc-reinforcement-side-colony-admin"),
-            call => CallThirdParty(uid, thirdPartyId, call));
+            call => CallThirdParty(uid, actor, thirdPartyId, call));
     }
 
-    private void CallThirdParty(EntityUid uid, string thirdPartyId, RuMCReinforcementCall call)
+    private void CallThirdParty(EntityUid uid, EntityUid actor, string thirdPartyId, RuMCReinforcementCall call)
     {
         if (!TryComp(uid, out AdminConsoleComponent? comp) ||
             !TryGetThirdPartyCall(comp, thirdPartyId, out var cost, out var partyProto, out var spawnProto))
             return;
         // RuMC edit end
 
-        _thirdParty.SpawnThirdParty(partyProto, spawnProto, false, call: call); // RuMC edit
+        _thirdParty.SpawnThirdParty(partyProto, spawnProto, false, call: call, // RuMC edit: call
+            caller: new ThirdPartyCaller(Name(actor), Loc.GetString("cmu-third-party-caller-colony-admin"), Actor: actor, Console: uid));
 
         _colonyBudget.AddToBudget(-cost);
 

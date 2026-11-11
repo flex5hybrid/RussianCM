@@ -493,7 +493,8 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                 if (!_worldMarket.TrySpendPoints(comp.FactionName, _worldMarket.OfferCost(comp.FactionName, offer)))
                     return;
 
-                _thirdParty.SpawnThirdParty(party, spawn, false, call: call); // RuMC edit
+                _thirdParty.SpawnThirdParty(party, spawn, false, call: call, // RuMC edit: call
+                    caller: new ThirdPartyCaller(Name(msg.Actor), comp.FactionName, comp.Languages, msg.Actor, uid));
                 break;
 
             case MotherOfferGroup.Food:
@@ -692,7 +693,8 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
             return;
 
         var thirdPartyId = msg.ThirdPartyId;
-        _reinforcements.Request(msg.Actor, GetReinforcementSide(uid), call => CallThirdParty(uid, thirdPartyId, call));
+        var actor = msg.Actor; // CMU14: the caller is named in the admin log and told to the party
+        _reinforcements.Request(actor, GetReinforcementSide(uid), call => CallThirdParty(uid, actor, thirdPartyId, call));
     }
 
     private bool CanOrderParty(AmbassadorConsoleComponent comp, WorldMotherOfferPrototype offer, MotherOrderMessage msg)
@@ -729,14 +731,15 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
         };
     }
 
-    private void CallThirdParty(EntityUid uid, string thirdPartyId, RuMCReinforcementCall call)
+    private void CallThirdParty(EntityUid uid, EntityUid actor, string thirdPartyId, RuMCReinforcementCall call)
     {
         if (!TryComp(uid, out AmbassadorConsoleComponent? comp) ||
             !TryGetThirdPartyCall(comp, thirdPartyId, out var cost, out var partyProto, out var spawnProto))
             return;
         // RuMC edit end
 
-        _thirdParty.SpawnThirdParty(partyProto, spawnProto, false, call: call); // RuMC edit
+        _thirdParty.SpawnThirdParty(partyProto, spawnProto, false, call: call, // RuMC edit: call
+            caller: new ThirdPartyCaller(Name(actor), comp.FactionName, comp.Languages, actor, uid));
 
         comp.Budget -= cost;
         comp.CalledParties.Add(thirdPartyId); // RuMC edit

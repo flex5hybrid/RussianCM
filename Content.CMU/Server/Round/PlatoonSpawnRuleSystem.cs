@@ -14,7 +14,6 @@ using Robust.Shared.Log;
 using Robust.Shared.Prototypes;
 using Content.Server.GameTicking.Rules;
 using Content.Server.Maps;
-using Content.Server.Station.Systems; // RuMC edit
 using Content.Shared.Access;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
@@ -55,7 +54,6 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
     [Dependency] private MultiDeckDropshipSystem _multiDeck = default!;
     [Dependency] private CameraNetworkSystem _cameraNetworks = default!;
     [Dependency] private CMUSharedZLevelsSystem _zLevels = default!;
-    [Dependency] private StationSystem _stationSystem = default!; // RuMC edit
 
     private readonly ISawmill _sawmill = Logger.GetSawmill("cmu.platoon");
 
@@ -776,36 +774,16 @@ public sealed partial class PlatoonSpawnRuleSystem : GameRuleSystem<PlatoonSpawn
     /// </summary>
     private void TagShipFaction(string faction)
     {
-        // RuMC edit start
-        // Both sides may share one ship map; start from the decks already tagged, not the map-id lookup.
-        var roots = new List<EntityUid>();
-        var tagged = AllEntityQuery<ShipFactionComponent>();
-        while (tagged.MoveNext(out var taggedGrid, out var taggedFaction))
-        {
-            if (!string.Equals(taggedFaction.Faction, faction, StringComparison.OrdinalIgnoreCase) ||
-                TerminatingOrDeleted(taggedGrid) ||
-                _stationSystem.GetOwningStation(taggedGrid) == null)
-                continue;
-
-            roots.Add(taggedGrid);
-        }
-
-        if (roots.Count == 0)
-        {
-            var shipId = faction == "govfor"
-                ? _auRoundSystem.ResolveGovforShip(null)
-                : _auRoundSystem.ResolveOpforShip(null);
-            if (string.IsNullOrEmpty(shipId) || !_auRoundSystem.TryGetLoadedShipGrids(shipId, out var loadedGrids))
-                return;
-
-            roots.AddRange(loadedGrids);
-        }
-        // RuMC edit end
+        var shipId = faction == "govfor"
+            ? _auRoundSystem.ResolveGovforShip(null)
+            : _auRoundSystem.ResolveOpforShip(null);
+        if (string.IsNullOrEmpty(shipId) || !_auRoundSystem.TryGetLoadedShipGrids(shipId, faction, out var grids))
+            return;
 
         // The game-map event contains the main deck; the z-level loader loads the remaining decks separately.
-        var shipGrids = new HashSet<EntityUid>(roots); // RuMC edit
+        var shipGrids = new HashSet<EntityUid>(grids);
         var shipMaps = new HashSet<EntityUid>();
-        foreach (var grid in roots) // RuMC edit
+        foreach (var grid in grids)
         {
             if (TerminatingOrDeleted(grid) || Transform(grid).MapUid is not { } map)
                 continue;
