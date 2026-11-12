@@ -18666,5 +18666,30 @@ Entries:
   id: 1087
   time: '2026-11-11T06:43:49.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2575
+- author: '- add: Русская локализация AN/PRC-117G'
+  time: '2026-11-11T18:35:50Z'
+  changes:
+  - type: Add
+    message: Русская локализация аплинка и штук КАСа
+  - type: Add
+    message: Русская локализация названий руководств
+  - type: Add
+    message: Русская локализация кодекса чести в руководствах
+  - type: Add
+    message: Русская локализация всем медицинским гайдам
+  - type: Add
+    message: Недостающая русская локализация в гайдах по связи
+  - type: Add
+    message: Русская локализация некоторых гражданских гайдов
+  - type: Add
+    message: Русская локализация "Опасностей"
+  - type: Remove
+    message: Удалены лишние ключи локализации
+  id: 1088
+  url: https://github.com/flex5hybrid/RussianCM/pull/616
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Translations'
+  - L
 Name: CMU
 Order: -1
