@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": null,
+  "size": {
+    "x": 16,
+    "y": 16
+  },
+  "states": [
+    {
+      "name": "leader"
+    },
+    {
+      "name": "medic"
+    },
+    {
+      "name": "merc"
+    },
+    {
+      "name": "synth"
+    },
+    {
+      "name": "engi"
+    }
+  ]
+}
