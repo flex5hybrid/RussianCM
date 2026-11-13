@@ -2,10 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Migrations.Operations;
+using Microsoft.Data.Sqlite;
 using Content.Server.Database;
+using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
 
 namespace Content.Tests.Server.Database;
@@ -40,6 +43,57 @@ public sealed class DonorCapeMigrationTest
             Assert.That(CountAddColumnOperations(typeof(SqliteServerDbContext)), Is.EqualTo(1));
             Assert.That(CountAddColumnOperations(typeof(PostgresServerDbContext)), Is.EqualTo(1));
         });
+    }
+
+    [Test]
+    public async Task DatabaseMigratedFromOriginalCapeMigrationKeepsSavedSelection()
+    {
+        await using var connection = new SqliteConnection("Data Source=:memory:");
+        await connection.OpenAsync();
+
+        var options = new DbContextOptionsBuilder<SqliteServerDbContext>()
+            .UseSqlite(connection)
+            .Options;
+        await using var db = new SqliteServerDbContext(options);
+
+        // This is the database state shipped by PR #396. Later migrations must recognize its
+        // original migration ID instead of trying to add selected_donor_cape a second time.
+        await db.Database.MigrateAsync(SqliteMigration);
+
+        var preference = new Preference
+        {
+            UserId = Guid.NewGuid(),
+            SelectedCharacterSlot = 0,
+            AdminOOCColor = "#ffffff",
+        };
+        var profile = new Profile
+        {
+            Slot = 0,
+            CharacterName = "Cape migration test",
+            FlavorText = string.Empty,
+            Age = 25,
+            Sex = "Male",
+            Gender = "Male",
+            Species = "Human",
+            HairName = string.Empty,
+            HairColor = "#000000",
+            FacialHairName = string.Empty,
+            FacialHairColor = "#000000",
+            EyeColor = "#000000",
+            SkinColor = "#000000",
+            ArmorPreference = string.Empty,
+            SelectedDonorCape = "rmc-donor-cape-16",
+        };
+        preference.Profiles.Add(profile);
+        db.Preference.Add(preference);
+        await db.SaveChangesAsync();
+        var profileId = profile.Id;
+
+        await db.Database.MigrateAsync();
+        db.ChangeTracker.Clear();
+
+        var restored = await db.Profile.AsNoTracking().SingleAsync(existing => existing.Id == profileId);
+        Assert.That(restored.SelectedDonorCape, Is.EqualTo("rmc-donor-cape-16"));
     }
 
     private static string[] GetDonorCapeMigrationIds(Type dbContextType)
