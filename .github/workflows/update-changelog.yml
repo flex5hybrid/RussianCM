@@ -82,7 +82,13 @@ jobs:
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           for attempt in 1 2 3; do
             previous=$(git log --first-parent -1 --format=%H --fixed-strings --grep='Auto-update changelog [skip ci]')
-            python3 Tools/update_changelog_parts.py Resources/Changelog/Parts --all --ref HEAD --category "$CHANGELOG_CATEGORY"
+            scan_start="$START_DATE"
+            # Recover the reviewed backlog on the first run from the old collector's last commit.
+            if [[ -z "$scan_start" && "$previous" == "4e8b016e44cced14033496eb01df55d8e4e51a31" ]]; then
+              scan_start="2026-10-31"
+            fi
+            START_DATE="$scan_start" python3 Tools/update_changelog_parts.py Resources/Changelog/Parts \
+              --all --ref HEAD --category "$CHANGELOG_CATEGORY"
             args=()
             if [[ -n "$previous" ]]; then
               args+=(--previous-ref "$previous")
