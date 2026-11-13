@@ -383,8 +383,8 @@ jobs:
       - name: Validate RSIs
         if: fromJSON(needs.source-guards.outputs.assets).rsi
         run: |
-          # CMU14: retain upstream structural checks and recognize the existing donor-cape license.
-          python3 .github/scripts/validate_cmu_rsis.py Resources/ Content.CMU/Resources/
+          # CMU14: retain upstream structural checks, recognize existing asset licenses, and include RUMC assets.
+          python3 .github/scripts/validate_cmu_rsis.py Resources/ Content.CMU/Resources/ Content.RUMC/Resources/
 
   integration-tests:
     name: Testcases / ${{ matrix.lane.label }}

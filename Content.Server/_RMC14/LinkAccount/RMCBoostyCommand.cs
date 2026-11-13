@@ -7,7 +7,7 @@ using Robust.Shared.Console;
 
 namespace Content.Server._RMC14.LinkAccount;
 
-[AdminCommand(AdminFlags.Ban)]
+[AdminCommand(AdminFlags.Host)]
 public sealed partial class RMCBoostyCommand : LocalizedCommands
 {
     [Dependency] private IPlayerLocator _playerLocator = default!;

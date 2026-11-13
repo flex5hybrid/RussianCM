@@ -1,6 +1,7 @@
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Content.Shared._RMC14.DonorCapes;
 using Content.Shared._RMC14.Marines.Squads;
 using Content.Shared._RMC14.NamedItems;
 using Content.Shared._RMC14.Xenonids.Name;
@@ -241,6 +242,9 @@ namespace Content.Shared.Preferences
         public SharedRMCNamedItems NamedItems { get; private set; } = new();
 
         [DataField]
+        public ProtoId<RMCDonorCapePrototype>? SelectedDonorCape { get; private set; }
+
+        [DataField]
         public bool PlaytimePerks { get; private set; } = true;
 
         [DataField]
@@ -353,7 +357,8 @@ namespace Content.Shared.Preferences
             bool hideMetaInformation = false,
             YautjaCharacterProfile? yautjaProfile = null,
             int syntheticGeneration = MinSyntheticGeneration, // CMU14
-            string syntheticModelSuffix = "") // CMU14
+            string syntheticModelSuffix = "", // CMU14
+            ProtoId<RMCDonorCapePrototype>? selectedDonorCape = null) // RuMC14
         {
             Name = name;
             FlavorText = flavortext;
@@ -397,6 +402,7 @@ namespace Content.Shared.Preferences
             Weight = weight;
             Build = build;
             HideMetaInformation = hideMetaInformation;
+            SelectedDonorCape = selectedDonorCape;
         }
 
         private static string NormalizePreferenceGamemode(string? gamemode) // CMU14 Method
@@ -542,7 +548,8 @@ namespace Content.Shared.Preferences
                 other.HideMetaInformation,
                 other.YautjaProfile,
                 other.SyntheticGeneration, // CMU14
-                other.SyntheticModelSuffix) // CMU14
+                other.SyntheticModelSuffix, // CMU14
+                other.SelectedDonorCape) // RuMC14
         {
             TTSVoice = other.TTSVoice;
             // CMU14: Force on Force roles, hijacking, announcements and identification.
@@ -1350,6 +1357,7 @@ namespace Content.Shared.Preferences
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
             if (FlavorText != other.FlavorText) return false;
             if (NamedItems != other.NamedItems) return false;
+            if (SelectedDonorCape != other.SelectedDonorCape) return false;
             if (ArmorPreference != other.ArmorPreference) return false;
             if (PlaytimePerks != other.PlaytimePerks) return false;
             if (XenoPrefix != other.XenoPrefix) return false;
@@ -1442,6 +1450,14 @@ namespace Content.Shared.Preferences
             var configManager = collection.Resolve<IConfigurationManager>();
             var prototypeManager = collection.Resolve<IPrototypeManager>();
             var compFactory = collection.Resolve<IComponentFactory>();
+
+            // RuMC14: drop capes that no longer exist. Subscription tier is checked when the cape is granted,
+            // so a temporarily lost subscription keeps the player's choice.
+            if (SelectedDonorCape is { } donorCape &&
+                !prototypeManager.HasIndex<RMCDonorCapePrototype>(donorCape))
+            {
+                SelectedDonorCape = null;
+            }
 
             if (!prototypeManager.TryIndex(Species, out var speciesPrototype) || speciesPrototype.RoundStart == false)
             {
@@ -1916,6 +1932,7 @@ namespace Content.Shared.Preferences
             hashCode.Add(HelmetFlavorText);
             // cmu edit end
             hashCode.Add(NamedItems);
+            hashCode.Add(SelectedDonorCape);
             hashCode.Add(PlaytimePerks);
             hashCode.Add(XenoPrefix);
             hashCode.Add(XenoPostfix);
@@ -2009,6 +2026,13 @@ namespace Content.Shared.Preferences
         {
             var profile = Clone();
             profile.NamedItems = named;
+            return profile;
+        }
+
+        public HumanoidCharacterProfile WithSelectedDonorCape(ProtoId<RMCDonorCapePrototype>? cape)
+        {
+            var profile = Clone();
+            profile.SelectedDonorCape = cape;
             return profile;
         }
 
