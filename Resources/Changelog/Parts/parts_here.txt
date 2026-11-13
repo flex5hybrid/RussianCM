@@ -1,8 +1,9 @@
-The part YAML takes the following format:
+Changelog parts use the following YAML format:
 
 author: Your_Name_Here
-category: Admin # if left out, falls under the main changelog
+category: CMU # CMU (default), RMC14, Main, Maps, Admin or Rules
 changes:
-  - type: Fix # One of the following: Add, Remove, Tweak, Fix
+  - type: Fix # Add, Remove, Tweak, Fix, Map, Code or Admin
     message: Your change here!
 
+The collector adds the merge time, PR URL and labels to parts from merged PRs.

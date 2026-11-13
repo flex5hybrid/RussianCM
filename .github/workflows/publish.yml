@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       use_changelog:
-        description: Update changelog using default settings? (don't overdo)
+        description: Assemble changelog before packaging
         type: boolean
         default: false
   # schedule:
@@ -23,20 +23,28 @@ jobs:
   changelog:
     uses: ./.github/workflows/update-changelog.yml
     if: inputs.use_changelog == true
-    secrets: inherit
     permissions:
       contents: write
+      pull-requests: read
 
   publish_start:
     name: Start publish
-    # CMU14: Start the build path alongside the optional changelog job.
+    # CMU14 Begin: pin the entire release to the assembled changelog commit.
+    needs: changelog
+    if: >-
+      !cancelled() &&
+      (needs.changelog.result == 'success' || needs.changelog.result == 'skipped')
+    # CMU14 End
     runs-on: ubuntu-latest
     timeout-minutes: 15
     outputs:
       already-published: ${{ steps.start.outputs.already-published }}
+      ref: ${{ steps.checkout.outputs.commit }} # CMU14
     steps:
       - uses: actions/checkout@v7
+        id: checkout # CMU14
         with:
+          ref: ${{ needs.changelog.outputs.commit_hash || github.sha }} # CMU14
           persist-credentials: true
           submodules: false
           sparse-checkout: |
@@ -55,10 +63,10 @@ jobs:
         run: python3 Tools/publish_multi_request.py start
         env:
           PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+          PUBLISH_VERSION: ${{ steps.checkout.outputs.commit }} # CMU14
 
   package:
     name: Package ${{ matrix.name }}
-    # CMU14: Packaging can proceed while changelogs are still being generated.
     needs: publish_start
     if: >-
       always() &&
@@ -83,6 +91,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
+          ref: ${{ needs.publish_start.outputs.ref }} # CMU14
           persist-credentials: true
           submodules: false
 
@@ -150,6 +159,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
+          ref: ${{ needs.publish_start.outputs.ref }} # CMU14
           submodules: false
           sparse-checkout: Tools
 
@@ -164,22 +174,22 @@ jobs:
         run: python3 Tools/publish_multi_request.py --upload-workers 1 upload release/*.zip
         env:
           PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+          PUBLISH_VERSION: ${{ needs.publish_start.outputs.ref }} # CMU14
 
   publish_finish:
     name: Finish publish
-    # CMU14: Keep changelog failures from publishing a release after the parallel build.
     if: >-
       always() &&
-      (needs.changelog.result == 'success' || needs.changelog.result == 'skipped') &&
       needs.publish_start.result == 'success' &&
       needs.publish_start.outputs.already-published != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     # CMU14: an early finish aborts the CDN transaction before its files arrive.
-    needs: [changelog, publish_start, package, publish_upload]
+    needs: [publish_start, package, publish_upload]
     steps:
       - uses: actions/checkout@v7
         with:
+          ref: ${{ needs.publish_start.outputs.ref }} # CMU14
           persist-credentials: true
           submodules: false
           sparse-checkout: Tools
@@ -189,6 +199,7 @@ jobs:
         run: python3 Tools/publish_multi_request.py finish
         env:
           PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+          PUBLISH_VERSION: ${{ needs.publish_start.outputs.ref }} # CMU14
 
       - name: Abort incomplete publish
         if: needs.package.result != 'success' || needs.publish_upload.result != 'success'
@@ -196,3 +207,4 @@ jobs:
         run: python3 Tools/publish_multi_request.py finish
         env:
           PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+          PUBLISH_VERSION: ${{ needs.publish_start.outputs.ref }} # CMU14

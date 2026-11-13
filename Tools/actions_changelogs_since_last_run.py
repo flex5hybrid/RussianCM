@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
-# CMU14 Begin: downstream changelog assembly and Russian Discord delivery.
-"""Translate integrated changelogs and publish using a durable delivery journal.
+# CMU14 Begin: downstream changelog delivery.
+"""Publish integrated changelogs using a durable Discord delivery journal.
 
 --dry-run reads journal state and writes a preview, without Discord or journal writes.
 Upstream entries are read from this checkout, never from an upstream's current HEAD.
 """
 
 import argparse
-import copy
 import datetime as dt
 import hashlib
 import json
@@ -16,20 +15,16 @@ import re
 import sys
 import time
 from pathlib import Path
-from urllib.parse import urlparse
 
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / "_CMU14" / "Changelog"))
 
 from changelog_discord_state import FileStateStore, GitHubStateStore, empty_state
-from changelog_translation import RussianTranslator, POLICY_FILE
-from changelog_translation_cache import load_translation_cache, save_translation_cache
-from update_changelog import load_yaml, entry_key
+from update_changelog import CHANGELOG_CATEGORIES, load_yaml, entry_key, merge_changes
 from update_changelog_parts import parse_time
 
-DEFAULT_FILES = [f"Resources/Changelog/{name}.yml" for name in
-                 ("CMU", "RMC14", "Changelog", "Maps", "Admin", "Rules")]
+DEFAULT_FILES = [f"Resources/Changelog/{name}.yml" for name in CHANGELOG_CATEGORIES.values()]
 SECTION_NAMES = {"CMU": "CMU", "RMC14": "RMC14", "Changelog": "SS14",
                  "Maps": "Карты", "Admin": "Администрирование", "Rules": "Правила"}
 TYPES_TO_EMOJI = {"Fix": "🔧", "Add": "✨", "Remove": "🔥", "Tweak": "🎚️",
@@ -41,24 +36,8 @@ class DeliveryRejected(RuntimeError):
     """Discord explicitly rejected a message, so retrying is safe."""
 
 
-def entry_signature(entry):
-    return entry_key(entry)
-
-
-def diff_changelog(old, current):
-    previous = {entry_signature(e) for e in (old or {}).get("Entries", [])}
-    seen = set(previous)
-    diff = []
-    for entry in (current or {}).get("Entries", []):
-        key = entry_signature(entry)
-        if key not in seen:
-            diff.append(entry)
-            seen.add(key)
-    return diff
-
-
 def delivery_key(source, entry):
-    return hashlib.sha256(json.dumps([source, entry_signature(entry)], ensure_ascii=False).encode()).hexdigest()
+    return hashlib.sha256(json.dumps([source, entry_key(entry)], ensure_ascii=False).encode()).hexdigest()
 
 
 def entry_date(entry):
@@ -73,16 +52,13 @@ def load_entries(files):
     entries = {}
     for filename in files:
         source = Path(filename).stem
-        for raw in load_yaml(filename).get("Entries", []):
-            entry = copy.deepcopy(raw)
+        for entry in load_yaml(filename).get("Entries", []):
             if not entry.get("changes"):
                 continue
             entry_date(entry)
             key = delivery_key(source, entry)
             if key in entries:
-                for change in entry["changes"]:
-                    if change not in entries[key]["changes"]:
-                        entries[key]["changes"].append(change)
+                merge_changes(entries[key], entry)
                 continue
             entry["source"] = source
             entry["key"] = key
@@ -104,7 +80,8 @@ def select_entries(entries, state, start_date=None):
     baseline = set(state["baseline"])
     cutoff = parse_time(start_date) if start_date else None
     # New upstream arrivals can have old timestamps. Do not use time as a delivery cursor.
-    return [e for e in entries if e["key"] not in state["delivered"]
+    queued = set(state["pending"]["keys"]) if state["pending"] else set()
+    return [e for e in entries if e["key"] not in state["delivered"] and e["key"] not in queued
             and (e["key"] not in baseline or
                  (cutoff is not None and entry_date(e) >= cutoff))]
 
@@ -146,10 +123,10 @@ def entry_chunks(entry):
     url = str(entry.get("url") or "").strip()
     footer = ""
     if url:
-        parsed = urlparse(url)
-        if parsed.scheme != "https" or parsed.netloc != "github.com" or not re.fullmatch(r"/[^/]+/[^/]+/pull/\d+/?", parsed.path):
+        pr = re.fullmatch(r"https://github\.com/[\w.-]+/[\w.-]+/pull/(\d+)/?", url, re.ASCII | re.IGNORECASE)
+        if not pr:
             raise ValueError("Invalid changelog PR link")
-        footer = f"[Изменение #{parsed.path.rstrip('/').split('/')[-1]}]({url})\n"
+        footer = f"[Изменение #{pr[1]}]({url})\n"
     limit = DISCORD_SPLIT_LIMIT - discord_length(heading + footer)
     if limit < 100:
         raise ValueError("Changelog header is too long")
@@ -173,15 +150,8 @@ def entry_chunks(entry):
     return chunks
 
 
-def prepare_delivery(entries, translator):
-    messages = [c["message"] for e in entries for c in e["changes"]]
-    translated = iter(translator.translate(messages))
-    chunks = []
-    for raw in entries:
-        entry = copy.deepcopy(raw)
-        for change in entry["changes"]:
-            change["message"] = next(translated)
-        chunks.extend(entry_chunks(entry))
+def prepare_delivery(entries):
+    chunks = [chunk for entry in entries for chunk in entry_chunks(entry)]
     return {"keys": [e["key"] for e in entries], "chunks": chunks, "next": 0, "receipts": []}
 
 
@@ -193,20 +163,26 @@ def send_discord_webhook(content, webhook_url=None):
     webhook_url = webhook_url or os.environ.get("DISCORD_WEBHOOK_URL")
     if not webhook_url:
         raise RuntimeError("CHANGELOG_DISCORD_WEBHOOK is missing")
+    waited = 0
     for attempt in range(8):
         try:
             response = requests.post(webhook_url, params={"wait": "true"},
-                                     json=get_discord_body(content), timeout=30)
+                                     json=get_discord_body(content), timeout=30, allow_redirects=False)
         except requests.RequestException:
             raise RuntimeError("Discord connection failed; delivery is paused for channel verification.") from None
         if response.status_code == 429:
-            delay = float(response.json().get("retry_after", 5))
-            if not 0 <= delay <= 60:
+            try:
+                delay = float(response.json().get("retry_after", 5))
+            except (AttributeError, TypeError, ValueError):
+                raise DeliveryRejected("Discord returned HTTP 429 with an invalid retry interval") from None
+            if not 0 <= delay <= 60 or waited + delay > 60:
                 raise DeliveryRejected("Discord rate limit exceeds retry budget")
-            time.sleep(delay)
+            if attempt < 7:
+                time.sleep(delay)
+                waited += delay
             continue
         if response.status_code != 200:
-            if response.status_code < 500:
+            if response.status_code < 500 and response.status_code != 408:
                 raise DeliveryRejected(f"Discord returned HTTP {response.status_code}; delivery stopped")
             raise RuntimeError(f"Discord returned HTTP {response.status_code}; delivery is paused for verification")
         receipt = response.json().get("id")
@@ -254,14 +230,21 @@ def resolve_ambiguous(state, resolution, store):
     store.save(state)
 
 
-def write_preview(path, chunks):
-    text = "# Предпросмотр чейнджлога Discord\n\nНичего не отправлено.\n\n"
-    for i, content in enumerate(chunks, 1):
-        text += f"## Сообщение {i} ({discord_length(content)}/2000)\n\n{content}\n"
-    if not chunks:
-        text += "Нет новых записей для отправки.\n"
+def write_preview(path, pending, entries):
+    text = ["# Предпросмотр чейнджлога Discord\n\n"]
+    queued = pending["chunks"][pending["next"]:] if pending else []
+    chunks = prepare_delivery(entries)["chunks"]
+    if pending and pending.get("in_flight") is not None:
+        text.append("Первое сообщение очереди требует сверки с каналом перед продолжением.\n\n")
+    for heading, messages in (("Сохранённая очередь", queued), ("Новые записи", chunks)):
+        if messages:
+            text.append(f"## {heading}\n\n")
+        for index, content in enumerate(messages, 1):
+            text.append(f"### Сообщение {index} ({discord_length(content)}/2000)\n\n{content}\n")
+    if not queued and not chunks:
+        text.append("Нет новых записей для отправки.\n")
     Path(path).parent.mkdir(parents=True, exist_ok=True)
-    Path(path).write_text(text, encoding="utf-8", newline="\n")
+    Path(path).write_text("".join(text), encoding="utf-8", newline="\n")
 
 
 def main():
@@ -270,10 +253,7 @@ def main():
     parser.add_argument("--start-date", default=os.environ.get("CHANGELOG_START_DATE") or None)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--output", default="discord-preview.md")
-    parser.add_argument("--translation-cache", default=os.environ.get("CHANGELOG_TRANSLATION_CACHE"),
-                        help="Reusable validated translations; preview may write this cache, never delivery state")
     parser.add_argument("--state-file", help="Local journal for tests/preview; production uses GitHub")
-    parser.add_argument("--translation-policy", default=str(POLICY_FILE))
     parser.add_argument("--resolve-ambiguous", choices=["retry", "delivered"],
                         help="Operator decision after checking the channel for an interrupted request")
     args = parser.parse_args()
@@ -289,52 +269,32 @@ def main():
         store = GitHubStateStore(os.environ["GITHUB_REPOSITORY"], os.environ["GITHUB_TOKEN"])
     entries = load_entries(args.files)
     state = store.load()
+    initializing = state is None
     if state is None:
         state = initial_state(entries, args.start_date)
-        if not args.dry_run:
+    selected = select_entries(entries, state, args.start_date)
+    print(f"Integrated={len(entries)} Confirmed={len(state['delivered'])} New={len(selected)}")
+    if args.dry_run:
+        write_preview(args.output, state["pending"], selected)
+        return
+    if args.resolve_ambiguous:
+        resolve_ambiguous(state, args.resolve_ambiguous, store)
+    if args.start_date:
+        # Keep this recovery request eligible on subsequent ordinary runs,
+        # even if an earlier prepared queue pauses before we can send it.
+        recovering = {entry["key"] for entry in selected}
+        baseline = [key for key in state["baseline"] if key not in recovering]
+        if baseline != state["baseline"]:
+            state["baseline"] = baseline
             store.save(state)
     if state["pending"]:
-        if args.dry_run:
-            write_preview(args.output, state["pending"]["chunks"][state["pending"]["next"]:])
-            print("Previewing remaining parts of an interrupted delivery")
-            return
-        if args.resolve_ambiguous:
-            resolve_ambiguous(state, args.resolve_ambiguous, store)
         publish_pending(state, store)
-    elif args.resolve_ambiguous:
-        raise RuntimeError("No ambiguous Discord delivery to resolve")
-    selected = select_entries(entries, state, args.start_date)
-    print(f"Integrated={len(entries)} Delivered={len(state['delivered'])} Pending={len(selected)}")
-    if not selected:
-        if args.dry_run:
-            write_preview(args.output, [])
-        return
-    if args.translation_cache:
-        reusable = load_translation_cache(args.translation_cache)
-        reusable.update(state["translations"])
-        state["translations"] = reusable
-
-    def checkpoint_translation():
-        if args.translation_cache:
-            save_translation_cache(args.translation_cache, state["translations"])
-        if not args.dry_run:
-            store.save(state)
-
-    translator = RussianTranslator(state["translations"], args.translation_policy, checkpoint=checkpoint_translation)
-    try:
-        pending = prepare_delivery(selected, translator)
-    except Exception:
-        if not args.dry_run:
-            store.save(state)
-        raise
-    checkpoint_translation()
-    if args.dry_run:
-        write_preview(args.output, pending["chunks"])
-        print(f"Preview written to {args.output}; no Discord or journal writes")
-        return
-    state["pending"] = pending
-    store.save(state)
-    publish_pending(state, store)
+    if selected:
+        state["pending"] = prepare_delivery(selected)
+        store.save(state)
+        publish_pending(state, store)
+    elif initializing:
+        store.save(state)
 
 
 if __name__ == "__main__":

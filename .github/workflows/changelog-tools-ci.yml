@@ -6,6 +6,8 @@ on:
     paths:
       - Tools/*changelog*
       - Tools/_CMU14/Changelog/**
+      - Resources/Changelog/**
+      - .github/workflows/publish*.yml
       - .github/workflows/update-changelog.yml
       - .github/workflows/changelog-tools-ci.yml
   push:
@@ -13,6 +15,8 @@ on:
     paths:
       - Tools/*changelog*
       - Tools/_CMU14/Changelog/**
+      - Resources/Changelog/**
+      - .github/workflows/publish*.yml
       - .github/workflows/update-changelog.yml
       - .github/workflows/changelog-tools-ci.yml
 
