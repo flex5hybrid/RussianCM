@@ -1451,6 +1451,14 @@ namespace Content.Shared.Preferences
             var prototypeManager = collection.Resolve<IPrototypeManager>();
             var compFactory = collection.Resolve<IComponentFactory>();
 
+            // RuMC14: drop capes that no longer exist. Subscription tier is checked when the cape is granted,
+            // so a temporarily lost subscription keeps the player's choice.
+            if (SelectedDonorCape is { } donorCape &&
+                !prototypeManager.HasIndex<RMCDonorCapePrototype>(donorCape))
+            {
+                SelectedDonorCape = null;
+            }
+
             if (!prototypeManager.TryIndex(Species, out var speciesPrototype) || speciesPrototype.RoundStart == false)
             {
                 Species = HumanoidCharacterProfile.DefaultSpecies;
