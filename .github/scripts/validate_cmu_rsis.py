@@ -14,6 +14,7 @@ def main() -> int:
     schema = json.loads((engine_schemas / "rsi.json").read_text(encoding="utf-8"))
     licenses = schema["properties"]["license"]["enum"]
     for license_name in (
+        "CLA",
         "MIT",
         "Proprietary Donor Cape Asset License (see ../LICENSE.txt)",
     ):

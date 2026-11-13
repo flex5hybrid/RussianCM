@@ -66,34 +66,34 @@ public sealed class DonorCapeMigrationTest
             SelectedCharacterSlot = 0,
             AdminOOCColor = "#ffffff",
         };
-        var profile = new Profile
-        {
-            Slot = 0,
-            CharacterName = "Cape migration test",
-            FlavorText = string.Empty,
-            Age = 25,
-            Sex = "Male",
-            Gender = "Male",
-            Species = "Human",
-            HairName = string.Empty,
-            HairColor = "#000000",
-            FacialHairName = string.Empty,
-            FacialHairColor = "#000000",
-            EyeColor = "#000000",
-            SkinColor = "#000000",
-            ArmorPreference = string.Empty,
-            SelectedDonorCape = "rmc-donor-cape-16",
-        };
-        preference.Profiles.Add(profile);
         db.Preference.Add(preference);
         await db.SaveChangesAsync();
-        var profileId = profile.Id;
+
+        // Insert using columns present in the historical schema. The current EF model includes
+        // fields added by later migrations, so SaveChanges would target columns that do not exist yet.
+        const int slot = 0;
+        const int age = 25;
+        const int unavailable = 0;
+        const string characterName = "Cape migration test";
+        const string sex = "Male";
+        const string empty = "";
+        const string black = "#000000";
+        const string selectedCape = "rmc-donor-cape-16";
+        await db.Database.ExecuteSqlInterpolatedAsync($"""
+            INSERT INTO profile (
+                slot, char_name, age, sex, hair_name, hair_color, facial_hair_name,
+                facial_hair_color, eye_color, skin_color, pref_unavailable, preference_id,
+                selected_donor_cape)
+            VALUES (
+                {slot}, {characterName}, {age}, {sex}, {empty}, {black}, {empty},
+                {black}, {black}, {black}, {unavailable}, {preference.Id}, {selectedCape})
+            """);
 
         await db.Database.MigrateAsync();
         db.ChangeTracker.Clear();
 
-        var restored = await db.Profile.AsNoTracking().SingleAsync(existing => existing.Id == profileId);
-        Assert.That(restored.SelectedDonorCape, Is.EqualTo("rmc-donor-cape-16"));
+        var restored = await db.Profile.AsNoTracking().SingleAsync(existing => existing.CharacterName == characterName);
+        Assert.That(restored.SelectedDonorCape, Is.EqualTo(selectedCape));
     }
 
     private static string[] GetDonorCapeMigrationIds(Type dbContextType)
