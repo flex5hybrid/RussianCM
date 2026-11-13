@@ -17111,6 +17111,15 @@ Entries:
   - 'Changes: Map'
   - M
 - author: RomiGur
+  time: '2026-11-02T04:50:14Z'
+  changes:
+  - type: Fix
+    message: Рация из снабжения больше не приходит ОПФОР с ключами ГОВФОР
+  id: 1092
+  url: https://github.com/flex5hybrid/RussianCM/pull/582
+  labels:
+  - S
+- author: RomiGur
   time: '2026-11-02T04:50:42Z'
   changes:
   - type: Add
@@ -17247,6 +17256,37 @@ Entries:
   id: 1000
   time: '2026-11-02T14:04:24.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2423
+- author: HubaBuba
+  time: '2026-11-02T15:18:05Z'
+  changes:
+  - type: Add
+    message: Добавлен отряд SOF (Moscow) в консоль посла СПН.
+  - type: Add
+    message: Добавлены отряды VDV (zvezda и vimpel) в консоль ГОФОР СПН.
+  - type: Add
+    message: Добавлена форма для танкиста и пилота СПН.
+  - type: Add
+    message: Создана новая система для выбора специализации отрядов в планшете КО.
+      Из возможных вариантов специализации - Разведка, Штурмовики, Инженеры.
+  - type: Tweak
+    message: Изменены некоторые спрайты.
+  id: 1091
+  url: https://github.com/flex5hybrid/RussianCM/pull/554
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Sprites'
+  - XL
+- author: Hubabuber
+  time: '2026-11-02T16:08:36Z'
+  changes:
+  - type: Add
+    message: Добавлены значки.
+  id: 1095
+  url: https://github.com/flex5hybrid/RussianCM/pull/587
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Sprites'
+  - M
 - author: ArturUr1
   time: '2026-11-02T18:17:46Z'
   changes:
@@ -17259,6 +17299,17 @@ Entries:
   labels:
   - 'Changes: No C#'
   - M
+- author: RomiGur
+  time: '2026-11-02T18:17:59Z'
+  changes:
+  - type: Fix
+    message: На танк ИТМ теперь можно поставить в качестве основной пушки только 45mm
+      L26A2 и L215A1.
+  id: 1093
+  url: https://github.com/flex5hybrid/RussianCM/pull/583
+  labels:
+  - 'Changes: No C#'
+  - XS
 - author: ArturUr1
   changes:
   - message: Synthetics can now throw creatures they are carrying on their shoulder.
@@ -17409,6 +17460,30 @@ Entries:
   id: 1012
   time: '2026-11-02T22:17:14.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2436
+- author: flex5hybrid
+  time: '2026-11-02T22:38:01Z'
+  changes:
+  - type: Code
+    message: Удалено дублирование обработки урона корпуса техники RuCMU; используется
+      метод CMU.
+  id: 1096
+  url: https://github.com/flex5hybrid/RussianCM/pull/591
+  labels:
+  - S
+- author: flex5hybrid
+  time: '2026-11-03T05:10:21Z'
+  changes:
+  - type: Code
+    message: Удалены повторные ресурсы, из-за которых падала упаковка клиента; добавлена
+      проверка пересечений каталогов ресурсов в CI.
+  id: 1097
+  url: https://github.com/flex5hybrid/RussianCM/pull/594
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Sprites'
+  - 'Changes: Audio'
+  - 'Changes: Translations'
+  - XL
 - author: TheHellFireo
   changes:
   - message: Liquid pipes now have rotatable straight, elbow, T-junction and cross
@@ -17583,6 +17658,48 @@ Entries:
   id: 1019
   time: '2026-11-04T04:05:24.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2462
+- author: ArturUr1
+  time: '2026-11-04T17:04:59Z'
+  changes:
+  - type: Tweak
+    message: Изменены внутриигровые правила Восстания и ролей с повышенной ответственностью
+  id: 1101
+  url: https://github.com/flex5hybrid/RussianCM/pull/598
+  labels:
+  - 'Changes: No C#'
+  - S
+- author: ArturUr1
+  time: '2026-11-04T18:59:51Z'
+  changes:
+  - type: Fix
+    message: Кастомные крафты алкоголя и шприцов
+  id: 1100
+  url: https://github.com/flex5hybrid/RussianCM/pull/597
+  labels:
+  - 'Changes: No C#'
+  - S
+- author: flex5hybrid
+  time: '2026-11-04T19:00:15Z'
+  changes:
+  - type: Tweak
+    message: Категории автоматов выдачи, названия комплектов и подсказки переведены
+      на русский язык.
+  id: 1098
+  url: https://github.com/flex5hybrid/RussianCM/pull/595
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Translations'
+  - L
+- author: ArturUr1
+  time: '2026-11-04T19:01:19Z'
+  changes:
+  - type: Tweak
+    message: Яутжи теперь могут спавниться в режиме "Восстание" с таким же шансом,
+      как и в других режимах.
+  id: 1099
+  url: https://github.com/flex5hybrid/RussianCM/pull/596
+  labels:
+  - XS
 - author: '- add: Добавлен CRT HUD с панелью взаимодействий с окружением и каталогом
     доступных эмоций.'
   time: '2026-11-04T19:24:35Z'
@@ -17710,6 +17827,17 @@ Entries:
   id: 1026
   time: '2026-11-05T12:38:26.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2478
+- author: EmperorStukov
+  time: '2026-11-05T15:32:45Z'
+  changes:
+  - type: Tweak
+    message: Изменён русский перевод некоторых званий СПН
+  id: 1102
+  url: https://github.com/flex5hybrid/RussianCM/pull/600
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Translations'
+  - S
 - author: maertayn
   changes:
   - message: Vulture sniper rounds no longer lose almost all their damage on near-misses
@@ -17763,6 +17891,16 @@ Entries:
   - 'Changes: Translations'
   - 'Changes: Shaders'
   - L
+- author: RomiGur
+  time: '2026-11-06T01:27:35Z'
+  changes:
+  - type: Add
+    message: Теперь для запроса отряда нужно оставить ему сообщение(например чтобы
+      выдать задание), которое зачитает ИИ ГЕРМЕС на голопаде
+  id: 1103
+  url: https://github.com/flex5hybrid/RussianCM/pull/601
+  labels:
+  - M
 - author: ILoveDespoiler
   changes:
   - message: 'Added a brand new Leap ability onto Harbinger: "Flurry Rush" allows
@@ -18214,6 +18352,28 @@ Entries:
     type: Add
   id: 1057
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2443
+- author: EarnestAxis5546
+  time: '2026-11-06T19:17:15Z'
+  changes:
+  - type: Add
+    message: Добавлен иврит (Hebrew) в качестве нового доступного языка со своим уникальным
+      набором слогов для обфускации, трейтом и обучающей брошюрой.
+  id: 1094
+  url: https://github.com/flex5hybrid/RussianCM/pull/585
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Translations'
+  - S
+- author: ArturUr1
+  time: '2026-11-06T19:29:08Z'
+  changes:
+  - type: Fix
+    message: Помощнику корпоративного связного теперь выдается его печать
+  id: 1090
+  url: https://github.com/flex5hybrid/RussianCM/pull/553
+  labels:
+  - 'Changes: No C#'
+  - XS
 - author: '- tweak: Командный состав ГОВФОР и корпоративный связной больше не могут
     стать колониальными антагонистами'
   time: '2026-11-07T14:38:14Z'
@@ -18426,6 +18586,26 @@ Entries:
     type: Fix
   id: 1069
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2503
+- author: ArturUr1
+  time: '2026-11-07T21:47:16Z'
+  changes:
+  - type: Fix
+    message: Исправлены кастом крафты RuMC
+  id: 1104
+  url: https://github.com/flex5hybrid/RussianCM/pull/608
+  labels:
+  - 'Changes: No C#'
+  - XS
+- author: ArturUr1
+  time: '2026-11-07T21:54:52Z'
+  changes:
+  - type: Tweak
+    message: Рубиновая, аметистовая, изумрудная и призматическая медали возвращены
+      в игру. Время игры для получения медалей возвращено к стандартам RuMC
+  id: 1089
+  url: https://github.com/flex5hybrid/RussianCM/pull/510
+  labels:
+  - S
 - author: TheHellFireo
   time: '2026-11-08T11:28:14.0000000+00:00'
   changes:
@@ -18434,6 +18614,17 @@ Entries:
     type: Add
   id: 1070
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2536
+- author: RomiGur
+  time: '2026-11-08T11:58:43Z'
+  changes:
+  - type: Add
+    message: Добавлен лёгкий танк КОФ «Бегемот»
+  id: 1105
+  url: https://github.com/flex5hybrid/RussianCM/pull/610
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Sprites'
+  - M
 - author: TheHellFireo
   time: '2026-11-08T13:27:58.0000000+00:00'
   changes:
@@ -18513,6 +18704,15 @@ Entries:
   id: 1078
   time: '2026-11-09T03:48:30.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2547
+- author: RomiGur
+  time: '2026-11-09T16:09:12Z'
+  changes:
+  - type: Fix
+    message: В режиме Стенка на Стенку ГОВФОР и ОПФОР снова появляются на разных кораблях
+  id: 1106
+  url: https://github.com/flex5hybrid/RussianCM/pull/613
+  labels:
+  - S
 - author: KeiKiyomi
   changes:
   - message: Added pill recipe sheets and a machine that loads listed chemicals and
@@ -18605,6 +18805,16 @@ Entries:
   id: 1085
   time: '2026-11-10T19:07:07.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2567
+- author: RomiGur
+  time: '2026-11-10T22:22:48Z'
+  changes:
+  - type: Tweak
+    message: Бег снова основной темп движения, он больше не тратит выносливость
+  id: 1108
+  url: https://github.com/flex5hybrid/RussianCM/pull/617
+  labels:
+  - 'Changes: Translations'
+  - M
 - author: ILoveDespoiler
   changes:
   - message: Fixed HEAP being in regular govfor vendors
@@ -18666,6 +18876,15 @@ Entries:
   id: 1087
   time: '2026-11-11T06:43:49.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2575
+- author: ArturUr1
+  time: '2026-11-11T17:38:31Z'
+  changes:
+  - type: Remove
+    message: 4-ое поколение синтетиков удалено из выбора
+  id: 1107
+  url: https://github.com/flex5hybrid/RussianCM/pull/615
+  labels:
+  - XS
 - author: '- add: Русская локализация AN/PRC-117G'
   time: '2026-11-11T18:35:50Z'
   changes:
@@ -18691,5 +18910,14 @@ Entries:
   - 'Changes: No C#'
   - 'Changes: Translations'
   - L
+- author: RomiGur
+  time: '2026-11-12T21:31:10Z'
+  changes:
+  - type: Fix
+    message: Исправлены баги с размером и прокруткой чата
+  id: 1109
+  url: https://github.com/flex5hybrid/RussianCM/pull/621
+  labels:
+  - S
 Name: CMU
 Order: -1
