@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Content.Server.Database.Migrations.Sqlite
+namespace Content.Server.Database._RuCM.Migrations.Sqlite
 {
     [DbContext(typeof(SqliteServerDbContext))]
-    [Migration("20261111000000_DonorCapePreference")]
+    [Migration("20260813000000_DonorCapePreference")]
     public partial class DonorCapePreference : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)

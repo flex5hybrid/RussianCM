@@ -1,4 +1,5 @@
 using Content.Server.Antag;
+using Content.Server.GameTicking;
 using Content.Server.Hands.Systems;
 using Content.Server._RMC14.LinkAccount;
 using Content.Server.Storage.EntitySystems;
@@ -7,8 +8,10 @@ using Content.Shared._RMC14.Xenonids;
 using Content.Shared.GameTicking;
 using Content.Shared.Inventory;
 using Content.Shared.Mind;
+using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared.Storage;
+using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._RMC14.DonorCapes;
@@ -25,34 +28,60 @@ public sealed class DonorCapeSystem : EntitySystem
 
     public override void Initialize()
     {
-        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(
-            OnPlayerSpawnComplete,
+        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawnComplete);
+        SubscribeLocalEvent<RulePlayerJobsAssignedEvent>(
+            OnPlayerJobsAssigned,
             after: [typeof(AntagSelectionSystem)]);
     }
 
     private void OnPlayerSpawnComplete(PlayerSpawnCompleteEvent ev)
     {
-        if (HasComp<XenoComponent>(ev.Mob) ||
-            _mind.TryGetMind(ev.Mob, out var mindId, out _) && _roles.MindIsAntagonist(mindId))
-        {
+        // Round-start capes are handed out in OnPlayerJobsAssigned: antagonists keep getting assigned
+        // until then, and some gamemodes (Distress Signal) move the player into another body afterwards.
+        if (!ev.LateJoin)
             return;
-        }
 
-        if (ev.Profile.SelectedDonorCape is not { } selectedCape ||
+        TryGiveCape(ev.Player, ev.Mob, ev.Profile);
+    }
+
+    private void OnPlayerJobsAssigned(RulePlayerJobsAssignedEvent ev)
+    {
+        foreach (var player in ev.Players)
+        {
+            if (player.AttachedEntity is not { } mob ||
+                !ev.Profiles.TryGetValue(player.UserId, out var profile))
+            {
+                continue;
+            }
+
+            TryGiveCape(player, mob, profile);
+        }
+    }
+
+    private void TryGiveCape(ICommonSession player, EntityUid mob, HumanoidCharacterProfile profile)
+    {
+        // Never hand the cape to a body the player does not control (e.g. the corpse a larva bursts from).
+        if (player.AttachedEntity != mob || HasComp<XenoComponent>(mob))
+            return;
+
+        if (_mind.TryGetMind(mob, out var mindId, out _) && _roles.MindIsAntagonist(mindId))
+            return;
+
+        if (profile.SelectedDonorCape is not { } selectedCape ||
             !_prototypes.TryIndex(selectedCape, out RMCDonorCapePrototype? cape) ||
-            !DonorCapeAccess.HasAccess(_linkAccount.GetConnectedPatron(ev.Player)?.Tier, cape.RequiredPriority))
+            !DonorCapeAccess.HasAccess(_linkAccount.GetConnectedPatron(player)?.Tier, cape.RequiredPriority))
         {
             return;
         }
 
-        var item = Spawn(cape.Item, Transform(ev.Mob).Coordinates);
-        if (_hands.TryPickupAnyHand(ev.Mob, item, checkActionBlocker: false))
+        var item = Spawn(cape.Item, Transform(mob).Coordinates);
+        if (_hands.TryPickupAnyHand(mob, item, checkActionBlocker: false))
             return;
 
-        if (TryInsertIntoStorage(ev.Mob, item))
+        if (TryInsertIntoStorage(mob, item))
             return;
 
-        if (_inventory.TryEquip(ev.Mob, item, "neck", silent: true, force: true))
+        if (_inventory.TryEquip(mob, item, "neck", silent: true, force: true))
             return;
 
         QueueDel(item);

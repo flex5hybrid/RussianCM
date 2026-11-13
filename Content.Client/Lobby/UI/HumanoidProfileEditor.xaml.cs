@@ -69,7 +69,9 @@ namespace Content.Client.Lobby.UI
                 _yautjaTab = new YautjaProfileEditor();
                 _yautjaTab.OnProfileChanged += profile =>
                 {
-                    Profile = profile;
+                    // Only take the yautja part: the tab holds a snapshot that predates other edits,
+                    // such as the donor cape selected in its own tab.
+                    Profile = Profile?.WithYautjaProfile(profile.YautjaProfile) ?? profile;
                     SetDirty();
                 };
                 TabContainer.AddChild(_yautjaTab);

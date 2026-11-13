@@ -25,7 +25,7 @@ public sealed class DonorCapeEntityLocalizationTest : ContentUnitTest
         var contentRoot = new MemoryContentRoot();
         contentRoot.AddOrUpdateFile(
             new ResPath("Locale/ru-RU/donor-capes.ftl"),
-            File.ReadAllBytes(GetResourcePath("Resources", "Locale", "ru-RU", "_RuMC14", "donor-capes.ftl")));
+            File.ReadAllBytes(GetResourcePath("Content.RUMC", "Resources", "Locale", "ru-RU", "_RuMC14", "donor-capes.ftl")));
         resources.AddRoot(new ResPath("/"), contentRoot);
 
         var localization = IoCManager.Resolve<ILocalizationManager>();

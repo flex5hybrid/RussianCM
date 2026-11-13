@@ -54,7 +54,6 @@ public sealed class DonorCapeTab : BoxContainer
         AddChild(scroll);
 
         BuildCapeButtons();
-        _linkAccount.Updated += RefreshAccess;
     }
 
     public void SetProfile(HumanoidCharacterProfile? profile)
@@ -63,13 +62,19 @@ public sealed class DonorCapeTab : BoxContainer
         RefreshAccess();
     }
 
-    [System.Obsolete]
-    protected override void Dispose(bool disposing)
+    // The lobby controller orphans the profile editor instead of disposing it, so the subscription
+    // has to follow the control's presence in the tree or stale tabs keep reacting to updates.
+    protected override void EnteredTree()
     {
-        if (disposing)
-            _linkAccount.Updated -= RefreshAccess;
+        base.EnteredTree();
+        _linkAccount.Updated += RefreshAccess;
+        RefreshAccess();
+    }
 
-        base.Dispose(disposing);
+    protected override void ExitedTree()
+    {
+        _linkAccount.Updated -= RefreshAccess;
+        base.ExitedTree();
     }
 
     private void BuildCapeButtons()
