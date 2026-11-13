@@ -105,7 +105,7 @@ public sealed class DonorCapeSpawnTest : GameTest
 
         await Server.WaitAssertion(() =>
         {
-            SetConnectedTier(Server.System<LinkAccountManager>(), player, priority);
+            SetConnectedTier(Server.ResolveDependency<LinkAccountManager>(), player, priority);
             RaisePlayerSpawning(player, profile);
 
             mob = SSpawnAtPosition("MobHuman", map.GridCoords);
