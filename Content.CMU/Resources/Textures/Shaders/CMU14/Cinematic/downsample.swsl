@@ -1,0 +1,46 @@
+light_mode unshaded;
+blend_mode none;
+
+uniform sampler2D source_texture;
+uniform sampler2D blocker_texture;
+uniform highp vec2 target_size;
+uniform highp vec2 source_pixel;
+uniform highp vec4 source_region;
+
+highp vec3 gather(highp vec2 uv, highp vec2 offset)
+{
+    highp vec2 sampleUv = clamp(uv + offset * source_pixel, 0.0, 1.0);
+    // Keep each downsample from transporting light across a wall. The blocker mask stays
+    // at full viewport resolution, even when the bloom pyramid becomes very small.
+    highp vec2 receiver = texture2D(blocker_texture, sampleUv).rg;
+    highp float barrier = receiver.r * (1.0 - receiver.g);
+    receiver = texture2D(blocker_texture, mix(uv, sampleUv, 0.25)).rg;
+    barrier = max(barrier, receiver.r * (1.0 - receiver.g));
+    receiver = texture2D(blocker_texture, mix(uv, sampleUv, 0.5)).rg;
+    barrier = max(barrier, receiver.r * (1.0 - receiver.g));
+    receiver = texture2D(blocker_texture, mix(uv, sampleUv, 0.75)).rg;
+    barrier = max(barrier, receiver.r * (1.0 - receiver.g));
+    // Clamp to texel centres inside this field, preventing filtered cross-atlas bleed.
+    highp vec2 half_pixel = source_pixel * source_region.zw * 0.5;
+    highp vec2 atlas_uv = clamp(source_region.xy + sampleUv * source_region.zw,
+        source_region.xy + half_pixel, source_region.xy + source_region.zw - half_pixel);
+    return texture2D(source_texture, atlas_uv).rgb * (1.0 - clamp(barrier, 0.0, 1.0));
+}
+
+void fragment()
+{
+    highp vec2 uv = FRAGCOORD.xy / target_size;
+    highp vec2 receiver = texture2D(blocker_texture, uv).rg;
+    if (receiver.r * (1.0 - receiver.g) > 0.999)
+        discard;
+    highp vec3 sum = gather(uv, vec2(0.0)) * 4.0;
+    sum += gather(uv, vec2(-1.5, -1.5));
+    sum += gather(uv, vec2(1.5, -1.5));
+    sum += gather(uv, vec2(-1.5, 1.5));
+    sum += gather(uv, vec2(1.5, 1.5));
+    sum += gather(uv, vec2(-2.0, 0.0));
+    sum += gather(uv, vec2(2.0, 0.0));
+    sum += gather(uv, vec2(0.0, -2.0));
+    sum += gather(uv, vec2(0.0, 2.0));
+    COLOR = vec4(sum / 12.0, 1.0);
+}

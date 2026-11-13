@@ -1,0 +1,268 @@
+{
+  "events_lost": 0,
+  "pauses": [
+    {
+      "Utc": "2026-10-29T12:53:14.2868035Z",
+      "Milliseconds": 1.0483
+    },
+    {
+      "Utc": "2026-10-29T12:53:17.2240596Z",
+      "Milliseconds": 0.8569
+    },
+    {
+      "Utc": "2026-10-29T12:53:20.0877299Z",
+      "Milliseconds": 0.6808
+    },
+    {
+      "Utc": "2026-10-29T12:53:22.9121141Z",
+      "Milliseconds": 0.6003
+    },
+    {
+      "Utc": "2026-10-29T12:53:25.7681362Z",
+      "Milliseconds": 0.5787
+    },
+    {
+      "Utc": "2026-10-29T12:53:28.6330473Z",
+      "Milliseconds": 0.6511
+    },
+    {
+      "Utc": "2026-10-29T12:53:31.5659567Z",
+      "Milliseconds": 0.5583
+    },
+    {
+      "Utc": "2026-10-29T12:53:34.3671069Z",
+      "Milliseconds": 1.1222
+    },
+    {
+      "Utc": "2026-10-29T12:53:37.2985109Z",
+      "Milliseconds": 0.465
+    },
+    {
+      "Utc": "2026-10-29T12:53:40.2254998Z",
+      "Milliseconds": 0.4888
+    },
+    {
+      "Utc": "2026-10-29T12:53:42.9479799Z",
+      "Milliseconds": 1.1055
+    },
+    {
+      "Utc": "2026-10-29T12:53:45.7636565Z",
+      "Milliseconds": 0.4722
+    },
+    {
+      "Utc": "2026-10-29T12:53:48.5848121Z",
+      "Milliseconds": 0.5108
+    },
+    {
+      "Utc": "2026-10-29T12:53:51.1916951Z",
+      "Milliseconds": 1.116
+    },
+    {
+      "Utc": "2026-10-29T12:53:54.0362684Z",
+      "Milliseconds": 0.5936
+    },
+    {
+      "Utc": "2026-10-29T12:53:56.8607675Z",
+      "Milliseconds": 0.5251
+    },
+    {
+      "Utc": "2026-10-29T12:53:59.7254955Z",
+      "Milliseconds": 0.7036
+    },
+    {
+      "Utc": "2026-10-29T12:54:02.6294797Z",
+      "Milliseconds": 1.2305
+    },
+    {
+      "Utc": "2026-10-29T12:54:05.4703545Z",
+      "Milliseconds": 1.6945
+    },
+    {
+      "Utc": "2026-10-29T12:54:08.3154928Z",
+      "Milliseconds": 1.0587
+    }
+  ],
+  "collections": [
+    {
+      "utc": "2026-10-29T12:53:14.2868616Z",
+      "depth": 1,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:17.2240999Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:20.0877764Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:22.9121614Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:25.7681763Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:28.6330929Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:31.565995Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:34.3671491Z",
+      "depth": 1,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:37.2985502Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:40.2255396Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:42.9480254Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:45.7636924Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:48.5848493Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:51.1917366Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:54.0363123Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:56.8608153Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:53:59.725537Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:54:02.6295203Z",
+      "depth": 0,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:54:05.4703984Z",
+      "depth": 1,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    },
+    {
+      "utc": "2026-10-29T12:54:08.3155306Z",
+      "depth": 1,
+      "reason": "AllocSmall",
+      "type": "NonConcurrentGC"
+    }
+  ],
+  "stages": [
+    {
+      "quality": 0,
+      "measure_utc": "2026-10-29T12:53:27.9360463Z",
+      "measurement_ms": 6002.436000000001,
+      "gc_pause_count": 2,
+      "gc_pause_total_ms": 1.2094,
+      "gc_pause_max_ms": 0.6511
+    },
+    {
+      "quality": 1,
+      "measure_utc": "2026-10-29T12:53:35.9400898Z",
+      "measurement_ms": 6004.965999999999,
+      "gc_pause_count": 2,
+      "gc_pause_total_ms": 0.9538,
+      "gc_pause_max_ms": 0.4888
+    },
+    {
+      "quality": 2,
+      "measure_utc": "2026-10-29T12:53:43.947442Z",
+      "measurement_ms": 6001.246,
+      "gc_pause_count": 2,
+      "gc_pause_total_ms": 0.9830000000000001,
+      "gc_pause_max_ms": 0.5108
+    },
+    {
+      "quality": 3,
+      "measure_utc": "2026-10-29T12:53:51.9536843Z",
+      "measurement_ms": 6016.063999999999,
+      "gc_pause_count": 2,
+      "gc_pause_total_ms": 1.1187,
+      "gc_pause_max_ms": 0.5936
+    }
+  ],
+  "sampled_allocation_bytes": {
+    "System.Boolean": 41450664,
+    "System.ValueTuple\u00602[Robust.Shared.GameObjects.EntityUid,Robust.Shared.GameObjects.OccluderTreeComponent][]": 26745040,
+    "Enumerator[Robust.Shared.GameObjects.EntityUid]": 16412896,
+    "Robust.Shared.GameObjects.EntityUid[]": 12899480,
+    "System.Byte[]": 11951216,
+    "System.SZGenericArrayEnumerator\u00601[Robust.Shared.GameObjects.EntityUid]": 9166200,
+    "System.String": 8424504,
+    "\u003C\u003Ec__DisplayClass175_0": 7995000,
+    "GLCaps": 6182744,
+    "\u003C\u003Ec__DisplayClass19_0\u00602[System.Object,System.Int32]": 5436600,
+    "Replica\u00601[System.Threading.Tasks.RangeWorker]": 5322640,
+    "System.Numerics.Vector2": 5115976,
+    "System.Action\u00601[System.Int32]": 4690400,
+    "Slot[System.Threading.Tasks.TaskReplicator\u002BReplica][]": 4583800,
+    "Robust.Client.Graphics.VectorFont": 4050800,
+    "System.Single": 4050784,
+    "Entry[Robust.Shared.Physics.ComponentTreeEntry\u00601[Robust.Client.GameObjects.SpriteComponent]][]": 3944200,
+    "\u003CEnumerateHeld\u003Ed__42": 3943784,
+    "Enumerator[Robust.Client.GameObjects.SpriteComponent\u002BLayer]": 3411200,
+    "System.Threading.Tasks.Task": 3305840,
+    "System.Threading.Tasks.IndexRange[]": 3304600,
+    "ContingentProperties": 2986592,
+    "System.Int32[]": 2984800,
+    "System.Threading.Tasks.ParallelOptions": 2665000,
+    "\u003CGetActorUis\u003Ed__29": 2558400
+  }
+}

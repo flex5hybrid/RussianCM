@@ -1,0 +1,6 @@
+Actual native client frame intervals. Not isolated GPU timing. Keep camera and scene fixed.
+Two-second warmup per preset; up to 65536 interval samples per preset. Images use native viewport resolution.
+preset=0 frames=2102 samples=2102 mean_ms=2.857 p50_ms=2.649 p95_ms=4.697 p99_ms=5.069 cinematic_cpu_ms=0.000 sources=0 beams=0 targets=0 target_bytes=0
+preset=1 frames=1886 samples=1886 mean_ms=3.183 p50_ms=2.947 p95_ms=5.026 p99_ms=5.507 cinematic_cpu_ms=0.201 sources=8 beams=0 targets=3 target_bytes=5564160
+preset=2 frames=1664 samples=1664 mean_ms=3.609 p50_ms=3.360 p95_ms=5.480 p99_ms=5.949 cinematic_cpu_ms=0.506 sources=8 beams=6 targets=6 target_bytes=9434880
+preset=3 frames=1615 samples=1615 mean_ms=3.717 p50_ms=3.436 p95_ms=5.590 p99_ms=6.173 cinematic_cpu_ms=0.528 sources=8 beams=6 targets=7 target_bytes=9455040

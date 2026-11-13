@@ -1,0 +1,45 @@
+using Microsoft.Diagnostics.Tracing;
+using System.Globalization;
+using System.Text.Json;
+using System.Text.RegularExpressions;
+
+var pauses = new List<Pause>();
+var collections = new List<object>();
+var allocations = new Dictionary<string, long>();
+DateTime? suspended = null;
+using var trace = new EventPipeEventSource(args[0]);
+trace.Clr.All += e =>
+{
+    object? Field(string name) => e.PayloadNames.Contains(name) ? e.PayloadByName(name) : null;
+    if (e.EventName == "GC/SuspendEEStart") suspended = e.TimeStamp.ToUniversalTime();
+    if (e.EventName == "GC/RestartEEStop" && suspended is { } start)
+    {
+        pauses.Add(new Pause(start, (e.TimeStamp.ToUniversalTime() - start).TotalMilliseconds));
+        suspended = null;
+    }
+    if (e.EventName == "GC/Start")
+        collections.Add(new { utc = e.TimeStamp.ToUniversalTime(), depth = Field("Depth"), reason = Field("Reason")?.ToString(), type = Field("Type")?.ToString() });
+    if (e.EventName == "GC/AllocationTick")
+    {
+        var type = Field("TypeName")?.ToString() ?? "unknown";
+        var amount = Convert.ToInt64(Field("AllocationAmount64") ?? Field("AllocationAmount") ?? 0);
+        allocations[type] = allocations.GetValueOrDefault(type) + amount;
+    }
+};
+trace.Process();
+var stages = new List<object>();
+foreach (var line in File.ReadLines(args[1]))
+{
+    var fields = Regex.Matches(line, @"(\w+)=([^\s]+)").ToDictionary(m => m.Groups[1].Value, m => m.Groups[2].Value);
+    if (!fields.TryGetValue("stage_utc", out var stageUtc)) continue;
+    var start = DateTime.Parse(stageUtc, CultureInfo.InvariantCulture, DateTimeStyles.RoundtripKind).ToUniversalTime().AddSeconds(2);
+    var duration = double.Parse(fields["mean_ms"],CultureInfo.InvariantCulture) * int.Parse(fields["frames"]);
+    var hits = pauses.Where(p => p.Utc >= start && p.Utc < start.AddMilliseconds(duration)).ToArray();
+    stages.Add(new { quality = int.Parse(fields["preset"]), measure_utc = start, measurement_ms = duration,
+        gc_pause_count = hits.Length, gc_pause_total_ms = hits.Sum(p => p.Milliseconds), gc_pause_max_ms = hits.Length == 0 ? 0 : hits.Max(p => p.Milliseconds) });
+}
+var result = new { events_lost = trace.EventsLost, pauses, collections, stages,
+    sampled_allocation_bytes = allocations.OrderByDescending(p => p.Value).Take(25).ToDictionary(p => p.Key,p => p.Value) };
+File.WriteAllText(args[2],JsonSerializer.Serialize(result,new JsonSerializerOptions { WriteIndented=true }));
+Console.WriteLine($"GC pauses: {pauses.Count}; collection starts: {collections.Count}; lost events: {trace.EventsLost}");
+record Pause(DateTime Utc, double Milliseconds);

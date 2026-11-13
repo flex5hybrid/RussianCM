@@ -20,6 +20,14 @@
 
                 <cmu:CmuOptionSection Title="{Loc 'ui-options-quality-label'}">
                     <ui:OptionDropDown Name="DropDownLightingQuality" Title="{Loc 'ui-options-lighting-label'}" />
+                    <!-- CMU14 Begin: cinematic lighting settings. -->
+                    <ui:OptionDropDown Name="DropDownCinematicLighting" Title="{Loc 'cmu-cinematic-lighting-label'}"
+                                       ToolTip="{Loc 'cmu-cinematic-lighting-tooltip'}" />
+                    <ui:OptionSlider Name="CinematicAOIntensity" Title="{Loc 'cmu-cinematic-ao-intensity'}" />
+                    <ui:OptionSlider Name="CinematicAORadius" Title="{Loc 'cmu-cinematic-ao-radius'}" />
+                    <ui:OptionSlider Name="CinematicAtmosphere" Title="{Loc 'cmu-cinematic-atmosphere'}" />
+                    <ui:OptionSlider Name="CinematicExposure" Title="{Loc 'cmu-cinematic-exposure'}" />
+                    <!-- CMU14 End -->
                     <CheckBox Name="ViewportLowResCheckBox" Text="{Loc 'ui-options-vp-low-res'}" />
                     <CheckBox Name="ParallaxLowQualityCheckBox" Text="{Loc 'ui-options-parallax-low-quality'}" />
                     <CheckBox Name="AmbientOcclusionCheckBox" Text="{Loc 'ui-options-ambient-occlusion'}" />

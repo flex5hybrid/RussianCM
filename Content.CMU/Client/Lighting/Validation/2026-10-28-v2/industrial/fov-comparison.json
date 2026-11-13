@@ -1,0 +1,18 @@
+[
+  {
+    "quality": 2,
+    "width": 1344,
+    "height": 960,
+    "changed_pixels": 919312,
+    "deep_exterior_black_pixels": 208361,
+    "changed_deep_exterior_pixels": 98
+  },
+  {
+    "quality": 3,
+    "width": 1344,
+    "height": 960,
+    "changed_pixels": 919307,
+    "deep_exterior_black_pixels": 208361,
+    "changed_deep_exterior_pixels": 98
+  }
+]

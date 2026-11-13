@@ -179,6 +179,8 @@ namespace Content.Client.Viewport
 
             DebugTools.AssertNotNull(_viewport);
 
+            using var cinematicLighting = BeginCinematicLighting(_viewport); // CMU14
+
             var renderNow = MinimumRenderInterval <= TimeSpan.Zero ||
                             _timing.CurTime >= _nextRenderAt ||
                             _queuedScreenshots.Count != 0;

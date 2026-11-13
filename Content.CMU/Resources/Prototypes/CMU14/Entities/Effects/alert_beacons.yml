@@ -6,6 +6,8 @@
   id: CMUWarshipAlertBeaconBlue
   categories: [ HideSpawnMenu ]
   components:
+  - type: CMUCinematicEmitter
+    profile: CMUBeacon
   - type: PointLight
     enabled: true
     radius: 4
@@ -21,6 +23,8 @@
   id: CMUWarshipAlertBeaconRed
   categories: [ HideSpawnMenu ]
   components:
+  - type: CMUCinematicEmitter
+    profile: CMUBeacon
   - type: PointLight
     enabled: true
     radius: 5
@@ -36,6 +40,8 @@
   id: CMUWarshipAlertBeaconBlack
   categories: [ HideSpawnMenu ]
   components:
+  - type: CMUCinematicEmitter
+    profile: CMUBeacon
   - type: PointLight
     enabled: true
     radius: 5
@@ -51,6 +57,8 @@
   id: CMUWarshipAlertBeaconDelta
   categories: [ HideSpawnMenu ]
   components:
+  - type: CMUCinematicEmitter
+    profile: CMUBeacon
   - type: PointLight
     enabled: true
     radius: 4

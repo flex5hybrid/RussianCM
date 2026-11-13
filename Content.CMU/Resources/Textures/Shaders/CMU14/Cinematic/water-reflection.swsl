@@ -1,0 +1,21 @@
+light_mode unshaded;
+blend_mode add;
+
+#include "/Textures/Shaders/CMU14/Cinematic/frame.swsl"
+#include "/Textures/Shaders/CMU14/Cinematic/water-response.swsl"
+
+uniform sampler2D native_light_texture;
+uniform highp float receiver_opacity;
+
+void fragment()
+{
+    highp vec2 uv = frameUv(FRAGCOORD.xy);
+    highp vec4 water = texture2D(TEXTURE, UV);
+    highp float coverage = water.a * receiver_opacity * visibleAt(frameWorld(uv));
+    if (coverage < 0.001)
+        discard;
+    highp vec3 albedo = water.rgb * texture2D(native_light_texture, uv).rgb;
+    // The floor path keeps native AO. Opaque water covers that path, so its own
+    // response uses the same certified contact field rather than lifting the base.
+    COLOR = vec4(cinematicWaterResponse(water.rgb, albedo, uv), coverage);
+}
