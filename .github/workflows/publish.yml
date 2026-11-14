@@ -184,6 +184,10 @@ jobs:
       needs.publish_start.outputs.already-published != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
     # CMU14: an early finish aborts the CDN transaction before its files arrive.
     needs: [publish_start, package, publish_upload]
     steps:
@@ -192,14 +196,26 @@ jobs:
           ref: ${{ needs.publish_start.outputs.ref }} # CMU14
           persist-credentials: true
           submodules: false
-          sparse-checkout: Tools
+          sparse-checkout: |
+            Tools
+            .github/scripts
 
       - name: Publish version
+        id: publish
         if: needs.package.result == 'success' && needs.publish_upload.result == 'success'
         run: python3 Tools/publish_multi_request.py finish
         env:
           PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
           PUBLISH_VERSION: ${{ needs.publish_start.outputs.ref }} # CMU14
+
+      - name: End test merges
+        if: steps.publish.outcome == 'success'
+        uses: actions/github-script@v9.0.0
+        env:
+          PUBLISH_VERSION: ${{ needs.publish_start.outputs.ref }}
+        with:
+          script: |
+            await require('./.github/scripts/test_merge.js').endAll({github, context, core});
 
       - name: Abort incomplete publish
         if: needs.package.result != 'success' || needs.publish_upload.result != 'success'

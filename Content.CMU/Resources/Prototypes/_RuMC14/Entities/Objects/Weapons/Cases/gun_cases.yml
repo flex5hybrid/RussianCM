@@ -254,6 +254,7 @@
       - RMCMagazineRifleAK4047
       - RMCMagazineRifleAK4047AP
       - RuMCMagazineRifleAK4047bakelite
+      - RuMCMagazineRifleAK4047APbakelite
   - type: StorageFill
     contents:
     - id: RuMCWeaponRifleAK13
@@ -281,6 +282,7 @@
       - RMCMagazineRifleAK4047
       - RMCMagazineRifleAK4047AP
       - RuMCMagazineRifleAK4047bakelite
+      - RuMCMagazineRifleAK4047APbakelite
   - type: StorageFill
     contents:
     - id: RMCWeaponRifleAK4047
@@ -394,6 +396,7 @@
       - RMCMagazineRifleAK4047
       - RMCMagazineRifleAK4047AP
       - RuMCMagazineRifleAK4047bakelite
+      - RuMCMagazineRifleAK4047APbakelite
   - type: StorageFill
     contents:
     - id: RMCWeaponRifleAK4047
