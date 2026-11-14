@@ -1,0 +1,143 @@
+- type: rmcDonorCape
+  id: rmc-donor-cape-01
+  name: rmc-donor-cape-01-name
+  item: RMCDonorCapeItem01
+  icon: { sprite: _RuMC14/DonorCapes/cape01.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape01.rsi, state: equipped-NECK }
+  number: 1
+  requiredPriority: 3
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-02
+  name: rmc-donor-cape-02-name
+  item: RMCDonorCapeItem02
+  icon: { sprite: _RuMC14/DonorCapes/cape02.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape02.rsi, state: equipped-NECK }
+  number: 2
+  requiredPriority: 3
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-03
+  name: rmc-donor-cape-03-name
+  item: RMCDonorCapeItem03
+  icon: { sprite: _RuMC14/DonorCapes/cape03.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape03.rsi, state: equipped-NECK }
+  number: 3
+  requiredPriority: 2
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-04
+  name: rmc-donor-cape-04-name
+  item: RMCDonorCapeItem04
+  icon: { sprite: _RuMC14/DonorCapes/cape04.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape04.rsi, state: equipped-NECK }
+  number: 4
+  requiredPriority: 2
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-05
+  name: rmc-donor-cape-05-name
+  item: RMCDonorCapeItem05
+  icon: { sprite: _RuMC14/DonorCapes/cape05.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape05.rsi, state: equipped-NECK }
+  number: 5
+  requiredPriority: 4
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-06
+  name: rmc-donor-cape-06-name
+  item: RMCDonorCapeItem06
+  icon: { sprite: _RuMC14/DonorCapes/cape06.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape06.rsi, state: equipped-NECK }
+  number: 6
+  requiredPriority: 4
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-07
+  name: rmc-donor-cape-07-name
+  item: RMCDonorCapeItem07
+  icon: { sprite: _RuMC14/DonorCapes/cape07.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape07.rsi, state: equipped-NECK }
+  number: 7
+  requiredPriority: 4
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-08
+  name: rmc-donor-cape-08-name
+  item: RMCDonorCapeItem08
+  icon: { sprite: _RuMC14/DonorCapes/cape08.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape08.rsi, state: equipped-NECK }
+  number: 8
+  requiredPriority: 4
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-09
+  name: rmc-donor-cape-09-name
+  item: RMCDonorCapeItem09
+  icon: { sprite: _RuMC14/DonorCapes/cape09.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape09.rsi, state: equipped-NECK }
+  number: 9
+  requiredPriority: 3
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-10
+  name: rmc-donor-cape-10-name
+  item: RMCDonorCapeItem10
+  icon: { sprite: _RuMC14/DonorCapes/cape10.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape10.rsi, state: equipped-NECK }
+  number: 10
+  requiredPriority: 3
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-11
+  name: rmc-donor-cape-11-name
+  item: RMCDonorCapeItem11
+  icon: { sprite: _RuMC14/DonorCapes/cape11.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape11.rsi, state: equipped-NECK }
+  number: 11
+  requiredPriority: 4
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-12
+  name: rmc-donor-cape-12-name
+  item: RMCDonorCapeItem12
+  icon: { sprite: _RuMC14/DonorCapes/cape12.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape12.rsi, state: equipped-NECK }
+  number: 12
+  requiredPriority: 3
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-13
+  name: rmc-donor-cape-13-name
+  item: RMCDonorCapeItem13
+  icon: { sprite: _RuMC14/DonorCapes/cape13.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape13.rsi, state: equipped-NECK }
+  number: 13
+  requiredPriority: 4
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-14
+  name: rmc-donor-cape-14-name
+  item: RMCDonorCapeItem14
+  icon: { sprite: _RuMC14/DonorCapes/cape14.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape14.rsi, state: equipped-NECK }
+  number: 14
+  requiredPriority: 3
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-15
+  name: rmc-donor-cape-15-name
+  item: RMCDonorCapeItem15
+  icon: { sprite: _RuMC14/DonorCapes/cape15.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape15.rsi, state: equipped-NECK }
+  number: 15
+  requiredPriority: 4
+
+- type: rmcDonorCape
+  id: rmc-donor-cape-16
+  name: rmc-donor-cape-16-name
+  item: RMCDonorCapeItem16
+  icon: { sprite: _RuMC14/DonorCapes/cape16.rsi, state: icon }
+  preview: { sprite: _RuMC14/DonorCapes/cape16.rsi, state: equipped-NECK }
+  number: 16
+  requiredPriority: 2

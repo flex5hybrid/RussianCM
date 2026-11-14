@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Content.Server.Afk;
 using Content.Server.Database;
 using Content.Shared.CMU14.Threats;
+using Content.Shared._RMC14.DonorCapes;
 using Content.Shared._RMC14.NamedItems;
 using Content.Shared.CMU14.Allegiance;
 using Content.Shared.CMU14.Origin;
@@ -133,6 +134,7 @@ namespace Content.Server.Preferences.Managers
             var gamemodeJobPriorities = ConvertGamemodeJobPriorities(profile.GamemodeJobPriorities);
             var gamemodeAntagPreferences = ConvertGamemodeAntagPreferences(profile.GamemodeAntagPreferences);
             var gamemodeThreatPreferences = ConvertGamemodeThreatPreferences(profile.GamemodeThreatPreferences);
+            var selectedDonorCape = DonorCapeProfilePersistence.Deserialize(profile.SelectedDonorCape);
 
             var gender = sex == Sex.Male ? Gender.Male : Gender.Female;
             if (Enum.TryParse<Gender>(profile.Gender, true, out var genderVal))
@@ -272,7 +274,8 @@ namespace Content.Server.Preferences.Managers
                 profile.Weight,
                 Enum.TryParse<BuildType>(profile.Build, out var build) ? build : BuildType.Average,
                 profile.HideMetaInformation,
-                YautjaProfileSerializer.DeserializeYautjaProfile(profile.YautjaProfile)
+                YautjaProfileSerializer.DeserializeYautjaProfile(profile.YautjaProfile),
+                selectedDonorCape: selectedDonorCape
             )
             .WithTTSVoice(HumanoidCharacterProfile.ValidateTTSVoice(profile.TTSVoice, _prototypeManager, sex)) // CMU14: validate saved TTS against sex.
             // CMU14: Force on Force roles, hijacking, announcements and identification.
