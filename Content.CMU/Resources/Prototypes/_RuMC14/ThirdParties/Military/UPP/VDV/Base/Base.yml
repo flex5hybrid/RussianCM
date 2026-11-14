@@ -322,7 +322,6 @@
       - [ RMCBootsSPPBlack]
       - [ RMCBootsSPP]
     randomWeapon:
-    - [ RMCWeaponRifleAK4047, RuMCFatiguesVDVFull, RuMCBeltMagazineVDVFull, RuMCPouchMagazineVDVFull ]
     - [ RuMCWeaponRifleAK7074, RuMCFatiguesVDVFull, RuMCBeltMagazineVDVFull, RuMCPouchMagazineVDVFull ]
     tryEquipRandomWeapon: true
 
@@ -356,7 +355,7 @@
       - [ CMMaskCoif]
       - [ RuMCMaskBalaklava]
     randomWeapon:
-    - [ RuMCMachineGunPKM_MS, RuMCFatiguesVDVFull, RuMCUPPBeltMachinegunnerVDVFull, RuMCUPPPouchDrumVDVFull ]
+    - [ RuMCFatiguesVDVFull, RuMCUPPBeltMachinegunnerVDVFull, RuMCUPPPouchDrumVDVFull ]
     tryEquipRandomWeapon: true
 
 - type: entity
