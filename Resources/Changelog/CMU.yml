@@ -19282,5 +19282,21 @@ Entries:
   url: https://github.com/flex5hybrid/RussianCM/pull/626
   labels:
   - XS
+- author: flex5hybrid
+  time: '2026-11-14T21:11:52Z'
+  changes:
+  - type: Add
+    message: В GOVFOR появились старшие и главные инструкторы с разными полномочиями
+      на аттестацию.
+  - type: Tweak
+    message: Для рядового допуска GOVFOR теперь достаточно трёх зачётов по строевой,
+      уставам и огнестрельной подготовке.
+  - type: Fix
+    message: Полоса прокрутки в меню подготовки сохраняет позицию после зачёта и аттестации.
+  id: 1140
+  url: https://github.com/flex5hybrid/RussianCM/pull/627
+  labels:
+  - 'Changes: Translations'
+  - M
 Name: CMU
 Order: -1
