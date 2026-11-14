@@ -18876,71 +18876,6 @@ Entries:
   id: 1087
   time: '2026-11-11T06:43:49.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2575
-- author: ArturUr1
-  time: '2026-11-11T17:38:31Z'
-  changes:
-  - type: Remove
-    message: 4-ое поколение синтетиков удалено из выбора
-  id: 1107
-  url: https://github.com/flex5hybrid/RussianCM/pull/615
-  labels:
-  - XS
-- author: '- add: Русская локализация AN/PRC-117G'
-  time: '2026-11-11T18:35:50Z'
-  changes:
-  - type: Add
-    message: Русская локализация аплинка и штук КАСа
-  - type: Add
-    message: Русская локализация названий руководств
-  - type: Add
-    message: Русская локализация кодекса чести в руководствах
-  - type: Add
-    message: Русская локализация всем медицинским гайдам
-  - type: Add
-    message: Недостающая русская локализация в гайдах по связи
-  - type: Add
-    message: Русская локализация некоторых гражданских гайдов
-  - type: Add
-    message: Русская локализация "Опасностей"
-  - type: Remove
-    message: Удалены лишние ключи локализации
-  id: 1088
-  url: https://github.com/flex5hybrid/RussianCM/pull/616
-  labels:
-  - 'Changes: No C#'
-  - 'Changes: Translations'
-  - L
-- author: RomiGur
-  time: '2026-11-12T21:31:10Z'
-  changes:
-  - type: Fix
-    message: Исправлены баги с размером и прокруткой чата
-  id: 1109
-  url: https://github.com/flex5hybrid/RussianCM/pull/621
-  labels:
-  - S
-- author: ArturUr1
-  time: '2026-11-14T07:21:36Z'
-  changes:
-  - type: Tweak
-    message: Паралич от крика королевы снижен с 8 до 6 секунд
-  id: 1110
-  url: https://github.com/flex5hybrid/RussianCM/pull/611
-  labels:
-  - XS
-- author: TheMaiji
-  time: '2026-11-14T17:18:22Z'
-  changes:
-  - type: Add
-    message: Возвращены донатные плащи с уровнями подписки.
-  - type: Fix
-    message: Выбранный донатный плащ сохраняется в профиле.
-  id: 1111
-  url: https://github.com/flex5hybrid/RussianCM/pull/624
-  labels:
-  - 'Changes: UI'
-  - 'Changes: Sprites'
-  - L
 - author: rokudara-sen
   changes:
   - message: UNISC Lead Enforcer can give orders.
@@ -19031,6 +18966,40 @@ Entries:
   id: 1115
   time: '2026-11-11T14:27:59.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2581
+- author: ArturUr1
+  time: '2026-11-11T17:38:31Z'
+  changes:
+  - type: Remove
+    message: 4-ое поколение синтетиков удалено из выбора
+  id: 1107
+  url: https://github.com/flex5hybrid/RussianCM/pull/615
+  labels:
+  - XS
+- author: '- add: Русская локализация AN/PRC-117G'
+  time: '2026-11-11T18:35:50Z'
+  changes:
+  - type: Add
+    message: Русская локализация аплинка и штук КАСа
+  - type: Add
+    message: Русская локализация названий руководств
+  - type: Add
+    message: Русская локализация кодекса чести в руководствах
+  - type: Add
+    message: Русская локализация всем медицинским гайдам
+  - type: Add
+    message: Недостающая русская локализация в гайдах по связи
+  - type: Add
+    message: Русская локализация некоторых гражданских гайдов
+  - type: Add
+    message: Русская локализация "Опасностей"
+  - type: Remove
+    message: Удалены лишние ключи локализации
+  id: 1088
+  url: https://github.com/flex5hybrid/RussianCM/pull/616
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Translations'
+  - L
 - author: ArturUr1
   changes:
   - message: The synthetics construction skill has been increased to 4.
@@ -19177,6 +19146,15 @@ Entries:
   id: 1127
   time: '2026-11-12T21:19:34.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2593
+- author: RomiGur
+  time: '2026-11-12T21:31:10Z'
+  changes:
+  - type: Fix
+    message: Исправлены баги с размером и прокруткой чата
+  id: 1109
+  url: https://github.com/flex5hybrid/RussianCM/pull/621
+  labels:
+  - S
 - author: KeiKiyomi
   changes:
   - message: Fixed bomb vests, they can no longer be put onto mannequins to get around
@@ -19218,6 +19196,15 @@ Entries:
   id: 1132
   time: '2026-11-13T15:30:48.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2533
+- author: ArturUr1
+  time: '2026-11-14T07:21:36Z'
+  changes:
+  - type: Tweak
+    message: Паралич от крика королевы снижен с 8 до 6 секунд
+  id: 1110
+  url: https://github.com/flex5hybrid/RussianCM/pull/611
+  labels:
+  - XS
 - author: rokudara-sen
   changes:
   - message: Added BALANCE.md and balance questions to the PR template.
@@ -19273,5 +19260,27 @@ Entries:
   id: 1138
   time: '2026-11-14T14:40:40.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2606
+- author: TheMaiji
+  time: '2026-11-14T17:18:22Z'
+  changes:
+  - type: Add
+    message: Возвращены донатные плащи с уровнями подписки.
+  - type: Fix
+    message: Выбранный донатный плащ сохраняется в профиле.
+  id: 1111
+  url: https://github.com/flex5hybrid/RussianCM/pull/624
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Sprites'
+  - L
+- author: ArturUr1
+  time: '2026-11-14T19:40:38Z'
+  changes:
+  - type: Remove
+    message: Антагонист Джо выключен из ротации
+  id: 1139
+  url: https://github.com/flex5hybrid/RussianCM/pull/626
+  labels:
+  - XS
 Name: CMU
 Order: -1
