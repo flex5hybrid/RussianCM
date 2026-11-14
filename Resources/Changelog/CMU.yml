@@ -18919,5 +18919,14 @@ Entries:
   url: https://github.com/flex5hybrid/RussianCM/pull/621
   labels:
   - S
+- author: ArturUr1
+  time: '2026-11-14T07:21:36Z'
+  changes:
+  - type: Tweak
+    message: Паралич от крика королевы снижен с 8 до 6 секунд
+  id: 1110
+  url: https://github.com/flex5hybrid/RussianCM/pull/611
+  labels:
+  - XS
 Name: CMU
 Order: -1
