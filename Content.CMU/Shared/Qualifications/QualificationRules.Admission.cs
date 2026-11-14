@@ -11,7 +11,7 @@ public static partial class QualificationRules
         var instructor = IsDrillInstructor(role.JobId);
         if (!role.Enabled && !instructor)
             return true;
-        if (instructor && accreditation is not { Active: true })
+        if (instructor && GetInstructorRank(false, accreditation) == null)
             return false;
         var minimum = instructor && role.MinimumLevel < MilitaryLevel.Sergeant
             ? MilitaryLevel.Sergeant : role.MinimumLevel;
@@ -19,9 +19,18 @@ public static partial class QualificationRules
             return false;
         foreach (var id in role.Professional)
         {
-            if (player == null || !player.Grants.TryGetValue(id, out var grant) || grant.Status != QualificationStatus.Active)
+            if (!HasProfessionalQualification(player, id))
                 return false;
         }
         return true;
+    }
+
+    private static bool HasProfessionalQualification(PlayerTrainingState? player, string id)
+    {
+        if (player?.Grants.TryGetValue(id, out var grant) == true)
+            return grant.Status == QualificationStatus.Active;
+
+        // The sergeant qualification formerly covered squad leaders as well as platoon sergeants.
+        return id == "squad_leader" && EffectiveLevel(player) >= MilitaryLevel.Sergeant;
     }
 }

@@ -13,7 +13,7 @@ public sealed partial class QualificationService
     {
         var cache = Volatile.Read(ref _cache);
         var manager = IsManagement(actor, cache);
-        var instructor = cache.Instructors.GetValueOrDefault(actor.Context.Actor) is { Active: true }
+        var instructor = QualificationRules.GetInstructorRank(false, cache.Instructors.GetValueOrDefault(actor.Context.Actor)) != null
             || actor.CurrentParticipant && QualificationRules.IsDrillInstructor(actor.Context.Job);
         if (target == Guid.Empty || !manager && !instructor && !actor.CurrentOfficer && !actor.CurrentCo)
             target = actor.Context.Actor;

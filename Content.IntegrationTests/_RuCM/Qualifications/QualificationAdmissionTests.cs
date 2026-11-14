@@ -87,7 +87,7 @@ public sealed class QualificationAdmissionTests : GameTest
                 mutation = service.Apply(new(context, true, false, false, false, false), QualificationAction.SaveInstructor, new()
                 {
                     Target = ServerSession.UserId, Revision = service.Revision, Reason = "accreditation change",
-                    Payload = System.Text.Json.JsonSerializer.Serialize(new InstructorAccreditation(active, true, true, new(),
+                    Payload = System.Text.Json.JsonSerializer.Serialize(new InstructorAccreditation(active, InstructorRank.Instructor,
                         context.Actor, now, context.Actor, now))
                 });
             });

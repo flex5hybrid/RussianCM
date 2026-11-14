@@ -53,7 +53,7 @@ public sealed partial class QualificationPreviewCommand : LocalizedCommands
         var view = new QualificationView { Viewer = viewer, Target = player, Management = true, Instructor = true,
             Officer = true, Available = true, Enforcing = true, InstructorOnDuty = true, TargetOnline = true,
             OnlinePlayers = new() { [player] = "Morozov", [viewer] = "Instructor" }, AccountNames = new() { [player] = "Morozov", [viewer] = "Instructor" } };
-        foreach (var (id, itemIds) in new[] { ("enlisted", new[] { "firearms", "tactics", "first_aid", "communications" }),
+        foreach (var (id, itemIds) in new[] { ("enlisted", new[] { "firearms", "drill", "military_regulations" }), // CMU14
                      ("medical", new[] { "theory", "safety", "practice" }), ("field_engineering", new[] { "theory", "safety", "practice" }) })
         {
             view.Store.Definitions[id] = new() { Id = id, Name = "rucm-qualifications-definition-" + id,
@@ -63,7 +63,7 @@ public sealed partial class QualificationPreviewCommand : LocalizedCommands
         }
         view.Store.Players[player] = new() { Player = player, FirstTrainingAt = now,
             Progress = new() { ["enlisted"] = new() { ["firearms"] = new("enlisted", "firearms", context, "preview"),
-                ["tactics"] = new("enlisted", "tactics", context, "preview") } } };
+                ["drill"] = new("enlisted", "drill", context, "preview") } } }; // CMU14
         view.Store.Notes.Add(new(Guid.NewGuid(), player, context, Robust.Shared.Localization.Loc.GetString("rucm-qualifications-demo-note")));
         foreach (var job in prototypes.EnumeratePrototypes<JobPrototype>().Where(j => j.ID.StartsWith("AU14JobGOVFOR")))
         {

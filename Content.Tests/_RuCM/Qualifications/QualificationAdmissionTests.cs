@@ -39,7 +39,7 @@ public sealed class QualificationAdmissionTests
         await service.Apply(Manager, QualificationAction.SaveInstructor, new()
         {
             Target = _player, Revision = service.Revision, Reason = "test accreditation",
-            Payload = JsonSerializer.Serialize(new InstructorAccreditation(active, true, true, new(),
+            Payload = JsonSerializer.Serialize(new InstructorAccreditation(active, InstructorRank.Instructor,
                 _manager, context.At, _manager, context.At))
         });
     }

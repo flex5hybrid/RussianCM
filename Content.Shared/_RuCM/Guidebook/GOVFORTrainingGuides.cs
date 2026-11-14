@@ -107,6 +107,8 @@ public static class GOVFORTrainingGuides
         ("enlisted", "topography") => [RecruitTopography],
         ("enlisted", "engineering_basics") => [RecruitEngineering],
         ("enlisted", "field_exercise") => [RecruitFieldExercise],
+        ("squad_leader", "military_regulations") => [Sop, MilitaryCode], // CMU14
+        ("squad_leader", "tactics" or "unit_command") => [Command, SergeantAssessment], // CMU14
         ("sergeant", "drill") => [SergeantCourse, SergeantAssessment, Drill],
         ("sergeant", "military_regulations") => [SergeantCourse, SergeantAssessment, Sop, MilitaryCode],
         ("sergeant", "teaching") or ("sergeant", "methodical_training") => [SergeantCourse, SergeantAssessment, InstructorHandbook],
