@@ -18928,5 +18928,18 @@ Entries:
   url: https://github.com/flex5hybrid/RussianCM/pull/611
   labels:
   - XS
+- author: TheMaiji
+  time: '2026-11-14T17:18:22Z'
+  changes:
+  - type: Add
+    message: Возвращены донатные плащи с уровнями подписки.
+  - type: Fix
+    message: Выбранный донатный плащ сохраняется в профиле.
+  id: 1111
+  url: https://github.com/flex5hybrid/RussianCM/pull/624
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Sprites'
+  - L
 Name: CMU
 Order: -1
