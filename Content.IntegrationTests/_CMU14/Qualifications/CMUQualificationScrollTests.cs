@@ -9,6 +9,7 @@ using Content.Shared._RuCM.Qualifications;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Maths;
+using Robust.Shared.IoC;
 using Robust.Shared.Prototypes;
 
 namespace Content.IntegrationTests.CMU14.Qualifications;
@@ -17,6 +18,55 @@ namespace Content.IntegrationTests.CMU14.Qualifications;
 public sealed class CMUQualificationScrollTests : GameTest
 {
     public override PoolSettings PoolSettings => new() { Connected = true, Dirty = true };
+
+    [TestCase(QualificationAction.Complete, "complete-military_regulations", "military_regulations")]
+    [TestCase(QualificationAction.Certify, "certify", "")]
+    public async Task TrainingResponsePreservesScrollbarCapture(QualificationAction action, string buttonName, string item)
+    {
+        await Client.WaitAssertion(() =>
+        {
+            var view = CreateLongView();
+            var state = view.Store.Players[view.Target];
+            var definition = view.Store.Definitions["enlisted"];
+            var context = state.Progress[definition.Id]["firearms"].By;
+            foreach (var step in definition.Items.Where(step => step.Id != item))
+                state.Progress[definition.Id][step.Id] = new(definition.Id, step.Id, context, "");
+            var sent = new List<(QualificationAction Action, QualificationRequest Request)>();
+            using var window = new QualificationWindow((kind, request) => sent.Add((kind, request)));
+            window.Open();
+            window.Update(view);
+            Navigate(window, "training");
+            Descendants(window).OfType<LineEdit>().Single(e => e.Name == "action-reason").SetText("Verified", true);
+            QualificationUiTests.Click(Descendants(window).OfType<CheckBox>().Single(c => c.Name == "action-confirm"));
+            var button = Descendants(window).OfType<Button>().Single(b => b.Name == buttonName);
+            Assert.That(button.Disabled, Is.False);
+            QualificationUiTests.Click(button);
+            Assert.That(sent.Single().Action, Is.EqualTo(action));
+
+            var scroll = Scroll(window, "page-scroll");
+            scroll.VScroll = 300;
+            var scrollbar = scroll.Children.OfType<VScrollBar>().Single();
+            var ui = IoCManager.Resolve<IUserInterfaceManager>();
+            ui.ControlFocused = scrollbar;
+            try
+            {
+                if (action == QualificationAction.Complete)
+                    state.Progress[definition.Id][item] = new(definition.Id, item, context, "Verified");
+                else
+                    state.Grants[definition.Id] = new(definition.Id, QualificationStatus.Active, definition.Version, [], context, "Verified");
+                view.ResponseId = sent.Single().Request.RequestId;
+                window.Update(view);
+                Layout(window);
+                Assert.That(ui.ControlFocused, Is.SameAs(scrollbar));
+                Assert.That(scroll.VScroll, Is.EqualTo(300));
+                Assert.That(Descendants(window).OfType<Button>().Where(b => b.Name == buttonName).All(b => b.Disabled), Is.True);
+            }
+            finally
+            {
+                ui.ControlFocused = null;
+            }
+        });
+    }
 
     [TestCase("dossier")]
     [TestCase("training")]

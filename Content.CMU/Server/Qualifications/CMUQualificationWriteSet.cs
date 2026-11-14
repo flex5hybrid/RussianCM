@@ -44,9 +44,7 @@ internal sealed class CMUQualificationWriteSet
             Roles = store.Roles,
             Players = players,
             Instructors = store.Instructors.Where(pair =>
-                !previous.Instructors.TryGetValue(pair.Key, out var old) ||
-                pair.Value with { Professional = old.Professional } != old ||
-                !pair.Value.Professional.SetEquals(old.Professional))
+                !previous.Instructors.TryGetValue(pair.Key, out var old) || pair.Value != old)
                 .ToDictionary(pair => pair.Key, pair => pair.Value),
             Notes = store.Notes.Skip(previous.Notes.Count).ToList(),
             Suspensions = store.Suspensions.Where(s => players.ContainsKey(s.Target)).ToList(),

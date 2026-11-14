@@ -37,7 +37,7 @@ public sealed class QualificationRecruitTests : GameTest
             seed.Definitions["enlisted"] = new() { Id = "enlisted", Name = "rucm-qualifications-definition-enlisted",
                 Items = new() { new() { Id = "practice", Name = "practice" } } };
             var now = DateTimeOffset.UtcNow;
-            seed.Instructors[ServerSession.UserId] = new(true, true, false, new(), ServerSession.UserId, now, ServerSession.UserId, now);
+            seed.Instructors[ServerSession.UserId] = new(true, InstructorRank.Instructor, ServerSession.UserId, now, ServerSession.UserId, now);
             entities.System<QualificationSystem>().ConfigureRepository(new MemoryQualificationRepository(), seed);
             // A minimal round fixture: actual mind/session authority without loading an unrelated station map.
             typeof(GameTicker).GetField("_runLevel", BindingFlags.NonPublic | BindingFlags.Instance)!

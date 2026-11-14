@@ -22,7 +22,7 @@ public sealed class QualificationResetTests
         foreach (var id in seed.Definitions.Keys)
             seed.Players[target].Grants[id] = new(id, QualificationStatus.Active, 1, new[] { "practice" }, context, "original");
         seed.Players[target].Progress["enlisted"] = new() { ["practice"] = new("enlisted", "practice", context, "original") };
-        seed.Instructors[target] = new(true, true, true, new() { "medical" }, manager, context.At, manager, context.At);
+        seed.Instructors[target] = new(true, InstructorRank.SeniorInstructor, manager, context.At, manager, context.At);
         seed.Notes.Add(new(Guid.NewGuid(), target, context, "retain historical note"));
         var service = new QualificationService(new MemoryQualificationRepository()); await service.Initialize(seed); return service;
     }

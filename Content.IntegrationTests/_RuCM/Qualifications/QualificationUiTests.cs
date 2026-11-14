@@ -127,7 +127,7 @@ public sealed class QualificationUiTests : GameTest
             var view = QualificationPreviewCommand.CreateView(Client.ResolveDependency<IPrototypeManager>());
             var recruit = view.Target;
             view.Target = view.Viewer; view.Management = false;
-            view.Store.Instructors[view.Viewer] = new(true, true, false, new(), view.Viewer, DateTimeOffset.UtcNow, view.Viewer, DateTimeOffset.UtcNow);
+            view.Store.Instructors[view.Viewer] = new(true, InstructorRank.Instructor, view.Viewer, DateTimeOffset.UtcNow, view.Viewer, DateTimeOffset.UtcNow);
             var sent = new List<(QualificationAction Action, QualificationRequest Request)>();
             using var window = new QualificationWindow((a, r) => sent.Add((a, r)));
             window.Open(); window.Update(view); Layout(window);

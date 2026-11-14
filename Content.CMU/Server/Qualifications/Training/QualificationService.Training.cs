@@ -5,12 +5,12 @@ using Content.Shared._RuCM.Qualifications;
 namespace Content.Server._RuCM.Qualifications;
 public sealed partial class QualificationService
 {
-    public bool CMUCanTeach(Guid instructor, string qualification, string item)
+    public bool CMUCanTeach(QualificationAuthority instructor, string qualification, string item)
     {
         var cache = Volatile.Read(ref _cache);
         return cache.Definitions.TryGetValue(qualification, out var definition) && definition.Enabled
             && definition.Items.Any(step => step.Id == item && step.Enabled)
-            && QualificationRules.CanTrain(cache.Instructors.GetValueOrDefault(instructor), qualification);
+            && QualificationRules.CanTrain(GetInstructorRank(instructor, cache), qualification);
     }
     public (int Completed, int Required) CMUChecklistSummary(Guid recruit)
     {
