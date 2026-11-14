@@ -16,7 +16,7 @@ public sealed partial class XenoScreechComponent : Component
     public TimeSpan StunTime = TimeSpan.FromSeconds(6);
 
     [DataField, AutoNetworkedField]
-    public TimeSpan ParalyzeTime = TimeSpan.FromSeconds(8);
+    public TimeSpan ParalyzeTime = TimeSpan.FromSeconds(6);
 
     [DataField, AutoNetworkedField]
     public TimeSpan CloseDeafTime = TimeSpan.FromSeconds(7);
