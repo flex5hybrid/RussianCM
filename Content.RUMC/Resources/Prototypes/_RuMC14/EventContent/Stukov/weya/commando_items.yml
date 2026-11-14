@@ -891,7 +891,7 @@
 
 - type: entity
   parent: ArmorHelmetPMCCommandoWeYa
-  id: ArmorHelmetPMCCommandoWeYaDogCather
+  id: ArmorHelmetPMCCommandoWeYaDogCatcher
   name: Elite PMC helmet M5X
   description: Fully enclosed combat helmet designed for the M5X kit.
   components:
@@ -909,7 +909,7 @@
 
 - type: entity
   parent: RMCArmorM4PMCNoLight
-  id: CMArmorM4PMCCommandoWeYaDogCather
+  id: CMArmorM4PMCCommandoWeYaDogCatсher
   name: Elite 'Commando' armor M5X
   description: A complex overlapping plate system designed to make the wearer highly resistant to xeno threats.
   components:
@@ -933,7 +933,7 @@
 
 - type: entity
   parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
-  id: RMCWeaponRifleM54C2DogCather
+  id: RMCWeaponRifleM54C2DogCatсher
   name: M41A/2 MK2 assault rifle
   description: A modified version of the M41A MK2 assault rifle, redesigned to improve weight, handling, and accuracy. Fires precise two-round bursts. Issued only to elite units.
   components:
@@ -1044,10 +1044,10 @@
     - type: GunIDLock
     - type: Tag
       tags:
-        - RMCWeaponRifleM54C2DogCather
+        - RMCWeaponRifleM54C2DogCatсher
 
 - type: Tag
-  id: RMCWeaponRifleM54C2DogCather
+  id: RMCWeaponRifleM54C2DogCatсher
 
 - type: entity
   parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
@@ -1065,7 +1065,7 @@
 
 - type: entity
   parent: RMCSatchelLightpack
-  id: RMCSatchelCommadoWeYaDog
+  id: RMCSatchelCommadoWeYaDogCatcher
   name: We-Yu commando backpack
   description: Ergonomic, protected high-capacity backpack designed for Weyland-Yutani commandos.
   components:

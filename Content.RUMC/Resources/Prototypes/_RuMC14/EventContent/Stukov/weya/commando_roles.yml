@@ -266,21 +266,21 @@
     state: smart
 
 - type: startingGear
-  id: RMCJobPMCWeYaCommandoDogCather
+  id: RMCJobPMCWeYaCommandoDogCatcher
   equipment:
     id: RMCIDCardPMC
     jumpsuit: RMCJumpsuitVeteranPMCCommandoWeYa
-    outerClothing: CMArmorM4PMCCommandoWeYaDogCather
+    outerClothing: CMArmorM4PMCCommandoWeYaDogCatсher
     gloves: AU14HandsSilverRMC
-    head: ArmorHelmetPMCCommandoWeYaDogCather
+    head: ArmorHelmetPMCCommandoWeYaDogCatcher
     shoes: RMCBootsPMCCommandoFilled
     mask: RMCMaskCoifPMC
     ears: RMCHeadsetDistressWeYaCommando
-    back: RMCSatchelCommadoWeYaDog
+    back: RMCSatchelCommadoWeYaDogCatcher
     belt: RMCBeltPMC
     pocket1: RMCPouchToolsSocMarineRaiderFill
     pocket2: RMCPouchMedicalSocDutchUnmarked
-    suitstorage: RMCWeaponRifleM54C2DogCather
+    suitstorage: RMCWeaponRifleM54C2DogCatсher
     eyes: CMGlassesM4WeYa
   storage:
     back:
@@ -362,9 +362,9 @@
   ranks:
     RMCRankWeYaEliteResponder: []
   spawnMenuRoleName: WY Commando Dog Catcher
-  startingGear: RMCJobPMCWeYaCommandoDogCather
+  startingGear: RMCJobPMCWeYaCommandoDogCatcher
   greeting: au14-pmcparty-greeting
-  icon: RMCJobIconPMCWeYaCommandoDogCather
+  icon: RMCJobIconPMCWeYaCommandoDogCatcher
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-wy
   accessGroups:
@@ -395,7 +395,7 @@
 
 - type: jobIcon
   parent: CMJobIconBase
-  id: RMCJobIconPMCWeYaCommandoDogCather
+  id: RMCJobIconPMCWeYaCommandoDogCatcher
   icon:
     sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi
     state: dogcatcher
