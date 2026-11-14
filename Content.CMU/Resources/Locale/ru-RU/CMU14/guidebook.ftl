@@ -52,6 +52,7 @@ cmu-guide-entry-ucmj-arresting = Порядок ареста
 cmu-guide-entry-ucmj-definitions = Определения и глоссарий
 cmu-guide-entry-ucmj-dnr = DNR
 cmu-guide-entry-ucmj-executions = Казни
+cmu-guide-entry-ucmj-battlefield-executions = Полевые казни
 cmu-guide-entry-ucmj-criminal-code = Уголовный кодекс
 cmu-guide-entry-ucmj-optional = Дополнительные преступления
 cmu-guide-entry-ucmj-minor = Мелкие преступления
