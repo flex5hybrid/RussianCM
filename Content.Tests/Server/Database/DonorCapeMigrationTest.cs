@@ -76,16 +76,17 @@ public sealed class DonorCapeMigrationTest
         const int unavailable = 0;
         const string characterName = "Cape migration test";
         const string sex = "Male";
+        const string flavorText = "";
         const string empty = "";
         const string black = "#000000";
         const string selectedCape = "rmc-donor-cape-16";
         await db.Database.ExecuteSqlInterpolatedAsync($"""
             INSERT INTO profile (
-                slot, char_name, age, sex, hair_name, hair_color, facial_hair_name,
+                slot, char_name, age, sex, flavor_text, hair_name, hair_color, facial_hair_name,
                 facial_hair_color, eye_color, skin_color, pref_unavailable, preference_id,
                 selected_donor_cape)
             VALUES (
-                {slot}, {characterName}, {age}, {sex}, {empty}, {black}, {empty},
+                {slot}, {characterName}, {age}, {sex}, {flavorText}, {empty}, {black}, {empty},
                 {black}, {black}, {black}, {unavailable}, {preference.Id}, {selectedCape})
             """);
 
