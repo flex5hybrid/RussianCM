@@ -73,7 +73,9 @@ public sealed class DonorCapeMigrationTest
         // fields added by later migrations, so SaveChanges would target columns that do not exist yet.
         const int slot = 0;
         const int age = 25;
+        const int spawnPriority = 0;
         const int unavailable = 0;
+        const bool synthetic = false;
         const string characterName = "Cape migration test";
         const string sex = "Male";
         const string gender = "Male";
@@ -88,11 +90,11 @@ public sealed class DonorCapeMigrationTest
                 slot, char_name, age, sex, gender, species, armor_preference, flavor_text,
                 hair_name, hair_color, facial_hair_name,
                 facial_hair_color, eye_color, skin_color, pref_unavailable, preference_id,
-                selected_donor_cape)
+                spawn_priority, synthetic, selected_donor_cape)
             VALUES (
                 {slot}, {characterName}, {age}, {sex}, {gender}, {species}, {armorPreference},
                 {flavorText}, {empty}, {black}, {empty}, {black}, {black}, {black}, {unavailable},
-                {preference.Id}, {selectedCape})
+                {preference.Id}, {spawnPriority}, {synthetic}, {selectedCape})
             """);
 
         await db.Database.MigrateAsync();
