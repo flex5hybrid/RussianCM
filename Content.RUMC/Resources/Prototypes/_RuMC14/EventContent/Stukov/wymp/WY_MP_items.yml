@@ -1,0 +1,347 @@
+- type: entity
+  parent: CMWebbingBlack
+  id: MyWebbingPMCMP
+  suffix: PMC, Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: AU14HemostaticGauzePacket
+    - id: AU14HemostaticGauzePacket
+    - id: CMUSplintItem
+    - id: CMFireExtinguisherPortable
+    - id: CMHealthAnalyzer
+
+- type: entity
+  parent: AU14WYGuardFatigues
+  id: MyJumpsuitVeteranPMCMP
+  suffix: Webbing
+  components:
+  - type: WebbingClothing
+    startingWebbing: MyWebbingPMCMP
+
+- type: entity
+  parent: CMWebbingBlack
+  id: MyWebbingPMCMPMed
+  suffix: PMC, Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCMREWeYaPMC
+    - id: RMCMREWeYaPMC
+    - id: RMCHandcuffs
+    - id: CMU14TearGasGrenade
+    - id: CMU14TearGasGrenade
+
+- type: entity
+  parent: AU14WYGuardFatigues
+  id: MyJumpsuitVeteranPMCMPMed
+  suffix: Webbing
+  components:
+  - type: WebbingClothing
+    startingWebbing: MyWebbingPMCMPMed
+
+- type: entity
+  parent: RMCWeaponRifleM54CSemiStripped
+  id: RMCWeaponRifleM54CWhiteNoLockMP
+  description: A M41A Mk2 with a Weyland-Yutani logo imprinted on the reciever. Used primarily by Weyland-Yutani's corporate security forces, and comes equipped with a drab corproate white paint job.
+  suffix: Corporate, No UGL, No ID lock
+  components:
+  - type: Sprite
+    sprite: CMU14/Weapons/Guns/USCM/m41mk2.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: CMU14/Weapons/Guns/USCM/m41mk2.rsi
+  - type: ItemCamouflage
+    camouflageVariations: { }
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: CMMagazineRifleM54CAP
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - CMMagazineRifleM54C
+          - CMMagazineRifleM54CAP
+          - CMMagazineRifleM54CExt
+          - RMCMagazineRifleM54CIncendiary
+          - RMCMagazineRifleM54CHEAP
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentSuppressor
+          - RMCM5Bayonet
+        random:
+        - RMCAttachmentSuppressor
+        - RMCAttachmentExtendedBarrel
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentMagneticHarness
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS6ReflexSight
+          - RMCAttachmentS84xTelescopicScope
+          - RMCAttachmentS42xTelescopicMiniscope
+        random:
+        - RMCAttachmentS6ReflexSight
+        - RMCAttachmentS5RedDotSight
+        - RMCAttachmentMagneticHarness
+      rmc-aslot-stock:
+        startingAttachable: RMCAttachmentM54CStockCollapsibleWhite
+        whitelist:
+          tags:
+          - RMCAttachmentM54CStockSolid
+          - RMCAttachmentM54CStockCollapsible
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - RMCAttachmentAngledGrip
+          - RMCAttachmentBipod
+          - RMCAttachmentFlashlightGrip
+          - RMCAttachmentGyroscopicStabilizer
+          - RMCAttachmentLaserSight
+          - RMCAttachmentU1GrenadeLauncher
+          - RMCAttachmentU7UnderbarrelShotgun
+          - RMCAttachmentVerticalGrip
+          - RMCAttachmentExtinguisher
+          - RMCAttachmentFlamer
+        random:
+        - RMCAttachmentAngledGrip
+        - RMCAttachmentVerticalGrip
+        - RMCAttachmentU7UnderbarrelShotgun
+        - RMCAttachmentLaserSight
+
+- type: entity
+  parent: CMBaseWeaponSMG
+  name: M39B/2 submachine gun
+  id: RMCWeaponSMGM63B2MP
+  description: A modified version M39 submachinegun, re-engineered for better weight, handling and accuracy. Given only to elite units.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/SMGs/m63b2.rsi
+    layers:
+    - state: bolt-open
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/SMGs/m63b2.rsi
+  - type: Gun
+    shotsPerBurst: 3
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_m63.ogg
+  - type: RMCSelectiveFire
+    baseFireModes:
+    - SemiAuto
+    - Burst
+    - FullAuto
+    recoilWielded: 1
+    recoilUnwielded: 1
+    scatterWielded: 10
+    scatterUnwielded: 10
+    baseFireRate: 6.666
+    burstScatterMult: 1
+    modifiers:
+      Burst:
+        fireDelay: 0.0999
+        maxScatterModifier: 7
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 6
+      FullAuto:
+        maxScatterModifier: 10
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 4
+  - type: RMCWeaponAccuracy
+    accuracyMultiplier: 1.35
+    accuracyMultiplierUnwielded: 1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: CMMagazineSMGM63AP
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - CMMagazineSMGM63
+          - CMMagazineSMGM63AP
+          - CMMagazineSMGM63Ext
+          - RMCMagazineSMGM63Rubber
+          - RMCMagazineSMGM63HEAP
+          - RMCMagazineSMGM63WP
+          - RMCMagazineSMGM63Incendiary
+  - type: GunDamageModifier
+    multiplier: 1.2
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        startingAttachable: RMCAttachmentSuppressor
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentRecoilCompensator
+          - RMCAttachmentSuppressor
+          - RMCM5Bayonet
+      rmc-aslot-rail:
+        startingAttachable: RMCAttachmentMagneticHarness
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentMagneticHarness
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS5MicroRedDotSight
+          - RMCAttachmentS6ReflexSight
+          - RMCAttachmentS42xTelescopicMiniscope
+      rmc-aslot-stock:
+        startingAttachable: RMCAttachmentM63StockCollapsible
+        whitelist:
+          tags:
+          - RMCAttachmentM63ArmBrace
+          - RMCAttachmentM63Stock
+          - RMCAttachmentM63StockCollapsible
+      rmc-aslot-underbarrel:
+        startingAttachable: RMCAttachmentVerticalGrip
+        whitelist:
+          tags:
+          - RMCAttachmentAngledGrip
+          - RMCAttachmentFlashlightGrip
+          - RMCAttachmentGyroscopicStabilizer
+          - RMCAttachmentLaserSight
+          - RMCAttachmentVerticalGrip
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-barrel: 0.8, 0.06
+      rmc-aslot-rail: 0.032, 0.155
+      rmc-aslot-stock: -0.81, 0.035
+      rmc-aslot-underbarrel: 0.25, -0.25
+  - type: Tag
+    tags:
+    - RMCWeaponSMG
+    - RMCWeaponSMGM63B2MP
+  - type: ItemCamouflage
+    camouflageVariations: { }
+
+- type: Tag
+  id: RMCWeaponSMGM63B2MP
+
+- type: entity
+  parent: ClothingHeadBase
+  id: AU14WYPMCBallCapSLMP
+  name: PMC guard leader tactical cap
+  description: A protective cap made from flexible kevlar. Standard issue for most security firms in the place of a helmet.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/EventContent/Stukov/wymp/helmet_sl.rsi
+  - type: Clothing
+    sprite: _RuMC14/EventContent/Stukov/wymp/helmet_sl.rsi
+  - type: CMArmor
+    melee: 20
+    bullet: 20
+    bio: 10
+    explosionArmor: 20
+
+- type: entity
+  parent: ClothingHeadBase
+  id: AU14WYPMCBallCapMP
+  name: PMC guard tactical cap
+  description: A protective cap made from flexible kevlar. Standard issue for most security firms in the place of a helmet.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/EventContent/Stukov/wymp/helmet.rsi
+  - type: Clothing
+    sprite: _RuMC14/EventContent/Stukov/wymp/helmet.rsi
+  - type: CMArmor
+    melee: 20
+    bullet: 20
+    bio: 10
+    explosionArmor: 20
+
+- type: entity
+  parent: [RMCBaseMarineArmor, RMCAllowSuitStorageClothingArmorPMC]
+  id: CMArmorM4PMCLeaderMP
+  name: M4 pattern PMC guard leader armor
+  description: A modification of the standard M3 armor. Designed for high-profile security operators and corporate mercenaries in mind. This particular suit looks like it belongs to a high-ranking officer.
+  components:
+  - type: RMCArmorSpeedTier
+    speedTier: medium
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
+  - type: Sprite
+    sprite: _RuMC14/EventContent/Stukov/wymp/armor_sl.rsi
+  - type: CMArmor
+    melee: 25
+    bullet: 25 # CLOTHING_ARMOR_MEDIUMHIGH
+    bio: 20 # CLOTHING_ARMOR_MEDIUM
+    explosionArmor: 20 # CLOTHING_ARMOR_MEDIUM
+  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+    walkModifier: 0.725
+    sprintModifier: 0.725
+  - type: Storage
+    grid:
+    - 0,0,3,1 # 2 slots
+  - type: ItemCamouflage
+    camouflageVariations: { }
+
+- type: entity
+  parent: [RMCBaseMarineArmor, RMCAllowSuitStorageClothingArmorPMC]
+  id: CMArmorM4PMCMP
+  name:  M4 pattern PMC guard armor
+  description: A modification of the standard Armat Systems M3 armor. Designed for high-profile security operators and corporate mercenaries in mind. This one belongs to high profile elite guard within the W-Y PMC.
+  components:
+  - type: RMCArmorSpeedTier
+    speedTier: medium
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
+  - type: Sprite
+    sprite: _RuMC14/EventContent/Stukov/wymp/armor.rsi
+  - type: CMArmor
+    melee: 25
+    bullet: 25 # CLOTHING_ARMOR_MEDIUMHIGH
+    bio: 20 # CLOTHING_ARMOR_MEDIUM
+    explosionArmor: 20 # CLOTHING_ARMOR_MEDIUM
+  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+    walkModifier: 0.725
+    sprintModifier: 0.725
+  - type: Storage
+    grid:
+    - 0,0,3,1 # 2 slots
+  - type: ItemCamouflage
+    camouflageVariations: { }
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: MyIconInv
+  icon:
+    sprite: _RuMC14/EventContent/Stukov/wymp/icons.rsi
+    state: pmc_inv
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: MyIconMI
+  icon:
+    sprite: _RuMC14/EventContent/Stukov/wymp/icons.rsi
+    state: pmc_mi
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: MyIconPMCMP
+  icon:
+    sprite: _RuMC14/EventContent/Stukov/wymp/icons.rsi
+    state: pmc_mp
