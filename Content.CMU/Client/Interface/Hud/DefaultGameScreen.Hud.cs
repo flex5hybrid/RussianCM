@@ -25,6 +25,10 @@ public sealed partial class DefaultGameScreen
             _cmuHud.Apply();
         });
         Chat.EnableHudWorkspace();
+        // RuMC edit start
+        var layout = UserInterfaceManager.GetUIController<CmuHudLayoutController>();
+        Chat.PlacedResize = (rect, commit) => layout.TryResizeByDrag(Chat, rect.TopLeft, rect.Size, commit);
+        // RuMC edit end
         SetGrowHorizontal(Chat, GrowDirection.Begin);
         SetGrowVertical(Chat, GrowDirection.End);
         OnResized += CMUUpdateHudLayout;

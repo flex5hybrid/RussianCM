@@ -100,7 +100,7 @@ public sealed class QualificationSqliteTests
         await service.Apply(Manager, QualificationAction.Note, Request(""));
         await service.Apply(Manager, QualificationAction.Suspend, Request("medical"));
         var instructor = Request(""); instructor.Revision = service.Snapshot().Revision;
-        instructor.Payload = JsonSerializer.Serialize(new InstructorAccreditation(true, true, false, new() { "medical" }, _manager, default, _manager, default));
+        instructor.Payload = JsonSerializer.Serialize(new InstructorAccreditation(true, InstructorRank.SeniorInstructor, _manager, default, _manager, default));
         await service.Apply(Manager, QualificationAction.SaveInstructor, instructor);
         var acl = Request(""); acl.Revision = service.Snapshot().Revision;
         acl.Payload = JsonSerializer.Serialize(new[] { _manager });
@@ -120,7 +120,7 @@ public sealed class QualificationSqliteTests
         await restarted.Initialize(Seed()); Assert.That(restarted.Available, Is.True);
         Assert.That(JsonSerializer.Serialize(restarted.Snapshot()), Is.EqualTo(written), "Every persisted field must survive a repository/service restart");
         Assert.That(restarted.CanTakeJob(_student, "medical_job").Allowed, Is.False);
-        Assert.That(restarted.Snapshot().Instructors[_student].Professional, Does.Contain("medical"));
+        Assert.That(restarted.Snapshot().Instructors[_student].Rank, Is.EqualTo(InstructorRank.SeniorInstructor));
         Assert.That(restarted.Snapshot().Notes.Single().Text, Is.EqualTo(Request("").Reason));
         Assert.That(QualificationRules.EffectiveLevel(restarted.GetPlayerTrainingState(imported)), Is.EqualTo(MilitaryLevel.Officer));
         await restarted.Apply(Manager, QualificationAction.Restore, Request("medical"));

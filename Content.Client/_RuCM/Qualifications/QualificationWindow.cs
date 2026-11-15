@@ -24,6 +24,7 @@ public sealed partial class QualificationWindow : DefaultWindow
 {
     private readonly Action<QualificationAction, QualificationRequest> _send;
     private readonly BoxContainer _root = Column();
+    private readonly BoxContainer _header = Column(); // CMU14: update the header without detaching the scrollbars.
     private readonly BoxContainer _content = Column();
     private readonly BoxContainer _navigation = Column();
     // CMU14: retain scrollbar ranges and animation targets across authoritative view updates.
@@ -76,6 +77,22 @@ public sealed partial class QualificationWindow : DefaultWindow
         Contents.AddChild(screen);
         Contents.AddChild(new CrtScreenControl { Source = screen, HorizontalExpand = true, VerticalExpand = true,
             Roll = false, Grain = false, Curvature = 0, Vignette = 0, ArtifactAmount = 0 });
+        // CMU14 Begin: preserve mouse capture and scrollbar ranges during server updates.
+        _root.AddChild(_header);
+        var body = Row();
+        body.VerticalExpand = true;
+        _root.AddChild(body);
+        var navPanel = new PanelContainer { MinWidth = 220, MaxWidth = 250, HorizontalExpand = false,
+            StyleClasses = { StyleNano.StyleClassCrtInsetPanel } };
+        _navigation.Margin = new Thickness(8);
+        _navigationScroll.AddChild(_navigation);
+        navPanel.AddChild(_navigationScroll);
+        body.AddChild(navPanel);
+        _content.Margin = new Thickness(2, 0, 10, 6);
+        _pageScroll.AddChild(_content);
+        body.AddChild(_pageScroll);
+        _root.AddChild(_feedback);
+        // CMU14 End
         Render();
     }
 
@@ -89,6 +106,8 @@ public sealed partial class QualificationWindow : DefaultWindow
         (context.Character.Length == 0 ? "" : " · " + context.Character);
     private PlayerTrainingState? State => _view.Store.Players.GetValueOrDefault(_view.Target);
     private bool CanTrain => _view.Instructor || _view.Management;
+    private InstructorRank? ViewerRank => QualificationRules.GetInstructorRank(_view.Management, // CMU14
+        _view.Store.Instructors.GetValueOrDefault(_view.Viewer));
     private bool CanSuspend => _view.Officer || _view.CommandingOfficer || _view.Administrator;
     private bool Ready => _view.Available && !_pending && !_preview;
     private bool Confirmed => Ready && _confirmed && !string.IsNullOrWhiteSpace(_reason);
@@ -273,9 +292,7 @@ public sealed partial class QualificationWindow : DefaultWindow
 
     private void Render()
     {
-        _pageScroll.Orphan(); _navigationScroll.Orphan(); // CMU14: keep the same scroll controls when rebuilding their contents.
-        _feedback.Orphan(); _navigation.Orphan(); _content.Orphan();
-        _root.RemoveAllChildren(); _navigation.RemoveAllChildren(); _content.RemoveAllChildren(); _actions.Clear();
+        _header.RemoveAllChildren(); _navigation.RemoveAllChildren(); _content.RemoveAllChildren(); _actions.Clear(); // CMU14
         if (!Pages().Any(p => p.Id == _page)) _page = "dossier";
         // CMU14: another page/account starts at the top; refreshing the same dossier stays put.
         var scope = _view.Target + "/" + _page;
@@ -288,8 +305,8 @@ public sealed partial class QualificationWindow : DefaultWindow
         _scrollScope = scope;
         _scope = scope;
 
-        if (_preview) Text(_root, L("local-preview"), StyleNano.CrtWarning);
-        var header = Row(); _root.AddChild(header);
+        if (_preview) Text(_header, L("local-preview"), StyleNano.CrtWarning); // CMU14
+        var header = Row(); _header.AddChild(header); // CMU14
         var identity = Column(); header.AddChild(identity);
         Heading(identity, L("terminal-heading"));
         Text(identity, L("terminal-subtitle"));
@@ -297,10 +314,11 @@ public sealed partial class QualificationWindow : DefaultWindow
         Text(status, _view.Available ? L("link-online") : L("link-offline"), _view.Available ? StyleNano.CrtGreen : StyleNano.CrtWarning);
         Button(status, L("refresh"), () => { if (_preview) Render(); else Send(QualificationAction.View, Request()); }, () => !_pending, name: "refresh");
 
-        var target = Row(); _root.AddChild(target);
+        var target = Row(); _header.AddChild(target); // CMU14
         var targetInfo = Column(); target.AddChild(targetInfo);
         Text(targetInfo, L("selected-person") + " · " + TargetName + " · " + L(_view.TargetOnline ? "person-online" : "person-offline"), StyleNano.CrtGreen);
-        Text(targetInfo, L("access-scope-" + (_view.Management ? "management" : CanTrain ? "instructor" : CanSuspend ? "officer" : "player")));
+        Text(targetInfo, ViewerRank is { } rank ? InstructorRankName(rank) : // CMU14
+            L("access-scope-" + (CanSuspend ? "officer" : "player")));
         if (_view.Management || _view.Instructor || CanSuspend)
         {
             var picker = Row(); target.AddChild(picker);
@@ -309,11 +327,6 @@ public sealed partial class QualificationWindow : DefaultWindow
                 () => !_pending && _view.Target != _view.Viewer, name: "open-self");
         }
 
-        var body = Row(); body.VerticalExpand = true; _root.AddChild(body);
-        var navPanel = new PanelContainer { MinWidth = 220, MaxWidth = 250, HorizontalExpand = false,
-            StyleClasses = { StyleNano.StyleClassCrtInsetPanel } };
-        // CMU14: navigation must retain its own scroll position too.
-        _navigation.Margin = new Thickness(8); _navigationScroll.AddChild(_navigation); navPanel.AddChild(_navigationScroll); body.AddChild(navPanel);
         foreach (var page in Pages())
         {
             var id = page.Id;
@@ -328,7 +341,6 @@ public sealed partial class QualificationWindow : DefaultWindow
             Text(caption, L("nav-" + id), id == _page ? StyleNano.CrtGreen : StyleNano.CrtGreenSoft);
             nav.AddChild(caption);
         }
-        _content.Margin = new Thickness(2, 0, 10, 6); _pageScroll.AddChild(_content); body.AddChild(_pageScroll); // CMU14
         PageHeading(L("nav-" + _page), L("help-" + _page));
         switch (_page)
         {
@@ -347,7 +359,6 @@ public sealed partial class QualificationWindow : DefaultWindow
             case "metrics": RenderMetrics(); break;
             case "audit": RenderAudit(); break;
         }
-        var footer = Column(); _root.AddChild(footer); footer.AddChild(_feedback);
         if (_pending) Feedback(L("sending"));
         else if (!_view.Available) Feedback(L("storage-unavailable"), true);
         else if (_view.Error == "saved") Feedback(L("saved"));
@@ -523,8 +534,8 @@ public sealed partial class QualificationWindow : DefaultWindow
         else if (!_view.Management && !_view.TargetOnline) Text(action, L("training-offline-locked"), StyleNano.CrtWarning);
         else if (!_view.Management && !_view.InstructorOnDuty) Text(action, L("training-duty-locked"), StyleNano.CrtWarning);
         Text(action, L("program-label"), StyleNano.CrtGreen);
-        var definitions = _view.Store.Definitions.Values.Where(d => d.Enabled && (_view.Management ||
-            QualificationRules.CanTrain(_view.Store.Instructors.GetValueOrDefault(_view.Viewer), d.Id))).ToArray();
+        var rank = ViewerRank; // CMU14
+        var definitions = _view.Store.Definitions.Values.Where(d => d.Enabled && QualificationRules.CanTrain(rank, d.Id)).ToArray();
         if (!definitions.Any(d => d.Id == _selectedDefinition)) _selectedDefinition = definitions.FirstOrDefault()?.Id ?? "";
         Select(action, definitions.Select(d => new KeyValuePair<string, string>(d.Id, Name(d.Name))), _selectedDefinition,
             id => { _selectedDefinition = id; Render(); });
@@ -638,8 +649,8 @@ public sealed partial class QualificationWindow : DefaultWindow
             () => Confirmed && itemId.Length > 0, danger: true);
     }
 
-    private Dictionary<string, CheckBox> ProfessionalChecks(BoxContainer box, HashSet<string> selected, bool includeCommand = true) => _view.Store.Definitions.Values
-        .Where(d => !QualificationRules.Levels.Contains(d.Id) && (includeCommand || d.Id != "commanding_officer"))
+    private Dictionary<string, CheckBox> ProfessionalChecks(BoxContainer box, HashSet<string> selected) => _view.Store.Definitions.Values
+        .Where(d => !QualificationRules.Levels.Contains(d.Id))
         .OrderBy(d => Name(d.Name)).ToDictionary(d => d.Id, d => Check(box, "professional-" + d.Id, Name(d.Name), selected.Contains(d.Id)));
 
     private void RenderRoleSettings()
@@ -708,20 +719,29 @@ public sealed partial class QualificationWindow : DefaultWindow
         }, () => Confirmed && id.Text.Length > 0 && name.Text.Length > 0);
     }
 
+    // CMU14 Begin: management assigns regular and senior accreditation. Chiefs inherit management access.
+    private static string InstructorRankName(InstructorRank rank) => L("instructor-rank-" + rank.ToString().ToLowerInvariant());
+
     private void RenderAccreditation()
     {
         var form = Card(_content, L("instructor-management"), L("accreditation-help"));
         Text(form, L("selected-person") + " " + TargetName, StyleNano.CrtGreen);
         var accreditation = _view.Store.Instructors.GetValueOrDefault(_view.Target);
         var active = Check(form, "instructor-active", L("enabled"), accreditation?.Active ?? false);
-        var enlisted = Check(form, "instructor-enlisted", L("train-enlisted"), accreditation?.Enlisted ?? false);
-        var sergeant = Check(form, "instructor-sergeant", L("train-sergeant"), accreditation?.Sergeant ?? false);
-        Text(form, L("instructor-professional-help"));
-        var professional = ProfessionalChecks(form, accreditation?.Professional ?? new(), false);
+        var rankKey = _scope + "/instructor-rank";
+        var selected = _drafts.GetValueOrDefault(rankKey, (accreditation?.Rank ?? InstructorRank.Instructor).ToString());
+        var ranks = new[] { InstructorRank.Instructor, InstructorRank.SeniorInstructor };
+        var rank = Enum.Parse<InstructorRank>(selected);
+        var rankSelect = Select(form, ranks.Select(r => new KeyValuePair<string, string>(r.ToString(), InstructorRankName(r))),
+            selected, id => { _drafts[rankKey] = id; rank = Enum.Parse<InstructorRank>(id); });
+        rankSelect.Name = "instructor-rank";
         ManagementGuard();
-        Button(_content, L("save-instructor"), () => Mutate(QualificationAction.SaveInstructor, new() { Instructor = new InstructorAccreditation
-            (active.Pressed, enlisted.Pressed, sergeant.Pressed, professional.Where(p => p.Value.Pressed).Select(p => p.Key).ToHashSet(), Guid.Empty, default, Guid.Empty, default) }), () => Confirmed);
+        Button(_content, L("save-instructor"), () => Mutate(QualificationAction.SaveInstructor, new()
+        {
+            Instructor = new(active.Pressed, rank, Guid.Empty, default, Guid.Empty, default),
+        }), () => Confirmed);
     }
+    // CMU14 End
 
     private void RenderPermissions()
     {

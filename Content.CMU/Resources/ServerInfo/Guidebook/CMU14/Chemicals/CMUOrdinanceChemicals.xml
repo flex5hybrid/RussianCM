@@ -1,13 +1,13 @@
 ﻿<Document>
 
-  # Incinerator Fuel
+  # Топливо для огнемёта
 
   <GuideReagentEmbed Reagent="RMCNapalmSticky"/>
   <GuideReagentEmbed Reagent="RMCNapalmHighCombustion"/>
 
-  ## Limited
+  ## Ограниченное
 
-  ### Purchaseable
+  ### Покупаемое
 
   <GuideReagentEmbed Reagent="WeldingFuel"/>
   <GuideReagentEmbed Reagent="RMCNapalmUT"/>
@@ -15,28 +15,28 @@
   <GuideReagentEmbed Reagent="RMCNapalmB"/>
   <GuideReagentEmbed Reagent="RMCNapalmX"/>
 
-  ### Un-Purchasable
+  ### Непокупаемое
 
   <GuideReagentEmbed Reagent="RMCNapalmE"/>
   <GuideReagentEmbed Reagent="RMCNapalmEX"/>
   <GuideReagentEmbed Reagent="RMCR189"/>
 
-  # Precursors
+  # Прекурсоры
 
   <GuideReagentEmbed Reagent="RMCCLF3"/>
   <GuideReagentEmbed Reagent="RMCSulphuricAcid"/>
   <GuideReagentEmbed Reagent="RMCNapalm"/>
 
-  # Custom Chemical Grenades
+  # Самодельные химические гранаты
 
-  Engineering vendors stock an empty [bold]custom grenade[/bold] casing and a [bold]chemical payload[/bold]. Fit a timer trigger and the payload into the casing, then load two beakers into the payload. When the grenade triggers, the beakers are mixed together and whatever reaction their contents make happens on the spot.
+  В инженерных торговцах есть пустой [bold]корпус самодельной гранаты[/bold] и [bold]химический заряд[/bold]. Вставьте в корпус триггер с таймером и заряд, затем загрузите в заряд две мензурки. Когда граната срабатывает, содержимое мензурок смешивается, и реакция, которую дают их содержимые, происходит на месте.
 
-  Smoke and foam reactions carry every other chemical in the payload with them and apply it to anyone they touch or who breathes them in, so a research chemical in the second beaker rides the cloud. Gas masks and internals block inhalation.
+  Реакции дыма и пены несут с собой все остальные химикаты в заряде и применяют их ко всем, кого они касаются или кто их вдыхает, поэтому исследовательский химикат во второй мензурке едет на облаке. Противогазы и внутренние системы блокируют вдыхание.
 
-  - [bold]Smoke:[/bold] phosphorus, potassium and sugar.
-  - [bold]Tear gas:[/bold] smoke plus tear gas (chlorine, carbon and oxygen), or any chemical with the Irritating property.
-  - [bold]Foam:[/bold] fluorosurfactant (carbon, fluorine, sulphuric acid) and water.
-  - [bold]Metal foam:[/bold] foaming agent (lithium and hydrogen) with aluminium, or with iron and polytrinic acid.
-  - [bold]Incendiary:[/bold] any reaction whose product is a fuel. Research chemicals with Fueling or Oxidizing burn; those with Explosive detonate on synthesis.
+  - [bold]Дым:[/bold] фосфор, калий и сахар.
+  - [bold]Слезоточивый газ:[/bold] дым плюс слезоточивый газ (хлор, углерод и кислород) или любой химикат со свойством «Раздражающий».
+  - [bold]Пена:[/bold] фторосурфактант (углерод, фтор, серная кислота) и вода.
+  - [bold]Металлическая пена:[/bold] пенообразователь (литий и водород) с алюминием или с железом и политриновой кислотой.
+  - [bold]Зажигательное:[/bold] любая реакция, продукт которой является топливом. Исследовательские химикаты со свойствами «Топливо» или «Окислитель» горят; те, что со свойством «Взрывчатое», детонируют при синтезе.
 
 </Document>

@@ -9,6 +9,8 @@ namespace Content.Shared._RuCM.Qualifications;
 public enum MilitaryLevel { None, Enlisted, Sergeant, Officer }
 [Serializable, NetSerializable]
 public enum QualificationStatus { Active, Suspended, Revoked }
+[Serializable, NetSerializable]
+public enum InstructorRank { Instructor, SeniorInstructor, ChiefInstructor } // CMU14
 public enum QualificationMode { Disabled, Warn, Enforce }
 
 [Serializable, NetSerializable]
@@ -76,7 +78,7 @@ public sealed record AuditEntry(Guid Id, string Action, Guid Actor, Guid? Target
     public DateTimeOffset At { get => _at.Value; init => _at = QualificationTimestamp.From(value); }
 }
 [Serializable, NetSerializable]
-public sealed record InstructorAccreditation(bool Active, bool Enlisted, bool Sergeant, HashSet<string> Professional,
+public sealed record InstructorAccreditation(bool Active, InstructorRank Rank, // CMU14: legacy JSON defaults to Instructor.
     Guid GrantedBy, DateTimeOffset GrantedAt, Guid ModifiedBy, DateTimeOffset ModifiedAt)
 {
     private QualificationTimestamp _grantedAt = QualificationTimestamp.From(GrantedAt);
@@ -164,7 +166,7 @@ public sealed class QualificationStore
             Grants = p.Value.Grants.ToDictionary(g => g.Key, g => g.Value with { RequiredItems = g.Value.RequiredItems.ToArray() }),
             Progress = p.Value.Progress.ToDictionary(g => g.Key, g => new Dictionary<string, ChecklistCompletion>(g.Value))
         }),
-        Instructors = Instructors.ToDictionary(p => p.Key, p => p.Value with { Professional = new(p.Value.Professional) }),
+        Instructors = new(Instructors), // CMU14: rank and accreditation metadata are immutable.
         Management = new(Management), OfficerJobs = new(OfficerJobs), CommandingOfficerJobs = new(CommandingOfficerJobs),
         Notes = new(Notes), Audit = new(Audit), Migrations = new(Migrations), Participation = new(Participation),
         MigrationGroups = MigrationGroups.ToDictionary(p => p.Key, p => new HashSet<string>(p.Value)),
@@ -224,27 +226,29 @@ public static partial class QualificationRules // CMU14: allocation-free admissi
         if (!role.Enabled && !instructor) return new(true, Array.Empty<string>());
         var missing = new List<string>();
         var minimum = instructor && role.MinimumLevel < MilitaryLevel.Sergeant ? MilitaryLevel.Sergeant : role.MinimumLevel;
-        if (instructor && accreditation is not { Active: true }) missing.Add("instructor_accreditation");
+        if (instructor && GetInstructorRank(false, accreditation) == null) missing.Add("instructor_accreditation"); // CMU14
         if (EffectiveLevel(player) < minimum) missing.Add(minimum.ToString().ToLowerInvariant());
         foreach (var id in role.Professional.OrderBy(x => x, StringComparer.Ordinal))
         {
-            if (player == null || !player.Grants.TryGetValue(id, out var grant) || grant.Status != QualificationStatus.Active)
+            if (!HasProfessionalQualification(player, id)) // CMU14
                 missing.Add(id);
         }
         return new(missing.Count == 0, missing.ToArray());
     }
 
-    public static bool CanTrain(InstructorAccreditation? instructor, string id)
+    // CMU14 Begin: Chief Instructor authority comes from project management access.
+    public static InstructorRank? GetInstructorRank(bool management, InstructorAccreditation? accreditation) =>
+        management ? InstructorRank.ChiefInstructor : accreditation is
+            { Active: true, Rank: InstructorRank.Instructor or InstructorRank.SeniorInstructor } ? accreditation.Rank : null;
+
+    public static bool CanTrain(InstructorRank? rank, string id) => rank switch
     {
-        if (instructor == null || !instructor.Active) return false;
-        return id switch
-        {
-            "enlisted" => instructor.Enlisted,
-            "sergeant" => instructor.Sergeant,
-            "officer" or "commanding_officer" => false,
-            _ => instructor.Professional.Contains(id)
-        };
-    }
+        InstructorRank.ChiefInstructor => true,
+        InstructorRank.SeniorInstructor => id != "commanding_officer",
+        InstructorRank.Instructor => id is "enlisted" or "squad_leader" or "heavy_weapons" or "field_engineering",
+        _ => false,
+    };
+    // CMU14 End
 
     public static bool ChecklistComplete(PlayerTrainingState player, QualificationDefinition definition) =>
         definition.Enabled && definition.Items.Any(i => i.Enabled) && definition.Items.Where(i => i.Enabled && i.Required)

@@ -17111,6 +17111,15 @@ Entries:
   - 'Changes: Map'
   - M
 - author: RomiGur
+  time: '2026-11-02T04:50:14Z'
+  changes:
+  - type: Fix
+    message: Рация из снабжения больше не приходит ОПФОР с ключами ГОВФОР
+  id: 1092
+  url: https://github.com/flex5hybrid/RussianCM/pull/582
+  labels:
+  - S
+- author: RomiGur
   time: '2026-11-02T04:50:42Z'
   changes:
   - type: Add
@@ -17247,6 +17256,37 @@ Entries:
   id: 1000
   time: '2026-11-02T14:04:24.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2423
+- author: HubaBuba
+  time: '2026-11-02T15:18:05Z'
+  changes:
+  - type: Add
+    message: Добавлен отряд SOF (Moscow) в консоль посла СПН.
+  - type: Add
+    message: Добавлены отряды VDV (zvezda и vimpel) в консоль ГОФОР СПН.
+  - type: Add
+    message: Добавлена форма для танкиста и пилота СПН.
+  - type: Add
+    message: Создана новая система для выбора специализации отрядов в планшете КО.
+      Из возможных вариантов специализации - Разведка, Штурмовики, Инженеры.
+  - type: Tweak
+    message: Изменены некоторые спрайты.
+  id: 1091
+  url: https://github.com/flex5hybrid/RussianCM/pull/554
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Sprites'
+  - XL
+- author: Hubabuber
+  time: '2026-11-02T16:08:36Z'
+  changes:
+  - type: Add
+    message: Добавлены значки.
+  id: 1095
+  url: https://github.com/flex5hybrid/RussianCM/pull/587
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Sprites'
+  - M
 - author: ArturUr1
   time: '2026-11-02T18:17:46Z'
   changes:
@@ -17259,6 +17299,17 @@ Entries:
   labels:
   - 'Changes: No C#'
   - M
+- author: RomiGur
+  time: '2026-11-02T18:17:59Z'
+  changes:
+  - type: Fix
+    message: На танк ИТМ теперь можно поставить в качестве основной пушки только 45mm
+      L26A2 и L215A1.
+  id: 1093
+  url: https://github.com/flex5hybrid/RussianCM/pull/583
+  labels:
+  - 'Changes: No C#'
+  - XS
 - author: ArturUr1
   changes:
   - message: Synthetics can now throw creatures they are carrying on their shoulder.
@@ -17409,6 +17460,30 @@ Entries:
   id: 1012
   time: '2026-11-02T22:17:14.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2436
+- author: flex5hybrid
+  time: '2026-11-02T22:38:01Z'
+  changes:
+  - type: Code
+    message: Удалено дублирование обработки урона корпуса техники RuCMU; используется
+      метод CMU.
+  id: 1096
+  url: https://github.com/flex5hybrid/RussianCM/pull/591
+  labels:
+  - S
+- author: flex5hybrid
+  time: '2026-11-03T05:10:21Z'
+  changes:
+  - type: Code
+    message: Удалены повторные ресурсы, из-за которых падала упаковка клиента; добавлена
+      проверка пересечений каталогов ресурсов в CI.
+  id: 1097
+  url: https://github.com/flex5hybrid/RussianCM/pull/594
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Sprites'
+  - 'Changes: Audio'
+  - 'Changes: Translations'
+  - XL
 - author: TheHellFireo
   changes:
   - message: Liquid pipes now have rotatable straight, elbow, T-junction and cross
@@ -17583,6 +17658,48 @@ Entries:
   id: 1019
   time: '2026-11-04T04:05:24.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2462
+- author: ArturUr1
+  time: '2026-11-04T17:04:59Z'
+  changes:
+  - type: Tweak
+    message: Изменены внутриигровые правила Восстания и ролей с повышенной ответственностью
+  id: 1101
+  url: https://github.com/flex5hybrid/RussianCM/pull/598
+  labels:
+  - 'Changes: No C#'
+  - S
+- author: ArturUr1
+  time: '2026-11-04T18:59:51Z'
+  changes:
+  - type: Fix
+    message: Кастомные крафты алкоголя и шприцов
+  id: 1100
+  url: https://github.com/flex5hybrid/RussianCM/pull/597
+  labels:
+  - 'Changes: No C#'
+  - S
+- author: flex5hybrid
+  time: '2026-11-04T19:00:15Z'
+  changes:
+  - type: Tweak
+    message: Категории автоматов выдачи, названия комплектов и подсказки переведены
+      на русский язык.
+  id: 1098
+  url: https://github.com/flex5hybrid/RussianCM/pull/595
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Translations'
+  - L
+- author: ArturUr1
+  time: '2026-11-04T19:01:19Z'
+  changes:
+  - type: Tweak
+    message: Яутжи теперь могут спавниться в режиме "Восстание" с таким же шансом,
+      как и в других режимах.
+  id: 1099
+  url: https://github.com/flex5hybrid/RussianCM/pull/596
+  labels:
+  - XS
 - author: '- add: Добавлен CRT HUD с панелью взаимодействий с окружением и каталогом
     доступных эмоций.'
   time: '2026-11-04T19:24:35Z'
@@ -17710,6 +17827,17 @@ Entries:
   id: 1026
   time: '2026-11-05T12:38:26.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2478
+- author: EmperorStukov
+  time: '2026-11-05T15:32:45Z'
+  changes:
+  - type: Tweak
+    message: Изменён русский перевод некоторых званий СПН
+  id: 1102
+  url: https://github.com/flex5hybrid/RussianCM/pull/600
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Translations'
+  - S
 - author: maertayn
   changes:
   - message: Vulture sniper rounds no longer lose almost all their damage on near-misses
@@ -17763,6 +17891,16 @@ Entries:
   - 'Changes: Translations'
   - 'Changes: Shaders'
   - L
+- author: RomiGur
+  time: '2026-11-06T01:27:35Z'
+  changes:
+  - type: Add
+    message: Теперь для запроса отряда нужно оставить ему сообщение(например чтобы
+      выдать задание), которое зачитает ИИ ГЕРМЕС на голопаде
+  id: 1103
+  url: https://github.com/flex5hybrid/RussianCM/pull/601
+  labels:
+  - M
 - author: ILoveDespoiler
   changes:
   - message: 'Added a brand new Leap ability onto Harbinger: "Flurry Rush" allows
@@ -18214,6 +18352,28 @@ Entries:
     type: Add
   id: 1057
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2443
+- author: EarnestAxis5546
+  time: '2026-11-06T19:17:15Z'
+  changes:
+  - type: Add
+    message: Добавлен иврит (Hebrew) в качестве нового доступного языка со своим уникальным
+      набором слогов для обфускации, трейтом и обучающей брошюрой.
+  id: 1094
+  url: https://github.com/flex5hybrid/RussianCM/pull/585
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Translations'
+  - S
+- author: ArturUr1
+  time: '2026-11-06T19:29:08Z'
+  changes:
+  - type: Fix
+    message: Помощнику корпоративного связного теперь выдается его печать
+  id: 1090
+  url: https://github.com/flex5hybrid/RussianCM/pull/553
+  labels:
+  - 'Changes: No C#'
+  - XS
 - author: '- tweak: Командный состав ГОВФОР и корпоративный связной больше не могут
     стать колониальными антагонистами'
   time: '2026-11-07T14:38:14Z'
@@ -18426,6 +18586,26 @@ Entries:
     type: Fix
   id: 1069
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2503
+- author: ArturUr1
+  time: '2026-11-07T21:47:16Z'
+  changes:
+  - type: Fix
+    message: Исправлены кастом крафты RuMC
+  id: 1104
+  url: https://github.com/flex5hybrid/RussianCM/pull/608
+  labels:
+  - 'Changes: No C#'
+  - XS
+- author: ArturUr1
+  time: '2026-11-07T21:54:52Z'
+  changes:
+  - type: Tweak
+    message: Рубиновая, аметистовая, изумрудная и призматическая медали возвращены
+      в игру. Время игры для получения медалей возвращено к стандартам RuMC
+  id: 1089
+  url: https://github.com/flex5hybrid/RussianCM/pull/510
+  labels:
+  - S
 - author: TheHellFireo
   time: '2026-11-08T11:28:14.0000000+00:00'
   changes:
@@ -18434,6 +18614,17 @@ Entries:
     type: Add
   id: 1070
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2536
+- author: RomiGur
+  time: '2026-11-08T11:58:43Z'
+  changes:
+  - type: Add
+    message: Добавлен лёгкий танк КОФ «Бегемот»
+  id: 1105
+  url: https://github.com/flex5hybrid/RussianCM/pull/610
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Sprites'
+  - M
 - author: TheHellFireo
   time: '2026-11-08T13:27:58.0000000+00:00'
   changes:
@@ -18442,6 +18633,47 @@ Entries:
     type: Fix
   id: 1071
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2517
+- author: TheHellFireo
+  changes:
+  - message: Xenos can destrain through the evolution menu, with a 30-minute cooldown
+      after each successful use.
+    type: Add
+  id: 1073
+  time: '2026-11-08T15:35:49.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2539
+- author: TheHellFireo
+  changes:
+  - message: Fixed RMC Actions sometimes selecting a hiveless xeno variant under a
+      normal caste button.
+    type: Admin
+  id: 1074
+  time: '2026-11-08T15:57:36.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2540
+- author: TheHellFireo
+  changes:
+  - message: Added craftable inserter arms with moving joints, flexible cables and
+      visible carried items for factory assembly lines.
+    type: Add
+  - message: Electrolyzers now separate their products into dedicated outlets instead
+      of pumping out input water.
+    type: Fix
+  - message: Default ASRS platforms now pay the shared account for exports, including
+      oil barrels.
+    type: Fix
+  id: 1075
+  time: '2026-11-08T16:00:25.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2538
+- author: TheHellFireo
+  changes:
+  - message: Reduce avoidable server allocation during gameplay and round cleanup.
+    type: Fix
+  - message: Correct the Charger strain's return-to-caste prototype reference.
+    type: Fix
+  - message: Report unavailable allocation measurements accurately.
+    type: Code
+  id: 1076
+  time: '2026-11-08T19:08:41.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2543
 - author: '- add: Добавлена анимация ходьбы и бега!'
   time: '2026-11-09T01:43:16Z'
   changes:
@@ -18453,5 +18685,618 @@ Entries:
   url: https://github.com/flex5hybrid/RussianCM/pull/612
   labels:
   - XL
+- author: TheHellFireo
+  changes:
+  - message: Keep Z-level visibility probes stable when changing parents on the same
+      map.
+    type: Fix
+  - message: Reduce delays processing server inputs during network send bursts and
+      simulation catch-up.
+    type: Fix
+  id: 1077
+  time: '2026-11-09T03:47:56.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2545
+- author: TheHellFireo
+  changes:
+  - message: Reduce server tick overhead and incoming packet delays, and prevent stale
+      NPC melee targets from interrupting AI updates.
+    type: Fix
+  id: 1078
+  time: '2026-11-09T03:48:30.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2547
+- author: RomiGur
+  time: '2026-11-09T16:09:12Z'
+  changes:
+  - type: Fix
+    message: В режиме Стенка на Стенку ГОВФОР и ОПФОР снова появляются на разных кораблях
+  id: 1106
+  url: https://github.com/flex5hybrid/RussianCM/pull/613
+  labels:
+  - S
+- author: KeiKiyomi
+  changes:
+  - message: Added pill recipe sheets and a machine that loads listed chemicals and
+      produces the formulation in a beaker.
+    type: Add
+  id: 1079
+  time: '2026-11-10T10:52:10.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2559
+- author: Kadeo64
+  changes:
+  - message: Double eggs in clearance X crate removed. We-Yu has seen fit to actually
+      look over the corpses of the Queens they've killed for these eggs, too.
+    type: Tweak
+  id: 1080
+  time: '2026-11-10T10:54:14.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2557
+- author: ILoveDespoiler
+  changes:
+  - message: Added a brand new Neomorph Strain, the Healer Haze. Sprites by Miyugi!
+    type: Add
+  - message: Adjusted some stats of regular Haze.
+    type: Tweak
+  id: 1081
+  time: '2026-11-10T10:54:46.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2546
+- author: KeiKiyomi
+  changes:
+  - message: Synths can still speak while decapped
+    type: Add
+  - message: Synths can now survive being delimbed
+    type: Tweak
+  - message: Queen and King gib now only rip off a synths legs (like in the movie)
+      but their legs cannot be reattatched ever again.
+    type: Tweak
+  - message: Synths no longer scream when they get hurt, only when they get gibbed
+    type: Tweak
+  id: 1082
+  time: '2026-11-10T10:55:26.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2544
+- author: rokudara-sen
+  changes:
+  - message: Yautja hunt prey no longer spawn with irradiated ammo or working night
+      vision. Their optics are fried and tell them so.
+    type: Fix
+  - message: The hunter ship now stocks working hunting traps and strange rope.
+    type: Fix
+  - message: Players whose job has no spawn point on the map now spawn at a sensible
+      fallback instead of a random leftover spawner.
+    type: Fix
+  - message: Chain whips can be unwrapped from the chain gauntlet, and right click
+      with the gauntlet shoves so the throw finisher works.
+    type: Fix
+  id: 1083
+  time: '2026-11-10T10:56:07.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2537
+- author: IntelligenceOfficerArthur
+  changes:
+  - message: 'The paramilitary element is now three teams: GRU Spetsnaz, CIA SAD and
+      the SAS, each with its own equipment rack.'
+    type: Add
+  - message: The CIA SAD rack now has a radio jammer, a Fulton extraction kit and
+      a flare pouch.
+    type: Add
+  - message: The SAS can pick the L83A2 or the MP5SD6, the CIA the XM4RA1 SOPMOD,
+      and the GRU now carries the AK-4047.
+    type: Add
+  - message: The SAS rack has balaclavas, the L22 gas mask, goggles and the M1A1 visor;
+      the CIA rack has goggles and gloves.
+    type: Add
+  - message: The Case Officer now carries a briefcase cuffed to his wrist. Only its
+      key unlocks it, wire cutters can cut it off, and the key can be swallowed.
+    type: Add
+  - message: The GRU Altyn now deploys from the UH7 GRU armor like a hardsuit helmet.
+    type: Fix
+  - message: The GRU sedative now actually puts targets to sleep.
+    type: Fix
+  - message: The M1A1 multi-spectrum visor whites out and blinds its wearer for 10
+      seconds near a lit flare.
+    type: Tweak
+  id: 1084
+  time: '2026-11-10T10:57:27.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2548
+- author: TheHellFireo
+  changes:
+  - message: Reduce server work in short ray queries, crowded-player visibility searches
+      and physics bookkeeping.
+    type: Code
+  - message: Prevent stale briefcase links and lobby shutdown errors.
+    type: Fix
+  id: 1085
+  time: '2026-11-10T19:07:07.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2567
+- author: RomiGur
+  time: '2026-11-10T22:22:48Z'
+  changes:
+  - type: Tweak
+    message: Бег снова основной темп движения, он больше не тратит выносливость
+  id: 1108
+  url: https://github.com/flex5hybrid/RussianCM/pull/617
+  labels:
+  - 'Changes: Translations'
+  - M
+- author: ILoveDespoiler
+  changes:
+  - message: Fixed HEAP being in regular govfor vendors
+    type: Fix
+  id: 1086
+  time: '2026-11-11T06:32:05.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2570
+- author: troytroy400
+  changes:
+  - message: You can now edit your character from the escape menu while ghosted.
+    type: Add
+  - message: English is now a language trait you pick like any other, instead of a
+      language everyone gets for free.
+    type: Add
+  - message: Each colony now has its own default language.
+    type: Add
+  - message: Colony, corporate and CLF characters, including CLF reinforcements, now
+      default to the colony's language.
+    type: Add
+  - message: Platoons now have a default language. On Insurgency, the GOVFOR CO, XO,
+      staff officers, intel officers, fireteam leaders and squad leaders can speak
+      the colony's language.
+    type: Add
+  - message: Ambassadors now speak their allegiance's languages as well as the colony's.
+    type: Add
+  - message: Civilian third parties now speak the colony's language. Migrants also
+      speak the language of the faction that called them.
+    type: Add
+  - message: New ambassador call-ins. Embassy Staff (all ambassadors), Trade Delegation
+      (CCA, ICSC), Labor Union Organizers (CCA, UPP), Archaeology Team (UA, TWE) and
+      FEMA Disaster Response Team (UA).
+    type: Add
+  - message: Add more mainly unused call-ins for ambassador/corporate. UPP gets the
+      Militsiya patrol. UA gets the CMB patrol and CMB Tactical Team. TWE gets the
+      NSPA Tactical Team. ICSC gets Missionaries, Returning Civilians and a TV News
+      Crew. CCA gets Missionaries. Every ambassador except corporate can now call
+      in Migrants.
+    type: Add
+  - message: Colony administration can now call in a TV News Crew, CMB Parolee Transport,
+      Working Joes and Migrants. Corporate can call in WY Executives, WY Corporate
+      Security and Working Joes.
+    type: Add
+  - message: Third parties are now told who called them in and for which faction.
+    type: Add
+  - message: Removed the Prodigy Security Forces platoon. Prodigy can no longer be
+      picked as a character allegiance.
+    type: Remove
+  - message: Removed GROM, VAIPO, VAISP, RMC RRT, SAS, WY PMC, BEAR and the Liquidators
+      call-ins from the ambassador/corporate consoles.
+    type: Remove
+  - message: BEAR and SAS no longer spawns at random.
+    type: Tweak
+  - message: Ambassador consoles now start with 1000 and no longer generate money
+      on their own. City income, mission rewards and cash still add to them.
+    type: Tweak
+  - message: Console call-ins are now admin-logged and announced to admins, with who
+      called them, for which faction and from which console.
+    type: Admin
+  id: 1087
+  time: '2026-11-11T06:43:49.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2575
+- author: rokudara-sen
+  changes:
+  - message: UNISC Lead Enforcer can give orders.
+    type: Fix
+  - message: The Three World Empire is no longer called the Third World Empire.
+    type: Fix
+  - message: Ambassador mercenaries get their own names.
+    type: Fix
+  - message: Rubber M41A magazines use the M41A name.
+    type: Fix
+  - message: Penetrating research fire burns fire-immune xenos.
+    type: Fix
+  - message: The corrupted Overmind can speak human languages.
+    type: Fix
+  - message: The colony Basira-Armstrong can take a sling.
+    type: Fix
+  - message: Pathogen weeds grow their own wall weeds.
+    type: Fix
+  - message: Weeds grow over windows and window frames.
+    type: Add
+  - message: Sand can be crafted without construction skill.
+    type: Fix
+  - message: Criminal records no longer reveal CLF members.
+    type: Fix
+  - message: Built doors keep the access set on their circuit.
+    type: Fix
+  - message: Retractable ladders deploy up through a dug pit.
+    type: Fix
+  - message: FOB crates can't be opened on the landing area.
+    type: Fix
+  - message: GOVFOR no longer spawns on the OPFOR ship when both use the same ship.
+    type: Fix
+  - message: Xenos can't enter vents through barricades.
+    type: Fix
+  - message: Trade ships accept metal, wood, glass and plastic sheets.
+    type: Fix
+  - message: The trade shuttle popup shows the real sale value.
+    type: Fix
+  - message: Rifles on vests look right and can be taken off again.
+    type: Fix
+  - message: Chemical bloodbursters can be taken by players in the larva queue.
+    type: Fix
+  - message: Vehicle drivers aren't hurt by their own shells.
+    type: Fix
+  id: 1112
+  time: '2026-11-11T11:34:22.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2564
+- author: rokudara-sen
+  changes:
+  - message: Test merges stack. Label a PR Test Merge or type its number once and
+      it stays on until removed, tracked with TM labels.
+    type: Code
+  id: 1113
+  time: '2026-11-11T13:43:33.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2578
+- author: rokudara-sen
+  changes:
+  - message: The Clan Leader whitelist only leads your own clan. Ancient comes from
+      the Council whitelists only.
+    type: Tweak
+  - message: Lobby pred sets are split into Ancient sets and Leader sets.
+    type: Tweak
+  - message: Dead Yautja can't be revived.
+    type: Tweak
+  - message: Dual plasma cannons gib humans they hit.
+    type: Tweak
+  - message: The plasma caster aim laser is always red.
+    type: Tweak
+  - message: The plasma caster immobilizer no longer stuns its shooter.
+    type: Fix
+  - message: Serpents on the Yautja preserve have their own hive and no longer take
+      the main hive's slots.
+    type: Fix
+  - message: The We-Yu research bracer only appears on hunt rounds, rarely, and hides
+      from the pred tracker for the first hour.
+    type: Tweak
+  id: 1114
+  time: '2026-11-11T13:44:02.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2576
+- author: rokudara-sen
+  changes:
+  - message: Radio direction finding is turned off in Insurgency.
+    type: Tweak
+  - message: The CLF Radio Operator can now order a COMSEC recrypto.
+    type: Tweak
+  - message: Every INSFOR faction can now buy COMSEC fill cards from its points vendor.
+    type: Fix
+  id: 1115
+  time: '2026-11-11T14:27:59.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2581
+- author: ArturUr1
+  time: '2026-11-11T17:38:31Z'
+  changes:
+  - type: Remove
+    message: 4-ое поколение синтетиков удалено из выбора
+  id: 1107
+  url: https://github.com/flex5hybrid/RussianCM/pull/615
+  labels:
+  - XS
+- author: '- add: Русская локализация AN/PRC-117G'
+  time: '2026-11-11T18:35:50Z'
+  changes:
+  - type: Add
+    message: Русская локализация аплинка и штук КАСа
+  - type: Add
+    message: Русская локализация названий руководств
+  - type: Add
+    message: Русская локализация кодекса чести в руководствах
+  - type: Add
+    message: Русская локализация всем медицинским гайдам
+  - type: Add
+    message: Недостающая русская локализация в гайдах по связи
+  - type: Add
+    message: Русская локализация некоторых гражданских гайдов
+  - type: Add
+    message: Русская локализация "Опасностей"
+  - type: Remove
+    message: Удалены лишние ключи локализации
+  id: 1088
+  url: https://github.com/flex5hybrid/RussianCM/pull/616
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Translations'
+  - L
+- author: ArturUr1
+  changes:
+  - message: The synthetics construction skill has been increased to 4.
+    type: Tweak
+  id: 1116
+  time: '2026-11-11T19:39:03.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2572
+- author: rokudara-sen
+  changes:
+  - message: Mutiny leaders can recruit again on every marine role.
+    type: Fix
+  - message: 'Mutiny leaders get Begin Mutiny: converted marines are revealed and
+      everyone else on the side picks Mutineers, Loyalists or Refuse to fight.'
+    type: Add
+  - message: New HUD badges for mutineers, mutiny leaders, loyalists and non-combatants.
+    type: Add
+  - message: Ending a mutiny now also clears loyalists, non-combatants and unrevealed
+      recruits.
+    type: Admin
+  id: 1117
+  time: '2026-11-12T06:28:31.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2584
+- author: P-MCT
+  changes:
+  - message: Lunge Mine, also able to be crafted by a sapper in their workshop.
+    type: Add
+  id: 1118
+  time: '2026-11-12T06:34:50.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2574
+- author: SupremecyS
+  changes:
+  - message: resprite of altyn
+    type: Tweak
+  - message: The Party has issued a change in the type 23 Shotgunners standard issue
+      equipment after looking at Mortality and combat effectiveness rates, they have
+      given Type 23 Shotgunners their own Custom Altyn designed with a industrial
+      black finish and white stripes to strike fear into the enemy, alongside reinforcing
+      the helmet. (Custom Sprite and much stronger than its original helmet, Shotgunner
+      spec was underpreforming and they needed a small buff to hopefully make it more
+      fun to play)
+    type: Add
+  - message: The Party has recognized the bravery of their FTLs, and have awarded
+      them with their own Peaked caps that are lined with kevlar and steel, Safety
+      and fashion all in one package.
+    type: Add
+  id: 1119
+  time: '2026-11-12T08:41:31.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2535
+- author: TheHellFireo
+  changes:
+  - message: Reduced repeated work and memory allocation during physics and Z-level
+      movement.
+    type: Code
+  id: 1120
+  time: '2026-11-12T11:21:56.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2587
+- author: rokudara-sen
+  changes:
+  - message: Distress Signal and Colony Fall rules are back in the guidebook.
+    type: Fix
+  id: 1121
+  time: '2026-11-12T12:08:54.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2588
+- author: Ugnip55
+  changes:
+  - message: Added Battlefield Executions provisions to the UCMJ.
+    type: Add
+  - message: Updated existing execution regulations and related SOP documentation
+      for consistency.
+    type: Tweak
+  id: 1122
+  time: '2026-11-12T14:58:58.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2569
+- author: Dongo4
+  changes:
+  - message: CMO now spawns with their uniform
+    type: Fix
+  - message: Hyperthrottling has it's OD effects again
+    type: Fix
+  id: 1123
+  time: '2026-11-12T18:30:26.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2573
+- author: ILoveDespoiler
+  changes:
+  - message: Most Neomorphs, including Blight and Sprinter, are now slowed down more
+      in general upon dragging Marines or other Neomorphs. Healer Haze can drag other
+      Neos at full movespeed.
+    type: Add
+  - message: Changed Base Venators kit. Swapped out Impale for a new ability, "Grapple"
+      which can fling targets.
+    type: Tweak
+  - message: Overmind can now upgrade Mycelium walls and such.
+    type: Fix
+  - message: Grungus can now properly build their various Hive Structures.
+    type: Fix
+  - message: Blight Cores match colors with whichever Hive they are a part of.
+    type: Fix
+  - message: Blight Cores use the same damage profile as Hive Cores. They take more
+      damage from explosives and such. They can also now be destroyed by Melee attacks,
+      both Neo, Xeno, and Marine.
+    type: Fix
+  id: 1124
+  time: '2026-11-12T18:32:30.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2571
+- author: rokudara-sen
+  changes:
+  - message: The M707 Vulture takes 1.5 seconds to settle before every shot, and the
+      target sees a sniper laser on them while it does.
+    type: Tweak
+  - message: Vulture rounds do 400 damage with less armour piercing (was 550).
+    type: Tweak
+  - message: Firing the Vulture without its bipod deployed throws the shot off target,
+      but the recoil only does 40 damage now.
+    type: Tweak
+  id: 1125
+  time: '2026-11-12T19:13:38.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2589
+- author: rokudara-sen
+  changes:
+  - message: The plasma eradicator explodes when it hits a wall instead of fizzling.
+    type: Fix
+  - message: 'Yautja shots that run out of range now act like CM-SS13: eradicators
+      and lances explode, immobilizers stun, explosive and EMP arrows go off, and
+      other arrows land on the floor.'
+    type: Fix
+  - message: The dual plasma cannons explode on walls and show the targeting laser.
+    type: Fix
+  - message: The plasma caster's targeting laser turns off when the hunter is knocked
+      down or in crit.
+    type: Fix
+  - message: Decapitated players stay dead in their body instead of living on in the
+      severed head.
+    type: Fix
+  - message: The pathogen can no longer turn yautja into walkers.
+    type: Fix
+  id: 1126
+  time: '2026-11-12T19:53:14.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2591
+- author: TheHellFireo
+  changes:
+  - message: Reduced server allocation pressure and repeated work while preparing
+      nearby entity updates.
+    type: Fix
+  id: 1127
+  time: '2026-11-12T21:19:34.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2593
+- author: RomiGur
+  time: '2026-11-12T21:31:10Z'
+  changes:
+  - type: Fix
+    message: Исправлены баги с размером и прокруткой чата
+  id: 1109
+  url: https://github.com/flex5hybrid/RussianCM/pull/621
+  labels:
+  - S
+- author: KeiKiyomi
+  changes:
+  - message: Fixed bomb vests, they can no longer be put onto mannequins to get around
+      their gib on detonation
+    type: Fix
+  id: 1128
+  time: '2026-11-13T11:24:41.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2601
+- author: OverusedMeme
+  changes:
+  - message: The Mk481 and Spas-12 are no longer meltable as they are specialist grade
+      weapons.
+    type: Tweak
+  id: 1129
+  time: '2026-11-13T11:36:26.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2594
+- author: KeiKiyomi
+  changes:
+  - message: Added Rubber Round ammo to req for all standard GOVFOR ammo
+    type: Add
+  - message: Changed rubber rounds to now do stamina damage
+    type: Tweak
+  id: 1130
+  time: '2026-11-13T14:29:38.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2596
+- author: Dongo4
+  changes:
+  - message: Runaway Synth and Synth Replicant antags now get the synth language component.
+      Additionally they start with English selected instead of binary so they don't
+      accidentally give themselves away at round start.
+    type: Tweak
+  id: 1131
+  time: '2026-11-13T15:29:17.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2604
+- author: KeiKiyomi
+  changes:
+  - message: The Osprey can now be exchanged for a Mohawk Midway (The heavy gunship)
+    type: Fix
+  id: 1132
+  time: '2026-11-13T15:30:48.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2533
+- author: ArturUr1
+  time: '2026-11-14T07:21:36Z'
+  changes:
+  - type: Tweak
+    message: Паралич от крика королевы снижен с 8 до 6 секунд
+  id: 1110
+  url: https://github.com/flex5hybrid/RussianCM/pull/611
+  labels:
+  - XS
+- author: rokudara-sen
+  changes:
+  - message: Added BALANCE.md and balance questions to the PR template.
+    type: Code
+  id: 1133
+  time: '2026-11-14T09:34:50.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2610
+- author: rokudara-sen
+  changes:
+  - message: The Test Merge label now only marks a PR for the next publish; re-add
+      it to keep a PR test merged, and a normal publish clears every test merge label.
+    type: Code
+  id: 1134
+  time: '2026-11-14T09:37:28.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2609
+- author: TheHellFireo
+  changes:
+  - message: Fixed Varadero's station initialization identifier.
+    type: Fix
+  id: 1135
+  time: '2026-11-14T13:52:11.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2613
+- author: TheHellFireo
+  changes:
+  - message: Fixed FOB equipment collisions while deployed, packed, anchored, and
+      broken.
+    type: Fix
+  - message: Fixed stale entity references producing metadata errors after equipment
+      and targets were deleted.
+    type: Fix
+  - message: Fixed rejected antagonist assignments, tube-fed gun disruption, expired
+      explosion sources, and jeep seat pull-joint errors.
+    type: Fix
+  id: 1136
+  time: '2026-11-14T13:54:48.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2614
+- author: TheHellFireo
+  changes:
+  - message: Fixed LV-624's station initialization identifier.
+    type: Fix
+  id: 1137
+  time: '2026-11-14T14:33:42.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2612
+- author: IntelligenceOfficerArthur
+  changes:
+  - message: Added the Battalion Commander dress vendor and combat vendors for the
+      platoon Commanding Officer.
+    type: Add
+  - message: Platoon Commanding Officer now has Surgery +1.
+    type: Tweak
+  - message: M59A prototype rifle has lower max scatter.
+    type: Tweak
+  id: 1138
+  time: '2026-11-14T14:40:40.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2606
+- author: TheMaiji
+  time: '2026-11-14T17:18:22Z'
+  changes:
+  - type: Add
+    message: Возвращены донатные плащи с уровнями подписки.
+  - type: Fix
+    message: Выбранный донатный плащ сохраняется в профиле.
+  id: 1111
+  url: https://github.com/flex5hybrid/RussianCM/pull/624
+  labels:
+  - 'Changes: UI'
+  - 'Changes: Sprites'
+  - L
+- author: ArturUr1
+  time: '2026-11-14T19:40:38Z'
+  changes:
+  - type: Remove
+    message: Антагонист Джо выключен из ротации
+  id: 1139
+  url: https://github.com/flex5hybrid/RussianCM/pull/626
+  labels:
+  - XS
+- author: flex5hybrid
+  time: '2026-11-14T21:11:52Z'
+  changes:
+  - type: Add
+    message: В GOVFOR появились старшие и главные инструкторы с разными полномочиями
+      на аттестацию.
+  - type: Tweak
+    message: Для рядового допуска GOVFOR теперь достаточно трёх зачётов по строевой,
+      уставам и огнестрельной подготовке.
+  - type: Fix
+    message: Полоса прокрутки в меню подготовки сохраняет позицию после зачёта и аттестации.
+  id: 1140
+  url: https://github.com/flex5hybrid/RussianCM/pull/627
+  labels:
+  - 'Changes: Translations'
+  - M
 Name: CMU
 Order: -1

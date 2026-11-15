@@ -1,13 +1,13 @@
 <Document>
-  # Burn Medications
+  # Препараты от ожогов
 
-  Burn damage is heat, shock, cold and caustic: fire, electricity, freezing and acid. Treat the burns with ointment or a burn kit first (see [textlink="Wounds and Bleeding" link="CMUGuideMedicalWounds"]), then use these to heal the damage.
+  Ожоговый урон — это жар, электрический удар, холод и едкие вещества: огонь, электричество, обморожение и кислота. Сначала обработайте ожоги мазью или противоожоговым набором (см. [textlink="Раны и кровотечение" link="CMUGuideMedicalWounds"]), затем используйте эти препараты, чтобы вылечить урон.
 
-  - [bold]Kelotane[/bold]: the standard burn medicine. Overdose at 30 units.
-  - [bold]Dermaline[/bold]: heals burns faster than kelotane. Its overdose is lower, at 15 units.
-  - [bold]Tricordrazine[/bold]: heals a little of everything, burns included.
+  - [bold]Келотан[/bold]: стандартное средство от ожогов. Передозировка при 30 ед.
+  - [bold]Дермалин[/bold]: лечит ожоги быстрее келотана. Передозировка ниже — 15 ед.
+  - [bold]Трикордразин[/bold]: немного лечит всё, включая ожоги.
 
-  Eschar, a full-thickness burn, doesn't heal with medicine. It has to be debrided surgically.
+  Струп — глубокий ожог — лекарствами не лечится. Его нужно удалять хирургически.
 
   <GuideReagentEmbed Reagent="CMKelotane"/>
   <GuideReagentEmbed Reagent="CMDermaline"/>

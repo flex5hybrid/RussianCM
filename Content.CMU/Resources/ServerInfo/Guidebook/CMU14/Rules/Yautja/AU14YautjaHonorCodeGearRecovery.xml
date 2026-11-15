@@ -1,29 +1,16 @@
 <Document>
-  # Gear Recovery
+  # Возвращение снаряжения и тел
 
-  ## Dissolving gel vials
-  Dissolving vials may only be used:
-  - For gear recovery, groundside and shipside, to destroy lost gear.
-  - To clear lodging spaces.
-  - To clean the hunting preserve.
-  - To destroy any remains of an abomination or aberration.
-  - To destroy any remains of genespliced xenomorphs.
-  - To clear unwanted hide or meat from flayed or butchered bodies.
+  ## На планете
+  - Похитители снаряжения на планете автоматически считаются Достойными.
+  - Возвращение снаряжения крайне обязательно.
+  - Запрещено заходить за снаряжением вглубь Улья или ФОБа.
+  - Возврат тел павших Яутжа обязателен, даже если для этого придётся зайти на базу или в улей (избегайте лишнего урона).
 
-  Any other use is forbidden.
-
-  ## Planetside gear recovery
-  Planetside gear carriers are [color=#57b339]worthy[/color] prey.
-
-  - Gear recovery is not mandatory, but it is encouraged and seen as a priority.
-  - Gear recovery in the FOB or the hive is forbidden.
-  - Yautja body recovery is mandatory and exempt from the FOB and hive clause above, though collateral damage should be avoided.
-
-  ## Shipside gear recovery
-  Shipside gear carriers, and those actively keeping you from retrieving the gear, are [color=#ff0000]dishonorable[/color] prey.
-
-  - When recovering gear shipside, you must be efficient, focus on the recovery, and avoid damaging areas and people uninvolved in it. You are not on the hunt here.
-  - Negotiation is forbidden, though you may issue an ultimatum (such as "give it back or die") if you feel the situation warrants it. If the gear isn't returned, you must reclaim it by force.
-  - Shipside gear recovery is only ever mandatory for bodies. You may choose not to recover gear pieces.
-  - Post-hijack gear recovery is forbidden, unless it was started before the hijack, in which case it must be finished. Yautja body recovery is still mandatory, even after hijack.
+  ## На корабле или военной базе
+  - Носители вашего снаряжения и те, кто мешает его возврату, — Бесчестные.
+  - Действуйте чётко и строго по цели, не превращая возврат снаряжения в полноценную охоту.
+  - Для возвращения снаряжения допускается выдвижение ультиматума. При отказе — забирайте силой. Для выдвижения ультиматума предоставьте слово старшему охотнику поблизости.
+  - Возврат элементов экипировки при этом не обязателен, но возврат тел сородичей обязателен всегда.
+  - Если эвакуация снаряжения не была начата до хайджека/отлёта корабля, начинать её после угона запрещено. Однако возврат тел остаётся обязательным даже после угона.
 </Document>

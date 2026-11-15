@@ -119,7 +119,10 @@ public sealed partial class MoverController : SharedMoverController
         // Logger.GetSawmill("content").Info($"[{_gameTiming.CurTick}/{subTick}] Sprint: {enabled}");
         base.SetSprinting(entity, subTick, walking);
 
-        if (walking && !entity.Comp.SprintOnModifier && _cfg.GetCVar(CCVars.ToggleWalk))
+// RuMC edit start - Remove stamina walk
+//         if (walking && !entity.Comp.SprintOnModifier && _cfg.GetCVar(CCVars.ToggleWalk))
+// RuMC edit end
+        if (walking && _cfg.GetCVar(CCVars.ToggleWalk))
             _alerts.ShowAlert(entity.Owner, WalkingAlert, showCooldown: false, autoRemove: false);
         else
             _alerts.ClearAlert(entity.Owner, WalkingAlert);

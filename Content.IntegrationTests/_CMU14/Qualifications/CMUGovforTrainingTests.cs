@@ -59,7 +59,7 @@ public sealed class CMUGovforTrainingTests : GameTest
             foreach (var session in new[] { ServerSession, _other })
             {
                 var context = new TrainingContext(session.UserId, session.Name, "AU14JobGOVFORadvisor", 1, "test", now);
-                seed.Instructors[session.UserId] = new(true, true, true, new() { "field_engineering", "medical" },
+                seed.Instructors[session.UserId] = new(true, InstructorRank.SeniorInstructor,
                     session.UserId, now, session.UserId, now);
                 seed.Players[session.UserId] = new()
                 {

@@ -1,28 +1,28 @@
 <Document>
-  # Pain
+  # Боль
 
-  Injuries hurt. Pain builds up from wounds, fractures, burns and other trauma, and fades slowly on its own once the cause is treated.
+  Повреждения болят. Боль накапливается от ран, переломов, ожогов и прочих травм и медленно спадает сама, когда причина устранена.
 
-  ## Pain Levels
-  - [bold]Aching[/bold] (mild): movement and aim are slightly impaired.
-  - [bold]Hurt[/bold] (moderate): movement and aim are impaired, and actions take longer.
-  - [bold]Agony[/bold] (severe): movement and aim are heavily impaired.
-  - [bold]Pain shock[/bold]: the body is overwhelmed. The patient is badly slowed, keeps collapsing, and struggles to think straight.
+  ## Уровни боли
+  - [bold]Ноющая[/bold] (легкая): движение и прицеливание слегка затруднены.
+  - [bold]Болезненная[/bold] (умеренная): движение и прицеливание затруднены, действия занимают больше времени.
+  - [bold]Мучительная[/bold] (сильная): движение и прицеливание сильно затруднены.
+  - [bold]Болевой шок[/bold]: тело перегружено. Пациент сильно замедлен, постоянно падает и с трудом соображает.
 
-  The worse the pain, the slower you move and act and the more your aim sways. In pain shock you move at about 70% speed and actions take half again as long.
+  Чем сильнее боль, тем медленнее вы двигаетесь и действуете и тем сильнее качается прицел. При болевом шоке вы двигаетесь примерно на 70% скорости, а действия занимают в полтора раза больше времени.
 
-  ## Checking Pain
-  - A health analyzer shows the patient's pain level and their [bold]shock risk[/bold]: how close they are to pain shock.
-  - A trained medic can judge a patient's pain with a stethoscope.
+  ## Проверка боли
+  - Анализатор здоровья показывает уровень боли пациента и его [bold]риск шока[/bold]: насколько он близок к болевому шоку.
+  - Обученный медик может оценить боль пациента стетоскопом.
 
-  ## Painkillers
-  Painkillers stop pain building up as fast, help it fade, and mask the symptoms. They don't treat the injuries underneath; stop the medication and the pain comes back.
-  - [bold]Paracetamol[/bold]: mild. Takes the edge off. Overdose at 60u.
-  - [bold]Tramadol[/bold]: a moderate opioid that strongly masks pain. Overdose at 30u.
-  - [bold]Oxycodone[/bold]: a heavy opioid for severe pain that can fully mask pain shock. Overdose at 20u.
-  - [bold]Fentanyl[/bold]: near-total pain relief, but a fatal dose is barely more than an effective one. Overdose at 10u.
-  - [bold]Sleen[/bold]: a strong experimental painkiller. Overdoses turn toxic and disorienting. Overdose at 20u.
-  - [bold]Soporific[/bold]: a strong sedative painkiller that leaves the patient heavily dazed, with blurred, darkened vision. It doesn't put them to sleep. Overdose at 30u.
+  ## Обезболивающие
+  Обезболивающие замедляют накопление боли, помогают ей спадать и маскируют симптомы. Они не лечат сами повреждения; прекратите приём — и боль вернётся.
+  - [bold]Paracetamol[/bold]: лёгкое. Притупляет боль. Передозировка при 60 ед.
+  - [bold]Tramadol[/bold]: умеренный опиоид, сильно маскирующий боль. Передозировка при 30 ед.
+  - [bold]Oxycodone[/bold]: тяжёлый опиоид для сильной боли, способный полностью замаскировать болевой шок. Передозировка при 20 ед.
+  - [bold]Fentanyl[/bold]: почти полное обезболивание, но смертельная доза едва больше эффективной. Передозировка при 10 ед.
+  - [bold]Sleen[/bold]: сильное экспериментальное обезболивающее. Передозировка становится токсичной и дезориентирующей. Передозировка при 20 ед.
+  - [bold]Soporific[/bold]: сильное седативное обезболивающее, оставляющее пациента сильно одурманенным, со смазанным и затемнённым зрением. Оно не усыпляет. Передозировка при 30 ед.
 
-  Strong painkillers or putting the patient to sleep are also important before surgery. See [textlink="Surgery" link="CMUGuideMedicalSurgery"].
+  Сильные обезболивающие или усыпление пациента также важны перед операцией. См. [textlink="Хирургия" link="CMUGuideMedicalSurgery"].
 </Document>

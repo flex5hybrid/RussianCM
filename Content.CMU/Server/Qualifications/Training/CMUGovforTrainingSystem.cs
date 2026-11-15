@@ -88,12 +88,14 @@ public sealed class CMUGovforTrainingSystem : EntitySystem
     public bool IsRecruit(EntityUid body) =>
         Live(body, out _, out var authority) && authority.Context.Job == GOVFORRecruitJob.Id;
 
-    private bool IsInstructor(EntityUid body) =>
-        Live(body, out var player, out var authority) && _qualifications.Service.Available
+    private bool IsInstructor(EntityUid body) => IsInstructor(body, out _);
+
+    private bool IsInstructor(EntityUid body, out QualificationAuthority authority) =>
+        Live(body, out var player, out authority) && _qualifications.Service.Available
         && _qualifications.IsInsurgency && _cfg.GetCVar(QualificationCVars.Enabled)
         && authority.Context.Job != GOVFORRecruitJob.Id
         && ProtoMan.TryIndex<JobPrototype>(authority.Context.Job, out var job) && job.RoundSide == RoundJobSide.Govfor
-        && _qualifications.Service.IsActiveInstructor(player.UserId)
+        && (_qualifications.Service.IsManagement(authority) || _qualifications.Service.IsActiveInstructor(player.UserId))
         && (!QualificationRules.IsDrillInstructor(authority.Context.Job)
             || _qualifications.Service.IsJobAllowed(player.UserId, authority.Context.Job));
 
@@ -109,9 +111,13 @@ public sealed class CMUGovforTrainingSystem : EntitySystem
     public string? ActiveTopic(Guid recruit) => _assignments.TryGetValue(recruit, out var value) ? value.Topic : null;
 
     public bool Owns(EntityUid instructor, EntityUid recruit) =>
+        Owns(instructor, recruit, out _);
+
+    private bool Owns(EntityUid instructor, EntityUid recruit, out QualificationAuthority authority) =>
+        IsInstructor(instructor, out authority) &&
         Live(recruit, out var player, out _) && _assignments.TryGetValue(player.UserId, out var assignment)
         && assignment.Recruit == recruit && assignment.Instructor == instructor
-        && IsRecruit(recruit) && IsInstructor(instructor);
+        && IsRecruit(recruit);
 
     /// <summary>Called only through the existing size/rate-limited qualification request queue.</summary>
     public string Apply(ICommonSession player, QualificationAction action, QualificationRequest request)
@@ -180,10 +186,9 @@ public sealed class CMUGovforTrainingSystem : EntitySystem
 
     public string Start(EntityUid instructor, EntityUid recruit, string topicId)
     {
-        if (!Owns(instructor, recruit) || !Live(recruit, out var recruitPlayer, out _) ||
-            !Live(instructor, out var teacher, out _) ||
+        if (!Owns(instructor, recruit, out var teacher) || !Live(recruit, out var recruitPlayer, out _) ||
             !ProtoMan.TryIndex<CMUTrainingTopicPrototype>(topicId, out var topic) ||
-            !_qualifications.Service.CMUCanTeach(teacher.UserId, topic.Qualification, topic.Item) ||
+            !_qualifications.Service.CMUCanTeach(teacher, topic.Qualification, topic.Item) ||
             topic.TemporarySkills.Any(s => s.Value is < 1 or > 5 || !ProtoMan.TryIndex(s.Key, out var skill) || !skill.HasComponent<SkillDefinitionComponent>()))
             return "cmu-training-topic";
         var assignment = _assignments[recruitPlayer.UserId];
@@ -279,9 +284,9 @@ public sealed class CMUGovforTrainingSystem : EntitySystem
     {
         args.Cancelled = !Live(ent.Owner, out var player, out _) ||
             !_assignments.TryGetValue(player.UserId, out var assignment) || assignment.Recruit != ent.Owner ||
-            assignment.Topic == null || !Owns(assignment.Instructor, assignment.Recruit) ||
+            assignment.Topic == null || !Owns(assignment.Instructor, assignment.Recruit, out var instructor) ||
             !ProtoMan.TryIndex<CMUTrainingTopicPrototype>(assignment.Topic, out var topic) ||
-            !_qualifications.Service.CMUCanTeach(assignment.InstructorId, topic.Qualification, topic.Item);
+            !_qualifications.Service.CMUCanTeach(instructor, topic.Qualification, topic.Item);
     }
     private void RemoveEntity(EntityUid entity)
     {
@@ -310,11 +315,11 @@ public sealed class CMUGovforTrainingSystem : EntitySystem
         _refresh = 0.5f;
         foreach (var assignment in _assignments.Values.ToArray())
         {
-            if (!IsInstructor(assignment.Instructor)) { Remove(assignment.RecruitId, "instructor unavailable"); continue; }
+            if (!IsInstructor(assignment.Instructor, out var instructor)) { Remove(assignment.RecruitId, "instructor unavailable"); continue; }
             if (!IsRecruit(assignment.Recruit)) { Remove(assignment.RecruitId, "recruit unavailable"); continue; }
             if (assignment.Topic is { } topicId &&
                 (!ProtoMan.TryIndex<CMUTrainingTopicPrototype>(topicId, out var topic) ||
-                 !_qualifications.Service.CMUCanTeach(assignment.InstructorId, topic.Qualification, topic.Item)))
+                 !_qualifications.Service.CMUCanTeach(instructor, topic.Qualification, topic.Item)))
                 Finish(assignment.RecruitId, "teaching authority or topic removed");
             if (assignment.Topic != null && !HasComp<CMUTrainingSkillsComponent>(assignment.Recruit))
                 Finish(assignment.RecruitId, "temporary skill component removed");
@@ -329,7 +334,8 @@ public sealed class CMUGovforTrainingSystem : EntitySystem
     public void Decorate(QualificationView view, ICommonSession viewer)
     {
         var body = viewer.AttachedEntity;
-        var canTeach = body is { } teacher && IsInstructor(teacher);
+        QualificationAuthority instructor = default!;
+        var canTeach = body is { } teacher && IsInstructor(teacher, out instructor);
         view.TrainingInstructor = canTeach;
         foreach (var session in _players.Sessions)
         {
@@ -357,7 +363,7 @@ public sealed class CMUGovforTrainingSystem : EntitySystem
         }
         if (canTeach)
             foreach (var topic in ProtoMan.EnumeratePrototypes<CMUTrainingTopicPrototype>())
-                if (_qualifications.Service.CMUCanTeach(viewer.UserId, topic.Qualification, topic.Item))
+                if (_qualifications.Service.CMUCanTeach(instructor, topic.Qualification, topic.Item))
                     view.TrainingTopics.Add(new CMUTrainingTopicView { Id = topic.ID, Name = topic.Name,
                         Qualification = topic.Qualification, Item = topic.Item,
                         Skills = topic.TemporarySkills.ToDictionary(s => ProtoMan.Index(s.Key).Name, s => s.Value) });

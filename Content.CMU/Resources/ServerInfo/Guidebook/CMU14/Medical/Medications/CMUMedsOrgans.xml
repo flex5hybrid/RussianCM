@@ -1,18 +1,18 @@
 <Document>
-  # Organ and Bone Medications
+  # Препараты для органов и костей
 
-  These repair specific organs, or help bones heal. They work on organs that are damaged or failing; a dead organ needs replacing surgically. See [textlink="Organs" link="CMUGuideMedicalOrgans"].
+  Они восстанавливают конкретные органы или помогают костям срастаться. Работают на повреждённых или отказывающих органах; мёртвый орган нужно заменять хирургически. См. [textlink="Органы" link="CMUGuideMedicalOrgans"].
 
-  - [bold]Cardiocaine[/bold]: repairs the heart, and can sometimes restart a heart that has stopped.
-  - [bold]Pulmovine[/bold]: repairs the lungs.
-  - [bold]Hepatocytin[/bold]: repairs the liver.
-  - [bold]Nephronate[/bold]: repairs the kidneys.
-  - [bold]Alkysine[/bold]: repairs the brain.
-  - [bold]Imidazoline[/bold]: repairs the eyes.
-  - [bold]OsteoCalc[/bold]: helps broken bones mend and speeds up bone healing. It doesn't replace setting a fracture. See [textlink="Fractures" link="CMUGuideMedicalBones"].
-  - [bold]Epinephrine[/bold]: a heart and muscle stimulant, useful for restarting the heart. It also stops allergic reactions and dulls pain. Overdose at 10.5 units, which stresses the heart.
+  - [bold]Кардиокаин[/bold]: восстанавливает сердце и иногда может перезапустить остановившееся сердце.
+  - [bold]Пульмовин[/bold]: восстанавливает лёгкие.
+  - [bold]Гепатоцитин[/bold]: восстанавливает печень.
+  - [bold]Нефронат[/bold]: восстанавливает почки.
+  - [bold]Алкизин[/bold]: восстанавливает мозг.
+  - [bold]Имидиозалин[/bold]: восстанавливает глаза.
+  - [bold]Остеокальций[/bold]: помогает сломанным костям срастаться и ускоряет заживление костей. Не заменяет вправление перелома. См. [textlink="Переломы" link="CMUGuideMedicalBones"].
+  - [bold]Эпинефрин [/bold]: стимулятор сердца и мышц, полезен для перезапуска сердца. Также останавливает аллергические реакции и притупляет боль. Передозировка при 10,5 ед., что нагружает сердце.
 
-  Most organ medicines overdose at 25 units.
+  У большинства препаратов для органов передозировка при 25 ед.
 
   <GuideReagentEmbed Reagent="CMUCardiocaine"/>
   <GuideReagentEmbed Reagent="CMUPulmovine"/>

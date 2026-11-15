@@ -1,38 +1,46 @@
 <Document>
-  # The Hunting Grounds
+  # Локации и охотничьи угодья
 
-  Yautja are free to hunt anywhere on the hunting grounds, except for the areas listed below.
+  Охота разрешена везде, кроме нижеперечисленных зон.
 
-  - Yautja are not to directly alter the environment in a way that directly benefits one side, such as blowing up Lambda, Eta or hydro, or clearing a straight path to either side's base.
-  - Yautja standing around uncloaked near prey without interacting with it should remove themselves from sight. Standing uncloaked in full view of either side while not interacting is low roleplay. Running around uncloaked does not count.
-  - Going AFK on the hunting grounds is forbidden.
-  - Freely interacting with and showing yourself to colonists outside of a hunt is forbidden.
-  - Using fuel tanks and other objects, like lizards, as makeshift traps is prohibited. Using them mid-fight if the opportunity presents itself is fine, but they should not be placed beforehand for that purpose.
+  - Правило маскировки: запрещено стоять рядом с жертвами без маскировки, не взаимодействуя с ними.
+  - AFK: находиться в AFK на территории угодий строго запрещено.
 
-  ## FOB and Hideout
-  Yautja should not disrupt or harm GOVFOR or OPFOR fortifications. This includes the INSFOR Hideout.
+  ## Передовая оперативная база
+  - Запрещено разрушать или повреждать укрепления морпехов.
+  - Разрешено подходить к внешним укреплениям (не к основной базе), если вы не выдаёте себя и не ломаете оборудование (турели, баррикады). Разрешено выманивать/провоцировать морпехов, но если они не реагируют — провокации нужно прекратить.
+  - Проникать на базу морпехов запрещено. Приближение допускается только для эвакуации тела павшего брата.
+  - Преследовать отступающую цель разрешено до укреплений, но не внутрь их.
 
-  - Yautja may go near or even through non-FOB and non-Hideout fortifications, as long as they make sure, to the best of their ability, that they are not noticed and that they do not damage or disrupt any part of them, such as sentries, barricades and supplies.
-  - Yautja may taunt marines in non-FOB and non-Hideout fortifications and beckon them outside, but should disengage if they do not come out.
-  - Passing through FOB fortifications is forbidden, and going near them should be avoided unless it is to return a dead human. Taunting humans in FOB fortifications is forbidden.
-  - Yautja may chase fleeing prey to fortifications, but not into them.
+  ## Корабль или военная база
+  Посещение разрешено только для:
+  1. Возвращения снаряжения и тел павших Яутжа.
+  2. Эвакуации/возврата Слуг.
+  3. Ликвидации Предалиена.
 
-  ## Ship
-  Yautja may go to the GOVFOR or OPFOR ship only for gear recovery, returning thralls, and abominations. While on the ship, be as quick and efficient as you can and try to avoid collateral damage. See [textlink="Gear Recovery" link="AU14YautjaHonorCodeGearRecovery"], [textlink="Thralls" link="AU14YautjaHonorCodeThralls"] and [textlink="Prey Caveats" link="AU14YautjaHonorCodePreyCaveats"].
+  Находясь на корабле, действуйте максимально быстро, скрытно и эффективно, избегая сопутствующего урона.
 
-  The same rules apply should Yautja gear end up inside a We-Yu facility.
+  ## Улей
+  Зона содержания заражённых или ядро улья. Вход и охота в Улье категорически запрещены, за исключением случаев, когда внутри находится заражённый Яутжа.
 
-  ## Comms
-  - While in GOVFOR, OPFOR or INSFOR possession, comms fall under the FOB fortification clause.
-  - While in threat possession, Yautja may not start fights there, but may chase prey who run there to finish an engagement, including inside.
-  - The area becomes valid to hunt in once GOVFOR have evacuated.
+  ## Линия фронта
+  Запрещено инициировать бои на линии фронта. Разрешено лишь догонять отступающую туда жертву для завершения охоты. В этой зоне разрешено использовать ТОЛЬКО холодное оружие. При самоуничтожении на линии фронта таймер/мощность должны быть выставлены на минимальный режим.
 
-  ## Hive
-  The hive is the area where xeno or neomorph captures are held, or where the hive core is. Hunting in or entering the hive is forbidden under all circumstances, unless there is an infected Yautja inside. See [textlink="Prey Caveats" link="AU14YautjaHonorCodePreyCaveats"].
+  ## Осады
+  При осаде базы/улья разрешено охотиться только на атакующую сторону и строго на подступах/в тылу (не у самих баррикад). Преследование отступающих в зону осады разрешено.
 
-  ## Frontline
-  Yautja may not initiate engagements on the frontline, but may chase prey fleeing there to finish the job. While doing so, Yautja may use [bold]only[/bold] their melee weapons. Should a Yautja self-destruct there, it must be set to small.
+  ## Очищение
+  Если Яутжа станут свидетелями экспериментов Вейланд-Ютани с ксеноморфами, они могут очистить исследовательский комплекс (то есть уничтожить эксперименты и работающий персонал), чтобы сохранить свои Охотничьи угодья. Все ксеноморфы, вне зависимости от касты, становятся достойной добычей.
 
-  ## Sieges
-  During FOB or hive sieges, Yautja may hunt only the besieging faction, and only away from the barricades or the hive. You may hunt troops moving to the siege, or around the backline. As with the frontline clause, chasing prey retreating to the siege is allowed.
+  Чтобы начать очищение, ксеноморфы должны быть выпущены в колонию, быть замечены снаружи комплекса, вне камер содержания, или их общее количество внутри комплекса составляет около десятка особей (7–10).
+
+  Вендиго не является причиной для старта очищения. Вендиго становятся достойной добычей, как только впервые покидают комплекс.
+
+  Если ГОВФОР союзничают с Ве-Ю и разворачивают свои силы с целью помочь до того, как очищение завершится, то силы ГОВФОР в непосредственной близости к комплексу становятся достойной добычей, а цели очищения — временно бесчестными. Яутжа должны приоритетно завершить очищение, минимизируя сопутствующий ущерб.
+
+  Очищение может начать древний или один из лидеров клана, что в данный момент находятся в раунде: обозначить причины и раздать минимальные указания.
+
+  Очищение может быть начато, если персонал Ве-Ю каким-либо образом содействовал появлению Абоминации.
+
+  Примечание: возвращение тел и технологий Яутжа из комплекса не является Очищением и проводится согласно пункту Кодекса [textlink="Возвращение снаряжения и тел" link="AU14YautjaHonorCodeGearRecovery"].
 </Document>

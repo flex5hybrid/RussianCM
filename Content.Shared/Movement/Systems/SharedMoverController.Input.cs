@@ -118,8 +118,10 @@ namespace Content.Shared.Movement.Systems
             entity.Comp.RelativeRotation = state.RelativeRotation;
             entity.Comp.TargetRelativeRotation = state.TargetRelativeRotation;
             entity.Comp.CanMove = state.CanMove;
-            entity.Comp.SprintOnModifier = state.SprintOnModifier;
-            entity.Comp.SprintBlocked = state.SprintBlocked;
+// RuMC edit start - Remove stamina walk
+//             entity.Comp.SprintOnModifier = state.SprintOnModifier;
+//             entity.Comp.SprintBlocked = state.SprintBlocked;
+// RuMC edit end
             entity.Comp.RelativeEntity = EnsureEntity<InputMoverComponent>(state.RelativeEntity, entity.Owner);
 
             // Reset
@@ -142,8 +144,10 @@ namespace Content.Shared.Movement.Systems
             args.State = new InputMoverComponentState()
             {
                 CanMove = entity.Comp.CanMove,
-                SprintOnModifier = entity.Comp.SprintOnModifier,
-                SprintBlocked = entity.Comp.SprintBlocked,
+// RuMC edit start - Remove stamina walk
+//                 SprintOnModifier = entity.Comp.SprintOnModifier,
+//                 SprintBlocked = entity.Comp.SprintBlocked,
+// RuMC edit end
                 RelativeEntity = TerminatingOrDeleted(entity.Comp.RelativeEntity) ? null : GetNetEntity(entity.Comp.RelativeEntity),
                 LerpTarget = entity.Comp.LerpTarget,
                 HeldMoveButtons = entity.Comp.HeldMoveButtons,
@@ -229,7 +233,9 @@ namespace Content.Shared.Movement.Systems
             // 2. If we go from grid -> grid then (after lerp time) snap to nearest cardinal (probably imperceptible)
             // 3. If we go from map -> grid then (after lerp time) snap to nearest cardinal
 
-            if (mover.RelativeEntity.Equals(relative))
+            // CMU14: compare nullable IDs without boxing on every movement substep.
+            // if (mover.RelativeEntity.Equals(relative))
+            if (mover.RelativeEntity == relative)
                 return false;
 
             // Okay need to get our old relative rotation with respect to our new relative rotation
@@ -452,7 +458,10 @@ namespace Content.Shared.Movement.Systems
             }
 
             // Logger.GetSawmill("content").Info($"{curDir}{walk}{sprint}");
-            return mover.SprintBlocked ? (walk + sprint, Vector2.Zero) : (walk, sprint);
+// RuMC edit start - Remove stamina walk
+//             return mover.SprintBlocked ? (walk + sprint, Vector2.Zero) : (walk, sprint);
+// RuMC edit end
+            return (walk, sprint);
         }
 
         /// <summary>

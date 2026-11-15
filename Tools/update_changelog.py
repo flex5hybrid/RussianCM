@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-# CMU14 Begin: downstream changelog assembly and Russian Discord delivery.
+# CMU14 Begin: downstream changelog assembly.
 """
 Assemble changelog .yml parts into a changelog file.
 
 Entry IDs are append-only and never renumbered. This is required by the client,
-which persists the last-read ID between sessions. Old entries may be pruned, but
-surviving IDs remain stable and new entries always use max(existing id) + 1.
+which persists the last-read ID between sessions. Keep old entries available for
+Discord recovery, even after a prolonged outage.
 
 usage: update_changelog.py <changelog-file> <parts-dir> --category "Main"
 """
@@ -15,15 +15,16 @@ import datetime
 import hashlib
 import json
 import re
+import subprocess
 from pathlib import Path
 from typing import Any
 
 import yaml
 
-MAX_ENTRIES = 1500
 CATEGORY_MAIN = "Main"
 CHANGELOG_CATEGORIES = {"CMU": "CMU", "RMC14": "RMC14", "Main": "Changelog",
                         "Maps": "Maps", "Admin": "Admin", "Rules": "Rules"}
+CHANGE_TYPES = {"Add", "Remove", "Tweak", "Fix", "Map", "Code", "Admin"}
 
 
 # Prevent PyYAML from turning ISO-8601 strings into datetime instances and then
@@ -71,47 +72,65 @@ def entry_key(entry: dict[str, Any]) -> tuple:
     return ("manual", entry.get("author"), timestamp, fingerprint)
 
 
-def assemble(changelog_file: str, parts_dir: str, category: str, untagged_category=None) -> None:
+def merge_changes(target, source):
+    for change in source["changes"]:
+        if change not in target["changes"]:
+            target["changes"].append(change)
+
+
+def assemble(changelog_file: str, parts_dir: str, category: str, untagged_category=None,
+             previous=None, repository=None) -> None:
     current_data = load_yaml(changelog_file)
     original = current_data.get("Entries", [])
-    max_id = max((int(e.get("id", 0)) for e in original), default=0)
-    entries_list = []
+    previous = previous or {}
+    published = {entry_key(e): e for e in previous.get("Entries", [])}
+    published_ids = {}
+    reserved_ids = set()
+    for key, entry in published.items():
+        if entry["id"] not in reserved_ids:
+            published_ids[key] = entry["id"]
+            reserved_ids.add(entry["id"])
+    published_max = max([previous.get("LastId", 0), *published_ids.values()])
+    max_id = max([published_max, current_data.get("LastId", 0), *(e["id"] for e in original)])
+    changed = False
     existing = {}
-    used_ids = set()
     # Merge duplicate URLs without discarding changes or renumbering surviving IDs.
     for entry in original:
         key = entry_key(entry)
         if key in existing:
-            # Retain the highest already-issued ID for this PR. Otherwise removing
-            # a high-ID duplicate could make future entries invisible to clients.
             existing[key]["id"] = max(existing[key]["id"], entry["id"])
-            used_ids.add(existing[key]["id"])
-            for change in entry["changes"]:
-                if change not in existing[key]["changes"]:
-                    existing[key]["changes"].append(change)
-            continue
-        if entry["id"] in used_ids:
-            max_id += 1
-            entry["id"] = max_id
-        used_ids.add(entry["id"])
-        existing[key] = entry
-        entries_list.append(entry)
+            merge_changes(existing[key], entry)
+            changed = True
+        else:
+            existing[key] = entry
 
-    # A duplicate URL can itself carry an ID already used by another PR.
-    # Check once more after merging duplicate records.
-    used_ids.clear()
-    for entry in entries_list:
-        if entry["id"] in used_ids:
+    if repository:
+        prefix = f"https://github.com/{repository}/pull/".lower()
+        for key, entry in published.items():
+            if key not in existing and key[0] == "url" and key[1].lower().startswith(prefix):
+                # An upstream conflict resolution can replace the entire file.
+                existing[key] = entry
+                changed = True
+
+    used_ids = reserved_ids
+    for key, entry in existing.items():
+        current_id = entry["id"]
+        if key in published_ids:
+            entry["id"] = published_ids[key]
+        elif current_id <= published_max or current_id in used_ids:
             max_id += 1
             entry["id"] = max_id
         used_ids.add(entry["id"])
+        changed |= entry["id"] != current_id
 
     consumed = []
     for partpath in sorted(Path(parts_dir).glob("*.yml")):
         part = load_yaml(str(partpath))
         if part.get("category", untagged_category or category) != category:
             continue
-        part.setdefault("time", datetime.datetime.now(datetime.timezone.utc).isoformat())
+        if "time" not in part:
+            # Keep the key stable if assembly is interrupted before removing the part.
+            part["time"] = datetime.datetime.fromtimestamp(partpath.stat().st_mtime, datetime.timezone.utc).isoformat()
         changes = part["changes"]
         if not isinstance(changes, list):
             changes = [changes]
@@ -119,37 +138,39 @@ def assemble(changelog_file: str, parts_dir: str, category: str, untagged_catego
         for change in changes:
             if not isinstance(change, dict) or not isinstance(change.get("message"), str):
                 raise ValueError(f"Invalid changelog change in {partpath}")
-            if change.get("type") not in {"Add", "Remove", "Tweak", "Fix", "Map", "Code", "Admin"}:
+            if change.get("type") not in CHANGE_TYPES:
                 raise ValueError(f"Invalid changelog type in {partpath}")
-        key = entry_key(part)
-        if changes and key not in existing:
-            max_id += 1
-            entry = {"author": part["author"], "time": part["time"],
-                     "changes": changes, "id": max_id, "url": part.get("url")}
-            if part.get("labels"):
-                entry["labels"] = part["labels"]
-            entries_list.append(entry)
-            existing[key] = entry
+        if changes:
+            part["changes"] = changes
+            key = entry_key(part)
+            if key in existing:
+                previous_count = len(existing[key]["changes"])
+                merge_changes(existing[key], part)
+                changed |= len(existing[key]["changes"]) != previous_count
+            else:
+                max_id += 1
+                entry = {"author": part["author"], "time": part["time"],
+                         "changes": changes, "id": max_id, "url": part.get("url")}
+                if part.get("labels"):
+                    entry["labels"] = part["labels"]
+                existing[key] = entry
+                changed = True
         consumed.append(partpath)
 
-    entries_list.sort(key=entry_sort_key)
-    retained = entries_list[-MAX_ENTRIES:]
-    # An old upstream record can have the largest ID after a collision repair.
-    # Keep that high-water entry so pruning cannot cause future ID reuse.
-    if retained and entries_list and max(e["id"] for e in retained) < max_id:
-        high_water = max(entries_list, key=lambda e: e["id"])
-        retained = ([high_water] + retained[1:]) if high_water not in retained else retained
-        retained.sort(key=entry_sort_key)
-    current_data["Entries"] = retained
-    output = yaml.safe_dump(current_data, allow_unicode=True, sort_keys=False)
-    target = Path(changelog_file)
-    if target.read_text(encoding="utf-8-sig") != output:
+    if max_id > max((e["id"] for e in existing.values()), default=0) and current_data.get("LastId") != max_id:
+        # An upstream merge can delete or renumber the highest previously issued ID.
+        current_data["LastId"] = max_id
+        changed = True
+    if changed:
+        current_data["Entries"] = sorted(existing.values(), key=entry_sort_key)
+        output = yaml.safe_dump(current_data, allow_unicode=True, sort_keys=False)
+        target = Path(changelog_file)
         temporary = target.with_suffix(target.suffix + ".tmp")
         temporary.write_text(output, encoding="utf-8", newline="\n")
         temporary.replace(target)
     for partpath in consumed:
         partpath.unlink()
-    print(f"Have {len(current_data['Entries'])} entries; consumed {len(consumed)} parts")
+    print(f"Have {len(existing)} entries; consumed {len(consumed)} parts")
 
 
 def main():
@@ -158,15 +179,28 @@ def main():
     parser.add_argument("parts_dir")
     parser.add_argument("--category", default=CATEGORY_MAIN)
     parser.add_argument("--all", action="store_true", help="Assemble all supported sections next to the target file")
+    parser.add_argument("--previous-ref", help="Restore IDs from the last downstream changelog commit")
+    parser.add_argument("--repository", help="Preserve this repository's entries after an upstream merge")
     args = parser.parse_args()
+
+    def previous_changelog(target):
+        if not args.previous_ref:
+            return None
+        result = subprocess.run(
+            ["git", "show", f"{args.previous_ref}:{target}"], check=True, stdout=subprocess.PIPE,
+        )
+        return yaml.load(result.stdout, Loader=NoDatesSafeLoader)
+
     if args.all:
         if args.category not in CHANGELOG_CATEGORIES:
             raise ValueError(f"Unknown changelog category: {args.category}")
         for category, filename in CHANGELOG_CATEGORIES.items():
             target = Path(args.changelog_file).parent / f"{filename}.yml"
-            assemble(str(target), args.parts_dir, category, untagged_category=args.category)
+            assemble(str(target), args.parts_dir, category, untagged_category="CMU",
+                     previous=previous_changelog(target), repository=args.repository)
     else:
-        assemble(args.changelog_file, args.parts_dir, args.category)
+        assemble(args.changelog_file, args.parts_dir, args.category,
+                 previous=previous_changelog(args.changelog_file), repository=args.repository)
 
 
 if __name__ == "__main__":

@@ -112,16 +112,12 @@ namespace Content.Client.Changelog
             {
                 var changelogs = new List<Changelog>();
                 var directory = new ResPath("/Changelog");
-                var excludedFiles = new HashSet<string>() { "Admin", "Changelog", "Maps", "RMC14" };
-                foreach (var file in _resource.ContentFindFiles(new ResPath("/Changelog/")))
+                // CMU14: load every category and finish enumerating before opening resources.
+                var files = _resource.ContentFindFiles(directory)
+                    .Where(file => file.Directory == directory && file.Extension == "yml")
+                    .ToArray();
+                foreach (var file in files)
                 {
-                    if (file.Directory != directory || file.Extension != "yml")
-                        continue;
-
-                    // CMU exclude upstream stale data
-                    if (excludedFiles.Contains(file.FilenameWithoutExtension))
-                        continue;
-
                     var yamlData = _resource.ContentFileReadYaml(file);
 
                     if (yamlData.Documents.Count == 0)
