@@ -1,9 +1,9 @@
-###########################
+﻿###########################
 
 - type: entity
   parent: SquadBase
   id: SquadWeYaCommando
-  name: We-Yu Commando
+  name: We-Yu Commandos
   components:
   - type: SquadTeam
     color: "#C0C0C0"
@@ -22,215 +22,16 @@
     canSupplyDrop: false
     group: WeYa
     leaderIcon:
-      sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi 
+      sprite: /Uploaded/weya/icons.rsi 
       state: leader
 
 - type: Tag
   id: SquadWeYaCommando
 
 - type: entity
-  parent: RMCHeadsetDistressWeYa
-  id: RMCHeadsetDistressWeYaCommando
-  name: We-Yu headset
-  description: Special headset used by corporate personnel.
+  parent: RMCWeaponRevolverMateba
+  id: RuMCWeaponRevolverMatebaCommando
   components:
-  - type: ContainerFill
-    containers:
-      key_slots:
-      - CMEncryptionKeyWEYUColony
-  - type: GrantTacMapAlert
-
-- type: entity
-  parent: RMCHeadsetDistressWeYaCommando
-  id: RMCHeadsetDistressWeYaCommandoLeader
-  suffix: Leader
-  description:
-  components:
-  - type: RMCHeadset
-    radioTextIncrease: 2
-
-- type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  id: RMCWeaponRifleM54C2Fixed
-  name: M41A/2 MK2 assault rifle
-  description: A modified version of the M41A MK2 assault rifle, redesigned to improve weight, handling, and accuracy. Fires precise two-round bursts. Issued only to elite units.
-  components:
-  - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/m41a2_fix.rsi
-    layers:
-    - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
-  - type: Clothing
-    sprite: _RuMC14/EventContent/Stukov/weya/m41a2_fix.rsi
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: RMCLoreExaminable
-    content: rmc-lore-examinable-m54c-mk2
-  - type: Gun
-    selectedMode: FullAuto
-    shotsPerBurst: 2
-    availableModes:
-    - SemiAuto
-    - Burst
-    - FullAuto
-    soundGunshot:
-      collection: AU14M41FireSound
-  - type: RMCSelectiveFire
-    baseFireModes:
-    - SemiAuto
-    - Burst
-    - FullAuto
-    recoilUnwielded: 4
-    scatterWielded: 2
-    scatterUnwielded: 14
-    baseFireRate: 5
-    burstScatterMult: 1
-    modifiers:
-      Burst:
-        fireDelay: 0.0666
-  - type: RMCWeaponAccuracy
-    accuracyMultiplier: 1.5
-    accuracyMultiplierUnwielded: 0.8
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: RMCMagazineRifleM54CHEAP
-        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
-        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
-        priority: 2
-        whitelist:
-          tags:
-          - CMMagazineRifleM54C
-          - CMMagazineRifleM54CAP
-          - CMMagazineRifleM54CExt
-          - RMCMagazineRifleM54CIncendiary
-          - RMCMagazineRifleM54CHEAP
-  - type: GunDamageModifier
-    multiplier: 1.25
-  - type: AttachableHolder
-    slots:
-      rmc-aslot-barrel:
-        startingAttachable: RMCAttachmentExtendedBarrel
-        whitelist:
-          tags:
-          - RMCAttachmentBarrelCharger
-          - RMCAttachmentExtendedBarrel
-          - RMCAttachmentSuppressor
-          - RMCM5Bayonet
-      rmc-aslot-rail:
-        startingAttachable: RMCAttachmentMagneticHarness
-        whitelist:
-          tags:
-          - RMCAttachmentRailFlashlight
-          - RMCAttachmentMagneticHarness
-          - RMCAttachmentS5RedDotSight
-          - RMCAttachmentS6ReflexSight
-          - RMCAttachmentS84xTelescopicScope
-          - RMCAttachmentS42xTelescopicMiniscope
-      rmc-aslot-stock:
-        startingAttachable: RMCAttachmentM54CStockSolid
-        whitelist:
-          tags:
-          - RMCAttachmentM54CStockSolid
-      rmc-aslot-underbarrel:
-        startingAttachable: RMCAttachmentAngledGrip
-        whitelist:
-          tags:
-          - RMCAttachmentAngledGrip
-          - RMCAttachmentBipod
-          - RMCAttachmentFlashlightGrip
-          - RMCAttachmentGyroscopicStabilizer
-          - RMCAttachmentLaserSight
-          - RMCAttachmentU1GrenadeLauncher
-          - RMCAttachmentU7UnderbarrelShotgun
-          - RMCAttachmentVerticalGrip
-          - RMCAttachmentExtinguisher
-          - RMCAttachmentFlamer
-  - type: AttachableHolderVisuals
-    offsets:
-      rmc-aslot-barrel: 0.81, 0.035
-      rmc-aslot-rail: -0.01, 0.2
-      rmc-aslot-stock: -0.78, 0.0325
-      rmc-aslot-underbarrel: 0.355, -0.36
-  - type: ItemCamouflage
-    camouflageVariations: {}
-  - type: GunIDLock
-  - type: Tag
-    tags:
-    - RMCWeaponRifleM54C2Fixed
-
-- type: Tag
-  id: RMCWeaponRifleM54C2Fixed
-
-- type: entity
-  parent: [RMCBaseSlideMagazineVisualsBallistic, RMCWeaponRevolverBase]
-  id: RMCWeaponRevolverMatebaCommando
-  name: Mateba Custom autorevolver
-  description: The .454 Mateba 6 Unica automatic revolver is a semi-automatic handgun that uses its own recoil to rotate the cylinder. Extremely rare, outrageously expensive, and incredibly powerful, it is found in the hands of select high-ranking American officials. Stylish, refined, and above all extremely deadly.
-  components:
-  - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Pistols/mateba/jungle.rsi
-  - type: Clothing
-    sprite: _RMC14/Objects/Weapons/Guns/Pistols/mateba/jungle.rsi
-  - type: Gun
-    shotsPerBurst: 3
-    selectedMode: SemiAuto
-    availableModes:
-    - SemiAuto
-    - Burst
-    soundGunshot:
-      path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_mateba.ogg
-  - type: Tag
-    tags:
-    - Sidearm
-    - RMCRevolver
-    - RMCMateba
-  - type: Corrodible
-    isCorrodible: false
-  - type: RevolverAmmoProvider
-    whitelist:
-      tags:
-      - RMCSpeedLoaderMateba
-      - RMCSpeedLoaderMatebaHE
-      - RMCSpeedLoaderMatebaHIAP
-      - RMCSpeedLoaderMatebaHighImpact
-      - RMCCartridgeRevolverMatebaHE
-      - RMCCartridgeRevolverMatebaHIAP
-      - RMCCartridgeRevolverMatebaHighImpact
-      - RMCCartridgeRevolverMateba
-    proto: RMCCartridgeRevolverMatebaHighImpact
-    capacity: 6
-    chambers: [ True, True, True, True, True, True ]
-    ammoSlots: [ null, null, null, null, null, null ]
-  - type: GunDamageModifier
-    multiplier: 1.5
-  - type: RMCSelectiveFire
-    baseFireModes:
-    - SemiAuto
-    - Burst
-    recoilWielded: 4
-    recoilUnwielded: 4
-    baseFireRate: 1.111
-    scatterWielded: 8
-    scatterUnwielded: 20
-    burstScatterMult: 5
-    burstFireRateMultiplier: 3 #This + 0.1332 = perfect
-    modifiers:
-      Burst:
-        fireDelay: 0.1332 #0.2664
-        maxScatterModifier: 10
-        useBurstScatterMult: true
-        unwieldedScatterMultiplier: 2
-        shotsToMaxScatter: 6
-  - type: RMCWeaponAccuracy
-    accuracyMultiplier: 1.1
-    accuracyMultiplierUnwielded: 0.75
-  - type: Appearance
   - type: AttachableHolder
     slots:
       rmc-bslot-barrel: 
@@ -254,77 +55,11 @@
           - RMCAttachmentS5RedDotSight
           - RMCAttachmentS5MicroRedDotSight
           - RMCAttachmentS6ReflexSight
-  - type: AttachableHolderVisuals
-    offsets:
-      rmc-bslot-barrel: 0.215, 0.19
-      rmc-aslot-barrel: 0.215, 0.19
-      rmc-aslot-rail: -0.11, 0.22
-  - type: ItemCamouflage
-    camouflageVariations:
-      Jungle: _RMC14/Objects/Weapons/Guns/Pistols/mateba/jungle.rsi
-      Desert: _RMC14/Objects/Weapons/Guns/Pistols/mateba/desert.rsi
-      Snow: _RMC14/Objects/Weapons/Guns/Pistols/mateba/snow.rsi
-      Classic: _RMC14/Objects/Weapons/Guns/Pistols/mateba/classic.rsi
-      Urban: _RMC14/Objects/Weapons/Guns/Pistols/mateba/urban.rsi
-  - type: RMCAirShot
-    preparationTime: 1.5
-    requiresCombat: true
-    doAfterBreakOnMove: false
-    ignoreRoof: true
-    shakeAmount: 5
-    requiredSkills:
-      RMCSkillLeadership: 3
-  - type: RMCBattleExecute
 
 - type: entity
-  parent: [RMCBaseSlideMagazineVisuals, CMWeaponPistolBase]
-  id: RMCMK80Commando
-  name: VP78 pistol
-  description: A massive, imposing semi-automatic 9mm pistol firing Squash-Head ammunition. Often found both in the USA and in TWE space, it is frequently used by We-Yu PMC units as well as corporate executives. This weapon is also undergoing limited field trials as part of the Marine Corps' next-generation pistol program. The slide is engraved with the We-Yu logo, a reminder of who is in charge here.
+  parent: RMCMK80
+  id: RuMCMK80Commando
   components:
-  - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Pistols/mk80.rsi
-  - type: Clothing
-    sprite: _RMC14/Objects/Weapons/Guns/Pistols/mk80.rsi
-  - type: MeleeWeapon
-    damage:
-      types:
-        Blunt: 8
-  - type: Gun
-    shotsPerBurst: 3
-    availableModes:
-    - SemiAuto
-    - Burst
-    soundGunshot:
-      path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_mk80.ogg
-  - type: RMCSelectiveFire
-    baseFireModes:
-    - SemiAuto
-    - Burst
-    recoilWielded: 1
-    recoilUnwielded: 2
-    scatterWielded: 10
-    scatterUnwielded: 10
-    baseFireRate: 2
-    burstScatterMult: 4
-    modifiers:
-      Burst:
-        fireDelay: 0.08 # For some reason the intended value of 0.1665 is too slow because it has a burst cooldown
-        maxScatterModifier: 10
-        useBurstScatterMult: true
-        unwieldedScatterMultiplier: 2
-        shotsToMaxScatter: 6
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
-        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_unload.ogg
-        priority: 2
-        whitelist:
-          tags:
-          - CMMagazinePistolMK80
-        startingItem: CMMagazinePistolMK80
   - type: AttachableHolder
     slots:
       rmc-aslot-barrel:
@@ -350,22 +85,17 @@
         whitelist:
           tags:
           - RMCAttachmentLaserLightModule
-  - type: AttachableHolderVisuals
-    offsets:
-      rmc-aslot-barrel: 0.685, 0.125
-      rmc-aslot-rail: -0.125, 0.215
-      rmc-aslot-underbarrel: 0.284, -0.19
   - type: Tag
     tags:
     - Sidearm
-    - RMCMK80
+    - RuMCMK80Commando
 
 - type: Tag
-  id: RMCMK80Commando
+  id: RuMCMK80Commando
 
 - type: entity
   parent: CMWebbingBlack
-  id: RMCWebbingPMCCommandoWeYu
+  id: RuMCWebbingPMCCommandoWeYu
   suffix: Commando, Filled
   components:
   - type: StorageFill
@@ -378,7 +108,7 @@
 
 - type: entity
   parent: CMWebbingBlack
-  id: RMCWebbingPMCCommandoWeYuSL
+  id: RuMCWebbingPMCCommandoWeYuSL
   suffix: Commando, Filled
   components:
   - type: StorageFill
@@ -391,7 +121,7 @@
 
 - type: entity
   parent: CMWebbingBlack
-  id: RMCWebbingPMCCommandoWeYuSG
+  id: RuMCWebbingPMCCommandoWeYuSG
   suffix: Commando, Filled
   components:
   - type: StorageFill
@@ -404,9 +134,9 @@
 
 - type: entity
   parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
-  id: CMJumpsuitVeteranPMCCommandoWeYu
-  name: We-Yu Commando elite combat uniform
-  description: Armored uniform used by Weyland-Yutani elite commandos. Lightweight and comfortable, but well protected.
+  id: RuMCJumpsuitVeteranPMCCommandoWeYu
+  name: elite combat uniform of the We‑Yu commandos
+  description: The armored uniform used by the elite commandos of Weyland‑Yutani. Lightweight and comfortable, yet well‑protected.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/officer.rsi
@@ -414,27 +144,27 @@
     startingAccessories:
     - RMCPatchWeYaBlack
   - type: WebbingClothing
-    startingWebbing: RMCWebbingPMCCommandoWeYu
+    startingWebbing: RuMCWebbingPMCCommandoWeYu
 
 - type: entity
   parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
-  id: CMJumpsuitVeteranPMCCommandoWeYuSL
-  name: We-Yu Commando elite combat uniform
-  description: Armored uniform used by Weyland-Yutani elite commandos. Lightweight and comfortable, but well protected.
+  id: RuMCJumpsuitVeteranPMCCommandoWeYuSL
+  name: elite combat uniform of the We‑Yu commandos
+  description: The armored uniform used by the elite commandos of Weyland‑Yutani. Lightweight and comfortable, yet well‑protected.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/uniform.rsi
+    sprite: /Uploaded/weya/uniform.rsi
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCPatchWeYaBlack
   - type: WebbingClothing
-    startingWebbing: RMCWebbingPMCCommandoWeYuSL
+    startingWebbing: RuMCWebbingPMCCommandoWeYuSL
 
 - type: entity
   parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
-  id: CMJumpsuitVeteranPMCCommandoWeYuSG
-  name: We-Yu Commando elite combat uniform
-  description: Armored uniform used by Weyland-Yutani elite commandos. Lightweight and comfortable, but well protected.
+  id: RuMCJumpsuitVeteranPMCCommandoWeYuSG
+  name: elite combat uniform of the We‑Yu commandos
+  description: The armored uniform used by the elite commandos of Weyland‑Yutani. Lightweight and comfortable, yet well‑protected.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/officer.rsi
@@ -442,16 +172,16 @@
     startingAccessories:
     - RMCPatchWeYaBlack
   - type: WebbingClothing
-    startingWebbing: RMCWebbingPMCCommandoWeYuSG
+    startingWebbing: RuMCWebbingPMCCommandoWeYuSG
 
 - type: entity
   parent: RMCArmorM4PMCNoLight
-  id: CMArmorM4PMCCommandoWeYa
-  name: Elite 'Commando' armor MY7
-  description: A complex overlapping plate system designed to make the wearer highly resistant to small-arms fire.
+  id: RuMCArmorM4PMCCommandoWeYa
+  name: elite armor "Commando" MY7
+  description: A complex system of overlapping plates designed to make the wearer highly resistant to small arms fire.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/armor_strelok.rsi
+    sprite: /Uploaded/weya/armor_strelok.rsi
   - type: CMArmor
     melee: 30 # CLOTHING_ARMOR_VERYHIGH (melee);
     bullet: 40 # CLOTHING_ARMOR_ULTRAHIGH (bullets); going with an intermediate value until more damage types get implemented (more likely to be hit by bullets than melee)
@@ -470,12 +200,12 @@
 
 - type: entity
   parent: RMCArmorM4PMCNoLight
-  id: CMArmorM4PMCCommandoWeYaLeader
-  name: Elite 'Commando' armor MY7L
-  description: A complex overlapping plate system designed to make the wearer highly resistant to small-arms fire. Reinforced version specifically for the squad leader.
+  id: RuMCArmorM4PMCCommandoWeYaLeader
+  name: elite armor "Commando" MY7L
+  description: A complex system of overlapping plates designed to make the wearer highly resistant to small‑arms fire. A reinforced version specifically for the group leader.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/armor_leader.rsi
+    sprite: /Uploaded/weya/armor_leader.rsi
   - type: CMArmor
     melee: 30 # CLOTHING_ARMOR_VERYHIGH (melee);
     bullet: 45 # CLOTHING_ARMOR_ULTRAHIGH (bullets); going with an intermediate value until more damage types get implemented (more likely to be hit by bullets than melee)
@@ -494,14 +224,14 @@
 
 - type: entity
   parent: ArmorHelmetM10
-  id: ArmorHelmetPMCCommandoWeYa
-  name: Elite PMC helmet MY7
-  description: Fully enclosed combat helmet designed for the MY7 kit.
+  id: RuMCArmorHelmetPMCCommandoWeYa
+  name: elite MY7 PMC helmet
+  description: A fully enclosed armored helmet designed for the MY7 configuration.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/helmet_strelok.rsi 
+    sprite: /Uploaded/weya/helmet_strelok.rsi 
   - type: Clothing
-    sprite: _RuMC14/EventContent/Stukov/weya/helmet_strelok.rsi 
+    sprite: /Uploaded/weya/helmet_strelok.rsi 
   - type: Corrodible
     isCorrodible: false
   - type: RMCEarProtection
@@ -518,15 +248,15 @@
     camouflageVariations: { }
 
 - type: entity
-  parent: ArmorHelmetPMCCommandoWeYa
-  id: ArmorHelmetPMCCommandoWeYaLeader
-  name: Elite PMC helmet MY7L
-  description: Fully enclosed combat helmet designed for the MY7L kit. Squad leader version.
+  parent: RuMCArmorHelmetPMCCommandoWeYa
+  id: RuMCArmorHelmetPMCCommandoWeYaLeader
+  name: elite MY7L PMC helmet
+  description: A fully enclosed armored helmet designed for the MY7L configuration. Version for the group leader.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/helmet_leader.rsi 
+    sprite: /Uploaded/weya/helmet_leader.rsi 
   - type: Clothing
-    sprite: _RuMC14/EventContent/Stukov/weya/helmet_leader.rsi 
+    sprite: /Uploaded/weya/helmet_leader.rsi 
   - type: Corrodible
     isCorrodible: false
   - type: RMCEarProtection
@@ -535,19 +265,19 @@
 
 - type: entity
   parent: [ ClothingEyesBase , ShowMedicalIcons ]
-  id: CMGlassesM4WeYa
+  id: RuMCGlassesM4WeYa
   name: M4 night vision device
-  description: Headset and night vision system. Allows obtaining an illuminated image of the surrounding environment.
+  description: The headset and night vision system. Allows you to obtain a lit image of the surrounding environment.
   components:
   - type: Item
     storedRotation: 0
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/glasses.rsi 
+    sprite: /Uploaded/weya/glasses.rsi 
     layers:
     - state: icon
       map: [ "icon" ]
   - type: Clothing
-    sprite: _RuMC14/EventContent/Stukov/weya/glasses.rsi
+    sprite: /Uploaded/weya/glasses.rsi
   - type: NightVisionItem
     mesons: true
   - type: Appearance
@@ -560,65 +290,31 @@
 
 - type: entity
   parent: RMCSatchelLightpack
-  id: RMCSatchelCommadoWeYa
-  name: We-Yu commando backpack
-  description: Ergonomic, protected high-capacity backpack designed for Weyland-Yutani commandos.
+  id: RuMCSatchelCommadoWeYa
+  name: commando WY backpack
+  description: An ergonomic, protective backpack with large capacity, designed for Weyland‑Yutani commandos.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/satchel_strelok.rsi
+    sprite: /Uploaded/weya/satchel_strelok.rsi
 
 - type: entity
   parent: RMCSatchelLightpack
-  id: RMCSatchelCommandoWeYaLeader
-  name: We-Yu commando backpack
-  description: Ergonomic, protected high-capacity backpack designed for Weyland-Yutani commandos.
+  id: RuMCSatchelCommadoWeYaLeader
+  name: commando WY backpack
+  description: An ergonomic, protective backpack with large capacity, designed for Weyland‑Yutani commandos.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/satchel_leader.rsi
+    sprite: /Uploaded/weya/satchel_leader.rsi
 
 - type: entity
-  parent: CMAutoInjector
-  id: CMMeralyneAutoInjector
-  name: Meralyne autoinjector
-  description: Autoinjector with 3 doses of Meralyne, an advanced drug for treating bleeding and circulatory disorders.
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 45
-        reagents:
-        - ReagentId: CMMeralyne
-          Quantity: 45
-  - type: CMRefillableSolution
-    reagents:
-      CMMeralyne: 45
-
-- type: entity
-  parent: CMAutoInjector
-  id: CMDermalineAutoInjector
-  name: Dermaline autoinjector
-  description: Autoinjector with 3 doses of Dermaline, an advanced burn medication.
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 45
-        reagents:
-        - ReagentId: CMDermaline
-          Quantity: 45
-  - type: CMRefillableSolution
-    reagents:
-      CMDermaline: 45
-
-- type: entity
-  parent: BaseStorageItem
-  id: CMSurgicalCaseEliteFilled
-  name: Elite surgical case
-  description: This is an advanced medical case for storing basic surgical instruments.
+  parent: CMSurgicalCase
+  id: RuMCSurgicalCaseEliteFilled
+  name: elite surgical case
+  description: This is an extended medical case for storing basic surgical instruments.
   suffix: Filled
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/medical.rsi
+    sprite: /Uploaded/weya/medical.rsi
     layers:
     - state: surgical_case_elite
     - state: surgical_case_elite
@@ -659,7 +355,7 @@
   - type: FixedItemSizeStorage
   - type: Tag
     tags:
-      - CMSurgicalCaseEliteFilled
+      - RuMCSurgicalCaseEliteFilled
   - type: Appearance
   - type: InteractedBlacklist
     blacklist:
@@ -667,54 +363,23 @@
       - Xeno
 
 - type: Tag
-  id: CMSurgicalCaseEliteFilled
-
-- type: entity
-  parent: CMSurgicalCaseEliteFilled
-  id: CMUpgradedKitMedicalFilled
-  name: Medical kit storage case
-  description: Contains an upgraded trauma kit and an upgraded burn kit.
-  suffix: Filled
-  components:
-  - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/medical.rsi
-    layers:
-    - state: upgrade_kit
-      map: [ "closedLayer" ]
-    - state: upgrade_kit_e
-      map: [ "openLayer", "emptyLayer" ]
-  - type: CMStorageVisualizer
-    storageClosed: closedLayer
-    storageOpen: openLayer
-    storageEmpty: emptyLayer
-  - type: Storage
-    maxItemSize: Small
-    grid:
-    - 0,0,3,1 # 2 slots
-    whitelist:
-      tags:
-      - CMTraumaKit
-      - CMBurnKit
-  - type: StorageFill
-    contents:
-    - id: CMUpgradedTraumaKit10
-    - id: CMUpgradedBurnKit10    
+  id: RuMCSurgicalCaseEliteFilled    
 
 - type: entity
   parent: CMFirstAidKit
-  id: CMCommandoWeYaAidKitFilled
-  name: Weyland-Yutani first aid kit
-  description: Belongs to some special unit. With medical training, you can fit it in a backpack.
+  id: RuMCCommandoWeYaAidKitFilled
+  name: weyland‑Yutani first‑aid kit
+  description: Belongs to some special unit. If you have medical training, you will be able to fit it in your backpack.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/aid_kit.rsi
+    sprite: /Uploaded/weya/aid_kit.rsi
     layers:
     - state: WeYaAidKit
     - state: kit_empty
       map: [ "openLayer" ]
   - type: Item
     size: Normal
-    sprite: _RuMC14/EventContent/Stukov/weya/aid_kit.rsi
+    sprite: /Uploaded/weya/aid_kit.rsi
     heldPrefix: WeYaAidKit
   - type: Storage
     maxItemSize: Small
@@ -722,7 +387,7 @@
     - 0,0,13,1 # 7 slots
     whitelist:
       tags:
-      - CMSurgicalCaseEliteFilled
+      - RuMCSurgicalCaseEliteFilled
       - DiscreteHealthAnalyzer
       - Dropper
       - Pill
@@ -746,52 +411,46 @@
       - Hypospray
       - CMBloodPack
       - CMSurgicalCase
+      - CMMedicalUpgradeKit
       components:
       - Hypospray
   - type: IgnoreContentsSize
     items:
       tags:
-      - CMSurgicalCaseEliteFilled
+      - RuMCSurgicalCaseEliteFilled
+      - CMMedicalUpgradeKit
       - PillCanister
       - CMSurgicalCase
       - RMCSyringeCase
   - type: StorageFill
     contents:
-    - id: CMUpgradedKitMedicalFilled
+    - id: CMMedicalUpgradeKitFilledCommando
       amount: 2
     - id: CMBloodPackFull
     - id: CMUSplintItem
     - id: RMCSyringeCaseFilledPMC
-    - id: CMSurgicalCaseEliteFilled
+    - id: RuMCSurgicalCaseEliteFilled
     - id: CMPortableSurgicalBedSpawnFolded
-
-#Rifleman
-
-
-
-#Leader
-
-
 
 ##########################################
 
 - type: entity
   parent: RMCSmartGunNoCamo
-  id: RMCSmartGunWeYaCommando
-  name: M56T 'Terminator' smart gun
-  description: A true firearm from the M56T Smartgun system, consisting of four parts. If you have it, you are ready to cause serious pain to anyone in your path.
+  id: RuMCSmartGunWeYaCommando
+  name: the smartgun M56T 'Terminator'
+  description: This is a real firearm of the M56T Smartgun system, which consists of four parts. If you have it, you are ready to cause serious pain to anyone who gets in your way.
   suffix: Commando
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/smart_gun.rsi
+    sprite: /Uploaded/weya/smart_gun.rsi
     layers:
     - state: base
-      sprite: _RuMC14/EventContent/Stukov/weya/smart_gun.rsi
+      sprite: /Uploaded/weya/smart_gun.rsi
     - state: mag-0
-      sprite: _RuMC14/EventContent/Stukov/weya/smart_gun.rsi
+      sprite: /Uploaded/weya/smart_gun.rsi
       map: [ "enum.GunVisualLayers.Mag" ]
   - type: Clothing
-    sprite: _RuMC14/EventContent/Stukov/weya/smart_gun.rsi
+    sprite: /Uploaded/weya/smart_gun.rsi
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -831,9 +490,9 @@
         sprite: _RMC14/Actions/marine_smart_gun_actions.rsi
         state: ammo_swap_ap
   - type: RMCSelectiveFire
-    recoilWielded: 3
+    recoilWielded: 0
     scatterWielded: 10
-    baseFireRate: 10
+    baseFireRate: 7.6
     burstScatterMult: 1
     modifiers:
       FullAuto:
@@ -844,15 +503,15 @@
   - type: GunIDLock
 
 - type: entity
-  parent: ArmorHelmetPMCCommandoWeYa
-  id: ArmorHelmetPMCCommandoWeYaSmart
-  name: Elite PMC helmet MY7SG
-  description: Fully enclosed combat helmet designed for the MY7SG kit.
+  parent: RuMCArmorHelmetPMCCommandoWeYa
+  id: RuMCArmorHelmetPMCCommandoWeYaSmart
+  name: elite MY7SG PMC helmet
+  description: A fully enclosed armored helmet designed for the MY7SG configuration.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/helmet_smart.rsi
+    sprite: /Uploaded/weya/helmet_smart.rsi
   - type: Clothing
-    sprite: _RuMC14/EventContent/Stukov/weya/helmet_smart.rsi
+    sprite: /Uploaded/weya/helmet_smart.rsi
   - type: Corrodible
     isCorrodible: false
   - type: RMCEarProtection
@@ -861,12 +520,12 @@
 
 - type: entity
   parent: RMCArmorM4PMCNoLight
-  id: CMArmorM4PMCCommandoWeYaSmart
-  name: Elite 'Commando' armor MY7SG
-  description: A complex overlapping plate system designed to make the wearer highly resistant to small-arms fire.
+  id: RuMCArmorM4PMCCommandoWeYaSmart
+  name: elite "Commando" armor MY7SG
+  description: A complex system of overlapping plates designed to make the wearer highly resistant to small‑arms fire.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/armor_smart.rsi
+    sprite: /Uploaded/weya/armor_smart.rsi
   - type: CMArmor
     melee: 30 # CLOTHING_ARMOR_VERYHIGH (melee);
     bullet: 40 # CLOTHING_ARMOR_ULTRAHIGH (bullets); going with an intermediate value until more damage types get implemented (more likely to be hit by bullets than melee)
@@ -890,15 +549,15 @@
 
 
 - type: entity
-  parent: ArmorHelmetPMCCommandoWeYa
-  id: ArmorHelmetPMCCommandoWeYaDogCatcher
-  name: Elite PMC helmet M5X
-  description: Fully enclosed combat helmet designed for the M5X kit.
+  parent: RuMCArmorHelmetPMCCommandoWeYa
+  id: RuMCArmorHelmetPMCCommandoWeYaDogCatcher
+  name: elite M5X PMC helmet
+  description: A fully enclosed armored helmet designed for the M5X configuration.
   components:
     - type: Sprite
-      sprite: _RuMC14/EventContent/Stukov/weya/helmet_dog.rsi
+      sprite: /Uploaded/weya/helmet_dog.rsi
     - type: Clothing
-      sprite: _RuMC14/EventContent/Stukov/weya/helmet_dog.rsi
+      sprite: /Uploaded/weya/helmet_dog.rsi
     - type: ParasiteResistance
       maxCount: 10
     - type: Corrodible
@@ -909,12 +568,12 @@
 
 - type: entity
   parent: RMCArmorM4PMCNoLight
-  id: CMArmorM4PMCCommandoWeYaDogCatсher
-  name: Elite 'Commando' armor M5X
-  description: A complex overlapping plate system designed to make the wearer highly resistant to xeno threats.
+  id: RuMCArmorM4PMCCommandoWeYaDogCatcher
+  name: elite "Commando" armor M5X
+  description: A complex system of overlapping plates designed to make the owner highly resistant to xenos threats.
   components:
     - type: Sprite
-      sprite: _RuMC14/EventContent/Stukov/weya/armor_dog.rsi
+      sprite: /Uploaded/weya/armor_dog.rsi
     - type: CMArmor
       melee: 45 # CLOTHING_ARMOR_VERYHIGH (melee);
       bullet: 20 # CLOTHING_ARMOR_ULTRAHIGH (bullets); going with an intermediate value until more damage types get implemented (more likely to be hit by bullets than melee)
@@ -932,145 +591,27 @@
       isCorrodible: false
 
 - type: entity
-  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
-  id: RMCWeaponRifleM54C2DogCatсher
-  name: M41A/2 MK2 assault rifle
-  description: A modified version of the M41A MK2 assault rifle, redesigned to improve weight, handling, and accuracy. Fires precise two-round bursts. Issued only to elite units.
-  components:
-    - type: Sprite
-      sprite: _RuMC14/EventContent/Stukov/weya/m41a2_fix.rsi
-      layers:
-        - state: base
-          map: ["enum.GunVisualLayers.Base"]
-        - state: mag-0
-          map: ["enum.GunVisualLayers.Mag"]
-    - type: Clothing
-      sprite: _RuMC14/EventContent/Stukov/weya/m41a2_fix.rsi
-    - type: ContainerContainer
-      containers:
-        gun_magazine: !type:ContainerSlot
-        gun_chamber: !type:ContainerSlot
-    - type: RMCLoreExaminable
-      content: rmc-lore-examinable-m54c-mk2
-    - type: Gun
-      selectedMode: FullAuto
-      shotsPerBurst: 2
-      availableModes:
-        - SemiAuto
-        - Burst
-        - FullAuto
-      soundGunshot:
-        collection: AU14M41FireSound
-    - type: RMCSelectiveFire
-      baseFireModes:
-        - SemiAuto
-        - Burst
-        - FullAuto
-      recoilUnwielded: 4
-      scatterWielded: 2
-      scatterUnwielded: 14
-      baseFireRate: 5
-      burstScatterMult: 1
-      modifiers:
-        Burst:
-          fireDelay: 0.0666
-    - type: RMCWeaponAccuracy
-      accuracyMultiplier: 1.5
-      accuracyMultiplierUnwielded: 0.8
-    - type: ItemSlots
-      slots:
-        gun_magazine:
-          name: Magazine
-          startingItem: CMMagazineRifleM54CAP
-          insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
-          ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
-          priority: 2
-          whitelist:
-            tags:
-              - CMMagazineRifleM54C
-              - CMMagazineRifleM54CAP
-              - CMMagazineRifleM54CExt
-              - RMCMagazineRifleM54CIncendiary
-              - RMCMagazineRifleM54CHEAP
-    - type: GunDamageModifier
-      multiplier: 1.25
-    - type: AttachableHolder
-      slots:
-        rmc-aslot-barrel:
-          startingAttachable: RMCAttachmentExtendedBarrel
-          whitelist:
-            tags:
-              - RMCAttachmentBarrelCharger
-              - RMCAttachmentExtendedBarrel
-              - RMCAttachmentSuppressor
-              - RMCM5Bayonet
-        rmc-aslot-rail:
-          startingAttachable: RMCAttachmentMagneticHarness
-          whitelist:
-            tags:
-              - RMCAttachmentRailFlashlight
-              - RMCAttachmentMagneticHarness
-              - RMCAttachmentS5RedDotSight
-              - RMCAttachmentS6ReflexSight
-              - RMCAttachmentS84xTelescopicScope
-              - RMCAttachmentS42xTelescopicMiniscope
-        rmc-aslot-stock:
-          startingAttachable: RMCAttachmentM54CStockSolid
-          whitelist:
-            tags:
-              - RMCAttachmentM54CStockSolid
-        rmc-aslot-underbarrel:
-          startingAttachable: RMCAttachmentAngledGrip
-          whitelist:
-            tags:
-              - RMCAttachmentAngledGrip
-              - RMCAttachmentBipod
-              - RMCAttachmentFlashlightGrip
-              - RMCAttachmentGyroscopicStabilizer
-              - RMCAttachmentLaserSight
-              - RMCAttachmentU1GrenadeLauncher
-              - RMCAttachmentU7UnderbarrelShotgun
-              - RMCAttachmentVerticalGrip
-              - RMCAttachmentExtinguisher
-              - RMCAttachmentFlamer
-    - type: AttachableHolderVisuals
-      offsets:
-        rmc-aslot-barrel: 0.81, 0.035
-        rmc-aslot-rail: -0.01, 0.2
-        rmc-aslot-stock: -0.78, 0.0325
-        rmc-aslot-underbarrel: 0.355, -0.36
-    - type: ItemCamouflage
-      camouflageVariations: {}
-    - type: GunIDLock
-    - type: Tag
-      tags:
-        - RMCWeaponRifleM54C2DogCatсher
-
-- type: Tag
-  id: RMCWeaponRifleM54C2DogCatсher
-
-- type: entity
   parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
-  id: RMCJumpsuitVeteranPMCCommandoWeYa
-  name: We-Yu Commando elite combat uniform
-  description: Armored uniform used by Weyland-Yutani elite commandos. Lightweight and comfortable, but well protected.
+  id: RuMCJumpsuitVeteranPMCCommandoWeYa
+  name: elite combat uniform of the We‑Yu commandos
+  description: The armored uniform used by the elite commandos of Weyland‑Yutani. Lightweight and comfortable, yet well‑protected.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/uniform_dog.rsi
+    sprite: /Uploaded/weya/uniform_dog.rsi
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCPatchWeYaBlack
   - type: WebbingClothing
-    startingWebbing: RMCWebbingPMCCommandoWeYu
+    startingWebbing: RuMCWebbingPMCCommandoWeYu
 
 - type: entity
   parent: RMCSatchelLightpack
-  id: RMCSatchelCommadoWeYaDogCatcher
-  name: We-Yu commando backpack
-  description: Ergonomic, protected high-capacity backpack designed for Weyland-Yutani commandos.
+  id: RuMCSatchelCommadoWeYaDogCatcher
+  name: Commando WY backpack
+  description: An ergonomic, protective backpack with large capacity, designed for Weyland‑Yutani commandos.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/satchel_dog.rsi
+    sprite: /Uploaded/weya/satchel_dog.rsi
 
 ###########################################################
 
@@ -1078,27 +619,26 @@
 
 - type: entity
   parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
-  id: AU14WYBWJumpsuit
-  name: Bio-Weapons Department uniform
-  description: We-Yu Bio-Weapons Department uniform, well protected against impacts and acid.
+  id: RuMCWYBWJumpsuit
+  name: Bio‑Weapon Department Form
+  description: The uniform of the Bio‑Weapon Department We‑Yu is well‑protected against impacts and acids.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/uniform_bw.rsi
+    sprite: /Uploaded/weya/uniform_bw.rsi
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCPatchWeYaBlack
   
 - type: entity
   parent: RMCBaseBioSuit
-  id: RMCBWLabcoat
-  name: W-Y chemical protection lab coat
-  description: Durable lab coat that now resembles more of a cloak. Made from wear-resistant materials and intended for conducting dangerous experiments in the field. Most often found among employees of the Weyland-Yutani Corporation's bio-weapons department.
-  suffix: Generic, RMC
+  id: RuMCBWLabcoat
+  name: W‑Y laboratory coat for protection against chemicals
+  description: A durable laboratory coat that now looks more like a cloak. Made from wear‑resistant materials and designed for conducting hazardous experiments in the field. Most often found among employees of the biological weapons department of the Weyland‑Yutani Corporation.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/armor_bw.rsi
+    sprite: /Uploaded/weya/armor_bw.rsi
   - type: Clothing
-    sprite: _RuMC14/EventContent/Stukov/weya/armor_bw.rsi
+    sprite: /Uploaded/weya/armor_bw.rsi
   - type: CMHardArmor
   - type: Storage
     grid:
@@ -1107,15 +647,14 @@
 
 - type: entity
   parent: RMCBaseBioSuit
-  id: RMCBWLabcoatDir
-  name: W-Y chemical protection lab coat
-  description: Durable lab coat that now resembles more of a cloak. Made from wear-resistant materials and intended for conducting dangerous experiments in the field. Most often found among employees of the Weyland-Yutani Corporation's bio-weapons department.
-  suffix: Generic, RMC
+  id: RuMCBWLabcoatDir
+  name: W‑Y laboratory coat for protection against chemicals
+  description: A durable laboratory coat that now looks more like a cloak. Made from wear‑resistant materials and designed for conducting hazardous experiments in the field. Most often found among employees of the biological weapons department of the Weyland‑Yutani Corporation.
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/armor_bw_sl.rsi
+    sprite: /Uploaded/weya/armor_bw_sl.rsi
   - type: Clothing
-    sprite: _RuMC14/EventContent/Stukov/weya/armor_bw_sl.rsi
+    sprite: /Uploaded/weya/armor_bw_sl.rsi
   - type: CMHardArmor
   - type: Storage
     grid:
@@ -1124,34 +663,34 @@
 
 - type: entity
   parent: RMCHoodBioGeneral
-  id: BioHelmetBW
-  name: W-Y chemical protection hood
-  description: Durable lab hood. Made from wear-resistant materials designed for conducting dangerous experiments in the field. Usually found in the possession of the W-Y Corporation's bio-weapons department.
+  id: RuMCBioHelmetBW
+  name: W‑Y chemical protection hood
+  description: Durable laboratory hood. Made of wear‑resistant materials designed for conducting hazardous experiments in field conditions. Typically found in the possession of the biological weapons department of the W‑Y corporation.
   suffix: Bio-Weapons
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/helmet_bw.rsi
+    sprite: /Uploaded/weya/helmet_bw.rsi
   - type: Clothing
-    sprite: _RuMC14/EventContent/Stukov/weya/helmet_bw.rsi
+    sprite: /Uploaded/weya/helmet_bw.rsi
 
 - type: entity
   parent: CMGlassesSecurity
-  id: CMGlassesBW
-  name: W-Y durable lab safety goggles
-  description: One-piece lab safety goggles capable of withstanding even the harshest laboratory working conditions. Usually found among employees of the Weyland-Yutani Corporation's bio-weapons department.
+  id: RuMCGlassesBW
+  name: durable laboratory safety goggles W-Y
+  description: Solid-cast laboratory safety goggles capable of withstanding even the harshest laboratory work conditions. Typically found among employees of the biological weapons department of the Weyland-Yutani Corporation.
   suffix: Bio-Weapons
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/glasses_bw.rsi
+    sprite: /Uploaded/weya/glasses_bw.rsi
   - type: Clothing
-    sprite: _RuMC14/EventContent/Stukov/weya/glasses_bw.rsi
+    sprite: /Uploaded/weya/glasses_bw.rsi
 
 - type: entity
   parent: RMCBriefcase
-  id: RMCBriefcaseBW
+  id: RuMCBriefcaseBW
   components:
   - type: Sprite
-    sprite: _RuMC14/EventContent/Stukov/weya/brifcase_bw.rsi
+    sprite: /Uploaded/weya/brifcase_bw.rsi
   - type: StorageFill
     contents:
     - id: AU14ObjectiveItemWYLaptop
@@ -1160,17 +699,6 @@
     - id: CMMagazinePistolMK80
     - id: CMMagazinePistolMK80
     - id: RMCPillCyanide
-    - id: RMCPillCyanide
-    - id: RMCPillCyanide
+      amount: 3
     - id: RMCSpaceCash1000
-    - id: RMCSpaceCash1000
-    - id: RMCSpaceCash1000
-    - id: RMCSpaceCash1000
-    - id: RMCSpaceCash1000
-    - id: RMCSpaceCash1000
-    - id: RMCSpaceCash1000
-    - id: RMCSpaceCash1000
-    - id: RMCSpaceCash1000
-    - id: RMCSpaceCash1000
-    - id: RMCSpaceCash1000
-    - id: RMCSpaceCash1000
+      amount: 12

@@ -1,30 +1,30 @@
-- type: playTimeTracker
-  id: CMWeYaCommando
+﻿- type: playTimeTracker
+  id: RuMCWeYaCommando
 
 - type: jobIcon
   parent: CMJobIconBase
-  id: RMCJobIconPMCWeYaCommando
+  id: RuMCJobIconPMCWeYaCommando
   icon:
-    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi 
+    sprite: /Uploaded/weya/icons.rsi 
     state: strelok
 
 - type: startingGear
-  id: RMCJobPMCWeYaCommando
+  id: RuMCJobPMCWeYaCommando
   equipment:
     id: RMCIDCardPMC
-    jumpsuit: CMJumpsuitVeteranPMCCommandoWeYu
-    outerClothing: CMArmorM4PMCCommandoWeYa
+    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYu
+    outerClothing: RuMCArmorM4PMCCommandoWeYa
     gloves: AU14HandsSilverRMC
-    head: ArmorHelmetPMCCommandoWeYa
+    head: RuMCArmorHelmetPMCCommandoWeYa
     shoes: RMCBootsPMCCommandoFilled
     mask: RMCMaskCoifPMC
-    ears: RMCHeadsetDistressWeYaCommando
-    back: RMCSatchelCommadoWeYa
+    ears: AU14ColonyWeylandHeadset
+    back: RuMCSatchelCommadoWeYa
     belt: RMCBeltPMC
     pocket1: RMCPouchToolsSocMarineRaiderFill
     pocket2: RMCPouchMedicalSocDutchUnmarked
-    suitstorage: RMCWeaponRifleM54C2Fixed
-    eyes: CMGlassesM4WeYa
+    suitstorage: RMCWeaponRifleM54C2Whiteout
+    eyes: RuMCGlassesM4WeYa
   storage:
     back:
     - CMStunbaton
@@ -34,7 +34,7 @@
     - CMRollerBedSpawnFolded
     - RMCSynthResetKeySMART
     - AU14CMDefibrillator
-    - CMCommandoWeYaAidKitFilled
+    - RuMCCommandoWeYaAidKitFilled
     outerClothing:
     - RMCMagazineRifleM54CHEAP
     - RMCMagazineRifleM54CHEAP
@@ -63,10 +63,10 @@
 
 - type: job
   parent: CMJobBase
-  id: CMWeYaCommando
+  id: RuMCWeYaCommando
   roundSide: ThirdParty
   roundForce: WY
-  roundRole: CMWeYaCommando
+  roundRole: RuMCWeYaCommando
   roundComponents:
   - type: AssignSquad
     whitelist:
@@ -100,15 +100,15 @@
     currentLanguage: TacticalSignLanguage
     defaultLanguage: TacticalSignLanguage
 
-  name: Operator
+  name: Operative
   description: rmc-ghost-role-information-pmc-description
-  playTimeTracker: CMWeYaCommando
+  playTimeTracker: RuMCWeYaCommando
   ranks:
     RMCRankWeYaEliteResponder: []
-  spawnMenuRoleName: WY Commando Rifleman
-  startingGear: RMCJobPMCWeYaCommando
+  spawnMenuRoleName: WY Commando Operative
+  startingGear: RuMCJobPMCWeYaCommando
   greeting: au14-pmcparty-greeting
-  icon: RMCJobIconPMCWeYaCommando
+  icon: RuMCJobIconPMCWeYaCommando
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-wy
   accessGroups:
@@ -118,7 +118,7 @@
 
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
-  id: CMWeYaCommando
+  id: RuMCWeYaCommando
   name: WY Commando
   components:
   - type: GhostTakeoverAvailable
@@ -128,31 +128,31 @@
     makeSentient: true
     allowSpeech: true
     allowMovement: true
-    name: WY Commando Operator
-    description: Do not allow damage to the Weyland-Yutani Corporation. Deny Weyland-Yutani involvement and do not trust GOVFOR forces. Open fire only if fired upon or on orders.
-    job: CMWeYaCommando
+    name: WY Commando Operative
+    description: au14-pmcparty-description
+    job: RuMCWeYaCommando
     raffle:
       settings: short
 
 - type: Tag
-  id: RMCJobPMCWeYaCommando
+  id: RuMCJobPMCWeYaCommando
 
 - type: startingGear
-  id: RMCJobPMCWeYaCommandoSmart
+  id: RuMCJobPMCWeYaCommandoSmart
   equipment:
     id: RMCIDCardPMC
-    jumpsuit: CMJumpsuitVeteranPMCCommandoWeYuSG
-    outerClothing: CMArmorM4PMCCommandoWeYaSmart
+    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYuSG
+    outerClothing: RuMCArmorM4PMCCommandoWeYaSmart
     gloves: AU14HandsSilverRMC
-    head: ArmorHelmetPMCCommandoWeYaSmart
+    head: RuMCArmorHelmetPMCCommandoWeYaSmart
     shoes: RMCBootsPMCCommandoFilled
     mask: RMCMaskCoifPMC
-    ears: RMCHeadsetDistressWeYaCommando
+    ears: AU14ColonyWeylandHeadset
     back: RMCScabbardMacheteSGFilled
     belt: RMCBeltSmartGunOperatorPistolPMC
     pocket1: RMCPouchDrumPMCFill
     pocket2: RMCPouchMedicalSocDutchUnmarked
-    suitstorage: RMCSmartGunWeYaCommando
+    suitstorage: RuMCSmartGunWeYaCommando
     eyes: RMCGlassesSmartGunSight
   storage:
     outerClothing:
@@ -165,7 +165,7 @@
     - RMCMagazineSmartGunirradiated
     - RMCMagazineSmartGunirradiated
     - RMCMagazineSmartGunirradiated
-    - RMCMK80Commando
+    - RuMCMK80Commando
     pocket2:
     - CMHealthAnalyzer
     - CMUpgradedTraumaKit10
@@ -183,10 +183,10 @@
 
 - type: job
   parent: CMJobBase
-  id: CMWeYaCommandoSmart
+  id: RuMCWeYaCommandoSmart
   roundSide: ThirdParty
   roundForce: WY
-  roundRole: CMWeYaCommandoSmart
+  roundRole: RuMCWeYaCommandoSmart
   roundComponents:
   - type: AssignSquad
     whitelist:
@@ -223,13 +223,13 @@
 
   name: Smartgunner
   description: rmc-ghost-role-information-pmc-description
-  playTimeTracker: CMWeYaCommandoSmart
+  playTimeTracker: RuMCWeYaCommandoSmart
   ranks:
     RMCRankWeYaEliteResponder: []
-  spawnMenuRoleName: WY Commando Smart
-  startingGear: RMCJobPMCWeYaCommandoSmart
+  spawnMenuRoleName: WY Commando Smartgunner
+  startingGear: RuMCJobPMCWeYaCommandoSmart
   greeting: au14-pmcparty-greeting
-  icon: RMCJobIconPMCWeYaCommandoSmart
+  icon: RuMCJobIconPMCWeYaCommandoSmart
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-wy
   accessGroups:
@@ -239,8 +239,8 @@
 
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
-  id: CMWeYaCommandoSmart
-  name: WY Commando smart
+  id: RuMCWeYaCommandoSmart
+  name: WY Commando Smartgunner
   components:
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
@@ -249,39 +249,39 @@
     makeSentient: true
     allowSpeech: true
     allowMovement: true
-    name: WY Commando Smart
-    description: Do not allow damage to the Weyland-Yutani Corporation. Deny Weyland-Yutani involvement and do not trust GOVFOR forces. Open fire only if fired upon or on orders.
-    job: CMWeYaCommandoSmart
+    name: WY Commando Smartgunner
+    description: au14-pmcparty-description
+    job: RuMCWeYaCommandoSmart
     raffle:
       settings: short
 
 - type: playTimeTracker
-  id: CMWeYaCommandoSmart
+  id: RuMCWeYaCommandoSmart
 
 - type: jobIcon
   parent: CMJobIconBase
-  id: RMCJobIconPMCWeYaCommandoSmart
+  id: RuMCJobIconPMCWeYaCommandoSmart
   icon:
-    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi
+    sprite: /Uploaded/weya/icons.rsi
     state: smart
 
 - type: startingGear
-  id: RMCJobPMCWeYaCommandoDogCatcher
+  id: RuMCJobPMCWeYaCommandoDogCatcher
   equipment:
     id: RMCIDCardPMC
-    jumpsuit: RMCJumpsuitVeteranPMCCommandoWeYa
-    outerClothing: CMArmorM4PMCCommandoWeYaDogCatсher
+    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYa
+    outerClothing: RuMCArmorM4PMCCommandoWeYaDogCatcher
     gloves: AU14HandsSilverRMC
-    head: ArmorHelmetPMCCommandoWeYaDogCatcher
+    head: RuMCArmorHelmetPMCCommandoWeYaDogCatcher
     shoes: RMCBootsPMCCommandoFilled
     mask: RMCMaskCoifPMC
-    ears: RMCHeadsetDistressWeYaCommando
-    back: RMCSatchelCommadoWeYaDogCatcher
+    ears: AU14ColonyWeylandHeadset
+    back: RuMCSatchelCommadoWeYaDogCatcher
     belt: RMCBeltPMC
     pocket1: RMCPouchToolsSocMarineRaiderFill
     pocket2: RMCPouchMedicalSocDutchUnmarked
-    suitstorage: RMCWeaponRifleM54C2DogCatсher
-    eyes: CMGlassesM4WeYa
+    suitstorage: RMCWeaponRifleM54C2
+    eyes: RuMCGlassesM4WeYa
   storage:
     back:
     - CMStunbaton
@@ -291,7 +291,7 @@
     - CMRollerBedSpawnFolded
     - RMCSynthResetKeySMART
     - AU14CMDefibrillator
-    - CMCommandoWeYaAidKitFilled
+    - RuMCCommandoWeYaAidKitFilled
     outerClothing:
     - CMMagazineRifleM54CAP
     - CMMagazineRifleM54CAP
@@ -319,10 +319,10 @@
 
 - type: job
   parent: CMJobBase
-  id: CMWeYaCommandoDogCatcher
+  id: RuMCWeYaCommandoDogCatcher
   roundSide: ThirdParty
   roundForce: WY
-  roundRole: CMWeYaCommandoDogCatcher
+  roundRole: RuMCWeYaCommandoDogCatcher
   roundComponents:
   - type: AssignSquad
     whitelist:
@@ -358,13 +358,13 @@
 
   name: Dog Catcher
   description: rmc-ghost-role-information-pmc-description
-  playTimeTracker: CMWeYaCommandoDogCatcher
+  playTimeTracker: RuMCWeYaCommandoDogCatcher
   ranks:
     RMCRankWeYaEliteResponder: []
   spawnMenuRoleName: WY Commando Dog Catcher
-  startingGear: RMCJobPMCWeYaCommandoDogCatcher
+  startingGear: RuMCJobPMCWeYaCommandoDogCatcher
   greeting: au14-pmcparty-greeting
-  icon: RMCJobIconPMCWeYaCommandoDogCatcher
+  icon: RuMCJobIconPMCWeYaCommandoDogCatcher
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-wy
   accessGroups:
@@ -374,7 +374,7 @@
 
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
-  id: CMWeYaCommandoDogCatcher
+  id: RuMCWeYaCommandoDogCatcher
   name: WY Commando Dog Catcher
   components:
   - type: GhostTakeoverAvailable
@@ -385,38 +385,38 @@
     allowSpeech: true
     allowMovement: true
     name: WY Commando Dog Catcher
-    description: Do not allow damage to the Weyland-Yutani Corporation. Deny Weyland-Yutani involvement and do not trust GOVFOR forces. Open fire only if fired upon or on orders.
-    job: CMWeYaCommandoDogCatcher
+    description: au14-pmcparty-description
+    job: RuMCWeYaCommandoDogCatcher
     raffle:
       settings: short
 
 - type: playTimeTracker
-  id: CMWeYaCommandoDogCatcher
+  id: RuMCWeYaCommandoDogCatcher
 
 - type: jobIcon
   parent: CMJobIconBase
-  id: RMCJobIconPMCWeYaCommandoDogCatcher
+  id: RuMCJobIconPMCWeYaCommandoDogCatcher
   icon:
-    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi
+    sprite: /Uploaded/weya/icons.rsi
     state: dogcatcher
 
 - type: startingGear
-  id: RMCJobPMCWeYaCommandoLeader
+  id: RuMCJobPMCWeYaCommandoLeader
   equipment:
     id: RMCIDCardPMC
-    jumpsuit: CMJumpsuitVeteranPMCCommandoWeYuSL
-    outerClothing: CMArmorM4PMCCommandoWeYaLeader
+    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYuSL
+    outerClothing: RuMCArmorM4PMCCommandoWeYaLeader
     gloves: RMCHandsVeteran
-    head: ArmorHelmetPMCCommandoWeYaLeader
+    head: RuMCArmorHelmetPMCCommandoWeYaLeader
     shoes: RMCBootsPMCCommandoFilled
     mask: RMCMaskCoifPMC
-    ears: RMCHeadsetDistressWeYaCommandoLeader
-    back: RMCSatchelCommandoWeYaLeader
+    ears: AU14ColonyWeylandHeadset
+    back: RuMCSatchelCommadoWeYaLeader
     belt: RMCMatebaBeltLuxurious
     pocket1: RMCPouchToolsSocMarineRaiderFill
     pocket2: RMCPouchMedicalSocDutchUnmarked
-    suitstorage: RMCWeaponRifleM54C2Fixed
-    eyes: CMGlassesM4WeYa
+    suitstorage: RMCWeaponRifleM54C2Whiteout
+    eyes: RuMCGlassesM4WeYa
   storage:
     back:
     - AU14TeleBaton
@@ -425,7 +425,7 @@
     - RMCMagazineRifleM54CHEAP
     - RMCSynthResetKeySMART
     - AU14CMDefibrillator
-    - CMCommandoWeYaAidKitFilled
+    - RuMCCommandoWeYaAidKitFilled
     outerClothing:
     - RMCMagazineRifleM54CHEAP
     - RMCMagazineRifleM54CHEAP
@@ -438,7 +438,7 @@
     - RMCSpeedLoaderMatebaHIAP
     - RMCSpeedLoaderMatebaHIAP
     - RMCSpeedLoaderMatebaHIAP
-    - RMCWeaponRevolverMatebaCommando
+    - RuMCWeaponRevolverMatebaCommando
     pocket2:
     - CMHealthAnalyzer
     - CMUpgradedTraumaKit10
@@ -456,10 +456,10 @@
 
 - type: job
   parent: CMJobBase
-  id: CMWeYaCommandoLeader
+  id: RuMCWeYaCommandoLeader
   roundSide: ThirdParty
   roundForce: WY
-  roundRole: CMWeYaCommandoLeader
+  roundRole: RuMCWeYaCommandoLeader
   roundComponents:
   - type: AssignSquad
     whitelist:
@@ -496,22 +496,22 @@
   - type: MarineOrders
   - type: SquadLeader
     icon:
-      sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi 
+      sprite: /Uploaded/weya/icons.rsi 
       state: leader
   - type: RMCPointing
   - type: RMCTrackable
   - type: JobPrefix
     prefix: au14-job-prefix-AU14JobGOVFORSectionSergeantWYPMC
 
-  name: Commander
+  name: Leader
   description: rmc-ghost-role-information-pmc-description
-  playTimeTracker: CMWeYaCommandoLeader
+  playTimeTracker: RuMCWeYaCommandoLeader
   ranks:
     RMCRankWeYaEliteResponder: []
   spawnMenuRoleName: WY Commando leader
-  startingGear: RMCJobPMCWeYaCommandoLeader
+  startingGear: RuMCJobPMCWeYaCommandoLeader
   greeting: au14-pmcparty-greeting
-  icon: RMCJobIconPMCWeYaCommandoLeader
+  icon: RuMCJobIconPMCWeYaCommandoLeader
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-wy
   accessGroups:
@@ -521,7 +521,7 @@
 
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
-  id: CMWeYaCommandoLeader
+  id: RuMCWeYaCommandoLeader
   name: WY Commando Leader
   components:
   - type: GhostTakeoverAvailable
@@ -532,32 +532,32 @@
     allowSpeech: true
     allowMovement: true
     name: WY Commando leader
-    description: Do not allow damage to the Weyland-Yutani Corporation. Deny Weyland-Yutani involvement and do not trust GOVFOR forces. Open fire only if fired upon or on orders.
-    job: CMWeYaCommandoLeader
+    description: au14-pmcparty-description
+    job: RuMCWeYaCommandoLeader
     raffle:
       settings: short
 
 - type: playTimeTracker
-  id: CMWeYaCommandoLeader
+  id: RuMCWeYaCommandoLeader
 
 - type: jobIcon
   parent: CMJobIconBase
-  id: RMCJobIconPMCWeYaCommandoLeader
+  id: RuMCJobIconPMCWeYaCommandoLeader
   icon:
-    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi
+    sprite: /Uploaded/weya/icons.rsi
     state: leader
 
 - type: startingGear
-  id: AU14GearWYBWScientist
+  id: RuMCGearWYBWScientist
   equipment:
     id: AU14IDCardCivilianScientist
-    jumpsuit: AU14WYBWJumpsuit
-    head: BioHelmetBW
+    jumpsuit: RuMCWYBWJumpsuit
+    head: RuMCBioHelmetBW
     belt: RMCBeltHolsterPistolWeYa
     shoes: RMCShoesWhite
     ears: AU14ColonyWeylandHeadset
-    outerClothing: RMCBWLabcoat
-    eyes: CMGlassesBW
+    outerClothing: RuMCBWLabcoat
+    eyes: RuMCGlassesBW
     gloves: CMHandsLatex
     back: CMSatchelSecureStandard
     pocket1: AU14PouchAutoinjectorFilledMilitaryDoctor
@@ -569,10 +569,7 @@
     - RMCGlassesReagentHUDGlasses
     - RMCGlassesMedicalHUDGlasses
     - AU14CMDefibrillator
-    - CMCommandoWeYaAidKitFilled
-    - RMCSpaceCash1000
-    - RMCSpaceCash1000
-    - RMCSpaceCash1000
+    - RuMCCommandoWeYaAidKitFilled
     - RMCSpaceCash1000
     - RMCSpaceCash1000
     outerClothing:
@@ -589,10 +586,10 @@
 
 - type: job
   parent: CMJobBase
-  id: AU14JobWYBWScientist
+  id: RuMCJobWYBWScientist
   roundSide: ThirdParty
   roundForce: WY
-  roundRole: WYBWScientist
+  roundRole: RuMCJobWYBWScientist
   roundComponents:
   - type: Skills
     skills:
@@ -612,13 +609,13 @@
       tags:
       - SquadPMC
 
-  name: Bio-Weapons Department Scientist
-  description: You are a member of the Bio-Weapons Department research team. Obey the senior corporate employee and study the xenomorph.
-  playTimeTracker: AU14JobWYBWScientist
+  name: Scientist at the Bio‑Weapon Department
+  description: You are a member of the scientific team in the Bio‑Weapon Department; report to the senior corporate employee and study the xenomorph.
+  playTimeTracker: RuMCJobWYBWScientist
   ranks:
     AU14RankScientistProfessor: []
   spawnMenuRoleName: WY BW Scientist (3rd party)
-  startingGear: AU14GearWYBWScientist
+  startingGear: RuMCGearWYBWScientist
   greeting: au14-wyht-greeting
   icon: "RMCJobIconPMCScientist"
   joinNotifyCrew: false
@@ -630,7 +627,7 @@
 
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
-  id: AU14JobWYBWScientist
+  id: RuMCJobWYBWScientist
   name: WY Bio-Weapons Scientist (3rd party)
   components:
   - type: GhostTakeoverAvailable
@@ -640,28 +637,28 @@
     makeSentient: true
     allowSpeech: true
     allowMovement: true
-    name: Bio-Weapons Department Scientist
-    description: You are a member of the Bio-Weapons Department research team. Obey the senior corporate employee and study the xenomorph.
+    name: Scientist at the Bio‑Weapon Department
+    description: You are a member of the scientific team in the Bio‑Weapon Department; report to the senior corporate employee and study the xenomorph.
     reregister: false
-    job: AU14JobWYBWScientist
+    job: RuMCJobWYBWScientist
     raffle:
       settings: short
-    rules: Obey the directorate's orders.
+    rules: Obey the orders of the directive.
 
 - type: playTimeTracker
-  id: AU14JobWYBWScientist
+  id: RuMCJobWYBWScientist
 
 - type: startingGear
-  id: AU14GearWYBWDirector
+  id: RuMCGearWYBWDirector
   equipment:
     id: AU14IDCardCivilianScientist
-    jumpsuit: AU14WYBWJumpsuit
-    head: BioHelmetBW
+    jumpsuit: RuMCWYBWJumpsuit
+    head: RuMCBioHelmetBW
     belt: RMCBeltHolsterPistolWeYaMK80Fill
     shoes: RMCShoesWhite
     ears: AU14ColonyWeylandHeadset
-    outerClothing: RMCBWLabcoatDir
-    eyes: CMGlassesBW
+    outerClothing: RuMCBWLabcoatDir
+    eyes: RuMCGlassesBW
     gloves: CMHandsLatex
     back: CMSatchelSecureStandard
     pocket1: AU14PouchAutoinjectorFilledMilitaryDoctor
@@ -673,24 +670,21 @@
     - RMCGlassesReagentHUDGlasses
     - RMCGlassesMedicalHUDGlasses
     - AU14CMDefibrillator
-    - CMCommandoWeYaAidKitFilled
-    - RMCSpaceCash1000
-    - RMCSpaceCash1000
-    - RMCSpaceCash1000
+    - RuMCCommandoWeYaAidKitFilled
     - RMCSpaceCash1000
     - RMCSpaceCash1000
     outerClothing:
     - CMFolderWhite
     - CMMaskSterile
   inhand:
-  - RMCBriefcaseBW
+  - RuMCBriefcaseBW
 
 - type: job
   parent: CMJobBase
-  id: AU14JobWYBWDirector
+  id: RuMCJobWYBWDirector
   roundSide: ThirdParty
   roundForce: WY
-  roundRole: WYBWDirector
+  roundRole: RuMCJobWYBWDirector
   roundComponents:
   - type: Skills
     skills:
@@ -712,13 +706,13 @@
       tags:
       - SquadPMC
 
-  name: Bio-Weapons Department Director
-  description: You are the director of the Bio-Weapons Department research team. Obey the senior corporate employee and study the xenomorph.
-  playTimeTracker: AU14JobWYBWDirector
+  name: Director of the Bio‑Weapons Department
+  description: You are the director of the scientific group in the Bio‑Weapon Department; report to the senior corporate employee and study the xenomorph.
+  playTimeTracker: RuMCJobWYBWDirector
   ranks:
     AU14RankPrDRegionDirector: []
   spawnMenuRoleName: WY BW Director (3rd party)
-  startingGear: AU14GearWYBWDirector
+  startingGear: RuMCGearWYBWDirector
   greeting: au14-wyht-greeting
   icon: "RMCJobIconPMCScientist"
   joinNotifyCrew: false
@@ -730,8 +724,8 @@
 
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
-  id: AU14JobWYBWDirector
-  name: WY Director Bio-Weapons Director (3rd party)
+  id: RuMCJobWYBWDirector
+  name: WY Director Bio-Weapons (3rd party)
   components:
   - type: GhostTakeoverAvailable
   - type: GhostRoleApplySpecial
@@ -740,22 +734,22 @@
     makeSentient: true
     allowSpeech: true
     allowMovement: true
-    name: Bio-Weapons Department Director
-    description: You are the director of the Bio-Weapons Department research team. Obey the senior corporate employee and study the xenomorph.
+    name: Director of the Bio‑Weapons Department
+    description: You are the director of the scientific group in the Bio‑Weapon Department; report to the senior corporate employee and study the xenomorph.
     reregister: false
-    job: AU14JobWYBWDirector
+    job: RuMCJobWYBWDirector
     raffle:
       settings: short
-    rules: Obey the directorate's orders.
+    rules: Obey the orders of the directive.
 
 - type: playTimeTracker
-  id: AU14JobWYBWDirector
+  id: RuMCJobWYBWDirector
 
 - type: startingGear
-  id: AU14GearWYOperator
+  id: RuMCGearWYOperator
   equipment:
     id: RMCIDCardPMC
-    jumpsuit: RMCJumpsuitVeteranPMCCommandoWeYa
+    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYa
     head: AU14WYPMCBallCap
     belt: RMCBeltHolsterPistolWeYaMK80Fill
     shoes: RMCBootsPMCCommandoFilled
@@ -775,10 +769,10 @@
 
 - type: job
   parent: CMJobBase
-  id: AU14JobWYOperator
+  id: RuMCJobWYOperator
   roundSide: ThirdParty
   roundForce: WY
-  roundRole: WYOperator
+  roundRole: RuMCJobWYOperator
   roundComponents:
   - type: Skills
     skills:
@@ -795,13 +789,13 @@
       tags:
       - SquadPMC
 
-  name: Bio-Weapons Department Operator
-  description: You are an operator of the Bio-Weapons Department research team. Obey the senior corporate employee and study the xenomorph.
-  playTimeTracker: AU14JobWYOperator
+  name: Bi-oweapons Department Operator
+  description: You are an operator of the scientific team in the Bio‑Weapon Department; report to the senior corporate employee and study the xenomorph.
+  playTimeTracker: RuMCJobWYOperator
   ranks:
     AU14RankWeYuRecruit: []
   spawnMenuRoleName: WY Operator (3rd party)
-  startingGear: AU14GearWYOperator
+  startingGear: RuMCGearWYOperator
   greeting: au14-wyht-greeting
   icon: "AU14JobIconColonyJournalist"
   joinNotifyCrew: false
@@ -813,7 +807,7 @@
 
 - type: entity
   parent: AU14BaseMobSpeciesOrganicWeYu
-  id: AU14JobWYOperator
+  id: RuMCJobWYOperator
   name: WY Bio-Weapons Operator (3rd party)
   components:
   - type: GhostTakeoverAvailable
@@ -823,13 +817,13 @@
     makeSentient: true
     allowSpeech: true
     allowMovement: true
-    name: Bio-Weapons Department Operator
-    description: You are an operator of the Bio-Weapons Department research team. Obey the senior corporate employee and study the xenomorph.
+    name: Bio-weapons Department Operator
+    description: You are an operator of the scientific team in the Bio‑Weapon Department; report to the senior corporate employee and study the xenomorph.
     reregister: false
-    job: AU14JobWYOperator
+    job: RuMCJobWYOperator
     raffle:
       settings: short
-    rules: Obey the directorate's orders.
+    rules: Obey the orders of the directive.
 
 - type: playTimeTracker
-  id: AU14JobWYOperator
+  id: RuMCJobWYOperator
