@@ -2,6 +2,8 @@
   id: AuPlanetShivasSnowball
   name: Shivas' Snowball
   components:
+  - type: CMUColonyLanguage
+    defaultLanguage: English
   - type: RMCPlanetMapPrototype
     votename: "Shivas' Snowball"
     mapId: auShivas
@@ -20,7 +22,6 @@
     - LACN
     - UPP
     - BEAR
-    - ProdigySF
     defaultgovfor: USCM
     defaultopfor: UPP
     govforinship: true

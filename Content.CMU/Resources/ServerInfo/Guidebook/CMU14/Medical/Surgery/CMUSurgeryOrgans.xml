@@ -1,79 +1,79 @@
 <Document>
-  # Organ Surgery
+  # Операции на органах
 
   <Box>
-    <GuideEntityEmbed Entity="CMUOrganClampItem" Caption="Organ clamp"/>
-    <GuideEntityEmbed Entity="CMHemostat" Caption="Hemostat"/>
+    <GuideEntityEmbed Entity="CMUOrganClampItem" Caption="Зажим сосудов органа"/>
+    <GuideEntityEmbed Entity="CMHemostat" Caption="Гемостат"/>
   </Box>
 
-  The heart, lungs, liver, kidneys and stomach are in the [bold]chest[/bold], so every chest organ surgery needs the incision and the bone cavity opened first, and the bone cavity closed at the end. The brain needs the skull opened; the eyes only need an incision. For what each organ does, see [textlink="Organs" link="CMUGuideMedicalOrgans"].
+  Сердце, лёгкие, печень, почки и желудок находятся в [bold]груди[/bold], поэтому любая операция на органах груди требует сначала открыть разрез и костную полость, а в конце закрыть костную полость. Для мозга нужно открыть череп; для глаз достаточно разреза. О том, что делает каждый орган, см. [textlink="Органы" link="CMUGuideMedicalOrgans"].
 
-  Every organ surgery starts by clamping that organ's vessels with an [bold]organ clamp[/bold].
+  Любая операция на органах начинается с зажима сосудов этого органа [bold]зажимом сосудов органа[/bold].
 
-  ## Suture an Organ
-  Repairs a damaged heart, lungs, liver, kidneys or stomach.
-  1. [italic]Open the incision, then the bone cavity.[/italic]
+  ## Ушить орган
+  Восстанавливает повреждённое сердце, лёгкие, печень, почки или желудок.
+  1. [italic]Откройте разрез, затем костную полость.[/italic]
 
-  2. Clamp the organ's vessels with an [bold]organ clamp[/bold].
+  2. Зажмите сосуды органа [bold]зажимом сосудов органа[/bold].
 
-  3. Suture the organ with a [bold]hemostat[/bold].
+  3. Ушейте орган [bold]гемостатом[/bold].
 
-  4. [italic]Close the bone cavity.[/italic]
+  4. [italic]Закройте костную полость.[/italic]
 
-  ## Remove an Organ
-  Takes out the heart, lungs, liver, kidneys or stomach.
-  1. [italic]Open the incision, then the bone cavity.[/italic]
+  ## Удалить орган
+  Извлекает сердце, лёгкие, печень, почки или желудок.
+  1. [italic]Откройте разрез, затем костную полость.[/italic]
 
-  2. Clamp the organ's vessels with an [bold]organ clamp[/bold].
+  2. Зажмите сосуды органа [bold]зажимом сосудов органа[/bold].
 
-  3. Extract the organ with a [bold]hemostat[/bold].
+  3. Извлеките орган [bold]гемостатом[/bold].
 
-  4. [italic]Close the bone cavity.[/italic]
+  4. [italic]Закройте костную полость.[/italic]
 
-  ## Replace an Organ
-  Puts a donor organ into the lungs, liver, kidneys or stomach. Remove the old one first.
-  1. [italic]Open the incision, then the bone cavity.[/italic]
+  ## Заменить орган
+  Помещает донорский орган в лёгкие, печень, почки или желудок. Сначала удалите старый.
+  1. [italic]Откройте разрез, затем костную полость.[/italic]
 
-  2. Clamp the organ's vessels with an [bold]organ clamp[/bold].
+  2. Зажмите сосуды органа [bold]зажимом сосудов органа[/bold].
 
-  3. Insert the replacement organ: hold it in your hand and use it on the patient.
+  3. Вставьте орган-замену: возьмите его в руку и примените к пациенту.
 
-  4. [italic]Close the bone cavity.[/italic]
+  4. [italic]Закройте костную полость.[/italic]
 
-  ## Transplant Heart
-  The heart has its own procedure. Remove the old heart first.
-  1. [italic]Open the incision, then the bone cavity.[/italic]
+  ## Пересадить сердце
+  У сердца своя процедура. Сначала удалите старое сердце.
+  1. [italic]Откройте разрез, затем костную полость.[/italic]
 
-  2. Clamp the heart vessels with an [bold]organ clamp[/bold].
+  2. Зажмите сосуды сердца [bold]зажимом сосудов органа[/bold].
 
-  3. Transplant the donor heart: hold it in your hand and use it on the patient.
+  3. Пересадите донорское сердце: возьмите его в руку и примените к пациенту.
 
-  4. [italic]Close the bone cavity.[/italic]
+  4. [italic]Закройте костную полость.[/italic]
 
-  ## Repair Brain
-  1. [italic]Open the incision, then the skull.[/italic]
+  ## Восстановить мозг
+  1. [italic]Откройте разрез, затем череп.[/italic]
 
-  2. Clamp the brain vessels with an [bold]organ clamp[/bold].
+  2. Зажмите сосуды мозга [bold]зажимом сосудов органа[/bold].
 
-  3. Repair the brain with a [bold]hemostat[/bold].
+  3. Восстановите мозг [bold]гемостатом[/bold].
 
-  4. [italic]Close the skull.[/italic]
+  4. [italic]Закройте череп.[/italic]
 
-  ## Repair Eyes
-  1. [italic]Open the incision.[/italic]
+  ## Восстановить глаза
+  1. [italic]Откройте разрез.[/italic]
 
-  2. Clamp the eye vessels with an [bold]organ clamp[/bold].
+  2. Зажмите сосуды глаз [bold]зажимом сосудов органа[/bold].
 
-  3. Repair the eyes with a [bold]hemostat[/bold].
+  3. Восстановите глаза [bold]гемостатом[/bold].
 
-  4. Cauterize the incision shut with a [bold]cautery[/bold].
+  4. Прижгите разрез [bold]каутером[/bold].
 
-  ## Alien Embryo Removal
-  1. [italic]Open the incision, then the bone cavity.[/italic]
+  ## Удаление чужеродного эмбриона
+  1. [italic]Откройте разрез, затем костную полость.[/italic]
 
-  2. Cut the larva's roots with a [bold]scalpel[/bold].
+  2. Перережьте корни личинки [bold]скальпелем[/bold].
 
-  3. Remove the larva with a [bold]hemostat[/bold].
+  3. Удалите личинку [bold]гемостатом[/bold].
 
-  4. [italic]Close the bone cavity.[/italic]
+  4. [italic]Закройте костную полость.[/italic]
 </Document>

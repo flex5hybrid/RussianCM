@@ -422,6 +422,39 @@
       "Description": "rucm-qualifications-training-help",
       "Enabled": true
     },
+    "squad_leader": {
+      "Id": "squad_leader",
+      "Items": [
+        {
+          "SortOrder": 0,
+          "Id": "tactics",
+          "Name": "rucm-qualifications-item-tactics",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 1,
+          "Id": "military_regulations",
+          "Name": "rucm-qualifications-item-military_regulations",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        },
+        {
+          "SortOrder": 2,
+          "Id": "unit_command",
+          "Name": "rucm-qualifications-item-unit_command",
+          "Description": "rucm-qualifications-training-help",
+          "Enabled": true,
+          "Required": true
+        }
+      ],
+      "Version": 1,
+      "Name": "rucm-qualifications-definition-squad_leader",
+      "Description": "rucm-qualifications-training-help",
+      "Enabled": true
+    },
     "aviation": {
       "Id": "aviation",
       "Items": [
@@ -734,8 +767,8 @@
           "Id": "tactics",
           "Name": "rucm-qualifications-item-tactics",
           "Description": "rucm-qualifications-training-help",
-          "Enabled": true,
-          "Required": true
+          "Enabled": false,
+          "Required": false
         },
         {
           "SortOrder": 2,
@@ -750,32 +783,32 @@
           "Id": "first_aid",
           "Name": "rucm-qualifications-item-first_aid",
           "Description": "rucm-qualifications-training-help",
-          "Enabled": true,
-          "Required": true
+          "Enabled": false,
+          "Required": false
         },
         {
           "SortOrder": 4,
           "Id": "topography",
           "Name": "rucm-qualifications-item-topography",
           "Description": "rucm-qualifications-training-help",
-          "Enabled": true,
-          "Required": true
+          "Enabled": false,
+          "Required": false
         },
         {
           "SortOrder": 5,
           "Id": "engineering_basics",
           "Name": "rucm-qualifications-item-engineering_basics",
           "Description": "rucm-qualifications-training-help",
-          "Enabled": true,
-          "Required": true
+          "Enabled": false,
+          "Required": false
         },
         {
           "SortOrder": 6,
           "Id": "communications",
           "Name": "rucm-qualifications-item-communications",
           "Description": "rucm-qualifications-training-help",
-          "Enabled": true,
-          "Required": true
+          "Enabled": false,
+          "Required": false
         },
         {
           "SortOrder": 7,
@@ -790,11 +823,11 @@
           "Id": "field_exercise",
           "Name": "rucm-qualifications-item-field_exercise",
           "Description": "rucm-qualifications-training-help",
-          "Enabled": true,
-          "Required": true
+          "Enabled": false,
+          "Required": false
         }
       ],
-      "Version": 1,
+      "Version": 2,
       "Name": "rucm-qualifications-definition-enlisted",
       "Description": "rucm-qualifications-training-help",
       "Enabled": true
@@ -882,12 +915,14 @@
       "MinimumLevel": 2
     },
     "AU14JobGOVFORRadioTelephoneOperatorWYPMC": {
-      "Professional": [],
+      "Professional": [
+        "squad_leader"
+      ],
       "Enabled": true,
       "JobId": "AU14JobGOVFORRadioTelephoneOperatorWYPMC",
       "Tracker": "",
       "Govfor": true,
-      "MinimumLevel": 2
+      "MinimumLevel": 1
     },
     "AU14JobGOVFOROfficerEngiWYPMC": {
       "Professional": [
@@ -928,12 +963,14 @@
       "MinimumLevel": 3
     },
     "AU14JobGOVFORSquadSergeantCMBCIU": {
-      "Professional": [],
+      "Professional": [
+        "squad_leader"
+      ],
       "Enabled": true,
       "JobId": "AU14JobGOVFORSquadSergeantCMBCIU",
       "Tracker": "",
       "Govfor": true,
-      "MinimumLevel": 2
+      "MinimumLevel": 1
     },
     "AU14JobGOVFORVehicleCommander": {
       "Professional": [
@@ -1014,12 +1051,14 @@
       "MinimumLevel": 3
     },
     "AU14JobGOVFORSquadSergeant": {
-      "Professional": [],
+      "Professional": [
+        "squad_leader"
+      ],
       "Enabled": true,
       "JobId": "AU14JobGOVFORSquadSergeant",
       "Tracker": "",
       "Govfor": true,
-      "MinimumLevel": 2
+      "MinimumLevel": 1
     },
     "AU14JobGOVFORDSPilotRMC": {
       "Professional": [
@@ -1062,12 +1101,14 @@
       "MinimumLevel": 3
     },
     "AU14JobGOVFORRadioTelephoneOperator": {
-      "Professional": [],
+      "Professional": [
+        "squad_leader"
+      ],
       "Enabled": true,
       "JobId": "AU14JobGOVFORRadioTelephoneOperator",
       "Tracker": "",
       "Govfor": true,
-      "MinimumLevel": 2
+      "MinimumLevel": 1
     },
     "AU14JobGOVFOREngineeringTech": {
       "Professional": [
@@ -1108,12 +1149,14 @@
       "MinimumLevel": 1
     },
     "AU14JobGOVFORRadioTelephoneOperatorRMC": {
-      "Professional": [],
+      "Professional": [
+        "squad_leader"
+      ],
       "Enabled": true,
       "JobId": "AU14JobGOVFORRadioTelephoneOperatorRMC",
       "Tracker": "",
       "Govfor": true,
-      "MinimumLevel": 2
+      "MinimumLevel": 1
     },
     "AU14JobGOVFORPlatCo": {
       "Professional": [
@@ -1136,12 +1179,14 @@
       "MinimumLevel": 3
     },
     "AU14JobGOVFORSquadSergeantRMC": {
-      "Professional": [],
+      "Professional": [
+        "squad_leader"
+      ],
       "Enabled": true,
       "JobId": "AU14JobGOVFORSquadSergeantRMC",
       "Tracker": "",
       "Govfor": true,
-      "MinimumLevel": 2
+      "MinimumLevel": 1
     },
     "AU14JobGOVFORDSPilotWYPMC": {
       "Professional": [
@@ -1164,12 +1209,14 @@
       "MinimumLevel": 0
     },
     "AU14JobGOVFORSquadSergeantWYPMC": {
-      "Professional": [],
+      "Professional": [
+        "squad_leader"
+      ],
       "Enabled": true,
       "JobId": "AU14JobGOVFORSquadSergeantWYPMC",
       "Tracker": "",
       "Govfor": true,
-      "MinimumLevel": 2
+      "MinimumLevel": 1
     },
     "AU14JobGOVFORAdjutantUPP": {
       "Professional": [],
@@ -1314,12 +1361,14 @@
       "MinimumLevel": 1
     },
     "AU14JobGOVFORSquadSergeantUPP": {
-      "Professional": [],
+      "Professional": [
+        "squad_leader"
+      ],
       "Enabled": true,
       "JobId": "AU14JobGOVFORSquadSergeantUPP",
       "Tracker": "",
       "Govfor": true,
-      "MinimumLevel": 2
+      "MinimumLevel": 1
     },
     "AU14JobGOVFOROfficerIntel": {
       "Professional": [
@@ -1700,12 +1749,14 @@
       "MinimumLevel": 2
     },
     "AU14JobGOVFORRadioTelephoneOperatorUPP": {
-      "Professional": [],
+      "Professional": [
+        "squad_leader"
+      ],
       "Enabled": true,
       "JobId": "AU14JobGOVFORRadioTelephoneOperatorUPP",
       "Tracker": "",
       "Govfor": true,
-      "MinimumLevel": 2
+      "MinimumLevel": 1
     },
     "AU14JobGOVFORSectionSergeantUPP": {
       "Professional": [],

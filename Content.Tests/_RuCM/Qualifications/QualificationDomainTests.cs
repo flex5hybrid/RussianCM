@@ -38,7 +38,7 @@ public sealed class QualificationDomainTests
         original.Players[_student] = new() { Player = _student, FirstTrainingAt = context.At,
             Grants = new() { ["medical"] = new("medical", QualificationStatus.Active, 1, new[] { "required" }, context, "test") },
             Progress = new() { ["medical"] = new() { ["required"] = new("medical", "required", context, "note") } } };
-        original.Instructors[_manager] = new(true, true, false, new() { "medical" }, _manager, context.At, _manager, context.At);
+        original.Instructors[_manager] = new(true, InstructorRank.SeniorInstructor, _manager, context.At, _manager, context.At);
         original.Suspensions.Add(new() { Target = _student, Qualification = "medical", Initiator = context });
         original.MigrationGroups["medical"] = new() { "medical_job" };
         original.TrackerAliases["old"] = "medical_tracker";
@@ -52,7 +52,7 @@ public sealed class QualificationDomainTests
         copy.Roles["medical_job"].Professional.Clear();
         copy.Players[_student].Grants["medical"].RequiredItems[0] = "changed";
         copy.Players[_student].Progress["medical"].Clear();
-        copy.Instructors[_manager].Professional.Clear();
+        copy.Instructors[_manager] = copy.Instructors[_manager] with { Active = false };
         copy.Suspensions[0].Reason = "changed";
         copy.MigrationGroups["medical"].Clear(); copy.TrackerAliases.Clear();
         copy.Notes.Clear(); copy.Audit.Clear(); copy.Participation.Clear();
@@ -101,12 +101,13 @@ public sealed class QualificationDomainTests
     }
     [Test]
     public async Task AccreditationDoesNotFollowFromMilitaryRank()
-    { var s = await Service(); await Grant(s, "officer"); Assert.That(QualificationRules.CanTrain(s.Snapshot().Instructors.GetValueOrDefault(_student), "enlisted"), Is.False); }
+    { var s = await Service(); await Grant(s, "officer"); Assert.That(QualificationRules.GetInstructorRank(false, s.Snapshot().Instructors.GetValueOrDefault(_student)), Is.Null); }
+    [TestCase("aviation")]
     [TestCase("sergeant")]
     [TestCase("officer")]
     [TestCase("medical")]
     public void EnlistedInstructorCannotTrainUnauthorizedChecklist(string id)
-    { Assert.That(QualificationRules.CanTrain(new(true, true, false, new(), _manager, default, _manager, default), id), Is.False); }
+    { Assert.That(QualificationRules.CanTrain(InstructorRank.Instructor, id), Is.False); }
 
     [Test]
     public async Task ChecklistRequiredOptionalAndDisabledRules()
@@ -183,7 +184,7 @@ public sealed class QualificationDomainTests
     {
         var s = await Service(); await Grant(s, "officer");
         Assert.That(QualificationRules.CanTakeJob(s.GetPlayerTrainingState(_student), new() { Professional = new() { "commanding_officer" } }).Allowed, Is.False);
-        Assert.That(QualificationRules.CanTrain(new(true, true, true, new() { "commanding_officer" }, _manager, default, _manager, default), "commanding_officer"), Is.False);
+        Assert.That(QualificationRules.CanTrain(InstructorRank.SeniorInstructor, "commanding_officer"), Is.False);
     }
 
     [Test]

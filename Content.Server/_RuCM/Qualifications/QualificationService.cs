@@ -62,6 +62,7 @@ public sealed partial class QualificationService
                 loaded.Revision++;
                 await _repository.Save(loaded, previousRevision);
             }
+            loaded = await UpgradeTrainingProgrammes(loaded); // CMU14: update persisted checklists and squad-leader requirements.
             ApplyPrototypeFacts(loaded);
             Volatile.Write(ref _cache, loaded);
             _loaded = true;
@@ -122,8 +123,10 @@ public sealed partial class QualificationService
 
     public bool IsManagement(QualificationAuthority actor, QualificationStore? store = null) =>
         actor.Administrator || actor.Management || (store ?? Volatile.Read(ref _cache)).Management.Contains(actor.Context.Actor);
-    private bool CanTrain(QualificationAuthority actor, QualificationStore store, string id) => IsManagement(actor, store) ||
-        actor.CurrentParticipant && QualificationRules.CanTrain(store.Instructors.GetValueOrDefault(actor.Context.Actor), id);
+    // CMU14: only management can exercise Chief Instructor authority, including outside a round.
+    private InstructorRank? GetInstructorRank(QualificationAuthority actor, QualificationStore store) =>
+        QualificationRules.GetInstructorRank(IsManagement(actor, store),
+            actor.CurrentParticipant ? store.Instructors.GetValueOrDefault(actor.Context.Actor) : null);
 
     // CMU14 method: take ownership of an existing history before modifying the unpublished store.
     private static PlayerTrainingState Player(QualificationStore store, Guid target, DateTimeOffset at)
@@ -157,14 +160,14 @@ public sealed partial class QualificationService
             var next = CloneForMutation(current); // CMU14: don't deep-copy untouched player histories.
             var context = actor.Context;
             var manager = IsManagement(actor, next);
-            var training = CanTrain(actor, next, request.Qualification);
             var oldState = JsonSerializer.Serialize(current.Players.GetValueOrDefault(request.Target));
             var metadata = request.Qualification;
             switch (action)
             {
                 case QualificationAction.Complete:
                 case QualificationAction.Certify:
-                    if (!training || request.Target == context.Actor) throw new QualificationPermissionException();
+                    if (!QualificationRules.CanTrain(GetInstructorRank(actor, next), request.Qualification) || request.Target == context.Actor) // CMU14
+                        throw new QualificationPermissionException();
                     if (!next.Definitions.TryGetValue(request.Qualification, out var definition) || !definition.Enabled)
                         throw new QualificationValidationException("definition");
                     var student = Player(next, request.Target, context.At);
@@ -185,7 +188,7 @@ public sealed partial class QualificationService
                     }
                     break;
                 case QualificationAction.Note:
-                    if (!manager && !(actor.CurrentParticipant && next.Instructors.TryGetValue(context.Actor, out var instructor) && instructor.Active))
+                    if (GetInstructorRank(actor, next) == null) // CMU14
                         throw new QualificationPermissionException();
                     Reason(request.Reason);
                     Player(next, request.Target, context.At);
@@ -382,7 +385,7 @@ public sealed partial class QualificationService
                 break;
             case QualificationAction.SaveInstructor:
                 var accreditation = JsonSerializer.Deserialize<InstructorAccreditation>(request.Payload) ?? throw new QualificationValidationException("instructor");
-                if (accreditation.Professional is null || accreditation.Professional.Any(id => !next.Definitions.ContainsKey(id) || QualificationRules.Levels.Contains(id) || id == "commanding_officer"))
+                if (accreditation.Rank is not (InstructorRank.Instructor or InstructorRank.SeniorInstructor)) // CMU14
                     throw new QualificationValidationException("instructor");
                 var existing = next.Instructors.GetValueOrDefault(request.Target);
                 next.Instructors[request.Target] = accreditation with { GrantedBy = existing?.GrantedBy ?? actor.Context.Actor,

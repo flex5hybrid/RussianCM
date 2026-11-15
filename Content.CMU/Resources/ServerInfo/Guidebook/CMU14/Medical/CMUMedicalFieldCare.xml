@@ -1,24 +1,24 @@
 <Document>
-  # Field Treatment Mixing
+  # Полевое смешивание препаратов
 
-  In the field you can mix your own dressings from a base and an ingredient, instead of carrying every kind of dressing ready-made.
+  В поле вы можете смешивать собственные повязки из основы и ингредиента, вместо того чтобы носить все виды повязок готовыми.
 
   <Box>
-    <GuideEntityEmbed Entity="CMUPlainTraumaDressing10" Caption="Packed trauma kit"/>
-    <GuideEntityEmbed Entity="CMUCoagulantPowder1" Caption="Coagulant powder"/>
-    <GuideEntityEmbed Entity="CMUBurnGel1" Caption="Burn gel"/>
+    <GuideEntityEmbed Entity="CMUPlainTraumaDressing10" Caption="Упакованный травматологический набор"/>
+    <GuideEntityEmbed Entity="CMUCoagulantPowder1" Caption="Порошок-коагулянт"/>
+    <GuideEntityEmbed Entity="CMUBurnGel1" Caption="Противоожоговый гель"/>
   </Box>
 
-  ## Mixing
-  - Press [keybind="CMUOpenMedicalCraftingMenu"] to open the medical crafting menu. It shows everything you can mix with what you're carrying.
-  - Each dressing uses one base and some units of one ingredient.
-  - [bold]Packed gauze[/bold] makes a gauze dressing. [bold]Packed trauma kits[/bold] make a full trauma dressing.
-  - Both bases can also be used on their own to control bleeding. See [textlink="Wounds and Bleeding" link="CMUGuideMedicalWounds"].
+  ## Смешивание
+  - Нажмите [keybind="CMUOpenMedicalCraftingMenu"], чтобы открыть меню медицинского крафта. В нём показано всё, что можно смешать из того, что вы несёте.
+  - Каждая повязка использует одну основу и несколько единиц одного ингредиента.
+  - [bold]Упакованная марля[/bold] даёт марлевую повязку. [bold]Упакованные травматологические наборы[/bold] дают полноценную травматологическую повязку.
+  - Обе основы можно использовать и сами по себе для остановки кровотечения. См. [textlink="Раны и кровотечение" link="CMUGuideMedicalWounds"].
 
-  ## Ingredients
-  - [bold]Coagulant powder[/bold]: clotting agent. Makes hemostatic gauze, or a trauma kit from a packed trauma kit.
-  - [bold]Burn gel[/bold]: cooling gel. Makes burn gauze, or a burn kit from a packed trauma kit.
-  - [bold]Antiseptic[/bold]: makes antiseptic dressings, which clean contaminated wounds.
-  - [bold]Tissue sealant[/bold]: makes sealing dressings, which help wounds close.
-  - [bold]Trauma foam[/bold]: makes compression dressings.
+  ## Ингредиенты
+  - [bold]Порошок-коагулянт[/bold]: кровоостанавливающее. Даёт гемостатическую марлю или травматологический набор из упакованного травматологического набора.
+  - [bold]Противоожоговый гель[/bold]: охлаждающий гель. Даёт ожоговую марлю или противоожоговый набор из упакованного травматологического набора.
+  - [bold]Антисептик[/bold]: даёт антисептические повязки, которые очищают загрязнённые раны.
+  - [bold]Тканевый герметик[/bold]: даёт герметизирующие повязки, которые помогают ранам закрыться.
+  - [bold]Травматологическая пена[/bold]: даёт компрессионные повязки.
 </Document>

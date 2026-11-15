@@ -50,7 +50,16 @@ jobs:
               'fix: Fixed fun!',
               'map: Mapped fun!',
               'admin: Admin related change!',
-              'code: Code related change for contributors!'
+              'code: Code related change for contributors!',
+              // CMU14 Begin: placeholders from the RussianCM PR template.
+              'add: Добавлено что-то новое!',
+              'remove: Удалено что-то лишнее!',
+              'tweak: Изменено что-то существующее!',
+              'fix: Исправлено что-то сломанное!',
+              'map: Изменена карта!',
+              'admin: Изменение для администраторов!',
+              'code: Изменение в коде для разработчиков!'
+              // CMU14 End
             ];
 
             const found = defaults.filter(line => description.includes(line));
@@ -61,7 +70,7 @@ jobs:
             }
 
             const withoutComments = description.replace(/<!--[\s\S]*?-->/g, '');
-            const headerRegex = /^\s*(?::cl:|🆑)\s*[^\r\n]*$/im;
+            const headerRegex = /^[ \t]*(?::cl:|🆑)[ \t]*[^\r\n]*\r?$/im; // CMU14
             const header = headerRegex.exec(withoutComments);
 
             if (!header) {
@@ -72,7 +81,7 @@ jobs:
                 `\`\`\`\n:cl:\n\`\`\``);
             } else {
               const afterHeader = withoutComments.slice(header.index + header[0].length);
-              const nextHeading = afterHeader.search(/^\s*#{1,6}\s+/m);
+              const nextHeading = afterHeader.search(/^[ \t]*(?:#{1,6}[ \t]+|:cl:|🆑)/im); // CMU14
               const block = (nextHeading >= 0 ? afterHeader.slice(0, nextHeading) : afterHeader).trim();
               const validLine = /^\s*[-*]?\s*(add|remove|tweak|fix|map|code|admin):\s*\S.*$/i;
               const candidateLine = /^\s*[-*]?\s*[a-z]+\s*:/i;

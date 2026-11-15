@@ -84,12 +84,11 @@ public enum YautjaUniqueSet : byte
     Praetorian,
 }
 
-/// <summary>
-/// What unlocks a legacy or elite set. Elites and elders get no sets; the list decides per set, not per picker row.
-/// </summary>
+// what unlocks a set: Ancient sets are the Council / Council Legacy whitelist, Leader sets are Clan Leader
+// and up. elites and elders get none. decided per set, the lobby groups the pickers by this
 public enum YautjaSetLock : byte
 {
-    LegacyWhitelist,
+    Ancient,
     ClanLeader,
 }
 
@@ -707,8 +706,8 @@ public sealed partial class YautjaCharacterProfile
             OwnerRank = YautjaRankResolver.ToOwnerRank(rank),
         };
 
-        // Rank only decides the clan leader sets; the legacy whitelist ones are checked against capabilities.
-        return GetSetLock(profile.Unique) == YautjaSetLock.LegacyWhitelist || YautjaRankResolver.CanUseUnique(rank)
+        // rank only decides the leader sets, the ancient ones are checked against capabilities
+        return GetSetLock(profile.Unique) == YautjaSetLock.Ancient || YautjaRankResolver.CanUseUnique(rank)
             ? profile
             : profile.WithUnique(YautjaUniqueSet.None);
     }
@@ -838,7 +837,7 @@ public sealed partial class YautjaCharacterProfile
     public static YautjaSetLock GetSetLock(YautjaLegacySet legacy)
     {
         return legacy is YautjaLegacySet.Enforcer or YautjaLegacySet.Seeker or YautjaLegacySet.Serpent
-            ? YautjaSetLock.LegacyWhitelist
+            ? YautjaSetLock.Ancient
             : YautjaSetLock.ClanLeader;
     }
 
@@ -850,7 +849,7 @@ public sealed partial class YautjaCharacterProfile
             YautjaUniqueSet.Praetorian or
             YautjaUniqueSet.SeekerInitiate or
             YautjaUniqueSet.SeekerAdept
-            ? YautjaSetLock.LegacyWhitelist
+            ? YautjaSetLock.Ancient
             : YautjaSetLock.ClanLeader;
     }
 

@@ -2,6 +2,8 @@
   id: AUPlanetFlight
   name: Flight
   components:
+  - type: CMUColonyLanguage
+    defaultLanguage: English
   - type: RMCPlanetMapPrototype
     votename: "Flight"
     mapId: Flight
@@ -19,7 +21,6 @@
     platoonsOpfor:
     - UPP
     - BEAR
-    - ProdigySF
     - VAIPO
     defaultgovfor: USCM
     defaultopfor: UPP

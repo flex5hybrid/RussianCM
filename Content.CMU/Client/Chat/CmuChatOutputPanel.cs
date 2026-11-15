@@ -11,7 +11,24 @@ public sealed class CmuChatOutputPanel : OutputPanel
         if (args.Delta.Y == 0)
             return;
 
-        var bar = FindControl<VScrollBar>("_v_scroll");
+        // RuMC edit start: FindControl can't see code-created children
+        VScrollBar? bar = null;
+        foreach (var child in Children)
+        {
+            if (child is VScrollBar found)
+            {
+                bar = found;
+                break;
+            }
+        }
+
+        if (bar == null)
+        {
+            base.MouseWheel(args);
+            return;
+        }
+        // RuMC edit end
+
         // OutputPanel's scrollbar works in physical pixels; its value event also updates following.
         bar.Value = bar.ValueTarget - args.Delta.Y * 96f * UIScale;
         args.Handle();

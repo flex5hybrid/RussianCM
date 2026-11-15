@@ -1,40 +1,40 @@
 <Document>
-  # Opening and Closing
+  # Открытие и закрытие
 
-  Almost every surgery starts by opening the body part up, and ends by closing it. The surgery window runs these steps for you as part of whatever surgery you pick, but it helps to know them.
+  Почти любая операция начинается с того, что часть тела открывают, и заканчивается тем, что её закрывают. Окно операции выполняет эти шаги за вас в составе выбранной операции, но знать их полезно.
 
   <Box>
-    <GuideEntityEmbed Entity="CMScalpel" Caption="Scalpel"/>
-    <GuideEntityEmbed Entity="CMHemostat" Caption="Hemostat"/>
-    <GuideEntityEmbed Entity="CMRetractor" Caption="Retractor"/>
-    <GuideEntityEmbed Entity="CMCircularSaw" Caption="Circular saw"/>
-    <GuideEntityEmbed Entity="CMBoneGel" Caption="Bone gel"/>
-    <GuideEntityEmbed Entity="CMCautery" Caption="Cautery"/>
+    <GuideEntityEmbed Entity="CMScalpel" Caption="Скальпель"/>
+    <GuideEntityEmbed Entity="CMHemostat" Caption="Гемостат"/>
+    <GuideEntityEmbed Entity="CMRetractor" Caption="Ретрактор"/>
+    <GuideEntityEmbed Entity="CMCircularSaw" Caption="Циркулярная пила"/>
+    <GuideEntityEmbed Entity="CMBoneGel" Caption="Костный гель"/>
+    <GuideEntityEmbed Entity="CMCautery" Caption="Каутер"/>
   </Box>
 
-  ## Open Incision
-  Needed for almost everything, on any body part.
-  1. Cut with a [bold]scalpel[/bold].
+  ## Открыть разрез
+  Нужно почти для всего, на любой части тела.
+  1. Разрежьте [bold]скальпелем[/bold].
 
-  2. Clamp the bleeders with a [bold]hemostat[/bold].
+  2. Зажмите кровоточащие сосуды [bold]гемостатом[/bold].
 
-  3. Retract the skin with a [bold]retractor[/bold].
+  3. Оттяните кожу [bold]ретрактором[/bold].
 
-  ## Open Bone Cavity
-  Needed for anything inside the chest or head: organs, and fractures of the ribs or skull. Open the incision first.
-  1. Saw through the ribcage or skull with a [bold]circular saw[/bold].
+  ## Открыть костную полость
+  Нужно для всего внутри груди или головы: органов и переломов рёбер или черепа. Сначала откройте разрез.
+  1. Пропилите грудную клетку или череп [bold]циркулярной пилой[/bold].
 
-  2. Prise the bones open with a [bold]retractor[/bold].
+  2. Раздвиньте кости [bold]ретрактором[/bold].
 
-  ## Close Incision
-  1. Cauterize the incision shut with a [bold]cautery[/bold].
+  ## Закрыть разрез
+  1. Прижгите разрез [bold]каутером[/bold].
 
-  ## Close Bone Cavity
-  1. Put the bones back with a [bold]retractor[/bold].
+  ## Закрыть костную полость
+  1. Верните кости на место [bold]ретрактором[/bold].
 
-  2. Mend the ribcage or skull with [bold]bone gel[/bold].
+  2. Заделайте грудную клетку или череп [bold]костным гелем[/bold].
 
-  3. Cauterize the incision shut with a [bold]cautery[/bold].
+  3. Прижгите разрез [bold]каутером[/bold].
 
-  Most surgeries end with these closing steps built in, so you usually close up by finishing the surgery. If you want to do another surgery on the same part first, start it before closing.
+  Большинство операций включают эти шаги закрытия, поэтому обычно вы закрываете, просто завершая операцию. Если хотите сначала сделать на этой же части другую операцию, начните её до закрытия.
 </Document>

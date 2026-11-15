@@ -40,7 +40,7 @@ public sealed class CMUQualificationPerformanceTest
                 Grants = new() { ["medical"] = new("medical", QualificationStatus.Active, 1, new[] { "practice" }, actor, "test") },
                 Progress = new() { ["medical"] = new() { ["practice"] = new("medical", "practice", actor, "test") } },
             };
-            seed.Instructors[id] = new(true, true, true, new() { "medical" }, viewer, actor.At, viewer, actor.At);
+            seed.Instructors[id] = new(true, InstructorRank.SeniorInstructor, viewer, actor.At, viewer, actor.At);
             seed.Notes.Add(new(Guid.NewGuid(), id, actor, "private"));
             seed.Suspensions.Add(new() { Target = id, Initiator = actor, Status = "active" });
             seed.Suspensions.Add(new() { Target = id, Initiator = actor, Status = "pending" });
@@ -98,7 +98,7 @@ public sealed class CMUQualificationPerformanceTest
         view.Roles["medic"].Professional.Clear();
         view.Players[expected].Grants["medical"].RequiredItems[0] = "changed";
         view.Players[expected].Progress["medical"].Clear();
-        foreach (var instructor in view.Instructors.Values) instructor.Professional.Clear();
+        view.Instructors.Clear();
         foreach (var suspension in view.Suspensions) suspension.Status = "changed";
         view.Management.Clear();
         view.Migrations.Clear();

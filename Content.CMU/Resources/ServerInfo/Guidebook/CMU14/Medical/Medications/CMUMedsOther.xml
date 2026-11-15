@@ -1,18 +1,18 @@
 <Document>
-  # Other Medications
+  # Прочие медикаменты
 
-  See [textlink="Cryogenic Medicines and Recipes" link="CMUGuideMedsCryogenic"] for cryo pod medicines, mixing ratios and precursor recipes.
+  О криокапсульных медикаментах, пропорциях смешивания и рецептах прекурсоров см. [textlink="Криогенные медикаменты и рецепты" link="CMUGuideMedsCryogenic"].
 
-  ## Bleeding
-  - [bold]Tranexamic acid[/bold]: stops surface bleeding and holds internal bleeding back for as long as it's in the patient's blood. It buys time but doesn't close anything, so the wounds still need dressing or surgery once it wears off. Overdose at 20 units causes clotting damage, and a critical overdose at 40 units damages the heart. It takes two steps: mix 2 carbon, 1 nitrogen and 1 sulphuric acid to make aminomethylbenzoic acid, then mix 2 of that with 2 hydrogen and 1 inaprovaline.
+  ## Кровотечение
+  - [bold]Tranexamic acid[/bold]: останавливает поверхностное кровотечение и сдерживает внутреннее, пока находится в крови пациента. Это выигрывает время, но ничего не закрывает, поэтому после его действия раны всё ещё нужно перевязывать или оперировать. Передозировка при 20 ед. вызывает повреждение от свёртывания, а критическая передозировка при 40 ед. повреждает сердце. Это два шага: смешайте 2 углерода, 1 азот и 1 серную кислоту, чтобы получить аминометилбензойную кислоту, затем смешайте 2 её единицы с 2 водорода и 1 инапро валином.
 
-  ## Body Temperature
-  - [bold]Leporazine[/bold]: brings body temperature back to normal, treating both hypothermia and heatstroke. It also stops cryogenics working, so don't give it to someone going into a cryo pod. Overdosing causes extreme drowsiness.
+  ## Температура тела
+  - [bold]Лепоразин[/bold]: возвращает температуру тела к норме, лечит и переохлаждение, и тепловой удар. Также останавливает работу криогенных процедур, поэтому не давайте его тому, кто отправляется в криокапсулу. Передозировка вызывает сильную сонливость.
 
-  ## Everything Else
-  - [bold]Ethylredoxrazine[/bold]: neutralizes alcohol in the blood, sobering the patient up over time. It doesn't stop the drunkenness they already have. Toxic in high doses.
-  - [bold]Methylphenidate[/bold]: a stimulant that sharpens focus.
-  - [bold]Lipozine[/bold]: burns off fat and makes the patient hungry. Mainly used against obesity.
+  ## Всё остальное
+  - [bold]Этилредоксразин[/bold]: нейтрализует алкоголь в крови, постепенно отрезвляя пациента. Уже имеющееся опьянение не снимает. В высоких дозах токсичен.
+  - [bold]Метилфенидат[/bold]: стимулятор, обостряющий внимание.
+  - [bold]Липозин[/bold] : сжигает жир и вызывает у пациента голод. В основном применяется против ожирения.
 
   <GuideReagentEmbed Reagent="CMUTranexamicAcid"/>
   <GuideReagentEmbed Reagent="CMUAminomethylbenzoicAcid"/>

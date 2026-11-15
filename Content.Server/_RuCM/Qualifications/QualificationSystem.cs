@@ -368,7 +368,7 @@ public sealed partial class QualificationSystem : EntitySystem
         var manager = Service.IsManagement(actor);
         var s = Service.RecordSnapshot(actor, ref target);
         var accreditation = s.Instructors.GetValueOrDefault(player.UserId);
-        var instructor = accreditation is { Active: true } || IsDrillInstructor(actor);
+        var instructor = QualificationRules.GetInstructorRank(false, accreditation) != null || IsDrillInstructor(actor); // CMU14
         if (!manager && !instructor && !actor.CurrentOfficer && !actor.CurrentCo) target = player.UserId;
         if (target == Guid.Empty) target = player.UserId;
         var result = new QualificationView { Viewer = player.UserId, Target = target, Management = manager, Instructor = instructor,
@@ -472,9 +472,11 @@ public sealed partial class QualificationSystem : EntitySystem
         {
             if (player.Status == SessionStatus.Disconnected) return;
             string error = "";
+            Guid targetAccount = Guid.Empty; // CMU14: close round training only after the request is committed.
             try
             {
                 var request = JsonSerializer.Deserialize<QualificationRequest>(json) ?? throw new QualificationValidationException("request");
+                targetAccount = request.Target; // CMU14
                 if (request.TargetName is null || request.TargetName.Length > 128 || request.Qualification is null || request.Item is null || request.Reason is null || request.Payload is null || request.PreviewToken is null || request.Qualification.Length > 64 || request.Item.Length > 64 || request.Reason.Length > 2000)
                     throw new QualificationValidationException("request");
                 var authority = Authority(player);
@@ -552,8 +554,6 @@ public sealed partial class QualificationSystem : EntitySystem
                         if (!Service.IsManagement(authority) &&
                             (player.AttachedEntity is not { } teacher || !_training.Owns(teacher, recruit)))
                             throw new QualificationPermissionException();
-                        if (action == QualificationAction.Complete)
-                            _training.Finish(request.Target, "checklist step completed");
                     }
                     if (!Service.IsManagement(authority))
                     {
@@ -612,7 +612,13 @@ public sealed partial class QualificationSystem : EntitySystem
                 }
                 catch (Exception e) { error = Error(e); }
             }
-            _finished = () => done(error);
+            _finished = () =>
+            {
+                // CMU14: leave gameplay training active if the checklist update was rejected.
+                if (error.Length == 0 && action == QualificationAction.Complete)
+                    _training.Finish(targetAccount, "checklist step completed");
+                done(error);
+            };
         });
     }
     private string Error(Exception e)

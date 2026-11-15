@@ -13,6 +13,7 @@ using Content.Server.Administration.Managers;
 using Content.Server.IP;
 using Content.Shared.CMU14.BalanceRating;
 using Content.Shared.CMU14.Yautja;
+using Content.Shared._RMC14.DonorCapes;
 using Content.Shared._RMC14.NamedItems;
 using Content.Shared.Administration.Logs;
 using Content.Shared.CMU14.Allegiance;
@@ -417,6 +418,7 @@ namespace Content.Server.Database
             profile.XenoPostfix = humanoid.XenoPostfix;
             profile.Allegiance = humanoid.Allegiance?.Id;
             profile.Origin = humanoid.Origin?.Id;
+            profile.SelectedDonorCape = DonorCapeProfilePersistence.Serialize(humanoid.SelectedDonorCape);
             profile.Platoon = humanoid.Platoon?.Id;
             profile.Synthetic = humanoid.Synthetic;
             profile.ShortExamine = humanoid.ShortExamine;

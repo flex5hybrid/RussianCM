@@ -1,46 +1,46 @@
 <Document>
-  # Fractures
+  # Переломы
 
-  Heavy hits can break bones. A broken bone hurts, and moving on one that isn't supported can make it worse.
+  Тяжёлые удары могут ломать кости. Сломанная кость болит, а движение на неподдержанной кости может сделать хуже.
 
   <Box>
-    <GuideEntityEmbed Entity="CMUSplintItem" Caption="Splint"/>
-    <GuideEntityEmbed Entity="CMUCastItem" Caption="Medical cast"/>
-    <GuideEntityEmbed Entity="CMBonesetter" Caption="Bone setter"/>
-    <GuideEntityEmbed Entity="CMBoneGel" Caption="Bone gel"/>
+    <GuideEntityEmbed Entity="CMUSplintItem" Caption="Шина"/>
+    <GuideEntityEmbed Entity="CMUCastItem" Caption="Медицинский гипс"/>
+    <GuideEntityEmbed Entity="CMBonesetter" Caption="Костоправ"/>
+    <GuideEntityEmbed Entity="CMBoneGel" Caption="Костный гель"/>
   </Box>
 
-  ## Severity
-  From least to most serious:
-  - [bold]Hairline[/bold]: a crack.
-  - [bold]Simple[/bold]: a clean break.
-  - [bold]Compound[/bold]: the bone has broken through. It also bleeds internally.
-  - [bold]Shattered[/bold]: the bone is in pieces. It bleeds internally even faster.
+  ## Тяжесть
+  От наименее к наиболее серьёзной:
+  - [bold]Трещина[/bold]: надлом.
+  - [bold]Простой[/bold]: чистый перелом.
+  - [bold]Открытый[/bold]: кость пробила наружу. Он также кровоточит внутренне.
+  - [bold]Раздробленный[/bold]: кость разбита на куски. Внутреннее кровотечение ещё быстрее.
 
-  Examining a patient shows fractures, and a health analyzer shows them to anyone with basic medical training. With more training it shows the exact severity.
+  Осмотр пациента показывает переломы, а анализатор здоровья показывает их любому с базовой медицинской подготовкой. При большей подготовке он показывает точную тяжесть.
 
-  ## Splints
-  - A splint stabilizes a broken limb, so moving on it stops making it worse. It works on hairline and simple fractures.
-  - [bold]A splint doesn't heal the bone.[/bold] It only holds things together until the patient can get a cast or surgery.
-  - Each splint has 4 uses and takes 3 seconds to apply.
+  ## Шины
+  - Шина стабилизирует сломанную конечность, поэтому движение на ней перестаёт делать хуже. Работает при трещинах и простых переломах.
+  - [bold]Шина не лечит кость.[/bold] Она лишь держит всё вместе, пока пациент не получит гипс или операцию.
+  - У каждой шины 4 применения, наложение занимает 3 секунды.
 
-  ## Casts
-  - A cast immobilizes a hairline or simple fracture and heals it completely over 5 minutes.
-  - Each cast has 4 uses and takes 6 seconds to apply.
-  - When the bone has healed, the patient is told the cast is ready to come off. Remove it with the [bold]Remove cast[/bold] option.
-  - If the bone breaks again while it's in a cast, the cast cracks apart.
-  - [bold]OsteoCalc[/bold] speeds up bone healing by half again while it's in the patient's system.
+  ## Гипс
+  - Гипс обездвиживает трещину или простой перелом и полностью заживляет его за 5 минут.
+  - У каждого гипса 4 применения, наложение занимает 6 секунд.
+  - Когда кость зажила, пациенту сообщают, что гипс можно снять. Снимите его опцией [bold]Снять гипс[/bold].
+  - Если кость сломается снова, пока гипс наложен, гипс треснет.
+  - [bold]OsteoCalc[/bold] ускоряет заживление костей в полтора раза, пока находится в организме пациента.
 
-  ## Surgery
-  Compound and shattered fractures can't be fixed with a cast; they need surgery. Surgery can fix any fracture, including hairline and simple ones.
-  - [bold]Set Simple Fracture[/bold] (hairline or simple): open the incision, realign the bone with a bone setter, apply bone gel, then close up.
-  - [bold]Set Compound Fracture[/bold]: open the incision, realign the bone with a bone setter, apply bone gel, then close up.
-  - [bold]Set Shattered Fracture[/bold]: open the incision, realign the bone with a bone setter, apply bone gel, insert a bone graft, set it with the bone setter again, then close up.
-  - Fractures in the chest or skull are reached by opening the bone cavity first.
+  ## Хирургия
+  Открытые и раздробленные переломы нельзя исправить гипсом; нужна операция. Хирургия может исправить любой перелом, включая трещины и простые.
+  - [bold]Вправить простой перелом[/bold] (трещина или простой): откройте разрез, выровняйте кость костоправом, нанесите костный гель, затем закройте.
+  - [bold]Вправить открытый перелом[/bold]: откройте разрез, выровняйте кость костоправом, нанесите костный гель, затем закройте.
+  - [bold]Вправить раздробленный перелом[/bold]: откройте разрез, выровняйте кость костоправом, нанесите костный гель, вставьте костный трансплантат, снова выровняйте костоправом, затем закройте.
+  - К переломам груди или черепа добираются, сначала открыв костную полость.
 
-  See [textlink="Surgery" link="CMUGuideMedicalSurgery"] for how to operate.
+  О том, как оперировать, см. [textlink="Хирургия" link="CMUGuideMedicalSurgery"].
 
-  ## After Surgery
-  - [color=red]Put a cast on within 5 minutes of setting a bone.[/color] If you don't, there's a 30% chance it sets wrong, leaving the patient with a simple fracture again.
-  - A cast on a freshly set bone finishes healing it in 5 minutes. A cast also fixes a bone that has set wrong.
+  ## После операции
+  - [color=red]Наложите гипс в течение 5 минут после вправления кости.[/color] Если не наложить, есть 30% шанс, что кость срастётся неправильно, и у пациента снова будет простой перелом.
+  - Гипс на свежевправленной кости завершает её заживление за 5 минут. Гипс также исправляет неправильно сросшуюся кость.
 </Document>

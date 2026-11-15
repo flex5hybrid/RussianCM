@@ -123,7 +123,7 @@ public sealed class CMUQualificationPersistenceTest
             await service.Apply(manager, QualificationAction.Suspend, Request("medical"));
             var accreditation = Request();
             accreditation.Revision = service.Revision;
-            accreditation.Payload = JsonSerializer.Serialize(new InstructorAccreditation(true, true, false, new() { "medical" }, context.Actor, context.At, context.Actor, context.At));
+            accreditation.Payload = JsonSerializer.Serialize(new InstructorAccreditation(true, InstructorRank.SeniorInstructor, context.Actor, context.At, context.Actor, context.At));
             await service.Apply(manager, QualificationAction.SaveInstructor, accreditation);
 
             var beforeFailure = JsonSerializer.Serialize(service.Snapshot());
