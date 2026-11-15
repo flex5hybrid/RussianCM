@@ -22,7 +22,7 @@
     canSupplyDrop: false
     group: WeYa
     leaderIcon:
-      sprite: /Uploaded/weya/icons.rsi 
+      sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi 
       state: leader
 
 - type: Tag
@@ -153,7 +153,7 @@
   description: The armored uniform used by the elite commandos of Weyland‑Yutani. Lightweight and comfortable, yet well‑protected.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/uniform.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/uniform.rsi
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCPatchWeYaBlack
@@ -181,7 +181,7 @@
   description: A complex system of overlapping plates designed to make the wearer highly resistant to small arms fire.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/armor_strelok.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/armor_strelok.rsi
   - type: CMArmor
     melee: 30 # CLOTHING_ARMOR_VERYHIGH (melee);
     bullet: 40 # CLOTHING_ARMOR_ULTRAHIGH (bullets); going with an intermediate value until more damage types get implemented (more likely to be hit by bullets than melee)
@@ -205,7 +205,7 @@
   description: A complex system of overlapping plates designed to make the wearer highly resistant to small‑arms fire. A reinforced version specifically for the group leader.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/armor_leader.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/armor_leader.rsi
   - type: CMArmor
     melee: 30 # CLOTHING_ARMOR_VERYHIGH (melee);
     bullet: 45 # CLOTHING_ARMOR_ULTRAHIGH (bullets); going with an intermediate value until more damage types get implemented (more likely to be hit by bullets than melee)
@@ -229,9 +229,9 @@
   description: A fully enclosed armored helmet designed for the MY7 configuration.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/helmet_strelok.rsi 
+    sprite: _RuMC14/EventContent/Stukov/weya/helmet_strelok.rsi 
   - type: Clothing
-    sprite: /Uploaded/weya/helmet_strelok.rsi 
+    sprite: _RuMC14/EventContent/Stukov/weya/helmet_strelok.rsi 
   - type: Corrodible
     isCorrodible: false
   - type: RMCEarProtection
@@ -254,9 +254,9 @@
   description: A fully enclosed armored helmet designed for the MY7L configuration. Version for the group leader.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/helmet_leader.rsi 
+    sprite: _RuMC14/EventContent/Stukov/weya/helmet_leader.rsi 
   - type: Clothing
-    sprite: /Uploaded/weya/helmet_leader.rsi 
+    sprite: _RuMC14/EventContent/Stukov/weya/helmet_leader.rsi 
   - type: Corrodible
     isCorrodible: false
   - type: RMCEarProtection
@@ -272,12 +272,12 @@
   - type: Item
     storedRotation: 0
   - type: Sprite
-    sprite: /Uploaded/weya/glasses.rsi 
+    sprite: _RuMC14/EventContent/Stukov/weya/glasses.rsi 
     layers:
     - state: icon
       map: [ "icon" ]
   - type: Clothing
-    sprite: /Uploaded/weya/glasses.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/glasses.rsi
   - type: NightVisionItem
     mesons: true
   - type: Appearance
@@ -295,7 +295,7 @@
   description: An ergonomic, protective backpack with large capacity, designed for Weyland‑Yutani commandos.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/satchel_strelok.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/satchel_strelok.rsi
 
 - type: entity
   parent: RMCSatchelLightpack
@@ -304,7 +304,7 @@
   description: An ergonomic, protective backpack with large capacity, designed for Weyland‑Yutani commandos.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/satchel_leader.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/satchel_leader.rsi
 
 - type: entity
   parent: CMSurgicalCase
@@ -314,7 +314,7 @@
   suffix: Filled
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/medical.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/medical.rsi
     layers:
     - state: surgical_case_elite
     - state: surgical_case_elite
@@ -372,14 +372,14 @@
   description: Belongs to some special unit. If you have medical training, you will be able to fit it in your backpack.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/aid_kit.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/aid_kit.rsi
     layers:
     - state: WeYaAidKit
     - state: kit_empty
       map: [ "openLayer" ]
   - type: Item
     size: Normal
-    sprite: /Uploaded/weya/aid_kit.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/aid_kit.rsi
     heldPrefix: WeYaAidKit
   - type: Storage
     maxItemSize: Small
@@ -442,15 +442,15 @@
   suffix: Commando
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/smart_gun.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/smart_gun.rsi
     layers:
     - state: base
-      sprite: /Uploaded/weya/smart_gun.rsi
+      sprite: _RuMC14/EventContent/Stukov/weya/smart_gun.rsi
     - state: mag-0
-      sprite: /Uploaded/weya/smart_gun.rsi
+      sprite: _RuMC14/EventContent/Stukov/weya/smart_gun.rsi
       map: [ "enum.GunVisualLayers.Mag" ]
   - type: Clothing
-    sprite: /Uploaded/weya/smart_gun.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/smart_gun.rsi
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -509,9 +509,9 @@
   description: A fully enclosed armored helmet designed for the MY7SG configuration.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/helmet_smart.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/helmet_smart.rsi
   - type: Clothing
-    sprite: /Uploaded/weya/helmet_smart.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/helmet_smart.rsi
   - type: Corrodible
     isCorrodible: false
   - type: RMCEarProtection
@@ -525,7 +525,7 @@
   description: A complex system of overlapping plates designed to make the wearer highly resistant to small‑arms fire.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/armor_smart.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/armor_smart.rsi
   - type: CMArmor
     melee: 30 # CLOTHING_ARMOR_VERYHIGH (melee);
     bullet: 40 # CLOTHING_ARMOR_ULTRAHIGH (bullets); going with an intermediate value until more damage types get implemented (more likely to be hit by bullets than melee)
@@ -555,9 +555,9 @@
   description: A fully enclosed armored helmet designed for the M5X configuration.
   components:
     - type: Sprite
-      sprite: /Uploaded/weya/helmet_dog.rsi
+      sprite: _RuMC14/EventContent/Stukov/weya/helmet_dog.rsi
     - type: Clothing
-      sprite: /Uploaded/weya/helmet_dog.rsi
+      sprite: _RuMC14/EventContent/Stukov/weya/helmet_dog.rsi
     - type: ParasiteResistance
       maxCount: 10
     - type: Corrodible
@@ -573,7 +573,7 @@
   description: A complex system of overlapping plates designed to make the owner highly resistant to xenos threats.
   components:
     - type: Sprite
-      sprite: /Uploaded/weya/armor_dog.rsi
+      sprite: _RuMC14/EventContent/Stukov/weya/armor_dog.rsi
     - type: CMArmor
       melee: 45 # CLOTHING_ARMOR_VERYHIGH (melee);
       bullet: 20 # CLOTHING_ARMOR_ULTRAHIGH (bullets); going with an intermediate value until more damage types get implemented (more likely to be hit by bullets than melee)
@@ -597,7 +597,7 @@
   description: The armored uniform used by the elite commandos of Weyland‑Yutani. Lightweight and comfortable, yet well‑protected.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/uniform_dog.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/uniform_dog.rsi
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCPatchWeYaBlack
@@ -611,7 +611,7 @@
   description: An ergonomic, protective backpack with large capacity, designed for Weyland‑Yutani commandos.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/satchel_dog.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/satchel_dog.rsi
 
 ###########################################################
 
@@ -624,7 +624,7 @@
   description: The uniform of the Bio‑Weapon Department We‑Yu is well‑protected against impacts and acids.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/uniform_bw.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/uniform_bw.rsi
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCPatchWeYaBlack
@@ -636,9 +636,9 @@
   description: A durable laboratory coat that now looks more like a cloak. Made from wear‑resistant materials and designed for conducting hazardous experiments in the field. Most often found among employees of the biological weapons department of the Weyland‑Yutani Corporation.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/armor_bw.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/armor_bw.rsi
   - type: Clothing
-    sprite: /Uploaded/weya/armor_bw.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/armor_bw.rsi
   - type: CMHardArmor
   - type: Storage
     grid:
@@ -652,9 +652,9 @@
   description: A durable laboratory coat that now looks more like a cloak. Made from wear‑resistant materials and designed for conducting hazardous experiments in the field. Most often found among employees of the biological weapons department of the Weyland‑Yutani Corporation.
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/armor_bw_sl.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/armor_bw_sl.rsi
   - type: Clothing
-    sprite: /Uploaded/weya/armor_bw_sl.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/armor_bw_sl.rsi
   - type: CMHardArmor
   - type: Storage
     grid:
@@ -669,9 +669,9 @@
   suffix: Bio-Weapons
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/helmet_bw.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/helmet_bw.rsi
   - type: Clothing
-    sprite: /Uploaded/weya/helmet_bw.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/helmet_bw.rsi
 
 - type: entity
   parent: CMGlassesSecurity
@@ -681,16 +681,16 @@
   suffix: Bio-Weapons
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/glasses_bw.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/glasses_bw.rsi
   - type: Clothing
-    sprite: /Uploaded/weya/glasses_bw.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/glasses_bw.rsi
 
 - type: entity
   parent: RMCBriefcase
   id: RuMCBriefcaseBW
   components:
   - type: Sprite
-    sprite: /Uploaded/weya/brifcase_bw.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/brifcase_bw.rsi
   - type: StorageFill
     contents:
     - id: AU14ObjectiveItemWYLaptop

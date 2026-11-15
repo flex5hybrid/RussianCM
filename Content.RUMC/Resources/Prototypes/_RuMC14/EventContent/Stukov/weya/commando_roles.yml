@@ -5,7 +5,7 @@
   parent: CMJobIconBase
   id: RuMCJobIconPMCWeYaCommando
   icon:
-    sprite: /Uploaded/weya/icons.rsi 
+    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi 
     state: strelok
 
 - type: startingGear
@@ -262,7 +262,7 @@
   parent: CMJobIconBase
   id: RuMCJobIconPMCWeYaCommandoSmart
   icon:
-    sprite: /Uploaded/weya/icons.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi
     state: smart
 
 - type: startingGear
@@ -397,7 +397,7 @@
   parent: CMJobIconBase
   id: RuMCJobIconPMCWeYaCommandoDogCatcher
   icon:
-    sprite: /Uploaded/weya/icons.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi
     state: dogcatcher
 
 - type: startingGear
@@ -496,7 +496,7 @@
   - type: MarineOrders
   - type: SquadLeader
     icon:
-      sprite: /Uploaded/weya/icons.rsi 
+      sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi 
       state: leader
   - type: RMCPointing
   - type: RMCTrackable
@@ -544,7 +544,7 @@
   parent: CMJobIconBase
   id: RuMCJobIconPMCWeYaCommandoLeader
   icon:
-    sprite: /Uploaded/weya/icons.rsi
+    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi
     state: leader
 
 - type: startingGear
