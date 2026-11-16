@@ -220,6 +220,7 @@ public sealed partial class WorldMarketSystem
             var status = CityStatus(market, faction, city.ID, budget);
             var owner = ZoneOwnerOf(market, city.ID, faction);
             var gift = CityPrice(market, faction, city.ID, city.GiftCost, out _, out _);
+            var giftWait = GiftWaitSeconds(market, faction, city.ID); // RuMC edit
 
             cities.Add(new CityEntry(
                 city.ID,
@@ -231,7 +232,7 @@ public sealed partial class WorldMarketSystem
                 influence,
                 capabilities,
                 gift,
-                budget >= gift && influence < MaxInfluence && RouteOk(market, faction, city.ID),
+                budget >= gift && influence < MaxInfluence && RouteOk(market, faction, city.ID) && giftWait == 0, // RuMC edit
                 status.Name,
                 status.Description,
                 status.Seconds,
@@ -240,7 +241,8 @@ public sealed partial class WorldMarketSystem
                 status.Actions,
                 owner ?? string.Empty,
                 BuildCityExtras(market, faction, city.ID, budget),
-                city.Site));
+                city.Site,
+                giftWait)); // RuMC edit
         }
 
         roads = new List<RoadEntry>();
@@ -265,11 +267,37 @@ public sealed partial class WorldMarketSystem
         return cities;
     }
 
+    // RuMC edit start
+    // Is the city on this round's map?
+    private bool IsActiveCity(Entity<WorldMarketComponent> market, string cityId)
+    {
+        foreach (var city in ActiveCities(market))
+        {
+            if (city.ID == cityId)
+                return true;
+        }
+
+        return false;
+    }
+
+    // Seconds until the next gift to the city (0 if now)
+    private int GiftWaitSeconds(Entity<WorldMarketComponent> market, string faction, string cityId)
+    {
+        if (!market.Comp.GiftReady.TryGetValue(faction + "|" + cityId, out var ready))
+            return 0;
+
+        return Math.Max(0, (int) Math.Ceiling((ready - _timing.CurTime).TotalSeconds));
+    }
+    // RuMC edit end
+
     // A gift to a city: the cost is taken by the caller (the budget of the console that gives it), here the favour grows, up to the most. Gives how much the gift cost (with the extra of a
     // region of interest, which goes to its owner), or nothing if it cannot be given.
     public int? GiftCity(string faction, string cityId, float budget)
     {
         if (!_proto.TryIndex<WorldCityPrototype>(cityId, out var city) || !TryMarket(out var market))
+            return null;
+
+        if (!IsActiveCity(market, cityId) || GiftWaitSeconds(market, faction, cityId) > 0) // RuMC edit
             return null;
 
         var price = CityPrice(market, faction, cityId, city.GiftCost, out var owner, out var surcharge);
@@ -285,6 +313,8 @@ public sealed partial class WorldMarketSystem
 
         if (owner != null && surcharge > 0)
             PayFaction(market, owner, surcharge);
+
+        market.Comp.GiftReady[faction + "|" + cityId] = _timing.CurTime + TimeSpan.FromSeconds(city.GiftCooldownSeconds); // RuMC edit
 
         // The gift goes by the roads as a caravan, unless there is no city to send it from.
         var origin = CaravanOrigin(market, faction, cityId);

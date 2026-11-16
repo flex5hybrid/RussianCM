@@ -123,8 +123,30 @@ public sealed partial class WorldMarketSystem
                 return true;
         }
 
+        // RuMC edit start
+        foreach (var caravan in market.Comp.Caravans)
+        {
+            if (!caravan.Gift && caravan.Faction == faction && caravan.Action == actionId && caravan.Path.Count > 0 && caravan.Path[^1] == cityId)
+                return true;
+        }
+        // RuMC edit end
+
         return false;
     }
+
+    // RuMC edit start
+    // Limits shared with joint works - no repeats in a city
+    private string? LimitBlocked(Entity<WorldMarketComponent> market, string faction, string cityId, WorldCityActionPrototype action)
+    {
+        if (!action.Stackable && HasProject(market, faction, cityId, action.ID, _timing.CurTime))
+            return Loc.GetString("rumc-map-already");
+
+        if (action.PointEverySeconds > 0 && PointBuildings(market, faction) >= MaxPointBuildings)
+            return Loc.GetString("rumc-map-point-limit", ("value", MaxPointBuildings));
+
+        return null;
+    }
+    // RuMC edit end
 
     // A deposit (a mine, a well, a plantation) makes what is built on it bring in twice as much.
     private float DepositFactor(string cityId)
@@ -165,12 +187,10 @@ public sealed partial class WorldMarketSystem
         if (action.OnlyInCrisis && !(market.Comp.CityCrises.TryGetValue(cityId, out var crisis) && Has(action.Resolves, crisis.Id)))
             return Loc.GetString("rumc-map-no-crisis");
 
-        if (!action.Stackable && HasProject(market, faction, cityId, action.ID, now))
-            return Loc.GetString("rumc-map-already");
-
-        // A faction may have only a few of the great buildings that bring points.
-        if (action.PointEverySeconds > 0 && PointBuildings(market, faction) >= MaxPointBuildings)
-            return Loc.GetString("rumc-map-point-limit", ("value", MaxPointBuildings));
+        // RuMC edit start
+        if (LimitBlocked(market, faction, cityId, action) is { } limit)
+            return limit;
+        // RuMC edit end
 
         if (action.PointCost > 0 && PointsOf(faction) < action.PointCost)
             return Loc.GetString("rumc-mother-need-points", ("value", action.PointCost));
@@ -193,6 +213,7 @@ public sealed partial class WorldMarketSystem
             || !_proto.TryIndex<WorldCityActionPrototype>(actionId, out var action)
             || action.Joint
             || !_proto.HasIndex<WorldCityPrototype>(cityId)
+            || !IsActiveCity(market, cityId) // RuMC edit
             || ActionBlocked(market, faction, cityId, action, budget) != null)
         {
             return null;

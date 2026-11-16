@@ -32,7 +32,8 @@ public sealed class CityEntry(
     List<ActionEntry>? actions = null,
     string zoneOwner = "",
     CityExtras? extras = null,
-    bool site = false)
+    bool site = false,
+    int giftWaitSeconds = 0) // RuMC edit
 {
     public readonly string Id = id;
     public readonly string Name = name;
@@ -65,6 +66,11 @@ public sealed class CityEntry(
 
     // Not a city but another object of the map (a mine, a fort, ruins...).
     public readonly bool Site = site;
+
+    // RuMC edit start
+    // How long until the faction may give the city a gift again
+    public readonly int GiftWaitSeconds = giftWaitSeconds;
+    // RuMC edit end
 }
 
 // A bid in a bargain for a city.

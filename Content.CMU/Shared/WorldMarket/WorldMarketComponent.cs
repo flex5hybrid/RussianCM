@@ -80,6 +80,7 @@ public sealed partial class WorldMarketComponent : Component
     // The caravans that are on the roads, the deals that are offered, the reports of intelligence that the factions have bought (until when, and how much they say), and when each faction was last
     // seen on the line.
     public readonly List<Caravan> Caravans = new();
+    public readonly Dictionary<string, TimeSpan> GiftReady = new(); // RuMC edit: when the next gift may be sent
     public int NextCaravanId;
     public readonly List<Deal> Deals = new();
     public int NextDealId;

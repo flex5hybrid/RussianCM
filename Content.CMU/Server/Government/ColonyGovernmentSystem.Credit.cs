@@ -37,6 +37,11 @@ public sealed partial class ColonyGovernmentSystem
         if (comp.LenderBlockedUntil.TryGetValue(lender.ID, out var until) && until > now)
             return Loc.GetString("rumc-government-loan-blocked-default", ("minutes", (int) Math.Ceiling((until - now).TotalMinutes)));
 
+        // RuMC edit start
+        if (_budget.GetBudget() < 0f)
+            return Loc.GetString("rumc-government-loan-blocked-debt");
+        // RuMC edit end
+
         if (comp.Loans.Count >= MaxLoans)
             return Loc.GetString("rumc-government-loan-blocked-many", ("max", MaxLoans));
 
@@ -160,13 +165,11 @@ public sealed partial class ColonyGovernmentSystem
         }
     }
 
-    // A default: the lender takes a half of what is owed to it out of the treasury (or the treasury, if it is less), takes the loans away, does not lend again for twenty minutes, and the rating falls hard.
+    // A default: the lender takes all that is owed (the treasury may go below zero), the loans go, no new ones for twenty minutes, and the rating falls hard
     private void Default(ColonyGovernmentComponent comp, ColonyLenderPrototype lender, TimeSpan now)
     {
         var owed = comp.Loans.Where(l => l.Lender == lender.ID).Sum(l => l.Instalment * l.Left);
-        var seized = Math.Min(_budget.GetBudget(), owed * 0.5f);
-        if (seized > 0f)
-            _budget.AddToBudget(-seized);
+        _budget.AddToBudget(-owed); // RuMC edit
 
         comp.Loans.RemoveAll(l => l.Lender == lender.ID);
         comp.LenderBlockedUntil[lender.ID] = now + TimeSpan.FromMinutes(20);
@@ -187,6 +190,11 @@ public sealed partial class ColonyGovernmentSystem
     {
         if (comp.Investments.Count(i => !i.Done) >= MaxInvestments)
             return Loc.GetString("rumc-government-investment-blocked-many", ("max", MaxInvestments));
+
+        // RuMC edit start
+        if (proto.MaxBuilt > 0 && comp.Investments.Count(i => i.Proto == proto.ID && (!i.Done || i.Success)) >= proto.MaxBuilt)
+            return Loc.GetString("rumc-government-investment-blocked-built", ("max", proto.MaxBuilt));
+        // RuMC edit end
 
         if (_budget.GetBudget() < proto.Cost)
             return Loc.GetString("rumc-government-blocked-money");

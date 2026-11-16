@@ -298,7 +298,11 @@ public sealed class GlobalMapWindow : BaseWindow
         var full = city.Influence >= WorldMarketInfluenceMax;
         var gift = full
             ? Loc.GetString("rumc-map-gift-full")
-            : Loc.GetString(city.CanAfford ? "rumc-map-gift" : "rumc-map-gift-poor", ("cost", Money(city.GiftCost)));
+            // RuMC edit start
+            : city.GiftWaitSeconds > 0
+                ? Loc.GetString("rumc-map-gift-wait", ("time", Time(city.GiftWaitSeconds)))
+                : Loc.GetString(city.CanAfford ? "rumc-map-gift" : "rumc-map-gift-poor", ("cost", Money(city.GiftCost)));
+            // RuMC edit end
         column.AddChild(Action(gift, () => OnGift?.Invoke(id), city.CanAfford));
 
         // The trouble that the city is in, what the faction has going there, and what it can do for the city.
