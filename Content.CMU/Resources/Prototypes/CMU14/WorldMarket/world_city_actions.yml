@@ -188,7 +188,7 @@
   minInfluence: 40
   effectSeconds: 1800
   returnPercent: 130
-  stackable: true
+  stackable: false # RuMC edit
 
 - type: worldCityAction
   id: RUMCActionQuarter

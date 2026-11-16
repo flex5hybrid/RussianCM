@@ -62,6 +62,12 @@ public sealed partial class WorldCityPrototype : IPrototype
     [DataField]
     public int GiftCost = 400;
 
+    // RuMC edit start
+    // How long a faction waits between gifts to the city
+    [DataField]
+    public int GiftCooldownSeconds = 300;
+    // RuMC edit end
+
     // Not a city but another object of the map (a mine, a fort, ruins, a relay...): it has the favour of the factions and can be built on like a city, a few of them are taken every round
     // besides the cities, and they are joined to the nearest city by a trail.
     [DataField]

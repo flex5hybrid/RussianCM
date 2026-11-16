@@ -184,6 +184,12 @@ public sealed partial class ColonyInvestmentPrototype : IPrototype
     [DataField]
     public float IncomePerMinute;
 
+    // RuMC edit start
+    // How many of it can stand at once(0 - no limit)
+    [DataField]
+    public int MaxBuilt;
+    // RuMC edit end
+
     [DataField]
     public int RatingOnSuccess = 3;
 

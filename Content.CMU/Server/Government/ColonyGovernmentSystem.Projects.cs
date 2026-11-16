@@ -253,7 +253,7 @@ public sealed partial class ColonyGovernmentSystem
         {
             if (proto.FailureFine > 0)
             {
-                _budget.AddToBudget(-Math.Min(proto.FailureFine, (int) _budget.GetBudget()));
+                _budget.AddToBudget(-Math.Clamp((int) _budget.GetBudget(), 0, proto.FailureFine)); // RuMC edit: the treasury may be below zero
                 outcome.Add(Loc.GetString("rumc-covert-out-fine", ("sum", proto.FailureFine)));
             }
 

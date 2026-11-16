@@ -34,8 +34,10 @@ rumc-government-investment-failure = { $name }: failed
 rumc-government-loan-blocked-rating = A rating of { $rating } is needed.
 rumc-government-loan-blocked-default = Will not lend for { $minutes } more min after the default.
 rumc-government-loan-blocked-many = { $max } loans already.
+rumc-government-loan-blocked-debt = The treasury is in debt: no loan.
 rumc-government-loan-blocked-limit = The limit of this lender is used up.
 rumc-government-investment-blocked-many = { $max } investments are at work already.
+rumc-government-investment-blocked-built = No more can be built: { $max } already.
 
 # The cities of the map
 rumc-government-cities-title = The other cities of the map
