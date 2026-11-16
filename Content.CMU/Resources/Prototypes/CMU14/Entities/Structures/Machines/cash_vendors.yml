@@ -490,6 +490,10 @@
       section: Cassettes
       name: Cassette Player (Neon)
       price: 25
+    - id: CMUCassetteSpeakerPortable
+      section: Cassettes
+      name: Переносная кассетная колонка / Portable Cassette Speaker
+      price: 40
     - id: RMCPouchCassette
       section: Cassettes
       name: Cassette Pouch

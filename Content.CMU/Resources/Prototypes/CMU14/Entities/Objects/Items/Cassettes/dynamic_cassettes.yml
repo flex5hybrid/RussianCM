@@ -1,0 +1,14 @@
+# Использует существующие спрайты плеера до отдельного художественного прохода. /
+# Reuses the existing player sprites until a dedicated art pass.
+- type: entity
+  parent: AU14CassettePlayerNeon
+  id: CMUCassetteSpeakerPortable
+  name: переносная кассетная колонка / portable cassette speaker
+  description: Проигрывает кассету для всех поблизости. / Plays a cassette for everyone nearby.
+  components:
+  - type: CMUPublicCassettePlayer
+  - type: CassettePlayer
+    audioParams:
+      volume: -6
+      maxDistance: 8
+      rolloffFactor: 1.5

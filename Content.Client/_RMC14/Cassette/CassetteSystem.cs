@@ -1,7 +1,12 @@
+using System.IO;
+using System.Threading.Tasks;
+using Content.Client.CMU14.Cassette;
+using Content.Shared.CMU14.Cassette;
 using Content.Shared._RMC14.Cassette;
 using Content.Shared._RMC14.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Inventory;
+using Content.Shared.Popups;
 using Robust.Client.Audio;
 using Robust.Client.Player;
 using Robust.Client.ResourceManagement;
@@ -28,9 +33,12 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
     // [Dependency] private IPrototypeManager _prototype = default!; // CMU14
     [Dependency] private IResourceCache _resourceCache = default!;
     [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private CMUDynamicCassetteSystem _dynamicCassettes = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
 
     private float _gain;
     private readonly Dictionary<AudioStream, string> _names = new();
+    private bool _trackDialogOpen;
 
     public override void Initialize()
     {
@@ -40,6 +48,7 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
         SubscribeLocalEvent<CassettePlayerComponent, ComponentRemove>(OnPlayerRemoved); // CMU14
 
         Subs.CVar(_config, RMCCVars.VolumeGainCassettes, SetGain, true);
+        _dynamicCassettes.UploadFinished += OnDynamicUploadFinished;
 
         // CMU14 Begin: AudioSystem loads songs when played. Preloading every tape retains
         // the entire decoded music library in native audio buffers for the client's lifetime.
@@ -64,6 +73,12 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
         }
         */
         // CMU14 End
+    }
+
+    public override void Shutdown()
+    {
+        _dynamicCassettes.UploadFinished -= OnDynamicUploadFinished;
+        base.Shutdown();
     }
 
     // CMU14: reconcile local audio after state application and prediction replay have finished.
@@ -144,25 +159,126 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
     {
         try
         {
-            if (!_timing.IsFirstTimePredicted)
+            if (!_timing.IsFirstTimePredicted || _trackDialogOpen)
                 return;
 
+            _trackDialogOpen = true;
             var filters = new FileDialogFilters(new FileDialogFilters.Group("ogg"));
-            await using var file = await _dialogs.OpenFile(filters);
+            var (file, fileName) = await _dialogs.GetFileAndName(filters, FileAccess.Read);
             if (file == null)
                 return;
 
-            var audio = _audioManager.LoadAudioOggVorbis(file);
-            tape.Comp.CustomTrack = audio;
+            await using (file)
+            {
+                if (TryComp(tape, out CMUDynamicCassetteComponent? dynamicCassette))
+                {
+                    await ChooseDynamicTrack(tape, dynamicCassette, file, fileName);
+                    return;
+                }
 
-            var name = $"/Audio/_RMC14/_CustomCassetteUploads/upload_{_names.Count}.ogg";
-            _resourceCache.CacheResource(name, new AudioResource(audio));
-            _names[audio] = name;
+                var audio = _audioManager.LoadAudioOggVorbis(file);
+                tape.Comp.CustomTrack = audio;
+
+                var name = $"/Audio/_RMC14/_CustomCassetteUploads/upload_{_names.Count}.ogg";
+                _resourceCache.CacheResource(name, new AudioResource(audio));
+                _names[audio] = name;
+            }
         }
         catch (Exception e)
         {
-            Log.Error($"Error choosing custom cassette track:\n{e}");
+            ShowUploadPopup("cmu-cassette-upload-invalid-file");
+            Log.Error($"Ошибка выбора пользовательского трека / Error choosing custom cassette track:\n{e}");
         }
+        finally
+        {
+            _trackDialogOpen = false;
+        }
+    }
+
+    private async Task ChooseDynamicTrack(Entity<CassetteTapeComponent> tape,
+        CMUDynamicCassetteComponent dynamicCassette,
+        Stream file,
+        string? fileName)
+    {
+        if (dynamicCassette.Tracks.Count >= dynamicCassette.MaxTracks)
+        {
+            ShowUploadPopup("cmu-cassette-upload-cassette-full");
+            return;
+        }
+
+        var trackData = await ReadBoundedTrack(file);
+        if (trackData == null || !CMUDynamicCassetteLimits.IsValidOggVorbis(trackData))
+        {
+            ShowUploadPopup("cmu-cassette-upload-invalid-file");
+            return;
+        }
+
+        // Декодируем один раз локально, чтобы не отправлять файл, который игровой декодер не сможет открыть. /
+        // Decode once locally so a file unsupported by the game decoder is never uploaded.
+        using (var validationStream = new MemoryStream(trackData, writable: false))
+        using (var decodedTrack = _audioManager.LoadAudioOggVorbis(validationStream, fileName))
+        {
+            if (decodedTrack.Length > TimeSpan.FromSeconds(CMUDynamicCassetteLimits.MaxDurationSeconds))
+            {
+                ShowUploadPopup("cmu-cassette-upload-invalid-file");
+                return;
+            }
+        }
+
+        var title = Path.GetFileNameWithoutExtension(fileName)?.Trim() ?? string.Empty;
+        if (!CMUDynamicCassetteLimits.IsTitleValid(title))
+            title = $"Трек / Track {dynamicCassette.Tracks.Count + 1}";
+
+        if (!_dynamicCassettes.TryQueueUpload(tape, title, trackData))
+        {
+            ShowUploadPopup("cmu-cassette-upload-busy");
+            return;
+        }
+
+        ShowUploadPopup("cmu-cassette-upload-started");
+    }
+
+    private static async Task<byte[]?> ReadBoundedTrack(Stream file)
+    {
+        if (file.CanSeek && file.Length > CMUDynamicCassetteLimits.MaxTrackBytes)
+            return null;
+
+        var buffer = new byte[CMUDynamicCassetteLimits.MaxTrackBytes + 1];
+        var bytesRead = 0;
+        while (bytesRead < buffer.Length)
+        {
+            var read = await file.ReadAsync(buffer.AsMemory(bytesRead, buffer.Length - bytesRead));
+            if (read == 0)
+                break;
+            bytesRead += read;
+        }
+
+        if (bytesRead == 0 || bytesRead > CMUDynamicCassetteLimits.MaxTrackBytes)
+            return null;
+
+        Array.Resize(ref buffer, bytesRead);
+        return buffer;
+    }
+
+    private void OnDynamicUploadFinished(CMUCassetteUploadStatus status, Guid _)
+    {
+        var localization = status switch
+        {
+            CMUCassetteUploadStatus.Success => "cmu-cassette-upload-success",
+            CMUCassetteUploadStatus.CassetteFull => "cmu-cassette-upload-cassette-full",
+            CMUCassetteUploadStatus.RoundStorageFull => "cmu-cassette-upload-round-full",
+            CMUCassetteUploadStatus.UserStorageFull => "cmu-cassette-upload-user-full",
+            CMUCassetteUploadStatus.RateLimited => "cmu-cassette-upload-rate-limited",
+            CMUCassetteUploadStatus.InvalidPermit => "cmu-cassette-upload-permit-expired",
+            _ => "cmu-cassette-upload-failed",
+        };
+        ShowUploadPopup(localization);
+    }
+
+    private void ShowUploadPopup(string localization)
+    {
+        if (_player.LocalEntity is { } player)
+            _popup.PopupEntity(Loc.GetString(localization), player, player);
     }
 
     private void SetAudioGain(EntityUid? audio)

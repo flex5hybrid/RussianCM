@@ -1,5 +1,6 @@
 using Content.Shared.CMU14.Cassette;
 using Content.Shared.GameTicking;
+using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction;
 using Content.Shared._RMC14.Cassette;
 using Content.Server._RMC14.Cassette;
@@ -21,6 +22,7 @@ namespace Content.Server.CMU14.Cassette;
 public sealed class CMUDynamicCassetteSystem : EntitySystem
 {
     [Dependency] private readonly SharedInteractionSystem _interaction = default!;
+    [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly IServerNetManager _net = default!;
     [Dependency] private readonly IPlayerManager _players = default!;
     [Dependency] private readonly IResourceManager _resources = default!;
@@ -40,6 +42,7 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         base.Initialize();
 
         _resources.AddRoot(CMUDynamicCassetteLimits.ContentPrefix, _content);
+        _net.RegisterNetMessage<CMUCassetteUploadPermitRequestMsg>(OnPermitRequest);
         _net.RegisterNetMessage<CMUCassetteUploadMsg>(OnUpload);
         _net.RegisterNetMessage<CMUCassetteUploadPermitMsg>();
         _net.RegisterNetMessage<CMUCassetteTrackDataMsg>();
@@ -86,7 +89,7 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
             return;
         }
 
-        if (!_interaction.InRangeUnobstructed(user, cassette))
+        if (!_interaction.InRangeUnobstructed(user, cassette) || !_hands.IsHolding(user, cassette))
         {
             Reply(message, CMUCassetteUploadStatus.OutOfRange);
             return;
@@ -144,26 +147,43 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
             args.Channel.SendMessage(new CMUCassetteTrackDataMsg { TrackId = trackId, Data = trackData });
     }
 
+    private void OnPermitRequest(CMUCassetteUploadPermitRequestMsg message)
+    {
+        if (!_players.TryGetSessionByChannel(message.MsgChannel, out var session) ||
+            !TryGetEntity(message.Cassette, out var cassette) ||
+            cassette is not { } cassetteUid)
+        {
+            Reply(message.MsgChannel, CMUCassetteUploadStatus.InvalidEntity);
+            return;
+        }
+
+        var status = IssueUploadPermit(session, cassetteUid);
+        if (status != CMUCassetteUploadStatus.Success)
+            Reply(message.MsgChannel, status);
+    }
+
     /// <summary>
-    /// Вызывается будущей системой записывающей машинки после проверки слота и состояния взаимодействия. /
-    /// Called by the future recorder system after it validates its slot and interaction state.
-    /// Клиент не может создавать или выбирать такие разрешения. /
-    /// The client cannot mint or choose these permits.
+    /// Выдаёт разрешение только для поддерживаемой кассеты, находящейся в руках игрока. /
+    /// Issues a permit only for a supported cassette currently held by the player.
     /// </summary>
-    public bool IssueUploadPermit(ICommonSession session, EntityUid cassette)
+    private CMUCassetteUploadStatus IssueUploadPermit(ICommonSession session, EntityUid cassette)
     {
         if (session.AttachedEntity is not { } user ||
-            !HasComp<CMUDynamicCassetteComponent>(cassette) ||
+            !TryComp(cassette, out CMUDynamicCassetteComponent? dynamicCassette) ||
             !HasComp<CassetteTapeComponent>(cassette) ||
-            !_interaction.InRangeUnobstructed(user, cassette))
+            !_interaction.InRangeUnobstructed(user, cassette) ||
+            !_hands.IsHolding(user, cassette))
         {
-            return false;
+            return CMUCassetteUploadStatus.InvalidEntity;
         }
+
+        if (dynamicCassette.Tracks.Count >= dynamicCassette.MaxTracks)
+            return CMUCassetteUploadStatus.CassetteFull;
 
         if (_lastPermits.TryGetValue(session.UserId, out var last) &&
             _timing.CurTime - last < TimeSpan.FromSeconds(5))
         {
-            return false;
+            return CMUCassetteUploadStatus.RateLimited;
         }
 
         if (_activePermits.Remove(session.UserId, out var oldPermit))
@@ -180,13 +200,16 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
             Permit = permitId,
             Cassette = GetNetEntity(cassette),
         }, session.Channel);
-        return true;
+        return CMUCassetteUploadStatus.Success;
     }
 
     private void Reply(CMUCassetteUploadMsg request, CMUCassetteUploadStatus status, Guid trackId = default)
     {
-        _net.ServerSendMessage(new CMUCassetteUploadResultMsg { Status = status, TrackId = trackId }, request.MsgChannel);
+        Reply(request.MsgChannel, status, trackId);
     }
+
+    private void Reply(INetChannel channel, CMUCassetteUploadStatus status, Guid trackId = default) =>
+        _net.ServerSendMessage(new CMUCassetteUploadResultMsg { Status = status, TrackId = trackId }, channel);
 
     private void OnRoundRestart(RoundRestartCleanupEvent args) => ClearTracks();
 

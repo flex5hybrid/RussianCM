@@ -192,6 +192,27 @@ public enum CMUCassetteUploadStatus : byte
 }
 
 /// <summary>
+/// Запрос одноразового разрешения на загрузку для кассеты в руках игрока. /
+/// Requests a one-use upload permit for a cassette held by the player.
+/// </summary>
+public sealed class CMUCassetteUploadPermitRequestMsg : NetMessage
+{
+    public override MsgGroups MsgGroup => MsgGroups.Command;
+
+    public NetEntity Cassette;
+
+    public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
+    {
+        Cassette = buffer.ReadNetEntity();
+    }
+
+    public override void WriteToBuffer(NetOutgoingMessage buffer, IRobustSerializer serializer)
+    {
+        buffer.Write(Cassette);
+    }
+}
+
+/// <summary>
 /// Короткоживущее одноразовое разрешение от серверной системы записывающей машинки. /
 /// Short-lived one-use authorization issued by the server-side recorder system.
 /// </summary>
@@ -300,8 +321,8 @@ public sealed class CMUCassetteTrackDataMsg : NetMessage
 }
 
 /// <summary>
-/// Ответ сервера для будущего интерфейса записывающей машинки. /
-/// Server acknowledgement for the future recorder UI.
+/// Ответ сервера существующему интерфейсу записи кассеты. /
+/// Server acknowledgement for the existing cassette recording UI.
 /// </summary>
 public sealed class CMUCassetteUploadResultMsg : NetMessage
 {

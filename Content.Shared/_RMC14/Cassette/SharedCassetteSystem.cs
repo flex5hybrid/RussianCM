@@ -266,11 +266,14 @@ public abstract partial class SharedCassetteSystem : EntitySystem
 
         StopAllAudio(player);
 
+        if (tapeComp.Songs.Count == 0 && tapeComp.CustomTrack == null)
+            return;
+
         tape ??= player.Comp.Tape;
         if (tape < 0 || tape >= tapeComp.Songs.Count)
             tape = 0;
 
-        if (tapeComp.Custom)
+        if (tapeComp.Custom && tapeComp.CustomTrack != null)
         {
             if (PlayCustomTrack(player, (tapeId.Value, tapeComp)) is { } custom)
                 player.Comp.CustomAudioStream = custom;
@@ -398,7 +401,15 @@ public abstract partial class SharedCassetteSystem : EntitySystem
     {
         using (args.PushGroup(nameof(CassetteTapeComponent)))
         {
-            if (ent.Comp.Custom)
+            if (TryComp(ent, out CMUDynamicCassetteComponent? dynamicCassette))
+            {
+                args.PushMarkup(Loc.GetString("cmu-cassette-tape-dynamic-examine",
+                    ("current", dynamicCassette.Tracks.Count),
+                    ("maximum", dynamicCassette.MaxTracks)));
+                foreach (var title in dynamicCassette.Titles)
+                    args.PushMarkup(Loc.GetString("cmu-cassette-tape-dynamic-track", ("title", title)));
+            }
+            else if (ent.Comp.Custom)
                 args.PushMarkup(Loc.GetString("rmc-cassette-tape-custom"));
             else
                 args.PushMarkup(Loc.GetString("rmc-cassette-tape-examine", ("total", ent.Comp.Songs.Count)));
@@ -421,7 +432,9 @@ public abstract partial class SharedCassetteSystem : EntitySystem
 
         args.Verbs.Add(new AlternativeVerb
         {
-            Text = Loc.GetString("rmc-cassette-tape-custom-choose"),
+            Text = Loc.GetString(HasComp<CMUDynamicCassetteComponent>(tape)
+                ? "cmu-cassette-tape-dynamic-choose"
+                : "rmc-cassette-tape-custom-choose"),
             Act = () =>
             {
                 ChooseCustomTrack(tape);
@@ -450,7 +463,7 @@ public abstract partial class SharedCassetteSystem : EntitySystem
 
     private int GetCurrentSongCount(Entity<CassettePlayerComponent> player)
     {
-        return player.Comp.Tape + 1;
+        return GetTotalSongs(player) == 0 ? 0 : player.Comp.Tape + 1;
     }
 
     private int GetTotalSongs(Entity<CassettePlayerComponent> player)
